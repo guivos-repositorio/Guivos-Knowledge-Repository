@@ -2,6 +2,14 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.2.1 — Pipeline de Publicação
+
+- Configuração do MkDocs Material como gerador do site do GKR.
+- Configuração de Mermaid para diagramas versionáveis.
+- Criação do workflow GitHub Actions para publicação no GitHub Pages.
+- Inclusão de exportação de PDF como artefato do workflow.
+- Registro do fluxo oficial: GitHub -> Markdown -> Mermaid -> Site -> PDF.
+
 ## 0.2.0 — Consolidação da Parte II — Modelo Fundamental
 
 - Consolidação da KU-FM-001 — Fenômeno da Evolução.
