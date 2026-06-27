@@ -36,6 +36,22 @@ jobs:
       - name: Build MkDocs site
         run: mkdocs build --strict
 
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser || sudo apt-get install -y chromium
+
+      - name: Export PDF from printable site
+        run: |
+          mkdir -p exports
+          chromium-browser --headless --disable-gpu --no-sandbox --print-to-pdf=exports/gkr.pdf file://$PWD/site/print_page/index.html || chromium --headless --disable-gpu --no-sandbox --print-to-pdf=exports/gkr.pdf file://$PWD/site/print_page/index.html
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gkr-pdf
+          path: exports/gkr.pdf
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
