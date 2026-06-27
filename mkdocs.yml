@@ -1,0 +1,80 @@
+site_name: Guivos Knowledge Repository
+site_description: Base oficial de conhecimento e arquitetura da Guivos
+site_author: Guivos
+repo_name: guivos-repositorio/Guivos-Knowledge-Repository
+repo_url: https://github.com/guivos-repositorio/Guivos-Knowledge-Repository
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: black
+      accent: blue
+
+plugins:
+  - search
+  - mermaid2
+  - print-site:
+      add_to_navigation: true
+      print_page_title: GKR — Versão para Impressão
+      add_print_site_banner: false
+      enumerate_headings: true
+      enumerate_figures: true
+      add_cover_page: true
+      cover_page_template: docs/assets/templates/cover-page.tpl
+      path_to_pdf: exports/gkr.pdf
+      include_css: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Início: index.md
+  - GEB:
+      - Visão Geral: geb/index.md
+      - Parte I — Fundação:
+          - Visão Geral: geb/part-01-foundation/index.md
+          - Essência: geb/part-01-foundation/01-essence.md
+          - Propósito: geb/part-01-foundation/02-purpose.md
+          - Missão Operacional: geb/part-01-foundation/03-mission.md
+          - Visão de Longo Prazo: geb/part-01-foundation/04-vision.md
+          - Constituição: geb/part-01-foundation/05-constitution.md
+          - Princípios Permanentes: geb/part-01-foundation/06-principles.md
+      - Parte II — Modelo Fundamental:
+          - Visão Geral: geb/part-02-fundamental-model/index.md
+          - Fenômeno da Evolução: geb/part-02-fundamental-model/phenomenon.md
+          - Modelo Fundamental da Jornada: geb/part-02-fundamental-model/fundamental-journey.md
+          - Quatro Naturezas Fundamentais: geb/part-02-fundamental-model/four-fundamental-natures.md
+  - ADRs:
+      - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
+      - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
+  - Projeto:
+      - Knowledge Board: project/knowledge-board.md
+      - Roadmap: roadmap.md
