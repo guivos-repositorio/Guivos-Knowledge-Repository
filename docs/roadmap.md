@@ -8,11 +8,15 @@
 - [ ] Criar governança e padrões do GKR.
 - [ ] Configurar MkDocs.
 
-## Fase 2 — Consolidação do GEB v0.1
+## Fase 2 — Consolidação do GEB
 
-- [ ] Consolidar Parte I — Fundação.
-- [ ] Consolidar Parte II — Modelo Fundamental.
+- [x] Consolidar Parte I — Fundação.
+- [x] Consolidar Parte II — Modelo Fundamental.
 - [ ] Consolidar Parte III — Arquitetura do Ecossistema.
+
+## Próxima Sprint
+
+- [ ] Sprint 004 — Modelo do Participante.
 
 ## Fase 3 — Expansão
 
