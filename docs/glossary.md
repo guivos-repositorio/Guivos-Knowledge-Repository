@@ -2,9 +2,9 @@
 id: GKR-GLOSSARY-001
 title: Glossário Canônico da Guivos
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-27
+last_updated: 2026-06-28
 ---
 
 # Glossário Canônico da Guivos
@@ -63,9 +63,45 @@ Não é uma categoria arquitetural independente.
 
 Pode ser utilizada como denominação contextual de um Coletivo quando representar adequadamente sua identidade social.
 
-O uso anterior de “Comunidade” como nome amplo de produto ou área da Guivos é considerado **nomenclatura legada e pendente de consolidação específica de produtos**.
+O uso anterior de “Comunidade Guivos” como nome amplo de produto foi substituído por **Guivos Journey**.
 
-Até essa decisão ser recuperada e validada, “Comunidade” não deve ser usada como sinônimo do ecossistema Guivos nem como nome canônico de produto.
+“Comunidade” não deve ser usada como sinônimo do Ecossistema Guivos nem como nome canônico de produto.
+
+## Guivos Journey
+
+Produto responsável por apoiar continuamente a jornada do participante dentro do Ecossistema Guivos.
+
+Substitui “Comunidade Guivos” como nome de produto.
+
+## Guivos Marketplace
+
+Produto responsável pela oferta e comercialização de produtos, gift cards e outros ativos digitais ou físicos do Ecossistema Guivos.
+
+O produto está consolidado, mas seu nome comercial permanece provisório.
+
+## Guivos Travel
+
+Produto responsável por viagens e experiências relacionadas a deslocamento, destinos e turismo.
+
+## Guivos Business
+
+Produto responsável pelas soluções da Guivos para empresas e demais organizações.
+
+## Guivos Media
+
+Produto responsável pela produção, organização e distribuição de conteúdo editorial e institucional da Guivos.
+
+Substitui “Guivos Podcast” como nome de produto. Podcast passa a ser um formato editorial dentro de Guivos Media.
+
+## Guivos Intelligence
+
+Produto responsável por transformar dados, contexto e conhecimento do ecossistema em inteligência aplicada.
+
+Substitui “Guivos Insights” como nome de produto. Insights podem existir como resultados, relatórios ou descobertas.
+
+## Guivos Ads
+
+Produto responsável por publicidade, mídia patrocinada e soluções para anunciantes dentro do Ecossistema Guivos.
 
 ## Identidade
 
@@ -164,6 +200,12 @@ Não deve substituir Participante na arquitetura conceitual.
 Termo comercial utilizado quando uma Pessoa ou Organização mantém uma relação de compra, contratação ou assinatura com a Guivos.
 
 Cliente é uma relação comercial, não uma categoria de participante.
+
+## GEA
+
+Guivos Enterprise Architecture.
+
+Conjunto integrado das arquiteturas oficiais da Guivos.
 
 ## GKR
 
