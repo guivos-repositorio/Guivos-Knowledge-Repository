@@ -1,8 +1,8 @@
 ---
 id: GEB-P01-F01
 title: Essência da Guivos
-status: approved-draft
-version: 0.1.0
+status: consolidated
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-06-27
 related_adrs:
@@ -15,11 +15,11 @@ related_adrs:
 
 A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.
 
-A plataforma não existe para substituir pessoas, organizações, movimentos, comunidades ou instituições. Ela existe para fortalecer conexões entre esses elementos e ampliar sua capacidade de gerar evolução.
+A Guivos não existe para substituir Pessoas, Organizações, Coletivos ou instituições. Ela existe para fortalecer conexões entre participantes e ampliar sua capacidade de gerar evolução.
 
 ## Formulação central
 
-> A Guivos reduz a distância entre o momento atual de um participante e seu próximo passo de evolução.
+> A Guivos reduz a distância entre o Momento Atual de um participante e seu Próximo Passo de evolução.
 
 ## O que isso significa
 
@@ -29,7 +29,7 @@ A Guivos não determina o que é sucesso.
 
 A Guivos não decide pelo participante.
 
-A Guivos organiza contexto, identifica possibilidades, recomenda próximos passos e conecta participantes a oportunidades capazes de gerar experiências relevantes.
+A Guivos organiza contexto, identifica possibilidades, apoia a definição de Próximos Passos e conecta participantes a Oportunidades capazes de gerar Experiências relevantes.
 
 ## Consequência arquitetural
 
