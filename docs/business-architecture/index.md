@@ -2,11 +2,12 @@
 id: GBA-000
 title: Guivos Business Architecture
 status: validated
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Business Architecture
 last_updated: 2026-06-28
 related_adrs:
   - ADR-003
+  - ADR-004
 ---
 
 # Guivos Business Architecture
@@ -17,11 +18,10 @@ A Guivos Business Architecture define como o negócio da Guivos transforma neces
 
 Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ecosystem Architecture, a Product Architecture ou as arquiteturas especializadas de dados, tecnologia, governança e conhecimento.
 
-## Fundamentos
-
-A unidade oficial de fundamentos é:
+## Unidades validadas
 
 - [BA-FND-001 — Business Architecture Foundations](foundations/index.md)
+- [BA-STR-001 — Business Transformation Model](strategy/business-transformation-model.md)
 
 ## Organização interna
 
@@ -46,46 +46,54 @@ graph TD
 ## Sequência arquitetural
 
 ```text
-Necessidade
--> Valor
+Contexto
+-> Necessidade
+-> Priorização Estratégica
 -> Capacidade
 -> Produto ou Serviço
--> Funcionalidade
 -> Experiência
--> Resultado
+-> Ecosystem Outcome
+-> Business Outcome
+-> Valor Gerado
+-> Valor Capturado
+-> Reinvestimento
+-> Novo Contexto
 ```
 
 Cada nível possui responsabilidade própria e não deve ser confundido com os demais.
 
+## Ordem por dependências
+
+```mermaid
+graph LR
+    FND[BA-FND-001] --> STR1[BA-STR-001]
+    STR1 --> STR2[BA-STR-002]
+    STR2 --> CAP1[BA-CAP-001]
+    CAP1 --> CAP2[BA-CAP-002]
+    CAP2 --> STR3[BA-STR-003]
+    STR3 --> ORG1[BA-ORG-001]
+    ORG1 --> ORG2[BA-ORG-002]
+    ORG2 --> EXE1[BA-EXE-001]
+    EXE1 --> EXE2[BA-EXE-002]
+```
+
+A ordem de construção é determinada pelas dependências arquiteturais, conforme o ADR-004.
+
 ## Roadmap de unidades
 
-### Foundation
-
-- `BA-FND-001` — Business Architecture Foundations — **Validated**
-
-### Strategy
-
-- `BA-STR-001` — Business Transformation Model — **Próxima unidade**
-- `BA-STR-002` — Business Outcomes
-- `BA-STR-003` — Value Chains
-
-### Capabilities
-
-- `BA-CAP-001` — Core Business Capabilities
-- `BA-CAP-002` — Capability Map
-
-### Organization
-
-- `BA-ORG-001` — Organizational Model
-- `BA-ORG-002` — Operating Model
-
-### Execution
-
-- `BA-EXE-001` — Business Processes
-- `BA-EXE-002` — KPIs & Metrics
+1. `BA-FND-001` — Business Architecture Foundations — **Validated**
+2. `BA-STR-001` — Business Transformation Model — **Validated**
+3. `BA-STR-002` — Business Outcomes — **Próxima unidade**
+4. `BA-CAP-001` — Core Business Capabilities
+5. `BA-CAP-002` — Capability Map
+6. `BA-STR-003` — Value Chains
+7. `BA-ORG-001` — Organizational Model
+8. `BA-ORG-002` — Operating Model
+9. `BA-EXE-001` — Business Processes
+10. `BA-EXE-002` — KPIs & Metrics
 
 ## Estado de maturidade
 
-A Business Architecture está em estado **Validated em seus fundamentos**.
+A Business Architecture está em estado **Validated em seus fundamentos e em seu modelo de transformação**.
 
 Ela somente poderá ser promovida a `stable` após a validação das unidades estratégicas, de capacidades, organização e execução das quais depende.
