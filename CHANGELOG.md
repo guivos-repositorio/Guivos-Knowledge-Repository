@@ -2,6 +2,17 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.4.0 — Arquitetura de Produtos
+
+- Criação do domínio oficial de Arquitetura de Produtos.
+- Consolidação do Ecossistema Guivos como camada superior aos produtos.
+- Consolidação de Guivos Journey, Guivos Travel, Guivos Business, Guivos Media, Guivos Intelligence e Guivos Ads.
+- Registro de Guivos Marketplace como produto consolidado com nome comercial provisório.
+- Substituição de “Comunidade Guivos” por Guivos Journey como nome de produto.
+- Substituição de “Guivos Podcast” por Guivos Media; podcast passa a ser formato editorial.
+- Substituição de “Guivos Insights” por Guivos Intelligence.
+- Inclusão da nova arquitetura na navegação do site e na Matriz de Consolidação Canônica.
+
 ## 0.3.0 — Início da Consolidação Canônica
 
 - Criação do Glossário Canônico da Guivos.
