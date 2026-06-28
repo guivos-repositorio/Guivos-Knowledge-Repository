@@ -73,6 +73,15 @@ nav:
           - Fenômeno da Evolução: geb/part-02-fundamental-model/phenomenon.md
           - Modelo Fundamental da Jornada: geb/part-02-fundamental-model/fundamental-journey.md
           - Quatro Naturezas Fundamentais: geb/part-02-fundamental-model/four-fundamental-natures.md
+  - Arquitetura de Produtos:
+      - Visão Geral: product-architecture/index.md
+      - Guivos Journey: product-architecture/journey.md
+      - Guivos Marketplace: product-architecture/marketplace.md
+      - Guivos Travel: product-architecture/travel.md
+      - Guivos Business: product-architecture/business.md
+      - Guivos Media: product-architecture/media.md
+      - Guivos Intelligence: product-architecture/intelligence.md
+      - Guivos Ads: product-architecture/ads.md
   - ADRs:
       - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
       - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
