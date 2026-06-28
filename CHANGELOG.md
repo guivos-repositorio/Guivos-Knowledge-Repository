@@ -2,6 +2,19 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.7.0 — Business Transformation Model
+
+- Criação de `BA-STR-001 — Business Transformation Model` em estado `validated` e versão `0.9.0`.
+- Consolidação da fronteira entre Ecosystem Architecture e Business Architecture.
+- Definição da necessidade como principal interface entre ecossistema e negócio.
+- Consolidação do ciclo: contexto -> necessidade -> priorização -> capacidades -> produtos e serviços -> experiências -> outcomes -> valor -> reinvestimento -> novo contexto.
+- Distinção entre `Ecosystem Outcomes` e `Business Outcomes`.
+- Registro do princípio de dupla geração de valor: impacto no ecossistema e sustentabilidade da Guivos.
+- Criação do `ADR-004 — Architectural Dependency Order`.
+- Reordenação da Business Architecture por dependências: Outcomes -> Core Capabilities -> Capability Map -> Value Chains -> Organization -> Execution.
+- Atualização da visão geral da Business Architecture, Roadmap, Knowledge Board e navegação do site.
+- Definição de `BA-STR-002 — Business Outcomes` como próxima unidade.
+
 ## 0.6.0 — Business Architecture Foundations
 
 - Criação de `BA-FND-001 — Business Architecture Foundations` em estado `validated` e versão `0.9.0`.
