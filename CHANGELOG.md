@@ -2,6 +2,19 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.5.0 — Guivos Enterprise Architecture
+
+- Criação do documento `GEA-000 — Guivos Enterprise Architecture`.
+- Definição da GEA como guarda-chuva oficial das arquiteturas da Guivos.
+- Consolidação da relação entre GEA, GKR e GEB.
+- Definição das arquiteturas oficiais: Foundation, Ecosystem, Product, Business, Data & Intelligence, Technology, Governance e Knowledge.
+- Registro dos princípios permanentes da GEA.
+- Registro do fluxo oficial: conhecimento -> arquitetura -> decisão -> implementação -> validação -> operação -> aprendizado.
+- Criação da visão inicial da Guivos Business Architecture.
+- Definição das áreas organizacionais iniciais e das capacidades transversais.
+- Registro da cadeia de valor circular da Guivos.
+- Inclusão da GEA e da Business Architecture na navegação do site.
+
 ## 0.4.0 — Arquitetura de Produtos
 
 - Criação do domínio oficial de Arquitetura de Produtos.
