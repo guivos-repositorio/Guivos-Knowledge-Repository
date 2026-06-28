@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -27,7 +27,7 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Foundation Architecture | Stable |
 | Ecosystem Architecture / GEB | Validated |
 | Product Architecture | Stable |
-| Business Architecture | Validated em seus fundamentos |
+| Business Architecture | Validated em Foundations e Strategy inicial |
 | Data & Intelligence Architecture | Draft |
 | Technology Architecture | Draft |
 | Governance Architecture | Draft |
@@ -74,18 +74,18 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 
 ## Business Architecture
 
-| Unidade | Maturidade | Status |
-|---|---|:---:|
-| BA-FND-001 — Business Architecture Foundations | Validated | 🟩 |
-| BA-STR-001 — Business Transformation Model | Próxima unidade | 🟨 |
-| BA-STR-002 — Business Outcomes | Draft | ⬜ |
-| BA-STR-003 — Value Chains | Draft | ⬜ |
-| BA-CAP-001 — Core Business Capabilities | Draft | ⬜ |
-| BA-CAP-002 — Capability Map | Draft | ⬜ |
-| BA-ORG-001 — Organizational Model | Draft | ⬜ |
-| BA-ORG-002 — Operating Model | Draft | ⬜ |
-| BA-EXE-001 — Business Processes | Draft | ⬜ |
-| BA-EXE-002 — KPIs & Metrics | Draft | ⬜ |
+| Ordem | Unidade | Maturidade | Status |
+|---:|---|---|:---:|
+| 1 | BA-FND-001 — Business Architecture Foundations | Validated | 🟩 |
+| 2 | BA-STR-001 — Business Transformation Model | Validated | 🟩 |
+| 3 | BA-STR-002 — Business Outcomes | Próxima unidade | 🟨 |
+| 4 | BA-CAP-001 — Core Business Capabilities | Draft | ⬜ |
+| 5 | BA-CAP-002 — Capability Map | Draft | ⬜ |
+| 6 | BA-STR-003 — Value Chains | Draft | ⬜ |
+| 7 | BA-ORG-001 — Organizational Model | Draft | ⬜ |
+| 8 | BA-ORG-002 — Operating Model | Draft | ⬜ |
+| 9 | BA-EXE-001 — Business Processes | Draft | ⬜ |
+| 10 | BA-EXE-002 — KPIs & Metrics | Draft | ⬜ |
 
 ## Governança documental
 
@@ -98,13 +98,14 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Matriz de Consolidação Canônica | 🟩 |
 | Roadmap Arquitetural | 🟩 |
 | ADR-003 — Architectural Ownership | 🟩 |
+| ADR-004 — Architectural Dependency Order | 🟩 |
 | ADRs completos | 🟧 |
 | Padrões completos do GKR | 🟦 |
 
 ## Sprint atual
 
-`BA-STR-001 — Business Transformation Model`.
+`BA-STR-002 — Business Outcomes`.
 
 ## Última consolidação
 
-Business Architecture Foundations e Architectural Ownership, concluídas em 28/06/2026.
+`BA-STR-001 — Business Transformation Model` e `ADR-004 — Architectural Dependency Order`, concluídos em 28/06/2026.
