@@ -57,6 +57,7 @@ markdown_extensions:
 
 nav:
   - Início: index.md
+  - Guivos Enterprise Architecture: enterprise-architecture/index.md
   - Glossário Canônico: glossary.md
   - GEB:
       - Visão Geral: geb/index.md
@@ -82,6 +83,8 @@ nav:
       - Guivos Media: product-architecture/media.md
       - Guivos Intelligence: product-architecture/intelligence.md
       - Guivos Ads: product-architecture/ads.md
+  - Business Architecture:
+      - Visão Geral: business-architecture/index.md
   - ADRs:
       - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
       - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
