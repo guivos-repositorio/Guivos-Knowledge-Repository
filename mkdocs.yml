@@ -57,6 +57,7 @@ markdown_extensions:
 
 nav:
   - Início: index.md
+  - Glossário Canônico: glossary.md
   - GEB:
       - Visão Geral: geb/index.md
       - Parte I — Fundação:
@@ -77,4 +78,6 @@ nav:
       - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
   - Projeto:
       - Knowledge Board: project/knowledge-board.md
+      - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+      - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
