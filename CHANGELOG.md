@@ -2,6 +2,19 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.6.0 — Business Architecture Foundations
+
+- Criação de `BA-FND-001 — Business Architecture Foundations` em estado `validated` e versão `0.9.0`.
+- Consolidação do escopo, responsabilidades, limites e princípios permanentes da Business Architecture.
+- Definição da estrutura interna: Foundation, Strategy, Capabilities, Organization e Execution.
+- Registro da sequência arquitetural: necessidade -> valor -> capacidade -> produto ou serviço -> funcionalidade -> experiência -> resultado.
+- Criação do `ADR-003 — Architectural Ownership`.
+- Definição de propriedade única para conceitos, modelos, capacidades, ativos e decisões canônicas.
+- Atualização da visão geral da GEA com responsabilidades das arquiteturas, maturidade e congelamento estrutural.
+- Atualização da visão geral da Business Architecture.
+- Atualização do Knowledge Board, Roadmap e navegação do site.
+- Definição de `BA-STR-001 — Business Transformation Model` como próxima unidade.
+
 ## 0.5.1 — Sincronização Documental da GEA
 
 - Atualização do README com a estrutura atual da Guivos Enterprise Architecture.
