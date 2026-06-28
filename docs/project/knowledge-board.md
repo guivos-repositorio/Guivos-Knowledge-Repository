@@ -1,14 +1,14 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-27
+last_updated: 2026-06-28
 ---
 
 # Knowledge Board
 
-Painel oficial de acompanhamento do patrimônio intelectual da Guivos.
+Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Guivos.
 
 ## Legenda
 
@@ -20,7 +20,20 @@ Painel oficial de acompanhamento do patrimônio intelectual da Guivos.
 | 🟧 | Em consolidação |
 | 🟩 | Consolidado no GKR |
 
-## Foundation
+## Guivos Enterprise Architecture
+
+| Arquitetura | Status |
+|---|:---:|
+| Foundation Architecture | 🟩 |
+| Ecosystem Architecture / GEB | 🟧 |
+| Product Architecture | 🟩 |
+| Business Architecture | 🟧 |
+| Data & Intelligence Architecture | ⬜ |
+| Technology Architecture | ⬜ |
+| Governance Architecture | 🟦 |
+| Knowledge Architecture | 🟦 |
+
+## Foundation Architecture
 
 | Unidade | Status |
 |---|:---:|
@@ -31,50 +44,66 @@ Painel oficial de acompanhamento do patrimônio intelectual da Guivos.
 | Constituição | 🟩 |
 | Princípios Permanentes | 🟩 |
 
-## Fundamental Model
-
-| ID | Unidade | Status |
-|---|---|:---:|
-| KU-FM-001 | Fenômeno da Evolução | 🟩 |
-| KU-FM-002 | Modelo Fundamental da Jornada | 🟩 |
-| KU-FM-003 | Quatro Naturezas Fundamentais | 🟩 |
-
-## Participant
+## Ecosystem Architecture / GEB
 
 | Unidade | Status |
 |---|:---:|
+| KU-FM-001 — Fenômeno da Evolução | 🟩 |
+| KU-FM-002 — Modelo Fundamental da Jornada | 🟩 |
+| KU-FM-003 — Quatro Naturezas Fundamentais | 🟩 |
 | Modelo do Participante | 🟨 |
 | Identidade | 🟨 |
 | Capacidades | 🟨 |
 | Papéis | 🟨 |
-| Momento Atual | 🟨 |
-| Objetivos | 🟨 |
-| Próximo Passo | 🟨 |
-
-## Opportunity
-
-| Unidade | Status |
-|---|:---:|
 | Modelo da Oportunidade | 🟨 |
-| Ciclo de vida da Oportunidade | 🟨 |
-| Relação com Próximo Passo | 🟨 |
-| Relação com Experiência | 🟨 |
-
-## Próximos domínios
-
-| Domínio | Status |
-|---|:---:|
-| Experiência | ⬜ |
+| Modelo da Experiência | ⬜ |
 | Relacionamentos | ⬜ |
 | Conhecimento do Ecossistema | ⬜ |
-| Plataforma | ⬜ |
-| Inteligência Artificial | ⬜ |
-| Governança | ⬜ |
+
+## Product Architecture
+
+| Produto | Status |
+|---|:---:|
+| Guivos Journey | 🟩 |
+| Guivos Marketplace | 🟧 |
+| Guivos Travel | 🟩 |
+| Guivos Business | 🟩 |
+| Guivos Media | 🟩 |
+| Guivos Intelligence | 🟩 |
+| Guivos Ads | 🟩 |
+
+## Business Architecture
+
+| Ativo | Status |
+|---|:---:|
+| Visão Geral | 🟩 |
+| Áreas Organizacionais Iniciais | 🟩 |
+| Capacidades Transversais | 🟩 |
+| Cadeia de Valor de Referência | 🟩 |
+| Cadeias de Valor Detalhadas | ⬜ |
+| Mapa de Capacidades de Negócio | ⬜ |
+| Relação Produtos x Áreas | ⬜ |
+| Modelo Operacional Nacional e Internacional | ⬜ |
+| Parceiros, Representantes e Canais | ⬜ |
+| Papéis, Processos e Indicadores | ⬜ |
+
+## Governança documental
+
+| Ativo | Status |
+|---|:---:|
+| GKR como fonte única da verdade | 🟩 |
+| Markdown como formato oficial | 🟩 |
+| Pipeline GitHub -> Markdown -> Mermaid -> Site -> PDF | 🟩 |
+| Glossário Canônico | 🟩 |
+| Matriz de Consolidação Canônica | 🟩 |
+| Roadmap Arquitetural | 🟩 |
+| ADRs completos | 🟦 |
+| Padrões completos do GKR | 🟦 |
 
 ## Sprint atual
 
-Sprint 004 — Modelo do Participante.
+Business Architecture — Cadeias de Valor e Mapa de Capacidades de Negócio.
 
 ## Última consolidação
 
-Sprint 003 — Modelo Fundamental, concluída em 27/06/2026.
+Sincronização documental do GKR com GEA, Product Architecture e Business Architecture em 28/06/2026.
