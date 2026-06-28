@@ -2,6 +2,16 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.3.0 — Início da Consolidação Canônica
+
+- Criação do Glossário Canônico da Guivos.
+- Criação da Matriz de Consolidação Canônica.
+- Definição de Pessoa, Organização e Coletivo como categorias arquiteturais de Participante.
+- Definição de “Comunidade” como denominação contextual de Coletivo, não como categoria arquitetural independente.
+- Marcação de “Comunidade Guivos” como nomenclatura legada de produto, pendente de consolidação específica.
+- Alinhamento da Essência da Guivos à terminologia canônica.
+- Inclusão do Glossário e da Matriz na navegação do site.
+
 ## 0.2.1 — Pipeline de Publicação
 
 - Configuração do MkDocs Material como gerador do site do GKR.
