@@ -1,92 +1,91 @@
 ---
 id: GBA-000
 title: Guivos Business Architecture
-status: initiated
-version: 0.1.0
-owner: Guivos
+status: validated
+version: 0.2.0
+owner: Guivos Business Architecture
 last_updated: 2026-06-28
+related_adrs:
+  - ADR-003
 ---
 
 # Guivos Business Architecture
 
 ## Definição
 
-A Guivos Business Architecture descreve como a empresa cria, entrega, sustenta e expande valor para o Ecossistema Guivos.
+A Guivos Business Architecture define como o negócio da Guivos transforma necessidades em valor sustentável e como a organização se estrutura para gerar, entregar, capturar e reinvestir esse valor no fortalecimento contínuo do Ecossistema Guivos.
 
-Ela não representa a totalidade da Enterprise Architecture. É uma de suas arquiteturas integrantes.
+Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ecosystem Architecture, a Product Architecture ou as arquiteturas especializadas de dados, tecnologia, governança e conhecimento.
 
-## Objetivo
+## Fundamentos
 
-Organizar a empresa por capacidades e cadeias de valor, preservando estabilidade mesmo quando departamentos, equipes ou cargos forem alterados.
+A unidade oficial de fundamentos é:
 
-## Áreas organizacionais iniciais
+- [BA-FND-001 — Business Architecture Foundations](foundations/index.md)
+
+## Organização interna
 
 ```mermaid
 graph TD
     BA[Business Architecture]
-    BA --> C[Corporate]
-    BA --> P[Products]
-    BA --> G[Growth]
-    BA --> O[Operations]
-    BA --> T[Technology]
-    BA --> DI[Data & Intelligence]
+    BA --> F[Foundation]
+    BA --> S[Strategy]
+    BA --> C[Capabilities]
+    BA --> O[Organization]
+    BA --> E[Execution]
 ```
 
-| Área | Responsabilidade principal |
-|---|---|
-| Corporate | Estratégia, finanças, jurídico, marca e direção institucional |
-| Products | Gestão do portfólio e evolução funcional dos produtos |
-| Growth | Marketing, comercial, parcerias e expansão |
-| Operations | Operação diária, atendimento, qualidade e sucesso dos clientes e participantes |
-| Technology | Engenharia, infraestrutura, APIs, segurança e operação tecnológica |
-| Data & Intelligence | Dados, IA, analytics, modelos e inteligência do ecossistema |
+| Camada | Pergunta principal | Ativos previstos |
+|---|---|---|
+| Foundation | O que é a Business Architecture na Guivos? | Propósito, escopo, limites e princípios |
+| Strategy | Como o negócio transforma necessidades em resultados? | Business Transformation Model, Outcomes e Value Chains |
+| Capabilities | Do que a Guivos precisa ser capaz? | Core Business Capabilities e Capability Map |
+| Organization | Como a organização sustenta as capacidades? | Organizational Model e Operating Model |
+| Execution | Como o negócio funciona e é medido? | Processos, KPIs e métricas |
 
-## Capacidades transversais
+## Sequência arquitetural
 
-```mermaid
-graph LR
-    E[Ecosystem]
-    K[Knowledge]
-    G[Governance]
+```text
+Necessidade
+-> Valor
+-> Capacidade
+-> Produto ou Serviço
+-> Funcionalidade
+-> Experiência
+-> Resultado
 ```
 
-| Capacidade | Papel |
-|---|---|
-| Ecosystem | Desenvolver e fortalecer participantes, organizações, coletivos e parceiros |
-| Knowledge | Preservar e evoluir o patrimônio intelectual da Guivos |
-| Governance | Garantir consistência, conformidade, rastreabilidade e evolução controlada |
+Cada nível possui responsabilidade própria e não deve ser confundido com os demais.
 
-Essas capacidades não precisam existir como departamentos independentes desde o início. Elas atravessam toda a organização e podem ser exercidas por diferentes áreas conforme a maturidade da empresa.
+## Roadmap de unidades
 
-## Cadeia de valor de referência
+### Foundation
 
-```mermaid
-graph LR
-    D[Descoberta] --> R[Relacionamento]
-    R --> P[Participação]
-    P --> E[Experiência]
-    E --> EV[Evolução]
-    EV --> K[Conhecimento]
-    K --> I[Inteligência]
-    I --> D
-```
+- `BA-FND-001` — Business Architecture Foundations — **Validated**
 
-A cadeia de valor é circular. Experiências geram conhecimento; conhecimento alimenta inteligência; inteligência melhora novas descobertas e decisões.
+### Strategy
 
-## Princípios iniciais
+- `BA-STR-001` — Business Transformation Model — **Próxima unidade**
+- `BA-STR-002` — Business Outcomes
+- `BA-STR-003` — Value Chains
 
-1. A Business Architecture será orientada por cadeias de valor e capacidades, não apenas por organogramas.
-2. Produtos e áreas organizacionais são estruturas diferentes.
-3. Departamentos podem mudar sem alterar as capacidades permanentes da empresa.
-4. A tecnologia implementa capacidades, mas não define o negócio.
-5. Conhecimento, governança e desenvolvimento do ecossistema são capacidades transversais.
+### Capabilities
 
-## Próximos ativos arquiteturais
+- `BA-CAP-001` — Core Business Capabilities
+- `BA-CAP-002` — Capability Map
 
-- mapa detalhado de cadeias de valor;
-- mapa de capacidades de negócio;
-- relação entre produtos e áreas responsáveis;
-- modelo operacional nacional e internacional;
-- parceiros, representantes e canais;
-- papéis e responsabilidades;
-- processos e indicadores principais.
+### Organization
+
+- `BA-ORG-001` — Organizational Model
+- `BA-ORG-002` — Operating Model
+
+### Execution
+
+- `BA-EXE-001` — Business Processes
+- `BA-EXE-002` — KPIs & Metrics
+
+## Estado de maturidade
+
+A Business Architecture está em estado **Validated em seus fundamentos**.
+
+Ela somente poderá ser promovida a `stable` após a validação das unidades estratégicas, de capacidades, organização e execução das quais depende.
