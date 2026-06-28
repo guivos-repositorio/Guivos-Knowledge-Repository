@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -20,18 +20,18 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | 🟧 | Em consolidação |
 | 🟩 | Consolidado no GKR |
 
-## Guivos Enterprise Architecture
+## Maturidade das arquiteturas
 
-| Arquitetura | Status |
-|---|:---:|
-| Foundation Architecture | 🟩 |
-| Ecosystem Architecture / GEB | 🟧 |
-| Product Architecture | 🟩 |
-| Business Architecture | 🟧 |
-| Data & Intelligence Architecture | ⬜ |
-| Technology Architecture | ⬜ |
-| Governance Architecture | 🟦 |
-| Knowledge Architecture | 🟦 |
+| Arquitetura | Maturidade |
+|---|---|
+| Foundation Architecture | Stable |
+| Ecosystem Architecture / GEB | Validated |
+| Product Architecture | Stable |
+| Business Architecture | Validated em seus fundamentos |
+| Data & Intelligence Architecture | Draft |
+| Technology Architecture | Draft |
+| Governance Architecture | Draft |
+| Knowledge Architecture | Draft |
 
 ## Foundation Architecture
 
@@ -74,18 +74,18 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 
 ## Business Architecture
 
-| Ativo | Status |
-|---|:---:|
-| Visão Geral | 🟩 |
-| Áreas Organizacionais Iniciais | 🟩 |
-| Capacidades Transversais | 🟩 |
-| Cadeia de Valor de Referência | 🟩 |
-| Cadeias de Valor Detalhadas | ⬜ |
-| Mapa de Capacidades de Negócio | ⬜ |
-| Relação Produtos x Áreas | ⬜ |
-| Modelo Operacional Nacional e Internacional | ⬜ |
-| Parceiros, Representantes e Canais | ⬜ |
-| Papéis, Processos e Indicadores | ⬜ |
+| Unidade | Maturidade | Status |
+|---|---|:---:|
+| BA-FND-001 — Business Architecture Foundations | Validated | 🟩 |
+| BA-STR-001 — Business Transformation Model | Próxima unidade | 🟨 |
+| BA-STR-002 — Business Outcomes | Draft | ⬜ |
+| BA-STR-003 — Value Chains | Draft | ⬜ |
+| BA-CAP-001 — Core Business Capabilities | Draft | ⬜ |
+| BA-CAP-002 — Capability Map | Draft | ⬜ |
+| BA-ORG-001 — Organizational Model | Draft | ⬜ |
+| BA-ORG-002 — Operating Model | Draft | ⬜ |
+| BA-EXE-001 — Business Processes | Draft | ⬜ |
+| BA-EXE-002 — KPIs & Metrics | Draft | ⬜ |
 
 ## Governança documental
 
@@ -97,13 +97,14 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Glossário Canônico | 🟩 |
 | Matriz de Consolidação Canônica | 🟩 |
 | Roadmap Arquitetural | 🟩 |
-| ADRs completos | 🟦 |
+| ADR-003 — Architectural Ownership | 🟩 |
+| ADRs completos | 🟧 |
 | Padrões completos do GKR | 🟦 |
 
 ## Sprint atual
 
-Business Architecture — Cadeias de Valor e Mapa de Capacidades de Negócio.
+`BA-STR-001 — Business Transformation Model`.
 
 ## Última consolidação
 
-Sincronização documental do GKR com GEA, Product Architecture e Business Architecture em 28/06/2026.
+Business Architecture Foundations e Architectural Ownership, concluídas em 28/06/2026.
