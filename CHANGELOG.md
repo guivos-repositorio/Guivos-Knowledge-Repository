@@ -2,6 +2,15 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.5.1 — Sincronização Documental da GEA
+
+- Atualização do README com a estrutura atual da Guivos Enterprise Architecture.
+- Atualização do Roadmap Arquitetural com GEA, Product Architecture e Business Architecture.
+- Atualização do Knowledge Board com o estado atual das arquiteturas e ativos.
+- Atualização do Glossário Canônico com Guivos Journey, Marketplace, Travel, Business, Media, Intelligence e Ads.
+- Remoção da pendência legada sobre “Comunidade Guivos”; Guivos Journey passa a ser o nome oficial do produto.
+- Atualização do Modelo Fundamental da Jornada para referenciar as arquiteturas e produtos consolidados.
+
 ## 0.5.0 — Guivos Enterprise Architecture
 
 - Criação do documento `GEA-000 — Guivos Enterprise Architecture`.
