@@ -2,9 +2,11 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-06-28
+related_adrs:
+  - ADR-003
 ---
 
 # Guivos Enterprise Architecture
@@ -37,10 +39,10 @@ graph TD
 
 | Arquitetura | Pergunta principal | Situação |
 |---|---|---|
-| Foundation Architecture | Por que a Guivos existe? | Consolidada em sua base |
-| Ecosystem Architecture | Como o ecossistema funciona? | Em consolidação por meio do GEB |
-| Product Architecture | Como a Guivos entrega valor por produtos? | Consolidada em sua estrutura inicial |
-| Business Architecture | Como a empresa cria, entrega e sustenta valor? | Iniciada |
+| Foundation Architecture | Por que a Guivos existe e quais são seus princípios fundamentais? | Consolidada em sua base |
+| Ecosystem Architecture | Como ocorre a transformação dos participantes? | Em consolidação por meio do GEB |
+| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | Consolidada em sua estrutura inicial |
+| Business Architecture | Como a Guivos gera, entrega, captura e reinveste valor para sustentar o ecossistema? | Fundamentos validados |
 | Data & Intelligence Architecture | Como dados e conhecimento se tornam inteligência aplicada? | Planejada |
 | Technology Architecture | Como as capacidades são implementadas tecnicamente? | Planejada |
 | Governance Architecture | Como decisões, riscos e mudanças são controlados? | Parcialmente iniciada |
@@ -51,6 +53,14 @@ graph TD
 - **GEA** é o conjunto integrado das arquiteturas da Guivos.
 - **GKR** é o repositório oficial e a fonte única da verdade.
 - **GEB** é o blueprint principal da Ecosystem Architecture.
+
+## Responsabilidade conceitual
+
+Todo conceito, modelo, capacidade, ativo arquitetural ou decisão canônica deve possuir uma única arquitetura proprietária.
+
+Arquiteturas consumidoras podem utilizar e referenciar esses ativos, mas não redefini-los.
+
+A decisão completa está registrada no [ADR-003 — Architectural Ownership](../adr/ADR-003-architectural-ownership.md).
 
 ## Princípios permanentes
 
@@ -66,6 +76,10 @@ Arquiteturas devem utilizar conceitos consolidados e rastreáveis no GKR.
 
 Cada decisão arquitetural deve possuir um único registro oficial, evitando documentos paralelos e versões concorrentes.
 
+### Propriedade arquitetural única
+
+Cada ativo canônico deve possuir uma única arquitetura proprietária responsável por sua definição, evolução e governança.
+
 ### Separação entre arquiteturas
 
 Negócio, produto, dados, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.
@@ -77,6 +91,10 @@ Conceitos e capacidades de negócio devem permanecer válidos mesmo quando lingu
 ### Evolução controlada
 
 Alterações estruturais devem ser registradas por meio da governança do GKR e, quando necessário, por Architecture Decision Records.
+
+### Estabilidade como ativo
+
+A arquitetura deve evoluir por aumento de clareza, consistência e completude, evitando mudanças estruturais sem necessidade comprovada.
 
 ## Fluxo oficial de decisão
 
@@ -95,19 +113,32 @@ graph LR
 
 Cada arquitetura da GEA deve, progressivamente, documentar:
 
-1. propósito;
-2. escopo;
-3. princípios;
-4. modelo conceitual;
-5. cadeias de valor ou fluxos relevantes;
-6. capacidades;
-7. componentes;
-8. integrações;
-9. governança e ADRs;
-10. roadmap.
+1. objetivo e definição;
+2. propósito;
+3. escopo e limites;
+4. princípios;
+5. modelos canônicos;
+6. capacidades ou componentes;
+7. relações com outras arquiteturas;
+8. critérios de validação;
+9. decisões arquiteturais tomadas;
+10. evolução prevista.
+
+## Regra de maturidade
+
+Os estados de maturidade são:
+
+| Estado | Significado |
+|---|---|
+| Draft | Em construção inicial |
+| Validated | Conceitualmente validado e utilizável |
+| Canonical | Integrante da versão canônica vigente |
+| Stable | Improvável de sofrer alterações estruturais |
+
+Nenhuma unidade deve ser considerada `stable` antes que suas dependências estejam, no mínimo, `validated`.
 
 ## Regra de estabilidade
 
-A estrutura principal da GEA constitui a base da versão Canon 1.0.
+A estrutura principal da GEA constitui a base da versão Canon 1.0 e está estruturalmente congelada.
 
-Refinamentos e novos artefatos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem revisão arquitetural formal.
+Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem justificativa formal e ADR.
