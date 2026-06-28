@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -45,30 +45,18 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 ## Fase 4 — Business Architecture
 
-### Foundation
+A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 
-- [x] `BA-FND-001` — Business Architecture Foundations.
-
-### Strategy
-
-- [ ] `BA-STR-001` — Business Transformation Model.
-- [ ] `BA-STR-002` — Business Outcomes.
-- [ ] `BA-STR-003` — Value Chains.
-
-### Capabilities
-
-- [ ] `BA-CAP-001` — Core Business Capabilities.
-- [ ] `BA-CAP-002` — Capability Map.
-
-### Organization
-
-- [ ] `BA-ORG-001` — Organizational Model.
-- [ ] `BA-ORG-002` — Operating Model.
-
-### Execution
-
-- [ ] `BA-EXE-001` — Business Processes.
-- [ ] `BA-EXE-002` — KPIs & Metrics.
+1. [x] `BA-FND-001` — Business Architecture Foundations.
+2. [x] `BA-STR-001` — Business Transformation Model.
+3. [ ] `BA-STR-002` — Business Outcomes.
+4. [ ] `BA-CAP-001` — Core Business Capabilities.
+5. [ ] `BA-CAP-002` — Capability Map.
+6. [ ] `BA-STR-003` — Value Chains.
+7. [ ] `BA-ORG-001` — Organizational Model.
+8. [ ] `BA-ORG-002` — Operating Model.
+9. [ ] `BA-EXE-001` — Business Processes.
+10. [ ] `BA-EXE-002` — KPIs & Metrics.
 
 ## Fase 5 — Data & Intelligence Architecture
 
@@ -88,6 +76,7 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 ## Fase 7 — Governance e Knowledge Architecture
 
 - [x] Consolidar princípio de Architectural Ownership.
+- [x] Consolidar ordem por dependências arquiteturais.
 - [ ] Consolidar governança de ADRs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
@@ -96,4 +85,4 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 ## Próxima Sprint
 
-`BA-STR-001 — Business Transformation Model`.
+`BA-STR-002 — Business Outcomes`.
