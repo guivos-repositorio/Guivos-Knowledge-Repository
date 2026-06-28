@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -43,16 +43,32 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - [x] Consolidar Guivos Ads.
 - [ ] Revisar nome definitivo do Guivos Marketplace.
 
-## Fase 4 — Guivos Enterprise Architecture
+## Fase 4 — Business Architecture
 
-- [x] Criar visão geral da GEA.
-- [x] Criar visão inicial da Business Architecture.
-- [ ] Detalhar cadeias de valor da Business Architecture.
-- [ ] Detalhar mapa de capacidades de negócio.
-- [ ] Relacionar capacidades, produtos e áreas organizacionais.
-- [ ] Detalhar modelo operacional nacional e internacional.
-- [ ] Detalhar parceiros, representantes e canais.
-- [ ] Definir papéis, responsabilidades, processos e indicadores.
+### Foundation
+
+- [x] `BA-FND-001` — Business Architecture Foundations.
+
+### Strategy
+
+- [ ] `BA-STR-001` — Business Transformation Model.
+- [ ] `BA-STR-002` — Business Outcomes.
+- [ ] `BA-STR-003` — Value Chains.
+
+### Capabilities
+
+- [ ] `BA-CAP-001` — Core Business Capabilities.
+- [ ] `BA-CAP-002` — Capability Map.
+
+### Organization
+
+- [ ] `BA-ORG-001` — Organizational Model.
+- [ ] `BA-ORG-002` — Operating Model.
+
+### Execution
+
+- [ ] `BA-EXE-001` — Business Processes.
+- [ ] `BA-EXE-002` — KPIs & Metrics.
 
 ## Fase 5 — Data & Intelligence Architecture
 
@@ -71,6 +87,7 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 ## Fase 7 — Governance e Knowledge Architecture
 
+- [x] Consolidar princípio de Architectural Ownership.
 - [ ] Consolidar governança de ADRs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
@@ -79,4 +96,4 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 ## Próxima Sprint
 
-Business Architecture — Cadeias de Valor e Mapa de Capacidades de Negócio.
+`BA-STR-001 — Business Transformation Model`.
