@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-27
+last_updated: 2026-06-28
 ---
 
 # Matriz de Consolidação Canônica
@@ -60,15 +60,21 @@ Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR cons
 | Capacidade | Manter | Arquitetural; não equivale a permissão técnica |
 | Relacionamento | Manter | Vínculo contextual entre participantes |
 
-## Produtos e nomenclaturas comerciais
+## Arquitetura de produtos
 
 | Conceito | Decisão | Situação |
 |---|---|---|
-| “Comunidade Guivos” | Pendente | Nome anterior de produto/área; substituição oficial precisa ser recuperada e validada |
-| “Guivos Podcast” | Pendente | Nome insuficiente para a área ampliada de conteúdo, histórias, imprensa, vídeos e publicações |
-| Marketplace | Pendente | Validar uso apenas como modelo funcional do guivos.com, não como identidade da Guivos |
-| Business | Pendente | Revisar papel na arquitetura de produtos |
-| Insights | Pendente | Revisar papel na arquitetura de dados e conhecimento |
+| Ecossistema Guivos | Manter | Camada superior que integra todos os produtos |
+| Guivos Journey | Manter | Produto responsável pela jornada contínua do participante |
+| Guivos Marketplace | Refinar | Produto consolidado; nome comercial provisório |
+| Guivos Travel | Manter | Produto de viagens e experiências turísticas |
+| Guivos Business | Manter | Produto de soluções para organizações |
+| Guivos Media | Manter | Produto editorial e institucional; substitui “Guivos Podcast” |
+| Guivos Intelligence | Manter | Produto de inteligência aplicada; substitui “Guivos Insights” |
+| Guivos Ads | Manter | Produto de publicidade e mídia patrocinada |
+| “Comunidade Guivos” | Remover | Substituída por Guivos Journey como nome de produto |
+| “Guivos Podcast” | Remover | Podcast passa a ser formato de Guivos Media |
+| “Guivos Insights” | Remover | Insights passa a ser resultado de Guivos Intelligence |
 
 ## Governança documental
 
