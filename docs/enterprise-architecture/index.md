@@ -2,11 +2,13 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-06-28
 related_adrs:
   - ADR-003
+related_validations:
+  - AV-001
 ---
 
 # Guivos Enterprise Architecture
@@ -18,6 +20,10 @@ A Guivos Enterprise Architecture (GEA) é o sistema de arquiteturas que organiza
 A GEA não é uma arquitetura isolada. Ela é o guarda-chuva que integra todas as arquiteturas oficiais da Guivos.
 
 O Guivos Knowledge Repository (GKR) é a fonte oficial em que a GEA é documentada, versionada, publicada e governada.
+
+## Missão
+
+Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, validada por evidências e orientada à tomada de decisões estratégicas de longo prazo.
 
 ## Estrutura oficial
 
@@ -96,18 +102,41 @@ Alterações estruturais devem ser registradas por meio da governança do GKR e,
 
 A arquitetura deve evoluir por aumento de clareza, consistência e completude, evitando mudanças estruturais sem necessidade comprovada.
 
+### Orientação à decisão
+
+Todo ativo arquitetural deve apoiar decisões reais e declarar quais decisões orienta e quais não orienta.
+
+### Evidência arquitetural
+
+Nenhuma decisão estrutural deve ser tomada apenas por preferência. Alterações relevantes devem combinar fundamentos externos, necessidade interna, simplicidade e escalabilidade.
+
+### Simplicidade estrutural
+
+A GEA deve crescer em profundidade, clareza e integração, evitando novas camadas quando a arquitetura existente já comportar o conceito.
+
 ## Fluxo oficial de decisão
 
 ```mermaid
 graph LR
-    K[Conhecimento] --> A[Arquitetura]
-    A --> D[Decisão / ADR]
-    D --> I[Implementação]
-    I --> V[Validação]
-    V --> O[Operação]
+    H[Hipótese] --> E[Evidências]
+    E --> V[Validação Arquitetural]
+    V --> D[Decisão / ADR]
+    D --> A[Arquitetura]
+    A --> I[Implementação]
+    I --> O[Operação]
     O --> L[Aprendizado]
-    L --> K
+    L --> H
 ```
+
+## Tipos de ativos de governança
+
+| Ativo | Pergunta respondida |
+|---|---|
+| Canon | Como a Guivos funciona? |
+| ADR | Por que uma decisão arquitetural foi tomada? |
+| AV | Como a decisão ou estrutura foi validada? |
+
+A primeira validação formal está registrada em [AV-001 — GEA Structure Validation](../validation/AV-001-gea-structure-validation.md).
 
 ## Padrão das arquiteturas
 
@@ -120,9 +149,10 @@ Cada arquitetura da GEA deve, progressivamente, documentar:
 5. modelos canônicos;
 6. capacidades ou componentes;
 7. relações com outras arquiteturas;
-8. critérios de validação;
-9. decisões arquiteturais tomadas;
-10. evolução prevista.
+8. uso na tomada de decisão;
+9. critérios de validação;
+10. decisões arquiteturais tomadas;
+11. evolução prevista.
 
 ## Regra de maturidade
 
@@ -141,4 +171,4 @@ Nenhuma unidade deve ser considerada `stable` antes que suas dependências estej
 
 A estrutura principal da GEA constitui a base da versão Canon 1.0 e está estruturalmente congelada.
 
-Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem justificativa formal e ADR.
+Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.
