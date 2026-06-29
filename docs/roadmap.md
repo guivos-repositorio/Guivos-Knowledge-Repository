@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-06-29
 ---
@@ -71,7 +71,21 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 9. [ ] `BA-EXE-001` — Business Processes.
 10. [ ] `BA-EXE-002` — KPIs & Metrics.
 
-## Fase 5 — Data & Intelligence Architecture
+## Fase 5 — Research
+
+- [x] Criar o domínio `Research` no GKR.
+- [x] Criar a estrutura do `RP-001 — Ecosystem Research Program`.
+- [ ] Concluir o Research Protocol.
+- [ ] Definir critérios de qualidade das fontes.
+- [ ] Definir níveis de evidência.
+- [ ] Iniciar o Evidence Registry.
+- [ ] Construir o Ecosystem Phenomena Catalog — EPC.
+- [ ] Produzir recomendações arquiteturais para o BA-STR-002.
+- [ ] Derivar o Candidate Outcome Register — COR a partir do EPC.
+
+O domínio Research produz evidências e sínteses. A decisão arquitetural permanece com a arquitetura proprietária.
+
+## Fase 6 — Data & Intelligence Architecture
 
 - [ ] Definir Grafo Global da Guivos.
 - [ ] Definir modelo de dados conceitual.
@@ -79,14 +93,14 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 - [ ] Definir mecanismos de contexto, recomendação e aprendizado.
 - [ ] Definir analytics e indicadores estratégicos.
 
-## Fase 6 — Technology Architecture
+## Fase 7 — Technology Architecture
 
 - [ ] Definir arquitetura lógica.
 - [ ] Definir front-end, back-end, APIs e integrações.
 - [ ] Definir infraestrutura, segurança e DevOps.
 - [ ] Definir estratégia de escalabilidade.
 
-## Fase 7 — Governance e Knowledge Architecture
+## Fase 8 — Governance e Knowledge Architecture
 
 - [x] Consolidar princípio de Architectural Ownership.
 - [x] Consolidar ordem por dependências arquiteturais.
@@ -106,4 +120,4 @@ Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificat
 
 ## Próxima Sprint
 
-Construir o **Candidate Outcome Register — COR** do `BA-STR-002`, preservando todos os candidatos como hipóteses até a validação externa e a COEM.
+Concluir o **RP-001 Research Protocol**, definir critérios de qualidade das fontes e níveis de evidência e iniciar o **Evidence Registry**.
