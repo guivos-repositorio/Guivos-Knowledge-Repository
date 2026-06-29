@@ -2,6 +2,18 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.8.0 — Evidence-Based Architecture Validation
+
+- Criação de `AV-001 — GEA Structure Validation`.
+- Redefinição da antiga Research Line como validação arquitetural orientada à decisão.
+- Registro da missão da GEA como arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, validada por evidências e orientada a decisões estratégicas de longo prazo.
+- Consolidação dos princípios de orientação à decisão, evidência arquitetural e simplicidade estrutural.
+- Definição da relação entre Canon, ADR e AV.
+- Registro do resultado provisório: nenhuma evidência suficiente para criar uma camada anterior aos Outcomes.
+- Preservação da estrutura atual da GEA.
+- Atualização da visão geral da GEA, Knowledge Board, Roadmap e navegação do site.
+- Registro do ponto exato de retomada: construção do Catálogo Canônico de Ecosystem Outcomes em `BA-STR-002`.
+
 ## 0.7.1 — Business Outcomes Conceptual Checkpoint
 
 - Criação de `BA-STR-002 — Business Outcomes` em estado `draft` e versão `0.4.0`.
