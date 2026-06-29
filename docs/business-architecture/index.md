@@ -2,7 +2,7 @@
 id: GBA-000
 title: Guivos Business Architecture
 status: validated
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Business Architecture
 last_updated: 2026-06-28
 related_adrs:
@@ -22,6 +22,10 @@ Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ec
 
 - [BA-FND-001 — Business Architecture Foundations](foundations/index.md)
 - [BA-STR-001 — Business Transformation Model](strategy/business-transformation-model.md)
+
+## Unidade ativa
+
+- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint conceitual consolidado; catálogo canônico pendente.
 
 ## Organização interna
 
@@ -83,7 +87,7 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 1. `BA-FND-001` — Business Architecture Foundations — **Validated**
 2. `BA-STR-001` — Business Transformation Model — **Validated**
-3. `BA-STR-002` — Business Outcomes — **Próxima unidade**
+3. `BA-STR-002` — Business Outcomes — **Draft com checkpoint conceitual consolidado**
 4. `BA-CAP-001` — Core Business Capabilities
 5. `BA-CAP-002` — Capability Map
 6. `BA-STR-003` — Value Chains
@@ -96,4 +100,4 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 A Business Architecture está em estado **Validated em seus fundamentos e em seu modelo de transformação**.
 
-Ela somente poderá ser promovida a `stable` após a validação das unidades estratégicas, de capacidades, organização e execução das quais depende.
+O BA-STR-002 possui definição, propriedades, limites e governança conceitual consolidados, mas permanece `draft` até a conclusão de seus catálogos e matriz de alinhamento.
