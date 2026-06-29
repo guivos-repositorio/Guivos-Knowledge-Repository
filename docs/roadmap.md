@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-06-29
 ---
 
 # Roadmap Arquitetural
@@ -54,6 +54,12 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
    - [x] Modelo conceitual.
    - [x] Propriedades, limites e governança inicial.
    - [x] Validar provisoriamente a necessidade de uma camada anterior aos Outcomes.
+   - [x] Definir Outcome Governance Method.
+   - [x] Definir estrutura do COR, External Validation, COEM e AQS-O01.
+   - [ ] Construir Candidate Outcome Register — COR.
+   - [ ] Realizar validação externa dos grupos candidatos.
+   - [ ] Aplicar Candidate Outcome Evaluation Matrix — COEM.
+   - [ ] Validar e estabilizar AQS-O01.
    - [ ] Definir catálogo de Ecosystem Outcomes.
    - [ ] Definir catálogo de Business Outcomes.
    - [ ] Consolidar matriz de sustentação.
@@ -85,6 +91,7 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 - [x] Consolidar princípio de Architectural Ownership.
 - [x] Consolidar ordem por dependências arquiteturais.
 - [x] Iniciar validações arquiteturais com o AV-001.
+- [x] Iniciar Governance Framework do GKR com Outcome Governance Method.
 - [ ] Consolidar governança de ADRs e AVs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
@@ -99,4 +106,4 @@ Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificat
 
 ## Próxima Sprint
 
-Retomar `BA-STR-002 — Business Outcomes` pela construção do **Catálogo Canônico de Ecosystem Outcomes**.
+Construir o **Candidate Outcome Register — COR** do `BA-STR-002`, preservando todos os candidatos como hipóteses até a validação externa e a COEM.
