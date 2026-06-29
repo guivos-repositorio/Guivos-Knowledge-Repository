@@ -1,9 +1,9 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-06-29
 ---
 
 # Knowledge Board
@@ -78,7 +78,7 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 |---:|---|---|:---:|
 | 1 | BA-FND-001 — Business Architecture Foundations | Validated | 🟩 |
 | 2 | BA-STR-001 — Business Transformation Model | Validated | 🟩 |
-| 3 | BA-STR-002 — Business Outcomes | Draft — checkpoint conceitual consolidado | 🟧 |
+| 3 | BA-STR-002 — Business Outcomes | Draft — método de governança consolidado | 🟧 |
 | 4 | BA-CAP-001 — Core Business Capabilities | Draft | ⬜ |
 | 5 | BA-CAP-002 — Capability Map | Draft | ⬜ |
 | 6 | BA-STR-003 — Value Chains | Draft | ⬜ |
@@ -95,6 +95,18 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 
 Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma camada anterior aos Outcomes. A estrutura atual da GEA permanece preservada.
 
+## Governance Framework do GKR
+
+| Ativo | Status |
+|---|:---:|
+| Outcome Governance Method | 🟩 |
+| Candidate Outcome Register — COR | ⬜ |
+| External Validation dos candidatos | ⬜ |
+| Candidate Outcome Evaluation Matrix — COEM | ⬜ |
+| AQS-O01 — Outcome Quality Standard | 🟧 |
+
+O AQS-O01 está conceitualmente definido, mas permanece em validação prática até ser aplicado aos primeiros candidatos.
+
 ## Governança documental
 
 | Ativo | Status |
@@ -108,17 +120,18 @@ Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma ca
 | ADR-003 — Architectural Ownership | 🟩 |
 | ADR-004 — Architectural Dependency Order | 🟩 |
 | AV-001 — GEA Structure Validation | 🟧 |
+| Outcome Governance Method | 🟩 |
 | ADRs completos | 🟧 |
 | Padrões completos do GKR | 🟦 |
 
 ## Sprint atual
 
-`BA-STR-002 — Business Outcomes` — etapa conceitual registrada; catálogo canônico pendente.
+`BA-STR-002 — Business Outcomes` — método de descoberta, validação e avaliação registrado; catálogos canônicos pendentes.
 
 ## Ponto exato de retomada
 
-Construir o **Catálogo Canônico de Ecosystem Outcomes**, preservando a estrutura atual da GEA e utilizando o AV-001 apenas para verificar se surgem lacunas arquiteturais concretas.
+Construir o **Candidate Outcome Register — COR**, sem atribuir códigos canônicos `EO-###` antes da validação externa e da COEM.
 
 ## Última consolidação
 
-Missão da GEA, princípios de orientação à decisão, evidência arquitetural, simplicidade estrutural e `AV-001 — GEA Structure Validation`, concluídos em 28/06/2026.
+Princípio de responsabilidade da Guivos, Outcome Governance Method, COR, External Validation, COEM, AQS-O01 em validação prática e limites metodológicos do BA-STR-002, concluídos em 29/06/2026.
