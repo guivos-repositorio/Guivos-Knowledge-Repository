@@ -2,6 +2,22 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.11.0 — Research Protocol and State of the Art
+
+- Atualização do domínio `Research` para a versão `0.2.0`.
+- Redefinição do objetivo do Research como construção de entendimento compartilhado para reduzir incertezas arquiteturais.
+- Consolidação dos princípios de neutralidade arquitetural, suficiência arquitetural, compreensão antes da prescrição e separação de responsabilidades.
+- Atualização do `RP-001 Research Protocol` para a versão `0.2.0`.
+- Inclusão da etapa de Estado da Arte antes da coleta sistemática de evidências.
+- Definição dos critérios de qualidade das fontes: relevância, autoridade, rigor, generalidade, permanência, aplicabilidade e transparência.
+- Definição dos níveis de evidência `E0` a `E4`.
+- Definição dos critérios de maturidade de modelos: explicação, decisão, previsão, generalização e rastreabilidade.
+- Registro do fluxo: Estado da Arte -> Evidence Registry -> Meta-síntese -> EPC -> Architectural Recommendations.
+- Registro de que o COR permanece sob responsabilidade posterior da Business Architecture.
+- Preservação fora da Canon das hipóteses sobre Sistema Humano de Evolução, transformação, mudança de estado, Worldview, Knowledge-Centric Enterprise e modelo explicativo definitivo.
+- Atualização do Knowledge Board e do Roadmap.
+- Definição do próximo passo: construir o Estado da Arte do RP-001.
+
 ## 0.10.0 — Research Domain and RP-001
 
 - Criação do domínio `Research` no GKR.
