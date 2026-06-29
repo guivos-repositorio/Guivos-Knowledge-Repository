@@ -2,22 +2,24 @@
 id: BA-STR-002
 title: Business Outcomes
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Business Architecture
-last_updated: 2026-06-28
+last_updated: 2026-06-29
 depends_on:
   - BA-FND-001
   - BA-STR-001
-checkpoint: conceptual-model
+related_governance:
+  - GKR-GOV-OUT-001
+checkpoint: outcome-governance-method
 ---
 
 # BA-STR-002 — Business Outcomes
 
 ## Estado do ativo
 
-Este documento registra o checkpoint conceitual do BA-STR-002.
+Este documento registra o checkpoint conceitual e metodológico do BA-STR-002.
 
-O conceito de Outcome, suas propriedades, limites e função decisória estão consolidados para continuidade do trabalho. O catálogo canônico de Ecosystem Outcomes e Business Outcomes ainda não foi definido.
+O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos para continuidade. Os catálogos canônicos de Ecosystem Outcomes e Business Outcomes ainda não foram consolidados.
 
 ## Pergunta arquitetural
 
@@ -97,7 +99,7 @@ A cadeia estabelece que:
 
 ### Ecosystem Outcomes
 
-Representam mudanças permanentes desejadas no ecossistema e na capacidade de evolução de Pessoas, Organizações e Coletivos.
+Representam condições permanentes desejadas do ecossistema que aumentam a probabilidade de transformação positiva de Pessoas, Organizações e Coletivos.
 
 Sua definição conceitual depende da Ecosystem Architecture. A Business Architecture os referencia, mas não redefine os conceitos de participante, evolução, oportunidade ou experiência.
 
@@ -106,6 +108,19 @@ Sua definição conceitual depende da Ecosystem Architecture. A Business Archite
 Representam estados permanentes necessários para que a Guivos sustente, amplie e aperfeiçoe continuamente sua capacidade de produzir Ecosystem Outcomes.
 
 Eles pertencem à Business Architecture.
+
+## Princípio de responsabilidade
+
+A Guivos não controla a transformação dos participantes.
+
+Ela projeta, opera e evolui um ecossistema que amplia as condições para que Pessoas, Organizações e Coletivos realizem sua própria transformação.
+
+Portanto, um Ecosystem Outcome:
+
+- descreve uma condição do ecossistema;
+- respeita a autonomia dos participantes;
+- não promete resultados individuais determinísticos;
+- não atribui à Guivos controle sobre decisões pessoais ou organizacionais.
 
 ## Relação entre os dois níveis
 
@@ -132,12 +147,14 @@ Todo Outcome candidato deve ser:
 |---|---|
 | Permanente | Expressa um estado de longo prazo, não uma ação temporária |
 | Orientado ao propósito | Deriva diretamente da Foundation Architecture |
+| Ecossistêmico ou empresarial | Pertence claramente ao nível de Outcome correspondente |
 | Independente | Não depende de produto, processo, organograma ou tecnologia específica |
 | Decisório | Orienta priorização, investimento ou desenho de capacidades |
 | Observável | Pode ser avaliado por diferentes indicadores ao longo do tempo |
 | Sustentável | Pode ser mantido ou ampliado continuamente |
 | Rastreável | Relaciona-se com capacidades, produtos, experiências e KPIs |
 | Estratégico | Representa uma escolha permanente, não uma iniciativa ou meta anual |
+| Não redundante | Não duplica outro Outcome canônico |
 
 ## Teste de admissibilidade
 
@@ -151,6 +168,81 @@ Um Outcome somente poderá integrar o catálogo canônico quando responder posit
 6. Pode ser observado por diferentes indicadores?
 7. É distinto de atividade, projeto, resultado pontual, KPI ou meta?
 8. Pode ser rastreado até a execução sem ser redefinido por ela?
+9. Respeita a fronteira de responsabilidade entre ecossistema e participante?
+10. É distinto dos demais Outcomes aprovados?
+
+## Método de governança dos Outcomes
+
+O processo oficial está definido em [Outcome Governance Method](../../governance-framework/outcome-governance-method.md).
+
+```mermaid
+graph LR
+    D[Discovery] --> COR[Candidate Outcome Register]
+    COR --> EV[External Validation]
+    EV --> COEM[Candidate Outcome Evaluation Matrix]
+    COEM --> AO[Approved Outcomes]
+    AO --> C[Canon]
+```
+
+### Candidate Outcome Register — COR
+
+O COR registra todos os candidatos antes de qualquer aprovação. Ele preserva hipóteses, sobreposições, rejeições, incorporações e adiamentos.
+
+### External Validation
+
+A validação externa confronta os grupos de candidatos com referências diretamente relevantes, buscando confirmação, ampliação, contradição ou omissões.
+
+### Candidate Outcome Evaluation Matrix — COEM
+
+A COEM aplica, no mínimo:
+
+| Teste | Pergunta |
+|---|---|
+| Essential Test | Sem essa condição, o propósito continua alcançável de forma sustentável? |
+| Decision Test | Sua degradação contínua exigiria revisão estratégica? |
+| Replacement Test | Continua válida após substituição dos produtos e tecnologias atuais? |
+| Outcome Quality Test | Atende às propriedades e ao teste de admissibilidade? |
+
+### Estados de avaliação
+
+- Candidate;
+- Under Validation;
+- Approved;
+- Rejected;
+- Merged;
+- Deferred.
+
+## Outcome Quality Standard — AQS-O01
+
+O AQS-O01 permanece em validação prática. Ele somente será promovido a padrão estável após aplicação aos primeiros candidatos.
+
+Além dos critérios de qualidade, ele define que cada Outcome consolidado deverá possuir:
+
+- código;
+- nome;
+- definição canônica;
+- justificativa;
+- rastreabilidade;
+- indicadores de evidência possíveis;
+- produtos contribuintes.
+
+### Padrão de redação
+
+- descrever um estado, não uma ação;
+- não citar produtos, canais, tecnologias ou metas;
+- manter uma ideia principal por Outcome;
+- utilizar formulação afirmativa;
+- evitar substantivos isolados como definição;
+- usar o ecossistema como sujeito quando isso aumentar a precisão.
+
+## Limites metodológicos
+
+1. Ecosystem Outcomes não representam etapas de uma jornada do participante.
+2. Um ciclo de descoberta, conexão, participação, contribuição e evolução pode ser investigado futuramente na arquitetura adequada, mas não organiza o catálogo atual.
+3. Taxonomias de fenômenos do ecossistema não bloqueiam o BA-STR-002.
+4. Dimensões, propriedades emergentes e novas camadas permanecem fora da Canon enquanto não forem dependências comprovadas.
+5. Nenhum refinamento conceitual deve bloquear a evolução da arquitetura quando a estrutura atual já permitir decisões corretas.
+6. Nenhum conceito canônico nasce diretamente na Canon.
 
 ## Regras de governança
 
@@ -161,6 +253,7 @@ Um Outcome somente poderá integrar o catálogo canônico quando responder posit
 5. Toda iniciativa estratégica deve declarar quais Outcomes canônicos pretende influenciar.
 6. Nenhuma Capability deve ser consolidada sem indicar quais Outcomes pretende produzir.
 7. O catálogo deve permanecer reduzido, estável e livre de duplicidades.
+8. Candidatos rejeitados, incorporados ou adiados devem permanecer rastreáveis no COR e na COEM.
 
 ## Uso na tomada de decisão
 
@@ -198,39 +291,40 @@ Um Outcome somente poderá integrar o catálogo canônico quando responder posit
 3. KPIs observam Outcomes, mas não os definem.
 4. Capabilities existem para produzir um ou mais Outcomes.
 5. Ecosystem Outcomes e Business Outcomes são níveis distintos e interdependentes.
-6. Toda iniciativa estratégica deve ser justificável por Outcomes canônicos.
-7. O catálogo canônico ainda não está consolidado.
+6. Ecosystem Outcomes descrevem condições do ecossistema, não transformações controladas pela Guivos.
+7. Todo candidato deve percorrer Discovery, COR, External Validation e COEM antes da Canon.
+8. O AQS-O01 será validado na prática antes de estabilização.
+9. O catálogo canônico ainda não está consolidado.
 
 ## Hipóteses preservadas fora da Canon
 
-As seguintes hipóteses permanecem em investigação e não alteram a arquitetura oficial:
+As seguintes hipóteses permanecem registradas, mas não bloqueiam o BA-STR-002:
 
 - existência de Capacidades Fundamentais do Ecossistema acima dos Outcomes;
 - Discovery, Connection, Development e Prosperity como possíveis dimensões, dinâmicas ou etapas;
 - propriedades emergentes como conectividade, confiança, inteligência coletiva e resiliência;
+- taxonomia dos fenômenos do ecossistema;
+- ciclo de geração de valor do participante;
 - GEA como arquitetura de capacidades em múltiplos níveis;
 - Architectural Intent como possível camada intermediária entre propósito e Outcomes;
 - taxonomia funcional dos produtos;
 - Core Model da GEA;
 - GEM e GDS como futuros ativos da Knowledge Architecture.
 
-## Questão de pesquisa para retomada
-
-> Quais são as propriedades ou capacidades fundamentais de um ecossistema humano capaz de promover evolução contínua?
-
-Essa investigação deverá validar se existe uma camada anterior aos Outcomes. Até sua conclusão, nenhuma mudança será feita na estrutura oficial da GEA.
-
 ## Critérios para conclusão do BA-STR-002
 
 O ativo somente poderá ser promovido a `validated` quando:
 
+- o Candidate Outcome Register estiver concluído;
+- a validação externa dos candidatos estiver registrada;
+- a COEM estiver concluída;
+- o AQS-O01 tiver sido testado e ajustado;
 - o catálogo canônico de Ecosystem Outcomes estiver definido;
 - o catálogo canônico de Business Outcomes estiver definido;
 - a matriz de sustentação entre os dois níveis estiver concluída;
 - cada Outcome passar pelo teste de admissibilidade;
-- a hipótese de uma camada anterior aos Outcomes for confirmada ou rejeitada;
 - a relação com BA-CAP-001 estiver suficientemente clara.
 
 ## Próxima etapa
 
-Validar a questão de pesquisa sobre propriedades ou capacidades fundamentais do ecossistema antes de concluir o catálogo canônico de Outcomes.
+Construir o primeiro **Candidate Outcome Register — COR** do BA-STR-002. Nenhum candidato receberá código canônico `EO-###` antes de passar pela validação externa e pela COEM.
