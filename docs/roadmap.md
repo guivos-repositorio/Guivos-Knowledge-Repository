@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-06-29
 ---
@@ -75,15 +75,23 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 
 - [x] Criar o domínio `Research` no GKR.
 - [x] Criar a estrutura do `RP-001 — Ecosystem Research Program`.
-- [ ] Concluir o Research Protocol.
-- [ ] Definir critérios de qualidade das fontes.
-- [ ] Definir níveis de evidência.
+- [x] Consolidar conceitualmente o Research Protocol.
+- [x] Definir critérios de qualidade das fontes.
+- [x] Definir níveis de evidência.
+- [x] Registrar princípios de neutralidade e suficiência arquitetural.
+- [ ] Mapear o Estado da Arte.
+  - [ ] Identificar modelos explicativos existentes.
+  - [ ] Identificar convergências entre disciplinas.
+  - [ ] Identificar divergências conceituais.
+  - [ ] Identificar limitações dos modelos atuais.
+  - [ ] Identificar lacunas relevantes para a Guivos.
 - [ ] Iniciar o Evidence Registry.
 - [ ] Construir o Ecosystem Phenomena Catalog — EPC.
+- [ ] Produzir meta-síntese e modelos explicativos provisórios.
 - [ ] Produzir recomendações arquiteturais para o BA-STR-002.
 - [ ] Derivar o Candidate Outcome Register — COR a partir do EPC.
 
-O domínio Research produz evidências e sínteses. A decisão arquitetural permanece com a arquitetura proprietária.
+O domínio Research produz entendimento, evidências e sínteses. A decisão arquitetural permanece com a arquitetura proprietária.
 
 ## Fase 6 — Data & Intelligence Architecture
 
@@ -118,6 +126,15 @@ O domínio Research produz evidências e sínteses. A decisão arquitetural perm
 
 Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificativa suficiente para criar uma camada anterior aos Outcomes.
 
+## Hipóteses preservadas fora da Canon
+
+- Sistema Humano de Evolução;
+- transformação como fenômeno fundamental;
+- mudança de estado como unidade mínima;
+- Worldview;
+- Knowledge-Centric Enterprise;
+- modelo explicativo definitivo do domínio.
+
 ## Próxima Sprint
 
-Concluir o **RP-001 Research Protocol**, definir critérios de qualidade das fontes e níveis de evidência e iniciar o **Evidence Registry**.
+Construir o **Estado da Arte** do RP-001, mapeando modelos explicativos existentes, convergências, divergências, limitações e lacunas antes de iniciar o Evidence Registry.
