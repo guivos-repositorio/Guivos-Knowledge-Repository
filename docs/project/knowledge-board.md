@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -27,7 +27,7 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Foundation Architecture | Stable |
 | Ecosystem Architecture / GEB | Validated |
 | Product Architecture | Stable |
-| Business Architecture | Validated em Foundations e Strategy inicial |
+| Business Architecture | Validated em Foundations e Strategy inicial; Outcomes em construção |
 | Data & Intelligence Architecture | Draft |
 | Technology Architecture | Draft |
 | Governance Architecture | Draft |
@@ -78,7 +78,7 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 |---:|---|---|:---:|
 | 1 | BA-FND-001 — Business Architecture Foundations | Validated | 🟩 |
 | 2 | BA-STR-001 — Business Transformation Model | Validated | 🟩 |
-| 3 | BA-STR-002 — Business Outcomes | Próxima unidade | 🟨 |
+| 3 | BA-STR-002 — Business Outcomes | Draft — checkpoint conceitual consolidado | 🟧 |
 | 4 | BA-CAP-001 — Core Business Capabilities | Draft | ⬜ |
 | 5 | BA-CAP-002 — Capability Map | Draft | ⬜ |
 | 6 | BA-STR-003 — Value Chains | Draft | ⬜ |
@@ -86,6 +86,14 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | 8 | BA-ORG-002 — Operating Model | Draft | ⬜ |
 | 9 | BA-EXE-001 — Business Processes | Draft | ⬜ |
 | 10 | BA-EXE-002 — KPIs & Metrics | Draft | ⬜ |
+
+## Investigação arquitetural ativa
+
+Questão de pesquisa:
+
+> Quais são as propriedades ou capacidades fundamentais de um ecossistema humano capaz de promover evolução contínua?
+
+A investigação permanece fora da Canon e não altera a estrutura oficial da GEA até validação.
 
 ## Governança documental
 
@@ -104,8 +112,8 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 
 ## Sprint atual
 
-`BA-STR-002 — Business Outcomes`.
+`BA-STR-002 — Business Outcomes` — etapa conceitual registrada; catálogo canônico pendente.
 
 ## Última consolidação
 
-`BA-STR-001 — Business Transformation Model` e `ADR-004 — Architectural Dependency Order`, concluídos em 28/06/2026.
+Checkpoint conceitual de `BA-STR-002 — Business Outcomes`, concluído em 28/06/2026.
