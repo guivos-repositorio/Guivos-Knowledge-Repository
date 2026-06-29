@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-06-29
 ---
@@ -32,6 +32,21 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Technology Architecture | Draft |
 | Governance Architecture | Draft |
 | Knowledge Architecture | Draft |
+
+## Research
+
+| Ativo | Objetivo | Status |
+|---|---|:---:|
+| Research Domain | Produzir e sintetizar evidências para reduzir incerteza arquitetural | 🟩 |
+| RP-001 — Ecosystem Research Program | Identificar condições permanentes recorrentes em ecossistemas complexos | 🟧 |
+| RP-001 Research Protocol | Definir método, escopo, inclusão, exclusão e saturação | 🟧 |
+| Evidence Registry | Registrar fontes, evidências e limitações | ⬜ |
+| Ecosystem Phenomena Catalog — EPC | Consolidar fenômenos antes do COR | ⬜ |
+| Architectural Recommendations | Traduzir evidências em recomendações não canônicas | ⬜ |
+
+Princípio vigente:
+
+> A pesquisa reduz incerteza. A arquitetura toma decisões.
 
 ## Foundation Architecture
 
@@ -121,17 +136,20 @@ O AQS-O01 está conceitualmente definido, mas permanece em validação prática 
 | ADR-004 — Architectural Dependency Order | 🟩 |
 | AV-001 — GEA Structure Validation | 🟧 |
 | Outcome Governance Method | 🟩 |
+| Research Domain | 🟩 |
 | ADRs completos | 🟧 |
 | Padrões completos do GKR | 🟦 |
 
 ## Sprint atual
 
-`BA-STR-002 — Business Outcomes` — método de descoberta, validação e avaliação registrado; catálogos canônicos pendentes.
+`RP-001 — Ecosystem Research Program` — estrutura criada; Research Protocol em consolidação antes do início da coleta de evidências.
 
 ## Ponto exato de retomada
 
-Construir o **Candidate Outcome Register — COR**, sem atribuir códigos canônicos `EO-###` antes da validação externa e da COEM.
+Concluir o **RP-001 Research Protocol**, definir critérios de qualidade das fontes e níveis de evidência e, somente depois, iniciar o **Evidence Registry** e o **Ecosystem Phenomena Catalog — EPC**.
+
+O COR permanece como etapa posterior ao EPC.
 
 ## Última consolidação
 
-Princípio de responsabilidade da Guivos, Outcome Governance Method, COR, External Validation, COEM, AQS-O01 em validação prática e limites metodológicos do BA-STR-002, concluídos em 29/06/2026.
+Criação do domínio Research, estrutura do RP-001, separação formal entre pesquisa e arquitetura e definição do EPC como etapa anterior ao COR, concluídas em 29/06/2026.
