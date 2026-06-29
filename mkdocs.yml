@@ -57,6 +57,14 @@ markdown_extensions:
 
 nav:
   - Início: index.md
+  - Research:
+      - Visão Geral: research/index.md
+      - RP-001 — Ecosystem Research Program:
+          - Visão Geral: research/RP-001/index.md
+          - Research Protocol: research/RP-001/protocol.md
+          - Evidence Registry: research/RP-001/evidence-registry.md
+          - Ecosystem Phenomena Catalog: research/RP-001/ecosystem-phenomena-catalog.md
+          - Architectural Recommendations: research/RP-001/recommendations.md
   - Guivos Enterprise Architecture: enterprise-architecture/index.md
   - Glossário Canônico: glossary.md
   - GEB:
