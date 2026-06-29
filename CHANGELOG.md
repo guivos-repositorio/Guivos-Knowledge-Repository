@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.7.1 — Business Outcomes Conceptual Checkpoint
+
+- Criação de `BA-STR-002 — Business Outcomes` em estado `draft` e versão `0.4.0`.
+- Consolidação da pergunta arquitetural: quais resultados definem o sucesso sustentável da Guivos?
+- Consolidação da definição canônica de Outcome como estado permanente de resultado desejado, derivado do propósito e orientador de decisões.
+- Separação entre Outcome, resultado observado, KPI, meta, Capability, produto e experiência.
+- Registro da cadeia de rastreabilidade entre propósito, Outcomes, capacidades, produtos, experiências, indicadores e aprendizado.
+- Consolidação da distinção entre `Ecosystem Outcomes` e `Business Outcomes`.
+- Registro das propriedades obrigatórias e do teste de admissibilidade de Outcomes.
+- Registro das regras iniciais de governança e uso na tomada de decisão.
+- Preservação das hipóteses sobre capacidades fundamentais, propriedades emergentes, dimensões de transformação, Architectural Intent, GEM, GDS e Core Model fora da Canon.
+- Definição da questão de pesquisa para continuidade: propriedades ou capacidades fundamentais de um ecossistema humano capaz de promover evolução contínua.
+- Atualização da visão geral da Business Architecture, Knowledge Board, Roadmap e navegação do site.
+
 ## 0.7.0 — Business Transformation Model
 
 - Criação de `BA-STR-001 — Business Transformation Model` em estado `validated` e versão `0.9.0`.
