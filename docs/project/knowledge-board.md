@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -87,13 +87,13 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | 9 | BA-EXE-001 — Business Processes | Draft | ⬜ |
 | 10 | BA-EXE-002 — KPIs & Metrics | Draft | ⬜ |
 
-## Investigação arquitetural ativa
+## Validações arquiteturais
 
-Questão de pesquisa:
+| Ativo | Objetivo | Status |
+|---|---|:---:|
+| AV-001 — GEA Structure Validation | Verificar lacunas relevantes na macroestrutura da GEA | 🟧 |
 
-> Quais são as propriedades ou capacidades fundamentais de um ecossistema humano capaz de promover evolução contínua?
-
-A investigação permanece fora da Canon e não altera a estrutura oficial da GEA até validação.
+Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma camada anterior aos Outcomes. A estrutura atual da GEA permanece preservada.
 
 ## Governança documental
 
@@ -107,6 +107,7 @@ A investigação permanece fora da Canon e não altera a estrutura oficial da GE
 | Roadmap Arquitetural | 🟩 |
 | ADR-003 — Architectural Ownership | 🟩 |
 | ADR-004 — Architectural Dependency Order | 🟩 |
+| AV-001 — GEA Structure Validation | 🟧 |
 | ADRs completos | 🟧 |
 | Padrões completos do GKR | 🟦 |
 
@@ -114,6 +115,10 @@ A investigação permanece fora da Canon e não altera a estrutura oficial da GE
 
 `BA-STR-002 — Business Outcomes` — etapa conceitual registrada; catálogo canônico pendente.
 
+## Ponto exato de retomada
+
+Construir o **Catálogo Canônico de Ecosystem Outcomes**, preservando a estrutura atual da GEA e utilizando o AV-001 apenas para verificar se surgem lacunas arquiteturais concretas.
+
 ## Última consolidação
 
-Checkpoint conceitual de `BA-STR-002 — Business Outcomes`, concluído em 28/06/2026.
+Missão da GEA, princípios de orientação à decisão, evidência arquitetural, simplicidade estrutural e `AV-001 — GEA Structure Validation`, concluídos em 28/06/2026.
