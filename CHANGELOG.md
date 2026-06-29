@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.10.0 — Research Domain and RP-001
+
+- Criação do domínio `Research` no GKR.
+- Consolidação do princípio: pesquisa reduz incerteza; arquitetura toma decisões.
+- Criação do `RP-001 — Ecosystem Research Program`.
+- Criação da estrutura inicial do Research Protocol.
+- Criação do Evidence Registry.
+- Criação do Ecosystem Phenomena Catalog — EPC.
+- Criação do documento de Architectural Recommendations.
+- Separação formal entre ativos de pesquisa e ativos arquiteturais.
+- Registro de que o EPC antecede o Candidate Outcome Register — COR.
+- Atualização do Knowledge Board, Roadmap e navegação do site.
+- Definição do próximo passo: concluir o Research Protocol, os critérios de qualidade das fontes e os níveis de evidência antes da coleta.
+
 ## 0.9.0 — Outcome Governance Method
 
 - Consolidação do princípio de responsabilidade: a Guivos amplia condições para transformação, sem controlar decisões ou resultados individuais dos participantes.
