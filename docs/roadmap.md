@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -53,7 +53,7 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
    - [x] Pergunta arquitetural.
    - [x] Modelo conceitual.
    - [x] Propriedades, limites e governança inicial.
-   - [ ] Validar camada anterior aos Outcomes.
+   - [x] Validar provisoriamente a necessidade de uma camada anterior aos Outcomes.
    - [ ] Definir catálogo de Ecosystem Outcomes.
    - [ ] Definir catálogo de Business Outcomes.
    - [ ] Consolidar matriz de sustentação.
@@ -84,16 +84,19 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 
 - [x] Consolidar princípio de Architectural Ownership.
 - [x] Consolidar ordem por dependências arquiteturais.
-- [ ] Consolidar governança de ADRs.
+- [x] Iniciar validações arquiteturais com o AV-001.
+- [ ] Consolidar governança de ADRs e AVs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
 - [ ] Consolidar Knowledge Architecture.
 - [ ] Consolidar processo de evolução contínua.
 
-## Investigação atual
+## Validação arquitetural ativa
 
-Validar a existência de propriedades ou capacidades fundamentais de um ecossistema humano capaz de promover evolução contínua.
+`AV-001 — GEA Structure Validation`.
+
+Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificativa suficiente para criar uma camada anterior aos Outcomes.
 
 ## Próxima Sprint
 
-Continuidade de `BA-STR-002 — Business Outcomes` a partir da investigação arquitetural registrada.
+Retomar `BA-STR-002 — Business Outcomes` pela construção do **Catálogo Canônico de Ecosystem Outcomes**.
