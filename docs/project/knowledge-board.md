@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-06-29
 ---
@@ -37,16 +37,19 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 
 | Ativo | Objetivo | Status |
 |---|---|:---:|
-| Research Domain | Produzir e sintetizar evidências para reduzir incerteza arquitetural | 🟩 |
+| Research Domain | Construir entendimento compartilhado e reduzir incerteza arquitetural | 🟩 |
 | RP-001 — Ecosystem Research Program | Identificar condições permanentes recorrentes em ecossistemas complexos | 🟧 |
-| RP-001 Research Protocol | Definir método, escopo, inclusão, exclusão e saturação | 🟧 |
+| RP-001 Research Protocol | Definir método, escopo, qualidade das fontes, níveis de evidência e saturação | 🟩 |
+| Estado da Arte | Mapear modelos explicativos, convergências, divergências e lacunas | 🟧 |
 | Evidence Registry | Registrar fontes, evidências e limitações | ⬜ |
 | Ecosystem Phenomena Catalog — EPC | Consolidar fenômenos antes do COR | ⬜ |
 | Architectural Recommendations | Traduzir evidências em recomendações não canônicas | ⬜ |
 
-Princípio vigente:
+Princípios vigentes:
 
 > A pesquisa reduz incerteza. A arquitetura toma decisões.
+
+> A pesquisa deve utilizar o menor nível de abstração suficiente para explicar o domínio e apoiar decisões corretas.
 
 ## Foundation Architecture
 
@@ -140,16 +143,25 @@ O AQS-O01 está conceitualmente definido, mas permanece em validação prática 
 | ADRs completos | 🟧 |
 | Padrões completos do GKR | 🟦 |
 
+## Hipóteses de pesquisa preservadas fora da Canon
+
+- Sistema Humano de Evolução;
+- transformação como fenômeno fundamental;
+- mudança de estado como unidade mínima;
+- Worldview como possível elemento explícito da Foundation;
+- Knowledge-Centric Enterprise;
+- modelo explicativo definitivo do domínio.
+
 ## Sprint atual
 
-`RP-001 — Ecosystem Research Program` — estrutura criada; Research Protocol em consolidação antes do início da coleta de evidências.
+`RP-001 — Estado da Arte` — Research Protocol consolidado conceitualmente; início do mapeamento dos modelos explicativos existentes.
 
 ## Ponto exato de retomada
 
-Concluir o **RP-001 Research Protocol**, definir critérios de qualidade das fontes e níveis de evidência e, somente depois, iniciar o **Evidence Registry** e o **Ecosystem Phenomena Catalog — EPC**.
+Construir o **Estado da Arte** do domínio investigado, identificando modelos explicativos existentes, convergências, divergências, limitações e lacunas.
 
-O COR permanece como etapa posterior ao EPC.
+Após esse mapeamento, iniciar o **Evidence Registry**. O EPC e o COR permanecem como etapas posteriores.
 
 ## Última consolidação
 
-Criação do domínio Research, estrutura do RP-001, separação formal entre pesquisa e arquitetura e definição do EPC como etapa anterior ao COR, concluídas em 29/06/2026.
+Missão do Research, princípios de neutralidade e suficiência arquitetural, critérios de qualidade das fontes, níveis de evidência, maturidade de modelos e etapa de Estado da Arte, concluídos em 29/06/2026.
