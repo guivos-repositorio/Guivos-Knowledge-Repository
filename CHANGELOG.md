@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.9.0 — Outcome Governance Method
+
+- Consolidação do princípio de responsabilidade: a Guivos amplia condições para transformação, sem controlar decisões ou resultados individuais dos participantes.
+- Refinamento da definição de `Ecosystem Outcome` como condição permanente do ecossistema que aumenta a probabilidade de transformação positiva.
+- Criação do `Outcome Governance Method` no Governance Framework do GKR.
+- Definição do fluxo oficial: Discovery -> Candidate Outcome Register -> External Validation -> Candidate Outcome Evaluation Matrix -> Approved Outcomes -> Canon.
+- Definição dos estados `Candidate`, `Under Validation`, `Approved`, `Rejected`, `Merged` e `Deferred`.
+- Definição dos testes `Essential`, `Decision`, `Replacement` e `Outcome Quality`.
+- Registro do `AQS-O01 — Outcome Quality Standard` em validação prática.
+- Consolidação do padrão de redação dos Outcomes.
+- Registro dos limites metodológicos: jornadas, taxonomias, dimensões e novas camadas não bloqueiam o BA-STR-002 sem dependência comprovada.
+- Atualização do `BA-STR-002` para a versão `0.5.0`.
+- Atualização do Knowledge Board, Roadmap e navegação do site.
+- Definição do próximo passo: construção do `Candidate Outcome Register — COR`.
+
 ## 0.8.0 — Evidence-Based Architecture Validation
 
 - Criação de `AV-001 — GEA Structure Validation`.
