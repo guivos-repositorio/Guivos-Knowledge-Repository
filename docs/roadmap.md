@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-06-28
 ---
@@ -50,6 +50,13 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 1. [x] `BA-FND-001` — Business Architecture Foundations.
 2. [x] `BA-STR-001` — Business Transformation Model.
 3. [ ] `BA-STR-002` — Business Outcomes.
+   - [x] Pergunta arquitetural.
+   - [x] Modelo conceitual.
+   - [x] Propriedades, limites e governança inicial.
+   - [ ] Validar camada anterior aos Outcomes.
+   - [ ] Definir catálogo de Ecosystem Outcomes.
+   - [ ] Definir catálogo de Business Outcomes.
+   - [ ] Consolidar matriz de sustentação.
 4. [ ] `BA-CAP-001` — Core Business Capabilities.
 5. [ ] `BA-CAP-002` — Capability Map.
 6. [ ] `BA-STR-003` — Value Chains.
@@ -83,6 +90,10 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 - [ ] Consolidar Knowledge Architecture.
 - [ ] Consolidar processo de evolução contínua.
 
+## Investigação atual
+
+Validar a existência de propriedades ou capacidades fundamentais de um ecossistema humano capaz de promover evolução contínua.
+
 ## Próxima Sprint
 
-`BA-STR-002 — Business Outcomes`.
+Continuidade de `BA-STR-002 — Business Outcomes` a partir da investigação arquitetural registrada.
