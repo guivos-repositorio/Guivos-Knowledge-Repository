@@ -110,6 +110,7 @@ nav:
       - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
   - Projeto:
       - Baseline M1: project/BASELINE-M1.md
+      - Checkpoint M2.0: project/CHECKPOINT-M2.0.md
       - Knowledge Board: project/knowledge-board.md
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
