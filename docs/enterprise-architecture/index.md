@@ -2,11 +2,13 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-06-30
 related_adrs:
   - ADR-003
+  - ADR-004
+  - ADR-005
 related_validations:
   - AV-001
 ---
@@ -24,6 +26,44 @@ O Guivos Knowledge Repository (GKR) é a fonte oficial em que a GEA é documenta
 ## Missão
 
 Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, validada por evidências e orientada à tomada de decisões estratégicas de longo prazo.
+
+## Arquitetura de maturidade
+
+A GEA representa a Guivos em sua capacidade institucional máxima. Ela não deve ser limitada pelo estágio atual da implementação.
+
+A execução ocorre progressivamente por meio de arquiteturas de referência, programas corporativos e entregas, sem reduzir a visão permanente da organização.
+
+> A Guivos é concebida em sua capacidade máxima. A implementação realiza progressivamente essa visão.
+
+## Dois eixos de organização
+
+A GEA classifica seus ativos por dois eixos complementares:
+
+1. **Domínio arquitetural:** Foundation, Ecosystem, Product, Business, Data & Intelligence, Technology, Governance e Knowledge.
+2. **Permanência:** Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.
+
+O domínio define a responsabilidade conceitual. A camada de permanência define horizonte, velocidade de mudança e governança.
+
+Consulte o [GEA-PLM-001 — Permanence Layer Model](permanence-layer-model.md).
+
+## Modelo de camadas de permanência
+
+```mermaid
+graph TD
+    PA[Permanent Architecture] --> RA[Reference Architecture]
+    RA --> EP[Enterprise Programs]
+    EP --> ED[Enterprise Delivery]
+    ED --> L[Resultados e Aprendizado]
+    L --> R[Revisão formal quando necessária]
+    R --> RA
+```
+
+| Camada | Horizonte | Pergunta principal |
+|---|---|---|
+| Permanent Architecture | Décadas | O que continuará verdadeiro na maturidade da Guivos? |
+| Reference Architecture | Anos | Qual é a melhor forma arquitetural conhecida de realizar a visão? |
+| Enterprise Programs | Meses e ciclos plurianuais | Quais programas transformarão a arquitetura em realidade? |
+| Enterprise Delivery | Dias, semanas e releases | O que será entregue agora e como será implementado? |
 
 ## Estrutura oficial
 
@@ -57,7 +97,7 @@ graph TD
 ## Relação entre GEA, GKR e GEB
 
 - **GEA** é o conjunto integrado das arquiteturas da Guivos.
-- **GKR** é o repositório oficial e a fonte única da verdade.
+- **GKR** preserva a representação canônica da Guivos em seu estado de maturidade e as justificativas que sustentam sua arquitetura.
 - **GEB** é o blueprint principal da Ecosystem Architecture.
 
 ## Responsabilidade conceitual
@@ -114,6 +154,26 @@ Nenhuma decisão estrutural deve ser tomada apenas por preferência. Alteraçõe
 
 A GEA deve crescer em profundidade, clareza e integração, evitando novas camadas quando a arquitetura existente já comportar o conceito.
 
+### Institutional Permanence
+
+Todo conteúdo canônico deve representar a Guivos em seu estado de maturidade institucional, e não apenas seu estágio atual de implementação.
+
+### Vision First
+
+A implementação aproxima a realidade da visão. Restrições temporárias não redefinem automaticamente a arquitetura de maturidade.
+
+### Architectural Gravity
+
+Quanto maior a permanência de um ativo, menor deve ser sua velocidade de mudança e maior deve ser o rigor aplicado à sua evolução.
+
+### Progressive Realization
+
+A Guivos é concebida em sua capacidade máxima e realizada progressivamente por programas, entregas e ciclos de implementação.
+
+### Layer Integrity
+
+Todo ativo relevante deve declarar domínio, camada de permanência, owner, horizonte e processo autorizado de mudança.
+
 ## Fluxo oficial de decisão
 
 ```mermaid
@@ -132,7 +192,7 @@ graph LR
 
 | Ativo | Pergunta respondida |
 |---|---|
-| Canon | Como a Guivos funciona? |
+| Canon | Como a Guivos funciona em sua arquitetura de maturidade? |
 | ADR | Por que uma decisão arquitetural foi tomada? |
 | AV | Como a decisão ou estrutura foi validada? |
 
@@ -152,7 +212,9 @@ Cada arquitetura da GEA deve, progressivamente, documentar:
 8. uso na tomada de decisão;
 9. critérios de validação;
 10. decisões arquiteturais tomadas;
-11. evolução prevista.
+11. evolução prevista;
+12. camada de permanência predominante;
+13. owner e processo autorizado de mudança.
 
 ## Regra de maturidade
 
