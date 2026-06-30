@@ -69,6 +69,8 @@ nav:
   - Guivos Enterprise Architecture:
       - Visão Geral: enterprise-architecture/index.md
       - Permanence Layer Model: enterprise-architecture/permanence-layer-model.md
+  - Reference Architecture:
+      - GCCM-001 — Core Capability Model: reference-architecture/gccm-001.md
   - Glossário Canônico: glossary.md
   - GEB:
       - Visão Geral: geb/index.md
@@ -111,6 +113,7 @@ nav:
       - ADR-004 — Architectural Dependency Order: adr/ADR-004-architectural-dependency-order.md
       - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
   - Projeto:
+      - Architectural Milestones: project/architectural-milestones.md
       - Baseline M1: project/BASELINE-M1.md
       - Checkpoint M2.0: project/CHECKPOINT-M2.0.md
       - Knowledge Board: project/knowledge-board.md
