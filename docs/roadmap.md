@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-06-30
 ---
@@ -18,6 +18,22 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 `M2.0 — Architectural Evolution Hypothesis` — estado `experimental`.
 
+## Modelo institucional vigente
+
+`GEA-PLM-001 — Permanence Layer Model` — estado `validated`.
+
+## Direção estratégica
+
+O GKR representa a Guivos em sua capacidade máxima e estado de maturidade. A realização ocorre progressivamente por Reference Architectures, Enterprise Programs e Enterprise Delivery.
+
+```mermaid
+graph LR
+    PA[Permanent Architecture] --> RA[Reference Architecture]
+    RA --> EP[Enterprise Programs]
+    EP --> ED[Enterprise Delivery]
+    ED --> L[Resultados e Aprendizado]
+```
+
 ## Fase M1 — Fundamentos concluídos
 
 ### Infraestrutura do GKR
@@ -30,12 +46,14 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - [x] Configurar GitHub Pages.
 - [x] Configurar geração de PDF como publicação derivada.
 - [x] Criar Baseline M1.
+- [x] Formalizar o GKR como representação canônica da Guivos em seu estado de maturidade.
 - [ ] Consolidar governança completa do GKR.
 
 ### Foundation e Ecosystem Architecture
 
 - [x] Consolidar Parte I — Fundação.
 - [x] Consolidar Parte II — Modelo Fundamental.
+- [x] Adotar princípios de maturidade institucional, visão antes da execução e realização progressiva.
 - [ ] Consolidar Modelo dos Participantes.
 - [ ] Consolidar Modelo das Oportunidades.
 - [ ] Consolidar Modelo das Experiências.
@@ -98,35 +116,15 @@ A ordem segue dependências arquiteturais, conforme o ADR-004.
 
 ## Fase M2 — Validation & Refinement
 
-Objetivo: confrontar hipóteses e sínteses com aplicação, fontes rastreáveis, contraevidências, casos e resultados observáveis antes de qualquer promoção à Canon.
+Objetivo: confrontar hipóteses, modelos e arquiteturas com evidências, aplicação, contraexemplos e resultados observáveis antes de promoção à Canon.
 
 ### M2.0 — Architectural Evolution Hypothesis
 
-Objetivo: avaliar se um metamodelo institucional explícito melhora a concepção de domínios sem criar sobreposição ou complexidade desnecessária.
-
 - [x] Registrar o Checkpoint M2.0.
-- [x] Classificar o `Guivos Meta-Model — GMM` como `Hypothesis`.
-- [x] Classificar o `Guivos Knowledge System — GKS` como domínio piloto proposto.
-- [x] Definir o ciclo `Idea -> Hypothesis -> Experimental -> Validated -> Canonical -> Deprecated`.
-- [x] Definir critérios de sucesso, falha e revisão.
-- [ ] Definir o problema institucional que o GKS pretende resolver.
-- [ ] Delimitar escopo, fronteiras e ownership do GKS.
-- [ ] Mapear sobreposições com Research, Governance, Knowledge Architecture e GKR.
-- [ ] Propor a estrutura mínima do GKS.
-- [ ] Aplicar experimentalmente o GMM à concepção do GKS.
-- [ ] Avaliar a aplicação usando os critérios do Checkpoint M2.0.
-- [ ] Decidir: validar, revisar, reduzir, integrar ou rejeitar o GMM.
-
-```mermaid
-graph LR
-    H[GMM — Hypothesis] --> P[GKS — Pilot]
-    P --> O[Observation]
-    O --> E[Evaluation]
-    E --> D{Decision}
-    D --> V[Validated]
-    D --> R[Revise]
-    D --> X[Reject]
-```
+- [x] Definir ciclo experimental de maturidade.
+- [x] Preservar GMM, GKS, GKVF e KVS fora da Canon.
+- [x] Reduzir expansão metodológica sem necessidade prática.
+- [ ] Retomar essas hipóteses apenas quando uma lacuna institucional comprovada exigir.
 
 ### M2.1 — Validação do RP-001
 
@@ -154,29 +152,54 @@ graph LR
 - [ ] Estabilizar AQS-O01.
 - [ ] Definir catálogos de Ecosystem Outcomes e Business Outcomes.
 
-### M2.4 — Validação empírica inicial
+## Fase M3 — Progressive Realization
 
-- [ ] Selecionar estudos de caso relevantes.
-- [ ] Definir hipóteses observáveis para os MECs priorizados.
-- [ ] Registrar resultados que confirmem ou contrariem os modelos.
-- [ ] Revisar decisões arquiteturais quando necessário.
+Objetivo: transformar a arquitetura de maturidade da Guivos em arquiteturas de referência, programas corporativos e entregas executáveis, sem reduzir a visão institucional.
 
-## Fase 6 — Data & Intelligence Architecture
+### M3.0 — Institutional Architecture Consolidation
 
-- [ ] Definir Grafo Global da Guivos.
-- [ ] Definir modelo de dados conceitual.
-- [ ] Definir arquitetura de IA.
-- [ ] Definir mecanismos de contexto, recomendação e aprendizado.
-- [ ] Definir analytics e indicadores estratégicos.
+- [x] Criar `GEA-PLM-001 — Permanence Layer Model`.
+- [x] Definir Permanent Architecture.
+- [x] Definir Reference Architecture.
+- [x] Definir Enterprise Programs.
+- [x] Definir Enterprise Delivery.
+- [x] Formalizar Institutional Permanence.
+- [x] Formalizar Vision First.
+- [x] Formalizar Architectural Gravity.
+- [x] Formalizar Progressive Realization.
+- [x] Formalizar Layer Integrity.
+- [x] Atualizar GEA, Foundation, README e Knowledge Board.
 
-## Fase 7 — Technology Architecture
+### M3.1 — Reference Architecture
 
-- [ ] Definir arquitetura lógica.
-- [ ] Definir front-end, back-end, APIs e integrações.
-- [ ] Definir infraestrutura, segurança e DevOps.
-- [ ] Definir estratégia de escalabilidade.
+- [ ] Classificar ativos existentes pela camada de permanência.
+- [ ] Consolidar visão de maturidade da plataforma.
+- [ ] Consolidar Data & Intelligence Architecture.
+- [ ] Consolidar Technology Architecture.
+- [ ] Consolidar arquitetura de IA.
+- [ ] Consolidar arquitetura de dados e grafos.
+- [ ] Consolidar segurança, integração, observabilidade e escalabilidade.
+- [ ] Consolidar arquitetura de referência dos produtos.
 
-## Fase 8 — Governance e Knowledge Architecture
+### M3.2 — Enterprise Programs
+
+- [ ] Definir portfólio executivo de programas.
+- [ ] Definir programa de Platform Engineering.
+- [ ] Definir programa de Product Portfolio.
+- [ ] Definir programa de AI, Data & Knowledge.
+- [ ] Definir programa de Business Growth.
+- [ ] Definir programa de Global Expansion.
+- [ ] Definir objetivos, dependências, marcos e indicadores de cada programa.
+
+### M3.3 — Enterprise Delivery
+
+- [ ] Definir repositórios e ferramentas de execução.
+- [ ] Definir backlog, releases e ciclos de entrega.
+- [ ] Manter tecnologias específicas fora da Permanent Architecture.
+- [ ] Garantir rastreabilidade entre entrega, programa e arquitetura de referência.
+- [ ] Registrar aprendizados que justifiquem revisões arquiteturais.
+
+## Governance e Knowledge Architecture
 
 - [x] Consolidar princípio de Architectural Ownership.
 - [x] Consolidar ordem por dependências arquiteturais.
@@ -185,18 +208,12 @@ graph LR
 - [x] Adotar o Architectural Traceability Principle.
 - [x] Criar o Baseline M1.
 - [x] Criar o Checkpoint M2.0.
+- [x] Criar o Permanence Layer Model.
 - [ ] Consolidar governança de ADRs e AVs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
 - [ ] Consolidar Knowledge Architecture.
 - [ ] Consolidar processo de evolução contínua.
-
-## Validação arquitetural ativa
-
-- `AV-001 — GEA Structure Validation`.
-- `Checkpoint M2.0 — Architectural Evolution Hypothesis`.
-
-O AV-001 ainda não identificou justificativa suficiente para criar uma camada anterior aos Outcomes. O Checkpoint M2.0 também não altera a macroestrutura da GEA.
 
 ## Hipóteses preservadas fora da Canon
 
@@ -223,4 +240,4 @@ O AV-001 ainda não identificou justificativa suficiente para criar uma camada a
 
 ## Próxima Sprint
 
-Definir o problema institucional, o escopo mínimo e as fronteiras do **Guivos Knowledge System — GKS**, utilizando os critérios do Checkpoint M2.0 e sem criar ainda um domínio canônico.
+Iniciar a **M3.1 — Reference Architecture**, classificando os ativos existentes por camada de permanência e descrevendo a Guivos em sua capacidade máxima, sem recorrer a limitações de MVP ou de implementação corrente.
