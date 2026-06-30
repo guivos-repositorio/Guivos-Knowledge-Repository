@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.8.0
+version: 1.9.0
 owner: Guivos
 last_updated: 2026-06-29
 ---
@@ -50,6 +50,12 @@ Princípios vigentes:
 > A pesquisa reduz incerteza. A arquitetura toma decisões.
 
 > A pesquisa deve utilizar o menor nível de abstração suficiente para explicar o domínio e apoiar decisões corretas.
+
+## Estado metodológico do RP-001
+
+O método do RP-001 está congelado para execução. Alterações futuras somente deverão ocorrer quando a aplicação prática demonstrar uma limitação metodológica concreta.
+
+A partir deste checkpoint, o foco deixa de ser a criação de novas estruturas metodológicas e passa a ser a execução disciplinada do Estado da Arte.
 
 ## Foundation Architecture
 
@@ -150,18 +156,37 @@ O AQS-O01 está conceitualmente definido, mas permanece em validação prática 
 - mudança de estado como unidade mínima;
 - Worldview como possível elemento explícito da Foundation;
 - Knowledge-Centric Enterprise;
-- modelo explicativo definitivo do domínio.
+- modelo explicativo definitivo do domínio;
+- Research Question Map;
+- organização do conhecimento por perguntas;
+- Knowledge Objects;
+- Grafo de Conhecimento Arquitetural;
+- Knowledge Twin;
+- pipeline de maturidade do conhecimento.
 
 ## Sprint atual
 
-`RP-001 — Estado da Arte` — Research Protocol consolidado conceitualmente; início do mapeamento dos modelos explicativos existentes.
+`RP-001 — Estado da Arte` — fase metodológica encerrada; execução sistemática iniciada.
 
 ## Ponto exato de retomada
 
-Construir o **Estado da Arte** do domínio investigado, identificando modelos explicativos existentes, convergências, divergências, limitações e lacunas.
+Iniciar a análise da quarta disciplina do Estado da Arte: **Ecologia**.
 
-Após esse mapeamento, iniciar o **Evidence Registry**. O EPC e o COR permanecem como etapas posteriores.
+Aplicar integralmente o template vigente:
+
+1. justificativa da inclusão;
+2. objeto de estudo;
+3. principais escolas e autores;
+4. modelos explicativos;
+5. unidade de análise;
+6. conceitos centrais;
+7. possíveis invariantes;
+8. limites da disciplina;
+9. convergências com Systems Thinking, Complex Adaptive Systems e Network Science;
+10. avaliação metodológica segundo o RP-001.
+
+Após Ecologia, seguir com Organizational Theory, Service-Dominant Logic, Knowledge Management e Institutional Economics. A primeira meta-síntese oficial ocorrerá somente após a conclusão desse núcleo.
 
 ## Última consolidação
 
-Missão do Research, princípios de neutralidade e suficiência arquitetural, critérios de qualidade das fontes, níveis de evidência, maturidade de modelos e etapa de Estado da Arte, concluídos em 29/06/2026.
+Congelamento metodológico do RP-001, transição formal da construção do método para sua execução e registro da Ecologia como ponto exato de retomada, concluídos em 29/06/2026.
