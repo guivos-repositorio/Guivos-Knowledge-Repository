@@ -2,6 +2,23 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.12.0 — Baseline M1 and M2 Transition
+
+- Criação do `Baseline M1 — Research Foundation Complete` em estado `frozen`.
+- Encerramento formal da fase de construção dos fundamentos intelectuais, metodológicos e arquiteturais da Guivos.
+- Criação da `MS-001 — Mecanismos Recorrentes em Sistemas Complexos` em estado `draft`.
+- Registro de oito Mecanismos Explicativos Candidatos como hipóteses preliminares, sem promoção à Canon.
+- Registro explícito dos limites explicativos e critérios de validação futura da MS-001.
+- Criação do `ADR-005 — Architectural Traceability Principle`.
+- Adoção do princípio de rastreabilidade entre fontes, evidências, sínteses, decisões arquiteturais, implementações e resultados observados.
+- Atualização do RP-001 para o estado `active` e versão `0.2.0`.
+- Atualização do Knowledge Board para a versão `2.0.0`.
+- Atualização do Roadmap para a versão `2.0.0`.
+- Atualização do README com o baseline vigente e a fase atual.
+- Inclusão do Baseline M1, da MS-001 e do ADR-005 na navegação do site.
+- Abertura formal da Fase `M2 — Validation & Refinement`.
+- Definição do próximo passo: iniciar o Evidence Registry e validar os MECs da MS-001 com fontes rastreáveis, contraevidências e limites explícitos.
+
 ## 0.11.1 — RP-001 Methodology Locked
 
 - Encerramento da fase de construção metodológica do RP-001.
