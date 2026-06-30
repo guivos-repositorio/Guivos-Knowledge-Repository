@@ -1,16 +1,22 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.8.0
+version: 2.0.0
 owner: Guivos
-last_updated: 2026-06-29
+last_updated: 2026-06-30
 ---
 
 # Roadmap Arquitetural
 
 Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos Enterprise Architecture.
 
-## Fase 1 — Infraestrutura do GKR
+## Baseline vigente
+
+`M1 — Research Foundation Complete` — estado `frozen`.
+
+## Fase M1 — Fundamentos concluídos
+
+### Infraestrutura do GKR
 
 - [x] Inicializar o repositório no GitHub.
 - [x] Criar README e CHANGELOG.
@@ -19,9 +25,10 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - [x] Configurar Mermaid.
 - [x] Configurar GitHub Pages.
 - [x] Configurar geração de PDF como publicação derivada.
+- [x] Criar Baseline M1.
 - [ ] Consolidar governança completa do GKR.
 
-## Fase 2 — Foundation e Ecosystem Architecture
+### Foundation e Ecosystem Architecture
 
 - [x] Consolidar Parte I — Fundação.
 - [x] Consolidar Parte II — Modelo Fundamental.
@@ -31,7 +38,7 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - [ ] Consolidar Modelo dos Relacionamentos.
 - [ ] Consolidar Modelo do Conhecimento do Ecossistema.
 
-## Fase 3 — Product Architecture
+### Product Architecture
 
 - [x] Consolidar estrutura superior do Ecossistema Guivos.
 - [x] Consolidar Guivos Journey.
@@ -43,9 +50,9 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - [x] Consolidar Guivos Ads.
 - [ ] Revisar nome definitivo do Guivos Marketplace.
 
-## Fase 4 — Business Architecture
+### Business Architecture
 
-A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
+A ordem segue dependências arquiteturais, conforme o ADR-004.
 
 1. [x] `BA-FND-001` — Business Architecture Foundations.
 2. [x] `BA-STR-001` — Business Transformation Model.
@@ -71,7 +78,7 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 9. [ ] `BA-EXE-001` — Business Processes.
 10. [ ] `BA-EXE-002` — KPIs & Metrics.
 
-## Fase 5 — Research
+### Research Foundation
 
 - [x] Criar o domínio `Research` no GKR.
 - [x] Criar a estrutura do `RP-001 — Ecosystem Research Program`.
@@ -81,27 +88,55 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 - [x] Registrar princípios de neutralidade e suficiência arquitetural.
 - [x] Encerrar a fase de construção metodológica do RP-001.
 - [x] Congelar o método para execução, sujeito apenas a limitações concretas identificadas na prática.
-- [ ] Executar o Estado da Arte.
-  - [x] Análise preliminar de Systems Thinking.
-  - [x] Análise preliminar de Complex Adaptive Systems.
-  - [x] Análise preliminar de Network Science.
-  - [ ] Analisar Ecologia com o template vigente.
-  - [ ] Analisar Organizational Theory.
-  - [ ] Analisar Service-Dominant Logic.
-  - [ ] Analisar Knowledge Management.
-  - [ ] Analisar Institutional Economics.
-  - [ ] Identificar convergências entre disciplinas.
-  - [ ] Identificar divergências conceituais.
-  - [ ] Identificar limitações dos modelos atuais.
-  - [ ] Identificar lacunas relevantes para a Guivos.
-- [ ] Iniciar o Evidence Registry.
-- [ ] Construir o Ecosystem Phenomena Catalog — EPC.
-- [ ] Produzir a primeira meta-síntese oficial após a conclusão do núcleo interdisciplinar.
-- [ ] Produzir modelos explicativos provisórios.
-- [ ] Produzir recomendações arquiteturais para o BA-STR-002.
-- [ ] Derivar o Candidate Outcome Register — COR a partir do EPC.
+- [x] Concluir o Ciclo 1 conceitual do Estado da Arte com oito perspectivas.
+- [x] Criar a MS-001 em estado `draft`.
+- [x] Formalizar o princípio de rastreabilidade no ADR-005.
 
-O domínio Research produz entendimento, evidências e sínteses. A decisão arquitetural permanece com a arquitetura proprietária.
+## Fase M2 — Validation & Refinement
+
+Objetivo: confrontar a síntese conceitual do M1 com fontes rastreáveis, contraevidências, casos e resultados observáveis antes de qualquer promoção à Canon.
+
+```mermaid
+graph LR
+    ER[Evidence Registry] --> MS[MS-001 Refinement]
+    MS --> VM[Validated Mechanisms]
+    VM --> EPC[Ecosystem Phenomena Catalog]
+    EPC --> AR[Architectural Recommendations]
+    AR --> COR[Candidate Outcome Register]
+```
+
+### M2.1 — Validação do RP-001
+
+- [ ] Iniciar o Evidence Registry.
+- [ ] Registrar fontes primárias, revisões qualificadas e padrões oficiais.
+- [ ] Associar evidências e contraevidências aos MECs.
+- [ ] Revisar equivalências terminológicas entre disciplinas.
+- [ ] Identificar contraexemplos e limites de contexto.
+- [ ] Reavaliar níveis de evidência.
+- [ ] Refinar a MS-001.
+
+### M2.2 — Tradução para o EPC
+
+- [ ] Definir fenômenos candidatos sustentados pela MS-001 refinada.
+- [ ] Construir o Ecosystem Phenomena Catalog — EPC.
+- [ ] Registrar convergências, divergências e limitações por fenômeno.
+- [ ] Aplicar critérios de saturação.
+
+### M2.3 — Tradução arquitetural
+
+- [ ] Produzir Architectural Recommendations para o BA-STR-002.
+- [ ] Derivar o Candidate Outcome Register — COR a partir do EPC.
+- [ ] Realizar External Validation.
+- [ ] Aplicar COEM.
+- [ ] Estabilizar AQS-O01.
+- [ ] Definir catálogos de Ecosystem Outcomes e Business Outcomes.
+
+### M2.4 — Validação empírica inicial
+
+- [ ] Selecionar estudos de caso relevantes.
+- [ ] Definir hipóteses observáveis para os MECs priorizados.
+- [ ] Registrar resultados que confirmem ou contrariem os modelos.
+- [ ] Revisar decisões arquiteturais quando necessário.
 
 ## Fase 6 — Data & Intelligence Architecture
 
@@ -124,6 +159,8 @@ O domínio Research produz entendimento, evidências e sínteses. A decisão arq
 - [x] Consolidar ordem por dependências arquiteturais.
 - [x] Iniciar validações arquiteturais com o AV-001.
 - [x] Iniciar Governance Framework do GKR com Outcome Governance Method.
+- [x] Adotar o Architectural Traceability Principle.
+- [x] Criar o Baseline M1.
 - [ ] Consolidar governança de ADRs e AVs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
@@ -143,14 +180,18 @@ Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificat
 - mudança de estado como unidade mínima;
 - Worldview;
 - Knowledge-Centric Enterprise;
-- modelo explicativo definitivo do domínio;
+- Modelo Explicativo Integrado — MEI;
+- Enterprise Theory;
 - Research Question Map;
 - organização do conhecimento por perguntas;
 - Knowledge Objects;
 - Grafo de Conhecimento Arquitetural;
 - Knowledge Twin;
-- pipeline de maturidade do conhecimento.
+- Expected Behaviors;
+- Roadmap Epistemológico;
+- pipeline de maturidade do conhecimento;
+- catálogo definitivo de invariantes.
 
 ## Próxima Sprint
 
-Executar a análise de **Ecologia** como quarta disciplina do Estado da Arte do RP-001, aplicando integralmente o template vigente e comparando seus resultados com Systems Thinking, Complex Adaptive Systems e Network Science.
+Iniciar o **Evidence Registry** e validar os Mecanismos Explicativos Candidatos da MS-001 com fontes rastreáveis, contraevidências e limites explícitos.
