@@ -66,7 +66,9 @@ nav:
           - Evidence Registry: research/RP-001/evidence-registry.md
           - Ecosystem Phenomena Catalog: research/RP-001/ecosystem-phenomena-catalog.md
           - Architectural Recommendations: research/RP-001/recommendations.md
-  - Guivos Enterprise Architecture: enterprise-architecture/index.md
+  - Guivos Enterprise Architecture:
+      - Visão Geral: enterprise-architecture/index.md
+      - Permanence Layer Model: enterprise-architecture/permanence-layer-model.md
   - Glossário Canônico: glossary.md
   - GEB:
       - Visão Geral: geb/index.md
