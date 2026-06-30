@@ -2,6 +2,23 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.13.0 — M2.0 Architectural Evolution Checkpoint
+
+- Criação do `Checkpoint M2.0 — Architectural Evolution Hypothesis` em estado `experimental`.
+- Registro do `Guivos Meta-Model — GMM` como `Architectural Meta-Hypothesis`, fora da Canon.
+- Registro do `Guivos Knowledge System — GKS` como domínio piloto proposto, fora da Canon.
+- Registro do `Knowledge Validation Framework — GKVF` e dos `Knowledge Validation Standards — KVS` como ideias ainda não iniciadas.
+- Definição do ciclo de maturidade `Idea -> Hypothesis -> Experimental -> Validated -> Canonical -> Deprecated`.
+- Definição dos critérios de sucesso, falha e revisão para o experimento do GMM.
+- Definição do GKS como domínio piloto para avaliar a utilidade prática do GMM.
+- Preservação explícita do Baseline M1 sem alterações.
+- Atualização do README com o checkpoint ativo e o objetivo experimental.
+- Atualização do Knowledge Board para a versão `2.1.0`.
+- Atualização do Roadmap para a versão `2.1.0`.
+- Inclusão do Checkpoint M2.0 na navegação do site.
+- Definição do próximo passo: delimitar o problema institucional, o escopo mínimo, as fronteiras e o ownership do GKS antes de qualquer criação canônica.
+- Nenhum novo conceito foi promovido à Canon nesta atualização.
+
 ## 0.12.0 — Baseline M1 and M2 Transition
 
 - Criação do `Baseline M1 — Research Foundation Complete` em estado `frozen`.
