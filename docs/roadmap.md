@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 2.2.0
+version: 2.3.0
 owner: Guivos
 last_updated: 2026-06-30
 ---
@@ -10,17 +10,16 @@ last_updated: 2026-06-30
 
 Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos Enterprise Architecture.
 
-## Baseline vigente
+## Estado atual
 
-`M1 — Research Foundation Complete` — estado `frozen`.
+- **Baseline vigente:** `M1 — Research Foundation Complete` — `frozen`.
+- **Checkpoint vigente:** `M2.0 — Architectural Evolution Hypothesis` — `experimental`.
+- **Modelo institucional vigente:** `GEA-PLM-001 — Permanence Layer Model` — `validated`.
+- **Marco concluído:** `A1 — Institutional Architecture Complete`.
+- **Fase ativa:** `A2 — Functional Architecture Discovery`.
+- **Entregável ativo:** `GCCM-001 — Guivos Core Capability Model` — `discovery`.
 
-## Checkpoint ativo
-
-`M2.0 — Architectural Evolution Hypothesis` — estado `experimental`.
-
-## Modelo institucional vigente
-
-`GEA-PLM-001 — Permanence Layer Model` — estado `validated`.
+Consulte [Architectural Milestones](project/architectural-milestones.md).
 
 ## Direção estratégica
 
@@ -34,130 +33,24 @@ graph LR
     ED --> L[Resultados e Aprendizado]
 ```
 
-## Fase M1 — Fundamentos concluídos
+## A0 — GKR Foundation
 
-### Infraestrutura do GKR
+**Estado:** Completed.
 
 - [x] Inicializar o repositório no GitHub.
 - [x] Criar README e CHANGELOG.
 - [x] Criar página inicial da documentação.
-- [x] Configurar MkDocs.
-- [x] Configurar Mermaid.
-- [x] Configurar GitHub Pages.
+- [x] Configurar MkDocs, Mermaid e GitHub Pages.
 - [x] Configurar geração de PDF como publicação derivada.
 - [x] Criar Baseline M1.
-- [x] Formalizar o GKR como representação canônica da Guivos em seu estado de maturidade.
-- [ ] Consolidar governança completa do GKR.
+- [x] Consolidar Foundation e Modelo Fundamental inicial.
+- [x] Iniciar Product Architecture, Business Architecture, Research e governança.
 
-### Foundation e Ecosystem Architecture
+## A1 — Institutional Architecture Complete
 
-- [x] Consolidar Parte I — Fundação.
-- [x] Consolidar Parte II — Modelo Fundamental.
-- [x] Adotar princípios de maturidade institucional, visão antes da execução e realização progressiva.
-- [ ] Consolidar Modelo dos Participantes.
-- [ ] Consolidar Modelo das Oportunidades.
-- [ ] Consolidar Modelo das Experiências.
-- [ ] Consolidar Modelo dos Relacionamentos.
-- [ ] Consolidar Modelo do Conhecimento do Ecossistema.
+**Estado:** Completed.
 
-### Product Architecture
-
-- [x] Consolidar estrutura superior do Ecossistema Guivos.
-- [x] Consolidar Guivos Journey.
-- [x] Consolidar Guivos Marketplace como produto com nome provisório.
-- [x] Consolidar Guivos Travel.
-- [x] Consolidar Guivos Business.
-- [x] Consolidar Guivos Media.
-- [x] Consolidar Guivos Intelligence.
-- [x] Consolidar Guivos Ads.
-- [ ] Revisar nome definitivo do Guivos Marketplace.
-
-### Business Architecture
-
-A ordem segue dependências arquiteturais, conforme o ADR-004.
-
-1. [x] `BA-FND-001` — Business Architecture Foundations.
-2. [x] `BA-STR-001` — Business Transformation Model.
-3. [ ] `BA-STR-002` — Business Outcomes.
-   - [x] Pergunta arquitetural.
-   - [x] Modelo conceitual.
-   - [x] Propriedades, limites e governança inicial.
-   - [x] Validar provisoriamente a necessidade de uma camada anterior aos Outcomes.
-   - [x] Definir Outcome Governance Method.
-   - [x] Definir estrutura do COR, External Validation, COEM e AQS-O01.
-   - [ ] Construir Candidate Outcome Register — COR.
-   - [ ] Realizar validação externa dos grupos candidatos.
-   - [ ] Aplicar Candidate Outcome Evaluation Matrix — COEM.
-   - [ ] Validar e estabilizar AQS-O01.
-   - [ ] Definir catálogo de Ecosystem Outcomes.
-   - [ ] Definir catálogo de Business Outcomes.
-   - [ ] Consolidar matriz de sustentação.
-4. [ ] `BA-CAP-001` — Core Business Capabilities.
-5. [ ] `BA-CAP-002` — Capability Map.
-6. [ ] `BA-STR-003` — Value Chains.
-7. [ ] `BA-ORG-001` — Organizational Model.
-8. [ ] `BA-ORG-002` — Operating Model.
-9. [ ] `BA-EXE-001` — Business Processes.
-10. [ ] `BA-EXE-002` — KPIs & Metrics.
-
-### Research Foundation
-
-- [x] Criar o domínio `Research` no GKR.
-- [x] Criar a estrutura do `RP-001 — Ecosystem Research Program`.
-- [x] Consolidar conceitualmente o Research Protocol.
-- [x] Definir critérios de qualidade das fontes.
-- [x] Definir níveis de evidência.
-- [x] Registrar princípios de neutralidade e suficiência arquitetural.
-- [x] Encerrar a fase de construção metodológica do RP-001.
-- [x] Congelar o método para execução, sujeito apenas a limitações concretas identificadas na prática.
-- [x] Concluir o Ciclo 1 conceitual do Estado da Arte com oito perspectivas.
-- [x] Criar a MS-001 em estado `draft`.
-- [x] Formalizar o princípio de rastreabilidade no ADR-005.
-
-## Fase M2 — Validation & Refinement
-
-Objetivo: confrontar hipóteses, modelos e arquiteturas com evidências, aplicação, contraexemplos e resultados observáveis antes de promoção à Canon.
-
-### M2.0 — Architectural Evolution Hypothesis
-
-- [x] Registrar o Checkpoint M2.0.
-- [x] Definir ciclo experimental de maturidade.
-- [x] Preservar GMM, GKS, GKVF e KVS fora da Canon.
-- [x] Reduzir expansão metodológica sem necessidade prática.
-- [ ] Retomar essas hipóteses apenas quando uma lacuna institucional comprovada exigir.
-
-### M2.1 — Validação do RP-001
-
-- [ ] Iniciar o Evidence Registry.
-- [ ] Registrar fontes primárias, revisões qualificadas e padrões oficiais.
-- [ ] Associar evidências e contraevidências aos MECs.
-- [ ] Revisar equivalências terminológicas entre disciplinas.
-- [ ] Identificar contraexemplos e limites de contexto.
-- [ ] Reavaliar níveis de evidência.
-- [ ] Refinar a MS-001.
-
-### M2.2 — Tradução para o EPC
-
-- [ ] Definir fenômenos candidatos sustentados pela MS-001 refinada.
-- [ ] Construir o Ecosystem Phenomena Catalog — EPC.
-- [ ] Registrar convergências, divergências e limitações por fenômeno.
-- [ ] Aplicar critérios de saturação.
-
-### M2.3 — Tradução arquitetural
-
-- [ ] Produzir Architectural Recommendations para o BA-STR-002.
-- [ ] Derivar o Candidate Outcome Register — COR a partir do EPC.
-- [ ] Realizar External Validation.
-- [ ] Aplicar COEM.
-- [ ] Estabilizar AQS-O01.
-- [ ] Definir catálogos de Ecosystem Outcomes e Business Outcomes.
-
-## Fase M3 — Progressive Realization
-
-Objetivo: transformar a arquitetura de maturidade da Guivos em arquiteturas de referência, programas corporativos e entregas executáveis, sem reduzir a visão institucional.
-
-### M3.0 — Institutional Architecture Consolidation
-
+- [x] Consolidar a macroestrutura da GEA.
 - [x] Criar `GEA-PLM-001 — Permanence Layer Model`.
 - [x] Definir Permanent Architecture.
 - [x] Definir Reference Architecture.
@@ -167,53 +60,136 @@ Objetivo: transformar a arquitetura de maturidade da Guivos em arquiteturas de r
 - [x] Formalizar Vision First.
 - [x] Formalizar Architectural Gravity.
 - [x] Formalizar Progressive Realization.
+- [x] Formalizar Downward Influence.
 - [x] Formalizar Layer Integrity.
-- [x] Atualizar GEA, Foundation, README e Knowledge Board.
+- [x] Formalizar o GKR como representação canônica da Guivos em seu estado de maturidade.
+- [x] Registrar o marco A1.
 
-### M3.1 — Reference Architecture
+### Itens preservados para evolução controlada
 
-- [ ] Classificar ativos existentes pela camada de permanência.
-- [ ] Consolidar visão de maturidade da plataforma.
-- [ ] Consolidar Data & Intelligence Architecture.
-- [ ] Consolidar Technology Architecture.
-- [ ] Consolidar arquitetura de IA.
-- [ ] Consolidar arquitetura de dados e grafos.
-- [ ] Consolidar segurança, integração, observabilidade e escalabilidade.
-- [ ] Consolidar arquitetura de referência dos produtos.
+A conclusão de A1 não encerra o aprofundamento das arquiteturas existentes. Permanecem pendentes, entre outros:
 
-### M3.2 — Enterprise Programs
+- modelos de Participantes, Oportunidades, Experiências, Relacionamentos e Conhecimento do Ecossistema;
+- Business Outcomes, Core Business Capabilities, Capability Map, Value Chains, Organizational Model e Operating Model;
+- Data & Intelligence Architecture;
+- Technology Architecture;
+- Governance Architecture;
+- Knowledge Architecture;
+- validação empírica do RP-001.
 
-- [ ] Definir portfólio executivo de programas.
+Esses itens devem evoluir sem reabrir automaticamente a macroestrutura institucional.
+
+## A2 — Functional Architecture Discovery
+
+**Estado:** Active.
+
+### Objetivo
+
+Descobrir o conjunto mínimo e suficiente de Core Capabilities permanentes que explica aquilo que a Guivos deve ser capaz de realizar em sua maturidade.
+
+### Entregável principal
+
+`GCCM-001 — Guivos Core Capability Model`.
+
+### A2.1 — Inicialização
+
+- [x] Criar a página de Architectural Milestones.
+- [x] Criar a estrutura inicial do GCCM-001.
+- [x] Definir propósito, pergunta arquitetural e limites do GCCM.
+- [x] Definir Core Capability Admission Rule.
+- [x] Definir testes de destruição, irredutibilidade e cobertura da missão.
+- [x] Registrar que nenhuma Core Capability está canônica na versão inicial.
+
+### A2.2 — Evidence Extraction
+
+- [ ] Inventariar fontes prioritárias do GKR.
+- [ ] Extrair verbos institucionais, responsabilidades, objetivos, relações e decisões.
+- [ ] Registrar cada evidência com referência à fonte e ao status do ativo.
+- [ ] Separar evidência consolidada de hipótese, draft e experimento.
+
+Fontes prioritárias:
+
+1. Foundation Architecture;
+2. Modelo Fundamental do GEB;
+3. Product Architecture;
+4. Business Architecture;
+5. Research Domain;
+6. ADRs e validações;
+7. GEA e Permanence Layer Model.
+
+### A2.3 — Semantic Clustering
+
+- [ ] Agrupar evidências semanticamente equivalentes.
+- [ ] Identificar redundâncias terminológicas.
+- [ ] Registrar divergências e fronteiras provisórias.
+- [ ] Evitar nomear Core Capabilities antes da formação de agrupamentos suficientes.
+
+### A2.4 — Candidate Core Capabilities
+
+- [ ] Formular candidatas provisórias.
+- [ ] Associar evidências a cada candidata.
+- [ ] Aplicar a Admission Rule.
+- [ ] Aplicar os testes de destruição e irredutibilidade.
+- [ ] Fundir ou rejeitar candidatas redundantes.
+
+### A2.5 — Mission Coverage
+
+- [ ] Verificar cobertura do propósito e da missão operacional.
+- [ ] Verificar cobertura do Modelo Fundamental do GEB.
+- [ ] Verificar cobertura dos produtos e da geração de valor.
+- [ ] Identificar lacunas e sobreposições.
+- [ ] Buscar o menor conjunto suficiente.
+
+### A2.6 — Validation and Catalog
+
+- [ ] Preparar validação arquitetural formal.
+- [ ] Registrar decisões de retenção, fusão e rejeição.
+- [ ] Consolidar o catálogo validado.
+- [ ] Definir relações entre Core Capabilities.
+- [ ] Atualizar status e versão do GCCM.
+- [ ] Não promover à Canon sem base suficiente.
+
+## A3 — Operational Architecture
+
+**Estado:** Planned.
+
+- [ ] Criar `PRA-001 — Platform Reference Architecture` após a validação mínima do GCCM.
+- [ ] Descrever como as Core Capabilities cooperam.
+- [ ] Definir fluxos conceituais, responsabilidades e fronteiras operacionais.
+- [ ] Derivar Domain Reference Architectures.
+- [ ] Consolidar identidade, conhecimento, IA, dados, grafo, integrações, segurança, experiência, observabilidade e escalabilidade em nível de referência.
+
+## A4 — Platform Engineering
+
+**Estado:** Planned.
+
+- [ ] Definir portfólio executivo de Enterprise Programs.
 - [ ] Definir programa de Platform Engineering.
 - [ ] Definir programa de Product Portfolio.
 - [ ] Definir programa de AI, Data & Knowledge.
 - [ ] Definir programa de Business Growth.
 - [ ] Definir programa de Global Expansion.
-- [ ] Definir objetivos, dependências, marcos e indicadores de cada programa.
+- [ ] Definir repositórios, backlogs, releases e ciclos de Enterprise Delivery.
+- [ ] Garantir rastreabilidade entre arquitetura, programa e implementação.
 
-### M3.3 — Enterprise Delivery
+## A5 — Canon 1.0
 
-- [ ] Definir repositórios e ferramentas de execução.
-- [ ] Definir backlog, releases e ciclos de entrega.
-- [ ] Manter tecnologias específicas fora da Permanent Architecture.
-- [ ] Garantir rastreabilidade entre entrega, programa e arquitetura de referência.
-- [ ] Registrar aprendizados que justifiquem revisões arquiteturais.
+**Estado:** Planned.
 
-## Governance e Knowledge Architecture
+Critério preliminar:
 
-- [x] Consolidar princípio de Architectural Ownership.
-- [x] Consolidar ordem por dependências arquiteturais.
-- [x] Iniciar validações arquiteturais com o AV-001.
-- [x] Iniciar Governance Framework do GKR com Outcome Governance Method.
-- [x] Adotar o Architectural Traceability Principle.
-- [x] Criar o Baseline M1.
-- [x] Criar o Checkpoint M2.0.
-- [x] Criar o Permanence Layer Model.
-- [ ] Consolidar governança de ADRs e AVs.
-- [ ] Consolidar padrões do GKR.
-- [ ] Consolidar versionamento arquitetural.
-- [ ] Consolidar Knowledge Architecture.
-- [ ] Consolidar processo de evolução contínua.
+Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais, com rastreabilidade suficiente para orientar programas e implementações.
+
+## Pesquisa e validação paralelas
+
+As atividades abaixo permanecem válidas e podem ser retomadas quando necessárias às decisões da A2 e A3:
+
+- [ ] iniciar o Evidence Registry do RP-001;
+- [ ] registrar fontes primárias e contraevidências;
+- [ ] refinar a MS-001;
+- [ ] construir o Ecosystem Phenomena Catalog — EPC;
+- [ ] produzir Architectural Recommendations;
+- [ ] derivar e validar Candidate Outcomes.
 
 ## Hipóteses preservadas fora da Canon
 
@@ -238,6 +214,6 @@ Objetivo: transformar a arquitetura de maturidade da Guivos em arquiteturas de r
 - Knowledge Validation Framework — GKVF;
 - Knowledge Validation Standards — KVS.
 
-## Próxima Sprint
+## Próxima sprint
 
-Iniciar a **M3.1 — Reference Architecture**, classificando os ativos existentes por camada de permanência e descrevendo a Guivos em sua capacidade máxima, sem recorrer a limitações de MVP ou de implementação corrente.
+Executar **A2.2 — Evidence Extraction**, iniciando pela Foundation, pelo Modelo Fundamental do GEB, pela Product Architecture e pela Business Architecture, sem nomear antecipadamente o catálogo final de Core Capabilities.
