@@ -9,9 +9,13 @@ O GKR é a fonte única da verdade para a Guivos Enterprise Architecture (GEA). 
 - **Baseline vigente:** M1 — Research Foundation Complete
 - **Estado do baseline:** Frozen
 - **Fase atual:** M2 — Validation & Refinement
-- **Foco imediato:** validar a MS-001, registrar evidências e construir o EPC
+- **Checkpoint ativo:** M2.0 — Architectural Evolution Hypothesis
+- **Objetivo imediato:** avaliar o GMM por meio da concepção experimental do GKS, sem promoção à Canon
 
-Consulte o [Baseline M1](docs/project/BASELINE-M1.md) para o escopo, os limites e a política de evolução.
+Consulte:
+
+- [Baseline M1](docs/project/BASELINE-M1.md)
+- [Checkpoint M2.0](docs/project/CHECKPOINT-M2.0.md)
 
 ## Princípio central
 
@@ -20,6 +24,8 @@ Nenhum conhecimento validado da Guivos deve existir apenas em conversas, apresen
 Toda decisão aprovada deve ser incorporada ao GKR.
 
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
+
+> Propor, experimentar, observar, avaliar e somente então consolidar.
 
 ## Relação entre GEA, GKR e GEB
 
@@ -40,6 +46,10 @@ A GEA é composta pelas seguintes arquiteturas:
 - Governance Architecture;
 - Knowledge Architecture.
 
+## Hipóteses estruturantes em validação
+
+O `Guivos Meta-Model — GMM` e o `Guivos Knowledge System — GKS` permanecem fora da Canon. O GMM será avaliado por meio do uso do GKS como domínio piloto, conforme os critérios do Checkpoint M2.0.
+
 ## Estrutura atual
 
 - `docs/research/` — domínio Research, programas, protocolos, sínteses e recomendações.
@@ -51,7 +61,7 @@ A GEA é composta pelas seguintes arquiteturas:
 - `docs/validation/` — validações arquiteturais.
 - `docs/adr/` — Architecture Decision Records.
 - `docs/glossary.md` — glossário canônico.
-- `docs/project/` — baseline, painéis, matriz de consolidação e governança do projeto.
+- `docs/project/` — baselines, checkpoints, painéis, matriz de consolidação e governança do projeto.
 - `docs/roadmap.md` — roadmap arquitetural.
 - `docs/assets/` — ativos de publicação.
 - `exports/` — publicações derivadas.
