@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-06-30
 ---
@@ -10,17 +10,19 @@ last_updated: 2026-06-30
 
 Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Guivos.
 
-## Baseline e checkpoint vigentes
+## Baseline, checkpoint e modelo vigente
 
 | Ativo | Estado | Finalidade |
 |---|---|---|
 | M1 — Research Foundation Complete | Frozen | Referência estável dos fundamentos |
-| M2.0 — Architectural Evolution Hypothesis | Experimental | Avaliar o GMM por meio do GKS como domínio piloto |
+| M2.0 — Architectural Evolution Hypothesis | Experimental | Registrar hipóteses estruturantes sem promoção automática à Canon |
+| GEA-PLM-001 — Permanence Layer Model | Validated | Organizar ativos por permanência, horizonte e governança |
 
 Consulte:
 
 - [Baseline M1](BASELINE-M1.md)
 - [Checkpoint M2.0](CHECKPOINT-M2.0.md)
+- [Permanence Layer Model](../enterprise-architecture/permanence-layer-model.md)
 
 ## Legenda
 
@@ -32,6 +34,31 @@ Consulte:
 | 🟧 | Em experimentação, consolidação ou validação |
 | 🟩 | Consolidado no GKR |
 
+## Arquitetura institucional
+
+| Ativo | Estado |
+|---|:---:|
+| Permanence Layer Model | 🟩 |
+| Institutional Permanence | 🟩 |
+| Vision First | 🟩 |
+| Architectural Gravity | 🟩 |
+| Progressive Realization | 🟩 |
+| Downward Influence | 🟩 |
+| Layer Integrity | 🟩 |
+
+### Camadas de permanência
+
+| Camada | Horizonte | Finalidade |
+|---|---|---|
+| Permanent Architecture | Décadas | Identidade, princípios, Canon e macroestrutura |
+| Reference Architecture | Anos | Melhor forma arquitetural conhecida de realizar a visão |
+| Enterprise Programs | Meses e ciclos plurianuais | Programas estratégicos que realizam a arquitetura |
+| Enterprise Delivery | Dias, semanas e releases | Execução, código, infraestrutura e releases |
+
+Princípio vigente:
+
+> A Guivos é concebida em sua capacidade máxima. A implementação realiza progressivamente essa visão.
+
 ## Ciclo de maturidade experimental
 
 `Idea -> Hypothesis -> Experimental -> Validated -> Canonical -> Deprecated`
@@ -42,10 +69,10 @@ A progressão não é automática e nenhum ativo entra na Canon apenas por eleg�
 
 | Ativo | Natureza | Estado | Validação prevista |
 |---|---|---|---|
-| Guivos Meta-Model — GMM | Architectural Meta-Hypothesis | Hypothesis | Aplicação na concepção do GKS |
-| Guivos Knowledge System — GKS | Domínio institucional piloto | Hypothesis | Teste de escopo, utilidade e não sobreposição |
-| Knowledge Validation Framework — GKVF | Componente candidato | Idea | Avaliação posterior ao GKS mínimo |
-| Knowledge Validation Standards — KVS | Padrões candidatos | Idea | Não iniciar antes da validação estrutural |
+| Guivos Meta-Model — GMM | Architectural Meta-Hypothesis | Hypothesis | Aplicação prática futura, se necessária |
+| Guivos Knowledge System — GKS | Domínio institucional proposto | Hypothesis | Teste de necessidade, escopo e não sobreposição |
+| Knowledge Validation Framework — GKVF | Componente candidato | Idea | Avaliação posterior, somente se houver lacuna real |
+| Knowledge Validation Standards — KVS | Padrões candidatos | Idea | Não iniciar antes de necessidade comprovada |
 
 Nenhum desses ativos integra a Canon.
 
@@ -83,16 +110,6 @@ Princípios vigentes:
 
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
 
-> Propor, experimentar, observar, avaliar e somente então consolidar.
-
-## Estado metodológico do RP-001
-
-O método do RP-001 permanece congelado para execução. Alterações futuras somente deverão ocorrer quando a aplicação prática demonstrar uma limitação metodológica concreta.
-
-O Ciclo 1 produziu uma síntese conceitual preliminar. A Fase M2 ainda deverá registrar e auditar as fontes, confrontar os MECs com contraexemplos e validar a utilidade arquitetural da MS-001.
-
-O Checkpoint M2.0 não substitui essa obrigação. Ele registra um experimento arquitetural paralelo e limitado, sem transformar hipóteses em evidências.
-
 ## Foundation Architecture
 
 | Unidade | Status |
@@ -103,6 +120,10 @@ O Checkpoint M2.0 não substitui essa obrigação. Ele registra um experimento a
 | Visão de Longo Prazo | 🟩 |
 | Constituição | 🟩 |
 | Princípios Permanentes | 🟩 |
+| PP-11 — Maturidade institucional | 🟩 |
+| PP-12 — Visão antes da execução | 🟩 |
+| PP-13 — Realização progressiva | 🟩 |
+| PP-14 — Permanência proporcional à mudança | 🟩 |
 
 ## Ecosystem Architecture / GEB
 
@@ -152,9 +173,8 @@ O Checkpoint M2.0 não substitui essa obrigação. Ele registra um experimento a
 | Ativo | Objetivo | Status |
 |---|---|:---:|
 | AV-001 — GEA Structure Validation | Verificar lacunas relevantes na macroestrutura da GEA | 🟧 |
-| Checkpoint M2.0 | Avaliar utilidade do GMM sem promoção à Canon | 🟧 |
-
-Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma camada anterior aos Outcomes. A estrutura atual da GEA permanece preservada.
+| Checkpoint M2.0 | Registrar hipóteses estruturantes e critérios de validação | 🟧 |
+| GEA-PLM-001 | Validar classificação por permanência e horizonte | 🟩 |
 
 ## Governance Framework do GKR
 
@@ -167,14 +187,13 @@ Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma ca
 | AQS-O01 — Outcome Quality Standard | 🟧 |
 | Baseline M1 | 🟩 |
 | Checkpoint M2.0 | 🟩 |
-
-O AQS-O01 permanece em validação prática até ser aplicado aos primeiros candidatos.
+| Permanence Layer Model | 🟩 |
 
 ## Governança documental
 
 | Ativo | Status |
 |---|:---:|
-| GKR como fonte única da verdade | 🟩 |
+| GKR como representação canônica da Guivos madura | 🟩 |
 | Markdown como formato oficial | 🟩 |
 | Pipeline GitHub -> Markdown -> Mermaid -> Site -> PDF | 🟩 |
 | Glossário Canônico | 🟩 |
@@ -184,10 +203,9 @@ O AQS-O01 permanece em validação prática até ser aplicado aos primeiros cand
 | ADR-004 — Architectural Dependency Order | 🟩 |
 | ADR-005 — Architectural Traceability Principle | 🟩 |
 | AV-001 — GEA Structure Validation | 🟧 |
-| Outcome Governance Method | 🟩 |
-| Research Domain | 🟩 |
 | Baseline M1 | 🟩 |
 | Checkpoint M2.0 | 🟩 |
+| GEA-PLM-001 — Permanence Layer Model | 🟩 |
 | Padrões completos do GKR | 🟦 |
 
 ## Hipóteses preservadas fora da Canon
@@ -215,23 +233,20 @@ O AQS-O01 permanece em validação prática até ser aplicado aos primeiros cand
 
 ## Fase atual
 
-`M2 — Validation & Refinement`, com o `Checkpoint M2.0` ativo.
+`M2 — Validation & Refinement`, com a arquitetura de maturidade consolidada para orientar a realização progressiva da Guivos.
 
-## Objetivo principal do checkpoint
+## Objetivo principal
 
-Determinar se o problema de governança do ciclo de vida do conhecimento justifica a criação experimental do GKS e se o GMM fornece uma estrutura mínima útil, sem duplicar ativos existentes.
+Utilizar o GKR para descrever a Guivos em sua capacidade máxima e orientar a construção de Reference Architectures, Enterprise Programs e Enterprise Delivery sem reduzir a visão institucional.
 
 ## Ponto exato de retomada
 
-1. definir o problema institucional do GKS;
-2. delimitar escopo, fronteiras e ownership;
-3. mapear sobreposições com Research, Governance, Knowledge Architecture e GKR;
-4. propor a estrutura mínima do domínio piloto;
-5. avaliar a proposta com os critérios do Checkpoint M2.0;
-6. somente depois decidir se o GKS deve entrar em estado `experimental`.
-
-O Evidence Registry e a validação da MS-001 continuam pendentes e não devem ser considerados concluídos.
+1. classificar novos ativos pela camada de permanência;
+2. consolidar Reference Architectures ainda ausentes;
+3. estruturar Enterprise Programs de realização progressiva;
+4. manter Enterprise Delivery fora do núcleo canônico, com rastreabilidade adequada;
+5. retomar o Evidence Registry e a validação da MS-001 quando necessário para decisões arquiteturais.
 
 ## Última consolidação
 
-Criação do Checkpoint M2.0, registro do GMM e do GKS como hipóteses fora da Canon e adoção do ciclo experimental de maturidade, concluídos em 30/06/2026.
+Criação do GEA-PLM-001, atualização dos princípios permanentes e formalização do GKR como representação canônica da Guivos em seu estado de maturidade, concluídas em 30/06/2026.
