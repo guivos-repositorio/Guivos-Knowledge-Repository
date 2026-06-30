@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-06-29
 ---
@@ -79,15 +79,25 @@ A ordem desta fase segue dependências arquiteturais, conforme o ADR-004.
 - [x] Definir critérios de qualidade das fontes.
 - [x] Definir níveis de evidência.
 - [x] Registrar princípios de neutralidade e suficiência arquitetural.
-- [ ] Mapear o Estado da Arte.
-  - [ ] Identificar modelos explicativos existentes.
+- [x] Encerrar a fase de construção metodológica do RP-001.
+- [x] Congelar o método para execução, sujeito apenas a limitações concretas identificadas na prática.
+- [ ] Executar o Estado da Arte.
+  - [x] Análise preliminar de Systems Thinking.
+  - [x] Análise preliminar de Complex Adaptive Systems.
+  - [x] Análise preliminar de Network Science.
+  - [ ] Analisar Ecologia com o template vigente.
+  - [ ] Analisar Organizational Theory.
+  - [ ] Analisar Service-Dominant Logic.
+  - [ ] Analisar Knowledge Management.
+  - [ ] Analisar Institutional Economics.
   - [ ] Identificar convergências entre disciplinas.
   - [ ] Identificar divergências conceituais.
   - [ ] Identificar limitações dos modelos atuais.
   - [ ] Identificar lacunas relevantes para a Guivos.
 - [ ] Iniciar o Evidence Registry.
 - [ ] Construir o Ecosystem Phenomena Catalog — EPC.
-- [ ] Produzir meta-síntese e modelos explicativos provisórios.
+- [ ] Produzir a primeira meta-síntese oficial após a conclusão do núcleo interdisciplinar.
+- [ ] Produzir modelos explicativos provisórios.
 - [ ] Produzir recomendações arquiteturais para o BA-STR-002.
 - [ ] Derivar o Candidate Outcome Register — COR a partir do EPC.
 
@@ -133,8 +143,14 @@ Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificat
 - mudança de estado como unidade mínima;
 - Worldview;
 - Knowledge-Centric Enterprise;
-- modelo explicativo definitivo do domínio.
+- modelo explicativo definitivo do domínio;
+- Research Question Map;
+- organização do conhecimento por perguntas;
+- Knowledge Objects;
+- Grafo de Conhecimento Arquitetural;
+- Knowledge Twin;
+- pipeline de maturidade do conhecimento.
 
 ## Próxima Sprint
 
-Construir o **Estado da Arte** do RP-001, mapeando modelos explicativos existentes, convergências, divergências, limitações e lacunas antes de iniciar o Evidence Registry.
+Executar a análise de **Ecologia** como quarta disciplina do Estado da Arte do RP-001, aplicando integralmente o template vigente e comparando seus resultados com Systems Thinking, Complex Adaptive Systems e Network Science.
