@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 2.0.0
+version: 2.1.0
 owner: Guivos
 last_updated: 2026-06-30
 ---
@@ -10,13 +10,17 @@ last_updated: 2026-06-30
 
 Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Guivos.
 
-## Baseline vigente
+## Baseline e checkpoint vigentes
 
-| Baseline | Estado | Fase atual |
+| Ativo | Estado | Finalidade |
 |---|---|---|
-| M1 — Research Foundation Complete | Frozen | M2 — Validation & Refinement |
+| M1 — Research Foundation Complete | Frozen | Referência estável dos fundamentos |
+| M2.0 — Architectural Evolution Hypothesis | Experimental | Avaliar o GMM por meio do GKS como domínio piloto |
 
-Consulte [Baseline M1](BASELINE-M1.md).
+Consulte:
+
+- [Baseline M1](BASELINE-M1.md)
+- [Checkpoint M2.0](CHECKPOINT-M2.0.md)
 
 ## Legenda
 
@@ -24,9 +28,26 @@ Consulte [Baseline M1](BASELINE-M1.md).
 |---|---|
 | ⬜ | Não iniciado |
 | 🟦 | Em descoberta |
-| 🟨 | Aprovado, aguardando consolidação |
-| 🟧 | Em consolidação ou validação |
+| 🟨 | Hipótese ou proposta estruturada |
+| 🟧 | Em experimentação, consolidação ou validação |
 | 🟩 | Consolidado no GKR |
+
+## Ciclo de maturidade experimental
+
+`Idea -> Hypothesis -> Experimental -> Validated -> Canonical -> Deprecated`
+
+A progressão não é automática e nenhum ativo entra na Canon apenas por elegância conceitual.
+
+## Hipóteses arquiteturais estruturantes
+
+| Ativo | Natureza | Estado | Validação prevista |
+|---|---|---|---|
+| Guivos Meta-Model — GMM | Architectural Meta-Hypothesis | Hypothesis | Aplicação na concepção do GKS |
+| Guivos Knowledge System — GKS | Domínio institucional piloto | Hypothesis | Teste de escopo, utilidade e não sobreposição |
+| Knowledge Validation Framework — GKVF | Componente candidato | Idea | Avaliação posterior ao GKS mínimo |
+| Knowledge Validation Standards — KVS | Padrões candidatos | Idea | Não iniciar antes da validação estrutural |
+
+Nenhum desses ativos integra a Canon.
 
 ## Maturidade das arquiteturas
 
@@ -48,7 +69,7 @@ Consulte [Baseline M1](BASELINE-M1.md).
 | Research Domain | Construir entendimento compartilhado e reduzir incerteza arquitetural | 🟩 |
 | RP-001 — Ecosystem Research Program | Investigar condições permanentes recorrentes em ecossistemas complexos | 🟧 |
 | RP-001 Research Protocol | Definir método, escopo, qualidade das fontes, níveis de evidência e saturação | 🟩 |
-| Estado da Arte — Ciclo 1 | Síntese conceitual de oito perspectivas interdisciplinares | 🟩 |
+| Estado da Arte — Ciclo 1 | Síntese conceitual preliminar de oito perspectivas interdisciplinares | 🟨 |
 | MS-001 | Organizar mecanismos explicativos candidatos e limites | 🟧 |
 | Evidence Registry | Registrar fontes, evidências, divergências e limitações | ⬜ |
 | Ecosystem Phenomena Catalog — EPC | Consolidar fenômenos antes do COR | ⬜ |
@@ -62,11 +83,15 @@ Princípios vigentes:
 
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
 
+> Propor, experimentar, observar, avaliar e somente então consolidar.
+
 ## Estado metodológico do RP-001
 
 O método do RP-001 permanece congelado para execução. Alterações futuras somente deverão ocorrer quando a aplicação prática demonstrar uma limitação metodológica concreta.
 
-O Ciclo 1 produziu uma síntese conceitual preliminar. A Fase M2 deverá registrar e auditar as fontes, confrontar os MECs com contraexemplos e validar a utilidade arquitetural da MS-001.
+O Ciclo 1 produziu uma síntese conceitual preliminar. A Fase M2 ainda deverá registrar e auditar as fontes, confrontar os MECs com contraexemplos e validar a utilidade arquitetural da MS-001.
+
+O Checkpoint M2.0 não substitui essa obrigação. Ele registra um experimento arquitetural paralelo e limitado, sem transformar hipóteses em evidências.
 
 ## Foundation Architecture
 
@@ -127,6 +152,7 @@ O Ciclo 1 produziu uma síntese conceitual preliminar. A Fase M2 deverá registr
 | Ativo | Objetivo | Status |
 |---|---|:---:|
 | AV-001 — GEA Structure Validation | Verificar lacunas relevantes na macroestrutura da GEA | 🟧 |
+| Checkpoint M2.0 | Avaliar utilidade do GMM sem promoção à Canon | 🟧 |
 
 Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma camada anterior aos Outcomes. A estrutura atual da GEA permanece preservada.
 
@@ -140,6 +166,7 @@ Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma ca
 | Candidate Outcome Evaluation Matrix — COEM | ⬜ |
 | AQS-O01 — Outcome Quality Standard | 🟧 |
 | Baseline M1 | 🟩 |
+| Checkpoint M2.0 | 🟩 |
 
 O AQS-O01 permanece em validação prática até ser aplicado aos primeiros candidatos.
 
@@ -160,6 +187,7 @@ O AQS-O01 permanece em validação prática até ser aplicado aos primeiros cand
 | Outcome Governance Method | 🟩 |
 | Research Domain | 🟩 |
 | Baseline M1 | 🟩 |
+| Checkpoint M2.0 | 🟩 |
 | Padrões completos do GKR | 🟦 |
 
 ## Hipóteses preservadas fora da Canon
@@ -179,25 +207,31 @@ O AQS-O01 permanece em validação prática até ser aplicado aos primeiros cand
 - Expected Behaviors;
 - Roadmap Epistemológico;
 - pipeline de maturidade do conhecimento;
-- catálogo definitivo de invariantes.
+- catálogo definitivo de invariantes;
+- Guivos Meta-Model — GMM;
+- Guivos Knowledge System — GKS;
+- Knowledge Validation Framework — GKVF;
+- Knowledge Validation Standards — KVS.
 
 ## Fase atual
 
-`M2 — Validation & Refinement`.
+`M2 — Validation & Refinement`, com o `Checkpoint M2.0` ativo.
 
-## Objetivo principal
+## Objetivo principal do checkpoint
 
-Validar e refinar a MS-001 por meio de fontes rastreáveis, evidências contrárias, casos e critérios de utilidade arquitetural.
+Determinar se o problema de governança do ciclo de vida do conhecimento justifica a criação experimental do GKS e se o GMM fornece uma estrutura mínima útil, sem duplicar ativos existentes.
 
 ## Ponto exato de retomada
 
-1. iniciar o Evidence Registry com fontes qualificadas para os oito blocos disciplinares;
-2. associar evidências e contraevidências aos MECs da MS-001;
-3. revisar sobreposições, definições e limites dos mecanismos;
-4. construir o EPC apenas após suporte suficiente;
-5. produzir Architectural Recommendations;
-6. derivar o COR posteriormente na Business Architecture.
+1. definir o problema institucional do GKS;
+2. delimitar escopo, fronteiras e ownership;
+3. mapear sobreposições com Research, Governance, Knowledge Architecture e GKR;
+4. propor a estrutura mínima do domínio piloto;
+5. avaliar a proposta com os critérios do Checkpoint M2.0;
+6. somente depois decidir se o GKS deve entrar em estado `experimental`.
+
+O Evidence Registry e a validação da MS-001 continuam pendentes e não devem ser considerados concluídos.
 
 ## Última consolidação
 
-Criação do Baseline M1, publicação da MS-001 em `draft`, adoção do ADR-005 e transição formal para a Fase M2, concluídas em 30/06/2026.
+Criação do Checkpoint M2.0, registro do GMM e do GKS como hipóteses fora da Canon e adoção do ciclo experimental de maturidade, concluídos em 30/06/2026.
