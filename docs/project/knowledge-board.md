@@ -1,14 +1,22 @@
 ---
 title: Knowledge Board
 status: active
-version: 1.9.0
+version: 2.0.0
 owner: Guivos
-last_updated: 2026-06-29
+last_updated: 2026-06-30
 ---
 
 # Knowledge Board
 
 Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Guivos.
+
+## Baseline vigente
+
+| Baseline | Estado | Fase atual |
+|---|---|---|
+| M1 — Research Foundation Complete | Frozen | M2 — Validation & Refinement |
+
+Consulte [Baseline M1](BASELINE-M1.md).
 
 ## Legenda
 
@@ -17,7 +25,7 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | ⬜ | Não iniciado |
 | 🟦 | Em descoberta |
 | 🟨 | Aprovado, aguardando consolidação |
-| 🟧 | Em consolidação |
+| 🟧 | Em consolidação ou validação |
 | 🟩 | Consolidado no GKR |
 
 ## Maturidade das arquiteturas
@@ -25,8 +33,8 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Arquitetura | Maturidade |
 |---|---|
 | Foundation Architecture | Stable |
-| Ecosystem Architecture / GEB | Validated |
-| Product Architecture | Stable |
+| Ecosystem Architecture / GEB | Validated no modelo fundamental; demais modelos em evolução |
+| Product Architecture | Stable na estrutura superior |
 | Business Architecture | Validated em Foundations e Strategy inicial; Outcomes em construção |
 | Data & Intelligence Architecture | Draft |
 | Technology Architecture | Draft |
@@ -38,10 +46,11 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Ativo | Objetivo | Status |
 |---|---|:---:|
 | Research Domain | Construir entendimento compartilhado e reduzir incerteza arquitetural | 🟩 |
-| RP-001 — Ecosystem Research Program | Identificar condições permanentes recorrentes em ecossistemas complexos | 🟧 |
+| RP-001 — Ecosystem Research Program | Investigar condições permanentes recorrentes em ecossistemas complexos | 🟧 |
 | RP-001 Research Protocol | Definir método, escopo, qualidade das fontes, níveis de evidência e saturação | 🟩 |
-| Estado da Arte | Mapear modelos explicativos, convergências, divergências e lacunas | 🟧 |
-| Evidence Registry | Registrar fontes, evidências e limitações | ⬜ |
+| Estado da Arte — Ciclo 1 | Síntese conceitual de oito perspectivas interdisciplinares | 🟩 |
+| MS-001 | Organizar mecanismos explicativos candidatos e limites | 🟧 |
+| Evidence Registry | Registrar fontes, evidências, divergências e limitações | ⬜ |
 | Ecosystem Phenomena Catalog — EPC | Consolidar fenômenos antes do COR | ⬜ |
 | Architectural Recommendations | Traduzir evidências em recomendações não canônicas | ⬜ |
 
@@ -51,11 +60,13 @@ Princípios vigentes:
 
 > A pesquisa deve utilizar o menor nível de abstração suficiente para explicar o domínio e apoiar decisões corretas.
 
+> Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
+
 ## Estado metodológico do RP-001
 
-O método do RP-001 está congelado para execução. Alterações futuras somente deverão ocorrer quando a aplicação prática demonstrar uma limitação metodológica concreta.
+O método do RP-001 permanece congelado para execução. Alterações futuras somente deverão ocorrer quando a aplicação prática demonstrar uma limitação metodológica concreta.
 
-A partir deste checkpoint, o foco deixa de ser a criação de novas estruturas metodológicas e passa a ser a execução disciplinada do Estado da Arte.
+O Ciclo 1 produziu uma síntese conceitual preliminar. A Fase M2 deverá registrar e auditar as fontes, confrontar os MECs com contraexemplos e validar a utilidade arquitetural da MS-001.
 
 ## Foundation Architecture
 
@@ -128,8 +139,9 @@ Resultado provisório do AV-001: nenhuma evidência suficiente para criar uma ca
 | External Validation dos candidatos | ⬜ |
 | Candidate Outcome Evaluation Matrix — COEM | ⬜ |
 | AQS-O01 — Outcome Quality Standard | 🟧 |
+| Baseline M1 | 🟩 |
 
-O AQS-O01 está conceitualmente definido, mas permanece em validação prática até ser aplicado aos primeiros candidatos.
+O AQS-O01 permanece em validação prática até ser aplicado aos primeiros candidatos.
 
 ## Governança documental
 
@@ -143,50 +155,49 @@ O AQS-O01 está conceitualmente definido, mas permanece em validação prática 
 | Roadmap Arquitetural | 🟩 |
 | ADR-003 — Architectural Ownership | 🟩 |
 | ADR-004 — Architectural Dependency Order | 🟩 |
+| ADR-005 — Architectural Traceability Principle | 🟩 |
 | AV-001 — GEA Structure Validation | 🟧 |
 | Outcome Governance Method | 🟩 |
 | Research Domain | 🟩 |
-| ADRs completos | 🟧 |
+| Baseline M1 | 🟩 |
 | Padrões completos do GKR | 🟦 |
 
-## Hipóteses de pesquisa preservadas fora da Canon
+## Hipóteses preservadas fora da Canon
 
 - Sistema Humano de Evolução;
 - transformação como fenômeno fundamental;
 - mudança de estado como unidade mínima;
 - Worldview como possível elemento explícito da Foundation;
 - Knowledge-Centric Enterprise;
-- modelo explicativo definitivo do domínio;
+- Modelo Explicativo Integrado — MEI;
+- Enterprise Theory;
 - Research Question Map;
 - organização do conhecimento por perguntas;
 - Knowledge Objects;
 - Grafo de Conhecimento Arquitetural;
 - Knowledge Twin;
-- pipeline de maturidade do conhecimento.
+- Expected Behaviors;
+- Roadmap Epistemológico;
+- pipeline de maturidade do conhecimento;
+- catálogo definitivo de invariantes.
 
-## Sprint atual
+## Fase atual
 
-`RP-001 — Estado da Arte` — fase metodológica encerrada; execução sistemática iniciada.
+`M2 — Validation & Refinement`.
+
+## Objetivo principal
+
+Validar e refinar a MS-001 por meio de fontes rastreáveis, evidências contrárias, casos e critérios de utilidade arquitetural.
 
 ## Ponto exato de retomada
 
-Iniciar a análise da quarta disciplina do Estado da Arte: **Ecologia**.
-
-Aplicar integralmente o template vigente:
-
-1. justificativa da inclusão;
-2. objeto de estudo;
-3. principais escolas e autores;
-4. modelos explicativos;
-5. unidade de análise;
-6. conceitos centrais;
-7. possíveis invariantes;
-8. limites da disciplina;
-9. convergências com Systems Thinking, Complex Adaptive Systems e Network Science;
-10. avaliação metodológica segundo o RP-001.
-
-Após Ecologia, seguir com Organizational Theory, Service-Dominant Logic, Knowledge Management e Institutional Economics. A primeira meta-síntese oficial ocorrerá somente após a conclusão desse núcleo.
+1. iniciar o Evidence Registry com fontes qualificadas para os oito blocos disciplinares;
+2. associar evidências e contraevidências aos MECs da MS-001;
+3. revisar sobreposições, definições e limites dos mecanismos;
+4. construir o EPC apenas após suporte suficiente;
+5. produzir Architectural Recommendations;
+6. derivar o COR posteriormente na Business Architecture.
 
 ## Última consolidação
 
-Congelamento metodológico do RP-001, transição formal da construção do método para sua execução e registro da Ecologia como ponto exato de retomada, concluídos em 29/06/2026.
+Criação do Baseline M1, publicação da MS-001 em `draft`, adoção do ADR-005 e transição formal para a Fase M2, concluídas em 30/06/2026.
