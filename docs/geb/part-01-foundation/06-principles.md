@@ -2,9 +2,9 @@
 id: GEB-P01-F06
 title: Princípios Permanentes
 status: approved-draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
-last_updated: 2026-06-27
+last_updated: 2026-06-30
 dependencies:
   - 05-constitution.md
 related_adrs:
@@ -52,3 +52,19 @@ A arquitetura deve conter apenas os conceitos indispensáveis.
 ## PP-10 — Escalabilidade global
 
 Toda decisão permanente deve ser válida para operação global, independentemente de idioma, país, cultura ou tecnologia.
+
+## PP-11 — Maturidade institucional
+
+O conteúdo canônico da Guivos deve representar a organização em seu estado de maturidade e capacidade máxima, não apenas no estágio atual de implementação.
+
+## PP-12 — Visão antes da execução
+
+A implementação deve aproximar progressivamente a realidade da visão institucional. Restrições temporárias de tecnologia, equipe, orçamento ou prazo não redefinem automaticamente a visão.
+
+## PP-13 — Realização progressiva
+
+A Guivos é concebida integralmente em sua capacidade máxima e realizada progressivamente por arquiteturas de referência, programas e entregas.
+
+## PP-14 — Permanência proporcional à mudança
+
+Quanto mais permanente for um ativo institucional, menor deve ser sua velocidade de mudança e maior deve ser o rigor aplicado à sua revisão.
