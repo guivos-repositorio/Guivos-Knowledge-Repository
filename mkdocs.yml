@@ -62,6 +62,7 @@ nav:
       - RP-001 — Ecosystem Research Program:
           - Visão Geral: research/RP-001/index.md
           - Research Protocol: research/RP-001/protocol.md
+          - Meta-Síntese MS-001: research/RP-001/MS-001.md
           - Evidence Registry: research/RP-001/evidence-registry.md
           - Ecosystem Phenomena Catalog: research/RP-001/ecosystem-phenomena-catalog.md
           - Architectural Recommendations: research/RP-001/recommendations.md
@@ -106,7 +107,9 @@ nav:
       - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
       - ADR-003 — Architectural Ownership: adr/ADR-003-architectural-ownership.md
       - ADR-004 — Architectural Dependency Order: adr/ADR-004-architectural-dependency-order.md
+      - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
   - Projeto:
+      - Baseline M1: project/BASELINE-M1.md
       - Knowledge Board: project/knowledge-board.md
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
