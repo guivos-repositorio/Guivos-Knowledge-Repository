@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 2.0.0
+version: 2.1.0
 owner: Guivos
 last_updated: 2026-06-30
 ---
@@ -13,6 +13,10 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 ## Baseline vigente
 
 `M1 — Research Foundation Complete` — estado `frozen`.
+
+## Checkpoint ativo
+
+`M2.0 — Architectural Evolution Hypothesis` — estado `experimental`.
 
 ## Fase M1 — Fundamentos concluídos
 
@@ -94,15 +98,34 @@ A ordem segue dependências arquiteturais, conforme o ADR-004.
 
 ## Fase M2 — Validation & Refinement
 
-Objetivo: confrontar a síntese conceitual do M1 com fontes rastreáveis, contraevidências, casos e resultados observáveis antes de qualquer promoção à Canon.
+Objetivo: confrontar hipóteses e sínteses com aplicação, fontes rastreáveis, contraevidências, casos e resultados observáveis antes de qualquer promoção à Canon.
+
+### M2.0 — Architectural Evolution Hypothesis
+
+Objetivo: avaliar se um metamodelo institucional explícito melhora a concepção de domínios sem criar sobreposição ou complexidade desnecessária.
+
+- [x] Registrar o Checkpoint M2.0.
+- [x] Classificar o `Guivos Meta-Model — GMM` como `Hypothesis`.
+- [x] Classificar o `Guivos Knowledge System — GKS` como domínio piloto proposto.
+- [x] Definir o ciclo `Idea -> Hypothesis -> Experimental -> Validated -> Canonical -> Deprecated`.
+- [x] Definir critérios de sucesso, falha e revisão.
+- [ ] Definir o problema institucional que o GKS pretende resolver.
+- [ ] Delimitar escopo, fronteiras e ownership do GKS.
+- [ ] Mapear sobreposições com Research, Governance, Knowledge Architecture e GKR.
+- [ ] Propor a estrutura mínima do GKS.
+- [ ] Aplicar experimentalmente o GMM à concepção do GKS.
+- [ ] Avaliar a aplicação usando os critérios do Checkpoint M2.0.
+- [ ] Decidir: validar, revisar, reduzir, integrar ou rejeitar o GMM.
 
 ```mermaid
 graph LR
-    ER[Evidence Registry] --> MS[MS-001 Refinement]
-    MS --> VM[Validated Mechanisms]
-    VM --> EPC[Ecosystem Phenomena Catalog]
-    EPC --> AR[Architectural Recommendations]
-    AR --> COR[Candidate Outcome Register]
+    H[GMM — Hypothesis] --> P[GKS — Pilot]
+    P --> O[Observation]
+    O --> E[Evaluation]
+    E --> D{Decision}
+    D --> V[Validated]
+    D --> R[Revise]
+    D --> X[Reject]
 ```
 
 ### M2.1 — Validação do RP-001
@@ -161,6 +184,7 @@ graph LR
 - [x] Iniciar Governance Framework do GKR com Outcome Governance Method.
 - [x] Adotar o Architectural Traceability Principle.
 - [x] Criar o Baseline M1.
+- [x] Criar o Checkpoint M2.0.
 - [ ] Consolidar governança de ADRs e AVs.
 - [ ] Consolidar padrões do GKR.
 - [ ] Consolidar versionamento arquitetural.
@@ -169,9 +193,10 @@ graph LR
 
 ## Validação arquitetural ativa
 
-`AV-001 — GEA Structure Validation`.
+- `AV-001 — GEA Structure Validation`.
+- `Checkpoint M2.0 — Architectural Evolution Hypothesis`.
 
-Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificativa suficiente para criar uma camada anterior aos Outcomes.
+O AV-001 ainda não identificou justificativa suficiente para criar uma camada anterior aos Outcomes. O Checkpoint M2.0 também não altera a macroestrutura da GEA.
 
 ## Hipóteses preservadas fora da Canon
 
@@ -190,8 +215,12 @@ Resultado provisório: nenhuma lacuna estrutural comprovada e nenhuma justificat
 - Expected Behaviors;
 - Roadmap Epistemológico;
 - pipeline de maturidade do conhecimento;
-- catálogo definitivo de invariantes.
+- catálogo definitivo de invariantes;
+- Guivos Meta-Model — GMM;
+- Guivos Knowledge System — GKS;
+- Knowledge Validation Framework — GKVF;
+- Knowledge Validation Standards — KVS.
 
 ## Próxima Sprint
 
-Iniciar o **Evidence Registry** e validar os Mecanismos Explicativos Candidatos da MS-001 com fontes rastreáveis, contraevidências e limites explícitos.
+Definir o problema institucional, o escopo mínimo e as fronteiras do **Guivos Knowledge System — GKS**, utilizando os critérios do Checkpoint M2.0 e sem criar ainda um domínio canônico.
