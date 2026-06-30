@@ -2,6 +2,22 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.14.0 — Maturity Architecture and Permanence Layers
+
+- Criação do `GEA-PLM-001 — Permanence Layer Model` em estado `validated`.
+- Formalização das camadas `Permanent Architecture`, `Reference Architecture`, `Enterprise Programs` e `Enterprise Delivery`.
+- Definição do GKR como representação canônica da Guivos em seu estado de maturidade e capacidade máxima.
+- Formalização dos princípios `Institutional Permanence`, `Vision First`, `Architectural Gravity`, `Progressive Realization`, `Downward Influence` e `Layer Integrity`.
+- Atualização da GEA para a versão `1.3.0`, com dois eixos de classificação: domínio arquitetural e camada de permanência.
+- Atualização dos Princípios Permanentes da Foundation para a versão `0.2.0`, incluindo maturidade institucional, visão antes da execução, realização progressiva e permanência proporcional à mudança.
+- Atualização do README para refletir a Arquitetura de Maturidade da Guivos.
+- Atualização do Knowledge Board para a versão `2.2.0`.
+- Atualização do Roadmap para a versão `2.2.0`.
+- Abertura da fase `M3 — Progressive Realization`.
+- Definição de `M3.1 — Reference Architecture` como próxima etapa.
+- Preservação de GMM, GKS, GKVF e KVS fora da Canon.
+- Nenhuma tecnologia específica foi promovida à Permanent Architecture.
+
 ## 0.13.0 — M2.0 Architectural Evolution Checkpoint
 
 - Criação do `Checkpoint M2.0 — Architectural Evolution Hypothesis` em estado `experimental`.
