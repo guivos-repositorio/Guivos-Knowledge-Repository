@@ -2,6 +2,19 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.11.1 — RP-001 Methodology Locked
+
+- Encerramento da fase de construção metodológica do RP-001.
+- Congelamento do método vigente para execução disciplinada do Estado da Arte.
+- Definição de que futuras alterações metodológicas somente ocorrerão diante de limitações concretas demonstradas pela aplicação prática.
+- Registro das análises preliminares de Systems Thinking, Complex Adaptive Systems e Network Science como base já percorrida.
+- Definição de Ecologia como quarta disciplina e ponto exato de retomada.
+- Registro do template obrigatório para as próximas análises disciplinares.
+- Preservação fora da Canon das hipóteses sobre Research Question Map, organização do conhecimento por perguntas, Knowledge Objects, Grafo de Conhecimento Arquitetural, Knowledge Twin e pipeline de maturidade do conhecimento.
+- Atualização do Knowledge Board para a versão `1.9.0`.
+- Atualização do Roadmap para a versão `1.8.0`.
+- Nenhum novo conceito foi promovido à Canon neste checkpoint.
+
 ## 0.11.0 — Research Protocol and State of the Art
 
 - Atualização do domínio `Research` para a versão `0.2.0`.
