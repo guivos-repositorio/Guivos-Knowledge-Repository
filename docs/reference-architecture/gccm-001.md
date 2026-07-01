@@ -2,9 +2,9 @@
 id: GCCM-001
 title: Guivos Core Capability Model
 status: discovery
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Enterprise Architecture
-last_updated: 2026-06-30
+last_updated: 2026-07-01
 layer: Reference Architecture
 milestone: A2 — Functional Architecture Discovery
 ---
@@ -15,7 +15,9 @@ milestone: A2 — Functional Architecture Discovery
 
 `Discovery`.
 
-Este documento inicia a descoberta do conjunto mínimo e suficiente de Core Capabilities da Guivos. Nenhuma Core Capability está canônica nesta versão.
+Este documento conduz a descoberta do conjunto mínimo e suficiente de Core Capabilities da Guivos. Nenhuma Core Capability está canônica nesta versão.
+
+A primeira extração de evidências foi concluída sobre `GEB-P01-F01 — Essência da Guivos`, versão `0.2.0`, estado `consolidated`.
 
 ## Propósito
 
@@ -87,13 +89,18 @@ Hipóteses, drafts e ativos experimentais podem gerar candidatas, mas não const
 
 Extrair, sem consolidar prematuramente:
 
+- afirmações institucionais;
 - verbos institucionais;
+- significados institucionais;
+- invariantes;
 - responsabilidades;
 - objetivos;
 - estados desejados;
 - decisões;
 - relações;
 - capacidades explícitas ou implícitas.
+
+A decomposição em afirmações atômicas é uma técnica operacional de análise, não uma nova camada canônica da arquitetura.
 
 ### Etapa 2 — Semantic Clustering
 
@@ -149,11 +156,89 @@ Para cada candidata, responder:
 5. possui decisões e responsabilidades próprias?
 6. sua existência reduz ou aumenta desnecessariamente a complexidade do modelo?
 
+## Evidence Extraction — Foundation / Essência
+
+### Fonte analisada
+
+| Campo | Valor |
+|---|---|
+| Fonte | `GEB-P01-F01 — Essência da Guivos` |
+| Versão | `0.2.0` |
+| Estado da fonte | `consolidated` |
+| Data da análise | 01/07/2026 |
+| Resultado | Primeira passagem concluída |
+
+### Resultado quantitativo
+
+| Artefato analítico | Quantidade |
+|---|---:|
+| Afirmações institucionais atômicas | 29 |
+| Grupos de significado institucional | 5 |
+| Invariantes provisórios | 6 |
+| Responsabilidades institucionais | 9 |
+| Agrupamentos de evidência observados | 6 |
+
+### Invariantes provisórios extraídos
+
+| ID | Invariante provisório | Base principal |
+|---|---|---|
+| INV-F01-01 | A Guivos existe para potencializar processos de evolução, não para ser um fim em si mesma. | Finalidade, evolução e redução da distância até o Próximo Passo |
+| INV-F01-02 | A autonomia do participante deve ser preservada. | Não impor caminhos, não definir sucesso e não decidir pelo participante |
+| INV-F01-03 | A Guivos amplia condições para transformação sem impô-la. | Oportunidades, experiências e preservação da decisão do participante |
+| INV-F01-04 | A atuação da Guivos deve considerar o contexto e o momento de vida do participante. | Momento Atual, Próximo Passo e relevância contextual |
+| INV-F01-05 | A Guivos fortalece o ecossistema sem substituir seus participantes. | Pessoas, Organizações, Coletivos e instituições |
+| INV-F01-06 | Decisões futuras devem demonstrar contribuição para a jornada de evolução. | Critério de aderência para funcionalidades, produtos, parcerias e tecnologias |
+
+Os invariantes permanecem provisórios até confirmação por outras fontes canônicas.
+
+### Responsabilidades institucionais extraídas
+
+| ID | Responsabilidade institucional | Origem principal |
+|---|---|---|
+| RESP-F01-01 | Manter a evolução da Guivos orientada à jornada de evolução dos participantes. | INV-F01-01 |
+| RESP-F01-02 | Preservar a autonomia do participante em recomendações, decisões, experiências e interações. | INV-F01-02 |
+| RESP-F01-03 | Ampliar condições para transformação sem impor caminhos, metas ou resultados. | INV-F01-03 |
+| RESP-F01-04 | Compreender o contexto atual do participante antes de apoiar próximos passos. | INV-F01-04 |
+| RESP-F01-05 | Identificar possibilidades relevantes para o momento de vida do participante. | INV-F01-04 |
+| RESP-F01-06 | Fortalecer conexões entre participantes sem substituí-los. | INV-F01-05 |
+| RESP-F01-07 | Preservar o papel ativo dos participantes no ecossistema. | INV-F01-05 |
+| RESP-F01-08 | Avaliar funcionalidades, produtos, parcerias e tecnologias pela contribuição à jornada. | INV-F01-06 |
+| RESP-F01-09 | Reavaliar a aderência de elementos que não contribuam para a jornada do participante. | INV-F01-06 |
+
+### Agrupamentos de evidência observados
+
+| ID | Agrupamento provisório | Natureza | Estado |
+|---|---|---|---|
+| EV-F01-01 | Compreensão de contexto | Funcional | Observed |
+| EV-F01-02 | Identificação de possibilidades relevantes | Funcional | Observed |
+| EV-F01-03 | Conexão e fortalecimento do ecossistema | Funcional | Observed |
+| EV-F01-04 | Apoio à progressão da jornada | Funcional | Observed |
+| EV-F01-05 | Preservação da autonomia | Constitucional | Observed |
+| EV-F01-06 | Governança de aderência à jornada | Constitucional | Observed |
+
+Esses agrupamentos não são Core Capabilities. Eles poderão ser fortalecidos, fundidos, reclassificados ou rejeitados após análise de outras fontes.
+
+### Revisão crítica da primeira extração
+
+A análise demonstrou que:
+
+- a Foundation fornece identidade, limites, obrigações e critérios de decisão;
+- nem toda evidência arquitetural deve originar uma Core Capability;
+- evidências funcionais e restrições constitucionais devem permanecer distinguíveis;
+- agrupamentos analíticos não constituem, por si só, novas camadas arquiteturais;
+- a hipótese de `Institutional Functions` foi rejeitada como camada permanente por apenas reorganizar responsabilidades existentes;
+- nenhuma candidata pode ser promovida com base exclusiva nesta fonte.
+
 ## Estrutura de registro de evidências
 
 | ID | Fonte | Evidência extraída | Tipo | Agrupamento provisório | Observações |
 |---|---|---|---|---|---|
-| — | — | — | — | — | Inventário ainda não iniciado |
+| EV-F01-01 | GEB-P01-F01 | Compreender o Momento Atual e o contexto do participante | Funcional | Compreensão de contexto | Requer confirmação cruzada |
+| EV-F01-02 | GEB-P01-F01 | Identificar possibilidades relevantes ao momento de vida | Funcional | Identificação de possibilidades | Requer confirmação cruzada |
+| EV-F01-03 | GEB-P01-F01 | Fortalecer conexões entre participantes sem substituí-los | Funcional | Conexão do ecossistema | Requer confirmação cruzada |
+| EV-F01-04 | GEB-P01-F01 | Apoiar a redução da distância até o Próximo Passo | Funcional | Progressão da jornada | Requer confirmação cruzada |
+| EV-F01-05 | GEB-P01-F01 | Preservar autonomia, definição de sucesso e decisão do participante | Constitucional | Autonomia | Restrição arquitetural; não implica Capability isolada |
+| EV-F01-06 | GEB-P01-F01 | Avaliar aderência pela contribuição à jornada de evolução | Constitucional | Governança de aderência | Pode orientar todas as futuras capacidades |
 
 ## Registro de candidatas
 
@@ -214,4 +299,4 @@ A fase de descoberta estará concluída quando:
 
 ## Próximo passo
 
-Iniciar o inventário de evidências pela Foundation, pelo Modelo Fundamental do GEB, pela Product Architecture e pela Business Architecture, sem nomear antecipadamente o catálogo final.
+Analisar a próxima unidade da Foundation Architecture e verificar se ela confirma, enfraquece, amplia ou contradiz os seis agrupamentos observados em `GEB-P01-F01`, sem formular Core Capabilities antes da convergência entre múltiplas fontes.
