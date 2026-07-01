@@ -2,7 +2,7 @@
 id: GCCM-001
 title: Guivos Core Capability Model
 status: discovery
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Enterprise Architecture
 last_updated: 2026-07-01
 layer: Reference Architecture
@@ -17,7 +17,15 @@ milestone: A2 — Functional Architecture Discovery
 
 Este documento conduz a descoberta do conjunto mínimo e suficiente de Core Capabilities da Guivos. Nenhuma Core Capability está canônica nesta versão.
 
-A primeira extração de evidências foi concluída sobre `GEB-P01-F01 — Essência da Guivos`, versão `0.2.0`, estado `consolidated`.
+A Evidence Extraction foi concluída para cinco das seis unidades da Foundation:
+
+- `GEB-P01-F01 — Essência da Guivos`;
+- `GEB-P01-F02 — Propósito`;
+- `GEB-P01-F03 — Missão Operacional`;
+- `GEB-P01-F04 — Visão de Longo Prazo`;
+- `GEB-P01-F05 — Constituição da Guivos`.
+
+`GEB-P01-F06 — Princípios Permanentes` permanece pendente antes da revisão consolidada da Foundation.
 
 ## Propósito
 
@@ -68,6 +76,14 @@ Uma Core Capability não pode ser completamente explicada ou absorvida por outra
 
 O conjunto final deve cobrir integralmente o propósito, a missão operacional, o modelo fundamental, a geração de valor e a operação madura da Guivos.
 
+### Evidence recurrence
+
+Nenhuma Core Capability pode ser promovida a partir de uma única unidade documental. Repetição, centralidade e consistência entre fontes devem preceder a formulação de candidatas.
+
+### Hypothesis separation
+
+Hipóteses podem orientar observação, mas não entram na Canon nem no catálogo de capacidades sem validação suficiente.
+
 ## Fontes de evidência
 
 A descoberta deverá utilizar, prioritariamente:
@@ -83,50 +99,72 @@ A descoberta deverá utilizar, prioritariamente:
 
 Hipóteses, drafts e ativos experimentais podem gerar candidatas, mas não constituem evidência suficiente para promoção isolada.
 
-## Método de descoberta
+## Método de descoberta estabilizado
+
+O método permanece congelado durante a execução da Foundation. Alterações metodológicas somente devem ocorrer diante de limitação concreta, inconsistência comprovada ou melhoria demonstrada pela aplicação.
 
 ### Etapa 1 — Evidence Extraction
 
 Extrair, sem consolidar prematuramente:
 
-- afirmações institucionais;
-- verbos institucionais;
+- afirmações institucionais atômicas;
 - significados institucionais;
 - invariantes;
 - responsabilidades;
-- objetivos;
-- estados desejados;
-- decisões;
-- relações;
+- objetivos e estados desejados;
+- decisões e relações;
 - capacidades explícitas ou implícitas.
 
-A decomposição em afirmações atômicas é uma técnica operacional de análise, não uma nova camada canônica da arquitetura.
+A decomposição em afirmações atômicas é técnica operacional de análise, não uma nova camada canônica.
 
-### Etapa 2 — Semantic Clustering
+### Etapa 2 — Evidence Convergence
+
+Comparar evidências entre fontes segundo:
+
+- frequência;
+- centralidade;
+- consistência;
+- confirmação, ampliação, ausência ou contradição;
+- natureza funcional, constitucional, estrutural ou informacional.
+
+Agrupamentos de evidência são instrumentos analíticos. Não constituem Core Capabilities.
+
+### Etapa 3 — Confidence Assessment
+
+Ao concluir cada fonte, avaliar:
+
+- consistência;
+- originalidade;
+- relevância arquitetural;
+- impacto na convergência.
+
+A avaliação controla a qualidade da descoberta e não integra a Canon da Foundation.
+
+### Etapa 4 — Semantic Clustering
 
 Agrupar evidências equivalentes ou fortemente relacionadas, mantendo referências às fontes originais.
 
-### Etapa 3 — Candidate Formulation
+### Etapa 5 — Candidate Formulation
 
-Converter agrupamentos suficientemente distintos em candidatas provisórias.
+Converter apenas agrupamentos suficientemente distintos e recorrentes em candidatas provisórias.
 
-### Etapa 4 — Admission Tests
+### Etapa 6 — Admission Tests
 
-Submeter cada candidata aos testes de permanência, propósito, fronteira, composição, independência e autonomia evolutiva.
+Submeter cada candidata aos testes de permanência, propósito, fronteira, composição, independência, reutilização e autonomia evolutiva.
 
-### Etapa 5 — Destruction and Irreducibility Tests
+### Etapa 7 — Destruction and Irreducibility Tests
 
 Tentar eliminar, fundir, reduzir ou reclassificar cada candidata.
 
-### Etapa 6 — Mission Coverage
+### Etapa 8 — Mission Coverage
 
 Avaliar se o conjunto remanescente cobre integralmente a Guivos sem redundâncias relevantes.
 
-### Etapa 7 — Architectural Validation
+### Etapa 9 — Architectural Validation
 
 Registrar divergências, lacunas, sobreposições e justificativas antes de qualquer promoção.
 
-### Etapa 8 — Canonical Catalog
+### Etapa 10 — Canonical Catalog
 
 Promover somente capacidades suficientemente demonstradas, mediante a governança arquitetural aplicável.
 
@@ -156,89 +194,77 @@ Para cada candidata, responder:
 5. possui decisões e responsabilidades próprias?
 6. sua existência reduz ou aumenta desnecessariamente a complexidade do modelo?
 
-## Evidence Extraction — Foundation / Essência
+## Foundation Evidence Progress — 5/6
 
-### Fonte analisada
+| Fonte | Assertions | Meanings | Invariants | Responsibilities | Estado |
+|---|---:|---:|---:|---:|---|
+| F01 — Essência | 29 | 5 | 6 | 9 | Concluída |
+| F02 — Propósito | 25 | 5 | 7 | 7 | Concluída |
+| F03 — Missão Operacional | 19 | 5 | 5 | 6 | Concluída |
+| F04 — Visão de Longo Prazo | 31 | 6 | 8 | 8 | Concluída |
+| F05 — Constituição | 30 | 8 | 10 | 10 | Concluída |
+| F06 — Princípios Permanentes | — | — | — | — | Pendente |
 
-| Campo | Valor |
-|---|---|
-| Fonte | `GEB-P01-F01 — Essência da Guivos` |
-| Versão | `0.2.0` |
-| Estado da fonte | `consolidated` |
-| Data da análise | 01/07/2026 |
-| Resultado | Primeira passagem concluída |
+Totais provisórios antes da deduplicação e da revisão da Foundation:
 
-### Resultado quantitativo
+- 134 afirmações institucionais atômicas;
+- 29 grupos de significado;
+- 36 invariantes provisórios;
+- 40 responsabilidades institucionais.
 
-| Artefato analítico | Quantidade |
-|---|---:|
-| Afirmações institucionais atômicas | 29 |
-| Grupos de significado institucional | 5 |
-| Invariantes provisórios | 6 |
-| Responsabilidades institucionais | 9 |
-| Agrupamentos de evidência observados | 6 |
+## Convergência provisória da Foundation
 
-### Invariantes provisórios extraídos
+### Agrupamentos recorrentes
 
-| ID | Invariante provisório | Base principal |
-|---|---|---|
-| INV-F01-01 | A Guivos existe para potencializar processos de evolução, não para ser um fim em si mesma. | Finalidade, evolução e redução da distância até o Próximo Passo |
-| INV-F01-02 | A autonomia do participante deve ser preservada. | Não impor caminhos, não definir sucesso e não decidir pelo participante |
-| INV-F01-03 | A Guivos amplia condições para transformação sem impô-la. | Oportunidades, experiências e preservação da decisão do participante |
-| INV-F01-04 | A atuação da Guivos deve considerar o contexto e o momento de vida do participante. | Momento Atual, Próximo Passo e relevância contextual |
-| INV-F01-05 | A Guivos fortalece o ecossistema sem substituir seus participantes. | Pessoas, Organizações, Coletivos e instituições |
-| INV-F01-06 | Decisões futuras devem demonstrar contribuição para a jornada de evolução. | Critério de aderência para funcionalidades, produtos, parcerias e tecnologias |
+1. Compreensão de contexto.
+2. Identificação de possibilidades relevantes.
+3. Conexão e fortalecimento do ecossistema.
+4. Apoio à progressão da jornada.
+5. Preservação da autonomia.
+6. Governança de aderência à jornada.
+7. Universalidade e inclusão contextual.
+8. Tecnologia subordinada ao propósito.
+9. Ecossistema irredutível a produtos.
+10. Coerência arquitetural sob variação.
 
-Os invariantes permanecem provisórios até confirmação por outras fontes canônicas.
+### Agrupamentos adicionais observados
 
-### Responsabilidades institucionais extraídas
+- espiritualidade não coercitiva;
+- tradução do propósito em execução diária;
+- orientação de IA e experiência pela missão;
+- escalabilidade e internacionalização;
+- extensibilidade para oportunidades futuras;
+- conhecimento como patrimônio permanente;
+- IA como intérprete, não substituta do conhecimento;
+- simplicidade e suficiência arquitetural;
+- oportunidade como meio subordinado à evolução.
 
-| ID | Responsabilidade institucional | Origem principal |
-|---|---|---|
-| RESP-F01-01 | Manter a evolução da Guivos orientada à jornada de evolução dos participantes. | INV-F01-01 |
-| RESP-F01-02 | Preservar a autonomia do participante em recomendações, decisões, experiências e interações. | INV-F01-02 |
-| RESP-F01-03 | Ampliar condições para transformação sem impor caminhos, metas ou resultados. | INV-F01-03 |
-| RESP-F01-04 | Compreender o contexto atual do participante antes de apoiar próximos passos. | INV-F01-04 |
-| RESP-F01-05 | Identificar possibilidades relevantes para o momento de vida do participante. | INV-F01-04 |
-| RESP-F01-06 | Fortalecer conexões entre participantes sem substituí-los. | INV-F01-05 |
-| RESP-F01-07 | Preservar o papel ativo dos participantes no ecossistema. | INV-F01-05 |
-| RESP-F01-08 | Avaliar funcionalidades, produtos, parcerias e tecnologias pela contribuição à jornada. | INV-F01-06 |
-| RESP-F01-09 | Reavaliar a aderência de elementos que não contribuam para a jornada do participante. | INV-F01-06 |
+Esses agrupamentos ainda poderão ser fundidos, reclassificados, enfraquecidos ou rejeitados na revisão consolidada.
 
-### Agrupamentos de evidência observados
+## Descobertas institucionais consolidadas até F05
 
-| ID | Agrupamento provisório | Natureza | Estado |
-|---|---|---|---|
-| EV-F01-01 | Compreensão de contexto | Funcional | Observed |
-| EV-F01-02 | Identificação de possibilidades relevantes | Funcional | Observed |
-| EV-F01-03 | Conexão e fortalecimento do ecossistema | Funcional | Observed |
-| EV-F01-04 | Apoio à progressão da jornada | Funcional | Observed |
-| EV-F01-05 | Preservação da autonomia | Constitucional | Observed |
-| EV-F01-06 | Governança de aderência à jornada | Constitucional | Observed |
+As fontes analisadas sustentam as seguintes relações:
 
-Esses agrupamentos não são Core Capabilities. Eles poderão ser fortalecidos, fundidos, reclassificados ou rejeitados após análise de outras fontes.
+- evolução é finalidade;
+- oportunidade é meio;
+- tecnologia, IA, dados e automações são instrumentos;
+- o participante mantém a decisão;
+- conhecimento é patrimônio permanente;
+- a Guivos é ecossistema, não produto isolado;
+- a arquitetura central deve permanecer coerente enquanto implementações variam.
 
-### Revisão crítica da primeira extração
+Essas relações orientam a descoberta, mas não são automaticamente Core Capabilities.
 
-A análise demonstrou que:
+## Hipóteses preservadas fora da Canon
 
-- a Foundation fornece identidade, limites, obrigações e critérios de decisão;
-- nem toda evidência arquitetural deve originar uma Core Capability;
-- evidências funcionais e restrições constitucionais devem permanecer distinguíveis;
-- agrupamentos analíticos não constituem, por si só, novas camadas arquiteturais;
-- a hipótese de `Institutional Functions` foi rejeitada como camada permanente por apenas reorganizar responsabilidades existentes;
-- nenhuma candidata pode ser promovida com base exclusiva nesta fonte.
+Permanecem abertas e não promovidas:
 
-## Estrutura de registro de evidências
-
-| ID | Fonte | Evidência extraída | Tipo | Agrupamento provisório | Observações |
-|---|---|---|---|---|---|
-| EV-F01-01 | GEB-P01-F01 | Compreender o Momento Atual e o contexto do participante | Funcional | Compreensão de contexto | Requer confirmação cruzada |
-| EV-F01-02 | GEB-P01-F01 | Identificar possibilidades relevantes ao momento de vida | Funcional | Identificação de possibilidades | Requer confirmação cruzada |
-| EV-F01-03 | GEB-P01-F01 | Fortalecer conexões entre participantes sem substituí-los | Funcional | Conexão do ecossistema | Requer confirmação cruzada |
-| EV-F01-04 | GEB-P01-F01 | Apoiar a redução da distância até o Próximo Passo | Funcional | Progressão da jornada | Requer confirmação cruzada |
-| EV-F01-05 | GEB-P01-F01 | Preservar autonomia, definição de sucesso e decisão do participante | Constitucional | Autonomia | Restrição arquitetural; não implica Capability isolada |
-| EV-F01-06 | GEB-P01-F01 | Avaliar aderência pela contribuição à jornada de evolução | Constitucional | Governança de aderência | Pode orientar todas as futuras capacidades |
+- Permanent Responsibilities como camada formal;
+- ontologia institucional;
+- transições positivas de estado como objeto institucional;
+- Architectural Evidence Registry específico da A2;
+- ADM-001;
+- Architecture Reviews como padrão definitivo de toda a GEA.
 
 ## Registro de candidatas
 
@@ -275,7 +301,7 @@ Core Capability
           -> Implementation
 ```
 
-Essa hierarquia não autoriza a antecipação de decisões de implementação durante a descoberta das Core Capabilities.
+Essa hierarquia não autoriza antecipar decisões de implementação durante a descoberta.
 
 ## Governança
 
@@ -284,7 +310,9 @@ Essa hierarquia não autoriza a antecipação de decisões de implementação du
 - fusões, rejeições e promoções devem registrar justificativa;
 - novas Core Capabilities não podem ser criadas diretamente por arquiteturas de domínio;
 - arquiteturas de domínio reutilizam ou especializam o catálogo validado;
-- mudanças estruturais no modelo exigem análise de impacto e governança correspondente.
+- mudanças estruturais no modelo exigem análise de impacto e governança correspondente;
+- a Foundation produz evidências, não promoção automática de capacidades;
+- execução e evolução do método permanecem separadas.
 
 ## Critério de conclusão da versão de descoberta
 
@@ -297,6 +325,10 @@ A fase de descoberta estará concluída quando:
 5. sobreposições e lacunas estiverem explicitadas;
 6. houver base suficiente para uma validação arquitetural formal.
 
-## Próximo passo
+## Próximos passos
 
-Analisar a próxima unidade da Foundation Architecture e verificar se ela confirma, enfraquece, amplia ou contradiz os seis agrupamentos observados em `GEB-P01-F01`, sem formular Core Capabilities antes da convergência entre múltiplas fontes.
+1. analisar `GEB-P01-F06 — Princípios Permanentes`;
+2. concluir a `Foundation Evidence Matrix`;
+3. executar `A2-R01 — Foundation Architecture Review`;
+4. avançar para o Modelo Fundamental do GEB;
+5. manter o registro de candidatas vazio até convergência suficiente.
