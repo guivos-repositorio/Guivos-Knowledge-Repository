@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 2.3.0
+version: 2.4.0
 owner: Guivos
-last_updated: 2026-06-30
+last_updated: 2026-07-01
 ---
 
 # Roadmap Arquitetural
@@ -17,6 +17,7 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - **Modelo institucional vigente:** `GEA-PLM-001 — Permanence Layer Model` — `validated`.
 - **Marco concluído:** `A1 — Institutional Architecture Complete`.
 - **Fase ativa:** `A2 — Functional Architecture Discovery`.
+- **Situação operacional:** pausa registrada no checkpoint de 01/07/2026.
 - **Entregável ativo:** `GCCM-001 — Guivos Core Capability Model` — `discovery`.
 
 Consulte [Architectural Milestones](project/architectural-milestones.md).
@@ -81,7 +82,7 @@ Esses itens devem evoluir sem reabrir automaticamente a macroestrutura instituci
 
 ## A2 — Functional Architecture Discovery
 
-**Estado:** Active.
+**Estado:** Active — Paused at checkpoint.
 
 ### Objetivo
 
@@ -99,6 +100,7 @@ Descobrir o conjunto mínimo e suficiente de Core Capabilities permanentes que e
 - [x] Definir Core Capability Admission Rule.
 - [x] Definir testes de destruição, irredutibilidade e cobertura da missão.
 - [x] Registrar que nenhuma Core Capability está canônica na versão inicial.
+- [x] Registrar o checkpoint de pausa e o ponto exato de retomada.
 
 ### A2.2 — Evidence Extraction
 
@@ -180,6 +182,36 @@ Critério preliminar:
 
 Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais, com rastreabilidade suficiente para orientar programas e implementações.
 
+## Open Architecture Topics
+
+Temas estratégicos reconhecidos, mas deliberadamente não iniciados antes da maturidade de suas dependências.
+
+| Tema | Estado | Dependências principais | Localização provável |
+|---|---|---|---|
+| Enterprise Economic Model | Planned / Deferred | GCCM, Business Outcomes e Core Business Capabilities | Business Architecture |
+| Global Governance Model | Planned | Governance Architecture e expansão global | Governance Architecture |
+| Organizational Model | Planned | Business Outcomes, Capabilities e Value Chains | Business Architecture |
+| Operating Model | Planned | Organizational Model e PRA | Business Architecture |
+| AI Governance | Planned | AI Reference Architecture, Data Governance e Security | Governance / Data & Intelligence |
+| Knowledge Graph Logical Model | Planned | GCCM, PRA e Data & Intelligence Architecture | Data & Intelligence Architecture |
+| Enterprise Metrics Framework | Planned | Outcomes, Economic Model e Operating Model | Business / Governance |
+
+### Enterprise Economic Model
+
+O modelo econômico deverá explicar, em nível institucional e arquitetural:
+
+- geração de valor;
+- captura de valor;
+- distribuição e compartilhamento de valor;
+- reinvestimento;
+- incentivos de participantes, parceiros, organizações, criadores e coletivos;
+- sustentabilidade econômica;
+- monetização;
+- efeitos de rede;
+- equilíbrio entre impacto no ecossistema e sustentabilidade empresarial.
+
+O tema está registrado como pendência da Business Architecture. Sua forma definitiva — modelo, conjunto de documentos ou unidade arquitetural — será decidida somente após a maturidade mínima do GCCM, dos Business Outcomes e das Core Business Capabilities.
+
 ## Pesquisa e validação paralelas
 
 As atividades abaixo permanecem válidas e podem ser retomadas quando necessárias às decisões da A2 e A3:
@@ -214,6 +246,6 @@ As atividades abaixo permanecem válidas e podem ser retomadas quando necessári
 - Knowledge Validation Framework — GKVF;
 - Knowledge Validation Standards — KVS.
 
-## Próxima sprint
+## Ponto exato de retomada
 
-Executar **A2.2 — Evidence Extraction**, iniciando pela Foundation, pelo Modelo Fundamental do GEB, pela Product Architecture e pela Business Architecture, sem nomear antecipadamente o catálogo final de Core Capabilities.
+Retomar a A2.2 com a análise exclusiva de `Foundation — Essência da Guivos`, registrando evidências sem promover Core Capabilities nem expandir a macroestrutura do GKR.
