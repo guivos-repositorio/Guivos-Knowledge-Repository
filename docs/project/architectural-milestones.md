@@ -1,9 +1,9 @@
 ---
 title: Architectural Milestones
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-30
+last_updated: 2026-07-01
 ---
 
 # Architectural Milestones
@@ -16,7 +16,7 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 |---|---|---|
 | A0 — GKR Foundation | Completed | Estabelecer o repositório, a documentação oficial e a infraestrutura de publicação |
 | A1 — Institutional Architecture Complete | Completed | Consolidar identidade, macroestrutura, permanência, princípios e governança arquitetural |
-| A2 — Functional Architecture Discovery | Active | Descobrir e validar as Core Capabilities permanentes da Guivos |
+| A2 — Functional Architecture Discovery | Active — Paused at checkpoint | Descobrir e validar as Core Capabilities permanentes da Guivos |
 | A3 — Operational Architecture | Planned | Descrever como as Core Capabilities cooperam na Plataforma Guivos |
 | A4 — Platform Engineering | Planned | Materializar progressivamente as arquiteturas de referência |
 | A5 — Canon 1.0 | Planned | Consolidar a primeira versão canônica integrada da arquitetura funcional e operacional |
@@ -60,7 +60,7 @@ A conclusão de A1 não significa imutabilidade. Mudanças estruturais futuras e
 
 ## A2 — Functional Architecture Discovery
 
-**Estado:** Active.
+**Estado:** Active — Paused at checkpoint.
 
 ### Objetivo
 
@@ -86,6 +86,19 @@ Descobrir o conjunto mínimo e suficiente de capacidades institucionais permanen
 - não confundir produtos, funcionalidades, serviços ou tecnologias com Core Capabilities;
 - buscar o menor conjunto suficiente;
 - manter rastreabilidade entre evidência, candidata, decisão e catálogo.
+
+### Checkpoint de pausa — 01/07/2026
+
+A preparação da A2 está concluída e o GCCM-001 permanece em estado `discovery`, sem Core Capabilities canônicas.
+
+Ponto exato de retomada:
+
+1. abrir `Foundation — Essência da Guivos`;
+2. analisar somente esse documento;
+3. extrair afirmações, responsabilidades e capacidades potenciais com rastreabilidade;
+4. não consolidar candidatas antes da validação cruzada.
+
+A pausa não altera o estado do marco A2, não promove hipóteses e não modifica o baseline.
 
 ## A3 — Operational Architecture
 
@@ -113,6 +126,27 @@ Transformar arquiteturas de referência em Enterprise Programs e Enterprise Deli
 Critério preliminar:
 
 Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais, com rastreabilidade suficiente para orientar programas de implementação.
+
+## Pendência econômica estratégica
+
+O `Enterprise Economic Model` foi registrado como pendência estratégica da Business Architecture.
+
+Escopo preliminar:
+
+- geração de valor;
+- captura de valor;
+- distribuição e compartilhamento de valor;
+- reinvestimento;
+- incentivos do ecossistema;
+- sustentabilidade econômica;
+- monetização;
+- efeitos de rede e mecanismos econômicos.
+
+**Estado:** Planned / Deferred.
+
+**Dependências:** maturidade mínima do GCCM, dos Business Outcomes e das Core Business Capabilities.
+
+O registro da pendência não cria uma nova arquitetura e não define antecipadamente sua forma documental definitiva.
 
 ## Regra de transição
 
