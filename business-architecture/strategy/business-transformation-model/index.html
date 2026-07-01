@@ -1,0 +1,1741 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
+<meta content="Guivos" name="author"/>
+<link href="../../foundations/" rel="prev"/>
+<link href="../business-outcomes/" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>Business Transformation Model - Guivos Knowledge Repository</title>
+<link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../css/print-site.css" rel="stylesheet"/>
+<link href="../../../css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#ba-str-001-business-transformation-model">
+          Pular para conteúdo
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guivos Knowledge Repository" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Business Transformation Model
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guivos Knowledge Repository" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    Guivos Knowledge Repository
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/RP-001/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/RP-001/protocol/">
+<span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/RP-001/MS-001/">
+<span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/RP-001/evidence-registry/">
+<span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/RP-001/ecosystem-phenomena-catalog/">
+<span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../research/RP-001/recommendations/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../enterprise-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../enterprise-architecture/permanence-layer-model/">
+<span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Reference Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../reference-architecture/gccm-001/">
+<span class="md-ellipsis">
+    
+  
+    GCCM-001 — Core Capability Model
+  
+
+    
+  </span>
+<span class="md-status md-status--discovery"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../glossary/">
+<span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    GEB
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Parte I — Fundação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte I — Fundação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/01-essence/">
+<span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/02-purpose/">
+<span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/03-mission/">
+<span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/04-vision/">
+<span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/05-constitution/">
+<span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/06-principles/">
+<span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Parte II — Modelo Fundamental
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte II — Modelo Fundamental
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/phenomenon/">
+<span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/fundamental-journey/">
+<span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/four-fundamental-natures/">
+<span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/journey/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/marketplace/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Marketplace
+  
+
+    
+  </span>
+<span class="md-status md-status--provisional-name"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/travel/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/business/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/media/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/intelligence/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/ads/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../foundations/">
+<span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivo">
+<span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definicao">
+<span class="md-ellipsis">
+      
+        Definição
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fronteira-entre-ecossistema-e-negocio">
+<span class="md-ellipsis">
+      
+        Fronteira entre ecossistema e negócio
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-canonico">
+<span class="md-ellipsis">
+      
+        Modelo canônico
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elementos-do-modelo">
+<span class="md-ellipsis">
+      
+        Elementos do modelo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dupla-geracao-de-valor">
+<span class="md-ellipsis">
+      
+        Dupla geração de valor
+      
+    </span>
+</a>
+<nav aria-label="Dupla geração de valor" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ecosystem-outcomes">
+<span class="md-ellipsis">
+      
+        Ecosystem Outcomes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#business-outcomes">
+<span class="md-ellipsis">
+      
+        Business Outcomes
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#principios-permanentes">
+<span class="md-ellipsis">
+      
+        Princípios permanentes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#papeis-funcionais-dos-produtos">
+<span class="md-ellipsis">
+      
+        Papéis funcionais dos produtos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relacoes-com-outras-arquiteturas">
+<span class="md-ellipsis">
+      
+        Relações com outras arquiteturas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dependencias-arquiteturais">
+<span class="md-ellipsis">
+      
+        Dependências arquiteturais
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-validacao">
+<span class="md-ellipsis">
+      
+        Critérios de validação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#decisoes-arquiteturais-tomadas">
+<span class="md-ellipsis">
+      
+        Decisões arquiteturais tomadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#evolucao-prevista">
+<span class="md-ellipsis">
+      
+        Evolução prevista
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../business-outcomes/">
+<span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Governance Framework do GKR
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance Framework do GKR
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../governance-framework/outcome-governance-method/">
+<span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../validation/AV-001-gea-structure-validation/">
+<span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-001-gkr-as-source-of-truth/">
+<span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-002-foundation-principles/">
+<span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-003-architectural-ownership/">
+<span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-004-architectural-dependency-order/">
+<span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-005-architectural-traceability-principle/">
+<span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/architectural-milestones/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/BASELINE-M1/">
+<span class="md-ellipsis">
+    
+  
+    Baseline M1
+  
+
+    
+  </span>
+<span class="md-status md-status--frozen"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/CHECKPOINT-M2.0/">
+<span class="md-ellipsis">
+    
+  
+    Checkpoint M2.0
+  
+
+    
+  </span>
+<span class="md-status md-status--experimental"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/knowledge-board/">
+<span class="md-ellipsis">
+    
+  
+    Knowledge Board
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/canonical-consolidation-matrix/">
+<span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/site-pipeline/">
+<span class="md-ellipsis">
+    
+  
+    Pipeline de Publicação
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../roadmap/">
+<span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../print_page/">
+<span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivo">
+<span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definicao">
+<span class="md-ellipsis">
+      
+        Definição
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fronteira-entre-ecossistema-e-negocio">
+<span class="md-ellipsis">
+      
+        Fronteira entre ecossistema e negócio
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modelo-canonico">
+<span class="md-ellipsis">
+      
+        Modelo canônico
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elementos-do-modelo">
+<span class="md-ellipsis">
+      
+        Elementos do modelo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dupla-geracao-de-valor">
+<span class="md-ellipsis">
+      
+        Dupla geração de valor
+      
+    </span>
+</a>
+<nav aria-label="Dupla geração de valor" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ecosystem-outcomes">
+<span class="md-ellipsis">
+      
+        Ecosystem Outcomes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#business-outcomes">
+<span class="md-ellipsis">
+      
+        Business Outcomes
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#principios-permanentes">
+<span class="md-ellipsis">
+      
+        Princípios permanentes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#papeis-funcionais-dos-produtos">
+<span class="md-ellipsis">
+      
+        Papéis funcionais dos produtos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relacoes-com-outras-arquiteturas">
+<span class="md-ellipsis">
+      
+        Relações com outras arquiteturas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dependencias-arquiteturais">
+<span class="md-ellipsis">
+      
+        Dependências arquiteturais
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-validacao">
+<span class="md-ellipsis">
+      
+        Critérios de validação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#decisoes-arquiteturais-tomadas">
+<span class="md-ellipsis">
+      
+        Decisões arquiteturais tomadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#evolucao-prevista">
+<span class="md-ellipsis">
+      
+        Evolução prevista
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/business-architecture/strategy/business-transformation-model.md" rel="edit" title="Editar esta página">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<h1 id="ba-str-001-business-transformation-model">BA-STR-001 — Business Transformation Model<a class="headerlink" href="#ba-str-001-business-transformation-model" title="Permanent link">¶</a></h1>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">¶</a></h2>
+<p>Definir o modelo canônico que explica como o negócio da Guivos transforma necessidades do ecossistema em valor sustentável.</p>
+<h2 id="definicao">Definição<a class="headerlink" href="#definicao" title="Permanent link">¶</a></h2>
+<p>O Business Transformation Model representa o ciclo contínuo pelo qual a Guivos identifica necessidades originadas no ecossistema, prioriza respostas, mobiliza capacidades, viabiliza produtos, serviços e experiências, produz resultados, gera e captura valor e reinveste parte desse valor no fortalecimento do próprio ecossistema.</p>
+<p>O modelo descreve a lógica permanente do negócio. Ele não descreve produtos específicos, processos, departamentos ou tecnologias.</p>
+<h2 id="fronteira-entre-ecossistema-e-negocio">Fronteira entre ecossistema e negócio<a class="headerlink" href="#fronteira-entre-ecossistema-e-negocio" title="Permanent link">¶</a></h2>
+<p>A Ecosystem Architecture é responsável por explicar participantes, contextos, necessidades, jornadas, oportunidades, experiências e evolução.</p>
+<p>A Business Architecture começa quando a Guivos decide responder a uma necessidade do ecossistema por meio de capacidades organizadas e sustentáveis.</p>
+<pre class="mermaid"><code>graph LR
+    P[Participante] --&gt; C[Contexto]
+    C --&gt; N[Necessidade]
+    N --&gt; BA[Business Architecture]
+    BA --&gt; R[Resposta estruturada]
+</code></pre>
+<p>A necessidade funciona como interface entre a Ecosystem Architecture e a Business Architecture.</p>
+<h2 id="modelo-canonico">Modelo canônico<a class="headerlink" href="#modelo-canonico" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>graph TD
+    C[Contexto]
+    N[Necessidades do Ecossistema]
+    PE[Priorização Estratégica]
+    CB[Capacidades de Negócio]
+    PS[Produtos e Serviços]
+    EX[Experiências]
+    EO[Ecosystem Outcomes]
+    BO[Business Outcomes]
+    VG[Valor Gerado]
+    VC[Valor Capturado]
+    RI[Reinvestimento]
+    EF[Ecossistema Fortalecido]
+    NC[Novo Contexto]
+
+    C --&gt; N
+    N --&gt; PE
+    PE --&gt; CB
+    CB --&gt; PS
+    PS --&gt; EX
+    EX --&gt; EO
+    EO --&gt; BO
+    BO --&gt; VG
+    VG --&gt; VC
+    VC --&gt; RI
+    RI --&gt; EF
+    EF --&gt; NC
+    NC --&gt; N
+</code></pre>
+<h2 id="elementos-do-modelo">Elementos do modelo<a class="headerlink" href="#elementos-do-modelo" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contexto</td>
+<td>Condições atuais de uma Pessoa, Organização ou Coletivo</td>
+</tr>
+<tr>
+<td>Necessidade</td>
+<td>Demanda, lacuna, intenção ou oportunidade relevante identificada no ecossistema</td>
+</tr>
+<tr>
+<td>Priorização Estratégica</td>
+<td>Decisão sobre quais necessidades a Guivos responderá, considerando propósito, impacto, recursos e sustentabilidade</td>
+</tr>
+<tr>
+<td>Capacidades de Negócio</td>
+<td>Aptidões permanentes necessárias para produzir resultados</td>
+</tr>
+<tr>
+<td>Produtos e Serviços</td>
+<td>Instrumentos que materializam combinações de capacidades</td>
+</tr>
+<tr>
+<td>Experiências</td>
+<td>Interações nas quais o participante percebe e realiza valor</td>
+</tr>
+<tr>
+<td>Ecosystem Outcomes</td>
+<td>Resultados de evolução produzidos para Pessoas, Organizações e Coletivos</td>
+</tr>
+<tr>
+<td>Business Outcomes</td>
+<td>Resultados necessários para sustentar e ampliar a capacidade da Guivos de produzir Ecosystem Outcomes</td>
+</tr>
+<tr>
+<td>Valor Gerado</td>
+<td>Benefícios efetivamente produzidos e percebidos no ecossistema</td>
+</tr>
+<tr>
+<td>Valor Capturado</td>
+<td>Parcela de valor apropriada legitimamente pela Guivos para sustentar sua operação e evolução</td>
+</tr>
+<tr>
+<td>Reinvestimento</td>
+<td>Aplicação de valor capturado em capacidades, produtos, conhecimento, tecnologia e fortalecimento do ecossistema</td>
+</tr>
+<tr>
+<td>Ecossistema Fortalecido</td>
+<td>Condição resultante de maior capacidade de conexão, oportunidade, experiência e evolução</td>
+</tr>
+<tr>
+<td>Novo Contexto</td>
+<td>Estado resultante que origina novas necessidades e reinicia o ciclo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dupla-geracao-de-valor">Dupla geração de valor<a class="headerlink" href="#dupla-geracao-de-valor" title="Permanent link">¶</a></h2>
+<p>A Guivos mede resultados em dois níveis complementares:</p>
+<h3 id="ecosystem-outcomes">Ecosystem Outcomes<a class="headerlink" href="#ecosystem-outcomes" title="Permanent link">¶</a></h3>
+<p>Representam a transformação gerada para Pessoas, Organizações e Coletivos.</p>
+<h3 id="business-outcomes">Business Outcomes<a class="headerlink" href="#business-outcomes" title="Permanent link">¶</a></h3>
+<p>Representam a capacidade da Guivos de sustentar e ampliar essa transformação.</p>
+<p>Regras:</p>
+<ol>
+<li>Todo Business Outcome deve contribuir direta ou indiretamente para pelo menos um Ecosystem Outcome.</li>
+<li>Todo Ecosystem Outcome deve possuir um ou mais Business Outcomes capazes de sustentar sua continuidade.</li>
+<li>Resultados financeiros são legítimos quando conectados à sustentabilidade do impacto gerado.</li>
+<li>Impacto sem sustentabilidade e sustentabilidade sem impacto são arquiteturalmente incompletos.</li>
+</ol>
+<h2 id="principios-permanentes">Princípios permanentes<a class="headerlink" href="#principios-permanentes" title="Permanent link">¶</a></h2>
+<ol>
+<li>O negócio responde ao ecossistema.</li>
+<li>Contexto e necessidade antecedem a resposta empresarial.</li>
+<li>Capacidades antecedem produtos, serviços e processos.</li>
+<li>Produtos e serviços são meios, não o centro do modelo.</li>
+<li>Experiências são o ponto de realização do valor para o participante.</li>
+<li>Outcomes antecedem a medição por indicadores.</li>
+<li>Valor gerado, valor capturado e reinvestimento devem permanecer equilibrados.</li>
+<li>Todo resultado produz um novo contexto; o modelo é cíclico.</li>
+<li>O modelo deve permanecer válido independentemente de produtos, países, organogramas e tecnologias.</li>
+<li>Nenhuma unidade dependente deve ser consolidada antes dos conceitos dos quais depende.</li>
+</ol>
+<h2 id="papeis-funcionais-dos-produtos">Papéis funcionais dos produtos<a class="headerlink" href="#papeis-funcionais-dos-produtos" title="Permanent link">¶</a></h2>
+<p>O modelo canônico não depende de produtos específicos. Entretanto, os produtos podem ser testados contra três papéis funcionais de trabalho:</p>
+<table>
+<thead>
+<tr>
+<th>Papel</th>
+<th>Função no modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Execução</td>
+<td>Materializa capacidades e viabiliza experiências</td>
+</tr>
+<tr>
+<td>Ativação</td>
+<td>Influencia contexto, percepção, descoberta e surgimento de necessidades</td>
+</tr>
+<tr>
+<td>Inteligência</td>
+<td>Observa, mede, aprende e otimiza o ciclo</td>
+</tr>
+</tbody>
+</table>
+<p>Essa classificação permanece como hipótese de trabalho da Product Architecture e não altera a estrutura canônica deste modelo.</p>
+<h2 id="relacoes-com-outras-arquiteturas">Relações com outras arquiteturas<a class="headerlink" href="#relacoes-com-outras-arquiteturas" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Arquitetura</th>
+<th>Relação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foundation Architecture</td>
+<td>Define propósito, princípios e limites institucionais</td>
+</tr>
+<tr>
+<td>Ecosystem Architecture</td>
+<td>Define participantes, contextos, necessidades, experiências e evolução</td>
+</tr>
+<tr>
+<td>Product Architecture</td>
+<td>Materializa capacidades em produtos e serviços</td>
+</tr>
+<tr>
+<td>Data &amp; Intelligence Architecture</td>
+<td>Mede outcomes, valor, padrões e aprendizado do ciclo</td>
+</tr>
+<tr>
+<td>Technology Architecture</td>
+<td>Implementa capacidades e operações</td>
+</tr>
+<tr>
+<td>Governance Architecture</td>
+<td>Controla decisões, riscos e evolução do modelo</td>
+</tr>
+<tr>
+<td>Knowledge Architecture</td>
+<td>Preserva conceitos, decisões, evidências e aprendizados</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dependencias-arquiteturais">Dependências arquiteturais<a class="headerlink" href="#dependencias-arquiteturais" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>graph LR
+    FND[BA-FND-001] --&gt; BTM[BA-STR-001]
+    BTM --&gt; OUT[BA-STR-002]
+    OUT --&gt; CAP1[BA-CAP-001]
+    CAP1 --&gt; CAP2[BA-CAP-002]
+    CAP2 --&gt; VC[BA-STR-003]
+    VC --&gt; ORG1[BA-ORG-001]
+    ORG1 --&gt; ORG2[BA-ORG-002]
+    ORG2 --&gt; EXE1[BA-EXE-001]
+    EXE1 --&gt; EXE2[BA-EXE-002]
+</code></pre>
+<h2 id="criterios-de-validacao">Critérios de validação<a class="headerlink" href="#criterios-de-validacao" title="Permanent link">¶</a></h2>
+<p>Esta unidade é considerada validada quando:</p>
+<ul>
+<li>explica o funcionamento do negócio sem depender de produtos específicos;</li>
+<li>mantém fronteira clara entre Ecosystem e Business Architecture;</li>
+<li>diferencia Ecosystem Outcomes de Business Outcomes;</li>
+<li>suporta a inclusão de produtos atuais e futuros sem exceções estruturais;</li>
+<li>permanece independente de tecnologia, processo e organograma;</li>
+<li>permite construir Outcomes, Capabilities, Value Chains, Organization, Processes e KPIs por dependência explícita.</li>
+</ul>
+<h2 id="decisoes-arquiteturais-tomadas">Decisões arquiteturais tomadas<a class="headerlink" href="#decisoes-arquiteturais-tomadas" title="Permanent link">¶</a></h2>
+<ol>
+<li>A necessidade é a principal interface entre Ecosystem Architecture e Business Architecture.</li>
+<li>O Business Transformation Model é cíclico e orientado por estados permanentes do negócio.</li>
+<li>O participante e o ecossistema são origem e destino do ciclo.</li>
+<li>A Guivos atua como facilitadora e orquestradora da transformação, não como centro do sistema.</li>
+<li>Ecosystem Outcomes e Business Outcomes são níveis distintos e interdependentes.</li>
+<li>Capacidades são definidas antes de Value Chains, organização e processos.</li>
+<li>A próxima unidade é <code>BA-STR-002 — Business Outcomes</code>.</li>
+</ol>
+<h2 id="evolucao-prevista">Evolução prevista<a class="headerlink" href="#evolucao-prevista" title="Permanent link">¶</a></h2>
+<p>A versão <code>1.0.0</code> será avaliada após a validação de <code>BA-STR-002</code>, <code>BA-CAP-001</code> e <code>BA-CAP-002</code>, que testarão a estabilidade do modelo sem alterar sua estrutura principal.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../../js/print-site.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+window.mermaidConfig = {default: {
+    startOnLoad: false
+}};</script></body>
+</html>

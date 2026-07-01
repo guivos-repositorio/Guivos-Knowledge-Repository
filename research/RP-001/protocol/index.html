@@ -1,0 +1,1768 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
+<meta content="Guivos" name="author"/>
+<link href="../" rel="prev"/>
+<link href="../MS-001/" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>Research Protocol - Guivos Knowledge Repository</title>
+<link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../css/print-site.css" rel="stylesheet"/>
+<link href="../../../css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#rp-001-research-protocol">
+          Pular para conteúdo
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guivos Knowledge Repository" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Research Protocol
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guivos Knowledge Repository" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    Guivos Knowledge Repository
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pergunta-de-pesquisa">
+<span class="md-ellipsis">
+      
+        Pergunta de pesquisa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivo">
+<span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#principios-aplicaveis">
+<span class="md-ellipsis">
+      
+        Princípios aplicáveis
+      
+    </span>
+</a>
+<nav aria-label="Princípios aplicáveis" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#neutralidade-arquitetural">
+<span class="md-ellipsis">
+      
+        Neutralidade arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#suficiencia-arquitetural">
+<span class="md-ellipsis">
+      
+        Suficiência arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#compreensao-antes-da-prescricao">
+<span class="md-ellipsis">
+      
+        Compreensão antes da prescrição
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#etapa-1-estado-da-arte">
+<span class="md-ellipsis">
+      
+        Etapa 1 — Estado da arte
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-inclusao">
+<span class="md-ellipsis">
+      
+        Critérios de inclusão
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-exclusao">
+<span class="md-ellipsis">
+      
+        Critérios de exclusão
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unidade-de-observacao">
+<span class="md-ellipsis">
+      
+        Unidade de observação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-qualidade-das-fontes">
+<span class="md-ellipsis">
+      
+        Critérios de qualidade das fontes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#niveis-de-evidencia">
+<span class="md-ellipsis">
+      
+        Níveis de evidência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extracao-de-evidencias">
+<span class="md-ellipsis">
+      
+        Extração de evidências
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metodo-de-sintese">
+<span class="md-ellipsis">
+      
+        Método de síntese
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-maturidade-dos-modelos">
+<span class="md-ellipsis">
+      
+        Critérios de maturidade dos modelos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterio-de-saturacao">
+<span class="md-ellipsis">
+      
+        Critério de saturação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fluxo-do-programa">
+<span class="md-ellipsis">
+      
+        Fluxo do programa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regra-de-governanca">
+<span class="md-ellipsis">
+      
+        Regra de governança
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hipoteses-preservadas-fora-da-canon">
+<span class="md-ellipsis">
+      
+        Hipóteses preservadas fora da Canon
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#situacao">
+<span class="md-ellipsis">
+      
+        Situação
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../MS-001/">
+<span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../evidence-registry/">
+<span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ecosystem-phenomena-catalog/">
+<span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../recommendations/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../enterprise-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../enterprise-architecture/permanence-layer-model/">
+<span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Reference Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../reference-architecture/gccm-001/">
+<span class="md-ellipsis">
+    
+  
+    GCCM-001 — Core Capability Model
+  
+
+    
+  </span>
+<span class="md-status md-status--discovery"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../glossary/">
+<span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    GEB
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Parte I — Fundação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte I — Fundação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/01-essence/">
+<span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/02-purpose/">
+<span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/03-mission/">
+<span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/04-vision/">
+<span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/05-constitution/">
+<span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-01-foundation/06-principles/">
+<span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Parte II — Modelo Fundamental
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte II — Modelo Fundamental
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/phenomenon/">
+<span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/fundamental-journey/">
+<span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../geb/part-02-fundamental-model/four-fundamental-natures/">
+<span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/journey/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/marketplace/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Marketplace
+  
+
+    
+  </span>
+<span class="md-status md-status--provisional-name"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/travel/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/business/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/media/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/intelligence/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../product-architecture/ads/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../business-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../business-architecture/foundations/">
+<span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../business-architecture/strategy/business-transformation-model/">
+<span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../business-architecture/strategy/business-outcomes/">
+<span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Governance Framework do GKR
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance Framework do GKR
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../governance-framework/outcome-governance-method/">
+<span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../validation/AV-001-gea-structure-validation/">
+<span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-001-gkr-as-source-of-truth/">
+<span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-002-foundation-principles/">
+<span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-003-architectural-ownership/">
+<span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-004-architectural-dependency-order/">
+<span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../adr/ADR-005-architectural-traceability-principle/">
+<span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/architectural-milestones/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/BASELINE-M1/">
+<span class="md-ellipsis">
+    
+  
+    Baseline M1
+  
+
+    
+  </span>
+<span class="md-status md-status--frozen"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/CHECKPOINT-M2.0/">
+<span class="md-ellipsis">
+    
+  
+    Checkpoint M2.0
+  
+
+    
+  </span>
+<span class="md-status md-status--experimental"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/knowledge-board/">
+<span class="md-ellipsis">
+    
+  
+    Knowledge Board
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/canonical-consolidation-matrix/">
+<span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../project/site-pipeline/">
+<span class="md-ellipsis">
+    
+  
+    Pipeline de Publicação
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../roadmap/">
+<span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../print_page/">
+<span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pergunta-de-pesquisa">
+<span class="md-ellipsis">
+      
+        Pergunta de pesquisa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objetivo">
+<span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#principios-aplicaveis">
+<span class="md-ellipsis">
+      
+        Princípios aplicáveis
+      
+    </span>
+</a>
+<nav aria-label="Princípios aplicáveis" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#neutralidade-arquitetural">
+<span class="md-ellipsis">
+      
+        Neutralidade arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#suficiencia-arquitetural">
+<span class="md-ellipsis">
+      
+        Suficiência arquitetural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#compreensao-antes-da-prescricao">
+<span class="md-ellipsis">
+      
+        Compreensão antes da prescrição
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#etapa-1-estado-da-arte">
+<span class="md-ellipsis">
+      
+        Etapa 1 — Estado da arte
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-inclusao">
+<span class="md-ellipsis">
+      
+        Critérios de inclusão
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-exclusao">
+<span class="md-ellipsis">
+      
+        Critérios de exclusão
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unidade-de-observacao">
+<span class="md-ellipsis">
+      
+        Unidade de observação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-qualidade-das-fontes">
+<span class="md-ellipsis">
+      
+        Critérios de qualidade das fontes
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#niveis-de-evidencia">
+<span class="md-ellipsis">
+      
+        Níveis de evidência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extracao-de-evidencias">
+<span class="md-ellipsis">
+      
+        Extração de evidências
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#metodo-de-sintese">
+<span class="md-ellipsis">
+      
+        Método de síntese
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterios-de-maturidade-dos-modelos">
+<span class="md-ellipsis">
+      
+        Critérios de maturidade dos modelos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#criterio-de-saturacao">
+<span class="md-ellipsis">
+      
+        Critério de saturação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fluxo-do-programa">
+<span class="md-ellipsis">
+      
+        Fluxo do programa
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regra-de-governanca">
+<span class="md-ellipsis">
+      
+        Regra de governança
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hipoteses-preservadas-fora-da-canon">
+<span class="md-ellipsis">
+      
+        Hipóteses preservadas fora da Canon
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#situacao">
+<span class="md-ellipsis">
+      
+        Situação
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/research/RP-001/protocol.md" rel="edit" title="Editar esta página">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<h1 id="rp-001-research-protocol">RP-001 — Research Protocol<a class="headerlink" href="#rp-001-research-protocol" title="Permanent link">¶</a></h1>
+<h2 id="pergunta-de-pesquisa">Pergunta de pesquisa<a class="headerlink" href="#pergunta-de-pesquisa" title="Permanent link">¶</a></h2>
+<blockquote>
+<p>Quais condições permanentes aparecem repetidamente em ecossistemas complexos capazes de gerar valor sustentável para seus participantes?</p>
+</blockquote>
+<h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">¶</a></h2>
+<p>Definir o método de mapeamento do estado da arte, seleção de fontes, coleta de evidências, síntese interdisciplinar e produção de recomendações arquiteturais utilizadas pelo RP-001.</p>
+<h2 id="principios-aplicaveis">Princípios aplicáveis<a class="headerlink" href="#principios-aplicaveis" title="Permanent link">¶</a></h2>
+<h3 id="neutralidade-arquitetural">Neutralidade arquitetural<a class="headerlink" href="#neutralidade-arquitetural" title="Permanent link">¶</a></h3>
+<p>O programa não busca confirmar hipóteses previamente aceitas pela Guivos. Evidências contrárias devem ser registradas e consideradas com o mesmo rigor.</p>
+<h3 id="suficiencia-arquitetural">Suficiência arquitetural<a class="headerlink" href="#suficiencia-arquitetural" title="Permanent link">¶</a></h3>
+<p>A investigação utilizará o menor nível de abstração suficiente para explicar o domínio e apoiar decisões arquiteturais, evitando deriva filosófica ou universalização desnecessária.</p>
+<h3 id="compreensao-antes-da-prescricao">Compreensão antes da prescrição<a class="headerlink" href="#compreensao-antes-da-prescricao" title="Permanent link">¶</a></h3>
+<p>O programa deve primeiro compreender como o domínio é explicado pelas disciplinas relevantes. Recomendações arquiteturais somente serão produzidas após síntese explícita das evidências.</p>
+<h2 id="etapa-1-estado-da-arte">Etapa 1 — Estado da arte<a class="headerlink" href="#etapa-1-estado-da-arte" title="Permanent link">¶</a></h2>
+<p>Antes da coleta sistemática de fenômenos, o programa deverá mapear:</p>
+<ol>
+<li>modelos explicativos existentes;</li>
+<li>convergências entre disciplinas;</li>
+<li>divergências conceituais;</li>
+<li>limitações dos modelos atuais;</li>
+<li>lacunas relevantes para a arquitetura da Guivos.</li>
+</ol>
+<p>O estado da arte não cria Canon. Ele define o terreno conceitual sobre o qual a pesquisa será conduzida.</p>
+<h2 id="criterios-de-inclusao">Critérios de inclusão<a class="headerlink" href="#criterios-de-inclusao" title="Permanent link">¶</a></h2>
+<p>Serão priorizadas disciplinas que estudam sistemas complexos, redes, ecossistemas, plataformas, organizações, conhecimento e geração sustentável de valor entre múltiplos participantes.</p>
+<p>Fontes elegíveis devem apresentar relação direta com a pergunta de pesquisa e permitir extração de princípios, mecanismos, condições ou modelos explicativos.</p>
+<h2 id="criterios-de-exclusao">Critérios de exclusão<a class="headerlink" href="#criterios-de-exclusao" title="Permanent link">¶</a></h2>
+<p>Serão excluídas fontes cujo foco seja exclusivamente:</p>
+<ul>
+<li>implementação tecnológica;</li>
+<li>gestão operacional;</li>
+<li>metodologias ágeis;</li>
+<li>marketing ou vendas;</li>
+<li>tendências temporárias;</li>
+<li>reflexões filosóficas sem impacto arquitetural concreto;</li>
+<li>opiniões sem fundamentação verificável;</li>
+<li>casos isolados sem possibilidade de generalização ou comparação.</li>
+</ul>
+<h2 id="unidade-de-observacao">Unidade de observação<a class="headerlink" href="#unidade-de-observacao" title="Permanent link">¶</a></h2>
+<p>Condição permanente, mecanismo, propriedade ou relação apresentada como necessária, recorrente ou relevante para a geração sustentável de valor em ecossistemas complexos.</p>
+<h2 id="criterios-de-qualidade-das-fontes">Critérios de qualidade das fontes<a class="headerlink" href="#criterios-de-qualidade-das-fontes" title="Permanent link">¶</a></h2>
+<p>Cada fonte deverá ser avaliada pelos seguintes critérios:</p>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Pergunta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Relevância</td>
+<td>A fonte responde diretamente à pergunta de pesquisa?</td>
+</tr>
+<tr>
+<td>Autoridade</td>
+<td>O autor, instituição ou publicação possui reconhecimento no campo?</td>
+</tr>
+<tr>
+<td>Rigor</td>
+<td>O argumento ou resultado apresenta método, evidência ou fundamentação explícita?</td>
+</tr>
+<tr>
+<td>Generalidade</td>
+<td>O conteúdo permite inferências além de um caso isolado?</td>
+</tr>
+<tr>
+<td>Permanência</td>
+<td>O conhecimento tende a permanecer válido além de tendências temporárias?</td>
+</tr>
+<tr>
+<td>Aplicabilidade</td>
+<td>A fonte pode reduzir incerteza arquitetural concreta?</td>
+</tr>
+<tr>
+<td>Transparência</td>
+<td>Limitações, escopo e pressupostos estão identificáveis?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="niveis-de-evidencia">Níveis de evidência<a class="headerlink" href="#niveis-de-evidencia" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E0</td>
+<td>Hipótese interna ainda sem evidência externa</td>
+</tr>
+<tr>
+<td>E1</td>
+<td>Evidência isolada ou caso único relevante</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Evidência consistente em múltiplas fontes da mesma disciplina</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Convergência em múltiplas disciplinas ou referenciais independentes</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Princípio amplamente consolidado, com alta recorrência e baixa controvérsia no escopo analisado</td>
+</tr>
+</tbody>
+</table>
+<p>O nível de evidência não determina sozinho uma decisão arquitetural. Ele informa a força do suporte disponível.</p>
+<h2 id="extracao-de-evidencias">Extração de evidências<a class="headerlink" href="#extracao-de-evidencias" title="Permanent link">¶</a></h2>
+<p>Cada fonte deverá responder, quando aplicável:</p>
+<ol>
+<li>qual fenômeno, condição, propriedade ou mecanismo é identificado;</li>
+<li>como ele é definido;</li>
+<li>qual papel exerce no sistema estudado;</li>
+<li>se é essencial, desejável, contextual ou emergente;</li>
+<li>quais relações mantém com outros fenômenos;</li>
+<li>quais limitações ou controvérsias são reconhecidas;</li>
+<li>qual implicação potencial possui para a arquitetura da Guivos.</li>
+</ol>
+<h2 id="metodo-de-sintese">Método de síntese<a class="headerlink" href="#metodo-de-sintese" title="Permanent link">¶</a></h2>
+<ol>
+<li>mapear o estado da arte;</li>
+<li>registrar as fontes no Evidence Registry;</li>
+<li>extrair os fenômenos, condições, propriedades e mecanismos identificados;</li>
+<li>agrupar conceitos semanticamente equivalentes;</li>
+<li>comparar convergências, divergências e limitações entre disciplinas;</li>
+<li>atribuir níveis de evidência;</li>
+<li>consolidar os fenômenos no Ecosystem Phenomena Catalog;</li>
+<li>construir meta-síntese e modelos explicativos provisórios;</li>
+<li>produzir recomendações para o BA-STR-002.</li>
+</ol>
+<h2 id="criterios-de-maturidade-dos-modelos">Critérios de maturidade dos modelos<a class="headerlink" href="#criterios-de-maturidade-dos-modelos" title="Permanent link">¶</a></h2>
+<p>Um modelo explicativo somente será considerado suficientemente maduro quando:</p>
+<ul>
+<li>explicar de forma coerente o fenômeno estudado;</li>
+<li>orientar decisões arquiteturais concretas;</li>
+<li>permitir previsões coerentes dentro de limites declarados;</li>
+<li>manter consistência em contextos distintos ou explicitar seus limites de generalização;</li>
+<li>possuir rastreabilidade até evidências registradas.</li>
+</ul>
+<h2 id="criterio-de-saturacao">Critério de saturação<a class="headerlink" href="#criterio-de-saturacao" title="Permanent link">¶</a></h2>
+<p>A pesquisa poderá ser encerrada quando novas fontes qualificadas deixarem de produzir fenômenos estruturalmente distintos e passarem predominantemente a reforçar os já registrados.</p>
+<p>A saturação deverá ser justificada por registro explícito, não presumida apenas por volume de fontes consultadas.</p>
+<h2 id="fluxo-do-programa">Fluxo do programa<a class="headerlink" href="#fluxo-do-programa" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>graph LR
+    SA[State of the Art] --&gt; ER[Evidence Registry]
+    ER --&gt; MS[Meta-synthesis]
+    MS --&gt; EPC[Ecosystem Phenomena Catalog]
+    EPC --&gt; AR[Architectural Recommendations]
+</code></pre>
+<p>O Candidate Outcome Register — COR é criado posteriormente pela Business Architecture a partir do EPC e das recomendações produzidas pelo Research.</p>
+<h2 id="regra-de-governanca">Regra de governança<a class="headerlink" href="#regra-de-governanca" title="Permanent link">¶</a></h2>
+<p>Nenhuma evidência, hipótese, classificação, fenômeno ou modelo registrado neste programa integra automaticamente a Canon. A decisão arquitetural permanece sob responsabilidade da arquitetura proprietária.</p>
+<h2 id="hipoteses-preservadas-fora-da-canon">Hipóteses preservadas fora da Canon<a class="headerlink" href="#hipoteses-preservadas-fora-da-canon" title="Permanent link">¶</a></h2>
+<p>Permanecem como hipóteses de pesquisa, sem promoção automática:</p>
+<ul>
+<li>Sistema Humano de Evolução;</li>
+<li>transformação como fenômeno fundamental;</li>
+<li>mudança de estado como unidade mínima;</li>
+<li>Worldview como possível elemento explícito da Foundation;</li>
+<li>Knowledge-Centric Enterprise;</li>
+<li>modelo explicativo definitivo do domínio.</li>
+</ul>
+<h2 id="situacao">Situação<a class="headerlink" href="#situacao" title="Permanent link">¶</a></h2>
+<p>O protocolo está conceitualmente estruturado. A próxima etapa é iniciar o mapeamento do estado da arte e registrar as primeiras fontes qualificadas no Evidence Registry.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../../js/print-site.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+window.mermaidConfig = {default: {
+    startOnLoad: false
+}};</script></body>
+</html>
