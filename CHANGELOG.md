@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.15.0 — A2 Pause Checkpoint and Economic Model Pending
+
+- Registro do checkpoint de pausa da fase `A2 — Functional Architecture Discovery` em 01/07/2026.
+- Preservação do `GCCM-001` em estado `discovery`, sem Core Capabilities promovidas à Canon.
+- Definição do ponto exato de retomada: análise exclusiva de `Foundation — Essência da Guivos`.
+- Atualização do `Architectural Milestones` para a versão `1.1.0`.
+- Atualização do `Roadmap Arquitetural` para a versão `2.4.0`.
+- Atualização do `Knowledge Board` para a versão `2.4.0`.
+- Criação da seção `Open Architecture Topics` no Roadmap.
+- Registro do `Enterprise Economic Model` como pendência estratégica da Business Architecture.
+- Definição preliminar do escopo econômico: geração, captura, distribuição e compartilhamento de valor, reinvestimento, incentivos, sustentabilidade, monetização e efeitos de rede.
+- Registro das dependências do Enterprise Economic Model: GCCM, Business Outcomes e Core Business Capabilities.
+- Registro de Global Governance Model, Organizational Model, Operating Model, AI Governance, Knowledge Graph Logical Model e Enterprise Metrics Framework como temas estratégicos pendentes.
+- Nenhuma nova arquitetura foi criada e nenhuma hipótese foi promovida à Canon.
+
 ## 0.14.0 — Maturity Architecture and Permanence Layers
 
 - Criação do `GEA-PLM-001 — Permanence Layer Model` em estado `validated`.
