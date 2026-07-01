@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.16.0 — First GCCM Evidence Extraction
+
+- Atualização do `GCCM-001 — Guivos Core Capability Model` para a versão `0.2.0`.
+- Registro da primeira Evidence Extraction sobre `GEB-P01-F01 — Essência da Guivos`, versão `0.2.0`, estado `consolidated`.
+- Identificação de 29 afirmações institucionais atômicas, 5 grupos de significado, 6 invariantes provisórios e 9 responsabilidades institucionais.
+- Registro de 6 agrupamentos de evidência em estado `Observed`: compreensão de contexto, identificação de possibilidades relevantes, conexão e fortalecimento do ecossistema, apoio à progressão da jornada, preservação da autonomia e governança de aderência à jornada.
+- Separação entre evidências funcionais e constitucionais.
+- Registro de que nem toda evidência deve originar uma Core Capability.
+- Rejeição de `Institutional Functions` como camada arquitetural permanente por não introduzir informação nova.
+- Atualização do Roadmap Arquitetural para a versão `2.5.0`.
+- Atualização do Knowledge Board para a versão `2.5.0`.
+- Retomada formal da execução da fase `A2 — Functional Architecture Discovery`.
+- Nenhuma Core Capability candidata ou canônica foi registrada.
+
 ## 0.15.0 — A2 Pause Checkpoint and Economic Model Pending
 
 - Registro do checkpoint de pausa da fase `A2 — Functional Architecture Discovery` em 01/07/2026.
