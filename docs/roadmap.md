@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 2.4.0
+version: 2.5.0
 owner: Guivos
 last_updated: 2026-07-01
 ---
@@ -17,8 +17,9 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - **Modelo institucional vigente:** `GEA-PLM-001 — Permanence Layer Model` — `validated`.
 - **Marco concluído:** `A1 — Institutional Architecture Complete`.
 - **Fase ativa:** `A2 — Functional Architecture Discovery`.
-- **Situação operacional:** pausa registrada no checkpoint de 01/07/2026.
-- **Entregável ativo:** `GCCM-001 — Guivos Core Capability Model` — `discovery`.
+- **Situação operacional:** execução retomada em 01/07/2026.
+- **Entregável ativo:** `GCCM-001 — Guivos Core Capability Model` — `discovery`, versão `0.2.0`.
+- **Última entrega:** primeira Evidence Extraction concluída sobre `GEB-P01-F01 — Essência da Guivos`.
 
 Consulte [Architectural Milestones](project/architectural-milestones.md).
 
@@ -82,7 +83,7 @@ Esses itens devem evoluir sem reabrir automaticamente a macroestrutura instituci
 
 ## A2 — Functional Architecture Discovery
 
-**Estado:** Active — Paused at checkpoint.
+**Estado:** Active.
 
 ### Objetivo
 
@@ -101,13 +102,20 @@ Descobrir o conjunto mínimo e suficiente de Core Capabilities permanentes que e
 - [x] Definir testes de destruição, irredutibilidade e cobertura da missão.
 - [x] Registrar que nenhuma Core Capability está canônica na versão inicial.
 - [x] Registrar o checkpoint de pausa e o ponto exato de retomada.
+- [x] Retomar a execução da A2.
 
 ### A2.2 — Evidence Extraction
 
-- [ ] Inventariar fontes prioritárias do GKR.
-- [ ] Extrair verbos institucionais, responsabilidades, objetivos, relações e decisões.
-- [ ] Registrar cada evidência com referência à fonte e ao status do ativo.
-- [ ] Separar evidência consolidada de hipótese, draft e experimento.
+- [x] Iniciar o inventário de fontes prioritárias do GKR.
+- [x] Analisar `GEB-P01-F01 — Essência da Guivos`.
+- [x] Extrair afirmações institucionais, invariantes e responsabilidades da primeira fonte.
+- [x] Registrar evidências funcionais e constitucionais com rastreabilidade.
+- [x] Separar evidência de candidata e impedir promoção prematura.
+- [ ] Analisar as demais unidades da Foundation Architecture.
+- [ ] Analisar o Modelo Fundamental do GEB.
+- [ ] Analisar Product Architecture.
+- [ ] Analisar Business Architecture.
+- [ ] Concluir o inventário mínimo das fontes prioritárias.
 
 Fontes prioritárias:
 
@@ -121,10 +129,12 @@ Fontes prioritárias:
 
 ### A2.3 — Semantic Clustering
 
-- [ ] Agrupar evidências semanticamente equivalentes.
+- [ ] Agrupar evidências semanticamente equivalentes entre múltiplas fontes.
 - [ ] Identificar redundâncias terminológicas.
 - [ ] Registrar divergências e fronteiras provisórias.
 - [ ] Evitar nomear Core Capabilities antes da formação de agrupamentos suficientes.
+
+Seis agrupamentos foram observados na primeira fonte, mas permanecem em estado `Observed` e não constituem ainda clustering multifuente.
 
 ### A2.4 — Candidate Core Capabilities
 
@@ -133,6 +143,8 @@ Fontes prioritárias:
 - [ ] Aplicar a Admission Rule.
 - [ ] Aplicar os testes de destruição e irredutibilidade.
 - [ ] Fundir ou rejeitar candidatas redundantes.
+
+Nenhuma candidata foi registrada.
 
 ### A2.5 — Mission Coverage
 
@@ -248,4 +260,4 @@ As atividades abaixo permanecem válidas e podem ser retomadas quando necessári
 
 ## Ponto exato de retomada
 
-Retomar a A2.2 com a análise exclusiva de `Foundation — Essência da Guivos`, registrando evidências sem promover Core Capabilities nem expandir a macroestrutura do GKR.
+Analisar a próxima unidade da Foundation Architecture e comparar suas evidências com os agrupamentos observados em `GEB-P01-F01 — Essência da Guivos`, sem formular Core Capabilities antes da convergência entre múltiplas fontes.
