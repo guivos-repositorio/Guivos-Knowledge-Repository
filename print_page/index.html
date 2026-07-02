@@ -2154,6 +2154,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Knowledge Consolidation Pipeline
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../governance-framework/outcome-governance-method/" class="md-nav__link">
         
   
@@ -3515,10 +3550,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#governance-framework-architectural-knowledge-consolidation-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Architectural Knowledge Consolidation Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#governance-framework-outcome-governance-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.1 Outcome Governance Method
+        9.2 Outcome Governance Method
       
     </span>
   </a>
@@ -4357,10 +4403,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#governance-framework-architectural-knowledge-consolidation-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Architectural Knowledge Consolidation Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#governance-framework-outcome-governance-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.1 Outcome Governance Method
+        9.2 Outcome Governance Method
       
     </span>
   </a>
@@ -8931,7 +8988,222 @@ Implementação = realização progressiva
                     <section class='print-page md-section' id='section-9' heading-number='9'>
                         <h1>Governance Framework do GKR<a class='headerlink' href='#section-9' title='Permanent link'></a>
                         </h1>
-                    <section class="print-page" id="governance-framework-outcome-governance-method" heading-number="9.1"><h1 id="governance-framework-outcome-governance-method-outcome-governance-method">Outcome Governance Method<a class="headerlink" href="#governance-framework-outcome-governance-method-outcome-governance-method" title="Permanent link">&para;</a></h1>
+                    <section class="print-page" id="governance-framework-architectural-knowledge-consolidation-pipeline" heading-number="9.1"><h1 id="governance-framework-architectural-knowledge-consolidation-pipeline-a2-method-001-architectural-knowledge-consolidation-pipeline">A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-a2-method-001-architectural-knowledge-consolidation-pipeline" title="Permanent link">&para;</a></h1>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-finalidade">Finalidade<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-finalidade" title="Permanent link">&para;</a></h2>
+<p>Definir o processo oficial pelo qual conhecimento arquitetural evolui desde uma fonte documental até sua eventual promoção à Canon.</p>
+<p>O pipeline protege a rastreabilidade, evita promoção prematura de hipóteses, reduz redundâncias e separa claramente extração, convergência, consolidação e validação.</p>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-fluxo-oficial">Fluxo oficial<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-fluxo-oficial" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Documento Canônico
+  -&gt; Evidence Analysis
+  -&gt; Evidence Matrix
+  -&gt; Canonical Consolidation
+  -&gt; Architecture Review
+  -&gt; Architectural Decision / Validation
+  -&gt; Canon
+</code></pre></div>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-etapas">Etapas<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-etapas" title="Permanent link">&para;</a></h2>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-1-documento-canonico">1. Documento Canônico<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-1-documento-canonico" title="Permanent link">&para;</a></h3>
+<p>Fonte oficial de conhecimento submetida à análise.</p>
+<p>Responsabilidades:</p>
+<ul>
+<li>preservar o conteúdo normativo original;</li>
+<li>manter versão, estado, ownership e dependências;</li>
+<li>servir como origem rastreável das evidências.</li>
+</ul>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-2-evidence-analysis">2. Evidence Analysis<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-2-evidence-analysis" title="Permanent link">&para;</a></h3>
+<p>Analisa uma única fonte e extrai, quando aplicável:</p>
+<ul>
+<li>afirmações institucionais atômicas;</li>
+<li>significados institucionais;</li>
+<li>invariantes provisórios;</li>
+<li>responsabilidades provisórias;</li>
+<li>objetivos, estados desejados, decisões e relações;</li>
+<li>evidências funcionais, constitucionais, estruturais ou informacionais.</li>
+</ul>
+<p>A Evidence Analysis não promove capacidades, não altera automaticamente a Canon e não cria novas camadas arquiteturais.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-3-evidence-matrix">3. Evidence Matrix<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-3-evidence-matrix" title="Permanent link">&para;</a></h3>
+<p>Consolida evidências entre múltiplas fontes.</p>
+<p>Cada agrupamento deve ser avaliado segundo:</p>
+<ul>
+<li>frequência;</li>
+<li>centralidade;</li>
+<li>consistência;</li>
+<li>confirmação;</li>
+<li>ampliação;</li>
+<li>ausência;</li>
+<li>contradição;</li>
+<li>força e independência das fontes.</li>
+</ul>
+<p>A matriz organiza convergência. Ela não substitui a validação arquitetural.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-4-canonical-consolidation">4. Canonical Consolidation<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-4-canonical-consolidation" title="Permanent link">&para;</a></h3>
+<p>Transforma o inventário provisório em um conjunto mínimo e suficiente.</p>
+<p>Cada item deve receber uma decisão:</p>
+<table>
+<thead>
+<tr>
+<th>Decisão</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preserve</td>
+<td>Mantém-se praticamente inalterado</td>
+</tr>
+<tr>
+<td>Merge</td>
+<td>É fundido a item semanticamente equivalente</td>
+</tr>
+<tr>
+<td>Refine</td>
+<td>Permanece com redação ou fronteira aprimorada</td>
+</tr>
+<tr>
+<td>Split</td>
+<td>Contém mais de uma responsabilidade ou permanência</td>
+</tr>
+<tr>
+<td>Remove</td>
+<td>É redundante, circunstancial ou sem suporte suficiente</td>
+</tr>
+</tbody>
+</table>
+<p>A consolidação termina quando nenhuma fusão, redução, divisão, refinamento ou remoção adicional puder ocorrer sem perda arquitetural relevante.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-5-architecture-review">5. Architecture Review<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-5-architecture-review" title="Permanent link">&para;</a></h3>
+<p>Avalia a arquitetura ou o conjunto consolidado como sistema.</p>
+<p>A revisão deve verificar:</p>
+<ul>
+<li>cobertura;</li>
+<li>consistência;</li>
+<li>lacunas;</li>
+<li>conflitos;</li>
+<li>ambiguidades;</li>
+<li>sobreposições;</li>
+<li>conceitos órfãos;</li>
+<li>dependências;</li>
+<li>readiness para sustentar a próxima camada ou fase.</li>
+</ul>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-6-architectural-decision-validation">6. Architectural Decision / Validation<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-6-architectural-decision-validation" title="Permanent link">&para;</a></h3>
+<p>Registra formalmente o resultado da revisão.</p>
+<p>O registro pode assumir a forma de:</p>
+<ul>
+<li>ADR, quando houver decisão arquitetural;</li>
+<li>AV, quando houver validação de estado arquitetural;</li>
+<li>gate de readiness, quando houver autorização para continuidade.</li>
+</ul>
+<p>A decisão deve explicitar escopo, evidências, limitações, riscos, resultado e próximos passos.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-7-canon">7. Canon<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-7-canon" title="Permanent link">&para;</a></h3>
+<p>Somente conhecimento suficientemente consolidado, validado e governado pode ser promovido à Canon.</p>
+<p>A promoção deve preservar rastreabilidade até:</p>
+<div class="highlight"><pre><span></span><code>Fonte
+  -&gt; Evidência
+  -&gt; Convergência
+  -&gt; Consolidação
+  -&gt; Validação
+  -&gt; Decisão
+  -&gt; Canon
+</code></pre></div>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-principios-obrigatorios">Princípios obrigatórios<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-principios-obrigatorios" title="Permanent link">&para;</a></h2>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-evidencia-antes-da-nomeacao">Evidência antes da nomeação<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-evidencia-antes-da-nomeacao" title="Permanent link">&para;</a></h3>
+<p>Nenhum conceito, capacidade ou camada deve ser criado apenas por elegância conceitual.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-convergencia-antes-da-consolidacao">Convergência antes da consolidação<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-convergencia-antes-da-consolidacao" title="Permanent link">&para;</a></h3>
+<p>Recorrência terminológica isolada não é suficiente. Frequência deve ser analisada com centralidade, consistência e independência das fontes.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-consolidacao-antes-da-validacao">Consolidação antes da validação<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-consolidacao-antes-da-validacao" title="Permanent link">&para;</a></h3>
+<p>A revisão arquitetural deve avaliar um conjunto já deduplicado e semanticamente coerente.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-validacao-antes-da-canon">Validação antes da Canon<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-validacao-antes-da-canon" title="Permanent link">&para;</a></h3>
+<p>Nenhum ativo entra na Canon apenas por ter sido documentado ou consolidado.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-hipoteses-fora-da-canon">Hipóteses fora da Canon<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-hipoteses-fora-da-canon" title="Permanent link">&para;</a></h3>
+<p>Hipóteses podem orientar observação, mas devem permanecer explicitamente separadas de evidências e decisões validadas.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-rastreabilidade-integral">Rastreabilidade integral<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-rastreabilidade-integral" title="Permanent link">&para;</a></h3>
+<p>Toda decisão arquitetural deve ser rastreável às fontes e evidências que a sustentam.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-suficiencia-arquitetural">Suficiência arquitetural<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-suficiencia-arquitetural" title="Permanent link">&para;</a></h3>
+<p>O objetivo é produzir o menor conjunto capaz de explicar integralmente o domínio, sem perda relevante de significado ou responsabilidade.</p>
+<h3 id="governance-framework-architectural-knowledge-consolidation-pipeline-separacao-entre-execucao-e-evolucao-do-metodo">Separação entre execução e evolução do método<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-separacao-entre-execucao-e-evolucao-do-metodo" title="Permanent link">&para;</a></h3>
+<p>O método permanece estável durante ciclos de execução. Alterações exigem limitação prática demonstrada, inconsistência comprovada ou melhoria superior validada.</p>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-estados-de-maturidade">Estados de maturidade<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-estados-de-maturidade" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Estado</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observed</td>
+<td>Evidência identificada em uma fonte</td>
+</tr>
+<tr>
+<td>Corroborated</td>
+<td>Evidência reforçada por múltiplas fontes</td>
+</tr>
+<tr>
+<td>Consolidated</td>
+<td>Elemento deduplicado e semanticamente estabilizado</td>
+</tr>
+<tr>
+<td>Under Review</td>
+<td>Elemento submetido à revisão arquitetural</td>
+</tr>
+<tr>
+<td>Validated</td>
+<td>Elemento aprovado pela revisão aplicável</td>
+</tr>
+<tr>
+<td>Canonical</td>
+<td>Elemento incorporado formalmente à Canon</td>
+</tr>
+<tr>
+<td>Rejected</td>
+<td>Elemento removido ou rejeitado com justificativa</td>
+</tr>
+<tr>
+<td>Deferred</td>
+<td>Elemento adiado por dependência ou insuficiência de evidência</td>
+</tr>
+</tbody>
+</table>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-regras-para-capacidades">Regras para capacidades<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-regras-para-capacidades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>nenhuma Capability nasce diretamente de um documento;</li>
+<li>nenhuma Capability nasce diretamente da Evidence Analysis;</li>
+<li>agrupamentos recorrentes não são automaticamente capacidades;</li>
+<li>candidatas exigem convergência entre fontes e fronteiras próprias;</li>
+<li>promoção exige testes de permanência, essencialidade, independência, reutilização, irredutibilidade e cobertura.</li>
+</ul>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-aplicabilidade">Aplicabilidade<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-aplicabilidade" title="Permanent link">&para;</a></h2>
+<p>O pipeline pode ser aplicado a:</p>
+<ul>
+<li>Foundation Architecture;</li>
+<li>Ecosystem Architecture e GEB;</li>
+<li>Business Architecture;</li>
+<li>Product Architecture;</li>
+<li>Data &amp; Intelligence Architecture;</li>
+<li>Technology Architecture;</li>
+<li>Governance Architecture;</li>
+<li>Knowledge Architecture;</li>
+<li>Reference Architectures;</li>
+<li>revisões transversais da GEA.</li>
+</ul>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-governanca">Governança<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-governanca" title="Permanent link">&para;</a></h2>
+<ul>
+<li>owner: Guivos Enterprise Architecture;</li>
+<li>alterações estruturais exigem registro de justificativa;</li>
+<li>adaptações locais não podem remover as etapas de convergência, consolidação e validação;</li>
+<li>o pipeline não substitui métodos especializados de pesquisa, modelagem ou implementação;</li>
+<li>o pipeline governa a maturação do conhecimento arquitetural, não a execução operacional.</li>
+</ul>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-aplicacao-inicial">Aplicação inicial<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-aplicacao-inicial" title="Permanent link">&para;</a></h2>
+<p>A primeira aplicação integral ocorre na <code>A2-R01 — Foundation Architecture Review</code>:</p>
+<ol>
+<li>Foundation Evidence Matrix;</li>
+<li>Canonical Consolidation dos invariantes e responsabilidades;</li>
+<li>Architecture Review;</li>
+<li>validação de readiness;</li>
+<li>decisão sobre avanço para o Modelo Fundamental.</li>
+</ol>
+<h2 id="governance-framework-architectural-knowledge-consolidation-pipeline-limites">Limites<a class="headerlink" href="#governance-framework-architectural-knowledge-consolidation-pipeline-limites" title="Permanent link">&para;</a></h2>
+<p>Este método não promove automaticamente <code>Architecture Reviews</code> a um domínio arquitetural independente, não cria um novo Evidence Registry e não altera o Permanence Layer Model. Sua função é governar a passagem de conhecimento analisado para conhecimento arquitetural validado.</p></section><section class="print-page" id="governance-framework-outcome-governance-method" heading-number="9.2"><h1 id="governance-framework-outcome-governance-method-outcome-governance-method">Outcome Governance Method<a class="headerlink" href="#governance-framework-outcome-governance-method-outcome-governance-method" title="Permanent link">&para;</a></h1>
 <h2 id="governance-framework-outcome-governance-method-objetivo">Objetivo<a class="headerlink" href="#governance-framework-outcome-governance-method-objetivo" title="Permanent link">&para;</a></h2>
 <p>Definir o processo pelo qual Candidate Outcomes são descobertos, registrados, validados, avaliados e consolidados antes de integrarem a Canon da Guivos.</p>
 <p>Este método pertence ao Governance Framework do GKR. Ele não integra a Business Architecture nem antecipa a Governance Architecture da GEA.</p>
@@ -10512,6 +10784,11 @@ Implementação = realização progressiva
 <td>Encerramento analítico da Foundation 6/6</td>
 </tr>
 <tr>
+<td>A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline</td>
+<td>Validated 1.0.0</td>
+<td>Governar a maturação do conhecimento até a Canon</td>
+</tr>
+<tr>
 <td>GCCM-001</td>
 <td>Discovery 0.4.0</td>
 <td>Descoberta e validação de Core Capabilities</td>
@@ -10533,6 +10810,10 @@ Implementação = realização progressiva
 <td style="text-align: center;">Consolidado</td>
 </tr>
 <tr>
+<td>Architectural Knowledge Consolidation Pipeline</td>
+<td style="text-align: center;">Validado</td>
+</tr>
+<tr>
 <td>Evidence Extraction</td>
 <td style="text-align: center;">Concluída na Foundation</td>
 </tr>
@@ -10547,6 +10828,10 @@ Implementação = realização progressiva
 <tr>
 <td>Foundation Evidence Matrix</td>
 <td style="text-align: center;">Próxima atividade</td>
+</tr>
+<tr>
+<td>Canonical Consolidation</td>
+<td style="text-align: center;">Pendente</td>
 </tr>
 <tr>
 <td>A2-R01 — Foundation Architecture Review</td>
@@ -10666,6 +10951,24 @@ Participante = titular da decisão
 Arquitetura = estrutura permanente
 Implementação = realização progressiva
 </code></pre></div>
+<h3 id="project-knowledge-board-pipeline-de-maturacao-arquitetural">Pipeline de maturação arquitetural<a class="headerlink" href="#project-knowledge-board-pipeline-de-maturacao-arquitetural" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Documento Canônico
+  -&gt; Evidence Analysis
+  -&gt; Evidence Matrix
+  -&gt; Canonical Consolidation
+  -&gt; Architecture Review
+  -&gt; Architectural Decision / Validation
+  -&gt; Canon
+</code></pre></div>
+<p>Regras consolidadas:</p>
+<ul>
+<li>nenhuma Capability nasce diretamente de uma fonte;</li>
+<li>agrupamentos recorrentes não são automaticamente capacidades;</li>
+<li>convergência precede consolidação;</li>
+<li>consolidação precede validação;</li>
+<li>validação precede Canon;</li>
+<li>toda decisão deve manter rastreabilidade até as evidências de origem.</li>
+</ul>
 <h3 id="project-knowledge-board-aprendizados">Aprendizados<a class="headerlink" href="#project-knowledge-board-aprendizados" title="Permanent link">&para;</a></h3>
 <ul>
 <li>a Foundation produz identidade, finalidade, limites, compromissos e critérios permanentes;</li>
@@ -10680,7 +10983,7 @@ Implementação = realização progressiva
 <p>Objetivos:</p>
 <ol>
 <li>construir a Foundation Evidence Matrix;</li>
-<li>deduplicar invariantes e responsabilidades;</li>
+<li>executar a Canonical Consolidation dos invariantes e responsabilidades;</li>
 <li>avaliar frequência, centralidade e consistência;</li>
 <li>identificar lacunas, contradições e sobreposições;</li>
 <li>avaliar readiness para o Modelo Fundamental e demais arquiteturas;</li>
@@ -10757,8 +11060,16 @@ Implementação = realização progressiva
 <td>2.6.0</td>
 </tr>
 <tr>
+<td>Knowledge Board</td>
+<td>2.7.0</td>
+</tr>
+<tr>
 <td>GCCM-001</td>
 <td>0.4.0</td>
+</tr>
+<tr>
+<td>A2-METHOD-001</td>
+<td>Validated 1.0.0</td>
 </tr>
 <tr>
 <td>A2 Baseline B1</td>
@@ -10775,9 +11086,9 @@ Implementação = realização progressiva
 </tbody>
 </table>
 <h2 id="project-knowledge-board-proxima-atividade">Próxima atividade<a class="headerlink" href="#project-knowledge-board-proxima-atividade" title="Permanent link">&para;</a></h2>
-<p>Iniciar <code>A2-R01 — Foundation Architecture Review</code> pela Foundation Evidence Matrix.</p>
+<p>Construir a Foundation Evidence Matrix e iniciar a Canonical Consolidation dos 50 invariantes e 54 responsabilidades provisórias.</p>
 <h2 id="project-knowledge-board-ultima-consolidacao">Última consolidação<a class="headerlink" href="#project-knowledge-board-ultima-consolidacao" title="Permanent link">&para;</a></h2>
-<p>Evidence Extraction da Foundation concluída em 02/07/2026, com 6/6 fontes analisadas e nenhuma Core Capability promovida.</p></section><section class="print-page" id="project-canonical-consolidation-matrix" heading-number="12.7"><h1 id="project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica">Matriz de Consolidação Canônica<a class="headerlink" href="#project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica" title="Permanent link">&para;</a></h1>
+<p><code>A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline</code> consolidado em 02/07/2026 como método validado de maturação do conhecimento arquitetural.</p></section><section class="print-page" id="project-canonical-consolidation-matrix" heading-number="12.7"><h1 id="project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica">Matriz de Consolidação Canônica<a class="headerlink" href="#project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica" title="Permanent link">&para;</a></h1>
 <p>Esta matriz controla a revisão das decisões históricas da Guivos.</p>
 <p>Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR consolidado permanece como fonte oficial.</p>
 <h2 id="project-canonical-consolidation-matrix-decisoes-possiveis">Decisões possíveis<a class="headerlink" href="#project-canonical-consolidation-matrix-decisoes-possiveis" title="Permanent link">&para;</a></h2>
@@ -11398,9 +11709,14 @@ Implementação = realização progressiva
 .print-site-enumerate-headings #business-architecture-strategy-business-outcomes > h1:before { content: '8.3.2 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
-.print-site-enumerate-headings #governance-framework-outcome-governance-method > h1:before { content: '9.1 ' }
+.print-site-enumerate-headings #governance-framework-architectural-knowledge-consolidation-pipeline > h1:before { content: '9.1 ' }
 
-                .print-site-enumerate-headings #governance-framework-outcome-governance-method h2:before { content: '9.1.' counter(counter-governance-framework-outcome-governance-method-2) ' ' }
+                .print-site-enumerate-headings #governance-framework-architectural-knowledge-consolidation-pipeline h2:before { content: '9.1.' counter(counter-governance-framework-architectural-knowledge-consolidation-pipeline-2) ' ' }
+                .print-site-enumerate-headings #governance-framework-architectural-knowledge-consolidation-pipeline h2 {  counter-increment: counter-governance-framework-architectural-knowledge-consolidation-pipeline-2 }
+            
+.print-site-enumerate-headings #governance-framework-outcome-governance-method > h1:before { content: '9.2 ' }
+
+                .print-site-enumerate-headings #governance-framework-outcome-governance-method h2:before { content: '9.2.' counter(counter-governance-framework-outcome-governance-method-2) ' ' }
                 .print-site-enumerate-headings #governance-framework-outcome-governance-method h2 {  counter-increment: counter-governance-framework-outcome-governance-method-2 }
             
 .print-site-enumerate-headings #section-10 > h1:before { content: '10 ' }
