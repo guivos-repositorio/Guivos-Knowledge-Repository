@@ -103,6 +103,7 @@ nav:
           - Business Transformation Model: business-architecture/strategy/business-transformation-model.md
           - Business Outcomes: business-architecture/strategy/business-outcomes.md
   - Governance Framework do GKR:
+      - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - Outcome Governance Method: governance-framework/outcome-governance-method.md
   - Validações Arquiteturais:
       - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
