@@ -107,6 +107,7 @@ nav:
       - Outcome Governance Method: governance-framework/outcome-governance-method.md
   - Validações Arquiteturais:
       - A2-R01-FEM-001 — Foundation Evidence Matrix: validation/A2-R01-FEM-001-foundation-evidence-matrix.md
+      - A2-R01-CC-001 — Foundation Canonical Consolidation: validation/A2-R01-CC-001-canonical-consolidation.md
       - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
   - ADRs:
       - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
