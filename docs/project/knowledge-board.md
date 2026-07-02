@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 2.6.0
+version: 2.7.0
 owner: Guivos
 last_updated: 2026-07-02
 ---
@@ -20,6 +20,7 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | A1 — Institutional Architecture Complete | Completed | Macroestrutura institucional concluída |
 | A2 — Functional Architecture Discovery | Active | Descobrir Core Capabilities por evidências |
 | A2-B2 — Foundation Discovery Complete | Working baseline | Encerramento analítico da Foundation 6/6 |
+| A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline | Validated 1.0.0 | Governar a maturação do conhecimento até a Canon |
 | GCCM-001 | Discovery 0.4.0 | Descoberta e validação de Core Capabilities |
 
 ## A2 — Functional Architecture Discovery
@@ -29,10 +30,12 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Elemento | Estado |
 |---|:---:|
 | Método de descoberta | Consolidado |
+| Architectural Knowledge Consolidation Pipeline | Validado |
 | Evidence Extraction | Concluída na Foundation |
 | Evidence Convergence | Aplicada provisoriamente |
 | Confidence Assessment | Aplicado |
 | Foundation Evidence Matrix | Próxima atividade |
+| Canonical Consolidation | Pendente |
 | A2-R01 — Foundation Architecture Review | Pendente |
 | Semantic Clustering multiarquitetura | Pendente |
 | Registro de candidatas | Vazio |
@@ -92,6 +95,27 @@ Arquitetura = estrutura permanente
 Implementação = realização progressiva
 ```
 
+### Pipeline de maturação arquitetural
+
+```text
+Documento Canônico
+  -> Evidence Analysis
+  -> Evidence Matrix
+  -> Canonical Consolidation
+  -> Architecture Review
+  -> Architectural Decision / Validation
+  -> Canon
+```
+
+Regras consolidadas:
+
+- nenhuma Capability nasce diretamente de uma fonte;
+- agrupamentos recorrentes não são automaticamente capacidades;
+- convergência precede consolidação;
+- consolidação precede validação;
+- validação precede Canon;
+- toda decisão deve manter rastreabilidade até as evidências de origem.
+
 ### Aprendizados
 
 - a Foundation produz identidade, finalidade, limites, compromissos e critérios permanentes;
@@ -108,7 +132,7 @@ Implementação = realização progressiva
 Objetivos:
 
 1. construir a Foundation Evidence Matrix;
-2. deduplicar invariantes e responsabilidades;
+2. executar a Canonical Consolidation dos invariantes e responsabilidades;
 3. avaliar frequência, centralidade e consistência;
 4. identificar lacunas, contradições e sobreposições;
 5. avaliar readiness para o Modelo Fundamental e demais arquiteturas;
@@ -143,15 +167,17 @@ Objetivos:
 | Ativo | Status |
 |---|---|
 | Roadmap Arquitetural | 2.6.0 |
+| Knowledge Board | 2.7.0 |
 | GCCM-001 | 0.4.0 |
+| A2-METHOD-001 | Validated 1.0.0 |
 | A2 Baseline B1 | Histórico 5/6 |
 | A2 Baseline B2 | Atual 6/6 |
 | A2-R01 | Próximo gate |
 
 ## Próxima atividade
 
-Iniciar `A2-R01 — Foundation Architecture Review` pela Foundation Evidence Matrix.
+Construir a Foundation Evidence Matrix e iniciar a Canonical Consolidation dos 50 invariantes e 54 responsabilidades provisórias.
 
 ## Última consolidação
 
-Evidence Extraction da Foundation concluída em 02/07/2026, com 6/6 fontes analisadas e nenhuma Core Capability promovida.
+`A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline` consolidado em 02/07/2026 como método validado de maturação do conhecimento arquitetural.
