@@ -1,9 +1,9 @@
 ---
 title: Knowledge Board
 status: active
-version: 2.5.0
+version: 2.6.0
 owner: Guivos
-last_updated: 2026-07-01
+last_updated: 2026-07-02
 ---
 
 # Knowledge Board
@@ -15,283 +15,143 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Ativo | Estado | Finalidade |
 |---|---|---|
 | M1 — Research Foundation Complete | Frozen | Referência estável dos fundamentos |
-| M2.0 — Architectural Evolution Hypothesis | Experimental | Preservar hipóteses estruturantes fora da Canon |
-| GEA-PLM-001 — Permanence Layer Model | Validated | Organizar ativos por permanência, horizonte e governança |
-| A1 — Institutional Architecture Complete | Completed | Encerrar a expansão estrutural contínua da arquitetura institucional |
-| A2 — Functional Architecture Discovery | Active | Descobrir as Core Capabilities permanentes da Guivos |
-| GCCM-001 — Guivos Core Capability Model | Discovery 0.2.0 | Extrair, testar e validar capacidades a partir do GKR |
-
-Consulte:
-
-- [Architectural Milestones](architectural-milestones.md)
-- [GCCM-001](../reference-architecture/gccm-001.md)
-- [Baseline M1](BASELINE-M1.md)
-- [Checkpoint M2.0](CHECKPOINT-M2.0.md)
-- [Permanence Layer Model](../enterprise-architecture/permanence-layer-model.md)
-
-## Legenda
-
-| Status | Significado |
-|---|---|
-| ⬜ | Não iniciado |
-| 🟦 | Em descoberta |
-| 🟨 | Hipótese ou proposta estruturada |
-| 🟧 | Em experimentação, consolidação ou validação |
-| 🟩 | Consolidado no GKR |
-
-## Architectural Milestones
-
-| Marco | Status |
-|---|:---:|
-| A0 — GKR Foundation | 🟩 |
-| A1 — Institutional Architecture Complete | 🟩 |
-| A2 — Functional Architecture Discovery | 🟦 Active |
-| A3 — Operational Architecture | ⬜ |
-| A4 — Platform Engineering | ⬜ |
-| A5 — Canon 1.0 | ⬜ |
+| M2.0 — Architectural Evolution Hypothesis | Experimental | Preservar hipóteses fora da Canon |
+| GEA-PLM-001 — Permanence Layer Model | Validated | Organizar ativos por permanência e governança |
+| A1 — Institutional Architecture Complete | Completed | Macroestrutura institucional concluída |
+| A2 — Functional Architecture Discovery | Active | Descobrir Core Capabilities por evidências |
+| A2-B2 — Foundation Discovery Complete | Working baseline | Encerramento analítico da Foundation 6/6 |
+| GCCM-001 | Discovery 0.4.0 | Descoberta e validação de Core Capabilities |
 
 ## A2 — Functional Architecture Discovery
-
-### Entregável ativo
-
-`GCCM-001 — Guivos Core Capability Model`, versão `0.2.0`.
 
 ### Estado do GCCM
 
 | Elemento | Estado |
 |---|:---:|
-| Propósito e pergunta arquitetural | 🟩 |
-| Definição de Core Capability | 🟩 |
-| Princípios de descoberta | 🟩 |
-| Core Capability Admission Rule | 🟩 |
-| Testes de destruição e irredutibilidade | 🟩 |
-| Estrutura de evidências | 🟩 |
-| Inventário de evidências | 🟦 Iniciado |
-| Primeira fonte analisada | 🟩 |
-| Agrupamento semântico multifuente | ⬜ |
-| Registro de candidatas | ⬜ |
-| Teste de cobertura da missão | ⬜ |
-| Validação arquitetural | ⬜ |
-| Catálogo canônico | ⬜ |
+| Método de descoberta | Consolidado |
+| Evidence Extraction | Concluída na Foundation |
+| Evidence Convergence | Aplicada provisoriamente |
+| Confidence Assessment | Aplicado |
+| Foundation Evidence Matrix | Próxima atividade |
+| A2-R01 — Foundation Architecture Review | Pendente |
+| Semantic Clustering multiarquitetura | Pendente |
+| Registro de candidatas | Vazio |
+| Catálogo canônico | Vazio |
 
-> Nenhuma Core Capability está canônica nesta versão.
+> Nenhuma Core Capability está candidata ou canônica nesta versão.
 
-### Primeira Evidence Extraction
+### Resultado bruto da Foundation
 
-| Campo | Resultado |
-|---|---|
-| Fonte | `GEB-P01-F01 — Essência da Guivos` |
-| Estado da fonte | `consolidated` |
-| Afirmações institucionais | 29 |
-| Grupos de significado | 5 |
-| Invariantes provisórios | 6 |
-| Responsabilidades institucionais | 9 |
-| Agrupamentos observados | 6 |
+| Métrica | Quantidade |
+|---|---:|
+| Documentos analisados | 6 |
+| Afirmações institucionais atômicas | 173 |
+| Grupos de significado | 43 |
+| Invariantes provisórios | 50 |
+| Responsabilidades institucionais | 54 |
 | Core Capabilities candidatas | 0 |
 
-### Agrupamentos observados
+### Foundation 6/6
 
-| ID | Agrupamento | Natureza | Estado |
-|---|---|---|---|
-| EV-F01-01 | Compreensão de contexto | Funcional | Observed |
-| EV-F01-02 | Identificação de possibilidades relevantes | Funcional | Observed |
-| EV-F01-03 | Conexão e fortalecimento do ecossistema | Funcional | Observed |
-| EV-F01-04 | Apoio à progressão da jornada | Funcional | Observed |
-| EV-F01-05 | Preservação da autonomia | Constitucional | Observed |
-| EV-F01-06 | Governança de aderência à jornada | Constitucional | Observed |
+| Unidade | Estado |
+|---|---|
+| Essência | Evidence Analysis concluída |
+| Propósito | Evidence Analysis concluída |
+| Missão Operacional | Evidence Analysis concluída |
+| Visão de Longo Prazo | Evidence Analysis concluída |
+| Constituição | Evidence Analysis concluída |
+| Princípios Permanentes | Evidence Analysis concluída |
 
-Os agrupamentos dependem de confirmação cruzada. Não representam Core Capabilities.
+### Agrupamentos recorrentes
 
-### Aprendizados registrados
+1. Compreensão de contexto.
+2. Identificação de possibilidades relevantes.
+3. Conexão e fortalecimento do ecossistema.
+4. Apoio à progressão da jornada.
+5. Preservação da autonomia.
+6. Governança de aderência à jornada.
+7. Universalidade e inclusão contextual.
+8. Tecnologia subordinada ao propósito.
+9. Ecossistema irredutível a produtos.
+10. Coerência arquitetural sob variação.
+11. Conhecimento como patrimônio permanente.
+12. Simplicidade e suficiência arquitetural.
+13. Oportunidade subordinada à evolução.
 
-- a Foundation produz identidade, limites, obrigações e critérios de decisão;
-- evidências funcionais e restrições constitucionais não devem ser confundidas;
-- nem toda evidência deve originar uma Core Capability;
-- `Institutional Functions` foi rejeitada como camada arquitetural permanente;
-- agrupamentos analíticos permanecem ferramentas do método até demonstração de valor arquitetural próprio.
+### Relações institucionais consolidadas
 
-## Pending Strategic Domains
+```text
+Evolução = finalidade
+Oportunidade = meio
+Experiência = realização de valor
+Relacionamentos = patrimônio do ecossistema
+Conhecimento = compreensão e patrimônio
+IA = mecanismo de interpretação
+Participante = titular da decisão
+Arquitetura = estrutura permanente
+Implementação = realização progressiva
+```
 
-| Tema | Estado | Dependência | Observação |
-|---|---|---|---|
-| Enterprise Economic Model | Planned / Deferred | GCCM, Business Outcomes e Core Business Capabilities | Pendência formal da Business Architecture |
-| Global Governance Model | Planned | Governance Architecture e expansão global | Escopo ainda não definido |
-| Organizational Model | Planned | Business Outcomes, Capabilities e Value Chains | Previsto em BA-ORG-001 |
-| Operating Model | Planned | Organizational Model e PRA | Previsto em BA-ORG-002 |
-| AI Governance | Planned | AI, Data Governance e Security Reference Architectures | Aguardar A3 |
-| Knowledge Graph Logical Model | Planned | GCCM, PRA e Data & Intelligence Architecture | Aguardar definição conceitual do domínio |
-| Enterprise Metrics Framework | Planned | Outcomes, Economic Model e Operating Model | Aguardar dependências |
+### Aprendizados
 
-### Enterprise Economic Model
+- a Foundation produz identidade, finalidade, limites, compromissos e critérios permanentes;
+- agrupamentos analíticos não são Core Capabilities;
+- nenhuma Capability nasce de uma única fonte;
+- hipóteses permanecem fora da Canon;
+- execução e evolução metodológica permanecem separadas;
+- o método só muda diante de limitação concreta demonstrada.
 
-Escopo preliminar reconhecido:
+## Próximo gate
 
-- geração, captura e distribuição de valor;
-- compartilhamento de valor entre participantes do ecossistema;
-- reinvestimento;
-- incentivos econômicos;
-- sustentabilidade de longo prazo;
-- monetização;
-- efeitos de rede;
-- equilíbrio entre impacto e sustentabilidade empresarial.
+`A2-R01 — Foundation Architecture Review`.
 
-O registro é uma pendência estratégica. Não cria uma nova arquitetura nem antecipa decisões sobre monetização, preços ou mecanismos econômicos.
+Objetivos:
 
-## Arquitetura institucional
-
-| Ativo | Estado |
-|---|:---:|
-| Foundation Architecture | 🟩 |
-| Guivos Enterprise Architecture | 🟩 |
-| Permanence Layer Model | 🟩 |
-| Institutional Permanence | 🟩 |
-| Vision First | 🟩 |
-| Architectural Gravity | 🟩 |
-| Progressive Realization | 🟩 |
-| Downward Influence | 🟩 |
-| Layer Integrity | 🟩 |
-
-### Camadas de permanência
-
-| Camada | Horizonte | Finalidade |
-|---|---|---|
-| Permanent Architecture | Décadas | Identidade, princípios, Canon e macroestrutura |
-| Reference Architecture | Anos | Melhor forma arquitetural conhecida de realizar a visão |
-| Enterprise Programs | Meses e ciclos plurianuais | Programas estratégicos que realizam a arquitetura |
-| Enterprise Delivery | Dias, semanas e releases | Execução, código, infraestrutura e releases |
-
-## Ciclo de maturidade experimental
-
-`Idea -> Hypothesis -> Experimental -> Validated -> Canonical -> Deprecated`
-
-A progressão não é automática e nenhum ativo entra na Canon apenas por elegância conceitual.
-
-## Hipóteses arquiteturais estruturantes
-
-| Ativo | Natureza | Estado | Observação |
-|---|---|---|---|
-| Guivos Meta-Model — GMM | Architectural Meta-Hypothesis | Hypothesis | Fora da Canon |
-| Guivos Knowledge System — GKS | Domínio institucional proposto | Hypothesis | Fora da Canon |
-| Knowledge Validation Framework — GKVF | Componente candidato | Idea | Não iniciado |
-| Knowledge Validation Standards — KVS | Padrões candidatos | Idea | Não iniciado |
+1. construir a Foundation Evidence Matrix;
+2. deduplicar invariantes e responsabilidades;
+3. avaliar frequência, centralidade e consistência;
+4. identificar lacunas, contradições e sobreposições;
+5. avaliar readiness para o Modelo Fundamental e demais arquiteturas;
+6. registrar decisão arquitetural formal.
 
 ## Maturidade das arquiteturas
 
 | Arquitetura | Maturidade |
 |---|---|
-| Foundation Architecture | Stable |
-| Ecosystem Architecture / GEB | Validated no modelo fundamental; demais modelos em evolução |
+| Foundation Architecture | Analytically complete; review pending |
+| Ecosystem Architecture / GEB | Modelo fundamental existente; análise A2 pendente |
 | Product Architecture | Stable na estrutura superior |
-| Business Architecture | Validated em Foundations e Strategy inicial; Outcomes e Economic Model pendentes |
+| Business Architecture | Foundations e Strategy inicial validadas |
 | Data & Intelligence Architecture | Draft |
 | Technology Architecture | Draft |
 | Governance Architecture | Draft |
 | Knowledge Architecture | Draft |
-| Reference Architecture / GCCM | Discovery 0.2.0 |
+| Reference Architecture / GCCM | Discovery 0.4.0 |
 
-## Foundation Architecture
+## Hipóteses preservadas fora da Canon
 
-| Unidade | Status |
-|---|:---:|
-| Essência | 🟩 Analisada na A2.2 |
-| Propósito | 🟩 |
-| Missão Operacional | 🟩 |
-| Visão de Longo Prazo | 🟩 |
-| Constituição | 🟩 |
-| Princípios Permanentes | 🟩 |
-| PP-11 — Maturidade institucional | 🟩 |
-| PP-12 — Visão antes da execução | 🟩 |
-| PP-13 — Realização progressiva | 🟩 |
-| PP-14 — Permanência proporcional à mudança | 🟩 |
-
-## Ecosystem Architecture / GEB
-
-| Unidade | Status |
-|---|:---:|
-| KU-FM-001 — Fenômeno da Evolução | 🟩 |
-| KU-FM-002 — Modelo Fundamental da Jornada | 🟩 |
-| KU-FM-003 — Quatro Naturezas Fundamentais | 🟩 |
-| Modelo do Participante | 🟨 |
-| Identidade | 🟨 |
-| Capacidades | 🟨 |
-| Papéis | 🟨 |
-| Modelo da Oportunidade | 🟨 |
-| Modelo da Experiência | ⬜ |
-| Relacionamentos | ⬜ |
-| Conhecimento do Ecossistema | ⬜ |
-
-## Product Architecture
-
-| Produto | Status |
-|---|:---:|
-| Guivos Journey | 🟩 |
-| Guivos Marketplace | 🟧 |
-| Guivos Travel | 🟩 |
-| Guivos Business | 🟩 |
-| Guivos Media | 🟩 |
-| Guivos Intelligence | 🟩 |
-| Guivos Ads | 🟩 |
-
-## Business Architecture
-
-| Ordem | Unidade | Maturidade | Status |
-|---:|---|---|:---:|
-| 1 | BA-FND-001 — Business Architecture Foundations | Validated | 🟩 |
-| 2 | BA-STR-001 — Business Transformation Model | Validated | 🟩 |
-| 3 | BA-STR-002 — Business Outcomes | Draft | 🟧 |
-| 4 | BA-CAP-001 — Core Business Capabilities | Draft | ⬜ |
-| 5 | BA-CAP-002 — Capability Map | Draft | ⬜ |
-| 6 | BA-STR-003 — Value Chains | Draft | ⬜ |
-| 7 | Enterprise Economic Model | Planned / Deferred | 🟨 |
-| 8 | BA-ORG-001 — Organizational Model | Draft | ⬜ |
-| 9 | BA-ORG-002 — Operating Model | Draft | ⬜ |
-| 10 | BA-EXE-001 — Business Processes | Draft | ⬜ |
-| 11 | BA-EXE-002 — KPIs & Metrics | Draft | ⬜ |
-
-## Research
-
-| Ativo | Status |
-|---|:---:|
-| Research Domain | 🟩 |
-| RP-001 — Ecosystem Research Program | 🟧 |
-| RP-001 Research Protocol | 🟩 |
-| Estado da Arte — Ciclo 1 | 🟨 |
-| MS-001 | 🟧 |
-| Evidence Registry | ⬜ |
-| Ecosystem Phenomena Catalog — EPC | ⬜ |
-| Architectural Recommendations | ⬜ |
-
-O Evidence Registry e a validação da MS-001 permanecem pendentes. A abertura da A2 não os torna concluídos.
+- Permanent Responsibilities como camada formal;
+- ontologia institucional;
+- transições positivas de estado como objeto institucional;
+- Architectural Evidence Registry específico da A2;
+- ADM-001;
+- Architecture Reviews como padrão definitivo da GEA;
+- GMM, GKS, GKVF e KVS.
 
 ## Governança documental
 
 | Ativo | Status |
-|---|:---:|
-| GKR como representação canônica da Guivos madura | 🟩 |
-| Markdown como formato oficial | 🟩 |
-| Pipeline GitHub -> Markdown -> Mermaid -> Site -> PDF | 🟩 |
-| Glossário Canônico | 🟩 |
-| Matriz de Consolidação Canônica | 🟩 |
-| Roadmap Arquitetural | 🟩 |
-| Architectural Milestones | 🟩 |
-| GCCM-001 | 🟦 0.2.0 |
-| ADR-003 — Architectural Ownership | 🟩 |
-| ADR-004 — Architectural Dependency Order | 🟩 |
-| ADR-005 — Architectural Traceability Principle | 🟩 |
-| AV-001 — GEA Structure Validation | 🟧 |
-
-## Fase atual
-
-`A2 — Functional Architecture Discovery`, em execução.
-
-## Objetivo principal
-
-Descobrir, validar e consolidar o conjunto mínimo e suficiente de Core Capabilities permanentes da Guivos, com rastreabilidade até as evidências existentes no GKR.
+|---|---|
+| Roadmap Arquitetural | 2.6.0 |
+| GCCM-001 | 0.4.0 |
+| A2 Baseline B1 | Histórico 5/6 |
+| A2 Baseline B2 | Atual 6/6 |
+| A2-R01 | Próximo gate |
 
 ## Próxima atividade
 
-Analisar a próxima unidade da Foundation Architecture e confrontar suas evidências com os seis agrupamentos observados na Essência.
+Iniciar `A2-R01 — Foundation Architecture Review` pela Foundation Evidence Matrix.
 
 ## Última consolidação
 
-Primeira Evidence Extraction do GCCM registrada em 01/07/2026, com análise de `GEB-P01-F01 — Essência da Guivos` e nenhuma Core Capability promovida.
+Evidence Extraction da Foundation concluída em 02/07/2026, com 6/6 fontes analisadas e nenhuma Core Capability promovida.
