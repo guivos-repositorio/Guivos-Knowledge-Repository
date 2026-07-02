@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository serão registradas neste arquivo.
 
+## 0.17.0 — Foundation Discovery Complete
+
+- Conclusão da Evidence Extraction das seis unidades da Foundation.
+- Inclusão de `Evidence Analysis — A2` em Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes.
+- Consolidação bruta de 173 afirmações institucionais atômicas, 43 grupos de significado, 50 invariantes provisórios e 54 responsabilidades institucionais.
+- Atualização do `GCCM-001 — Guivos Core Capability Model` para a versão `0.4.0`.
+- Registro da estrutura analítica `Documento Canônico -> Evidence Analysis -> Evidence Matrix -> Architecture Review`.
+- Criação da `A2 Baseline B2 — Foundation Discovery Complete`.
+- Atualização do Roadmap Arquitetural para a versão `2.6.0`.
+- Atualização do Knowledge Board para a versão `2.6.0`.
+- Registro de `A2-R01 — Foundation Architecture Review` como próximo gate.
+- Preservação de hipóteses fora da Canon.
+- Nenhuma Core Capability candidata ou canônica foi registrada.
+
 ## 0.16.0 — First GCCM Evidence Extraction
 
 - Atualização do `GCCM-001 — Guivos Core Capability Model` para a versão `0.2.0`.
