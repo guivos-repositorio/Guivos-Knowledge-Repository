@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 2.6.0
+version: 3.0.0
 owner: Guivos
 last_updated: 2026-07-02
 ---
@@ -14,13 +14,13 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 - **Baseline institucional vigente:** `M1 — Research Foundation Complete` — `frozen`.
 - **Checkpoint experimental vigente:** `M2.0 — Architectural Evolution Hypothesis`.
-- **Baseline de trabalho da A2:** `A2-B2 — Foundation Discovery Complete`.
+- **Baseline vigente da Foundation:** `A2-B3 — Foundation Architecture Review Complete` — `frozen`.
 - **Modelo institucional vigente:** `GEA-PLM-001 — Permanence Layer Model` — `validated`.
 - **Marco concluído:** `A1 — Institutional Architecture Complete`.
 - **Fase ativa:** `A2 — Functional Architecture Discovery`.
+- **Revisão concluída:** `A2-R01 — Foundation Architecture Review`.
+- **Próxima revisão autorizada:** `A2-R02 — Fundamental Model Review`.
 - **Entregável ativo:** `GCCM-001 — Guivos Core Capability Model` — `discovery`, versão `0.4.0`.
-- **Última entrega:** Evidence Extraction da Foundation concluída em 6/6.
-- **Próximo gate:** `A2-R01 — Foundation Architecture Review`.
 - **Core Capabilities candidatas:** 0.
 - **Core Capabilities canônicas:** 0.
 
@@ -38,6 +38,20 @@ graph LR
     ED --> L[Resultados e Aprendizado]
 ```
 
+## Ciclo de revisão arquitetural vigente
+
+```text
+Evidence Analysis
+  -> Evidence Matrix
+  -> Canonical Consolidation
+  -> Readiness Assessment
+  -> Architectural Validation
+  -> Architectural Audit
+  -> Baseline
+```
+
+O método permanece estável e somente será alterado diante de limitação objetiva demonstrada por aplicação prática.
+
 ## A0 — GKR Foundation
 
 **Estado:** Completed.
@@ -54,10 +68,8 @@ graph LR
 - [x] Consolidar a macroestrutura da GEA.
 - [x] Criar `GEA-PLM-001 — Permanence Layer Model`.
 - [x] Formalizar Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.
-- [x] Formalizar Institutional Permanence, Vision First, Architectural Gravity, Progressive Realization, Downward Influence e Layer Integrity.
+- [x] Formalizar os princípios de permanência, visão, gravidade arquitetural e realização progressiva.
 - [x] Registrar o GKR como representação canônica da Guivos madura.
-
-A conclusão de A1 não encerra o aprofundamento dos modelos de Participantes, Oportunidades, Experiências, Relacionamentos, Conhecimento, Outcomes, Capabilities, Value Chains, Organization, Data, Technology e Governance.
 
 ## A2 — Functional Architecture Discovery
 
@@ -87,26 +99,36 @@ Descobrir o conjunto mínimo e suficiente de Core Capabilities permanentes que e
 - [x] Analisar F04 — Visão de Longo Prazo.
 - [x] Analisar F05 — Constituição.
 - [x] Analisar F06 — Princípios Permanentes.
-- [x] Registrar Evidence Analysis junto às seis fontes.
 - [x] Consolidar 173 assertions, 43 meanings, 50 invariants e 54 responsibilities em estado bruto.
 - [x] Manter o registro de candidatas vazio.
 
-### A2.3 — Foundation Architecture Review
+### A2.3 — A2-R01 Foundation Architecture Review
 
-- [ ] Criar `A2-R01 — Foundation Architecture Review`.
-- [ ] Construir a Foundation Evidence Matrix.
-- [ ] Deduplicar invariantes e responsabilidades.
-- [ ] Classificar agrupamentos por frequência, centralidade e consistência.
-- [ ] Identificar lacunas, contradições, sobreposições e conceitos órfãos.
-- [ ] Avaliar readiness para o Modelo Fundamental, Business Architecture, Product Architecture e GCCM.
-- [ ] Registrar decisão arquitetural formal.
+**Estado:** Completed — Frozen in A2-B3.
 
-### A2.4 — Modelo Fundamental do GEB
+- [x] Criar `A2-R01-FEM-001 — Foundation Evidence Matrix`.
+- [x] Criar `A2-R01-CC-001 — Foundation Canonical Consolidation`.
+- [x] Consolidar 50 invariantes em 18 invariantes da Foundation.
+- [x] Consolidar 54 responsabilidades em 16 responsabilidades da Foundation.
+- [x] Identificar lacunas, contradições, sobreposições e conceitos absorvidos.
+- [x] Criar `A2-R01-RA-001 — Foundation Readiness Assessment`.
+- [x] Registrar `AV-A2-001 — Foundation Architecture Validation`.
+- [x] Criar e aplicar `GEA-AUDIT-001 — Architectural Audit Framework`.
+- [x] Registrar `A2-R01-AUD-001` com resultado `PASS`.
+- [x] Congelar `A2-B3 — Foundation Architecture Review Complete`.
 
+### A2.4 — A2-R02 Fundamental Model Review
+
+**Estado:** Authorized — Next.
+
+- [ ] Abrir formalmente `A2-R02`.
 - [ ] Analisar `KU-FM-001 — Fenômeno da Evolução`.
 - [ ] Analisar `KU-FM-002 — Modelo Fundamental da Jornada`.
 - [ ] Analisar `KU-FM-003 — Quatro Naturezas Fundamentais`.
-- [ ] Confrontar evidências com a Foundation Evidence Matrix.
+- [ ] Construir a Fundamental Model Evidence Matrix.
+- [ ] Executar Canonical Consolidation do Modelo Fundamental.
+- [ ] Avaliar readiness, validar, auditar e congelar a próxima baseline.
+- [ ] Confrontar os resultados com a Foundation A2-B3.
 
 ### A2.5 — Product e Business Architecture
 
@@ -150,7 +172,7 @@ Descobrir o conjunto mínimo e suficiente de Core Capabilities permanentes que e
 
 **Estado:** Planned.
 
-Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais, com rastreabilidade suficiente para orientar programas e implementações.
+Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais.
 
 ## Open Architecture Topics
 
@@ -168,19 +190,13 @@ Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas d
 
 - Sistema Humano de Evolução;
 - transformação como fenômeno fundamental;
-- mudança ou transição de estado como unidade mínima;
+- mudança de estado como unidade mínima;
 - Worldview;
 - Knowledge-Centric Enterprise;
-- Permanent Responsibilities como camada formal;
-- ontologia institucional;
-- Architectural Evidence Registry específico da A2;
-- ADM-001;
-- Architecture Reviews como padrão definitivo da GEA;
-- Guivos Meta-Model — GMM;
-- Guivos Knowledge System — GKS;
-- Knowledge Validation Framework — GKVF;
-- Knowledge Validation Standards — KVS.
+- taxonomias metodológicas adicionais;
+- GEA Manifesto;
+- GMM, GKS, GKVF e KVS.
 
 ## Ponto exato de retomada
 
-Executar `A2-R01 — Foundation Architecture Review`, iniciando pela Foundation Evidence Matrix e pela deduplicação dos 50 invariantes e 54 responsabilidades provisórias.
+Abrir `A2-R02 — Fundamental Model Review` e iniciar a Evidence Analysis de `KU-FM-001 — Fenômeno da Evolução`, utilizando a Foundation A2-B3 como referência normativa.
