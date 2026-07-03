@@ -2,6 +2,18 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.19.0 — Guia Oficial da Guivos
+
+- Criação do domínio público em `docs/public/`.
+- Criação de `GPD-000 — Documentação Pública da Guivos`.
+- Criação de `GOG-001 — Guia Oficial da Guivos`, versão `1.0.0`, estado `public-canon`.
+- Tradução pública da Foundation, da arquitetura institucional e da arquitetura superior de produtos.
+- Inclusão de definição resumida, resumo executivo, explicação detalhada, exemplos práticos, jornada ilustrativa e perguntas frequentes.
+- Inclusão de classificação de maturidade dos produtos e diferenciação entre consolidado, em validação, em desenvolvimento, planejado e visão futura.
+- Registro de informações que ainda exigem validação antes de divulgação pública detalhada.
+- Inclusão do Guia Oficial na navegação principal do MkDocs.
+- Formalização do Guia como documento vivo derivado da Canon vigente do GKR.
+
 ## 0.18.0 — Foundation Architecture Frozen
 
 - Conclusão de `A2-R01 — Foundation Architecture Review`.
