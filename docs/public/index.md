@@ -2,7 +2,7 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-07-03
 ---
@@ -24,6 +24,14 @@ A documentação pública deve partir da realidade do leitor. Conceitos como evo
 ## Relação com grupos e organizações existentes
 
 A Guivos não substitui nem renomeia grupos, movimentos, comunidades, igrejas, universidades, empresas, ONGs ou demais iniciativas existentes. A documentação pública deve explicar como essas iniciativas poderão preservar sua identidade, disponibilizar oportunidades, receber participantes e formar conexões dentro do ecossistema.
+
+## Princípio de aderência ao ecossistema
+
+A documentação pública deve deixar claro que nem toda empresa, oferta, campanha ou anúncio pertence automaticamente à Guivos.
+
+A participação exige relação demonstrável com o propósito, utilidade real para pessoas ou organizações, respeito à autonomia, legalidade, transparência e contribuição para jornadas, experiências, relacionamentos, conhecimento ou impacto positivo.
+
+Atividades incompatíveis com esses critérios devem ser explicitamente rejeitadas. Atividades legítimas, mas desconectadas do propósito, não possuem aderência automática.
 
 ## Regra de atualização
 
