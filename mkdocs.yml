@@ -57,6 +57,9 @@ markdown_extensions:
 
 nav:
   - Início: index.md
+  - Guia Oficial da Guivos:
+      - Visão Geral: public/index.md
+      - Guia Completo: public/guia-oficial-da-guivos.md
   - Research:
       - Visão Geral: research/index.md
       - RP-001 — Ecosystem Research Program:
