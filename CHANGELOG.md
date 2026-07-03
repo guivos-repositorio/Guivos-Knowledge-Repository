@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.20.0 — Guia Oficial da Guivos 2.0
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `2.0.0`.
+- Reestruturação da narrativa pública para partir de situações concretas vividas pelo leitor.
+- Definição prática de evolução, momento atual, jornada, próximo passo e oportunidade.
+- Explicação direta sobre o que as pessoas podem buscar: carreira, renda, educação, saúde, espiritualidade, relacionamentos, esportes, viagens, empreendedorismo, voluntariado e participação comunitária.
+- Detalhamento do funcionamento do Guivos Journey e dos demais produtos por meio de exemplos práticos.
+- Inclusão de empresas, universidades, igrejas, movimentos, ONGs, órgãos públicos, especialistas, grupos esportivos e comunidades como possíveis ofertantes de oportunidades.
+- Formalização pública de que a Guivos não substitui, renomeia ou absorve a identidade de grupos, movimentos e organizações existentes.
+- Inclusão de exemplos de grupos de pedal, corrida, estudos, viagens, oração, ações sociais, ajuda comunitária, proteção animal, redes profissionais e movimentos como Legendários.
+- Explicação de como pessoas poderão encontrar e ingressar em grupos e como diferentes iniciativas poderão formar conexões dentro do ecossistema.
+- Inclusão de aviso de que organizações citadas como exemplos não representam parceria formal sem anúncio específico.
+- Atualização de `GPD-000 — Documentação Pública da Guivos` para a versão `1.1.0`, com novo princípio editorial orientado por exemplos concretos.
+
 ## 0.19.0 — Guia Oficial da Guivos
 
 - Criação do domínio público em `docs/public/`.
