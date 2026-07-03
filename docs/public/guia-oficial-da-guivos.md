@@ -2,7 +2,7 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-07-03
 classification: Documento Institucional Público
@@ -20,7 +20,7 @@ update_cycle: Continuous
 | Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará, quais são seus limites e como pessoas e organizações poderão participar |
 | Público | Pessoas, empresas, organizações, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
 | Responsável institucional | Guivos |
-| Versão | 2.1.0 |
+| Versão | 2.2.0 |
 | Última atualização | 03/07/2026 |
 | Status | Public Canon |
 | Fonte principal | Guivos Knowledge Repository |
@@ -201,6 +201,78 @@ Depois, essa intenção pode se transformar em passos concretos:
 8. definir um novo passo.
 
 É essa jornada contínua que o **Guivos Journey** pretende apoiar.
+
+## Ciclo Contínuo de Evolução da Guivos
+
+O Ciclo Contínuo de Evolução da Guivos representa a forma como pessoas e organizações avançam dentro do ecossistema.
+
+Ele não possui um ponto final definitivo. Cada experiência pode produzir aprendizados, resultados e mudanças que formam um **Novo Momento Atual**. Esse novo estado passa a ser o ponto de partida do ciclo seguinte.
+
+```mermaid
+flowchart TD
+    A[Momento Atual]
+    B[Objetivos]
+    C[Próximo Passo]
+    D[Oportunidades Compatíveis]
+    E[Experiência]
+    F[Evidências de Evolução]
+    G[Novo Momento Atual]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> A
+```
+
+> **O ciclo nunca termina. Cada transformação gera um novo Momento Atual, que pode trazer novas necessidades, novos interesses, novos objetivos e novas oportunidades.**
+
+### O que acontece em cada etapa
+
+- **Momento Atual:** representa a realidade da pessoa naquele período;
+- **Objetivos:** indicam o que ela deseja alcançar, desenvolver ou viver;
+- **Próximo Passo:** define qual mudança parece mais relevante agora;
+- **Oportunidades Compatíveis:** são os meios concretos que podem apoiar esse passo;
+- **Experiência:** acontece quando a pessoa participa efetivamente de uma oportunidade;
+- **Evidências de Evolução:** mostram resultados, aprendizados, relações ou mudanças produzidas;
+- **Novo Momento Atual:** incorpora o que mudou e inicia um novo ciclo.
+
+### Exemplo prático
+
+Rafael deseja cuidar melhor da saúde.
+
+Seu primeiro próximo passo é começar uma atividade física leve. Ele encontra um grupo de caminhada, participa de alguns encontros e percebe que gosta de atividades coletivas.
+
+Essa experiência produz mudanças: Rafael passa a ter mais disposição, cria novas amizades e desenvolve interesse por ciclismo.
+
+Agora seu momento atual é diferente. O próximo ciclo poderá começar com outro objetivo, como participar de um grupo de pedal para iniciantes.
+
+A jornada não terminou. Ela evoluiu.
+
+### Onde o ecossistema participa
+
+As oportunidades podem ser disponibilizadas por empresas, universidades, igrejas, movimentos, comunidades, ONGs, especialistas, grupos esportivos e outros parceiros.
+
+```mermaid
+flowchart LR
+    P[Participante e seu Momento Atual]
+    G[Guivos organiza contexto e possibilidades]
+    O[Oportunidades Compatíveis]
+    E[Empresas, universidades, igrejas, movimentos, comunidades, ONGs e parceiros]
+    X[Experiência]
+    N[Novo Momento Atual]
+
+    E --> O
+    P --> G
+    G --> O
+    O --> X
+    X --> N
+    N --> P
+```
+
+A Guivos atua principalmente na conexão entre o que a pessoa busca e as oportunidades que já existem ou serão oferecidas pelo ecossistema.
 
 ---
 
@@ -744,6 +816,7 @@ Monetização não substitui propósito.
 - estrutura superior dos produtos;
 - definições de Guivos Journey, Marketplace, Travel, Business, Media, Intelligence e Ads;
 - limites públicos de aderência ao ecossistema;
+- Ciclo Contínuo de Evolução da Guivos;
 - governança documental e arquitetural;
 - Guia Oficial da Guivos.
 
@@ -799,6 +872,10 @@ Não. Relacionamentos podem fazer parte da experiência, mas a Guivos possui esc
 ## A Guivos é um marketplace?
 
 Não. Existe um produto comercial, mas a Guivos não é definida por transações.
+
+## O que é o Ciclo Contínuo de Evolução da Guivos?
+
+É a representação da jornada em que cada experiência pode produzir mudanças e formar um Novo Momento Atual. Esse novo estado inicia outro ciclo, por isso a jornada não possui um fim definitivo.
 
 ## A Guivos aceita qualquer empresa ou anúncio?
 
@@ -871,6 +948,8 @@ A Guivos existe para ajudar pessoas e organizações a transformar desejos amplo
 
 Ela pretende conectar quem busca evoluir a oportunidades, experiências, grupos, movimentos, empresas, universidades, igrejas, comunidades, organizações sociais, especialistas e parceiros.
 
+A jornada não possui um encerramento definitivo. Cada experiência pode gerar um novo momento atual e abrir novas possibilidades.
+
 A Guivos não pretende reunir qualquer anúncio, produto ou empresa apenas por interesse comercial.
 
 Seu crescimento deverá respeitar critérios de relevância, utilidade, legalidade, transparência e aderência ao propósito.
@@ -886,6 +965,7 @@ A tecnologia apoiará esse processo, mas a autonomia continuará pertencendo às
 | 1.0.0 | 03/07/2026 | Criação da primeira versão pública oficial |
 | 2.0.0 | 03/07/2026 | Reestruturação da narrativa, definição prática de evolução, momento atual, jornada, grupos e parceiros |
 | 2.1.0 | 03/07/2026 | Inclusão do que a Guivos não é, limites de atuação, critérios de aderência e ampliação do Guivos Business |
+| 2.2.0 | 03/07/2026 | Inclusão do Ciclo Contínuo de Evolução da Guivos, diagramas da jornada e integração entre participante e ecossistema |
 
 # Regra de atualização contínua
 
@@ -893,6 +973,7 @@ Este documento deverá ser revisto quando houver alteração relevante em:
 
 - identidade, propósito, missão ou visão;
 - definição pública de evolução, jornada ou momento atual;
+- Ciclo Contínuo de Evolução da Guivos;
 - produtos e nomenclaturas;
 - critérios de entrada e permanência no ecossistema;
 - grupos, organizações e modelos de participação;
