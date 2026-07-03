@@ -1,0 +1,3918 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Guia Oficial da Guivos - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-oficial-da-guivos" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guia Oficial da Guivos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/MS-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/evidence-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/ecosystem-phenomena-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/recommendations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/permanence-layer-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference-architecture/gccm-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCCM-001 — Core Capability Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--discovery"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte I — Fundação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte I — Fundação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/01-essence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/02-purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/03-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/04-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/05-constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/06-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte II — Modelo Fundamental
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte II — Modelo Fundamental
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/phenomenon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/fundamental-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/four-fundamental-natures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/marketplace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Marketplace
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--provisional-name"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/ads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-transformation-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance Framework do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance Framework do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Knowledge Consolidation Pipeline
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Audit Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/outcome-governance-method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-FEM-001 — Foundation Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-CC-001-canonical-consolidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-CC-001 — Foundation Canonical Consolidation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-RA-001 — Foundation Readiness Assessment
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--complete"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-A2-001-foundation-architecture-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-A2-001 — Foundation Architecture Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved_with_recommendations"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-AUD-001 — Foundation Architecture Audit
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--passed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-001-gea-structure-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-002-foundation-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-003-architectural-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-004-architectural-dependency-order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-005-architectural-traceability-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/architectural-milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/BASELINE-M1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baseline M1
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--frozen"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-M2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkpoint M2.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--experimental"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B1 — Foundation 5/6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working-baseline"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B2 — Foundation 6/6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working-baseline"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B3 — Foundation Frozen
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--frozen"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/knowledge-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Board
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/site-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline de Publicação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#controle-do-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controle do documento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-resumida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição resumida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-executivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo executivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/public/guia-oficial-da-guivos.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="guia-oficial-da-guivos">Guia Oficial da Guivos<a class="headerlink" href="#guia-oficial-da-guivos" title="Permanent link">&para;</a></h1>
+<h2 id="controle-do-documento">Controle do documento<a class="headerlink" href="#controle-do-documento" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Informação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nome</td>
+<td>Guia Oficial da Guivos</td>
+</tr>
+<tr>
+<td>Finalidade</td>
+<td>Apresentar publicamente a Guivos de forma clara, acessível e atualizada</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Pessoas, empresas, organizações, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral</td>
+</tr>
+<tr>
+<td>Responsável institucional</td>
+<td>Guivos</td>
+</tr>
+<tr>
+<td>Versão</td>
+<td>1.0.0</td>
+</tr>
+<tr>
+<td>Última atualização</td>
+<td>03/07/2026</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Public Canon</td>
+</tr>
+<tr>
+<td>Fonte principal</td>
+<td>Guivos Knowledge Repository</td>
+</tr>
+<tr>
+<td>Natureza</td>
+<td>Documento vivo, atualizado conforme a evolução oficial do repositório</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Este guia traduz para linguagem pública as decisões consolidadas no Guivos Knowledge Repository. Ele não substitui os documentos arquiteturais internos e não apresenta hipóteses, discussões preliminares ou planos não validados como fatos concluídos.</p>
+</blockquote>
+<h2 id="definicao-resumida">Definição resumida<a class="headerlink" href="#definicao-resumida" title="Permanent link">&para;</a></h2>
+<p>A Guivos é um ecossistema criado para ajudar pessoas, empresas, organizações e coletivos a encontrar oportunidades relevantes, viver experiências, construir relacionamentos e avançar em suas jornadas de evolução.</p>
+<p>Tecnologia, inteligência artificial, dados, conteúdos, viagens, soluções empresariais e produtos comerciais são meios utilizados para cumprir esse propósito. Nenhum deles, isoladamente, define a Guivos.</p>
+<h2 id="resumo-executivo">Resumo executivo<a class="headerlink" href="#resumo-executivo" title="Permanent link">&para;</a></h2>
+<p>A Guivos nasce da percepção de que muitas pessoas e organizações possuem objetivos, necessidades e potencial, mas encontram dificuldade para descobrir o próximo passo mais adequado ao momento que vivem.</p>
+<p>Informações existem em grande quantidade, porém estão espalhadas. Cursos aparecem em uma plataforma, empregos em outra, viagens em outra, projetos sociais em outra e comunidades em espaços separados. O problema não é apenas a falta de oportunidades. Muitas vezes, o problema é não saber qual oportunidade faz sentido agora.</p>
+<p>A proposta da Guivos é organizar um ecossistema em que participantes possam compreender melhor seu contexto, identificar próximos passos, encontrar oportunidades, participar de experiências, formar relacionamentos e produzir conhecimento que fortaleça futuras jornadas.</p>
+<p>A Guivos não pretende decidir a vida das pessoas. Seu papel é ampliar possibilidades, facilitar conexões e apoiar decisões, preservando a autonomia de cada participante.</p>
+<p>Seus produtos foram organizados para atuar de forma integrada:</p>
+<ul>
+<li><strong>Guivos Journey</strong> apoia a jornada contínua do participante;</li>
+<li><strong>Guivos Marketplace</strong> organiza a oferta e comercialização de produtos, serviços e ativos, embora o nome comercial ainda seja provisório;</li>
+<li><strong>Guivos Travel</strong> reúne viagens e experiências ligadas a destinos e turismo;</li>
+<li><strong>Guivos Business</strong> entrega soluções para empresas e organizações;</li>
+<li><strong>Guivos Media</strong> produz conteúdos, histórias, vídeos, podcasts, livros e materiais editoriais;</li>
+<li><strong>Guivos Intelligence</strong> transforma dados, contexto e conhecimento em análises e recomendações;</li>
+<li><strong>Guivos Ads</strong> opera publicidade, patrocínios e mídia patrocinada com regras de transparência e relevância.</li>
+</ul>
+<p>A maior parte desse ecossistema ainda está em desenvolvimento ou planejamento. A arquitetura institucional, a Foundation e a estrutura superior dos produtos já foram consolidadas no repositório, mas isso não significa que todos os produtos estejam disponíveis ao público.</p>
+<hr />
+<h1 id="1-o-que-e-a-guivos">1. O que é a Guivos<a class="headerlink" href="#1-o-que-e-a-guivos" title="Permanent link">&para;</a></h1>
+<p>A Guivos é um ecossistema de evolução.</p>
+<p>A palavra <strong>ecossistema</strong> significa, neste contexto, um conjunto de pessoas, empresas, organizações, coletivos, oportunidades, experiências, relacionamentos, conteúdos, serviços e conhecimentos que se fortalecem quando atuam de forma conectada.</p>
+<p>A Guivos não foi concebida como um aplicativo isolado ou como um único serviço. Ela foi estruturada para integrar diferentes formas de gerar valor ao longo da jornada de um participante.</p>
+<p>Uma pessoa pode, por exemplo:</p>
+<ul>
+<li>descobrir uma oportunidade profissional;</li>
+<li>encontrar um grupo esportivo;</li>
+<li>participar de uma experiência de viagem;</li>
+<li>acessar conteúdo relevante;</li>
+<li>conhecer uma organização social;</li>
+<li>acompanhar objetivos pessoais;</li>
+<li>receber recomendações;</li>
+<li>criar relações com outras pessoas e instituições.</li>
+</ul>
+<p>Uma empresa pode:</p>
+<ul>
+<li>estruturar jornadas de desenvolvimento;</li>
+<li>oferecer benefícios;</li>
+<li>divulgar oportunidades;</li>
+<li>acompanhar indicadores;</li>
+<li>criar experiências para colaboradores ou clientes;</li>
+<li>contratar soluções integradas da Guivos.</li>
+</ul>
+<p>Uma organização social pode:</p>
+<ul>
+<li>apresentar projetos;</li>
+<li>encontrar voluntários;</li>
+<li>divulgar necessidades;</li>
+<li>formar parcerias;</li>
+<li>ampliar sua presença em comunidades locais.</li>
+</ul>
+<h3 id="exemplo-pratico">Exemplo prático<a class="headerlink" href="#exemplo-pratico" title="Permanent link">&para;</a></h3>
+<p>Marina mudou de cidade, deseja conhecer pessoas, iniciar uma atividade física e participar de ações sociais. Em vez de procurar separadamente em várias plataformas, ela poderá utilizar a Guivos para identificar oportunidades relacionadas ao seu momento atual. Poderá encontrar um grupo de corrida, um projeto de voluntariado e um conteúdo sobre adaptação a uma nova cidade.</p>
+<p><em>Situação ilustrativa. A disponibilidade real dependerá do estágio de desenvolvimento dos produtos e das oportunidades existentes em cada região.</em></p>
+<h2 id="em-resumo-o-que-isso-significa-para-mim">Em resumo, o que isso significa para mim?<a class="headerlink" href="#em-resumo-o-que-isso-significa-para-mim" title="Permanent link">&para;</a></h2>
+<p>A Guivos pretende reunir, organizar e conectar possibilidades que hoje estão dispersas, ajudando cada participante a compreender o que pode fazer a seguir.</p>
+<hr />
+<h1 id="2-o-problema-que-a-guivos-busca-enfrentar">2. O problema que a Guivos busca enfrentar<a class="headerlink" href="#2-o-problema-que-a-guivos-busca-enfrentar" title="Permanent link">&para;</a></h1>
+<p>A vida oferece muitas possibilidades, mas elas nem sempre chegam às pessoas certas, no momento certo e de forma compreensível.</p>
+<p>Alguns problemas comuns são:</p>
+<ul>
+<li>excesso de informação sem orientação;</li>
+<li>dificuldade para descobrir oportunidades relevantes;</li>
+<li>falta de clareza sobre o próximo passo;</li>
+<li>plataformas desconectadas entre si;</li>
+<li>pouca continuidade após uma experiência;</li>
+<li>relações importantes que se perdem com o tempo;</li>
+<li>empresas que oferecem ações sem compreender o contexto do público;</li>
+<li>projetos sociais com dificuldade para alcançar pessoas e parceiros;</li>
+<li>conhecimento produzido por experiências que não é preservado ou reaproveitado.</li>
+</ul>
+<h3 id="exemplo-pratico_1">Exemplo prático<a class="headerlink" href="#exemplo-pratico_1" title="Permanent link">&para;</a></h3>
+<p>Carlos deseja mudar de área profissional. Ele encontra cursos, vagas, eventos e especialistas, mas não sabe por onde começar. A Guivos pretende ajudá-lo a organizar esse contexto, identificar um próximo passo e encontrar oportunidades compatíveis com esse momento.</p>
+<p>A Guivos não garante que Carlos alcançará um resultado específico. Ela busca ampliar a qualidade das informações, conexões e possibilidades disponíveis para que ele decida com mais clareza.</p>
+<hr />
+<h1 id="3-o-proposito-da-guivos">3. O propósito da Guivos<a class="headerlink" href="#3-o-proposito-da-guivos" title="Permanent link">&para;</a></h1>
+<p>O propósito da Guivos é:</p>
+<blockquote>
+<p><strong>Acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.</strong></p>
+</blockquote>
+<p>Isso significa reduzir a distância entre o momento atual de um participante e um próximo passo possível e relevante.</p>
+<p>A Guivos não estabelece um único conceito de sucesso. Evolução pode significar aprender, trabalhar, viajar, cuidar da saúde, criar relacionamentos, apoiar uma causa, desenvolver uma organização ou viver uma experiência significativa.</p>
+<p>O propósito orienta:</p>
+<ul>
+<li>os produtos;</li>
+<li>as recomendações;</li>
+<li>as parcerias;</li>
+<li>os conteúdos;</li>
+<li>o uso de tecnologia;</li>
+<li>a forma de gerar receita;</li>
+<li>a expansão da empresa.</li>
+</ul>
+<p>Uma decisão que não contribua para a jornada dos participantes deve ser reavaliada.</p>
+<h2 id="o-que-a-guivos-nao-pretende-se-tornar">O que a Guivos não pretende se tornar<a class="headerlink" href="#o-que-a-guivos-nao-pretende-se-tornar" title="Permanent link">&para;</a></h2>
+<p>A Guivos não pretende ser apenas:</p>
+<ul>
+<li>uma rede social;</li>
+<li>uma empresa de viagens;</li>
+<li>uma plataforma de cursos;</li>
+<li>um portal de empregos;</li>
+<li>um aplicativo de eventos;</li>
+<li>um marketplace tradicional;</li>
+<li>uma empresa de inteligência artificial;</li>
+<li>uma comunidade isolada.</li>
+</ul>
+<p>Cada uma dessas atividades pode existir dentro do ecossistema, mas nenhuma representa sua totalidade.</p>
+<hr />
+<h1 id="4-missao-visao-e-principios">4. Missão, visão e princípios<a class="headerlink" href="#4-missao-visao-e-principios" title="Permanent link">&para;</a></h1>
+<h2 id="proposito">Propósito<a class="headerlink" href="#proposito" title="Permanent link">&para;</a></h2>
+<p>Acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.</p>
+<p><strong>Na prática:</strong> entender o contexto antes de recomendar qualquer possibilidade.</p>
+<h2 id="missao">Missão<a class="headerlink" href="#missao" title="Permanent link">&para;</a></h2>
+<p>Ajudar cada participante a evoluir continuamente por meio das oportunidades mais relevantes para seu momento de vida.</p>
+<p><strong>Na prática:</strong> organizar produtos, conteúdos, experiências e conexões para apoiar próximos passos reais.</p>
+<h2 id="visao">Visão<a class="headerlink" href="#visao" title="Permanent link">&para;</a></h2>
+<p>Tornar-se um ecossistema global de descoberta, conexão e desenvolvimento de oportunidades capazes de transformar positivamente a vida de pessoas, organizações e coletivos.</p>
+<p><strong>Na prática:</strong> criar uma estrutura que possa operar em diferentes cidades e países sem abandonar sua identidade.</p>
+<h2 id="principios-orientadores">Princípios orientadores<a class="headerlink" href="#principios-orientadores" title="Permanent link">&para;</a></h2>
+<h3 id="evolucao-como-finalidade">Evolução como finalidade<a class="headerlink" href="#evolucao-como-finalidade" title="Permanent link">&para;</a></h3>
+<p>A evolução do participante é mais importante que a tecnologia utilizada.</p>
+<h3 id="autonomia">Autonomia<a class="headerlink" href="#autonomia" title="Permanent link">&para;</a></h3>
+<p>A decisão final pertence ao participante.</p>
+<h3 id="relevancia-contextual">Relevância contextual<a class="headerlink" href="#relevancia-contextual" title="Permanent link">&para;</a></h3>
+<p>A mesma oportunidade pode ser adequada para uma pessoa e inadequada para outra.</p>
+<h3 id="tecnologia-como-meio">Tecnologia como meio<a class="headerlink" href="#tecnologia-como-meio" title="Permanent link">&para;</a></h3>
+<p>Tecnologia existe para apoiar pessoas e organizações, não para substituí-las.</p>
+<h3 id="conhecimento-como-patrimonio">Conhecimento como patrimônio<a class="headerlink" href="#conhecimento-como-patrimonio" title="Permanent link">&para;</a></h3>
+<p>Experiências e aprendizados devem fortalecer futuras jornadas.</p>
+<h3 id="simplicidade">Simplicidade<a class="headerlink" href="#simplicidade" title="Permanent link">&para;</a></h3>
+<p>A Guivos busca criar apenas estruturas e soluções que tenham utilidade real.</p>
+<h3 id="inclusao-e-validade-global">Inclusão e validade global<a class="headerlink" href="#inclusao-e-validade-global" title="Permanent link">&para;</a></h3>
+<p>A arquitetura deve respeitar diferentes culturas, crenças, países e contextos.</p>
+<h3 id="realizacao-progressiva">Realização progressiva<a class="headerlink" href="#realizacao-progressiva" title="Permanent link">&para;</a></h3>
+<p>A visão de longo prazo será construída por etapas. Nem tudo estará disponível ao mesmo tempo.</p>
+<hr />
+<h1 id="5-para-quem-a-guivos-existe">5. Para quem a Guivos existe<a class="headerlink" href="#5-para-quem-a-guivos-existe" title="Permanent link">&para;</a></h1>
+<h2 id="pessoas">Pessoas<a class="headerlink" href="#pessoas" title="Permanent link">&para;</a></h2>
+<p>Podem descobrir oportunidades, acompanhar objetivos, participar de experiências, consumir conteúdos, formar relacionamentos e contribuir com outras jornadas.</p>
+<h2 id="empresas">Empresas<a class="headerlink" href="#empresas" title="Permanent link">&para;</a></h2>
+<p>Podem oferecer benefícios, oportunidades, programas de desenvolvimento, conteúdos, experiências, campanhas e soluções para públicos internos ou externos.</p>
+<h2 id="organizacoes">Organizações<a class="headerlink" href="#organizacoes" title="Permanent link">&para;</a></h2>
+<p>Incluem escolas, universidades, associações, órgãos públicos, fundações, cooperativas, organizações sociais e outras instituições.</p>
+<h2 id="coletivos-e-comunidades">Coletivos e comunidades<a class="headerlink" href="#coletivos-e-comunidades" title="Permanent link">&para;</a></h2>
+<p>Podem organizar pessoas em torno de interesses, territórios ou causas comuns. Na arquitetura da Guivos, comunidade é uma forma possível de coletivo.</p>
+<h2 id="parceiros">Parceiros<a class="headerlink" href="#parceiros" title="Permanent link">&para;</a></h2>
+<p>Podem oferecer produtos, serviços, experiências, conhecimento, infraestrutura ou apoio institucional.</p>
+<h2 id="criadores-e-especialistas">Criadores e especialistas<a class="headerlink" href="#criadores-e-especialistas" title="Permanent link">&para;</a></h2>
+<p>Podem produzir conteúdos, orientar participantes, desenvolver experiências e compartilhar conhecimento.</p>
+<h2 id="projetos-sociais-e-causas">Projetos sociais e causas<a class="headerlink" href="#projetos-sociais-e-causas" title="Permanent link">&para;</a></h2>
+<p>Podem encontrar voluntários, parceiros, recursos, visibilidade e conexões relevantes.</p>
+<hr />
+<h1 id="6-como-a-guivos-funcionara-na-pratica">6. Como a Guivos funcionará na prática<a class="headerlink" href="#6-como-a-guivos-funcionara-na-pratica" title="Permanent link">&para;</a></h1>
+<p>A experiência poderá começar de diferentes formas. Uma pessoa poderá conhecer a Guivos por um conteúdo, uma recomendação, uma empresa, uma viagem, uma oportunidade ou uma comunidade.</p>
+<p>Em uma experiência completa, o fluxo poderá ocorrer assim:</p>
+<ol>
+<li>o participante entra no ecossistema;</li>
+<li>informa interesses, objetivos ou necessidades;</li>
+<li>a Guivos organiza o contexto disponível;</li>
+<li>possíveis próximos passos são identificados;</li>
+<li>oportunidades relacionadas são apresentadas;</li>
+<li>o participante escolhe se deseja participar;</li>
+<li>a oportunidade gera uma experiência;</li>
+<li>a experiência pode criar relacionamentos e aprendizados;</li>
+<li>esses aprendizados ajudam a compreender o novo momento do participante;</li>
+<li>um novo ciclo pode começar.</li>
+</ol>
+<h3 id="exemplo-pratico_2">Exemplo prático<a class="headerlink" href="#exemplo-pratico_2" title="Permanent link">&para;</a></h3>
+<p>Rafael quer melhorar sua saúde, mas não sabe se começa por academia, corrida ou acompanhamento profissional. Ele informa seus interesses e limitações. A Guivos poderá apresentar conteúdos introdutórios, grupos locais, eventos esportivos e especialistas cadastrados. Rafael decide participar de uma caminhada comunitária. Depois da experiência, registra sua percepção e passa a receber sugestões compatíveis com seu progresso.</p>
+<p>A Guivos não substitui orientação médica ou profissional. Ela pode ajudar Rafael a descobrir opções e organizar sua jornada.</p>
+<hr />
+<h1 id="7-o-ecossistema-guivos">7. O ecossistema Guivos<a class="headerlink" href="#7-o-ecossistema-guivos" title="Permanent link">&para;</a></h1>
+<p>Pense em uma cidade.</p>
+<p>Nela existem pessoas, empresas, escolas, projetos sociais, espaços culturais, grupos esportivos, profissionais, eventos, serviços e oportunidades. Cada elemento funciona por conta própria, mas o valor aumenta quando eles se conectam.</p>
+<p>A Guivos pretende atuar como uma infraestrutura comum para facilitar essas conexões.</p>
+<p>Os produtos compartilham participantes, conhecimento, identidade e governança. Isso significa que uma experiência iniciada em um produto poderá gerar valor em outro.</p>
+<h3 id="exemplo-pratico_3">Exemplo prático<a class="headerlink" href="#exemplo-pratico_3" title="Permanent link">&para;</a></h3>
+<p>Uma pessoa encontra no Guivos Media uma história sobre voluntariado. Pelo Guivos Journey, descobre uma ação local. A organização responsável utiliza o Guivos Business para estruturar a participação. A experiência gera novos relacionamentos e conhecimento para futuras recomendações do Guivos Intelligence.</p>
+<hr />
+<h1 id="8-produtos-plataformas-e-iniciativas">8. Produtos, plataformas e iniciativas<a class="headerlink" href="#8-produtos-plataformas-e-iniciativas" title="Permanent link">&para;</a></h1>
+<h2 id="guivos-journey">Guivos Journey<a class="headerlink" href="#guivos-journey" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> produto responsável por apoiar continuamente a jornada do participante.</p>
+<p><strong>Público principal:</strong> pessoas, organizações e coletivos em jornadas de evolução.</p>
+<p><strong>Problema que busca resolver:</strong> falta de continuidade e orientação entre objetivos, próximos passos e oportunidades.</p>
+<p><strong>Como funcionará:</strong> poderá reunir momento atual, objetivos, próximos passos, conteúdos, especialistas, coletivos, desafios, trilhas, conexões e evidências de evolução.</p>
+<p><strong>Valor entregue:</strong> organização da jornada e descoberta de possibilidades relevantes.</p>
+<p><strong>Conexões:</strong> utiliza inteligência, conteúdos, produtos, viagens, soluções empresariais e ativações patrocinadas de outros produtos.</p>
+<p><strong>Estágio:</strong> arquitetura consolidada; implementação pública integral ainda não confirmada como disponível.</p>
+<h3 id="exemplo-pratico_4">Exemplo prático<a class="headerlink" href="#exemplo-pratico_4" title="Permanent link">&para;</a></h3>
+<p>Uma estudante deseja melhorar sua formação e ampliar sua rede profissional. O Journey poderá organizar metas, apresentar conteúdos, indicar eventos e sugerir comunidades relacionadas.</p>
+<h2 id="guivos-marketplace">Guivos Marketplace<a class="headerlink" href="#guivos-marketplace" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> produto responsável pela oferta e comercialização de produtos, serviços, assinaturas, gift cards e ativos físicos ou digitais.</p>
+<p><strong>Observação:</strong> o produto está consolidado, mas o nome “Guivos Marketplace” é provisório.</p>
+<p><strong>Público principal:</strong> compradores, vendedores, parceiros e organizações.</p>
+<p><strong>Problema que busca resolver:</strong> dispersão de ofertas e dificuldade de conectar produtos e serviços às jornadas dos participantes.</p>
+<p><strong>Valor entregue:</strong> acesso organizado a itens comercializáveis relacionados ao ecossistema.</p>
+<p><strong>Estágio:</strong> produto consolidado; marca comercial em revisão; disponibilidade operacional depende de implementação.</p>
+<h3 id="exemplo-pratico_5">Exemplo prático<a class="headerlink" href="#exemplo-pratico_5" title="Permanent link">&para;</a></h3>
+<p>Uma empresa pode disponibilizar um benefício, curso, ingresso ou gift card vinculado a uma jornada corporativa.</p>
+<h2 id="guivos-travel">Guivos Travel<a class="headerlink" href="#guivos-travel" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> produto responsável por viagens, destinos e experiências turísticas.</p>
+<p><strong>Público principal:</strong> viajantes, empresas, parceiros de turismo e organizações.</p>
+<p><strong>Problema que busca resolver:</strong> fragmentação entre planejamento, experiências locais, parceiros e objetivos da viagem.</p>
+<p><strong>Valor entregue:</strong> organização de roteiros, hospedagens, passeios, experiências locais e ofertas relacionadas.</p>
+<p><strong>Estágio:</strong> arquitetura consolidada; implementação e disponibilidade pública dependem do avanço operacional.</p>
+<h3 id="exemplo-pratico_6">Exemplo prático<a class="headerlink" href="#exemplo-pratico_6" title="Permanent link">&para;</a></h3>
+<p>Uma pessoa que deseja conhecer uma cidade por meio de cultura e impacto social poderá encontrar roteiro, hospedagem, experiências locais e uma ação comunitária vinculada à viagem.</p>
+<h2 id="guivos-business">Guivos Business<a class="headerlink" href="#guivos-business" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> produto responsável pelas soluções da Guivos para empresas e organizações.</p>
+<p><strong>Público principal:</strong> empresas, instituições, organizações sociais e demais entidades.</p>
+<p><strong>Problema que busca resolver:</strong> dificuldade de integrar benefícios, desenvolvimento, jornadas, oportunidades e indicadores.</p>
+<p><strong>Valor entregue:</strong> programas corporativos, benefícios, parcerias, integrações, relatórios e jornadas para públicos vinculados.</p>
+<p><strong>Estágio:</strong> arquitetura consolidada; ofertas específicas podem estar em desenvolvimento ou planejamento.</p>
+<h3 id="exemplo-pratico_7">Exemplo prático<a class="headerlink" href="#exemplo-pratico_7" title="Permanent link">&para;</a></h3>
+<p>Uma empresa deseja apoiar o bem-estar e o desenvolvimento de seus colaboradores. O Guivos Business poderá organizar uma jornada com conteúdos, experiências, benefícios e indicadores de participação.</p>
+<h2 id="guivos-media">Guivos Media<a class="headerlink" href="#guivos-media" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> núcleo responsável por conteúdos editoriais e institucionais.</p>
+<p><strong>Formatos possíveis:</strong> podcast, vídeos, entrevistas, documentários, histórias reais, artigos, livros, newsletters, imprensa e séries.</p>
+<p><strong>Público principal:</strong> público geral, participantes, imprensa, empresas e parceiros.</p>
+<p><strong>Problema que busca resolver:</strong> conhecimento e histórias relevantes dispersos ou pouco acessíveis.</p>
+<p><strong>Valor entregue:</strong> informação, inspiração, orientação e memória institucional.</p>
+<p><strong>Estágio:</strong> arquitetura consolidada; formatos e publicações serão lançados progressivamente.</p>
+<h3 id="exemplo-pratico_8">Exemplo prático<a class="headerlink" href="#exemplo-pratico_8" title="Permanent link">&para;</a></h3>
+<p>Uma entrevista com uma pessoa que transformou sua comunidade pode gerar conteúdo, inspirar participantes e direcionar interessados para uma causa real.</p>
+<h2 id="guivos-intelligence">Guivos Intelligence<a class="headerlink" href="#guivos-intelligence" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> produto responsável por transformar dados, contexto e conhecimento em inteligência aplicada.</p>
+<p><strong>Público principal:</strong> participantes, produtos Guivos, empresas e organizações.</p>
+<p><strong>Problema que busca resolver:</strong> dificuldade de interpretar grandes volumes de informação e transformá-los em decisões úteis.</p>
+<p><strong>Valor entregue:</strong> recomendações, indicadores, análises, tendências, benchmarks e interpretação de contexto.</p>
+<p><strong>Estágio:</strong> arquitetura consolidada; capacidades específicas de inteligência e IA dependem de desenvolvimento, dados e validação.</p>
+<h3 id="exemplo-pratico_9">Exemplo prático<a class="headerlink" href="#exemplo-pratico_9" title="Permanent link">&para;</a></h3>
+<p>Uma organização poderá receber um relatório agregado sobre participação em programas, sem precisar analisar manualmente cada interação.</p>
+<h2 id="guivos-ads">Guivos Ads<a class="headerlink" href="#guivos-ads" title="Permanent link">&para;</a></h2>
+<p><strong>Definição:</strong> produto responsável por publicidade, patrocínios e mídia patrocinada.</p>
+<p><strong>Público principal:</strong> anunciantes, marcas, parceiros e organizações.</p>
+<p><strong>Problema que busca resolver:</strong> necessidade de financiar a operação e distribuir ofertas relevantes com transparência.</p>
+<p><strong>Valor entregue:</strong> campanhas, patrocínios, ativações e mensuração.</p>
+<p><strong>Compromisso:</strong> publicidade deve ser identificada, relevante e separada do conteúdo editorial.</p>
+<p><strong>Estágio:</strong> arquitetura consolidada; operação depende do desenvolvimento dos canais e regras específicas.</p>
+<h3 id="exemplo-pratico_10">Exemplo prático<a class="headerlink" href="#exemplo-pratico_10" title="Permanent link">&para;</a></h3>
+<p>Uma marca esportiva poderá patrocinar um desafio de corrida, desde que a comunicação seja claramente identificada e adequada ao contexto do participante.</p>
+<hr />
+<h1 id="9-a-experiencia-diaria-da-guivos">9. A experiência diária da Guivos<a class="headerlink" href="#9-a-experiencia-diaria-da-guivos" title="Permanent link">&para;</a></h1>
+<p>A Guivos não pretende estimular uso recorrente apenas por distração ou permanência na tela.</p>
+<p>O valor diário deverá vir de utilidades reais, como:</p>
+<ul>
+<li>novas oportunidades;</li>
+<li>recomendações relacionadas ao momento atual;</li>
+<li>acompanhamento de objetivos;</li>
+<li>conteúdos úteis;</li>
+<li>experiências próximas;</li>
+<li>conexões com pessoas ou organizações;</li>
+<li>desafios e trilhas;</li>
+<li>causas e ações comunitárias;</li>
+<li>reconhecimento de progresso;</li>
+<li>atualização de jornadas.</li>
+</ul>
+<h3 id="como-seria-um-dia-usando-a-guivos">Como seria um dia usando a Guivos?<a class="headerlink" href="#como-seria-um-dia-usando-a-guivos" title="Permanent link">&para;</a></h3>
+<p>Pela manhã, Ana recebe uma sugestão de evento profissional relacionado a seu objetivo de carreira. Durante o almoço, lê um conteúdo curto do Guivos Media. À tarde, sua empresa divulga uma experiência de voluntariado por meio do Guivos Business. À noite, ela confirma participação em uma atividade local e acompanha os próximos passos de sua jornada.</p>
+<p><em>Situação ilustrativa. A experiência real dependerá dos produtos disponíveis e das preferências do participante.</em></p>
+<hr />
+<h1 id="10-como-a-guivos-entregara-o-que-acredita">10. Como a Guivos entregará o que acredita<a class="headerlink" href="#10-como-a-guivos-entregara-o-que-acredita" title="Permanent link">&para;</a></h1>
+<h2 id="evolucao-como-finalidade_1">Evolução como finalidade<a class="headerlink" href="#evolucao-como-finalidade_1" title="Permanent link">&para;</a></h2>
+<p><strong>Significado:</strong> produtos e decisões devem contribuir para jornadas reais.</p>
+<p><strong>Aplicação prática:</strong> avaliar funcionalidades e parcerias pelo valor gerado ao participante.</p>
+<p><strong>Entrega:</strong> oportunidades, conteúdos e experiências relacionadas a objetivos e contexto.</p>
+<p><strong>Evidência de cumprimento:</strong> acompanhamento de participação, utilidade percebida e progressão de jornadas, respeitando privacidade.</p>
+<h2 id="autonomia_1">Autonomia<a class="headerlink" href="#autonomia_1" title="Permanent link">&para;</a></h2>
+<p><strong>Significado:</strong> a Guivos não decide pelo participante.</p>
+<p><strong>Aplicação prática:</strong> recomendações podem ser aceitas, ignoradas ou ajustadas.</p>
+<p><strong>Entrega:</strong> opções e explicações, não ordens.</p>
+<p><strong>Evidência:</strong> controles de preferência, transparência das recomendações e liberdade de escolha.</p>
+<h2 id="relevancia-contextual_1">Relevância contextual<a class="headerlink" href="#relevancia-contextual_1" title="Permanent link">&para;</a></h2>
+<p><strong>Significado:</strong> informação útil depende do momento.</p>
+<p><strong>Aplicação prática:</strong> organizar oportunidades conforme interesses, objetivos e condições disponíveis.</p>
+<p><strong>Entrega:</strong> menos exposição genérica e mais organização contextual.</p>
+<p><strong>Evidência:</strong> qualidade das recomendações e possibilidade de correção pelo participante.</p>
+<h2 id="tecnologia-como-meio_1">Tecnologia como meio<a class="headerlink" href="#tecnologia-como-meio_1" title="Permanent link">&para;</a></h2>
+<p><strong>Significado:</strong> tecnologia serve ao propósito.</p>
+<p><strong>Aplicação prática:</strong> usar IA e dados apenas quando gerarem valor claro.</p>
+<p><strong>Entrega:</strong> experiências mais organizadas, personalizadas e integradas.</p>
+<p><strong>Evidência:</strong> funcionalidades compreensíveis e justificadas por utilidade.</p>
+<h2 id="conhecimento-como-patrimonio_1">Conhecimento como patrimônio<a class="headerlink" href="#conhecimento-como-patrimonio_1" title="Permanent link">&para;</a></h2>
+<p><strong>Significado:</strong> experiências devem gerar aprendizado para o ecossistema.</p>
+<p><strong>Aplicação prática:</strong> preservar padrões, relatos e resultados de forma responsável.</p>
+<p><strong>Entrega:</strong> recomendações e decisões progressivamente melhores.</p>
+<p><strong>Evidência:</strong> melhoria contínua baseada em conhecimento validado, não apenas em volume de dados.</p>
+<hr />
+<h1 id="11-como-a-guivos-operara">11. Como a Guivos operará<a class="headerlink" href="#11-como-a-guivos-operara" title="Permanent link">&para;</a></h1>
+<p>A operação pública deverá conectar participantes, organizações, oportunidades e experiências.</p>
+<p>Usuários poderão criar perfis, informar interesses e participar de jornadas. Empresas e organizações poderão cadastrar oportunidades, oferecer experiências, contratar soluções ou estabelecer parcerias.</p>
+<p>Oportunidades deverão ser organizadas com informações claras, origem identificável e critérios de qualidade. Conteúdos poderão ser produzidos pela Guivos, por parceiros ou por participantes autorizados.</p>
+<p>A Guivos deverá adotar mecanismos de moderação, denúncia, revisão e responsabilização para combater abusos, informações falsas e práticas inadequadas.</p>
+<p>Atendimento e suporte deverão orientar dúvidas, registrar problemas e ajudar na resolução de situações relacionadas aos produtos disponíveis.</p>
+<p>A expansão para outras cidades e países deverá respeitar diferenças culturais e regras locais, preservando os princípios permanentes da Guivos.</p>
+<hr />
+<h1 id="12-papel-da-tecnologia">12. Papel da tecnologia<a class="headerlink" href="#12-papel-da-tecnologia" title="Permanent link">&para;</a></h1>
+<p>A tecnologia deverá ajudar a:</p>
+<ul>
+<li>organizar informações;</li>
+<li>integrar produtos;</li>
+<li>recomendar oportunidades;</li>
+<li>acompanhar jornadas;</li>
+<li>analisar dados;</li>
+<li>proteger acessos;</li>
+<li>apoiar empresas e organizações;</li>
+<li>aprender com o uso do ecossistema.</li>
+</ul>
+<p>Termos técnicos não definem a Guivos. A escolha de ferramentas poderá mudar ao longo do tempo sem alterar seu propósito.</p>
+<h3 id="exemplo-pratico_11">Exemplo prático<a class="headerlink" href="#exemplo-pratico_11" title="Permanent link">&para;</a></h3>
+<p>Se duas pessoas possuem interesses semelhantes, a tecnologia pode ajudar a identificar eventos ou comunidades relevantes. A decisão de participar continua sendo de cada pessoa.</p>
+<hr />
+<h1 id="13-inteligencia-artificial-na-guivos">13. Inteligência artificial na Guivos<a class="headerlink" href="#13-inteligencia-artificial-na-guivos" title="Permanent link">&para;</a></h1>
+<p>A inteligência artificial poderá apoiar:</p>
+<ul>
+<li>interpretação de contexto;</li>
+<li>organização de informações;</li>
+<li>recomendações;</li>
+<li>análise de tendências;</li>
+<li>identificação de padrões;</li>
+<li>criação de relatórios;</li>
+<li>personalização de experiências.</li>
+</ul>
+<p>Ela não deverá:</p>
+<ul>
+<li>determinar objetivos pessoais;</li>
+<li>substituir decisões humanas importantes;</li>
+<li>controlar a jornada do participante;</li>
+<li>substituir profissionais especializados;</li>
+<li>tratar inferências como verdades absolutas.</li>
+</ul>
+<p>A Guivos deverá buscar transparência, supervisão humana e possibilidade de correção.</p>
+<h3 id="exemplo-pratico_12">Exemplo prático<a class="headerlink" href="#exemplo-pratico_12" title="Permanent link">&para;</a></h3>
+<p>A IA pode sugerir que uma oportunidade parece compatível com os interesses de uma pessoa e explicar os fatores considerados. A pessoa pode rejeitar a recomendação e ajustar suas preferências.</p>
+<hr />
+<h1 id="14-dados-privacidade-e-confianca">14. Dados, privacidade e confiança<a class="headerlink" href="#14-dados-privacidade-e-confianca" title="Permanent link">&para;</a></h1>
+<p>A Guivos poderá utilizar dados fornecidos pelos participantes, informações de uso, preferências, interações, registros de experiências e dados necessários para operar serviços contratados.</p>
+<p>Esses dados deverão ser utilizados para:</p>
+<ul>
+<li>prestar serviços;</li>
+<li>personalizar experiências;</li>
+<li>melhorar recomendações;</li>
+<li>gerar análises autorizadas;</li>
+<li>proteger a plataforma;</li>
+<li>cumprir obrigações legais.</li>
+</ul>
+<p>A Guivos deverá adotar medidas de segurança proporcionais aos riscos, controles de acesso, transparência e mecanismos para que o usuário administre suas informações conforme a legislação aplicável.</p>
+<p>Nenhum sistema pode prometer segurança absoluta. O compromisso deve ser reduzir riscos, responder a incidentes e evoluir continuamente.</p>
+<hr />
+<h1 id="15-modelo-de-sustentabilidade">15. Modelo de sustentabilidade<a class="headerlink" href="#15-modelo-de-sustentabilidade" title="Permanent link">&para;</a></h1>
+<p>Propósito e sustentabilidade financeira são diferentes, mas precisam coexistir.</p>
+<p>A Guivos poderá gerar receita por meio de:</p>
+<ul>
+<li>planos para usuários;</li>
+<li>planos e soluções para empresas;</li>
+<li>serviços B2B;</li>
+<li>comercialização de produtos e serviços;</li>
+<li>viagens e experiências;</li>
+<li>publicidade responsável;</li>
+<li>patrocínios;</li>
+<li>conteúdos de marca;</li>
+<li>relatórios e análises agregadas;</li>
+<li>parcerias;</li>
+<li>produtos digitais.</li>
+</ul>
+<p>A monetização não deve substituir o propósito. Uma oportunidade paga ou patrocinada não deverá ser apresentada como recomendação neutra sem identificação adequada.</p>
+<p>Os modelos específicos ainda dependem de desenvolvimento, validação e decisões comerciais posteriores.</p>
+<hr />
+<h1 id="16-relacao-com-empresas-e-organizacoes">16. Relação com empresas e organizações<a class="headerlink" href="#16-relacao-com-empresas-e-organizacoes" title="Permanent link">&para;</a></h1>
+<p>Empresas e organizações poderão:</p>
+<ul>
+<li>criar oportunidades;</li>
+<li>oferecer produtos, benefícios e experiências;</li>
+<li>contratar programas;</li>
+<li>produzir conteúdos;</li>
+<li>apoiar causas;</li>
+<li>patrocinar iniciativas;</li>
+<li>acessar relatórios autorizados;</li>
+<li>integrar públicos vinculados.</li>
+</ul>
+<p>Elas deverão respeitar regras de qualidade, transparência, privacidade e proteção dos participantes.</p>
+<p>Parcerias que contrariem o propósito, explorem vulnerabilidades ou prejudiquem a autonomia dos usuários deverão ser rejeitadas ou revistas.</p>
+<hr />
+<h1 id="17-impacto-social-e-comunitario">17. Impacto social e comunitário<a class="headerlink" href="#17-impacto-social-e-comunitario" title="Permanent link">&para;</a></h1>
+<p>O impacto social não deverá existir apenas como ação paralela.</p>
+<p>Projetos sociais, causas ambientais, proteção animal, voluntariado, desenvolvimento local e apoio a pessoas em situação de vulnerabilidade poderão participar do funcionamento normal do ecossistema.</p>
+<h3 id="exemplo-pratico_13">Exemplo prático<a class="headerlink" href="#exemplo-pratico_13" title="Permanent link">&para;</a></h3>
+<p>Uma ONG precisa de voluntários para uma ação ambiental. Ela publica a oportunidade. Pessoas da região recebem a informação conforme seus interesses. Uma empresa local apoia materiais e transporte. A experiência gera novos relacionamentos e pode originar outras ações.</p>
+<hr />
+<h1 id="18-expansao-e-atuacao-global">18. Expansão e atuação global<a class="headerlink" href="#18-expansao-e-atuacao-global" title="Permanent link">&para;</a></h1>
+<p>A proposta da Guivos pode ser aplicada em diferentes regiões porque necessidades, oportunidades, experiências e relacionamentos existem em qualquer sociedade.</p>
+<p>A operação global deverá:</p>
+<ul>
+<li>respeitar culturas locais;</li>
+<li>adaptar linguagem e experiência;</li>
+<li>cumprir legislações;</li>
+<li>aprender com parceiros locais;</li>
+<li>evitar impor um único conceito de evolução;</li>
+<li>preservar identidade e princípios permanentes.</li>
+</ul>
+<p>A expansão será progressiva e dependerá de validação, recursos, parcerias e capacidade operacional.</p>
+<hr />
+<h1 id="19-estagio-atual-da-guivos">19. Estágio atual da Guivos<a class="headerlink" href="#19-estagio-atual-da-guivos" title="Permanent link">&para;</a></h1>
+<h2 id="consolidado-no-repositorio">Consolidado no repositório<a class="headerlink" href="#consolidado-no-repositorio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>identidade, propósito, missão e visão;</li>
+<li>princípios permanentes;</li>
+<li>arquitetura institucional;</li>
+<li>Foundation congelada em baseline;</li>
+<li>estrutura superior da arquitetura de produtos;</li>
+<li>definição de Guivos Journey, Marketplace, Travel, Business, Media, Intelligence e Ads;</li>
+<li>governança documental e arquitetural.</li>
+</ul>
+<h2 id="em-validacao">Em validação<a class="headerlink" href="#em-validacao" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Modelo Fundamental da Guivos em nova revisão arquitetural;</li>
+<li>descoberta das Core Capabilities;</li>
+<li>modelos econômicos e operacionais detalhados;</li>
+<li>capacidades específicas de inteligência, dados e tecnologia.</li>
+</ul>
+<h2 id="em-desenvolvimento">Em desenvolvimento<a class="headerlink" href="#em-desenvolvimento" title="Permanent link">&para;</a></h2>
+<p>O repositório não confirma, de forma pública e consolidada, o estágio técnico detalhado de implementação de todos os produtos. Cada lançamento deverá ser comunicado por canais oficiais quando estiver disponível.</p>
+<h2 id="planejado">Planejado<a class="headerlink" href="#planejado" title="Permanent link">&para;</a></h2>
+<ul>
+<li>desenvolvimento progressivo dos produtos;</li>
+<li>integrações entre jornadas, viagens, negócios, mídia, inteligência e publicidade;</li>
+<li>expansão geográfica;</li>
+<li>evolução dos modelos de dados, IA, tecnologia e governança.</li>
+</ul>
+<h2 id="visao-futura">Visão futura<a class="headerlink" href="#visao-futura" title="Permanent link">&para;</a></h2>
+<p>Um ecossistema global capaz de conectar participantes às oportunidades mais relevantes para seus contextos e aprender continuamente com experiências, relacionamentos e conhecimento.</p>
+<hr />
+<h1 id="20-exemplo-de-uma-jornada-completa">20. Exemplo de uma jornada completa<a class="headerlink" href="#20-exemplo-de-uma-jornada-completa" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Situação ilustrativa:</strong> o exemplo abaixo não confirma que todas as funcionalidades estejam disponíveis atualmente.</p>
+</blockquote>
+<p>Lucas terminou a faculdade e sente dificuldade para decidir seu próximo passo profissional. Ele conhece a Guivos por um vídeo do Guivos Media.</p>
+<p>Ao entrar no ecossistema, informa que deseja trabalhar com sustentabilidade, conhecer pessoas da área e participar de projetos práticos.</p>
+<p>O Guivos Journey organiza seus objetivos e apresenta possíveis próximos passos. O Guivos Intelligence ajuda a relacionar seu contexto a conteúdos, eventos e oportunidades.</p>
+<p>Lucas encontra uma oficina oferecida por uma organização local. Participa da experiência, conhece uma empresa e começa a colaborar com um coletivo ambiental.</p>
+<p>Meses depois, a empresa publica uma oportunidade profissional por meio do Guivos Business. Lucas decide se candidatar.</p>
+<p>Durante esse período, ele utiliza conteúdos do Guivos Media, participa de um desafio comunitário e encontra um produto relacionado no Marketplace.</p>
+<p>Mais tarde, Lucas compartilha sua experiência e ajuda novos participantes. O conhecimento gerado fortalece futuras jornadas.</p>
+<p>A Guivos não determinou a trajetória de Lucas. Ela organizou possibilidades e conexões para que ele tomasse suas próprias decisões.</p>
+<hr />
+<h1 id="21-perguntas-frequentes">21. Perguntas frequentes<a class="headerlink" href="#21-perguntas-frequentes" title="Permanent link">&para;</a></h1>
+<h2 id="a-guivos-e-uma-rede-social">A Guivos é uma rede social?<a class="headerlink" href="#a-guivos-e-uma-rede-social" title="Permanent link">&para;</a></h2>
+<p>Não. Relacionamentos e comunidades podem fazer parte da experiência, mas a Guivos possui um escopo mais amplo, voltado a jornadas, oportunidades, experiências e conhecimento.</p>
+<h2 id="a-guivos-e-uma-empresa-de-viagens">A Guivos é uma empresa de viagens?<a class="headerlink" href="#a-guivos-e-uma-empresa-de-viagens" title="Permanent link">&para;</a></h2>
+<p>Não apenas. Guivos Travel é um dos produtos do ecossistema.</p>
+<h2 id="a-guivos-e-uma-plataforma-de-cursos">A Guivos é uma plataforma de cursos?<a class="headerlink" href="#a-guivos-e-uma-plataforma-de-cursos" title="Permanent link">&para;</a></h2>
+<p>Não. Cursos podem aparecer como oportunidades, mas não definem a Guivos.</p>
+<h2 id="a-guivos-e-uma-empresa-de-tecnologia">A Guivos é uma empresa de tecnologia?<a class="headerlink" href="#a-guivos-e-uma-empresa-de-tecnologia" title="Permanent link">&para;</a></h2>
+<p>A Guivos utiliza tecnologia, mas seu propósito não é a tecnologia em si.</p>
+<h2 id="a-guivos-substitui-profissionais-especializados">A Guivos substitui profissionais especializados?<a class="headerlink" href="#a-guivos-substitui-profissionais-especializados" title="Permanent link">&para;</a></h2>
+<p>Não. Ela pode facilitar descobertas e conexões, mas não substitui profissionais de saúde, educação, direito, finanças ou outras áreas especializadas.</p>
+<h2 id="a-guivos-sera-gratuita">A Guivos será gratuita?<a class="headerlink" href="#a-guivos-sera-gratuita" title="Permanent link">&para;</a></h2>
+<p>Poderão existir experiências gratuitas e pagas. Os planos e condições serão comunicados conforme cada produto for lançado.</p>
+<h2 id="empresas-poderao-participar">Empresas poderão participar?<a class="headerlink" href="#empresas-poderao-participar" title="Permanent link">&para;</a></h2>
+<p>Sim. Guivos Business é o produto responsável pelas soluções para empresas e organizações.</p>
+<h2 id="a-inteligencia-artificial-decidira-o-que-devo-fazer">A inteligência artificial decidirá o que devo fazer?<a class="headerlink" href="#a-inteligencia-artificial-decidira-o-que-devo-fazer" title="Permanent link">&para;</a></h2>
+<p>Não. A IA poderá apoiar recomendações e análises. A decisão final permanece com o participante.</p>
+<h2 id="como-meus-dados-serao-utilizados">Como meus dados serão utilizados?<a class="headerlink" href="#como-meus-dados-serao-utilizados" title="Permanent link">&para;</a></h2>
+<p>Para operar serviços, personalizar experiências, melhorar recomendações, gerar análises autorizadas e proteger o ecossistema, conforme regras de privacidade e legislação aplicável.</p>
+<h2 id="a-guivos-ja-esta-funcionando">A Guivos já está funcionando?<a class="headerlink" href="#a-guivos-ja-esta-funcionando" title="Permanent link">&para;</a></h2>
+<p>A arquitetura institucional e os produtos estão documentados e consolidados em diferentes níveis. Este guia não afirma que todos os produtos estejam disponíveis ao público. Lançamentos devem ser confirmados por canais oficiais.</p>
+<h2 id="todos-os-produtos-estarao-disponiveis-ao-mesmo-tempo">Todos os produtos estarão disponíveis ao mesmo tempo?<a class="headerlink" href="#todos-os-produtos-estarao-disponiveis-ao-mesmo-tempo" title="Permanent link">&para;</a></h2>
+<p>Não necessariamente. A realização será progressiva.</p>
+<h2 id="o-nome-guivos-marketplace-e-definitivo">O nome Guivos Marketplace é definitivo?<a class="headerlink" href="#o-nome-guivos-marketplace-e-definitivo" title="Permanent link">&para;</a></h2>
+<p>Não. O produto está consolidado, mas sua marca comercial permanece provisória.</p>
+<h2 id="comunidade-guivos-ainda-e-o-nome-de-um-produto">Comunidade Guivos ainda é o nome de um produto?<a class="headerlink" href="#comunidade-guivos-ainda-e-o-nome-de-um-produto" title="Permanent link">&para;</a></h2>
+<p>Não. Guivos Journey substituiu essa denominação como nome amplo de produto. Comunidade pode existir como tipo de coletivo.</p>
+<h2 id="guivos-podcast-ainda-e-o-nome-oficial">Guivos Podcast ainda é o nome oficial?<a class="headerlink" href="#guivos-podcast-ainda-e-o-nome-oficial" title="Permanent link">&para;</a></h2>
+<p>Não. Podcast é um formato dentro do Guivos Media.</p>
+<h2 id="guivos-insights-ainda-e-o-nome-oficial">Guivos Insights ainda é o nome oficial?<a class="headerlink" href="#guivos-insights-ainda-e-o-nome-oficial" title="Permanent link">&para;</a></h2>
+<p>Não. O produto oficial é Guivos Intelligence. Insights podem ser resultados ou relatórios produzidos por ele.</p>
+<h2 id="como-acompanhar-a-evolucao-do-projeto">Como acompanhar a evolução do projeto?<a class="headerlink" href="#como-acompanhar-a-evolucao-do-projeto" title="Permanent link">&para;</a></h2>
+<p>Pelo Guivos Knowledge Repository e pelos canais públicos oficiais da Guivos.</p>
+<hr />
+<h1 id="22-informacoes-que-ainda-exigem-validacao-antes-de-publicacao-detalhada">22. Informações que ainda exigem validação antes de publicação detalhada<a class="headerlink" href="#22-informacoes-que-ainda-exigem-validacao-antes-de-publicacao-detalhada" title="Permanent link">&para;</a></h1>
+<p>Os seguintes pontos não devem ser apresentados como disponíveis ou definitivos sem nova validação:</p>
+<ul>
+<li>datas de lançamento;</li>
+<li>preços e planos;</li>
+<li>países e cidades de início da operação;</li>
+<li>funcionalidades técnicas específicas;</li>
+<li>integrações com plataformas externas;</li>
+<li>parceiros comerciais ou institucionais;</li>
+<li>métricas de usuários, receita ou impacto;</li>
+<li>detalhes de infraestrutura, segurança e fornecedores;</li>
+<li>marca comercial definitiva do Marketplace;</li>
+<li>disponibilidade pública de cada produto;</li>
+<li>regras finais de moderação, suporte e atendimento;</li>
+<li>modelos completos de monetização;</li>
+<li>políticas legais e de privacidade ainda não publicadas.</li>
+</ul>
+<hr />
+<h1 id="23-conclusao">23. Conclusão<a class="headerlink" href="#23-conclusao" title="Permanent link">&para;</a></h1>
+<p>A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio de oportunidades relevantes.</p>
+<p>Ela pretende conectar pessoas, empresas, organizações e coletivos, permitindo que oportunidades se transformem em experiências, relacionamentos e conhecimento.</p>
+<p>A tecnologia apoiará esse processo, mas não substituirá a autonomia das pessoas nem definirá sozinha o rumo do ecossistema.</p>
+<p>A construção será progressiva. Produtos, serviços e operações serão desenvolvidos, testados e ajustados ao longo do tempo, preservando o propósito e os princípios consolidados no Guivos Knowledge Repository.</p>
+<p>O papel das pessoas e organizações não será apenas consumir. Elas também poderão criar oportunidades, compartilhar conhecimento, formar relações e fortalecer o ecossistema.</p>
+<hr />
+<h1 id="historico-resumido-de-alteracoes">Histórico resumido de alterações<a class="headerlink" href="#historico-resumido-de-alteracoes" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Alteração principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>03/07/2026</td>
+<td>Criação da primeira versão pública oficial derivada da Canon vigente do GKR</td>
+</tr>
+</tbody>
+</table>
+<h1 id="regra-de-atualizacao-continua">Regra de atualização contínua<a class="headerlink" href="#regra-de-atualizacao-continua" title="Permanent link">&para;</a></h1>
+<p>Este documento deverá ser revisto quando houver alteração relevante em:</p>
+<ul>
+<li>identidade, propósito, missão ou visão;</li>
+<li>produtos e nomenclaturas;</li>
+<li>estágio de desenvolvimento;</li>
+<li>operação pública;</li>
+<li>modelo de negócio;</li>
+<li>inteligência artificial e dados;</li>
+<li>privacidade e confiança;</li>
+<li>impacto social;</li>
+<li>expansão;</li>
+<li>baselines e decisões arquiteturais.</li>
+</ul>
+<p>Toda atualização deve preservar linguagem acessível, substituir informações superadas e distinguir claramente o que está consolidado, em validação, em desenvolvimento, planejado ou restrito à visão futura.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
