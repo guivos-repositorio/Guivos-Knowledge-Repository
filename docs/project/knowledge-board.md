@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 2.7.0
+version: 3.0.0
 owner: Guivos
 last_updated: 2026-07-02
 ---
@@ -14,36 +14,39 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 
 | Ativo | Estado | Finalidade |
 |---|---|---|
-| M1 — Research Foundation Complete | Frozen | Referência estável dos fundamentos |
+| M1 — Research Foundation Complete | Frozen | Referência estável dos fundamentos de pesquisa |
 | M2.0 — Architectural Evolution Hypothesis | Experimental | Preservar hipóteses fora da Canon |
 | GEA-PLM-001 — Permanence Layer Model | Validated | Organizar ativos por permanência e governança |
 | A1 — Institutional Architecture Complete | Completed | Macroestrutura institucional concluída |
 | A2 — Functional Architecture Discovery | Active | Descobrir Core Capabilities por evidências |
-| A2-B2 — Foundation Discovery Complete | Working baseline | Encerramento analítico da Foundation 6/6 |
-| A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline | Validated 1.0.0 | Governar a maturação do conhecimento até a Canon |
+| A2-B3 — Foundation Architecture Review Complete | Frozen | Baseline vigente da Foundation |
+| A2-METHOD-001 | Validated 1.0.0 | Governar maturação do conhecimento arquitetural |
+| GEA-AUDIT-001 | Validated 1.0.0 | Auditar revisões antes de baselines |
 | GCCM-001 | Discovery 0.4.0 | Descoberta e validação de Core Capabilities |
 
 ## A2 — Functional Architecture Discovery
 
-### Estado do GCCM
+### Estado atual
 
 | Elemento | Estado |
 |---|:---:|
-| Método de descoberta | Consolidado |
-| Architectural Knowledge Consolidation Pipeline | Validado |
-| Evidence Extraction | Concluída na Foundation |
-| Evidence Convergence | Aplicada provisoriamente |
-| Confidence Assessment | Aplicado |
-| Foundation Evidence Matrix | Próxima atividade |
-| Canonical Consolidation | Pendente |
-| A2-R01 — Foundation Architecture Review | Pendente |
-| Semantic Clustering multiarquitetura | Pendente |
-| Registro de candidatas | Vazio |
-| Catálogo canônico | Vazio |
+| Evidence Extraction da Foundation | Concluída |
+| A2-R01-FEM-001 | Concluída |
+| A2-R01-CC-001 | Concluída |
+| A2-R01-RA-001 | READY |
+| AV-A2-001 | Approved with recommendations |
+| A2-R01-AUD-001 | PASS |
+| A2-B3 | Frozen |
+| A2-R01 — Foundation Architecture Review | Completed |
+| A2-R02 — Fundamental Model Review | Authorized |
+| Registro de candidatas do GCCM | Vazio |
+| Catálogo canônico de Core Capabilities | Vazio |
 
 > Nenhuma Core Capability está candidata ou canônica nesta versão.
 
-### Resultado bruto da Foundation
+## Foundation congelada
+
+### Métricas
 
 | Métrica | Quantidade |
 |---|---:|
@@ -51,101 +54,70 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Afirmações institucionais atômicas | 173 |
 | Grupos de significado | 43 |
 | Invariantes provisórios | 50 |
-| Responsabilidades institucionais | 54 |
+| Responsabilidades provisórias | 54 |
+| Invariantes consolidados | 18 |
+| Responsabilidades consolidadas | 16 |
+| Domínios semânticos | 8 |
 | Core Capabilities candidatas | 0 |
+| Core Capabilities canônicas | 0 |
 
-### Foundation 6/6
+### Resultados
 
-| Unidade | Estado |
-|---|---|
-| Essência | Evidence Analysis concluída |
-| Propósito | Evidence Analysis concluída |
-| Missão Operacional | Evidence Analysis concluída |
-| Visão de Longo Prazo | Evidence Analysis concluída |
-| Constituição | Evidence Analysis concluída |
-| Princípios Permanentes | Evidence Analysis concluída |
+- `IC-001` a `IC-018` incorporados à baseline da Foundation;
+- `RC-001` a `RC-016` incorporados à baseline da Foundation;
+- nenhuma contradição material identificada;
+- nenhum achado Critical ou Major na auditoria;
+- Foundation aprovada para sustentar arquiteturas dependentes;
+- Modelo Fundamental autorizado como próxima revisão.
 
-### Agrupamentos recorrentes
-
-1. Compreensão de contexto.
-2. Identificação de possibilidades relevantes.
-3. Conexão e fortalecimento do ecossistema.
-4. Apoio à progressão da jornada.
-5. Preservação da autonomia.
-6. Governança de aderência à jornada.
-7. Universalidade e inclusão contextual.
-8. Tecnologia subordinada ao propósito.
-9. Ecossistema irredutível a produtos.
-10. Coerência arquitetural sob variação.
-11. Conhecimento como patrimônio permanente.
-12. Simplicidade e suficiência arquitetural.
-13. Oportunidade subordinada à evolução.
-
-### Relações institucionais consolidadas
+## Relações institucionais vigentes
 
 ```text
 Evolução = finalidade
+Jornada = continuidade contextual
+Próximo passo = unidade de orientação
 Oportunidade = meio
 Experiência = realização de valor
 Relacionamentos = patrimônio do ecossistema
 Conhecimento = compreensão e patrimônio
+Dados = registros
 IA = mecanismo de interpretação
 Participante = titular da decisão
+Tecnologia = meio subordinado ao propósito
 Arquitetura = estrutura permanente
 Implementação = realização progressiva
 ```
 
-### Pipeline de maturação arquitetural
+## Pipeline arquitetural vigente
 
 ```text
-Documento Canônico
-  -> Evidence Analysis
+Evidence Analysis
   -> Evidence Matrix
   -> Canonical Consolidation
-  -> Architecture Review
-  -> Architectural Decision / Validation
-  -> Canon
+  -> Readiness Assessment
+  -> Architectural Validation
+  -> Architectural Audit
+  -> Baseline
 ```
 
-Regras consolidadas:
+Regras:
 
 - nenhuma Capability nasce diretamente de uma fonte;
-- agrupamentos recorrentes não são automaticamente capacidades;
 - convergência precede consolidação;
-- consolidação precede validação;
-- validação precede Canon;
-- toda decisão deve manter rastreabilidade até as evidências de origem.
-
-### Aprendizados
-
-- a Foundation produz identidade, finalidade, limites, compromissos e critérios permanentes;
-- agrupamentos analíticos não são Core Capabilities;
-- nenhuma Capability nasce de uma única fonte;
-- hipóteses permanecem fora da Canon;
-- execução e evolução metodológica permanecem separadas;
-- o método só muda diante de limitação concreta demonstrada.
-
-## Próximo gate
-
-`A2-R01 — Foundation Architecture Review`.
-
-Objetivos:
-
-1. construir a Foundation Evidence Matrix;
-2. executar a Canonical Consolidation dos invariantes e responsabilidades;
-3. avaliar frequência, centralidade e consistência;
-4. identificar lacunas, contradições e sobreposições;
-5. avaliar readiness para o Modelo Fundamental e demais arquiteturas;
-6. registrar decisão arquitetural formal.
+- consolidação precede readiness e validação;
+- validação precede auditoria;
+- auditoria precede baseline;
+- toda decisão mantém rastreabilidade até as evidências;
+- o método só muda diante de limitação objetiva demonstrada.
 
 ## Maturidade das arquiteturas
 
 | Arquitetura | Maturidade |
 |---|---|
-| Foundation Architecture | Analytically complete; review pending |
-| Ecosystem Architecture / GEB | Modelo fundamental existente; análise A2 pendente |
-| Product Architecture | Stable na estrutura superior |
-| Business Architecture | Foundations e Strategy inicial validadas |
+| Foundation Architecture | Frozen — A2-B3 |
+| Fundamental Model / GEB | Review authorized — A2-R02 |
+| Product Architecture | Stable na estrutura superior; revisão A2 pendente |
+| Business Architecture | Foundations e Strategy inicial validadas; revisão A2 pendente |
 | Data & Intelligence Architecture | Draft |
 | Technology Architecture | Draft |
 | Governance Architecture | Draft |
@@ -154,30 +126,31 @@ Objetivos:
 
 ## Hipóteses preservadas fora da Canon
 
-- Permanent Responsibilities como camada formal;
+- taxonomia Conceitos × Invariantes × Responsabilidades como camada formal;
+- Estruturantes × Organizadores × Qualificadores;
+- mudança oficial de nome ou escopo da A2;
+- GEA Manifesto;
 - ontologia institucional;
-- transições positivas de estado como objeto institucional;
-- Architectural Evidence Registry específico da A2;
 - ADM-001;
-- Architecture Reviews como padrão definitivo da GEA;
 - GMM, GKS, GKVF e KVS.
 
 ## Governança documental
 
 | Ativo | Status |
 |---|---|
-| Roadmap Arquitetural | 2.6.0 |
-| Knowledge Board | 2.7.0 |
-| GCCM-001 | 0.4.0 |
+| Roadmap Arquitetural | 3.0.0 |
+| Knowledge Board | 3.0.0 |
+| Architectural Milestones | 2.0.0 |
+| GCCM-001 | Discovery 0.4.0 |
 | A2-METHOD-001 | Validated 1.0.0 |
-| A2 Baseline B1 | Histórico 5/6 |
-| A2 Baseline B2 | Atual 6/6 |
-| A2-R01 | Próximo gate |
+| GEA-AUDIT-001 | Validated 1.0.0 |
+| A2-B3 | Frozen 1.0.0 |
+| A2-R02 | Authorized |
 
 ## Próxima atividade
 
-Construir a Foundation Evidence Matrix e iniciar a Canonical Consolidation dos 50 invariantes e 54 responsabilidades provisórias.
+Abrir `A2-R02 — Fundamental Model Review` e iniciar a análise de `KU-FM-001 — Fenômeno da Evolução`, aplicando o pipeline vigente sem alteração metodológica.
 
 ## Última consolidação
 
-`A2-METHOD-001 — Architectural Knowledge Consolidation Pipeline` consolidado em 02/07/2026 como método validado de maturação do conhecimento arquitetural.
+A Foundation Architecture foi aprovada, auditada e congelada em `A2-B3` em 02/07/2026.
