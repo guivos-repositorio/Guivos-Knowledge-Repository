@@ -1,9 +1,9 @@
 ---
 title: Architectural Milestones
 status: active
-version: 1.1.0
+version: 2.0.0
 owner: Guivos
-last_updated: 2026-07-01
+last_updated: 2026-07-02
 ---
 
 # Architectural Milestones
@@ -14,91 +14,91 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 
 | Marco | Estado | Finalidade |
 |---|---|---|
-| A0 — GKR Foundation | Completed | Estabelecer o repositório, a documentação oficial e a infraestrutura de publicação |
-| A1 — Institutional Architecture Complete | Completed | Consolidar identidade, macroestrutura, permanência, princípios e governança arquitetural |
-| A2 — Functional Architecture Discovery | Active — Paused at checkpoint | Descobrir e validar as Core Capabilities permanentes da Guivos |
-| A3 — Operational Architecture | Planned | Descrever como as Core Capabilities cooperam na Plataforma Guivos |
-| A4 — Platform Engineering | Planned | Materializar progressivamente as arquiteturas de referência |
-| A5 — Canon 1.0 | Planned | Consolidar a primeira versão canônica integrada da arquitetura funcional e operacional |
+| A0 — GKR Foundation | Completed | Estabelecer o repositório e a infraestrutura documental |
+| A1 — Institutional Architecture Complete | Completed | Consolidar macroestrutura, permanência e governança |
+| M3 — Foundation Architecture Frozen | Completed | Congelar a primeira arquitetura integralmente revisada |
+| A2 — Functional Architecture Discovery | Active | Descobrir e validar as Core Capabilities permanentes |
+| A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
+| A4 — Platform Engineering | Planned | Materializar arquiteturas de referência |
+| A5 — Canon 1.0 | Planned | Consolidar a primeira Canon integrada |
 
 ## A0 — GKR Foundation
 
 **Estado:** Completed.
 
-Resultados principais:
+Resultados:
 
 - repositório oficial criado;
-- Markdown e Git definidos como base documental e histórica;
-- MkDocs, Mermaid, GitHub Pages e publicação derivada configurados;
-- Foundation, GEB, Product Architecture, Business Architecture e Research iniciados;
-- baseline e mecanismos de rastreabilidade estabelecidos.
+- Markdown, Git e publicação configurados;
+- Foundation, GEB, Product, Business e Research iniciados;
+- mecanismos de baseline e rastreabilidade estabelecidos.
 
 ## A1 — Institutional Architecture Complete
 
 **Estado:** Completed.
 
+Resultados:
+
+- macroestrutura da GEA consolidada;
+- `GEA-PLM-001 — Permanence Layer Model` validado;
+- separação entre Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery;
+- regras de estabilidade e mudança institucional formalizadas.
+
+## M3 — Foundation Architecture Frozen
+
+**Estado:** Completed em 02/07/2026.
+
 ### Critério de conclusão
 
-A Guivos possui uma arquitetura institucional suficientemente estável para orientar a descoberta funcional e a realização progressiva sem exigir expansão estrutural contínua.
+A Foundation foi analisada integralmente, consolidada, avaliada, validada, auditada e congelada como referência permanente da GEA.
 
-### Escopo consolidado
+### Evidências
 
-- Foundation Architecture;
-- Guivos Enterprise Architecture;
-- estrutura principal do GEB;
-- estrutura superior da Product Architecture;
-- fundamentos da Business Architecture;
-- Research Domain e protocolo de pesquisa;
-- governança documental e arquitetural existente;
-- Permanence Layer Model;
-- princípios de maturidade institucional e realização progressiva;
-- separação entre Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.
+- 6 documentos revisados;
+- 173 afirmações institucionais atômicas;
+- 43 grupos de significado;
+- 50 invariantes provisórios consolidados em 18;
+- 54 responsabilidades provisórias consolidadas em 16;
+- `A2-R01-RA-001` com resultado `READY`;
+- `AV-A2-001` com decisão `APPROVED WITH RECOMMENDATIONS`;
+- `A2-R01-AUD-001` com resultado `PASS`;
+- `A2-B3` congelada.
 
-### Regra de estabilidade
+### Efeito
 
-A conclusão de A1 não significa imutabilidade. Mudanças estruturais futuras exigem problema arquitetural comprovado, análise de impacto, evidência suficiente e o mecanismo de governança adequado.
+- Foundation torna-se referência normativa para arquiteturas dependentes;
+- mudanças futuras exigem revisão formal;
+- `A2-R02 — Fundamental Model Review` fica autorizada.
 
 ## A2 — Functional Architecture Discovery
 
-**Estado:** Active — Paused at checkpoint.
+**Estado:** Active.
 
 ### Objetivo
 
-Descobrir o conjunto mínimo e suficiente de capacidades institucionais permanentes que explica aquilo que a Guivos deve ser capaz de realizar em sua maturidade.
+Descobrir o conjunto mínimo e suficiente de capacidades institucionais permanentes da Guivos.
 
 ### Entregável principal
 
 `GCCM-001 — Guivos Core Capability Model`.
 
-### Método
+### Revisões
 
-1. extrair evidências dos ativos existentes do GKR;
-2. identificar responsabilidades, verbos institucionais, objetivos e relações;
-3. agrupar evidências semanticamente equivalentes;
-4. formular capacidades candidatas;
-5. aplicar critérios de admissão;
-6. aplicar testes de irredutibilidade, independência tecnológica e cobertura da missão;
-7. consolidar o catálogo somente após validação.
+| Revisão | Estado |
+|---|---|
+| A2-R01 — Foundation Architecture Review | Completed — Frozen in A2-B3 |
+| A2-R02 — Fundamental Model Review | Authorized — Next |
+| A2-R03 — Business Architecture Review | Planned |
+| A2-R04 — Product Architecture Review | Planned |
+| A2-R05 — Cross-Architecture Review | Planned |
 
 ### Restrições
 
-- não criar Core Capabilities por brainstorming isolado;
-- não confundir produtos, funcionalidades, serviços ou tecnologias com Core Capabilities;
-- buscar o menor conjunto suficiente;
-- manter rastreabilidade entre evidência, candidata, decisão e catálogo.
-
-### Checkpoint de pausa — 01/07/2026
-
-A preparação da A2 está concluída e o GCCM-001 permanece em estado `discovery`, sem Core Capabilities canônicas.
-
-Ponto exato de retomada:
-
-1. abrir `Foundation — Essência da Guivos`;
-2. analisar somente esse documento;
-3. extrair afirmações, responsabilidades e capacidades potenciais com rastreabilidade;
-4. não consolidar candidatas antes da validação cruzada.
-
-A pausa não altera o estado do marco A2, não promove hipóteses e não modifica o baseline.
+- nenhuma Core Capability por brainstorming isolado;
+- produtos, funcionalidades, serviços e tecnologias não são Core Capabilities;
+- toda candidata exige convergência multiarquitetura;
+- o catálogo deve representar o menor conjunto suficiente;
+- rastreabilidade é obrigatória.
 
 ## A3 — Operational Architecture
 
@@ -109,45 +109,20 @@ Entregáveis previstos:
 - `PRA-001 — Platform Reference Architecture`;
 - arquiteturas de referência por domínio;
 - modelo de cooperação entre Core Capabilities;
-- fluxos conceituais, responsabilidades e fronteiras operacionais.
+- fluxos conceituais, responsabilidades e fronteiras.
 
 ## A4 — Platform Engineering
 
 **Estado:** Planned.
 
-Objetivo:
-
-Transformar arquiteturas de referência em Enterprise Programs e Enterprise Delivery, preservando a separação entre visão institucional e escolhas de implementação.
+Transformar arquiteturas de referência em Enterprise Programs e Enterprise Delivery, preservando a separação entre visão e implementação.
 
 ## A5 — Canon 1.0
 
 **Estado:** Planned.
 
-Critério preliminar:
-
-Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais, com rastreabilidade suficiente para orientar programas de implementação.
-
-## Pendência econômica estratégica
-
-O `Enterprise Economic Model` foi registrado como pendência estratégica da Business Architecture.
-
-Escopo preliminar:
-
-- geração de valor;
-- captura de valor;
-- distribuição e compartilhamento de valor;
-- reinvestimento;
-- incentivos do ecossistema;
-- sustentabilidade econômica;
-- monetização;
-- efeitos de rede e mecanismos econômicos.
-
-**Estado:** Planned / Deferred.
-
-**Dependências:** maturidade mínima do GCCM, dos Business Outcomes e das Core Business Capabilities.
-
-O registro da pendência não cria uma nova arquitetura e não define antecipadamente sua forma documental definitiva.
+Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais.
 
 ## Regra de transição
 
-Um marco somente muda de estado quando seus critérios de conclusão estiverem demonstrados no GKR. A mudança de marco não promove automaticamente hipóteses, drafts ou ativos experimentais à Canon.
+Um marco somente muda de estado quando seus critérios de conclusão estiverem demonstrados no GKR. Nenhuma hipótese, draft ou ativo experimental é promovido automaticamente à Canon.
