@@ -2,7 +2,7 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 1.0.0
+version: 2.0.0
 owner: Guivos
 last_updated: 2026-07-03
 classification: Documento Institucional Público
@@ -17,586 +17,1022 @@ update_cycle: Continuous
 | Campo | Informação |
 |---|---|
 | Nome | Guia Oficial da Guivos |
-| Finalidade | Apresentar publicamente a Guivos de forma clara, acessível e atualizada |
-| Público | Pessoas, empresas, organizações, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
+| Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará e como pessoas e organizações poderão participar |
+| Público | Pessoas, empresas, organizações, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
 | Responsável institucional | Guivos |
-| Versão | 1.0.0 |
+| Versão | 2.0.0 |
 | Última atualização | 03/07/2026 |
 | Status | Public Canon |
 | Fonte principal | Guivos Knowledge Repository |
 | Natureza | Documento vivo, atualizado conforme a evolução oficial do repositório |
 
-> Este guia traduz para linguagem pública as decisões consolidadas no Guivos Knowledge Repository. Ele não substitui os documentos arquiteturais internos e não apresenta hipóteses, discussões preliminares ou planos não validados como fatos concluídos.
+> Este guia traduz para linguagem pública as decisões consolidadas no Guivos Knowledge Repository. Não apresenta hipóteses, discussões preliminares ou planos não validados como fatos concluídos.
+
+## Regra editorial principal
+
+Nenhum conceito abstrato deve ser apresentado antes de o leitor compreender, por meio de uma situação concreta, qual problema esse conceito resolve.
+
+---
+
+# 1. Imagine esta situação
+
+João tem 32 anos e sente que precisa melhorar alguma área de sua vida.
+
+Talvez queira:
+
+- encontrar um novo emprego;
+- aumentar sua renda;
+- voltar a estudar;
+- cuidar melhor da saúde;
+- fortalecer sua espiritualidade;
+- melhorar seus relacionamentos;
+- fazer novas amizades;
+- praticar um esporte;
+- viajar mais;
+- abrir uma empresa;
+- participar de uma causa social;
+- desenvolver liderança;
+- aprender uma nova habilidade;
+- encontrar mais propósito no que faz.
+
+João sabe que quer avançar, mas não sabe por onde começar.
+
+Quando procura ajuda, encontra milhares de cursos, vídeos, especialistas, eventos, vagas, viagens, grupos, comunidades, igrejas, movimentos, empresas e projetos sociais. As oportunidades existem, mas estão espalhadas. Algumas são boas, outras não combinam com sua realidade e muitas aparecem sem qualquer orientação.
+
+O problema de João não é apenas falta de informação.
+
+É informação demais, pouca organização e dificuldade para identificar qual oportunidade realmente faz sentido agora.
+
+A Guivos foi criada para enfrentar esse problema.
+
+---
+
+# 2. Definição simples da Guivos
+
+A Guivos é um ecossistema que ajuda pessoas a entender o que desejam melhorar em suas vidas e a encontrar grupos, organizações, conteúdos, experiências, produtos, serviços e oportunidades que possam ajudá-las a avançar.
+
+Ao mesmo tempo, ajuda empresas, universidades, igrejas, movimentos, comunidades, organizações sociais, especialistas e outros parceiros a disponibilizar oportunidades para as pessoas que realmente podem se beneficiar delas.
+
+A Guivos não define o que uma pessoa deve querer para sua vida. Cada pessoa escolhe seus próprios objetivos.
+
+A função da Guivos é ajudar a transformar uma intenção ampla — como “quero melhorar minha saúde” ou “quero crescer profissionalmente” — em possibilidades mais claras e próximas da realidade daquela pessoa.
 
 ## Definição resumida
 
-A Guivos é um ecossistema criado para ajudar pessoas, empresas, organizações e coletivos a encontrar oportunidades relevantes, viver experiências, construir relacionamentos e avançar em suas jornadas de evolução.
-
-Tecnologia, inteligência artificial, dados, conteúdos, viagens, soluções empresariais e produtos comerciais são meios utilizados para cumprir esse propósito. Nenhum deles, isoladamente, define a Guivos.
-
-## Resumo executivo
-
-A Guivos nasce da percepção de que muitas pessoas e organizações possuem objetivos, necessidades e potencial, mas encontram dificuldade para descobrir o próximo passo mais adequado ao momento que vivem.
-
-Informações existem em grande quantidade, porém estão espalhadas. Cursos aparecem em uma plataforma, empregos em outra, viagens em outra, projetos sociais em outra e comunidades em espaços separados. O problema não é apenas a falta de oportunidades. Muitas vezes, o problema é não saber qual oportunidade faz sentido agora.
-
-A proposta da Guivos é organizar um ecossistema em que participantes possam compreender melhor seu contexto, identificar próximos passos, encontrar oportunidades, participar de experiências, formar relacionamentos e produzir conhecimento que fortaleça futuras jornadas.
-
-A Guivos não pretende decidir a vida das pessoas. Seu papel é ampliar possibilidades, facilitar conexões e apoiar decisões, preservando a autonomia de cada participante.
-
-Seus produtos foram organizados para atuar de forma integrada:
-
-- **Guivos Journey** apoia a jornada contínua do participante;
-- **Guivos Marketplace** organiza a oferta e comercialização de produtos, serviços e ativos, embora o nome comercial ainda seja provisório;
-- **Guivos Travel** reúne viagens e experiências ligadas a destinos e turismo;
-- **Guivos Business** entrega soluções para empresas e organizações;
-- **Guivos Media** produz conteúdos, histórias, vídeos, podcasts, livros e materiais editoriais;
-- **Guivos Intelligence** transforma dados, contexto e conhecimento em análises e recomendações;
-- **Guivos Ads** opera publicidade, patrocínios e mídia patrocinada com regras de transparência e relevância.
-
-A maior parte desse ecossistema ainda está em desenvolvimento ou planejamento. A arquitetura institucional, a Foundation e a estrutura superior dos produtos já foram consolidadas no repositório, mas isso não significa que todos os produtos estejam disponíveis ao público.
+> **A Guivos conecta pessoas que desejam evoluir às oportunidades, experiências, grupos e organizações que podem ajudá-las a dar o próximo passo.**
 
 ---
 
-# 1. O que é a Guivos
+# 3. Que evolução é essa?
 
-A Guivos é um ecossistema de evolução.
+Na Guivos, evolução não significa que todas as pessoas devam buscar o mesmo objetivo ou seguir um único modelo de vida.
 
-A palavra **ecossistema** significa, neste contexto, um conjunto de pessoas, empresas, organizações, coletivos, oportunidades, experiências, relacionamentos, conteúdos, serviços e conhecimentos que se fortalecem quando atuam de forma conectada.
+Cada pessoa define o que significa evoluir para si.
 
-A Guivos não foi concebida como um aplicativo isolado ou como um único serviço. Ela foi estruturada para integrar diferentes formas de gerar valor ao longo da jornada de um participante.
+Evoluir pode significar:
 
-Uma pessoa pode, por exemplo:
+- conseguir o primeiro emprego;
+- mudar de profissão;
+- aumentar a renda;
+- organizar a vida financeira;
+- concluir uma formação;
+- conseguir uma bolsa de estudos;
+- cuidar da saúde física;
+- fortalecer a saúde emocional;
+- desenvolver a espiritualidade;
+- melhorar o relacionamento com a família;
+- ampliar o círculo de amizades;
+- participar de uma comunidade;
+- começar a correr ou pedalar;
+- viajar e conhecer outras culturas;
+- desenvolver um negócio;
+- servir em uma ação social;
+- apoiar uma causa ambiental ou animal;
+- descobrir novas possibilidades para a própria vida.
 
-- descobrir uma oportunidade profissional;
-- encontrar um grupo esportivo;
-- participar de uma experiência de viagem;
-- acessar conteúdo relevante;
-- conhecer uma organização social;
-- acompanhar objetivos pessoais;
-- receber recomendações;
-- criar relações com outras pessoas e instituições.
+A evolução também pode acontecer com organizações e grupos.
 
-Uma empresa pode:
+Uma empresa pode evoluir ao desenvolver melhor seus colaboradores. Uma igreja pode evoluir ao ampliar sua capacidade de acolhimento. Uma universidade pode evoluir ao aproximar bolsas e programas de quem precisa. Uma ONG pode evoluir ao encontrar voluntários e parceiros. Um grupo de ciclistas pode evoluir ao reunir mais participantes e organizar novas ações.
 
-- estruturar jornadas de desenvolvimento;
-- oferecer benefícios;
-- divulgar oportunidades;
-- acompanhar indicadores;
-- criar experiências para colaboradores ou clientes;
-- contratar soluções integradas da Guivos.
+## Exemplo prático
 
-Uma organização social pode:
+Maria deseja aumentar sua renda, mas ainda não sabe se deve buscar uma nova vaga, fazer um curso, abrir um pequeno negócio ou encontrar uma mentoria.
 
-- apresentar projetos;
-- encontrar voluntários;
-- divulgar necessidades;
-- formar parcerias;
-- ampliar sua presença em comunidades locais.
+A Guivos poderá ajudá-la a organizar esse objetivo e apresentar possibilidades como:
 
-### Exemplo prático
+- bolsas oferecidas por universidades;
+- cursos gratuitos ou pagos;
+- vagas divulgadas por empresas;
+- grupos de estudo;
+- eventos de networking;
+- comunidades de empreendedorismo;
+- especialistas e mentores;
+- conteúdos relacionados à área em que ela deseja atuar.
 
-Marina mudou de cidade, deseja conhecer pessoas, iniciar uma atividade física e participar de ações sociais. Em vez de procurar separadamente em várias plataformas, ela poderá utilizar a Guivos para identificar oportunidades relacionadas ao seu momento atual. Poderá encontrar um grupo de corrida, um projeto de voluntariado e um conteúdo sobre adaptação a uma nova cidade.
-
-*Situação ilustrativa. A disponibilidade real dependerá do estágio de desenvolvimento dos produtos e das oportunidades existentes em cada região.*
-
-## Em resumo, o que isso significa para mim?
-
-A Guivos pretende reunir, organizar e conectar possibilidades que hoje estão dispersas, ajudando cada participante a compreender o que pode fazer a seguir.
-
----
-
-# 2. O problema que a Guivos busca enfrentar
-
-A vida oferece muitas possibilidades, mas elas nem sempre chegam às pessoas certas, no momento certo e de forma compreensível.
-
-Alguns problemas comuns são:
-
-- excesso de informação sem orientação;
-- dificuldade para descobrir oportunidades relevantes;
-- falta de clareza sobre o próximo passo;
-- plataformas desconectadas entre si;
-- pouca continuidade após uma experiência;
-- relações importantes que se perdem com o tempo;
-- empresas que oferecem ações sem compreender o contexto do público;
-- projetos sociais com dificuldade para alcançar pessoas e parceiros;
-- conhecimento produzido por experiências que não é preservado ou reaproveitado.
-
-### Exemplo prático
-
-Carlos deseja mudar de área profissional. Ele encontra cursos, vagas, eventos e especialistas, mas não sabe por onde começar. A Guivos pretende ajudá-lo a organizar esse contexto, identificar um próximo passo e encontrar oportunidades compatíveis com esse momento.
-
-A Guivos não garante que Carlos alcançará um resultado específico. Ela busca ampliar a qualidade das informações, conexões e possibilidades disponíveis para que ele decida com mais clareza.
+Maria continua responsável pela decisão. A Guivos organiza possibilidades para que ela escolha com mais clareza.
 
 ---
 
-# 3. O propósito da Guivos
+# 4. O que significa “momento atual”?
+
+O momento atual é a fotografia da realidade de uma pessoa ou organização em determinado período.
+
+Ele não se refere apenas à idade ou à fase da vida. Inclui tudo o que ajuda a compreender o que aquela pessoa está vivendo, o que deseja e quais oportunidades podem realmente fazer sentido.
+
+O momento atual pode envolver:
+
+- objetivos;
+- necessidades;
+- profissão;
+- renda;
+- formação;
+- saúde;
+- espiritualidade;
+- relacionamentos;
+- cidade ou região;
+- disponibilidade de tempo;
+- interesses;
+- conhecimentos;
+- experiências anteriores;
+- limitações;
+- preferências;
+- causas que apoia;
+- grupos dos quais já participa.
+
+A pessoa não precisará expor tudo sobre sua vida. A experiência deverá respeitar suas escolhas, seus limites e sua privacidade.
+
+## Por que isso importa?
+
+Uma mesma oportunidade pode ser excelente para uma pessoa e inadequada para outra.
+
+Uma corrida às seis da manhã pode ser adequada para quem deseja praticar esporte e possui disponibilidade nesse horário. Para outra pessoa, uma caminhada aos sábados pode fazer muito mais sentido.
+
+Uma bolsa de estudos em outra cidade pode ser uma grande oportunidade para alguém disposto a mudar. Para quem precisa permanecer perto da família, talvez uma formação a distância seja mais adequada.
+
+## Exemplo prático
+
+Ana informa que:
+
+- mora em Belo Horizonte;
+- deseja cuidar melhor da saúde;
+- prefere atividades em grupo;
+- tem disponibilidade aos sábados;
+- gosta de natureza;
+- está começando e não se sente preparada para atividades intensas.
+
+A Guivos poderá apresentar:
+
+- grupos de caminhada;
+- pedais para iniciantes;
+- trilhas leves;
+- eventos de saúde;
+- conteúdos introdutórios;
+- profissionais ou organizações parceiras;
+- desafios adequados ao nível informado.
+
+Esse conjunto de informações representa parte do momento atual de Ana.
+
+---
+
+# 5. O que é a jornada de uma pessoa?
+
+A jornada é o caminho que uma pessoa percorre entre aquilo que vive hoje e aquilo que deseja construir.
+
+Ela não é uma sequência obrigatória e não possui um final único.
+
+Uma jornada pode começar com uma intenção simples:
+
+> “Quero melhorar minha saúde.”
+
+Depois, essa intenção pode se transformar em passos concretos:
+
+1. compreender a situação atual;
+2. escolher um objetivo possível;
+3. identificar um próximo passo;
+4. encontrar oportunidades relacionadas;
+5. decidir se deseja participar;
+6. viver uma experiência;
+7. observar o que mudou;
+8. definir um novo passo.
+
+## Exemplo prático de jornada
+
+Rafael deseja melhorar a saúde.
+
+Primeiro, informa que prefere atividades ao ar livre, está sedentário e possui disponibilidade no fim de semana.
+
+A Guivos poderá mostrar:
+
+- um grupo local de caminhada;
+- uma comunidade de ciclistas iniciantes;
+- um evento esportivo gratuito;
+- conteúdos sobre preparação;
+- uma academia parceira;
+- profissionais que possam orientá-lo quando necessário.
+
+Rafael escolhe participar de uma caminhada comunitária. Depois da experiência, percebe que gosta de atividades em grupo e decide começar a pedalar.
+
+A partir dessa nova informação, sua jornada muda. Novas oportunidades podem se tornar relevantes.
+
+É essa jornada contínua que o **Guivos Journey** pretende apoiar.
+
+---
+
+# 6. Qual é o propósito da Guivos?
 
 O propósito da Guivos é:
 
 > **Acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.**
 
-Isso significa reduzir a distância entre o momento atual de um participante e um próximo passo possível e relevante.
+Em linguagem prática, isso significa:
 
-A Guivos não estabelece um único conceito de sucesso. Evolução pode significar aprender, trabalhar, viajar, cuidar da saúde, criar relacionamentos, apoiar uma causa, desenvolver uma organização ou viver uma experiência significativa.
+- ajudar a pessoa a compreender o que deseja melhorar;
+- organizar possibilidades relacionadas a esse objetivo;
+- aproximá-la de pessoas, grupos, empresas e organizações;
+- facilitar a descoberta de experiências úteis;
+- acompanhar aprendizados e novos passos;
+- preservar a autonomia de decisão.
 
-O propósito orienta:
-
-- os produtos;
-- as recomendações;
-- as parcerias;
-- os conteúdos;
-- o uso de tecnologia;
-- a forma de gerar receita;
-- a expansão da empresa.
-
-Uma decisão que não contribua para a jornada dos participantes deve ser reavaliada.
-
-## O que a Guivos não pretende se tornar
-
-A Guivos não pretende ser apenas:
-
-- uma rede social;
-- uma empresa de viagens;
-- uma plataforma de cursos;
-- um portal de empregos;
-- um aplicativo de eventos;
-- um marketplace tradicional;
-- uma empresa de inteligência artificial;
-- uma comunidade isolada.
-
-Cada uma dessas atividades pode existir dentro do ecossistema, mas nenhuma representa sua totalidade.
+A tecnologia, a inteligência artificial, os dados, os conteúdos e os produtos são meios para cumprir esse propósito. Eles não são o propósito em si.
 
 ---
 
-# 4. Missão, visão e princípios
+# 7. O problema que a Guivos busca enfrentar
 
-## Propósito
+Muitas oportunidades já existem, mas estão dispersas.
 
-Acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.
+Hoje, uma pessoa pode precisar procurar separadamente em:
 
-**Na prática:** entender o contexto antes de recomendar qualquer possibilidade.
+- sites de emprego;
+- plataformas de cursos;
+- redes sociais;
+- aplicativos esportivos;
+- sites de universidades;
+- páginas de igrejas;
+- grupos de mensagens;
+- perfis de movimentos;
+- páginas de ONGs;
+- sites de viagens;
+- calendários de eventos;
+- aplicativos de benefícios;
+- canais de especialistas.
 
-## Missão
+Isso cria alguns problemas:
 
-Ajudar cada participante a evoluir continuamente por meio das oportunidades mais relevantes para seu momento de vida.
+- excesso de informação sem orientação;
+- dificuldade para encontrar o que realmente combina com a pessoa;
+- desconhecimento de grupos e iniciativas locais;
+- oportunidades que não chegam a quem precisa;
+- comunidades que permanecem isoladas;
+- organizações que têm dificuldade para encontrar participantes;
+- experiências que terminam sem gerar continuidade;
+- relações e aprendizados que se perdem.
 
-**Na prática:** organizar produtos, conteúdos, experiências e conexões para apoiar próximos passos reais.
-
-## Visão
-
-Tornar-se um ecossistema global de descoberta, conexão e desenvolvimento de oportunidades capazes de transformar positivamente a vida de pessoas, organizações e coletivos.
-
-**Na prática:** criar uma estrutura que possa operar em diferentes cidades e países sem abandonar sua identidade.
-
-## Princípios orientadores
-
-### Evolução como finalidade
-
-A evolução do participante é mais importante que a tecnologia utilizada.
-
-### Autonomia
-
-A decisão final pertence ao participante.
-
-### Relevância contextual
-
-A mesma oportunidade pode ser adequada para uma pessoa e inadequada para outra.
-
-### Tecnologia como meio
-
-Tecnologia existe para apoiar pessoas e organizações, não para substituí-las.
-
-### Conhecimento como patrimônio
-
-Experiências e aprendizados devem fortalecer futuras jornadas.
-
-### Simplicidade
-
-A Guivos busca criar apenas estruturas e soluções que tenham utilidade real.
-
-### Inclusão e validade global
-
-A arquitetura deve respeitar diferentes culturas, crenças, países e contextos.
-
-### Realização progressiva
-
-A visão de longo prazo será construída por etapas. Nem tudo estará disponível ao mesmo tempo.
+A Guivos pretende funcionar como uma infraestrutura de conexão entre essas partes.
 
 ---
 
-# 5. Para quem a Guivos existe
+# 8. Quem oferece as oportunidades?
 
-## Pessoas
+A Guivos não criará sozinha todas as oportunidades.
 
-Podem descobrir oportunidades, acompanhar objetivos, participar de experiências, consumir conteúdos, formar relacionamentos e contribuir com outras jornadas.
+Grande parte delas poderá ser oferecida por pessoas, empresas, universidades, escolas, igrejas, movimentos, comunidades, organizações sociais, profissionais, órgãos públicos e parceiros.
 
 ## Empresas
 
-Podem oferecer benefícios, oportunidades, programas de desenvolvimento, conteúdos, experiências, campanhas e soluções para públicos internos ou externos.
+Poderão oferecer:
 
-## Organizações
+- vagas;
+- programas de estágio;
+- mentorias;
+- benefícios;
+- experiências para colaboradores;
+- programas de desenvolvimento;
+- eventos;
+- produtos e serviços;
+- apoio a causas e projetos.
 
-Incluem escolas, universidades, associações, órgãos públicos, fundações, cooperativas, organizações sociais e outras instituições.
+### Exemplo
 
-## Coletivos e comunidades
+Uma empresa de tecnologia poderá divulgar vagas para iniciantes, oferecer uma mentoria de carreira e patrocinar uma formação para pessoas interessadas na área.
 
-Podem organizar pessoas em torno de interesses, territórios ou causas comuns. Na arquitetura da Guivos, comunidade é uma forma possível de coletivo.
+## Universidades e instituições de ensino
 
-## Parceiros
+Poderão oferecer:
 
-Podem oferecer produtos, serviços, experiências, conhecimento, infraestrutura ou apoio institucional.
+- bolsas;
+- cursos;
+- eventos;
+- programas de extensão;
+- pesquisas;
+- visitas;
+- palestras;
+- oportunidades de intercâmbio;
+- projetos com a comunidade.
 
-## Criadores e especialistas
+### Exemplo
 
-Podem produzir conteúdos, orientar participantes, desenvolver experiências e compartilhar conhecimento.
+Uma universidade poderá cadastrar bolsas parciais para determinado curso. Pessoas que informaram interesse naquela área e atendam aos critérios poderão descobrir a oportunidade pela Guivos.
 
-## Projetos sociais e causas
+## Igrejas e comunidades religiosas
 
-Podem encontrar voluntários, parceiros, recursos, visibilidade e conexões relevantes.
+Poderão oferecer:
+
+- grupos de oração;
+- estudos;
+- retiros;
+- encontros;
+- ações solidárias;
+- apoio comunitário;
+- atividades para famílias, jovens ou idosos;
+- projetos de voluntariado.
+
+### Exemplo
+
+Uma igreja parceira poderá divulgar um grupo de oração semanal, um retiro e uma campanha de arrecadação. Pessoas interessadas em fortalecer a espiritualidade ou participar de ações comunitárias poderão encontrar essas iniciativas.
+
+A Guivos deverá respeitar a liberdade religiosa e não impor uma crença específica.
+
+## Movimentos
+
+Movimentos já existentes poderão apresentar sua proposta, seus encontros, seus critérios e suas atividades.
+
+Exemplos incluem movimentos como **Legendários**, iniciativas de desenvolvimento pessoal, redes de voluntariado, movimentos culturais, esportivos, ambientais ou comunitários.
+
+### Exemplo
+
+Um movimento poderá divulgar uma experiência, explicar para quem ela se destina e receber interessados que se identifiquem com sua proposta.
+
+## ONGs e projetos sociais
+
+Poderão oferecer:
+
+- voluntariado;
+- campanhas;
+- ações emergenciais;
+- projetos de educação;
+- proteção animal;
+- iniciativas ambientais;
+- apoio a pessoas em situação de vulnerabilidade;
+- oportunidades de doação ou parceria.
+
+## Órgãos públicos
+
+Poderão divulgar:
+
+- cursos gratuitos;
+- programas de emprego;
+- eventos culturais;
+- ações de saúde;
+- serviços comunitários;
+- oportunidades locais.
+
+## Especialistas e profissionais
+
+Poderão oferecer:
+
+- mentorias;
+- palestras;
+- conteúdos;
+- atendimentos;
+- workshops;
+- experiências de aprendizagem.
+
+A Guivos não substitui a avaliação de profissionais qualificados nas áreas em que ela for necessária.
 
 ---
 
-# 6. Como a Guivos funcionará na prática
+# 9. A Guivos fortalece grupos, movimentos e comunidades que já existem
 
-A experiência poderá começar de diferentes formas. Uma pessoa poderá conhecer a Guivos por um conteúdo, uma recomendação, uma empresa, uma viagem, uma oportunidade ou uma comunidade.
+O mundo já possui milhares de grupos, movimentos, comunidades e iniciativas que ajudam pessoas a aprender, servir, criar vínculos, praticar atividades, desenvolver a fé, viajar ou melhorar diferentes áreas da vida.
 
-Em uma experiência completa, o fluxo poderá ocorrer assim:
+A Guivos não pretende substituir, renomear ou tomar para si a identidade dessas iniciativas.
 
-1. o participante entra no ecossistema;
-2. informa interesses, objetivos ou necessidades;
-3. a Guivos organiza o contexto disponível;
-4. possíveis próximos passos são identificados;
-5. oportunidades relacionadas são apresentadas;
-6. o participante escolhe se deseja participar;
-7. a oportunidade gera uma experiência;
-8. a experiência pode criar relacionamentos e aprendizados;
-9. esses aprendizados ajudam a compreender o novo momento do participante;
-10. um novo ciclo pode começar.
+Um grupo de pedal continuará sendo o grupo de pedal que seus integrantes criaram.
+
+Uma igreja continuará preservando sua identidade, suas crenças e sua forma de organização.
+
+Um movimento como Legendários continuará sendo o próprio movimento.
+
+Uma ONG continuará responsável por sua causa e por sua operação.
+
+A Guivos pretende oferecer um ambiente comum onde essas iniciativas possam:
+
+- apresentar quem são;
+- divulgar encontros e oportunidades;
+- receber novos participantes;
+- encontrar parceiros;
+- conectar-se a empresas e instituições;
+- colaborar com outros grupos;
+- fortalecer suas atividades;
+- preservar relacionamentos e aprendizados.
+
+## Exemplos de grupos e comunidades
+
+- grupos de pedal;
+- comunidades de ciclistas;
+- grupos de corrida;
+- grupos de caminhada;
+- grupos de trilha;
+- clubes esportivos;
+- grupos de estudos;
+- grupos de viajantes;
+- comunidades de intercâmbio;
+- grupos de oração;
+- estudos bíblicos;
+- comunidades religiosas;
+- movimentos de desenvolvimento pessoal;
+- grupos de empreendedores;
+- redes profissionais;
+- associações de bairro;
+- grupos de ações sociais;
+- projetos de ajuda comunitária;
+- redes de proteção animal;
+- coletivos ambientais;
+- grupos culturais;
+- comunidades de mães, pais, jovens ou idosos;
+- grupos de apoio e convivência.
+
+## Como uma pessoa poderá se juntar
+
+Uma pessoa poderá informar interesses ou objetivos, como:
+
+- “quero começar a pedalar”;
+- “quero participar de ações sociais”;
+- “quero fortalecer minha espiritualidade”;
+- “quero viajar com outras pessoas”;
+- “quero estudar para uma certificação”;
+- “quero conhecer empreendedores da minha cidade”;
+- “quero ajudar animais abandonados”.
+
+A Guivos poderá apresentar grupos, movimentos, organizações e oportunidades relacionados.
+
+Antes de participar, a pessoa deverá ter acesso a informações como:
+
+- objetivo do grupo;
+- local ou formato das atividades;
+- público atendido;
+- regras de participação;
+- responsáveis;
+- datas;
+- possíveis custos;
+- critérios ou cuidados necessários.
+
+A decisão de entrar permanece com a pessoa, e a aceitação poderá depender das regras legítimas de cada grupo.
+
+## Como grupos diferentes poderão se conectar
+
+A Guivos também poderá aproximar iniciativas que atuam separadamente.
 
 ### Exemplo prático
 
-Rafael quer melhorar sua saúde, mas não sabe se começa por academia, corrida ou acompanhamento profissional. Ele informa seus interesses e limitações. A Guivos poderá apresentar conteúdos introdutórios, grupos locais, eventos esportivos e especialistas cadastrados. Rafael decide participar de uma caminhada comunitária. Depois da experiência, registra sua percepção e passa a receber sugestões compatíveis com seu progresso.
+Um grupo de ciclistas deseja realizar uma ação solidária.
 
-A Guivos não substitui orientação médica ou profissional. Ela pode ajudar Rafael a descobrir opções e organizar sua jornada.
+Uma ONG precisa distribuir doações em comunidades afastadas.
+
+Uma empresa quer apoiar uma iniciativa local.
+
+Uma universidade possui estudantes interessados em voluntariado.
+
+Dentro da Guivos, essas quatro partes poderão se encontrar e organizar uma ação conjunta, preservando a identidade e a responsabilidade de cada uma.
 
 ---
 
-# 7. O ecossistema Guivos
+# 10. Como a pessoa informa o que está buscando
+
+A Guivos deverá permitir que cada pessoa indique, de forma progressiva e voluntária, áreas em que deseja avançar.
+
+Exemplos:
+
+- carreira e renda;
+- educação;
+- saúde física;
+- bem-estar emocional;
+- espiritualidade;
+- relacionamentos;
+- família;
+- empreendedorismo;
+- esportes;
+- viagens;
+- cultura;
+- voluntariado;
+- impacto social;
+- participação comunitária;
+- hobbies e lazer.
+
+A pessoa poderá começar com uma intenção ampla e refiná-la ao longo do tempo.
+
+## Exemplo 1 — crescimento profissional
+
+Pedro informa:
+
+> “Quero conseguir uma oportunidade melhor e aumentar minha renda.”
+
+A Guivos poderá apresentar:
+
+- vagas;
+- bolsas;
+- cursos;
+- grupos de estudo;
+- eventos profissionais;
+- mentorias;
+- comunidades de networking;
+- empresas parceiras;
+- conteúdos de orientação.
+
+## Exemplo 2 — espiritualidade
+
+Juliana informa:
+
+> “Quero fortalecer minha vida espiritual e conhecer pessoas com valores semelhantes.”
+
+A Guivos poderá apresentar:
+
+- igrejas parceiras;
+- grupos de oração;
+- estudos;
+- retiros;
+- movimentos;
+- conteúdos;
+- ações solidárias;
+- comunidades locais.
+
+## Exemplo 3 — novas amizades
+
+Carlos informa:
+
+> “Mudei de cidade e quero conhecer pessoas.”
+
+A Guivos poderá apresentar:
+
+- grupos de corrida;
+- comunidades de ciclistas;
+- grupos de viajantes;
+- eventos culturais;
+- voluntariado;
+- grupos de estudo;
+- coletivos locais;
+- experiências em grupo.
+
+## Exemplo 4 — ação social
+
+Fernanda informa:
+
+> “Quero ajudar pessoas, mas não sei onde começar.”
+
+A Guivos poderá apresentar:
+
+- ONGs próximas;
+- campanhas;
+- projetos comunitários;
+- ações de igrejas;
+- proteção animal;
+- iniciativas ambientais;
+- necessidades de voluntariado.
+
+---
+
+# 11. Como a Guivos funcionará na prática
+
+Uma experiência completa poderá ocorrer assim:
+
+1. a pessoa conhece a Guivos;
+2. informa o que deseja melhorar, descobrir ou viver;
+3. escolhe quais informações deseja compartilhar;
+4. a Guivos organiza o contexto disponível;
+5. possíveis próximos passos são apresentados;
+6. oportunidades, grupos e organizações relacionados são encontrados;
+7. a pessoa compara as opções;
+8. decide se deseja participar;
+9. vive uma experiência;
+10. registra ou reconhece o que mudou;
+11. recebe novas possibilidades compatíveis com seu novo momento.
+
+A Guivos não deve tratar esse caminho como uma obrigação. A pessoa poderá ajustar objetivos, interromper uma jornada, mudar de interesse ou rejeitar recomendações.
+
+---
+
+# 12. O que significa a Guivos ser um ecossistema?
 
 Pense em uma cidade.
 
-Nela existem pessoas, empresas, escolas, projetos sociais, espaços culturais, grupos esportivos, profissionais, eventos, serviços e oportunidades. Cada elemento funciona por conta própria, mas o valor aumenta quando eles se conectam.
+Nela existem pessoas, empresas, universidades, escolas, igrejas, ONGs, movimentos, grupos esportivos, profissionais, eventos, viagens, produtos, serviços e causas.
 
-A Guivos pretende atuar como uma infraestrutura comum para facilitar essas conexões.
+Esses elementos já existem, mas frequentemente funcionam separados.
 
-Os produtos compartilham participantes, conhecimento, identidade e governança. Isso significa que uma experiência iniciada em um produto poderá gerar valor em outro.
+A Guivos pretende criar uma infraestrutura comum para que:
 
-### Exemplo prático
+- pessoas encontrem oportunidades;
+- organizações encontrem participantes;
+- grupos encontrem novos integrantes;
+- empresas encontrem formas responsáveis de gerar valor;
+- iniciativas diferentes formem parcerias;
+- experiências gerem relacionamentos e conhecimento;
+- aprendizados ajudem futuras pessoas e organizações.
 
-Uma pessoa encontra no Guivos Media uma história sobre voluntariado. Pelo Guivos Journey, descobre uma ação local. A organização responsável utiliza o Guivos Business para estruturar a participação. A experiência gera novos relacionamentos e conhecimento para futuras recomendações do Guivos Intelligence.
+A Guivos não é apenas um lugar para publicar informações. Seu objetivo é criar continuidade entre descoberta, escolha, experiência e próximo passo.
 
 ---
 
-# 8. Produtos, plataformas e iniciativas
+# 13. Produtos da Guivos explicados de forma prática
 
 ## Guivos Journey
 
-**Definição:** produto responsável por apoiar continuamente a jornada do participante.
+### O que é
 
-**Público principal:** pessoas, organizações e coletivos em jornadas de evolução.
+É o produto responsável por ajudar a pessoa ou organização a entender o que está buscando, organizar objetivos, identificar próximos passos e acompanhar experiências ao longo do tempo.
 
-**Problema que busca resolver:** falta de continuidade e orientação entre objetivos, próximos passos e oportunidades.
+### Que jornada ele apoia?
 
-**Como funcionará:** poderá reunir momento atual, objetivos, próximos passos, conteúdos, especialistas, coletivos, desafios, trilhas, conexões e evidências de evolução.
+A jornada entre a realidade atual e uma mudança que o participante deseja realizar.
 
-**Valor entregue:** organização da jornada e descoberta de possibilidades relevantes.
+Essa mudança pode envolver carreira, renda, educação, saúde, espiritualidade, relacionamentos, esporte, viagens, empreendedorismo, voluntariado ou outras áreas escolhidas pelo próprio participante.
 
-**Conexões:** utiliza inteligência, conteúdos, produtos, viagens, soluções empresariais e ativações patrocinadas de outros produtos.
+### O que poderá entregar
 
-**Estágio:** arquitetura consolidada; implementação pública integral ainda não confirmada como disponível.
+- registro de interesses e objetivos;
+- organização do momento atual;
+- próximos passos;
+- grupos e comunidades;
+- oportunidades;
+- conteúdos;
+- desafios;
+- trilhas;
+- especialistas;
+- acompanhamento de experiências;
+- evidências de progresso.
 
 ### Exemplo prático
 
-Uma estudante deseja melhorar sua formação e ampliar sua rede profissional. O Journey poderá organizar metas, apresentar conteúdos, indicar eventos e sugerir comunidades relacionadas.
+Uma estudante deseja conquistar o primeiro emprego. O Journey poderá ajudá-la a organizar esse objetivo, encontrar uma bolsa, participar de um grupo de estudos, conhecer uma empresa parceira e acompanhar as experiências que fortalecem sua preparação.
+
+### Estágio
+
+Arquitetura consolidada. Implementação pública integral ainda não confirmada como disponível.
 
 ## Guivos Marketplace
 
-**Definição:** produto responsável pela oferta e comercialização de produtos, serviços, assinaturas, gift cards e ativos físicos ou digitais.
+### O que é
 
-**Observação:** o produto está consolidado, mas o nome “Guivos Marketplace” é provisório.
+É o produto responsável por organizar a oferta e comercialização de produtos, serviços, assinaturas, gift cards e outros ativos físicos ou digitais.
 
-**Público principal:** compradores, vendedores, parceiros e organizações.
+### O que poderá entregar
 
-**Problema que busca resolver:** dispersão de ofertas e dificuldade de conectar produtos e serviços às jornadas dos participantes.
-
-**Valor entregue:** acesso organizado a itens comercializáveis relacionados ao ecossistema.
-
-**Estágio:** produto consolidado; marca comercial em revisão; disponibilidade operacional depende de implementação.
+- produtos relacionados às jornadas;
+- serviços;
+- cursos comercializáveis;
+- ingressos;
+- assinaturas;
+- gift cards;
+- benefícios;
+- ofertas de parceiros.
 
 ### Exemplo prático
 
-Uma empresa pode disponibilizar um benefício, curso, ingresso ou gift card vinculado a uma jornada corporativa.
+Uma empresa poderá disponibilizar um benefício para seus colaboradores. Uma organização poderá oferecer ingresso para uma experiência. Um especialista poderá vender um workshop.
+
+### Estágio
+
+Produto consolidado. O nome “Guivos Marketplace” permanece provisório e a disponibilidade operacional depende de implementação.
 
 ## Guivos Travel
 
-**Definição:** produto responsável por viagens, destinos e experiências turísticas.
+### O que é
 
-**Público principal:** viajantes, empresas, parceiros de turismo e organizações.
+É o produto responsável por viagens, destinos e experiências turísticas.
 
-**Problema que busca resolver:** fragmentação entre planejamento, experiências locais, parceiros e objetivos da viagem.
+### O que poderá entregar
 
-**Valor entregue:** organização de roteiros, hospedagens, passeios, experiências locais e ofertas relacionadas.
-
-**Estágio:** arquitetura consolidada; implementação e disponibilidade pública dependem do avanço operacional.
+- destinos;
+- roteiros;
+- hospedagens;
+- passeios;
+- experiências locais;
+- viagens em grupo;
+- parceiros de turismo;
+- jornadas relacionadas a viagens.
 
 ### Exemplo prático
 
-Uma pessoa que deseja conhecer uma cidade por meio de cultura e impacto social poderá encontrar roteiro, hospedagem, experiências locais e uma ação comunitária vinculada à viagem.
+Uma pessoa deseja viajar para conhecer cultura, natureza e projetos sociais. O Guivos Travel poderá reunir roteiro, hospedagem, experiências locais e oportunidades comunitárias ligadas ao destino.
+
+### Estágio
+
+Arquitetura consolidada. Implementação e disponibilidade dependem do avanço operacional.
 
 ## Guivos Business
 
-**Definição:** produto responsável pelas soluções da Guivos para empresas e organizações.
+### O que é
 
-**Público principal:** empresas, instituições, organizações sociais e demais entidades.
+É o produto responsável pelas soluções da Guivos para empresas e organizações.
 
-**Problema que busca resolver:** dificuldade de integrar benefícios, desenvolvimento, jornadas, oportunidades e indicadores.
+### O que poderá entregar
 
-**Valor entregue:** programas corporativos, benefícios, parcerias, integrações, relatórios e jornadas para públicos vinculados.
-
-**Estágio:** arquitetura consolidada; ofertas específicas podem estar em desenvolvimento ou planejamento.
+- benefícios corporativos;
+- jornadas de desenvolvimento;
+- programas para colaboradores;
+- oportunidades;
+- parcerias;
+- integrações;
+- indicadores;
+- relatórios;
+- campanhas e experiências.
 
 ### Exemplo prático
 
-Uma empresa deseja apoiar o bem-estar e o desenvolvimento de seus colaboradores. O Guivos Business poderá organizar uma jornada com conteúdos, experiências, benefícios e indicadores de participação.
+Uma empresa deseja ajudar colaboradores a cuidar da saúde e desenvolver novas competências. O Guivos Business poderá organizar uma jornada com grupos esportivos, conteúdos, bolsas, benefícios e indicadores de participação.
+
+### Estágio
+
+Arquitetura consolidada. Ofertas específicas podem estar em desenvolvimento ou planejamento.
 
 ## Guivos Media
 
-**Definição:** núcleo responsável por conteúdos editoriais e institucionais.
+### O que é
 
-**Formatos possíveis:** podcast, vídeos, entrevistas, documentários, histórias reais, artigos, livros, newsletters, imprensa e séries.
+É o produto responsável por produzir e distribuir conteúdos editoriais e institucionais.
 
-**Público principal:** público geral, participantes, imprensa, empresas e parceiros.
+### O que poderá entregar
 
-**Problema que busca resolver:** conhecimento e histórias relevantes dispersos ou pouco acessíveis.
-
-**Valor entregue:** informação, inspiração, orientação e memória institucional.
-
-**Estágio:** arquitetura consolidada; formatos e publicações serão lançados progressivamente.
+- vídeos;
+- podcasts;
+- entrevistas;
+- documentários;
+- histórias reais;
+- livros;
+- artigos;
+- newsletters;
+- materiais para imprensa.
 
 ### Exemplo prático
 
-Uma entrevista com uma pessoa que transformou sua comunidade pode gerar conteúdo, inspirar participantes e direcionar interessados para uma causa real.
+Uma história sobre uma comunidade que transformou seu bairro poderá inspirar pessoas, divulgar o trabalho do grupo e direcionar interessados para uma oportunidade real de participação.
+
+### Estágio
+
+Arquitetura consolidada. Os formatos serão lançados progressivamente.
 
 ## Guivos Intelligence
 
-**Definição:** produto responsável por transformar dados, contexto e conhecimento em inteligência aplicada.
+### O que é
 
-**Público principal:** participantes, produtos Guivos, empresas e organizações.
+É o produto responsável por transformar dados, contexto e conhecimento em recomendações, indicadores e análises úteis.
 
-**Problema que busca resolver:** dificuldade de interpretar grandes volumes de informação e transformá-los em decisões úteis.
+### O que poderá entregar
 
-**Valor entregue:** recomendações, indicadores, análises, tendências, benchmarks e interpretação de contexto.
-
-**Estágio:** arquitetura consolidada; capacidades específicas de inteligência e IA dependem de desenvolvimento, dados e validação.
+- recomendações;
+- interpretação de contexto;
+- indicadores;
+- tendências;
+- benchmarks;
+- relatórios;
+- apoio aos demais produtos;
+- inteligência artificial aplicada.
 
 ### Exemplo prático
 
-Uma organização poderá receber um relatório agregado sobre participação em programas, sem precisar analisar manualmente cada interação.
+Ao perceber que uma pessoa busca atividades físicas em grupo, mora em determinada região e prefere fins de semana, o produto poderá ajudar a organizar grupos e experiências compatíveis.
+
+### Estágio
+
+Arquitetura consolidada. Capacidades específicas dependem de desenvolvimento, dados e validação.
 
 ## Guivos Ads
 
-**Definição:** produto responsável por publicidade, patrocínios e mídia patrocinada.
+### O que é
 
-**Público principal:** anunciantes, marcas, parceiros e organizações.
+É o produto responsável por publicidade, patrocínios e mídia patrocinada.
 
-**Problema que busca resolver:** necessidade de financiar a operação e distribuir ofertas relevantes com transparência.
+### O que poderá entregar
 
-**Valor entregue:** campanhas, patrocínios, ativações e mensuração.
-
-**Compromisso:** publicidade deve ser identificada, relevante e separada do conteúdo editorial.
-
-**Estágio:** arquitetura consolidada; operação depende do desenvolvimento dos canais e regras específicas.
+- campanhas;
+- patrocínios;
+- ativações de marca;
+- formatos patrocinados;
+- divulgação responsável;
+- mensuração.
 
 ### Exemplo prático
 
-Uma marca esportiva poderá patrocinar um desafio de corrida, desde que a comunicação seja claramente identificada e adequada ao contexto do participante.
+Uma marca esportiva poderá patrocinar um desafio de corrida. Uma empresa poderá apoiar uma ação comunitária. A comunicação deverá ser identificada como patrocinada e não poderá ser confundida com recomendação neutra.
+
+### Estágio
+
+Arquitetura consolidada. Operação depende do desenvolvimento dos canais e das regras específicas.
 
 ---
 
-# 9. A experiência diária da Guivos
+# 14. Como os produtos se conectam
 
-A Guivos não pretende estimular uso recorrente apenas por distração ou permanência na tela.
+Os produtos não são projetos isolados.
 
-O valor diário deverá vir de utilidades reais, como:
+## Exemplo integrado
+
+Uma pessoa assiste a um vídeo no **Guivos Media** sobre voluntariado.
+
+No **Guivos Journey**, informa interesse em participar de uma causa.
+
+O **Guivos Intelligence** ajuda a localizar oportunidades compatíveis com sua região e disponibilidade.
+
+Uma ONG cadastrada pelo **Guivos Business** oferece uma ação.
+
+A pessoa participa da experiência.
+
+Se houver um item necessário, ele poderá ser disponibilizado pelo **Guivos Marketplace**.
+
+Uma empresa poderá apoiar a iniciativa por meio do **Guivos Ads**.
+
+Se a ação envolver deslocamento ou viagem, o **Guivos Travel** poderá apoiar essa parte da experiência.
+
+---
+
+# 15. A experiência diária da Guivos
+
+A Guivos não pretende manter pessoas conectadas apenas por distração.
+
+O uso recorrente deverá gerar utilidade real, como:
 
 - novas oportunidades;
-- recomendações relacionadas ao momento atual;
-- acompanhamento de objetivos;
+- grupos próximos;
+- eventos;
 - conteúdos úteis;
-- experiências próximas;
-- conexões com pessoas ou organizações;
-- desafios e trilhas;
-- causas e ações comunitárias;
-- reconhecimento de progresso;
-- atualização de jornadas.
+- acompanhamento de objetivos;
+- desafios;
+- experiências;
+- ações sociais;
+- vagas;
+- bolsas;
+- benefícios;
+- relacionamentos;
+- registro de progresso.
 
-### Como seria um dia usando a Guivos?
+## Como poderá ser um dia usando a Guivos
 
-Pela manhã, Ana recebe uma sugestão de evento profissional relacionado a seu objetivo de carreira. Durante o almoço, lê um conteúdo curto do Guivos Media. À tarde, sua empresa divulga uma experiência de voluntariado por meio do Guivos Business. À noite, ela confirma participação em uma atividade local e acompanha os próximos passos de sua jornada.
+Pela manhã, Ana recebe uma oportunidade de bolsa relacionada ao curso que deseja fazer.
 
-*Situação ilustrativa. A experiência real dependerá dos produtos disponíveis e das preferências do participante.*
+No horário do almoço, lê um conteúdo do Guivos Media sobre organização profissional.
+
+À tarde, sua empresa divulga uma ação de voluntariado pelo Guivos Business.
+
+À noite, ela conhece um grupo de pedal para iniciantes e decide participar do encontro de sábado.
+
+Cada interação está relacionada a algo que Ana informou desejar desenvolver.
+
+*Situação ilustrativa. A experiência real dependerá dos produtos disponíveis, das preferências da pessoa e das oportunidades existentes.*
 
 ---
 
-# 10. Como a Guivos entregará o que acredita
+# 16. Como a Guivos entregará o que acredita
 
 ## Evolução como finalidade
 
-**Significado:** produtos e decisões devem contribuir para jornadas reais.
+**O que significa:** o objetivo é ajudar pessoas e organizações a avançar em áreas que elas próprias consideram importantes.
 
-**Aplicação prática:** avaliar funcionalidades e parcerias pelo valor gerado ao participante.
+**Aplicação prática:** produtos e parcerias devem ser avaliados pela utilidade real para as jornadas.
 
-**Entrega:** oportunidades, conteúdos e experiências relacionadas a objetivos e contexto.
+**Entrega:** oportunidades, grupos, conteúdos, experiências e conexões.
 
-**Evidência de cumprimento:** acompanhamento de participação, utilidade percebida e progressão de jornadas, respeitando privacidade.
+**Evidência:** participação, satisfação, continuidade e sinais de progresso, respeitando privacidade e contexto.
 
 ## Autonomia
 
-**Significado:** a Guivos não decide pelo participante.
+**O que significa:** a decisão pertence à pessoa.
 
-**Aplicação prática:** recomendações podem ser aceitas, ignoradas ou ajustadas.
+**Aplicação prática:** recomendações podem ser aceitas, rejeitadas ou ajustadas.
 
 **Entrega:** opções e explicações, não ordens.
 
-**Evidência:** controles de preferência, transparência das recomendações e liberdade de escolha.
+**Evidência:** controles de preferência, transparência e liberdade de escolha.
 
-## Relevância contextual
+## Relevância
 
-**Significado:** informação útil depende do momento.
+**O que significa:** nem toda oportunidade serve para todos.
 
-**Aplicação prática:** organizar oportunidades conforme interesses, objetivos e condições disponíveis.
+**Aplicação prática:** considerar objetivos, região, disponibilidade, interesses e outras informações autorizadas.
 
-**Entrega:** menos exposição genérica e mais organização contextual.
+**Entrega:** possibilidades mais organizadas e compatíveis.
 
-**Evidência:** qualidade das recomendações e possibilidade de correção pelo participante.
+**Evidência:** capacidade de corrigir recomendações e melhorar os resultados ao longo do tempo.
+
+## Fortalecimento do que já existe
+
+**O que significa:** a Guivos não substitui grupos, movimentos ou organizações legítimas.
+
+**Aplicação prática:** preservar identidade, autoria e responsabilidade de cada iniciativa.
+
+**Entrega:** visibilidade, novos participantes, conexões e parcerias.
+
+**Evidência:** grupos reconhecidos por seus próprios nomes e controle sobre suas informações e atividades.
 
 ## Tecnologia como meio
 
-**Significado:** tecnologia serve ao propósito.
+**O que significa:** tecnologia deve servir às pessoas.
 
-**Aplicação prática:** usar IA e dados apenas quando gerarem valor claro.
+**Aplicação prática:** utilizar dados e IA apenas quando houver utilidade clara.
 
-**Entrega:** experiências mais organizadas, personalizadas e integradas.
+**Entrega:** organização, integração e personalização.
 
-**Evidência:** funcionalidades compreensíveis e justificadas por utilidade.
-
-## Conhecimento como patrimônio
-
-**Significado:** experiências devem gerar aprendizado para o ecossistema.
-
-**Aplicação prática:** preservar padrões, relatos e resultados de forma responsável.
-
-**Entrega:** recomendações e decisões progressivamente melhores.
-
-**Evidência:** melhoria contínua baseada em conhecimento validado, não apenas em volume de dados.
+**Evidência:** funcionalidades compreensíveis e justificadas pelo valor gerado.
 
 ---
 
-# 11. Como a Guivos operará
+# 17. Como a Guivos operará
 
-A operação pública deverá conectar participantes, organizações, oportunidades e experiências.
+Pessoas poderão criar sua presença no ecossistema, informar interesses e participar de jornadas.
 
-Usuários poderão criar perfis, informar interesses e participar de jornadas. Empresas e organizações poderão cadastrar oportunidades, oferecer experiências, contratar soluções ou estabelecer parcerias.
+Empresas, universidades, igrejas, movimentos, comunidades, ONGs, órgãos públicos e outros parceiros poderão apresentar oportunidades, conteúdos, grupos, experiências, produtos ou serviços.
 
-Oportunidades deverão ser organizadas com informações claras, origem identificável e critérios de qualidade. Conteúdos poderão ser produzidos pela Guivos, por parceiros ou por participantes autorizados.
+A Guivos deverá buscar mecanismos para:
 
-A Guivos deverá adotar mecanismos de moderação, denúncia, revisão e responsabilização para combater abusos, informações falsas e práticas inadequadas.
+- identificar responsáveis;
+- organizar informações;
+- revisar conteúdos e oportunidades;
+- permitir denúncias;
+- combater abusos e informações falsas;
+- proteger dados;
+- oferecer suporte;
+- diferenciar conteúdo editorial, publicidade e recomendação;
+- acompanhar a qualidade dos participantes institucionais;
+- respeitar regras locais e a legislação aplicável.
 
-Atendimento e suporte deverão orientar dúvidas, registrar problemas e ajudar na resolução de situações relacionadas aos produtos disponíveis.
-
-A expansão para outras cidades e países deverá respeitar diferenças culturais e regras locais, preservando os princípios permanentes da Guivos.
+A presença de uma iniciativa na Guivos não significa aprovação irrestrita de todas as suas práticas. Critérios de participação e qualidade deverão ser definidos conforme a maturidade de cada produto.
 
 ---
 
-# 12. Papel da tecnologia
+# 18. Papel da tecnologia
 
-A tecnologia deverá ajudar a:
+A tecnologia poderá ajudar a:
 
 - organizar informações;
 - integrar produtos;
-- recomendar oportunidades;
+- localizar grupos e oportunidades;
+- recomendar possibilidades;
 - acompanhar jornadas;
 - analisar dados;
 - proteger acessos;
-- apoiar empresas e organizações;
-- aprender com o uso do ecossistema.
+- apoiar parceiros;
+- melhorar continuamente o ecossistema.
 
-Termos técnicos não definem a Guivos. A escolha de ferramentas poderá mudar ao longo do tempo sem alterar seu propósito.
-
-### Exemplo prático
-
-Se duas pessoas possuem interesses semelhantes, a tecnologia pode ajudar a identificar eventos ou comunidades relevantes. A decisão de participar continua sendo de cada pessoa.
+A tecnologia poderá mudar ao longo do tempo. O propósito permanece.
 
 ---
 
-# 13. Inteligência artificial na Guivos
+# 19. Inteligência artificial na Guivos
 
 A inteligência artificial poderá apoiar:
 
-- interpretação de contexto;
+- compreensão do que a pessoa está buscando;
 - organização de informações;
+- identificação de padrões;
 - recomendações;
 - análise de tendências;
-- identificação de padrões;
 - criação de relatórios;
-- personalização de experiências.
+- personalização;
+- apoio aos produtos.
 
 Ela não deverá:
 
-- determinar objetivos pessoais;
+- determinar o que alguém deve querer;
+- escolher a vida da pessoa;
 - substituir decisões humanas importantes;
-- controlar a jornada do participante;
 - substituir profissionais especializados;
-- tratar inferências como verdades absolutas.
+- tratar inferências como verdades absolutas;
+- controlar grupos ou organizações.
 
-A Guivos deverá buscar transparência, supervisão humana e possibilidade de correção.
+## Exemplo prático
 
-### Exemplo prático
-
-A IA pode sugerir que uma oportunidade parece compatível com os interesses de uma pessoa e explicar os fatores considerados. A pessoa pode rejeitar a recomendação e ajustar suas preferências.
+A IA poderá indicar que uma bolsa parece compatível com os interesses e requisitos informados por uma pessoa. Também deverá deixar claro que se trata de uma recomendação, apresentar informações relevantes e permitir que a pessoa ignore ou corrija a sugestão.
 
 ---
 
-# 14. Dados, privacidade e confiança
+# 20. Dados, privacidade e confiança
 
-A Guivos poderá utilizar dados fornecidos pelos participantes, informações de uso, preferências, interações, registros de experiências e dados necessários para operar serviços contratados.
+A Guivos poderá utilizar informações fornecidas voluntariamente, dados necessários para operar serviços, preferências, interações e registros de experiências.
 
-Esses dados deverão ser utilizados para:
+Esses dados poderão ser usados para:
 
 - prestar serviços;
 - personalizar experiências;
+- encontrar oportunidades;
 - melhorar recomendações;
 - gerar análises autorizadas;
-- proteger a plataforma;
+- proteger o ecossistema;
 - cumprir obrigações legais.
 
-A Guivos deverá adotar medidas de segurança proporcionais aos riscos, controles de acesso, transparência e mecanismos para que o usuário administre suas informações conforme a legislação aplicável.
+A pessoa deverá manter controle sobre suas informações conforme as regras e a legislação aplicável.
 
-Nenhum sistema pode prometer segurança absoluta. O compromisso deve ser reduzir riscos, responder a incidentes e evoluir continuamente.
+Nenhum sistema pode prometer segurança absoluta. O compromisso deve ser reduzir riscos, aplicar medidas proporcionais, responder a incidentes e evoluir continuamente.
 
 ---
 
-# 15. Modelo de sustentabilidade
-
-Propósito e sustentabilidade financeira são diferentes, mas precisam coexistir.
+# 21. Como a Guivos poderá se sustentar
 
 A Guivos poderá gerar receita por meio de:
 
-- planos para usuários;
+- planos para pessoas;
 - planos e soluções para empresas;
 - serviços B2B;
-- comercialização de produtos e serviços;
+- produtos e serviços comercializados;
 - viagens e experiências;
 - publicidade responsável;
 - patrocínios;
@@ -605,123 +1041,133 @@ A Guivos poderá gerar receita por meio de:
 - parcerias;
 - produtos digitais.
 
-A monetização não deve substituir o propósito. Uma oportunidade paga ou patrocinada não deverá ser apresentada como recomendação neutra sem identificação adequada.
+Uma oportunidade paga ou patrocinada deverá ser identificada. Interesses comerciais não devem ser apresentados como orientação neutra.
 
-Os modelos específicos ainda dependem de desenvolvimento, validação e decisões comerciais posteriores.
-
----
-
-# 16. Relação com empresas e organizações
-
-Empresas e organizações poderão:
-
-- criar oportunidades;
-- oferecer produtos, benefícios e experiências;
-- contratar programas;
-- produzir conteúdos;
-- apoiar causas;
-- patrocinar iniciativas;
-- acessar relatórios autorizados;
-- integrar públicos vinculados.
-
-Elas deverão respeitar regras de qualidade, transparência, privacidade e proteção dos participantes.
-
-Parcerias que contrariem o propósito, explorem vulnerabilidades ou prejudiquem a autonomia dos usuários deverão ser rejeitadas ou revistas.
+Os modelos detalhados ainda dependerão de validação e desenvolvimento.
 
 ---
 
-# 17. Impacto social e comunitário
+# 22. Impacto social e comunitário
 
-O impacto social não deverá existir apenas como ação paralela.
+Projetos sociais, causas ambientais, proteção animal, ajuda comunitária, voluntariado e apoio a pessoas em situação de vulnerabilidade poderão fazer parte do funcionamento normal da Guivos.
 
-Projetos sociais, causas ambientais, proteção animal, voluntariado, desenvolvimento local e apoio a pessoas em situação de vulnerabilidade poderão participar do funcionamento normal do ecossistema.
+## Exemplo prático
 
-### Exemplo prático
+Uma ONG precisa de voluntários para uma ação ambiental.
 
-Uma ONG precisa de voluntários para uma ação ambiental. Ela publica a oportunidade. Pessoas da região recebem a informação conforme seus interesses. Uma empresa local apoia materiais e transporte. A experiência gera novos relacionamentos e pode originar outras ações.
+Uma igreja possui pessoas interessadas em servir.
+
+Uma universidade tem estudantes buscando atividades de extensão.
+
+Uma empresa quer apoiar uma iniciativa local.
+
+A Guivos poderá ajudar essas partes a se encontrar, organizar a oportunidade e formar novas conexões.
 
 ---
 
-# 18. Expansão e atuação global
+# 23. Expansão e atuação global
 
-A proposta da Guivos pode ser aplicada em diferentes regiões porque necessidades, oportunidades, experiências e relacionamentos existem em qualquer sociedade.
+A proposta pode ser aplicada em diferentes regiões porque pessoas, grupos e organizações em qualquer lugar enfrentam desafios para encontrar oportunidades e formar conexões.
 
-A operação global deverá:
+A expansão deverá:
 
-- respeitar culturas locais;
-- adaptar linguagem e experiência;
+- respeitar culturas;
+- adaptar linguagem;
 - cumprir legislações;
 - aprender com parceiros locais;
-- evitar impor um único conceito de evolução;
-- preservar identidade e princípios permanentes.
+- respeitar crenças e diferenças;
+- preservar a identidade da Guivos;
+- evitar impor um único modelo de evolução.
 
-A expansão será progressiva e dependerá de validação, recursos, parcerias e capacidade operacional.
+A atuação global será progressiva e dependerá de validação, recursos, parcerias e capacidade operacional.
 
 ---
 
-# 19. Estágio atual da Guivos
+# 24. Estágio atual da Guivos
 
 ## Consolidado no repositório
 
 - identidade, propósito, missão e visão;
 - princípios permanentes;
-- arquitetura institucional;
 - Foundation congelada em baseline;
-- estrutura superior da arquitetura de produtos;
-- definição de Guivos Journey, Marketplace, Travel, Business, Media, Intelligence e Ads;
-- governança documental e arquitetural.
+- arquitetura institucional;
+- estrutura superior dos produtos;
+- definições de Guivos Journey, Marketplace, Travel, Business, Media, Intelligence e Ads;
+- governança documental e arquitetural;
+- Guia Oficial da Guivos.
 
 ## Em validação
 
-- Modelo Fundamental da Guivos em nova revisão arquitetural;
-- descoberta das Core Capabilities;
+- Modelo Fundamental em revisão arquitetural;
+- Core Capabilities;
 - modelos econômicos e operacionais detalhados;
 - capacidades específicas de inteligência, dados e tecnologia.
 
 ## Em desenvolvimento
 
-O repositório não confirma, de forma pública e consolidada, o estágio técnico detalhado de implementação de todos os produtos. Cada lançamento deverá ser comunicado por canais oficiais quando estiver disponível.
+O repositório não confirma publicamente o estágio técnico detalhado de implementação de todos os produtos. Cada lançamento deverá ser comunicado pelos canais oficiais.
 
 ## Planejado
 
 - desenvolvimento progressivo dos produtos;
-- integrações entre jornadas, viagens, negócios, mídia, inteligência e publicidade;
+- participação de grupos e organizações;
+- integrações entre os produtos;
 - expansão geográfica;
 - evolução dos modelos de dados, IA, tecnologia e governança.
 
 ## Visão futura
 
-Um ecossistema global capaz de conectar participantes às oportunidades mais relevantes para seus contextos e aprender continuamente com experiências, relacionamentos e conhecimento.
+Um ecossistema global capaz de conectar pessoas e organizações às oportunidades mais relevantes para seus objetivos e contextos, fortalecendo iniciativas que já existem e permitindo novas conexões entre elas.
 
 ---
 
-# 20. Exemplo de uma jornada completa
+# 25. Exemplo de uma jornada completa
 
-> **Situação ilustrativa:** o exemplo abaixo não confirma que todas as funcionalidades estejam disponíveis atualmente.
+> **Situação ilustrativa:** o exemplo não confirma que todas as funcionalidades estejam disponíveis atualmente.
 
-Lucas terminou a faculdade e sente dificuldade para decidir seu próximo passo profissional. Ele conhece a Guivos por um vídeo do Guivos Media.
+Lucas terminou a faculdade e deseja melhorar sua renda, conhecer pessoas da área de sustentabilidade e participar de projetos práticos.
 
-Ao entrar no ecossistema, informa que deseja trabalhar com sustentabilidade, conhecer pessoas da área e participar de projetos práticos.
+Ele conhece a Guivos por uma história publicada no Guivos Media.
 
-O Guivos Journey organiza seus objetivos e apresenta possíveis próximos passos. O Guivos Intelligence ajuda a relacionar seu contexto a conteúdos, eventos e oportunidades.
+Ao entrar, informa seus interesses, sua formação, sua cidade e a disponibilidade para participar de atividades aos fins de semana.
 
-Lucas encontra uma oficina oferecida por uma organização local. Participa da experiência, conhece uma empresa e começa a colaborar com um coletivo ambiental.
+O Guivos Journey ajuda a organizar seu objetivo.
 
-Meses depois, a empresa publica uma oportunidade profissional por meio do Guivos Business. Lucas decide se candidatar.
+O Guivos Intelligence poderá relacionar esse contexto a oportunidades disponíveis.
 
-Durante esse período, ele utiliza conteúdos do Guivos Media, participa de um desafio comunitário e encontra um produto relacionado no Marketplace.
+Lucas encontra:
 
-Mais tarde, Lucas compartilha sua experiência e ajuda novos participantes. O conhecimento gerado fortalece futuras jornadas.
+- um grupo de estudos;
+- uma bolsa oferecida por uma universidade;
+- uma oficina organizada por uma ONG;
+- uma comunidade ambiental;
+- uma empresa parceira com programa de estágio.
 
-A Guivos não determinou a trajetória de Lucas. Ela organizou possibilidades e conexões para que ele tomasse suas próprias decisões.
+Ele começa pelo grupo de estudos e participa da oficina. Lá conhece integrantes de um movimento ambiental.
+
+Meses depois, a empresa publica uma vaga por meio do Guivos Business. Lucas decide se candidatar.
+
+Durante a jornada, ele acessa conteúdos do Guivos Media e encontra no Marketplace um workshop relacionado. Uma marca apoia uma ação do grupo por meio do Guivos Ads.
+
+Mais tarde, Lucas passa a orientar novos participantes do grupo de estudos.
+
+A Guivos não determinou sua trajetória. Ela ajudou a organizar possibilidades e a conectar Lucas a iniciativas que já existiam.
 
 ---
 
-# 21. Perguntas frequentes
+# 26. Perguntas frequentes
 
 ## A Guivos é uma rede social?
 
-Não. Relacionamentos e comunidades podem fazer parte da experiência, mas a Guivos possui um escopo mais amplo, voltado a jornadas, oportunidades, experiências e conhecimento.
+Não. Relacionamentos e comunidades podem fazer parte da experiência, mas a Guivos possui um escopo mais amplo: objetivos, jornadas, oportunidades, experiências, produtos, organizações e conhecimento.
+
+## A Guivos cria seus próprios grupos e substitui comunidades existentes?
+
+Não. Ela poderá apoiar grupos próprios quando fizer sentido, mas seu papel principal é também reconhecer, reunir, fortalecer e conectar iniciativas que já existem, preservando sua identidade.
+
+## Um grupo precisa mudar de nome para entrar na Guivos?
+
+Não. Um grupo de pedal, igreja, movimento, ONG ou comunidade deve preservar seu nome, sua identidade e sua responsabilidade.
 
 ## A Guivos é uma empresa de viagens?
 
@@ -729,11 +1175,43 @@ Não apenas. Guivos Travel é um dos produtos do ecossistema.
 
 ## A Guivos é uma plataforma de cursos?
 
-Não. Cursos podem aparecer como oportunidades, mas não definem a Guivos.
+Não. Cursos podem ser oportunidades disponibilizadas por universidades, empresas, especialistas ou parceiros.
 
 ## A Guivos é uma empresa de tecnologia?
 
-A Guivos utiliza tecnologia, mas seu propósito não é a tecnologia em si.
+Ela utiliza tecnologia, mas seu propósito é ajudar pessoas e organizações a avançar por meio de oportunidades relevantes.
+
+## A Guivos decide o que significa evoluir?
+
+Não. Cada pessoa ou organização define seus próprios objetivos.
+
+## O que significa “momento atual”?
+
+É o conjunto de informações que ajuda a compreender o que a pessoa vive, deseja e pode realizar naquele período.
+
+## O que é uma jornada?
+
+É o caminho entre a realidade atual e uma mudança que a pessoa ou organização deseja alcançar.
+
+## Empresas poderão participar?
+
+Sim. Poderão oferecer oportunidades, benefícios, programas, experiências, produtos, serviços e apoio a causas, respeitando as regras do ecossistema.
+
+## Igrejas poderão participar?
+
+Sim. Poderão apresentar grupos, encontros, ações sociais, conteúdos, retiros e outras iniciativas, preservando sua identidade e respeitando a liberdade das pessoas.
+
+## Universidades poderão oferecer bolsas?
+
+Sim, quando o produto e a operação estiverem disponíveis. As bolsas poderão ser apresentadas a pessoas interessadas, respeitando os critérios definidos pela própria instituição.
+
+## Movimentos como Legendários poderão participar?
+
+Poderão participar movimentos e comunidades que atendam aos critérios do ecossistema, preservando nome, identidade, regras e responsabilidade próprias.
+
+## A inteligência artificial decidirá o que devo fazer?
+
+Não. Ela poderá ajudar a organizar e recomendar possibilidades. A decisão permanece com a pessoa.
 
 ## A Guivos substitui profissionais especializados?
 
@@ -741,81 +1219,78 @@ Não. Ela pode facilitar descobertas e conexões, mas não substitui profissiona
 
 ## A Guivos será gratuita?
 
-Poderão existir experiências gratuitas e pagas. Os planos e condições serão comunicados conforme cada produto for lançado.
-
-## Empresas poderão participar?
-
-Sim. Guivos Business é o produto responsável pelas soluções para empresas e organizações.
-
-## A inteligência artificial decidirá o que devo fazer?
-
-Não. A IA poderá apoiar recomendações e análises. A decisão final permanece com o participante.
+Poderão existir experiências gratuitas e pagas. Condições serão comunicadas conforme cada produto for lançado.
 
 ## Como meus dados serão utilizados?
 
-Para operar serviços, personalizar experiências, melhorar recomendações, gerar análises autorizadas e proteger o ecossistema, conforme regras de privacidade e legislação aplicável.
+Para operar serviços, personalizar experiências, encontrar oportunidades, melhorar recomendações, proteger o ecossistema e cumprir obrigações legais, conforme as regras de privacidade aplicáveis.
 
 ## A Guivos já está funcionando?
 
-A arquitetura institucional e os produtos estão documentados e consolidados em diferentes níveis. Este guia não afirma que todos os produtos estejam disponíveis ao público. Lançamentos devem ser confirmados por canais oficiais.
+A arquitetura institucional e os produtos estão documentados em diferentes níveis. Este guia não afirma que todos estejam disponíveis ao público.
 
 ## Todos os produtos estarão disponíveis ao mesmo tempo?
 
-Não necessariamente. A realização será progressiva.
+Não necessariamente. A implementação será progressiva.
 
 ## O nome Guivos Marketplace é definitivo?
 
 Não. O produto está consolidado, mas sua marca comercial permanece provisória.
 
-## Comunidade Guivos ainda é o nome de um produto?
+## Comunidade Guivos é o nome de um produto?
 
-Não. Guivos Journey substituiu essa denominação como nome amplo de produto. Comunidade pode existir como tipo de coletivo.
+Não. Guivos Journey é o nome oficial do produto responsável pela jornada. Comunidade pode existir como uma forma de grupo ou coletivo.
 
-## Guivos Podcast ainda é o nome oficial?
+## Guivos Podcast é um produto?
 
-Não. Podcast é um formato dentro do Guivos Media.
+Não. Podcast é um formato do Guivos Media.
 
-## Guivos Insights ainda é o nome oficial?
+## Guivos Insights é o nome oficial?
 
-Não. O produto oficial é Guivos Intelligence. Insights podem ser resultados ou relatórios produzidos por ele.
+Não. O produto oficial é Guivos Intelligence.
 
-## Como acompanhar a evolução do projeto?
+## Como acompanhar o projeto?
 
 Pelo Guivos Knowledge Repository e pelos canais públicos oficiais da Guivos.
 
 ---
 
-# 22. Informações que ainda exigem validação antes de publicação detalhada
+# 27. Informações que ainda exigem validação
 
 Os seguintes pontos não devem ser apresentados como disponíveis ou definitivos sem nova validação:
 
 - datas de lançamento;
 - preços e planos;
-- países e cidades de início da operação;
+- cidades e países de início;
 - funcionalidades técnicas específicas;
-- integrações com plataformas externas;
-- parceiros comerciais ou institucionais;
+- integrações externas;
+- parceiros já contratados;
+- participação efetiva de empresas, universidades, igrejas, movimentos ou ONGs citados apenas como exemplos;
 - métricas de usuários, receita ou impacto;
-- detalhes de infraestrutura, segurança e fornecedores;
-- marca comercial definitiva do Marketplace;
+- detalhes de infraestrutura e segurança;
+- nome comercial definitivo do Marketplace;
 - disponibilidade pública de cada produto;
-- regras finais de moderação, suporte e atendimento;
-- modelos completos de monetização;
+- regras finais de cadastro, moderação, suporte e atendimento;
+- critérios definitivos para grupos e organizações;
 - políticas legais e de privacidade ainda não publicadas.
+
+> Os nomes e tipos de organizações citados ao longo deste guia servem para demonstrar como o ecossistema poderá funcionar. A citação não representa parceria formal, salvo quando houver anúncio oficial específico.
 
 ---
 
-# 23. Conclusão
+# 28. Conclusão
 
-A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio de oportunidades relevantes.
+A Guivos existe para ajudar pessoas e organizações a transformar desejos amplos em próximos passos mais claros.
 
-Ela pretende conectar pessoas, empresas, organizações e coletivos, permitindo que oportunidades se transformem em experiências, relacionamentos e conhecimento.
+Ela pretende fazer isso conectando quem busca evoluir a oportunidades, experiências, grupos, movimentos, empresas, universidades, igrejas, comunidades, organizações sociais, especialistas e parceiros.
 
-A tecnologia apoiará esse processo, mas não substituirá a autonomia das pessoas nem definirá sozinha o rumo do ecossistema.
+A Guivos não cria sozinha a evolução das pessoas e não substitui as iniciativas que já existem.
 
-A construção será progressiva. Produtos, serviços e operações serão desenvolvidos, testados e ajustados ao longo do tempo, preservando o propósito e os princípios consolidados no Guivos Knowledge Repository.
+Seu papel é ajudar essas partes a se encontrar, preservar suas identidades, formar novas conexões e gerar continuidade entre descoberta, escolha, experiência e aprendizado.
 
-O papel das pessoas e organizações não será apenas consumir. Elas também poderão criar oportunidades, compartilhar conhecimento, formar relações e fortalecer o ecossistema.
+A tecnologia apoiará esse processo, mas a autonomia continuará pertencendo às pessoas e organizações.
+
+A construção será progressiva, responsável e orientada pelas decisões consolidadas no Guivos Knowledge Repository.
 
 ---
 
@@ -824,13 +1299,16 @@ O papel das pessoas e organizações não será apenas consumir. Elas também po
 | Versão | Data | Alteração principal |
 |---|---|---|
 | 1.0.0 | 03/07/2026 | Criação da primeira versão pública oficial derivada da Canon vigente do GKR |
+| 2.0.0 | 03/07/2026 | Reestruturação completa da narrativa, definição prática de evolução, momento atual e jornada, inclusão de grupos existentes, parceiros e exemplos concretos |
 
 # Regra de atualização contínua
 
 Este documento deverá ser revisto quando houver alteração relevante em:
 
 - identidade, propósito, missão ou visão;
+- definição pública de evolução, jornada ou momento atual;
 - produtos e nomenclaturas;
+- grupos, organizações e modelos de participação;
 - estágio de desenvolvimento;
 - operação pública;
 - modelo de negócio;
@@ -840,4 +1318,4 @@ Este documento deverá ser revisto quando houver alteração relevante em:
 - expansão;
 - baselines e decisões arquiteturais.
 
-Toda atualização deve preservar linguagem acessível, substituir informações superadas e distinguir claramente o que está consolidado, em validação, em desenvolvimento, planejado ou restrito à visão futura.
+Toda atualização deverá preservar linguagem acessível, partir de exemplos concretos, substituir informações superadas e distinguir claramente o que está consolidado, em validação, em desenvolvimento, planejado ou restrito à visão futura.
