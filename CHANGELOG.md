@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.21.0 — Limites Públicos e Expansão do Guivos Business
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `2.1.0`.
+- Inclusão de uma seção pública sobre o que a Guivos não é.
+- Inclusão dos limites de atuação e dos critérios para entrada e permanência de empresas, ofertas, campanhas e anúncios no ecossistema.
+- Formalização do princípio de que a simples existência de uma atividade econômica não justifica sua presença na Guivos.
+- Registro de atividades incompatíveis com a proposta, incluindo jogos de azar, apostas, cassinos, golpes, pirâmides, publicidade enganosa e exploração de vulnerabilidades.
+- Diferenciação entre segmentos legítimos e aderência contextual, com exemplo de restaurantes e bares vinculados ou não a jornadas relevantes.
+- Atualização de `GPD-000 — Documentação Pública da Guivos` para a versão `1.2.0`, incluindo o princípio de aderência ao ecossistema.
+- Atualização de `GPA-004 — Guivos Business` para a versão `1.1.0`.
+- Ampliação do Guivos Business com programas de recompensas, fidelização, retenção, recorrência, captação de novos clientes, ativação de públicos e fortalecimento de marca.
+- Inclusão de desenvolvimento de pessoas, inteligência empresarial, parcerias, impacto social e conexão com universidades, igrejas, ONGs, movimentos e comunidades no escopo do Guivos Business.
+- Registro de que os modelos operacionais específicos ainda dependem de detalhamento, validação e implementação.
+
 ## 0.20.0 — Guia Oficial da Guivos 2.0
 
 - Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `2.0.0`.
