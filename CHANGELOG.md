@@ -2,6 +2,17 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.22.0 — Ciclo Contínuo de Evolução da Guivos
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `2.2.0`.
+- Inclusão do conceito público `Ciclo Contínuo de Evolução da Guivos`.
+- Inclusão de diagrama Mermaid com o ciclo `Momento Atual → Objetivos → Próximo Passo → Oportunidades Compatíveis → Experiência → Evidências de Evolução → Novo Momento Atual → Momento Atual`.
+- Formalização de que a jornada não possui encerramento definitivo e de que cada Novo Momento Atual inicia um novo ciclo.
+- Inclusão de explicação pública de cada etapa do ciclo.
+- Inclusão de exemplo prático mostrando a evolução de uma pessoa entre ciclos sucessivos.
+- Inclusão de um segundo diagrama explicando a conexão entre participante, Guivos, oportunidades e organizações do ecossistema.
+- Inclusão do Ciclo Contínuo de Evolução no estágio consolidado e nas regras de atualização contínua do Guia.
+
 ## 0.21.0 — Limites Públicos e Expansão do Guivos Business
 
 - Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `2.1.0`.
