@@ -99,6 +99,9 @@ nav:
       - Guivos Media: product-architecture/media.md
       - Guivos Intelligence: product-architecture/intelligence.md
       - Guivos Ads: product-architecture/ads.md
+  - Intelligence Architecture:
+      - Visão Geral: intelligence-architecture/index.md
+      - GAI-001 — AI Knowledge Model: intelligence-architecture/knowledge-model.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
