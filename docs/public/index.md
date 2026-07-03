@@ -2,7 +2,7 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-03
 ---
@@ -16,6 +16,14 @@ A documentação pública traduz a arquitetura, a estratégia e os produtos da G
 ## Documento principal
 
 - [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md)
+
+## Princípio editorial
+
+A documentação pública deve partir da realidade do leitor. Conceitos como evolução, jornada, momento atual, oportunidade, comunidade, ecossistema, tecnologia e inteligência artificial devem ser explicados por meio de situações concretas antes de receberem definições institucionais.
+
+## Relação com grupos e organizações existentes
+
+A Guivos não substitui nem renomeia grupos, movimentos, comunidades, igrejas, universidades, empresas, ONGs ou demais iniciativas existentes. A documentação pública deve explicar como essas iniciativas poderão preservar sua identidade, disponibilizar oportunidades, receber participantes e formar conexões dentro do ecossistema.
 
 ## Regra de atualização
 
