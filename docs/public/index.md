@@ -2,7 +2,7 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 1.2.0
+version: 2.0.0
 owner: Guivos
 last_updated: 2026-07-03
 ---
@@ -11,15 +11,31 @@ last_updated: 2026-07-03
 
 Este domínio reúne documentos públicos derivados das decisões consolidadas no Guivos Knowledge Repository.
 
-A documentação pública traduz a arquitetura, a estratégia e os produtos da Guivos para uma linguagem acessível, sem expor informações confidenciais, hipóteses internas ou detalhes técnicos desnecessários.
+A documentação pública traduz a arquitetura, a estratégia, os produtos e os modelos superiores da Guivos para uma linguagem acessível, sem expor informações confidenciais, hipóteses internas ou detalhes técnicos desnecessários.
 
 ## Documento principal
 
 - [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md)
 
+## Conteúdos públicos consolidados
+
+O Guia Oficial apresenta:
+
+- essência, propósito, missão e visão;
+- problema da fragmentação das oportunidades;
+- definição prática de evolução, Momento Atual e jornada;
+- Ciclo Contínuo de Evolução da Guivos;
+- papéis de pessoas, organizações e da própria Guivos;
+- grupos, movimentos e comunidades existentes;
+- produtos do ecossistema;
+- limites de aderência e curadoria;
+- princípios permanentes;
+- modelo público de aprendizagem da inteligência artificial;
+- estágio de maturidade e informações ainda pendentes de validação.
+
 ## Princípio editorial
 
-A documentação pública deve partir da realidade do leitor. Conceitos como evolução, jornada, momento atual, oportunidade, comunidade, ecossistema, tecnologia e inteligência artificial devem ser explicados por meio de situações concretas antes de receberem definições institucionais.
+A documentação pública deve partir da realidade do leitor. Conceitos como evolução, jornada, Momento Atual, oportunidade, comunidade, ecossistema, tecnologia e inteligência artificial devem ser explicados por meio de situações concretas antes de receberem definições institucionais.
 
 ## Relação com grupos e organizações existentes
 
@@ -27,11 +43,15 @@ A Guivos não substitui nem renomeia grupos, movimentos, comunidades, igrejas, u
 
 ## Princípio de aderência ao ecossistema
 
-A documentação pública deve deixar claro que nem toda empresa, oferta, campanha ou anúncio pertence automaticamente à Guivos.
+Nem toda empresa, oferta, campanha ou anúncio pertence automaticamente à Guivos.
 
-A participação exige relação demonstrável com o propósito, utilidade real para pessoas ou organizações, respeito à autonomia, legalidade, transparência e contribuição para jornadas, experiências, relacionamentos, conhecimento ou impacto positivo.
+A participação exige relação demonstrável com o propósito, utilidade real, respeito à autonomia, legalidade, transparência e contribuição para jornadas, experiências, relacionamentos, conhecimento ou impacto positivo.
 
-Atividades incompatíveis com esses critérios devem ser explicitamente rejeitadas. Atividades legítimas, mas desconectadas do propósito, não possuem aderência automática.
+## Princípio de conhecimento e inteligência
+
+A documentação pública deve explicar que a inteligência artificial da Guivos poderá aprender com estudos, livros, instituições de pesquisa, evidências, conhecimento do ecossistema e movimentação autorizada dos participantes.
+
+Também deve deixar claro que a IA não substitui decisões humanas, especialistas ou a autonomia do participante.
 
 ## Regra de atualização
 
