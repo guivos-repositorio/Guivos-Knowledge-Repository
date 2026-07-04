@@ -2,7 +2,7 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 2.1.0
+version: 2.2.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -25,7 +25,9 @@ O Guia Oficial reúne:
 - participantes, organizações, grupos e comunidades;
 - produtos do ecossistema, incluindo o Guivos Mall;
 - limites de aderência e curadoria;
-- inteligência artificial e aprendizagem contínua;
+- Inteligência do Ecossistema Guivos;
+- Grafo Global da Guivos;
+- aprendizagem contínua com estudos, evidências, ecossistema e movimentação autorizada;
 - princípios públicos iniciais do Guivos Economic Model;
 - estágio de maturidade e pendências de validação.
 
@@ -36,6 +38,12 @@ A documentação pública deve partir de situações concretas e utilizar lingua
 ## Princípio de aderência
 
 Nem toda oferta, empresa, campanha ou anúncio pertence automaticamente à Guivos. A participação exige relação com o propósito, utilidade real, legalidade e transparência.
+
+## Princípio de inteligência
+
+A expressão preferencial é **Inteligência do Ecossistema Guivos**.
+
+Ela representa uma inteligência que trabalha sobre contexto, conhecimento, conexões, jornadas, experiências e evidências organizadas no Grafo Global da Guivos.
 
 ## Princípio econômico público
 
