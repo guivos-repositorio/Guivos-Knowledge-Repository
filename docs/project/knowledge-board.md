@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 4.0.0
+version: 4.1.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -22,6 +22,8 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | A2-R02 | Active | Revisar o Modelo Fundamental |
 | A2-R02-FMEM-001 | Execution Ready 1.0.0 | Registrar a descoberta do Modelo Fundamental |
 | GCCM-001 | Discovery 0.4.0 | Descoberta e validação de Core Capabilities |
+| GAI-001 | Consolidated 1.1.0 | Definir o modelo de conhecimento da Inteligência do Ecossistema |
+| GAI-002 | Consolidated 1.0.0 | Consolidar o Manifesto da Inteligência do Ecossistema Guivos |
 | Guivos Economic Model | Planned 0.1.0 | Consolidar a sustentabilidade econômica do ecossistema |
 
 ## A2-R02 — Fundamental Model Review
@@ -71,10 +73,30 @@ Corpus oficial
 | Guivos Travel | Consolidado |
 | Guivos Business | Consolidado |
 | Guivos Media | Consolidado |
-| Guivos Intelligence | Consolidado |
+| Guivos Intelligence | Consolidado 1.3.0 |
 | Guivos Ads | Consolidado |
 
 `Guivos Mall` substitui `Guivos Marketplace` como nome oficial do produto comercial.
+
+## Inteligência do Ecossistema Guivos
+
+**Estado:** Consolidated.
+
+Ativos vigentes:
+
+- `GAI-001 — Guivos Artificial Intelligence Knowledge Model`, versão `1.1.0`;
+- `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos`, versão `1.0.0`;
+- `Grafo Global da Guivos`, consolidado como modelo conceitual de conexões;
+- `Guivos Intelligence`, produto responsável por entregar a Inteligência do Ecossistema Guivos.
+
+Pendências técnicas e arquiteturais:
+
+- ontologia formal do grafo;
+- modelo lógico e físico;
+- tecnologia específica;
+- governança operacional de dados e consentimento;
+- auditoria algorítmica;
+- controles técnicos de privacidade e segurança.
 
 ## Guivos Economic Model
 
@@ -103,7 +125,7 @@ Pendências principais:
 | Fundamental Model | Active Review — A2-R02 |
 | Product Architecture | Stable na estrutura superior |
 | Business Architecture | Foundations e Strategy inicial validadas |
-| Intelligence Architecture | Modelo conceitual consolidado; implementação pendente |
+| Intelligence Architecture | GAI-001 e GAI-002 consolidados; implementação técnica pendente |
 | Guivos Economic Model | Planned — Domain Created |
 | Reference Architecture / GCCM | Discovery 0.4.0 |
 
@@ -120,12 +142,16 @@ Pendências principais:
 
 | Ativo | Status |
 |---|---|
-| Roadmap Arquitetural | 4.0.0 |
-| Knowledge Board | 4.0.0 |
-| Architectural Milestones | 2.0.0, atualização pendente |
+| Roadmap Arquitetural | 4.1.0 |
+| Knowledge Board | 4.1.0 |
+| Architectural Milestones | 3.0.0 |
 | A2-METHOD-001 | Validated 1.1.0 |
 | A2-R02-FMEM-001 | Execution Ready 1.0.0 |
-| Guia Oficial da Guivos | Public Canon 3.1.0 |
+| Guia Oficial da Guivos | Public Canon 3.2.0 |
+| GAI-001 | Consolidated 1.1.0 |
+| GAI-002 | Consolidated 1.0.0 |
+| Glossário Canônico | Consolidated 1.3.0 |
+| Documentação Pública | Active 2.2.0 |
 | Guivos Economic Model | Planned 0.1.0 |
 
 ## Próxima atividade
