@@ -2,9 +2,9 @@
 id: GPA-001
 title: Guivos Journey
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-07-04
 ---
 
 # Guivos Journey
@@ -31,7 +31,7 @@ Guivos Journey é o produto responsável por apoiar continuamente a jornada do p
 
 Guivos Journey não é:
 
-- o marketplace transacional do ecossistema;
+- o produto comercial do ecossistema;
 - a operação de viagens;
 - a solução corporativa B2B;
 - o núcleo editorial da marca;
@@ -43,7 +43,7 @@ Pode consumir capacidades e conteúdos desses produtos, mas não os substitui.
 ## Relações principais
 
 - utiliza Guivos Intelligence para interpretação de contexto e recomendações;
-- direciona participantes para ofertas do Guivos Marketplace e do Guivos Travel;
+- direciona participantes para ofertas do Guivos Mall e do Guivos Travel;
 - recebe conteúdos do Guivos Media;
 - pode integrar jornadas corporativas do Guivos Business;
 - pode exibir ativações patrocinadas operadas pelo Guivos Ads.
