@@ -93,7 +93,7 @@ nav:
   - Arquitetura de Produtos:
       - Visão Geral: product-architecture/index.md
       - Guivos Journey: product-architecture/journey.md
-      - Guivos Marketplace: product-architecture/marketplace.md
+      - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
       - Guivos Business: product-architecture/business.md
       - Guivos Media: product-architecture/media.md
@@ -102,6 +102,8 @@ nav:
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
       - GAI-001 — AI Knowledge Model: intelligence-architecture/knowledge-model.md
+  - Guivos Economic Model:
+      - Visão Geral: economic-model/index.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -118,6 +120,7 @@ nav:
       - A2-R01-RA-001 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
       - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
       - A2-R01-AUD-001 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
+      - A2-R02-FMEM-001 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md
       - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
   - ADRs:
       - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
