@@ -1,104 +1,80 @@
 # Guivos Knowledge Repository (GKR)
 
-O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade institucional, reunindo sua visão, fundamentos, arquiteturas, modelos, princípios, decisões e patrimônio intelectual em sua capacidade máxima.
-
-O GKR não descreve apenas o estágio atual da implementação. Ele preserva a arquitetura permanente e a arquitetura de referência da organização, enquanto programas e entregas materializam essa visão progressivamente.
+O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade institucional, reunindo visão, fundamentos, arquiteturas, modelos, princípios, decisões e patrimônio intelectual.
 
 ## Status atual
 
-- **Baseline vigente:** M1 — Research Foundation Complete
-- **Estado do baseline:** Frozen
-- **Marco concluído:** A1 — Institutional Architecture Complete
+- **Baseline vigente da Foundation:** A2-B3 — Frozen
 - **Fase ativa:** A2 — Functional Architecture Discovery
-- **Entregável ativo:** GCCM-001 — Guivos Core Capability Model
-- **Estado do GCCM:** Discovery — nenhuma Core Capability canônica nesta versão
-- **Modelo institucional vigente:** GEA-PLM-001 — Permanence Layer Model
+- **Revisão ativa:** A2-R02 — Fundamental Model Review
+- **Artefato ativo:** A2-R02-FMEM-001 — Execution Ready
+- **Entregável de referência:** GCCM-001 — Discovery
+- **Produto comercial oficial:** Guivos Mall
+- **Domínio planejado:** Guivos Economic Model
 
 Consulte:
 
+- [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
+- [Roadmap Arquitetural](docs/roadmap.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
-- [GCCM-001 — Guivos Core Capability Model](docs/reference-architecture/gccm-001.md)
-- [Baseline M1](docs/project/BASELINE-M1.md)
-- [Checkpoint M2.0](docs/project/CHECKPOINT-M2.0.md)
-- [Permanence Layer Model](docs/enterprise-architecture/permanence-layer-model.md)
+- [Knowledge Board](docs/project/knowledge-board.md)
+- [Fundamental Model Evidence Matrix](docs/validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
+- [Guivos Economic Model](docs/economic-model/index.md)
 
 ## Foco atual
 
-A fase A2 busca descobrir, a partir das evidências já existentes no GKR, o conjunto mínimo e suficiente de capacidades institucionais permanentes da Guivos.
+A revisão A2-R02 analisará o corpus oficial do Modelo Fundamental por meio de evidências, observações, regularidades, hipóteses, testes e consolidação canônica.
 
-O GCCM não será produzido por brainstorming isolado. O processo deverá:
-
-1. extrair evidências dos ativos existentes;
-2. agrupar responsabilidades e verbos semanticamente relacionados;
-3. formular capacidades candidatas;
-4. aplicar critérios de admissão, destruição, irredutibilidade e cobertura da missão;
-5. consolidar somente o que estiver suficientemente demonstrado.
+Nenhuma evidência será criada por memória ou inferência. Toda conclusão deverá manter rastreabilidade até o corpus.
 
 ## Princípios centrais
 
 > A Guivos é concebida em sua capacidade máxima. A implementação realiza progressivamente essa visão.
 
-> Todo conteúdo canônico do GKR deve representar a Guivos em seu estado de maturidade institucional, e não apenas seu estágio atual de implementação.
-
-> Quanto maior a permanência de um ativo, menor deve ser sua velocidade de mudança e maior deve ser o rigor aplicado à sua evolução.
-
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
 
-## Camadas de permanência
+> Planos pagos podem acelerar e ampliar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
 
-| Camada | Horizonte | Finalidade |
-|---|---|---|
-| Permanent Architecture | Décadas | Preservar identidade, princípios, modelos fundamentais e macroestrutura institucional |
-| Reference Architecture | Anos | Definir a melhor forma conhecida de materializar a visão |
-| Enterprise Programs | Meses e ciclos plurianuais | Coordenar programas estratégicos que realizam a arquitetura |
-| Enterprise Delivery | Dias, semanas e releases | Executar código, infraestrutura, releases e operações |
-
-As camadas superiores orientam as inferiores. Restrições temporárias de implementação não redefinem automaticamente a visão institucional.
-
-## Relação entre GEA, GKR, GEB e GCCM
-
-- **GEA — Guivos Enterprise Architecture:** conjunto integrado das arquiteturas oficiais da Guivos e proprietária do Permanence Layer Model.
-- **GKR — Guivos Knowledge Repository:** representação canônica da Guivos em seu estado de maturidade e fonte oficial de suas justificativas arquiteturais.
-- **GEB — Guivos Ecosystem Blueprint:** blueprint principal da Ecosystem Architecture.
-- **GCCM — Guivos Core Capability Model:** modelo em descoberta que definirá as capacidades institucionais permanentes e reutilizáveis da Guivos.
-
-## Arquiteturas oficiais
-
-A GEA é composta pelas seguintes arquiteturas:
+## Arquiteturas e domínios principais
 
 - Foundation Architecture;
-- Ecosystem Architecture;
+- Ecosystem Architecture e GEB;
 - Product Architecture;
 - Business Architecture;
-- Data & Intelligence Architecture;
-- Technology Architecture;
-- Governance Architecture;
-- Knowledge Architecture.
+- Intelligence Architecture;
+- Guivos Economic Model;
+- Reference Architecture e GCCM;
+- Governance Framework;
+- Research;
+- Validation e baselines.
 
-## Hipóteses estruturantes em validação
+## Produtos oficiais
 
-O `Guivos Meta-Model — GMM`, o `Guivos Knowledge System — GKS`, o `Knowledge Validation Framework — GKVF` e os `Knowledge Validation Standards — KVS` permanecem fora da Canon. A fase A2 não promove nenhum desses ativos automaticamente.
+- Guivos Journey;
+- Guivos Mall;
+- Guivos Travel;
+- Guivos Business;
+- Guivos Media;
+- Guivos Intelligence;
+- Guivos Ads.
 
-## Estrutura atual
+## Estrutura principal
 
-- `docs/research/` — domínio Research, programas, protocolos, sínteses e recomendações.
-- `docs/enterprise-architecture/` — visão geral da GEA e modelo de camadas de permanência.
-- `docs/reference-architecture/` — modelos e arquiteturas de referência, iniciando pelo GCCM.
+- `docs/public/` — documentação pública e Guia Oficial.
+- `docs/research/` — programas, protocolos e evidências de pesquisa.
+- `docs/enterprise-architecture/` — visão geral da GEA.
+- `docs/reference-architecture/` — modelos de referência e GCCM.
 - `docs/geb/` — Guivos Ecosystem Blueprint.
 - `docs/product-architecture/` — arquitetura oficial de produtos.
-- `docs/business-architecture/` — arquitetura de negócio da Guivos.
+- `docs/business-architecture/` — arquitetura de negócio.
+- `docs/intelligence-architecture/` — conhecimento e inteligência artificial.
+- `docs/economic-model/` — modelo econômico planejado.
 - `docs/governance-framework/` — métodos de governança do GKR.
-- `docs/validation/` — validações arquiteturais.
-- `docs/adr/` — Architecture Decision Records.
-- `docs/glossary.md` — glossário canônico.
-- `docs/project/` — baselines, checkpoints, marcos, painéis e governança do projeto.
+- `docs/validation/` — matrizes, validações e auditorias.
+- `docs/project/` — baselines, checkpoints e marcos.
 - `docs/roadmap.md` — roadmap arquitetural.
-- `docs/assets/` — ativos de publicação.
-- `exports/` — publicações derivadas.
 
 ## Pipeline de publicação
-
-O fluxo oficial de publicação é:
 
 ```text
 GitHub -> Markdown -> Mermaid -> Site -> PDF
