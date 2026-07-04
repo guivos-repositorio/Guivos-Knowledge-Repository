@@ -2,9 +2,9 @@
 id: A2-METHOD-001
 title: Architectural Knowledge Consolidation Pipeline
 status: validated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos Enterprise Architecture
-last_updated: 2026-07-02
+last_updated: 2026-07-04
 scope: GKR and GEA
 ---
 
@@ -14,210 +14,203 @@ scope: GKR and GEA
 
 Definir o processo oficial pelo qual conhecimento arquitetural evolui desde uma fonte documental até sua eventual promoção à Canon.
 
-O pipeline protege a rastreabilidade, evita promoção prematura de hipóteses, reduz redundâncias e separa claramente extração, convergência, consolidação e validação.
+O pipeline protege a rastreabilidade, evita promoção prematura de hipóteses, reduz redundâncias e separa claramente descoberta, convergência, consolidação, validação e publicação canônica.
+
+## Modos oficiais
+
+### Discovery Mode
+
+É o modo de investigação arquitetural.
+
+Permite:
+
+- questionar conceitos existentes;
+- extrair evidências;
+- registrar observações;
+- identificar regularidades;
+- formular hipóteses;
+- buscar contraexemplos;
+- fundir, refinar, adiar ou rejeitar candidatos.
+
+Nenhum conteúdo produzido em Discovery Mode é automaticamente canônico.
+
+### Canon Mode
+
+É o modo de preservação e publicação arquitetural.
+
+Permite apenas:
+
+- consolidar conhecimento com suporte suficiente;
+- atualizar rastreabilidade;
+- corrigir inconsistências comprovadas;
+- registrar decisões formais;
+- publicar novas versões e baselines.
+
+A passagem de Discovery Mode para Canon Mode exige evidência, consolidação, validação e governança formal.
 
 ## Fluxo oficial
 
 ```text
-Documento Canônico
-  -> Evidence Analysis
+Fonte oficial
+  -> Evidence Extraction
+  -> Observações
+  -> Regularidades
+  -> Hipóteses
+  -> Testes e revisão
   -> Evidence Matrix
   -> Canonical Consolidation
-  -> Architecture Review
-  -> Architectural Decision / Validation
-  -> Canon
+  -> Readiness Assessment
+  -> Architectural Validation
+  -> Architectural Audit
+  -> Baseline / Canon
 ```
 
 ## Etapas
 
-### 1. Documento Canônico
+### 1. Fonte oficial
 
-Fonte oficial de conhecimento submetida à análise.
+Documento ou corpus submetido à análise.
 
-Responsabilidades:
+Deve preservar conteúdo, versão, estado, ownership e localização rastreável.
 
-- preservar o conteúdo normativo original;
-- manter versão, estado, ownership e dependências;
-- servir como origem rastreável das evidências.
+### 2. Evidence Extraction
 
-### 2. Evidence Analysis
+Extrai apenas aquilo que o corpus afirma explicitamente.
 
-Analisa uma única fonte e extrai, quando aplicável:
+Cada evidência deve conter:
 
-- afirmações institucionais atômicas;
-- significados institucionais;
-- invariantes provisórios;
-- responsabilidades provisórias;
-- objetivos, estados desejados, decisões e relações;
-- evidências funcionais, constitucionais, estruturais ou informacionais.
+- identificador;
+- fonte e localização;
+- trecho literal;
+- elementos explícitos.
 
-A Evidence Analysis não promove capacidades, não altera automaticamente a Canon e não cria novas camadas arquiteturais.
+Interpretação não pertence a esta etapa.
 
-### 3. Evidence Matrix
+### 3. Observações
 
-Consolida evidências entre múltiplas fontes.
+Registram fatos verificáveis identificados nas evidências.
 
-Cada agrupamento deve ser avaliado segundo:
+Toda observação deve indicar quais evidências a sustentam.
 
-- frequência;
-- centralidade;
-- consistência;
-- confirmação;
-- ampliação;
-- ausência;
-- contradição;
-- força e independência das fontes.
+### 4. Regularidades
 
-A matriz organiza convergência. Ela não substitui a validação arquitetural.
+Agrupam padrões recorrentes sustentados por múltiplas observações.
 
-### 4. Canonical Consolidation
+Regularidade não é hipótese e não é Canon.
+
+### 5. Hipóteses
+
+Explicações provisórias para as regularidades encontradas.
+
+Hipóteses devem permanecer separadas de decisões validadas e ser submetidas a explicações alternativas, incompatibilidades e contraexemplos.
+
+### 6. Evidence Matrix
+
+Consolida evidências, observações, regularidades, hipóteses e resultados de revisão entre fontes.
+
+Cada agrupamento deve ser avaliado segundo frequência, centralidade, consistência, confirmação, ampliação, ausência, contradição e independência das fontes.
+
+### 7. Canonical Consolidation
 
 Transforma o inventário provisório em um conjunto mínimo e suficiente.
 
-Cada item deve receber uma decisão:
+Cada item recebe uma decisão:
 
 | Decisão | Significado |
 |---|---|
 | Preserve | Mantém-se praticamente inalterado |
-| Merge | É fundido a item semanticamente equivalente |
+| Merge | É fundido a item equivalente |
 | Refine | Permanece com redação ou fronteira aprimorada |
-| Split | Contém mais de uma responsabilidade ou permanência |
+| Split | Contém mais de uma responsabilidade ou natureza |
 | Remove | É redundante, circunstancial ou sem suporte suficiente |
+| Defer | Depende de evidências ou arquiteturas ainda não disponíveis |
 
-A consolidação termina quando nenhuma fusão, redução, divisão, refinamento ou remoção adicional puder ocorrer sem perda arquitetural relevante.
+### 8. Readiness Assessment
 
-### 5. Architecture Review
+Verifica se o conjunto consolidado está pronto para sustentar validação e arquiteturas dependentes.
 
-Avalia a arquitetura ou o conjunto consolidado como sistema.
+### 9. Architectural Validation
 
-A revisão deve verificar:
+Avalia cobertura, coerência, lacunas, conflitos, ambiguidades, dependências e riscos.
 
-- cobertura;
-- consistência;
-- lacunas;
-- conflitos;
-- ambiguidades;
-- sobreposições;
-- conceitos órfãos;
-- dependências;
-- readiness para sustentar a próxima camada ou fase.
+### 10. Architectural Audit
 
-### 6. Architectural Decision / Validation
+Verifica aplicação do método, rastreabilidade, integridade dos registros e aderência às decisões superiores.
 
-Registra formalmente o resultado da revisão.
+### 11. Baseline e Canon
 
-O registro pode assumir a forma de:
-
-- ADR, quando houver decisão arquitetural;
-- AV, quando houver validação de estado arquitetural;
-- gate de readiness, quando houver autorização para continuidade.
-
-A decisão deve explicitar escopo, evidências, limitações, riscos, resultado e próximos passos.
-
-### 7. Canon
-
-Somente conhecimento suficientemente consolidado, validado e governado pode ser promovido à Canon.
-
-A promoção deve preservar rastreabilidade até:
-
-```text
-Fonte
-  -> Evidência
-  -> Convergência
-  -> Consolidação
-  -> Validação
-  -> Decisão
-  -> Canon
-```
+Somente conhecimento consolidado, validado, auditado e governado pode ser incorporado à Canon ou congelado em baseline.
 
 ## Princípios obrigatórios
 
-### Evidência antes da nomeação
+### Primazia da evidência
 
-Nenhum conceito, capacidade ou camada deve ser criado apenas por elegância conceitual.
+Nenhum conceito, capacidade, relação ou camada pode ser promovido por preferência, elegância ou recorrência terminológica isolada.
+
+### Primazia da realidade
+
+Os documentos representam a realidade arquitetural descoberta. Quando evidências consolidadas demonstrarem inadequação documental, o documento deve ser revisado por processo formal.
 
 ### Convergência antes da consolidação
 
-Recorrência terminológica isolada não é suficiente. Frequência deve ser analisada com centralidade, consistência e independência das fontes.
+Um único trecho pode gerar uma evidência, mas não autoriza sozinho a promoção de um conceito permanente.
 
-### Consolidação antes da validação
+### Separação de camadas
 
-A revisão arquitetural deve avaliar um conjunto já deduplicado e semanticamente coerente.
-
-### Validação antes da Canon
-
-Nenhum ativo entra na Canon apenas por ter sido documentado ou consolidado.
+Evidência, observação, regularidade, hipótese, consolidação e Canon são estados distintos e não podem ser tratados como equivalentes.
 
 ### Hipóteses fora da Canon
 
-Hipóteses podem orientar observação, mas devem permanecer explicitamente separadas de evidências e decisões validadas.
+Hipóteses podem orientar investigação, mas devem permanecer explicitamente identificadas até validação.
 
 ### Rastreabilidade integral
 
-Toda decisão arquitetural deve ser rastreável às fontes e evidências que a sustentam.
+Toda decisão arquitetural deve ser rastreável às fontes, evidências, análises e decisões que a sustentam.
 
 ### Suficiência arquitetural
 
-O objetivo é produzir o menor conjunto capaz de explicar integralmente o domínio, sem perda relevante de significado ou responsabilidade.
+O objetivo é produzir o menor conjunto capaz de explicar integralmente o domínio sem perda relevante de significado.
 
-### Separação entre execução e evolução do método
+### Estabilidade durante a execução
 
-O método permanece estável durante ciclos de execução. Alterações exigem limitação prática demonstrada, inconsistência comprovada ou melhoria superior validada.
+O método permanece congelado durante um ciclo de análise. Alterações exigem limitação prática comprovada.
 
 ## Estados de maturidade
 
 | Estado | Definição |
 |---|---|
-| Observed | Evidência identificada em uma fonte |
-| Corroborated | Evidência reforçada por múltiplas fontes |
-| Consolidated | Elemento deduplicado e semanticamente estabilizado |
+| Extracted | Evidência literal registrada |
+| Observed | Observação ligada a evidências |
+| Patterned | Regularidade identificada |
+| Hypothesized | Explicação provisória registrada |
+| Corroborated | Hipótese reforçada por múltiplas fontes |
+| Consolidated | Elemento deduplicado e estabilizado |
 | Under Review | Elemento submetido à revisão arquitetural |
-| Validated | Elemento aprovado pela revisão aplicável |
+| Validated | Elemento aprovado pela validação aplicável |
 | Canonical | Elemento incorporado formalmente à Canon |
-| Rejected | Elemento removido ou rejeitado com justificativa |
-| Deferred | Elemento adiado por dependência ou insuficiência de evidência |
-
-## Regras para capacidades
-
-- nenhuma Capability nasce diretamente de um documento;
-- nenhuma Capability nasce diretamente da Evidence Analysis;
-- agrupamentos recorrentes não são automaticamente capacidades;
-- candidatas exigem convergência entre fontes e fronteiras próprias;
-- promoção exige testes de permanência, essencialidade, independência, reutilização, irredutibilidade e cobertura.
+| Rejected | Elemento rejeitado com justificativa |
+| Deferred | Elemento adiado por dependência ou insuficiência |
 
 ## Aplicabilidade
 
 O pipeline pode ser aplicado a:
 
 - Foundation Architecture;
-- Ecosystem Architecture e GEB;
+- Fundamental Model;
+- Core Capability Model;
 - Business Architecture;
 - Product Architecture;
-- Data & Intelligence Architecture;
-- Technology Architecture;
-- Governance Architecture;
-- Knowledge Architecture;
-- Reference Architectures;
+- Guivos Economic Model;
+- Intelligence Architecture;
+- Data, Technology, Governance e Knowledge Architectures;
 - revisões transversais da GEA.
 
-## Governança
+## Aplicação vigente
 
-- owner: Guivos Enterprise Architecture;
-- alterações estruturais exigem registro de justificativa;
-- adaptações locais não podem remover as etapas de convergência, consolidação e validação;
-- o pipeline não substitui métodos especializados de pesquisa, modelagem ou implementação;
-- o pipeline governa a maturação do conhecimento arquitetural, não a execução operacional.
+A aplicação ativa ocorre em `A2-R02 — Fundamental Model Review`, por meio do documento `A2-R02-FMEM-001 — Fundamental Model Evidence Matrix`.
 
-## Aplicação inicial
-
-A primeira aplicação integral ocorre na `A2-R01 — Foundation Architecture Review`:
-
-1. Foundation Evidence Matrix;
-2. Canonical Consolidation dos invariantes e responsabilidades;
-3. Architecture Review;
-4. validação de readiness;
-5. decisão sobre avanço para o Modelo Fundamental.
+O corpus principal é composto por `KU-FM-001`, `KU-FM-002` e `KU-FM-003`. A extração de evidências ainda não foi iniciada.
 
 ## Limites
 
-Este método não promove automaticamente `Architecture Reviews` a um domínio arquitetural independente, não cria um novo Evidence Registry e não altera o Permanence Layer Model. Sua função é governar a passagem de conhecimento analisado para conhecimento arquitetural validado.
+Este método governa a maturação do conhecimento arquitetural. Ele não substitui métodos especializados de pesquisa, modelagem, engenharia, implementação ou operação.
