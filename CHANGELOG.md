@@ -2,6 +2,41 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.24.0 — Guivos Mall, Economic Model e FMEM
+
+- `Guivos Mall` substitui `Guivos Marketplace` como nome oficial do produto comercial.
+- Criação de `GPA-002 — Guivos Mall`, versão `1.1.0`.
+- Remoção do documento antigo `product-architecture/marketplace.md`.
+- Atualização da Arquitetura de Produtos para a versão `1.1.0`.
+- Atualização do Guivos Business para a versão `1.2.0`.
+- Atualização do Guivos Intelligence para a versão `1.2.0`.
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `3.1.0`.
+- Inclusão do exemplo explícito de promoção de pizza na regra de aderência de restaurantes.
+- Inclusão do domínio planejado `Guivos Economic Model`.
+- Formalização pública de planos gratuitos e pagos.
+- Formalização de que planos pagos aceleram, ampliam e personalizam jornadas, mas não bloqueiam a evolução de participantes gratuitos.
+- Criação de `A2-R02-FMEM-001 — Fundamental Model Evidence Matrix`, versão `1.0.0`, estado `execution-ready`.
+- Formalização de Discovery Mode e Canon Mode no `A2-METHOD-001`, versão `1.1.0`.
+- Atualização do Roadmap Arquitetural para `4.0.0`.
+- Atualização do Knowledge Board para `4.0.0`.
+- Atualização do Architectural Milestones para `3.0.0`.
+- Inclusão do marco `M3.1 — Fundamental Discovery Method Frozen`.
+- Atualização da navegação principal do MkDocs.
+
+## 0.23.0 — Guia Oficial 3.0 e Modelo de Conhecimento da IA
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `3.0.0`.
+- Consolidação pública da essência, propósito, missão e visão da Guivos.
+- Inclusão da narrativa da fragmentação das oportunidades.
+- Inclusão dos papéis das pessoas, organizações e da própria Guivos.
+- Consolidação pública dos princípios permanentes.
+- Inclusão de seção detalhada sobre como a inteligência artificial aprende com estudos, livros, instituições de pesquisa, evidências, conhecimento do ecossistema e movimentação autorizada dos participantes.
+- Criação do domínio `Guivos Intelligence Architecture`.
+- Criação de `GAI-001 — Guivos Artificial Intelligence Knowledge Model`, versão `1.0.0`.
+- Atualização de `GPA-006 — Guivos Intelligence` para a versão `1.1.0`.
+- Atualização de `GPD-000 — Documentação Pública da Guivos` para a versão `2.0.0`.
+- Inclusão da Intelligence Architecture na navegação do MkDocs.
+
 ## 0.22.0 — Ciclo Contínuo de Evolução da Guivos
 
 - Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `2.2.0`.
