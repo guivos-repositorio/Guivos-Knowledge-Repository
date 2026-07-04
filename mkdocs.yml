@@ -102,6 +102,7 @@ nav:
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
       - GAI-001 — AI Knowledge Model: intelligence-architecture/knowledge-model.md
+      - GAI-002 — Manifesto da Inteligência do Ecossistema: intelligence-architecture/manifesto.md
   - Guivos Economic Model:
       - Visão Geral: economic-model/index.md
   - Business Architecture:
