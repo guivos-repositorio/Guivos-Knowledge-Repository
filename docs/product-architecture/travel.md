@@ -2,9 +2,9 @@
 id: GPA-003
 title: Guivos Travel
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-07-04
 ---
 
 # Guivos Travel
@@ -26,14 +26,14 @@ Guivos Travel é o produto responsável por viagens e experiências relacionadas
 
 ## Limites
 
-Guivos Travel não substitui o Guivos Journey, o Guivos Marketplace, o Guivos Business, o Guivos Media, o Guivos Intelligence ou o Guivos Ads.
+Guivos Travel não substitui o Guivos Journey, o Guivos Mall, o Guivos Business, o Guivos Media, o Guivos Intelligence ou o Guivos Ads.
 
 Seu domínio principal é a operação especializada de viagens e experiências turísticas.
 
 ## Relações principais
 
 - recebe participantes e recomendações originadas no Guivos Journey;
-- pode utilizar recursos comerciais do Guivos Marketplace;
+- pode utilizar recursos comerciais do Guivos Mall;
 - pode atender programas corporativos do Guivos Business;
 - utiliza conteúdo do Guivos Media;
 - utiliza Guivos Intelligence para personalização e análise;
