@@ -11,6 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Entregável de referência:** GCCM-001 — Discovery
 - **Produto comercial oficial:** Guivos Mall
 - **Domínio planejado:** Guivos Economic Model
+- **Inteligência consolidada:** Inteligência do Ecossistema Guivos
+- **Modelo conceitual de conexões:** Grafo Global da Guivos
 
 Consulte:
 
@@ -19,6 +21,8 @@ Consulte:
 - [Architectural Milestones](docs/project/architectural-milestones.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
 - [Fundamental Model Evidence Matrix](docs/validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
+- [GAI-001 — AI Knowledge Model](docs/intelligence-architecture/knowledge-model.md)
+- [GAI-002 — Manifesto da Inteligência do Ecossistema Guivos](docs/intelligence-architecture/manifesto.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
 
 ## Foco atual
@@ -34,6 +38,8 @@ Nenhuma evidência será criada por memória ou inferência. Toda conclusão dev
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
 
 > Planos pagos podem acelerar e ampliar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
+
+> A Inteligência do Ecossistema Guivos utiliza inteligência artificial como meio técnico e organiza conexões, contexto e conhecimento por meio do Grafo Global da Guivos.
 
 ## Arquiteturas e domínios principais
 
@@ -67,7 +73,7 @@ Nenhuma evidência será criada por memória ou inferência. Toda conclusão dev
 - `docs/geb/` — Guivos Ecosystem Blueprint.
 - `docs/product-architecture/` — arquitetura oficial de produtos.
 - `docs/business-architecture/` — arquitetura de negócio.
-- `docs/intelligence-architecture/` — conhecimento e inteligência artificial.
+- `docs/intelligence-architecture/` — Inteligência do Ecossistema Guivos, conhecimento, grafo, aprendizagem e IA.
 - `docs/economic-model/` — modelo econômico planejado.
 - `docs/governance-framework/` — métodos de governança do GKR.
 - `docs/validation/` — matrizes, validações e auditorias.
