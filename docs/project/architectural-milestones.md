@@ -1,9 +1,9 @@
 ---
 title: Architectural Milestones
 status: active
-version: 2.0.0
+version: 3.0.0
 owner: Guivos
-last_updated: 2026-07-02
+last_updated: 2026-07-04
 ---
 
 # Architectural Milestones
@@ -17,111 +17,93 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 | A0 — GKR Foundation | Completed | Estabelecer o repositório e a infraestrutura documental |
 | A1 — Institutional Architecture Complete | Completed | Consolidar macroestrutura, permanência e governança |
 | M3 — Foundation Architecture Frozen | Completed | Congelar a primeira arquitetura integralmente revisada |
-| A2 — Functional Architecture Discovery | Active | Descobrir e validar as Core Capabilities permanentes |
+| M3.1 — Fundamental Discovery Method Frozen | Completed | Congelar o método de execução da FMEM antes da extração |
+| A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
+| M4 — Fundamental Model Frozen | Planned | Congelar o Modelo Fundamental após revisão completa |
 | A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
 | A4 — Platform Engineering | Planned | Materializar arquiteturas de referência |
 | A5 — Canon 1.0 | Planned | Consolidar a primeira Canon integrada |
-
-## A0 — GKR Foundation
-
-**Estado:** Completed.
-
-Resultados:
-
-- repositório oficial criado;
-- Markdown, Git e publicação configurados;
-- Foundation, GEB, Product, Business e Research iniciados;
-- mecanismos de baseline e rastreabilidade estabelecidos.
-
-## A1 — Institutional Architecture Complete
-
-**Estado:** Completed.
-
-Resultados:
-
-- macroestrutura da GEA consolidada;
-- `GEA-PLM-001 — Permanence Layer Model` validado;
-- separação entre Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery;
-- regras de estabilidade e mudança institucional formalizadas.
 
 ## M3 — Foundation Architecture Frozen
 
 **Estado:** Completed em 02/07/2026.
 
-### Critério de conclusão
+Resultados:
 
-A Foundation foi analisada integralmente, consolidada, avaliada, validada, auditada e congelada como referência permanente da GEA.
-
-### Evidências
-
-- 6 documentos revisados;
+- seis documentos revisados;
 - 173 afirmações institucionais atômicas;
 - 43 grupos de significado;
-- 50 invariantes provisórios consolidados em 18;
-- 54 responsabilidades provisórias consolidadas em 16;
-- `A2-R01-RA-001` com resultado `READY`;
-- `AV-A2-001` com decisão `APPROVED WITH RECOMMENDATIONS`;
-- `A2-R01-AUD-001` com resultado `PASS`;
-- `A2-B3` congelada.
+- 18 invariantes consolidados;
+- 16 responsabilidades consolidadas;
+- readiness `READY`;
+- validação aprovada com recomendações;
+- auditoria `PASS`;
+- baseline `A2-B3` congelada.
+
+## M3.1 — Fundamental Discovery Method Frozen
+
+**Estado:** Completed em 04/07/2026.
+
+### Critério de conclusão
+
+A metodologia da `A2-R02 — Fundamental Model Review` foi definida e congelada antes da extração do corpus.
+
+### Resultados
+
+- `Discovery Mode` formalizado;
+- `Canon Mode` protegido;
+- pipeline evidência → observação → regularidade → hipótese → revisão → consolidação formalizado;
+- corpus principal definido;
+- rastreabilidade obrigatória estabelecida;
+- critérios de promoção futura registrados;
+- `A2-R02-FMEM-001` criado em estado `execution-ready`;
+- nenhuma evidência, hipótese ou alteração canônica registrada antecipadamente.
 
 ### Efeito
 
-- Foundation torna-se referência normativa para arquiteturas dependentes;
-- mudanças futuras exigem revisão formal;
-- `A2-R02 — Fundamental Model Review` fica autorizada.
+A revisão do Modelo Fundamental pode iniciar sua execução sobre o corpus oficial sem novas discussões metodológicas intermediárias.
 
 ## A2 — Functional Architecture Discovery
 
 **Estado:** Active.
-
-### Objetivo
-
-Descobrir o conjunto mínimo e suficiente de capacidades institucionais permanentes da Guivos.
-
-### Entregável principal
-
-`GCCM-001 — Guivos Core Capability Model`.
 
 ### Revisões
 
 | Revisão | Estado |
 |---|---|
 | A2-R01 — Foundation Architecture Review | Completed — Frozen in A2-B3 |
-| A2-R02 — Fundamental Model Review | Authorized — Next |
+| A2-R02 — Fundamental Model Review | Active — Execution Ready |
 | A2-R03 — Business Architecture Review | Planned |
 | A2-R04 — Product Architecture Review | Planned |
 | A2-R05 — Cross-Architecture Review | Planned |
 
 ### Restrições
 
-- nenhuma Core Capability por brainstorming isolado;
-- produtos, funcionalidades, serviços e tecnologias não são Core Capabilities;
-- toda candidata exige convergência multiarquitetura;
+- nenhuma Core Capability nasce por brainstorming isolado;
+- produtos, funcionalidades, serviços e tecnologias não são automaticamente Core Capabilities;
+- toda candidata exige convergência e rastreabilidade;
 - o catálogo deve representar o menor conjunto suficiente;
-- rastreabilidade é obrigatória.
+- hipóteses permanecem fora da Canon até validação.
 
-## A3 — Operational Architecture
-
-**Estado:** Planned.
-
-Entregáveis previstos:
-
-- `PRA-001 — Platform Reference Architecture`;
-- arquiteturas de referência por domínio;
-- modelo de cooperação entre Core Capabilities;
-- fluxos conceituais, responsabilidades e fronteiras.
-
-## A4 — Platform Engineering
+## M4 — Fundamental Model Frozen
 
 **Estado:** Planned.
 
-Transformar arquiteturas de referência em Enterprise Programs e Enterprise Delivery, preservando a separação entre visão e implementação.
+Critérios previstos:
 
-## A5 — Canon 1.0
+- corpus integralmente analisado;
+- FMEM concluída;
+- Canonical Consolidation concluída;
+- readiness demonstrado;
+- validação formal registrada;
+- auditoria concluída;
+- baseline `A2-B4` congelada.
 
-**Estado:** Planned.
+## Guivos Economic Model
 
-Primeira consolidação integrada da Foundation, GEA, GCCM, PRA e arquiteturas de referência essenciais.
+**Estado:** Domain Created — Development Planned.
+
+O domínio foi criado em 04/07/2026. Seu desenvolvimento detalhado ocorrerá após dependências suficientes do Modelo Fundamental, GCCM, Business Architecture, Product Architecture e Business Outcomes.
 
 ## Regra de transição
 
