@@ -1,9 +1,9 @@
 ---
 title: Knowledge Board
 status: active
-version: 3.0.0
+version: 4.0.0
 owner: Guivos
-last_updated: 2026-07-02
+last_updated: 2026-07-04
 ---
 
 # Knowledge Board
@@ -15,142 +15,119 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Ativo | Estado | Finalidade |
 |---|---|---|
 | M1 — Research Foundation Complete | Frozen | Referência estável dos fundamentos de pesquisa |
-| M2.0 — Architectural Evolution Hypothesis | Experimental | Preservar hipóteses fora da Canon |
-| GEA-PLM-001 — Permanence Layer Model | Validated | Organizar ativos por permanência e governança |
-| A1 — Institutional Architecture Complete | Completed | Macroestrutura institucional concluída |
-| A2 — Functional Architecture Discovery | Active | Descobrir Core Capabilities por evidências |
-| A2-B3 — Foundation Architecture Review Complete | Frozen | Baseline vigente da Foundation |
-| A2-METHOD-001 | Validated 1.0.0 | Governar maturação do conhecimento arquitetural |
+| GEA-PLM-001 | Validated | Organizar ativos por permanência e governança |
+| A2-B3 | Frozen | Baseline vigente da Foundation |
+| A2-METHOD-001 | Validated 1.1.0 | Governar descoberta, consolidação e promoção à Canon |
 | GEA-AUDIT-001 | Validated 1.0.0 | Auditar revisões antes de baselines |
+| A2-R02 | Active | Revisar o Modelo Fundamental |
+| A2-R02-FMEM-001 | Execution Ready 1.0.0 | Registrar a descoberta do Modelo Fundamental |
 | GCCM-001 | Discovery 0.4.0 | Descoberta e validação de Core Capabilities |
+| Guivos Economic Model | Planned 0.1.0 | Consolidar a sustentabilidade econômica do ecossistema |
 
-## A2 — Functional Architecture Discovery
-
-### Estado atual
+## A2-R02 — Fundamental Model Review
 
 | Elemento | Estado |
 |---|:---:|
-| Evidence Extraction da Foundation | Concluída |
-| A2-R01-FEM-001 | Concluída |
-| A2-R01-CC-001 | Concluída |
-| A2-R01-RA-001 | READY |
-| AV-A2-001 | Approved with recommendations |
-| A2-R01-AUD-001 | PASS |
-| A2-B3 | Frozen |
-| A2-R01 — Foundation Architecture Review | Completed |
-| A2-R02 — Fundamental Model Review | Authorized |
-| Registro de candidatas do GCCM | Vazio |
-| Catálogo canônico de Core Capabilities | Vazio |
+| Metodologia da FMEM | Frozen for execution |
+| Discovery Mode | Active |
+| Canon Mode | Protected |
+| Corpus principal | Definido |
+| Evidence Extraction | Não iniciada |
+| Evidências | 0 |
+| Observações | 0 |
+| Regularidades | 0 |
+| Hipóteses ativas | 0 |
+| Alterações na Canon | 0 |
 
-> Nenhuma Core Capability está candidata ou canônica nesta versão.
+## Corpus principal
 
-## Foundation congelada
+- `KU-FM-001 — Fenômeno da Evolução`;
+- `KU-FM-002 — Modelo Fundamental da Jornada`;
+- `KU-FM-003 — Quatro Naturezas Fundamentais`.
 
-### Métricas
-
-| Métrica | Quantidade |
-|---|---:|
-| Documentos analisados | 6 |
-| Afirmações institucionais atômicas | 173 |
-| Grupos de significado | 43 |
-| Invariantes provisórios | 50 |
-| Responsabilidades provisórias | 54 |
-| Invariantes consolidados | 18 |
-| Responsabilidades consolidadas | 16 |
-| Domínios semânticos | 8 |
-| Core Capabilities candidatas | 0 |
-| Core Capabilities canônicas | 0 |
-
-### Resultados
-
-- `IC-001` a `IC-018` incorporados à baseline da Foundation;
-- `RC-001` a `RC-016` incorporados à baseline da Foundation;
-- nenhuma contradição material identificada;
-- nenhum achado Critical ou Major na auditoria;
-- Foundation aprovada para sustentar arquiteturas dependentes;
-- Modelo Fundamental autorizado como próxima revisão.
-
-## Relações institucionais vigentes
+## Pipeline vigente
 
 ```text
-Evolução = finalidade
-Jornada = continuidade contextual
-Próximo passo = unidade de orientação
-Oportunidade = meio
-Experiência = realização de valor
-Relacionamentos = patrimônio do ecossistema
-Conhecimento = compreensão e patrimônio
-Dados = registros
-IA = mecanismo de interpretação
-Participante = titular da decisão
-Tecnologia = meio subordinado ao propósito
-Arquitetura = estrutura permanente
-Implementação = realização progressiva
-```
-
-## Pipeline arquitetural vigente
-
-```text
-Evidence Analysis
+Corpus oficial
+  -> Evidence Extraction
+  -> Observações
+  -> Regularidades
+  -> Hipóteses
+  -> Testes e revisão
   -> Evidence Matrix
   -> Canonical Consolidation
-  -> Readiness Assessment
-  -> Architectural Validation
-  -> Architectural Audit
+  -> Readiness
+  -> Validation
+  -> Audit
   -> Baseline
 ```
 
-Regras:
+## Produtos oficiais
 
-- nenhuma Capability nasce diretamente de uma fonte;
-- convergência precede consolidação;
-- consolidação precede readiness e validação;
-- validação precede auditoria;
-- auditoria precede baseline;
-- toda decisão mantém rastreabilidade até as evidências;
-- o método só muda diante de limitação objetiva demonstrada.
+| Produto | Estado |
+|---|---|
+| Guivos Journey | Consolidado |
+| Guivos Mall | Consolidado |
+| Guivos Travel | Consolidado |
+| Guivos Business | Consolidado |
+| Guivos Media | Consolidado |
+| Guivos Intelligence | Consolidado |
+| Guivos Ads | Consolidado |
+
+`Guivos Mall` substitui `Guivos Marketplace` como nome oficial do produto comercial.
+
+## Guivos Economic Model
+
+**Estado:** Planned — Domain Created.
+
+Princípio inicial aprovado:
+
+> Planos pagos poderão acelerar, ampliar e personalizar jornadas, mas não deverão impedir que participantes de planos gratuitos descubram oportunidades, participem do ecossistema e evoluam.
+
+Pendências principais:
+
+- princípios econômicos;
+- arquitetura de receitas;
+- planos gratuitos e pagos;
+- critérios de aceleração;
+- incentivos e recompensas;
+- economia de parceiros;
+- métricas econômicas;
+- limites de monetização.
 
 ## Maturidade das arquiteturas
 
 | Arquitetura | Maturidade |
 |---|---|
 | Foundation Architecture | Frozen — A2-B3 |
-| Fundamental Model / GEB | Review authorized — A2-R02 |
-| Product Architecture | Stable na estrutura superior; revisão A2 pendente |
-| Business Architecture | Foundations e Strategy inicial validadas; revisão A2 pendente |
-| Data & Intelligence Architecture | Draft |
-| Technology Architecture | Draft |
-| Governance Architecture | Draft |
-| Knowledge Architecture | Draft |
+| Fundamental Model | Active Review — A2-R02 |
+| Product Architecture | Stable na estrutura superior |
+| Business Architecture | Foundations e Strategy inicial validadas |
+| Intelligence Architecture | Modelo conceitual consolidado; implementação pendente |
+| Guivos Economic Model | Planned — Domain Created |
 | Reference Architecture / GCCM | Discovery 0.4.0 |
 
-## Hipóteses preservadas fora da Canon
+## Tópicos preservados fora da Canon
 
-- taxonomia Conceitos × Invariantes × Responsabilidades como camada formal;
-- Estruturantes × Organizadores × Qualificadores;
-- mudança oficial de nome ou escopo da A2;
+- Enterprise Ontology;
+- Architectural Derivation Model;
+- Architectural Discovery Method;
+- Architectural Knowledge Lifecycle;
 - GEA Manifesto;
-- ontologia institucional;
-- ADM-001;
 - GMM, GKS, GKVF e KVS.
 
 ## Governança documental
 
 | Ativo | Status |
 |---|---|
-| Roadmap Arquitetural | 3.0.0 |
-| Knowledge Board | 3.0.0 |
-| Architectural Milestones | 2.0.0 |
-| GCCM-001 | Discovery 0.4.0 |
-| A2-METHOD-001 | Validated 1.0.0 |
-| GEA-AUDIT-001 | Validated 1.0.0 |
-| A2-B3 | Frozen 1.0.0 |
-| A2-R02 | Authorized |
+| Roadmap Arquitetural | 4.0.0 |
+| Knowledge Board | 4.0.0 |
+| Architectural Milestones | 2.0.0, atualização pendente |
+| A2-METHOD-001 | Validated 1.1.0 |
+| A2-R02-FMEM-001 | Execution Ready 1.0.0 |
+| Guia Oficial da Guivos | Public Canon 3.1.0 |
+| Guivos Economic Model | Planned 0.1.0 |
 
 ## Próxima atividade
 
-Abrir `A2-R02 — Fundamental Model Review` e iniciar a análise de `KU-FM-001 — Fenômeno da Evolução`, aplicando o pipeline vigente sem alteração metodológica.
-
-## Última consolidação
-
-A Foundation Architecture foi aprovada, auditada e congelada em `A2-B3` em 02/07/2026.
+Abrir integralmente `KU-FM-001 — Fenômeno da Evolução` e iniciar a extração literal em `E-001`, sem observações ou hipóteses durante a leitura inicial.
