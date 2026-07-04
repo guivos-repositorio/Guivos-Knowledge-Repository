@@ -2,24 +2,28 @@
 id: GPA-006
 title: Guivos Intelligence
 status: consolidated
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-07-04
 related_models:
   - GAI-001
+  - GAI-002
 ---
 
 # Guivos Intelligence
 
 ## Papel
 
-Guivos Intelligence é o produto responsável por transformar dados, contexto, evidências e conhecimento do ecossistema em inteligência aplicada.
+Guivos Intelligence é o produto responsável por entregar a **Inteligência do Ecossistema Guivos**.
 
-Seu papel inclui aprender continuamente com fontes confiáveis, conhecimento produzido pelo ecossistema e movimentação autorizada dos participantes, preservando autonomia, privacidade e limites de atuação.
+Essa inteligência transforma dados, contexto, evidências, conhecimento e conexões do ecossistema em recomendações, indicadores, tendências e análises úteis.
+
+Seu papel inclui aprender continuamente com fontes confiáveis, conhecimento produzido pelo ecossistema, movimentação autorizada dos participantes e relações organizadas no Grafo Global da Guivos.
 
 ## Escopo principal
 
 - inteligência artificial;
+- Grafo Global da Guivos;
 - analytics;
 - indicadores;
 - recomendações;
@@ -30,36 +34,21 @@ Seu papel inclui aprender continuamente com fontes confiáveis, conhecimento pro
 - conhecimento estratégico do ecossistema;
 - integração de estudos, pesquisas, livros, normas e fontes institucionais confiáveis;
 - aprendizado com experiências e evidências produzidas pelo ecossistema;
-- aprendizado contextual com objetivos, mudanças e movimentações autorizadas dos participantes;
-- explicabilidade e registro de incertezas em recomendações relevantes.
+- aprendizado contextual com objetivos, mudanças e movimentações autorizadas;
+- explicabilidade e registro de incertezas.
 
-## Modelo de conhecimento
+## Modelos orientadores
 
-O funcionamento superior da inteligência artificial é orientado por `GAI-001 — Guivos Artificial Intelligence Knowledge Model`.
-
-```text
-Dados e evidências
-→ Informação organizada
-→ Conhecimento validado
-→ Inteligência contextual
-→ Recomendação explicável
-→ Decisão do participante
-→ Experiência e novos resultados
-```
+- `GAI-001 — Guivos Artificial Intelligence Knowledge Model` define o fluxo de dados, informação, conhecimento, contexto e recomendação;
+- `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos` define propósito, princípios, Grafo Global, autonomia, limites e patrimônio cumulativo.
 
 ## Limites
 
 Guivos Intelligence não substitui os produtos que executam jornadas, transações, viagens, soluções empresariais, conteúdo editorial ou publicidade.
 
-Sua função é apoiar esses produtos com inteligência, análise e interpretação.
-
-Guivos Intelligence também não deverá decidir o que uma pessoa deve querer, impor objetivos, substituir profissionais especializados, utilizar fontes como verdade automática, tratar inferências como certezas ou priorizar venda em prejuízo do participante.
+Também não deverá decidir o que uma pessoa deve querer, impor objetivos, substituir profissionais especializados, utilizar fontes como verdade automática, tratar inferências como certezas ou priorizar venda em prejuízo do participante.
 
 ## Relações principais
-
-Guivos Intelligence é um produto transversal e pode servir a todos os produtos do Ecossistema Guivos.
-
-Relaciona-se diretamente com:
 
 - Guivos Journey, para compreensão de contexto, próximos passos e oportunidades;
 - Guivos Business, para análises, indicadores e inteligência organizacional;
@@ -70,12 +59,12 @@ Relaciona-se diretamente com:
 
 ## Decisão de nomenclatura
 
-Guivos Intelligence substitui “Guivos Insights” como nome oficial do produto.
+`Guivos Intelligence` permanece como nome oficial do produto.
 
-Insights podem existir como resultados, relatórios ou descobertas geradas pelo produto, mas não representam sua denominação canônica.
+`Inteligência do Ecossistema Guivos` é a expressão conceitual e pública para a inteligência entregue por esse produto.
 
 ## Estado de maturidade
 
-A responsabilidade superior do produto e o modelo conceitual de aprendizagem estão consolidados.
+A responsabilidade superior do produto, o modelo conceitual de aprendizagem, o Grafo Global como modelo de conexões e os princípios do manifesto estão consolidados.
 
-Arquitetura de dados, modelos técnicos, seleção de fontes, mecanismos de consentimento, atualização de conhecimento, auditoria algorítmica e explicabilidade operacional ainda dependem de detalhamento, validação e implementação.
+Ontologia formal, arquitetura de dados, modelos técnicos, mecanismos de consentimento, atualização de conhecimento, auditoria algorítmica e explicabilidade operacional ainda dependem de detalhamento, validação e implementação.
