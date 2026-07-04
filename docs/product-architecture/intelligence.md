@@ -2,9 +2,9 @@
 id: GPA-006
 title: Guivos Intelligence
 status: consolidated
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-07-03
+last_updated: 2026-07-04
 related_models:
   - GAI-001
 ---
@@ -37,8 +37,6 @@ Seu papel inclui aprender continuamente com fontes confiáveis, conhecimento pro
 
 O funcionamento superior da inteligência artificial é orientado por `GAI-001 — Guivos Artificial Intelligence Knowledge Model`.
 
-O modelo estabelece o fluxo:
-
 ```text
 Dados e evidências
 → Informação organizada
@@ -55,14 +53,7 @@ Guivos Intelligence não substitui os produtos que executam jornadas, transaçõ
 
 Sua função é apoiar esses produtos com inteligência, análise e interpretação.
 
-Guivos Intelligence também não deverá:
-
-- decidir o que uma pessoa deve querer;
-- impor objetivos ou escolhas;
-- substituir profissionais especializados;
-- utilizar qualquer fonte como verdade automática;
-- tratar inferências como certezas;
-- otimizar apenas engajamento ou venda em prejuízo do participante.
+Guivos Intelligence também não deverá decidir o que uma pessoa deve querer, impor objetivos, substituir profissionais especializados, utilizar fontes como verdade automática, tratar inferências como certezas ou priorizar venda em prejuízo do participante.
 
 ## Relações principais
 
@@ -72,7 +63,7 @@ Relaciona-se diretamente com:
 
 - Guivos Journey, para compreensão de contexto, próximos passos e oportunidades;
 - Guivos Business, para análises, indicadores e inteligência organizacional;
-- Guivos Marketplace, para relevância e organização de ofertas;
+- Guivos Mall, para relevância, curadoria e organização de ofertas;
 - Guivos Travel, para contexto e recomendação de experiências;
 - Guivos Media, para organização e descoberta de conhecimento;
 - Guivos Ads, para relevância, transparência e mensuração responsável.
