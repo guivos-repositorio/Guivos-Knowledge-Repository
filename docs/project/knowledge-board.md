@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 4.1.0
+version: 4.1.1
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -143,11 +143,11 @@ Pendências principais:
 | Ativo | Status |
 |---|---|
 | Roadmap Arquitetural | 4.1.0 |
-| Knowledge Board | 4.1.0 |
+| Knowledge Board | 4.1.1 |
 | Architectural Milestones | 3.0.0 |
 | A2-METHOD-001 | Validated 1.1.0 |
 | A2-R02-FMEM-001 | Execution Ready 1.0.0 |
-| Guia Oficial da Guivos | Public Canon 3.2.0 |
+| Guia Oficial da Guivos | Public Canon 3.3.0 |
 | GAI-001 | Consolidated 1.1.0 |
 | GAI-002 | Consolidated 1.0.0 |
 | Glossário Canônico | Consolidated 1.3.0 |
