@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 4.0.0
+version: 4.1.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -17,6 +17,9 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - **Revisão ativa:** `A2-R02 — Fundamental Model Review`.
 - **Artefato ativo:** `A2-R02-FMEM-001` — execution-ready.
 - **Produto comercial oficial:** `Guivos Mall`.
+- **Inteligência consolidada:** `Inteligência do Ecossistema Guivos`.
+- **Modelo conceitual de conexões:** `Grafo Global da Guivos`.
+- **Manifesto vigente:** `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos`.
 - **Novo domínio planejado:** `Guivos Economic Model`.
 - **Core Capabilities candidatas:** 0.
 - **Core Capabilities canônicas:** 0.
@@ -68,6 +71,30 @@ Corpus oficial
 - [ ] Executar Canonical Consolidation.
 - [ ] Avaliar readiness.
 - [ ] Validar, auditar e congelar `A2-B4`.
+
+## Intelligence Architecture
+
+**Estado:** Core Concepts Consolidated — Technical Architecture Pending.
+
+### Concluído
+
+- [x] Consolidar `GAI-001 — Guivos Artificial Intelligence Knowledge Model`.
+- [x] Criar `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos`.
+- [x] Adotar a expressão pública e conceitual `Inteligência do Ecossistema Guivos`.
+- [x] Consolidar o `Grafo Global da Guivos` como modelo conceitual de conexões.
+- [x] Relacionar inteligência, contexto, jornadas, experiências, conhecimento e evidências.
+- [x] Consolidar autonomia humana, explicabilidade, privacidade e limites superiores.
+- [x] Registrar o patrimônio cumulativo como vantagem arquitetural.
+
+### Pendente
+
+- [ ] Definir ontologia formal do grafo.
+- [ ] Definir modelo lógico e físico.
+- [ ] Selecionar tecnologias específicas.
+- [ ] Definir governança operacional de dados e consentimento.
+- [ ] Definir auditoria algorítmica.
+- [ ] Definir controles técnicos de privacidade e segurança.
+- [ ] Definir critérios quantitativos de evidência e qualidade.
 
 ## Guivos Economic Model
 
