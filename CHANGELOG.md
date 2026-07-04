@@ -2,6 +2,27 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.25.0 — Inteligência do Ecossistema Guivos e Grafo Global
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `3.2.0`.
+- Substituição da expressão pública genérica “IA da Guivos” por `Inteligência do Ecossistema Guivos`.
+- Consolidação de `Guivos Intelligence` como produto responsável por entregar essa inteligência.
+- Inclusão de seção ampliada sobre aprendizagem com conhecimento científico, técnico e institucional, conhecimento do ecossistema, movimentação autorizada dos participantes e padrões agregados.
+- Inclusão do `Grafo Global da Guivos` como modelo conceitual de conexões entre participantes, organizações, coletivos, jornadas, oportunidades, experiências, conhecimentos, relacionamentos e evidências.
+- Inclusão de diagramas Mermaid no Guia Oficial e nos documentos da Intelligence Architecture.
+- Criação de `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos`, versão `1.0.0`, estado `consolidated`.
+- Atualização de `GAI-001 — Guivos Artificial Intelligence Knowledge Model` para a versão `1.1.0`.
+- Atualização de `GPA-006 — Guivos Intelligence` para a versão `1.3.0`.
+- Atualização de `GIA-000 — Guivos Intelligence Architecture` para a versão `1.1.0`.
+- Atualização do Glossário Canônico para a versão `1.3.0`.
+- Atualização da Documentação Pública para a versão `2.2.0`.
+- Atualização do Roadmap Arquitetural para `4.1.0`.
+- Atualização do Knowledge Board para `4.1.0`.
+- Atualização do README e da página inicial do GKR.
+- Inclusão do GAI-002 na navegação do MkDocs.
+- Formalização do patrimônio cumulativo do grafo como vantagem arquitetural difícil de reproduzir.
+- Registro de ontologia formal, modelo lógico, tecnologia específica, governança de dados e auditoria algorítmica como pendências futuras.
+
 ## 0.24.1 — Sincronização pós-consolidação
 
 - Atualização do README com o estado vigente da A2-R02, Guivos Mall e Guivos Economic Model.
