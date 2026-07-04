@@ -2,6 +2,16 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.24.1 — Sincronização pós-consolidação
+
+- Atualização do README com o estado vigente da A2-R02, Guivos Mall e Guivos Economic Model.
+- Atualização da página inicial do site do GKR.
+- Resolução da pendência técnica em `docs/public/index.md`, atualizada para a versão `2.1.0`.
+- Atualização do Glossário Canônico para a versão `1.2.0`.
+- Substituição das referências residuais a `Guivos Marketplace` em Guivos Journey, Guivos Travel e Guivos Ads.
+- Inclusão dos termos `Guivos Mall`, `Guivos Economic Model`, `Discovery Mode` e `Canon Mode` no glossário.
+- Preservação de referências históricas a `Guivos Marketplace` apenas em histórico de alterações e no campo de nome anterior do Guivos Mall.
+
 ## 0.24.0 — Guivos Mall, Economic Model e FMEM
 
 - `Guivos Mall` substitui `Guivos Marketplace` como nome oficial do produto comercial.
