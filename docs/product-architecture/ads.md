@@ -2,9 +2,9 @@
 id: GPA-007
 title: Guivos Ads
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-07-04
 ---
 
 # Guivos Ads
@@ -32,6 +32,6 @@ Sua função é operar monetização publicitária e distribuição patrocinada 
 
 ## Relações principais
 
-- pode distribuir campanhas em Guivos Journey, Marketplace, Travel, Business e Media;
+- pode distribuir campanhas em Guivos Journey, Guivos Mall, Guivos Travel, Guivos Business e Guivos Media;
 - utiliza Guivos Intelligence para segmentação, análise e mensuração;
 - deve respeitar a autonomia do participante e a separação entre conteúdo editorial e publicidade.
