@@ -2,7 +2,7 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 3.1.0
+version: 3.2.0
 owner: Guivos
 last_updated: 2026-07-04
 classification: Documento Institucional Público
@@ -20,7 +20,7 @@ update_cycle: Continuous
 | Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará, quais são seus limites e como pessoas e organizações poderão participar |
 | Público | Pessoas, empresas, organizações, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
 | Responsável institucional | Guivos |
-| Versão | 3.1.0 |
+| Versão | 3.2.0 |
 | Última atualização | 04/07/2026 |
 | Status | Public Canon |
 | Fonte principal | Guivos Knowledge Repository |
@@ -372,7 +372,7 @@ Produz e distribui vídeos, podcasts, entrevistas, documentários, histórias re
 
 ## Guivos Intelligence
 
-Transforma dados, contexto, evidências e conhecimento em recomendações, indicadores, tendências e análises úteis.
+É o produto que entrega a **Inteligência do Ecossistema Guivos**, transformando dados, contexto, evidências, conhecimento e conexões em recomendações, indicadores, tendências e análises úteis.
 
 ## Guivos Ads
 
@@ -386,7 +386,7 @@ Uma pessoa assiste a um conteúdo no **Guivos Media** sobre voluntariado.
 
 No **Guivos Journey**, informa interesse em participar de uma causa.
 
-O **Guivos Intelligence** ajuda a organizar oportunidades compatíveis.
+A **Inteligência do Ecossistema Guivos**, entregue pelo Guivos Intelligence, ajuda a organizar oportunidades compatíveis.
 
 Uma ONG participa por meio do **Guivos Business**.
 
@@ -398,27 +398,161 @@ Se houver deslocamento, o **Guivos Travel** poderá apoiar essa parte da experi�
 
 ---
 
-# 19. Como a inteligência artificial da Guivos aprende
+# 19. A Inteligência do Ecossistema Guivos
 
-A inteligência artificial da Guivos não deverá funcionar apenas como um sistema de conversa ou recomendação automática.
+A Inteligência do Ecossistema Guivos não deverá funcionar apenas como um sistema de conversa, pesquisa ou recomendação automática.
 
-Ela deverá aprender continuamente com conhecimento confiável, evidências, experiências do ecossistema e movimentação autorizada dos participantes.
+Seu papel é compreender um ecossistema vivo de pessoas, organizações, coletivos, jornadas, oportunidades, experiências, conhecimentos, relacionamentos e evidências.
+
+Ela é um meio a serviço do propósito da Guivos. Não é a finalidade do ecossistema.
+
+## 19.1 O que essa inteligência procura compreender
+
+Ela procura responder continuamente perguntas como:
+
+- quem é esta pessoa ou organização em seu contexto atual?
+- o que deseja melhorar, descobrir, construir ou viver?
+- qual próximo passo parece mais relevante agora?
+- quais oportunidades, grupos ou organizações podem ajudar?
+- quais experiências já foram vividas?
+- o que mudou?
+- quais novas possibilidades surgiram?
+
+## 19.2 Como ela aprende
+
+A Inteligência do Ecossistema poderá aprender com quatro fontes complementares.
+
+### Conhecimento científico, técnico e institucional
 
 Poderá utilizar conhecimento produzido por universidades, instituições de pesquisa, organismos públicos e multilaterais, centros de referência, estudos científicos, artigos revisados por pares, livros, normas técnicas, especialistas qualificados e bases institucionais confiáveis.
 
-Com autorização e transparência, poderá aprender com objetivos, interesses, oportunidades visualizadas, experiências realizadas, conteúdos consumidos, grupos, habilidades, preferências, mudanças de disponibilidade, localização, contexto e evidências de progresso.
+A existência de uma publicação não garante sua incorporação automática. Fontes deverão ser avaliadas quanto a qualidade, atualidade, contexto, limites, conflitos e aplicabilidade.
+
+### Conhecimento produzido pelo ecossistema
+
+Poderá aprender com experiências, resultados e padrões produzidos na própria Guivos, respeitando privacidade, consentimento, finalidade legítima, qualidade dos dados e análise de possíveis vieses.
+
+### Contexto e movimentação do participante
+
+Com autorização e transparência, poderá aprender com objetivos, mudanças de interesse, oportunidades visualizadas, experiências realizadas, conteúdos consumidos, grupos, habilidades, preferências, disponibilidade, localização, contexto e evidências de progresso.
 
 A movimentação fornece sinais, não verdades absolutas. A pessoa poderá corrigir, rejeitar ou atualizar interpretações.
+
+### Aprendizado coletivo e contextual
+
+A Guivos poderá identificar padrões agregados entre jornadas semelhantes sem reduzir pessoas a perfis rígidos.
+
+Esse aprendizado poderá ajudar a descobrir lacunas de oferta, necessidades locais, oportunidades pouco conhecidas, resultados recorrentes e conexões relevantes entre organizações.
+
+## 19.3 O Grafo Global da Guivos
+
+Um dos principais diferenciais da Inteligência do Ecossistema é a organização do conhecimento em um **Grafo Global da Guivos**.
+
+Em vez de enxergar apenas documentos, pesquisas ou conversas isoladas, o grafo conecta elementos do ecossistema e preserva as relações entre eles.
+
+```mermaid
+flowchart TD
+    P[Participante]
+    MA[Momento Atual]
+    O[Objetivos]
+    PP[Próximo Passo]
+    OP[Oportunidade]
+    E[Experiência]
+    EV[Evidência]
+    NM[Novo Momento Atual]
+    G[Grafo Global da Guivos]
+
+    P --> MA
+    MA --> O
+    O --> PP
+    PP --> OP
+    OP --> E
+    E --> EV
+    EV --> NM
+    NM --> MA
+
+    P -. conectado a .-> G
+    MA -. atualizado em .-> G
+    O -. relacionado em .-> G
+    PP -. orientado por .-> G
+    OP -. descoberto em .-> G
+    E -. registrado em .-> G
+    EV -. incorporada ao .-> G
+```
+
+O grafo também conecta simultaneamente pessoas, organizações, coletivos, universidades, igrejas, ONGs, especialistas, conhecimentos, eventos, cursos, viagens, oportunidades e relacionamentos.
+
+```mermaid
+graph LR
+    P[Pessoa]
+    ORG[Organização]
+    C[Coletivo]
+    U[Universidade]
+    I[Igreja]
+    ONG[ONG]
+    ESP[Especialista]
+    CON[Conhecimento]
+    OP[Oportunidade]
+    EX[Experiência]
+    EV[Evidência]
+    REL[Relacionamento]
+
+    P --- ORG
+    P --- C
+    P --- U
+    P --- I
+    P --- ONG
+    P --- ESP
+    P --- OP
+    OP --- EX
+    EX --- EV
+    EX --- REL
+    CON --- ESP
+    CON --- U
+    CON --- OP
+```
+
+O conhecimento não fica armazenado apenas como conteúdo. Ele passa a representar quem se relaciona com quem, em qual contexto, por meio de qual oportunidade, experiência ou evidência.
+
+## 19.4 Como o grafo evolui
+
+Cada nova experiência pode alterar o grafo.
+
+Uma pessoa pode entrar em um grupo, conhecer alguém, iniciar um curso, mudar de emprego, viajar, participar de uma ação social ou tornar-se mentora de outras pessoas.
+
+Essas mudanças criam novas conexões, atualizam o Momento Atual e abrem novas possibilidades.
+
+Por isso, a Inteligência do Ecossistema aprende não apenas quando recebe novos documentos, mas também quando o próprio ecossistema se movimenta, desde que esse aprendizado seja autorizado, legítimo e governado.
+
+## 19.5 Como gera recomendações
+
+A Inteligência do Ecossistema não deverá recomendar algo apenas porque é popular, rentável ou patrocinado.
+
+Ela poderá considerar:
+
+- Momento Atual;
+- objetivos declarados;
+- preferências;
+- disponibilidade;
+- localização;
+- experiências anteriores;
+- relacionamentos;
+- conhecimento disponível;
+- evidências acumuladas;
+- limitações informadas.
+
+Duas pessoas com objetivos semelhantes podem receber recomendações diferentes porque seus contextos são diferentes.
 
 ```mermaid
 flowchart TD
     A[Dados autorizados e evidências]
     B[Informação organizada]
     C[Conhecimento validado]
-    D[Inteligência contextual]
-    E[Recomendação explicável]
-    F[Decisão do participante]
-    G[Experiência e novos resultados]
+    D[Grafo Global e contexto]
+    E[Inteligência contextual]
+    F[Recomendação explicável]
+    G[Decisão do participante]
+    H[Experiência e novos resultados]
 
     A --> B
     B --> C
@@ -426,10 +560,43 @@ flowchart TD
     D --> E
     E --> F
     F --> G
-    G --> A
+    G --> H
+    H --> A
+    H --> D
 ```
 
-A IA não deverá decidir o que alguém deve querer, impor objetivos, substituir profissionais especializados, tratar inferências como certezas, manipular escolhas, expor dados ou otimizar apenas venda e permanência na plataforma em prejuízo do participante.
+## 19.6 O que ela nunca deverá fazer
+
+A Inteligência do Ecossistema Guivos não deverá:
+
+- decidir o que uma pessoa deve querer;
+- impor objetivos ou caminhos;
+- manipular escolhas;
+- ocultar oportunidades para favorecer patrocinadores;
+- priorizar receita em prejuízo da evolução do participante;
+- substituir profissionais especializados;
+- tratar hipóteses como certezas;
+- utilizar qualquer fonte como verdade automática;
+- utilizar dados sem finalidade legítima e transparência;
+- otimizar apenas tempo de tela, venda ou permanência na plataforma.
+
+A decisão final permanece com a pessoa ou organização.
+
+## 19.7 Por que essa arquitetura é diferente
+
+Uma inteligência convencional pode responder perguntas com base em textos, documentos, conversas e padrões estatísticos.
+
+A Inteligência do Ecossistema Guivos pretende compreender relações em movimento dentro de um ambiente vivo.
+
+O principal patrimônio dessa inteligência não é apenas o software. É o conhecimento acumulado nas conexões entre jornadas, experiências, organizações, coletivos, oportunidades, resultados e evidências.
+
+Quanto maior a participação responsável no ecossistema, maior pode se tornar a capacidade de compreender contextos e revelar conexões relevantes.
+
+> **Replicar funcionalidades é possível. Replicar um ecossistema vivo de conhecimento, relacionamentos, jornadas e evidências construído ao longo do tempo exige reconstruir uma rede inteira de conexões e aprendizado acumulado.**
+
+Por isso, o Grafo Global da Guivos pode criar uma vantagem cumulativa difícil de reproduzir. O valor não está apenas no código, mas no grafo vivo, na qualidade das evidências, na governança e na confiança formada entre participantes.
+
+Os princípios completos estão descritos no `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos`.
 
 ---
 
@@ -437,7 +604,11 @@ A IA não deverá decidir o que alguém deve querer, impor objetivos, substituir
 
 A Guivos poderá utilizar informações fornecidas voluntariamente, preferências, interações e registros de experiências para operar serviços, encontrar oportunidades, melhorar recomendações, proteger o ecossistema e cumprir obrigações legais.
 
+O Grafo Global da Guivos não autoriza uso irrestrito de dados.
+
 A pessoa deverá manter controle sobre suas informações conforme as regras e a legislação aplicável.
+
+A arquitetura deverá preservar consentimento, finalidade, níveis de acesso, segregação de informações, anonimização ou agregação quando necessárias e rastreabilidade das fontes.
 
 ---
 
@@ -474,7 +645,9 @@ A monetização deverá sustentar o ecossistema, financiar sua evolução e ampl
 - Guivos Mall como nome oficial do produto comercial;
 - Ciclo Contínuo de Evolução da Guivos;
 - limites públicos de aderência ao ecossistema;
-- modelo conceitual de aprendizagem da inteligência artificial;
+- modelo conceitual da Inteligência do Ecossistema Guivos;
+- Grafo Global da Guivos como modelo conceitual de conexões;
+- GAI-002 — Manifesto da Inteligência do Ecossistema Guivos;
 - governança documental e arquitetural;
 - Guia Oficial da Guivos.
 
@@ -484,7 +657,9 @@ A monetização deverá sustentar o ecossistema, financiar sua evolução e ampl
 - Guivos Economic Model;
 - modelos econômicos e operacionais detalhados;
 - preços, planos e critérios específicos de diferenciação;
-- capacidades técnicas de dados e inteligência artificial;
+- ontologia formal do Grafo Global;
+- modelo lógico e físico do grafo;
+- capacidades técnicas de dados e inteligência;
 - produtos e integrações;
 - participação operacional de grupos e organizações;
 - programas de recompensas e fidelização;
@@ -507,6 +682,22 @@ Não. A Guivos possui o **Guivos Mall**, seu produto comercial, mas o ecossistem
 
 É o shopping da Guivos, reunindo produtos, serviços e outros ativos de diferentes fornecedores com curadoria e relação com as jornadas do ecossistema.
 
+## O que é a Inteligência do Ecossistema Guivos?
+
+É a capacidade de interpretar dados, conhecimento, contexto, conexões, jornadas, experiências e evidências para apoiar decisões e revelar oportunidades relevantes.
+
+## Ela é apenas um chatbot?
+
+Não. Interfaces de conversa podem existir, mas a inteligência é mais ampla e trabalha sobre o Grafo Global da Guivos.
+
+## O que é o Grafo Global da Guivos?
+
+É o modelo conceitual que conecta participantes, organizações, coletivos, objetivos, oportunidades, experiências, conhecimentos, relacionamentos e evidências ao longo do tempo.
+
+## O grafo torna a Guivos impossível de copiar?
+
+Nenhuma empresa é impossível de copiar. Entretanto, funcionalidades isoladas são mais fáceis de reproduzir do que um ecossistema vivo de relações, conhecimento, experiências e confiança acumulados ao longo do tempo.
+
 ## Os planos gratuitos impedirão algumas pessoas de evoluir?
 
 Não. A diferença entre planos gratuitos e pagos deverá estar na velocidade, profundidade e amplitude dos recursos. O pagamento pode acelerar uma jornada, mas não deve ser condição para que uma pessoa possa descobrir oportunidades e evoluir.
@@ -523,7 +714,7 @@ Não. A participação depende de legalidade, qualidade, transparência e aderê
 
 Não fazem parte da proposta da Guivos.
 
-## A IA decidirá o que devo fazer?
+## A Inteligência do Ecossistema decidirá o que devo fazer?
 
 Não. Ela poderá organizar conhecimento e recomendar possibilidades. A decisão permanece com a pessoa.
 
@@ -545,6 +736,8 @@ Não devem ser apresentadas como disponíveis ou definitivas sem nova validaçã
 - métricas de usuários, receita ou impacto;
 - detalhes de infraestrutura e segurança;
 - modelos técnicos de inteligência artificial;
+- tecnologia específica do grafo;
+- ontologia e modelo lógico definitivos;
 - estrutura completa do Guivos Economic Model;
 - disponibilidade pública de cada produto;
 - critérios finais de cadastro, curadoria, moderação, suporte e atendimento;
@@ -562,7 +755,7 @@ Ela pretende reduzir a fragmentação das oportunidades e conectar quem busca ev
 
 A jornada não possui um encerramento definitivo. Cada experiência pode gerar um Novo Momento Atual e abrir novas possibilidades.
 
-A tecnologia e a inteligência artificial apoiarão esse processo com dados, conhecimento, estudos, evidências e contexto, mas a autonomia continuará pertencendo às pessoas e organizações.
+A Inteligência do Ecossistema Guivos apoiará esse processo com dados, conhecimento, estudos, evidências, contexto e conexões organizadas no Grafo Global da Guivos, mas a autonomia continuará pertencendo às pessoas e organizações.
 
 O modelo econômico deverá sustentar e acelerar esse propósito, sem impedir que participantes de planos gratuitos possam descobrir oportunidades e evoluir.
 
@@ -578,9 +771,10 @@ O modelo econômico deverá sustentar e acelerar esse propósito, sem impedir qu
 | 2.2.0 | 03/07/2026 | Inclusão do Ciclo Contínuo de Evolução da Guivos |
 | 3.0.0 | 03/07/2026 | Consolidação pública da Foundation, fragmentação das oportunidades, papéis dos participantes, princípios permanentes e modelo de aprendizagem da IA |
 | 3.1.0 | 04/07/2026 | Guivos Mall, exemplo da promoção de pizza, Guivos Economic Model e princípio de aceleração sem bloqueio nos planos pagos |
+| 3.2.0 | 04/07/2026 | Inteligência do Ecossistema Guivos, Grafo Global, diagramas, aprendizagem ampliada e patrimônio cumulativo difícil de reproduzir |
 
 # Regra de atualização contínua
 
-Este documento deverá ser revisto quando houver alteração relevante em identidade, propósito, missão, visão, evolução, jornada, Momento Atual, produtos, nomenclaturas, critérios de participação, inteligência artificial, dados, privacidade, modelo econômico, planos, monetização, impacto, expansão, baselines ou decisões arquiteturais.
+Este documento deverá ser revisto quando houver alteração relevante em identidade, propósito, missão, visão, evolução, jornada, Momento Atual, produtos, nomenclaturas, critérios de participação, inteligência, Grafo Global, dados, privacidade, modelo econômico, planos, monetização, impacto, expansão, baselines ou decisões arquiteturais.
 
 Toda atualização deverá preservar linguagem acessível, partir de exemplos concretos, substituir informações superadas e distinguir claramente o que está consolidado, em validação, em desenvolvimento ou planejado.
