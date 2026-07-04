@@ -2,6 +2,16 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.26.0 — Exemplos Práticos no Guia Oficial
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `3.3.0`.
+- Inclusão de exemplos práticos sobre fragmentação das oportunidades, definição da Guivos, propósito, evolução, Momento Atual, jornada e Ciclo Contínuo.
+- Inclusão de exemplos sobre ofertantes de oportunidades, fortalecimento de grupos existentes, papéis dos participantes e construção progressiva do contexto.
+- Inclusão de exemplos específicos para Guivos Journey, Guivos Mall, Guivos Travel, Guivos Business, Guivos Media, Guivos Intelligence e Guivos Ads.
+- Inclusão de exemplos adicionais sobre Grafo Global, recomendações contextuais, privacidade e planos gratuitos e pagos.
+- Preservação integral das decisões anteriores sobre Guivos Mall, Guivos Economic Model, Inteligência do Ecossistema Guivos e Grafo Global.
+- Atualização da página inicial do GKR e do Knowledge Board para refletir a versão `3.3.0` do Guia.
+
 ## 0.25.0 — Inteligência do Ecossistema Guivos e Grafo Global
 
 - Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `3.2.0`.
