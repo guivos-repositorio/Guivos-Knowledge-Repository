@@ -11,7 +11,10 @@ Ele preserva fundamentos, arquiteturas, modelos, decisões, pesquisas, validaç�
 - `A2-R02-FMEM-001` pronta para execução;
 - Guivos Mall consolidado como produto oficial;
 - Guivos Economic Model criado como domínio planejado;
-- Guia Oficial da Guivos na versão 3.1.0.
+- Guia Oficial da Guivos na versão 3.2.0;
+- Inteligência do Ecossistema Guivos consolidada;
+- Grafo Global da Guivos consolidado como modelo conceitual de conexões;
+- `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos` consolidado.
 
 ## Acesso rápido
 
@@ -21,6 +24,8 @@ Ele preserva fundamentos, arquiteturas, modelos, decisões, pesquisas, validaç�
 - [Architectural Milestones](project/architectural-milestones.md)
 - [Fundamental Model Evidence Matrix](validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
 - [Arquitetura de Produtos](product-architecture/index.md)
+- [GAI-001 — AI Knowledge Model](intelligence-architecture/knowledge-model.md)
+- [GAI-002 — Manifesto da Inteligência do Ecossistema](intelligence-architecture/manifesto.md)
 - [Guivos Economic Model](economic-model/index.md)
 - [Glossário Canônico](glossary.md)
 
