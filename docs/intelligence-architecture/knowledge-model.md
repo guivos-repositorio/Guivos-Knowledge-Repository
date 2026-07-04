@@ -2,30 +2,32 @@
 id: GAI-001
 title: Guivos Artificial Intelligence Knowledge Model
 status: consolidated
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-07-03
+last_updated: 2026-07-04
 domain: Intelligence Architecture
 stability: Core
 related_products:
   - GPA-006
+related_models:
+  - GAI-002
 ---
 
-# Guivos Artificial Intelligence Knowledge Model
+# GAI-001 — Guivos Artificial Intelligence Knowledge Model
 
 ## 1. Finalidade
 
-O Guivos Artificial Intelligence Knowledge Model define como a inteligência artificial da Guivos deverá aprender, organizar conhecimento, interpretar contexto e produzir recomendações úteis para pessoas e organizações.
+Este modelo define como a **Inteligência do Ecossistema Guivos** deverá aprender, organizar conhecimento, interpretar contexto e produzir recomendações úteis para pessoas e organizações.
 
-A IA não existe para decidir a vida do participante. Seu papel é ampliar compreensão, reduzir a fragmentação das oportunidades e apoiar decisões mais conscientes.
+A inteligência artificial é um meio técnico dentro dessa inteligência mais ampla. Ela não existe para decidir a vida do participante, mas para ampliar compreensão, reduzir a fragmentação das oportunidades e apoiar decisões mais conscientes.
 
 ## 2. Fontes de aprendizagem
 
-A inteligência da Guivos deverá aprender a partir de quatro fontes complementares.
+A Inteligência do Ecossistema Guivos deverá aprender a partir de quatro fontes complementares.
 
 ### 2.1 Conhecimento científico, técnico e institucional
 
-A Guivos poderá utilizar conhecimento produzido por fontes confiáveis, como:
+A Guivos poderá utilizar conhecimento produzido por:
 
 - universidades;
 - instituições de pesquisa;
@@ -37,13 +39,13 @@ A Guivos poderá utilizar conhecimento produzido por fontes confiáveis, como:
 - normas técnicas;
 - bases públicas e institucionais;
 - especialistas qualificados;
-- evidências consolidadas em diferentes áreas do conhecimento.
+- evidências consolidadas.
 
-A existência de uma publicação não garante sua incorporação automática. As fontes deverão ser avaliadas quanto a qualidade, atualidade, contexto, limites, possíveis conflitos e aplicabilidade.
+A existência de uma publicação não garante incorporação automática. As fontes deverão ser avaliadas quanto a qualidade, atualidade, contexto, limites, conflitos e aplicabilidade.
 
 ### 2.2 Conhecimento produzido pelo ecossistema
 
-A Guivos poderá aprender com experiências, resultados e padrões produzidos dentro do próprio ecossistema, desde que sejam respeitados:
+A Guivos poderá aprender com experiências, resultados e padrões produzidos dentro do próprio ecossistema, respeitando:
 
 - privacidade;
 - consentimento;
@@ -53,54 +55,41 @@ A Guivos poderá aprender com experiências, resultados e padrões produzidos de
 - distinção entre correlação e causalidade;
 - revisão de possíveis vieses.
 
-Esse aprendizado poderá ajudar a identificar oportunidades pouco conhecidas, jornadas recorrentes, necessidades de comunidades e conexões relevantes entre organizações.
-
 ### 2.3 Contexto e movimentação do participante
 
-Com autorização e transparência, a IA poderá aprender com a movimentação da própria pessoa ao longo do tempo.
-
-Essa movimentação pode incluir:
+Com autorização e transparência, poderá aprender com:
 
 - objetivos informados;
 - mudanças de interesse;
 - oportunidades visualizadas;
 - experiências realizadas;
 - conteúdos consumidos;
-- grupos e comunidades dos quais participa;
+- grupos e comunidades;
 - habilidades desenvolvidas;
 - preferências confirmadas ou rejeitadas;
-- alterações de disponibilidade, localização ou contexto;
+- mudanças de disponibilidade, localização ou contexto;
 - avaliações e evidências de progresso.
 
-A movimentação não deve ser interpretada como verdade absoluta. Ela fornece sinais contextuais que precisam ser combinados com informações declaradas, evidências e liberdade de escolha.
+A movimentação fornece sinais contextuais, não verdades absolutas.
 
 ### 2.4 Aprendizado coletivo e contextual
 
 A Guivos poderá identificar padrões agregados entre jornadas semelhantes sem reduzir pessoas a perfis rígidos.
 
-Esse aprendizado poderá apoiar:
-
-- identificação de oportunidades relevantes;
-- melhoria de recomendações;
-- descoberta de lacunas de oferta;
-- compreensão de necessidades locais;
-- análise de resultados recorrentes;
-- criação de indicadores e tendências;
-- apoio a organizações parceiras.
+Esse aprendizado poderá apoiar identificação de oportunidades relevantes, melhoria de recomendações, descoberta de lacunas de oferta, compreensão de necessidades locais, análise de resultados recorrentes e criação de indicadores e tendências.
 
 ## 3. Modelo de transformação do conhecimento
-
-A Guivos adota uma estrutura inspirada no fluxo Dados → Informação → Conhecimento → Inteligência Contextual → Recomendação.
 
 ```mermaid
 flowchart TD
     A[Dados autorizados e evidências]
     B[Informação organizada]
     C[Conhecimento validado]
-    D[Inteligência contextual]
-    E[Recomendação explicável]
-    F[Decisão do participante]
-    G[Experiência e novos resultados]
+    D[Grafo Global e contexto]
+    E[Inteligência contextual]
+    F[Recomendação explicável]
+    G[Decisão do participante]
+    H[Experiência e novos resultados]
 
     A --> B
     B --> C
@@ -108,32 +97,38 @@ flowchart TD
     D --> E
     E --> F
     F --> G
-    G --> A
+    G --> H
+    H --> A
+    H --> D
 ```
 
 ### Dados
 
-São registros brutos, sinais, interações, informações declaradas, evidências e fontes disponíveis.
+Registros brutos, sinais, interações, informações declaradas, evidências e fontes disponíveis.
 
 ### Informação
 
-É o dado organizado com significado, origem, contexto e finalidade.
+Dado organizado com significado, origem, contexto e finalidade.
 
 ### Conhecimento
 
-É a informação interpretada à luz de evidências, estudos, experiência e relações conhecidas.
+Informação interpretada à luz de evidências, estudos, experiência e relações conhecidas.
+
+### Grafo Global e contexto
+
+Estrutura conceitual que conecta participantes, organizações, coletivos, objetivos, oportunidades, experiências, conhecimentos, relacionamentos e evidências.
 
 ### Inteligência contextual
 
-É a capacidade de relacionar conhecimento com o momento atual, objetivos, restrições e preferências do participante.
+Capacidade de relacionar conhecimento e conexões com o Momento Atual, objetivos, restrições e preferências do participante.
 
 ### Recomendação
 
-É uma possibilidade apresentada com clareza, justificativa, limites e liberdade de aceitação ou rejeição.
+Possibilidade apresentada com justificativa, limites e liberdade de aceitação ou rejeição.
 
 ## 4. Relação com o Ciclo Contínuo de Evolução
 
-A IA acompanha o Ciclo Contínuo de Evolução sem controlá-lo.
+A Inteligência do Ecossistema acompanha o ciclo sem controlá-lo.
 
 ```mermaid
 flowchart LR
@@ -148,18 +143,26 @@ flowchart LR
     A --> B --> C --> D --> E --> F --> G --> A
 ```
 
-A IA poderá apoiar principalmente:
-
-- compreensão do Momento Atual;
-- organização de objetivos;
-- identificação de possibilidades de Próximo Passo;
-- encontro de Oportunidades Compatíveis;
-- interpretação de evidências produzidas pela experiência;
-- atualização contextual do Novo Momento Atual.
+Ela poderá apoiar compreensão do Momento Atual, organização de objetivos, identificação de Próximos Passos, encontro de oportunidades, interpretação de evidências e atualização contextual.
 
 A decisão final permanece com o participante.
 
-## 5. Princípios permanentes
+## 5. O Grafo Global da Guivos
+
+O Grafo Global da Guivos organiza relações entre entidades e eventos do ecossistema ao longo do tempo.
+
+Ele permite que a inteligência compreenda não apenas conteúdos isolados, mas também:
+
+- quem se relaciona com quem;
+- em qual contexto;
+- por meio de qual oportunidade;
+- qual experiência ocorreu;
+- quais resultados e evidências surgiram;
+- como o Momento Atual foi alterado.
+
+O grafo representa um patrimônio cumulativo. Sua ontologia formal, modelo lógico, tecnologia e controles técnicos ainda dependem de detalhamento e validação.
+
+## 6. Princípios permanentes
 
 ### Evidência antes de afirmação
 
@@ -171,15 +174,15 @@ Uma recomendação não deve ser apresentada como universal quando depende de si
 
 ### Atualização contínua
 
-Conhecimento, estudos, normas e condições do participante mudam. A inteligência deve ser atualizada e revisável.
+Conhecimento, estudos, normas, relações e condições do participante mudam. A inteligência deve ser atualizada e revisável.
 
 ### Explicabilidade proporcional
 
-Quanto maior o impacto de uma recomendação, maior deve ser a clareza sobre sua origem, lógica, limites e incertezas.
+Quanto maior o impacto de uma recomendação, maior deve ser a clareza sobre origem, lógica, relações consideradas, limites e incertezas.
 
 ### Autonomia humana
 
-A IA oferece apoio. Não impõe destino, objetivo, crença, tratamento, carreira ou decisão.
+A Inteligência do Ecossistema oferece apoio. Não impõe destino, objetivo, crença, tratamento, carreira ou decisão.
 
 ### Privacidade e finalidade
 
@@ -187,46 +190,39 @@ Dados devem ser utilizados apenas para finalidades legítimas, informadas e comp
 
 ### Não substituição de especialistas
 
-A IA não substitui profissionais qualificados nem instituições responsáveis por decisões especializadas.
+A inteligência não substitui profissionais qualificados nem instituições responsáveis por decisões especializadas.
 
 ### Controle de vieses
 
-Modelos, dados, fontes e resultados devem ser avaliados para reduzir discriminação, distorção e generalizações indevidas.
+Modelos, dados, fontes, relações e resultados devem ser avaliados para reduzir discriminação, distorção e generalizações indevidas.
 
-## 6. O que a IA não deverá fazer
+## 7. O que não deverá fazer
 
-A inteligência artificial da Guivos não deverá:
+A Inteligência do Ecossistema Guivos não deverá:
 
-- definir o que uma pessoa deve querer para sua vida;
+- definir o que uma pessoa deve querer;
 - impor objetivos ou caminhos;
 - manipular escolhas;
 - tratar probabilidades como certezas;
 - utilizar uma única fonte como verdade universal;
-- substituir médicos, psicólogos, educadores, advogados, consultores financeiros ou outros profissionais especializados;
+- substituir profissionais especializados;
 - inferir atributos sensíveis sem base legítima;
 - expor dados pessoais ou institucionais;
 - aprender automaticamente com qualquer conteúdo sem avaliação de qualidade;
-- otimizar apenas engajamento, venda ou permanência na plataforma em detrimento do participante.
+- ocultar oportunidades para favorecer patrocinadores;
+- otimizar apenas engajamento, venda ou permanência em prejuízo do participante.
 
-## 7. Exemplo prático
+## 8. Exemplo prático
 
 Uma pessoa informa que deseja aumentar sua renda e mudar de área profissional.
 
-A IA poderá combinar:
+A Inteligência do Ecossistema poderá combinar informações declaradas, experiência, formação, disponibilidade, localização, vagas, bolsas, cursos, grupos, estudos sobre transição de carreira, relações presentes no grafo e resultados agregados de jornadas semelhantes.
 
-- informações declaradas pela pessoa;
-- experiência e formação já registradas;
-- disponibilidade e localização;
-- vagas, bolsas, cursos e grupos existentes;
-- estudos sobre transição de carreira;
-- resultados agregados de jornadas semelhantes;
-- preferências demonstradas ao longo do uso.
+Poderá apresentar possibilidades como formação introdutória, grupo de estudos, mentoria ou vaga compatível.
 
-Com isso, poderá apresentar possibilidades como uma formação introdutória, um grupo de estudos, uma mentoria ou uma vaga compatível.
+A recomendação deverá indicar por que parece relevante, quais informações e relações foram consideradas e quais limitações existem.
 
-A recomendação deverá indicar por que parece relevante, quais informações foram consideradas e quais limitações existem. A pessoa poderá aceitar, rejeitar ou corrigir a sugestão.
-
-## 8. Governança do conhecimento
+## 9. Governança do conhecimento
 
 A evolução deste modelo deverá incluir mecanismos para:
 
@@ -239,25 +235,33 @@ A evolução deste modelo deverá incluir mecanismos para:
 - auditar recomendações de maior impacto;
 - permitir correção pelo participante;
 - separar conhecimento público, privado, agregado e restrito;
-- documentar mudanças relevantes nos modelos.
+- documentar mudanças relevantes;
+- governar relações e acessos no grafo.
 
-## 9. Estado de maturidade
+## 10. Relação com GAI-002
 
-Estão consolidados neste documento:
+`GAI-001` define como dados, informação, conhecimento, grafo, contexto e evidências se transformam em inteligência e recomendação.
 
-- as fontes superiores de aprendizagem;
-- a relação entre dados, conhecimento, inteligência contextual e recomendação;
-- a preservação da autonomia;
-- o aprendizado contínuo com estudos, evidências, ecossistema e movimentação autorizada do participante;
-- os limites superiores de atuação da IA.
+`GAI-002 — Manifesto da Inteligência do Ecossistema Guivos` define por que essa inteligência existe, quais princípios a orientam e quais limites não deve ultrapassar.
+
+## 11. Estado de maturidade
+
+Estão consolidados:
+
+- fontes superiores de aprendizagem;
+- transformação de dados em conhecimento e inteligência contextual;
+- Grafo Global como modelo conceitual de conexões;
+- preservação da autonomia;
+- aprendizado contínuo;
+- limites superiores de atuação.
 
 Ainda dependem de detalhamento, validação e implementação:
 
 - seleção técnica de modelos;
-- arquitetura de dados;
-- critérios quantitativos de qualidade de fontes;
+- ontologia formal;
+- arquitetura de dados e grafo;
+- critérios quantitativos de qualidade;
 - mecanismos de consentimento;
 - auditoria algorítmica;
 - explicabilidade por tipo de recomendação;
-- atualização de bases de conhecimento;
-- políticas operacionais específicas por domínio.
+- políticas operacionais por domínio.
