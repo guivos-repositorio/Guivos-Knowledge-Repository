@@ -2,9 +2,9 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-07-03
+last_updated: 2026-07-04
 ---
 
 # Guivos Business
@@ -61,15 +61,7 @@ Seu papel abrange desenvolvimento de pessoas, relacionamento com clientes, ativa
 
 Guivos Business não deve operar ações, campanhas, recompensas ou parcerias apenas porque podem gerar receita.
 
-Toda solução deve possuir relação clara com pelo menos um dos seguintes objetivos:
-
-- desenvolvimento de pessoas;
-- fortalecimento de relacionamentos;
-- engajamento legítimo;
-- geração de experiências relevantes;
-- apoio a jornadas de evolução;
-- criação de valor para participantes e organizações;
-- impacto social ou comunitário coerente com o propósito da Guivos.
+Toda solução deve possuir relação clara com desenvolvimento de pessoas, fortalecimento de relacionamentos, engajamento legítimo, experiências relevantes, jornadas de evolução, valor para participantes ou impacto social coerente com o propósito da Guivos.
 
 ## Limites
 
@@ -82,7 +74,7 @@ Não deve ser tratado como um CRM genérico, uma plataforma de publicidade irres
 ## Relações principais
 
 - pode estruturar jornadas por meio do Guivos Journey;
-- pode contratar ou distribuir ofertas do Guivos Marketplace e do Guivos Travel;
+- pode contratar ou distribuir ofertas do Guivos Mall e do Guivos Travel;
 - utiliza conteúdos do Guivos Media;
 - utiliza Guivos Intelligence para análises, indicadores e recomendações;
 - pode operar campanhas e ativações por meio do Guivos Ads;
@@ -96,7 +88,7 @@ Uma empresa pode oferecer benefícios, conteúdos, grupos esportivos, bolsas, ex
 
 ### Clientes
 
-Uma marca pode criar um programa de recompensas que reconheça relacionamento, participação em experiências, recomendação de novos clientes ou engajamento com iniciativas coerentes com seu posicionamento.
+Uma marca pode criar um programa de recompensas ligado ao relacionamento, à participação em experiências ou ao engajamento com iniciativas coerentes com seu posicionamento.
 
 ### Captação e fidelização
 
