@@ -2,7 +2,7 @@
 id: GKR-GLOSSARY-001
 title: Glossário Canônico da Guivos
 status: consolidated
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -25,7 +25,7 @@ Categorias arquiteturais reconhecidas:
 
 **Uso oficial:** termo central da arquitetura.
 
-**Não confundir com:** usuário, cliente, membro ou perfil. Esses termos podem descrever relações específicas, mas não substituem Participante.
+**Não confundir com:** usuário, cliente, membro ou perfil.
 
 ## Pessoa
 
@@ -71,13 +71,25 @@ Produto responsável pelas soluções da Guivos para empresas e demais organiza�
 
 Produto responsável pela produção, organização e distribuição de conteúdo editorial e institucional da Guivos.
 
-Substitui “Guivos Podcast” como nome de produto. Podcast passa a ser um formato editorial dentro de Guivos Media.
+Substitui “Guivos Podcast” como nome de produto.
 
 ## Guivos Intelligence
 
-Produto responsável por transformar dados, contexto e conhecimento do ecossistema em inteligência aplicada.
+Produto responsável por entregar a **Inteligência do Ecossistema Guivos**.
 
 Substitui “Guivos Insights” como nome de produto.
+
+## Inteligência do Ecossistema Guivos
+
+Expressão conceitual e pública para a inteligência que interpreta dados, conhecimento, contexto, conexões, jornadas, experiências e evidências de todo o ecossistema.
+
+Não é apenas um chatbot, modelo de linguagem ou mecanismo de recomendação isolado.
+
+## Grafo Global da Guivos
+
+Modelo conceitual que organiza participantes, organizações, coletivos, objetivos, Momentos Atuais, Próximos Passos, oportunidades, experiências, conhecimentos, relacionamentos e evidências por meio de conexões contextuais e evolutivas.
+
+O grafo representa um patrimônio cumulativo do ecossistema. Sua ontologia formal, modelo lógico e implementação técnica ainda dependem de detalhamento e validação.
 
 ## Guivos Ads
 
@@ -145,13 +157,13 @@ Vínculo reconhecido entre dois ou mais participantes, formado ou fortalecido po
 
 Conjunto organizado de padrões, aprendizados e evidências produzidos pelas experiências vividas pelos participantes.
 
-Dados são registros. Conhecimento é compreensão. Inteligência Artificial é interpretação aplicada.
+Dados são registros. Conhecimento é compreensão. Inteligência é interpretação aplicada.
 
 ## Inteligência Artificial
 
-Camada tecnológica que interpreta contexto e conhecimento para apoiar decisões, identificar Próximos Passos e encontrar Oportunidades compatíveis.
+Conjunto de tecnologias que pode apoiar interpretação, recomendação, análise e automação.
 
-A IA não substitui a autonomia do participante.
+Na Guivos, a inteligência artificial é um meio técnico dentro da Inteligência do Ecossistema Guivos e não substitui a autonomia do participante.
 
 ## Discovery Mode
 
