@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.27.0 — Guivos Knowledge Architecture Established
+
+- Aprovação de `ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture`.
+- Criação de `GEF-001 — Guivos Evolution Framework`, versão `1.0.0`.
+- Início oficial de `GE-2 — Knowledge`.
+- Registro de `M4 — Knowledge Architecture Established`.
+- Reconhecimento da `Guivos Knowledge Architecture (GKA)` como arquitetura de primeira classe dentro da GEA.
+- Atualização de `GEA-000 — Guivos Enterprise Architecture` para a versão `1.4.0`.
+- Formalização do conhecimento institucional como ativo estratégico permanente da Guivos.
+- Formalização do princípio: nenhuma arquitetura permanente deverá existir sem conhecimento consolidado que a sustente, e nenhum conhecimento consolidado deverá existir sem evidências rastreáveis que o fundamentem.
+- Redefinição da Canon como conhecimento institucional vigente mais confiável, estável e revisável.
+- Registro do fluxo realidade observada → evidências → conhecimento consolidado → Canon → arquiteturas → capacidades → produtos → implementações → novas evidências.
+- Atualização do Roadmap Arquitetural para `4.2.0`.
+- Atualização do Knowledge Board para `4.2.0`.
+- Atualização dos Architectural Milestones para `4.0.0`.
+- Atualização do Glossário Canônico para `1.4.0`.
+- Atualização do README e da página inicial do GKR.
+- Inclusão do GEF e da ADR-006 na navegação do MkDocs.
+- Preparação institucional para a fundação documental da GKA e posterior retomada da A2-R02.
+
 ## 0.26.0 — Exemplos Práticos no Guia Oficial
 
 - Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `3.3.0`.
