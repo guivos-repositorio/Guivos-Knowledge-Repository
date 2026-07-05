@@ -1,7 +1,7 @@
 ---
 title: Architectural Milestones
 status: active
-version: 3.0.0
+version: 4.0.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -18,8 +18,9 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 | A1 — Institutional Architecture Complete | Completed | Consolidar macroestrutura, permanência e governança |
 | M3 — Foundation Architecture Frozen | Completed | Congelar a primeira arquitetura integralmente revisada |
 | M3.1 — Fundamental Discovery Method Frozen | Completed | Congelar o método de execução da FMEM antes da extração |
+| M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA como arquitetura de primeira classe e iniciar GE-2 |
 | A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
-| M4 — Fundamental Model Frozen | Planned | Congelar o Modelo Fundamental após revisão completa |
+| K1 — Fundamental Knowledge Frozen | Planned | Congelar o conhecimento fundamental após A2-R02 |
 | A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
 | A4 — Platform Engineering | Planned | Materializar arquiteturas de referência |
 | A5 — Canon 1.0 | Planned | Consolidar a primeira Canon integrada |
@@ -59,9 +60,30 @@ A metodologia da `A2-R02 — Fundamental Model Review` foi definida e congelada 
 - `A2-R02-FMEM-001` criado em estado `execution-ready`;
 - nenhuma evidência, hipótese ou alteração canônica registrada antecipadamente.
 
+## M4 — Knowledge Architecture Established
+
+**Estado:** Completed em 04/07/2026.
+
+### Critério de conclusão
+
+A Guivos reconheceu formalmente a `Guivos Knowledge Architecture (GKA)` como arquitetura de primeira classe por meio do `ADR-006`.
+
+### Resultados
+
+- `ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture` aprovado;
+- `GEF-001 — Guivos Evolution Framework` criado;
+- `GE-2 — Knowledge` iniciada;
+- GEA atualizada para reconhecer a GKA;
+- conhecimento institucional reconhecido como ativo estratégico permanente;
+- Canon redefinida como conhecimento institucional vigente mais confiável, estável e revisável;
+- fluxo realidade → evidências → conhecimento → Canon → arquitetura → produtos formalizado;
+- regra de que arquiteturas permanentes devem derivar de conhecimento consolidado formalizada.
+
 ### Efeito
 
-A revisão do Modelo Fundamental pode iniciar sua execução sobre o corpus oficial sem novas discussões metodológicas intermediárias.
+O GKR inicia sua segunda grande era: a produção sistemática de conhecimento institucional.
+
+A criação dos documentos internos da GKA ocorrerá em etapa posterior.
 
 ## A2 — Functional Architecture Discovery
 
@@ -85,7 +107,7 @@ A revisão do Modelo Fundamental pode iniciar sua execução sobre o corpus ofic
 - o catálogo deve representar o menor conjunto suficiente;
 - hipóteses permanecem fora da Canon até validação.
 
-## M4 — Fundamental Model Frozen
+## K1 — Fundamental Knowledge Frozen
 
 **Estado:** Planned.
 
@@ -94,10 +116,11 @@ Critérios previstos:
 - corpus integralmente analisado;
 - FMEM concluída;
 - Canonical Consolidation concluída;
+- princípios fundamentais rastreados às evidências;
 - readiness demonstrado;
 - validação formal registrada;
 - auditoria concluída;
-- baseline `A2-B4` congelada.
+- baseline de conhecimento congelada.
 
 ## Guivos Economic Model
 
