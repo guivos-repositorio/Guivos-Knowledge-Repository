@@ -60,6 +60,8 @@ nav:
   - Guia Oficial da Guivos:
       - Visão Geral: public/index.md
       - Guia Completo: public/guia-oficial-da-guivos.md
+  - Guivos Evolution Framework:
+      - GEF-001 — Visão Geral: evolution-framework/index.md
   - Research:
       - Visão Geral: research/index.md
       - RP-001 — Ecosystem Research Program:
@@ -129,6 +131,7 @@ nav:
       - ADR-003 — Architectural Ownership: adr/ADR-003-architectural-ownership.md
       - ADR-004 — Architectural Dependency Order: adr/ADR-004-architectural-dependency-order.md
       - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
+      - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
       - Baseline M1: project/BASELINE-M1.md
