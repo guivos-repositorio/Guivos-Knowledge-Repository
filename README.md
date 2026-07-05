@@ -2,12 +2,17 @@
 
 O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade institucional, reunindo visão, fundamentos, arquiteturas, modelos, princípios, decisões e patrimônio intelectual.
 
+A partir da GE-2, o GKR também passa a ser reconhecido como o sistema oficial de descoberta, consolidação, governança e evolução do conhecimento da Guivos.
+
 ## Status atual
 
+- **Era vigente:** GE-2 — Knowledge
+- **Marco vigente:** M4 — Knowledge Architecture Established
 - **Baseline vigente da Foundation:** A2-B3 — Frozen
 - **Fase ativa:** A2 — Functional Architecture Discovery
 - **Revisão ativa:** A2-R02 — Fundamental Model Review
 - **Artefato ativo:** A2-R02-FMEM-001 — Execution Ready
+- **Arquitetura reconhecida:** Guivos Knowledge Architecture (GKA)
 - **Entregável de referência:** GCCM-001 — Discovery
 - **Produto comercial oficial:** Guivos Mall
 - **Domínio planejado:** Guivos Economic Model
@@ -17,9 +22,11 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 Consulte:
 
 - [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
+- [Guivos Evolution Framework](docs/evolution-framework/index.md)
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
+- [ADR-006 — Guivos Knowledge Architecture](docs/adr/ADR-006-guivos-knowledge-architecture.md)
 - [Fundamental Model Evidence Matrix](docs/validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
 - [GAI-001 — AI Knowledge Model](docs/intelligence-architecture/knowledge-model.md)
 - [GAI-002 — Manifesto da Inteligência do Ecossistema Guivos](docs/intelligence-architecture/manifesto.md)
@@ -37,6 +44,8 @@ Nenhuma evidência será criada por memória ou inferência. Toda conclusão dev
 
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
 
+> Nenhuma arquitetura permanente deverá existir sem conhecimento consolidado que a sustente, e nenhum conhecimento consolidado deverá existir sem evidências rastreáveis que o fundamentem.
+
 > Planos pagos podem acelerar e ampliar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
 
 > A Inteligência do Ecossistema Guivos utiliza inteligência artificial como meio técnico e organiza conexões, contexto e conhecimento por meio do Grafo Global da Guivos.
@@ -44,6 +53,7 @@ Nenhuma evidência será criada por memória ou inferência. Toda conclusão dev
 ## Arquiteturas e domínios principais
 
 - Foundation Architecture;
+- Guivos Knowledge Architecture;
 - Ecosystem Architecture e GEB;
 - Product Architecture;
 - Business Architecture;
@@ -67,6 +77,7 @@ Nenhuma evidência será criada por memória ou inferência. Toda conclusão dev
 ## Estrutura principal
 
 - `docs/public/` — documentação pública e Guia Oficial.
+- `docs/evolution-framework/` — eras de evolução institucional da Guivos.
 - `docs/research/` — programas, protocolos e evidências de pesquisa.
 - `docs/enterprise-architecture/` — visão geral da GEA.
 - `docs/reference-architecture/` — modelos de referência e GCCM.
