@@ -2,7 +2,7 @@
 id: GKR-GLOSSARY-001
 title: Glossário Canônico da Guivos
 status: consolidated
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -101,6 +101,30 @@ Domínio planejado do GKR responsável por descrever princípios econômicos, fo
 
 Seu princípio inicial estabelece que planos pagos podem acelerar, ampliar e personalizar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
 
+## Guivos Knowledge Architecture
+
+Arquitetura responsável por governar como o conhecimento institucional da Guivos é descoberto, estruturado, validado, consolidado, promovido à Canon, revisado e evoluído.
+
+A GKA não determina o que é verdadeiro. Ela governa o processo de produção, validação e evolução do conhecimento institucional.
+
+## Guivos Evolution Framework
+
+Estrutura que registra as grandes eras de maturidade institucional da Guivos e explica como a organização evolui ao longo de sua história.
+
+## GE-1 — Foundation & Architecture
+
+Primeira era de evolução institucional da Guivos, dedicada à estruturação das fundações, arquiteturas, produtos, guia público e Canon inicial.
+
+## GE-2 — Knowledge
+
+Segunda era de evolução institucional da Guivos, dedicada à produção sistemática de conhecimento institucional por meio da Guivos Knowledge Architecture.
+
+## Canon
+
+Conjunto oficial de conhecimentos institucionais atualmente mais confiáveis para fundamentar decisões permanentes da Guivos, derivados de evidências rastreáveis e aprovados por processos formais de governança.
+
+A Canon é estável, mas revisável quando evidências consistentes demonstrarem que deixou de representar adequadamente a realidade observada.
+
 ## Identidade
 
 Representa quem é o participante dentro do ecossistema.
@@ -189,9 +213,13 @@ Cliente é uma relação comercial, não uma categoria de participante.
 
 Guivos Enterprise Architecture. Conjunto integrado das arquiteturas oficiais da Guivos.
 
+## GKA
+
+Guivos Knowledge Architecture.
+
 ## GKR
 
-Guivos Knowledge Repository. Fonte oficial e versionada do patrimônio intelectual da Guivos.
+Guivos Knowledge Repository. Sistema oficial de descoberta, consolidação, governança e evolução do conhecimento da Guivos.
 
 ## GEB
 
