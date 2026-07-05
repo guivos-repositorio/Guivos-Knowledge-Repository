@@ -2,13 +2,14 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.3.0
+version: 1.4.0
 owner: Guivos
-last_updated: 2026-06-30
+last_updated: 2026-07-04
 related_adrs:
   - ADR-003
   - ADR-004
   - ADR-005
+  - ADR-006
 related_validations:
   - AV-001
 ---
@@ -25,7 +26,7 @@ O Guivos Knowledge Repository (GKR) é a fonte oficial em que a GEA é documenta
 
 ## Missão
 
-Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, validada por evidências e orientada à tomada de decisões estratégicas de longo prazo.
+Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, conhecimento consolidado, validação por evidências e decisões estratégicas de longo prazo.
 
 ## Arquitetura de maturidade
 
@@ -39,7 +40,7 @@ A execução ocorre progressivamente por meio de arquiteturas de referência, pr
 
 A GEA classifica seus ativos por dois eixos complementares:
 
-1. **Domínio arquitetural:** Foundation, Ecosystem, Product, Business, Data & Intelligence, Technology, Governance e Knowledge.
+1. **Domínio arquitetural:** Foundation, Knowledge, Ecosystem, Product, Business, Data & Intelligence, Technology e Governance.
 2. **Permanência:** Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.
 
 O domínio define a responsabilidade conceitual. A camada de permanência define horizonte, velocidade de mudança e governança.
@@ -71,13 +72,14 @@ graph TD
 graph TD
     GEA[Guivos Enterprise Architecture]
     GEA --> FA[Foundation Architecture]
+    GEA --> GKA[Guivos Knowledge Architecture]
     GEA --> EA[Ecosystem Architecture]
     GEA --> PA[Product Architecture]
     GEA --> BA[Business Architecture]
-    GEA --> DIA[Data & Intelligence Architecture]
-    GEA --> TA[Technology Architecture]
+    GEA --> GIA[Guivos Intelligence Architecture]
+    GEA --> EM[Guivos Economic Model]
+    GEA --> TA[Technology / Engineering Architecture]
     GEA --> GA[Governance Architecture]
-    GEA --> KA[Knowledge Architecture]
     EA --> GEB[Guivos Ecosystem Blueprint]
 ```
 
@@ -85,19 +87,21 @@ graph TD
 
 | Arquitetura | Pergunta principal | Situação |
 |---|---|---|
-| Foundation Architecture | Por que a Guivos existe e quais são seus princípios fundamentais? | Consolidada em sua base |
+| Foundation Architecture | Quem é a Guivos e por que ela existe? | Frozen em A2-B3 |
+| Guivos Knowledge Architecture | Como a Guivos descobre, valida, consolida e evolui conhecimento institucional? | Reconhecida por ADR-006; documentação interna pendente |
 | Ecosystem Architecture | Como ocorre a transformação dos participantes? | Em consolidação por meio do GEB |
-| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | Consolidada em sua estrutura inicial |
+| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | Consolidada em sua estrutura superior |
 | Business Architecture | Como a Guivos gera, entrega, captura e reinveste valor para sustentar o ecossistema? | Fundamentos validados |
-| Data & Intelligence Architecture | Como dados e conhecimento se tornam inteligência aplicada? | Planejada |
-| Technology Architecture | Como as capacidades são implementadas tecnicamente? | Planejada |
+| Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | Conceitos superiores consolidados |
+| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | Domínio planejado |
+| Technology / Engineering Architecture | Como as capacidades são implementadas tecnicamente? | Planejada |
 | Governance Architecture | Como decisões, riscos e mudanças são controlados? | Parcialmente iniciada |
-| Knowledge Architecture | Como o patrimônio intelectual é criado, consolidado e preservado? | Parcialmente iniciada pelo GKR |
 
-## Relação entre GEA, GKR e GEB
+## Relação entre GEA, GKR, GKA e GEB
 
 - **GEA** é o conjunto integrado das arquiteturas da Guivos.
 - **GKR** preserva a representação canônica da Guivos em seu estado de maturidade e as justificativas que sustentam sua arquitetura.
+- **GKA** governa como o conhecimento institucional é descoberto, validado, consolidado, promovido à Canon e evoluído.
 - **GEB** é o blueprint principal da Ecosystem Architecture.
 
 ## Responsabilidade conceitual
@@ -106,7 +110,9 @@ Todo conceito, modelo, capacidade, ativo arquitetural ou decisão canônica deve
 
 Arquiteturas consumidoras podem utilizar e referenciar esses ativos, mas não redefini-los.
 
-A decisão completa está registrada no [ADR-003 — Architectural Ownership](../adr/ADR-003-architectural-ownership.md).
+A decisão de ownership está registrada no [ADR-003 — Architectural Ownership](../adr/ADR-003-architectural-ownership.md).
+
+O reconhecimento da Guivos Knowledge Architecture está registrado no [ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture](../adr/ADR-006-guivos-knowledge-architecture.md).
 
 ## Princípios permanentes
 
@@ -116,7 +122,11 @@ Decisões estruturais devem ser definidas antes da implementação de software, 
 
 ### O conhecimento precede a arquitetura
 
-Arquiteturas devem utilizar conceitos consolidados e rastreáveis no GKR.
+Arquiteturas permanentes devem derivar de conhecimento consolidado e rastreável.
+
+### A realidade precede o conhecimento
+
+O conhecimento institucional deve permanecer aderente à realidade observada. Quando evidências consistentes demonstrarem inadequação, o conhecimento deverá ser revisado pelos processos formais da GKA.
 
 ### Uma decisão, uma fonte da verdade
 
@@ -128,7 +138,7 @@ Cada ativo canônico deve possuir uma única arquitetura proprietária responsá
 
 ### Separação entre arquiteturas
 
-Negócio, produto, dados, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.
+Negócio, produto, dados, inteligência, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.
 
 ### Independência tecnológica
 
@@ -174,27 +184,29 @@ A Guivos é concebida em sua capacidade máxima e realizada progressivamente por
 
 Todo ativo relevante deve declarar domínio, camada de permanência, owner, horizonte e processo autorizado de mudança.
 
-## Fluxo oficial de decisão
+## Fluxo oficial de fundamentação
 
 ```mermaid
 graph LR
-    H[Hipótese] --> E[Evidências]
-    E --> V[Validação Arquitetural]
-    V --> D[Decisão / ADR]
-    D --> A[Arquitetura]
-    A --> I[Implementação]
-    I --> O[Operação]
-    O --> L[Aprendizado]
-    L --> H
+    R[Realidade observada] --> E[Evidências]
+    E --> K[Conhecimento consolidado]
+    K --> C[Canon]
+    C --> A[Arquiteturas]
+    A --> CAP[Capacidades]
+    CAP --> P[Produtos]
+    P --> I[Implementação]
+    I --> NE[Novas evidências]
+    NE --> E
 ```
 
 ## Tipos de ativos de governança
 
 | Ativo | Pergunta respondida |
 |---|---|
-| Canon | Como a Guivos funciona em sua arquitetura de maturidade? |
-| ADR | Por que uma decisão arquitetural foi tomada? |
+| Canon | O que é o conhecimento institucional vigente mais confiável? |
+| ADR | Por que uma decisão arquitetural ou epistemológica foi tomada? |
 | AV | Como a decisão ou estrutura foi validada? |
+| GEF | Em qual estágio de maturidade institucional a Guivos se encontra? |
 
 A primeira validação formal está registrada em [AV-001 — GEA Structure Validation](../validation/AV-001-gea-structure-validation.md).
 
@@ -231,6 +243,6 @@ Nenhuma unidade deve ser considerada `stable` antes que suas dependências estej
 
 ## Regra de estabilidade
 
-A estrutura principal da GEA constitui a base da versão Canon 1.0 e está estruturalmente congelada.
+A estrutura principal da GEA permanece estável.
 
-Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.
+Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar desnecessariamente a estrutura superior. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.
