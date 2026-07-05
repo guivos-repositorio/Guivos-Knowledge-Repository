@@ -7155,7 +7155,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <p>A GEA não é uma arquitetura isolada. Ela é o guarda-chuva que integra todas as arquiteturas oficiais da Guivos.</p>
 <p>O Guivos Knowledge Repository (GKR) é a fonte oficial em que a GEA é documentada, versionada, publicada e governada.</p>
 <h2 id="enterprise-architecture-missao">Missão<a class="headerlink" href="#enterprise-architecture-missao" title="Permanent link">&para;</a></h2>
-<p>Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, validada por evidências e orientada à tomada de decisões estratégicas de longo prazo.</p>
+<p>Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, conhecimento consolidado, validação por evidências e decisões estratégicas de longo prazo.</p>
 <h2 id="enterprise-architecture-arquitetura-de-maturidade">Arquitetura de maturidade<a class="headerlink" href="#enterprise-architecture-arquitetura-de-maturidade" title="Permanent link">&para;</a></h2>
 <p>A GEA representa a Guivos em sua capacidade institucional máxima. Ela não deve ser limitada pelo estágio atual da implementação.</p>
 <p>A execução ocorre progressivamente por meio de arquiteturas de referência, programas corporativos e entregas, sem reduzir a visão permanente da organização.</p>
@@ -7165,7 +7165,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="enterprise-architecture-dois-eixos-de-organizacao">Dois eixos de organização<a class="headerlink" href="#enterprise-architecture-dois-eixos-de-organizacao" title="Permanent link">&para;</a></h2>
 <p>A GEA classifica seus ativos por dois eixos complementares:</p>
 <ol>
-<li><strong>Domínio arquitetural:</strong> Foundation, Ecosystem, Product, Business, Data &amp; Intelligence, Technology, Governance e Knowledge.</li>
+<li><strong>Domínio arquitetural:</strong> Foundation, Knowledge, Ecosystem, Product, Business, Data &amp; Intelligence, Technology e Governance.</li>
 <li><strong>Permanência:</strong> Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.</li>
 </ol>
 <p>O domínio define a responsabilidade conceitual. A camada de permanência define horizonte, velocidade de mudança e governança.</p>
@@ -7214,13 +7214,14 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <pre  class="mermaid"><code>graph TD
     GEA[Guivos Enterprise Architecture]
     GEA --> FA[Foundation Architecture]
+    GEA --> GKA[Guivos Knowledge Architecture]
     GEA --> EA[Ecosystem Architecture]
     GEA --> PA[Product Architecture]
     GEA --> BA[Business Architecture]
-    GEA --> DIA[Data & Intelligence Architecture]
-    GEA --> TA[Technology Architecture]
+    GEA --> GIA[Guivos Intelligence Architecture]
+    GEA --> EM[Guivos Economic Model]
+    GEA --> TA[Technology / Engineering Architecture]
     GEA --> GA[Governance Architecture]
-    GEA --> KA[Knowledge Architecture]
     EA --> GEB[Guivos Ecosystem Blueprint]
 </code></pre>
 <h2 id="enterprise-architecture-arquiteturas-integrantes">Arquiteturas integrantes<a class="headerlink" href="#enterprise-architecture-arquiteturas-integrantes" title="Permanent link">&para;</a></h2>
@@ -7235,8 +7236,13 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <tbody>
 <tr>
 <td>Foundation Architecture</td>
-<td>Por que a Guivos existe e quais são seus princípios fundamentais?</td>
-<td>Consolidada em sua base</td>
+<td>Quem é a Guivos e por que ela existe?</td>
+<td>Frozen em A2-B3</td>
+</tr>
+<tr>
+<td>Guivos Knowledge Architecture</td>
+<td>Como a Guivos descobre, valida, consolida e evolui conhecimento institucional?</td>
+<td>Reconhecida por ADR-006; documentação interna pendente</td>
 </tr>
 <tr>
 <td>Ecosystem Architecture</td>
@@ -7246,7 +7252,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <tr>
 <td>Product Architecture</td>
 <td>Quais produtos materializam capacidades e propostas de valor?</td>
-<td>Consolidada em sua estrutura inicial</td>
+<td>Consolidada em sua estrutura superior</td>
 </tr>
 <tr>
 <td>Business Architecture</td>
@@ -7254,12 +7260,17 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <td>Fundamentos validados</td>
 </tr>
 <tr>
-<td>Data &amp; Intelligence Architecture</td>
-<td>Como dados e conhecimento se tornam inteligência aplicada?</td>
-<td>Planejada</td>
+<td>Guivos Intelligence Architecture</td>
+<td>Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada?</td>
+<td>Conceitos superiores consolidados</td>
 </tr>
 <tr>
-<td>Technology Architecture</td>
+<td>Guivos Economic Model</td>
+<td>Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito?</td>
+<td>Domínio planejado</td>
+</tr>
+<tr>
+<td>Technology / Engineering Architecture</td>
 <td>Como as capacidades são implementadas tecnicamente?</td>
 <td>Planejada</td>
 </tr>
@@ -7268,34 +7279,33 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <td>Como decisões, riscos e mudanças são controlados?</td>
 <td>Parcialmente iniciada</td>
 </tr>
-<tr>
-<td>Knowledge Architecture</td>
-<td>Como o patrimônio intelectual é criado, consolidado e preservado?</td>
-<td>Parcialmente iniciada pelo GKR</td>
-</tr>
 </tbody>
 </table>
-<h2 id="enterprise-architecture-relacao-entre-gea-gkr-e-geb">Relação entre GEA, GKR e GEB<a class="headerlink" href="#enterprise-architecture-relacao-entre-gea-gkr-e-geb" title="Permanent link">&para;</a></h2>
+<h2 id="enterprise-architecture-relacao-entre-gea-gkr-gka-e-geb">Relação entre GEA, GKR, GKA e GEB<a class="headerlink" href="#enterprise-architecture-relacao-entre-gea-gkr-gka-e-geb" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>GEA</strong> é o conjunto integrado das arquiteturas da Guivos.</li>
 <li><strong>GKR</strong> preserva a representação canônica da Guivos em seu estado de maturidade e as justificativas que sustentam sua arquitetura.</li>
+<li><strong>GKA</strong> governa como o conhecimento institucional é descoberto, validado, consolidado, promovido à Canon e evoluído.</li>
 <li><strong>GEB</strong> é o blueprint principal da Ecosystem Architecture.</li>
 </ul>
 <h2 id="enterprise-architecture-responsabilidade-conceitual">Responsabilidade conceitual<a class="headerlink" href="#enterprise-architecture-responsabilidade-conceitual" title="Permanent link">&para;</a></h2>
 <p>Todo conceito, modelo, capacidade, ativo arquitetural ou decisão canônica deve possuir uma única arquitetura proprietária.</p>
 <p>Arquiteturas consumidoras podem utilizar e referenciar esses ativos, mas não redefini-los.</p>
-<p>A decisão completa está registrada no <a href="#adr-adr-003-architectural-ownership">ADR-003 — Architectural Ownership</a>.</p>
+<p>A decisão de ownership está registrada no <a href="#adr-adr-003-architectural-ownership">ADR-003 — Architectural Ownership</a>.</p>
+<p>O reconhecimento da Guivos Knowledge Architecture está registrado no <a href="#adr-adr-006-guivos-knowledge-architecture">ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture</a>.</p>
 <h2 id="enterprise-architecture-principios-permanentes">Princípios permanentes<a class="headerlink" href="#enterprise-architecture-principios-permanentes" title="Permanent link">&para;</a></h2>
 <h3 id="enterprise-architecture-a-arquitetura-precede-a-implementacao">A arquitetura precede a implementação<a class="headerlink" href="#enterprise-architecture-a-arquitetura-precede-a-implementacao" title="Permanent link">&para;</a></h3>
 <p>Decisões estruturais devem ser definidas antes da implementação de software, processos ou produtos.</p>
 <h3 id="enterprise-architecture-o-conhecimento-precede-a-arquitetura">O conhecimento precede a arquitetura<a class="headerlink" href="#enterprise-architecture-o-conhecimento-precede-a-arquitetura" title="Permanent link">&para;</a></h3>
-<p>Arquiteturas devem utilizar conceitos consolidados e rastreáveis no GKR.</p>
+<p>Arquiteturas permanentes devem derivar de conhecimento consolidado e rastreável.</p>
+<h3 id="enterprise-architecture-a-realidade-precede-o-conhecimento">A realidade precede o conhecimento<a class="headerlink" href="#enterprise-architecture-a-realidade-precede-o-conhecimento" title="Permanent link">&para;</a></h3>
+<p>O conhecimento institucional deve permanecer aderente à realidade observada. Quando evidências consistentes demonstrarem inadequação, o conhecimento deverá ser revisado pelos processos formais da GKA.</p>
 <h3 id="enterprise-architecture-uma-decisao-uma-fonte-da-verdade">Uma decisão, uma fonte da verdade<a class="headerlink" href="#enterprise-architecture-uma-decisao-uma-fonte-da-verdade" title="Permanent link">&para;</a></h3>
 <p>Cada decisão arquitetural deve possuir um único registro oficial, evitando documentos paralelos e versões concorrentes.</p>
 <h3 id="enterprise-architecture-propriedade-arquitetural-unica">Propriedade arquitetural única<a class="headerlink" href="#enterprise-architecture-propriedade-arquitetural-unica" title="Permanent link">&para;</a></h3>
 <p>Cada ativo canônico deve possuir uma única arquitetura proprietária responsável por sua definição, evolução e governança.</p>
 <h3 id="enterprise-architecture-separacao-entre-arquiteturas">Separação entre arquiteturas<a class="headerlink" href="#enterprise-architecture-separacao-entre-arquiteturas" title="Permanent link">&para;</a></h3>
-<p>Negócio, produto, dados, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.</p>
+<p>Negócio, produto, dados, inteligência, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.</p>
 <h3 id="enterprise-architecture-independencia-tecnologica">Independência tecnológica<a class="headerlink" href="#enterprise-architecture-independencia-tecnologica" title="Permanent link">&para;</a></h3>
 <p>Conceitos e capacidades de negócio devem permanecer válidos mesmo quando linguagens, fornecedores, frameworks ou infraestrutura forem substituídos.</p>
 <h3 id="enterprise-architecture-evolucao-controlada">Evolução controlada<a class="headerlink" href="#enterprise-architecture-evolucao-controlada" title="Permanent link">&para;</a></h3>
@@ -7318,16 +7328,17 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <p>A Guivos é concebida em sua capacidade máxima e realizada progressivamente por programas, entregas e ciclos de implementação.</p>
 <h3 id="enterprise-architecture-layer-integrity">Layer Integrity<a class="headerlink" href="#enterprise-architecture-layer-integrity" title="Permanent link">&para;</a></h3>
 <p>Todo ativo relevante deve declarar domínio, camada de permanência, owner, horizonte e processo autorizado de mudança.</p>
-<h2 id="enterprise-architecture-fluxo-oficial-de-decisao">Fluxo oficial de decisão<a class="headerlink" href="#enterprise-architecture-fluxo-oficial-de-decisao" title="Permanent link">&para;</a></h2>
+<h2 id="enterprise-architecture-fluxo-oficial-de-fundamentacao">Fluxo oficial de fundamentação<a class="headerlink" href="#enterprise-architecture-fluxo-oficial-de-fundamentacao" title="Permanent link">&para;</a></h2>
 <pre  class="mermaid"><code>graph LR
-    H[Hipótese] --> E[Evidências]
-    E --> V[Validação Arquitetural]
-    V --> D[Decisão / ADR]
-    D --> A[Arquitetura]
-    A --> I[Implementação]
-    I --> O[Operação]
-    O --> L[Aprendizado]
-    L --> H
+    R[Realidade observada] --> E[Evidências]
+    E --> K[Conhecimento consolidado]
+    K --> C[Canon]
+    C --> A[Arquiteturas]
+    A --> CAP[Capacidades]
+    CAP --> P[Produtos]
+    P --> I[Implementação]
+    I --> NE[Novas evidências]
+    NE --> E
 </code></pre>
 <h2 id="enterprise-architecture-tipos-de-ativos-de-governanca">Tipos de ativos de governança<a class="headerlink" href="#enterprise-architecture-tipos-de-ativos-de-governanca" title="Permanent link">&para;</a></h2>
 <table>
@@ -7340,15 +7351,19 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <tbody>
 <tr>
 <td>Canon</td>
-<td>Como a Guivos funciona em sua arquitetura de maturidade?</td>
+<td>O que é o conhecimento institucional vigente mais confiável?</td>
 </tr>
 <tr>
 <td>ADR</td>
-<td>Por que uma decisão arquitetural foi tomada?</td>
+<td>Por que uma decisão arquitetural ou epistemológica foi tomada?</td>
 </tr>
 <tr>
 <td>AV</td>
 <td>Como a decisão ou estrutura foi validada?</td>
+</tr>
+<tr>
+<td>GEF</td>
+<td>Em qual estágio de maturidade institucional a Guivos se encontra?</td>
 </tr>
 </tbody>
 </table>
@@ -7400,8 +7415,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </table>
 <p>Nenhuma unidade deve ser considerada <code>stable</code> antes que suas dependências estejam, no mínimo, <code>validated</code>.</p>
 <h2 id="enterprise-architecture-regra-de-estabilidade">Regra de estabilidade<a class="headerlink" href="#enterprise-architecture-regra-de-estabilidade" title="Permanent link">&para;</a></h2>
-<p>A estrutura principal da GEA constitui a base da versão Canon 1.0 e está estruturalmente congelada.</p>
-<p>Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.</p></section><section class="print-page" id="enterprise-architecture-permanence-layer-model" heading-number="4.2"><h1 id="enterprise-architecture-permanence-layer-model-gea-plm-001-permanence-layer-model">GEA-PLM-001 — Permanence Layer Model<a class="headerlink" href="#enterprise-architecture-permanence-layer-model-gea-plm-001-permanence-layer-model" title="Permanent link">&para;</a></h1>
+<p>A estrutura principal da GEA permanece estável.</p>
+<p>Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar desnecessariamente a estrutura superior. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.</p></section><section class="print-page" id="enterprise-architecture-permanence-layer-model" heading-number="4.2"><h1 id="enterprise-architecture-permanence-layer-model-gea-plm-001-permanence-layer-model">GEA-PLM-001 — Permanence Layer Model<a class="headerlink" href="#enterprise-architecture-permanence-layer-model-gea-plm-001-permanence-layer-model" title="Permanent link">&para;</a></h1>
 <h2 id="enterprise-architecture-permanence-layer-model-finalidade">Finalidade<a class="headerlink" href="#enterprise-architecture-permanence-layer-model-finalidade" title="Permanent link">&para;</a></h2>
 <p>Organizar os ativos institucionais da Guivos de acordo com sua permanência, horizonte de mudança, responsabilidade e relação com a execução.</p>
 <p>O modelo não substitui as arquiteturas oficiais da GEA. Ele adiciona um segundo eixo de classificação: além do domínio arquitetural, cada ativo deve declarar em qual camada de permanência se encontra.</p>

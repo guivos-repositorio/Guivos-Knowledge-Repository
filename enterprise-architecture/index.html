@@ -452,10 +452,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#relacao-entre-gea-gkr-e-geb">
+<a class="md-nav__link" href="#relacao-entre-gea-gkr-gka-e-geb">
 <span class="md-ellipsis">
       
-        Relação entre GEA, GKR e GEB
+        Relação entre GEA, GKR, GKA e GEB
       
     </span>
 </a>
@@ -493,6 +493,15 @@
 <span class="md-ellipsis">
       
         O conhecimento precede a arquitetura
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-realidade-precede-o-conhecimento">
+<span class="md-ellipsis">
+      
+        A realidade precede o conhecimento
       
     </span>
 </a>
@@ -627,10 +636,10 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fluxo-oficial-de-decisao">
+<a class="md-nav__link" href="#fluxo-oficial-de-fundamentacao">
 <span class="md-ellipsis">
       
-        Fluxo oficial de decisão
+        Fluxo oficial de fundamentação
       
     </span>
 </a>
@@ -1829,10 +1838,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#relacao-entre-gea-gkr-e-geb">
+<a class="md-nav__link" href="#relacao-entre-gea-gkr-gka-e-geb">
 <span class="md-ellipsis">
       
-        Relação entre GEA, GKR e GEB
+        Relação entre GEA, GKR, GKA e GEB
       
     </span>
 </a>
@@ -1870,6 +1879,15 @@
 <span class="md-ellipsis">
       
         O conhecimento precede a arquitetura
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-realidade-precede-o-conhecimento">
+<span class="md-ellipsis">
+      
+        A realidade precede o conhecimento
       
     </span>
 </a>
@@ -2004,10 +2022,10 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fluxo-oficial-de-decisao">
+<a class="md-nav__link" href="#fluxo-oficial-de-fundamentacao">
 <span class="md-ellipsis">
       
-        Fluxo oficial de decisão
+        Fluxo oficial de fundamentação
       
     </span>
 </a>
@@ -2064,7 +2082,7 @@
 <p>A GEA não é uma arquitetura isolada. Ela é o guarda-chuva que integra todas as arquiteturas oficiais da Guivos.</p>
 <p>O Guivos Knowledge Repository (GKR) é a fonte oficial em que a GEA é documentada, versionada, publicada e governada.</p>
 <h2 id="missao">Missão<a class="headerlink" href="#missao" title="Permanent link">¶</a></h2>
-<p>Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, validada por evidências e orientada à tomada de decisões estratégicas de longo prazo.</p>
+<p>Projetar, preservar e evoluir uma arquitetura empresarial de classe mundial, baseada em fundamentos sólidos, conhecimento consolidado, validação por evidências e decisões estratégicas de longo prazo.</p>
 <h2 id="arquitetura-de-maturidade">Arquitetura de maturidade<a class="headerlink" href="#arquitetura-de-maturidade" title="Permanent link">¶</a></h2>
 <p>A GEA representa a Guivos em sua capacidade institucional máxima. Ela não deve ser limitada pelo estágio atual da implementação.</p>
 <p>A execução ocorre progressivamente por meio de arquiteturas de referência, programas corporativos e entregas, sem reduzir a visão permanente da organização.</p>
@@ -2074,7 +2092,7 @@
 <h2 id="dois-eixos-de-organizacao">Dois eixos de organização<a class="headerlink" href="#dois-eixos-de-organizacao" title="Permanent link">¶</a></h2>
 <p>A GEA classifica seus ativos por dois eixos complementares:</p>
 <ol>
-<li><strong>Domínio arquitetural:</strong> Foundation, Ecosystem, Product, Business, Data &amp; Intelligence, Technology, Governance e Knowledge.</li>
+<li><strong>Domínio arquitetural:</strong> Foundation, Knowledge, Ecosystem, Product, Business, Data &amp; Intelligence, Technology e Governance.</li>
 <li><strong>Permanência:</strong> Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.</li>
 </ol>
 <p>O domínio define a responsabilidade conceitual. A camada de permanência define horizonte, velocidade de mudança e governança.</p>
@@ -2123,13 +2141,14 @@
 <pre class="mermaid"><code>graph TD
     GEA[Guivos Enterprise Architecture]
     GEA --&gt; FA[Foundation Architecture]
+    GEA --&gt; GKA[Guivos Knowledge Architecture]
     GEA --&gt; EA[Ecosystem Architecture]
     GEA --&gt; PA[Product Architecture]
     GEA --&gt; BA[Business Architecture]
-    GEA --&gt; DIA[Data &amp; Intelligence Architecture]
-    GEA --&gt; TA[Technology Architecture]
+    GEA --&gt; GIA[Guivos Intelligence Architecture]
+    GEA --&gt; EM[Guivos Economic Model]
+    GEA --&gt; TA[Technology / Engineering Architecture]
     GEA --&gt; GA[Governance Architecture]
-    GEA --&gt; KA[Knowledge Architecture]
     EA --&gt; GEB[Guivos Ecosystem Blueprint]
 </code></pre>
 <h2 id="arquiteturas-integrantes">Arquiteturas integrantes<a class="headerlink" href="#arquiteturas-integrantes" title="Permanent link">¶</a></h2>
@@ -2144,8 +2163,13 @@
 <tbody>
 <tr>
 <td>Foundation Architecture</td>
-<td>Por que a Guivos existe e quais são seus princípios fundamentais?</td>
-<td>Consolidada em sua base</td>
+<td>Quem é a Guivos e por que ela existe?</td>
+<td>Frozen em A2-B3</td>
+</tr>
+<tr>
+<td>Guivos Knowledge Architecture</td>
+<td>Como a Guivos descobre, valida, consolida e evolui conhecimento institucional?</td>
+<td>Reconhecida por ADR-006; documentação interna pendente</td>
 </tr>
 <tr>
 <td>Ecosystem Architecture</td>
@@ -2155,7 +2179,7 @@
 <tr>
 <td>Product Architecture</td>
 <td>Quais produtos materializam capacidades e propostas de valor?</td>
-<td>Consolidada em sua estrutura inicial</td>
+<td>Consolidada em sua estrutura superior</td>
 </tr>
 <tr>
 <td>Business Architecture</td>
@@ -2163,12 +2187,17 @@
 <td>Fundamentos validados</td>
 </tr>
 <tr>
-<td>Data &amp; Intelligence Architecture</td>
-<td>Como dados e conhecimento se tornam inteligência aplicada?</td>
-<td>Planejada</td>
+<td>Guivos Intelligence Architecture</td>
+<td>Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada?</td>
+<td>Conceitos superiores consolidados</td>
 </tr>
 <tr>
-<td>Technology Architecture</td>
+<td>Guivos Economic Model</td>
+<td>Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito?</td>
+<td>Domínio planejado</td>
+</tr>
+<tr>
+<td>Technology / Engineering Architecture</td>
 <td>Como as capacidades são implementadas tecnicamente?</td>
 <td>Planejada</td>
 </tr>
@@ -2177,34 +2206,33 @@
 <td>Como decisões, riscos e mudanças são controlados?</td>
 <td>Parcialmente iniciada</td>
 </tr>
-<tr>
-<td>Knowledge Architecture</td>
-<td>Como o patrimônio intelectual é criado, consolidado e preservado?</td>
-<td>Parcialmente iniciada pelo GKR</td>
-</tr>
 </tbody>
 </table>
-<h2 id="relacao-entre-gea-gkr-e-geb">Relação entre GEA, GKR e GEB<a class="headerlink" href="#relacao-entre-gea-gkr-e-geb" title="Permanent link">¶</a></h2>
+<h2 id="relacao-entre-gea-gkr-gka-e-geb">Relação entre GEA, GKR, GKA e GEB<a class="headerlink" href="#relacao-entre-gea-gkr-gka-e-geb" title="Permanent link">¶</a></h2>
 <ul>
 <li><strong>GEA</strong> é o conjunto integrado das arquiteturas da Guivos.</li>
 <li><strong>GKR</strong> preserva a representação canônica da Guivos em seu estado de maturidade e as justificativas que sustentam sua arquitetura.</li>
+<li><strong>GKA</strong> governa como o conhecimento institucional é descoberto, validado, consolidado, promovido à Canon e evoluído.</li>
 <li><strong>GEB</strong> é o blueprint principal da Ecosystem Architecture.</li>
 </ul>
 <h2 id="responsabilidade-conceitual">Responsabilidade conceitual<a class="headerlink" href="#responsabilidade-conceitual" title="Permanent link">¶</a></h2>
 <p>Todo conceito, modelo, capacidade, ativo arquitetural ou decisão canônica deve possuir uma única arquitetura proprietária.</p>
 <p>Arquiteturas consumidoras podem utilizar e referenciar esses ativos, mas não redefini-los.</p>
-<p>A decisão completa está registrada no <a href="../adr/ADR-003-architectural-ownership/">ADR-003 — Architectural Ownership</a>.</p>
+<p>A decisão de ownership está registrada no <a href="../adr/ADR-003-architectural-ownership/">ADR-003 — Architectural Ownership</a>.</p>
+<p>O reconhecimento da Guivos Knowledge Architecture está registrado no <a href="../adr/ADR-006-guivos-knowledge-architecture/">ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture</a>.</p>
 <h2 id="principios-permanentes">Princípios permanentes<a class="headerlink" href="#principios-permanentes" title="Permanent link">¶</a></h2>
 <h3 id="a-arquitetura-precede-a-implementacao">A arquitetura precede a implementação<a class="headerlink" href="#a-arquitetura-precede-a-implementacao" title="Permanent link">¶</a></h3>
 <p>Decisões estruturais devem ser definidas antes da implementação de software, processos ou produtos.</p>
 <h3 id="o-conhecimento-precede-a-arquitetura">O conhecimento precede a arquitetura<a class="headerlink" href="#o-conhecimento-precede-a-arquitetura" title="Permanent link">¶</a></h3>
-<p>Arquiteturas devem utilizar conceitos consolidados e rastreáveis no GKR.</p>
+<p>Arquiteturas permanentes devem derivar de conhecimento consolidado e rastreável.</p>
+<h3 id="a-realidade-precede-o-conhecimento">A realidade precede o conhecimento<a class="headerlink" href="#a-realidade-precede-o-conhecimento" title="Permanent link">¶</a></h3>
+<p>O conhecimento institucional deve permanecer aderente à realidade observada. Quando evidências consistentes demonstrarem inadequação, o conhecimento deverá ser revisado pelos processos formais da GKA.</p>
 <h3 id="uma-decisao-uma-fonte-da-verdade">Uma decisão, uma fonte da verdade<a class="headerlink" href="#uma-decisao-uma-fonte-da-verdade" title="Permanent link">¶</a></h3>
 <p>Cada decisão arquitetural deve possuir um único registro oficial, evitando documentos paralelos e versões concorrentes.</p>
 <h3 id="propriedade-arquitetural-unica">Propriedade arquitetural única<a class="headerlink" href="#propriedade-arquitetural-unica" title="Permanent link">¶</a></h3>
 <p>Cada ativo canônico deve possuir uma única arquitetura proprietária responsável por sua definição, evolução e governança.</p>
 <h3 id="separacao-entre-arquiteturas">Separação entre arquiteturas<a class="headerlink" href="#separacao-entre-arquiteturas" title="Permanent link">¶</a></h3>
-<p>Negócio, produto, dados, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.</p>
+<p>Negócio, produto, dados, inteligência, tecnologia, governança e conhecimento são domínios relacionados, mas não intercambiáveis.</p>
 <h3 id="independencia-tecnologica">Independência tecnológica<a class="headerlink" href="#independencia-tecnologica" title="Permanent link">¶</a></h3>
 <p>Conceitos e capacidades de negócio devem permanecer válidos mesmo quando linguagens, fornecedores, frameworks ou infraestrutura forem substituídos.</p>
 <h3 id="evolucao-controlada">Evolução controlada<a class="headerlink" href="#evolucao-controlada" title="Permanent link">¶</a></h3>
@@ -2227,16 +2255,17 @@
 <p>A Guivos é concebida em sua capacidade máxima e realizada progressivamente por programas, entregas e ciclos de implementação.</p>
 <h3 id="layer-integrity">Layer Integrity<a class="headerlink" href="#layer-integrity" title="Permanent link">¶</a></h3>
 <p>Todo ativo relevante deve declarar domínio, camada de permanência, owner, horizonte e processo autorizado de mudança.</p>
-<h2 id="fluxo-oficial-de-decisao">Fluxo oficial de decisão<a class="headerlink" href="#fluxo-oficial-de-decisao" title="Permanent link">¶</a></h2>
+<h2 id="fluxo-oficial-de-fundamentacao">Fluxo oficial de fundamentação<a class="headerlink" href="#fluxo-oficial-de-fundamentacao" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>graph LR
-    H[Hipótese] --&gt; E[Evidências]
-    E --&gt; V[Validação Arquitetural]
-    V --&gt; D[Decisão / ADR]
-    D --&gt; A[Arquitetura]
-    A --&gt; I[Implementação]
-    I --&gt; O[Operação]
-    O --&gt; L[Aprendizado]
-    L --&gt; H
+    R[Realidade observada] --&gt; E[Evidências]
+    E --&gt; K[Conhecimento consolidado]
+    K --&gt; C[Canon]
+    C --&gt; A[Arquiteturas]
+    A --&gt; CAP[Capacidades]
+    CAP --&gt; P[Produtos]
+    P --&gt; I[Implementação]
+    I --&gt; NE[Novas evidências]
+    NE --&gt; E
 </code></pre>
 <h2 id="tipos-de-ativos-de-governanca">Tipos de ativos de governança<a class="headerlink" href="#tipos-de-ativos-de-governanca" title="Permanent link">¶</a></h2>
 <table>
@@ -2249,15 +2278,19 @@
 <tbody>
 <tr>
 <td>Canon</td>
-<td>Como a Guivos funciona em sua arquitetura de maturidade?</td>
+<td>O que é o conhecimento institucional vigente mais confiável?</td>
 </tr>
 <tr>
 <td>ADR</td>
-<td>Por que uma decisão arquitetural foi tomada?</td>
+<td>Por que uma decisão arquitetural ou epistemológica foi tomada?</td>
 </tr>
 <tr>
 <td>AV</td>
 <td>Como a decisão ou estrutura foi validada?</td>
+</tr>
+<tr>
+<td>GEF</td>
+<td>Em qual estágio de maturidade institucional a Guivos se encontra?</td>
 </tr>
 </tbody>
 </table>
@@ -2309,8 +2342,8 @@
 </table>
 <p>Nenhuma unidade deve ser considerada <code>stable</code> antes que suas dependências estejam, no mínimo, <code>validated</code>.</p>
 <h2 id="regra-de-estabilidade">Regra de estabilidade<a class="headerlink" href="#regra-de-estabilidade" title="Permanent link">¶</a></h2>
-<p>A estrutura principal da GEA constitui a base da versão Canon 1.0 e está estruturalmente congelada.</p>
-<p>Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar essa estrutura. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.</p>
+<p>A estrutura principal da GEA permanece estável.</p>
+<p>Refinamentos e novos ativos podem ocorrer dentro das arquiteturas sem alterar desnecessariamente a estrutura superior. Mudanças no conjunto principal de arquiteturas exigem justificativa formal, evidência arquitetural e ADR.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
