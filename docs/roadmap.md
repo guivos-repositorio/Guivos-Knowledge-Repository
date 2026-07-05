@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 4.1.0
+version: 4.2.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -12,10 +12,13 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 
 ## Estado atual
 
+- **Era vigente:** `GE-2 — Knowledge`.
+- **Marco vigente:** `M4 — Knowledge Architecture Established`.
 - **Baseline da Foundation:** `A2-B3` — frozen.
 - **Fase ativa:** `A2 — Functional Architecture Discovery`.
 - **Revisão ativa:** `A2-R02 — Fundamental Model Review`.
 - **Artefato ativo:** `A2-R02-FMEM-001` — execution-ready.
+- **Arquitetura reconhecida:** `Guivos Knowledge Architecture (GKA)`.
 - **Produto comercial oficial:** `Guivos Mall`.
 - **Inteligência consolidada:** `Inteligência do Ecossistema Guivos`.
 - **Modelo conceitual de conexões:** `Grafo Global da Guivos`.
@@ -24,22 +27,57 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 - **Core Capabilities candidatas:** 0.
 - **Core Capabilities canônicas:** 0.
 
+## Transição de era
+
+A partir da versão `0.27.0`, o GKR entra em sua segunda grande era de evolução.
+
+Após consolidar as fundações arquiteturais do ecossistema, o foco passa a ser a produção sistemática de conhecimento institucional.
+
+As futuras arquiteturas deverão derivar de conhecimento consolidado, e esse conhecimento deverá permanecer rastreável às evidências que o originaram.
+
 ## Pipeline vigente
 
 ```text
-Corpus oficial
-  -> Evidence Extraction
-  -> Observações
-  -> Regularidades
-  -> Hipóteses
-  -> Testes e revisão
-  -> Evidence Matrix
-  -> Canonical Consolidation
-  -> Readiness Assessment
-  -> Validation
-  -> Audit
-  -> Baseline
+Realidade observada
+  -> Evidências
+  -> Conhecimento consolidado
+  -> Canon
+  -> Arquiteturas
+  -> Capacidades
+  -> Produtos
+  -> Implementações
+  -> Novas evidências
 ```
+
+## GE-2 — Knowledge
+
+**Estado:** Active.
+
+### Objetivo
+
+Institucionalizar a produção de conhecimento como competência permanente da Guivos.
+
+### Concluído
+
+- [x] Aprovar `ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture`.
+- [x] Criar `GEF-001 — Guivos Evolution Framework`.
+- [x] Formalizar `GE-2 — Knowledge`.
+- [x] Registrar `M4 — Knowledge Architecture Established`.
+- [x] Reconhecer a GKA dentro da GEA.
+- [x] Definir conhecimento institucional como ativo estratégico permanente.
+
+### Pendente
+
+- [ ] Criar domínio `knowledge-architecture/`.
+- [ ] Criar `GKA-000 — Guivos Knowledge Architecture`.
+- [ ] Criar `GKM-001 — Guivos Knowledge Method`.
+- [ ] Criar `GKP-001 — Guivos Knowledge Principles`.
+- [ ] Criar `GKG-001 — Guivos Knowledge Governance`.
+- [ ] Criar `GKV-001 — Guivos Knowledge Validation`.
+- [ ] Criar `GKC-001 — Guivos Canonical Consolidation`.
+- [ ] Criar `GKL-001 — Guivos Knowledge Lifecycle`.
+- [ ] Criar `GDP-001 — Guivos Discovery Protocol`.
+- [ ] Criar `GEM-001 — Guivos Evidence Model`.
 
 ## A2-R01 — Foundation Architecture Review
 
@@ -70,7 +108,7 @@ Corpus oficial
 - [ ] Identificar candidatos fundamentais.
 - [ ] Executar Canonical Consolidation.
 - [ ] Avaliar readiness.
-- [ ] Validar, auditar e congelar `A2-B4`.
+- [ ] Validar, auditar e congelar `K1 — Fundamental Knowledge Frozen`.
 
 ## Intelligence Architecture
 
@@ -134,6 +172,8 @@ Planos pagos poderão acelerar, ampliar e personalizar jornadas, mas não dever�
 
 | Tema | Estado | Dependências |
 |---|---|---|
+| Guivos Knowledge Architecture Foundation | Planned | ADR-006 e M4 |
+| Fundamental Knowledge Frozen | Planned | A2-R02 concluída |
 | Guivos Economic Model | Planned / Domain Created | Fundamental Model, GCCM, Business Outcomes e Product Architecture |
 | Global Governance Model | Planned | Governance Architecture e expansão global |
 | Organizational Model | Planned | Outcomes e Capabilities |
@@ -141,11 +181,8 @@ Planos pagos poderão acelerar, ampliar e personalizar jornadas, mas não dever�
 | AI Governance | Planned | Intelligence Architecture, Data Governance e Security |
 | Knowledge Graph Logical Model | Planned | GCCM, PRA e Intelligence Architecture |
 | Enterprise Metrics Framework | Planned | Outcomes, Economic Model e Operating Model |
-| Enterprise Ontology | Deferred | Fundamental Model Frozen |
-| Architectural Derivation Model | Deferred | Fundamental Model Frozen |
-| Architectural Discovery Method | Deferred | Aplicação concluída da FMEM |
-| Architectural Knowledge Lifecycle | Deferred | Aplicação concluída da FMEM |
+| Enterprise Ontology | Deferred | Fundamental Knowledge Frozen |
 
 ## Ponto exato de retomada
 
-Abrir integralmente `KU-FM-001 — Fenômeno da Evolução` e iniciar a extração literal em `E-001`, sem observações ou hipóteses durante a leitura inicial.
+Concluir a fundação documental da GKA e, em seguida, abrir integralmente `KU-FM-001 — Fenômeno da Evolução` para iniciar a extração literal em `E-001`, sem observações ou hipóteses durante a leitura inicial.
