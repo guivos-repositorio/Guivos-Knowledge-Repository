@@ -1,7 +1,7 @@
 ---
 title: Architectural Milestones
 status: active
-version: 4.0.0
+version: 4.1.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -19,6 +19,7 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 | M3 — Foundation Architecture Frozen | Completed | Congelar a primeira arquitetura integralmente revisada |
 | M3.1 — Fundamental Discovery Method Frozen | Completed | Congelar o método de execução da FMEM antes da extração |
 | M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA como arquitetura de primeira classe e iniciar GE-2 |
+| M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA com escopo e checkpoint definidos |
 | A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
 | K1 — Fundamental Knowledge Frozen | Planned | Congelar o conhecimento fundamental após A2-R02 |
 | A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
@@ -79,22 +80,47 @@ A Guivos reconheceu formalmente a `Guivos Knowledge Architecture (GKA)` como arq
 - fluxo realidade → evidências → conhecimento → Canon → arquitetura → produtos formalizado;
 - regra de que arquiteturas permanentes devem derivar de conhecimento consolidado formalizada.
 
-### Efeito
+## M5 — GKA Foundation Started
 
-O GKR inicia sua segunda grande era: a produção sistemática de conhecimento institucional.
+**Estado:** Active em 04/07/2026.
 
-A criação dos documentos internos da GKA ocorrerá em etapa posterior.
+### Critério de abertura
+
+O planejamento da versão `0.28.0 — Guivos Knowledge Architecture Foundation` foi concluído e preservado no `CHECKPOINT-GE2-GKA-FOUNDATION`.
+
+### Escopo aprovado
+
+- `GKA-000 — Guivos Knowledge Architecture`;
+- `GKP-001 — Guivos Knowledge Principles`;
+- `GKM-001 — Guivos Knowledge Method`;
+- `GDP-001 — Guivos Discovery Protocol`;
+- `GEM-001 — Guivos Evidence Model`;
+- `GKC-001 — Guivos Canonical Consolidation`;
+- `GKV-001 — Guivos Knowledge Validation`;
+- `GKL-001 — Guivos Knowledge Lifecycle`.
+
+### Restrições
+
+- nenhum novo produto;
+- nenhuma nova arquitetura permanente;
+- nenhum novo domínio estrutural paralelo;
+- nenhuma hipótese promovida diretamente à Canon;
+- a pasta `knowledge-architecture/` somente será criada após aprovação do GKA-000.
+
+### Critério de conclusão futuro
+
+M5 será concluído quando os oito ativos da fundação da GKA estiverem publicados, sincronizados e revisados.
 
 ## A2 — Functional Architecture Discovery
 
-**Estado:** Active.
+**Estado:** Active — Operationally Paused.
 
 ### Revisões
 
 | Revisão | Estado |
 |---|---|
 | A2-R01 — Foundation Architecture Review | Completed — Frozen in A2-B3 |
-| A2-R02 — Fundamental Model Review | Active — Execution Ready |
+| A2-R02 — Fundamental Model Review | Active — Execution Ready — Operationally Paused |
 | A2-R03 — Business Architecture Review | Planned |
 | A2-R04 — Product Architecture Review | Planned |
 | A2-R05 — Cross-Architecture Review | Planned |
