@@ -7,11 +7,12 @@ A partir da GE-2, o GKR também passa a ser reconhecido como o sistema oficial d
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M4 — Knowledge Architecture Established
+- **Marco vigente:** M5 — GKA Foundation Started
+- **Sprint vigente:** 0.28.0 — Guivos Knowledge Architecture Foundation
+- **Checkpoint vigente:** CHECKPOINT-GE2-GKA-FOUNDATION
 - **Baseline vigente da Foundation:** A2-B3 — Frozen
 - **Fase ativa:** A2 — Functional Architecture Discovery
-- **Revisão ativa:** A2-R02 — Fundamental Model Review
-- **Artefato ativo:** A2-R02-FMEM-001 — Execution Ready
+- **Revisão ativa:** A2-R02 — Fundamental Model Review, em espera operacional
 - **Arquitetura reconhecida:** Guivos Knowledge Architecture (GKA)
 - **Entregável de referência:** GCCM-001 — Discovery
 - **Produto comercial oficial:** Guivos Mall
@@ -26,17 +27,31 @@ Consulte:
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
+- [Checkpoint GE-2 — GKA Foundation](docs/project/CHECKPOINT-GE2-GKA-FOUNDATION.md)
 - [ADR-006 — Guivos Knowledge Architecture](docs/adr/ADR-006-guivos-knowledge-architecture.md)
 - [Fundamental Model Evidence Matrix](docs/validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
 - [GAI-001 — AI Knowledge Model](docs/intelligence-architecture/knowledge-model.md)
 - [GAI-002 — Manifesto da Inteligência do Ecossistema Guivos](docs/intelligence-architecture/manifesto.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
 
-## Foco atual
+## Missão atual
 
-A revisão A2-R02 analisará o corpus oficial do Modelo Fundamental por meio de evidências, observações, regularidades, hipóteses, testes e consolidação canônica.
+Fundar oficialmente a Guivos Knowledge Architecture.
 
-Nenhuma evidência será criada por memória ou inferência. Toda conclusão deverá manter rastreabilidade até o corpus.
+O planejamento da versão `0.28.0` está concluído. A próxima atividade é redigir integralmente o `GKA-000 — Guivos Knowledge Architecture`.
+
+A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente deverá ser criada após aprovação do GKA-000.
+
+## Escopo da GKA Foundation
+
+1. GKA-000 — Guivos Knowledge Architecture;
+2. GKP-001 — Guivos Knowledge Principles;
+3. GKM-001 — Guivos Knowledge Method;
+4. GDP-001 — Guivos Discovery Protocol;
+5. GEM-001 — Guivos Evidence Model;
+6. GKC-001 — Guivos Canonical Consolidation;
+7. GKV-001 — Guivos Knowledge Validation;
+8. GKL-001 — Guivos Knowledge Lifecycle.
 
 ## Princípios centrais
 
