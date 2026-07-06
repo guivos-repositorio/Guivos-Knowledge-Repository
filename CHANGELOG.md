@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.28.0-planning — GKA Foundation Pause Checkpoint
+
+- Encerramento formal do planejamento da versão `0.28.0 — Guivos Knowledge Architecture Foundation`.
+- Criação de `CHECKPOINT-GE2-GKA-FOUNDATION`, versão `1.0.0`.
+- Registro de `M5 — GKA Foundation Started`.
+- Atualização do Roadmap Arquitetural para `4.3.0`.
+- Atualização do Knowledge Board para `4.3.0`.
+- Atualização dos Architectural Milestones para `4.1.0`.
+- Atualização do README e da página inicial do GKR.
+- Registro do escopo fechado da primeira fundação da GKA com oito ativos.
+- Registro de que a pasta `docs/knowledge-architecture/` ainda não deve ser criada antes da aprovação do `GKA-000`.
+- Registro das hipóteses arquiteturais que permanecem fora da Canon.
+- Registro da pausa operacional da A2-R02 até a conclusão da GKA Foundation.
+- Definição do ponto exato de retomada: redação integral do `GKA-000 — Guivos Knowledge Architecture`.
+
 ## 0.27.0 — Guivos Knowledge Architecture Established
 
 - Aprovação de `ADR-006 — Guivos Knowledge Architecture as a First-Class Architecture`.
@@ -119,7 +134,7 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 - Diferenciação entre segmentos legítimos e aderência contextual, com exemplo de restaurantes e bares vinculados ou não a jornadas relevantes.
 - Atualização de `GPD-000 — Documentação Pública da Guivos` para a versão `1.2.0`, incluindo o princípio de aderência ao ecossistema.
 - Atualização de `GPA-004 — Guivos Business` para a versão `1.1.0`.
-- Ampliação do Guivos Business com programas de recompensas, fidelização, retenção, recorrência, captação de novos clientes, ativação de públicos e fortalecimento de marca.
+- Ampliação do Guivos Business com programas de recompensas, fidelização, retenção, recorrência, captação de clientes, ativação de públicos e fortalecimento de marca.
 - Inclusão de desenvolvimento de pessoas, inteligência empresarial, parcerias, impacto social e conexão com universidades, igrejas, ONGs, movimentos e comunidades no escopo do Guivos Business.
 - Registro de que os modelos operacionais específicos ainda dependem de detalhamento, validação e implementação.
 
