@@ -7,9 +7,11 @@ A partir da GE-2, o GKR também passa a ser reconhecido como o sistema oficial d
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5 — GKA Foundation Started
+- **Marco vigente:** M5.1 — GKA Preparation Complete
+- **Modo vigente da GKA:** Institutional Writing
 - **Sprint vigente:** 0.28.0 — Guivos Knowledge Architecture Foundation
-- **Checkpoint vigente:** CHECKPOINT-GE2-GKA-FOUNDATION
+- **Checkpoint vigente:** CHECKPOINT-GKA-PREPARATION-COMPLETE
+- **Documento atual:** GKA-000 — Guivos Knowledge Architecture
 - **Baseline vigente da Foundation:** A2-B3 — Frozen
 - **Fase ativa:** A2 — Functional Architecture Discovery
 - **Revisão ativa:** A2-R02 — Fundamental Model Review, em espera operacional
@@ -27,6 +29,7 @@ Consulte:
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
+- [Checkpoint GKA Preparation Complete](docs/project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md)
 - [Checkpoint GE-2 — GKA Foundation](docs/project/CHECKPOINT-GE2-GKA-FOUNDATION.md)
 - [ADR-006 — Guivos Knowledge Architecture](docs/adr/ADR-006-guivos-knowledge-architecture.md)
 - [Fundamental Model Evidence Matrix](docs/validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
@@ -36,11 +39,11 @@ Consulte:
 
 ## Missão atual
 
-Fundar oficialmente a Guivos Knowledge Architecture.
+Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`.
 
-O planejamento da versão `0.28.0` está concluído. A próxima atividade é redigir integralmente o `GKA-000 — Guivos Knowledge Architecture`.
+A preparação da GKA foi concluída. O trabalho agora está em modo de redação institucional.
 
-A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente deverá ser criada após aprovação do GKA-000.
+A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente deverá ser criada após aprovação integral do GKA-000.
 
 ## Escopo da GKA Foundation
 
@@ -60,6 +63,8 @@ A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente dever�
 > Toda evolução do GKR deve preservar a rastreabilidade entre evidências, modelos explicativos, decisões arquiteturais e implementações.
 
 > Nenhuma arquitetura permanente deverá existir sem conhecimento consolidado que a sustente, e nenhum conhecimento consolidado deverá existir sem evidências rastreáveis que o fundamentem.
+
+> Toda arquitetura permanente da Guivos deverá derivar da Canon vigente. Toda Canon deverá derivar de conhecimento consolidado. Todo conhecimento consolidado deverá derivar de evidências rastreáveis.
 
 > Planos pagos podem acelerar e ampliar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
 
