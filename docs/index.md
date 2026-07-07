@@ -9,9 +9,11 @@ A partir da GE-2, o GKR também passa a operar como sistema institucional de des
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- M5 — GKA Foundation Started ativo;
+- M5.1 — GKA Preparation Complete concluído;
+- modo vigente da GKA: Institutional Writing;
 - sprint `0.28.0 — Guivos Knowledge Architecture Foundation` aberta;
-- checkpoint `CHECKPOINT-GE2-GKA-FOUNDATION` registrado;
+- checkpoint `CHECKPOINT-GKA-PREPARATION-COMPLETE` registrado;
+- documento atual: `GKA-000 — Guivos Knowledge Architecture`;
 - Guivos Knowledge Architecture reconhecida por ADR-006;
 - Foundation congelada em `A2-B3`;
 - A2-R02 — Fundamental Model Review ativa e em espera operacional;
@@ -23,14 +25,15 @@ A partir da GE-2, o GKR também passa a operar como sistema institucional de des
 
 ## Missão atual
 
-Fundar oficialmente a Guivos Knowledge Architecture.
+Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`.
 
-O planejamento da sprint está concluído. O próximo passo é redigir integralmente o `GKA-000 — Guivos Knowledge Architecture`.
+A preparação da GKA está concluída. O trabalho agora passa a ser a redação institucional do documento-mestre da Guivos Knowledge Architecture.
 
-A pasta `knowledge-architecture/` ainda não foi criada e somente deverá ser criada após aprovação do GKA-000.
+A pasta `knowledge-architecture/` ainda não foi criada e somente deverá ser criada após aprovação integral do GKA-000.
 
 ## Acesso rápido
 
+- [Checkpoint GKA Preparation Complete](project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md)
 - [Checkpoint GE-2 — GKA Foundation](project/CHECKPOINT-GE2-GKA-FOUNDATION.md)
 - [Guivos Evolution Framework](evolution-framework/index.md)
 - [Roadmap Arquitetural](roadmap.md)
