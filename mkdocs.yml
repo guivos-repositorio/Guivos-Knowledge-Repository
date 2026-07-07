@@ -134,6 +134,7 @@ nav:
       - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
+      - GKA Preparation Complete: project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md
       - GE-2 — GKA Foundation Checkpoint: project/CHECKPOINT-GE2-GKA-FOUNDATION.md
       - Baseline M1: project/BASELINE-M1.md
       - Checkpoint M2.0: project/CHECKPOINT-M2.0.md
