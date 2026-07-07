@@ -1,7 +1,7 @@
 ---
 title: Architectural Milestones
 status: active
-version: 4.1.0
+version: 4.2.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -20,6 +20,7 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 | M3.1 — Fundamental Discovery Method Frozen | Completed | Congelar o método de execução da FMEM antes da extração |
 | M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA como arquitetura de primeira classe e iniciar GE-2 |
 | M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA com escopo e checkpoint definidos |
+| M5.1 — GKA Preparation Complete | Completed | Encerrar a preparação da GKA e iniciar a redação institucional do GKA-000 |
 | A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
 | K1 — Fundamental Knowledge Frozen | Planned | Congelar o conhecimento fundamental após A2-R02 |
 | A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
@@ -86,7 +87,7 @@ A Guivos reconheceu formalmente a `Guivos Knowledge Architecture (GKA)` como arq
 
 ### Critério de abertura
 
-O planejamento da versão `0.28.0 — Guivos Knowledge Architecture Foundation` foi concluído e preservado no `CHECKPOINT-GE2-GKA-FOUNDATION`.
+O planejamento da versão `0.28.0 — Guivos Knowledge Architecture Foundation` foi iniciado e preservado no `CHECKPOINT-GE2-GKA-FOUNDATION`.
 
 ### Escopo aprovado
 
@@ -110,6 +111,28 @@ O planejamento da versão `0.28.0 — Guivos Knowledge Architecture Foundation` 
 ### Critério de conclusão futuro
 
 M5 será concluído quando os oito ativos da fundação da GKA estiverem publicados, sincronizados e revisados.
+
+## M5.1 — GKA Preparation Complete
+
+**Estado:** Completed em 04/07/2026.
+
+### Critério de conclusão
+
+A fase de concepção e preparação da Guivos Knowledge Architecture foi concluída e a arquitetura entrou em `Institutional Writing Mode`.
+
+### Resultados
+
+- `CHECKPOINT-GKA-PREPARATION-COMPLETE` criado;
+- `CHECKPOINT-GE2-GKA-FOUNDATION` marcado como superseded;
+- estrutura do `GKA-000` aprovada em cinco partes;
+- ciclo de maturidade do conhecimento definido: Ideia → Hipótese → Conhecimento Consolidado → Canon;
+- regras `Canon First`, `Primazia da Canon`, `Prudência Arquitetural`, `Conservação Arquitetural`, `Maturidade Arquitetural`, `Encerramento de Concepção` e `Decision Rule 002` registradas;
+- hipóteses promissoras preservadas fora da Canon;
+- ponto de retomada definido na redação institucional do `GKA-000`.
+
+### Efeito
+
+A preparação da GKA está encerrada. A atividade atual passa a ser escrever, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture`.
 
 ## A2 — Functional Architecture Discovery
 
