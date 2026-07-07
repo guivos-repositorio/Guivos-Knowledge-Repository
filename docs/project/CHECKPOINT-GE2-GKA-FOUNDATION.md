@@ -1,21 +1,29 @@
 ---
 id: CHECKPOINT-GE2-GKA-FOUNDATION
 title: GE-2 — GKA Foundation Pause Checkpoint
-status: active
-version: 1.0.0
+status: superseded
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-04
+superseded_by:
+  - CHECKPOINT-GKA-PREPARATION-COMPLETE
 ---
 
 # GE-2 — GKA Foundation Pause Checkpoint
 
-## Finalidade
+## Estado
 
-Este checkpoint preserva o estado exato da transição entre a preparação institucional da Guivos Knowledge Architecture e o início de sua fundação documental.
+Este checkpoint foi substituído por `CHECKPOINT-GKA-PREPARATION-COMPLETE`.
 
-Ele permite interromper o trabalho sem perda de decisões, hipóteses, escopo ou ponto de retomada.
+A preparação da Guivos Knowledge Architecture foi concluída e o ponto principal de retomada passa a ser a redação institucional do `GKA-000 — Guivos Knowledge Architecture`.
 
-## Estado institucional
+## Finalidade original
+
+Este checkpoint preservou o estado exato da transição entre a preparação institucional da Guivos Knowledge Architecture e o início de sua fundação documental.
+
+Ele permitiu interromper o trabalho sem perda de decisões, hipóteses, escopo ou ponto de retomada.
+
+## Estado institucional preservado
 
 - `GE-1 — Foundation & Architecture`: concluída.
 - `GE-2 — Knowledge`: ativa.
@@ -24,11 +32,11 @@ Ele permite interromper o trabalho sem perda de decisões, hipóteses, escopo ou
 - `GEF-001`: ativo.
 - `A2-R02 — Fundamental Model Review`: ativa e em espera operacional até a fundação documental da GKA.
 
-## Sprint vigente
+## Sprint vigente no momento deste checkpoint
 
 **Versão planejada:** `0.28.0 — Guivos Knowledge Architecture Foundation`.
 
-**Estado:** planejamento concluído; implementação ainda não iniciada.
+**Estado anterior:** planejamento concluído; implementação ainda não iniciada.
 
 **Objetivo único:** fundar oficialmente a Guivos Knowledge Architecture sem abrir novos domínios, produtos ou arquiteturas paralelas.
 
@@ -145,18 +153,12 @@ Nenhuma dessas hipóteses deverá ser promovida automaticamente durante a redaç
 - registrar hipóteses sem promovê-las à Canon;
 - atualizar o GitHub apenas quando cada ativo estiver suficientemente consolidado.
 
-## Ponto exato de retomada
+## Ponto exato de retomada atualizado
 
-Retomar pela redação integral de `GKA-000 — Guivos Knowledge Architecture`, em estado draft, utilizando exclusivamente as decisões preservadas neste checkpoint.
+Consultar `CHECKPOINT-GKA-PREPARATION-COMPLETE`.
 
-Após a conclusão e revisão do GKA-000:
-
-1. criar o domínio `docs/knowledge-architecture/`;
-2. publicar o GKA-000;
-3. derivar os sete ativos restantes;
-4. concluir a versão `0.28.0`;
-5. retomar `A2-R02` com a extração literal de `KU-FM-001`, iniciando em `E-001`.
+O ponto vigente de retomada é a redação institucional do `GKA-000 — Guivos Knowledge Architecture`, começando pela Parte I — Identidade da GKA.
 
 ## Regra de preservação
 
-Este checkpoint não altera a Canon da Guivos nem antecipa a validação da GKA. Sua função é preservar decisões, limites e sequência de execução.
+Este checkpoint não altera a Canon da Guivos nem antecipa a validação da GKA. Ele permanece preservado como registro histórico da transição anterior.
