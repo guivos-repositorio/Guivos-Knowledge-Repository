@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 4.3.0
+version: 4.4.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -21,7 +21,9 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | A2-B3 | Frozen | Baseline vigente da Foundation |
 | M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA como arquitetura de primeira classe |
 | M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA |
-| CHECKPOINT-GE2-GKA-FOUNDATION | Active 1.0.0 | Preservar decisões e ponto de retomada da sprint 0.28.0 |
+| M5.1 — GKA Preparation Complete | Completed | Encerrar preparação e iniciar redação institucional |
+| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.0.0 | Preservar decisões e ponto de retomada da escrita do GKA-000 |
+| CHECKPOINT-GE2-GKA-FOUNDATION | Superseded 1.1.0 | Registro histórico do checkpoint anterior |
 | ADR-006 | Approved | Institucionalizar a Guivos Knowledge Architecture |
 | GEF-001 | Active 1.0.0 | Registrar as eras de evolução institucional da Guivos |
 | A2-METHOD-001 | Validated 1.1.0 | Governar descoberta, consolidação e promoção à Canon |
@@ -39,10 +41,12 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 |---|---|
 | Sprint | `0.28.0 — Guivos Knowledge Architecture Foundation` |
 | Planejamento | Concluído |
-| Implementação | Não iniciada |
-| Foco | Redação integral do `GKA-000` |
+| Preparação | Concluída |
+| Modo atual | Institutional Writing |
+| Documento atual | `GKA-000 — Guivos Knowledge Architecture` |
+| Foco | Redação institucional do GKA-000 |
 | Pasta `knowledge-architecture/` | Ainda não criada |
-| Publicação de ativos GKA | Aguardando consolidação |
+| Publicação de ativos GKA | Aguardando aprovação do GKA-000 |
 
 ## GE-2 — Knowledge
 
@@ -56,7 +60,7 @@ Princípio central:
 
 ## Guivos Knowledge Architecture
 
-**Estado:** Recognized — Foundation Planning Completed.
+**Estado:** Recognized — Preparation Complete — Institutional Writing Active.
 
 A GKA foi reconhecida pelo `ADR-006` como arquitetura de primeira classe.
 
@@ -81,6 +85,27 @@ Não criar nesta fase:
 - novos produtos;
 - novas arquiteturas permanentes;
 - novos domínios estruturais.
+
+## Ciclo de maturidade do conhecimento
+
+```text
+Ideia
+  -> Hipótese
+  -> Conhecimento Consolidado
+  -> Canon
+```
+
+Esse ciclo orienta a promoção de novos conceitos e protege a arquitetura permanente contra incorporação prematura de ideias ainda não consolidadas.
+
+## Regras metodológicas ativas
+
+- Canon First;
+- Primazia da Canon;
+- Prudência Arquitetural;
+- Conservação Arquitetural;
+- Maturidade Arquitetural;
+- Encerramento de Concepção;
+- Decision Rule 002 — Institutional Writing Readiness.
 
 ## A2-R02 — Fundamental Model Review
 
@@ -109,16 +134,15 @@ Não criar nesta fase:
 ```text
 Realidade observada
   -> Observação
+  -> Hipótese
+  -> Investigação
   -> Evidências
-  -> Conhecimento consolidado
-  -> Validação
+  -> Conhecimento Consolidado
   -> Canon
-  -> Arquiteturas
+  -> Arquitetura
   -> Capacidades
   -> Produtos
-  -> Implementações
-  -> Resultados
-  -> Nova realidade
+  -> Implementação
 ```
 
 ## Hipóteses preservadas fora da Canon
@@ -126,6 +150,8 @@ Realidade observada
 - Confiança Institucional como componente formal da GKA;
 - Knowledge Assets como classificação canônica;
 - Patrimônio Institucional como conceito superior;
+- Memória Institucional distinta da Canon;
+- Três Patrimônios Permanentes;
 - evolução como padrão recursivo em múltiplas escalas;
 - Momento Atual como conceito aplicável além do Journey;
 - simetria entre evolução dos participantes, evolução institucional e aprendizagem da Inteligência do Ecossistema;
@@ -151,7 +177,7 @@ Realidade observada
 | Arquitetura | Maturidade |
 |---|---|
 | Foundation Architecture | Frozen — A2-B3 |
-| Guivos Knowledge Architecture | Recognized — Foundation Planning Completed |
+| Guivos Knowledge Architecture | Recognized — Institutional Writing Active |
 | Fundamental Model | Active Review — Operationally Paused |
 | Product Architecture | Stable na estrutura superior |
 | Business Architecture | Foundations e Strategy inicial validadas |
@@ -163,12 +189,13 @@ Realidade observada
 
 | Ativo | Status |
 |---|---|
-| Roadmap Arquitetural | 4.3.0 |
-| Knowledge Board | 4.3.0 |
-| Architectural Milestones | 4.1.0 |
+| Roadmap Arquitetural | 4.4.0 |
+| Knowledge Board | 4.4.0 |
+| Architectural Milestones | 4.2.0 |
 | GEF-001 | Active 1.0.0 |
 | ADR-006 | Approved |
-| CHECKPOINT-GE2-GKA-FOUNDATION | Active 1.0.0 |
+| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.0.0 |
+| CHECKPOINT-GE2-GKA-FOUNDATION | Superseded 1.1.0 |
 | A2-METHOD-001 | Validated 1.1.0 |
 | A2-R02-FMEM-001 | Execution Ready 1.0.0 |
 | Guia Oficial da Guivos | Public Canon 3.3.0 |
@@ -180,6 +207,6 @@ Realidade observada
 
 ## Próxima atividade
 
-Abrir `CHECKPOINT-GE2-GKA-FOUNDATION` e iniciar a redação integral de `GKA-000 — Guivos Knowledge Architecture`.
+Abrir `CHECKPOINT-GKA-PREPARATION-COMPLETE` e iniciar a redação institucional de `GKA-000 — Guivos Knowledge Architecture`, começando pela Parte I — Identidade da GKA.
 
-A pasta `docs/knowledge-architecture/` somente deverá ser criada após aprovação do GKA-000.
+A pasta `docs/knowledge-architecture/` somente deverá ser criada após aprovação integral do GKA-000.
