@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.28.1 — GKA Preparation Complete
+
+- Encerramento da fase de concepção e preparação da `Guivos Knowledge Architecture`.
+- Criação de `CHECKPOINT-GKA-PREPARATION-COMPLETE`, versão `1.0.0`.
+- Atualização de `CHECKPOINT-GE2-GKA-FOUNDATION` para `superseded`, versão `1.1.0`.
+- Registro de `M5.1 — GKA Preparation Complete`.
+- Atualização do Roadmap Arquitetural para `4.4.0`.
+- Atualização do Knowledge Board para `4.4.0`.
+- Atualização dos Architectural Milestones para `4.2.0`.
+- Atualização do README e da página inicial do GKR.
+- Inclusão de `CHECKPOINT-GKA-PREPARATION-COMPLETE` na navegação do MkDocs.
+- Início do modo `Institutional Writing` para a GKA.
+- Definição da atividade atual: escrever, revisar e publicar `GKA-000 — Guivos Knowledge Architecture`.
+- Consolidação da estrutura do GKA-000 em cinco partes: Identidade, Papel Institucional, Fundamentos, Integrações Arquiteturais, Estrutura e Evolução.
+- Adoção do ciclo de maturidade do conhecimento: `Ideia → Hipótese → Conhecimento Consolidado → Canon`.
+- Registro das regras metodológicas: `Canon First`, `Primazia da Canon`, `Prudência Arquitetural`, `Conservação Arquitetural`, `Maturidade Arquitetural`, `Encerramento de Concepção` e `Decision Rule 002 — Institutional Writing Readiness`.
+- Preservação de hipóteses promissoras fora da Canon, incluindo Confiança Institucional, Knowledge Assets, Patrimônio Institucional, Memória Institucional, Três Patrimônios Permanentes, Momento Atual em múltiplas escalas e evolução como padrão recursivo.
+- Confirmação de que `docs/knowledge-architecture/` ainda não será criado antes da aprovação integral do GKA-000.
+- Manutenção da A2-R02 em espera operacional até a conclusão da GKA Foundation.
+
 ## 0.28.0-planning — GKA Foundation Pause Checkpoint
 
 - Encerramento formal do planejamento da versão `0.28.0 — Guivos Knowledge Architecture Foundation`.
@@ -122,7 +142,6 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 - Inclusão de explicação pública de cada etapa do ciclo.
 - Inclusão de exemplo prático mostrando a evolução de uma pessoa entre ciclos sucessivos.
 - Inclusão de um segundo diagrama explicando a conexão entre participante, Guivos, oportunidades e organizações do ecossistema.
-- Inclusão do Ciclo Contínuo de Evolução no estágio consolidado e nas regras de atualização contínua do Guia.
 
 ## 0.21.0 — Limites Públicos e Expansão do Guivos Business
 
@@ -150,7 +169,6 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 - Inclusão de exemplos de grupos de pedal, corrida, estudos, viagens, oração, ações sociais, ajuda comunitária, proteção animal, redes profissionais e movimentos como Legendários.
 - Explicação de como pessoas poderão encontrar e ingressar em grupos e como diferentes iniciativas poderão formar conexões dentro do ecossistema.
 - Inclusão de aviso de que organizações citadas como exemplos não representam parceria formal sem anúncio específico.
-- Atualização de `GPD-000 — Documentação Pública da Guivos` para a versão `1.1.0`, com novo princípio editorial orientado por exemplos concretos.
 
 ## 0.19.0 — Guia Oficial da Guivos
 
