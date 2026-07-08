@@ -2,6 +2,30 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.28.2 — GE-2 Institutional Consolidation Sync
+
+- Criação de `GE2-SYNC-001 — Architectural Synchronization Matrix`, versão `1.0.0`.
+- Atualização de `CHECKPOINT-GKA-PREPARATION-COMPLETE` para a versão `1.1.0`.
+- Registro de `M5.2 — GKA Institutional Consolidation Registered`.
+- Atualização do Roadmap Arquitetural para `4.5.0`.
+- Atualização do Knowledge Board para `4.5.0`.
+- Atualização dos Architectural Milestones para `4.3.0`.
+- Atualização do Glossário Canônico para `1.5.0`.
+- Atualização do README e da página inicial do GKR.
+- Registro de `Institutional Consolidation Mode` como modo vigente da GE-2.
+- Registro do desenvolvimento do GKA-000 por Capítulos Institucionais.
+- Registro da Revisão em Cinco Níveis.
+- Registro da Regra da Pergunta Única.
+- Registro dos três níveis de linguagem institucional: Constitucional, Arquitetural e Metodológico.
+- Registro da separação entre Competências Institucionais e Responsabilidades Permanentes.
+- Registro da distinção entre governar, gerenciar e executar.
+- Registro do Princípio da Responsabilidade Arquitetural.
+- Registro do Princípio da Autocoerência Arquitetural.
+- Registro da reorganização da Parte II do GKA-000: Papel Institucional, Competências Institucionais, Responsabilidades Permanentes, Limites Arquiteturais e Fora do Escopo.
+- Registro das hipóteses `H-GKA-001`, `H-GKA-002`, `H-GKA-003`, `H-GEA-001` e `H-GEA-002` como preservadas fora da Canon.
+- Inclusão de `GEA-DOC-001 — Architectural Document Standard` e `GEA-DOC-002 — Architectural Artifact Taxonomy` como itens planejados no roadmap.
+- Confirmação de que `docs/knowledge-architecture/` ainda não será criado antes da aprovação integral do GKA-000.
+
 ## 0.28.1 — GKA Preparation Complete
 
 - Encerramento da fase de concepção e preparação da `Guivos Knowledge Architecture`.
