@@ -7,11 +7,14 @@ A partir da GE-2, o GKR também passa a ser reconhecido como o sistema oficial d
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5.1 — GKA Preparation Complete
+- **Marco vigente:** M5.2 — GKA Institutional Consolidation Registered
+- **Modo vigente da GE-2:** Institutional Consolidation Mode
 - **Modo vigente da GKA:** Institutional Writing
 - **Sprint vigente:** 0.28.0 — Guivos Knowledge Architecture Foundation
-- **Checkpoint vigente:** CHECKPOINT-GKA-PREPARATION-COMPLETE
+- **Checkpoint vigente:** CHECKPOINT-GKA-PREPARATION-COMPLETE 1.1.0
+- **Matriz de sincronização:** GE2-SYNC-001
 - **Documento atual:** GKA-000 — Guivos Knowledge Architecture
+- **Capítulo atual:** Parte II — Papel Institucional
 - **Baseline vigente da Foundation:** A2-B3 — Frozen
 - **Fase ativa:** A2 — Functional Architecture Discovery
 - **Revisão ativa:** A2-R02 — Fundamental Model Review, em espera operacional
@@ -29,6 +32,7 @@ Consulte:
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
+- [GE2-SYNC-001 — Architectural Synchronization Matrix](docs/project/GE2-SYNC-001-architectural-synchronization-matrix.md)
 - [Checkpoint GKA Preparation Complete](docs/project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md)
 - [Checkpoint GE-2 — GKA Foundation](docs/project/CHECKPOINT-GE2-GKA-FOUNDATION.md)
 - [ADR-006 — Guivos Knowledge Architecture](docs/adr/ADR-006-guivos-knowledge-architecture.md)
@@ -39,9 +43,9 @@ Consulte:
 
 ## Missão atual
 
-Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`.
+Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`, iniciando pela consolidação da Parte II — Papel Institucional.
 
-A preparação da GKA foi concluída. O trabalho agora está em modo de redação institucional.
+A preparação da GKA foi concluída. O trabalho agora está em modo de consolidação institucional e será conduzido por capítulos institucionais completos.
 
 A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente deverá ser criada após aprovação integral do GKA-000.
 
@@ -65,6 +69,10 @@ A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente dever�
 > Nenhuma arquitetura permanente deverá existir sem conhecimento consolidado que a sustente, e nenhum conhecimento consolidado deverá existir sem evidências rastreáveis que o fundamentem.
 
 > Toda arquitetura permanente da Guivos deverá derivar da Canon vigente. Toda Canon deverá derivar de conhecimento consolidado. Todo conhecimento consolidado deverá derivar de evidências rastreáveis.
+
+> Toda arquitetura de primeira classe deve possuir uma responsabilidade institucional única, permanente e claramente distinguível das demais arquiteturas.
+
+> Toda arquitetura da Guivos deve submeter sua própria evolução aos princípios, métodos e critérios que estabelece para os demais ativos arquiteturais.
 
 > Planos pagos podem acelerar e ampliar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
 
@@ -108,7 +116,7 @@ A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente dever�
 - `docs/economic-model/` — modelo econômico planejado.
 - `docs/governance-framework/` — métodos de governança do GKR.
 - `docs/validation/` — matrizes, validações e auditorias.
-- `docs/project/` — baselines, checkpoints e marcos.
+- `docs/project/` — baselines, checkpoints, sincronizações e marcos.
 - `docs/roadmap.md` — roadmap arquitetural.
 
 ## Pipeline de publicação
