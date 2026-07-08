@@ -2,7 +2,7 @@
 id: GKR-GLOSSARY-001
 title: Glossário Canônico da Guivos
 status: consolidated
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -118,6 +118,74 @@ Primeira era de evolução institucional da Guivos, dedicada à estruturação d
 ## GE-2 — Knowledge
 
 Segunda era de evolução institucional da Guivos, dedicada à produção sistemática de conhecimento institucional por meio da Guivos Knowledge Architecture.
+
+## Institutional Writing
+
+Modo de redação institucional em que um ativo arquitetural é escrito para consolidar conhecimento já suficientemente maduro, sem promover novas hipóteses automaticamente à Canon.
+
+## Institutional Consolidation Mode
+
+Modo de trabalho da GE-2 em que o foco deixa de ser descobrir novos conceitos e passa a ser institucionalizar, revisar e consolidar conhecimento já suficientemente maduro.
+
+## Capítulo Institucional
+
+Unidade documental completa de um ativo arquitetural, desenvolvida por planejamento, redação completa, revisão em cinco níveis, aprovação e atualização do GKR.
+
+## Revisão em Cinco Níveis
+
+Critério de revisão aplicado a capítulos institucionais, composto por Precisão Conceitual, Precisão Arquitetural, Precisão Editorial, Precisão Institucional e Precisão Sistêmica.
+
+## Regra da Pergunta Única
+
+Diretriz editorial segundo a qual cada seção de um documento arquitetural deve responder uma única pergunta arquitetural que nenhuma outra seção responde.
+
+## Competência Institucional
+
+Autoridade institucional atribuída a uma arquitetura sobre determinado fenômeno, ativo, critério ou mecanismo.
+
+Competência não é execução operacional.
+
+## Responsabilidade Institucional
+
+Dever permanente assumido por uma arquitetura perante a organização.
+
+Responsabilidade expressa pelo que a arquitetura responde, não apenas pelo que ela contém.
+
+## Diretriz Institucional
+
+Interpretação operacional de um princípio permanente, utilizada para orientar decisões institucionais sem descer ao nível de processo ou implementação.
+
+## Governar
+
+Exercer autoridade institucional sobre princípios, critérios, limites e evolução de determinado domínio arquitetural.
+
+## Gerenciar
+
+Conduzir atividades operacionais, recursos, rotinas ou fluxos dentro de processos definidos.
+
+## Executar
+
+Realizar ações concretas, tarefas ou implementações específicas.
+
+## Princípio da Responsabilidade Arquitetural
+
+Diretriz segundo a qual toda arquitetura de primeira classe deve possuir uma responsabilidade institucional única, permanente e claramente distinguível das demais arquiteturas.
+
+## Princípio da Autocoerência Arquitetural
+
+Diretriz segundo a qual toda arquitetura da Guivos deve submeter sua própria evolução aos princípios, métodos e critérios que estabelece para os demais ativos arquiteturais.
+
+## Modelo Fundamental da Aprendizagem Institucional
+
+Hipótese arquitetural de alta maturidade segundo a qual a transformação de experiências em patrimônio intelectual pode representar o fenômeno central governado pela Guivos Knowledge Architecture.
+
+Permanece fora da Canon até validação sistêmica durante o desenvolvimento do GKA-000.
+
+## Modelo Explicativo
+
+Representação estruturada que busca explicar um fenômeno central da arquitetura.
+
+Modelos explicativos exigem validação mais rigorosa que definições conceituais isoladas.
 
 ## Canon
 
