@@ -1,8 +1,8 @@
 ---
 id: GE2-SYNC-001
 title: GE2 Architectural Synchronization Matrix
-status: active
-version: 1.0.0
+status: completed
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-04
 scope: GKA Institutional Consolidation
@@ -28,7 +28,8 @@ Este artefato não altera a Canon da Guivos. Ele é um registro de governança d
 | Modo consolidado | `Institutional Consolidation Mode` |
 | Documento atual | `GKA-000 — Guivos Knowledge Architecture` |
 | Capítulo atual | Parte II — Papel Institucional |
-| Próxima etapa | Sincronizar repositório e retomar a redação institucional |
+| Próxima etapa | Retomar a redação institucional |
+| Estado da sincronização | Completed |
 
 ## 3. Decisões arquiteturais e metodológicas
 
@@ -112,7 +113,7 @@ Estado: planejada.
 | GEA-DOC-001 | Architectural Document Standard | Planned | Definir padrão oficial dos documentos arquiteturais de primeira classe |
 | GEA-DOC-002 | Architectural Artifact Taxonomy | Planned | Definir tipos de ativos: Architecture, Framework, Method, Model, Protocol, Manifesto, ADR, Baseline, Checkpoint, Validation e Audit |
 
-## 7. Novos termos para o Glossário
+## 7. Novos termos do Glossário
 
 - Institutional Consolidation Mode;
 - Institutional Writing;
@@ -128,35 +129,35 @@ Estado: planejada.
 - Princípio da Responsabilidade Arquitetural;
 - Princípio da Autocoerência Arquitetural;
 - Modelo Fundamental da Aprendizagem Institucional;
-- Modelo explicativo.
+- Modelo Explicativo.
 
-## 8. Documentos impactados
+## 8. Documentos sincronizados
 
-| Documento | Alteração necessária |
+| Documento | Status |
 |---|---|
-| `README.md` | Atualizar modo vigente, missão atual e referências de sincronização |
-| `docs/index.md` | Atualizar estado atual e missão atual |
-| `CHANGELOG.md` | Registrar versão de sincronização metodológica |
-| `docs/project/knowledge-board.md` | Atualizar modo, decisões, hipóteses e próxima atividade |
-| `docs/roadmap.md` | Registrar Institutional Consolidation Mode, itens futuros e ponto de retomada |
-| `docs/project/architectural-milestones.md` | Registrar marco metodológico ou subestado pós-M5.1 |
-| `docs/glossary.md` | Incluir novos termos aprovados |
-| `mkdocs.yml` | Incluir a matriz de sincronização na navegação |
-| `CHECKPOINT-GKA-PREPARATION-COMPLETE` | Atualizar com decisões posteriores à criação do checkpoint |
+| `README.md` | Atualizado |
+| `docs/index.md` | Atualizado |
+| `CHANGELOG.md` | Atualizado |
+| `docs/project/knowledge-board.md` | Atualizado |
+| `docs/roadmap.md` | Atualizado |
+| `docs/project/architectural-milestones.md` | Atualizado |
+| `docs/glossary.md` | Atualizado |
+| `mkdocs.yml` | Atualizado |
+| `CHECKPOINT-GKA-PREPARATION-COMPLETE` | Atualizado |
 
 ## 9. Checklist de sincronização
 
-- [ ] README;
-- [ ] Página inicial do GKR;
-- [ ] Changelog;
-- [ ] Knowledge Board;
-- [ ] Roadmap;
-- [ ] Architectural Milestones;
-- [ ] Glossário;
-- [ ] MkDocs;
-- [ ] Checkpoint vigente;
-- [ ] Validar se `docs/knowledge-architecture/` continua não criado;
-- [ ] Retomar GKA-000 pela Parte II após sincronização.
+- [x] README;
+- [x] Página inicial do GKR;
+- [x] Changelog;
+- [x] Knowledge Board;
+- [x] Roadmap;
+- [x] Architectural Milestones;
+- [x] Glossário;
+- [x] MkDocs;
+- [x] Checkpoint vigente;
+- [x] Validar se `docs/knowledge-architecture/` continua não criado;
+- [x] Retomar GKA-000 pela Parte II após sincronização.
 
 ## 10. Regra de preservação
 
