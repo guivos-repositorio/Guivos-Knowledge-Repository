@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 4.4.0
+version: 4.5.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -13,11 +13,14 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository e da Guivos E
 ## Estado atual
 
 - **Era vigente:** `GE-2 — Knowledge`.
-- **Marco vigente:** `M5.1 — GKA Preparation Complete`.
+- **Marco vigente:** `M5.2 — GKA Institutional Consolidation Registered`.
+- **Modo vigente da GE-2:** `Institutional Consolidation Mode`.
 - **Modo vigente da GKA:** `Institutional Writing`.
 - **Sprint vigente:** `0.28.0 — Guivos Knowledge Architecture Foundation`.
-- **Checkpoint vigente:** `CHECKPOINT-GKA-PREPARATION-COMPLETE`.
+- **Checkpoint vigente:** `CHECKPOINT-GKA-PREPARATION-COMPLETE`, versão `1.1.0`.
+- **Matriz de sincronização:** `GE2-SYNC-001`.
 - **Documento atual:** `GKA-000 — Guivos Knowledge Architecture`.
+- **Capítulo atual:** Parte II — Papel Institucional.
 - **Baseline da Foundation:** `A2-B3` — frozen.
 - **Fase ativa:** `A2 — Functional Architecture Discovery`.
 - **Revisão ativa:** `A2-R02 — Fundamental Model Review`, em espera operacional até a fundação documental da GKA.
@@ -56,7 +59,7 @@ Realidade observada
 
 ## GE-2 — Knowledge
 
-**Estado:** Active.
+**Estado:** Active — Institutional Consolidation Mode.
 
 ### Objetivo
 
@@ -76,6 +79,9 @@ Institucionalizar a produção de conhecimento como competência permanente da G
 - [x] Encerrar a fase de preparação da GKA.
 - [x] Registrar `CHECKPOINT-GKA-PREPARATION-COMPLETE`.
 - [x] Registrar `M5.1 — GKA Preparation Complete`.
+- [x] Registrar `GE2-SYNC-001 — Architectural Synchronization Matrix`.
+- [x] Consolidar `Institutional Consolidation Mode`.
+- [x] Registrar `M5.2 — GKA Institutional Consolidation Registered`.
 
 ### Fluxo atual da GE-2
 
@@ -83,10 +89,13 @@ Institucionalizar a produção de conhecimento como competência permanente da G
 GKA Preparation
   -> Completed
 
-GKA-000 Writing
+GKA Institutional Consolidation
   -> Active
 
-Knowledge Architecture Review
+GKA-000 Parte II
+  -> Current
+
+GKA-000 Review
   -> Planned
 
 GKA Foundation Published
@@ -98,7 +107,7 @@ Resume A2-R02
 
 ## Sprint 0.28.0 — Guivos Knowledge Architecture Foundation
 
-**Estado:** Preparation Complete — Institutional Writing Active.
+**Estado:** Institutional Consolidation Active.
 
 Objetivo único:
 
@@ -106,7 +115,7 @@ Objetivo único:
 
 Atividade atual:
 
-> Redigir, revisar e consolidar `GKA-000 — Guivos Knowledge Architecture`.
+> Consolidar a Parte II — Papel Institucional do `GKA-000 — Guivos Knowledge Architecture`.
 
 Escopo aprovado:
 
@@ -126,12 +135,18 @@ Restrições:
 - não criar modelo independente de maturidade nesta fase;
 - não abrir novas arquiteturas permanentes;
 - não criar novos produtos;
-- não publicar hipóteses como Canon.
+- não publicar hipóteses como Canon;
+- não criar `docs/knowledge-architecture/` antes da aprovação integral do GKA-000.
 
 ### Próximas ações da sprint
 
 - [x] Concluir preparação da GKA.
 - [x] Registrar checkpoint de preparação concluída.
+- [x] Registrar matriz de sincronização arquitetural da GE-2.
+- [ ] Finalizar a Parte II — Papel Institucional.
+- [ ] Revisar a Parte II em cinco níveis.
+- [ ] Avançar para a Parte III — Fundamentos.
+- [ ] Avaliar a hipótese `H-GKA-001`.
 - [ ] Redigir integralmente `GKA-000`.
 - [ ] Revisar criticamente `GKA-000`.
 - [ ] Criar o domínio `docs/knowledge-architecture/` somente após aprovação do GKA-000.
@@ -140,9 +155,44 @@ Restrições:
 - [ ] Sincronizar README, página inicial, MkDocs, Roadmap, Knowledge Board, Milestones e Changelog.
 - [ ] Encerrar a versão `0.28.0`.
 
+## Método vigente de redação institucional
+
+O GKA-000 será desenvolvido por capítulos institucionais completos:
+
+```text
+Planejamento do Capítulo
+  -> Redação Completa
+  -> Revisão em Cinco Níveis
+  -> Aprovação
+  -> Atualização do GKR
+  -> Próximo Capítulo
+```
+
+Cada capítulo deverá ser revisado segundo:
+
+1. Precisão Conceitual;
+2. Precisão Arquitetural;
+3. Precisão Editorial;
+4. Precisão Institucional;
+5. Precisão Sistêmica.
+
+Cada seção deverá responder uma única pergunta arquitetural.
+
+## Parte II — Estrutura vigente
+
+A Parte II do `GKA-000` passa a ser estruturada por:
+
+1. Papel Institucional;
+2. Competências Institucionais;
+3. Responsabilidades Permanentes;
+4. Limites Arquiteturais;
+5. Fora do Escopo.
+
+A seção `Competências Institucionais` substitui `Escopo`, distinguindo autoridade institucional de dever institucional.
+
 ## Ciclo de maturidade do conhecimento
 
-A GE-2 passa a distinguir quatro estados:
+A GE-2 distingue quatro estados:
 
 ```text
 Ideia
@@ -161,7 +211,11 @@ Essa classificação orientará a promoção de conceitos e evitará que ideias 
 - Conservação Arquitetural;
 - Maturidade Arquitetural;
 - Encerramento de Concepção;
-- Decision Rule 002 — Institutional Writing Readiness.
+- Decision Rule 002 — Institutional Writing Readiness;
+- Princípio da Autocoerência Arquitetural;
+- Princípio da Responsabilidade Arquitetural;
+- Regra da Pergunta Única;
+- Desenvolvimento por Capítulos Institucionais.
 
 ## A2-R01 — Foundation Architecture Review
 
@@ -259,7 +313,9 @@ Planos pagos poderão acelerar, ampliar e personalizar jornadas, mas não dever�
 
 | Tema | Estado | Dependências |
 |---|---|---|
-| Guivos Knowledge Architecture Foundation | Active — Institutional Writing | ADR-006, M4, M5 e M5.1 |
+| Guivos Knowledge Architecture Foundation | Active — Institutional Consolidation | ADR-006, M4, M5, M5.1 e M5.2 |
+| GEA-DOC-001 — Architectural Document Standard | Planned | Conclusão da GKA Foundation |
+| GEA-DOC-002 — Architectural Artifact Taxonomy | Planned | Conclusão da GKA Foundation |
 | Fundamental Knowledge Frozen | Planned | A2-R02 concluída |
 | Guivos Economic Model | Planned / Domain Created | Fundamental Model, GCCM, Business Outcomes e Product Architecture |
 | Global Governance Model | Planned | Governance Architecture e expansão global |
@@ -272,6 +328,6 @@ Planos pagos poderão acelerar, ampliar e personalizar jornadas, mas não dever�
 
 ## Ponto exato de retomada
 
-Abrir `CHECKPOINT-GKA-PREPARATION-COMPLETE` e iniciar a redação institucional de `GKA-000 — Guivos Knowledge Architecture`, começando pela Parte I — Identidade da GKA.
+Abrir `GE2-SYNC-001` e `CHECKPOINT-GKA-PREPARATION-COMPLETE`, versão `1.1.0`, e retomar a redação institucional do `GKA-000 — Guivos Knowledge Architecture`, continuando a Parte II — Papel Institucional.
 
-Não criar a pasta `knowledge-architecture/` antes da aprovação do GKA-000.
+Não criar a pasta `knowledge-architecture/` antes da aprovação integral do GKA-000.
