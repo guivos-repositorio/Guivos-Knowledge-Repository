@@ -2,11 +2,13 @@
 id: CHECKPOINT-GKA-PREPARATION-COMPLETE
 title: GKA Preparation Complete Checkpoint
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-04
 supersedes:
   - CHECKPOINT-GE2-GKA-FOUNDATION
+related_sync:
+  - GE2-SYNC-001
 ---
 
 # GKA Preparation Complete Checkpoint
@@ -15,7 +17,7 @@ supersedes:
 
 Este checkpoint registra o encerramento da fase de concepção e preparação da Guivos Knowledge Architecture e estabelece o início da fase de redação institucional do `GKA-000 — Guivos Knowledge Architecture`.
 
-Ele substitui o checkpoint `CHECKPOINT-GE2-GKA-FOUNDATION` como ponto principal de retomada.
+Ele substitui o checkpoint `CHECKPOINT-GE2-GKA-FOUNDATION` como ponto principal de retomada e foi complementado pela matriz `GE2-SYNC-001 — Architectural Synchronization Matrix`.
 
 ## Estado institucional
 
@@ -24,13 +26,17 @@ Ele substitui o checkpoint `CHECKPOINT-GE2-GKA-FOUNDATION` como ponto principal 
 - `M4 — Knowledge Architecture Established`: concluído.
 - `M5 — GKA Foundation Started`: ativo.
 - `M5.1 — GKA Preparation Complete`: concluído.
+- `M5.2 — GKA Institutional Consolidation Registered`: concluído.
 - `ADR-006`: aprovado.
 - `GEF-001`: ativo.
+- `GE2-SYNC-001`: ativo.
 - `A2-R02 — Fundamental Model Review`: ativa e em espera operacional até a conclusão da GKA Foundation.
 
 ## Mudança de estado
 
-A Guivos Knowledge Architecture deixa a fase de concepção e preparação e entra em fase de redação institucional.
+A Guivos Knowledge Architecture deixou a fase de concepção e preparação e entrou em fase de redação institucional.
+
+Após as decisões posteriores, o modo vigente da GE-2 passa a ser `Institutional Consolidation Mode`.
 
 ```text
 GKA Discovery & Preparation
@@ -38,15 +44,18 @@ GKA Discovery & Preparation
 
 GKA Institutional Writing
   -> Active
+
+GE-2 Institutional Consolidation Mode
+  -> Active
 ```
 
 ## Sprint vigente
 
 **Versão planejada:** `0.28.0 — Guivos Knowledge Architecture Foundation`.
 
-**Estado:** preparação concluída; redação institucional iniciada.
+**Estado:** preparação concluída; consolidação institucional ativa.
 
-**Atividade principal:** redigir, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture`.
+**Atividade principal:** redigir, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture` por capítulos institucionais.
 
 ## Escopo aprovado da GKA v1.0
 
@@ -67,11 +76,11 @@ Não criar nesta fase documentos independentes de governança, rastreabilidade o
 
 O `GKA-000` deverá ser desenvolvido em cinco partes:
 
-1. **Identidade da GKA** — abertura institucional, definição, propósito, missão e pergunta permanente.
-2. **Papel institucional** — papel institucional, escopo, responsabilidades, limites e fora do escopo.
-3. **Fundamentos** — princípios fundadores e fluxo institucional do conhecimento.
+1. **Identidade da GKA** — declaração institucional, abertura institucional, definição, propósito, missão e pergunta permanente.
+2. **Papel institucional** — papel institucional, competências institucionais, responsabilidades permanentes, limites arquiteturais e fora do escopo.
+3. **Fundamentos** — princípios permanentes, diretrizes institucionais, fluxo institucional do conhecimento e avaliação da hipótese `H-GKA-001`.
 4. **Integrações arquiteturais** — relação com Foundation, GEA, Canon, Research e Inteligência do Ecossistema.
-5. **Estrutura e evolução** — arquitetura interna, governança, critérios de estabilidade e dependências.
+5. **Estrutura e evolução** — arquitetura interna, governança, critérios de estabilidade, dependências e referências canônicas.
 
 ## Declaração institucional aprovada para abertura
 
@@ -89,7 +98,7 @@ Essa definição poderá ser utilizada no `GKA-000` como definição institucion
 
 ## Ciclo de maturidade do conhecimento
 
-A GE-2 passa a distinguir quatro estados de maturidade do conhecimento:
+A GE-2 distingue quatro estados de maturidade do conhecimento:
 
 ```text
 Ideia
@@ -147,6 +156,14 @@ A fase de concepção termina quando novas discussões deixam de produzir ganhos
 
 Uma arquitetura somente entra em fase de redação institucional quando seu modelo conceitual atingir estabilidade suficiente para que a escrita passe a consolidar conhecimento, e não a descobri-lo.
 
+### Autocoerência Arquitetural
+
+Toda arquitetura da Guivos deve submeter sua própria evolução aos princípios, métodos e critérios que estabelece para os demais ativos arquiteturais.
+
+### Responsabilidade Arquitetural
+
+Toda arquitetura de primeira classe deve possuir uma responsabilidade institucional única, permanente e claramente distinguível das demais arquiteturas.
+
 ## Regras de redação do GKA-000
 
 Durante a redação do `GKA-000`:
@@ -156,12 +173,69 @@ Durante a redação do `GKA-000`:
 - não serão criados novos pilares fundamentais;
 - não serão abertos novos domínios ou arquiteturas paralelas;
 - a escrita deve consolidar o que já atingiu maturidade suficiente;
+- cada seção deverá responder uma pergunta arquitetural exclusiva;
+- cada capítulo deverá ser tratado como uma unidade documental completa;
 - a pasta `docs/knowledge-architecture/` somente será criada após aprovação integral do `GKA-000`.
+
+## Desenvolvimento por Capítulos Institucionais
+
+O `GKA-000` passa a ser desenvolvido por capítulos completos:
+
+```text
+Planejamento do Capítulo
+  -> Redação Completa
+  -> Revisão em Cinco Níveis
+  -> Aprovação
+  -> Atualização do GKR
+  -> Próximo Capítulo
+```
+
+## Revisão em Cinco Níveis
+
+Cada capítulo deverá ser revisado segundo cinco critérios:
+
+1. Precisão Conceitual;
+2. Precisão Arquitetural;
+3. Precisão Editorial;
+4. Precisão Institucional;
+5. Precisão Sistêmica.
+
+## Regra da Pergunta Única
+
+Cada seção do documento deverá existir porque responde uma pergunta arquitetural que nenhuma outra seção responde.
+
+## Níveis de linguagem
+
+A redação institucional deverá distinguir três níveis:
+
+- **Constitucional:** declarações, princípios e diretrizes;
+- **Arquitetural:** definições, papéis, competências e integrações;
+- **Metodológico:** métodos, modelos, protocolos e processos.
+
+## Competências e responsabilidades
+
+A Parte II do `GKA-000` deverá substituir `Escopo` por `Competências Institucionais`.
+
+- **Competência Institucional:** autoridade institucional sobre determinado fenômeno, ativo, critério ou mecanismo.
+- **Responsabilidade Institucional:** dever permanente assumido perante a organização.
+
+## Governar, gerenciar e executar
+
+A documentação deverá distinguir:
+
+- **Governar:** exercer autoridade institucional sobre princípios, critérios e evolução.
+- **Gerenciar:** conduzir atividades operacionais.
+- **Executar:** realizar ações concretas.
 
 ## Hipóteses preservadas fora da Canon
 
 As seguintes ideias permanecem como hipóteses até investigação posterior:
 
+- `H-GKA-001 — Modelo Fundamental da Aprendizagem Institucional`;
+- `H-GKA-002 — GKA como arquitetura da institucionalização da aprendizagem`;
+- `H-GKA-003 — Transformação da experiência em patrimônio intelectual como fenômeno central da GKA`;
+- `H-GEA-001 — Toda arquitetura de primeira classe possui Modelo Fundamental próprio quando houver fenômeno central a explicar`;
+- `H-GEA-002 — GKR como infraestrutura cognitiva institucional da Guivos`;
 - `Confiança Institucional` como componente formal da GKA;
 - `Knowledge Assets` como classificação canônica;
 - `Patrimônio Institucional` como conceito superior ao conhecimento institucional;
@@ -173,11 +247,24 @@ As seguintes ideias permanecem como hipóteses até investigação posterior:
 
 Nenhuma dessas hipóteses deverá ser promovida automaticamente durante a redação da GKA.
 
+## Itens futuros registrados
+
+- `GEA-DOC-001 — Architectural Document Standard`;
+- `GEA-DOC-002 — Architectural Artifact Taxonomy`.
+
+Esses ativos estão planejados, mas não devem ser criados durante a fundação documental da GKA.
+
 ## Ponto exato de retomada
 
-Retomar pela redação institucional do `GKA-000 — Guivos Knowledge Architecture`, começando pela Parte I — Identidade da GKA.
+Retomar pela redação institucional do `GKA-000 — Guivos Knowledge Architecture`, continuando a Parte II — Papel Institucional.
 
-A primeira seção a ser escrita é: Declaração Institucional e Abertura Institucional.
+A Parte II deverá utilizar a estrutura:
+
+1. Papel Institucional;
+2. Competências Institucionais;
+3. Responsabilidades Permanentes;
+4. Limites Arquiteturais;
+5. Fora do Escopo.
 
 Após aprovação integral do `GKA-000`:
 
@@ -189,4 +276,4 @@ Após aprovação integral do `GKA-000`:
 
 ## Regra de preservação
 
-Este checkpoint não altera a Canon da Guivos nem antecipa a validação da GKA. Sua função é encerrar a preparação, preservar decisões metodológicas e definir a redação institucional do GKA-000 como próxima atividade exclusiva.
+Este checkpoint não altera a Canon da Guivos nem antecipa a validação da GKA. Sua função é preservar decisões metodológicas e definir a redação institucional do GKA-000 como próxima atividade exclusiva.
