@@ -1,7 +1,7 @@
 ---
 title: Architectural Milestones
 status: active
-version: 4.2.0
+version: 4.3.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -21,6 +21,7 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 | M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA como arquitetura de primeira classe e iniciar GE-2 |
 | M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA com escopo e checkpoint definidos |
 | M5.1 — GKA Preparation Complete | Completed | Encerrar a preparação da GKA e iniciar a redação institucional do GKA-000 |
+| M5.2 — GKA Institutional Consolidation Registered | Completed | Registrar decisões metodológicas posteriores à preparação da GKA |
 | A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
 | K1 — Fundamental Knowledge Frozen | Planned | Congelar o conhecimento fundamental após A2-R02 |
 | A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
@@ -132,7 +133,34 @@ A fase de concepção e preparação da Guivos Knowledge Architecture foi conclu
 
 ### Efeito
 
-A preparação da GKA está encerrada. A atividade atual passa a ser escrever, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture`.
+A preparação da GKA foi encerrada. A atividade passou a ser escrever, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture`.
+
+## M5.2 — GKA Institutional Consolidation Registered
+
+**Estado:** Completed em 04/07/2026.
+
+### Critério de conclusão
+
+As decisões metodológicas e arquiteturais posteriores ao checkpoint de preparação foram registradas e sincronizadas no GKR.
+
+### Resultados
+
+- `GE2-SYNC-001 — Architectural Synchronization Matrix` criado;
+- `CHECKPOINT-GKA-PREPARATION-COMPLETE` atualizado para a versão `1.1.0`;
+- `Institutional Consolidation Mode` registrado como modo vigente da GE-2;
+- método de desenvolvimento por Capítulos Institucionais registrado;
+- Revisão em Cinco Níveis registrada;
+- Regra da Pergunta Única registrada;
+- distinção entre Competências Institucionais e Responsabilidades Permanentes registrada;
+- distinção entre governar, gerenciar e executar registrada;
+- Princípio da Responsabilidade Arquitetural registrado;
+- Princípio da Autocoerência Arquitetural registrado;
+- `GEA-DOC-001` e `GEA-DOC-002` adicionados ao roadmap como planejados;
+- Glossário Canônico atualizado para `1.5.0`.
+
+### Efeito
+
+A GE-2 entra em modo de consolidação institucional. O próximo trabalho permanece a continuidade da Parte II do `GKA-000`, sem criação da pasta `docs/knowledge-architecture/` antes da aprovação integral do documento.
 
 ## A2 — Functional Architecture Discovery
 
