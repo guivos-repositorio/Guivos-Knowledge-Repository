@@ -2,6 +2,28 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.28.3 — GKA Conceptual Architecture Progress
+
+- Criação de `GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync`, versão `1.0.0`.
+- Atualização de `CHECKPOINT-GKA-PREPARATION-COMPLETE` para a versão `1.2.0`.
+- Registro de `M5.3 — GKA Conceptual Architecture Advanced`.
+- Atualização do Roadmap Arquitetural para `4.6.0`.
+- Atualização do Knowledge Board para `4.6.0`.
+- Atualização dos Architectural Milestones para `4.4.0`.
+- Atualização do Glossário Canônico para `1.6.0`.
+- Atualização do README e da página inicial do GKR.
+- Inclusão de `GE2-SYNC-002` na navegação do MkDocs.
+- Registro da conclusão conceitual da Parte II — Papel Institucional do GKA-000.
+- Registro da conclusão conceitual da Parte III — Fundamentos do GKA-000.
+- Registro da conclusão conceitual da Parte IV — Integrações Arquiteturais do GKA-000.
+- Alteração da Parte V de `Estrutura e Evolução` para `Evolução Institucional`.
+- Registro da estrutura da Parte III: Princípios Fundamentais, Diretrizes Institucionais, Ciclo de Vida do Conhecimento, Investigação do Modelo Fundamental e Governança da Evolução do Conhecimento.
+- Registro da seção `Investigação do Modelo Fundamental da Aprendizagem Institucional`, preservando `H-GKA-001` fora da Canon.
+- Registro da hipótese `H-GKM-001 — Diferentes categorias de conhecimento institucional exigem diferentes critérios de validação, consolidação e promoção à Canon`.
+- Registro da hipótese `H-GEA-005 — Arquiteturas institucionais de primeira classe convergem para estrutura documental composta por Identidade, Papel, Fundamentos, Integrações e Evolução Institucional`.
+- Inclusão no glossário dos termos `Conhecimento Definicional`, `Conhecimento Normativo` e `Conhecimento Explicativo`.
+- Confirmação de que `docs/knowledge-architecture/` ainda não será criado antes da aprovação integral do GKA-000.
+
 ## 0.28.2 — GE-2 Institutional Consolidation Sync
 
 - Criação de `GE2-SYNC-001 — Architectural Synchronization Matrix`, versão `1.0.0`.
