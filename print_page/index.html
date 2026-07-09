@@ -10487,12 +10487,20 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-ads">Guivos Ads</a></li>
 </ul></section><section class="print-page" id="product-architecture-journey" heading-number="9.2"><h1 id="product-architecture-journey-guivos-journey">Guivos Journey<a class="headerlink" href="#product-architecture-journey-guivos-journey" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-journey-papel">Papel<a class="headerlink" href="#product-architecture-journey-papel" title="Permanent link">&para;</a></h2>
-<p>Guivos Journey é o produto responsável por apoiar continuamente a jornada do participante dentro do Ecossistema Guivos.</p>
+<p>Guivos Journey é a camada principal de experiência do Ecossistema Guivos.</p>
+<p>Ele apoia continuamente a jornada do participante e orquestra, em uma experiência unificada, oportunidades, conteúdos, serviços, produtos, experiências, recomendações e interações provenientes das demais camadas da Guivos.</p>
+<h2 id="product-architecture-journey-natureza-arquitetural">Natureza arquitetural<a class="headerlink" href="#product-architecture-journey-natureza-arquitetural" title="Permanent link">&para;</a></h2>
+<p>Na <code>GLPA-001 — Guivos Layered Product Architecture</code>, o Guivos Journey pertence à <strong>Experience Layer</strong>.</p>
+<p>Isso significa que o Journey não deve ser tratado como um produto convencional equivalente aos demais componentes especializados.</p>
+<p>Ele é a interface experiencial pela qual o participante vive o ecossistema.</p>
 <h2 id="product-architecture-journey-escopo-principal">Escopo principal<a class="headerlink" href="#product-architecture-journey-escopo-principal" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Momento Atual;</li>
 <li>Objetivos;</li>
 <li>Próximos Passos;</li>
+<li>superfície principal de interação;</li>
+<li>descoberta de oportunidades;</li>
+<li>apresentação de recomendações;</li>
 <li>conteúdos de evolução;</li>
 <li>especialistas;</li>
 <li>coletivos;</li>
@@ -10500,6 +10508,8 @@ Implementação = realização progressiva
 <li>trilhas;</li>
 <li>conexões e relacionamentos;</li>
 <li>acompanhamento da jornada;</li>
+<li>gamificação;</li>
+<li>comunicação com o participante;</li>
 <li>evidências de evolução.</li>
 </ul>
 <h2 id="product-architecture-journey-limites">Limites<a class="headerlink" href="#product-architecture-journey-limites" title="Permanent link">&para;</a></h2>
@@ -10510,16 +10520,30 @@ Implementação = realização progressiva
 <li>a solução corporativa B2B;</li>
 <li>o núcleo editorial da marca;</li>
 <li>a plataforma de publicidade;</li>
-<li>a camada de inteligência do ecossistema.</li>
+<li>a camada algorítmica de inteligência;</li>
+<li>o processador de pagamentos;</li>
+<li>a infraestrutura técnica comum.</li>
 </ul>
-<p>Pode consumir capacidades e conteúdos desses produtos, mas não os substitui.</p>
+<p>Pode consumir capacidades e conteúdos desses componentes, mas não os substitui.</p>
 <h2 id="product-architecture-journey-relacoes-principais">Relações principais<a class="headerlink" href="#product-architecture-journey-relacoes-principais" title="Permanent link">&para;</a></h2>
 <ul>
 <li>utiliza Guivos Intelligence para interpretação de contexto e recomendações;</li>
 <li>direciona participantes para ofertas do Guivos Mall e do Guivos Travel;</li>
 <li>recebe conteúdos do Guivos Media;</li>
 <li>pode integrar jornadas corporativas do Guivos Business;</li>
-<li>pode exibir ativações patrocinadas operadas pelo Guivos Ads.</li>
+<li>pode exibir ativações patrocinadas operadas pelo Guivos Ads;</li>
+<li>utiliza capacidades comuns da Platform Layer, como autenticação, busca, notificações, billing e grafo.</li>
+</ul>
+<h2 id="product-architecture-journey-decisao-de-responsabilidade">Decisão de responsabilidade<a class="headerlink" href="#product-architecture-journey-decisao-de-responsabilidade" title="Permanent link">&para;</a></h2>
+<p>O Journey é responsável pela experiência visível do participante.</p>
+<p>As capacidades especializadas permanecem nos componentes correspondentes:</p>
+<ul>
+<li>inteligência algorítmica: Guivos Intelligence;</li>
+<li>compras e produtos: Guivos Mall;</li>
+<li>organizações e B2B: Guivos Business;</li>
+<li>viagens e reservas: Guivos Travel;</li>
+<li>conteúdos editoriais: Guivos Media;</li>
+<li>publicidade e patrocínios: Guivos Ads.</li>
 </ul>
 <h2 id="product-architecture-journey-decisao-de-nomenclatura">Decisão de nomenclatura<a class="headerlink" href="#product-architecture-journey-decisao-de-nomenclatura" title="Permanent link">&para;</a></h2>
 <p>Guivos Journey substitui o uso anterior de “Comunidade Guivos” como nome amplo de produto.</p>
