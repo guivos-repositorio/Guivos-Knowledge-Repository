@@ -2,7 +2,7 @@
 id: GE2-SYNC-002
 title: GKA Conceptual Architecture Progress Sync
 status: completed
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-04
 scope: GKA-000 Parts II-IV and Part V transition
@@ -122,34 +122,34 @@ Essa alteração reconhece que a estrutura da GKA já foi construída pelas Part
 | H-GKM-001 | Diferentes categorias de conhecimento institucional exigem diferentes critérios de validação, consolidação e promoção à Canon | Nova hipótese | Deve alimentar futuramente o `GKM-001` |
 | H-GEA-005 | Arquiteturas institucionais de primeira classe convergem para estrutura documental composta por Identidade, Papel, Fundamentos, Integrações e Evolução Institucional | Nova hipótese | Deve ser validada em outras arquiteturas antes de qualquer promoção |
 
-## 10. Documentos impactados
+## 10. Documentos sincronizados
 
-| Documento | Alteração necessária |
+| Documento | Status |
 |---|---|
-| `README.md` | Atualizar progresso do GKA-000 e parte atual |
-| `docs/index.md` | Atualizar estado atual e missão |
-| `CHANGELOG.md` | Registrar versão `0.28.3` |
-| `docs/project/knowledge-board.md` | Atualizar progresso do GKA-000 e hipóteses |
-| `docs/roadmap.md` | Atualizar fluxo atual da sprint |
-| `docs/project/architectural-milestones.md` | Registrar subestado de progresso do GKA-000 |
-| `docs/project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md` | Atualizar ponto de retomada e progresso |
-| `docs/glossary.md` | Incluir termos sobre categorias de conhecimento, se necessário |
-| `mkdocs.yml` | Incluir `GE2-SYNC-002` na navegação |
+| `README.md` | Atualizado |
+| `docs/index.md` | Atualizado |
+| `CHANGELOG.md` | Atualizado |
+| `docs/project/knowledge-board.md` | Atualizado |
+| `docs/roadmap.md` | Atualizado |
+| `docs/project/architectural-milestones.md` | Atualizado |
+| `docs/project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md` | Atualizado |
+| `docs/glossary.md` | Atualizado |
+| `mkdocs.yml` | Atualizado |
 
 ## 11. Checklist de sincronização
 
 - [x] Criar `GE2-SYNC-002`;
-- [ ] README;
-- [ ] Página inicial do GKR;
-- [ ] Changelog;
-- [ ] Knowledge Board;
-- [ ] Roadmap;
-- [ ] Architectural Milestones;
-- [ ] Checkpoint vigente;
-- [ ] Glossário, se aplicável;
-- [ ] MkDocs;
-- [ ] Confirmar que `docs/knowledge-architecture/` continua não criado;
-- [ ] Retomar GKA-000 pela Parte V — Evolução Institucional.
+- [x] README;
+- [x] Página inicial do GKR;
+- [x] Changelog;
+- [x] Knowledge Board;
+- [x] Roadmap;
+- [x] Architectural Milestones;
+- [x] Checkpoint vigente;
+- [x] Glossário, se aplicável;
+- [x] MkDocs;
+- [x] Confirmar que `docs/knowledge-architecture/` continua não criado;
+- [x] Retomar GKA-000 pela Parte V — Evolução Institucional.
 
 ## 12. Regra de preservação
 
