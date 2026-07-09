@@ -2,41 +2,40 @@
 id: CHECKPOINT-GKA-PREPARATION-COMPLETE
 title: GKA Preparation Complete Checkpoint
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-07-04
 supersedes:
   - CHECKPOINT-GE2-GKA-FOUNDATION
 related_sync:
   - GE2-SYNC-001
+  - GE2-SYNC-002
 ---
 
 # GKA Preparation Complete Checkpoint
 
 ## Finalidade
 
-Este checkpoint registra o encerramento da fase de concepção e preparação da Guivos Knowledge Architecture e estabelece o início da fase de redação institucional do `GKA-000 — Guivos Knowledge Architecture`.
+Este checkpoint registra o encerramento da fase de concepção e preparação da Guivos Knowledge Architecture e estabelece o estado de retomada da redação institucional do `GKA-000 — Guivos Knowledge Architecture`.
 
-Ele substitui o checkpoint `CHECKPOINT-GE2-GKA-FOUNDATION` como ponto principal de retomada e foi complementado pela matriz `GE2-SYNC-001 — Architectural Synchronization Matrix`.
+Ele substitui o checkpoint `CHECKPOINT-GE2-GKA-FOUNDATION` como ponto principal de retomada e foi complementado pelas matrizes `GE2-SYNC-001` e `GE2-SYNC-002`.
 
 ## Estado institucional
 
 - `GE-1 — Foundation & Architecture`: concluída.
-- `GE-2 — Knowledge`: ativa.
+- `GE-2 — Knowledge`: ativa em `Institutional Consolidation Mode`.
 - `M4 — Knowledge Architecture Established`: concluído.
 - `M5 — GKA Foundation Started`: ativo.
 - `M5.1 — GKA Preparation Complete`: concluído.
 - `M5.2 — GKA Institutional Consolidation Registered`: concluído.
+- `M5.3 — GKA Conceptual Architecture Advanced`: concluído.
 - `ADR-006`: aprovado.
 - `GEF-001`: ativo.
-- `GE2-SYNC-001`: ativo.
+- `GE2-SYNC-001`: concluído.
+- `GE2-SYNC-002`: concluído.
 - `A2-R02 — Fundamental Model Review`: ativa e em espera operacional até a conclusão da GKA Foundation.
 
 ## Mudança de estado
-
-A Guivos Knowledge Architecture deixou a fase de concepção e preparação e entrou em fase de redação institucional.
-
-Após as decisões posteriores, o modo vigente da GE-2 passa a ser `Institutional Consolidation Mode`.
 
 ```text
 GKA Discovery & Preparation
@@ -47,15 +46,21 @@ GKA Institutional Writing
 
 GE-2 Institutional Consolidation Mode
   -> Active
+
+GKA-000 Parts I-IV
+  -> Completed Conceptually
+
+GKA-000 Part V — Institutional Evolution
+  -> Current
 ```
 
 ## Sprint vigente
 
 **Versão planejada:** `0.28.0 — Guivos Knowledge Architecture Foundation`.
 
-**Estado:** preparação concluída; consolidação institucional ativa.
+**Estado:** preparação concluída; consolidação institucional ativa; GKA-000 em desenvolvimento pela Parte V.
 
-**Atividade principal:** redigir, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture` por capítulos institucionais.
+**Atividade principal:** concluir a Parte V — Evolução Institucional do `GKA-000 — Guivos Knowledge Architecture`.
 
 ## Escopo aprovado da GKA v1.0
 
@@ -72,15 +77,23 @@ A primeira fundação documental deverá conter apenas oito ativos:
 
 Não criar nesta fase documentos independentes de governança, rastreabilidade ou maturidade, nem novos produtos, arquiteturas permanentes ou domínios estruturais.
 
-## Estrutura aprovada do GKA-000
+## Progresso atual do GKA-000
 
-O `GKA-000` deverá ser desenvolvido em cinco partes:
+| Parte | Título | Estado |
+|---|---|---|
+| I | Identidade da GKA | Concluída conceitualmente |
+| II | Papel Institucional | Concluída conceitualmente |
+| III | Fundamentos | Concluída conceitualmente |
+| IV | Integrações Arquiteturais | Concluída conceitualmente |
+| V | Evolução Institucional | Em desenvolvimento |
+
+## Estrutura atual do GKA-000
 
 1. **Identidade da GKA** — declaração institucional, abertura institucional, definição, propósito, missão e pergunta permanente.
 2. **Papel institucional** — papel institucional, competências institucionais, responsabilidades permanentes, limites arquiteturais e fora do escopo.
-3. **Fundamentos** — princípios permanentes, diretrizes institucionais, fluxo institucional do conhecimento e avaliação da hipótese `H-GKA-001`.
-4. **Integrações arquiteturais** — relação com Foundation, GEA, Canon, Research e Inteligência do Ecossistema.
-5. **Estrutura e evolução** — arquitetura interna, governança, critérios de estabilidade, dependências e referências canônicas.
+3. **Fundamentos** — princípios fundamentais, diretrizes institucionais, ciclo de vida do conhecimento, investigação do modelo fundamental e governança da evolução do conhecimento.
+4. **Integrações arquiteturais** — relação com GEA, Business Architecture, Product Architecture, Intelligence Architecture, Research, Governança e Canon.
+5. **Evolução institucional** — evolução da GKA, ciclo de revisão arquitetural, versionamento institucional, continuidade do conhecimento e declaração institucional de encerramento.
 
 ## Declaração institucional aprovada para abertura
 
@@ -179,7 +192,7 @@ Durante a redação do `GKA-000`:
 
 ## Desenvolvimento por Capítulos Institucionais
 
-O `GKA-000` passa a ser desenvolvido por capítulos completos:
+O `GKA-000` é desenvolvido por capítulos completos:
 
 ```text
 Planejamento do Capítulo
@@ -200,32 +213,17 @@ Cada capítulo deverá ser revisado segundo cinco critérios:
 4. Precisão Institucional;
 5. Precisão Sistêmica.
 
-## Regra da Pergunta Única
+## Categorias de conhecimento em investigação
 
-Cada seção do documento deverá existir porque responde uma pergunta arquitetural que nenhuma outra seção responde.
+A GE-2 identificou a hipótese metodológica de que diferentes categorias de conhecimento institucional podem exigir diferentes critérios de validação, consolidação e promoção à Canon.
 
-## Níveis de linguagem
+Categorias atualmente observadas:
 
-A redação institucional deverá distinguir três níveis:
+- conhecimento definicional;
+- conhecimento normativo;
+- conhecimento explicativo.
 
-- **Constitucional:** declarações, princípios e diretrizes;
-- **Arquitetural:** definições, papéis, competências e integrações;
-- **Metodológico:** métodos, modelos, protocolos e processos.
-
-## Competências e responsabilidades
-
-A Parte II do `GKA-000` deverá substituir `Escopo` por `Competências Institucionais`.
-
-- **Competência Institucional:** autoridade institucional sobre determinado fenômeno, ativo, critério ou mecanismo.
-- **Responsabilidade Institucional:** dever permanente assumido perante a organização.
-
-## Governar, gerenciar e executar
-
-A documentação deverá distinguir:
-
-- **Governar:** exercer autoridade institucional sobre princípios, critérios e evolução.
-- **Gerenciar:** conduzir atividades operacionais.
-- **Executar:** realizar ações concretas.
+Essa distinção permanece como hipótese `H-GKM-001` e deverá alimentar futuramente o `GKM-001 — Guivos Knowledge Method`.
 
 ## Hipóteses preservadas fora da Canon
 
@@ -234,8 +232,10 @@ As seguintes ideias permanecem como hipóteses até investigação posterior:
 - `H-GKA-001 — Modelo Fundamental da Aprendizagem Institucional`;
 - `H-GKA-002 — GKA como arquitetura da institucionalização da aprendizagem`;
 - `H-GKA-003 — Transformação da experiência em patrimônio intelectual como fenômeno central da GKA`;
+- `H-GKM-001 — Diferentes categorias de conhecimento institucional exigem diferentes critérios de validação, consolidação e promoção à Canon`;
 - `H-GEA-001 — Toda arquitetura de primeira classe possui Modelo Fundamental próprio quando houver fenômeno central a explicar`;
 - `H-GEA-002 — GKR como infraestrutura cognitiva institucional da Guivos`;
+- `H-GEA-005 — Arquiteturas institucionais de primeira classe convergem para estrutura documental composta por Identidade, Papel, Fundamentos, Integrações e Evolução Institucional`;
 - `Confiança Institucional` como componente formal da GKA;
 - `Knowledge Assets` como classificação canônica;
 - `Patrimônio Institucional` como conceito superior ao conhecimento institucional;
@@ -256,15 +256,15 @@ Esses ativos estão planejados, mas não devem ser criados durante a fundação 
 
 ## Ponto exato de retomada
 
-Retomar pela redação institucional do `GKA-000 — Guivos Knowledge Architecture`, continuando a Parte II — Papel Institucional.
+Retomar pela redação institucional do `GKA-000 — Guivos Knowledge Architecture`, iniciando a Parte V — Evolução Institucional.
 
-A Parte II deverá utilizar a estrutura:
+A Parte V deverá utilizar a estrutura:
 
-1. Papel Institucional;
-2. Competências Institucionais;
-3. Responsabilidades Permanentes;
-4. Limites Arquiteturais;
-5. Fora do Escopo.
+1. Evolução da Guivos Knowledge Architecture;
+2. Ciclo de Revisão Arquitetural;
+3. Versionamento Institucional;
+4. Continuidade do Conhecimento;
+5. Declaração Institucional de Encerramento.
 
 Após aprovação integral do `GKA-000`:
 
