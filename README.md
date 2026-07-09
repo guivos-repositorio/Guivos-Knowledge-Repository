@@ -7,20 +7,19 @@ A partir da GE-2, o GKR também passa a ser reconhecido como o sistema oficial d
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5.3 — GKA Conceptual Architecture Advanced
+- **Marco vigente:** M5.4 — Enterprise Design and GLPA Registered
 - **Modo vigente da GE-2:** Institutional Consolidation Mode
 - **Modo vigente da GKA:** Institutional Writing
 - **Sprint vigente:** 0.28.0 — Guivos Knowledge Architecture Foundation
 - **Checkpoint vigente:** CHECKPOINT-GKA-PREPARATION-COMPLETE 1.2.0
-- **Matrizes de sincronização:** GE2-SYNC-001 e GE2-SYNC-002
-- **Documento atual:** GKA-000 — Guivos Knowledge Architecture
-- **Progresso do GKA-000:** Partes I, II, III e IV concluídas conceitualmente
-- **Capítulo atual:** Parte V — Evolução Institucional
+- **Matrizes de sincronização:** GE2-SYNC-001, GE2-SYNC-002 e GE2-SYNC-003
+- **Documento atual da GKA:** GKA-000 — Parte V — Evolução Institucional
+- **Nova frente registrada:** Enterprise Design & Business Specification
+- **Especificação em desenvolvimento:** PAS-001 — Guivos Journey
+- **Arquitetura funcional registrada:** GLPA-001 — Guivos Layered Product Architecture
 - **Baseline vigente da Foundation:** A2-B3 — Frozen
 - **Fase ativa:** A2 — Functional Architecture Discovery
 - **Revisão ativa:** A2-R02 — Fundamental Model Review, em espera operacional
-- **Arquitetura reconhecida:** Guivos Knowledge Architecture (GKA)
-- **Entregável de referência:** GCCM-001 — Discovery
 - **Produto comercial oficial:** Guivos Mall
 - **Domínio planejado:** Guivos Economic Model
 - **Inteligência consolidada:** Inteligência do Ecossistema Guivos
@@ -33,10 +32,12 @@ Consulte:
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
+- [GE2-SYNC-003 — Enterprise Design and Layered Product Architecture Sync](docs/project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture.md)
 - [GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync](docs/project/GE2-SYNC-002-gka-conceptual-architecture-progress.md)
 - [GE2-SYNC-001 — Architectural Synchronization Matrix](docs/project/GE2-SYNC-001-architectural-synchronization-matrix.md)
+- [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
+- [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
 - [Checkpoint GKA Preparation Complete](docs/project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md)
-- [Checkpoint GE-2 — GKA Foundation](docs/project/CHECKPOINT-GE2-GKA-FOUNDATION.md)
 - [ADR-006 — Guivos Knowledge Architecture](docs/adr/ADR-006-guivos-knowledge-architecture.md)
 - [Fundamental Model Evidence Matrix](docs/validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
 - [GAI-001 — AI Knowledge Model](docs/intelligence-architecture/knowledge-model.md)
@@ -45,22 +46,9 @@ Consulte:
 
 ## Missão atual
 
-Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`, iniciando a Parte V — Evolução Institucional.
-
-A preparação da GKA foi concluída. O trabalho está em modo de consolidação institucional e será conduzido por capítulos institucionais completos.
+Consolidar a especificação funcional inicial do `PAS-001 — Guivos Journey`, retomando pela `GLPA-001 — Guivos Layered Product Architecture`, sem abandonar a conclusão posterior do `GKA-000 — Parte V — Evolução Institucional`.
 
 A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente deverá ser criada após aprovação integral do GKA-000.
-
-## Escopo da GKA Foundation
-
-1. GKA-000 — Guivos Knowledge Architecture;
-2. GKP-001 — Guivos Knowledge Principles;
-3. GKM-001 — Guivos Knowledge Method;
-4. GDP-001 — Guivos Discovery Protocol;
-5. GEM-001 — Guivos Evidence Model;
-6. GKC-001 — Guivos Canonical Consolidation;
-7. GKV-001 — Guivos Knowledge Validation;
-8. GKL-001 — Guivos Knowledge Lifecycle.
 
 ## Progresso do GKA-000
 
@@ -69,6 +57,28 @@ A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente dever�
 - Parte III — Fundamentos: concluída conceitualmente.
 - Parte IV — Integrações Arquiteturais: concluída conceitualmente.
 - Parte V — Evolução Institucional: em desenvolvimento.
+
+## Enterprise Design & Business Specification
+
+A Guivos iniciou uma frente de especificação executável para transformar sua arquitetura institucional em decisões de produto, operação, modelo econômico, comercial e Go-to-Market.
+
+Ordem executiva vigente:
+
+1. Arquitetura funcional dos produtos;
+2. Guivos Economic Model;
+3. Commercial Model;
+4. Go-to-Market.
+
+O primeiro produto/camada em especificação é o `PAS-001 — Guivos Journey`.
+
+## Guivos Layered Product Architecture
+
+A Guivos passa a adotar a GLPA como referência funcional da plataforma:
+
+- Experience Layer: Guivos Journey;
+- Intelligence Layer: Guivos Intelligence;
+- Service Layer: Guivos Business, Mall, Travel, Media e Ads;
+- Platform Layer: APIs, Graph, Auth, Billing, Search, Notifications, Security e demais capacidades comuns.
 
 ## Princípios centrais
 
@@ -104,7 +114,7 @@ A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente dever�
 - Research;
 - Validation e baselines.
 
-## Produtos oficiais
+## Componentes oficiais
 
 - Guivos Journey;
 - Guivos Mall;
@@ -122,7 +132,7 @@ A pasta `docs/knowledge-architecture/` ainda não foi criada. Ela somente dever�
 - `docs/enterprise-architecture/` — visão geral da GEA.
 - `docs/reference-architecture/` — modelos de referência e GCCM.
 - `docs/geb/` — Guivos Ecosystem Blueprint.
-- `docs/product-architecture/` — arquitetura oficial de produtos.
+- `docs/product-architecture/` — arquitetura oficial de produtos, GLPA e especificações PAS.
 - `docs/business-architecture/` — arquitetura de negócio.
 - `docs/intelligence-architecture/` — Inteligência do Ecossistema Guivos, conhecimento, grafo, aprendizagem e IA.
 - `docs/economic-model/` — modelo econômico planejado.
