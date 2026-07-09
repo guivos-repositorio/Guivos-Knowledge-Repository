@@ -94,6 +94,8 @@ nav:
           - Quatro Naturezas Fundamentais: geb/part-02-fundamental-model/four-fundamental-natures.md
   - Arquitetura de Produtos:
       - Visão Geral: product-architecture/index.md
+      - GLPA-001 — Layered Product Architecture: product-architecture/layered-product-architecture.md
+      - PAS-001 — Guivos Journey: product-architecture/pas-001-guivos-journey.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
@@ -134,6 +136,7 @@ nav:
       - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
+      - GE2-SYNC-003 — Enterprise Design and GLPA: project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture.md
       - GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync: project/GE2-SYNC-002-gka-conceptual-architecture-progress.md
       - GE2-SYNC-001 — Architectural Synchronization Matrix: project/GE2-SYNC-001-architectural-synchronization-matrix.md
       - GKA Preparation Complete: project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md
