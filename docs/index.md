@@ -9,14 +9,15 @@ A partir da GE-2, o GKR também passa a operar como sistema institucional de des
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- M5.2 — GKA Institutional Consolidation Registered concluído;
+- M5.3 — GKA Conceptual Architecture Advanced concluído;
 - modo vigente da GE-2: Institutional Consolidation Mode;
 - modo vigente da GKA: Institutional Writing;
 - sprint `0.28.0 — Guivos Knowledge Architecture Foundation` aberta;
-- checkpoint `CHECKPOINT-GKA-PREPARATION-COMPLETE` atualizado para `1.1.0`;
-- matriz `GE2-SYNC-001 — Architectural Synchronization Matrix` registrada;
+- checkpoint `CHECKPOINT-GKA-PREPARATION-COMPLETE` atualizado para `1.2.0`;
+- matrizes `GE2-SYNC-001` e `GE2-SYNC-002` registradas;
 - documento atual: `GKA-000 — Guivos Knowledge Architecture`;
-- capítulo atual: Parte II — Papel Institucional;
+- Partes I, II, III e IV concluídas conceitualmente;
+- capítulo atual: Parte V — Evolução Institucional;
 - Guivos Knowledge Architecture reconhecida por ADR-006;
 - Foundation congelada em `A2-B3`;
 - A2-R02 — Fundamental Model Review ativa e em espera operacional;
@@ -28,7 +29,7 @@ A partir da GE-2, o GKR também passa a operar como sistema institucional de des
 
 ## Missão atual
 
-Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`, dando continuidade à Parte II — Papel Institucional.
+Escrever, revisar e publicar o `GKA-000 — Guivos Knowledge Architecture`, dando continuidade à Parte V — Evolução Institucional.
 
 A GKA está em modo de redação institucional e a GE-2 opera em modo de consolidação institucional.
 
@@ -36,6 +37,7 @@ A pasta `knowledge-architecture/` ainda não foi criada e somente deverá ser cr
 
 ## Acesso rápido
 
+- [GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync](project/GE2-SYNC-002-gka-conceptual-architecture-progress.md)
 - [GE2-SYNC-001 — Architectural Synchronization Matrix](project/GE2-SYNC-001-architectural-synchronization-matrix.md)
 - [Checkpoint GKA Preparation Complete](project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md)
 - [Checkpoint GE-2 — GKA Foundation](project/CHECKPOINT-GE2-GKA-FOUNDATION.md)
@@ -51,6 +53,14 @@ A pasta `knowledge-architecture/` ainda não foi criada e somente deverá ser cr
 - [GAI-002 — Manifesto da Inteligência do Ecossistema](intelligence-architecture/manifesto.md)
 - [Guivos Economic Model](economic-model/index.md)
 - [Glossário Canônico](glossary.md)
+
+## Progresso do GKA-000
+
+- Parte I — Identidade: concluída conceitualmente.
+- Parte II — Papel Institucional: concluída conceitualmente.
+- Parte III — Fundamentos: concluída conceitualmente.
+- Parte IV — Integrações Arquiteturais: concluída conceitualmente.
+- Parte V — Evolução Institucional: em desenvolvimento.
 
 ## Princípio central da GE-2
 
