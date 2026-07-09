@@ -15577,24 +15577,24 @@ Baseline authorization: YES
 <h2 id="project-ge2-sync-001-architectural-synchronization-matrix-10-regra-de-preservacao">10. Regra de preservação<a class="headerlink" href="#project-ge2-sync-001-architectural-synchronization-matrix-10-regra-de-preservacao" title="Permanent link">&para;</a></h2>
 <p>Esta matriz não cria Canon, não publica o GKA-000 e não autoriza a criação do domínio <code>docs/knowledge-architecture/</code>. Sua função é orientar a sincronização do repositório e preservar decisões até que sejam absorvidas pelos documentos apropriados.</p></section><section class="print-page" id="project-checkpoint-gka-preparation-complete" heading-number="16.3"><h1 id="project-checkpoint-gka-preparation-complete-gka-preparation-complete-checkpoint">GKA Preparation Complete Checkpoint<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-gka-preparation-complete-checkpoint" title="Permanent link">&para;</a></h1>
 <h2 id="project-checkpoint-gka-preparation-complete-finalidade">Finalidade<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este checkpoint registra o encerramento da fase de concepção e preparação da Guivos Knowledge Architecture e estabelece o início da fase de redação institucional do <code>GKA-000 — Guivos Knowledge Architecture</code>.</p>
-<p>Ele substitui o checkpoint <code>CHECKPOINT-GE2-GKA-FOUNDATION</code> como ponto principal de retomada e foi complementado pela matriz <code>GE2-SYNC-001 — Architectural Synchronization Matrix</code>.</p>
+<p>Este checkpoint registra o encerramento da fase de concepção e preparação da Guivos Knowledge Architecture e estabelece o estado de retomada da redação institucional do <code>GKA-000 — Guivos Knowledge Architecture</code>.</p>
+<p>Ele substitui o checkpoint <code>CHECKPOINT-GE2-GKA-FOUNDATION</code> como ponto principal de retomada e foi complementado pelas matrizes <code>GE2-SYNC-001</code> e <code>GE2-SYNC-002</code>.</p>
 <h2 id="project-checkpoint-gka-preparation-complete-estado-institucional">Estado institucional<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-estado-institucional" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>GE-1 — Foundation &amp; Architecture</code>: concluída.</li>
-<li><code>GE-2 — Knowledge</code>: ativa.</li>
+<li><code>GE-2 — Knowledge</code>: ativa em <code>Institutional Consolidation Mode</code>.</li>
 <li><code>M4 — Knowledge Architecture Established</code>: concluído.</li>
 <li><code>M5 — GKA Foundation Started</code>: ativo.</li>
 <li><code>M5.1 — GKA Preparation Complete</code>: concluído.</li>
 <li><code>M5.2 — GKA Institutional Consolidation Registered</code>: concluído.</li>
+<li><code>M5.3 — GKA Conceptual Architecture Advanced</code>: concluído.</li>
 <li><code>ADR-006</code>: aprovado.</li>
 <li><code>GEF-001</code>: ativo.</li>
-<li><code>GE2-SYNC-001</code>: ativo.</li>
+<li><code>GE2-SYNC-001</code>: concluído.</li>
+<li><code>GE2-SYNC-002</code>: concluído.</li>
 <li><code>A2-R02 — Fundamental Model Review</code>: ativa e em espera operacional até a conclusão da GKA Foundation.</li>
 </ul>
 <h2 id="project-checkpoint-gka-preparation-complete-mudanca-de-estado">Mudança de estado<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-mudanca-de-estado" title="Permanent link">&para;</a></h2>
-<p>A Guivos Knowledge Architecture deixou a fase de concepção e preparação e entrou em fase de redação institucional.</p>
-<p>Após as decisões posteriores, o modo vigente da GE-2 passa a ser <code>Institutional Consolidation Mode</code>.</p>
 <div class="highlight"><pre><span></span><code>GKA Discovery &amp; Preparation
   -&gt; Completed
 
@@ -15603,11 +15603,17 @@ GKA Institutional Writing
 
 GE-2 Institutional Consolidation Mode
   -&gt; Active
+
+GKA-000 Parts I-IV
+  -&gt; Completed Conceptually
+
+GKA-000 Part V — Institutional Evolution
+  -&gt; Current
 </code></pre></div>
 <h2 id="project-checkpoint-gka-preparation-complete-sprint-vigente">Sprint vigente<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-sprint-vigente" title="Permanent link">&para;</a></h2>
 <p><strong>Versão planejada:</strong> <code>0.28.0 — Guivos Knowledge Architecture Foundation</code>.</p>
-<p><strong>Estado:</strong> preparação concluída; consolidação institucional ativa.</p>
-<p><strong>Atividade principal:</strong> redigir, revisar e consolidar o <code>GKA-000 — Guivos Knowledge Architecture</code> por capítulos institucionais.</p>
+<p><strong>Estado:</strong> preparação concluída; consolidação institucional ativa; GKA-000 em desenvolvimento pela Parte V.</p>
+<p><strong>Atividade principal:</strong> concluir a Parte V — Evolução Institucional do <code>GKA-000 — Guivos Knowledge Architecture</code>.</p>
 <h2 id="project-checkpoint-gka-preparation-complete-escopo-aprovado-da-gka-v10">Escopo aprovado da GKA v1.0<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-escopo-aprovado-da-gka-v10" title="Permanent link">&para;</a></h2>
 <p>A primeira fundação documental deverá conter apenas oito ativos:</p>
 <ol>
@@ -15621,14 +15627,50 @@ GE-2 Institutional Consolidation Mode
 <li><code>GKL-001 — Guivos Knowledge Lifecycle</code>.</li>
 </ol>
 <p>Não criar nesta fase documentos independentes de governança, rastreabilidade ou maturidade, nem novos produtos, arquiteturas permanentes ou domínios estruturais.</p>
-<h2 id="project-checkpoint-gka-preparation-complete-estrutura-aprovada-do-gka-000">Estrutura aprovada do GKA-000<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-estrutura-aprovada-do-gka-000" title="Permanent link">&para;</a></h2>
-<p>O <code>GKA-000</code> deverá ser desenvolvido em cinco partes:</p>
+<h2 id="project-checkpoint-gka-preparation-complete-progresso-atual-do-gka-000">Progresso atual do GKA-000<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-progresso-atual-do-gka-000" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parte</th>
+<th>Título</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>Identidade da GKA</td>
+<td>Concluída conceitualmente</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Papel Institucional</td>
+<td>Concluída conceitualmente</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Fundamentos</td>
+<td>Concluída conceitualmente</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Integrações Arquiteturais</td>
+<td>Concluída conceitualmente</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Evolução Institucional</td>
+<td>Em desenvolvimento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="project-checkpoint-gka-preparation-complete-estrutura-atual-do-gka-000">Estrutura atual do GKA-000<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-estrutura-atual-do-gka-000" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Identidade da GKA</strong> — declaração institucional, abertura institucional, definição, propósito, missão e pergunta permanente.</li>
 <li><strong>Papel institucional</strong> — papel institucional, competências institucionais, responsabilidades permanentes, limites arquiteturais e fora do escopo.</li>
-<li><strong>Fundamentos</strong> — princípios permanentes, diretrizes institucionais, fluxo institucional do conhecimento e avaliação da hipótese <code>H-GKA-001</code>.</li>
-<li><strong>Integrações arquiteturais</strong> — relação com Foundation, GEA, Canon, Research e Inteligência do Ecossistema.</li>
-<li><strong>Estrutura e evolução</strong> — arquitetura interna, governança, critérios de estabilidade, dependências e referências canônicas.</li>
+<li><strong>Fundamentos</strong> — princípios fundamentais, diretrizes institucionais, ciclo de vida do conhecimento, investigação do modelo fundamental e governança da evolução do conhecimento.</li>
+<li><strong>Integrações arquiteturais</strong> — relação com GEA, Business Architecture, Product Architecture, Intelligence Architecture, Research, Governança e Canon.</li>
+<li><strong>Evolução institucional</strong> — evolução da GKA, ciclo de revisão arquitetural, versionamento institucional, continuidade do conhecimento e declaração institucional de encerramento.</li>
 </ol>
 <h2 id="project-checkpoint-gka-preparation-complete-declaracao-institucional-aprovada-para-abertura">Declaração institucional aprovada para abertura<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-declaracao-institucional-aprovada-para-abertura" title="Permanent link">&para;</a></h2>
 <p>A capacidade de uma organização evoluir de forma consistente depende diretamente da sua capacidade de transformar experiência em conhecimento, conhecimento em decisões e decisões em impacto.</p>
@@ -15694,7 +15736,7 @@ GE-2 Institutional Consolidation Mode
 <li>a pasta <code>docs/knowledge-architecture/</code> somente será criada após aprovação integral do <code>GKA-000</code>.</li>
 </ul>
 <h2 id="project-checkpoint-gka-preparation-complete-desenvolvimento-por-capitulos-institucionais">Desenvolvimento por Capítulos Institucionais<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-desenvolvimento-por-capitulos-institucionais" title="Permanent link">&para;</a></h2>
-<p>O <code>GKA-000</code> passa a ser desenvolvido por capítulos completos:</p>
+<p>O <code>GKA-000</code> é desenvolvido por capítulos completos:</p>
 <div class="highlight"><pre><span></span><code>Planejamento do Capítulo
   -&gt; Redação Completa
   -&gt; Revisão em Cinco Níveis
@@ -15711,36 +15753,25 @@ GE-2 Institutional Consolidation Mode
 <li>Precisão Institucional;</li>
 <li>Precisão Sistêmica.</li>
 </ol>
-<h2 id="project-checkpoint-gka-preparation-complete-regra-da-pergunta-unica">Regra da Pergunta Única<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-regra-da-pergunta-unica" title="Permanent link">&para;</a></h2>
-<p>Cada seção do documento deverá existir porque responde uma pergunta arquitetural que nenhuma outra seção responde.</p>
-<h2 id="project-checkpoint-gka-preparation-complete-niveis-de-linguagem">Níveis de linguagem<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-niveis-de-linguagem" title="Permanent link">&para;</a></h2>
-<p>A redação institucional deverá distinguir três níveis:</p>
+<h2 id="project-checkpoint-gka-preparation-complete-categorias-de-conhecimento-em-investigacao">Categorias de conhecimento em investigação<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-categorias-de-conhecimento-em-investigacao" title="Permanent link">&para;</a></h2>
+<p>A GE-2 identificou a hipótese metodológica de que diferentes categorias de conhecimento institucional podem exigir diferentes critérios de validação, consolidação e promoção à Canon.</p>
+<p>Categorias atualmente observadas:</p>
 <ul>
-<li><strong>Constitucional:</strong> declarações, princípios e diretrizes;</li>
-<li><strong>Arquitetural:</strong> definições, papéis, competências e integrações;</li>
-<li><strong>Metodológico:</strong> métodos, modelos, protocolos e processos.</li>
+<li>conhecimento definicional;</li>
+<li>conhecimento normativo;</li>
+<li>conhecimento explicativo.</li>
 </ul>
-<h2 id="project-checkpoint-gka-preparation-complete-competencias-e-responsabilidades">Competências e responsabilidades<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-competencias-e-responsabilidades" title="Permanent link">&para;</a></h2>
-<p>A Parte II do <code>GKA-000</code> deverá substituir <code>Escopo</code> por <code>Competências Institucionais</code>.</p>
-<ul>
-<li><strong>Competência Institucional:</strong> autoridade institucional sobre determinado fenômeno, ativo, critério ou mecanismo.</li>
-<li><strong>Responsabilidade Institucional:</strong> dever permanente assumido perante a organização.</li>
-</ul>
-<h2 id="project-checkpoint-gka-preparation-complete-governar-gerenciar-e-executar">Governar, gerenciar e executar<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-governar-gerenciar-e-executar" title="Permanent link">&para;</a></h2>
-<p>A documentação deverá distinguir:</p>
-<ul>
-<li><strong>Governar:</strong> exercer autoridade institucional sobre princípios, critérios e evolução.</li>
-<li><strong>Gerenciar:</strong> conduzir atividades operacionais.</li>
-<li><strong>Executar:</strong> realizar ações concretas.</li>
-</ul>
+<p>Essa distinção permanece como hipótese <code>H-GKM-001</code> e deverá alimentar futuramente o <code>GKM-001 — Guivos Knowledge Method</code>.</p>
 <h2 id="project-checkpoint-gka-preparation-complete-hipoteses-preservadas-fora-da-canon">Hipóteses preservadas fora da Canon<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-hipoteses-preservadas-fora-da-canon" title="Permanent link">&para;</a></h2>
 <p>As seguintes ideias permanecem como hipóteses até investigação posterior:</p>
 <ul>
 <li><code>H-GKA-001 — Modelo Fundamental da Aprendizagem Institucional</code>;</li>
 <li><code>H-GKA-002 — GKA como arquitetura da institucionalização da aprendizagem</code>;</li>
 <li><code>H-GKA-003 — Transformação da experiência em patrimônio intelectual como fenômeno central da GKA</code>;</li>
+<li><code>H-GKM-001 — Diferentes categorias de conhecimento institucional exigem diferentes critérios de validação, consolidação e promoção à Canon</code>;</li>
 <li><code>H-GEA-001 — Toda arquitetura de primeira classe possui Modelo Fundamental próprio quando houver fenômeno central a explicar</code>;</li>
 <li><code>H-GEA-002 — GKR como infraestrutura cognitiva institucional da Guivos</code>;</li>
+<li><code>H-GEA-005 — Arquiteturas institucionais de primeira classe convergem para estrutura documental composta por Identidade, Papel, Fundamentos, Integrações e Evolução Institucional</code>;</li>
 <li><code>Confiança Institucional</code> como componente formal da GKA;</li>
 <li><code>Knowledge Assets</code> como classificação canônica;</li>
 <li><code>Patrimônio Institucional</code> como conceito superior ao conhecimento institucional;</li>
@@ -15758,14 +15789,14 @@ GE-2 Institutional Consolidation Mode
 </ul>
 <p>Esses ativos estão planejados, mas não devem ser criados durante a fundação documental da GKA.</p>
 <h2 id="project-checkpoint-gka-preparation-complete-ponto-exato-de-retomada">Ponto exato de retomada<a class="headerlink" href="#project-checkpoint-gka-preparation-complete-ponto-exato-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Retomar pela redação institucional do <code>GKA-000 — Guivos Knowledge Architecture</code>, continuando a Parte II — Papel Institucional.</p>
-<p>A Parte II deverá utilizar a estrutura:</p>
+<p>Retomar pela redação institucional do <code>GKA-000 — Guivos Knowledge Architecture</code>, iniciando a Parte V — Evolução Institucional.</p>
+<p>A Parte V deverá utilizar a estrutura:</p>
 <ol>
-<li>Papel Institucional;</li>
-<li>Competências Institucionais;</li>
-<li>Responsabilidades Permanentes;</li>
-<li>Limites Arquiteturais;</li>
-<li>Fora do Escopo.</li>
+<li>Evolução da Guivos Knowledge Architecture;</li>
+<li>Ciclo de Revisão Arquitetural;</li>
+<li>Versionamento Institucional;</li>
+<li>Continuidade do Conhecimento;</li>
+<li>Declaração Institucional de Encerramento.</li>
 </ol>
 <p>Após aprovação integral do <code>GKA-000</code>:</p>
 <ol>
