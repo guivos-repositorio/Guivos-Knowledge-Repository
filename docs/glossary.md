@@ -2,7 +2,7 @@
 id: GKR-GLOSSARY-001
 title: Glossário Canônico da Guivos
 status: consolidated
-version: 1.5.0
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -154,6 +154,24 @@ Responsabilidade expressa pelo que a arquitetura responde, não apenas pelo que 
 ## Diretriz Institucional
 
 Interpretação operacional de um princípio permanente, utilizada para orientar decisões institucionais sem descer ao nível de processo ou implementação.
+
+## Conhecimento Definicional
+
+Categoria de conhecimento institucional em investigação, relacionada à definição precisa de termos, conceitos e distinções arquiteturais.
+
+Permanece vinculada à hipótese `H-GKM-001` até validação metodológica futura.
+
+## Conhecimento Normativo
+
+Categoria de conhecimento institucional em investigação, relacionada a princípios, diretrizes, critérios e normas institucionais que orientam decisões permanentes.
+
+Permanece vinculada à hipótese `H-GKM-001` até validação metodológica futura.
+
+## Conhecimento Explicativo
+
+Categoria de conhecimento institucional em investigação, relacionada a modelos que buscam explicar fenômenos arquiteturais ou institucionais.
+
+Modelos explicativos exigem demonstração e validação mais rigorosas que definições conceituais isoladas.
 
 ## Governar
 
