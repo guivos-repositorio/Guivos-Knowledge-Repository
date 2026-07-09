@@ -2,7 +2,7 @@
 id: GKR-GLOSSARY-001
 title: Glossário Canônico da Guivos
 status: consolidated
-version: 1.6.0
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -49,7 +49,45 @@ O uso anterior de “Comunidade Guivos” como nome amplo de produto foi substit
 
 ## Guivos Journey
 
-Produto responsável por apoiar continuamente a jornada do participante dentro do Ecossistema Guivos.
+Camada principal de experiência do Ecossistema Guivos, responsável por orquestrar a experiência unificada do participante, apoiar sua jornada contínua e apresentar recomendações, oportunidades, objetivos, conteúdos e interações de forma contextual.
+
+Na GLPA, Guivos Journey pertence à **Experience Layer**.
+
+## PAS — Product Architecture Specification
+
+Formato de especificação de produto utilizado para descrever visão, filosofia, responsabilidades, arquitetura funcional, fluxos, inteligência, integrações, modelo econômico, KPIs e roadmap de um componente da Guivos.
+
+## PAS-001 — Guivos Journey
+
+Primeira Product Architecture Specification da Guivos, dedicada a especificar o Guivos Journey como camada principal de experiência do ecossistema.
+
+## GLPA — Guivos Layered Product Architecture
+
+Arquitetura funcional que organiza os componentes da Guivos por camadas de responsabilidade: Experience Layer, Intelligence Layer, Service Layer e Platform Layer.
+
+A GLPA complementa a Arquitetura de Produtos ao diferenciar a natureza funcional dos componentes oficiais.
+
+## Experience Layer
+
+Camada responsável pela experiência unificada do participante.
+
+Na Guivos, a Experience Layer é representada pelo Guivos Journey.
+
+## Intelligence Layer
+
+Camada transversal responsável pela interpretação contextual, recomendações, personalização, inteligência aplicada e aprendizagem do ecossistema.
+
+Na Guivos, a Intelligence Layer é representada pelo Guivos Intelligence.
+
+## Service Layer
+
+Camada responsável por capacidades especializadas do ecossistema.
+
+Na Guivos, inclui Guivos Business, Guivos Mall, Guivos Travel, Guivos Media e Guivos Ads.
+
+## Platform Layer
+
+Camada de capacidades técnicas comuns que sustentam os demais componentes, incluindo APIs, Graph, Auth, Billing, Search, Notifications, Security, dados e infraestrutura.
 
 ## Guivos Mall
 
@@ -63,9 +101,13 @@ Substitui `Guivos Marketplace` como nome oficial do produto comercial.
 
 Produto responsável por viagens e experiências relacionadas a deslocamento, destinos e turismo.
 
+Na GLPA, pertence à Service Layer.
+
 ## Guivos Business
 
 Produto responsável pelas soluções da Guivos para empresas e demais organizações.
+
+Na GLPA, pertence à Service Layer.
 
 ## Guivos Media
 
@@ -73,9 +115,13 @@ Produto responsável pela produção, organização e distribuição de conteúd
 
 Substitui “Guivos Podcast” como nome de produto.
 
+Na GLPA, pertence à Service Layer.
+
 ## Guivos Intelligence
 
-Produto responsável por entregar a **Inteligência do Ecossistema Guivos**.
+Componente responsável por entregar a **Inteligência do Ecossistema Guivos**.
+
+Na GLPA, Guivos Intelligence pertence à **Intelligence Layer** e atua de forma transversal para Journey, Mall, Business, Travel, Media e Ads.
 
 Substitui “Guivos Insights” como nome de produto.
 
@@ -95,11 +141,17 @@ O grafo representa um patrimônio cumulativo do ecossistema. Sua ontologia forma
 
 Produto responsável por publicidade, mídia patrocinada e soluções para anunciantes dentro do Ecossistema Guivos.
 
+Na GLPA, pertence à Service Layer.
+
 ## Guivos Economic Model
 
 Domínio planejado do GKR responsável por descrever princípios econômicos, fontes de receita, planos, incentivos, sustentabilidade financeira, limites de monetização e relações entre propósito, impacto e geração de valor.
 
 Seu princípio inicial estabelece que planos pagos podem acelerar, ampliar e personalizar jornadas, mas não devem bloquear a evolução de participantes gratuitos.
+
+## Enterprise Design & Business Specification
+
+Frente de especificação executável da Guivos dedicada a transformar arquitetura institucional em decisões de produto, operação, modelo econômico, modelo comercial e Go-to-Market.
 
 ## Guivos Knowledge Architecture
 
@@ -192,6 +244,12 @@ Diretriz segundo a qual toda arquitetura de primeira classe deve possuir uma res
 ## Princípio da Autocoerência Arquitetural
 
 Diretriz segundo a qual toda arquitetura da Guivos deve submeter sua própria evolução aos princípios, métodos e critérios que estabelece para os demais ativos arquiteturais.
+
+## Princípio da Continuidade Evolutiva
+
+Hipótese transversal segundo a qual entidades permanentes do Ecossistema Guivos tendem a evoluir preservando sua identidade enquanto ampliam progressivamente sua capacidade de cumprir seu propósito.
+
+Permanece como hipótese `H-GEF-001` até validação futura.
 
 ## Modelo Fundamental da Aprendizagem Institucional
 
