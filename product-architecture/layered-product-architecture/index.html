@@ -7,6 +7,8 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
 <meta content="Guivos" name="author"/>
+<link href="../" rel="prev"/>
+<link href="../pas-001-guivos-journey/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Guivos Layered Product Architecture - Guivos Knowledge Repository</title>
@@ -708,8 +710,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
 <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
 <span class="md-ellipsis">
     
@@ -721,7 +723,7 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
             
@@ -742,6 +744,280 @@
     
   </span>
 <span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    GLPA-001 — Layered Product Architecture
+  
+
+    
+  </span>
+<span class="md-status md-status--approved"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    GLPA-001 — Layered Product Architecture
+  
+
+    
+  </span>
+<span class="md-status md-status--approved"></span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-finalidade">
+<span class="md-ellipsis">
+      
+        1. Finalidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-decisao-estrutural">
+<span class="md-ellipsis">
+      
+        2. Decisão estrutural
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-arquitetura-em-camadas">
+<span class="md-ellipsis">
+      
+        3. Arquitetura em camadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-experience-layer">
+<span class="md-ellipsis">
+      
+        4. Experience Layer
+      
+    </span>
+</a>
+<nav aria-label="4. Experience Layer" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#componente-principal">
+<span class="md-ellipsis">
+      
+        Componente principal
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#responsabilidades">
+<span class="md-ellipsis">
+      
+        Responsabilidades
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-intelligence-layer">
+<span class="md-ellipsis">
+      
+        5. Intelligence Layer
+      
+    </span>
+</a>
+<nav aria-label="5. Intelligence Layer" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#componente-principal_1">
+<span class="md-ellipsis">
+      
+        Componente principal
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#responsabilidades_1">
+<span class="md-ellipsis">
+      
+        Responsabilidades
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-service-layer">
+<span class="md-ellipsis">
+      
+        6. Service Layer
+      
+    </span>
+</a>
+<nav aria-label="6. Service Layer" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#componentes-principais">
+<span class="md-ellipsis">
+      
+        Componentes principais
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#responsabilidades_2">
+<span class="md-ellipsis">
+      
+        Responsabilidades
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-platform-layer">
+<span class="md-ellipsis">
+      
+        7. Platform Layer
+      
+    </span>
+</a>
+<nav aria-label="7. Platform Layer" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#responsabilidades_3">
+<span class="md-ellipsis">
+      
+        Responsabilidades
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8-regras-de-responsabilidade">
+<span class="md-ellipsis">
+      
+        8. Regras de responsabilidade
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9-exemplos-de-decisao-funcional">
+<span class="md-ellipsis">
+      
+        9. Exemplos de decisão funcional
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-organizacao-publica-sugerida">
+<span class="md-ellipsis">
+      
+        10. Organização pública sugerida
+      
+    </span>
+</a>
+<nav aria-label="10. Organização pública sugerida" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#experiencia">
+<span class="md-ellipsis">
+      
+        Experiência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inteligencia">
+<span class="md-ellipsis">
+      
+        Inteligência
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#solucoes">
+<span class="md-ellipsis">
+      
+        Soluções
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-relacao-com-a-arquitetura-de-produtos">
+<span class="md-ellipsis">
+      
+        11. Relação com a Arquitetura de Produtos
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-ponto-de-aplicacao">
+<span class="md-ellipsis">
+      
+        12. Ponto de aplicação
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13-estado">
+<span class="md-ellipsis">
+      
+        13. Estado
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001 — Guivos Journey
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -1364,6 +1640,19 @@
     
   </span>
 <span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-003 — Enterprise Design and GLPA
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
 </a>
 </li>
 <li class="md-nav__item">
