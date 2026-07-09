@@ -1,7 +1,7 @@
 ---
 title: Architectural Milestones
 status: active
-version: 4.3.0
+version: 4.4.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -22,6 +22,7 @@ Registro oficial dos principais marcos de maturidade arquitetural da Guivos.
 | M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA com escopo e checkpoint definidos |
 | M5.1 — GKA Preparation Complete | Completed | Encerrar a preparação da GKA e iniciar a redação institucional do GKA-000 |
 | M5.2 — GKA Institutional Consolidation Registered | Completed | Registrar decisões metodológicas posteriores à preparação da GKA |
+| M5.3 — GKA Conceptual Architecture Advanced | Completed | Registrar conclusão conceitual das Partes II, III e IV do GKA-000 |
 | A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
 | K1 — Fundamental Knowledge Frozen | Planned | Congelar o conhecimento fundamental após A2-R02 |
 | A3 — Operational Architecture | Planned | Descrever cooperação e fluxos entre capacidades |
@@ -131,10 +132,6 @@ A fase de concepção e preparação da Guivos Knowledge Architecture foi conclu
 - hipóteses promissoras preservadas fora da Canon;
 - ponto de retomada definido na redação institucional do `GKA-000`.
 
-### Efeito
-
-A preparação da GKA foi encerrada. A atividade passou a ser escrever, revisar e consolidar o `GKA-000 — Guivos Knowledge Architecture`.
-
 ## M5.2 — GKA Institutional Consolidation Registered
 
 **Estado:** Completed em 04/07/2026.
@@ -158,9 +155,30 @@ As decisões metodológicas e arquiteturais posteriores ao checkpoint de prepara
 - `GEA-DOC-001` e `GEA-DOC-002` adicionados ao roadmap como planejados;
 - Glossário Canônico atualizado para `1.5.0`.
 
+## M5.3 — GKA Conceptual Architecture Advanced
+
+**Estado:** Completed em 04/07/2026.
+
+### Critério de conclusão
+
+As Partes II, III e IV do `GKA-000 — Guivos Knowledge Architecture` foram concluídas conceitualmente, e a Parte V foi redefinida como `Evolução Institucional`.
+
+### Resultados
+
+- `GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync` criado;
+- `CHECKPOINT-GKA-PREPARATION-COMPLETE` atualizado para a versão `1.2.0`;
+- Parte II — Papel Institucional concluída conceitualmente;
+- Parte III — Fundamentos concluída conceitualmente;
+- Parte IV — Integrações Arquiteturais concluída conceitualmente;
+- Parte V alterada de `Estrutura e Evolução` para `Evolução Institucional`;
+- `H-GKM-001` registrada como hipótese metodológica fora da Canon;
+- `H-GEA-005` registrada como hipótese metodológica fora da Canon;
+- distinção entre conhecimento definicional, normativo e explicativo registrada como hipótese metodológica;
+- decisão de tratar modelos explicativos como exigindo critérios superiores de validação registrada.
+
 ### Efeito
 
-A GE-2 entra em modo de consolidação institucional. O próximo trabalho permanece a continuidade da Parte II do `GKA-000`, sem criação da pasta `docs/knowledge-architecture/` antes da aprovação integral do documento.
+O próximo trabalho da GE-2 é concluir a Parte V — Evolução Institucional do GKA-000, preservando a restrição de não criar `docs/knowledge-architecture/` antes da aprovação integral do documento.
 
 ## A2 — Functional Architecture Discovery
 
