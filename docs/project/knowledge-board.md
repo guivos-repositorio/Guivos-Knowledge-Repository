@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 4.5.0
+version: 4.6.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -20,8 +20,10 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA |
 | M5.1 — GKA Preparation Complete | Completed | Encerrar preparação e iniciar redação institucional |
 | M5.2 — GKA Institutional Consolidation Registered | Completed | Registrar decisões metodológicas posteriores à preparação |
-| GE2-SYNC-001 | Active 1.0.0 | Matriz de sincronização arquitetural da GE-2 |
-| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.1.0 | Preservar decisões e ponto de retomada do GKA-000 |
+| M5.3 — GKA Conceptual Architecture Advanced | Completed | Registrar conclusão conceitual das Partes II, III e IV |
+| GE2-SYNC-001 | Completed 1.1.0 | Matriz de sincronização arquitetural da GE-2 |
+| GE2-SYNC-002 | Completed 1.0.0 | Matriz de progresso conceitual do GKA-000 |
+| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.2.0 | Preservar decisões e ponto de retomada do GKA-000 |
 | CHECKPOINT-GE2-GKA-FOUNDATION | Superseded 1.1.0 | Registro histórico do checkpoint anterior |
 | ADR-006 | Approved | Institucionalizar a Guivos Knowledge Architecture |
 | GEF-001 | Active 1.0.0 | Registrar as eras de evolução institucional da Guivos |
@@ -42,8 +44,9 @@ Painel oficial de acompanhamento do patrimônio intelectual e arquitetural da Gu
 | Modo GE-2 | Institutional Consolidation Mode |
 | Modo GKA | Institutional Writing |
 | Documento atual | `GKA-000 — Guivos Knowledge Architecture` |
-| Capítulo atual | Parte II — Papel Institucional |
-| Foco | Consolidar Papel, Competências, Responsabilidades, Limites e Fora do Escopo |
+| Progresso | Partes I, II, III e IV concluídas conceitualmente |
+| Capítulo atual | Parte V — Evolução Institucional |
+| Foco | Evolução da GKA, revisão arquitetural, versionamento, continuidade e encerramento institucional |
 | Pasta `knowledge-architecture/` | Ainda não criada |
 | Publicação de ativos GKA | Aguardando aprovação integral do GKA-000 |
 
@@ -68,6 +71,52 @@ Escopo aprovado da primeira fundação:
 
 Não criar nesta fase documentos independentes de governança, rastreabilidade ou maturidade, novos produtos, novas arquiteturas permanentes ou novos domínios estruturais.
 
+## Progresso do GKA-000
+
+| Parte | Título | Estado |
+|---|---|---|
+| I | Identidade da GKA | Concluída conceitualmente |
+| II | Papel Institucional | Concluída conceitualmente |
+| III | Fundamentos | Concluída conceitualmente |
+| IV | Integrações Arquiteturais | Concluída conceitualmente |
+| V | Evolução Institucional | Em desenvolvimento |
+
+## Parte III — Fundamentos
+
+A Parte III ficou conceitualmente concluída com:
+
+1. Princípios Fundamentais;
+2. Diretrizes Institucionais;
+3. Ciclo de Vida do Conhecimento Institucional;
+4. Investigação do Modelo Fundamental da Aprendizagem Institucional;
+5. Governança da Evolução do Conhecimento.
+
+O `Modelo Fundamental da Aprendizagem Institucional` permanece como hipótese de alta maturidade fora da Canon.
+
+## Parte IV — Integrações Arquiteturais
+
+A Parte IV ficou conceitualmente concluída com integrações entre a GKA e:
+
+1. Guivos Enterprise Architecture;
+2. Business Architecture;
+3. Product Architecture;
+4. Intelligence Architecture;
+5. Research;
+6. Governança;
+7. Canon.
+
+## Parte V — Evolução Institucional
+
+Estrutura planejada:
+
+1. Evolução da Guivos Knowledge Architecture;
+2. Ciclo de Revisão Arquitetural;
+3. Versionamento Institucional;
+4. Continuidade do Conhecimento;
+5. Declaração Institucional de Encerramento.
+
+A Parte V substitui a formulação anterior `Estrutura e Evolução`, pois a estrutura da GKA já foi construída conceitualmente pelas Partes I a IV.
+
 ## Método vigente de redação
 
 O `GKA-000` será desenvolvido por Capítulos Institucionais completos:
@@ -81,60 +130,19 @@ Planejamento do Capítulo
   -> Próximo Capítulo
 ```
 
-Cada capítulo deverá passar por:
-
-1. Precisão Conceitual;
-2. Precisão Arquitetural;
-3. Precisão Editorial;
-4. Precisão Institucional;
-5. Precisão Sistêmica.
+Cada capítulo deverá passar por Precisão Conceitual, Precisão Arquitetural, Precisão Editorial, Precisão Institucional e Precisão Sistêmica.
 
 Cada seção deverá responder uma única pergunta arquitetural.
-
-## Parte II — Estrutura vigente
-
-A Parte II do `GKA-000` utilizará a seguinte estrutura:
-
-1. Papel Institucional;
-2. Competências Institucionais;
-3. Responsabilidades Permanentes;
-4. Limites Arquiteturais;
-5. Fora do Escopo.
-
-`Competências Institucionais` substitui `Escopo` como seção principal da Parte II, diferenciando autoridade institucional de dever institucional.
-
-## Ciclo de maturidade do conhecimento
-
-```text
-Ideia
-  -> Hipótese
-  -> Conhecimento Consolidado
-  -> Canon
-```
-
-Esse ciclo orienta a promoção de novos conceitos e protege a arquitetura permanente contra incorporação prematura de ideias ainda não consolidadas.
-
-## Regras metodológicas ativas
-
-- Canon First;
-- Primazia da Canon;
-- Prudência Arquitetural;
-- Conservação Arquitetural;
-- Maturidade Arquitetural;
-- Encerramento de Concepção;
-- Decision Rule 002 — Institutional Writing Readiness;
-- Princípio da Autocoerência Arquitetural;
-- Princípio da Responsabilidade Arquitetural;
-- Regra da Pergunta Única;
-- Desenvolvimento por Capítulos Institucionais.
 
 ## Hipóteses preservadas fora da Canon
 
 - `H-GKA-001 — Modelo Fundamental da Aprendizagem Institucional`;
 - `H-GKA-002 — GKA como arquitetura da institucionalização da aprendizagem`;
 - `H-GKA-003 — Transformação da experiência em patrimônio intelectual como fenômeno central da GKA`;
+- `H-GKM-001 — Diferentes categorias de conhecimento institucional exigem diferentes critérios de validação, consolidação e promoção à Canon`;
 - `H-GEA-001 — Toda arquitetura de primeira classe possui Modelo Fundamental próprio quando houver fenômeno central a explicar`;
 - `H-GEA-002 — GKR como infraestrutura cognitiva institucional da Guivos`;
+- `H-GEA-005 — Arquiteturas institucionais de primeira classe convergem para estrutura documental composta por Identidade, Papel, Fundamentos, Integrações e Evolução Institucional`;
 - Confiança Institucional como componente formal da GKA;
 - Knowledge Assets como classificação canônica;
 - Patrimônio Institucional como conceito superior;
@@ -154,6 +162,7 @@ Esse ciclo orienta a promoção de novos conceitos e protege a arquitetura perma
 |---|---|---|
 | GEA-DOC-001 — Architectural Document Standard | Planned | Definir padrão oficial dos documentos arquiteturais de primeira classe |
 | GEA-DOC-002 — Architectural Artifact Taxonomy | Planned | Definir tipos de artefatos arquiteturais e quando utilizá-los |
+| GKM-001 — Guivos Knowledge Method | Planned within GKA Foundation | Detalhar método de produção, validação, consolidação e promoção do conhecimento |
 
 ## A2-R02 — Fundamental Model Review
 
@@ -187,12 +196,13 @@ Esse ciclo orienta a promoção de novos conceitos e protege a arquitetura perma
 
 | Ativo | Status |
 |---|---|
-| Roadmap Arquitetural | 4.5.0 |
-| Knowledge Board | 4.5.0 |
-| Architectural Milestones | 4.3.0 |
-| Glossário Canônico | Consolidated 1.5.0 |
-| GE2-SYNC-001 | Active 1.0.0 |
-| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.1.0 |
+| Roadmap Arquitetural | 4.6.0 |
+| Knowledge Board | 4.6.0 |
+| Architectural Milestones | 4.4.0 |
+| Glossário Canônico | Consolidated 1.6.0 |
+| GE2-SYNC-001 | Completed 1.1.0 |
+| GE2-SYNC-002 | Completed 1.0.0 |
+| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.2.0 |
 | CHECKPOINT-GE2-GKA-FOUNDATION | Superseded 1.1.0 |
 | GEF-001 | Active 1.0.0 |
 | ADR-006 | Approved |
@@ -206,6 +216,6 @@ Esse ciclo orienta a promoção de novos conceitos e protege a arquitetura perma
 
 ## Próxima atividade
 
-Retomar a redação institucional do `GKA-000 — Guivos Knowledge Architecture`, continuando a Parte II — Papel Institucional.
+Retomar a redação institucional do `GKA-000 — Guivos Knowledge Architecture`, iniciando a Parte V — Evolução Institucional.
 
 A pasta `docs/knowledge-architecture/` somente deverá ser criada após aprovação integral do GKA-000.
