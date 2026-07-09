@@ -10356,9 +10356,10 @@ Implementação = realização progressiva
                         <h1>Arquitetura de Produtos<a class='headerlink' href='#section-9' title='Permanent link'></a>
                         </h1>
                     <section class="print-page" id="product-architecture" heading-number="9.1"><h1 id="product-architecture-arquitetura-de-produtos-da-guivos">Arquitetura de Produtos da Guivos<a class="headerlink" href="#product-architecture-arquitetura-de-produtos-da-guivos" title="Permanent link">&para;</a></h1>
-<p>A Arquitetura de Produtos descreve como o Ecossistema Guivos organiza suas ofertas, interfaces e unidades de valor.</p>
-<p>Ela não substitui o Guivos Ecosystem Blueprint. O GEB explica como o ecossistema funciona; a Arquitetura de Produtos explica como a Guivos entrega valor por meio de produtos distintos e integrados.</p>
-<h2 id="product-architecture-estrutura-oficial">Estrutura oficial<a class="headerlink" href="#product-architecture-estrutura-oficial" title="Permanent link">&para;</a></h2>
+<p>A Arquitetura de Produtos descreve como o Ecossistema Guivos organiza suas ofertas, interfaces, capacidades especializadas, inteligência e unidades de valor.</p>
+<p>Ela não substitui o Guivos Ecosystem Blueprint. O GEB explica como o ecossistema funciona; a Arquitetura de Produtos explica como a Guivos entrega valor por meio de componentes integrados.</p>
+<h2 id="product-architecture-estrutura-oficial-de-componentes">Estrutura oficial de componentes<a class="headerlink" href="#product-architecture-estrutura-oficial-de-componentes" title="Permanent link">&para;</a></h2>
+<p>A estrutura institucional da Guivos reconhece os seguintes componentes oficiais:</p>
 <pre  class="mermaid"><code>graph TD
     E[Guivos Ecosystem]
     E --> J[Guivos Journey]
@@ -10369,14 +10370,49 @@ Implementação = realização progressiva
     E --> I[Guivos Intelligence]
     E --> A[Guivos Ads]
 </code></pre>
+<p>Essa estrutura é útil para apresentação institucional e organização documental.</p>
+<p>Entretanto, para fins de construção, operação e evolução funcional da plataforma, a Guivos passa a adotar também a <code>GLPA-001 — Guivos Layered Product Architecture</code>.</p>
+<h2 id="product-architecture-arquitetura-funcional-em-camadas">Arquitetura funcional em camadas<a class="headerlink" href="#product-architecture-arquitetura-funcional-em-camadas" title="Permanent link">&para;</a></h2>
+<pre  class="mermaid"><code>graph TD
+    G[Guivos]
+
+    G --> EL[Experience Layer]
+    EL --> J[Guivos Journey]
+
+    G --> IL[Intelligence Layer]
+    IL --> I[Guivos Intelligence]
+
+    G --> SL[Service Layer]
+    SL --> B[Guivos Business]
+    SL --> M[Guivos Mall]
+    SL --> T[Guivos Travel]
+    SL --> MD[Guivos Media]
+    SL --> A[Guivos Ads]
+
+    G --> PL[Platform Layer]
+    PL --> API[API]
+    PL --> GR[Graph]
+    PL --> AUTH[Auth]
+    PL --> BILL[Billing]
+    PL --> SEARCH[Search]
+    PL --> NOTIF[Notifications]
+</code></pre>
 <h2 id="product-architecture-principio-de-organizacao">Princípio de organização<a class="headerlink" href="#product-architecture-principio-de-organizacao" title="Permanent link">&para;</a></h2>
-<p>O Ecossistema Guivos está acima de todos os produtos.</p>
-<p>Os produtos compartilham identidade, participantes, conhecimento, inteligência, infraestrutura e governança, mas cada um possui responsabilidade própria.</p>
-<h2 id="product-architecture-produtos-oficiais">Produtos oficiais<a class="headerlink" href="#product-architecture-produtos-oficiais" title="Permanent link">&para;</a></h2>
+<p>O Ecossistema Guivos está acima de todos os componentes.</p>
+<p>Os componentes compartilham identidade, participantes, conhecimento, inteligência, infraestrutura e governança, mas cada um possui responsabilidade própria.</p>
+<p>A GLPA estabelece que os componentes não possuem a mesma natureza funcional:</p>
+<ul>
+<li><strong>Guivos Journey</strong> é a Experience Layer;</li>
+<li><strong>Guivos Intelligence</strong> é a Intelligence Layer;</li>
+<li><strong>Guivos Business, Mall, Travel, Media e Ads</strong> são Service Layers;</li>
+<li>capacidades comuns pertencem à Platform Layer.</li>
+</ul>
+<h2 id="product-architecture-componentes-oficiais">Componentes oficiais<a class="headerlink" href="#product-architecture-componentes-oficiais" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Produto</th>
+<th>Componente</th>
+<th>Natureza</th>
 <th>Responsabilidade principal</th>
 <th>Status</th>
 </tr>
@@ -10384,36 +10420,43 @@ Implementação = realização progressiva
 <tbody>
 <tr>
 <td>Guivos Journey</td>
-<td>Apoiar a jornada contínua do participante</td>
+<td>Experience Layer</td>
+<td>Orquestrar a experiência unificada do participante</td>
+<td>Consolidado</td>
+</tr>
+<tr>
+<td>Guivos Intelligence</td>
+<td>Intelligence Layer</td>
+<td>Transformar dados, conhecimento e contexto em inteligência aplicada</td>
+<td>Consolidado</td>
+</tr>
+<tr>
+<td>Guivos Business</td>
+<td>Service Layer</td>
+<td>Entregar soluções para organizações</td>
 <td>Consolidado</td>
 </tr>
 <tr>
 <td>Guivos Mall</td>
+<td>Service Layer</td>
 <td>Comercializar produtos, serviços, gift cards, assinaturas e outros ativos com curadoria</td>
 <td>Consolidado</td>
 </tr>
 <tr>
 <td>Guivos Travel</td>
+<td>Service Layer</td>
 <td>Organizar viagens e experiências</td>
 <td>Consolidado</td>
 </tr>
 <tr>
-<td>Guivos Business</td>
-<td>Entregar soluções para organizações</td>
-<td>Consolidado</td>
-</tr>
-<tr>
 <td>Guivos Media</td>
+<td>Service Layer</td>
 <td>Produzir e distribuir conteúdo editorial e institucional</td>
 <td>Consolidado</td>
 </tr>
 <tr>
-<td>Guivos Intelligence</td>
-<td>Transformar dados e conhecimento em inteligência aplicada</td>
-<td>Consolidado</td>
-</tr>
-<tr>
 <td>Guivos Ads</td>
+<td>Service Layer</td>
 <td>Operar publicidade e mídia patrocinada</td>
 <td>Consolidado</td>
 </tr>
@@ -10421,15 +10464,20 @@ Implementação = realização progressiva
 </table>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Nenhum produto representa sozinho todo o Ecossistema Guivos.</li>
-<li>Um produto deve possuir responsabilidade principal clara.</li>
+<li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
+<li>Um componente deve possuir responsabilidade principal clara.</li>
 <li>Funcionalidades compartilhadas devem utilizar capacidades comuns do ecossistema.</li>
-<li>Sobreposições entre produtos devem ser resolvidas pela responsabilidade predominante.</li>
+<li>Sobreposições devem ser resolvidas pela responsabilidade predominante.</li>
+<li>Guivos Journey é a camada de experiência e não deve absorver integralmente responsabilidades dos serviços especializados.</li>
+<li>Guivos Intelligence é camada transversal e não deve pertencer exclusivamente ao Journey.</li>
+<li>Business, Mall, Travel, Media e Ads devem preservar responsabilidades especializadas.</li>
 <li>Guivos Mall substitui Guivos Marketplace como nome oficial do produto comercial.</li>
 <li>“Comunidade Guivos”, “Guivos Podcast” e “Guivos Insights” não são nomes oficiais de produtos.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
+<li><a href="#product-architecture-layered-product-architecture">GLPA-001 — Guivos Layered Product Architecture</a></li>
+<li><a href="#product-architecture-pas-001-guivos-journey">PAS-001 — Guivos Journey</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
