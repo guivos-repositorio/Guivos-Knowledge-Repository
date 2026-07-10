@@ -2,7 +2,7 @@
 id: GIA-000
 title: Guivos Intelligence Architecture
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -32,8 +32,59 @@ O Grafo Global da Guivos é o modelo conceitual que organiza conexões, contexto
 
 Ele diferencia a inteligência da Guivos de uma inteligência baseada apenas em documentos, conversas ou respostas isoladas.
 
+## Contexto multimodal
+
+A Guivos deve ser capaz de compreender contexto por meios naturais e complementares, incluindo voz, texto, documentos, imagens e integrações autorizadas.
+
+A voz é registrada como canal prioritário de expressão do Momento Atual, sem excluir alternativas acessíveis ou estruturadas.
+
+## Context Intelligence Engine — candidato
+
+O `Context Intelligence Engine (CIE)` é uma capacidade candidata da Intelligence Layer para:
+
+- receber entradas multimodais autorizadas;
+- interpretar linguagem natural e sinais contextuais;
+- identificar elementos explícitos e inferências provisórias;
+- propor atualizações do Modelo Vivo do Participante;
+- registrar proveniência, temporalidade e confiança;
+- solicitar confirmação quando necessário;
+- preservar explicabilidade e consentimento.
+
+O CIE permanece em Discovery/Engineering e não representa, neste momento, componente técnico obrigatório ou ativo canônico.
+
+## Família candidata de Intelligence Engines
+
+Foram identificadas para futura modelagem:
+
+- Context Intelligence Engine;
+- Recommendation Intelligence Engine;
+- Matching Intelligence Engine;
+- Learning Intelligence Engine;
+- Prediction Intelligence Engine;
+- Trust Intelligence Engine;
+- Knowledge Intelligence Engine.
+
+Esses nomes representam responsabilidades candidatas, não microserviços obrigatórios.
+
+## Modelo Vivo do Participante — candidato
+
+O `Living Participant Model (LPM)` é uma hipótese de modelo contextual, temporal e continuamente atualizável do participante.
+
+Sua relação com a GIA deverá preservar:
+
+- soberania do participante;
+- transparência;
+- correção e contestação;
+- proveniência;
+- graus de confiança;
+- minimização de dados;
+- limites de uso;
+- integração governada com o Grafo Global.
+
+A criação de uma futura `Guivos Participant Model Architecture (GPMA)` depende do Architecture Engineering Sprint e de validação de responsabilidade permanente.
+
 ## Estado
 
 Os princípios superiores de aprendizagem, conhecimento, evidência, contexto, recomendação, autonomia e organização por grafo estão consolidados.
 
-Ontologia formal, modelos lógicos, tecnologias, políticas operacionais e controles técnicos ainda dependem de detalhamento, validação e implementação.
+CIE, LPM, família de Intelligence Engines, ontologia formal, modelos lógicos, tecnologias, políticas operacionais e controles técnicos permanecem em investigação, detalhamento ou validação.
