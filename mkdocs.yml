@@ -136,6 +136,8 @@ nav:
       - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
+      - Architecture Engineering Pause: project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md
+      - GE2-SYNC-004 — Context and Architecture Engineering: project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md
       - GE2-SYNC-003 — Enterprise Design and GLPA: project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture.md
       - GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync: project/GE2-SYNC-002-gka-conceptual-architecture-progress.md
       - GE2-SYNC-001 — Architectural Synchronization Matrix: project/GE2-SYNC-001-architectural-synchronization-matrix.md
