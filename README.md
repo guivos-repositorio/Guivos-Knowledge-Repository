@@ -16,6 +16,8 @@ A partir da GE-2, o GKR também opera como sistema oficial de descoberta, consol
 - **Frente vigente:** Enterprise Design & Business Specification
 - **Especificação preservada:** PAS-001 — Guivos Journey 0.2.0
 - **Arquitetura funcional:** GLPA-001 — Guivos Layered Product Architecture
+- **Guia público vigente:** GOG-001 — Guia Oficial da Guivos 4.0.0
+- **Documentação pública:** GPD-000 3.0.0
 - **Próximo trabalho:** Architecture Engineering Sprint
 - **Modelo econômico:** planejado
 - **A2-R02:** em espera operacional
@@ -29,6 +31,20 @@ Primeira atividade:
 > Projetar a taxonomia oficial e o meta-modelo do Guivos Knowledge Repository.
 
 Somente depois decidir quais ativos candidatos realmente devem existir e retomar o `PAS-001 — Guivos Journey` pela JFA e pela Captura Multimodal de Contexto.
+
+## Atualização pública mais recente
+
+O Guia Oficial 4.0 foi alinhado à estrutura atual da Guivos e agora apresenta publicamente:
+
+- Guivos Journey como experiência principal;
+- Guivos Intelligence como inteligência transversal;
+- Guivos Business, Mall, Travel, Media e Ads como soluções especializadas;
+- Pessoa, Organização e Coletivo como participantes;
+- captura progressiva e multimodal de contexto;
+- voz como canal prioritário, mas não exclusivo;
+- oportunidade como unidade prática de valor;
+- novos diagramas do ciclo de evolução, estrutura da Guivos, integração entre componentes, inteligência contextual e Grafo Global;
+- maior clareza sobre privacidade, transparência e controle do participante.
 
 ## Decisões mais recentes
 
@@ -57,6 +73,8 @@ Esses ativos ainda não foram criados como documentos permanentes.
 
 ## Acesso rápido
 
+- [Guia Oficial da Guivos 4.0](docs/public/guia-oficial-da-guivos.md)
+- [Documentação Pública da Guivos](docs/public/index.md)
 - [GE2-SYNC-004 — Context, Participant Model and Architecture Engineering Sync](docs/project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md)
 - [Architecture Engineering Pause Checkpoint](docs/project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md)
 - [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
@@ -65,7 +83,6 @@ Esses ativos ainda não foram criados como documentos permanentes.
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
 - [Architectural Milestones](docs/project/architectural-milestones.md)
-- [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
 
 ## Pendências institucionais preservadas
