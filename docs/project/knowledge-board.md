@@ -1,14 +1,14 @@
 ---
 title: Knowledge Board
 status: active
-version: 4.8.0
+version: 4.9.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
 
 # Knowledge Board
 
-Painel oficial de acompanhamento do patrimônio intelectual, arquitetural e de especificação executável da Guivos.
+Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, público e de especificação executável da Guivos.
 
 ## Estado institucional
 
@@ -21,10 +21,11 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural e de e
 | GE2-SYNC-003 | Completed 1.0.0 | Matriz de Enterprise Design e GLPA |
 | GE2-SYNC-004 | Completed 1.0.0 | Matriz de contexto, modelo do participante e Architecture Engineering |
 | CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE | Active 1.0.0 | Preservar ponto exato de retomada |
-| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active — Historical Dependency 1.2.0 | Preservar decisões da GKA |
 | GLPA-001 | Approved 1.0.0 | Organizar a Guivos por camadas funcionais |
 | PAS-001 — Guivos Journey | Draft 0.2.0 — Preserved | Especificar a Experience Layer |
 | GIA-000 | Active 1.2.0 | Registrar inteligência, contexto e candidatos de engines |
+| GOG-001 — Guia Oficial da Guivos | Public Canon 4.0.0 | Explicar publicamente a estrutura vigente da Guivos |
+| GPD-000 — Documentação Pública | Active 3.0.0 | Governar a tradução pública da Canon |
 | A2-R02 | Active — Operationally Paused | Revisar o Modelo Fundamental após a GKA Foundation |
 | Guivos Economic Model | Planned 0.1.0 | Consolidar sustentabilidade econômica |
 
@@ -38,14 +39,31 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural e de e
 | Frente operacional | Enterprise Design & Business Specification |
 | Especificação preservada | `PAS-001 — Guivos Journey 0.2.0` |
 | Arquitetura funcional | `GLPA-001` |
+| Documento público vigente | `GOG-001 — Guia Oficial da Guivos 4.0.0` |
 | Sincronização atual | `GE2-SYNC-004` |
 | Checkpoint atual | `CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE` |
 | Foco imediato | Taxonomia oficial e meta-modelo do GKR |
 | Pasta `knowledge-architecture/` | Ainda não criada |
 
+## Guia Oficial 4.0.0
+
+A versão 4.0.0 foi atualizada para refletir publicamente:
+
+- Pessoa, Organização e Coletivo como participantes;
+- Journey como experiência principal;
+- Intelligence como inteligência transversal;
+- Business, Mall, Travel, Media e Ads como soluções especializadas;
+- captura progressiva e multimodal de contexto;
+- voz como canal prioritário, mas não exclusivo;
+- oportunidade como unidade prática de valor;
+- privacidade, transparência e controle do participante;
+- novos diagramas do ciclo de evolução, estrutura da Guivos, integração entre componentes, inteligência contextual e Grafo Global.
+
+O guia não publica LPM, CIE, Intelligence Engines, GPMA ou demais candidatos internos como arquiteturas concluídas.
+
 ## Contexto multimodal
 
-**Estado:** Approved for Product Specification / Engineering Candidate.
+**Estado:** Approved for Product Specification / Publicly Reflected.
 
 Decisões:
 
@@ -150,12 +168,14 @@ Nenhum deve ser criado antes da conclusão do Architecture Engineering Sprint.
 | Ativo | Status |
 |---|---|
 | Roadmap Arquitetural | 4.8.0 |
-| Knowledge Board | 4.8.0 |
-| Architectural Milestones | 4.6.0 planned in this sync |
-| Glossário Canônico | 1.8.0 planned in this sync |
+| Knowledge Board | 4.9.0 |
+| Architectural Milestones | 4.6.0 |
+| Glossário Canônico | 1.8.0 |
 | Product Architecture | 1.2.0 |
 | PAS-001 | Draft 0.2.0 |
 | GIA-000 | Active 1.2.0 |
+| GOG-001 | Public Canon 4.0.0 |
+| GPD-000 | Active 3.0.0 |
 | GE2-SYNC-004 | Completed 1.0.0 |
 | Architecture Engineering Checkpoint | Active 1.0.0 |
 
