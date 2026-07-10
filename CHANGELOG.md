@@ -2,6 +2,24 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.28.6 — Guia Oficial da Guivos 4.0
+
+- Atualização de `GOG-001 — Guia Oficial da Guivos` para a versão `4.0.0`.
+- Atualização de `GPD-000 — Documentação Pública da Guivos` para a versão `3.0.0`.
+- Alinhamento da narrativa pública à arquitetura funcional em camadas.
+- Apresentação do `Guivos Journey` como experiência principal do ecossistema.
+- Apresentação do `Guivos Intelligence` como inteligência transversal.
+- Apresentação de Business, Mall, Travel, Media e Ads como soluções especializadas.
+- Inclusão de Pessoa, Organização e Coletivo como categorias públicas de participantes.
+- Inclusão da captura progressiva e multimodal de contexto.
+- Inclusão da voz como canal prioritário, mas não exclusivo.
+- Inclusão da oportunidade como unidade prática de valor para diferentes formatos de oferta.
+- Ampliação das seções de privacidade, transparência, revisão e controle do participante.
+- Atualização dos diagramas do Ciclo Contínuo de Evolução, funcionamento prático, estrutura da Guivos, integração entre componentes, inteligência contextual e Grafo Global.
+- Preservação de LPM, CIE, Intelligence Engines, GPMA e demais candidatos internos fora da narrativa pública como arquiteturas concluídas.
+- Atualização do Knowledge Board para `4.9.0`.
+- Atualização do README e da página inicial do GKR para registrar o Guia 4.0.0.
+
 ## 0.28.5 — Context, Participant Model and Architecture Engineering
 
 - Criação de `GE2-SYNC-004 — Context, Participant Model and Architecture Engineering Sync`, versão `1.0.0`.
@@ -78,16 +96,16 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 
 ## 0.24.1 — Sincronização pós-consolidação
 
-- Sincronização documental após Mall, Economic Model e FMEM.
+- Sincronização documental pós-Mall e Economic Model.
 
 ## 0.24.0 — Guivos Mall, Economic Model e FMEM
 
 - Guivos Mall substitui Guivos Marketplace.
-- Criação da FMEM e formalização de Discovery Mode e Canon Mode.
+- Criação da FMEM e do domínio Economic Model.
 
 ## 0.23.0 — Guia Oficial 3.0 e Modelo de Conhecimento da IA
 
-- Atualização do Guia Oficial e criação do domínio Intelligence Architecture.
+- Consolidação da narrativa pública e do modelo de conhecimento da IA.
 
 ## 0.22.0 — Ciclo Contínuo de Evolução da Guivos
 
@@ -95,7 +113,7 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 
 ## 0.21.0 — Limites Públicos e Expansão do Guivos Business
 
-- Inclusão de limites públicos e expansão do Business.
+- Inclusão de limites públicos e ampliação do Business.
 
 ## 0.20.0 — Guia Oficial da Guivos 2.0
 
@@ -107,15 +125,15 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 
 ## 0.18.0 — Foundation Architecture Frozen
 
-- Conclusão da revisão da Foundation e congelamento da baseline A2-B3.
+- Conclusão da revisão da Foundation e congelamento de A2-B3.
 
 ## 0.17.0 — Foundation Discovery Complete
 
-- Conclusão da Evidence Extraction da Foundation.
+- Conclusão da descoberta da Foundation.
 
 ## 0.16.0 — First GCCM Evidence Extraction
 
-- Primeira Evidence Extraction sobre a Essência.
+- Primeira Evidence Extraction da Foundation.
 
 ## 0.15.0 — A2 Pause Checkpoint and Economic Model Pending
 
@@ -151,39 +169,39 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 
 ## 0.8.0 — Evidence-Based Architecture Validation
 
-- Criação de `AV-001`.
+- Criação de `AV-001 — GEA Structure Validation`.
 
 ## 0.7.1 — Business Outcomes Conceptual Checkpoint
 
-- Criação de Business Outcomes.
+- Criação de `BA-STR-002 — Business Outcomes`.
 
 ## 0.7.0 — Business Transformation Model
 
-- Criação do Business Transformation Model.
+- Criação de `BA-STR-001 — Business Transformation Model`.
 
 ## 0.6.0 — Business Architecture Foundations
 
-- Criação das Foundations da Business Architecture.
+- Criação de `BA-FND-001 — Business Architecture Foundations`.
 
 ## 0.5.1 — Sincronização Documental da GEA
 
-- Sincronização de documentos centrais.
+- Sincronização de README, Roadmap, Knowledge Board, Glossário e Modelo Fundamental.
 
 ## 0.5.0 — Guivos Enterprise Architecture
 
-- Criação da GEA.
+- Criação de `GEA-000 — Guivos Enterprise Architecture`.
 
 ## 0.4.0 — Arquitetura de Produtos
 
-- Criação do domínio Product Architecture.
+- Criação do domínio de Product Architecture.
 
 ## 0.3.0 — Início da Consolidação Canônica
 
-- Criação do Glossário e da Matriz de Consolidação.
+- Criação do Glossário Canônico e da Matriz de Consolidação Canônica.
 
 ## 0.2.1 — Pipeline de Publicação
 
-- Configuração de MkDocs, Mermaid, GitHub Pages e PDF.
+- Configuração de MkDocs Material, Mermaid, GitHub Pages e exportação PDF.
 
 ## 0.2.0 — Consolidação da Parte II — Modelo Fundamental
 
@@ -191,7 +209,7 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 
 ## 0.1.0 — Consolidação da Parte I — Fundação
 
-- Consolidação inicial da Foundation.
+- Consolidação inicial da Fundação.
 
 ## 0.0.1 — Inicialização do GKR
 
