@@ -2,12 +2,13 @@
 id: PAS-001
 title: Guivos Journey Product Architecture Specification
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-07-04
 related:
   - GPA-001
   - GLPA-001
+  - GE2-SYNC-004
 ---
 
 # PAS-001 — Guivos Journey Product Architecture Specification
@@ -152,6 +153,8 @@ Toda evolução do Journey deverá respeitar os seguintes princípios:
 6. A experiência deve evoluir continuamente com o usuário.
 7. O Journey deve incentivar ação no mundo real, não apenas permanência na tela.
 8. O usuário controla sua jornada; a Guivos amplia suas possibilidades.
+9. A compreensão do participante deve ser progressiva, natural e revisável.
+10. Voz e demais canais multimodais devem reduzir a dependência de formulários extensos.
 
 ## 2. Arquitetura em Camadas Aplicada ao Journey
 
@@ -196,19 +199,111 @@ O Journey não é responsável por:
 - executar reservas e operações de viagem do Travel;
 - manter infraestrutura técnica comum da Platform Layer.
 
-## 3. Ponto de retomada
+## 3. Captura Multimodal de Contexto
 
-Este documento foi iniciado com Product Philosophy, Visão do Produto e aplicação inicial da GLPA.
+### 3.1 Decisão funcional
 
-A próxima etapa deverá detalhar:
+A compreensão do Momento Atual não deve depender de um fluxo longo de formulários como mecanismo principal.
 
-1. Missão do Journey;
-2. Objetivos Estratégicos;
-3. Público-alvo;
-4. Arquitetura Funcional;
-5. Fluxos Operacionais;
-6. Inteligência Artificial;
-7. Integrações;
-8. Modelo Econômico;
-9. KPIs;
-10. Roadmap.
+O participante deve poder descrever sua realidade, objetivos, limitações e expectativas com suas próprias palavras.
+
+### 3.2 Voz como canal prioritário
+
+A voz deve ser tratada como canal prioritário por permitir expressão mais natural, contextual e detalhada.
+
+A experiência deve também oferecer alternativas acessíveis, incluindo texto e preenchimento estruturado quando necessário.
+
+### 3.3 Canais multimodais candidatos
+
+- voz;
+- conversa por texto;
+- documentos autorizados;
+- imagens autorizadas;
+- localização autorizada;
+- calendário autorizado;
+- wearables e aplicativos de saúde ou esporte autorizados;
+- integrações profissionais autorizadas;
+- histórico de interações e experiências da Guivos.
+
+### 3.4 Fluxo conceitual
+
+```text
+Participante
+  -> Entrada multimodal
+  -> Context Intelligence Engine
+  -> proposta de interpretação
+  -> confirmação, correção ou limitação pelo participante
+  -> Modelo Vivo do Participante
+  -> Journey e demais camadas autorizadas
+```
+
+### 3.5 Regras
+
+1. O participante não deve ser obrigado a revelar informações além do necessário para a experiência escolhida.
+2. Inferências relevantes devem ser explicáveis e revisáveis.
+3. Informações sensíveis exigem critérios superiores de consentimento e governança.
+4. O sistema deve diferenciar fatos declarados, dados integrados, evidências observadas e inferências provisórias.
+5. O participante deve poder corrigir, complementar, ocultar ou limitar o uso das informações, observadas restrições legais e operacionais.
+
+## 4. Modelo Vivo do Participante — Conceito Candidato
+
+O `Living Participant Model (LPM)` representa, provisoriamente, a estrutura dinâmica utilizada para consolidar o contexto autorizado de um participante ao longo do tempo.
+
+O LPM não é um cadastro estático nem um perfil público. Ele é uma representação contextual, temporal, explicável e continuamente atualizável.
+
+Elementos candidatos:
+
+- identidade;
+- Momento Atual;
+- objetivos;
+- Próximos Passos;
+- interesses;
+- competências;
+- preferências;
+- limitações;
+- disponibilidade;
+- relacionamentos;
+- experiências;
+- evidências de evolução;
+- proveniência;
+- confiança;
+- permissões.
+
+O conceito permanece em Discovery/Engineering e deverá ser formalizado apenas após o Architecture Engineering Sprint e futura avaliação da GPMA.
+
+## 5. Context Intelligence Engine — Capacidade Candidata
+
+O `Context Intelligence Engine (CIE)` é uma capacidade candidata da Intelligence Layer para receber entradas multimodais autorizadas, interpretar contexto, propor atualizações do LPM e preservar proveniência, confiança, temporalidade e explicabilidade.
+
+O CIE não pertence à Experience Layer e não deve alterar silenciosamente informações sensíveis ou permanentes sem critérios de confirmação e governança.
+
+## 6. Hierarquia Documental de Produto
+
+O desenvolvimento funcional do Journey seguirá a hierarquia:
+
+```text
+GPA
+  -> PAS
+       -> JFA
+            -> FDS
+       -> UX Specification
+       -> Technical Specification
+```
+
+- PAS define o produto/camada;
+- JFA define os domínios funcionais permanentes;
+- FDS detalha cada domínio funcional;
+- UX define a interação;
+- Technical Specification define a implementação.
+
+## 7. Ponto de retomada
+
+Este documento está preservado durante o Architecture Engineering Sprint.
+
+Após a definição da taxonomia e do meta-modelo do GKR, a próxima etapa do PAS-001 deverá:
+
+1. confirmar a posição de JFA e FDS na taxonomia oficial;
+2. iniciar a JFA do Journey;
+3. detalhar o domínio de Captura Multimodal de Contexto;
+4. modelar os limites entre Journey, CIE, LPM, Grafo Global e Platform Layer;
+5. avançar posteriormente para Missão, Objetivos Estratégicos, Público-alvo, Arquitetura Funcional, Fluxos, Integrações, Modelo Econômico, KPIs e Roadmap.
