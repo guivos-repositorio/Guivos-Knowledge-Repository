@@ -2,7 +2,7 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 3.3.0
+version: 4.0.0
 owner: Guivos
 last_updated: 2026-07-04
 classification: Documento Institucional Público
@@ -17,16 +17,16 @@ update_cycle: Continuous
 | Campo | Informação |
 |---|---|
 | Nome | Guia Oficial da Guivos |
-| Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará, quais são seus limites e como pessoas e organizações poderão participar |
-| Público | Pessoas, empresas, organizações, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
+| Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará, quais são seus limites e como pessoas, organizações e coletivos poderão participar |
+| Público | Pessoas, empresas, organizações, grupos, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
 | Responsável institucional | Guivos |
-| Versão | 3.3.0 |
+| Versão | 4.0.0 |
 | Última atualização | 04/07/2026 |
 | Status | Public Canon |
 | Fonte principal | Guivos Knowledge Repository |
 | Natureza | Documento vivo, atualizado conforme a evolução oficial do repositório |
 
-> Este guia traduz para linguagem pública as decisões consolidadas no Guivos Knowledge Repository. Não apresenta hipóteses, discussões preliminares ou planos não validados como fatos concluídos.
+> Este guia traduz para linguagem pública as decisões consolidadas no Guivos Knowledge Repository. Hipóteses, funcionalidades ainda não lançadas, preços, integrações e tecnologias em validação não são apresentados como fatos concluídos.
 
 ## Regra editorial principal
 
@@ -80,19 +80,21 @@ As três partes existem, mas permanecem desconectadas. A Guivos pretende reduzir
 
 # 3. Definição simples da Guivos
 
-A Guivos é um ecossistema criado para ajudar pessoas e organizações a compreender o que desejam melhorar e encontrar oportunidades, experiências, grupos, conteúdos, produtos, serviços e parceiros que possam ajudá-las a avançar.
+A Guivos é um ecossistema inteligente criado para compreender contextos, organizar oportunidades e apoiar jornadas de evolução de pessoas, organizações e coletivos.
+
+Ela reúne, em uma experiência integrada, oportunidades, experiências, grupos, conteúdos, produtos, serviços, viagens, parceiros e conhecimento que normalmente estariam distribuídos em muitas plataformas diferentes.
 
 Ao mesmo tempo, ajuda empresas, universidades, igrejas, movimentos, comunidades, ONGs, especialistas, órgãos públicos e outros participantes a disponibilizar oportunidades para quem realmente pode se beneficiar delas.
 
 A Guivos não define o que uma pessoa deve querer para sua vida. Cada participante escolhe seus próprios objetivos.
 
-> **A Guivos conecta pessoas que desejam evoluir às oportunidades, experiências, grupos e organizações que podem ajudá-las a dar o próximo passo.**
+> **A Guivos conecta cada participante às oportunidades mais relevantes para seu contexto e para o próximo passo de sua jornada.**
 
 ## Exemplo prático
 
 Uma pessoa deseja melhorar a saúde, mas não sabe se deve começar por academia, caminhada, orientação profissional, mudança de alimentação ou participação em um grupo.
 
-A Guivos não escolhe o objetivo por ela. Organiza seu contexto e apresenta possibilidades compatíveis para que a própria pessoa decida como deseja começar.
+A Guivos não escolhe o objetivo por ela. Organiza o contexto disponível e apresenta possibilidades compatíveis para que a própria pessoa decida como deseja começar.
 
 ---
 
@@ -159,7 +161,27 @@ A Guivos pretende ir além: compreender se aquele curso faz sentido para o Momen
 
 ---
 
-# 6. Que evolução é essa?
+# 6. Quem participa do ecossistema
+
+A Guivos reconhece três categorias principais de participantes.
+
+## Pessoas
+
+Indivíduos que desejam aprender, trabalhar, empreender, cuidar da saúde, fortalecer relacionamentos, desenvolver a espiritualidade, viajar, participar de grupos, apoiar causas ou avançar em outras áreas da vida.
+
+## Organizações
+
+Empresas, universidades, escolas, igrejas, ONGs, órgãos públicos, instituições, negócios, associações e demais estruturas organizadas que oferecem oportunidades, serviços, conhecimento, experiências ou apoio.
+
+## Coletivos
+
+Grupos, comunidades, movimentos, clubes, equipes, redes e outras formas de associação entre pessoas e organizações em torno de um propósito compartilhado.
+
+Uma mesma pessoa poderá exercer diferentes papéis ao longo do tempo: participante de uma experiência, voluntária, mentora, cliente, organizadora, especialista, parceira ou líder de um coletivo.
+
+---
+
+# 7. Que evolução é essa?
 
 Na Guivos, evolução não significa que todas as pessoas devam buscar o mesmo objetivo ou seguir um único modelo de vida.
 
@@ -186,7 +208,7 @@ Evoluir pode significar:
 - apoiar uma causa ambiental ou animal;
 - descobrir novas possibilidades para a própria vida.
 
-A evolução também pode acontecer com organizações e grupos.
+A evolução também pode acontecer com organizações e coletivos.
 
 ## Exemplo prático
 
@@ -196,13 +218,15 @@ A Guivos não estabelece uma única definição de sucesso. Ela apoia objetivos 
 
 ---
 
-# 7. O que significa Momento Atual?
+# 8. O que significa Momento Atual?
 
-O Momento Atual é a fotografia da realidade de uma pessoa ou organização em determinado período.
+O Momento Atual representa a realidade presente do participante e os elementos necessários para compreender seu contexto.
 
 Ele pode envolver objetivos, necessidades, profissão, renda, formação, saúde, espiritualidade, relacionamentos, cidade, disponibilidade, interesses, conhecimentos, experiências anteriores, limitações, preferências, causas e grupos dos quais participa.
 
-A pessoa não precisará expor tudo sobre sua vida. A experiência deverá respeitar suas escolhas, seus limites e sua privacidade.
+O participante não precisará expor tudo sobre sua vida. A experiência deverá respeitar suas escolhas, seus limites e sua privacidade.
+
+O Momento Atual também não deve ser tratado como um cadastro fixo. Ele pode mudar conforme novas experiências, decisões, relações e resultados surgem.
 
 ## Exemplo prático
 
@@ -210,13 +234,48 @@ Ana mora em Belo Horizonte, deseja cuidar da saúde, prefere atividades em grupo
 
 A Guivos poderá apresentar grupos de caminhada, pedais para iniciantes, trilhas leves, eventos de saúde, conteúdos introdutórios e organizações parceiras.
 
-João, embora também queira cuidar da saúde, trabalha aos sábados, prefere atividades individuais e possui uma limitação física. Seu Momento Atual é diferente e, por isso, as possibilidades apresentadas também devem ser diferentes.
+João, embora também queira cuidar da saúde, trabalha aos sábados, prefere atividades individuais e possui uma limitação física. Seu contexto é diferente e, por isso, as possibilidades apresentadas também devem ser diferentes.
 
 ---
 
-# 8. O que é a jornada?
+# 9. Como o participante poderá explicar seu contexto
 
-A jornada é o caminho entre aquilo que a pessoa vive hoje e aquilo que deseja construir.
+A Guivos deverá permitir que o contexto seja construído progressivamente, por meios naturais e voluntários.
+
+O participante poderá começar explicando, com suas próprias palavras, o que está vivendo, o que deseja mudar e onde pretende chegar.
+
+A voz deverá ser um canal prioritário por permitir uma descrição mais natural e detalhada, mas não será o único meio.
+
+A experiência poderá utilizar, conforme disponibilidade, autorização e finalidade legítima:
+
+- voz;
+- conversa por texto;
+- informações escolhidas pelo participante;
+- documentos enviados voluntariamente;
+- imagens autorizadas;
+- localização;
+- calendário;
+- aplicativos de saúde, esporte ou produtividade;
+- integrações profissionais;
+- experiências e interações realizadas na própria Guivos.
+
+A Guivos poderá interpretar essas informações e apresentar sua compreensão para confirmação, correção ou complementação.
+
+> **O participante não deverá ser obrigado a preencher um longo questionário para começar. A compreensão poderá crescer ao longo da jornada.**
+
+## Exemplo prático
+
+Uma pessoa poderá dizer por voz:
+
+> “Sou engenheiro, estou pensando em mudar de carreira, tenho pouco tempo livre e gostaria de trabalhar remotamente no futuro.”
+
+A Guivos poderá organizar essa fala em contexto profissional, objetivo de transição, restrição de tempo e preferência por trabalho remoto. A pessoa deverá poder revisar essa interpretação antes que ela seja utilizada como base permanente.
+
+---
+
+# 10. O que é a jornada?
+
+A jornada é o caminho entre aquilo que o participante vive hoje e aquilo que deseja construir.
 
 Ela pode começar com uma intenção ampla:
 
@@ -231,7 +290,8 @@ Depois, essa intenção pode se transformar em passos concretos:
 5. decidir se deseja participar;
 6. viver uma experiência;
 7. observar o que mudou;
-8. definir um novo passo.
+8. atualizar o contexto;
+9. definir um novo passo.
 
 É essa jornada contínua que o **Guivos Journey** pretende apoiar.
 
@@ -243,21 +303,22 @@ A Guivos não trata cada oportunidade como um item isolado. Procura organizá-la
 
 ---
 
-# 9. Ciclo Contínuo de Evolução da Guivos
+# 11. Ciclo Contínuo de Evolução da Guivos
 
-O Ciclo Contínuo de Evolução da Guivos representa a forma como pessoas e organizações avançam dentro do ecossistema.
+O Ciclo Contínuo de Evolução representa a forma como participantes avançam dentro do ecossistema.
 
 Ele não possui um ponto final definitivo. Cada experiência pode produzir aprendizados, resultados e mudanças que formam um **Novo Momento Atual**. Esse novo estado passa a ser o ponto de partida do ciclo seguinte.
 
 ```mermaid
 flowchart TD
-    A[Momento Atual]
-    B[Objetivos]
-    C[Próximo Passo]
-    D[Oportunidades Compatíveis]
-    E[Experiência]
-    F[Evidências de Evolução]
-    G[Novo Momento Atual]
+    A[Captura progressiva do contexto]
+    B[Momento Atual]
+    C[Objetivos]
+    D[Próximo Passo]
+    E[Oportunidades compatíveis]
+    F[Experiência]
+    G[Evidências de evolução]
+    H[Novo Momento Atual]
 
     A --> B
     B --> C
@@ -265,10 +326,11 @@ flowchart TD
     D --> E
     E --> F
     F --> G
-    G --> A
+    G --> H
+    H --> A
 ```
 
-> **O ciclo nunca termina. Cada transformação gera um novo Momento Atual, que pode trazer novas necessidades, novos interesses, novos objetivos e novas oportunidades.**
+> **O ciclo nunca termina. Cada transformação gera um novo contexto, que pode trazer novas necessidades, interesses, objetivos e oportunidades.**
 
 ## Exemplo prático
 
@@ -278,7 +340,35 @@ Seu objetivo inicial era cuidar da saúde. O novo Momento Atual inclui experiên
 
 ---
 
-# 10. Quem oferece as oportunidades?
+# 12. O que é uma oportunidade na Guivos
+
+Na Guivos, oportunidade é qualquer iniciativa, recurso ou possibilidade capaz de apoiar um Próximo Passo por meio de uma experiência.
+
+Uma oportunidade pode assumir diferentes formas:
+
+- vaga de trabalho;
+- curso;
+- bolsa de estudos;
+- evento;
+- grupo;
+- mentoria;
+- ação social;
+- serviço;
+- produto;
+- viagem;
+- conteúdo;
+- benefício;
+- desafio;
+- parceria;
+- experiência cultural, espiritual, esportiva ou comunitária.
+
+O formato pode mudar, mas a pergunta permanece a mesma:
+
+> **Essa oportunidade ajuda o participante a avançar de forma relevante em seu contexto atual?**
+
+---
+
+# 13. Quem oferece as oportunidades?
 
 A Guivos não criará sozinha todas as oportunidades.
 
@@ -294,7 +384,7 @@ A jornada da pessoa pode ser fortalecida pela combinação dessas oportunidades,
 
 ---
 
-# 11. A Guivos fortalece o que já existe
+# 14. A Guivos fortalece o que já existe
 
 A Guivos não pretende substituir, renomear ou absorver a identidade de grupos, movimentos, igrejas, comunidades, ONGs ou organizações.
 
@@ -317,7 +407,7 @@ Na Guivos, esse grupo poderá divulgar pedais, informar o nível de dificuldade,
 
 ---
 
-# 12. Papel das pessoas, organizações e da Guivos
+# 15. Papel das pessoas, organizações e da Guivos
 
 ## Papel da pessoa
 
@@ -327,63 +417,64 @@ Ela não é apenas consumidora. É participante ativa do ecossistema.
 
 ## Papel das organizações
 
-Empresas, universidades, igrejas, movimentos, ONGs e demais instituições podem oferecer oportunidades, criar experiências, formar comunidades, distribuir benefícios, compartilhar conhecimento, desenvolver pessoas, apoiar causas e formar parcerias.
+Empresas, universidades, igrejas, movimentos, ONGs e demais instituições podem oferecer oportunidades, criar experiências, formar coletivos, distribuir benefícios, compartilhar conhecimento, desenvolver pessoas, apoiar causas e formar parcerias.
+
+## Papel dos coletivos
+
+Grupos, comunidades, movimentos e redes podem reunir participantes em torno de objetivos, identidades, causas, interesses e experiências compartilhadas.
 
 ## Papel da Guivos
 
-A Guivos existe para compreender contextos, organizar oportunidades, conectar pessoas e organizações, fortalecer comunidades, apoiar jornadas, facilitar experiências, produzir inteligência, preservar a autonomia e reduzir a fragmentação do ecossistema.
-
-## Exemplo prático
-
-Uma pessoa informa que deseja atuar como voluntária. Uma ONG publica uma ação. Uma empresa oferece transporte aos participantes. Um grupo comunitário ajuda na mobilização.
-
-A Guivos organiza essas conexões, apresenta a oportunidade para pessoas compatíveis e registra a experiência. Cada participante mantém seu papel e sua autonomia.
+A Guivos existe para compreender contextos, organizar oportunidades, conectar participantes, fortalecer coletivos, apoiar jornadas, facilitar experiências, produzir inteligência, preservar a autonomia e reduzir a fragmentação do ecossistema.
 
 ---
 
-# 13. Como a pessoa informa o que está buscando
-
-A Guivos deverá permitir que cada pessoa indique, de forma progressiva e voluntária, áreas em que deseja avançar, como carreira, renda, educação, saúde, bem-estar, espiritualidade, relacionamentos, família, empreendedorismo, esportes, viagens, cultura, voluntariado, impacto social, participação comunitária, hobbies e lazer.
-
-## Exemplo prático
-
-Uma pessoa pode começar informando apenas que deseja melhorar a carreira. Depois, se considerar útil, poderá acrescentar sua área profissional, disponibilidade para estudar, interesse em trabalho remoto e objetivo de renda.
-
-Ela não precisa fornecer todas as informações de uma vez. O contexto pode ser construído progressivamente e sempre de forma voluntária.
-
----
-
-# 14. Como a Guivos funcionará na prática
+# 16. Como a Guivos funcionará na prática
 
 Uma experiência completa poderá ocorrer assim:
 
-1. a pessoa conhece a Guivos;
-2. informa o que deseja melhorar, descobrir ou viver;
+1. o participante conhece a Guivos;
+2. explica o que deseja melhorar, descobrir, construir ou viver;
 3. escolhe quais informações deseja compartilhar;
 4. a Guivos organiza o contexto disponível;
-5. possíveis próximos passos são apresentados;
-6. oportunidades, grupos e organizações são encontrados;
-7. a pessoa compara as opções;
-8. decide se deseja participar;
-9. vive uma experiência;
-10. reconhece o que mudou;
-11. recebe novas possibilidades compatíveis com seu novo momento.
+5. o participante revisa ou corrige essa compreensão;
+6. possíveis próximos passos são apresentados;
+7. oportunidades, grupos e organizações são encontrados;
+8. o participante compara as opções;
+9. decide se deseja participar;
+10. vive uma experiência;
+11. reconhece o que mudou;
+12. atualiza seu contexto;
+13. recebe novas possibilidades compatíveis com seu novo momento.
 
-A pessoa poderá ajustar objetivos, interromper uma jornada, mudar de interesse ou rejeitar recomendações.
+```mermaid
+flowchart LR
+    A[Participante]
+    B[Contexto autorizado]
+    C[Inteligência do Ecossistema]
+    D[Próximos Passos]
+    E[Oportunidades]
+    F[Experiências]
+    G[Novas evidências]
 
-## Exemplo prático
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> B
+```
 
-Carla informa que deseja voltar a estudar e possui pouco tempo disponível. A Guivos identifica cursos noturnos, bolsas, grupos de estudo e conteúdos introdutórios.
-
-Carla escolhe uma formação, participa de uma aula experimental e decide continuar. Essa experiência atualiza seu contexto e permite que novas oportunidades sejam apresentadas depois.
+O participante poderá ajustar objetivos, interromper uma jornada, mudar de interesse, rejeitar recomendações e corrigir interpretações.
 
 ---
 
-# 15. Como a Guivos decide o que entra no ecossistema?
+# 17. Como a Guivos decide o que entra no ecossistema?
 
 Uma iniciativa deverá ser analisada por perguntas como:
 
-- contribui para a evolução de pessoas ou organizações?
+- contribui para a evolução de pessoas, organizações ou coletivos?
 - ajuda alguém a se aproximar de um objetivo legítimo?
 - fortalece relações, comunidades ou experiências?
 - respeita a autonomia e a dignidade das pessoas?
@@ -402,11 +493,11 @@ Restaurantes, bares, lojas e outros segmentos não estão proibidos apenas por s
 
 Um restaurante pode fazer sentido em uma viagem, roteiro cultural, benefício corporativo, encontro comunitário ou ação social. Uma promoção isolada, como uma promoção de pizza, sem relação com qualquer jornada, não possui aderência automática.
 
-> **A simples existência de uma atividade econômica não justifica sua presença na Guivos. A participação depende da contribuição real para pessoas, organizações, comunidades ou jornadas.**
+> **A simples existência de uma atividade econômica não justifica sua presença na Guivos. A participação depende da contribuição real para pessoas, organizações, coletivos ou jornadas.**
 
 ---
 
-# 16. Princípios permanentes da Guivos
+# 18. Princípios permanentes da Guivos
 
 - evolução antes da tecnologia;
 - autonomia antes da automação;
@@ -426,15 +517,69 @@ Esse exemplo reúne vários princípios: evolução antes da venda, contexto ant
 
 ---
 
-# 17. Produtos da Guivos
+# 19. Como a estrutura da Guivos se organiza
 
-## Guivos Journey
+A Guivos possui componentes de naturezas diferentes. Eles não devem ser compreendidos apenas como uma lista de produtos equivalentes.
 
-Apoia pessoas e organizações na compreensão do Momento Atual, organização de objetivos, identificação de próximos passos e acompanhamento de experiências.
+Para o participante, a experiência deve parecer integrada. Internamente, cada componente possui responsabilidade própria.
 
-**Exemplo:** uma pessoa deseja mudar de carreira e utiliza o Guivos Journey para organizar objetivos, identificar uma formação inicial e acompanhar os avanços realizados.
+```mermaid
+flowchart TD
+    G[Ecossistema Guivos]
 
-## Guivos Mall
+    G --> E[Experiência]
+    E --> J[Guivos Journey]
+
+    G --> I[Inteligência]
+    I --> GI[Guivos Intelligence]
+
+    G --> S[Soluções especializadas]
+    S --> B[Guivos Business]
+    S --> M[Guivos Mall]
+    S --> T[Guivos Travel]
+    S --> MD[Guivos Media]
+    S --> A[Guivos Ads]
+```
+
+## Experiência
+
+O **Guivos Journey** é a principal camada de experiência. É por meio dele que o participante poderá compreender sua jornada, organizar objetivos, descobrir próximos passos, receber recomendações e acessar capacidades do ecossistema.
+
+## Inteligência
+
+O **Guivos Intelligence** entrega a Inteligência do Ecossistema Guivos para toda a plataforma. Ele interpreta contexto, conhecimento, conexões, experiências e evidências para apoiar recomendações e decisões.
+
+## Soluções especializadas
+
+Guivos Business, Mall, Travel, Media e Ads entregam capacidades específicas, integradas à experiência do Journey e apoiadas pela Intelligence.
+
+---
+
+# 20. Componentes oficiais da Guivos
+
+## Guivos Journey — experiência
+
+É a principal experiência do participante dentro do ecossistema.
+
+Apoia a compreensão do Momento Atual, a organização de objetivos, a identificação de próximos passos, a descoberta de oportunidades e o acompanhamento das experiências vividas.
+
+**Exemplo:** uma pessoa deseja mudar de carreira e utiliza o Journey para explicar seu contexto, organizar objetivos, identificar uma formação inicial e acompanhar os avanços realizados.
+
+## Guivos Intelligence — inteligência transversal
+
+Entrega a Inteligência do Ecossistema Guivos para Journey e para as demais soluções.
+
+Transforma contexto, dados autorizados, evidências, conhecimento e conexões em recomendações, indicadores, tendências e análises úteis.
+
+**Exemplo:** duas pessoas desejam começar a correr, mas recebem possibilidades diferentes porque possuem cidades, horários, experiências e limitações distintas.
+
+## Guivos Business — organizações
+
+Entrega soluções para empresas e demais organizações, incluindo desenvolvimento de pessoas, benefícios, jornadas corporativas, recompensas, fidelização, engajamento, retenção, recorrência, captação de clientes, parcerias, impacto social e inteligência empresarial.
+
+**Exemplo:** uma empresa pode criar uma jornada de saúde para colaboradores, oferecer recompensas pela participação, conectar academias e grupos esportivos e acompanhar indicadores de engajamento.
+
+## Guivos Mall — produtos e serviços
 
 É o shopping da Guivos, responsável por organizar e comercializar produtos, serviços, assinaturas, gift cards e outros ativos de diferentes fornecedores relacionados às jornadas.
 
@@ -442,31 +587,19 @@ Guivos Mall não deve funcionar como catálogo genérico sem curadoria.
 
 **Exemplo:** uma mochila pode aparecer porque a pessoa iniciou uma faculdade, foi aceita em um intercâmbio, começou a fazer trilhas ou está organizando uma viagem. O produto ganha relevância pelo contexto da jornada, não apenas pela promoção.
 
-## Guivos Travel
+## Guivos Travel — viagens e experiências
 
 Reúne viagens, destinos e experiências turísticas ligadas a cultura, natureza, aprendizagem, grupos e comunidades.
 
 **Exemplo:** uma viagem pode combinar destino, hospedagem, roteiro cultural, encontro com uma comunidade local e uma experiência de voluntariado.
 
-## Guivos Business
-
-Entrega soluções para empresas e organizações, incluindo desenvolvimento de pessoas, benefícios, jornadas corporativas, recompensas, fidelização, engajamento, retenção, recorrência, captação de clientes, parcerias, impacto social e inteligência empresarial.
-
-**Exemplo:** uma empresa pode criar uma jornada de saúde para colaboradores, oferecer recompensas pela participação, conectar academias e grupos esportivos e acompanhar indicadores de engajamento.
-
-## Guivos Media
+## Guivos Media — conhecimento e histórias
 
 Produz e distribui vídeos, podcasts, entrevistas, documentários, histórias reais, livros, artigos, newsletters e materiais editoriais.
 
 **Exemplo:** uma história real de transformação pode inspirar uma pessoa, apresentar uma oportunidade e levá-la a iniciar uma jornada no Guivos Journey.
 
-## Guivos Intelligence
-
-É o produto que entrega a **Inteligência do Ecossistema Guivos**, transformando dados, contexto, evidências, conhecimento e conexões em recomendações, indicadores, tendências e análises úteis.
-
-**Exemplo:** duas pessoas desejam começar a correr, mas recebem possibilidades diferentes porque possuem cidades, horários, experiências e limitações distintas.
-
-## Guivos Ads
+## Guivos Ads — publicidade responsável
 
 Opera publicidade, patrocínios e mídia patrocinada com regras de transparência, identificação e relevância.
 
@@ -474,13 +607,13 @@ Opera publicidade, patrocínios e mídia patrocinada com regras de transparênci
 
 ---
 
-# 18. Como os produtos se conectam
+# 21. Como os componentes se conectam
 
 Uma pessoa assiste a um conteúdo no **Guivos Media** sobre voluntariado.
 
-No **Guivos Journey**, informa interesse em participar de uma causa.
+No **Guivos Journey**, explica seu interesse em participar de uma causa.
 
-A **Inteligência do Ecossistema Guivos**, entregue pelo Guivos Intelligence, ajuda a organizar oportunidades compatíveis.
+O **Guivos Intelligence** ajuda a interpretar o contexto e organizar oportunidades compatíveis.
 
 Uma ONG participa por meio do **Guivos Business**.
 
@@ -490,9 +623,34 @@ Uma empresa poderá apoiar a ação por meio do **Guivos Ads**.
 
 Se houver deslocamento, o **Guivos Travel** poderá apoiar essa parte da experiência.
 
+```mermaid
+flowchart TD
+    P[Participante]
+    J[Guivos Journey]
+    I[Guivos Intelligence]
+    B[Guivos Business]
+    M[Guivos Mall]
+    MD[Guivos Media]
+    T[Guivos Travel]
+    A[Guivos Ads]
+    X[Experiência no mundo real]
+
+    P --> J
+    J <--> I
+    J <--> B
+    J <--> M
+    J <--> MD
+    J <--> T
+    J <--> A
+    J --> X
+    X --> J
+```
+
+O participante não precisa conhecer essas divisões internas para utilizar a Guivos. A experiência deve parecer contínua e integrada.
+
 ---
 
-# 19. A Inteligência do Ecossistema Guivos
+# 22. A Inteligência do Ecossistema Guivos
 
 A Inteligência do Ecossistema Guivos não deverá funcionar apenas como um sistema de conversa, pesquisa ou recomendação automática.
 
@@ -500,11 +658,11 @@ Seu papel é compreender um ecossistema vivo de pessoas, organizações, coletiv
 
 Ela é um meio a serviço do propósito da Guivos. Não é a finalidade do ecossistema.
 
-## 19.1 O que essa inteligência procura compreender
+## 22.1 O que essa inteligência procura compreender
 
 Ela procura responder continuamente perguntas como:
 
-- quem é esta pessoa ou organização em seu contexto atual?
+- quem é este participante em seu contexto atual?
 - o que deseja melhorar, descobrir, construir ou viver?
 - qual próximo passo parece mais relevante agora?
 - quais oportunidades, grupos ou organizações podem ajudar?
@@ -512,9 +670,9 @@ Ela procura responder continuamente perguntas como:
 - o que mudou?
 - quais novas possibilidades surgiram?
 
-## 19.2 Como ela aprende
+## 22.2 Como ela aprende
 
-A Inteligência do Ecossistema poderá aprender com quatro fontes complementares.
+A Inteligência do Ecossistema poderá aprender com fontes complementares.
 
 ### Conhecimento científico, técnico e institucional
 
@@ -530,101 +688,9 @@ Poderá aprender com experiências, resultados e padrões produzidos na própria
 
 Com autorização e transparência, poderá aprender com objetivos, mudanças de interesse, oportunidades visualizadas, experiências realizadas, conteúdos consumidos, grupos, habilidades, preferências, disponibilidade, localização, contexto e evidências de progresso.
 
-A movimentação fornece sinais, não verdades absolutas. A pessoa poderá corrigir, rejeitar ou atualizar interpretações.
+A movimentação fornece sinais, não verdades absolutas. O participante poderá corrigir, rejeitar ou atualizar interpretações.
 
-### Aprendizado coletivo e contextual
-
-A Guivos poderá identificar padrões agregados entre jornadas semelhantes sem reduzir pessoas a perfis rígidos.
-
-Esse aprendizado poderá ajudar a descobrir lacunas de oferta, necessidades locais, oportunidades pouco conhecidas, resultados recorrentes e conexões relevantes entre organizações.
-
-## 19.3 O Grafo Global da Guivos
-
-Um dos principais diferenciais da Inteligência do Ecossistema é a organização do conhecimento em um **Grafo Global da Guivos**.
-
-Em vez de enxergar apenas documentos, pesquisas ou conversas isoladas, o grafo conecta elementos do ecossistema e preserva as relações entre eles.
-
-```mermaid
-flowchart TD
-    P[Participante]
-    MA[Momento Atual]
-    O[Objetivos]
-    PP[Próximo Passo]
-    OP[Oportunidade]
-    E[Experiência]
-    EV[Evidência]
-    NM[Novo Momento Atual]
-    G[Grafo Global da Guivos]
-
-    P --> MA
-    MA --> O
-    O --> PP
-    PP --> OP
-    OP --> E
-    E --> EV
-    EV --> NM
-    NM --> MA
-
-    P -. conectado a .-> G
-    MA -. atualizado em .-> G
-    O -. relacionado em .-> G
-    PP -. orientado por .-> G
-    OP -. descoberto em .-> G
-    E -. registrado em .-> G
-    EV -. incorporada ao .-> G
-```
-
-O grafo também conecta simultaneamente pessoas, organizações, coletivos, universidades, igrejas, ONGs, especialistas, conhecimentos, eventos, cursos, viagens, oportunidades e relacionamentos.
-
-```mermaid
-graph LR
-    P[Pessoa]
-    ORG[Organização]
-    C[Coletivo]
-    U[Universidade]
-    I[Igreja]
-    ONG[ONG]
-    ESP[Especialista]
-    CON[Conhecimento]
-    OP[Oportunidade]
-    EX[Experiência]
-    EV[Evidência]
-    REL[Relacionamento]
-
-    P --- ORG
-    P --- C
-    P --- U
-    P --- I
-    P --- ONG
-    P --- ESP
-    P --- OP
-    OP --- EX
-    EX --- EV
-    EX --- REL
-    CON --- ESP
-    CON --- U
-    CON --- OP
-```
-
-O conhecimento não fica armazenado apenas como conteúdo. Ele passa a representar quem se relaciona com quem, em qual contexto, por meio de qual oportunidade, experiência ou evidência.
-
-### Exemplo prático
-
-Maria conhece Pedro em um grupo de corrida. Pedro apresenta Maria a uma ONG. Na ONG, Maria conhece uma professora que indica uma bolsa de estudos. A bolsa contribui para uma nova oportunidade profissional.
-
-O Grafo Global pode representar como essas pessoas, grupos, organizações, oportunidades e experiências se conectaram, sem reduzir toda a jornada a uma única pesquisa ou conversa.
-
-## 19.4 Como o grafo evolui
-
-Cada nova experiência pode alterar o grafo.
-
-Uma pessoa pode entrar em um grupo, conhecer alguém, iniciar um curso, mudar de emprego, viajar, participar de uma ação social ou tornar-se mentora de outras pessoas.
-
-Essas mudanças criam novas conexões, atualizam o Momento Atual e abrem novas possibilidades.
-
-Por isso, a Inteligência do Ecossistema aprende não apenas quando recebe novos documentos, mas também quando o próprio ecossistema se movimenta, desde que esse aprendizado seja autorizado, legítimo e governado.
-
-## 19.5 Como gera recomendações
+## 22.3 Como gera recomendações
 
 A Inteligência do Ecossistema não deverá recomendar algo apenas porque é popular, rentável ou patrocinado.
 
@@ -645,35 +711,27 @@ Duas pessoas com objetivos semelhantes podem receber recomendações diferentes 
 
 ```mermaid
 flowchart TD
-    A[Dados autorizados e evidências]
-    B[Informação organizada]
-    C[Conhecimento validado]
-    D[Grafo Global e contexto]
-    E[Inteligência contextual]
-    F[Recomendação explicável]
-    G[Decisão do participante]
-    H[Experiência e novos resultados]
+    A[Contexto e dados autorizados]
+    B[Conhecimento validado]
+    C[Grafo Global da Guivos]
+    D[Inteligência contextual]
+    E[Recomendação explicável]
+    F[Decisão do participante]
+    G[Experiência]
+    H[Novas evidências]
 
-    A --> B
-    B --> C
+    A --> D
+    B --> D
     C --> D
     D --> E
     E --> F
     F --> G
     G --> H
     H --> A
-    H --> D
+    H --> C
 ```
 
-### Exemplo prático
-
-Uma inteligência convencional pode responder que existem grupos de corrida em Belo Horizonte.
-
-A Inteligência do Ecossistema poderá considerar que a pessoa mora em Belo Horizonte, trabalha até as 18h, prefere atividades em grupo, está começando, possui uma limitação no joelho e participa de um benefício corporativo relacionado à saúde.
-
-Com esse contexto, a recomendação pode ser mais específica, explicável e compatível com seu Momento Atual.
-
-## 19.6 O que ela nunca deverá fazer
+## 22.4 O que ela nunca deverá fazer
 
 A Inteligência do Ecossistema Guivos não deverá:
 
@@ -688,33 +746,58 @@ A Inteligência do Ecossistema Guivos não deverá:
 - utilizar dados sem finalidade legítima e transparência;
 - otimizar apenas tempo de tela, venda ou permanência na plataforma.
 
-A decisão final permanece com a pessoa ou organização.
-
-## 19.7 Por que essa arquitetura é diferente
-
-Uma inteligência convencional pode responder perguntas com base em textos, documentos, conversas e padrões estatísticos.
-
-A Inteligência do Ecossistema Guivos pretende compreender relações em movimento dentro de um ambiente vivo.
-
-O principal patrimônio dessa inteligência não é apenas o software. É o conhecimento acumulado nas conexões entre jornadas, experiências, organizações, coletivos, oportunidades, resultados e evidências.
-
-Quanto maior a participação responsável no ecossistema, maior pode se tornar a capacidade de compreender contextos e revelar conexões relevantes.
-
-> **Replicar funcionalidades é possível. Replicar um ecossistema vivo de conhecimento, relacionamentos, jornadas e evidências construído ao longo do tempo exige reconstruir uma rede inteira de conexões e aprendizado acumulado.**
-
-Por isso, o Grafo Global da Guivos pode criar uma vantagem cumulativa difícil de reproduzir. O valor não está apenas no código, mas no grafo vivo, na qualidade das evidências, na governança e na confiança formada entre participantes.
-
-Os princípios completos estão descritos no `GAI-002 — Manifesto da Inteligência do Ecossistema Guivos`.
+A decisão final permanece com a pessoa, organização ou coletivo.
 
 ---
 
-# 20. Dados, privacidade e confiança
+# 23. O Grafo Global da Guivos
+
+O Grafo Global da Guivos é o modelo conceitual que organiza conexões entre participantes, objetivos, Momentos Atuais, Próximos Passos, oportunidades, experiências, conhecimentos, relacionamentos e evidências.
+
+Ele funciona como uma memória relacional do ecossistema: ajuda a compreender não apenas elementos isolados, mas como eles se conectam e mudam ao longo do tempo.
+
+```mermaid
+flowchart LR
+    P[Participantes]
+    O[Objetivos]
+    N[Próximos Passos]
+    OP[Oportunidades]
+    E[Experiências]
+    K[Conhecimento]
+    R[Relacionamentos]
+    EV[Evidências]
+
+    P --> O
+    O --> N
+    N --> OP
+    OP --> E
+    E --> EV
+    E --> R
+    EV --> K
+    K --> OP
+    R --> OP
+```
+
+O Grafo Global não significa uso irrestrito de dados. Sua evolução deverá respeitar finalidade, consentimento, privacidade, governança e controle de acesso.
+
+---
+
+# 24. Dados, privacidade, transparência e controle
 
 A Guivos poderá utilizar informações fornecidas voluntariamente, preferências, interações e registros de experiências para operar serviços, encontrar oportunidades, melhorar recomendações, proteger o ecossistema e cumprir obrigações legais.
 
-O Grafo Global da Guivos não autoriza uso irrestrito de dados.
+O participante deverá manter controle sobre as informações utilizadas para personalizar sua jornada, conforme as regras e a legislação aplicável.
 
-A pessoa deverá manter controle sobre suas informações conforme as regras e a legislação aplicável.
+A experiência deverá permitir, quando aplicável:
+
+- visualizar o que a Guivos compreendeu;
+- identificar a origem das informações;
+- corrigir interpretações incorretas;
+- complementar o contexto;
+- limitar determinados usos;
+- remover ou ocultar informações quando permitido;
+- revisar autorizações e integrações;
+- compreender por que uma recomendação foi apresentada.
 
 A arquitetura deverá preservar consentimento, finalidade, níveis de acesso, segregação de informações, anonimização ou agregação quando necessárias e rastreabilidade das fontes.
 
@@ -726,7 +809,7 @@ A Guivos deverá utilizar apenas as informações necessárias e autorizadas par
 
 ---
 
-# 21. Como a Guivos poderá se sustentar
+# 25. Como a Guivos poderá se sustentar
 
 A Guivos poderá gerar receita por meio de planos para pessoas, soluções para empresas, serviços B2B, Guivos Mall, viagens, experiências, publicidade responsável, patrocínios, conteúdos de marca, relatórios, análises, parcerias e produtos digitais.
 
@@ -736,45 +819,42 @@ O detalhamento completo desses mecanismos será desenvolvido no domínio **Guivo
 
 A Guivos poderá oferecer planos gratuitos e pagos.
 
-O plano gratuito deverá permitir acesso real à descoberta de oportunidades, participação em comunidades, experiências e meios essenciais de evolução disponíveis no ecossistema.
+O plano gratuito deverá permitir acesso real à descoberta de oportunidades, participação em coletivos, experiências e meios essenciais de evolução disponíveis no ecossistema.
 
 Os planos pagos poderão oferecer maior velocidade, profundidade, personalização, acompanhamento, inteligência, conveniência, benefícios e recursos avançados.
 
-> **A diferença entre os planos deverá estar na aceleração e ampliação da jornada, nunca no bloqueio da evolução ou transformação de quem utiliza um plano gratuito.**
-
-Os planos pagos existem para acelerar, personalizar e ampliar possibilidades. Não devem transformar o propósito da Guivos em uma barreira econômica.
+> **A diferença entre os planos deverá estar na aceleração e ampliação da jornada, nunca no bloqueio da evolução de quem utiliza um plano gratuito.**
 
 A monetização deverá sustentar o ecossistema, financiar sua evolução e ampliar sua capacidade de gerar valor, sem substituir o propósito.
 
-## Exemplo prático
-
-Uma pessoa no plano gratuito poderá encontrar oportunidades, participar de grupos e avançar em sua jornada.
-
-Um plano pago poderá oferecer análises mais profundas, maior personalização, acompanhamento mais frequente, recursos avançados e benefícios adicionais.
-
-O pagamento acelera e amplia a experiência, mas não transforma a evolução em privilégio exclusivo de quem pode pagar.
-
 ---
 
-# 22. Estágio atual da Guivos
+# 26. Estágio atual da Guivos
 
 ## Consolidado no repositório
 
 - identidade, propósito, missão e visão;
 - princípios permanentes;
 - arquitetura institucional;
-- estrutura superior dos produtos;
+- participantes: Pessoa, Organização e Coletivo;
+- Ciclo Contínuo de Evolução;
+- estrutura funcional em camadas;
+- Guivos Journey como experiência principal;
+- Guivos Intelligence como inteligência transversal;
+- Guivos Business, Mall, Travel, Media e Ads como soluções especializadas;
 - Guivos Mall como nome oficial do produto comercial;
-- Ciclo Contínuo de Evolução da Guivos;
 - limites públicos de aderência ao ecossistema;
 - modelo conceitual da Inteligência do Ecossistema Guivos;
 - Grafo Global da Guivos como modelo conceitual de conexões;
-- GAI-002 — Manifesto da Inteligência do Ecossistema Guivos;
+- princípios públicos iniciais do Guivos Economic Model;
 - governança documental e arquitetural;
 - Guia Oficial da Guivos.
 
-## Em validação, desenvolvimento ou planejamento
+## Em desenvolvimento, validação ou planejamento
 
+- arquitetura funcional detalhada do Journey;
+- captura multimodal de contexto e integrações específicas;
+- funcionamento técnico da inteligência contextual;
 - Modelo Fundamental e Core Capabilities;
 - Guivos Economic Model;
 - modelos econômicos e operacionais detalhados;
@@ -790,7 +870,7 @@ O pagamento acelera e amplia a experiência, mas não transforma a evolução em
 
 ---
 
-# 23. Perguntas frequentes
+# 27. Perguntas frequentes
 
 ## A Guivos é uma rede social?
 
@@ -798,35 +878,39 @@ Não. Relacionamentos podem fazer parte da experiência, mas o escopo é mais am
 
 ## A Guivos é um marketplace?
 
-Não. A Guivos possui o **Guivos Mall**, seu produto comercial, mas o ecossistema não é definido por transações.
+Não. A Guivos possui o **Guivos Mall**, sua solução comercial, mas o ecossistema não é definido por transações.
 
-## O que é Guivos Mall?
+## O que é o Guivos Journey?
 
-É o shopping da Guivos, reunindo produtos, serviços e outros ativos de diferentes fornecedores com curadoria e relação com as jornadas do ecossistema.
+É a principal experiência da Guivos. Organiza a jornada do participante e integra oportunidades, recomendações, conteúdos, produtos, serviços e experiências provenientes dos demais componentes.
 
-## O que é a Inteligência do Ecossistema Guivos?
+## O que é o Guivos Intelligence?
 
-É a capacidade de interpretar dados, conhecimento, contexto, conexões, jornadas, experiências e evidências para apoiar decisões e revelar oportunidades relevantes.
+É o componente que entrega a Inteligência do Ecossistema Guivos para Journey e para as demais soluções.
 
-## Ela é apenas um chatbot?
+## A Inteligência do Ecossistema é apenas um chatbot?
 
-Não. Interfaces de conversa podem existir, mas a inteligência é mais ampla e trabalha sobre o Grafo Global da Guivos.
+Não. Interfaces de conversa e voz podem existir, mas a inteligência é mais ampla e trabalha sobre contexto, conhecimento, conexões, experiências, evidências e o Grafo Global da Guivos.
+
+## Serei obrigado a preencher um cadastro longo?
+
+A intenção é que não. A compreensão poderá ser construída progressivamente por voz, texto e outros meios autorizados, com possibilidade de revisão e correção.
+
+## A voz será obrigatória?
+
+Não. A voz deverá ser um canal prioritário pela naturalidade, mas outros meios deverão estar disponíveis.
 
 ## O que é o Grafo Global da Guivos?
 
 É o modelo conceitual que conecta participantes, organizações, coletivos, objetivos, oportunidades, experiências, conhecimentos, relacionamentos e evidências ao longo do tempo.
 
-## O grafo torna a Guivos impossível de copiar?
+## A Guivos decidirá o que devo fazer?
 
-Nenhuma empresa é impossível de copiar. Entretanto, funcionalidades isoladas são mais fáceis de reproduzir do que um ecossistema vivo de relações, conhecimento, experiências e confiança acumulados ao longo do tempo.
+Não. Ela poderá organizar conhecimento, apresentar possibilidades e explicar recomendações. A decisão permanece com o participante.
 
 ## Os planos gratuitos impedirão algumas pessoas de evoluir?
 
-Não. A diferença entre planos gratuitos e pagos deverá estar na velocidade, profundidade e amplitude dos recursos. O pagamento pode acelerar uma jornada, mas não deve ser condição para que uma pessoa possa descobrir oportunidades e evoluir.
-
-## Onde estará descrito o modelo econômico completo?
-
-No domínio **Guivos Economic Model**, atualmente planejado no Guivos Knowledge Repository.
+Não. A diferença entre planos gratuitos e pagos deverá estar na velocidade, profundidade e amplitude dos recursos. O pagamento pode acelerar uma jornada, mas não deve ser condição para descobrir oportunidades e evoluir.
 
 ## A Guivos aceita qualquer empresa ou anúncio?
 
@@ -836,13 +920,9 @@ Não. A participação depende de legalidade, qualidade, transparência e aderê
 
 Não fazem parte da proposta da Guivos.
 
-## A Inteligência do Ecossistema decidirá o que devo fazer?
-
-Não. Ela poderá organizar conhecimento e recomendar possibilidades. A decisão permanece com a pessoa.
-
 ---
 
-# 24. Informações que ainda exigem validação
+# 28. Informações que ainda exigem validação
 
 Não devem ser apresentadas como disponíveis ou definitivas sem nova validação:
 
@@ -861,7 +941,7 @@ Não devem ser apresentadas como disponíveis ou definitivas sem nova validaçã
 - tecnologia específica do grafo;
 - ontologia e modelo lógico definitivos;
 - estrutura completa do Guivos Economic Model;
-- disponibilidade pública de cada produto;
+- disponibilidade pública de cada componente;
 - critérios finais de cadastro, curadoria, moderação, suporte e atendimento;
 - políticas legais e de privacidade ainda não publicadas.
 
@@ -869,15 +949,17 @@ Não devem ser apresentadas como disponíveis ou definitivas sem nova validaçã
 
 ---
 
-# 25. Conclusão
+# 29. Conclusão
 
-A Guivos existe para ajudar pessoas e organizações a transformar desejos amplos em próximos passos mais claros.
+A Guivos existe para ajudar pessoas, organizações e coletivos a transformar desejos amplos em próximos passos mais claros.
 
 Ela pretende reduzir a fragmentação das oportunidades e conectar quem busca evoluir a experiências, grupos, movimentos, empresas, universidades, igrejas, comunidades, ONGs, especialistas e parceiros.
 
+O Guivos Journey será a experiência principal. O Guivos Intelligence apoiará todo o ecossistema com inteligência contextual. Business, Mall, Travel, Media e Ads entregarão soluções especializadas de forma integrada.
+
 A jornada não possui um encerramento definitivo. Cada experiência pode gerar um Novo Momento Atual e abrir novas possibilidades.
 
-A Inteligência do Ecossistema Guivos apoiará esse processo com dados, conhecimento, estudos, evidências, contexto e conexões organizadas no Grafo Global da Guivos, mas a autonomia continuará pertencendo às pessoas e organizações.
+A Inteligência do Ecossistema Guivos apoiará esse processo com contexto autorizado, conhecimento, estudos, evidências e conexões organizadas no Grafo Global da Guivos, mas a autonomia continuará pertencendo aos participantes.
 
 O modelo econômico deverá sustentar e acelerar esse propósito, sem impedir que participantes de planos gratuitos possam descobrir oportunidades e evoluir.
 
@@ -888,16 +970,11 @@ O modelo econômico deverá sustentar e acelerar esse propósito, sem impedir qu
 | Versão | Data | Alteração principal |
 |---|---|---|
 | 1.0.0 | 03/07/2026 | Criação da primeira versão pública oficial |
-| 2.0.0 | 03/07/2026 | Reestruturação da narrativa, definição prática de evolução, Momento Atual, jornada, grupos e parceiros |
-| 2.1.0 | 03/07/2026 | Inclusão do que a Guivos não é, limites de atuação, critérios de aderência e ampliação do Guivos Business |
+| 2.0.0 | 03/07/2026 | Reestruturação da narrativa, definição prática de evolução, Momento Atual, jornada, produtos, papéis e limites |
+| 2.1.0 | 03/07/2026 | Inclusão de limites públicos, critérios de aderência e expansão do Guivos Business |
 | 2.2.0 | 03/07/2026 | Inclusão do Ciclo Contínuo de Evolução da Guivos |
-| 3.0.0 | 03/07/2026 | Consolidação pública da Foundation, fragmentação das oportunidades, papéis dos participantes, princípios permanentes e modelo de aprendizagem da IA |
-| 3.1.0 | 04/07/2026 | Guivos Mall, exemplo da promoção de pizza, Guivos Economic Model e princípio de aceleração sem bloqueio nos planos pagos |
-| 3.2.0 | 04/07/2026 | Inteligência do Ecossistema Guivos, Grafo Global, diagramas, aprendizagem ampliada e patrimônio cumulativo difícil de reproduzir |
-| 3.3.0 | 04/07/2026 | Inclusão de exemplos práticos em conceitos, produtos, jornada, privacidade, modelo econômico e funcionamento do ecossistema |
-
-# Regra de atualização contínua
-
-Este documento deverá ser revisto quando houver alteração relevante em identidade, propósito, missão, visão, evolução, jornada, Momento Atual, produtos, nomenclaturas, critérios de participação, inteligência, Grafo Global, dados, privacidade, modelo econômico, planos, monetização, impacto, expansão, baselines ou decisões arquiteturais.
-
-Toda atualização deverá preservar linguagem acessível, partir de exemplos concretos, substituir informações superadas e distinguir claramente o que está consolidado, em validação, em desenvolvimento ou planejado.
+| 3.0.0 | 04/07/2026 | Consolidação pública da essência, propósito, missão, visão e modelo de aprendizagem da inteligência |
+| 3.1.0 | 04/07/2026 | Inclusão do Guivos Mall, Guivos Economic Model e princípios dos planos gratuitos e pagos |
+| 3.2.0 | 04/07/2026 | Consolidação da Inteligência do Ecossistema Guivos e do Grafo Global |
+| 3.3.0 | 04/07/2026 | Inclusão de exemplos práticos em todo o documento |
+| 4.0.0 | 04/07/2026 | Alinhamento à arquitetura em camadas, Journey como experiência, Intelligence transversal, contexto multimodal e novos diagramas públicos |
