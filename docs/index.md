@@ -4,83 +4,95 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 Ele preserva fundamentos, arquiteturas, modelos, decisões, pesquisas, validações, especificações de produto e publicações públicas.
 
-A partir da GE-2, o GKR também passa a operar como sistema institucional de descoberta, validação, consolidação e evolução do conhecimento da Guivos.
-
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- M5.4 — Enterprise Design and GLPA Registered concluído;
-- modo vigente da GE-2: Institutional Consolidation Mode;
-- modo vigente da GKA: Institutional Writing;
-- sprint `0.28.0 — Guivos Knowledge Architecture Foundation` aberta;
-- checkpoint `CHECKPOINT-GKA-PREPARATION-COMPLETE` atualizado para `1.2.0`;
-- matrizes `GE2-SYNC-001`, `GE2-SYNC-002` e `GE2-SYNC-003` registradas;
-- documento atual da GKA: `GKA-000 — Parte V — Evolução Institucional`;
-- nova frente registrada: `Enterprise Design & Business Specification`;
-- especificação em desenvolvimento: `PAS-001 — Guivos Journey`;
-- arquitetura funcional registrada: `GLPA-001 — Guivos Layered Product Architecture`;
-- Guivos Knowledge Architecture reconhecida por ADR-006;
-- Foundation congelada em `A2-B3`;
-- A2-R02 — Fundamental Model Review ativa e em espera operacional;
-- Guivos Mall consolidado como produto oficial;
-- Guivos Economic Model criado como domínio planejado;
-- Inteligência do Ecossistema Guivos consolidada;
-- Grafo Global da Guivos consolidado como modelo conceitual de conexões.
+- marco `M5.5 — Context and Architecture Engineering Checkpoint` concluído;
+- checkpoint `CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE` ativo;
+- sincronização `GE2-SYNC-004` registrada;
+- GKA-000 com Parte V ainda pendente;
+- `PAS-001 — Guivos Journey` preservado na versão `0.2.0`;
+- `GLPA-001` vigente;
+- `GIA-000` atualizada para `1.2.0`;
+- Captura Multimodal de Contexto registrada;
+- voz definida como canal prioritário, mas não exclusivo;
+- LPM e CIE registrados como candidatos em Discovery/Engineering;
+- Architecture Engineering Sprint definido como próximo trabalho;
+- Guivos Economic Model permanece planejado;
+- A2-R02 permanece em espera operacional.
 
 ## Missão atual
 
-Consolidar a especificação funcional inicial do `PAS-001 — Guivos Journey`, retomando pela `GLPA-001 — Guivos Layered Product Architecture`.
+Projetar a taxonomia oficial e o meta-modelo do Guivos Knowledge Repository antes de criar novos documentos estruturais.
 
-A conclusão do `GKA-000 — Parte V — Evolução Institucional` permanece pendente e deverá ser retomada antes da criação de `docs/knowledge-architecture/`.
+Depois dessa definição, decidir quais ativos candidatos realmente devem existir e retomar o PAS-001 pela JFA e pela Captura Multimodal de Contexto.
 
 ## Acesso rápido
 
-- [GE2-SYNC-003 — Enterprise Design and Layered Product Architecture Sync](project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture.md)
-- [GLPA-001 — Guivos Layered Product Architecture](product-architecture/layered-product-architecture.md)
+- [GE2-SYNC-004 — Context, Participant Model and Architecture Engineering Sync](project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md)
+- [Architecture Engineering Pause Checkpoint](project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)
-- [GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync](project/GE2-SYNC-002-gka-conceptual-architecture-progress.md)
-- [GE2-SYNC-001 — Architectural Synchronization Matrix](project/GE2-SYNC-001-architectural-synchronization-matrix.md)
-- [Checkpoint GKA Preparation Complete](project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md)
-- [Guivos Evolution Framework](evolution-framework/index.md)
+- [GLPA-001 — Guivos Layered Product Architecture](product-architecture/layered-product-architecture.md)
+- [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Roadmap Arquitetural](roadmap.md)
 - [Knowledge Board](project/knowledge-board.md)
 - [Architectural Milestones](project/architectural-milestones.md)
-- [ADR-006 — Guivos Knowledge Architecture](adr/ADR-006-guivos-knowledge-architecture.md)
 - [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md)
-- [Fundamental Model Evidence Matrix](validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md)
-- [Arquitetura de Produtos](product-architecture/index.md)
-- [GAI-001 — AI Knowledge Model](intelligence-architecture/knowledge-model.md)
-- [GAI-002 — Manifesto da Inteligência do Ecossistema](intelligence-architecture/manifesto.md)
 - [Guivos Economic Model](economic-model/index.md)
-- [Glossário Canônico](glossary.md)
 
-## Progresso do GKA-000
+## Decisões recentes
 
-- Parte I — Identidade: concluída conceitualmente.
-- Parte II — Papel Institucional: concluída conceitualmente.
-- Parte III — Fundamentos: concluída conceitualmente.
-- Parte IV — Integrações Arquiteturais: concluída conceitualmente.
-- Parte V — Evolução Institucional: em desenvolvimento.
+### Captura Multimodal de Contexto
 
-## Enterprise Design & Business Specification
+O participante poderá expressar Momento Atual, objetivos, limitações e prioridades por voz, texto, documentos, imagens e integrações autorizadas.
 
-A Guivos iniciou uma frente de especificação executável dedicada a produto, operação, modelo econômico, comercial e Go-to-Market.
+A voz é o canal prioritário por permitir expressão mais natural, sem impedir alternativas acessíveis e estruturadas.
 
-A frente começa pelo `PAS-001 — Guivos Journey`, orientado pela `GLPA-001 — Guivos Layered Product Architecture`.
+### Modelo Vivo do Participante
 
-## Guivos Layered Product Architecture
+O `Living Participant Model (LPM)` permanece como conceito candidato para representar o contexto autorizado, temporal, explicável e revisável do participante.
 
-A GLPA organiza a Guivos em camadas funcionais:
+### Context Intelligence Engine
 
-- Experience Layer: Guivos Journey;
-- Intelligence Layer: Guivos Intelligence;
-- Service Layer: Guivos Business, Mall, Travel, Media e Ads;
-- Platform Layer: APIs, Graph, Auth, Billing, Search, Notifications, Security e demais capacidades comuns.
+O `Context Intelligence Engine (CIE)` permanece como capacidade candidata da Intelligence Layer para interpretar entradas multimodais e propor atualizações governadas do LPM.
 
-## Princípio central da GE-2
+### Hierarquia documental de produto
 
-Nenhuma arquitetura permanente deverá existir sem conhecimento consolidado que a sustente, e nenhum conhecimento consolidado deverá existir sem evidências rastreáveis que o fundamentem.
+```text
+GPA
+  -> PAS
+       -> JFA
+            -> FDS
+       -> UX Specification
+       -> Technical Specification
+```
 
-## Componentes oficiais
+### Architecture Engineering Sprint
 
-Guivos Journey, Guivos Mall, Guivos Travel, Guivos Business, Guivos Media, Guivos Intelligence e Guivos Ads.
+O próximo ciclo deverá definir:
+
+1. taxonomia oficial de artefatos;
+2. meta-modelo do GKR;
+3. categorias documentais;
+4. dependências;
+5. ciclo de vida;
+6. critérios de promoção à Canon;
+7. nomenclatura e identificadores;
+8. ponto único de manutenção conceitual.
+
+## Ativos candidatos ainda não criados
+
+GTF, GCM, GPMA, GIA detalhada por engines, GLS, GDP, GDF e GAME.
+
+## Pendências preservadas
+
+- Parte V do GKA-000;
+- revisão e publicação do GKA-000;
+- criação futura de `docs/knowledge-architecture/` somente após aprovação integral;
+- retomada da A2-R02;
+- desenvolvimento do Guivos Economic Model;
+- retomada do PAS-001 após o Architecture Engineering Sprint.
+
+## Princípio central
+
+Nenhum novo conceito estrutural deve ser promovido diretamente à Canon ou a uma arquitetura permanente sem passar por Discovery, Engineering, validação e decisão institucional.
