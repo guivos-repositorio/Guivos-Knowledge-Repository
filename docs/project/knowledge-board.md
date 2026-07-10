@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 4.7.0
+version: 4.8.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -16,26 +16,17 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural e de e
 |---|---|---|
 | GE-1 — Foundation & Architecture | Completed | Estruturar a Guivos como ecossistema e arquitetura |
 | GE-2 — Knowledge | Active — Institutional Consolidation Mode | Institucionalizar a produção de conhecimento |
-| M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA como arquitetura de primeira classe |
-| M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA |
-| M5.1 — GKA Preparation Complete | Completed | Encerrar preparação e iniciar redação institucional |
-| M5.2 — GKA Institutional Consolidation Registered | Completed | Registrar decisões metodológicas posteriores à preparação |
-| M5.3 — GKA Conceptual Architecture Advanced | Completed | Registrar conclusão conceitual das Partes II, III e IV |
 | M5.4 — Enterprise Design and GLPA Registered | Completed | Registrar especificação executável, PAS-001 e GLPA |
-| GE2-SYNC-001 | Completed 1.1.0 | Matriz de sincronização arquitetural da GE-2 |
-| GE2-SYNC-002 | Completed 1.1.0 | Matriz de progresso conceitual do GKA-000 |
+| M5.5 — Context and Architecture Engineering Checkpoint | Completed | Preservar captura multimodal, LPM, CIE e pausa de engenharia |
 | GE2-SYNC-003 | Completed 1.0.0 | Matriz de Enterprise Design e GLPA |
-| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.2.0 | Preservar decisões e ponto de retomada do GKA-000 |
-| ADR-006 | Approved | Institucionalizar a Guivos Knowledge Architecture |
-| GEF-001 | Active 1.0.0 | Registrar as eras de evolução institucional da Guivos |
-| A2-B3 | Frozen | Baseline vigente da Foundation |
+| GE2-SYNC-004 | Completed 1.0.0 | Matriz de contexto, modelo do participante e Architecture Engineering |
+| CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE | Active 1.0.0 | Preservar ponto exato de retomada |
+| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active — Historical Dependency 1.2.0 | Preservar decisões da GKA |
+| GLPA-001 | Approved 1.0.0 | Organizar a Guivos por camadas funcionais |
+| PAS-001 — Guivos Journey | Draft 0.2.0 — Preserved | Especificar a Experience Layer |
+| GIA-000 | Active 1.2.0 | Registrar inteligência, contexto e candidatos de engines |
 | A2-R02 | Active — Operationally Paused | Revisar o Modelo Fundamental após a GKA Foundation |
-| GLPA-001 | Approved 1.0.0 | Organizar a Guivos por camadas funcionais de produto |
-| PAS-001 — Guivos Journey | Draft 0.1.0 | Especificar a camada principal de experiência da Guivos |
-| GCCM-001 | Discovery 0.4.0 | Descoberta e validação de Core Capabilities |
-| GAI-001 | Consolidated 1.1.0 | Definir o modelo de conhecimento da Inteligência do Ecossistema |
-| GAI-002 | Consolidated 1.0.0 | Consolidar o Manifesto da Inteligência do Ecossistema Guivos |
-| Guivos Economic Model | Planned 0.1.0 | Consolidar a sustentabilidade econômica do ecossistema |
+| Guivos Economic Model | Planned 0.1.0 | Consolidar sustentabilidade econômica |
 
 ## Sprint vigente
 
@@ -44,132 +35,132 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural e de e
 | Sprint | `0.28.0 — Guivos Knowledge Architecture Foundation` |
 | Modo GE-2 | Institutional Consolidation Mode |
 | Documento GKA atual | `GKA-000 — Parte V — Evolução Institucional` |
-| Progresso GKA | Partes I, II, III e IV concluídas conceitualmente; Parte V em desenvolvimento |
 | Frente operacional | Enterprise Design & Business Specification |
-| Especificação atual | `PAS-001 — Guivos Journey` |
-| Arquitetura funcional atual | `GLPA-001 — Guivos Layered Product Architecture` |
-| Foco imediato | Consolidar GLPA dentro do PAS-001 e avançar a arquitetura funcional do Journey |
+| Especificação preservada | `PAS-001 — Guivos Journey 0.2.0` |
+| Arquitetura funcional | `GLPA-001` |
+| Sincronização atual | `GE2-SYNC-004` |
+| Checkpoint atual | `CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE` |
+| Foco imediato | Taxonomia oficial e meta-modelo do GKR |
 | Pasta `knowledge-architecture/` | Ainda não criada |
-| Publicação de ativos GKA | Aguardando aprovação integral do GKA-000 |
 
-## Guivos Knowledge Architecture
+## Contexto multimodal
 
-**Estado:** Recognized — Institutional Consolidation Active.
+**Estado:** Approved for Product Specification / Engineering Candidate.
 
-A GKA foi reconhecida pelo `ADR-006` como arquitetura de primeira classe.
+Decisões:
 
-Ela governará como o conhecimento institucional da Guivos é descoberto, estruturado, validado, consolidado, promovido à Canon, revisado e evoluído.
+- voz como canal prioritário, mas não exclusivo;
+- texto, documentos, imagens e integrações autorizadas como canais complementares;
+- formulários extensos não devem ser o fluxo principal;
+- interpretações devem ser explicáveis e revisáveis;
+- fatos declarados, dados integrados, evidências e inferências devem ser diferenciados.
 
-## Progresso do GKA-000
+## Modelo Vivo do Participante
 
-| Parte | Título | Estado |
+**Estado:** Concept Candidate — Discovery/Engineering.
+
+O `Living Participant Model (LPM)` representa uma estrutura candidata para consolidar contexto autorizado, temporal, revisável e explicável do participante.
+
+Possíveis especializações futuras:
+
+- Living Person Model;
+- Living Organization Model;
+- Living Collective Model.
+
+## Intelligence Layer — candidatos
+
+| Ativo | Estado | Responsabilidade candidata |
 |---|---|---|
-| I | Identidade da GKA | Concluída conceitualmente |
-| II | Papel Institucional | Concluída conceitualmente |
-| III | Fundamentos | Concluída conceitualmente |
-| IV | Integrações Arquiteturais | Concluída conceitualmente |
-| V | Evolução Institucional | Em desenvolvimento |
+| CIE | Candidate | Contexto e atualização do LPM |
+| RIE | Candidate | Recomendações |
+| MIE | Candidate | Matching |
+| LIE | Candidate | Aprendizagem |
+| PIE | Candidate | Predição governada |
+| TIE | Candidate | Confiança e risco |
+| KIE | Candidate | Conhecimento aplicado |
 
-## Enterprise Design & Business Specification
+Esses ativos não são microserviços obrigatórios nem componentes canônicos.
 
-**Estado:** Active — Specification Started.
+## Hierarquia documental de produto
+
+```text
+GPA
+  -> PAS
+       -> JFA
+            -> FDS
+       -> UX Specification
+       -> Technical Specification
+```
+
+| Artefato | Estado |
+|---|---|
+| GPA | Existing |
+| PAS | Existing / PAS-001 active |
+| JFA | Candidate / Planned |
+| FDS | Candidate / Planned |
+| UX Specification | Planned |
+| Technical Specification | Planned |
+
+## Architecture Engineering Sprint
+
+**Estado:** Next — Not Started.
 
 Objetivo:
 
-> Especificar completamente a Guivos como empresa, produto, operação, modelo econômico, modelo comercial e Go-to-Market antes do desenvolvimento da plataforma.
+> Projetar a estrutura definitiva do GKR antes de criar novos documentos estruturais.
 
-Backlog executivo:
+Entregáveis:
 
-1. Arquitetura funcional dos produtos;
-2. Guivos Economic Model;
-3. Commercial Model;
-4. Go-to-Market.
+1. taxonomia de artefatos;
+2. meta-modelo;
+3. categorias documentais;
+4. dependências;
+5. ciclo de vida;
+6. critérios de Canon;
+7. nomenclatura;
+8. ponto único de manutenção conceitual.
 
-Ordem inicial:
+## Ativos candidatos congelados para decisão
 
-1. Guivos Journey;
-2. Guivos Mall;
-3. Guivos Business;
-4. Guivos Intelligence;
-5. Guivos Ads;
-6. Guivos Media;
-7. Guivos Travel.
+- GTF;
+- GCM;
+- GPMA;
+- GIA detalhada por engines;
+- GLS;
+- GDP;
+- GDF;
+- GAME.
 
-## GLPA-001 — Guivos Layered Product Architecture
-
-A GLPA organiza a Guivos em camadas funcionais:
-
-| Camada | Componente | Estado |
-|---|---|---|
-| Experience Layer | Guivos Journey | Approved |
-| Intelligence Layer | Guivos Intelligence | Approved |
-| Service Layer | Business, Mall, Travel, Media e Ads | Approved |
-| Platform Layer | API, Graph, Auth, Billing, Search, Notifications, Security e capacidades comuns | Planned / Technical Detail Pending |
-
-## PAS-001 — Guivos Journey
-
-**Estado:** Draft 0.1.0.
-
-Conteúdo iniciado:
-
-- Product Philosophy;
-- Visão do Produto;
-- definição do Journey como Experience Layer;
-- princípios de produto;
-- limites do Journey;
-- arquitetura em camadas aplicada ao Journey.
-
-Próximo conteúdo:
-
-1. Missão;
-2. Objetivos Estratégicos;
-3. Público-alvo;
-4. Proposta de Valor detalhada;
-5. Arquitetura Funcional;
-6. Fluxos Operacionais;
-7. IA;
-8. Integrações;
-9. Modelo Econômico;
-10. KPIs;
-11. Roadmap.
+Nenhum deve ser criado antes da conclusão do Architecture Engineering Sprint.
 
 ## Hipóteses preservadas fora da Canon
 
 - `H-GKA-001 — Modelo Fundamental da Aprendizagem Institucional`;
-- `H-GKM-001 — Diferentes categorias de conhecimento institucional exigem diferentes critérios de validação, consolidação e promoção à Canon`;
-- `H-GEA-005 — Arquiteturas institucionais de primeira classe convergem para estrutura documental composta por Identidade, Papel, Fundamentos, Integrações e Evolução Institucional`;
-- `H-GEF-001 — Entidades permanentes do Ecossistema Guivos tendem a evoluir preservando sua identidade enquanto ampliam progressivamente sua capacidade de cumprir seu propósito`.
-
-## Produtos e camadas oficiais
-
-| Componente | Natureza | Estado |
-|---|---|---|
-| Guivos Journey | Experience Layer | Consolidado / PAS iniciado |
-| Guivos Intelligence | Intelligence Layer | Consolidado |
-| Guivos Business | Service Layer | Consolidado |
-| Guivos Mall | Service Layer | Consolidado |
-| Guivos Travel | Service Layer | Consolidado |
-| Guivos Media | Service Layer | Consolidado |
-| Guivos Ads | Service Layer | Consolidado |
+- `H-GKM-001 — Categorias de conhecimento exigem critérios distintos`;
+- `H-GEA-005 — Estrutura documental de arquiteturas de primeira classe`;
+- `H-GEF-001 — Continuidade Evolutiva`;
+- `H-GPM-001 — Memória Evolutiva`;
+- `H-GPM-002 — Compreensão Progressiva`;
+- `H-GPM-003 — Soberania do Participante`;
+- `H-GPM-004 — Evolução Assistida`;
+- `H-GPM-005 — Evolução Contínua`.
 
 ## Governança documental
 
 | Ativo | Status |
 |---|---|
-| Roadmap Arquitetural | 4.7.0 |
-| Knowledge Board | 4.7.0 |
-| Architectural Milestones | 4.5.0 |
-| Glossário Canônico | Consolidated 1.7.0 |
-| Product Architecture | Consolidated 1.2.0 |
-| GLPA-001 | Approved 1.0.0 |
-| PAS-001 | Draft 0.1.0 |
-| GE2-SYNC-003 | Completed 1.0.0 |
-| CHECKPOINT-GKA-PREPARATION-COMPLETE | Active 1.2.0 |
-| Guia Oficial da Guivos | Public Canon 3.3.0 |
-| Guivos Economic Model | Planned 0.1.0 |
+| Roadmap Arquitetural | 4.8.0 |
+| Knowledge Board | 4.8.0 |
+| Architectural Milestones | 4.6.0 planned in this sync |
+| Glossário Canônico | 1.8.0 planned in this sync |
+| Product Architecture | 1.2.0 |
+| PAS-001 | Draft 0.2.0 |
+| GIA-000 | Active 1.2.0 |
+| GE2-SYNC-004 | Completed 1.0.0 |
+| Architecture Engineering Checkpoint | Active 1.0.0 |
 
 ## Próxima atividade
 
-Retomar o `PAS-001 — Guivos Journey` a partir da consolidação da `GLPA-001 — Guivos Layered Product Architecture`, avançando a especificação funcional completa do Journey.
+Iniciar o `Architecture Engineering Sprint` pela definição da taxonomia oficial e do meta-modelo do GKR.
 
-A conclusão da Parte V do `GKA-000` permanece pendente antes da criação do domínio `docs/knowledge-architecture/`.
+Depois decidir quais ativos candidatos realmente devem existir e retomar o PAS-001 pela JFA e pela Captura Multimodal de Contexto.
