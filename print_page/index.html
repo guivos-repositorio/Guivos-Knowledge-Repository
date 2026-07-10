@@ -11029,6 +11029,8 @@ Implementação = realização progressiva
 <li>A experiência deve evoluir continuamente com o usuário.</li>
 <li>O Journey deve incentivar ação no mundo real, não apenas permanência na tela.</li>
 <li>O usuário controla sua jornada; a Guivos amplia suas possibilidades.</li>
+<li>A compreensão do participante deve ser progressiva, natural e revisável.</li>
+<li>Voz e demais canais multimodais devem reduzir a dependência de formulários extensos.</li>
 </ol>
 <h2 id="product-architecture-pas-001-guivos-journey-2-arquitetura-em-camadas-aplicada-ao-journey">2. Arquitetura em Camadas Aplicada ao Journey<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-2-arquitetura-em-camadas-aplicada-ao-journey" title="Permanent link">&para;</a></h2>
 <p>O Journey deve ser compreendido como a Experience Layer da GLPA.</p>
@@ -11067,20 +11069,92 @@ Implementação = realização progressiva
 <li>executar reservas e operações de viagem do Travel;</li>
 <li>manter infraestrutura técnica comum da Platform Layer.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-3-ponto-de-retomada">3. Ponto de retomada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-3-ponto-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Este documento foi iniciado com Product Philosophy, Visão do Produto e aplicação inicial da GLPA.</p>
-<p>A próxima etapa deverá detalhar:</p>
+<h2 id="product-architecture-pas-001-guivos-journey-3-captura-multimodal-de-contexto">3. Captura Multimodal de Contexto<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-3-captura-multimodal-de-contexto" title="Permanent link">&para;</a></h2>
+<h3 id="product-architecture-pas-001-guivos-journey-31-decisao-funcional">3.1 Decisão funcional<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-31-decisao-funcional" title="Permanent link">&para;</a></h3>
+<p>A compreensão do Momento Atual não deve depender de um fluxo longo de formulários como mecanismo principal.</p>
+<p>O participante deve poder descrever sua realidade, objetivos, limitações e expectativas com suas próprias palavras.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-32-voz-como-canal-prioritario">3.2 Voz como canal prioritário<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-32-voz-como-canal-prioritario" title="Permanent link">&para;</a></h3>
+<p>A voz deve ser tratada como canal prioritário por permitir expressão mais natural, contextual e detalhada.</p>
+<p>A experiência deve também oferecer alternativas acessíveis, incluindo texto e preenchimento estruturado quando necessário.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-33-canais-multimodais-candidatos">3.3 Canais multimodais candidatos<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-33-canais-multimodais-candidatos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>voz;</li>
+<li>conversa por texto;</li>
+<li>documentos autorizados;</li>
+<li>imagens autorizadas;</li>
+<li>localização autorizada;</li>
+<li>calendário autorizado;</li>
+<li>wearables e aplicativos de saúde ou esporte autorizados;</li>
+<li>integrações profissionais autorizadas;</li>
+<li>histórico de interações e experiências da Guivos.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-34-fluxo-conceitual">3.4 Fluxo conceitual<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-34-fluxo-conceitual" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Participante
+  -&gt; Entrada multimodal
+  -&gt; Context Intelligence Engine
+  -&gt; proposta de interpretação
+  -&gt; confirmação, correção ou limitação pelo participante
+  -&gt; Modelo Vivo do Participante
+  -&gt; Journey e demais camadas autorizadas
+</code></pre></div>
+<h3 id="product-architecture-pas-001-guivos-journey-35-regras">3.5 Regras<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-35-regras" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Missão do Journey;</li>
-<li>Objetivos Estratégicos;</li>
-<li>Público-alvo;</li>
-<li>Arquitetura Funcional;</li>
-<li>Fluxos Operacionais;</li>
-<li>Inteligência Artificial;</li>
-<li>Integrações;</li>
-<li>Modelo Econômico;</li>
-<li>KPIs;</li>
-<li>Roadmap.</li>
+<li>O participante não deve ser obrigado a revelar informações além do necessário para a experiência escolhida.</li>
+<li>Inferências relevantes devem ser explicáveis e revisáveis.</li>
+<li>Informações sensíveis exigem critérios superiores de consentimento e governança.</li>
+<li>O sistema deve diferenciar fatos declarados, dados integrados, evidências observadas e inferências provisórias.</li>
+<li>O participante deve poder corrigir, complementar, ocultar ou limitar o uso das informações, observadas restrições legais e operacionais.</li>
+</ol>
+<h2 id="product-architecture-pas-001-guivos-journey-4-modelo-vivo-do-participante-conceito-candidato">4. Modelo Vivo do Participante — Conceito Candidato<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-4-modelo-vivo-do-participante-conceito-candidato" title="Permanent link">&para;</a></h2>
+<p>O <code>Living Participant Model (LPM)</code> representa, provisoriamente, a estrutura dinâmica utilizada para consolidar o contexto autorizado de um participante ao longo do tempo.</p>
+<p>O LPM não é um cadastro estático nem um perfil público. Ele é uma representação contextual, temporal, explicável e continuamente atualizável.</p>
+<p>Elementos candidatos:</p>
+<ul>
+<li>identidade;</li>
+<li>Momento Atual;</li>
+<li>objetivos;</li>
+<li>Próximos Passos;</li>
+<li>interesses;</li>
+<li>competências;</li>
+<li>preferências;</li>
+<li>limitações;</li>
+<li>disponibilidade;</li>
+<li>relacionamentos;</li>
+<li>experiências;</li>
+<li>evidências de evolução;</li>
+<li>proveniência;</li>
+<li>confiança;</li>
+<li>permissões.</li>
+</ul>
+<p>O conceito permanece em Discovery/Engineering e deverá ser formalizado apenas após o Architecture Engineering Sprint e futura avaliação da GPMA.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-5-context-intelligence-engine-capacidade-candidata">5. Context Intelligence Engine — Capacidade Candidata<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-5-context-intelligence-engine-capacidade-candidata" title="Permanent link">&para;</a></h2>
+<p>O <code>Context Intelligence Engine (CIE)</code> é uma capacidade candidata da Intelligence Layer para receber entradas multimodais autorizadas, interpretar contexto, propor atualizações do LPM e preservar proveniência, confiança, temporalidade e explicabilidade.</p>
+<p>O CIE não pertence à Experience Layer e não deve alterar silenciosamente informações sensíveis ou permanentes sem critérios de confirmação e governança.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-6-hierarquia-documental-de-produto">6. Hierarquia Documental de Produto<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-6-hierarquia-documental-de-produto" title="Permanent link">&para;</a></h2>
+<p>O desenvolvimento funcional do Journey seguirá a hierarquia:</p>
+<div class="highlight"><pre><span></span><code>GPA
+  -&gt; PAS
+       -&gt; JFA
+            -&gt; FDS
+       -&gt; UX Specification
+       -&gt; Technical Specification
+</code></pre></div>
+<ul>
+<li>PAS define o produto/camada;</li>
+<li>JFA define os domínios funcionais permanentes;</li>
+<li>FDS detalha cada domínio funcional;</li>
+<li>UX define a interação;</li>
+<li>Technical Specification define a implementação.</li>
+</ul>
+<h2 id="product-architecture-pas-001-guivos-journey-7-ponto-de-retomada">7. Ponto de retomada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-7-ponto-de-retomada" title="Permanent link">&para;</a></h2>
+<p>Este documento está preservado durante o Architecture Engineering Sprint.</p>
+<p>Após a definição da taxonomia e do meta-modelo do GKR, a próxima etapa do PAS-001 deverá:</p>
+<ol>
+<li>confirmar a posição de JFA e FDS na taxonomia oficial;</li>
+<li>iniciar a JFA do Journey;</li>
+<li>detalhar o domínio de Captura Multimodal de Contexto;</li>
+<li>modelar os limites entre Journey, CIE, LPM, Grafo Global e Platform Layer;</li>
+<li>avançar posteriormente para Missão, Objetivos Estratégicos, Público-alvo, Arquitetura Funcional, Fluxos, Integrações, Modelo Econômico, KPIs e Roadmap.</li>
 </ol></section><section class="print-page" id="product-architecture-journey" heading-number="9.4"><h1 id="product-architecture-journey-guivos-journey">Guivos Journey<a class="headerlink" href="#product-architecture-journey-guivos-journey" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-journey-papel">Papel<a class="headerlink" href="#product-architecture-journey-papel" title="Permanent link">&para;</a></h2>
 <p>Guivos Journey é a camada principal de experiência do Ecossistema Guivos.</p>
