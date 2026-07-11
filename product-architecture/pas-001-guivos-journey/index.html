@@ -1,262 +1,135 @@
 
-<!doctype html>
-<html lang="pt" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
-      
-      
-        <meta name="author" content="Guivos">
-      
-      
-      
-        <link rel="prev" href="../layered-product-architecture/">
-      
-      
-        <link rel="next" href="../journey/">
-      
-      
-        
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
-    
-    
-      
-        <title>Guivos Journey Product Architecture Specification - Guivos Knowledge Repository</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../../css/print-site.css">
-    
-      <link rel="stylesheet" href="../../css/print-site-material.css">
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#pas-001-guivos-journey-product-architecture-specification" class="md-skip">
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
+<meta content="Guivos" name="author"/>
+<link href="../layered-product-architecture/" rel="prev"/>
+<link href="../journey/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>Guivos Journey Product Architecture Specification - Guivos Knowledge Repository</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../css/print-site.css" rel="stylesheet"/>
+<link href="../../css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#pas-001-guivos-journey-product-architecture-specification">
           Pular para conteúdo
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guivos Knowledge Repository" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             Guivos Knowledge Repository
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Guivos Journey Product Architecture Specification
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
-    
-  
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
 </form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Pesquisar">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Inicializando busca
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
-      
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
     guivos-repositorio/Guivos-Knowledge-Repository
   </div>
 </a>
-      </div>
-    
-  </nav>
-  
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guivos Knowledge Repository" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
     Guivos Knowledge Repository
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
     guivos-repositorio/Guivos-Knowledge-Repository
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
     
   
     Início
@@ -264,44 +137,12 @@
 
     
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Guia Oficial da Guivos
@@ -309,35 +150,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
             
   
     Guia Oficial da Guivos
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../public/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../public/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -345,34 +172,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../public/guia-oficial-da-guivos/">
+<span class="md-ellipsis">
     
   
     Guia Completo
@@ -380,59 +185,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--public-canon"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--public-canon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Guivos Evolution Framework
@@ -440,35 +202,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
             
   
     Guivos Evolution Framework
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../evolution-framework/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../evolution-framework/">
+<span class="md-ellipsis">
     
   
     GEF-001 — Visão Geral
@@ -476,59 +224,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Research
@@ -536,35 +241,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
             
   
     Research
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -572,49 +263,13 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
     
   
     RP-001 — Ecosystem Research Program
@@ -622,35 +277,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
             
   
     RP-001 — Ecosystem Research Program
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/RP-001/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -658,34 +299,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/RP-001/protocol/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/protocol/">
+<span class="md-ellipsis">
     
   
     Research Protocol
@@ -693,34 +312,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/RP-001/MS-001/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/MS-001/">
+<span class="md-ellipsis">
     
   
     Meta-Síntese MS-001
@@ -728,34 +325,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/RP-001/evidence-registry/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/evidence-registry/">
+<span class="md-ellipsis">
     
   
     Evidence Registry
@@ -763,34 +338,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/RP-001/ecosystem-phenomena-catalog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/ecosystem-phenomena-catalog/">
+<span class="md-ellipsis">
     
   
     Ecosystem Phenomena Catalog
@@ -798,34 +351,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../research/RP-001/recommendations/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/recommendations/">
+<span class="md-ellipsis">
     
   
     Architectural Recommendations
@@ -833,67 +364,19 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Guivos Enterprise Architecture
@@ -901,35 +384,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
             
   
     Guivos Enterprise Architecture
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../enterprise-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../enterprise-architecture/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -937,34 +406,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../enterprise-architecture/permanence-layer-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../enterprise-architecture/permanence-layer-model/">
+<span class="md-ellipsis">
     
   
     Permanence Layer Model
@@ -972,59 +419,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--validated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Reference Architecture
@@ -1032,35 +436,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
             
   
     Reference Architecture
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reference-architecture/gccm-001/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../reference-architecture/gccm-001/">
+<span class="md-ellipsis">
     
   
     GCCM-001 — Core Capability Model
@@ -1068,41 +458,15 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--discovery"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../glossary/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--discovery"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../glossary/">
+<span class="md-ellipsis">
     
   
     Glossário Canônico
@@ -1110,51 +474,13 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-ellipsis">
     
   
     GEB
@@ -1162,35 +488,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
             
   
     GEB
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -1198,42 +510,12 @@
 
     
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+<span class="md-ellipsis">
     
   
     Parte I — Fundação
@@ -1241,35 +523,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_2">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_2">
+<span class="md-nav__icon md-icon"></span>
             
   
     Parte I — Fundação
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -1277,34 +545,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved-draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/01-essence/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/01-essence/">
+<span class="md-ellipsis">
     
   
     Essência
@@ -1312,34 +558,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/02-purpose/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/02-purpose/">
+<span class="md-ellipsis">
     
   
     Propósito
@@ -1347,34 +571,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved-draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/03-mission/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/03-mission/">
+<span class="md-ellipsis">
     
   
     Missão Operacional
@@ -1382,34 +584,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved-draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/04-vision/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/04-vision/">
+<span class="md-ellipsis">
     
   
     Visão de Longo Prazo
@@ -1417,34 +597,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved-draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/05-constitution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/05-constitution/">
+<span class="md-ellipsis">
     
   
     Constituição
@@ -1452,34 +610,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved-draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-01-foundation/06-principles/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/06-principles/">
+<span class="md-ellipsis">
     
   
     Princípios Permanentes
@@ -1487,57 +623,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved-draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+<span class="md-ellipsis">
     
   
     Parte II — Modelo Fundamental
@@ -1545,35 +640,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8_3">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
             
   
     Parte II — Modelo Fundamental
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-02-fundamental-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -1581,34 +662,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-02-fundamental-model/phenomenon/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/phenomenon/">
+<span class="md-ellipsis">
     
   
     Fenômeno da Evolução
@@ -1616,34 +675,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-02-fundamental-model/fundamental-journey/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/fundamental-journey/">
+<span class="md-ellipsis">
     
   
     Modelo Fundamental da Jornada
@@ -1651,34 +688,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../geb/part-02-fundamental-model/four-fundamental-natures/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/four-fundamental-natures/">
+<span class="md-ellipsis">
     
   
     Quatro Naturezas Fundamentais
@@ -1686,67 +701,19 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Arquitetura de Produtos
@@ -1754,35 +721,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
             
   
     Arquitetura de Produtos
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -1790,34 +743,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../layered-product-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../layered-product-architecture/">
+<span class="md-ellipsis">
     
   
     GLPA-001 — Layered Product Architecture
@@ -1825,43 +756,13 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
     
   
     PAS-001 — Guivos Journey
@@ -1869,24 +770,11 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
     
   
     PAS-001 — Guivos Journey
@@ -1894,381 +782,283 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+<span class="md-status md-status--draft"></span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Índice
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#0-product-philosophy" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#0-product-philosophy">
+<span class="md-ellipsis">
       
         0. Product Philosophy
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="0. Product Philosophy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#01-filosofia-do-produto" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="0. Product Philosophy" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#01-filosofia-do-produto">
+<span class="md-ellipsis">
       
         0.1 Filosofia do Produto
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#02-objetivo-fundamental" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#02-objetivo-fundamental">
+<span class="md-ellipsis">
       
         0.2 Objetivo Fundamental
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#03-papel-da-inteligencia" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#03-papel-da-inteligencia">
+<span class="md-ellipsis">
       
         0.3 Papel da Inteligência
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#04-papel-do-participante" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#04-papel-do-participante">
+<span class="md-ellipsis">
       
         0.4 Papel do Participante
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#05-papel-do-ecossistema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        0.5 Papel do Ecossistema
-      
-    </span>
-  </a>
-  
+</ul>
+</nav>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-visao-do-produto" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-visao-do-produto">
+<span class="md-ellipsis">
       
         1. Visão do Produto
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Visão do Produto">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-definicao" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="1. Visão do Produto" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-definicao">
+<span class="md-ellipsis">
       
         1.1 Definição
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#12-proposito" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-proposito">
+<span class="md-ellipsis">
       
         1.2 Propósito
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#13-proposta-de-valor" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13-proposta-de-valor">
+<span class="md-ellipsis">
       
         1.3 Proposta de Valor
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#14-o-que-o-journey-nao-e" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14-o-que-o-journey-nao-e">
+<span class="md-ellipsis">
       
         1.4 O que o Journey não é
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#15-principios-de-produto" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#15-principios-de-produto">
+<span class="md-ellipsis">
       
         1.5 Princípios de Produto
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-arquitetura-em-camadas-aplicada-ao-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-arquitetura-em-camadas-aplicada-ao-journey">
+<span class="md-ellipsis">
       
         2. Arquitetura em Camadas Aplicada ao Journey
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Arquitetura em Camadas Aplicada ao Journey">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-responsabilidades-do-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="2. Arquitetura em Camadas Aplicada ao Journey" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-responsabilidades-do-journey">
+<span class="md-ellipsis">
       
         2.1 Responsabilidades do Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#22-responsabilidades-externas-ao-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-responsabilidades-externas-ao-journey">
+<span class="md-ellipsis">
       
         2.2 Responsabilidades externas ao Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-limite-especifico-do-contexto-vivo">
+<span class="md-ellipsis">
       
-        <li class="md-nav__item">
-  <a href="#3-filosofia-operacional-do-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+        2.3 Limite específico do Contexto Vivo
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-filosofia-operacional-do-journey">
+<span class="md-ellipsis">
       
         3. Filosofia Operacional do Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-relacao-continua-e-vida-real" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-relacao-continua-e-vida-real">
+<span class="md-ellipsis">
       
         4. Relação Contínua e Vida Real
       
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-estado-eventos-de-vida-e-oportunidades-ativas" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-estado-eventos-de-vida-e-oportunidades-ativas">
+<span class="md-ellipsis">
       
         5. Estado, Eventos de Vida e Oportunidades Ativas
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Estado, Eventos de Vida e Oportunidades Ativas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-estado" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="5. Estado, Eventos de Vida e Oportunidades Ativas" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-estado">
+<span class="md-ellipsis">
       
         5.1 Estado
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#52-evento-de-vida" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-evento-de-vida">
+<span class="md-ellipsis">
       
         5.2 Evento de Vida
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#53-oportunidade-ativa" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#53-oportunidade-ativa">
+<span class="md-ellipsis">
       
         5.3 Oportunidade Ativa
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#54-intervencao-contextual" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#54-intervencao-contextual">
+<span class="md-ellipsis">
       
         5.4 Intervenção Contextual
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#55-distancia-para-evolucao" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#55-distancia-para-evolucao">
+<span class="md-ellipsis">
       
         5.5 Distância para Evolução
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-padrao-de-especificacao-por-capacidades" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-padrao-de-especificacao-por-capacidades">
+<span class="md-ellipsis">
       
         6. Padrão de Especificação por Capacidades
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Padrão de Especificação por Capacidades">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-principio-da-singularidade-funcional" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="6. Padrão de Especificação por Capacidades" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61-principio-da-singularidade-funcional">
+<span class="md-ellipsis">
       
         6.1 Princípio da Singularidade Funcional
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#62-ciclo-cognitivo-do-dominio" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62-ciclo-cognitivo-do-dominio">
+<span class="md-ellipsis">
       
         6.2 Ciclo Cognitivo do Domínio
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#7-mapa-de-capacidades-do-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-mapa-de-capacidades-do-journey">
+<span class="md-ellipsis">
       
         7. Mapa de Capacidades do Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../journey/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../journey/">
+<span class="md-ellipsis">
     
   
     Guivos Journey
@@ -2276,34 +1066,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mall/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mall/">
+<span class="md-ellipsis">
     
   
     Guivos Mall
@@ -2311,34 +1079,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../travel/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../travel/">
+<span class="md-ellipsis">
     
   
     Guivos Travel
@@ -2346,34 +1092,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../business/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../business/">
+<span class="md-ellipsis">
     
   
     Guivos Business
@@ -2381,34 +1105,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../media/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../media/">
+<span class="md-ellipsis">
     
   
     Guivos Media
@@ -2416,34 +1118,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../intelligence/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../intelligence/">
+<span class="md-ellipsis">
     
   
     Guivos Intelligence
@@ -2451,34 +1131,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ads/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ads/">
+<span class="md-ellipsis">
     
   
     Guivos Ads
@@ -2486,59 +1144,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Intelligence Architecture
@@ -2546,35 +1161,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
             
   
     Intelligence Architecture
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intelligence-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intelligence-architecture/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -2582,34 +1183,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intelligence-architecture/knowledge-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intelligence-architecture/knowledge-model/">
+<span class="md-ellipsis">
     
   
     GAI-001 — AI Knowledge Model
@@ -2617,34 +1196,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intelligence-architecture/manifesto/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intelligence-architecture/manifesto/">
+<span class="md-ellipsis">
     
   
     GAI-002 — Manifesto da Inteligência do Ecossistema
@@ -2652,59 +1209,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Guivos Economic Model
@@ -2712,35 +1226,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_11">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
             
   
     Guivos Economic Model
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../economic-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../economic-model/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -2748,59 +1248,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--planned"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
-        
-          
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--planned"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Business Architecture
@@ -2808,35 +1265,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
             
   
     Business Architecture
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../business-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/">
+<span class="md-ellipsis">
     
   
     Visão Geral
@@ -2844,34 +1287,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--validated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../business-architecture/foundations/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/foundations/">
+<span class="md-ellipsis">
     
   
     Foundations
@@ -2879,49 +1300,13 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--validated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+<span class="md-ellipsis">
     
   
     Strategy
@@ -2929,35 +1314,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12_3">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_12_3">
+<span class="md-nav__icon md-icon"></span>
             
   
     Strategy
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../business-architecture/strategy/business-transformation-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/strategy/business-transformation-model/">
+<span class="md-ellipsis">
     
   
     Business Transformation Model
@@ -2965,34 +1336,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--validated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../business-architecture/strategy/business-outcomes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/strategy/business-outcomes/">
+<span class="md-ellipsis">
     
   
     Business Outcomes
@@ -3000,67 +1349,19 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
-        
-          
-          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Governance Framework do GKR
@@ -3068,35 +1369,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
             
   
     Governance Framework do GKR
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/architectural-knowledge-consolidation-pipeline/">
+<span class="md-ellipsis">
     
   
     Architectural Knowledge Consolidation Pipeline
@@ -3104,34 +1391,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--validated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/architectural-audit-framework/">
+<span class="md-ellipsis">
     
   
     Architectural Audit Framework
@@ -3139,34 +1404,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--validated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../governance-framework/outcome-governance-method/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/outcome-governance-method/">
+<span class="md-ellipsis">
     
   
     Outcome Governance Method
@@ -3174,59 +1417,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--draft"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14" >
-        
-          
-          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Validações Arquiteturais
@@ -3234,35 +1434,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_14">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_14">
+<span class="md-nav__icon md-icon"></span>
             
   
     Validações Arquiteturais
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/">
+<span class="md-ellipsis">
     
   
     A2-R01-FEM-001 — Foundation Evidence Matrix
@@ -3270,34 +1456,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--working"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/A2-R01-CC-001-canonical-consolidation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--working"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-CC-001-canonical-consolidation/">
+<span class="md-ellipsis">
     
   
     A2-R01-CC-001 — Foundation Canonical Consolidation
@@ -3305,34 +1469,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--consolidated"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/">
+<span class="md-ellipsis">
     
   
     A2-R01-RA-001 — Foundation Readiness Assessment
@@ -3340,34 +1482,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--complete"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/AV-A2-001-foundation-architecture-validation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--complete"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/AV-A2-001-foundation-architecture-validation/">
+<span class="md-ellipsis">
     
   
     AV-A2-001 — Foundation Architecture Validation
@@ -3375,34 +1495,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved_with_recommendations"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved_with_recommendations"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/">
+<span class="md-ellipsis">
     
   
     A2-R01-AUD-001 — Foundation Architecture Audit
@@ -3410,34 +1508,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--passed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--passed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix/">
+<span class="md-ellipsis">
     
   
     A2-R02-FMEM-001 — Fundamental Model Evidence Matrix
@@ -3445,34 +1521,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--execution-ready"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../validation/AV-001-gea-structure-validation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--execution-ready"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/AV-001-gea-structure-validation/">
+<span class="md-ellipsis">
     
   
     AV-001 — GEA Structure Validation
@@ -3480,59 +1534,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+<span class="md-ellipsis">
     
   
     ADRs
@@ -3540,35 +1551,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_15">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_15_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_15">
+<span class="md-nav__icon md-icon"></span>
             
   
     ADRs
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-001-gkr-as-source-of-truth/">
+<span class="md-ellipsis">
     
   
     ADR-001 — GKR como fonte única da verdade
@@ -3576,27 +1573,11 @@
 
     
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/ADR-002-foundation-principles/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-002-foundation-principles/">
+<span class="md-ellipsis">
     
   
     ADR-002 — Fundação da Guivos
@@ -3604,27 +1585,11 @@
 
     
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/ADR-003-architectural-ownership/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-003-architectural-ownership/">
+<span class="md-ellipsis">
     
   
     ADR-003 — Architectural Ownership
@@ -3632,34 +1597,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/ADR-004-architectural-dependency-order/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-004-architectural-dependency-order/">
+<span class="md-ellipsis">
     
   
     ADR-004 — Architectural Dependency Order
@@ -3667,34 +1610,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/ADR-005-architectural-traceability-principle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-005-architectural-traceability-principle/">
+<span class="md-ellipsis">
     
   
     ADR-005 — Architectural Traceability Principle
@@ -3702,34 +1623,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--accepted"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-006-guivos-knowledge-architecture/">
+<span class="md-ellipsis">
     
   
     ADR-006 — Guivos Knowledge Architecture
@@ -3737,59 +1636,16 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--approved"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
-        
-          
-          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--approved"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_16" type="checkbox"/>
+<label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+<span class="md-ellipsis">
     
   
     Projeto
@@ -3797,35 +1653,21 @@
 
     
   </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_16">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_16_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_16">
+<span class="md-nav__icon md-icon"></span>
             
   
     Projeto
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/architectural-milestones/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/architectural-milestones/">
+<span class="md-ellipsis">
     
   
     Architectural Milestones
@@ -3833,34 +1675,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/GE2-SYNC-006-context-interpretation-and-living-context-progress/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-006-context-interpretation-and-living-context-progress/">
+<span class="md-ellipsis">
     
   
     GE2-SYNC-006 — Context Interpretation and Living Context
@@ -3868,34 +1688,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--completed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering/">
+<span class="md-ellipsis">
     
   
     GE2-SYNC-005 — Journey Operational Philosophy
@@ -3903,34 +1701,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--completed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE/">
+<span class="md-ellipsis">
     
   
     Architecture Engineering Pause
@@ -3938,34 +1714,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/GE2-SYNC-004-context-participant-model-and-architecture-engineering/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-004-context-participant-model-and-architecture-engineering/">
+<span class="md-ellipsis">
     
   
     GE2-SYNC-004 — Context and Architecture Engineering
@@ -3973,34 +1727,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--completed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture/">
+<span class="md-ellipsis">
     
   
     GE2-SYNC-003 — Enterprise Design and GLPA
@@ -4008,34 +1740,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--completed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/GE2-SYNC-002-gka-conceptual-architecture-progress/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-002-gka-conceptual-architecture-progress/">
+<span class="md-ellipsis">
     
   
     GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync
@@ -4043,34 +1753,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--completed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/GE2-SYNC-001-architectural-synchronization-matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-001-architectural-synchronization-matrix/">
+<span class="md-ellipsis">
     
   
     GE2-SYNC-001 — Architectural Synchronization Matrix
@@ -4078,34 +1766,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--completed"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/CHECKPOINT-GKA-PREPARATION-COMPLETE/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-GKA-PREPARATION-COMPLETE/">
+<span class="md-ellipsis">
     
   
     GKA Preparation Complete
@@ -4113,34 +1779,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/CHECKPOINT-GE2-GKA-FOUNDATION/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-GE2-GKA-FOUNDATION/">
+<span class="md-ellipsis">
     
   
     GE-2 — GKA Foundation Checkpoint
@@ -4148,34 +1792,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--superseded"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/BASELINE-M1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--superseded"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/BASELINE-M1/">
+<span class="md-ellipsis">
     
   
     Baseline M1
@@ -4183,34 +1805,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--frozen"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/CHECKPOINT-M2.0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--frozen"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-M2.0/">
+<span class="md-ellipsis">
     
   
     Checkpoint M2.0
@@ -4218,34 +1818,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--experimental"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/A2-BASELINE-B1/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--experimental"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/A2-BASELINE-B1/">
+<span class="md-ellipsis">
     
   
     A2 Baseline B1 — Foundation 5/6
@@ -4253,34 +1831,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--working-baseline"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/A2-BASELINE-B2/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--working-baseline"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/A2-BASELINE-B2/">
+<span class="md-ellipsis">
     
   
     A2 Baseline B2 — Foundation 6/6
@@ -4288,34 +1844,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--working-baseline"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/A2-BASELINE-B3/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--working-baseline"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/A2-BASELINE-B3/">
+<span class="md-ellipsis">
     
   
     A2 Baseline B3 — Foundation Frozen
@@ -4323,34 +1857,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--frozen"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/knowledge-board/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--frozen"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/knowledge-board/">
+<span class="md-ellipsis">
     
   
     Knowledge Board
@@ -4358,34 +1870,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/canonical-consolidation-matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/canonical-consolidation-matrix/">
+<span class="md-ellipsis">
     
   
     Matriz de Consolidação Canônica
@@ -4393,34 +1883,12 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../project/site-pipeline/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/site-pipeline/">
+<span class="md-ellipsis">
     
   
     Pipeline de Publicação
@@ -4428,27 +1896,11 @@
 
     
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../roadmap/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../roadmap/">
+<span class="md-ellipsis">
     
   
     Roadmap
@@ -4456,41 +1908,15 @@
 
     
   </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../print_page/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../print_page/">
+<span class="md-ellipsis">
     
   
     GKR — Versão para Impressão
@@ -4498,435 +1924,327 @@
 
     
   </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Índice
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#0-product-philosophy" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#0-product-philosophy">
+<span class="md-ellipsis">
       
         0. Product Philosophy
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="0. Product Philosophy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#01-filosofia-do-produto" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="0. Product Philosophy" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#01-filosofia-do-produto">
+<span class="md-ellipsis">
       
         0.1 Filosofia do Produto
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#02-objetivo-fundamental" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#02-objetivo-fundamental">
+<span class="md-ellipsis">
       
         0.2 Objetivo Fundamental
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#03-papel-da-inteligencia" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#03-papel-da-inteligencia">
+<span class="md-ellipsis">
       
         0.3 Papel da Inteligência
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#04-papel-do-participante" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#04-papel-do-participante">
+<span class="md-ellipsis">
       
         0.4 Papel do Participante
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#05-papel-do-ecossistema" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        0.5 Papel do Ecossistema
-      
-    </span>
-  </a>
-  
+</ul>
+</nav>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-visao-do-produto" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-visao-do-produto">
+<span class="md-ellipsis">
       
         1. Visão do Produto
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Visão do Produto">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-definicao" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="1. Visão do Produto" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-definicao">
+<span class="md-ellipsis">
       
         1.1 Definição
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#12-proposito" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-proposito">
+<span class="md-ellipsis">
       
         1.2 Propósito
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#13-proposta-de-valor" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13-proposta-de-valor">
+<span class="md-ellipsis">
       
         1.3 Proposta de Valor
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#14-o-que-o-journey-nao-e" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14-o-que-o-journey-nao-e">
+<span class="md-ellipsis">
       
         1.4 O que o Journey não é
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#15-principios-de-produto" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#15-principios-de-produto">
+<span class="md-ellipsis">
       
         1.5 Princípios de Produto
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-arquitetura-em-camadas-aplicada-ao-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-arquitetura-em-camadas-aplicada-ao-journey">
+<span class="md-ellipsis">
       
         2. Arquitetura em Camadas Aplicada ao Journey
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Arquitetura em Camadas Aplicada ao Journey">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-responsabilidades-do-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="2. Arquitetura em Camadas Aplicada ao Journey" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-responsabilidades-do-journey">
+<span class="md-ellipsis">
       
         2.1 Responsabilidades do Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#22-responsabilidades-externas-ao-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-responsabilidades-externas-ao-journey">
+<span class="md-ellipsis">
       
         2.2 Responsabilidades externas ao Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-limite-especifico-do-contexto-vivo">
+<span class="md-ellipsis">
       
-        <li class="md-nav__item">
-  <a href="#3-filosofia-operacional-do-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+        2.3 Limite específico do Contexto Vivo
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-filosofia-operacional-do-journey">
+<span class="md-ellipsis">
       
         3. Filosofia Operacional do Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-relacao-continua-e-vida-real" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-relacao-continua-e-vida-real">
+<span class="md-ellipsis">
       
         4. Relação Contínua e Vida Real
       
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-estado-eventos-de-vida-e-oportunidades-ativas" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-estado-eventos-de-vida-e-oportunidades-ativas">
+<span class="md-ellipsis">
       
         5. Estado, Eventos de Vida e Oportunidades Ativas
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Estado, Eventos de Vida e Oportunidades Ativas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-estado" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="5. Estado, Eventos de Vida e Oportunidades Ativas" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#51-estado">
+<span class="md-ellipsis">
       
         5.1 Estado
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#52-evento-de-vida" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#52-evento-de-vida">
+<span class="md-ellipsis">
       
         5.2 Evento de Vida
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#53-oportunidade-ativa" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#53-oportunidade-ativa">
+<span class="md-ellipsis">
       
         5.3 Oportunidade Ativa
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#54-intervencao-contextual" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#54-intervencao-contextual">
+<span class="md-ellipsis">
       
         5.4 Intervenção Contextual
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#55-distancia-para-evolucao" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#55-distancia-para-evolucao">
+<span class="md-ellipsis">
       
         5.5 Distância para Evolução
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-padrao-de-especificacao-por-capacidades" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-padrao-de-especificacao-por-capacidades">
+<span class="md-ellipsis">
       
         6. Padrão de Especificação por Capacidades
       
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Padrão de Especificação por Capacidades">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-principio-da-singularidade-funcional" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="6. Padrão de Especificação por Capacidades" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#61-principio-da-singularidade-funcional">
+<span class="md-ellipsis">
       
         6.1 Princípio da Singularidade Funcional
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#62-ciclo-cognitivo-do-dominio" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#62-ciclo-cognitivo-do-dominio">
+<span class="md-ellipsis">
       
         6.2 Ciclo Cognitivo do Domínio
       
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#7-mapa-de-capacidades-do-journey" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-mapa-de-capacidades-do-journey">
+<span class="md-ellipsis">
       
         7. Mapa de Capacidades do Journey
       
     </span>
-  </a>
-  
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  
-    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/product-architecture/pas-001-guivos-journey.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
-    </a>
-  
-  
-
-
-<h1 id="pas-001-guivos-journey-product-architecture-specification">PAS-001 — Guivos Journey Product Architecture Specification<a class="headerlink" href="#pas-001-guivos-journey-product-architecture-specification" title="Permanent link">&para;</a></h1>
-<h2 id="0-product-philosophy">0. Product Philosophy<a class="headerlink" href="#0-product-philosophy" title="Permanent link">&para;</a></h2>
-<h3 id="01-filosofia-do-produto">0.1 Filosofia do Produto<a class="headerlink" href="#01-filosofia-do-produto" title="Permanent link">&para;</a></h3>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/product-architecture/pas-001-guivos-journey.md" rel="edit" title="Editar esta página">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<h1 id="pas-001-guivos-journey-product-architecture-specification">PAS-001 — Guivos Journey Product Architecture Specification<a class="headerlink" href="#pas-001-guivos-journey-product-architecture-specification" title="Permanent link">¶</a></h1>
+<h2 id="0-product-philosophy">0. Product Philosophy<a class="headerlink" href="#0-product-philosophy" title="Permanent link">¶</a></h2>
+<h3 id="01-filosofia-do-produto">0.1 Filosofia do Produto<a class="headerlink" href="#01-filosofia-do-produto" title="Permanent link">¶</a></h3>
 <p>O Guivos Journey não foi concebido para maximizar tempo de uso, consumo de conteúdo ou interação superficial.</p>
 <p>Sua finalidade é ajudar participantes a alcançar resultados concretos no mundo real, conectando-os às oportunidades mais relevantes para seus objetivos, contexto e momento de vida.</p>
 <p>O sucesso do Journey será medido pela quantidade e qualidade do valor gerado fora da plataforma.</p>
-<h3 id="02-objetivo-fundamental">0.2 Objetivo Fundamental<a class="headerlink" href="#02-objetivo-fundamental" title="Permanent link">&para;</a></h3>
+<h3 id="02-objetivo-fundamental">0.2 Objetivo Fundamental<a class="headerlink" href="#02-objetivo-fundamental" title="Permanent link">¶</a></h3>
 <p>Toda capacidade do Journey deverá responder positivamente:</p>
 <blockquote>
 <p>Esta capacidade aumenta a condição do participante de compreender seu contexto, decidir melhor ou avançar em sua jornada?</p>
 </blockquote>
 <p>Se a resposta for negativa, ela não deve fazer parte do núcleo do produto.</p>
-<h3 id="03-papel-da-inteligencia">0.3 Papel da Inteligência<a class="headerlink" href="#03-papel-da-inteligencia" title="Permanent link">&para;</a></h3>
+<h3 id="03-papel-da-inteligencia">0.3 Papel da Inteligência<a class="headerlink" href="#03-papel-da-inteligencia" title="Permanent link">¶</a></h3>
 <p>A Inteligência do Ecossistema Guivos existe para reduzir esforço, ampliar possibilidades, contextualizar informações, reconhecer mudanças, recomendar oportunidades, explicar caminhos e aprender com evidências autorizadas.</p>
 <p>Ela não existe para manipular comportamento, substituir decisões humanas, maximizar permanência, induzir consumo desnecessário ou tratar inferências como fatos definitivos.</p>
-<h3 id="04-papel-do-participante">0.4 Papel do Participante<a class="headerlink" href="#04-papel-do-participante" title="Permanent link">&para;</a></h3>
+<h3 id="04-papel-do-participante">0.4 Papel do Participante<a class="headerlink" href="#04-papel-do-participante" title="Permanent link">¶</a></h3>
 <p>O participante permanece no controle da própria jornada.</p>
 <p>A plataforma pode escutar, organizar, sugerir, explicar, recomendar, lembrar e acompanhar. A decisão final permanece humana.</p>
-<h3 id="05-papel-do-ecossistema">0.5 Papel do Ecossistema<a class="headerlink" href="#05-papel-do-ecossistema" title="Permanent link">&para;</a></h3>
-<p>O Journey é a camada de experiência e orquestração que conecta Pessoas, Organizações, Coletivos, oportunidades, conteúdos, produtos, serviços e experiências.</p>
-<ul>
-<li>Journey é a experiência;</li>
-<li>Intelligence fornece inteligência transversal;</li>
-<li>Business fornece oportunidades e relações institucionais;</li>
-<li>Mall fornece recursos comerciais;</li>
-<li>Media fornece conhecimento e inspiração;</li>
-<li>Travel fornece viagens e experiências presenciais;</li>
-<li>Ads conecta oferta e demanda patrocinada.</li>
-</ul>
-<h2 id="1-visao-do-produto">1. Visão do Produto<a class="headerlink" href="#1-visao-do-produto" title="Permanent link">&para;</a></h2>
-<h3 id="11-definicao">1.1 Definição<a class="headerlink" href="#11-definicao" title="Permanent link">&para;</a></h3>
+<h2 id="1-visao-do-produto">1. Visão do Produto<a class="headerlink" href="#1-visao-do-produto" title="Permanent link">¶</a></h2>
+<h3 id="11-definicao">1.1 Definição<a class="headerlink" href="#11-definicao" title="Permanent link">¶</a></h3>
 <p>O Guivos Journey é a Experience Layer do Ecossistema Guivos.</p>
-<p>Mais do que um aplicativo ou feed, é um sistema de descoberta contextual de oportunidades e acompanhamento contínuo da evolução.</p>
-<h3 id="12-proposito">1.2 Propósito<a class="headerlink" href="#12-proposito" title="Permanent link">&para;</a></h3>
+<p>Mais do que um aplicativo, feed ou tela, é o sistema de experiência unificada por meio do qual participantes compreendem seu contexto, organizam sua jornada, descobrem oportunidades e acompanham sua evolução.</p>
+<h3 id="12-proposito">1.2 Propósito<a class="headerlink" href="#12-proposito" title="Permanent link">¶</a></h3>
 <p>Reduzir a distância entre o contexto atual de um participante e os caminhos disponíveis para avançar, utilizando inteligência contextual, conexões relevantes e oportunidades acionáveis.</p>
-<h3 id="13-proposta-de-valor">1.3 Proposta de Valor<a class="headerlink" href="#13-proposta-de-valor" title="Permanent link">&para;</a></h3>
+<h3 id="13-proposta-de-valor">1.3 Proposta de Valor<a class="headerlink" href="#13-proposta-de-valor" title="Permanent link">¶</a></h3>
 <blockquote>
 <p>Ajudar cada participante a descobrir, no momento certo, as melhores oportunidades para avançar em direção aos seus objetivos, reunindo em uma única experiência aquilo que normalmente estaria disperso em muitas plataformas.</p>
 </blockquote>
 <p>A proposta combina descoberta, contexto, continuidade, acionabilidade e confiança.</p>
-<h3 id="14-o-que-o-journey-nao-e">1.4 O que o Journey não é<a class="headerlink" href="#14-o-que-o-journey-nao-e" title="Permanent link">&para;</a></h3>
+<h3 id="14-o-que-o-journey-nao-e">1.4 O que o Journey não é<a class="headerlink" href="#14-o-que-o-journey-nao-e" title="Permanent link">¶</a></h3>
 <p>O Journey não é uma rede social tradicional, marketplace convencional, buscador genérico, agregador de eventos, plataforma exclusiva de cursos, aplicativo de produtividade, sistema de tarefas ou assistente que decide pelo participante.</p>
-<h3 id="15-principios-de-produto">1.5 Princípios de Produto<a class="headerlink" href="#15-principios-de-produto" title="Permanent link">&para;</a></h3>
+<h3 id="15-principios-de-produto">1.5 Princípios de Produto<a class="headerlink" href="#15-principios-de-produto" title="Permanent link">¶</a></h3>
 <ol>
 <li>O participante é protagonista da própria jornada.</li>
 <li>Toda interação deve gerar valor perceptível.</li>
@@ -4941,33 +2259,48 @@
 <li>O Journey deve saber quando agir e quando permanecer em silêncio.</li>
 <li>Receita, popularidade ou patrocínio não devem superar relevância contextual.</li>
 </ol>
-<h2 id="2-arquitetura-em-camadas-aplicada-ao-journey">2. Arquitetura em Camadas Aplicada ao Journey<a class="headerlink" href="#2-arquitetura-em-camadas-aplicada-ao-journey" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Participante
-  -&gt; Guivos Journey
-       -&gt; Guivos Intelligence
-       -&gt; Guivos Business
-       -&gt; Guivos Mall
-       -&gt; Guivos Media
-       -&gt; Guivos Travel
-       -&gt; Guivos Ads
-       -&gt; Platform Layer
-</code></pre></div>
-<h3 id="21-responsabilidades-do-journey">2.1 Responsabilidades do Journey<a class="headerlink" href="#21-responsabilidades-do-journey" title="Permanent link">&para;</a></h3>
+<h2 id="2-arquitetura-em-camadas-aplicada-ao-journey">2. Arquitetura em Camadas Aplicada ao Journey<a class="headerlink" href="#2-arquitetura-em-camadas-aplicada-ao-journey" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    P[Pessoas, Organizações e Coletivos]
+    J[Guivos Journey — Experience Layer]
+    I[Guivos Intelligence — Intelligence Layer]
+    S[Business | Mall | Travel | Media | Ads]
+    PL[Platform Layer]
+
+    P --&gt; J
+    J &lt;--&gt; I
+    J &lt;--&gt; S
+    I &lt;--&gt; S
+    PL --&gt; J
+    PL --&gt; I
+    PL --&gt; S
+</code></pre>
+<p>O diagrama representa limites funcionais. Não prescreve topologia técnica definitiva.</p>
+<h3 id="21-responsabilidades-do-journey">2.1 Responsabilidades do Journey<a class="headerlink" href="#21-responsabilidades-do-journey" title="Permanent link">¶</a></h3>
 <ul>
 <li>experiência unificada;</li>
+<li>superfície principal de experiência;</li>
 <li>descoberta contextual;</li>
 <li>organização da jornada;</li>
-<li>apresentação de recomendações;</li>
-<li>objetivos e Momentos Atuais;</li>
+<li>apresentação de recomendações e oportunidades;</li>
+<li>objetivos, Próximos Passos e Momentos Atuais;</li>
+<li>visão autorizada do contexto do participante;</li>
 <li>acompanhamento da evolução;</li>
-<li>comunicação com o participante;</li>
-<li>gamificação e incentivos visíveis;</li>
+<li>comunicação e intervenções visíveis;</li>
+<li>gamificação e incentivos apresentados ao participante;</li>
 <li>integração experiencial;</li>
-<li>orquestração de intervenções contextuais.</li>
+<li>orquestração de capacidades das demais camadas.</li>
 </ul>
-<h3 id="22-responsabilidades-externas-ao-journey">2.2 Responsabilidades externas ao Journey<a class="headerlink" href="#22-responsabilidades-externas-ao-journey" title="Permanent link">&para;</a></h3>
+<h3 id="22-responsabilidades-externas-ao-journey">2.2 Responsabilidades externas ao Journey<a class="headerlink" href="#22-responsabilidades-externas-ao-journey" title="Permanent link">¶</a></h3>
 <p>O Journey não processa pagamentos do Mall, contratos B2B do Business, inteligência algorítmica da Intelligence Layer, campanhas do Ads, produção editorial do Media, reservas do Travel ou infraestrutura comum da Platform Layer.</p>
-<h2 id="3-filosofia-operacional-do-journey">3. Filosofia Operacional do Journey<a class="headerlink" href="#3-filosofia-operacional-do-journey" title="Permanent link">&para;</a></h2>
+<h3 id="23-limite-especifico-do-contexto-vivo">2.3 Limite específico do Contexto Vivo<a class="headerlink" href="#23-limite-especifico-do-contexto-vivo" title="Permanent link">¶</a></h3>
+<ul>
+<li>Journey apresenta, organiza e permite governar a visão do contexto;</li>
+<li>Intelligence interpreta entradas, propõe compreensão e recomenda atualizações;</li>
+<li>Platform sustenta identidade, persistência, segurança, auditoria e integrações;</li>
+<li>o participante confirma, corrige, limita ou remove informações conforme as regras aplicáveis.</li>
+</ul>
+<h2 id="3-filosofia-operacional-do-journey">3. Filosofia Operacional do Journey<a class="headerlink" href="#3-filosofia-operacional-do-journey" title="Permanent link">¶</a></h2>
 <p>O Journey opera por cinco responsabilidades permanentes:</p>
 <ol>
 <li><strong>Compreender</strong> — construir e atualizar contexto;</li>
@@ -4977,42 +2310,49 @@
 <li><strong>Aprender</strong> — incorporar resultados e evidências autorizadas.</li>
 </ol>
 <p>Sequência comportamental:</p>
-<div class="highlight"><pre><span></span><code>Escutar
-  -&gt; Compreender
-  -&gt; Refletir a compreensão
-  -&gt; Confirmar
-  -&gt; Recomendar ou agir
-</code></pre></div>
-<h2 id="4-relacao-continua-e-vida-real">4. Relação Contínua e Vida Real<a class="headerlink" href="#4-relacao-continua-e-vida-real" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[Escutar]
+    B[Compreender]
+    C[Refletir a compreensão]
+    D[Confirmar]
+    E[Recomendar ou agir]
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E
+</code></pre>
+<h2 id="4-relacao-continua-e-vida-real">4. Relação Contínua e Vida Real<a class="headerlink" href="#4-relacao-continua-e-vida-real" title="Permanent link">¶</a></h2>
 <p>O Journey não deve ser especificado apenas como aplicativo utilizado em sessões isoladas.</p>
-<div class="highlight"><pre><span></span><code>Vida real
-  -&gt; mudança relevante
-  -&gt; atualização da compreensão
-  -&gt; nova avaliação
-  -&gt; intervenção ou silêncio
-  -&gt; experiência
-  -&gt; nova evidência
-  -&gt; novo contexto
-</code></pre></div>
+<pre class="mermaid"><code>flowchart LR
+    A[Vida real]
+    B[Mudança relevante]
+    C[Atualização da compreensão]
+    D[Nova avaliação]
+    E[Intervenção ou silêncio]
+    F[Experiência]
+    G[Nova evidência]
+    H[Novo contexto]
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H
+    H --&gt; A
+</code></pre>
 <p>O aplicativo é um ponto de contato dessa relação, não o centro da jornada.</p>
-<h2 id="5-estado-eventos-de-vida-e-oportunidades-ativas">5. Estado, Eventos de Vida e Oportunidades Ativas<a class="headerlink" href="#5-estado-eventos-de-vida-e-oportunidades-ativas" title="Permanent link">&para;</a></h2>
-<h3 id="51-estado">5.1 Estado<a class="headerlink" href="#51-estado" title="Permanent link">&para;</a></h3>
+<h2 id="5-estado-eventos-de-vida-e-oportunidades-ativas">5. Estado, Eventos de Vida e Oportunidades Ativas<a class="headerlink" href="#5-estado-eventos-de-vida-e-oportunidades-ativas" title="Permanent link">¶</a></h2>
+<h3 id="51-estado">5.1 Estado<a class="headerlink" href="#51-estado" title="Permanent link">¶</a></h3>
 <p>Estado representa a realidade atual compreendida do participante.</p>
-<h3 id="52-evento-de-vida">5.2 Evento de Vida<a class="headerlink" href="#52-evento-de-vida" title="Permanent link">&para;</a></h3>
+<h3 id="52-evento-de-vida">5.2 Evento de Vida<a class="headerlink" href="#52-evento-de-vida" title="Permanent link">¶</a></h3>
 <p>Evento de Vida representa uma mudança relevante capaz de alterar esse estado.</p>
 <p>Eventos podem ser declarados, observados ou recebidos por integração autorizada. Eventos inferidos devem ser confirmados quando houver impacto relevante.</p>
-<h3 id="53-oportunidade-ativa">5.3 Oportunidade Ativa<a class="headerlink" href="#53-oportunidade-ativa" title="Permanent link">&para;</a></h3>
+<h3 id="53-oportunidade-ativa">5.3 Oportunidade Ativa<a class="headerlink" href="#53-oportunidade-ativa" title="Permanent link">¶</a></h3>
 <p>Oportunidade Ativa é uma oportunidade que, considerando o contexto atual de um participante, possui potencial imediato de apoiar progresso e merece ser apresentada.</p>
 <p>O Journey deve priorizar relevância, momento, acionabilidade, confiança e potencial de evolução, não quantidade.</p>
-<h3 id="54-intervencao-contextual">5.4 Intervenção Contextual<a class="headerlink" href="#54-intervencao-contextual" title="Permanent link">&para;</a></h3>
+<h3 id="54-intervencao-contextual">5.4 Intervenção Contextual<a class="headerlink" href="#54-intervencao-contextual" title="Permanent link">¶</a></h3>
 <p>Intervenção Contextual é a decisão de agir em determinado momento. Notificação é apenas um canal.</p>
 <p>A orquestração deve decidir quando agir, perguntar, esperar, observar ou permanecer em silêncio.</p>
-<h3 id="55-distancia-para-evolucao">5.5 Distância para Evolução<a class="headerlink" href="#55-distancia-para-evolucao" title="Permanent link">&para;</a></h3>
+<h3 id="55-distancia-para-evolucao">5.5 Distância para Evolução<a class="headerlink" href="#55-distancia-para-evolucao" title="Permanent link">¶</a></h3>
 <p><code>Distância para Evolução</code> é um conceito interno de produto que representa a diferença entre o contexto atual do participante e os caminhos disponíveis para avançar.</p>
 <blockquote>
 <p>O objetivo do Journey não é maximizar oportunidades apresentadas, mas reduzir continuamente essa distância, ativando apenas oportunidades com maior probabilidade de gerar progresso naquele momento.</p>
 </blockquote>
-<h2 id="6-padrao-de-especificacao-por-capacidades">6. Padrão de Especificação por Capacidades<a class="headerlink" href="#6-padrao-de-especificacao-por-capacidades" title="Permanent link">&para;</a></h2>
+<h2 id="6-padrao-de-especificacao-por-capacidades">6. Padrão de Especificação por Capacidades<a class="headerlink" href="#6-padrao-de-especificacao-por-capacidades" title="Permanent link">¶</a></h2>
 <p>Cada capacidade deverá possuir:</p>
 <ol>
 <li>pergunta central;</li>
@@ -5033,22 +2373,27 @@
 <li>cenários ideal, alternativo e limite;</li>
 <li>contrato da capacidade.</li>
 </ol>
-<h3 id="61-principio-da-singularidade-funcional">6.1 Princípio da Singularidade Funcional<a class="headerlink" href="#61-principio-da-singularidade-funcional" title="Permanent link">&para;</a></h3>
+<h3 id="61-principio-da-singularidade-funcional">6.1 Princípio da Singularidade Funcional<a class="headerlink" href="#61-principio-da-singularidade-funcional" title="Permanent link">¶</a></h3>
 <blockquote>
 <p>Cada capacidade funcional existe para resolver um único problema central.</p>
 </blockquote>
-<h3 id="62-ciclo-cognitivo-do-dominio">6.2 Ciclo Cognitivo do Domínio<a class="headerlink" href="#62-ciclo-cognitivo-do-dominio" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Informação
-  -&gt; Interpretação
-  -&gt; Compreensão
-  -&gt; Contexto
-  -&gt; Decisão
-  -&gt; Ação
-  -&gt; Resultado
-  -&gt; Aprendizado
-  -&gt; Nova informação
-</code></pre></div>
-<h2 id="7-mapa-de-capacidades-do-journey">7. Mapa de Capacidades do Journey<a class="headerlink" href="#7-mapa-de-capacidades-do-journey" title="Permanent link">&para;</a></h2>
+<h3 id="62-ciclo-cognitivo-do-dominio">6.2 Ciclo Cognitivo do Domínio<a class="headerlink" href="#62-ciclo-cognitivo-do-dominio" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>flowchart LR
+    A[Informação]
+    B[Interpretação]
+    C[Compreensão]
+    D[Contexto]
+    E[Decisão]
+    F[Ação]
+    G[Resultado]
+    H[Aprendizado]
+    I[Nova informação]
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H --&gt; I
+    I --&gt; B
+</code></pre>
+<p>Esse ciclo é funcional. Não representa pipeline técnico obrigatório, modelo de IA específico ou sequência rígida para todos os casos.</p>
+<h2 id="7-mapa-de-capacidades-do-journey">7. Mapa de Capacidades do Journey<a class="headerlink" href="#7-mapa-de-capacidades-do-journey" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
@@ -5105,27 +2450,44 @@
 </tr>
 </tbody>
 </table>
-<h1 id="capacidade-01-captura-de-contexto">Capacidade 01 — Captura de Contexto<a class="headerlink" href="#capacidade-01-captura-de-contexto" title="Permanent link">&para;</a></h1>
-<h2 id="8-pergunta-central">8. Pergunta central<a class="headerlink" href="#8-pergunta-central" title="Permanent link">&para;</a></h2>
+<h1 id="capacidade-01-captura-de-contexto">Capacidade 01 — Captura de Contexto<a class="headerlink" href="#capacidade-01-captura-de-contexto" title="Permanent link">¶</a></h1>
+<h2 id="8-pergunta-central">8. Pergunta central<a class="headerlink" href="#8-pergunta-central" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>Como a Guivos começa a compreender um participante?</p>
 </blockquote>
-<h2 id="9-objetivo-e-valor-entregue">9. Objetivo e valor entregue<a class="headerlink" href="#9-objetivo-e-valor-entregue" title="Permanent link">&para;</a></h2>
+<h2 id="9-objetivo-e-valor-entregue">9. Objetivo e valor entregue<a class="headerlink" href="#9-objetivo-e-valor-entregue" title="Permanent link">¶</a></h2>
 <p>Permitir que o participante expresse sua realidade de forma natural para que a Guivos construa uma compreensão inicial, revisável e útil, sem depender de cadastro longo.</p>
-<h2 id="10-formas-de-inicio">10. Formas de início<a class="headerlink" href="#10-formas-de-inicio" title="Permanent link">&para;</a></h2>
-<h3 id="101-voz">10.1 Voz<a class="headerlink" href="#101-voz" title="Permanent link">&para;</a></h3>
+<h2 id="10-formas-de-inicio">10. Formas de início<a class="headerlink" href="#10-formas-de-inicio" title="Permanent link">¶</a></h2>
+<h3 id="101-voz">10.1 Voz<a class="headerlink" href="#101-voz" title="Permanent link">¶</a></h3>
 <p>Canal prioritário para expressão livre e detalhada.</p>
-<h3 id="102-texto">10.2 Texto<a class="headerlink" href="#102-texto" title="Permanent link">&para;</a></h3>
+<h3 id="102-texto">10.2 Texto<a class="headerlink" href="#102-texto" title="Permanent link">¶</a></h3>
 <p>Alternativa equivalente para preferência, acessibilidade ou ambiente inadequado para áudio.</p>
-<h3 id="103-fluxo-guiado">10.3 Fluxo guiado<a class="headerlink" href="#103-fluxo-guiado" title="Permanent link">&para;</a></h3>
+<h3 id="103-fluxo-guiado">10.3 Fluxo guiado<a class="headerlink" href="#103-fluxo-guiado" title="Permanent link">¶</a></h3>
 <p>Alternativa opcional para quem não sabe por onde começar. Não deve ser o fluxo obrigatório.</p>
-<h2 id="11-primeira-mensagem">11. Primeira mensagem<a class="headerlink" href="#11-primeira-mensagem" title="Permanent link">&para;</a></h2>
+<h2 id="11-primeira-mensagem">11. Primeira mensagem<a class="headerlink" href="#11-primeira-mensagem" title="Permanent link">¶</a></h2>
 <p>A mensagem inicial deve explicar finalidade, ausência de julgamento, liberdade para não responder e possibilidade de revisão.</p>
-<p>Formulação de referência:</p>
 <blockquote>
 <p>Para apresentar oportunidades realmente úteis, preciso compreender um pouco do seu momento atual. Você pode falar ou escrever livremente. Não é necessário contar nada que não queira, e você poderá revisar tudo o que eu compreender.</p>
 </blockquote>
-<h2 id="12-comportamento-durante-a-escuta">12. Comportamento durante a escuta<a class="headerlink" href="#12-comportamento-durante-a-escuta" title="Permanent link">&para;</a></h2>
+<h2 id="12-fluxo-funcional-da-captura-de-contexto">12. Fluxo funcional da Captura de Contexto<a class="headerlink" href="#12-fluxo-funcional-da-captura-de-contexto" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Participante escolhe voz, texto ou fluxo guiado]
+    B[Guivos explica finalidade e controle]
+    C[Participante expressa seu contexto]
+    D[Guivos preserva a entrada e interpreta]
+    E[Guivos apresenta uma síntese]
+    F{Participante confirma?}
+    G[Corrige, complementa, limita ou remove]
+    H[Contexto inicial confirmado]
+    I[Primeiro Próximo Passo ou oportunidades iniciais]
+    J[Sessão temporária ou encerramento sem persistência]
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F
+    F -- Não --&gt; G --&gt; E
+    F -- Sim --&gt; H --&gt; I
+    C -. Recusa em salvar .-&gt; J
+</code></pre>
+<h2 id="13-comportamento-durante-a-escuta">13. Comportamento durante a escuta<a class="headerlink" href="#13-comportamento-durante-a-escuta" title="Permanent link">¶</a></h2>
 <p>A Guivos deve:</p>
 <ul>
 <li>permitir expressão livre;</li>
@@ -5137,7 +2499,7 @@
 <li>não transformar inferência em fato;</li>
 <li>não recomendar antes da confirmação.</li>
 </ul>
-<h2 id="13-interpretacao-inicial-e-reflexao">13. Interpretação inicial e reflexão<a class="headerlink" href="#13-interpretacao-inicial-e-reflexao" title="Permanent link">&para;</a></h2>
+<h2 id="14-interpretacao-inicial-e-reflexao">14. Interpretação inicial e reflexão<a class="headerlink" href="#14-interpretacao-inicial-e-reflexao" title="Permanent link">¶</a></h2>
 <p>A Guivos deverá organizar a compreensão em:</p>
 <ul>
 <li>Momento Atual;</li>
@@ -5158,7 +2520,7 @@
 <li>quero acrescentar;</li>
 <li>prefiro não registrar parte disso.</li>
 </ul>
-<h2 id="14-controle-do-participante">14. Controle do participante<a class="headerlink" href="#14-controle-do-participante" title="Permanent link">&para;</a></h2>
+<h2 id="15-controle-do-participante">15. Controle do participante<a class="headerlink" href="#15-controle-do-participante" title="Permanent link">¶</a></h2>
 <p>Antes da confirmação, o participante poderá:</p>
 <ul>
 <li>editar;</li>
@@ -5170,23 +2532,21 @@
 <li>manter informação temporária;</li>
 <li>impedir recomendações sobre determinado tema.</li>
 </ul>
-<h2 id="15-perguntas-complementares">15. Perguntas complementares<a class="headerlink" href="#15-perguntas-complementares" title="Permanent link">&para;</a></h2>
+<h2 id="16-perguntas-complementares-e-priorizacao">16. Perguntas complementares e priorização<a class="headerlink" href="#16-perguntas-complementares-e-priorizacao" title="Permanent link">¶</a></h2>
 <p>Perguntas adicionais somente são permitidas para evitar erro, diferenciar objetivos, identificar restrições, tornar recomendação útil, proteger o participante ou atender obrigação legal.</p>
-<p>Devem ser poucas e contextualizadas.</p>
-<h2 id="16-priorizacao-inicial">16. Priorização inicial<a class="headerlink" href="#16-priorizacao-inicial" title="Permanent link">&para;</a></h2>
 <p>Quando houver vários objetivos, o participante poderá escolher um ou mais, pedir ajuda para comparar ou manter sem prioridade definida.</p>
 <p>Sugestões de prioridade devem ser explicadas.</p>
-<h2 id="17-profundidade-progressiva">17. Profundidade progressiva<a class="headerlink" href="#17-profundidade-progressiva" title="Permanent link">&para;</a></h2>
+<h2 id="17-profundidade-progressiva">17. Profundidade progressiva<a class="headerlink" href="#17-profundidade-progressiva" title="Permanent link">¶</a></h2>
 <ul>
 <li>nível inicial: contexto mínimo;</li>
 <li>nível intermediário: preferências, disponibilidade, limitações e histórico;</li>
 <li>nível aprofundado: documentos, integrações, evidências, competências e relações autorizadas.</li>
 </ul>
 <p>Níveis superiores não são obrigatórios para utilizar o Journey.</p>
-<h2 id="18-temas-sensiveis">18. Temas sensíveis<a class="headerlink" href="#18-temas-sensiveis" title="Permanent link">&para;</a></h2>
+<h2 id="18-temas-sensiveis">18. Temas sensíveis<a class="headerlink" href="#18-temas-sensiveis" title="Permanent link">¶</a></h2>
 <p>Informações sobre saúde, religião, renda, política, família, deficiência, localização precisa e outros dados sensíveis exigem finalidade clara, consentimento proporcional, possibilidade de recusa e proteção superior.</p>
 <p>A Guivos não deve utilizar vulnerabilidades para publicidade, manipulação, diagnóstico ou conclusão profissional indevida.</p>
-<h2 id="19-resultado-da-captura">19. Resultado da captura<a class="headerlink" href="#19-resultado-da-captura" title="Permanent link">&para;</a></h2>
+<h2 id="19-resultado-da-captura">19. Resultado da captura<a class="headerlink" href="#19-resultado-da-captura" title="Permanent link">¶</a></h2>
 <p>A capacidade produz:</p>
 <ol>
 <li>síntese confirmada do Momento Atual;</li>
@@ -5196,7 +2556,7 @@
 <li>autorização de uso para etapas seguintes.</li>
 </ol>
 <p>Após a confirmação, a Guivos deverá entregar valor imediato por meio de síntese, possível Próximo Passo, até três oportunidades iniciais ou uma ação simples.</p>
-<h2 id="20-excecoes">20. Exceções<a class="headerlink" href="#20-excecoes" title="Permanent link">&para;</a></h2>
+<h2 id="20-excecoes">20. Exceções<a class="headerlink" href="#20-excecoes" title="Permanent link">¶</a></h2>
 <ul>
 <li>participante não sabe o que deseja: explorar sem pressionar;</li>
 <li>informação insuficiente: pergunta complementar curta;</li>
@@ -5205,7 +2565,7 @@
 <li>recusa em salvar: oferecer sessão temporária com limites claros;</li>
 <li>risco grave ou urgência: aplicar protocolo específico e orientar ajuda adequada.</li>
 </ul>
-<h2 id="21-criterios-de-sucesso">21. Critérios de sucesso<a class="headerlink" href="#21-criterios-de-sucesso" title="Permanent link">&para;</a></h2>
+<h2 id="21-criterios-de-sucesso">21. Critérios de sucesso<a class="headerlink" href="#21-criterios-de-sucesso" title="Permanent link">¶</a></h2>
 <p>A capacidade é bem-sucedida quando o participante:</p>
 <ul>
 <li>conclui sem fricção excessiva;</li>
@@ -5215,7 +2575,7 @@
 <li>recebe valor inicial coerente;</li>
 <li>não precisa repetir imediatamente o que já explicou.</li>
 </ul>
-<h2 id="22-contrato-da-capacidade-01">22. Contrato da Capacidade 01<a class="headerlink" href="#22-contrato-da-capacidade-01" title="Permanent link">&para;</a></h2>
+<h2 id="22-contrato-da-capacidade-01">22. Contrato da Capacidade 01<a class="headerlink" href="#22-contrato-da-capacidade-01" title="Permanent link">¶</a></h2>
 <p>A Capacidade 01 garante que:</p>
 <ul>
 <li>o participante inicia sem cadastro complexo;</li>
@@ -5228,10 +2588,10 @@
 <blockquote>
 <p>A primeira conversa termina quando o participante confirma que foi compreendido e recebe um primeiro caminho útil, não quando completa um cadastro.</p>
 </blockquote>
-<h1 id="interpretacao-do-contexto">Interpretação do Contexto<a class="headerlink" href="#interpretacao-do-contexto" title="Permanent link">&para;</a></h1>
-<h2 id="23-objetivo">23. Objetivo<a class="headerlink" href="#23-objetivo" title="Permanent link">&para;</a></h2>
+<h1 id="interpretacao-do-contexto">Interpretação do Contexto<a class="headerlink" href="#interpretacao-do-contexto" title="Permanent link">¶</a></h1>
+<h2 id="23-objetivo">23. Objetivo<a class="headerlink" href="#23-objetivo" title="Permanent link">¶</a></h2>
 <p>Transformar entradas autorizadas em compreensão coerente, explicável e útil, sem decidir pelo participante ou alterar silenciosamente sua representação permanente.</p>
-<h2 id="24-tipos-interpretados">24. Tipos interpretados<a class="headerlink" href="#24-tipos-interpretados" title="Permanent link">&para;</a></h2>
+<h2 id="24-tipos-interpretados">24. Tipos interpretados<a class="headerlink" href="#24-tipos-interpretados" title="Permanent link">¶</a></h2>
 <ul>
 <li>fatos;</li>
 <li>intenções;</li>
@@ -5242,7 +2602,20 @@
 <li>incertezas;</li>
 <li>hipóteses e inferências.</li>
 </ul>
-<h2 id="25-confianca-proveniencia-e-temporalidade">25. Confiança, proveniência e temporalidade<a class="headerlink" href="#25-confianca-proveniencia-e-temporalidade" title="Permanent link">&para;</a></h2>
+<h2 id="25-fluxo-funcional-da-interpretacao">25. Fluxo funcional da interpretação<a class="headerlink" href="#25-fluxo-funcional-da-interpretacao" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[Entrada autorizada]
+    B[Classificação]
+    C[Interpretação]
+    D[Confiança, origem e temporalidade]
+    E[Compreensão proposta]
+    F[Reflexão ao participante]
+    G[Confirmação, correção ou contestação]
+    H[Atualização permitida do contexto]
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H
+</code></pre>
+<h2 id="26-confianca-proveniencia-e-temporalidade">26. Confiança, proveniência e temporalidade<a class="headerlink" href="#26-confianca-proveniencia-e-temporalidade" title="Permanent link">¶</a></h2>
 <p>Toda interpretação relevante deve responder:</p>
 <ul>
 <li>de onde veio;</li>
@@ -5260,19 +2633,17 @@
 <li>baixa: hipótese inicial.</li>
 </ul>
 <p>Hipóteses de baixa confiança não devem alterar informação permanente sem confirmação.</p>
-<h2 id="26-conflitos-e-reconstrucao">26. Conflitos e reconstrução<a class="headerlink" href="#26-conflitos-e-reconstrucao" title="Permanent link">&para;</a></h2>
+<h2 id="27-conflitos-e-explicabilidade">27. Conflitos e explicabilidade<a class="headerlink" href="#27-conflitos-e-explicabilidade" title="Permanent link">¶</a></h2>
 <p>Informações conflitantes não devem ser resolvidas silenciosamente.</p>
 <p>A Guivos deverá preservar histórico, reconhecer mudança, pedir confirmação quando necessário e reconstruir continuamente sua compreensão.</p>
 <p>Uma nova evidência pode confirmar, fortalecer, enfraquecer, complementar, substituir ou invalidar uma interpretação.</p>
-<h2 id="27-explicabilidade">27. Explicabilidade<a class="headerlink" href="#27-explicabilidade" title="Permanent link">&para;</a></h2>
-<p>O participante poderá perguntar por que a Guivos entende determinado aspecto de sua jornada.</p>
-<p>A resposta deverá citar fontes, interações ou evidências relevantes, nunca apenas afirmar que “a IA decidiu”.</p>
-<h1 id="capacidade-02-contexto-vivo">Capacidade 02 — Contexto Vivo<a class="headerlink" href="#capacidade-02-contexto-vivo" title="Permanent link">&para;</a></h1>
-<h2 id="28-pergunta-central">28. Pergunta central<a class="headerlink" href="#28-pergunta-central" title="Permanent link">&para;</a></h2>
+<p>O participante poderá perguntar por que a Guivos entende determinado aspecto de sua jornada. A resposta deverá citar fontes, interações ou evidências relevantes, nunca apenas afirmar que “a IA decidiu”.</p>
+<h1 id="capacidade-02-contexto-vivo">Capacidade 02 — Contexto Vivo<a class="headerlink" href="#capacidade-02-contexto-vivo" title="Permanent link">¶</a></h1>
+<h2 id="28-pergunta-central">28. Pergunta central<a class="headerlink" href="#28-pergunta-central" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>Como a Guivos mantém uma representação viva, confiável, explicável e continuamente evolutiva do participante?</p>
 </blockquote>
-<h2 id="29-definicao-funcional">29. Definição funcional<a class="headerlink" href="#29-definicao-funcional" title="Permanent link">&para;</a></h2>
+<h2 id="29-definicao-funcional">29. Definição funcional<a class="headerlink" href="#29-definicao-funcional" title="Permanent link">¶</a></h2>
 <p>O Contexto Vivo não representa a realidade absoluta do participante.</p>
 <p>Ele representa a melhor compreensão que a Guivos possui sobre essa realidade em determinado momento, construída a partir de informações, evidências, interpretações e confirmações autorizadas.</p>
 <p>Toda representação relevante deve ser:</p>
@@ -5283,29 +2654,50 @@
 <li>revisável;</li>
 <li>controlável pelo participante.</li>
 </ul>
-<h3 id="291-principio-da-representacao-humilde">29.1 Princípio da Representação Humilde<a class="headerlink" href="#291-principio-da-representacao-humilde" title="Permanent link">&para;</a></h3>
+<h3 id="291-principio-da-representacao-humilde">29.1 Princípio da Representação Humilde<a class="headerlink" href="#291-principio-da-representacao-humilde" title="Permanent link">¶</a></h3>
 <blockquote>
 <p>A Guivos nunca presume conhecer completamente o participante. Ela mantém continuamente a melhor representação possível de sua realidade, sempre aberta à revisão, ao aprendizado e à confirmação.</p>
 </blockquote>
-<h2 id="30-dimensoes-de-compreensao">30. Dimensões de compreensão<a class="headerlink" href="#30-dimensoes-de-compreensao" title="Permanent link">&para;</a></h2>
+<h2 id="30-fluxo-funcional-do-contexto-vivo">30. Fluxo funcional do Contexto Vivo<a class="headerlink" href="#30-fluxo-funcional-do-contexto-vivo" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Entradas autorizadas]
+    B[Interpretação contextual]
+    C[Compreensão proposta]
+    D{Confirmação necessária?}
+    E[Participante confirma, corrige ou limita]
+    F[Atualização seletiva das dimensões]
+    G[Meu Contexto Hoje]
+    H[Objetivos, Próximos Passos e oportunidades]
+    I[Experiências e resultados]
+    J[Novas evidências]
+
+    A --&gt; B --&gt; C --&gt; D
+    D -- Sim --&gt; E --&gt; F
+    D -- Não, quando permitido --&gt; F
+    F --&gt; G
+    F --&gt; H
+    H --&gt; I --&gt; J --&gt; B
+</code></pre>
+<p>O fluxo não autoriza atualização silenciosa de informações sensíveis, permanentes ou de impacto relevante.</p>
+<h2 id="31-dimensoes-de-compreensao">31. Dimensões de compreensão<a class="headerlink" href="#31-dimensoes-de-compreensao" title="Permanent link">¶</a></h2>
 <p>O Contexto Vivo é um modelo multidimensional de compreensão, não um supercadastro.</p>
-<h3 id="301-identidade">30.1 Identidade<a class="headerlink" href="#301-identidade" title="Permanent link">&para;</a></h3>
+<h3 id="311-identidade">31.1 Identidade<a class="headerlink" href="#311-identidade" title="Permanent link">¶</a></h3>
 <p>Papéis e formas pelas quais o participante se reconhece no momento: profissional, estudante, empreendedor, responsável familiar, voluntário, atleta, mentor ou integrante de coletivos.</p>
-<h3 id="302-momento">30.2 Momento<a class="headerlink" href="#302-momento" title="Permanent link">&para;</a></h3>
+<h3 id="312-momento">31.2 Momento<a class="headerlink" href="#312-momento" title="Permanent link">¶</a></h3>
 <p>Condições que caracterizam a realidade atual: início de carreira, transição, crescimento, reorganização, mudança, recuperação ou expansão.</p>
-<h3 id="303-direcao">30.3 Direção<a class="headerlink" href="#303-direcao" title="Permanent link">&para;</a></h3>
+<h3 id="313-direcao">31.3 Direção<a class="headerlink" href="#313-direcao" title="Permanent link">¶</a></h3>
 <p>Objetivos, sonhos, prioridades, intenções e possibilidades desejadas.</p>
-<h3 id="304-capacidades">30.4 Capacidades<a class="headerlink" href="#304-capacidades" title="Permanent link">&para;</a></h3>
+<h3 id="314-capacidades">31.4 Capacidades<a class="headerlink" href="#314-capacidades" title="Permanent link">¶</a></h3>
 <p>Conhecimentos, competências, experiências, certificações, recursos e redes disponíveis.</p>
-<h3 id="305-restricoes">30.5 Restrições<a class="headerlink" href="#305-restricoes" title="Permanent link">&para;</a></h3>
+<h3 id="315-restricoes">31.5 Restrições<a class="headerlink" href="#315-restricoes" title="Permanent link">¶</a></h3>
 <p>Tempo, dinheiro, saúde, disponibilidade, mobilidade, responsabilidades e demais limites atuais.</p>
-<h3 id="306-preferencias">30.6 Preferências<a class="headerlink" href="#306-preferencias" title="Permanent link">&para;</a></h3>
+<h3 id="316-preferencias">31.6 Preferências<a class="headerlink" href="#316-preferencias" title="Permanent link">¶</a></h3>
 <p>Formas preferidas de viver experiências: online, presencial, individual, coletiva, gratuita, paga, curta ou longa.</p>
-<h3 id="307-relacionamentos">30.7 Relacionamentos<a class="headerlink" href="#307-relacionamentos" title="Permanent link">&para;</a></h3>
+<h3 id="317-relacionamentos">31.7 Relacionamentos<a class="headerlink" href="#317-relacionamentos" title="Permanent link">¶</a></h3>
 <p>Pessoas, Organizações e Coletivos relevantes para a jornada.</p>
-<h3 id="308-evolucao">30.8 Evolução<a class="headerlink" href="#308-evolucao" title="Permanent link">&para;</a></h3>
+<h3 id="318-evolucao">31.8 Evolução<a class="headerlink" href="#318-evolucao" title="Permanent link">¶</a></h3>
 <p>Mudanças, resultados, evidências e diferenças entre estados ao longo do tempo.</p>
-<h2 id="31-evolucao-independente-das-dimensoes">31. Evolução independente das dimensões<a class="headerlink" href="#31-evolucao-independente-das-dimensoes" title="Permanent link">&para;</a></h2>
+<h2 id="32-evolucao-independente-das-dimensoes">32. Evolução independente das dimensões<a class="headerlink" href="#32-evolucao-independente-das-dimensoes" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>Cada dimensão do Contexto Vivo evolui de forma independente. Uma alteração poderá impactar outras dimensões, mas não deverá exigir reconstrução completa nem presumir mudanças onde não existam evidências suficientes.</p>
 </blockquote>
@@ -5314,17 +2706,22 @@
 <li>uma promoção pode alterar Momento, Capacidades e Direção, sem modificar Preferências;</li>
 <li>o nascimento de um filho pode alterar Momento, Restrições, Disponibilidade e Direção, sem alterar competências profissionais.</li>
 </ul>
-<h2 id="32-ciclo-de-vida-da-informacao">32. Ciclo de vida da informação<a class="headerlink" href="#32-ciclo-de-vida-da-informacao" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Observada
-  -&gt; Interpretada
-  -&gt; Confirmada
-  -&gt; Ativa
-  -&gt; Envelhecida
-  -&gt; Substituída
-  -&gt; Arquivada
-</code></pre></div>
+<h2 id="33-ciclo-de-vida-da-informacao">33. Ciclo de vida da informação<a class="headerlink" href="#33-ciclo-de-vida-da-informacao" title="Permanent link">¶</a></h2>
+<pre class="mermaid"><code>stateDiagram-v2
+    [*] --&gt; Observada
+    Observada --&gt; Interpretada
+    Interpretada --&gt; Confirmada
+    Confirmada --&gt; Ativa
+    Ativa --&gt; Envelhecida
+    Ativa --&gt; Substituída
+    Envelhecida --&gt; Confirmada: revisão
+    Envelhecida --&gt; Substituída
+    Substituída --&gt; Arquivada
+    Ativa --&gt; Arquivada: remoção ou expiração
+</code></pre>
 <p>Cada item deverá preservar origem, temporalidade, confiança, finalidade, permissões e relação com dimensões afetadas.</p>
-<h2 id="33-visao-do-participante-meu-contexto-hoje">33. Visão do participante — Meu Contexto Hoje<a class="headerlink" href="#33-visao-do-participante-meu-contexto-hoje" title="Permanent link">&para;</a></h2>
+<p>Nem toda informação percorre todos os estados. Itens podem ser descartados antes da confirmação ou permanecer temporários sem integrar a representação persistente.</p>
+<h2 id="34-visao-do-participante-meu-contexto-hoje">34. Visão do participante — Meu Contexto Hoje<a class="headerlink" href="#34-visao-do-participante-meu-contexto-hoje" title="Permanent link">¶</a></h2>
 <p>O participante deverá acessar uma visão simples contendo:</p>
 <ul>
 <li>quem sou neste momento;</li>
@@ -5348,7 +2745,33 @@
 <li>quais fontes foram utilizadas;</li>
 <li>como corrigir, ocultar, limitar ou remover.</li>
 </ul>
-<h2 id="34-estado-atual-da-capacidade-02">34. Estado atual da Capacidade 02<a class="headerlink" href="#34-estado-atual-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<h3 id="341-diagrama-conceitual">34.1 Diagrama conceitual<a class="headerlink" href="#341-diagrama-conceitual" title="Permanent link">¶</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    M[Meu Contexto Hoje]
+    ID[Quem sou neste momento]
+    FO[Foco principal]
+    MR[Mudanças recentes]
+    OB[Objetivos e Próximos Passos]
+    CA[Capacidades]
+    RE[Restrições]
+    PR[Preferências]
+    CO[Conexões]
+    RV[Revisões necessárias]
+    CT[Controles do participante]
+
+    M --&gt; ID
+    M --&gt; FO
+    M --&gt; MR
+    M --&gt; OB
+    M --&gt; CA
+    M --&gt; RE
+    M --&gt; PR
+    M --&gt; CO
+    M --&gt; RV
+    M --&gt; CT
+</code></pre>
+<p>Esse diagrama representa organização conceitual, não layout definitivo de interface.</p>
+<h2 id="35-estado-atual-da-capacidade-02">35. Estado atual da Capacidade 02<a class="headerlink" href="#35-estado-atual-da-capacidade-02" title="Permanent link">¶</a></h2>
 <p>Já consolidados:</p>
 <ul>
 <li>definição funcional;</li>
@@ -5357,6 +2780,7 @@
 <li>oito dimensões iniciais;</li>
 <li>evolução independente;</li>
 <li>ciclo de vida inicial;</li>
+<li>fluxo funcional;</li>
 <li>visão conceitual <code>Meu Contexto Hoje</code>.</li>
 </ul>
 <p>Ainda pendentes:</p>
@@ -5371,73 +2795,40 @@
 <li>casos ideal, alternativo e limite;</li>
 <li>contrato da capacidade.</li>
 </ul>
-<h2 id="35-ponto-de-retomada">35. Ponto de retomada<a class="headerlink" href="#35-ponto-de-retomada" title="Permanent link">&para;</a></h2>
+<h2 id="36-ponto-de-retomada">36. Ponto de retomada<a class="headerlink" href="#36-ponto-de-retomada" title="Permanent link">¶</a></h2>
 <p>Retomar na Capacidade 02 — Contexto Vivo, detalhando responsabilidades, entradas, saídas, estados de cada dimensão, regras de atualização e envelhecimento, conflitos, interface, eventos, KPIs, cenários e contrato de aceite.</p>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
+</article>
+</div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Voltar para o topo
 </button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    
-      
-      
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
-      
-        <script src="../../js/print-site.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../js/print-site.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+window.mermaidConfig = {default: {
+    startOnLoad: false
+}};</script></body>
 </html>

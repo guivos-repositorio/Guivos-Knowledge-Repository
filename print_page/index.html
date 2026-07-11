@@ -11079,21 +11079,10 @@ Implementação = realização progressiva
 <h3 id="product-architecture-pas-001-guivos-journey-04-papel-do-participante">0.4 Papel do Participante<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-04-papel-do-participante" title="Permanent link">&para;</a></h3>
 <p>O participante permanece no controle da própria jornada.</p>
 <p>A plataforma pode escutar, organizar, sugerir, explicar, recomendar, lembrar e acompanhar. A decisão final permanece humana.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-05-papel-do-ecossistema">0.5 Papel do Ecossistema<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-05-papel-do-ecossistema" title="Permanent link">&para;</a></h3>
-<p>O Journey é a camada de experiência e orquestração que conecta Pessoas, Organizações, Coletivos, oportunidades, conteúdos, produtos, serviços e experiências.</p>
-<ul>
-<li>Journey é a experiência;</li>
-<li>Intelligence fornece inteligência transversal;</li>
-<li>Business fornece oportunidades e relações institucionais;</li>
-<li>Mall fornece recursos comerciais;</li>
-<li>Media fornece conhecimento e inspiração;</li>
-<li>Travel fornece viagens e experiências presenciais;</li>
-<li>Ads conecta oferta e demanda patrocinada.</li>
-</ul>
 <h2 id="product-architecture-pas-001-guivos-journey-1-visao-do-produto">1. Visão do Produto<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-1-visao-do-produto" title="Permanent link">&para;</a></h2>
 <h3 id="product-architecture-pas-001-guivos-journey-11-definicao">1.1 Definição<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-11-definicao" title="Permanent link">&para;</a></h3>
 <p>O Guivos Journey é a Experience Layer do Ecossistema Guivos.</p>
-<p>Mais do que um aplicativo ou feed, é um sistema de descoberta contextual de oportunidades e acompanhamento contínuo da evolução.</p>
+<p>Mais do que um aplicativo, feed ou tela, é o sistema de experiência unificada por meio do qual participantes compreendem seu contexto, organizam sua jornada, descobrem oportunidades e acompanham sua evolução.</p>
 <h3 id="product-architecture-pas-001-guivos-journey-12-proposito">1.2 Propósito<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-12-proposito" title="Permanent link">&para;</a></h3>
 <p>Reduzir a distância entre o contexto atual de um participante e os caminhos disponíveis para avançar, utilizando inteligência contextual, conexões relevantes e oportunidades acionáveis.</p>
 <h3 id="product-architecture-pas-001-guivos-journey-13-proposta-de-valor">1.3 Proposta de Valor<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-13-proposta-de-valor" title="Permanent link">&para;</a></h3>
@@ -11119,31 +11108,46 @@ Implementação = realização progressiva
 <li>Receita, popularidade ou patrocínio não devem superar relevância contextual.</li>
 </ol>
 <h2 id="product-architecture-pas-001-guivos-journey-2-arquitetura-em-camadas-aplicada-ao-journey">2. Arquitetura em Camadas Aplicada ao Journey<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-2-arquitetura-em-camadas-aplicada-ao-journey" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Participante
-  -&gt; Guivos Journey
-       -&gt; Guivos Intelligence
-       -&gt; Guivos Business
-       -&gt; Guivos Mall
-       -&gt; Guivos Media
-       -&gt; Guivos Travel
-       -&gt; Guivos Ads
-       -&gt; Platform Layer
-</code></pre></div>
+<pre  class="mermaid"><code>flowchart TD
+    P[Pessoas, Organizações e Coletivos]
+    J[Guivos Journey — Experience Layer]
+    I[Guivos Intelligence — Intelligence Layer]
+    S[Business | Mall | Travel | Media | Ads]
+    PL[Platform Layer]
+
+    P --> J
+    J <--> I
+    J <--> S
+    I <--> S
+    PL --> J
+    PL --> I
+    PL --> S
+</code></pre>
+<p>O diagrama representa limites funcionais. Não prescreve topologia técnica definitiva.</p>
 <h3 id="product-architecture-pas-001-guivos-journey-21-responsabilidades-do-journey">2.1 Responsabilidades do Journey<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-21-responsabilidades-do-journey" title="Permanent link">&para;</a></h3>
 <ul>
 <li>experiência unificada;</li>
+<li>superfície principal de experiência;</li>
 <li>descoberta contextual;</li>
 <li>organização da jornada;</li>
-<li>apresentação de recomendações;</li>
-<li>objetivos e Momentos Atuais;</li>
+<li>apresentação de recomendações e oportunidades;</li>
+<li>objetivos, Próximos Passos e Momentos Atuais;</li>
+<li>visão autorizada do contexto do participante;</li>
 <li>acompanhamento da evolução;</li>
-<li>comunicação com o participante;</li>
-<li>gamificação e incentivos visíveis;</li>
+<li>comunicação e intervenções visíveis;</li>
+<li>gamificação e incentivos apresentados ao participante;</li>
 <li>integração experiencial;</li>
-<li>orquestração de intervenções contextuais.</li>
+<li>orquestração de capacidades das demais camadas.</li>
 </ul>
 <h3 id="product-architecture-pas-001-guivos-journey-22-responsabilidades-externas-ao-journey">2.2 Responsabilidades externas ao Journey<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-22-responsabilidades-externas-ao-journey" title="Permanent link">&para;</a></h3>
 <p>O Journey não processa pagamentos do Mall, contratos B2B do Business, inteligência algorítmica da Intelligence Layer, campanhas do Ads, produção editorial do Media, reservas do Travel ou infraestrutura comum da Platform Layer.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-23-limite-especifico-do-contexto-vivo">2.3 Limite específico do Contexto Vivo<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-23-limite-especifico-do-contexto-vivo" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Journey apresenta, organiza e permite governar a visão do contexto;</li>
+<li>Intelligence interpreta entradas, propõe compreensão e recomenda atualizações;</li>
+<li>Platform sustenta identidade, persistência, segurança, auditoria e integrações;</li>
+<li>o participante confirma, corrige, limita ou remove informações conforme as regras aplicáveis.</li>
+</ul>
 <h2 id="product-architecture-pas-001-guivos-journey-3-filosofia-operacional-do-journey">3. Filosofia Operacional do Journey<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-3-filosofia-operacional-do-journey" title="Permanent link">&para;</a></h2>
 <p>O Journey opera por cinco responsabilidades permanentes:</p>
 <ol>
@@ -11154,23 +11158,30 @@ Implementação = realização progressiva
 <li><strong>Aprender</strong> — incorporar resultados e evidências autorizadas.</li>
 </ol>
 <p>Sequência comportamental:</p>
-<div class="highlight"><pre><span></span><code>Escutar
-  -&gt; Compreender
-  -&gt; Refletir a compreensão
-  -&gt; Confirmar
-  -&gt; Recomendar ou agir
-</code></pre></div>
+<pre  class="mermaid"><code>flowchart LR
+    A[Escutar]
+    B[Compreender]
+    C[Refletir a compreensão]
+    D[Confirmar]
+    E[Recomendar ou agir]
+
+    A --> B --> C --> D --> E
+</code></pre>
 <h2 id="product-architecture-pas-001-guivos-journey-4-relacao-continua-e-vida-real">4. Relação Contínua e Vida Real<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-4-relacao-continua-e-vida-real" title="Permanent link">&para;</a></h2>
 <p>O Journey não deve ser especificado apenas como aplicativo utilizado em sessões isoladas.</p>
-<div class="highlight"><pre><span></span><code>Vida real
-  -&gt; mudança relevante
-  -&gt; atualização da compreensão
-  -&gt; nova avaliação
-  -&gt; intervenção ou silêncio
-  -&gt; experiência
-  -&gt; nova evidência
-  -&gt; novo contexto
-</code></pre></div>
+<pre  class="mermaid"><code>flowchart LR
+    A[Vida real]
+    B[Mudança relevante]
+    C[Atualização da compreensão]
+    D[Nova avaliação]
+    E[Intervenção ou silêncio]
+    F[Experiência]
+    G[Nova evidência]
+    H[Novo contexto]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+    H --> A
+</code></pre>
 <p>O aplicativo é um ponto de contato dessa relação, não o centro da jornada.</p>
 <h2 id="product-architecture-pas-001-guivos-journey-5-estado-eventos-de-vida-e-oportunidades-ativas">5. Estado, Eventos de Vida e Oportunidades Ativas<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-5-estado-eventos-de-vida-e-oportunidades-ativas" title="Permanent link">&para;</a></h2>
 <h3 id="product-architecture-pas-001-guivos-journey-51-estado">5.1 Estado<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-51-estado" title="Permanent link">&para;</a></h3>
@@ -11215,16 +11226,21 @@ Implementação = realização progressiva
 <p>Cada capacidade funcional existe para resolver um único problema central.</p>
 </blockquote>
 <h3 id="product-architecture-pas-001-guivos-journey-62-ciclo-cognitivo-do-dominio">6.2 Ciclo Cognitivo do Domínio<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-62-ciclo-cognitivo-do-dominio" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>Informação
-  -&gt; Interpretação
-  -&gt; Compreensão
-  -&gt; Contexto
-  -&gt; Decisão
-  -&gt; Ação
-  -&gt; Resultado
-  -&gt; Aprendizado
-  -&gt; Nova informação
-</code></pre></div>
+<pre  class="mermaid"><code>flowchart LR
+    A[Informação]
+    B[Interpretação]
+    C[Compreensão]
+    D[Contexto]
+    E[Decisão]
+    F[Ação]
+    G[Resultado]
+    H[Aprendizado]
+    I[Nova informação]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I
+    I --> B
+</code></pre>
+<p>Esse ciclo é funcional. Não representa pipeline técnico obrigatório, modelo de IA específico ou sequência rígida para todos os casos.</p>
 <h2 id="product-architecture-pas-001-guivos-journey-7-mapa-de-capacidades-do-journey">7. Mapa de Capacidades do Journey<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-7-mapa-de-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -11298,11 +11314,28 @@ Implementação = realização progressiva
 <p>Alternativa opcional para quem não sabe por onde começar. Não deve ser o fluxo obrigatório.</p>
 <h2 id="product-architecture-pas-001-guivos-journey-11-primeira-mensagem">11. Primeira mensagem<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-11-primeira-mensagem" title="Permanent link">&para;</a></h2>
 <p>A mensagem inicial deve explicar finalidade, ausência de julgamento, liberdade para não responder e possibilidade de revisão.</p>
-<p>Formulação de referência:</p>
 <blockquote>
 <p>Para apresentar oportunidades realmente úteis, preciso compreender um pouco do seu momento atual. Você pode falar ou escrever livremente. Não é necessário contar nada que não queira, e você poderá revisar tudo o que eu compreender.</p>
 </blockquote>
-<h2 id="product-architecture-pas-001-guivos-journey-12-comportamento-durante-a-escuta">12. Comportamento durante a escuta<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-12-comportamento-durante-a-escuta" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-12-fluxo-funcional-da-captura-de-contexto">12. Fluxo funcional da Captura de Contexto<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-12-fluxo-funcional-da-captura-de-contexto" title="Permanent link">&para;</a></h2>
+<pre  class="mermaid"><code>flowchart TD
+    A[Participante escolhe voz, texto ou fluxo guiado]
+    B[Guivos explica finalidade e controle]
+    C[Participante expressa seu contexto]
+    D[Guivos preserva a entrada e interpreta]
+    E[Guivos apresenta uma síntese]
+    F{Participante confirma?}
+    G[Corrige, complementa, limita ou remove]
+    H[Contexto inicial confirmado]
+    I[Primeiro Próximo Passo ou oportunidades iniciais]
+    J[Sessão temporária ou encerramento sem persistência]
+
+    A --> B --> C --> D --> E --> F
+    F -- Não --> G --> E
+    F -- Sim --> H --> I
+    C -. Recusa em salvar .-> J
+</code></pre>
+<h2 id="product-architecture-pas-001-guivos-journey-13-comportamento-durante-a-escuta">13. Comportamento durante a escuta<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-13-comportamento-durante-a-escuta" title="Permanent link">&para;</a></h2>
 <p>A Guivos deve:</p>
 <ul>
 <li>permitir expressão livre;</li>
@@ -11314,7 +11347,7 @@ Implementação = realização progressiva
 <li>não transformar inferência em fato;</li>
 <li>não recomendar antes da confirmação.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-13-interpretacao-inicial-e-reflexao">13. Interpretação inicial e reflexão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-13-interpretacao-inicial-e-reflexao" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-14-interpretacao-inicial-e-reflexao">14. Interpretação inicial e reflexão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-14-interpretacao-inicial-e-reflexao" title="Permanent link">&para;</a></h2>
 <p>A Guivos deverá organizar a compreensão em:</p>
 <ul>
 <li>Momento Atual;</li>
@@ -11335,7 +11368,7 @@ Implementação = realização progressiva
 <li>quero acrescentar;</li>
 <li>prefiro não registrar parte disso.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-14-controle-do-participante">14. Controle do participante<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-14-controle-do-participante" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-15-controle-do-participante">15. Controle do participante<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-15-controle-do-participante" title="Permanent link">&para;</a></h2>
 <p>Antes da confirmação, o participante poderá:</p>
 <ul>
 <li>editar;</li>
@@ -11347,10 +11380,8 @@ Implementação = realização progressiva
 <li>manter informação temporária;</li>
 <li>impedir recomendações sobre determinado tema.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-15-perguntas-complementares">15. Perguntas complementares<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-15-perguntas-complementares" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-16-perguntas-complementares-e-priorizacao">16. Perguntas complementares e priorização<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-16-perguntas-complementares-e-priorizacao" title="Permanent link">&para;</a></h2>
 <p>Perguntas adicionais somente são permitidas para evitar erro, diferenciar objetivos, identificar restrições, tornar recomendação útil, proteger o participante ou atender obrigação legal.</p>
-<p>Devem ser poucas e contextualizadas.</p>
-<h2 id="product-architecture-pas-001-guivos-journey-16-priorizacao-inicial">16. Priorização inicial<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-16-priorizacao-inicial" title="Permanent link">&para;</a></h2>
 <p>Quando houver vários objetivos, o participante poderá escolher um ou mais, pedir ajuda para comparar ou manter sem prioridade definida.</p>
 <p>Sugestões de prioridade devem ser explicadas.</p>
 <h2 id="product-architecture-pas-001-guivos-journey-17-profundidade-progressiva">17. Profundidade progressiva<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-17-profundidade-progressiva" title="Permanent link">&para;</a></h2>
@@ -11419,7 +11450,20 @@ Implementação = realização progressiva
 <li>incertezas;</li>
 <li>hipóteses e inferências.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-25-confianca-proveniencia-e-temporalidade">25. Confiança, proveniência e temporalidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-25-confianca-proveniencia-e-temporalidade" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-25-fluxo-funcional-da-interpretacao">25. Fluxo funcional da interpretação<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-25-fluxo-funcional-da-interpretacao" title="Permanent link">&para;</a></h2>
+<pre  class="mermaid"><code>flowchart LR
+    A[Entrada autorizada]
+    B[Classificação]
+    C[Interpretação]
+    D[Confiança, origem e temporalidade]
+    E[Compreensão proposta]
+    F[Reflexão ao participante]
+    G[Confirmação, correção ou contestação]
+    H[Atualização permitida do contexto]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+</code></pre>
+<h2 id="product-architecture-pas-001-guivos-journey-26-confianca-proveniencia-e-temporalidade">26. Confiança, proveniência e temporalidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-26-confianca-proveniencia-e-temporalidade" title="Permanent link">&para;</a></h2>
 <p>Toda interpretação relevante deve responder:</p>
 <ul>
 <li>de onde veio;</li>
@@ -11437,13 +11481,11 @@ Implementação = realização progressiva
 <li>baixa: hipótese inicial.</li>
 </ul>
 <p>Hipóteses de baixa confiança não devem alterar informação permanente sem confirmação.</p>
-<h2 id="product-architecture-pas-001-guivos-journey-26-conflitos-e-reconstrucao">26. Conflitos e reconstrução<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-26-conflitos-e-reconstrucao" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-27-conflitos-e-explicabilidade">27. Conflitos e explicabilidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-27-conflitos-e-explicabilidade" title="Permanent link">&para;</a></h2>
 <p>Informações conflitantes não devem ser resolvidas silenciosamente.</p>
 <p>A Guivos deverá preservar histórico, reconhecer mudança, pedir confirmação quando necessário e reconstruir continuamente sua compreensão.</p>
 <p>Uma nova evidência pode confirmar, fortalecer, enfraquecer, complementar, substituir ou invalidar uma interpretação.</p>
-<h2 id="product-architecture-pas-001-guivos-journey-27-explicabilidade">27. Explicabilidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-27-explicabilidade" title="Permanent link">&para;</a></h2>
-<p>O participante poderá perguntar por que a Guivos entende determinado aspecto de sua jornada.</p>
-<p>A resposta deverá citar fontes, interações ou evidências relevantes, nunca apenas afirmar que “a IA decidiu”.</p>
+<p>O participante poderá perguntar por que a Guivos entende determinado aspecto de sua jornada. A resposta deverá citar fontes, interações ou evidências relevantes, nunca apenas afirmar que “a IA decidiu”.</p>
 <h1 id="product-architecture-pas-001-guivos-journey-capacidade-02-contexto-vivo">Capacidade 02 — Contexto Vivo<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-capacidade-02-contexto-vivo" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-pas-001-guivos-journey-28-pergunta-central">28. Pergunta central<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-28-pergunta-central" title="Permanent link">&para;</a></h2>
 <blockquote>
@@ -11464,25 +11506,46 @@ Implementação = realização progressiva
 <blockquote>
 <p>A Guivos nunca presume conhecer completamente o participante. Ela mantém continuamente a melhor representação possível de sua realidade, sempre aberta à revisão, ao aprendizado e à confirmação.</p>
 </blockquote>
-<h2 id="product-architecture-pas-001-guivos-journey-30-dimensoes-de-compreensao">30. Dimensões de compreensão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-30-dimensoes-de-compreensao" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-30-fluxo-funcional-do-contexto-vivo">30. Fluxo funcional do Contexto Vivo<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-30-fluxo-funcional-do-contexto-vivo" title="Permanent link">&para;</a></h2>
+<pre  class="mermaid"><code>flowchart TD
+    A[Entradas autorizadas]
+    B[Interpretação contextual]
+    C[Compreensão proposta]
+    D{Confirmação necessária?}
+    E[Participante confirma, corrige ou limita]
+    F[Atualização seletiva das dimensões]
+    G[Meu Contexto Hoje]
+    H[Objetivos, Próximos Passos e oportunidades]
+    I[Experiências e resultados]
+    J[Novas evidências]
+
+    A --> B --> C --> D
+    D -- Sim --> E --> F
+    D -- Não, quando permitido --> F
+    F --> G
+    F --> H
+    H --> I --> J --> B
+</code></pre>
+<p>O fluxo não autoriza atualização silenciosa de informações sensíveis, permanentes ou de impacto relevante.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-31-dimensoes-de-compreensao">31. Dimensões de compreensão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-31-dimensoes-de-compreensao" title="Permanent link">&para;</a></h2>
 <p>O Contexto Vivo é um modelo multidimensional de compreensão, não um supercadastro.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-301-identidade">30.1 Identidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-301-identidade" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-311-identidade">31.1 Identidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-311-identidade" title="Permanent link">&para;</a></h3>
 <p>Papéis e formas pelas quais o participante se reconhece no momento: profissional, estudante, empreendedor, responsável familiar, voluntário, atleta, mentor ou integrante de coletivos.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-302-momento">30.2 Momento<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-302-momento" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-312-momento">31.2 Momento<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-312-momento" title="Permanent link">&para;</a></h3>
 <p>Condições que caracterizam a realidade atual: início de carreira, transição, crescimento, reorganização, mudança, recuperação ou expansão.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-303-direcao">30.3 Direção<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-303-direcao" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-313-direcao">31.3 Direção<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-313-direcao" title="Permanent link">&para;</a></h3>
 <p>Objetivos, sonhos, prioridades, intenções e possibilidades desejadas.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-304-capacidades">30.4 Capacidades<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-304-capacidades" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-314-capacidades">31.4 Capacidades<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-314-capacidades" title="Permanent link">&para;</a></h3>
 <p>Conhecimentos, competências, experiências, certificações, recursos e redes disponíveis.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-305-restricoes">30.5 Restrições<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-305-restricoes" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-315-restricoes">31.5 Restrições<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-315-restricoes" title="Permanent link">&para;</a></h3>
 <p>Tempo, dinheiro, saúde, disponibilidade, mobilidade, responsabilidades e demais limites atuais.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-306-preferencias">30.6 Preferências<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-306-preferencias" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-316-preferencias">31.6 Preferências<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-316-preferencias" title="Permanent link">&para;</a></h3>
 <p>Formas preferidas de viver experiências: online, presencial, individual, coletiva, gratuita, paga, curta ou longa.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-307-relacionamentos">30.7 Relacionamentos<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-307-relacionamentos" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-317-relacionamentos">31.7 Relacionamentos<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-317-relacionamentos" title="Permanent link">&para;</a></h3>
 <p>Pessoas, Organizações e Coletivos relevantes para a jornada.</p>
-<h3 id="product-architecture-pas-001-guivos-journey-308-evolucao">30.8 Evolução<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-308-evolucao" title="Permanent link">&para;</a></h3>
+<h3 id="product-architecture-pas-001-guivos-journey-318-evolucao">31.8 Evolução<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-318-evolucao" title="Permanent link">&para;</a></h3>
 <p>Mudanças, resultados, evidências e diferenças entre estados ao longo do tempo.</p>
-<h2 id="product-architecture-pas-001-guivos-journey-31-evolucao-independente-das-dimensoes">31. Evolução independente das dimensões<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-31-evolucao-independente-das-dimensoes" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-32-evolucao-independente-das-dimensoes">32. Evolução independente das dimensões<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-32-evolucao-independente-das-dimensoes" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Cada dimensão do Contexto Vivo evolui de forma independente. Uma alteração poderá impactar outras dimensões, mas não deverá exigir reconstrução completa nem presumir mudanças onde não existam evidências suficientes.</p>
 </blockquote>
@@ -11491,17 +11554,22 @@ Implementação = realização progressiva
 <li>uma promoção pode alterar Momento, Capacidades e Direção, sem modificar Preferências;</li>
 <li>o nascimento de um filho pode alterar Momento, Restrições, Disponibilidade e Direção, sem alterar competências profissionais.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-32-ciclo-de-vida-da-informacao">32. Ciclo de vida da informação<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-32-ciclo-de-vida-da-informacao" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Observada
-  -&gt; Interpretada
-  -&gt; Confirmada
-  -&gt; Ativa
-  -&gt; Envelhecida
-  -&gt; Substituída
-  -&gt; Arquivada
-</code></pre></div>
+<h2 id="product-architecture-pas-001-guivos-journey-33-ciclo-de-vida-da-informacao">33. Ciclo de vida da informação<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-33-ciclo-de-vida-da-informacao" title="Permanent link">&para;</a></h2>
+<pre  class="mermaid"><code>stateDiagram-v2
+    [*] --> Observada
+    Observada --> Interpretada
+    Interpretada --> Confirmada
+    Confirmada --> Ativa
+    Ativa --> Envelhecida
+    Ativa --> Substituída
+    Envelhecida --> Confirmada: revisão
+    Envelhecida --> Substituída
+    Substituída --> Arquivada
+    Ativa --> Arquivada: remoção ou expiração
+</code></pre>
 <p>Cada item deverá preservar origem, temporalidade, confiança, finalidade, permissões e relação com dimensões afetadas.</p>
-<h2 id="product-architecture-pas-001-guivos-journey-33-visao-do-participante-meu-contexto-hoje">33. Visão do participante — Meu Contexto Hoje<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-33-visao-do-participante-meu-contexto-hoje" title="Permanent link">&para;</a></h2>
+<p>Nem toda informação percorre todos os estados. Itens podem ser descartados antes da confirmação ou permanecer temporários sem integrar a representação persistente.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-34-visao-do-participante-meu-contexto-hoje">34. Visão do participante — Meu Contexto Hoje<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-34-visao-do-participante-meu-contexto-hoje" title="Permanent link">&para;</a></h2>
 <p>O participante deverá acessar uma visão simples contendo:</p>
 <ul>
 <li>quem sou neste momento;</li>
@@ -11525,7 +11593,33 @@ Implementação = realização progressiva
 <li>quais fontes foram utilizadas;</li>
 <li>como corrigir, ocultar, limitar ou remover.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-34-estado-atual-da-capacidade-02">34. Estado atual da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-34-estado-atual-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<h3 id="product-architecture-pas-001-guivos-journey-341-diagrama-conceitual">34.1 Diagrama conceitual<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-341-diagrama-conceitual" title="Permanent link">&para;</a></h3>
+<pre  class="mermaid"><code>flowchart TD
+    M[Meu Contexto Hoje]
+    ID[Quem sou neste momento]
+    FO[Foco principal]
+    MR[Mudanças recentes]
+    OB[Objetivos e Próximos Passos]
+    CA[Capacidades]
+    RE[Restrições]
+    PR[Preferências]
+    CO[Conexões]
+    RV[Revisões necessárias]
+    CT[Controles do participante]
+
+    M --> ID
+    M --> FO
+    M --> MR
+    M --> OB
+    M --> CA
+    M --> RE
+    M --> PR
+    M --> CO
+    M --> RV
+    M --> CT
+</code></pre>
+<p>Esse diagrama representa organização conceitual, não layout definitivo de interface.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-35-estado-atual-da-capacidade-02">35. Estado atual da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-35-estado-atual-da-capacidade-02" title="Permanent link">&para;</a></h2>
 <p>Já consolidados:</p>
 <ul>
 <li>definição funcional;</li>
@@ -11534,6 +11628,7 @@ Implementação = realização progressiva
 <li>oito dimensões iniciais;</li>
 <li>evolução independente;</li>
 <li>ciclo de vida inicial;</li>
+<li>fluxo funcional;</li>
 <li>visão conceitual <code>Meu Contexto Hoje</code>.</li>
 </ul>
 <p>Ainda pendentes:</p>
@@ -11548,7 +11643,7 @@ Implementação = realização progressiva
 <li>casos ideal, alternativo e limite;</li>
 <li>contrato da capacidade.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-35-ponto-de-retomada">35. Ponto de retomada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-35-ponto-de-retomada" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-36-ponto-de-retomada">36. Ponto de retomada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-36-ponto-de-retomada" title="Permanent link">&para;</a></h2>
 <p>Retomar na Capacidade 02 — Contexto Vivo, detalhando responsabilidades, entradas, saídas, estados de cada dimensão, regras de atualização e envelhecimento, conflitos, interface, eventos, KPIs, cenários e contrato de aceite.</p></section><section class="print-page" id="product-architecture-journey" heading-number="9.4"><h1 id="product-architecture-journey-guivos-journey">Guivos Journey<a class="headerlink" href="#product-architecture-journey-guivos-journey" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-journey-papel">Papel<a class="headerlink" href="#product-architecture-journey-papel" title="Permanent link">&para;</a></h2>
 <p>Guivos Journey é a camada principal de experiência do Ecossistema Guivos.</p>
