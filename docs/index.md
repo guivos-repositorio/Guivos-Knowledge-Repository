@@ -7,92 +7,65 @@ Ele preserva fundamentos, arquiteturas, modelos, decisões, pesquisas, validaç�
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M5.5 — Context and Architecture Engineering Checkpoint` concluído;
-- checkpoint `CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE` ativo;
-- sincronização `GE2-SYNC-004` registrada;
-- GKA-000 com Parte V ainda pendente;
-- `PAS-001 — Guivos Journey` preservado na versão `0.2.0`;
+- marco `M5.6 — Journey Operational Philosophy Consolidated` concluído;
+- frente `Product Engineering` ativa;
+- sincronização `GE2-SYNC-005` registrada;
+- `PAS-001 — Guivos Journey` ativo na versão `0.3.0`;
 - `GLPA-001` vigente;
-- `GIA-000` atualizada para `1.2.0`;
-- `GOG-001 — Guia Oficial da Guivos` atualizado para `4.0.0`;
-- `GPD-000 — Documentação Pública da Guivos` atualizado para `3.0.0`;
-- Captura Multimodal de Contexto registrada;
-- voz definida como canal prioritário, mas não exclusivo;
-- LPM e CIE registrados como candidatos em Discovery/Engineering;
-- Architecture Engineering Sprint definido como próximo trabalho;
-- Guivos Economic Model permanece planejado;
-- A2-R02 permanece em espera operacional.
+- `GIA-000` na versão `1.2.0`;
+- `GOG-001 — Guia Oficial da Guivos` na versão `4.0.0`;
+- GKA-000 com Parte V pendente;
+- Guivos Economic Model planejado;
+- A2-R02 em espera operacional.
 
 ## Missão atual
 
-Projetar a taxonomia oficial e o meta-modelo do Guivos Knowledge Repository antes de criar novos documentos estruturais.
+Detalhar funcionalmente o `PAS-001 — Guivos Journey`, começando pela **Captura de Contexto**.
 
-Depois dessa definição, decidir quais ativos candidatos realmente devem existir e retomar o PAS-001 pela JFA e pela Captura Multimodal de Contexto.
+A próxima entrega deverá especificar a primeira conversa por voz ou texto, escuta, interpretação, reflexão, confirmação, correção, consentimento, exceções e transição para objetivos e primeiras oportunidades.
 
 ## Acesso rápido
 
-- [Guia Oficial da Guivos 4.0](public/guia-oficial-da-guivos.md)
-- [Documentação Pública da Guivos](public/index.md)
-- [GE2-SYNC-004 — Context, Participant Model and Architecture Engineering Sync](project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md)
-- [Architecture Engineering Pause Checkpoint](project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)
+- [GE2-SYNC-005 — Journey Operational Philosophy and Product Engineering](project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md)
+- [Guia Oficial da Guivos 4.0](public/guia-oficial-da-guivos.md)
 - [GLPA-001 — Guivos Layered Product Architecture](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Roadmap Arquitetural](roadmap.md)
 - [Knowledge Board](project/knowledge-board.md)
-- [Architectural Milestones](project/architectural-milestones.md)
 - [Guivos Economic Model](economic-model/index.md)
 
-## Atualização pública mais recente
+## Filosofia operacional do Journey
 
-O Guia Oficial 4.0 passou a refletir:
+O Journey opera por cinco responsabilidades:
 
-- Journey como experiência principal;
-- Intelligence como inteligência transversal;
-- Business, Mall, Travel, Media e Ads como soluções especializadas;
-- Pessoa, Organização e Coletivo como participantes;
-- captura progressiva e multimodal de contexto;
-- voz como canal prioritário, mas não exclusivo;
-- oportunidade como unidade prática de valor;
-- novos diagramas públicos de funcionamento, integração, inteligência e Grafo Global;
-- maior clareza sobre privacidade, transparência e controle do participante.
-
-## Decisões recentes
-
-### Captura Multimodal de Contexto
-
-O participante poderá expressar Momento Atual, objetivos, limitações e prioridades por voz, texto, documentos, imagens e integrações autorizadas.
-
-A voz é o canal prioritário por permitir expressão mais natural, sem impedir alternativas acessíveis e estruturadas.
-
-### Modelo Vivo do Participante
-
-O `Living Participant Model (LPM)` permanece como conceito candidato para representar o contexto autorizado, temporal, explicável e revisável do participante.
-
-### Context Intelligence Engine
-
-O `Context Intelligence Engine (CIE)` permanece como capacidade candidata da Intelligence Layer para interpretar entradas multimodais e propor atualizações governadas do LPM.
-
-### Hierarquia documental de produto
+1. compreender;
+2. acompanhar;
+3. ativar;
+4. orquestrar;
+5. aprender.
 
 ```text
-GPA
-  -> PAS
-       -> JFA
-            -> FDS
-       -> UX Specification
-       -> Technical Specification
+Escutar
+  -> Compreender
+  -> Refletir
+  -> Confirmar
+  -> Recomendar ou agir
 ```
 
-### Architecture Engineering Sprint
+## Conceitos funcionais vigentes
 
-O próximo ciclo deverá definir:
+- Captura Multimodal de Contexto;
+- voz como canal prioritário, mas não exclusivo;
+- Estado e Eventos de Vida;
+- Oportunidades Ativas;
+- Intervenções Contextuais;
+- Orquestração de Intervenções;
+- Distância para Evolução como conceito interno;
+- LPM e CIE preservados como candidatos.
 
-1. taxonomia oficial de artefatos;
-2. meta-modelo do GKR;
-3. categorias documentais;
-4. dependências;
-5. ciclo de vida;
-6. critérios de promoção à Canon;
-7. nomenclatura e identificadores;
-8. ponto único de manutenção conceitual.
+## Decisão de foco
+
+O Architecture Engineering Sprint deixa de ser atividade imediata.
+
+Os candidatos estruturais permanecem preservados, mas o trabalho retorna à especificação funcional dos produtos oficiais, começando pelo Journey.
