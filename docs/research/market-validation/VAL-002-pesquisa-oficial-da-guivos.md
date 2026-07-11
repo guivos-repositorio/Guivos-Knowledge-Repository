@@ -2,7 +2,7 @@
 id: VAL-002
 title: Pesquisa Conceitual B2C da Guivos
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-07-11
 public_title: Construindo a Guivos
@@ -49,17 +49,41 @@ Não existem respostas certas ou erradas. Respostas críticas ou negativas são 
 - **1.7** 65 anos ou mais.
 - **1.8** Prefiro não responder.
 
-### 2. Em qual região você mora?
+### 2. Em qual estado você mora?
 
-- **2.1** Norte.
-- **2.2** Nordeste.
-- **2.3** Centro-Oeste.
-- **2.4** Sudeste.
-- **2.5** Sul.
-- **2.6** Fora do Brasil.
-- **2.7** Prefiro não responder.
+Apresentar como lista suspensa de escolha única.
 
-Campo complementar opcional: cidade e estado ou país.
+- **2.1** Acre.
+- **2.2** Alagoas.
+- **2.3** Amapá.
+- **2.4** Amazonas.
+- **2.5** Bahia.
+- **2.6** Ceará.
+- **2.7** Distrito Federal.
+- **2.8** Espírito Santo.
+- **2.9** Goiás.
+- **2.10** Maranhão.
+- **2.11** Mato Grosso.
+- **2.12** Mato Grosso do Sul.
+- **2.13** Minas Gerais.
+- **2.14** Pará.
+- **2.15** Paraíba.
+- **2.16** Paraná.
+- **2.17** Pernambuco.
+- **2.18** Piauí.
+- **2.19** Rio de Janeiro.
+- **2.20** Rio Grande do Norte.
+- **2.21** Rio Grande do Sul.
+- **2.22** Rondônia.
+- **2.23** Roraima.
+- **2.24** Santa Catarina.
+- **2.25** São Paulo.
+- **2.26** Sergipe.
+- **2.27** Tocantins.
+- **2.28** Moro fora do Brasil.
+- **2.29** Prefiro não responder.
+
+Campo complementar opcional e separado: cidade ou município.
 
 ### 3. Qual opção melhor descreve sua situação principal hoje?
 
@@ -120,10 +144,7 @@ Escolha até três opções.
 
 ### 7. Quanto esforço você sente que precisa fazer para encontrar algo realmente relevante para seus objetivos?
 
-Escala de 0 a 10:
-
-- **7.0** Nenhum esforço.
-- **7.10** Esforço extremamente alto.
+Escala de 0 a 10, em que `0` significa nenhum esforço e `10` esforço extremamente alto.
 
 ### 8. Onde você costuma procurar oportunidades ou caminhos para alcançar seus objetivos?
 
@@ -158,10 +179,7 @@ Ainda estamos construindo essa plataforma e queremos fazer isso ouvindo as pesso
 
 ### 9. Quanto você sente que compreendeu a proposta da Guivos?
 
-Escala de 0 a 10:
-
-- **9.0** Não compreendi.
-- **9.10** Compreendi completamente.
+Escala de 0 a 10, em que `0` significa não compreendi e `10` compreendi completamente.
 
 ### 10. Em poucas palavras, como você explicaria a Guivos para outra pessoa?
 
@@ -171,10 +189,7 @@ Esta pergunta mede compreensão real e não deve ser substituída por alternativ
 
 ### 11. Quanto essa proposta parece relevante para o momento que você está vivendo?
 
-Escala de 0 a 10:
-
-- **11.0** Nada relevante.
-- **11.10** Extremamente relevante.
+Escala de 0 a 10, em que `0` significa nada relevante e `10` extremamente relevante.
 
 ### 12. Qual aspecto da proposta teria maior valor para você?
 
@@ -191,19 +206,13 @@ Escolha apenas uma opção.
 
 ### 13. Quanto você acredita que uma plataforma como a Guivos poderia melhorar concretamente alguma área da sua vida nos próximos 12 meses?
 
-Escala de 0 a 10:
-
-- **13.0** Não melhoraria.
-- **13.10** Poderia melhorar de forma muito significativa.
+Escala de 0 a 10, em que `0` significa não melhoraria e `10` poderia melhorar de forma muito significativa.
 
 ## 8. Bloco D — Confiança e controle
 
 ### 14. Quanto você se sentiria confortável em explicar seu momento atual para receber orientações e oportunidades mais relevantes?
 
-Escala de 0 a 10:
-
-- **14.0** Nada confortável.
-- **14.10** Totalmente confortável.
+Escala de 0 a 10, em que `0` significa nada confortável e `10` totalmente confortável.
 
 ### 15. O que mais aumentaria sua confiança na Guivos?
 
@@ -256,10 +265,7 @@ Escolha até três opções.
 
 ### 19. De 0 a 10, qual é a probabilidade de você recomendar a ideia da Guivos a alguém, caso ela funcionasse como foi apresentada?
 
-Escala de 0 a 10:
-
-- **19.0** Não recomendaria.
-- **19.10** Certamente recomendaria.
+Escala de 0 a 10, em que `0` significa não recomendaria e `10` certamente recomendaria.
 
 ### 20. Você teria interesse em participar de um teste beta gratuito antes do lançamento?
 
@@ -312,9 +318,10 @@ Esperamos que, no futuro, a Guivos possa contribuir para que mais pessoas encont
 
 ## 12. Configuração de aplicação
 
-- perguntas obrigatórias: `1` a `22`, exceto cidade/estado, contato e campos “outro”;
+- perguntas obrigatórias: `1` a `22`, exceto cidade/município, contato e campos “outro”;
 - pergunta `23`: opcional;
 - únicas perguntas abertas centrais: `10` e `23`;
+- pergunta `2`: lista suspensa de escolha única;
 - contato: opcional e separado da análise dos KPIs;
 - ordem das perguntas: fixa;
 - não explicar a Guivos além do texto oficial durante aplicação autoadministrada;
