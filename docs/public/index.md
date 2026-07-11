@@ -2,9 +2,9 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 3.1.0
+version: 3.2.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-11
 ---
 
 # Documentação Pública da Guivos
@@ -17,33 +17,17 @@ Este domínio reúne documentos públicos derivados das decisões consolidadas n
 
 ## Versão pública vigente
 
-O `GOG-001 — Guia Oficial da Guivos` encontra-se na versão `4.1.0`.
+O `GOG-001 — Guia Oficial da Guivos` encontra-se na versão `4.2.0`.
 
-Essa versão atualiza a narrativa pública para refletir que a Guivos não mantém apenas um cadastro inicial: ela pretende construir uma compreensão progressiva, revisável e controlável do contexto do participante ao longo do tempo.
+Essa versão:
 
-## Conteúdos apresentados
-
-O Guia Oficial reúne:
-
-- essência, propósito, missão e visão;
-- problema da fragmentação das oportunidades;
-- participantes: Pessoa, Organização e Coletivo;
-- evolução, Momento Atual, Próximo Passo e jornada;
-- captura progressiva e multimodal de contexto;
-- voz como canal prioritário, mas não exclusivo;
-- interpretação apresentada para confirmação e correção;
-- compreensão atualizada conforme mudanças, experiências e objetivos;
-- Ciclo Contínuo de Evolução;
-- oportunidade como unidade prática de valor;
-- Guivos Journey como experiência principal;
-- Guivos Intelligence como inteligência transversal;
-- Guivos Business, Mall, Travel, Media e Ads como soluções especializadas;
-- limites de aderência e curadoria;
-- Inteligência do Ecossistema Guivos;
-- Grafo Global da Guivos;
-- privacidade, transparência e controle do participante;
-- princípios públicos iniciais do Guivos Economic Model;
-- estágio de maturidade e pendências de validação.
+- alinha propósito, missão e visão à Foundation;
+- esclarece o significado de `Public Canon`;
+- apresenta a primeira compreensão do contexto;
+- reforça confirmação, correção e controle do participante;
+- revisa o Ciclo Contínuo de Evolução;
+- apresenta a estrutura pública com Journey, Intelligence, soluções especializadas e Platform Layer;
+- preserva linguagem pública simples sem antecipar arquiteturas técnicas como concluídas.
 
 ## Organização pública da Guivos
 
@@ -63,34 +47,30 @@ O Guia Oficial reúne:
 - Guivos Media;
 - Guivos Ads.
 
-## Princípio editorial
+### Base comum
 
-A documentação pública deve partir de situações concretas, utilizar linguagem acessível e distinguir claramente o que está consolidado, em desenvolvimento, dependente de validação ou apresentado apenas como exemplo futuro.
+- Platform Layer, como base técnica e operacional não apresentada como produto público independente.
 
-## Princípio de contexto
+## Mapeamento editorial
 
-A Guivos deverá compreender progressivamente o contexto do participante, sem exigir cadastro completo no primeiro contato.
+| Linguagem pública | Conceito interno correspondente |
+|---|---|
+| compreensão atualizada | Contexto Vivo |
+| oportunidade relevante | Oportunidade Ativa |
+| apresentar algo no momento certo | Intervenção Contextual |
+| explicar o que a Guivos compreendeu | Reflexão e confirmação da interpretação |
 
-A compreensão apresentada pela plataforma deverá ser revisável, explicável e controlável pelo participante.
+A linguagem pública não deve expor LPM, CIE, GPMA ou outros candidatos como componentes concluídos.
 
-A voz poderá ser priorizada por sua naturalidade, mas outros meios deverão permanecer disponíveis.
+## Princípios públicos
 
-## Princípio de aderência
-
-Nem toda oferta, empresa, campanha ou anúncio pertence automaticamente à Guivos. A participação exige relação com o propósito, utilidade real, legalidade e transparência.
-
-## Princípio de inteligência
-
-A expressão preferencial é **Inteligência do Ecossistema Guivos**.
-
-Ela representa uma inteligência que trabalha sobre contexto, conhecimento, conexões, jornadas, experiências e evidências organizadas no Grafo Global da Guivos.
-
-## Princípio econômico público
-
-Recursos adicionais podem acelerar, ampliar e personalizar jornadas, sem bloquear a descoberta de oportunidades e a evolução dos demais participantes.
-
-Os mecanismos completos serão desenvolvidos no domínio `Guivos Economic Model`.
+- contexto antes da recomendação;
+- autonomia antes da automação;
+- relevância antes de volume;
+- explicação e correção pelo participante;
+- diferenciação entre visão institucional e disponibilidade comercial;
+- monetização subordinada ao propósito.
 
 ## Regra de atualização
 
-Os documentos públicos devem acompanhar as decisões vigentes do GKR sem antecipar como definitivas funcionalidades, tecnologias, preços, parceiros ou políticas ainda não aprovadas.
+Os documentos públicos devem acompanhar as decisões vigentes do GKR sem antecipar como definitivas funcionalidades, tecnologias, preços, parceiros, operações ou políticas ainda não aprovadas.
