@@ -2182,41 +2182,52 @@
 <p>Para fins de construção, operação e evolução, esses componentes são organizados por camadas.</p>
 <h2 id="3-arquitetura-em-camadas">3. Arquitetura em camadas<a class="headerlink" href="#3-arquitetura-em-camadas" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    EL[Experience Layer]
-    J[Guivos Journey]
-    IL[Intelligence Layer]
-    I[Guivos Intelligence]
-    SL[Service Layer]
-    B[Guivos Business]
-    M[Guivos Mall]
-    T[Guivos Travel]
-    MD[Guivos Media]
-    A[Guivos Ads]
-    PL[Platform Layer]
-    API[APIs e integrações]
-    AUTH[Identidade, autenticação e autorização]
-    DATA[Dados, busca e armazenamento]
-    BILL[Billing e pagamentos compartilhados]
-    NOTIF[Notificações e mensageria]
-    SEC[Segurança, privacidade e observabilidade]
-    GRAPH[Implementação técnica futura do Grafo Global]
+    P["Pessoas, Organizações e Coletivos"]
+    EL["Experience Layer"]
+    J["Guivos Journey"]
+    IL["Intelligence Layer"]
+    I["Guivos Intelligence"]
+    SL["Service Layer"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer"]
+    API["APIs e integrações"]
+    AUTH["Identidade, autenticação e autorização"]
+    DATA["Dados, busca e armazenamento"]
+    BILL["Billing e pagamentos compartilhados"]
+    NOTIF["Notificações e mensageria"]
+    SEC["Segurança, privacidade e observabilidade"]
+    GRAPH["Implementação técnica futura do Grafo Global"]
 
     P --&gt; EL
     EL --&gt; J
-    J &lt;--&gt; I
-    J &lt;--&gt; B
-    J &lt;--&gt; M
-    J &lt;--&gt; T
-    J &lt;--&gt; MD
-    J &lt;--&gt; A
+    J --&gt; I
+    I --&gt; J
+    J --&gt; B
+    B --&gt; J
+    J --&gt; M
+    M --&gt; J
+    J --&gt; T
+    T --&gt; J
+    J --&gt; MD
+    MD --&gt; J
+    J --&gt; A
+    A --&gt; J
 
     IL --&gt; I
-    I &lt;--&gt; B
-    I &lt;--&gt; M
-    I &lt;--&gt; T
-    I &lt;--&gt; MD
-    I &lt;--&gt; A
+    I --&gt; B
+    B --&gt; I
+    I --&gt; M
+    M --&gt; I
+    I --&gt; T
+    T --&gt; I
+    I --&gt; MD
+    MD --&gt; I
+    I --&gt; A
+    A --&gt; I
 
     SL --&gt; B
     SL --&gt; M
@@ -2442,7 +2453,7 @@
 </ul>
 <h2 id="13-estado">13. Estado<a class="headerlink" href="#13-estado" title="Permanent link">¶</a></h2>
 <p>Esta arquitetura permanece aprovada como referência da fase de Product Engineering.</p>
-<p>A versão 1.1.0 substitui terminologia legada de <code>perfil</code> e <code>feed</code> como responsabilidades permanentes, esclarece relações transversais e preserva a distinção entre arquitetura funcional e implementação técnica.</p>
+<p>A versão 1.1.1 endurece a sintaxe Mermaid para compatibilidade entre renderizadores, sem alterar as responsabilidades ou decisões arquiteturais da versão 1.1.0.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

@@ -10918,41 +10918,52 @@ Implementação = realização progressiva
 <p>Para fins de construção, operação e evolução, esses componentes são organizados por camadas.</p>
 <h2 id="product-architecture-layered-product-architecture-3-arquitetura-em-camadas">3. Arquitetura em camadas<a class="headerlink" href="#product-architecture-layered-product-architecture-3-arquitetura-em-camadas" title="Permanent link">&para;</a></h2>
 <pre  class="mermaid"><code>flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    EL[Experience Layer]
-    J[Guivos Journey]
-    IL[Intelligence Layer]
-    I[Guivos Intelligence]
-    SL[Service Layer]
-    B[Guivos Business]
-    M[Guivos Mall]
-    T[Guivos Travel]
-    MD[Guivos Media]
-    A[Guivos Ads]
-    PL[Platform Layer]
-    API[APIs e integrações]
-    AUTH[Identidade, autenticação e autorização]
-    DATA[Dados, busca e armazenamento]
-    BILL[Billing e pagamentos compartilhados]
-    NOTIF[Notificações e mensageria]
-    SEC[Segurança, privacidade e observabilidade]
-    GRAPH[Implementação técnica futura do Grafo Global]
+    P["Pessoas, Organizações e Coletivos"]
+    EL["Experience Layer"]
+    J["Guivos Journey"]
+    IL["Intelligence Layer"]
+    I["Guivos Intelligence"]
+    SL["Service Layer"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer"]
+    API["APIs e integrações"]
+    AUTH["Identidade, autenticação e autorização"]
+    DATA["Dados, busca e armazenamento"]
+    BILL["Billing e pagamentos compartilhados"]
+    NOTIF["Notificações e mensageria"]
+    SEC["Segurança, privacidade e observabilidade"]
+    GRAPH["Implementação técnica futura do Grafo Global"]
 
     P --> EL
     EL --> J
-    J <--> I
-    J <--> B
-    J <--> M
-    J <--> T
-    J <--> MD
-    J <--> A
+    J --> I
+    I --> J
+    J --> B
+    B --> J
+    J --> M
+    M --> J
+    J --> T
+    T --> J
+    J --> MD
+    MD --> J
+    J --> A
+    A --> J
 
     IL --> I
-    I <--> B
-    I <--> M
-    I <--> T
-    I <--> MD
-    I <--> A
+    I --> B
+    B --> I
+    I --> M
+    M --> I
+    I --> T
+    T --> I
+    I --> MD
+    MD --> I
+    I --> A
+    A --> I
 
     SL --> B
     SL --> M
@@ -11178,7 +11189,7 @@ Implementação = realização progressiva
 </ul>
 <h2 id="product-architecture-layered-product-architecture-13-estado">13. Estado<a class="headerlink" href="#product-architecture-layered-product-architecture-13-estado" title="Permanent link">&para;</a></h2>
 <p>Esta arquitetura permanece aprovada como referência da fase de Product Engineering.</p>
-<p>A versão 1.1.0 substitui terminologia legada de <code>perfil</code> e <code>feed</code> como responsabilidades permanentes, esclarece relações transversais e preserva a distinção entre arquitetura funcional e implementação técnica.</p></section><section class="print-page" id="product-architecture-pas-001-guivos-journey" heading-number="9.3"><h1 id="product-architecture-pas-001-guivos-journey-pas-001-guivos-journey-product-architecture-specification">PAS-001 — Guivos Journey Product Architecture Specification<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-pas-001-guivos-journey-product-architecture-specification" title="Permanent link">&para;</a></h1>
+<p>A versão 1.1.1 endurece a sintaxe Mermaid para compatibilidade entre renderizadores, sem alterar as responsabilidades ou decisões arquiteturais da versão 1.1.0.</p></section><section class="print-page" id="product-architecture-pas-001-guivos-journey" heading-number="9.3"><h1 id="product-architecture-pas-001-guivos-journey-pas-001-guivos-journey-product-architecture-specification">PAS-001 — Guivos Journey Product Architecture Specification<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-pas-001-guivos-journey-product-architecture-specification" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-pas-001-guivos-journey-0-product-philosophy">0. Product Philosophy<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-0-product-philosophy" title="Permanent link">&para;</a></h2>
 <h3 id="product-architecture-pas-001-guivos-journey-01-filosofia-do-produto">0.1 Filosofia do Produto<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-01-filosofia-do-produto" title="Permanent link">&para;</a></h3>
 <p>O Guivos Journey não foi concebido para maximizar tempo de uso, consumo de conteúdo ou interação superficial.</p>
