@@ -330,10 +330,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#principio-central">
+<a class="md-nav__link" href="#principios-centrais">
 <span class="md-ellipsis">
       
-        Princípio central
+        Princípios centrais
       
     </span>
 </a>
@@ -361,6 +361,15 @@
 <span class="md-ellipsis">
       
         Escopo inicial
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#estado-operacional">
+<span class="md-ellipsis">
+      
+        Estado operacional
       
     </span>
 </a>
@@ -1888,10 +1897,10 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#principio-central">
+<a class="md-nav__link" href="#principios-centrais">
 <span class="md-ellipsis">
       
-        Princípio central
+        Princípios centrais
       
     </span>
 </a>
@@ -1923,6 +1932,15 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#estado-operacional">
+<span class="md-ellipsis">
+      
+        Estado operacional
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -1937,24 +1955,25 @@
 <p>Este domínio organiza a validação de mercado da Guivos antes do lançamento e durante a evolução dos produtos.</p>
 <h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">¶</a></h2>
 <p>Transformar hipóteses internas em perguntas testáveis, coletar evidências de mercado e orientar decisões de produto com critérios explícitos.</p>
-<h2 id="principio-central">Princípio central<a class="headerlink" href="#principio-central" title="Permanent link">¶</a></h2>
+<h2 id="principios-centrais">Princípios centrais<a class="headerlink" href="#principios-centrais" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>A pesquisa não existe para provar que a Guivos é uma boa ideia. Ela existe para descobrir onde a proposta é forte, onde é fraca e o que precisa ser ajustado.</p>
+<p>A Guivos será construída com base em evidências e na participação das pessoas.</p>
 </blockquote>
 <h2 id="documentos">Documentos<a class="headerlink" href="#documentos" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="VAL-001-framework-de-validacao-de-mercado/">VAL-001 — Framework de Validação de Mercado</a></li>
-<li><a href="VAL-002-pesquisa-oficial-da-guivos/">VAL-002 — Pesquisa Oficial da Guivos</a></li>
-<li><a href="VAL-003-guia-do-entrevistador/">VAL-003 — Guia do Entrevistador</a></li>
-<li><a href="VAL-004-modelo-de-consolidacao-e-analise/">VAL-004 — Modelo de Consolidação e Análise</a></li>
-<li><a href="VAL-005-plano-de-amostragem/">VAL-005 — Plano de Amostragem</a></li>
-<li><a href="VAL-006-dashboard-de-indicadores/">VAL-006 — Dashboard de Indicadores</a></li>
-<li><a href="VAL-007-criterios-de-decisao/">VAL-007 — Critérios de Decisão</a></li>
-<li><a href="VAL-008-sinais-comportamentais/">VAL-008 — Sinais Comportamentais</a></li>
+<li><a href="VAL-001-framework-de-validacao-de-mercado/">VAL-001 — Framework de Validação de Mercado</a> — versão 1.1.0;</li>
+<li><a href="VAL-002-pesquisa-oficial-da-guivos/">VAL-002 — Pesquisa Conceitual B2C</a> — versão 1.1.0, título público <code>Construindo a Guivos</code>;</li>
+<li><a href="VAL-003-guia-do-entrevistador/">VAL-003 — Guia do Entrevistador</a>;</li>
+<li><a href="VAL-004-modelo-de-consolidacao-e-analise/">VAL-004 — Modelo de Consolidação e Análise</a>;</li>
+<li><a href="VAL-005-plano-de-amostragem/">VAL-005 — Plano de Amostragem</a>;</li>
+<li><a href="VAL-006-dashboard-de-indicadores/">VAL-006 — Dashboard de Indicadores</a> — versão 1.1.0;</li>
+<li><a href="VAL-007-criterios-de-decisao/">VAL-007 — Critérios de Decisão</a> — versão 1.1.0;</li>
+<li><a href="VAL-008-sinais-comportamentais/">VAL-008 — Sinais Comportamentais</a>.</li>
 </ul>
 <h2 id="sequencia-oficial">Sequência oficial<a class="headerlink" href="#sequencia-oficial" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A["Hipótese"] --&gt; B["Pesquisa"] --&gt; C["Entrevistas"] --&gt; D["Resultados"] --&gt; E["Insights"] --&gt; F["Ajustes"] --&gt; G["Nova validação"]
+    A["Hipótese"] --&gt; B["Pesquisa"] --&gt; C["Entrevistas"] --&gt; D["Resultados"] --&gt; E["Dashboard"] --&gt; F["Decisão"] --&gt; G["Ajustes"] --&gt; H["Nova validação"]
 </code></pre>
 <h2 id="escopo-inicial">Escopo inicial<a class="headerlink" href="#escopo-inicial" title="Permanent link">¶</a></h2>
 <p>A primeira aplicação valida a proposta B2C da Guivos, com foco em:</p>
@@ -1962,10 +1981,24 @@
 <li>dor relacionada à descoberta de oportunidades;</li>
 <li>compreensão da proposta;</li>
 <li>valor percebido;</li>
+<li>transformação percebida;</li>
 <li>confiança;</li>
-<li>recorrência;</li>
-<li>disposição para participar de um beta;</li>
-<li>sinais iniciais de monetização.</li>
+<li>intenção de uso;</li>
+<li>potencial de recorrência;</li>
+<li>interesse em participar do beta;</li>
+<li>sinais iniciais de monetização;</li>
+<li>barreiras e diferenças entre segmentos.</li>
+</ul>
+<h2 id="estado-operacional">Estado operacional<a class="headerlink" href="#estado-operacional" title="Permanent link">¶</a></h2>
+<ul>
+<li>instrumento oficial revisado para 5 a 7 minutos;</li>
+<li>23 perguntas principais;</li>
+<li>apenas duas perguntas abertas centrais;</li>
+<li>alternativas codificadas no padrão <code>n.x</code>;</li>
+<li>dashboard vinculado diretamente às perguntas;</li>
+<li>critérios formais de <code>Go</code>, <code>Go com ajustes</code>, <code>Pivot parcial</code> e <code>No-Go temporário</code>;</li>
+<li>mínimo de 200 respostas válidas para decisão inicial;</li>
+<li>meta preferencial de 500 respostas válidas.</li>
 </ul>
 </article>
 </div>
