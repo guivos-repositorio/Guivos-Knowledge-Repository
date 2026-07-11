@@ -2,6 +2,22 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.29.0 — Guivos Market Validation System
+
+- Criação do domínio `docs/research/market-validation/`.
+- Criação do `VAL-001 — Framework de Validação de Mercado da Guivos`.
+- Criação do `VAL-002 — Pesquisa Oficial da Guivos`.
+- Criação do `VAL-003 — Guia do Entrevistador`.
+- Criação do `VAL-004 — Modelo de Consolidação e Análise`.
+- Criação do `VAL-005 — Plano de Amostragem`.
+- Criação do `VAL-006 — Dashboard de Indicadores de Validação`.
+- Criação do `VAL-007 — Critérios de Decisão da Validação`.
+- Criação do `VAL-008 — Sinais Comportamentais na Validação`.
+- Registro do Princípio da Evidência de Mercado.
+- Definição das hipóteses iniciais B2C, indicadores, metas e critérios Go, Go com ajustes, Pivot parcial e No-Go temporário.
+- Inclusão da nova seção de Validação de Mercado na navegação do MkDocs.
+- Preservação da Capacidade 02 — Contexto Vivo como ponto de retomada do Product Engineering após a pausa de validação.
+
 ## 0.28.9 — GKR and GOG Consistency Review
 
 - Criação e conclusão de `AR-001 — GKR and GOG Consistency and Diagram Review`, versão `0.5.0`.
