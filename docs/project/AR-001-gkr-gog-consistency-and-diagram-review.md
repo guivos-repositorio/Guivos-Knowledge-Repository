@@ -2,7 +2,7 @@
 id: AR-001
 title: GKR and GOG Consistency and Diagram Review
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-07-11
 scope: conceptual consistency, document synchronization, editorial quality and diagrams
@@ -54,73 +54,83 @@ A revisão não promove novos conceitos. Seu objetivo é alinhar o que já foi c
 
 Um diagrama deve ser criado ou revisado quando reduzir significativamente o esforço de compreensão, esclarecer responsabilidades ou revelar relações que o texto isolado deixa ambíguas.
 
-## 4. Achados iniciais
+## 4. Achados e estado de tratamento
 
-| ID | Documento | Achado | Severidade | Tratamento proposto |
+| ID | Documento | Achado | Severidade | Estado |
 |---|---|---|---|---|
-| AR-001-F01 | GOG / Foundation | A missão pública não reproduz a missão operacional oficial. O GOG inclui “experiências, conexões e conhecimento”, enquanto a Foundation define “oportunidades mais relevantes para seu momento de vida”. | Alta | Restaurar a formulação oficial no bloco institucional e, se necessário, manter a ampliação em parágrafo explicativo separado. |
-| AR-001-F02 | GOG / Foundation | A visão pública omite “de referência”, substitui a formulação “Tornar a Guivos” por “Tornar-se” e utiliza “comunidades” onde a Foundation adota “coletivos”. | Alta | Sincronizar literalmente a visão oficial e explicar publicamente o alcance quando necessário. |
-| AR-001-F03 | GLPA / PAS | A GLPA ainda registra “perfil do participante” e “feed” como responsabilidades da Experience Layer. O PAS evoluiu para Contexto Vivo e rejeita a redução do Journey a um feed. | Alta | Substituir por “visão do contexto do participante” e “superfície principal de experiência”, preservando feed apenas como possibilidade de interface, não como responsabilidade permanente. |
-| AR-001-F04 | GIA / Roadmap | A GIA afirma que a futura GPMA depende do Architecture Engineering Sprint. O foco vigente foi alterado para Product Engineering e o sprint de meta-arquitetura deixou de ser atividade imediata. | Média | Atualizar a condição para validação prática suficiente no PAS e futura decisão arquitetural formal. |
-| AR-001-F05 | Glossário / PAS | O Glossário Canônico ainda não contém Contexto Vivo, Interpretação do Contexto, Oportunidade Ativa, Intervenção Contextual, Representação Humilde, Product Engineering e o novo significado de capacidade funcional. | Alta | Atualizar o glossário sem promover LPM, CIE ou outros candidatos à Canon. |
-| AR-001-F06 | Glossário | “Capacidade” está definida apenas como competência arquitetural de participante, enquanto o PAS passou a usar “capacidade funcional de produto”. | Alta | Criar distinção explícita entre Capacidade do Participante, Capacidade Arquitetural e Capacidade Funcional de Produto. |
-| AR-001-F07 | GOG / GLPA | O diagrama público de estrutura não apresenta a Platform Layer e pode sugerir que Intelligence e soluções se relacionam apenas por meio de Journey. | Média | Redesenhar o diagrama público para mostrar Experience, Intelligence e Soluções como naturezas integradas, sustentadas por uma base de plataforma não pública. |
-| AR-001-F08 | GOG | O Guia não possui um diagrama específico para a primeira compreensão: expressão por voz/texto → interpretação → reflexão → confirmação → primeiro valor. | Média | Adicionar diagrama público simples na seção de contexto. |
-| AR-001-F09 | PAS | O PAS possui fluxos em blocos de texto, mas ainda carece de diagramas Mermaid para Captura de Contexto, Ciclo Cognitivo e Contexto Vivo. | Média | Inserir diagramas funcionais sem antecipar arquitetura técnica. |
-| AR-001-F10 | GOG | O Guia usa corretamente linguagem futura em vários trechos, mas o status `public-canon` pode ser confundido com produto já lançado. | Baixa | Acrescentar explicação visível de que Public Canon significa narrativa institucional oficial, não disponibilidade comercial. |
-| AR-001-F11 | GOG | A seção “Como a Guivos funcionará na prática” não mostra explicitamente a etapa de reflexão da compreensão antes da confirmação, embora ela esteja consolidada no PAS. | Média | Inserir “a Guivos apresenta o que compreendeu” antes de revisão/correção. |
-| AR-001-F12 | GOG / PAS | O GOG fala em “oportunidades relevantes”; o PAS distingue internamente Oportunidade de Oportunidade Ativa. A simplificação pública é adequada, mas precisa permanecer explicitamente documentada como decisão editorial. | Baixa | Manter linguagem pública simples e registrar o mapeamento no GPD/Glossário. |
+| AR-001-F01 | GOG / Foundation | Missão pública não reproduzia a missão operacional oficial. | Alta | **Resolvido no GOG 4.2.0** |
+| AR-001-F02 | GOG / Foundation | Visão pública divergia da formulação oficial e utilizava “comunidades” no lugar de “coletivos”. | Alta | **Resolvido no GOG 4.2.0** |
+| AR-001-F03 | GLPA / PAS | GLPA ainda registra “perfil do participante” e “feed” como responsabilidades permanentes. | Alta | Pendente — Etapa 2 |
+| AR-001-F04 | GIA / Roadmap | GIA mantém dependência desatualizada do Architecture Engineering Sprint. | Média | Pendente — Etapa 3 |
+| AR-001-F05 | Glossário / PAS | Glossário não contém conceitos funcionais vigentes do PAS. | Alta | Pendente — Etapa 3 |
+| AR-001-F06 | Glossário | “Capacidade” não distingue competência de participante, capacidade arquitetural e capacidade funcional de produto. | Alta | Pendente — Etapa 3 |
+| AR-001-F07 | GOG / GLPA | Diagrama público não apresentava Platform Layer e relações transversais completas. | Média | **Resolvido no GOG 4.2.0** |
+| AR-001-F08 | GOG | Ausência de diagrama da primeira compreensão. | Média | **Resolvido no GOG 4.2.0** |
+| AR-001-F09 | PAS | Faltam diagramas Mermaid de Captura de Contexto, Ciclo Cognitivo e Contexto Vivo. | Média | Pendente — Etapa 2 |
+| AR-001-F10 | GOG | Public Canon poderia ser confundido com produto lançado. | Baixa | **Resolvido no GOG 4.2.0** |
+| AR-001-F11 | GOG | Fluxo prático não explicitava reflexão da compreensão antes da confirmação. | Média | **Resolvido no GOG 4.2.0** |
+| AR-001-F12 | GOG / PAS | GOG usa linguagem pública “oportunidades relevantes”; PAS usa internamente “Oportunidade Ativa”. | Baixa | Mantido por decisão editorial; registrar no Glossário/GPD |
 
-## 5. Diagramas existentes — avaliação inicial
+## 5. Diagramas existentes — avaliação
 
-| Diagrama | Documento | Estado inicial | Observação |
-|---|---|---|---|
-| Ciclo Contínuo de Evolução | GOG | Manter com revisão | O ciclo está coerente, mas deve ser comparado com o fluxo funcional central do PAS. |
-| Estrutura pública da Guivos | GOG | Revisar | Relações entre camadas e ausência da Platform Layer podem induzir interpretação incompleta. |
-| Arquitetura em camadas | GLPA | Manter com refinamento | Estrutura correta; revisar termos Graph/Grafo, perfil e feed. |
-| Ciclo Cognitivo | PAS | Converter para Mermaid | Atualmente expresso como bloco textual. |
-| Captura de Contexto | PAS | Criar | Necessário para compreensão e futura execução por UX e Produto. |
-| Contexto Vivo | PAS | Criar | Deve representar entradas, interpretação, confirmação, dimensões, atualização e uso. |
-| Meu Contexto Hoje | PAS/GOG | Avaliar | Pode ser representado como diagrama conceitual, não mockup de tela. |
+| Diagrama | Documento | Estado |
+|---|---|---|
+| Ciclo Contínuo de Evolução | GOG | Revisado no GOG 4.2.0 |
+| Estrutura pública da Guivos | GOG | Revisado no GOG 4.2.0 |
+| Primeira compreensão | GOG | Criado no GOG 4.2.0 |
+| Funcionamento prático | GOG | Criado no GOG 4.2.0 |
+| Arquitetura em camadas | GLPA | Pendente de refinamento terminológico |
+| Ciclo Cognitivo | PAS | Pendente de conversão para Mermaid |
+| Captura de Contexto | PAS | Pendente de diagrama funcional |
+| Contexto Vivo | PAS | Pendente de diagrama funcional |
+| Meu Contexto Hoje | PAS/GOG | Avaliar após consolidação da Capacidade 02 |
 
-## 6. Ordem de execução
+## 6. Etapa 1 — GOG e Foundation
 
-### Etapa 1 — GOG e Foundation
+**Estado:** concluída em 11/07/2026.
 
-1. alinhar propósito, missão e visão;
-2. revisar terminologia pública;
-3. revisar fluxo prático;
-4. revisar e adicionar diagramas públicos;
-5. esclarecer o significado de Public Canon.
+### Alterações executadas
 
-### Etapa 2 — PAS e GLPA
+- missão sincronizada literalmente com `GEB-P01-F03`;
+- visão sincronizada literalmente com `GEB-P01-F04`;
+- propósito mantido conforme `GEB-P01-F02`;
+- explicação de `Public Canon` adicionada;
+- Momento Atual reforçado como contexto presente, não cadastro fixo;
+- reflexão da compreensão inserida antes da confirmação;
+- diagrama da primeira compreensão criado;
+- Ciclo Contínuo revisado;
+- diagrama da estrutura pública revisado com Platform Layer;
+- diagrama do funcionamento prático criado;
+- histórico atualizado para `GOG-001 4.2.0`.
 
-1. alinhar Contexto Vivo, perfil e superfície de experiência;
-2. revisar responsabilidades das camadas;
-3. adicionar diagramas Mermaid funcionais;
-4. validar limites entre Journey, Intelligence, serviços e plataforma.
+## 7. Etapa 2 — PAS e GLPA
 
-### Etapa 3 — GIA e Glossário
+Próximas ações:
+
+1. substituir “perfil do participante” por visão contextual do participante;
+2. substituir “feed” como responsabilidade permanente por superfície principal de experiência;
+3. revisar limites entre Experience, Intelligence, Service e Platform Layers;
+4. adicionar Mermaid para Captura de Contexto;
+5. converter Ciclo Cognitivo para Mermaid;
+6. adicionar Mermaid para Contexto Vivo;
+7. verificar compatibilidade entre o fluxo do PAS e o GOG 4.2.0.
+
+## 8. Etapa 3 — GIA e Glossário
 
 1. remover dependências metodológicas desatualizadas;
 2. atualizar conceitos vigentes;
 3. distinguir tipos de capacidade;
-4. preservar candidatos fora da Canon.
+4. preservar candidatos fora da Canon;
+5. registrar o mapeamento entre linguagem pública e interna.
 
-### Etapa 4 — Documentos de estado
+## 9. Etapa 4 — Documentos de estado
 
 Sincronizar Roadmap, Knowledge Board, Milestones, README, GPD, Changelog e navegação somente após as correções conceituais principais.
 
-## 7. Regra de alteração
+## 10. Regra de alteração
 
-Nenhuma correção será realizada apenas por preferência editorial. Cada alteração deverá estar ligada a:
+Nenhuma correção será realizada apenas por preferência editorial. Cada alteração deverá estar ligada a divergência demonstrável, desatualização de estado, ambiguidade relevante, lacuna de compreensão ou necessidade clara de rastreabilidade.
 
-- uma divergência demonstrável;
-- uma desatualização de estado;
-- uma ambiguidade relevante;
-- uma lacuna de compreensão;
-- ou uma necessidade clara de rastreabilidade.
+## 11. Ponto de retomada
 
-## 8. Ponto de retomada
-
-Iniciar pela **Etapa 1 — GOG e Foundation**, corrigindo primeiro Missão e Visão, depois revisando o fluxo público de compreensão do contexto e os diagramas associados.
+Iniciar a **Etapa 2 — PAS e GLPA**, corrigindo terminologia e responsabilidades da GLPA e adicionando os três diagramas funcionais prioritários ao PAS.
