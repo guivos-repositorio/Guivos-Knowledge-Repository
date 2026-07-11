@@ -920,32 +920,32 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#8-regras-de-responsabilidade">
+<a class="md-nav__link" href="#8-limites-entre-as-camadas">
 <span class="md-ellipsis">
       
-        8. Regras de responsabilidade
+        8. Limites entre as camadas
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#9-exemplos-de-decisao-funcional">
+<a class="md-nav__link" href="#9-regras-de-responsabilidade">
 <span class="md-ellipsis">
       
-        9. Exemplos de decisão funcional
+        9. Regras de responsabilidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#10-organizacao-publica-sugerida">
+<a class="md-nav__link" href="#10-organizacao-publica">
 <span class="md-ellipsis">
       
-        10. Organização pública sugerida
+        10. Organização pública
       
     </span>
 </a>
-<nav aria-label="10. Organização pública sugerida" class="md-nav">
+<nav aria-label="10. Organização pública" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#experiencia">
@@ -966,10 +966,19 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#solucoes">
+<a class="md-nav__link" href="#solucoes-especializadas">
 <span class="md-ellipsis">
       
-        Soluções
+        Soluções especializadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-comum">
+<span class="md-ellipsis">
+      
+        Base comum
       
     </span>
 </a>
@@ -978,10 +987,10 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#11-relacao-com-a-arquitetura-de-produtos">
+<a class="md-nav__link" href="#11-relacao-com-o-pas-001">
 <span class="md-ellipsis">
       
-        11. Relação com a Arquitetura de Produtos
+        11. Relação com o PAS-001
       
     </span>
 </a>
@@ -2047,32 +2056,32 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#8-regras-de-responsabilidade">
+<a class="md-nav__link" href="#8-limites-entre-as-camadas">
 <span class="md-ellipsis">
       
-        8. Regras de responsabilidade
+        8. Limites entre as camadas
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#9-exemplos-de-decisao-funcional">
+<a class="md-nav__link" href="#9-regras-de-responsabilidade">
 <span class="md-ellipsis">
       
-        9. Exemplos de decisão funcional
+        9. Regras de responsabilidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#10-organizacao-publica-sugerida">
+<a class="md-nav__link" href="#10-organizacao-publica">
 <span class="md-ellipsis">
       
-        10. Organização pública sugerida
+        10. Organização pública
       
     </span>
 </a>
-<nav aria-label="10. Organização pública sugerida" class="md-nav">
+<nav aria-label="10. Organização pública" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#experiencia">
@@ -2093,10 +2102,19 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#solucoes">
+<a class="md-nav__link" href="#solucoes-especializadas">
 <span class="md-ellipsis">
       
-        Soluções
+        Soluções especializadas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-comum">
+<span class="md-ellipsis">
+      
+        Base comum
       
     </span>
 </a>
@@ -2105,10 +2123,10 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#11-relacao-com-a-arquitetura-de-produtos">
+<a class="md-nav__link" href="#11-relacao-com-o-pas-001">
 <span class="md-ellipsis">
       
-        11. Relação com a Arquitetura de Produtos
+        11. Relação com o PAS-001
       
     </span>
 </a>
@@ -2147,55 +2165,92 @@
 <p>Seu objetivo é evitar a interpretação de que todos os componentes da Guivos possuem a mesma natureza funcional.</p>
 <p>A GLPA estabelece que o ecossistema não é apenas uma lista horizontal de produtos, mas uma arquitetura integrada composta por experiência, inteligência, serviços especializados e plataforma comum.</p>
 <h2 id="2-decisao-estrutural">2. Decisão estrutural<a class="headerlink" href="#2-decisao-estrutural" title="Permanent link">¶</a></h2>
-<p>A estrutura institucional de apresentação da Guivos pode listar Journey, Mall, Business, Travel, Media, Intelligence e Ads como componentes oficiais.</p>
-<p>Entretanto, para fins de construção, operação e evolução funcional da plataforma, esses componentes devem ser organizados por camadas.</p>
+<p>A estrutura institucional pode apresentar Journey, Mall, Business, Travel, Media, Intelligence e Ads como componentes oficiais.</p>
+<p>Para fins de construção, operação e evolução, esses componentes são organizados por camadas.</p>
 <h2 id="3-arquitetura-em-camadas">3. Arquitetura em camadas<a class="headerlink" href="#3-arquitetura-em-camadas" title="Permanent link">¶</a></h2>
-<pre class="mermaid"><code>graph TD
-    G[Guivos]
+<pre class="mermaid"><code>flowchart TD
+    P[Pessoas, Organizações e Coletivos]
+    EL[Experience Layer]
+    J[Guivos Journey]
+    IL[Intelligence Layer]
+    I[Guivos Intelligence]
+    SL[Service Layer]
+    B[Guivos Business]
+    M[Guivos Mall]
+    T[Guivos Travel]
+    MD[Guivos Media]
+    A[Guivos Ads]
+    PL[Platform Layer]
+    API[APIs e integrações]
+    AUTH[Identidade, autenticação e autorização]
+    DATA[Dados, busca e armazenamento]
+    BILL[Billing e pagamentos compartilhados]
+    NOTIF[Notificações e mensageria]
+    SEC[Segurança, privacidade e observabilidade]
+    GRAPH[Implementação técnica futura do Grafo Global]
 
-    G --&gt; EL[Experience Layer]
-    EL --&gt; J[Guivos Journey]
+    P --&gt; EL
+    EL --&gt; J
+    J &lt;--&gt; I
+    J &lt;--&gt; B
+    J &lt;--&gt; M
+    J &lt;--&gt; T
+    J &lt;--&gt; MD
+    J &lt;--&gt; A
 
-    G --&gt; IL[Intelligence Layer]
-    IL --&gt; I[Guivos Intelligence]
+    IL --&gt; I
+    I &lt;--&gt; B
+    I &lt;--&gt; M
+    I &lt;--&gt; T
+    I &lt;--&gt; MD
+    I &lt;--&gt; A
 
-    G --&gt; SL[Service Layer]
-    SL --&gt; B[Guivos Business]
-    SL --&gt; M[Guivos Mall]
-    SL --&gt; T[Guivos Travel]
-    SL --&gt; MD[Guivos Media]
-    SL --&gt; A[Guivos Ads]
+    SL --&gt; B
+    SL --&gt; M
+    SL --&gt; T
+    SL --&gt; MD
+    SL --&gt; A
 
-    G --&gt; PL[Platform Layer]
-    PL --&gt; API[APIs]
-    PL --&gt; GR[Graph]
-    PL --&gt; AUTH[Auth]
-    PL --&gt; BILL[Billing]
-    PL --&gt; SEARCH[Search]
-    PL --&gt; NOTIF[Notifications]
-    PL --&gt; SEC[Security]
+    PL --&gt; J
+    PL --&gt; I
+    PL --&gt; B
+    PL --&gt; M
+    PL --&gt; T
+    PL --&gt; MD
+    PL --&gt; A
+
+    PL --&gt; API
+    PL --&gt; AUTH
+    PL --&gt; DATA
+    PL --&gt; BILL
+    PL --&gt; NOTIF
+    PL --&gt; SEC
+    PL --&gt; GRAPH
 </code></pre>
+<p>O diagrama representa responsabilidades funcionais, não topologia técnica definitiva nem dependência obrigatória entre microserviços.</p>
 <h2 id="4-experience-layer">4. Experience Layer<a class="headerlink" href="#4-experience-layer" title="Permanent link">¶</a></h2>
-<p>A Experience Layer é a camada responsável pela experiência unificada do participante.</p>
-<p>Ela organiza como a pessoa acessa, percebe e utiliza o Ecossistema Guivos.</p>
+<p>A Experience Layer é responsável pela experiência unificada do participante.</p>
+<p>Ela organiza como Pessoas, Organizações e Coletivos acessam, compreendem e utilizam o Ecossistema Guivos.</p>
 <h3 id="componente-principal">Componente principal<a class="headerlink" href="#componente-principal" title="Permanent link">¶</a></h3>
 <ul>
 <li>Guivos Journey.</li>
 </ul>
 <h3 id="responsabilidades">Responsabilidades<a class="headerlink" href="#responsabilidades" title="Permanent link">¶</a></h3>
 <ul>
-<li>experiência do usuário;</li>
-<li>jornadas;</li>
-<li>objetivos;</li>
-<li>descoberta;</li>
-<li>recomendações visíveis;</li>
-<li>feed ou superfície principal de interação;</li>
-<li>perfil do participante;</li>
+<li>experiência unificada do participante;</li>
+<li>superfície principal de experiência;</li>
+<li>organização das jornadas;</li>
+<li>objetivos e Próximos Passos;</li>
+<li>descoberta contextual;</li>
+<li>apresentação de recomendações e oportunidades;</li>
+<li>visão autorizada do contexto do participante;</li>
 <li>acompanhamento da evolução;</li>
-<li>gamificação;</li>
-<li>comunicação direta com o usuário.</li>
+<li>comunicação e intervenções visíveis;</li>
+<li>gamificação e incentivos apresentados ao participante;</li>
+<li>orquestração experiencial das capacidades das demais camadas.</li>
 </ul>
-<p>O Journey não executa todas as capacidades do ecossistema. Ele orquestra a experiência visível que integra capacidades fornecidas pelas demais camadas.</p>
+<p>A Experience Layer não possui como responsabilidade permanente um formato específico de interface. Feed, conversa, mapa, painel ou outras superfícies podem ser utilizados quando adequados, mas nenhum deles define o Journey.</p>
+<p>A expressão <code>perfil do participante</code> deixa de ser usada como responsabilidade arquitetural. A formulação vigente é <code>visão autorizada do contexto do participante</code>, coerente com o Contexto Vivo do PAS-001.</p>
 <h2 id="5-intelligence-layer">5. Intelligence Layer<a class="headerlink" href="#5-intelligence-layer" title="Permanent link">¶</a></h2>
 <p>A Intelligence Layer é a camada transversal responsável pela interpretação contextual e pela inteligência aplicada ao ecossistema.</p>
 <h3 id="componente-principal_1">Componente principal<a class="headerlink" href="#componente-principal_1" title="Permanent link">¶</a></h3>
@@ -2204,15 +2259,17 @@
 </ul>
 <h3 id="responsabilidades_1">Responsabilidades<a class="headerlink" href="#responsabilidades_1" title="Permanent link">¶</a></h3>
 <ul>
-<li>interpretação de contexto;</li>
-<li>recomendações;</li>
-<li>personalização;</li>
-<li>aprendizagem com evidências autorizadas;</li>
-<li>apoio a decisões;</li>
-<li>inteligência aplicada para produtos, organizações e participantes;</li>
-<li>relacionamento com o Grafo Global da Guivos.</li>
+<li>interpretar entradas e sinais autorizados;</li>
+<li>apoiar a construção de compreensão contextual;</li>
+<li>recomendar e priorizar possibilidades;</li>
+<li>personalizar experiências;</li>
+<li>aprender com resultados e evidências autorizadas;</li>
+<li>apoiar decisões sem substituir a autonomia humana;</li>
+<li>fornecer inteligência para Journey e serviços especializados;</li>
+<li>relacionar conhecimento e contexto ao Grafo Global da Guivos.</li>
 </ul>
-<p>A Intelligence Layer não pertence ao Journey. Ela serve toda a Guivos.</p>
+<p>A Intelligence Layer não pertence ao Journey. Ela serve todo o ecossistema.</p>
+<p>A Intelligence propõe interpretações, recomendações e atualizações. A Experience Layer decide como essas capacidades são apresentadas e controladas pelo participante.</p>
 <h2 id="6-service-layer">6. Service Layer<a class="headerlink" href="#6-service-layer" title="Permanent link">¶</a></h2>
 <p>A Service Layer concentra os produtos especializados que entregam capacidades específicas do ecossistema.</p>
 <h3 id="componentes-principais">Componentes principais<a class="headerlink" href="#componentes-principais" title="Permanent link">¶</a></h3>
@@ -2228,17 +2285,17 @@
 <thead>
 <tr>
 <th>Componente</th>
-<th>Responsabilidade</th>
+<th>Responsabilidade predominante</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Guivos Business</td>
-<td>Relação com organizações, oportunidades institucionais, soluções B2B e programas corporativos</td>
+<td>Relações com organizações, oportunidades institucionais, soluções B2B e programas corporativos</td>
 </tr>
 <tr>
 <td>Guivos Mall</td>
-<td>Produtos, serviços, compras, assinaturas, gift cards, pagamentos e ativos comerciais</td>
+<td>Produtos, serviços, compras, assinaturas, gift cards, pagamentos comerciais e ativos transacionáveis</td>
 </tr>
 <tr>
 <td>Guivos Travel</td>
@@ -2250,88 +2307,90 @@
 </tr>
 <tr>
 <td>Guivos Ads</td>
-<td>Publicidade, patrocínios, campanhas, mídia paga e ativações comerciais</td>
+<td>Publicidade, patrocínios, campanhas, mídia paga e ativações comerciais responsáveis</td>
 </tr>
 </tbody>
 </table>
+<p>Os serviços especializados podem utilizar Intelligence e Platform diretamente conforme sua responsabilidade. O Journey não é intermediário técnico obrigatório para todas as relações entre camadas.</p>
 <h2 id="7-platform-layer">7. Platform Layer<a class="headerlink" href="#7-platform-layer" title="Permanent link">¶</a></h2>
-<p>A Platform Layer reúne capacidades comuns utilizadas pelas demais camadas.</p>
+<p>A Platform Layer reúne capacidades técnicas e operacionais comuns utilizadas pelas demais camadas.</p>
 <h3 id="responsabilidades_3">Responsabilidades<a class="headerlink" href="#responsabilidades_3" title="Permanent link">¶</a></h3>
 <ul>
-<li>APIs;</li>
-<li>autenticação;</li>
-<li>autorização;</li>
-<li>billing;</li>
-<li>pagamentos;</li>
+<li>APIs e integrações;</li>
+<li>identidade, autenticação e autorização;</li>
+<li>billing e capacidades compartilhadas de pagamento;</li>
 <li>busca;</li>
-<li>notificações;</li>
+<li>notificações e mensageria;</li>
 <li>infraestrutura de dados;</li>
-<li>segurança;</li>
-<li>privacidade;</li>
-<li>logs;</li>
-<li>integrações;</li>
-<li>observabilidade;</li>
+<li>segurança e privacidade;</li>
+<li>logs, auditoria e observabilidade;</li>
 <li>armazenamento;</li>
-<li>recursos compartilhados de IA;</li>
-<li>Grafo Global em sua implementação técnica futura.</li>
+<li>recursos técnicos compartilhados;</li>
+<li>implementação técnica futura do Grafo Global.</li>
 </ul>
-<p>Essa camada não representa um produto público, mas a base técnica e operacional que sustenta todos os componentes da Guivos.</p>
-<h2 id="8-regras-de-responsabilidade">8. Regras de responsabilidade<a class="headerlink" href="#8-regras-de-responsabilidade" title="Permanent link">¶</a></h2>
-<ol>
-<li>O que pertence à experiência visível do participante pertence à Experience Layer.</li>
-<li>O que interpreta contexto, recomenda, aprende ou personaliza pertence à Intelligence Layer.</li>
-<li>O que entrega uma capacidade especializada de negócio pertence à Service Layer.</li>
-<li>O que é infraestrutura comum pertence à Platform Layer.</li>
-<li>Nenhuma camada deve assumir responsabilidades permanentes de outra camada.</li>
-<li>Sobreposições devem ser resolvidas pela responsabilidade predominante.</li>
-<li>O Journey deve orquestrar a experiência sem absorver a execução integral dos serviços especializados.</li>
-<li>A Intelligence deve apoiar todo o ecossistema, não apenas o Journey.</li>
-</ol>
-<h2 id="9-exemplos-de-decisao-funcional">9. Exemplos de decisão funcional<a class="headerlink" href="#9-exemplos-de-decisao-funcional" title="Permanent link">¶</a></h2>
+<p>A Platform Layer não representa produto público independente. Ela sustenta os componentes oficiais sem definir sua experiência ou sua lógica de negócio especializada.</p>
+<h2 id="8-limites-entre-as-camadas">8. Limites entre as camadas<a class="headerlink" href="#8-limites-entre-as-camadas" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
 <th>Pergunta</th>
-<th>Camada responsável</th>
+<th>Responsabilidade predominante</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Onde fica a tela de recomendações?</td>
+<td>Onde o participante visualiza uma recomendação?</td>
 <td>Experience Layer / Journey</td>
 </tr>
 <tr>
-<td>Onde fica o algoritmo de recomendação?</td>
+<td>Onde contexto é interpretado e a recomendação é calculada?</td>
 <td>Intelligence Layer / Intelligence</td>
 </tr>
 <tr>
-<td>Onde fica uma compra?</td>
+<td>Onde o participante revisa e controla a compreensão apresentada?</td>
+<td>Experience Layer / Journey</td>
+</tr>
+<tr>
+<td>Onde a compra de um produto é executada?</td>
 <td>Service Layer / Mall</td>
 </tr>
 <tr>
-<td>Onde fica o cadastro de empresas?</td>
+<td>Onde relações e programas B2B são administrados?</td>
 <td>Service Layer / Business</td>
 </tr>
 <tr>
-<td>Onde fica uma campanha patrocinada?</td>
+<td>Onde uma campanha patrocinada é operada?</td>
 <td>Service Layer / Ads</td>
 </tr>
 <tr>
-<td>Onde fica um artigo ou história?</td>
+<td>Onde conteúdo editorial é produzido e governado?</td>
 <td>Service Layer / Media</td>
 </tr>
 <tr>
-<td>Onde fica uma reserva de viagem?</td>
+<td>Onde uma reserva de viagem é executada?</td>
 <td>Service Layer / Travel</td>
 </tr>
 <tr>
-<td>Onde ficam login, billing e notificações?</td>
+<td>Onde ficam identidade, APIs, segurança e observabilidade comuns?</td>
 <td>Platform Layer</td>
 </tr>
 </tbody>
 </table>
-<h2 id="10-organizacao-publica-sugerida">10. Organização pública sugerida<a class="headerlink" href="#10-organizacao-publica-sugerida" title="Permanent link">¶</a></h2>
-<p>Para comunicação institucional, a Guivos poderá apresentar seus componentes por natureza:</p>
+<h2 id="9-regras-de-responsabilidade">9. Regras de responsabilidade<a class="headerlink" href="#9-regras-de-responsabilidade" title="Permanent link">¶</a></h2>
+<ol>
+<li>O que pertence à experiência visível e ao controle do participante pertence à Experience Layer.</li>
+<li>O que interpreta, recomenda, aprende ou personaliza pertence à Intelligence Layer.</li>
+<li>O que entrega uma capacidade especializada de negócio pertence à Service Layer.</li>
+<li>O que é infraestrutura comum pertence à Platform Layer.</li>
+<li>Nenhuma camada deve assumir responsabilidade permanente de outra.</li>
+<li>Sobreposições devem ser resolvidas pela responsabilidade predominante.</li>
+<li>O Journey orquestra a experiência sem absorver a execução integral dos serviços especializados.</li>
+<li>A Intelligence apoia todo o ecossistema, não apenas o Journey.</li>
+<li>Os serviços especializados podem consumir capacidades de Intelligence e Platform sem depender de mediação técnica do Journey.</li>
+<li>Diagramas da GLPA representam organização funcional e não prescrevem arquitetura técnica definitiva.</li>
+</ol>
+<h2 id="10-organizacao-publica">10. Organização pública<a class="headerlink" href="#10-organizacao-publica" title="Permanent link">¶</a></h2>
+<p>Para comunicação institucional, a Guivos apresenta:</p>
 <h3 id="experiencia">Experiência<a class="headerlink" href="#experiencia" title="Permanent link">¶</a></h3>
 <ul>
 <li>Guivos Journey.</li>
@@ -2340,7 +2399,7 @@
 <ul>
 <li>Guivos Intelligence.</li>
 </ul>
-<h3 id="solucoes">Soluções<a class="headerlink" href="#solucoes" title="Permanent link">¶</a></h3>
+<h3 id="solucoes-especializadas">Soluções especializadas<a class="headerlink" href="#solucoes-especializadas" title="Permanent link">¶</a></h3>
 <ul>
 <li>Guivos Business;</li>
 <li>Guivos Mall;</li>
@@ -2348,25 +2407,29 @@
 <li>Guivos Media;</li>
 <li>Guivos Ads.</li>
 </ul>
-<p>Essa organização evita tratar componentes de naturezas diferentes como produtos equivalentes.</p>
-<h2 id="11-relacao-com-a-arquitetura-de-produtos">11. Relação com a Arquitetura de Produtos<a class="headerlink" href="#11-relacao-com-a-arquitetura-de-produtos" title="Permanent link">¶</a></h2>
-<p>A GLPA complementa a Arquitetura de Produtos da Guivos.</p>
-<p>A Arquitetura de Produtos registra os componentes oficiais do ecossistema.</p>
-<p>A GLPA registra como esses componentes são organizados funcionalmente para construção, operação e evolução da plataforma.</p>
+<h3 id="base-comum">Base comum<a class="headerlink" href="#base-comum" title="Permanent link">¶</a></h3>
+<ul>
+<li>Platform Layer, apresentada apenas quando necessário para explicar a sustentação do ecossistema.</li>
+</ul>
+<h2 id="11-relacao-com-o-pas-001">11. Relação com o PAS-001<a class="headerlink" href="#11-relacao-com-o-pas-001" title="Permanent link">¶</a></h2>
+<p>A GLPA define limites permanentes entre camadas.</p>
+<p>O PAS-001 detalha como o Guivos Journey cumpre suas responsabilidades na Experience Layer por meio de capacidades funcionais.</p>
+<p>O Contexto Vivo pertence ao PAS como responsabilidade experiencial de representação, visualização e controle. A interpretação algorítmica que o alimenta pertence à Intelligence Layer. Identidade, persistência, segurança e auditoria pertencem à Platform Layer.</p>
 <h2 id="12-ponto-de-aplicacao">12. Ponto de aplicação<a class="headerlink" href="#12-ponto-de-aplicacao" title="Permanent link">¶</a></h2>
-<p>A GLPA deverá orientar:</p>
+<p>A GLPA orienta:</p>
 <ul>
 <li><code>PAS-001 — Guivos Journey</code>;</li>
 <li>especificações futuras de Mall, Business, Travel, Media, Intelligence e Ads;</li>
 <li>arquitetura funcional da plataforma;</li>
 <li>organização de times;</li>
 <li>decisões de UX;</li>
-<li>limites entre produtos;</li>
+<li>contratos entre produtos;</li>
+<li>limites de responsabilidade;</li>
 <li>roadmap técnico futuro.</li>
 </ul>
 <h2 id="13-estado">13. Estado<a class="headerlink" href="#13-estado" title="Permanent link">¶</a></h2>
-<p>Esta arquitetura encontra-se aprovada como referência da fase de especificação funcional da Guivos.</p>
-<p>Ela poderá ser revisada quando novos produtos, capacidades ou necessidades técnicas demonstrarem limitações relevantes.</p>
+<p>Esta arquitetura permanece aprovada como referência da fase de Product Engineering.</p>
+<p>A versão 1.1.0 substitui terminologia legada de <code>perfil</code> e <code>feed</code> como responsabilidades permanentes, esclarece relações transversais e preserva a distinção entre arquitetura funcional e implementação técnica.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
