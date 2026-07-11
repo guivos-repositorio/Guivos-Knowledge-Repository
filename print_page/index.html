@@ -8849,189 +8849,240 @@ Implementação = realização progressiva
 </ol>
 <h2 id="reference-architecture-gccm-001-proximo-passo">Próximo passo<a class="headerlink" href="#reference-architecture-gccm-001-proximo-passo" title="Permanent link">&para;</a></h2>
 <p>Executar <code>A2-R01 — Foundation Architecture Review</code>, concluir a Foundation Evidence Matrix, deduplicar invariantes e responsabilidades e decidir o readiness da Foundation antes de avançar para o Modelo Fundamental.</p></section></section><section class="print-page" id="glossary" heading-number="7"><h1 id="glossary-glossario-canonico-da-guivos">Glossário Canônico da Guivos<a class="headerlink" href="#glossary-glossario-canonico-da-guivos" title="Permanent link">&para;</a></h1>
-<p>Este glossário estabelece o uso oficial dos principais termos da arquitetura da Guivos.</p>
+<p>Este glossário estabelece o uso oficial dos principais termos da arquitetura, dos produtos e da governança da Guivos.</p>
 <p>Quando documentos antigos utilizarem nomenclatura diferente, prevalece a definição registrada aqui, salvo decisão posterior formalmente consolidada no GKR.</p>
-<h2 id="glossary-participante">Participante<a class="headerlink" href="#glossary-participante" title="Permanent link">&para;</a></h2>
+<h2 id="glossary-1-participantes-e-relacoes">1. Participantes e relações<a class="headerlink" href="#glossary-1-participantes-e-relacoes" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-participante">Participante<a class="headerlink" href="#glossary-participante" title="Permanent link">&para;</a></h3>
 <p>Entidade capaz de atuar em uma jornada de evolução ou contribuir para a jornada de outros participantes.</p>
-<p>Categorias arquiteturais reconhecidas:</p>
-<ul>
-<li>Pessoa;</li>
-<li>Organização;</li>
-<li>Coletivo.</li>
-</ul>
+<p>Categorias arquiteturais reconhecidas: Pessoa, Organização e Coletivo.</p>
 <p><strong>Uso oficial:</strong> termo central da arquitetura.</p>
 <p><strong>Não confundir com:</strong> usuário, cliente, membro ou perfil.</p>
-<h2 id="glossary-pessoa">Pessoa<a class="headerlink" href="#glossary-pessoa" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-pessoa">Pessoa<a class="headerlink" href="#glossary-pessoa" title="Permanent link">&para;</a></h3>
 <p>Participante individual, autônomo e permanente no ecossistema.</p>
-<h2 id="glossary-organizacao">Organização<a class="headerlink" href="#glossary-organizacao" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-organizacao">Organização<a class="headerlink" href="#glossary-organizacao" title="Permanent link">&para;</a></h3>
 <p>Participante institucional que reúne pessoas, recursos, conhecimento e capacidades em torno de uma missão ou objetivo comum.</p>
-<h2 id="glossary-coletivo">Coletivo<a class="headerlink" href="#glossary-coletivo" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-coletivo">Coletivo<a class="headerlink" href="#glossary-coletivo" title="Permanent link">&para;</a></h3>
 <p>Participante formado pela associação de Pessoas e, quando aplicável, Organizações, em torno de um propósito compartilhado.</p>
 <p>Pode adotar denominações como movimento, grupo, clube, núcleo, rede, comunidade ou equipe.</p>
-<h2 id="glossary-comunidade">Comunidade<a class="headerlink" href="#glossary-comunidade" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-comunidade">Comunidade<a class="headerlink" href="#glossary-comunidade" title="Permanent link">&para;</a></h3>
 <p>Não é categoria arquitetural independente. Pode ser utilizada como denominação contextual de um Coletivo.</p>
 <p>O uso anterior de “Comunidade Guivos” como nome amplo de produto foi substituído por <strong>Guivos Journey</strong>.</p>
-<h2 id="glossary-guivos-journey">Guivos Journey<a class="headerlink" href="#glossary-guivos-journey" title="Permanent link">&para;</a></h2>
-<p>Camada principal de experiência do Ecossistema Guivos, responsável por orquestrar a experiência unificada do participante, apoiar sua jornada contínua e apresentar recomendações, oportunidades, objetivos, conteúdos e interações de forma contextual.</p>
-<p>Na GLPA, Guivos Journey pertence à <strong>Experience Layer</strong>.</p>
-<h2 id="glossary-pas-product-architecture-specification">PAS — Product Architecture Specification<a class="headerlink" href="#glossary-pas-product-architecture-specification" title="Permanent link">&para;</a></h2>
-<p>Formato de especificação de produto utilizado para descrever visão, filosofia, responsabilidades, arquitetura funcional, fluxos, inteligência, integrações, modelo econômico, KPIs e roadmap de um componente da Guivos.</p>
-<h2 id="glossary-pas-001-guivos-journey">PAS-001 — Guivos Journey<a class="headerlink" href="#glossary-pas-001-guivos-journey" title="Permanent link">&para;</a></h2>
-<p>Primeira Product Architecture Specification da Guivos, dedicada a especificar o Guivos Journey como camada principal de experiência do ecossistema.</p>
-<h2 id="glossary-glpa-guivos-layered-product-architecture">GLPA — Guivos Layered Product Architecture<a class="headerlink" href="#glossary-glpa-guivos-layered-product-architecture" title="Permanent link">&para;</a></h2>
-<p>Arquitetura funcional que organiza os componentes da Guivos por camadas de responsabilidade: Experience Layer, Intelligence Layer, Service Layer e Platform Layer.</p>
-<p>A GLPA complementa a Arquitetura de Produtos ao diferenciar a natureza funcional dos componentes oficiais.</p>
-<h2 id="glossary-experience-layer">Experience Layer<a class="headerlink" href="#glossary-experience-layer" title="Permanent link">&para;</a></h2>
-<p>Camada responsável pela experiência unificada do participante.</p>
-<p>Na Guivos, a Experience Layer é representada pelo Guivos Journey.</p>
-<h2 id="glossary-intelligence-layer">Intelligence Layer<a class="headerlink" href="#glossary-intelligence-layer" title="Permanent link">&para;</a></h2>
-<p>Camada transversal responsável pela interpretação contextual, recomendações, personalização, inteligência aplicada e aprendizagem do ecossistema.</p>
-<p>Na Guivos, a Intelligence Layer é representada pelo Guivos Intelligence.</p>
-<h2 id="glossary-service-layer">Service Layer<a class="headerlink" href="#glossary-service-layer" title="Permanent link">&para;</a></h2>
-<p>Camada responsável por capacidades especializadas do ecossistema.</p>
-<p>Na Guivos, inclui Guivos Business, Guivos Mall, Guivos Travel, Guivos Media e Guivos Ads.</p>
-<h2 id="glossary-platform-layer">Platform Layer<a class="headerlink" href="#glossary-platform-layer" title="Permanent link">&para;</a></h2>
-<p>Camada de capacidades técnicas comuns que sustentam os demais componentes, incluindo APIs, Graph, Auth, Billing, Search, Notifications, Security, dados e infraestrutura.</p>
-<h2 id="glossary-guivos-mall">Guivos Mall<a class="headerlink" href="#glossary-guivos-mall" title="Permanent link">&para;</a></h2>
-<p>Produto responsável pela oferta e comercialização de produtos, serviços, gift cards, assinaturas e outros ativos digitais ou físicos do Ecossistema Guivos.</p>
-<p>Funciona como o shopping do ecossistema, com curadoria e aderência às jornadas.</p>
-<p>Substitui <code>Guivos Marketplace</code> como nome oficial do produto comercial.</p>
-<h2 id="glossary-guivos-travel">Guivos Travel<a class="headerlink" href="#glossary-guivos-travel" title="Permanent link">&para;</a></h2>
-<p>Produto responsável por viagens e experiências relacionadas a deslocamento, destinos e turismo.</p>
-<p>Na GLPA, pertence à Service Layer.</p>
-<h2 id="glossary-guivos-business">Guivos Business<a class="headerlink" href="#glossary-guivos-business" title="Permanent link">&para;</a></h2>
-<p>Produto responsável pelas soluções da Guivos para empresas e demais organizações.</p>
-<p>Na GLPA, pertence à Service Layer.</p>
-<h2 id="glossary-guivos-media">Guivos Media<a class="headerlink" href="#glossary-guivos-media" title="Permanent link">&para;</a></h2>
-<p>Produto responsável pela produção, organização e distribuição de conteúdo editorial e institucional da Guivos.</p>
-<p>Substitui “Guivos Podcast” como nome de produto.</p>
-<p>Na GLPA, pertence à Service Layer.</p>
-<h2 id="glossary-guivos-intelligence">Guivos Intelligence<a class="headerlink" href="#glossary-guivos-intelligence" title="Permanent link">&para;</a></h2>
-<p>Componente responsável por entregar a <strong>Inteligência do Ecossistema Guivos</strong>.</p>
-<p>Na GLPA, Guivos Intelligence pertence à <strong>Intelligence Layer</strong> e atua de forma transversal para Journey, Mall, Business, Travel, Media e Ads.</p>
-<p>Substitui “Guivos Insights” como nome de produto.</p>
-<h2 id="glossary-inteligencia-do-ecossistema-guivos">Inteligência do Ecossistema Guivos<a class="headerlink" href="#glossary-inteligencia-do-ecossistema-guivos" title="Permanent link">&para;</a></h2>
-<p>Expressão conceitual e pública para a inteligência que interpreta dados, conhecimento, contexto, conexões, jornadas, experiências e evidências de todo o ecossistema.</p>
-<p>Não é apenas um chatbot, modelo de linguagem ou mecanismo de recomendação isolado.</p>
-<h2 id="glossary-grafo-global-da-guivos">Grafo Global da Guivos<a class="headerlink" href="#glossary-grafo-global-da-guivos" title="Permanent link">&para;</a></h2>
-<p>Modelo conceitual que organiza participantes, organizações, coletivos, objetivos, Momentos Atuais, Próximos Passos, oportunidades, experiências, conhecimentos, relacionamentos e evidências por meio de conexões contextuais e evolutivas.</p>
-<p>O grafo representa um patrimônio cumulativo do ecossistema. Sua ontologia formal, modelo lógico e implementação técnica ainda dependem de detalhamento e validação.</p>
-<h2 id="glossary-guivos-ads">Guivos Ads<a class="headerlink" href="#glossary-guivos-ads" title="Permanent link">&para;</a></h2>
-<p>Produto responsável por publicidade, mídia patrocinada e soluções para anunciantes dentro do Ecossistema Guivos.</p>
-<p>Na GLPA, pertence à Service Layer.</p>
-<h2 id="glossary-guivos-economic-model">Guivos Economic Model<a class="headerlink" href="#glossary-guivos-economic-model" title="Permanent link">&para;</a></h2>
-<p>Domínio planejado do GKR responsável por descrever princípios econômicos, fontes de receita, planos, incentivos, sustentabilidade financeira, limites de monetização e relações entre propósito, impacto e geração de valor.</p>
-<p>Seu princípio inicial estabelece que planos pagos podem acelerar, ampliar e personalizar jornadas, mas não devem bloquear a evolução de participantes gratuitos.</p>
-<h2 id="glossary-enterprise-design-business-specification">Enterprise Design &amp; Business Specification<a class="headerlink" href="#glossary-enterprise-design-business-specification" title="Permanent link">&para;</a></h2>
-<p>Frente de especificação executável da Guivos dedicada a transformar arquitetura institucional em decisões de produto, operação, modelo econômico, modelo comercial e Go-to-Market.</p>
-<h2 id="glossary-guivos-knowledge-architecture">Guivos Knowledge Architecture<a class="headerlink" href="#glossary-guivos-knowledge-architecture" title="Permanent link">&para;</a></h2>
-<p>Arquitetura responsável por governar como o conhecimento institucional da Guivos é descoberto, estruturado, validado, consolidado, promovido à Canon, revisado e evoluído.</p>
-<p>A GKA não determina o que é verdadeiro. Ela governa o processo de produção, validação e evolução do conhecimento institucional.</p>
-<h2 id="glossary-guivos-evolution-framework">Guivos Evolution Framework<a class="headerlink" href="#glossary-guivos-evolution-framework" title="Permanent link">&para;</a></h2>
-<p>Estrutura que registra as grandes eras de maturidade institucional da Guivos e explica como a organização evolui ao longo de sua história.</p>
-<h2 id="glossary-ge-1-foundation-architecture">GE-1 — Foundation &amp; Architecture<a class="headerlink" href="#glossary-ge-1-foundation-architecture" title="Permanent link">&para;</a></h2>
-<p>Primeira era de evolução institucional da Guivos, dedicada à estruturação das fundações, arquiteturas, produtos, guia público e Canon inicial.</p>
-<h2 id="glossary-ge-2-knowledge">GE-2 — Knowledge<a class="headerlink" href="#glossary-ge-2-knowledge" title="Permanent link">&para;</a></h2>
-<p>Segunda era de evolução institucional da Guivos, dedicada à produção sistemática de conhecimento institucional por meio da Guivos Knowledge Architecture.</p>
-<h2 id="glossary-institutional-writing">Institutional Writing<a class="headerlink" href="#glossary-institutional-writing" title="Permanent link">&para;</a></h2>
-<p>Modo de redação institucional em que um ativo arquitetural é escrito para consolidar conhecimento já suficientemente maduro, sem promover novas hipóteses automaticamente à Canon.</p>
-<h2 id="glossary-institutional-consolidation-mode">Institutional Consolidation Mode<a class="headerlink" href="#glossary-institutional-consolidation-mode" title="Permanent link">&para;</a></h2>
-<p>Modo de trabalho da GE-2 em que o foco deixa de ser descobrir novos conceitos e passa a ser institucionalizar, revisar e consolidar conhecimento já suficientemente maduro.</p>
-<h2 id="glossary-capitulo-institucional">Capítulo Institucional<a class="headerlink" href="#glossary-capitulo-institucional" title="Permanent link">&para;</a></h2>
-<p>Unidade documental completa de um ativo arquitetural, desenvolvida por planejamento, redação completa, revisão em cinco níveis, aprovação e atualização do GKR.</p>
-<h2 id="glossary-revisao-em-cinco-niveis">Revisão em Cinco Níveis<a class="headerlink" href="#glossary-revisao-em-cinco-niveis" title="Permanent link">&para;</a></h2>
-<p>Critério de revisão aplicado a capítulos institucionais, composto por Precisão Conceitual, Precisão Arquitetural, Precisão Editorial, Precisão Institucional e Precisão Sistêmica.</p>
-<h2 id="glossary-regra-da-pergunta-unica">Regra da Pergunta Única<a class="headerlink" href="#glossary-regra-da-pergunta-unica" title="Permanent link">&para;</a></h2>
-<p>Diretriz editorial segundo a qual cada seção de um documento arquitetural deve responder uma única pergunta arquitetural que nenhuma outra seção responde.</p>
-<h2 id="glossary-competencia-institucional">Competência Institucional<a class="headerlink" href="#glossary-competencia-institucional" title="Permanent link">&para;</a></h2>
-<p>Autoridade institucional atribuída a uma arquitetura sobre determinado fenômeno, ativo, critério ou mecanismo.</p>
-<p>Competência não é execução operacional.</p>
-<h2 id="glossary-responsabilidade-institucional">Responsabilidade Institucional<a class="headerlink" href="#glossary-responsabilidade-institucional" title="Permanent link">&para;</a></h2>
-<p>Dever permanente assumido por uma arquitetura perante a organização.</p>
-<p>Responsabilidade expressa pelo que a arquitetura responde, não apenas pelo que ela contém.</p>
-<h2 id="glossary-diretriz-institucional">Diretriz Institucional<a class="headerlink" href="#glossary-diretriz-institucional" title="Permanent link">&para;</a></h2>
-<p>Interpretação operacional de um princípio permanente, utilizada para orientar decisões institucionais sem descer ao nível de processo ou implementação.</p>
-<h2 id="glossary-conhecimento-definicional">Conhecimento Definicional<a class="headerlink" href="#glossary-conhecimento-definicional" title="Permanent link">&para;</a></h2>
-<p>Categoria de conhecimento institucional em investigação, relacionada à definição precisa de termos, conceitos e distinções arquiteturais.</p>
-<p>Permanece vinculada à hipótese <code>H-GKM-001</code> até validação metodológica futura.</p>
-<h2 id="glossary-conhecimento-normativo">Conhecimento Normativo<a class="headerlink" href="#glossary-conhecimento-normativo" title="Permanent link">&para;</a></h2>
-<p>Categoria de conhecimento institucional em investigação, relacionada a princípios, diretrizes, critérios e normas institucionais que orientam decisões permanentes.</p>
-<p>Permanece vinculada à hipótese <code>H-GKM-001</code> até validação metodológica futura.</p>
-<h2 id="glossary-conhecimento-explicativo">Conhecimento Explicativo<a class="headerlink" href="#glossary-conhecimento-explicativo" title="Permanent link">&para;</a></h2>
-<p>Categoria de conhecimento institucional em investigação, relacionada a modelos que buscam explicar fenômenos arquiteturais ou institucionais.</p>
-<p>Modelos explicativos exigem demonstração e validação mais rigorosas que definições conceituais isoladas.</p>
-<h2 id="glossary-governar">Governar<a class="headerlink" href="#glossary-governar" title="Permanent link">&para;</a></h2>
-<p>Exercer autoridade institucional sobre princípios, critérios, limites e evolução de determinado domínio arquitetural.</p>
-<h2 id="glossary-gerenciar">Gerenciar<a class="headerlink" href="#glossary-gerenciar" title="Permanent link">&para;</a></h2>
-<p>Conduzir atividades operacionais, recursos, rotinas ou fluxos dentro de processos definidos.</p>
-<h2 id="glossary-executar">Executar<a class="headerlink" href="#glossary-executar" title="Permanent link">&para;</a></h2>
-<p>Realizar ações concretas, tarefas ou implementações específicas.</p>
-<h2 id="glossary-principio-da-responsabilidade-arquitetural">Princípio da Responsabilidade Arquitetural<a class="headerlink" href="#glossary-principio-da-responsabilidade-arquitetural" title="Permanent link">&para;</a></h2>
-<p>Diretriz segundo a qual toda arquitetura de primeira classe deve possuir uma responsabilidade institucional única, permanente e claramente distinguível das demais arquiteturas.</p>
-<h2 id="glossary-principio-da-autocoerencia-arquitetural">Princípio da Autocoerência Arquitetural<a class="headerlink" href="#glossary-principio-da-autocoerencia-arquitetural" title="Permanent link">&para;</a></h2>
-<p>Diretriz segundo a qual toda arquitetura da Guivos deve submeter sua própria evolução aos princípios, métodos e critérios que estabelece para os demais ativos arquiteturais.</p>
-<h2 id="glossary-principio-da-continuidade-evolutiva">Princípio da Continuidade Evolutiva<a class="headerlink" href="#glossary-principio-da-continuidade-evolutiva" title="Permanent link">&para;</a></h2>
-<p>Hipótese transversal segundo a qual entidades permanentes do Ecossistema Guivos tendem a evoluir preservando sua identidade enquanto ampliam progressivamente sua capacidade de cumprir seu propósito.</p>
-<p>Permanece como hipótese <code>H-GEF-001</code> até validação futura.</p>
-<h2 id="glossary-modelo-fundamental-da-aprendizagem-institucional">Modelo Fundamental da Aprendizagem Institucional<a class="headerlink" href="#glossary-modelo-fundamental-da-aprendizagem-institucional" title="Permanent link">&para;</a></h2>
-<p>Hipótese arquitetural de alta maturidade segundo a qual a transformação de experiências em patrimônio intelectual pode representar o fenômeno central governado pela Guivos Knowledge Architecture.</p>
-<p>Permanece fora da Canon até validação sistêmica durante o desenvolvimento do GKA-000.</p>
-<h2 id="glossary-modelo-explicativo">Modelo Explicativo<a class="headerlink" href="#glossary-modelo-explicativo" title="Permanent link">&para;</a></h2>
-<p>Representação estruturada que busca explicar um fenômeno central da arquitetura.</p>
-<p>Modelos explicativos exigem validação mais rigorosa que definições conceituais isoladas.</p>
-<h2 id="glossary-canon">Canon<a class="headerlink" href="#glossary-canon" title="Permanent link">&para;</a></h2>
-<p>Conjunto oficial de conhecimentos institucionais atualmente mais confiáveis para fundamentar decisões permanentes da Guivos, derivados de evidências rastreáveis e aprovados por processos formais de governança.</p>
-<p>A Canon é estável, mas revisável quando evidências consistentes demonstrarem que deixou de representar adequadamente a realidade observada.</p>
-<h2 id="glossary-identidade">Identidade<a class="headerlink" href="#glossary-identidade" title="Permanent link">&para;</a></h2>
-<p>Representa quem é o participante dentro do ecossistema.</p>
-<p>A identidade permanece estável enquanto papéis, capacidades, relacionamentos e contextos podem mudar.</p>
-<h2 id="glossary-papel">Papel<a class="headerlink" href="#glossary-papel" title="Permanent link">&para;</a></h2>
-<p>Conjunto temporário e contextual de responsabilidades exercidas por um participante.</p>
-<h2 id="glossary-capacidade">Capacidade<a class="headerlink" href="#glossary-capacidade" title="Permanent link">&para;</a></h2>
-<p>Competência arquitetural que permite a um participante produzir valor no ecossistema.</p>
-<p>Capacidades não são permissões técnicas nem funcionalidades de interface.</p>
-<h2 id="glossary-jornada">Jornada<a class="headerlink" href="#glossary-jornada" title="Permanent link">&para;</a></h2>
-<p>Sequência contínua de estados, decisões, experiências e resultados vividos por um participante ao longo do tempo.</p>
-<p>A Guivos apoia a jornada; não a controla.</p>
-<h2 id="glossary-momento-atual">Momento Atual<a class="headerlink" href="#glossary-momento-atual" title="Permanent link">&para;</a></h2>
-<p>Representa o estado presente do participante e o contexto relevante para compreender sua realidade.</p>
-<h2 id="glossary-objetivo">Objetivo<a class="headerlink" href="#glossary-objetivo" title="Permanent link">&para;</a></h2>
-<p>Resultado ou direção que o participante deseja alcançar.</p>
-<h2 id="glossary-proximo-passo">Próximo Passo<a class="headerlink" href="#glossary-proximo-passo" title="Permanent link">&para;</a></h2>
-<p>Decisão ou hipótese de evolução mais relevante para o Momento Atual e os Objetivos do participante.</p>
-<p>O Próximo Passo não é uma Oportunidade.</p>
-<h2 id="glossary-oportunidade">Oportunidade<a class="headerlink" href="#glossary-oportunidade" title="Permanent link">&para;</a></h2>
-<p>Iniciativa ou mecanismo estruturado capaz de apoiar a realização de um Próximo Passo por meio de uma Experiência.</p>
-<h2 id="glossary-experiencia">Experiência<a class="headerlink" href="#glossary-experiencia" title="Permanent link">&para;</a></h2>
-<p>Materialização da participação de um ou mais participantes em uma Oportunidade.</p>
-<h2 id="glossary-evidencia-de-evolucao">Evidência de Evolução<a class="headerlink" href="#glossary-evidencia-de-evolucao" title="Permanent link">&para;</a></h2>
-<p>Sinal, resultado ou mudança que permite compreender como uma Experiência alterou a jornada de um participante.</p>
-<h2 id="glossary-relacionamento">Relacionamento<a class="headerlink" href="#glossary-relacionamento" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-relacionamento">Relacionamento<a class="headerlink" href="#glossary-relacionamento" title="Permanent link">&para;</a></h3>
 <p>Vínculo reconhecido entre dois ou mais participantes, formado ou fortalecido por interações, experiências ou objetivos compartilhados.</p>
-<h2 id="glossary-conhecimento-do-ecossistema">Conhecimento do Ecossistema<a class="headerlink" href="#glossary-conhecimento-do-ecossistema" title="Permanent link">&para;</a></h2>
-<p>Conjunto organizado de padrões, aprendizados e evidências produzidos pelas experiências vividas pelos participantes.</p>
-<p>Dados são registros. Conhecimento é compreensão. Inteligência é interpretação aplicada.</p>
-<h2 id="glossary-inteligencia-artificial">Inteligência Artificial<a class="headerlink" href="#glossary-inteligencia-artificial" title="Permanent link">&para;</a></h2>
-<p>Conjunto de tecnologias que pode apoiar interpretação, recomendação, análise e automação.</p>
-<p>Na Guivos, a inteligência artificial é um meio técnico dentro da Inteligência do Ecossistema Guivos e não substitui a autonomia do participante.</p>
-<h2 id="glossary-discovery-mode">Discovery Mode<a class="headerlink" href="#glossary-discovery-mode" title="Permanent link">&para;</a></h2>
-<p>Modo de investigação arquitetural em que evidências, observações, regularidades e hipóteses podem ser examinadas sem promoção automática à Canon.</p>
-<h2 id="glossary-canon-mode">Canon Mode<a class="headerlink" href="#glossary-canon-mode" title="Permanent link">&para;</a></h2>
-<p>Modo de preservação e publicação em que apenas conhecimento consolidado, rastreável, validado e governado pode alterar a Canon.</p>
-<h2 id="glossary-usuario">Usuário<a class="headerlink" href="#glossary-usuario" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-papel">Papel<a class="headerlink" href="#glossary-papel" title="Permanent link">&para;</a></h3>
+<p>Conjunto temporário e contextual de responsabilidades exercidas por um participante.</p>
+<h3 id="glossary-usuario">Usuário<a class="headerlink" href="#glossary-usuario" title="Permanent link">&para;</a></h3>
 <p>Termo técnico aceitável em contextos de software, autenticação, sessão ou interface.</p>
-<p>Não deve substituir Participante na arquitetura conceitual.</p>
-<h2 id="glossary-cliente">Cliente<a class="headerlink" href="#glossary-cliente" title="Permanent link">&para;</a></h2>
+<p>Não deve substituir <strong>Participante</strong> na arquitetura conceitual.</p>
+<h3 id="glossary-cliente">Cliente<a class="headerlink" href="#glossary-cliente" title="Permanent link">&para;</a></h3>
 <p>Termo comercial utilizado quando uma Pessoa ou Organização mantém relação de compra, contratação ou assinatura com a Guivos.</p>
 <p>Cliente é uma relação comercial, não uma categoria de participante.</p>
-<h2 id="glossary-gea">GEA<a class="headerlink" href="#glossary-gea" title="Permanent link">&para;</a></h2>
+<h2 id="glossary-2-jornada-e-evolucao">2. Jornada e evolução<a class="headerlink" href="#glossary-2-jornada-e-evolucao" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-jornada">Jornada<a class="headerlink" href="#glossary-jornada" title="Permanent link">&para;</a></h3>
+<p>Sequência contínua de estados, decisões, experiências e resultados vividos por um participante ao longo do tempo.</p>
+<p>A Guivos apoia a jornada; não a controla.</p>
+<h3 id="glossary-evolucao">Evolução<a class="headerlink" href="#glossary-evolucao" title="Permanent link">&para;</a></h3>
+<p>Transformação relevante reconhecida pelo próprio participante, por uma Organização ou por um Coletivo em relação ao seu estado anterior, objetivo ou direção desejada.</p>
+<p>A Guivos não impõe uma única definição de evolução.</p>
+<h3 id="glossary-momento-atual">Momento Atual<a class="headerlink" href="#glossary-momento-atual" title="Permanent link">&para;</a></h3>
+<p>Representa o estado presente do participante e o contexto relevante para compreender sua realidade.</p>
+<p>Não é cadastro fixo nem definição permanente da pessoa.</p>
+<h3 id="glossary-objetivo">Objetivo<a class="headerlink" href="#glossary-objetivo" title="Permanent link">&para;</a></h3>
+<p>Resultado ou direção que o participante deseja alcançar.</p>
+<h3 id="glossary-proximo-passo">Próximo Passo<a class="headerlink" href="#glossary-proximo-passo" title="Permanent link">&para;</a></h3>
+<p>Decisão ou hipótese de evolução mais relevante para o Momento Atual e os Objetivos do participante.</p>
+<p>O Próximo Passo não é uma Oportunidade.</p>
+<h3 id="glossary-oportunidade">Oportunidade<a class="headerlink" href="#glossary-oportunidade" title="Permanent link">&para;</a></h3>
+<p>Iniciativa, recurso ou possibilidade capaz de apoiar a realização de um Próximo Passo por meio de uma Experiência.</p>
+<h3 id="glossary-oportunidade-ativa">Oportunidade Ativa<a class="headerlink" href="#glossary-oportunidade-ativa" title="Permanent link">&para;</a></h3>
+<p>Oportunidade que, considerando o contexto atual de um participante, possui potencial imediato de apoiar progresso e merece ser apresentada.</p>
+<p><strong>Linguagem pública preferencial:</strong> oportunidade relevante.</p>
+<h3 id="glossary-experiencia">Experiência<a class="headerlink" href="#glossary-experiencia" title="Permanent link">&para;</a></h3>
+<p>Materialização da participação de um ou mais participantes em uma Oportunidade.</p>
+<h3 id="glossary-evidencia-de-evolucao">Evidência de Evolução<a class="headerlink" href="#glossary-evidencia-de-evolucao" title="Permanent link">&para;</a></h3>
+<p>Sinal, resultado ou mudança que permite compreender como uma Experiência alterou a jornada de um participante.</p>
+<h3 id="glossary-evento-de-vida">Evento de Vida<a class="headerlink" href="#glossary-evento-de-vida" title="Permanent link">&para;</a></h3>
+<p>Mudança relevante capaz de alterar o estado, as prioridades, as restrições ou a direção de uma jornada.</p>
+<h3 id="glossary-intervencao-contextual">Intervenção Contextual<a class="headerlink" href="#glossary-intervencao-contextual" title="Permanent link">&para;</a></h3>
+<p>Decisão funcional de agir, perguntar, esperar, observar ou permanecer em silêncio em determinado momento da jornada.</p>
+<p>Notificação é apenas um dos canais possíveis.</p>
+<h3 id="glossary-distancia-para-evolucao">Distância para Evolução<a class="headerlink" href="#glossary-distancia-para-evolucao" title="Permanent link">&para;</a></h3>
+<p>Conceito interno de produto que representa a diferença entre o contexto atual do participante e os caminhos disponíveis para avançar.</p>
+<p>Não é necessariamente uma medida única ou numérica.</p>
+<h2 id="glossary-3-contexto-e-compreensao">3. Contexto e compreensão<a class="headerlink" href="#glossary-3-contexto-e-compreensao" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-contexto">Contexto<a class="headerlink" href="#glossary-contexto" title="Permanent link">&para;</a></h3>
+<p>Conjunto autorizado de informações, relações, condições, objetivos, restrições, preferências, experiências, evidências e temporalidades relevantes para compreender uma jornada.</p>
+<h3 id="glossary-captura-de-contexto">Captura de Contexto<a class="headerlink" href="#glossary-captura-de-contexto" title="Permanent link">&para;</a></h3>
+<p>Capacidade funcional por meio da qual o participante expressa sua realidade por voz, texto, fluxo guiado ou outras fontes autorizadas, para que a Guivos construa uma compreensão inicial revisável.</p>
+<h3 id="glossary-interpretacao-do-contexto">Interpretação do Contexto<a class="headerlink" href="#glossary-interpretacao-do-contexto" title="Permanent link">&para;</a></h3>
+<p>Responsabilidade funcional de transformar entradas autorizadas em compreensão coerente, explicável e utilizável.</p>
+<p>Deve distinguir fatos, intenções, objetivos, limitações, preferências, incertezas e inferências.</p>
+<h3 id="glossary-contexto-vivo">Contexto Vivo<a class="headerlink" href="#glossary-contexto-vivo" title="Permanent link">&para;</a></h3>
+<p>Melhor compreensão disponível que a Guivos mantém sobre a realidade do participante em determinado momento, construída a partir de informações, evidências, interpretações e confirmações autorizadas.</p>
+<p>Não representa verdade absoluta, perfil fixo ou conhecimento completo da pessoa.</p>
+<p>Toda representação relevante deve ser contextual, temporal, explicável, revisável e controlável pelo participante.</p>
+<h3 id="glossary-representacao-humilde">Representação Humilde<a class="headerlink" href="#glossary-representacao-humilde" title="Permanent link">&para;</a></h3>
+<p>Princípio segundo o qual a Guivos nunca presume conhecer completamente o participante e mantém sua compreensão sempre aberta à revisão, ao aprendizado e à confirmação.</p>
+<h3 id="glossary-meu-contexto-hoje">Meu Contexto Hoje<a class="headerlink" href="#glossary-meu-contexto-hoje" title="Permanent link">&para;</a></h3>
+<p>Visão conceitual do Journey pela qual o participante poderá compreender o que a Guivos entende sobre sua realidade atual, por que entende, quando atualizou e como corrigir, ocultar, limitar ou remover informações.</p>
+<h3 id="glossary-proveniencia">Proveniência<a class="headerlink" href="#glossary-proveniencia" title="Permanent link">&para;</a></h3>
+<p>Registro da origem de uma informação, interpretação, evidência ou atualização.</p>
+<h3 id="glossary-confianca">Confiança<a class="headerlink" href="#glossary-confianca" title="Permanent link">&para;</a></h3>
+<p>Grau funcional de segurança atribuído a uma interpretação ou informação, considerando origem, confirmação, atualidade e convergência de evidências.</p>
+<h3 id="glossary-temporalidade">Temporalidade<a class="headerlink" href="#glossary-temporalidade" title="Permanent link">&para;</a></h3>
+<p>Propriedade que registra quando uma informação surgiu, por quanto tempo é considerada válida e como se relaciona com estados anteriores e posteriores.</p>
+<h3 id="glossary-explicabilidade">Explicabilidade<a class="headerlink" href="#glossary-explicabilidade" title="Permanent link">&para;</a></h3>
+<p>Capacidade de apresentar ao participante as razões, fontes e evidências relevantes que sustentam determinada compreensão ou recomendação.</p>
+<h2 id="glossary-4-tipos-de-capacidade">4. Tipos de capacidade<a class="headerlink" href="#glossary-4-tipos-de-capacidade" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-capacidade-do-participante">Capacidade do Participante<a class="headerlink" href="#glossary-capacidade-do-participante" title="Permanent link">&para;</a></h3>
+<p>Competência, recurso ou condição que permite a uma Pessoa, Organização ou Coletivo produzir valor ou avançar em uma jornada.</p>
+<h3 id="glossary-capacidade-arquitetural">Capacidade Arquitetural<a class="headerlink" href="#glossary-capacidade-arquitetural" title="Permanent link">&para;</a></h3>
+<p>Competência permanente atribuída a uma arquitetura, camada ou componente para cumprir determinada responsabilidade institucional ou funcional.</p>
+<h3 id="glossary-capacidade-funcional-de-produto">Capacidade Funcional de Produto<a class="headerlink" href="#glossary-capacidade-funcional-de-produto" title="Permanent link">&para;</a></h3>
+<p>Unidade completa de especificação e entrega de produto que resolve um único problema central e contém objetivo, valor, fluxos, estados, regras, exceções, privacidade, integrações, eventos, KPIs, cenários e contrato de aceite.</p>
+<p>Não é sinônimo de tela, funcionalidade isolada, permissão técnica ou microserviço.</p>
+<h3 id="glossary-principio-da-singularidade-funcional">Princípio da Singularidade Funcional<a class="headerlink" href="#glossary-principio-da-singularidade-funcional" title="Permanent link">&para;</a></h3>
+<p>Princípio segundo o qual cada Capacidade Funcional de Produto existe para resolver um único problema central.</p>
+<h3 id="glossary-contrato-da-capacidade">Contrato da Capacidade<a class="headerlink" href="#glossary-contrato-da-capacidade" title="Permanent link">&para;</a></h3>
+<p>Conjunto de garantias e critérios de aceite que define quando uma capacidade funcional pode ser considerada suficientemente entregue e validada.</p>
+<h2 id="glossary-5-produtos-e-camadas">5. Produtos e camadas<a class="headerlink" href="#glossary-5-produtos-e-camadas" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-guivos-journey">Guivos Journey<a class="headerlink" href="#glossary-guivos-journey" title="Permanent link">&para;</a></h3>
+<p>Camada principal de experiência do Ecossistema Guivos, responsável por orquestrar a experiência unificada, apoiar a jornada contínua e apresentar compreensão, objetivos, Próximos Passos, oportunidades e interações de forma contextual.</p>
+<p>Na GLPA, pertence à <strong>Experience Layer</strong>.</p>
+<h3 id="glossary-guivos-intelligence">Guivos Intelligence<a class="headerlink" href="#glossary-guivos-intelligence" title="Permanent link">&para;</a></h3>
+<p>Componente responsável por entregar a <strong>Inteligência do Ecossistema Guivos</strong>.</p>
+<p>Na GLPA, pertence à <strong>Intelligence Layer</strong> e atua transversalmente para Journey, Mall, Business, Travel, Media e Ads.</p>
+<p>Substitui “Guivos Insights” como nome de produto.</p>
+<h3 id="glossary-guivos-business">Guivos Business<a class="headerlink" href="#glossary-guivos-business" title="Permanent link">&para;</a></h3>
+<p>Produto responsável pelas soluções da Guivos para empresas e demais Organizações.</p>
+<h3 id="glossary-guivos-mall">Guivos Mall<a class="headerlink" href="#glossary-guivos-mall" title="Permanent link">&para;</a></h3>
+<p>Produto responsável pela oferta e comercialização de produtos, serviços, gift cards, assinaturas e outros ativos digitais ou físicos do Ecossistema Guivos.</p>
+<p>Substitui <code>Guivos Marketplace</code> como nome oficial do produto comercial.</p>
+<h3 id="glossary-guivos-travel">Guivos Travel<a class="headerlink" href="#glossary-guivos-travel" title="Permanent link">&para;</a></h3>
+<p>Produto responsável por viagens e experiências relacionadas a deslocamento, destinos e turismo.</p>
+<h3 id="glossary-guivos-media">Guivos Media<a class="headerlink" href="#glossary-guivos-media" title="Permanent link">&para;</a></h3>
+<p>Produto responsável pela produção, organização e distribuição de conteúdo editorial e institucional da Guivos.</p>
+<p>Substitui “Guivos Podcast” como nome de produto.</p>
+<h3 id="glossary-guivos-ads">Guivos Ads<a class="headerlink" href="#glossary-guivos-ads" title="Permanent link">&para;</a></h3>
+<p>Produto responsável por publicidade, mídia patrocinada e soluções para anunciantes dentro do Ecossistema Guivos.</p>
+<h3 id="glossary-experience-layer">Experience Layer<a class="headerlink" href="#glossary-experience-layer" title="Permanent link">&para;</a></h3>
+<p>Camada responsável pela experiência unificada do participante. Na Guivos, é representada pelo Guivos Journey.</p>
+<h3 id="glossary-intelligence-layer">Intelligence Layer<a class="headerlink" href="#glossary-intelligence-layer" title="Permanent link">&para;</a></h3>
+<p>Camada transversal responsável pela interpretação contextual, recomendações, personalização, inteligência aplicada e aprendizagem do ecossistema.</p>
+<h3 id="glossary-service-layer">Service Layer<a class="headerlink" href="#glossary-service-layer" title="Permanent link">&para;</a></h3>
+<p>Camada responsável por capacidades especializadas. Inclui Guivos Business, Guivos Mall, Guivos Travel, Guivos Media e Guivos Ads.</p>
+<h3 id="glossary-platform-layer">Platform Layer<a class="headerlink" href="#glossary-platform-layer" title="Permanent link">&para;</a></h3>
+<p>Camada de capacidades técnicas comuns que sustenta os demais componentes, incluindo APIs, autenticação, autorização, billing, pagamentos, busca, notificações, segurança, dados, integrações, observabilidade e infraestrutura.</p>
+<h2 id="glossary-6-inteligencia-e-conhecimento">6. Inteligência e conhecimento<a class="headerlink" href="#glossary-6-inteligencia-e-conhecimento" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-inteligencia-do-ecossistema-guivos">Inteligência do Ecossistema Guivos<a class="headerlink" href="#glossary-inteligencia-do-ecossistema-guivos" title="Permanent link">&para;</a></h3>
+<p>Expressão conceitual e pública para a inteligência que interpreta dados, conhecimento, contexto, conexões, jornadas, experiências e evidências de todo o ecossistema.</p>
+<p>Não é apenas chatbot, modelo de linguagem ou mecanismo de recomendação isolado.</p>
+<h3 id="glossary-inteligencia-artificial">Inteligência Artificial<a class="headerlink" href="#glossary-inteligencia-artificial" title="Permanent link">&para;</a></h3>
+<p>Conjunto de tecnologias que pode apoiar interpretação, recomendação, análise e automação.</p>
+<p>Na Guivos, é meio técnico dentro da Inteligência do Ecossistema Guivos e não substitui a autonomia do participante.</p>
+<h3 id="glossary-grafo-global-da-guivos">Grafo Global da Guivos<a class="headerlink" href="#glossary-grafo-global-da-guivos" title="Permanent link">&para;</a></h3>
+<p>Modelo conceitual que organiza participantes, objetivos, Momentos Atuais, Próximos Passos, oportunidades, experiências, conhecimentos, relacionamentos e evidências por conexões contextuais e evolutivas.</p>
+<p>Sua ontologia formal, modelo lógico e implementação técnica ainda dependem de detalhamento e validação.</p>
+<h3 id="glossary-conhecimento-do-ecossistema">Conhecimento do Ecossistema<a class="headerlink" href="#glossary-conhecimento-do-ecossistema" title="Permanent link">&para;</a></h3>
+<p>Conjunto organizado de padrões, aprendizados e evidências produzidos pelas experiências vividas pelos participantes.</p>
+<p>Dados são registros. Conhecimento é compreensão. Inteligência é interpretação aplicada.</p>
+<h3 id="glossary-context-intelligence-engine-cie">Context Intelligence Engine — CIE<a class="headerlink" href="#glossary-context-intelligence-engine-cie" title="Permanent link">&para;</a></h3>
+<p>Capacidade candidata da Intelligence Layer para interpretar entradas multimodais e propor atualizações contextuais preservando proveniência, temporalidade, confiança, explicabilidade e consentimento.</p>
+<p>Permanece candidato e não representa componente técnico obrigatório.</p>
+<h3 id="glossary-living-participant-model-lpm">Living Participant Model — LPM<a class="headerlink" href="#glossary-living-participant-model-lpm" title="Permanent link">&para;</a></h3>
+<p>Hipótese de modelo contextual, temporal e continuamente atualizável do participante.</p>
+<p>Não é sinônimo automático de Contexto Vivo e permanece em Discovery/Engineering.</p>
+<h2 id="glossary-7-arquitetura-e-especificacao">7. Arquitetura e especificação<a class="headerlink" href="#glossary-7-arquitetura-e-especificacao" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-glpa-guivos-layered-product-architecture">GLPA — Guivos Layered Product Architecture<a class="headerlink" href="#glossary-glpa-guivos-layered-product-architecture" title="Permanent link">&para;</a></h3>
+<p>Arquitetura funcional que organiza os componentes da Guivos por Experience Layer, Intelligence Layer, Service Layer e Platform Layer.</p>
+<h3 id="glossary-pas-product-architecture-specification">PAS — Product Architecture Specification<a class="headerlink" href="#glossary-pas-product-architecture-specification" title="Permanent link">&para;</a></h3>
+<p>Especificação de produto que descreve visão, filosofia, responsabilidades, capacidades, fluxos, estados, regras, integrações, KPIs e evolução de um componente da Guivos.</p>
+<h3 id="glossary-pas-001-guivos-journey">PAS-001 — Guivos Journey<a class="headerlink" href="#glossary-pas-001-guivos-journey" title="Permanent link">&para;</a></h3>
+<p>Primeira Product Architecture Specification da Guivos, dedicada ao Guivos Journey.</p>
+<h3 id="glossary-product-engineering">Product Engineering<a class="headerlink" href="#glossary-product-engineering" title="Permanent link">&para;</a></h3>
+<p>Frente de trabalho que transforma arquitetura e conhecimento consolidados em capacidades funcionais suficientemente detalhadas para Produto, UX, Engenharia, QA, Segurança, Jurídico, IA e Analytics.</p>
+<h3 id="glossary-ciclo-cognitivo-do-dominio">Ciclo Cognitivo do Domínio<a class="headerlink" href="#glossary-ciclo-cognitivo-do-dominio" title="Permanent link">&para;</a></h3>
+<p>Sequência funcional:</p>
+<div class="highlight"><pre><span></span><code>Informação
+  -&gt; Interpretação
+  -&gt; Compreensão
+  -&gt; Contexto
+  -&gt; Decisão
+  -&gt; Ação
+  -&gt; Resultado
+  -&gt; Aprendizado
+  -&gt; Nova informação
+</code></pre></div>
+<p>Nasce como padrão funcional do Journey e somente poderá ser promovido a arquitetura transversal após validação prática suficiente.</p>
+<h2 id="glossary-8-governanca-do-conhecimento">8. Governança do conhecimento<a class="headerlink" href="#glossary-8-governanca-do-conhecimento" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-gkr">GKR<a class="headerlink" href="#glossary-gkr" title="Permanent link">&para;</a></h3>
+<p>Guivos Knowledge Repository. Fonte oficial, versionada e governada do conhecimento da Guivos.</p>
+<h3 id="glossary-gka">GKA<a class="headerlink" href="#glossary-gka" title="Permanent link">&para;</a></h3>
+<p>Guivos Knowledge Architecture. Arquitetura responsável por governar descoberta, estruturação, validação, consolidação, promoção à Canon, revisão e evolução do conhecimento institucional.</p>
+<h3 id="glossary-gea">GEA<a class="headerlink" href="#glossary-gea" title="Permanent link">&para;</a></h3>
 <p>Guivos Enterprise Architecture. Conjunto integrado das arquiteturas oficiais da Guivos.</p>
-<h2 id="glossary-gka">GKA<a class="headerlink" href="#glossary-gka" title="Permanent link">&para;</a></h2>
-<p>Guivos Knowledge Architecture.</p>
-<h2 id="glossary-gkr">GKR<a class="headerlink" href="#glossary-gkr" title="Permanent link">&para;</a></h2>
-<p>Guivos Knowledge Repository. Sistema oficial de descoberta, consolidação, governança e evolução do conhecimento da Guivos.</p>
-<h2 id="glossary-geb">GEB<a class="headerlink" href="#glossary-geb" title="Permanent link">&para;</a></h2>
-<p>Guivos Ecosystem Blueprint. Artefato do GKR que especifica a arquitetura conceitual do ecossistema Guivos.</p></section>
+<h3 id="glossary-geb">GEB<a class="headerlink" href="#glossary-geb" title="Permanent link">&para;</a></h3>
+<p>Guivos Ecosystem Blueprint. Artefato do GKR que especifica a arquitetura conceitual do ecossistema.</p>
+<h3 id="glossary-guivos-evolution-framework">Guivos Evolution Framework<a class="headerlink" href="#glossary-guivos-evolution-framework" title="Permanent link">&para;</a></h3>
+<p>Estrutura que registra as grandes eras de maturidade institucional da Guivos.</p>
+<h3 id="glossary-ge-1-foundation-architecture">GE-1 — Foundation &amp; Architecture<a class="headerlink" href="#glossary-ge-1-foundation-architecture" title="Permanent link">&para;</a></h3>
+<p>Primeira era de evolução institucional da Guivos, dedicada à estruturação das fundações, arquiteturas, produtos, guia público e Canon inicial.</p>
+<h3 id="glossary-ge-2-knowledge">GE-2 — Knowledge<a class="headerlink" href="#glossary-ge-2-knowledge" title="Permanent link">&para;</a></h3>
+<p>Segunda era, dedicada à produção sistemática de conhecimento institucional por meio da GKA.</p>
+<h3 id="glossary-canon">Canon<a class="headerlink" href="#glossary-canon" title="Permanent link">&para;</a></h3>
+<p>Conjunto oficial de conhecimentos institucionais atualmente mais confiáveis para fundamentar decisões permanentes da Guivos.</p>
+<p>A Canon é estável, mas revisável.</p>
+<h3 id="glossary-public-canon">Public Canon<a class="headerlink" href="#glossary-public-canon" title="Permanent link">&para;</a></h3>
+<p>Documento ou narrativa pública institucional vigente, derivada da Canon do GKR.</p>
+<p>Não significa que todo produto, funcionalidade ou operação descrita como futura já esteja comercialmente disponível.</p>
+<h3 id="glossary-discovery-mode">Discovery Mode<a class="headerlink" href="#glossary-discovery-mode" title="Permanent link">&para;</a></h3>
+<p>Modo de investigação em que evidências, observações e hipóteses podem ser examinadas sem promoção automática à Canon.</p>
+<h3 id="glossary-canon-mode">Canon Mode<a class="headerlink" href="#glossary-canon-mode" title="Permanent link">&para;</a></h3>
+<p>Modo em que apenas conhecimento consolidado, rastreável, validado e governado pode alterar a Canon.</p>
+<h3 id="glossary-institutional-writing">Institutional Writing<a class="headerlink" href="#glossary-institutional-writing" title="Permanent link">&para;</a></h3>
+<p>Modo de redação que consolida conhecimento já suficientemente maduro sem promover novas hipóteses automaticamente.</p>
+<h3 id="glossary-institutional-consolidation-mode">Institutional Consolidation Mode<a class="headerlink" href="#glossary-institutional-consolidation-mode" title="Permanent link">&para;</a></h3>
+<p>Modo de trabalho em que o foco é institucionalizar, revisar e consolidar conhecimento já suficientemente maduro.</p>
+<h3 id="glossary-capitulo-institucional">Capítulo Institucional<a class="headerlink" href="#glossary-capitulo-institucional" title="Permanent link">&para;</a></h3>
+<p>Unidade documental completa de um ativo arquitetural, desenvolvida por planejamento, redação, revisão, aprovação e atualização do GKR.</p>
+<h3 id="glossary-revisao-em-cinco-niveis">Revisão em Cinco Níveis<a class="headerlink" href="#glossary-revisao-em-cinco-niveis" title="Permanent link">&para;</a></h3>
+<p>Revisão composta por Precisão Conceitual, Arquitetural, Editorial, Institucional e Sistêmica.</p>
+<h3 id="glossary-regra-da-pergunta-unica">Regra da Pergunta Única<a class="headerlink" href="#glossary-regra-da-pergunta-unica" title="Permanent link">&para;</a></h3>
+<p>Diretriz segundo a qual cada seção responde uma única pergunta arquitetural que nenhuma outra seção responde.</p>
+<h3 id="glossary-competencia-institucional">Competência Institucional<a class="headerlink" href="#glossary-competencia-institucional" title="Permanent link">&para;</a></h3>
+<p>Autoridade atribuída a uma arquitetura sobre determinado fenômeno, ativo, critério ou mecanismo.</p>
+<h3 id="glossary-responsabilidade-institucional">Responsabilidade Institucional<a class="headerlink" href="#glossary-responsabilidade-institucional" title="Permanent link">&para;</a></h3>
+<p>Dever permanente assumido por uma arquitetura perante a organização.</p>
+<h3 id="glossary-diretriz-institucional">Diretriz Institucional<a class="headerlink" href="#glossary-diretriz-institucional" title="Permanent link">&para;</a></h3>
+<p>Interpretação operacional de um princípio permanente, sem descer ao nível de processo ou implementação.</p>
+<h3 id="glossary-governar">Governar<a class="headerlink" href="#glossary-governar" title="Permanent link">&para;</a></h3>
+<p>Exercer autoridade institucional sobre princípios, critérios, limites e evolução de determinado domínio.</p>
+<h3 id="glossary-gerenciar">Gerenciar<a class="headerlink" href="#glossary-gerenciar" title="Permanent link">&para;</a></h3>
+<p>Conduzir atividades operacionais, recursos, rotinas ou fluxos dentro de processos definidos.</p>
+<h3 id="glossary-executar">Executar<a class="headerlink" href="#glossary-executar" title="Permanent link">&para;</a></h3>
+<p>Realizar ações concretas, tarefas ou implementações específicas.</p>
+<h3 id="glossary-principio-da-responsabilidade-arquitetural">Princípio da Responsabilidade Arquitetural<a class="headerlink" href="#glossary-principio-da-responsabilidade-arquitetural" title="Permanent link">&para;</a></h3>
+<p>Toda arquitetura de primeira classe deve possuir responsabilidade institucional única, permanente e distinguível.</p>
+<h3 id="glossary-principio-da-autocoerencia-arquitetural">Princípio da Autocoerência Arquitetural<a class="headerlink" href="#glossary-principio-da-autocoerencia-arquitetural" title="Permanent link">&para;</a></h3>
+<p>Toda arquitetura da Guivos deve submeter sua própria evolução aos princípios, métodos e critérios que estabelece.</p>
+<h3 id="glossary-principio-da-continuidade-evolutiva">Princípio da Continuidade Evolutiva<a class="headerlink" href="#glossary-principio-da-continuidade-evolutiva" title="Permanent link">&para;</a></h3>
+<p>Hipótese segundo a qual entidades permanentes tendem a evoluir preservando identidade enquanto ampliam sua capacidade de cumprir o propósito.</p>
+<p>Permanece como hipótese <code>H-GEF-001</code>.</p>
+<h3 id="glossary-conhecimento-definicional">Conhecimento Definicional<a class="headerlink" href="#glossary-conhecimento-definicional" title="Permanent link">&para;</a></h3>
+<p>Categoria em investigação relacionada à definição precisa de termos e distinções arquiteturais.</p>
+<h3 id="glossary-conhecimento-normativo">Conhecimento Normativo<a class="headerlink" href="#glossary-conhecimento-normativo" title="Permanent link">&para;</a></h3>
+<p>Categoria em investigação relacionada a princípios, diretrizes, critérios e normas institucionais.</p>
+<h3 id="glossary-conhecimento-explicativo">Conhecimento Explicativo<a class="headerlink" href="#glossary-conhecimento-explicativo" title="Permanent link">&para;</a></h3>
+<p>Categoria em investigação relacionada a modelos que buscam explicar fenômenos arquiteturais ou institucionais.</p>
+<h3 id="glossary-modelo-explicativo">Modelo Explicativo<a class="headerlink" href="#glossary-modelo-explicativo" title="Permanent link">&para;</a></h3>
+<p>Representação estruturada que busca explicar um fenômeno central e exige validação superior a definições conceituais isoladas.</p>
+<h3 id="glossary-modelo-fundamental-da-aprendizagem-institucional">Modelo Fundamental da Aprendizagem Institucional<a class="headerlink" href="#glossary-modelo-fundamental-da-aprendizagem-institucional" title="Permanent link">&para;</a></h3>
+<p>Hipótese de alta maturidade segundo a qual a transformação de experiências em patrimônio intelectual pode representar o fenômeno central governado pela GKA.</p>
+<p>Permanece fora da Canon até validação sistêmica.</p>
+<h2 id="glossary-9-modelo-economico">9. Modelo econômico<a class="headerlink" href="#glossary-9-modelo-economico" title="Permanent link">&para;</a></h2>
+<h3 id="glossary-guivos-economic-model">Guivos Economic Model<a class="headerlink" href="#glossary-guivos-economic-model" title="Permanent link">&para;</a></h3>
+<p>Domínio planejado do GKR responsável por princípios econômicos, fontes de receita, planos, incentivos, sustentabilidade financeira e limites de monetização.</p>
+<p>Seu princípio inicial estabelece que planos pagos podem acelerar, ampliar e personalizar jornadas, mas não devem bloquear a evolução de participantes gratuitos.</p></section>
                     <section class='print-page md-section' id='section-8' heading-number='8'>
                         <h1>GEB<a class='headerlink' href='#section-8' title='Permanent link'></a>
                         </h1>
