@@ -2,7 +2,7 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 3.0.0
+version: 3.1.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -17,9 +17,9 @@ Este domínio reúne documentos públicos derivados das decisões consolidadas n
 
 ## Versão pública vigente
 
-O `GOG-001 — Guia Oficial da Guivos` encontra-se na versão `4.0.0`.
+O `GOG-001 — Guia Oficial da Guivos` encontra-se na versão `4.1.0`.
 
-Essa versão alinha a narrativa pública à arquitetura atual da Guivos, preservando linguagem acessível e evitando apresentar hipóteses técnicas como fatos concluídos.
+Essa versão atualiza a narrativa pública para refletir que a Guivos não mantém apenas um cadastro inicial: ela pretende construir uma compreensão progressiva, revisável e controlável do contexto do participante ao longo do tempo.
 
 ## Conteúdos apresentados
 
@@ -31,23 +31,21 @@ O Guia Oficial reúne:
 - evolução, Momento Atual, Próximo Passo e jornada;
 - captura progressiva e multimodal de contexto;
 - voz como canal prioritário, mas não exclusivo;
+- interpretação apresentada para confirmação e correção;
+- compreensão atualizada conforme mudanças, experiências e objetivos;
 - Ciclo Contínuo de Evolução;
 - oportunidade como unidade prática de valor;
 - Guivos Journey como experiência principal;
 - Guivos Intelligence como inteligência transversal;
 - Guivos Business, Mall, Travel, Media e Ads como soluções especializadas;
-- integração pública entre os componentes;
 - limites de aderência e curadoria;
 - Inteligência do Ecossistema Guivos;
 - Grafo Global da Guivos;
-- aprendizagem contínua com conhecimento, evidências, ecossistema e movimentação autorizada;
 - privacidade, transparência e controle do participante;
 - princípios públicos iniciais do Guivos Economic Model;
 - estágio de maturidade e pendências de validação.
 
 ## Organização pública da Guivos
-
-A documentação pública passa a distinguir:
 
 ### Experiência
 
@@ -65,22 +63,17 @@ A documentação pública passa a distinguir:
 - Guivos Media;
 - Guivos Ads.
 
-Essa estrutura traduz publicamente a arquitetura funcional sem expor detalhes internos ainda em modelagem.
-
 ## Princípio editorial
 
-A documentação pública deve partir de situações concretas, utilizar linguagem acessível e distinguir claramente:
-
-- o que já está consolidado;
-- o que está em desenvolvimento;
-- o que ainda depende de validação;
-- o que representa apenas exemplo de funcionamento futuro.
+A documentação pública deve partir de situações concretas, utilizar linguagem acessível e distinguir claramente o que está consolidado, em desenvolvimento, dependente de validação ou apresentado apenas como exemplo futuro.
 
 ## Princípio de contexto
 
-A Guivos deverá compreender progressivamente o contexto do participante, sem exigir um cadastro completo no primeiro contato.
+A Guivos deverá compreender progressivamente o contexto do participante, sem exigir cadastro completo no primeiro contato.
 
-A voz poderá ser priorizada por sua naturalidade, mas outros meios deverão permanecer disponíveis e sujeitos a autorização, revisão e controle do participante.
+A compreensão apresentada pela plataforma deverá ser revisável, explicável e controlável pelo participante.
+
+A voz poderá ser priorizada por sua naturalidade, mas outros meios deverão permanecer disponíveis.
 
 ## Princípio de aderência
 
@@ -94,10 +87,10 @@ Ela representa uma inteligência que trabalha sobre contexto, conhecimento, cone
 
 ## Princípio econômico público
 
-A Guivos poderá oferecer diferentes modalidades de acesso. Recursos adicionais podem acelerar, ampliar e personalizar jornadas, sem bloquear a descoberta de oportunidades e a evolução dos demais participantes.
+Recursos adicionais podem acelerar, ampliar e personalizar jornadas, sem bloquear a descoberta de oportunidades e a evolução dos demais participantes.
 
 Os mecanismos completos serão desenvolvidos no domínio `Guivos Economic Model`.
 
 ## Regra de atualização
 
-Os documentos deste domínio devem acompanhar as baselines e decisões vigentes do GKR, sem antecipar como definitivas funcionalidades, tecnologias, preços, parceiros ou políticas ainda não aprovadas.
+Os documentos públicos devem acompanhar as decisões vigentes do GKR sem antecipar como definitivas funcionalidades, tecnologias, preços, parceiros ou políticas ainda não aprovadas.
