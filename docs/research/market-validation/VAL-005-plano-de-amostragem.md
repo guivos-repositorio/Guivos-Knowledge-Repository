@@ -2,7 +2,7 @@
 id: VAL-005
 title: Plano de Amostragem
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-11
 ---
@@ -44,11 +44,26 @@ Buscar distribuição entre:
 - autônomos;
 - empreendedores;
 - pessoas procurando trabalho;
+- diferentes estados brasileiros;
 - capitais e regiões metropolitanas;
 - cidades médias e pequenas;
 - diferentes níveis de familiaridade digital.
 
-## 4. Canais de recrutamento
+## 4. Cobertura geográfica
+
+A localização principal será coletada por **estado ou Distrito Federal**, em lista fechada, permitindo análise por unidade federativa e consolidação posterior por região.
+
+A amostra inicial não precisa conter volume suficiente em todos os estados para produzir conclusão isolada por unidade federativa. O dashboard deverá:
+
+- mostrar a distribuição por estado;
+- consolidar estados por região quando necessário;
+- sinalizar estados com menos de 30 respostas;
+- evitar conclusões estaduais com base insuficiente;
+- identificar concentração excessiva em um único estado.
+
+Participantes fora do Brasil serão registrados em categoria separada e não misturados automaticamente à análise nacional.
+
+## 5. Canais de recrutamento
 
 - redes sociais;
 - grupos profissionais;
@@ -59,19 +74,20 @@ Buscar distribuição entre:
 - indicações controladas;
 - tráfego pago para reduzir viés da rede próxima.
 
-## 5. Regras contra viés
+## 6. Regras contra viés
 
 - limitar respostas de amigos, familiares e parceiros diretos;
 - identificar origem da resposta;
 - não usar apenas seguidores da Guivos;
 - não recompensar respostas positivas;
 - manter linguagem idêntica entre canais;
-- analisar separadamente amostras orgânicas e incentivadas.
+- analisar separadamente amostras orgânicas e incentivadas;
+- não interpretar concentração em São Paulo, Minas Gerais ou outro estado como validação nacional.
 
-## 6. Dados sensíveis
+## 7. Dados sensíveis
 
 Sexo, renda, religião, saúde e outras informações sensíveis somente serão coletados quando houver hipótese específica, finalidade clara e resposta opcional.
 
-## 7. Limitação estatística
+## 8. Limitação estatística
 
 A amostra inicial será exploratória e não deverá ser apresentada como representação estatística de toda a população brasileira.
