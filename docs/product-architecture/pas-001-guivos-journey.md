@@ -2,13 +2,14 @@
 id: PAS-001
 title: Guivos Journey Product Architecture Specification
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-07-04
 related:
   - GPA-001
   - GLPA-001
   - GE2-SYNC-004
+  - GE2-SYNC-005
 ---
 
 # PAS-001 — Guivos Journey Product Architecture Specification
@@ -19,28 +20,30 @@ related:
 
 O Guivos Journey não foi concebido para maximizar tempo de uso, consumo de conteúdo ou interação superficial.
 
-Sua finalidade é ajudar pessoas a alcançar resultados concretos no mundo real, conectando-as às oportunidades mais relevantes para seus objetivos, contexto e momento de vida.
+Sua finalidade é ajudar participantes a alcançar resultados concretos no mundo real, conectando-os às oportunidades mais relevantes para seus objetivos, contexto e momento de vida.
 
-O sucesso do Journey não será medido pela quantidade de tempo que um usuário permanece na plataforma, mas pela quantidade de valor gerado fora dela.
+O sucesso do Journey não será medido pela quantidade de tempo que um participante permanece na plataforma, mas pela quantidade e qualidade do valor gerado fora dela.
 
 ### 0.2 Objetivo Fundamental
 
 Toda funcionalidade do Journey deverá responder positivamente à seguinte pergunta:
 
-> Esta funcionalidade aumenta a capacidade do usuário de alcançar seus objetivos?
+> Esta funcionalidade aumenta a capacidade do participante de compreender seu contexto, decidir melhor ou avançar em sua jornada?
 
-Se a resposta for negativa, ela não deve fazer parte do produto.
+Se a resposta for negativa, ela não deve fazer parte do núcleo do produto.
 
-### 0.3 Papel da Inteligência Artificial
+### 0.3 Papel da Inteligência
 
-A Inteligência Artificial da Guivos existe para:
+A Inteligência do Ecossistema Guivos existe para:
 
 - reduzir esforço;
 - ampliar possibilidades;
 - contextualizar informações;
 - recomendar oportunidades;
 - acelerar decisões;
-- explicar caminhos possíveis.
+- explicar caminhos possíveis;
+- reconhecer mudanças relevantes;
+- aprender com evidências autorizadas.
 
 Ela não existe para:
 
@@ -48,13 +51,14 @@ Ela não existe para:
 - substituir decisões humanas;
 - maximizar permanência na plataforma;
 - induzir consumo desnecessário;
-- criar dependência artificial.
+- criar dependência artificial;
+- tratar inferências como fatos definitivos.
 
-### 0.4 Papel do Usuário
+### 0.4 Papel do Participante
 
-O usuário permanece no controle da própria jornada.
+O participante permanece no controle da própria jornada.
 
-A plataforma pode sugerir, explicar, organizar, recomendar e lembrar.
+A plataforma pode escutar, organizar, sugerir, explicar, recomendar, lembrar e acompanhar.
 
 A decisão final permanece humana.
 
@@ -62,11 +66,9 @@ A decisão final permanece humana.
 
 O Journey não é proprietário das oportunidades.
 
-Ele é a camada de experiência e orquestração que conecta pessoas, organizações, recursos, conteúdos, produtos e experiências de maneira inteligente.
+Ele é a camada de experiência e orquestração que conecta Pessoas, Organizações, Coletivos, recursos, conteúdos, produtos e experiências de maneira inteligente.
 
-### 0.6 Papel dos Demais Produtos
-
-Os demais componentes do ecossistema existem para fortalecer a experiência do Journey, sem competir com ele.
+### 0.6 Papel dos Demais Componentes
 
 - Journey é a experiência;
 - Mall fornece recursos comerciais;
@@ -82,86 +84,67 @@ Os demais componentes do ecossistema existem para fortalecer a experiência do J
 
 O Guivos Journey é a camada principal de experiência do Ecossistema Guivos.
 
-Ele representa a interface através da qual pessoas interagem com oportunidades, organizações, experiências, conteúdos, produtos e serviços disponíveis no ecossistema.
+Ele representa a interface por meio da qual participantes interagem com oportunidades, organizações, experiências, conteúdos, produtos e serviços disponíveis no ecossistema.
 
-Mais do que um aplicativo ou feed de conteúdo, o Journey é um assistente inteligente de evolução, projetado para compreender o contexto de cada pessoa e conectá-la continuamente às oportunidades mais relevantes para seus objetivos, momento de vida e interesses.
-
-O Journey não substitui a capacidade de decisão do usuário. Seu papel é reduzir o esforço necessário para descobrir, avaliar e acessar oportunidades de desenvolvimento pessoal, profissional, social, espiritual e comunitário.
+Mais do que um aplicativo ou feed, o Journey é um sistema de descoberta contextual de oportunidades e acompanhamento contínuo da evolução.
 
 ### 1.2 Propósito
 
-O propósito do Guivos Journey é reduzir a distância entre a situação atual de uma pessoa e os objetivos que ela deseja alcançar, utilizando inteligência contextual, conexões relevantes e oportunidades personalizadas.
+O propósito do Guivos Journey é reduzir a distância entre o contexto atual de um participante e os caminhos disponíveis para avançar, utilizando inteligência contextual, conexões relevantes e oportunidades acionáveis.
 
-O Journey existe para transformar um processo normalmente fragmentado, demorado e baseado em tentativa e erro em uma experiência contínua, personalizada e orientada por contexto.
+### 1.3 Papel dentro do Ecossistema
 
-### 1.3 Papel dentro do Ecossistema Guivos
+O Journey é o núcleo da experiência do participante e atua como camada de orquestração.
 
-O Journey é o núcleo da experiência do usuário.
-
-Enquanto os demais componentes possuem funções especializadas, o Journey atua como a camada de orquestração da experiência.
-
-Sua responsabilidade é integrar naturalmente todos os componentes do ecossistema, permitindo que o usuário tenha uma experiência única e contínua, independentemente da origem da oportunidade ou do serviço utilizado.
-
-Em termos funcionais:
-
-- Guivos Business fornece organizações e oportunidades institucionais;
-- Guivos Mall fornece produtos, serviços, assinaturas e ativos comerciais;
-- Guivos Media fornece conteúdo, inspiração e formação;
-- Guivos Travel fornece experiências presenciais, viagens e reservas;
-- Guivos Intelligence fornece inteligência, personalização e interpretação contextual;
-- Guivos Ads conecta patrocinadores, anunciantes e oportunidades patrocinadas.
-
-O Journey organiza tudo isso em uma única experiência para o usuário.
+Ele integra capacidades provenientes de Business, Mall, Media, Travel, Intelligence e Ads em uma experiência única e contínua.
 
 ### 1.4 O que o Journey não é
 
 O Journey não é:
 
-- uma rede social tradicional baseada em engajamento superficial;
+- uma rede social tradicional;
 - um marketplace convencional;
 - um buscador genérico;
 - um agregador de eventos;
 - uma plataforma exclusiva de cursos;
 - um aplicativo de produtividade;
-- um sistema de gerenciamento de tarefas;
-- um assistente que toma decisões pelo usuário;
+- um sistema de tarefas;
+- um assistente que decide pelo participante;
 - o executor direto de todos os serviços especializados do ecossistema.
-
-Essas funcionalidades podem existir parcialmente no ecossistema, mas nenhuma delas define o propósito do Journey.
 
 ### 1.5 Proposta de Valor
 
-O Journey entrega a seguinte proposta de valor:
+> Ajudar cada participante a descobrir, no momento certo, as melhores oportunidades para avançar em direção aos seus objetivos, reunindo em uma única experiência aquilo que normalmente estaria disperso em muitas plataformas.
 
-> Ajudar cada pessoa a descobrir, no momento certo, as melhores oportunidades para evoluir em direção aos seus objetivos, reunindo em uma única experiência tudo o que normalmente estaria disperso em dezenas de plataformas.
+Essa proposta combina:
 
-Essa proposta combina três elementos:
-
-- descoberta: encontrar oportunidades relevantes sem depender exclusivamente de buscas manuais;
-- contexto: considerar objetivos, interesses, localização, histórico e momento de vida;
-- continuidade: acompanhar a evolução do usuário ao longo do tempo, ajustando recomendações conforme sua jornada.
+- descoberta;
+- contexto;
+- continuidade;
+- acionabilidade;
+- confiança.
 
 ### 1.6 Princípios de Produto
 
-Toda evolução do Journey deverá respeitar os seguintes princípios:
-
-1. O usuário é o protagonista da própria jornada.
+1. O participante é protagonista da própria jornada.
 2. Toda interação deve gerar valor perceptível.
 3. A inteligência deve reduzir esforço, não aumentar complexidade.
 4. Recomendações devem ser contextualizadas e explicáveis.
-5. O sucesso da plataforma é medido pelo impacto na vida das pessoas, não pelo tempo de tela.
-6. A experiência deve evoluir continuamente com o usuário.
-7. O Journey deve incentivar ação no mundo real, não apenas permanência na tela.
-8. O usuário controla sua jornada; a Guivos amplia suas possibilidades.
-9. A compreensão do participante deve ser progressiva, natural e revisável.
-10. Voz e demais canais multimodais devem reduzir a dependência de formulários extensos.
+5. O sucesso é medido por impacto no mundo real, não por tempo de tela.
+6. A experiência deve evoluir continuamente com o participante.
+7. O Journey deve incentivar ação no mundo real.
+8. O participante controla sua jornada.
+9. A compreensão deve ser progressiva, natural e revisável.
+10. Voz e demais canais multimodais devem reduzir dependência de formulários extensos.
+11. O Journey deve saber quando agir e quando permanecer em silêncio.
+12. Receita, popularidade ou patrocínio não devem superar relevância contextual.
 
 ## 2. Arquitetura em Camadas Aplicada ao Journey
 
 O Journey deve ser compreendido como a Experience Layer da GLPA.
 
 ```text
-Usuário
+Participante
   -> Guivos Journey
        -> Guivos Intelligence
        -> Guivos Business
@@ -172,31 +155,28 @@ Usuário
        -> Platform Layer
 ```
 
-### 2.1 Responsabilidade do Journey
-
-O Journey é responsável por:
+### 2.1 Responsabilidades do Journey
 
 - experiência unificada;
 - superfície principal de interação;
-- descoberta de oportunidades;
+- descoberta contextual de oportunidades;
 - organização da jornada;
 - apresentação de recomendações;
 - objetivos e Momentos Atuais;
 - acompanhamento de evolução;
-- comunicação com o usuário;
+- comunicação com o participante;
 - gamificação e incentivos visíveis;
-- integração experiencial com os demais componentes.
+- integração experiencial com os demais componentes;
+- orquestração de intervenções contextuais.
 
 ### 2.2 Responsabilidades que não pertencem ao Journey
 
-O Journey não é responsável por:
-
 - processar compras e pagamentos do Mall;
 - gerenciar contratos B2B do Business;
-- produzir inteligência algorítmica própria fora da Intelligence Layer;
+- produzir inteligência algorítmica fora da Intelligence Layer;
 - operar campanhas de mídia paga do Ads;
 - produzir conteúdo editorial do Media;
-- executar reservas e operações de viagem do Travel;
+- executar reservas do Travel;
 - manter infraestrutura técnica comum da Platform Layer.
 
 ## 3. Captura Multimodal de Contexto
@@ -211,7 +191,7 @@ O participante deve poder descrever sua realidade, objetivos, limitações e exp
 
 A voz deve ser tratada como canal prioritário por permitir expressão mais natural, contextual e detalhada.
 
-A experiência deve também oferecer alternativas acessíveis, incluindo texto e preenchimento estruturado quando necessário.
+A experiência também deve oferecer texto e preenchimento estruturado quando necessário.
 
 ### 3.3 Canais multimodais candidatos
 
@@ -221,65 +201,182 @@ A experiência deve também oferecer alternativas acessíveis, incluindo texto e
 - imagens autorizadas;
 - localização autorizada;
 - calendário autorizado;
-- wearables e aplicativos de saúde ou esporte autorizados;
+- wearables e aplicativos autorizados;
 - integrações profissionais autorizadas;
 - histórico de interações e experiências da Guivos.
 
-### 3.4 Fluxo conceitual
+### 3.4 Sequência comportamental
 
 ```text
-Participante
-  -> Entrada multimodal
-  -> Context Intelligence Engine
-  -> proposta de interpretação
-  -> confirmação, correção ou limitação pelo participante
-  -> Modelo Vivo do Participante
-  -> Journey e demais camadas autorizadas
+Escutar
+  -> Compreender
+  -> Refletir a compreensão
+  -> Confirmar
+  -> Recomendar ou agir
 ```
+
+A primeira experiência não deve buscar conhecer tudo. Deve gerar confiança suficiente para que o participante perceba que foi compreendido.
 
 ### 3.5 Regras
 
-1. O participante não deve ser obrigado a revelar informações além do necessário para a experiência escolhida.
+1. O participante não deve revelar mais do que o necessário.
 2. Inferências relevantes devem ser explicáveis e revisáveis.
-3. Informações sensíveis exigem critérios superiores de consentimento e governança.
-4. O sistema deve diferenciar fatos declarados, dados integrados, evidências observadas e inferências provisórias.
-5. O participante deve poder corrigir, complementar, ocultar ou limitar o uso das informações, observadas restrições legais e operacionais.
+3. Informações sensíveis exigem consentimento e governança superiores.
+4. Fatos declarados, dados integrados, evidências e inferências devem ser diferenciados.
+5. O participante deve poder corrigir, complementar, ocultar ou limitar o uso das informações.
+6. A compreensão inicial deve ser confirmada antes de orientar decisões relevantes.
 
 ## 4. Modelo Vivo do Participante — Conceito Candidato
 
-O `Living Participant Model (LPM)` representa, provisoriamente, a estrutura dinâmica utilizada para consolidar o contexto autorizado de um participante ao longo do tempo.
+O `Living Participant Model (LPM)` representa provisoriamente a estrutura dinâmica utilizada para consolidar contexto autorizado, temporal, explicável e atualizável.
 
-O LPM não é um cadastro estático nem um perfil público. Ele é uma representação contextual, temporal, explicável e continuamente atualizável.
+Ele pode incluir identidade, Momento Atual, objetivos, Próximos Passos, interesses, competências, preferências, limitações, disponibilidade, relacionamentos, experiências, evidências, proveniência, confiança e permissões.
 
-Elementos candidatos:
-
-- identidade;
-- Momento Atual;
-- objetivos;
-- Próximos Passos;
-- interesses;
-- competências;
-- preferências;
-- limitações;
-- disponibilidade;
-- relacionamentos;
-- experiências;
-- evidências de evolução;
-- proveniência;
-- confiança;
-- permissões.
-
-O conceito permanece em Discovery/Engineering e deverá ser formalizado apenas após o Architecture Engineering Sprint e futura avaliação da GPMA.
+O conceito permanece em Discovery/Engineering e não deve ser tratado como componente técnico obrigatório nesta fase.
 
 ## 5. Context Intelligence Engine — Capacidade Candidata
 
-O `Context Intelligence Engine (CIE)` é uma capacidade candidata da Intelligence Layer para receber entradas multimodais autorizadas, interpretar contexto, propor atualizações do LPM e preservar proveniência, confiança, temporalidade e explicabilidade.
+O `Context Intelligence Engine (CIE)` é uma capacidade candidata da Intelligence Layer para interpretar entradas multimodais, propor atualizações do contexto e preservar proveniência, confiança, temporalidade e explicabilidade.
 
-O CIE não pertence à Experience Layer e não deve alterar silenciosamente informações sensíveis ou permanentes sem critérios de confirmação e governança.
+O CIE não deve alterar silenciosamente informações sensíveis ou permanentes.
 
-## 6. Hierarquia Documental de Produto
+## 6. Filosofia Operacional do Journey
 
-O desenvolvimento funcional do Journey seguirá a hierarquia:
+O Journey deverá operar por cinco responsabilidades permanentes:
+
+1. **Compreender** — construir e atualizar o contexto do participante;
+2. **Acompanhar** — reconhecer evolução, mudanças e continuidade ao longo do tempo;
+3. **Ativar** — tornar visíveis oportunidades quando elas se tornam relevantes;
+4. **Orquestrar** — organizar próximos passos, intervenções e experiências;
+5. **Aprender** — incorporar resultados e evidências autorizadas.
+
+## 7. Relação Contínua e Vida Real
+
+O Journey não deve ser especificado apenas como um aplicativo utilizado em sessões isoladas.
+
+Ele representa uma relação contínua entre o participante e a Guivos.
+
+```text
+Vida real
+  -> mudança relevante
+  -> atualização do contexto
+  -> nova avaliação
+  -> intervenção ou silêncio
+  -> experiência
+  -> nova evidência
+  -> novo contexto
+```
+
+O aplicativo é um ponto de contato dessa relação, não o centro da jornada.
+
+## 8. Estado e Eventos de Vida
+
+### 8.1 Estado
+
+Estado representa a realidade atual do participante.
+
+Exemplos:
+
+- profissão atual;
+- cidade;
+- disponibilidade;
+- objetivos;
+- hábitos;
+- relacionamentos;
+- competências.
+
+### 8.2 Evento de Vida
+
+Evento de Vida representa uma mudança relevante capaz de alterar o estado do participante.
+
+Exemplos:
+
+- novo emprego;
+- demissão;
+- mudança de cidade;
+- conclusão de curso;
+- nascimento de filho;
+- início de atividade esportiva;
+- entrada em coletivo;
+- nova responsabilidade profissional ou comunitária.
+
+### 8.3 Regras
+
+- eventos podem ser declarados, observados ou recebidos por integração autorizada;
+- eventos inferidos devem ser confirmados quando houver impacto relevante;
+- nem todo evento exige intervenção;
+- o histórico deve preservar temporalidade e origem.
+
+## 9. Oportunidades Ativas
+
+### 9.1 Oportunidade
+
+Oportunidade é uma iniciativa, recurso ou possibilidade existente no ecossistema.
+
+### 9.2 Oportunidade Ativa
+
+Oportunidade Ativa é uma oportunidade que, considerando o contexto atual de um participante, possui potencial imediato de apoiar progresso e merece ser apresentada.
+
+### 9.3 Regra central
+
+O Journey não deve maximizar a quantidade de oportunidades mostradas.
+
+Deve priorizar relevância, momento, acionabilidade, confiança e potencial de evolução.
+
+## 10. Intervenções Contextuais
+
+### 10.1 Definição
+
+Intervenção Contextual é a decisão de agir em determinado momento para gerar valor à jornada.
+
+Notificação é apenas um dos possíveis canais.
+
+### 10.2 Orquestração de Intervenções
+
+A responsabilidade funcional deve decidir:
+
+- quando agir;
+- quando perguntar;
+- quando esperar;
+- quando apenas observar;
+- quando permanecer em silêncio.
+
+### 10.3 Princípio da Intervenção Relevante
+
+> A Guivos somente deve interromper o participante quando houver evidências suficientes de que a intervenção possui potencial real de gerar valor.
+
+## 11. Distância para Evolução — Conceito Interno
+
+`Distância para Evolução` representa, internamente, a diferença entre o contexto atual do participante e os caminhos disponíveis para avançar.
+
+Não é uma medida única nem necessariamente numérica nesta fase.
+
+Serve como princípio de produto para evitar excesso de opções e orientar descoberta, priorização e acionabilidade.
+
+### Formulação operacional
+
+> O objetivo do Guivos Journey não é maximizar a quantidade de oportunidades apresentadas, mas reduzir continuamente a distância entre o contexto atual do participante e seu potencial de evolução, ativando apenas oportunidades com maior probabilidade de gerar progresso naquele momento.
+
+A linguagem pública continua utilizando formulações mais simples, como “encontrar as oportunidades certas no momento certo”.
+
+## 12. Fluxo Funcional Central
+
+```text
+Captura de contexto
+  -> compreensão refletida
+  -> confirmação do participante
+  -> objetivos e prioridades
+  -> eventos e mudanças
+  -> avaliação de oportunidades
+  -> oportunidades ativas
+  -> intervenção contextual
+  -> experiência
+  -> evidências
+  -> atualização do contexto
+  -> novo ciclo
+```
+
+## 13. Hierarquia Documental de Produto
 
 ```text
 GPA
@@ -291,19 +388,40 @@ GPA
 ```
 
 - PAS define o produto/camada;
-- JFA define os domínios funcionais permanentes;
-- FDS detalha cada domínio funcional;
+- JFA define domínios funcionais permanentes;
+- FDS detalha cada domínio;
 - UX define a interação;
 - Technical Specification define a implementação.
 
-## 7. Ponto de retomada
+## 14. Sequência de Especificação Funcional
 
-Este documento está preservado durante o Architecture Engineering Sprint.
+A próxima evolução seguirá:
 
-Após a definição da taxonomia e do meta-modelo do GKR, a próxima etapa do PAS-001 deverá:
+1. Captura de Contexto;
+2. Construção do Modelo de Contexto;
+3. Objetivos;
+4. Eventos de Vida;
+5. Próximos Passos;
+6. Oportunidades Ativas;
+7. Intervenções Contextuais;
+8. Experiências;
+9. Evolução;
+10. IA;
+11. Integrações;
+12. Modelo Econômico;
+13. KPIs;
+14. Roadmap.
 
-1. confirmar a posição de JFA e FDS na taxonomia oficial;
-2. iniciar a JFA do Journey;
-3. detalhar o domínio de Captura Multimodal de Contexto;
-4. modelar os limites entre Journey, CIE, LPM, Grafo Global e Platform Layer;
-5. avançar posteriormente para Missão, Objetivos Estratégicos, Público-alvo, Arquitetura Funcional, Fluxos, Integrações, Modelo Econômico, KPIs e Roadmap.
+## 15. Ponto de Retomada
+
+A próxima atividade é detalhar funcionalmente a **Captura de Contexto**, começando pela primeira conversa do participante com a Guivos.
+
+Essa especificação deverá responder:
+
+- como o participante inicia por voz ou texto;
+- como a Guivos escuta sem conduzir excessivamente;
+- como interpreta e reflete o entendimento;
+- como o participante confirma, corrige ou limita;
+- como consentimento e privacidade são apresentados;
+- como o primeiro contexto gera objetivos, prioridades e primeiras oportunidades;
+- quais erros, exceções e saídas devem ser tratados.
