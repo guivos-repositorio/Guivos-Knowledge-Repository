@@ -1,107 +1,92 @@
 # Guivos Knowledge Repository (GKR)
 
-O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade institucional, reunindo visão, fundamentos, arquiteturas, modelos, princípios, decisões e patrimônio intelectual.
-
-A partir da GE-2, o GKR também opera como sistema oficial de descoberta, consolidação, governança e evolução do conhecimento da Guivos.
+O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade institucional, reunindo fundamentos, arquiteturas, modelos, decisões, especificações e patrimônio intelectual.
 
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5.5 — Context and Architecture Engineering Checkpoint
-- **Modo vigente:** Institutional Consolidation Mode
-- **Sprint vigente:** 0.28.0 — Guivos Knowledge Architecture Foundation
-- **Checkpoint vigente:** CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE 1.0.0
-- **Sincronização vigente:** GE2-SYNC-004
-- **Documento atual da GKA:** GKA-000 — Parte V — Evolução Institucional
-- **Frente vigente:** Enterprise Design & Business Specification
-- **Especificação preservada:** PAS-001 — Guivos Journey 0.2.0
-- **Arquitetura funcional:** GLPA-001 — Guivos Layered Product Architecture
-- **Guia público vigente:** GOG-001 — Guia Oficial da Guivos 4.0.0
-- **Documentação pública:** GPD-000 3.0.0
-- **Próximo trabalho:** Architecture Engineering Sprint
-- **Modelo econômico:** planejado
+- **Marco vigente:** M5.6 — Journey Operational Philosophy Consolidated
+- **Frente operacional:** Product Engineering
+- **Sincronização vigente:** GE2-SYNC-005
+- **Especificação ativa:** PAS-001 — Guivos Journey 0.3.0
+- **Arquitetura funcional:** GLPA-001
+- **Guia Oficial:** GOG-001 4.0.0
+- **GKA-000:** Parte V pendente
 - **A2-R02:** em espera operacional
+- **Guivos Economic Model:** planejado
 
 ## Ponto exato de retomada
 
-Retomar pelo `Architecture Engineering Sprint`.
+Retomar no `PAS-001 — Guivos Journey` pela especificação funcional detalhada da **Captura de Contexto**.
 
-Primeira atividade:
+A próxima entrega deverá cobrir:
 
-> Projetar a taxonomia oficial e o meta-modelo do Guivos Knowledge Repository.
+- primeira conversa por voz ou texto;
+- escuta e interpretação;
+- reflexão da compreensão;
+- confirmação, correção e limitação;
+- consentimento e privacidade;
+- exceções;
+- transição para objetivos, prioridades e primeiras oportunidades.
 
-Somente depois decidir quais ativos candidatos realmente devem existir e retomar o `PAS-001 — Guivos Journey` pela JFA e pela Captura Multimodal de Contexto.
+## Filosofia operacional do Journey
 
-## Atualização pública mais recente
+O Journey opera por cinco responsabilidades permanentes:
 
-O Guia Oficial 4.0 foi alinhado à estrutura atual da Guivos e agora apresenta publicamente:
+1. compreender;
+2. acompanhar;
+3. ativar;
+4. orquestrar;
+5. aprender.
 
-- Guivos Journey como experiência principal;
-- Guivos Intelligence como inteligência transversal;
-- Guivos Business, Mall, Travel, Media e Ads como soluções especializadas;
-- Pessoa, Organização e Coletivo como participantes;
-- captura progressiva e multimodal de contexto;
+Sequência comportamental:
+
+```text
+Escutar
+  -> Compreender
+  -> Refletir
+  -> Confirmar
+  -> Recomendar ou agir
+```
+
+## Conceitos funcionais consolidados no PAS-001
+
+- Captura Multimodal de Contexto;
 - voz como canal prioritário, mas não exclusivo;
-- oportunidade como unidade prática de valor;
-- novos diagramas do ciclo de evolução, estrutura da Guivos, integração entre componentes, inteligência contextual e Grafo Global;
-- maior clareza sobre privacidade, transparência e controle do participante.
+- relação contínua com a vida real;
+- Estado e Eventos de Vida;
+- Oportunidades Ativas;
+- Intervenções Contextuais;
+- Orquestração de Intervenções;
+- Distância para Evolução como conceito interno de produto;
+- LPM e CIE preservados como candidatos, não como componentes técnicos obrigatórios.
 
-## Decisões mais recentes
+## Decisão de foco
 
-- captura de contexto multimodal;
-- voz como canal prioritário, mas não exclusivo;
-- compreensão progressiva do participante;
-- `Living Participant Model (LPM)` como conceito candidato;
-- `Context Intelligence Engine (CIE)` como capacidade candidata;
-- família candidata de Intelligence Engines;
-- distinção entre memória contextual do participante e memória relacional do Grafo Global;
-- hierarquia GPA → PAS → JFA → FDS → UX → Technical;
-- contenção da criação de novos documentos estruturais até a definição da taxonomia do GKR.
+O Architecture Engineering Sprint não é mais a atividade imediata.
 
-## Ativos candidatos preservados
-
-- GTF — Guivos Transformation Framework;
-- GCM — Guivos Conceptual Model;
-- GPMA — Guivos Participant Model Architecture;
-- GIA detalhada por Intelligence Engines;
-- GLS — Guivos Language System;
-- GDP — Guivos Design Principles;
-- GDF — Guivos Decision Framework;
-- GAME — Guivos Architecture Methodology & Engineering.
-
-Esses ativos ainda não foram criados como documentos permanentes.
+GTF, GCM, GPMA, GLS, GDP, GDF e GAME permanecem preservados como candidatos, mas não serão desenvolvidos antes da conclusão suficiente das especificações funcionais dos produtos oficiais.
 
 ## Acesso rápido
 
-- [Guia Oficial da Guivos 4.0](docs/public/guia-oficial-da-guivos.md)
-- [Documentação Pública da Guivos](docs/public/index.md)
-- [GE2-SYNC-004 — Context, Participant Model and Architecture Engineering Sync](docs/project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md)
-- [Architecture Engineering Pause Checkpoint](docs/project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md)
 - [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
+- [GE2-SYNC-005 — Journey Operational Philosophy and Product Engineering](docs/project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
-- [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
+- [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
-- [Architectural Milestones](docs/project/architectural-milestones.md)
+- [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
-
-## Pendências institucionais preservadas
-
-- concluir a Parte V do GKA-000;
-- revisar e publicar o GKA-000;
-- manter `docs/knowledge-architecture/` não criado até aprovação integral;
-- retomar A2-R02 após a fundação documental da GKA;
-- desenvolver o Guivos Economic Model após dependências conceituais e funcionais suficientes.
 
 ## Princípios centrais
 
 > A Guivos é concebida em sua capacidade máxima. A implementação realiza progressivamente essa visão.
 
-> Nenhuma arquitetura permanente deverá existir sem conhecimento consolidado que a sustente, e nenhum conhecimento consolidado deverá existir sem evidências rastreáveis que o fundamentem.
-
-> Novos conceitos estruturais devem seguir Discovery → Engineering → Canon → Specification → Implementation.
-
 > O participante permanece soberano sobre as informações utilizadas para compreender e personalizar sua jornada.
+
+> O Journey não maximiza quantidade de oportunidades; ele busca ativar as oportunidades certas no momento certo.
+
+> Cada sessão de trabalho deve produzir incremento funcional concreto enquanto houver produto oficial sem especificação suficiente.
 
 ## Pipeline de publicação
 
