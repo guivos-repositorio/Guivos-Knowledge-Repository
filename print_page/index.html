@@ -3494,7 +3494,7 @@
     
   
   
-    <span class="md-status md-status--active"></span>
+    <span class="md-status md-status--completed"></span>
   
 
   
@@ -16613,289 +16613,215 @@ Baseline authorization: YES
 <h2 id="project-architectural-milestones-regra-de-transicao">Regra de transição<a class="headerlink" href="#project-architectural-milestones-regra-de-transicao" title="Permanent link">&para;</a></h2>
 <p>Um marco somente muda de estado quando seus critérios de conclusão estiverem demonstrados no GKR. Nenhuma hipótese, draft ou ativo experimental é promovido automaticamente à Canon.</p></section><section class="print-page" id="project-ar-001-gkr-gog-consistency-and-diagram-review" heading-number="16.2"><h1 id="project-ar-001-gkr-gog-consistency-and-diagram-review-ar-001-gkr-and-gog-consistency-and-diagram-review">AR-001 — GKR and GOG Consistency and Diagram Review<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-ar-001-gkr-and-gog-consistency-and-diagram-review" title="Permanent link">&para;</a></h1>
 <h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-1-finalidade">1. Finalidade<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Esta revisão verifica divergências, desatualizações, sobreposições, lacunas editoriais e necessidades de diagramas entre o <code>GOG-001 — Guia Oficial da Guivos</code> e os principais documentos do Guivos Knowledge Repository.</p>
-<p>A revisão não promove novos conceitos. Seu objetivo é alinhar o que já foi consolidado, corrigir referências legadas e melhorar a compreensão do ecossistema.</p>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-2-documentos-prioritarios">2. Documentos prioritários<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-2-documentos-prioritarios" title="Permanent link">&para;</a></h2>
-<ol>
+<p>Esta revisão verificou divergências, desatualizações, sobreposições, lacunas editoriais e necessidades de diagramas entre o <code>GOG-001 — Guia Oficial da Guivos</code> e os principais documentos do Guivos Knowledge Repository.</p>
+<p>A revisão não criou nova meta-arquitetura nem promoveu candidatos técnicos à Canon.</p>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-2-estado-final">2. Estado final<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-2-estado-final" title="Permanent link">&para;</a></h2>
+<p><strong>Completed em 11/07/2026.</strong></p>
+<p>Todos os achados prioritários foram tratados ou formalmente preservados por decisão editorial.</p>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-3-documentos-revisados">3. Documentos revisados<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-3-documentos-revisados" title="Permanent link">&para;</a></h2>
+<ul>
 <li><code>GOG-001 — Guia Oficial da Guivos</code>;</li>
 <li><code>PAS-001 — Guivos Journey</code>;</li>
 <li><code>GLPA-001 — Guivos Layered Product Architecture</code>;</li>
 <li><code>GIA-000 — Guivos Intelligence Architecture</code>;</li>
 <li><code>GKR-GLOSSARY-001 — Glossário Canônico</code>;</li>
 <li>Foundation: Propósito, Missão e Visão;</li>
-<li>Roadmap, Knowledge Board, Architectural Milestones, README, GPD e MkDocs.</li>
-</ol>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-3-criterios-da-revisao">3. Critérios da revisão<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-3-criterios-da-revisao" title="Permanent link">&para;</a></h2>
-<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-31-consistencia-conceitual">3.1 Consistência conceitual<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-31-consistencia-conceitual" title="Permanent link">&para;</a></h3>
-<ul>
-<li>uma definição oficial por conceito;</li>
-<li>ausência de definições concorrentes;</li>
-<li>distinção entre linguagem pública, interna, arquitetural e técnica;</li>
-<li>preservação de propósito, missão e visão oficiais.</li>
-</ul>
-<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-32-consistencia-documental">3.2 Consistência documental<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-32-consistencia-documental" title="Permanent link">&para;</a></h3>
-<ul>
-<li>versões e estados sincronizados;</li>
-<li>referências e dependências atuais;</li>
-<li>nomenclatura oficial dos produtos;</li>
-<li>eliminação de termos legados quando não forem históricos.</li>
-</ul>
-<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-33-qualidade-editorial">3.3 Qualidade editorial<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-33-qualidade-editorial" title="Permanent link">&para;</a></h3>
-<ul>
-<li>clareza para leitores leigos e especialistas;</li>
-<li>redução de repetições;</li>
-<li>exemplos proporcionais;</li>
-<li>títulos e sequência lógica;</li>
-<li>distinção entre estado atual, visão futura e hipótese.</li>
-</ul>
-<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-34-diagramas">3.4 Diagramas<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-34-diagramas" title="Permanent link">&para;</a></h3>
-<p>Um diagrama deve ser criado ou revisado quando reduzir significativamente o esforço de compreensão, esclarecer responsabilidades ou revelar relações que o texto isolado deixa ambíguas.</p>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-4-achados-e-estado-de-tratamento">4. Achados e estado de tratamento<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-4-achados-e-estado-de-tratamento" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Documento</th>
-<th>Achado</th>
-<th>Severidade</th>
-<th>Estado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AR-001-F01</td>
-<td>GOG / Foundation</td>
-<td>Missão pública não reproduzia a missão operacional oficial.</td>
-<td>Alta</td>
-<td><strong>Resolvido no GOG 4.2.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F02</td>
-<td>GOG / Foundation</td>
-<td>Visão pública divergia da formulação oficial e utilizava “comunidades” no lugar de “coletivos”.</td>
-<td>Alta</td>
-<td><strong>Resolvido no GOG 4.2.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F03</td>
-<td>GLPA / PAS</td>
-<td>GLPA registrava “perfil do participante” e “feed” como responsabilidades permanentes.</td>
-<td>Alta</td>
-<td><strong>Resolvido na GLPA 1.1.0 e PAS 0.4.1</strong></td>
-</tr>
-<tr>
-<td>AR-001-F04</td>
-<td>GIA / Roadmap</td>
-<td>GIA mantinha dependência desatualizada do Architecture Engineering Sprint.</td>
-<td>Média</td>
-<td><strong>Resolvido na GIA 1.3.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F05</td>
-<td>Glossário / PAS</td>
-<td>Glossário não continha conceitos funcionais vigentes do PAS.</td>
-<td>Alta</td>
-<td><strong>Resolvido no Glossário 1.8.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F06</td>
-<td>Glossário</td>
-<td>“Capacidade” não distinguia competência de participante, capacidade arquitetural e capacidade funcional de produto.</td>
-<td>Alta</td>
-<td><strong>Resolvido no Glossário 1.8.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F07</td>
-<td>GOG / GLPA</td>
-<td>Diagrama público não apresentava Platform Layer e relações transversais completas.</td>
-<td>Média</td>
-<td><strong>Resolvido no GOG 4.2.0 e refinado na GLPA 1.1.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F08</td>
-<td>GOG</td>
-<td>Ausência de diagrama da primeira compreensão.</td>
-<td>Média</td>
-<td><strong>Resolvido no GOG 4.2.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F09</td>
-<td>PAS</td>
-<td>Faltavam diagramas Mermaid de Captura de Contexto, Ciclo Cognitivo e Contexto Vivo.</td>
-<td>Média</td>
-<td><strong>Resolvido no PAS 0.4.1</strong></td>
-</tr>
-<tr>
-<td>AR-001-F10</td>
-<td>GOG</td>
-<td>Public Canon poderia ser confundido com produto lançado.</td>
-<td>Baixa</td>
-<td><strong>Resolvido no GOG 4.2.0 e Glossário 1.8.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F11</td>
-<td>GOG</td>
-<td>Fluxo prático não explicitava reflexão da compreensão antes da confirmação.</td>
-<td>Média</td>
-<td><strong>Resolvido no GOG 4.2.0</strong></td>
-</tr>
-<tr>
-<td>AR-001-F12</td>
-<td>GOG / PAS</td>
-<td>GOG usa linguagem pública “oportunidades relevantes”; PAS usa internamente “Oportunidade Ativa”.</td>
-<td>Baixa</td>
-<td><strong>Mapeamento registrado no Glossário 1.8.0</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-5-diagramas-estado-atual">5. Diagramas — estado atual<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-5-diagramas-estado-atual" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Diagrama</th>
-<th>Documento</th>
-<th>Estado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ciclo Contínuo de Evolução</td>
-<td>GOG</td>
-<td>Revisado no GOG 4.2.0</td>
-</tr>
-<tr>
-<td>Estrutura pública da Guivos</td>
-<td>GOG</td>
-<td>Revisado no GOG 4.2.0</td>
-</tr>
-<tr>
-<td>Primeira compreensão</td>
-<td>GOG</td>
-<td>Criado no GOG 4.2.0</td>
-</tr>
-<tr>
-<td>Funcionamento prático</td>
-<td>GOG</td>
-<td>Criado no GOG 4.2.0</td>
-</tr>
-<tr>
-<td>Arquitetura em camadas</td>
-<td>GLPA</td>
-<td>Revisado na GLPA 1.1.0</td>
-</tr>
-<tr>
-<td>Aplicação das camadas ao Journey</td>
-<td>PAS</td>
-<td>Criado no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Filosofia operacional</td>
-<td>PAS</td>
-<td>Convertido para Mermaid no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Relação contínua com a vida real</td>
-<td>PAS</td>
-<td>Convertido para Mermaid no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Ciclo Cognitivo</td>
-<td>PAS</td>
-<td>Convertido para Mermaid no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Captura de Contexto</td>
-<td>PAS</td>
-<td>Criado no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Interpretação do Contexto</td>
-<td>PAS</td>
-<td>Criado no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Contexto Vivo</td>
-<td>PAS</td>
-<td>Criado no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Ciclo de vida da informação</td>
-<td>PAS</td>
-<td>Convertido para state diagram no PAS 0.4.1</td>
-</tr>
-<tr>
-<td>Meu Contexto Hoje</td>
-<td>PAS</td>
-<td>Criado como diagrama conceitual no PAS 0.4.1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-6-etapa-1-gog-e-foundation">6. Etapa 1 — GOG e Foundation<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-6-etapa-1-gog-e-foundation" title="Permanent link">&para;</a></h2>
-<p><strong>Estado:</strong> concluída em 11/07/2026.</p>
-<p>Principais resultados:</p>
-<ul>
-<li>propósito, missão e visão sincronizados com a Foundation;</li>
-<li>significado de Public Canon esclarecido;</li>
-<li>Momento Atual reforçado como contexto presente, não cadastro fixo;</li>
-<li>reflexão da compreensão inserida antes da confirmação;</li>
-<li>diagramas públicos criados e revisados;</li>
-<li><code>GOG-001</code> atualizado para <code>4.2.0</code>.</li>
-</ul>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-7-etapa-2-pas-e-glpa">7. Etapa 2 — PAS e GLPA<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-7-etapa-2-pas-e-glpa" title="Permanent link">&para;</a></h2>
-<p><strong>Estado:</strong> concluída em 11/07/2026.</p>
-<p>Principais resultados:</p>
-<ul>
-<li>“perfil” substituído por visão autorizada do contexto;</li>
-<li>“feed” removido como responsabilidade permanente;</li>
-<li>superfície principal de experiência adotada como formulação neutra;</li>
-<li>limites entre Journey, Intelligence, serviços e Platform refinados;</li>
-<li>diagramas funcionais prioritários criados;</li>
-<li><code>GLPA-001</code> atualizada para <code>1.1.0</code>;</li>
-<li><code>PAS-001</code> atualizado para <code>0.4.1</code>.</li>
-</ul>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-8-etapa-3-gia-e-glossario">8. Etapa 3 — GIA e Glossário<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-8-etapa-3-gia-e-glossario" title="Permanent link">&para;</a></h2>
-<p><strong>Estado:</strong> concluída em 11/07/2026.</p>
-<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-alteracoes-executadas-na-gia-130">Alterações executadas na GIA 1.3.0<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-alteracoes-executadas-na-gia-130" title="Permanent link">&para;</a></h3>
-<ul>
-<li>remoção da dependência do Architecture Engineering Sprint;</li>
-<li>substituição pela exigência de evidência prática do Product Engineering, validação de responsabilidade permanente e decisão arquitetural formal;</li>
-<li>registro de Interpretação do Contexto e Contexto Vivo como conceitos funcionais vigentes no PAS;</li>
-<li>distinção entre Contexto Vivo e o candidato LPM;</li>
-<li>atualização do CIE para propor atualizações do Contexto Vivo, sem promovê-lo a componente obrigatório;</li>
-<li>explicitação dos limites entre Journey, Intelligence, Service e Platform Layers;</li>
-<li>preservação de CIE, LPM, GPMA e Intelligence Engines como candidatos ou hipóteses.</li>
-</ul>
-<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-alteracoes-executadas-no-glossario-180">Alterações executadas no Glossário 1.8.0<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-alteracoes-executadas-no-glossario-180" title="Permanent link">&para;</a></h3>
-<ul>
-<li>reorganização do glossário por domínios conceituais;</li>
-<li>inclusão de Contexto, Captura de Contexto, Interpretação do Contexto e Contexto Vivo;</li>
-<li>inclusão de Representação Humilde, Meu Contexto Hoje, Proveniência, Confiança, Temporalidade e Explicabilidade;</li>
-<li>inclusão de Oportunidade Ativa, Evento de Vida, Intervenção Contextual e Distância para Evolução;</li>
-<li>distinção entre Capacidade do Participante, Capacidade Arquitetural e Capacidade Funcional de Produto;</li>
-<li>inclusão do Princípio da Singularidade Funcional e Contrato da Capacidade;</li>
-<li>inclusão de Product Engineering e Ciclo Cognitivo do Domínio;</li>
-<li>inclusão de Public Canon;</li>
-<li>registro de “oportunidade relevante” como linguagem pública preferencial para Oportunidade Ativa;</li>
-<li>preservação explícita de CIE e LPM fora da Canon técnica.</li>
-</ul>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-9-etapa-4-documentos-de-estado">9. Etapa 4 — Documentos de estado<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-9-etapa-4-documentos-de-estado" title="Permanent link">&para;</a></h2>
-<p><strong>Estado:</strong> próxima.</p>
-<p>Sincronizar:</p>
-<ol>
 <li>Roadmap;</li>
 <li>Knowledge Board;</li>
 <li>Architectural Milestones;</li>
 <li>README;</li>
-<li><code>docs/index.md</code>;</li>
-<li>GPD;</li>
+<li>página inicial do site;</li>
+<li>Documentação Pública;</li>
 <li>Changelog;</li>
-<li>MkDocs;</li>
-<li>referências de versão e ponto exato de retomada.</li>
-</ol>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-10-regra-de-alteracao">10. Regra de alteração<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-10-regra-de-alteracao" title="Permanent link">&para;</a></h2>
-<p>Nenhuma correção será realizada apenas por preferência editorial. Cada alteração deverá estar ligada a divergência demonstrável, desatualização de estado, ambiguidade relevante, lacuna de compreensão ou necessidade clara de rastreabilidade.</p>
-<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-11-ponto-de-retomada">11. Ponto de retomada<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-11-ponto-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Iniciar a <strong>Etapa 4 — Documentos de estado</strong>, sincronizando versões, marcos, índices, navegação, histórico e ponto exato de retomada após as correções conceituais concluídas nas Etapas 1, 2 e 3.</p></section><section class="print-page" id="project-ge2-sync-006-context-interpretation-and-living-context-progress" heading-number="16.3"><h1 id="project-ge2-sync-006-context-interpretation-and-living-context-progress-ge2-sync-006-context-interpretation-and-living-context-progress-sync">GE2-SYNC-006 — Context Interpretation and Living Context Progress Sync<a class="headerlink" href="#project-ge2-sync-006-context-interpretation-and-living-context-progress-ge2-sync-006-context-interpretation-and-living-context-progress-sync" title="Permanent link">&para;</a></h1>
+<li>navegação MkDocs.</li>
+</ul>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-4-achados-e-resolucao">4. Achados e resolução<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-4-achados-e-resolucao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Achado</th>
+<th>Estado final</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F01</td>
+<td>Missão pública divergia da Foundation</td>
+<td>Resolvido no GOG 4.2.0</td>
+</tr>
+<tr>
+<td>F02</td>
+<td>Visão pública divergia da Foundation</td>
+<td>Resolvido no GOG 4.2.0</td>
+</tr>
+<tr>
+<td>F03</td>
+<td>GLPA utilizava perfil e feed como responsabilidades permanentes</td>
+<td>Resolvido na GLPA 1.1.0 e PAS 0.4.1</td>
+</tr>
+<tr>
+<td>F04</td>
+<td>GIA dependia do antigo Architecture Engineering Sprint</td>
+<td>Resolvido na GIA 1.3.0</td>
+</tr>
+<tr>
+<td>F05</td>
+<td>Glossário não continha conceitos funcionais vigentes</td>
+<td>Resolvido no Glossário 1.8.0</td>
+</tr>
+<tr>
+<td>F06</td>
+<td>Capacidade possuía significado ambíguo</td>
+<td>Resolvido no Glossário 1.8.0</td>
+</tr>
+<tr>
+<td>F07</td>
+<td>Diagrama público não apresentava Platform Layer</td>
+<td>Resolvido no GOG 4.2.0</td>
+</tr>
+<tr>
+<td>F08</td>
+<td>Ausência de diagrama da primeira compreensão</td>
+<td>Resolvido no GOG 4.2.0</td>
+</tr>
+<tr>
+<td>F09</td>
+<td>Ausência de diagramas funcionais prioritários no PAS</td>
+<td>Resolvido no PAS 0.4.1</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>Public Canon poderia ser confundido com lançamento</td>
+<td>Resolvido no GOG 4.2.0</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Fluxo público não mostrava reflexão antes da confirmação</td>
+<td>Resolvido no GOG 4.2.0</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>Oportunidade relevante e Oportunidade Ativa</td>
+<td>Mantido como mapeamento entre linguagem pública e interna</td>
+</tr>
+</tbody>
+</table>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-5-diagramas-revisados-ou-criados">5. Diagramas revisados ou criados<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-5-diagramas-revisados-ou-criados" title="Permanent link">&para;</a></h2>
+<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-gog">GOG<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-gog" title="Permanent link">&para;</a></h3>
+<ul>
+<li>primeira compreensão;</li>
+<li>Ciclo Contínuo de Evolução;</li>
+<li>estrutura pública da Guivos;</li>
+<li>funcionamento prático.</li>
+</ul>
+<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-glpa">GLPA<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-glpa" title="Permanent link">&para;</a></h3>
+<ul>
+<li>arquitetura funcional em camadas;</li>
+<li>relações transversais entre Journey, Intelligence, serviços e plataforma.</li>
+</ul>
+<h3 id="project-ar-001-gkr-gog-consistency-and-diagram-review-pas">PAS<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-pas" title="Permanent link">&para;</a></h3>
+<ul>
+<li>aplicação das camadas ao Journey;</li>
+<li>filosofia operacional;</li>
+<li>relação contínua com a vida real;</li>
+<li>Ciclo Cognitivo;</li>
+<li>Captura de Contexto;</li>
+<li>Interpretação do Contexto;</li>
+<li>Contexto Vivo;</li>
+<li>ciclo de vida da informação;</li>
+<li><code>Meu Contexto Hoje</code>.</li>
+</ul>
+<p>Os diagramas funcionais não prescrevem topologia técnica definitiva.</p>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-6-baseline-documental-apos-a-revisao">6. Baseline documental após a revisão<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-6-baseline-documental-apos-a-revisao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Ativo</th>
+<th>Versão / Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GOG-001</td>
+<td>Public Canon 4.2.0</td>
+</tr>
+<tr>
+<td>PAS-001</td>
+<td>Draft 0.4.1</td>
+</tr>
+<tr>
+<td>GLPA-001</td>
+<td>Approved 1.1.0</td>
+</tr>
+<tr>
+<td>GIA-000</td>
+<td>Active 1.3.0</td>
+</tr>
+<tr>
+<td>Glossário Canônico</td>
+<td>Consolidated 1.8.0</td>
+</tr>
+<tr>
+<td>Roadmap</td>
+<td>5.1.0</td>
+</tr>
+<tr>
+<td>Knowledge Board</td>
+<td>5.2.0</td>
+</tr>
+<tr>
+<td>Architectural Milestones</td>
+<td>4.8.0</td>
+</tr>
+<tr>
+<td>GPD-000</td>
+<td>3.2.0</td>
+</tr>
+<tr>
+<td>GE2-SYNC-006</td>
+<td>Completed 1.0.0</td>
+</tr>
+<tr>
+<td>AR-001</td>
+<td>Completed 0.5.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-7-decisoes-preservadas">7. Decisões preservadas<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-7-decisoes-preservadas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Contexto Vivo é conceito funcional vigente no PAS.</li>
+<li>LPM, CIE e GPMA permanecem candidatos.</li>
+<li>O GOG utiliza linguagem pública simplificada.</li>
+<li>O PAS preserva precisão funcional interna.</li>
+<li>O Journey é Experience Layer, não intermediário técnico obrigatório.</li>
+<li>Intelligence atua transversalmente.</li>
+<li>Platform Layer sustenta capacidades comuns.</li>
+<li>feed, conversa, mapa e painel são superfícies possíveis, não definições permanentes do Journey.</li>
+</ul>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-8-criterio-de-encerramento">8. Critério de encerramento<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-8-criterio-de-encerramento" title="Permanent link">&para;</a></h2>
+<p>A revisão é considerada concluída porque:</p>
+<ul>
+<li>as divergências de alta e média severidade foram resolvidas;</li>
+<li>os diagramas prioritários foram criados ou revisados;</li>
+<li>os documentos de estado foram sincronizados;</li>
+<li>candidatos técnicos permaneceram fora da Canon;</li>
+<li>o ponto de retomada está consistente em todos os documentos principais.</li>
+</ul>
+<h2 id="project-ar-001-gkr-gog-consistency-and-diagram-review-9-ponto-exato-de-retomada">9. Ponto exato de retomada<a class="headerlink" href="#project-ar-001-gkr-gog-consistency-and-diagram-review-9-ponto-exato-de-retomada" title="Permanent link">&para;</a></h2>
+<p>Retomar o <code>PAS-001 — Guivos Journey</code> na <strong>Capacidade 02 — Contexto Vivo</strong>, detalhando:</p>
+<ol>
+<li>responsabilidades e limites;</li>
+<li>entradas e saídas;</li>
+<li>estados por dimensão;</li>
+<li>regras de atualização e envelhecimento;</li>
+<li>resolução de conflitos;</li>
+<li>interface <code>Meu Contexto Hoje</code>;</li>
+<li>eventos produzidos;</li>
+<li>KPIs;</li>
+<li>cenários ideal, alternativo e limite;</li>
+<li>contrato da capacidade.</li>
+</ol></section><section class="print-page" id="project-ge2-sync-006-context-interpretation-and-living-context-progress" heading-number="16.3"><h1 id="project-ge2-sync-006-context-interpretation-and-living-context-progress-ge2-sync-006-context-interpretation-and-living-context-progress-sync">GE2-SYNC-006 — Context Interpretation and Living Context Progress Sync<a class="headerlink" href="#project-ge2-sync-006-context-interpretation-and-living-context-progress-ge2-sync-006-context-interpretation-and-living-context-progress-sync" title="Permanent link">&para;</a></h1>
 <h2 id="project-ge2-sync-006-context-interpretation-and-living-context-progress-1-finalidade">1. Finalidade<a class="headerlink" href="#project-ge2-sync-006-context-interpretation-and-living-context-progress-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento registra as decisões tomadas após o <code>GE2-SYNC-005</code>, consolida o avanço do <code>PAS-001 — Guivos Journey</code> e sincroniza a narrativa pública da Guivos com a evolução funcional do produto.</p>
 <h2 id="project-ge2-sync-006-context-interpretation-and-living-context-progress-2-decisoes-de-direcao">2. Decisões de direção<a class="headerlink" href="#project-ge2-sync-006-context-interpretation-and-living-context-progress-2-decisoes-de-direcao" title="Permanent link">&para;</a></h2>
