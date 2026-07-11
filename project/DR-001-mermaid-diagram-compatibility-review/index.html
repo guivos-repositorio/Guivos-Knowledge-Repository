@@ -1695,13 +1695,35 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#4-correcao-executada">
+<a class="md-nav__link" href="#4-correcoes-executadas">
 <span class="md-ellipsis">
       
-        4. Correção executada
+        4. Correções executadas
       
     </span>
 </a>
+<nav aria-label="4. Correções executadas" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-gog-001-421">
+<span class="md-ellipsis">
+      
+        4.1 GOG-001 4.2.1
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-glpa-001-111">
+<span class="md-ellipsis">
+      
+        4.2 GLPA-001 1.1.1
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#5-regra-provisoria-de-compatibilidade">
@@ -1713,37 +1735,55 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#6-escopo-da-auditoria">
+<a class="md-nav__link" href="#6-auditoria-dos-documentos-publicos">
 <span class="md-ellipsis">
       
-        6. Escopo da auditoria
+        6. Auditoria dos documentos públicos
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#7-criterios-por-diagrama">
+<a class="md-nav__link" href="#7-auditoria-inicial-de-product-engineering">
 <span class="md-ellipsis">
       
-        7. Critérios por diagrama
+        7. Auditoria inicial de Product Engineering
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#8-estado-inicial">
+<a class="md-nav__link" href="#8-padroes-de-risco-encontrados">
 <span class="md-ellipsis">
       
-        8. Estado inicial
+        8. Padrões de risco encontrados
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#9-ponto-de-retomada">
+<a class="md-nav__link" href="#9-escopo-remanescente">
 <span class="md-ellipsis">
       
-        9. Ponto de retomada
+        9. Escopo remanescente
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-criterios-por-diagrama">
+<span class="md-ellipsis">
+      
+        10. Critérios por diagrama
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-ponto-de-retomada">
+<span class="md-ellipsis">
+      
+        11. Ponto de retomada
       
     </span>
 </a>
@@ -1777,7 +1817,7 @@
 <li>página normal do MkDocs;</li>
 <li>versão agregada ou de impressão gerada pelo pipeline do site.</li>
 </ol>
-<p>As imagens exibiam versões diferentes do Mermaid (<code>10.4.0</code> e <code>11.16.0</code>), confirmando que o mesmo bloco inválido era analisado por mais de um renderizador.</p>
+<p>As imagens exibiam versões diferentes do Mermaid (<code>10.4.0</code> e <code>11.16.0</code>), confirmando que o mesmo bloco incompatível era analisado por mais de um renderizador.</p>
 <h2 id="3-causa-raiz">3. Causa raiz<a class="headerlink" href="#3-causa-raiz" title="Permanent link">¶</a></h2>
 <p>O bloco utilizava construções com compatibilidade inconsistente entre versões:</p>
 <div class="highlight"><pre><span></span><code>S[Business | Mall | Travel | Media | Ads]
@@ -1791,14 +1831,23 @@ I &lt;--&gt; S
 <li>uso de aresta bidirecional compacta <code>&lt;--&gt;</code>, cuja interpretação pode variar conforme versão e integração;</li>
 <li>rótulos com caracteres especiais sem encapsulamento explícito.</li>
 </ul>
-<h2 id="4-correcao-executada">4. Correção executada<a class="headerlink" href="#4-correcao-executada" title="Permanent link">¶</a></h2>
-<p>O GOG foi atualizado para <code>4.2.1</code>.</p>
-<p>A correção adotou sintaxe conservadora e compatível:</p>
+<h2 id="4-correcoes-executadas">4. Correções executadas<a class="headerlink" href="#4-correcoes-executadas" title="Permanent link">¶</a></h2>
+<h3 id="41-gog-001-421">4.1 GOG-001 4.2.1<a class="headerlink" href="#41-gog-001-421" title="Permanent link">¶</a></h3>
+<p>O diagrama público da estrutura da Guivos foi reescrito com:</p>
 <ul>
 <li>rótulos entre aspas;</li>
-<li>remoção do caractere <code>|</code> no nó;</li>
-<li>substituição de <code>&lt;--&gt;</code> por duas arestas unidirecionais explícitas;</li>
-<li>decomposição das soluções especializadas em nós separados.</li>
+<li>soluções especializadas em nós separados;</li>
+<li>arestas unidirecionais explícitas;</li>
+<li>remoção do caractere <code>|</code> do rótulo composto.</li>
+</ul>
+<h3 id="42-glpa-001-111">4.2 GLPA-001 1.1.1<a class="headerlink" href="#42-glpa-001-111" title="Permanent link">¶</a></h3>
+<p>A arquitetura em camadas utilizava o mesmo padrão de risco, especialmente arestas <code>&lt;--&gt;</code>.</p>
+<p>O diagrama foi endurecido para compatibilidade cruzada por meio de:</p>
+<ul>
+<li>rótulos entre aspas;</li>
+<li>substituição de cada relação <code>&lt;--&gt;</code> por duas relações <code>--&gt;</code>;</li>
+<li>manutenção de identificadores simples;</li>
+<li>preservação integral das decisões arquiteturais da versão 1.1.0.</li>
 </ul>
 <h2 id="5-regra-provisoria-de-compatibilidade">5. Regra provisória de compatibilidade<a class="headerlink" href="#5-regra-provisoria-de-compatibilidade" title="Permanent link">¶</a></h2>
 <p>Até a conclusão desta revisão, os diagramas Mermaid do GKR deverão preferir:</p>
@@ -1811,97 +1860,152 @@ I &lt;--&gt; S
 <li>ausência de sintaxe dependente de versões recentes quando houver alternativa simples;</li>
 <li>diagramas funcionais sem prescrever topologia técnica definitiva.</li>
 </ol>
-<h2 id="6-escopo-da-auditoria">6. Escopo da auditoria<a class="headerlink" href="#6-escopo-da-auditoria" title="Permanent link">¶</a></h2>
-<p>A revisão deverá localizar e validar todos os blocos <code>mermaid</code> em:</p>
-<ul>
-<li>GOG;</li>
-<li>PAS;</li>
-<li>GLPA;</li>
-<li>GIA;</li>
-<li>GEB;</li>
-<li>documentos de arquitetura empresarial;</li>
-<li>documentos de pesquisa;</li>
-<li>documentos de projeto;</li>
-<li>páginas auxiliares do site.</li>
-</ul>
-<h2 id="7-criterios-por-diagrama">7. Critérios por diagrama<a class="headerlink" href="#7-criterios-por-diagrama" title="Permanent link">¶</a></h2>
-<p>Cada diagrama será classificado como:</p>
-<ul>
-<li><strong>válido</strong> — sintaxe simples e compatível;</li>
-<li><strong>corrigido</strong> — falha confirmada e removida;</li>
-<li><strong>refinamento recomendado</strong> — renderiza, mas possui ambiguidade ou baixa legibilidade;</li>
-<li><strong>substituição recomendada</strong> — estrutura inadequada ao objetivo;</li>
-<li><strong>ausente</strong> — documento ganharia compreensão relevante com novo diagrama.</li>
-</ul>
-<h2 id="8-estado-inicial">8. Estado inicial<a class="headerlink" href="#8-estado-inicial" title="Permanent link">¶</a></h2>
+<h2 id="6-auditoria-dos-documentos-publicos">6. Auditoria dos documentos públicos<a class="headerlink" href="#6-auditoria-dos-documentos-publicos" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
 <th>Diagrama</th>
 <th>Documento</th>
 <th>Estado</th>
+<th>Observação</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Estrutura pública da Guivos</td>
-<td>GOG</td>
-<td>Corrigido no GOG 4.2.1</td>
-</tr>
-<tr>
 <td>Primeira compreensão</td>
 <td>GOG</td>
-<td>Pendente de validação cruzada</td>
+<td>Válido</td>
+<td>Fluxo simples, identificadores ASCII e arestas explícitas</td>
 </tr>
 <tr>
 <td>Ciclo Contínuo de Evolução</td>
 <td>GOG</td>
-<td>Pendente de validação cruzada</td>
+<td>Válido</td>
+<td>Fluxo compatível e sem construções ambíguas</td>
+</tr>
+<tr>
+<td>Estrutura pública da Guivos</td>
+<td>GOG</td>
+<td>Corrigido</td>
+<td>Falha que originou o incidente; corrigida no GOG 4.2.1</td>
 </tr>
 <tr>
 <td>Funcionamento prático</td>
 <td>GOG</td>
-<td>Pendente de validação cruzada</td>
+<td>Válido</td>
+<td>Encadeamento simples e retorno explícito</td>
 </tr>
+</tbody>
+</table>
+<h2 id="7-auditoria-inicial-de-product-engineering">7. Auditoria inicial de Product Engineering<a class="headerlink" href="#7-auditoria-inicial-de-product-engineering" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Diagrama</th>
+<th>Documento</th>
+<th>Estado</th>
+<th>Tratamento</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>Arquitetura em camadas</td>
 <td>GLPA</td>
-<td>Pendente de validação cruzada</td>
+<td>Corrigido</td>
+<td>Sintaxe endurecida na GLPA 1.1.1</td>
+</tr>
+<tr>
+<td>Aplicação das camadas ao Journey</td>
+<td>PAS</td>
+<td>Correção necessária</td>
+<td>Contém rótulo com <code>|</code> e relações <code>&lt;--&gt;</code></td>
+</tr>
+<tr>
+<td>Filosofia operacional</td>
+<td>PAS</td>
+<td>Válido</td>
+<td>Fluxo linear simples</td>
+</tr>
+<tr>
+<td>Relação contínua com a vida real</td>
+<td>PAS</td>
+<td>Válido</td>
+<td>Fluxo linear com retorno explícito</td>
 </tr>
 <tr>
 <td>Ciclo Cognitivo</td>
 <td>PAS</td>
-<td>Pendente de validação cruzada</td>
+<td>Válido</td>
+<td>Fluxo linear e retorno explícito</td>
 </tr>
 <tr>
 <td>Captura de Contexto</td>
 <td>PAS</td>
-<td>Pendente de validação cruzada</td>
+<td>Refinamento recomendado</td>
+<td>Sintaxe válida; revisar rótulos de decisão e aresta pontilhada em validação cruzada</td>
 </tr>
 <tr>
 <td>Interpretação do Contexto</td>
 <td>PAS</td>
-<td>Pendente de validação cruzada</td>
+<td>Válido</td>
+<td>Fluxo linear simples</td>
 </tr>
 <tr>
 <td>Contexto Vivo</td>
 <td>PAS</td>
-<td>Pendente de validação cruzada</td>
+<td>Refinamento recomendado</td>
+<td>Sintaxe funcional; revisar rótulo de aresta com vírgula e decisão em versões antigas</td>
 </tr>
 <tr>
 <td>Ciclo de vida da informação</td>
 <td>PAS</td>
-<td>Pendente de validação cruzada</td>
+<td>Validação cruzada necessária</td>
+<td><code>stateDiagram-v2</code> é suportado, mas deve ser testado nos dois renderizadores do pipeline</td>
 </tr>
 <tr>
 <td>Meu Contexto Hoje</td>
 <td>PAS</td>
-<td>Pendente de validação cruzada</td>
+<td>Pendente de inspeção final</td>
+<td>Validar sintaxe e legibilidade no documento completo</td>
 </tr>
 </tbody>
 </table>
-<h2 id="9-ponto-de-retomada">9. Ponto de retomada<a class="headerlink" href="#9-ponto-de-retomada" title="Permanent link">¶</a></h2>
-<p>Executar busca completa por blocos Mermaid no repositório, catalogar os diagramas existentes e revisar primeiro os documentos públicos e de Product Engineering.</p>
+<h2 id="8-padroes-de-risco-encontrados">8. Padrões de risco encontrados<a class="headerlink" href="#8-padroes-de-risco-encontrados" title="Permanent link">¶</a></h2>
+<p>A revisão identificou quatro padrões que devem ser pesquisados no restante do GKR:</p>
+<ol>
+<li>arestas compactas <code>&lt;--&gt;</code>;</li>
+<li>caractere <code>|</code> dentro de rótulos;</li>
+<li>rótulos extensos ou com pontuação sem aspas;</li>
+<li>construções específicas, como <code>stateDiagram-v2</code>, que exigem validação nos dois renderizadores utilizados pelo pipeline.</li>
+</ol>
+<h2 id="9-escopo-remanescente">9. Escopo remanescente<a class="headerlink" href="#9-escopo-remanescente" title="Permanent link">¶</a></h2>
+<p>A revisão ainda deverá localizar e validar blocos Mermaid em:</p>
+<ul>
+<li>GIA e documentos de Intelligence;</li>
+<li>GEB;</li>
+<li>Enterprise Architecture;</li>
+<li>Reference Architecture;</li>
+<li>Research;</li>
+<li>Governance Framework;</li>
+<li>documentos de projeto e validação;</li>
+<li>páginas auxiliares do site.</li>
+</ul>
+<h2 id="10-criterios-por-diagrama">10. Critérios por diagrama<a class="headerlink" href="#10-criterios-por-diagrama" title="Permanent link">¶</a></h2>
+<p>Cada diagrama será classificado como:</p>
+<ul>
+<li><strong>válido</strong> — sintaxe simples e compatível;</li>
+<li><strong>corrigido</strong> — falha confirmada e removida;</li>
+<li><strong>refinamento recomendado</strong> — renderiza, mas possui risco, ambiguidade ou baixa legibilidade;</li>
+<li><strong>substituição recomendada</strong> — estrutura inadequada ao objetivo;</li>
+<li><strong>ausente</strong> — documento ganharia compreensão relevante com novo diagrama.</li>
+</ul>
+<h2 id="11-ponto-de-retomada">11. Ponto de retomada<a class="headerlink" href="#11-ponto-de-retomada" title="Permanent link">¶</a></h2>
+<ol>
+<li>corrigir no PAS o diagrama <code>Aplicação das camadas ao Journey</code>;</li>
+<li>validar no pipeline os diagramas de decisão e <code>stateDiagram-v2</code>;</li>
+<li>continuar a auditoria pelos documentos arquiteturais listados na navegação do MkDocs;</li>
+<li>somente encerrar a DR-001 após validação da página normal e da versão agregada de impressão.</li>
+</ol>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
