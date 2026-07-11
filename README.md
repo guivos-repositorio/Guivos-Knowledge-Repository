@@ -5,16 +5,30 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5.7 — Context Capabilities Progress Registered
+- **Marco vigente:** M5.8 — GKR and GOG Consistency Review Completed
 - **Frente operacional:** Product Engineering
 - **Sincronização vigente:** GE2-SYNC-006
-- **Especificação ativa:** PAS-001 — Guivos Journey 0.4.0
+- **Revisão concluída:** AR-001 0.5.0
+- **Especificação ativa:** PAS-001 — Guivos Journey 0.4.1
 - **Capacidade ativa:** 02 — Contexto Vivo
-- **Arquitetura funcional:** GLPA-001
-- **Guia Oficial:** GOG-001 4.1.0
+- **Arquitetura funcional:** GLPA-001 1.1.0
+- **Intelligence Architecture:** GIA-000 1.3.0
+- **Glossário Canônico:** 1.8.0
+- **Guia Oficial:** GOG-001 4.2.0
 - **GKA-000:** Parte V pendente
 - **A2-R02:** em espera operacional
 - **Guivos Economic Model:** planejado
+
+## Revisão concluída
+
+A `AR-001 — GKR and GOG Consistency and Diagram Review` alinhou:
+
+- propósito, missão e visão;
+- linguagem pública e interna;
+- GOG, PAS, GLPA e GIA;
+- Glossário Canônico;
+- diagramas públicos e funcionais;
+- versões e documentos de acompanhamento.
 
 ## Ponto exato de retomada
 
@@ -37,8 +51,6 @@ Próxima entrega:
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-Cada capacidade deve responder uma pergunta central e possuir objetivo, valor, responsabilidades, entradas, ciclo cognitivo, fluxos, estados, regras, exceções, privacidade, integrações, eventos, KPIs, cenários e contrato de aceite.
-
 ## Capacidades do Journey
 
 | Capacidade | Estado |
@@ -53,42 +65,17 @@ Cada capacidade deve responder uma pergunta central e possuir objetivo, valor, r
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
-## Contexto Vivo
-
-O Contexto Vivo representa a melhor compreensão que a Guivos possui sobre a realidade do participante em determinado momento. Ele não é um cadastro fixo nem uma representação absoluta.
-
-A compreensão deve ser contextual, temporal, explicável, revisável e controlável pelo participante.
-
-Dimensões iniciais:
-
-- Identidade;
-- Momento;
-- Direção;
-- Capacidades;
-- Restrições;
-- Preferências;
-- Relacionamentos;
-- Evolução.
-
-## Princípios recentes
-
-> A Guivos nunca presume conhecer completamente o participante. Ela mantém a melhor representação possível de sua realidade, sempre aberta à revisão, ao aprendizado e à confirmação.
-
-> Cada dimensão do Contexto Vivo evolui de forma independente e não deve presumir mudanças sem evidência suficiente.
-
-> A primeira conversa termina quando o participante confirma que foi compreendido e recebe um primeiro caminho útil, não quando completa um cadastro.
-
 ## Acesso rápido
 
-- [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
-- [GE2-SYNC-006 — Context Interpretation and Living Context Progress](docs/project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md)
-- [GE2-SYNC-005 — Journey Operational Philosophy and Product Engineering](docs/project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md)
-- [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
+- [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
+- [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
+- [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
+- [Glossário Canônico](docs/glossary.md)
+- [AR-001 — GKR and GOG Consistency Review](docs/project/AR-001-gkr-gog-consistency-and-diagram-review.md)
+- [GE2-SYNC-006](docs/project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md)
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Knowledge Board](docs/project/knowledge-board.md)
-- [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
-- [Guivos Economic Model](docs/economic-model/index.md)
 
 ## Pipeline de publicação
 
