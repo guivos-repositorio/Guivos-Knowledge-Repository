@@ -2,7 +2,7 @@
 id: PAS-001
 title: Guivos Journey Product Architecture Specification
 status: draft
-version: 0.4.1
+version: 0.4.2
 owner: Guivos
 last_updated: 2026-07-11
 related:
@@ -12,6 +12,7 @@ related:
   - GE2-SYNC-005
   - GE2-SYNC-006
   - AR-001
+  - DR-001
 ---
 
 # PAS-001 — Guivos Journey Product Architecture Specification
@@ -87,16 +88,29 @@ O Journey não é uma rede social tradicional, marketplace convencional, buscado
 
 ```mermaid
 flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    J[Guivos Journey — Experience Layer]
-    I[Guivos Intelligence — Intelligence Layer]
-    S[Business | Mall | Travel | Media | Ads]
-    PL[Platform Layer]
+    P["Pessoas, Organizações e Coletivos"]
+    J["Guivos Journey - Experience Layer"]
+    I["Guivos Intelligence - Intelligence Layer"]
+    S["Soluções especializadas"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer"]
 
     P --> J
-    J <--> I
-    J <--> S
-    I <--> S
+    J --> I
+    I --> J
+    J --> S
+    S --> J
+    I --> S
+    S --> I
+    S --> B
+    S --> M
+    S --> T
+    S --> MD
+    S --> A
     PL --> J
     PL --> I
     PL --> S
@@ -140,17 +154,18 @@ O Journey opera por cinco responsabilidades permanentes:
 4. **Orquestrar** — organizar próximos passos, intervenções e experiências;
 5. **Aprender** — incorporar resultados e evidências autorizadas.
 
-Sequência comportamental:
-
 ```mermaid
 flowchart LR
-    A[Escutar]
-    B[Compreender]
-    C[Refletir a compreensão]
-    D[Confirmar]
-    E[Recomendar ou agir]
+    A["Escutar"]
+    B["Compreender"]
+    C["Refletir a compreensão"]
+    D["Confirmar"]
+    E["Recomendar ou agir"]
 
-    A --> B --> C --> D --> E
+    A --> B
+    B --> C
+    C --> D
+    D --> E
 ```
 
 ## 4. Relação Contínua e Vida Real
@@ -159,16 +174,22 @@ O Journey não deve ser especificado apenas como aplicativo utilizado em sessõe
 
 ```mermaid
 flowchart LR
-    A[Vida real]
-    B[Mudança relevante]
-    C[Atualização da compreensão]
-    D[Nova avaliação]
-    E[Intervenção ou silêncio]
-    F[Experiência]
-    G[Nova evidência]
-    H[Novo contexto]
+    A["Vida real"]
+    B["Mudança relevante"]
+    C["Atualização da compreensão"]
+    D["Nova avaliação"]
+    E["Intervenção ou silêncio"]
+    F["Experiência"]
+    G["Nova evidência"]
+    H["Novo contexto"]
 
-    A --> B --> C --> D --> E --> F --> G --> H
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
     H --> A
 ```
 
@@ -234,17 +255,24 @@ Cada capacidade deverá possuir:
 
 ```mermaid
 flowchart LR
-    A[Informação]
-    B[Interpretação]
-    C[Compreensão]
-    D[Contexto]
-    E[Decisão]
-    F[Ação]
-    G[Resultado]
-    H[Aprendizado]
-    I[Nova informação]
+    A["Informação"]
+    B["Interpretação"]
+    C["Compreensão"]
+    D["Contexto"]
+    E["Decisão"]
+    F["Ação"]
+    G["Resultado"]
+    H["Aprendizado"]
+    I["Nova informação"]
 
-    A --> B --> C --> D --> E --> F --> G --> H --> I
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
     I --> B
 ```
 
@@ -298,21 +326,27 @@ A mensagem inicial deve explicar finalidade, ausência de julgamento, liberdade 
 
 ```mermaid
 flowchart TD
-    A[Participante escolhe voz, texto ou fluxo guiado]
-    B[Guivos explica finalidade e controle]
-    C[Participante expressa seu contexto]
-    D[Guivos preserva a entrada e interpreta]
-    E[Guivos apresenta uma síntese]
-    F{Participante confirma?}
-    G[Corrige, complementa, limita ou remove]
-    H[Contexto inicial confirmado]
-    I[Primeiro Próximo Passo ou oportunidades iniciais]
-    J[Sessão temporária ou encerramento sem persistência]
+    A["Participante escolhe voz, texto ou fluxo guiado"]
+    B["Guivos explica finalidade e controle"]
+    C["Participante expressa seu contexto"]
+    D["Guivos preserva a entrada e interpreta"]
+    E["Guivos apresenta uma síntese"]
+    F["Participante avalia a síntese"]
+    G["Corrige, complementa, limita ou remove"]
+    H["Contexto inicial confirmado"]
+    I["Primeiro Próximo Passo ou oportunidades iniciais"]
+    J["Sessão temporária ou encerramento sem persistência"]
 
-    A --> B --> C --> D --> E --> F
-    F -- Não --> G --> E
-    F -- Sim --> H --> I
-    C -. Recusa em salvar .-> J
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> E
+    F --> H
+    H --> I
+    C --> J
 ```
 
 ## 13. Comportamento durante a escuta
@@ -452,16 +486,22 @@ Transformar entradas autorizadas em compreensão coerente, explicável e útil, 
 
 ```mermaid
 flowchart LR
-    A[Entrada autorizada]
-    B[Classificação]
-    C[Interpretação]
-    D[Confiança, origem e temporalidade]
-    E[Compreensão proposta]
-    F[Reflexão ao participante]
-    G[Confirmação, correção ou contestação]
-    H[Atualização permitida do contexto]
+    A["Entrada autorizada"]
+    B["Classificação"]
+    C["Interpretação"]
+    D["Confiança, origem e temporalidade"]
+    E["Compreensão proposta"]
+    F["Reflexão ao participante"]
+    G["Confirmação, correção ou contestação"]
+    H["Atualização permitida do contexto"]
 
-    A --> B --> C --> D --> E --> F --> G --> H
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
 ```
 
 ## 26. Confiança, proveniência e temporalidade
@@ -522,23 +562,28 @@ Toda representação relevante deve ser:
 
 ```mermaid
 flowchart TD
-    A[Entradas autorizadas]
-    B[Interpretação contextual]
-    C[Compreensão proposta]
-    D{Confirmação necessária?}
-    E[Participante confirma, corrige ou limita]
-    F[Atualização seletiva das dimensões]
-    G[Meu Contexto Hoje]
-    H[Objetivos, Próximos Passos e oportunidades]
-    I[Experiências e resultados]
-    J[Novas evidências]
+    A["Entradas autorizadas"]
+    B["Interpretação contextual"]
+    C["Compreensão proposta"]
+    D["Avaliação da necessidade de confirmação"]
+    E["Participante confirma, corrige ou limita"]
+    F["Atualização seletiva das dimensões"]
+    G["Meu Contexto Hoje"]
+    H["Objetivos, Próximos Passos e oportunidades"]
+    I["Experiências e resultados"]
+    J["Novas evidências"]
 
-    A --> B --> C --> D
-    D -- Sim --> E --> F
-    D -- Não, quando permitido --> F
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    D --> F
     F --> G
     F --> H
-    H --> I --> J --> B
+    H --> I
+    I --> J
+    J --> B
 ```
 
 O fluxo não autoriza atualização silenciosa de informações sensíveis, permanentes ou de impacto relevante.
@@ -591,17 +636,24 @@ Exemplos:
 ## 33. Ciclo de vida da informação
 
 ```mermaid
-stateDiagram-v2
-    [*] --> Observada
-    Observada --> Interpretada
-    Interpretada --> Confirmada
-    Confirmada --> Ativa
-    Ativa --> Envelhecida
-    Ativa --> Substituída
-    Envelhecida --> Confirmada: revisão
-    Envelhecida --> Substituída
-    Substituída --> Arquivada
-    Ativa --> Arquivada: remoção ou expiração
+flowchart LR
+    A["Observada"]
+    B["Interpretada"]
+    C["Confirmada"]
+    D["Ativa"]
+    E["Envelhecida"]
+    F["Substituída"]
+    G["Arquivada"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    D --> F
+    E --> C
+    E --> F
+    F --> G
+    D --> G
 ```
 
 Cada item deverá preservar origem, temporalidade, confiança, finalidade, permissões e relação com dimensões afetadas.
@@ -637,17 +689,17 @@ Ele deverá conseguir entender:
 
 ```mermaid
 flowchart TD
-    M[Meu Contexto Hoje]
-    ID[Quem sou neste momento]
-    FO[Foco principal]
-    MR[Mudanças recentes]
-    OB[Objetivos e Próximos Passos]
-    CA[Capacidades]
-    RE[Restrições]
-    PR[Preferências]
-    CO[Conexões]
-    RV[Revisões necessárias]
-    CT[Controles do participante]
+    M["Meu Contexto Hoje"]
+    ID["Quem sou neste momento"]
+    FO["Foco principal"]
+    MR["Mudanças recentes"]
+    OB["Objetivos e Próximos Passos"]
+    CA["Capacidades"]
+    RE["Restrições"]
+    PR["Preferências"]
+    CO["Conexões"]
+    RV["Revisões necessárias"]
+    CT["Controles do participante"]
 
     M --> ID
     M --> FO
