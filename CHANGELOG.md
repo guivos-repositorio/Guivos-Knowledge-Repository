@@ -2,52 +2,54 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.28.9 — GKR and GOG Consistency Review
+
+- Criação e conclusão de `AR-001 — GKR and GOG Consistency and Diagram Review`, versão `0.5.0`.
+- Registro de `M5.8 — GKR and GOG Consistency Review Completed`.
+- Atualização do `GOG-001` para `4.2.0`.
+- Alinhamento literal de propósito, missão e visão com a Foundation.
+- Esclarecimento do significado de `Public Canon`.
+- Criação e revisão dos diagramas públicos de primeira compreensão, ciclo contínuo, estrutura da Guivos e funcionamento prático.
+- Atualização do `PAS-001` para `0.4.1` com diagramas funcionais de camadas, filosofia operacional, relação contínua, Ciclo Cognitivo, Captura de Contexto, Interpretação do Contexto, Contexto Vivo, ciclo de vida e `Meu Contexto Hoje`.
+- Atualização da `GLPA-001` para `1.1.0`.
+- Substituição de `perfil do participante` por visão autorizada do contexto.
+- Remoção de `feed` como responsabilidade permanente do Journey.
+- Atualização da `GIA-000` para `1.3.0`.
+- Remoção da dependência desatualizada do Architecture Engineering Sprint.
+- Diferenciação entre Contexto Vivo e candidatos LPM, CIE e GPMA.
+- Atualização do Glossário Canônico para `1.8.0`.
+- Registro de Contexto Vivo, Interpretação do Contexto, Representação Humilde, Oportunidade Ativa, Intervenção Contextual e conceitos relacionados.
+- Distinção entre Capacidade do Participante, Capacidade Arquitetural e Capacidade Funcional de Produto.
+- Atualização do Roadmap para `5.1.0`.
+- Atualização do Knowledge Board para `5.2.0`.
+- Atualização dos Architectural Milestones para `4.8.0`.
+- Atualização da Documentação Pública para `3.2.0`.
+- Sincronização do README, página inicial e navegação MkDocs.
+- Manutenção da Capacidade 02 — Contexto Vivo como ponto exato de retomada.
+
 ## 0.28.8 — Context Capabilities and Living Context
 
-- Criação de `GE2-SYNC-006 — Context Interpretation and Living Context Progress Sync`, versão `1.0.0`.
-- Registro de `M5.7 — Context Capabilities Progress Registered`.
-- Atualização do `PAS-001 — Guivos Journey` para `0.4.0`.
-- Consolidação do padrão de especificação por capacidades funcionais completas.
-- Registro do Princípio da Singularidade Funcional.
-- Registro do Ciclo Cognitivo do Domínio.
-- Consolidação substancial da Capacidade 01 — Captura de Contexto.
-- Registro do contrato de aceite da Capacidade 01.
-- Separação entre Captura, Interpretação e Construção do Contexto Vivo.
-- Consolidação da Interpretação do Contexto com fatos, intenções, objetivos, limitações, preferências, incertezas, confiança, proveniência e temporalidade.
-- Início da Capacidade 02 — Contexto Vivo.
-- Registro do Princípio da Representação Humilde.
-- Registro do Contexto Vivo como modelo multidimensional de compreensão.
-- Registro das dimensões Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
-- Registro do Princípio da Evolução Independente das Dimensões.
-- Registro do ciclo inicial `Observada → Interpretada → Confirmada → Ativa → Envelhecida → Substituída → Arquivada`.
-- Registro da visão conceitual `Meu Contexto Hoje`.
-- Atualização do `GOG-001 — Guia Oficial da Guivos` para `4.1.0`.
-- Atualização pública do ciclo de compreensão contínua, revisável e controlável pelo participante.
-- Atualização do Roadmap para `5.0.0`.
-- Atualização do Knowledge Board para `5.1.0`.
-- Atualização do README, documentação pública, página inicial e navegação do MkDocs.
-- Definição da Capacidade 02 — Contexto Vivo como ponto exato de retomada.
+- Criação de `GE2-SYNC-006`.
+- Registro de `M5.7`.
+- Atualização do PAS-001 para `0.4.0`.
+- Consolidação da Capacidade 01 e início da Capacidade 02.
+- Atualização do GOG para `4.1.0`.
 
 ## 0.28.7 — Journey Operational Philosophy and Product Engineering
 
-- Criação de `GE2-SYNC-005 — Journey Operational Philosophy and Product Engineering Sync`, versão `1.0.0`.
-- Registro de `M5.6 — Journey Operational Philosophy Consolidated`.
-- Atualização do `PAS-001 — Guivos Journey` para `0.3.0`.
-- Encerramento da meta-arquitetura como foco imediato.
-- Ativação da frente `Product Engineering`.
-- Consolidação das cinco responsabilidades permanentes do Journey: compreender, acompanhar, ativar, orquestrar e aprender.
-- Registro da sequência comportamental `Escutar → Compreender → Refletir → Confirmar → Recomendar ou agir`.
-- Registro do Journey como relação contínua com a vida real.
-- Registro de Estado, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais e Distância para Evolução.
+- Criação de `GE2-SYNC-005`.
+- Registro de `M5.6`.
+- Ativação de Product Engineering.
+- Registro das cinco responsabilidades permanentes do Journey.
 
 ## 0.28.6 — Guia Oficial da Guivos 4.0
 
-- Atualização de `GOG-001 — Guia Oficial da Guivos` para `4.0.0`.
+- Atualização do GOG para `4.0.0`.
 - Atualização da documentação pública e dos diagramas.
 
 ## 0.28.5 — Context, Participant Model and Architecture Engineering
 
-- Criação de `GE2-SYNC-004` e do checkpoint de Architecture Engineering.
+- Criação de `GE2-SYNC-004`.
 - Atualização do PAS-001 para `0.2.0`.
 - Registro de LPM, CIE e Intelligence Engines como candidatos.
 
@@ -62,31 +64,6 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 ## 0.28.2 — GE-2 Institutional Consolidation Sync
 
 - Criação de `GE2-SYNC-001` e registro de `M5.2`.
-
-## 0.28.1 — GKA Preparation Complete
-
-- Criação de `CHECKPOINT-GKA-PREPARATION-COMPLETE`.
-
-## 0.28.0-planning — GKA Foundation Pause Checkpoint
-
-- Criação de `CHECKPOINT-GE2-GKA-FOUNDATION`.
-
-## 0.27.0 — Guivos Knowledge Architecture Established
-
-- Aprovação do `ADR-006` e início oficial da GE-2.
-
-## 0.26.0 — Exemplos Práticos no Guia Oficial
-
-- Atualização do Guia Oficial para `3.3.0`.
-
-## 0.25.0 — Inteligência do Ecossistema Guivos e Grafo Global
-
-- Consolidação da Inteligência do Ecossistema e do Grafo Global.
-
-## 0.24.0 — Guivos Mall, Economic Model e FMEM
-
-- Guivos Mall substitui Guivos Marketplace.
-- Criação da FMEM e formalização de Discovery Mode e Canon Mode.
 
 ## 0.0.1 — Inicialização do GKR
 
