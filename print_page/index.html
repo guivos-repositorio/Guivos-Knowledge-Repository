@@ -6842,7 +6842,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Versão</td>
-<td>4.2.0</td>
+<td>4.2.1</td>
 </tr>
 <tr>
 <td>Última atualização</td>
@@ -7085,16 +7085,29 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <h2 id="public-guia-oficial-da-guivos-base-comum">Base comum<a class="headerlink" href="#public-guia-oficial-da-guivos-base-comum" title="Permanent link">&para;</a></h2>
 <p>A Platform Layer sustenta autenticação, segurança, dados, integrações, pagamentos, busca, notificações e outras capacidades compartilhadas. Ela não é um produto público independente.</p>
 <pre  class="mermaid"><code>flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    J[Guivos Journey — Experiência]
-    I[Guivos Intelligence — Inteligência transversal]
-    S[Business | Mall | Travel | Media | Ads]
-    PL[Platform Layer — Base comum]
+    P["Pessoas, Organizações e Coletivos"]
+    J["Guivos Journey - Experiência"]
+    I["Guivos Intelligence - Inteligência transversal"]
+    S["Soluções especializadas"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer - Base comum"]
 
     P --> J
-    J <--> I
-    J <--> S
-    I <--> S
+    J --> I
+    I --> J
+    J --> S
+    S --> J
+    I --> S
+    S --> I
+    S --> B
+    S --> M
+    S --> T
+    S --> MD
+    S --> A
     PL --> J
     PL --> I
     PL --> S
@@ -7309,6 +7322,11 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <td>4.2.0</td>
 <td>11/07/2026</td>
 <td>Alinhamento literal com Foundation, esclarecimento de Public Canon e revisão dos diagramas públicos</td>
+</tr>
+<tr>
+<td>4.2.1</td>
+<td>11/07/2026</td>
+<td>Correção de compatibilidade Mermaid no diagrama público da estrutura da Guivos</td>
 </tr>
 </tbody>
 </table></section></section>

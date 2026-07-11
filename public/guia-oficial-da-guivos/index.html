@@ -1764,7 +1764,7 @@
 </tr>
 <tr>
 <td>Versão</td>
-<td>4.2.0</td>
+<td>4.2.1</td>
 </tr>
 <tr>
 <td>Última atualização</td>
@@ -2007,16 +2007,29 @@
 <h2 id="base-comum">Base comum<a class="headerlink" href="#base-comum" title="Permanent link">¶</a></h2>
 <p>A Platform Layer sustenta autenticação, segurança, dados, integrações, pagamentos, busca, notificações e outras capacidades compartilhadas. Ela não é um produto público independente.</p>
 <pre class="mermaid"><code>flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    J[Guivos Journey — Experiência]
-    I[Guivos Intelligence — Inteligência transversal]
-    S[Business | Mall | Travel | Media | Ads]
-    PL[Platform Layer — Base comum]
+    P["Pessoas, Organizações e Coletivos"]
+    J["Guivos Journey - Experiência"]
+    I["Guivos Intelligence - Inteligência transversal"]
+    S["Soluções especializadas"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer - Base comum"]
 
     P --&gt; J
-    J &lt;--&gt; I
-    J &lt;--&gt; S
-    I &lt;--&gt; S
+    J --&gt; I
+    I --&gt; J
+    J --&gt; S
+    S --&gt; J
+    I --&gt; S
+    S --&gt; I
+    S --&gt; B
+    S --&gt; M
+    S --&gt; T
+    S --&gt; MD
+    S --&gt; A
     PL --&gt; J
     PL --&gt; I
     PL --&gt; S
@@ -2231,6 +2244,11 @@
 <td>4.2.0</td>
 <td>11/07/2026</td>
 <td>Alinhamento literal com Foundation, esclarecimento de Public Canon e revisão dos diagramas públicos</td>
+</tr>
+<tr>
+<td>4.2.1</td>
+<td>11/07/2026</td>
+<td>Correção de compatibilidade Mermaid no diagrama público da estrutura da Guivos</td>
 </tr>
 </tbody>
 </table>
