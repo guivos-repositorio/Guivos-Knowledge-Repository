@@ -2,15 +2,16 @@
 id: PAS-001
 title: Guivos Journey Product Architecture Specification
 status: draft
-version: 0.4.0
+version: 0.4.1
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-11
 related:
   - GPA-001
   - GLPA-001
   - GE2-SYNC-004
   - GE2-SYNC-005
   - GE2-SYNC-006
+  - AR-001
 ---
 
 # PAS-001 — Guivos Journey Product Architecture Specification
@@ -45,25 +46,13 @@ O participante permanece no controle da própria jornada.
 
 A plataforma pode escutar, organizar, sugerir, explicar, recomendar, lembrar e acompanhar. A decisão final permanece humana.
 
-### 0.5 Papel do Ecossistema
-
-O Journey é a camada de experiência e orquestração que conecta Pessoas, Organizações, Coletivos, oportunidades, conteúdos, produtos, serviços e experiências.
-
-- Journey é a experiência;
-- Intelligence fornece inteligência transversal;
-- Business fornece oportunidades e relações institucionais;
-- Mall fornece recursos comerciais;
-- Media fornece conhecimento e inspiração;
-- Travel fornece viagens e experiências presenciais;
-- Ads conecta oferta e demanda patrocinada.
-
 ## 1. Visão do Produto
 
 ### 1.1 Definição
 
 O Guivos Journey é a Experience Layer do Ecossistema Guivos.
 
-Mais do que um aplicativo ou feed, é um sistema de descoberta contextual de oportunidades e acompanhamento contínuo da evolução.
+Mais do que um aplicativo, feed ou tela, é o sistema de experiência unificada por meio do qual participantes compreendem seu contexto, organizam sua jornada, descobrem oportunidades e acompanham sua evolução.
 
 ### 1.2 Propósito
 
@@ -96,34 +85,50 @@ O Journey não é uma rede social tradicional, marketplace convencional, buscado
 
 ## 2. Arquitetura em Camadas Aplicada ao Journey
 
-```text
-Participante
-  -> Guivos Journey
-       -> Guivos Intelligence
-       -> Guivos Business
-       -> Guivos Mall
-       -> Guivos Media
-       -> Guivos Travel
-       -> Guivos Ads
-       -> Platform Layer
+```mermaid
+flowchart TD
+    P[Pessoas, Organizações e Coletivos]
+    J[Guivos Journey — Experience Layer]
+    I[Guivos Intelligence — Intelligence Layer]
+    S[Business | Mall | Travel | Media | Ads]
+    PL[Platform Layer]
+
+    P --> J
+    J <--> I
+    J <--> S
+    I <--> S
+    PL --> J
+    PL --> I
+    PL --> S
 ```
+
+O diagrama representa limites funcionais. Não prescreve topologia técnica definitiva.
 
 ### 2.1 Responsabilidades do Journey
 
 - experiência unificada;
+- superfície principal de experiência;
 - descoberta contextual;
 - organização da jornada;
-- apresentação de recomendações;
-- objetivos e Momentos Atuais;
+- apresentação de recomendações e oportunidades;
+- objetivos, Próximos Passos e Momentos Atuais;
+- visão autorizada do contexto do participante;
 - acompanhamento da evolução;
-- comunicação com o participante;
-- gamificação e incentivos visíveis;
+- comunicação e intervenções visíveis;
+- gamificação e incentivos apresentados ao participante;
 - integração experiencial;
-- orquestração de intervenções contextuais.
+- orquestração de capacidades das demais camadas.
 
 ### 2.2 Responsabilidades externas ao Journey
 
 O Journey não processa pagamentos do Mall, contratos B2B do Business, inteligência algorítmica da Intelligence Layer, campanhas do Ads, produção editorial do Media, reservas do Travel ou infraestrutura comum da Platform Layer.
+
+### 2.3 Limite específico do Contexto Vivo
+
+- Journey apresenta, organiza e permite governar a visão do contexto;
+- Intelligence interpreta entradas, propõe compreensão e recomenda atualizações;
+- Platform sustenta identidade, persistência, segurança, auditoria e integrações;
+- o participante confirma, corrige, limita ou remove informações conforme as regras aplicáveis.
 
 ## 3. Filosofia Operacional do Journey
 
@@ -137,27 +142,34 @@ O Journey opera por cinco responsabilidades permanentes:
 
 Sequência comportamental:
 
-```text
-Escutar
-  -> Compreender
-  -> Refletir a compreensão
-  -> Confirmar
-  -> Recomendar ou agir
+```mermaid
+flowchart LR
+    A[Escutar]
+    B[Compreender]
+    C[Refletir a compreensão]
+    D[Confirmar]
+    E[Recomendar ou agir]
+
+    A --> B --> C --> D --> E
 ```
 
 ## 4. Relação Contínua e Vida Real
 
 O Journey não deve ser especificado apenas como aplicativo utilizado em sessões isoladas.
 
-```text
-Vida real
-  -> mudança relevante
-  -> atualização da compreensão
-  -> nova avaliação
-  -> intervenção ou silêncio
-  -> experiência
-  -> nova evidência
-  -> novo contexto
+```mermaid
+flowchart LR
+    A[Vida real]
+    B[Mudança relevante]
+    C[Atualização da compreensão]
+    D[Nova avaliação]
+    E[Intervenção ou silêncio]
+    F[Experiência]
+    G[Nova evidência]
+    H[Novo contexto]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+    H --> A
 ```
 
 O aplicativo é um ponto de contato dessa relação, não o centro da jornada.
@@ -220,17 +232,23 @@ Cada capacidade deverá possuir:
 
 ### 6.2 Ciclo Cognitivo do Domínio
 
-```text
-Informação
-  -> Interpretação
-  -> Compreensão
-  -> Contexto
-  -> Decisão
-  -> Ação
-  -> Resultado
-  -> Aprendizado
-  -> Nova informação
+```mermaid
+flowchart LR
+    A[Informação]
+    B[Interpretação]
+    C[Compreensão]
+    D[Contexto]
+    E[Decisão]
+    F[Ação]
+    G[Resultado]
+    H[Aprendizado]
+    I[Nova informação]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I
+    I --> B
 ```
+
+Esse ciclo é funcional. Não representa pipeline técnico obrigatório, modelo de IA específico ou sequência rígida para todos os casos.
 
 ## 7. Mapa de Capacidades do Journey
 
@@ -274,11 +292,30 @@ Alternativa opcional para quem não sabe por onde começar. Não deve ser o flux
 
 A mensagem inicial deve explicar finalidade, ausência de julgamento, liberdade para não responder e possibilidade de revisão.
 
-Formulação de referência:
-
 > Para apresentar oportunidades realmente úteis, preciso compreender um pouco do seu momento atual. Você pode falar ou escrever livremente. Não é necessário contar nada que não queira, e você poderá revisar tudo o que eu compreender.
 
-## 12. Comportamento durante a escuta
+## 12. Fluxo funcional da Captura de Contexto
+
+```mermaid
+flowchart TD
+    A[Participante escolhe voz, texto ou fluxo guiado]
+    B[Guivos explica finalidade e controle]
+    C[Participante expressa seu contexto]
+    D[Guivos preserva a entrada e interpreta]
+    E[Guivos apresenta uma síntese]
+    F{Participante confirma?}
+    G[Corrige, complementa, limita ou remove]
+    H[Contexto inicial confirmado]
+    I[Primeiro Próximo Passo ou oportunidades iniciais]
+    J[Sessão temporária ou encerramento sem persistência]
+
+    A --> B --> C --> D --> E --> F
+    F -- Não --> G --> E
+    F -- Sim --> H --> I
+    C -. Recusa em salvar .-> J
+```
+
+## 13. Comportamento durante a escuta
 
 A Guivos deve:
 
@@ -291,7 +328,7 @@ A Guivos deve:
 - não transformar inferência em fato;
 - não recomendar antes da confirmação.
 
-## 13. Interpretação inicial e reflexão
+## 14. Interpretação inicial e reflexão
 
 A Guivos deverá organizar a compreensão em:
 
@@ -314,7 +351,7 @@ Respostas mínimas:
 - quero acrescentar;
 - prefiro não registrar parte disso.
 
-## 14. Controle do participante
+## 15. Controle do participante
 
 Antes da confirmação, o participante poderá:
 
@@ -327,13 +364,9 @@ Antes da confirmação, o participante poderá:
 - manter informação temporária;
 - impedir recomendações sobre determinado tema.
 
-## 15. Perguntas complementares
+## 16. Perguntas complementares e priorização
 
 Perguntas adicionais somente são permitidas para evitar erro, diferenciar objetivos, identificar restrições, tornar recomendação útil, proteger o participante ou atender obrigação legal.
-
-Devem ser poucas e contextualizadas.
-
-## 16. Priorização inicial
 
 Quando houver vários objetivos, o participante poderá escolher um ou mais, pedir ajuda para comparar ou manter sem prioridade definida.
 
@@ -415,7 +448,23 @@ Transformar entradas autorizadas em compreensão coerente, explicável e útil, 
 - incertezas;
 - hipóteses e inferências.
 
-## 25. Confiança, proveniência e temporalidade
+## 25. Fluxo funcional da interpretação
+
+```mermaid
+flowchart LR
+    A[Entrada autorizada]
+    B[Classificação]
+    C[Interpretação]
+    D[Confiança, origem e temporalidade]
+    E[Compreensão proposta]
+    F[Reflexão ao participante]
+    G[Confirmação, correção ou contestação]
+    H[Atualização permitida do contexto]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+```
+
+## 26. Confiança, proveniência e temporalidade
 
 Toda interpretação relevante deve responder:
 
@@ -435,7 +484,7 @@ Níveis funcionais iniciais de confiança:
 
 Hipóteses de baixa confiança não devem alterar informação permanente sem confirmação.
 
-## 26. Conflitos e reconstrução
+## 27. Conflitos e explicabilidade
 
 Informações conflitantes não devem ser resolvidas silenciosamente.
 
@@ -443,11 +492,7 @@ A Guivos deverá preservar histórico, reconhecer mudança, pedir confirmação 
 
 Uma nova evidência pode confirmar, fortalecer, enfraquecer, complementar, substituir ou invalidar uma interpretação.
 
-## 27. Explicabilidade
-
-O participante poderá perguntar por que a Guivos entende determinado aspecto de sua jornada.
-
-A resposta deverá citar fontes, interações ou evidências relevantes, nunca apenas afirmar que “a IA decidiu”.
+O participante poderá perguntar por que a Guivos entende determinado aspecto de sua jornada. A resposta deverá citar fontes, interações ou evidências relevantes, nunca apenas afirmar que “a IA decidiu”.
 
 # Capacidade 02 — Contexto Vivo
 
@@ -473,43 +518,68 @@ Toda representação relevante deve ser:
 
 > A Guivos nunca presume conhecer completamente o participante. Ela mantém continuamente a melhor representação possível de sua realidade, sempre aberta à revisão, ao aprendizado e à confirmação.
 
-## 30. Dimensões de compreensão
+## 30. Fluxo funcional do Contexto Vivo
+
+```mermaid
+flowchart TD
+    A[Entradas autorizadas]
+    B[Interpretação contextual]
+    C[Compreensão proposta]
+    D{Confirmação necessária?}
+    E[Participante confirma, corrige ou limita]
+    F[Atualização seletiva das dimensões]
+    G[Meu Contexto Hoje]
+    H[Objetivos, Próximos Passos e oportunidades]
+    I[Experiências e resultados]
+    J[Novas evidências]
+
+    A --> B --> C --> D
+    D -- Sim --> E --> F
+    D -- Não, quando permitido --> F
+    F --> G
+    F --> H
+    H --> I --> J --> B
+```
+
+O fluxo não autoriza atualização silenciosa de informações sensíveis, permanentes ou de impacto relevante.
+
+## 31. Dimensões de compreensão
 
 O Contexto Vivo é um modelo multidimensional de compreensão, não um supercadastro.
 
-### 30.1 Identidade
+### 31.1 Identidade
 
 Papéis e formas pelas quais o participante se reconhece no momento: profissional, estudante, empreendedor, responsável familiar, voluntário, atleta, mentor ou integrante de coletivos.
 
-### 30.2 Momento
+### 31.2 Momento
 
 Condições que caracterizam a realidade atual: início de carreira, transição, crescimento, reorganização, mudança, recuperação ou expansão.
 
-### 30.3 Direção
+### 31.3 Direção
 
 Objetivos, sonhos, prioridades, intenções e possibilidades desejadas.
 
-### 30.4 Capacidades
+### 31.4 Capacidades
 
 Conhecimentos, competências, experiências, certificações, recursos e redes disponíveis.
 
-### 30.5 Restrições
+### 31.5 Restrições
 
 Tempo, dinheiro, saúde, disponibilidade, mobilidade, responsabilidades e demais limites atuais.
 
-### 30.6 Preferências
+### 31.6 Preferências
 
 Formas preferidas de viver experiências: online, presencial, individual, coletiva, gratuita, paga, curta ou longa.
 
-### 30.7 Relacionamentos
+### 31.7 Relacionamentos
 
 Pessoas, Organizações e Coletivos relevantes para a jornada.
 
-### 30.8 Evolução
+### 31.8 Evolução
 
 Mudanças, resultados, evidências e diferenças entre estados ao longo do tempo.
 
-## 31. Evolução independente das dimensões
+## 32. Evolução independente das dimensões
 
 > Cada dimensão do Contexto Vivo evolui de forma independente. Uma alteração poderá impactar outras dimensões, mas não deverá exigir reconstrução completa nem presumir mudanças onde não existam evidências suficientes.
 
@@ -518,21 +588,27 @@ Exemplos:
 - uma promoção pode alterar Momento, Capacidades e Direção, sem modificar Preferências;
 - o nascimento de um filho pode alterar Momento, Restrições, Disponibilidade e Direção, sem alterar competências profissionais.
 
-## 32. Ciclo de vida da informação
+## 33. Ciclo de vida da informação
 
-```text
-Observada
-  -> Interpretada
-  -> Confirmada
-  -> Ativa
-  -> Envelhecida
-  -> Substituída
-  -> Arquivada
+```mermaid
+stateDiagram-v2
+    [*] --> Observada
+    Observada --> Interpretada
+    Interpretada --> Confirmada
+    Confirmada --> Ativa
+    Ativa --> Envelhecida
+    Ativa --> Substituída
+    Envelhecida --> Confirmada: revisão
+    Envelhecida --> Substituída
+    Substituída --> Arquivada
+    Ativa --> Arquivada: remoção ou expiração
 ```
 
 Cada item deverá preservar origem, temporalidade, confiança, finalidade, permissões e relação com dimensões afetadas.
 
-## 33. Visão do participante — Meu Contexto Hoje
+Nem toda informação percorre todos os estados. Itens podem ser descartados antes da confirmação ou permanecer temporários sem integrar a representação persistente.
+
+## 34. Visão do participante — Meu Contexto Hoje
 
 O participante deverá acessar uma visão simples contendo:
 
@@ -557,7 +633,37 @@ Ele deverá conseguir entender:
 - quais fontes foram utilizadas;
 - como corrigir, ocultar, limitar ou remover.
 
-## 34. Estado atual da Capacidade 02
+### 34.1 Diagrama conceitual
+
+```mermaid
+flowchart TD
+    M[Meu Contexto Hoje]
+    ID[Quem sou neste momento]
+    FO[Foco principal]
+    MR[Mudanças recentes]
+    OB[Objetivos e Próximos Passos]
+    CA[Capacidades]
+    RE[Restrições]
+    PR[Preferências]
+    CO[Conexões]
+    RV[Revisões necessárias]
+    CT[Controles do participante]
+
+    M --> ID
+    M --> FO
+    M --> MR
+    M --> OB
+    M --> CA
+    M --> RE
+    M --> PR
+    M --> CO
+    M --> RV
+    M --> CT
+```
+
+Esse diagrama representa organização conceitual, não layout definitivo de interface.
+
+## 35. Estado atual da Capacidade 02
 
 Já consolidados:
 
@@ -567,6 +673,7 @@ Já consolidados:
 - oito dimensões iniciais;
 - evolução independente;
 - ciclo de vida inicial;
+- fluxo funcional;
 - visão conceitual `Meu Contexto Hoje`.
 
 Ainda pendentes:
@@ -581,6 +688,6 @@ Ainda pendentes:
 - casos ideal, alternativo e limite;
 - contrato da capacidade.
 
-## 35. Ponto de retomada
+## 36. Ponto de retomada
 
 Retomar na Capacidade 02 — Contexto Vivo, detalhando responsabilidades, entradas, saídas, estados de cada dimensão, regras de atualização e envelhecimento, conflitos, interface, eventos, KPIs, cenários e contrato de aceite.
