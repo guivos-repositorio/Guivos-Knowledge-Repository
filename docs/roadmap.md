@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 4.9.0
+version: 5.0.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -13,24 +13,23 @@ Este roadmap acompanha a evolução do Guivos Knowledge Repository, da Guivos En
 ## Estado atual
 
 - **Era vigente:** `GE-2 — Knowledge`.
-- **Marco vigente:** `M5.6 — Journey Operational Philosophy Consolidated`.
-- **Modo vigente da GE-2:** `Institutional Consolidation Mode`.
+- **Marco vigente:** `M5.7 — Context Capabilities Progress Registered`.
 - **Frente operacional vigente:** `Product Engineering`.
-- **Sincronização vigente:** `GE2-SYNC-005`.
-- **Especificação ativa:** `PAS-001 — Guivos Journey`, versão `0.3.0`.
+- **Sincronização vigente:** `GE2-SYNC-006`.
+- **Especificação ativa:** `PAS-001 — Guivos Journey`, versão `0.4.0`.
 - **Arquitetura funcional vigente:** `GLPA-001`.
-- **Documento público vigente:** `GOG-001 — Guia Oficial da Guivos 4.0.0`.
+- **Documento público vigente:** `GOG-001 — Guia Oficial da Guivos 4.1.0`.
 - **GKA-000:** Parte V pendente.
 - **A2-R02:** em espera operacional.
 - **Guivos Economic Model:** planejado.
 
 ## Decisão de direção
 
-O Architecture Engineering Sprint deixa de ser o foco imediato.
+O trabalho permanece no `PAS-001 — Guivos Journey`.
 
-Os candidatos estruturais GTF, GCM, GPMA, GLS, GDP, GDF e GAME permanecem preservados, mas não serão desenvolvidos antes da conclusão suficiente da especificação funcional dos produtos oficiais.
+Novos frameworks estruturais não serão desenvolvidos enquanto os produtos oficiais não possuírem especificação funcional suficiente.
 
-O trabalho retorna ao `PAS-001 — Guivos Journey`.
+Cada sessão deve produzir incremento funcional concreto.
 
 ## Product Engineering
 
@@ -38,52 +37,72 @@ O trabalho retorna ao `PAS-001 — Guivos Journey`.
 
 Objetivo:
 
-> Transformar a arquitetura já consolidada em especificações funcionais executáveis, começando pelo Guivos Journey.
+> Transformar a arquitetura consolidada em especificações funcionais executáveis, começando pelo Guivos Journey.
 
-Regra de foco:
+Unidade de trabalho:
 
-> Cada sessão deve produzir incremento funcional concreto do PAS-001, sem abrir nova meta-arquitetura enquanto houver produto oficial sem especificação suficiente.
+> Capacidade funcional completa, não funcionalidade isolada ou descrição de tela.
 
 ## PAS-001 — Guivos Journey
 
-**Estado:** Draft 0.3.0 — Active.
+**Estado:** Draft 0.4.0 — Active.
 
 Conteúdo consolidado:
 
 - Product Philosophy;
 - Journey como Experience Layer;
-- Captura Multimodal de Contexto;
-- voz como canal prioritário;
-- compreensão refletida e confirmada;
-- LPM e CIE como candidatos preservados;
+- cinco responsabilidades permanentes;
 - relação contínua com a vida real;
-- distinção entre Estado e Eventos de Vida;
+- Estado e Eventos de Vida;
 - Oportunidades Ativas;
 - Intervenções Contextuais;
-- Orquestração de Intervenções;
-- Distância para Evolução como conceito interno;
-- cinco responsabilidades permanentes: compreender, acompanhar, ativar, orquestrar e aprender.
+- Distância para Evolução;
+- padrão de especificação por capacidades;
+- Ciclo Cognitivo do Domínio;
+- Capacidade 01 — Captura de Contexto;
+- Interpretação do Contexto;
+- início da Capacidade 02 — Contexto Vivo;
+- oito dimensões de compreensão;
+- Princípio da Representação Humilde;
+- Princípio da Evolução Independente das Dimensões.
 
-## Sequência funcional do Journey
+## Progresso das capacidades
+
+| Capacidade | Estado | Progresso de referência |
+|---|---|---|
+| 01 — Captura de Contexto | Substantially complete | 95% |
+| 02 — Contexto Vivo | In progress | 35% |
+| 03 — Objetivos | Planned | 0% |
+| 04 — Eventos de Vida | Planned / concept consolidated | 10% |
+| 05 — Próximos Passos | Planned | 0% |
+| 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
+| 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
+| 08 — Experiências | Planned | 0% |
+| 09 — Evolução Contínua | Planned | 0% |
+
+Os percentuais são referências de acompanhamento, não medição automatizada de conclusão.
+
+## Sequência funcional
 
 1. Captura de Contexto;
-2. Construção do Modelo de Contexto;
-3. Objetivos;
-4. Eventos de Vida;
-5. Próximos Passos;
-6. Oportunidades Ativas;
-7. Intervenções Contextuais;
-8. Experiências;
-9. Evolução;
-10. IA;
-11. Integrações;
-12. Modelo Econômico;
-13. KPIs;
-14. Roadmap.
+2. Interpretação do Contexto;
+3. Contexto Vivo;
+4. Objetivos;
+5. Eventos de Vida;
+6. Próximos Passos;
+7. Oportunidades Ativas;
+8. Intervenções Contextuais;
+9. Experiências;
+10. Evolução Contínua;
+11. IA;
+12. Integrações;
+13. Modelo Econômico;
+14. KPIs;
+15. Roadmap.
 
-## Backlog executivo posterior
+## Backlog posterior
 
-1. concluir arquitetura funcional do Journey;
+1. concluir funcionalmente o Journey;
 2. Guivos Economic Model;
 3. Guivos Mall;
 4. Guivos Business;
@@ -96,14 +115,26 @@ Conteúdo consolidado:
 
 ## Restrições
 
-- não retornar ao ciclo de meta-arquitetura como foco imediato;
-- não promover LPM, CIE ou demais candidatos diretamente à Canon;
-- não tratar candidatos como componentes técnicos obrigatórios;
+- não retornar à meta-arquitetura como foco imediato;
+- não promover LPM, CIE ou outros candidatos diretamente à Canon;
+- não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - não criar `docs/knowledge-architecture/` antes da aprovação integral do GKA-000;
-- preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes.
+- preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
+- não iniciar o próximo produto antes de conclusão funcional suficiente do atual.
 
 ## Ponto exato de retomada
 
-Retomar no `PAS-001 — Guivos Journey` pela especificação funcional detalhada da **Captura de Contexto**.
+Retomar na **Capacidade 02 — Contexto Vivo**.
 
-A próxima entrega deverá descrever a primeira conversa por voz ou texto, escuta, interpretação, reflexão da compreensão, confirmação, correção, consentimento, exceções e transição para objetivos e primeiras oportunidades.
+Próxima entrega:
+
+1. responsabilidades e limites;
+2. entradas e saídas;
+3. estados por dimensão;
+4. regras de envelhecimento e atualização;
+5. resolução de conflitos;
+6. interface `Meu Contexto Hoje`;
+7. eventos produzidos;
+8. KPIs;
+9. cenários ideal, alternativo e limite;
+10. contrato da capacidade.
