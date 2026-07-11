@@ -2,7 +2,7 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 4.2.0
+version: 4.2.1
 owner: Guivos
 last_updated: 2026-07-11
 classification: Documento Institucional Público
@@ -20,7 +20,7 @@ update_cycle: Continuous
 | Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará, quais são seus limites e como pessoas, organizações e coletivos poderão participar |
 | Público | Pessoas, empresas, organizações, grupos, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
 | Responsável institucional | Guivos |
-| Versão | 4.2.0 |
+| Versão | 4.2.1 |
 | Última atualização | 11/07/2026 |
 | Status | Public Canon |
 | Fonte principal | Guivos Knowledge Repository |
@@ -327,16 +327,29 @@ A Platform Layer sustenta autenticação, segurança, dados, integrações, paga
 
 ```mermaid
 flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    J[Guivos Journey — Experiência]
-    I[Guivos Intelligence — Inteligência transversal]
-    S[Business | Mall | Travel | Media | Ads]
-    PL[Platform Layer — Base comum]
+    P["Pessoas, Organizações e Coletivos"]
+    J["Guivos Journey - Experiência"]
+    I["Guivos Intelligence - Inteligência transversal"]
+    S["Soluções especializadas"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer - Base comum"]
 
     P --> J
-    J <--> I
-    J <--> S
-    I <--> S
+    J --> I
+    I --> J
+    J --> S
+    S --> J
+    I --> S
+    S --> I
+    S --> B
+    S --> M
+    S --> T
+    S --> MD
+    S --> A
     PL --> J
     PL --> I
     PL --> S
@@ -576,3 +589,4 @@ A autonomia permanece com o participante. A inteligência, os produtos e o model
 | 4.0.0 | 04/07/2026 | Arquitetura em camadas e captura multimodal de contexto |
 | 4.1.0 | 04/07/2026 | Compreensão contínua, revisável e atualizada ao longo da jornada |
 | 4.2.0 | 11/07/2026 | Alinhamento literal com Foundation, esclarecimento de Public Canon e revisão dos diagramas públicos |
+| 4.2.1 | 11/07/2026 | Correção de compatibilidade Mermaid no diagrama público da estrutura da Guivos |
