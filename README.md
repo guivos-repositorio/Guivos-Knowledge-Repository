@@ -5,71 +5,83 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5.6 — Journey Operational Philosophy Consolidated
+- **Marco vigente:** M5.7 — Context Capabilities Progress Registered
 - **Frente operacional:** Product Engineering
-- **Sincronização vigente:** GE2-SYNC-005
-- **Especificação ativa:** PAS-001 — Guivos Journey 0.3.0
+- **Sincronização vigente:** GE2-SYNC-006
+- **Especificação ativa:** PAS-001 — Guivos Journey 0.4.0
+- **Capacidade ativa:** 02 — Contexto Vivo
 - **Arquitetura funcional:** GLPA-001
-- **Guia Oficial:** GOG-001 4.0.0
+- **Guia Oficial:** GOG-001 4.1.0
 - **GKA-000:** Parte V pendente
 - **A2-R02:** em espera operacional
 - **Guivos Economic Model:** planejado
 
 ## Ponto exato de retomada
 
-Retomar no `PAS-001 — Guivos Journey` pela especificação funcional detalhada da **Captura de Contexto**.
+Retomar na `Capacidade 02 — Contexto Vivo` do `PAS-001 — Guivos Journey`.
 
-A próxima entrega deverá cobrir:
+Próxima entrega:
 
-- primeira conversa por voz ou texto;
-- escuta e interpretação;
-- reflexão da compreensão;
-- confirmação, correção e limitação;
-- consentimento e privacidade;
-- exceções;
-- transição para objetivos, prioridades e primeiras oportunidades.
+- responsabilidades e limites;
+- entradas e saídas;
+- estados por dimensão;
+- regras de atualização e envelhecimento;
+- resolução de conflitos;
+- interface `Meu Contexto Hoje`;
+- eventos produzidos;
+- KPIs;
+- cenários ideal, alternativo e limite;
+- contrato da capacidade.
 
-## Filosofia operacional do Journey
+## Product Engineering
 
-O Journey opera por cinco responsabilidades permanentes:
+A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-1. compreender;
-2. acompanhar;
-3. ativar;
-4. orquestrar;
-5. aprender.
+Cada capacidade deve responder uma pergunta central e possuir objetivo, valor, responsabilidades, entradas, ciclo cognitivo, fluxos, estados, regras, exceções, privacidade, integrações, eventos, KPIs, cenários e contrato de aceite.
 
-Sequência comportamental:
+## Capacidades do Journey
 
-```text
-Escutar
-  -> Compreender
-  -> Refletir
-  -> Confirmar
-  -> Recomendar ou agir
-```
+| Capacidade | Estado |
+|---|---|
+| 01 — Captura de Contexto | Substantially complete |
+| 02 — Contexto Vivo | In progress |
+| 03 — Objetivos | Planned |
+| 04 — Eventos de Vida | Planned / concept consolidated |
+| 05 — Próximos Passos | Planned |
+| 06 — Oportunidades Ativas | Planned / concept consolidated |
+| 07 — Intervenções Contextuais | Planned / concept consolidated |
+| 08 — Experiências | Planned |
+| 09 — Evolução Contínua | Planned |
 
-## Conceitos funcionais consolidados no PAS-001
+## Contexto Vivo
 
-- Captura Multimodal de Contexto;
-- voz como canal prioritário, mas não exclusivo;
-- relação contínua com a vida real;
-- Estado e Eventos de Vida;
-- Oportunidades Ativas;
-- Intervenções Contextuais;
-- Orquestração de Intervenções;
-- Distância para Evolução como conceito interno de produto;
-- LPM e CIE preservados como candidatos, não como componentes técnicos obrigatórios.
+O Contexto Vivo representa a melhor compreensão que a Guivos possui sobre a realidade do participante em determinado momento. Ele não é um cadastro fixo nem uma representação absoluta.
 
-## Decisão de foco
+A compreensão deve ser contextual, temporal, explicável, revisável e controlável pelo participante.
 
-O Architecture Engineering Sprint não é mais a atividade imediata.
+Dimensões iniciais:
 
-GTF, GCM, GPMA, GLS, GDP, GDF e GAME permanecem preservados como candidatos, mas não serão desenvolvidos antes da conclusão suficiente das especificações funcionais dos produtos oficiais.
+- Identidade;
+- Momento;
+- Direção;
+- Capacidades;
+- Restrições;
+- Preferências;
+- Relacionamentos;
+- Evolução.
+
+## Princípios recentes
+
+> A Guivos nunca presume conhecer completamente o participante. Ela mantém a melhor representação possível de sua realidade, sempre aberta à revisão, ao aprendizado e à confirmação.
+
+> Cada dimensão do Contexto Vivo evolui de forma independente e não deve presumir mudanças sem evidência suficiente.
+
+> A primeira conversa termina quando o participante confirma que foi compreendido e recebe um primeiro caminho útil, não quando completa um cadastro.
 
 ## Acesso rápido
 
 - [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
+- [GE2-SYNC-006 — Context Interpretation and Living Context Progress](docs/project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md)
 - [GE2-SYNC-005 — Journey Operational Philosophy and Product Engineering](docs/project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
@@ -77,16 +89,6 @@ GTF, GCM, GPMA, GLS, GDP, GDF e GAME permanecem preservados como candidatos, mas
 - [Knowledge Board](docs/project/knowledge-board.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
-
-## Princípios centrais
-
-> A Guivos é concebida em sua capacidade máxima. A implementação realiza progressivamente essa visão.
-
-> O participante permanece soberano sobre as informações utilizadas para compreender e personalizar sua jornada.
-
-> O Journey não maximiza quantidade de oportunidades; ele busca ativar as oportunidades certas no momento certo.
-
-> Cada sessão de trabalho deve produzir incremento funcional concreto enquanto houver produto oficial sem especificação suficiente.
 
 ## Pipeline de publicação
 
