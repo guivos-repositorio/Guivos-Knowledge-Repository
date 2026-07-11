@@ -2,40 +2,34 @@
 
 O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-Ele preserva fundamentos, arquiteturas, modelos, decisões, pesquisas, validações, especificações de produto e publicações públicas.
-
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M5.7 — Context Capabilities Progress Registered` concluído;
+- marco `M5.8 — GKR and GOG Consistency Review Completed` concluído;
 - frente `Product Engineering` ativa;
-- sincronização `GE2-SYNC-006` registrada;
-- `PAS-001 — Guivos Journey` ativo na versão `0.4.0`;
-- Capacidade 01 — Captura de Contexto substancialmente concluída;
-- Capacidade 02 — Contexto Vivo em desenvolvimento;
-- `GLPA-001` vigente;
-- `GOG-001 — Guia Oficial da Guivos` na versão `4.1.0`;
-- GKA-000 com Parte V pendente;
-- Guivos Economic Model planejado;
-- A2-R02 em espera operacional.
+- revisão `AR-001 0.5.0` concluída;
+- `PAS-001 — Guivos Journey 0.4.1` ativo;
+- `GLPA-001 1.1.0` vigente;
+- `GIA-000 1.3.0` vigente;
+- Glossário Canônico `1.8.0`;
+- `GOG-001 — Guia Oficial 4.2.0`;
+- Capacidade 02 — Contexto Vivo em desenvolvimento.
 
 ## Missão atual
 
-Completar funcionalmente a **Capacidade 02 — Contexto Vivo** no `PAS-001 — Guivos Journey`.
-
-A próxima entrega deverá definir responsabilidades, limites, entradas, saídas, estados por dimensão, atualização, envelhecimento, conflitos, interface `Meu Contexto Hoje`, eventos, KPIs, cenários e contrato de aceite.
+Completar funcionalmente a **Capacidade 02 — Contexto Vivo** no `PAS-001`.
 
 ## Acesso rápido
 
+- [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)
-- [GE2-SYNC-006 — Context Interpretation and Living Context Progress](project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md)
-- [GE2-SYNC-005 — Journey Operational Philosophy and Product Engineering](project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md)
-- [Guia Oficial da Guivos 4.1](public/guia-oficial-da-guivos.md)
-- [GLPA-001 — Guivos Layered Product Architecture](product-architecture/layered-product-architecture.md)
-- [Roadmap Arquitetural](roadmap.md)
-- [Knowledge Board](project/knowledge-board.md)
+- [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
-- [Guivos Economic Model](economic-model/index.md)
+- [Glossário Canônico](glossary.md)
+- [AR-001 — Revisão GKR e GOG](project/AR-001-gkr-gog-consistency-and-diagram-review.md)
+- [GE2-SYNC-006](project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md)
+- [Roadmap](roadmap.md)
+- [Knowledge Board](project/knowledge-board.md)
 
 ## Capacidades do Journey
 
@@ -51,27 +45,6 @@ A próxima entrega deverá definir responsabilidades, limites, entradas, saídas
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
-## Contexto Vivo
+## Ponto de retomada
 
-O Contexto Vivo representa a melhor compreensão disponível sobre a realidade do participante em determinado momento.
-
-Ele deve ser contextual, temporal, explicável, revisável e controlável pelo participante.
-
-Dimensões iniciais:
-
-- Identidade;
-- Momento;
-- Direção;
-- Capacidades;
-- Restrições;
-- Preferências;
-- Relacionamentos;
-- Evolução.
-
-## Princípios vigentes
-
-> A Guivos nunca presume conhecer completamente o participante.
-
-> Cada dimensão evolui de forma independente e não deve presumir mudanças sem evidência suficiente.
-
-> A primeira conversa termina quando o participante confirma que foi compreendido e recebe um primeiro caminho útil, não quando completa um cadastro.
+Retomar na Capacidade 02, detalhando responsabilidades, limites, entradas, saídas, estados, envelhecimento, conflitos, interface `Meu Contexto Hoje`, eventos, KPIs, cenários e contrato de aceite.
