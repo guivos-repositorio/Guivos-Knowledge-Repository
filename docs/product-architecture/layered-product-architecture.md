@@ -2,12 +2,13 @@
 id: GLPA-001
 title: Guivos Layered Product Architecture
 status: approved
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-11
 related:
   - GPA-000
   - PAS-001
+  - AR-001
 ---
 
 # GLPA-001 — Guivos Layered Product Architecture
@@ -22,44 +23,80 @@ A GLPA estabelece que o ecossistema não é apenas uma lista horizontal de produ
 
 ## 2. Decisão estrutural
 
-A estrutura institucional de apresentação da Guivos pode listar Journey, Mall, Business, Travel, Media, Intelligence e Ads como componentes oficiais.
+A estrutura institucional pode apresentar Journey, Mall, Business, Travel, Media, Intelligence e Ads como componentes oficiais.
 
-Entretanto, para fins de construção, operação e evolução funcional da plataforma, esses componentes devem ser organizados por camadas.
+Para fins de construção, operação e evolução, esses componentes são organizados por camadas.
 
 ## 3. Arquitetura em camadas
 
 ```mermaid
-graph TD
-    G[Guivos]
+flowchart TD
+    P[Pessoas, Organizações e Coletivos]
+    EL[Experience Layer]
+    J[Guivos Journey]
+    IL[Intelligence Layer]
+    I[Guivos Intelligence]
+    SL[Service Layer]
+    B[Guivos Business]
+    M[Guivos Mall]
+    T[Guivos Travel]
+    MD[Guivos Media]
+    A[Guivos Ads]
+    PL[Platform Layer]
+    API[APIs e integrações]
+    AUTH[Identidade, autenticação e autorização]
+    DATA[Dados, busca e armazenamento]
+    BILL[Billing e pagamentos compartilhados]
+    NOTIF[Notificações e mensageria]
+    SEC[Segurança, privacidade e observabilidade]
+    GRAPH[Implementação técnica futura do Grafo Global]
 
-    G --> EL[Experience Layer]
-    EL --> J[Guivos Journey]
+    P --> EL
+    EL --> J
+    J <--> I
+    J <--> B
+    J <--> M
+    J <--> T
+    J <--> MD
+    J <--> A
 
-    G --> IL[Intelligence Layer]
-    IL --> I[Guivos Intelligence]
+    IL --> I
+    I <--> B
+    I <--> M
+    I <--> T
+    I <--> MD
+    I <--> A
 
-    G --> SL[Service Layer]
-    SL --> B[Guivos Business]
-    SL --> M[Guivos Mall]
-    SL --> T[Guivos Travel]
-    SL --> MD[Guivos Media]
-    SL --> A[Guivos Ads]
+    SL --> B
+    SL --> M
+    SL --> T
+    SL --> MD
+    SL --> A
 
-    G --> PL[Platform Layer]
-    PL --> API[APIs]
-    PL --> GR[Graph]
-    PL --> AUTH[Auth]
-    PL --> BILL[Billing]
-    PL --> SEARCH[Search]
-    PL --> NOTIF[Notifications]
-    PL --> SEC[Security]
+    PL --> J
+    PL --> I
+    PL --> B
+    PL --> M
+    PL --> T
+    PL --> MD
+    PL --> A
+
+    PL --> API
+    PL --> AUTH
+    PL --> DATA
+    PL --> BILL
+    PL --> NOTIF
+    PL --> SEC
+    PL --> GRAPH
 ```
+
+O diagrama representa responsabilidades funcionais, não topologia técnica definitiva nem dependência obrigatória entre microserviços.
 
 ## 4. Experience Layer
 
-A Experience Layer é a camada responsável pela experiência unificada do participante.
+A Experience Layer é responsável pela experiência unificada do participante.
 
-Ela organiza como a pessoa acessa, percebe e utiliza o Ecossistema Guivos.
+Ela organiza como Pessoas, Organizações e Coletivos acessam, compreendem e utilizam o Ecossistema Guivos.
 
 ### Componente principal
 
@@ -67,18 +104,21 @@ Ela organiza como a pessoa acessa, percebe e utiliza o Ecossistema Guivos.
 
 ### Responsabilidades
 
-- experiência do usuário;
-- jornadas;
-- objetivos;
-- descoberta;
-- recomendações visíveis;
-- feed ou superfície principal de interação;
-- perfil do participante;
+- experiência unificada do participante;
+- superfície principal de experiência;
+- organização das jornadas;
+- objetivos e Próximos Passos;
+- descoberta contextual;
+- apresentação de recomendações e oportunidades;
+- visão autorizada do contexto do participante;
 - acompanhamento da evolução;
-- gamificação;
-- comunicação direta com o usuário.
+- comunicação e intervenções visíveis;
+- gamificação e incentivos apresentados ao participante;
+- orquestração experiencial das capacidades das demais camadas.
 
-O Journey não executa todas as capacidades do ecossistema. Ele orquestra a experiência visível que integra capacidades fornecidas pelas demais camadas.
+A Experience Layer não possui como responsabilidade permanente um formato específico de interface. Feed, conversa, mapa, painel ou outras superfícies podem ser utilizados quando adequados, mas nenhum deles define o Journey.
+
+A expressão `perfil do participante` deixa de ser usada como responsabilidade arquitetural. A formulação vigente é `visão autorizada do contexto do participante`, coerente com o Contexto Vivo do PAS-001.
 
 ## 5. Intelligence Layer
 
@@ -90,15 +130,18 @@ A Intelligence Layer é a camada transversal responsável pela interpretação c
 
 ### Responsabilidades
 
-- interpretação de contexto;
-- recomendações;
-- personalização;
-- aprendizagem com evidências autorizadas;
-- apoio a decisões;
-- inteligência aplicada para produtos, organizações e participantes;
-- relacionamento com o Grafo Global da Guivos.
+- interpretar entradas e sinais autorizados;
+- apoiar a construção de compreensão contextual;
+- recomendar e priorizar possibilidades;
+- personalizar experiências;
+- aprender com resultados e evidências autorizadas;
+- apoiar decisões sem substituir a autonomia humana;
+- fornecer inteligência para Journey e serviços especializados;
+- relacionar conhecimento e contexto ao Grafo Global da Guivos.
 
-A Intelligence Layer não pertence ao Journey. Ela serve toda a Guivos.
+A Intelligence Layer não pertence ao Journey. Ela serve todo o ecossistema.
+
+A Intelligence propõe interpretações, recomendações e atualizações. A Experience Layer decide como essas capacidades são apresentadas e controladas pelo participante.
 
 ## 6. Service Layer
 
@@ -114,66 +157,66 @@ A Service Layer concentra os produtos especializados que entregam capacidades es
 
 ### Responsabilidades
 
-| Componente | Responsabilidade |
+| Componente | Responsabilidade predominante |
 |---|---|
-| Guivos Business | Relação com organizações, oportunidades institucionais, soluções B2B e programas corporativos |
-| Guivos Mall | Produtos, serviços, compras, assinaturas, gift cards, pagamentos e ativos comerciais |
+| Guivos Business | Relações com organizações, oportunidades institucionais, soluções B2B e programas corporativos |
+| Guivos Mall | Produtos, serviços, compras, assinaturas, gift cards, pagamentos comerciais e ativos transacionáveis |
 | Guivos Travel | Viagens, experiências presenciais, reservas, roteiros e deslocamentos |
 | Guivos Media | Conteúdos, histórias, materiais editoriais, formação e comunicação institucional |
-| Guivos Ads | Publicidade, patrocínios, campanhas, mídia paga e ativações comerciais |
+| Guivos Ads | Publicidade, patrocínios, campanhas, mídia paga e ativações comerciais responsáveis |
+
+Os serviços especializados podem utilizar Intelligence e Platform diretamente conforme sua responsabilidade. O Journey não é intermediário técnico obrigatório para todas as relações entre camadas.
 
 ## 7. Platform Layer
 
-A Platform Layer reúne capacidades comuns utilizadas pelas demais camadas.
+A Platform Layer reúne capacidades técnicas e operacionais comuns utilizadas pelas demais camadas.
 
 ### Responsabilidades
 
-- APIs;
-- autenticação;
-- autorização;
-- billing;
-- pagamentos;
+- APIs e integrações;
+- identidade, autenticação e autorização;
+- billing e capacidades compartilhadas de pagamento;
 - busca;
-- notificações;
+- notificações e mensageria;
 - infraestrutura de dados;
-- segurança;
-- privacidade;
-- logs;
-- integrações;
-- observabilidade;
+- segurança e privacidade;
+- logs, auditoria e observabilidade;
 - armazenamento;
-- recursos compartilhados de IA;
-- Grafo Global em sua implementação técnica futura.
+- recursos técnicos compartilhados;
+- implementação técnica futura do Grafo Global.
 
-Essa camada não representa um produto público, mas a base técnica e operacional que sustenta todos os componentes da Guivos.
+A Platform Layer não representa produto público independente. Ela sustenta os componentes oficiais sem definir sua experiência ou sua lógica de negócio especializada.
 
-## 8. Regras de responsabilidade
+## 8. Limites entre as camadas
 
-1. O que pertence à experiência visível do participante pertence à Experience Layer.
-2. O que interpreta contexto, recomenda, aprende ou personaliza pertence à Intelligence Layer.
+| Pergunta | Responsabilidade predominante |
+|---|---|
+| Onde o participante visualiza uma recomendação? | Experience Layer / Journey |
+| Onde contexto é interpretado e a recomendação é calculada? | Intelligence Layer / Intelligence |
+| Onde o participante revisa e controla a compreensão apresentada? | Experience Layer / Journey |
+| Onde a compra de um produto é executada? | Service Layer / Mall |
+| Onde relações e programas B2B são administrados? | Service Layer / Business |
+| Onde uma campanha patrocinada é operada? | Service Layer / Ads |
+| Onde conteúdo editorial é produzido e governado? | Service Layer / Media |
+| Onde uma reserva de viagem é executada? | Service Layer / Travel |
+| Onde ficam identidade, APIs, segurança e observabilidade comuns? | Platform Layer |
+
+## 9. Regras de responsabilidade
+
+1. O que pertence à experiência visível e ao controle do participante pertence à Experience Layer.
+2. O que interpreta, recomenda, aprende ou personaliza pertence à Intelligence Layer.
 3. O que entrega uma capacidade especializada de negócio pertence à Service Layer.
 4. O que é infraestrutura comum pertence à Platform Layer.
-5. Nenhuma camada deve assumir responsabilidades permanentes de outra camada.
+5. Nenhuma camada deve assumir responsabilidade permanente de outra.
 6. Sobreposições devem ser resolvidas pela responsabilidade predominante.
-7. O Journey deve orquestrar a experiência sem absorver a execução integral dos serviços especializados.
-8. A Intelligence deve apoiar todo o ecossistema, não apenas o Journey.
+7. O Journey orquestra a experiência sem absorver a execução integral dos serviços especializados.
+8. A Intelligence apoia todo o ecossistema, não apenas o Journey.
+9. Os serviços especializados podem consumir capacidades de Intelligence e Platform sem depender de mediação técnica do Journey.
+10. Diagramas da GLPA representam organização funcional e não prescrevem arquitetura técnica definitiva.
 
-## 9. Exemplos de decisão funcional
+## 10. Organização pública
 
-| Pergunta | Camada responsável |
-|---|---|
-| Onde fica a tela de recomendações? | Experience Layer / Journey |
-| Onde fica o algoritmo de recomendação? | Intelligence Layer / Intelligence |
-| Onde fica uma compra? | Service Layer / Mall |
-| Onde fica o cadastro de empresas? | Service Layer / Business |
-| Onde fica uma campanha patrocinada? | Service Layer / Ads |
-| Onde fica um artigo ou história? | Service Layer / Media |
-| Onde fica uma reserva de viagem? | Service Layer / Travel |
-| Onde ficam login, billing e notificações? | Platform Layer |
-
-## 10. Organização pública sugerida
-
-Para comunicação institucional, a Guivos poderá apresentar seus componentes por natureza:
+Para comunicação institucional, a Guivos apresenta:
 
 ### Experiência
 
@@ -183,7 +226,7 @@ Para comunicação institucional, a Guivos poderá apresentar seus componentes p
 
 - Guivos Intelligence.
 
-### Soluções
+### Soluções especializadas
 
 - Guivos Business;
 - Guivos Mall;
@@ -191,30 +234,33 @@ Para comunicação institucional, a Guivos poderá apresentar seus componentes p
 - Guivos Media;
 - Guivos Ads.
 
-Essa organização evita tratar componentes de naturezas diferentes como produtos equivalentes.
+### Base comum
 
-## 11. Relação com a Arquitetura de Produtos
+- Platform Layer, apresentada apenas quando necessário para explicar a sustentação do ecossistema.
 
-A GLPA complementa a Arquitetura de Produtos da Guivos.
+## 11. Relação com o PAS-001
 
-A Arquitetura de Produtos registra os componentes oficiais do ecossistema.
+A GLPA define limites permanentes entre camadas.
 
-A GLPA registra como esses componentes são organizados funcionalmente para construção, operação e evolução da plataforma.
+O PAS-001 detalha como o Guivos Journey cumpre suas responsabilidades na Experience Layer por meio de capacidades funcionais.
+
+O Contexto Vivo pertence ao PAS como responsabilidade experiencial de representação, visualização e controle. A interpretação algorítmica que o alimenta pertence à Intelligence Layer. Identidade, persistência, segurança e auditoria pertencem à Platform Layer.
 
 ## 12. Ponto de aplicação
 
-A GLPA deverá orientar:
+A GLPA orienta:
 
 - `PAS-001 — Guivos Journey`;
 - especificações futuras de Mall, Business, Travel, Media, Intelligence e Ads;
 - arquitetura funcional da plataforma;
 - organização de times;
 - decisões de UX;
-- limites entre produtos;
+- contratos entre produtos;
+- limites de responsabilidade;
 - roadmap técnico futuro.
 
 ## 13. Estado
 
-Esta arquitetura encontra-se aprovada como referência da fase de especificação funcional da Guivos.
+Esta arquitetura permanece aprovada como referência da fase de Product Engineering.
 
-Ela poderá ser revisada quando novos produtos, capacidades ou necessidades técnicas demonstrarem limitações relevantes.
+A versão 1.1.0 substitui terminologia legada de `perfil` e `feed` como responsabilidades permanentes, esclarece relações transversais e preserva a distinção entre arquitetura funcional e implementação técnica.
