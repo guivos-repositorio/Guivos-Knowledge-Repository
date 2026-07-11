@@ -2,9 +2,9 @@
 id: GOG-001
 title: Guia Oficial da Guivos
 status: public-canon
-version: 4.1.0
+version: 4.2.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-11
 classification: Documento Institucional Público
 source: Derived from GKR Canon
 update_cycle: Continuous
@@ -20,11 +20,13 @@ update_cycle: Continuous
 | Finalidade | Explicar, em linguagem pública e prática, o que é a Guivos, por que ela existe, como funcionará, quais são seus limites e como pessoas, organizações e coletivos poderão participar |
 | Público | Pessoas, empresas, organizações, grupos, comunidades, movimentos, parceiros, imprensa, investidores, fornecedores, colaboradores e interessados em geral |
 | Responsável institucional | Guivos |
-| Versão | 4.1.0 |
-| Última atualização | 04/07/2026 |
+| Versão | 4.2.0 |
+| Última atualização | 11/07/2026 |
 | Status | Public Canon |
 | Fonte principal | Guivos Knowledge Repository |
 | Natureza | Documento vivo, atualizado conforme a evolução oficial do repositório |
+
+> **Public Canon** significa que este é o documento público institucional vigente da Guivos. Não significa que todos os produtos, funcionalidades, preços, integrações ou operações descritos como futuros já estejam comercialmente disponíveis.
 
 > Este guia traduz para linguagem pública as decisões consolidadas no Guivos Knowledge Repository. Funcionalidades, tecnologias, preços, integrações, parceiros e políticas ainda em validação não são apresentados como concluídos.
 
@@ -68,17 +70,19 @@ A Guivos é um ecossistema criado para acelerar jornadas de evolução por meio 
 
 > **A Guivos reduz a distância entre o Momento Atual de um participante e seu Próximo Passo de evolução.**
 
-## Propósito
+## Propósito oficial
 
 > **Acelerar jornadas de evolução por meio das oportunidades mais relevantes para cada momento de vida.**
 
-## Missão
+## Missão oficial
 
-Ajudar cada participante a evoluir continuamente por meio de oportunidades relevantes, experiências, conexões e conhecimento.
+> **Ajudar cada participante a evoluir continuamente por meio das oportunidades mais relevantes para seu momento de vida.**
 
-## Visão
+Experiências, conexões e conhecimento são meios pelos quais essas oportunidades podem produzir valor, mas não substituem a formulação oficial da missão.
 
-Tornar-se um ecossistema global de descoberta, conexão e desenvolvimento de oportunidades capazes de transformar positivamente pessoas, organizações e comunidades.
+## Visão oficial
+
+> **Tornar a Guivos um ecossistema global de referência para descoberta, conexão e desenvolvimento de oportunidades capazes de transformar positivamente a vida de pessoas, organizações e coletivos.**
 
 ---
 
@@ -137,11 +141,11 @@ A Guivos não impõe um modelo de sucesso. Ela apoia objetivos legítimos escolh
 
 # 7. O que é o Momento Atual
 
-O Momento Atual representa a realidade presente do participante e os elementos necessários para compreender seu contexto.
+O Momento Atual representa a realidade presente do participante e o contexto relevante para compreendê-la.
 
 Pode envolver profissão, cidade, disponibilidade, interesses, objetivos, limitações, relacionamentos, conhecimentos, preferências, experiências e responsabilidades.
 
-O Momento Atual não é um cadastro fixo. Ele muda conforme novas experiências, decisões, relações e resultados surgem.
+O Momento Atual não é um cadastro fixo nem uma definição permanente da pessoa. Ele pode mudar conforme novas experiências, decisões, relações e resultados surgem.
 
 O participante não precisa expor tudo sobre sua vida. A experiência deve respeitar suas escolhas, seus limites e sua privacidade.
 
@@ -168,9 +172,25 @@ A experiência poderá utilizar, conforme disponibilidade, autorização e final
 - integrações profissionais;
 - experiências e interações realizadas na própria Guivos.
 
-A Guivos poderá interpretar essas informações e apresentar sua compreensão para confirmação, correção ou complementação.
+A Guivos poderá interpretar essas informações, apresentar o que compreendeu e permitir confirmação, correção, complementação ou limitação antes de utilizar essa compreensão para decisões relevantes.
 
 > **O participante não deverá ser obrigado a preencher um longo questionário para começar. A compreensão poderá crescer ao longo da jornada.**
+
+## Fluxo público da primeira compreensão
+
+```mermaid
+flowchart LR
+    A[Participante fala, escreve ou escolhe informações]
+    B[Guivos escuta e organiza]
+    C[Guivos apresenta o que compreendeu]
+    D[Participante confirma, corrige ou limita]
+    E[Primeiro Próximo Passo ou oportunidade relevante]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
 
 ## Exemplo prático
 
@@ -237,12 +257,13 @@ Uma intenção ampla pode ser transformada em passos concretos:
 flowchart TD
     A[Participante vive mudanças e experiências]
     B[Guivos compreende o contexto autorizado]
-    C[Participante revisa e confirma]
-    D[Objetivos e Próximos Passos]
-    E[Oportunidades relevantes]
-    F[Experiência]
-    G[Resultados e evidências]
-    H[Nova compreensão do contexto]
+    C[Guivos apresenta sua compreensão]
+    D[Participante revisa e confirma]
+    E[Objetivos e Próximos Passos]
+    F[Oportunidades relevantes]
+    G[Experiência]
+    H[Resultados e evidências]
+    I[Nova compreensão do contexto]
 
     A --> B
     B --> C
@@ -251,8 +272,9 @@ flowchart TD
     E --> F
     F --> G
     G --> H
-    H --> D
-    H --> A
+    H --> I
+    I --> E
+    I --> A
 ```
 
 > **O ciclo não possui encerramento definitivo. Cada transformação pode gerar um novo contexto, novas necessidades, interesses, objetivos e oportunidades.**
@@ -263,23 +285,7 @@ flowchart TD
 
 Na Guivos, oportunidade é qualquer iniciativa, recurso ou possibilidade capaz de apoiar um Próximo Passo por meio de uma experiência.
 
-Pode assumir a forma de:
-
-- vaga de trabalho;
-- curso;
-- bolsa;
-- evento;
-- grupo;
-- mentoria;
-- ação social;
-- serviço;
-- produto;
-- viagem;
-- conteúdo;
-- benefício;
-- desafio;
-- parceria;
-- experiência cultural, espiritual, esportiva ou comunitária.
+Pode assumir a forma de vaga de trabalho, curso, bolsa, evento, grupo, mentoria, ação social, serviço, produto, viagem, conteúdo, benefício, desafio, parceria ou experiência cultural, espiritual, esportiva ou comunitária.
 
 A pergunta central é:
 
@@ -297,7 +303,7 @@ A Guivos não pretende substituir essas iniciativas. Pretende fortalecê-las, or
 
 # 14. Estrutura da Guivos
 
-A estrutura pública distingue três naturezas.
+A estrutura pública distingue três naturezas visíveis e uma base comum de plataforma.
 
 ## Experiência
 
@@ -315,27 +321,25 @@ A estrutura pública distingue três naturezas.
 - **Guivos Media** — conteúdo e comunicação;
 - **Guivos Ads** — publicidade e patrocínios responsáveis.
 
+## Base comum
+
+A Platform Layer sustenta autenticação, segurança, dados, integrações, pagamentos, busca, notificações e outras capacidades compartilhadas. Ela não é um produto público independente.
+
 ```mermaid
 flowchart TD
-    P[Participante]
-    J[Guivos Journey]
-    I[Guivos Intelligence]
-    S[Soluções especializadas]
-    B[Business]
-    M[Mall]
-    T[Travel]
-    MD[Media]
-    A[Ads]
+    P[Pessoas, Organizações e Coletivos]
+    J[Guivos Journey — Experiência]
+    I[Guivos Intelligence — Inteligência transversal]
+    S[Business | Mall | Travel | Media | Ads]
+    PL[Platform Layer — Base comum]
 
     P --> J
-    J --> I
-    I --> J
-    J --> S
-    S --> B
-    S --> M
-    S --> T
-    S --> MD
-    S --> A
+    J <--> I
+    J <--> S
+    I <--> S
+    PL --> J
+    PL --> I
+    PL --> S
 ```
 
 ---
@@ -347,17 +351,33 @@ Uma experiência poderá ocorrer assim:
 1. o participante conhece a Guivos;
 2. explica o que deseja melhorar, construir ou viver;
 3. escolhe quais informações deseja compartilhar;
-4. a Guivos organiza uma compreensão inicial;
-5. o participante revisa, corrige ou limita essa compreensão;
-6. objetivos e possíveis Próximos Passos são apresentados;
-7. oportunidades, grupos e organizações são encontrados;
-8. o participante decide se deseja participar;
-9. vive uma experiência;
-10. reconhece o que mudou;
-11. a compreensão da Guivos é atualizada;
-12. novas possibilidades compatíveis podem surgir.
+4. a Guivos escuta e organiza uma compreensão inicial;
+5. a Guivos apresenta o que compreendeu;
+6. o participante confirma, corrige, complementa ou limita essa compreensão;
+7. objetivos e possíveis Próximos Passos são apresentados;
+8. oportunidades, grupos e organizações são encontrados;
+9. o participante decide se deseja participar;
+10. vive uma experiência;
+11. reconhece o que mudou;
+12. a compreensão da Guivos é atualizada;
+13. novas possibilidades compatíveis podem surgir.
 
 A Guivos deverá saber quando apresentar algo e quando permanecer em silêncio. O objetivo não é enviar o maior número possível de recomendações, mas apresentar possibilidades relevantes no momento adequado.
+
+```mermaid
+flowchart LR
+    A[Expressão do participante]
+    B[Compreensão apresentada]
+    C[Confirmação e controle]
+    D[Objetivos e Próximos Passos]
+    E[Oportunidades relevantes]
+    F[Experiência]
+    G[Resultados]
+    H[Contexto atualizado]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+    H --> D
+```
 
 ---
 
@@ -555,3 +575,4 @@ A autonomia permanece com o participante. A inteligência, os produtos e o model
 | 3.3.0 | 04/07/2026 | Ampliação de exemplos práticos |
 | 4.0.0 | 04/07/2026 | Arquitetura em camadas e captura multimodal de contexto |
 | 4.1.0 | 04/07/2026 | Compreensão contínua, revisável e atualizada ao longo da jornada |
+| 4.2.0 | 11/07/2026 | Alinhamento literal com Foundation, esclarecimento de Public Canon e revisão dos diagramas públicos |
