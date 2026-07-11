@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 5.0.0
+version: 5.1.0
 owner: Guivos
 last_updated: 2026-07-04
 ---
@@ -16,14 +16,14 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|---|
 | GE-1 — Foundation & Architecture | Completed | Estruturar a Guivos como ecossistema e arquitetura |
 | GE-2 — Knowledge | Active | Institucionalizar a produção de conhecimento |
-| M5.5 — Context and Architecture Engineering Checkpoint | Completed | Preservar contexto multimodal, LPM, CIE e pausa |
-| M5.6 — Journey Operational Philosophy Consolidated | Completed | Consolidar comportamento permanente do Journey e retomar Product Engineering |
-| GE2-SYNC-004 | Completed 1.0.0 | Sincronizar contexto, modelo do participante e engenharia |
+| M5.6 — Journey Operational Philosophy Consolidated | Completed | Consolidar comportamento permanente do Journey |
+| M5.7 — Context Capabilities Progress Registered | Completed | Registrar Captura, Interpretação e Contexto Vivo |
 | GE2-SYNC-005 | Completed 1.0.0 | Sincronizar filosofia operacional e Product Engineering |
+| GE2-SYNC-006 | Completed 1.0.0 | Sincronizar capacidades de contexto e Guia Oficial |
 | GLPA-001 | Approved 1.0.0 | Organizar a Guivos por camadas funcionais |
-| PAS-001 — Guivos Journey | Draft 0.3.0 — Active | Especificar a Experience Layer |
+| PAS-001 — Guivos Journey | Draft 0.4.0 — Active | Especificar a Experience Layer |
 | GIA-000 | Active 1.2.0 | Registrar inteligência e candidatos internos |
-| GOG-001 — Guia Oficial | Public Canon 4.0.0 | Explicar publicamente a estrutura vigente |
+| GOG-001 — Guia Oficial | Public Canon 4.1.0 | Explicar publicamente a estrutura vigente |
 | A2-R02 | Operationally Paused | Revisar o Modelo Fundamental posteriormente |
 | Guivos Economic Model | Planned 0.1.0 | Consolidar sustentabilidade econômica |
 
@@ -32,31 +32,38 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Campo | Estado |
 |---|---|
 | Frente operacional | `Product Engineering` |
-| Especificação ativa | `PAS-001 — Guivos Journey 0.3.0` |
-| Arquitetura funcional | `GLPA-001` |
-| Sincronização atual | `GE2-SYNC-005` |
-| Documento público | `GOG-001 — Guia Oficial 4.0.0` |
-| Foco imediato | Captura de Contexto detalhada |
+| Especificação ativa | `PAS-001 — Guivos Journey 0.4.0` |
+| Sincronização atual | `GE2-SYNC-006` |
+| Documento público | `GOG-001 — Guia Oficial 4.1.0` |
+| Capacidade ativa | `02 — Contexto Vivo` |
+| Foco imediato | Completar regras operacionais do Contexto Vivo |
 | GKA-000 | Parte V pendente |
 | A2-R02 | Em espera operacional |
 
-## Decisão de foco
+## Padrão de capacidade funcional
 
-O Architecture Engineering Sprint não permanece como atividade imediata.
+Cada capacidade deverá responder uma única pergunta central e possuir:
 
-GTF, GCM, GPMA, GLS, GDP, GDF e GAME continuam preservados como candidatos, mas não serão desenvolvidos antes da conclusão suficiente das especificações funcionais dos produtos oficiais.
+- objetivo e valor;
+- responsabilidades e limites;
+- entradas e saídas;
+- ciclo cognitivo;
+- fluxos do participante e do sistema;
+- estados;
+- regras e exceções;
+- privacidade e consentimento;
+- integrações e eventos;
+- KPIs;
+- cenários completos;
+- contrato de aceite.
 
 ## Filosofia operacional do Journey
-
-O Journey opera por cinco responsabilidades permanentes:
 
 1. compreender;
 2. acompanhar;
 3. ativar;
 4. orquestrar;
 5. aprender.
-
-Sequência comportamental:
 
 ```text
 Escutar
@@ -66,19 +73,76 @@ Escutar
   -> Recomendar ou agir
 ```
 
-## Domínios funcionais já identificados
+## Capacidades do Journey
 
-| Domínio | Estado |
-|---|---|
-| Captura de Contexto | Em detalhamento |
-| Modelo de Contexto | Próximo |
-| Objetivos | Planejado |
-| Eventos de Vida | Conceito funcional consolidado |
-| Próximos Passos | Planejado |
-| Oportunidades Ativas | Conceito funcional consolidado |
-| Intervenções Contextuais | Conceito funcional consolidado |
-| Experiências | Planejado |
-| Evolução | Planejado |
+| Capacidade | Estado | Observação |
+|---|---|---|
+| 01 — Captura de Contexto | Substantially complete | Fluxo inicial detalhado e contrato registrado |
+| 02 — Contexto Vivo | In progress | Definição, dimensões e ciclo de vida inicial registrados |
+| 03 — Objetivos | Planned | Próxima após Capacidade 02 |
+| 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e transição registrada |
+| 05 — Próximos Passos | Planned | — |
+| 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
+| 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
+| 08 — Experiências | Planned | — |
+| 09 — Evolução Contínua | Planned | — |
+
+## Capacidade 01 — Captura de Contexto
+
+Pergunta central:
+
+> Como a Guivos começa a compreender um participante?
+
+Contrato consolidado:
+
+- início sem cadastro complexo;
+- voz, texto e fluxo guiado como opções;
+- escuta, interpretação, reflexão e confirmação;
+- controle do participante;
+- valor inicial após confirmação;
+- contexto pronto para alimentar a Capacidade 02.
+
+## Interpretação do Contexto
+
+A interpretação diferencia fatos, intenções, objetivos, limitações, preferências, emoções percebidas sem diagnóstico, incertezas e hipóteses.
+
+Toda interpretação relevante deve preservar confiança, proveniência, temporalidade, explicabilidade e possibilidade de revisão.
+
+## Capacidade 02 — Contexto Vivo
+
+Pergunta central:
+
+> Como a Guivos mantém uma representação viva, confiável, explicável e continuamente evolutiva do participante?
+
+Princípios registrados:
+
+- Representação Humilde;
+- evolução independente das dimensões;
+- contexto como melhor compreensão disponível, não realidade absoluta;
+- controle permanente do participante.
+
+Dimensões iniciais:
+
+1. Identidade;
+2. Momento;
+3. Direção;
+4. Capacidades;
+5. Restrições;
+6. Preferências;
+7. Relacionamentos;
+8. Evolução.
+
+Ciclo de vida inicial:
+
+```text
+Observada
+  -> Interpretada
+  -> Confirmada
+  -> Ativa
+  -> Envelhecida
+  -> Substituída
+  -> Arquivada
+```
 
 ## Conceitos internos preservados
 
@@ -86,29 +150,25 @@ Escutar
 |---|---|
 | LPM — Living Participant Model | Candidate / Discovery-Engineering |
 | CIE — Context Intelligence Engine | Candidate |
+| Contexto Vivo | Approved for PAS / In progress |
 | Eventos de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
 | Intervenção Contextual | Approved for PAS |
 | Distância para Evolução | Internal Product Concept |
-
-## Regra de trabalho
-
-Cada sessão futura deve produzir incremento funcional concreto do PAS-001.
-
-Nenhum novo documento estrutural deverá ser criado apenas por utilidade aparente enquanto houver produto oficial sem especificação funcional suficiente.
+| Ciclo Cognitivo do Domínio | Product Engineering Pattern |
 
 ## Governança documental
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 4.9.0 |
-| Knowledge Board | 5.0.0 |
-| PAS-001 | Draft 0.3.0 |
+| Roadmap | 5.0.0 |
+| Knowledge Board | 5.1.0 |
+| PAS-001 | Draft 0.4.0 |
 | GLPA-001 | Approved 1.0.0 |
 | GIA-000 | Active 1.2.0 |
-| GOG-001 | Public Canon 4.0.0 |
-| GE2-SYNC-005 | Completed 1.0.0 |
+| GOG-001 | Public Canon 4.1.0 |
+| GE2-SYNC-006 | Completed 1.0.0 |
 
 ## Próxima atividade
 
-Detalhar funcionalmente a **Captura de Contexto** no PAS-001, cobrindo primeira conversa por voz ou texto, escuta, interpretação, reflexão, confirmação, correção, consentimento, exceções e transição para objetivos e primeiras oportunidades.
+Completar a **Capacidade 02 — Contexto Vivo**, cobrindo responsabilidades, limites, entradas, saídas, estados, atualização, envelhecimento, conflitos, interface `Meu Contexto Hoje`, eventos, KPIs, cenários e contrato de aceite.
