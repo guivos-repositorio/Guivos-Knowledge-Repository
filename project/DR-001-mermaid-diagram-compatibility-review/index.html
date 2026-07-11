@@ -1722,41 +1722,50 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-pas-001-042">
+<span class="md-ellipsis">
+      
+        4.3 PAS-001 0.4.2
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-regra-provisoria-de-compatibilidade">
+<a class="md-nav__link" href="#5-regra-de-compatibilidade">
 <span class="md-ellipsis">
       
-        5. Regra provisória de compatibilidade
+        5. Regra de compatibilidade
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#6-auditoria-dos-documentos-publicos">
+<a class="md-nav__link" href="#6-estado-dos-documentos-publicos">
 <span class="md-ellipsis">
       
-        6. Auditoria dos documentos públicos
+        6. Estado dos documentos públicos
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#7-auditoria-inicial-de-product-engineering">
+<a class="md-nav__link" href="#7-estado-de-product-engineering">
 <span class="md-ellipsis">
       
-        7. Auditoria inicial de Product Engineering
+        7. Estado de Product Engineering
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#8-padroes-de-risco-encontrados">
+<a class="md-nav__link" href="#8-observacao-de-publicacao">
 <span class="md-ellipsis">
       
-        8. Padrões de risco encontrados
+        8. Observação de publicação
       
     </span>
 </a>
@@ -1800,74 +1809,61 @@
 </a>
 <h1 id="dr-001-mermaid-diagram-compatibility-review">DR-001 — Mermaid Diagram Compatibility Review<a class="headerlink" href="#dr-001-mermaid-diagram-compatibility-review" title="Permanent link">¶</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">¶</a></h2>
-<p>Esta revisão valida os diagramas Mermaid do Guivos Knowledge Repository quanto a:</p>
-<ul>
-<li>sintaxe;</li>
-<li>compatibilidade entre renderizadores;</li>
-<li>legibilidade;</li>
-<li>consistência visual;</li>
-<li>adequação conceitual;</li>
-<li>ausência de prescrição técnica indevida;</li>
-<li>necessidade de diagramas adicionais.</li>
-</ul>
+<p>Esta revisão valida os diagramas Mermaid do Guivos Knowledge Repository quanto a sintaxe, compatibilidade entre renderizadores, legibilidade, consistência visual, adequação conceitual e ausência de prescrição técnica indevida.</p>
 <h2 id="2-incidente-identificado">2. Incidente identificado<a class="headerlink" href="#2-incidente-identificado" title="Permanent link">¶</a></h2>
 <p>O <code>GOG-001 — Guia Oficial da Guivos 4.2.0</code> apresentava a mensagem <code>Syntax error in text</code> no diagrama público da estrutura da Guivos.</p>
-<p>A mesma falha aparecia duas vezes na interface porque o diagrama era processado em dois contextos distintos:</p>
-<ol>
-<li>página normal do MkDocs;</li>
-<li>versão agregada ou de impressão gerada pelo pipeline do site.</li>
-</ol>
-<p>As imagens exibiam versões diferentes do Mermaid (<code>10.4.0</code> e <code>11.16.0</code>), confirmando que o mesmo bloco incompatível era analisado por mais de um renderizador.</p>
+<p>A mesma falha podia aparecer em mais de um ponto porque os diagramas são processados na página normal e na versão agregada ou de impressão. As imagens apresentaram Mermaid <code>10.4.0</code> e <code>11.16.0</code>, demonstrando a existência de renderizadores distintos no pipeline.</p>
 <h2 id="3-causa-raiz">3. Causa raiz<a class="headerlink" href="#3-causa-raiz" title="Permanent link">¶</a></h2>
-<p>O bloco utilizava construções com compatibilidade inconsistente entre versões:</p>
+<p>O padrão incompatível identificado foi:</p>
 <div class="highlight"><pre><span></span><code>S[Business | Mall | Travel | Media | Ads]
 J &lt;--&gt; I
 J &lt;--&gt; S
 I &lt;--&gt; S
 </code></pre></div>
-<p>Os principais riscos eram:</p>
+<p>Riscos associados:</p>
 <ul>
-<li>uso do caractere <code>|</code> dentro do rótulo sem aspas, interpretável como delimitador sintático;</li>
-<li>uso de aresta bidirecional compacta <code>&lt;--&gt;</code>, cuja interpretação pode variar conforme versão e integração;</li>
-<li>rótulos com caracteres especiais sem encapsulamento explícito.</li>
+<li>caractere <code>|</code> dentro de rótulo sem aspas;</li>
+<li>aresta bidirecional compacta <code>&lt;--&gt;</code>;</li>
+<li>rótulos com pontuação, símbolos ou acentos sem encapsulamento;</li>
+<li>construções específicas de versões quando existe alternativa mais simples.</li>
 </ul>
 <h2 id="4-correcoes-executadas">4. Correções executadas<a class="headerlink" href="#4-correcoes-executadas" title="Permanent link">¶</a></h2>
 <h3 id="41-gog-001-421">4.1 GOG-001 4.2.1<a class="headerlink" href="#41-gog-001-421" title="Permanent link">¶</a></h3>
-<p>O diagrama público da estrutura da Guivos foi reescrito com:</p>
-<ul>
-<li>rótulos entre aspas;</li>
-<li>soluções especializadas em nós separados;</li>
-<li>arestas unidirecionais explícitas;</li>
-<li>remoção do caractere <code>|</code> do rótulo composto.</li>
-</ul>
+<p>O diagrama público da estrutura da Guivos foi reescrito com rótulos entre aspas, soluções em nós separados e arestas unidirecionais explícitas.</p>
 <h3 id="42-glpa-001-111">4.2 GLPA-001 1.1.1<a class="headerlink" href="#42-glpa-001-111" title="Permanent link">¶</a></h3>
-<p>A arquitetura em camadas utilizava o mesmo padrão de risco, especialmente arestas <code>&lt;--&gt;</code>.</p>
-<p>O diagrama foi endurecido para compatibilidade cruzada por meio de:</p>
+<p>O diagrama em camadas foi endurecido para compatibilidade cruzada, substituindo relações <code>&lt;--&gt;</code> por pares de relações <code>--&gt;</code> e encapsulando rótulos.</p>
+<h3 id="43-pas-001-042">4.3 PAS-001 0.4.2<a class="headerlink" href="#43-pas-001-042" title="Permanent link">¶</a></h3>
+<p>A mensagem remanescente na versão agregada foi associada aos padrões de risco ainda presentes no PAS. O documento foi corrigido integralmente quanto aos diagramas Mermaid:</p>
 <ul>
-<li>rótulos entre aspas;</li>
-<li>substituição de cada relação <code>&lt;--&gt;</code> por duas relações <code>--&gt;</code>;</li>
-<li>manutenção de identificadores simples;</li>
-<li>preservação integral das decisões arquiteturais da versão 1.1.0.</li>
+<li><code>Aplicação das camadas ao Journey</code>: removidos <code>|</code> e <code>&lt;--&gt;</code>;</li>
+<li>todos os rótulos passaram a utilizar aspas;</li>
+<li>encadeamentos compactos foram substituídos por arestas explícitas;</li>
+<li>decisões com losangos e rótulos de aresta foram simplificadas;</li>
+<li>aresta pontilhada foi removida da Captura de Contexto;</li>
+<li><code>stateDiagram-v2</code> foi substituído por <code>flowchart LR</code> no ciclo de vida da informação;</li>
+<li>os significados funcionais foram preservados.</li>
 </ul>
-<h2 id="5-regra-provisoria-de-compatibilidade">5. Regra provisória de compatibilidade<a class="headerlink" href="#5-regra-provisoria-de-compatibilidade" title="Permanent link">¶</a></h2>
-<p>Até a conclusão desta revisão, os diagramas Mermaid do GKR deverão preferir:</p>
+<p>A correção cobre o diagrama que poderia falhar na página do PAS e também na versão agregada ou de impressão exibida após o rodapé de outras páginas.</p>
+<h2 id="5-regra-de-compatibilidade">5. Regra de compatibilidade<a class="headerlink" href="#5-regra-de-compatibilidade" title="Permanent link">¶</a></h2>
+<p>Os diagramas Mermaid do GKR deverão preferir:</p>
 <ol>
 <li><code>flowchart TD</code> ou <code>flowchart LR</code>;</li>
 <li>identificadores simples em ASCII;</li>
-<li>rótulos textuais entre aspas quando contiverem pontuação, acentos ou símbolos;</li>
+<li>rótulos textuais entre aspas;</li>
 <li>arestas explícitas <code>--&gt;</code>;</li>
 <li>ausência de HTML embutido;</li>
-<li>ausência de sintaxe dependente de versões recentes quando houver alternativa simples;</li>
+<li>ausência de <code>|</code> em rótulos compostos;</li>
+<li>ausência de <code>&lt;--&gt;</code> quando duas arestas explícitas puderem representar a relação;</li>
+<li>alternativas simples a construções dependentes de versão;</li>
 <li>diagramas funcionais sem prescrever topologia técnica definitiva.</li>
 </ol>
-<h2 id="6-auditoria-dos-documentos-publicos">6. Auditoria dos documentos públicos<a class="headerlink" href="#6-auditoria-dos-documentos-publicos" title="Permanent link">¶</a></h2>
+<h2 id="6-estado-dos-documentos-publicos">6. Estado dos documentos públicos<a class="headerlink" href="#6-estado-dos-documentos-publicos" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
 <th>Diagrama</th>
 <th>Documento</th>
 <th>Estado</th>
-<th>Observação</th>
 </tr>
 </thead>
 <tbody>
@@ -1875,109 +1871,89 @@ I &lt;--&gt; S
 <td>Primeira compreensão</td>
 <td>GOG</td>
 <td>Válido</td>
-<td>Fluxo simples, identificadores ASCII e arestas explícitas</td>
 </tr>
 <tr>
 <td>Ciclo Contínuo de Evolução</td>
 <td>GOG</td>
 <td>Válido</td>
-<td>Fluxo compatível e sem construções ambíguas</td>
 </tr>
 <tr>
 <td>Estrutura pública da Guivos</td>
 <td>GOG</td>
-<td>Corrigido</td>
-<td>Falha que originou o incidente; corrigida no GOG 4.2.1</td>
+<td>Corrigido no GOG 4.2.1</td>
 </tr>
 <tr>
 <td>Funcionamento prático</td>
 <td>GOG</td>
 <td>Válido</td>
-<td>Encadeamento simples e retorno explícito</td>
 </tr>
 </tbody>
 </table>
-<h2 id="7-auditoria-inicial-de-product-engineering">7. Auditoria inicial de Product Engineering<a class="headerlink" href="#7-auditoria-inicial-de-product-engineering" title="Permanent link">¶</a></h2>
+<h2 id="7-estado-de-product-engineering">7. Estado de Product Engineering<a class="headerlink" href="#7-estado-de-product-engineering" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
 <th>Diagrama</th>
 <th>Documento</th>
 <th>Estado</th>
-<th>Tratamento</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Arquitetura em camadas</td>
 <td>GLPA</td>
-<td>Corrigido</td>
-<td>Sintaxe endurecida na GLPA 1.1.1</td>
+<td>Corrigido na GLPA 1.1.1</td>
 </tr>
 <tr>
 <td>Aplicação das camadas ao Journey</td>
 <td>PAS</td>
-<td>Correção necessária</td>
-<td>Contém rótulo com <code>|</code> e relações <code>&lt;--&gt;</code></td>
+<td>Corrigido no PAS 0.4.2</td>
 </tr>
 <tr>
 <td>Filosofia operacional</td>
 <td>PAS</td>
-<td>Válido</td>
-<td>Fluxo linear simples</td>
+<td>Compatibilidade endurecida</td>
 </tr>
 <tr>
 <td>Relação contínua com a vida real</td>
 <td>PAS</td>
-<td>Válido</td>
-<td>Fluxo linear com retorno explícito</td>
+<td>Compatibilidade endurecida</td>
 </tr>
 <tr>
 <td>Ciclo Cognitivo</td>
 <td>PAS</td>
-<td>Válido</td>
-<td>Fluxo linear e retorno explícito</td>
+<td>Compatibilidade endurecida</td>
 </tr>
 <tr>
 <td>Captura de Contexto</td>
 <td>PAS</td>
-<td>Refinamento recomendado</td>
-<td>Sintaxe válida; revisar rótulos de decisão e aresta pontilhada em validação cruzada</td>
+<td>Simplificado e corrigido</td>
 </tr>
 <tr>
 <td>Interpretação do Contexto</td>
 <td>PAS</td>
-<td>Válido</td>
-<td>Fluxo linear simples</td>
+<td>Compatibilidade endurecida</td>
 </tr>
 <tr>
 <td>Contexto Vivo</td>
 <td>PAS</td>
-<td>Refinamento recomendado</td>
-<td>Sintaxe funcional; revisar rótulo de aresta com vírgula e decisão em versões antigas</td>
+<td>Simplificado e corrigido</td>
 </tr>
 <tr>
 <td>Ciclo de vida da informação</td>
 <td>PAS</td>
-<td>Validação cruzada necessária</td>
-<td><code>stateDiagram-v2</code> é suportado, mas deve ser testado nos dois renderizadores do pipeline</td>
+<td>Convertido para flowchart compatível</td>
 </tr>
 <tr>
 <td>Meu Contexto Hoje</td>
 <td>PAS</td>
-<td>Pendente de inspeção final</td>
-<td>Validar sintaxe e legibilidade no documento completo</td>
+<td>Compatibilidade endurecida</td>
 </tr>
 </tbody>
 </table>
-<h2 id="8-padroes-de-risco-encontrados">8. Padrões de risco encontrados<a class="headerlink" href="#8-padroes-de-risco-encontrados" title="Permanent link">¶</a></h2>
-<p>A revisão identificou quatro padrões que devem ser pesquisados no restante do GKR:</p>
-<ol>
-<li>arestas compactas <code>&lt;--&gt;</code>;</li>
-<li>caractere <code>|</code> dentro de rótulos;</li>
-<li>rótulos extensos ou com pontuação sem aspas;</li>
-<li>construções específicas, como <code>stateDiagram-v2</code>, que exigem validação nos dois renderizadores utilizados pelo pipeline.</li>
-</ol>
+<h2 id="8-observacao-de-publicacao">8. Observação de publicação<a class="headerlink" href="#8-observacao-de-publicacao" title="Permanent link">¶</a></h2>
+<p>Após um commit, a mensagem pode permanecer temporariamente no site publicado até que o pipeline de MkDocs/GitHub Pages conclua uma nova implantação e o navegador descarte o conteúdo em cache.</p>
+<p>A validação visual deve ser feita após a implantação mais recente, preferencialmente com atualização forçada da página.</p>
 <h2 id="9-escopo-remanescente">9. Escopo remanescente<a class="headerlink" href="#9-escopo-remanescente" title="Permanent link">¶</a></h2>
 <p>A revisão ainda deverá localizar e validar blocos Mermaid em:</p>
 <ul>
@@ -2001,10 +1977,10 @@ I &lt;--&gt; S
 </ul>
 <h2 id="11-ponto-de-retomada">11. Ponto de retomada<a class="headerlink" href="#11-ponto-de-retomada" title="Permanent link">¶</a></h2>
 <ol>
-<li>corrigir no PAS o diagrama <code>Aplicação das camadas ao Journey</code>;</li>
-<li>validar no pipeline os diagramas de decisão e <code>stateDiagram-v2</code>;</li>
-<li>continuar a auditoria pelos documentos arquiteturais listados na navegação do MkDocs;</li>
-<li>somente encerrar a DR-001 após validação da página normal e da versão agregada de impressão.</li>
+<li>aguardar a implantação do commit do PAS 0.4.2;</li>
+<li>validar a página normal do PAS e a versão agregada de impressão;</li>
+<li>continuar a auditoria pelos demais documentos arquiteturais;</li>
+<li>encerrar a DR-001 somente após não haver mensagens Mermaid nos dois contextos de renderização.</li>
 </ol>
 </article>
 </div>
