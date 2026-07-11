@@ -136,6 +136,7 @@ nav:
       - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
+      - AR-001 — GKR and GOG Consistency Review: project/AR-001-gkr-gog-consistency-and-diagram-review.md
       - GE2-SYNC-006 — Context Interpretation and Living Context: project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md
       - GE2-SYNC-005 — Journey Operational Philosophy: project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md
       - Architecture Engineering Pause: project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md
