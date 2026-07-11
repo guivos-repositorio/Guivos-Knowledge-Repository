@@ -2274,16 +2274,29 @@
 </ol>
 <h2 id="2-arquitetura-em-camadas-aplicada-ao-journey">2. Arquitetura em Camadas Aplicada ao Journey<a class="headerlink" href="#2-arquitetura-em-camadas-aplicada-ao-journey" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    J[Guivos Journey — Experience Layer]
-    I[Guivos Intelligence — Intelligence Layer]
-    S[Business | Mall | Travel | Media | Ads]
-    PL[Platform Layer]
+    P["Pessoas, Organizações e Coletivos"]
+    J["Guivos Journey - Experience Layer"]
+    I["Guivos Intelligence - Intelligence Layer"]
+    S["Soluções especializadas"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer"]
 
     P --&gt; J
-    J &lt;--&gt; I
-    J &lt;--&gt; S
-    I &lt;--&gt; S
+    J --&gt; I
+    I --&gt; J
+    J --&gt; S
+    S --&gt; J
+    I --&gt; S
+    S --&gt; I
+    S --&gt; B
+    S --&gt; M
+    S --&gt; T
+    S --&gt; MD
+    S --&gt; A
     PL --&gt; J
     PL --&gt; I
     PL --&gt; S
@@ -2322,29 +2335,37 @@
 <li><strong>Orquestrar</strong> — organizar próximos passos, intervenções e experiências;</li>
 <li><strong>Aprender</strong> — incorporar resultados e evidências autorizadas.</li>
 </ol>
-<p>Sequência comportamental:</p>
 <pre class="mermaid"><code>flowchart LR
-    A[Escutar]
-    B[Compreender]
-    C[Refletir a compreensão]
-    D[Confirmar]
-    E[Recomendar ou agir]
+    A["Escutar"]
+    B["Compreender"]
+    C["Refletir a compreensão"]
+    D["Confirmar"]
+    E["Recomendar ou agir"]
 
-    A --&gt; B --&gt; C --&gt; D --&gt; E
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
 </code></pre>
 <h2 id="4-relacao-continua-e-vida-real">4. Relação Contínua e Vida Real<a class="headerlink" href="#4-relacao-continua-e-vida-real" title="Permanent link">¶</a></h2>
 <p>O Journey não deve ser especificado apenas como aplicativo utilizado em sessões isoladas.</p>
 <pre class="mermaid"><code>flowchart LR
-    A[Vida real]
-    B[Mudança relevante]
-    C[Atualização da compreensão]
-    D[Nova avaliação]
-    E[Intervenção ou silêncio]
-    F[Experiência]
-    G[Nova evidência]
-    H[Novo contexto]
+    A["Vida real"]
+    B["Mudança relevante"]
+    C["Atualização da compreensão"]
+    D["Nova avaliação"]
+    E["Intervenção ou silêncio"]
+    F["Experiência"]
+    G["Nova evidência"]
+    H["Novo contexto"]
 
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    F --&gt; G
+    G --&gt; H
     H --&gt; A
 </code></pre>
 <p>O aplicativo é um ponto de contato dessa relação, não o centro da jornada.</p>
@@ -2392,17 +2413,24 @@
 </blockquote>
 <h3 id="62-ciclo-cognitivo-do-dominio">6.2 Ciclo Cognitivo do Domínio<a class="headerlink" href="#62-ciclo-cognitivo-do-dominio" title="Permanent link">¶</a></h3>
 <pre class="mermaid"><code>flowchart LR
-    A[Informação]
-    B[Interpretação]
-    C[Compreensão]
-    D[Contexto]
-    E[Decisão]
-    F[Ação]
-    G[Resultado]
-    H[Aprendizado]
-    I[Nova informação]
+    A["Informação"]
+    B["Interpretação"]
+    C["Compreensão"]
+    D["Contexto"]
+    E["Decisão"]
+    F["Ação"]
+    G["Resultado"]
+    H["Aprendizado"]
+    I["Nova informação"]
 
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H --&gt; I
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    F --&gt; G
+    G --&gt; H
+    H --&gt; I
     I --&gt; B
 </code></pre>
 <p>Esse ciclo é funcional. Não representa pipeline técnico obrigatório, modelo de IA específico ou sequência rígida para todos os casos.</p>
@@ -2484,21 +2512,27 @@
 </blockquote>
 <h2 id="12-fluxo-funcional-da-captura-de-contexto">12. Fluxo funcional da Captura de Contexto<a class="headerlink" href="#12-fluxo-funcional-da-captura-de-contexto" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    A[Participante escolhe voz, texto ou fluxo guiado]
-    B[Guivos explica finalidade e controle]
-    C[Participante expressa seu contexto]
-    D[Guivos preserva a entrada e interpreta]
-    E[Guivos apresenta uma síntese]
-    F{Participante confirma?}
-    G[Corrige, complementa, limita ou remove]
-    H[Contexto inicial confirmado]
-    I[Primeiro Próximo Passo ou oportunidades iniciais]
-    J[Sessão temporária ou encerramento sem persistência]
+    A["Participante escolhe voz, texto ou fluxo guiado"]
+    B["Guivos explica finalidade e controle"]
+    C["Participante expressa seu contexto"]
+    D["Guivos preserva a entrada e interpreta"]
+    E["Guivos apresenta uma síntese"]
+    F["Participante avalia a síntese"]
+    G["Corrige, complementa, limita ou remove"]
+    H["Contexto inicial confirmado"]
+    I["Primeiro Próximo Passo ou oportunidades iniciais"]
+    J["Sessão temporária ou encerramento sem persistência"]
 
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F
-    F -- Não --&gt; G --&gt; E
-    F -- Sim --&gt; H --&gt; I
-    C -. Recusa em salvar .-&gt; J
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    F --&gt; G
+    G --&gt; E
+    F --&gt; H
+    H --&gt; I
+    C --&gt; J
 </code></pre>
 <h2 id="13-comportamento-durante-a-escuta">13. Comportamento durante a escuta<a class="headerlink" href="#13-comportamento-durante-a-escuta" title="Permanent link">¶</a></h2>
 <p>A Guivos deve:</p>
@@ -2617,16 +2651,22 @@
 </ul>
 <h2 id="25-fluxo-funcional-da-interpretacao">25. Fluxo funcional da interpretação<a class="headerlink" href="#25-fluxo-funcional-da-interpretacao" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart LR
-    A[Entrada autorizada]
-    B[Classificação]
-    C[Interpretação]
-    D[Confiança, origem e temporalidade]
-    E[Compreensão proposta]
-    F[Reflexão ao participante]
-    G[Confirmação, correção ou contestação]
-    H[Atualização permitida do contexto]
+    A["Entrada autorizada"]
+    B["Classificação"]
+    C["Interpretação"]
+    D["Confiança, origem e temporalidade"]
+    E["Compreensão proposta"]
+    F["Reflexão ao participante"]
+    G["Confirmação, correção ou contestação"]
+    H["Atualização permitida do contexto"]
 
-    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    F --&gt; G
+    G --&gt; H
 </code></pre>
 <h2 id="26-confianca-proveniencia-e-temporalidade">26. Confiança, proveniência e temporalidade<a class="headerlink" href="#26-confianca-proveniencia-e-temporalidade" title="Permanent link">¶</a></h2>
 <p>Toda interpretação relevante deve responder:</p>
@@ -2673,23 +2713,28 @@
 </blockquote>
 <h2 id="30-fluxo-funcional-do-contexto-vivo">30. Fluxo funcional do Contexto Vivo<a class="headerlink" href="#30-fluxo-funcional-do-contexto-vivo" title="Permanent link">¶</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    A[Entradas autorizadas]
-    B[Interpretação contextual]
-    C[Compreensão proposta]
-    D{Confirmação necessária?}
-    E[Participante confirma, corrige ou limita]
-    F[Atualização seletiva das dimensões]
-    G[Meu Contexto Hoje]
-    H[Objetivos, Próximos Passos e oportunidades]
-    I[Experiências e resultados]
-    J[Novas evidências]
+    A["Entradas autorizadas"]
+    B["Interpretação contextual"]
+    C["Compreensão proposta"]
+    D["Avaliação da necessidade de confirmação"]
+    E["Participante confirma, corrige ou limita"]
+    F["Atualização seletiva das dimensões"]
+    G["Meu Contexto Hoje"]
+    H["Objetivos, Próximos Passos e oportunidades"]
+    I["Experiências e resultados"]
+    J["Novas evidências"]
 
-    A --&gt; B --&gt; C --&gt; D
-    D -- Sim --&gt; E --&gt; F
-    D -- Não, quando permitido --&gt; F
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    D --&gt; F
     F --&gt; G
     F --&gt; H
-    H --&gt; I --&gt; J --&gt; B
+    H --&gt; I
+    I --&gt; J
+    J --&gt; B
 </code></pre>
 <p>O fluxo não autoriza atualização silenciosa de informações sensíveis, permanentes ou de impacto relevante.</p>
 <h2 id="31-dimensoes-de-compreensao">31. Dimensões de compreensão<a class="headerlink" href="#31-dimensoes-de-compreensao" title="Permanent link">¶</a></h2>
@@ -2720,17 +2765,24 @@
 <li>o nascimento de um filho pode alterar Momento, Restrições, Disponibilidade e Direção, sem alterar competências profissionais.</li>
 </ul>
 <h2 id="33-ciclo-de-vida-da-informacao">33. Ciclo de vida da informação<a class="headerlink" href="#33-ciclo-de-vida-da-informacao" title="Permanent link">¶</a></h2>
-<pre class="mermaid"><code>stateDiagram-v2
-    [*] --&gt; Observada
-    Observada --&gt; Interpretada
-    Interpretada --&gt; Confirmada
-    Confirmada --&gt; Ativa
-    Ativa --&gt; Envelhecida
-    Ativa --&gt; Substituída
-    Envelhecida --&gt; Confirmada: revisão
-    Envelhecida --&gt; Substituída
-    Substituída --&gt; Arquivada
-    Ativa --&gt; Arquivada: remoção ou expiração
+<pre class="mermaid"><code>flowchart LR
+    A["Observada"]
+    B["Interpretada"]
+    C["Confirmada"]
+    D["Ativa"]
+    E["Envelhecida"]
+    F["Substituída"]
+    G["Arquivada"]
+
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    D --&gt; F
+    E --&gt; C
+    E --&gt; F
+    F --&gt; G
+    D --&gt; G
 </code></pre>
 <p>Cada item deverá preservar origem, temporalidade, confiança, finalidade, permissões e relação com dimensões afetadas.</p>
 <p>Nem toda informação percorre todos os estados. Itens podem ser descartados antes da confirmação ou permanecer temporários sem integrar a representação persistente.</p>
@@ -2760,17 +2812,17 @@
 </ul>
 <h3 id="341-diagrama-conceitual">34.1 Diagrama conceitual<a class="headerlink" href="#341-diagrama-conceitual" title="Permanent link">¶</a></h3>
 <pre class="mermaid"><code>flowchart TD
-    M[Meu Contexto Hoje]
-    ID[Quem sou neste momento]
-    FO[Foco principal]
-    MR[Mudanças recentes]
-    OB[Objetivos e Próximos Passos]
-    CA[Capacidades]
-    RE[Restrições]
-    PR[Preferências]
-    CO[Conexões]
-    RV[Revisões necessárias]
-    CT[Controles do participante]
+    M["Meu Contexto Hoje"]
+    ID["Quem sou neste momento"]
+    FO["Foco principal"]
+    MR["Mudanças recentes"]
+    OB["Objetivos e Próximos Passos"]
+    CA["Capacidades"]
+    RE["Restrições"]
+    PR["Preferências"]
+    CO["Conexões"]
+    RV["Revisões necessárias"]
+    CT["Controles do participante"]
 
     M --&gt; ID
     M --&gt; FO
