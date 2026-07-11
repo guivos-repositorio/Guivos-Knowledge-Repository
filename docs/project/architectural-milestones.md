@@ -1,9 +1,9 @@
 ---
 title: Architectural Milestones
 status: active
-version: 4.7.0
+version: 4.8.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-11
 ---
 
 # Architectural Milestones
@@ -27,36 +27,49 @@ Registro oficial dos principais marcos de maturidade arquitetural e de Product E
 | M5.5 — Context and Architecture Engineering Checkpoint | Completed | Preservar contexto multimodal, LPM, CIE e pausa |
 | M5.6 — Journey Operational Philosophy Consolidated | Completed | Consolidar o comportamento permanente do Journey |
 | M5.7 — Context Capabilities Progress Registered | Completed | Registrar Captura, Interpretação e Contexto Vivo |
+| M5.8 — GKR and GOG Consistency Review Completed | Completed | Revisar consistência conceitual, documental e visual |
 | A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
 | K1 — Fundamental Knowledge Frozen | Planned | Congelar conhecimento fundamental após A2-R02 |
+
+## M5.8 — GKR and GOG Consistency Review Completed
+
+**Estado:** Completed em 11/07/2026.
+
+### Critério de conclusão
+
+As divergências demonstráveis, referências desatualizadas e lacunas prioritárias de diagramas entre o GOG e os principais documentos do GKR foram tratadas e sincronizadas.
+
+### Resultados
+
+- criação e conclusão de `AR-001`;
+- atualização do `GOG-001` para `4.2.0`;
+- atualização do `PAS-001` para `0.4.1`;
+- atualização da `GLPA-001` para `1.1.0`;
+- atualização da `GIA-000` para `1.3.0`;
+- atualização do Glossário Canônico para `1.8.0`;
+- alinhamento literal de propósito, missão e visão;
+- esclarecimento de `Public Canon`;
+- revisão e criação dos diagramas públicos e funcionais prioritários;
+- remoção de `perfil` e `feed` como definições permanentes do Journey;
+- distinção entre Contexto Vivo e candidatos técnicos como LPM;
+- distinção entre tipos de capacidade;
+- sincronização dos documentos de estado.
+
+### Ponto de retomada
+
+Retomar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, completando responsabilidades, entradas, estados, envelhecimento, conflitos, eventos, KPIs, cenários e contrato.
 
 ## M5.7 — Context Capabilities Progress Registered
 
 **Estado:** Completed em 04/07/2026.
 
-### Critério de conclusão
-
-A especificação do Journey avançou da filosofia operacional para capacidades funcionais executáveis, com sincronização do Guia Oficial e dos principais documentos de acompanhamento.
-
-### Resultados
+Resultados principais:
 
 - criação de `GE2-SYNC-006`;
-- atualização do `PAS-001` para `0.4.0`;
-- consolidação do padrão de capacidades funcionais completas;
-- consolidação substancial da Capacidade 01 — Captura de Contexto;
-- registro do contrato da Capacidade 01;
-- separação entre Captura, Interpretação e Contexto Vivo;
-- início da Capacidade 02 — Contexto Vivo;
-- registro do Princípio da Representação Humilde;
-- registro das oito dimensões de compreensão;
-- registro do Princípio da Evolução Independente das Dimensões;
-- atualização do `GOG-001` para `4.1.0`;
-- atualização do Roadmap para `5.0.0`;
-- atualização do Knowledge Board para `5.1.0`.
-
-### Ponto de retomada
-
-Completar a Capacidade 02 — Contexto Vivo, incluindo responsabilidades, limites, entradas, saídas, estados, envelhecimento, conflitos, interface, eventos, KPIs, cenários e contrato de aceite.
+- atualização do PAS-001 para `0.4.0`;
+- consolidação da Capacidade 01;
+- início da Capacidade 02;
+- registro da Representação Humilde e das oito dimensões.
 
 ## M5.6 — Journey Operational Philosophy Consolidated
 
@@ -65,7 +78,6 @@ Completar a Capacidade 02 — Contexto Vivo, incluindo responsabilidades, limite
 Resultados principais:
 
 - criação de `GE2-SYNC-005`;
-- atualização do PAS-001 para `0.3.0`;
 - Product Engineering ativado;
 - cinco responsabilidades permanentes consolidadas;
 - Estado, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais e Distância para Evolução registrados.
@@ -79,25 +91,7 @@ Resultados principais:
 - criação de `GE2-SYNC-004`;
 - Captura Multimodal registrada;
 - voz priorizada sem exclusividade;
-- LPM e CIE preservados como candidatos;
-- hierarquia GPA → PAS → JFA → FDS → UX → Technical registrada.
-
-## M5.4 — Enterprise Design and GLPA Registered
-
-**Estado:** Completed em 04/07/2026.
-
-Resultados principais:
-
-- `GE2-SYNC-003` criado;
-- `GLPA-001` aprovada;
-- `PAS-001` iniciado;
-- Journey reconhecido como Experience Layer;
-- Intelligence reconhecida como camada transversal;
-- Business, Mall, Travel, Media e Ads reconhecidos como Service Layer.
-
-## Marcos anteriores preservados
-
-Os marcos `M3`, `M3.1`, `M4`, `M5`, `M5.1`, `M5.2` e `M5.3` permanecem válidos conforme versões anteriores.
+- LPM e CIE preservados como candidatos.
 
 ## A2 — Functional Architecture Discovery
 
@@ -110,12 +104,6 @@ Os marcos `M3`, `M3.1`, `M4`, `M5`, `M5.1`, `M5.2` e `M5.3` permanecem válidos 
 | A2-R03 — Business Architecture Review | Planned |
 | A2-R04 — Product Architecture Review | Planned |
 | A2-R05 — Cross-Architecture Review | Planned |
-
-## Guivos Economic Model
-
-**Estado:** Domain Created — Development Planned.
-
-Seu desenvolvimento detalhado ocorrerá após dependências conceituais e funcionais suficientes.
 
 ## Regra de transição
 
