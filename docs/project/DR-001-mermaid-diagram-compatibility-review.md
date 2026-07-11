@@ -2,7 +2,7 @@
 id: DR-001
 title: Mermaid Diagram Compatibility Review
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos
 last_updated: 2026-07-11
 scope: Mermaid syntax, renderer compatibility, visual consistency and diagram coverage
@@ -31,7 +31,7 @@ A mesma falha aparecia duas vezes na interface porque o diagrama era processado 
 1. página normal do MkDocs;
 2. versão agregada ou de impressão gerada pelo pipeline do site.
 
-As imagens exibiam versões diferentes do Mermaid (`10.4.0` e `11.16.0`), confirmando que o mesmo bloco inválido era analisado por mais de um renderizador.
+As imagens exibiam versões diferentes do Mermaid (`10.4.0` e `11.16.0`), confirmando que o mesmo bloco incompatível era analisado por mais de um renderizador.
 
 ## 3. Causa raiz
 
@@ -50,16 +50,27 @@ Os principais riscos eram:
 - uso de aresta bidirecional compacta `<-->`, cuja interpretação pode variar conforme versão e integração;
 - rótulos com caracteres especiais sem encapsulamento explícito.
 
-## 4. Correção executada
+## 4. Correções executadas
 
-O GOG foi atualizado para `4.2.1`.
+### 4.1 GOG-001 4.2.1
 
-A correção adotou sintaxe conservadora e compatível:
+O diagrama público da estrutura da Guivos foi reescrito com:
 
 - rótulos entre aspas;
-- remoção do caractere `|` no nó;
-- substituição de `<-->` por duas arestas unidirecionais explícitas;
-- decomposição das soluções especializadas em nós separados.
+- soluções especializadas em nós separados;
+- arestas unidirecionais explícitas;
+- remoção do caractere `|` do rótulo composto.
+
+### 4.2 GLPA-001 1.1.1
+
+A arquitetura em camadas utilizava o mesmo padrão de risco, especialmente arestas `<-->`.
+
+O diagrama foi endurecido para compatibilidade cruzada por meio de:
+
+- rótulos entre aspas;
+- substituição de cada relação `<-->` por duas relações `-->`;
+- manutenção de identificadores simples;
+- preservação integral das decisões arquiteturais da versão 1.1.0.
 
 ## 5. Regra provisória de compatibilidade
 
@@ -73,46 +84,65 @@ Até a conclusão desta revisão, os diagramas Mermaid do GKR deverão preferir:
 6. ausência de sintaxe dependente de versões recentes quando houver alternativa simples;
 7. diagramas funcionais sem prescrever topologia técnica definitiva.
 
-## 6. Escopo da auditoria
+## 6. Auditoria dos documentos públicos
 
-A revisão deverá localizar e validar todos os blocos `mermaid` em:
+| Diagrama | Documento | Estado | Observação |
+|---|---|---|---|
+| Primeira compreensão | GOG | Válido | Fluxo simples, identificadores ASCII e arestas explícitas |
+| Ciclo Contínuo de Evolução | GOG | Válido | Fluxo compatível e sem construções ambíguas |
+| Estrutura pública da Guivos | GOG | Corrigido | Falha que originou o incidente; corrigida no GOG 4.2.1 |
+| Funcionamento prático | GOG | Válido | Encadeamento simples e retorno explícito |
 
-- GOG;
-- PAS;
-- GLPA;
-- GIA;
+## 7. Auditoria inicial de Product Engineering
+
+| Diagrama | Documento | Estado | Tratamento |
+|---|---|---|---|
+| Arquitetura em camadas | GLPA | Corrigido | Sintaxe endurecida na GLPA 1.1.1 |
+| Aplicação das camadas ao Journey | PAS | Correção necessária | Contém rótulo com `|` e relações `<-->` |
+| Filosofia operacional | PAS | Válido | Fluxo linear simples |
+| Relação contínua com a vida real | PAS | Válido | Fluxo linear com retorno explícito |
+| Ciclo Cognitivo | PAS | Válido | Fluxo linear e retorno explícito |
+| Captura de Contexto | PAS | Refinamento recomendado | Sintaxe válida; revisar rótulos de decisão e aresta pontilhada em validação cruzada |
+| Interpretação do Contexto | PAS | Válido | Fluxo linear simples |
+| Contexto Vivo | PAS | Refinamento recomendado | Sintaxe funcional; revisar rótulo de aresta com vírgula e decisão em versões antigas |
+| Ciclo de vida da informação | PAS | Validação cruzada necessária | `stateDiagram-v2` é suportado, mas deve ser testado nos dois renderizadores do pipeline |
+| Meu Contexto Hoje | PAS | Pendente de inspeção final | Validar sintaxe e legibilidade no documento completo |
+
+## 8. Padrões de risco encontrados
+
+A revisão identificou quatro padrões que devem ser pesquisados no restante do GKR:
+
+1. arestas compactas `<-->`;
+2. caractere `|` dentro de rótulos;
+3. rótulos extensos ou com pontuação sem aspas;
+4. construções específicas, como `stateDiagram-v2`, que exigem validação nos dois renderizadores utilizados pelo pipeline.
+
+## 9. Escopo remanescente
+
+A revisão ainda deverá localizar e validar blocos Mermaid em:
+
+- GIA e documentos de Intelligence;
 - GEB;
-- documentos de arquitetura empresarial;
-- documentos de pesquisa;
-- documentos de projeto;
+- Enterprise Architecture;
+- Reference Architecture;
+- Research;
+- Governance Framework;
+- documentos de projeto e validação;
 - páginas auxiliares do site.
 
-## 7. Critérios por diagrama
+## 10. Critérios por diagrama
 
 Cada diagrama será classificado como:
 
 - **válido** — sintaxe simples e compatível;
 - **corrigido** — falha confirmada e removida;
-- **refinamento recomendado** — renderiza, mas possui ambiguidade ou baixa legibilidade;
+- **refinamento recomendado** — renderiza, mas possui risco, ambiguidade ou baixa legibilidade;
 - **substituição recomendada** — estrutura inadequada ao objetivo;
 - **ausente** — documento ganharia compreensão relevante com novo diagrama.
 
-## 8. Estado inicial
+## 11. Ponto de retomada
 
-| Diagrama | Documento | Estado |
-|---|---|---|
-| Estrutura pública da Guivos | GOG | Corrigido no GOG 4.2.1 |
-| Primeira compreensão | GOG | Pendente de validação cruzada |
-| Ciclo Contínuo de Evolução | GOG | Pendente de validação cruzada |
-| Funcionamento prático | GOG | Pendente de validação cruzada |
-| Arquitetura em camadas | GLPA | Pendente de validação cruzada |
-| Ciclo Cognitivo | PAS | Pendente de validação cruzada |
-| Captura de Contexto | PAS | Pendente de validação cruzada |
-| Interpretação do Contexto | PAS | Pendente de validação cruzada |
-| Contexto Vivo | PAS | Pendente de validação cruzada |
-| Ciclo de vida da informação | PAS | Pendente de validação cruzada |
-| Meu Contexto Hoje | PAS | Pendente de validação cruzada |
-
-## 9. Ponto de retomada
-
-Executar busca completa por blocos Mermaid no repositório, catalogar os diagramas existentes e revisar primeiro os documentos públicos e de Product Engineering.
+1. corrigir no PAS o diagrama `Aplicação das camadas ao Journey`;
+2. validar no pipeline os diagramas de decisão e `stateDiagram-v2`;
+3. continuar a auditoria pelos documentos arquiteturais listados na navegação do MkDocs;
+4. somente encerrar a DR-001 após validação da página normal e da versão agregada de impressão.
