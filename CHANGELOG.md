@@ -2,6 +2,25 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.29.1 — Market Validation Instrument and Decision Model Refinement
+
+- Atualização do `VAL-001 — Framework de Validação de Mercado` para `1.1.0`.
+- Registro do Princípio da Co-criação.
+- Atualização do `VAL-002` para `1.1.0`, com o título público `Construindo a Guivos`.
+- Substituição da apresentação longa pela versão curta aprovada, centrada em evolução de vida, próximos passos e oportunidades alinhadas ao momento do participante.
+- Redução do questionário para 23 perguntas principais e apenas duas perguntas abertas centrais.
+- Padronização das alternativas no formato `n.x`.
+- Redução do tempo estimado para 5 a 7 minutos.
+- Atualização do `VAL-006 — Dashboard de Indicadores de Validação` para `1.1.0`.
+- Vinculação de todos os KPIs às perguntas do instrumento oficial.
+- Definição de fórmulas para dor, compreensão, relevância, ITP, confiança, intenção de uso, recorrência, NPS, beta e monetização.
+- Definição do Índice Geral de Validação — IGV e dos gates críticos.
+- Definição dos níveis de maturidade da base: pré-teste, exploratória, indicativa, decisão inicial e base preferencial.
+- Atualização do `VAL-007 — Critérios de Decisão da Validação` para `1.1.0`.
+- Formalização das regras combinadas para `Go`, `Go com ajustes`, `Pivot parcial` e `No-Go temporário`.
+- Definição de mínimo de 200 respostas válidas para decisão inicial e meta preferencial de 500 respostas.
+- Atualização da visão geral do Guivos Market Validation System para `1.1.0`.
+
 ## 0.29.0 — Guivos Market Validation System
 
 - Criação do domínio `docs/research/market-validation/`.
