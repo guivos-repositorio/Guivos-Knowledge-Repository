@@ -2,13 +2,14 @@
 id: GLPA-001
 title: Guivos Layered Product Architecture
 status: approved
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-07-11
 related:
   - GPA-000
   - PAS-001
   - AR-001
+  - DR-001
 ---
 
 # GLPA-001 — Guivos Layered Product Architecture
@@ -31,41 +32,52 @@ Para fins de construção, operação e evolução, esses componentes são organ
 
 ```mermaid
 flowchart TD
-    P[Pessoas, Organizações e Coletivos]
-    EL[Experience Layer]
-    J[Guivos Journey]
-    IL[Intelligence Layer]
-    I[Guivos Intelligence]
-    SL[Service Layer]
-    B[Guivos Business]
-    M[Guivos Mall]
-    T[Guivos Travel]
-    MD[Guivos Media]
-    A[Guivos Ads]
-    PL[Platform Layer]
-    API[APIs e integrações]
-    AUTH[Identidade, autenticação e autorização]
-    DATA[Dados, busca e armazenamento]
-    BILL[Billing e pagamentos compartilhados]
-    NOTIF[Notificações e mensageria]
-    SEC[Segurança, privacidade e observabilidade]
-    GRAPH[Implementação técnica futura do Grafo Global]
+    P["Pessoas, Organizações e Coletivos"]
+    EL["Experience Layer"]
+    J["Guivos Journey"]
+    IL["Intelligence Layer"]
+    I["Guivos Intelligence"]
+    SL["Service Layer"]
+    B["Guivos Business"]
+    M["Guivos Mall"]
+    T["Guivos Travel"]
+    MD["Guivos Media"]
+    A["Guivos Ads"]
+    PL["Platform Layer"]
+    API["APIs e integrações"]
+    AUTH["Identidade, autenticação e autorização"]
+    DATA["Dados, busca e armazenamento"]
+    BILL["Billing e pagamentos compartilhados"]
+    NOTIF["Notificações e mensageria"]
+    SEC["Segurança, privacidade e observabilidade"]
+    GRAPH["Implementação técnica futura do Grafo Global"]
 
     P --> EL
     EL --> J
-    J <--> I
-    J <--> B
-    J <--> M
-    J <--> T
-    J <--> MD
-    J <--> A
+    J --> I
+    I --> J
+    J --> B
+    B --> J
+    J --> M
+    M --> J
+    J --> T
+    T --> J
+    J --> MD
+    MD --> J
+    J --> A
+    A --> J
 
     IL --> I
-    I <--> B
-    I <--> M
-    I <--> T
-    I <--> MD
-    I <--> A
+    I --> B
+    B --> I
+    I --> M
+    M --> I
+    I --> T
+    T --> I
+    I --> MD
+    MD --> I
+    I --> A
+    A --> I
 
     SL --> B
     SL --> M
@@ -263,4 +275,4 @@ A GLPA orienta:
 
 Esta arquitetura permanece aprovada como referência da fase de Product Engineering.
 
-A versão 1.1.0 substitui terminologia legada de `perfil` e `feed` como responsabilidades permanentes, esclarece relações transversais e preserva a distinção entre arquitetura funcional e implementação técnica.
+A versão 1.1.1 endurece a sintaxe Mermaid para compatibilidade entre renderizadores, sem alterar as responsabilidades ou decisões arquiteturais da versão 1.1.0.
