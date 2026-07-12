@@ -2,7 +2,7 @@
 id: VAL-006
 title: Dashboard de Indicadores de Validação
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-07-11
 related:
@@ -19,7 +19,7 @@ related:
 
 Definir o painel executivo que será utilizado assim que houver uma base suficiente de respostas da Pesquisa Conceitual B2C da Guivos.
 
-O dashboard deverá permitir:
+O dashboard deverá:
 
 - medir os KPIs oficiais;
 - comparar resultados com as metas;
@@ -68,21 +68,17 @@ O dashboard deverá exibir:
 
 **Pergunta:** `Q6`
 
-**Cálculo:**
-
 ```text
 Dor relevante (%) = respostas 6.3 + 6.4 + 6.5 / respostas válidas da Q6 × 100
 ```
 
 **Meta inicial:** `>= 65%`.
 
-**Indicador complementar — dor alta:**
+Indicador complementar:
 
 ```text
 Dor alta (%) = respostas 6.4 + 6.5 / respostas válidas da Q6 × 100
 ```
-
-A dor relevante é o indicador principal. A dor alta ajuda a diferenciar um incômodo ocasional de um problema frequente.
 
 ### 4.2 Esforço atual
 
@@ -92,11 +88,7 @@ A dor relevante é o indicador principal. A dor alta ajuda a diferenciar um inc�
 
 **Sinal de problema relevante:** média `>= 6,0`.
 
-Também exibir:
-
-- percentual de notas 8 a 10;
-- distribuição completa;
-- comparação por intensidade da dor.
+Exibir também percentual de notas 8 a 10, distribuição completa e comparação por intensidade da dor.
 
 ### 4.3 Compreensão autodeclarada
 
@@ -106,24 +98,15 @@ Também exibir:
 
 **Meta inicial:** `>= 8,0`.
 
-Este indicador não substitui a avaliação objetiva da resposta aberta.
-
 ### 4.4 Compreensão correta
 
 **Pergunta:** `Q10`
 
-Cada resposta deverá ser classificada por dois critérios mínimos:
+Cada resposta deverá ser classificada como:
 
-1. reconhece que a Guivos acompanha ou considera o contexto/momento da pessoa;
-2. reconhece que a Guivos ajuda a identificar próximos passos, oportunidades ou caminhos para evolução.
-
-Classificação:
-
-- **1,0 — correta:** contém os dois elementos sem distorção relevante;
-- **0,5 — parcialmente correta:** contém apenas um elemento central ou apresenta compreensão incompleta;
-- **0,0 — incorreta:** descreve a Guivos como catálogo genérico, rede social, marketplace isolado, coaching que decide pela pessoa ou outro conceito incompatível.
-
-**Cálculo principal:**
+- **1,0 — correta:** reconhece que a Guivos considera o contexto ou momento da pessoa e ajuda a identificar próximos passos, oportunidades ou caminhos para evolução;
+- **0,5 — parcialmente correta:** reconhece apenas um elemento central ou apresenta compreensão incompleta;
+- **0,0 — incorreta:** descreve a Guivos como catálogo genérico, rede social, marketplace isolado, sistema que decide pela pessoa ou outro conceito incompatível.
 
 ```text
 Compreensão correta (%) = respostas classificadas como 1,0 / respostas válidas da Q10 × 100
@@ -131,7 +114,7 @@ Compreensão correta (%) = respostas classificadas como 1,0 / respostas válidas
 
 **Meta inicial:** `>= 80%`.
 
-Exibir separadamente o percentual de compreensão parcial e incorreta.
+Exibir separadamente compreensão correta, parcial e incorreta.
 
 ### 4.5 Relevância percebida
 
@@ -149,8 +132,6 @@ Exibir separadamente o percentual de compreensão parcial e incorreta.
 
 **Meta inicial:** `>= 8,0`.
 
-Exibir também o percentual de notas 8 a 10.
-
 O ITP mede a crença de que a proposta poderia gerar melhoria concreta em alguma área da vida nos próximos 12 meses. Não mede transformação real.
 
 ### 4.7 Confiança para compartilhar contexto
@@ -161,17 +142,11 @@ O ITP mede a crença de que a proposta poderia gerar melhoria concreta em alguma
 
 **Meta inicial:** `>= 7,0`.
 
-Exibir também:
-
-- percentual de notas 0 a 5;
-- principais fatores de confiança selecionados na `Q15`;
-- comparação entre intenção de uso alta e baixa.
+Exibir também percentual de notas 0 a 5, fatores de confiança da `Q15` e relação entre confiança e intenção de uso.
 
 ### 4.8 Intenção positiva de uso
 
 **Pergunta:** `Q16`
-
-**Cálculo:**
 
 ```text
 Intenção positiva (%) = respostas 16.4 + 16.5 / respostas válidas da Q16 × 100
@@ -179,18 +154,9 @@ Intenção positiva (%) = respostas 16.4 + 16.5 / respostas válidas da Q16 × 1
 
 **Meta inicial:** `>= 60%`.
 
-Exibir separadamente:
-
-- certamente usaria (`16.5`);
-- provavelmente usaria (`16.4`);
-- talvez usasse (`16.3`);
-- intenção negativa (`16.1` + `16.2`).
-
 ### 4.9 Potencial de recorrência
 
 **Perguntas:** `Q17` e `Q18`
-
-**Indicador principal:**
 
 ```text
 Uso recorrente esperado (%) = respostas 18.1 + 18.2 + 18.3 / respostas válidas da Q18 × 100
@@ -198,22 +164,22 @@ Uso recorrente esperado (%) = respostas 18.1 + 18.2 + 18.3 / respostas válidas 
 
 **Meta inicial:** `>= 50%`.
 
-**Indicadores complementares:**
+Indicadores complementares:
 
 - uso diário ou algumas vezes por semana: `18.1 + 18.2`;
 - uso apenas por necessidade específica: `18.5`;
 - ausência de motivo de retorno: `17.9`;
 - ranking dos motivos de retorno da `Q17`.
 
-Como a `Q17` é fechada, o dashboard utilizará a expressão **potencial de recorrência**, e não “recorrência espontânea”.
+Como a `Q17` é fechada, o indicador será denominado **potencial de recorrência**, e não recorrência espontânea.
 
 ### 4.10 NPS conceitual
 
 **Pergunta:** `Q19`
 
 - promotores: notas 9 e 10;
-- neutros: notas 7 e 8;
-- detratores: notas 0 a 6.
+- neutros: 7 e 8;
+- detratores: 0 a 6.
 
 ```text
 NPS conceitual = % promotores - % detratores
@@ -221,13 +187,9 @@ NPS conceitual = % promotores - % detratores
 
 **Meta inicial:** `>= 40`.
 
-O NPS conceitual mede recomendação da ideia condicionada ao funcionamento prometido. Não representa satisfação com um produto em uso.
-
 ### 4.11 Interesse no beta
 
 **Pergunta:** `Q20`
-
-**Cálculo principal:**
 
 ```text
 Interesse confirmado no beta (%) = respostas 20.1 / respostas válidas da Q20 × 100
@@ -235,9 +197,7 @@ Interesse confirmado no beta (%) = respostas 20.1 / respostas válidas da Q20 ×
 
 **Meta inicial:** `>= 35%`.
 
-Exibir também o interesse ampliado (`20.1 + 20.2`).
-
-A taxa de contatos efetivamente deixados deverá ser mostrada separadamente e nunca confundida com intenção declarada.
+Exibir também interesse ampliado (`20.1 + 20.2`) e conversão efetiva em contato.
 
 ### 4.12 Disposição inicial para pagar
 
@@ -250,39 +210,27 @@ Exibir:
 - percentual por faixa de preço (`21.3` a `21.6`);
 - recusa em responder (`21.7`).
 
-Na primeira rodada, monetização é indicador diagnóstico e não gate isolado de aceitação.
+Monetização é indicador diagnóstico e não gate isolado na primeira rodada.
 
 ### 4.13 Barreiras principais
 
 **Pergunta:** `Q22`
 
-Exibir ranking e percentual de cada barreira, com destaque para:
-
-- ausência de necessidade;
-- desconfiança;
-- incompreensão ou percepção de proposta genérica;
-- dúvida sobre relevância das recomendações;
-- resistência ao acompanhamento de informações pessoais;
-- preço.
-
-A opção `22.9` indica ausência de barreira principal no momento da resposta.
+Exibir ranking e percentual de cada barreira, destacando ausência de necessidade, desconfiança, incompreensão, dúvida sobre relevância, resistência ao acompanhamento de informações pessoais e preço.
 
 ## 5. Índice Geral de Validação — IGV
 
-O IGV é uma síntese executiva. Ele não substitui a leitura por hipótese nem pode, sozinho, aprovar a proposta.
+O IGV é uma síntese executiva. Não substitui a leitura por hipótese nem pode aprovar a proposta sozinho.
 
 ### 5.1 Normalização
 
-Cada dimensão será convertida para uma escala de 0 a 100:
-
-- percentuais permanecem na escala original;
+- percentuais permanecem na escala de 0 a 100;
 - médias de 0 a 10 são multiplicadas por 10;
-- NPS é convertido por `(NPS + 100) / 2` apenas para composição do índice;
-- valores acima de 100 ou abaixo de 0 são limitados ao intervalo de 0 a 100.
+- valores são limitados ao intervalo de 0 a 100.
 
 ### 5.2 Pesos
 
-| Dimensão | Indicador utilizado | Peso |
+| Dimensão | Indicador | Peso |
 |---|---|---:|
 | Dor | Dor relevante (`Q6`) | 15% |
 | Compreensão | Compreensão correta (`Q10`) | 20% |
@@ -297,7 +245,7 @@ Cada dimensão será convertida para uma escala de 0 a 100:
 IGV = soma dos indicadores normalizados × respectivos pesos
 ```
 
-Monetização e NPS serão apresentados fora do IGV na primeira rodada para evitar que uma intenção econômica precoce ou uma recomendação hipotética distorça a validação central do problema e da proposta.
+Monetização e NPS permanecem fora do IGV na primeira rodada.
 
 ### 5.3 Leitura do IGV
 
@@ -310,7 +258,7 @@ Monetização e NPS serão apresentados fora do IGV na primeira rodada para evit
 
 ## 6. Gates críticos
 
-Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando ocorrer qualquer uma destas condições:
+Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando houver:
 
 - compreensão correta abaixo de 65%;
 - confiança média abaixo de 6,0;
@@ -318,7 +266,7 @@ Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando ocorrer qu
 - intenção positiva de uso abaixo de 45%;
 - base inferior a 200 respostas válidas;
 - concentração crítica da amostra sem análise segmentada;
-- indícios relevantes de viés, duplicidade ou baixa qualidade das respostas.
+- indícios relevantes de viés, duplicidade ou baixa qualidade.
 
 ## 7. Estrutura mínima do dashboard
 
@@ -329,7 +277,7 @@ Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando ocorrer qu
 - nível de maturidade da base;
 - IGV;
 - decisão preliminar;
-- quantidade de gates atendidos;
+- gates atendidos;
 - principal força;
 - principal risco.
 
@@ -338,8 +286,10 @@ Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando ocorrer qu
 - taxa de conclusão;
 - taxa de abandono;
 - tempo mediano;
-- distribuição por idade, região e situação principal;
+- distribuição por idade, estado ou Distrito Federal e situação principal;
+- consolidação dos estados por região, quando útil;
 - concentração por canal de aquisição;
+- concentração geográfica;
 - exclusões e motivos.
 
 ### 7.3 Problema
@@ -387,14 +337,17 @@ Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando ocorrer qu
 Os KPIs principais deverão permitir corte por:
 
 - faixa etária (`Q1`);
-- região (`Q2`);
+- estado ou Distrito Federal (`Q2`);
+- região derivada do estado (`Q2`);
 - situação principal (`Q3`);
 - área prioritária de evolução (`Q4`);
 - intensidade da dor (`Q6`);
 - nível de confiança (`Q14`);
 - intenção de uso (`Q16`).
 
-Não emitir conclusão sobre segmentos com base muito pequena. Como referência operacional, destacar segmentos com menos de 30 respostas e evitar decisão isolada sobre eles.
+Participantes fora do Brasil deverão ser analisados separadamente da base nacional.
+
+Estados com menos de 30 respostas deverão ser destacados como base reduzida e não deverão receber conclusão isolada. O painel deverá identificar concentração excessiva em São Paulo, Minas Gerais ou qualquer outra unidade federativa.
 
 ## 9. Semáforo dos indicadores
 
@@ -412,7 +365,7 @@ Cada atualização do dashboard deverá produzir:
 3. semáforo por dimensão;
 4. IGV;
 5. gates críticos;
-6. leitura por segmento;
+6. leitura por segmento e por estado quando houver base suficiente;
 7. evidências favoráveis e contrárias;
 8. decisão preliminar conforme VAL-007;
 9. recomendações de ajuste;
