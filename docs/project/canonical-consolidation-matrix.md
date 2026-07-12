@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-06-28
+last_updated: 2026-07-12
 ---
 
 # Matriz de Consolidação Canônica
@@ -32,18 +32,20 @@ Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR cons
 | Missão Operacional | Manter | Formulação atual continua válida |
 | Visão de Longo Prazo | Manter | Alinhada à expansão global |
 | Constituição | Manter | Nenhuma contradição objetiva identificada |
-| Princípios Permanentes | Refinar | Revisão futura apenas para consistência e referências cruzadas |
+| Princípios Permanentes | Refinar | Revisão futura apenas por processo formal e evidência suficiente |
+
+A Foundation encontra-se congelada na baseline `A2-B3`. Esta matriz não autoriza alteração informal de seus elementos.
 
 ## Modelo Fundamental
 
 | Conceito | Decisão | Situação |
 |---|---|---|
 | Participante | Manter | Elemento que percorre a jornada |
-| Momento Atual | Manter | Termo oficial; substitui “Novo Momento de Vida” ao reiniciar o ciclo |
+| Momento Atual | Manter | Termo oficial; o estado resultante reinicia o ciclo |
 | Objetivos | Manter | Orientam a jornada |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
 | Oportunidade | Manter | Mecanismo estruturado para realizar o Próximo Passo |
-| Experiência | Manter | Materialização da participação |
+| Experiência | Manter | Vivência efetiva da oportunidade |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
 
@@ -57,24 +59,40 @@ Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR cons
 | Comunidade | Refinar | Denominação contextual de Coletivo; não é categoria independente |
 | Identidade | Manter | Permanente em relação aos papéis |
 | Papel | Manter | Temporário, contextual e acumulável |
-| Capacidade | Manter | Arquitetural; não equivale a permissão técnica |
+| Capacidade | Manter | Conceito dependente do tipo declarado; não equivale automaticamente a permissão técnica |
 | Relacionamento | Manter | Vínculo contextual entre participantes |
+
+Evento, Projeto e Agente de IA não são categorias de Participante enquanto não houver decisão arquitetural formal.
 
 ## Arquitetura de produtos
 
 | Conceito | Decisão | Situação |
 |---|---|---|
-| Ecossistema Guivos | Manter | Camada superior que integra todos os produtos |
-| Guivos Journey | Manter | Produto responsável pela jornada contínua do participante |
-| Guivos Marketplace | Refinar | Produto consolidado; nome comercial provisório |
-| Guivos Travel | Manter | Produto de viagens e experiências turísticas |
-| Guivos Business | Manter | Produto de soluções para organizações |
-| Guivos Media | Manter | Produto editorial e institucional; substitui “Guivos Podcast” |
-| Guivos Intelligence | Manter | Produto de inteligência aplicada; substitui “Guivos Insights” |
-| Guivos Ads | Manter | Produto de publicidade e mídia patrocinada |
-| “Comunidade Guivos” | Remover | Substituída por Guivos Journey como nome de produto |
+| Ecossistema Guivos | Manter | Camada superior que integra todos os componentes |
+| Guivos Journey | Refinar | Experience Layer e superfície principal da experiência do participante |
+| Guivos Mall | Manter | Nome oficial do produto comercial de produtos e serviços de múltiplos fornecedores |
+| Guivos Marketplace | Remover | Nome anterior substituído oficialmente por Guivos Mall |
+| Guivos Travel | Manter | Serviço especializado de viagens e experiências turísticas |
+| Guivos Business | Manter | Serviço especializado para organizações |
+| Guivos Media | Manter | Serviço editorial e institucional; substitui “Guivos Podcast” como produto |
+| Guivos Intelligence | Manter | Intelligence Layer transversal; substitui “Guivos Insights” como produto |
+| Guivos Ads | Manter | Serviço de publicidade e mídia patrocinada |
+| “Comunidade Guivos” | Remover | Substituída por Guivos Journey como nome amplo de produto |
 | “Guivos Podcast” | Remover | Podcast passa a ser formato de Guivos Media |
 | “Guivos Insights” | Remover | Insights passa a ser resultado de Guivos Intelligence |
+
+## Conceitos funcionais do Journey
+
+| Conceito | Decisão | Situação |
+|---|---|---|
+| Contexto Vivo | Manter | Modelo multidimensional de compreensão no PAS-001 |
+| Interpretação do Contexto | Manter | Responsabilidade funcional apoiada pela Intelligence Layer |
+| Meu Contexto Hoje | Manter | Visão conceitual para transparência e controle do participante |
+| Evolução Independente das Dimensões | Manter | Dimensões evoluem sem reconstrução integral do contexto |
+| Evento de Vida | Manter | Mudança relevante capaz de alterar uma ou mais dimensões |
+| Oportunidade Ativa | Manter | Oportunidade relevante para um participante em contexto atual |
+| Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
+| LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
 
 ## Governança documental
 
@@ -85,7 +103,12 @@ Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR cons
 | Markdown | Manter | Formato canônico |
 | Mermaid | Manter | Formato preferencial para diagramas |
 | Site e PDF | Manter | Publicações derivadas do Markdown |
+| Conversas | Refinar | Evidências e contexto; não substituem documentos canônicos |
+
+## Reconciliação mais recente
+
+A `GE2-SYNC-007` confirmou que o extrato final da conversa anterior não continha decisão arquitetural madura ausente do GKR. As correções necessárias foram editoriais e de sincronização.
 
 ## Próxima revisão
 
-Consolidar o Modelo dos Participantes com base nas decisões já validadas, sem incluir Evento, Projeto ou Agente de IA como categorias de participante enquanto não houver decisão arquitetural formal que altere o modelo de Pessoa, Organização e Coletivo.
+Completar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, iniciando por responsabilidades e limites e preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
