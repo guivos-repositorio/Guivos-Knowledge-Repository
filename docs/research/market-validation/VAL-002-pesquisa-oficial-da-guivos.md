@@ -4,7 +4,7 @@ title: Pesquisa Conceitual B2C da Guivos
 status: active
 version: 1.1.2
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-07-12
 public_title: Construindo a Guivos
 estimated_time: 5 a 7 minutos
 ---
