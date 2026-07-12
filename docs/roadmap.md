@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.1.0
+version: 5.2.0
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-07-12
 ---
 
 # Roadmap Arquitetural
@@ -13,15 +13,15 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 ## Estado atual
 
 - **Era vigente:** `GE-2 — Knowledge`.
-- **Marco vigente:** `M5.8 — GKR and GOG Consistency Review Completed`.
+- **Marco vigente:** `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
 - **Frente operacional vigente:** `Product Engineering`.
-- **Sincronização vigente:** `GE2-SYNC-006`.
+- **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
-- **Especificação ativa:** `PAS-001 — Guivos Journey 0.4.1`.
-- **Arquitetura funcional:** `GLPA-001 1.1.0`.
+- **Especificação ativa:** `PAS-001 — Guivos Journey 0.4.2`.
+- **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
-- **Guia Oficial:** `GOG-001 4.2.0`.
+- **Guia Oficial:** `GOG-001 4.2.1`.
 - **Capacidade ativa:** `02 — Contexto Vivo`.
 - **GKA-000:** Parte V pendente.
 - **A2-R02:** em espera operacional.
@@ -35,18 +35,17 @@ O trabalho permanece no `PAS-001 — Guivos Journey`.
 
 Novos frameworks estruturais não serão desenvolvidos enquanto os produtos oficiais não possuírem especificação funcional suficiente.
 
-## Revisão AR-001
+## Reconciliação de continuidade
 
-A revisão de consistência entre GKR e GOG foi concluída com:
+A `GE2-SYNC-007` concluiu a leitura do estado atual do repositório e a comparação com o extrato final da conversa anterior.
 
-- alinhamento literal de propósito, missão e visão;
-- revisão dos diagramas públicos;
-- alinhamento entre GOG, PAS e GLPA;
-- atualização da GIA;
-- atualização do Glossário Canônico;
-- distinção dos tipos de capacidade;
-- remoção de referências metodológicas desatualizadas;
-- sincronização dos documentos de estado.
+Resultados:
+
+- nenhuma decisão arquitetural madura ausente foi identificada;
+- Contexto Vivo e Market Validation estavam incorporados;
+- divergências editoriais demonstráveis foram autorizadas para correção;
+- formulário e planilha de validação permanecem entregáveis operacionais futuros;
+- o ponto de retomada do Product Engineering foi preservado.
 
 ## Progresso das capacidades do Journey
 
@@ -77,6 +76,13 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 9. desenvolver Commercial Model;
 10. desenvolver Go-to-Market.
 
+### Entregáveis operacionais de validação
+
+- gerar o formulário definitivo de aplicação;
+- construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
+
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural do Contexto Vivo.
+
 ## Restrições
 
 - não retornar à meta-arquitetura como foco imediato;
@@ -98,6 +104,7 @@ Próxima entrega:
 5. resolução de conflitos;
 6. interface `Meu Contexto Hoje`;
 7. eventos produzidos;
-8. KPIs;
-9. cenários ideal, alternativo e limite;
-10. contrato da capacidade.
+8. integrações;
+9. KPIs;
+10. cenários ideal, alternativo e limite;
+11. contrato da capacidade.
