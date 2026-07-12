@@ -2,12 +2,13 @@
 id: VAL-007
 title: Critérios de Decisão da Validação
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-07-11
 related:
   - VAL-001
   - VAL-002
+  - VAL-005
   - VAL-006
 ---
 
@@ -23,6 +24,7 @@ A decisão deverá considerar simultaneamente:
 - KPIs principais;
 - gates críticos;
 - diferenças entre segmentos;
+- distribuição geográfica por estado ou Distrito Federal;
 - evidências favoráveis e contrárias;
 - limitações metodológicas;
 - comentários qualitativos relevantes.
@@ -33,13 +35,15 @@ Uma rodada somente poderá receber decisão formal quando:
 
 1. possuir pelo menos 200 respostas válidas;
 2. tiver passado pelo pré-teste do instrumento;
-3. apresentar distribuição mínima por idade, região e situação principal;
-4. não possuir concentração crítica em um único canal de aquisição sem análise separada;
+3. apresentar distribuição mínima por idade, estado ou Distrito Federal e situação principal;
+4. identificar e tratar concentração crítica em um único estado ou canal de aquisição;
 5. tiver a `Q10` classificada conforme a rubrica de compreensão;
 6. apresentar cálculo completo dos KPIs do VAL-006;
 7. registrar exclusões, limitações e possíveis vieses.
 
 Bases com menos de 200 respostas podem gerar leitura exploratória ou indicativa, mas não decisão formal.
+
+A ausência de respostas em todos os estados não impede uma decisão inicial. Entretanto, a decisão deverá declarar claramente o alcance geográfico da amostra e não poderá ser apresentada como validação nacional quando houver concentração relevante em poucas unidades federativas.
 
 ## 3. Estados possíveis
 
@@ -61,16 +65,7 @@ A proposta apresenta evidências consistentes de:
 
 A proposta apresenta aderência promissora, mas exige correções específicas antes da próxima etapa.
 
-Os ajustes podem envolver:
-
-- narrativa;
-- público prioritário;
-- confiança e privacidade;
-- proposta de valor;
-- recorrência;
-- escopo inicial;
-- monetização;
-- canais de aquisição.
+Os ajustes podem envolver narrativa, público prioritário, confiança, privacidade, proposta de valor, recorrência, escopo inicial, monetização, canais de aquisição ou expansão geográfica.
 
 ### 3.3 Pivot parcial
 
@@ -118,6 +113,7 @@ Uma decisão `Go` exige todos os gates abaixo:
 | G6 — Adoção | intenção positiva de uso >= 60% |
 | G7 — Recorrência | uso recorrente esperado >= 50% |
 | G8 — Qualidade | ausência de viés crítico não tratado |
+| G9 — Cobertura geográfica | concentração por estado identificada e considerada na decisão |
 
 O NPS conceitual e o interesse no beta reforçam a decisão, mas não compensam falha em compreensão, problema, confiança ou adoção.
 
@@ -128,10 +124,11 @@ O NPS conceitual e o interesse no beta reforçam a decisão, mas não compensam 
 Emitir `Go` quando:
 
 - todos os gates críticos forem atendidos;
-- pelo menos 8 dos 11 indicadores da tabela estiverem na faixa `Go`;
+- pelo menos 8 dos 11 indicadores estiverem na faixa `Go`;
 - nenhum indicador crítico estiver na faixa vermelha;
 - o IGV for `>= 80`;
-- não houver segmento majoritário com rejeição substancial ocultada pela média geral.
+- não houver segmento majoritário com rejeição substancial ocultada pela média geral;
+- o alcance geográfico da conclusão estiver explicitamente limitado à composição da amostra.
 
 ### 6.2 Go com ajustes
 
@@ -143,7 +140,7 @@ Emitir `Go com ajustes` quando:
 - houver até três indicadores na faixa amarela e nenhum gate crítico vermelho;
 - os ajustes necessários forem específicos e testáveis.
 
-Também pode ocorrer com IGV acima de 80 quando houver concentração de amostra, forte divergência entre segmentos ou barreira crítica que exija correção antes do MVP.
+Também pode ocorrer com IGV acima de 80 quando houver concentração excessiva em um estado, forte divergência entre unidades federativas, segmentos polarizados ou barreira crítica que exija correção antes do MVP.
 
 ### 6.3 Pivot parcial
 
@@ -151,7 +148,7 @@ Emitir `Pivot parcial` quando:
 
 - a dor for relevante, mas compreensão, valor, confiança, adoção ou recorrência estiverem abaixo do necessário;
 - o IGV estiver entre `55` e `69,9`;
-- houver um segmento claramente promissor e outros com baixa aderência;
+- houver um segmento ou estado claramente promissor e outros com baixa aderência;
 - a proposta atual precisar de mudança relevante, mas as evidências sustentarem continuidade da investigação.
 
 ### 6.4 No-Go temporário
@@ -163,7 +160,7 @@ Emitir `No-Go temporário` quando:
 - intenção positiva de uso estiver abaixo de 45%; ou
 - confiança média estiver abaixo de 6,0; ou
 - o IGV estiver abaixo de 55; ou
-- a qualidade da base impedir interpretação confiável;
+- a qualidade da base impedir interpretação confiável; ou
 - não houver segmento com aderência suficiente para justificar pivot específico.
 
 ## 7. Regras de interpretação
@@ -173,11 +170,13 @@ Emitir `No-Go temporário` quando:
 3. Intenção declarada não equivale a comportamento real.
 4. Uso recorrente esperado não equivale a retenção comprovada.
 5. NPS conceitual não equivale a satisfação com produto em uso.
-6. Interesse no beta deve ser comparado com a conversão real em contato e participação.
+6. Interesse no beta deve ser comparado com conversão real em contato e participação.
 7. Disposição para pagar deve ser validada posteriormente por comportamento de compra.
-8. Médias gerais não devem ocultar segmentos com resultados muito diferentes.
+8. Médias gerais não devem ocultar segmentos ou estados com resultados muito diferentes.
 9. Resultados positivos em amostra concentrada não autorizam generalização nacional.
-10. Evidência comportamental posterior poderá confirmar ou contrariar a pesquisa declarativa.
+10. Estados com menos de 30 respostas não deverão receber conclusão isolada.
+11. Participantes fora do Brasil deverão ser analisados separadamente da base nacional.
+12. Evidência comportamental posterior poderá confirmar ou contrariar a pesquisa declarativa.
 
 ## 8. Matriz de diagnóstico
 
@@ -189,7 +188,7 @@ Emitir `No-Go temporário` quando:
 | Valor alto + recorrência baixa | A proposta parece útil, mas episódica. | Revisar motivos de retorno e escopo inicial. |
 | Uso alto + beta baixo | Curiosidade não se converte em compromisso. | Testar CTA, público e fricção de adesão. |
 | Beta alto + pagamento baixo | Há potencial de uso, mas valor econômico ainda não está claro. | Validar produto gratuito e resultados antes do preço. |
-| Médias boas + segmentos polarizados | A proposta atende nichos de forma desigual. | Priorizar segmento com melhor aderência. |
+| Médias boas + estados polarizados | A proposta apresenta aderência geográfica desigual. | Investigar diferenças e limitar a conclusão ao alcance da amostra. |
 | Compreensão alta + dor baixa | A ideia é clara, mas o problema não é prioritário. | Revisar público, momento ou problema. |
 
 ## 9. Evidências obrigatórias para o registro da decisão
@@ -199,15 +198,18 @@ Cada rodada deverá registrar:
 - identificação e período da rodada;
 - quantidade recebida, concluída e válida;
 - composição da amostra;
+- distribuição por estado ou Distrito Federal;
+- consolidação por região;
 - origem dos respondentes;
 - KPIs e respectivas faixas;
 - IGV;
 - gates atendidos e não atendidos;
-- segmentos de maior e menor aderência;
+- segmentos e estados de maior e menor aderência;
 - evidências favoráveis;
 - evidências contrárias;
 - barreiras principais;
 - limitações e vieses;
+- alcance geográfico permitido para a conclusão;
 - decisão aprovada;
 - mudanças autorizadas;
 - hipóteses para a próxima rodada;
