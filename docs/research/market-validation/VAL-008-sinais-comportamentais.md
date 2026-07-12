@@ -2,9 +2,9 @@
 id: VAL-008
 title: Sinais Comportamentais na Validação
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-07-12
 ---
 
 # VAL-008 — Sinais Comportamentais na Validação
@@ -38,19 +38,22 @@ Registrar se a pessoa:
 - conta histórias espontâneas;
 - apresenta objeções concretas;
 - evita determinadas perguntas;
-- demonstra dificuldade em imaginar uso recorrente;
-- identifica imediatamente um primeiro caso de uso.
+- identifica imediatamente um primeiro caso de uso;
+- consegue ou não apontar um resultado concreto de valor;
+- associa espontaneamente a proposta à área escolhida;
+- demonstra dificuldade para diferenciar a Guivos de catálogo, rede social ou buscador genérico.
 
 ## 5. Sinais ao final
 
 - pergunta quando será lançado;
-- solicita participação no beta;
+- solicita participação em uma primeira experiência;
 - oferece contato espontaneamente;
 - pergunta sobre preço;
-- pergunta sobre privacidade;
-- indica outra pessoa que poderia usar;
+- pergunta sobre privacidade ou uso das informações;
+- indica outra pessoa que poderia participar;
 - não demonstra interesse em continuidade;
-- afirma que usaria apenas em uma situação específica.
+- afirma que procuraria a Guivos apenas em uma situação específica;
+- descreve espontaneamente algo que esperaria encontrar ou fazer na plataforma.
 
 ## 6. Escala de registro
 
@@ -72,7 +75,8 @@ A classificação deverá ser acompanhada por uma observação objetiva.
 - não usar sorriso, postura ou contato visual como prova isolada;
 - não substituir respostas explícitas por interpretação do entrevistador;
 - não registrar dados sensíveis desnecessários;
-- não filmar ou gravar sem autorização.
+- não filmar ou gravar sem autorização;
+- não inferir recorrência, retenção ou confiança operacional a partir de sinais de uma entrevista conceitual.
 
 ## 8. Uso na análise
 
@@ -80,6 +84,8 @@ Os sinais serão utilizados para:
 
 - complementar respostas quantitativas;
 - identificar perguntas confusas;
+- verificar se os exemplos facilitam a compreensão;
 - comparar intenção declarada e interesse espontâneo;
+- identificar situações de primeiro uso e resultados valorizados;
 - selecionar trechos para aprofundamento;
 - melhorar o roteiro da rodada seguinte.
