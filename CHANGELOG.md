@@ -2,6 +2,23 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.29.3 — B2C Concept Validation Baseline 1.2
+
+- Atualização do `VAL-001 — Framework de Validação de Mercado` para `1.2.0`.
+- Registro do Princípio da Avaliabilidade: perguntas somente integram uma rodada quando o participante possui informação suficiente para respondê-las conscientemente.
+- Atualização do `VAL-002 — Pesquisa Conceitual B2C` para `1.2.0`.
+- Redução do instrumento de 23 para 21 perguntas principais, mantendo duas perguntas abertas centrais.
+- Refinamento da apresentação pública com exemplos concretos de saúde, esportes, espiritualidade, grupos, movimentos e voluntariado.
+- Inclusão de perguntas sobre resultado desejado, situação de primeiro uso, expectativas sobre a plataforma e resultado concreto de valor.
+- Remoção da confiança operacional, frequência imaginada de uso, motivos hipotéticos de retorno e NPS conceitual da primeira pesquisa.
+- Atualização do `VAL-003` para `1.1.0`, `VAL-004` para `1.2.0` e `VAL-008` para `1.0.1`.
+- Atualização do `VAL-006 — Dashboard de Indicadores` para `1.2.0`.
+- Redefinição do IGV com problema, compreensão, relevância, contribuição, intenção e interesse na primeira experiência.
+- Atualização do `VAL-007 — Critérios de Decisão` para `1.2.0`, removendo confiança e recorrência dos gates da primeira rodada.
+- Registro de que confiança operacional, recorrência, retenção e recomendação serão validadas posteriormente por protótipo, beta e comportamento real.
+- Atualização da visão geral do Guivos Market Validation System para `1.2.0` e do marcador `STATUS.md` para a baseline metodológica `1.2`.
+- Registro de incompatibilidade direta entre respostas coletadas nas versões anteriores e a versão `1.2.0` sem mapeamento explícito.
+
 ## 0.29.2 — Chat Continuity and Repository Reconciliation
 
 - Criação de `GE2-SYNC-007 — Chat Continuity and Repository Reconciliation`.
