@@ -2,9 +2,9 @@
 id: VAL-004
 title: Modelo de Consolidação e Análise
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-07-12
 ---
 
 # VAL-004 — Modelo de Consolidação e Análise
@@ -20,13 +20,16 @@ Cada resposta deverá possuir:
 - identificador anônimo;
 - data;
 - canal de aplicação;
-- cidade e estado;
+- estado ou Distrito Federal;
+- região derivada do estado;
+- cidade ou município, quando informado opcionalmente;
+- indicação separada para participante fora do Brasil;
 - faixa etária;
 - situação profissional;
 - segmento principal;
 - respostas fechadas;
 - respostas abertas;
-- interesse no beta;
+- interesse em participação antecipada;
 - contato separado, quando autorizado.
 
 ## 3. Indicadores quantitativos
@@ -41,7 +44,7 @@ Cada resposta deverá possuir:
 - intenção de experimentar;
 - frequência esperada;
 - NPS conceitual;
-- interesse no beta;
+- interesse em participação antecipada;
 - disposição para pagar.
 
 ## 4. Classificação da compreensão
@@ -83,12 +86,17 @@ Comparar resultados por:
 
 - faixa etária;
 - situação profissional;
-- região;
+- estado ou Distrito Federal;
+- região derivada do estado;
 - intensidade da dor;
 - interesse principal;
 - confiança;
 - intenção de uso;
-- interesse no beta.
+- interesse em participação antecipada.
+
+Participantes fora do Brasil deverão ser analisados separadamente da base nacional.
+
+Estados com menos de 30 respostas deverão ser destacados como base reduzida e não deverão receber conclusão isolada. Concentração excessiva em um único estado ou canal deverá ser identificada e considerada na decisão.
 
 ## 7. Regras de qualidade
 
@@ -97,6 +105,7 @@ Comparar resultados por:
 - não combinar entrevistas e formulário sem identificar a origem;
 - não usar média isolada quando a distribuição for polarizada;
 - apresentar tamanho da amostra de cada segmento;
+- não generalizar resultados concentrados em poucos estados como validação nacional;
 - distinguir correlação de causalidade;
 - registrar limitações da coleta.
 
@@ -105,13 +114,14 @@ Comparar resultados por:
 O relatório final deverá conter:
 
 1. resumo executivo;
-2. perfil da amostra;
+2. perfil e distribuição geográfica da amostra;
 3. indicadores gerais;
 4. resultados por hipótese;
-5. diferenças por segmento;
+5. diferenças por segmento, estado e região quando houver base suficiente;
 6. principais objeções;
 7. principais casos de uso;
 8. sinais comportamentais;
 9. decisão recomendada;
 10. ajustes prioritários;
-11. próxima experiência de validação.
+11. limitações e alcance permitido da conclusão;
+12. próxima experiência de validação.
