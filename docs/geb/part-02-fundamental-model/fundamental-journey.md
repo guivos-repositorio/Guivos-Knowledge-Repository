@@ -2,12 +2,12 @@
 id: KU-FM-002
 title: Modelo Fundamental da Jornada
 status: consolidated
-version: 1.1.0
+version: 1.1.1
 domain: Fundamental Model
 stability: Core
 owner: Guivos
 created: 2026-06-27
-updated: 2026-06-28
+updated: 2026-07-12
 depends_on:
   - KU-FM-001
 related_adrs:
@@ -110,7 +110,7 @@ Este modelo orienta:
 - mecanismos de recomendação;
 - inteligência artificial;
 - Guivos Journey;
-- Guivos Marketplace;
+- Guivos Mall;
 - Guivos Media;
 - indicadores de evolução;
 - modelos de experiência e relacionamento.
