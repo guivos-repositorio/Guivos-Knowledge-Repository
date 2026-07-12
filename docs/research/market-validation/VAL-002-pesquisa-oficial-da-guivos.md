@@ -2,7 +2,7 @@
 id: VAL-002
 title: Pesquisa Conceitual B2C da Guivos
 status: active
-version: 1.1.1
+version: 1.1.2
 owner: Guivos
 last_updated: 2026-07-11
 public_title: Construindo a Guivos
@@ -267,11 +267,11 @@ Escolha até três opções.
 
 Escala de 0 a 10, em que `0` significa não recomendaria e `10` certamente recomendaria.
 
-### 20. Você teria interesse em participar de um teste beta gratuito antes do lançamento?
+### 20. Você teria interesse em participar antecipadamente da construção da Guivos e receber oportunidades relevantes antes do lançamento oficial?
 
-- **20.1** Sim.
-- **20.2** Talvez.
-- **20.3** Não.
+- **20.1** Sim, quero participar e receber acesso antecipado.
+- **20.2** Talvez, quero conhecer melhor antes de decidir.
+- **20.3** Não tenho interesse neste momento.
 
 Campo condicional opcional: nome e contato para quem selecionar `20.1` ou `20.2`.
 
