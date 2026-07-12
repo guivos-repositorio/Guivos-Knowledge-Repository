@@ -4,7 +4,7 @@ title: Plano de Amostragem
 status: active
 version: 1.1.0
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-07-12
 ---
 
 # VAL-005 — Plano de Amostragem
