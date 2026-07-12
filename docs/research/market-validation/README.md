@@ -1,7 +1,7 @@
 ---
 title: Guivos Market Validation System
 status: active
-version: 1.1.1
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-07-12
 ---
@@ -20,16 +20,18 @@ Transformar hipóteses internas em perguntas testáveis, coletar evidências de 
 
 > A Guivos será construída com base em evidências e na participação das pessoas.
 
+> Uma pergunta somente integra uma rodada quando o participante possui informação suficiente para avaliá-la de forma consciente.
+
 ## Documentos
 
-- [VAL-001 — Framework de Validação de Mercado](VAL-001-framework-de-validacao-de-mercado.md) — versão 1.1.0;
-- [VAL-002 — Pesquisa Conceitual B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 1.1.2, título público `Construindo a Guivos`;
-- [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md) — versão 1.0.0;
-- [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md) — versão 1.1.0;
+- [VAL-001 — Framework de Validação de Mercado](VAL-001-framework-de-validacao-de-mercado.md) — versão 1.2.0;
+- [VAL-002 — Pesquisa Conceitual B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 1.2.0, título público `Construindo a Guivos`;
+- [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md) — versão 1.1.0;
+- [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md) — versão 1.2.0;
 - [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md) — versão 1.1.0;
-- [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.1.1;
-- [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.1.1;
-- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.0.0.
+- [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.2.0;
+- [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.2.0;
+- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.0.1.
 
 ## Sequência oficial
 
@@ -42,26 +44,31 @@ flowchart LR
 
 A primeira aplicação valida a proposta B2C da Guivos, com foco em:
 
-- dor relacionada à descoberta de oportunidades;
+- dor relacionada à descoberta de caminhos e oportunidades;
 - compreensão da proposta;
-- valor percebido;
-- transformação percebida;
-- confiança;
-- intenção de uso;
-- potencial de recorrência;
-- interesse em participação antecipada;
+- relevância para a área prioritária da vida;
+- situação prática de primeiro uso;
+- expectativas sobre o que encontrar ou fazer na Guivos;
+- resultado concreto considerado valioso;
+- contribuição percebida;
+- intenção de experimentar uma primeira versão;
+- interesse em participar de uma primeira experiência;
 - sinais iniciais de monetização;
 - barreiras e diferenças entre segmentos.
+
+Confiança operacional, recorrência, retenção e recomendação serão validadas posteriormente por protótipos, beta e comportamento real, e não por previsão abstrata nesta primeira pesquisa.
 
 ## Estado operacional
 
 - instrumento oficial revisado para 5 a 7 minutos;
-- 23 perguntas principais;
+- 21 perguntas principais;
 - apenas duas perguntas abertas centrais;
+- apresentação da proposta com exemplos de saúde e espiritualidade;
 - alternativas codificadas no padrão `n.x`;
 - coleta geográfica principal por estado ou Distrito Federal;
 - cidade ou município como campo complementar opcional;
 - dashboard vinculado diretamente às perguntas;
+- IGV composto por problema, compreensão, relevância, contribuição, intenção e primeira experiência;
 - critérios formais de `Go`, `Go com ajustes`, `Pivot parcial` e `No-Go temporário`;
 - mínimo de 200 respostas válidas para decisão inicial;
 - meta preferencial de 500 respostas válidas.
