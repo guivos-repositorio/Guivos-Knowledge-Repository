@@ -1,9 +1,9 @@
 ---
 title: Guivos Market Validation System
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-07-12
 ---
 
 # Guivos Market Validation System
@@ -23,13 +23,13 @@ Transformar hipóteses internas em perguntas testáveis, coletar evidências de 
 ## Documentos
 
 - [VAL-001 — Framework de Validação de Mercado](VAL-001-framework-de-validacao-de-mercado.md) — versão 1.1.0;
-- [VAL-002 — Pesquisa Conceitual B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 1.1.0, título público `Construindo a Guivos`;
-- [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md);
-- [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md);
-- [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md);
-- [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.1.0;
-- [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.1.0;
-- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md).
+- [VAL-002 — Pesquisa Conceitual B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 1.1.2, título público `Construindo a Guivos`;
+- [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md) — versão 1.0.0;
+- [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md) — versão 1.1.0;
+- [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md) — versão 1.1.0;
+- [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.1.1;
+- [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.1.1;
+- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.0.0.
 
 ## Sequência oficial
 
@@ -49,7 +49,7 @@ A primeira aplicação valida a proposta B2C da Guivos, com foco em:
 - confiança;
 - intenção de uso;
 - potencial de recorrência;
-- interesse em participar do beta;
+- interesse em participação antecipada;
 - sinais iniciais de monetização;
 - barreiras e diferenças entre segmentos.
 
@@ -59,7 +59,14 @@ A primeira aplicação valida a proposta B2C da Guivos, com foco em:
 - 23 perguntas principais;
 - apenas duas perguntas abertas centrais;
 - alternativas codificadas no padrão `n.x`;
+- coleta geográfica principal por estado ou Distrito Federal;
+- cidade ou município como campo complementar opcional;
 - dashboard vinculado diretamente às perguntas;
 - critérios formais de `Go`, `Go com ajustes`, `Pivot parcial` e `No-Go temporário`;
 - mínimo de 200 respostas válidas para decisão inicial;
 - meta preferencial de 500 respostas válidas.
+
+## Entregáveis operacionais pendentes
+
+- formulário definitivo para aplicação;
+- planilha automática para recepção, tratamento e cálculo dos KPIs, IGV e gates.
