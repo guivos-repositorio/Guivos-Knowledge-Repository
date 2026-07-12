@@ -2,6 +2,22 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.29.2 — Chat Continuity and Repository Reconciliation
+
+- Criação de `GE2-SYNC-007 — Chat Continuity and Repository Reconciliation`.
+- Registro do marco `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
+- Reconciliação do corpus atual do GKR com o extrato final da conversa anterior.
+- Confirmação de que nenhuma decisão arquitetural madura estava ausente do repositório.
+- Sincronização dos documentos de estado com `PAS-001 0.4.2`, `GOG-001 4.2.1` e `GLPA-001 1.1.1`.
+- Atualização do Roadmap para `5.2.0`, Knowledge Board para `5.3.0` e Architectural Milestones para `4.9.0`.
+- Atualização da visão geral do Guivos Market Validation System para `1.1.1`.
+- Atualização do `VAL-004` para `1.1.0`, com coleta por estado ou Distrito Federal, região derivada e regras de análise geográfica.
+- Sincronização das referências para `VAL-002 1.1.2` e `VAL-006/007 1.1.1`.
+- Atualização da Matriz de Consolidação Canônica para `1.2.0`.
+- Substituição da referência residual a `Guivos Marketplace` por `Guivos Mall` no Modelo Fundamental da Jornada, atualizado para `1.1.1`.
+- Registro do formulário definitivo e da planilha automática de KPIs como entregáveis operacionais futuros.
+- Preservação da Capacidade 02 — Contexto Vivo como ponto exato de retomada.
+
 ## 0.29.1 — Market Validation Instrument and Decision Model Refinement
 
 - Atualização do `VAL-001 — Framework de Validação de Mercado` para `1.1.0`.
