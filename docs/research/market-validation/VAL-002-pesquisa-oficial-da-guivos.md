@@ -2,7 +2,7 @@
 id: VAL-002
 title: Pesquisa Conceitual B2C da Guivos
 status: active
-version: 1.1.2
+version: 1.2.0
 owner: Guivos
 last_updated: 2026-07-12
 public_title: Construindo a Guivos
@@ -14,6 +14,8 @@ estimated_time: 5 a 7 minutos
 ## 1. Finalidade
 
 Validar a proposta B2C da Guivos com linguagem clara, objetiva e suficiente para que as respostas representem a percepção real do participante.
+
+A primeira rodada deverá verificar problema, compreensão, aplicação prática, contribuição percebida, intenção de experimentar, interesse em participar de uma primeira experiência, barreiras e sinais iniciais de monetização.
 
 O nome interno do instrumento é `VAL-002 — Pesquisa Conceitual B2C`. O título apresentado ao público será **Construindo a Guivos**.
 
@@ -100,7 +102,7 @@ Campo complementar opcional e separado: cidade ou município.
 
 ## 5. Bloco B — Momento atual e comportamento
 
-### 4. Quando você pensa nos próximos 12 meses, qual área mais deseja melhorar?
+### 4. Pensando nos próximos 12 meses, em qual área da sua vida você mais gostaria de avançar?
 
 Escolha apenas uma.
 
@@ -108,7 +110,7 @@ Escolha apenas uma.
 - **4.2** Carreira ou trabalho.
 - **4.3** Situação financeira.
 - **4.4** Estudos e desenvolvimento de competências.
-- **4.5** Empreendedorismo ou novos projetos.
+- **4.5** Empreendedorismo ou projetos pessoais.
 - **4.6** Relacionamentos e vida social.
 - **4.7** Espiritualidade e propósito.
 - **4.8** Viagens e novas experiências.
@@ -117,192 +119,212 @@ Escolha apenas uma.
 - **4.11** Ainda estou tentando descobrir meu caminho.
 - **4.12** Outra área.
 
-### 5. O que mais dificulta seu avanço nessa direção?
+### 5. Qual resultado você mais gostaria de alcançar nessa área?
+
+Escolha apenas uma.
+
+- **5.1** Entender melhor o que devo fazer.
+- **5.2** Identificar meu próximo passo.
+- **5.3** Começar algo que venho adiando.
+- **5.4** Encontrar uma oportunidade adequada.
+- **5.5** Desenvolver uma habilidade ou capacidade.
+- **5.6** Resolver um problema específico.
+- **5.7** Tomar uma decisão importante.
+- **5.8** Criar ou manter um hábito.
+- **5.9** Encontrar pessoas ou organizações que possam contribuir.
+- **5.10** Acompanhar melhor meu progresso.
+- **5.11** Ainda não sei exatamente o que desejo alcançar.
+- **5.12** Outro resultado.
+
+### 6. O que mais dificulta seu avanço nessa direção?
 
 Escolha até três opções.
 
-- **5.1** Falta de dinheiro.
-- **5.2** Falta de tempo.
-- **5.3** Falta de informação confiável.
-- **5.4** Não saber por onde começar.
-- **5.5** Dificuldade para encontrar oportunidades adequadas.
-- **5.6** Falta de pessoas, contatos ou apoio.
-- **5.7** Falta de disciplina ou constância.
-- **5.8** Medo, insegurança ou baixa confiança.
-- **5.9** Limitações de saúde ou mobilidade.
-- **5.10** Responsabilidades familiares.
-- **5.11** Não encontro grandes dificuldades hoje.
-- **5.12** Outro motivo.
+- **6.1** Falta de dinheiro ou recursos.
+- **6.2** Falta de tempo.
+- **6.3** Falta de informação confiável.
+- **6.4** Não saber por onde começar.
+- **6.5** Dificuldade para encontrar oportunidades adequadas.
+- **6.6** Falta de pessoas, contatos ou apoio.
+- **6.7** Dificuldade para manter disciplina ou constância.
+- **6.8** Medo, insegurança ou baixa confiança.
+- **6.9** Limitações de saúde ou mobilidade.
+- **6.10** Responsabilidades familiares.
+- **6.11** Excesso de opções e dificuldade para escolher.
+- **6.12** Não encontro grandes dificuldades hoje.
+- **6.13** Outro motivo.
 
-### 6. Nos últimos 12 meses, com que frequência você sentiu que perdeu uma oportunidade importante porque não soube dela a tempo, não sabia onde procurar ou não percebeu que combinava com você?
-
-- **6.1** Nunca.
-- **6.2** Raramente.
-- **6.3** Às vezes.
-- **6.4** Frequentemente.
-- **6.5** Muito frequentemente.
-
-### 7. Quanto esforço você sente que precisa fazer para encontrar algo realmente relevante para seus objetivos?
-
-Escala de 0 a 10, em que `0` significa nenhum esforço e `10` esforço extremamente alto.
-
-### 8. Onde você costuma procurar oportunidades ou caminhos para alcançar seus objetivos?
+### 7. Hoje, como você costuma procurar caminhos ou oportunidades para avançar nessa área?
 
 Marque todas as opções aplicáveis.
 
-- **8.1** Google.
-- **8.2** Instagram.
-- **8.3** LinkedIn.
-- **8.4** YouTube.
-- **8.5** WhatsApp.
-- **8.6** Amigos ou familiares.
-- **8.7** Empresas, escolas ou outras instituições.
-- **8.8** Eventos, grupos ou comunidades.
-- **8.9** Sites e aplicativos especializados.
-- **8.10** Profissionais, mentores ou especialistas.
-- **8.11** Não procuro ativamente.
-- **8.12** Outro canal.
+- **7.1** Pesquiso no Google.
+- **7.2** Procuro em redes sociais.
+- **7.3** Assisto a vídeos, leio conteúdos ou acompanho especialistas.
+- **7.4** Pergunto a amigos, familiares ou conhecidos.
+- **7.5** Converso com profissionais, mentores ou especialistas.
+- **7.6** Utilizo sites ou aplicativos especializados.
+- **7.7** Participo de eventos, grupos ou comunidades.
+- **7.8** Procuro cursos, instituições ou organizações.
+- **7.9** Tento descobrir sozinho, sem um caminho estruturado.
+- **7.10** Não procuro ativamente no momento.
+- **7.11** Outro meio.
+
+### 8. Nos últimos 12 meses, com que frequência você sentiu que uma oportunidade importante passou despercebida ou chegou tarde demais?
+
+Considere situações em que você não soube da oportunidade, não sabia onde procurar ou não percebeu que ela poderia ser adequada para você.
+
+- **8.1** Nunca.
+- **8.2** Raramente.
+- **8.3** Algumas vezes.
+- **8.4** Frequentemente.
+- **8.5** Muito frequentemente.
+
+### 9. Quanto esforço você precisa fazer hoje para encontrar algo realmente relevante para seus objetivos?
+
+Escala de 0 a 10, em que `0` significa praticamente nenhum esforço e `10` esforço extremamente alto.
 
 ## 6. Apresentação oficial da proposta
 
 ## Antes de continuarmos...
 
-A maioria das pessoas deseja evoluir, alcançar seus objetivos e construir uma vida melhor. Mas, ao longo dessa jornada, muitas oportunidades acabam passando despercebidas simplesmente porque nunca chegaram até elas.
+A Guivos está sendo criada para ajudar pessoas a avançar em áreas como carreira, saúde, finanças, estudos, relacionamentos, espiritualidade e projetos pessoais.
 
-Agora imagine uma plataforma que acompanhe sua evolução ao longo da vida e ajude você a identificar os próximos passos e as oportunidades mais alinhadas ao momento que está vivendo e à vida que deseja construir, seja na saúde, na carreira, nas finanças, nos relacionamentos, na espiritualidade ou em qualquer outra área importante para você.
+A partir da compreensão do momento que você está vivendo e do que deseja alcançar, a Guivos poderá ajudar a organizar objetivos, identificar próximos passos e encontrar oportunidades mais adequadas para você.
 
-**Essa é a visão que inspira a Guivos.**
+Por exemplo:
 
-Ainda estamos construindo essa plataforma e queremos fazer isso ouvindo as pessoas desde o início. Cada resposta será analisada e poderá influenciar decisões sobre a construção da Guivos.
+- se você deseja evoluir na saúde, a Guivos poderá ajudar a encontrar grupos de corrida, pedal, esportes, atividades, profissionais, eventos e outras experiências relacionadas ao seu objetivo;
+- se você deseja evoluir espiritualmente, poderá encontrar grupos, movimentos, encontros, conteúdos, projetos, voluntariado e pessoas que contribuam para esse caminho.
 
-## 7. Bloco C — Compreensão e valor percebido
+O mesmo princípio poderá ser aplicado a outras áreas da vida, conectando você a cursos, vagas, projetos, viagens, serviços, benefícios, pessoas e organizações.
 
-### 9. Quanto você sente que compreendeu a proposta da Guivos?
+Em vez de apenas apresentar muitas opções, a Guivos buscará destacar o que pode fazer mais sentido para o seu momento e ajudar você a transformar oportunidades em ações concretas.
+
+**A Guivos não decidirá por você. Seu papel será ajudar você a enxergar possibilidades, escolher caminhos e acompanhar sua evolução ao longo do tempo.**
+
+Ainda estamos construindo essa plataforma e queremos entender se essa proposta realmente poderia contribuir para sua vida.
+
+## 7. Bloco C — Compreensão da proposta
+
+### 10. Quanto você sente que compreendeu a proposta da Guivos?
 
 Escala de 0 a 10, em que `0` significa não compreendi e `10` compreendi completamente.
 
-### 10. Em poucas palavras, como você explicaria a Guivos para outra pessoa?
+### 11. Em poucas palavras, como você explicaria a Guivos para outra pessoa?
 
 **Resposta aberta obrigatória.**
 
 Esta pergunta mede compreensão real e não deve ser substituída por alternativas fechadas.
 
-### 11. Quanto essa proposta parece relevante para o momento que você está vivendo?
+## 8. Bloco D — Aplicação prática e valor
+
+### 12. Pensando na área que você escolheu anteriormente, quanto a proposta da Guivos parece relevante para você?
 
 Escala de 0 a 10, em que `0` significa nada relevante e `10` extremamente relevante.
 
-### 12. Qual aspecto da proposta teria maior valor para você?
+### 13. Em qual situação você provavelmente procuraria a Guivos pela primeira vez?
 
-Escolha apenas uma opção.
+Escolha apenas uma.
 
-- **12.1** Identificar próximos passos mais claros.
-- **12.2** Descobrir oportunidades alinhadas aos meus objetivos.
-- **12.3** Organizar objetivos e acompanhar minha evolução.
-- **12.4** Encontrar pessoas, grupos ou organizações relevantes.
-- **12.5** Receber recomendações personalizadas para meu momento atual.
-- **12.6** Encontrar cursos, vagas, experiências, projetos, serviços ou outras possibilidades em um só lugar.
-- **12.7** Nenhum desses aspectos teria valor relevante para mim.
-- **12.8** Outro aspecto.
+- **13.1** Sei o que desejo alcançar, mas não sei qual deve ser meu próximo passo.
+- **13.2** Sei o que preciso fazer, mas não encontro uma oportunidade adequada.
+- **13.3** Estou vivendo uma mudança e preciso reorganizar meus caminhos.
+- **13.4** Quero descobrir possibilidades que ainda não conheço.
+- **13.5** Tenho muitas opções e preciso identificar o que faz mais sentido.
+- **13.6** Quero organizar objetivos e acompanhar meu progresso.
+- **13.7** Quero encontrar pessoas, grupos ou organizações que possam contribuir.
+- **13.8** Procuraria apenas diante de uma necessidade específica.
+- **13.9** Não consigo imaginar uma situação em que procuraria a Guivos.
+- **13.10** Outra situação.
 
-### 13. Quanto você acredita que uma plataforma como a Guivos poderia melhorar concretamente alguma área da sua vida nos próximos 12 meses?
-
-Escala de 0 a 10, em que `0` significa não melhoraria e `10` poderia melhorar de forma muito significativa.
-
-## 8. Bloco D — Confiança e controle
-
-### 14. Quanto você se sentiria confortável em explicar seu momento atual para receber orientações e oportunidades mais relevantes?
-
-Escala de 0 a 10, em que `0` significa nada confortável e `10` totalmente confortável.
-
-### 15. O que mais aumentaria sua confiança na Guivos?
+### 14. O que você mais esperaria encontrar ou conseguir fazer dentro da Guivos?
 
 Escolha até três opções.
 
-- **15.1** Explicação clara sobre como as informações seriam usadas.
-- **15.2** Controle para visualizar, corrigir e excluir informações.
-- **15.3** Possibilidade de usar a plataforma sem compartilhar dados sensíveis.
-- **15.4** Consentimento separado para cada finalidade.
-- **15.5** Segurança e proteção de dados demonstráveis.
-- **15.6** Transparência sobre recomendações patrocinadas.
-- **15.7** Parceiros, instituições ou especialistas confiáveis.
-- **15.8** Atendimento humano quando necessário.
-- **15.9** Nada aumentaria minha confiança o suficiente.
-- **15.10** Outro fator.
+- **14.1** Compreender melhor meu momento atual.
+- **14.2** Organizar meus objetivos e prioridades.
+- **14.3** Identificar próximos passos mais claros.
+- **14.4** Encontrar oportunidades relacionadas aos meus objetivos.
+- **14.5** Encontrar cursos, vagas, projetos, eventos ou experiências.
+- **14.6** Encontrar pessoas, grupos ou organizações relevantes.
+- **14.7** Receber orientações relacionadas ao meu momento.
+- **14.8** Acompanhar mudanças e avanços ao longo do tempo.
+- **14.9** Acessar conteúdos e conhecimentos úteis.
+- **14.10** Encontrar benefícios, produtos ou serviços adequados à minha realidade.
+- **14.11** Nenhuma dessas possibilidades teria valor relevante para mim.
+- **14.12** Outra possibilidade.
 
-## 9. Bloco E — Uso, recorrência e recomendação
+### 15. Qual resultado faria você considerar a Guivos realmente útil para sua vida?
 
-### 16. Qual seria sua intenção de experimentar a Guivos quando estivesse disponível?
+Escolha apenas uma.
 
-- **16.1** Certamente não usaria.
-- **16.2** Provavelmente não usaria.
-- **16.3** Talvez usasse.
-- **16.4** Provavelmente usaria.
-- **16.5** Certamente usaria.
+- **15.1** Descobrir uma oportunidade que dificilmente encontraria sozinho.
+- **15.2** Saber com mais clareza qual deve ser meu próximo passo.
+- **15.3** Economizar tempo procurando informações e possibilidades.
+- **15.4** Tomar uma decisão melhor.
+- **15.5** Começar a agir em direção a um objetivo.
+- **15.6** Desenvolver uma habilidade ou capacidade.
+- **15.7** Encontrar pessoas ou organizações que possam contribuir.
+- **15.8** Manter mais constância em um objetivo.
+- **15.9** Perceber e acompanhar meu progresso.
+- **15.10** Nenhum desses resultados seria suficientemente relevante.
+- **15.11** Outro resultado.
 
-### 17. O que mais faria você voltar à Guivos regularmente?
+### 16. Quanto você acredita que a Guivos poderia contribuir para você avançar na área escolhida nos próximos 12 meses?
 
-Escolha até três opções.
+Escala de 0 a 10, em que `0` significa não contribuiria e `10` poderia contribuir de forma muito significativa.
 
-- **17.1** Receber novas oportunidades relevantes.
-- **17.2** Acompanhar meus objetivos e próximos passos.
-- **17.3** Ver o que mudou na minha evolução.
-- **17.4** Receber orientações personalizadas.
-- **17.5** Encontrar pessoas, grupos ou organizações.
-- **17.6** Participar de desafios, projetos ou experiências.
-- **17.7** Acessar benefícios, produtos ou serviços úteis.
-- **17.8** Utilizar apenas quando tivesse uma necessidade específica.
-- **17.9** Nada me faria voltar regularmente.
-- **17.10** Outro motivo.
+## 9. Bloco E — Intenção e validação inicial
 
-### 18. Com que frequência você imagina que utilizaria a Guivos, caso ela entregasse valor real?
+### 17. Qual seria sua intenção de experimentar uma primeira versão da Guivos?
 
-- **18.1** Diariamente.
-- **18.2** Algumas vezes por semana.
-- **18.3** Semanalmente.
-- **18.4** Algumas vezes por mês.
-- **18.5** Somente quando tivesse uma necessidade específica.
-- **18.6** Provavelmente não utilizaria.
+- **17.1** Certamente não experimentaria.
+- **17.2** Provavelmente não experimentaria.
+- **17.3** Talvez experimentasse.
+- **17.4** Provavelmente experimentaria.
+- **17.5** Certamente experimentaria.
 
-### 19. De 0 a 10, qual é a probabilidade de você recomendar a ideia da Guivos a alguém, caso ela funcionasse como foi apresentada?
+### 18. Você teria interesse em participar de uma primeira experiência da Guivos e ajudar a avaliar se ela realmente gera valor?
 
-Escala de 0 a 10, em que `0` significa não recomendaria e `10` certamente recomendaria.
+- **18.1** Sim, gostaria de participar.
+- **18.2** Talvez, gostaria de conhecer melhor antes.
+- **18.3** Não tenho interesse neste momento.
 
-### 20. Você teria interesse em participar antecipadamente da construção da Guivos e receber oportunidades relevantes antes do lançamento oficial?
+Campo condicional opcional: nome e contato para quem selecionar `18.1` ou `18.2`.
 
-- **20.1** Sim, quero participar e receber acesso antecipado.
-- **20.2** Talvez, quero conhecer melhor antes de decidir.
-- **20.3** Não tenho interesse neste momento.
+## 10. Bloco F — Barreiras e monetização
 
-Campo condicional opcional: nome e contato para quem selecionar `20.1` ou `20.2`.
+### 19. Qual seria hoje a principal razão para você não experimentar a Guivos?
 
-## 10. Bloco F — Monetização e barreiras
+Escolha apenas uma.
 
-### 21. Você consideraria pagar por uma versão com maior profundidade, personalização, acompanhamento e benefícios?
+- **19.1** Não percebo uma necessidade real.
+- **19.2** A proposta ainda parece genérica ou difícil de entender.
+- **19.3** Não acredito que as oportunidades seriam realmente adequadas para mim.
+- **19.4** Não acredito que a Guivos conseguiria compreender bem meu momento.
+- **19.5** Teria preocupação com o uso das minhas informações.
+- **19.6** Já utilizo outras soluções que considero suficientes.
+- **19.7** Não teria tempo ou interesse para utilizar.
+- **19.8** Não gostaria de acompanhar objetivos ou informações pessoais em uma plataforma.
+- **19.9** O preço poderia se tornar uma barreira.
+- **19.10** Eu experimentaria; não identifico hoje uma barreira principal.
+- **19.11** Outro motivo.
 
-- **21.1** Não pagaria.
-- **21.2** Talvez, dependendo dos resultados entregues.
-- **21.3** Até R$ 19,90 por mês.
-- **21.4** De R$ 20,00 a R$ 39,90 por mês.
-- **21.5** De R$ 40,00 a R$ 69,90 por mês.
-- **21.6** Acima de R$ 70,00 por mês.
-- **21.7** Prefiro não responder.
+### 20. Caso a Guivos demonstrasse resultados reais para você, consideraria pagar por recursos adicionais?
 
-### 22. Qual seria a principal razão para você não utilizar a Guivos?
+- **20.1** Não consideraria pagar.
+- **20.2** Talvez, dependendo dos resultados entregues.
+- **20.3** Sim, até R$ 19,90 por mês.
+- **20.4** Sim, entre R$ 20,00 e R$ 39,90 por mês.
+- **20.5** Sim, entre R$ 40,00 e R$ 69,90 por mês.
+- **20.6** Sim, acima de R$ 70,00 por mês.
+- **20.7** Ainda é muito cedo para avaliar.
+- **20.8** Prefiro não responder.
 
-Escolha apenas uma opção.
+A monetização é diagnóstico inicial e não integra o IGV nem funciona como gate isolado nesta rodada.
 
-- **22.1** Não vejo necessidade.
-- **22.2** Não confiaria em compartilhar informações.
-- **22.3** A proposta parece genérica ou difícil de entender.
-- **22.4** Já utilizo outras soluções suficientes.
-- **22.5** Não acredito que as recomendações seriam realmente relevantes.
-- **22.6** Não teria tempo ou interesse para usar.
-- **22.7** Não gosto de plataformas que acompanham informações pessoais.
-- **22.8** O preço poderia ser uma barreira.
-- **22.9** Eu utilizaria; não vejo hoje uma barreira principal.
-- **22.10** Outro motivo.
-
-### 23. Existe algo essencial que deveríamos saber antes de construir a Guivos?
+### 21. Existe algo essencial que deveríamos compreender antes de construir a Guivos?
 
 **Resposta aberta opcional.**
 
@@ -318,11 +340,11 @@ Esperamos que, no futuro, a Guivos possa contribuir para que mais pessoas encont
 
 ## 12. Configuração de aplicação
 
-- perguntas obrigatórias: `1` a `22`, exceto cidade/município, contato e campos “outro”;
-- pergunta `23`: opcional;
-- únicas perguntas abertas centrais: `10` e `23`;
+- perguntas obrigatórias: `1` a `20`, exceto cidade ou município, contato e campos “outro”;
+- pergunta `21`: opcional;
+- únicas perguntas abertas centrais: `11` e `21`;
 - pergunta `2`: lista suspensa de escolha única;
-- contato: opcional e separado da análise dos KPIs;
+- contato: opcional, condicional e separado da análise dos KPIs;
 - ordem das perguntas: fixa;
 - não explicar a Guivos além do texto oficial durante aplicação autoadministrada;
 - registrar a duração média e a taxa de abandono no pré-teste;
@@ -331,4 +353,10 @@ Esperamos que, no futuro, a Guivos possa contribuir para que mais pessoas encont
 
 ## 13. Critério de qualidade do instrumento
 
-Cada pergunta deve influenciar uma decisão futura de posicionamento, produto, confiança, adoção, recorrência, monetização ou segmentação. Perguntas sem uso decisório comprovado deverão ser removidas.
+Cada pergunta deve influenciar uma decisão futura de posicionamento, problema, proposta de valor, aplicação prática, contribuição, adoção, monetização ou segmentação.
+
+A primeira rodada não deverá exigir que o participante estime confiança operacional, frequência de uso, retenção ou recomendação de um produto que ainda não experimentou. Perguntas sem uso decisório comprovado deverão ser removidas.
+
+## 14. Impacto sobre comparabilidade
+
+A versão `1.2.0` altera a numeração e a lógica do instrumento. Resultados coletados em versões anteriores não deverão ser combinados diretamente com esta versão sem mapeamento explícito.
