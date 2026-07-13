@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.4.0
+version: 5.5.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
 - **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Extensão normativa ativa:** `PAS-001-CV-STATE-001 1.0.0`.
+- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0` e `PAS-001-CV-UPDATE-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -51,17 +51,26 @@ O `PAS-001 0.5.0` consolidou:
 A extensão normativa `PAS-001-CV-STATE-001 1.0.0` consolidou:
 
 - estrutura comum de estado;
-- estados funcionais de Identidade;
-- estados funcionais de Momento;
-- estados funcionais de Direção;
-- estados funcionais de Capacidades;
-- estados funcionais de Restrições;
-- estados funcionais de Preferências;
-- estados funcionais de Relacionamentos;
-- estados funcionais de Evolução;
+- estados funcionais das oito dimensões;
 - transições e impactos controlados entre dimensões.
 
-O próximo bloco definirá as regras detalhadas de atualização e envelhecimento.
+A extensão normativa `PAS-001-CV-UPDATE-001 1.0.0` consolidou:
+
+- elemento contextual como unidade mínima de atualização;
+- gatilhos e fluxo funcional de atualização;
+- resultados possíveis da avaliação;
+- confirmação proporcional ao impacto;
+- regras conforme origem e evidência;
+- classes temporais e estados de envelhecimento;
+- horizontes e revisões por dimensão;
+- prevenção de fadiga de confirmação;
+- atualizações silenciosas permitidas e proibidas;
+- efeitos das permissões;
+- propagação, reprocessamento e atualizações retroativas;
+- distinção entre correção e mudança real;
+- eventos funcionais relacionados.
+
+O próximo bloco definirá a resolução detalhada de conflitos entre informações, interpretações, fontes e temporalidades.
 
 ## Reconciliação de continuidade
 
@@ -73,14 +82,14 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado e avançado para atualização e envelhecimento do Contexto Vivo.
+- o ponto de retomada do Product Engineering foi preservado e avançado para resolução de conflitos do Contexto Vivo.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 65% |
+| 02 — Contexto Vivo | In progress | 75% |
 | 03 — Objetivos | Planned | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
@@ -125,11 +134,10 @@ Retomar na **Capacidade 02 — Contexto Vivo**.
 
 Próxima entrega:
 
-1. regras detalhadas de atualização e envelhecimento;
-2. resolução detalhada de conflitos;
-3. comportamentos da interface `Meu Contexto Hoje`;
-4. contratos detalhados dos eventos;
-5. integrações;
-6. KPIs;
-7. cenários ideal, alternativo e limite;
-8. contrato da capacidade.
+1. resolução detalhada de conflitos;
+2. comportamentos da interface `Meu Contexto Hoje`;
+3. contratos detalhados dos eventos;
+4. integrações;
+5. KPIs;
+6. cenários ideal, alternativo e limite;
+7. contrato da capacidade.
