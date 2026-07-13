@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.2 — Living Context Update and Aging Rules
+
+- Criação de `PAS-001-CV-UPDATE-001 — Regras de Atualização e Envelhecimento do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey` e continuidade do `PAS-001-CV-STATE-001`.
+- Definição do elemento contextual como unidade mínima de atualização.
+- Consolidação dos gatilhos, fluxo funcional e resultados possíveis de uma avaliação de atualização.
+- Formalização da confirmação proporcional ao impacto e das regras conforme origem, inferência, integração e evidências convergentes.
+- Definição das classes temporais, estados de atualidade, horizontes de revisão e regras de envelhecimento por dimensão.
+- Registro das regras de prevenção de fadiga, atualizações silenciosas permitidas e proibidas, revogação e limitação de finalidade.
+- Consolidação da propagação controlada, reprocessamento de decisões, atualizações retroativas e distinção entre correção e mudança real.
+- Atualização da Arquitetura de Produtos para `1.2.2` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `5.5.0`, do Knowledge Board para `5.6.0` e da Matriz de Consolidação Canônica para `1.2.3`.
+- Atualização do README e da página inicial do GKR.
+- Definição da resolução detalhada de conflitos como próximo ponto exato de retomada.
+
 ## 0.30.1 — Living Context Dimension States
 
 - Criação de `PAS-001-CV-STATE-001 — Estados Funcionais das Dimensões do Contexto Vivo`, versão `1.0.0`.
