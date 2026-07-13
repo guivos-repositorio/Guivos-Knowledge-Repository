@@ -10,7 +10,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - sincronização `GE2-SYNC-007` concluída;
 - revisão `AR-001 0.5.0` concluída;
 - `PAS-001 — Guivos Journey 0.5.0` ativo;
-- extensão normativa `PAS-001-CV-STATE-001 1.0.0` ativa;
+- extensões normativas `PAS-001-CV-STATE-001 1.0.0` e `PAS-001-CV-UPDATE-001 1.0.0` ativas;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -21,13 +21,14 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 Completar funcionalmente a **Capacidade 02 — Contexto Vivo**.
 
-Responsabilidades, limites, fronteiras, entradas, saídas, eventos funcionais iniciais e estados das oito dimensões já estão consolidados.
+Responsabilidades, limites, fronteiras, entradas, saídas, eventos funcionais iniciais, estados das oito dimensões e regras detalhadas de atualização e envelhecimento já estão consolidados.
 
 ## Acesso rápido
 
 - [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)
 - [Estados Funcionais do Contexto Vivo](product-architecture/pas-001-contexto-vivo-estados-dimensionais.md)
+- [Atualização e Envelhecimento do Contexto Vivo](product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -53,4 +54,4 @@ Responsabilidades, limites, fronteiras, entradas, saídas, eventos funcionais in
 
 ## Ponto de retomada
 
-Retomar na Capacidade 02, definindo as regras detalhadas de atualização e envelhecimento do Contexto Vivo.
+Retomar na Capacidade 02, definindo a resolução detalhada de conflitos entre informações, interpretações, fontes e temporalidades.
