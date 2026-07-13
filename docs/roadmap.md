@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.3.0
+version: 5.4.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -18,6 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
 - **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
+- **Extensão normativa ativa:** `PAS-001-CV-STATE-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,15 +30,15 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O trabalho permanece no `PAS-001 — Guivos Journey`.
+O trabalho permanece na `Capacidade 02 — Contexto Vivo` do `PAS-001 — Guivos Journey`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
 Novos frameworks estruturais não serão desenvolvidos enquanto os produtos oficiais não possuírem especificação funcional suficiente.
 
-## Avanço do PAS-001 0.5.0
+## Avanço da Capacidade 02
 
-A Capacidade 02 consolidou:
+O `PAS-001 0.5.0` consolidou:
 
 - responsabilidades e limites;
 - fronteiras funcionais entre Journey, Intelligence, Platform e capacidades consumidoras;
@@ -47,7 +48,20 @@ A Capacidade 02 consolidou:
 - eventos funcionais iniciais;
 - contrato funcional das saídas.
 
-O próximo bloco definirá os estados funcionais próprios de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
+A extensão normativa `PAS-001-CV-STATE-001 1.0.0` consolidou:
+
+- estrutura comum de estado;
+- estados funcionais de Identidade;
+- estados funcionais de Momento;
+- estados funcionais de Direção;
+- estados funcionais de Capacidades;
+- estados funcionais de Restrições;
+- estados funcionais de Preferências;
+- estados funcionais de Relacionamentos;
+- estados funcionais de Evolução;
+- transições e impactos controlados entre dimensões.
+
+O próximo bloco definirá as regras detalhadas de atualização e envelhecimento.
 
 ## Reconciliação de continuidade
 
@@ -59,14 +73,14 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado e posteriormente avançado no `PAS-001 0.5.0`.
+- o ponto de retomada do Product Engineering foi preservado e avançado para atualização e envelhecimento do Contexto Vivo.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 55% |
+| 02 — Contexto Vivo | In progress | 65% |
 | 03 — Objetivos | Planned | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
@@ -111,12 +125,11 @@ Retomar na **Capacidade 02 — Contexto Vivo**.
 
 Próxima entrega:
 
-1. estados funcionais de cada dimensão;
-2. regras detalhadas de atualização e envelhecimento;
-3. resolução detalhada de conflitos;
-4. comportamentos da interface `Meu Contexto Hoje`;
-5. contratos detalhados dos eventos;
-6. integrações;
-7. KPIs;
-8. cenários ideal, alternativo e limite;
-9. contrato da capacidade.
+1. regras detalhadas de atualização e envelhecimento;
+2. resolução detalhada de conflitos;
+3. comportamentos da interface `Meu Contexto Hoje`;
+4. contratos detalhados dos eventos;
+5. integrações;
+6. KPIs;
+7. cenários ideal, alternativo e limite;
+8. contrato da capacidade.
