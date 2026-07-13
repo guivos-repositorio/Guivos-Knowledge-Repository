@@ -9,7 +9,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Frente operacional:** Product Engineering
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
-- **Especificação ativa:** PAS-001 — Guivos Journey 0.4.2
+- **Especificação ativa:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidade ativa:** 02 — Contexto Vivo
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
@@ -23,19 +23,29 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 
 A `GE2-SYNC-007 — Chat Continuity and Repository Reconciliation` confirmou que as decisões maduras das últimas conversas já estavam incorporadas ao GKR, corrigiu divergências editoriais demonstráveis e preservou o ponto exato de retomada do Product Engineering.
 
+## Avanço atual do Contexto Vivo
+
+O `PAS-001 0.5.0` consolidou:
+
+- responsabilidades e limites;
+- fronteiras entre Journey, Intelligence, Platform e capacidades consumidoras;
+- categorias e requisitos mínimos de entrada;
+- regras de admissão;
+- saídas funcionais;
+- eventos funcionais iniciais;
+- contrato funcional das saídas.
+
 ## Ponto exato de retomada
 
 Retomar na `Capacidade 02 — Contexto Vivo` do `PAS-001 — Guivos Journey`.
 
 Próxima entrega:
 
-- responsabilidades e limites;
-- entradas e saídas;
-- estados por dimensão;
-- regras de atualização e envelhecimento;
+- estados funcionais de cada dimensão;
+- regras detalhadas de atualização e envelhecimento;
 - resolução de conflitos;
-- interface `Meu Contexto Hoje`;
-- eventos produzidos;
+- comportamentos da interface `Meu Contexto Hoje`;
+- contratos detalhados dos eventos;
 - integrações;
 - KPIs;
 - cenários ideal, alternativo e limite;
