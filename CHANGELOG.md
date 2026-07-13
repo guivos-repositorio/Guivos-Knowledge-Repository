@@ -2,6 +2,19 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.29.4 — Opportunity Friction Refinement
+
+- Atualização do `VAL-002 — Pesquisa Conceitual B2C` para `1.2.1`.
+- Substituição da antiga pergunta sobre oportunidade despercebida por uma pergunta observável sobre descoberta tardia.
+- Inclusão de nova pergunta sobre busca sem encontro de oportunidade adequada ao momento do participante.
+- Explicitação das categorias `não procurei` e `não me recordo`, sem interpretá-las como ausência do problema.
+- Ampliação do instrumento de 21 para 22 perguntas principais e renumeração das perguntas posteriores.
+- Criação do `IFO — Índice de Fricção de Oportunidades`, composto por descoberta tardia (`Q8`) e lacuna de adequação (`Q9`).
+- Atualização do `VAL-001`, `VAL-004`, `VAL-006` e `VAL-007` para `1.2.1`.
+- Atualização do `VAL-003` para `1.1.1` e do `VAL-008` para `1.0.2`.
+- Atualização das fontes dos KPIs, pesos do IGV, gates, regras de decisão, matriz diagnóstica e critérios de comparabilidade.
+- Atualização da visão geral do Guivos Market Validation System e do `STATUS.md` para a baseline `1.2.1`.
+
 ## 0.29.3 — B2C Concept Validation Baseline 1.2
 
 - Atualização do `VAL-001 — Framework de Validação de Mercado` para `1.2.0`.
