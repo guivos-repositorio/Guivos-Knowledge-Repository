@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.2.0
+version: 5.3.0
 owner: Guivos
-last_updated: 2026-07-12
+last_updated: 2026-07-13
 ---
 
 # Roadmap Arquitetural
@@ -17,7 +17,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
-- **Especificação ativa:** `PAS-001 — Guivos Journey 0.4.2`.
+- **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -35,6 +35,20 @@ O trabalho permanece no `PAS-001 — Guivos Journey`.
 
 Novos frameworks estruturais não serão desenvolvidos enquanto os produtos oficiais não possuírem especificação funcional suficiente.
 
+## Avanço do PAS-001 0.5.0
+
+A Capacidade 02 consolidou:
+
+- responsabilidades e limites;
+- fronteiras funcionais entre Journey, Intelligence, Platform e capacidades consumidoras;
+- categorias de entrada;
+- requisitos mínimos e regras de admissão;
+- saídas funcionais;
+- eventos funcionais iniciais;
+- contrato funcional das saídas.
+
+O próximo bloco definirá os estados funcionais próprios de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
+
 ## Reconciliação de continuidade
 
 A `GE2-SYNC-007` concluiu a leitura do estado atual do repositório e a comparação com o extrato final da conversa anterior.
@@ -45,14 +59,14 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado.
+- o ponto de retomada do Product Engineering foi preservado e posteriormente avançado no `PAS-001 0.5.0`.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 35% |
+| 02 — Contexto Vivo | In progress | 55% |
 | 03 — Objetivos | Planned | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
@@ -97,14 +111,12 @@ Retomar na **Capacidade 02 — Contexto Vivo**.
 
 Próxima entrega:
 
-1. responsabilidades e limites;
-2. entradas e saídas;
-3. estados por dimensão;
-4. regras de atualização e envelhecimento;
-5. resolução de conflitos;
-6. interface `Meu Contexto Hoje`;
-7. eventos produzidos;
-8. integrações;
-9. KPIs;
-10. cenários ideal, alternativo e limite;
-11. contrato da capacidade.
+1. estados funcionais de cada dimensão;
+2. regras detalhadas de atualização e envelhecimento;
+3. resolução detalhada de conflitos;
+4. comportamentos da interface `Meu Contexto Hoje`;
+5. contratos detalhados dos eventos;
+6. integrações;
+7. KPIs;
+8. cenários ideal, alternativo e limite;
+9. contrato da capacidade.
