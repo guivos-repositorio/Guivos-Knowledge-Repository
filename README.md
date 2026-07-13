@@ -10,6 +10,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação ativa:** PAS-001 — Guivos Journey 0.5.0
+- **Extensão normativa ativa:** PAS-001-CV-STATE-001 1.0.0
 - **Capacidade ativa:** 02 — Contexto Vivo
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
@@ -25,23 +26,27 @@ A `GE2-SYNC-007 — Chat Continuity and Repository Reconciliation` confirmou que
 
 ## Avanço atual do Contexto Vivo
 
-O `PAS-001 0.5.0` consolidou:
+O `PAS-001 0.5.0` consolidou responsabilidades, limites, fronteiras, entradas, regras de admissão, saídas e eventos funcionais iniciais.
 
-- responsabilidades e limites;
-- fronteiras entre Journey, Intelligence, Platform e capacidades consumidoras;
-- categorias e requisitos mínimos de entrada;
-- regras de admissão;
-- saídas funcionais;
-- eventos funcionais iniciais;
-- contrato funcional das saídas.
+A extensão normativa `PAS-001-CV-STATE-001 1.0.0` consolidou:
+
+- estrutura comum de estado por cobertura, confiança, temporalidade, condição funcional e necessidade de ação;
+- estados funcionais de Identidade;
+- estados funcionais de Momento;
+- estados funcionais de Direção;
+- estados funcionais de Capacidades;
+- estados funcionais de Restrições;
+- estados funcionais de Preferências;
+- estados funcionais de Relacionamentos;
+- estados funcionais de Evolução;
+- transições e impactos controlados entre dimensões.
 
 ## Ponto exato de retomada
 
-Retomar na `Capacidade 02 — Contexto Vivo` do `PAS-001 — Guivos Journey`.
+Retomar na `Capacidade 02 — Contexto Vivo`.
 
 Próxima entrega:
 
-- estados funcionais de cada dimensão;
 - regras detalhadas de atualização e envelhecimento;
 - resolução de conflitos;
 - comportamentos da interface `Meu Contexto Hoje`;
@@ -73,6 +78,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 
 - [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
+- [Estados Funcionais do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-estados-dimensionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
