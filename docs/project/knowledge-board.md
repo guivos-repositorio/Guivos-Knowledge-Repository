@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 5.4.0
+version: 5.5.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -22,6 +22,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | GE2-SYNC-006 | Completed 1.0.0 | Sincronizar capacidades de contexto e Guia Oficial |
 | AR-001 | Completed 0.5.0 | Revisar consistência, atualização e diagramas |
 | PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
+| PAS-001-CV-STATE-001 | Active 1.0.0 | Definir estados funcionais das oito dimensões do Contexto Vivo |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -35,6 +36,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação ativa | `PAS-001 — Guivos Journey 0.5.0` |
+| Extensão normativa | `PAS-001-CV-STATE-001 1.0.0` |
 | Capacidade ativa | `02 — Contexto Vivo` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
@@ -42,14 +44,14 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Documento público | `GOG-001 4.2.1` |
 | Sincronização vigente | `GE2-SYNC-007 1.0.0` |
 | Revisão AR-001 | `Completed 0.5.0` |
-| Foco imediato | Definir estados funcionais das oito dimensões do Contexto Vivo |
+| Foco imediato | Definir regras detalhadas de atualização e envelhecimento do Contexto Vivo |
 
 ## Capacidades do Journey
 
 | Capacidade | Estado | Observação |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
-| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, responsabilidades, limites, entradas, saídas e eventos iniciais registrados |
+| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, responsabilidades, limites, entradas, saídas, eventos e estados dimensionais registrados |
 | 03 — Objetivos | Planned | Próxima após Capacidade 02 |
 | 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e mudança registrada |
 | 05 — Próximos Passos | Planned | — |
@@ -69,10 +71,19 @@ Consolidados no `PAS-001 0.5.0`:
 - eventos funcionais iniciais;
 - contrato funcional das saídas.
 
+Consolidados no `PAS-001-CV-STATE-001 1.0.0`:
+
+- estrutura comum de estado;
+- estados funcionais das oito dimensões;
+- estados resumidos explicáveis;
+- transições não lineares;
+- impactos controlados entre dimensões;
+- regras gerais de representação dimensional.
+
 Próximo bloco:
 
-- estados funcionais por dimensão;
-- regras de atualização e envelhecimento.
+- regras detalhadas de atualização e envelhecimento;
+- resolução detalhada de conflitos.
 
 ## Reconciliação GE2-SYNC-007
 
@@ -83,13 +94,14 @@ A reconciliação confirmou:
 - o Guivos Market Validation System já estava incorporado e posteriormente refinado;
 - versões e nomenclaturas residuais exigiam apenas correção editorial;
 - formulário e planilha automática permanecem entregáveis operacionais futuros;
-- a Capacidade 02 continua sendo a frente oficial e avançou para `PAS-001 0.5.0`.
+- a Capacidade 02 continua sendo a frente oficial.
 
 ## Conceitos internos preservados
 
 | Conceito | Estado |
 |---|---|
 | Contexto Vivo | Approved for PAS / In progress |
+| Estados Dimensionais do Contexto Vivo | Normative 1.0.0 |
 | Interpretação do Contexto | Approved for PAS |
 | Eventos de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
@@ -104,10 +116,11 @@ A reconciliação confirmou:
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 5.3.0 |
-| Knowledge Board | 5.4.0 |
+| Roadmap | 5.4.0 |
+| Knowledge Board | 5.5.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
+| PAS-001-CV-STATE-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -118,4 +131,4 @@ A reconciliação confirmou:
 
 ## Próxima atividade
 
-Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelos estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
+Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelas regras detalhadas de atualização e envelhecimento.
