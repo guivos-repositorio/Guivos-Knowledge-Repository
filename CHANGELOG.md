@@ -2,6 +2,19 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.1 — Living Context Dimension States
+
+- Criação de `PAS-001-CV-STATE-001 — Estados Funcionais das Dimensões do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição da estrutura comum de estado por cobertura, confiança, temporalidade, condição funcional e necessidade de ação.
+- Consolidação dos estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
+- Definição de estados resumidos explicáveis, transições não lineares e impactos controlados entre dimensões.
+- Atualização da Arquitetura de Produtos para `1.2.1` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `5.4.0` e do Knowledge Board para `5.5.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.2.2`.
+- Atualização do README e da página inicial do GKR.
+- Definição das regras detalhadas de atualização e envelhecimento como próximo ponto exato de retomada.
+
 ## 0.30.0 — Contexto Vivo Functional Contracts
 
 - Atualização do `PAS-001 — Guivos Journey` para `0.5.0`.
