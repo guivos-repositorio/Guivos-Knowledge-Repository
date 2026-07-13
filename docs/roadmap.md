@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.5.0
+version: 5.6.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
 - **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0` e `PAS-001-CV-UPDATE-001 1.0.0`.
+- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0` e `PAS-001-CV-CONFLICT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -70,7 +70,18 @@ A extensão normativa `PAS-001-CV-UPDATE-001 1.0.0` consolidou:
 - distinção entre correção e mudança real;
 - eventos funcionais relacionados.
 
-O próximo bloco definirá a resolução detalhada de conflitos entre informações, interpretações, fontes e temporalidades.
+A extensão normativa `PAS-001-CV-CONFLICT-001 1.0.0` consolidou:
+
+- princípios, tipos e estados funcionais de conflito;
+- registro próprio e fluxo de resolução;
+- critérios de comparação e ordem funcional de consideração;
+- resultados possíveis e participação do participante;
+- conflitos entre declarações, integrações, organizações, comportamentos, dimensões, permissões e temporalidades;
+- impactos sobre capacidades consumidoras e decisões existentes;
+- resolução automática permitida e proibida;
+- explicabilidade, reabertura e critérios de resolução confiável.
+
+O próximo bloco definirá os comportamentos funcionais da interface `Meu Contexto Hoje`.
 
 ## Reconciliação de continuidade
 
@@ -82,14 +93,14 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado e avançado para resolução de conflitos do Contexto Vivo.
+- o ponto de retomada do Product Engineering foi preservado e avançado para os comportamentos da interface `Meu Contexto Hoje`.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 75% |
+| 02 — Contexto Vivo | In progress | 82% |
 | 03 — Objetivos | Planned | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
@@ -134,10 +145,9 @@ Retomar na **Capacidade 02 — Contexto Vivo**.
 
 Próxima entrega:
 
-1. resolução detalhada de conflitos;
-2. comportamentos da interface `Meu Contexto Hoje`;
-3. contratos detalhados dos eventos;
-4. integrações;
-5. KPIs;
-6. cenários ideal, alternativo e limite;
-7. contrato da capacidade.
+1. comportamentos funcionais da interface `Meu Contexto Hoje`;
+2. contratos detalhados dos eventos;
+3. integrações;
+4. KPIs;
+5. cenários ideal, alternativo e limite;
+6. contrato da capacidade.
