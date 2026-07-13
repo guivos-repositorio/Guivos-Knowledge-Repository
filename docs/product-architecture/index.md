@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-13
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -86,6 +86,12 @@ A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
 | Guivos Media | Service Layer | Produzir e distribuir conteúdo editorial e institucional | Consolidado |
 | Guivos Ads | Service Layer | Operar publicidade e mídia patrocinada | Consolidado |
 
+## Especificação vigente do Journey
+
+O `PAS-001 — Guivos Journey` é a especificação principal da Experience Layer.
+
+A extensão normativa `PAS-001-CV-STATE-001` integra a Capacidade 02 e define os estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
+
 ## Regras arquiteturais
 
 1. Nenhum componente representa sozinho todo o Ecossistema Guivos.
@@ -102,6 +108,7 @@ A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
 
 - [GLPA-001 — Guivos Layered Product Architecture](layered-product-architecture.md)
 - [PAS-001 — Guivos Journey](pas-001-guivos-journey.md)
+- [PAS-001-CV-STATE-001 — Estados Funcionais do Contexto Vivo](pas-001-contexto-vivo-estados-dimensionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
