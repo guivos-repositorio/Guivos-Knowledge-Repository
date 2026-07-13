@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 5.5.0
+version: 5.6.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -23,6 +23,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | AR-001 | Completed 0.5.0 | Revisar consistência, atualização e diagramas |
 | PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
 | PAS-001-CV-STATE-001 | Active 1.0.0 | Definir estados funcionais das oito dimensões do Contexto Vivo |
+| PAS-001-CV-UPDATE-001 | Active 1.0.0 | Definir atualização, validade temporal e envelhecimento do Contexto Vivo |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -36,7 +37,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação ativa | `PAS-001 — Guivos Journey 0.5.0` |
-| Extensão normativa | `PAS-001-CV-STATE-001 1.0.0` |
+| Extensões normativas | `PAS-001-CV-STATE-001 1.0.0` e `PAS-001-CV-UPDATE-001 1.0.0` |
 | Capacidade ativa | `02 — Contexto Vivo` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
@@ -44,14 +45,14 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Documento público | `GOG-001 4.2.1` |
 | Sincronização vigente | `GE2-SYNC-007 1.0.0` |
 | Revisão AR-001 | `Completed 0.5.0` |
-| Foco imediato | Definir regras detalhadas de atualização e envelhecimento do Contexto Vivo |
+| Foco imediato | Resolver conflitos entre informações, interpretações, fontes e temporalidades |
 
 ## Capacidades do Journey
 
 | Capacidade | Estado | Observação |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
-| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, responsabilidades, limites, entradas, saídas, eventos e estados dimensionais registrados |
+| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, responsabilidades, limites, entradas, saídas, eventos, estados e regras temporais registrados |
 | 03 — Objetivos | Planned | Próxima após Capacidade 02 |
 | 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e mudança registrada |
 | 05 — Próximos Passos | Planned | — |
@@ -77,13 +78,25 @@ Consolidados no `PAS-001-CV-STATE-001 1.0.0`:
 - estados funcionais das oito dimensões;
 - estados resumidos explicáveis;
 - transições não lineares;
-- impactos controlados entre dimensões;
-- regras gerais de representação dimensional.
+- impactos controlados entre dimensões.
+
+Consolidados no `PAS-001-CV-UPDATE-001 1.0.0`:
+
+- atualização seletiva por elemento contextual;
+- gatilhos, resultados e fluxo funcional;
+- confirmação proporcional e regras conforme origem;
+- classes temporais e estados de envelhecimento;
+- horizontes e revisões por dimensão;
+- fadiga de confirmação;
+- atualizações silenciosas permitidas e proibidas;
+- permissões, propagação e reprocessamento;
+- atualizações retroativas e distinção entre correção e mudança real;
+- eventos funcionais relacionados.
 
 Próximo bloco:
 
-- regras detalhadas de atualização e envelhecimento;
-- resolução detalhada de conflitos.
+- resolução detalhada de conflitos;
+- comportamentos da interface `Meu Contexto Hoje`.
 
 ## Reconciliação GE2-SYNC-007
 
@@ -102,6 +115,7 @@ A reconciliação confirmou:
 |---|---|
 | Contexto Vivo | Approved for PAS / In progress |
 | Estados Dimensionais do Contexto Vivo | Normative 1.0.0 |
+| Atualização e Envelhecimento do Contexto Vivo | Normative 1.0.0 |
 | Interpretação do Contexto | Approved for PAS |
 | Eventos de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
@@ -116,11 +130,12 @@ A reconciliação confirmou:
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 5.4.0 |
-| Knowledge Board | 5.5.0 |
+| Roadmap | 5.5.0 |
+| Knowledge Board | 5.6.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-STATE-001 | Active 1.0.0 |
+| PAS-001-CV-UPDATE-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -131,4 +146,4 @@ A reconciliação confirmou:
 
 ## Próxima atividade
 
-Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelas regras detalhadas de atualização e envelhecimento.
+Completar a **Capacidade 02 — Contexto Vivo**, iniciando pela resolução detalhada de conflitos entre informações, interpretações, fontes e temporalidades.
