@@ -2,7 +2,7 @@
 id: VAL-001
 title: Framework de Validação de Mercado da Guivos
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
 last_updated: 2026-07-12
 related:
@@ -45,17 +45,19 @@ A primeira rodada valida exclusivamente a proposta B2C da Guivos.
 
 Serão avaliados:
 
-1. existência e intensidade do problema;
-2. clareza da proposta;
-3. relevância para a área da vida escolhida;
-4. situação prática de primeiro uso;
-5. expectativas sobre o que encontrar ou fazer na plataforma;
-6. resultado concreto considerado valioso;
-7. contribuição percebida para os próximos 12 meses;
-8. intenção de experimentar uma primeira versão;
-9. interesse em participar de uma primeira experiência;
-10. sinais iniciais de monetização;
-11. barreiras e diferenças entre segmentos.
+1. descoberta tardia de oportunidades potencialmente úteis;
+2. ausência de oportunidades adequadas ao momento do participante;
+3. esforço atual de busca;
+4. clareza da proposta;
+5. relevância para a área da vida escolhida;
+6. situação prática de primeiro uso;
+7. expectativas sobre o que encontrar ou fazer na plataforma;
+8. resultado concreto considerado valioso;
+9. contribuição percebida para os próximos 12 meses;
+10. intenção de experimentar uma primeira versão;
+11. interesse em participar de uma primeira experiência;
+12. sinais iniciais de monetização;
+13. barreiras e diferenças entre segmentos.
 
 Esta rodada não valida produto em uso, confiança operacional comprovada, recorrência, retenção, receita real, usabilidade, arquitetura técnica ou adequação jurídica definitiva.
 
@@ -63,14 +65,15 @@ Esta rodada não valida produto em uso, confiança operacional comprovada, recor
 
 | ID | Hipótese |
 |---|---|
-| H1 | Pessoas perdem oportunidades relevantes porque elas estão fragmentadas, chegam fora do momento adequado ou não são reconhecidas como úteis. |
-| H2 | Uma plataforma que compreenda o momento atual e ajude a identificar próximos passos e oportunidades contextualizadas gera valor percebido. |
-| H3 | A proposta pode ser compreendida sem explicação longa, técnica ou promocional. |
-| H4 | As pessoas conseguem reconhecer situações concretas em que procurariam a Guivos pela primeira vez. |
-| H5 | Próximos Passos, oportunidades contextualizadas e acompanhamento da evolução são percebidos como mais valiosos que listas ou catálogos genéricos. |
-| H6 | A Guivos apresenta potencial de contribuição concreta para uma área prioritária da vida do participante. |
-| H7 | Uma parcela relevante pretende experimentar uma primeira versão e aceita participar de uma experiência inicial. |
-| H8 | Existe potencial de monetização condicionado à demonstração de resultados reais, sem bloquear o valor essencial da experiência gratuita. |
+| H1 | Pessoas descobrem tarde demais oportunidades que poderiam contribuir para seus objetivos. |
+| H2 | Pessoas procuram possibilidades, mas frequentemente não encontram oportunidades compatíveis com seu momento, disponibilidade, localização, recursos ou necessidades. |
+| H3 | Uma plataforma que compreenda o momento atual e ajude a identificar próximos passos e oportunidades contextualizadas gera valor percebido. |
+| H4 | A proposta pode ser compreendida sem explicação longa, técnica ou promocional. |
+| H5 | As pessoas conseguem reconhecer situações concretas em que procurariam a Guivos pela primeira vez. |
+| H6 | Próximos Passos, oportunidades contextualizadas e acompanhamento da evolução são percebidos como mais valiosos que listas ou catálogos genéricos. |
+| H7 | A Guivos apresenta potencial de contribuição concreta para uma área prioritária da vida do participante. |
+| H8 | Uma parcela relevante pretende experimentar uma primeira versão e aceita participar de uma experiência inicial. |
+| H9 | Existe potencial de monetização condicionado à demonstração de resultados reais, sem bloquear o valor essencial da experiência gratuita. |
 
 ## 7. Método em quatro etapas
 
@@ -125,8 +128,8 @@ O instrumento oficial da primeira rodada é:
 - **Documento interno:** `VAL-002 — Pesquisa Conceitual B2C da Guivos`;
 - **Título público:** `Construindo a Guivos`;
 - **Tempo estimado:** 5 a 7 minutos;
-- **Perguntas principais:** 21;
-- **Perguntas abertas centrais:** 2 (`Q11` obrigatória e `Q21` opcional);
+- **Perguntas principais:** 22;
+- **Perguntas abertas centrais:** 2 (`Q12` obrigatória e `Q22` opcional);
 - **Codificação:** pergunta `n`, alternativa `n.x`;
 - **Contato:** opcional, condicional e excluído dos KPIs.
 
@@ -134,7 +137,7 @@ O instrumento oficial da primeira rodada é:
 
 ```mermaid
 flowchart LR
-    A["Perfil mínimo"] --> B["Área e resultado desejado"] --> C["Dificuldades e comportamento atual"] --> D["Apresentação da Guivos"] --> E["Compreensão"] --> F["Aplicação prática"] --> G["Valor e contribuição"] --> H["Intenção e primeira experiência"] --> I["Barreiras e monetização"] --> J["Feedback final"]
+    A["Perfil mínimo"] --> B["Área e resultado desejado"] --> C["Dificuldades, descoberta tardia e adequação"] --> D["Apresentação da Guivos"] --> E["Compreensão"] --> F["Aplicação prática"] --> G["Valor e contribuição"] --> H["Intenção e primeira experiência"] --> I["Barreiras e monetização"] --> J["Feedback final"]
 ```
 
 Perguntas sobre valor, intenção e pagamento não devem preceder a apresentação oficial da proposta.
@@ -143,17 +146,19 @@ Perguntas sobre valor, intenção e pagamento não devem preceder a apresentaç�
 
 | Indicador | Fonte | Meta inicial |
 |---|---|---:|
-| Dor relevante | Q8 | >= 65% |
-| Esforço atual | Q9 | >= 6,0/10 indica problema relevante |
-| Compreensão autodeclarada | Q10 | >= 8,0/10 |
-| Compreensão correta | Q11 | >= 80% |
-| Relevância contextual | Q12 | >= 8,0/10 |
-| Contribuição percebida | Q16 | >= 8,0/10 |
-| Intenção positiva de experimentar | Q17 | >= 60% |
-| Interesse confirmado na primeira experiência | Q18 | >= 35% |
-| Disposição para pagar | Q20 | Diagnóstico; não gate isolado |
+| Índice de Fricção de Oportunidades — IFO | Q8 + Q9 | >= 65% |
+| Esforço atual | Q10 | >= 6,0/10 indica problema relevante |
+| Compreensão autodeclarada | Q11 | >= 8,0/10 |
+| Compreensão correta | Q12 | >= 80% |
+| Relevância contextual | Q13 | >= 8,0/10 |
+| Contribuição percebida | Q17 | >= 8,0/10 |
+| Intenção positiva de experimentar | Q18 | >= 60% |
+| Interesse confirmado na primeira experiência | Q19 | >= 35% |
+| Disposição para pagar | Q21 | Diagnóstico; não gate isolado |
 
-Situação de primeiro uso (`Q13`), expectativas sobre a plataforma (`Q14`), resultado concreto de valor (`Q15`) e barreira principal (`Q19`) são indicadores diagnósticos e orientam posicionamento, escopo inicial e desenho do MVP.
+O IFO combina dois componentes observáveis: descoberta tardia de oportunidades potencialmente úteis (`Q8`) e ausência de oportunidades adequadas após busca (`Q9`). As bases válidas de cada componente deverão ser exibidas separadamente.
+
+Situação de primeiro uso (`Q14`), expectativas sobre a plataforma (`Q15`), resultado concreto de valor (`Q16`) e barreira principal (`Q20`) são indicadores diagnósticos e orientam posicionamento, escopo inicial e desenho do MVP.
 
 As fórmulas, segmentações e regras de exibição estão no VAL-006.
 
@@ -177,6 +182,8 @@ Nenhuma decisão formal poderá ser emitida apenas por média geral ou por um ú
 - manter o formulário curto;
 - limitar perguntas abertas ao essencial;
 - separar comportamento passado de intenção futura;
+- medir somente situações que o participante possa reconhecer ou recordar;
+- distinguir ausência de busca de ausência de oportunidade adequada;
 - conectar perguntas de valor à área e ao resultado declarados pelo participante;
 - não exigir avaliação de aspectos operacionais ainda não demonstrados;
 - preservar respostas negativas e objeções;
@@ -195,13 +202,14 @@ Nenhuma decisão formal poderá ser emitida apenas por média geral ou por um ú
 4. análise qualitativa conforme VAL-004;
 5. hipóteses validadas, parciais ou rejeitadas;
 6. segmentos de maior e menor aderência;
-7. situações de primeiro uso prioritárias;
-8. resultados concretos mais valorizados;
-9. evidências favoráveis e contrárias;
-10. decisão conforme VAL-007;
-11. recomendações de ajuste;
-12. limitações;
-13. plano da próxima rodada.
+7. leitura separada de descoberta tardia e lacuna de adequação;
+8. situações de primeiro uso prioritárias;
+9. resultados concretos mais valorizados;
+10. evidências favoráveis e contrárias;
+11. decisão conforme VAL-007;
+12. recomendações de ajuste;
+13. limitações;
+14. plano da próxima rodada.
 
 ## 14. Limites
 
