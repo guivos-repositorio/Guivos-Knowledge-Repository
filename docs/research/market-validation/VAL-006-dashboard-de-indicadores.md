@@ -2,7 +2,7 @@
 id: VAL-006
 title: Dashboard de Indicadores de Validação
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
 last_updated: 2026-07-12
 related:
@@ -49,7 +49,7 @@ Uma resposta será considerada válida quando:
 2. estiver vinculada à versão do instrumento utilizada;
 3. não apresentar padrão evidente de preenchimento aleatório ou automatizado;
 4. possuir tempo de resposta plausível;
-5. contiver resposta utilizável na pergunta aberta de compreensão (`Q11`);
+5. contiver resposta utilizável na pergunta aberta de compreensão (`Q12`);
 6. não for duplicação confirmada;
 7. respeitar o público da rodada analisada.
 
@@ -67,43 +67,77 @@ O dashboard deverá exibir:
 
 ## 4. Dicionário oficial de KPIs
 
-### 4.1 Dor relevante
+### 4.1 Descoberta tardia relevante
 
 **Pergunta:** `Q8`
 
-```text
-Dor relevante (%) = respostas 8.3 + 8.4 + 8.5 / respostas válidas da Q8 × 100
-```
+A alternativa `8.6 — Não me recordo` será excluída do denominador.
 
-**Meta inicial:** `>= 65%`.
+```text
+Descoberta tardia relevante (%) = respostas 8.3 + 8.4 + 8.5 / respostas 8.1 a 8.5 × 100
+```
 
 Indicador complementar:
 
 ```text
-Dor alta (%) = respostas 8.4 + 8.5 / respostas válidas da Q8 × 100
+Descoberta tardia alta (%) = respostas 8.4 + 8.5 / respostas 8.1 a 8.5 × 100
 ```
 
-### 4.2 Esforço atual
+Exibir separadamente o percentual de `8.6` e a base elegível do cálculo.
+
+### 4.2 Lacuna de adequação de oportunidades
 
 **Pergunta:** `Q9`
 
-**Cálculo:** média e mediana da escala de 0 a 10.
+As alternativas `9.6 — Não procurei oportunidades nesse período` e `9.7 — Não me recordo` serão excluídas do denominador.
 
-**Sinal de problema relevante:** média `>= 6,0`.
+```text
+Lacuna de adequação (%) = respostas 9.3 + 9.4 + 9.5 / respostas 9.1 a 9.5 × 100
+```
 
-Exibir também percentual de notas 8 a 10, distribuição completa e comparação por intensidade da dor.
+Indicador complementar:
 
-### 4.3 Compreensão autodeclarada
+```text
+Lacuna de adequação alta (%) = respostas 9.4 + 9.5 / respostas 9.1 a 9.5 × 100
+```
+
+Exibir separadamente os percentuais de ausência de busca (`9.6`), não recordação (`9.7`) e a base elegível do cálculo.
+
+### 4.3 Índice de Fricção de Oportunidades — IFO
+
+O IFO sintetiza os dois problemas centrais de acesso a oportunidades:
+
+```text
+IFO = média entre Descoberta tardia relevante e Lacuna de adequação
+```
+
+**Meta inicial:** `>= 65%`.
+
+O IFO somente deverá receber semáforo quando os dois componentes possuírem base suficiente para leitura. Caso um componente seja insuficiente, o IFO deverá permanecer cinza e os resultados serão apresentados separadamente.
+
+O IFO não mede todas as dificuldades de evolução. Ele mede especificamente fricção temporal e inadequação das oportunidades encontradas.
+
+### 4.4 Esforço atual
 
 **Pergunta:** `Q10`
 
 **Cálculo:** média e mediana da escala de 0 a 10.
 
-**Meta inicial:** `>= 8,0`.
+**Sinal de problema relevante:** média `>= 6,0`.
 
-### 4.4 Compreensão correta
+Exibir também percentual de notas 8 a 10, distribuição completa e comparação com IFO.
+
+### 4.5 Compreensão autodeclarada
 
 **Pergunta:** `Q11`
+
+**Cálculo:** média e mediana da escala de 0 a 10.
+
+**Meta inicial:** `>= 8,0`.
+
+### 4.6 Compreensão correta
+
+**Pergunta:** `Q12`
 
 Cada resposta deverá ser classificada como:
 
@@ -112,16 +146,16 @@ Cada resposta deverá ser classificada como:
 - **0,0 — incorreta:** descreve a Guivos como catálogo genérico, rede social, marketplace isolado, sistema que decide pela pessoa ou outro conceito incompatível.
 
 ```text
-Compreensão correta (%) = respostas classificadas como 1,0 / respostas válidas da Q11 × 100
+Compreensão correta (%) = respostas classificadas como 1,0 / respostas válidas da Q12 × 100
 ```
 
 **Meta inicial:** `>= 80%`.
 
 Exibir separadamente compreensão correta, parcial e incorreta.
 
-### 4.5 Relevância contextual
+### 4.7 Relevância contextual
 
-**Pergunta:** `Q12`
+**Pergunta:** `Q13`
 
 **Cálculo:** média e mediana da escala de 0 a 10.
 
@@ -129,9 +163,9 @@ Exibir separadamente compreensão correta, parcial e incorreta.
 
 A leitura deverá ser vinculada à área de evolução selecionada na `Q4`.
 
-### 4.6 Contribuição percebida
+### 4.8 Contribuição percebida
 
-**Pergunta:** `Q16`
+**Pergunta:** `Q17`
 
 **Cálculo:** média e mediana da escala de 0 a 10.
 
@@ -139,29 +173,29 @@ A leitura deverá ser vinculada à área de evolução selecionada na `Q4`.
 
 Este indicador mede a crença de que a Guivos poderia contribuir para o avanço na área escolhida nos próximos 12 meses. Não mede transformação real.
 
-### 4.7 Intenção positiva de experimentar
-
-**Pergunta:** `Q17`
-
-```text
-Intenção positiva (%) = respostas 17.4 + 17.5 / respostas válidas da Q17 × 100
-```
-
-**Meta inicial:** `>= 60%`.
-
-Exibir também intenção negativa (`17.1 + 17.2`) e indecisão (`17.3`).
-
-### 4.8 Interesse confirmado na primeira experiência
+### 4.9 Intenção positiva de experimentar
 
 **Pergunta:** `Q18`
 
 ```text
-Interesse confirmado (%) = respostas 18.1 / respostas válidas da Q18 × 100
+Intenção positiva (%) = respostas 18.4 + 18.5 / respostas válidas da Q18 × 100
+```
+
+**Meta inicial:** `>= 60%`.
+
+Exibir também intenção negativa (`18.1 + 18.2`) e indecisão (`18.3`).
+
+### 4.10 Interesse confirmado na primeira experiência
+
+**Pergunta:** `Q19`
+
+```text
+Interesse confirmado (%) = respostas 19.1 / respostas válidas da Q19 × 100
 ```
 
 **Meta inicial:** `>= 35%`.
 
-Exibir também interesse ampliado (`18.1 + 18.2`) e conversão efetiva em contato.
+Exibir também interesse ampliado (`19.1 + 19.2`) e conversão efetiva em contato.
 
 ## 5. Indicadores diagnósticos
 
@@ -191,7 +225,7 @@ Exibir canais, estratégias utilizadas e percentual de pessoas que tentam descob
 
 ### 5.5 Situação de primeiro uso
 
-**Pergunta:** `Q13`
+**Pergunta:** `Q14`
 
 Exibir ranking e percentual por situação, destacando:
 
@@ -207,19 +241,19 @@ Exibir ranking e percentual por situação, destacando:
 
 ### 5.6 Expectativas sobre a plataforma
 
-**Pergunta:** `Q14`
+**Pergunta:** `Q15`
 
 Exibir ranking, percentual e combinações mais frequentes das opções selecionadas.
 
 ### 5.7 Resultado concreto de valor
 
-**Pergunta:** `Q15`
+**Pergunta:** `Q16`
 
 Exibir ranking e percentual do principal resultado considerado útil.
 
 ### 5.8 Barreiras principais
 
-**Pergunta:** `Q19`
+**Pergunta:** `Q20`
 
 Exibir ranking e percentual de cada barreira, destacando:
 
@@ -235,15 +269,15 @@ Exibir ranking e percentual de cada barreira, destacando:
 
 ### 5.9 Disposição inicial para pagar
 
-**Pergunta:** `Q20`
+**Pergunta:** `Q21`
 
 Exibir:
 
-- não consideraria pagar (`20.1`);
-- pagamento condicionado a resultado (`20.2`);
-- percentual por faixa de preço (`20.3` a `20.6`);
-- avaliação prematura (`20.7`);
-- recusa em responder (`20.8`).
+- não consideraria pagar (`21.1`);
+- pagamento condicionado a resultado (`21.2`);
+- percentual por faixa de preço (`21.3` a `21.6`);
+- avaliação prematura (`21.7`);
+- recusa em responder (`21.8`).
 
 Monetização é indicador diagnóstico e não gate isolado na primeira rodada.
 
@@ -261,18 +295,20 @@ O IGV é uma síntese executiva. Não substitui a leitura por hipótese nem pode
 
 | Dimensão | Indicador | Peso |
 |---|---|---:|
-| Problema | Dor relevante (`Q8`) | 15% |
-| Compreensão | Compreensão correta (`Q11`) | 20% |
-| Relevância | Média da `Q12` | 20% |
-| Contribuição | Média da `Q16` | 20% |
-| Intenção | Intenção positiva (`Q17`) | 20% |
-| Primeira experiência | Interesse confirmado (`Q18`) | 5% |
+| Problema | IFO (`Q8 + Q9`) | 15% |
+| Compreensão | Compreensão correta (`Q12`) | 20% |
+| Relevância | Média da `Q13` | 20% |
+| Contribuição | Média da `Q17` | 20% |
+| Intenção | Intenção positiva (`Q18`) | 20% |
+| Primeira experiência | Interesse confirmado (`Q19`) | 5% |
 
 ```text
 IGV = soma dos indicadores normalizados × respectivos pesos
 ```
 
 Esforço, compreensão autodeclarada, monetização e indicadores diagnósticos permanecem fora do IGV.
+
+Quando o IFO não puder ser calculado por insuficiência de um dos componentes, o IGV também deverá permanecer incompleto e não poderá sustentar decisão `Go`.
 
 ### 6.3 Leitura do IGV
 
@@ -288,10 +324,11 @@ Esforço, compreensão autodeclarada, monetização e indicadores diagnósticos 
 Mesmo com IGV alto, uma decisão `Go` não poderá ser emitida quando houver:
 
 - compreensão correta abaixo de 65%;
-- dor relevante abaixo de 50%;
+- IFO abaixo de 50%;
 - relevância contextual abaixo de 7,0;
 - contribuição percebida abaixo de 7,0;
 - intenção positiva de experimentar abaixo de 45%;
+- IFO ou IGV não calculável;
 - base inferior a 200 respostas válidas;
 - concentração crítica da amostra sem análise segmentada;
 - indícios relevantes de viés, duplicidade ou baixa qualidade.
@@ -329,36 +366,39 @@ Confiança operacional, recorrência, retenção e recomendação não integram 
 - resultado desejado (`Q5`);
 - dificuldades (`Q6`);
 - comportamento de busca (`Q7`);
-- dor relevante e dor alta (`Q8`);
-- esforço médio e mediano (`Q9`).
+- descoberta tardia (`Q8`);
+- lacuna de adequação (`Q9`);
+- IFO;
+- esforço médio e mediano (`Q10`);
+- bases elegíveis, não recordação e ausência de busca.
 
 ### 8.4 Compreensão
 
-- compreensão autodeclarada (`Q10`);
-- compreensão correta, parcial e incorreta (`Q11`);
+- compreensão autodeclarada (`Q11`);
+- compreensão correta, parcial e incorreta (`Q12`);
 - principais padrões de compreensão e confusão.
 
 ### 8.5 Aplicação prática e valor
 
-- relevância contextual (`Q12`);
-- situações de primeiro uso (`Q13`);
-- expectativas sobre a plataforma (`Q14`);
-- resultados concretos valorizados (`Q15`);
-- contribuição percebida (`Q16`).
+- relevância contextual (`Q13`);
+- situações de primeiro uso (`Q14`);
+- expectativas sobre a plataforma (`Q15`);
+- resultados concretos valorizados (`Q16`);
+- contribuição percebida (`Q17`).
 
 ### 8.6 Intenção e primeira experiência
 
-- intenção positiva de experimentar (`Q17`);
-- interesse confirmado e ampliado (`Q18`);
+- intenção positiva de experimentar (`Q18`);
+- interesse confirmado e ampliado (`Q19`);
 - conversão em contato opcional.
 
 ### 8.7 Barreiras e monetização
 
-- ranking das barreiras (`Q19`);
+- ranking das barreiras (`Q20`);
 - barreiras por segmento;
-- disposição para pagar (`Q20`);
+- disposição para pagar (`Q21`);
 - faixas de preço;
-- comentários opcionais da `Q21`.
+- comentários opcionais da `Q22`.
 
 ## 9. Segmentações mínimas
 
@@ -370,11 +410,13 @@ Os KPIs principais deverão permitir corte por:
 - situação principal (`Q3`);
 - área prioritária (`Q4`);
 - resultado desejado (`Q5`);
-- intensidade da dor (`Q8`);
-- situação de primeiro uso (`Q13`);
-- intenção de experimentar (`Q17`);
-- interesse em primeira experiência (`Q18`);
-- barreira principal (`Q19`).
+- descoberta tardia (`Q8`);
+- lacuna de adequação (`Q9`);
+- intensidade do IFO;
+- situação de primeiro uso (`Q14`);
+- intenção de experimentar (`Q18`);
+- interesse em primeira experiência (`Q19`);
+- barreira principal (`Q20`).
 
 Participantes fora do Brasil deverão ser analisados separadamente da base nacional.
 
@@ -393,16 +435,17 @@ Cada atualização do dashboard deverá produzir:
 
 1. fotografia da amostra;
 2. resultados dos KPIs;
-3. semáforo por dimensão;
-4. IGV;
-5. gates críticos;
-6. áreas, resultados desejados e situações de primeiro uso prioritários;
-7. leitura por segmento e por estado quando houver base suficiente;
-8. evidências favoráveis e contrárias;
-9. decisão preliminar conforme VAL-007;
-10. recomendações de ajuste;
-11. limitações e próxima ação.
+3. descoberta tardia, lacuna de adequação e IFO;
+4. semáforo por dimensão;
+5. IGV;
+6. gates críticos;
+7. áreas, resultados desejados e situações de primeiro uso prioritários;
+8. leitura por segmento e por estado quando houver base suficiente;
+9. evidências favoráveis e contrárias;
+10. decisão preliminar conforme VAL-007;
+11. recomendações de ajuste;
+12. limitações e próxima ação.
 
 ## 12. Regra de comparabilidade
 
-Resultados produzidos por versões anteriores do VAL-002 não deverão ser combinados diretamente com a versão `1.2.0`. Qualquer comparação histórica deverá utilizar mapeamento explícito de perguntas, alternativas e fórmulas.
+Resultados produzidos por versões anteriores do VAL-002 não deverão ser combinados diretamente com a versão `1.2.1`. Qualquer comparação histórica deverá utilizar mapeamento explícito de perguntas, alternativas e fórmulas.
