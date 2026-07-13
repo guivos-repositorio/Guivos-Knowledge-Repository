@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.2.1
+version: 1.2.2
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -90,7 +90,10 @@ A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
 
 O `PAS-001 — Guivos Journey` é a especificação principal da Experience Layer.
 
-A extensão normativa `PAS-001-CV-STATE-001` integra a Capacidade 02 e define os estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.
+As extensões normativas vigentes da Capacidade 02 são:
+
+- `PAS-001-CV-STATE-001` — estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução;
+- `PAS-001-CV-UPDATE-001` — unidade de atualização, gatilhos, temporalidade, envelhecimento, confirmação proporcional, permissões e propagação controlada.
 
 ## Regras arquiteturais
 
@@ -109,6 +112,7 @@ A extensão normativa `PAS-001-CV-STATE-001` integra a Capacidade 02 e define os
 - [GLPA-001 — Guivos Layered Product Architecture](layered-product-architecture.md)
 - [PAS-001 — Guivos Journey](pas-001-guivos-journey.md)
 - [PAS-001-CV-STATE-001 — Estados Funcionais do Contexto Vivo](pas-001-contexto-vivo-estados-dimensionais.md)
+- [PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento do Contexto Vivo](pas-001-contexto-vivo-atualizacao-envelhecimento.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
