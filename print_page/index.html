@@ -9217,7 +9217,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>estiver vinculada à versão do instrumento utilizada;</li>
 <li>não apresentar padrão evidente de preenchimento aleatório ou automatizado;</li>
 <li>possuir tempo de resposta plausível;</li>
-<li>contiver resposta utilizável na pergunta aberta de compreensão (<code>Q11</code>);</li>
+<li>contiver resposta utilizável na pergunta aberta de compreensão (<code>Q12</code>);</li>
 <li>não for duplicação confirmada;</li>
 <li>respeitar o público da rodada analisada.</li>
 </ol>
@@ -9234,57 +9234,74 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>motivo das exclusões.</li>
 </ul>
 <h2 id="research-market-validation-val-006-dashboard-de-indicadores-4-dicionario-oficial-de-kpis">4. Dicionário oficial de KPIs<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-4-dicionario-oficial-de-kpis" title="Permanent link">&para;</a></h2>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-41-dor-relevante">4.1 Dor relevante<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-41-dor-relevante" title="Permanent link">&para;</a></h3>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-41-descoberta-tardia-relevante">4.1 Descoberta tardia relevante<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-41-descoberta-tardia-relevante" title="Permanent link">&para;</a></h3>
 <p><strong>Pergunta:</strong> <code>Q8</code></p>
-<div class="highlight"><pre><span></span><code>Dor relevante (%) = respostas 8.3 + 8.4 + 8.5 / respostas válidas da Q8 × 100
+<p>A alternativa <code>8.6 — Não me recordo</code> será excluída do denominador.</p>
+<div class="highlight"><pre><span></span><code>Descoberta tardia relevante (%) = respostas 8.3 + 8.4 + 8.5 / respostas 8.1 a 8.5 × 100
+</code></pre></div>
+<p>Indicador complementar:</p>
+<div class="highlight"><pre><span></span><code>Descoberta tardia alta (%) = respostas 8.4 + 8.5 / respostas 8.1 a 8.5 × 100
+</code></pre></div>
+<p>Exibir separadamente o percentual de <code>8.6</code> e a base elegível do cálculo.</p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-42-lacuna-de-adequacao-de-oportunidades">4.2 Lacuna de adequação de oportunidades<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-42-lacuna-de-adequacao-de-oportunidades" title="Permanent link">&para;</a></h3>
+<p><strong>Pergunta:</strong> <code>Q9</code></p>
+<p>As alternativas <code>9.6 — Não procurei oportunidades nesse período</code> e <code>9.7 — Não me recordo</code> serão excluídas do denominador.</p>
+<div class="highlight"><pre><span></span><code>Lacuna de adequação (%) = respostas 9.3 + 9.4 + 9.5 / respostas 9.1 a 9.5 × 100
+</code></pre></div>
+<p>Indicador complementar:</p>
+<div class="highlight"><pre><span></span><code>Lacuna de adequação alta (%) = respostas 9.4 + 9.5 / respostas 9.1 a 9.5 × 100
+</code></pre></div>
+<p>Exibir separadamente os percentuais de ausência de busca (<code>9.6</code>), não recordação (<code>9.7</code>) e a base elegível do cálculo.</p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-43-indice-de-friccao-de-oportunidades-ifo">4.3 Índice de Fricção de Oportunidades — IFO<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-43-indice-de-friccao-de-oportunidades-ifo" title="Permanent link">&para;</a></h3>
+<p>O IFO sintetiza os dois problemas centrais de acesso a oportunidades:</p>
+<div class="highlight"><pre><span></span><code>IFO = média entre Descoberta tardia relevante e Lacuna de adequação
 </code></pre></div>
 <p><strong>Meta inicial:</strong> <code>&gt;= 65%</code>.</p>
-<p>Indicador complementar:</p>
-<div class="highlight"><pre><span></span><code>Dor alta (%) = respostas 8.4 + 8.5 / respostas válidas da Q8 × 100
-</code></pre></div>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-42-esforco-atual">4.2 Esforço atual<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-42-esforco-atual" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q9</code></p>
-<p><strong>Cálculo:</strong> média e mediana da escala de 0 a 10.</p>
-<p><strong>Sinal de problema relevante:</strong> média <code>&gt;= 6,0</code>.</p>
-<p>Exibir também percentual de notas 8 a 10, distribuição completa e comparação por intensidade da dor.</p>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-43-compreensao-autodeclarada">4.3 Compreensão autodeclarada<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-43-compreensao-autodeclarada" title="Permanent link">&para;</a></h3>
+<p>O IFO somente deverá receber semáforo quando os dois componentes possuírem base suficiente para leitura. Caso um componente seja insuficiente, o IFO deverá permanecer cinza e os resultados serão apresentados separadamente.</p>
+<p>O IFO não mede todas as dificuldades de evolução. Ele mede especificamente fricção temporal e inadequação das oportunidades encontradas.</p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-44-esforco-atual">4.4 Esforço atual<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-44-esforco-atual" title="Permanent link">&para;</a></h3>
 <p><strong>Pergunta:</strong> <code>Q10</code></p>
 <p><strong>Cálculo:</strong> média e mediana da escala de 0 a 10.</p>
-<p><strong>Meta inicial:</strong> <code>&gt;= 8,0</code>.</p>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-44-compreensao-correta">4.4 Compreensão correta<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-44-compreensao-correta" title="Permanent link">&para;</a></h3>
+<p><strong>Sinal de problema relevante:</strong> média <code>&gt;= 6,0</code>.</p>
+<p>Exibir também percentual de notas 8 a 10, distribuição completa e comparação com IFO.</p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-45-compreensao-autodeclarada">4.5 Compreensão autodeclarada<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-45-compreensao-autodeclarada" title="Permanent link">&para;</a></h3>
 <p><strong>Pergunta:</strong> <code>Q11</code></p>
+<p><strong>Cálculo:</strong> média e mediana da escala de 0 a 10.</p>
+<p><strong>Meta inicial:</strong> <code>&gt;= 8,0</code>.</p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-46-compreensao-correta">4.6 Compreensão correta<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-46-compreensao-correta" title="Permanent link">&para;</a></h3>
+<p><strong>Pergunta:</strong> <code>Q12</code></p>
 <p>Cada resposta deverá ser classificada como:</p>
 <ul>
 <li><strong>1,0 — correta:</strong> reconhece que a Guivos considera o momento, contexto ou objetivo da pessoa e ajuda a organizar caminhos, identificar próximos passos ou encontrar oportunidades relevantes para sua evolução;</li>
 <li><strong>0,5 — parcialmente correta:</strong> reconhece apenas um elemento central ou apresenta compreensão incompleta;</li>
 <li><strong>0,0 — incorreta:</strong> descreve a Guivos como catálogo genérico, rede social, marketplace isolado, sistema que decide pela pessoa ou outro conceito incompatível.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>Compreensão correta (%) = respostas classificadas como 1,0 / respostas válidas da Q11 × 100
+<div class="highlight"><pre><span></span><code>Compreensão correta (%) = respostas classificadas como 1,0 / respostas válidas da Q12 × 100
 </code></pre></div>
 <p><strong>Meta inicial:</strong> <code>&gt;= 80%</code>.</p>
 <p>Exibir separadamente compreensão correta, parcial e incorreta.</p>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-45-relevancia-contextual">4.5 Relevância contextual<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-45-relevancia-contextual" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q12</code></p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-47-relevancia-contextual">4.7 Relevância contextual<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-47-relevancia-contextual" title="Permanent link">&para;</a></h3>
+<p><strong>Pergunta:</strong> <code>Q13</code></p>
 <p><strong>Cálculo:</strong> média e mediana da escala de 0 a 10.</p>
 <p><strong>Meta inicial:</strong> <code>&gt;= 8,0</code>.</p>
 <p>A leitura deverá ser vinculada à área de evolução selecionada na <code>Q4</code>.</p>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-46-contribuicao-percebida">4.6 Contribuição percebida<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-46-contribuicao-percebida" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q16</code></p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-48-contribuicao-percebida">4.8 Contribuição percebida<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-48-contribuicao-percebida" title="Permanent link">&para;</a></h3>
+<p><strong>Pergunta:</strong> <code>Q17</code></p>
 <p><strong>Cálculo:</strong> média e mediana da escala de 0 a 10.</p>
 <p><strong>Meta inicial:</strong> <code>&gt;= 8,0</code>.</p>
 <p>Este indicador mede a crença de que a Guivos poderia contribuir para o avanço na área escolhida nos próximos 12 meses. Não mede transformação real.</p>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-47-intencao-positiva-de-experimentar">4.7 Intenção positiva de experimentar<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-47-intencao-positiva-de-experimentar" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q17</code></p>
-<div class="highlight"><pre><span></span><code>Intenção positiva (%) = respostas 17.4 + 17.5 / respostas válidas da Q17 × 100
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-49-intencao-positiva-de-experimentar">4.9 Intenção positiva de experimentar<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-49-intencao-positiva-de-experimentar" title="Permanent link">&para;</a></h3>
+<p><strong>Pergunta:</strong> <code>Q18</code></p>
+<div class="highlight"><pre><span></span><code>Intenção positiva (%) = respostas 18.4 + 18.5 / respostas válidas da Q18 × 100
 </code></pre></div>
 <p><strong>Meta inicial:</strong> <code>&gt;= 60%</code>.</p>
-<p>Exibir também intenção negativa (<code>17.1 + 17.2</code>) e indecisão (<code>17.3</code>).</p>
-<h3 id="research-market-validation-val-006-dashboard-de-indicadores-48-interesse-confirmado-na-primeira-experiencia">4.8 Interesse confirmado na primeira experiência<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-48-interesse-confirmado-na-primeira-experiencia" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q18</code></p>
-<div class="highlight"><pre><span></span><code>Interesse confirmado (%) = respostas 18.1 / respostas válidas da Q18 × 100
+<p>Exibir também intenção negativa (<code>18.1 + 18.2</code>) e indecisão (<code>18.3</code>).</p>
+<h3 id="research-market-validation-val-006-dashboard-de-indicadores-410-interesse-confirmado-na-primeira-experiencia">4.10 Interesse confirmado na primeira experiência<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-410-interesse-confirmado-na-primeira-experiencia" title="Permanent link">&para;</a></h3>
+<p><strong>Pergunta:</strong> <code>Q19</code></p>
+<div class="highlight"><pre><span></span><code>Interesse confirmado (%) = respostas 19.1 / respostas válidas da Q19 × 100
 </code></pre></div>
 <p><strong>Meta inicial:</strong> <code>&gt;= 35%</code>.</p>
-<p>Exibir também interesse ampliado (<code>18.1 + 18.2</code>) e conversão efetiva em contato.</p>
+<p>Exibir também interesse ampliado (<code>19.1 + 19.2</code>) e conversão efetiva em contato.</p>
 <h2 id="research-market-validation-val-006-dashboard-de-indicadores-5-indicadores-diagnosticos">5. Indicadores diagnósticos<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-5-indicadores-diagnosticos" title="Permanent link">&para;</a></h2>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-51-area-prioritaria">5.1 Área prioritária<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-51-area-prioritaria" title="Permanent link">&para;</a></h3>
 <p><strong>Pergunta:</strong> <code>Q4</code></p>
@@ -9299,7 +9316,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <p><strong>Pergunta:</strong> <code>Q7</code></p>
 <p>Exibir canais, estratégias utilizadas e percentual de pessoas que tentam descobrir caminhos sem estrutura ou não procuram ativamente.</p>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-55-situacao-de-primeiro-uso">5.5 Situação de primeiro uso<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-55-situacao-de-primeiro-uso" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q13</code></p>
+<p><strong>Pergunta:</strong> <code>Q14</code></p>
 <p>Exibir ranking e percentual por situação, destacando:</p>
 <ul>
 <li>falta de clareza sobre o próximo passo;</li>
@@ -9313,13 +9330,13 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>incapacidade de imaginar uso.</li>
 </ul>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-56-expectativas-sobre-a-plataforma">5.6 Expectativas sobre a plataforma<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-56-expectativas-sobre-a-plataforma" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q14</code></p>
+<p><strong>Pergunta:</strong> <code>Q15</code></p>
 <p>Exibir ranking, percentual e combinações mais frequentes das opções selecionadas.</p>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-57-resultado-concreto-de-valor">5.7 Resultado concreto de valor<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-57-resultado-concreto-de-valor" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q15</code></p>
+<p><strong>Pergunta:</strong> <code>Q16</code></p>
 <p>Exibir ranking e percentual do principal resultado considerado útil.</p>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-58-barreiras-principais">5.8 Barreiras principais<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-58-barreiras-principais" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q19</code></p>
+<p><strong>Pergunta:</strong> <code>Q20</code></p>
 <p>Exibir ranking e percentual de cada barreira, destacando:</p>
 <ul>
 <li>ausência de necessidade;</li>
@@ -9333,14 +9350,14 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>preço.</li>
 </ul>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-59-disposicao-inicial-para-pagar">5.9 Disposição inicial para pagar<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-59-disposicao-inicial-para-pagar" title="Permanent link">&para;</a></h3>
-<p><strong>Pergunta:</strong> <code>Q20</code></p>
+<p><strong>Pergunta:</strong> <code>Q21</code></p>
 <p>Exibir:</p>
 <ul>
-<li>não consideraria pagar (<code>20.1</code>);</li>
-<li>pagamento condicionado a resultado (<code>20.2</code>);</li>
-<li>percentual por faixa de preço (<code>20.3</code> a <code>20.6</code>);</li>
-<li>avaliação prematura (<code>20.7</code>);</li>
-<li>recusa em responder (<code>20.8</code>).</li>
+<li>não consideraria pagar (<code>21.1</code>);</li>
+<li>pagamento condicionado a resultado (<code>21.2</code>);</li>
+<li>percentual por faixa de preço (<code>21.3</code> a <code>21.6</code>);</li>
+<li>avaliação prematura (<code>21.7</code>);</li>
+<li>recusa em responder (<code>21.8</code>).</li>
 </ul>
 <p>Monetização é indicador diagnóstico e não gate isolado na primeira rodada.</p>
 <h2 id="research-market-validation-val-006-dashboard-de-indicadores-6-indice-geral-de-validacao-igv">6. Índice Geral de Validação — IGV<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-6-indice-geral-de-validacao-igv" title="Permanent link">&para;</a></h2>
@@ -9363,32 +9380,32 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <tbody>
 <tr>
 <td>Problema</td>
-<td>Dor relevante (<code>Q8</code>)</td>
+<td>IFO (<code>Q8 + Q9</code>)</td>
 <td style="text-align: right;">15%</td>
 </tr>
 <tr>
 <td>Compreensão</td>
-<td>Compreensão correta (<code>Q11</code>)</td>
+<td>Compreensão correta (<code>Q12</code>)</td>
 <td style="text-align: right;">20%</td>
 </tr>
 <tr>
 <td>Relevância</td>
-<td>Média da <code>Q12</code></td>
+<td>Média da <code>Q13</code></td>
 <td style="text-align: right;">20%</td>
 </tr>
 <tr>
 <td>Contribuição</td>
-<td>Média da <code>Q16</code></td>
+<td>Média da <code>Q17</code></td>
 <td style="text-align: right;">20%</td>
 </tr>
 <tr>
 <td>Intenção</td>
-<td>Intenção positiva (<code>Q17</code>)</td>
+<td>Intenção positiva (<code>Q18</code>)</td>
 <td style="text-align: right;">20%</td>
 </tr>
 <tr>
 <td>Primeira experiência</td>
-<td>Interesse confirmado (<code>Q18</code>)</td>
+<td>Interesse confirmado (<code>Q19</code>)</td>
 <td style="text-align: right;">5%</td>
 </tr>
 </tbody>
@@ -9396,6 +9413,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <div class="highlight"><pre><span></span><code>IGV = soma dos indicadores normalizados × respectivos pesos
 </code></pre></div>
 <p>Esforço, compreensão autodeclarada, monetização e indicadores diagnósticos permanecem fora do IGV.</p>
+<p>Quando o IFO não puder ser calculado por insuficiência de um dos componentes, o IGV também deverá permanecer incompleto e não poderá sustentar decisão <code>Go</code>.</p>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-63-leitura-do-igv">6.3 Leitura do IGV<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-63-leitura-do-igv" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -9427,10 +9445,11 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <p>Mesmo com IGV alto, uma decisão <code>Go</code> não poderá ser emitida quando houver:</p>
 <ul>
 <li>compreensão correta abaixo de 65%;</li>
-<li>dor relevante abaixo de 50%;</li>
+<li>IFO abaixo de 50%;</li>
 <li>relevância contextual abaixo de 7,0;</li>
 <li>contribuição percebida abaixo de 7,0;</li>
 <li>intenção positiva de experimentar abaixo de 45%;</li>
+<li>IFO ou IGV não calculável;</li>
 <li>base inferior a 200 respostas válidas;</li>
 <li>concentração crítica da amostra sem análise segmentada;</li>
 <li>indícios relevantes de viés, duplicidade ou baixa qualidade.</li>
@@ -9466,36 +9485,39 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>resultado desejado (<code>Q5</code>);</li>
 <li>dificuldades (<code>Q6</code>);</li>
 <li>comportamento de busca (<code>Q7</code>);</li>
-<li>dor relevante e dor alta (<code>Q8</code>);</li>
-<li>esforço médio e mediano (<code>Q9</code>).</li>
+<li>descoberta tardia (<code>Q8</code>);</li>
+<li>lacuna de adequação (<code>Q9</code>);</li>
+<li>IFO;</li>
+<li>esforço médio e mediano (<code>Q10</code>);</li>
+<li>bases elegíveis, não recordação e ausência de busca.</li>
 </ul>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-84-compreensao">8.4 Compreensão<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-84-compreensao" title="Permanent link">&para;</a></h3>
 <ul>
-<li>compreensão autodeclarada (<code>Q10</code>);</li>
-<li>compreensão correta, parcial e incorreta (<code>Q11</code>);</li>
+<li>compreensão autodeclarada (<code>Q11</code>);</li>
+<li>compreensão correta, parcial e incorreta (<code>Q12</code>);</li>
 <li>principais padrões de compreensão e confusão.</li>
 </ul>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-85-aplicacao-pratica-e-valor">8.5 Aplicação prática e valor<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-85-aplicacao-pratica-e-valor" title="Permanent link">&para;</a></h3>
 <ul>
-<li>relevância contextual (<code>Q12</code>);</li>
-<li>situações de primeiro uso (<code>Q13</code>);</li>
-<li>expectativas sobre a plataforma (<code>Q14</code>);</li>
-<li>resultados concretos valorizados (<code>Q15</code>);</li>
-<li>contribuição percebida (<code>Q16</code>).</li>
+<li>relevância contextual (<code>Q13</code>);</li>
+<li>situações de primeiro uso (<code>Q14</code>);</li>
+<li>expectativas sobre a plataforma (<code>Q15</code>);</li>
+<li>resultados concretos valorizados (<code>Q16</code>);</li>
+<li>contribuição percebida (<code>Q17</code>).</li>
 </ul>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-86-intencao-e-primeira-experiencia">8.6 Intenção e primeira experiência<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-86-intencao-e-primeira-experiencia" title="Permanent link">&para;</a></h3>
 <ul>
-<li>intenção positiva de experimentar (<code>Q17</code>);</li>
-<li>interesse confirmado e ampliado (<code>Q18</code>);</li>
+<li>intenção positiva de experimentar (<code>Q18</code>);</li>
+<li>interesse confirmado e ampliado (<code>Q19</code>);</li>
 <li>conversão em contato opcional.</li>
 </ul>
 <h3 id="research-market-validation-val-006-dashboard-de-indicadores-87-barreiras-e-monetizacao">8.7 Barreiras e monetização<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-87-barreiras-e-monetizacao" title="Permanent link">&para;</a></h3>
 <ul>
-<li>ranking das barreiras (<code>Q19</code>);</li>
+<li>ranking das barreiras (<code>Q20</code>);</li>
 <li>barreiras por segmento;</li>
-<li>disposição para pagar (<code>Q20</code>);</li>
+<li>disposição para pagar (<code>Q21</code>);</li>
 <li>faixas de preço;</li>
-<li>comentários opcionais da <code>Q21</code>.</li>
+<li>comentários opcionais da <code>Q22</code>.</li>
 </ul>
 <h2 id="research-market-validation-val-006-dashboard-de-indicadores-9-segmentacoes-minimas">9. Segmentações mínimas<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-9-segmentacoes-minimas" title="Permanent link">&para;</a></h2>
 <p>Os KPIs principais deverão permitir corte por:</p>
@@ -9506,11 +9528,13 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>situação principal (<code>Q3</code>);</li>
 <li>área prioritária (<code>Q4</code>);</li>
 <li>resultado desejado (<code>Q5</code>);</li>
-<li>intensidade da dor (<code>Q8</code>);</li>
-<li>situação de primeiro uso (<code>Q13</code>);</li>
-<li>intenção de experimentar (<code>Q17</code>);</li>
-<li>interesse em primeira experiência (<code>Q18</code>);</li>
-<li>barreira principal (<code>Q19</code>).</li>
+<li>descoberta tardia (<code>Q8</code>);</li>
+<li>lacuna de adequação (<code>Q9</code>);</li>
+<li>intensidade do IFO;</li>
+<li>situação de primeiro uso (<code>Q14</code>);</li>
+<li>intenção de experimentar (<code>Q18</code>);</li>
+<li>interesse em primeira experiência (<code>Q19</code>);</li>
+<li>barreira principal (<code>Q20</code>).</li>
 </ul>
 <p>Participantes fora do Brasil deverão ser analisados separadamente da base nacional.</p>
 <p>Estados com menos de 30 respostas deverão ser destacados como base reduzida e não deverão receber conclusão isolada. O painel deverá identificar concentração excessiva em São Paulo, Minas Gerais ou qualquer outra unidade federativa.</p>
@@ -9526,6 +9550,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <ol>
 <li>fotografia da amostra;</li>
 <li>resultados dos KPIs;</li>
+<li>descoberta tardia, lacuna de adequação e IFO;</li>
 <li>semáforo por dimensão;</li>
 <li>IGV;</li>
 <li>gates críticos;</li>
@@ -9537,7 +9562,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>limitações e próxima ação.</li>
 </ol>
 <h2 id="research-market-validation-val-006-dashboard-de-indicadores-12-regra-de-comparabilidade">12. Regra de comparabilidade<a class="headerlink" href="#research-market-validation-val-006-dashboard-de-indicadores-12-regra-de-comparabilidade" title="Permanent link">&para;</a></h2>
-<p>Resultados produzidos por versões anteriores do VAL-002 não deverão ser combinados diretamente com a versão <code>1.2.0</code>. Qualquer comparação histórica deverá utilizar mapeamento explícito de perguntas, alternativas e fórmulas.</p></section><section class="print-page" id="research-market-validation-val-007-criterios-de-decisao" heading-number="4.2.8"><h1 id="research-market-validation-val-007-criterios-de-decisao-val-007-criterios-de-decisao-da-validacao">VAL-007 — Critérios de Decisão da Validação<a class="headerlink" href="#research-market-validation-val-007-criterios-de-decisao-val-007-criterios-de-decisao-da-validacao" title="Permanent link">&para;</a></h1>
+<p>Resultados produzidos por versões anteriores do VAL-002 não deverão ser combinados diretamente com a versão <code>1.2.1</code>. Qualquer comparação histórica deverá utilizar mapeamento explícito de perguntas, alternativas e fórmulas.</p></section><section class="print-page" id="research-market-validation-val-007-criterios-de-decisao" heading-number="4.2.8"><h1 id="research-market-validation-val-007-criterios-de-decisao-val-007-criterios-de-decisao-da-validacao">VAL-007 — Critérios de Decisão da Validação<a class="headerlink" href="#research-market-validation-val-007-criterios-de-decisao-val-007-criterios-de-decisao-da-validacao" title="Permanent link">&para;</a></h1>
 <h2 id="research-market-validation-val-007-criterios-de-decisao-1-finalidade">1. Finalidade<a class="headerlink" href="#research-market-validation-val-007-criterios-de-decisao-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Transformar os resultados da validação B2C em decisões objetivas, rastreáveis e resistentes a interpretações seletivas ou excessivamente otimistas.</p>
 <p>A decisão deverá considerar simultaneamente:</p>
