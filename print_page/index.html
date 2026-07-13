@@ -14217,7 +14217,522 @@ Implementação = realização progressiva
     M --> CT
 </code></pre>
 <p>Esse diagrama representa organização conceitual, não layout definitivo de interface.</p>
-<h2 id="product-architecture-pas-001-guivos-journey-35-estado-atual-da-capacidade-02">35. Estado atual da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-35-estado-atual-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<h2 id="product-architecture-pas-001-guivos-journey-35-responsabilidades-da-capacidade-02">35. Responsabilidades da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-35-responsabilidades-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-01-manter-a-melhor-compreensao-disponivel">R-CV-01 — Manter a melhor compreensão disponível<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-01-manter-a-melhor-compreensao-disponivel" title="Permanent link">&para;</a></h3>
+<p>Manter a melhor representação autorizada e disponível do participante em determinado momento, sem tratá-la como verdade absoluta.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-02-organizar-a-compreensao-por-dimensoes">R-CV-02 — Organizar a compreensão por dimensões<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-02-organizar-a-compreensao-por-dimensoes" title="Permanent link">&para;</a></h3>
+<p>Distribuir informações e compreensões nas oito dimensões vigentes: Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-03-atualizar-seletivamente">R-CV-03 — Atualizar seletivamente<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-03-atualizar-seletivamente" title="Permanent link">&para;</a></h3>
+<p>Atualizar apenas as dimensões e os elementos efetivamente afetados por nova informação ou evidência.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-04-preservar-proveniencia-e-explicabilidade">R-CV-04 — Preservar proveniência e explicabilidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-04-preservar-proveniencia-e-explicabilidade" title="Permanent link">&para;</a></h3>
+<p>Manter origem, temporalidade, confiança, confirmação, finalidade, permissões e evidências relevantes de cada elemento.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-05-governar-validade-temporal">R-CV-05 — Governar validade temporal<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-05-governar-validade-temporal" title="Permanent link">&para;</a></h3>
+<p>Distinguir informações atuais, temporárias, envelhecidas, substituídas, arquivadas ou que exigem revisão.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-06-representar-incertezas-e-conflitos">R-CV-06 — Representar incertezas e conflitos<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-06-representar-incertezas-e-conflitos" title="Permanent link">&para;</a></h3>
+<p>Registrar hipóteses, dúvidas, divergências e informações conflitantes sem resolvê-las silenciosamente.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-07-garantir-controle-do-participante">R-CV-07 — Garantir controle do participante<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-07-garantir-controle-do-participante" title="Permanent link">&para;</a></h3>
+<p>Permitir que o participante confirme, corrija, complemente, conteste, limite, oculte ou remova informações conforme as regras aplicáveis.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-08-identificar-necessidades-de-revisao">R-CV-08 — Identificar necessidades de revisão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-08-identificar-necessidades-de-revisao" title="Permanent link">&para;</a></h3>
+<p>Reconhecer quando determinada informação deixou de ser suficientemente atual ou confiável para orientar a jornada.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-09-fornecer-contexto-autorizado">R-CV-09 — Fornecer contexto autorizado<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-09-fornecer-contexto-autorizado" title="Permanent link">&para;</a></h3>
+<p>Entregar recortes mínimos, autorizados e explicáveis para capacidades consumidoras, de acordo com a finalidade solicitada.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-10-preservar-continuidade-historica">R-CV-10 — Preservar continuidade histórica<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-10-preservar-continuidade-historica" title="Permanent link">&para;</a></h3>
+<p>Manter rastreabilidade das mudanças sem transformar estados anteriores em contexto vigente.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-r-cv-11-produzir-eventos-contextuais">R-CV-11 — Produzir eventos contextuais<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-r-cv-11-produzir-eventos-contextuais" title="Permanent link">&para;</a></h3>
+<p>Emitir eventos funcionais que permitam às demais capacidades reagir a mudanças relevantes, respeitando finalidade e permissão.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-36-limites-da-capacidade-02">36. Limites da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-36-limites-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-01-nao-representa-verdade-absoluta">L-CV-01 — Não representa verdade absoluta<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-01-nao-representa-verdade-absoluta" title="Permanent link">&para;</a></h3>
+<p>O Contexto Vivo mantém uma compreensão revisável, não uma definição definitiva do participante.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-02-nao-e-um-supercadastro">L-CV-02 — Não é um supercadastro<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-02-nao-e-um-supercadastro" title="Permanent link">&para;</a></h3>
+<p>A capacidade não existe para acumular toda informação disponível, mas para manter apenas aquilo que possui finalidade legítima e valor funcional.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-03-nao-e-um-perfil-publico">L-CV-03 — Não é um perfil público<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-03-nao-e-um-perfil-publico" title="Permanent link">&para;</a></h3>
+<p>O Contexto Vivo não deve ser confundido com página pública, currículo, biografia ou identidade social exibida a terceiros.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-04-nao-decide-pelo-participante">L-CV-04 — Não decide pelo participante<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-04-nao-decide-pelo-participante" title="Permanent link">&para;</a></h3>
+<p>A capacidade organiza contexto, mas não escolhe objetivos, caminhos, oportunidades ou ações em nome da pessoa.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-05-nao-realiza-diagnostico">L-CV-05 — Não realiza diagnóstico<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-05-nao-realiza-diagnostico" title="Permanent link">&para;</a></h3>
+<p>Informações de saúde, emoções, comportamento ou vulnerabilidade não autorizam diagnóstico clínico, psicológico, financeiro, jurídico ou profissional.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-06-nao-infere-livremente-atributos-sensiveis">L-CV-06 — Não infere livremente atributos sensíveis<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-06-nao-infere-livremente-atributos-sensiveis" title="Permanent link">&para;</a></h3>
+<p>A capacidade não deverá produzir ou persistir inferências sensíveis sem finalidade clara, base autorizada e controles proporcionais.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-07-nao-atualiza-silenciosamente-informacoes-criticas">L-CV-07 — Não atualiza silenciosamente informações críticas<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-07-nao-atualiza-silenciosamente-informacoes-criticas" title="Permanent link">&para;</a></h3>
+<p>Informações sensíveis, permanentes ou de alto impacto exigem confirmação proporcional ao risco.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-08-nao-trata-informacao-envelhecida-como-atual">L-CV-08 — Não trata informação envelhecida como atual<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-08-nao-trata-informacao-envelhecida-como-atual" title="Permanent link">&para;</a></h3>
+<p>A ausência de atualização não autoriza presumir permanência indefinida.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-09-nao-executa-inteligencia-algoritmica">L-CV-09 — Não executa inteligência algorítmica<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-09-nao-executa-inteligencia-algoritmica" title="Permanent link">&para;</a></h3>
+<p>Interpretação, inferência e cálculo de confiança pertencem à Intelligence Layer. O Contexto Vivo representa, governa e disponibiliza a compreensão resultante.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-10-nao-substitui-responsabilidades-da-platform-layer">L-CV-10 — Não substitui responsabilidades da Platform Layer<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-10-nao-substitui-responsabilidades-da-platform-layer" title="Permanent link">&para;</a></h3>
+<p>Persistência, identidade, segurança, auditoria, controle de acesso e infraestrutura de integração pertencem à Platform Layer.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-11-nao-executa-recomendacoes-ou-transacoes">L-CV-11 — Não executa recomendações ou transações<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-11-nao-executa-recomendacoes-ou-transacoes" title="Permanent link">&para;</a></h3>
+<p>O Contexto Vivo fornece contexto. Recomendações, experiências, reservas, compras, contratos ou outras ações pertencem às capacidades e produtos correspondentes.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-l-cv-12-nao-apaga-silenciosamente-a-evolucao">L-CV-12 — Não apaga silenciosamente a evolução<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-l-cv-12-nao-apaga-silenciosamente-a-evolucao" title="Permanent link">&para;</a></h3>
+<p>Correções e exclusões deverão respeitar direitos aplicáveis, mas mudanças funcionais não deverão destruir a rastreabilidade necessária sem regra explícita.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-37-fronteiras-de-responsabilidade">37. Fronteiras de responsabilidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-37-fronteiras-de-responsabilidade" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Responsabilidade</th>
+<th>Dono funcional principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representar e permitir governar o contexto</td>
+<td>Journey / Contexto Vivo</td>
+</tr>
+<tr>
+<td>Interpretar entradas, propor inferências e confiança</td>
+<td>Guivos Intelligence</td>
+</tr>
+<tr>
+<td>Confirmar, corrigir, limitar ou contestar</td>
+<td>Participante por meio do Journey</td>
+</tr>
+<tr>
+<td>Persistir, proteger, auditar e controlar acesso</td>
+<td>Platform Layer</td>
+</tr>
+<tr>
+<td>Produzir recomendações e Próximos Passos</td>
+<td>Capacidade consumidora com apoio da Intelligence</td>
+</tr>
+<tr>
+<td>Executar serviços, experiências e transações</td>
+<td>Produto ou Service Layer correspondente</td>
+</tr>
+</tbody>
+</table>
+<h2 id="product-architecture-pas-001-guivos-journey-38-entradas-da-capacidade-02">38. Entradas da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-38-entradas-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<p>O Contexto Vivo recebe informações de diferentes origens, mas não deve tratá-las como igualmente confiáveis, atuais ou autorizadas.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-381-declaracoes-diretas-do-participante">38.1 Declarações diretas do participante<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-381-declaracoes-diretas-do-participante" title="Permanent link">&para;</a></h3>
+<p>Informações fornecidas conscientemente pelo participante, como:</p>
+<ul>
+<li>momento atual;</li>
+<li>objetivos;</li>
+<li>prioridades;</li>
+<li>capacidades;</li>
+<li>restrições;</li>
+<li>preferências;</li>
+<li>relacionamentos relevantes;</li>
+<li>mudanças recentes;</li>
+<li>correções de informações anteriores.</li>
+</ul>
+<p>Declarações explícitas e atuais constituem a principal fonte de compreensão, mas ainda poderão ser revisadas posteriormente.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-382-confirmacoes-e-contestacoes">38.2 Confirmações e contestações<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-382-confirmacoes-e-contestacoes" title="Permanent link">&para;</a></h3>
+<p>Respostas do participante sobre uma compreensão apresentada pela Guivos:</p>
+<ul>
+<li>confirmação;</li>
+<li>correção;</li>
+<li>complementação;</li>
+<li>contestação;</li>
+<li>limitação de uso;</li>
+<li>solicitação de remoção;</li>
+<li>indicação de que a informação não é mais válida.</li>
+</ul>
+<p>Uma contestação deverá prevalecer sobre inferências anteriores até que existam novas evidências autorizadas.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-383-interpretacoes-propostas">38.3 Interpretações propostas<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-383-interpretacoes-propostas" title="Permanent link">&para;</a></h3>
+<p>Compreensões produzidas pela Intelligence Layer com base em informações autorizadas.</p>
+<p>Exemplos:</p>
+<ul>
+<li>possível mudança de prioridade;</li>
+<li>possível nova restrição;</li>
+<li>indício de interesse;</li>
+<li>hipótese sobre um objetivo;</li>
+<li>relação entre um evento e determinada dimensão.</li>
+</ul>
+<p>Toda interpretação deverá chegar ao Contexto Vivo acompanhada de:</p>
+<ul>
+<li>origem;</li>
+<li>evidências utilizadas;</li>
+<li>temporalidade;</li>
+<li>nível de confiança;</li>
+<li>dimensões possivelmente afetadas;</li>
+<li>necessidade ou não de confirmação.</li>
+</ul>
+<p>Uma interpretação não confirmada não deverá ser apresentada como fato.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-384-eventos-de-vida">38.4 Eventos de Vida<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-384-eventos-de-vida" title="Permanent link">&para;</a></h3>
+<p>Mudanças relevantes que possam alterar uma ou mais dimensões, como:</p>
+<ul>
+<li>mudança de emprego;</li>
+<li>início ou conclusão de estudos;</li>
+<li>nascimento de um filho;</li>
+<li>mudança de cidade;</li>
+<li>início de um projeto;</li>
+<li>alteração financeira significativa;</li>
+<li>início de atividade física;</li>
+<li>ingresso em grupo ou comunidade;</li>
+<li>mudança de objetivo;</li>
+<li>conclusão de uma experiência importante.</li>
+</ul>
+<p>Um Evento de Vida poderá ser:</p>
+<ul>
+<li>declarado pelo participante;</li>
+<li>identificado em uma interação;</li>
+<li>recebido de fonte autorizada;</li>
+<li>proposto pela Intelligence Layer;</li>
+<li>confirmado posteriormente.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-385-experiencias-realizadas">38.5 Experiências realizadas<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-385-experiencias-realizadas" title="Permanent link">&para;</a></h3>
+<p>Informações provenientes da participação efetiva em oportunidades, projetos, eventos, cursos, serviços, viagens, grupos ou outras experiências.</p>
+<p>Exemplos:</p>
+<ul>
+<li>inscrição;</li>
+<li>participação;</li>
+<li>conclusão;</li>
+<li>abandono;</li>
+<li>avaliação;</li>
+<li>resultado obtido;</li>
+<li>habilidade desenvolvida;</li>
+<li>relacionamento criado;</li>
+<li>mudança percebida;</li>
+<li>ausência de resultado.</li>
+</ul>
+<p>A simples inscrição não deverá ser tratada como experiência concluída ou evolução comprovada.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-386-evidencias-de-evolucao">38.6 Evidências de evolução<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-386-evidencias-de-evolucao" title="Permanent link">&para;</a></h3>
+<p>Resultados observáveis ou declarados que indiquem alguma mudança na jornada.</p>
+<p>Podem incluir:</p>
+<ul>
+<li>conclusão de uma ação;</li>
+<li>aquisição de conhecimento;</li>
+<li>desenvolvimento de competência;</li>
+<li>criação de hábito;</li>
+<li>mudança de comportamento;</li>
+<li>alcance de objetivo;</li>
+<li>ampliação de rede;</li>
+<li>melhoria percebida;</li>
+<li>superação ou redução de uma restrição;</li>
+<li>surgimento de nova necessidade.</li>
+</ul>
+<p>Toda evidência deverá indicar se é:</p>
+<ul>
+<li>autodeclarada;</li>
+<li>observada pela plataforma;</li>
+<li>fornecida por organização autorizada;</li>
+<li>inferida;</li>
+<li>confirmada.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-387-sinais-de-interacao">38.7 Sinais de interação<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-387-sinais-de-interacao" title="Permanent link">&para;</a></h3>
+<p>Comportamentos observados durante o uso da Guivos, como:</p>
+<ul>
+<li>temas pesquisados;</li>
+<li>oportunidades visualizadas;</li>
+<li>itens salvos;</li>
+<li>ações iniciadas;</li>
+<li>conteúdos ignorados;</li>
+<li>correções frequentes;</li>
+<li>solicitações de explicação;</li>
+<li>mudança de foco;</li>
+<li>interrupção de uma jornada.</li>
+</ul>
+<p>Esses sinais não deverão ser automaticamente convertidos em preferências, objetivos ou fatos permanentes.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>Visualizar várias oportunidades de corrida não significa necessariamente que o participante deseja se tornar corredor.</p>
+</blockquote>
+<p>Sinais de interação deverão funcionar inicialmente como evidências auxiliares ou hipóteses.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-388-dados-externos-autorizados">38.8 Dados externos autorizados<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-388-dados-externos-autorizados" title="Permanent link">&para;</a></h3>
+<p>Informações provenientes de integrações consentidas, como:</p>
+<ul>
+<li>calendários;</li>
+<li>plataformas esportivas;</li>
+<li>instituições de ensino;</li>
+<li>organizações;</li>
+<li>empresas;</li>
+<li>sistemas profissionais;</li>
+<li>serviços financeiros, quando futuramente permitido;</li>
+<li>dispositivos ou aplicações pessoais.</li>
+</ul>
+<p>A existência de uma integração não autoriza o uso irrestrito de todos os dados disponíveis.</p>
+<p>Cada integração deverá indicar:</p>
+<ul>
+<li>finalidade;</li>
+<li>escopo;</li>
+<li>duração da autorização;</li>
+<li>dados permitidos;</li>
+<li>possibilidade de revogação;</li>
+<li>impacto sobre o Contexto Vivo.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-389-sinais-temporais">38.9 Sinais temporais<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-389-sinais-temporais" title="Permanent link">&para;</a></h3>
+<p>Informações produzidas pela passagem do tempo, como:</p>
+<ul>
+<li>dado sem revisão recente;</li>
+<li>objetivo sem atividade;</li>
+<li>restrição possivelmente encerrada;</li>
+<li>preferência antiga;</li>
+<li>relacionamento sem interação;</li>
+<li>informação com validade conhecida expirada;</li>
+<li>contexto que precisa ser novamente confirmado.</li>
+</ul>
+<p>A passagem do tempo não deverá alterar fatos por si mesma. Ela deverá alterar o estado de validade ou a necessidade de revisão.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-3810-controles-e-autorizacoes">38.10 Controles e autorizações<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-3810-controles-e-autorizacoes" title="Permanent link">&para;</a></h3>
+<p>Decisões do participante relacionadas ao uso de sua informação:</p>
+<ul>
+<li>consentimento;</li>
+<li>revogação;</li>
+<li>limitação de finalidade;</li>
+<li>ocultação;</li>
+<li>autorização para compartilhar;</li>
+<li>autorização temporária;</li>
+<li>escolha de não persistir;</li>
+<li>solicitação de exclusão.</li>
+</ul>
+<p>Mudanças de autorização são entradas prioritárias e deverão produzir efeito imediato sobre utilizações futuras.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-39-requisitos-minimos-de-uma-entrada">39. Requisitos mínimos de uma entrada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-39-requisitos-minimos-de-uma-entrada" title="Permanent link">&para;</a></h2>
+<p>Uma entrada somente poderá alterar o Contexto Vivo quando possuir informações suficientes para avaliação funcional.</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Origem</td>
+<td>Identificar de onde veio</td>
+</tr>
+<tr>
+<td>Data e hora</td>
+<td>Determinar temporalidade</td>
+</tr>
+<tr>
+<td>Autor ou sistema</td>
+<td>Identificar quem informou ou produziu</td>
+</tr>
+<tr>
+<td>Tipo</td>
+<td>Distinguir fato, declaração, evento, hipótese ou evidência</td>
+</tr>
+<tr>
+<td>Confiança</td>
+<td>Indicar força da compreensão</td>
+</tr>
+<tr>
+<td>Confirmação</td>
+<td>Registrar validação pelo participante</td>
+</tr>
+<tr>
+<td>Dimensões afetadas</td>
+<td>Limitar o impacto da atualização</td>
+</tr>
+<tr>
+<td>Finalidade</td>
+<td>Justificar por que a informação é necessária</td>
+</tr>
+<tr>
+<td>Permissão</td>
+<td>Determinar usos autorizados</td>
+</tr>
+<tr>
+<td>Sensibilidade</td>
+<td>Aplicar controles proporcionais</td>
+</tr>
+<tr>
+<td>Validade estimada</td>
+<td>Apoiar envelhecimento e revisão</td>
+</tr>
+</tbody>
+</table>
+<p>Entradas incompletas poderão permanecer temporariamente em avaliação, mas não deverão modificar silenciosamente informações relevantes.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-40-regras-de-admissao-das-entradas">40. Regras de admissão das entradas<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-40-regras-de-admissao-das-entradas" title="Permanent link">&para;</a></h2>
+<h3 id="product-architecture-pas-001-guivos-journey-401-relevancia">40.1 Relevância<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-401-relevancia" title="Permanent link">&para;</a></h3>
+<p>A entrada deverá contribuir para compreender o momento, apoiar a jornada ou cumprir finalidade autorizada.</p>
+<p>Informações sem utilidade demonstrável não deverão integrar o Contexto Vivo.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-402-proporcionalidade">40.2 Proporcionalidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-402-proporcionalidade" title="Permanent link">&para;</a></h3>
+<p>A profundidade da informação coletada deverá ser proporcional ao valor que será entregue.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-403-confirmacao-proporcional-ao-impacto">40.3 Confirmação proporcional ao impacto<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-403-confirmacao-proporcional-ao-impacto" title="Permanent link">&para;</a></h3>
+<p>Quanto maior o impacto, a sensibilidade ou a permanência da informação, maior deverá ser a necessidade de confirmação.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-404-preservacao-de-conflitos">40.4 Preservação de conflitos<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-404-preservacao-de-conflitos" title="Permanent link">&para;</a></h3>
+<p>Uma nova entrada conflitante não deverá apagar automaticamente a anterior.</p>
+<p>O sistema deverá avaliar se houve:</p>
+<ul>
+<li>erro;</li>
+<li>mudança real;</li>
+<li>diferença de contexto;</li>
+<li>diferença temporal;</li>
+<li>interpretação equivocada;</li>
+<li>coexistência legítima.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-405-separacao-entre-observacao-e-conclusao">40.5 Separação entre observação e conclusão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-405-separacao-entre-observacao-e-conclusao" title="Permanent link">&para;</a></h3>
+<p>O Contexto Vivo deverá preservar a diferença entre:</p>
+<div class="highlight"><pre><span></span><code>Participante visualizou uma oportunidade de corrida
+</code></pre></div>
+<p>e:</p>
+<div class="highlight"><pre><span></span><code>Participante prefere atividades de corrida
+</code></pre></div>
+<p>A primeira é observação. A segunda é uma interpretação que poderá exigir mais evidências ou confirmação.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-406-respeito-a-finalidade">40.6 Respeito à finalidade<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-406-respeito-a-finalidade" title="Permanent link">&para;</a></h3>
+<p>Uma informação coletada para determinada finalidade não deverá ser automaticamente utilizada em outra finalidade incompatível.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-41-saidas-da-capacidade-02">41. Saídas da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-41-saidas-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<h3 id="product-architecture-pas-001-guivos-journey-411-representacao-contextual-vigente">41.1 Representação contextual vigente<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-411-representacao-contextual-vigente" title="Permanent link">&para;</a></h3>
+<p>A principal saída é a melhor representação disponível e autorizada do participante naquele momento.</p>
+<p>Ela deverá conter:</p>
+<ul>
+<li>dimensões relevantes;</li>
+<li>elementos ativos;</li>
+<li>níveis de confiança;</li>
+<li>temporalidade;</li>
+<li>pontos de incerteza;</li>
+<li>informações que precisam de revisão;</li>
+<li>controles aplicáveis.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-412-estado-de-cada-dimensao">41.2 Estado de cada dimensão<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-412-estado-de-cada-dimensao" title="Permanent link">&para;</a></h3>
+<p>Para cada dimensão, o Contexto Vivo deverá disponibilizar uma síntese própria.</p>
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th>Exemplo de saída</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identidade</td>
+<td>Papéis atuais considerados relevantes</td>
+</tr>
+<tr>
+<td>Momento</td>
+<td>Situação predominante da vida atual</td>
+</tr>
+<tr>
+<td>Direção</td>
+<td>Objetivos e prioridades ativos</td>
+</tr>
+<tr>
+<td>Capacidades</td>
+<td>Recursos, conhecimentos e competências disponíveis</td>
+</tr>
+<tr>
+<td>Restrições</td>
+<td>Limitações relevantes no momento</td>
+</tr>
+<tr>
+<td>Preferências</td>
+<td>Formas preferidas de participação</td>
+</tr>
+<tr>
+<td>Relacionamentos</td>
+<td>Pessoas e organizações relevantes</td>
+</tr>
+<tr>
+<td>Evolução</td>
+<td>Mudanças e evidências acumuladas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="product-architecture-pas-001-guivos-journey-413-visao-meu-contexto-hoje">41.3 Visão Meu Contexto Hoje<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-413-visao-meu-contexto-hoje" title="Permanent link">&para;</a></h3>
+<p>Saída compreensível ao participante contendo:</p>
+<ul>
+<li>o que a Guivos entende;</li>
+<li>o que mudou;</li>
+<li>quais informações estão incertas;</li>
+<li>o que precisa ser revisado;</li>
+<li>de onde vieram as informações;</li>
+<li>como corrigir ou limitar seu uso.</li>
+</ul>
+<p>Essa saída deverá utilizar linguagem humana, e não somente atributos técnicos.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-414-solicitacoes-de-confirmacao">41.4 Solicitações de confirmação<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-414-solicitacoes-de-confirmacao" title="Permanent link">&para;</a></h3>
+<p>Quando necessário, a capacidade poderá produzir perguntas como:</p>
+<ul>
+<li>“Isso ainda representa sua situação atual?”</li>
+<li>“Esse objetivo continua sendo prioridade?”</li>
+<li>“Sua disponibilidade mudou?”</li>
+<li>“Você deseja que essa informação seja utilizada para encontrar oportunidades?”</li>
+<li>“Entendemos que sua prioridade pode ter mudado. Isso está correto?”</li>
+</ul>
+<p>As solicitações deverão ser curtas, contextuais e não repetitivas.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-415-alertas-de-envelhecimento">41.5 Alertas de envelhecimento<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-415-alertas-de-envelhecimento" title="Permanent link">&para;</a></h3>
+<p>Sinalizações de que determinada informação pode não representar mais o momento atual.</p>
+<p>Exemplos:</p>
+<ul>
+<li>objetivo sem revisão há longo período;</li>
+<li>restrição temporária possivelmente encerrada;</li>
+<li>preferência antiga;</li>
+<li>relacionamento que pode não ser mais relevante;</li>
+<li>informação importada cuja autorização expirou.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-416-explicacoes-contextuais">41.6 Explicações contextuais<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-416-explicacoes-contextuais" title="Permanent link">&para;</a></h3>
+<p>A capacidade deverá responder perguntas como:</p>
+<ul>
+<li>por que a Guivos entende isso;</li>
+<li>quando a informação foi obtida;</li>
+<li>quais evidências foram utilizadas;</li>
+<li>se a compreensão é confirmada ou inferida;</li>
+<li>como ela influencia determinada experiência.</li>
+</ul>
+<h3 id="product-architecture-pas-001-guivos-journey-417-contexto-autorizado-para-capacidades-consumidoras">41.7 Contexto autorizado para capacidades consumidoras<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-417-contexto-autorizado-para-capacidades-consumidoras" title="Permanent link">&para;</a></h3>
+<p>O Contexto Vivo poderá fornecer recortes específicos para:</p>
+<ul>
+<li>Objetivos;</li>
+<li>Próximos Passos;</li>
+<li>Oportunidades Ativas;</li>
+<li>Intervenções Contextuais;</li>
+<li>Experiências;</li>
+<li>Evolução Contínua;</li>
+<li>Guivos Intelligence;</li>
+<li>produtos e serviços autorizados.</li>
+</ul>
+<p>Cada saída deverá conter apenas o necessário para a finalidade solicitada.</p>
+<p>Exemplo:</p>
+<p>Uma capacidade que procura grupos de corrida poderá precisar de:</p>
+<ul>
+<li>objetivo relacionado à saúde;</li>
+<li>localização aproximada;</li>
+<li>disponibilidade;</li>
+<li>preferência por atividade coletiva;</li>
+<li>limitações relevantes.</li>
+</ul>
+<p>Ela não precisa receber toda a história pessoal do participante.</p>
+<h3 id="product-architecture-pas-001-guivos-journey-418-historico-de-evolucao">41.8 Histórico de evolução<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-418-historico-de-evolucao" title="Permanent link">&para;</a></h3>
+<p>Registro temporal das mudanças relevantes:</p>
+<ul>
+<li>estado anterior;</li>
+<li>nova informação;</li>
+<li>mudança realizada;</li>
+<li>motivo;</li>
+<li>evidência;</li>
+<li>confirmação;</li>
+<li>data;</li>
+<li>dimensões afetadas.</li>
+</ul>
+<p>O histórico deverá permitir explicar a evolução sem transformar informações antigas em contexto atual.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-42-eventos-produzidos">42. Eventos produzidos<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-42-eventos-produzidos" title="Permanent link">&para;</a></h2>
+<p>As saídas operacionais poderão gerar eventos como:</p>
+<ul>
+<li><code>ContextoAtualizado</code>;</li>
+<li><code>DimensaoAtualizada</code>;</li>
+<li><code>InformacaoConfirmada</code>;</li>
+<li><code>InformacaoCorrigida</code>;</li>
+<li><code>InformacaoContestada</code>;</li>
+<li><code>InformacaoEnvelhecida</code>;</li>
+<li><code>RevisaoNecessaria</code>;</li>
+<li><code>ConflitoIdentificado</code>;</li>
+<li><code>EventoDeVidaReconhecido</code>;</li>
+<li><code>ObjetivoPossivelmenteImpactado</code>;</li>
+<li><code>RestricaoAlterada</code>;</li>
+<li><code>PreferenciaAlterada</code>;</li>
+<li><code>EvidenciaDeEvolucaoRegistrada</code>;</li>
+<li><code>PermissaoAlterada</code>;</li>
+<li><code>ContextoLimitado</code>;</li>
+<li><code>ContextoRemovido</code>.</li>
+</ul>
+<p>Esses nomes representam eventos funcionais. Não determinam ainda nomenclatura técnica, tecnologia de mensageria ou estrutura definitiva de implementação.</p>
+<h2 id="product-architecture-pas-001-guivos-journey-43-contrato-funcional-das-saidas">43. Contrato funcional das saídas<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-43-contrato-funcional-das-saidas" title="Permanent link">&para;</a></h2>
+<p>Toda saída destinada a outra capacidade deverá informar:</p>
+<ol>
+<li>finalidade de uso;</li>
+<li>recorte contextual fornecido;</li>
+<li>data de referência;</li>
+<li>nível de confiança;</li>
+<li>informações inferidas;</li>
+<li>permissões aplicáveis;</li>
+<li>restrições de reutilização;</li>
+<li>necessidade de nova confirmação;</li>
+<li>validade estimada;</li>
+<li>origem das informações relevantes.</li>
+</ol>
+<blockquote>
+<p>O Contexto Vivo não entrega todos os dados do participante. Ele entrega a menor representação contextual suficiente, autorizada e explicável para cada finalidade.</p>
+</blockquote>
+<h2 id="product-architecture-pas-001-guivos-journey-44-estado-atual-da-capacidade-02">44. Estado atual da Capacidade 02<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-44-estado-atual-da-capacidade-02" title="Permanent link">&para;</a></h2>
 <p>Já consolidados:</p>
 <ul>
 <li>definição funcional;</li>
@@ -14227,22 +14742,29 @@ Implementação = realização progressiva
 <li>evolução independente;</li>
 <li>ciclo de vida inicial;</li>
 <li>fluxo funcional;</li>
-<li>visão conceitual <code>Meu Contexto Hoje</code>.</li>
+<li>visão conceitual <code>Meu Contexto Hoje</code>;</li>
+<li>responsabilidades e limites;</li>
+<li>fronteiras entre Journey, Intelligence, Platform e capacidades consumidoras;</li>
+<li>categorias de entrada;</li>
+<li>requisitos mínimos e regras de admissão;</li>
+<li>saídas funcionais;</li>
+<li>eventos funcionais iniciais;</li>
+<li>contrato funcional das saídas.</li>
 </ul>
 <p>Ainda pendentes:</p>
 <ul>
-<li>responsabilidades e limites completos;</li>
-<li>entradas e saídas;</li>
-<li>regras de envelhecimento;</li>
+<li>estados funcionais de cada dimensão;</li>
+<li>regras detalhadas de atualização e envelhecimento;</li>
 <li>resolução detalhada de conflitos;</li>
-<li>eventos produzidos;</li>
+<li>comportamentos da interface <code>Meu Contexto Hoje</code>;</li>
+<li>contratos detalhados dos eventos;</li>
 <li>integrações;</li>
 <li>KPIs;</li>
 <li>casos ideal, alternativo e limite;</li>
 <li>contrato da capacidade.</li>
 </ul>
-<h2 id="product-architecture-pas-001-guivos-journey-36-ponto-de-retomada">36. Ponto de retomada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-36-ponto-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Retomar na Capacidade 02 — Contexto Vivo, detalhando responsabilidades, entradas, saídas, estados de cada dimensão, regras de atualização e envelhecimento, conflitos, interface, eventos, KPIs, cenários e contrato de aceite.</p></section><section class="print-page" id="product-architecture-journey" heading-number="9.4"><h1 id="product-architecture-journey-guivos-journey">Guivos Journey<a class="headerlink" href="#product-architecture-journey-guivos-journey" title="Permanent link">&para;</a></h1>
+<h2 id="product-architecture-pas-001-guivos-journey-45-ponto-de-retomada">45. Ponto de retomada<a class="headerlink" href="#product-architecture-pas-001-guivos-journey-45-ponto-de-retomada" title="Permanent link">&para;</a></h2>
+<p>Retomar na Capacidade 02 — Contexto Vivo, definindo os estados funcionais de cada dimensão e, em seguida, as regras de atualização e envelhecimento.</p></section><section class="print-page" id="product-architecture-journey" heading-number="9.4"><h1 id="product-architecture-journey-guivos-journey">Guivos Journey<a class="headerlink" href="#product-architecture-journey-guivos-journey" title="Permanent link">&para;</a></h1>
 <h2 id="product-architecture-journey-papel">Papel<a class="headerlink" href="#product-architecture-journey-papel" title="Permanent link">&para;</a></h2>
 <p>Guivos Journey é a camada principal de experiência do Ecossistema Guivos.</p>
 <p>Ele apoia continuamente a jornada do participante e orquestra, em uma experiência unificada, oportunidades, conteúdos, serviços, produtos, experiências, recomendações e interações provenientes das demais camadas da Guivos.</p>
