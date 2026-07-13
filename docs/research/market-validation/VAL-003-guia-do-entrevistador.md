@@ -2,7 +2,7 @@
 id: VAL-003
 title: Guia do Entrevistador
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-07-12
 ---
@@ -34,6 +34,9 @@ O entrevistador deve:
 
 - Pode me contar um exemplo real?
 - Quando isso aconteceu pela última vez?
+- Você já descobriu tarde demais uma oportunidade que poderia ter sido útil?
+- Você já procurou possibilidades e não encontrou nenhuma que fizesse sentido para seu momento?
+- O que tornava as opções encontradas inadequadas?
 - Como você tentou resolver?
 - Quanto tempo ou esforço isso exigiu?
 - O que tornou essa experiência difícil?
@@ -54,19 +57,21 @@ Evitar:
 - Posso explicar por que sua objeção não se aplica?
 - Com que frequência você usaria, mesmo sem conhecer a experiência?
 - Você confiaria na plataforma se ela tivesse segurança?
+- Quantas oportunidades você perdeu sem saber que existiam?
 
 ## 6. Ordem da entrevista
 
 1. explicar o objetivo da pesquisa;
 2. compreender a área da vida e o resultado desejado;
 3. explorar dificuldades e comportamento passado;
-4. apresentar o texto neutro da Guivos;
-5. pedir explicação com palavras próprias;
-6. explorar situação de primeiro uso, expectativa e resultado concreto;
-7. explorar relevância, contribuição percebida e objeções;
-8. perguntar sobre primeira experiência e monetização condicionada a resultado;
-9. registrar observações comportamentais;
-10. encerrar sem tentar converter a pessoa.
+4. diferenciar descoberta tardia de ausência de oportunidade adequada;
+5. apresentar o texto neutro da Guivos;
+6. pedir explicação com palavras próprias;
+7. explorar situação de primeiro uso, expectativa e resultado concreto;
+8. explorar relevância, contribuição percebida e objeções;
+9. perguntar sobre primeira experiência e monetização condicionada a resultado;
+10. registrar observações comportamentais;
+11. encerrar sem tentar converter a pessoa.
 
 ## 7. Registro mínimo
 
@@ -77,6 +82,9 @@ Evitar:
 - resultado desejado;
 - principais dificuldades;
 - comportamento atual;
+- episódio de descoberta tardia, quando houver;
+- episódio de busca sem oportunidade adequada, quando houver;
+- motivos de inadequação das opções encontradas;
 - compreensão espontânea da Guivos;
 - primeiro uso imaginado;
 - o que espera encontrar ou fazer na plataforma;
@@ -92,6 +100,8 @@ Evitar:
 Quando o participante interpretar a proposta de forma incorreta, o entrevistador deve primeiro registrar a interpretação. Somente depois poderá reler o texto oficial, sem adicionar argumentos comerciais.
 
 Preocupações espontâneas com confiança, privacidade ou recorrência deverão ser registradas, mas o entrevistador não deverá forçar previsões sobre aspectos operacionais que ainda não foram demonstrados.
+
+O entrevistador não deverá sugerir que uma oportunidade foi perdida quando o participante nunca chegou a conhecê-la. A investigação deverá se limitar a experiências recordadas de descoberta tardia, busca frustrada ou inadequação das opções encontradas.
 
 ## 9. Encerramento
 
