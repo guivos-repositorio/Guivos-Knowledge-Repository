@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.2.1
+version: 1.2.2
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -86,6 +86,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Conceito | Decisão | Situação |
 |---|---|---|
 | Contexto Vivo | Manter | Modelo multidimensional com responsabilidades, limites, entradas e saídas consolidados no PAS-001 0.5.0 |
+| Estados Dimensionais do Contexto Vivo | Manter | Extensão normativa PAS-001-CV-STATE-001 1.0.0 define estados, transições e impactos entre dimensões |
 | Interpretação do Contexto | Manter | Responsabilidade funcional apoiada pela Intelligence Layer |
 | Meu Contexto Hoje | Manter | Visão conceitual para transparência e controle do participante |
 | Evolução Independente das Dimensões | Manter | Dimensões evoluem sem reconstrução integral do contexto |
@@ -109,8 +110,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 A `GE2-SYNC-007` confirmou que o extrato final da conversa anterior não continha decisão arquitetural madura ausente do GKR. As correções necessárias foram editoriais e de sincronização.
 
-O `PAS-001 0.5.0` avançou a Capacidade 02 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+O `PAS-001 0.5.0` e sua extensão normativa `PAS-001-CV-STATE-001 1.0.0` avançaram a Capacidade 02 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Completar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, iniciando pelos estados funcionais das oito dimensões e preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelas regras detalhadas de atualização e envelhecimento e preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
