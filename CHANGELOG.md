@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.0 — Contexto Vivo Functional Contracts
+
+- Atualização do `PAS-001 — Guivos Journey` para `0.5.0`.
+- Consolidação das responsabilidades e dos limites da Capacidade 02 — Contexto Vivo.
+- Formalização das fronteiras entre Journey, Guivos Intelligence, Platform Layer, participante e capacidades consumidoras.
+- Definição das categorias de entrada, incluindo declarações, contestações, interpretações, Eventos de Vida, experiências, evidências, sinais, integrações e autorizações.
+- Definição dos atributos mínimos e das regras de admissão das entradas.
+- Consolidação das saídas funcionais, da visão `Meu Contexto Hoje`, dos recortes autorizados e do histórico de evolução.
+- Registro dos eventos funcionais iniciais e do contrato funcional das saídas.
+- Atualização do Roadmap para `5.3.0` e do Knowledge Board para `5.4.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.2.1`.
+- Atualização do README e da página inicial para `PAS-001 0.5.0`.
+- Definição dos estados funcionais das oito dimensões como próximo ponto exato de retomada.
+
 ## 0.29.4 — Opportunity Friction Refinement
 
 - Atualização do `VAL-002 — Pesquisa Conceitual B2C` para `1.2.1`.
