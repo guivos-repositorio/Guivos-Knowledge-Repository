@@ -2290,6 +2290,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../product-architecture/journey/" class="md-nav__link">
         
   
@@ -4927,7 +4962,7 @@
 <li><strong>Sincronização vigente:</strong> <code>GE2-SYNC-007</code>.</li>
 <li><strong>Revisão vigente:</strong> <code>AR-001</code>, concluída na versão <code>0.5.0</code>.</li>
 <li><strong>Especificação ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
-<li><strong>Extensão normativa ativa:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>.</li>
+<li><strong>Extensões normativas ativas:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code> e <code>PAS-001-CV-UPDATE-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
@@ -4957,17 +4992,26 @@
 <p>A extensão normativa <code>PAS-001-CV-STATE-001 1.0.0</code> consolidou:</p>
 <ul>
 <li>estrutura comum de estado;</li>
-<li>estados funcionais de Identidade;</li>
-<li>estados funcionais de Momento;</li>
-<li>estados funcionais de Direção;</li>
-<li>estados funcionais de Capacidades;</li>
-<li>estados funcionais de Restrições;</li>
-<li>estados funcionais de Preferências;</li>
-<li>estados funcionais de Relacionamentos;</li>
-<li>estados funcionais de Evolução;</li>
+<li>estados funcionais das oito dimensões;</li>
 <li>transições e impactos controlados entre dimensões.</li>
 </ul>
-<p>O próximo bloco definirá as regras detalhadas de atualização e envelhecimento.</p>
+<p>A extensão normativa <code>PAS-001-CV-UPDATE-001 1.0.0</code> consolidou:</p>
+<ul>
+<li>elemento contextual como unidade mínima de atualização;</li>
+<li>gatilhos e fluxo funcional de atualização;</li>
+<li>resultados possíveis da avaliação;</li>
+<li>confirmação proporcional ao impacto;</li>
+<li>regras conforme origem e evidência;</li>
+<li>classes temporais e estados de envelhecimento;</li>
+<li>horizontes e revisões por dimensão;</li>
+<li>prevenção de fadiga de confirmação;</li>
+<li>atualizações silenciosas permitidas e proibidas;</li>
+<li>efeitos das permissões;</li>
+<li>propagação, reprocessamento e atualizações retroativas;</li>
+<li>distinção entre correção e mudança real;</li>
+<li>eventos funcionais relacionados.</li>
+</ul>
+<p>O próximo bloco definirá a resolução detalhada de conflitos entre informações, interpretações, fontes e temporalidades.</p>
 <h2 id="reconciliacao-de-continuidade">Reconciliação de continuidade<a class="headerlink" href="#reconciliacao-de-continuidade" title="Permanent link">&para;</a></h2>
 <p>A <code>GE2-SYNC-007</code> concluiu a leitura do estado atual do repositório e a comparação com o extrato final da conversa anterior.</p>
 <p>Resultados:</p>
@@ -4976,7 +5020,7 @@
 <li>Contexto Vivo e Market Validation estavam incorporados;</li>
 <li>divergências editoriais demonstráveis foram autorizadas para correção;</li>
 <li>formulário e planilha de validação permanecem entregáveis operacionais futuros;</li>
-<li>o ponto de retomada do Product Engineering foi preservado e avançado para atualização e envelhecimento do Contexto Vivo.</li>
+<li>o ponto de retomada do Product Engineering foi preservado e avançado para resolução de conflitos do Contexto Vivo.</li>
 </ul>
 <h2 id="progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
@@ -4996,7 +5040,7 @@
 <tr>
 <td>02 — Contexto Vivo</td>
 <td>In progress</td>
-<td>65%</td>
+<td>75%</td>
 </tr>
 <tr>
 <td>03 — Objetivos</td>
@@ -5067,7 +5111,6 @@
 <p>Retomar na <strong>Capacidade 02 — Contexto Vivo</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>regras detalhadas de atualização e envelhecimento;</li>
 <li>resolução detalhada de conflitos;</li>
 <li>comportamentos da interface <code>Meu Contexto Hoje</code>;</li>
 <li>contratos detalhados dos eventos;</li>
