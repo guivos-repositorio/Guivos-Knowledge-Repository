@@ -2,6 +2,20 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.3 — Living Context Conflict Resolution
+
+- Criação de `PAS-001-CV-CONFLICT-001 — Resolução de Conflitos do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição dos princípios, tipos, estados funcionais, gatilhos e registro próprio dos conflitos contextuais.
+- Formalização do fluxo de resolução, critérios de comparação e ordem funcional de consideração sem hierarquia absoluta.
+- Consolidação da participação do participante, ausência de resposta, conflitos entre declarações, integrações, organizações, comportamentos, dimensões, permissões e temporalidades.
+- Definição dos impactos sobre capacidades consumidoras, decisões existentes e recortes contextuais com incerteza explícita.
+- Registro das resoluções automáticas permitidas e proibidas, explicabilidade, contestação, reabertura e critérios de resolução confiável.
+- Atualização da Arquitetura de Produtos para `1.2.3` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `5.6.0`, do Knowledge Board para `5.7.0` e da Matriz de Consolidação Canônica para `1.2.4`.
+- Atualização do README e da página inicial do GKR.
+- Definição dos comportamentos funcionais da interface `Meu Contexto Hoje` como próximo ponto exato de retomada.
+
 ## 0.30.2 — Living Context Update and Aging Rules
 
 - Criação de `PAS-001-CV-UPDATE-001 — Regras de Atualização e Envelhecimento do Contexto Vivo`, versão `1.0.0`.
