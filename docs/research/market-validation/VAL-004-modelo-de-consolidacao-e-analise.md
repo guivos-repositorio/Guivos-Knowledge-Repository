@@ -2,7 +2,7 @@
 id: VAL-004
 title: Modelo de Consolidação e Análise
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
 last_updated: 2026-07-12
 ---
@@ -36,7 +36,9 @@ Cada resposta deverá possuir:
 
 ## 3. Indicadores quantitativos
 
-- dor relevante;
+- descoberta tardia relevante;
+- lacuna de adequação de oportunidades;
+- Índice de Fricção de Oportunidades — IFO;
 - esforço atual de busca;
 - compreensão autodeclarada;
 - compreensão classificada;
@@ -52,16 +54,36 @@ Indicadores diagnósticos:
 - resultado desejado (`Q5`);
 - dificuldades (`Q6`);
 - comportamento atual (`Q7`);
-- situação de primeiro uso (`Q13`);
-- expectativas sobre a plataforma (`Q14`);
-- resultado concreto de valor (`Q15`);
-- barreira principal (`Q19`).
+- descoberta tardia (`Q8`);
+- ausência de oportunidade adequada (`Q9`);
+- situação de primeiro uso (`Q14`);
+- expectativas sobre a plataforma (`Q15`);
+- resultado concreto de valor (`Q16`);
+- barreira principal (`Q20`).
 
 Confiança operacional, frequência de uso, retenção e recomendação não serão tratadas como KPIs da primeira pesquisa conceitual.
 
-## 4. Classificação da compreensão
+## 4. Tratamento de Q8 e Q9
 
-A resposta aberta “como você explicaria a Guivos?” da `Q11` será classificada em:
+A `Q8` mede somente oportunidades conhecidas tarde demais. A alternativa `8.6 — Não me recordo` deverá ser excluída do denominador do indicador de descoberta tardia.
+
+A `Q9` mede situações em que o participante procurou possibilidades, mas não encontrou oportunidade compatível com seu momento. As alternativas `9.6 — Não procurei oportunidades nesse período` e `9.7 — Não me recordo` deverão ser exibidas separadamente e excluídas do denominador da lacuna de adequação.
+
+O dashboard deverá apresentar:
+
+- base total de respondentes;
+- base elegível de cada componente;
+- percentual de não recordação;
+- percentual que não procurou oportunidades;
+- descoberta tardia relevante;
+- lacuna de adequação;
+- IFO consolidado.
+
+Nenhuma ausência de busca poderá ser interpretada automaticamente como ausência do problema.
+
+## 5. Classificação da compreensão
+
+A resposta aberta “como você explicaria a Guivos?” da `Q12` será classificada em:
 
 - correta;
 - parcialmente correta;
@@ -76,13 +98,15 @@ Critérios mínimos para classificação correta:
 3. reconhecer contribuição para avanço ou evolução, sem afirmar que a plataforma decide pela pessoa;
 4. não reduzir a Guivos a marketplace, rede social, catálogo ou chatbot isolado.
 
-## 5. Análise qualitativa
+## 6. Análise qualitativa
 
-As respostas abertas serão codificadas por temas:
+As respostas abertas e entrevistas serão codificadas por temas:
 
 - área prioritária;
 - resultado desejado;
-- dor;
+- descoberta tardia;
+- busca sem oportunidade adequada;
+- fatores de inadequação: objetivo, tempo, localização, preço, disponibilidade, formato ou necessidade;
 - comportamento atual;
 - proposta compreendida;
 - situação de primeiro uso;
@@ -95,7 +119,7 @@ As respostas abertas serão codificadas por temas:
 - sugestão;
 - caso de uso espontâneo.
 
-## 6. Segmentações mínimas
+## 7. Segmentações mínimas
 
 Comparar resultados por:
 
@@ -105,7 +129,9 @@ Comparar resultados por:
 - região derivada do estado;
 - área prioritária de evolução;
 - resultado desejado;
-- intensidade da dor;
+- descoberta tardia;
+- lacuna de adequação;
+- intensidade do IFO;
 - situação de primeiro uso;
 - intenção de experimentar;
 - interesse em primeira experiência;
@@ -115,36 +141,40 @@ Participantes fora do Brasil deverão ser analisados separadamente da base nacio
 
 Estados com menos de 30 respostas deverão ser destacados como base reduzida e não deverão receber conclusão isolada. Concentração excessiva em um único estado ou canal deverá ser identificada e considerada na decisão.
 
-## 7. Regras de qualidade
+## 8. Regras de qualidade
 
 - excluir respostas claramente incompletas ou automatizadas;
 - preservar respostas negativas;
 - registrar a versão do instrumento utilizada;
 - não combinar diretamente respostas de versões incompatíveis sem mapeamento explícito;
 - não combinar entrevistas e formulário sem identificar a origem;
+- não interpretar oportunidade desconhecida como oportunidade perdida;
+- separar não recordação, ausência de busca e busca sem resultado adequado;
 - não usar média isolada quando a distribuição for polarizada;
-- apresentar tamanho da amostra de cada segmento;
+- apresentar tamanho da amostra de cada segmento e de cada denominador;
 - não generalizar resultados concentrados em poucos estados como validação nacional;
 - distinguir percepção declarada de comportamento real;
 - distinguir correlação de causalidade;
 - registrar limitações da coleta.
 
-## 8. Saída executiva
+## 9. Saída executiva
 
 O relatório final deverá conter:
 
 1. resumo executivo;
 2. perfil e distribuição geográfica da amostra;
 3. indicadores gerais;
-4. resultados por hipótese;
-5. áreas e resultados desejados prioritários;
-6. situações de primeiro uso mais frequentes;
-7. expectativas sobre o que encontrar ou fazer na Guivos;
-8. resultados concretos mais valorizados;
-9. diferenças por segmento, estado e região quando houver base suficiente;
-10. principais objeções;
-11. sinais comportamentais;
-12. decisão recomendada;
-13. ajustes prioritários;
-14. limitações e alcance permitido da conclusão;
-15. próxima experiência de validação.
+4. descoberta tardia e lacuna de adequação analisadas separadamente;
+5. IFO e respectivas bases elegíveis;
+6. resultados por hipótese;
+7. áreas e resultados desejados prioritários;
+8. situações de primeiro uso mais frequentes;
+9. expectativas sobre o que encontrar ou fazer na Guivos;
+10. resultados concretos mais valorizados;
+11. diferenças por segmento, estado e região quando houver base suficiente;
+12. principais objeções;
+13. sinais comportamentais;
+14. decisão recomendada;
+15. ajustes prioritários;
+16. limitações e alcance permitido da conclusão;
+17. próxima experiência de validação.
