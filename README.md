@@ -10,7 +10,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação ativa:** PAS-001 — Guivos Journey 0.5.0
-- **Extensões normativas ativas:** PAS-001-CV-STATE-001 1.0.0 e PAS-001-CV-UPDATE-001 1.0.0
+- **Extensões normativas ativas:** PAS-001-CV-STATE-001 1.0.0, PAS-001-CV-UPDATE-001 1.0.0 e PAS-001-CV-CONFLICT-001 1.0.0
 - **Capacidade ativa:** 02 — Contexto Vivo
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
@@ -47,14 +47,24 @@ A extensão normativa `PAS-001-CV-UPDATE-001 1.0.0` consolidou:
 - efeitos das permissões, propagação e reprocessamento;
 - atualizações retroativas, correções e eventos funcionais relacionados.
 
+A extensão normativa `PAS-001-CV-CONFLICT-001 1.0.0` consolidou:
+
+- tipos e estados funcionais de conflito;
+- preservação de proveniência, temporalidade e contexto;
+- ordem funcional de consideração sem hierarquia absoluta;
+- participação do participante na resolução;
+- conflitos entre declarações, integrações, organizações, comportamentos e dimensões;
+- impactos sobre capacidades consumidoras e decisões existentes;
+- resolução automática permitida e proibida;
+- explicabilidade, contestação e reabertura.
+
 ## Ponto exato de retomada
 
 Retomar na `Capacidade 02 — Contexto Vivo`.
 
 Próxima entrega:
 
-- resolução detalhada de conflitos;
-- comportamentos da interface `Meu Contexto Hoje`;
+- comportamentos funcionais da interface `Meu Contexto Hoje`;
 - contratos detalhados dos eventos;
 - integrações;
 - KPIs;
@@ -85,6 +95,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
 - [Estados Funcionais do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-estados-dimensionais.md)
 - [Atualização e Envelhecimento do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md)
+- [Resolução de Conflitos do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-resolucao-conflitos.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
