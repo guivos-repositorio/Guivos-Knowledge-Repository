@@ -9,7 +9,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - frente `Product Engineering` ativa;
 - sincronização `GE2-SYNC-007` concluída;
 - revisão `AR-001 0.5.0` concluída;
-- `PAS-001 — Guivos Journey 0.4.2` ativo;
+- `PAS-001 — Guivos Journey 0.5.0` ativo;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -19,6 +19,8 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 ## Missão atual
 
 Completar funcionalmente a **Capacidade 02 — Contexto Vivo** no `PAS-001`.
+
+Responsabilidades, limites, fronteiras, entradas, saídas e eventos funcionais iniciais já estão consolidados.
 
 ## Acesso rápido
 
@@ -49,4 +51,4 @@ Completar funcionalmente a **Capacidade 02 — Contexto Vivo** no `PAS-001`.
 
 ## Ponto de retomada
 
-Retomar na Capacidade 02, detalhando responsabilidades, limites, entradas, saídas, estados, envelhecimento, conflitos, interface `Meu Contexto Hoje`, eventos, integrações, KPIs, cenários e contrato de aceite.
+Retomar na Capacidade 02, definindo os estados funcionais de cada dimensão e, em seguida, as regras detalhadas de atualização e envelhecimento.
