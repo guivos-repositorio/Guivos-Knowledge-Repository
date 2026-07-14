@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 6.1.0
+version: 6.2.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -29,6 +29,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-CV-EVENT-001 | Active 1.0.0 | Definir significado, estrutura, versionamento e efeitos dos eventos funcionais |
 | PAS-001-CV-INTEGRATION-001 | Active 1.0.0 | Definir integrações funcionais com capacidades, camadas, serviços e fontes externas |
 | PAS-001-CV-KPI-001 | Active 1.0.0 | Definir KPIs, guardrails e critérios de desempenho funcional |
+| PAS-001-CV-CONTRACT-001 | Active 1.0.0 | Definir cenários funcionais e contrato final do Contexto Vivo |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -41,24 +42,25 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Campo | Estado |
 |---|---|
 | Frente operacional | `Product Engineering` |
-| Especificação ativa | `PAS-001 — Guivos Journey 0.5.0` |
-| Extensões normativas | `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0`, `PAS-001-CV-INTEGRATION-001 1.0.0` e `PAS-001-CV-KPI-001 1.0.0` |
-| Capacidade ativa | `02 — Contexto Vivo` |
+| Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
+| Extensões normativas do Contexto Vivo | `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `INTEGRATION`, `KPI` e `CONTRACT`, todas em `1.0.0` |
+| Capacidade concluída | `02 — Contexto Vivo` |
+| Capacidade ativa | `03 — Objetivos` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
 | Sincronização vigente | `GE2-SYNC-007 1.0.0` |
 | Revisão AR-001 | `Completed 0.5.0` |
-| Foco imediato | Definir cenários funcionalmente ideal, alternativo e limite e consolidar o contrato final do Contexto Vivo |
+| Foco imediato | Definir pergunta central, objetivo, valor, responsabilidades e limites da Capacidade 03 |
 
 ## Capacidades do Journey
 
 | Capacidade | Estado | Observação |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
-| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, entradas, saídas, estados, regras temporais, conflitos, interface, eventos, integrações e KPIs registrados |
-| 03 — Objetivos | Planned | Próxima após Capacidade 02 |
+| 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
+| 03 — Objetivos | In progress | Nova frente ativa do Product Engineering |
 | 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e mudança registrada |
 | 05 — Próximos Passos | Planned | — |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
@@ -66,107 +68,46 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
 
-## Avanço do Contexto Vivo
+## Baseline concluída do Contexto Vivo
 
 Consolidados no `PAS-001 0.5.0`:
 
-- responsabilidades e limites;
-- fronteiras funcionais;
+- definição funcional e Representação Humilde;
+- responsabilidades, limites e fronteiras;
 - entradas e controles de admissão;
 - saídas e recortes autorizados;
 - eventos funcionais iniciais;
 - contrato funcional das saídas.
 
-Consolidados no `PAS-001-CV-STATE-001 1.0.0`:
+Consolidados nas extensões normativas:
 
-- estrutura comum de estado;
-- estados funcionais das oito dimensões;
-- estados resumidos explicáveis;
-- transições não lineares;
-- impactos controlados entre dimensões.
+| Extensão | Escopo consolidado |
+|---|---|
+| `PAS-001-CV-STATE-001` | Estados, transições e impactos das oito dimensões |
+| `PAS-001-CV-UPDATE-001` | Atualização seletiva, temporalidade, revisão e envelhecimento |
+| `PAS-001-CV-CONFLICT-001` | Identificação, resolução, explicabilidade e reabertura de conflitos |
+| `PAS-001-CV-VIEW-001` | Transparência e controle em `Meu Contexto Hoje` |
+| `PAS-001-CV-EVENT-001` | Contratos versionados dos eventos funcionais |
+| `PAS-001-CV-INTEGRATION-001` | Integrações com capacidades, camadas, serviços e fontes externas |
+| `PAS-001-CV-KPI-001` | Indicadores, guardrails e desempenho funcional |
+| `PAS-001-CV-CONTRACT-001` | Cenários ideal, alternativo e limite e contrato final da capacidade |
 
-Consolidados no `PAS-001-CV-UPDATE-001 1.0.0`:
+O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS-001 0.5.0` quanto ao estado da capacidade e ao ponto de retomada.
 
-- atualização seletiva por elemento contextual;
-- gatilhos, resultados e fluxo funcional;
-- confirmação proporcional e regras conforme origem;
-- classes temporais e estados de envelhecimento;
-- horizontes e revisões por dimensão;
-- fadiga de confirmação;
-- atualizações silenciosas permitidas e proibidas;
-- permissões, propagação e reprocessamento;
-- atualizações retroativas e distinção entre correção e mudança real;
-- eventos funcionais relacionados.
+## Critérios de conclusão atendidos
 
-Consolidados no `PAS-001-CV-CONFLICT-001 1.0.0`:
-
-- princípios, tipos e estados funcionais de conflito;
-- registro, gatilhos e fluxo de resolução;
-- critérios de comparação e ordem funcional de consideração;
-- resultados possíveis e participação do participante;
-- conflitos entre declarações, integrações, organizações, comportamentos, dimensões, permissões e temporalidades;
-- impacto sobre capacidades consumidoras;
-- resolução automática permitida e proibida;
-- explicabilidade, reabertura e critérios de resolução confiável.
-
-Consolidados no `PAS-001-CV-VIEW-001 1.0.0`:
-
-- transparência e controle do Contexto Vivo;
-- síntese do momento atual e oito dimensões;
-- estados linguísticos e níveis de detalhamento;
-- confirmação, correção, contestação e inferências;
-- conflitos, envelhecimento e informações sensíveis;
-- permissões por finalidade, integrações e histórico;
-- evolução, ausência de informação e dimensões não utilizadas;
-- priorização de atenção e prevenção de sobrecarga;
-- explicação de recomendações e consequências de alterações;
-- recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;
-- eventos relacionados e critérios funcionais de aceitação.
-
-Consolidados no `PAS-001-CV-EVENT-001 1.0.0`:
-
-- distinção entre comando, proposta e evento;
-- imutabilidade histórica, temporalidade, proveniência, autorização e minimização;
-- estrutura comum, correlação, ordenação e versionamento;
-- contratos de atualização, confirmação, revisão e temporalidade;
-- contratos de conflito, permissão e integração;
-- recortes contextuais, notificações e reavaliação de decisões;
-- eventos de interação, ocultação, desfazimento e remoção;
-- eventos de dimensão e contexto recompostos;
-- proteção de informações sensíveis e identificação de inferências;
-- eventos retroativos, correções, duplicidade, falhas, explicabilidade e retenção.
-
-Consolidados no `PAS-001-CV-INTEGRATION-001 1.0.0`:
-
-- objetivos, princípios, tipos, modos e contrato funcional;
-- identificação do participante, proveniência e autoridade das fontes;
-- integração com as capacidades 01 a 09;
-- integração com Intelligence, Platform Layer e serviços especializados;
-- classes e qualidade de fontes externas;
-- proteção de informações sensíveis, de terceiros e de sessão;
-- autorização, pausa, revogação e falha segura;
-- degradação controlada, divergência, frequência, auditoria e explicabilidade;
-- prevenção de ciclos indevidos e perfis paralelos.
-
-Consolidados no `PAS-001-CV-KPI-001 1.0.0`:
-
-- princípios, unidades e nove famílias de indicadores;
-- cobertura, atualidade, confiança, proveniência e qualidade das atualizações;
-- correções, contestações, conflitos e reaberturas;
-- permissões, revogações e incidentes de finalidade;
-- transparência, compreensão, esforço e fadiga;
-- integrações, falha segura, propagação e efeitos duplicados;
-- utilidade dos recortes e adequação das decisões;
-- exclusão indevida de oportunidades e incompatibilidades;
-- equilíbrio, justiça e consistência;
-- guardrails críticos de tolerância zero;
-- níveis de desempenho, metas condicionadas a baseline e governança;
-- painel e índice de saúde do Contexto Vivo.
-
-Próximo bloco:
-
-- cenários funcionalmente ideal, alternativo e limite;
-- contrato final da capacidade.
+- responsabilidades e limites definidos;
+- entradas e saídas contratadas;
+- dimensões e estados definidos;
+- atualização e envelhecimento especificados;
+- conflitos tratados;
+- interface funcionalmente definida;
+- eventos contratados;
+- integrações delimitadas;
+- KPIs e guardrails estabelecidos;
+- cenários ideal, alternativo e limite definidos;
+- critérios finais de aceite consolidados;
+- ausência de lacunas funcionais críticas conhecidas.
 
 ## Reconciliação GE2-SYNC-007
 
@@ -177,13 +118,13 @@ A reconciliação confirmou:
 - o Guivos Market Validation System já estava incorporado e posteriormente refinado;
 - versões e nomenclaturas residuais exigiam apenas correção editorial;
 - formulário e planilha automática permanecem entregáveis operacionais futuros;
-- a Capacidade 02 continua sendo a frente oficial.
+- a conclusão do Contexto Vivo preserva a Foundation e não promove candidatos arquiteturais à Canon.
 
 ## Conceitos internos preservados
 
 | Conceito | Estado |
 |---|---|
-| Contexto Vivo | Approved for PAS / In progress |
+| Contexto Vivo | Functionally complete |
 | Estados Dimensionais do Contexto Vivo | Normative 1.0.0 |
 | Atualização e Envelhecimento do Contexto Vivo | Normative 1.0.0 |
 | Resolução de Conflitos do Contexto Vivo | Normative 1.0.0 |
@@ -191,7 +132,9 @@ A reconciliação confirmou:
 | Eventos Funcionais do Contexto Vivo | Normative 1.0.0 |
 | Integrações Funcionais do Contexto Vivo | Normative 1.0.0 |
 | KPIs e Desempenho do Contexto Vivo | Normative 1.0.0 |
+| Cenários e Contrato Final do Contexto Vivo | Normative 1.0.0 |
 | Interpretação do Contexto | Approved for PAS |
+| Objetivos | Active for Product Engineering |
 | Eventos de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
 | Intervenção Contextual | Approved for PAS |
@@ -205,8 +148,8 @@ A reconciliação confirmou:
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 6.0.0 |
-| Knowledge Board | 6.1.0 |
+| Roadmap | 6.1.0 |
+| Knowledge Board | 6.2.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-STATE-001 | Active 1.0.0 |
@@ -216,6 +159,7 @@ A reconciliação confirmou:
 | PAS-001-CV-EVENT-001 | Active 1.0.0 |
 | PAS-001-CV-INTEGRATION-001 | Active 1.0.0 |
 | PAS-001-CV-KPI-001 | Active 1.0.0 |
+| PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -226,4 +170,4 @@ A reconciliação confirmou:
 
 ## Próxima atividade
 
-Completar a **Capacidade 02 — Contexto Vivo**, definindo os cenários funcionalmente ideal, alternativo e limite e consolidando o contrato final da capacidade.
+Iniciar a **Capacidade 03 — Objetivos**, definindo pergunta central, objetivo funcional, valor entregue, responsabilidades, limites e distinções conceituais fundamentais.
