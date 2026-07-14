@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.4.1
+version: 1.4.2
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -95,11 +95,12 @@ A Capacidade 03 está **Functionally complete**.
 As extensões normativas ativas são:
 
 - `PAS-001-EV-FOUNDATION-001` — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;
-- `PAS-001-EV-LIFECYCLE-001` — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura.
+- `PAS-001-EV-LIFECYCLE-001` — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura;
+- `PAS-001-EV-VIEW-001` — visão geral, linha do tempo, agrupamentos, filtros, cartões, detalhamento, impactos, relações, eventos planejados e em andamento, ações do participante, conteúdo sensível, privacidade visual, notificações, compartilhamentos, explicabilidade, histórico, sincronização e acessibilidade.
 
 A primeira extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
-O próximo bloco deverá detalhar os comportamentos funcionais da visualização e do controle dos Eventos de Vida, incluindo linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.
+O próximo bloco deverá detalhar os contratos dos eventos funcionais da Capacidade de Eventos de Vida, incluindo identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.
 
 ## Regras arquiteturais
 
@@ -146,6 +147,13 @@ O próximo bloco deverá detalhar os comportamentos funcionais da visualização
 41. Propagação utiliza recortes mínimos e reprocessamento não pode duplicar efeitos.
 42. Eventos sensíveis exigem minimização, proteção visual, finalidade específica e ausência de exploração comercial.
 43. Eventos de Vida não criam objetivos pessoais ativos nem impõem prioridade.
+44. A linha do tempo de Eventos de Vida é superfície de compreensão e controle, não feed social, diário integral ou instrumento de avaliação pessoal.
+45. Sinais, propostas, eventos planejados e eventos ocorridos devem permanecer visualmente distintos.
+46. Impactos propostos não podem parecer aplicados e cada impacto deve ser revisável individualmente.
+47. Eventos sensíveis devem permanecer ocultos por padrão, com títulos neutros e notificações minimizadas.
+48. A visualização não pode gerar ranking, pontuação, cobrança pessoal ou classificação universal de sucesso e fracasso.
+49. Aplicativo, web, conversa, notificações e serviços autorizados devem refletir a mesma versão, permissões, temporalidade e contestações.
+50. Sincronização pendente e efeitos ainda não aplicados devem permanecer explícitos ao participante.
 
 ## Documentos do domínio
 
@@ -155,6 +163,7 @@ O próximo bloco deverá detalhar os comportamentos funcionais da visualização
 - [PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos](pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida](pas-001-eventos-de-vida-fundamentos-iniciais.md)
 - [PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida](pas-001-eventos-de-vida-ciclo-de-vida.md)
+- [PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida](pas-001-eventos-de-vida-visualizacao-controle.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
