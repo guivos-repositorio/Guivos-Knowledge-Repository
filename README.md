@@ -10,9 +10,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidade concluída:** 02 — Contexto Vivo
-- **Capacidade ativa:** 03 — Objetivos
-- **Extensões normativas ativas de Objetivos:** PAS-001-OBJ-FOUNDATION-001 1.0.0, PAS-001-OBJ-LIFECYCLE-001 1.0.0, PAS-001-OBJ-PROGRESS-001 1.0.0, PAS-001-OBJ-VIEW-001 1.0.0, PAS-001-OBJ-EVENT-001 1.0.0 e PAS-001-OBJ-INTEGRATION-001 1.0.0
+- **Capacidades concluídas:** 02 — Contexto Vivo e 03 — Objetivos
+- **Capacidade ativa:** 04 — Eventos de Vida
+- **Extensões normativas de Objetivos:** PAS-001-OBJ-FOUNDATION-001 1.0.0, PAS-001-OBJ-LIFECYCLE-001 1.0.0, PAS-001-OBJ-PROGRESS-001 1.0.0, PAS-001-OBJ-VIEW-001 1.0.0, PAS-001-OBJ-EVENT-001 1.0.0, PAS-001-OBJ-INTEGRATION-001 1.0.0 e PAS-001-OBJ-CONTRACT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -31,40 +31,38 @@ A Capacidade 02 está **funcionalmente concluída**.
 
 ## Capacidade 03 — Objetivos
 
-A extensão `PAS-001-OBJ-FOUNDATION-001 1.0.0` consolidou fundamentos, distinções conceituais, responsabilidades, limites, entradas, estados, relações, critérios e integrações iniciais.
+As sete extensões normativas consolidaram:
 
-A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.
+- fundamentos, conceitos, responsabilidades e limites;
+- criação, confirmação, ativação, prioridade e ciclo de vida;
+- critérios de sucesso, progresso, marcos, evidências e conclusão;
+- visão funcional `Meus Objetivos`;
+- contratos dos eventos funcionais;
+- integrações com capacidades, camadas, serviços e fontes externas;
+- 62 KPIs distribuídos em 13 famílias;
+- guardrails obrigatórios de tolerância zero;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão e contrato funcional final.
 
-A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.
+O `PAS-001-OBJ-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`.
 
-A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou a visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível.
-
-A extensão `PAS-001-OBJ-EVENT-001 1.0.0` consolidou comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correções, auditoria e falha segura.
-
-A extensão `PAS-001-OBJ-INTEGRATION-001 1.0.0` consolidou:
-
-- finalidade, minimização, autoridade limitada e controle do participante;
-- contrato comum, admissão, identidade, proveniência e qualidade das informações;
-- integração com Captura de Contexto, Contexto Vivo e Eventos de Vida;
-- integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
-- integração com Experiências e Evolução Contínua;
-- limites e saídas permitidas da Guivos Intelligence;
-- responsabilidades da Platform Layer, incluindo identidade, autorização, grafo, APIs, busca, notificações, histórico e observabilidade;
-- integrações com Guivos Business, Mall, Travel, Media e Ads;
-- integrações sociais, profissionais, educacionais, esportivas, de saúde, calendário e finanças;
-- pausa, revogação, degradação controlada, divergência e informações retroativas;
-- explicabilidade, auditoria, métricas e eventos funcionais das integrações.
+A Capacidade 03 está **funcionalmente concluída**.
 
 ## Ponto exato de retomada
 
-Retomar na `Capacidade 03 — Objetivos`.
+Retomar na `Capacidade 04 — Eventos de Vida`.
 
-Próxima entrega:
+Primeira entrega:
 
-- KPIs e indicadores de desempenho funcional;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão da capacidade;
-- contrato final da Capacidade 03.
+- pergunta central;
+- objetivo funcional;
+- valor entregue;
+- princípios;
+- definição de Evento de Vida;
+- distinção entre evento, atividade, experiência e mudança contextual;
+- responsabilidades e limites;
+- entradas iniciais;
+- relação com Contexto Vivo e Objetivos.
 
 ## Product Engineering
 
@@ -76,8 +74,8 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 |---|---|
 | 01 — Captura de Contexto | Substantially complete |
 | 02 — Contexto Vivo | Functionally complete |
-| 03 — Objetivos | In progress |
-| 04 — Eventos de Vida | Planned / concept consolidated |
+| 03 — Objetivos | Functionally complete |
+| 04 — Eventos de Vida | In progress |
 | 05 — Próximos Passos | Planned |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
@@ -95,6 +93,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Comportamentos Funcionais de Meus Objetivos](docs/product-architecture/pas-001-meus-objetivos.md)
 - [Contratos dos Eventos Funcionais de Objetivos](docs/product-architecture/pas-001-objetivos-eventos-funcionais.md)
 - [Integrações Funcionais da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-integracoes-funcionais.md)
+- [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
