@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.2.0
+version: 7.3.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo` e `03 — Objetivos`.
 - **Capacidade ativa:** `04 — Eventos de Vida`.
-- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0` e `PAS-001-EV-EVENT-001 1.0.0`.
+- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0`, `PAS-001-EV-EVENT-001 1.0.0` e `PAS-001-EV-INTEGRATION-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -114,7 +114,27 @@ A extensão `PAS-001-EV-EVENT-001 1.0.0` consolidou:
 - retenção, logs, falhas de processamento, recuperação e auditoria;
 - responsabilidades de produtores, consumidores, Guivos Intelligence e Platform Layer.
 
-O próximo bloco consolidará as integrações funcionais da Capacidade de Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.
+### Integrações funcionais
+
+A extensão `PAS-001-EV-INTEGRATION-001 1.0.0` consolidou:
+
+- finalidade explícita, minimização, titularidade preservada, autoridade limitada e neutralidade comercial;
+- tipos, modos e contrato funcional comum das integrações;
+- identidade, associação, papéis, proveniência, qualidade, confiança e transformações rastreáveis;
+- temporalidade da fonte, do fato, do recebimento, do processamento e da aplicação;
+- sincronização, prevenção de ciclos, divergências e hierarquia não absoluta das fontes;
+- integração com Captura de Contexto, Contexto Vivo e Objetivos;
+- integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
+- integração com Experiências e Evolução Contínua;
+- saídas permitidas e limites da Guivos Intelligence;
+- responsabilidades técnicas da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- serviços profissionais, educacionais, de saúde, financeiros, calendários, localização, esportes, organizações sociais, comunidades religiosas, serviços jurídicos e fontes públicas;
+- integrações pessoais e temporárias, pausa, revogação e distinção entre uso futuro e fato histórico;
+- degradação controlada, fonte indisponível, informação incompleta, retroatividade, correção externa e recuperação;
+- eventos compartilhados, proteção de terceiros, explicabilidade, auditoria, retenção e métricas sistêmicas.
+
+O próximo bloco consolidará KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Eventos de Vida.
 
 ## Progresso das capacidades do Journey
 
@@ -123,7 +143,7 @@ O próximo bloco consolidará as integrações funcionais da Capacidade de Event
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
-| 04 — Eventos de Vida | In progress | 80% |
+| 04 — Eventos de Vida | In progress | 90% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
@@ -178,6 +198,13 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não duplicar eventos, impactos, notificações ou revisões durante reprocessamento;
 - não permitir que consumidores ampliem a autoridade ou o significado do recorte recebido;
 - não declarar revogação concluída antes da propagação efetiva;
+- não utilizar acesso técnico como autoridade funcional;
+- não usar disponibilidade de dado como autorização de uso;
+- não importar histórico integral por padrão;
+- não transformar compra, reserva, calendário, localização ou atividade em confirmação automática de Evento de Vida;
+- não utilizar Eventos de Vida sensíveis para publicidade;
+- não manter uso após revogação;
+- não tratar indisponibilidade de fonte como ausência de evento;
 - não manter versões paralelas silenciosas entre canais;
 - não explorar comercialmente vulnerabilidades ou eventos sensíveis;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
@@ -188,13 +215,13 @@ Retomar na **Capacidade 04 — Eventos de Vida**.
 
 Próxima entrega:
 
-1. contrato funcional comum das integrações;
-2. integração com Captura de Contexto;
-3. integração com Contexto Vivo e Objetivos;
-4. integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
-5. integração com Experiências e Evolução Contínua;
-6. papel e limites da Guivos Intelligence;
-7. responsabilidades da Platform Layer;
-8. serviços especializados e fontes externas;
-9. identidade, autoridade, finalidade, sensibilidade e recortes;
-10. sincronização, revogação, divergência, degradação controlada e falha segura.
+1. objetivos, princípios e unidades de medição;
+2. famílias de KPIs de qualidade e desempenho funcional;
+3. guardrails obrigatórios de tolerância zero;
+4. baseline, painel de saúde e níveis de desempenho;
+5. cenários funcionalmente ideal;
+6. cenários alternativos;
+7. cenários limite;
+8. critérios de conclusão funcional e lacunas bloqueantes ou não bloqueantes;
+9. contrato final da Capacidade 04;
+10. decisão sobre conclusão funcional e ativação da Capacidade 05 — Próximos Passos.
