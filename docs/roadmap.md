@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.1.0
+version: 7.2.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo` e `03 — Objetivos`.
 - **Capacidade ativa:** `04 — Eventos de Vida`.
-- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0` e `PAS-001-EV-VIEW-001 1.0.0`.
+- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0` e `PAS-001-EV-EVENT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -94,7 +94,27 @@ A extensão `PAS-001-EV-VIEW-001 1.0.0` consolidou:
 - privacidade visual, títulos neutros, dispositivos compartilhados e compartilhamentos;
 - explicabilidade, acessibilidade, consistência entre canais, histórico, sincronização e falha segura.
 
-O próximo bloco consolidará os contratos dos eventos funcionais da Capacidade de Eventos de Vida.
+### Contratos dos eventos funcionais
+
+A extensão `PAS-001-EV-EVENT-001 1.0.0` consolidou:
+
+- distinção entre comando, proposta e evento funcional reconhecido;
+- imutabilidade histórica e correção compensatória;
+- estrutura comum, campos obrigatórios, titular, ator, fonte e autoridade;
+- tempos do fato, conhecimento, reconhecimento e aplicação;
+- finalidade, sensibilidade, permissões, correlação, causalidade e versionamento;
+- famílias e contratos de identificação, proposição, declaração, planejamento e confirmação;
+- contratos de início, atualização, adiamento, temporalidade e relevância;
+- contratos de impactos, dimensões contextuais, objetivos e revisões dependentes;
+- relações propostas, confirmadas e contestadas, incluindo causalidade explicável;
+- conclusão, interrupção, cancelamento, contestação, correção, arquivamento e reabertura;
+- unificação, desdobramento e eventos compostos;
+- autorização, revogação, recomposição de recortes e propagação;
+- idempotência, duplicidade semântica, ordenação, concorrência e versão esperada;
+- retenção, logs, falhas de processamento, recuperação e auditoria;
+- responsabilidades de produtores, consumidores, Guivos Intelligence e Platform Layer.
+
+O próximo bloco consolidará as integrações funcionais da Capacidade de Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.
 
 ## Progresso das capacidades do Journey
 
@@ -103,7 +123,7 @@ O próximo bloco consolidará os contratos dos eventos funcionais da Capacidade 
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
-| 04 — Eventos de Vida | In progress | 60% |
+| 04 — Eventos de Vida | In progress | 80% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
@@ -152,6 +172,12 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não apresentar impactos propostos como aplicados;
 - não expor eventos sensíveis em cartões, notificações, dispositivos compartilhados ou ambientes organizacionais;
 - não utilizar ranking, pontuação, cobrança ou gamificação coercitiva em Eventos de Vida;
+- não apresentar comandos ou propostas pendentes como fatos reconhecidos;
+- não reescrever eventos históricos para corrigir o passado;
+- não publicar evento de sucesso quando parte crítica da operação falhar;
+- não duplicar eventos, impactos, notificações ou revisões durante reprocessamento;
+- não permitir que consumidores ampliem a autoridade ou o significado do recorte recebido;
+- não declarar revogação concluída antes da propagação efetiva;
 - não manter versões paralelas silenciosas entre canais;
 - não explorar comercialmente vulnerabilidades ou eventos sensíveis;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
@@ -162,11 +188,13 @@ Retomar na **Capacidade 04 — Eventos de Vida**.
 
 Próxima entrega:
 
-1. estrutura comum dos eventos funcionais;
-2. comandos, propostas e fatos reconhecidos;
-3. identificação, proposição e confirmação;
-4. atualização, estados e temporalidade;
-5. relevância, impactos e relações;
-6. contestação, correção, encerramento e reabertura;
-7. propagação, correlação, causalidade e ordenação;
-8. idempotência, versionamento, auditoria e falha segura.
+1. contrato funcional comum das integrações;
+2. integração com Captura de Contexto;
+3. integração com Contexto Vivo e Objetivos;
+4. integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
+5. integração com Experiências e Evolução Contínua;
+6. papel e limites da Guivos Intelligence;
+7. responsabilidades da Platform Layer;
+8. serviços especializados e fontes externas;
+9. identidade, autoridade, finalidade, sensibilidade e recortes;
+10. sincronização, revogação, divergência, degradação controlada e falha segura.
