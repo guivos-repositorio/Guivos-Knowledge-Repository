@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.6.0
+version: 1.6.1
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -101,7 +101,19 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Relevância de oportunidade | Refinar | Compatibilidade contextual com direção, movimento, temporalidade, disponibilidade, elegibilidade, custo, risco, preferências e restrições |
 | Elegibilidade de oportunidade | Refinar | Compatibilidade entre requisitos e condições conhecidas; não representa aprovação, aceitação ou acesso garantido |
 | Disponibilidade de oportunidade | Refinar | Condição operacional do meio; não representa relevância, interesse ou benefício garantido |
-| Relação do participante com oportunidade | Manter | Estado individual de apresentação, visualização, salvamento, interesse, descarte, inscrição, aceitação ou contratação, separado do estado da oportunidade |
+| Relação do participante com oportunidade | Refinar | Estado individual de apresentação, visualização, salvamento, interesse, descarte, inscrição, aceitação, contratação ou participação, separado do estado da oportunidade |
+| Situação transacional externa | Manter | Fatos de carrinho, reserva, pagamento, contratação, entrega ou serviço que não redefinem relevância, experiência, resultado ou evolução |
+| Decisão de apresentação | Manter | Responsabilidade de Intervenções Contextuais; ativação da oportunidade não produz apresentação automática |
+| Pausa de oportunidade | Manter | Suspensão temporária de apresentações e automações, preservando histórico e transações externas legítimas |
+| Indisponibilidade de oportunidade | Refinar | Impossibilidade atual com possibilidade de retorno; distinta de encerramento e expiração |
+| Expiração de oportunidade | Refinar | Fim da janela, validade ou condição temporal; preserva relações e histórico anteriores |
+| Encerramento de oportunidade | Manter | Término regular da ação, programa, oferta ou benefício sem previsão de retorno |
+| Cancelamento de oportunidade | Manter | Interrupção explícita pelo responsável, distinta de pausa, indisponibilidade, expiração e encerramento |
+| Contestação de oportunidade | Manter | Questionamento material que limita apresentação e automações até resolução |
+| Correção de oportunidade | Manter | Registro compensatório que preserva valor anterior, fonte, motivo, efeitos e consumidores notificados |
+| Reabertura de oportunidade | Refinar | Retorno de ciclo arquivado após nova avaliação; não reutiliza identidade diante de mudança material |
+| Idempotência de oportunidade | Manter | Reprocessamento não duplica oportunidade, ativação, apresentação, interesse, inscrição, vínculo ou arquivamento |
+| Ordenação de oportunidade | Manter | Eventos fora de ordem não podem produzir ativação após encerramento, apresentação após revogação ou aceitação antes do envio |
 | Patrocínio de oportunidade | Refinar | Relação de financiamento identificada que não pode alterar relevância, prioridade ou ordem funcional |
 | Relação comercial de oportunidade | Refinar | Comissão, afiliação, promoção paga, exclusividade, parceria ou vantagem financeira que deve permanecer transparente |
 | Escassez de oportunidade | Refinar | Condição real ou estimada de capacidade e janela, distinta de urgência funcional do participante |
@@ -155,18 +167,27 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
 | Próximos Passos | Manter | Capacidade 05 funcionalmente concluída por seis extensões normativas e progresso editorial de 100% |
 | KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos | Manter | PAS-001-PP-CONTRACT-001 1.0.0 define 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final |
-| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos iniciais consolidados e progresso editorial de 20% |
+| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40% |
 | Fundamentos Iniciais da Capacidade de Oportunidades Ativas | Manter | PAS-001-OA-FOUNDATION-001 1.0.0 define singularidade, conceito, distinções, titularidade, autoridade, relevância, elegibilidade, disponibilidade, temporalidade, custo, risco, patrocínio, neutralidade e controle |
+| Ciclo de Vida das Oportunidades Ativas | Manter | PAS-001-OA-LIFECYCLE-001 1.0.0 define estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, inscrições, atualizações, encerramentos, revogação e falha segura |
 | Singularidade de Oportunidades Ativas | Manter | Governa a relevância atual de meios disponíveis para uma jornada específica |
 | Oportunidade candidata | Manter | Registro ainda em avaliação e sem ativação funcional |
 | Oportunidade Ativa | Refinar | Meio admissível e potencialmente compatível que pode ser apresentado, salvo, comparado ou utilizado como apoio |
 | Limiar de ativação de oportunidade | Manter | Exige identidade, fonte, finalidade, disponibilidade possível, relevância suficiente, condições, risco compatível, transparência, temporalidade e proteção |
 | Estado funcional da oportunidade | Refinar | Identificada, Candidata, Em avaliação, Ativa, Pausada, Indisponível, Encerrada, Expirada, Cancelada, Contestada, Corrigida ou Arquivada |
 | Estado da informação da oportunidade | Manter | Qualidade, atualidade e confiança sobre disponibilidade, elegibilidade, relevância e demais dados, separadas do estado funcional |
-| Relação individual com oportunidade | Manter | Apresentada, visualizada, salva, interessada, descartada, ocultada, inscrita, aceita, recusada, contratada ou cancelada |
+| Relação individual com oportunidade | Manter | Apresentada, visualizada, salva, interessada, descartada, ocultada, inscrita, aceita, recusada, contratada, participante ou encerrada |
+| Situação transacional de oportunidade | Manter | Estado externo de inscrição, pagamento, contratação, entrega ou serviço sem redefinir a jornada |
 | Relevância contextual de oportunidade | Refinar | Avaliação explicável, revisável e independente de comissão, publicidade, estoque, clique, popularidade ou vulnerabilidade |
 | Elegibilidade de oportunidade | Refinar | Estados próprios, incluindo não avaliada, informação insuficiente, possivelmente elegível, elegível, condicional, verificação, não elegível, contestada e expirada |
 | Disponibilidade de oportunidade | Refinar | Disponível, abertura futura, limitada, lista de espera, consulta, indisponível, encerrada, esgotada, expirada, cancelada ou desconhecida |
+| Ativação e apresentação de oportunidade | Refinar | Ativação admite o meio; Intervenções Contextuais decide quando, como ou se apresentá-lo |
+| Pausa e indisponibilidade de oportunidade | Manter | Pausa suspende por decisão ou revisão; indisponibilidade registra impossibilidade operacional atual |
+| Expiração, encerramento e cancelamento de oportunidade | Manter | Estados distintos que preservam histórico e relações anteriores |
+| Contestação e correção de oportunidade | Manter | Contestação limita efeitos materiais e correção preserva versões por registro compensatório |
+| Duplicidade e unificação de oportunidade | Refinar | Registros equivalentes são consolidados sem perda de fontes, interesse, histórico ou diferenças materiais |
+| Alternativas e comparação de oportunidade | Refinar | Critérios permanecem visíveis, ajustáveis e sem redução indevida a pontuação única |
+| Ordem neutra de apresentação | Manter | Compatibilidade, disponibilidade, elegibilidade, custo e risco podem ordenar; comissão, patrocínio e clique não podem |
 | Transparência comercial | Manter | Patrocínio, comissão, afiliação, participação na receita, promoção paga, exclusividade e vantagem indireta permanecem visíveis |
 | Neutralidade de oportunidade | Manter | Relações comerciais não determinam relevância, prioridade ou recomendação funcional |
 | Oportunidade sensível | Manter | Exige finalidade, minimização, proteção reforçada e proibição de publicidade baseada em vulnerabilidade |
@@ -174,9 +195,9 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Integração com Contexto Vivo | Refinar | Recebe recortes mínimos e não mantém perfil comercial paralelo |
 | Integração com Objetivos | Refinar | Objetivos fornece direção; oportunidade não ativa, reprioriza, progride ou conclui objetivo |
 | Integração com Eventos de Vida | Refinar | Eventos podem alterar relevância, elegibilidade, custo, risco e temporalidade sem autorizar exploração comercial |
-| Integração com Próximos Passos | Refinar | Próximo Passo define o movimento; Oportunidades Ativas localiza meios compatíveis |
+| Integração com Próximos Passos | Refinar | Próximo Passo define o movimento; Oportunidades Ativas localiza meios compatíveis e solicita reavaliação sem cancelar ou concluir o passo |
 | Integração com Intervenções Contextuais | Refinar | Oportunidades informa relevância e janela; Intervenções decide quando, como ou se apresentar |
-| Integração com Experiências | Refinar | Oportunidade pode originar experiência, mas inscrição, aceitação e participação permanecem distintas |
+| Integração com Experiências | Refinar | Oportunidade pode originar experiência, mas inscrição, aceitação, contratação e participação permanecem distintas |
 | Integração com Evolução Contínua | Refinar | Resultados podem produzir evidências; volume de oportunidades não mede evolução humana |
 | Guivos Intelligence em Oportunidades Ativas | Refinar | Descobre, classifica, compara, estima e explica sem declarar interesse, contratar ou decidir |
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
@@ -198,8 +219,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 06, substitui `Planned / concept consolidated` por `In progress`, estabelece progresso editorial de 20% e consolida relevância, elegibilidade, disponibilidade, autoridade, transparência comercial e controle do participante, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-LIFECYCLE-001 1.0.0` consolida o ciclo de vida da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 40% e preserva estado funcional, informação, disponibilidade, elegibilidade, relevância, relação individual e situação transacional como dimensões independentes, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar as **regras do ciclo de vida das Oportunidades Ativas**, incluindo identificação, candidatura, avaliação, ativação, apresentação, interesse, elegibilidade, disponibilidade, pausa, atualização, expiração, encerramento, contestação, correção, relação do participante e propagação.
+Consolidar os **comportamentos funcionais da visualização e do controle das Oportunidades Ativas**, incluindo descoberta, busca, filtros, cartões, detalhamento, comparação, alternativas, transparência comercial, elegibilidade, disponibilidade, custos, riscos, oportunidades sensíveis, controles do participante e consistência entre canais.
