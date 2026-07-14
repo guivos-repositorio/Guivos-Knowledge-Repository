@@ -2,6 +2,43 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.33.2 — Next Steps Functional View
+
+- Criação de `PAS-001-PP-VIEW-001 — Comportamentos Funcionais da Visualização e do Controle dos Próximos Passos`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 05 do `PAS-001 — Guivos Journey`.
+- Definição da superfície funcional `Meus Próximos Passos` como ambiente de clareza e controle, sem funcionar como lista infinita de tarefas, ranking ou instrumento de cobrança.
+- Consolidação dos princípios de clareza, movimento contextual, autonomia, estado real, prioridade explicável, privacidade por padrão, detalhamento progressivo, neutralidade comercial e ação no mundo real.
+- Definição da visão geral, do resumo linguístico e da ausência legítima de Próximos Passos ativos.
+- Formalização da separação entre portfólio ativo, propostas pendentes e possibilidades futuras.
+- Consolidação das formas de organização, visualizações, filtros e busca com proteção de conteúdo sensível.
+- Definição dos cartões minimizados, títulos funcionais, títulos neutros, estado visual, prioridade, prontidão e ação principal contextual.
+- Registro do detalhamento progressivo com formulação, expressão original, papéis, origem, autoridade, objetivo, Evento de Vida, temporalidade, dependências, bloqueios, riscos, alternativas, permissões, evidências e histórico.
+- Definição da apresentação, avaliação, rejeição e comparação de propostas e alternativas, incluindo transparência de relações comerciais.
+- Formalização da confirmação visual simples, condicionada e parcial, sem implicar início, agendamento, compartilhamento, contratação ou compromisso externo.
+- Consolidação da prioridade explicável, alteração, reordenação e separação entre prioridade pessoal e institucional.
+- Definição da prontidão, do checklist não coercitivo, das opções de início e da agenda funcional sem substituição do calendário geral.
+- Registro das temporalidades visuais, dos passos sem prazo, do prazo vencido e do adiamento sem linguagem de culpa.
+- Consolidação da visualização de dependências, mapas acessíveis, condições externas, bloqueios, ações de resolução e proteção de bloqueios sensíveis.
+- Definição dos passos em andamento, atualizações de execução, níveis proporcionais de acompanhamento, subpassos e tarefas opcionais.
+- Separação visual entre execução, resultado imediato, progresso e conclusão.
+- Formalização da conclusão sem resultado esperado, conclusão parcial e conclusão automática com fonte, autoridade e contestação disponíveis.
+- Consolidação do cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento sem julgamento pessoal.
+- Definição da recorrência e das ocorrências individuais sem punição, sequência quebrada, ranking ou avaliação de disciplina.
+- Consolidação dos passos compartilhados, confirmações individualizadas, responsabilidades, delegação, aceitação e saída de participante.
+- Definição dos compartilhamentos, revogação, privacidade visual, modo discreto e notificações minimizadas.
+- Formalização da fila de atenção, da priorização contextual, da revisão do portfólio e da prevenção de fadiga.
+- Consolidação das explicações de criação, recomendação, prontidão, bloqueio e conclusão.
+- Definição do histórico compreensível, da consistência entre canais, dos canais conversacionais e das integrações com calendário e oportunidades.
+- Registro dos requisitos de acessibilidade técnica e cognitiva, falha segura, sincronização pendente, conflitos de versão e estado desatualizado.
+- Formalização das ações do participante, das confirmações proporcionais para ações críticas e do desfazimento de ações reversíveis.
+- Definição dos eventos funcionais e das métricas iniciais da visão, avaliando a experiência e o sistema, não o valor do participante.
+- Atualização da Arquitetura de Produtos para `1.5.2` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `7.7.0`, do Knowledge Board para `7.8.0` e da Matriz de Consolidação Canônica para `1.5.2`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 05 no estado `In progress` e elevação do progresso editorial de referência para `60%`.
+- Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
+- Definição dos contratos dos eventos funcionais dos Próximos Passos como próximo ponto exato de retomada.
+
 ## 0.33.1 — Next Steps Lifecycle Rules
 
 - Criação de `PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos`, versão `1.0.0`.
