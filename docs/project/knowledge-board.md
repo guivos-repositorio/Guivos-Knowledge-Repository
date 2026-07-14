@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 7.4.0
+version: 7.5.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -27,6 +27,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-EV-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle dos Eventos de Vida |
 | PAS-001-EV-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais dos Eventos de Vida |
 | PAS-001-EV-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais dos Eventos de Vida |
+| PAS-001-EV-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final de Eventos de Vida |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -40,15 +41,16 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
-| Capacidades concluídas | `02 — Contexto Vivo` e `03 — Objetivos` |
-| Capacidade ativa | `04 — Eventos de Vida` |
-| Extensões normativas ativas | `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0`, `PAS-001-EV-EVENT-001 1.0.0` e `PAS-001-EV-INTEGRATION-001 1.0.0` |
-| Progresso editorial de referência | `90%` |
+| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida` |
+| Próxima capacidade | `05 — Próximos Passos` |
+| Estado da próxima capacidade | `Planned` até a primeira extensão normativa |
+| Contrato final vigente | `PAS-001-EV-CONTRACT-001 1.0.0` |
+| Progresso editorial de Eventos de Vida | `100%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar KPIs, guardrails, cenários, critérios de conclusão e contrato final da Capacidade de Eventos de Vida |
+| Foco imediato | Definir os fundamentos iniciais da Capacidade 05 — Próximos Passos |
 
 ## Capacidades do Journey
 
@@ -57,8 +59,8 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
-| 04 — Eventos de Vida | In progress | Fundamentos, ciclo de vida, visão, eventos e integrações consolidados; contrato final é a frente ativa |
-| 05 — Próximos Passos | Planned | — |
+| 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
+| 05 — Próximos Passos | Planned — próxima frente | Ativação normativa pendente da primeira extensão |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
@@ -76,76 +78,64 @@ A Capacidade 03 está funcionalmente concluída pelas extensões `FOUNDATION`, `
 
 O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails de tolerância zero, cenários e critérios de conclusão.
 
-## Avanço da Capacidade 04 — Eventos de Vida
+### Eventos de Vida
 
-### `PAS-001-EV-FOUNDATION-001 1.0.0`
+A Capacidade 04 está funcionalmente concluída pelas extensões `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`.
 
-- pergunta central, objetivo funcional, valor entregue e singularidade;
-- Evento de Vida definido como mudança relevante situada no tempo;
-- distinção entre evento, estado, atividade, experiência, atualização, sinal, evidência, objetivo e Próximo Passo;
-- eventos previstos, ocorridos, pontuais, progressivos, simples, compostos, primários e derivados;
-- tipos, titularidade, participantes afetados, origem, autoridade e sensibilidade;
-- responsabilidades, limites, entradas, admissão e estrutura funcional inicial;
-- relações com Contexto Vivo, Objetivos e demais capacidades;
-- controle do participante, proteção de terceiros e explicabilidade.
+O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails de tolerância zero, baseline, painel de saúde, níveis de desempenho, cenários e critérios de conclusão.
 
-### `PAS-001-EV-LIFECYCLE-001 1.0.0`
+## Consolidação da Capacidade 04 — Eventos de Vida
 
-- entrada, identificação, sinalização, proposição, declaração e rejeição;
-- eventos integrados e inferidos sob autoridade limitada;
-- confirmação direta, institucional, assistida, automática autorizada e parcial;
-- estados e transições do evento separados do estado da informação;
-- temporalidade exata, aproximada, aberta e retroativa;
-- relevância contextual e revisável;
-- impactos propostos e confirmados por unidade afetada;
-- relações, causalidade, correlação, cadeias, eventos compostos, unificação e desdobramento;
-- correção, contestação, encerramento, arquivamento e reabertura;
-- propagação por recortes mínimos, idempotência, prevenção de ciclos e falha segura.
+### Fundamentos
 
-### `PAS-001-EV-VIEW-001 1.0.0`
+- Evento de Vida como mudança relevante situada no tempo;
+- distinções entre evento, estado, atividade, experiência, sinal, evidência, objetivo e Próximo Passo;
+- tipos, titularidade, origem, autoridade, temporalidade e sensibilidade;
+- responsabilidades, limites, entradas, admissão e controle do participante.
 
-- visão geral, linha do tempo, escalas, agrupamentos e filtros;
-- cartões minimizados, detalhamento progressivo e temporalidade sem falsa precisão;
-- separação entre sinais, propostas, eventos planejados, eventos ocorridos e estados da informação;
-- impactos propostos, confirmados, contestados, encerrados e persistentes;
-- relações, eventos compostos, cadeias e participantes relacionados;
-- confirmação, atualização, adiamento, cancelamento, conclusão, interrupção, arquivamento e reabertura;
-- correção, contestação, unificação, separação e revisão de impactos;
-- fila de atenção, alertas, fadiga, notificações e compartilhamentos;
-- privacidade visual, títulos neutros, proteção de terceiros e dispositivos compartilhados;
-- explicabilidade, acessibilidade, consistência entre canais, histórico e falha segura.
+### Ciclo de vida
 
-### `PAS-001-EV-EVENT-001 1.0.0`
+- identificação, proposição, declaração e confirmação;
+- estados e transições separados do estado da informação;
+- eventos planejados, progressivos e retroativos;
+- relevância, impactos, relações, correção, contestação, arquivamento e reabertura;
+- propagação, idempotência e falha segura.
 
-- distinção entre comando, proposta e fato reconhecido;
+### Visualização e controle
+
+- visão geral, linha do tempo, filtros, cartões e detalhamento;
+- separação visual de sinais, propostas, planejamentos e ocorrências;
+- impactos propostos, confirmados, contestados e persistentes;
+- privacidade visual, títulos neutros, acessibilidade e consistência entre canais;
+- ações de confirmação, atualização, cancelamento, conclusão, correção e contestação.
+
+### Eventos funcionais
+
+- comando, proposta e fato reconhecido como conceitos distintos;
 - imutabilidade histórica e correção compensatória;
-- estrutura comum, titular, ator, fonte, autoridade e temporalidades;
-- finalidade, sensibilidade, permissões, correlação, causalidade e versionamento;
-- contratos de identificação, proposição, declaração, planejamento, confirmação, início e atualização;
-- contratos de temporalidade, relevância, impactos e relações;
-- contratos de conclusão, interrupção, cancelamento, contestação, correção, arquivamento e reabertura;
-- unificação, desdobramento, eventos compostos, compartilhamento e revogação;
-- recomposição de recortes, notificações e reavaliações dependentes;
-- idempotência, duplicidade semântica, ordenação, concorrência e versão esperada;
-- retenção, logs, falhas de processamento, recuperação e auditoria;
-- responsabilidades dos produtores, consumidores, Guivos Intelligence e Platform Layer.
+- titular, ator, fonte, autoridade e temporalidades;
+- contratos de eventos, impactos, relações, permissões e revogações;
+- ordenação, concorrência, versionamento, retenção, auditoria e recuperação.
 
-### `PAS-001-EV-INTEGRATION-001 1.0.0`
+### Integrações
 
-- finalidade explícita, minimização, autoridade limitada, titularidade preservada e neutralidade comercial;
-- tipos, modos e contrato comum das integrações;
-- identidade, associação, titular, ator, fonte, afetado e consumidor;
-- proveniência, qualidade, confiança, transformações e temporalidades;
-- sincronização, prevenção de ciclos, divergência e hierarquia não absoluta das fontes;
-- integrações com Captura de Contexto, Contexto Vivo e Objetivos;
-- integrações com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
-- integrações com Experiências e Evolução Contínua;
-- papel e limites da Guivos Intelligence e responsabilidades da Platform Layer;
-- integrações com Guivos Business, Mall, Travel, Media e Ads;
-- fontes profissionais, educacionais, de saúde, financeiras, calendários, localização, esportes, sociais, religiosas, jurídicas e públicas;
-- integrações pessoais e temporárias, pausa, revogação e fatos históricos;
-- degradação controlada, indisponibilidade, informação incompleta, retroatividade, correção e recuperação;
-- eventos compartilhados, proteção de terceiros, explicabilidade, auditoria, retenção e métricas sistêmicas.
+- finalidade explícita, minimização, titularidade preservada e autoridade limitada;
+- identidade, proveniência, qualidade, transformações e sincronização;
+- integrações com capacidades, produtos, serviços especializados e fontes externas;
+- pausa, revogação, divergência, retroatividade, degradação controlada e recuperação;
+- proteção de terceiros e neutralidade comercial.
+
+### KPIs, guardrails e contrato final
+
+- 60 KPIs organizados em 13 famílias;
+- 18 guardrails obrigatórios de tolerância zero;
+- baseline real antes de metas numéricas permanentes;
+- painel de saúde sem pontuação de vida ou valor humano;
+- níveis de desempenho `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`;
+- cenários ideal, alternativo e limite;
+- lacunas bloqueantes e não bloqueantes;
+- contrato final de propósito, titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas, explicabilidade e indicadores;
+- reabertura somente por lacuna crítica, evidência operacional, incidente, contradição, alteração regulatória ou decisão formal.
 
 ## Conceitos internos preservados
 
@@ -153,35 +143,36 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 |---|---|
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
-| Eventos de Vida | In progress — 90% |
+| Eventos de Vida | Functionally complete — 100% |
+| Próximos Passos | Planned — próxima frente |
 | Fundamentos Iniciais de Eventos de Vida | Normative 1.0.0 |
 | Ciclo de Vida dos Eventos de Vida | Normative 1.0.0 |
 | Visualização e Controle dos Eventos de Vida | Normative 1.0.0 |
 | Contratos dos Eventos Funcionais de Eventos de Vida | Normative 1.0.0 |
 | Integrações Funcionais de Eventos de Vida | Normative 1.0.0 |
-| Estado do evento | Condition of the real-world change |
-| Estado da informação | Confidence and recognition condition in Guivos |
+| Contrato Final de Eventos de Vida | Normative 1.0.0 |
+| Estado do evento | Condição da mudança real |
+| Estado da informação | Condição de confiança e reconhecimento na Guivos |
 | Comando | Solicitação; não representa fato reconhecido |
 | Proposta | Possibilidade apresentada para avaliação |
 | Evento funcional | Fato reconhecido, versionado e imutável |
-| Sinal | Possible indication; not a confirmed event |
-| Proposta de evento | Possible formulation awaiting evaluation |
-| Evento planejado | Future change recognized without being treated as occurred |
-| Relevância de evento | Contextual and revisable materiality for the journey |
-| Impacto de Evento de Vida | Proposed or confirmed effect with its own lifecycle |
-| Evento composto | Organizes a broad transition without erasing components |
+| Sinal | Indicação possível; não é evento confirmado |
+| Evento planejado | Mudança futura reconhecida sem ser tratada como ocorrida |
+| Relevância de evento | Materialidade contextual, explicável e revisável |
+| Impacto de Evento de Vida | Efeito proposto ou confirmado com ciclo próprio |
+| Evento composto | Organiza transição ampla sem apagar componentes |
 | Correção compensatória | Novo evento que preserva o registro anterior e recompõe efeitos |
-| Contestação | Limits critical uses until treatment |
-| Arquivamento | Removes daily operation without erasing history or active impacts |
-| Propagação | Sends minimum authorized recorts to consumer capabilities |
-| Integração funcional | Intercâmbio governado por finalidade, autoridade, minimização e responsabilidade própria do consumidor |
-| Idempotência | Reprocessing cannot duplicate events or effects |
-| Ordenação | Preserves occurrence, knowledge and processing dependencies |
-| Guivos Intelligence | Produces signals, hypotheses and proposals, not definitive personal events |
-| Platform Layer | Applies technical contracts without redefining meaning |
-| Pessoa | Official participant category |
-| Organização | Official participant category |
-| Coletivo | Official participant category |
+| Contestação | Limita usos críticos até tratamento |
+| Arquivamento | Retira da operação cotidiana sem apagar histórico ou impactos ativos |
+| Propagação | Envia recortes mínimos autorizados às capacidades consumidoras |
+| Integração funcional | Intercâmbio governado por finalidade, autoridade e minimização |
+| Idempotência | Reprocessamento não pode duplicar eventos ou efeitos |
+| Guardrail de tolerância zero | Violação crítica que prevalece sobre médias agregadas |
+| Guivos Intelligence | Produz sinais, hipóteses e propostas, não eventos pessoais definitivos |
+| Platform Layer | Aplica contratos técnicos sem redefinir significado |
+| Pessoa | Categoria oficial de participante |
+| Organização | Categoria oficial de participante |
+| Coletivo | Categoria oficial de participante |
 | Oportunidade Ativa | Approved for PAS |
 | Intervenção Contextual | Approved for PAS |
 | Distância para Evolução | Internal Product Concept |
@@ -193,8 +184,8 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 7.3.0 |
-| Knowledge Board | 7.4.0 |
+| Roadmap | 7.4.0 |
+| Knowledge Board | 7.5.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -204,6 +195,7 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 | PAS-001-EV-VIEW-001 | Active 1.0.0 |
 | PAS-001-EV-EVENT-001 | Active 1.0.0 |
 | PAS-001-EV-INTEGRATION-001 | Active 1.0.0 |
+| PAS-001-EV-CONTRACT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -213,4 +205,4 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 
 ## Próxima atividade
 
-Continuar a **Capacidade 04 — Eventos de Vida**, consolidando KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final, com decisão sobre a ativação da Capacidade 05 — Próximos Passos.
+Iniciar a **Capacidade 05 — Próximos Passos**, definindo pergunta central, objetivo funcional, valor entregue, singularidade, princípios, definição, distinções, titularidade, tipos, origem, autoridade, estados, prioridade operacional, temporalidade, dependências, relações com Contexto Vivo, Objetivos e Eventos de Vida, limites da Guivos Intelligence e controle do participante.
