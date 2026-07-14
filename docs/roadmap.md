@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 6.7.0
+version: 6.8.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -16,9 +16,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Marco vigente:** `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Capacidade concluída:** `02 — Contexto Vivo`.
-- **Capacidade ativa:** `03 — Objetivos`.
-- **Extensões normativas ativas de Objetivos:** `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0`, `PAS-001-OBJ-VIEW-001 1.0.0`, `PAS-001-OBJ-EVENT-001 1.0.0` e `PAS-001-OBJ-INTEGRATION-001 1.0.0`.
+- **Capacidades concluídas:** `02 — Contexto Vivo` e `03 — Objetivos`.
+- **Capacidade ativa:** `04 — Eventos de Vida`.
+- **Contrato final de Objetivos:** `PAS-001-OBJ-CONTRACT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O trabalho permanece na `Capacidade 03 — Objetivos` do `PAS-001 — Guivos Journey`.
+O trabalho avança para a `Capacidade 04 — Eventos de Vida` do `PAS-001 — Guivos Journey`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -39,34 +39,39 @@ O `PAS-001 0.5.0` e as oito extensões normativas do Contexto Vivo consolidaram 
 
 A Capacidade 02 permanece **Functionally complete** e não deverá ser reaberta sem lacuna crítica, evidência operacional ou decisão formal.
 
-## Avanço da Capacidade 03
+## Capacidade 03 concluída
 
-A extensão `PAS-001-OBJ-FOUNDATION-001 1.0.0` consolidou fundamentos, distinções conceituais, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso e integrações iniciais.
+As sete extensões normativas de Objetivos consolidaram:
 
-A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.
+- fundamentos, conceitos, responsabilidades e limites;
+- unidade funcional, criação, confirmação, ativação, prioridade e ciclo de vida;
+- critérios de sucesso, linhas de base, progresso, marcos, evidências e conclusão;
+- visão `Meus Objetivos`, controles, explicações, revisões e proteção de sensibilidade;
+- contratos de eventos, autoridade, temporalidade, causalidade, idempotência e falha segura;
+- integrações com capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas;
+- 62 KPIs em 13 famílias de qualidade e desempenho;
+- 12 guardrails obrigatórios de tolerância zero;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão e contrato funcional final.
 
-A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.
+O `PAS-001-OBJ-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`.
 
-A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou a visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade, consistência entre canais e histórico.
+A Capacidade 03 está **Functionally complete** e não deverá ser reaberta sem lacuna funcional crítica, evidência operacional, incidente relevante, alteração arquitetural ou decisão formal de governança.
 
-A extensão `PAS-001-OBJ-EVENT-001 1.0.0` consolidou contratos de eventos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correção, auditoria e falha segura.
+## Início da Capacidade 04
 
-A extensão `PAS-001-OBJ-INTEGRATION-001 1.0.0` consolidou:
+O primeiro bloco da Capacidade 04 deverá consolidar:
 
-- princípios, tipos, modos e contrato funcional comum das integrações;
-- requisitos de admissão, identidade, autoridade, proveniência, qualidade e transformações;
-- temporalidade, sincronização, consistência entre fontes e prevenção de ciclos;
-- integração com Captura de Contexto, Contexto Vivo e Eventos de Vida;
-- integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
-- integração com Experiências e Evolução Contínua;
-- saídas permitidas, limites e explicabilidade da Guivos Intelligence;
-- responsabilidades da Platform Layer para identidade, autorização, grafo, APIs, busca, notificações, armazenamento e observabilidade;
-- integrações com Guivos Business, Mall, Travel, Media e Ads;
-- integrações com serviços sociais, profissionais, educacionais, esportivos, de saúde, calendários e fontes financeiras;
-- integrações temporárias, pausa, revogação, falha, degradação controlada e sincronização divergente;
-- explicabilidade, auditoria, métricas, eventos e integrações proibidas.
-
-O próximo bloco consolidará KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da capacidade.
+- pergunta central;
+- objetivo funcional;
+- valor entregue;
+- princípios;
+- definição de Evento de Vida;
+- distinção entre evento, atividade, experiência e mudança contextual;
+- responsabilidades;
+- limites;
+- entradas iniciais;
+- relação com Contexto Vivo e Objetivos.
 
 ## Progresso das capacidades do Journey
 
@@ -74,8 +79,8 @@ O próximo bloco consolidará KPIs, cenários funcionalmente ideal, alternativo 
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
-| 03 — Objetivos | In progress | 95% |
-| 04 — Eventos de Vida | Planned / concept consolidated | 10% |
+| 03 — Objetivos | Functionally complete | 100% |
+| 04 — Eventos de Vida | In progress | 10% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
@@ -102,7 +107,7 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 - gerar o formulário definitivo de aplicação;
 - construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
 
-Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 03.
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 04.
 
 ## Restrições
 
@@ -110,28 +115,21 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não promover LPM, CIE, GPMA ou outros candidatos diretamente à Canon;
 - não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
-- não transformar inferência, comportamento ou interesse comercial em objetivo ativo;
-- não confundir atividade com progresso ou conclusão;
-- não utilizar percentuais sem base legítima;
-- não concluir objetivos pessoais apenas por inferência;
-- não transformar `Meus Objetivos` em painel de cobrança, produtividade, ranking ou comparação pessoal;
-- não expor objetivos sensíveis em notificações ou superfícies não autorizadas;
-- não tratar comando ou proposta como evento reconhecido;
-- não reprocessar eventos com efeitos duplicados;
-- não ampliar permissões, titularidade, finalidade ou autoridade durante integração;
-- não permitir que receita, patrocínio ou oferta comercial alterem prioridade funcional;
-- não reabrir a Capacidade 02 sem fundamento formal;
+- não reabrir as Capacidades 02 ou 03 sem fundamento formal;
+- não reduzir Evento de Vida a qualquer atividade ou experiência;
+- não aplicar impactos de Evento de Vida indiscriminadamente a todo o contexto ou portfólio de objetivos;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar na **Capacidade 03 — Objetivos**.
+Retomar na **Capacidade 04 — Eventos de Vida**.
 
 Próxima entrega:
 
-1. KPIs e indicadores de qualidade e desempenho funcional;
-2. cenário funcionalmente ideal;
-3. cenários alternativos;
-4. cenários limite e falha segura;
-5. critérios de conclusão funcional;
-6. contrato final da capacidade.
+1. pergunta central e objetivo funcional;
+2. valor entregue e princípios;
+3. definição funcional de Evento de Vida;
+4. distinções entre evento, atividade, experiência e mudança contextual;
+5. responsabilidades e limites;
+6. entradas iniciais;
+7. relação com Contexto Vivo e Objetivos.
