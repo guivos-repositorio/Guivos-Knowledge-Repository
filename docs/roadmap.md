@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.6.0
+version: 7.7.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida`.
-- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 40%.
-- **Extensões vigentes de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0` e `PAS-001-PP-LIFECYCLE-001 1.0.0`.
+- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 60%.
+- **Extensões vigentes de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0` e `PAS-001-PP-VIEW-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar a visualização e o controle da `Capacidade 05 — Próximos Passos`.
+O próximo trabalho deverá consolidar os contratos dos eventos funcionais da `Capacidade 05 — Próximos Passos`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -66,27 +66,29 @@ A Capacidade 04 permanece **Functionally complete**.
 
 `PAS-001-PP-FOUNDATION-001 1.0.0` consolidou os fundamentos iniciais e substituiu o estado `Planned` da linha da Capacidade 05 no `PAS-001 0.5.0` por `In progress`.
 
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida:
+`PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida completo, incluindo proposta, confirmação, prontidão, ativação, prioridade, execução, resultado, conclusão, recorrência, compartilhamento e falha segura.
 
-- identificação de possibilidade, formulação, proposição e avaliação;
-- confirmação proporcional, condicionada, parcial e compartilhada;
-- rejeição, reformulação, desdobramento e unificação;
-- prontidão e ativação operacional como dimensões distintas;
-- limites contextuais do portfólio ativo;
-- prioridade, repriorização e sequenciamento;
-- dependências, bloqueios, desbloqueios e alternativas;
-- pausa, retomada, agendamento, prazo e adiamento;
-- início, execução e acompanhamento proporcional;
-- resultado imediato separado de progresso e conclusão;
-- conclusão, cancelamento, substituição e expiração;
-- contestação, correção, reabertura e arquivamento;
-- recorrência e ocorrências sem julgamento de disciplina ou evolução;
+`PAS-001-PP-VIEW-001 1.0.0` consolida:
+
+- `Meus Próximos Passos` como superfície principal da capacidade;
+- visão geral, resumo linguístico e ausência legítima de movimentos;
+- portfólio ativo separado de propostas e possibilidades futuras;
+- cartões minimizados, títulos neutros e detalhamento progressivo;
+- prioridade explicável e separada de urgência, prazo, prontidão, esforço, risco e valor humano;
+- agenda funcional sem substituir o calendário geral;
+- dependências e bloqueios com limites de controle explícitos;
+- execução e resultado separados de progresso e conclusão;
+- conclusão sem resultado esperado e contestação de automações;
+- cancelamento, substituição, expiração, correção e reabertura;
+- recorrência sem punição, ranking ou julgamento de disciplina;
 - passos compartilhados, delegação e responsabilidades individualizadas;
-- compartilhamento, revogação e propagação por recortes mínimos;
-- prevenção de ciclos, duplicidade, idempotência, ordenação e concorrência;
-- retroatividade, falha segura, sincronização, privacidade e prevenção de fadiga.
+- compartilhamentos, revogação, privacidade visual e notificações discretas;
+- fila de atenção e prevenção de fadiga;
+- acessibilidade técnica e cognitiva;
+- consistência entre canais, explicabilidade, histórico e falha segura;
+- neutralidade comercial e controle do participante.
 
-A capacidade está `In progress`, com progresso editorial de referência de `40%`.
+A capacidade está `In progress`, com progresso editorial de referência de `60%`.
 
 ## Progresso das capacidades do Journey
 
@@ -96,7 +98,7 @@ A capacidade está `In progress`, com progresso editorial de referência de `40%
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
-| 05 — Próximos Passos | In progress | 40% |
+| 05 — Próximos Passos | In progress | 60% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
@@ -132,41 +134,35 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
 - não reabrir as Capacidades 02, 03 ou 04 sem fundamento formal;
 - não reduzir Próximo Passo a objetivo, tarefa, oportunidade, recomendação ou compromisso;
-- não apresentar possibilidade como proposta, proposta como decisão ou confirmação como execução;
-- não confundir ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão;
+- não apresentar proposta como decisão assumida;
+- não apresentar confirmação como execução iniciada;
 - não criar listas infinitas ou ações artificiais para aumentar engajamento;
+- não utilizar contagem de passos como pontuação de produtividade;
 - não impor produtividade, prioridade pessoal ou responsabilidade silenciosa;
 - não concluir objetivo automaticamente pela conclusão de um passo;
-- não utilizar oportunidade, receita, patrocínio ou publicidade para determinar prioridade;
+- não utilizar oportunidade, receita, patrocínio ou publicidade para determinar prioridade ou destaque;
 - não tratar bloqueio, pausa, cancelamento ou expiração como incapacidade ou fracasso;
 - não fabricar prazos ou precisão temporal;
-- não transformar prazo vencido em conclusão, cancelamento ou abandono;
-- não transformar atividade observada, compra, localização ou acesso a conteúdo em conclusão automática;
-- não iniciar execução automaticamente após desbloqueio;
-- não tratar recorrência como prova de hábito, aderência ou evolução;
-- não atribuir responsabilidade compartilhada sem confirmação individual;
-- não duplicar passos, prioridades, agendamentos, conclusões, notificações ou responsabilidades;
-- não declarar sucesso integral em falha parcial;
+- não transformar atividade observada, clique, compra ou visualização em execução ou conclusão automática;
+- não utilizar gamificação coercitiva em recorrências;
 - não utilizar vulnerabilidade para indução comercial;
 - proteger passos sensíveis e informações de terceiros;
-- preservar autonomia, explicabilidade e controle do participante;
+- preservar acessibilidade, autonomia, explicabilidade e controle do participante;
 - não iniciar o próximo produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar na **visualização e no controle dos Próximos Passos**.
+Retomar nos **contratos dos eventos funcionais dos Próximos Passos**.
 
 Próxima entrega:
 
-1. visão geral e portfólio ativo;
-2. cartões e detalhamento;
-3. propostas e alternativas;
-4. prioridade e prontidão;
-5. agenda, temporalidade e recorrência;
-6. dependências e bloqueios;
-7. execução e resultados;
-8. passos compartilhados e delegação;
-9. histórico e auditoria;
-10. privacidade e acessibilidade;
-11. explicabilidade;
-12. ações do participante.
+1. comandos, propostas e fatos reconhecidos;
+2. estrutura comum, identidade, ator e autoridade;
+3. criação, confirmação, ativação e prontidão;
+4. prioridade, dependências e bloqueios;
+5. execução, resultados e conclusão;
+6. cancelamento, substituição e expiração;
+7. contestação, correção e recorrência;
+8. compartilhamento, revogação e propagação;
+9. idempotência, ordenação e versionamento;
+10. auditoria, retenção e falha segura.
