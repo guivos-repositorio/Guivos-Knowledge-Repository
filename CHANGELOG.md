@@ -2,6 +2,32 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.33.0 — Next Steps Capability Foundation
+
+- Criação de `PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 05 do `PAS-001 — Guivos Journey`.
+- Definição da pergunta central, objetivo funcional, valor entregue e singularidade da capacidade.
+- Formalização de Próximo Passo como decisão ou hipótese de movimento delimitada, contextual e acionável.
+- Consolidação do limiar de acionabilidade, da natureza contextual do termo “próximo”, da multiplicidade legítima e da ausência legítima de Próximo Passo.
+- Definição das distinções entre Próximo Passo, objetivo, tarefa, ação, plano, marco, oportunidade, intervenção, recomendação, compromisso, obrigação, Evento de Vida, experiência, evidência, resultado e progresso.
+- Formalização da titularidade e dos papéis de proponente, decisor, responsável, executor, apoiador, aprovador, fonte, beneficiário e participante afetado.
+- Definição das origens, da autoridade das fontes e dos limites de Organizações, integrações, serviços especializados, patrocinadores e Guivos Intelligence.
+- Consolidação dos tipos funcionais de descoberta, decisão, preparação, execução, conexão, aprendizado, verificação, manutenção, recuperação, adaptação, coordenação, delegação, espera e encerramento.
+- Definição dos estados `Proposto`, `Confirmado`, `Pronto`, `Agendado`, `Em andamento`, `Bloqueado`, `Pausado`, `Concluído`, `Cancelado`, `Substituído`, `Expirado`, `Contestado`, `Corrigido` e `Arquivado`.
+- Separação entre estado funcional e estado da informação, e entre confirmação, prontidão, agendamento, execução e conclusão.
+- Definição da prioridade operacional, do portfólio, do sequenciamento, das dependências, dos bloqueios, da temporalidade, do esforço, do risco, da segurança e da sensibilidade.
+- Consolidação das entradas, requisitos de admissão, estrutura funcional, saídas, fluxo e eventos funcionais iniciais.
+- Definição das relações com Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua.
+- Formalização dos papéis e limites da Guivos Intelligence e da Platform Layer.
+- Definição do controle do participante, da proteção de passos sensíveis, da minimização de terceiros e da proibição de produtividade coercitiva e exploração comercial.
+- Substituição normativa do estado `Planned` da Capacidade 05 na seção 7 do `PAS-001 0.5.0` por `In progress`.
+- Estabelecimento do progresso editorial de referência da Capacidade 05 em `20%`.
+- Atualização da Arquitetura de Produtos para `1.5.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `7.5.0`, do Knowledge Board para `7.6.0` e da Matriz de Consolidação Canônica para `1.5.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
+- Definição do ciclo de vida dos Próximos Passos como próximo ponto exato de retomada.
+
 ## 0.32.5 — Life Events Final Contract
 
 - Criação de `PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Eventos de Vida`, versão `1.0.0`.
