@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.4.3
+version: 1.4.4
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -64,6 +64,7 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Proposta funcional | Refinar | Possibilidade apresentada para avaliação; não representa fato confirmado |
 | Evento funcional | Refinar | Fato reconhecido, versionado e historicamente imutável; não equivale a comando ou proposta |
 | Recorte funcional | Manter | Conjunto mínimo e autorizado de informações para finalidade específica |
+| Integração funcional | Refinar | Intercâmbio governado por finalidade, autoridade, minimização, temporalidade, permissões e responsabilidade própria do consumidor |
 | Autoridade da fonte | Refinar | Limitada ao que a origem e o contrato permitem afirmar |
 | Guardrail funcional | Manter | Regra obrigatória que impede violações críticas e pode possuir tolerância zero |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Evento de Vida nem Oportunidade |
@@ -117,6 +118,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Ciclo de Vida dos Eventos de Vida | Manter | PAS-001-EV-LIFECYCLE-001 1.0.0 define identificação, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento e propagação |
 | Visualização e Controle dos Eventos de Vida | Manter | PAS-001-EV-VIEW-001 1.0.0 define linha do tempo, detalhamento, impactos, ações, privacidade, compartilhamentos, histórico e falha segura |
 | Contratos dos Eventos Funcionais de Eventos de Vida | Manter | PAS-001-EV-EVENT-001 1.0.0 define comandos, propostas, fatos reconhecidos, contratos, correlação, propagação, idempotência, ordenação, versionamento e auditoria |
+| Integrações Funcionais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-INTEGRATION-001 1.0.0 define finalidade, identidade, autoridade, proveniência, recortes, capacidades, produtos, fontes externas, sincronização, revogação, degradação controlada e neutralidade comercial |
 | Estado do Evento de Vida | Refinar | Condição da mudança real, separada do estado da informação conhecida pela Guivos |
 | Estado da informação do evento | Manter | Hipótese, não confirmado, confirmado, contestado ou corrigido |
 | Evento de Vida planejado | Refinar | Previsão ou planejamento de mudança; não equivale a evento ocorrido |
@@ -149,6 +151,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Integração com Oportunidades Ativas | Refinar | Mudança poderá alterar relevância, disponibilidade e restrições sem justificar exploração comercial |
 | Integração com Experiências | Refinar | Experiência e Evento de Vida mantêm registros distintos |
 | Integração com Evolução Contínua | Refinar | Evento poderá constituir marco de trajetória sem ser classificado automaticamente como evolução positiva ou negativa |
+| Integração com produtos e fontes externas | Refinar | Dados integrados permanecem limitados por finalidade, autoridade, minimização, sensibilidade, temporalidade e revogação |
 | Guivos Intelligence em Eventos de Vida | Refinar | Pode identificar sinais, sugerir classificação e impactos, mas não confirmar unilateralmente eventos pessoais sensíveis |
 | Platform Layer em Eventos de Vida | Refinar | Sustenta identidade, autorização, temporalidade, versionamento, ordenação, idempotência, grafo e auditoria sem redefinir significado funcional |
 | Evento sensível | Manter | Exige finalidade específica, minimização, acesso restrito, proteção visual e ausência de exploração comercial |
@@ -170,8 +173,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 e 03 permanecem funcionalmente concluídas. As quatro extensões normativas vigentes de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização e contratos de eventos funcionais e elevam o avanço editorial de referência da Capacidade 04 para 80%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+As Capacidades 02 e 03 permanecem funcionalmente concluídas. As cinco extensões normativas vigentes de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização, contratos de eventos e integrações funcionais e elevam o avanço editorial de referência da Capacidade 04 para 90%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Definir as **integrações funcionais da Capacidade de Eventos de Vida** com as capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.
+Consolidar os **KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade 04 — Eventos de Vida**.
