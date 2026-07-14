@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.3.4
+version: 1.3.5
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -90,7 +90,8 @@ As extensões normativas ativas são:
 - `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação;
 - `PAS-001-OBJ-PROGRESS-001` — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais;
 - `PAS-001-OBJ-VIEW-001` — visão `Meus Objetivos`, portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade visual, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível;
-- `PAS-001-OBJ-EVENT-001` — comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, contratos das famílias de eventos, propagação, correção, auditoria e falha segura.
+- `PAS-001-OBJ-EVENT-001` — comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, contratos das famílias de eventos, propagação, correção, auditoria e falha segura;
+- `PAS-001-OBJ-INTEGRATION-001` — integrações com capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados, organizações, profissionais e fontes externas, com finalidade, minimização, revogação, explicabilidade e degradação segura.
 
 A primeira extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
@@ -117,6 +118,12 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 19. Eventos reconhecidos devem preservar origem, autoridade, temporalidade, causalidade, correlação, versão e idempotência.
 20. O reprocessamento não pode duplicar efeitos e falhas devem reduzir automação em vez de ampliar suposições.
 21. Capacidades consumidoras devem receber somente recortes autorizados e reavaliar suas próprias decisões.
+22. Integrações não transferem titularidade nem ampliam autoridade funcional.
+23. Finalidade explícita e minimização devem preceder todo compartilhamento de objetivos.
+24. Contexto Vivo, Objetivos, Próximos Passos, Oportunidades, Experiências e Evolução preservam responsabilidades distintas.
+25. Platform Layer aplica contratos técnicos, mas não redefine o significado funcional dos objetivos.
+26. Serviços especializados e receita comercial não podem alterar prioridade, relevância ou conclusão funcional.
+27. Revogações devem interromper novos usos e falhas de integração devem produzir degradação controlada.
 
 ## Documentos do domínio
 
@@ -128,6 +135,7 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 - [PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão](pas-001-objetivos-progresso-e-conclusao.md)
 - [PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos](pas-001-meus-objetivos.md)
 - [PAS-001-OBJ-EVENT-001 — Contratos dos Eventos Funcionais de Objetivos](pas-001-objetivos-eventos-funcionais.md)
+- [PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais da Capacidade de Objetivos](pas-001-objetivos-integracoes-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
