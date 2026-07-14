@@ -15,6 +15,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - `PAS-001-OBJ-PROGRESS-001 1.0.0` ativo;
 - `PAS-001-OBJ-VIEW-001 1.0.0` ativo;
 - `PAS-001-OBJ-EVENT-001 1.0.0` ativo;
+- `PAS-001-OBJ-INTEGRATION-001 1.0.0` ativo;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -24,7 +25,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 Especificar funcionalmente a **Capacidade 03 — Objetivos**.
 
-Os fundamentos, ciclo de vida, progresso, visão e contratos de eventos já consolidam autoria, criação, confirmação, ativação, prioridade, revisão, critérios, evidências, conclusão, controles, histórico, causalidade, idempotência, propagação e falha segura.
+Os fundamentos, ciclo de vida, progresso, visão, eventos e integrações já consolidam autoria, criação, confirmação, ativação, prioridade, critérios, evidências, conclusão, controle, propagação, recortes mínimos, revogação, serviços especializados e falha segura.
 
 ## Acesso rápido
 
@@ -36,6 +37,7 @@ Os fundamentos, ciclo de vida, progresso, visão e contratos de eventos já cons
 - [Critérios de Sucesso, Progresso, Evidências e Conclusão](product-architecture/pas-001-objetivos-progresso-e-conclusao.md)
 - [Comportamentos Funcionais de Meus Objetivos](product-architecture/pas-001-meus-objetivos.md)
 - [Contratos dos Eventos Funcionais de Objetivos](product-architecture/pas-001-objetivos-eventos-funcionais.md)
+- [Integrações Funcionais da Capacidade de Objetivos](product-architecture/pas-001-objetivos-integracoes-funcionais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -59,4 +61,4 @@ Os fundamentos, ciclo de vida, progresso, visão e contratos de eventos já cons
 
 ## Ponto de retomada
 
-Retomar na Capacidade 03, detalhando suas integrações funcionais com as demais capacidades do Journey, Guivos Intelligence, Platform Layer e serviços especializados.
+Retomar na Capacidade 03, consolidando KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final.
