@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.5 — Living Context Functional Event Contracts
+
+- Criação de `PAS-001-CV-EVENT-001 — Contratos dos Eventos Funcionais do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição da diferença entre comando, proposta e evento funcional reconhecido.
+- Formalização dos princípios de imutabilidade histórica, temporalidade explícita, proveniência, autorização, minimização, explicabilidade e reprocessamento seguro.
+- Consolidação da estrutura comum, identidade, correlação, ordenação e versionamento dos contratos de eventos.
+- Definição dos contratos de atualização, confirmação, revisão, temporalidade, conflitos, permissões e integrações.
+- Registro dos contratos de recortes contextuais, notificações, reavaliação de decisões e interação em `Meu Contexto Hoje`.
+- Consolidação das regras para eventos compostos, informações sensíveis, inferências, retroatividade, correção, duplicidade, falha de processamento e retenção.
+- Atualização da Arquitetura de Produtos para `1.2.5` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `5.8.0`, do Knowledge Board para `5.9.0` e da Matriz de Consolidação Canônica para `1.2.6`.
+- Atualização do README e da página inicial do GKR.
+- Definição das integrações funcionais como próximo ponto exato de retomada.
+
 ## 0.30.4 — Meu Contexto Hoje Functional Behaviors
 
 - Criação de `PAS-001-CV-VIEW-001 — Comportamentos Funcionais de Meu Contexto Hoje`, versão `1.0.0`.
