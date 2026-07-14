@@ -2,6 +2,29 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.32.4 — Life Events Functional Integrations
+
+- Criação de `PAS-001-EV-INTEGRATION-001 — Integrações Funcionais da Capacidade de Eventos de Vida`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 04 do `PAS-001 — Guivos Journey`.
+- Definição dos princípios de finalidade explícita, minimização, autoridade limitada, titularidade preservada, confirmação proporcional, revogabilidade, explicabilidade, neutralidade comercial e falha segura.
+- Consolidação dos tipos, modos e contrato funcional comum das integrações.
+- Formalização dos requisitos de admissão, identidade, associação, papéis, autoridade, proveniência, qualidade, confiança, transformações e temporalidade.
+- Definição das regras de atualização em tempo real, dados históricos, sincronização, prevenção de ciclos, divergência e hierarquia não absoluta das fontes.
+- Consolidação das integrações com Captura de Contexto, Contexto Vivo e Objetivos, preservando as responsabilidades de cada capacidade.
+- Definição das integrações com Próximos Passos, Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua.
+- Formalização das saídas permitidas e ações proibidas da Guivos Intelligence.
+- Definição das responsabilidades da Platform Layer para identidade, autenticação, autorização, grafo, APIs, busca, notificações, armazenamento e observabilidade.
+- Consolidação das integrações com Guivos Business, Mall, Travel, Media e Ads, incluindo limites institucionais, comerciais e publicitários.
+- Registro das integrações com serviços profissionais, educacionais, de saúde, financeiros, calendários, localização, esportes, organizações sociais, comunidades religiosas, serviços jurídicos e fontes públicas.
+- Definição das integrações pessoais e temporárias, pausa, revogação, distinção entre uso futuro e fato histórico, falhas e degradação controlada.
+- Consolidação das regras para fonte indisponível, informação incompleta, retroatividade, correções externas, eventos compartilhados e informações de terceiros.
+- Formalização da explicabilidade, auditoria, retenção, eventos funcionais, métricas sistêmicas e integrações funcionalmente proibidas.
+- Atualização da Arquitetura de Produtos para `1.4.4` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `7.3.0`, do Knowledge Board para `7.4.0` e da Matriz de Consolidação Canônica para `1.4.4`.
+- Atualização do README e da página inicial do GKR.
+- Elevação do progresso editorial de referência da Capacidade 04 para `90%`.
+- Definição dos KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final como próximo ponto exato de retomada.
+
 ## 0.32.3 — Life Events Functional Event Contracts
 
 - Criação de `PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Eventos de Vida`, versão `1.0.0`.
