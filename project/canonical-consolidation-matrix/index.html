@@ -5690,9 +5690,19 @@
 <td>Reconhecimento suficiente conforme natureza, critérios, evidências e percepção do participante</td>
 </tr>
 <tr>
+<td>Comando funcional</td>
+<td>Refinar</td>
+<td>Solicitação de alteração; não representa fato reconhecido</td>
+</tr>
+<tr>
+<td>Proposta funcional</td>
+<td>Refinar</td>
+<td>Possibilidade apresentada para avaliação; não representa fato confirmado</td>
+</tr>
+<tr>
 <td>Evento funcional</td>
 <td>Refinar</td>
-<td>Fato reconhecido e versionado; não equivale a comando ou proposta</td>
+<td>Fato reconhecido, versionado e historicamente imutável; não equivale a comando ou proposta</td>
 </tr>
 <tr>
 <td>Recorte funcional</td>
@@ -5909,27 +5919,12 @@
 <tr>
 <td>Visualização e Controle dos Eventos de Vida</td>
 <td>Manter</td>
-<td>PAS-001-EV-VIEW-001 1.0.0 define linha do tempo, detalhamento, impactos, revisões, privacidade visual, histórico e ações do participante</td>
+<td>PAS-001-EV-VIEW-001 1.0.0 define linha do tempo, detalhamento, impactos, ações, privacidade, compartilhamentos, histórico e falha segura</td>
 </tr>
 <tr>
-<td>Linha do tempo de Eventos de Vida</td>
-<td>Refinar</td>
-<td>Superfície de compreensão e controle; não é feed social, diário integral ou instrumento de avaliação pessoal</td>
-</tr>
-<tr>
-<td>Visão geral de Eventos de Vida</td>
+<td>Contratos dos Eventos Funcionais de Eventos de Vida</td>
 <td>Manter</td>
-<td>Sintetiza eventos recentes, planejados, em andamento, pendências e contestações sem pontuar estabilidade ou qualidade de vida</td>
-</tr>
-<tr>
-<td>Cartão de Evento de Vida</td>
-<td>Refinar</td>
-<td>Apresenta somente título funcional, temporalidade, estado, confirmação, atenção e indicações mínimas de impacto e sensibilidade</td>
-</tr>
-<tr>
-<td>Detalhamento progressivo do Evento de Vida</td>
-<td>Manter</td>
-<td>Expõe formulação, expressão original, titularidade, estado, temporalidade, origem, autoridade, confiança, impactos, permissões e histórico conforme necessidade</td>
+<td>PAS-001-EV-EVENT-001 1.0.0 define comandos, propostas, fatos reconhecidos, contratos, correlação, propagação, idempotência, ordenação, versionamento e auditoria</td>
 </tr>
 <tr>
 <td>Estado do Evento de Vida</td>
@@ -5972,16 +5967,6 @@
 <td>Efeito proposto ou confirmado com temporalidade, intensidade e ciclo próprios</td>
 </tr>
 <tr>
-<td>Impacto persistente de Evento de Vida</td>
-<td>Manter</td>
-<td>Poderá permanecer ativo após a conclusão do evento e deverá ser apresentado separadamente</td>
-</tr>
-<tr>
-<td>Revisão individual de impacto</td>
-<td>Manter</td>
-<td>Participante poderá confirmar, rejeitar, corrigir, limitar, encerrar, adiar ou solicitar explicação por impacto</td>
-</tr>
-<tr>
 <td>Impacto automático</td>
 <td>Refinar</td>
 <td>Limitado a fato objetivo, fonte autorizada, baixo risco, reversibilidade, finalidade e ausência de conflito</td>
@@ -6000,6 +5985,11 @@
 <td>Correção de Evento de Vida</td>
 <td>Manter</td>
 <td>Preserva versão anterior, recompõe impactos e notifica consumidores necessários</td>
+</tr>
+<tr>
+<td>Correção compensatória</td>
+<td>Manter</td>
+<td>Novo evento limita ou anula efeitos anteriores sem reescrever o registro histórico</td>
 </tr>
 <tr>
 <td>Contestação de Evento de Vida</td>
@@ -6022,26 +6012,6 @@
 <td>Preserva ciclo anterior e distingue continuidade de nova ocorrência</td>
 </tr>
 <tr>
-<td>Privacidade visual de Evento de Vida</td>
-<td>Manter</td>
-<td>Oculta conteúdo sensível por padrão, utiliza títulos neutros e minimiza cartões, notificações e dispositivos compartilhados</td>
-</tr>
-<tr>
-<td>Controle de notificações de Eventos de Vida</td>
-<td>Manter</td>
-<td>Permite definir canal, frequência, conteúdo, horários, silêncio e ausência de prévia sensível</td>
-</tr>
-<tr>
-<td>Compartilhamento de Evento de Vida</td>
-<td>Refinar</td>
-<td>Deve indicar destinatário, finalidade, conteúdo, duração, revogação, último uso relevante e propagação</td>
-</tr>
-<tr>
-<td>Consistência entre canais de Eventos de Vida</td>
-<td>Manter</td>
-<td>Aplicativo, web, conversa, notificações e serviços autorizados refletem mesma versão, estado, permissões, temporalidade e contestações</td>
-</tr>
-<tr>
 <td>Propagação de Evento de Vida</td>
 <td>Refinar</td>
 <td>Utiliza recortes mínimos e solicita reavaliação às capacidades consumidoras</td>
@@ -6049,7 +6019,22 @@
 <tr>
 <td>Idempotência em Eventos de Vida</td>
 <td>Manter</td>
-<td>Reprocessamento não pode duplicar impactos, atualizações, objetivos ou notificações</td>
+<td>Reprocessamento não pode duplicar eventos, impactos, atualizações, objetivos ou notificações</td>
+</tr>
+<tr>
+<td>Ordenação de Eventos de Vida</td>
+<td>Manter</td>
+<td>Preserva ordens de ocorrência, conhecimento e processamento e trata dependências funcionais</td>
+</tr>
+<tr>
+<td>Concorrência em Eventos de Vida</td>
+<td>Manter</td>
+<td>Impede sobrescrita silenciosa e exige comparação de versões</td>
+</tr>
+<tr>
+<td>Revogação de compartilhamento de evento</td>
+<td>Refinar</td>
+<td>Interrompe novos usos e somente se conclui após propagação aos consumidores necessários</td>
 </tr>
 <tr>
 <td>Titularidade do Evento de Vida</td>
@@ -6057,9 +6042,19 @@
 <td>Identifica Pessoa, Organização ou Coletivo a quem o evento pertence</td>
 </tr>
 <tr>
+<td>Ator do evento funcional</td>
+<td>Manter</td>
+<td>Identifica quem provocou ou reconheceu a alteração sem confundir execução técnica e autoridade humana</td>
+</tr>
+<tr>
 <td>Autoridade em Eventos de Vida</td>
 <td>Refinar</td>
 <td>Fonte somente confirma fatos sob seu escopo; Intelligence produz hipótese, não evento pessoal definitivo</td>
+</tr>
+<tr>
+<td>Temporalidades do evento funcional</td>
+<td>Manter</td>
+<td>Separam tempo do fato, conhecimento, reconhecimento e aplicação</td>
 </tr>
 <tr>
 <td>Integração com Contexto Vivo</td>
@@ -6099,7 +6094,7 @@
 <tr>
 <td>Platform Layer em Eventos de Vida</td>
 <td>Refinar</td>
-<td>Sustenta identidade, autorização, temporalidade, versionamento, grafo e auditoria sem redefinir significado funcional</td>
+<td>Sustenta identidade, autorização, temporalidade, versionamento, ordenação, idempotência, grafo e auditoria sem redefinir significado funcional</td>
 </tr>
 <tr>
 <td>Evento sensível</td>
@@ -6171,9 +6166,9 @@
 </tbody>
 </table>
 <h2 id="reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>As Capacidades 02 e 03 permanecem funcionalmente concluídas. <code>PAS-001-EV-FOUNDATION-001 1.0.0</code>, <code>PAS-001-EV-LIFECYCLE-001 1.0.0</code> e <code>PAS-001-EV-VIEW-001 1.0.0</code> consolidam fundamentos, ciclo de vida e visualização da Capacidade 04 e elevam seu avanço editorial de referência para 60%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.</p>
+<p>As Capacidades 02 e 03 permanecem funcionalmente concluídas. As quatro extensões normativas vigentes de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização e contratos de eventos funcionais e elevam o avanço editorial de referência da Capacidade 04 para 80%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.</p>
 <h2 id="proxima-revisao">Próxima revisão<a class="headerlink" href="#proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Definir os contratos dos eventos funcionais da <strong>Capacidade de Eventos de Vida</strong>, incluindo identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.</p>
+<p>Definir as <strong>integrações funcionais da Capacidade de Eventos de Vida</strong> com as capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.</p>
 
 
 
