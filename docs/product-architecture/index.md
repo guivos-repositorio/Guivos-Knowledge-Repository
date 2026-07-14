@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.5.0
+version: 1.5.1
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -107,27 +107,45 @@ A Capacidade 04 está **Functionally complete**, com progresso editorial de refe
 
 ### Capacidade 05 — Próximos Passos
 
-`PAS-001-PP-FOUNDATION-001 1.0.0` é a primeira extensão normativa da Capacidade 05 e substitui o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
+As extensões normativas vigentes são:
 
-A extensão consolida:
+- `PAS-001-PP-FOUNDATION-001` — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;
+- `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura.
 
-- pergunta central, objetivo funcional, valor entregue e singularidade;
-- Próximo Passo como decisão ou hipótese de movimento delimitada e contextual;
-- limiar de acionabilidade e natureza contextual do termo “próximo”;
-- multiplicidade legítima e ausência legítima de Próximo Passo;
-- distinções em relação a objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
-- titularidade, papéis, responsabilidade, origem e autoridade;
-- tipos, classificações e estados funcionais iniciais;
-- separação entre estado funcional e estado da informação;
-- prioridade operacional, sequenciamento, dependências, bloqueios, temporalidade, esforço, risco e sensibilidade;
-- entradas, requisitos de admissão, estrutura, saídas e eventos iniciais;
-- relações com Contexto Vivo, Objetivos, Eventos de Vida e demais capacidades;
-- limites da Guivos Intelligence e da Platform Layer;
-- controle do participante e proibição de produtividade coercitiva ou exploração comercial.
+`PAS-001-PP-FOUNDATION-001 1.0.0` substitui normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
 
-A Capacidade 05 está **In progress**, com progresso editorial de referência de `20%`.
+`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida o ciclo completo, mantendo separadas as dimensões de:
 
-O próximo bloco deverá consolidar o ciclo de vida dos Próximos Passos.
+- possibilidade;
+- proposta;
+- confirmação;
+- ativação;
+- prontidão;
+- prioridade;
+- agendamento;
+- execução;
+- resultado;
+- progresso;
+- conclusão.
+
+O ciclo também formaliza:
+
+- confirmação proporcional, condicionada, parcial e compartilhada;
+- reformulação, desdobramento, unificação e alternativas;
+- portfólio ativo e limites contextuais de simultaneidade;
+- dependências e bloqueios com estados próprios;
+- pausa distinta de bloqueio e retomada com reavaliação;
+- acompanhamento proporcional sem vigilância excessiva;
+- conclusão automática somente para fatos objetivos autorizados;
+- cancelamento, substituição e expiração sem julgamento pessoal;
+- recorrência sem equivalência automática a hábito ou evolução;
+- passos compartilhados, delegação e responsabilidades individualizadas;
+- revogação, propagação mínima, prevenção de ciclos e idempotência;
+- retroatividade, concorrência, falha segura, privacidade e prevenção de fadiga.
+
+A Capacidade 05 está **In progress**, com progresso editorial de referência de `40%`.
+
+O próximo bloco deverá consolidar a visualização e o controle dos Próximos Passos.
 
 ## Regras arquiteturais
 
@@ -221,6 +239,26 @@ O próximo bloco deverá consolidar o ciclo de vida dos Próximos Passos.
 88. Receita, patrocínio ou publicidade não podem determinar prioridade.
 89. A capacidade não deve criar listas ou ações artificiais para maximizar engajamento.
 90. O participante permanece no controle da criação, confirmação, alteração, priorização, execução, cancelamento e compartilhamento.
+91. Possibilidade, proposta, confirmação, ativação, prontidão, agendamento, execução, resultado, progresso e conclusão são dimensões distintas.
+92. Confirmação condicionada não produz ativação antes do atendimento da condição.
+93. Prontidão não equivale a prioridade, obrigação imediata ou início.
+94. Desbloqueio não inicia automaticamente a execução.
+95. Prazo vencido não representa conclusão, cancelamento, abandono ou fracasso.
+96. Ausência de atualização não representa interrupção ou abandono.
+97. Resultado imediato não equivale a progresso do objetivo.
+98. Um passo pode ser concluído mesmo quando o resultado esperado não ocorrer, desde que o movimento delimitado tenha sido realizado.
+99. Conclusão automática exige fato objetivo, fonte autorizada e possibilidade de contestação.
+100. Cancelamento, substituição e expiração possuem significados distintos e não representam julgamento pessoal.
+101. Recorrência não comprova hábito, aderência, identidade ou evolução.
+102. Confirmação compartilhada ocorre individualmente por participante ou papel.
+103. Delegação transfere execução dentro de escopo autorizado, não titularidade ou decisão.
+104. Revogação interrompe novos acessos e usos e deve propagar recortes recompostos.
+105. Reprocessamento não pode duplicar passo, confirmação, prioridade, agendamento, conclusão, notificação ou responsabilidade.
+106. Mensagens fora de ordem e alterações concorrentes não podem gerar estados impossíveis ou sobrescrita silenciosa.
+107. Falha parcial não pode ser apresentada como sucesso integral.
+108. Acompanhamento deve ser proporcional e não constituir vigilância excessiva.
+109. O ciclo deve apoiar ação real, não maximizar listas, notificações ou tempo de tela.
+110. O participante permanece no controle do ciclo de vida.
 
 ## Documentos do domínio
 
@@ -228,13 +266,9 @@ O próximo bloco deverá consolidar o ciclo de vida dos Próximos Passos.
 - [PAS-001 — Guivos Journey](pas-001-guivos-journey.md)
 - [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos](pas-001-objetivos-kpis-cenarios-contrato-final.md)
-- [PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida](pas-001-eventos-de-vida-fundamentos-iniciais.md)
-- [PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida](pas-001-eventos-de-vida-ciclo-de-vida.md)
-- [PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida](pas-001-eventos-de-vida-visualizacao-controle.md)
-- [PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais de Eventos de Vida](pas-001-eventos-de-vida-eventos-funcionais.md)
-- [PAS-001-EV-INTEGRATION-001 — Integrações Funcionais da Capacidade de Eventos de Vida](pas-001-eventos-de-vida-integracoes-funcionais.md)
 - [PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos](pas-001-proximos-passos-fundamentos-iniciais.md)
+- [PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos](pas-001-proximos-passos-ciclo-de-vida.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
