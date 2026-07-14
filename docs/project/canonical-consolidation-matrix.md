@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.5.1
+version: 1.5.2
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -89,6 +89,10 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Expiração de Próximo Passo | Refinar | Perda de atualidade, janela ou validade funcional; distinta de cancelamento |
 | Recorrência de Próximo Passo | Refinar | Repetição operacional; não comprova hábito, aderência, identidade ou evolução |
 | Delegação de Próximo Passo | Refinar | Transferência de execução em escopo autorizado sem transferência automática de titularidade ou decisão |
+| Portfólio ativo de Próximos Passos | Refinar | Conjunto de movimentos com relevância operacional atual; distinto de propostas e possibilidades futuras |
+| Cartão de Próximo Passo | Manter | Representação minimizada para identificação, estado, decisão e ação principal disponível |
+| Fila de atenção de Próximos Passos | Refinar | Recorte de itens que podem exigir decisão ou revisão, sem presumir urgência universal |
+| Privacidade visual de Próximo Passo | Manter | Minimização, títulos neutros, modo discreto e restrição de exposição conforme sensibilidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
@@ -136,9 +140,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final |
 | Eventos de Vida | Manter | Capacidade 04 funcionalmente concluída por seis extensões normativas |
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
-| Próximos Passos | Refinar | Capacidade 05 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40% |
+| Próximos Passos | Refinar | Capacidade 05 em desenvolvimento, com fundamentos, ciclo de vida, visualização e controles consolidados e progresso editorial de 60% |
 | Fundamentos Iniciais da Capacidade de Próximos Passos | Manter | PAS-001-PP-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, titularidade, papéis, tipos, estados, prioridade, temporalidade, dependências, limites e controle |
 | Ciclo de Vida dos Próximos Passos | Manter | PAS-001-PP-LIFECYCLE-001 1.0.0 define proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, recorrência, compartilhamento, propagação e falha segura |
+| Visualização e Controle dos Próximos Passos | Manter | PAS-001-PP-VIEW-001 1.0.0 define `Meus Próximos Passos`, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico e ações |
+| Meus Próximos Passos | Manter | Superfície de clareza e controle; não é lista infinita, ranking, feed ou pontuação de produtividade |
 | Singularidade de Próximos Passos | Manter | Governa o próximo movimento possível da jornada sem absorver objetivos, tarefas, oportunidades ou intervenções |
 | Acionabilidade | Refinar | Capacidade de compreender movimento, relevância, responsável, condições, resultado imediato, temporalidade, riscos e reconhecimento de realização |
 | Multiplicidade de Próximos Passos | Manter | Poderão existir passos principais, alternativos, condicionais, preparatórios, compartilhados ou nenhum passo ativo |
@@ -150,20 +156,28 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Estado funcional e estado da informação | Manter | Condição do movimento e confiança sobre a informação permanecem separadas |
 | Confirmação condicionada | Manter | Não ativa o passo antes do atendimento da condição |
 | Portfólio ativo de Próximos Passos | Refinar | Distingue principal, ativo, pronto, agendado, em andamento, bloqueado, pausado, futuro, alternativo e aguardando condição |
+| Portfólio de possibilidades | Manter | Mantém alternativas futuras sem tratá-las como backlog obrigatório ou competir com movimentos ativos |
+| Cartão de Próximo Passo | Manter | Apresenta somente formulação, estado, prioridade relevante, contexto, janela, responsável, prontidão, bloqueio, sensibilidade e ação principal necessária |
+| Detalhamento progressivo | Manter | Expõe primeiro o necessário para decisão e controle, preservando informações sensíveis em camadas protegidas |
 | Sequenciamento de Próximos Passos | Manter | Suporta relações anteriores, posteriores, paralelas, alternativas, condicionais, preparatórias, confirmatórias, substitutivas e recorrentes |
 | Dependências de Próximos Passos | Refinar | Possuem tipos e estados próprios e podem tornar o passo pronto, desbloqueá-lo ou exigir nova confirmação |
 | Bloqueios de Próximos Passos | Refinar | Podem ser objetivos e automáticos somente quando autorizados; não decorrem de baixa interação ou ritmo lento |
 | Pausa e bloqueio | Manter | Pausa decorre de decisão; bloqueio decorre de condição impeditiva |
 | Prazo vencido | Refinar | Exige avaliação; não produz automaticamente conclusão, cancelamento, abandono ou fracasso |
+| Agenda de Próximos Passos | Refinar | Apresenta datas, janelas, compromissos, recorrências e revisões sem substituir o calendário geral |
 | Execução de Próximo Passo | Refinar | Início exige declaração, ação explícita, fonte autorizada ou evidência suficiente; visualização não inicia execução |
 | Resultado e progresso | Manter | Resultado imediato pertence ao passo; progresso pertence à Capacidade de Objetivos |
 | Conclusão automática de Próximo Passo | Refinar | Permitida apenas para fato objetivo, fonte autorizada e contestação disponível |
 | Cancelamento, substituição e expiração | Manter | Possuem significados distintos e preservam histórico e efeitos anteriores |
 | Contestação e correção de Próximo Passo | Manter | Contestação limita efeitos críticos; correção é compensatória e preserva versões |
-| Recorrência de Próximo Passo | Refinar | Possui ocorrências próprias e não gera julgamento por ocorrências não realizadas |
+| Recorrência de Próximo Passo | Refinar | Possui ocorrências próprias e não gera punição, ranking ou julgamento por ocorrências não realizadas |
 | Próximo Passo compartilhado | Refinar | Confirmação e responsabilidade são individualizadas por participante ou papel |
 | Delegação de Próximo Passo | Refinar | Exige autoridade, escopo, aceitação possível e responsabilidade residual |
 | Compartilhamento e revogação | Refinar | Usam finalidade e minimização; revogação interrompe novos acessos e usos e recompõe recortes |
+| Privacidade visual de Próximos Passos | Manter | Títulos neutros, modo discreto, notificações minimizadas, restrição de busca e proteção em dispositivos compartilhados |
+| Fila de atenção de Próximos Passos | Refinar | Reúne decisões, bloqueios, prazos, contestações e sincronizações sem classificar todos os itens como urgentes |
+| Acessibilidade de Próximos Passos | Manter | Exige leitores de tela, teclado, contraste, escala de texto, linguagem simples, alternativas a arrastar e soltar e baixa carga cognitiva |
+| Neutralidade visual e comercial | Manter | Patrocínio, comissão, estoque ou oportunidade não alteram prioridade, destaque ou recomendação funcional |
 | Idempotência em Próximos Passos | Manter | Reprocessamento não pode duplicar passo, confirmação, prioridade, agendamento, conclusão, notificação ou responsabilidade |
 | Ordenação e concorrência | Manter | Mensagens fora de ordem e alterações concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa |
 | Falha segura em Próximos Passos | Manter | Preserva último estado válido, evita falsa confirmação ou conclusão e distingue falha parcial |
@@ -196,8 +210,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. `PAS-001-PP-LIFECYCLE-001 1.0.0` consolida o ciclo de vida da Capacidade 05, mantém seu estado `In progress` e eleva o progresso editorial de referência para 40%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. `PAS-001-PP-VIEW-001 1.0.0` consolida a visualização e o controle da Capacidade 05, mantém seu estado `In progress` e eleva o progresso editorial de referência para 60%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar a **visualização e o controle dos Próximos Passos**, incluindo visão geral, portfólio ativo, cartões, detalhamento, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, passos compartilhados, histórico, privacidade, acessibilidade, explicabilidade e ações do participante.
+Consolidar os **contratos dos eventos funcionais da Capacidade de Próximos Passos**, incluindo comandos, propostas, fatos reconhecidos, criação, confirmação, ativação, prontidão, prioridade, dependências, bloqueios, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.
