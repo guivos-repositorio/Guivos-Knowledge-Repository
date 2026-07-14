@@ -8,9 +8,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - marco `M5.9 — Chat Continuity and Repository Reconciliation Completed` concluído;
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
-- Capacidades 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida funcionalmente concluídas;
-- Capacidade 05 — Próximos Passos em desenvolvimento, `In progress`, 90%;
-- `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0`, `PAS-001-PP-VIEW-001 1.0.0`, `PAS-001-PP-EVENT-001 1.0.0` e `PAS-001-PP-INTEGRATION-001 1.0.0` como extensões normativas vigentes da Capacidade 05;
+- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos funcionalmente concluídas;
+- `PAS-001-PP-CONTRACT-001 1.0.0` como contrato final vigente da Capacidade 05;
+- Capacidade 06 — Oportunidades Ativas como próxima frente oficial, ainda `Planned / concept consolidated`;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -18,9 +18,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **KPIs, guardrails, baseline, cenários e contrato final da Capacidade de Próximos Passos**.
+Consolidar os **fundamentos iniciais da Capacidade 06 — Oportunidades Ativas**.
 
-As integrações vigentes preservam titularidade, finalidade, minimização, autoridade limitada, proveniência, temporalidade, revogação, neutralidade comercial, independência das capacidades consumidoras e falha segura.
+O contrato final de Próximos Passos consolida 68 KPIs em 14 famílias, 20 guardrails de tolerância zero, baseline, painel de saúde, cinco níveis de desempenho, cenários e critérios de conclusão. A capacidade está `Functionally complete`.
 
 ## Acesso rápido
 
@@ -34,6 +34,7 @@ As integrações vigentes preservam titularidade, finalidade, minimização, aut
 - [Visualização e Controle dos Próximos Passos](product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
 - [Eventos Funcionais dos Próximos Passos](product-architecture/pas-001-proximos-passos-eventos-funcionais.md)
 - [Integrações Funcionais dos Próximos Passos](product-architecture/pas-001-proximos-passos-integracoes-funcionais.md)
+- [Contrato Final dos Próximos Passos](product-architecture/pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -49,12 +50,12 @@ As integrações vigentes preservam titularidade, finalidade, minimização, aut
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 90% |
-| 06 — Oportunidades Ativas | Planned / concept consolidated |
+| 05 — Próximos Passos | Functionally complete |
+| 06 — Oportunidades Ativas | Planned / concept consolidated — próxima frente |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
 ## Ponto de retomada
 
-Retomar nos KPIs, guardrails, baseline, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final dos Próximos Passos.
+Retomar na pergunta central, no objetivo funcional, no valor entregue, na singularidade, na definição, nas distinções, na titularidade, na relevância, na elegibilidade, na temporalidade, na disponibilidade, no custo, no risco e na neutralidade da Capacidade 06 — Oportunidades Ativas.
