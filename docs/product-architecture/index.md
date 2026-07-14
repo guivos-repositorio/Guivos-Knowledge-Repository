@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.5.3
+version: 1.5.4
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -112,7 +112,8 @@ As extensões normativas vigentes são:
 - `PAS-001-PP-FOUNDATION-001` — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;
 - `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;
 - `PAS-001-PP-VIEW-001` — superfície `Meus Próximos Passos`, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles;
-- `PAS-001-PP-EVENT-001` — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura.
+- `PAS-001-PP-EVENT-001` — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura;
+- `PAS-001-PP-INTEGRATION-001` — contrato comum, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação, neutralidade comercial e degradação controlada.
 
 `PAS-001-PP-FOUNDATION-001 1.0.0` substitui normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
 
@@ -153,9 +154,29 @@ As extensões normativas vigentes são:
 - idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e falha segura;
 - retenção, minimização de logs, recuperação, explicabilidade e auditoria.
 
-A Capacidade 05 está **In progress**, com progresso editorial de referência de `80%`.
+`PAS-001-PP-INTEGRATION-001 1.0.0` consolida:
 
-O próximo bloco deverá consolidar as integrações funcionais dos Próximos Passos.
+- integração como intercâmbio governado, não como decisão;
+- tipos e modos funcionais com permissões próprias;
+- contrato comum com produtor, consumidor, participante, finalidade, escopo, autoridade, proveniência, temporalidade, qualidade, sensibilidade e estado de sincronização;
+- requisitos de admissão, identidade e associação segura;
+- autoridade limitada ao fato que a fonte pode legitimamente confirmar;
+- separação entre qualidade técnica, confiança funcional e autoridade;
+- transformações permitidas e proibição de fabricar prazo, prioridade, intenção, responsabilidade, causalidade, diagnóstico ou conclusão;
+- sincronização com versão, idempotência, ordenação, conflitos, reconciliação, latência e reprocessamento;
+- prevenção de ciclos e duplicidades entre capacidades;
+- minimização, permissões, pausa, revogação e preservação de fatos históricos legítimos;
+- falha segura e degradação controlada;
+- integrações com todas as capacidades do Journey;
+- limites da Guivos Intelligence e responsabilidades da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
+- integrações temporárias e pessoais, proteção de terceiros, passos compartilhados, conflitos entre fontes e retroatividade;
+- canais conversacionais, notificações, busca, saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.
+
+A Capacidade 05 está **In progress**, com progresso editorial de referência de `90%`.
+
+O próximo bloco deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final dos Próximos Passos.
 
 ## Regras arquiteturais
 
@@ -305,6 +326,36 @@ O próximo bloco deverá consolidar as integrações funcionais dos Próximos Pa
 144. Platform Layer sustenta armazenamento, publicação, filas e reconstrução sem redefinir semântica.
 145. As métricas dos contratos avaliam o sistema, não o participante.
 146. O participante permanece no controle dos eventos funcionais da capacidade.
+147. Integração de Próximos Passos não representa decisão do participante.
+148. Disponibilidade técnica de dado não representa autorização de uso.
+149. Fonte somente confirma fatos dentro de sua autoridade.
+150. Finalidade deve preceder acesso e minimização deve preceder compartilhamento.
+151. Titularidade não é transferida por integração.
+152. A capacidade consumidora governa sua própria decisão e não recebe decisões impostas.
+153. Informação externa não cria compromisso pessoal.
+154. Calendário não confirma execução e compra não confirma conclusão.
+155. Localização não confirma ação e atividade não confirma progresso.
+156. Participação não confirma transformação humana.
+157. Organização não recebe a jornada pessoal integral.
+158. Receita e patrocínio não alteram prioridade ou recomendação funcional.
+159. Conteúdo sensível não pode alimentar publicidade.
+160. Transformações não podem fabricar precisão, causalidade, intenção, responsabilidade ou diagnóstico.
+161. Sincronização não pode duplicar efeitos.
+162. Mensagens fora de ordem não podem criar estados impossíveis.
+163. Revogação interrompe novos usos e exige propagação efetiva.
+164. Falha de integração reduz automação e preserva o último estado válido.
+165. Falha parcial não representa sucesso integral.
+166. Ausência de dado não representa ausência de necessidade.
+167. Informação pública não representa uso irrestrito.
+168. Integrações temporárias devem possuir expiração.
+169. Informações de terceiros não devem formar perfis independentes.
+170. Qualidade técnica, confiança funcional e autoridade são dimensões distintas.
+171. Proveniência e cadeia de transformação devem permanecer reconstruíveis.
+172. Pausa e revogação devem permanecer controláveis pelo participante.
+173. Guivos Intelligence pode sugerir, explicar e comparar, mas não confirmar decisões pessoais.
+174. Platform Layer sustenta integração, sincronização e auditoria sem redefinir semântica.
+175. Métricas das integrações avaliam o sistema, não o participante.
+176. O participante permanece no controle das integrações funcionais.
 
 ## Documentos do domínio
 
@@ -317,6 +368,7 @@ O próximo bloco deverá consolidar as integrações funcionais dos Próximos Pa
 - [PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos](pas-001-proximos-passos-ciclo-de-vida.md)
 - [PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos](pas-001-proximos-passos-visualizacao-controle.md)
 - [PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos](pas-001-proximos-passos-eventos-funcionais.md)
+- [PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos](pas-001-proximos-passos-integracoes-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
