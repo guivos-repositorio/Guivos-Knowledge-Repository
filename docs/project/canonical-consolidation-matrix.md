@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.4.0
+version: 1.4.1
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -54,7 +54,7 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Critério de sucesso | Refinar | Condição capaz de representar avanço ou alcance satisfatório; não precisa ser quantitativa |
 | Atividade | Refinar | Ação realizada; não equivale automaticamente a progresso, experiência transformadora ou Evento de Vida |
 | Experiência | Refinar | Vivência efetiva; poderá produzir Evento de Vida, mas não equivale automaticamente a mudança relevante |
-| Sinal | Manter | Indicação possível que exige avaliação antes de ser tratada como fato confirmado |
+| Sinal | Refinar | Indicação possível que permanece distinta de evento proposto ou confirmado |
 | Evidência | Refinar | Informação que sustenta interpretação ou reconhecimento sem constituir o próprio evento |
 | Resultado | Manter | Consequência observável ou declarada relacionada à jornada |
 | Progresso | Refinar | Mudança relevante na direção do resultado, baseada na relação entre objetivo, critério, contexto e evidência |
@@ -112,10 +112,25 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final; substitui o estado In progress por Functionally complete |
 | Eventos de Vida | Manter | Capacidade 04 ativa; governa mudanças relevantes capazes de alterar a jornada |
 | Fundamentos Iniciais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, entradas e integrações iniciais |
+| Ciclo de Vida dos Eventos de Vida | Manter | PAS-001-EV-LIFECYCLE-001 1.0.0 define identificação, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento e propagação |
+| Estado do Evento de Vida | Refinar | Condição da mudança real, separada do estado da informação conhecida pela Guivos |
+| Estado da informação do evento | Manter | Hipótese, não confirmado, confirmado, contestado ou corrigido |
 | Evento de Vida planejado | Refinar | Previsão ou planejamento de mudança; não equivale a evento ocorrido |
-| Evento de Vida progressivo | Manter | Mudança desenvolvida ao longo de período, com início, duração, marcos e incerteza temporal |
-| Evento primário | Manter | Mudança reconhecida que deverá permanecer distinta de seus efeitos derivados |
-| Impacto de Evento de Vida | Refinar | Efeito confirmado ou proposto, avaliado por dimensão contextual e objetivo |
+| Evento de Vida progressivo | Manter | Mudança desenvolvida ao longo de período, com início, duração, atualizações e incerteza temporal |
+| Evento de Vida retroativo | Refinar | Preserva data do fato, data de conhecimento e limites da reconstrução histórica |
+| Relevância de Evento de Vida | Refinar | Materialidade contextual, explicável e revisável para a jornada |
+| Evento primário | Manter | Mudança reconhecida que permanece distinta de seus efeitos derivados |
+| Impacto de Evento de Vida | Refinar | Efeito proposto ou confirmado com temporalidade, intensidade e ciclo próprios |
+| Impacto automático | Refinar | Limitado a fato objetivo, fonte autorizada, baixo risco, reversibilidade, finalidade e ausência de conflito |
+| Evento composto | Manter | Organiza transição ampla sem apagar eventos componentes |
+| Causalidade entre eventos | Refinar | Exige base explicável e não decorre apenas de proximidade temporal |
+| Correção de Evento de Vida | Manter | Preserva versão anterior, recompõe impactos e notifica consumidores necessários |
+| Contestação de Evento de Vida | Manter | Pode suspender impactos, limitar recortes e impedir decisões críticas |
+| Conclusão de Evento de Vida | Refinar | Encerra a mudança representada sem encerrar automaticamente impactos persistentes |
+| Arquivamento de Evento de Vida | Refinar | Retira da operação cotidiana sem equivaler a exclusão ou apagar impactos ativos |
+| Reabertura de Evento de Vida | Manter | Preserva ciclo anterior e distingue continuidade de nova ocorrência |
+| Propagação de Evento de Vida | Refinar | Utiliza recortes mínimos e solicita reavaliação às capacidades consumidoras |
+| Idempotência em Eventos de Vida | Manter | Reprocessamento não pode duplicar impactos, atualizações, objetivos ou notificações |
 | Titularidade do Evento de Vida | Manter | Identifica Pessoa, Organização ou Coletivo a quem o evento pertence |
 | Autoridade em Eventos de Vida | Refinar | Fonte somente confirma fatos sob seu escopo; Intelligence produz hipótese, não evento pessoal definitivo |
 | Integração com Contexto Vivo | Refinar | Eventos de Vida governam mudança e temporalidade; Contexto Vivo governa o estado resultante |
@@ -145,8 +160,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 e 03 permanecem funcionalmente concluídas. O `PAS-001-EV-FOUNDATION-001 1.0.0` inaugura a baseline normativa da Capacidade 04, substitui seu estado anterior por `In progress` e eleva o avanço editorial de referência para 20%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+As Capacidades 02 e 03 permanecem funcionalmente concluídas. `PAS-001-EV-FOUNDATION-001 1.0.0` e `PAS-001-EV-LIFECYCLE-001 1.0.0` consolidam a baseline normativa inicial da Capacidade 04 e elevam seu avanço editorial de referência para 40%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Definir o ciclo de vida dos **Eventos de Vida**, incluindo identificação, proposição, confirmação, estados, temporalidade, relevância, impacto, relações, correção, contestação, encerramento e propagação.
+Definir os comportamentos funcionais da visualização e do controle dos **Eventos de Vida**, incluindo linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.
