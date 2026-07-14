@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.5.5
+version: 1.6.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -92,61 +92,40 @@ A Capacidade 03 está **Functionally complete**.
 
 ### Capacidade 04 — Eventos de Vida
 
-As extensões normativas vigentes são:
-
-- `PAS-001-EV-FOUNDATION-001` — fundamentos, definição, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites e controle;
-- `PAS-001-EV-LIFECYCLE-001` — identificação, proposição, confirmação, estados, relevância, impactos, relações, correção, contestação, encerramento e propagação;
-- `PAS-001-EV-VIEW-001` — linha do tempo, detalhamento, impactos, ações, privacidade, histórico e acessibilidade;
-- `PAS-001-EV-EVENT-001` — comandos, propostas, fatos reconhecidos, contratos, idempotência, ordenação, versionamento e auditoria;
-- `PAS-001-EV-INTEGRATION-001` — finalidade, identidade, autoridade, proveniência, transformações, integrações, revogação e neutralidade comercial;
-- `PAS-001-EV-CONTRACT-001` — 60 KPIs, 13 famílias, 18 guardrails, baseline, painel de saúde, cenários e contrato final.
-
-O `PAS-001-EV-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`.
+As seis extensões normativas `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final.
 
 A Capacidade 04 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
 ### Capacidade 05 — Próximos Passos
 
-As extensões normativas vigentes são:
-
-- `PAS-001-PP-FOUNDATION-001` — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;
-- `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;
-- `PAS-001-PP-VIEW-001` — superfície `Meus Próximos Passos`, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles;
-- `PAS-001-PP-EVENT-001` — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura;
-- `PAS-001-PP-INTEGRATION-001` — contrato comum, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação, neutralidade comercial e degradação controlada;
-- `PAS-001-PP-CONTRACT-001` — 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, níveis de desempenho, cenários e contrato final.
-
-`PAS-001-PP-FOUNDATION-001 1.0.0` substituiu normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
-
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo completo, mantendo separadas as dimensões de possibilidade, proposta, confirmação, ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão.
-
-`PAS-001-PP-VIEW-001 1.0.0` consolidou `Meus Próximos Passos`, o portfólio, os controles, a privacidade, a acessibilidade, a neutralidade comercial e a prevenção de fadiga.
-
-`PAS-001-PP-EVENT-001 1.0.0` consolidou comandos, propostas, eventos reconhecidos, imutabilidade histórica, correção compensatória, idempotência, ordenação, concorrência, auditoria e falha segura.
-
-`PAS-001-PP-INTEGRATION-001 1.0.0` consolidou finalidade, minimização, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação e degradação controlada.
-
-`PAS-001-PP-CONTRACT-001 1.0.0` consolida:
-
-- 68 KPIs organizados em 14 famílias;
-- 20 guardrails obrigatórios de tolerância zero;
-- baseline funcional antes de metas permanentes;
-- painel de saúde e níveis `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`;
-- cenários funcionalmente ideais, alternativos e limite;
-- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
-- contrato final de titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas e auditoria;
-- regra formal de reabertura;
-- ausência de lacunas funcionais bloqueantes conhecidas na baseline vigente.
-
-O `PAS-001-PP-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` por `Functionally complete`.
+As seis extensões normativas `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.
 
 A Capacidade 05 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
 ### Capacidade 06 — Oportunidades Ativas
 
-A Capacidade 06 é a próxima frente oficial de Product Engineering e permanece `Planned / concept consolidated` até sua primeira extensão normativa.
+`PAS-001-OA-FOUNDATION-001 1.0.0` é a primeira extensão normativa da Capacidade 06 e substitui `Planned / concept consolidated` por `In progress`.
 
-O próximo bloco deverá consolidar seus fundamentos iniciais, incluindo definição, singularidade, titularidade, relevância, elegibilidade, temporalidade, disponibilidade, custo, risco, patrocínio, neutralidade e relações com as demais capacidades.
+A extensão consolida:
+
+- pergunta central, objetivo funcional, valor entregue e singularidade;
+- Oportunidade Ativa como meio suficientemente disponível, legítimo, contextual e potencialmente compatível;
+- distinção entre oportunidade candidata, Oportunidade Ativa, oferta, anúncio, recomendação, Próximo Passo, experiência e transação;
+- titularidade, papéis, origens e autoridade das fontes;
+- tipos, classificações, elegibilidade e disponibilidade;
+- temporalidade, localização, modalidade, custos e condições econômicas;
+- patrocínio, comissão, afiliação e demais relações comerciais;
+- risco, segurança, sensibilidade e escassez;
+- relevância contextual, fatores legítimos e fatores proibidos;
+- limiar de ativação, estados funcionais, estado da informação e relação individual do participante;
+- ausência legítima de oportunidades compatíveis;
+- entradas, admissão, estrutura do registro, saídas e eventos iniciais;
+- relações com as capacidades do Journey, Guivos Intelligence, Platform Layer e produtos especializados;
+- neutralidade comercial, controle do participante, responsabilidades e limites.
+
+A Capacidade 06 está **In progress**, com progresso editorial de referência de `20%`.
+
+O próximo bloco deverá consolidar o ciclo de vida das Oportunidades Ativas.
 
 ## Regras arquiteturais
 
@@ -340,6 +319,46 @@ O próximo bloco deverá consolidar seus fundamentos iniciais, incluindo defini�
 188. Relações comerciais devem permanecer identificadas e separadas da decisão do participante.
 189. O contrato final de Próximos Passos preserva ação no mundo real sem transformar a jornada em cobrança, vigilância ou publicidade.
 190. O participante permanece no controle da capacidade concluída.
+191. Oportunidade Ativa é meio atualmente relevante e admissível, não direção, movimento, recomendação definitiva ou compromisso.
+192. Oportunidade candidata permanece em avaliação até atender ao limiar funcional de ativação.
+193. O termo `ativa` não significa visualização, interesse, aceitação, contratação, participação ou benefício recebido.
+194. Disponibilidade, elegibilidade, relevância e relação do participante são dimensões distintas.
+195. Disponibilidade de mercado isolada não cria Oportunidade Ativa.
+196. Fornecedor, patrocinador, anunciante ou parceiro não determinam relevância pessoal.
+197. Oferta e anúncio podem originar candidatura, mas não substituem avaliação funcional.
+198. Publicidade e Oportunidade Ativa devem permanecer funcional e visualmente separadas.
+199. Patrocínio, comissão, afiliação e participação na receita devem permanecer transparentes.
+200. Relação comercial não pode alterar compatibilidade, prioridade ou ordem neutra de apresentação.
+201. Alternativas não patrocinadas não podem ser ocultadas por interesse comercial.
+202. Escassez comercial não fabrica urgência pessoal.
+203. Popularidade, probabilidade de clique e tempo de tela não determinam relevância.
+204. Elegibilidade não representa aprovação, aceitação ou acesso garantido.
+205. Disponibilidade não representa benefício garantido.
+206. Visualização não representa interesse e interesse não representa compromisso.
+207. Inscrição não representa aceitação e aceitação não representa experiência.
+208. Experiência não representa automaticamente transformação, Evento de Vida ou progresso.
+209. Oportunidade não cria objetivo nem Próximo Passo automaticamente.
+210. Oportunidade indisponível não cancela Próximo Passo quando outro meio puder cumprir a função.
+211. Contexto Vivo fornece recortes mínimos e não autoriza perfil comercial paralelo.
+212. Objetivos governa direção; Próximos Passos governa movimento; Oportunidades Ativas governa meios compatíveis.
+213. Intervenções Contextuais governa quando, como ou se uma oportunidade será apresentada.
+214. Guivos Intelligence pode descobrir, comparar e explicar, mas não declarar interesse ou decidir pelo participante.
+215. Platform Layer sustenta catálogos, busca, eventos e segurança sem definir relevância por critérios técnicos ou comerciais.
+216. Guivos Mall governa transação e entrega, não relevância humana.
+217. Guivos Travel governa reservas e serviços de viagem, não transformação.
+218. Guivos Business confirma oportunidades institucionais dentro de autoridade legítima, sem acesso integral à jornada pessoal.
+219. Guivos Media deve identificar conteúdo patrocinado e não tratar consumo como aprendizado ou progresso.
+220. Guivos Ads opera publicidade identificada e não substitui a Capacidade de Oportunidades Ativas.
+221. Oportunidades sensíveis exigem finalidade, minimização, proteção reforçada e ausência de exploração comercial.
+222. Saúde, finanças, trabalho, religião, assistência social e situações jurídicas exigem autoridade e transparência proporcionais.
+223. Participação religiosa não mede fé, proximidade com Deus ou valor moral.
+224. Recompensas em ações sociais não substituem o significado social da participação.
+225. Ausência de oportunidade compatível é um estado legítimo.
+226. O sistema não deve preencher lacunas com anúncios ou opções incompatíveis.
+227. Estado da oportunidade e estado da informação devem permanecer separados.
+228. Estado da oportunidade e relação individual do participante devem permanecer separados.
+229. Revogação do uso de contexto interrompe novos usos e preserva fatos históricos legítimos.
+230. O participante permanece no controle da pesquisa, visualização, comparação, ocultação, contestação, interesse e decisão.
 
 ## Documentos do domínio
 
@@ -348,12 +367,8 @@ O próximo bloco deverá consolidar seus fundamentos iniciais, incluindo defini�
 - [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos](pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
-- [PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos](pas-001-proximos-passos-fundamentos-iniciais.md)
-- [PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos](pas-001-proximos-passos-ciclo-de-vida.md)
-- [PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos](pas-001-proximos-passos-visualizacao-controle.md)
-- [PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos](pas-001-proximos-passos-eventos-funcionais.md)
-- [PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos](pas-001-proximos-passos-integracoes-funcionais.md)
 - [PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos](pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
+- [PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas](pas-001-oportunidades-ativas-fundamentos-iniciais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
