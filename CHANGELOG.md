@@ -2,6 +2,22 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.7 — Living Context KPIs and Functional Performance
+
+- Criação de `PAS-001-CV-KPI-001 — KPIs e Desempenho Funcional do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como sétima extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição dos objetivos, princípios, unidades e nove famílias de indicadores de qualidade e desempenho funcional.
+- Formalização das métricas de cobertura, lacunas críticas, excesso contextual, atualidade, confiança e proveniência.
+- Consolidação dos indicadores de atualizações, correções, contestações, conflitos, permissões, revogações e incidentes de finalidade.
+- Definição das métricas de transparência, compreensão, esforço, fadiga, integrações, falha segura, propagação e utilidade funcional.
+- Registro dos indicadores de exclusão indevida de oportunidades, incompatibilidades não detectadas, equilíbrio, justiça e consistência.
+- Definição dos guardrails obrigatórios de tolerância zero, níveis de desempenho e metas condicionadas à construção de baseline real.
+- Consolidação da governança dos indicadores, painel de saúde e possível Índice de Saúde do Contexto Vivo sem substituição dos indicadores componentes.
+- Atualização da Arquitetura de Produtos para `1.2.7` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.0.0`, do Knowledge Board para `6.1.0` e da Matriz de Consolidação Canônica para `1.2.8`.
+- Atualização do README e da página inicial do GKR.
+- Definição dos cenários funcionalmente ideal, alternativo e limite, seguidos do contrato final da capacidade, como próximo ponto exato de retomada.
+
 ## 0.30.6 — Living Context Functional Integrations
 
 - Criação de `PAS-001-CV-INTEGRATION-001 — Integrações Funcionais do Contexto Vivo`, versão `1.0.0`.
