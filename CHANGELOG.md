@@ -2,6 +2,43 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.34.1 — Active Opportunities Lifecycle Rules
+
+- Criação de `PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Definição do fluxo desde sinal e identificação até candidatura, avaliação, ativação, apresentação, relação do participante, atualização, encerramento e arquivamento.
+- Formalização dos estados `Identificada`, `Candidata`, `Em avaliação`, `Ativa`, `Pausada`, `Indisponível`, `Encerrada`, `Expirada`, `Cancelada`, `Contestada`, `Corrigida` e `Arquivada`.
+- Separação entre estado funcional, estado da informação, disponibilidade, elegibilidade, relevância, risco, sensibilidade, relação comercial, relação individual, decisão de apresentação, vínculo com Próximo Passo e situação transacional externa.
+- Definição dos ciclos próprios de disponibilidade, elegibilidade e relevância.
+- Consolidação das transições fundamentais e proibição de saltos semânticos entre identificação, ativação, apresentação, interesse, inscrição, aceitação, contratação e participação.
+- Definição das regras de identificação por participante, fornecedor, organização, busca, catálogo, fonte pública, Guivos Intelligence, parceiro, patrocinador ou profissional.
+- Formalização da candidatura, rejeição preliminar, início da avaliação, validação da fonte, limite da autoridade e avaliação de completude.
+- Consolidação da disponibilidade atual, futura, limitada, sob consulta e em lista de espera, sem fabricação de urgência pessoal.
+- Definição da elegibilidade sensível, condicionada e não confirmada, preservando incerteza e decisão externa.
+- Formalização da relevância contextual, condicionada e sujeita a revisão por mudanças de contexto, objetivo, Próximo Passo, Evento de Vida, orçamento, localização, risco ou disponibilidade.
+- Definição da avaliação proporcional de risco e sensibilidade e dos controles sobre busca, notificações, compartilhamento, retenção, publicidade e acesso organizacional.
+- Consolidação da verificação de comissão, afiliação, patrocínio, promoção paga, exclusividade, participação na receita e demais vantagens comerciais.
+- Definição da ativação simples e condicionada sem equivalência a apresentação ou recomendação.
+- Registro da responsabilidade de Intervenções Contextuais sobre momento, forma e silêncio da apresentação.
+- Formalização da manutenção do estado ativo, dos horizontes de revisão, das atualizações silenciosas e das atualizações materiais.
+- Consolidação da pausa, retomada, indisponibilidade, expiração, encerramento e cancelamento como estados distintos.
+- Definição da contestação, limitação de efeitos, correção compensatória, arquivamento, reabertura e distinção entre novo ciclo e nova oportunidade.
+- Registro das regras de duplicidade, unificação, substituição, alternativas e comparação explicável.
+- Definição da ordem neutra de apresentação, impedindo comissão, patrocínio, valor transacional, probabilidade de clique ou tempo de tela como fatores funcionais positivos.
+- Consolidação da apresentação, visualização, salvamento, interesse, descarte e ocultação como relações independentes.
+- Formalização do início e envio de inscrição, aceitação externa, contratação e participação sem absorção da responsabilidade transacional dos produtos especializados.
+- Definição dos vínculos com Próximos Passos e dos efeitos controlados sobre Intervenções Contextuais, Objetivos e Eventos de Vida.
+- Registro das oportunidades recorrentes, coletivas, institucionais e patrocinadas.
+- Definição do tratamento de mudanças de preço, fornecedor, risco e disponibilidade da fonte.
+- Consolidação da revogação de contexto e da propagação efetiva, sem substituição por publicidade após a revogação.
+- Formalização da retroatividade, idempotência, ordenação, concorrência, falha segura e reconstrução do estado.
+- Atualização da Arquitetura de Produtos para `1.6.1` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `8.2.0`, do Knowledge Board para `8.3.0` e da Matriz de Consolidação Canônica para `1.6.1`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 06 no estado `In progress` e elevação do progresso editorial de referência para `40%`.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição da visualização e do controle das Oportunidades Ativas como próximo ponto exato de retomada.
+
 ## 0.34.0 — Active Opportunities Capability Foundation
 
 - Criação de `PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
