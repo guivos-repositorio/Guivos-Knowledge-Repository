@@ -9,8 +9,8 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
 - Capacidades 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida funcionalmente concluídas;
-- Capacidade 05 — Próximos Passos em desenvolvimento, `In progress`, 40%;
-- `PAS-001-PP-FOUNDATION-001 1.0.0` e `PAS-001-PP-LIFECYCLE-001 1.0.0` como extensões normativas vigentes da Capacidade 05;
+- Capacidade 05 — Próximos Passos em desenvolvimento, `In progress`, 60%;
+- `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0` e `PAS-001-PP-VIEW-001 1.0.0` como extensões normativas vigentes da Capacidade 05;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -18,9 +18,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar a **visualização e o controle dos Próximos Passos**, incluindo visão geral, portfólio ativo, cartões, detalhamento, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, passos compartilhados, histórico, privacidade, acessibilidade, explicabilidade e ações do participante.
+Consolidar os **contratos dos eventos funcionais da Capacidade de Próximos Passos**, incluindo comandos, propostas, fatos reconhecidos, criação, confirmação, ativação, prontidão, prioridade, dependências, bloqueios, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.
 
-O ciclo de vida vigente preserva a separação entre possibilidade, proposta, confirmação, ativação, prontidão, agendamento, execução, resultado, progresso e conclusão.
+A visualização vigente define `Meus Próximos Passos` como superfície de clareza e controle, sem pontuação de produtividade, cobrança, gamificação coercitiva ou influência comercial na prioridade.
 
 ## Acesso rápido
 
@@ -31,6 +31,7 @@ O ciclo de vida vigente preserva a separação entre possibilidade, proposta, co
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais da Capacidade de Próximos Passos](product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md)
 - [Regras do Ciclo de Vida dos Próximos Passos](product-architecture/pas-001-proximos-passos-ciclo-de-vida.md)
+- [Visualização e Controle dos Próximos Passos](product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -46,7 +47,7 @@ O ciclo de vida vigente preserva a separação entre possibilidade, proposta, co
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 40% |
+| 05 — Próximos Passos | In progress — 60% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -54,4 +55,4 @@ O ciclo de vida vigente preserva a separação entre possibilidade, proposta, co
 
 ## Ponto de retomada
 
-Retomar na visualização e no controle dos Próximos Passos, preservando autonomia, explicabilidade, privacidade e prevenção de fadiga.
+Retomar nos contratos dos eventos funcionais dos Próximos Passos, preservando a distinção entre comando, proposta, decisão e fato reconhecido.
