@@ -10,7 +10,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação ativa:** PAS-001 — Guivos Journey 0.5.0
-- **Extensões normativas ativas:** PAS-001-CV-STATE-001 1.0.0, PAS-001-CV-UPDATE-001 1.0.0, PAS-001-CV-CONFLICT-001 1.0.0, PAS-001-CV-VIEW-001 1.0.0 e PAS-001-CV-EVENT-001 1.0.0
+- **Extensões normativas ativas:** PAS-001-CV-STATE-001 1.0.0, PAS-001-CV-UPDATE-001 1.0.0, PAS-001-CV-CONFLICT-001 1.0.0, PAS-001-CV-VIEW-001 1.0.0, PAS-001-CV-EVENT-001 1.0.0 e PAS-001-CV-INTEGRATION-001 1.0.0
 - **Capacidade ativa:** 02 — Contexto Vivo
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
@@ -80,14 +80,25 @@ A extensão normativa `PAS-001-CV-EVENT-001 1.0.0` consolidou:
 - proteção de informações sensíveis e identificação de inferências;
 - correção, duplicidade, falha de processamento, retenção e explicabilidade.
 
+A extensão normativa `PAS-001-CV-INTEGRATION-001 1.0.0` consolidou:
+
+- objetivos, princípios, tipos e contratos das integrações funcionais;
+- finalidade explícita, minimização, autoridade limitada da fonte e falha segura;
+- integração com as nove capacidades do Journey;
+- integração com Guivos Intelligence, Platform Layer e serviços especializados;
+- classes, qualidade e transformação de fontes externas;
+- consentimento, pausa, revogação e degradação controlada;
+- explicabilidade, auditoria e prevenção de ciclos indevidos;
+- proteção de informações sensíveis e de terceiros;
+- consistência entre canais, busca, notificações e jornadas relacionadas.
+
 ## Ponto exato de retomada
 
 Retomar na `Capacidade 02 — Contexto Vivo`.
 
 Próxima entrega:
 
-- integrações funcionais;
-- KPIs;
+- KPIs, indicadores de qualidade e critérios de desempenho funcional;
 - cenários ideal, alternativo e limite;
 - contrato da capacidade.
 
@@ -118,6 +129,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Resolução de Conflitos do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-resolucao-conflitos.md)
 - [Meu Contexto Hoje](docs/product-architecture/pas-001-meu-contexto-hoje.md)
 - [Eventos Funcionais do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-eventos-funcionais.md)
+- [Integrações Funcionais do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-integracoes-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
