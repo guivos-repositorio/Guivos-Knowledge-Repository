@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 6.0.0
+version: 6.1.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -17,124 +17,58 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
-- **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0`, `PAS-001-CV-INTEGRATION-001 1.0.0` e `PAS-001-CV-KPI-001 1.0.0`.
+- **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
+- **Extensões normativas do Contexto Vivo:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0`, `PAS-001-CV-INTEGRATION-001 1.0.0`, `PAS-001-CV-KPI-001 1.0.0` e `PAS-001-CV-CONTRACT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
 - **Guia Oficial:** `GOG-001 4.2.1`.
-- **Capacidade ativa:** `02 — Contexto Vivo`.
+- **Capacidade concluída:** `02 — Contexto Vivo`.
+- **Capacidade ativa:** `03 — Objetivos`.
 - **GKA-000:** Parte V pendente.
 - **A2-R02:** em espera operacional.
 - **Guivos Economic Model:** planejado.
 
 ## Direção vigente
 
-O trabalho permanece na `Capacidade 02 — Contexto Vivo` do `PAS-001 — Guivos Journey`.
+O trabalho avança para a `Capacidade 03 — Objetivos` do `PAS-001 — Guivos Journey`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
 Novos frameworks estruturais não serão desenvolvidos enquanto os produtos oficiais não possuírem especificação funcional suficiente.
 
-## Avanço da Capacidade 02
+## Conclusão da Capacidade 02
 
-O `PAS-001 0.5.0` consolidou:
+O `PAS-001 0.5.0` e suas extensões normativas consolidaram:
 
-- responsabilidades e limites;
-- fronteiras funcionais entre Journey, Intelligence, Platform e capacidades consumidoras;
-- categorias de entrada;
-- requisitos mínimos e regras de admissão;
-- saídas funcionais;
-- eventos funcionais iniciais;
-- contrato funcional das saídas.
-
-A extensão normativa `PAS-001-CV-STATE-001 1.0.0` consolidou:
-
-- estrutura comum de estado;
+- responsabilidades, limites e fronteiras funcionais;
+- entradas, requisitos de admissão, saídas e recortes autorizados;
 - estados funcionais das oito dimensões;
-- transições e impactos controlados entre dimensões.
+- atualização seletiva, temporalidade e envelhecimento;
+- resolução explicável de conflitos;
+- transparência e controle em `Meu Contexto Hoje`;
+- contratos versionados dos eventos funcionais;
+- integrações com capacidades, camadas, serviços e fontes externas;
+- KPIs, guardrails e critérios de desempenho;
+- cenários funcionalmente ideal, alternativo e limite;
+- contrato final da capacidade.
 
-A extensão normativa `PAS-001-CV-UPDATE-001 1.0.0` consolidou:
+O `PAS-001-CV-CONTRACT-001 1.0.0` substitui normativamente o estado e o ponto de retomada das seções 44 e 45 do `PAS-001 0.5.0`.
 
-- elemento contextual como unidade mínima de atualização;
-- gatilhos e fluxo funcional de atualização;
-- resultados possíveis da avaliação;
-- confirmação proporcional ao impacto;
-- regras conforme origem e evidência;
-- classes temporais e estados de envelhecimento;
-- horizontes e revisões por dimensão;
-- prevenção de fadiga de confirmação;
-- atualizações silenciosas permitidas e proibidas;
-- efeitos das permissões;
-- propagação, reprocessamento e atualizações retroativas;
-- distinção entre correção e mudança real;
-- eventos funcionais relacionados.
+A Capacidade 02 está **funcionalmente concluída**.
 
-A extensão normativa `PAS-001-CV-CONFLICT-001 1.0.0` consolidou:
+## Início da Capacidade 03
 
-- princípios, tipos e estados funcionais de conflito;
-- registro próprio e fluxo de resolução;
-- critérios de comparação e ordem funcional de consideração;
-- resultados possíveis e participação do participante;
-- conflitos entre declarações, integrações, organizações, comportamentos, dimensões, permissões e temporalidades;
-- impactos sobre capacidades consumidoras e decisões existentes;
-- resolução automática permitida e proibida;
-- explicabilidade, reabertura e critérios de resolução confiável.
+A especificação de Objetivos deverá iniciar por:
 
-A extensão normativa `PAS-001-CV-VIEW-001 1.0.0` consolidou:
-
-- objetivos e princípios de `Meu Contexto Hoje`;
-- síntese do momento e visualização das oito dimensões;
-- estados linguísticos e níveis progressivos de detalhamento;
-- confirmação, correção, contestação e tratamento de inferências;
-- conflitos, envelhecimento, informações sensíveis e permissões por finalidade;
-- integrações, histórico e evidências de evolução;
-- priorização de atenção e prevenção de sobrecarga;
-- explicação de recomendações e consequências de alterações;
-- recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;
-- eventos relacionados e critérios funcionais de aceitação.
-
-A extensão normativa `PAS-001-CV-EVENT-001 1.0.0` consolidou:
-
-- distinção entre comandos, propostas e fatos reconhecidos;
-- princípios de imutabilidade histórica, temporalidade, proveniência, minimização e reprocessamento seguro;
-- estrutura comum, identidade, correlação, ordenação e versionamento dos eventos;
-- categorias e contratos de atualização, confirmação, revisão, envelhecimento e conflitos;
-- contratos de permissões, integrações, recortes contextuais, propagação e reavaliação de decisões;
-- separação entre eventos de interação e eventos de mudança contextual;
-- contratos de ocultação, desfazimento, remoção, dimensão e contexto atualizados;
-- regras para informações sensíveis, inferências, eventos retroativos, correções, duplicidade e falhas de processamento;
-- explicabilidade, retenção e critérios funcionais de aceitação.
-
-A extensão normativa `PAS-001-CV-INTEGRATION-001 1.0.0` consolidou:
-
-- objetivos, princípios, tipos, modos e contrato funcional das integrações;
-- identificação do participante, proveniência e autoridade limitada das fontes;
-- integração com as capacidades 01 a 09 do Journey;
-- integração com Guivos Intelligence, Platform Layer, Business, Mall, Travel, Media e Ads;
-- classes, qualidade, transformações e limites das fontes externas;
-- proteção de informações de terceiros, sensíveis e temporárias de sessão;
-- autorização, pausa, revogação, falhas e degradação controlada;
-- sincronização divergente, frequência, explicabilidade e auditoria;
-- prevenção de ciclos indevidos e exclusão inadequada de oportunidades;
-- integração com conversas, notificações, busca e jornadas relacionadas.
-
-A extensão normativa `PAS-001-CV-KPI-001 1.0.0` consolidou:
-
-- princípios, unidades e famílias de mensuração;
-- cobertura funcional, lacunas críticas e excesso contextual;
-- atualidade, urgência, confiança e proveniência;
-- qualidade de atualizações, correções e contestações;
-- conflitos, permissões, revogações e incidentes de finalidade;
-- transparência, compreensão, esforço e fadiga;
-- qualidade de integrações, falha segura e propagação;
-- utilidade para capacidades consumidoras e adequação de decisões;
-- exclusão indevida de oportunidades e incompatibilidades não detectadas;
-- equilíbrio funcional, justiça e consistência;
-- guardrails de tolerância zero, níveis de desempenho e governança;
-- painel e índice composto de saúde condicionado a baseline real.
-
-O próximo bloco definirá os cenários funcionalmente ideal, alternativo e limite, seguido do contrato final da capacidade.
+1. pergunta central;
+2. objetivo funcional;
+3. valor entregue;
+4. responsabilidades e limites;
+5. distinção entre objetivo, intenção, sonho, prioridade e possibilidade;
+6. entradas e requisitos de admissão;
+7. estados funcionais iniciais;
+8. relação com Contexto Vivo e demais capacidades.
 
 ## Reconciliação de continuidade
 
@@ -146,15 +80,16 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado e avançado para os cenários funcionais e o contrato final do Contexto Vivo.
+- a Capacidade 02 foi concluída por extensões normativas modulares;
+- o ponto de retomada do Product Engineering foi transferido para a Capacidade 03 — Objetivos.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 98% |
-| 03 — Objetivos | Planned | 0% |
+| 02 — Contexto Vivo | Functionally complete | 100% |
+| 03 — Objetivos | In progress | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
@@ -182,7 +117,7 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 - gerar o formulário definitivo de aplicação;
 - construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
 
-Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural do Contexto Vivo.
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 03.
 
 ## Restrições
 
@@ -190,13 +125,17 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não promover LPM, CIE, GPMA ou outros candidatos diretamente à Canon;
 - não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
-- não iniciar o próximo produto antes de conclusão funcional suficiente do atual.
+- não reabrir a Capacidade 02 sem lacuna crítica, evidência operacional ou decisão formal;
+- não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar na **Capacidade 02 — Contexto Vivo**.
+Retomar na **Capacidade 03 — Objetivos**.
 
 Próxima entrega:
 
-1. cenários funcionalmente ideal, alternativo e limite;
-2. contrato final da capacidade.
+1. pergunta central, objetivo funcional e valor entregue;
+2. responsabilidades e limites;
+3. distinções conceituais centrais;
+4. entradas, estados e regras iniciais;
+5. integração com Contexto Vivo.
