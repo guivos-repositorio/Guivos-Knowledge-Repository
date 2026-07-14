@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.6.0
+version: 1.6.1
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -104,28 +104,37 @@ A Capacidade 05 está **Functionally complete**, com progresso editorial de refe
 
 ### Capacidade 06 — Oportunidades Ativas
 
-`PAS-001-OA-FOUNDATION-001 1.0.0` é a primeira extensão normativa da Capacidade 06 e substitui `Planned / concept consolidated` por `In progress`.
+As extensões normativas vigentes são:
 
-A extensão consolida:
+- `PAS-001-OA-FOUNDATION-001 1.0.0` — pergunta central, objetivo, singularidade, definição, distinções, titularidade, autoridade, tipos, elegibilidade, disponibilidade, relevância, custos, riscos, relações comerciais, entradas, saídas e controle;
+- `PAS-001-OA-LIFECYCLE-001 1.0.0` — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura.
 
-- pergunta central, objetivo funcional, valor entregue e singularidade;
-- Oportunidade Ativa como meio suficientemente disponível, legítimo, contextual e potencialmente compatível;
-- distinção entre oportunidade candidata, Oportunidade Ativa, oferta, anúncio, recomendação, Próximo Passo, experiência e transação;
-- titularidade, papéis, origens e autoridade das fontes;
-- tipos, classificações, elegibilidade e disponibilidade;
-- temporalidade, localização, modalidade, custos e condições econômicas;
-- patrocínio, comissão, afiliação e demais relações comerciais;
-- risco, segurança, sensibilidade e escassez;
-- relevância contextual, fatores legítimos e fatores proibidos;
-- limiar de ativação, estados funcionais, estado da informação e relação individual do participante;
-- ausência legítima de oportunidades compatíveis;
-- entradas, admissão, estrutura do registro, saídas e eventos iniciais;
-- relações com as capacidades do Journey, Guivos Intelligence, Platform Layer e produtos especializados;
-- neutralidade comercial, controle do participante, responsabilidades e limites.
+O ciclo de vida consolida:
 
-A Capacidade 06 está **In progress**, com progresso editorial de referência de `20%`.
+- estado funcional da oportunidade separado do estado da informação;
+- disponibilidade, elegibilidade e relevância com ciclos próprios;
+- relação individual do participante e situação transacional externa como dimensões independentes;
+- transições válidas e proibidas;
+- identificação por sinais e fontes sem ativação automática;
+- candidatura, rejeição preliminar, avaliação, validação da fonte e limite de autoridade;
+- disponibilidade atual, futura, limitada, sob consulta e lista de espera;
+- elegibilidade sensível, condicionada e não confirmada;
+- relevância contextual, condicionada e sujeita a revisão;
+- risco, sensibilidade e verificação de relações comerciais;
+- ativação simples e condicionada sem equivaler a apresentação ou recomendação;
+- manutenção, atualização, pausa, retomada e indisponibilidade;
+- expiração, encerramento e cancelamento como estados distintos;
+- contestação, correção compensatória, arquivamento e reabertura;
+- duplicidade, unificação, substituição, alternativas e comparação explicável;
+- ordem neutra de apresentação;
+- visualização, salvamento, interesse, descarte, ocultação, inscrição, aceitação, contratação e participação como estados distintos;
+- efeitos controlados sobre Próximos Passos, Intervenções Contextuais, Objetivos e Eventos de Vida;
+- oportunidades recorrentes, coletivas, institucionais e patrocinadas;
+- revogação de contexto, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
 
-O próximo bloco deverá consolidar o ciclo de vida das Oportunidades Ativas.
+A Capacidade 06 está **In progress**, com progresso editorial de referência de `40%`.
+
+O próximo bloco deverá consolidar a visualização e o controle das Oportunidades Ativas.
 
 ## Regras arquiteturais
 
@@ -359,6 +368,46 @@ O próximo bloco deverá consolidar o ciclo de vida das Oportunidades Ativas.
 228. Estado da oportunidade e relação individual do participante devem permanecer separados.
 229. Revogação do uso de contexto interrompe novos usos e preserva fatos históricos legítimos.
 230. O participante permanece no controle da pesquisa, visualização, comparação, ocultação, contestação, interesse e decisão.
+231. Identificação de oportunidade não representa candidatura.
+232. Candidatura não representa ativação.
+233. Avaliação não representa recomendação.
+234. Ativação não representa apresentação.
+235. Apresentação não representa visualização.
+236. Salvamento não representa prioridade.
+237. Interesse não representa compromisso.
+238. Inscrição iniciada não representa inscrição enviada.
+239. Inscrição enviada não representa aceitação.
+240. Aceitação não representa contratação.
+241. Contratação não representa participação.
+242. Participação não representa resultado ou evolução.
+243. Estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual permanecem independentes.
+244. Situação transacional externa não redefine a jornada.
+245. Fonte somente confirma fatos dentro de sua autoridade.
+246. Disponibilidade não pode ser presumida por publicação, catálogo, preço ou página ativa.
+247. Elegibilidade sensível exige necessidade, autorização, proteção e contestação.
+248. Relevância condicionada deve expor sua condição.
+249. Risco elevado exige transparência, autoridade adequada e efeitos automáticos limitados.
+250. Alteração comercial não altera relevância por si mesma.
+251. Oportunidade ativa pode permanecer não apresentada.
+252. Intervenções Contextuais decide o momento e a forma da apresentação.
+253. Informação desatualizada reduz confiança e automação.
+254. Atualização material deve ser apresentada quando afetar preço, elegibilidade, disponibilidade, risco ou compromisso iniciado.
+255. Pausa suspende novas apresentações e preserva histórico.
+256. Indisponibilidade não representa encerramento.
+257. Oportunidade indisponível não pode ser apresentada como disponível.
+258. Expiração preserva relações e fatos históricos.
+259. Cancelamento, encerramento, expiração, indisponibilidade e pausa possuem significados distintos.
+260. Contestação material limita apresentação e automações.
+261. Correção deve ser compensatória e não reescrever histórico.
+262. Reabertura exige nova avaliação e nova versão funcional.
+263. Oportunidades materialmente diferentes não devem ser unificadas.
+264. Comparações devem manter critérios visíveis e não reduzir complexidade sem fundamento.
+265. Comissão, patrocínio, valor transacional, clique e tempo de tela não ordenam oportunidades funcionalmente.
+266. Revogação de contexto interrompe novas avaliações e recortes personalizados.
+267. Revogação somente se conclui após propagação efetiva.
+268. Reprocessamento não duplica oportunidade, ativação, apresentação, interesse, inscrição ou vínculo.
+269. Eventos fora de ordem e conflitos concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa.
+270. Falha parcial não representa sucesso integral e o participante permanece no controle do ciclo.
 
 ## Documentos do domínio
 
@@ -369,6 +418,7 @@ O próximo bloco deverá consolidar o ciclo de vida das Oportunidades Ativas.
 - [PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos](pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
 - [PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas](pas-001-oportunidades-ativas-fundamentos-iniciais.md)
+- [PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas](pas-001-oportunidades-ativas-ciclo-de-vida.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
