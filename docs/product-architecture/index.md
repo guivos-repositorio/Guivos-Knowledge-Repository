@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.3.1
+version: 1.3.2
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -87,7 +87,8 @@ As oito extensões normativas `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `I
 As extensões normativas ativas são:
 
 - `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções conceituais, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais;
-- `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação.
+- `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação;
+- `PAS-001-OBJ-PROGRESS-001` — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais.
 
 A primeira extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
@@ -105,6 +106,8 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 10. Objetivos pertencem ao participante e não podem ser ativados apenas por inferência, comportamento ou interesse comercial.
 11. Confirmação, ativação, prioridade, atualidade e estado funcional são dimensões distintas do objetivo.
 12. Envelhecimento não representa falsidade, pausa não representa fracasso e bloqueio não representa incapacidade pessoal.
+13. Atividade, resultado, evidência, progresso, marco e conclusão são conceitos funcionalmente distintos.
+14. Percentuais somente podem ser utilizados com base legítima e objetivos pessoais não podem ser concluídos apenas por inferência.
 
 ## Documentos do domínio
 
@@ -113,6 +116,7 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 - [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [PAS-001-OBJ-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Objetivos](pas-001-objetivos-fundamentos-iniciais.md)
 - [PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos](pas-001-objetivos-ciclo-de-vida.md)
+- [PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão](pas-001-objetivos-progresso-e-conclusao.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
