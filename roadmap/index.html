@@ -5032,7 +5032,7 @@
 <li><strong>Sincronização vigente:</strong> <code>GE2-SYNC-007</code>.</li>
 <li><strong>Revisão vigente:</strong> <code>AR-001</code>, concluída na versão <code>0.5.0</code>.</li>
 <li><strong>Especificação ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
-<li><strong>Extensões normativas ativas:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code> e <code>PAS-001-CV-VIEW-001 1.0.0</code>.</li>
+<li><strong>Extensões normativas ativas:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code>, <code>PAS-001-CV-VIEW-001 1.0.0</code> e <code>PAS-001-CV-EVENT-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
@@ -5105,7 +5105,19 @@
 <li>recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;</li>
 <li>eventos relacionados e critérios funcionais de aceitação.</li>
 </ul>
-<p>O próximo bloco definirá os contratos detalhados dos eventos funcionais do Contexto Vivo.</p>
+<p>A extensão normativa <code>PAS-001-CV-EVENT-001 1.0.0</code> consolidou:</p>
+<ul>
+<li>distinção entre comandos, propostas e fatos reconhecidos;</li>
+<li>princípios de imutabilidade histórica, temporalidade, proveniência, minimização e reprocessamento seguro;</li>
+<li>estrutura comum, identidade, correlação, ordenação e versionamento dos eventos;</li>
+<li>categorias e contratos de atualização, confirmação, revisão, envelhecimento e conflitos;</li>
+<li>contratos de permissões, integrações, recortes contextuais, propagação e reavaliação de decisões;</li>
+<li>separação entre eventos de interação e eventos de mudança contextual;</li>
+<li>contratos de ocultação, desfazimento, remoção, dimensão e contexto atualizados;</li>
+<li>regras para informações sensíveis, inferências, eventos retroativos, correções, duplicidade e falhas de processamento;</li>
+<li>explicabilidade, retenção e critérios funcionais de aceitação.</li>
+</ul>
+<p>O próximo bloco definirá as integrações funcionais do Contexto Vivo com capacidades, camadas e fontes externas.</p>
 <h2 id="reconciliacao-de-continuidade">Reconciliação de continuidade<a class="headerlink" href="#reconciliacao-de-continuidade" title="Permanent link">&para;</a></h2>
 <p>A <code>GE2-SYNC-007</code> concluiu a leitura do estado atual do repositório e a comparação com o extrato final da conversa anterior.</p>
 <p>Resultados:</p>
@@ -5114,7 +5126,7 @@
 <li>Contexto Vivo e Market Validation estavam incorporados;</li>
 <li>divergências editoriais demonstráveis foram autorizadas para correção;</li>
 <li>formulário e planilha de validação permanecem entregáveis operacionais futuros;</li>
-<li>o ponto de retomada do Product Engineering foi preservado e avançado para os contratos dos eventos funcionais do Contexto Vivo.</li>
+<li>o ponto de retomada do Product Engineering foi preservado e avançado para as integrações funcionais do Contexto Vivo.</li>
 </ul>
 <h2 id="progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
@@ -5134,7 +5146,7 @@
 <tr>
 <td>02 — Contexto Vivo</td>
 <td>In progress</td>
-<td>88%</td>
+<td>93%</td>
 </tr>
 <tr>
 <td>03 — Objetivos</td>
@@ -5205,8 +5217,7 @@
 <p>Retomar na <strong>Capacidade 02 — Contexto Vivo</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>contratos detalhados dos eventos funcionais;</li>
-<li>integrações;</li>
+<li>integrações funcionais;</li>
 <li>KPIs;</li>
 <li>cenários ideal, alternativo e limite;</li>
 <li>contrato da capacidade.</li>
