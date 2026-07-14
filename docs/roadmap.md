@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 6.4.0
+version: 6.5.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidade concluída:** `02 — Contexto Vivo`.
 - **Capacidade ativa:** `03 — Objetivos`.
-- **Extensões normativas ativas de Objetivos:** `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0` e `PAS-001-OBJ-PROGRESS-001 1.0.0`.
+- **Extensões normativas ativas de Objetivos:** `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0` e `PAS-001-OBJ-VIEW-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -45,27 +45,28 @@ A extensão `PAS-001-OBJ-FOUNDATION-001 1.0.0` consolidou fundamentos, distinç�
 
 A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.
 
-A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou:
+A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.
 
-- estrutura, tipos, origem, confirmação e revisão dos critérios de sucesso;
-- distinção entre critérios pessoais e institucionais;
-- múltiplos critérios, pesos limitados e linha de base;
-- definição e modelos funcionais de progresso;
-- estados de progresso e limites para percentuais;
-- progresso declarado, observado e inferido;
-- ausência de atividade, redução de progresso e retrocesso;
-- progresso em objetivos de manutenção, exploração e natureza qualitativa;
-- definição, tipos, criação, alcance e dispensa de marcos;
-- definição, tipos, estrutura, força e convergência das evidências;
-- tratamento de evidências conflitantes, ausentes, institucionais e sensíveis;
-- relações com Experiências e Evolução Contínua;
-- condições e formas de conclusão;
-- limites para conclusão automática;
-- conclusão sugerida, declarada, parcial, contínua e exploratória;
-- contestação, reabertura, efeitos e explicação da conclusão;
-- eventos funcionais relacionados.
+A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou:
 
-O próximo bloco detalhará os comportamentos funcionais da visão `Meus Objetivos`.
+- objetivos funcionais, princípios e escopo de `Meus Objetivos`;
+- visão geral, resumo linguístico e portfólio;
+- organização, filtros, cartões e detalhamento;
+- estado, prioridade, urgência e atualidade apresentados separadamente;
+- critérios, progresso, percentuais, marcos e evidências;
+- relações, dependências, conflitos e contexto relacionado;
+- capacidades consumidoras e compartilhamentos externos;
+- explicações de objetivo, prioridade, progresso e conclusão;
+- criação, confirmação, ativação, reformulação e alteração de prioridade;
+- pausa, retomada, bloqueio, conclusão, retirada, arquivamento e reativação;
+- contestação, desfazimento, revisões, alertas e prevenção de fadiga;
+- proteção de objetivos sensíveis, títulos neutros e privacidade visual;
+- objetivos institucionais, compartilhados, pessoais, organizacionais e coletivos;
+- acessibilidade, consistência entre canais, conversas e notificações;
+- estados sem objetivos, falhas, sincronização pendente, auditoria e histórico;
+- eventos funcionais da visão.
+
+O próximo bloco detalhará os contratos dos eventos funcionais da Capacidade de Objetivos.
 
 ## Progresso das capacidades do Journey
 
@@ -73,7 +74,7 @@ O próximo bloco detalhará os comportamentos funcionais da visão `Meus Objetiv
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
-| 03 — Objetivos | In progress | 60% |
+| 03 — Objetivos | In progress | 80% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
@@ -113,6 +114,8 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não confundir atividade com progresso ou conclusão;
 - não utilizar percentuais sem base legítima;
 - não concluir objetivos pessoais apenas por inferência;
+- não transformar `Meus Objetivos` em painel de cobrança, produtividade, ranking ou comparação pessoal;
+- não expor objetivos sensíveis em notificações ou superfícies não autorizadas;
 - não reabrir a Capacidade 02 sem fundamento formal;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
 
@@ -122,8 +125,9 @@ Retomar na **Capacidade 03 — Objetivos**.
 
 Próxima entrega:
 
-1. estrutura da visão `Meus Objetivos`;
-2. portfólio e detalhamento;
-3. controles e explicações;
-4. revisões e alertas;
-5. proteção de objetivos sensíveis.
+1. estrutura comum dos eventos funcionais;
+2. criação, confirmação e ativação;
+3. prioridade, revisão e ciclo de vida;
+4. critérios, progresso, marcos e evidências;
+5. conclusão, contestação e reabertura;
+6. propagação, correlação, idempotência e falha segura.
