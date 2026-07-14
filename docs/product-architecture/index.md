@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.2.7
+version: 1.2.8
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -88,17 +88,22 @@ A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
 
 ## Especificação vigente do Journey
 
-O `PAS-001 — Guivos Journey` é a especificação principal da Experience Layer.
+O `PAS-001 — Guivos Journey 0.5.0` é a especificação-base da Experience Layer.
 
-As extensões normativas vigentes da Capacidade 02 são:
+As extensões normativas da Capacidade 02 são:
 
 - `PAS-001-CV-STATE-001` — estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução;
 - `PAS-001-CV-UPDATE-001` — unidade de atualização, gatilhos, temporalidade, envelhecimento, confirmação proporcional, permissões e propagação controlada;
-- `PAS-001-CV-CONFLICT-001` — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos entre informações, fontes, dimensões e temporalidades;
-- `PAS-001-CV-VIEW-001` — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle do participante em `Meu Contexto Hoje`;
-- `PAS-001-CV-EVENT-001` — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais do Contexto Vivo;
-- `PAS-001-CV-INTEGRATION-001` — contratos e limites funcionais entre o Contexto Vivo, capacidades internas, camadas do ecossistema e fontes externas;
-- `PAS-001-CV-KPI-001` — indicadores de qualidade, segurança, controle, operação e utilidade funcional, incluindo guardrails críticos de tolerância zero.
+- `PAS-001-CV-CONFLICT-001` — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos;
+- `PAS-001-CV-VIEW-001` — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle em `Meu Contexto Hoje`;
+- `PAS-001-CV-EVENT-001` — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais;
+- `PAS-001-CV-INTEGRATION-001` — contratos e limites entre o Contexto Vivo, capacidades internas, camadas do ecossistema e fontes externas;
+- `PAS-001-CV-KPI-001` — indicadores de qualidade, segurança, controle, operação e utilidade funcional, incluindo guardrails críticos;
+- `PAS-001-CV-CONTRACT-001` — cenários ideal, alternativo e limite e contrato final da Capacidade 02.
+
+O `PAS-001-CV-CONTRACT-001 1.0.0` substitui normativamente o estado e o ponto de retomada das seções 44 e 45 do `PAS-001 0.5.0`.
+
+A Capacidade 02 — Contexto Vivo está **funcionalmente concluída**. A Capacidade 03 — Objetivos é a frente ativa do Product Engineering.
 
 ## Regras arquiteturais
 
@@ -123,6 +128,7 @@ As extensões normativas vigentes da Capacidade 02 são:
 - [PAS-001-CV-EVENT-001 — Eventos Funcionais do Contexto Vivo](pas-001-contexto-vivo-eventos-funcionais.md)
 - [PAS-001-CV-INTEGRATION-001 — Integrações Funcionais do Contexto Vivo](pas-001-contexto-vivo-integracoes-funcionais.md)
 - [PAS-001-CV-KPI-001 — KPIs e Desempenho do Contexto Vivo](pas-001-contexto-vivo-kpis-desempenho.md)
+- [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
