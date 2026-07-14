@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.4.5
+version: 1.5.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -67,7 +67,17 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Integração funcional | Refinar | Intercâmbio governado por finalidade, autoridade, minimização, temporalidade, permissões e responsabilidade própria do consumidor |
 | Autoridade da fonte | Refinar | Limitada ao que a origem e o contrato permitem afirmar |
 | Guardrail funcional | Manter | Regra obrigatória que impede violações críticas e pode possuir tolerância zero |
-| Próximo Passo | Manter | Decisão ou hipótese; não é Evento de Vida nem Oportunidade |
+| Próximo Passo | Refinar | Decisão ou hipótese de movimento delimitada e contextual; não equivale a objetivo, tarefa, oportunidade, intervenção, recomendação ou compromisso |
+| Próximo Passo proposto | Manter | Hipótese de movimento ainda não assumida |
+| Próximo Passo confirmado | Manter | Decisão reconhecida; não significa início, agendamento, compartilhamento ou conclusão |
+| Tarefa | Refinar | Unidade operacional que poderá materializar parte de um Próximo Passo |
+| Ação | Refinar | Execução concreta; não confirma automaticamente adequação, conclusão ou progresso |
+| Plano | Manter | Organização de movimentos, dependências, alternativas e marcos; não é requisito para todo Próximo Passo |
+| Compromisso | Refinar | Responsabilidade conscientemente assumida, distinta de proposta ou recomendação |
+| Espera funcional | Manter | Movimento legítimo quando condicionado a motivo, período ou gatilho de revisão |
+| Prioridade operacional | Refinar | Ordem contextual de atenção ou execução; distinta de importância estratégica, urgência, prazo, prontidão, esforço e valor humano |
+| Dependência de Próximo Passo | Manter | Condição necessária, visível e revisável para o movimento |
+| Bloqueio de Próximo Passo | Refinar | Impedimento atual que não representa incapacidade pessoal ou fracasso |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
@@ -112,56 +122,32 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
 | Objetivos | Manter | Capacidade 03 funcionalmente concluída por sete extensões normativas |
-| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final; substitui In progress por Functionally complete |
+| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final |
 | Eventos de Vida | Manter | Capacidade 04 funcionalmente concluída por seis extensões normativas |
-| Fundamentos Iniciais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites e entradas |
-| Ciclo de Vida dos Eventos de Vida | Manter | PAS-001-EV-LIFECYCLE-001 1.0.0 define identificação, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento e propagação |
-| Visualização e Controle dos Eventos de Vida | Manter | PAS-001-EV-VIEW-001 1.0.0 define linha do tempo, detalhamento, impactos, ações, privacidade, compartilhamentos, histórico e falha segura |
-| Contratos dos Eventos Funcionais de Eventos de Vida | Manter | PAS-001-EV-EVENT-001 1.0.0 define comandos, propostas, fatos reconhecidos, contratos, correlação, propagação, idempotência, ordenação, versionamento e auditoria |
-| Integrações Funcionais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-INTEGRATION-001 1.0.0 define finalidade, identidade, autoridade, proveniência, recortes, capacidades, produtos, fontes externas, sincronização, revogação, degradação controlada e neutralidade comercial |
-| KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final; substitui In progress por Functionally complete |
-| Estado do Evento de Vida | Refinar | Condição da mudança real, separada do estado da informação conhecida pela Guivos |
-| Estado da informação do evento | Manter | Hipótese, não confirmado, confirmado, contestado ou corrigido |
-| Evento de Vida planejado | Refinar | Previsão ou planejamento de mudança; não equivale a evento ocorrido |
-| Evento de Vida progressivo | Manter | Mudança desenvolvida ao longo de período, com início, duração, atualizações e incerteza temporal |
-| Evento de Vida retroativo | Refinar | Preserva data do fato, data de conhecimento e limites da reconstrução histórica |
-| Relevância de Evento de Vida | Refinar | Materialidade contextual, explicável e revisável para a jornada |
-| Evento primário | Manter | Mudança reconhecida que permanece distinta de seus efeitos derivados |
-| Impacto de Evento de Vida | Refinar | Efeito proposto ou confirmado com temporalidade, intensidade e ciclo próprios |
-| Impacto automático | Refinar | Limitado a fato objetivo, fonte autorizada, baixo risco, reversibilidade, finalidade e ausência de conflito |
-| Evento composto | Manter | Organiza transição ampla sem apagar eventos componentes |
-| Causalidade entre eventos | Refinar | Exige base explicável e não decorre apenas de proximidade temporal |
-| Correção de Evento de Vida | Manter | Preserva versão anterior, recompõe impactos e notifica consumidores necessários |
-| Correção compensatória | Manter | Novo evento limita ou anula efeitos anteriores sem reescrever o registro histórico |
-| Contestação de Evento de Vida | Manter | Pode suspender impactos, limitar recortes e impedir decisões críticas |
-| Conclusão de Evento de Vida | Refinar | Encerra a mudança representada sem encerrar automaticamente impactos persistentes |
-| Arquivamento de Evento de Vida | Refinar | Retira da operação cotidiana sem equivaler a exclusão ou apagar impactos ativos |
-| Reabertura de Evento de Vida | Manter | Preserva ciclo anterior e distingue continuidade de nova ocorrência |
-| Propagação de Evento de Vida | Refinar | Utiliza recortes mínimos e solicita reavaliação às capacidades consumidoras |
-| Idempotência em Eventos de Vida | Manter | Reprocessamento não pode duplicar eventos, impactos, atualizações, objetivos ou notificações |
-| Ordenação de Eventos de Vida | Manter | Preserva ordens de ocorrência, conhecimento e processamento e trata dependências funcionais |
-| Concorrência em Eventos de Vida | Manter | Impede sobrescrita silenciosa e exige comparação de versões |
-| Revogação de compartilhamento de evento | Refinar | Interrompe novos usos e somente se conclui após propagação aos consumidores necessários |
-| Titularidade do Evento de Vida | Manter | Identifica Pessoa, Organização ou Coletivo a quem o evento pertence |
-| Ator do evento funcional | Manter | Identifica quem provocou ou reconheceu a alteração sem confundir execução técnica e autoridade humana |
-| Autoridade em Eventos de Vida | Refinar | Fonte somente confirma fatos sob seu escopo; Intelligence produz hipótese, não evento pessoal definitivo |
-| Temporalidades do evento funcional | Manter | Separam tempo do fato, conhecimento, reconhecimento e aplicação |
-| Integração com Contexto Vivo | Refinar | Eventos de Vida governam mudança e temporalidade; Contexto Vivo governa o estado resultante |
-| Integração com Objetivos | Refinar | Evento poderá gerar revisão ou evidência, mas não cria objetivo pessoal ativo nem impõe prioridade |
-| Integração com Próximos Passos | Refinar | Evento poderá indicar necessidade de ação, mas a Capacidade 05 governa as ações resultantes |
-| Integração com Oportunidades Ativas | Refinar | Mudança poderá alterar relevância, disponibilidade e restrições sem justificar exploração comercial |
-| Integração com Experiências | Refinar | Experiência e Evento de Vida mantêm registros distintos |
-| Integração com Evolução Contínua | Refinar | Evento poderá constituir marco de trajetória sem ser classificado automaticamente como evolução positiva ou negativa |
-| Integração com produtos e fontes externas | Refinar | Dados integrados permanecem limitados por finalidade, autoridade, minimização, sensibilidade, temporalidade e revogação |
-| Guivos Intelligence em Eventos de Vida | Refinar | Pode identificar sinais, sugerir classificação e impactos, mas não confirmar unilateralmente eventos pessoais sensíveis |
-| Platform Layer em Eventos de Vida | Refinar | Sustenta identidade, autorização, temporalidade, versionamento, ordenação, idempotência, grafo e auditoria sem redefinir significado funcional |
-| Evento sensível | Manter | Exige finalidade específica, minimização, acesso restrito, proteção visual e ausência de exploração comercial |
-| Informação de terceiro em Evento de Vida | Refinar | Deve ser minimizada e não autoriza criação de perfil ou atribuição de estado interno ao terceiro |
-| Indicadores de Eventos de Vida | Manter | Avaliam processos e qualidade sistêmica, não o valor, estabilidade ou evolução do participante |
-| Guardrails de Eventos de Vida | Manter | Dezoito violações críticas possuem tolerância zero e prevalecem sobre médias agregadas |
-| Baseline de Eventos de Vida | Manter | Metas permanentes dependem de dados reais segmentados por ambiente, canal, região, categoria e versão |
-| Ausência de Eventos de Vida | Refinar | Estado legítimo; não representa falta de evolução, participação ou mudança humana |
-| Próximos Passos | Manter | Capacidade 05 permanece Planned e é a próxima frente oficial de Product Engineering |
+| KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
+| Próximos Passos | Refinar | Capacidade 05 em desenvolvimento, com fundamentos normativos consolidados e progresso editorial de 20% |
+| Fundamentos Iniciais da Capacidade de Próximos Passos | Manter | PAS-001-PP-FOUNDATION-001 1.0.0 define pergunta central, objetivo, valor, singularidade, conceito, distinções, titularidade, papéis, tipos, estados, prioridade, temporalidade, dependências, bloqueios, integrações e controle |
+| Singularidade de Próximos Passos | Manter | Governa o próximo movimento possível da jornada sem absorver objetivos, tarefas, oportunidades ou intervenções |
+| Acionabilidade | Refinar | Capacidade de compreender movimento, relevância, responsável, condições, resultado imediato, temporalidade, riscos e reconhecimento de realização |
+| Multiplicidade de Próximos Passos | Manter | Poderão existir passos principais, alternativos, condicionais, preparatórios, compartilhados ou nenhum passo ativo |
+| Titularidade de Próximo Passo | Manter | Identifica o participante cuja jornada, objetivo, responsabilidade ou resultado é servido pelo passo |
+| Papéis de Próximo Passo | Manter | Titular, proponente, decisor, responsável, executor, apoiador, aprovador, fonte, beneficiário e afetado permanecem distintos |
+| Autoridade em Próximos Passos | Refinar | Participante e autoridades competentes podem confirmar dentro de seu escopo; Intelligence somente sugere e organiza |
+| Tipos de Próximo Passo | Manter | Descoberta, decisão, preparação, execução, conexão, aprendizado, verificação, manutenção, recuperação, adaptação, coordenação, delegação, espera e encerramento |
+| Estados de Próximo Passo | Manter | Proposto, Confirmado, Pronto, Agendado, Em andamento, Bloqueado, Pausado, Concluído, Cancelado, Substituído, Expirado, Contestado, Corrigido e Arquivado |
+| Estado funcional e estado da informação | Manter | Condição do movimento e confiança sobre a informação permanecem separadas |
+| Próximo Passo sem objetivo formal | Manter | Admitido para necessidades, responsabilidades, manutenção, recuperação, eventos, exploração, proteção ou bloqueios |
+| Próximo Passo sensível | Manter | Exige finalidade, minimização, proteção visual, notificações discretas e ausência de exploração comercial |
+| Ausência de Próximo Passo | Refinar | Estado legítimo; não autoriza criação de ações artificiais para engajamento |
+| Integração com Contexto Vivo | Refinar | Contexto Vivo governa a realidade compreendida; Próximos Passos governa movimentos possíveis nessa realidade |
+| Integração com Objetivos | Refinar | Objetivos governa direção e progresso; Próximos Passos governa movimentos, dependências e prioridade operacional |
+| Integração com Eventos de Vida | Refinar | Eventos informam mudanças; Próximos Passos reavalia movimentos afetados |
+| Integração com Oportunidades Ativas | Refinar | Próximo Passo pode solicitar meios compatíveis; oportunidade disponível não cria automaticamente um passo |
+| Integração com Intervenções Contextuais | Refinar | Próximo Passo informa condição; Intervenções decide agir, perguntar, lembrar, esperar ou silenciar |
+| Integração com Experiências | Refinar | Passo pode levar a uma experiência, mas execução ou participação não confirma automaticamente progresso |
+| Integração com Evolução Contínua | Refinar | Resultados de passos podem produzir evidências; quantidade concluída não mede evolução humana |
+| Guivos Intelligence em Próximos Passos | Refinar | Pode sugerir possibilidades, alternativas, prioridade, dependências e bloqueios, sem ativar decisão, compromisso ou responsabilidade |
+| Platform Layer em Próximos Passos | Refinar | Sustenta identidade, autorização, persistência, temporalidade, eventos, auditoria e segurança sem redefinir semântica |
 | Oportunidade Ativa | Manter | Oportunidade relevante para um participante em contexto atual |
 | Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
@@ -179,10 +165,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03 e 04 estão funcionalmente concluídas. As seis extensões normativas de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final, elevando o avanço editorial da Capacidade 04 para 100% sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
-
-A Capacidade 05 — Próximos Passos torna-se a próxima frente oficial, permanecendo `Planned` até sua primeira extensão normativa.
+As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. `PAS-001-PP-FOUNDATION-001 1.0.0` ativa normativamente a Capacidade 05 — Próximos Passos, substitui seu estado `Planned` por `In progress` e eleva o progresso editorial de referência para 20%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Definir os **fundamentos iniciais da Capacidade 05 — Próximos Passos**, incluindo pergunta central, objetivo, valor, singularidade, princípios, definição, distinções, titularidade, tipos, origem, autoridade, estados, prioridade operacional, temporalidade, dependências, integrações e controle do participante.
+Consolidar o **ciclo de vida dos Próximos Passos**, incluindo criação, proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento e propagação.
