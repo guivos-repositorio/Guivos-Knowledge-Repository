@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.4 — Meu Contexto Hoje Functional Behaviors
+
+- Criação de `PAS-001-CV-VIEW-001 — Comportamentos Funcionais de Meu Contexto Hoje`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição dos objetivos, princípios, estrutura principal e comportamentos das oito dimensões na visão do participante.
+- Formalização dos estados linguísticos, níveis progressivos de detalhamento e explicação de origem, atualidade, finalidade, permissões e impactos.
+- Consolidação das ações de confirmação, correção, contestação, limitação, remoção, desfazimento e tratamento de inferências, conflitos e informações envelhecidas.
+- Definição dos controles de informações sensíveis, permissões por finalidade, integrações, histórico e evidências de evolução.
+- Registro da priorização de atenção, prevenção de sobrecarga, explicação de recomendações, consequências de alterações e confirmação de ações críticas.
+- Consolidação da consistência entre canais, acessibilidade, privacidade visual, eventos relacionados e critérios funcionais de aceitação.
+- Atualização da Arquitetura de Produtos para `1.2.4` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `5.7.0`, do Knowledge Board para `5.8.0` e da Matriz de Consolidação Canônica para `1.2.5`.
+- Atualização do README e da página inicial do GKR.
+- Definição dos contratos detalhados dos eventos funcionais como próximo ponto exato de retomada.
+
 ## 0.30.3 — Living Context Conflict Resolution
 
 - Criação de `PAS-001-CV-CONFLICT-001 — Resolução de Conflitos do Contexto Vivo`, versão `1.0.0`.
