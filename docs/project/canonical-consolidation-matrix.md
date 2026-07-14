@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.2.7
+version: 1.2.8
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -91,7 +91,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Resolução de Conflitos do Contexto Vivo | Manter | Extensão normativa PAS-001-CV-CONFLICT-001 1.0.0 define identificação, classificação, resolução, explicabilidade, contestação e reabertura de conflitos contextuais |
 | Meu Contexto Hoje | Manter | Extensão normativa PAS-001-CV-VIEW-001 1.0.0 define transparência, explicabilidade, atualização, permissões, histórico e controle do participante |
 | Eventos Funcionais do Contexto Vivo | Manter | Extensão normativa PAS-001-CV-EVENT-001 1.0.0 define significado, estrutura, temporalidade, versionamento, proteção e efeitos dos eventos funcionais |
-| Integrações Funcionais do Contexto Vivo | Manter | Extensão normativa PAS-001-CV-INTEGRATION-001 1.0.0 define contratos, limites, finalidade, permissões, falhas e explicabilidade das integrações |
+| Integrações Funcionais do Contexto Vivo | Manter | Extensão normativa PAS-001-CV-INTEGRATION-001 1.0.0 define contratos e limites entre capacidades, camadas, serviços e fontes externas |
+| KPIs e Desempenho do Contexto Vivo | Manter | Extensão normativa PAS-001-CV-KPI-001 1.0.0 define indicadores de qualidade, guardrails críticos, níveis de desempenho e governança da medição |
 | Interpretação do Contexto | Manter | Responsabilidade funcional apoiada pela Intelligence Layer |
 | Evolução Independente das Dimensões | Manter | Dimensões evoluem sem reconstrução integral do contexto |
 | Evento de Vida | Manter | Mudança relevante capaz de alterar uma ou mais dimensões |
@@ -114,8 +115,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 A `GE2-SYNC-007` confirmou que o extrato final da conversa anterior não continha decisão arquitetural madura ausente do GKR. As correções necessárias foram editoriais e de sincronização.
 
-O `PAS-001 0.5.0` e suas extensões normativas `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0` e `PAS-001-CV-INTEGRATION-001 1.0.0` avançaram a Capacidade 02 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+O `PAS-001 0.5.0` e suas extensões normativas `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0`, `PAS-001-CV-INTEGRATION-001 1.0.0` e `PAS-001-CV-KPI-001 1.0.0` avançaram a Capacidade 02 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelos KPIs, indicadores de qualidade e critérios de desempenho funcional e preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Completar a **Capacidade 02 — Contexto Vivo**, definindo os cenários funcionalmente ideal, alternativo e limite e consolidando o contrato final, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
