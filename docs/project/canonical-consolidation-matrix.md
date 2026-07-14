@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.5.2
+version: 1.5.3
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -93,6 +93,11 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Cartão de Próximo Passo | Manter | Representação minimizada para identificação, estado, decisão e ação principal disponível |
 | Fila de atenção de Próximos Passos | Refinar | Recorte de itens que podem exigir decisão ou revisão, sem presumir urgência universal |
 | Privacidade visual de Próximo Passo | Manter | Minimização, títulos neutros, modo discreto e restrição de exposição conforme sensibilidade |
+| Evento funcional de Próximo Passo | Refinar | Fato reconhecido sobre o agregado, publicado após persistência suficiente e protegido por idempotência, versão e auditoria |
+| Agregado de Próximo Passo | Manter | Registro principal ou agregado relacionado que recebe eventos versionados e preserva estado reconstruível |
+| Correção compensatória de Próximo Passo | Manter | Novo evento que corrige informação anterior sem reescrever o histórico |
+| Versão esperada de Próximo Passo | Manter | Versão informada por comando material para impedir sobrescrita concorrente |
+| Propagação de Próximo Passo | Refinar | Entrega de recorte mínimo a consumidor autorizado, com confirmação de processamento e tratamento de falha |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
@@ -140,10 +145,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final |
 | Eventos de Vida | Manter | Capacidade 04 funcionalmente concluída por seis extensões normativas |
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
-| Próximos Passos | Refinar | Capacidade 05 em desenvolvimento, com fundamentos, ciclo de vida, visualização e controles consolidados e progresso editorial de 60% |
+| Próximos Passos | Refinar | Capacidade 05 em desenvolvimento, com fundamentos, ciclo de vida, visualização e eventos funcionais consolidados e progresso editorial de 80% |
 | Fundamentos Iniciais da Capacidade de Próximos Passos | Manter | PAS-001-PP-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, titularidade, papéis, tipos, estados, prioridade, temporalidade, dependências, limites e controle |
 | Ciclo de Vida dos Próximos Passos | Manter | PAS-001-PP-LIFECYCLE-001 1.0.0 define proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, recorrência, compartilhamento, propagação e falha segura |
 | Visualização e Controle dos Próximos Passos | Manter | PAS-001-PP-VIEW-001 1.0.0 define `Meus Próximos Passos`, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico e ações |
+| Eventos Funcionais dos Próximos Passos | Manter | PAS-001-PP-EVENT-001 1.0.0 define comandos, propostas, fatos reconhecidos, contratos, imutabilidade, correção compensatória, idempotência, ordenação, versionamento, auditoria e falha segura |
 | Meus Próximos Passos | Manter | Superfície de clareza e controle; não é lista infinita, ranking, feed ou pontuação de produtividade |
 | Singularidade de Próximos Passos | Manter | Governa o próximo movimento possível da jornada sem absorver objetivos, tarefas, oportunidades ou intervenções |
 | Acionabilidade | Refinar | Capacidade de compreender movimento, relevância, responsável, condições, resultado imediato, temporalidade, riscos e reconhecimento de realização |
@@ -178,6 +184,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Fila de atenção de Próximos Passos | Refinar | Reúne decisões, bloqueios, prazos, contestações e sincronizações sem classificar todos os itens como urgentes |
 | Acessibilidade de Próximos Passos | Manter | Exige leitores de tela, teclado, contraste, escala de texto, linguagem simples, alternativas a arrastar e soltar e baixa carga cognitiva |
 | Neutralidade visual e comercial | Manter | Patrocínio, comissão, estoque ou oportunidade não alteram prioridade, destaque ou recomendação funcional |
+| Contratos de eventos de Próximos Passos | Manter | Comandos, propostas e fatos reconhecidos permanecem distintos, versionados e auditáveis |
+| Imutabilidade histórica de Próximos Passos | Manter | Eventos reconhecidos não são reescritos; correções produzem novos eventos compensatórios |
 | Idempotência em Próximos Passos | Manter | Reprocessamento não pode duplicar passo, confirmação, prioridade, agendamento, conclusão, notificação ou responsabilidade |
 | Ordenação e concorrência | Manter | Mensagens fora de ordem e alterações concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa |
 | Falha segura em Próximos Passos | Manter | Preserva último estado válido, evita falsa confirmação ou conclusão e distingue falha parcial |
@@ -210,8 +218,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. `PAS-001-PP-VIEW-001 1.0.0` consolida a visualização e o controle da Capacidade 05, mantém seu estado `In progress` e eleva o progresso editorial de referência para 60%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. `PAS-001-PP-EVENT-001 1.0.0` consolida os contratos dos eventos funcionais da Capacidade 05, mantém seu estado `In progress` e eleva o progresso editorial de referência para 80%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **contratos dos eventos funcionais da Capacidade de Próximos Passos**, incluindo comandos, propostas, fatos reconhecidos, criação, confirmação, ativação, prontidão, prioridade, dependências, bloqueios, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.
+Consolidar as **integrações funcionais da Capacidade de Próximos Passos** com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, produtos especializados, organizações, serviços profissionais e fontes externas.
