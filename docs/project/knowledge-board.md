@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 6.9.0
+version: 7.0.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -21,13 +21,8 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | AR-001 | Completed 0.5.0 | Revisar consistência, atualização e diagramas |
 | PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final do Contexto Vivo |
-| PAS-001-OBJ-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Objetivos |
-| PAS-001-OBJ-LIFECYCLE-001 | Active 1.0.0 | Definir criação, confirmação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida dos objetivos |
-| PAS-001-OBJ-PROGRESS-001 | Active 1.0.0 | Definir critérios de sucesso, progresso, marcos, evidências e conclusão dos objetivos |
-| PAS-001-OBJ-VIEW-001 | Active 1.0.0 | Definir os comportamentos funcionais da visão Meus Objetivos |
-| PAS-001-OBJ-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais da Capacidade de Objetivos |
-| PAS-001-OBJ-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais da Capacidade de Objetivos |
-| PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, cenários, critérios de conclusão e contrato final da Capacidade de Objetivos |
+| PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final da Capacidade de Objetivos |
+| PAS-001-EV-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Eventos de Vida |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -43,12 +38,12 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidades concluídas | `02 — Contexto Vivo` e `03 — Objetivos` |
 | Capacidade ativa | `04 — Eventos de Vida` |
-| Contrato final de Objetivos | `PAS-001-OBJ-CONTRACT-001 1.0.0` |
+| Extensão normativa ativa | `PAS-001-EV-FOUNDATION-001 1.0.0` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Definir os fundamentos iniciais da Capacidade 04 — Eventos de Vida |
+| Foco imediato | Definir o ciclo de vida dos Eventos de Vida |
 
 ## Capacidades do Journey
 
@@ -57,74 +52,40 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
-| 04 — Eventos de Vida | In progress | Conceito inicial consolidado; fundamentos funcionais são a frente ativa |
+| 04 — Eventos de Vida | In progress | Fundamentos iniciais consolidados; ciclo de vida é a frente ativa |
 | 05 — Próximos Passos | Planned | — |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
 
-## Baseline concluída do Contexto Vivo
+## Baselines concluídas
+
+### Contexto Vivo
 
 A Capacidade 02 está funcionalmente concluída pelo `PAS-001 0.5.0` e pelas extensões `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `INTEGRATION`, `KPI` e `CONTRACT`, todas em `1.0.0`.
 
-O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS-001 0.5.0` quanto ao estado da capacidade e ao ponto de retomada.
+### Objetivos
 
-## Baseline concluída da Capacidade de Objetivos
+A Capacidade 03 está funcionalmente concluída pelas extensões `FOUNDATION`, `LIFECYCLE`, `PROGRESS`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`.
 
-### `PAS-001-OBJ-FOUNDATION-001 1.0.0`
+O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails de tolerância zero, cenários e critérios de conclusão.
 
-- pergunta central, objetivo funcional e valor entregue;
-- autoria, clareza progressiva, revisabilidade e não julgamento;
-- distinções entre objetivo, intenção, sonho, possibilidade, prioridade, tarefa e oportunidade;
-- responsabilidades, limites, entradas, estados, relações e integrações iniciais.
+## Avanço da Capacidade 04 — Eventos de Vida
 
-### `PAS-001-OBJ-LIFECYCLE-001 1.0.0`
+### `PAS-001-EV-FOUNDATION-001 1.0.0`
 
-- unidade funcional e origens do objetivo;
-- criação, confirmação e ativação por finalidade;
-- duplicidade, reformulação, desdobramento e unificação;
-- prioridade, portfólio, conflitos, revisão e envelhecimento;
-- pausa, retomada, bloqueio, conclusão, retirada, substituição, arquivamento e reativação.
-
-### `PAS-001-OBJ-PROGRESS-001 1.0.0`
-
-- estrutura e tipos de critérios de sucesso;
-- linha de base, progresso, marcos e evidências;
-- conclusão declarada, sugerida, institucional, parcial, contínua e exploratória;
-- contestação, reabertura, efeitos e explicabilidade.
-
-### `PAS-001-OBJ-VIEW-001 1.0.0`
-
-- visão geral, portfólio, filtros, cartões e detalhamento;
-- estado, prioridade, urgência e atualidade separados;
-- controles, explicações, revisões, alertas e prevenção de fadiga;
-- proteção de objetivos sensíveis, consistência entre canais e histórico compreensível.
-
-### `PAS-001-OBJ-EVENT-001 1.0.0`
-
-- comando, proposta e evento reconhecido;
-- estrutura comum, autoridade, temporalidade, causalidade, correlação e versionamento;
-- idempotência, propagação, correção, concorrência, auditoria e falha segura;
-- contratos das famílias de eventos do ciclo de vida dos objetivos.
-
-### `PAS-001-OBJ-INTEGRATION-001 1.0.0`
-
-- finalidade, minimização, autoridade limitada e controle do participante;
-- admissão, identidade, proveniência, qualidade, temporalidade e sincronização;
-- integrações com capacidades, Guivos Intelligence, Platform Layer, serviços e fontes externas;
-- pausa, revogação, degradação segura, divergência, explicabilidade e auditoria.
-
-### `PAS-001-OBJ-CONTRACT-001 1.0.0`
-
-- 62 KPIs organizados em 13 famílias;
-- indicadores de autoria, ativação, clareza, prioridade, atualidade, progresso, conclusão, privacidade, propagação, neutralidade e esforço;
-- 12 guardrails obrigatórios de tolerância zero;
-- painel de saúde e níveis de desempenho funcional;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão funcional;
-- contrato final de propósito, titularidade, responsabilidades, limites, entradas, estados, saídas, visão, eventos, integrações, permissões, falhas, guardrails e indicadores;
-- substituição normativa do estado `In progress` e confirmação de `Functionally complete`.
+- pergunta central, objetivo funcional, valor entregue e singularidade;
+- Evento de Vida definido como mudança relevante situada no tempo;
+- distinção entre evento, estado, atividade, experiência, atualização, sinal, evidência, objetivo e Próximo Passo;
+- eventos previstos, ocorridos, pontuais, progressivos, simples, compostos, primários e derivados;
+- tipos profissionais, educacionais, familiares, geográficos, financeiros, de saúde, sociais, espirituais, organizacionais e coletivos;
+- titularidade, participantes afetados, origem, autoridade, confirmação proporcional e sensibilidade;
+- responsabilidades, limites, entradas, admissão e estrutura funcional inicial;
+- temporalidade, estados, relações, simultaneidade, relevância e impacto;
+- relações com Contexto Vivo, Objetivos e demais capacidades;
+- controle do participante, proteção de terceiros, explicabilidade e eventos funcionais iniciais;
+- substituição normativa do estado `Planned / concept consolidated` por `In progress`.
 
 ## Conceitos internos preservados
 
@@ -132,28 +93,22 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 |---|---|
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
-| Contrato Final de Objetivos | Normative 1.0.0 |
-| Fundamentos Iniciais de Objetivos | Normative 1.0.0 |
-| Ciclo de Vida dos Objetivos | Normative 1.0.0 |
-| Progresso e Conclusão dos Objetivos | Normative 1.0.0 |
-| Meus Objetivos | Normative view 1.0.0 |
-| Eventos Funcionais de Objetivos | Normative 1.0.0 |
-| Integrações Funcionais de Objetivos | Normative 1.0.0 |
-| Indicadores de Objetivos | 62 KPIs in 13 families |
-| Guardrails de Objetivos | 12 zero-tolerance rules |
 | Evento de Vida | Active for Product Engineering |
-| Confirmação | Separate from activation |
-| Prioridade | Separate from urgency and lifecycle state |
-| Evidência | Supports interpretation but does not determine human meaning alone |
-| Progresso | Relationship among objective, criterion, context and evidence |
-| Marco | Relevant intermediate result, not task |
-| Evento funcional | Recognized fact, not command or proposal |
-| Idempotência | Reprocessing cannot duplicate functional effects |
-| Recorte funcional | Minimum authorized information for a specific purpose |
-| Autoridade da fonte | Limited by origin and contract |
-| Revogação | Stops new uses and propagates restrictions |
-| Guivos Intelligence | Produces proposals and interpretations, not personal decisions |
-| Platform Layer | Applies technical contracts without redefining functional meaning |
+| Fundamentos Iniciais de Eventos de Vida | Normative 1.0.0 |
+| Estado | Current authorized condition |
+| Evento de Vida | Relevant change situated in time |
+| Atividade | Action performed; not automatically a life event |
+| Experiência | Lived occurrence; not automatically a life event |
+| Sinal | Possible indication; not a confirmed event |
+| Evidência | Supports recognition; not the event itself |
+| Impacto de Evento de Vida | Evaluated by dimension and objective |
+| Contexto Vivo | Governs resulting contextual state |
+| Objetivos | Governs changes in direction |
+| Guivos Intelligence | Produces hypotheses and proposals, not definitive personal events |
+| Platform Layer | Applies technical contracts without redefining meaning |
+| Pessoa | Official participant category |
+| Organização | Official participant category |
+| Coletivo | Official participant category |
 | Oportunidade Ativa | Approved for PAS |
 | Intervenção Contextual | Approved for PAS |
 | Distância para Evolução | Internal Product Concept |
@@ -165,18 +120,13 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 6.8.0 |
-| Knowledge Board | 6.9.0 |
+| Roadmap | 6.9.0 |
+| Knowledge Board | 7.0.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
-| PAS-001-OBJ-FOUNDATION-001 | Active 1.0.0 |
-| PAS-001-OBJ-LIFECYCLE-001 | Active 1.0.0 |
-| PAS-001-OBJ-PROGRESS-001 | Active 1.0.0 |
-| PAS-001-OBJ-VIEW-001 | Active 1.0.0 |
-| PAS-001-OBJ-EVENT-001 | Active 1.0.0 |
-| PAS-001-OBJ-INTEGRATION-001 | Active 1.0.0 |
 | PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 |
+| PAS-001-EV-FOUNDATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -186,4 +136,4 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 
 ## Próxima atividade
 
-Iniciar a **Capacidade 04 — Eventos de Vida**, definindo pergunta central, objetivo funcional, valor entregue, princípios, conceito, distinções, responsabilidades, limites, entradas iniciais e relações com Contexto Vivo e Objetivos.
+Continuar a **Capacidade 04 — Eventos de Vida**, definindo identificação, proposição, confirmação, estados, temporalidade, relevância, impacto, relações, correção, contestação, encerramento e propagação.
