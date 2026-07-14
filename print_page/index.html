@@ -51476,6 +51476,11 @@ Next authorized review: A2-R02
 <td>Decisão ou hipótese de movimento delimitada e contextual; não equivale a objetivo, tarefa, oportunidade, intervenção, recomendação ou compromisso</td>
 </tr>
 <tr>
+<td>Possibilidade de Próximo Passo</td>
+<td>Manter</td>
+<td>Movimento possível ainda não formalizado como proposta</td>
+</tr>
+<tr>
 <td>Próximo Passo proposto</td>
 <td>Manter</td>
 <td>Hipótese de movimento ainda não assumida</td>
@@ -51483,7 +51488,17 @@ Next authorized review: A2-R02
 <tr>
 <td>Próximo Passo confirmado</td>
 <td>Manter</td>
-<td>Decisão reconhecida; não significa início, agendamento, compartilhamento ou conclusão</td>
+<td>Decisão reconhecida; não significa ativação, início, agendamento, compartilhamento ou conclusão</td>
+</tr>
+<tr>
+<td>Ativação de Próximo Passo</td>
+<td>Refinar</td>
+<td>Entrada no conjunto operacional de movimentos considerados; distinta de confirmação, prioridade, prontidão e início</td>
+</tr>
+<tr>
+<td>Prontidão de Próximo Passo</td>
+<td>Manter</td>
+<td>Existência das condições mínimas conhecidas para iniciar</td>
 </tr>
 <tr>
 <td>Tarefa</td>
@@ -51517,13 +51532,53 @@ Next authorized review: A2-R02
 </tr>
 <tr>
 <td>Dependência de Próximo Passo</td>
-<td>Manter</td>
-<td>Condição necessária, visível e revisável para o movimento</td>
+<td>Refinar</td>
+<td>Condição necessária com tipo, estado, criticidade, temporalidade e forma de resolução próprios</td>
 </tr>
 <tr>
 <td>Bloqueio de Próximo Passo</td>
 <td>Refinar</td>
-<td>Impedimento atual que não representa incapacidade pessoal ou fracasso</td>
+<td>Impedimento atual que não representa dificuldade comum, incapacidade pessoal ou fracasso</td>
+</tr>
+<tr>
+<td>Pausa de Próximo Passo</td>
+<td>Manter</td>
+<td>Interrupção deliberada e temporária, distinta de bloqueio</td>
+</tr>
+<tr>
+<td>Resultado imediato de Próximo Passo</td>
+<td>Refinar</td>
+<td>Consequência observada ou declarada da execução; não equivale a progresso</td>
+</tr>
+<tr>
+<td>Conclusão de Próximo Passo</td>
+<td>Refinar</td>
+<td>Reconhecimento de que o movimento delimitado foi realizado; não conclui automaticamente o objetivo</td>
+</tr>
+<tr>
+<td>Cancelamento de Próximo Passo</td>
+<td>Manter</td>
+<td>Decisão de não prosseguir, sem equivaler automaticamente a fracasso ou abandono</td>
+</tr>
+<tr>
+<td>Substituição de Próximo Passo</td>
+<td>Manter</td>
+<td>Outro passo passa a cumprir função equivalente ou mais adequada, preservando a relação histórica</td>
+</tr>
+<tr>
+<td>Expiração de Próximo Passo</td>
+<td>Refinar</td>
+<td>Perda de atualidade, janela ou validade funcional; distinta de cancelamento</td>
+</tr>
+<tr>
+<td>Recorrência de Próximo Passo</td>
+<td>Refinar</td>
+<td>Repetição operacional; não comprova hábito, aderência, identidade ou evolução</td>
+</tr>
+<tr>
+<td>Delegação de Próximo Passo</td>
+<td>Refinar</td>
+<td>Transferência de execução em escopo autorizado sem transferência automática de titularidade ou decisão</td>
 </tr>
 <tr>
 <td>Oportunidade</td>
@@ -51690,7 +51745,7 @@ Next authorized review: A2-R02
 <tr>
 <td>Cenários e Contrato Final do Contexto Vivo</td>
 <td>Manter</td>
-<td>PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0</td>
+<td>PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade</td>
 </tr>
 <tr>
 <td>Objetivos</td>
@@ -51715,12 +51770,17 @@ Next authorized review: A2-R02
 <tr>
 <td>Próximos Passos</td>
 <td>Refinar</td>
-<td>Capacidade 05 em desenvolvimento, com fundamentos normativos consolidados e progresso editorial de 20%</td>
+<td>Capacidade 05 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40%</td>
 </tr>
 <tr>
 <td>Fundamentos Iniciais da Capacidade de Próximos Passos</td>
 <td>Manter</td>
-<td>PAS-001-PP-FOUNDATION-001 1.0.0 define pergunta central, objetivo, valor, singularidade, conceito, distinções, titularidade, papéis, tipos, estados, prioridade, temporalidade, dependências, bloqueios, integrações e controle</td>
+<td>PAS-001-PP-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, titularidade, papéis, tipos, estados, prioridade, temporalidade, dependências, limites e controle</td>
+</tr>
+<tr>
+<td>Ciclo de Vida dos Próximos Passos</td>
+<td>Manter</td>
+<td>PAS-001-PP-LIFECYCLE-001 1.0.0 define proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, recorrência, compartilhamento, propagação e falha segura</td>
 </tr>
 <tr>
 <td>Singularidade de Próximos Passos</td>
@@ -51759,13 +51819,108 @@ Next authorized review: A2-R02
 </tr>
 <tr>
 <td>Estados de Próximo Passo</td>
-<td>Manter</td>
-<td>Proposto, Confirmado, Pronto, Agendado, Em andamento, Bloqueado, Pausado, Concluído, Cancelado, Substituído, Expirado, Contestado, Corrigido e Arquivado</td>
+<td>Refinar</td>
+<td>Proposto, Confirmado, Pronto, Agendado, Em andamento, Bloqueado, Pausado, Concluído, Cancelado, Substituído, Expirado, Contestado, Corrigido e Arquivado, com transições normativas próprias</td>
 </tr>
 <tr>
 <td>Estado funcional e estado da informação</td>
 <td>Manter</td>
 <td>Condição do movimento e confiança sobre a informação permanecem separadas</td>
+</tr>
+<tr>
+<td>Confirmação condicionada</td>
+<td>Manter</td>
+<td>Não ativa o passo antes do atendimento da condição</td>
+</tr>
+<tr>
+<td>Portfólio ativo de Próximos Passos</td>
+<td>Refinar</td>
+<td>Distingue principal, ativo, pronto, agendado, em andamento, bloqueado, pausado, futuro, alternativo e aguardando condição</td>
+</tr>
+<tr>
+<td>Sequenciamento de Próximos Passos</td>
+<td>Manter</td>
+<td>Suporta relações anteriores, posteriores, paralelas, alternativas, condicionais, preparatórias, confirmatórias, substitutivas e recorrentes</td>
+</tr>
+<tr>
+<td>Dependências de Próximos Passos</td>
+<td>Refinar</td>
+<td>Possuem tipos e estados próprios e podem tornar o passo pronto, desbloqueá-lo ou exigir nova confirmação</td>
+</tr>
+<tr>
+<td>Bloqueios de Próximos Passos</td>
+<td>Refinar</td>
+<td>Podem ser objetivos e automáticos somente quando autorizados; não decorrem de baixa interação ou ritmo lento</td>
+</tr>
+<tr>
+<td>Pausa e bloqueio</td>
+<td>Manter</td>
+<td>Pausa decorre de decisão; bloqueio decorre de condição impeditiva</td>
+</tr>
+<tr>
+<td>Prazo vencido</td>
+<td>Refinar</td>
+<td>Exige avaliação; não produz automaticamente conclusão, cancelamento, abandono ou fracasso</td>
+</tr>
+<tr>
+<td>Execução de Próximo Passo</td>
+<td>Refinar</td>
+<td>Início exige declaração, ação explícita, fonte autorizada ou evidência suficiente; visualização não inicia execução</td>
+</tr>
+<tr>
+<td>Resultado e progresso</td>
+<td>Manter</td>
+<td>Resultado imediato pertence ao passo; progresso pertence à Capacidade de Objetivos</td>
+</tr>
+<tr>
+<td>Conclusão automática de Próximo Passo</td>
+<td>Refinar</td>
+<td>Permitida apenas para fato objetivo, fonte autorizada e contestação disponível</td>
+</tr>
+<tr>
+<td>Cancelamento, substituição e expiração</td>
+<td>Manter</td>
+<td>Possuem significados distintos e preservam histórico e efeitos anteriores</td>
+</tr>
+<tr>
+<td>Contestação e correção de Próximo Passo</td>
+<td>Manter</td>
+<td>Contestação limita efeitos críticos; correção é compensatória e preserva versões</td>
+</tr>
+<tr>
+<td>Recorrência de Próximo Passo</td>
+<td>Refinar</td>
+<td>Possui ocorrências próprias e não gera julgamento por ocorrências não realizadas</td>
+</tr>
+<tr>
+<td>Próximo Passo compartilhado</td>
+<td>Refinar</td>
+<td>Confirmação e responsabilidade são individualizadas por participante ou papel</td>
+</tr>
+<tr>
+<td>Delegação de Próximo Passo</td>
+<td>Refinar</td>
+<td>Exige autoridade, escopo, aceitação possível e responsabilidade residual</td>
+</tr>
+<tr>
+<td>Compartilhamento e revogação</td>
+<td>Refinar</td>
+<td>Usam finalidade e minimização; revogação interrompe novos acessos e usos e recompõe recortes</td>
+</tr>
+<tr>
+<td>Idempotência em Próximos Passos</td>
+<td>Manter</td>
+<td>Reprocessamento não pode duplicar passo, confirmação, prioridade, agendamento, conclusão, notificação ou responsabilidade</td>
+</tr>
+<tr>
+<td>Ordenação e concorrência</td>
+<td>Manter</td>
+<td>Mensagens fora de ordem e alterações concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa</td>
+</tr>
+<tr>
+<td>Falha segura em Próximos Passos</td>
+<td>Manter</td>
+<td>Preserva último estado válido, evita falsa confirmação ou conclusão e distingue falha parcial</td>
 </tr>
 <tr>
 <td>Próximo Passo sem objetivo formal</td>
@@ -51795,12 +51950,12 @@ Next authorized review: A2-R02
 <tr>
 <td>Integração com Eventos de Vida</td>
 <td>Refinar</td>
-<td>Eventos informam mudanças; Próximos Passos reavalia movimentos afetados</td>
+<td>Eventos informam mudanças; Próximos Passos reavalia individualmente os movimentos afetados</td>
 </tr>
 <tr>
 <td>Integração com Oportunidades Ativas</td>
 <td>Refinar</td>
-<td>Próximo Passo pode solicitar meios compatíveis; oportunidade disponível não cria automaticamente um passo</td>
+<td>Próximo Passo pode solicitar meios compatíveis; oportunidade indisponível não cancela o passo quando houver outro meio</td>
 </tr>
 <tr>
 <td>Integração com Intervenções Contextuais</td>
@@ -51810,12 +51965,12 @@ Next authorized review: A2-R02
 <tr>
 <td>Integração com Experiências</td>
 <td>Refinar</td>
-<td>Passo pode levar a uma experiência, mas execução ou participação não confirma automaticamente progresso</td>
+<td>Passo pode levar a uma experiência, mas participação não confirma automaticamente progresso</td>
 </tr>
 <tr>
 <td>Integração com Evolução Contínua</td>
 <td>Refinar</td>
-<td>Resultados de passos podem produzir evidências; quantidade concluída não mede evolução humana</td>
+<td>Resultados podem produzir evidências; quantidade concluída não mede evolução humana</td>
 </tr>
 <tr>
 <td>Guivos Intelligence em Próximos Passos</td>
@@ -51887,9 +52042,9 @@ Next authorized review: A2-R02
 </tbody>
 </table>
 <h2 id="project-canonical-consolidation-matrix-reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#project-canonical-consolidation-matrix-reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. <code>PAS-001-PP-FOUNDATION-001 1.0.0</code> ativa normativamente a Capacidade 05 — Próximos Passos, substitui seu estado <code>Planned</code> por <code>In progress</code> e eleva o progresso editorial de referência para 20%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.</p>
+<p>As Capacidades 02, 03 e 04 permanecem funcionalmente concluídas. <code>PAS-001-PP-LIFECYCLE-001 1.0.0</code> consolida o ciclo de vida da Capacidade 05, mantém seu estado <code>In progress</code> e eleva o progresso editorial de referência para 40%, sem reabrir capacidades concluídas ou promover candidatos arquiteturais à Canon.</p>
 <h2 id="project-canonical-consolidation-matrix-proxima-revisao">Próxima revisão<a class="headerlink" href="#project-canonical-consolidation-matrix-proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Consolidar o <strong>ciclo de vida dos Próximos Passos</strong>, incluindo criação, proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento e propagação.</p></section><section class="print-page" id="project-site-pipeline" heading-number="16.20"><h1 id="project-site-pipeline-pipeline-de-publicacao-do-gkr">Pipeline de Publicacao do GKR<a class="headerlink" href="#project-site-pipeline-pipeline-de-publicacao-do-gkr" title="Permanent link">&para;</a></h1>
+<p>Consolidar a <strong>visualização e o controle dos Próximos Passos</strong>, incluindo visão geral, portfólio ativo, cartões, detalhamento, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, passos compartilhados, histórico, privacidade, acessibilidade, explicabilidade e ações do participante.</p></section><section class="print-page" id="project-site-pipeline" heading-number="16.20"><h1 id="project-site-pipeline-pipeline-de-publicacao-do-gkr">Pipeline de Publicacao do GKR<a class="headerlink" href="#project-site-pipeline-pipeline-de-publicacao-do-gkr" title="Permanent link">&para;</a></h1>
 <p>Este documento registra a linha oficial de publicacao do Guivos Knowledge Repository.</p>
 <p>Fluxo:</p>
 <p>GitHub -&gt; Markdown -&gt; Mermaid -&gt; Site -&gt; PDF</p>
