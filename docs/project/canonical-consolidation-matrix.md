@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.4.4
+version: 1.4.5
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -112,13 +112,14 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
 | Objetivos | Manter | Capacidade 03 funcionalmente concluída por sete extensões normativas |
-| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final; substitui o estado In progress por Functionally complete |
-| Eventos de Vida | Manter | Capacidade 04 ativa; governa mudanças relevantes capazes de alterar a jornada |
-| Fundamentos Iniciais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, entradas e integrações iniciais |
+| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final; substitui In progress por Functionally complete |
+| Eventos de Vida | Manter | Capacidade 04 funcionalmente concluída por seis extensões normativas |
+| Fundamentos Iniciais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites e entradas |
 | Ciclo de Vida dos Eventos de Vida | Manter | PAS-001-EV-LIFECYCLE-001 1.0.0 define identificação, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento e propagação |
 | Visualização e Controle dos Eventos de Vida | Manter | PAS-001-EV-VIEW-001 1.0.0 define linha do tempo, detalhamento, impactos, ações, privacidade, compartilhamentos, histórico e falha segura |
 | Contratos dos Eventos Funcionais de Eventos de Vida | Manter | PAS-001-EV-EVENT-001 1.0.0 define comandos, propostas, fatos reconhecidos, contratos, correlação, propagação, idempotência, ordenação, versionamento e auditoria |
 | Integrações Funcionais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-INTEGRATION-001 1.0.0 define finalidade, identidade, autoridade, proveniência, recortes, capacidades, produtos, fontes externas, sincronização, revogação, degradação controlada e neutralidade comercial |
+| KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final; substitui In progress por Functionally complete |
 | Estado do Evento de Vida | Refinar | Condição da mudança real, separada do estado da informação conhecida pela Guivos |
 | Estado da informação do evento | Manter | Hipótese, não confirmado, confirmado, contestado ou corrigido |
 | Evento de Vida planejado | Refinar | Previsão ou planejamento de mudança; não equivale a evento ocorrido |
@@ -156,6 +157,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Eventos de Vida | Refinar | Sustenta identidade, autorização, temporalidade, versionamento, ordenação, idempotência, grafo e auditoria sem redefinir significado funcional |
 | Evento sensível | Manter | Exige finalidade específica, minimização, acesso restrito, proteção visual e ausência de exploração comercial |
 | Informação de terceiro em Evento de Vida | Refinar | Deve ser minimizada e não autoriza criação de perfil ou atribuição de estado interno ao terceiro |
+| Indicadores de Eventos de Vida | Manter | Avaliam processos e qualidade sistêmica, não o valor, estabilidade ou evolução do participante |
+| Guardrails de Eventos de Vida | Manter | Dezoito violações críticas possuem tolerância zero e prevalecem sobre médias agregadas |
+| Baseline de Eventos de Vida | Manter | Metas permanentes dependem de dados reais segmentados por ambiente, canal, região, categoria e versão |
+| Ausência de Eventos de Vida | Refinar | Estado legítimo; não representa falta de evolução, participação ou mudança humana |
+| Próximos Passos | Manter | Capacidade 05 permanece Planned e é a próxima frente oficial de Product Engineering |
 | Oportunidade Ativa | Manter | Oportunidade relevante para um participante em contexto atual |
 | Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
@@ -173,8 +179,10 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 e 03 permanecem funcionalmente concluídas. As cinco extensões normativas vigentes de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização, contratos de eventos e integrações funcionais e elevam o avanço editorial de referência da Capacidade 04 para 90%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03 e 04 estão funcionalmente concluídas. As seis extensões normativas de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 60 KPIs, 18 guardrails, cenários e contrato final, elevando o avanço editorial da Capacidade 04 para 100% sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+
+A Capacidade 05 — Próximos Passos torna-se a próxima frente oficial, permanecendo `Planned` até sua primeira extensão normativa.
 
 ## Próxima revisão
 
-Consolidar os **KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade 04 — Eventos de Vida**.
+Definir os **fundamentos iniciais da Capacidade 05 — Próximos Passos**, incluindo pergunta central, objetivo, valor, singularidade, princípios, definição, distinções, titularidade, tipos, origem, autoridade, estados, prioridade operacional, temporalidade, dependências, integrações e controle do participante.
