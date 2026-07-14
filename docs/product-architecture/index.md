@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.5.2
+version: 1.5.3
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -111,7 +111,8 @@ As extensões normativas vigentes são:
 
 - `PAS-001-PP-FOUNDATION-001` — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;
 - `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;
-- `PAS-001-PP-VIEW-001` — superfície `Meus Próximos Passos`, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles.
+- `PAS-001-PP-VIEW-001` — superfície `Meus Próximos Passos`, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles;
+- `PAS-001-PP-EVENT-001` — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura.
 
 `PAS-001-PP-FOUNDATION-001 1.0.0` substitui normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
 
@@ -137,9 +138,24 @@ As extensões normativas vigentes são:
 - consistência entre canais, falha segura e histórico compreensível;
 - neutralidade comercial e proibição de exploração de vulnerabilidade.
 
-A Capacidade 05 está **In progress**, com progresso editorial de referência de `60%`.
+`PAS-001-PP-EVENT-001 1.0.0` consolida:
 
-O próximo bloco deverá consolidar os contratos dos eventos funcionais dos Próximos Passos.
+- distinção normativa entre comando, proposta e evento reconhecido;
+- imutabilidade histórica e correção compensatória;
+- estrutura comum com agregado, titular, ator, autoridade, finalidade, sensibilidade e permissões;
+- tempos da intenção, proposição, decisão, ativação, execução, resultado, conclusão, conhecimento, processamento e aplicação;
+- correlação, causalidade funcional, versionamento e versão esperada;
+- contratos de identificação, proposição, declaração, confirmação, ativação, prontidão, preparação e prioridade;
+- contratos de dependências, bloqueios, pausa, retomada, agenda, início, execução, resultado e conclusão;
+- contratos de cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
+- recorrência, ocorrências, delegação, compartilhamento, revogação e propagação;
+- recortes mínimos, reavaliações dependentes e independência das capacidades consumidoras;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e falha segura;
+- retenção, minimização de logs, recuperação, explicabilidade e auditoria.
+
+A Capacidade 05 está **In progress**, com progresso editorial de referência de `80%`.
+
+O próximo bloco deverá consolidar as integrações funcionais dos Próximos Passos.
 
 ## Regras arquiteturais
 
@@ -273,6 +289,22 @@ O próximo bloco deverá consolidar os contratos dos eventos funcionais dos Pró
 128. Falha ou sincronização pendente não pode ser apresentada como sucesso integral.
 129. Oportunidades e conteúdo comercial devem permanecer separados da prioridade funcional.
 130. A visão deve apoiar ação no mundo real e manter o participante no controle.
+131. Comandos de Próximos Passos não representam fatos reconhecidos.
+132. Propostas de Próximos Passos não representam decisões assumidas.
+133. Eventos de Próximos Passos somente podem ser publicados após persistência funcional suficiente.
+134. Eventos históricos de Próximos Passos são imutáveis e correções devem ser compensatórias.
+135. Titular, ator, papel e autoridade devem permanecer explícitos e distintos.
+136. Tempos da intenção, decisão, execução, resultado, conhecimento e processamento devem permanecer separados.
+137. A mesma solicitação não pode duplicar estado, prioridade, responsabilidade, notificação ou compartilhamento.
+138. Eventos fora de ordem e conflitos de versão devem ser reconciliados sem sobrescrita silenciosa.
+139. Revogação de compartilhamento somente é concluída após propagação efetiva.
+140. Consumidores recebem recortes e solicitações, não decisões impostas.
+141. Eventos de leitura e interação não alteram confirmação, execução ou conclusão.
+142. Falha parcial não equivale a operação funcionalmente concluída.
+143. Logs devem minimizar conteúdo sensível e manter auditoria suficiente.
+144. Platform Layer sustenta armazenamento, publicação, filas e reconstrução sem redefinir semântica.
+145. As métricas dos contratos avaliam o sistema, não o participante.
+146. O participante permanece no controle dos eventos funcionais da capacidade.
 
 ## Documentos do domínio
 
@@ -284,6 +316,7 @@ O próximo bloco deverá consolidar os contratos dos eventos funcionais dos Pró
 - [PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos](pas-001-proximos-passos-fundamentos-iniciais.md)
 - [PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos](pas-001-proximos-passos-ciclo-de-vida.md)
 - [PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos](pas-001-proximos-passos-visualizacao-controle.md)
+- [PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos](pas-001-proximos-passos-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
