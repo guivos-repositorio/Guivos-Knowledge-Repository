@@ -5312,7 +5312,7 @@
 <li><strong>Especificação-base ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
 <li><strong>Capacidade concluída:</strong> <code>02 — Contexto Vivo</code>.</li>
 <li><strong>Capacidade ativa:</strong> <code>03 — Objetivos</code>.</li>
-<li><strong>Extensões normativas ativas de Objetivos:</strong> <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code>, <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code> e <code>PAS-001-OBJ-VIEW-001 1.0.0</code>.</li>
+<li><strong>Extensões normativas ativas de Objetivos:</strong> <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code>, <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code>, <code>PAS-001-OBJ-VIEW-001 1.0.0</code> e <code>PAS-001-OBJ-EVENT-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
@@ -5333,26 +5333,26 @@
 <p>A extensão <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code> consolidou fundamentos, distinções conceituais, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso e integrações iniciais.</p>
 <p>A extensão <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code> consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.</p>
 <p>A extensão <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code> consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.</p>
-<p>A extensão <code>PAS-001-OBJ-VIEW-001 1.0.0</code> consolidou:</p>
+<p>A extensão <code>PAS-001-OBJ-VIEW-001 1.0.0</code> consolidou a visão <code>Meus Objetivos</code>, incluindo portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade, consistência entre canais e histórico.</p>
+<p>A extensão <code>PAS-001-OBJ-EVENT-001 1.0.0</code> consolidou:</p>
 <ul>
-<li>objetivos funcionais, princípios e escopo de <code>Meus Objetivos</code>;</li>
-<li>visão geral, resumo linguístico e portfólio;</li>
-<li>organização, filtros, cartões e detalhamento;</li>
-<li>estado, prioridade, urgência e atualidade apresentados separadamente;</li>
-<li>critérios, progresso, percentuais, marcos e evidências;</li>
-<li>relações, dependências, conflitos e contexto relacionado;</li>
-<li>capacidades consumidoras e compartilhamentos externos;</li>
-<li>explicações de objetivo, prioridade, progresso e conclusão;</li>
-<li>criação, confirmação, ativação, reformulação e alteração de prioridade;</li>
-<li>pausa, retomada, bloqueio, conclusão, retirada, arquivamento e reativação;</li>
-<li>contestação, desfazimento, revisões, alertas e prevenção de fadiga;</li>
-<li>proteção de objetivos sensíveis, títulos neutros e privacidade visual;</li>
-<li>objetivos institucionais, compartilhados, pessoais, organizacionais e coletivos;</li>
-<li>acessibilidade, consistência entre canais, conversas e notificações;</li>
-<li>estados sem objetivos, falhas, sincronização pendente, auditoria e histórico;</li>
-<li>eventos funcionais da visão.</li>
+<li>distinção entre comando, proposta e evento funcional reconhecido;</li>
+<li>estrutura comum, identidade, autoridade e campos obrigatórios;</li>
+<li>temporalidade, correlação, causalidade, versionamento e idempotência;</li>
+<li>sensibilidade, minimização, finalidade e permissões;</li>
+<li>famílias e contratos de eventos de direção, existência, estrutura e prioridade;</li>
+<li>eventos de relações, conflitos, revisão, envelhecimento, pausa e bloqueio;</li>
+<li>eventos de critérios, linhas de base, evidências, progresso, marcos e conclusão;</li>
+<li>eventos de retirada, substituição, arquivamento, reativação e Eventos de Vida;</li>
+<li>alteração de permissões e revogação de compartilhamentos;</li>
+<li>recomposição de recortes, notificação de consumidores e reavaliação de decisões;</li>
+<li>eventos da visão, eventos conversacionais e eventos compostos;</li>
+<li>atomicidade funcional, retroatividade, correção, duplicidade e reprocessamento;</li>
+<li>ordenação, concorrência, falha de processamento e falha segura;</li>
+<li>responsabilidades de produtoras e consumidoras;</li>
+<li>explicabilidade, auditoria, retenção, privacidade e eventos por categoria de participante.</li>
 </ul>
-<p>O próximo bloco detalhará os contratos dos eventos funcionais da Capacidade de Objetivos.</p>
+<p>O próximo bloco detalhará as integrações funcionais da Capacidade de Objetivos.</p>
 <h2 id="progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -5376,7 +5376,7 @@
 <tr>
 <td>03 — Objetivos</td>
 <td>In progress</td>
-<td>80%</td>
+<td>90%</td>
 </tr>
 <tr>
 <td>04 — Eventos de Vida</td>
@@ -5442,6 +5442,9 @@
 <li>não concluir objetivos pessoais apenas por inferência;</li>
 <li>não transformar <code>Meus Objetivos</code> em painel de cobrança, produtividade, ranking ou comparação pessoal;</li>
 <li>não expor objetivos sensíveis em notificações ou superfícies não autorizadas;</li>
+<li>não tratar comando ou proposta como evento reconhecido;</li>
+<li>não reprocessar eventos com efeitos duplicados;</li>
+<li>não ampliar permissões ou autoridade durante integração;</li>
 <li>não reabrir a Capacidade 02 sem fundamento formal;</li>
 <li>não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.</li>
 </ul>
@@ -5449,12 +5452,13 @@
 <p>Retomar na <strong>Capacidade 03 — Objetivos</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>estrutura comum dos eventos funcionais;</li>
-<li>criação, confirmação e ativação;</li>
-<li>prioridade, revisão e ciclo de vida;</li>
-<li>critérios, progresso, marcos e evidências;</li>
-<li>conclusão, contestação e reabertura;</li>
-<li>propagação, correlação, idempotência e falha segura.</li>
+<li>integração com Contexto Vivo;</li>
+<li>integração com Eventos de Vida;</li>
+<li>integração com Próximos Passos e Oportunidades Ativas;</li>
+<li>integração com Intervenções Contextuais, Experiências e Evolução Contínua;</li>
+<li>integração com Guivos Intelligence;</li>
+<li>integração com Platform Layer;</li>
+<li>integração com serviços especializados.</li>
 </ol>
 
 
