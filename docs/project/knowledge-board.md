@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 6.4.0
+version: 6.5.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -23,6 +23,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final do Contexto Vivo |
 | PAS-001-OBJ-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Objetivos |
 | PAS-001-OBJ-LIFECYCLE-001 | Active 1.0.0 | Definir criação, confirmação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida dos objetivos |
+| PAS-001-OBJ-PROGRESS-001 | Active 1.0.0 | Definir critérios de sucesso, progresso, marcos, evidências e conclusão dos objetivos |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -38,12 +39,12 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidade concluída | `02 — Contexto Vivo` |
 | Capacidade ativa | `03 — Objetivos` |
-| Extensões normativas ativas | `PAS-001-OBJ-FOUNDATION-001 1.0.0` e `PAS-001-OBJ-LIFECYCLE-001 1.0.0` |
+| Extensões normativas ativas | `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0` e `PAS-001-OBJ-PROGRESS-001 1.0.0` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Definir critérios de sucesso, progresso, marcos, evidências e conclusão dos objetivos |
+| Foco imediato | Definir os comportamentos funcionais da visão `Meus Objetivos` |
 
 ## Capacidades do Journey
 
@@ -51,7 +52,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
-| 03 — Objetivos | In progress | Fundamentos e ciclo de vida consolidados em extensões normativas |
+| 03 — Objetivos | In progress | Fundamentos, ciclo de vida e estrutura de progresso consolidados em extensões normativas |
 | 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e mudança registrada |
 | 05 — Próximos Passos | Planned | — |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
@@ -79,14 +80,22 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 - unidade funcional e origens do objetivo;
 - criação, confirmação e ativação por finalidade;
 - duplicidade, correção, mudança, reformulação, desdobramento e unificação;
-- prioridade declarada, sugerida e contextual;
-- portfólio, simultaneidade e conflitos;
-- revisão, envelhecimento e estados de atualidade;
-- pausa, retomada, bloqueio e desbloqueio;
-- conclusão parcial, contínua e definitiva;
-- retirada, substituição, arquivamento e reativação;
-- propagação, interface e objetivos sensíveis;
-- eventos funcionais do ciclo de vida.
+- prioridade, portfólio, conflitos, revisão e envelhecimento;
+- pausa, retomada, bloqueio, conclusão, retirada, substituição, arquivamento e reativação.
+
+### `PAS-001-OBJ-PROGRESS-001 1.0.0`
+
+- estrutura e tipos de critérios de sucesso;
+- critérios pessoais, institucionais, múltiplos e revisáveis;
+- linha de base e horizonte de avaliação;
+- distinção entre atividade, resultado, evidência, progresso, marco e conclusão;
+- modelos, estados e limites de mensuração do progresso;
+- progresso declarado, observado e inferido;
+- redução de progresso sem apagamento histórico;
+- marcos, resultados parciais e caminhos alternativos;
+- tipos, força, convergência e conflitos de evidências;
+- conclusão declarada, sugerida, institucional, parcial, contínua e exploratória;
+- contestação, reabertura, efeitos e explicabilidade.
 
 ## Conceitos internos preservados
 
@@ -96,14 +105,15 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 | Objetivos | Active for Product Engineering |
 | Fundamentos Iniciais de Objetivos | Normative 1.0.0 |
 | Ciclo de Vida dos Objetivos | Normative 1.0.0 |
-| Intenção | Differentiated from confirmed objective |
-| Sonho | Preserved aspiration |
-| Possibilidade | Exploratory alternative |
+| Progresso e Conclusão dos Objetivos | Normative 1.0.0 |
 | Confirmação | Separate from activation |
 | Prioridade | Separate from urgency and lifecycle state |
-| Envelhecimento de objetivo | Loss of currentness confidence, not falsity |
-| Pausa | Temporary operational interruption, not failure |
-| Bloqueio | Current impediment, not personal incapacity |
+| Atividade | Does not automatically mean progress |
+| Evidência | Supports interpretation but does not determine human meaning alone |
+| Progresso | Relationship among objective, criterion, context and evidence |
+| Marco | Relevant intermediate result, not task |
+| Percentual de progresso | Allowed only with legitimate measurable basis |
+| Conclusão pessoal | Cannot be produced solely by inference |
 | Evento de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
 | Intervenção Contextual | Approved for PAS |
@@ -116,13 +126,14 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 6.3.0 |
-| Knowledge Board | 6.4.0 |
+| Roadmap | 6.4.0 |
+| Knowledge Board | 6.5.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-OBJ-FOUNDATION-001 | Active 1.0.0 |
 | PAS-001-OBJ-LIFECYCLE-001 | Active 1.0.0 |
+| PAS-001-OBJ-PROGRESS-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -132,4 +143,4 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 
 ## Próxima atividade
 
-Continuar a **Capacidade 03 — Objetivos**, detalhando critérios de sucesso, progresso, marcos, evidências e regras de conclusão.
+Continuar a **Capacidade 03 — Objetivos**, detalhando a visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões e proteção de objetivos sensíveis.
