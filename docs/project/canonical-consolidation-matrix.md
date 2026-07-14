@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.3.5
+version: 1.3.6
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -59,6 +59,7 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Evento funcional | Refinar | Fato reconhecido e versionado; não equivale a comando ou proposta |
 | Recorte funcional | Manter | Conjunto mínimo e autorizado de informações para finalidade específica |
 | Autoridade da fonte | Refinar | Limitada ao que a origem e o contrato permitem afirmar |
+| Guardrail funcional | Manter | Regra obrigatória que impede violações críticas e pode possuir tolerância zero |
 | Envelhecimento de objetivo | Manter | Redução de segurança sobre atualidade; não significa falsidade ou retirada |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
@@ -105,13 +106,16 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 |---|---|---|
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
-| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão, eventos e integrações |
+| Objetivos | Manter | Capacidade 03 funcionalmente concluída por sete extensões normativas |
 | Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
 | Ciclo de Vida dos Objetivos | Manter | PAS-001-OBJ-LIFECYCLE-001 1.0.0 define criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, conclusão, retirada e reativação |
 | Progresso e Conclusão dos Objetivos | Manter | PAS-001-OBJ-PROGRESS-001 1.0.0 define critérios, linhas de base, progresso, marcos, evidências, conclusão, contestação e reabertura |
 | Meus Objetivos | Manter | PAS-001-OBJ-VIEW-001 1.0.0 define portfólio, detalhamento, controles, explicações, revisões, proteção de objetivos sensíveis e histórico compreensível |
 | Eventos Funcionais de Objetivos | Manter | PAS-001-OBJ-EVENT-001 1.0.0 define contratos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correções e falha segura |
 | Integrações Funcionais de Objetivos | Manter | PAS-001-OBJ-INTEGRATION-001 1.0.0 define contratos com capacidades, camadas, serviços e fontes externas por finalidade, recortes mínimos, autoridade limitada e revogação |
+| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define 62 KPIs, 13 famílias, 12 guardrails, cenários e contrato final; substitui o estado In progress por Functionally complete |
+| Indicadores da Capacidade de Objetivos | Manter | Avaliam autoria, ativação, clareza, prioridade, atualidade, progresso, conclusão, privacidade, integrações, confiabilidade, neutralidade, esforço e fadiga |
+| Guardrails da Capacidade de Objetivos | Manter | Violações críticas de autoria, autorização, finalidade, privacidade, conclusão, neutralidade e idempotência possuem tolerância zero |
 | Integração com Contexto Vivo | Refinar | Bidirecional e controlada; Contexto representa estado autorizado, enquanto Objetivos governa a unidade e o ciclo de vida da direção |
 | Integração com Próximos Passos | Refinar | Próximos Passos executa caminhos e pode fornecer evidência de atividade, mas não governa objetivo nem determina progresso |
 | Integração com Oportunidades Ativas | Refinar | Oportunidades servem aos objetivos ativos e autorizados; disponibilidade comercial não cria direção ou prioridade |
@@ -131,8 +135,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Pausa de Objetivo | Manter | Interrompe uso operacional temporariamente sem representar desistência ou fracasso |
 | Bloqueio de Objetivo | Manter | Representa impedimento atual, não incapacidade pessoal |
 | Progresso de Objetivo | Refinar | Não equivale a simples atividade, clique, inscrição, compra ou consumo de conteúdo |
-| Interpretação do Contexto | Manter | Responsabilidade funcional apoiada pela Intelligence Layer |
-| Evento de Vida | Manter | Mudança relevante capaz de alterar uma ou mais dimensões ou objetivos |
+| Evento de Vida | Manter | Capacidade 04 ativa para Product Engineering; mudança relevante capaz de alterar uma ou mais dimensões ou objetivos |
 | Oportunidade Ativa | Manter | Oportunidade relevante para um participante em contexto atual |
 | Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
@@ -150,8 +153,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-A Capacidade 02 permanece concluída. As seis extensões normativas de Objetivos avançam a Capacidade 03 para uma baseline editorial de 95%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+As Capacidades 02 e 03 estão funcionalmente concluídas. O `PAS-001-OBJ-CONTRACT-001 1.0.0` eleva Objetivos a 100%, substitui normativamente o estado anterior e ativa a Capacidade 04 — Eventos de Vida, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Definir os fundamentos iniciais da **Capacidade 04 — Eventos de Vida**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
