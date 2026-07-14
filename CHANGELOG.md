@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.6 — Objectives Final Contract
+
+- Criação de `PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos`, versão `1.0.0`.
+- Registro do documento como sétima extensão normativa e contrato final da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Consolidação de 62 KPIs organizados em 13 famílias de autoria, ativação, clareza, prioridade, atualidade, progresso, conclusão, controle, privacidade, integrações, confiabilidade, neutralidade, esforço e fadiga.
+- Definição de 12 guardrails obrigatórios de tolerância zero para violações críticas de autoria, autorização, finalidade, privacidade, conclusão, neutralidade comercial, idempotência e inatividade.
+- Formalização do painel de saúde, níveis de desempenho funcional e regra de construção de baseline antes de metas numéricas.
+- Definição dos cenários funcionalmente ideal de manifestação, acompanhamento e conclusão.
+- Consolidação dos cenários alternativos de direção ampla, ausência de critério, conflitos, Evento de Vida, pausa, bloqueio, objetivos institucionais, progresso inferido, ausência de evidência, sensibilidade e compartilhamento.
+- Consolidação dos cenários limite de associação incerta, ativação indevida, autoridade externa excessiva, evidências conflitantes, revogação e propagação incompletas, duplicidade, ordenação, interferência comercial, compra, inatividade, inconsistência entre canais, retroatividade, terceiros e indisponibilidade.
+- Definição dos critérios de conclusão funcional e das lacunas técnicas que não impedem o encerramento da especificação.
+- Consolidação do contrato final de propósito, titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, falhas, guardrails e indicadores.
+- Substituição normativa do estado `In progress` da Capacidade 03 na seção 7 do `PAS-001 0.5.0` por `Functionally complete`.
+- Elevação do progresso editorial da Capacidade 03 para `100%` e ativação da Capacidade 04 — Eventos de Vida.
+- Atualização da Arquitetura de Produtos para `1.3.6` e inclusão do contrato final na navegação do MkDocs.
+- Atualização do Roadmap para `6.8.0`, do Knowledge Board para `6.9.0` e da Matriz de Consolidação Canônica para `1.3.6`.
+- Atualização do README e da página inicial do GKR.
+- Preservação do `PAS-001 0.5.0` como especificação-base até futura edição consolidada.
+- Definição dos fundamentos iniciais da Capacidade 04 — Eventos de Vida como próximo ponto exato de retomada.
+
 ## 0.31.5 — Objectives Functional Integrations
 
 - Criação de `PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais da Capacidade de Objetivos`, versão `1.0.0`.
