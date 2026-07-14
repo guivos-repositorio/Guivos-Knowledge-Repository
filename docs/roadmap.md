@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 6.9.0
+version: 7.0.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo` e `03 — Objetivos`.
 - **Capacidade ativa:** `04 — Eventos de Vida`.
-- **Extensão normativa ativa de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0`.
+- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0` e `PAS-001-EV-LIFECYCLE-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -49,22 +49,34 @@ O `PAS-001-OBJ-CONTRACT-001 1.0.0` substitui normativamente o estado anterior e 
 
 ## Avanço da Capacidade 04
 
+### Fundamentos
+
 A extensão `PAS-001-EV-FOUNDATION-001 1.0.0` consolidou:
 
 - pergunta central, objetivo funcional, valor entregue e singularidade;
-- definição de Evento de Vida como mudança relevante situada no tempo;
-- distinções entre evento, estado, atividade, experiência, atualização, sinal, evidência, objetivo e Próximo Passo;
-- eventos pontuais, progressivos, previstos, ocorridos, simples, compostos, primários e derivados;
-- tipos profissionais, educacionais, familiares, geográficos, financeiros, de saúde, sociais, espirituais, organizacionais e coletivos;
-- titularidade, participantes afetados, origem, autoridade e confirmação proporcional;
-- proteção de eventos sensíveis e informações de terceiros;
-- responsabilidades, limites, entradas, requisitos de admissão e estrutura funcional inicial;
-- temporalidade, estados, relações, simultaneidade e impacto funcional;
-- relações com Contexto Vivo, Objetivos e demais capacidades do Journey;
-- papéis da Guivos Intelligence e da Platform Layer;
-- controle do participante, explicabilidade, eventos iniciais e regras fundamentais.
+- definição de Evento de Vida e distinções conceituais;
+- tipos, titularidade, participantes afetados, origem e autoridade;
+- temporalidade, estados, relações, relevância e impacto inicial;
+- responsabilidades, limites, entradas e estrutura funcional;
+- relações com Contexto Vivo, Objetivos e demais capacidades;
+- sensibilidade, informações de terceiros, explicabilidade e controle do participante.
 
-O próximo bloco consolidará o ciclo de vida dos Eventos de Vida: identificação, proposição, confirmação, estados, temporalidade, relevância, impacto, relações, correção, contestação, encerramento e propagação.
+### Ciclo de vida
+
+A extensão `PAS-001-EV-LIFECYCLE-001 1.0.0` consolidou:
+
+- entrada, identificação, sinalização, proposição e declaração;
+- autoridade, integrações, inferências e confirmação proporcional;
+- estados `Planejado`, `Confirmado`, `Iniciado`, `Em andamento`, `Concluído`, `Interrompido`, `Cancelado`, `Contestado`, `Corrigido`, `Arquivado` e `Reaberto`;
+- estado do evento separado do estado da informação;
+- temporalidade exata, aproximada, indeterminada e retroativa;
+- relevância contextual e revisável;
+- impactos propostos e confirmados por unidade afetada;
+- relações, causalidade, correlação, cadeias, eventos compostos, unificação e separação;
+- correção, contestação, encerramento, arquivamento e reabertura;
+- propagação por recortes mínimos, idempotência, prevenção de ciclos e falha segura.
+
+O próximo bloco consolidará a visualização e o controle funcional dos Eventos de Vida: linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.
 
 ## Progresso das capacidades do Journey
 
@@ -73,7 +85,7 @@ O próximo bloco consolidará o ciclo de vida dos Eventos de Vida: identificaç�
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
-| 04 — Eventos de Vida | In progress | 20% |
+| 04 — Eventos de Vida | In progress | 40% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
@@ -112,8 +124,12 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não reduzir Evento de Vida a qualquer atividade, experiência ou atualização comum;
 - não tratar evento planejado como ocorrido;
 - não transformar sinal ou inferência em Evento de Vida confirmado;
+- não confundir confirmação do evento com confirmação de todos os impactos;
+- não fabricar precisão temporal;
+- não presumir causalidade por proximidade temporal;
 - não aplicar impactos indiscriminadamente a todo o contexto ou portfólio de objetivos;
 - não criar objetivo pessoal ativo ou impor prioridade a partir de Evento de Vida;
+- não encerrar impactos automaticamente quando o evento for concluído;
 - não explorar comercialmente vulnerabilidades ou eventos sensíveis;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
 
@@ -123,11 +139,11 @@ Retomar na **Capacidade 04 — Eventos de Vida**.
 
 Próxima entrega:
 
-1. identificação e proposição do evento;
-2. confirmação e estados funcionais;
-3. temporalidade e relevância;
-4. avaliação e confirmação de impactos;
-5. relações entre eventos;
-6. correção e contestação;
-7. encerramento, arquivamento e reabertura;
-8. propagação para Contexto Vivo, Objetivos e capacidades consumidoras.
+1. estrutura da linha do tempo;
+2. visão geral e agrupamentos;
+3. cartões e detalhamento do evento;
+4. estados, temporalidade, relevância e impactos;
+5. eventos planejados e em andamento;
+6. ações de confirmação, correção, contestação, arquivamento e reabertura;
+7. proteção de conteúdo sensível e privacidade visual;
+8. revisões, histórico, sincronização e falha segura.
