@@ -2,6 +2,27 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.32.0 — Life Events Capability Foundation
+
+- Criação de `PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 04 do `PAS-001 — Guivos Journey`.
+- Definição da pergunta central, objetivo funcional, valor entregue e singularidade funcional da capacidade.
+- Formalização de Evento de Vida como ocorrência, transição ou mudança relevante situada no tempo.
+- Consolidação das distinções entre evento, estado, atividade, experiência, atualização contextual, sinal, evidência, objetivo e Próximo Passo.
+- Definição de eventos previstos, ocorridos, pontuais, progressivos, simples, compostos, primários e derivados.
+- Registro dos tipos profissionais, educacionais, familiares, geográficos, financeiros, de saúde, sociais, espirituais, organizacionais e coletivos.
+- Consolidação de titularidade, participantes afetados, origem, autoridade, eventos declarados, observados, integrados e inferidos.
+- Definição da confirmação proporcional ao impacto e da proteção reforçada de eventos sensíveis e informações de terceiros.
+- Formalização das responsabilidades, limites, entradas, requisitos de admissão e estrutura funcional inicial.
+- Consolidação da temporalidade, estados, relações entre eventos, simultaneidade, relevância e impacto funcional.
+- Definição das relações com Contexto Vivo, Objetivos, demais capacidades do Journey, Guivos Intelligence e Platform Layer.
+- Substituição normativa do estado `Planned / concept consolidated` da Capacidade 04 na seção 7 do `PAS-001 0.5.0` por `In progress`.
+- Elevação do progresso editorial de referência da Capacidade 04 para `20%`.
+- Atualização da Arquitetura de Produtos para `1.4.0` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.9.0`, do Knowledge Board para `7.0.0` e da Matriz de Consolidação Canônica para `1.4.0`.
+- Atualização do README e da página inicial do GKR.
+- Definição do ciclo de vida dos Eventos de Vida como próximo ponto exato de retomada.
+
 ## 0.31.6 — Objectives Final Contract
 
 - Criação de `PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos`, versão `1.0.0`.
