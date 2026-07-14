@@ -2,6 +2,28 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.5 — Objectives Functional Integrations
+
+- Criação de `PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais da Capacidade de Objetivos`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Definição dos princípios de finalidade explícita, minimização, autoridade limitada, controle do participante, independência funcional, revogabilidade e falha segura.
+- Consolidação dos tipos, modos e contrato funcional comum das integrações.
+- Formalização dos requisitos de admissão, identidade, associação, autoridade, proveniência, qualidade, transformações, temporalidade e sincronização.
+- Definição das integrações com Captura de Contexto, Contexto Vivo e Eventos de Vida.
+- Consolidação das integrações com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais.
+- Definição das relações com Experiências e Evolução Contínua sem confundir participação, progresso, conclusão e transformação humana.
+- Formalização das saídas permitidas e ações proibidas da Guivos Intelligence.
+- Definição das responsabilidades da Platform Layer para identidade, autorização, grafo, APIs, busca, notificações, armazenamento, histórico e observabilidade.
+- Consolidação das integrações com Guivos Business, Mall, Travel, Media e Ads, preservando finalidade, transparência e neutralidade comercial.
+- Registro das integrações com serviços sociais, profissionais, educacionais, esportivos, de saúde, calendários e fontes financeiras.
+- Definição das regras de integrações temporárias, pausa, revogação, falha, degradação controlada, sincronização divergente e informação retroativa.
+- Consolidação da explicabilidade, auditoria, métricas funcionais, eventos das integrações e integrações proibidas.
+- Atualização da Arquitetura de Produtos para `1.3.5` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.7.0`, do Knowledge Board para `6.8.0` e da Matriz de Consolidação Canônica para `1.3.5`.
+- Atualização do README e da página inicial do GKR.
+- Avanço editorial da Capacidade 03 para `95%`.
+- Definição dos KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final como próximo ponto exato de retomada.
+
 ## 0.31.4 — Objectives Functional Event Contracts
 
 - Criação de `PAS-001-OBJ-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Objetivos`, versão `1.0.0`.
