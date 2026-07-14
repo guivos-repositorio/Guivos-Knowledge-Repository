@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 5.7.0
+version: 5.8.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -25,6 +25,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-CV-STATE-001 | Active 1.0.0 | Definir estados funcionais das oito dimensões do Contexto Vivo |
 | PAS-001-CV-UPDATE-001 | Active 1.0.0 | Definir atualização, validade temporal e envelhecimento do Contexto Vivo |
 | PAS-001-CV-CONFLICT-001 | Active 1.0.0 | Definir identificação, resolução e explicabilidade de conflitos contextuais |
+| PAS-001-CV-VIEW-001 | Active 1.0.0 | Definir transparência, explicabilidade e controle em Meu Contexto Hoje |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -38,7 +39,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação ativa | `PAS-001 — Guivos Journey 0.5.0` |
-| Extensões normativas | `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0` e `PAS-001-CV-CONFLICT-001 1.0.0` |
+| Extensões normativas | `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0` e `PAS-001-CV-VIEW-001 1.0.0` |
 | Capacidade ativa | `02 — Contexto Vivo` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
@@ -46,14 +47,14 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Documento público | `GOG-001 4.2.1` |
 | Sincronização vigente | `GE2-SYNC-007 1.0.0` |
 | Revisão AR-001 | `Completed 0.5.0` |
-| Foco imediato | Definir comportamentos funcionais da interface `Meu Contexto Hoje` |
+| Foco imediato | Definir contratos detalhados dos eventos funcionais do Contexto Vivo |
 
 ## Capacidades do Journey
 
 | Capacidade | Estado | Observação |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
-| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, responsabilidades, limites, entradas, saídas, eventos, estados, regras temporais e resolução de conflitos registrados |
+| 02 — Contexto Vivo | In progress | Definição, dimensões, ciclo de vida, responsabilidades, limites, entradas, saídas, eventos, estados, regras temporais, conflitos e interface de transparência registrados |
 | 03 — Objetivos | Planned | Próxima após Capacidade 02 |
 | 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e mudança registrada |
 | 05 — Próximos Passos | Planned | — |
@@ -105,10 +106,24 @@ Consolidados no `PAS-001-CV-CONFLICT-001 1.0.0`:
 - resolução automática permitida e proibida;
 - explicabilidade, reabertura e critérios de resolução confiável.
 
+Consolidados no `PAS-001-CV-VIEW-001 1.0.0`:
+
+- transparência e controle do Contexto Vivo;
+- síntese do momento atual e oito dimensões;
+- estados linguísticos e níveis de detalhamento;
+- confirmação, correção, contestação e inferências;
+- conflitos, envelhecimento e informações sensíveis;
+- permissões por finalidade, integrações e histórico;
+- evolução, ausência de informação e dimensões não utilizadas;
+- priorização de atenção e prevenção de sobrecarga;
+- explicação de recomendações e consequências de alterações;
+- recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;
+- eventos relacionados e critérios funcionais de aceitação.
+
 Próximo bloco:
 
-- comportamentos funcionais da interface `Meu Contexto Hoje`;
-- contratos detalhados dos eventos.
+- contratos detalhados dos eventos funcionais;
+- integrações.
 
 ## Reconciliação GE2-SYNC-007
 
@@ -129,6 +144,7 @@ A reconciliação confirmou:
 | Estados Dimensionais do Contexto Vivo | Normative 1.0.0 |
 | Atualização e Envelhecimento do Contexto Vivo | Normative 1.0.0 |
 | Resolução de Conflitos do Contexto Vivo | Normative 1.0.0 |
+| Meu Contexto Hoje | Normative 1.0.0 |
 | Interpretação do Contexto | Approved for PAS |
 | Eventos de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
@@ -143,13 +159,14 @@ A reconciliação confirmou:
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 5.6.0 |
-| Knowledge Board | 5.7.0 |
+| Roadmap | 5.7.0 |
+| Knowledge Board | 5.8.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-STATE-001 | Active 1.0.0 |
 | PAS-001-CV-UPDATE-001 | Active 1.0.0 |
 | PAS-001-CV-CONFLICT-001 | Active 1.0.0 |
+| PAS-001-CV-VIEW-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -160,4 +177,4 @@ A reconciliação confirmou:
 
 ## Próxima atividade
 
-Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelos comportamentos funcionais da interface `Meu Contexto Hoje`.
+Completar a **Capacidade 02 — Contexto Vivo**, iniciando pelos contratos detalhados dos eventos funcionais.
