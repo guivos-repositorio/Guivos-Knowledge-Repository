@@ -115,6 +115,7 @@ nav:
       - PAS-001-CV-KPI-001 — KPIs e Desempenho: product-architecture/pas-001-contexto-vivo-kpis-desempenho.md
       - PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final: product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md
       - PAS-001-OBJ-FOUNDATION-001 — Fundamentos de Objetivos: product-architecture/pas-001-objetivos-fundamentos-iniciais.md
+      - PAS-001-OBJ-LIFECYCLE-001 — Ciclo de Vida dos Objetivos: product-architecture/pas-001-objetivos-ciclo-de-vida.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
