@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.9.0
+version: 8.0.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -16,9 +16,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Marco vigente:** `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida`.
-- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 90%.
-- **Extensões vigentes de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0`, `PAS-001-PP-VIEW-001 1.0.0`, `PAS-001-PP-EVENT-001 1.0.0` e `PAS-001-PP-INTEGRATION-001 1.0.0`.
+- **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
+- **Próxima capacidade oficial:** `06 — Oportunidades Ativas`, `Planned / concept consolidated`.
+- **Contrato final de Próximos Passos:** `PAS-001-PP-CONTRACT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final da `Capacidade 05 — Próximos Passos`.
+O próximo trabalho deverá consolidar os fundamentos iniciais da `Capacidade 06 — Oportunidades Ativas`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -49,53 +49,50 @@ O `PAS-001-OBJ-CONTRACT-001 1.0.0` confirma a Capacidade 03 como **Functionally 
 
 ### Capacidade 04 — Eventos de Vida
 
-As seis extensões normativas consolidaram integralmente a semântica funcional da capacidade.
+As seis extensões normativas consolidaram fundamentos, ciclo de vida, visualização, eventos, integrações, 60 KPIs, 18 guardrails, baseline, painel de saúde, cenários e contrato final.
 
-- `PAS-001-EV-FOUNDATION-001 1.0.0` definiu fundamentos, conceito, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, sensibilidade e controle.
-- `PAS-001-EV-LIFECYCLE-001 1.0.0` definiu identificação, proposição, confirmação, estados, transições, relevância, impactos, relações, correção, contestação, encerramento, propagação e falha segura.
-- `PAS-001-EV-VIEW-001 1.0.0` definiu linha do tempo, detalhamento, eventos planejados, impactos, ações, privacidade visual, histórico e explicabilidade.
-- `PAS-001-EV-EVENT-001 1.0.0` definiu comandos, propostas, fatos reconhecidos, imutabilidade, contratos, idempotência, ordenação, auditoria e falha segura.
-- `PAS-001-EV-INTEGRATION-001 1.0.0` definiu finalidade, minimização, identidade, autoridade, proveniência, integrações, revogação e degradação controlada.
-- `PAS-001-EV-CONTRACT-001 1.0.0` consolidou 60 KPIs, 18 guardrails, baseline, painel de saúde, cenários e contrato final.
-
-A Capacidade 04 permanece **Functionally complete**.
-
-## Capacidade ativa
+O `PAS-001-EV-CONTRACT-001 1.0.0` confirma a Capacidade 04 como **Functionally complete**.
 
 ### Capacidade 05 — Próximos Passos
 
-`PAS-001-PP-FOUNDATION-001 1.0.0` consolidou os fundamentos iniciais e substituiu o estado `Planned` da linha da Capacidade 05 no `PAS-001 0.5.0` por `In progress`.
+As seis extensões normativas consolidaram integralmente a semântica funcional da capacidade.
 
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida completo, incluindo proposta, confirmação, prontidão, ativação, prioridade, execução, resultado, conclusão, recorrência, compartilhamento e falha segura.
+- `PAS-001-PP-FOUNDATION-001 1.0.0` definiu pergunta central, conceito, singularidade, titularidade, papéis, tipos, estados, prioridade, temporalidade, dependências, limites e controle.
+- `PAS-001-PP-LIFECYCLE-001 1.0.0` definiu possibilidade, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, execução, resultado, conclusão, recorrência, compartilhamento e falha segura.
+- `PAS-001-PP-VIEW-001 1.0.0` definiu `Meus Próximos Passos`, portfólio, cartões, propostas, alternativas, agenda, execução, resultados, privacidade, acessibilidade e ações do participante.
+- `PAS-001-PP-EVENT-001 1.0.0` definiu comandos, propostas, fatos reconhecidos, imutabilidade, contratos, idempotência, ordenação, versionamento, auditoria e recuperação.
+- `PAS-001-PP-INTEGRATION-001 1.0.0` definiu finalidade, minimização, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação e degradação controlada.
+- `PAS-001-PP-CONTRACT-001 1.0.0` consolidou 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, níveis de desempenho, cenários e contrato final.
 
-`PAS-001-PP-VIEW-001 1.0.0` consolidou `Meus Próximos Passos`, o portfólio ativo, os cartões, as propostas, as alternativas, a prioridade, a prontidão, a agenda, os bloqueios, os resultados, a recorrência, a privacidade, a acessibilidade, a explicabilidade e os controles.
+O contrato final confirma:
 
-`PAS-001-PP-EVENT-001 1.0.0` consolidou comandos, propostas, fatos reconhecidos, imutabilidade histórica, contratos, idempotência, ordenação, versionamento, auditoria e falha segura.
+- possibilidade, proposta, confirmação e ativação como conceitos distintos;
+- prioridade, prontidão, agenda, execução, resultado, progresso e conclusão como dimensões independentes;
+- titularidade, papéis e autoridade explícitos;
+- dependências, bloqueios, recorrência, responsabilidades e passos compartilhados;
+- controle, privacidade, neutralidade comercial, explicabilidade e falha segura;
+- ausência legítima de passos ativos;
+- inexistência de lacunas funcionais bloqueantes conhecidas na baseline normativa.
 
-`PAS-001-PP-INTEGRATION-001 1.0.0` consolida:
+A Capacidade 05 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-- integração como intercâmbio governado, não como decisão;
-- tipos e modos funcionais com permissões próprias;
-- contrato comum das integrações;
-- admissão, identidade, associação, autoridade, proveniência, qualidade e confiança;
-- temporalidade e retroatividade;
-- transformações permitidas e proibição de fabricação de significado;
-- sincronização, idempotência, duplicidade, ordenação, conflito e reconciliação;
-- prevenção de ciclos entre capacidades;
-- finalidade, minimização e permissões;
-- pausa, revogação e preservação de fatos históricos legítimos;
-- falha segura e degradação controlada;
-- Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
-- Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
-- Guivos Intelligence e Platform Layer;
-- Guivos Business, Mall, Travel, Media e Ads;
-- serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
-- integrações temporárias e pessoais;
-- terceiros, passos compartilhados, conflitos entre fontes e eventos retroativos;
-- canais conversacionais, notificações, busca, saídas permitidas e ações proibidas;
-- eventos, métricas, explicabilidade e auditoria.
+## Próxima capacidade oficial
 
-A capacidade está `In progress`, com progresso editorial de referência de `90%`.
+### Capacidade 06 — Oportunidades Ativas
+
+A Capacidade 06 permanece `Planned / concept consolidated` até sua primeira extensão normativa.
+
+O bloco inicial deverá consolidar:
+
+- pergunta central, objetivo funcional, valor entregue e singularidade;
+- definição de Oportunidade Ativa e distinções canônicas;
+- titularidade, origem, autoridade, relevância e elegibilidade;
+- temporalidade, disponibilidade, custo e risco;
+- patrocínio, relações comerciais e neutralidade;
+- relações com Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos e Intervenções Contextuais;
+- limites da Guivos Intelligence;
+- responsabilidades da Platform Layer;
+- controle do participante.
 
 ## Progresso das capacidades do Journey
 
@@ -105,7 +102,7 @@ A capacidade está `In progress`, com progresso editorial de referência de `90%
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
-| 05 — Próximos Passos | In progress | 90% |
+| 05 — Próximos Passos | Functionally complete | 100% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
@@ -131,7 +128,7 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 - gerar o formulário definitivo de aplicação;
 - construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
 
-Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 05.
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 06.
 
 ## Restrições
 
@@ -139,52 +136,32 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não promover LPM, CIE, GPMA ou outros candidatos diretamente à Canon;
 - não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
-- não reabrir as Capacidades 02, 03 ou 04 sem fundamento formal;
-- não reduzir Próximo Passo a objetivo, tarefa, oportunidade, recomendação ou compromisso;
-- não apresentar proposta como decisão assumida;
-- não apresentar confirmação como execução iniciada;
-- não criar listas infinitas ou ações artificiais para aumentar engajamento;
-- não utilizar contagem de passos como pontuação de produtividade;
-- não impor produtividade, prioridade pessoal ou responsabilidade silenciosa;
-- não concluir objetivo automaticamente pela conclusão de um passo;
-- não utilizar oportunidade, receita, patrocínio ou publicidade para determinar prioridade ou destaque;
-- não tratar bloqueio, pausa, cancelamento ou expiração como incapacidade ou fracasso;
-- não fabricar prazos ou precisão temporal;
-- não transformar atividade observada, clique, compra ou visualização em execução ou conclusão automática;
-- não utilizar gamificação coercitiva em recorrências;
-- não utilizar vulnerabilidade para indução comercial;
-- proteger passos sensíveis e informações de terceiros;
-- preservar acessibilidade, autonomia, explicabilidade e controle do participante;
-- não reescrever eventos funcionais reconhecidos;
-- não publicar evento antes da persistência funcional suficiente;
-- não duplicar efeitos por reprocessamento;
-- não concluir revogação antes da propagação efetiva;
-- não apresentar falha parcial como sucesso integral;
-- não tratar disponibilidade técnica como autorização;
-- não ampliar a autoridade de fontes externas;
-- não permitir que calendário, compra, localização ou atividade confirmem significado além do fato observado;
-- não compartilhar jornada pessoal integral com organizações ou serviços;
-- não fabricar causalidade, intenção, responsabilidade, diagnóstico ou conclusão durante transformações;
-- não utilizar informação pública como autorização irrestrita;
-- não manter integrações temporárias sem expiração;
-- não criar perfis independentes de terceiros;
-- não iniciar o próximo produto antes da conclusão funcional suficiente do Journey.
+- não reabrir as Capacidades 02, 03, 04 ou 05 sem fundamento formal;
+- não reduzir Oportunidade Ativa a anúncio, produto, recomendação, Próximo Passo ou compromisso;
+- não tratar disponibilidade como relevância ou elegibilidade;
+- não transformar oportunidade em decisão pessoal;
+- não usar patrocínio, comissão ou estoque para fabricar relevância;
+- não ocultar relações comerciais;
+- não explorar vulnerabilidade, eventos sensíveis ou passos protegidos;
+- não transferir autoridade de decisão à Guivos Intelligence, Platform Layer ou fornecedores;
+- não iniciar outro produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar nos **KPIs, guardrails, baseline, cenários e contrato final dos Próximos Passos**.
+Retomar nos **fundamentos iniciais da Capacidade 06 — Oportunidades Ativas**.
 
 Próxima entrega:
 
-1. famílias e definições dos KPIs;
-2. guardrails obrigatórios de tolerância zero;
-3. baseline funcional;
-4. painel de saúde;
-5. níveis de desempenho;
-6. cenários funcionalmente ideal;
-7. cenários alternativos;
-8. cenários limite;
-9. critérios de conclusão;
-10. lacunas bloqueantes e não bloqueantes;
-11. contrato final da capacidade;
-12. definição da próxima capacidade oficial.
+1. pergunta central;
+2. objetivo funcional;
+3. valor entregue;
+4. singularidade;
+5. definição e distinções;
+6. titularidade, origem e autoridade;
+7. relevância e elegibilidade;
+8. temporalidade e disponibilidade;
+9. custo, risco, patrocínio e relações comerciais;
+10. neutralidade;
+11. relações com as capacidades do Journey;
+12. limites da Guivos Intelligence e responsabilidades da Platform Layer;
+13. controle do participante.
