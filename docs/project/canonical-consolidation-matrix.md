@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.2.9
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -34,7 +34,7 @@ Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR cons
 | Constituição | Manter | Nenhuma contradição objetiva identificada |
 | Princípios Permanentes | Refinar | Revisão futura apenas por processo formal e evidência suficiente |
 
-A Foundation encontra-se congelada na baseline `A2-B3`. Esta matriz não autoriza alteração informal de seus elementos.
+A Foundation encontra-se congelada na baseline `A2-B3`.
 
 ## Modelo Fundamental
 
@@ -42,9 +42,13 @@ A Foundation encontra-se congelada na baseline `A2-B3`. Esta matriz não autoriz
 |---|---|---|
 | Participante | Manter | Elemento que percorre a jornada |
 | Momento Atual | Manter | Termo oficial; o estado resultante reinicia o ciclo |
-| Objetivos | Manter | Orientam a jornada e constituem a Capacidade 03 ativa |
+| Objetivo | Refinar | Direção consciente assumida pelo participante; não equivale a intenção, sonho, possibilidade, tarefa ou oportunidade |
+| Intenção | Manter | Vontade ainda não suficientemente assumida ou estruturada |
+| Sonho | Manter | Aspiração significativa que pode permanecer sem compromisso operacional |
+| Possibilidade | Manter | Alternativa considerada sem compromisso suficiente |
+| Prioridade | Refinar | Importância relativa e contextual de um objetivo; não é objetivo independente |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
-| Oportunidade | Manter | Mecanismo estruturado para realizar o Próximo Passo |
+| Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
 | Experiência | Manter | Vivência efetiva da oportunidade |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
@@ -74,8 +78,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Guivos Marketplace | Remover | Nome anterior substituído oficialmente por Guivos Mall |
 | Guivos Travel | Manter | Serviço especializado de viagens e experiências turísticas |
 | Guivos Business | Manter | Serviço especializado para organizações |
-| Guivos Media | Manter | Serviço editorial e institucional; substitui “Guivos Podcast” como produto |
-| Guivos Intelligence | Manter | Intelligence Layer transversal; substitui “Guivos Insights” como produto |
+| Guivos Media | Manter | Serviço editorial e institucional |
+| Guivos Intelligence | Manter | Intelligence Layer transversal |
 | Guivos Ads | Manter | Serviço de publicidade e mídia patrocinada |
 | “Comunidade Guivos” | Remover | Substituída por Guivos Journey como nome amplo de produto |
 | “Guivos Podcast” | Remover | Podcast passa a ser formato de Guivos Media |
@@ -86,17 +90,14 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Conceito | Decisão | Situação |
 |---|---|---|
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
-| Estados Dimensionais do Contexto Vivo | Manter | PAS-001-CV-STATE-001 1.0.0 define estados, transições e impactos entre dimensões |
-| Atualização e Envelhecimento do Contexto Vivo | Manter | PAS-001-CV-UPDATE-001 1.0.0 define atualização seletiva, temporalidade, revisão, permissões e propagação controlada |
-| Resolução de Conflitos do Contexto Vivo | Manter | PAS-001-CV-CONFLICT-001 1.0.0 define identificação, classificação, resolução, explicabilidade, contestação e reabertura |
-| Meu Contexto Hoje | Manter | PAS-001-CV-VIEW-001 1.0.0 define transparência, explicabilidade, atualização, permissões, histórico e controle |
-| Eventos Funcionais do Contexto Vivo | Manter | PAS-001-CV-EVENT-001 1.0.0 define significado, estrutura, temporalidade, versionamento, proteção e efeitos |
-| Integrações Funcionais do Contexto Vivo | Manter | PAS-001-CV-INTEGRATION-001 1.0.0 define contratos e limites entre capacidades, camadas, serviços e fontes externas |
-| KPIs e Desempenho do Contexto Vivo | Manter | PAS-001-CV-KPI-001 1.0.0 define indicadores, guardrails críticos, níveis de desempenho e governança |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
+| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações e ciclo de vida dos objetivos |
+| Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
+| Objetivo do Participante | Manter | Exige autoria ou aceitação consciente e não pode ser ativado apenas por inferência ou interesse externo |
+| Desejo Externo | Refinar | Permanece recomendação ou expectativa externa até aceitação consciente do participante |
+| Progresso de Objetivo | Refinar | Não equivale a simples atividade, clique, inscrição, compra ou consumo de conteúdo |
 | Interpretação do Contexto | Manter | Responsabilidade funcional apoiada pela Intelligence Layer |
-| Evolução Independente das Dimensões | Manter | Dimensões evoluem sem reconstrução integral do contexto |
-| Evento de Vida | Manter | Mudança relevante capaz de alterar uma ou mais dimensões |
+| Evento de Vida | Manter | Mudança relevante capaz de alterar uma ou mais dimensões ou objetivos |
 | Oportunidade Ativa | Manter | Oportunidade relevante para um participante em contexto atual |
 | Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
@@ -114,10 +115,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-A `GE2-SYNC-007` confirmou que o extrato final da conversa anterior não continha decisão arquitetural madura ausente do GKR. As correções necessárias foram editoriais e de sincronização.
-
-O `PAS-001 0.5.0` e as extensões `PAS-001-CV-STATE-001`, `PAS-001-CV-UPDATE-001`, `PAS-001-CV-CONFLICT-001`, `PAS-001-CV-VIEW-001`, `PAS-001-CV-EVENT-001`, `PAS-001-CV-INTEGRATION-001`, `PAS-001-CV-KPI-001` e `PAS-001-CV-CONTRACT-001`, todas em `1.0.0`, concluíram funcionalmente a Capacidade 02 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+A Capacidade 02 permanece concluída e a `PAS-001-OBJ-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Especificar a **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante e utilizando o Contexto Vivo como fonte contextual governada.
+Detalhar as regras de criação, confirmação, priorização, revisão, conflitos, envelhecimento e ciclo de vida da **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
