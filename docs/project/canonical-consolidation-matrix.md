@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.3.4
+version: 1.3.5
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -56,9 +56,9 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Progresso | Refinar | Mudança relevante na direção do resultado, baseada na relação entre objetivo, critério, contexto e evidência |
 | Marco | Manter | Resultado intermediário significativo; não equivale a tarefa |
 | Conclusão | Refinar | Reconhecimento suficiente conforme natureza, critérios, evidências e percepção do participante |
-| Comando | Manter | Solicitação de ação; não representa fato reconhecido |
-| Proposta | Manter | Possível alteração ainda dependente de avaliação ou confirmação |
-| Evento funcional | Refinar | Fato reconhecido com origem, autoridade, temporalidade, finalidade e efeitos controlados |
+| Evento funcional | Refinar | Fato reconhecido e versionado; não equivale a comando ou proposta |
+| Recorte funcional | Manter | Conjunto mínimo e autorizado de informações para finalidade específica |
+| Autoridade da fonte | Refinar | Limitada ao que a origem e o contrato permitem afirmar |
 | Envelhecimento de objetivo | Manter | Redução de segurança sobre atualidade; não significa falsidade ou retirada |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
@@ -94,6 +94,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Guivos Media | Manter | Serviço editorial e institucional |
 | Guivos Intelligence | Manter | Intelligence Layer transversal |
 | Guivos Ads | Manter | Serviço de publicidade e mídia patrocinada |
+| Platform Layer | Refinar | Fornece identidade, autorização, armazenamento, grafo, eventos, APIs, busca, notificações, segurança e observabilidade sem redefinir significado funcional |
 | “Comunidade Guivos” | Remover | Substituída por Guivos Journey como nome amplo de produto |
 | “Guivos Podcast” | Remover | Podcast passa a ser formato de Guivos Media |
 | “Guivos Insights” | Remover | Insights passa a ser resultado de Guivos Intelligence |
@@ -104,17 +105,21 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 |---|---|---|
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
-| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão, controle e eventos dos objetivos |
+| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão, eventos e integrações |
 | Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
 | Ciclo de Vida dos Objetivos | Manter | PAS-001-OBJ-LIFECYCLE-001 1.0.0 define criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, conclusão, retirada e reativação |
 | Progresso e Conclusão dos Objetivos | Manter | PAS-001-OBJ-PROGRESS-001 1.0.0 define critérios, linhas de base, progresso, marcos, evidências, conclusão, contestação e reabertura |
 | Meus Objetivos | Manter | PAS-001-OBJ-VIEW-001 1.0.0 define portfólio, detalhamento, controles, explicações, revisões, proteção de objetivos sensíveis e histórico compreensível |
-| Eventos Funcionais de Objetivos | Manter | PAS-001-OBJ-EVENT-001 1.0.0 define estrutura, autoridade, temporalidade, contratos, propagação, correção, auditoria e falha segura |
-| Idempotência de Eventos | Manter | Reprocessamento do mesmo evento não pode produzir efeitos funcionais duplicados |
-| Causalidade de Eventos | Manter | Relação causal deve ser registrada quando houver base, sem invenção retroativa |
-| Correlação de Eventos | Manter | Eventos da mesma operação devem permanecer relacionados sem perda de significado próprio |
-| Evento Retroativo | Refinar | Preserva data do fato, conhecimento e reconhecimento sem reescrever o histórico |
-| Correção de Evento | Manter | Deve ocorrer por evento compensatório, preservando o registro original |
+| Eventos Funcionais de Objetivos | Manter | PAS-001-OBJ-EVENT-001 1.0.0 define contratos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correções e falha segura |
+| Integrações Funcionais de Objetivos | Manter | PAS-001-OBJ-INTEGRATION-001 1.0.0 define contratos com capacidades, camadas, serviços e fontes externas por finalidade, recortes mínimos, autoridade limitada e revogação |
+| Integração com Contexto Vivo | Refinar | Bidirecional e controlada; Contexto representa estado autorizado, enquanto Objetivos governa a unidade e o ciclo de vida da direção |
+| Integração com Próximos Passos | Refinar | Próximos Passos executa caminhos e pode fornecer evidência de atividade, mas não governa objetivo nem determina progresso |
+| Integração com Oportunidades Ativas | Refinar | Oportunidades servem aos objetivos ativos e autorizados; disponibilidade comercial não cria direção ou prioridade |
+| Integração com Experiências | Refinar | Experiência pode produzir evidência ou marco, mas participação não equivale automaticamente a progresso |
+| Integração com Evolução Contínua | Refinar | Conclusão de objetivo pode apoiar análise de evolução sem representar automaticamente transformação humana |
+| Integração com Guivos Intelligence | Refinar | Intelligence produz hipóteses, sugestões e interpretações, não decisões pessoais definitivas |
+| Integração com Platform Layer | Refinar | A camada aplica identidade, autorização, versionamento, idempotência e segurança sem assumir responsabilidade semântica |
+| Integração com Serviços Especializados | Refinar | Business, Mall, Travel, Media e Ads recebem somente recortes autorizados e não podem ampliar finalidade ou prioridade |
 | Objetivo do Participante | Manter | Exige autoria ou aceitação consciente e não pode ser ativado apenas por inferência ou interesse externo |
 | Objetivo Institucional | Refinar | Deve permanecer distinto do objetivo pessoal, com titularidade, finalidade, critérios e permissões próprios |
 | Objetivo Compartilhado | Refinar | Deve preservar contribuições, responsabilidades, permissões e possibilidade de saída de cada participante |
@@ -145,8 +150,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-A Capacidade 02 permanece concluída. As extensões `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0`, `PAS-001-OBJ-VIEW-001 1.0.0` e `PAS-001-OBJ-EVENT-001 1.0.0` avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+A Capacidade 02 permanece concluída. As seis extensões normativas de Objetivos avançam a Capacidade 03 para uma baseline editorial de 95%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Detalhar as integrações funcionais da **Capacidade 03 — Objetivos** com Contexto Vivo, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer e serviços especializados.
+Consolidar os KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
