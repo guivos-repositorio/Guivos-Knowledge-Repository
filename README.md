@@ -12,7 +12,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo e 03 — Objetivos
 - **Capacidade ativa:** 04 — Eventos de Vida
-- **Extensão normativa ativa de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0
+- **Extensões normativas ativas de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0 e PAS-001-EV-LIFECYCLE-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -39,17 +39,21 @@ A Capacidade 03 está **funcionalmente concluída**.
 
 ## Capacidade 04 — Eventos de Vida
 
-O `PAS-001-EV-FOUNDATION-001 1.0.0` consolidou:
+As extensões normativas vigentes consolidaram:
 
-- pergunta central, objetivo funcional e valor entregue;
-- singularidade funcional e definição de Evento de Vida;
-- distinções entre evento, estado, atividade, experiência, atualização, sinal, evidência, objetivo e Próximo Passo;
-- tipos, titularidade, origem, autoridade, temporalidade, estados e impacto;
-- responsabilidades, limites, entradas e estrutura funcional inicial;
-- relações com Contexto Vivo, Objetivos e demais capacidades;
-- proteção de sensibilidade, informações de terceiros, explicabilidade e controle do participante.
+- pergunta central, objetivo funcional, valor entregue e singularidade;
+- definição de Evento de Vida e distinções conceituais;
+- tipos, titularidade, origem, autoridade e sensibilidade;
+- identificação, proposição, declaração e confirmação;
+- estados e transições do ciclo de vida;
+- temporalidade exata, aproximada, aberta e retroativa;
+- relevância contextual e impactos por unidade afetada;
+- relações, cadeias, eventos compostos, unificação e separação;
+- correção, contestação, encerramento, arquivamento e reabertura;
+- propagação por recortes mínimos, idempotência e falha segura;
+- relações com Contexto Vivo, Objetivos e capacidades consumidoras.
 
-A extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece **In progress**.
+A Capacidade 04 permanece **In progress**, com progresso editorial de referência de **40%**.
 
 ## Ponto exato de retomada
 
@@ -57,13 +61,13 @@ Retomar na `Capacidade 04 — Eventos de Vida`.
 
 Próxima entrega:
 
-- identificação e proposição;
-- confirmação e estados;
-- temporalidade e relevância;
-- avaliação de impacto;
-- relações entre eventos;
-- correção e contestação;
-- encerramento e propagação.
+- linha do tempo e visão geral;
+- detalhamento do evento;
+- visualização de estados, temporalidade, relevância e impactos;
+- eventos planejados e em andamento;
+- revisões, correções e contestações;
+- controles de conteúdo sensível;
+- histórico e ações do participante.
 
 ## Product Engineering
 
@@ -90,6 +94,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Cenários e Contrato Final do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais da Capacidade de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-fundamentos-iniciais.md)
+- [Regras do Ciclo de Vida dos Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
