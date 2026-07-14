@@ -42703,8 +42703,8 @@ Next authorized review: A2-R02
 </tr>
 <tr>
 <td>Sinal</td>
-<td>Manter</td>
-<td>Indicação possível que exige avaliação antes de ser tratada como fato confirmado</td>
+<td>Refinar</td>
+<td>Indicação possível que permanece distinta de evento proposto ou confirmado</td>
 </tr>
 <tr>
 <td>Evidência</td>
@@ -42944,6 +42944,21 @@ Next authorized review: A2-R02
 <td>PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, entradas e integrações iniciais</td>
 </tr>
 <tr>
+<td>Ciclo de Vida dos Eventos de Vida</td>
+<td>Manter</td>
+<td>PAS-001-EV-LIFECYCLE-001 1.0.0 define identificação, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento e propagação</td>
+</tr>
+<tr>
+<td>Estado do Evento de Vida</td>
+<td>Refinar</td>
+<td>Condição da mudança real, separada do estado da informação conhecida pela Guivos</td>
+</tr>
+<tr>
+<td>Estado da informação do evento</td>
+<td>Manter</td>
+<td>Hipótese, não confirmado, confirmado, contestado ou corrigido</td>
+</tr>
+<tr>
 <td>Evento de Vida planejado</td>
 <td>Refinar</td>
 <td>Previsão ou planejamento de mudança; não equivale a evento ocorrido</td>
@@ -42951,17 +42966,77 @@ Next authorized review: A2-R02
 <tr>
 <td>Evento de Vida progressivo</td>
 <td>Manter</td>
-<td>Mudança desenvolvida ao longo de período, com início, duração, marcos e incerteza temporal</td>
+<td>Mudança desenvolvida ao longo de período, com início, duração, atualizações e incerteza temporal</td>
+</tr>
+<tr>
+<td>Evento de Vida retroativo</td>
+<td>Refinar</td>
+<td>Preserva data do fato, data de conhecimento e limites da reconstrução histórica</td>
+</tr>
+<tr>
+<td>Relevância de Evento de Vida</td>
+<td>Refinar</td>
+<td>Materialidade contextual, explicável e revisável para a jornada</td>
 </tr>
 <tr>
 <td>Evento primário</td>
 <td>Manter</td>
-<td>Mudança reconhecida que deverá permanecer distinta de seus efeitos derivados</td>
+<td>Mudança reconhecida que permanece distinta de seus efeitos derivados</td>
 </tr>
 <tr>
 <td>Impacto de Evento de Vida</td>
 <td>Refinar</td>
-<td>Efeito confirmado ou proposto, avaliado por dimensão contextual e objetivo</td>
+<td>Efeito proposto ou confirmado com temporalidade, intensidade e ciclo próprios</td>
+</tr>
+<tr>
+<td>Impacto automático</td>
+<td>Refinar</td>
+<td>Limitado a fato objetivo, fonte autorizada, baixo risco, reversibilidade, finalidade e ausência de conflito</td>
+</tr>
+<tr>
+<td>Evento composto</td>
+<td>Manter</td>
+<td>Organiza transição ampla sem apagar eventos componentes</td>
+</tr>
+<tr>
+<td>Causalidade entre eventos</td>
+<td>Refinar</td>
+<td>Exige base explicável e não decorre apenas de proximidade temporal</td>
+</tr>
+<tr>
+<td>Correção de Evento de Vida</td>
+<td>Manter</td>
+<td>Preserva versão anterior, recompõe impactos e notifica consumidores necessários</td>
+</tr>
+<tr>
+<td>Contestação de Evento de Vida</td>
+<td>Manter</td>
+<td>Pode suspender impactos, limitar recortes e impedir decisões críticas</td>
+</tr>
+<tr>
+<td>Conclusão de Evento de Vida</td>
+<td>Refinar</td>
+<td>Encerra a mudança representada sem encerrar automaticamente impactos persistentes</td>
+</tr>
+<tr>
+<td>Arquivamento de Evento de Vida</td>
+<td>Refinar</td>
+<td>Retira da operação cotidiana sem equivaler a exclusão ou apagar impactos ativos</td>
+</tr>
+<tr>
+<td>Reabertura de Evento de Vida</td>
+<td>Manter</td>
+<td>Preserva ciclo anterior e distingue continuidade de nova ocorrência</td>
+</tr>
+<tr>
+<td>Propagação de Evento de Vida</td>
+<td>Refinar</td>
+<td>Utiliza recortes mínimos e solicita reavaliação às capacidades consumidoras</td>
+</tr>
+<tr>
+<td>Idempotência em Eventos de Vida</td>
+<td>Manter</td>
+<td>Reprocessamento não pode duplicar impactos, atualizações, objetivos ou notificações</td>
 </tr>
 <tr>
 <td>Titularidade do Evento de Vida</td>
@@ -43083,9 +43158,9 @@ Next authorized review: A2-R02
 </tbody>
 </table>
 <h2 id="project-canonical-consolidation-matrix-reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#project-canonical-consolidation-matrix-reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>As Capacidades 02 e 03 permanecem funcionalmente concluídas. O <code>PAS-001-EV-FOUNDATION-001 1.0.0</code> inaugura a baseline normativa da Capacidade 04, substitui seu estado anterior por <code>In progress</code> e eleva o avanço editorial de referência para 20%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.</p>
+<p>As Capacidades 02 e 03 permanecem funcionalmente concluídas. <code>PAS-001-EV-FOUNDATION-001 1.0.0</code> e <code>PAS-001-EV-LIFECYCLE-001 1.0.0</code> consolidam a baseline normativa inicial da Capacidade 04 e elevam seu avanço editorial de referência para 40%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.</p>
 <h2 id="project-canonical-consolidation-matrix-proxima-revisao">Próxima revisão<a class="headerlink" href="#project-canonical-consolidation-matrix-proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Definir o ciclo de vida dos <strong>Eventos de Vida</strong>, incluindo identificação, proposição, confirmação, estados, temporalidade, relevância, impacto, relações, correção, contestação, encerramento e propagação.</p></section><section class="print-page" id="project-site-pipeline" heading-number="16.20"><h1 id="project-site-pipeline-pipeline-de-publicacao-do-gkr">Pipeline de Publicacao do GKR<a class="headerlink" href="#project-site-pipeline-pipeline-de-publicacao-do-gkr" title="Permanent link">&para;</a></h1>
+<p>Definir os comportamentos funcionais da visualização e do controle dos <strong>Eventos de Vida</strong>, incluindo linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.</p></section><section class="print-page" id="project-site-pipeline" heading-number="16.20"><h1 id="project-site-pipeline-pipeline-de-publicacao-do-gkr">Pipeline de Publicacao do GKR<a class="headerlink" href="#project-site-pipeline-pipeline-de-publicacao-do-gkr" title="Permanent link">&para;</a></h1>
 <p>Este documento registra a linha oficial de publicacao do Guivos Knowledge Repository.</p>
 <p>Fluxo:</p>
 <p>GitHub -&gt; Markdown -&gt; Mermaid -&gt; Site -&gt; PDF</p>
