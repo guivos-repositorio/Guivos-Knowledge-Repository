@@ -2,6 +2,21 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.8 — Living Context Final Contract
+
+- Criação de `PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como oitava extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição dos cenários funcionalmente ideal, alternativo e limite, incluindo condições, fluxos, transições e critérios de aceite.
+- Consolidação dos cenários de primeiro uso, atualização declarada, Evento de Vida, conflito, contestação, revogação, falha de integração, informação sensível, insuficiência contextual, retroatividade, múltiplos canais e relacionamentos.
+- Formalização do contrato final da Capacidade 02, com propósito, responsabilidades, limites, entradas, requisitos de admissão, representação, saídas, recortes, eventos, integrações, falhas, guardrails e indicadores.
+- Confirmação de que todos os critérios de conclusão funcional estão atendidos e de que não existem lacunas funcionais críticas conhecidas na baseline vigente.
+- Substituição normativa do estado e do ponto de retomada das seções 44 e 45 do `PAS-001 0.5.0`, preservado como especificação-base até futura edição consolidada.
+- Marcação da Capacidade 02 — Contexto Vivo como `Functionally complete` e ativação da Capacidade 03 — Objetivos.
+- Atualização da Arquitetura de Produtos para `1.2.8` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.1.0`, do Knowledge Board para `6.2.0` e da Matriz de Consolidação Canônica para `1.2.9`.
+- Atualização do README e da página inicial do GKR.
+- Definição da pergunta central, objetivo funcional, valor entregue, responsabilidades e limites da Capacidade 03 como próximo ponto exato de retomada.
+
 ## 0.30.7 — Living Context KPIs and Functional Performance
 
 - Criação de `PAS-001-CV-KPI-001 — KPIs e Desempenho Funcional do Contexto Vivo`, versão `1.0.0`.
