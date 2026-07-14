@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.3.3
+version: 1.3.4
 owner: Guivos
-last_updated: 2026-07-13
+last_updated: 2026-07-14
 ---
 
 # Matriz de Consolidação Canônica
@@ -56,6 +56,9 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Progresso | Refinar | Mudança relevante na direção do resultado, baseada na relação entre objetivo, critério, contexto e evidência |
 | Marco | Manter | Resultado intermediário significativo; não equivale a tarefa |
 | Conclusão | Refinar | Reconhecimento suficiente conforme natureza, critérios, evidências e percepção do participante |
+| Comando | Manter | Solicitação de ação; não representa fato reconhecido |
+| Proposta | Manter | Possível alteração ainda dependente de avaliação ou confirmação |
+| Evento funcional | Refinar | Fato reconhecido com origem, autoridade, temporalidade, finalidade e efeitos controlados |
 | Envelhecimento de objetivo | Manter | Redução de segurança sobre atualidade; não significa falsidade ou retirada |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
@@ -101,11 +104,17 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 |---|---|---|
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
-| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão e controle dos objetivos |
+| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão, controle e eventos dos objetivos |
 | Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
 | Ciclo de Vida dos Objetivos | Manter | PAS-001-OBJ-LIFECYCLE-001 1.0.0 define criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, conclusão, retirada e reativação |
 | Progresso e Conclusão dos Objetivos | Manter | PAS-001-OBJ-PROGRESS-001 1.0.0 define critérios, linhas de base, progresso, marcos, evidências, conclusão, contestação e reabertura |
 | Meus Objetivos | Manter | PAS-001-OBJ-VIEW-001 1.0.0 define portfólio, detalhamento, controles, explicações, revisões, proteção de objetivos sensíveis e histórico compreensível |
+| Eventos Funcionais de Objetivos | Manter | PAS-001-OBJ-EVENT-001 1.0.0 define estrutura, autoridade, temporalidade, contratos, propagação, correção, auditoria e falha segura |
+| Idempotência de Eventos | Manter | Reprocessamento do mesmo evento não pode produzir efeitos funcionais duplicados |
+| Causalidade de Eventos | Manter | Relação causal deve ser registrada quando houver base, sem invenção retroativa |
+| Correlação de Eventos | Manter | Eventos da mesma operação devem permanecer relacionados sem perda de significado próprio |
+| Evento Retroativo | Refinar | Preserva data do fato, conhecimento e reconhecimento sem reescrever o histórico |
+| Correção de Evento | Manter | Deve ocorrer por evento compensatório, preservando o registro original |
 | Objetivo do Participante | Manter | Exige autoria ou aceitação consciente e não pode ser ativado apenas por inferência ou interesse externo |
 | Objetivo Institucional | Refinar | Deve permanecer distinto do objetivo pessoal, com titularidade, finalidade, critérios e permissões próprios |
 | Objetivo Compartilhado | Refinar | Deve preservar contribuições, responsabilidades, permissões e possibilidade de saída de cada participante |
@@ -136,8 +145,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-A Capacidade 02 permanece concluída. As extensões `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0` e `PAS-001-OBJ-VIEW-001 1.0.0` avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+A Capacidade 02 permanece concluída. As extensões `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0`, `PAS-001-OBJ-VIEW-001 1.0.0` e `PAS-001-OBJ-EVENT-001 1.0.0` avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Detalhar os contratos dos eventos funcionais da **Capacidade 03 — Objetivos**, incluindo criação, confirmação, ativação, prioridade, revisão, progresso, evidências, conclusão, contestação e propagação, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Detalhar as integrações funcionais da **Capacidade 03 — Objetivos** com Contexto Vivo, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer e serviços especializados.
