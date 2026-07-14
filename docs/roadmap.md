@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.7.0
+version: 7.8.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida`.
-- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 60%.
-- **Extensões vigentes de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0` e `PAS-001-PP-VIEW-001 1.0.0`.
+- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 80%.
+- **Extensões vigentes de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0`, `PAS-001-PP-VIEW-001 1.0.0` e `PAS-001-PP-EVENT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os contratos dos eventos funcionais da `Capacidade 05 — Próximos Passos`.
+O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 05 — Próximos Passos`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -68,27 +68,31 @@ A Capacidade 04 permanece **Functionally complete**.
 
 `PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida completo, incluindo proposta, confirmação, prontidão, ativação, prioridade, execução, resultado, conclusão, recorrência, compartilhamento e falha segura.
 
-`PAS-001-PP-VIEW-001 1.0.0` consolida:
+`PAS-001-PP-VIEW-001 1.0.0` consolidou `Meus Próximos Passos`, o portfólio ativo, os cartões, as propostas, as alternativas, a prioridade, a prontidão, a agenda, os bloqueios, os resultados, a recorrência, a privacidade, a acessibilidade, a explicabilidade e os controles.
 
-- `Meus Próximos Passos` como superfície principal da capacidade;
-- visão geral, resumo linguístico e ausência legítima de movimentos;
-- portfólio ativo separado de propostas e possibilidades futuras;
-- cartões minimizados, títulos neutros e detalhamento progressivo;
-- prioridade explicável e separada de urgência, prazo, prontidão, esforço, risco e valor humano;
-- agenda funcional sem substituir o calendário geral;
-- dependências e bloqueios com limites de controle explícitos;
-- execução e resultado separados de progresso e conclusão;
-- conclusão sem resultado esperado e contestação de automações;
-- cancelamento, substituição, expiração, correção e reabertura;
-- recorrência sem punição, ranking ou julgamento de disciplina;
-- passos compartilhados, delegação e responsabilidades individualizadas;
-- compartilhamentos, revogação, privacidade visual e notificações discretas;
-- fila de atenção e prevenção de fadiga;
-- acessibilidade técnica e cognitiva;
-- consistência entre canais, explicabilidade, histórico e falha segura;
-- neutralidade comercial e controle do participante.
+`PAS-001-PP-EVENT-001 1.0.0` consolida:
 
-A capacidade está `In progress`, com progresso editorial de referência de `60%`.
+- comandos, propostas e fatos reconhecidos como conceitos distintos;
+- imutabilidade histórica e correção compensatória;
+- agregado, titular, ator, papel, autoridade, finalidade, sensibilidade e permissões;
+- temporalidades funcionais, retroatividade, correlação e causalidade;
+- versionamento, versão esperada e compatibilidade dos contratos;
+- identificação, proposição, declaração e confirmação;
+- confirmação condicionada e parcial;
+- reformulação, desdobramento e unificação;
+- ativação, prontidão, preparação, prioridade e sequenciamento;
+- dependências, bloqueios, pausas, retomadas e agenda;
+- início, execução, resultados e conclusão;
+- cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
+- recorrência, ocorrências e classificação sem julgamento;
+- responsabilidades, delegação e aceitação;
+- compartilhamento, revogação, propagação e recortes mínimos;
+- reavaliações dependentes sem transferência de decisão;
+- eventos de visão, conversa, leitura e interação sem alteração semântica indevida;
+- atomicidade, pendências, idempotência, duplicidade semântica, ordenação e concorrência;
+- retenção, minimização de logs, falha segura, recuperação, explicabilidade e auditoria.
+
+A capacidade está `In progress`, com progresso editorial de referência de `80%`.
 
 ## Progresso das capacidades do Journey
 
@@ -98,7 +102,7 @@ A capacidade está `In progress`, com progresso editorial de referência de `60%
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
-| 05 — Próximos Passos | In progress | 60% |
+| 05 — Próximos Passos | In progress | 80% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
@@ -148,21 +152,26 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não utilizar vulnerabilidade para indução comercial;
 - proteger passos sensíveis e informações de terceiros;
 - preservar acessibilidade, autonomia, explicabilidade e controle do participante;
+- não reescrever eventos funcionais reconhecidos;
+- não publicar evento antes da persistência funcional suficiente;
+- não duplicar efeitos por reprocessamento;
+- não concluir revogação antes da propagação efetiva;
+- não apresentar falha parcial como sucesso integral;
 - não iniciar o próximo produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar nos **contratos dos eventos funcionais dos Próximos Passos**.
+Retomar nas **integrações funcionais dos Próximos Passos**.
 
 Próxima entrega:
 
-1. comandos, propostas e fatos reconhecidos;
-2. estrutura comum, identidade, ator e autoridade;
-3. criação, confirmação, ativação e prontidão;
-4. prioridade, dependências e bloqueios;
-5. execução, resultados e conclusão;
-6. cancelamento, substituição e expiração;
-7. contestação, correção e recorrência;
-8. compartilhamento, revogação e propagação;
-9. idempotência, ordenação e versionamento;
-10. auditoria, retenção e falha segura.
+1. contrato comum das integrações;
+2. Captura de Contexto e Contexto Vivo;
+3. Objetivos e Eventos de Vida;
+4. Oportunidades Ativas e Intervenções Contextuais;
+5. Experiências e Evolução Contínua;
+6. Guivos Intelligence e Platform Layer;
+7. Guivos Business, Mall, Travel, Media e Ads;
+8. organizações, serviços profissionais e fontes externas;
+9. finalidade, minimização, identidade, autoridade, proveniência e temporalidade;
+10. pausa, revogação, falha, degradação controlada, explicabilidade e auditoria.
