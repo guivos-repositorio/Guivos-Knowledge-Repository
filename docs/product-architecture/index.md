@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -14,8 +14,6 @@ A Arquitetura de Produtos descreve como o Ecossistema Guivos organiza suas ofert
 Ela não substitui o Guivos Ecosystem Blueprint. O GEB explica como o ecossistema funciona; a Arquitetura de Produtos explica como a Guivos entrega valor por meio de componentes integrados.
 
 ## Estrutura oficial de componentes
-
-A estrutura institucional da Guivos reconhece os seguintes componentes oficiais:
 
 ```mermaid
 graph TD
@@ -86,11 +84,12 @@ As oito extensões normativas `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `I
 
 ### Capacidade 03 — Objetivos
 
-A extensão normativa ativa é:
+As extensões normativas ativas são:
 
-- `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções entre intenção, sonho, possibilidade, objetivo e prioridade, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais.
+- `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções conceituais, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais;
+- `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação.
 
-A extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
+A primeira extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
 ## Regras arquiteturais
 
@@ -104,6 +103,8 @@ A extensão substitui normativamente o estado `Planned` da linha da Capacidade 0
 8. Guivos Mall substitui Guivos Marketplace como nome oficial do produto comercial.
 9. “Comunidade Guivos”, “Guivos Podcast” e “Guivos Insights” não são nomes oficiais de produtos.
 10. Objetivos pertencem ao participante e não podem ser ativados apenas por inferência, comportamento ou interesse comercial.
+11. Confirmação, ativação, prioridade, atualidade e estado funcional são dimensões distintas do objetivo.
+12. Envelhecimento não representa falsidade, pausa não representa fracasso e bloqueio não representa incapacidade pessoal.
 
 ## Documentos do domínio
 
@@ -111,6 +112,7 @@ A extensão substitui normativamente o estado `Planned` da linha da Capacidade 0
 - [PAS-001 — Guivos Journey](pas-001-guivos-journey.md)
 - [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [PAS-001-OBJ-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Objetivos](pas-001-objetivos-fundamentos-iniciais.md)
+- [PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos](pas-001-objetivos-ciclo-de-vida.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
