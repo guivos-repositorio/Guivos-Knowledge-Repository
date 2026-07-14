@@ -10,7 +10,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação ativa:** PAS-001 — Guivos Journey 0.5.0
-- **Extensões normativas ativas:** PAS-001-CV-STATE-001 1.0.0, PAS-001-CV-UPDATE-001 1.0.0, PAS-001-CV-CONFLICT-001 1.0.0, PAS-001-CV-VIEW-001 1.0.0, PAS-001-CV-EVENT-001 1.0.0 e PAS-001-CV-INTEGRATION-001 1.0.0
+- **Extensões normativas ativas:** PAS-001-CV-STATE-001 1.0.0, PAS-001-CV-UPDATE-001 1.0.0, PAS-001-CV-CONFLICT-001 1.0.0, PAS-001-CV-VIEW-001 1.0.0, PAS-001-CV-EVENT-001 1.0.0, PAS-001-CV-INTEGRATION-001 1.0.0 e PAS-001-CV-KPI-001 1.0.0
 - **Capacidade ativa:** 02 — Contexto Vivo
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
@@ -82,15 +82,26 @@ A extensão normativa `PAS-001-CV-EVENT-001 1.0.0` consolidou:
 
 A extensão normativa `PAS-001-CV-INTEGRATION-001 1.0.0` consolidou:
 
-- objetivos, princípios, tipos e contratos das integrações funcionais;
-- finalidade explícita, minimização, autoridade limitada da fonte e falha segura;
-- integração com as nove capacidades do Journey;
-- integração com Guivos Intelligence, Platform Layer e serviços especializados;
-- classes, qualidade e transformação de fontes externas;
-- consentimento, pausa, revogação e degradação controlada;
-- explicabilidade, auditoria e prevenção de ciclos indevidos;
+- contratos funcionais com as capacidades 01 a 09 do Journey;
+- relações com Intelligence, Platform Layer e serviços especializados;
+- finalidade explícita, minimização e autoridade limitada das fontes;
+- identificação do participante e preservação de proveniência;
+- autorização, pausa, revogação e falha segura;
+- degradação controlada e sincronização divergente;
 - proteção de informações sensíveis e de terceiros;
-- consistência entre canais, busca, notificações e jornadas relacionadas.
+- prevenção de ciclos indevidos e perfis paralelos.
+
+A extensão normativa `PAS-001-CV-KPI-001 1.0.0` consolidou:
+
+- nove famílias de indicadores de qualidade e desempenho;
+- métricas de cobertura, atualidade, confiança, proveniência e atualização;
+- indicadores de conflitos, permissões, transparência e esforço;
+- métricas de integração, propagação e utilidade funcional;
+- controle de exclusões indevidas e incompatibilidades não detectadas;
+- indicadores de justiça, consistência e equilíbrio funcional;
+- guardrails críticos de tolerância zero;
+- níveis de desempenho, governança e painel de saúde;
+- possibilidade futura de Índice de Saúde do Contexto Vivo sem substituição dos indicadores componentes.
 
 ## Ponto exato de retomada
 
@@ -98,9 +109,8 @@ Retomar na `Capacidade 02 — Contexto Vivo`.
 
 Próxima entrega:
 
-- KPIs, indicadores de qualidade e critérios de desempenho funcional;
-- cenários ideal, alternativo e limite;
-- contrato da capacidade.
+- cenários funcionalmente ideal, alternativo e limite;
+- contrato final da capacidade.
 
 ## Product Engineering
 
@@ -130,6 +140,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Meu Contexto Hoje](docs/product-architecture/pas-001-meu-contexto-hoje.md)
 - [Eventos Funcionais do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-eventos-funcionais.md)
 - [Integrações Funcionais do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-integracoes-funcionais.md)
+- [KPIs e Desempenho do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-kpis-desempenho.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
