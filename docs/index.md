@@ -14,6 +14,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - `PAS-001-OBJ-LIFECYCLE-001 1.0.0` ativo;
 - `PAS-001-OBJ-PROGRESS-001 1.0.0` ativo;
 - `PAS-001-OBJ-VIEW-001 1.0.0` ativo;
+- `PAS-001-OBJ-EVENT-001 1.0.0` ativo;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -23,7 +24,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 Especificar funcionalmente a **Capacidade 03 — Objetivos**.
 
-Os fundamentos, o ciclo de vida, a estrutura de progresso e a visão `Meus Objetivos` já consolidam autoria, criação, confirmação, ativação, prioridade, conflitos, revisão, critérios, marcos, evidências, conclusão, portfólio, controles, explicações e proteção de objetivos sensíveis.
+Os fundamentos, ciclo de vida, progresso, visão e contratos de eventos já consolidam autoria, criação, confirmação, ativação, prioridade, revisão, critérios, evidências, conclusão, controles, histórico, causalidade, idempotência, propagação e falha segura.
 
 ## Acesso rápido
 
@@ -34,6 +35,7 @@ Os fundamentos, o ciclo de vida, a estrutura de progresso e a visão `Meus Objet
 - [Regras do Ciclo de Vida dos Objetivos](product-architecture/pas-001-objetivos-ciclo-de-vida.md)
 - [Critérios de Sucesso, Progresso, Evidências e Conclusão](product-architecture/pas-001-objetivos-progresso-e-conclusao.md)
 - [Comportamentos Funcionais de Meus Objetivos](product-architecture/pas-001-meus-objetivos.md)
+- [Contratos dos Eventos Funcionais de Objetivos](product-architecture/pas-001-objetivos-eventos-funcionais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -57,4 +59,4 @@ Os fundamentos, o ciclo de vida, a estrutura de progresso e a visão `Meus Objet
 
 ## Ponto de retomada
 
-Retomar na Capacidade 03, detalhando os contratos dos eventos funcionais de criação, confirmação, ativação, prioridade, revisão, progresso, evidências, conclusão, contestação e propagação.
+Retomar na Capacidade 03, detalhando suas integrações funcionais com as demais capacidades do Journey, Guivos Intelligence, Platform Layer e serviços especializados.
