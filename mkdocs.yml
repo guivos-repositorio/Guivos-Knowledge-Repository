@@ -122,6 +122,7 @@ nav:
       - PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais de Objetivos: product-architecture/pas-001-objetivos-integracoes-funcionais.md
       - PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final de Objetivos: product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md
       - PAS-001-EV-FOUNDATION-001 — Fundamentos de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-fundamentos-iniciais.md
+      - PAS-001-EV-LIFECYCLE-001 — Ciclo de Vida dos Eventos de Vida: product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
