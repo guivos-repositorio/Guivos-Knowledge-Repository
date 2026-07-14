@@ -2,6 +2,30 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.32.1 — Life Events Lifecycle Rules
+
+- Criação de `PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 04 do `PAS-001 — Guivos Journey`.
+- Definição do ciclo funcional desde sinal, identificação e proposição até confirmação, acompanhamento, encerramento, arquivamento ou reabertura.
+- Separação entre estado do evento e estado da informação conhecida pela Guivos.
+- Consolidação das regras de sinalização, acúmulo de sinais, formulação, declaração, associação incerta, fontes externas e inferências.
+- Formalização das modalidades de confirmação direta, institucional, assistida, automática autorizada e parcial.
+- Definição dos estados `Planejado`, `Confirmado`, `Iniciado`, `Em andamento`, `Concluído`, `Interrompido`, `Cancelado`, `Contestado`, `Corrigido`, `Arquivado` e `Reaberto`.
+- Consolidação das transições válidas, transições condicionadas, adiamento e eventos progressivos.
+- Formalização da temporalidade exata, aproximada, desconhecida, retroativa e de duração indeterminada.
+- Definição da relevância contextual, revisável e separada de intensidade emocional, gravidade universal ou valor comercial.
+- Consolidação dos impactos propostos e confirmados, intensidade, ambivalência, automações permitidas e efeitos proibidos.
+- Definição das relações, causalidade, correlação, cadeias, eventos compostos, simultaneidade, unificação e separação.
+- Formalização da correção, contestação, divergência entre fontes, privacidade visual e controles do participante.
+- Consolidação do encerramento, conclusão, impactos persistentes, arquivamento, reabertura e distinção entre novo evento e continuidade.
+- Definição da propagação por recortes mínimos para Contexto Vivo, Objetivos e capacidades consumidoras.
+- Registro das regras de idempotência, prevenção de ciclos, falha de propagação, falha segura e histórico reconstruível.
+- Atualização da Arquitetura de Produtos para `1.4.1` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `7.0.0`, do Knowledge Board para `7.1.0` e da Matriz de Consolidação Canônica para `1.4.1`.
+- Atualização do README e da página inicial do GKR.
+- Elevação do progresso editorial de referência da Capacidade 04 para `40%`.
+- Definição dos comportamentos funcionais da visualização e do controle dos Eventos de Vida como próximo ponto exato de retomada.
+
 ## 0.32.0 — Life Events Capability Foundation
 
 - Criação de `PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida`, versão `1.0.0`.
