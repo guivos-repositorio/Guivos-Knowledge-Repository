@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.2.6
+version: 1.2.7
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -97,7 +97,8 @@ As extensões normativas vigentes da Capacidade 02 são:
 - `PAS-001-CV-CONFLICT-001` — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos entre informações, fontes, dimensões e temporalidades;
 - `PAS-001-CV-VIEW-001` — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle do participante em `Meu Contexto Hoje`;
 - `PAS-001-CV-EVENT-001` — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais do Contexto Vivo;
-- `PAS-001-CV-INTEGRATION-001` — contratos, limites, permissões, falhas e explicabilidade das integrações com capacidades, camadas, serviços e fontes externas.
+- `PAS-001-CV-INTEGRATION-001` — contratos e limites funcionais entre o Contexto Vivo, capacidades internas, camadas do ecossistema e fontes externas;
+- `PAS-001-CV-KPI-001` — indicadores de qualidade, segurança, controle, operação e utilidade funcional, incluindo guardrails críticos de tolerância zero.
 
 ## Regras arquiteturais
 
@@ -121,6 +122,7 @@ As extensões normativas vigentes da Capacidade 02 são:
 - [PAS-001-CV-VIEW-001 — Meu Contexto Hoje](pas-001-meu-contexto-hoje.md)
 - [PAS-001-CV-EVENT-001 — Eventos Funcionais do Contexto Vivo](pas-001-contexto-vivo-eventos-funcionais.md)
 - [PAS-001-CV-INTEGRATION-001 — Integrações Funcionais do Contexto Vivo](pas-001-contexto-vivo-integracoes-funcionais.md)
+- [PAS-001-CV-KPI-001 — KPIs e Desempenho do Contexto Vivo](pas-001-contexto-vivo-kpis-desempenho.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
