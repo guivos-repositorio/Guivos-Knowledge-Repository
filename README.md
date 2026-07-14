@@ -10,9 +10,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidades concluídas:** 02 — Contexto Vivo e 03 — Objetivos
-- **Capacidade ativa:** 04 — Eventos de Vida
-- **Extensões normativas ativas de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0, PAS-001-EV-LIFECYCLE-001 1.0.0, PAS-001-EV-VIEW-001 1.0.0, PAS-001-EV-EVENT-001 1.0.0 e PAS-001-EV-INTEGRATION-001 1.0.0
+- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida
+- **Próxima capacidade:** 05 — Próximos Passos
+- **Contrato final de Eventos de Vida:** PAS-001-EV-CONTRACT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -39,7 +39,7 @@ A Capacidade 03 está **funcionalmente concluída**.
 
 ## Capacidade 04 — Eventos de Vida
 
-As extensões normativas vigentes consolidaram:
+As seis extensões normativas consolidaram:
 
 - pergunta central, objetivo funcional, valor entregue e singularidade;
 - definição de Evento de Vida e distinções conceituais;
@@ -53,34 +53,39 @@ As extensões normativas vigentes consolidaram:
 - linha do tempo, detalhamento, controles, privacidade visual e histórico;
 - contratos de comandos, propostas e eventos funcionais reconhecidos;
 - estrutura comum, temporalidades, correlação, causalidade e versionamento;
-- contratos de impactos, relações, correções, contestações e encerramento;
-- permissões, revogações, propagação e recomposição de recortes;
-- idempotência, ordenação, concorrência, auditoria e falha segura;
-- contrato comum das integrações, identidade, associação, proveniência e qualidade;
-- integrações com todas as capacidades do Journey, Guivos Intelligence e Platform Layer;
-- integrações com Business, Mall, Travel, Media, Ads, serviços especializados e fontes externas;
-- sincronização, divergência, pausa, revogação, degradação controlada e recuperação;
-- neutralidade comercial, minimização e proteção de informações sensíveis e de terceiros.
+- permissões, revogações, propagação, idempotência, ordenação e falha segura;
+- integrações com capacidades, produtos, serviços especializados e fontes externas;
+- sessenta KPIs em treze famílias;
+- dezoito guardrails de tolerância zero;
+- baseline, painel de saúde e níveis de desempenho;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão, lacunas bloqueantes e contrato final.
 
-A Capacidade 04 permanece **In progress**, com progresso editorial de referência de **90%**.
+O `PAS-001-EV-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da Capacidade 04 na seção 7 do `PAS-001 0.5.0`.
+
+A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de referência de **100%**.
 
 ## Ponto exato de retomada
 
-Retomar na `Capacidade 04 — Eventos de Vida`.
+Retomar na `Capacidade 05 — Próximos Passos`.
 
 Próxima entrega:
 
-- KPIs e famílias de indicadores;
-- guardrails obrigatórios de tolerância zero;
-- painel de saúde e níveis de desempenho funcional;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão funcional;
-- contrato final da capacidade;
-- decisão sobre conclusão da Capacidade 04 e ativação da Capacidade 05 — Próximos Passos.
+- pergunta central, objetivo funcional e valor entregue;
+- singularidade e princípios;
+- definição de Próximo Passo;
+- distinções entre Próximo Passo, tarefa, objetivo, oportunidade, intervenção, compromisso e recomendação;
+- titularidade, responsabilidade, tipos, origem e autoridade;
+- estados iniciais, prioridade operacional, temporalidade e dependências;
+- relações com Contexto Vivo, Objetivos e Eventos de Vida;
+- limites da Guivos Intelligence;
+- controle do participante.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
+
+A Capacidade 05 permanece documentalmente `Planned` até a criação de sua primeira extensão normativa.
 
 ## Capacidades do Journey
 
@@ -89,8 +94,8 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 | 01 — Captura de Contexto | Substantially complete |
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
-| 04 — Eventos de Vida | In progress |
-| 05 — Próximos Passos | Planned |
+| 04 — Eventos de Vida | Functionally complete |
+| 05 — Próximos Passos | Planned — próxima frente |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -107,6 +112,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Visualização e Controle dos Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-visualizacao-controle.md)
 - [Contratos dos Eventos Funcionais de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md)
 - [Integrações Funcionais da Capacidade de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md)
+- [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
