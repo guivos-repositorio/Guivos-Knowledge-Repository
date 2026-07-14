@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 7.3.0
+version: 7.4.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -26,6 +26,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-EV-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida dos Eventos de Vida |
 | PAS-001-EV-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle dos Eventos de Vida |
 | PAS-001-EV-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais dos Eventos de Vida |
+| PAS-001-EV-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais dos Eventos de Vida |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -41,13 +42,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidades concluídas | `02 — Contexto Vivo` e `03 — Objetivos` |
 | Capacidade ativa | `04 — Eventos de Vida` |
-| Extensões normativas ativas | `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0` e `PAS-001-EV-EVENT-001 1.0.0` |
-| Progresso editorial de referência | `80%` |
+| Extensões normativas ativas | `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0`, `PAS-001-EV-EVENT-001 1.0.0` e `PAS-001-EV-INTEGRATION-001 1.0.0` |
+| Progresso editorial de referência | `90%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Definir as integrações funcionais da Capacidade de Eventos de Vida |
+| Foco imediato | Consolidar KPIs, guardrails, cenários, critérios de conclusão e contrato final da Capacidade de Eventos de Vida |
 
 ## Capacidades do Journey
 
@@ -56,7 +57,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
-| 04 — Eventos de Vida | In progress | Fundamentos, ciclo de vida, visão e contratos de eventos consolidados; integrações são a frente ativa |
+| 04 — Eventos de Vida | In progress | Fundamentos, ciclo de vida, visão, eventos e integrações consolidados; contrato final é a frente ativa |
 | 05 — Próximos Passos | Planned | — |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
@@ -129,17 +130,35 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 - retenção, logs, falhas de processamento, recuperação e auditoria;
 - responsabilidades dos produtores, consumidores, Guivos Intelligence e Platform Layer.
 
+### `PAS-001-EV-INTEGRATION-001 1.0.0`
+
+- finalidade explícita, minimização, autoridade limitada, titularidade preservada e neutralidade comercial;
+- tipos, modos e contrato comum das integrações;
+- identidade, associação, titular, ator, fonte, afetado e consumidor;
+- proveniência, qualidade, confiança, transformações e temporalidades;
+- sincronização, prevenção de ciclos, divergência e hierarquia não absoluta das fontes;
+- integrações com Captura de Contexto, Contexto Vivo e Objetivos;
+- integrações com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
+- integrações com Experiências e Evolução Contínua;
+- papel e limites da Guivos Intelligence e responsabilidades da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- fontes profissionais, educacionais, de saúde, financeiras, calendários, localização, esportes, sociais, religiosas, jurídicas e públicas;
+- integrações pessoais e temporárias, pausa, revogação e fatos históricos;
+- degradação controlada, indisponibilidade, informação incompleta, retroatividade, correção e recuperação;
+- eventos compartilhados, proteção de terceiros, explicabilidade, auditoria, retenção e métricas sistêmicas.
+
 ## Conceitos internos preservados
 
 | Conceito | Estado |
 |---|---|
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
-| Eventos de Vida | In progress — 80% |
+| Eventos de Vida | In progress — 90% |
 | Fundamentos Iniciais de Eventos de Vida | Normative 1.0.0 |
 | Ciclo de Vida dos Eventos de Vida | Normative 1.0.0 |
 | Visualização e Controle dos Eventos de Vida | Normative 1.0.0 |
 | Contratos dos Eventos Funcionais de Eventos de Vida | Normative 1.0.0 |
+| Integrações Funcionais de Eventos de Vida | Normative 1.0.0 |
 | Estado do evento | Condition of the real-world change |
 | Estado da informação | Confidence and recognition condition in Guivos |
 | Comando | Solicitação; não representa fato reconhecido |
@@ -155,6 +174,7 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 | Contestação | Limits critical uses until treatment |
 | Arquivamento | Removes daily operation without erasing history or active impacts |
 | Propagação | Sends minimum authorized recorts to consumer capabilities |
+| Integração funcional | Intercâmbio governado por finalidade, autoridade, minimização e responsabilidade própria do consumidor |
 | Idempotência | Reprocessing cannot duplicate events or effects |
 | Ordenação | Preserves occurrence, knowledge and processing dependencies |
 | Guivos Intelligence | Produces signals, hypotheses and proposals, not definitive personal events |
@@ -173,8 +193,8 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 7.2.0 |
-| Knowledge Board | 7.3.0 |
+| Roadmap | 7.3.0 |
+| Knowledge Board | 7.4.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -183,6 +203,7 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 | PAS-001-EV-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-EV-VIEW-001 | Active 1.0.0 |
 | PAS-001-EV-EVENT-001 | Active 1.0.0 |
+| PAS-001-EV-INTEGRATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -192,4 +213,4 @@ O contrato final consolidou 62 KPIs, 13 famílias de indicadores, 12 guardrails 
 
 ## Próxima atividade
 
-Continuar a **Capacidade 04 — Eventos de Vida**, definindo suas integrações funcionais com Captura de Contexto, Contexto Vivo, Objetivos, Próximos Passos, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.
+Continuar a **Capacidade 04 — Eventos de Vida**, consolidando KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final, com decisão sobre a ativação da Capacidade 05 — Próximos Passos.
