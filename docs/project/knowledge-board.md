@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 7.5.0
+version: 7.6.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -22,12 +22,8 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final do Contexto Vivo |
 | PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final da Capacidade de Objetivos |
-| PAS-001-EV-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Eventos de Vida |
-| PAS-001-EV-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida dos Eventos de Vida |
-| PAS-001-EV-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle dos Eventos de Vida |
-| PAS-001-EV-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais dos Eventos de Vida |
-| PAS-001-EV-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais dos Eventos de Vida |
 | PAS-001-EV-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final de Eventos de Vida |
+| PAS-001-PP-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Próximos Passos |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -42,15 +38,15 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida` |
-| Próxima capacidade | `05 — Próximos Passos` |
-| Estado da próxima capacidade | `Planned` até a primeira extensão normativa |
-| Contrato final vigente | `PAS-001-EV-CONTRACT-001 1.0.0` |
-| Progresso editorial de Eventos de Vida | `100%` |
+| Capacidade ativa | `05 — Próximos Passos` |
+| Estado da capacidade ativa | `In progress` |
+| Extensão normativa vigente | `PAS-001-PP-FOUNDATION-001 1.0.0` |
+| Progresso editorial de Próximos Passos | `20%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Definir os fundamentos iniciais da Capacidade 05 — Próximos Passos |
+| Foco imediato | Consolidar o ciclo de vida dos Próximos Passos |
 
 ## Capacidades do Journey
 
@@ -60,7 +56,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
-| 05 — Próximos Passos | Planned — próxima frente | Ativação normativa pendente da primeira extensão |
+| 05 — Próximos Passos | In progress — 20% | Fundamentos iniciais consolidados; ciclo de vida é a próxima entrega |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
@@ -84,58 +80,26 @@ A Capacidade 04 está funcionalmente concluída pelas extensões `FOUNDATION`, `
 
 O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails de tolerância zero, baseline, painel de saúde, níveis de desempenho, cenários e critérios de conclusão.
 
-## Consolidação da Capacidade 04 — Eventos de Vida
+## Consolidação da Capacidade 05 — Próximos Passos
 
-### Fundamentos
+### Fundamentos iniciais
 
-- Evento de Vida como mudança relevante situada no tempo;
-- distinções entre evento, estado, atividade, experiência, sinal, evidência, objetivo e Próximo Passo;
-- tipos, titularidade, origem, autoridade, temporalidade e sensibilidade;
-- responsabilidades, limites, entradas, admissão e controle do participante.
-
-### Ciclo de vida
-
-- identificação, proposição, declaração e confirmação;
-- estados e transições separados do estado da informação;
-- eventos planejados, progressivos e retroativos;
-- relevância, impactos, relações, correção, contestação, arquivamento e reabertura;
-- propagação, idempotência e falha segura.
-
-### Visualização e controle
-
-- visão geral, linha do tempo, filtros, cartões e detalhamento;
-- separação visual de sinais, propostas, planejamentos e ocorrências;
-- impactos propostos, confirmados, contestados e persistentes;
-- privacidade visual, títulos neutros, acessibilidade e consistência entre canais;
-- ações de confirmação, atualização, cancelamento, conclusão, correção e contestação.
-
-### Eventos funcionais
-
-- comando, proposta e fato reconhecido como conceitos distintos;
-- imutabilidade histórica e correção compensatória;
-- titular, ator, fonte, autoridade e temporalidades;
-- contratos de eventos, impactos, relações, permissões e revogações;
-- ordenação, concorrência, versionamento, retenção, auditoria e recuperação.
-
-### Integrações
-
-- finalidade explícita, minimização, titularidade preservada e autoridade limitada;
-- identidade, proveniência, qualidade, transformações e sincronização;
-- integrações com capacidades, produtos, serviços especializados e fontes externas;
-- pausa, revogação, divergência, retroatividade, degradação controlada e recuperação;
-- proteção de terceiros e neutralidade comercial.
-
-### KPIs, guardrails e contrato final
-
-- 60 KPIs organizados em 13 famílias;
-- 18 guardrails obrigatórios de tolerância zero;
-- baseline real antes de metas numéricas permanentes;
-- painel de saúde sem pontuação de vida ou valor humano;
-- níveis de desempenho `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`;
-- cenários ideal, alternativo e limite;
-- lacunas bloqueantes e não bloqueantes;
-- contrato final de propósito, titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas, explicabilidade e indicadores;
-- reabertura somente por lacuna crítica, evidência operacional, incidente, contradição, alteração regulatória ou decisão formal.
+- Próximo Passo como decisão ou hipótese de movimento delimitada e contextual;
+- transformação de direção, contexto e intenção em movimento possível;
+- limiar de acionabilidade sem exigir plano completo;
+- natureza contextual do termo “próximo” e multiplicidade legítima de passos;
+- distinções entre Próximo Passo, objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
+- titularidade e papéis de proponente, decisor, responsável, executor, apoiador, aprovador, fonte, beneficiário e afetado;
+- origens e autoridade das fontes, com Guivos Intelligence limitada a hipóteses e propostas;
+- tipos de descoberta, decisão, preparação, execução, conexão, aprendizado, verificação, manutenção, recuperação, adaptação, coordenação, delegação, espera e encerramento;
+- estados `Proposto`, `Confirmado`, `Pronto`, `Agendado`, `Em andamento`, `Bloqueado`, `Pausado`, `Concluído`, `Cancelado`, `Substituído`, `Expirado`, `Contestado`, `Corrigido` e `Arquivado`;
+- separação entre estado funcional e estado da informação;
+- prioridade operacional distinta de urgência, importância, prontidão, esforço, valor humano e preferência comercial;
+- sequenciamento, dependências, bloqueios, temporalidade, esforço, risco, segurança e sensibilidade;
+- entradas, requisitos de admissão, estrutura, saídas, fluxo e eventos iniciais;
+- relações com Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
+- controle do participante e ausência legítima de Próximo Passo;
+- proibição de listas infinitas, produtividade coercitiva, responsabilidade silenciosa e exploração comercial.
 
 ## Conceitos internos preservados
 
@@ -144,32 +108,23 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
-| Próximos Passos | Planned — próxima frente |
-| Fundamentos Iniciais de Eventos de Vida | Normative 1.0.0 |
-| Ciclo de Vida dos Eventos de Vida | Normative 1.0.0 |
-| Visualização e Controle dos Eventos de Vida | Normative 1.0.0 |
-| Contratos dos Eventos Funcionais de Eventos de Vida | Normative 1.0.0 |
-| Integrações Funcionais de Eventos de Vida | Normative 1.0.0 |
-| Contrato Final de Eventos de Vida | Normative 1.0.0 |
-| Estado do evento | Condição da mudança real |
-| Estado da informação | Condição de confiança e reconhecimento na Guivos |
-| Comando | Solicitação; não representa fato reconhecido |
-| Proposta | Possibilidade apresentada para avaliação |
-| Evento funcional | Fato reconhecido, versionado e imutável |
-| Sinal | Indicação possível; não é evento confirmado |
-| Evento planejado | Mudança futura reconhecida sem ser tratada como ocorrida |
-| Relevância de evento | Materialidade contextual, explicável e revisável |
-| Impacto de Evento de Vida | Efeito proposto ou confirmado com ciclo próprio |
-| Evento composto | Organiza transição ampla sem apagar componentes |
-| Correção compensatória | Novo evento que preserva o registro anterior e recompõe efeitos |
-| Contestação | Limita usos críticos até tratamento |
-| Arquivamento | Retira da operação cotidiana sem apagar histórico ou impactos ativos |
-| Propagação | Envia recortes mínimos autorizados às capacidades consumidoras |
-| Integração funcional | Intercâmbio governado por finalidade, autoridade e minimização |
-| Idempotência | Reprocessamento não pode duplicar eventos ou efeitos |
-| Guardrail de tolerância zero | Violação crítica que prevalece sobre médias agregadas |
-| Guivos Intelligence | Produz sinais, hipóteses e propostas, não eventos pessoais definitivos |
-| Platform Layer | Aplica contratos técnicos sem redefinir significado |
+| Próximos Passos | In progress — 20% |
+| Fundamentos Iniciais de Próximos Passos | Normative 1.0.0 |
+| Próximo Passo proposto | Hipótese de movimento ainda não assumida |
+| Próximo Passo confirmado | Decisão reconhecida sem significar início de execução |
+| Titular | Participante cuja jornada é atendida pelo passo |
+| Proponente | Fonte que sugere o movimento |
+| Decisor | Autoridade que pode confirmá-lo |
+| Responsável | Quem coordena sua realização |
+| Executor | Quem realiza uma ou mais ações |
+| Prioridade operacional | Ordem contextual de atenção ou execução |
+| Dependência | Condição necessária para o passo |
+| Bloqueio | Impedimento atual que não representa incapacidade pessoal |
+| Espera funcional | Movimento legítimo condicionado a período ou gatilho de revisão |
+| Oportunidade | Meio possível; não equivale a Próximo Passo |
+| Recomendação | Sugestão; não equivale a decisão |
+| Guivos Intelligence | Produz possibilidades, alternativas e explicações, não decisões assumidas |
+| Platform Layer | Sustenta contratos técnicos sem redefinir semântica funcional |
 | Pessoa | Categoria oficial de participante |
 | Organização | Categoria oficial de participante |
 | Coletivo | Categoria oficial de participante |
@@ -184,18 +139,14 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 7.4.0 |
-| Knowledge Board | 7.5.0 |
+| Roadmap | 7.5.0 |
+| Knowledge Board | 7.6.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 |
-| PAS-001-EV-FOUNDATION-001 | Active 1.0.0 |
-| PAS-001-EV-LIFECYCLE-001 | Active 1.0.0 |
-| PAS-001-EV-VIEW-001 | Active 1.0.0 |
-| PAS-001-EV-EVENT-001 | Active 1.0.0 |
-| PAS-001-EV-INTEGRATION-001 | Active 1.0.0 |
 | PAS-001-EV-CONTRACT-001 | Active 1.0.0 |
+| PAS-001-PP-FOUNDATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -205,4 +156,4 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 ## Próxima atividade
 
-Iniciar a **Capacidade 05 — Próximos Passos**, definindo pergunta central, objetivo funcional, valor entregue, singularidade, princípios, definição, distinções, titularidade, tipos, origem, autoridade, estados, prioridade operacional, temporalidade, dependências, relações com Contexto Vivo, Objetivos e Eventos de Vida, limites da Guivos Intelligence e controle do participante.
+Consolidar o **ciclo de vida dos Próximos Passos**, incluindo criação, proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento e propagação.
