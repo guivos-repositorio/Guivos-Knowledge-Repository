@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.2.8
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -29,29 +29,23 @@ graph TD
     E --> A[Guivos Ads]
 ```
 
-Essa estrutura é útil para apresentação institucional e organização documental.
-
-Entretanto, para fins de construção, operação e evolução funcional da plataforma, a Guivos passa a adotar também a `GLPA-001 — Guivos Layered Product Architecture`.
+Para fins de construção, operação e evolução funcional, a Guivos adota também a `GLPA-001 — Guivos Layered Product Architecture`.
 
 ## Arquitetura funcional em camadas
 
 ```mermaid
 graph TD
     G[Guivos]
-
     G --> EL[Experience Layer]
     EL --> J[Guivos Journey]
-
     G --> IL[Intelligence Layer]
     IL --> I[Guivos Intelligence]
-
     G --> SL[Service Layer]
     SL --> B[Guivos Business]
     SL --> M[Guivos Mall]
     SL --> T[Guivos Travel]
     SL --> MD[Guivos Media]
     SL --> A[Guivos Ads]
-
     G --> PL[Platform Layer]
     PL --> API[API]
     PL --> GR[Graph]
@@ -65,10 +59,6 @@ graph TD
 
 O Ecossistema Guivos está acima de todos os componentes.
 
-Os componentes compartilham identidade, participantes, conhecimento, inteligência, infraestrutura e governança, mas cada um possui responsabilidade própria.
-
-A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
-
 - **Guivos Journey** é a Experience Layer;
 - **Guivos Intelligence** é a Intelligence Layer;
 - **Guivos Business, Mall, Travel, Media e Ads** são Service Layers;
@@ -81,7 +71,7 @@ A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
 | Guivos Journey | Experience Layer | Orquestrar a experiência unificada do participante | Consolidado |
 | Guivos Intelligence | Intelligence Layer | Transformar dados, conhecimento e contexto em inteligência aplicada | Consolidado |
 | Guivos Business | Service Layer | Entregar soluções para organizações | Consolidado |
-| Guivos Mall | Service Layer | Comercializar produtos, serviços, gift cards, assinaturas e outros ativos com curadoria | Consolidado |
+| Guivos Mall | Service Layer | Comercializar produtos e serviços de múltiplos fornecedores | Consolidado |
 | Guivos Travel | Service Layer | Organizar viagens e experiências | Consolidado |
 | Guivos Media | Service Layer | Produzir e distribuir conteúdo editorial e institucional | Consolidado |
 | Guivos Ads | Service Layer | Operar publicidade e mídia patrocinada | Consolidado |
@@ -90,20 +80,17 @@ A GLPA estabelece que os componentes não possuem a mesma natureza funcional:
 
 O `PAS-001 — Guivos Journey 0.5.0` é a especificação-base da Experience Layer.
 
-As extensões normativas da Capacidade 02 são:
+### Capacidade 02 — Contexto Vivo
 
-- `PAS-001-CV-STATE-001` — estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução;
-- `PAS-001-CV-UPDATE-001` — unidade de atualização, gatilhos, temporalidade, envelhecimento, confirmação proporcional, permissões e propagação controlada;
-- `PAS-001-CV-CONFLICT-001` — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos;
-- `PAS-001-CV-VIEW-001` — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle em `Meu Contexto Hoje`;
-- `PAS-001-CV-EVENT-001` — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais;
-- `PAS-001-CV-INTEGRATION-001` — contratos e limites entre o Contexto Vivo, capacidades internas, camadas do ecossistema e fontes externas;
-- `PAS-001-CV-KPI-001` — indicadores de qualidade, segurança, controle, operação e utilidade funcional, incluindo guardrails críticos;
-- `PAS-001-CV-CONTRACT-001` — cenários ideal, alternativo e limite e contrato final da Capacidade 02.
+As oito extensões normativas `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `INTEGRATION`, `KPI` e `CONTRACT`, todas em `1.0.0`, concluíram funcionalmente a Capacidade 02.
 
-O `PAS-001-CV-CONTRACT-001 1.0.0` substitui normativamente o estado e o ponto de retomada das seções 44 e 45 do `PAS-001 0.5.0`.
+### Capacidade 03 — Objetivos
 
-A Capacidade 02 — Contexto Vivo está **funcionalmente concluída**. A Capacidade 03 — Objetivos é a frente ativa do Product Engineering.
+A extensão normativa ativa é:
+
+- `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções entre intenção, sonho, possibilidade, objetivo e prioridade, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais.
+
+A extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
 ## Regras arquiteturais
 
@@ -111,24 +98,19 @@ A Capacidade 02 — Contexto Vivo está **funcionalmente concluída**. A Capacid
 2. Um componente deve possuir responsabilidade principal clara.
 3. Funcionalidades compartilhadas devem utilizar capacidades comuns do ecossistema.
 4. Sobreposições devem ser resolvidas pela responsabilidade predominante.
-5. Guivos Journey é a camada de experiência e não deve absorver integralmente responsabilidades dos serviços especializados.
-6. Guivos Intelligence é camada transversal e não deve pertencer exclusivamente ao Journey.
-7. Business, Mall, Travel, Media e Ads devem preservar responsabilidades especializadas.
+5. Guivos Journey não deve absorver integralmente responsabilidades dos serviços especializados.
+6. Guivos Intelligence é camada transversal.
+7. Business, Mall, Travel, Media e Ads preservam responsabilidades especializadas.
 8. Guivos Mall substitui Guivos Marketplace como nome oficial do produto comercial.
 9. “Comunidade Guivos”, “Guivos Podcast” e “Guivos Insights” não são nomes oficiais de produtos.
+10. Objetivos pertencem ao participante e não podem ser ativados apenas por inferência, comportamento ou interesse comercial.
 
 ## Documentos do domínio
 
 - [GLPA-001 — Guivos Layered Product Architecture](layered-product-architecture.md)
 - [PAS-001 — Guivos Journey](pas-001-guivos-journey.md)
-- [PAS-001-CV-STATE-001 — Estados Funcionais do Contexto Vivo](pas-001-contexto-vivo-estados-dimensionais.md)
-- [PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento do Contexto Vivo](pas-001-contexto-vivo-atualizacao-envelhecimento.md)
-- [PAS-001-CV-CONFLICT-001 — Resolução de Conflitos do Contexto Vivo](pas-001-contexto-vivo-resolucao-conflitos.md)
-- [PAS-001-CV-VIEW-001 — Meu Contexto Hoje](pas-001-meu-contexto-hoje.md)
-- [PAS-001-CV-EVENT-001 — Eventos Funcionais do Contexto Vivo](pas-001-contexto-vivo-eventos-funcionais.md)
-- [PAS-001-CV-INTEGRATION-001 — Integrações Funcionais do Contexto Vivo](pas-001-contexto-vivo-integracoes-funcionais.md)
-- [PAS-001-CV-KPI-001 — KPIs e Desempenho do Contexto Vivo](pas-001-contexto-vivo-kpis-desempenho.md)
 - [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
+- [PAS-001-OBJ-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Objetivos](pas-001-objetivos-fundamentos-iniciais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
