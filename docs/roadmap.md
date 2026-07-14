@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.5.0
+version: 7.6.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida`.
-- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 20%.
-- **Fundamentos de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0`.
+- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 40%.
+- **Extensões vigentes de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0` e `PAS-001-PP-LIFECYCLE-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar o ciclo de vida da `Capacidade 05 — Próximos Passos`.
+O próximo trabalho deverá consolidar a visualização e o controle da `Capacidade 05 — Próximos Passos`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -64,25 +64,29 @@ A Capacidade 04 permanece **Functionally complete**.
 
 ### Capacidade 05 — Próximos Passos
 
-`PAS-001-PP-FOUNDATION-001 1.0.0` é a primeira extensão normativa da capacidade e substitui o estado `Planned` da linha da Capacidade 05 no `PAS-001 0.5.0` por `In progress`.
+`PAS-001-PP-FOUNDATION-001 1.0.0` consolidou os fundamentos iniciais e substituiu o estado `Planned` da linha da Capacidade 05 no `PAS-001 0.5.0` por `In progress`.
 
-Os fundamentos consolidam:
+`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida:
 
-- pergunta central, objetivo funcional, valor e singularidade;
-- Próximo Passo como decisão ou hipótese de movimento contextual;
-- acionabilidade e natureza contextual do termo “próximo”;
-- distinções entre Próximo Passo, objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
-- titularidade, papéis funcionais, responsabilidade, origem e autoridade;
-- tipos e classificações funcionais;
-- estados iniciais e separação entre estado funcional e estado da informação;
-- prioridade operacional, sequenciamento, dependências e bloqueios;
-- temporalidade, esforço, risco, segurança e sensibilidade;
-- entradas, estrutura, saídas e fluxo funcional inicial;
-- relações com Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades, Intervenções, Experiências e Evolução Contínua;
-- limites da Guivos Intelligence e da Platform Layer;
-- controle do participante e ausência legítima de Próximo Passo.
+- identificação de possibilidade, formulação, proposição e avaliação;
+- confirmação proporcional, condicionada, parcial e compartilhada;
+- rejeição, reformulação, desdobramento e unificação;
+- prontidão e ativação operacional como dimensões distintas;
+- limites contextuais do portfólio ativo;
+- prioridade, repriorização e sequenciamento;
+- dependências, bloqueios, desbloqueios e alternativas;
+- pausa, retomada, agendamento, prazo e adiamento;
+- início, execução e acompanhamento proporcional;
+- resultado imediato separado de progresso e conclusão;
+- conclusão, cancelamento, substituição e expiração;
+- contestação, correção, reabertura e arquivamento;
+- recorrência e ocorrências sem julgamento de disciplina ou evolução;
+- passos compartilhados, delegação e responsabilidades individualizadas;
+- compartilhamento, revogação e propagação por recortes mínimos;
+- prevenção de ciclos, duplicidade, idempotência, ordenação e concorrência;
+- retroatividade, falha segura, sincronização, privacidade e prevenção de fadiga.
 
-A capacidade está `In progress`, com progresso editorial de referência de `20%`.
+A capacidade está `In progress`, com progresso editorial de referência de `40%`.
 
 ## Progresso das capacidades do Journey
 
@@ -92,7 +96,7 @@ A capacidade está `In progress`, com progresso editorial de referência de `20%
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
-| 05 — Próximos Passos | In progress | 20% |
+| 05 — Próximos Passos | In progress | 40% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
@@ -128,15 +132,21 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
 - não reabrir as Capacidades 02, 03 ou 04 sem fundamento formal;
 - não reduzir Próximo Passo a objetivo, tarefa, oportunidade, recomendação ou compromisso;
-- não apresentar proposta como decisão assumida;
-- não apresentar confirmação como execução iniciada;
+- não apresentar possibilidade como proposta, proposta como decisão ou confirmação como execução;
+- não confundir ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão;
 - não criar listas infinitas ou ações artificiais para aumentar engajamento;
 - não impor produtividade, prioridade pessoal ou responsabilidade silenciosa;
 - não concluir objetivo automaticamente pela conclusão de um passo;
 - não utilizar oportunidade, receita, patrocínio ou publicidade para determinar prioridade;
 - não tratar bloqueio, pausa, cancelamento ou expiração como incapacidade ou fracasso;
 - não fabricar prazos ou precisão temporal;
-- não transformar atividade observada em conclusão automática;
+- não transformar prazo vencido em conclusão, cancelamento ou abandono;
+- não transformar atividade observada, compra, localização ou acesso a conteúdo em conclusão automática;
+- não iniciar execução automaticamente após desbloqueio;
+- não tratar recorrência como prova de hábito, aderência ou evolução;
+- não atribuir responsabilidade compartilhada sem confirmação individual;
+- não duplicar passos, prioridades, agendamentos, conclusões, notificações ou responsabilidades;
+- não declarar sucesso integral em falha parcial;
 - não utilizar vulnerabilidade para indução comercial;
 - proteger passos sensíveis e informações de terceiros;
 - preservar autonomia, explicabilidade e controle do participante;
@@ -144,17 +154,19 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar no **ciclo de vida dos Próximos Passos**.
+Retomar na **visualização e no controle dos Próximos Passos**.
 
 Próxima entrega:
 
-1. criação e proposição;
-2. confirmação, prontidão e ativação;
-3. prioridade e sequenciamento;
-4. dependências e bloqueios;
-5. pausa, execução e conclusão;
-6. cancelamento, substituição e expiração;
-7. contestação e correção;
-8. recorrência;
-9. compartilhamento;
-10. propagação.
+1. visão geral e portfólio ativo;
+2. cartões e detalhamento;
+3. propostas e alternativas;
+4. prioridade e prontidão;
+5. agenda, temporalidade e recorrência;
+6. dependências e bloqueios;
+7. execução e resultados;
+8. passos compartilhados e delegação;
+9. histórico e auditoria;
+10. privacidade e acessibilidade;
+11. explicabilidade;
+12. ações do participante.
