@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.2 — Objectives Success, Progress and Completion
+
+- Criação de `PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão dos Objetivos`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Definição da estrutura, tipos, origem, confirmação, revisão e relações dos critérios de sucesso.
+- Formalização da distinção entre critério pessoal e institucional, da possibilidade de objetivos sem critério formal e dos limites para pesos e pontuações.
+- Consolidação das linhas de base, horizontes de avaliação, modelos e estados funcionais de progresso.
+- Registro dos limites para percentuais, da diferença entre atividade e progresso e das regras para progresso declarado, observado e inferido.
+- Definição do tratamento da ausência de atividade, redução de progresso, retrocesso e objetivos de manutenção, exploração e natureza qualitativa.
+- Consolidação da definição, tipos, criação, alcance, dispensa e contestação de marcos.
+- Formalização dos tipos, estrutura, força, convergência, conflito, ausência, sensibilidade e autoridade das evidências.
+- Definição das relações com Experiências e Evolução Contínua.
+- Consolidação das condições e formas de conclusão, incluindo conclusão declarada, institucional, sugerida, parcial, exploratória e de ciclo.
+- Registro dos limites para conclusão automática, da autoridade central do participante, da contestação, reabertura, efeitos e explicabilidade.
+- Atualização da Arquitetura de Produtos para `1.3.2` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.4.0`, do Knowledge Board para `6.5.0` e da Matriz de Consolidação Canônica para `1.3.2`.
+- Atualização do README e da página inicial do GKR.
+- Avanço editorial da Capacidade 03 para `60%`.
+- Definição da visão funcional `Meus Objetivos` como próximo ponto exato de retomada.
+
 ## 0.31.1 — Objectives Lifecycle Rules
 
 - Criação de `PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos`, versão `1.0.0`.
@@ -192,7 +212,7 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 - Refinamento da apresentação pública com exemplos concretos de saúde, esportes, espiritualidade, grupos, movimentos e voluntariado.
 - Inclusão de perguntas sobre resultado desejado, situação de primeiro uso, expectativas sobre a plataforma e resultado concreto de valor.
 - Remoção da confiança operacional, frequência imaginada de uso, motivos hipotéticos de retorno e NPS conceitual da primeira pesquisa.
-- Atualização do `VAL-003` para `1.1.0`, `VAL-004` para `1.2.0` e `VAL-008` para `1.0.1`.
+- Atualização do `VAL-003` para `1.1.0`, `VAL-004` para `1.2.0` e do `VAL-008` para `1.0.1`.
 - Atualização do `VAL-006 — Dashboard de Indicadores` para `1.2.0`.
 - Redefinição do IGV com problema, compreensão, relevância, contribuição, intenção e interesse na primeira experiência.
 - Atualização do `VAL-007 — Critérios de Decisão` para `1.2.0`, removendo confiança e recorrência dos gates da primeira rodada.
