@@ -2,6 +2,31 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.32.3 — Life Events Functional Event Contracts
+
+- Criação de `PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Eventos de Vida`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 04 do `PAS-001 — Guivos Journey`.
+- Definição da distinção entre comando, proposta e evento funcional reconhecido.
+- Formalização da imutabilidade histórica e da correção compensatória por novos eventos.
+- Consolidação da estrutura comum dos contratos, incluindo titular, ator, fonte, autoridade, finalidade, sensibilidade e permissões.
+- Separação entre tempo do fato, tempo de conhecimento, tempo de reconhecimento e tempo de aplicação.
+- Definição de correlação, causalidade funcional, versionamento e compatibilidade entre produtores e consumidores.
+- Consolidação de 16 famílias de eventos funcionais de identificação, confirmação, planejamento, acompanhamento, temporalidade, relevância, impactos, relações, correção, encerramento, permissões, propagação, visão e falhas.
+- Formalização dos contratos de identificação, proposição, rejeição, declaração, planejamento, confirmação, início, atualização, adiamento e correção temporal.
+- Definição dos contratos de relevância, impactos propostos, confirmados, rejeitados, contestados, encerrados e reabertos.
+- Registro dos contratos de dimensões contextuais e objetivos potencialmente impactados e das solicitações de revisão às capacidades responsáveis.
+- Consolidação das relações propostas, confirmadas e contestadas, com causalidade baseada em evidência explicável.
+- Definição dos contratos de conclusão, interrupção, cancelamento, contestação, correção, arquivamento e reabertura.
+- Formalização da unificação, do desdobramento e dos eventos compostos sem perda de rastreabilidade.
+- Consolidação da autorização, revogação, propagação da revogação, recomposição de recortes e reavaliações dependentes.
+- Definição da idempotência, duplicidade semântica, ordenação, concorrência, versão esperada e atomicidade funcional.
+- Registro das regras de exclusão, retenção, minimização de logs, falhas de processamento, recuperação e auditoria.
+- Atualização da Arquitetura de Produtos para `1.4.3` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `7.2.0`, do Knowledge Board para `7.3.0` e da Matriz de Consolidação Canônica para `1.4.3`.
+- Atualização do README e da página inicial do GKR.
+- Elevação do progresso editorial de referência da Capacidade 04 para `80%`.
+- Definição das integrações funcionais da Capacidade de Eventos de Vida como próximo ponto exato de retomada.
+
 ## 0.32.2 — Life Events Functional View
 
 - Criação de `PAS-001-EV-VIEW-001 — Comportamentos Funcionais da Visualização e do Controle dos Eventos de Vida`, versão `1.0.0`.
