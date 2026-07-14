@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.3.3
+version: 1.3.4
 owner: Guivos
-last_updated: 2026-07-13
+last_updated: 2026-07-14
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -89,7 +89,8 @@ As extensões normativas ativas são:
 - `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções conceituais, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais;
 - `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação;
 - `PAS-001-OBJ-PROGRESS-001` — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais;
-- `PAS-001-OBJ-VIEW-001` — visão `Meus Objetivos`, portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade visual, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível.
+- `PAS-001-OBJ-VIEW-001` — visão `Meus Objetivos`, portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade visual, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível;
+- `PAS-001-OBJ-EVENT-001` — comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, contratos das famílias de eventos, propagação, correção, auditoria e falha segura.
 
 A primeira extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
@@ -112,6 +113,10 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 15. `Meus Objetivos` é uma superfície de clareza e controle, não de cobrança, ranking ou comparação pessoal.
 16. Objetivos pessoais, institucionais, coletivos e compartilhados devem preservar titularidade, autoridade e permissões próprias.
 17. Objetivos sensíveis exigem privacidade visual, minimização e controle reforçado de compartilhamento e notificações.
+18. Comando, proposta e evento funcional são conceitos distintos.
+19. Eventos reconhecidos devem preservar origem, autoridade, temporalidade, causalidade, correlação, versão e idempotência.
+20. O reprocessamento não pode duplicar efeitos e falhas devem reduzir automação em vez de ampliar suposições.
+21. Capacidades consumidoras devem receber somente recortes autorizados e reavaliar suas próprias decisões.
 
 ## Documentos do domínio
 
@@ -122,6 +127,7 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 - [PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos](pas-001-objetivos-ciclo-de-vida.md)
 - [PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão](pas-001-objetivos-progresso-e-conclusao.md)
 - [PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos](pas-001-meus-objetivos.md)
+- [PAS-001-OBJ-EVENT-001 — Contratos dos Eventos Funcionais de Objetivos](pas-001-objetivos-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
