@@ -12,7 +12,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo e 03 — Objetivos
 - **Capacidade ativa:** 04 — Eventos de Vida
-- **Extensões normativas ativas de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0, PAS-001-EV-LIFECYCLE-001 1.0.0 e PAS-001-EV-VIEW-001 1.0.0
+- **Extensões normativas ativas de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0, PAS-001-EV-LIFECYCLE-001 1.0.0, PAS-001-EV-VIEW-001 1.0.0 e PAS-001-EV-EVENT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -50,15 +50,15 @@ As extensões normativas vigentes consolidaram:
 - relevância contextual e impactos por unidade afetada;
 - relações, cadeias, eventos compostos, unificação e separação;
 - correção, contestação, encerramento, arquivamento e reabertura;
-- linha do tempo, visão geral, agrupamentos, filtros e cartões;
-- detalhamento progressivo de estado, temporalidade, origem, confiança e impactos;
-- controles de eventos planejados, em andamento, concluídos e arquivados;
-- privacidade visual, títulos neutros, notificações e informações de terceiros;
-- explicabilidade, histórico, sincronização e ações do participante;
-- propagação por recortes mínimos, idempotência e falha segura;
+- linha do tempo, detalhamento, controles, privacidade visual e histórico;
+- contratos de comandos, propostas e eventos funcionais reconhecidos;
+- estrutura comum, temporalidades, correlação, causalidade e versionamento;
+- contratos de impactos, relações, correções, contestações e encerramento;
+- permissões, revogações, propagação e recomposição de recortes;
+- idempotência, ordenação, concorrência, auditoria e falha segura;
 - relações com Contexto Vivo, Objetivos e capacidades consumidoras.
 
-A Capacidade 04 permanece **In progress**, com progresso editorial de referência de **60%**.
+A Capacidade 04 permanece **In progress**, com progresso editorial de referência de **80%**.
 
 ## Ponto exato de retomada
 
@@ -66,13 +66,14 @@ Retomar na `Capacidade 04 — Eventos de Vida`.
 
 Próxima entrega:
 
-- estrutura comum dos eventos funcionais;
-- identificação, proposição e confirmação;
-- atualização, estados e temporalidade;
-- impactos e relações entre eventos;
-- contestação, correção e encerramento;
-- propagação, correlação e causalidade;
-- idempotência, ordenação e falha segura.
+- integrações com Captura de Contexto;
+- integrações com Contexto Vivo e Objetivos;
+- integrações com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
+- integrações com Experiências e Evolução Contínua;
+- papel da Guivos Intelligence;
+- responsabilidades da Platform Layer;
+- serviços especializados e fontes externas;
+- sincronização, revogação, degradação controlada e falha segura.
 
 ## Product Engineering
 
@@ -101,6 +102,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Fundamentos Iniciais da Capacidade de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-fundamentos-iniciais.md)
 - [Regras do Ciclo de Vida dos Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md)
 - [Visualização e Controle dos Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-visualizacao-controle.md)
+- [Contratos dos Eventos Funcionais de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
