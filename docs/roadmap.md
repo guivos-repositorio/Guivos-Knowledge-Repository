@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.4.0
+version: 7.5.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida`.
-- **Próxima capacidade:** `05 — Próximos Passos`, ainda documentalmente `Planned`.
-- **Contrato final de Eventos de Vida:** `PAS-001-EV-CONTRACT-001 1.0.0`.
+- **Capacidade ativa:** `05 — Próximos Passos`, `In progress`, 20%.
+- **Fundamentos de Próximos Passos:** `PAS-001-PP-FOUNDATION-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,9 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá iniciar a `Capacidade 05 — Próximos Passos` do `PAS-001 — Guivos Journey`.
-
-A ativação normativa ocorrerá com a criação da primeira extensão específica da capacidade.
+O próximo trabalho deverá consolidar o ciclo de vida da `Capacidade 05 — Próximos Passos`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -53,41 +51,38 @@ O `PAS-001-OBJ-CONTRACT-001 1.0.0` confirma a Capacidade 03 como **Functionally 
 
 As seis extensões normativas consolidaram integralmente a semântica funcional da capacidade.
 
-#### Fundamentos
+- `PAS-001-EV-FOUNDATION-001 1.0.0` definiu fundamentos, conceito, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, sensibilidade e controle.
+- `PAS-001-EV-LIFECYCLE-001 1.0.0` definiu identificação, proposição, confirmação, estados, transições, relevância, impactos, relações, correção, contestação, encerramento, propagação e falha segura.
+- `PAS-001-EV-VIEW-001 1.0.0` definiu linha do tempo, detalhamento, eventos planejados, impactos, ações, privacidade visual, histórico e explicabilidade.
+- `PAS-001-EV-EVENT-001 1.0.0` definiu comandos, propostas, fatos reconhecidos, imutabilidade, contratos, idempotência, ordenação, auditoria e falha segura.
+- `PAS-001-EV-INTEGRATION-001 1.0.0` definiu finalidade, minimização, identidade, autoridade, proveniência, integrações, revogação e degradação controlada.
+- `PAS-001-EV-CONTRACT-001 1.0.0` consolidou 60 KPIs, 18 guardrails, baseline, painel de saúde, cenários e contrato final.
 
-`PAS-001-EV-FOUNDATION-001 1.0.0` definiu pergunta central, objetivo, valor, singularidade, conceito, tipos, titularidade, origem, autoridade, temporalidade, impacto, responsabilidades, limites, sensibilidade e controle do participante.
+A Capacidade 04 permanece **Functionally complete**.
 
-#### Ciclo de vida
+## Capacidade ativa
 
-`PAS-001-EV-LIFECYCLE-001 1.0.0` definiu identificação, proposição, confirmação, estados, transições, temporalidade, relevância, impactos, relações, correção, contestação, encerramento, arquivamento, reabertura, propagação e falha segura.
+### Capacidade 05 — Próximos Passos
 
-#### Visualização e controle
+`PAS-001-PP-FOUNDATION-001 1.0.0` é a primeira extensão normativa da capacidade e substitui o estado `Planned` da linha da Capacidade 05 no `PAS-001 0.5.0` por `In progress`.
 
-`PAS-001-EV-VIEW-001 1.0.0` definiu linha do tempo, cartões, detalhamento, eventos planejados, impactos, ações, privacidade visual, histórico, acessibilidade, explicabilidade e consistência entre canais.
+Os fundamentos consolidam:
 
-#### Contratos dos eventos funcionais
+- pergunta central, objetivo funcional, valor e singularidade;
+- Próximo Passo como decisão ou hipótese de movimento contextual;
+- acionabilidade e natureza contextual do termo “próximo”;
+- distinções entre Próximo Passo, objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
+- titularidade, papéis funcionais, responsabilidade, origem e autoridade;
+- tipos e classificações funcionais;
+- estados iniciais e separação entre estado funcional e estado da informação;
+- prioridade operacional, sequenciamento, dependências e bloqueios;
+- temporalidade, esforço, risco, segurança e sensibilidade;
+- entradas, estrutura, saídas e fluxo funcional inicial;
+- relações com Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades, Intervenções, Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e da Platform Layer;
+- controle do participante e ausência legítima de Próximo Passo.
 
-`PAS-001-EV-EVENT-001 1.0.0` definiu comandos, propostas, fatos reconhecidos, imutabilidade histórica, temporalidades, autoridade, contratos de eventos e impactos, idempotência, ordenação, concorrência, auditoria e falha segura.
-
-#### Integrações funcionais
-
-`PAS-001-EV-INTEGRATION-001 1.0.0` definiu finalidade, minimização, identidade, autoridade, proveniência, qualidade, transformações, sincronização, divergências, integrações com capacidades, produtos, serviços e fontes externas, pausa, revogação, degradação controlada e neutralidade comercial.
-
-#### KPIs, guardrails, cenários e contrato final
-
-`PAS-001-EV-CONTRACT-001 1.0.0` consolidou:
-
-- sessenta KPIs em treze famílias;
-- dezoito guardrails de tolerância zero;
-- baseline funcional antes de metas permanentes;
-- painel de saúde e níveis `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão funcional;
-- lacunas bloqueantes e não bloqueantes;
-- contrato final de propósito, titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas, explicabilidade e indicadores;
-- regra de reabertura somente por fundamento crítico ou decisão formal.
-
-O contrato final substitui normativamente o estado `In progress` da Capacidade 04 por **Functionally complete**.
+A capacidade está `In progress`, com progresso editorial de referência de `20%`.
 
 ## Progresso das capacidades do Journey
 
@@ -97,7 +92,7 @@ O contrato final substitui normativamente o estado `In progress` da Capacidade 0
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
-| 05 — Próximos Passos | Planned — próxima frente | 0% |
+| 05 — Próximos Passos | In progress | 20% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
@@ -132,50 +127,34 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
 - não reabrir as Capacidades 02, 03 ou 04 sem fundamento formal;
-- não reduzir Evento de Vida a qualquer atividade, experiência ou atualização comum;
-- não tratar evento planejado como ocorrido;
-- não transformar sinal ou inferência em Evento de Vida confirmado;
-- não confundir confirmação do evento com confirmação de todos os impactos;
-- não fabricar precisão temporal;
-- não presumir causalidade por proximidade temporal;
-- não aplicar impactos indiscriminadamente;
-- não criar objetivo pessoal ativo ou impor prioridade a partir de Evento de Vida;
-- não encerrar impactos automaticamente quando o evento for concluído;
-- não transformar linha do tempo em feed social, diário integral ou instrumento de avaliação pessoal;
-- não expor eventos sensíveis em interfaces, notificações ou ambientes inadequados;
-- não utilizar ranking, pontuação, cobrança ou gamificação coercitiva em Eventos de Vida;
-- não reescrever eventos históricos;
-- não duplicar eventos, impactos, notificações ou revisões;
-- não permitir ampliação de autoridade por consumidores ou integrações;
-- não declarar revogação concluída antes da propagação efetiva;
-- não utilizar acesso técnico como autoridade funcional;
-- não transformar compra, reserva, calendário, localização ou atividade em confirmação automática de mudança humana;
-- não utilizar Eventos de Vida sensíveis para publicidade;
-- não manter uso após revogação;
-- não tratar indisponibilidade de fonte como ausência de evento;
-- não permitir que médias ocultem violações de guardrails;
+- não reduzir Próximo Passo a objetivo, tarefa, oportunidade, recomendação ou compromisso;
+- não apresentar proposta como decisão assumida;
+- não apresentar confirmação como execução iniciada;
+- não criar listas infinitas ou ações artificiais para aumentar engajamento;
+- não impor produtividade, prioridade pessoal ou responsabilidade silenciosa;
+- não concluir objetivo automaticamente pela conclusão de um passo;
+- não utilizar oportunidade, receita, patrocínio ou publicidade para determinar prioridade;
+- não tratar bloqueio, pausa, cancelamento ou expiração como incapacidade ou fracasso;
+- não fabricar prazos ou precisão temporal;
+- não transformar atividade observada em conclusão automática;
+- não utilizar vulnerabilidade para indução comercial;
+- proteger passos sensíveis e informações de terceiros;
+- preservar autonomia, explicabilidade e controle do participante;
 - não iniciar o próximo produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar na **Capacidade 05 — Próximos Passos**.
+Retomar no **ciclo de vida dos Próximos Passos**.
 
 Próxima entrega:
 
-1. pergunta central;
-2. objetivo funcional;
-3. valor entregue;
-4. singularidade;
-5. princípios;
-6. definição de Próximo Passo;
-7. distinções entre Próximo Passo, tarefa, objetivo, oportunidade, intervenção, compromisso e recomendação;
-8. titularidade e responsabilidade;
-9. tipos funcionais;
-10. origem e autoridade;
-11. estados iniciais;
-12. prioridade operacional;
-13. temporalidade;
-14. dependências;
-15. relação com Contexto Vivo, Objetivos e Eventos de Vida;
-16. limites da Guivos Intelligence;
-17. controle do participante.
+1. criação e proposição;
+2. confirmação, prontidão e ativação;
+3. prioridade e sequenciamento;
+4. dependências e bloqueios;
+5. pausa, execução e conclusão;
+6. cancelamento, substituição e expiração;
+7. contestação e correção;
+8. recorrência;
+9. compartilhamento;
+10. propagação.
