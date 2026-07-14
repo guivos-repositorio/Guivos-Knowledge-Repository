@@ -10,9 +10,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida
-- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 90%
-- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001, PAS-001-PP-LIFECYCLE-001, PAS-001-PP-VIEW-001, PAS-001-PP-EVENT-001 e PAS-001-PP-INTEGRATION-001, todas em 1.0.0
+- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos
+- **Próxima capacidade oficial:** 06 — Oportunidades Ativas, `Planned / concept consolidated`
+- **Contrato final de Próximos Passos:** PAS-001-PP-CONTRACT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -47,56 +47,44 @@ A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de 
 
 ## Capacidade 05 — Próximos Passos
 
-`PAS-001-PP-FOUNDATION-001 1.0.0` consolidou os fundamentos iniciais e substituiu o estado `Planned` da capacidade por `In progress`.
+As seis extensões normativas consolidaram:
 
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida completo, preservando proposta, confirmação, prontidão, ativação, prioridade, execução, resultado e conclusão como dimensões distintas.
+- fundamentos, singularidade, titularidade, papéis, tipos e limites;
+- ciclo de vida, estados, prioridade, prontidão, dependências, bloqueios e execução;
+- superfície `Meus Próximos Passos`, portfólio, cartões, privacidade, acessibilidade e controle;
+- comandos, propostas, eventos reconhecidos, idempotência, ordenação, versionamento e auditoria;
+- integrações internas e externas, finalidade, minimização, autoridade, proveniência, sincronização, revogação e degradação controlada;
+- 68 KPIs em 14 famílias;
+- 20 guardrails de tolerância zero;
+- baseline, painel de saúde e cinco níveis de desempenho;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e contrato funcional final.
 
-`PAS-001-PP-VIEW-001 1.0.0` consolidou a superfície `Meus Próximos Passos`, o portfólio, os cartões, os controles, a privacidade, a acessibilidade, o histórico e a neutralidade comercial.
+O `PAS-001-PP-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da Capacidade 05 por `Functionally complete`.
 
-`PAS-001-PP-EVENT-001 1.0.0` consolidou comandos, propostas, fatos reconhecidos, imutabilidade histórica, contratos, idempotência, ordenação, versionamento, auditoria e falha segura.
-
-`PAS-001-PP-INTEGRATION-001 1.0.0` consolida:
-
-- contrato funcional comum das integrações;
-- tipos, modos e requisitos de admissão;
-- identidade, associação, autoridade, proveniência, qualidade e confiança;
-- temporalidade, transformações permitidas e transformações proibidas;
-- sincronização, idempotência, ordenação, reconciliação e prevenção de ciclos;
-- finalidade, minimização, permissões, pausa e revogação;
-- preservação de fatos históricos legítimos após revogação;
-- falha segura e degradação controlada;
-- integrações com Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
-- integrações com Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
-- limites da Guivos Intelligence e responsabilidades da Platform Layer;
-- integrações com Guivos Business, Mall, Travel, Media e Ads;
-- serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
-- integrações temporárias e pessoais;
-- proteção de informações de terceiros e passos compartilhados;
-- conflitos entre fontes, retroatividade, canais conversacionais, notificações e busca;
-- saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.
-
-A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **90%**.
+A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de referência de **100%**.
 
 ## Ponto exato de retomada
 
-Retomar no contrato final da Capacidade de Próximos Passos.
+Retomar nos fundamentos iniciais da Capacidade 06 — Oportunidades Ativas.
 
-Próxima entrega:
+A primeira extensão deverá consolidar:
 
-- KPIs e famílias de indicadores;
-- guardrails de tolerância zero;
-- baseline e painel de saúde;
-- níveis de desempenho funcional;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão;
-- lacunas bloqueantes e não bloqueantes;
-- contrato final da capacidade.
+- pergunta central, objetivo funcional, valor entregue e singularidade;
+- definição e distinções de Oportunidade Ativa;
+- titularidade, origem, autoridade, relevância e elegibilidade;
+- temporalidade, disponibilidade, custo e risco;
+- patrocínio, relações comerciais e neutralidade;
+- relações com Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos e Intervenções Contextuais;
+- limites da Guivos Intelligence;
+- responsabilidades da Platform Layer;
+- controle do participante.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 05 está `In progress` e deverá ser concluída por sua extensão normativa final.
+A Capacidade 06 permanece `Planned / concept consolidated` até sua primeira extensão normativa.
 
 ## Capacidades do Journey
 
@@ -106,8 +94,8 @@ A Capacidade 05 está `In progress` e deverá ser concluída por sua extensão n
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 90% |
-| 06 — Oportunidades Ativas | Planned / concept consolidated |
+| 05 — Próximos Passos | Functionally complete |
+| 06 — Oportunidades Ativas | Planned / concept consolidated — próxima frente |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
@@ -124,6 +112,7 @@ A Capacidade 05 está `In progress` e deverá ser concluída por sua extensão n
 - [Visualização e Controle dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
 - [Eventos Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-eventos-funcionais.md)
 - [Integrações Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-integracoes-funcionais.md)
+- [Contrato Final dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
