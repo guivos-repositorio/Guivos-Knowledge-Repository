@@ -12,6 +12,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - Capacidade 03 — Objetivos ativa;
 - `PAS-001-OBJ-FOUNDATION-001 1.0.0` ativo;
 - `PAS-001-OBJ-LIFECYCLE-001 1.0.0` ativo;
+- `PAS-001-OBJ-PROGRESS-001 1.0.0` ativo;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -21,7 +22,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 Especificar funcionalmente a **Capacidade 03 — Objetivos**.
 
-Os fundamentos e o ciclo de vida já consolidam autoria, distinções conceituais, criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento e reativação.
+Os fundamentos, o ciclo de vida e a estrutura de sucesso e progresso já consolidam autoria, criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, critérios, marcos, evidências, progresso e conclusão.
 
 ## Acesso rápido
 
@@ -30,6 +31,7 @@ Os fundamentos e o ciclo de vida já consolidam autoria, distinções conceituai
 - [Cenários e Contrato Final do Contexto Vivo](product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [Fundamentos Iniciais da Capacidade de Objetivos](product-architecture/pas-001-objetivos-fundamentos-iniciais.md)
 - [Regras do Ciclo de Vida dos Objetivos](product-architecture/pas-001-objetivos-ciclo-de-vida.md)
+- [Critérios de Sucesso, Progresso, Evidências e Conclusão](product-architecture/pas-001-objetivos-progresso-e-conclusao.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -53,4 +55,4 @@ Os fundamentos e o ciclo de vida já consolidam autoria, distinções conceituai
 
 ## Ponto de retomada
 
-Retomar na Capacidade 03, detalhando critérios de sucesso, progresso, marcos, evidências e conclusão dos objetivos.
+Retomar na Capacidade 03, detalhando os comportamentos funcionais da visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões e proteção de objetivos sensíveis.
