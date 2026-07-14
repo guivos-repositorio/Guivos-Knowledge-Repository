@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.4.4
+version: 1.4.5
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -92,17 +92,24 @@ A Capacidade 03 está **Functionally complete**.
 
 ### Capacidade 04 — Eventos de Vida
 
-As extensões normativas ativas são:
+As extensões normativas vigentes são:
 
-- `PAS-001-EV-FOUNDATION-001` — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;
+- `PAS-001-EV-FOUNDATION-001` — pergunta central, objetivo funcional, valor, singularidade, definição, distinções, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, sensibilidade, explicabilidade e controle do participante;
 - `PAS-001-EV-LIFECYCLE-001` — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura;
 - `PAS-001-EV-VIEW-001` — visão geral, linha do tempo, cartões, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico, acessibilidade e ações do participante;
 - `PAS-001-EV-EVENT-001` — comandos, propostas e fatos reconhecidos, estrutura comum, temporalidades, autoridade, famílias e contratos de eventos, impactos, relações, correções, contestações, permissões, propagação, idempotência, ordenação, versionamento, auditoria e falha segura;
-- `PAS-001-EV-INTEGRATION-001` — contrato comum das integrações, identidade, associação, autoridade, proveniência, qualidade, transformações, temporalidade, sincronização, divergências, integrações entre capacidades, produtos, serviços especializados e fontes externas, pausa, revogação, degradação controlada, neutralidade comercial e controle do participante.
+- `PAS-001-EV-INTEGRATION-001` — contrato comum das integrações, identidade, associação, autoridade, proveniência, qualidade, transformações, temporalidade, sincronização, divergências, integrações entre capacidades, produtos, serviços e fontes externas, pausa, revogação, degradação controlada e neutralidade comercial;
+- `PAS-001-EV-CONTRACT-001` — sessenta KPIs, treze famílias de indicadores, dezoito guardrails de tolerância zero, baseline, painel de saúde, níveis de desempenho, cenários ideal, alternativo e limite, critérios de conclusão, lacunas e contrato final.
 
-A primeira extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`, com progresso editorial de referência de `90%`.
+O `PAS-001-EV-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`.
 
-O próximo bloco deverá consolidar KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Eventos de Vida.
+A Capacidade 04 está **Functionally complete**, com progresso editorial de referência de `100%`.
+
+### Capacidade 05 — Próximos Passos
+
+A Capacidade 05 é a próxima frente oficial de Product Engineering. Seu estado permanece `Planned` até a criação da primeira extensão normativa.
+
+O próximo bloco deverá consolidar pergunta central, objetivo funcional, valor entregue, singularidade, princípios, definição de Próximo Passo, distinções, titularidade, tipos, origem, autoridade, estados, prioridade operacional, temporalidade, dependências, integrações e controle do participante.
 
 ## Regras arquiteturais
 
@@ -128,20 +135,20 @@ O próximo bloco deverá consolidar KPIs, guardrails, cenários funcionalmente i
 20. O reprocessamento não pode duplicar efeitos e falhas devem reduzir automação em vez de ampliar suposições.
 21. Capacidades consumidoras devem receber somente recortes autorizados e reavaliar suas próprias decisões.
 22. Integrações não transferem titularidade nem ampliam autoridade funcional.
-23. Finalidade explícita e minimização devem preceder todo compartilhamento de objetivos.
-24. Contexto Vivo, Objetivos, Próximos Passos, Oportunidades, Experiências e Evolução preservam responsabilidades distintas.
-25. Platform Layer aplica contratos técnicos, mas não redefine o significado funcional dos objetivos.
-26. Serviços especializados e receita comercial não podem alterar prioridade, relevância ou conclusão funcional.
+23. Finalidade explícita e minimização devem preceder todo compartilhamento.
+24. Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Oportunidades, Intervenções, Experiências e Evolução preservam responsabilidades distintas.
+25. Platform Layer aplica contratos técnicos, mas não redefine significado funcional.
+26. Serviços especializados e receita comercial não podem alterar prioridade, relevância, confirmação ou conclusão funcional.
 27. Revogações devem interromper novos usos e falhas de integração devem produzir degradação controlada.
 28. Indicadores devem avaliar a capacidade, não o valor ou desempenho humano do participante.
-29. Guardrails críticos de autoria, ativação, privacidade, finalidade, conclusão e neutralidade comercial possuem tolerância zero.
-30. Uma capacidade funcionalmente concluída somente deverá ser reaberta por lacuna crítica, evidência operacional, incidente, alteração arquitetural ou decisão formal.
+29. Guardrails críticos possuem tolerância zero e prevalecem sobre médias agregadas.
+30. Uma capacidade funcionalmente concluída somente deverá ser reaberta por lacuna crítica, evidência operacional, incidente, alteração arquitetural, regulatória ou decisão formal.
 31. Evento de Vida representa mudança relevante, não qualquer ocorrência, atividade ou experiência.
 32. Evento de Vida governa a mudança e sua temporalidade; Contexto Vivo governa o estado resultante.
 33. Evento planejado não equivale a evento ocorrido, e sinal não equivale a evento confirmado.
 34. Estado do evento e estado da informação são dimensões distintas.
 35. Confirmação do evento não confirma automaticamente seus impactos.
-36. Impactos de Eventos de Vida devem ser avaliados por dimensão e objetivo, sem aplicação indiscriminada.
+36. Impactos devem ser avaliados por unidade afetada, sem aplicação indiscriminada.
 37. Relevância é contextual, explicável e revisável.
 38. Causalidade não pode ser presumida apenas pela proximidade temporal.
 39. Correções preservam o histórico e contestações limitam efeitos críticos.
@@ -156,21 +163,28 @@ O próximo bloco deverá consolidar KPIs, guardrails, cenários funcionalmente i
 48. Eventos históricos são imutáveis; correções devem produzir novos eventos compensatórios.
 49. Tempo do fato, do conhecimento, do reconhecimento e da aplicação devem permanecer separados.
 50. Titular, ator e fonte devem permanecer distintos e limitados por autoridade explícita.
-51. Eventos e impactos possuem ciclos próprios e conclusão do evento não encerra impactos persistentes.
+51. Eventos e impactos possuem ciclos próprios.
 52. Ordenação, versão esperada, concorrência e idempotência devem impedir estados impossíveis, sobrescrita silenciosa e efeitos duplicados.
-53. Revogação somente poderá ser apresentada como concluída após propagação efetiva aos consumidores necessários.
+53. Revogação somente poderá ser apresentada como concluída após propagação efetiva.
 54. Métricas dos contratos devem avaliar o sistema, não o participante.
 55. Integrações de Eventos de Vida devem possuir finalidade explícita, dados minimizados, identidade validada e autoridade limitada.
 56. Disponibilidade técnica de dados não autoriza uso, compartilhamento ou confirmação funcional.
-57. Transformações de entradas integradas devem ser rastreáveis e não podem fabricar precisão, causalidade, significado emocional ou diagnóstico.
-58. Cada capacidade consumidora deve receber solicitações e recortes, não decisões impostas pela Capacidade de Eventos de Vida.
-59. Guivos Business somente confirma fatos institucionais e não recebe a jornada pessoal integral do participante.
+57. Transformações integradas devem ser rastreáveis e não podem fabricar precisão, causalidade, significado emocional ou diagnóstico.
+58. Capacidades consumidoras recebem solicitações e recortes, não decisões impostas.
+59. Guivos Business somente confirma fatos institucionais e não recebe a jornada pessoal integral.
 60. Compra, reserva, calendário, localização ou atividade não confirmam automaticamente mudança humana.
 61. Guivos Ads não pode utilizar Eventos de Vida sensíveis para segmentação publicitária.
 62. Pausa interrompe nova coleta e revogação interrompe novos usos, sem apagar automaticamente fatos históricos legítimos.
 63. Ausência ou indisponibilidade de dado não equivale a ausência de Evento de Vida.
 64. Falhas de integração devem preservar o último estado válido, reduzir confiança e limitar automação.
 65. O participante deve compreender fontes, transformações, recortes, consumidores, pendências, pausa e revogação.
+66. Maior volume de Eventos de Vida registrados não representa melhor qualidade funcional.
+67. Uma boa média não compensa violação de guardrail de tolerância zero.
+68. A ausência de Eventos de Vida registrados é um estado legítimo.
+69. Eventos de Vida não podem atribuir automaticamente diagnóstico, significado emocional, sucesso, fracasso ou valor humano.
+70. Sessenta KPIs em treze famílias constituem a baseline normativa de medição da Capacidade 04.
+71. Os dezoito guardrails críticos exigem interrupção, contenção, investigação, recomposição e decisão formal de retomada.
+72. A Capacidade 05 somente se torna normativamente ativa com sua primeira extensão específica.
 
 ## Documentos do domínio
 
@@ -183,6 +197,7 @@ O próximo bloco deverá consolidar KPIs, guardrails, cenários funcionalmente i
 - [PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida](pas-001-eventos-de-vida-visualizacao-controle.md)
 - [PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais de Eventos de Vida](pas-001-eventos-de-vida-eventos-funcionais.md)
 - [PAS-001-EV-INTEGRATION-001 — Integrações Funcionais da Capacidade de Eventos de Vida](pas-001-eventos-de-vida-integracoes-funcionais.md)
+- [PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
