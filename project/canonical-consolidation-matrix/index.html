@@ -5495,19 +5495,19 @@
 <td>Reconhecimento suficiente conforme natureza, critérios, evidências e percepção do participante</td>
 </tr>
 <tr>
-<td>Comando</td>
-<td>Manter</td>
-<td>Solicitação de ação; não representa fato reconhecido</td>
-</tr>
-<tr>
-<td>Proposta</td>
-<td>Manter</td>
-<td>Possível alteração ainda dependente de avaliação ou confirmação</td>
-</tr>
-<tr>
 <td>Evento funcional</td>
 <td>Refinar</td>
-<td>Fato reconhecido com origem, autoridade, temporalidade, finalidade e efeitos controlados</td>
+<td>Fato reconhecido e versionado; não equivale a comando ou proposta</td>
+</tr>
+<tr>
+<td>Recorte funcional</td>
+<td>Manter</td>
+<td>Conjunto mínimo e autorizado de informações para finalidade específica</td>
+</tr>
+<tr>
+<td>Autoridade da fonte</td>
+<td>Refinar</td>
+<td>Limitada ao que a origem e o contrato permitem afirmar</td>
 </tr>
 <tr>
 <td>Envelhecimento de objetivo</td>
@@ -5650,6 +5650,11 @@
 <td>Serviço de publicidade e mídia patrocinada</td>
 </tr>
 <tr>
+<td>Platform Layer</td>
+<td>Refinar</td>
+<td>Fornece identidade, autorização, armazenamento, grafo, eventos, APIs, busca, notificações, segurança e observabilidade sem redefinir significado funcional</td>
+</tr>
+<tr>
 <td>“Comunidade Guivos”</td>
 <td>Remover</td>
 <td>Substituída por Guivos Journey como nome amplo de produto</td>
@@ -5689,7 +5694,7 @@
 <tr>
 <td>Objetivos</td>
 <td>Manter</td>
-<td>Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão, controle e eventos dos objetivos</td>
+<td>Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso, conclusão, eventos e integrações</td>
 </tr>
 <tr>
 <td>Fundamentos Iniciais da Capacidade de Objetivos</td>
@@ -5714,32 +5719,52 @@
 <tr>
 <td>Eventos Funcionais de Objetivos</td>
 <td>Manter</td>
-<td>PAS-001-OBJ-EVENT-001 1.0.0 define estrutura, autoridade, temporalidade, contratos, propagação, correção, auditoria e falha segura</td>
+<td>PAS-001-OBJ-EVENT-001 1.0.0 define contratos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correções e falha segura</td>
 </tr>
 <tr>
-<td>Idempotência de Eventos</td>
+<td>Integrações Funcionais de Objetivos</td>
 <td>Manter</td>
-<td>Reprocessamento do mesmo evento não pode produzir efeitos funcionais duplicados</td>
+<td>PAS-001-OBJ-INTEGRATION-001 1.0.0 define contratos com capacidades, camadas, serviços e fontes externas por finalidade, recortes mínimos, autoridade limitada e revogação</td>
 </tr>
 <tr>
-<td>Causalidade de Eventos</td>
-<td>Manter</td>
-<td>Relação causal deve ser registrada quando houver base, sem invenção retroativa</td>
-</tr>
-<tr>
-<td>Correlação de Eventos</td>
-<td>Manter</td>
-<td>Eventos da mesma operação devem permanecer relacionados sem perda de significado próprio</td>
-</tr>
-<tr>
-<td>Evento Retroativo</td>
+<td>Integração com Contexto Vivo</td>
 <td>Refinar</td>
-<td>Preserva data do fato, conhecimento e reconhecimento sem reescrever o histórico</td>
+<td>Bidirecional e controlada; Contexto representa estado autorizado, enquanto Objetivos governa a unidade e o ciclo de vida da direção</td>
 </tr>
 <tr>
-<td>Correção de Evento</td>
-<td>Manter</td>
-<td>Deve ocorrer por evento compensatório, preservando o registro original</td>
+<td>Integração com Próximos Passos</td>
+<td>Refinar</td>
+<td>Próximos Passos executa caminhos e pode fornecer evidência de atividade, mas não governa objetivo nem determina progresso</td>
+</tr>
+<tr>
+<td>Integração com Oportunidades Ativas</td>
+<td>Refinar</td>
+<td>Oportunidades servem aos objetivos ativos e autorizados; disponibilidade comercial não cria direção ou prioridade</td>
+</tr>
+<tr>
+<td>Integração com Experiências</td>
+<td>Refinar</td>
+<td>Experiência pode produzir evidência ou marco, mas participação não equivale automaticamente a progresso</td>
+</tr>
+<tr>
+<td>Integração com Evolução Contínua</td>
+<td>Refinar</td>
+<td>Conclusão de objetivo pode apoiar análise de evolução sem representar automaticamente transformação humana</td>
+</tr>
+<tr>
+<td>Integração com Guivos Intelligence</td>
+<td>Refinar</td>
+<td>Intelligence produz hipóteses, sugestões e interpretações, não decisões pessoais definitivas</td>
+</tr>
+<tr>
+<td>Integração com Platform Layer</td>
+<td>Refinar</td>
+<td>A camada aplica identidade, autorização, versionamento, idempotência e segurança sem assumir responsabilidade semântica</td>
+</tr>
+<tr>
+<td>Integração com Serviços Especializados</td>
+<td>Refinar</td>
+<td>Business, Mall, Travel, Media e Ads recebem somente recortes autorizados e não podem ampliar finalidade ou prioridade</td>
 </tr>
 <tr>
 <td>Objetivo do Participante</td>
@@ -5866,9 +5891,9 @@
 </tbody>
 </table>
 <h2 id="reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>A Capacidade 02 permanece concluída. As extensões <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code>, <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code>, <code>PAS-001-OBJ-VIEW-001 1.0.0</code> e <code>PAS-001-OBJ-EVENT-001 1.0.0</code> avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.</p>
+<p>A Capacidade 02 permanece concluída. As seis extensões normativas de Objetivos avançam a Capacidade 03 para uma baseline editorial de 95%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.</p>
 <h2 id="proxima-revisao">Próxima revisão<a class="headerlink" href="#proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Detalhar as integrações funcionais da <strong>Capacidade 03 — Objetivos</strong> com Contexto Vivo, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer e serviços especializados.</p>
+<p>Consolidar os KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da <strong>Capacidade 03 — Objetivos</strong>, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.</p>
 
 
 
