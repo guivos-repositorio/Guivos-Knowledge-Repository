@@ -2,6 +2,24 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.1 — Objectives Lifecycle Rules
+
+- Criação de `PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Definição da unidade funcional, origens, autoridade das fontes, gatilhos e fluxo de criação dos objetivos.
+- Consolidação das regras de criação por declaração, conversa, sonho e recomendação externa, preservando a distinção entre objetivo pessoal e institucional.
+- Formalização da confirmação, ausência de confirmação, ativação por finalidade, duplicidade, correção, mudança, reformulação, desdobramento e unificação.
+- Definição do modelo de prioridade separado de urgência, estado, viabilidade e valor humano, incluindo portfólio e limites de simultaneidade.
+- Consolidação dos tipos, registro, detecção e resolução de conflitos entre objetivos pessoais, institucionais e valores declarados.
+- Definição das regras de revisão, envelhecimento, classes temporais, estados de atualidade e uso proporcional de objetivos envelhecidos.
+- Registro das regras de pausa, retomada, bloqueio, desbloqueio, conclusão parcial, conclusão contínua, retirada, substituição, arquivamento e reativação.
+- Consolidação dos impactos de Eventos de Vida, propagação para capacidades consumidoras, apresentação ao participante, proteção de objetivos sensíveis e eventos funcionais do ciclo de vida.
+- Atualização da Arquitetura de Produtos para `1.3.1` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.3.0`, do Knowledge Board para `6.4.0` e da Matriz de Consolidação Canônica para `1.3.1`.
+- Atualização do README e da página inicial do GKR.
+- Avanço editorial da Capacidade 03 para `40%`.
+- Definição dos critérios de sucesso, progresso, marcos, evidências e conclusão como próximo ponto exato de retomada.
+
 ## 0.31.0 — Objectives Capability Foundation
 
 - Criação de `PAS-001-OBJ-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Objetivos`, versão `1.0.0`.
