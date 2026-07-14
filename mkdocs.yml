@@ -127,6 +127,7 @@ nav:
       - PAS-001-EV-EVENT-001 — Eventos Funcionais de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md
       - PAS-001-EV-INTEGRATION-001 — Integrações Funcionais de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md
       - PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md
+      - PAS-001-PP-FOUNDATION-001 — Fundamentos de Próximos Passos: product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
