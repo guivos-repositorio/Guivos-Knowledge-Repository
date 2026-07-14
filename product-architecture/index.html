@@ -2376,10 +2376,11 @@
 <p>As extensões normativas ativas são:</p>
 <ul>
 <li><code>PAS-001-EV-FOUNDATION-001</code> — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;</li>
-<li><code>PAS-001-EV-LIFECYCLE-001</code> — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura.</li>
+<li><code>PAS-001-EV-LIFECYCLE-001</code> — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura;</li>
+<li><code>PAS-001-EV-VIEW-001</code> — visão geral, linha do tempo, agrupamentos, filtros, cartões, detalhamento, impactos, relações, eventos planejados e em andamento, ações do participante, conteúdo sensível, privacidade visual, notificações, compartilhamentos, explicabilidade, histórico, sincronização e acessibilidade.</li>
 </ul>
 <p>A primeira extensão substitui normativamente o estado <code>Planned / concept consolidated</code> da linha da Capacidade 04 na seção 7 do <code>PAS-001 0.5.0</code>. A capacidade permanece <code>In progress</code>.</p>
-<p>O próximo bloco deverá detalhar os comportamentos funcionais da visualização e do controle dos Eventos de Vida, incluindo linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.</p>
+<p>O próximo bloco deverá detalhar os contratos dos eventos funcionais da Capacidade de Eventos de Vida, incluindo identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.</p>
 <h2 id="regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#regras-arquiteturais" title="Permanent link">¶</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -2425,6 +2426,13 @@
 <li>Propagação utiliza recortes mínimos e reprocessamento não pode duplicar efeitos.</li>
 <li>Eventos sensíveis exigem minimização, proteção visual, finalidade específica e ausência de exploração comercial.</li>
 <li>Eventos de Vida não criam objetivos pessoais ativos nem impõem prioridade.</li>
+<li>A linha do tempo de Eventos de Vida é superfície de compreensão e controle, não feed social, diário integral ou instrumento de avaliação pessoal.</li>
+<li>Sinais, propostas, eventos planejados e eventos ocorridos devem permanecer visualmente distintos.</li>
+<li>Impactos propostos não podem parecer aplicados e cada impacto deve ser revisável individualmente.</li>
+<li>Eventos sensíveis devem permanecer ocultos por padrão, com títulos neutros e notificações minimizadas.</li>
+<li>A visualização não pode gerar ranking, pontuação, cobrança pessoal ou classificação universal de sucesso e fracasso.</li>
+<li>Aplicativo, web, conversa, notificações e serviços autorizados devem refletir a mesma versão, permissões, temporalidade e contestações.</li>
+<li>Sincronização pendente e efeitos ainda não aplicados devem permanecer explícitos ao participante.</li>
 </ol>
 <h2 id="documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#documentos-do-dominio" title="Permanent link">¶</a></h2>
 <ul>
@@ -2434,6 +2442,7 @@
 <li><a href="pas-001-objetivos-kpis-cenarios-contrato-final/">PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos</a></li>
 <li><a href="pas-001-eventos-de-vida-fundamentos-iniciais/">PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida</a></li>
 <li><a href="pas-001-eventos-de-vida-ciclo-de-vida/">PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida</a></li>
+<li><a href="pas-001-eventos-de-vida-visualizacao-controle/">PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida</a></li>
 <li><a href="journey/">Guivos Journey</a></li>
 <li><a href="mall/">Guivos Mall</a></li>
 <li><a href="travel/">Guivos Travel</a></li>
