@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 7.0.0
+version: 7.1.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo` e `03 — Objetivos`.
 - **Capacidade ativa:** `04 — Eventos de Vida`.
-- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0` e `PAS-001-EV-LIFECYCLE-001 1.0.0`.
+- **Extensões normativas ativas de Eventos de Vida:** `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0` e `PAS-001-EV-VIEW-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -76,7 +76,25 @@ A extensão `PAS-001-EV-LIFECYCLE-001 1.0.0` consolidou:
 - correção, contestação, encerramento, arquivamento e reabertura;
 - propagação por recortes mínimos, idempotência, prevenção de ciclos e falha segura.
 
-O próximo bloco consolidará a visualização e o controle funcional dos Eventos de Vida: linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.
+### Visualização e controle
+
+A extensão `PAS-001-EV-VIEW-001 1.0.0` consolidou:
+
+- visão geral, resumo linguístico, linha do tempo e orientação temporal;
+- escalas, agrupamentos, filtros, cartões e detalhamento progressivo;
+- separação visual entre sinais, propostas, eventos planejados e eventos ocorridos;
+- apresentação distinta do estado do evento e do estado da informação;
+- temporalidade aproximada sem falsa precisão;
+- relevância, origem, autoridade, confiança, evidências e impactos;
+- relações com Contexto Vivo, Objetivos e capacidades consumidoras;
+- eventos compostos, cadeias, participantes relacionados e informações de terceiros;
+- controles de eventos planejados, atualizações, conclusão, interrupção, arquivamento e reabertura;
+- correção, contestação, unificação, separação e revisão individual de impactos;
+- fila de atenção, alertas, prevenção de fadiga e controle de notificações;
+- privacidade visual, títulos neutros, dispositivos compartilhados e compartilhamentos;
+- explicabilidade, acessibilidade, consistência entre canais, histórico, sincronização e falha segura.
+
+O próximo bloco consolidará os contratos dos eventos funcionais da Capacidade de Eventos de Vida.
 
 ## Progresso das capacidades do Journey
 
@@ -85,7 +103,7 @@ O próximo bloco consolidará a visualização e o controle funcional dos Evento
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
 | 03 — Objetivos | Functionally complete | 100% |
-| 04 — Eventos de Vida | In progress | 40% |
+| 04 — Eventos de Vida | In progress | 60% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
@@ -130,6 +148,11 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não aplicar impactos indiscriminadamente a todo o contexto ou portfólio de objetivos;
 - não criar objetivo pessoal ativo ou impor prioridade a partir de Evento de Vida;
 - não encerrar impactos automaticamente quando o evento for concluído;
+- não transformar a linha do tempo em feed social, diário integral ou instrumento de avaliação pessoal;
+- não apresentar impactos propostos como aplicados;
+- não expor eventos sensíveis em cartões, notificações, dispositivos compartilhados ou ambientes organizacionais;
+- não utilizar ranking, pontuação, cobrança ou gamificação coercitiva em Eventos de Vida;
+- não manter versões paralelas silenciosas entre canais;
 - não explorar comercialmente vulnerabilidades ou eventos sensíveis;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
 
@@ -139,11 +162,11 @@ Retomar na **Capacidade 04 — Eventos de Vida**.
 
 Próxima entrega:
 
-1. estrutura da linha do tempo;
-2. visão geral e agrupamentos;
-3. cartões e detalhamento do evento;
-4. estados, temporalidade, relevância e impactos;
-5. eventos planejados e em andamento;
-6. ações de confirmação, correção, contestação, arquivamento e reabertura;
-7. proteção de conteúdo sensível e privacidade visual;
-8. revisões, histórico, sincronização e falha segura.
+1. estrutura comum dos eventos funcionais;
+2. comandos, propostas e fatos reconhecidos;
+3. identificação, proposição e confirmação;
+4. atualização, estados e temporalidade;
+5. relevância, impactos e relações;
+6. contestação, correção, encerramento e reabertura;
+7. propagação, correlação, causalidade e ordenação;
+8. idempotência, versionamento, auditoria e falha segura.
