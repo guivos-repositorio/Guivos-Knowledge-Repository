@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 8.0.0
+version: 8.1.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -28,6 +28,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-PP-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle dos Próximos Passos |
 | PAS-001-PP-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais dos Próximos Passos |
 | PAS-001-PP-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais dos Próximos Passos |
+| PAS-001-PP-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final dos Próximos Passos |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -41,16 +42,16 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
-| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida` |
-| Capacidade ativa | `05 — Próximos Passos` |
-| Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-PP-INTEGRATION-001 1.0.0` |
-| Progresso editorial de Próximos Passos | `90%` |
+| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos` |
+| Próxima capacidade oficial | `06 — Oportunidades Ativas` |
+| Estado da próxima capacidade | `Planned / concept consolidated` |
+| Contrato final vigente | `PAS-001-PP-CONTRACT-001 1.0.0` |
+| Progresso editorial de Próximos Passos | `100%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar KPIs, guardrails, cenários e contrato final dos Próximos Passos |
+| Foco imediato | Consolidar os fundamentos iniciais de Oportunidades Ativas |
 
 ## Capacidades do Journey
 
@@ -60,8 +61,8 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
-| 05 — Próximos Passos | In progress — 90% | Fundamentos, ciclo, visualização, eventos e integrações consolidados; contrato final é a próxima entrega |
-| 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
+| 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
+| 06 — Oportunidades Ativas | Planned / concept consolidated — próxima frente | Relevância contextual registrada; fundamentos ainda não publicados |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
@@ -84,95 +85,77 @@ A Capacidade 04 está funcionalmente concluída pelas extensões `FOUNDATION`, `
 
 O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails de tolerância zero, baseline, painel de saúde, níveis de desempenho, cenários e critérios de conclusão.
 
+### Próximos Passos
+
+A Capacidade 05 está funcionalmente concluída pelas extensões `FOUNDATION`, `LIFECYCLE`, `VIEW`, `EVENT`, `INTEGRATION` e `CONTRACT`, todas em `1.0.0`.
+
+O contrato final consolidou:
+
+- 68 KPIs em 14 famílias;
+- 20 guardrails de tolerância zero;
+- baseline funcional;
+- painel de saúde;
+- níveis `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão e reabertura;
+- ausência de lacunas funcionais bloqueantes conhecidas.
+
 ## Consolidação da Capacidade 05 — Próximos Passos
 
 ### Fundamentos iniciais
 
 - Próximo Passo como decisão ou hipótese de movimento delimitada e contextual;
 - transformação de direção, contexto e intenção em movimento possível;
-- limiar de acionabilidade sem exigir plano completo;
-- natureza contextual do termo “próximo” e multiplicidade legítima de passos;
-- distinções entre Próximo Passo, objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
-- titularidade, papéis, origens, autoridade, tipos, estados, prioridade, temporalidade, dependências, bloqueios, risco e sensibilidade;
+- distinção entre Próximo Passo, objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
+- titularidade, papéis, autoridade, tipos, estados, prioridade, temporalidade, dependências, bloqueios, risco e sensibilidade;
 - controle do participante e ausência legítima de Próximo Passo.
 
 ### Ciclo de vida
 
 - possibilidade, formulação, proposta, avaliação e confirmação;
 - prontidão e ativação como dimensões distintas;
-- portfólio ativo, prioridade e sequenciamento;
-- dependências, bloqueios, pausa, retomada, agenda e adiamento;
-- execução, resultado, conclusão, cancelamento, substituição e expiração;
-- contestação, correção, reabertura e arquivamento;
-- recorrência, passos compartilhados, delegação, revogação e propagação;
-- idempotência, ordenação, concorrência, retroatividade e falha segura.
+- portfólio, prioridade, sequenciamento, dependências e bloqueios;
+- pausa, retomada, agenda, execução, resultado e conclusão;
+- cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
+- recorrência, passos compartilhados, delegação, revogação, propagação e falha segura.
 
 ### Visualização e controle
 
-- superfície `Meus Próximos Passos` como visão principal;
-- visão geral sem pontuação de produtividade;
+- superfície `Meus Próximos Passos`;
 - portfólio ativo separado de propostas e possibilidades futuras;
 - cartões minimizados, títulos neutros e detalhamento progressivo;
-- estado funcional separado do estado da informação;
-- prioridade, urgência, prazo, prontidão, esforço e risco apresentados como dimensões distintas;
-- propostas explicáveis e alternativas comparáveis sem vencedor comercial automático;
-- passos sem prazo e ausência de movimentos como estados legítimos;
-- agenda funcional sem substituir o calendário geral;
-- dependências e bloqueios visíveis, com limites de controle explícitos;
-- execução e resultado separados de progresso e conclusão;
-- conclusão sem resultado esperado e automações contestáveis;
-- cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
-- recorrência sem punição, sequência coercitiva, ranking ou julgamento;
-- passos compartilhados, confirmação individual, delegação e saída;
-- compartilhamentos, revogação, privacidade visual e notificações discretas;
-- fila de atenção sem urgência universal e prevenção de fadiga;
-- explicabilidade, histórico compreensível e consistência entre canais;
-- acessibilidade técnica e cognitiva;
+- prioridade, prontidão, agenda, dependências, bloqueios, execução e resultados;
+- recorrência sem punição, ranking ou julgamento;
+- passos compartilhados, privacidade visual, acessibilidade e prevenção de fadiga;
 - neutralidade comercial e controle amplo do participante.
 
 ### Eventos funcionais
 
-- distinção entre comando, proposta e evento reconhecido;
+- comando, proposta e evento reconhecido como conceitos distintos;
 - imutabilidade histórica e correção compensatória;
-- estrutura comum dos eventos, agregado, titular, categoria, ator, papel e autoridade;
-- finalidade, sensibilidade, permissões, temporalidades, correlação, causalidade e versionamento;
-- identificação, proposição, declaração, confirmação simples, condicionada e parcial;
-- reformulação, desdobramento, unificação, ativação, prontidão, preparação, prioridade e sequência;
-- dependências, bloqueios, pausa, retomada, agenda e adiamento;
-- início, execução, atualização, resultado e conclusão total ou parcial;
-- cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
-- recorrência, ocorrências individuais, delegação e responsabilidades;
-- compartilhamento, revogação, propagação e confirmação de processamento;
-- recortes mínimos e reavaliações dependentes sem transferência de decisão;
-- eventos visuais e conversacionais com os mesmos contratos semânticos;
-- eventos de leitura sem efeito automático sobre estado, prioridade ou conclusão;
-- atomicidade, pendências, idempotência, duplicidade semântica, ordenação e concorrência;
-- exclusão, anonimização, retenção, logs minimizados, falha segura e recuperação;
-- explicabilidade, auditoria e responsabilidades dos produtores e consumidores.
+- titular, ator, autoridade, finalidade, sensibilidade e permissões;
+- idempotência, ordenação, versionamento, concorrência e atomicidade funcional;
+- contratos de todos os estados, responsabilidades, compartilhamentos e encerramentos;
+- falha segura, recuperação, explicabilidade e auditoria.
 
 ### Integrações funcionais
 
-- integração como intercâmbio governado, não como decisão;
-- tipos e modos funcionais com permissões próprias;
-- contrato comum das integrações;
-- requisitos de admissão, identidade, associação, autoridade, proveniência, qualidade e confiança;
-- temporalidade, retroatividade e transformações controladas;
-- proibição de fabricar prazo, prioridade, intenção, responsabilidade, causalidade, diagnóstico, evolução ou conclusão;
-- sincronização, idempotência, duplicidade, ordenação, conflitos e reconciliação;
-- prevenção de ciclos entre capacidades;
-- finalidade, minimização e permissões;
-- pausa, revogação e preservação de fatos históricos legítimos;
-- falha segura e degradação controlada;
-- integrações com Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
-- integrações com Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
-- limites da Guivos Intelligence e responsabilidades da Platform Layer;
-- integrações com Guivos Business, Mall, Travel, Media e Ads;
-- integrações profissionais, educacionais, de saúde, financeiras, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
-- integrações temporárias e pessoais;
-- proteção de terceiros e passos compartilhados;
-- conflitos entre fontes e eventos retroativos;
-- canais conversacionais, notificações e busca;
-- saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.
+- contrato comum, finalidade, minimização e autoridade limitada;
+- identidade, associação, proveniência, qualidade, confiança e temporalidade;
+- transformações controladas sem fabricação de significado;
+- sincronização, prevenção de ciclos, pausa, revogação e degradação controlada;
+- integrações com todas as capacidades, camadas, produtos, organizações, profissionais e fontes externas;
+- proteção de terceiros, neutralidade comercial, explicabilidade e auditoria.
+
+### KPIs, guardrails, cenários e contrato final
+
+- indicadores voltados à qualidade da capacidade e do sistema, não ao valor humano;
+- 14 famílias de identificação, confirmação, portfólio, prioridade, prontidão, temporalidade, execução, resultados, recorrência, controle, integrações, confiabilidade, explicabilidade e neutralidade;
+- 20 guardrails de tolerância zero com prevalência sobre médias agregadas;
+- baseline real antes de metas permanentes;
+- cenários ideais, alternativos e limite;
+- critérios funcionais de aceite, conclusão e reabertura;
+- contrato final de titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas e auditoria.
 
 ## Conceitos internos preservados
 
@@ -181,7 +164,8 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
-| Próximos Passos | In progress — 90% |
+| Próximos Passos | Functionally complete — 100% |
+| Contrato Final de Próximos Passos | Normative 1.0.0 |
 | Fundamentos de Próximos Passos | Normative 1.0.0 |
 | Ciclo de Vida de Próximos Passos | Normative 1.0.0 |
 | Visualização e Controle de Próximos Passos | Normative 1.0.0 |
@@ -191,26 +175,20 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | Próximo Passo proposto | Hipótese de movimento ainda não assumida |
 | Próximo Passo confirmado | Decisão reconhecida sem significar início de execução |
 | Evento funcional de Próximo Passo | Fato reconhecido, versionado, idempotente e historicamente imutável |
-| Comando funcional | Solicitação de alteração que não representa fato reconhecido |
 | Integração funcional de Próximo Passo | Intercâmbio governado por finalidade, minimização, autoridade, proveniência, temporalidade e revogação |
-| Portfólio ativo | Movimentos com relevância operacional atual |
-| Possibilidades futuras | Alternativas disponíveis sem compromisso operacional |
 | Prioridade operacional | Ordem contextual de atenção ou execução |
 | Prontidão | Condições mínimas conhecidas para iniciar |
 | Dependência | Condição necessária para o passo |
 | Bloqueio | Impedimento atual que não representa incapacidade pessoal |
 | Resultado imediato | Consequência observada ou declarada da execução |
-| Espera funcional | Movimento legítimo condicionado a período ou gatilho de revisão |
 | Oportunidade | Meio possível; não equivale a Próximo Passo |
-| Recomendação | Sugestão; não equivale a decisão |
+| Oportunidade Ativa | Approved for PAS — próxima capacidade oficial |
+| Intervenção Contextual | Approved for PAS |
 | Guivos Intelligence | Produz possibilidades, alternativas e explicações, não decisões assumidas |
 | Platform Layer | Sustenta contratos técnicos sem redefinir semântica funcional |
 | Pessoa | Categoria oficial de participante |
 | Organização | Categoria oficial de participante |
 | Coletivo | Categoria oficial de participante |
-| Oportunidade Ativa | Approved for PAS |
-| Intervenção Contextual | Approved for PAS |
-| Distância para Evolução | Internal Product Concept |
 | LPM — Living Participant Model | Candidate |
 | CIE — Context Intelligence Engine | Candidate |
 | GPMA | Future architectural candidate |
@@ -219,8 +197,8 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 7.9.0 |
-| Knowledge Board | 8.0.0 |
+| Roadmap | 8.0.0 |
+| Knowledge Board | 8.1.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -231,6 +209,7 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | PAS-001-PP-VIEW-001 | Active 1.0.0 |
 | PAS-001-PP-EVENT-001 | Active 1.0.0 |
 | PAS-001-PP-INTEGRATION-001 | Active 1.0.0 |
+| PAS-001-PP-CONTRACT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -240,4 +219,4 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 ## Próxima atividade
 
-Consolidar os **KPIs, guardrails, baseline, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Próximos Passos**.
+Consolidar os **fundamentos iniciais da Capacidade 06 — Oportunidades Ativas**, preservando a distinção entre oportunidade, recomendação, Próximo Passo, compromisso e publicidade.
