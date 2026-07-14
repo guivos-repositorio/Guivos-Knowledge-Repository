@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.4.0
+version: 1.4.1
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -92,13 +92,14 @@ A Capacidade 03 está **Functionally complete**.
 
 ### Capacidade 04 — Eventos de Vida
 
-A extensão normativa ativa é:
+As extensões normativas ativas são:
 
-- `PAS-001-EV-FOUNDATION-001` — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, estrutura funcional, integrações iniciais, sensibilidade, explicabilidade e controle do participante.
+- `PAS-001-EV-FOUNDATION-001` — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;
+- `PAS-001-EV-LIFECYCLE-001` — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura.
 
-A extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
+A primeira extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
-O próximo bloco deverá detalhar o ciclo de vida dos Eventos de Vida, incluindo identificação, proposição, confirmação, estados, temporalidade, relevância, impacto, relações, correção, contestação, encerramento e propagação.
+O próximo bloco deverá detalhar os comportamentos funcionais da visualização e do controle dos Eventos de Vida, incluindo linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.
 
 ## Regras arquiteturais
 
@@ -135,9 +136,16 @@ O próximo bloco deverá detalhar o ciclo de vida dos Eventos de Vida, incluindo
 31. Evento de Vida representa mudança relevante, não qualquer ocorrência, atividade ou experiência.
 32. Evento de Vida governa a mudança e sua temporalidade; Contexto Vivo governa o estado resultante.
 33. Evento planejado não equivale a evento ocorrido, e sinal não equivale a evento confirmado.
-34. Impactos de Eventos de Vida devem ser avaliados por dimensão e objetivo, sem aplicação indiscriminada.
-35. Eventos sensíveis exigem minimização, proteção visual, finalidade específica e ausência de exploração comercial.
-36. Eventos de Vida não criam objetivos pessoais ativos nem impõem prioridade.
+34. Estado do evento e estado da informação são dimensões distintas.
+35. Confirmação do evento não confirma automaticamente seus impactos.
+36. Impactos de Eventos de Vida devem ser avaliados por dimensão e objetivo, sem aplicação indiscriminada.
+37. Relevância é contextual, explicável e revisável.
+38. Causalidade não pode ser presumida apenas pela proximidade temporal.
+39. Correções preservam o histórico e contestações limitam efeitos críticos.
+40. Conclusão do evento não encerra automaticamente impactos persistentes.
+41. Propagação utiliza recortes mínimos e reprocessamento não pode duplicar efeitos.
+42. Eventos sensíveis exigem minimização, proteção visual, finalidade específica e ausência de exploração comercial.
+43. Eventos de Vida não criam objetivos pessoais ativos nem impõem prioridade.
 
 ## Documentos do domínio
 
@@ -146,6 +154,7 @@ O próximo bloco deverá detalhar o ciclo de vida dos Eventos de Vida, incluindo
 - [PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo](pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos](pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida](pas-001-eventos-de-vida-fundamentos-iniciais.md)
+- [PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida](pas-001-eventos-de-vida-ciclo-de-vida.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
