@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.3.6
+version: 1.4.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -42,6 +42,8 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 |---|---|---|
 | Participante | Manter | Elemento que percorre a jornada |
 | Momento Atual | Manter | Termo oficial; o estado resultante reinicia o ciclo |
+| Estado | Refinar | Realidade atual compreendida e autorizada do participante |
+| Evento de Vida | Refinar | Ocorrência, transição ou mudança relevante situada no tempo, capaz de alterar ou exigir reavaliação da jornada |
 | Objetivo | Refinar | Direção consciente assumida pelo participante; não equivale a intenção, sonho, possibilidade, tarefa ou oportunidade |
 | Intenção | Manter | Vontade ainda não suficientemente assumida ou estruturada |
 | Sonho | Manter | Aspiração significativa que pode permanecer sem compromisso operacional |
@@ -50,9 +52,11 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Ativação de objetivo | Refinar | Autorização operacional por finalidade; não exige prazo, plano completo ou viabilidade integral |
 | Prioridade | Refinar | Importância relativa e contextual; não equivale a urgência, estado ou valor humano |
 | Critério de sucesso | Refinar | Condição capaz de representar avanço ou alcance satisfatório; não precisa ser quantitativa |
-| Atividade | Manter | Ação realizada; não equivale automaticamente a progresso |
+| Atividade | Refinar | Ação realizada; não equivale automaticamente a progresso, experiência transformadora ou Evento de Vida |
+| Experiência | Refinar | Vivência efetiva; poderá produzir Evento de Vida, mas não equivale automaticamente a mudança relevante |
+| Sinal | Manter | Indicação possível que exige avaliação antes de ser tratada como fato confirmado |
+| Evidência | Refinar | Informação que sustenta interpretação ou reconhecimento sem constituir o próprio evento |
 | Resultado | Manter | Consequência observável ou declarada relacionada à jornada |
-| Evidência | Refinar | Informação que sustenta interpretação sem determinar sozinha o significado humano do resultado |
 | Progresso | Refinar | Mudança relevante na direção do resultado, baseada na relação entre objetivo, critério, contexto e evidência |
 | Marco | Manter | Resultado intermediário significativo; não equivale a tarefa |
 | Conclusão | Refinar | Reconhecimento suficiente conforme natureza, critérios, evidências e percepção do participante |
@@ -60,10 +64,8 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Recorte funcional | Manter | Conjunto mínimo e autorizado de informações para finalidade específica |
 | Autoridade da fonte | Refinar | Limitada ao que a origem e o contrato permitem afirmar |
 | Guardrail funcional | Manter | Regra obrigatória que impede violações críticas e pode possuir tolerância zero |
-| Envelhecimento de objetivo | Manter | Redução de segurança sobre atualidade; não significa falsidade ou retirada |
-| Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
+| Próximo Passo | Manter | Decisão ou hipótese; não é Evento de Vida nem Oportunidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
-| Experiência | Manter | Vivência efetiva da oportunidade |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
 
@@ -107,35 +109,25 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
 | Objetivos | Manter | Capacidade 03 funcionalmente concluída por sete extensões normativas |
-| Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
-| Ciclo de Vida dos Objetivos | Manter | PAS-001-OBJ-LIFECYCLE-001 1.0.0 define criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, conclusão, retirada e reativação |
-| Progresso e Conclusão dos Objetivos | Manter | PAS-001-OBJ-PROGRESS-001 1.0.0 define critérios, linhas de base, progresso, marcos, evidências, conclusão, contestação e reabertura |
-| Meus Objetivos | Manter | PAS-001-OBJ-VIEW-001 1.0.0 define portfólio, detalhamento, controles, explicações, revisões, proteção de objetivos sensíveis e histórico compreensível |
-| Eventos Funcionais de Objetivos | Manter | PAS-001-OBJ-EVENT-001 1.0.0 define contratos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correções e falha segura |
-| Integrações Funcionais de Objetivos | Manter | PAS-001-OBJ-INTEGRATION-001 1.0.0 define contratos com capacidades, camadas, serviços e fontes externas por finalidade, recortes mínimos, autoridade limitada e revogação |
-| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define 62 KPIs, 13 famílias, 12 guardrails, cenários e contrato final; substitui o estado In progress por Functionally complete |
-| Indicadores da Capacidade de Objetivos | Manter | Avaliam autoria, ativação, clareza, prioridade, atualidade, progresso, conclusão, privacidade, integrações, confiabilidade, neutralidade, esforço e fadiga |
-| Guardrails da Capacidade de Objetivos | Manter | Violações críticas de autoria, autorização, finalidade, privacidade, conclusão, neutralidade e idempotência possuem tolerância zero |
-| Integração com Contexto Vivo | Refinar | Bidirecional e controlada; Contexto representa estado autorizado, enquanto Objetivos governa a unidade e o ciclo de vida da direção |
-| Integração com Próximos Passos | Refinar | Próximos Passos executa caminhos e pode fornecer evidência de atividade, mas não governa objetivo nem determina progresso |
-| Integração com Oportunidades Ativas | Refinar | Oportunidades servem aos objetivos ativos e autorizados; disponibilidade comercial não cria direção ou prioridade |
-| Integração com Experiências | Refinar | Experiência pode produzir evidência ou marco, mas participação não equivale automaticamente a progresso |
-| Integração com Evolução Contínua | Refinar | Conclusão de objetivo pode apoiar análise de evolução sem representar automaticamente transformação humana |
-| Integração com Guivos Intelligence | Refinar | Intelligence produz hipóteses, sugestões e interpretações, não decisões pessoais definitivas |
-| Integração com Platform Layer | Refinar | A camada aplica identidade, autorização, versionamento, idempotência e segurança sem assumir responsabilidade semântica |
-| Integração com Serviços Especializados | Refinar | Business, Mall, Travel, Media e Ads recebem somente recortes autorizados e não podem ampliar finalidade ou prioridade |
-| Objetivo do Participante | Manter | Exige autoria ou aceitação consciente e não pode ser ativado apenas por inferência ou interesse externo |
-| Objetivo Institucional | Refinar | Deve permanecer distinto do objetivo pessoal, com titularidade, finalidade, critérios e permissões próprios |
-| Objetivo Compartilhado | Refinar | Deve preservar contribuições, responsabilidades, permissões e possibilidade de saída de cada participante |
-| Critério Institucional | Refinar | Comprova requisito sob autoridade institucional sem substituir critério ou significado pessoal |
-| Desejo Externo | Refinar | Permanece recomendação ou expectativa externa até aceitação consciente do participante |
-| Percentual de Progresso | Refinar | Permitido somente quando linha de base, resultado, fórmula e dados sustentarem mensuração legítima |
-| Conclusão Automática | Refinar | Limitada a critérios objetivos previamente confirmados, fontes autorizadas, ausência de conflito e efeitos reversíveis |
-| Privacidade Visual | Manter | Objetivos sensíveis exigem título neutro, minimização e proteção em notificações, widgets e dispositivos compartilhados |
-| Pausa de Objetivo | Manter | Interrompe uso operacional temporariamente sem representar desistência ou fracasso |
-| Bloqueio de Objetivo | Manter | Representa impedimento atual, não incapacidade pessoal |
-| Progresso de Objetivo | Refinar | Não equivale a simples atividade, clique, inscrição, compra ou consumo de conteúdo |
-| Evento de Vida | Manter | Capacidade 04 ativa para Product Engineering; mudança relevante capaz de alterar uma ou mais dimensões ou objetivos |
+| KPIs, Cenários e Contrato Final de Objetivos | Manter | PAS-001-OBJ-CONTRACT-001 1.0.0 define indicadores, guardrails, cenários e contrato final; substitui o estado In progress por Functionally complete |
+| Eventos de Vida | Manter | Capacidade 04 ativa; governa mudanças relevantes capazes de alterar a jornada |
+| Fundamentos Iniciais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, entradas e integrações iniciais |
+| Evento de Vida planejado | Refinar | Previsão ou planejamento de mudança; não equivale a evento ocorrido |
+| Evento de Vida progressivo | Manter | Mudança desenvolvida ao longo de período, com início, duração, marcos e incerteza temporal |
+| Evento primário | Manter | Mudança reconhecida que deverá permanecer distinta de seus efeitos derivados |
+| Impacto de Evento de Vida | Refinar | Efeito confirmado ou proposto, avaliado por dimensão contextual e objetivo |
+| Titularidade do Evento de Vida | Manter | Identifica Pessoa, Organização ou Coletivo a quem o evento pertence |
+| Autoridade em Eventos de Vida | Refinar | Fonte somente confirma fatos sob seu escopo; Intelligence produz hipótese, não evento pessoal definitivo |
+| Integração com Contexto Vivo | Refinar | Eventos de Vida governam mudança e temporalidade; Contexto Vivo governa o estado resultante |
+| Integração com Objetivos | Refinar | Evento poderá gerar revisão ou evidência, mas não cria objetivo pessoal ativo nem impõe prioridade |
+| Integração com Próximos Passos | Refinar | Evento poderá indicar necessidade de ação, mas a Capacidade 05 governa as ações resultantes |
+| Integração com Oportunidades Ativas | Refinar | Mudança poderá alterar relevância, disponibilidade e restrições sem justificar exploração comercial |
+| Integração com Experiências | Refinar | Experiência e Evento de Vida mantêm registros distintos |
+| Integração com Evolução Contínua | Refinar | Evento poderá constituir marco de trajetória sem ser classificado automaticamente como evolução positiva ou negativa |
+| Guivos Intelligence em Eventos de Vida | Refinar | Pode identificar sinais, sugerir classificação e impactos, mas não confirmar unilateralmente eventos pessoais sensíveis |
+| Platform Layer em Eventos de Vida | Refinar | Sustenta identidade, autorização, temporalidade, versionamento, grafo e auditoria sem redefinir significado funcional |
+| Evento sensível | Manter | Exige finalidade específica, minimização, acesso restrito, proteção visual e ausência de exploração comercial |
+| Informação de terceiro em Evento de Vida | Refinar | Deve ser minimizada e não autoriza criação de perfil ou atribuição de estado interno ao terceiro |
 | Oportunidade Ativa | Manter | Oportunidade relevante para um participante em contexto atual |
 | Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
@@ -153,8 +145,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 e 03 estão funcionalmente concluídas. O `PAS-001-OBJ-CONTRACT-001 1.0.0` eleva Objetivos a 100%, substitui normativamente o estado anterior e ativa a Capacidade 04 — Eventos de Vida, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+As Capacidades 02 e 03 permanecem funcionalmente concluídas. O `PAS-001-EV-FOUNDATION-001 1.0.0` inaugura a baseline normativa da Capacidade 04, substitui seu estado anterior por `In progress` e eleva o avanço editorial de referência para 20%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Definir os fundamentos iniciais da **Capacidade 04 — Eventos de Vida**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Definir o ciclo de vida dos **Eventos de Vida**, incluindo identificação, proposição, confirmação, estados, temporalidade, relevância, impacto, relações, correção, contestação, encerramento e propagação.
