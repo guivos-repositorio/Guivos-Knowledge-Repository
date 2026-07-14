@@ -9,8 +9,8 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
 - Capacidades 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida funcionalmente concluídas;
-- Capacidade 05 — Próximos Passos em desenvolvimento, `In progress`, 80%;
-- `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0`, `PAS-001-PP-VIEW-001 1.0.0` e `PAS-001-PP-EVENT-001 1.0.0` como extensões normativas vigentes da Capacidade 05;
+- Capacidade 05 — Próximos Passos em desenvolvimento, `In progress`, 90%;
+- `PAS-001-PP-FOUNDATION-001 1.0.0`, `PAS-001-PP-LIFECYCLE-001 1.0.0`, `PAS-001-PP-VIEW-001 1.0.0`, `PAS-001-PP-EVENT-001 1.0.0` e `PAS-001-PP-INTEGRATION-001 1.0.0` como extensões normativas vigentes da Capacidade 05;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -18,9 +18,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar as **integrações funcionais da Capacidade de Próximos Passos** com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, produtos especializados, organizações, serviços profissionais e fontes externas.
+Consolidar os **KPIs, guardrails, baseline, cenários e contrato final da Capacidade de Próximos Passos**.
 
-Os contratos vigentes distinguem comando, proposta e evento reconhecido, preservando imutabilidade histórica, autoridade, temporalidade, idempotência, versionamento, recortes mínimos, auditoria e falha segura.
+As integrações vigentes preservam titularidade, finalidade, minimização, autoridade limitada, proveniência, temporalidade, revogação, neutralidade comercial, independência das capacidades consumidoras e falha segura.
 
 ## Acesso rápido
 
@@ -33,6 +33,7 @@ Os contratos vigentes distinguem comando, proposta e evento reconhecido, preserv
 - [Regras do Ciclo de Vida dos Próximos Passos](product-architecture/pas-001-proximos-passos-ciclo-de-vida.md)
 - [Visualização e Controle dos Próximos Passos](product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
 - [Eventos Funcionais dos Próximos Passos](product-architecture/pas-001-proximos-passos-eventos-funcionais.md)
+- [Integrações Funcionais dos Próximos Passos](product-architecture/pas-001-proximos-passos-integracoes-funcionais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -48,7 +49,7 @@ Os contratos vigentes distinguem comando, proposta e evento reconhecido, preserv
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 80% |
+| 05 — Próximos Passos | In progress — 90% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -56,4 +57,4 @@ Os contratos vigentes distinguem comando, proposta e evento reconhecido, preserv
 
 ## Ponto de retomada
 
-Retomar nas integrações funcionais dos Próximos Passos, preservando finalidade, minimização, autoridade, independência das capacidades consumidoras, revogação e degradação controlada.
+Retomar nos KPIs, guardrails, baseline, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final dos Próximos Passos.
