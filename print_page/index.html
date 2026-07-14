@@ -7728,16 +7728,17 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>sincronização <code>GE2-SYNC-007</code> concluída;</li>
 <li>revisão <code>AR-001 0.5.0</code> concluída;</li>
 <li><code>PAS-001 — Guivos Journey 0.5.0</code> ativo;</li>
-<li>extensões normativas <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code>, <code>PAS-001-CV-VIEW-001 1.0.0</code>, <code>PAS-001-CV-EVENT-001 1.0.0</code>, <code>PAS-001-CV-INTEGRATION-001 1.0.0</code> e <code>PAS-001-CV-KPI-001 1.0.0</code> ativas;</li>
+<li>extensões normativas <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code>, <code>PAS-001-CV-VIEW-001 1.0.0</code>, <code>PAS-001-CV-EVENT-001 1.0.0</code>, <code>PAS-001-CV-INTEGRATION-001 1.0.0</code>, <code>PAS-001-CV-KPI-001 1.0.0</code> e <code>PAS-001-CV-CONTRACT-001 1.0.0</code> ativas;</li>
 <li><code>GLPA-001 1.1.1</code> vigente;</li>
 <li><code>GIA-000 1.3.0</code> vigente;</li>
 <li>Glossário Canônico <code>1.8.0</code>;</li>
 <li><code>GOG-001 — Guia Oficial 4.2.1</code>;</li>
-<li>Capacidade 02 — Contexto Vivo em desenvolvimento.</li>
+<li>Capacidade 02 — Contexto Vivo funcionalmente concluída;</li>
+<li>Capacidade 03 — Objetivos ativa.</li>
 </ul>
 <h2 id="index-missao-atual">Missão atual<a class="headerlink" href="#index-missao-atual" title="Permanent link">&para;</a></h2>
-<p>Completar funcionalmente a <strong>Capacidade 02 — Contexto Vivo</strong>.</p>
-<p>Responsabilidades, limites, fronteiras, entradas, saídas, estados das oito dimensões, regras temporais, conflitos, <code>Meu Contexto Hoje</code>, contratos detalhados dos eventos, integrações funcionais, KPIs e critérios de desempenho já estão consolidados.</p>
+<p>Especificar funcionalmente a <strong>Capacidade 03 — Objetivos</strong>.</p>
+<p>A Capacidade 02 possui definição, dimensões, estados, temporalidade, conflitos, interface, eventos, integrações, KPIs, cenários e contrato final consolidados.</p>
 <h2 id="index-acesso-rapido">Acesso rápido<a class="headerlink" href="#index-acesso-rapido" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#public-guia-oficial-da-guivos">Guia Oficial da Guivos</a></li>
@@ -7749,6 +7750,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#product-architecture-pas-001-contexto-vivo-eventos-funcionais">Eventos Funcionais do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-integracoes-funcionais">Integrações Funcionais do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-kpis-desempenho">KPIs e Desempenho do Contexto Vivo</a></li>
+<li><a href="#product-architecture-pas-001-contexto-vivo-cenarios-contrato-final">Cenários e Contrato Final do Contexto Vivo</a></li>
 <li><a href="#product-architecture-layered-product-architecture">GLPA-001</a></li>
 <li><a href="#intelligence-architecture">Guivos Intelligence Architecture</a></li>
 <li><a href="#glossary">Glossário Canônico</a></li>
@@ -7773,11 +7775,11 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>02 — Contexto Vivo</td>
-<td>In progress</td>
+<td>Functionally complete</td>
 </tr>
 <tr>
 <td>03 — Objetivos</td>
-<td>Planned</td>
+<td>In progress</td>
 </tr>
 <tr>
 <td>04 — Eventos de Vida</td>
@@ -7806,7 +7808,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tbody>
 </table>
 <h2 id="index-ponto-de-retomada">Ponto de retomada<a class="headerlink" href="#index-ponto-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Retomar na Capacidade 02, definindo os cenários funcionalmente ideal, alternativo e limite, seguidos do contrato final da capacidade.</p></section>
+<p>Retomar na Capacidade 03 — Objetivos, iniciando pela pergunta central, objetivo funcional, valor entregue, responsabilidades e limites.</p></section>
                     <section class='print-page md-section' id='section-2' heading-number='2'>
                         <h1>Guia Oficial da Guivos<a class='headerlink' href='#section-2' title='Permanent link'></a>
                         </h1>
@@ -13712,17 +13714,20 @@ Implementação = realização progressiva
 </tbody>
 </table>
 <h2 id="product-architecture-especificacao-vigente-do-journey">Especificação vigente do Journey<a class="headerlink" href="#product-architecture-especificacao-vigente-do-journey" title="Permanent link">&para;</a></h2>
-<p>O <code>PAS-001 — Guivos Journey</code> é a especificação principal da Experience Layer.</p>
-<p>As extensões normativas vigentes da Capacidade 02 são:</p>
+<p>O <code>PAS-001 — Guivos Journey 0.5.0</code> é a especificação-base da Experience Layer.</p>
+<p>As extensões normativas da Capacidade 02 são:</p>
 <ul>
 <li><code>PAS-001-CV-STATE-001</code> — estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução;</li>
 <li><code>PAS-001-CV-UPDATE-001</code> — unidade de atualização, gatilhos, temporalidade, envelhecimento, confirmação proporcional, permissões e propagação controlada;</li>
-<li><code>PAS-001-CV-CONFLICT-001</code> — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos entre informações, fontes, dimensões e temporalidades;</li>
-<li><code>PAS-001-CV-VIEW-001</code> — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle do participante em <code>Meu Contexto Hoje</code>;</li>
-<li><code>PAS-001-CV-EVENT-001</code> — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais do Contexto Vivo;</li>
-<li><code>PAS-001-CV-INTEGRATION-001</code> — contratos e limites funcionais entre o Contexto Vivo, capacidades internas, camadas do ecossistema e fontes externas;</li>
-<li><code>PAS-001-CV-KPI-001</code> — indicadores de qualidade, segurança, controle, operação e utilidade funcional, incluindo guardrails críticos de tolerância zero.</li>
+<li><code>PAS-001-CV-CONFLICT-001</code> — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos;</li>
+<li><code>PAS-001-CV-VIEW-001</code> — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle em <code>Meu Contexto Hoje</code>;</li>
+<li><code>PAS-001-CV-EVENT-001</code> — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais;</li>
+<li><code>PAS-001-CV-INTEGRATION-001</code> — contratos e limites entre o Contexto Vivo, capacidades internas, camadas do ecossistema e fontes externas;</li>
+<li><code>PAS-001-CV-KPI-001</code> — indicadores de qualidade, segurança, controle, operação e utilidade funcional, incluindo guardrails críticos;</li>
+<li><code>PAS-001-CV-CONTRACT-001</code> — cenários ideal, alternativo e limite e contrato final da Capacidade 02.</li>
 </ul>
+<p>O <code>PAS-001-CV-CONTRACT-001 1.0.0</code> substitui normativamente o estado e o ponto de retomada das seções 44 e 45 do <code>PAS-001 0.5.0</code>.</p>
+<p>A Capacidade 02 — Contexto Vivo está <strong>funcionalmente concluída</strong>. A Capacidade 03 — Objetivos é a frente ativa do Product Engineering.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -13746,6 +13751,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-contexto-vivo-eventos-funcionais">PAS-001-CV-EVENT-001 — Eventos Funcionais do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-integracoes-funcionais">PAS-001-CV-INTEGRATION-001 — Integrações Funcionais do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-kpis-desempenho">PAS-001-CV-KPI-001 — KPIs e Desempenho do Contexto Vivo</a></li>
+<li><a href="#product-architecture-pas-001-contexto-vivo-cenarios-contrato-final">PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
@@ -29751,6 +29757,11 @@ Next authorized review: A2-R02
 <td>Definir KPIs, guardrails e critérios de desempenho funcional</td>
 </tr>
 <tr>
+<td>PAS-001-CV-CONTRACT-001</td>
+<td>Active 1.0.0</td>
+<td>Definir cenários funcionais e contrato final do Contexto Vivo</td>
+</tr>
+<tr>
 <td>GLPA-001</td>
 <td>Approved 1.1.1</td>
 <td>Organizar a Guivos por camadas funcionais</td>
@@ -29796,16 +29807,20 @@ Next authorized review: A2-R02
 <td><code>Product Engineering</code></td>
 </tr>
 <tr>
-<td>Especificação ativa</td>
+<td>Especificação-base</td>
 <td><code>PAS-001 — Guivos Journey 0.5.0</code></td>
 </tr>
 <tr>
-<td>Extensões normativas</td>
-<td><code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code>, <code>PAS-001-CV-VIEW-001 1.0.0</code>, <code>PAS-001-CV-EVENT-001 1.0.0</code>, <code>PAS-001-CV-INTEGRATION-001 1.0.0</code> e <code>PAS-001-CV-KPI-001 1.0.0</code></td>
+<td>Extensões normativas do Contexto Vivo</td>
+<td><code>STATE</code>, <code>UPDATE</code>, <code>CONFLICT</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code>, <code>KPI</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code></td>
+</tr>
+<tr>
+<td>Capacidade concluída</td>
+<td><code>02 — Contexto Vivo</code></td>
 </tr>
 <tr>
 <td>Capacidade ativa</td>
-<td><code>02 — Contexto Vivo</code></td>
+<td><code>03 — Objetivos</code></td>
 </tr>
 <tr>
 <td>Arquitetura funcional</td>
@@ -29833,7 +29848,7 @@ Next authorized review: A2-R02
 </tr>
 <tr>
 <td>Foco imediato</td>
-<td>Definir cenários funcionalmente ideal, alternativo e limite e consolidar o contrato final do Contexto Vivo</td>
+<td>Definir pergunta central, objetivo, valor, responsabilidades e limites da Capacidade 03</td>
 </tr>
 </tbody>
 </table>
@@ -29854,13 +29869,13 @@ Next authorized review: A2-R02
 </tr>
 <tr>
 <td>02 — Contexto Vivo</td>
-<td>In progress</td>
-<td>Definição, dimensões, ciclo de vida, entradas, saídas, estados, regras temporais, conflitos, interface, eventos, integrações e KPIs registrados</td>
+<td>Functionally complete</td>
+<td>Oito extensões normativas e contrato final consolidados</td>
 </tr>
 <tr>
 <td>03 — Objetivos</td>
-<td>Planned</td>
-<td>Próxima após Capacidade 02</td>
+<td>In progress</td>
+<td>Nova frente ativa do Product Engineering</td>
 </tr>
 <tr>
 <td>04 — Eventos de Vida</td>
@@ -29894,106 +29909,74 @@ Next authorized review: A2-R02
 </tr>
 </tbody>
 </table>
-<h2 id="project-knowledge-board-avanco-do-contexto-vivo">Avanço do Contexto Vivo<a class="headerlink" href="#project-knowledge-board-avanco-do-contexto-vivo" title="Permanent link">&para;</a></h2>
+<h2 id="project-knowledge-board-baseline-concluida-do-contexto-vivo">Baseline concluída do Contexto Vivo<a class="headerlink" href="#project-knowledge-board-baseline-concluida-do-contexto-vivo" title="Permanent link">&para;</a></h2>
 <p>Consolidados no <code>PAS-001 0.5.0</code>:</p>
 <ul>
-<li>responsabilidades e limites;</li>
-<li>fronteiras funcionais;</li>
+<li>definição funcional e Representação Humilde;</li>
+<li>responsabilidades, limites e fronteiras;</li>
 <li>entradas e controles de admissão;</li>
 <li>saídas e recortes autorizados;</li>
 <li>eventos funcionais iniciais;</li>
 <li>contrato funcional das saídas.</li>
 </ul>
-<p>Consolidados no <code>PAS-001-CV-STATE-001 1.0.0</code>:</p>
+<p>Consolidados nas extensões normativas:</p>
+<table>
+<thead>
+<tr>
+<th>Extensão</th>
+<th>Escopo consolidado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PAS-001-CV-STATE-001</code></td>
+<td>Estados, transições e impactos das oito dimensões</td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-UPDATE-001</code></td>
+<td>Atualização seletiva, temporalidade, revisão e envelhecimento</td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-CONFLICT-001</code></td>
+<td>Identificação, resolução, explicabilidade e reabertura de conflitos</td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-VIEW-001</code></td>
+<td>Transparência e controle em <code>Meu Contexto Hoje</code></td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-EVENT-001</code></td>
+<td>Contratos versionados dos eventos funcionais</td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-INTEGRATION-001</code></td>
+<td>Integrações com capacidades, camadas, serviços e fontes externas</td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-KPI-001</code></td>
+<td>Indicadores, guardrails e desempenho funcional</td>
+</tr>
+<tr>
+<td><code>PAS-001-CV-CONTRACT-001</code></td>
+<td>Cenários ideal, alternativo e limite e contrato final da capacidade</td>
+</tr>
+</tbody>
+</table>
+<p>O <code>PAS-001-CV-CONTRACT-001</code> substitui normativamente as seções 44 e 45 do <code>PAS-001 0.5.0</code> quanto ao estado da capacidade e ao ponto de retomada.</p>
+<h2 id="project-knowledge-board-criterios-de-conclusao-atendidos">Critérios de conclusão atendidos<a class="headerlink" href="#project-knowledge-board-criterios-de-conclusao-atendidos" title="Permanent link">&para;</a></h2>
 <ul>
-<li>estrutura comum de estado;</li>
-<li>estados funcionais das oito dimensões;</li>
-<li>estados resumidos explicáveis;</li>
-<li>transições não lineares;</li>
-<li>impactos controlados entre dimensões.</li>
-</ul>
-<p>Consolidados no <code>PAS-001-CV-UPDATE-001 1.0.0</code>:</p>
-<ul>
-<li>atualização seletiva por elemento contextual;</li>
-<li>gatilhos, resultados e fluxo funcional;</li>
-<li>confirmação proporcional e regras conforme origem;</li>
-<li>classes temporais e estados de envelhecimento;</li>
-<li>horizontes e revisões por dimensão;</li>
-<li>fadiga de confirmação;</li>
-<li>atualizações silenciosas permitidas e proibidas;</li>
-<li>permissões, propagação e reprocessamento;</li>
-<li>atualizações retroativas e distinção entre correção e mudança real;</li>
-<li>eventos funcionais relacionados.</li>
-</ul>
-<p>Consolidados no <code>PAS-001-CV-CONFLICT-001 1.0.0</code>:</p>
-<ul>
-<li>princípios, tipos e estados funcionais de conflito;</li>
-<li>registro, gatilhos e fluxo de resolução;</li>
-<li>critérios de comparação e ordem funcional de consideração;</li>
-<li>resultados possíveis e participação do participante;</li>
-<li>conflitos entre declarações, integrações, organizações, comportamentos, dimensões, permissões e temporalidades;</li>
-<li>impacto sobre capacidades consumidoras;</li>
-<li>resolução automática permitida e proibida;</li>
-<li>explicabilidade, reabertura e critérios de resolução confiável.</li>
-</ul>
-<p>Consolidados no <code>PAS-001-CV-VIEW-001 1.0.0</code>:</p>
-<ul>
-<li>transparência e controle do Contexto Vivo;</li>
-<li>síntese do momento atual e oito dimensões;</li>
-<li>estados linguísticos e níveis de detalhamento;</li>
-<li>confirmação, correção, contestação e inferências;</li>
-<li>conflitos, envelhecimento e informações sensíveis;</li>
-<li>permissões por finalidade, integrações e histórico;</li>
-<li>evolução, ausência de informação e dimensões não utilizadas;</li>
-<li>priorização de atenção e prevenção de sobrecarga;</li>
-<li>explicação de recomendações e consequências de alterações;</li>
-<li>recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;</li>
-<li>eventos relacionados e critérios funcionais de aceitação.</li>
-</ul>
-<p>Consolidados no <code>PAS-001-CV-EVENT-001 1.0.0</code>:</p>
-<ul>
-<li>distinção entre comando, proposta e evento;</li>
-<li>imutabilidade histórica, temporalidade, proveniência, autorização e minimização;</li>
-<li>estrutura comum, correlação, ordenação e versionamento;</li>
-<li>contratos de atualização, confirmação, revisão e temporalidade;</li>
-<li>contratos de conflito, permissão e integração;</li>
-<li>recortes contextuais, notificações e reavaliação de decisões;</li>
-<li>eventos de interação, ocultação, desfazimento e remoção;</li>
-<li>eventos de dimensão e contexto recompostos;</li>
-<li>proteção de informações sensíveis e identificação de inferências;</li>
-<li>eventos retroativos, correções, duplicidade, falhas, explicabilidade e retenção.</li>
-</ul>
-<p>Consolidados no <code>PAS-001-CV-INTEGRATION-001 1.0.0</code>:</p>
-<ul>
-<li>objetivos, princípios, tipos, modos e contrato funcional;</li>
-<li>identificação do participante, proveniência e autoridade das fontes;</li>
-<li>integração com as capacidades 01 a 09;</li>
-<li>integração com Intelligence, Platform Layer e serviços especializados;</li>
-<li>classes e qualidade de fontes externas;</li>
-<li>proteção de informações sensíveis, de terceiros e de sessão;</li>
-<li>autorização, pausa, revogação e falha segura;</li>
-<li>degradação controlada, divergência, frequência, auditoria e explicabilidade;</li>
-<li>prevenção de ciclos indevidos e perfis paralelos.</li>
-</ul>
-<p>Consolidados no <code>PAS-001-CV-KPI-001 1.0.0</code>:</p>
-<ul>
-<li>princípios, unidades e nove famílias de indicadores;</li>
-<li>cobertura, atualidade, confiança, proveniência e qualidade das atualizações;</li>
-<li>correções, contestações, conflitos e reaberturas;</li>
-<li>permissões, revogações e incidentes de finalidade;</li>
-<li>transparência, compreensão, esforço e fadiga;</li>
-<li>integrações, falha segura, propagação e efeitos duplicados;</li>
-<li>utilidade dos recortes e adequação das decisões;</li>
-<li>exclusão indevida de oportunidades e incompatibilidades;</li>
-<li>equilíbrio, justiça e consistência;</li>
-<li>guardrails críticos de tolerância zero;</li>
-<li>níveis de desempenho, metas condicionadas a baseline e governança;</li>
-<li>painel e índice de saúde do Contexto Vivo.</li>
-</ul>
-<p>Próximo bloco:</p>
-<ul>
-<li>cenários funcionalmente ideal, alternativo e limite;</li>
-<li>contrato final da capacidade.</li>
+<li>responsabilidades e limites definidos;</li>
+<li>entradas e saídas contratadas;</li>
+<li>dimensões e estados definidos;</li>
+<li>atualização e envelhecimento especificados;</li>
+<li>conflitos tratados;</li>
+<li>interface funcionalmente definida;</li>
+<li>eventos contratados;</li>
+<li>integrações delimitadas;</li>
+<li>KPIs e guardrails estabelecidos;</li>
+<li>cenários ideal, alternativo e limite definidos;</li>
+<li>critérios finais de aceite consolidados;</li>
+<li>ausência de lacunas funcionais críticas conhecidas.</li>
 </ul>
 <h2 id="project-knowledge-board-reconciliacao-ge2-sync-007">Reconciliação GE2-SYNC-007<a class="headerlink" href="#project-knowledge-board-reconciliacao-ge2-sync-007" title="Permanent link">&para;</a></h2>
 <p>A reconciliação confirmou:</p>
@@ -30003,7 +29986,7 @@ Next authorized review: A2-R02
 <li>o Guivos Market Validation System já estava incorporado e posteriormente refinado;</li>
 <li>versões e nomenclaturas residuais exigiam apenas correção editorial;</li>
 <li>formulário e planilha automática permanecem entregáveis operacionais futuros;</li>
-<li>a Capacidade 02 continua sendo a frente oficial.</li>
+<li>a conclusão do Contexto Vivo preserva a Foundation e não promove candidatos arquiteturais à Canon.</li>
 </ul>
 <h2 id="project-knowledge-board-conceitos-internos-preservados">Conceitos internos preservados<a class="headerlink" href="#project-knowledge-board-conceitos-internos-preservados" title="Permanent link">&para;</a></h2>
 <table>
@@ -30016,7 +29999,7 @@ Next authorized review: A2-R02
 <tbody>
 <tr>
 <td>Contexto Vivo</td>
-<td>Approved for PAS / In progress</td>
+<td>Functionally complete</td>
 </tr>
 <tr>
 <td>Estados Dimensionais do Contexto Vivo</td>
@@ -30047,8 +30030,16 @@ Next authorized review: A2-R02
 <td>Normative 1.0.0</td>
 </tr>
 <tr>
+<td>Cenários e Contrato Final do Contexto Vivo</td>
+<td>Normative 1.0.0</td>
+</tr>
+<tr>
 <td>Interpretação do Contexto</td>
 <td>Approved for PAS</td>
+</tr>
+<tr>
+<td>Objetivos</td>
+<td>Active for Product Engineering</td>
 </tr>
 <tr>
 <td>Eventos de Vida</td>
@@ -30095,11 +30086,11 @@ Next authorized review: A2-R02
 <tbody>
 <tr>
 <td>Roadmap</td>
-<td>6.0.0</td>
+<td>6.1.0</td>
 </tr>
 <tr>
 <td>Knowledge Board</td>
-<td>6.1.0</td>
+<td>6.2.0</td>
 </tr>
 <tr>
 <td>Architectural Milestones</td>
@@ -30138,6 +30129,10 @@ Next authorized review: A2-R02
 <td>Active 1.0.0</td>
 </tr>
 <tr>
+<td>PAS-001-CV-CONTRACT-001</td>
+<td>Active 1.0.0</td>
+</tr>
+<tr>
 <td>GLPA-001</td>
 <td>Approved 1.1.1</td>
 </tr>
@@ -30168,7 +30163,7 @@ Next authorized review: A2-R02
 </tbody>
 </table>
 <h2 id="project-knowledge-board-proxima-atividade">Próxima atividade<a class="headerlink" href="#project-knowledge-board-proxima-atividade" title="Permanent link">&para;</a></h2>
-<p>Completar a <strong>Capacidade 02 — Contexto Vivo</strong>, definindo os cenários funcionalmente ideal, alternativo e limite e consolidando o contrato final da capacidade.</p></section><section class="print-page" id="project-canonical-consolidation-matrix" heading-number="16.19"><h1 id="project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica">Matriz de Consolidação Canônica<a class="headerlink" href="#project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica" title="Permanent link">&para;</a></h1>
+<p>Iniciar a <strong>Capacidade 03 — Objetivos</strong>, definindo pergunta central, objetivo funcional, valor entregue, responsabilidades, limites e distinções conceituais fundamentais.</p></section><section class="print-page" id="project-canonical-consolidation-matrix" heading-number="16.19"><h1 id="project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica">Matriz de Consolidação Canônica<a class="headerlink" href="#project-canonical-consolidation-matrix-matriz-de-consolidacao-canonica" title="Permanent link">&para;</a></h1>
 <p>Esta matriz controla a revisão das decisões históricas da Guivos.</p>
 <p>Os arquivos legados, PDFs e conversas são tratados como evidências. O GKR consolidado permanece como fonte oficial.</p>
 <h2 id="project-canonical-consolidation-matrix-decisoes-possiveis">Decisões possíveis<a class="headerlink" href="#project-canonical-consolidation-matrix-decisoes-possiveis" title="Permanent link">&para;</a></h2>
@@ -30565,121 +30560,53 @@ Next authorized review: A2-R02
 <li><strong>Frente operacional vigente:</strong> <code>Product Engineering</code>.</li>
 <li><strong>Sincronização vigente:</strong> <code>GE2-SYNC-007</code>.</li>
 <li><strong>Revisão vigente:</strong> <code>AR-001</code>, concluída na versão <code>0.5.0</code>.</li>
-<li><strong>Especificação ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
-<li><strong>Extensões normativas ativas:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code>, <code>PAS-001-CV-VIEW-001 1.0.0</code>, <code>PAS-001-CV-EVENT-001 1.0.0</code>, <code>PAS-001-CV-INTEGRATION-001 1.0.0</code> e <code>PAS-001-CV-KPI-001 1.0.0</code>.</li>
+<li><strong>Especificação-base ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
+<li><strong>Extensões normativas do Contexto Vivo:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code>, <code>PAS-001-CV-VIEW-001 1.0.0</code>, <code>PAS-001-CV-EVENT-001 1.0.0</code>, <code>PAS-001-CV-INTEGRATION-001 1.0.0</code>, <code>PAS-001-CV-KPI-001 1.0.0</code> e <code>PAS-001-CV-CONTRACT-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
 <li><strong>Guia Oficial:</strong> <code>GOG-001 4.2.1</code>.</li>
-<li><strong>Capacidade ativa:</strong> <code>02 — Contexto Vivo</code>.</li>
+<li><strong>Capacidade concluída:</strong> <code>02 — Contexto Vivo</code>.</li>
+<li><strong>Capacidade ativa:</strong> <code>03 — Objetivos</code>.</li>
 <li><strong>GKA-000:</strong> Parte V pendente.</li>
 <li><strong>A2-R02:</strong> em espera operacional.</li>
 <li><strong>Guivos Economic Model:</strong> planejado.</li>
 </ul>
 <h2 id="roadmap-direcao-vigente">Direção vigente<a class="headerlink" href="#roadmap-direcao-vigente" title="Permanent link">&para;</a></h2>
-<p>O trabalho permanece na <code>Capacidade 02 — Contexto Vivo</code> do <code>PAS-001 — Guivos Journey</code>.</p>
+<p>O trabalho avança para a <code>Capacidade 03 — Objetivos</code> do <code>PAS-001 — Guivos Journey</code>.</p>
 <blockquote>
 <p>A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.</p>
 </blockquote>
 <p>Novos frameworks estruturais não serão desenvolvidos enquanto os produtos oficiais não possuírem especificação funcional suficiente.</p>
-<h2 id="roadmap-avanco-da-capacidade-02">Avanço da Capacidade 02<a class="headerlink" href="#roadmap-avanco-da-capacidade-02" title="Permanent link">&para;</a></h2>
-<p>O <code>PAS-001 0.5.0</code> consolidou:</p>
+<h2 id="roadmap-conclusao-da-capacidade-02">Conclusão da Capacidade 02<a class="headerlink" href="#roadmap-conclusao-da-capacidade-02" title="Permanent link">&para;</a></h2>
+<p>O <code>PAS-001 0.5.0</code> e suas extensões normativas consolidaram:</p>
 <ul>
-<li>responsabilidades e limites;</li>
-<li>fronteiras funcionais entre Journey, Intelligence, Platform e capacidades consumidoras;</li>
-<li>categorias de entrada;</li>
-<li>requisitos mínimos e regras de admissão;</li>
-<li>saídas funcionais;</li>
-<li>eventos funcionais iniciais;</li>
-<li>contrato funcional das saídas.</li>
-</ul>
-<p>A extensão normativa <code>PAS-001-CV-STATE-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>estrutura comum de estado;</li>
+<li>responsabilidades, limites e fronteiras funcionais;</li>
+<li>entradas, requisitos de admissão, saídas e recortes autorizados;</li>
 <li>estados funcionais das oito dimensões;</li>
-<li>transições e impactos controlados entre dimensões.</li>
+<li>atualização seletiva, temporalidade e envelhecimento;</li>
+<li>resolução explicável de conflitos;</li>
+<li>transparência e controle em <code>Meu Contexto Hoje</code>;</li>
+<li>contratos versionados dos eventos funcionais;</li>
+<li>integrações com capacidades, camadas, serviços e fontes externas;</li>
+<li>KPIs, guardrails e critérios de desempenho;</li>
+<li>cenários funcionalmente ideal, alternativo e limite;</li>
+<li>contrato final da capacidade.</li>
 </ul>
-<p>A extensão normativa <code>PAS-001-CV-UPDATE-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>elemento contextual como unidade mínima de atualização;</li>
-<li>gatilhos e fluxo funcional de atualização;</li>
-<li>resultados possíveis da avaliação;</li>
-<li>confirmação proporcional ao impacto;</li>
-<li>regras conforme origem e evidência;</li>
-<li>classes temporais e estados de envelhecimento;</li>
-<li>horizontes e revisões por dimensão;</li>
-<li>prevenção de fadiga de confirmação;</li>
-<li>atualizações silenciosas permitidas e proibidas;</li>
-<li>efeitos das permissões;</li>
-<li>propagação, reprocessamento e atualizações retroativas;</li>
-<li>distinção entre correção e mudança real;</li>
-<li>eventos funcionais relacionados.</li>
-</ul>
-<p>A extensão normativa <code>PAS-001-CV-CONFLICT-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>princípios, tipos e estados funcionais de conflito;</li>
-<li>registro próprio e fluxo de resolução;</li>
-<li>critérios de comparação e ordem funcional de consideração;</li>
-<li>resultados possíveis e participação do participante;</li>
-<li>conflitos entre declarações, integrações, organizações, comportamentos, dimensões, permissões e temporalidades;</li>
-<li>impactos sobre capacidades consumidoras e decisões existentes;</li>
-<li>resolução automática permitida e proibida;</li>
-<li>explicabilidade, reabertura e critérios de resolução confiável.</li>
-</ul>
-<p>A extensão normativa <code>PAS-001-CV-VIEW-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>objetivos e princípios de <code>Meu Contexto Hoje</code>;</li>
-<li>síntese do momento e visualização das oito dimensões;</li>
-<li>estados linguísticos e níveis progressivos de detalhamento;</li>
-<li>confirmação, correção, contestação e tratamento de inferências;</li>
-<li>conflitos, envelhecimento, informações sensíveis e permissões por finalidade;</li>
-<li>integrações, histórico e evidências de evolução;</li>
-<li>priorização de atenção e prevenção de sobrecarga;</li>
-<li>explicação de recomendações e consequências de alterações;</li>
-<li>recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;</li>
-<li>eventos relacionados e critérios funcionais de aceitação.</li>
-</ul>
-<p>A extensão normativa <code>PAS-001-CV-EVENT-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>distinção entre comandos, propostas e fatos reconhecidos;</li>
-<li>princípios de imutabilidade histórica, temporalidade, proveniência, minimização e reprocessamento seguro;</li>
-<li>estrutura comum, identidade, correlação, ordenação e versionamento dos eventos;</li>
-<li>categorias e contratos de atualização, confirmação, revisão, envelhecimento e conflitos;</li>
-<li>contratos de permissões, integrações, recortes contextuais, propagação e reavaliação de decisões;</li>
-<li>separação entre eventos de interação e eventos de mudança contextual;</li>
-<li>contratos de ocultação, desfazimento, remoção, dimensão e contexto atualizados;</li>
-<li>regras para informações sensíveis, inferências, eventos retroativos, correções, duplicidade e falhas de processamento;</li>
-<li>explicabilidade, retenção e critérios funcionais de aceitação.</li>
-</ul>
-<p>A extensão normativa <code>PAS-001-CV-INTEGRATION-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>objetivos, princípios, tipos, modos e contrato funcional das integrações;</li>
-<li>identificação do participante, proveniência e autoridade limitada das fontes;</li>
-<li>integração com as capacidades 01 a 09 do Journey;</li>
-<li>integração com Guivos Intelligence, Platform Layer, Business, Mall, Travel, Media e Ads;</li>
-<li>classes, qualidade, transformações e limites das fontes externas;</li>
-<li>proteção de informações de terceiros, sensíveis e temporárias de sessão;</li>
-<li>autorização, pausa, revogação, falhas e degradação controlada;</li>
-<li>sincronização divergente, frequência, explicabilidade e auditoria;</li>
-<li>prevenção de ciclos indevidos e exclusão inadequada de oportunidades;</li>
-<li>integração com conversas, notificações, busca e jornadas relacionadas.</li>
-</ul>
-<p>A extensão normativa <code>PAS-001-CV-KPI-001 1.0.0</code> consolidou:</p>
-<ul>
-<li>princípios, unidades e famílias de mensuração;</li>
-<li>cobertura funcional, lacunas críticas e excesso contextual;</li>
-<li>atualidade, urgência, confiança e proveniência;</li>
-<li>qualidade de atualizações, correções e contestações;</li>
-<li>conflitos, permissões, revogações e incidentes de finalidade;</li>
-<li>transparência, compreensão, esforço e fadiga;</li>
-<li>qualidade de integrações, falha segura e propagação;</li>
-<li>utilidade para capacidades consumidoras e adequação de decisões;</li>
-<li>exclusão indevida de oportunidades e incompatibilidades não detectadas;</li>
-<li>equilíbrio funcional, justiça e consistência;</li>
-<li>guardrails de tolerância zero, níveis de desempenho e governança;</li>
-<li>painel e índice composto de saúde condicionado a baseline real.</li>
-</ul>
-<p>O próximo bloco definirá os cenários funcionalmente ideal, alternativo e limite, seguido do contrato final da capacidade.</p>
+<p>O <code>PAS-001-CV-CONTRACT-001 1.0.0</code> substitui normativamente o estado e o ponto de retomada das seções 44 e 45 do <code>PAS-001 0.5.0</code>.</p>
+<p>A Capacidade 02 está <strong>funcionalmente concluída</strong>.</p>
+<h2 id="roadmap-inicio-da-capacidade-03">Início da Capacidade 03<a class="headerlink" href="#roadmap-inicio-da-capacidade-03" title="Permanent link">&para;</a></h2>
+<p>A especificação de Objetivos deverá iniciar por:</p>
+<ol>
+<li>pergunta central;</li>
+<li>objetivo funcional;</li>
+<li>valor entregue;</li>
+<li>responsabilidades e limites;</li>
+<li>distinção entre objetivo, intenção, sonho, prioridade e possibilidade;</li>
+<li>entradas e requisitos de admissão;</li>
+<li>estados funcionais iniciais;</li>
+<li>relação com Contexto Vivo e demais capacidades.</li>
+</ol>
 <h2 id="roadmap-reconciliacao-de-continuidade">Reconciliação de continuidade<a class="headerlink" href="#roadmap-reconciliacao-de-continuidade" title="Permanent link">&para;</a></h2>
 <p>A <code>GE2-SYNC-007</code> concluiu a leitura do estado atual do repositório e a comparação com o extrato final da conversa anterior.</p>
 <p>Resultados:</p>
@@ -30688,7 +30615,8 @@ Next authorized review: A2-R02
 <li>Contexto Vivo e Market Validation estavam incorporados;</li>
 <li>divergências editoriais demonstráveis foram autorizadas para correção;</li>
 <li>formulário e planilha de validação permanecem entregáveis operacionais futuros;</li>
-<li>o ponto de retomada do Product Engineering foi preservado e avançado para os cenários funcionais e o contrato final do Contexto Vivo.</li>
+<li>a Capacidade 02 foi concluída por extensões normativas modulares;</li>
+<li>o ponto de retomada do Product Engineering foi transferido para a Capacidade 03 — Objetivos.</li>
 </ul>
 <h2 id="roadmap-progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#roadmap-progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
@@ -30707,12 +30635,12 @@ Next authorized review: A2-R02
 </tr>
 <tr>
 <td>02 — Contexto Vivo</td>
-<td>In progress</td>
-<td>98%</td>
+<td>Functionally complete</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>03 — Objetivos</td>
-<td>Planned</td>
+<td>In progress</td>
 <td>0%</td>
 </tr>
 <tr>
@@ -30766,21 +30694,25 @@ Next authorized review: A2-R02
 <li>gerar o formulário definitivo de aplicação;</li>
 <li>construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.</li>
 </ul>
-<p>Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural do Contexto Vivo.</p>
+<p>Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 03.</p>
 <h2 id="roadmap-restricoes">Restrições<a class="headerlink" href="#roadmap-restricoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>não retornar à meta-arquitetura como foco imediato;</li>
 <li>não promover LPM, CIE, GPMA ou outros candidatos diretamente à Canon;</li>
 <li>não tratar conceitos candidatos como componentes técnicos obrigatórios;</li>
 <li>preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;</li>
-<li>não iniciar o próximo produto antes de conclusão funcional suficiente do atual.</li>
+<li>não reabrir a Capacidade 02 sem lacuna crítica, evidência operacional ou decisão formal;</li>
+<li>não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.</li>
 </ul>
 <h2 id="roadmap-ponto-exato-de-retomada">Ponto exato de retomada<a class="headerlink" href="#roadmap-ponto-exato-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Retomar na <strong>Capacidade 02 — Contexto Vivo</strong>.</p>
+<p>Retomar na <strong>Capacidade 03 — Objetivos</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>cenários funcionalmente ideal, alternativo e limite;</li>
-<li>contrato final da capacidade.</li>
+<li>pergunta central, objetivo funcional e valor entregue;</li>
+<li>responsabilidades e limites;</li>
+<li>distinções conceituais centrais;</li>
+<li>entradas, estados e regras iniciais;</li>
+<li>integração com Contexto Vivo.</li>
 </ol></section></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
