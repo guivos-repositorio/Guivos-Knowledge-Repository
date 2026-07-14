@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 7.9.0
+version: 8.0.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -27,6 +27,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-PP-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida dos Próximos Passos |
 | PAS-001-PP-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle dos Próximos Passos |
 | PAS-001-PP-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais dos Próximos Passos |
+| PAS-001-PP-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais dos Próximos Passos |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -43,13 +44,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida` |
 | Capacidade ativa | `05 — Próximos Passos` |
 | Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-PP-EVENT-001 1.0.0` |
-| Progresso editorial de Próximos Passos | `80%` |
+| Extensão normativa vigente | `PAS-001-PP-INTEGRATION-001 1.0.0` |
+| Progresso editorial de Próximos Passos | `90%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar as integrações funcionais dos Próximos Passos |
+| Foco imediato | Consolidar KPIs, guardrails, cenários e contrato final dos Próximos Passos |
 
 ## Capacidades do Journey
 
@@ -59,7 +60,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
-| 05 — Próximos Passos | In progress — 80% | Fundamentos, ciclo, visualização e eventos funcionais consolidados; integrações são a próxima entrega |
+| 05 — Próximos Passos | In progress — 90% | Fundamentos, ciclo, visualização, eventos e integrações consolidados; contrato final é a próxima entrega |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
@@ -149,6 +150,30 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 - exclusão, anonimização, retenção, logs minimizados, falha segura e recuperação;
 - explicabilidade, auditoria e responsabilidades dos produtores e consumidores.
 
+### Integrações funcionais
+
+- integração como intercâmbio governado, não como decisão;
+- tipos e modos funcionais com permissões próprias;
+- contrato comum das integrações;
+- requisitos de admissão, identidade, associação, autoridade, proveniência, qualidade e confiança;
+- temporalidade, retroatividade e transformações controladas;
+- proibição de fabricar prazo, prioridade, intenção, responsabilidade, causalidade, diagnóstico, evolução ou conclusão;
+- sincronização, idempotência, duplicidade, ordenação, conflitos e reconciliação;
+- prevenção de ciclos entre capacidades;
+- finalidade, minimização e permissões;
+- pausa, revogação e preservação de fatos históricos legítimos;
+- falha segura e degradação controlada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
+- integrações com Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e responsabilidades da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- integrações profissionais, educacionais, de saúde, financeiras, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
+- integrações temporárias e pessoais;
+- proteção de terceiros e passos compartilhados;
+- conflitos entre fontes e eventos retroativos;
+- canais conversacionais, notificações e busca;
+- saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.
+
 ## Conceitos internos preservados
 
 | Conceito | Estado |
@@ -156,16 +181,18 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
-| Próximos Passos | In progress — 80% |
+| Próximos Passos | In progress — 90% |
 | Fundamentos de Próximos Passos | Normative 1.0.0 |
 | Ciclo de Vida de Próximos Passos | Normative 1.0.0 |
 | Visualização e Controle de Próximos Passos | Normative 1.0.0 |
 | Eventos Funcionais de Próximos Passos | Normative 1.0.0 |
+| Integrações Funcionais de Próximos Passos | Normative 1.0.0 |
 | Meus Próximos Passos | Superfície de clareza e controle, sem cobrança ou pontuação de produtividade |
 | Próximo Passo proposto | Hipótese de movimento ainda não assumida |
 | Próximo Passo confirmado | Decisão reconhecida sem significar início de execução |
 | Evento funcional de Próximo Passo | Fato reconhecido, versionado, idempotente e historicamente imutável |
 | Comando funcional | Solicitação de alteração que não representa fato reconhecido |
+| Integração funcional de Próximo Passo | Intercâmbio governado por finalidade, minimização, autoridade, proveniência, temporalidade e revogação |
 | Portfólio ativo | Movimentos com relevância operacional atual |
 | Possibilidades futuras | Alternativas disponíveis sem compromisso operacional |
 | Prioridade operacional | Ordem contextual de atenção ou execução |
@@ -192,8 +219,8 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 7.8.0 |
-| Knowledge Board | 7.9.0 |
+| Roadmap | 7.9.0 |
+| Knowledge Board | 8.0.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -203,6 +230,7 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | PAS-001-PP-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-PP-VIEW-001 | Active 1.0.0 |
 | PAS-001-PP-EVENT-001 | Active 1.0.0 |
+| PAS-001-PP-INTEGRATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -212,4 +240,4 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 ## Próxima atividade
 
-Consolidar as **integrações funcionais da Capacidade de Próximos Passos** com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, produtos especializados, organizações, serviços profissionais e fontes externas.
+Consolidar os **KPIs, guardrails, baseline, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Próximos Passos**.
