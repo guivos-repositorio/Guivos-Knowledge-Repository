@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 7.6.0
+version: 7.7.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -24,6 +24,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final da Capacidade de Objetivos |
 | PAS-001-EV-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final de Eventos de Vida |
 | PAS-001-PP-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Próximos Passos |
+| PAS-001-PP-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida dos Próximos Passos |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -40,13 +41,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos` e `04 — Eventos de Vida` |
 | Capacidade ativa | `05 — Próximos Passos` |
 | Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-PP-FOUNDATION-001 1.0.0` |
-| Progresso editorial de Próximos Passos | `20%` |
+| Extensões normativas vigentes | `PAS-001-PP-FOUNDATION-001 1.0.0` e `PAS-001-PP-LIFECYCLE-001 1.0.0` |
+| Progresso editorial de Próximos Passos | `40%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar o ciclo de vida dos Próximos Passos |
+| Foco imediato | Consolidar a visualização e o controle dos Próximos Passos |
 
 ## Capacidades do Journey
 
@@ -56,7 +57,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
-| 05 — Próximos Passos | In progress — 20% | Fundamentos iniciais consolidados; ciclo de vida é a próxima entrega |
+| 05 — Próximos Passos | In progress — 40% | Fundamentos e ciclo de vida consolidados; visualização e controle são a próxima entrega |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
@@ -87,19 +88,35 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 - Próximo Passo como decisão ou hipótese de movimento delimitada e contextual;
 - transformação de direção, contexto e intenção em movimento possível;
 - limiar de acionabilidade sem exigir plano completo;
-- natureza contextual do termo “próximo” e multiplicidade legítima de passos;
 - distinções entre Próximo Passo, objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
 - titularidade e papéis de proponente, decisor, responsável, executor, apoiador, aprovador, fonte, beneficiário e afetado;
 - origens e autoridade das fontes, com Guivos Intelligence limitada a hipóteses e propostas;
-- tipos de descoberta, decisão, preparação, execução, conexão, aprendizado, verificação, manutenção, recuperação, adaptação, coordenação, delegação, espera e encerramento;
-- estados `Proposto`, `Confirmado`, `Pronto`, `Agendado`, `Em andamento`, `Bloqueado`, `Pausado`, `Concluído`, `Cancelado`, `Substituído`, `Expirado`, `Contestado`, `Corrigido` e `Arquivado`;
-- separação entre estado funcional e estado da informação;
-- prioridade operacional distinta de urgência, importância, prontidão, esforço, valor humano e preferência comercial;
-- sequenciamento, dependências, bloqueios, temporalidade, esforço, risco, segurança e sensibilidade;
-- entradas, requisitos de admissão, estrutura, saídas, fluxo e eventos iniciais;
-- relações com Contexto Vivo, Objetivos, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
+- tipos, estados iniciais, prioridade operacional, temporalidade, dependências, bloqueios, esforço, risco e sensibilidade;
 - controle do participante e ausência legítima de Próximo Passo;
 - proibição de listas infinitas, produtividade coercitiva, responsabilidade silenciosa e exploração comercial.
+
+### Ciclo de vida
+
+- possibilidade, formulação, proposta, avaliação e confirmação;
+- confirmação simples, reforçada, institucional, compartilhada, condicionada e assistida;
+- rejeição sem penalidade, reformulação, desdobramento, unificação e alternativas;
+- prontidão separada de ativação, prioridade, agendamento e início;
+- portfólio ativo com limites contextuais de simultaneidade;
+- prioridade e repriorização explicáveis, sem influência comercial;
+- sequenciamento linear, paralelo, alternativo e condicional;
+- dependências informacionais, decisórias, documentais, financeiras, técnicas, humanas, institucionais, temporais, geográficas, jurídicas, de segurança, competência, oportunidade, relacionamento e outros passos;
+- bloqueios objetivos, desbloqueio sem início automático, pausa e retomada;
+- agendamento, prazo, adiamento e vencimento sem julgamento;
+- início, execução, acompanhamento proporcional, mudança de escopo e resultado imediato;
+- resultado separado de progresso e conclusão;
+- conclusão declarada, institucional, assistida, evidenciada, parcial e automática autorizada;
+- cancelamento, substituição e expiração com significados distintos;
+- contestação, correção compensatória, reabertura e arquivamento;
+- recorrência, ocorrências e encerramento sem equivalência automática a hábito ou evolução;
+- passos compartilhados, delegação, aceitação e saída de participante;
+- compartilhamento sensível, revogação e propagação por recortes mínimos;
+- prevenção de ciclos, duplicidade, idempotência, ordenação, concorrência e retroatividade;
+- falha segura, sincronização divergente, explicabilidade, histórico, retenção, privacidade e prevenção de fadiga.
 
 ## Conceitos internos preservados
 
@@ -108,21 +125,26 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 | Contexto Vivo | Functionally complete |
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
-| Próximos Passos | In progress — 20% |
+| Próximos Passos | In progress — 40% |
 | Fundamentos Iniciais de Próximos Passos | Normative 1.0.0 |
+| Ciclo de Vida dos Próximos Passos | Normative 1.0.0 |
+| Possibilidade de Próximo Passo | Movimento possível ainda não formalizado como proposta |
 | Próximo Passo proposto | Hipótese de movimento ainda não assumida |
-| Próximo Passo confirmado | Decisão reconhecida sem significar início de execução |
-| Titular | Participante cuja jornada é atendida pelo passo |
-| Proponente | Fonte que sugere o movimento |
-| Decisor | Autoridade que pode confirmá-lo |
-| Responsável | Quem coordena sua realização |
-| Executor | Quem realiza uma ou mais ações |
+| Próximo Passo confirmado | Decisão reconhecida sem significar ativação ou início |
+| Ativação operacional | Entrada no conjunto de movimentos considerados para preparação, agendamento ou execução |
+| Prontidão | Condições mínimas conhecidas para iniciar |
 | Prioridade operacional | Ordem contextual de atenção ou execução |
-| Dependência | Condição necessária para o passo |
+| Dependência | Condição necessária, com estado e temporalidade próprios |
 | Bloqueio | Impedimento atual que não representa incapacidade pessoal |
-| Espera funcional | Movimento legítimo condicionado a período ou gatilho de revisão |
+| Pausa | Interrupção deliberada e temporária |
+| Resultado imediato | Consequência observada ou declarada da execução |
+| Conclusão de Próximo Passo | Reconhecimento de que o movimento delimitado foi realizado |
+| Cancelamento | Decisão de não prosseguir |
+| Substituição | Outro passo passa a cumprir função equivalente ou mais adequada |
+| Expiração | Perda de atualidade, janela ou validade funcional |
+| Recorrência | Repetição operacional; não comprova hábito ou evolução |
+| Delegação | Transferência de execução dentro de escopo autorizado, sem transferir titularidade |
 | Oportunidade | Meio possível; não equivale a Próximo Passo |
-| Recomendação | Sugestão; não equivale a decisão |
 | Guivos Intelligence | Produz possibilidades, alternativas e explicações, não decisões assumidas |
 | Platform Layer | Sustenta contratos técnicos sem redefinir semântica funcional |
 | Pessoa | Categoria oficial de participante |
@@ -139,14 +161,15 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 7.5.0 |
-| Knowledge Board | 7.6.0 |
+| Roadmap | 7.6.0 |
+| Knowledge Board | 7.7.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-EV-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-PP-FOUNDATION-001 | Active 1.0.0 |
+| PAS-001-PP-LIFECYCLE-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -156,4 +179,4 @@ O contrato final consolidou 60 KPIs, 13 famílias de indicadores, 18 guardrails 
 
 ## Próxima atividade
 
-Consolidar o **ciclo de vida dos Próximos Passos**, incluindo criação, proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento e propagação.
+Consolidar a **visualização e o controle dos Próximos Passos**, incluindo visão geral, portfólio ativo, cartões, detalhamento, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, passos compartilhados, histórico, privacidade, acessibilidade, explicabilidade e ações do participante.
