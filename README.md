@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida
-- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 80%
-- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001, PAS-001-PP-LIFECYCLE-001, PAS-001-PP-VIEW-001 e PAS-001-PP-EVENT-001, todas em 1.0.0
+- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 90%
+- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001, PAS-001-PP-LIFECYCLE-001, PAS-001-PP-VIEW-001, PAS-001-PP-EVENT-001 e PAS-001-PP-INTEGRATION-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -53,45 +53,50 @@ A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de 
 
 `PAS-001-PP-VIEW-001 1.0.0` consolidou a superfície `Meus Próximos Passos`, o portfólio, os cartões, os controles, a privacidade, a acessibilidade, o histórico e a neutralidade comercial.
 
-`PAS-001-PP-EVENT-001 1.0.0` consolida:
+`PAS-001-PP-EVENT-001 1.0.0` consolidou comandos, propostas, fatos reconhecidos, imutabilidade histórica, contratos, idempotência, ordenação, versionamento, auditoria e falha segura.
 
-- distinção entre comando, proposta e evento funcional reconhecido;
-- imutabilidade histórica e correção compensatória;
-- estrutura comum dos contratos, identidade do agregado e categoria do participante;
-- ator, papel, autoridade, finalidade, sensibilidade e permissões;
-- temporalidade, retroatividade, correlação, causalidade e versionamento;
-- identificação, proposição, declaração e confirmação;
-- ativação, prontidão, preparação, prioridade e sequenciamento;
-- dependências, bloqueios, pausa, retomada e agenda;
-- início, execução, resultados e conclusão;
-- cancelamento, substituição, expiração, contestação, correção e reabertura;
-- recorrência, ocorrências, delegação e responsabilidades;
-- compartilhamento, revogação, propagação e recortes mínimos;
-- idempotência, duplicidade semântica, ordenação e concorrência;
-- retenção, logs, auditoria, falha segura e recuperação;
-- responsabilidades dos produtores e consumidores.
+`PAS-001-PP-INTEGRATION-001 1.0.0` consolida:
 
-A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **80%**.
+- contrato funcional comum das integrações;
+- tipos, modos e requisitos de admissão;
+- identidade, associação, autoridade, proveniência, qualidade e confiança;
+- temporalidade, transformações permitidas e transformações proibidas;
+- sincronização, idempotência, ordenação, reconciliação e prevenção de ciclos;
+- finalidade, minimização, permissões, pausa e revogação;
+- preservação de fatos históricos legítimos após revogação;
+- falha segura e degradação controlada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
+- integrações com Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e responsabilidades da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
+- integrações temporárias e pessoais;
+- proteção de informações de terceiros e passos compartilhados;
+- conflitos entre fontes, retroatividade, canais conversacionais, notificações e busca;
+- saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.
+
+A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **90%**.
 
 ## Ponto exato de retomada
 
-Retomar nas integrações funcionais da Capacidade de Próximos Passos.
+Retomar no contrato final da Capacidade de Próximos Passos.
 
 Próxima entrega:
 
-- Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
-- Oportunidades Ativas e Intervenções Contextuais;
-- Experiências e Evolução Contínua;
-- Guivos Intelligence e Platform Layer;
-- produtos especializados e organizações;
-- serviços profissionais e fontes externas;
-- finalidade, minimização, autoridade, revogação e falha segura.
+- KPIs e famílias de indicadores;
+- guardrails de tolerância zero;
+- baseline e painel de saúde;
+- níveis de desempenho funcional;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão;
+- lacunas bloqueantes e não bloqueantes;
+- contrato final da capacidade.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 05 está `In progress` e deverá avançar por extensões normativas modulares até seu contrato final.
+A Capacidade 05 está `In progress` e deverá ser concluída por sua extensão normativa final.
 
 ## Capacidades do Journey
 
@@ -101,7 +106,7 @@ A Capacidade 05 está `In progress` e deverá avançar por extensões normativas
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 80% |
+| 05 — Próximos Passos | In progress — 90% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -118,6 +123,7 @@ A Capacidade 05 está `In progress` e deverá avançar por extensões normativas
 - [Regras do Ciclo de Vida dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-ciclo-de-vida.md)
 - [Visualização e Controle dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
 - [Eventos Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-eventos-funcionais.md)
+- [Integrações Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-integracoes-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
