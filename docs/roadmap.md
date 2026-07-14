@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 6.5.0
+version: 6.6.0
 owner: Guivos
-last_updated: 2026-07-13
+last_updated: 2026-07-14
 ---
 
 # Roadmap Arquitetural
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidade concluída:** `02 — Contexto Vivo`.
 - **Capacidade ativa:** `03 — Objetivos`.
-- **Extensões normativas ativas de Objetivos:** `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0` e `PAS-001-OBJ-VIEW-001 1.0.0`.
+- **Extensões normativas ativas de Objetivos:** `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0`, `PAS-001-OBJ-PROGRESS-001 1.0.0`, `PAS-001-OBJ-VIEW-001 1.0.0` e `PAS-001-OBJ-EVENT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -47,26 +47,27 @@ A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou criação, confirmaçã
 
 A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.
 
-A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou:
+A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou a visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade, consistência entre canais e histórico.
 
-- objetivos funcionais, princípios e escopo de `Meus Objetivos`;
-- visão geral, resumo linguístico e portfólio;
-- organização, filtros, cartões e detalhamento;
-- estado, prioridade, urgência e atualidade apresentados separadamente;
-- critérios, progresso, percentuais, marcos e evidências;
-- relações, dependências, conflitos e contexto relacionado;
-- capacidades consumidoras e compartilhamentos externos;
-- explicações de objetivo, prioridade, progresso e conclusão;
-- criação, confirmação, ativação, reformulação e alteração de prioridade;
-- pausa, retomada, bloqueio, conclusão, retirada, arquivamento e reativação;
-- contestação, desfazimento, revisões, alertas e prevenção de fadiga;
-- proteção de objetivos sensíveis, títulos neutros e privacidade visual;
-- objetivos institucionais, compartilhados, pessoais, organizacionais e coletivos;
-- acessibilidade, consistência entre canais, conversas e notificações;
-- estados sem objetivos, falhas, sincronização pendente, auditoria e histórico;
-- eventos funcionais da visão.
+A extensão `PAS-001-OBJ-EVENT-001 1.0.0` consolidou:
 
-O próximo bloco detalhará os contratos dos eventos funcionais da Capacidade de Objetivos.
+- distinção entre comando, proposta e evento funcional reconhecido;
+- estrutura comum, identidade, autoridade e campos obrigatórios;
+- temporalidade, correlação, causalidade, versionamento e idempotência;
+- sensibilidade, minimização, finalidade e permissões;
+- famílias e contratos de eventos de direção, existência, estrutura e prioridade;
+- eventos de relações, conflitos, revisão, envelhecimento, pausa e bloqueio;
+- eventos de critérios, linhas de base, evidências, progresso, marcos e conclusão;
+- eventos de retirada, substituição, arquivamento, reativação e Eventos de Vida;
+- alteração de permissões e revogação de compartilhamentos;
+- recomposição de recortes, notificação de consumidores e reavaliação de decisões;
+- eventos da visão, eventos conversacionais e eventos compostos;
+- atomicidade funcional, retroatividade, correção, duplicidade e reprocessamento;
+- ordenação, concorrência, falha de processamento e falha segura;
+- responsabilidades de produtoras e consumidoras;
+- explicabilidade, auditoria, retenção, privacidade e eventos por categoria de participante.
+
+O próximo bloco detalhará as integrações funcionais da Capacidade de Objetivos.
 
 ## Progresso das capacidades do Journey
 
@@ -74,7 +75,7 @@ O próximo bloco detalhará os contratos dos eventos funcionais da Capacidade de
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
 | 02 — Contexto Vivo | Functionally complete | 100% |
-| 03 — Objetivos | In progress | 80% |
+| 03 — Objetivos | In progress | 90% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | 10% |
@@ -116,6 +117,9 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não concluir objetivos pessoais apenas por inferência;
 - não transformar `Meus Objetivos` em painel de cobrança, produtividade, ranking ou comparação pessoal;
 - não expor objetivos sensíveis em notificações ou superfícies não autorizadas;
+- não tratar comando ou proposta como evento reconhecido;
+- não reprocessar eventos com efeitos duplicados;
+- não ampliar permissões ou autoridade durante integração;
 - não reabrir a Capacidade 02 sem fundamento formal;
 - não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.
 
@@ -125,9 +129,10 @@ Retomar na **Capacidade 03 — Objetivos**.
 
 Próxima entrega:
 
-1. estrutura comum dos eventos funcionais;
-2. criação, confirmação e ativação;
-3. prioridade, revisão e ciclo de vida;
-4. critérios, progresso, marcos e evidências;
-5. conclusão, contestação e reabertura;
-6. propagação, correlação, idempotência e falha segura.
+1. integração com Contexto Vivo;
+2. integração com Eventos de Vida;
+3. integração com Próximos Passos e Oportunidades Ativas;
+4. integração com Intervenções Contextuais, Experiências e Evolução Contínua;
+5. integração com Guivos Intelligence;
+6. integração com Platform Layer;
+7. integração com serviços especializados.
