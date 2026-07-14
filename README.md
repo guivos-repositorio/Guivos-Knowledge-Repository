@@ -12,7 +12,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidade concluída:** 02 — Contexto Vivo
 - **Capacidade ativa:** 03 — Objetivos
-- **Extensões normativas ativas de Objetivos:** PAS-001-OBJ-FOUNDATION-001 1.0.0, PAS-001-OBJ-LIFECYCLE-001 1.0.0, PAS-001-OBJ-PROGRESS-001 1.0.0 e PAS-001-OBJ-VIEW-001 1.0.0
+- **Extensões normativas ativas de Objetivos:** PAS-001-OBJ-FOUNDATION-001 1.0.0, PAS-001-OBJ-LIFECYCLE-001 1.0.0, PAS-001-OBJ-PROGRESS-001 1.0.0, PAS-001-OBJ-VIEW-001 1.0.0 e PAS-001-OBJ-EVENT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -31,26 +31,27 @@ A Capacidade 02 está **funcionalmente concluída**.
 
 ## Capacidade 03 — Objetivos
 
-A extensão `PAS-001-OBJ-FOUNDATION-001 1.0.0` consolidou os fundamentos, distinções conceituais, responsabilidades, limites, entradas, estados, relações, critérios e integrações iniciais.
+A extensão `PAS-001-OBJ-FOUNDATION-001 1.0.0` consolidou fundamentos, distinções conceituais, responsabilidades, limites, entradas, estados, relações, critérios e integrações iniciais.
 
 A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.
 
 A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.
 
-A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou:
+A extensão `PAS-001-OBJ-VIEW-001 1.0.0` consolidou a visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível.
 
-- visão geral e portfólio de objetivos;
-- organização, filtros, cartões e detalhamento;
-- estado, prioridade, urgência e atualidade apresentados separadamente;
-- critérios, progresso, marcos, evidências, relações e conflitos;
-- explicações sobre origem, prioridade, progresso e conclusão;
-- criação, confirmação e ativação como ações distintas;
-- reformulação, pausa, retomada, bloqueio, conclusão, retirada e reativação;
-- revisões, alertas e prevenção de fadiga;
-- proteção de objetivos sensíveis, títulos neutros e privacidade visual;
-- objetivos pessoais, institucionais, coletivos e compartilhados;
-- acessibilidade, consistência entre canais, notificações e falha segura;
-- histórico compreensível e eventos funcionais da visão.
+A extensão `PAS-001-OBJ-EVENT-001 1.0.0` consolidou:
+
+- distinção entre comando, proposta e evento funcional;
+- estrutura comum, autoridade, temporalidade, correlação, causalidade e versionamento;
+- idempotência, minimização, finalidade, permissões e sensibilidade;
+- contratos de criação, confirmação, ativação, reformulação e prioridade;
+- relações, conflitos, revisão, envelhecimento, pausa e bloqueio;
+- critérios, linhas de base, evidências, progresso, marcos e conclusão;
+- retirada, substituição, arquivamento e reativação;
+- impactos de Eventos de Vida e alterações de permissão;
+- recomposição de recortes, notificação e reavaliação de decisões dependentes;
+- eventos retroativos, correções, concorrência, ordenação e falha segura;
+- explicabilidade, auditoria, retenção e eventos de Pessoa, Organização e Coletivo.
 
 ## Ponto exato de retomada
 
@@ -58,11 +59,11 @@ Retomar na `Capacidade 03 — Objetivos`.
 
 Próxima entrega:
 
-- contratos dos eventos funcionais;
-- criação, confirmação e ativação;
-- prioridade e revisão;
-- progresso, marcos e evidências;
-- conclusão, contestação e propagação.
+- integrações com Contexto Vivo e Eventos de Vida;
+- integrações com Próximos Passos e Oportunidades Ativas;
+- integrações com Intervenções Contextuais, Experiências e Evolução Contínua;
+- integrações com Guivos Intelligence e Platform Layer;
+- integrações com serviços especializados.
 
 ## Product Engineering
 
@@ -91,6 +92,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Regras do Ciclo de Vida dos Objetivos](docs/product-architecture/pas-001-objetivos-ciclo-de-vida.md)
 - [Critérios de Sucesso, Progresso, Evidências e Conclusão](docs/product-architecture/pas-001-objetivos-progresso-e-conclusao.md)
 - [Comportamentos Funcionais de Meus Objetivos](docs/product-architecture/pas-001-meus-objetivos.md)
+- [Contratos dos Eventos Funcionais de Objetivos](docs/product-architecture/pas-001-objetivos-eventos-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
