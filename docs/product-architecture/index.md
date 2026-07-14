@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.5.1
+version: 1.5.2
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -110,42 +110,36 @@ A Capacidade 04 está **Functionally complete**, com progresso editorial de refe
 As extensões normativas vigentes são:
 
 - `PAS-001-PP-FOUNDATION-001` — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;
-- `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura.
+- `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;
+- `PAS-001-PP-VIEW-001` — superfície `Meus Próximos Passos`, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles.
 
 `PAS-001-PP-FOUNDATION-001 1.0.0` substitui normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
 
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida o ciclo completo, mantendo separadas as dimensões de:
+`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida o ciclo completo, mantendo separadas as dimensões de possibilidade, proposta, confirmação, ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão.
 
-- possibilidade;
-- proposta;
-- confirmação;
-- ativação;
-- prontidão;
-- prioridade;
-- agendamento;
-- execução;
-- resultado;
-- progresso;
-- conclusão.
+`PAS-001-PP-VIEW-001 1.0.0` consolida:
 
-O ciclo também formaliza:
+- `Meus Próximos Passos` como superfície de clareza e controle;
+- visão geral sem pontuação de produtividade;
+- separação entre portfólio ativo, propostas e possibilidades futuras;
+- cartões minimizados, títulos neutros e detalhamento progressivo;
+- prioridade explicável e separada de urgência, prazo, prontidão, esforço e valor humano;
+- prontidão, agenda, temporalidade aproximada e passos sem prazo;
+- dependências, bloqueios, alternativas e limites do controle do participante;
+- execução e resultados separados de progresso e conclusão;
+- conclusão sem resultado esperado e conclusão automática contestável;
+- cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
+- recorrência sem gamificação coercitiva ou julgamento de disciplina;
+- passos compartilhados, confirmação individual, delegação e saída;
+- compartilhamento, revogação, privacidade visual e notificações discretas;
+- fila de atenção e prevenção de fadiga;
+- acessibilidade técnica e cognitiva;
+- consistência entre canais, falha segura e histórico compreensível;
+- neutralidade comercial e proibição de exploração de vulnerabilidade.
 
-- confirmação proporcional, condicionada, parcial e compartilhada;
-- reformulação, desdobramento, unificação e alternativas;
-- portfólio ativo e limites contextuais de simultaneidade;
-- dependências e bloqueios com estados próprios;
-- pausa distinta de bloqueio e retomada com reavaliação;
-- acompanhamento proporcional sem vigilância excessiva;
-- conclusão automática somente para fatos objetivos autorizados;
-- cancelamento, substituição e expiração sem julgamento pessoal;
-- recorrência sem equivalência automática a hábito ou evolução;
-- passos compartilhados, delegação e responsabilidades individualizadas;
-- revogação, propagação mínima, prevenção de ciclos e idempotência;
-- retroatividade, concorrência, falha segura, privacidade e prevenção de fadiga.
+A Capacidade 05 está **In progress**, com progresso editorial de referência de `60%`.
 
-A Capacidade 05 está **In progress**, com progresso editorial de referência de `40%`.
-
-O próximo bloco deverá consolidar a visualização e o controle dos Próximos Passos.
+O próximo bloco deverá consolidar os contratos dos eventos funcionais dos Próximos Passos.
 
 ## Regras arquiteturais
 
@@ -259,6 +253,26 @@ O próximo bloco deverá consolidar a visualização e o controle dos Próximos 
 108. Acompanhamento deve ser proporcional e não constituir vigilância excessiva.
 109. O ciclo deve apoiar ação real, não maximizar listas, notificações ou tempo de tela.
 110. O participante permanece no controle do ciclo de vida.
+111. `Meus Próximos Passos` é uma superfície de clareza e controle, não uma lista infinita de tarefas.
+112. A visão geral não pode utilizar contagem de passos como pontuação de produtividade.
+113. Propostas, possibilidades futuras e passos confirmados devem permanecer visualmente distintos.
+114. Cartões devem utilizar minimização e detalhamento progressivo.
+115. Estado funcional e estado da informação devem ser apresentados separadamente quando necessário.
+116. Prioridade, urgência, prazo, prontidão, esforço e risco não podem ser colapsados em um único indicador.
+117. Alternativas recomendadas devem manter critérios, incerteza e relações comerciais visíveis.
+118. Data sugerida não representa compromisso confirmado.
+119. Passos sem prazo e períodos sem passos ativos são estados legítimos.
+120. Dependências externas devem mostrar o limite de controle do participante.
+121. Tarefas e subpassos são detalhamento opcional e não determinam automaticamente a conclusão de movimentos qualitativos.
+122. Execução e resultado devem permanecer visualmente separados.
+123. Recorrência não pode utilizar punição, sequência quebrada, ranking ou julgamento de disciplina.
+124. Responsabilidades compartilhadas não podem surgir por silêncio.
+125. Conteúdo sensível exige títulos neutros, modo discreto e notificações minimizadas.
+126. A fila de atenção não deve tratar todos os itens como urgentes.
+127. A interface deve oferecer acessibilidade técnica e cognitiva e alternativa a interações de arrastar e soltar.
+128. Falha ou sincronização pendente não pode ser apresentada como sucesso integral.
+129. Oportunidades e conteúdo comercial devem permanecer separados da prioridade funcional.
+130. A visão deve apoiar ação no mundo real e manter o participante no controle.
 
 ## Documentos do domínio
 
@@ -269,6 +283,7 @@ O próximo bloco deverá consolidar a visualização e o controle dos Próximos 
 - [PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos](pas-001-proximos-passos-fundamentos-iniciais.md)
 - [PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos](pas-001-proximos-passos-ciclo-de-vida.md)
+- [PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos](pas-001-proximos-passos-visualizacao-controle.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
