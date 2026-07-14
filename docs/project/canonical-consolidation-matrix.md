@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.4.1
+version: 1.4.2
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -113,6 +113,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos de Vida | Manter | Capacidade 04 ativa; governa mudanças relevantes capazes de alterar a jornada |
 | Fundamentos Iniciais da Capacidade de Eventos de Vida | Manter | PAS-001-EV-FOUNDATION-001 1.0.0 define conceito, singularidade, distinções, tipos, titularidade, autoridade, temporalidade, impacto, responsabilidades, limites, entradas e integrações iniciais |
 | Ciclo de Vida dos Eventos de Vida | Manter | PAS-001-EV-LIFECYCLE-001 1.0.0 define identificação, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento e propagação |
+| Visualização e Controle dos Eventos de Vida | Manter | PAS-001-EV-VIEW-001 1.0.0 define linha do tempo, detalhamento, impactos, revisões, privacidade visual, histórico e ações do participante |
+| Linha do tempo de Eventos de Vida | Refinar | Superfície de compreensão e controle; não é feed social, diário integral ou instrumento de avaliação pessoal |
+| Visão geral de Eventos de Vida | Manter | Sintetiza eventos recentes, planejados, em andamento, pendências e contestações sem pontuar estabilidade ou qualidade de vida |
+| Cartão de Evento de Vida | Refinar | Apresenta somente título funcional, temporalidade, estado, confirmação, atenção e indicações mínimas de impacto e sensibilidade |
+| Detalhamento progressivo do Evento de Vida | Manter | Expõe formulação, expressão original, titularidade, estado, temporalidade, origem, autoridade, confiança, impactos, permissões e histórico conforme necessidade |
 | Estado do Evento de Vida | Refinar | Condição da mudança real, separada do estado da informação conhecida pela Guivos |
 | Estado da informação do evento | Manter | Hipótese, não confirmado, confirmado, contestado ou corrigido |
 | Evento de Vida planejado | Refinar | Previsão ou planejamento de mudança; não equivale a evento ocorrido |
@@ -121,6 +126,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Relevância de Evento de Vida | Refinar | Materialidade contextual, explicável e revisável para a jornada |
 | Evento primário | Manter | Mudança reconhecida que permanece distinta de seus efeitos derivados |
 | Impacto de Evento de Vida | Refinar | Efeito proposto ou confirmado com temporalidade, intensidade e ciclo próprios |
+| Impacto persistente de Evento de Vida | Manter | Poderá permanecer ativo após a conclusão do evento e deverá ser apresentado separadamente |
+| Revisão individual de impacto | Manter | Participante poderá confirmar, rejeitar, corrigir, limitar, encerrar, adiar ou solicitar explicação por impacto |
 | Impacto automático | Refinar | Limitado a fato objetivo, fonte autorizada, baixo risco, reversibilidade, finalidade e ausência de conflito |
 | Evento composto | Manter | Organiza transição ampla sem apagar eventos componentes |
 | Causalidade entre eventos | Refinar | Exige base explicável e não decorre apenas de proximidade temporal |
@@ -129,6 +136,10 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Conclusão de Evento de Vida | Refinar | Encerra a mudança representada sem encerrar automaticamente impactos persistentes |
 | Arquivamento de Evento de Vida | Refinar | Retira da operação cotidiana sem equivaler a exclusão ou apagar impactos ativos |
 | Reabertura de Evento de Vida | Manter | Preserva ciclo anterior e distingue continuidade de nova ocorrência |
+| Privacidade visual de Evento de Vida | Manter | Oculta conteúdo sensível por padrão, utiliza títulos neutros e minimiza cartões, notificações e dispositivos compartilhados |
+| Controle de notificações de Eventos de Vida | Manter | Permite definir canal, frequência, conteúdo, horários, silêncio e ausência de prévia sensível |
+| Compartilhamento de Evento de Vida | Refinar | Deve indicar destinatário, finalidade, conteúdo, duração, revogação, último uso relevante e propagação |
+| Consistência entre canais de Eventos de Vida | Manter | Aplicativo, web, conversa, notificações e serviços autorizados refletem mesma versão, estado, permissões, temporalidade e contestações |
 | Propagação de Evento de Vida | Refinar | Utiliza recortes mínimos e solicita reavaliação às capacidades consumidoras |
 | Idempotência em Eventos de Vida | Manter | Reprocessamento não pode duplicar impactos, atualizações, objetivos ou notificações |
 | Titularidade do Evento de Vida | Manter | Identifica Pessoa, Organização ou Coletivo a quem o evento pertence |
@@ -160,8 +171,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 e 03 permanecem funcionalmente concluídas. `PAS-001-EV-FOUNDATION-001 1.0.0` e `PAS-001-EV-LIFECYCLE-001 1.0.0` consolidam a baseline normativa inicial da Capacidade 04 e elevam seu avanço editorial de referência para 40%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+As Capacidades 02 e 03 permanecem funcionalmente concluídas. `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0` e `PAS-001-EV-VIEW-001 1.0.0` consolidam fundamentos, ciclo de vida e visualização da Capacidade 04 e elevam seu avanço editorial de referência para 60%, sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Definir os comportamentos funcionais da visualização e do controle dos **Eventos de Vida**, incluindo linha do tempo, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico e ações do participante.
+Definir os contratos dos eventos funcionais da **Capacidade de Eventos de Vida**, incluindo identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.
