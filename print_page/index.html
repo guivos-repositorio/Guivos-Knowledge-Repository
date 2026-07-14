@@ -38808,7 +38808,7 @@ Next authorized review: A2-R02
 <li><strong>Especificação-base ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
 <li><strong>Capacidade concluída:</strong> <code>02 — Contexto Vivo</code>.</li>
 <li><strong>Capacidade ativa:</strong> <code>03 — Objetivos</code>.</li>
-<li><strong>Extensões normativas ativas de Objetivos:</strong> <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code>, <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code>, <code>PAS-001-OBJ-VIEW-001 1.0.0</code> e <code>PAS-001-OBJ-EVENT-001 1.0.0</code>.</li>
+<li><strong>Extensões normativas ativas de Objetivos:</strong> <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code>, <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code>, <code>PAS-001-OBJ-VIEW-001 1.0.0</code>, <code>PAS-001-OBJ-EVENT-001 1.0.0</code> e <code>PAS-001-OBJ-INTEGRATION-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
@@ -38830,25 +38830,23 @@ Next authorized review: A2-R02
 <p>A extensão <code>PAS-001-OBJ-LIFECYCLE-001 1.0.0</code> consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.</p>
 <p>A extensão <code>PAS-001-OBJ-PROGRESS-001 1.0.0</code> consolidou critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação e reabertura.</p>
 <p>A extensão <code>PAS-001-OBJ-VIEW-001 1.0.0</code> consolidou a visão <code>Meus Objetivos</code>, incluindo portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade, consistência entre canais e histórico.</p>
-<p>A extensão <code>PAS-001-OBJ-EVENT-001 1.0.0</code> consolidou:</p>
+<p>A extensão <code>PAS-001-OBJ-EVENT-001 1.0.0</code> consolidou contratos de eventos, autoridade, temporalidade, causalidade, correlação, idempotência, propagação, correção, auditoria e falha segura.</p>
+<p>A extensão <code>PAS-001-OBJ-INTEGRATION-001 1.0.0</code> consolidou:</p>
 <ul>
-<li>distinção entre comando, proposta e evento funcional reconhecido;</li>
-<li>estrutura comum, identidade, autoridade e campos obrigatórios;</li>
-<li>temporalidade, correlação, causalidade, versionamento e idempotência;</li>
-<li>sensibilidade, minimização, finalidade e permissões;</li>
-<li>famílias e contratos de eventos de direção, existência, estrutura e prioridade;</li>
-<li>eventos de relações, conflitos, revisão, envelhecimento, pausa e bloqueio;</li>
-<li>eventos de critérios, linhas de base, evidências, progresso, marcos e conclusão;</li>
-<li>eventos de retirada, substituição, arquivamento, reativação e Eventos de Vida;</li>
-<li>alteração de permissões e revogação de compartilhamentos;</li>
-<li>recomposição de recortes, notificação de consumidores e reavaliação de decisões;</li>
-<li>eventos da visão, eventos conversacionais e eventos compostos;</li>
-<li>atomicidade funcional, retroatividade, correção, duplicidade e reprocessamento;</li>
-<li>ordenação, concorrência, falha de processamento e falha segura;</li>
-<li>responsabilidades de produtoras e consumidoras;</li>
-<li>explicabilidade, auditoria, retenção, privacidade e eventos por categoria de participante.</li>
+<li>princípios, tipos, modos e contrato funcional comum das integrações;</li>
+<li>requisitos de admissão, identidade, autoridade, proveniência, qualidade e transformações;</li>
+<li>temporalidade, sincronização, consistência entre fontes e prevenção de ciclos;</li>
+<li>integração com Captura de Contexto, Contexto Vivo e Eventos de Vida;</li>
+<li>integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;</li>
+<li>integração com Experiências e Evolução Contínua;</li>
+<li>saídas permitidas, limites e explicabilidade da Guivos Intelligence;</li>
+<li>responsabilidades da Platform Layer para identidade, autorização, grafo, APIs, busca, notificações, armazenamento e observabilidade;</li>
+<li>integrações com Guivos Business, Mall, Travel, Media e Ads;</li>
+<li>integrações com serviços sociais, profissionais, educacionais, esportivos, de saúde, calendários e fontes financeiras;</li>
+<li>integrações temporárias, pausa, revogação, falha, degradação controlada e sincronização divergente;</li>
+<li>explicabilidade, auditoria, métricas, eventos e integrações proibidas.</li>
 </ul>
-<p>O próximo bloco detalhará as integrações funcionais da Capacidade de Objetivos.</p>
+<p>O próximo bloco consolidará KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da capacidade.</p>
 <h2 id="roadmap-progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#roadmap-progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -38872,7 +38870,7 @@ Next authorized review: A2-R02
 <tr>
 <td>03 — Objetivos</td>
 <td>In progress</td>
-<td>90%</td>
+<td>95%</td>
 </tr>
 <tr>
 <td>04 — Eventos de Vida</td>
@@ -38940,7 +38938,8 @@ Next authorized review: A2-R02
 <li>não expor objetivos sensíveis em notificações ou superfícies não autorizadas;</li>
 <li>não tratar comando ou proposta como evento reconhecido;</li>
 <li>não reprocessar eventos com efeitos duplicados;</li>
-<li>não ampliar permissões ou autoridade durante integração;</li>
+<li>não ampliar permissões, titularidade, finalidade ou autoridade durante integração;</li>
+<li>não permitir que receita, patrocínio ou oferta comercial alterem prioridade funcional;</li>
 <li>não reabrir a Capacidade 02 sem fundamento formal;</li>
 <li>não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.</li>
 </ul>
@@ -38948,13 +38947,12 @@ Next authorized review: A2-R02
 <p>Retomar na <strong>Capacidade 03 — Objetivos</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>integração com Contexto Vivo;</li>
-<li>integração com Eventos de Vida;</li>
-<li>integração com Próximos Passos e Oportunidades Ativas;</li>
-<li>integração com Intervenções Contextuais, Experiências e Evolução Contínua;</li>
-<li>integração com Guivos Intelligence;</li>
-<li>integração com Platform Layer;</li>
-<li>integração com serviços especializados.</li>
+<li>KPIs e indicadores de qualidade e desempenho funcional;</li>
+<li>cenário funcionalmente ideal;</li>
+<li>cenários alternativos;</li>
+<li>cenários limite e falha segura;</li>
+<li>critérios de conclusão funcional;</li>
+<li>contrato final da capacidade.</li>
 </ol></section></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
 
                 .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
