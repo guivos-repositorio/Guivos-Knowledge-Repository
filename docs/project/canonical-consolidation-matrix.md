@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.3.1
+version: 1.3.2
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -49,6 +49,13 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Confirmação de objetivo | Refinar | Reconhecimento da formulação; não equivale a ativação universal, prioridade ou compartilhamento irrestrito |
 | Ativação de objetivo | Refinar | Autorização operacional por finalidade; não exige prazo, plano completo ou viabilidade integral |
 | Prioridade | Refinar | Importância relativa e contextual; não equivale a urgência, estado ou valor humano |
+| Critério de sucesso | Refinar | Condição capaz de representar avanço ou alcance satisfatório; não precisa ser quantitativa |
+| Atividade | Manter | Ação realizada; não equivale automaticamente a progresso |
+| Resultado | Manter | Consequência observável ou declarada relacionada à jornada |
+| Evidência | Refinar | Informação que sustenta interpretação sem determinar sozinha o significado humano do resultado |
+| Progresso | Refinar | Mudança relevante na direção do resultado, baseada na relação entre objetivo, critério, contexto e evidência |
+| Marco | Manter | Resultado intermediário significativo; não equivale a tarefa |
+| Conclusão | Refinar | Reconhecimento suficiente conforme natureza, critérios, evidências e percepção do participante |
 | Envelhecimento de objetivo | Manter | Redução de segurança sobre atualidade; não significa falsidade ou retirada |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
@@ -94,12 +101,16 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 |---|---|---|
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
-| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações e ciclo de vida dos objetivos |
+| Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações, ciclo de vida, progresso e conclusão dos objetivos |
 | Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
 | Ciclo de Vida dos Objetivos | Manter | PAS-001-OBJ-LIFECYCLE-001 1.0.0 define criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, conclusão, retirada e reativação |
+| Progresso e Conclusão dos Objetivos | Manter | PAS-001-OBJ-PROGRESS-001 1.0.0 define critérios, linhas de base, progresso, marcos, evidências, conclusão, contestação e reabertura |
 | Objetivo do Participante | Manter | Exige autoria ou aceitação consciente e não pode ser ativado apenas por inferência ou interesse externo |
 | Objetivo Institucional | Refinar | Deve permanecer distinto do objetivo pessoal, com titularidade, finalidade, critérios e permissões próprios |
+| Critério Institucional | Refinar | Comprova requisito sob autoridade institucional sem substituir critério ou significado pessoal |
 | Desejo Externo | Refinar | Permanece recomendação ou expectativa externa até aceitação consciente do participante |
+| Percentual de Progresso | Refinar | Permitido somente quando linha de base, resultado, fórmula e dados sustentarem mensuração legítima |
+| Conclusão Automática | Refinar | Limitada a critérios objetivos previamente confirmados, fontes autorizadas, ausência de conflito e efeitos reversíveis |
 | Pausa de Objetivo | Manter | Interrompe uso operacional temporariamente sem representar desistência ou fracasso |
 | Bloqueio de Objetivo | Manter | Representa impedimento atual, não incapacidade pessoal |
 | Progresso de Objetivo | Refinar | Não equivale a simples atividade, clique, inscrição, compra ou consumo de conteúdo |
@@ -122,8 +133,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-A Capacidade 02 permanece concluída. As extensões `PAS-001-OBJ-FOUNDATION-001 1.0.0` e `PAS-001-OBJ-LIFECYCLE-001 1.0.0` avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+A Capacidade 02 permanece concluída. As extensões `PAS-001-OBJ-FOUNDATION-001 1.0.0`, `PAS-001-OBJ-LIFECYCLE-001 1.0.0` e `PAS-001-OBJ-PROGRESS-001 1.0.0` avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Detalhar critérios de sucesso, progresso, marcos, evidências e conclusão da **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Detalhar os comportamentos funcionais da visão `Meus Objetivos`, incluindo portfólio, detalhamento, controles, explicações, revisões e proteção de objetivos sensíveis, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
