@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.5.4
+version: 1.5.5
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -113,70 +113,40 @@ As extensões normativas vigentes são:
 - `PAS-001-PP-LIFECYCLE-001` — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;
 - `PAS-001-PP-VIEW-001` — superfície `Meus Próximos Passos`, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles;
 - `PAS-001-PP-EVENT-001` — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura;
-- `PAS-001-PP-INTEGRATION-001` — contrato comum, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação, neutralidade comercial e degradação controlada.
+- `PAS-001-PP-INTEGRATION-001` — contrato comum, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação, neutralidade comercial e degradação controlada;
+- `PAS-001-PP-CONTRACT-001` — 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, níveis de desempenho, cenários e contrato final.
 
-`PAS-001-PP-FOUNDATION-001 1.0.0` substitui normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
+`PAS-001-PP-FOUNDATION-001 1.0.0` substituiu normativamente o estado `Planned` da linha da capacidade no `PAS-001 0.5.0` por `In progress`.
 
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida o ciclo completo, mantendo separadas as dimensões de possibilidade, proposta, confirmação, ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão.
+`PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo completo, mantendo separadas as dimensões de possibilidade, proposta, confirmação, ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão.
 
-`PAS-001-PP-VIEW-001 1.0.0` consolida:
+`PAS-001-PP-VIEW-001 1.0.0` consolidou `Meus Próximos Passos`, o portfólio, os controles, a privacidade, a acessibilidade, a neutralidade comercial e a prevenção de fadiga.
 
-- `Meus Próximos Passos` como superfície de clareza e controle;
-- visão geral sem pontuação de produtividade;
-- separação entre portfólio ativo, propostas e possibilidades futuras;
-- cartões minimizados, títulos neutros e detalhamento progressivo;
-- prioridade explicável e separada de urgência, prazo, prontidão, esforço e valor humano;
-- prontidão, agenda, temporalidade aproximada e passos sem prazo;
-- dependências, bloqueios, alternativas e limites do controle do participante;
-- execução e resultados separados de progresso e conclusão;
-- conclusão sem resultado esperado e conclusão automática contestável;
-- cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
-- recorrência sem gamificação coercitiva ou julgamento de disciplina;
-- passos compartilhados, confirmação individual, delegação e saída;
-- compartilhamento, revogação, privacidade visual e notificações discretas;
-- fila de atenção e prevenção de fadiga;
-- acessibilidade técnica e cognitiva;
-- consistência entre canais, falha segura e histórico compreensível;
-- neutralidade comercial e proibição de exploração de vulnerabilidade.
+`PAS-001-PP-EVENT-001 1.0.0` consolidou comandos, propostas, eventos reconhecidos, imutabilidade histórica, correção compensatória, idempotência, ordenação, concorrência, auditoria e falha segura.
 
-`PAS-001-PP-EVENT-001 1.0.0` consolida:
+`PAS-001-PP-INTEGRATION-001 1.0.0` consolidou finalidade, minimização, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação e degradação controlada.
 
-- distinção normativa entre comando, proposta e evento reconhecido;
-- imutabilidade histórica e correção compensatória;
-- estrutura comum com agregado, titular, ator, autoridade, finalidade, sensibilidade e permissões;
-- tempos da intenção, proposição, decisão, ativação, execução, resultado, conclusão, conhecimento, processamento e aplicação;
-- correlação, causalidade funcional, versionamento e versão esperada;
-- contratos de identificação, proposição, declaração, confirmação, ativação, prontidão, preparação e prioridade;
-- contratos de dependências, bloqueios, pausa, retomada, agenda, início, execução, resultado e conclusão;
-- contratos de cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;
-- recorrência, ocorrências, delegação, compartilhamento, revogação e propagação;
-- recortes mínimos, reavaliações dependentes e independência das capacidades consumidoras;
-- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e falha segura;
-- retenção, minimização de logs, recuperação, explicabilidade e auditoria.
+`PAS-001-PP-CONTRACT-001 1.0.0` consolida:
 
-`PAS-001-PP-INTEGRATION-001 1.0.0` consolida:
+- 68 KPIs organizados em 14 famílias;
+- 20 guardrails obrigatórios de tolerância zero;
+- baseline funcional antes de metas permanentes;
+- painel de saúde e níveis `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- contrato final de titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas e auditoria;
+- regra formal de reabertura;
+- ausência de lacunas funcionais bloqueantes conhecidas na baseline vigente.
 
-- integração como intercâmbio governado, não como decisão;
-- tipos e modos funcionais com permissões próprias;
-- contrato comum com produtor, consumidor, participante, finalidade, escopo, autoridade, proveniência, temporalidade, qualidade, sensibilidade e estado de sincronização;
-- requisitos de admissão, identidade e associação segura;
-- autoridade limitada ao fato que a fonte pode legitimamente confirmar;
-- separação entre qualidade técnica, confiança funcional e autoridade;
-- transformações permitidas e proibição de fabricar prazo, prioridade, intenção, responsabilidade, causalidade, diagnóstico ou conclusão;
-- sincronização com versão, idempotência, ordenação, conflitos, reconciliação, latência e reprocessamento;
-- prevenção de ciclos e duplicidades entre capacidades;
-- minimização, permissões, pausa, revogação e preservação de fatos históricos legítimos;
-- falha segura e degradação controlada;
-- integrações com todas as capacidades do Journey;
-- limites da Guivos Intelligence e responsabilidades da Platform Layer;
-- integrações com Guivos Business, Mall, Travel, Media e Ads;
-- serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;
-- integrações temporárias e pessoais, proteção de terceiros, passos compartilhados, conflitos entre fontes e retroatividade;
-- canais conversacionais, notificações, busca, saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.
+O `PAS-001-PP-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` por `Functionally complete`.
 
-A Capacidade 05 está **In progress**, com progresso editorial de referência de `90%`.
+A Capacidade 05 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-O próximo bloco deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final dos Próximos Passos.
+### Capacidade 06 — Oportunidades Ativas
+
+A Capacidade 06 é a próxima frente oficial de Product Engineering e permanece `Planned / concept consolidated` até sua primeira extensão normativa.
+
+O próximo bloco deverá consolidar seus fundamentos iniciais, incluindo definição, singularidade, titularidade, relevância, elegibilidade, temporalidade, disponibilidade, custo, risco, patrocínio, neutralidade e relações com as demais capacidades.
 
 ## Regras arquiteturais
 
@@ -356,6 +326,20 @@ O próximo bloco deverá consolidar os KPIs, guardrails, baseline, cenários e c
 174. Platform Layer sustenta integração, sincronização e auditoria sem redefinir semântica.
 175. Métricas das integrações avaliam o sistema, não o participante.
 176. O participante permanece no controle das integrações funcionais.
+177. Os 68 KPIs e 20 guardrails constituem a baseline normativa da Capacidade 05.
+178. Indicadores de Próximos Passos avaliam o sistema e a capacidade, não produtividade, mérito, disciplina ou valor humano.
+179. Nenhuma média positiva compensa violação de guardrail de tolerância zero.
+180. A baseline real deve preceder metas permanentes e não pode ser copiada de aplicativos de tarefas ou engajamento.
+181. A ausência de Próximos Passos ativos é um estado legítimo.
+182. Guardrails devem interromper fluxos afetados, limitar efeitos, produzir correção e validar recuperação.
+183. Conclusão funcional não significa implementação, validação em produção ou baseline quantitativa concluída.
+184. A Capacidade 05 somente pode ser reaberta por fundamento formal.
+185. Oportunidade Ativa é a próxima capacidade oficial e permanece distinta de Próximo Passo.
+186. Disponibilidade de oportunidade não representa relevância, elegibilidade, decisão ou compromisso.
+187. Patrocínio, comissão, estoque ou relação comercial não podem fabricar relevância funcional.
+188. Relações comerciais devem permanecer identificadas e separadas da decisão do participante.
+189. O contrato final de Próximos Passos preserva ação no mundo real sem transformar a jornada em cobrança, vigilância ou publicidade.
+190. O participante permanece no controle da capacidade concluída.
 
 ## Documentos do domínio
 
@@ -369,6 +353,7 @@ O próximo bloco deverá consolidar os KPIs, guardrails, baseline, cenários e c
 - [PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos](pas-001-proximos-passos-visualizacao-controle.md)
 - [PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos](pas-001-proximos-passos-eventos-funcionais.md)
 - [PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos](pas-001-proximos-passos-integracoes-funcionais.md)
+- [PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos](pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
