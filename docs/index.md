@@ -9,13 +9,10 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
 - Capacidade 02 — Contexto Vivo funcionalmente concluída;
-- Capacidade 03 — Objetivos ativa;
-- `PAS-001-OBJ-FOUNDATION-001 1.0.0` ativo;
-- `PAS-001-OBJ-LIFECYCLE-001 1.0.0` ativo;
-- `PAS-001-OBJ-PROGRESS-001 1.0.0` ativo;
-- `PAS-001-OBJ-VIEW-001 1.0.0` ativo;
-- `PAS-001-OBJ-EVENT-001 1.0.0` ativo;
-- `PAS-001-OBJ-INTEGRATION-001 1.0.0` ativo;
+- Capacidade 03 — Objetivos funcionalmente concluída;
+- Capacidade 04 — Eventos de Vida ativa;
+- sete extensões normativas da Capacidade de Objetivos em `1.0.0`;
+- `PAS-001-OBJ-CONTRACT-001 1.0.0` como contrato final da Capacidade 03;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -23,9 +20,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Especificar funcionalmente a **Capacidade 03 — Objetivos**.
+Especificar funcionalmente a **Capacidade 04 — Eventos de Vida**.
 
-Os fundamentos, ciclo de vida, progresso, visão, eventos e integrações já consolidam autoria, criação, confirmação, ativação, prioridade, critérios, evidências, conclusão, controle, propagação, recortes mínimos, revogação, serviços especializados e falha segura.
+A Capacidade 03 consolidou fundamentos, ciclo de vida, progresso, visão, eventos, integrações, 62 KPIs, guardrails de tolerância zero, cenários e contrato final.
 
 ## Acesso rápido
 
@@ -38,6 +35,7 @@ Os fundamentos, ciclo de vida, progresso, visão, eventos e integrações já co
 - [Comportamentos Funcionais de Meus Objetivos](product-architecture/pas-001-meus-objetivos.md)
 - [Contratos dos Eventos Funcionais de Objetivos](product-architecture/pas-001-objetivos-eventos-funcionais.md)
 - [Integrações Funcionais da Capacidade de Objetivos](product-architecture/pas-001-objetivos-integracoes-funcionais.md)
+- [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -51,8 +49,8 @@ Os fundamentos, ciclo de vida, progresso, visão, eventos e integrações já co
 |---|---|
 | 01 — Captura de Contexto | Substantially complete |
 | 02 — Contexto Vivo | Functionally complete |
-| 03 — Objetivos | In progress |
-| 04 — Eventos de Vida | Planned / concept consolidated |
+| 03 — Objetivos | Functionally complete |
+| 04 — Eventos de Vida | In progress |
 | 05 — Próximos Passos | Planned |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
@@ -61,4 +59,4 @@ Os fundamentos, ciclo de vida, progresso, visão, eventos e integrações já co
 
 ## Ponto de retomada
 
-Retomar na Capacidade 03, consolidando KPIs, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final.
+Retomar na Capacidade 04, definindo pergunta central, objetivo funcional, valor entregue, princípios, conceito de Evento de Vida, distinções, responsabilidades, limites, entradas iniciais e relações com Contexto Vivo e Objetivos.
