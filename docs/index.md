@@ -10,18 +10,19 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - sincronização `GE2-SYNC-007` concluída;
 - revisão `AR-001 0.5.0` concluída;
 - `PAS-001 — Guivos Journey 0.5.0` ativo;
-- extensões normativas `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0`, `PAS-001-CV-INTEGRATION-001 1.0.0` e `PAS-001-CV-KPI-001 1.0.0` ativas;
+- extensões normativas `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0`, `PAS-001-CV-INTEGRATION-001 1.0.0`, `PAS-001-CV-KPI-001 1.0.0` e `PAS-001-CV-CONTRACT-001 1.0.0` ativas;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
 - `GOG-001 — Guia Oficial 4.2.1`;
-- Capacidade 02 — Contexto Vivo em desenvolvimento.
+- Capacidade 02 — Contexto Vivo funcionalmente concluída;
+- Capacidade 03 — Objetivos ativa.
 
 ## Missão atual
 
-Completar funcionalmente a **Capacidade 02 — Contexto Vivo**.
+Especificar funcionalmente a **Capacidade 03 — Objetivos**.
 
-Responsabilidades, limites, fronteiras, entradas, saídas, estados das oito dimensões, regras temporais, conflitos, `Meu Contexto Hoje`, contratos detalhados dos eventos, integrações funcionais, KPIs e critérios de desempenho já estão consolidados.
+A Capacidade 02 possui definição, dimensões, estados, temporalidade, conflitos, interface, eventos, integrações, KPIs, cenários e contrato final consolidados.
 
 ## Acesso rápido
 
@@ -34,6 +35,7 @@ Responsabilidades, limites, fronteiras, entradas, saídas, estados das oito dime
 - [Eventos Funcionais do Contexto Vivo](product-architecture/pas-001-contexto-vivo-eventos-funcionais.md)
 - [Integrações Funcionais do Contexto Vivo](product-architecture/pas-001-contexto-vivo-integracoes-funcionais.md)
 - [KPIs e Desempenho do Contexto Vivo](product-architecture/pas-001-contexto-vivo-kpis-desempenho.md)
+- [Cenários e Contrato Final do Contexto Vivo](product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -48,8 +50,8 @@ Responsabilidades, limites, fronteiras, entradas, saídas, estados das oito dime
 | Capacidade | Estado |
 |---|---|
 | 01 — Captura de Contexto | Substantially complete |
-| 02 — Contexto Vivo | In progress |
-| 03 — Objetivos | Planned |
+| 02 — Contexto Vivo | Functionally complete |
+| 03 — Objetivos | In progress |
 | 04 — Eventos de Vida | Planned / concept consolidated |
 | 05 — Próximos Passos | Planned |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
@@ -59,4 +61,4 @@ Responsabilidades, limites, fronteiras, entradas, saídas, estados das oito dime
 
 ## Ponto de retomada
 
-Retomar na Capacidade 02, definindo os cenários funcionalmente ideal, alternativo e limite, seguidos do contrato final da capacidade.
+Retomar na Capacidade 03 — Objetivos, iniciando pela pergunta central, objetivo funcional, valor entregue, responsabilidades e limites.
