@@ -7500,7 +7500,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>sincronização <code>GE2-SYNC-007</code> concluída;</li>
 <li>revisão <code>AR-001 0.5.0</code> concluída;</li>
 <li><code>PAS-001 — Guivos Journey 0.5.0</code> ativo;</li>
-<li>extensões normativas <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code> e <code>PAS-001-CV-CONFLICT-001 1.0.0</code> ativas;</li>
+<li>extensões normativas <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code> e <code>PAS-001-CV-VIEW-001 1.0.0</code> ativas;</li>
 <li><code>GLPA-001 1.1.1</code> vigente;</li>
 <li><code>GIA-000 1.3.0</code> vigente;</li>
 <li>Glossário Canônico <code>1.8.0</code>;</li>
@@ -7509,7 +7509,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <h2 id="index-missao-atual">Missão atual<a class="headerlink" href="#index-missao-atual" title="Permanent link">&para;</a></h2>
 <p>Completar funcionalmente a <strong>Capacidade 02 — Contexto Vivo</strong>.</p>
-<p>Responsabilidades, limites, fronteiras, entradas, saídas, eventos funcionais iniciais, estados das oito dimensões, regras de atualização e envelhecimento e resolução detalhada de conflitos já estão consolidados.</p>
+<p>Responsabilidades, limites, fronteiras, entradas, saídas, eventos funcionais iniciais, estados das oito dimensões, regras de atualização e envelhecimento, resolução detalhada de conflitos e comportamentos funcionais de <code>Meu Contexto Hoje</code> já estão consolidados.</p>
 <h2 id="index-acesso-rapido">Acesso rápido<a class="headerlink" href="#index-acesso-rapido" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#public-guia-oficial-da-guivos">Guia Oficial da Guivos</a></li>
@@ -7517,6 +7517,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#product-architecture-pas-001-contexto-vivo-estados-dimensionais">Estados Funcionais do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-atualizacao-envelhecimento">Atualização e Envelhecimento do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-resolucao-conflitos">Resolução de Conflitos do Contexto Vivo</a></li>
+<li><a href="#product-architecture-pas-001-meu-contexto-hoje">Meu Contexto Hoje</a></li>
 <li><a href="#product-architecture-layered-product-architecture">GLPA-001</a></li>
 <li><a href="#intelligence-architecture">Guivos Intelligence Architecture</a></li>
 <li><a href="#glossary">Glossário Canônico</a></li>
@@ -7574,7 +7575,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tbody>
 </table>
 <h2 id="index-ponto-de-retomada">Ponto de retomada<a class="headerlink" href="#index-ponto-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Retomar na Capacidade 02, definindo os comportamentos funcionais da interface <code>Meu Contexto Hoje</code>.</p></section>
+<p>Retomar na Capacidade 02, definindo os contratos detalhados dos eventos funcionais do Contexto Vivo.</p></section>
                     <section class='print-page md-section' id='section-2' heading-number='2'>
                         <h1>Guia Oficial da Guivos<a class='headerlink' href='#section-2' title='Permanent link'></a>
                         </h1>
@@ -13485,7 +13486,8 @@ Implementação = realização progressiva
 <ul>
 <li><code>PAS-001-CV-STATE-001</code> — estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução;</li>
 <li><code>PAS-001-CV-UPDATE-001</code> — unidade de atualização, gatilhos, temporalidade, envelhecimento, confirmação proporcional, permissões e propagação controlada;</li>
-<li><code>PAS-001-CV-CONFLICT-001</code> — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos entre informações, fontes, dimensões e temporalidades.</li>
+<li><code>PAS-001-CV-CONFLICT-001</code> — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos entre informações, fontes, dimensões e temporalidades;</li>
+<li><code>PAS-001-CV-VIEW-001</code> — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle do participante em <code>Meu Contexto Hoje</code>.</li>
 </ul>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
@@ -13506,6 +13508,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-contexto-vivo-estados-dimensionais">PAS-001-CV-STATE-001 — Estados Funcionais do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-atualizacao-envelhecimento">PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento do Contexto Vivo</a></li>
 <li><a href="#product-architecture-pas-001-contexto-vivo-resolucao-conflitos">PAS-001-CV-CONFLICT-001 — Resolução de Conflitos do Contexto Vivo</a></li>
+<li><a href="#product-architecture-pas-001-meu-contexto-hoje">PAS-001-CV-VIEW-001 — Meu Contexto Hoje</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
@@ -26183,7 +26186,7 @@ Next authorized review: A2-R02
 <li><strong>Sincronização vigente:</strong> <code>GE2-SYNC-007</code>.</li>
 <li><strong>Revisão vigente:</strong> <code>AR-001</code>, concluída na versão <code>0.5.0</code>.</li>
 <li><strong>Especificação ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
-<li><strong>Extensões normativas ativas:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code> e <code>PAS-001-CV-CONFLICT-001 1.0.0</code>.</li>
+<li><strong>Extensões normativas ativas:</strong> <code>PAS-001-CV-STATE-001 1.0.0</code>, <code>PAS-001-CV-UPDATE-001 1.0.0</code>, <code>PAS-001-CV-CONFLICT-001 1.0.0</code> e <code>PAS-001-CV-VIEW-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
@@ -26243,7 +26246,20 @@ Next authorized review: A2-R02
 <li>resolução automática permitida e proibida;</li>
 <li>explicabilidade, reabertura e critérios de resolução confiável.</li>
 </ul>
-<p>O próximo bloco definirá os comportamentos funcionais da interface <code>Meu Contexto Hoje</code>.</p>
+<p>A extensão normativa <code>PAS-001-CV-VIEW-001 1.0.0</code> consolidou:</p>
+<ul>
+<li>objetivos e princípios de <code>Meu Contexto Hoje</code>;</li>
+<li>síntese do momento e visualização das oito dimensões;</li>
+<li>estados linguísticos e níveis progressivos de detalhamento;</li>
+<li>confirmação, correção, contestação e tratamento de inferências;</li>
+<li>conflitos, envelhecimento, informações sensíveis e permissões por finalidade;</li>
+<li>integrações, histórico e evidências de evolução;</li>
+<li>priorização de atenção e prevenção de sobrecarga;</li>
+<li>explicação de recomendações e consequências de alterações;</li>
+<li>recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;</li>
+<li>eventos relacionados e critérios funcionais de aceitação.</li>
+</ul>
+<p>O próximo bloco definirá os contratos detalhados dos eventos funcionais do Contexto Vivo.</p>
 <h2 id="roadmap-reconciliacao-de-continuidade">Reconciliação de continuidade<a class="headerlink" href="#roadmap-reconciliacao-de-continuidade" title="Permanent link">&para;</a></h2>
 <p>A <code>GE2-SYNC-007</code> concluiu a leitura do estado atual do repositório e a comparação com o extrato final da conversa anterior.</p>
 <p>Resultados:</p>
@@ -26252,7 +26268,7 @@ Next authorized review: A2-R02
 <li>Contexto Vivo e Market Validation estavam incorporados;</li>
 <li>divergências editoriais demonstráveis foram autorizadas para correção;</li>
 <li>formulário e planilha de validação permanecem entregáveis operacionais futuros;</li>
-<li>o ponto de retomada do Product Engineering foi preservado e avançado para os comportamentos da interface <code>Meu Contexto Hoje</code>.</li>
+<li>o ponto de retomada do Product Engineering foi preservado e avançado para os contratos dos eventos funcionais do Contexto Vivo.</li>
 </ul>
 <h2 id="roadmap-progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#roadmap-progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
@@ -26272,7 +26288,7 @@ Next authorized review: A2-R02
 <tr>
 <td>02 — Contexto Vivo</td>
 <td>In progress</td>
-<td>82%</td>
+<td>88%</td>
 </tr>
 <tr>
 <td>03 — Objetivos</td>
@@ -26343,8 +26359,7 @@ Next authorized review: A2-R02
 <p>Retomar na <strong>Capacidade 02 — Contexto Vivo</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>comportamentos funcionais da interface <code>Meu Contexto Hoje</code>;</li>
-<li>contratos detalhados dos eventos;</li>
+<li>contratos detalhados dos eventos funcionais;</li>
 <li>integrações;</li>
 <li>KPIs;</li>
 <li>cenários ideal, alternativo e limite;</li>
