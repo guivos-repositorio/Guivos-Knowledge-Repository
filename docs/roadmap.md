@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 8.1.0
+version: 8.2.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
-- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 20%.
-- **Extensão normativa vigente:** `PAS-001-OA-FOUNDATION-001 1.0.0`.
+- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 40%.
+- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0` e `PAS-001-OA-LIFECYCLE-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar as regras do ciclo de vida da `Capacidade 06 — Oportunidades Ativas`.
+O próximo trabalho deverá consolidar a visualização e o controle da `Capacidade 06 — Oportunidades Ativas`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -63,24 +63,39 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 
 ### Capacidade 06 — Oportunidades Ativas
 
-`PAS-001-OA-FOUNDATION-001 1.0.0` consolida:
+`PAS-001-OA-FOUNDATION-001 1.0.0` consolidou:
 
 - pergunta central, objetivo funcional, valor entregue e singularidade;
 - Oportunidade Ativa como meio suficientemente disponível, legítimo, contextual e potencialmente compatível;
 - distinções entre oportunidade candidata, Oportunidade Ativa, recomendação, oferta, anúncio, Próximo Passo, experiência e transação;
 - titularidade, papéis, origens e autoridade das fontes;
-- tipos, classificações, elegibilidade e disponibilidade;
-- temporalidade, localização, modalidade, custo e condições econômicas;
-- patrocínio, comissão, afiliação, promoção paga e demais relações comerciais;
-- risco, segurança, sensibilidade e escassez;
-- relevância contextual e fatores legítimos ou proibidos;
-- limiar de ativação, estados funcionais, estado da informação e relação do participante;
-- ausência legítima de oportunidades compatíveis;
-- entradas, admissão, estrutura do registro, saídas e eventos iniciais;
-- relações com todas as capacidades do Journey, Guivos Intelligence, Platform Layer e produtos especializados;
-- neutralidade comercial, controle do participante, responsabilidades e limites.
+- tipos, classificações, elegibilidade, disponibilidade, riscos, custos e relações comerciais;
+- relevância contextual, limiar de ativação, neutralidade comercial e controle do participante.
 
-A Capacidade 06 está `In progress`, com progresso editorial de referência de `20%`.
+`PAS-001-OA-LIFECYCLE-001 1.0.0` consolida:
+
+- estados funcionais da oportunidade;
+- ciclos independentes de informação, disponibilidade, elegibilidade e relevância;
+- relação individual do participante e situação transacional externa;
+- identificação, sinais, candidatura, rejeição preliminar e início de avaliação;
+- validação da fonte, limite de autoridade e completude;
+- disponibilidade atual, futura, limitada e lista de espera;
+- elegibilidade simples, sensível, condicionada e não confirmada;
+- relevância contextual, condicionada e desatualizada;
+- avaliação de risco, sensibilidade e relações comerciais;
+- ativação simples e condicionada, separada de apresentação e recomendação;
+- manutenção do estado ativo, horizontes de revisão e atualizações materiais;
+- pausa, retomada, indisponibilidade, expiração, encerramento e cancelamento;
+- contestação, correção compensatória, arquivamento e reabertura;
+- duplicidade, unificação, substituição, alternativas, comparação e ordem neutra;
+- apresentação, visualização, salvamento, interesse, descarte e ocultação;
+- inscrição, aceitação, contratação e participação como estados distintos;
+- vínculos e efeitos controlados sobre Próximos Passos, Intervenções, Objetivos e Eventos de Vida;
+- recorrência, oportunidades coletivas, institucionais e patrocinadas;
+- mudanças de preço, fornecedor e risco;
+- revogação, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
+
+A Capacidade 06 está `In progress`, com progresso editorial de referência de `40%`.
 
 ## Progresso das capacidades do Journey
 
@@ -91,7 +106,7 @@ A Capacidade 06 está `In progress`, com progresso editorial de referência de `
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
-| 06 — Oportunidades Ativas | In progress | 20% |
+| 06 — Oportunidades Ativas | In progress | 40% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
@@ -133,23 +148,27 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não utilizar escassez comercial para fabricar urgência pessoal;
 - não explorar vulnerabilidade, Eventos de Vida sensíveis ou Próximos Passos protegidos;
 - não transferir autoridade de decisão à Guivos Intelligence, Platform Layer, fornecedores, patrocinadores ou anunciantes;
-- não tratar visualização como interesse, interesse como compromisso, inscrição como aceitação ou aceitação como experiência;
+- não tratar ativação como apresentação ou recomendação;
+- não tratar visualização como interesse, interesse como compromisso, inscrição como aceitação, aceitação como contratação ou contratação como participação;
+- não apresentar oportunidades indisponíveis como disponíveis;
+- não reativar oportunidade expirada sem nova avaliação;
+- não sobrescrever contestações, correções ou conflitos de versão;
 - não preencher ausência legítima de oportunidades com anúncios ou opções incompatíveis;
 - não iniciar outro produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar no **ciclo de vida das Oportunidades Ativas**.
+Retomar na **visualização e no controle das Oportunidades Ativas**.
 
 Próxima entrega:
 
-1. identificação e candidatura;
-2. validação de fonte e autoridade;
-3. avaliação de disponibilidade, elegibilidade, risco e relevância;
-4. ativação funcional;
-5. decisão de apresentação;
-6. relação do participante, interesse e descarte;
-7. pausa, atualização e reavaliação;
-8. indisponibilidade, expiração, encerramento e arquivamento;
-9. contestação e correção;
-10. propagação, idempotência, ordenação e falha segura.
+1. superfície principal de descoberta e acompanhamento;
+2. busca, filtros e organização;
+3. cartões e detalhamento progressivo;
+4. disponibilidade, elegibilidade, relevância, custos e riscos;
+5. comparação e alternativas;
+6. transparência de patrocínio, comissão e relações comerciais;
+7. oportunidades sensíveis e privacidade visual;
+8. salvamento, interesse, descarte, ocultação, inscrição e contestação;
+9. acessibilidade, explicabilidade e consistência entre canais;
+10. falhas, sincronização pendente e controle do participante.
