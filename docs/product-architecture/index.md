@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.2.4
+version: 1.2.5
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -95,7 +95,8 @@ As extensões normativas vigentes da Capacidade 02 são:
 - `PAS-001-CV-STATE-001` — estados funcionais de Identidade, Momento, Direção, Capacidades, Restrições, Preferências, Relacionamentos e Evolução;
 - `PAS-001-CV-UPDATE-001` — unidade de atualização, gatilhos, temporalidade, envelhecimento, confirmação proporcional, permissões e propagação controlada;
 - `PAS-001-CV-CONFLICT-001` — identificação, classificação, contextualização, resolução, explicabilidade e reabertura de conflitos entre informações, fontes, dimensões e temporalidades;
-- `PAS-001-CV-VIEW-001` — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle do participante em `Meu Contexto Hoje`.
+- `PAS-001-CV-VIEW-001` — transparência, explicabilidade, atualização, permissões, histórico, acessibilidade e controle do participante em `Meu Contexto Hoje`;
+- `PAS-001-CV-EVENT-001` — significado, estrutura, versionamento, proteção, propagação e efeitos dos eventos funcionais do Contexto Vivo.
 
 ## Regras arquiteturais
 
@@ -117,6 +118,7 @@ As extensões normativas vigentes da Capacidade 02 são:
 - [PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento do Contexto Vivo](pas-001-contexto-vivo-atualizacao-envelhecimento.md)
 - [PAS-001-CV-CONFLICT-001 — Resolução de Conflitos do Contexto Vivo](pas-001-contexto-vivo-resolucao-conflitos.md)
 - [PAS-001-CV-VIEW-001 — Meu Contexto Hoje](pas-001-meu-contexto-hoje.md)
+- [PAS-001-CV-EVENT-001 — Eventos Funcionais do Contexto Vivo](pas-001-contexto-vivo-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
