@@ -5314,6 +5314,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#contratos-dos-eventos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contratos dos eventos funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5555,6 +5566,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#contratos-dos-eventos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contratos dos eventos funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5656,7 +5678,7 @@
 <li><strong>Especificação-base ativa:</strong> <code>PAS-001 — Guivos Journey 0.5.0</code>.</li>
 <li><strong>Capacidades concluídas:</strong> <code>02 — Contexto Vivo</code> e <code>03 — Objetivos</code>.</li>
 <li><strong>Capacidade ativa:</strong> <code>04 — Eventos de Vida</code>.</li>
-<li><strong>Extensões normativas ativas de Eventos de Vida:</strong> <code>PAS-001-EV-FOUNDATION-001 1.0.0</code>, <code>PAS-001-EV-LIFECYCLE-001 1.0.0</code> e <code>PAS-001-EV-VIEW-001 1.0.0</code>.</li>
+<li><strong>Extensões normativas ativas de Eventos de Vida:</strong> <code>PAS-001-EV-FOUNDATION-001 1.0.0</code>, <code>PAS-001-EV-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-EV-VIEW-001 1.0.0</code> e <code>PAS-001-EV-EVENT-001 1.0.0</code>.</li>
 <li><strong>Arquitetura funcional:</strong> <code>GLPA-001 1.1.1</code>.</li>
 <li><strong>Intelligence Architecture:</strong> <code>GIA-000 1.3.0</code>.</li>
 <li><strong>Glossário Canônico:</strong> <code>1.8.0</code>.</li>
@@ -5720,7 +5742,26 @@
 <li>privacidade visual, títulos neutros, dispositivos compartilhados e compartilhamentos;</li>
 <li>explicabilidade, acessibilidade, consistência entre canais, histórico, sincronização e falha segura.</li>
 </ul>
-<p>O próximo bloco consolidará os contratos dos eventos funcionais da Capacidade de Eventos de Vida.</p>
+<h3 id="contratos-dos-eventos-funcionais">Contratos dos eventos funcionais<a class="headerlink" href="#contratos-dos-eventos-funcionais" title="Permanent link">&para;</a></h3>
+<p>A extensão <code>PAS-001-EV-EVENT-001 1.0.0</code> consolidou:</p>
+<ul>
+<li>distinção entre comando, proposta e evento funcional reconhecido;</li>
+<li>imutabilidade histórica e correção compensatória;</li>
+<li>estrutura comum, campos obrigatórios, titular, ator, fonte e autoridade;</li>
+<li>tempos do fato, conhecimento, reconhecimento e aplicação;</li>
+<li>finalidade, sensibilidade, permissões, correlação, causalidade e versionamento;</li>
+<li>famílias e contratos de identificação, proposição, declaração, planejamento e confirmação;</li>
+<li>contratos de início, atualização, adiamento, temporalidade e relevância;</li>
+<li>contratos de impactos, dimensões contextuais, objetivos e revisões dependentes;</li>
+<li>relações propostas, confirmadas e contestadas, incluindo causalidade explicável;</li>
+<li>conclusão, interrupção, cancelamento, contestação, correção, arquivamento e reabertura;</li>
+<li>unificação, desdobramento e eventos compostos;</li>
+<li>autorização, revogação, recomposição de recortes e propagação;</li>
+<li>idempotência, duplicidade semântica, ordenação, concorrência e versão esperada;</li>
+<li>retenção, logs, falhas de processamento, recuperação e auditoria;</li>
+<li>responsabilidades de produtores, consumidores, Guivos Intelligence e Platform Layer.</li>
+</ul>
+<p>O próximo bloco consolidará as integrações funcionais da Capacidade de Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.</p>
 <h2 id="progresso-das-capacidades-do-journey">Progresso das capacidades do Journey<a class="headerlink" href="#progresso-das-capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -5749,7 +5790,7 @@
 <tr>
 <td>04 — Eventos de Vida</td>
 <td>In progress</td>
-<td>60%</td>
+<td>80%</td>
 </tr>
 <tr>
 <td>05 — Próximos Passos</td>
@@ -5818,6 +5859,12 @@
 <li>não apresentar impactos propostos como aplicados;</li>
 <li>não expor eventos sensíveis em cartões, notificações, dispositivos compartilhados ou ambientes organizacionais;</li>
 <li>não utilizar ranking, pontuação, cobrança ou gamificação coercitiva em Eventos de Vida;</li>
+<li>não apresentar comandos ou propostas pendentes como fatos reconhecidos;</li>
+<li>não reescrever eventos históricos para corrigir o passado;</li>
+<li>não publicar evento de sucesso quando parte crítica da operação falhar;</li>
+<li>não duplicar eventos, impactos, notificações ou revisões durante reprocessamento;</li>
+<li>não permitir que consumidores ampliem a autoridade ou o significado do recorte recebido;</li>
+<li>não declarar revogação concluída antes da propagação efetiva;</li>
 <li>não manter versões paralelas silenciosas entre canais;</li>
 <li>não explorar comercialmente vulnerabilidades ou eventos sensíveis;</li>
 <li>não iniciar o próximo produto antes de conclusão funcional suficiente do Journey.</li>
@@ -5826,14 +5873,16 @@
 <p>Retomar na <strong>Capacidade 04 — Eventos de Vida</strong>.</p>
 <p>Próxima entrega:</p>
 <ol>
-<li>estrutura comum dos eventos funcionais;</li>
-<li>comandos, propostas e fatos reconhecidos;</li>
-<li>identificação, proposição e confirmação;</li>
-<li>atualização, estados e temporalidade;</li>
-<li>relevância, impactos e relações;</li>
-<li>contestação, correção, encerramento e reabertura;</li>
-<li>propagação, correlação, causalidade e ordenação;</li>
-<li>idempotência, versionamento, auditoria e falha segura.</li>
+<li>contrato funcional comum das integrações;</li>
+<li>integração com Captura de Contexto;</li>
+<li>integração com Contexto Vivo e Objetivos;</li>
+<li>integração com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;</li>
+<li>integração com Experiências e Evolução Contínua;</li>
+<li>papel e limites da Guivos Intelligence;</li>
+<li>responsabilidades da Platform Layer;</li>
+<li>serviços especializados e fontes externas;</li>
+<li>identidade, autoridade, finalidade, sensibilidade e recortes;</li>
+<li>sincronização, revogação, divergência, degradação controlada e falha segura.</li>
 </ol>
 
 
