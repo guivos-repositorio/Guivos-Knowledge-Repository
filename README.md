@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos
-- **Próxima capacidade oficial:** 06 — Oportunidades Ativas, `Planned / concept consolidated`
-- **Contrato final de Próximos Passos:** PAS-001-PP-CONTRACT-001 1.0.0
+- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 20%
+- **Extensão vigente de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -47,44 +47,53 @@ A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de 
 
 ## Capacidade 05 — Próximos Passos
 
-As seis extensões normativas consolidaram:
-
-- fundamentos, singularidade, titularidade, papéis, tipos e limites;
-- ciclo de vida, estados, prioridade, prontidão, dependências, bloqueios e execução;
-- superfície `Meus Próximos Passos`, portfólio, cartões, privacidade, acessibilidade e controle;
-- comandos, propostas, eventos reconhecidos, idempotência, ordenação, versionamento e auditoria;
-- integrações internas e externas, finalidade, minimização, autoridade, proveniência, sincronização, revogação e degradação controlada;
-- 68 KPIs em 14 famílias;
-- 20 guardrails de tolerância zero;
-- baseline, painel de saúde e cinco níveis de desempenho;
-- cenários funcionalmente ideais, alternativos e limite;
-- critérios de conclusão, lacunas bloqueantes e contrato funcional final.
+As seis extensões normativas consolidaram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.
 
 O `PAS-001-PP-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da Capacidade 05 por `Functionally complete`.
 
 A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de referência de **100%**.
 
-## Ponto exato de retomada
+## Capacidade 06 — Oportunidades Ativas
 
-Retomar nos fundamentos iniciais da Capacidade 06 — Oportunidades Ativas.
-
-A primeira extensão deverá consolidar:
+`PAS-001-OA-FOUNDATION-001 1.0.0` consolida:
 
 - pergunta central, objetivo funcional, valor entregue e singularidade;
-- definição e distinções de Oportunidade Ativa;
-- titularidade, origem, autoridade, relevância e elegibilidade;
-- temporalidade, disponibilidade, custo e risco;
-- patrocínio, relações comerciais e neutralidade;
-- relações com Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos e Intervenções Contextuais;
-- limites da Guivos Intelligence;
-- responsabilidades da Platform Layer;
-- controle do participante.
+- Oportunidade Ativa como meio suficientemente disponível, legítimo, contextual e potencialmente compatível;
+- distinção entre oportunidade candidata, Oportunidade Ativa, recomendação, anúncio, oferta, produto, serviço, experiência e Próximo Passo;
+- titularidade, papéis, origens e autoridade das fontes;
+- tipos e classificações iniciais;
+- elegibilidade, disponibilidade, temporalidade, localização e modalidade;
+- custos, patrocínio, comissão e relações comerciais;
+- risco, segurança, sensibilidade e escassez;
+- relevância contextual e fatores legítimos ou proibidos;
+- limiar de ativação, estados funcionais e relação individual do participante;
+- ausência legítima de oportunidades compatíveis;
+- entradas, requisitos de admissão, estrutura do registro e saídas;
+- relações com as capacidades do Journey, Guivos Intelligence, Platform Layer e produtos especializados;
+- controle do participante, neutralidade comercial, responsabilidades e limites.
+
+A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **20%**.
+
+## Ponto exato de retomada
+
+Retomar no ciclo de vida das Oportunidades Ativas.
+
+Próxima entrega:
+
+- identificação e candidatura;
+- avaliação e ativação;
+- apresentação e interesse;
+- elegibilidade e disponibilidade;
+- pausa, atualização e reavaliação;
+- expiração, encerramento, contestação e correção;
+- relação do participante com a oportunidade;
+- propagação e falha segura.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 06 permanece `Planned / concept consolidated` até sua primeira extensão normativa.
+A Capacidade 06 está `In progress` e deverá avançar por extensões normativas modulares até seu contrato final.
 
 ## Capacidades do Journey
 
@@ -95,7 +104,7 @@ A Capacidade 06 permanece `Planned / concept consolidated` até sua primeira ext
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
-| 06 — Oportunidades Ativas | Planned / concept consolidated — próxima frente |
+| 06 — Oportunidades Ativas | In progress — 20% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
@@ -107,12 +116,8 @@ A Capacidade 06 permanece `Planned / concept consolidated` até sua primeira ext
 - [Cenários e Contrato Final do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
-- [Fundamentos Iniciais da Capacidade de Próximos Passos](docs/product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md)
-- [Regras do Ciclo de Vida dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-ciclo-de-vida.md)
-- [Visualização e Controle dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
-- [Eventos Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-eventos-funcionais.md)
-- [Integrações Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-integracoes-funcionais.md)
 - [Contrato Final dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
+- [Fundamentos Iniciais de Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-fundamentos-iniciais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
