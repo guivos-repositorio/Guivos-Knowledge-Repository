@@ -2,6 +2,42 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.34.0 — Active Opportunities Capability Foundation
+
+- Criação de `PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Definição da pergunta central, objetivo funcional, valor entregue e singularidade da capacidade.
+- Formalização de Oportunidade Ativa como meio suficientemente disponível, legítimo, contextual e potencialmente compatível com participante, objetivo, Evento de Vida, Próximo Passo ou condição atual.
+- Definição do significado de `ativa`, sem equivalência automática a visualização, interesse, aceitação, contratação, participação ou benefício recebido.
+- Consolidação das distinções entre oportunidade candidata, Oportunidade Ativa, recomendação, oferta, anúncio, produto, serviço, benefício, experiência, conteúdo, convite, inscrição e transação.
+- Separação funcional entre Oportunidades Ativas, Próximos Passos, Intervenções Contextuais, publicidade, transação e prestação do serviço.
+- Definição da unidade funcional, propriedades obrigatórias, titularidade, papéis, origens e autoridade das fontes.
+- Registro das oportunidades declaradas pelo participante e identificadas pela Guivos Intelligence, com preservação da expressão original e limites de decisão.
+- Consolidação dos tipos e classificações iniciais de oportunidades comerciais, profissionais, educacionais, financeiras, sociais, voluntárias, religiosas, esportivas, culturais, turísticas, de saúde, benefícios, conteúdo e experiências.
+- Definição de elegibilidade como dimensão distinta de relevância, disponibilidade, interesse, aprovação e acesso.
+- Definição dos estados iniciais de elegibilidade e disponibilidade.
+- Formalização da temporalidade, localização, modalidade, custo total, subsídio, bolsa, desconto, financiamento, comissão, taxas e incertezas econômicas.
+- Definição da transparência obrigatória de patrocínio, afiliação, participação na receita, promoção paga, exclusividade e demais relações comerciais.
+- Consolidação dos riscos físicos, financeiros, jurídicos, reputacionais, emocionais, de privacidade, fraude, exploração, discriminação, dependência e deslocamento.
+- Definição da proteção reforçada para oportunidades de saúde, religião, vulnerabilidade financeira, violência, situação jurídica, emprego, moradia, família, sexualidade, deficiência, assistência social e recuperação pessoal.
+- Separação entre escassez real, capacidade limitada, urgência comercial e urgência funcional do participante.
+- Definição da relevância contextual, dos fatores legítimos de avaliação e da proibição de comissão, publicidade, estoque, clique, tempo de tela, popularidade ou vulnerabilidade como fatores funcionais.
+- Formalização do limiar de ativação com identidade, fonte, finalidade, disponibilidade, relevância, condições, risco, transparência comercial, temporalidade e proteção proporcional.
+- Definição dos estados funcionais iniciais, do estado da informação e da relação individual do participante como dimensões distintas.
+- Registro da ausência legítima de Oportunidades Ativas, sem preenchimento por anúncios ou opções incompatíveis.
+- Consolidação das entradas, requisitos de admissão, estrutura inicial do registro, saídas e eventos funcionais iniciais.
+- Definição das relações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções Contextuais, Experiências e Evolução Contínua.
+- Formalização dos limites da Guivos Intelligence, das responsabilidades da Platform Layer e das relações com Guivos Mall, Travel, Business, Media e Ads.
+- Registro das regras para organizações sociais, voluntariado, comunidades religiosas, saúde, bem-estar, oportunidades profissionais e financeiras.
+- Definição do controle do participante, das responsabilidades, dos limites, dos critérios de aceite e de 40 regras fundamentais.
+- Substituição normativa do estado `Planned / concept consolidated` da Capacidade 06 por `In progress`.
+- Estabelecimento do progresso editorial de referência da Capacidade 06 em `20%`.
+- Atualização da Arquitetura de Produtos para `1.6.0` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `8.1.0`, do Knowledge Board para `8.2.0` e da Matriz de Consolidação Canônica para `1.6.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição do ciclo de vida das Oportunidades Ativas como próximo ponto exato de retomada.
+
 ## 0.33.5 — Next Steps Final Contract
 
 - Criação de `PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Próximos Passos`, versão `1.0.0`.
