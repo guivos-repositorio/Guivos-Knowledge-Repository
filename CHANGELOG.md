@@ -2,6 +2,31 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.33.5 — Next Steps Final Contract
+
+- Criação de `PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Próximos Passos`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa e contrato final da Capacidade 05 do `PAS-001 — Guivos Journey`.
+- Consolidação de 68 KPIs organizados em 14 famílias de identificação, confirmação, portfólio, prioridade, prontidão, temporalidade, execução, resultados, recorrência, controle, integrações, confiabilidade, explicabilidade, neutralidade, esforço e fadiga.
+- Definição de 20 guardrails obrigatórios de tolerância zero para inferência pessoal, responsabilidade por silêncio, ativação prematura, interferência comercial, publicidade sensível, exploração de vulnerabilidade, conclusão indevida, autoridade excessiva, terceiros, revogação, duplicidade, ordenação, falha parcial, coerção e julgamento humano.
+- Formalização da baseline funcional antes de metas permanentes, do painel de saúde e dos níveis `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`.
+- Definição dos cenários funcionalmente ideais de movimento declarado, sugestão da Guivos Intelligence, relação com objetivo, reavaliação por Evento de Vida, fato externo objetivo, passo sensível e passo compartilhado.
+- Consolidação dos cenários alternativos de ausência de passo ativo, proposta rejeitada, temporalidade aproximada, passo sem objetivo formal, bloqueio, pausa, resultado diferente, recorrência não realizada, fonte desconectada e divergência compartilhada.
+- Consolidação dos cenários limite de identidade incerta, autoridade excessiva, inferência sensível, responsabilidade sem aceitação, interferência comercial, duplicidade, evento fora de ordem, falha parcial, revogação pendente, interpretação externa indevida, escopo organizacional, terceiros, coerção, retroatividade e fonte indisponível.
+- Definição dos critérios de conclusão funcional, das lacunas não bloqueantes e das lacunas bloqueantes.
+- Confirmação de que nenhuma lacuna funcional bloqueante é conhecida na baseline normativa vigente.
+- Consolidação do contrato final de finalidade, titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas, explicabilidade e auditoria.
+- Registro da baseline normativa com 68 KPIs, 14 famílias, 20 guardrails, painel de saúde, cinco níveis de desempenho e cenários.
+- Substituição normativa do estado `In progress` da Capacidade 05 por `Functionally complete`.
+- Elevação do progresso editorial da Capacidade 05 para `100%`.
+- Definição da regra de reabertura somente por lacuna crítica, evidência operacional, incidente, violação de guardrail, contradição, alteração regulatória, mudança estrutural ou decisão formal.
+- Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
+- Ativação da Capacidade 06 — Oportunidades Ativas como próxima frente oficial de Product Engineering, permanecendo `Planned / concept consolidated` até sua primeira extensão normativa.
+- Atualização da Arquitetura de Produtos para `1.5.5` e inclusão do contrato final na navegação do MkDocs.
+- Atualização do Roadmap para `8.0.0`, do Knowledge Board para `8.1.0` e da Matriz de Consolidação Canônica para `1.5.5`.
+- Atualização do README e da página inicial do GKR.
+- Preservação do `PAS-001 0.5.0` como especificação-base até futura edição consolidada.
+- Definição dos fundamentos iniciais da Capacidade 06 — Oportunidades Ativas como próximo ponto exato de retomada.
+
 ## 0.33.4 — Next Steps Functional Integrations
 
 - Criação de `PAS-001-PP-INTEGRATION-001 — Integrações Funcionais da Capacidade de Próximos Passos`, versão `1.0.0`.
