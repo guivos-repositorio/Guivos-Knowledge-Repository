@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.8.0
+version: 5.9.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
 - **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0` e `PAS-001-CV-EVENT-001 1.0.0`.
+- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0`, `PAS-001-CV-EVENT-001 1.0.0` e `PAS-001-CV-INTEGRATION-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -106,7 +106,20 @@ A extensão normativa `PAS-001-CV-EVENT-001 1.0.0` consolidou:
 - regras para informações sensíveis, inferências, eventos retroativos, correções, duplicidade e falhas de processamento;
 - explicabilidade, retenção e critérios funcionais de aceitação.
 
-O próximo bloco definirá as integrações funcionais do Contexto Vivo com capacidades, camadas e fontes externas.
+A extensão normativa `PAS-001-CV-INTEGRATION-001 1.0.0` consolidou:
+
+- objetivos, princípios, tipos, modos e contrato funcional das integrações;
+- identificação do participante, proveniência e autoridade limitada das fontes;
+- integração com as capacidades 01 a 09 do Journey;
+- integração com Guivos Intelligence, Platform Layer, Business, Mall, Travel, Media e Ads;
+- classes, qualidade, transformações e limites das fontes externas;
+- proteção de informações de terceiros, sensíveis e temporárias de sessão;
+- autorização, pausa, revogação, falhas e degradação controlada;
+- sincronização divergente, frequência, explicabilidade e auditoria;
+- prevenção de ciclos indevidos e exclusão inadequada de oportunidades;
+- integração com conversas, notificações, busca e jornadas relacionadas.
+
+O próximo bloco definirá os KPIs, indicadores de qualidade e critérios de desempenho funcional do Contexto Vivo.
 
 ## Reconciliação de continuidade
 
@@ -118,14 +131,14 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado e avançado para as integrações funcionais do Contexto Vivo.
+- o ponto de retomada do Product Engineering foi preservado e avançado para os KPIs e critérios de desempenho funcional do Contexto Vivo.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 93% |
+| 02 — Contexto Vivo | In progress | 96% |
 | 03 — Objetivos | Planned | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
@@ -170,7 +183,6 @@ Retomar na **Capacidade 02 — Contexto Vivo**.
 
 Próxima entrega:
 
-1. integrações funcionais;
-2. KPIs;
-3. cenários ideal, alternativo e limite;
-4. contrato da capacidade.
+1. KPIs, indicadores de qualidade e critérios de desempenho funcional;
+2. cenários ideal, alternativo e limite;
+3. contrato da capacidade.
