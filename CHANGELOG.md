@@ -2,6 +2,41 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.33.4 — Next Steps Functional Integrations
+
+- Criação de `PAS-001-PP-INTEGRATION-001 — Integrações Funcionais da Capacidade de Próximos Passos`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 05 do `PAS-001 — Guivos Journey`.
+- Definição da integração como intercâmbio governado de informações e operações, sem transferência de titularidade ou decisão.
+- Consolidação dos objetivos e princípios de titularidade preservada, autoridade limitada, finalidade explícita, minimização, proveniência, temporalidade, revogabilidade, neutralidade comercial, não vigilância e falha segura.
+- Definição dos tipos e modos funcionais de integração, com permissões próprias para leitura, escrita, proposição, confirmação, execução, sincronização, notificação, consulta, exportação, compartilhamento, revogação e auditoria.
+- Formalização do contrato comum das integrações, incluindo produtor, consumidor, participante, finalidade, escopo, campos, autoridade, origem, proveniência, qualidade, confiança, sensibilidade, frequência, validade, retenção e estado de sincronização.
+- Consolidação dos requisitos de admissão, identidade, associação segura e limitação de efeitos para associações incertas.
+- Definição da autoridade das fontes, limitada ao fato que cada origem pode legitimamente confirmar.
+- Separação entre qualidade técnica, confiança funcional e autoridade.
+- Formalização das temporalidades de fato, registro externo, sincronização, conhecimento, processamento, aplicação e correção.
+- Definição das transformações permitidas e proibição de fabricar prazo, prioridade, intenção, responsabilidade, compromisso, causalidade, diagnóstico, evolução, conclusão ou precisão inexistente.
+- Consolidação da sincronização com versão, idempotência, duplicidade, ordenação, pendência, conflito, reconciliação, latência, atualização parcial, indisponibilidade e reprocessamento.
+- Definição das regras de prevenção de ciclos entre capacidades e produtos.
+- Formalização da finalidade, minimização, permissões, pausa, desconexão, revogação e recomposição de recortes.
+- Preservação de fatos históricos legítimos após revogação, sem autorizar novos acessos ou usos.
+- Definição da falha segura e da degradação controlada, preservando o último estado válido e evitando confirmação ou conclusão falsas.
+- Consolidação das integrações com Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida.
+- Definição das integrações com Oportunidades Ativas, Intervenções Contextuais, Experiências e Evolução Contínua.
+- Formalização dos limites da Guivos Intelligence e das responsabilidades da Platform Layer.
+- Consolidação das integrações com Guivos Business, Mall, Travel, Media e Ads, preservando limites institucionais e neutralidade comercial.
+- Registro das integrações com serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, organizações sociais, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas.
+- Definição das integrações temporárias e pessoais, com expiração, controle de campos, finalidade, frequência, consumidores, notificações e desconexão.
+- Consolidação da proteção de informações de terceiros e dos contratos de passos compartilhados.
+- Definição dos conflitos entre fontes, eventos retroativos, canais conversacionais, notificações e busca.
+- Registro das saídas permitidas, ações proibidas e eventos funcionais das integrações.
+- Consolidação das métricas sistêmicas, explicabilidade e auditoria reconstruível.
+- Atualização da Arquitetura de Produtos para `1.5.4` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `7.9.0`, do Knowledge Board para `8.0.0` e da Matriz de Consolidação Canônica para `1.5.4`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 05 no estado `In progress` e elevação do progresso editorial de referência para `90%`.
+- Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
+- Definição dos KPIs, guardrails, baseline, cenários e contrato final da Capacidade de Próximos Passos como próximo ponto exato de retomada.
+
 ## 0.33.3 — Next Steps Functional Event Contracts
 
 - Criação de `PAS-001-PP-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Próximos Passos`, versão `1.0.0`.
