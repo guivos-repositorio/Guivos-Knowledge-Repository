@@ -130,6 +130,7 @@ nav:
       - PAS-001-PP-FOUNDATION-001 — Fundamentos de Próximos Passos: product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md
       - PAS-001-PP-LIFECYCLE-001 — Ciclo de Vida dos Próximos Passos: product-architecture/pas-001-proximos-passos-ciclo-de-vida.md
       - PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos: product-architecture/pas-001-proximos-passos-visualizacao-controle.md
+      - PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos: product-architecture/pas-001-proximos-passos-eventos-funcionais.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
@@ -186,7 +187,6 @@ nav:
       - A2 Baseline B1 — Foundation 5/6: project/A2-BASELINE-B1.md
       - A2 Baseline B2 — Foundation 6/6: project/A2-BASELINE-B2.md
       - A2 Baseline B3 — Foundation Frozen: project/A2-BASELINE-B3.md
-      - Knowledge Board: project/knowledge-board.md
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
