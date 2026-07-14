@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida
-- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 40%
-- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001 e PAS-001-PP-LIFECYCLE-001, ambas em 1.0.0
+- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 60%
+- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001, PAS-001-PP-LIFECYCLE-001 e PAS-001-PP-VIEW-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -49,41 +49,43 @@ A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de 
 
 `PAS-001-PP-FOUNDATION-001 1.0.0` consolidou os fundamentos iniciais e substituiu o estado `Planned` da capacidade por `In progress`.
 
-`PAS-001-PP-LIFECYCLE-001 1.0.0` consolida:
+`PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida completo, preservando proposta, confirmação, prontidão, ativação, prioridade, execução, resultado e conclusão como dimensões distintas.
 
-- identificação de possibilidades, formulação, proposição e avaliação;
-- confirmação simples, proporcional, condicionada, parcial e compartilhada;
-- rejeição, reformulação, desdobramento e unificação;
-- prontidão, ativação operacional e portfólio ativo;
-- prioridade, repriorização e sequenciamento;
-- dependências, bloqueios, desbloqueio e espera funcional;
-- pausa, retomada, agendamento e adiamento;
-- início, execução, acompanhamento e mudança de escopo;
-- resultado imediato separado de progresso e conclusão;
-- conclusão, cancelamento, substituição e expiração;
-- contestação, correção, reabertura e arquivamento;
-- recorrência, ocorrências e encerramento da recorrência;
-- passos compartilhados, delegação, compartilhamento e revogação;
-- propagação, prevenção de ciclos, duplicidade, idempotência, ordenação e concorrência;
-- retroatividade, falha segura, privacidade, explicabilidade e prevenção de fadiga.
+`PAS-001-PP-VIEW-001 1.0.0` consolida:
 
-A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **40%**.
+- a superfície funcional `Meus Próximos Passos`;
+- visão geral, resumo linguístico e ausência legítima de movimentos;
+- portfólio ativo, propostas, possibilidades futuras e alternativas;
+- cartões minimizados e detalhamento progressivo;
+- prioridade, prontidão, agenda e temporalidade sem cobrança;
+- dependências, bloqueios e mapas acessíveis;
+- execução, subpassos, tarefas opcionais e resultados imediatos;
+- conclusão, cancelamento, substituição, expiração e reabertura;
+- recorrência sem gamificação coercitiva;
+- passos compartilhados, delegação e responsabilidades individualizadas;
+- compartilhamentos, revogação e privacidade visual;
+- fila de atenção, prevenção de fadiga e notificações discretas;
+- explicabilidade, histórico, consistência entre canais e falha segura;
+- acessibilidade técnica e cognitiva;
+- neutralidade comercial e controle amplo do participante.
+
+A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **60%**.
 
 ## Ponto exato de retomada
 
-Retomar na visualização e no controle dos Próximos Passos.
+Retomar nos contratos dos eventos funcionais da Capacidade de Próximos Passos.
 
 Próxima entrega:
 
-- visão geral e portfólio ativo;
-- cartões e detalhamento;
-- propostas e alternativas;
-- prioridade, prontidão e agenda;
-- dependências e bloqueios;
-- execução e resultados;
-- recorrência e passos compartilhados;
-- histórico, privacidade e acessibilidade;
-- explicabilidade e ações do participante.
+- distinção entre comandos, propostas e fatos reconhecidos;
+- estrutura comum, identidade, autoridade e temporalidade;
+- criação, confirmação, ativação e prontidão;
+- prioridade, dependências e bloqueios;
+- execução, resultados e conclusão;
+- cancelamento, substituição e expiração;
+- contestação, correção e recorrência;
+- compartilhamento, propagação e revogação;
+- idempotência, ordenação, versionamento, auditoria e falha segura.
 
 ## Product Engineering
 
@@ -99,7 +101,7 @@ A Capacidade 05 está `In progress` e deverá avançar por extensões normativas
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 40% |
+| 05 — Próximos Passos | In progress — 60% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -114,6 +116,7 @@ A Capacidade 05 está `In progress` e deverá avançar por extensões normativas
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais da Capacidade de Próximos Passos](docs/product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md)
 - [Regras do Ciclo de Vida dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-ciclo-de-vida.md)
+- [Visualização e Controle dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
