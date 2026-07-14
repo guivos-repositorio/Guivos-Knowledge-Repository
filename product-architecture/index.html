@@ -2499,7 +2499,8 @@
 <li><code>PAS-001-PP-FOUNDATION-001</code> — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;</li>
 <li><code>PAS-001-PP-LIFECYCLE-001</code> — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;</li>
 <li><code>PAS-001-PP-VIEW-001</code> — superfície <code>Meus Próximos Passos</code>, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles;</li>
-<li><code>PAS-001-PP-EVENT-001</code> — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura.</li>
+<li><code>PAS-001-PP-EVENT-001</code> — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura;</li>
+<li><code>PAS-001-PP-INTEGRATION-001</code> — contrato comum, identidade, autoridade, proveniência, transformações, sincronização, integrações internas e externas, revogação, neutralidade comercial e degradação controlada.</li>
 </ul>
 <p><code>PAS-001-PP-FOUNDATION-001 1.0.0</code> substitui normativamente o estado <code>Planned</code> da linha da capacidade no <code>PAS-001 0.5.0</code> por <code>In progress</code>.</p>
 <p><code>PAS-001-PP-LIFECYCLE-001 1.0.0</code> consolida o ciclo completo, mantendo separadas as dimensões de possibilidade, proposta, confirmação, ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão.</p>
@@ -2538,8 +2539,28 @@
 <li>idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e falha segura;</li>
 <li>retenção, minimização de logs, recuperação, explicabilidade e auditoria.</li>
 </ul>
-<p>A Capacidade 05 está <strong>In progress</strong>, com progresso editorial de referência de <code>80%</code>.</p>
-<p>O próximo bloco deverá consolidar as integrações funcionais dos Próximos Passos.</p>
+<p><code>PAS-001-PP-INTEGRATION-001 1.0.0</code> consolida:</p>
+<ul>
+<li>integração como intercâmbio governado, não como decisão;</li>
+<li>tipos e modos funcionais com permissões próprias;</li>
+<li>contrato comum com produtor, consumidor, participante, finalidade, escopo, autoridade, proveniência, temporalidade, qualidade, sensibilidade e estado de sincronização;</li>
+<li>requisitos de admissão, identidade e associação segura;</li>
+<li>autoridade limitada ao fato que a fonte pode legitimamente confirmar;</li>
+<li>separação entre qualidade técnica, confiança funcional e autoridade;</li>
+<li>transformações permitidas e proibição de fabricar prazo, prioridade, intenção, responsabilidade, causalidade, diagnóstico ou conclusão;</li>
+<li>sincronização com versão, idempotência, ordenação, conflitos, reconciliação, latência e reprocessamento;</li>
+<li>prevenção de ciclos e duplicidades entre capacidades;</li>
+<li>minimização, permissões, pausa, revogação e preservação de fatos históricos legítimos;</li>
+<li>falha segura e degradação controlada;</li>
+<li>integrações com todas as capacidades do Journey;</li>
+<li>limites da Guivos Intelligence e responsabilidades da Platform Layer;</li>
+<li>integrações com Guivos Business, Mall, Travel, Media e Ads;</li>
+<li>serviços profissionais, educação, saúde, finanças, calendários, localização, esportes, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas;</li>
+<li>integrações temporárias e pessoais, proteção de terceiros, passos compartilhados, conflitos entre fontes e retroatividade;</li>
+<li>canais conversacionais, notificações, busca, saídas permitidas, ações proibidas, eventos, métricas, explicabilidade e auditoria.</li>
+</ul>
+<p>A Capacidade 05 está <strong>In progress</strong>, com progresso editorial de referência de <code>90%</code>.</p>
+<p>O próximo bloco deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final dos Próximos Passos.</p>
 <h2 id="regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#regras-arquiteturais" title="Permanent link">¶</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -2688,6 +2709,36 @@
 <li>Platform Layer sustenta armazenamento, publicação, filas e reconstrução sem redefinir semântica.</li>
 <li>As métricas dos contratos avaliam o sistema, não o participante.</li>
 <li>O participante permanece no controle dos eventos funcionais da capacidade.</li>
+<li>Integração de Próximos Passos não representa decisão do participante.</li>
+<li>Disponibilidade técnica de dado não representa autorização de uso.</li>
+<li>Fonte somente confirma fatos dentro de sua autoridade.</li>
+<li>Finalidade deve preceder acesso e minimização deve preceder compartilhamento.</li>
+<li>Titularidade não é transferida por integração.</li>
+<li>A capacidade consumidora governa sua própria decisão e não recebe decisões impostas.</li>
+<li>Informação externa não cria compromisso pessoal.</li>
+<li>Calendário não confirma execução e compra não confirma conclusão.</li>
+<li>Localização não confirma ação e atividade não confirma progresso.</li>
+<li>Participação não confirma transformação humana.</li>
+<li>Organização não recebe a jornada pessoal integral.</li>
+<li>Receita e patrocínio não alteram prioridade ou recomendação funcional.</li>
+<li>Conteúdo sensível não pode alimentar publicidade.</li>
+<li>Transformações não podem fabricar precisão, causalidade, intenção, responsabilidade ou diagnóstico.</li>
+<li>Sincronização não pode duplicar efeitos.</li>
+<li>Mensagens fora de ordem não podem criar estados impossíveis.</li>
+<li>Revogação interrompe novos usos e exige propagação efetiva.</li>
+<li>Falha de integração reduz automação e preserva o último estado válido.</li>
+<li>Falha parcial não representa sucesso integral.</li>
+<li>Ausência de dado não representa ausência de necessidade.</li>
+<li>Informação pública não representa uso irrestrito.</li>
+<li>Integrações temporárias devem possuir expiração.</li>
+<li>Informações de terceiros não devem formar perfis independentes.</li>
+<li>Qualidade técnica, confiança funcional e autoridade são dimensões distintas.</li>
+<li>Proveniência e cadeia de transformação devem permanecer reconstruíveis.</li>
+<li>Pausa e revogação devem permanecer controláveis pelo participante.</li>
+<li>Guivos Intelligence pode sugerir, explicar e comparar, mas não confirmar decisões pessoais.</li>
+<li>Platform Layer sustenta integração, sincronização e auditoria sem redefinir semântica.</li>
+<li>Métricas das integrações avaliam o sistema, não o participante.</li>
+<li>O participante permanece no controle das integrações funcionais.</li>
 </ol>
 <h2 id="documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#documentos-do-dominio" title="Permanent link">¶</a></h2>
 <ul>
@@ -2700,6 +2751,7 @@
 <li><a href="pas-001-proximos-passos-ciclo-de-vida/">PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos</a></li>
 <li><a href="pas-001-proximos-passos-visualizacao-controle/">PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos</a></li>
 <li><a href="pas-001-proximos-passos-eventos-funcionais/">PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos</a></li>
+<li><a href="pas-001-proximos-passos-integracoes-funcionais/">PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos</a></li>
 <li><a href="journey/">Guivos Journey</a></li>
 <li><a href="mall/">Guivos Mall</a></li>
 <li><a href="travel/">Guivos Travel</a></li>
