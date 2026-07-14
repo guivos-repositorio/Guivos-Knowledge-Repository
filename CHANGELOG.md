@@ -2,6 +2,39 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.33.3 — Next Steps Functional Event Contracts
+
+- Criação de `PAS-001-PP-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Próximos Passos`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 05 do `PAS-001 — Guivos Journey`.
+- Definição da distinção entre comando, proposta e evento funcional reconhecido.
+- Formalização da imutabilidade histórica e da correção compensatória por novos eventos.
+- Consolidação da estrutura comum dos contratos, incluindo agregado, titular, categoria do participante, ator, papel, autoridade, finalidade, sensibilidade e permissões.
+- Separação das temporalidades de intenção, proposição, decisão, ativação, início, execução, resultado, conclusão, conhecimento, processamento, aplicação e correção.
+- Definição de temporalidade aproximada, retroatividade, correlação, causalidade funcional e versionamento.
+- Organização dos contratos em 17 famílias de identificação, confirmação, estrutura, ativação, prioridade, dependências, bloqueios, agenda, execução, encerramento, correção, recorrência, responsabilidades, compartilhamento, propagação, visão e falhas.
+- Formalização dos contratos de possibilidade, proposição, rejeição, declaração, confirmação simples, condicionada e parcial.
+- Consolidação dos eventos de reformulação, desdobramento, unificação, ativação, prontidão, preparação, prioridade e sequenciamento.
+- Definição dos contratos de dependências, bloqueios, desbloqueios, pausa, retomada, agendamento e adiamento.
+- Registro dos eventos de início, atualização, resultado, conclusão total e conclusão parcial.
+- Consolidação dos eventos de cancelamento, substituição, expiração, contestação, resolução, correção, reabertura e arquivamento.
+- Definição dos contratos de recorrência, ocorrências individuais e classificação de ocorrências não realizadas sem julgamento pessoal.
+- Formalização da delegação, aceitação, rejeição e responsabilidades individualizadas.
+- Consolidação dos compartilhamentos, revogações, propagação de revogação e confirmação real de processamento.
+- Definição da produção de recortes mínimos e das reavaliações dependentes sem transferência de decisão às capacidades consumidoras.
+- Registro dos mesmos contratos semânticos para visão e canais conversacionais.
+- Separação dos eventos de leitura e interação, sem efeitos automáticos sobre confirmação, prioridade, execução, conclusão ou responsabilidade.
+- Formalização dos eventos compostos, da atomicidade funcional e dos estados operacionais pendentes.
+- Consolidação da idempotência, duplicidade semântica, ordenação, eventos fora de ordem, concorrência e versão esperada.
+- Definição da exclusão, anonimização, retenção e minimização de narrativas sensíveis em logs.
+- Registro dos contratos de falha de processamento, falha de propagação, recuperação e reconstrução de projeções.
+- Consolidação das responsabilidades dos produtores e consumidores, da explicabilidade e da auditoria reconstruível.
+- Atualização da Arquitetura de Produtos para `1.5.3` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `7.8.0`, do Knowledge Board para `7.9.0` e da Matriz de Consolidação Canônica para `1.5.3`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 05 no estado `In progress` e elevação do progresso editorial de referência para `80%`.
+- Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
+- Definição das integrações funcionais da Capacidade de Próximos Passos como próximo ponto exato de retomada.
+
 ## 0.33.2 — Next Steps Functional View
 
 - Criação de `PAS-001-PP-VIEW-001 — Comportamentos Funcionais da Visualização e do Controle dos Próximos Passos`, versão `1.0.0`.
@@ -93,7 +126,7 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 - Definição do controle do participante, da proteção de passos sensíveis, da minimização de terceiros e da proibição de produtividade coercitiva e exploração comercial.
 - Substituição normativa do estado `Planned` da Capacidade 05 na seção 7 do `PAS-001 0.5.0` por `In progress`.
 - Estabelecimento do progresso editorial de referência da Capacidade 05 em `20%`.
-- Atualização da Arquitetura de Produtos para `1.5.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização da Arquitetura de Produtos para `1.5.0` e inclusão da extensão normativa na navegação do MkDocs.
 - Atualização do Roadmap para `7.5.0`, do Knowledge Board para `7.6.0` e da Matriz de Consolidação Canônica para `1.5.0`.
 - Atualização do README e da página inicial do GKR.
 - Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
