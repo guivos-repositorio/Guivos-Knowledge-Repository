@@ -112,6 +112,7 @@ nav:
       - PAS-001-CV-VIEW-001 — Meu Contexto Hoje: product-architecture/pas-001-meu-contexto-hoje.md
       - PAS-001-CV-EVENT-001 — Eventos Funcionais: product-architecture/pas-001-contexto-vivo-eventos-funcionais.md
       - PAS-001-CV-INTEGRATION-001 — Integrações Funcionais: product-architecture/pas-001-contexto-vivo-integracoes-funcionais.md
+      - PAS-001-CV-KPI-001 — KPIs e Desempenho: product-architecture/pas-001-contexto-vivo-kpis-desempenho.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
