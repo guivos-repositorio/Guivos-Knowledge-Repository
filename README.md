@@ -12,7 +12,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidade concluída:** 02 — Contexto Vivo
 - **Capacidade ativa:** 03 — Objetivos
-- **Extensões normativas ativas de Objetivos:** PAS-001-OBJ-FOUNDATION-001 1.0.0 e PAS-001-OBJ-LIFECYCLE-001 1.0.0
+- **Extensões normativas ativas de Objetivos:** PAS-001-OBJ-FOUNDATION-001 1.0.0, PAS-001-OBJ-LIFECYCLE-001 1.0.0 e PAS-001-OBJ-PROGRESS-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -33,20 +33,23 @@ A Capacidade 02 está **funcionalmente concluída**.
 
 A extensão `PAS-001-OBJ-FOUNDATION-001 1.0.0` consolidou os fundamentos, distinções conceituais, responsabilidades, limites, entradas, estados, relações, critérios e integrações iniciais.
 
-A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou:
+A extensão `PAS-001-OBJ-LIFECYCLE-001 1.0.0` consolidou criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida.
 
-- unidade funcional e origens dos objetivos;
-- regras de criação, confirmação e ativação;
-- detecção de duplicidade, reformulação, desdobramento e unificação;
-- prioridade separada de urgência e estado;
-- portfólio, simultaneidade e conflitos;
-- revisão, envelhecimento e atualidade;
-- pausa, bloqueio, retomada e desbloqueio;
-- conclusão parcial, contínua e definitiva;
-- retirada, substituição, arquivamento e reativação;
-- propagação para capacidades consumidoras;
-- apresentação ao participante e proteção de objetivos sensíveis;
-- eventos funcionais do ciclo de vida.
+A extensão `PAS-001-OBJ-PROGRESS-001 1.0.0` consolidou:
+
+- critérios de sucesso quantitativos, qualitativos, experienciais, contínuos, exploratórios e compostos;
+- critérios pessoais e institucionais;
+- linha de base e horizonte de avaliação;
+- distinção entre atividade, resultado, evidência, progresso, marco e conclusão;
+- modelos e estados funcionais de progresso;
+- limites para percentuais e pontuações;
+- progresso declarado, observado e inferido;
+- redução de progresso sem apagamento histórico;
+- marcos e resultados parciais;
+- tipos, estrutura, força e conflitos de evidências;
+- conclusão declarada, institucional, sugerida, parcial, exploratória e de ciclo;
+- contestação, reabertura e efeitos da conclusão;
+- explicabilidade e eventos relacionados.
 
 ## Ponto exato de retomada
 
@@ -54,11 +57,11 @@ Retomar na `Capacidade 03 — Objetivos`.
 
 Próxima entrega:
 
-- critérios de sucesso;
-- progresso;
-- marcos;
-- evidências;
-- regras detalhadas de conclusão.
+- visão `Meus Objetivos`;
+- portfólio e detalhamento;
+- controles e explicações;
+- revisões;
+- proteção de objetivos sensíveis.
 
 ## Product Engineering
 
@@ -85,6 +88,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Cenários e Contrato Final do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [Fundamentos Iniciais da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-fundamentos-iniciais.md)
 - [Regras do Ciclo de Vida dos Objetivos](docs/product-architecture/pas-001-objetivos-ciclo-de-vida.md)
+- [Critérios de Sucesso, Progresso, Evidências e Conclusão](docs/product-architecture/pas-001-objetivos-progresso-e-conclusao.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
