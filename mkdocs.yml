@@ -131,6 +131,7 @@ nav:
       - PAS-001-PP-LIFECYCLE-001 — Ciclo de Vida dos Próximos Passos: product-architecture/pas-001-proximos-passos-ciclo-de-vida.md
       - PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos: product-architecture/pas-001-proximos-passos-visualizacao-controle.md
       - PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos: product-architecture/pas-001-proximos-passos-eventos-funcionais.md
+      - PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos: product-architecture/pas-001-proximos-passos-integracoes-funcionais.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
