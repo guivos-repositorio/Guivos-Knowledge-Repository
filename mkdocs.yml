@@ -119,6 +119,7 @@ nav:
       - PAS-001-OBJ-PROGRESS-001 — Progresso e Conclusão: product-architecture/pas-001-objetivos-progresso-e-conclusao.md
       - PAS-001-OBJ-VIEW-001 — Meus Objetivos: product-architecture/pas-001-meus-objetivos.md
       - PAS-001-OBJ-EVENT-001 — Eventos Funcionais de Objetivos: product-architecture/pas-001-objetivos-eventos-funcionais.md
+      - PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais de Objetivos: product-architecture/pas-001-objetivos-integracoes-funcionais.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
