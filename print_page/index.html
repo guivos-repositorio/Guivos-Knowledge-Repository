@@ -8356,7 +8356,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>Capacidade 02 — Contexto Vivo funcionalmente concluída;</li>
 <li>Capacidade 03 — Objetivos funcionalmente concluída;</li>
 <li>Capacidade 04 — Eventos de Vida ativa;</li>
-<li><code>PAS-001-EV-FOUNDATION-001 1.0.0</code>, <code>PAS-001-EV-LIFECYCLE-001 1.0.0</code> e <code>PAS-001-EV-VIEW-001 1.0.0</code> como extensões normativas da Capacidade 04;</li>
+<li><code>PAS-001-EV-FOUNDATION-001 1.0.0</code>, <code>PAS-001-EV-LIFECYCLE-001 1.0.0</code>, <code>PAS-001-EV-VIEW-001 1.0.0</code> e <code>PAS-001-EV-EVENT-001 1.0.0</code> como extensões normativas da Capacidade 04;</li>
 <li><code>GLPA-001 1.1.1</code> vigente;</li>
 <li><code>GIA-000 1.3.0</code> vigente;</li>
 <li>Glossário Canônico <code>1.8.0</code>;</li>
@@ -8364,7 +8364,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </ul>
 <h2 id="index-missao-atual">Missão atual<a class="headerlink" href="#index-missao-atual" title="Permanent link">&para;</a></h2>
 <p>Especificar funcionalmente a <strong>Capacidade 04 — Eventos de Vida</strong>.</p>
-<p>Os fundamentos, o ciclo de vida e a visão funcional já consolidam conceito, distinções, tipos, titularidade, autoridade, identificação, proposição, confirmação, estados, temporalidade, relevância, impactos, relações, correção, contestação, encerramento, linha do tempo, detalhamento, privacidade visual, controles do participante, propagação e falha segura.</p>
+<p>Os quatro blocos normativos vigentes consolidam fundamentos, ciclo de vida, visualização e controle, contratos de eventos funcionais, temporalidade, relevância, impactos, relações, correção, contestação, encerramento, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.</p>
 <h2 id="index-acesso-rapido">Acesso rápido<a class="headerlink" href="#index-acesso-rapido" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#public-guia-oficial-da-guivos">Guia Oficial da Guivos</a></li>
@@ -8374,6 +8374,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#product-architecture-pas-001-eventos-de-vida-fundamentos-iniciais">Fundamentos Iniciais da Capacidade de Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-eventos-de-vida-ciclo-de-vida">Regras do Ciclo de Vida dos Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-eventos-de-vida-visualizacao-controle">Visualização e Controle dos Eventos de Vida</a></li>
+<li><a href="#product-architecture-pas-001-eventos-de-vida-eventos-funcionais">Contratos dos Eventos Funcionais de Eventos de Vida</a></li>
 <li><a href="#product-architecture-layered-product-architecture">GLPA-001</a></li>
 <li><a href="#intelligence-architecture">Guivos Intelligence Architecture</a></li>
 <li><a href="#glossary">Glossário Canônico</a></li>
@@ -8429,7 +8430,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tbody>
 </table>
 <h2 id="index-ponto-de-retomada">Ponto de retomada<a class="headerlink" href="#index-ponto-de-retomada" title="Permanent link">&para;</a></h2>
-<p>Retomar na Capacidade 04, detalhando os contratos dos eventos funcionais dos Eventos de Vida: identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.</p></section>
+<p>Retomar na Capacidade 04, detalhando as integrações funcionais dos Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.</p></section>
                     <section class='print-page md-section' id='section-2' heading-number='2'>
                         <h1>Guia Oficial da Guivos<a class='headerlink' href='#section-2' title='Permanent link'></a>
                         </h1>
@@ -14339,10 +14340,11 @@ Implementação = realização progressiva
 <ul>
 <li><code>PAS-001-EV-FOUNDATION-001</code> — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;</li>
 <li><code>PAS-001-EV-LIFECYCLE-001</code> — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura;</li>
-<li><code>PAS-001-EV-VIEW-001</code> — visão geral, linha do tempo, agrupamentos, filtros, cartões, detalhamento, impactos, relações, eventos planejados e em andamento, ações do participante, conteúdo sensível, privacidade visual, notificações, compartilhamentos, explicabilidade, histórico, sincronização e acessibilidade.</li>
+<li><code>PAS-001-EV-VIEW-001</code> — visão geral, linha do tempo, cartões, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico, acessibilidade e ações do participante;</li>
+<li><code>PAS-001-EV-EVENT-001</code> — comandos, propostas e fatos reconhecidos, estrutura comum, temporalidades, autoridade, famílias e contratos de eventos, impactos, relações, correções, contestações, permissões, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.</li>
 </ul>
-<p>A primeira extensão substitui normativamente o estado <code>Planned / concept consolidated</code> da linha da Capacidade 04 na seção 7 do <code>PAS-001 0.5.0</code>. A capacidade permanece <code>In progress</code>.</p>
-<p>O próximo bloco deverá detalhar os contratos dos eventos funcionais da Capacidade de Eventos de Vida, incluindo identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.</p>
+<p>A primeira extensão substitui normativamente o estado <code>Planned / concept consolidated</code> da linha da Capacidade 04 na seção 7 do <code>PAS-001 0.5.0</code>. A capacidade permanece <code>In progress</code>, com progresso editorial de referência de <code>80%</code>.</p>
+<p>O próximo bloco deverá detalhar as integrações funcionais da Capacidade de Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -14388,13 +14390,17 @@ Implementação = realização progressiva
 <li>Propagação utiliza recortes mínimos e reprocessamento não pode duplicar efeitos.</li>
 <li>Eventos sensíveis exigem minimização, proteção visual, finalidade específica e ausência de exploração comercial.</li>
 <li>Eventos de Vida não criam objetivos pessoais ativos nem impõem prioridade.</li>
-<li>A linha do tempo de Eventos de Vida é superfície de compreensão e controle, não feed social, diário integral ou instrumento de avaliação pessoal.</li>
-<li>Sinais, propostas, eventos planejados e eventos ocorridos devem permanecer visualmente distintos.</li>
-<li>Impactos propostos não podem parecer aplicados e cada impacto deve ser revisável individualmente.</li>
-<li>Eventos sensíveis devem permanecer ocultos por padrão, com títulos neutros e notificações minimizadas.</li>
-<li>A visualização não pode gerar ranking, pontuação, cobrança pessoal ou classificação universal de sucesso e fracasso.</li>
-<li>Aplicativo, web, conversa, notificações e serviços autorizados devem refletir a mesma versão, permissões, temporalidade e contestações.</li>
-<li>Sincronização pendente e efeitos ainda não aplicados devem permanecer explícitos ao participante.</li>
+<li>A linha do tempo de Eventos de Vida não é feed social, diário integral, ranking ou instrumento de avaliação pessoal.</li>
+<li>Sinais, propostas, eventos planejados e fatos ocorridos devem permanecer visualmente distintos.</li>
+<li>Impactos propostos não podem ser apresentados como aplicados.</li>
+<li>Contratos de Eventos de Vida representam fatos reconhecidos e não comandos ou propostas pendentes.</li>
+<li>Eventos históricos são imutáveis; correções devem produzir novos eventos compensatórios.</li>
+<li>Tempo do fato, do conhecimento, do reconhecimento e da aplicação devem permanecer separados.</li>
+<li>Titular, ator e fonte devem permanecer distintos e limitados por autoridade explícita.</li>
+<li>Eventos e impactos possuem ciclos próprios e conclusão do evento não encerra impactos persistentes.</li>
+<li>Ordenação, versão esperada, concorrência e idempotência devem impedir estados impossíveis, sobrescrita silenciosa e efeitos duplicados.</li>
+<li>Revogação somente poderá ser apresentada como concluída após propagação efetiva aos consumidores necessários.</li>
+<li>Métricas dos contratos devem avaliar o sistema, não o participante.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
@@ -14405,6 +14411,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-eventos-de-vida-fundamentos-iniciais">PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-eventos-de-vida-ciclo-de-vida">PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-eventos-de-vida-visualizacao-controle">PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida</a></li>
+<li><a href="#product-architecture-pas-001-eventos-de-vida-eventos-funcionais">PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais de Eventos de Vida</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
