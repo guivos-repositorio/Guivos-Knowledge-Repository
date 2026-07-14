@@ -11,7 +11,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - Capacidade 02 — Contexto Vivo funcionalmente concluída;
 - Capacidade 03 — Objetivos funcionalmente concluída;
 - Capacidade 04 — Eventos de Vida ativa;
-- `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0` e `PAS-001-EV-EVENT-001 1.0.0` como extensões normativas da Capacidade 04;
+- `PAS-001-EV-FOUNDATION-001 1.0.0`, `PAS-001-EV-LIFECYCLE-001 1.0.0`, `PAS-001-EV-VIEW-001 1.0.0`, `PAS-001-EV-EVENT-001 1.0.0` e `PAS-001-EV-INTEGRATION-001 1.0.0` como extensões normativas da Capacidade 04;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -21,7 +21,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 Especificar funcionalmente a **Capacidade 04 — Eventos de Vida**.
 
-Os quatro blocos normativos vigentes consolidam fundamentos, ciclo de vida, visualização e controle, contratos de eventos funcionais, temporalidade, relevância, impactos, relações, correção, contestação, encerramento, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.
+Os cinco blocos normativos vigentes consolidam fundamentos, ciclo de vida, visualização e controle, contratos de eventos funcionais, integrações, temporalidade, relevância, impactos, relações, correção, contestação, encerramento, propagação, idempotência, ordenação, versionamento, auditoria, sincronização, revogação, neutralidade comercial e falha segura.
 
 ## Acesso rápido
 
@@ -33,6 +33,7 @@ Os quatro blocos normativos vigentes consolidam fundamentos, ciclo de vida, visu
 - [Regras do Ciclo de Vida dos Eventos de Vida](product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md)
 - [Visualização e Controle dos Eventos de Vida](product-architecture/pas-001-eventos-de-vida-visualizacao-controle.md)
 - [Contratos dos Eventos Funcionais de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md)
+- [Integrações Funcionais da Capacidade de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -56,4 +57,4 @@ Os quatro blocos normativos vigentes consolidam fundamentos, ciclo de vida, visu
 
 ## Ponto de retomada
 
-Retomar na Capacidade 04, detalhando as integrações funcionais dos Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.
+Retomar na Capacidade 04, consolidando KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final dos Eventos de Vida.
