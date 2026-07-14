@@ -2,6 +2,27 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.4 — Objectives Functional Event Contracts
+
+- Criação de `PAS-001-OBJ-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Objetivos`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Definição da distinção entre comando, proposta e evento funcional reconhecido.
+- Formalização dos princípios de imutabilidade histórica, temporalidade explícita, proveniência, autoria, minimização, explicabilidade, idempotência e propagação controlada.
+- Consolidação da estrutura comum dos eventos, campos obrigatórios, identidade do participante, ator, autoridade, correlação, causalidade e versionamento.
+- Definição das famílias e dos contratos de eventos de criação, confirmação, ativação, estrutura, prioridade, relações, conflitos, revisão, envelhecimento, pausa e bloqueio.
+- Registro dos contratos de critérios de sucesso, linhas de base, evidências, progresso, marcos, resultados parciais e conclusão.
+- Consolidação dos eventos de retirada, substituição, arquivamento, reativação, impacto de Eventos de Vida, permissões e revogação de compartilhamento.
+- Definição da recomposição de recortes, notificação de capacidades consumidoras e reavaliação de decisões dependentes.
+- Formalização dos eventos da visão `Meus Objetivos`, eventos conversacionais, eventos compostos e atomicidade funcional.
+- Registro das regras de retroatividade, correção compensatória, duplicidade, reprocessamento, ordenação, concorrência e falha segura.
+- Consolidação das responsabilidades das capacidades produtoras e consumidoras e das relações com as capacidades 02 e 05 a 09 e com Guivos Intelligence.
+- Definição das regras de explicabilidade, auditoria, retenção, privacidade e eventos de Pessoa, Organização e Coletivo.
+- Atualização da Arquitetura de Produtos para `1.3.4` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.6.0`, do Knowledge Board para `6.7.0` e da Matriz de Consolidação Canônica para `1.3.4`.
+- Atualização do README e da página inicial do GKR.
+- Avanço editorial da Capacidade 03 para `90%`.
+- Definição das integrações funcionais da Capacidade de Objetivos como próximo ponto exato de retomada.
+
 ## 0.31.3 — Objectives Functional View
 
 - Criação de `PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos`, versão `1.0.0`.
