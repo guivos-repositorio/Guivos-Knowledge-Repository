@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 5.7.0
+version: 5.8.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -18,7 +18,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Sincronização vigente:** `GE2-SYNC-007`.
 - **Revisão vigente:** `AR-001`, concluída na versão `0.5.0`.
 - **Especificação ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0` e `PAS-001-CV-VIEW-001 1.0.0`.
+- **Extensões normativas ativas:** `PAS-001-CV-STATE-001 1.0.0`, `PAS-001-CV-UPDATE-001 1.0.0`, `PAS-001-CV-CONFLICT-001 1.0.0`, `PAS-001-CV-VIEW-001 1.0.0` e `PAS-001-CV-EVENT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -94,7 +94,19 @@ A extensão normativa `PAS-001-CV-VIEW-001 1.0.0` consolidou:
 - recuperação, falhas, consistência entre canais, acessibilidade e privacidade visual;
 - eventos relacionados e critérios funcionais de aceitação.
 
-O próximo bloco definirá os contratos detalhados dos eventos funcionais do Contexto Vivo.
+A extensão normativa `PAS-001-CV-EVENT-001 1.0.0` consolidou:
+
+- distinção entre comandos, propostas e fatos reconhecidos;
+- princípios de imutabilidade histórica, temporalidade, proveniência, minimização e reprocessamento seguro;
+- estrutura comum, identidade, correlação, ordenação e versionamento dos eventos;
+- categorias e contratos de atualização, confirmação, revisão, envelhecimento e conflitos;
+- contratos de permissões, integrações, recortes contextuais, propagação e reavaliação de decisões;
+- separação entre eventos de interação e eventos de mudança contextual;
+- contratos de ocultação, desfazimento, remoção, dimensão e contexto atualizados;
+- regras para informações sensíveis, inferências, eventos retroativos, correções, duplicidade e falhas de processamento;
+- explicabilidade, retenção e critérios funcionais de aceitação.
+
+O próximo bloco definirá as integrações funcionais do Contexto Vivo com capacidades, camadas e fontes externas.
 
 ## Reconciliação de continuidade
 
@@ -106,14 +118,14 @@ Resultados:
 - Contexto Vivo e Market Validation estavam incorporados;
 - divergências editoriais demonstráveis foram autorizadas para correção;
 - formulário e planilha de validação permanecem entregáveis operacionais futuros;
-- o ponto de retomada do Product Engineering foi preservado e avançado para os contratos dos eventos funcionais do Contexto Vivo.
+- o ponto de retomada do Product Engineering foi preservado e avançado para as integrações funcionais do Contexto Vivo.
 
 ## Progresso das capacidades do Journey
 
 | Capacidade | Estado | Progresso de referência |
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | 95% |
-| 02 — Contexto Vivo | In progress | 88% |
+| 02 — Contexto Vivo | In progress | 93% |
 | 03 — Objetivos | Planned | 0% |
 | 04 — Eventos de Vida | Planned / concept consolidated | 10% |
 | 05 — Próximos Passos | Planned | 0% |
@@ -158,8 +170,7 @@ Retomar na **Capacidade 02 — Contexto Vivo**.
 
 Próxima entrega:
 
-1. contratos detalhados dos eventos funcionais;
-2. integrações;
-3. KPIs;
-4. cenários ideal, alternativo e limite;
-5. contrato da capacidade.
+1. integrações funcionais;
+2. KPIs;
+3. cenários ideal, alternativo e limite;
+4. contrato da capacidade.
