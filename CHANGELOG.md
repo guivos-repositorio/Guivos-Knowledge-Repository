@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.3 — Objectives Functional View
+
+- Criação de `PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Definição dos objetivos, princípios, escopo e estrutura principal da visão `Meus Objetivos`.
+- Consolidação da visão geral, resumo linguístico, portfólio, formas de organização, filtros, cartões e detalhamento dos objetivos.
+- Formalização da apresentação separada de estado funcional, prioridade, urgência, prazo, horizonte e atualidade.
+- Definição dos comportamentos para critérios de sucesso, progresso, percentuais, marcos, evidências, relações, dependências, conflitos e contexto relacionado.
+- Registro das explicações sobre origem, objetivo proposto, prioridade sugerida, progresso, conclusão, capacidades consumidoras e compartilhamentos externos.
+- Consolidação dos controles de criação, confirmação, ativação, reformulação, prioridade, pausa, retomada, bloqueio, conclusão, retirada, arquivamento, reativação, contestação e desfazimento.
+- Definição das revisões, alertas, prevenção de fadiga e notificações sem linguagem de culpa.
+- Formalização da proteção de objetivos sensíveis, títulos neutros, privacidade visual e minimização de informações de terceiros.
+- Consolidação das regras para objetivos pessoais, institucionais, compartilhados, organizacionais e coletivos.
+- Definição de acessibilidade, consistência entre canais, estados sem objetivos ativos, falha segura, sincronização pendente, auditoria e histórico compreensível.
+- Atualização da Arquitetura de Produtos para `1.3.3` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.5.0`, do Knowledge Board para `6.6.0` e da Matriz de Consolidação Canônica para `1.3.3`.
+- Atualização do README e da página inicial do GKR.
+- Avanço editorial da Capacidade 03 para `80%`.
+- Definição dos contratos dos eventos funcionais da Capacidade de Objetivos como próximo ponto exato de retomada.
+
 ## 0.31.2 — Objectives Success, Progress and Completion
 
 - Criação de `PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão dos Objetivos`, versão `1.0.0`.
