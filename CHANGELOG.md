@@ -2,6 +2,23 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.31.0 — Objectives Capability Foundation
+
+- Criação de `PAS-001-OBJ-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Objetivos`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 03 do `PAS-001 — Guivos Journey`.
+- Definição da pergunta central, objetivo funcional, valor entregue e princípios de autoria, clareza progressiva, revisabilidade e não julgamento.
+- Formalização das distinções entre objetivo, intenção, sonho, possibilidade, prioridade, tarefa, oportunidade e desejo externo.
+- Consolidação dos tipos funcionais iniciais de objetivo, responsabilidades, limites, entradas e requisitos mínimos de admissão.
+- Definição de resultado desejado, motivação, horizonte temporal, estados, transições e prioridade separada do ciclo de vida.
+- Registro das regras iniciais para múltiplos objetivos, relações, conflitos, objetivos sensíveis e critérios de sucesso.
+- Consolidação das regras de conclusão, retirada, desistência, reformulação e separação entre atividade e progresso.
+- Definição das integrações com Contexto Vivo, demais capacidades e Guivos Intelligence, além das saídas e eventos funcionais iniciais.
+- Substituição normativa do estado `Planned` da Capacidade 03 na seção 7 do `PAS-001 0.5.0`; a capacidade permanece `In progress`.
+- Atualização da Arquitetura de Produtos para `1.3.0` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `6.2.0`, do Knowledge Board para `6.3.0` e da Matriz de Consolidação Canônica para `1.3.0`.
+- Atualização do README e da página inicial do GKR.
+- Definição das regras de criação, confirmação, priorização, revisão, conflitos, envelhecimento e ciclo de vida como próximo ponto exato de retomada.
+
 ## 0.30.8 — Living Context Final Contract
 
 - Criação de `PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final do Contexto Vivo`, versão `1.0.0`.
