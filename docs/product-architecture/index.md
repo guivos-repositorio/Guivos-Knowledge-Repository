@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.4.2
+version: 1.4.3
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -96,11 +96,12 @@ As extensões normativas ativas são:
 
 - `PAS-001-EV-FOUNDATION-001` — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;
 - `PAS-001-EV-LIFECYCLE-001` — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura;
-- `PAS-001-EV-VIEW-001` — visão geral, linha do tempo, agrupamentos, filtros, cartões, detalhamento, impactos, relações, eventos planejados e em andamento, ações do participante, conteúdo sensível, privacidade visual, notificações, compartilhamentos, explicabilidade, histórico, sincronização e acessibilidade.
+- `PAS-001-EV-VIEW-001` — visão geral, linha do tempo, cartões, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico, acessibilidade e ações do participante;
+- `PAS-001-EV-EVENT-001` — comandos, propostas e fatos reconhecidos, estrutura comum, temporalidades, autoridade, famílias e contratos de eventos, impactos, relações, correções, contestações, permissões, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.
 
-A primeira extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
+A primeira extensão substitui normativamente o estado `Planned / concept consolidated` da linha da Capacidade 04 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`, com progresso editorial de referência de `80%`.
 
-O próximo bloco deverá detalhar os contratos dos eventos funcionais da Capacidade de Eventos de Vida, incluindo identificação, proposição, confirmação, atualização, impactos, relações, contestação, correção, encerramento, propagação, idempotência e falha segura.
+O próximo bloco deverá detalhar as integrações funcionais da Capacidade de Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.
 
 ## Regras arquiteturais
 
@@ -147,13 +148,17 @@ O próximo bloco deverá detalhar os contratos dos eventos funcionais da Capacid
 41. Propagação utiliza recortes mínimos e reprocessamento não pode duplicar efeitos.
 42. Eventos sensíveis exigem minimização, proteção visual, finalidade específica e ausência de exploração comercial.
 43. Eventos de Vida não criam objetivos pessoais ativos nem impõem prioridade.
-44. A linha do tempo de Eventos de Vida é superfície de compreensão e controle, não feed social, diário integral ou instrumento de avaliação pessoal.
-45. Sinais, propostas, eventos planejados e eventos ocorridos devem permanecer visualmente distintos.
-46. Impactos propostos não podem parecer aplicados e cada impacto deve ser revisável individualmente.
-47. Eventos sensíveis devem permanecer ocultos por padrão, com títulos neutros e notificações minimizadas.
-48. A visualização não pode gerar ranking, pontuação, cobrança pessoal ou classificação universal de sucesso e fracasso.
-49. Aplicativo, web, conversa, notificações e serviços autorizados devem refletir a mesma versão, permissões, temporalidade e contestações.
-50. Sincronização pendente e efeitos ainda não aplicados devem permanecer explícitos ao participante.
+44. A linha do tempo de Eventos de Vida não é feed social, diário integral, ranking ou instrumento de avaliação pessoal.
+45. Sinais, propostas, eventos planejados e fatos ocorridos devem permanecer visualmente distintos.
+46. Impactos propostos não podem ser apresentados como aplicados.
+47. Contratos de Eventos de Vida representam fatos reconhecidos e não comandos ou propostas pendentes.
+48. Eventos históricos são imutáveis; correções devem produzir novos eventos compensatórios.
+49. Tempo do fato, do conhecimento, do reconhecimento e da aplicação devem permanecer separados.
+50. Titular, ator e fonte devem permanecer distintos e limitados por autoridade explícita.
+51. Eventos e impactos possuem ciclos próprios e conclusão do evento não encerra impactos persistentes.
+52. Ordenação, versão esperada, concorrência e idempotência devem impedir estados impossíveis, sobrescrita silenciosa e efeitos duplicados.
+53. Revogação somente poderá ser apresentada como concluída após propagação efetiva aos consumidores necessários.
+54. Métricas dos contratos devem avaliar o sistema, não o participante.
 
 ## Documentos do domínio
 
@@ -164,6 +169,7 @@ O próximo bloco deverá detalhar os contratos dos eventos funcionais da Capacid
 - [PAS-001-EV-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Eventos de Vida](pas-001-eventos-de-vida-fundamentos-iniciais.md)
 - [PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida](pas-001-eventos-de-vida-ciclo-de-vida.md)
 - [PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida](pas-001-eventos-de-vida-visualizacao-controle.md)
+- [PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais de Eventos de Vida](pas-001-eventos-de-vida-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
