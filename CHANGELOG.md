@@ -2,6 +2,40 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.33.1 — Next Steps Lifecycle Rules
+
+- Criação de `PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 05 do `PAS-001 — Guivos Journey`.
+- Definição do ciclo desde necessidade, objetivo, Evento de Vida ou condição até possibilidade, proposta, confirmação, preparação, prontidão, ativação, execução, resultado e encerramento.
+- Formalização dos estados `Proposto`, `Confirmado`, `Pronto`, `Agendado`, `Em andamento`, `Bloqueado`, `Pausado`, `Concluído`, `Cancelado`, `Substituído`, `Expirado`, `Contestado`, `Corrigido` e `Arquivado`.
+- Separação normativa entre estado funcional e estado da informação.
+- Consolidação das dimensões complementares de prioridade, urgência, prontidão, acionabilidade, compromisso, horizonte, esforço, risco, sensibilidade, confiança, atualidade, dependências, bloqueios, recorrência e compartilhamento.
+- Definição das regras de identificação de possibilidade, formulação suficiente, proposição, alternativas e avaliação.
+- Formalização da confirmação simples, explícita, reforçada, institucional, compartilhada, condicionada, assistida e parcial.
+- Registro da ausência de confirmação e da rejeição sem penalidade, cobrança ou interpretação automática de desinteresse.
+- Consolidação da reformulação, do desdobramento e da unificação com preservação de histórico e relações.
+- Definição da prontidão, da avaliação de condições e da ativação operacional como dimensões distintas de confirmação, prioridade, agendamento e início.
+- Formalização dos limites contextuais de ativação simultânea e da organização do portfólio ativo.
+- Definição da prioridade, dos níveis, da repriorização, do sequenciamento linear, paralelo, alternativo e condicional.
+- Consolidação dos tipos e estados de dependências, atendimento, dispensa, bloqueios permitidos, bloqueios proibidos e desbloqueio sem início automático.
+- Formalização da pausa, da retomada, do agendamento, da alteração de agenda, do prazo vencido e do adiamento sem julgamento pessoal.
+- Definição do início, da execução, do acompanhamento proporcional, das atualizações, da mudança de escopo e dos resultados imediatos.
+- Separação entre execução, resultado, progresso e conclusão, incluindo conclusão parcial e conclusão sem resultado esperado.
+- Registro dos limites da conclusão automática, permitida somente para fatos objetivos, fontes autorizadas e contestação disponível.
+- Consolidação do cancelamento, da substituição e da expiração como estados distintos, sem equivalência automática a fracasso ou abandono.
+- Formalização da contestação, correção compensatória, reabertura, distinção entre novo passo e continuidade e arquivamento sem exclusão histórica.
+- Definição da recorrência, das ocorrências individuais, da pausa e do encerramento sem equivalência automática a hábito, aderência ou evolução.
+- Consolidação dos passos compartilhados, da confirmação individual por papel, da delegação, da aceitação, da saída de participante e das responsabilidades individualizadas.
+- Definição do compartilhamento sensível, da revogação e da propagação por recortes mínimos às capacidades consumidoras.
+- Registro das regras de prevenção de ciclos, duplicidade, idempotência, ordenação, concorrência, retroatividade, falha segura e sincronização divergente.
+- Formalização da explicabilidade, histórico, retenção, privacidade, prevenção de fadiga e métricas sistêmicas do ciclo.
+- Atualização da Arquitetura de Produtos para `1.5.1` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `7.6.0`, do Knowledge Board para `7.7.0` e da Matriz de Consolidação Canônica para `1.5.1`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 05 no estado `In progress` e elevação do progresso editorial de referência para `40%`.
+- Preservação das Capacidades 02, 03 e 04 como `Functionally complete`.
+- Definição da visualização e do controle dos Próximos Passos como próximo ponto exato de retomada.
+
 ## 0.33.0 — Next Steps Capability Foundation
 
 - Criação de `PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos`, versão `1.0.0`.
