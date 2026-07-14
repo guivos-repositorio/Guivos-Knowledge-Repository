@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 6.3.0
+version: 6.4.0
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -22,6 +22,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final do Contexto Vivo |
 | PAS-001-OBJ-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Objetivos |
+| PAS-001-OBJ-LIFECYCLE-001 | Active 1.0.0 | Definir criação, confirmação, prioridade, conflitos, revisão, envelhecimento e ciclo de vida dos objetivos |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -37,12 +38,12 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidade concluída | `02 — Contexto Vivo` |
 | Capacidade ativa | `03 — Objetivos` |
-| Extensão normativa ativa | `PAS-001-OBJ-FOUNDATION-001 1.0.0` |
+| Extensões normativas ativas | `PAS-001-OBJ-FOUNDATION-001 1.0.0` e `PAS-001-OBJ-LIFECYCLE-001 1.0.0` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Detalhar criação, confirmação, priorização, revisão, conflitos, envelhecimento e ciclo de vida dos objetivos |
+| Foco imediato | Definir critérios de sucesso, progresso, marcos, evidências e conclusão dos objetivos |
 
 ## Capacidades do Journey
 
@@ -50,7 +51,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|---|
 | 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
-| 03 — Objetivos | In progress | Fundamentos iniciais consolidados em extensão normativa |
+| 03 — Objetivos | In progress | Fundamentos e ciclo de vida consolidados em extensões normativas |
 | 04 — Eventos de Vida | Planned / concept consolidated | Distinção entre estado e mudança registrada |
 | 05 — Próximos Passos | Planned | — |
 | 06 — Oportunidades Ativas | Planned / concept consolidated | Relevância contextual registrada |
@@ -66,22 +67,26 @@ O `PAS-001-CV-CONTRACT-001` substitui normativamente as seções 44 e 45 do `PAS
 
 ## Avanço da Capacidade de Objetivos
 
-Consolidados no `PAS-001-OBJ-FOUNDATION-001 1.0.0`:
+### `PAS-001-OBJ-FOUNDATION-001 1.0.0`
 
 - pergunta central, objetivo funcional e valor entregue;
 - autoria, clareza progressiva, revisabilidade e não julgamento;
-- definição e tipos funcionais iniciais de objetivo;
 - distinções entre objetivo, intenção, sonho, possibilidade, prioridade, tarefa e oportunidade;
-- separação entre desejo externo e objetivo do participante;
-- responsabilidades e limites;
-- entradas e requisitos mínimos de admissão;
-- resultado desejado, motivação e horizonte temporal;
-- estados, transições e prioridades iniciais;
-- múltiplos objetivos, relações e conflitos;
-- objetivos sensíveis e critérios de sucesso;
-- conclusão, retirada, desistência e reformulação;
-- integração com Contexto Vivo e demais capacidades;
-- saídas e eventos funcionais iniciais.
+- responsabilidades, limites, entradas, estados, relações e integrações iniciais.
+
+### `PAS-001-OBJ-LIFECYCLE-001 1.0.0`
+
+- unidade funcional e origens do objetivo;
+- criação, confirmação e ativação por finalidade;
+- duplicidade, correção, mudança, reformulação, desdobramento e unificação;
+- prioridade declarada, sugerida e contextual;
+- portfólio, simultaneidade e conflitos;
+- revisão, envelhecimento e estados de atualidade;
+- pausa, retomada, bloqueio e desbloqueio;
+- conclusão parcial, contínua e definitiva;
+- retirada, substituição, arquivamento e reativação;
+- propagação, interface e objetivos sensíveis;
+- eventos funcionais do ciclo de vida.
 
 ## Conceitos internos preservados
 
@@ -90,10 +95,15 @@ Consolidados no `PAS-001-OBJ-FOUNDATION-001 1.0.0`:
 | Contexto Vivo | Functionally complete |
 | Objetivos | Active for Product Engineering |
 | Fundamentos Iniciais de Objetivos | Normative 1.0.0 |
+| Ciclo de Vida dos Objetivos | Normative 1.0.0 |
 | Intenção | Differentiated from confirmed objective |
 | Sonho | Preserved aspiration |
 | Possibilidade | Exploratory alternative |
-| Prioridade | Separate state from objective lifecycle |
+| Confirmação | Separate from activation |
+| Prioridade | Separate from urgency and lifecycle state |
+| Envelhecimento de objetivo | Loss of currentness confidence, not falsity |
+| Pausa | Temporary operational interruption, not failure |
+| Bloqueio | Current impediment, not personal incapacity |
 | Evento de Vida | Approved for PAS |
 | Oportunidade Ativa | Approved for PAS |
 | Intervenção Contextual | Approved for PAS |
@@ -106,12 +116,13 @@ Consolidados no `PAS-001-OBJ-FOUNDATION-001 1.0.0`:
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 6.2.0 |
-| Knowledge Board | 6.3.0 |
+| Roadmap | 6.3.0 |
+| Knowledge Board | 6.4.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-OBJ-FOUNDATION-001 | Active 1.0.0 |
+| PAS-001-OBJ-LIFECYCLE-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -121,4 +132,4 @@ Consolidados no `PAS-001-OBJ-FOUNDATION-001 1.0.0`:
 
 ## Próxima atividade
 
-Continuar a **Capacidade 03 — Objetivos**, detalhando criação, confirmação, priorização, revisão, conflitos, envelhecimento e ciclo de vida.
+Continuar a **Capacidade 03 — Objetivos**, detalhando critérios de sucesso, progresso, marcos, evidências e regras de conclusão.
