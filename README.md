@@ -12,7 +12,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo e 03 — Objetivos
 - **Capacidade ativa:** 04 — Eventos de Vida
-- **Extensões normativas ativas de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0, PAS-001-EV-LIFECYCLE-001 1.0.0, PAS-001-EV-VIEW-001 1.0.0 e PAS-001-EV-EVENT-001 1.0.0
+- **Extensões normativas ativas de Eventos de Vida:** PAS-001-EV-FOUNDATION-001 1.0.0, PAS-001-EV-LIFECYCLE-001 1.0.0, PAS-001-EV-VIEW-001 1.0.0, PAS-001-EV-EVENT-001 1.0.0 e PAS-001-EV-INTEGRATION-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -56,9 +56,13 @@ As extensões normativas vigentes consolidaram:
 - contratos de impactos, relações, correções, contestações e encerramento;
 - permissões, revogações, propagação e recomposição de recortes;
 - idempotência, ordenação, concorrência, auditoria e falha segura;
-- relações com Contexto Vivo, Objetivos e capacidades consumidoras.
+- contrato comum das integrações, identidade, associação, proveniência e qualidade;
+- integrações com todas as capacidades do Journey, Guivos Intelligence e Platform Layer;
+- integrações com Business, Mall, Travel, Media, Ads, serviços especializados e fontes externas;
+- sincronização, divergência, pausa, revogação, degradação controlada e recuperação;
+- neutralidade comercial, minimização e proteção de informações sensíveis e de terceiros.
 
-A Capacidade 04 permanece **In progress**, com progresso editorial de referência de **80%**.
+A Capacidade 04 permanece **In progress**, com progresso editorial de referência de **90%**.
 
 ## Ponto exato de retomada
 
@@ -66,14 +70,13 @@ Retomar na `Capacidade 04 — Eventos de Vida`.
 
 Próxima entrega:
 
-- integrações com Captura de Contexto;
-- integrações com Contexto Vivo e Objetivos;
-- integrações com Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
-- integrações com Experiências e Evolução Contínua;
-- papel da Guivos Intelligence;
-- responsabilidades da Platform Layer;
-- serviços especializados e fontes externas;
-- sincronização, revogação, degradação controlada e falha segura.
+- KPIs e famílias de indicadores;
+- guardrails obrigatórios de tolerância zero;
+- painel de saúde e níveis de desempenho funcional;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão funcional;
+- contrato final da capacidade;
+- decisão sobre conclusão da Capacidade 04 e ativação da Capacidade 05 — Próximos Passos.
 
 ## Product Engineering
 
@@ -103,6 +106,7 @@ A unidade de trabalho vigente é a **capacidade funcional completa**, não a fun
 - [Regras do Ciclo de Vida dos Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md)
 - [Visualização e Controle dos Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-visualizacao-controle.md)
 - [Contratos dos Eventos Funcionais de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md)
+- [Integrações Funcionais da Capacidade de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
