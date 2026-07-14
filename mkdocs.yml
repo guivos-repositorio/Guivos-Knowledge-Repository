@@ -123,6 +123,7 @@ nav:
       - PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final de Objetivos: product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md
       - PAS-001-EV-FOUNDATION-001 — Fundamentos de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-fundamentos-iniciais.md
       - PAS-001-EV-LIFECYCLE-001 — Ciclo de Vida dos Eventos de Vida: product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md
+      - PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida: product-architecture/pas-001-eventos-de-vida-visualizacao-controle.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
