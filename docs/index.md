@@ -11,8 +11,8 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - Capacidade 02 — Contexto Vivo funcionalmente concluída;
 - Capacidade 03 — Objetivos funcionalmente concluída;
 - Capacidade 04 — Eventos de Vida funcionalmente concluída;
-- Capacidade 05 — Próximos Passos como próxima frente, ainda documentalmente `Planned`;
-- `PAS-001-EV-CONTRACT-001 1.0.0` como contrato final da Capacidade 04;
+- Capacidade 05 — Próximos Passos em desenvolvimento, `In progress`, 20%;
+- `PAS-001-PP-FOUNDATION-001 1.0.0` como primeira extensão normativa da Capacidade 05;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -20,9 +20,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Iniciar a especificação funcional da **Capacidade 05 — Próximos Passos**.
+Consolidar o ciclo de vida dos **Próximos Passos**, incluindo criação, proposição, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, execução, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, compartilhamento e propagação.
 
-As seis extensões normativas de Eventos de Vida consolidam fundamentos, ciclo de vida, visualização e controle, contratos de eventos, integrações, sessenta KPIs, dezoito guardrails, cenários e contrato final. A Capacidade 04 está `Functionally complete`.
+Os fundamentos iniciais definem Próximo Passo como decisão ou hipótese de movimento contextual, delimitada e acionável, preservando distinções em relação a objetivos, tarefas, oportunidades, intervenções, recomendações e compromissos.
 
 ## Acesso rápido
 
@@ -36,6 +36,7 @@ As seis extensões normativas de Eventos de Vida consolidam fundamentos, ciclo d
 - [Contratos dos Eventos Funcionais de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md)
 - [Integrações Funcionais da Capacidade de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md)
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
+- [Fundamentos Iniciais da Capacidade de Próximos Passos](product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -51,7 +52,7 @@ As seis extensões normativas de Eventos de Vida consolidam fundamentos, ciclo d
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | Planned — próxima frente |
+| 05 — Próximos Passos | In progress — 20% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -59,4 +60,4 @@ As seis extensões normativas de Eventos de Vida consolidam fundamentos, ciclo d
 
 ## Ponto de retomada
 
-Retomar na Capacidade 05, definindo seus fundamentos iniciais: pergunta central, objetivo, valor, singularidade, definição, distinções, titularidade, tipos, origem, autoridade, estados, prioridade operacional, temporalidade, dependências e relações com Contexto Vivo, Objetivos e Eventos de Vida.
+Retomar no ciclo de vida dos Próximos Passos, preservando a separação entre hipótese, decisão confirmada, prontidão, execução e resultado.
