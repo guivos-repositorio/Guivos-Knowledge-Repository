@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.3.2
+version: 1.3.3
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -88,7 +88,8 @@ As extensões normativas ativas são:
 
 - `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções conceituais, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais;
 - `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação;
-- `PAS-001-OBJ-PROGRESS-001` — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais.
+- `PAS-001-OBJ-PROGRESS-001` — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais;
+- `PAS-001-OBJ-VIEW-001` — visão `Meus Objetivos`, portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade visual, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível.
 
 A primeira extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
 
@@ -108,6 +109,9 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 12. Envelhecimento não representa falsidade, pausa não representa fracasso e bloqueio não representa incapacidade pessoal.
 13. Atividade, resultado, evidência, progresso, marco e conclusão são conceitos funcionalmente distintos.
 14. Percentuais somente podem ser utilizados com base legítima e objetivos pessoais não podem ser concluídos apenas por inferência.
+15. `Meus Objetivos` é uma superfície de clareza e controle, não de cobrança, ranking ou comparação pessoal.
+16. Objetivos pessoais, institucionais, coletivos e compartilhados devem preservar titularidade, autoridade e permissões próprias.
+17. Objetivos sensíveis exigem privacidade visual, minimização e controle reforçado de compartilhamento e notificações.
 
 ## Documentos do domínio
 
@@ -117,6 +121,7 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 - [PAS-001-OBJ-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Objetivos](pas-001-objetivos-fundamentos-iniciais.md)
 - [PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos](pas-001-objetivos-ciclo-de-vida.md)
 - [PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão](pas-001-objetivos-progresso-e-conclusao.md)
+- [PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos](pas-001-meus-objetivos.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
