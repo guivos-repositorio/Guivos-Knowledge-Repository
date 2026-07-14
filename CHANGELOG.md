@@ -2,6 +2,28 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.32.5 — Life Events Final Contract
+
+- Criação de `PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Eventos de Vida`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa e contrato final da Capacidade 04 do `PAS-001 — Guivos Journey`.
+- Consolidação de 60 KPIs organizados em 13 famílias de identificação, autoridade, temporalidade, confirmação, relevância, controle, privacidade, integrações, confiabilidade, explicabilidade, neutralidade, esforço e encerramento.
+- Definição de 18 guardrails obrigatórios de tolerância zero para associação incorreta, inferência sensível, publicidade, vulnerabilidade, revogação, exposição, terceiros, autoridade, objetivos, prioridade, confirmação indevida, histórico, duplicidade, propagação, divergência, receita, julgamento humano e acesso organizacional.
+- Formalização da baseline funcional antes de metas permanentes, do painel de saúde e dos níveis `Crítico`, `Instável`, `Adequado`, `Confiável` e `Maduro`.
+- Definição dos cenários funcionalmente ideal de mudança declarada, fato institucional autorizado, evento planejado ocorrido, evento sensível e correção posterior.
+- Consolidação dos cenários alternativos de informação insuficiente, data aproximada, ausência de confirmação, ausência ou surgimento posterior de impactos, divergência, retroatividade, eventos compartilhados, desconexão de fontes, integrações temporárias e eventos sem objetivos.
+- Consolidação dos cenários limite de identidade incerta, autoridade insuficiente, inferência sensível, revogação pendente, duplicidade, ordenação, falha parcial, divergência entre canais, terceiros sensíveis, exploração comercial, compra, localização e indisponibilidade de fonte.
+- Registro da ausência de Eventos de Vida como estado legítimo, sem representar falta de evolução, participação ou mudança humana.
+- Definição dos critérios de conclusão funcional, das lacunas bloqueantes e das lacunas técnicas não bloqueantes.
+- Consolidação do contrato final de propósito, titularidade, responsabilidades, limites, entradas, admissão, representação, estados, saídas, visão, eventos, integrações, permissões, privacidade, falhas, explicabilidade e indicadores.
+- Substituição normativa do estado `In progress` da Capacidade 04 na seção 7 do `PAS-001 0.5.0` por `Functionally complete`.
+- Elevação do progresso editorial da Capacidade 04 para `100%`.
+- Definição da regra de reabertura somente por lacuna crítica, evidência operacional, incidente, contradição, alteração regulatória, mudança estrutural ou decisão formal.
+- Atualização da Arquitetura de Produtos para `1.4.5` e inclusão do contrato final na navegação do MkDocs.
+- Atualização do Roadmap para `7.4.0`, do Knowledge Board para `7.5.0` e da Matriz de Consolidação Canônica para `1.4.5`.
+- Atualização do README e da página inicial do GKR.
+- Preservação do `PAS-001 0.5.0` como especificação-base até futura edição consolidada.
+- Definição da Capacidade 05 — Próximos Passos como próxima frente oficial de Product Engineering, permanecendo `Planned` até sua primeira extensão normativa.
+
 ## 0.32.4 — Life Events Functional Integrations
 
 - Criação de `PAS-001-EV-INTEGRATION-001 — Integrações Funcionais da Capacidade de Eventos de Vida`, versão `1.0.0`.
