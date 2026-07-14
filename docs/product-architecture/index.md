@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.3.5
+version: 1.3.6
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -84,16 +84,23 @@ As oito extensões normativas `STATE`, `UPDATE`, `CONFLICT`, `VIEW`, `EVENT`, `I
 
 ### Capacidade 03 — Objetivos
 
-As extensões normativas ativas são:
+As sete extensões normativas são:
 
 - `PAS-001-OBJ-FOUNDATION-001` — pergunta central, objetivo funcional, valor, princípios, distinções conceituais, tipos de objetivo, responsabilidades, limites, entradas, estados, relações, conflitos, critérios de sucesso, integrações, saídas e eventos iniciais;
 - `PAS-001-OBJ-LIFECYCLE-001` — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação;
 - `PAS-001-OBJ-PROGRESS-001` — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais;
 - `PAS-001-OBJ-VIEW-001` — visão `Meus Objetivos`, portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade visual, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível;
 - `PAS-001-OBJ-EVENT-001` — comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, contratos das famílias de eventos, propagação, correção, auditoria e falha segura;
-- `PAS-001-OBJ-INTEGRATION-001` — integrações com capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados, organizações, profissionais e fontes externas, com finalidade, minimização, revogação, explicabilidade e degradação segura.
+- `PAS-001-OBJ-INTEGRATION-001` — integrações com capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados, organizações, profissionais e fontes externas, com finalidade, minimização, revogação, explicabilidade e degradação segura;
+- `PAS-001-OBJ-CONTRACT-001` — 62 KPIs, 13 famílias de indicadores, guardrails de tolerância zero, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final.
 
-A primeira extensão substitui normativamente o estado `Planned` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`. A capacidade permanece `In progress`.
+O `PAS-001-OBJ-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress` da linha da Capacidade 03 na seção 7 do `PAS-001 0.5.0`.
+
+A Capacidade 03 está **Functionally complete**.
+
+### Capacidade 04 — Eventos de Vida
+
+A Capacidade 04 está ativa para Product Engineering. Seu primeiro bloco deverá definir pergunta central, objetivo funcional, valor entregue, princípios, conceito, distinções, responsabilidades, limites, entradas iniciais e relações com Contexto Vivo e Objetivos.
 
 ## Regras arquiteturais
 
@@ -124,6 +131,9 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 25. Platform Layer aplica contratos técnicos, mas não redefine o significado funcional dos objetivos.
 26. Serviços especializados e receita comercial não podem alterar prioridade, relevância ou conclusão funcional.
 27. Revogações devem interromper novos usos e falhas de integração devem produzir degradação controlada.
+28. Indicadores devem avaliar a capacidade, não o valor ou desempenho humano do participante.
+29. Guardrails críticos de autoria, ativação, privacidade, finalidade, conclusão e neutralidade comercial possuem tolerância zero.
+30. Uma capacidade funcionalmente concluída somente deverá ser reaberta por lacuna crítica, evidência operacional, incidente, alteração arquitetural ou decisão formal.
 
 ## Documentos do domínio
 
@@ -136,6 +146,7 @@ A primeira extensão substitui normativamente o estado `Planned` da linha da Cap
 - [PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos](pas-001-meus-objetivos.md)
 - [PAS-001-OBJ-EVENT-001 — Contratos dos Eventos Funcionais de Objetivos](pas-001-objetivos-eventos-funcionais.md)
 - [PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais da Capacidade de Objetivos](pas-001-objetivos-integracoes-funcionais.md)
+- [PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final da Capacidade de Objetivos](pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
