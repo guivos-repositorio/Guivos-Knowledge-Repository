@@ -2,6 +2,22 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.30.6 — Living Context Functional Integrations
+
+- Criação de `PAS-001-CV-INTEGRATION-001 — Integrações Funcionais do Contexto Vivo`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa da Capacidade 02 do `PAS-001 — Guivos Journey`.
+- Definição dos objetivos, princípios, tipos, modos e contrato funcional das integrações.
+- Formalização da finalidade explícita, minimização, autoridade limitada da fonte, identificação do participante, proveniência e falha segura.
+- Consolidação das integrações com as capacidades 01 a 09 do Journey, Guivos Intelligence, Platform Layer e serviços especializados.
+- Definição das classes, qualidade, transformações e limites das fontes externas, incluindo calendários, esportes, ensino, organizações sociais e fontes profissionais.
+- Registro das regras de consentimento, pausa, revogação, falhas, degradação controlada, sincronização divergente e frequência de atualização.
+- Consolidação da explicabilidade, auditoria, prevenção de ciclos indevidos, proteção de informações sensíveis e de terceiros e integrações temporárias.
+- Definição das relações com canais conversacionais, notificações, busca e jornadas de participantes relacionados.
+- Atualização da Arquitetura de Produtos para `1.2.6` e inclusão da extensão normativa na navegação do MkDocs.
+- Atualização do Roadmap para `5.9.0`, do Knowledge Board para `6.0.0` e da Matriz de Consolidação Canônica para `1.2.7`.
+- Atualização do README e da página inicial do GKR.
+- Definição dos KPIs, indicadores de qualidade e critérios de desempenho funcional como próximo ponto exato de retomada.
+
 ## 0.30.5 — Living Context Functional Event Contracts
 
 - Criação de `PAS-001-CV-EVENT-001 — Contratos dos Eventos Funcionais do Contexto Vivo`, versão `1.0.0`.
