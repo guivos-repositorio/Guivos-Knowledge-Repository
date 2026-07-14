@@ -1,0 +1,6277 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Regras do Ciclo de Vida dos Objetivos - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pas-001-obj-lifecycle-001-regras-do-ciclo-de-vida-dos-objetivos" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Regras do Ciclo de Vida dos Objetivos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia Oficial da Guivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Completo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Evolution Framework
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Evolution Framework
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEF-001 — Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validação de Mercado
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-001-framework-de-validacao-de-mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-001 — Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-002-pesquisa-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-002 — Pesquisa Oficial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-003-guia-do-entrevistador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-003 — Guia do Entrevistador
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-004-modelo-de-consolidacao-e-analise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-004 — Consolidação e Análise
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-005-plano-de-amostragem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-005 — Plano de Amostragem
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-006-dashboard-de-indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-006 — Dashboard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-007-criterios-de-decisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-007 — Critérios de Decisão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-008-sinais-comportamentais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-008 — Sinais Comportamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/MS-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/evidence-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/ecosystem-phenomena-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/recommendations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/permanence-layer-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference-architecture/gccm-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCCM-001 — Core Capability Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--discovery"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte I — Fundação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte I — Fundação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/01-essence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/02-purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/03-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/04-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/05-constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/06-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte II — Modelo Fundamental
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte II — Modelo Fundamental
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/phenomenon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/fundamental-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/four-fundamental-natures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layered-product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GLPA-001 — Layered Product Architecture
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001 — Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-estados-dimensionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-STATE-001 — Estados do Contexto Vivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-atualizacao-envelhecimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-resolucao-conflitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-CONFLICT-001 — Resolução de Conflitos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-meu-contexto-hoje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-VIEW-001 — Meu Contexto Hoje
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-eventos-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-EVENT-001 — Eventos Funcionais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-integracoes-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-INTEGRATION-001 — Integrações Funcionais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-kpis-desempenho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-KPI-001 — KPIs e Desempenho
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-cenarios-contrato-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-fundamentos-iniciais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-FOUNDATION-001 — Fundamentos de Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intelligence Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/knowledge-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAI-001 — AI Knowledge Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/manifesto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAI-002 — Manifesto da Inteligência do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Economic Model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Economic Model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--planned"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-transformation-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance Framework do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance Framework do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Knowledge Consolidation Pipeline
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Audit Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/outcome-governance-method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-FEM-001 — Foundation Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-CC-001-canonical-consolidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-CC-001 — Foundation Canonical Consolidation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-RA-001 — Foundation Readiness Assessment
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--complete"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-A2-001-foundation-architecture-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-A2-001 — Foundation Architecture Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved_with_recommendations"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-AUD-001 — Foundation Architecture Audit
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--passed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R02-FMEM-001 — Fundamental Model Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--execution-ready"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-001-gea-structure-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-002-foundation-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-003-architectural-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-004-architectural-dependency-order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-005-architectural-traceability-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-006 — Guivos Knowledge Architecture
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/architectural-milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-007 — Chat Continuity and Repository Reconciliation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/AR-001-gkr-gog-consistency-and-diagram-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AR-001 — GKR and GOG Consistency Review
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-006-context-interpretation-and-living-context-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-006 — Context Interpretation and Living Context
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-005 — Journey Operational Philosophy
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Engineering Pause
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-004-context-participant-model-and-architecture-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-004 — Context and Architecture Engineering
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-003 — Enterprise Design and GLPA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-002-gka-conceptual-architecture-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-001-architectural-synchronization-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-001 — Architectural Synchronization Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-GKA-PREPARATION-COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKA Preparation Complete
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-GE2-GKA-FOUNDATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE-2 — GKA Foundation Checkpoint
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--superseded"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/BASELINE-M1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baseline M1
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--frozen"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-M2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkpoint M2.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--experimental"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B1 — Foundation 5/6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working-baseline"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B2 — Foundation 6/6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working-baseline"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B3 — Foundation Frozen
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--frozen"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/knowledge-board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Board
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/site-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline de Publicação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-autoridade-e-vinculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Autoridade e vínculo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/product-architecture/pas-001-objetivos-ciclo-de-vida.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="pas-001-obj-lifecycle-001-regras-do-ciclo-de-vida-dos-objetivos">PAS-001-OBJ-LIFECYCLE-001 — Regras do Ciclo de Vida dos Objetivos<a class="headerlink" href="#pas-001-obj-lifecycle-001-regras-do-ciclo-de-vida-dos-objetivos" title="Permanent link">&para;</a></h1>
+<h2 id="1-autoridade-e-vinculo">1. Autoridade e vínculo<a class="headerlink" href="#1-autoridade-e-vinculo" title="Permanent link">&para;</a></h2>
+<p>Este documento é a <strong>segunda extensão normativa da Capacidade 03 — Objetivos</strong> do <code>PAS-001 — Guivos Journey Product Architecture Specification</code>.</p>
+<p>Seu conteúdo deve ser lido como continuidade funcional das seções 366 a 403 do <code>PAS-001-OBJ-FOUNDATION-001 1.0.0</code> e da especificação-base <code>PAS-001 0.5.0</code>.</p>
+<p>A separação modular preserva legibilidade, rastreabilidade e evolução independente sem reduzir a autoridade normativa desta extensão.</p>
+<h1 id="404-regras-detalhadas-do-ciclo-de-vida-dos-objetivos">404. Regras detalhadas do ciclo de vida dos objetivos<a class="headerlink" href="#404-regras-detalhadas-do-ciclo-de-vida-dos-objetivos" title="Permanent link">&para;</a></h1>
+<p>O ciclo de vida de um objetivo deverá representar sua evolução desde a primeira manifestação até sua conclusão, retirada, substituição ou arquivamento.</p>
+<p>Esse ciclo deverá preservar:</p>
+<ul>
+<li>autoria;</li>
+<li>significado;</li>
+<li>origem;</li>
+<li>temporalidade;</li>
+<li>prioridade;</li>
+<li>contexto;</li>
+<li>alterações;</li>
+<li>critérios de sucesso;</li>
+<li>conflitos;</li>
+<li>permissões;</li>
+<li>histórico.</li>
+</ul>
+<blockquote>
+<p>Um objetivo não deverá ser tratado como registro estático. Sua formulação, importância, viabilidade e significado poderão mudar ao longo da jornada.</p>
+</blockquote>
+<h1 id="405-unidade-funcional-do-objetivo">405. Unidade funcional do objetivo<a class="headerlink" href="#405-unidade-funcional-do-objetivo" title="Permanent link">&para;</a></h1>
+<p>Cada objetivo deverá existir como unidade funcional própria.</p>
+<p>Um objetivo não deverá ser representado apenas como texto livre ou atributo genérico da dimensão <code>Direção</code>.</p>
+<p>Cada unidade deverá possuir, quando aplicável:</p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificador</td>
+<td>Distinguir o objetivo</td>
+</tr>
+<tr>
+<td>Participante titular</td>
+<td>Definir autoria</td>
+</tr>
+<tr>
+<td>Formulação atual</td>
+<td>Representar a direção vigente</td>
+</tr>
+<tr>
+<td>Expressão original</td>
+<td>Preservar a linguagem do participante</td>
+</tr>
+<tr>
+<td>Natureza</td>
+<td>Resultado, transformação, desenvolvimento, manutenção, redução, exploração, experiência ou contribuição</td>
+</tr>
+<tr>
+<td>Origem</td>
+<td>Identificar de onde surgiu</td>
+</tr>
+<tr>
+<td>Estado funcional</td>
+<td>Representar o ciclo de vida</td>
+</tr>
+<tr>
+<td>Prioridade</td>
+<td>Indicar importância relativa atual</td>
+</tr>
+<tr>
+<td>Horizonte temporal</td>
+<td>Informar referência de tempo</td>
+</tr>
+<tr>
+<td>Motivação</td>
+<td>Explicar por que importa</td>
+</tr>
+<tr>
+<td>Critérios de sucesso</td>
+<td>Definir sinais de avanço ou conclusão</td>
+</tr>
+<tr>
+<td>Contexto relacionado</td>
+<td>Associar momento, capacidades, restrições e preferências</td>
+</tr>
+<tr>
+<td>Relações</td>
+<td>Vincular outros objetivos</td>
+</tr>
+<tr>
+<td>Conflitos</td>
+<td>Preservar tensões relevantes</td>
+</tr>
+<tr>
+<td>Confiança</td>
+<td>Diferenciar declaração, confirmação e hipótese</td>
+</tr>
+<tr>
+<td>Sensibilidade</td>
+<td>Aplicar proteção</td>
+</tr>
+<tr>
+<td>Finalidades autorizadas</td>
+<td>Limitar utilização</td>
+</tr>
+<tr>
+<td>Permissões</td>
+<td>Controlar consumidores e compartilhamentos</td>
+</tr>
+<tr>
+<td>Histórico</td>
+<td>Preservar alterações</td>
+</tr>
+<tr>
+<td>Revisão prevista</td>
+<td>Definir quando reavaliar</td>
+</tr>
+</tbody>
+</table>
+<p>Nem todos os atributos deverão ser obrigatórios desde a criação.</p>
+<h1 id="406-origens-funcionais-de-um-objetivo">406. Origens funcionais de um objetivo<a class="headerlink" href="#406-origens-funcionais-de-um-objetivo" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá surgir por:</p>
+<ol>
+<li>declaração direta do participante;</li>
+<li>aprofundamento durante a Captura de Contexto;</li>
+<li>conversa com a Guivos;</li>
+<li>transformação consciente de uma intenção;</li>
+<li>transformação de sonho ou possibilidade;</li>
+<li>impacto de Evento de Vida;</li>
+<li>experiência realizada;</li>
+<li>recomendação profissional;</li>
+<li>proposta de organização;</li>
+<li>sugestão da Guivos Intelligence;</li>
+<li>relação com outro objetivo;</li>
+<li>revisão de objetivo anterior.</li>
+</ol>
+<p>A origem deverá permanecer identificada durante todo o ciclo de vida.</p>
+<h1 id="407-autoridade-conforme-a-origem">407. Autoridade conforme a origem<a class="headerlink" href="#407-autoridade-conforme-a-origem" title="Permanent link">&para;</a></h1>
+<h2 id="4071-declaracao-do-participante">407.1 Declaração do participante<a class="headerlink" href="#4071-declaracao-do-participante" title="Permanent link">&para;</a></h2>
+<p>Poderá originar objetivo confirmado, desde que exista clareza suficiente sobre a direção expressa.</p>
+<h2 id="4072-inferencia-da-guivos">407.2 Inferência da Guivos<a class="headerlink" href="#4072-inferencia-da-guivos" title="Permanent link">&para;</a></h2>
+<p>Poderá originar somente:</p>
+<ul>
+<li>hipótese;</li>
+<li>pergunta;</li>
+<li>possibilidade;</li>
+<li>proposta de formulação;</li>
+<li>sugestão de revisão.</li>
+</ul>
+<p>Não poderá criar objetivo confirmado ou ativo.</p>
+<h2 id="4073-organizacao-ou-profissional">407.3 Organização ou profissional<a class="headerlink" href="#4073-organizacao-ou-profissional" title="Permanent link">&para;</a></h2>
+<p>Poderá originar:</p>
+<ul>
+<li>recomendação;</li>
+<li>requisito institucional;</li>
+<li>resultado esperado pela organização;</li>
+<li>plano externo;</li>
+<li>proposta de desenvolvimento.</li>
+</ul>
+<p>O sistema deverá distinguir esse conteúdo de um objetivo pessoal.</p>
+<h2 id="4074-comportamento-observado">407.4 Comportamento observado<a class="headerlink" href="#4074-comportamento-observado" title="Permanent link">&para;</a></h2>
+<p>Poderá justificar exploração ou confirmação, mas não ativação automática.</p>
+<p>Exemplos:</p>
+<ul>
+<li>pesquisar cursos não cria objetivo de estudar;</li>
+<li>visualizar vagas não cria objetivo de mudar de emprego;</li>
+<li>comprar equipamento não cria objetivo esportivo;</li>
+<li>consumir conteúdo religioso não cria objetivo espiritual.</li>
+</ul>
+<h1 id="408-gatilhos-de-criacao">408. Gatilhos de criação<a class="headerlink" href="#408-gatilhos-de-criacao" title="Permanent link">&para;</a></h1>
+<p>O processo de criação poderá ser iniciado quando:</p>
+<ul>
+<li>o participante disser que deseja algo;</li>
+<li>uma intenção se tornar recorrente;</li>
+<li>um sonho começar a orientar escolhas;</li>
+<li>uma possibilidade receber atenção consciente;</li>
+<li>um Evento de Vida gerar nova direção;</li>
+<li>um objetivo amplo for desdobrado;</li>
+<li>uma recomendação externa for aceita;</li>
+<li>um objetivo anterior for reformulado;</li>
+<li>a pessoa solicitar ajuda para organizar uma direção.</li>
+</ul>
+<p>A existência de um gatilho não significa que o objetivo deverá ser criado automaticamente.</p>
+<h1 id="409-fluxo-funcional-de-criacao">409. Fluxo funcional de criação<a class="headerlink" href="#409-fluxo-funcional-de-criacao" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>Manifestação identificada
+→ natureza avaliada
+→ autoria e origem verificadas
+→ intenção, sonho, possibilidade ou objetivo diferenciados
+→ formulação inicial preservada
+→ contexto mínimo associado
+→ confirmação solicitada quando necessária
+→ objetivo criado no estado adequado
+→ permissões e finalidades aplicadas
+→ evento funcional registrado
+</code></pre></div>
+<p>O estado inicial poderá ser:</p>
+<ul>
+<li><code>Mencionado</code>;</li>
+<li><code>Possibilidade</code>;</li>
+<li><code>Em exploração</code>;</li>
+<li><code>Proposto</code>;</li>
+<li><code>Confirmado</code>.</li>
+</ul>
+<p>A criação não deverá resultar automaticamente em estado <code>Ativo</code>.</p>
+<h1 id="410-criacao-por-declaracao-direta">410. Criação por declaração direta<a class="headerlink" href="#410-criacao-por-declaracao-direta" title="Permanent link">&para;</a></h1>
+<p>Quando o participante expressar claramente uma direção, a Guivos deverá:</p>
+<ol>
+<li>preservar a declaração original;</li>
+<li>verificar se representa intenção, possibilidade ou objetivo;</li>
+<li>confirmar a formulação quando houver ambiguidade;</li>
+<li>identificar a finalidade de uso;</li>
+<li>registrar o horizonte, caso informado;</li>
+<li>associar contexto relevante;</li>
+<li>perguntar sobre prioridade somente quando necessário;</li>
+<li>evitar exigir plano completo.</li>
+</ol>
+<p>Exemplo:</p>
+<blockquote>
+<p>“Quero aprender inglês para trabalhar no exterior.”</p>
+</blockquote>
+<p>A representação poderá ser:</p>
+<div class="highlight"><pre><span></span><code>Objetivo:
+Desenvolver inglês profissional
+
+Motivação:
+Acessar oportunidades internacionais
+
+Origem:
+Declaração direta
+
+Estado:
+Confirmado
+</code></pre></div>
+<h1 id="411-criacao-por-conversa">411. Criação por conversa<a class="headerlink" href="#411-criacao-por-conversa" title="Permanent link">&para;</a></h1>
+<p>Durante uma conversa, a Guivos deverá distinguir:</p>
+<ul>
+<li>relato sobre algo desejado;</li>
+<li>reflexão temporária;</li>
+<li>hipótese;</li>
+<li>comparação de alternativas;</li>
+<li>intenção real;</li>
+<li>objetivo assumido.</li>
+</ul>
+<p>Perguntas adequadas poderão incluir:</p>
+<ul>
+<li>“Isso representa algo que você deseja buscar agora?”</li>
+<li>“Você está apenas considerando essa possibilidade ou quer registrá-la como objetivo?”</li>
+<li>“Essa formulação representa corretamente o que você deseja?”</li>
+<li>“Você quer que isso oriente recomendações e próximos passos?”</li>
+</ul>
+<p>A continuidade da conversa não deverá ser interpretada como confirmação implícita.</p>
+<h1 id="412-criacao-a-partir-de-sonho">412. Criação a partir de sonho<a class="headerlink" href="#412-criacao-a-partir-de-sonho" title="Permanent link">&para;</a></h1>
+<p>Um sonho deverá poder permanecer preservado sem ativação operacional.</p>
+<p>Fluxo possível:</p>
+<div class="highlight"><pre><span></span><code>Sonho registrado
+→ exploração autorizada
+→ possibilidade identificada
+→ objetivo intermediário formulado
+→ confirmação
+→ ativação
+</code></pre></div>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Sonho:
+Construir uma empresa global
+
+Objetivo exploratório:
+Compreender modelos de expansão internacional
+
+Objetivo ativo:
+Validar a Guivos em um mercado estrangeiro
+</code></pre></div>
+<p>A Guivos não deverá reduzir automaticamente um sonho amplo a um objetivo operacional específico.</p>
+<h1 id="413-criacao-por-recomendacao-externa">413. Criação por recomendação externa<a class="headerlink" href="#413-criacao-por-recomendacao-externa" title="Permanent link">&para;</a></h1>
+<p>Quando uma organização, profissional ou instituição propuser um objetivo, a interface deverá informar:</p>
+<ul>
+<li>quem propôs;</li>
+<li>por que propôs;</li>
+<li>se existe obrigação institucional;</li>
+<li>quais consequências existem;</li>
+<li>quais informações serão utilizadas;</li>
+<li>se o objetivo será pessoal, institucional ou compartilhado.</li>
+</ul>
+<p>O participante poderá:</p>
+<ul>
+<li>aceitar;</li>
+<li>rejeitar;</li>
+<li>reformular;</li>
+<li>manter apenas como recomendação;</li>
+<li>adiar;</li>
+<li>limitar o compartilhamento.</li>
+</ul>
+<p>A recusa não deverá ser interpretada automaticamente como falta de comprometimento.</p>
+<h1 id="414-objetivo-institucional-e-objetivo-pessoal">414. Objetivo institucional e objetivo pessoal<a class="headerlink" href="#414-objetivo-institucional-e-objetivo-pessoal" title="Permanent link">&para;</a></h1>
+<p>Uma mesma direção poderá possuir representações diferentes.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Objetivo institucional:
+Concluir treinamento obrigatório
+
+Objetivo pessoal:
+Desenvolver capacidade de liderança
+</code></pre></div>
+<p>O sistema deverá preservar:</p>
+<ul>
+<li>titularidade;</li>
+<li>finalidade;</li>
+<li>critérios;</li>
+<li>permissões;</li>
+<li>responsabilidade;</li>
+<li>forma de conclusão.</li>
+</ul>
+<p>O cumprimento de um objetivo institucional não prova que o participante assumiu o mesmo resultado como objetivo pessoal.</p>
+<h1 id="415-deteccao-de-duplicidade">415. Detecção de duplicidade<a class="headerlink" href="#415-deteccao-de-duplicidade" title="Permanent link">&para;</a></h1>
+<p>Antes de criar um objetivo, a capacidade deverá verificar:</p>
+<ul>
+<li>formulações semelhantes;</li>
+<li>objetivos ativos relacionados;</li>
+<li>versões anteriores;</li>
+<li>objetivos concluídos reabertos;</li>
+<li>objetivos substituídos;</li>
+<li>diferenças de contexto;</li>
+<li>diferenças de horizonte;</li>
+<li>diferenças de finalidade.</li>
+</ul>
+<p>Objetivos semelhantes não deverão ser automaticamente unificados.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Objetivo A:
+Aprender inglês para viagens
+
+Objetivo B:
+Desenvolver inglês técnico para trabalho
+</code></pre></div>
+<p>Eles poderão coexistir, ser relacionados ou ser reunidos por decisão do participante.</p>
+<h1 id="416-resultados-da-avaliacao-de-duplicidade">416. Resultados da avaliação de duplicidade<a class="headerlink" href="#416-resultados-da-avaliacao-de-duplicidade" title="Permanent link">&para;</a></h1>
+<p>A análise poderá resultar em:</p>
+<ul>
+<li>novo objetivo independente;</li>
+<li>complemento de objetivo existente;</li>
+<li>reformulação;</li>
+<li>reativação;</li>
+<li>desdobramento;</li>
+<li>associação entre objetivos;</li>
+<li>possível duplicidade aguardando confirmação;</li>
+<li>unificação autorizada.</li>
+</ul>
+<p>Nenhuma unificação deverá apagar históricos ou critérios distintos.</p>
+<h1 id="417-confirmacao-funcional">417. Confirmação funcional<a class="headerlink" href="#417-confirmacao-funcional" title="Permanent link">&para;</a></h1>
+<p>A confirmação deverá demonstrar que o participante reconhece determinada formulação como representação legítima de sua direção.</p>
+<p>A confirmação deverá possuir:</p>
+<ul>
+<li>objetivo apresentado;</li>
+<li>formulação compreensível;</li>
+<li>finalidade;</li>
+<li>usos previstos;</li>
+<li>data;</li>
+<li>canal;</li>
+<li>escopo;</li>
+<li>ator;</li>
+<li>nível de confiança resultante.</li>
+</ul>
+<p>Confirmar a existência do objetivo não significa:</p>
+<ul>
+<li>definir prioridade;</li>
+<li>autorizar publicidade;</li>
+<li>aceitar um plano;</li>
+<li>comprometer-se com prazo;</li>
+<li>permitir compartilhamento irrestrito.</li>
+</ul>
+<h1 id="418-quando-a-confirmacao-e-obrigatoria">418. Quando a confirmação é obrigatória<a class="headerlink" href="#418-quando-a-confirmacao-e-obrigatoria" title="Permanent link">&para;</a></h1>
+<p>A confirmação será obrigatória quando o objetivo:</p>
+<ul>
+<li>tiver origem inferencial;</li>
+<li>tiver sido proposto por terceiro;</li>
+<li>resultar de comportamento observado;</li>
+<li>possuir conteúdo sensível;</li>
+<li>orientar decisão de alto impacto;</li>
+<li>substituir objetivo ativo;</li>
+<li>alterar prioridade principal;</li>
+<li>produzir compartilhamento externo;</li>
+<li>gerar compromisso institucional;</li>
+<li>apresentar formulação diferente da expressão original.</li>
+</ul>
+<h1 id="419-confirmacao-simplificada">419. Confirmação simplificada<a class="headerlink" href="#419-confirmacao-simplificada" title="Permanent link">&para;</a></h1>
+<p>Objetivos declarados diretamente poderão receber confirmação simplificada.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>Você quer registrar “melhorar minha saúde” como um objetivo da sua jornada?</p>
+</blockquote>
+<p>Ações:</p>
+<ul>
+<li>Sim, registrar.</li>
+<li>Quero ajustar a formulação.</li>
+<li>É apenas uma possibilidade.</li>
+<li>Não quero registrar.</li>
+<li>Revisar depois.</li>
+</ul>
+<p>A interface não deverá induzir a ativação como opção padrão inevitável.</p>
+<h1 id="420-ausencia-de-confirmacao">420. Ausência de confirmação<a class="headerlink" href="#420-ausencia-de-confirmacao" title="Permanent link">&para;</a></h1>
+<p>Quando não houver confirmação:</p>
+<ul>
+<li>o objetivo não deverá ser ativado;</li>
+<li>a manifestação poderá permanecer como intenção, possibilidade ou proposta;</li>
+<li>nenhuma recomendação crítica deverá depender dela;</li>
+<li>o participante não deverá ser pressionado;</li>
+<li>a solicitação poderá ser retomada somente quando relevante.</li>
+</ul>
+<p>Ausência de resposta não significa concordância.</p>
+<h1 id="421-ativacao-do-objetivo">421. Ativação do objetivo<a class="headerlink" href="#421-ativacao-do-objetivo" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá ser ativado quando:</p>
+<ol>
+<li>tiver autoria ou aceitação consciente;</li>
+<li>possuir direção compreensível;</li>
+<li>tiver finalidade autorizada;</li>
+<li>não estiver impedido por conflito crítico;</li>
+<li>puder orientar alguma capacidade da jornada;</li>
+<li>o participante autorizar seu uso operacional.</li>
+</ol>
+<p>A ativação não deverá exigir:</p>
+<ul>
+<li>prazo;</li>
+<li>plano completo;</li>
+<li>indicador quantitativo;</li>
+<li>oportunidade disponível;</li>
+<li>viabilidade totalmente comprovada.</li>
+</ul>
+<h1 id="422-ativacao-parcial-por-finalidade">422. Ativação parcial por finalidade<a class="headerlink" href="#422-ativacao-parcial-por-finalidade" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá estar ativo para determinadas finalidades e não para outras.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Objetivo:
+Explorar mudança de carreira
+
+Próximos Passos:
+Autorizado
+
+Oportunidades profissionais:
+Autorizado
+
+Compartilhamento com empresas:
+Não autorizado
+
+Publicidade personalizada:
+Não autorizado
+</code></pre></div>
+<p>A ativação deverá respeitar permissões específicas.</p>
+<h1 id="423-correcao-e-mudanca-real">423. Correção e mudança real<a class="headerlink" href="#423-correcao-e-mudanca-real" title="Permanent link">&para;</a></h1>
+<p>A capacidade deverá diferenciar:</p>
+<h2 id="correcao">Correção<a class="headerlink" href="#correcao" title="Permanent link">&para;</a></h2>
+<p>A representação anterior estava incorreta.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>O objetivo nunca foi mudar de cidade; era apenas viajar por um período.</p>
+</blockquote>
+<h2 id="mudanca-real">Mudança real<a class="headerlink" href="#mudanca-real" title="Permanent link">&para;</a></h2>
+<p>A representação anterior estava correta, mas deixou de representar a direção atual.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>Antes eu queria permanecer na empresa; agora desejo buscar outra oportunidade.</p>
+</blockquote>
+<p>A correção deverá reparar usos indevidos quando necessário.</p>
+<p>A mudança real deverá preservar a validade histórica do objetivo anterior.</p>
+<h1 id="424-reformulacao">424. Reformulação<a class="headerlink" href="#424-reformulacao" title="Permanent link">&para;</a></h1>
+<p>A reformulação ocorre quando o significado central permanece relacionado, mas a representação precisa mudar.</p>
+<p>Poderá envolver:</p>
+<ul>
+<li>maior clareza;</li>
+<li>redução de escopo;</li>
+<li>ampliação;</li>
+<li>mudança de horizonte;</li>
+<li>mudança de resultado;</li>
+<li>mudança de motivação;</li>
+<li>adaptação ao contexto;</li>
+<li>substituição de critério de sucesso.</li>
+</ul>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Formulação anterior:
+Melhorar minha carreira
+
+Formulação atual:
+Conquistar uma posição de gestão operacional
+</code></pre></div>
+<p>A reformulação deverá preservar o vínculo com a versão anterior.</p>
+<h1 id="425-desdobramento-de-objetivo">425. Desdobramento de objetivo<a class="headerlink" href="#425-desdobramento-de-objetivo" title="Permanent link">&para;</a></h1>
+<p>Um objetivo amplo poderá ser dividido em objetivos relacionados.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Objetivo amplo:
+Expandir a Guivos internacionalmente
+
+Objetivos relacionados:
+- selecionar o primeiro país;
+- validar a proposta de valor;
+- estruturar presença comercial;
+- adequar operação e marca.
+</code></pre></div>
+<p>O desdobramento não deverá transformar automaticamente cada parte em tarefa.</p>
+<p>Cada objetivo derivado deverá possuir:</p>
+<ul>
+<li>significado próprio;</li>
+<li>relação com o objetivo maior;</li>
+<li>estado;</li>
+<li>prioridade;</li>
+<li>critérios;</li>
+<li>autorização.</li>
+</ul>
+<h1 id="426-unificacao-de-objetivos">426. Unificação de objetivos<a class="headerlink" href="#426-unificacao-de-objetivos" title="Permanent link">&para;</a></h1>
+<p>Objetivos poderão ser unificados quando:</p>
+<ul>
+<li>representam a mesma direção;</li>
+<li>possuem critérios compatíveis;</li>
+<li>o participante compreender a mudança;</li>
+<li>históricos forem preservados;</li>
+<li>não existirem permissões incompatíveis;</li>
+<li>relações anteriores forem recompostas.</li>
+</ul>
+<p>A unificação deverá produzir uma nova representação, sem apagar os objetivos de origem.</p>
+<h1 id="427-modelo-funcional-de-prioridade">427. Modelo funcional de prioridade<a class="headerlink" href="#427-modelo-funcional-de-prioridade" title="Permanent link">&para;</a></h1>
+<p>A prioridade representa a importância relativa de um objetivo no contexto atual.</p>
+<p>Ela deverá ser separada de:</p>
+<ul>
+<li>urgência;</li>
+<li>estado;</li>
+<li>valor humano;</li>
+<li>viabilidade;</li>
+<li>obrigação;</li>
+<li>ordem de criação.</li>
+</ul>
+<p>Um objetivo prioritário poderá estar bloqueado.</p>
+<p>Um objetivo de baixa prioridade poderá continuar ativo.</p>
+<h1 id="428-fatores-de-priorizacao">428. Fatores de priorização<a class="headerlink" href="#428-fatores-de-priorizacao" title="Permanent link">&para;</a></h1>
+<p>A Guivos poderá apoiar a análise considerando:</p>
+<ul>
+<li>importância declarada;</li>
+<li>urgência;</li>
+<li>prazo externo;</li>
+<li>impacto esperado;</li>
+<li>relação com necessidade básica;</li>
+<li>dependências;</li>
+<li>custo de adiamento;</li>
+<li>oportunidade temporal;</li>
+<li>capacidades disponíveis;</li>
+<li>restrições;</li>
+<li>esforço;</li>
+<li>risco;</li>
+<li>relação com outros objetivos;</li>
+<li>valores e significado declarados.</li>
+</ul>
+<p>Esses fatores deverão ser apresentados como apoio, não como decisão definitiva.</p>
+<h1 id="429-prioridade-declarada-e-prioridade-sugerida">429. Prioridade declarada e prioridade sugerida<a class="headerlink" href="#429-prioridade-declarada-e-prioridade-sugerida" title="Permanent link">&para;</a></h1>
+<h2 id="prioridade-declarada">Prioridade declarada<a class="headerlink" href="#prioridade-declarada" title="Permanent link">&para;</a></h2>
+<p>Definida diretamente pelo participante.</p>
+<h2 id="prioridade-sugerida">Prioridade sugerida<a class="headerlink" href="#prioridade-sugerida" title="Permanent link">&para;</a></h2>
+<p>Proposta pela Guivos com base em critérios explicáveis.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>Este objetivo pode exigir atenção mais próxima porque possui prazo de inscrição e depende de uma ação nesta semana.</p>
+</blockquote>
+<p>A sugestão não deverá alterar automaticamente a prioridade registrada.</p>
+<h1 id="430-urgencia-nao-e-prioridade">430. Urgência não é prioridade<a class="headerlink" href="#430-urgencia-nao-e-prioridade" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá ser urgente sem ser o mais importante.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Objetivo urgente:
+Renovar uma certificação próxima do vencimento
+
+Objetivo principal:
+Conseguir uma nova oportunidade profissional
+</code></pre></div>
+<p>A capacidade deverá preservar as duas dimensões.</p>
+<h1 id="431-prioridade-contextual">431. Prioridade contextual<a class="headerlink" href="#431-prioridade-contextual" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá ganhar prioridade apenas em determinado contexto.</p>
+<p>Exemplos:</p>
+<ul>
+<li>objetivo de viagem durante período de férias;</li>
+<li>objetivo financeiro após Evento de Vida;</li>
+<li>objetivo de saúde durante recuperação;</li>
+<li>objetivo profissional durante processo seletivo.</li>
+</ul>
+<p>A prioridade contextual deverá possuir:</p>
+<ul>
+<li>motivo;</li>
+<li>período;</li>
+<li>condição de encerramento;</li>
+<li>impacto sobre outros objetivos.</li>
+</ul>
+<h1 id="432-alteracao-de-prioridade">432. Alteração de prioridade<a class="headerlink" href="#432-alteracao-de-prioridade" title="Permanent link">&para;</a></h1>
+<p>Uma prioridade poderá ser alterada por:</p>
+<ul>
+<li>declaração do participante;</li>
+<li>Evento de Vida;</li>
+<li>novo prazo;</li>
+<li>conflito;</li>
+<li>mudança de restrição;</li>
+<li>objetivo concluído;</li>
+<li>oportunidade temporária;</li>
+<li>revisão periódica.</li>
+</ul>
+<p>Alterações sugeridas pela Guivos exigirão confirmação quando afetarem a ordem de atuação das capacidades consumidoras.</p>
+<h1 id="433-portfolio-de-objetivos">433. Portfólio de objetivos<a class="headerlink" href="#433-portfolio-de-objetivos" title="Permanent link">&para;</a></h1>
+<p>A capacidade deverá permitir uma visão conjunta dos objetivos.</p>
+<p>O portfólio poderá demonstrar:</p>
+<ul>
+<li>objetivos ativos;</li>
+<li>prioridades;</li>
+<li>horizontes;</li>
+<li>relações;</li>
+<li>conflitos;</li>
+<li>dependências;</li>
+<li>objetivos pausados;</li>
+<li>objetivos em exploração;</li>
+<li>objetivos próximos de revisão.</li>
+</ul>
+<p>O portfólio não deverá criar pontuação geral de sucesso pessoal.</p>
+<h1 id="434-limites-de-simultaneidade">434. Limites de simultaneidade<a class="headerlink" href="#434-limites-de-simultaneidade" title="Permanent link">&para;</a></h1>
+<p>A Guivos poderá alertar quando muitos objetivos disputarem recursos relevantes.</p>
+<p>Exemplo:</p>
+<blockquote>
+<p>Você possui cinco objetivos de alta prioridade que dependem do mesmo período e disponibilidade.</p>
+</blockquote>
+<p>A capacidade poderá sugerir:</p>
+<ul>
+<li>sequência;</li>
+<li>redução temporária;</li>
+<li>pausa;</li>
+<li>revisão de prioridade;</li>
+<li>agrupamento;</li>
+<li>escolha contextual.</li>
+</ul>
+<p>Não deverá impor quantidade máxima universal de objetivos.</p>
+<h1 id="435-tipos-de-conflito-entre-objetivos">435. Tipos de conflito entre objetivos<a class="headerlink" href="#435-tipos-de-conflito-entre-objetivos" title="Permanent link">&para;</a></h1>
+<p>Conflitos poderão ser:</p>
+<ul>
+<li>temporais;</li>
+<li>financeiros;</li>
+<li>geográficos;</li>
+<li>de energia;</li>
+<li>de atenção;</li>
+<li>de capacidade;</li>
+<li>de relacionamento;</li>
+<li>de prazo;</li>
+<li>de recursos;</li>
+<li>de valores declarados;</li>
+<li>de exclusividade;</li>
+<li>de prioridade;</li>
+<li>de sensibilidade;</li>
+<li>entre objetivo pessoal e institucional.</li>
+</ul>
+<h1 id="436-registro-funcional-de-conflito">436. Registro funcional de conflito<a class="headerlink" href="#436-registro-funcional-de-conflito" title="Permanent link">&para;</a></h1>
+<p>Cada conflito deverá registrar:</p>
+<ul>
+<li>objetivos envolvidos;</li>
+<li>tipo;</li>
+<li>origem;</li>
+<li>contexto;</li>
+<li>recursos disputados;</li>
+<li>impacto;</li>
+<li>urgência;</li>
+<li>temporalidade;</li>
+<li>alternativas;</li>
+<li>participação necessária;</li>
+<li>decisão provisória;</li>
+<li>resultado;</li>
+<li>possibilidade de revisão.</li>
+</ul>
+<p>O conflito não deverá reduzir automaticamente a validade de nenhum objetivo.</p>
+<h1 id="437-deteccao-de-conflito">437. Detecção de conflito<a class="headerlink" href="#437-deteccao-de-conflito" title="Permanent link">&para;</a></h1>
+<p>Um conflito poderá ser detectado por:</p>
+<ul>
+<li>declaração do participante;</li>
+<li>análise do Contexto Vivo;</li>
+<li>sobreposição de prazos;</li>
+<li>restrição incompatível;</li>
+<li>uso concorrente de recursos;</li>
+<li>Evento de Vida;</li>
+<li>recomendação externa;</li>
+<li>tentativa de gerar Próximos Passos incompatíveis.</li>
+</ul>
+<p>A detecção automática deverá produzir alerta ou proposta, não decisão silenciosa.</p>
+<h1 id="438-resolucao-de-conflitos">438. Resolução de conflitos<a class="headerlink" href="#438-resolucao-de-conflitos" title="Permanent link">&para;</a></h1>
+<p>A resolução poderá resultar em:</p>
+<ul>
+<li>coexistência;</li>
+<li>sequência temporal;</li>
+<li>prioridade contextual;</li>
+<li>pausa de um objetivo;</li>
+<li>reformulação;</li>
+<li>redução de escopo;</li>
+<li>compartilhamento de recursos;</li>
+<li>substituição;</li>
+<li>retirada;</li>
+<li>manutenção consciente do conflito;</li>
+<li>adiamento da decisão.</li>
+</ul>
+<p>A Guivos deverá explicar consequências e preservar a decisão do participante.</p>
+<h1 id="439-conflito-entre-objetivo-pessoal-e-organizacional">439. Conflito entre objetivo pessoal e organizacional<a class="headerlink" href="#439-conflito-entre-objetivo-pessoal-e-organizacional" title="Permanent link">&para;</a></h1>
+<p>Quando existir tensão entre objetivo pessoal e institucional, a interface deverá distinguir:</p>
+<ul>
+<li>quem é titular de cada objetivo;</li>
+<li>quais obrigações existem;</li>
+<li>quais consequências são institucionais;</li>
+<li>quais informações serão compartilhadas;</li>
+<li>qual decisão pertence ao participante.</li>
+</ul>
+<p>A organização não deverá acessar objetivos pessoais não autorizados para avaliar adesão ou desempenho.</p>
+<h1 id="440-conflito-de-valores-declarados">440. Conflito de valores declarados<a class="headerlink" href="#440-conflito-de-valores-declarados" title="Permanent link">&para;</a></h1>
+<p>Quando um objetivo parecer incompatível com valores ou princípios declarados pelo participante, a Guivos poderá perguntar:</p>
+<blockquote>
+<p>Você deseja revisar como esse objetivo se relaciona com aquilo que considera importante?</p>
+</blockquote>
+<p>A capacidade não deverá:</p>
+<ul>
+<li>presumir incoerência moral;</li>
+<li>retirar o objetivo;</li>
+<li>impor interpretação;</li>
+<li>utilizar valores sensíveis para manipulação.</li>
+</ul>
+<h1 id="441-revisao-de-objetivo">441. Revisão de objetivo<a class="headerlink" href="#441-revisao-de-objetivo" title="Permanent link">&para;</a></h1>
+<p>A revisão deverá avaliar se o objetivo continua representando:</p>
+<ul>
+<li>direção atual;</li>
+<li>significado;</li>
+<li>prioridade;</li>
+<li>horizonte;</li>
+<li>resultado desejado;</li>
+<li>critérios de sucesso;</li>
+<li>permissões;</li>
+<li>compatibilidade contextual.</li>
+</ul>
+<p>A revisão não deverá exigir reconstrução integral do objetivo.</p>
+<h1 id="442-gatilhos-de-revisao">442. Gatilhos de revisão<a class="headerlink" href="#442-gatilhos-de-revisao" title="Permanent link">&para;</a></h1>
+<p>Uma revisão poderá ser iniciada por:</p>
+<ul>
+<li>solicitação do participante;</li>
+<li>passagem do tempo;</li>
+<li>Evento de Vida;</li>
+<li>mudança de prioridade;</li>
+<li>conflito;</li>
+<li>bloqueio prolongado;</li>
+<li>ausência de atividade relevante;</li>
+<li>novo resultado;</li>
+<li>mudança de permissão;</li>
+<li>conclusão parcial;</li>
+<li>objetivo relacionado alterado;</li>
+<li>recomendação que deixou de fazer sentido.</li>
+</ul>
+<p>Ausência de atividade, isoladamente, não prova perda de interesse.</p>
+<h1 id="443-fluxo-funcional-de-revisao">443. Fluxo funcional de revisão<a class="headerlink" href="#443-fluxo-funcional-de-revisao" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>Gatilho identificado
+→ impacto avaliado
+→ objetivo atual apresentado
+→ elementos relevantes destacados
+→ participante confirma, ajusta ou adia
+→ estado, prioridade ou formulação atualizados
+→ recortes recompostos
+→ capacidades consumidoras notificadas
+→ histórico preservado
+</code></pre></div>
+<p>A revisão deverá focar apenas nos elementos afetados.</p>
+<h1 id="444-resultados-da-revisao">444. Resultados da revisão<a class="headerlink" href="#444-resultados-da-revisao" title="Permanent link">&para;</a></h1>
+<p>Uma revisão poderá resultar em:</p>
+<ul>
+<li>confirmação sem alteração;</li>
+<li>alteração de prioridade;</li>
+<li>reformulação;</li>
+<li>mudança de horizonte;</li>
+<li>ajuste de critério de sucesso;</li>
+<li>pausa;</li>
+<li>retomada;</li>
+<li>bloqueio;</li>
+<li>conclusão;</li>
+<li>retirada;</li>
+<li>substituição;</li>
+<li>manutenção em exploração;</li>
+<li>nova revisão futura.</li>
+</ul>
+<h1 id="445-envelhecimento-de-objetivo">445. Envelhecimento de objetivo<a class="headerlink" href="#445-envelhecimento-de-objetivo" title="Permanent link">&para;</a></h1>
+<p>O envelhecimento representa perda de segurança sobre a atualidade do objetivo.</p>
+<p>Ele não significa que o objetivo se tornou falso ou inválido.</p>
+<p>Um objetivo poderá envelhecer quando:</p>
+<ul>
+<li>não recebe confirmação por período relevante;</li>
+<li>o contexto mudou;</li>
+<li>um Evento de Vida ocorreu;</li>
+<li>suas dependências foram alteradas;</li>
+<li>a prioridade não é revista;</li>
+<li>os critérios de sucesso deixaram de ser aplicáveis;</li>
+<li>as permissões expiraram.</li>
+</ul>
+<h1 id="446-classes-temporais-dos-objetivos">446. Classes temporais dos objetivos<a class="headerlink" href="#446-classes-temporais-dos-objetivos" title="Permanent link">&para;</a></h1>
+<h2 id="dinamico">Dinâmico<a class="headerlink" href="#dinamico" title="Permanent link">&para;</a></h2>
+<p>Poderá mudar frequentemente.</p>
+<p>Exemplos:</p>
+<ul>
+<li>objetivo de curto prazo;</li>
+<li>objetivo ligado a oportunidade temporária;</li>
+<li>objetivo exploratório.</li>
+</ul>
+<h2 id="estavel">Estável<a class="headerlink" href="#estavel" title="Permanent link">&para;</a></h2>
+<p>Tende a permanecer válido por período maior.</p>
+<p>Exemplos:</p>
+<ul>
+<li>formação acadêmica;</li>
+<li>desenvolvimento profissional;</li>
+<li>organização financeira.</li>
+</ul>
+<h2 id="continuo">Contínuo<a class="headerlink" href="#continuo" title="Permanent link">&para;</a></h2>
+<p>Busca manutenção ou evolução permanente.</p>
+<p>Exemplos:</p>
+<ul>
+<li>manter saúde;</li>
+<li>fortalecer relações;</li>
+<li>desenvolvimento espiritual.</li>
+</ul>
+<h2 id="eventual">Eventual<a class="headerlink" href="#eventual" title="Permanent link">&para;</a></h2>
+<p>Existe para resultado específico e delimitado.</p>
+<p>Exemplos:</p>
+<ul>
+<li>realizar uma viagem;</li>
+<li>concluir certificação;</li>
+<li>participar de projeto.</li>
+</ul>
+<h2 id="aspiracional">Aspiracional<a class="headerlink" href="#aspiracional" title="Permanent link">&para;</a></h2>
+<p>Possui horizonte amplo ou indefinido.</p>
+<p>Exemplos:</p>
+<ul>
+<li>construir legado;</li>
+<li>desenvolver empresa global;</li>
+<li>contribuir com determinada causa.</li>
+</ul>
+<h1 id="447-estados-de-atualidade">447. Estados de atualidade<a class="headerlink" href="#447-estados-de-atualidade" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá estar:</p>
+<ul>
+<li>atual;</li>
+<li>próximo de revisão;</li>
+<li>possivelmente desatualizado;</li>
+<li>aguardando confirmação;</li>
+<li>desatualizado para determinada finalidade;</li>
+<li>historicamente válido;</li>
+<li>sem informação suficiente sobre atualidade.</li>
+</ul>
+<p>O estado de atualidade deverá permanecer separado do estado funcional.</p>
+<p>Um objetivo poderá estar <code>Ativo</code> e <code>Próximo de revisão</code>.</p>
+<h1 id="448-horizonte-de-revisao">448. Horizonte de revisão<a class="headerlink" href="#448-horizonte-de-revisao" title="Permanent link">&para;</a></h1>
+<p>O horizonte deverá considerar:</p>
+<ul>
+<li>tipo de objetivo;</li>
+<li>prazo;</li>
+<li>impacto;</li>
+<li>sensibilidade;</li>
+<li>contexto;</li>
+<li>prioridade;</li>
+<li>volatilidade;</li>
+<li>dependências;</li>
+<li>uso pelas demais capacidades.</li>
+</ul>
+<p>Exemplos:</p>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Horizonte funcional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Participar de evento no próximo mês</td>
+<td>curto</td>
+</tr>
+<tr>
+<td>Mudar de carreira</td>
+<td>médio, com revisão após mudanças relevantes</td>
+</tr>
+<tr>
+<td>Manter proximidade familiar</td>
+<td>contínuo e contextual</td>
+</tr>
+<tr>
+<td>Construir empresa global</td>
+<td>longo, com revisões de direção</td>
+</tr>
+<tr>
+<td>Explorar nova atividade</td>
+<td>curto ou após experiência</td>
+</tr>
+</tbody>
+</table>
+<p>Não deverá existir prazo universal para todos os objetivos.</p>
+<h1 id="449-ausencia-de-resposta-a-revisao">449. Ausência de resposta à revisão<a class="headerlink" href="#449-ausencia-de-resposta-a-revisao" title="Permanent link">&para;</a></h1>
+<p>Quando o participante não responder:</p>
+<ul>
+<li>o objetivo não deverá ser confirmado automaticamente;</li>
+<li>a atualidade poderá ser reduzida;</li>
+<li>decisões de alto impacto poderão ser limitadas;</li>
+<li>usos de baixo impacto poderão continuar com incerteza explícita;</li>
+<li>novas solicitações deverão evitar repetição excessiva;</li>
+<li>o objetivo poderá permanecer ativo, dependendo do risco.</li>
+</ul>
+<h1 id="450-uso-de-objetivo-envelhecido">450. Uso de objetivo envelhecido<a class="headerlink" href="#450-uso-de-objetivo-envelhecido" title="Permanent link">&para;</a></h1>
+<p>Um objetivo envelhecido poderá:</p>
+<ul>
+<li>continuar no histórico;</li>
+<li>permanecer visível;</li>
+<li>apoiar exploração de baixo impacto;</li>
+<li>exigir confirmação antes de orientar ação relevante;</li>
+<li>deixar de ordenar oportunidades;</li>
+<li>ser temporariamente excluído de recortes críticos.</li>
+</ul>
+<p>Ele não deverá ser retirado automaticamente.</p>
+<h1 id="451-pausa">451. Pausa<a class="headerlink" href="#451-pausa" title="Permanent link">&para;</a></h1>
+<p>A pausa representa interrupção temporária do uso operacional.</p>
+<p>Durante a pausa:</p>
+<ul>
+<li>o objetivo permanece válido;</li>
+<li>novos Próximos Passos não deverão ser gerados, salvo solicitação;</li>
+<li>oportunidades não deverão ser priorizadas por ele;</li>
+<li>histórico e relações permanecem;</li>
+<li>critérios de retomada poderão ser registrados.</li>
+</ul>
+<p>A pausa não deverá ser apresentada como desistência.</p>
+<h1 id="452-retomada">452. Retomada<a class="headerlink" href="#452-retomada" title="Permanent link">&para;</a></h1>
+<p>A retomada deverá verificar:</p>
+<ul>
+<li>se a formulação continua atual;</li>
+<li>se o contexto mudou;</li>
+<li>se a prioridade permanece;</li>
+<li>se existem novos conflitos;</li>
+<li>se as permissões continuam válidas;</li>
+<li>se os critérios de sucesso precisam de ajuste.</li>
+</ul>
+<p>A retomada poderá produzir reformulação antes da ativação.</p>
+<h1 id="453-bloqueio">453. Bloqueio<a class="headerlink" href="#453-bloqueio" title="Permanent link">&para;</a></h1>
+<p>Um objetivo estará bloqueado quando existe impedimento atual, como:</p>
+<ul>
+<li>falta de recurso;</li>
+<li>restrição;</li>
+<li>dependência não atendida;</li>
+<li>prazo externo;</li>
+<li>conflito;</li>
+<li>condição de saúde;</li>
+<li>autorização ausente;</li>
+<li>indisponibilidade de oportunidade.</li>
+</ul>
+<p>O bloqueio deverá indicar:</p>
+<ul>
+<li>causa;</li>
+<li>impacto;</li>
+<li>possibilidade de ação;</li>
+<li>condição de desbloqueio;</li>
+<li>revisão prevista.</li>
+</ul>
+<p>O bloqueio não deverá ser interpretado como fracasso.</p>
+<h1 id="454-desbloqueio">454. Desbloqueio<a class="headerlink" href="#454-desbloqueio" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá ser desbloqueado quando:</p>
+<ul>
+<li>a restrição for removida;</li>
+<li>a dependência for concluída;</li>
+<li>a permissão for concedida;</li>
+<li>o conflito for resolvido;</li>
+<li>surgir alternativa;</li>
+<li>o participante reformular o objetivo.</li>
+</ul>
+<p>O desbloqueio não deverá ativar automaticamente o objetivo quando ele estiver pausado ou desatualizado.</p>
+<h1 id="455-conclusao">455. Conclusão<a class="headerlink" href="#455-conclusao" title="Permanent link">&para;</a></h1>
+<p>Antes de concluir, a capacidade deverá considerar:</p>
+<ul>
+<li>critério de sucesso;</li>
+<li>manifestação do participante;</li>
+<li>evidências disponíveis;</li>
+<li>natureza do objetivo;</li>
+<li>resultados parciais;</li>
+<li>necessidade de continuidade;</li>
+<li>objetivos dependentes.</li>
+</ul>
+<p>A conclusão poderá ser:</p>
+<ul>
+<li>declarada pelo participante;</li>
+<li>sugerida pela Guivos;</li>
+<li>confirmada por fonte autorizada;</li>
+<li>reconhecida por critério objetivo.</li>
+</ul>
+<p>Objetivos pessoais não deverão ser concluídos exclusivamente por inferência.</p>
+<h1 id="456-conclusao-parcial">456. Conclusão parcial<a class="headerlink" href="#456-conclusao-parcial" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá alcançar resultado parcial sem ser concluído.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Objetivo:
+Aprender inglês
+
+Resultado parcial:
+Concluir nível intermediário
+</code></pre></div>
+<p>A conclusão parcial poderá gerar:</p>
+<ul>
+<li>marco;</li>
+<li>evidência de evolução;</li>
+<li>reformulação;</li>
+<li>novo critério;</li>
+<li>objetivo derivado;</li>
+<li>manutenção do objetivo principal.</li>
+</ul>
+<h1 id="457-conclusao-de-objetivos-continuos">457. Conclusão de objetivos contínuos<a class="headerlink" href="#457-conclusao-de-objetivos-continuos" title="Permanent link">&para;</a></h1>
+<p>Objetivos de manutenção ou desenvolvimento contínuo poderão não possuir conclusão definitiva.</p>
+<p>Nesses casos, poderão existir:</p>
+<ul>
+<li>ciclos;</li>
+<li>marcos;</li>
+<li>períodos avaliados;</li>
+<li>manutenção confirmada;</li>
+<li>reformulações;</li>
+<li>encerramento voluntário.</li>
+</ul>
+<p>Exemplo:</p>
+<blockquote>
+<p>Manter uma rotina saudável durante o próximo semestre.</p>
+</blockquote>
+<p>A conclusão do ciclo não precisa encerrar permanentemente a direção.</p>
+<h1 id="458-retirada">458. Retirada<a class="headerlink" href="#458-retirada" title="Permanent link">&para;</a></h1>
+<p>A retirada deverá:</p>
+<ul>
+<li>interromper novos usos;</li>
+<li>retirar o objetivo dos recortes ativos;</li>
+<li>notificar capacidades consumidoras;</li>
+<li>preservar histórico conforme autorização;</li>
+<li>manter relações anteriores;</li>
+<li>permitir explicação;</li>
+<li>possibilitar reativação futura.</li>
+</ul>
+<p>A retirada não deverá exigir justificativa.</p>
+<h1 id="459-desistencia-declarada">459. Desistência declarada<a class="headerlink" href="#459-desistencia-declarada" title="Permanent link">&para;</a></h1>
+<p>Quando o participante utilizar o conceito de desistência, a Guivos deverá preservar sua linguagem sem classificá-la negativamente.</p>
+<p>A interface poderá perguntar:</p>
+<ul>
+<li>“Você deseja retirar este objetivo?”</li>
+<li>“A direção deixou de fazer sentido ou está inviável neste momento?”</li>
+<li>“Deseja manter no histórico ou reformular?”</li>
+</ul>
+<p>A resposta deverá orientar o estado funcional, não uma avaliação pessoal.</p>
+<h1 id="460-substituicao">460. Substituição<a class="headerlink" href="#460-substituicao" title="Permanent link">&para;</a></h1>
+<p>Um objetivo poderá ser substituído quando outro representar melhor a direção atual.</p>
+<p>A substituição deverá registrar:</p>
+<ul>
+<li>objetivo anterior;</li>
+<li>novo objetivo;</li>
+<li>motivo;</li>
+<li>elementos preservados;</li>
+<li>critérios transferidos;</li>
+<li>relações recompostas;</li>
+<li>data efetiva;</li>
+<li>impacto sobre capacidades consumidoras.</li>
+</ul>
+<p>O objetivo anterior deverá tornar-se histórico ou arquivado.</p>
+<h1 id="461-arquivamento">461. Arquivamento<a class="headerlink" href="#461-arquivamento" title="Permanent link">&para;</a></h1>
+<p>O arquivamento retira o objetivo da operação cotidiana.</p>
+<p>Poderá ocorrer após:</p>
+<ul>
+<li>conclusão;</li>
+<li>retirada;</li>
+<li>substituição;</li>
+<li>longo período sem uso;</li>
+<li>decisão do participante;</li>
+<li>encerramento institucional.</li>
+</ul>
+<p>O arquivamento não deverá apagar:</p>
+<ul>
+<li>autoria;</li>
+<li>versões;</li>
+<li>decisões anteriores;</li>
+<li>experiências relacionadas;</li>
+<li>evidências;</li>
+<li>conflitos resolvidos.</li>
+</ul>
+<h1 id="462-reativacao">462. Reativação<a class="headerlink" href="#462-reativacao" title="Permanent link">&para;</a></h1>
+<p>Objetivos retirados ou arquivados poderão ser reativados.</p>
+<p>A reativação deverá avaliar:</p>
+<ul>
+<li>atualidade;</li>
+<li>formulação;</li>
+<li>contexto;</li>
+<li>prioridade;</li>
+<li>critérios;</li>
+<li>permissões;</li>
+<li>relações;</li>
+<li>conflitos.</li>
+</ul>
+<p>A reativação deverá criar novo momento funcional, preservando o ciclo anterior.</p>
+<h1 id="463-impacto-de-evento-de-vida">463. Impacto de Evento de Vida<a class="headerlink" href="#463-impacto-de-evento-de-vida" title="Permanent link">&para;</a></h1>
+<p>Um Evento de Vida poderá:</p>
+<ul>
+<li>criar nova intenção;</li>
+<li>alterar prioridade;</li>
+<li>bloquear objetivo;</li>
+<li>tornar objetivo mais urgente;</li>
+<li>retirar viabilidade;</li>
+<li>mudar motivação;</li>
+<li>gerar reformulação;</li>
+<li>provocar retirada;</li>
+<li>criar conflito;</li>
+<li>exigir revisão.</li>
+</ul>
+<p>Nenhum impacto deverá ser aplicado a todos os objetivos de forma automática.</p>
+<h1 id="464-propagacao-para-capacidades-consumidoras">464. Propagação para capacidades consumidoras<a class="headerlink" href="#464-propagacao-para-capacidades-consumidoras" title="Permanent link">&para;</a></h1>
+<p>Mudanças relevantes deverão ser comunicadas às capacidades que utilizam o objetivo.</p>
+<p>Exemplos:</p>
+<table>
+<thead>
+<tr>
+<th>Mudança</th>
+<th>Efeito possível</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Objetivo ativado</td>
+<td>permitir Próximos Passos e oportunidades</td>
+</tr>
+<tr>
+<td>Prioridade elevada</td>
+<td>alterar ordenação contextual</td>
+</tr>
+<tr>
+<td>Objetivo pausado</td>
+<td>interromper novas ações</td>
+</tr>
+<tr>
+<td>Objetivo reformulado</td>
+<td>recompor recortes</td>
+</tr>
+<tr>
+<td>Objetivo concluído</td>
+<td>revisar Próximos Passos pendentes</td>
+</tr>
+<tr>
+<td>Objetivo retirado</td>
+<td>interromper usos</td>
+</tr>
+<tr>
+<td>Permissão revogada</td>
+<td>limitar consumidores</td>
+</tr>
+<tr>
+<td>Conflito identificado</td>
+<td>suspender decisões incompatíveis</td>
+</tr>
+</tbody>
+</table>
+<p>Cada capacidade consumidora deverá reavaliar suas próprias decisões.</p>
+<h1 id="465-apresentacao-ao-participante">465. Apresentação ao participante<a class="headerlink" href="#465-apresentacao-ao-participante" title="Permanent link">&para;</a></h1>
+<p>A interface de objetivos deverá permitir visualizar:</p>
+<ul>
+<li>formulação atual;</li>
+<li>expressão original;</li>
+<li>estado;</li>
+<li>prioridade;</li>
+<li>horizonte;</li>
+<li>motivação;</li>
+<li>critérios;</li>
+<li>relações;</li>
+<li>conflitos;</li>
+<li>progresso reconhecido;</li>
+<li>origem;</li>
+<li>permissões;</li>
+<li>histórico;</li>
+<li>capacidades que utilizam o objetivo.</li>
+</ul>
+<p>A interface não deverá apresentar:</p>
+<ul>
+<li>pontuação de ambição;</li>
+<li>ranking moral;</li>
+<li>comparação depreciativa;</li>
+<li>obrigação de manter todos os objetivos ativos;</li>
+<li>percentual artificial quando não houver critério válido.</li>
+</ul>
+<h1 id="466-controle-de-objetivos-sensiveis">466. Controle de objetivos sensíveis<a class="headerlink" href="#466-controle-de-objetivos-sensiveis" title="Permanent link">&para;</a></h1>
+<p>Objetivos sensíveis deverão permitir:</p>
+<ul>
+<li>ocultação visual;</li>
+<li>acesso restrito;</li>
+<li>finalidade específica;</li>
+<li>compartilhamento seletivo;</li>
+<li>revogação;</li>
+<li>retirada sem exposição;</li>
+<li>explicações minimizadas;</li>
+<li>ausência de publicidade não autorizada.</li>
+</ul>
+<p>Notificações não deverão expor conteúdo sensível em telas bloqueadas ou dispositivos compartilhados.</p>
+<h1 id="467-eventos-funcionais-do-ciclo-de-vida">467. Eventos funcionais do ciclo de vida<a class="headerlink" href="#467-eventos-funcionais-do-ciclo-de-vida" title="Permanent link">&para;</a></h1>
+<p>A capacidade poderá produzir:</p>
+<ul>
+<li><code>ManifestacaoDeDirecaoIdentificada</code>;</li>
+<li><code>ObjetivoCriado</code>;</li>
+<li><code>ObjetivoProposto</code>;</li>
+<li><code>ObjetivoConfirmado</code>;</li>
+<li><code>ObjetivoAtivado</code>;</li>
+<li><code>ObjetivoNaoConfirmado</code>;</li>
+<li><code>ObjetivoReformulado</code>;</li>
+<li><code>ObjetivoDesdobrado</code>;</li>
+<li><code>ObjetivosUnificados</code>;</li>
+<li><code>PrioridadeSugerida</code>;</li>
+<li><code>PrioridadeConfirmada</code>;</li>
+<li><code>PrioridadeAlterada</code>;</li>
+<li><code>ConflitoEntreObjetivosIdentificado</code>;</li>
+<li><code>ConflitoEntreObjetivosResolvido</code>;</li>
+<li><code>RevisaoDeObjetivoSolicitada</code>;</li>
+<li><code>ObjetivoRevisado</code>;</li>
+<li><code>ObjetivoEnvelhecido</code>;</li>
+<li><code>ObjetivoPausado</code>;</li>
+<li><code>ObjetivoRetomado</code>;</li>
+<li><code>ObjetivoBloqueado</code>;</li>
+<li><code>ObjetivoDesbloqueado</code>;</li>
+<li><code>MarcoDeObjetivoAlcancado</code>;</li>
+<li><code>ObjetivoConcluido</code>;</li>
+<li><code>ObjetivoRetirado</code>;</li>
+<li><code>ObjetivoSubstituido</code>;</li>
+<li><code>ObjetivoArquivado</code>;</li>
+<li><code>ObjetivoReativado</code>;</li>
+<li><code>ObjetivoImpactadoPorEventoDeVida</code>;</li>
+<li><code>RecorteDeObjetivosRecomposto</code>.</li>
+</ul>
+<p>Os contratos detalhados desses eventos serão especificados posteriormente.</p>
+<h1 id="468-criterios-funcionais-de-aceite">468. Critérios funcionais de aceite<a class="headerlink" href="#468-criterios-funcionais-de-aceite" title="Permanent link">&para;</a></h1>
+<p>Este bloco será considerado adequado quando permitir:</p>
+<ol>
+<li>criar objetivos sem exigir precisão artificial;</li>
+<li>preservar origem e autoria;</li>
+<li>impedir ativação por inferência;</li>
+<li>confirmar formulação e finalidade;</li>
+<li>separar confirmação de ativação;</li>
+<li>detectar duplicidade sem unificação automática;</li>
+<li>diferenciar correção, mudança e reformulação;</li>
+<li>desdobrar e unificar objetivos com histórico;</li>
+<li>tratar prioridade separadamente do estado;</li>
+<li>distinguir urgência e importância;</li>
+<li>manter múltiplos objetivos;</li>
+<li>registrar e resolver conflitos;</li>
+<li>revisar somente elementos afetados;</li>
+<li>envelhecer sem declarar falsidade;</li>
+<li>pausar, bloquear, retomar e desbloquear;</li>
+<li>reconhecer conclusão parcial e contínua;</li>
+<li>retirar sem julgamento;</li>
+<li>substituir, arquivar e reativar;</li>
+<li>propagar mudanças de forma controlada;</li>
+<li>proteger objetivos sensíveis.</li>
+</ol>
+<h1 id="469-regras-fundamentais-do-ciclo-de-vida">469. Regras fundamentais do ciclo de vida<a class="headerlink" href="#469-regras-fundamentais-do-ciclo-de-vida" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Objetivos pertencem ao participante.</li>
+<li>Manifestação não significa confirmação.</li>
+<li>Confirmação não significa ativação universal.</li>
+<li>Inferência não cria objetivo ativo.</li>
+<li>Prioridade é contextual e revisável.</li>
+<li>Urgência não equivale a importância.</li>
+<li>Múltiplos objetivos podem coexistir.</li>
+<li>Conflito não invalida automaticamente um objetivo.</li>
+<li>Ausência de atividade não significa desistência.</li>
+<li>Envelhecimento não significa falsidade.</li>
+<li>Pausa não significa fracasso.</li>
+<li>Bloqueio não significa incapacidade pessoal.</li>
+<li>Reformulação preserva continuidade.</li>
+<li>Conclusão depende da natureza do objetivo.</li>
+<li>Retirada não exige justificativa.</li>
+<li>Histórico não deverá ser reescrito.</li>
+<li>Permissões limitam utilização e compartilhamento.</li>
+<li>Alterações relevantes deverão ser explicáveis.</li>
+<li>Capacidades consumidoras deverão receber somente recortes autorizados.</li>
+<li>Nenhuma regra poderá retirar do participante o controle sobre sua direção.</li>
+</ol>
+<p>Com isso, ficam definidas as <strong>regras de criação, confirmação, priorização, revisão, conflitos, envelhecimento e ciclo de vida dos objetivos</strong>.</p>
+<p>O próximo bloco da Capacidade 03 deverá detalhar:</p>
+<blockquote>
+<p><strong>a estrutura funcional dos critérios de sucesso, progresso, marcos, evidências e conclusão dos objetivos.</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
