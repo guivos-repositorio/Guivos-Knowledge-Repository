@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.3.0
+version: 1.3.1
 owner: Guivos
 last_updated: 2026-07-13
 ---
@@ -46,7 +46,10 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Intenção | Manter | Vontade ainda não suficientemente assumida ou estruturada |
 | Sonho | Manter | Aspiração significativa que pode permanecer sem compromisso operacional |
 | Possibilidade | Manter | Alternativa considerada sem compromisso suficiente |
-| Prioridade | Refinar | Importância relativa e contextual de um objetivo; não é objetivo independente |
+| Confirmação de objetivo | Refinar | Reconhecimento da formulação; não equivale a ativação universal, prioridade ou compartilhamento irrestrito |
+| Ativação de objetivo | Refinar | Autorização operacional por finalidade; não exige prazo, plano completo ou viabilidade integral |
+| Prioridade | Refinar | Importância relativa e contextual; não equivale a urgência, estado ou valor humano |
+| Envelhecimento de objetivo | Manter | Redução de segurança sobre atualidade; não significa falsidade ou retirada |
 | Próximo Passo | Manter | Decisão ou hipótese; não é Oportunidade |
 | Oportunidade | Manter | Meio disponível para apoiar objetivo ou Próximo Passo |
 | Experiência | Manter | Vivência efetiva da oportunidade |
@@ -93,8 +96,12 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade e substitui o estado das seções 44 e 45 do PAS-001 0.5.0 |
 | Objetivos | Manter | Capacidade 03 ativa; governa significado, estrutura, prioridade, relações e ciclo de vida dos objetivos |
 | Fundamentos Iniciais da Capacidade de Objetivos | Manter | PAS-001-OBJ-FOUNDATION-001 1.0.0 define conceitos, responsabilidades, limites, entradas, estados, integrações, saídas e eventos iniciais |
+| Ciclo de Vida dos Objetivos | Manter | PAS-001-OBJ-LIFECYCLE-001 1.0.0 define criação, confirmação, ativação, prioridade, conflitos, revisão, envelhecimento, conclusão, retirada e reativação |
 | Objetivo do Participante | Manter | Exige autoria ou aceitação consciente e não pode ser ativado apenas por inferência ou interesse externo |
+| Objetivo Institucional | Refinar | Deve permanecer distinto do objetivo pessoal, com titularidade, finalidade, critérios e permissões próprios |
 | Desejo Externo | Refinar | Permanece recomendação ou expectativa externa até aceitação consciente do participante |
+| Pausa de Objetivo | Manter | Interrompe uso operacional temporariamente sem representar desistência ou fracasso |
+| Bloqueio de Objetivo | Manter | Representa impedimento atual, não incapacidade pessoal |
 | Progresso de Objetivo | Refinar | Não equivale a simples atividade, clique, inscrição, compra ou consumo de conteúdo |
 | Interpretação do Contexto | Manter | Responsabilidade funcional apoiada pela Intelligence Layer |
 | Evento de Vida | Manter | Mudança relevante capaz de alterar uma ou mais dimensões ou objetivos |
@@ -115,8 +122,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-A Capacidade 02 permanece concluída e a `PAS-001-OBJ-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
+A Capacidade 02 permanece concluída. As extensões `PAS-001-OBJ-FOUNDATION-001 1.0.0` e `PAS-001-OBJ-LIFECYCLE-001 1.0.0` avançam normativamente a Capacidade 03 sem reabrir a Foundation ou promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Detalhar as regras de criação, confirmação, priorização, revisão, conflitos, envelhecimento e ciclo de vida da **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
+Detalhar critérios de sucesso, progresso, marcos, evidências e conclusão da **Capacidade 03 — Objetivos**, preservando Pessoa, Organização e Coletivo como categorias oficiais de Participante.
