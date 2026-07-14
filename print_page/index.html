@@ -14854,26 +14854,36 @@ Implementação = realização progressiva
 <p>As seis extensões normativas <code>FOUNDATION</code>, <code>LIFECYCLE</code>, <code>VIEW</code>, <code>EVENT</code>, <code>INTEGRATION</code> e <code>CONTRACT</code>, todas em <code>1.0.0</code>, concluíram fundamentos, ciclo de vida, visualização, eventos funcionais, integrações, 68 KPIs, 20 guardrails, cenários e contrato final.</p>
 <p>A Capacidade 05 está <strong>Functionally complete</strong>, com progresso editorial de referência de <code>100%</code>.</p>
 <h3 id="product-architecture-capacidade-06-oportunidades-ativas">Capacidade 06 — Oportunidades Ativas<a class="headerlink" href="#product-architecture-capacidade-06-oportunidades-ativas" title="Permanent link">&para;</a></h3>
-<p><code>PAS-001-OA-FOUNDATION-001 1.0.0</code> é a primeira extensão normativa da Capacidade 06 e substitui <code>Planned / concept consolidated</code> por <code>In progress</code>.</p>
-<p>A extensão consolida:</p>
+<p>As extensões normativas vigentes são:</p>
 <ul>
-<li>pergunta central, objetivo funcional, valor entregue e singularidade;</li>
-<li>Oportunidade Ativa como meio suficientemente disponível, legítimo, contextual e potencialmente compatível;</li>
-<li>distinção entre oportunidade candidata, Oportunidade Ativa, oferta, anúncio, recomendação, Próximo Passo, experiência e transação;</li>
-<li>titularidade, papéis, origens e autoridade das fontes;</li>
-<li>tipos, classificações, elegibilidade e disponibilidade;</li>
-<li>temporalidade, localização, modalidade, custos e condições econômicas;</li>
-<li>patrocínio, comissão, afiliação e demais relações comerciais;</li>
-<li>risco, segurança, sensibilidade e escassez;</li>
-<li>relevância contextual, fatores legítimos e fatores proibidos;</li>
-<li>limiar de ativação, estados funcionais, estado da informação e relação individual do participante;</li>
-<li>ausência legítima de oportunidades compatíveis;</li>
-<li>entradas, admissão, estrutura do registro, saídas e eventos iniciais;</li>
-<li>relações com as capacidades do Journey, Guivos Intelligence, Platform Layer e produtos especializados;</li>
-<li>neutralidade comercial, controle do participante, responsabilidades e limites.</li>
+<li><code>PAS-001-OA-FOUNDATION-001 1.0.0</code> — pergunta central, objetivo, singularidade, definição, distinções, titularidade, autoridade, tipos, elegibilidade, disponibilidade, relevância, custos, riscos, relações comerciais, entradas, saídas e controle;</li>
+<li><code>PAS-001-OA-LIFECYCLE-001 1.0.0</code> — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura.</li>
 </ul>
-<p>A Capacidade 06 está <strong>In progress</strong>, com progresso editorial de referência de <code>20%</code>.</p>
-<p>O próximo bloco deverá consolidar o ciclo de vida das Oportunidades Ativas.</p>
+<p>O ciclo de vida consolida:</p>
+<ul>
+<li>estado funcional da oportunidade separado do estado da informação;</li>
+<li>disponibilidade, elegibilidade e relevância com ciclos próprios;</li>
+<li>relação individual do participante e situação transacional externa como dimensões independentes;</li>
+<li>transições válidas e proibidas;</li>
+<li>identificação por sinais e fontes sem ativação automática;</li>
+<li>candidatura, rejeição preliminar, avaliação, validação da fonte e limite de autoridade;</li>
+<li>disponibilidade atual, futura, limitada, sob consulta e lista de espera;</li>
+<li>elegibilidade sensível, condicionada e não confirmada;</li>
+<li>relevância contextual, condicionada e sujeita a revisão;</li>
+<li>risco, sensibilidade e verificação de relações comerciais;</li>
+<li>ativação simples e condicionada sem equivaler a apresentação ou recomendação;</li>
+<li>manutenção, atualização, pausa, retomada e indisponibilidade;</li>
+<li>expiração, encerramento e cancelamento como estados distintos;</li>
+<li>contestação, correção compensatória, arquivamento e reabertura;</li>
+<li>duplicidade, unificação, substituição, alternativas e comparação explicável;</li>
+<li>ordem neutra de apresentação;</li>
+<li>visualização, salvamento, interesse, descarte, ocultação, inscrição, aceitação, contratação e participação como estados distintos;</li>
+<li>efeitos controlados sobre Próximos Passos, Intervenções Contextuais, Objetivos e Eventos de Vida;</li>
+<li>oportunidades recorrentes, coletivas, institucionais e patrocinadas;</li>
+<li>revogação de contexto, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.</li>
+</ul>
+<p>A Capacidade 06 está <strong>In progress</strong>, com progresso editorial de referência de <code>40%</code>.</p>
+<p>O próximo bloco deverá consolidar a visualização e o controle das Oportunidades Ativas.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -15106,6 +15116,46 @@ Implementação = realização progressiva
 <li>Estado da oportunidade e relação individual do participante devem permanecer separados.</li>
 <li>Revogação do uso de contexto interrompe novos usos e preserva fatos históricos legítimos.</li>
 <li>O participante permanece no controle da pesquisa, visualização, comparação, ocultação, contestação, interesse e decisão.</li>
+<li>Identificação de oportunidade não representa candidatura.</li>
+<li>Candidatura não representa ativação.</li>
+<li>Avaliação não representa recomendação.</li>
+<li>Ativação não representa apresentação.</li>
+<li>Apresentação não representa visualização.</li>
+<li>Salvamento não representa prioridade.</li>
+<li>Interesse não representa compromisso.</li>
+<li>Inscrição iniciada não representa inscrição enviada.</li>
+<li>Inscrição enviada não representa aceitação.</li>
+<li>Aceitação não representa contratação.</li>
+<li>Contratação não representa participação.</li>
+<li>Participação não representa resultado ou evolução.</li>
+<li>Estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual permanecem independentes.</li>
+<li>Situação transacional externa não redefine a jornada.</li>
+<li>Fonte somente confirma fatos dentro de sua autoridade.</li>
+<li>Disponibilidade não pode ser presumida por publicação, catálogo, preço ou página ativa.</li>
+<li>Elegibilidade sensível exige necessidade, autorização, proteção e contestação.</li>
+<li>Relevância condicionada deve expor sua condição.</li>
+<li>Risco elevado exige transparência, autoridade adequada e efeitos automáticos limitados.</li>
+<li>Alteração comercial não altera relevância por si mesma.</li>
+<li>Oportunidade ativa pode permanecer não apresentada.</li>
+<li>Intervenções Contextuais decide o momento e a forma da apresentação.</li>
+<li>Informação desatualizada reduz confiança e automação.</li>
+<li>Atualização material deve ser apresentada quando afetar preço, elegibilidade, disponibilidade, risco ou compromisso iniciado.</li>
+<li>Pausa suspende novas apresentações e preserva histórico.</li>
+<li>Indisponibilidade não representa encerramento.</li>
+<li>Oportunidade indisponível não pode ser apresentada como disponível.</li>
+<li>Expiração preserva relações e fatos históricos.</li>
+<li>Cancelamento, encerramento, expiração, indisponibilidade e pausa possuem significados distintos.</li>
+<li>Contestação material limita apresentação e automações.</li>
+<li>Correção deve ser compensatória e não reescrever histórico.</li>
+<li>Reabertura exige nova avaliação e nova versão funcional.</li>
+<li>Oportunidades materialmente diferentes não devem ser unificadas.</li>
+<li>Comparações devem manter critérios visíveis e não reduzir complexidade sem fundamento.</li>
+<li>Comissão, patrocínio, valor transacional, clique e tempo de tela não ordenam oportunidades funcionalmente.</li>
+<li>Revogação de contexto interrompe novas avaliações e recortes personalizados.</li>
+<li>Revogação somente se conclui após propagação efetiva.</li>
+<li>Reprocessamento não duplica oportunidade, ativação, apresentação, interesse, inscrição ou vínculo.</li>
+<li>Eventos fora de ordem e conflitos concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa.</li>
+<li>Falha parcial não representa sucesso integral e o participante permanece no controle do ciclo.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
@@ -15116,6 +15166,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-eventos-de-vida-kpis-cenarios-contrato-final">PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-proximos-passos-kpis-cenarios-contrato-final">PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos</a></li>
 <li><a href="#product-architecture-pas-001-oportunidades-ativas-fundamentos-iniciais">PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas</a></li>
+<li><a href="#product-architecture-pas-001-oportunidades-ativas-ciclo-de-vida">PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
