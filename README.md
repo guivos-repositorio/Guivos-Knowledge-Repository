@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida
-- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 60%
-- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001, PAS-001-PP-LIFECYCLE-001 e PAS-001-PP-VIEW-001, todas em 1.0.0
+- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 80%
+- **Extensões de Próximos Passos:** PAS-001-PP-FOUNDATION-001, PAS-001-PP-LIFECYCLE-001, PAS-001-PP-VIEW-001 e PAS-001-PP-EVENT-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -51,41 +51,41 @@ A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de 
 
 `PAS-001-PP-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida completo, preservando proposta, confirmação, prontidão, ativação, prioridade, execução, resultado e conclusão como dimensões distintas.
 
-`PAS-001-PP-VIEW-001 1.0.0` consolida:
+`PAS-001-PP-VIEW-001 1.0.0` consolidou a superfície `Meus Próximos Passos`, o portfólio, os cartões, os controles, a privacidade, a acessibilidade, o histórico e a neutralidade comercial.
 
-- a superfície funcional `Meus Próximos Passos`;
-- visão geral, resumo linguístico e ausência legítima de movimentos;
-- portfólio ativo, propostas, possibilidades futuras e alternativas;
-- cartões minimizados e detalhamento progressivo;
-- prioridade, prontidão, agenda e temporalidade sem cobrança;
-- dependências, bloqueios e mapas acessíveis;
-- execução, subpassos, tarefas opcionais e resultados imediatos;
-- conclusão, cancelamento, substituição, expiração e reabertura;
-- recorrência sem gamificação coercitiva;
-- passos compartilhados, delegação e responsabilidades individualizadas;
-- compartilhamentos, revogação e privacidade visual;
-- fila de atenção, prevenção de fadiga e notificações discretas;
-- explicabilidade, histórico, consistência entre canais e falha segura;
-- acessibilidade técnica e cognitiva;
-- neutralidade comercial e controle amplo do participante.
+`PAS-001-PP-EVENT-001 1.0.0` consolida:
 
-A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **60%**.
+- distinção entre comando, proposta e evento funcional reconhecido;
+- imutabilidade histórica e correção compensatória;
+- estrutura comum dos contratos, identidade do agregado e categoria do participante;
+- ator, papel, autoridade, finalidade, sensibilidade e permissões;
+- temporalidade, retroatividade, correlação, causalidade e versionamento;
+- identificação, proposição, declaração e confirmação;
+- ativação, prontidão, preparação, prioridade e sequenciamento;
+- dependências, bloqueios, pausa, retomada e agenda;
+- início, execução, resultados e conclusão;
+- cancelamento, substituição, expiração, contestação, correção e reabertura;
+- recorrência, ocorrências, delegação e responsabilidades;
+- compartilhamento, revogação, propagação e recortes mínimos;
+- idempotência, duplicidade semântica, ordenação e concorrência;
+- retenção, logs, auditoria, falha segura e recuperação;
+- responsabilidades dos produtores e consumidores.
+
+A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **80%**.
 
 ## Ponto exato de retomada
 
-Retomar nos contratos dos eventos funcionais da Capacidade de Próximos Passos.
+Retomar nas integrações funcionais da Capacidade de Próximos Passos.
 
 Próxima entrega:
 
-- distinção entre comandos, propostas e fatos reconhecidos;
-- estrutura comum, identidade, autoridade e temporalidade;
-- criação, confirmação, ativação e prontidão;
-- prioridade, dependências e bloqueios;
-- execução, resultados e conclusão;
-- cancelamento, substituição e expiração;
-- contestação, correção e recorrência;
-- compartilhamento, propagação e revogação;
-- idempotência, ordenação, versionamento, auditoria e falha segura.
+- Captura de Contexto, Contexto Vivo, Objetivos e Eventos de Vida;
+- Oportunidades Ativas e Intervenções Contextuais;
+- Experiências e Evolução Contínua;
+- Guivos Intelligence e Platform Layer;
+- produtos especializados e organizações;
+- serviços profissionais e fontes externas;
+- finalidade, minimização, autoridade, revogação e falha segura.
 
 ## Product Engineering
 
@@ -101,7 +101,7 @@ A Capacidade 05 está `In progress` e deverá avançar por extensões normativas
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | In progress — 60% |
+| 05 — Próximos Passos | In progress — 80% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -117,6 +117,7 @@ A Capacidade 05 está `In progress` e deverá avançar por extensões normativas
 - [Fundamentos Iniciais da Capacidade de Próximos Passos](docs/product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md)
 - [Regras do Ciclo de Vida dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-ciclo-de-vida.md)
 - [Visualização e Controle dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-visualizacao-controle.md)
+- [Eventos Funcionais dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-eventos-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
