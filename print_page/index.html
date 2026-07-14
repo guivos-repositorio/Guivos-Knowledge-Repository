@@ -14399,10 +14399,11 @@ Implementação = realização progressiva
 <li><code>PAS-001-EV-FOUNDATION-001</code> — pergunta central, objetivo funcional, valor, singularidade, definição de Evento de Vida, distinções conceituais, tipos, titularidade, origem, autoridade, temporalidade, estados, impacto, responsabilidades, limites, entradas, integrações iniciais, sensibilidade, explicabilidade e controle do participante;</li>
 <li><code>PAS-001-EV-LIFECYCLE-001</code> — identificação, sinalização, proposição, declaração, confirmação, estados, transições, temporalidade, relevância, impactos, relações, eventos compostos, correção, contestação, encerramento, arquivamento, reabertura, propagação, idempotência e falha segura;</li>
 <li><code>PAS-001-EV-VIEW-001</code> — visão geral, linha do tempo, cartões, detalhamento, impactos, revisões, eventos planejados, conteúdo sensível, histórico, acessibilidade e ações do participante;</li>
-<li><code>PAS-001-EV-EVENT-001</code> — comandos, propostas e fatos reconhecidos, estrutura comum, temporalidades, autoridade, famílias e contratos de eventos, impactos, relações, correções, contestações, permissões, propagação, idempotência, ordenação, versionamento, auditoria e falha segura.</li>
+<li><code>PAS-001-EV-EVENT-001</code> — comandos, propostas e fatos reconhecidos, estrutura comum, temporalidades, autoridade, famílias e contratos de eventos, impactos, relações, correções, contestações, permissões, propagação, idempotência, ordenação, versionamento, auditoria e falha segura;</li>
+<li><code>PAS-001-EV-INTEGRATION-001</code> — contrato comum das integrações, identidade, associação, autoridade, proveniência, qualidade, transformações, temporalidade, sincronização, divergências, integrações entre capacidades, produtos, serviços especializados e fontes externas, pausa, revogação, degradação controlada, neutralidade comercial e controle do participante.</li>
 </ul>
-<p>A primeira extensão substitui normativamente o estado <code>Planned / concept consolidated</code> da linha da Capacidade 04 na seção 7 do <code>PAS-001 0.5.0</code>. A capacidade permanece <code>In progress</code>, com progresso editorial de referência de <code>80%</code>.</p>
-<p>O próximo bloco deverá detalhar as integrações funcionais da Capacidade de Eventos de Vida com as demais capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados e fontes externas.</p>
+<p>A primeira extensão substitui normativamente o estado <code>Planned / concept consolidated</code> da linha da Capacidade 04 na seção 7 do <code>PAS-001 0.5.0</code>. A capacidade permanece <code>In progress</code>, com progresso editorial de referência de <code>90%</code>.</p>
+<p>O próximo bloco deverá consolidar KPIs, guardrails, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Eventos de Vida.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -14459,6 +14460,17 @@ Implementação = realização progressiva
 <li>Ordenação, versão esperada, concorrência e idempotência devem impedir estados impossíveis, sobrescrita silenciosa e efeitos duplicados.</li>
 <li>Revogação somente poderá ser apresentada como concluída após propagação efetiva aos consumidores necessários.</li>
 <li>Métricas dos contratos devem avaliar o sistema, não o participante.</li>
+<li>Integrações de Eventos de Vida devem possuir finalidade explícita, dados minimizados, identidade validada e autoridade limitada.</li>
+<li>Disponibilidade técnica de dados não autoriza uso, compartilhamento ou confirmação funcional.</li>
+<li>Transformações de entradas integradas devem ser rastreáveis e não podem fabricar precisão, causalidade, significado emocional ou diagnóstico.</li>
+<li>Cada capacidade consumidora deve receber solicitações e recortes, não decisões impostas pela Capacidade de Eventos de Vida.</li>
+<li>Guivos Business somente confirma fatos institucionais e não recebe a jornada pessoal integral do participante.</li>
+<li>Compra, reserva, calendário, localização ou atividade não confirmam automaticamente mudança humana.</li>
+<li>Guivos Ads não pode utilizar Eventos de Vida sensíveis para segmentação publicitária.</li>
+<li>Pausa interrompe nova coleta e revogação interrompe novos usos, sem apagar automaticamente fatos históricos legítimos.</li>
+<li>Ausência ou indisponibilidade de dado não equivale a ausência de Evento de Vida.</li>
+<li>Falhas de integração devem preservar o último estado válido, reduzir confiança e limitar automação.</li>
+<li>O participante deve compreender fontes, transformações, recortes, consumidores, pendências, pausa e revogação.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
@@ -14470,6 +14482,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-eventos-de-vida-ciclo-de-vida">PAS-001-EV-LIFECYCLE-001 — Regras do Ciclo de Vida dos Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-eventos-de-vida-visualizacao-controle">PAS-001-EV-VIEW-001 — Visualização e Controle dos Eventos de Vida</a></li>
 <li><a href="#product-architecture-pas-001-eventos-de-vida-eventos-funcionais">PAS-001-EV-EVENT-001 — Contratos dos Eventos Funcionais de Eventos de Vida</a></li>
+<li><a href="#product-architecture-pas-001-eventos-de-vida-integracoes-funcionais">PAS-001-EV-INTEGRATION-001 — Integrações Funcionais da Capacidade de Eventos de Vida</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
