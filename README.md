@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos e 04 — Eventos de Vida
-- **Próxima capacidade:** 05 — Próximos Passos
-- **Contrato final de Eventos de Vida:** PAS-001-EV-CONTRACT-001 1.0.0
+- **Capacidade ativa:** 05 — Próximos Passos, `In progress`, 20%
+- **Fundamentos de Próximos Passos:** PAS-001-PP-FOUNDATION-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -65,27 +65,43 @@ O `PAS-001-EV-CONTRACT-001 1.0.0` substitui normativamente o estado `In progress
 
 A Capacidade 04 está **funcionalmente concluída**, com progresso editorial de referência de **100%**.
 
+## Capacidade 05 — Próximos Passos
+
+O `PAS-001-PP-FOUNDATION-001 1.0.0` consolida a primeira extensão normativa da capacidade e substitui o estado `Planned` da linha da Capacidade 05 no `PAS-001 0.5.0` por `In progress`.
+
+Os fundamentos definem:
+
+- Próximo Passo como decisão ou hipótese de movimento delimitada e contextual;
+- distinções em relação a objetivo, tarefa, ação, plano, oportunidade, intervenção, recomendação e compromisso;
+- titularidade, papéis funcionais, origem e autoridade;
+- tipos, classificações e estados iniciais;
+- prioridade operacional, temporalidade, dependências, bloqueios, esforço, risco e sensibilidade;
+- relações com Contexto Vivo, Objetivos, Eventos de Vida e demais capacidades;
+- limites da Guivos Intelligence e da Platform Layer;
+- controle do participante e ausência legítima de Próximo Passo.
+
+A Capacidade 05 está **em desenvolvimento**, com progresso editorial de referência de **20%**.
+
 ## Ponto exato de retomada
 
-Retomar na `Capacidade 05 — Próximos Passos`.
+Retomar no ciclo de vida dos Próximos Passos.
 
 Próxima entrega:
 
-- pergunta central, objetivo funcional e valor entregue;
-- singularidade e princípios;
-- definição de Próximo Passo;
-- distinções entre Próximo Passo, tarefa, objetivo, oportunidade, intervenção, compromisso e recomendação;
-- titularidade, responsabilidade, tipos, origem e autoridade;
-- estados iniciais, prioridade operacional, temporalidade e dependências;
-- relações com Contexto Vivo, Objetivos e Eventos de Vida;
-- limites da Guivos Intelligence;
-- controle do participante.
+- criação e proposição;
+- confirmação, prontidão e ativação;
+- prioridade e sequenciamento;
+- dependências e bloqueios;
+- pausa, execução e conclusão;
+- cancelamento, substituição e expiração;
+- contestação e correção;
+- recorrência, compartilhamento e propagação.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 05 permanece documentalmente `Planned` até a criação de sua primeira extensão normativa.
+A Capacidade 05 está `In progress` e deverá avançar por extensões normativas modulares até seu contrato final.
 
 ## Capacidades do Journey
 
@@ -95,7 +111,7 @@ A Capacidade 05 permanece documentalmente `Planned` até a criação de sua prim
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
-| 05 — Próximos Passos | Planned — próxima frente |
+| 05 — Próximos Passos | In progress — 20% |
 | 06 — Oportunidades Ativas | Planned / concept consolidated |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
@@ -113,6 +129,7 @@ A Capacidade 05 permanece documentalmente `Planned` até a criação de sua prim
 - [Contratos dos Eventos Funcionais de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md)
 - [Integrações Funcionais da Capacidade de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md)
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
+- [Fundamentos Iniciais da Capacidade de Próximos Passos](docs/product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
