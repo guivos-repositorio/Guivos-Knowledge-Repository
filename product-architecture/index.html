@@ -2498,7 +2498,8 @@
 <ul>
 <li><code>PAS-001-PP-FOUNDATION-001</code> — pergunta central, objetivo, valor, singularidade, conceito, acionabilidade, distinções, titularidade, papéis, tipos, estados iniciais, prioridade, temporalidade, dependências, limites, entradas, relações e controle;</li>
 <li><code>PAS-001-PP-LIFECYCLE-001</code> — possibilidade, formulação, proposta, confirmação, prontidão, ativação, prioridade, sequenciamento, dependências, bloqueios, pausa, agendamento, execução, resultados, conclusão, cancelamento, substituição, expiração, contestação, correção, recorrência, delegação, compartilhamento, propagação, idempotência e falha segura;</li>
-<li><code>PAS-001-PP-VIEW-001</code> — superfície <code>Meus Próximos Passos</code>, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles.</li>
+<li><code>PAS-001-PP-VIEW-001</code> — superfície <code>Meus Próximos Passos</code>, visão geral, portfólio, cartões, propostas, alternativas, prioridade, prontidão, agenda, dependências, bloqueios, execução, resultados, recorrência, compartilhamento, privacidade, acessibilidade, histórico, explicabilidade e controles;</li>
+<li><code>PAS-001-PP-EVENT-001</code> — comandos, propostas, fatos reconhecidos, estrutura comum, titularidade, autoridade, temporalidade, contratos de eventos, idempotência, ordenação, versionamento, auditoria e falha segura.</li>
 </ul>
 <p><code>PAS-001-PP-FOUNDATION-001 1.0.0</code> substitui normativamente o estado <code>Planned</code> da linha da capacidade no <code>PAS-001 0.5.0</code> por <code>In progress</code>.</p>
 <p><code>PAS-001-PP-LIFECYCLE-001 1.0.0</code> consolida o ciclo completo, mantendo separadas as dimensões de possibilidade, proposta, confirmação, ativação, prontidão, prioridade, agendamento, execução, resultado, progresso e conclusão.</p>
@@ -2522,8 +2523,23 @@
 <li>consistência entre canais, falha segura e histórico compreensível;</li>
 <li>neutralidade comercial e proibição de exploração de vulnerabilidade.</li>
 </ul>
-<p>A Capacidade 05 está <strong>In progress</strong>, com progresso editorial de referência de <code>60%</code>.</p>
-<p>O próximo bloco deverá consolidar os contratos dos eventos funcionais dos Próximos Passos.</p>
+<p><code>PAS-001-PP-EVENT-001 1.0.0</code> consolida:</p>
+<ul>
+<li>distinção normativa entre comando, proposta e evento reconhecido;</li>
+<li>imutabilidade histórica e correção compensatória;</li>
+<li>estrutura comum com agregado, titular, ator, autoridade, finalidade, sensibilidade e permissões;</li>
+<li>tempos da intenção, proposição, decisão, ativação, execução, resultado, conclusão, conhecimento, processamento e aplicação;</li>
+<li>correlação, causalidade funcional, versionamento e versão esperada;</li>
+<li>contratos de identificação, proposição, declaração, confirmação, ativação, prontidão, preparação e prioridade;</li>
+<li>contratos de dependências, bloqueios, pausa, retomada, agenda, início, execução, resultado e conclusão;</li>
+<li>contratos de cancelamento, substituição, expiração, contestação, correção, reabertura e arquivamento;</li>
+<li>recorrência, ocorrências, delegação, compartilhamento, revogação e propagação;</li>
+<li>recortes mínimos, reavaliações dependentes e independência das capacidades consumidoras;</li>
+<li>idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e falha segura;</li>
+<li>retenção, minimização de logs, recuperação, explicabilidade e auditoria.</li>
+</ul>
+<p>A Capacidade 05 está <strong>In progress</strong>, com progresso editorial de referência de <code>80%</code>.</p>
+<p>O próximo bloco deverá consolidar as integrações funcionais dos Próximos Passos.</p>
 <h2 id="regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#regras-arquiteturais" title="Permanent link">¶</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -2656,6 +2672,22 @@
 <li>Falha ou sincronização pendente não pode ser apresentada como sucesso integral.</li>
 <li>Oportunidades e conteúdo comercial devem permanecer separados da prioridade funcional.</li>
 <li>A visão deve apoiar ação no mundo real e manter o participante no controle.</li>
+<li>Comandos de Próximos Passos não representam fatos reconhecidos.</li>
+<li>Propostas de Próximos Passos não representam decisões assumidas.</li>
+<li>Eventos de Próximos Passos somente podem ser publicados após persistência funcional suficiente.</li>
+<li>Eventos históricos de Próximos Passos são imutáveis e correções devem ser compensatórias.</li>
+<li>Titular, ator, papel e autoridade devem permanecer explícitos e distintos.</li>
+<li>Tempos da intenção, decisão, execução, resultado, conhecimento e processamento devem permanecer separados.</li>
+<li>A mesma solicitação não pode duplicar estado, prioridade, responsabilidade, notificação ou compartilhamento.</li>
+<li>Eventos fora de ordem e conflitos de versão devem ser reconciliados sem sobrescrita silenciosa.</li>
+<li>Revogação de compartilhamento somente é concluída após propagação efetiva.</li>
+<li>Consumidores recebem recortes e solicitações, não decisões impostas.</li>
+<li>Eventos de leitura e interação não alteram confirmação, execução ou conclusão.</li>
+<li>Falha parcial não equivale a operação funcionalmente concluída.</li>
+<li>Logs devem minimizar conteúdo sensível e manter auditoria suficiente.</li>
+<li>Platform Layer sustenta armazenamento, publicação, filas e reconstrução sem redefinir semântica.</li>
+<li>As métricas dos contratos avaliam o sistema, não o participante.</li>
+<li>O participante permanece no controle dos eventos funcionais da capacidade.</li>
 </ol>
 <h2 id="documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#documentos-do-dominio" title="Permanent link">¶</a></h2>
 <ul>
@@ -2667,6 +2699,7 @@
 <li><a href="pas-001-proximos-passos-fundamentos-iniciais/">PAS-001-PP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Próximos Passos</a></li>
 <li><a href="pas-001-proximos-passos-ciclo-de-vida/">PAS-001-PP-LIFECYCLE-001 — Regras do Ciclo de Vida dos Próximos Passos</a></li>
 <li><a href="pas-001-proximos-passos-visualizacao-controle/">PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos</a></li>
+<li><a href="pas-001-proximos-passos-eventos-funcionais/">PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos</a></li>
 <li><a href="journey/">Guivos Journey</a></li>
 <li><a href="mall/">Guivos Mall</a></li>
 <li><a href="travel/">Guivos Travel</a></li>
