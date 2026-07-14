@@ -14058,7 +14058,8 @@ Implementação = realização progressiva
 <li><code>PAS-001-OBJ-LIFECYCLE-001</code> — unidade funcional, origens, criação, confirmação, ativação, duplicidade, reformulação, prioridade, portfólio, conflitos, revisão, envelhecimento, pausa, bloqueio, conclusão, retirada, substituição, arquivamento, reativação e propagação;</li>
 <li><code>PAS-001-OBJ-PROGRESS-001</code> — critérios de sucesso, linhas de base, progresso, marcos, evidências, resultados parciais, conclusão, contestação, reabertura e efeitos funcionais;</li>
 <li><code>PAS-001-OBJ-VIEW-001</code> — visão <code>Meus Objetivos</code>, portfólio, detalhamento, controles, explicações, revisões, alertas, privacidade visual, proteção de objetivos sensíveis, consistência entre canais e histórico compreensível;</li>
-<li><code>PAS-001-OBJ-EVENT-001</code> — comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, contratos das famílias de eventos, propagação, correção, auditoria e falha segura.</li>
+<li><code>PAS-001-OBJ-EVENT-001</code> — comandos, propostas, eventos reconhecidos, autoridade, temporalidade, causalidade, correlação, idempotência, contratos das famílias de eventos, propagação, correção, auditoria e falha segura;</li>
+<li><code>PAS-001-OBJ-INTEGRATION-001</code> — integrações com capacidades do Journey, Guivos Intelligence, Platform Layer, serviços especializados, organizações, profissionais e fontes externas, com finalidade, minimização, revogação, explicabilidade e degradação segura.</li>
 </ul>
 <p>A primeira extensão substitui normativamente o estado <code>Planned</code> da linha da Capacidade 03 na seção 7 do <code>PAS-001 0.5.0</code>. A capacidade permanece <code>In progress</code>.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
@@ -14084,6 +14085,12 @@ Implementação = realização progressiva
 <li>Eventos reconhecidos devem preservar origem, autoridade, temporalidade, causalidade, correlação, versão e idempotência.</li>
 <li>O reprocessamento não pode duplicar efeitos e falhas devem reduzir automação em vez de ampliar suposições.</li>
 <li>Capacidades consumidoras devem receber somente recortes autorizados e reavaliar suas próprias decisões.</li>
+<li>Integrações não transferem titularidade nem ampliam autoridade funcional.</li>
+<li>Finalidade explícita e minimização devem preceder todo compartilhamento de objetivos.</li>
+<li>Contexto Vivo, Objetivos, Próximos Passos, Oportunidades, Experiências e Evolução preservam responsabilidades distintas.</li>
+<li>Platform Layer aplica contratos técnicos, mas não redefine o significado funcional dos objetivos.</li>
+<li>Serviços especializados e receita comercial não podem alterar prioridade, relevância ou conclusão funcional.</li>
+<li>Revogações devem interromper novos usos e falhas de integração devem produzir degradação controlada.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
@@ -14095,6 +14102,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-objetivos-progresso-e-conclusao">PAS-001-OBJ-PROGRESS-001 — Critérios de Sucesso, Progresso, Evidências e Conclusão</a></li>
 <li><a href="#product-architecture-pas-001-meus-objetivos">PAS-001-OBJ-VIEW-001 — Comportamentos Funcionais de Meus Objetivos</a></li>
 <li><a href="#product-architecture-pas-001-objetivos-eventos-funcionais">PAS-001-OBJ-EVENT-001 — Contratos dos Eventos Funcionais de Objetivos</a></li>
+<li><a href="#product-architecture-pas-001-objetivos-integracoes-funcionais">PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais da Capacidade de Objetivos</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
