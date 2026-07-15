@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos
-- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 40%
-- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001 e PAS-001-OA-LIFECYCLE-001, ambas em 1.0.0
+- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 60%
+- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001 e PAS-001-OA-VIEW-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -64,7 +64,7 @@ A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de 
 - tipos, elegibilidade, disponibilidade, temporalidade, custos, riscos e relações comerciais;
 - relevância contextual, limiar de ativação e neutralidade comercial.
 
-`PAS-001-OA-LIFECYCLE-001 1.0.0` consolida:
+`PAS-001-OA-LIFECYCLE-001 1.0.0` consolidou:
 
 - estados funcionais da oportunidade e estados independentes de informação, disponibilidade, elegibilidade e relevância;
 - relação individual do participante e situação transacional externa como dimensões separadas;
@@ -79,23 +79,43 @@ A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de 
 - mudanças de preço, fornecedor, risco e disponibilidade da fonte;
 - revogação de contexto, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
 
-A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **40%**.
+`PAS-001-OA-VIEW-001 1.0.0` consolida:
+
+- `Minhas Oportunidades` como superfície de descoberta, compreensão, comparação e controle;
+- ausência legítima de oportunidades compatíveis;
+- descoberta contextual, busca direta e proteção de buscas sensíveis;
+- filtros, ordenação neutra, lista, cartões, mapa, calendário e comparação;
+- cartões minimizados, títulos funcionais e títulos neutros para conteúdo sensível;
+- separação visual entre estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual;
+- explicação de relevância e de não priorização;
+- apresentação de disponibilidade, elegibilidade, custo total, riscos e proveniência;
+- transparência de patrocínio, comissão, afiliação, promoção paga e participação na receita;
+- separação entre lista funcional e área publicitária;
+- comparação não simplificadora e preservação de alternativas não patrocinadas;
+- salvamento, interesse, descarte, ocultação, contestação, correção e histórico;
+- vínculo consciente com Próximos Passos;
+- proteção de oportunidades sensíveis, de saúde, financeiras, profissionais, sociais, religiosas e institucionais;
+- acompanhamento de processos externos sem absorção da transação;
+- controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
+- acessibilidade, prevenção de fadiga, consistência entre canais e falha segura.
+
+A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **60%**.
 
 ## Ponto exato de retomada
 
-Retomar na visualização e no controle das Oportunidades Ativas.
+Retomar nos contratos dos eventos funcionais da Capacidade de Oportunidades Ativas.
 
 Próxima entrega:
 
-- descoberta e busca;
-- filtros, organização e cartões;
-- detalhamento progressivo;
-- comparação e alternativas;
-- transparência comercial;
-- elegibilidade, disponibilidade e custos;
-- riscos e oportunidades sensíveis;
-- ações e controles do participante;
-- acessibilidade, explicabilidade e consistência entre canais.
+- estrutura funcional comum dos contratos;
+- identidade, titularidade, ator e autoridade;
+- temporalidade, correlação, causalidade e versionamento;
+- eventos de identificação, candidatura, avaliação e ativação;
+- eventos de disponibilidade, elegibilidade, relevância, risco e transparência comercial;
+- eventos de apresentação, visualização, salvamento, interesse, descarte e ocultação;
+- eventos de inscrição, aceitação, contratação e participação relacionada;
+- contestação, correção, revogação e propagação;
+- idempotência, ordenação, concorrência, auditoria e falha segura.
 
 ## Product Engineering
 
@@ -112,7 +132,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
-| 06 — Oportunidades Ativas | In progress — 40% |
+| 06 — Oportunidades Ativas | In progress — 60% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
@@ -127,6 +147,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 - [Contrato Final dos Próximos Passos](docs/product-architecture/pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais de Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-fundamentos-iniciais.md)
 - [Ciclo de Vida das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-ciclo-de-vida.md)
+- [Visualização e Controle das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-visualizacao-controle.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
