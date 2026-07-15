@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 8.4.0
+version: 8.5.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
-- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 80%.
-- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0` e `PAS-001-OA-EVENT-001 1.0.0`.
+- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 90%.
+- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0` e `PAS-001-OA-INTEGRATION-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 06 — Oportunidades Ativas`.
+O próximo trabalho deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final da `Capacidade 06 — Oportunidades Ativas`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -139,7 +139,25 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 - responsabilidades de produtores e consumidores;
 - explicabilidade, auditoria e métricas sistêmicas.
 
-A Capacidade 06 está `In progress`, com progresso editorial de referência de `80%`.
+`PAS-001-OA-INTEGRATION-001 1.0.0` consolida:
+
+- contrato funcional comum para integrações internas, externas, organizacionais, profissionais, pessoais, temporárias e comerciais;
+- identidade, associação segura, autoridade limitada, finalidade específica e minimização;
+- proveniência e cadeia de transformação reconstruível;
+- separação entre qualidade técnica, confiança funcional e autoridade;
+- temporalidades, validade e atualização em tempo real sem equivalência a verdade definitiva;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, interesse, prioridade, progresso, causalidade ou diagnóstico;
+- sincronização, idempotência, ordenação, conflitos, reconciliação e prevenção de ciclos;
+- permissões, pausa, desconexão, revogação, propagação e retenção;
+- falha segura e degradação controlada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções, Experiências e Evolução;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização, esportes, canais conversacionais e processos externos;
+- proteção de dados sensíveis, terceiros, relações comerciais e neutralidade funcional;
+- observabilidade, explicabilidade, auditoria e responsabilidades de produtores e consumidores.
+
+A Capacidade 06 está `In progress`, com progresso editorial de referência de `90%`.
 
 ## Progresso das capacidades do Journey
 
@@ -150,7 +168,7 @@ A Capacidade 06 está `In progress`, com progresso editorial de referência de `
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
-| 06 — Oportunidades Ativas | In progress | 80% |
+| 06 — Oportunidades Ativas | In progress | 90% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
@@ -213,17 +231,17 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nas **integrações funcionais das Oportunidades Ativas**.
+Retomar nos **KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas**.
 
 Próxima entrega:
 
-1. contrato funcional comum de integração;
-2. Captura de Contexto e Contexto Vivo;
-3. Objetivos, Eventos de Vida e Próximos Passos;
-4. Intervenções Contextuais, Experiências e Evolução Contínua;
-5. Guivos Intelligence e Platform Layer;
-6. Guivos Mall, Travel, Business, Media e Ads;
-7. organizações, fornecedores e serviços profissionais;
-8. fontes públicas, catálogos, calendários, localização e sistemas externos;
-9. identidade, autoridade, finalidade, minimização e proveniência;
-10. sincronização, revogação, propagação, auditoria e falha segura.
+1. famílias de indicadores e KPIs sistêmicos;
+2. indicadores de admissão, relevância, elegibilidade, disponibilidade, transparência, controle e integração;
+3. guardrails críticos de tolerância zero;
+4. construção da baseline antes de metas permanentes;
+5. painel de saúde e níveis de desempenho funcional;
+6. cenários funcionalmente ideal, alternativo e limite;
+7. critérios de conclusão e reabertura;
+8. lacunas bloqueantes e não bloqueantes;
+9. contrato final da Capacidade 06;
+10. definição da Capacidade 07 — Intervenções Contextuais como próxima frente oficial.
