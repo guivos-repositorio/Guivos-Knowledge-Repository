@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 8.3.0
+version: 8.4.0
 owner: Guivos
-last_updated: 2026-07-14
+last_updated: 2026-07-15
 ---
 
 # Roadmap Arquitetural
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
-- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 60%.
-- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0` e `PAS-001-OA-VIEW-001 1.0.0`.
+- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 80%.
+- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0` e `PAS-001-OA-EVENT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os contratos dos eventos funcionais da `Capacidade 06 — Oportunidades Ativas`.
+O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 06 — Oportunidades Ativas`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -95,7 +95,7 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 - mudanças de preço, fornecedor e risco;
 - revogação, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
 
-`PAS-001-OA-VIEW-001 1.0.0` consolida:
+`PAS-001-OA-VIEW-001 1.0.0` consolidou:
 
 - `Minhas Oportunidades` como superfície principal;
 - descoberta contextual e busca direta com proteção de consultas sensíveis;
@@ -119,7 +119,27 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 - controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
 - acessibilidade técnica e cognitiva, consistência entre canais e falha segura.
 
-A Capacidade 06 está `In progress`, com progresso editorial de referência de `60%`.
+`PAS-001-OA-EVENT-001 1.0.0` consolida:
+
+- comando, proposta e evento funcional como conceitos distintos;
+- publicação somente após persistência funcional suficiente;
+- agregado principal `Registro de Oportunidade` e estrutura comum versionada;
+- titular, participante, ator, papel, autoridade, fonte, proveniência, finalidade e sensibilidade;
+- temporalidades de fato, declaração, registro externo, conhecimento, reconhecimento, persistência, aplicação, propagação e correção;
+- correlação e causalidade funcional sem fabricação de relação causal;
+- 19 famílias de eventos de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, manutenção, correção, permissões, propagação, visualização e falhas;
+- imutabilidade histórica e correção compensatória;
+- disponibilidade, elegibilidade, relevância e transparência comercial com contratos próprios;
+- apresentação governada por Intervenções Contextuais;
+- visualização, salvamento, interesse, inscrição, aceitação, contratação, participação e resultado como fatos distintos;
+- recortes mínimos e decisões próprias das capacidades consumidoras;
+- revogação concluída somente após propagação suficiente;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade e reconstrução;
+- retenção e logs minimizados;
+- responsabilidades de produtores e consumidores;
+- explicabilidade, auditoria e métricas sistêmicas.
+
+A Capacidade 06 está `In progress`, com progresso editorial de referência de `80%`.
 
 ## Progresso das capacidades do Journey
 
@@ -130,7 +150,7 @@ A Capacidade 06 está `In progress`, com progresso editorial de referência de `
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
-| 06 — Oportunidades Ativas | In progress | 60% |
+| 06 — Oportunidades Ativas | In progress | 80% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
@@ -180,22 +200,30 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não transformar a lista funcional em feed publicitário, catálogo infinito ou ranking social;
 - não ocultar custo total, risco material, patrocínio ou comissão;
 - não utilizar busca sensível para publicidade;
+- não publicar comando ou proposta como evento funcional reconhecido;
+- não publicar evento material antes da persistência funcional suficiente;
+- não alterar eventos históricos para corrigir significado;
+- não ampliar autoridade da fonte durante produção ou consumo de eventos;
+- não tratar correlação temporal como causalidade;
+- não duplicar efeitos em reprocessamento;
+- não declarar revogação antes da propagação suficiente;
+- não apresentar falha parcial como sucesso integral;
 - não preencher ausência legítima de oportunidades com anúncios ou opções incompatíveis;
 - não iniciar outro produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar nos **contratos dos eventos funcionais das Oportunidades Ativas**.
+Retomar nas **integrações funcionais das Oportunidades Ativas**.
 
 Próxima entrega:
 
-1. estrutura comum e identidade do agregado;
-2. titular, ator, papel e autoridade;
-3. finalidade, sensibilidade e permissões;
-4. temporalidade, correlação, causalidade e versionamento;
-5. identificação, candidatura, avaliação e ativação;
-6. disponibilidade, elegibilidade, relevância, risco e transparência comercial;
-7. apresentação, visualização, salvamento, interesse, descarte e ocultação;
-8. inscrição, aceitação, contratação e participação relacionada;
-9. contestação, correção, revogação e propagação;
-10. idempotência, ordenação, concorrência, auditoria e falha segura.
+1. contrato funcional comum de integração;
+2. Captura de Contexto e Contexto Vivo;
+3. Objetivos, Eventos de Vida e Próximos Passos;
+4. Intervenções Contextuais, Experiências e Evolução Contínua;
+5. Guivos Intelligence e Platform Layer;
+6. Guivos Mall, Travel, Business, Media e Ads;
+7. organizações, fornecedores e serviços profissionais;
+8. fontes públicas, catálogos, calendários, localização e sistemas externos;
+9. identidade, autoridade, finalidade, minimização e proveniência;
+10. sincronização, revogação, propagação, auditoria e falha segura.
