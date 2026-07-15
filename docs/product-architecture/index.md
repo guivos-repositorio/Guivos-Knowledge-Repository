@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.6.1
+version: 1.6.2
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -107,7 +107,8 @@ A Capacidade 05 está **Functionally complete**, com progresso editorial de refe
 As extensões normativas vigentes são:
 
 - `PAS-001-OA-FOUNDATION-001 1.0.0` — pergunta central, objetivo, singularidade, definição, distinções, titularidade, autoridade, tipos, elegibilidade, disponibilidade, relevância, custos, riscos, relações comerciais, entradas, saídas e controle;
-- `PAS-001-OA-LIFECYCLE-001 1.0.0` — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura.
+- `PAS-001-OA-LIFECYCLE-001 1.0.0` — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura;
+- `PAS-001-OA-VIEW-001 1.0.0` — `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles.
 
 O ciclo de vida consolida:
 
@@ -132,9 +133,39 @@ O ciclo de vida consolida:
 - oportunidades recorrentes, coletivas, institucionais e patrocinadas;
 - revogação de contexto, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
 
-A Capacidade 06 está **In progress**, com progresso editorial de referência de `40%`.
+A visualização e o controle consolidam:
 
-O próximo bloco deverá consolidar a visualização e o controle das Oportunidades Ativas.
+- `Minhas Oportunidades` como superfície funcional, sem operar como feed publicitário, catálogo infinito, ranking social ou vitrine definida por comissão;
+- visão geral, oportunidades para considerar, busca, filtros, oportunidades salvas, interesses, processos iniciados, histórico, fontes e permissões;
+- ausência legítima de oportunidade sem preenchimento por anúncios ou opções incompatíveis;
+- descoberta contextual com explicação dos recortes e da finalidade;
+- busca direta e proteção reforçada de buscas sensíveis;
+- filtros funcionais e comerciais, incluindo controle de oportunidades patrocinadas e opções sem comissão;
+- ordenação neutra, separada de ordenação comercial identificada;
+- visualizações por lista, cartões, mapa, calendário, comparação e agrupamentos;
+- cartões minimizados, títulos funcionais e títulos neutros;
+- indicadores textuais de disponibilidade, elegibilidade, risco, patrocínio, comissão e relação individual;
+- separação entre estado funcional, informação, disponibilidade, elegibilidade, relevância e relação do participante;
+- explicação de relevância, limitações, incertezas, fonte e relação comercial;
+- disponibilidade com última verificação, validade e ausência de garantia;
+- elegibilidade com requisitos, pendências e autoridade decisória externa;
+- custo total, gratuidade, riscos e limitações;
+- transparência de patrocínio, comissão, afiliação, promoção paga, exclusividade e participação na receita;
+- área publicitária identificada e separada da lista funcional;
+- detalhamento progressivo, proveniência e histórico compreensível;
+- comparação não simplificadora, critérios ajustáveis e preservação de alternativas não patrocinadas;
+- salvamento, interesse, retirada, descarte, ocultação, contestação e correção;
+- vínculo consciente com Próximos Passos sem criação automática;
+- proteção de oportunidades sensíveis, de saúde, financeiras, profissionais, sociais, religiosas, institucionais e coletivas;
+- mudanças materiais, indisponibilidade, pausa, expiração, encerramento e novas edições;
+- acompanhamento de processos externos sem absorção da transação;
+- fila de atenção, notificações funcionais e comerciais separadas e prevenção de fadiga;
+- controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
+- acessibilidade técnica e cognitiva, consistência entre canais, conflitos de informação e falha segura.
+
+A Capacidade 06 está **In progress**, com progresso editorial de referência de `60%`.
+
+O próximo bloco deverá consolidar os contratos dos eventos funcionais das Oportunidades Ativas.
 
 ## Regras arquiteturais
 
@@ -408,6 +439,36 @@ O próximo bloco deverá consolidar a visualização e o controle das Oportunida
 268. Reprocessamento não duplica oportunidade, ativação, apresentação, interesse, inscrição ou vínculo.
 269. Eventos fora de ordem e conflitos concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa.
 270. Falha parcial não representa sucesso integral e o participante permanece no controle do ciclo.
+271. `Minhas Oportunidades` é uma superfície de descoberta e controle, não feed publicitário ou catálogo infinito.
+272. A ausência de oportunidades compatíveis deve permanecer visível e legítima.
+273. Busca sensível não pode alimentar publicidade ou sugestões públicas no dispositivo.
+274. Ordenação funcional deve permanecer separada de ordenação comercial identificada.
+275. Comissão, patrocínio, margem, valor de compra, clique e tempo de tela não podem elevar a ordem funcional.
+276. Cartões devem utilizar minimização e detalhamento progressivo.
+277. Títulos sensíveis devem permitir formulação neutra e modo discreto.
+278. Estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual não podem ser colapsados em um único selo.
+279. Relevância deve responder `Por que estou vendo isto?` com critérios, limitações, incertezas, fonte e relação comercial.
+280. Disponibilidade deve apresentar fonte, última verificação, validade e ausência de garantia.
+281. Elegibilidade incerta deve permanecer incerta e a autoridade externa de decisão deve ser indicada.
+282. Custo principal não pode ocultar taxas, materiais, deslocamento, renovação, cancelamento ou outros custos materiais.
+283. Riscos devem ser apresentados antes de ações de alto impacto.
+284. Patrocínio, comissão, afiliação, promoção paga, exclusividade e participação na receita devem permanecer visíveis.
+285. Conteúdo de Guivos Ads deve permanecer em área identificada e fora da lista funcional neutra.
+286. Comparação não pode produzir vencedor universal quando critérios forem subjetivos ou incompletos.
+287. Alternativas públicas, gratuitas e não patrocinadas devem permanecer elegíveis para apresentação.
+288. Salvamento não pode gerar contato, inscrição, compartilhamento ou publicidade adicional automática.
+289. Manifestação de interesse ao fornecedor exige autorização, finalidade e visualização dos dados enviados.
+290. Descarte e ocultação devem ser respeitados e não gerar penalidade.
+291. Contestação material deve limitar afirmações e automações até resolução.
+292. Vínculo com Próximo Passo deve ser consciente e não criar ou confirmar movimento automaticamente.
+293. Eventos de Vida sensíveis não podem fundamentar pressão, aumento de preço ou publicidade.
+294. Oportunidades sensíveis exigem títulos neutros, busca protegida, notificações minimizadas e retenção limitada.
+295. Processos de inscrição, contratação, pagamento e participação devem ser identificados como externos quando governados por outro produto ou fornecedor.
+296. Fila de atenção deve considerar impacto, prazo real, risco e reversibilidade, nunca receita.
+297. Notificações comerciais e funcionais devem permanecer separadas.
+298. O participante deve controlar categorias, fontes, contexto, localização, compartilhamento e revogação.
+299. Conflitos de informação devem expor versões, fontes, temporalidade e estado provisório sem escolha comercial silenciosa.
+300. A visualização deve operar com acessibilidade, prevenção de fadiga, falha segura e controle do participante.
 
 ## Documentos do domínio
 
@@ -419,6 +480,7 @@ O próximo bloco deverá consolidar a visualização e o controle das Oportunida
 - [PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos](pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
 - [PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas](pas-001-oportunidades-ativas-fundamentos-iniciais.md)
 - [PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas](pas-001-oportunidades-ativas-ciclo-de-vida.md)
+- [PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas](pas-001-oportunidades-ativas-visualizacao-controle.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
