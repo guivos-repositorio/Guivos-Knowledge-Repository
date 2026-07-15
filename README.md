@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos
-- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 60%
-- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001 e PAS-001-OA-VIEW-001, todas em 1.0.0
+- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 80%
+- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001 e PAS-001-OA-EVENT-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -79,7 +79,7 @@ A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de 
 - mudanças de preço, fornecedor, risco e disponibilidade da fonte;
 - revogação de contexto, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
 
-`PAS-001-OA-VIEW-001 1.0.0` consolida:
+`PAS-001-OA-VIEW-001 1.0.0` consolidou:
 
 - `Minhas Oportunidades` como superfície de descoberta, compreensão, comparação e controle;
 - ausência legítima de oportunidades compatíveis;
@@ -99,23 +99,38 @@ A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de 
 - controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
 - acessibilidade, prevenção de fadiga, consistência entre canais e falha segura.
 
-A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **60%**.
+`PAS-001-OA-EVENT-001 1.0.0` consolida:
+
+- distinção entre comando, proposta e evento funcional reconhecido;
+- estrutura comum versionada, agregado funcional e persistência anterior à publicação;
+- titular, participante, ator, papel, autoridade, fonte, proveniência, finalidade e sensibilidade;
+- temporalidades de fato, declaração, conhecimento, reconhecimento, persistência, aplicação, propagação e correção;
+- correlação, causalidade funcional e retroatividade sem fabricação de precisão;
+- 19 famílias de eventos de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, encerramento, correção, permissões, propagação, visualização e falhas;
+- correção compensatória e imutabilidade histórica;
+- idempotência, duplicidade semântica, ordenação, concorrência e atomicidade funcional;
+- revogação concluída somente após propagação suficiente;
+- reconstrução de estado, explicabilidade e auditoria;
+- responsabilidades de produtores e consumidores sem transferência de decisão;
+- neutralidade comercial e proteção reforçada de oportunidades sensíveis.
+
+A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **80%**.
 
 ## Ponto exato de retomada
 
-Retomar nos contratos dos eventos funcionais da Capacidade de Oportunidades Ativas.
+Retomar nas integrações funcionais da Capacidade de Oportunidades Ativas.
 
 Próxima entrega:
 
-- estrutura funcional comum dos contratos;
-- identidade, titularidade, ator e autoridade;
-- temporalidade, correlação, causalidade e versionamento;
-- eventos de identificação, candidatura, avaliação e ativação;
-- eventos de disponibilidade, elegibilidade, relevância, risco e transparência comercial;
-- eventos de apresentação, visualização, salvamento, interesse, descarte e ocultação;
-- eventos de inscrição, aceitação, contratação e participação relacionada;
-- contestação, correção, revogação e propagação;
-- idempotência, ordenação, concorrência, auditoria e falha segura.
+- integrações com Captura de Contexto e Contexto Vivo;
+- integrações com Objetivos, Eventos de Vida e Próximos Passos;
+- integração com Intervenções Contextuais, Experiências e Evolução Contínua;
+- limites e responsabilidades da Guivos Intelligence;
+- contratos técnicos da Platform Layer;
+- integrações com Guivos Mall, Travel, Business, Media e Ads;
+- organizações, fornecedores e serviços profissionais;
+- fontes públicas, catálogos, calendários, localização e sistemas externos;
+- finalidade, minimização, proveniência, sincronização, revogação e falha segura.
 
 ## Product Engineering
 
@@ -132,7 +147,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
-| 06 — Oportunidades Ativas | In progress — 60% |
+| 06 — Oportunidades Ativas | In progress — 80% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
@@ -148,6 +163,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 - [Fundamentos Iniciais de Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-fundamentos-iniciais.md)
 - [Ciclo de Vida das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-ciclo-de-vida.md)
 - [Visualização e Controle das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-visualizacao-controle.md)
+- [Eventos Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
