@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.6.1
+version: 1.6.2
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -119,6 +119,22 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Escassez de oportunidade | Refinar | Condição real ou estimada de capacidade e janela, distinta de urgência funcional do participante |
 | Risco de oportunidade | Manter | Risco físico, financeiro, jurídico, reputacional, emocional, de privacidade, fraude, exploração ou discriminação |
 | Ausência de Oportunidade Ativa | Manter | Estado legítimo que não autoriza preenchimento por publicidade ou opções incompatíveis |
+| Minhas Oportunidades | Manter | Superfície funcional de descoberta, compreensão, comparação e controle, distinta de feed publicitário ou catálogo infinito |
+| Descoberta contextual de oportunidade | Refinar | Utiliza recortes autorizados e explica relação, finalidade, dados utilizados e controles disponíveis |
+| Busca sensível de oportunidade | Manter | Consulta protegida que não alimenta publicidade e limita histórico, indexação e exposição em dispositivo |
+| Cartão de oportunidade | Manter | Representação minimizada com título, fonte, justificativa, disponibilidade, elegibilidade, custo, risco e relação comercial |
+| Título neutro de oportunidade | Manter | Identificação minimizada para proteger conteúdo sensível em cartões, notificações e dispositivos compartilhados |
+| Ordenação neutra de oportunidades | Manter | Ordenação funcional por compatibilidade, disponibilidade, elegibilidade, custo, risco e preferência, sem receita, patrocínio ou clique |
+| Área publicitária de oportunidades | Manter | Espaço explicitamente identificado, separado da lista funcional e sem utilização de contexto sensível |
+| Explicação de relevância | Manter | Resposta a `Por que estou vendo isto?`, com relação funcional, critérios, limitações, fonte e relação comercial |
+| Disponibilidade visual | Refinar | Apresenta estado, fonte, última verificação, validade e ausência de garantia |
+| Elegibilidade visual | Refinar | Apresenta requisitos, pendências, fonte da regra, autoridade decisória e incerteza sem expor conteúdo sensível |
+| Custo total de oportunidade | Manter | Preço, taxas, materiais, deslocamento, renovação, cancelamento e custos indiretos conhecidos ou pendentes |
+| Comparação de oportunidades | Refinar | Mantém critérios visíveis, reconhece dados ausentes e não produz vencedor universal |
+| Alternativa não patrocinada | Manter | Opção preservada para apresentação e comparação independentemente de parceria, comissão ou campanha |
+| Fila de atenção de oportunidades | Refinar | Reúne prazos reais, mudanças materiais, requisitos, riscos e revogações sem considerar receita |
+| Controle de contexto para oportunidades | Manter | Permite consultar recortes, finalidade, duração, consumidores, limitação e revogação |
+| Privacidade visual de oportunidade | Manter | Títulos neutros, modo discreto, notificações minimizadas, busca protegida e autenticação proporcional |
 | Evidências de Evolução | Manter | Resultados observáveis da experiência |
 | Quatro Naturezas | Manter | Estado, Decisão, Transição e Resultado |
 
@@ -167,9 +183,10 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
 | Próximos Passos | Manter | Capacidade 05 funcionalmente concluída por seis extensões normativas e progresso editorial de 100% |
 | KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos | Manter | PAS-001-PP-CONTRACT-001 1.0.0 define 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final |
-| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40% |
+| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida e visualização consolidados e progresso editorial de 60% |
 | Fundamentos Iniciais da Capacidade de Oportunidades Ativas | Manter | PAS-001-OA-FOUNDATION-001 1.0.0 define singularidade, conceito, distinções, titularidade, autoridade, relevância, elegibilidade, disponibilidade, temporalidade, custo, risco, patrocínio, neutralidade e controle |
 | Ciclo de Vida das Oportunidades Ativas | Manter | PAS-001-OA-LIFECYCLE-001 1.0.0 define estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, inscrições, atualizações, encerramentos, revogação e falha segura |
+| Visualização e Controle das Oportunidades Ativas | Manter | PAS-001-OA-VIEW-001 1.0.0 define `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, custos, riscos, controles, privacidade e consistência entre canais |
 | Singularidade de Oportunidades Ativas | Manter | Governa a relevância atual de meios disponíveis para uma jornada específica |
 | Oportunidade candidata | Manter | Registro ainda em avaliação e sem ativação funcional |
 | Oportunidade Ativa | Refinar | Meio admissível e potencialmente compatível que pode ser apresentado, salvo, comparado ou utilizado como apoio |
@@ -192,6 +209,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Neutralidade de oportunidade | Manter | Relações comerciais não determinam relevância, prioridade ou recomendação funcional |
 | Oportunidade sensível | Manter | Exige finalidade, minimização, proteção reforçada e proibição de publicidade baseada em vulnerabilidade |
 | Ausência de Oportunidade Ativa | Manter | Estado legítimo sem preenchimento por anúncios ou opções incompatíveis |
+| Minhas Oportunidades | Manter | Superfície principal da capacidade, sem operar como feed, ranking, vitrine comissionada ou pressão comercial |
+| Busca e filtros de oportunidades | Refinar | Permitem consulta e organização com proteção de buscas sensíveis e controle de categorias comerciais |
+| Cartão e detalhamento de oportunidade | Manter | Exibem progressivamente fonte, relevância, disponibilidade, elegibilidade, custo, risco, patrocínio, comissão e ações disponíveis |
+| Comparação de oportunidades | Refinar | Mantém critérios e incertezas visíveis, permite preferências ajustáveis e não determina vencedor universal |
+| Controles do participante em oportunidades | Manter | Incluem salvar, retirar, descartar, ocultar, contestar, limitar fontes, controlar contexto, localização, compartilhamento e revogação |
 | Integração com Contexto Vivo | Refinar | Recebe recortes mínimos e não mantém perfil comercial paralelo |
 | Integração com Objetivos | Refinar | Objetivos fornece direção; oportunidade não ativa, reprioriza, progride ou conclui objetivo |
 | Integração com Eventos de Vida | Refinar | Eventos podem alterar relevância, elegibilidade, custo, risco e temporalidade sem autorizar exploração comercial |
@@ -219,8 +241,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-LIFECYCLE-001 1.0.0` consolida o ciclo de vida da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 40% e preserva estado funcional, informação, disponibilidade, elegibilidade, relevância, relação individual e situação transacional como dimensões independentes, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-VIEW-001 1.0.0` consolida a visualização e o controle da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 60% e preserva relevância funcional, neutralidade comercial, privacidade, acessibilidade e controle do participante, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **comportamentos funcionais da visualização e do controle das Oportunidades Ativas**, incluindo descoberta, busca, filtros, cartões, detalhamento, comparação, alternativas, transparência comercial, elegibilidade, disponibilidade, custos, riscos, oportunidades sensíveis, controles do participante e consistência entre canais.
+Consolidar os **contratos dos eventos funcionais da Capacidade de Oportunidades Ativas**, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, ativação, apresentação, interação, elegibilidade, disponibilidade, transparência comercial, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência, auditoria e falha segura.
