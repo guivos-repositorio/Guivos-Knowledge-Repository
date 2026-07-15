@@ -2,6 +2,46 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.34.3 — Active Opportunities Functional Event Contracts
+
+- Criação de `PAS-001-OA-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Definição da distinção entre comando, proposta e evento funcional reconhecido.
+- Formalização da publicação somente após persistência funcional suficiente.
+- Definição do agregado principal `Registro de Oportunidade` e da estrutura comum versionada dos eventos.
+- Consolidação dos campos de identidade, agregado, participante, ator, papel, autoridade, fonte, finalidade, temporalidade, correlação, causalidade, idempotência, sensibilidade, permissões e proveniência.
+- Separação dos tempos do fato, declaração, registro externo, conhecimento, reconhecimento, persistência, aplicação, propagação e correção.
+- Definição da retroatividade e da temporalidade aproximada sem fabricação de precisão.
+- Organização dos contratos em 19 famílias de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, manutenção, correção, permissões, propagação, visualização e falhas.
+- Formalização dos eventos de identificação, candidatura, rejeição, duplicidade e unificação.
+- Definição dos contratos de validação de fonte, limitação de autoridade e conflito de interesse.
+- Consolidação dos eventos de avaliação, completude, informação adicional e suspensão.
+- Definição dos contratos de disponibilidade confirmada, limitada, futura, lista de espera, indisponibilidade e retorno.
+- Formalização da elegibilidade estimada, condicionada, confirmada, contestada e da decisão externa.
+- Definição da relevância explicável, condicionada e reavaliada, sem comissão, patrocínio, clique, tempo de tela ou vulnerabilidade como fatores positivos.
+- Consolidação dos eventos de risco, sensibilidade e proteção reforçada.
+- Definição dos contratos de patrocínio, comissão, relação comercial, ocultação e reavaliação da neutralidade.
+- Formalização da ativação simples e condicionada sem equivaler a apresentação.
+- Registro da responsabilidade de Intervenções Contextuais sobre autorização, adiamento e silêncio da apresentação.
+- Separação dos eventos de visualização, salvamento, interesse, descarte, ocultação e limitação de semelhantes.
+- Consolidação dos eventos de inscrição, aceitação externa, contratação, pagamento, participação e resultado externo como fatos distintos.
+- Definição dos contratos de vínculos com Próximos Passos, alternativas, substituição e comparação.
+- Consolidação dos eventos de pausa, retomada, indisponibilidade, expiração, encerramento, cancelamento, arquivamento e reabertura.
+- Formalização da contestação, limitação de efeitos e correção compensatória.
+- Definição dos contratos de autorização, limitação, compartilhamento, revogação e propagação suficiente.
+- Consolidação dos recortes mínimos e das solicitações de reavaliação às capacidades consumidoras sem transferência de decisão.
+- Separação dos eventos de leitura, busca e notificações funcionais dos contratos publicitários.
+- Definição das falhas de processamento, propagação, sincronização pendente, conflitos de versão, eventos fora de ordem, recuperação e reconstrução.
+- Formalização da idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e eventos compostos.
+- Registro da imutabilidade histórica, exclusão, anonimização, retenção e minimização dos logs.
+- Consolidação das responsabilidades de produtores e consumidores, compatibilidade, explicabilidade, auditoria e métricas sistêmicas.
+- Atualização da Arquitetura de Produtos para `1.6.3` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `8.4.0`, do Knowledge Board para `8.5.0` e da Matriz de Consolidação Canônica para `1.6.3`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 06 no estado `In progress` e elevação do progresso editorial de referência para `80%`.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição das integrações funcionais das Oportunidades Ativas como próximo ponto exato de retomada.
+
 ## 0.34.2 — Active Opportunities Functional View
 
 - Criação de `PAS-001-OA-VIEW-001 — Comportamentos Funcionais da Visualização e do Controle das Oportunidades Ativas`, versão `1.0.0`.
@@ -276,7 +316,7 @@ Todas as alterações relevantes do Guivos Knowledge Repository são registradas
 - Definição do compartilhamento sensível, da revogação e da propagação por recortes mínimos às capacidades consumidoras.
 - Registro das regras de prevenção de ciclos, duplicidade, idempotência, ordenação, concorrência, retroatividade, falha segura e sincronização divergente.
 - Formalização da explicabilidade, histórico, retenção, privacidade, prevenção de fadiga e métricas sistêmicas do ciclo.
-- Atualização da Arquitetura de Produtos para `1.5.1` e inclusão da extensão na navegação do MkDocs.
+- Atualização da Arquitetura de Produtos para `1.5.1` e inclusão da extensão normativa na navegação do MkDocs.
 - Atualização do Roadmap para `7.6.0`, do Knowledge Board para `7.7.0` e da Matriz de Consolidação Canônica para `1.5.1`.
 - Atualização do README e da página inicial do GKR.
 - Manutenção da Capacidade 05 no estado `In progress` e elevação do progresso editorial de referência para `40%`.
