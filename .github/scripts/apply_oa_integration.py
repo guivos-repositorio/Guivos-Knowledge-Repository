@@ -1,0 +1,547 @@
+from __future__ import annotations
+
+import os
+import subprocess
+from pathlib import Path
+
+
+def run(*args: str) -> None:
+    subprocess.run(args, check=True)
+
+
+def replace_once(text: str, old: str, new: str, label: str) -> str:
+    if old not in text:
+        raise RuntimeError(f"Missing marker: {label}")
+    return text.replace(old, new, 1)
+
+
+def commit(paths: list[str], message: str) -> None:
+    run("git", "add", *paths)
+    run("git", "commit", "-m", message)
+
+
+def update_readme_and_index() -> None:
+    path = Path("README.md")
+    text = path.read_text(encoding="utf-8")
+    text = replace_once(
+        text,
+        "- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 80%",
+        "- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 90%",
+        "README active progress",
+    )
+    text = replace_once(
+        text,
+        "- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001 e PAS-001-OA-EVENT-001, todas em 1.0.0",
+        "- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001 e PAS-001-OA-INTEGRATION-001, todas em 1.0.0",
+        "README extensions",
+    )
+    marker = "- neutralidade comercial e proteção reforçada de oportunidades sensíveis.\n\nA Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **80%**."
+    integration = """- neutralidade comercial e proteção reforçada de oportunidades sensíveis.
+
+`PAS-001-OA-INTEGRATION-001 1.0.0` consolida:
+
+- contrato funcional comum para integrações internas, externas, organizacionais, profissionais e comerciais;
+- identidade, associação, autoridade, finalidade, minimização, proveniência, qualidade, confiança e temporalidade;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, interesse, prioridade, progresso ou transformação;
+- sincronização com versão, idempotência, ordenação, conflitos, prevenção de ciclos e degradação controlada;
+- pausa, desconexão, revogação e propagação confirmada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções Contextuais, Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- contratos com organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização e sistemas externos;
+- proteção de oportunidades sensíveis, informações de terceiros e neutralidade comercial;
+- observabilidade, explicabilidade, auditoria e falha segura.
+
+A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **90%**."""
+    text = replace_once(text, marker, integration, "README integration section")
+    start = text.index("## Ponto exato de retomada")
+    end = text.index("## Product Engineering")
+    replacement = """## Ponto exato de retomada
+
+Retomar nos KPIs, guardrails, baseline funcional, cenários e contrato final da Capacidade de Oportunidades Ativas.
+
+Próxima entrega:
+
+- famílias de indicadores e KPIs sistêmicos;
+- guardrails de tolerância zero;
+- baseline funcional antes de metas permanentes;
+- painel de saúde e níveis de desempenho;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão e reabertura;
+- lacunas bloqueantes e não bloqueantes;
+- contrato final da Capacidade 06.
+
+"""
+    text = text[:start] + replacement + text[end:]
+    text = text.replace(
+        "| 06 — Oportunidades Ativas | In progress — 80% |",
+        "| 06 — Oportunidades Ativas | In progress — 90% |",
+    )
+    text = replace_once(
+        text,
+        "- [Eventos Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)",
+        "- [Eventos Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)\n- [Integrações Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md)",
+        "README quick link",
+    )
+    path.write_text(text, encoding="utf-8")
+
+    path = Path("docs/index.md")
+    text = path.read_text(encoding="utf-8")
+    text = replace_once(
+        text,
+        "- Capacidade 06 — Oportunidades Ativas em desenvolvimento, `In progress`, 80%;",
+        "- Capacidade 06 — Oportunidades Ativas em desenvolvimento, `In progress`, 90%;",
+        "index progress",
+    )
+    text = replace_once(
+        text,
+        "- `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0` e `PAS-001-OA-EVENT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;",
+        "- `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0` e `PAS-001-OA-INTEGRATION-001 1.0.0` como extensões normativas vigentes da Capacidade 06;",
+        "index extensions",
+    )
+    text = replace_once(
+        text,
+        "Consolidar as **integrações funcionais da Capacidade 06 — Oportunidades Ativas**.",
+        "Consolidar os **KPIs, guardrails, baseline, cenários e contrato final da Capacidade 06 — Oportunidades Ativas**.",
+        "index mission",
+    )
+    text = replace_once(
+        text,
+        "Os contratos vigentes definem 19 famílias de eventos, estrutura comum versionada, autoridade, finalidade, temporalidade, correlação, correção compensatória, idempotência, ordenação, concorrência, propagação, reconstrução e falha segura.",
+        "As cinco extensões vigentes consolidam fundamentos, ciclo de vida, visualização, 19 famílias de eventos e integrações governadas por finalidade, autoridade, minimização, proveniência, sincronização, revogação, neutralidade comercial e falha segura.",
+        "index summary",
+    )
+    text = replace_once(
+        text,
+        "- [Eventos Funcionais das Oportunidades Ativas](product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)",
+        "- [Eventos Funcionais das Oportunidades Ativas](product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)\n- [Integrações Funcionais das Oportunidades Ativas](product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md)",
+        "index quick link",
+    )
+    text = text.replace(
+        "| 06 — Oportunidades Ativas | In progress — 80% |",
+        "| 06 — Oportunidades Ativas | In progress — 90% |",
+    )
+    text = replace_once(
+        text,
+        "Retomar nas integrações funcionais de Oportunidades Ativas com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas e sistemas externos.",
+        "Retomar nos KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Oportunidades Ativas.",
+        "index resumption",
+    )
+    path.write_text(text, encoding="utf-8")
+
+    commit(
+        ["README.md", "docs/index.md"],
+        "docs(readme): registrar integrações de Oportunidades Ativas",
+    )
+
+
+def update_architecture() -> None:
+    path = Path("docs/product-architecture/index.md")
+    text = path.read_text(encoding="utf-8")
+    text = replace_once(text, "version: 1.6.3", "version: 1.6.4", "architecture version")
+    event_bullet = "- `PAS-001-OA-EVENT-001 1.0.0` — estrutura comum dos eventos, autoridade, temporalidade, 19 famílias contratuais, correção compensatória, revogação, propagação, idempotência, ordenação, concorrência e reconstrução."
+    text = replace_once(
+        text,
+        event_bullet,
+        event_bullet
+        + "\n- `PAS-001-OA-INTEGRATION-001 1.0.0` — contrato comum de integração, identidade, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos especializados, sistemas externos, observabilidade e falha segura.",
+        "architecture extension list",
+    )
+    marker = "- explicabilidade, auditoria e métricas sistêmicas.\n\nA Capacidade 06 está **In progress**, com progresso editorial de referência de `80%`.\n\nO próximo bloco deverá consolidar as integrações funcionais das Oportunidades Ativas."
+    integration = """- explicabilidade, auditoria e métricas sistêmicas.
+
+As integrações funcionais consolidam:
+
+- integração como intercâmbio governado de sinais, fatos, propostas, comandos, evidências, recortes e solicitações de reavaliação;
+- contrato funcional comum com produtor, consumidor, participante, finalidade, modo, autoridade, escopo, sensibilidade, proveniência, qualidade, confiança, validade, frequência, retenção, relação comercial, sincronização e revogação;
+- identidade e associação seguras, com efeitos pessoais bloqueados diante de incerteza;
+- autoridade limitada ao que cada fonte pode legitimamente confirmar;
+- separação entre qualidade técnica, confiança funcional e autoridade;
+- temporalidades de fato, registro externo, publicação, sincronização, conhecimento, processamento, aplicação, propagação e correção;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, aprovação, interesse, prioridade, causalidade, progresso, transformação ou precisão inexistente;
+- sincronização com versão, idempotência, sequência, conflitos, atualização parcial, reconciliação e degradação controlada;
+- prevenção de ciclos entre oportunidades, Próximos Passos e capacidades consumidoras;
+- finalidade específica, minimização, permissões granulares, pausa, desconexão, revogação e propagação confirmada;
+- integrações com todas as capacidades do Journey, preservando responsabilidades e decisões próprias;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads, sem transferência de relevância ou decisão;
+- contratos com organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização, esportes e sistemas externos;
+- proteção de integrações pessoais, temporárias, compartilhadas, sensíveis e de terceiros;
+- conflitos entre fontes, correções externas, retroatividade, reconstrução, observabilidade, explicabilidade e auditoria.
+
+A Capacidade 06 está **In progress**, com progresso editorial de referência de `90%`.
+
+O próximo bloco deverá consolidar KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas."""
+    text = replace_once(text, marker, integration, "architecture integration section")
+    rules_marker = "342. O participante permanece no controle dos eventos funcionais de Oportunidades Ativas.\n\n## Documentos do domínio"
+    rules = """342. O participante permanece no controle dos eventos funcionais de Oportunidades Ativas.
+343. Integração não representa decisão do participante.
+344. Disponibilidade técnica não representa autorização de uso.
+345. Fonte somente confirma fatos dentro de sua autoridade.
+346. Titularidade não é transferida por integração.
+347. Finalidade deve preceder acesso e minimização deve preceder compartilhamento.
+348. Qualidade técnica, confiança funcional e autoridade permanecem dimensões distintas.
+349. Informação externa não representa relevância automática.
+350. Catálogo não representa Oportunidade Ativa.
+351. Publicidade não representa relevância funcional.
+352. Compra não representa progresso e inscrição não representa aceitação.
+353. Aceitação não representa participação e participação não representa transformação.
+354. Calendário não confirma execução e localização não confirma ação.
+355. Interesse não pode ser inferido por visualização.
+356. Organizações não recebem a jornada pessoal integral.
+357. Contexto sensível não pode alimentar publicidade.
+358. Comissão não altera relevância e patrocínio não altera prioridade.
+359. Alternativas não patrocinadas não podem ser ocultadas.
+360. Transformações não fabricam precisão, causalidade, intenção, interesse, progresso ou diagnóstico.
+361. Integrações não criam objetivos nem Próximos Passos confirmados.
+362. Capacidades consumidoras governam suas próprias decisões.
+363. Guivos Intelligence sugere, compara e explica, mas não decide.
+364. Platform Layer sustenta contratos técnicos sem redefinir semântica.
+365. Produtos especializados governam transações e entregas.
+366. Informação pública não representa uso irrestrito.
+367. Dados de terceiros não formam perfis paralelos.
+368. Integrações temporárias devem possuir expiração.
+369. Pausa interrompe novas coletas e atualizações.
+370. Revogação interrompe novos usos e somente termina após propagação suficiente.
+371. Sincronização deve preservar versão, idempotência, ordenação e reconciliação.
+372. Reprocessamento não duplica efeitos.
+373. Eventos fora de ordem não criam estados impossíveis.
+374. Conflitos entre fontes não são resolvidos silenciosamente.
+375. Não existe hierarquia universal absoluta entre fontes.
+376. Correções externas preservam o valor anterior e produzem efeitos compensatórios.
+377. Associação incerta bloqueia efeitos pessoais e apresentação.
+378. Associação incorreta exige interrupção, recomposição de recortes e reavaliação.
+379. Integrações sensíveis exigem finalidade estrita, minimização reforçada e acesso restrito.
+380. Integrações pessoais devem permitir controle de campos, frequência, consumidores, retenção e notificações.
+381. Integrações compartilhadas preservam estados e confirmações individuais.
+382. Silêncio não representa aceitação de interesse, inscrição, compartilhamento ou responsabilidade.
+383. Falha externa preserva o último estado válido e impede falsa confirmação.
+384. Degradação controlada deve permanecer visível.
+385. Observabilidade e auditoria devem reconstruir a cadeia desde a fonte até o consumidor.
+386. Métricas das integrações avaliam o sistema, não o participante.
+387. O participante permanece no controle das integrações funcionais de Oportunidades Ativas.
+
+## Documentos do domínio"""
+    text = replace_once(text, rules_marker, rules, "architecture rules")
+    text = replace_once(
+        text,
+        "- [PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-eventos-funcionais.md)",
+        "- [PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-eventos-funcionais.md)\n- [PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-integracoes-funcionais.md)",
+        "architecture document link",
+    )
+    path.write_text(text, encoding="utf-8")
+    commit([str(path)], "docs(arquitetura): consolidar integrações de Oportunidades Ativas")
+
+
+def update_roadmap() -> None:
+    path = Path("docs/roadmap.md")
+    text = path.read_text(encoding="utf-8")
+    text = replace_once(text, "version: 8.4.0", "version: 8.5.0", "roadmap version")
+    text = replace_once(
+        text,
+        "- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 80%.",
+        "- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 90%.",
+        "roadmap progress",
+    )
+    text = replace_once(
+        text,
+        "- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0` e `PAS-001-OA-EVENT-001 1.0.0`.",
+        "- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0` e `PAS-001-OA-INTEGRATION-001 1.0.0`.",
+        "roadmap extensions",
+    )
+    text = replace_once(
+        text,
+        "O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 06 — Oportunidades Ativas`.",
+        "O próximo trabalho deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final da `Capacidade 06 — Oportunidades Ativas`.",
+        "roadmap direction",
+    )
+    marker = "- explicabilidade, auditoria e métricas sistêmicas.\n\nA Capacidade 06 está `In progress`, com progresso editorial de referência de `80%`."
+    integration = """- explicabilidade, auditoria e métricas sistêmicas.
+
+`PAS-001-OA-INTEGRATION-001 1.0.0` consolida:
+
+- contrato funcional comum para integrações internas, externas, organizacionais, profissionais, pessoais, temporárias e comerciais;
+- identidade, associação segura, autoridade limitada, finalidade específica e minimização;
+- proveniência e cadeia de transformação reconstruível;
+- separação entre qualidade técnica, confiança funcional e autoridade;
+- temporalidades, validade e atualização em tempo real sem equivalência a verdade definitiva;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, interesse, prioridade, progresso, causalidade ou diagnóstico;
+- sincronização, idempotência, ordenação, conflitos, reconciliação e prevenção de ciclos;
+- permissões, pausa, desconexão, revogação, propagação e retenção;
+- falha segura e degradação controlada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções, Experiências e Evolução;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização, esportes, canais conversacionais e processos externos;
+- proteção de dados sensíveis, terceiros, relações comerciais e neutralidade funcional;
+- observabilidade, explicabilidade, auditoria e responsabilidades de produtores e consumidores.
+
+A Capacidade 06 está `In progress`, com progresso editorial de referência de `90%`."""
+    text = replace_once(text, marker, integration, "roadmap integration section")
+    text = text.replace(
+        "| 06 — Oportunidades Ativas | In progress | 80% |",
+        "| 06 — Oportunidades Ativas | In progress | 90% |",
+    )
+    start = text.index("## Ponto exato de retomada")
+    replacement = """## Ponto exato de retomada
+
+Retomar nos **KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas**.
+
+Próxima entrega:
+
+1. famílias de indicadores e KPIs sistêmicos;
+2. indicadores de admissão, relevância, elegibilidade, disponibilidade, transparência, controle e integração;
+3. guardrails críticos de tolerância zero;
+4. construção da baseline antes de metas permanentes;
+5. painel de saúde e níveis de desempenho funcional;
+6. cenários funcionalmente ideal, alternativo e limite;
+7. critérios de conclusão e reabertura;
+8. lacunas bloqueantes e não bloqueantes;
+9. contrato final da Capacidade 06;
+10. definição da Capacidade 07 — Intervenções Contextuais como próxima frente oficial.
+"""
+    text = text[:start] + replacement
+    path.write_text(text, encoding="utf-8")
+    commit([str(path)], "docs(roadmap): avançar integrações de Oportunidades Ativas")
+
+
+def update_board() -> None:
+    path = Path("docs/project/knowledge-board.md")
+    text = path.read_text(encoding="utf-8")
+    text = replace_once(text, "version: 8.5.0", "version: 8.6.0", "board version")
+    event_row = "| PAS-001-OA-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Oportunidades Ativas |"
+    text = replace_once(
+        text,
+        event_row,
+        event_row + "\n| PAS-001-OA-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Oportunidades Ativas |",
+        "board asset row",
+    )
+    text = replace_once(
+        text,
+        "| Extensão normativa vigente | `PAS-001-OA-EVENT-001 1.0.0` |",
+        "| Extensão normativa vigente | `PAS-001-OA-INTEGRATION-001 1.0.0` |",
+        "board current extension",
+    )
+    text = replace_once(
+        text,
+        "| Progresso editorial de Oportunidades Ativas | `80%` |",
+        "| Progresso editorial de Oportunidades Ativas | `90%` |",
+        "board progress",
+    )
+    text = replace_once(
+        text,
+        "| Foco imediato | Consolidar as integrações funcionais das Oportunidades Ativas |",
+        "| Foco imediato | Consolidar KPIs, guardrails, baseline, cenários e contrato final das Oportunidades Ativas |",
+        "board focus",
+    )
+    text = replace_once(
+        text,
+        "| 06 — Oportunidades Ativas | In progress — 80% | Fundamentos, ciclo, visualização e eventos consolidados; integrações funcionais são a próxima entrega |",
+        "| 06 — Oportunidades Ativas | In progress — 90% | Fundamentos, ciclo, visualização, eventos e integrações consolidados; contrato final é a próxima entrega |",
+        "board capacity row",
+    )
+    marker = "- explicabilidade, auditoria e métricas que avaliam o sistema.\n\n## Conceitos internos preservados"
+    integration = """- explicabilidade, auditoria e métricas que avaliam o sistema.
+
+### Integrações funcionais
+
+- integração definida como intercâmbio governado, sem transferência automática de decisão;
+- contrato comum com produtor, consumidor, participante, finalidade, modo, autoridade, escopo, sensibilidade, proveniência, qualidade, confiança, validade, frequência, retenção, relação comercial, sincronização e revogação;
+- identidade e associação seguras, com bloqueio de efeitos pessoais diante de incerteza;
+- autoridade de cada fonte limitada ao fato que pode legitimamente confirmar;
+- separação entre qualidade técnica, confiança funcional e autoridade;
+- temporalidades e validade próprias para fatos, registros externos, sincronização, processamento, aplicação, propagação e correção;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, interesse, prioridade, causalidade, progresso, transformação ou precisão;
+- sincronização com versão, idempotência, sequência, conflitos, reconciliação e prevenção de ciclos;
+- finalidade específica, minimização, permissões, pausa, desconexão, revogação e propagação suficiente;
+- falha segura e degradação controlada sem ocultação;
+- integrações com todas as capacidades do Journey, preservando decisões próprias;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- contratos com organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização, esportes, canais e processos externos;
+- proteção de integrações pessoais, temporárias, compartilhadas, sensíveis e de terceiros;
+- eventos funcionais, métricas, observabilidade, explicabilidade, auditoria e responsabilidades.
+
+## Conceitos internos preservados"""
+    text = replace_once(text, marker, integration, "board integration section")
+    text = text.replace(
+        "| Oportunidades Ativas | In progress — 80% |",
+        "| Oportunidades Ativas | In progress — 90% |",
+    )
+    text = replace_once(
+        text,
+        "| Eventos Funcionais de Oportunidades Ativas | Normative 1.0.0 |",
+        "| Eventos Funcionais de Oportunidades Ativas | Normative 1.0.0 |\n| Integrações Funcionais de Oportunidades Ativas | Normative 1.0.0 |\n| Integração funcional de oportunidade | Intercâmbio governado de sinais, fatos, propostas, comandos, recortes e solicitações de reavaliação |\n| Sincronização de oportunidade | Processo versionado, idempotente e reconciliável, distinto de decisão funcional |\n| Revogação de integração | Interrupção de novos usos concluída somente após propagação suficiente |",
+        "board concepts",
+    )
+    text = text.replace("| Roadmap | 8.4.0 |", "| Roadmap | 8.5.0 |")
+    text = text.replace("| Knowledge Board | 8.5.0 |", "| Knowledge Board | 8.6.0 |")
+    text = replace_once(
+        text,
+        "| PAS-001-OA-EVENT-001 | Active 1.0.0 |",
+        "| PAS-001-OA-EVENT-001 | Active 1.0.0 |\n| PAS-001-OA-INTEGRATION-001 | Active 1.0.0 |",
+        "board governance",
+    )
+    text = replace_once(
+        text,
+        "Consolidar as **integrações funcionais das Oportunidades Ativas**, incluindo capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas, catálogos, calendários, localização, sistemas externos, finalidade, minimização, proveniência, sincronização, revogação, propagação, auditoria e falha segura.",
+        "Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final das Oportunidades Ativas**.",
+        "board next activity",
+    )
+    path.write_text(text, encoding="utf-8")
+    commit([str(path)], "docs(board): registrar integrações de Oportunidades Ativas")
+
+
+def update_matrix_and_mkdocs() -> None:
+    path = Path("docs/project/canonical-consolidation-matrix.md")
+    text = path.read_text(encoding="utf-8")
+    text = replace_once(text, "version: 1.6.3", "version: 1.6.4", "matrix version")
+    contract_row = "| Contrato de evento de oportunidade | Manter | Estrutura comum com identidade, agregado, participante, ator, autoridade, fonte, temporalidade, correlação, causalidade, sensibilidade, permissões e proveniência |"
+    text = replace_once(
+        text,
+        contract_row,
+        contract_row
+        + "\n| Integração funcional de oportunidade | Refinar | Intercâmbio governado de sinais, fatos, propostas, comandos, evidências, recortes e solicitações de reavaliação sem transferência de decisão |\n| Contrato de integração de oportunidade | Manter | Define produtor, consumidor, participante, finalidade, modo, autoridade, campos, sensibilidade, proveniência, qualidade, confiança, validade, retenção, sincronização e revogação |\n| Sincronização de oportunidade | Manter | Processo versionado, idempotente, ordenado e reconciliável que não redefine relevância, interesse ou decisão |\n| Revogação de integração de oportunidade | Refinar | Interrompe novos acessos e usos e somente é concluída após propagação suficiente |",
+        "matrix concepts",
+    )
+    text = replace_once(
+        text,
+        "| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida, visualização e eventos funcionais consolidados e progresso editorial de 80% |",
+        "| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida, visualização, eventos funcionais e integrações consolidados e progresso editorial de 90% |",
+        "matrix capacity",
+    )
+    event_doc_row = "| Eventos Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-EVENT-001 1.0.0 define agregado, estrutura comum, 19 famílias, autoridade, temporalidade, correção compensatória, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |"
+    text = replace_once(
+        text,
+        event_doc_row,
+        event_doc_row
+        + "\n| Integrações Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-INTEGRATION-001 1.0.0 define contrato comum, identidade, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, fontes externas, observabilidade e falha segura |",
+        "matrix integration document",
+    )
+    text = replace_once(
+        text,
+        "As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-EVENT-001 1.0.0` consolida os contratos dos eventos funcionais da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 80% e preserva autoridade, finalidade, temporalidade, imutabilidade histórica, correção compensatória, neutralidade comercial, idempotência, ordenação, concorrência, reconstrução e controle do participante, sem promover candidatos arquiteturais à Canon.",
+        "As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-INTEGRATION-001 1.0.0` consolida as integrações funcionais da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 90% e preserva titularidade, autoridade, finalidade, minimização, proveniência, sincronização, revogação, neutralidade comercial, proteção de terceiros, falha segura e controle do participante, sem promover candidatos arquiteturais à Canon.",
+        "matrix reconciliation",
+    )
+    text = replace_once(
+        text,
+        "Consolidar as **integrações funcionais da Capacidade de Oportunidades Ativas**, incluindo capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas, catálogos, calendários, localização, sistemas externos, finalidade, minimização, proveniência, sincronização, revogação, propagação, auditoria e falha segura.",
+        "Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Oportunidades Ativas**.",
+        "matrix next review",
+    )
+    path.write_text(text, encoding="utf-8")
+
+    mkdocs = Path("mkdocs.yml")
+    text = mkdocs.read_text(encoding="utf-8")
+    old = "      - PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md"
+    if old not in text:
+        raise RuntimeError("Missing MkDocs OA event entry")
+    text = text.replace(
+        old,
+        old
+        + "\n      - PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md",
+        1,
+    )
+    mkdocs.write_text(text, encoding="utf-8")
+    commit(
+        [str(path), str(mkdocs)],
+        "docs(canon): consolidar integrações de Oportunidades Ativas",
+    )
+
+
+def update_changelog_and_finish() -> None:
+    path = Path("CHANGELOG.md")
+    text = path.read_text(encoding="utf-8")
+    marker = "Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.\n\n"
+    if marker not in text:
+        raise RuntimeError("Missing changelog header")
+    entry = """## 0.34.4 — Active Opportunities Functional Integrations
+
+- Criação de `PAS-001-OA-INTEGRATION-001 — Integrações Funcionais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Definição da integração funcional como intercâmbio governado de sinais, fatos, propostas, comandos, evidências, consultas, recortes, estados, confirmações, resultados externos e solicitações de reavaliação.
+- Consolidação dos princípios de titularidade, autoridade limitada, finalidade explícita, minimização, proveniência, temporalidade, neutralidade comercial, revogabilidade, explicabilidade, idempotência, ordenação, prevenção de ciclos, proteção de terceiros e falha segura.
+- Definição dos tipos internos, externos, organizacionais, institucionais, profissionais, pessoais, temporários, públicos, comerciais, comunitários, transacionais, síncronos, assíncronos e bidirecionais.
+- Formalização dos modos de consulta, leitura, proposição, registro, confirmação, atualização, sincronização, notificação, execução externa, compartilhamento, exportação, revogação e auditoria.
+- Definição do contrato funcional comum com produtor, consumidor, participante, finalidade, modo, autoridade, campos, sensibilidade, fonte, proveniência, qualidade, confiança, validade, frequência, retenção, permissões, relação comercial, sincronização e revogação.
+- Consolidação dos requisitos de admissão e das integrações proibidas por finalidade genérica, acesso integral, redistribuição irrestrita, exploração de vulnerabilidade, mistura entre publicidade e relevância ou ausência de auditoria.
+- Definição das regras de identidade, associação incerta, associação incorreta e recomposição de recortes.
+- Limitação da autoridade de fornecedores, organizações, plataformas comerciais, instituições públicas, profissionais, participantes, Guivos Intelligence e Guivos Ads.
+- Formalização da proveniência e da cadeia reconstruível de registro original, validação, normalização, classificação, enriquecimento, avaliação, recorte e consumo.
+- Separação entre qualidade técnica, confiança funcional e autoridade.
+- Definição das temporalidades de fato, registro externo, publicação, sincronização, conhecimento, processamento, aplicação, propagação e correção.
+- Registro da atualização em tempo real sem equivalência a verdade definitiva, autorização, relevância, interesse, execução ou progresso.
+- Definição das transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, aprovação, intenção, interesse, prioridade, urgência pessoal, compromisso, causalidade, resultado, progresso, transformação, diagnóstico ou precisão inexistente.
+- Consolidação da sincronização com versão, idempotência, cursor, sequência, duplicidade, atraso, conflito, atualização parcial, indisponibilidade, repetição e reconciliação.
+- Definição dos estados da sincronização e do tratamento de divergências sem escolha comercial silenciosa.
+- Formalização da prevenção de ciclos entre Oportunidades Ativas, Próximos Passos e capacidades consumidoras.
+- Definição de finalidade específica, minimização, recortes funcionais e permissões granulares.
+- Consolidação de consentimento quando aplicável, pausa, desconexão, revogação, propagação, retenção, falha segura e degradação controlada.
+- Definição das integrações com Captura de Contexto e Contexto Vivo.
+- Consolidação das integrações com Objetivos, Eventos de Vida e Próximos Passos, sem criação, alteração, conclusão ou imposição de decisão.
+- Definição da integração com Intervenções Contextuais, preservando a autoridade sobre momento, canal, frequência, tom e silêncio da apresentação.
+- Consolidação das relações com Experiências e Evolução Contínua sem utilizar oportunidades, compras, inscrições ou valor gasto como medida de transformação.
+- Formalização das capacidades da Guivos Intelligence e de seus limites sobre ativação, interesse, inscrição, contratação, aprovação, compromisso e transformação.
+- Definição das responsabilidades técnicas e dos limites semânticos da Platform Layer.
+- Consolidação das integrações com Guivos Business, Mall, Travel, Media e Ads.
+- Definição dos contratos com organizações, fornecedores e serviços profissionais.
+- Registro das integrações educacionais, de saúde, financeiras, calendários, localização, esportes, organizações sociais, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas.
+- Definição das integrações pessoais e temporárias, com controle de campos, finalidade, frequência, consumidores, período, retenção, expiração e notificações.
+- Proteção de informações de terceiros e de oportunidades compartilhadas, com confirmações individualizadas e ausência de aceitação por silêncio.
+- Consolidação dos canais conversacionais, notificações, busca integrada, processos externos, retornos e falhas externas.
+- Definição dos conflitos entre fontes, correções externas, retroatividade e reconstrução.
+- Registro dos eventos funcionais das integrações, métricas sistêmicas, observabilidade, explicabilidade e auditoria.
+- Consolidação das responsabilidades de produtores e consumidores e das integrações funcionalmente proibidas.
+- Atualização da Arquitetura de Produtos para `1.6.4` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `8.5.0`, do Knowledge Board para `8.6.0` e da Matriz de Consolidação Canônica para `1.6.4`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 06 no estado `In progress` e elevação do progresso editorial de referência para `90%`.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição dos KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas como próximo ponto exato de retomada.
+
+"""
+    text = text.replace(marker, marker + entry, 1)
+    path.write_text(text, encoding="utf-8")
+
+    normative = Path(
+        "docs/product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md"
+    ).read_text(encoding="utf-8")
+    checks = {
+        "start section": "# 2524. Finalidade das integrações" in normative,
+        "end section": "# 2666. Continuidade normativa" in normative,
+        "no generated ids": 'id="' not in normative,
+        "progress": "de `80%` para `90%`" in normative,
+        "next contract": "KPIs, guardrails, baseline funcional" in normative,
+        "README progress": "In progress — 90%" in Path("README.md").read_text(encoding="utf-8"),
+        "roadmap version": "version: 8.5.0" in Path("docs/roadmap.md").read_text(encoding="utf-8"),
+        "board version": "version: 8.6.0" in Path("docs/project/knowledge-board.md").read_text(encoding="utf-8"),
+        "matrix version": "version: 1.6.4" in Path("docs/project/canonical-consolidation-matrix.md").read_text(encoding="utf-8"),
+        "architecture version": "version: 1.6.4" in Path("docs/product-architecture/index.md").read_text(encoding="utf-8"),
+        "navigation": "pas-001-oportunidades-ativas-integracoes-funcionais.md" in Path("mkdocs.yml").read_text(encoding="utf-8"),
+        "changelog": "## 0.34.4 — Active Opportunities Functional Integrations" in text,
+    }
+    failed = [name for name, ok in checks.items() if not ok]
+    if failed:
+        raise RuntimeError("Validation failed: " + ", ".join(failed))
+
+    run("git", "diff", "--check")
+    run("git", "add", "CHANGELOG.md")
+    run("git", "rm", ".github/workflows/apply-approved-repository-update.yml")
+    run("git", "rm", ".github/scripts/apply_oa_integration.py")
+    run("git", "commit", "-m", "docs(changelog): registrar integrações de Oportunidades Ativas")
+    branch = os.environ["GITHUB_REF_NAME"]
+    run("git", "push", "origin", f"HEAD:{branch}")
+
+
+def main() -> None:
+    update_readme_and_index()
+    update_architecture()
+    update_roadmap()
+    update_board()
+    update_matrix_and_mkdocs()
+    update_changelog_and_finish()
+
+
+if __name__ == "__main__":
+    main()
