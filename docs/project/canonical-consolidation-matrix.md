@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.6.3
+version: 1.6.4
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -100,6 +100,10 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Registro de Oportunidade | Manter | Agregado funcional que preserva identidade, estados, disponibilidade, elegibilidade, relevância, risco, relações, permissões, versões e histórico |
 | Evento funcional de oportunidade | Refinar | Fato reconhecido e persistido sobre o Registro de Oportunidade, versionado, imutável e protegido por autoridade, finalidade e idempotência |
 | Contrato de evento de oportunidade | Manter | Estrutura comum com identidade, agregado, participante, ator, autoridade, fonte, temporalidade, correlação, causalidade, sensibilidade, permissões e proveniência |
+| Integração funcional de oportunidade | Refinar | Intercâmbio governado de sinais, fatos, propostas, comandos, evidências, recortes e solicitações de reavaliação sem transferência de decisão |
+| Contrato de integração de oportunidade | Manter | Define produtor, consumidor, participante, finalidade, modo, autoridade, campos, sensibilidade, proveniência, qualidade, confiança, validade, retenção, sincronização e revogação |
+| Sincronização de oportunidade | Manter | Processo versionado, idempotente, ordenado e reconciliável que não redefine relevância, interesse ou decisão |
+| Revogação de integração de oportunidade | Refinar | Interrompe novos acessos e usos e somente é concluída após propagação suficiente |
 | Ativação de oportunidade | Refinar | Reconhecimento de que a oportunidade atingiu o limiar funcional de admissão; não representa apresentação, interesse, aceitação ou contratação |
 | Relevância de oportunidade | Refinar | Compatibilidade contextual com direção, movimento, temporalidade, disponibilidade, elegibilidade, custo, risco, preferências e restrições |
 | Elegibilidade de oportunidade | Refinar | Compatibilidade entre requisitos e condições conhecidas; não representa aprovação, aceitação ou acesso garantido |
@@ -190,11 +194,12 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
 | Próximos Passos | Manter | Capacidade 05 funcionalmente concluída por seis extensões normativas e progresso editorial de 100% |
 | KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos | Manter | PAS-001-PP-CONTRACT-001 1.0.0 define 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final |
-| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida, visualização e eventos funcionais consolidados e progresso editorial de 80% |
+| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida, visualização, eventos funcionais e integrações consolidados e progresso editorial de 90% |
 | Fundamentos Iniciais da Capacidade de Oportunidades Ativas | Manter | PAS-001-OA-FOUNDATION-001 1.0.0 define singularidade, conceito, distinções, titularidade, autoridade, relevância, elegibilidade, disponibilidade, temporalidade, custo, risco, patrocínio, neutralidade e controle |
 | Ciclo de Vida das Oportunidades Ativas | Manter | PAS-001-OA-LIFECYCLE-001 1.0.0 define estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, inscrições, atualizações, encerramentos, revogação e falha segura |
 | Visualização e Controle das Oportunidades Ativas | Manter | PAS-001-OA-VIEW-001 1.0.0 define `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, custos, riscos, controles, privacidade e consistência entre canais |
 | Eventos Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-EVENT-001 1.0.0 define agregado, estrutura comum, 19 famílias, autoridade, temporalidade, correção compensatória, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
+| Integrações Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-INTEGRATION-001 1.0.0 define contrato comum, identidade, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, fontes externas, observabilidade e falha segura |
 | Singularidade de Oportunidades Ativas | Manter | Governa a relevância atual de meios disponíveis para uma jornada específica |
 | Oportunidade candidata | Manter | Registro ainda em avaliação e sem ativação funcional |
 | Oportunidade Ativa | Refinar | Meio admissível e potencialmente compatível que pode ser apresentado, salvo, comparado ou utilizado como apoio |
@@ -249,8 +254,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-EVENT-001 1.0.0` consolida os contratos dos eventos funcionais da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 80% e preserva autoridade, finalidade, temporalidade, imutabilidade histórica, correção compensatória, neutralidade comercial, idempotência, ordenação, concorrência, reconstrução e controle do participante, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-INTEGRATION-001 1.0.0` consolida as integrações funcionais da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 90% e preserva titularidade, autoridade, finalidade, minimização, proveniência, sincronização, revogação, neutralidade comercial, proteção de terceiros, falha segura e controle do participante, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar as **integrações funcionais da Capacidade de Oportunidades Ativas**, incluindo capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas, catálogos, calendários, localização, sistemas externos, finalidade, minimização, proveniência, sincronização, revogação, propagação, auditoria e falha segura.
+Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Oportunidades Ativas**.
