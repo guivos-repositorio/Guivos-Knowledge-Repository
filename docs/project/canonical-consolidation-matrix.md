@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.6.2
+version: 1.6.3
 owner: Guivos
-last_updated: 2026-07-14
+last_updated: 2026-07-15
 ---
 
 # Matriz de Consolidação Canônica
@@ -97,6 +97,9 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Oportunidade | Refinar | Meio potencialmente disponível para apoiar objetivo, Próximo Passo, Evento de Vida, necessidade ou condição contextual |
 | Oportunidade candidata | Manter | Meio identificado que ainda depende de validação de fonte, disponibilidade, elegibilidade, risco, relevância e transparência comercial |
 | Oportunidade Ativa | Refinar | Meio suficientemente disponível, legítimo, contextual e potencialmente compatível; distinto de recomendação, anúncio, Próximo Passo ou compromisso |
+| Registro de Oportunidade | Manter | Agregado funcional que preserva identidade, estados, disponibilidade, elegibilidade, relevância, risco, relações, permissões, versões e histórico |
+| Evento funcional de oportunidade | Refinar | Fato reconhecido e persistido sobre o Registro de Oportunidade, versionado, imutável e protegido por autoridade, finalidade e idempotência |
+| Contrato de evento de oportunidade | Manter | Estrutura comum com identidade, agregado, participante, ator, autoridade, fonte, temporalidade, correlação, causalidade, sensibilidade, permissões e proveniência |
 | Ativação de oportunidade | Refinar | Reconhecimento de que a oportunidade atingiu o limiar funcional de admissão; não representa apresentação, interesse, aceitação ou contratação |
 | Relevância de oportunidade | Refinar | Compatibilidade contextual com direção, movimento, temporalidade, disponibilidade, elegibilidade, custo, risco, preferências e restrições |
 | Elegibilidade de oportunidade | Refinar | Compatibilidade entre requisitos e condições conhecidas; não representa aprovação, aceitação ou acesso garantido |
@@ -111,9 +114,13 @@ A Foundation encontra-se congelada na baseline `A2-B3`.
 | Cancelamento de oportunidade | Manter | Interrupção explícita pelo responsável, distinta de pausa, indisponibilidade, expiração e encerramento |
 | Contestação de oportunidade | Manter | Questionamento material que limita apresentação e automações até resolução |
 | Correção de oportunidade | Manter | Registro compensatório que preserva valor anterior, fonte, motivo, efeitos e consumidores notificados |
+| Correção compensatória de oportunidade | Manter | Novo evento que corrige significado sem alterar ou excluir o evento histórico original |
 | Reabertura de oportunidade | Refinar | Retorno de ciclo arquivado após nova avaliação; não reutiliza identidade diante de mudança material |
 | Idempotência de oportunidade | Manter | Reprocessamento não duplica oportunidade, ativação, apresentação, interesse, inscrição, vínculo ou arquivamento |
 | Ordenação de oportunidade | Manter | Eventos fora de ordem não podem produzir ativação após encerramento, apresentação após revogação ou aceitação antes do envio |
+| Concorrência de oportunidade | Manter | Alterações simultâneas exigem versão esperada, preservação dos fatos e reconciliação sem sobrescrita silenciosa |
+| Propagação de revogação de oportunidade | Refinar | Revogação somente é concluída após bloqueio de novos usos e confirmação suficiente dos consumidores |
+| Reconstrução de oportunidade | Manter | Estado recomposto por eventos válidos, versões, correções, permissões, revogações e decisões de reconciliação |
 | Patrocínio de oportunidade | Refinar | Relação de financiamento identificada que não pode alterar relevância, prioridade ou ordem funcional |
 | Relação comercial de oportunidade | Refinar | Comissão, afiliação, promoção paga, exclusividade, parceria ou vantagem financeira que deve permanecer transparente |
 | Escassez de oportunidade | Refinar | Condição real ou estimada de capacidade e janela, distinta de urgência funcional do participante |
@@ -183,10 +190,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
 | Próximos Passos | Manter | Capacidade 05 funcionalmente concluída por seis extensões normativas e progresso editorial de 100% |
 | KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos | Manter | PAS-001-PP-CONTRACT-001 1.0.0 define 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final |
-| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida e visualização consolidados e progresso editorial de 60% |
+| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida, visualização e eventos funcionais consolidados e progresso editorial de 80% |
 | Fundamentos Iniciais da Capacidade de Oportunidades Ativas | Manter | PAS-001-OA-FOUNDATION-001 1.0.0 define singularidade, conceito, distinções, titularidade, autoridade, relevância, elegibilidade, disponibilidade, temporalidade, custo, risco, patrocínio, neutralidade e controle |
 | Ciclo de Vida das Oportunidades Ativas | Manter | PAS-001-OA-LIFECYCLE-001 1.0.0 define estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, inscrições, atualizações, encerramentos, revogação e falha segura |
 | Visualização e Controle das Oportunidades Ativas | Manter | PAS-001-OA-VIEW-001 1.0.0 define `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, custos, riscos, controles, privacidade e consistência entre canais |
+| Eventos Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-EVENT-001 1.0.0 define agregado, estrutura comum, 19 famílias, autoridade, temporalidade, correção compensatória, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Singularidade de Oportunidades Ativas | Manter | Governa a relevância atual de meios disponíveis para uma jornada específica |
 | Oportunidade candidata | Manter | Registro ainda em avaliação e sem ativação funcional |
 | Oportunidade Ativa | Refinar | Meio admissível e potencialmente compatível que pode ser apresentado, salvo, comparado ou utilizado como apoio |
@@ -241,8 +249,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-VIEW-001 1.0.0` consolida a visualização e o controle da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 60% e preserva relevância funcional, neutralidade comercial, privacidade, acessibilidade e controle do participante, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-EVENT-001 1.0.0` consolida os contratos dos eventos funcionais da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 80% e preserva autoridade, finalidade, temporalidade, imutabilidade histórica, correção compensatória, neutralidade comercial, idempotência, ordenação, concorrência, reconstrução e controle do participante, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **contratos dos eventos funcionais da Capacidade de Oportunidades Ativas**, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, ativação, apresentação, interação, elegibilidade, disponibilidade, transparência comercial, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência, auditoria e falha segura.
+Consolidar as **integrações funcionais da Capacidade de Oportunidades Ativas**, incluindo capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas, catálogos, calendários, localização, sistemas externos, finalidade, minimização, proveniência, sincronização, revogação, propagação, auditoria e falha segura.
