@@ -1,0 +1,24 @@
+name: Apply approved repository update
+
+on:
+  push:
+    branches:
+      - 'oa-integration-run-*'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configure Git
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Apply approved update
+        run: python .github/scripts/apply_oa_integration.py
