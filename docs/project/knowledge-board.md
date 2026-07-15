@@ -1,9 +1,9 @@
 ---
 title: Knowledge Board
 status: active
-version: 8.4.0
+version: 8.5.0
 owner: Guivos
-last_updated: 2026-07-14
+last_updated: 2026-07-15
 ---
 
 # Knowledge Board
@@ -27,6 +27,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-OA-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Oportunidades Ativas |
 | PAS-001-OA-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Oportunidades Ativas |
 | PAS-001-OA-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Oportunidades Ativas |
+| PAS-001-OA-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Oportunidades Ativas |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -43,13 +44,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos` |
 | Capacidade ativa | `06 — Oportunidades Ativas` |
 | Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-OA-VIEW-001 1.0.0` |
-| Progresso editorial de Oportunidades Ativas | `60%` |
+| Extensão normativa vigente | `PAS-001-OA-EVENT-001 1.0.0` |
+| Progresso editorial de Oportunidades Ativas | `80%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar os contratos dos eventos funcionais das Oportunidades Ativas |
+| Foco imediato | Consolidar as integrações funcionais das Oportunidades Ativas |
 
 ## Capacidades do Journey
 
@@ -60,7 +61,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
-| 06 — Oportunidades Ativas | In progress — 60% | Fundamentos, ciclo de vida e visualização consolidados; eventos funcionais são a próxima entrega |
+| 06 — Oportunidades Ativas | In progress — 80% | Fundamentos, ciclo, visualização e eventos consolidados; integrações funcionais são a próxima entrega |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
@@ -168,6 +169,28 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 - controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
 - acessibilidade técnica e cognitiva, consistência entre canais, conflito de informação e falha segura.
 
+### Eventos funcionais
+
+- distinção normativa entre comando, proposta e evento funcional reconhecido;
+- persistência funcional suficiente antes da publicação;
+- agregado `Registro de Oportunidade` e estrutura comum versionada;
+- identidade permanente, titular, ator, papel, autoridade, fonte, finalidade, proveniência e sensibilidade;
+- temporalidades de fato, declaração, conhecimento, reconhecimento, persistência, aplicação, propagação e correção;
+- correlação e causalidade funcional sem equivalência automática;
+- 19 famílias de eventos de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, manutenção, correção, permissões, propagação, visualização e falhas;
+- disponibilidade objetiva confirmada somente por fonte autorizada;
+- elegibilidade estimada, confirmada e decisão externa preservadas como fatos distintos;
+- relevância sem influência positiva de comissão, patrocínio, margem, clique, tempo de tela ou vulnerabilidade;
+- apresentação governada por Intervenções Contextuais;
+- visualização, salvamento, interesse, inscrição, aceitação, contratação, participação e resultado separados;
+- correção compensatória, contestação e histórico imutável;
+- revogação concluída somente após propagação suficiente;
+- recortes mínimos e decisões próprias das capacidades consumidoras;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade e reconstrução;
+- retenção e logs minimizados para oportunidades sensíveis;
+- responsabilidades de produtores e consumidores;
+- explicabilidade, auditoria e métricas que avaliam o sistema.
+
 ## Conceitos internos preservados
 
 | Conceito | Estado |
@@ -176,11 +199,14 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
 | Próximos Passos | Functionally complete — 100% |
-| Oportunidades Ativas | In progress — 60% |
+| Oportunidades Ativas | In progress — 80% |
 | Fundamentos de Oportunidades Ativas | Normative 1.0.0 |
 | Ciclo de Vida de Oportunidades Ativas | Normative 1.0.0 |
 | Visualização e Controle de Oportunidades Ativas | Normative 1.0.0 |
+| Eventos Funcionais de Oportunidades Ativas | Normative 1.0.0 |
 | Minhas Oportunidades | Superfície funcional de descoberta, comparação e controle, distinta de feed publicitário |
+| Registro de Oportunidade | Agregado principal que preserva estado funcional, informação, disponibilidade, elegibilidade, relevância, risco, relações e histórico |
+| Evento funcional de oportunidade | Fato reconhecido, versionado, imutável e publicado após persistência suficiente |
 | Oportunidade candidata | Meio identificado que ainda depende de avaliação funcional |
 | Oportunidade Ativa | Meio suficientemente disponível, legítimo, contextual e potencialmente compatível |
 | Estado funcional da oportunidade | Condição operacional própria, distinta da qualidade da informação |
@@ -196,6 +222,9 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | Título neutro | Identificação minimizada para proteger oportunidade sensível |
 | Custo total | Custos diretos, indiretos e pendentes apresentados sem ocultação material |
 | Alternativa não patrocinada | Opção preservada independentemente de parceria ou retorno financeiro |
+| Correção compensatória | Novo evento que corrige significado sem reescrever fatos históricos |
+| Revogação propagada | Estado reconhecido somente após bloqueio de novos usos e confirmação suficiente dos consumidores |
+| Idempotência de oportunidade | Reprocessamento sem duplicação de efeitos materiais |
 | Pausa de oportunidade | Suspensão temporária de novas apresentações e automações |
 | Indisponibilidade | Impossibilidade atual com possibilidade de retorno |
 | Expiração | Fim da janela ou validade funcional, preservando histórico |
@@ -218,8 +247,8 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 8.3.0 |
-| Knowledge Board | 8.4.0 |
+| Roadmap | 8.4.0 |
+| Knowledge Board | 8.5.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -229,6 +258,7 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | PAS-001-OA-FOUNDATION-001 | Active 1.0.0 |
 | PAS-001-OA-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-OA-VIEW-001 | Active 1.0.0 |
+| PAS-001-OA-EVENT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -238,4 +268,4 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 ## Próxima atividade
 
-Consolidar os **contratos dos eventos funcionais das Oportunidades Ativas**, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, ativação, apresentação, interação, elegibilidade, disponibilidade, transparência comercial, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência, auditoria e falha segura.
+Consolidar as **integrações funcionais das Oportunidades Ativas**, incluindo capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas, catálogos, calendários, localização, sistemas externos, finalidade, minimização, proveniência, sincronização, revogação, propagação, auditoria e falha segura.
