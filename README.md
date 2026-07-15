@@ -11,8 +11,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos
-- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 80%
-- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001 e PAS-001-OA-EVENT-001, todas em 1.0.0
+- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 90%
+- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001 e PAS-001-OA-INTEGRATION-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -114,23 +114,36 @@ A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de 
 - responsabilidades de produtores e consumidores sem transferência de decisão;
 - neutralidade comercial e proteção reforçada de oportunidades sensíveis.
 
-A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **80%**.
+`PAS-001-OA-INTEGRATION-001 1.0.0` consolida:
+
+- contrato funcional comum para integrações internas, externas, organizacionais, profissionais e comerciais;
+- identidade, associação, autoridade, finalidade, minimização, proveniência, qualidade, confiança e temporalidade;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, interesse, prioridade, progresso ou transformação;
+- sincronização com versão, idempotência, ordenação, conflitos, prevenção de ciclos e degradação controlada;
+- pausa, desconexão, revogação e propagação confirmada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções Contextuais, Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads;
+- contratos com organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização e sistemas externos;
+- proteção de oportunidades sensíveis, informações de terceiros e neutralidade comercial;
+- observabilidade, explicabilidade, auditoria e falha segura.
+
+A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **90%**.
 
 ## Ponto exato de retomada
 
-Retomar nas integrações funcionais da Capacidade de Oportunidades Ativas.
+Retomar nos KPIs, guardrails, baseline funcional, cenários e contrato final da Capacidade de Oportunidades Ativas.
 
 Próxima entrega:
 
-- integrações com Captura de Contexto e Contexto Vivo;
-- integrações com Objetivos, Eventos de Vida e Próximos Passos;
-- integração com Intervenções Contextuais, Experiências e Evolução Contínua;
-- limites e responsabilidades da Guivos Intelligence;
-- contratos técnicos da Platform Layer;
-- integrações com Guivos Mall, Travel, Business, Media e Ads;
-- organizações, fornecedores e serviços profissionais;
-- fontes públicas, catálogos, calendários, localização e sistemas externos;
-- finalidade, minimização, proveniência, sincronização, revogação e falha segura.
+- famílias de indicadores e KPIs sistêmicos;
+- guardrails de tolerância zero;
+- baseline funcional antes de metas permanentes;
+- painel de saúde e níveis de desempenho;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão e reabertura;
+- lacunas bloqueantes e não bloqueantes;
+- contrato final da Capacidade 06.
 
 ## Product Engineering
 
@@ -147,7 +160,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
-| 06 — Oportunidades Ativas | In progress — 80% |
+| 06 — Oportunidades Ativas | In progress — 90% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
@@ -164,6 +177,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 - [Ciclo de Vida das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-ciclo-de-vida.md)
 - [Visualização e Controle das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-visualizacao-controle.md)
 - [Eventos Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)
+- [Integrações Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
