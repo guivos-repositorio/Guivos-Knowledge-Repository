@@ -27,8 +27,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-OA-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Oportunidades Ativas |
 | PAS-001-OA-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Oportunidades Ativas |
 | PAS-001-OA-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Oportunidades Ativas |
-| PAS-001-OA-EVENT-001 | Active 1.0.0 |
-| PAS-001-OA-INTEGRATION-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Oportunidades Ativas |
+| PAS-001-OA-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Oportunidades Ativas |
 | PAS-001-OA-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Oportunidades Ativas |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
@@ -284,6 +283,7 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | PAS-001-OA-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-OA-VIEW-001 | Active 1.0.0 |
 | PAS-001-OA-EVENT-001 | Active 1.0.0 |
+| PAS-001-OA-INTEGRATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |

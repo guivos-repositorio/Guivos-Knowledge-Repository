@@ -2,6 +2,50 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.34.4 — Active Opportunities Functional Integrations
+
+- Criação de `PAS-001-OA-INTEGRATION-001 — Integrações Funcionais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Definição da integração funcional como intercâmbio governado de sinais, fatos, propostas, comandos, evidências, consultas, recortes, estados, confirmações, resultados externos e solicitações de reavaliação.
+- Consolidação dos princípios de titularidade, autoridade limitada, finalidade explícita, minimização, proveniência, temporalidade, neutralidade comercial, revogabilidade, explicabilidade, idempotência, ordenação, prevenção de ciclos, proteção de terceiros e falha segura.
+- Definição dos tipos internos, externos, organizacionais, institucionais, profissionais, pessoais, temporários, públicos, comerciais, comunitários, transacionais, síncronos, assíncronos e bidirecionais.
+- Formalização dos modos de consulta, leitura, proposição, registro, confirmação, atualização, sincronização, notificação, execução externa, compartilhamento, exportação, revogação e auditoria.
+- Definição do contrato funcional comum com produtor, consumidor, participante, finalidade, modo, autoridade, campos, sensibilidade, fonte, proveniência, qualidade, confiança, validade, frequência, retenção, permissões, relação comercial, sincronização e revogação.
+- Consolidação dos requisitos de admissão e das integrações proibidas por finalidade genérica, acesso integral, redistribuição irrestrita, exploração de vulnerabilidade, mistura entre publicidade e relevância ou ausência de auditoria.
+- Definição das regras de identidade, associação incerta, associação incorreta e recomposição de recortes.
+- Limitação da autoridade de fornecedores, organizações, plataformas comerciais, instituições públicas, profissionais, participantes, Guivos Intelligence e Guivos Ads.
+- Formalização da proveniência e da cadeia reconstruível de registro original, validação, normalização, classificação, enriquecimento, avaliação, recorte e consumo.
+- Separação entre qualidade técnica, confiança funcional e autoridade.
+- Definição das temporalidades de fato, registro externo, publicação, sincronização, conhecimento, processamento, aplicação, propagação e correção.
+- Registro da atualização em tempo real sem equivalência a verdade definitiva, autorização, relevância, interesse, execução ou progresso.
+- Definição das transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, aprovação, intenção, interesse, prioridade, urgência pessoal, compromisso, causalidade, resultado, progresso, transformação, diagnóstico ou precisão inexistente.
+- Consolidação da sincronização com versão, idempotência, cursor, sequência, duplicidade, atraso, conflito, atualização parcial, indisponibilidade, repetição e reconciliação.
+- Definição dos estados da sincronização e do tratamento de divergências sem escolha comercial silenciosa.
+- Formalização da prevenção de ciclos entre Oportunidades Ativas, Próximos Passos e capacidades consumidoras.
+- Definição de finalidade específica, minimização, recortes funcionais e permissões granulares.
+- Consolidação de consentimento quando aplicável, pausa, desconexão, revogação, propagação, retenção, falha segura e degradação controlada.
+- Definição das integrações com Captura de Contexto e Contexto Vivo.
+- Consolidação das integrações com Objetivos, Eventos de Vida e Próximos Passos, sem criação, alteração, conclusão ou imposição de decisão.
+- Definição da integração com Intervenções Contextuais, preservando a autoridade sobre momento, canal, frequência, tom e silêncio da apresentação.
+- Consolidação das relações com Experiências e Evolução Contínua sem utilizar oportunidades, compras, inscrições ou valor gasto como medida de transformação.
+- Formalização das capacidades da Guivos Intelligence e de seus limites sobre ativação, interesse, inscrição, contratação, aprovação, compromisso e transformação.
+- Definição das responsabilidades técnicas e dos limites semânticos da Platform Layer.
+- Consolidação das integrações com Guivos Business, Mall, Travel, Media e Ads.
+- Definição dos contratos com organizações, fornecedores e serviços profissionais.
+- Registro das integrações educacionais, de saúde, financeiras, calendários, localização, esportes, organizações sociais, voluntariado, comunidades religiosas, serviços jurídicos e fontes públicas.
+- Definição das integrações pessoais e temporárias, com controle de campos, finalidade, frequência, consumidores, período, retenção, expiração e notificações.
+- Proteção de informações de terceiros e de oportunidades compartilhadas, com confirmações individualizadas e ausência de aceitação por silêncio.
+- Consolidação dos canais conversacionais, notificações, busca integrada, processos externos, retornos e falhas externas.
+- Definição dos conflitos entre fontes, correções externas, retroatividade e reconstrução.
+- Registro dos eventos funcionais das integrações, métricas sistêmicas, observabilidade, explicabilidade e auditoria.
+- Consolidação das responsabilidades de produtores e consumidores e das integrações funcionalmente proibidas.
+- Atualização da Arquitetura de Produtos para `1.6.4` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `8.5.0`, do Knowledge Board para `8.6.0` e da Matriz de Consolidação Canônica para `1.6.4`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 06 no estado `In progress` e elevação do progresso editorial de referência para `90%`.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição dos KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas como próximo ponto exato de retomada.
+
 ## 0.34.3 — Active Opportunities Functional Event Contracts
 
 - Criação de `PAS-001-OA-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
