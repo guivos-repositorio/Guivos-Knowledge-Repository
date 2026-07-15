@@ -14974,7 +14974,8 @@ Implementação = realização progressiva
 <ul>
 <li><code>PAS-001-OA-FOUNDATION-001 1.0.0</code> — pergunta central, objetivo, singularidade, definição, distinções, titularidade, autoridade, tipos, elegibilidade, disponibilidade, relevância, custos, riscos, relações comerciais, entradas, saídas e controle;</li>
 <li><code>PAS-001-OA-LIFECYCLE-001 1.0.0</code> — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura;</li>
-<li><code>PAS-001-OA-VIEW-001 1.0.0</code> — <code>Minhas Oportunidades</code>, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles.</li>
+<li><code>PAS-001-OA-VIEW-001 1.0.0</code> — <code>Minhas Oportunidades</code>, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles;</li>
+<li><code>PAS-001-OA-EVENT-001 1.0.0</code> — estrutura comum dos eventos, autoridade, temporalidade, 19 famílias contratuais, correção compensatória, revogação, propagação, idempotência, ordenação, concorrência e reconstrução.</li>
 </ul>
 <p>O ciclo de vida consolida:</p>
 <ul>
@@ -15029,8 +15030,30 @@ Implementação = realização progressiva
 <li>controles de categorias, fontes, contexto, localização, compartilhamento e revogação;</li>
 <li>acessibilidade técnica e cognitiva, consistência entre canais, conflitos de informação e falha segura.</li>
 </ul>
-<p>A Capacidade 06 está <strong>In progress</strong>, com progresso editorial de referência de <code>60%</code>.</p>
-<p>O próximo bloco deverá consolidar os contratos dos eventos funcionais das Oportunidades Ativas.</p>
+<p>Os contratos dos eventos funcionais consolidam:</p>
+<ul>
+<li>comando, proposta e evento como conceitos distintos;</li>
+<li>publicação somente após persistência funcional suficiente;</li>
+<li>agregado <code>Registro de Oportunidade</code> e estrutura comum versionada;</li>
+<li>titular, participante, ator, papel, autoridade, fonte, proveniência, finalidade e sensibilidade;</li>
+<li>temporalidades de fato, declaração, registro externo, conhecimento, reconhecimento, persistência, aplicação, propagação e correção;</li>
+<li>correlação e causalidade funcional sem inferência por proximidade temporal;</li>
+<li>19 famílias de eventos de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, manutenção, correção, permissões, propagação, visualização e falhas;</li>
+<li>disponibilidade confirmada somente por fonte autorizada e sem garantia de acesso;</li>
+<li>elegibilidade estimada separada de confirmação e decisão externa;</li>
+<li>relevância explicável sem comissão, patrocínio, clique, tempo de tela ou vulnerabilidade;</li>
+<li>apresentação governada por Intervenções Contextuais;</li>
+<li>visualização, salvamento, interesse, inscrição, aceitação, contratação, participação e resultado como fatos separados;</li>
+<li>correção compensatória, contestação e histórico imutável;</li>
+<li>revogação concluída somente após propagação suficiente;</li>
+<li>recortes mínimos e decisões próprias das capacidades consumidoras;</li>
+<li>idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e reconstrução;</li>
+<li>retenção e logs minimizados para conteúdo sensível;</li>
+<li>responsabilidades de produtores e consumidores;</li>
+<li>explicabilidade, auditoria e métricas sistêmicas.</li>
+</ul>
+<p>A Capacidade 06 está <strong>In progress</strong>, com progresso editorial de referência de <code>80%</code>.</p>
+<p>O próximo bloco deverá consolidar as integrações funcionais das Oportunidades Ativas.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -15333,6 +15356,48 @@ Implementação = realização progressiva
 <li>O participante deve controlar categorias, fontes, contexto, localização, compartilhamento e revogação.</li>
 <li>Conflitos de informação devem expor versões, fontes, temporalidade e estado provisório sem escolha comercial silenciosa.</li>
 <li>A visualização deve operar com acessibilidade, prevenção de fadiga, falha segura e controle do participante.</li>
+<li>Comando de Oportunidades Ativas não representa fato reconhecido.</li>
+<li>Proposta de oportunidade não representa decisão nem ativação.</li>
+<li>Evento material somente pode ser publicado após persistência funcional suficiente.</li>
+<li>Eventos históricos são imutáveis e correções devem ser compensatórias.</li>
+<li>Titular, participante, ator, papel, fonte e autoridade devem permanecer explícitos e distintos.</li>
+<li>Finalidade e minimização precedem publicação e propagação.</li>
+<li>Tempo do fato, declaração, conhecimento, reconhecimento, persistência, aplicação e correção permanecem separados.</li>
+<li>Correlação não representa causalidade funcional.</li>
+<li>Fonte somente confirma fatos dentro de sua autoridade.</li>
+<li>Disponibilidade confirmada não garante reserva, acesso, elegibilidade ou benefício.</li>
+<li>Elegibilidade estimada não representa confirmação, aprovação ou decisão externa.</li>
+<li>Relevância não pode utilizar comissão, patrocínio, margem, clique, tempo de tela ou vulnerabilidade como fundamento positivo.</li>
+<li>Ativação não representa apresentação e apresentação permanece decisão de Intervenções Contextuais.</li>
+<li>Visualização e eventos de leitura não alteram interesse, prioridade, elegibilidade, disponibilidade ou contratação.</li>
+<li>Interesse exige manifestação inequívoca e escopo autorizado.</li>
+<li>Inscrição, aceitação, contratação, participação, resultado e evolução permanecem fatos distintos.</li>
+<li>Produtos especializados governam transações e entregas e fornecem apenas recortes necessários.</li>
+<li>Alterações de oportunidades vinculadas podem solicitar reavaliação, mas não cancelar ou concluir Próximos Passos.</li>
+<li>Contestação material limita apresentação e automações até resolução.</li>
+<li>Correção preserva valor anterior, fonte, motivo, autoridade e consumidores afetados.</li>
+<li>Revogação interrompe novas avaliações, recortes, compartilhamentos e apresentações incompatíveis.</li>
+<li>Revogação somente é concluída após propagação suficiente.</li>
+<li>Capacidades consumidoras recebem recortes e governam suas próprias decisões.</li>
+<li>Eventos sensíveis exigem payload minimizado, retenção proporcional e logs sem narrativas excessivas.</li>
+<li>Notificações publicitárias possuem contratos distintos das notificações funcionais.</li>
+<li>Reprocessamento não duplica candidatura, ativação, apresentação, interesse, inscrição, vínculo, notificação, contestação, revogação ou arquivamento.</li>
+<li>Duplicidade semântica deve ser detectada mesmo quando eventos possuem identificadores diferentes.</li>
+<li>Eventos fora de ordem não podem criar estados impossíveis.</li>
+<li>Alterações concorrentes exigem versão esperada e reconciliação sem sobrescrita silenciosa.</li>
+<li>Operações compostas devem declarar atomicidade e tornar falhas intermediárias explícitas.</li>
+<li>Reconstrução utiliza eventos válidos, versões, correções, permissões, revogações e decisões de reconciliação.</li>
+<li>Eventos desconhecidos devem ser preservados e rejeitados de forma segura, permitindo reprocessamento posterior.</li>
+<li>Produtores validam identidade, autoridade, finalidade, contrato, temporalidade, proveniência e sensibilidade.</li>
+<li>Consumidores validam versão, permissões, idempotência, ordenação e finalidade sem ampliar autoridade.</li>
+<li>Relações comerciais ocultadas devem limitar apresentação e produzir incidente de governança.</li>
+<li>Publicidade não pode produzir evento funcional neutro de relevância.</li>
+<li>Falha de propagação deve identificar consumidores pendentes.</li>
+<li>Sincronização pendente preserva o último estado válido e reduz automação.</li>
+<li>Falha parcial não representa processamento integralmente concluído.</li>
+<li>Auditoria deve reconstruir o fluxo desde sinal ou comando até evento, recorte, consumidor, processamento, correção ou revogação.</li>
+<li>Métricas dos contratos avaliam o sistema, não o participante.</li>
+<li>O participante permanece no controle dos eventos funcionais de Oportunidades Ativas.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
@@ -15345,6 +15410,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-oportunidades-ativas-fundamentos-iniciais">PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas</a></li>
 <li><a href="#product-architecture-pas-001-oportunidades-ativas-ciclo-de-vida">PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas</a></li>
 <li><a href="#product-architecture-pas-001-oportunidades-ativas-visualizacao-controle">PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas</a></li>
+<li><a href="#product-architecture-pas-001-oportunidades-ativas-eventos-funcionais">PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
