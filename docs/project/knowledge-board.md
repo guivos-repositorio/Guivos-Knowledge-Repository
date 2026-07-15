@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 8.3.0
+version: 8.4.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -26,6 +26,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-PP-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final dos Próximos Passos |
 | PAS-001-OA-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Oportunidades Ativas |
 | PAS-001-OA-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Oportunidades Ativas |
+| PAS-001-OA-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Oportunidades Ativas |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -42,13 +43,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos` |
 | Capacidade ativa | `06 — Oportunidades Ativas` |
 | Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-OA-LIFECYCLE-001 1.0.0` |
-| Progresso editorial de Oportunidades Ativas | `40%` |
+| Extensão normativa vigente | `PAS-001-OA-VIEW-001 1.0.0` |
+| Progresso editorial de Oportunidades Ativas | `60%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar a visualização e o controle das Oportunidades Ativas |
+| Foco imediato | Consolidar os contratos dos eventos funcionais das Oportunidades Ativas |
 
 ## Capacidades do Journey
 
@@ -59,7 +60,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
-| 06 — Oportunidades Ativas | In progress — 40% | Fundamentos e ciclo de vida consolidados; visualização e controle são a próxima entrega |
+| 06 — Oportunidades Ativas | In progress — 60% | Fundamentos, ciclo de vida e visualização consolidados; eventos funcionais são a próxima entrega |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
@@ -135,6 +136,38 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 - revogação de contexto e propagação efetiva;
 - retroatividade, idempotência, ordenação, concorrência, falha segura e reconstrução.
 
+### Visualização e controle
+
+- superfície `Minhas Oportunidades` como visão principal de descoberta, compreensão, comparação e controle;
+- visão geral sem contagem de oportunidades como indicador de qualidade da jornada;
+- ausência legítima sem preenchimento por anúncios ou opções incompatíveis;
+- descoberta por contexto, objetivos, Eventos de Vida, Próximos Passos, busca, localização, curadoria e fontes autorizadas;
+- explicação dos recortes utilizados e opção `Por que estou vendo isto?`;
+- busca direta e proteção reforçada para buscas sensíveis;
+- filtros funcionais e comerciais controláveis pelo participante;
+- ordenação neutra, separada de áreas publicitárias;
+- lista, cartões, mapa, calendário, comparação e agrupamentos;
+- cartões minimizados, títulos funcionais e títulos neutros;
+- indicadores textuais de disponibilidade, elegibilidade, risco, patrocínio, comissão e relação individual;
+- estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual apresentados separadamente;
+- relevância explicável e descrição de razões para não priorização;
+- disponibilidade com fonte, data de verificação e ausência de garantia;
+- elegibilidade com requisitos, pendências e autoridade decisória externa;
+- custo total, gratuidade, riscos e limitações visíveis;
+- transparência de patrocínio, comissão, afiliação, promoção paga, exclusividade e participação na receita;
+- área publicitária identificada e separada da lista funcional;
+- detalhamento progressivo, proveniência, histórico e versões corrigidas;
+- comparação não simplificadora, critérios ajustáveis e alternativas não patrocinadas;
+- salvamento, interesse, retirada de interesse, descarte, ocultação e limitação de reapresentação;
+- contestação, limitação de efeitos e correção visível;
+- vínculo consciente com Próximos Passos sem criação automática;
+- proteção de oportunidades sensíveis, de saúde, financeiras, profissionais, sociais, religiosas, institucionais e coletivas;
+- mudanças materiais, indisponibilidade, pausa, expiração, encerramento e novas edições;
+- acompanhamento de inscrição, contratação, pagamento e participação como processos externos;
+- fila de atenção, notificações funcionais e comerciais separadas e prevenção de fadiga;
+- controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
+- acessibilidade técnica e cognitiva, consistência entre canais, conflito de informação e falha segura.
+
 ## Conceitos internos preservados
 
 | Conceito | Estado |
@@ -143,9 +176,11 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
 | Próximos Passos | Functionally complete — 100% |
-| Oportunidades Ativas | In progress — 40% |
+| Oportunidades Ativas | In progress — 60% |
 | Fundamentos de Oportunidades Ativas | Normative 1.0.0 |
 | Ciclo de Vida de Oportunidades Ativas | Normative 1.0.0 |
+| Visualização e Controle de Oportunidades Ativas | Normative 1.0.0 |
+| Minhas Oportunidades | Superfície funcional de descoberta, comparação e controle, distinta de feed publicitário |
 | Oportunidade candidata | Meio identificado que ainda depende de avaliação funcional |
 | Oportunidade Ativa | Meio suficientemente disponível, legítimo, contextual e potencialmente compatível |
 | Estado funcional da oportunidade | Condição operacional própria, distinta da qualidade da informação |
@@ -156,6 +191,11 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | Relação do participante | Apresentação, visualização, salvamento, interesse, descarte, inscrição, contratação ou participação |
 | Situação transacional externa | Fatos comerciais ou institucionais sem redefinir a jornada |
 | Ativação de oportunidade | Admissão funcional; não representa apresentação ou recomendação |
+| Ordenação neutra | Ordem funcional sem comissão, patrocínio, margem, clique ou tempo de tela |
+| Área publicitária | Espaço identificado e separado da lista funcional de oportunidades |
+| Título neutro | Identificação minimizada para proteger oportunidade sensível |
+| Custo total | Custos diretos, indiretos e pendentes apresentados sem ocultação material |
+| Alternativa não patrocinada | Opção preservada independentemente de parceria ou retorno financeiro |
 | Pausa de oportunidade | Suspensão temporária de novas apresentações e automações |
 | Indisponibilidade | Impossibilidade atual com possibilidade de retorno |
 | Expiração | Fim da janela ou validade funcional, preservando histórico |
@@ -178,8 +218,8 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 8.2.0 |
-| Knowledge Board | 8.3.0 |
+| Roadmap | 8.3.0 |
+| Knowledge Board | 8.4.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -188,6 +228,7 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | PAS-001-PP-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-OA-FOUNDATION-001 | Active 1.0.0 |
 | PAS-001-OA-LIFECYCLE-001 | Active 1.0.0 |
+| PAS-001-OA-VIEW-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -197,4 +238,4 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 ## Próxima atividade
 
-Consolidar os **comportamentos funcionais da visualização e do controle das Oportunidades Ativas**, incluindo descoberta, busca, filtros, cartões, detalhamento, comparação, alternativas, transparência comercial, elegibilidade, disponibilidade, custos, riscos, oportunidades sensíveis, controles do participante e consistência entre canais.
+Consolidar os **contratos dos eventos funcionais das Oportunidades Ativas**, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, ativação, apresentação, interação, elegibilidade, disponibilidade, transparência comercial, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência, auditoria e falha segura.
