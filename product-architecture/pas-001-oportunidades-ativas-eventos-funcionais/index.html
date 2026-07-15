@@ -1,0 +1,7475 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Base oficial de conhecimento e arquitetura da Guivos">
+      
+      
+        <meta name="author" content="Guivos">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Contratos dos Eventos Funcionais da Capacidade de Oportunidades Ativas - Guivos Knowledge Repository</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pas-001-oa-event-001-contratos-dos-eventos-funcionais-da-capacidade-de-oportunidades-ativas" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-header__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contratos dos Eventos Funcionais da Capacidade de Oportunidades Ativas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guivos Knowledge Repository" class="md-nav__button md-logo" aria-label="Guivos Knowledge Repository" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Guivos Knowledge Repository
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia Oficial da Guivos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public/guia-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guia Completo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--public-canon"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Evolution Framework
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Evolution Framework
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evolution-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEF-001 — Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validação de Mercado
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-001-framework-de-validacao-de-mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-001 — Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-002-pesquisa-oficial-da-guivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-002 — Pesquisa Oficial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-003-guia-do-entrevistador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-003 — Guia do Entrevistador
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-004-modelo-de-consolidacao-e-analise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-004 — Consolidação e Análise
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-005-plano-de-amostragem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-005 — Plano de Amostragem
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-006-dashboard-de-indicadores/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-006 — Dashboard
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-007-criterios-de-decisao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-007 — Critérios de Decisão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/market-validation/VAL-008-sinais-comportamentais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VAL-008 — Sinais Comportamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/MS-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/evidence-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/ecosystem-phenomena-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/RP-001/recommendations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise-architecture/permanence-layer-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference-architecture/gccm-001/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCCM-001 — Core Capability Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--discovery"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEB
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte I — Fundação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte I — Fundação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/01-essence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/02-purpose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/03-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/04-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/05-constitution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-01-foundation/06-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved-draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte II — Modelo Fundamental
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte II — Modelo Fundamental
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/phenomenon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/fundamental-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../geb/part-02-fundamental-model/four-fundamental-natures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layered-product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GLPA-001 — Layered Product Architecture
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-guivos-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001 — Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-estados-dimensionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-STATE-001 — Estados do Contexto Vivo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-atualizacao-envelhecimento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-resolucao-conflitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-CONFLICT-001 — Resolução de Conflitos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-meu-contexto-hoje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-VIEW-001 — Meu Contexto Hoje
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-eventos-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-EVENT-001 — Eventos Funcionais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-integracoes-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-INTEGRATION-001 — Integrações Funcionais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-kpis-desempenho/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-KPI-001 — KPIs e Desempenho
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-contexto-vivo-cenarios-contrato-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-fundamentos-iniciais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-FOUNDATION-001 — Fundamentos de Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-ciclo-de-vida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-LIFECYCLE-001 — Ciclo de Vida dos Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-progresso-e-conclusao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-PROGRESS-001 — Progresso e Conclusão
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-meus-objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-VIEW-001 — Meus Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-eventos-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-EVENT-001 — Eventos Funcionais de Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-integracoes-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais de Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-objetivos-kpis-cenarios-contrato-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final de Objetivos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-eventos-de-vida-fundamentos-iniciais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-EV-FOUNDATION-001 — Fundamentos de Eventos de Vida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-eventos-de-vida-ciclo-de-vida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-EV-LIFECYCLE-001 — Ciclo de Vida dos Eventos de Vida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-eventos-de-vida-visualizacao-controle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-EV-VIEW-001 — Visualização e Controle de Eventos de Vida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-eventos-de-vida-eventos-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-EV-EVENT-001 — Eventos Funcionais de Eventos de Vida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-eventos-de-vida-integracoes-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-EV-INTEGRATION-001 — Integrações Funcionais de Eventos de Vida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-eventos-de-vida-kpis-cenarios-contrato-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-proximos-passos-fundamentos-iniciais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PP-FOUNDATION-001 — Fundamentos de Próximos Passos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-proximos-passos-ciclo-de-vida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PP-LIFECYCLE-001 — Ciclo de Vida dos Próximos Passos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-proximos-passos-visualizacao-controle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-proximos-passos-eventos-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-proximos-passos-integracoes-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-proximos-passos-kpis-cenarios-contrato-final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-oportunidades-ativas-fundamentos-iniciais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OA-FOUNDATION-001 — Fundamentos de Oportunidades Ativas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-oportunidades-ativas-ciclo-de-vida/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OA-LIFECYCLE-001 — Ciclo de Vida das Oportunidades Ativas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pas-001-oportunidades-ativas-visualizacao-controle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Mall
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../travel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intelligence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligence Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intelligence Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/knowledge-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAI-001 — AI Knowledge Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligence-architecture/manifesto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GAI-002 — Manifesto da Inteligência do Ecossistema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guivos Economic Model
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Economic Model
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../economic-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--planned"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-transformation-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business-architecture/strategy/business-outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance Framework do GKR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance Framework do GKR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-knowledge-consolidation-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Knowledge Consolidation Pipeline
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/architectural-audit-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Audit Framework
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--validated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../governance-framework/outcome-governance-method/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-FEM-001 — Foundation Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-CC-001-canonical-consolidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-CC-001 — Foundation Canonical Consolidation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--consolidated"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-RA-001 — Foundation Readiness Assessment
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--complete"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-A2-001-foundation-architecture-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-A2-001 — Foundation Architecture Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved_with_recommendations"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R01-AUD-001 — Foundation Architecture Audit
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--passed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2-R02-FMEM-001 — Fundamental Model Evidence Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--execution-ready"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validation/AV-001-gea-structure-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-001-gkr-as-source-of-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-002-foundation-principles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-003-architectural-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-004-architectural-dependency-order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-005-architectural-traceability-principle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--accepted"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../adr/ADR-006-guivos-knowledge-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-006 — Guivos Knowledge Architecture
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--approved"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/architectural-milestones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-007 — Chat Continuity and Repository Reconciliation
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/AR-001-gkr-gog-consistency-and-diagram-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AR-001 — GKR and GOG Consistency Review
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-006-context-interpretation-and-living-context-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-006 — Context Interpretation and Living Context
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-005 — Journey Operational Philosophy
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Engineering Pause
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-004-context-participant-model-and-architecture-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-004 — Context and Architecture Engineering
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-003 — Enterprise Design and GLPA
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-002-gka-conceptual-architecture-progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/GE2-SYNC-001-architectural-synchronization-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE2-SYNC-001 — Architectural Synchronization Matrix
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-GKA-PREPARATION-COMPLETE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKA Preparation Complete
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-GE2-GKA-FOUNDATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GE-2 — GKA Foundation Checkpoint
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--superseded"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/BASELINE-M1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baseline M1
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--frozen"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/CHECKPOINT-M2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkpoint M2.0
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--experimental"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B1 — Foundation 5/6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working-baseline"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B2 — Foundation 6/6
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--working-baseline"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/A2-BASELINE-B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A2 Baseline B3 — Foundation Frozen
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--frozen"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/canonical-consolidation-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/site-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline de Publicação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../print_page/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-autoridade-e-vinculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Autoridade e vínculo
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="pas-001-oa-event-001-contratos-dos-eventos-funcionais-da-capacidade-de-oportunidades-ativas">PAS-001-OA-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Oportunidades Ativas<a class="headerlink" href="#pas-001-oa-event-001-contratos-dos-eventos-funcionais-da-capacidade-de-oportunidades-ativas" title="Permanent link">&para;</a></h1>
+<h2 id="1-autoridade-e-vinculo">1. Autoridade e vínculo<a class="headerlink" href="#1-autoridade-e-vinculo" title="Permanent link">&para;</a></h2>
+<p>Este documento é a <strong>quarta extensão normativa da Capacidade 06 — Oportunidades Ativas</strong> do <code>PAS-001 — Guivos Journey Product Architecture Specification</code>.</p>
+<p>Seu conteúdo deve ser lido como continuidade:</p>
+<ul>
+<li>do <code>PAS-001-OA-FOUNDATION-001 1.0.0</code>;</li>
+<li>do <code>PAS-001-OA-LIFECYCLE-001 1.0.0</code>;</li>
+<li>do <code>PAS-001-OA-VIEW-001 1.0.0</code>;</li>
+<li>das seções 2061 a 2368;</li>
+<li>do <code>PAS-001 0.5.0</code>.</li>
+</ul>
+<p>Esta extensão mantém a capacidade no estado <code>In progress</code> e eleva o progresso editorial de referência de <code>60%</code> para <code>80%</code>.</p>
+<h1 id="2369-finalidade-dos-contratos-de-eventos">2369. Finalidade dos contratos de eventos<a class="headerlink" href="#2369-finalidade-dos-contratos-de-eventos" title="Permanent link">&para;</a></h1>
+<p>Os contratos deverão governar como fatos reconhecidos sobre oportunidades são registrados, versionados, publicados, consumidos, corrigidos e auditados.</p>
+<p>Eles deverão impedir que:</p>
+<ul>
+<li>comandos sejam tratados como fatos;</li>
+<li>sugestões sejam tratadas como decisões;</li>
+<li>estimativas sejam tratadas como confirmações;</li>
+<li>publicidade produza eventos de relevância;</li>
+<li>visualização produza interesse;</li>
+<li>interesse produza compromisso;</li>
+<li>inscrição produza aceitação;</li>
+<li>transações externas redefinam a jornada;</li>
+<li>correções reescrevam silenciosamente o histórico;</li>
+<li>reprocessamentos dupliquem efeitos;</li>
+<li>eventos fora de ordem criem estados impossíveis.</li>
+</ul>
+<h1 id="2370-comando-proposta-e-evento">2370. Comando, proposta e evento<a class="headerlink" href="#2370-comando-proposta-e-evento" title="Permanent link">&para;</a></h1>
+<p>Os conceitos deverão permanecer distintos.</p>
+<h2 id="comando-funcional">Comando funcional<a class="headerlink" href="#comando-funcional" title="Permanent link">&para;</a></h2>
+<p>Solicitação para avaliar ou alterar o estado.</p>
+<p>Exemplos:</p>
+<ul>
+<li>avaliar oportunidade;</li>
+<li>verificar disponibilidade;</li>
+<li>declarar interesse;</li>
+<li>ocultar oportunidade;</li>
+<li>iniciar inscrição;</li>
+<li>revogar uso de contexto.</li>
+</ul>
+<h2 id="proposta-funcional">Proposta funcional<a class="headerlink" href="#proposta-funcional" title="Permanent link">&para;</a></h2>
+<p>Possibilidade ainda sujeita a avaliação ou decisão.</p>
+<p>Exemplos:</p>
+<ul>
+<li>oportunidade candidata;</li>
+<li>elegibilidade estimada;</li>
+<li>vínculo sugerido com Próximo Passo;</li>
+<li>alternativa recomendada;</li>
+<li>correção proposta.</li>
+</ul>
+<h2 id="evento-funcional">Evento funcional<a class="headerlink" href="#evento-funcional" title="Permanent link">&para;</a></h2>
+<p>Fato reconhecido e persistido.</p>
+<p>Exemplos:</p>
+<ul>
+<li><code>OportunidadeAtivada</code>;</li>
+<li><code>DisponibilidadeDeOportunidadeAtualizada</code>;</li>
+<li><code>InteresseEmOportunidadeDeclarado</code>;</li>
+<li><code>OportunidadeContestada</code>;</li>
+<li><code>PermissaoDeContextoRevogada</code>.</li>
+</ul>
+<h1 id="2371-fluxo-funcional">2371. Fluxo funcional<a class="headerlink" href="#2371-fluxo-funcional" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>comando, sinal ou informação
+→ validação de identidade
+→ validação de autoridade
+→ validação de finalidade
+→ avaliação funcional
+→ proposta, quando aplicável
+→ decisão
+→ persistência suficiente
+→ evento reconhecido
+→ atualização do agregado
+→ produção de recortes
+→ processamento pelos consumidores autorizados
+</code></pre></div>
+<p>Nenhum evento material deverá ser publicado antes de persistência funcional suficiente.</p>
+<h1 id="2372-principios-obrigatorios">2372. Princípios obrigatórios<a class="headerlink" href="#2372-principios-obrigatorios" title="Permanent link">&para;</a></h1>
+<p>Os eventos deverão observar:</p>
+<ul>
+<li>imutabilidade histórica;</li>
+<li>correção compensatória;</li>
+<li>titularidade explícita;</li>
+<li>autoridade limitada;</li>
+<li>temporalidade múltipla;</li>
+<li>proveniência;</li>
+<li>finalidade;</li>
+<li>minimização;</li>
+<li>sensibilidade;</li>
+<li>versionamento;</li>
+<li>idempotência;</li>
+<li>ordenação;</li>
+<li>concorrência segura;</li>
+<li>explicabilidade;</li>
+<li>auditabilidade;</li>
+<li>neutralidade comercial;</li>
+<li>falha segura;</li>
+<li>controle do participante.</li>
+</ul>
+<h1 id="2373-agregado-funcional">2373. Agregado funcional<a class="headerlink" href="#2373-agregado-funcional" title="Permanent link">&para;</a></h1>
+<p>O agregado principal será o <strong>Registro de Oportunidade</strong>.</p>
+<p>Ele deverá concentrar:</p>
+<ul>
+<li>identidade;</li>
+<li>estado funcional;</li>
+<li>estado da informação;</li>
+<li>disponibilidade;</li>
+<li>elegibilidade;</li>
+<li>relevância;</li>
+<li>risco;</li>
+<li>sensibilidade;</li>
+<li>relação comercial;</li>
+<li>relação do participante;</li>
+<li>vínculos;</li>
+<li>permissões;</li>
+<li>versões;</li>
+<li>histórico.</li>
+</ul>
+<p>Estados transacionais externos deverão permanecer em agregados ou recortes próprios.</p>
+<h1 id="2374-estrutura-comum-do-evento">2374. Estrutura comum do evento<a class="headerlink" href="#2374-estrutura-comum-do-evento" title="Permanent link">&para;</a></h1>
+<p>Todo evento deverá possuir, conforme aplicável:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>event_id</code></td>
+<td>Identidade imutável do evento</td>
+</tr>
+<tr>
+<td><code>event_type</code></td>
+<td>Tipo funcional versionado</td>
+</tr>
+<tr>
+<td><code>event_version</code></td>
+<td>Versão do contrato</td>
+</tr>
+<tr>
+<td><code>aggregate_id</code></td>
+<td>Oportunidade afetada</td>
+</tr>
+<tr>
+<td><code>aggregate_version</code></td>
+<td>Versão resultante do agregado</td>
+</tr>
+<tr>
+<td><code>participant_id</code></td>
+<td>Titular da avaliação</td>
+</tr>
+<tr>
+<td><code>participant_category</code></td>
+<td>Pessoa, Organização ou Coletivo</td>
+</tr>
+<tr>
+<td><code>actor_id</code></td>
+<td>Agente que originou a ação</td>
+</tr>
+<tr>
+<td><code>actor_role</code></td>
+<td>Papel funcional do ator</td>
+</tr>
+<tr>
+<td><code>authority_scope</code></td>
+<td>Escopo da autoridade</td>
+</tr>
+<tr>
+<td><code>source_id</code></td>
+<td>Fonte original</td>
+</tr>
+<tr>
+<td><code>purpose</code></td>
+<td>Finalidade do processamento</td>
+</tr>
+<tr>
+<td><code>occurred_at</code></td>
+<td>Momento real do fato</td>
+</tr>
+<tr>
+<td><code>known_at</code></td>
+<td>Momento em que a Guivos tomou conhecimento</td>
+</tr>
+<tr>
+<td><code>recognized_at</code></td>
+<td>Momento do reconhecimento funcional</td>
+</tr>
+<tr>
+<td><code>recorded_at</code></td>
+<td>Momento da persistência</td>
+</tr>
+<tr>
+<td><code>effective_at</code></td>
+<td>Momento de aplicação funcional</td>
+</tr>
+<tr>
+<td><code>correlation_id</code></td>
+<td>Correlação do fluxo</td>
+</tr>
+<tr>
+<td><code>causation_id</code></td>
+<td>Evento ou comando causador</td>
+</tr>
+<tr>
+<td><code>idempotency_key</code></td>
+<td>Prevenção de duplicidade</td>
+</tr>
+<tr>
+<td><code>sensitivity</code></td>
+<td>Classificação de sensibilidade</td>
+</tr>
+<tr>
+<td><code>permissions</code></td>
+<td>Permissões aplicáveis</td>
+</tr>
+<tr>
+<td><code>payload</code></td>
+<td>Conteúdo funcional minimizado</td>
+</tr>
+<tr>
+<td><code>provenance</code></td>
+<td>Origem e transformações</td>
+</tr>
+<tr>
+<td><code>metadata</code></td>
+<td>Dados técnicos não semânticos</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2375-identidade-do-evento">2375. Identidade do evento<a class="headerlink" href="#2375-identidade-do-evento" title="Permanent link">&para;</a></h1>
+<p>O <code>event_id</code> deverá ser:</p>
+<ul>
+<li>único;</li>
+<li>permanente;</li>
+<li>não reutilizável;</li>
+<li>independente da posição em fila;</li>
+<li>independente do consumidor;</li>
+<li>preservado em reprocessamentos.</li>
+</ul>
+<p>Eventos equivalentes não deverão receber novas identidades apenas por retransmissão.</p>
+<h1 id="2376-versionamento">2376. Versionamento<a class="headerlink" href="#2376-versionamento" title="Permanent link">&para;</a></h1>
+<p>O <code>event_type</code> deverá representar a semântica funcional.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>OportunidadeAtivada
+event_version: 1.0.0
+</code></pre></div>
+<p>Mudanças incompatíveis deverão gerar nova versão contratual.</p>
+<p>Mudanças técnicas sem alteração semântica não deverão gerar novo tipo funcional.</p>
+<h1 id="2377-titular-e-participante">2377. Titular e participante<a class="headerlink" href="#2377-titular-e-participante" title="Permanent link">&para;</a></h1>
+<p>Todo evento pessoal deverá possuir titular identificável.</p>
+<p>Eventos relacionados a Organização ou Coletivo deverão preservar:</p>
+<ul>
+<li>categoria;</li>
+<li>autoridade;</li>
+<li>vínculo;</li>
+<li>escopo;</li>
+<li>participantes afetados;</li>
+<li>conteúdos privados.</li>
+</ul>
+<p>O fornecedor não deverá assumir a titularidade da avaliação de relevância do participante.</p>
+<h1 id="2378-ator-papel-e-autoridade">2378. Ator, papel e autoridade<a class="headerlink" href="#2378-ator-papel-e-autoridade" title="Permanent link">&para;</a></h1>
+<p>O evento deverá distinguir:</p>
+<ul>
+<li>quem realizou a ação;</li>
+<li>em qual papel;</li>
+<li>com qual autoridade;</li>
+<li>para qual finalidade.</li>
+</ul>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>actor_id: organização responsável
+actor_role: fornecedor
+authority_scope: disponibilidade e condições próprias
+</code></pre></div>
+<p>Esse ator não deverá confirmar:</p>
+<ul>
+<li>interesse;</li>
+<li>relevância pessoal absoluta;</li>
+<li>prioridade;</li>
+<li>evolução;</li>
+<li>resultado humano.</li>
+</ul>
+<h1 id="2379-fonte-e-proveniencia">2379. Fonte e proveniência<a class="headerlink" href="#2379-fonte-e-proveniencia" title="Permanent link">&para;</a></h1>
+<p>A proveniência deverá registrar:</p>
+<ul>
+<li>sistema de origem;</li>
+<li>registro original;</li>
+<li>agente original;</li>
+<li>momento original;</li>
+<li>transformações;</li>
+<li>verificações;</li>
+<li>estimativas;</li>
+<li>correções;</li>
+<li>limitações;</li>
+<li>relações comerciais conhecidas.</li>
+</ul>
+<p>A Guivos Intelligence não deverá aparecer como fonte de um fato externo que apenas estimou.</p>
+<h1 id="2380-finalidade">2380. Finalidade<a class="headerlink" href="#2380-finalidade" title="Permanent link">&para;</a></h1>
+<p>Todo evento deverá possuir finalidade funcional compatível.</p>
+<p>Finalidades possíveis incluem:</p>
+<ul>
+<li>avaliação;</li>
+<li>apresentação;</li>
+<li>comparação;</li>
+<li>acompanhamento;</li>
+<li>inscrição;</li>
+<li>proteção;</li>
+<li>auditoria;</li>
+<li>sincronização;</li>
+<li>correção;</li>
+<li>revogação.</li>
+</ul>
+<p>Um evento reconhecido para uma finalidade não deverá autorizar usos incompatíveis.</p>
+<h1 id="2381-sensibilidade">2381. Sensibilidade<a class="headerlink" href="#2381-sensibilidade" title="Permanent link">&para;</a></h1>
+<p>Eventos sensíveis deverão utilizar:</p>
+<ul>
+<li>payload minimizado;</li>
+<li>identificadores protegidos;</li>
+<li>recortes específicos;</li>
+<li>retenção proporcional;</li>
+<li>acesso restrito;</li>
+<li>títulos neutros;</li>
+<li>logs sem narrativas excessivas;</li>
+<li>ausência de uso publicitário.</li>
+</ul>
+<h1 id="2382-temporalidades">2382. Temporalidades<a class="headerlink" href="#2382-temporalidades" title="Permanent link">&para;</a></h1>
+<p>Os eventos deverão distinguir:</p>
+<ul>
+<li>tempo do fato;</li>
+<li>tempo da declaração;</li>
+<li>tempo do registro externo;</li>
+<li>tempo do conhecimento;</li>
+<li>tempo do reconhecimento;</li>
+<li>tempo da persistência;</li>
+<li>tempo da aplicação;</li>
+<li>tempo da propagação;</li>
+<li>tempo da correção.</li>
+</ul>
+<h1 id="2383-eventos-retroativos">2383. Eventos retroativos<a class="headerlink" href="#2383-eventos-retroativos" title="Permanent link">&para;</a></h1>
+<p>Um evento retroativo deverá preservar:</p>
+<div class="highlight"><pre><span></span><code>occurred_at: momento real conhecido ou aproximado
+known_at: momento em que a Guivos tomou conhecimento
+recognized_at: momento da validação funcional
+effective_at: momento a partir do qual os efeitos foram aplicados
+</code></pre></div>
+<p>A retroatividade não deverá fabricar reconstruções impossíveis.</p>
+<h1 id="2384-temporalidade-aproximada">2384. Temporalidade aproximada<a class="headerlink" href="#2384-temporalidade-aproximada" title="Permanent link">&para;</a></h1>
+<p>Quando o momento exato não for conhecido, deverão ser registrados:</p>
+<ul>
+<li>intervalo;</li>
+<li>precisão;</li>
+<li>fonte;</li>
+<li>confiança;</li>
+<li>limitações.</li>
+</ul>
+<p>A capacidade não deverá converter período aproximado em data exata.</p>
+<h1 id="2385-correlacao">2385. Correlação<a class="headerlink" href="#2385-correlacao" title="Permanent link">&para;</a></h1>
+<p>O <code>correlation_id</code> deverá reunir eventos do mesmo fluxo.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>BuscaDeOportunidadesRealizada
+→ OportunidadeIdentificada
+→ CandidaturaDeOportunidadeCriada
+→ AvaliacaoDeOportunidadeIniciada
+→ OportunidadeAtivada
+</code></pre></div>
+<h1 id="2386-causalidade-funcional">2386. Causalidade funcional<a class="headerlink" href="#2386-causalidade-funcional" title="Permanent link">&para;</a></h1>
+<p>O <code>causation_id</code> deverá apontar o evento ou comando diretamente responsável.</p>
+<p>Correlação temporal isolada não deverá ser registrada como causalidade.</p>
+<h1 id="2387-familias-de-eventos">2387. Famílias de eventos<a class="headerlink" href="#2387-familias-de-eventos" title="Permanent link">&para;</a></h1>
+<p>Os contratos serão organizados em 19 famílias:</p>
+<ol>
+<li>identificação e candidatura;</li>
+<li>fonte e autoridade;</li>
+<li>avaliação e completude;</li>
+<li>disponibilidade;</li>
+<li>elegibilidade;</li>
+<li>relevância;</li>
+<li>risco e sensibilidade;</li>
+<li>transparência comercial;</li>
+<li>ativação;</li>
+<li>apresentação;</li>
+<li>interação do participante;</li>
+<li>inscrição e fatos externos;</li>
+<li>vínculos e alternativas;</li>
+<li>manutenção e encerramento;</li>
+<li>contestação e correção;</li>
+<li>permissões e revogação;</li>
+<li>propagação e integrações;</li>
+<li>visualização e notificações;</li>
+<li>falhas e reconstrução.</li>
+</ol>
+<h1 id="2388-familia-1-identificacao-e-candidatura">2388. Família 1 — Identificação e candidatura<a class="headerlink" href="#2388-familia-1-identificacao-e-candidatura" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>OportunidadeIdentificada</code>;</li>
+<li><code>CandidaturaDeOportunidadeCriada</code>;</li>
+<li><code>CandidaturaDeOportunidadeRejeitada</code>;</li>
+<li><code>OportunidadesPotencialmenteDuplicadasIdentificadas</code>;</li>
+<li><code>OportunidadesUnificadas</code>.</li>
+</ul>
+<h1 id="2389-oportunidadeidentificada">2389. OportunidadeIdentificada<a class="headerlink" href="#2389-oportunidadeidentificada" title="Permanent link">&para;</a></h1>
+<p>Deverá representar o reconhecimento de um possível meio.</p>
+<p>Payload mínimo:</p>
+<ul>
+<li>descrição mínima;</li>
+<li>tipo;</li>
+<li>origem;</li>
+<li>fonte;</li>
+<li>possível público;</li>
+<li>finalidade de avaliação;</li>
+<li>momento da identificação;</li>
+<li>confiança inicial.</li>
+</ul>
+<p>Não deverá representar:</p>
+<ul>
+<li>candidatura admitida;</li>
+<li>relevância;</li>
+<li>disponibilidade;</li>
+<li>apresentação.</li>
+</ul>
+<h1 id="2390-candidaturadeoportunidadecriada">2390. CandidaturaDeOportunidadeCriada<a class="headerlink" href="#2390-candidaturadeoportunidadecriada" title="Permanent link">&para;</a></h1>
+<p>Deverá representar que a oportunidade atingiu os requisitos mínimos para avaliação.</p>
+<p>Payload:</p>
+<ul>
+<li>identidade funcional;</li>
+<li>fonte;</li>
+<li>finalidade;</li>
+<li>público possível;</li>
+<li>condições conhecidas;</li>
+<li>lacunas;</li>
+<li>riscos preliminares;</li>
+<li>relação comercial conhecida.</li>
+</ul>
+<h1 id="2391-candidaturadeoportunidaderejeitada">2391. CandidaturaDeOportunidadeRejeitada<a class="headerlink" href="#2391-candidaturadeoportunidaderejeitada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>motivo;</li>
+<li>autoridade da decisão;</li>
+<li>evidências;</li>
+<li>possibilidade de revisão;</li>
+<li>efeitos aplicados;</li>
+<li>eventual bloqueio da fonte.</li>
+</ul>
+<p>Motivos possíveis:</p>
+<ul>
+<li>fraude;</li>
+<li>proibição;</li>
+<li>identidade insuficiente;</li>
+<li>fonte inválida;</li>
+<li>finalidade incompatível;</li>
+<li>publicidade disfarçada;</li>
+<li>exploração de vulnerabilidade;</li>
+<li>relação comercial ocultada.</li>
+</ul>
+<h1 id="2392-duplicidade-semantica">2392. Duplicidade semântica<a class="headerlink" href="#2392-duplicidade-semantica" title="Permanent link">&para;</a></h1>
+<p>A duplicidade deverá considerar identidade, fornecedor, janela, condições, público e finalidade.</p>
+<p>O evento não deverá unificar automaticamente oportunidades apenas semelhantes.</p>
+<h1 id="2393-oportunidadesunificadas">2393. OportunidadesUnificadas<a class="headerlink" href="#2393-oportunidadesunificadas" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>registros de origem;</li>
+<li>identidade canônica;</li>
+<li>diferenças preservadas;</li>
+<li>fontes;</li>
+<li>relações do participante;</li>
+<li>histórico;</li>
+<li>vínculos recompostos.</li>
+</ul>
+<h1 id="2394-familia-2-fonte-e-autoridade">2394. Família 2 — Fonte e autoridade<a class="headerlink" href="#2394-familia-2-fonte-e-autoridade" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>FonteDeOportunidadeRegistrada</code>;</li>
+<li><code>FonteDeOportunidadeValidada</code>;</li>
+<li><code>FonteDeOportunidadeRejeitada</code>;</li>
+<li><code>AutoridadeDeFonteDeOportunidadeAlterada</code>;</li>
+<li><code>ConflitoDeInteresseDeFonteIdentificado</code>;</li>
+<li><code>FonteDeOportunidadeTornadaIndisponivel</code>.</li>
+</ul>
+<h1 id="2395-fontedeoportunidadevalidada">2395. FonteDeOportunidadeValidada<a class="headerlink" href="#2395-fontedeoportunidadevalidada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>identidade;</li>
+<li>tipo da fonte;</li>
+<li>autoridade;</li>
+<li>escopo;</li>
+<li>validade;</li>
+<li>confiança;</li>
+<li>método de validação;</li>
+<li>limitações;</li>
+<li>conflitos de interesse.</li>
+</ul>
+<h1 id="2396-fontedeoportunidaderejeitada">2396. FonteDeOportunidadeRejeitada<a class="headerlink" href="#2396-fontedeoportunidaderejeitada" title="Permanent link">&para;</a></h1>
+<p>A rejeição deverá limitar:</p>
+<ul>
+<li>novas candidaturas;</li>
+<li>atualizações;</li>
+<li>confirmações;</li>
+<li>propagação;</li>
+<li>apresentação.</li>
+</ul>
+<p>Registros históricos legítimos deverão ser preservados.</p>
+<h1 id="2397-alteracao-de-autoridade">2397. Alteração de autoridade<a class="headerlink" href="#2397-alteracao-de-autoridade" title="Permanent link">&para;</a></h1>
+<p>Mudança de autoridade deverá:</p>
+<ul>
+<li>preservar versão anterior;</li>
+<li>registrar fundamento;</li>
+<li>reavaliar eventos dependentes;</li>
+<li>limitar fatos anteriormente aceitos quando necessário;</li>
+<li>não apagar histórico.</li>
+</ul>
+<h1 id="2398-conflito-de-interesse">2398. Conflito de interesse<a class="headerlink" href="#2398-conflito-de-interesse" title="Permanent link">&para;</a></h1>
+<p>Conflitos deverão registrar:</p>
+<ul>
+<li>natureza;</li>
+<li>agente;</li>
+<li>relação econômica;</li>
+<li>impacto possível;</li>
+<li>controles aplicados;</li>
+<li>necessidade de transparência;</li>
+<li>revisão da neutralidade.</li>
+</ul>
+<h1 id="2399-familia-3-avaliacao-e-completude">2399. Família 3 — Avaliação e completude<a class="headerlink" href="#2399-familia-3-avaliacao-e-completude" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>AvaliacaoDeOportunidadeIniciada</code>;</li>
+<li><code>CompletudeDeOportunidadeAvaliada</code>;</li>
+<li><code>InformacaoAdicionalDeOportunidadeSolicitada</code>;</li>
+<li><code>InformacaoDeOportunidadeRecebida</code>;</li>
+<li><code>AvaliacaoDeOportunidadeSuspensa</code>;</li>
+<li><code>AvaliacaoDeOportunidadeConcluida</code>.</li>
+</ul>
+<h1 id="2400-avaliacaodeoportunidadeiniciada">2400. AvaliacaoDeOportunidadeIniciada<a class="headerlink" href="#2400-avaliacaodeoportunidadeiniciada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>critérios aplicáveis;</li>
+<li>finalidade;</li>
+<li>fontes;</li>
+<li>campos necessários;</li>
+<li>permissões;</li>
+<li>prazo de validade da avaliação;</li>
+<li>condições pendentes.</li>
+</ul>
+<h1 id="2401-completudedeoportunidadeavaliada">2401. CompletudeDeOportunidadeAvaliada<a class="headerlink" href="#2401-completudedeoportunidadeavaliada" title="Permanent link">&para;</a></h1>
+<p>Estados possíveis:</p>
+<ul>
+<li>suficiente;</li>
+<li>parcialmente suficiente;</li>
+<li>insuficiente;</li>
+<li>exige verificação;</li>
+<li>divergente.</li>
+</ul>
+<p>A completude não deverá representar qualidade ou relevância.</p>
+<h1 id="2402-informacao-adicional">2402. Informação adicional<a class="headerlink" href="#2402-informacao-adicional" title="Permanent link">&para;</a></h1>
+<p>Solicitações deverão aplicar minimização.</p>
+<p>Não deverão solicitar dados sensíveis apenas para aumentar conversão ou precisão comercial.</p>
+<h1 id="2403-avaliacao-suspensa">2403. Avaliação suspensa<a class="headerlink" href="#2403-avaliacao-suspensa" title="Permanent link">&para;</a></h1>
+<p>A suspensão deverá registrar:</p>
+<ul>
+<li>causa;</li>
+<li>estado preservado;</li>
+<li>automações interrompidas;</li>
+<li>condição de retomada;</li>
+<li>efeitos sobre apresentações.</li>
+</ul>
+<h1 id="2404-familia-4-disponibilidade">2404. Família 4 — Disponibilidade<a class="headerlink" href="#2404-familia-4-disponibilidade" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>DisponibilidadeDeOportunidadeAvaliada</code>;</li>
+<li><code>DisponibilidadeDeOportunidadeConfirmada</code>;</li>
+<li><code>DisponibilidadeDeOportunidadeLimitada</code>;</li>
+<li><code>AberturaFuturaDeOportunidadeRegistrada</code>;</li>
+<li><code>ListaDeEsperaDeOportunidadeRegistrada</code>;</li>
+<li><code>OportunidadeTornadaIndisponivel</code>;</li>
+<li><code>OportunidadeDisponibilizadaNovamente</code>;</li>
+<li><code>DisponibilidadeDeOportunidadeContestada</code>;</li>
+<li><code>DisponibilidadeDeOportunidadeExpirada</code>.</li>
+</ul>
+<h1 id="2405-disponibilidadedeoportunidadeavaliada">2405. DisponibilidadeDeOportunidadeAvaliada<a class="headerlink" href="#2405-disponibilidadedeoportunidadeavaliada" title="Permanent link">&para;</a></h1>
+<p>Payload mínimo:</p>
+<ul>
+<li>estado;</li>
+<li>fonte;</li>
+<li>momento da verificação;</li>
+<li>validade;</li>
+<li>capacidade;</li>
+<li>limitações;</li>
+<li>confiança;</li>
+<li>possibilidade de alteração.</li>
+</ul>
+<h1 id="2406-disponibilidade-confirmada">2406. Disponibilidade confirmada<a class="headerlink" href="#2406-disponibilidade-confirmada" title="Permanent link">&para;</a></h1>
+<p>Somente uma fonte autorizada deverá confirmar disponibilidade objetiva.</p>
+<p>A confirmação não deverá garantir:</p>
+<ul>
+<li>reserva;</li>
+<li>acesso;</li>
+<li>elegibilidade;</li>
+<li>permanência da vaga;</li>
+<li>benefício.</li>
+</ul>
+<h1 id="2407-disponibilidade-limitada">2407. Disponibilidade limitada<a class="headerlink" href="#2407-disponibilidade-limitada" title="Permanent link">&para;</a></h1>
+<p>Deverá distinguir:</p>
+<ul>
+<li>quantidade confirmada;</li>
+<li>quantidade estimada;</li>
+<li>capacidade limitada;</li>
+<li>alta procura;</li>
+<li>janela curta;</li>
+<li>limite por participante.</li>
+</ul>
+<p>O evento não deverá produzir urgência pessoal automaticamente.</p>
+<h1 id="2408-abertura-futura">2408. Abertura futura<a class="headerlink" href="#2408-abertura-futura" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>data ou condição;</li>
+<li>precisão;</li>
+<li>fonte;</li>
+<li>confiança;</li>
+<li>validade;</li>
+<li>controle de notificações.</li>
+</ul>
+<h1 id="2409-lista-de-espera">2409. Lista de espera<a class="headerlink" href="#2409-lista-de-espera" title="Permanent link">&para;</a></h1>
+<p>Deverá representar condição própria.</p>
+<p>Não deverá produzir eventos de:</p>
+<ul>
+<li>vaga reservada;</li>
+<li>aceitação;</li>
+<li>inscrição aprovada;</li>
+<li>acesso garantido.</li>
+</ul>
+<h1 id="2410-indisponibilidade">2410. Indisponibilidade<a class="headerlink" href="#2410-indisponibilidade" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>causa;</li>
+<li>início;</li>
+<li>possível retorno;</li>
+<li>fonte;</li>
+<li>impacto;</li>
+<li>alternativas;</li>
+<li>processos externos existentes.</li>
+</ul>
+<h1 id="2411-disponibilizacao-novamente">2411. Disponibilização novamente<a class="headerlink" href="#2411-disponibilizacao-novamente" title="Permanent link">&para;</a></h1>
+<p>O retorno à disponibilidade deverá exigir:</p>
+<ul>
+<li>nova verificação;</li>
+<li>nova versão;</li>
+<li>reavaliação de condições;</li>
+<li>reavaliação de relevância;</li>
+<li>revisão de apresentações pendentes.</li>
+</ul>
+<h1 id="2412-familia-5-elegibilidade">2412. Família 5 — Elegibilidade<a class="headerlink" href="#2412-familia-5-elegibilidade" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>ElegibilidadeDeOportunidadeAvaliada</code>;</li>
+<li><code>ElegibilidadeCondicionadaRegistrada</code>;</li>
+<li><code>ElegibilidadeDeOportunidadeConfirmada</code>;</li>
+<li><code>ElegibilidadeDeOportunidadeNaoConfirmada</code>;</li>
+<li><code>ElegibilidadeDeOportunidadeContestada</code>;</li>
+<li><code>ElegibilidadeDeOportunidadeExpirada</code>;</li>
+<li><code>DecisaoExternaDeElegibilidadeRegistrada</code>.</li>
+</ul>
+<h1 id="2413-elegibilidadedeoportunidadeavaliada">2413. ElegibilidadeDeOportunidadeAvaliada<a class="headerlink" href="#2413-elegibilidadedeoportunidadeavaliada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>requisitos;</li>
+<li>condições conhecidas;</li>
+<li>informações utilizadas;</li>
+<li>lacunas;</li>
+<li>estado;</li>
+<li>confiança;</li>
+<li>autoridade decisória final;</li>
+<li>validade.</li>
+</ul>
+<h1 id="2414-elegibilidade-estimada">2414. Elegibilidade estimada<a class="headerlink" href="#2414-elegibilidade-estimada" title="Permanent link">&para;</a></h1>
+<p>Estados como <code>possivelmente elegível</code> deverão permanecer estimativas.</p>
+<p>Não poderão produzir:</p>
+<ul>
+<li>inscrição automática;</li>
+<li>aprovação presumida;</li>
+<li>contato sem autorização;</li>
+<li>exposição de condição sensível.</li>
+</ul>
+<h1 id="2415-elegibilidade-condicionada">2415. Elegibilidade condicionada<a class="headerlink" href="#2415-elegibilidade-condicionada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>condição;</li>
+<li>responsável pela verificação;</li>
+<li>prazo;</li>
+<li>evidência necessária;</li>
+<li>consequência se não atendida;</li>
+<li>possibilidade de contestação.</li>
+</ul>
+<h1 id="2416-elegibilidade-confirmada">2416. Elegibilidade confirmada<a class="headerlink" href="#2416-elegibilidade-confirmada" title="Permanent link">&para;</a></h1>
+<p>Somente deverá ser publicada quando a fonte possuir autoridade para confirmar.</p>
+<p>A confirmação deverá permanecer distinta de:</p>
+<ul>
+<li>aprovação;</li>
+<li>aceitação;</li>
+<li>contratação;</li>
+<li>benefício recebido.</li>
+</ul>
+<h1 id="2417-decisao-externa">2417. Decisão externa<a class="headerlink" href="#2417-decisao-externa" title="Permanent link">&para;</a></h1>
+<p>Uma organização poderá comunicar:</p>
+<ul>
+<li>aprovada;</li>
+<li>rejeitada;</li>
+<li>pendente;</li>
+<li>exige informação;</li>
+<li>lista de espera.</li>
+</ul>
+<p>O evento deverá preservar que a decisão é externa.</p>
+<h1 id="2418-familia-6-relevancia">2418. Família 6 — Relevância<a class="headerlink" href="#2418-familia-6-relevancia" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>RelevanciaDeOportunidadeAvaliada</code>;</li>
+<li><code>RelevanciaDeOportunidadeReavaliada</code>;</li>
+<li><code>RelevanciaDeOportunidadeCondicionada</code>;</li>
+<li><code>RelevanciaDeOportunidadeReduzida</code>;</li>
+<li><code>RelevanciaDeOportunidadeContestada</code>;</li>
+<li><code>JustificativaDeRelevanciaProduzida</code>.</li>
+</ul>
+<h1 id="2419-relevanciadeoportunidadeavaliada">2419. RelevanciaDeOportunidadeAvaliada<a class="headerlink" href="#2419-relevanciadeoportunidadeavaliada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>relações funcionais consideradas;</li>
+<li>critérios favoráveis;</li>
+<li>critérios desfavoráveis;</li>
+<li>restrições;</li>
+<li>incertezas;</li>
+<li>contexto utilizado;</li>
+<li>fatores excluídos;</li>
+<li>resultado da avaliação.</li>
+</ul>
+<h1 id="2420-fatores-proibidos">2420. Fatores proibidos<a class="headerlink" href="#2420-fatores-proibidos" title="Permanent link">&para;</a></h1>
+<p>O payload não deverá utilizar como fundamento funcional positivo:</p>
+<ul>
+<li>comissão;</li>
+<li>patrocínio;</li>
+<li>margem;</li>
+<li>investimento publicitário;</li>
+<li>estoque contratado;</li>
+<li>probabilidade de clique;</li>
+<li>tempo de tela;</li>
+<li>vulnerabilidade.</li>
+</ul>
+<h1 id="2421-relevancia-condicionada">2421. Relevância condicionada<a class="headerlink" href="#2421-relevancia-condicionada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar claramente a condição.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>Relevância: condicionada
+Condição: confirmação de disponibilidade para o período informado
+</code></pre></div>
+<h1 id="2422-reavaliacao">2422. Reavaliação<a class="headerlink" href="#2422-reavaliacao" title="Permanent link">&para;</a></h1>
+<p>Mudanças em contexto, objetivo, Evento de Vida, Próximo Passo, orçamento, localização, risco ou disponibilidade poderão causar reavaliação.</p>
+<p>A capacidade consumidora deverá governar sua própria decisão.</p>
+<h1 id="2423-justificativaderelevanciaproduzida">2423. JustificativaDeRelevanciaProduzida<a class="headerlink" href="#2423-justificativaderelevanciaproduzida" title="Permanent link">&para;</a></h1>
+<p>A justificativa deverá ser:</p>
+<ul>
+<li>compreensível;</li>
+<li>minimizada;</li>
+<li>verificável;</li>
+<li>não manipulativa;</li>
+<li>comercialmente transparente;</li>
+<li>contestável.</li>
+</ul>
+<h1 id="2424-familia-7-risco-e-sensibilidade">2424. Família 7 — Risco e sensibilidade<a class="headerlink" href="#2424-familia-7-risco-e-sensibilidade" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>RiscoDeOportunidadeAvaliado</code>;</li>
+<li><code>RiscoMaterialDeOportunidadeIdentificado</code>;</li>
+<li><code>NivelDeRiscoDeOportunidadeAlterado</code>;</li>
+<li><code>SensibilidadeDeOportunidadeClassificada</code>;</li>
+<li><code>ProtecaoReforcadaDeOportunidadeAplicada</code>;</li>
+<li><code>ApresentacaoDeOportunidadeLimitadaPorRisco</code>.</li>
+</ul>
+<h1 id="2425-riscodeoportunidadeavaliado">2425. RiscoDeOportunidadeAvaliado<a class="headerlink" href="#2425-riscodeoportunidadeavaliado" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>categoria;</li>
+<li>nível;</li>
+<li>fonte;</li>
+<li>evidências;</li>
+<li>incerteza;</li>
+<li>mitigação;</li>
+<li>autoridade;</li>
+<li>necessidade de análise profissional.</li>
+</ul>
+<h1 id="2426-risco-material">2426. Risco material<a class="headerlink" href="#2426-risco-material" title="Permanent link">&para;</a></h1>
+<p>Risco elevado poderá produzir:</p>
+<ul>
+<li>pausa;</li>
+<li>limitação de apresentação;</li>
+<li>solicitação de confirmação;</li>
+<li>bloqueio de automação;</li>
+<li>análise especializada;</li>
+<li>cancelamento.</li>
+</ul>
+<h1 id="2427-sensibilidade">2427. Sensibilidade<a class="headerlink" href="#2427-sensibilidade" title="Permanent link">&para;</a></h1>
+<p>A classificação deverá governar:</p>
+<ul>
+<li>busca;</li>
+<li>títulos;</li>
+<li>notificações;</li>
+<li>compartilhamento;</li>
+<li>indexação;</li>
+<li>retenção;</li>
+<li>acesso organizacional;</li>
+<li>publicidade.</li>
+</ul>
+<h1 id="2428-protecao-reforcada">2428. Proteção reforçada<a class="headerlink" href="#2428-protecao-reforcada" title="Permanent link">&para;</a></h1>
+<p>O evento deverá registrar as proteções aplicadas, sem expor o conteúdo sensível no próprio log técnico.</p>
+<h1 id="2429-familia-8-transparencia-comercial">2429. Família 8 — Transparência comercial<a class="headerlink" href="#2429-familia-8-transparencia-comercial" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>RelacaoComercialDeOportunidadeDeclarada</code>;</li>
+<li><code>PatrocinioDeOportunidadeDeclarado</code>;</li>
+<li><code>ComissaoDeOportunidadeDeclarada</code>;</li>
+<li><code>RelacaoComercialDeOportunidadeAlterada</code>;</li>
+<li><code>RelacaoComercialOcultadaIdentificada</code>;</li>
+<li><code>NeutralidadeComercialDeOportunidadeReavaliada</code>.</li>
+</ul>
+<h1 id="2430-relacao-comercial-declarada">2430. Relação comercial declarada<a class="headerlink" href="#2430-relacao-comercial-declarada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>tipo;</li>
+<li>agentes;</li>
+<li>beneficiários;</li>
+<li>escopo;</li>
+<li>período;</li>
+<li>condição;</li>
+<li>impacto potencial;</li>
+<li>forma de apresentação.</li>
+</ul>
+<h1 id="2431-patrocinio">2431. Patrocínio<a class="headerlink" href="#2431-patrocinio" title="Permanent link">&para;</a></h1>
+<p>O evento de patrocínio não deverá:</p>
+<ul>
+<li>elevar relevância;</li>
+<li>alterar prioridade;</li>
+<li>ocultar alternativas;</li>
+<li>produzir interesse;</li>
+<li>autorizar contexto sensível.</li>
+</ul>
+<h1 id="2432-comissao">2432. Comissão<a class="headerlink" href="#2432-comissao" title="Permanent link">&para;</a></h1>
+<p>A comissão deverá permanecer metadado de transparência, não critério de relevância.</p>
+<h1 id="2433-relacao-ocultada">2433. Relação ocultada<a class="headerlink" href="#2433-relacao-ocultada" title="Permanent link">&para;</a></h1>
+<p>A identificação de relação comercial ocultada deverá:</p>
+<ul>
+<li>limitar apresentação;</li>
+<li>suspender automações comerciais;</li>
+<li>registrar incidente;</li>
+<li>reavaliar oportunidades afetadas;</li>
+<li>preservar evidências;</li>
+<li>notificar governança.</li>
+</ul>
+<h1 id="2434-alteracao-comercial">2434. Alteração comercial<a class="headerlink" href="#2434-alteracao-comercial" title="Permanent link">&para;</a></h1>
+<p>Mudanças deverão produzir nova versão e reavaliação da apresentação, sem alterar compatibilidade por si mesmas.</p>
+<h1 id="2435-familia-9-ativacao">2435. Família 9 — Ativação<a class="headerlink" href="#2435-familia-9-ativacao" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>OportunidadeAtivada</code>;</li>
+<li><code>OportunidadeAtivadaComCondicao</code>;</li>
+<li><code>AtivacaoDeOportunidadeRejeitada</code>;</li>
+<li><code>AtivacaoDeOportunidadeRevista</code>;</li>
+<li><code>OportunidadeDesativada</code>.</li>
+</ul>
+<h1 id="2436-oportunidadeativada">2436. OportunidadeAtivada<a class="headerlink" href="#2436-oportunidadeativada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>critérios atendidos;</li>
+<li>disponibilidade;</li>
+<li>elegibilidade;</li>
+<li>relevância;</li>
+<li>risco;</li>
+<li>relação comercial;</li>
+<li>validade;</li>
+<li>limitações;</li>
+<li>confiança.</li>
+</ul>
+<p>Ativação não representa apresentação.</p>
+<h1 id="2437-ativacao-condicionada">2437. Ativação condicionada<a class="headerlink" href="#2437-ativacao-condicionada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>condição;</li>
+<li>impacto da pendência;</li>
+<li>validade;</li>
+<li>ações permitidas;</li>
+<li>ações bloqueadas;</li>
+<li>apresentação proporcional.</li>
+</ul>
+<h1 id="2438-ativacao-rejeitada">2438. Ativação rejeitada<a class="headerlink" href="#2438-ativacao-rejeitada" title="Permanent link">&para;</a></h1>
+<p>Motivos poderão incluir:</p>
+<ul>
+<li>fonte inválida;</li>
+<li>risco incompatível;</li>
+<li>finalidade ilegítima;</li>
+<li>baixa relevância;</li>
+<li>indisponibilidade;</li>
+<li>ausência de transparência;</li>
+<li>proteção insuficiente.</li>
+</ul>
+<h1 id="2439-desativacao">2439. Desativação<a class="headerlink" href="#2439-desativacao" title="Permanent link">&para;</a></h1>
+<p>A desativação deverá ser distinguida de:</p>
+<ul>
+<li>pausa;</li>
+<li>indisponibilidade;</li>
+<li>expiração;</li>
+<li>cancelamento;</li>
+<li>encerramento.</li>
+</ul>
+<h1 id="2440-familia-10-apresentacao">2440. Família 10 — Apresentação<a class="headerlink" href="#2440-familia-10-apresentacao" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>ApresentacaoDeOportunidadeSolicitada</code>;</li>
+<li><code>ApresentacaoDeOportunidadeAutorizada</code>;</li>
+<li><code>OportunidadeApresentada</code>;</li>
+<li><code>ApresentacaoDeOportunidadeAdiada</code>;</li>
+<li><code>ApresentacaoDeOportunidadeSilenciada</code>;</li>
+<li><code>ApresentacaoDeOportunidadeBloqueada</code>.</li>
+</ul>
+<h1 id="2441-solicitacao-de-apresentacao">2441. Solicitação de apresentação<a class="headerlink" href="#2441-solicitacao-de-apresentacao" title="Permanent link">&para;</a></h1>
+<p>Oportunidades Ativas poderá solicitar avaliação à Capacidade de Intervenções Contextuais.</p>
+<p>A solicitação deverá conter:</p>
+<ul>
+<li>relevância;</li>
+<li>janela real;</li>
+<li>risco;</li>
+<li>sensibilidade;</li>
+<li>alternativas;</li>
+<li>necessidade de decisão;</li>
+<li>restrições de canal.</li>
+</ul>
+<h1 id="2442-autorizacao-de-apresentacao">2442. Autorização de apresentação<a class="headerlink" href="#2442-autorizacao-de-apresentacao" title="Permanent link">&para;</a></h1>
+<p>A decisão pertence à Capacidade de Intervenções Contextuais.</p>
+<p>Ela poderá decidir:</p>
+<ul>
+<li>apresentar;</li>
+<li>perguntar;</li>
+<li>lembrar;</li>
+<li>aguardar;</li>
+<li>silenciar;</li>
+<li>não interromper.</li>
+</ul>
+<h1 id="2443-oportunidadeapresentada">2443. OportunidadeApresentada<a class="headerlink" href="#2443-oportunidadeapresentada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>participante;</li>
+<li>canal;</li>
+<li>momento;</li>
+<li>finalidade;</li>
+<li>versão;</li>
+<li>justificativa;</li>
+<li>relação comercial;</li>
+<li>alternativas exibidas;</li>
+<li>decisão da intervenção.</li>
+</ul>
+<h1 id="2444-apresentacao-silenciada">2444. Apresentação silenciada<a class="headerlink" href="#2444-apresentacao-silenciada" title="Permanent link">&para;</a></h1>
+<p>O silêncio deverá ser um resultado legítimo.</p>
+<p>Não deverá ser tratado como falha operacional.</p>
+<h1 id="2445-familia-11-interacao-do-participante">2445. Família 11 — Interação do participante<a class="headerlink" href="#2445-familia-11-interacao-do-participante" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>OportunidadeVisualizada</code>;</li>
+<li><code>OportunidadeSalva</code>;</li>
+<li><code>OportunidadeRemovidaDosSalvos</code>;</li>
+<li><code>InteresseEmOportunidadeDeclarado</code>;</li>
+<li><code>InteresseEmOportunidadeRetirado</code>;</li>
+<li><code>OportunidadeDescartada</code>;</li>
+<li><code>OportunidadeOcultada</code>;</li>
+<li><code>LimitacaoDeOportunidadesSemelhantesRegistrada</code>.</li>
+</ul>
+<h1 id="2446-oportunidadevisualizada">2446. OportunidadeVisualizada<a class="headerlink" href="#2446-oportunidadevisualizada" title="Permanent link">&para;</a></h1>
+<p>Deverá representar somente acesso ao conteúdo.</p>
+<p>Não poderá produzir automaticamente:</p>
+<ul>
+<li>interesse;</li>
+<li>prioridade;</li>
+<li>contato;</li>
+<li>inscrição;</li>
+<li>recomendação mais intensa;</li>
+<li>publicidade semelhante.</li>
+</ul>
+<h1 id="2447-oportunidadesalva">2447. OportunidadeSalva<a class="headerlink" href="#2447-oportunidadesalva" title="Permanent link">&para;</a></h1>
+<p>Deverá representar preservação para consulta posterior.</p>
+<p>Não deverá:</p>
+<ul>
+<li>criar compromisso;</li>
+<li>iniciar inscrição;</li>
+<li>autorizar fornecedor;</li>
+<li>alterar Próximo Passo;</li>
+<li>compartilhar dados.</li>
+</ul>
+<h1 id="2448-interesseemoportunidadedeclarado">2448. InteresseEmOportunidadeDeclarado<a class="headerlink" href="#2448-interesseemoportunidadedeclarado" title="Permanent link">&para;</a></h1>
+<p>Deverá depender de manifestação inequívoca.</p>
+<p>Payload:</p>
+<ul>
+<li>oportunidade;</li>
+<li>participante;</li>
+<li>escopo do interesse;</li>
+<li>finalidade;</li>
+<li>contatos autorizados;</li>
+<li>validade;</li>
+<li>dados que poderão ser compartilhados.</li>
+</ul>
+<h1 id="2449-interesse-retirado">2449. Interesse retirado<a class="headerlink" href="#2449-interesse-retirado" title="Permanent link">&para;</a></h1>
+<p>Deverá:</p>
+<ul>
+<li>interromper novos contatos autorizáveis;</li>
+<li>preservar fatos históricos;</li>
+<li>recompor recortes;</li>
+<li>não produzir penalidade;</li>
+<li>não representar fracasso.</li>
+</ul>
+<h1 id="2450-descarte">2450. Descarte<a class="headerlink" href="#2450-descarte" title="Permanent link">&para;</a></h1>
+<p>O motivo deverá ser opcional.</p>
+<p>O descarte não deverá alimentar julgamento ou pontuação do participante.</p>
+<h1 id="2451-ocultacao">2451. Ocultação<a class="headerlink" href="#2451-ocultacao" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar o escopo:</p>
+<ul>
+<li>oportunidade;</li>
+<li>fornecedor;</li>
+<li>categoria;</li>
+<li>origem;</li>
+<li>campanha;</li>
+<li>período;</li>
+<li>oportunidades semelhantes.</li>
+</ul>
+<h1 id="2452-familia-12-inscricao-e-fatos-externos">2452. Família 12 — Inscrição e fatos externos<a class="headerlink" href="#2452-familia-12-inscricao-e-fatos-externos" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>InscricaoEmOportunidadeIniciada</code>;</li>
+<li><code>InscricaoEmOportunidadeEnviada</code>;</li>
+<li><code>InscricaoEmOportunidadeCancelada</code>;</li>
+<li><code>AceitacaoExternaDeOportunidadeRegistrada</code>;</li>
+<li><code>RecusaExternaDeOportunidadeRegistrada</code>;</li>
+<li><code>ContratacaoRelacionadaRegistrada</code>;</li>
+<li><code>PagamentoRelacionadoRegistrado</code>;</li>
+<li><code>ParticipacaoRelacionadaRegistrada</code>;</li>
+<li><code>ResultadoExternoRelacionadoRegistrado</code>.</li>
+</ul>
+<h1 id="2453-inscricaoemoportunidadeiniciada">2453. InscricaoEmOportunidadeIniciada<a class="headerlink" href="#2453-inscricaoemoportunidadeiniciada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>destino;</li>
+<li>finalidade;</li>
+<li>dados necessários;</li>
+<li>custos;</li>
+<li>termos;</li>
+<li>responsabilidade externa;</li>
+<li>autorização.</li>
+</ul>
+<h1 id="2454-inscricaoemoportunidadeenviada">2454. InscricaoEmOportunidadeEnviada<a class="headerlink" href="#2454-inscricaoemoportunidadeenviada" title="Permanent link">&para;</a></h1>
+<p>Deverá exigir confirmação proporcional.</p>
+<p>Payload:</p>
+<ul>
+<li>destinatário;</li>
+<li>campos enviados;</li>
+<li>versão;</li>
+<li>protocolo;</li>
+<li>momento;</li>
+<li>termos aceitos;</li>
+<li>limitações.</li>
+</ul>
+<h1 id="2455-aceitacao-externa">2455. Aceitação externa<a class="headerlink" href="#2455-aceitacao-externa" title="Permanent link">&para;</a></h1>
+<p>A aceitação não deverá confirmar:</p>
+<ul>
+<li>contratação;</li>
+<li>participação;</li>
+<li>benefício;</li>
+<li>Próximo Passo concluído;</li>
+<li>objetivo progredido;</li>
+<li>transformação.</li>
+</ul>
+<h1 id="2456-contratacao-relacionada">2456. Contratação relacionada<a class="headerlink" href="#2456-contratacao-relacionada" title="Permanent link">&para;</a></h1>
+<p>A transação pertence ao produto ou fornecedor responsável.</p>
+<p>Oportunidades Ativas deverá receber somente o recorte necessário.</p>
+<h1 id="2457-participacao-relacionada">2457. Participação relacionada<a class="headerlink" href="#2457-participacao-relacionada" title="Permanent link">&para;</a></h1>
+<p>Participação não deverá confirmar:</p>
+<ul>
+<li>satisfação;</li>
+<li>resultado;</li>
+<li>progresso;</li>
+<li>evolução;</li>
+<li>Evento de Vida.</li>
+</ul>
+<h1 id="2458-resultado-externo">2458. Resultado externo<a class="headerlink" href="#2458-resultado-externo" title="Permanent link">&para;</a></h1>
+<p>O resultado externo deverá ser encaminhado às capacidades responsáveis para avaliação própria.</p>
+<h1 id="2459-familia-13-vinculos-e-alternativas">2459. Família 13 — Vínculos e alternativas<a class="headerlink" href="#2459-familia-13-vinculos-e-alternativas" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>VinculoComProximoPassoProposto</code>;</li>
+<li><code>VinculoComProximoPassoRegistrado</code>;</li>
+<li><code>VinculoComProximoPassoRemovido</code>;</li>
+<li><code>AlternativaDeOportunidadeRegistrada</code>;</li>
+<li><code>OportunidadeSubstitutaRegistrada</code>;</li>
+<li><code>ComparacaoDeOportunidadesProduzida</code>.</li>
+</ul>
+<h1 id="2460-vinculo-proposto">2460. Vínculo proposto<a class="headerlink" href="#2460-vinculo-proposto" title="Permanent link">&para;</a></h1>
+<p>Uma proposta não deverá criar ou confirmar Próximo Passo.</p>
+<h1 id="2461-vinculo-registrado">2461. Vínculo registrado<a class="headerlink" href="#2461-vinculo-registrado" title="Permanent link">&para;</a></h1>
+<p>Deverá identificar a função:</p>
+<ul>
+<li>meio principal;</li>
+<li>alternativa;</li>
+<li>recurso;</li>
+<li>fornecedor;</li>
+<li>conteúdo;</li>
+<li>local;</li>
+<li>financiamento;</li>
+<li>experiência;</li>
+<li>apoio institucional.</li>
+</ul>
+<h1 id="2462-alteracoes-da-oportunidade-vinculada">2462. Alterações da oportunidade vinculada<a class="headerlink" href="#2462-alteracoes-da-oportunidade-vinculada" title="Permanent link">&para;</a></h1>
+<p>Poderão produzir solicitação de reavaliação sobre:</p>
+<ul>
+<li>prontidão;</li>
+<li>dependência;</li>
+<li>bloqueio;</li>
+<li>custo;</li>
+<li>risco;</li>
+<li>agenda;</li>
+<li>alternativa.</li>
+</ul>
+<h1 id="2463-alternativa-registrada">2463. Alternativa registrada<a class="headerlink" href="#2463-alternativa-registrada" title="Permanent link">&para;</a></h1>
+<p>Deverá preservar diferenças materiais de:</p>
+<ul>
+<li>custo;</li>
+<li>fornecedor;</li>
+<li>localização;</li>
+<li>modalidade;</li>
+<li>risco;</li>
+<li>elegibilidade;</li>
+<li>relação comercial;</li>
+<li>prazo.</li>
+</ul>
+<h1 id="2464-comparacao-produzida">2464. Comparação produzida<a class="headerlink" href="#2464-comparacao-produzida" title="Permanent link">&para;</a></h1>
+<p>A comparação deverá registrar critérios, pesos quando aplicáveis, incertezas e campos ausentes.</p>
+<p>Não deverá declarar vencedor universal sem fundamento legítimo.</p>
+<h1 id="2465-familia-14-manutencao-e-encerramento">2465. Família 14 — Manutenção e encerramento<a class="headerlink" href="#2465-familia-14-manutencao-e-encerramento" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>OportunidadePausada</code>;</li>
+<li><code>OportunidadeRetomada</code>;</li>
+<li><code>OportunidadeTornadaIndisponivel</code>;</li>
+<li><code>OportunidadeDisponibilizadaNovamente</code>;</li>
+<li><code>OportunidadeExpirada</code>;</li>
+<li><code>OportunidadeEncerrada</code>;</li>
+<li><code>OportunidadeCancelada</code>;</li>
+<li><code>OportunidadeArquivada</code>;</li>
+<li><code>OportunidadeReaberta</code>.</li>
+</ul>
+<h1 id="2466-pausa">2466. Pausa<a class="headerlink" href="#2466-pausa" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>causa;</li>
+<li>escopo;</li>
+<li>início;</li>
+<li>condição de retomada;</li>
+<li>apresentações suspensas;</li>
+<li>processos externos preservados.</li>
+</ul>
+<h1 id="2467-retomada">2467. Retomada<a class="headerlink" href="#2467-retomada" title="Permanent link">&para;</a></h1>
+<p>Deverá exigir revalidação proporcional.</p>
+<h1 id="2468-expiracao">2468. Expiração<a class="headerlink" href="#2468-expiracao" title="Permanent link">&para;</a></h1>
+<p>Deverá preservar:</p>
+<ul>
+<li>visualizações;</li>
+<li>salvamentos;</li>
+<li>interesses;</li>
+<li>inscrições;</li>
+<li>transações;</li>
+<li>histórico.</li>
+</ul>
+<h1 id="2469-encerramento">2469. Encerramento<a class="headerlink" href="#2469-encerramento" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar término regular e ausência de previsão de retorno.</p>
+<h1 id="2470-cancelamento">2470. Cancelamento<a class="headerlink" href="#2470-cancelamento" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar decisão explícita do responsável.</p>
+<p>Não representa fracasso do participante.</p>
+<h1 id="2471-arquivamento">2471. Arquivamento<a class="headerlink" href="#2471-arquivamento" title="Permanent link">&para;</a></h1>
+<p>Deverá retirar a oportunidade do uso corrente sem apagar fatos.</p>
+<h1 id="2472-reabertura">2472. Reabertura<a class="headerlink" href="#2472-reabertura" title="Permanent link">&para;</a></h1>
+<p>Deverá exigir:</p>
+<ul>
+<li>nova avaliação;</li>
+<li>nova versão;</li>
+<li>nova validade;</li>
+<li>preservação do ciclo anterior;</li>
+<li>ausência de mudança material que exija novo registro.</li>
+</ul>
+<h1 id="2473-familia-15-contestacao-e-correcao">2473. Família 15 — Contestação e correção<a class="headerlink" href="#2473-familia-15-contestacao-e-correcao" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>OportunidadeContestada</code>;</li>
+<li><code>ContestacaoDeOportunidadeEmAnalise</code>;</li>
+<li><code>ContestacaoDeOportunidadeResolvida</code>;</li>
+<li><code>CorrecaoDeOportunidadeProposta</code>;</li>
+<li><code>OportunidadeCorrigida</code>;</li>
+<li><code>EfeitosDeCorrecaoDeOportunidadeAplicados</code>.</li>
+</ul>
+<h1 id="2474-oportunidadecontestada">2474. OportunidadeContestada<a class="headerlink" href="#2474-oportunidadecontestada" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>campo ou decisão contestada;</li>
+<li>contestante;</li>
+<li>fundamento;</li>
+<li>evidências;</li>
+<li>impacto;</li>
+<li>efeitos limitados;</li>
+<li>prazo de revisão.</li>
+</ul>
+<h1 id="2475-efeitos-da-contestacao">2475. Efeitos da contestação<a class="headerlink" href="#2475-efeitos-da-contestacao" title="Permanent link">&para;</a></h1>
+<p>Poderão incluir:</p>
+<ul>
+<li>suspensão da apresentação;</li>
+<li>bloqueio de automações;</li>
+<li>redução de confiança;</li>
+<li>manutenção de versões;</li>
+<li>notificação de consumidores;</li>
+<li>proteção do participante.</li>
+</ul>
+<h1 id="2476-oportunidadecorrigida">2476. OportunidadeCorrigida<a class="headerlink" href="#2476-oportunidadecorrigida" title="Permanent link">&para;</a></h1>
+<p>A correção deverá ser compensatória.</p>
+<p>Deverá preservar:</p>
+<ul>
+<li>valor anterior;</li>
+<li>valor corrigido;</li>
+<li>fonte;</li>
+<li>motivo;</li>
+<li>autoridade;</li>
+<li>temporalidade;</li>
+<li>consumidores afetados;</li>
+<li>necessidade de reprocessamento.</li>
+</ul>
+<h1 id="2477-correcoes-retroativas">2477. Correções retroativas<a class="headerlink" href="#2477-correcoes-retroativas" title="Permanent link">&para;</a></h1>
+<p>A correção não deverá alterar silenciosamente o que foi conhecido e apresentado no passado.</p>
+<h1 id="2478-familia-16-permissoes-e-revogacao">2478. Família 16 — Permissões e revogação<a class="headerlink" href="#2478-familia-16-permissoes-e-revogacao" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>UsoDeContextoParaOportunidadesAutorizado</code>;</li>
+<li><code>UsoDeContextoParaOportunidadesLimitado</code>;</li>
+<li><code>PermissaoDeLocalizacaoAlterada</code>;</li>
+<li><code>CompartilhamentoDeOportunidadeAutorizado</code>;</li>
+<li><code>CompartilhamentoDeOportunidadeRevogado</code>;</li>
+<li><code>PermissaoDeContextoRevogada</code>;</li>
+<li><code>RevogacaoDeContextoEmPropagacao</code>;</li>
+<li><code>RevogacaoDeContextoPropagada</code>.</li>
+</ul>
+<h1 id="2479-autorizacao">2479. Autorização<a class="headerlink" href="#2479-autorizacao" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>finalidade;</li>
+<li>campos;</li>
+<li>consumidor;</li>
+<li>período;</li>
+<li>frequência;</li>
+<li>redistribuição;</li>
+<li>retenção;</li>
+<li>possibilidade de revogação.</li>
+</ul>
+<h1 id="2480-limitacao">2480. Limitação<a class="headerlink" href="#2480-limitacao" title="Permanent link">&para;</a></h1>
+<p>A limitação poderá alterar:</p>
+<ul>
+<li>categorias;</li>
+<li>fontes;</li>
+<li>precisão de localização;</li>
+<li>frequência;</li>
+<li>período;</li>
+<li>consumidores;</li>
+<li>tipos sensíveis.</li>
+</ul>
+<h1 id="2481-revogacao">2481. Revogação<a class="headerlink" href="#2481-revogacao" title="Permanent link">&para;</a></h1>
+<p>Deverá interromper:</p>
+<ul>
+<li>novas avaliações dependentes;</li>
+<li>novos recortes;</li>
+<li>novos compartilhamentos;</li>
+<li>novas apresentações personalizadas incompatíveis.</li>
+</ul>
+<h1 id="2482-revogacao-pendente">2482. Revogação pendente<a class="headerlink" href="#2482-revogacao-pendente" title="Permanent link">&para;</a></h1>
+<p>Enquanto houver consumidores pendentes:</p>
+<ul>
+<li>o estado deverá permanecer em propagação;</li>
+<li>novos usos deverão ser bloqueados;</li>
+<li>falhas deverão ser registradas;</li>
+<li>sucesso integral não deverá ser declarado.</li>
+</ul>
+<h1 id="2483-revogacao-concluida">2483. Revogação concluída<a class="headerlink" href="#2483-revogacao-concluida" title="Permanent link">&para;</a></h1>
+<p>Somente deverá ser reconhecida após confirmação suficiente de propagação.</p>
+<h1 id="2484-familia-17-propagacao-e-integracoes">2484. Família 17 — Propagação e integrações<a class="headerlink" href="#2484-familia-17-propagacao-e-integracoes" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>RecorteDeOportunidadeProduzido</code>;</li>
+<li><code>RecorteDeOportunidadePropagado</code>;</li>
+<li><code>RecorteDeOportunidadeRejeitado</code>;</li>
+<li><code>ReavaliacaoDeProximoPassoSolicitada</code>;</li>
+<li><code>ReavaliacaoDeIntervencaoSolicitada</code>;</li>
+<li><code>ReavaliacaoDeObjetivoSolicitada</code>;</li>
+<li><code>ReavaliacaoPorEventoDeVidaSolicitada</code>;</li>
+<li><code>ProcessamentoDeRecorteDeOportunidadeConfirmado</code>.</li>
+</ul>
+<h1 id="2485-recorte-funcional">2485. Recorte funcional<a class="headerlink" href="#2485-recorte-funcional" title="Permanent link">&para;</a></h1>
+<p>O recorte deverá conter somente:</p>
+<ul>
+<li>dados necessários;</li>
+<li>finalidade;</li>
+<li>validade;</li>
+<li>autoridade;</li>
+<li>sensibilidade;</li>
+<li>limitações;</li>
+<li>versão.</li>
+</ul>
+<h1 id="2486-consumidores">2486. Consumidores<a class="headerlink" href="#2486-consumidores" title="Permanent link">&para;</a></h1>
+<p>Capacidades consumidoras deverão receber informações, não decisões impostas.</p>
+<p>Elas deverão reavaliar seus próprios agregados.</p>
+<h1 id="2487-proximos-passos">2487. Próximos Passos<a class="headerlink" href="#2487-proximos-passos" title="Permanent link">&para;</a></h1>
+<p>Oportunidades Ativas poderá solicitar revisão.</p>
+<p>Ela não poderá:</p>
+<ul>
+<li>cancelar o passo;</li>
+<li>concluí-lo;</li>
+<li>alterar prioridade;</li>
+<li>assumir responsabilidade.</li>
+</ul>
+<h1 id="2488-intervencoes-contextuais">2488. Intervenções Contextuais<a class="headerlink" href="#2488-intervencoes-contextuais" title="Permanent link">&para;</a></h1>
+<p>Deverá receber elementos suficientes para decidir entre apresentação, pergunta, espera ou silêncio.</p>
+<h1 id="2489-objetivos">2489. Objetivos<a class="headerlink" href="#2489-objetivos" title="Permanent link">&para;</a></h1>
+<p>A oportunidade não deverá confirmar progresso ou conclusão.</p>
+<h1 id="2490-eventos-de-vida">2490. Eventos de Vida<a class="headerlink" href="#2490-eventos-de-vida" title="Permanent link">&para;</a></h1>
+<p>Mudanças contextuais poderão causar reavaliação, sem autorizar exploração comercial.</p>
+<h1 id="2491-familia-18-visualizacao-e-notificacoes">2491. Família 18 — Visualização e notificações<a class="headerlink" href="#2491-familia-18-visualizacao-e-notificacoes" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>VisaoDeOportunidadesAcessada</code>;</li>
+<li><code>BuscaDeOportunidadesRealizada</code>;</li>
+<li><code>FiltroDeOportunidadesAplicado</code>;</li>
+<li><code>OrdenacaoDeOportunidadesAlterada</code>;</li>
+<li><code>DetalheDeOportunidadeAcessado</code>;</li>
+<li><code>ExplicacaoDeRelevanciaSolicitada</code>;</li>
+<li><code>RelacaoComercialConsultada</code>;</li>
+<li><code>HistoricoDeOportunidadeConsultado</code>;</li>
+<li><code>NotificacaoDeOportunidadeEmitida</code>;</li>
+<li><code>NotificacaoDeOportunidadeSilenciada</code>.</li>
+</ul>
+<h1 id="2492-eventos-de-leitura">2492. Eventos de leitura<a class="headerlink" href="#2492-eventos-de-leitura" title="Permanent link">&para;</a></h1>
+<p>Eventos de leitura não deverão alterar:</p>
+<ul>
+<li>relevância;</li>
+<li>interesse;</li>
+<li>prioridade;</li>
+<li>elegibilidade;</li>
+<li>disponibilidade;</li>
+<li>contratação.</li>
+</ul>
+<h1 id="2493-busca">2493. Busca<a class="headerlink" href="#2493-busca" title="Permanent link">&para;</a></h1>
+<p>Consultas sensíveis deverão utilizar retenção e acesso reforçados.</p>
+<p>Não deverão alimentar publicidade.</p>
+<h1 id="2494-notificacoes">2494. Notificações<a class="headerlink" href="#2494-notificacoes" title="Permanent link">&para;</a></h1>
+<p>O evento deverá registrar:</p>
+<ul>
+<li>finalidade;</li>
+<li>canal;</li>
+<li>conteúdo minimizado;</li>
+<li>sensibilidade;</li>
+<li>motivo;</li>
+<li>controle do participante;</li>
+<li>relação comercial.</li>
+</ul>
+<h1 id="2495-notificacoes-publicitarias">2495. Notificações publicitárias<a class="headerlink" href="#2495-notificacoes-publicitarias" title="Permanent link">&para;</a></h1>
+<p>Deverão possuir contratos e identificação distintos das notificações funcionais.</p>
+<h1 id="2496-familia-19-falhas-e-reconstrucao">2496. Família 19 — Falhas e reconstrução<a class="headerlink" href="#2496-familia-19-falhas-e-reconstrucao" title="Permanent link">&para;</a></h1>
+<p>Eventos principais:</p>
+<ul>
+<li><code>ProcessamentoDeOportunidadeFalhou</code>;</li>
+<li><code>PropagacaoDeOportunidadeFalhou</code>;</li>
+<li><code>SincronizacaoDeOportunidadePendente</code>;</li>
+<li><code>ConflitoDeVersaoDeOportunidadeIdentificado</code>;</li>
+<li><code>EventoDeOportunidadeForaDeOrdemIdentificado</code>;</li>
+<li><code>DuplicidadeDeEventoDeOportunidadeIgnorada</code>;</li>
+<li><code>ProcessamentoDeOportunidadeRecuperado</code>;</li>
+<li><code>EstadoDeOportunidadeReconstruido</code>.</li>
+</ul>
+<h1 id="2497-falha-de-processamento">2497. Falha de processamento<a class="headerlink" href="#2497-falha-de-processamento" title="Permanent link">&para;</a></h1>
+<p>Deverá registrar:</p>
+<ul>
+<li>operação;</li>
+<li>etapa;</li>
+<li>versão;</li>
+<li>impacto;</li>
+<li>efeitos aplicados;</li>
+<li>efeitos não aplicados;</li>
+<li>possibilidade de repetição;</li>
+<li>recuperação prevista.</li>
+</ul>
+<h1 id="2498-falha-de-propagacao">2498. Falha de propagação<a class="headerlink" href="#2498-falha-de-propagacao" title="Permanent link">&para;</a></h1>
+<p>Deverá identificar consumidores pendentes.</p>
+<p>O fluxo não deverá ser apresentado como integralmente concluído.</p>
+<h1 id="2499-sincronizacao-pendente">2499. Sincronização pendente<a class="headerlink" href="#2499-sincronizacao-pendente" title="Permanent link">&para;</a></h1>
+<p>Deverá preservar o último estado válido e reduzir automações dependentes.</p>
+<h1 id="2500-evento-fora-de-ordem">2500. Evento fora de ordem<a class="headerlink" href="#2500-evento-fora-de-ordem" title="Permanent link">&para;</a></h1>
+<p>O consumidor deverá:</p>
+<ul>
+<li>verificar versão;</li>
+<li>preservar o evento;</li>
+<li>aguardar dependências;</li>
+<li>impedir transição impossível;</li>
+<li>reconciliar;</li>
+<li>registrar auditoria.</li>
+</ul>
+<h1 id="2501-conflito-de-versao">2501. Conflito de versão<a class="headerlink" href="#2501-conflito-de-versao" title="Permanent link">&para;</a></h1>
+<p>Não deverá haver sobrescrita silenciosa.</p>
+<p>O conflito deverá preservar:</p>
+<ul>
+<li>versão esperada;</li>
+<li>versão atual;</li>
+<li>comandos concorrentes;</li>
+<li>fatos produzidos;</li>
+<li>decisão de reconciliação.</li>
+</ul>
+<h1 id="2502-reconstrucao">2502. Reconstrução<a class="headerlink" href="#2502-reconstrucao" title="Permanent link">&para;</a></h1>
+<p>O estado deverá ser reconstruível a partir:</p>
+<ul>
+<li>dos eventos válidos;</li>
+<li>das versões;</li>
+<li>das correções;</li>
+<li>dos eventos compensatórios;</li>
+<li>das permissões;</li>
+<li>das revogações;</li>
+<li>das decisões de reconciliação.</li>
+</ul>
+<h1 id="2503-idempotencia">2503. Idempotência<a class="headerlink" href="#2503-idempotencia" title="Permanent link">&para;</a></h1>
+<p>Toda operação material deverá utilizar chave de idempotência.</p>
+<p>O reprocessamento não poderá duplicar:</p>
+<ul>
+<li>oportunidade;</li>
+<li>candidatura;</li>
+<li>ativação;</li>
+<li>apresentação;</li>
+<li>salvamento;</li>
+<li>interesse;</li>
+<li>inscrição;</li>
+<li>vínculo;</li>
+<li>notificação;</li>
+<li>contestação;</li>
+<li>revogação;</li>
+<li>arquivamento.</li>
+</ul>
+<h1 id="2504-duplicidade-semantica">2504. Duplicidade semântica<a class="headerlink" href="#2504-duplicidade-semantica" title="Permanent link">&para;</a></h1>
+<p>Eventos diferentes poderão representar a mesma intenção funcional.</p>
+<p>A capacidade deverá detectar duplicidade por:</p>
+<ul>
+<li>participante;</li>
+<li>oportunidade;</li>
+<li>ação;</li>
+<li>finalidade;</li>
+<li>intervalo;</li>
+<li>origem;</li>
+<li>payload funcional.</li>
+</ul>
+<h1 id="2505-ordenacao">2505. Ordenação<a class="headerlink" href="#2505-ordenacao" title="Permanent link">&para;</a></h1>
+<p>A ordenação deverá considerar:</p>
+<ul>
+<li>versão do agregado;</li>
+<li>causalidade;</li>
+<li>temporalidade;</li>
+<li>dependências;</li>
+<li>estado atual.</li>
+</ul>
+<h1 id="2506-estados-impossiveis">2506. Estados impossíveis<a class="headerlink" href="#2506-estados-impossiveis" title="Permanent link">&para;</a></h1>
+<p>Não poderão ocorrer:</p>
+<ul>
+<li>apresentação após revogação efetiva;</li>
+<li>ativação após encerramento sem reabertura;</li>
+<li>aceitação antes do envio;</li>
+<li>contratação antes do fato externo correspondente;</li>
+<li>correção antes do fato corrigido;</li>
+<li>disponibilidade posterior à expiração sem nova versão;</li>
+<li>interesse após ocultação ampla sem nova autorização.</li>
+</ul>
+<h1 id="2507-concorrencia">2507. Concorrência<a class="headerlink" href="#2507-concorrencia" title="Permanent link">&para;</a></h1>
+<p>Alterações concorrentes deverão utilizar versão esperada.</p>
+<p>Exemplos:</p>
+<ul>
+<li>participante oculta enquanto fornecedor altera preço;</li>
+<li>fonte encerra enquanto inscrição é enviada;</li>
+<li>revogação ocorre durante propagação;</li>
+<li>correção ocorre durante apresentação.</li>
+</ul>
+<h1 id="2508-atomicidade-funcional">2508. Atomicidade funcional<a class="headerlink" href="#2508-atomicidade-funcional" title="Permanent link">&para;</a></h1>
+<p>Operações compostas deverão declarar quais efeitos precisam ocorrer conjuntamente.</p>
+<p>Exemplo:</p>
+<div class="highlight"><pre><span></span><code>enviar inscrição
+→ persistir autorização
+→ registrar conteúdo enviado
+→ transmitir ao destinatário
+→ registrar protocolo
+</code></pre></div>
+<p>Falha intermediária deverá permanecer explícita.</p>
+<h1 id="2509-eventos-compostos">2509. Eventos compostos<a class="headerlink" href="#2509-eventos-compostos" title="Permanent link">&para;</a></h1>
+<p>Um fluxo poderá produzir múltiplos eventos.</p>
+<p>Nenhum evento composto deverá ocultar fatos materialmente distintos.</p>
+<h1 id="2510-correcao-compensatoria">2510. Correção compensatória<a class="headerlink" href="#2510-correcao-compensatoria" title="Permanent link">&para;</a></h1>
+<p>Eventos históricos não deverão ser alterados ou excluídos para corrigir significado.</p>
+<p>A correção deverá produzir novo evento.</p>
+<h1 id="2511-exclusao-e-anonimizacao">2511. Exclusão e anonimização<a class="headerlink" href="#2511-exclusao-e-anonimizacao" title="Permanent link">&para;</a></h1>
+<p>A exclusão deverá distinguir:</p>
+<ul>
+<li>remoção da superfície;</li>
+<li>encerramento;</li>
+<li>arquivamento;</li>
+<li>anonimização;</li>
+<li>eliminação legal;</li>
+<li>preservação mínima para auditoria.</li>
+</ul>
+<h1 id="2512-retencao">2512. Retenção<a class="headerlink" href="#2512-retencao" title="Permanent link">&para;</a></h1>
+<p>A retenção deverá considerar:</p>
+<ul>
+<li>finalidade;</li>
+<li>sensibilidade;</li>
+<li>obrigação legal;</li>
+<li>relação externa;</li>
+<li>contestação;</li>
+<li>auditoria;</li>
+<li>revogação;</li>
+<li>necessidade de reconstrução.</li>
+</ul>
+<h1 id="2513-logs">2513. Logs<a class="headerlink" href="#2513-logs" title="Permanent link">&para;</a></h1>
+<p>Logs técnicos não deverão conter:</p>
+<ul>
+<li>narrativas sensíveis completas;</li>
+<li>diagnósticos inferidos;</li>
+<li>dados de terceiros desnecessários;</li>
+<li>conteúdo espiritual;</li>
+<li>condição financeira detalhada;</li>
+<li>conteúdo jurídico protegido;</li>
+<li>dados de saúde sem necessidade.</li>
+</ul>
+<h1 id="2514-responsabilidades-do-produtor">2514. Responsabilidades do produtor<a class="headerlink" href="#2514-responsabilidades-do-produtor" title="Permanent link">&para;</a></h1>
+<p>O produtor deverá:</p>
+<ol>
+<li>validar identidade;</li>
+<li>validar autoridade;</li>
+<li>aplicar finalidade;</li>
+<li>minimizar payload;</li>
+<li>preservar proveniência;</li>
+<li>usar contrato vigente;</li>
+<li>aplicar idempotência;</li>
+<li>persistir antes de publicar;</li>
+<li>classificar sensibilidade;</li>
+<li>registrar temporalidade;</li>
+<li>informar limitações;</li>
+<li>tratar falhas;</li>
+<li>permitir auditoria;</li>
+<li>não fabricar significado;</li>
+<li>não ocultar relações comerciais.</li>
+</ol>
+<h1 id="2515-responsabilidades-do-consumidor">2515. Responsabilidades do consumidor<a class="headerlink" href="#2515-responsabilidades-do-consumidor" title="Permanent link">&para;</a></h1>
+<p>O consumidor deverá:</p>
+<ol>
+<li>validar contrato;</li>
+<li>verificar versão;</li>
+<li>aplicar finalidade;</li>
+<li>respeitar permissões;</li>
+<li>verificar idempotência;</li>
+<li>controlar ordenação;</li>
+<li>preservar causalidade;</li>
+<li>não ampliar autoridade;</li>
+<li>governar sua própria decisão;</li>
+<li>limitar retenção;</li>
+<li>tratar revogação;</li>
+<li>registrar processamento;</li>
+<li>informar falhas;</li>
+<li>não duplicar efeitos;</li>
+<li>não reinterpretar publicidade como relevância.</li>
+</ol>
+<h1 id="2516-compatibilidade">2516. Compatibilidade<a class="headerlink" href="#2516-compatibilidade" title="Permanent link">&para;</a></h1>
+<p>Consumidores deverão:</p>
+<ul>
+<li>aceitar versões compatíveis;</li>
+<li>rejeitar versões desconhecidas de forma segura;</li>
+<li>preservar eventos não processados;</li>
+<li>registrar incompatibilidade;</li>
+<li>evitar descarte silencioso;</li>
+<li>permitir reprocessamento posterior.</li>
+</ul>
+<h1 id="2517-explicabilidade">2517. Explicabilidade<a class="headerlink" href="#2517-explicabilidade" title="Permanent link">&para;</a></h1>
+<p>O participante deverá poder compreender:</p>
+<ul>
+<li>qual evento ocorreu;</li>
+<li>quem o originou;</li>
+<li>qual fonte foi utilizada;</li>
+<li>qual autoridade existia;</li>
+<li>quais dados foram considerados;</li>
+<li>qual finalidade foi aplicada;</li>
+<li>quais consumidores receberam recortes;</li>
+<li>quais efeitos foram produzidos;</li>
+<li>como contestar;</li>
+<li>como revogar.</li>
+</ul>
+<h1 id="2518-auditoria">2518. Auditoria<a class="headerlink" href="#2518-auditoria" title="Permanent link">&para;</a></h1>
+<p>A auditoria deverá reconstruir:</p>
+<div class="highlight"><pre><span></span><code>sinal, comando ou informação
+→ identidade
+→ autoridade
+→ finalidade
+→ avaliação
+→ proposta, quando aplicável
+→ decisão
+→ persistência
+→ evento
+→ atualização do agregado
+→ recorte
+→ consumidor
+→ processamento
+→ interação, falha, correção ou revogação
+</code></pre></div>
+<h1 id="2519-metricas-iniciais-dos-contratos">2519. Métricas iniciais dos contratos<a class="headerlink" href="#2519-metricas-iniciais-dos-contratos" title="Permanent link">&para;</a></h1>
+<p>As métricas poderão avaliar:</p>
+<ul>
+<li>eventos sem autoridade;</li>
+<li>eventos sem finalidade;</li>
+<li>contratos incompatíveis;</li>
+<li>duplicidades;</li>
+<li>eventos fora de ordem;</li>
+<li>conflitos de versão;</li>
+<li>falhas parciais;</li>
+<li>propagações pendentes;</li>
+<li>revogações incompletas;</li>
+<li>payloads excessivos;</li>
+<li>eventos sensíveis em logs;</li>
+<li>relações comerciais ausentes;</li>
+<li>correções aplicadas;</li>
+<li>estados reconstruídos;</li>
+<li>consumidores divergentes;</li>
+<li>latência de processamento;</li>
+<li>rejeições seguras;</li>
+<li>incidentes de causalidade indevida.</li>
+</ul>
+<p>As métricas deverão avaliar o sistema, não o participante.</p>
+<h1 id="2520-comportamentos-proibidos">2520. Comportamentos proibidos<a class="headerlink" href="#2520-comportamentos-proibidos" title="Permanent link">&para;</a></h1>
+<p>Os contratos não deverão:</p>
+<ol>
+<li>publicar comando como fato;</li>
+<li>publicar proposta como decisão;</li>
+<li>publicar evento antes da persistência;</li>
+<li>reconhecer interesse por visualização;</li>
+<li>reconhecer aceitação por inscrição;</li>
+<li>reconhecer resultado por contratação;</li>
+<li>reconhecer evolução por participação;</li>
+<li>fabricar disponibilidade;</li>
+<li>fabricar elegibilidade;</li>
+<li>fabricar causalidade;</li>
+<li>omitir patrocínio ou comissão;</li>
+<li>elevar relevância por receita;</li>
+<li>utilizar contexto sensível para publicidade;</li>
+<li>ampliar autoridade da fonte;</li>
+<li>reescrever histórico;</li>
+<li>duplicar efeitos;</li>
+<li>ignorar ordenação;</li>
+<li>sobrescrever conflitos;</li>
+<li>declarar revogação antes da propagação;</li>
+<li>apresentar falha parcial como sucesso integral.</li>
+</ol>
+<h1 id="2521-criterios-de-aceite">2521. Critérios de aceite<a class="headerlink" href="#2521-criterios-de-aceite" title="Permanent link">&para;</a></h1>
+<p>A extensão será considerada consolidada quando:</p>
+<ol>
+<li>distinguir comando, proposta e evento;</li>
+<li>definir o agregado;</li>
+<li>definir estrutura comum;</li>
+<li>definir identidade e versionamento;</li>
+<li>governar titular, ator, papel e autoridade;</li>
+<li>preservar proveniência;</li>
+<li>aplicar finalidade e sensibilidade;</li>
+<li>definir temporalidades;</li>
+<li>definir correlação e causalidade;</li>
+<li>organizar famílias de eventos;</li>
+<li>governar identificação e candidatura;</li>
+<li>governar fonte e autoridade;</li>
+<li>governar avaliação;</li>
+<li>governar disponibilidade;</li>
+<li>governar elegibilidade;</li>
+<li>governar relevância;</li>
+<li>governar risco e sensibilidade;</li>
+<li>governar transparência comercial;</li>
+<li>governar ativação;</li>
+<li>governar apresentação;</li>
+<li>governar interação;</li>
+<li>governar inscrições e fatos externos;</li>
+<li>governar vínculos;</li>
+<li>governar encerramentos;</li>
+<li>governar contestação e correção;</li>
+<li>governar permissões e revogação;</li>
+<li>governar propagação;</li>
+<li>separar eventos de leitura;</li>
+<li>tratar falhas e reconstrução;</li>
+<li>aplicar idempotência, ordenação e concorrência;</li>
+<li>preservar imutabilidade;</li>
+<li>proteger logs e retenção;</li>
+<li>definir responsabilidades de produtores e consumidores;</li>
+<li>preservar explicabilidade e auditoria;</li>
+<li>manter o participante no controle.</li>
+</ol>
+<h1 id="2522-regras-fundamentais">2522. Regras fundamentais<a class="headerlink" href="#2522-regras-fundamentais" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Comando não representa fato.</li>
+<li>Proposta não representa decisão.</li>
+<li>Evento somente é publicado após persistência suficiente.</li>
+<li>Evento histórico é imutável.</li>
+<li>Correção produz evento compensatório.</li>
+<li>Titular, ator, papel e fonte permanecem distintos.</li>
+<li>Autoridade é limitada ao contrato.</li>
+<li>Finalidade precede processamento.</li>
+<li>Minimização precede publicação.</li>
+<li>Tempo do fato e tempo do conhecimento permanecem separados.</li>
+<li>Correlação não representa causalidade.</li>
+<li>Reprocessamento não duplica efeitos.</li>
+<li>Eventos fora de ordem não criam estados impossíveis.</li>
+<li>Conflitos não são sobrescritos silenciosamente.</li>
+<li>Identificação não representa candidatura.</li>
+<li>Candidatura não representa ativação.</li>
+<li>Ativação não representa apresentação.</li>
+<li>Apresentação não representa visualização.</li>
+<li>Visualização não representa interesse.</li>
+<li>Salvamento não representa prioridade.</li>
+<li>Interesse não representa compromisso.</li>
+<li>Inscrição não representa aceitação.</li>
+<li>Aceitação não representa contratação.</li>
+<li>Contratação não representa participação.</li>
+<li>Participação não representa resultado.</li>
+<li>Resultado não representa evolução.</li>
+<li>Disponibilidade não representa elegibilidade.</li>
+<li>Elegibilidade não representa aprovação.</li>
+<li>Relevância não representa obrigação.</li>
+<li>Patrocínio e comissão não alteram relevância.</li>
+<li>Publicidade não produz evento funcional neutro.</li>
+<li>Fonte somente confirma fatos de sua autoridade.</li>
+<li>Oportunidades sensíveis exigem payload minimizado.</li>
+<li>Eventos de leitura não alteram estado material.</li>
+<li>Produtos especializados governam transações e entregas.</li>
+<li>Capacidades consumidoras governam suas decisões.</li>
+<li>Revogação interrompe novos usos.</li>
+<li>Revogação somente termina após propagação.</li>
+<li>Falha reduz automação.</li>
+<li>Falha parcial não representa sucesso integral.</li>
+<li>Métricas avaliam o sistema.</li>
+<li>O participante permanece no controle.</li>
+</ol>
+<h1 id="2523-continuidade-normativa">2523. Continuidade normativa<a class="headerlink" href="#2523-continuidade-normativa" title="Permanent link">&para;</a></h1>
+<p><code>PAS-001-OA-EVENT-001 1.0.0</code> deverá ser registrado como a <strong>quarta extensão normativa da Capacidade 06 — Oportunidades Ativas</strong>.</p>
+<p>A extensão deverá:</p>
+<ul>
+<li>preservar fundamentos, ciclo de vida e visualização;</li>
+<li>preservar o <code>PAS-001 0.5.0</code>;</li>
+<li>manter as Capacidades 02, 03, 04 e 05 como <code>Functionally complete</code>;</li>
+<li>manter a Capacidade 06 como <code>In progress</code>;</li>
+<li>elevar o progresso editorial de <code>60%</code> para <code>80%</code>;</li>
+<li>consolidar os contratos das 19 famílias de eventos;</li>
+<li>preservar imutabilidade, autoridade, finalidade e temporalidade;</li>
+<li>governar correção compensatória;</li>
+<li>consolidar idempotência, ordenação, concorrência e reconstrução;</li>
+<li>preservar neutralidade comercial;</li>
+<li>estabelecer as integrações funcionais como próxima etapa.</li>
+</ul>
+<p>O bloco seguinte será:</p>
+<blockquote>
+<p><strong>Integrações funcionais da Capacidade de Oportunidades Ativas com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Intervenções Contextuais, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas e sistemas externos.</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/print-site.js"></script>
+      
+    
+  </body>
+</html>
