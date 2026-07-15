@@ -14915,7 +14915,8 @@ Implementação = realização progressiva
 <p>As extensões normativas vigentes são:</p>
 <ul>
 <li><code>PAS-001-OA-FOUNDATION-001 1.0.0</code> — pergunta central, objetivo, singularidade, definição, distinções, titularidade, autoridade, tipos, elegibilidade, disponibilidade, relevância, custos, riscos, relações comerciais, entradas, saídas e controle;</li>
-<li><code>PAS-001-OA-LIFECYCLE-001 1.0.0</code> — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura.</li>
+<li><code>PAS-001-OA-LIFECYCLE-001 1.0.0</code> — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura;</li>
+<li><code>PAS-001-OA-VIEW-001 1.0.0</code> — <code>Minhas Oportunidades</code>, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles.</li>
 </ul>
 <p>O ciclo de vida consolida:</p>
 <ul>
@@ -14940,8 +14941,38 @@ Implementação = realização progressiva
 <li>oportunidades recorrentes, coletivas, institucionais e patrocinadas;</li>
 <li>revogação de contexto, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.</li>
 </ul>
-<p>A Capacidade 06 está <strong>In progress</strong>, com progresso editorial de referência de <code>40%</code>.</p>
-<p>O próximo bloco deverá consolidar a visualização e o controle das Oportunidades Ativas.</p>
+<p>A visualização e o controle consolidam:</p>
+<ul>
+<li><code>Minhas Oportunidades</code> como superfície funcional, sem operar como feed publicitário, catálogo infinito, ranking social ou vitrine definida por comissão;</li>
+<li>visão geral, oportunidades para considerar, busca, filtros, oportunidades salvas, interesses, processos iniciados, histórico, fontes e permissões;</li>
+<li>ausência legítima de oportunidade sem preenchimento por anúncios ou opções incompatíveis;</li>
+<li>descoberta contextual com explicação dos recortes e da finalidade;</li>
+<li>busca direta e proteção reforçada de buscas sensíveis;</li>
+<li>filtros funcionais e comerciais, incluindo controle de oportunidades patrocinadas e opções sem comissão;</li>
+<li>ordenação neutra, separada de ordenação comercial identificada;</li>
+<li>visualizações por lista, cartões, mapa, calendário, comparação e agrupamentos;</li>
+<li>cartões minimizados, títulos funcionais e títulos neutros;</li>
+<li>indicadores textuais de disponibilidade, elegibilidade, risco, patrocínio, comissão e relação individual;</li>
+<li>separação entre estado funcional, informação, disponibilidade, elegibilidade, relevância e relação do participante;</li>
+<li>explicação de relevância, limitações, incertezas, fonte e relação comercial;</li>
+<li>disponibilidade com última verificação, validade e ausência de garantia;</li>
+<li>elegibilidade com requisitos, pendências e autoridade decisória externa;</li>
+<li>custo total, gratuidade, riscos e limitações;</li>
+<li>transparência de patrocínio, comissão, afiliação, promoção paga, exclusividade e participação na receita;</li>
+<li>área publicitária identificada e separada da lista funcional;</li>
+<li>detalhamento progressivo, proveniência e histórico compreensível;</li>
+<li>comparação não simplificadora, critérios ajustáveis e preservação de alternativas não patrocinadas;</li>
+<li>salvamento, interesse, retirada, descarte, ocultação, contestação e correção;</li>
+<li>vínculo consciente com Próximos Passos sem criação automática;</li>
+<li>proteção de oportunidades sensíveis, de saúde, financeiras, profissionais, sociais, religiosas, institucionais e coletivas;</li>
+<li>mudanças materiais, indisponibilidade, pausa, expiração, encerramento e novas edições;</li>
+<li>acompanhamento de processos externos sem absorção da transação;</li>
+<li>fila de atenção, notificações funcionais e comerciais separadas e prevenção de fadiga;</li>
+<li>controles de categorias, fontes, contexto, localização, compartilhamento e revogação;</li>
+<li>acessibilidade técnica e cognitiva, consistência entre canais, conflitos de informação e falha segura.</li>
+</ul>
+<p>A Capacidade 06 está <strong>In progress</strong>, com progresso editorial de referência de <code>60%</code>.</p>
+<p>O próximo bloco deverá consolidar os contratos dos eventos funcionais das Oportunidades Ativas.</p>
 <h2 id="product-architecture-regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#product-architecture-regras-arquiteturais" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -15214,6 +15245,36 @@ Implementação = realização progressiva
 <li>Reprocessamento não duplica oportunidade, ativação, apresentação, interesse, inscrição ou vínculo.</li>
 <li>Eventos fora de ordem e conflitos concorrentes não podem criar estados impossíveis ou sobrescrita silenciosa.</li>
 <li>Falha parcial não representa sucesso integral e o participante permanece no controle do ciclo.</li>
+<li><code>Minhas Oportunidades</code> é uma superfície de descoberta e controle, não feed publicitário ou catálogo infinito.</li>
+<li>A ausência de oportunidades compatíveis deve permanecer visível e legítima.</li>
+<li>Busca sensível não pode alimentar publicidade ou sugestões públicas no dispositivo.</li>
+<li>Ordenação funcional deve permanecer separada de ordenação comercial identificada.</li>
+<li>Comissão, patrocínio, margem, valor de compra, clique e tempo de tela não podem elevar a ordem funcional.</li>
+<li>Cartões devem utilizar minimização e detalhamento progressivo.</li>
+<li>Títulos sensíveis devem permitir formulação neutra e modo discreto.</li>
+<li>Estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual não podem ser colapsados em um único selo.</li>
+<li>Relevância deve responder <code>Por que estou vendo isto?</code> com critérios, limitações, incertezas, fonte e relação comercial.</li>
+<li>Disponibilidade deve apresentar fonte, última verificação, validade e ausência de garantia.</li>
+<li>Elegibilidade incerta deve permanecer incerta e a autoridade externa de decisão deve ser indicada.</li>
+<li>Custo principal não pode ocultar taxas, materiais, deslocamento, renovação, cancelamento ou outros custos materiais.</li>
+<li>Riscos devem ser apresentados antes de ações de alto impacto.</li>
+<li>Patrocínio, comissão, afiliação, promoção paga, exclusividade e participação na receita devem permanecer visíveis.</li>
+<li>Conteúdo de Guivos Ads deve permanecer em área identificada e fora da lista funcional neutra.</li>
+<li>Comparação não pode produzir vencedor universal quando critérios forem subjetivos ou incompletos.</li>
+<li>Alternativas públicas, gratuitas e não patrocinadas devem permanecer elegíveis para apresentação.</li>
+<li>Salvamento não pode gerar contato, inscrição, compartilhamento ou publicidade adicional automática.</li>
+<li>Manifestação de interesse ao fornecedor exige autorização, finalidade e visualização dos dados enviados.</li>
+<li>Descarte e ocultação devem ser respeitados e não gerar penalidade.</li>
+<li>Contestação material deve limitar afirmações e automações até resolução.</li>
+<li>Vínculo com Próximo Passo deve ser consciente e não criar ou confirmar movimento automaticamente.</li>
+<li>Eventos de Vida sensíveis não podem fundamentar pressão, aumento de preço ou publicidade.</li>
+<li>Oportunidades sensíveis exigem títulos neutros, busca protegida, notificações minimizadas e retenção limitada.</li>
+<li>Processos de inscrição, contratação, pagamento e participação devem ser identificados como externos quando governados por outro produto ou fornecedor.</li>
+<li>Fila de atenção deve considerar impacto, prazo real, risco e reversibilidade, nunca receita.</li>
+<li>Notificações comerciais e funcionais devem permanecer separadas.</li>
+<li>O participante deve controlar categorias, fontes, contexto, localização, compartilhamento e revogação.</li>
+<li>Conflitos de informação devem expor versões, fontes, temporalidade e estado provisório sem escolha comercial silenciosa.</li>
+<li>A visualização deve operar com acessibilidade, prevenção de fadiga, falha segura e controle do participante.</li>
 </ol>
 <h2 id="product-architecture-documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#product-architecture-documentos-do-dominio" title="Permanent link">&para;</a></h2>
 <ul>
@@ -15225,6 +15286,7 @@ Implementação = realização progressiva
 <li><a href="#product-architecture-pas-001-proximos-passos-kpis-cenarios-contrato-final">PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos</a></li>
 <li><a href="#product-architecture-pas-001-oportunidades-ativas-fundamentos-iniciais">PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas</a></li>
 <li><a href="#product-architecture-pas-001-oportunidades-ativas-ciclo-de-vida">PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas</a></li>
+<li><a href="#product-architecture-pas-001-oportunidades-ativas-visualizacao-controle">PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas</a></li>
 <li><a href="#product-architecture-journey">Guivos Journey</a></li>
 <li><a href="#product-architecture-mall">Guivos Mall</a></li>
 <li><a href="#product-architecture-travel">Guivos Travel</a></li>
