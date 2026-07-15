@@ -5745,6 +5745,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#eventos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eventos funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5886,6 +5897,11 @@
 <td>Definir a visualização e o controle das Oportunidades Ativas</td>
 </tr>
 <tr>
+<td>PAS-001-OA-EVENT-001</td>
+<td>Active 1.0.0</td>
+<td>Definir os contratos dos eventos funcionais das Oportunidades Ativas</td>
+</tr>
+<tr>
 <td>GLPA-001</td>
 <td>Approved 1.1.1</td>
 <td>Organizar a Guivos por camadas funcionais</td>
@@ -5948,11 +5964,11 @@
 </tr>
 <tr>
 <td>Extensão normativa vigente</td>
-<td><code>PAS-001-OA-VIEW-001 1.0.0</code></td>
+<td><code>PAS-001-OA-EVENT-001 1.0.0</code></td>
 </tr>
 <tr>
 <td>Progresso editorial de Oportunidades Ativas</td>
-<td><code>60%</code></td>
+<td><code>80%</code></td>
 </tr>
 <tr>
 <td>Arquitetura funcional</td>
@@ -5972,7 +5988,7 @@
 </tr>
 <tr>
 <td>Foco imediato</td>
-<td>Consolidar os contratos dos eventos funcionais das Oportunidades Ativas</td>
+<td>Consolidar as integrações funcionais das Oportunidades Ativas</td>
 </tr>
 </tbody>
 </table>
@@ -6013,8 +6029,8 @@
 </tr>
 <tr>
 <td>06 — Oportunidades Ativas</td>
-<td>In progress — 60%</td>
-<td>Fundamentos, ciclo de vida e visualização consolidados; eventos funcionais são a próxima entrega</td>
+<td>In progress — 80%</td>
+<td>Fundamentos, ciclo, visualização e eventos consolidados; integrações funcionais são a próxima entrega</td>
 </tr>
 <tr>
 <td>07 — Intervenções Contextuais</td>
@@ -6123,6 +6139,28 @@
 <li>controles de categorias, fontes, contexto, localização, compartilhamento e revogação;</li>
 <li>acessibilidade técnica e cognitiva, consistência entre canais, conflito de informação e falha segura.</li>
 </ul>
+<h3 id="eventos-funcionais">Eventos funcionais<a class="headerlink" href="#eventos-funcionais" title="Permanent link">&para;</a></h3>
+<ul>
+<li>distinção normativa entre comando, proposta e evento funcional reconhecido;</li>
+<li>persistência funcional suficiente antes da publicação;</li>
+<li>agregado <code>Registro de Oportunidade</code> e estrutura comum versionada;</li>
+<li>identidade permanente, titular, ator, papel, autoridade, fonte, finalidade, proveniência e sensibilidade;</li>
+<li>temporalidades de fato, declaração, conhecimento, reconhecimento, persistência, aplicação, propagação e correção;</li>
+<li>correlação e causalidade funcional sem equivalência automática;</li>
+<li>19 famílias de eventos de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, manutenção, correção, permissões, propagação, visualização e falhas;</li>
+<li>disponibilidade objetiva confirmada somente por fonte autorizada;</li>
+<li>elegibilidade estimada, confirmada e decisão externa preservadas como fatos distintos;</li>
+<li>relevância sem influência positiva de comissão, patrocínio, margem, clique, tempo de tela ou vulnerabilidade;</li>
+<li>apresentação governada por Intervenções Contextuais;</li>
+<li>visualização, salvamento, interesse, inscrição, aceitação, contratação, participação e resultado separados;</li>
+<li>correção compensatória, contestação e histórico imutável;</li>
+<li>revogação concluída somente após propagação suficiente;</li>
+<li>recortes mínimos e decisões próprias das capacidades consumidoras;</li>
+<li>idempotência, duplicidade semântica, ordenação, concorrência, atomicidade e reconstrução;</li>
+<li>retenção e logs minimizados para oportunidades sensíveis;</li>
+<li>responsabilidades de produtores e consumidores;</li>
+<li>explicabilidade, auditoria e métricas que avaliam o sistema.</li>
+</ul>
 <h2 id="conceitos-internos-preservados">Conceitos internos preservados<a class="headerlink" href="#conceitos-internos-preservados" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -6150,7 +6188,7 @@
 </tr>
 <tr>
 <td>Oportunidades Ativas</td>
-<td>In progress — 60%</td>
+<td>In progress — 80%</td>
 </tr>
 <tr>
 <td>Fundamentos de Oportunidades Ativas</td>
@@ -6165,8 +6203,20 @@
 <td>Normative 1.0.0</td>
 </tr>
 <tr>
+<td>Eventos Funcionais de Oportunidades Ativas</td>
+<td>Normative 1.0.0</td>
+</tr>
+<tr>
 <td>Minhas Oportunidades</td>
 <td>Superfície funcional de descoberta, comparação e controle, distinta de feed publicitário</td>
+</tr>
+<tr>
+<td>Registro de Oportunidade</td>
+<td>Agregado principal que preserva estado funcional, informação, disponibilidade, elegibilidade, relevância, risco, relações e histórico</td>
+</tr>
+<tr>
+<td>Evento funcional de oportunidade</td>
+<td>Fato reconhecido, versionado, imutável e publicado após persistência suficiente</td>
 </tr>
 <tr>
 <td>Oportunidade candidata</td>
@@ -6227,6 +6277,18 @@
 <tr>
 <td>Alternativa não patrocinada</td>
 <td>Opção preservada independentemente de parceria ou retorno financeiro</td>
+</tr>
+<tr>
+<td>Correção compensatória</td>
+<td>Novo evento que corrige significado sem reescrever fatos históricos</td>
+</tr>
+<tr>
+<td>Revogação propagada</td>
+<td>Estado reconhecido somente após bloqueio de novos usos e confirmação suficiente dos consumidores</td>
+</tr>
+<tr>
+<td>Idempotência de oportunidade</td>
+<td>Reprocessamento sem duplicação de efeitos materiais</td>
 </tr>
 <tr>
 <td>Pausa de oportunidade</td>
@@ -6309,11 +6371,11 @@
 <tbody>
 <tr>
 <td>Roadmap</td>
-<td>8.3.0</td>
+<td>8.4.0</td>
 </tr>
 <tr>
 <td>Knowledge Board</td>
-<td>8.4.0</td>
+<td>8.5.0</td>
 </tr>
 <tr>
 <td>Architectural Milestones</td>
@@ -6352,6 +6414,10 @@
 <td>Active 1.0.0</td>
 </tr>
 <tr>
+<td>PAS-001-OA-EVENT-001</td>
+<td>Active 1.0.0</td>
+</tr>
+<tr>
 <td>GLPA-001</td>
 <td>Approved 1.1.1</td>
 </tr>
@@ -6378,7 +6444,7 @@
 </tbody>
 </table>
 <h2 id="proxima-atividade">Próxima atividade<a class="headerlink" href="#proxima-atividade" title="Permanent link">&para;</a></h2>
-<p>Consolidar os <strong>contratos dos eventos funcionais das Oportunidades Ativas</strong>, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, ativação, apresentação, interação, elegibilidade, disponibilidade, transparência comercial, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência, auditoria e falha segura.</p>
+<p>Consolidar as <strong>integrações funcionais das Oportunidades Ativas</strong>, incluindo capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, fornecedores, serviços profissionais, fontes públicas, catálogos, calendários, localização, sistemas externos, finalidade, minimização, proveniência, sincronização, revogação, propagação, auditoria e falha segura.</p>
 
 
 
