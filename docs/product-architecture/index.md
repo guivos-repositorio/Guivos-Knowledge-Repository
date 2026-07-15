@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.6.3
+version: 1.6.4
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -110,6 +110,7 @@ As extensões normativas vigentes são:
 - `PAS-001-OA-LIFECYCLE-001 1.0.0` — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura;
 - `PAS-001-OA-VIEW-001 1.0.0` — `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles;
 - `PAS-001-OA-EVENT-001 1.0.0` — estrutura comum dos eventos, autoridade, temporalidade, 19 famílias contratuais, correção compensatória, revogação, propagação, idempotência, ordenação, concorrência e reconstrução.
+- `PAS-001-OA-INTEGRATION-001 1.0.0` — contrato comum de integração, identidade, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos especializados, sistemas externos, observabilidade e falha segura.
 
 O ciclo de vida consolida:
 
@@ -186,9 +187,28 @@ Os contratos dos eventos funcionais consolidam:
 - responsabilidades de produtores e consumidores;
 - explicabilidade, auditoria e métricas sistêmicas.
 
-A Capacidade 06 está **In progress**, com progresso editorial de referência de `80%`.
+As integrações funcionais consolidam:
 
-O próximo bloco deverá consolidar as integrações funcionais das Oportunidades Ativas.
+- integração como intercâmbio governado de sinais, fatos, propostas, comandos, evidências, recortes e solicitações de reavaliação;
+- contrato funcional comum com produtor, consumidor, participante, finalidade, modo, autoridade, escopo, sensibilidade, proveniência, qualidade, confiança, validade, frequência, retenção, relação comercial, sincronização e revogação;
+- identidade e associação seguras, com efeitos pessoais bloqueados diante de incerteza;
+- autoridade limitada ao que cada fonte pode legitimamente confirmar;
+- separação entre qualidade técnica, confiança funcional e autoridade;
+- temporalidades de fato, registro externo, publicação, sincronização, conhecimento, processamento, aplicação, propagação e correção;
+- transformações permitidas e proibição de fabricar disponibilidade, elegibilidade, aprovação, interesse, prioridade, causalidade, progresso, transformação ou precisão inexistente;
+- sincronização com versão, idempotência, sequência, conflitos, atualização parcial, reconciliação e degradação controlada;
+- prevenção de ciclos entre oportunidades, Próximos Passos e capacidades consumidoras;
+- finalidade específica, minimização, permissões granulares, pausa, desconexão, revogação e propagação confirmada;
+- integrações com todas as capacidades do Journey, preservando responsabilidades e decisões próprias;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Guivos Business, Mall, Travel, Media e Ads, sem transferência de relevância ou decisão;
+- contratos com organizações, fornecedores, serviços profissionais, fontes públicas, calendários, localização, esportes e sistemas externos;
+- proteção de integrações pessoais, temporárias, compartilhadas, sensíveis e de terceiros;
+- conflitos entre fontes, correções externas, retroatividade, reconstrução, observabilidade, explicabilidade e auditoria.
+
+A Capacidade 06 está **In progress**, com progresso editorial de referência de `90%`.
+
+O próximo bloco deverá consolidar KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas.
 
 ## Regras arquiteturais
 
@@ -534,6 +554,51 @@ O próximo bloco deverá consolidar as integrações funcionais das Oportunidade
 340. Auditoria deve reconstruir o fluxo desde sinal ou comando até evento, recorte, consumidor, processamento, correção ou revogação.
 341. Métricas dos contratos avaliam o sistema, não o participante.
 342. O participante permanece no controle dos eventos funcionais de Oportunidades Ativas.
+343. Integração não representa decisão do participante.
+344. Disponibilidade técnica não representa autorização de uso.
+345. Fonte somente confirma fatos dentro de sua autoridade.
+346. Titularidade não é transferida por integração.
+347. Finalidade deve preceder acesso e minimização deve preceder compartilhamento.
+348. Qualidade técnica, confiança funcional e autoridade permanecem dimensões distintas.
+349. Informação externa não representa relevância automática.
+350. Catálogo não representa Oportunidade Ativa.
+351. Publicidade não representa relevância funcional.
+352. Compra não representa progresso e inscrição não representa aceitação.
+353. Aceitação não representa participação e participação não representa transformação.
+354. Calendário não confirma execução e localização não confirma ação.
+355. Interesse não pode ser inferido por visualização.
+356. Organizações não recebem a jornada pessoal integral.
+357. Contexto sensível não pode alimentar publicidade.
+358. Comissão não altera relevância e patrocínio não altera prioridade.
+359. Alternativas não patrocinadas não podem ser ocultadas.
+360. Transformações não fabricam precisão, causalidade, intenção, interesse, progresso ou diagnóstico.
+361. Integrações não criam objetivos nem Próximos Passos confirmados.
+362. Capacidades consumidoras governam suas próprias decisões.
+363. Guivos Intelligence sugere, compara e explica, mas não decide.
+364. Platform Layer sustenta contratos técnicos sem redefinir semântica.
+365. Produtos especializados governam transações e entregas.
+366. Informação pública não representa uso irrestrito.
+367. Dados de terceiros não formam perfis paralelos.
+368. Integrações temporárias devem possuir expiração.
+369. Pausa interrompe novas coletas e atualizações.
+370. Revogação interrompe novos usos e somente termina após propagação suficiente.
+371. Sincronização deve preservar versão, idempotência, ordenação e reconciliação.
+372. Reprocessamento não duplica efeitos.
+373. Eventos fora de ordem não criam estados impossíveis.
+374. Conflitos entre fontes não são resolvidos silenciosamente.
+375. Não existe hierarquia universal absoluta entre fontes.
+376. Correções externas preservam o valor anterior e produzem efeitos compensatórios.
+377. Associação incerta bloqueia efeitos pessoais e apresentação.
+378. Associação incorreta exige interrupção, recomposição de recortes e reavaliação.
+379. Integrações sensíveis exigem finalidade estrita, minimização reforçada e acesso restrito.
+380. Integrações pessoais devem permitir controle de campos, frequência, consumidores, retenção e notificações.
+381. Integrações compartilhadas preservam estados e confirmações individuais.
+382. Silêncio não representa aceitação de interesse, inscrição, compartilhamento ou responsabilidade.
+383. Falha externa preserva o último estado válido e impede falsa confirmação.
+384. Degradação controlada deve permanecer visível.
+385. Observabilidade e auditoria devem reconstruir a cadeia desde a fonte até o consumidor.
+386. Métricas das integrações avaliam o sistema, não o participante.
+387. O participante permanece no controle das integrações funcionais de Oportunidades Ativas.
 
 ## Documentos do domínio
 
@@ -547,6 +612,7 @@ O próximo bloco deverá consolidar as integrações funcionais das Oportunidade
 - [PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas](pas-001-oportunidades-ativas-ciclo-de-vida.md)
 - [PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas](pas-001-oportunidades-ativas-visualizacao-controle.md)
 - [PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-eventos-funcionais.md)
+- [PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-integracoes-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
