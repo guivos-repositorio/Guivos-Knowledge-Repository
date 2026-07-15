@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 8.2.0
+version: 8.3.0
 owner: Guivos
 last_updated: 2026-07-14
 ---
@@ -17,8 +17,8 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
-- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 40%.
-- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0` e `PAS-001-OA-LIFECYCLE-001 1.0.0`.
+- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 60%.
+- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0` e `PAS-001-OA-VIEW-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +29,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar a visualização e o controle da `Capacidade 06 — Oportunidades Ativas`.
+O próximo trabalho deverá consolidar os contratos dos eventos funcionais da `Capacidade 06 — Oportunidades Ativas`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -72,7 +72,7 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 - tipos, classificações, elegibilidade, disponibilidade, riscos, custos e relações comerciais;
 - relevância contextual, limiar de ativação, neutralidade comercial e controle do participante.
 
-`PAS-001-OA-LIFECYCLE-001 1.0.0` consolida:
+`PAS-001-OA-LIFECYCLE-001 1.0.0` consolidou:
 
 - estados funcionais da oportunidade;
 - ciclos independentes de informação, disponibilidade, elegibilidade e relevância;
@@ -95,7 +95,31 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 - mudanças de preço, fornecedor e risco;
 - revogação, propagação, retroatividade, idempotência, ordenação, concorrência e falha segura.
 
-A Capacidade 06 está `In progress`, com progresso editorial de referência de `40%`.
+`PAS-001-OA-VIEW-001 1.0.0` consolida:
+
+- `Minhas Oportunidades` como superfície principal;
+- descoberta contextual e busca direta com proteção de consultas sensíveis;
+- filtros, ordenação neutra e separação de áreas patrocinadas;
+- visualizações por lista, cartões, mapa, calendário, comparação e agrupamentos;
+- cartões minimizados e títulos neutros para oportunidades sensíveis;
+- separação entre estado funcional, informação, disponibilidade, elegibilidade, relevância e relação individual;
+- justificativa de apresentação e opção `Por que estou vendo isto?`;
+- disponibilidade com fonte, atualização e ausência de garantia;
+- elegibilidade com requisitos, pendências e autoridade externa;
+- custo total, gratuidade, riscos e limitações;
+- transparência de patrocínio, comissão, afiliação, promoção paga e participação na receita;
+- detalhamento progressivo, proveniência e histórico compreensível;
+- comparação não simplificadora e alternativas não patrocinadas;
+- salvamento, interesse, descarte, ocultação, contestação e correção;
+- vínculo consciente com Próximos Passos;
+- proteção de oportunidades de saúde, financeiras, profissionais, sociais, religiosas, institucionais e coletivas;
+- mudanças materiais, indisponibilidade, expiração, encerramento e novas edições;
+- acompanhamento de processos externos sem absorção da transação;
+- fila de atenção, notificações e prevenção de fadiga;
+- controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
+- acessibilidade técnica e cognitiva, consistência entre canais e falha segura.
+
+A Capacidade 06 está `In progress`, com progresso editorial de referência de `60%`.
 
 ## Progresso das capacidades do Journey
 
@@ -106,7 +130,7 @@ A Capacidade 06 está `In progress`, com progresso editorial de referência de `
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
-| 06 — Oportunidades Ativas | In progress | 40% |
+| 06 — Oportunidades Ativas | In progress | 60% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
@@ -153,22 +177,25 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não apresentar oportunidades indisponíveis como disponíveis;
 - não reativar oportunidade expirada sem nova avaliação;
 - não sobrescrever contestações, correções ou conflitos de versão;
+- não transformar a lista funcional em feed publicitário, catálogo infinito ou ranking social;
+- não ocultar custo total, risco material, patrocínio ou comissão;
+- não utilizar busca sensível para publicidade;
 - não preencher ausência legítima de oportunidades com anúncios ou opções incompatíveis;
 - não iniciar outro produto antes da conclusão funcional suficiente do Journey.
 
 ## Ponto exato de retomada
 
-Retomar na **visualização e no controle das Oportunidades Ativas**.
+Retomar nos **contratos dos eventos funcionais das Oportunidades Ativas**.
 
 Próxima entrega:
 
-1. superfície principal de descoberta e acompanhamento;
-2. busca, filtros e organização;
-3. cartões e detalhamento progressivo;
-4. disponibilidade, elegibilidade, relevância, custos e riscos;
-5. comparação e alternativas;
-6. transparência de patrocínio, comissão e relações comerciais;
-7. oportunidades sensíveis e privacidade visual;
-8. salvamento, interesse, descarte, ocultação, inscrição e contestação;
-9. acessibilidade, explicabilidade e consistência entre canais;
-10. falhas, sincronização pendente e controle do participante.
+1. estrutura comum e identidade do agregado;
+2. titular, ator, papel e autoridade;
+3. finalidade, sensibilidade e permissões;
+4. temporalidade, correlação, causalidade e versionamento;
+5. identificação, candidatura, avaliação e ativação;
+6. disponibilidade, elegibilidade, relevância, risco e transparência comercial;
+7. apresentação, visualização, salvamento, interesse, descarte e ocultação;
+8. inscrição, aceitação, contratação e participação relacionada;
+9. contestação, correção, revogação e propagação;
+10. idempotência, ordenação, concorrência, auditoria e falha segura.
