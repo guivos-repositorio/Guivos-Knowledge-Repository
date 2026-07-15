@@ -2,6 +2,50 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.34.2 — Active Opportunities Functional View
+
+- Criação de `PAS-001-OA-VIEW-001 — Comportamentos Funcionais da Visualização e do Controle das Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Definição da superfície `Minhas Oportunidades` como ambiente de descoberta, compreensão, comparação e controle, distinto de feed publicitário, catálogo infinito, ranking ou mecanismo de pressão comercial.
+- Consolidação dos princípios de clareza, relevância, transparência, minimização, decisão consciente, neutralidade comercial, privacidade, acessibilidade e prevenção de fadiga.
+- Definição da visão geral, das oportunidades para considerar, da busca, dos filtros, dos itens salvos, dos interesses, dos processos iniciados, do histórico, das fontes e das permissões.
+- Registro da ausência legítima de oportunidades compatíveis, sem preenchimento por anúncios ou opções inadequadas.
+- Formalização da descoberta contextual com explicação dos recortes utilizados, da finalidade e dos controles disponíveis.
+- Definição da busca direta e da proteção reforçada para consultas sensíveis relacionadas a saúde, finanças, religião, violência, situação jurídica, emprego, moradia, assistência social e vulnerabilidade.
+- Consolidação dos filtros funcionais e comerciais, incluindo controle sobre oportunidades patrocinadas, comissionadas e categorias indesejadas.
+- Definição da ordenação neutra e proibição de comissão, patrocínio, margem, valor transacional, estoque contratado, clique ou tempo de tela como fatores funcionais positivos.
+- Separação entre ordenação funcional e área publicitária explicitamente identificada.
+- Consolidação das visualizações por lista, cartões, mapa, calendário de janelas, comparação e agrupamentos por objetivo, Próximo Passo, categoria ou localização.
+- Definição dos cartões minimizados, títulos funcionais, títulos neutros e indicadores textuais acessíveis.
+- Separação visual entre estado funcional, estado da informação, disponibilidade, elegibilidade, relevância e relação individual do participante.
+- Formalização da opção `Por que estou vendo isto?`, com critérios, limitações, incertezas, fonte, relação comercial e contestação.
+- Definição da apresentação da disponibilidade com fonte, última verificação, validade estimada e ausência de garantia.
+- Consolidação da elegibilidade com requisitos, pendências, autoridade decisória externa e linguagem proporcional à incerteza.
+- Definição do custo total, incluindo preço, taxas, materiais, transporte, renovação, cancelamento, custos indiretos, subsídios, bolsas e financiamentos.
+- Formalização dos riscos financeiros, físicos, jurídicos, de fraude, privacidade, reputação, deslocamento, contrato e instituição antes de ações materiais.
+- Consolidação da transparência de patrocínio, comissão, afiliação, promoção paga, exclusividade, fornecedor parceiro e participação da Guivos na receita.
+- Definição da área de Guivos Ads como espaço visualmente separado da lista funcional neutra e impedido de utilizar contexto sensível.
+- Registro do detalhamento progressivo, da expressão original, da proveniência, das transformações, das estimativas, das correções e da autoridade da fonte.
+- Definição da comparação não simplificadora, dos critérios ajustáveis e da preservação de alternativas públicas, gratuitas e não patrocinadas.
+- Consolidação das ações de salvar, remover, comparar, declarar ou retirar interesse, descartar, ocultar, limitar semelhantes, contestar, verificar disponibilidade, iniciar inscrição e vincular a Próximo Passo.
+- Definição da manifestação de interesse ao fornecedor somente mediante autorização, visualização dos dados enviados e finalidade explícita.
+- Formalização do descarte e da ocultação sem penalidade e com limitação de reapresentação.
+- Consolidação da contestação, da limitação de efeitos, da correção visível e do histórico compreensível.
+- Definição do vínculo consciente com Próximos Passos, sem criação, confirmação, cancelamento ou conclusão automática do movimento.
+- Registro da proteção de oportunidades sensíveis, de saúde, financeiras, profissionais, sociais, voluntárias, religiosas, institucionais e coletivas.
+- Consolidação da transparência sobre mudanças materiais de preço, disponibilidade, prazo, fornecedor, elegibilidade, risco, localização, patrocínio, comissão e política de dados.
+- Definição do acompanhamento de inscrição, análise, aceitação, contratação, pagamento, agendamento, participação, cancelamento e reembolso como processos externos quando governados por produtos ou fornecedores especializados.
+- Formalização da fila de atenção, das notificações funcionais e comerciais separadas e da prevenção de fadiga.
+- Consolidação dos controles de categorias, fontes, contexto, localização, compartilhamento e revogação.
+- Definição da acessibilidade técnica e cognitiva, da consistência entre canais, da sincronização pendente, dos conflitos de informação e da falha segura.
+- Registro dos eventos funcionais da visualização, das métricas iniciais e dos comportamentos proibidos.
+- Atualização da Arquitetura de Produtos para `1.6.2` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `8.3.0`, do Knowledge Board para `8.4.0` e da Matriz de Consolidação Canônica para `1.6.2`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 06 no estado `In progress` e elevação do progresso editorial de referência para `60%`.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição dos contratos dos eventos funcionais das Oportunidades Ativas como próximo ponto exato de retomada.
+
 ## 0.34.1 — Active Opportunities Lifecycle Rules
 
 - Criação de `PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas`, versão `1.0.0`.
