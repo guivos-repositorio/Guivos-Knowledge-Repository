@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.6.2
+version: 1.6.3
 owner: Guivos
-last_updated: 2026-07-14
+last_updated: 2026-07-15
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -108,7 +108,8 @@ As extensões normativas vigentes são:
 
 - `PAS-001-OA-FOUNDATION-001 1.0.0` — pergunta central, objetivo, singularidade, definição, distinções, titularidade, autoridade, tipos, elegibilidade, disponibilidade, relevância, custos, riscos, relações comerciais, entradas, saídas e controle;
 - `PAS-001-OA-LIFECYCLE-001 1.0.0` — estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, atualizações, encerramentos, revogação, idempotência e falha segura;
-- `PAS-001-OA-VIEW-001 1.0.0` — `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles.
+- `PAS-001-OA-VIEW-001 1.0.0` — `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles;
+- `PAS-001-OA-EVENT-001 1.0.0` — estrutura comum dos eventos, autoridade, temporalidade, 19 famílias contratuais, correção compensatória, revogação, propagação, idempotência, ordenação, concorrência e reconstrução.
 
 O ciclo de vida consolida:
 
@@ -163,9 +164,31 @@ A visualização e o controle consolidam:
 - controles de categorias, fontes, contexto, localização, compartilhamento e revogação;
 - acessibilidade técnica e cognitiva, consistência entre canais, conflitos de informação e falha segura.
 
-A Capacidade 06 está **In progress**, com progresso editorial de referência de `60%`.
+Os contratos dos eventos funcionais consolidam:
 
-O próximo bloco deverá consolidar os contratos dos eventos funcionais das Oportunidades Ativas.
+- comando, proposta e evento como conceitos distintos;
+- publicação somente após persistência funcional suficiente;
+- agregado `Registro de Oportunidade` e estrutura comum versionada;
+- titular, participante, ator, papel, autoridade, fonte, proveniência, finalidade e sensibilidade;
+- temporalidades de fato, declaração, registro externo, conhecimento, reconhecimento, persistência, aplicação, propagação e correção;
+- correlação e causalidade funcional sem inferência por proximidade temporal;
+- 19 famílias de eventos de identificação, fonte, avaliação, disponibilidade, elegibilidade, relevância, risco, transparência comercial, ativação, apresentação, interação, fatos externos, vínculos, manutenção, correção, permissões, propagação, visualização e falhas;
+- disponibilidade confirmada somente por fonte autorizada e sem garantia de acesso;
+- elegibilidade estimada separada de confirmação e decisão externa;
+- relevância explicável sem comissão, patrocínio, clique, tempo de tela ou vulnerabilidade;
+- apresentação governada por Intervenções Contextuais;
+- visualização, salvamento, interesse, inscrição, aceitação, contratação, participação e resultado como fatos separados;
+- correção compensatória, contestação e histórico imutável;
+- revogação concluída somente após propagação suficiente;
+- recortes mínimos e decisões próprias das capacidades consumidoras;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade funcional e reconstrução;
+- retenção e logs minimizados para conteúdo sensível;
+- responsabilidades de produtores e consumidores;
+- explicabilidade, auditoria e métricas sistêmicas.
+
+A Capacidade 06 está **In progress**, com progresso editorial de referência de `80%`.
+
+O próximo bloco deverá consolidar as integrações funcionais das Oportunidades Ativas.
 
 ## Regras arquiteturais
 
@@ -469,6 +492,48 @@ O próximo bloco deverá consolidar os contratos dos eventos funcionais das Opor
 298. O participante deve controlar categorias, fontes, contexto, localização, compartilhamento e revogação.
 299. Conflitos de informação devem expor versões, fontes, temporalidade e estado provisório sem escolha comercial silenciosa.
 300. A visualização deve operar com acessibilidade, prevenção de fadiga, falha segura e controle do participante.
+301. Comando de Oportunidades Ativas não representa fato reconhecido.
+302. Proposta de oportunidade não representa decisão nem ativação.
+303. Evento material somente pode ser publicado após persistência funcional suficiente.
+304. Eventos históricos são imutáveis e correções devem ser compensatórias.
+305. Titular, participante, ator, papel, fonte e autoridade devem permanecer explícitos e distintos.
+306. Finalidade e minimização precedem publicação e propagação.
+307. Tempo do fato, declaração, conhecimento, reconhecimento, persistência, aplicação e correção permanecem separados.
+308. Correlação não representa causalidade funcional.
+309. Fonte somente confirma fatos dentro de sua autoridade.
+310. Disponibilidade confirmada não garante reserva, acesso, elegibilidade ou benefício.
+311. Elegibilidade estimada não representa confirmação, aprovação ou decisão externa.
+312. Relevância não pode utilizar comissão, patrocínio, margem, clique, tempo de tela ou vulnerabilidade como fundamento positivo.
+313. Ativação não representa apresentação e apresentação permanece decisão de Intervenções Contextuais.
+314. Visualização e eventos de leitura não alteram interesse, prioridade, elegibilidade, disponibilidade ou contratação.
+315. Interesse exige manifestação inequívoca e escopo autorizado.
+316. Inscrição, aceitação, contratação, participação, resultado e evolução permanecem fatos distintos.
+317. Produtos especializados governam transações e entregas e fornecem apenas recortes necessários.
+318. Alterações de oportunidades vinculadas podem solicitar reavaliação, mas não cancelar ou concluir Próximos Passos.
+319. Contestação material limita apresentação e automações até resolução.
+320. Correção preserva valor anterior, fonte, motivo, autoridade e consumidores afetados.
+321. Revogação interrompe novas avaliações, recortes, compartilhamentos e apresentações incompatíveis.
+322. Revogação somente é concluída após propagação suficiente.
+323. Capacidades consumidoras recebem recortes e governam suas próprias decisões.
+324. Eventos sensíveis exigem payload minimizado, retenção proporcional e logs sem narrativas excessivas.
+325. Notificações publicitárias possuem contratos distintos das notificações funcionais.
+326. Reprocessamento não duplica candidatura, ativação, apresentação, interesse, inscrição, vínculo, notificação, contestação, revogação ou arquivamento.
+327. Duplicidade semântica deve ser detectada mesmo quando eventos possuem identificadores diferentes.
+328. Eventos fora de ordem não podem criar estados impossíveis.
+329. Alterações concorrentes exigem versão esperada e reconciliação sem sobrescrita silenciosa.
+330. Operações compostas devem declarar atomicidade e tornar falhas intermediárias explícitas.
+331. Reconstrução utiliza eventos válidos, versões, correções, permissões, revogações e decisões de reconciliação.
+332. Eventos desconhecidos devem ser preservados e rejeitados de forma segura, permitindo reprocessamento posterior.
+333. Produtores validam identidade, autoridade, finalidade, contrato, temporalidade, proveniência e sensibilidade.
+334. Consumidores validam versão, permissões, idempotência, ordenação e finalidade sem ampliar autoridade.
+335. Relações comerciais ocultadas devem limitar apresentação e produzir incidente de governança.
+336. Publicidade não pode produzir evento funcional neutro de relevância.
+337. Falha de propagação deve identificar consumidores pendentes.
+338. Sincronização pendente preserva o último estado válido e reduz automação.
+339. Falha parcial não representa processamento integralmente concluído.
+340. Auditoria deve reconstruir o fluxo desde sinal ou comando até evento, recorte, consumidor, processamento, correção ou revogação.
+341. Métricas dos contratos avaliam o sistema, não o participante.
+342. O participante permanece no controle dos eventos funcionais de Oportunidades Ativas.
 
 ## Documentos do domínio
 
@@ -481,6 +546,7 @@ O próximo bloco deverá consolidar os contratos dos eventos funcionais das Opor
 - [PAS-001-OA-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Oportunidades Ativas](pas-001-oportunidades-ativas-fundamentos-iniciais.md)
 - [PAS-001-OA-LIFECYCLE-001 — Regras do Ciclo de Vida das Oportunidades Ativas](pas-001-oportunidades-ativas-ciclo-de-vida.md)
 - [PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas](pas-001-oportunidades-ativas-visualizacao-controle.md)
+- [PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
