@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.8.3
+version: 1.8.4
 owner: Guivos
-last_updated: 2026-07-15
+last_updated: 2026-07-16
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -229,6 +229,7 @@ As extensões normativas vigentes são:
 - `PAS-001-IC-LIFECYCLE-001 1.0.0` — dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura.
 - `PAS-001-IC-VIEW-001 1.0.0` — Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais, consistência entre canais e falha segura.
 - `PAS-001-IC-EVENT-001 1.0.0` — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidade, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura.
+- `PAS-001-IC-INTEGRATION-001 1.0.0` — contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura.
 
 Os fundamentos iniciais consolidam:
 
@@ -313,9 +314,29 @@ Os contratos dos eventos funcionais consolidam:
 - revogação concluída somente após propagação suficiente;
 - idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de `80%`.
+As integrações funcionais consolidam:
 
-O próximo bloco deverá consolidar as integrações funcionais das Intervenções Contextuais.
+- integração como relação governada entre produtor e consumidor, sem acesso irrestrito à jornada;
+- titularidade, responsabilidade e autoridade preservadas por domínio;
+- contrato comum com produtor, consumidor, participante, destinatário, finalidade, modo, autoridade, escopo, sensibilidade, fonte, proveniência, temporalidades, qualidade, confiança, retenção, permissões, relação comercial, sincronização, revogação e falha;
+- identidade confiável, associações incertas limitadas e correção auditável de associações incorretas;
+- separação entre qualidade técnica, confiança funcional e autoridade da fonte;
+- transformações permitidas e proibição de fabricar disponibilidade, urgência, elegibilidade, aprovação, intenção, prioridade, resultado, progresso, transformação ou diagnóstico;
+- finalidade específica, minimização, recortes funcionais, consentimento granular e retenção proporcional;
+- pausa, desconexão, revogação, propagação e retenção pós-revogação;
+- estados de sincronização, divergência, ordenação, concorrência e reconciliação;
+- prevenção de ciclos, restrição de tempo real, processamento em lote e retentativas idempotentes;
+- falha segura e degradação controlada;
+- integrações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com Mall, Travel, Business, Media, Ads, organizações, profissionais, saúde, finanças, jurídico, educação, trabalho, religião, voluntariado e serviços públicos;
+- contratos para canais internos, conversacionais, notificações, e-mail, calendários, localização, fontes públicas e sistemas externos;
+- proteção de terceiros, coletivos, dispositivos compartilhados e integrações temporárias;
+- observabilidade, explicabilidade, auditoria e reconstrução.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de `90%`.
+
+O próximo bloco deverá consolidar os KPIs, guardrails, cenários e contrato final das Intervenções Contextuais.
 
 ## Regras arquiteturais
 
@@ -918,7 +939,52 @@ O próximo bloco deverá consolidar as integrações funcionais das Intervençõ
 597. Contestação material limita efeitos, preserva evidências e pode exigir avaliação humana.
 598. Correções são compensatórias e não apagam eventos históricos.
 599. Revogação somente se conclui após bloqueio e propagação suficiente aos consumidores relevantes.
-600. Reprocessamento, ordenação, concorrência, atomicidade, reconstrução e falha segura preservam o controle do participante; a Capacidade 07 está `In progress`, com progresso editorial de referência de `80%`.
+600. Os contratos dos eventos funcionais estão consolidados por `PAS-001-IC-EVENT-001 1.0.0`.
+601. Integração não transfere titularidade.
+602. Integração não amplia autoridade.
+603. Acesso técnico não representa legitimidade funcional.
+604. Finalidade deve ser específica.
+605. Dados devem ser minimizados.
+606. Fonte e proveniência devem permanecer identificáveis.
+607. Momento do fato e momento do registro permanecem distintos.
+608. Correlação não representa causalidade.
+609. Qualidade técnica não representa autoridade.
+610. Confiança funcional não representa certeza.
+611. Relação comercial não eleva relevância.
+612. Patrocínio não aumenta prioridade.
+613. Comissão não cria urgência.
+614. Integração sensível não alimenta publicidade.
+615. Consentimento é granular e revogável.
+616. Pausa não representa desconexão.
+617. Desconexão não representa apagamento integral.
+618. Revogação interrompe novos usos.
+619. Revogação somente termina após propagação suficiente.
+620. Retenção pós-revogação deve possuir fundamento.
+621. Sincronização parcial não representa conclusão.
+622. Divergências permanecem visíveis.
+623. Conflitos não são sobrescritos silenciosamente.
+624. Reprocessamento não duplica efeitos.
+625. Eventos fora de ordem não criam estados impossíveis.
+626. Alterações concorrentes exigem reconciliação.
+627. Ciclos automáticos devem ser impedidos.
+628. Tempo real não autoriza vigilância.
+629. Localização não representa intenção.
+630. Visualização não representa interesse.
+631. Atenção não representa consentimento.
+632. Resposta não representa progresso.
+633. Produto executor confirma suas próprias operações.
+634. Intervenções Contextuais decide a manifestação, não a transação.
+635. Contexto Vivo fornece recortes, não acesso integral.
+636. Objetivos não são criados por integração.
+637. Próximos Passos não são confirmados por integração.
+638. Oportunidades não são apresentadas apenas por existirem.
+639. Experiências não são declaradas automaticamente.
+640. Evolução humana não deve alimentar segmentação comercial.
+641. Guivos Intelligence pode sugerir, mas não impor.
+642. Platform Layer transporta, mas não define relevância humana.
+643. Falha parcial não representa sucesso integral.
+644. Métricas avaliam o sistema.
+645. A Capacidade 07 está `In progress`, com progresso editorial de referência de `90%`, e o participante permanece no controle das integrações funcionais.
 
 ## Documentos do domínio
 
@@ -938,6 +1004,7 @@ O próximo bloco deverá consolidar as integrações funcionais das Intervençõ
 - [PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais](pas-001-intervencoes-contextuais-ciclo-de-vida.md)
 - [PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais](pas-001-intervencoes-contextuais-visualizacao-controle.md)
 - [PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-eventos-funcionais.md)
+- [PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-integracoes-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
