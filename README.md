@@ -11,9 +11,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos e 06 — Oportunidades Ativas
-- **Capacidade ativa:** 07 — Intervenções Contextuais, `In progress`, 40%
+- **Capacidade ativa:** 07 — Intervenções Contextuais, `In progress`, 60%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001 e PAS-001-IC-LIFECYCLE-001, ambas em 1.0.0
+- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001 e PAS-001-IC-VIEW-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -184,29 +184,48 @@ A Capacidade 06 está **Functionally complete**, com progresso editorial de refe
 - horários protegidos, mudanças materiais e intervenções sensíveis;
 - compartilhamento, revogação, propagação, retroatividade, idempotência, ordenação, concorrência, falha segura e reconstrução.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de **40%**.
+`PAS-001-IC-VIEW-001 1.0.0` consolida:
+
+- `Central de Intervenções` como superfície principal de compreensão e controle;
+- `Fila de Atenção` como recorte temporário do que pode justificar atenção atual ou próxima;
+- ausência legítima de intervenções, sem preenchimento artificial por anúncios ou mensagens de engajamento;
+- agrupamento e ordenação funcional sem comissão, patrocínio, clique, margem ou meta comercial;
+- cartões minimizados, títulos funcionais e títulos neutros para conteúdo sensível;
+- separação entre estado funcional, informação, autorização, temporalidade, entrega, resposta, atenção, fadiga, sensibilidade e operação externa;
+- comportamentos visuais de pergunta, informação, sugestão, lembrete, alerta, confirmação, ação, espera, observação e silêncio;
+- explicações `Por que estou vendo isto?` e `Por que agora?`;
+- fonte, autoridade, validade, incerteza, importância, urgência e relações comerciais visíveis;
+- histórico, busca, filtros, resposta, adiamento, silêncio, recusa, ocultação, bloqueio, contestação, correção e revogação;
+- preferências de frequência, horários protegidos, canais, categorias, intensidade, resumos e controles de fadiga;
+- notificações protegidas, consistência entre canais e superfícies de produto;
+- acessibilidade técnica e cognitiva, linguagem proporcional e privacidade visual;
+- proteção de saúde, finanças, jurídico, religião, voluntariado, coletivos e terceiros;
+- falha segura, sincronização pendente, conflitos e auditoria compreensível.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de **60%**.
 
 ## Ponto exato de retomada
 
-Retomar nos comportamentos funcionais da visualização e do controle da Capacidade 07 — Intervenções Contextuais.
+Retomar nos contratos dos eventos funcionais da Capacidade 07 — Intervenções Contextuais.
 
 Próxima entrega:
 
-- central de intervenções e fila de atenção;
-- mensagens, perguntas, lembretes, alertas e confirmações;
-- justificativas `Por que estou vendo isto?` e `Por que agora?`;
-- histórico e estados de entrega;
-- adiamento, silêncio, recusa, ocultação e bloqueio;
-- controles de frequência, horários protegidos, canais e preferências;
-- acessibilidade, privacidade e intervenções sensíveis;
-- relações comerciais e separação de publicidade;
-- consistência entre superfícies e falha segura.
+- estrutura comum e agregado funcional;
+- autoridade, finalidade, proveniência e sensibilidade;
+- temporalidades, correlação e causalidade funcional;
+- eventos de identificação, avaliação e admissão;
+- seleção de comportamento, programação e prontidão;
+- apresentação, entrega e resposta;
+- adiamento, silêncio, recusa e bloqueio;
+- contestação, correção e revogação;
+- propagação, idempotência, ordenação e concorrência;
+- reconstrução, auditoria e falha segura.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervenções Contextuais está `In progress`, com progresso editorial de referência de `40%`.
+A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervenções Contextuais está `In progress`, com progresso editorial de referência de `60%`.
 
 ## Capacidades do Journey
 
@@ -218,7 +237,7 @@ A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervençõe
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
-| 07 — Intervenções Contextuais | In progress — 40% |
+| 07 — Intervenções Contextuais | In progress — 60% |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
@@ -238,6 +257,7 @@ A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervençõe
 - [Contrato Final das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais de Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [Ciclo de Vida das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-ciclo-de-vida.md)
+- [Visualização e Controle das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-visualizacao-controle.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
