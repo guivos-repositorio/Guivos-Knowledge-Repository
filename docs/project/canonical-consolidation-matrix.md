@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.8.0
+version: 1.8.1
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -239,8 +239,9 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
 | Guivos Mall em Oportunidades Ativas | Refinar | Fornece produtos, serviços, preços e estoque; governa transação e entrega, não relevância humana |
 | Guivos Ads em Oportunidades Ativas | Refinar | Opera publicidade identificada sem acessar contexto sensível ou substituir avaliação funcional |
-| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com primeira extensão normativa e progresso editorial de 20% |
+| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40% |
 | Fundamentos Iniciais de Intervenções Contextuais | Manter | PAS-001-IC-FOUNDATION-001 1.0.0 define singularidade, decisões, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia, relações e limites |
+| Ciclo de Vida das Intervenções Contextuais | Manter | PAS-001-IC-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura |
 | Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
 | Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
 | Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
@@ -252,6 +253,12 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Intensidade de intervenção | Refinar | Silenciosa, passiva, discreta, normal, destacada ou crítica, sempre proporcional |
 | Horário protegido | Manter | Período em que intervenções são limitadas conforme preferências e exceções legítimas |
 | Intervenção comercial | Refinar | Comunicação identificada, separada da funcional e proibida de utilizar contexto sensível ou urgência fabricada |
+| Estado funcional da intervenção | Refinar | Identificada, Candidata, Em avaliação, Admitida, Programada, Aguardando, Pronta, Em entrega, Entregue, Respondida, Adiada, Silenciada, Cancelada, Expirada, Contestada, Corrigida, Falha ou Encerrada |
+| Estado de entrega da intervenção | Manter | Dimensão própria que não representa leitura, compreensão, concordância, interesse ou consentimento |
+| Relação do participante com intervenção | Manter | Apresentação, visualização, resposta, aceitação, recusa, adiamento, ocultação, bloqueio e contestação permanecem estados individuais distintos |
+| Admissão de intervenção | Refinar | Exige finalidade, autoridade, relevância, temporalidade, risco, sensibilidade, frequência e canal compatíveis |
+| Silêncio pós-avaliação | Manter | Resultado auditável quando a manifestação não produzir utilidade suficiente |
+| Controle de frequência de intervenção | Manter | Limites globais, por categoria e por canal, governados por finalidade, fadiga, preferência e mudança material |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
 
 ## Governança documental
@@ -267,8 +274,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-IC-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 07, altera seu estado para `In progress`, estabelece progresso editorial de 20% e consolida finalidade, oportunidade de intervenção, silêncio, atenção, interruptibilidade, urgência, sensibilidade, fadiga, canais, autonomia, relações, responsabilidades e limites, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-IC-LIFECYCLE-001 1.0.0` consolida o ciclo de vida da Capacidade 07, mantém seu estado `In progress`, eleva o progresso editorial para 40% e governa dimensões independentes, estados, transições, identificação, candidatura, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência, ordenação, concorrência e falha segura, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar as **regras do ciclo de vida da Capacidade 07 — Intervenções Contextuais**, incluindo identificação, candidatura, avaliação, admissão, programação, espera, apresentação, resposta, adiamento, silêncio, cancelamento, expiração, contestação, correção, escalonamento, frequência, propagação e falha segura.
+Consolidar os **comportamentos funcionais da visualização e do controle da Capacidade 07 — Intervenções Contextuais**, incluindo central de intervenções, fila de atenção, mensagens, perguntas, lembretes, alertas, justificativas, histórico, adiamento, silêncio, frequência, horários protegidos, canais, preferências, acessibilidade, privacidade, relações comerciais e consistência entre superfícies.
