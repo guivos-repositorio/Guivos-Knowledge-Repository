@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 8.5.0
+version: 9.0.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -17,8 +17,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
-- **Capacidade ativa:** `06 — Oportunidades Ativas`, `In progress`, 90%.
-- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0` e `PAS-001-OA-INTEGRATION-001 1.0.0`.
+- **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
+- **Próxima frente oficial:** `07 — Intervenções Contextuais`, `Planned / concept consolidated`.
+- **Extensões normativas vigentes:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -29,7 +30,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os KPIs, guardrails, baseline, cenários e contrato final da `Capacidade 06 — Oportunidades Ativas`.
+O próximo trabalho deverá consolidar os fundamentos iniciais da `Capacidade 07 — Intervenções Contextuais`, sem alterar seu estado até a aprovação normativa.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -157,7 +158,17 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 - proteção de dados sensíveis, terceiros, relações comerciais e neutralidade funcional;
 - observabilidade, explicabilidade, auditoria e responsabilidades de produtores e consumidores.
 
-A Capacidade 06 está `In progress`, com progresso editorial de referência de `90%`.
+`PAS-001-OA-CONTRACT-001 1.0.0` consolida:
+
+- 75 KPIs em 15 famílias;
+- baseline funcional, painel de saúde e cinco níveis de desempenho;
+- 24 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- contrato final de singularidade, titularidade, responsabilidades, limites, entradas, admissão e saídas;
+- neutralidade comercial, privacidade, confiabilidade, explicabilidade, auditoria e reabertura normativa.
+
+A Capacidade 06 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
 ## Progresso das capacidades do Journey
 
@@ -168,7 +179,7 @@ A Capacidade 06 está `In progress`, com progresso editorial de referência de `
 | 03 — Objetivos | Functionally complete | 100% |
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
-| 06 — Oportunidades Ativas | In progress | 90% |
+| 06 — Oportunidades Ativas | Functionally complete | 100% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | 10% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
@@ -231,17 +242,17 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nos **KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas**.
+Retomar nos **fundamentos iniciais da Capacidade 07 — Intervenções Contextuais**.
 
 Próxima entrega:
 
-1. famílias de indicadores e KPIs sistêmicos;
-2. indicadores de admissão, relevância, elegibilidade, disponibilidade, transparência, controle e integração;
-3. guardrails críticos de tolerância zero;
-4. construção da baseline antes de metas permanentes;
-5. painel de saúde e níveis de desempenho funcional;
-6. cenários funcionalmente ideal, alternativo e limite;
-7. critérios de conclusão e reabertura;
-8. lacunas bloqueantes e não bloqueantes;
-9. contrato final da Capacidade 06;
-10. definição da Capacidade 07 — Intervenções Contextuais como próxima frente oficial.
+1. singularidade da capacidade;
+2. decisão entre agir, perguntar, lembrar, aguardar, observar ou silenciar;
+3. conceito de oportunidade de intervenção;
+4. atenção, urgência, sensibilidade e fadiga;
+5. autoridade e controle do participante;
+6. canais e consistência entre superfícies;
+7. relação com as capacidades concluídas;
+8. responsabilidades, limites e critérios de aceite.
+
+A Capacidade 07 permanece `Planned / concept consolidated` até a aprovação de sua primeira extensão normativa.
