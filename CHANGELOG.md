@@ -2,6 +2,32 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.35.0 — Active Opportunities Final Contract
+
+- Criação de `PAS-001-OA-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa e contrato final da Capacidade 06 do `PAS-001 — Guivos Journey`.
+- Consolidação de 75 KPIs em 15 famílias de admissão, autoridade, disponibilidade, elegibilidade, relevância, neutralidade, apresentação, controle, processos externos, privacidade, integrações, confiabilidade, auditoria, acessibilidade e diversidade.
+- Definição da baseline funcional antes de metas permanentes.
+- Formalização do painel de saúde e dos níveis Crítico, Instável, Adequado, Confiável e Maduro.
+- Consolidação de 24 guardrails de tolerância zero.
+- Definição do tratamento obrigatório de violações críticas.
+- Consolidação de cenários funcionalmente ideais, alternativos e limite.
+- Definição dos critérios de conclusão funcional e reabertura normativa.
+- Registro das lacunas bloqueantes e não bloqueantes.
+- Consolidação do contrato final de singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas, estados e relações.
+- Preservação da separação entre disponibilidade, elegibilidade, relevância, apresentação, interesse, inscrição, aceitação, contratação, participação, resultado e evolução.
+- Consolidação da neutralidade comercial, das alternativas públicas, gratuitas e não patrocinadas e da ausência legítima de oportunidades.
+- Preservação da proteção de oportunidades sensíveis e informações de terceiros.
+- Consolidação de idempotência, ordenação, concorrência, correção compensatória, prevenção de ciclos, falha segura e reconstrução.
+- Atualização da Arquitetura de Produtos para `1.7.0` e inclusão do contrato final na navegação do MkDocs.
+- Atualização do Roadmap para `9.0.0`, do Knowledge Board para `9.0.0` e da Matriz de Consolidação Canônica para `1.7.0`.
+- Atualização do README e da página inicial do GKR.
+- Substituição do estado da Capacidade 06 de `In progress` para `Functionally complete`.
+- Elevação do progresso editorial de referência de Oportunidades Ativas de 90% para 100%.
+- Preservação das Capacidades 02, 03, 04 e 05 como `Functionally complete`.
+- Definição da Capacidade 07 — Intervenções Contextuais como próxima frente oficial, ainda `Planned / concept consolidated`.
+- Definição dos fundamentos iniciais de Intervenções Contextuais como próximo ponto exato de retomada.
+
 ## 0.34.4 — Active Opportunities Functional Integrations
 
 - Criação de `PAS-001-OA-INTEGRATION-001 — Integrações Funcionais da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
