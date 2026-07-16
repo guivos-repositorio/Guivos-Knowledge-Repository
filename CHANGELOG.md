@@ -2,6 +2,45 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.36.0 — Contextual Interventions Capability Foundation
+
+- Criação de `PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 07 do `PAS-001 — Guivos Journey`.
+- Definição da finalidade de governar se, quando, como e com qual intensidade a Guivos deverá se manifestar.
+- Consolidação da pergunta central sobre razão legítima, momento adequado e possibilidade de silêncio.
+- Definição da Intervenção Contextual como manifestação deliberada, proporcional e explicável.
+- Consolidação da singularidade de transformar contexto, relevância e temporalidade em decisão responsável entre manifestação e silêncio.
+- Definição das decisões de agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar.
+- Reconhecimento do silêncio como resultado funcional legítimo e distinto de falha.
+- Definição da oportunidade candidata e da oportunidade admitida de intervenção.
+- Consolidação do fluxo canônico desde sinal, fato, mudança ou solicitação até intervenção, silêncio e reavaliação.
+- Separação entre intervenção, notificação técnica, publicidade, recomendação, comando, tarefa, oportunidade, experiência, transação e conteúdo editorial.
+- Definição de intervenções reativas e proativas, com controles reforçados para manifestações proativas.
+- Consolidação de gatilhos legítimos e proibição de clique, rolagem, tempo de tela, popularidade, comissão, margem, patrocínio e estoque como gatilhos funcionais.
+- Definição de entradas mínimas e contexto de decisão minimizado.
+- Separação entre atenção, consentimento e interruptibilidade.
+- Separação entre importância e urgência e definição de urgência legítima.
+- Definição de temporalidade, sensibilidade, fadiga, frequência, repetição, intensidade, escalonamento e desescalonamento.
+- Consolidação dos canais e da consistência entre superfícies.
+- Definição do conteúdo mínimo, da explicabilidade e da justificativa `Por que agora?`.
+- Consolidação de autonomia, autoridade limitada, papéis funcionais e controles do participante.
+- Definição de horários protegidos, adiamento, recusa, ocultação e bloqueio.
+- Proteção de intervenções de saúde, finanças, jurídico, religião, espiritualidade, social e voluntariado.
+- Separação entre intervenções funcionais, comerciais, institucionais e coletivas.
+- Proteção de informações de terceiros.
+- Definição das relações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Experiências e Evolução Contínua.
+- Definição dos limites da Guivos Intelligence, Platform Layer, produtos especializados e Guivos Ads.
+- Registro dos estados e eventos funcionais iniciais.
+- Consolidação das responsabilidades, limites, comportamentos proibidos e critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.8.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `9.1.0`, do Knowledge Board para `9.1.0` e da Matriz de Consolidação Canônica para `1.8.0`.
+- Atualização do README e da página inicial do GKR.
+- Alteração da Capacidade 07 de `Planned / concept consolidated` para `In progress`.
+- Estabelecimento do progresso editorial de referência de Intervenções Contextuais em 20%.
+- Preservação das Capacidades 02, 03, 04, 05 e 06 como `Functionally complete`.
+- Preservação da Capacidade 08 — Experiências como `Planned`.
+- Definição do ciclo de vida de Intervenções Contextuais como próximo ponto exato de retomada.
+
 ## 0.35.0 — Active Opportunities Final Contract
 
 - Criação de `PAS-001-OA-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Oportunidades Ativas`, versão `1.0.0`.
