@@ -1526,6 +1526,19 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="pas-001-intervencoes-contextuais-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="journey/">
 <span class="md-ellipsis">
     
@@ -2789,6 +2802,7 @@
 <li><code>PAS-001-IC-FOUNDATION-001 1.0.0</code> — finalidade, pergunta central, singularidade, decisões possíveis, oportunidade de intervenção, silêncio, atenção, interruptibilidade, urgência, sensibilidade, fadiga, canais, autonomia, controles, relações, estados e eventos iniciais.</li>
 <li><code>PAS-001-IC-LIFECYCLE-001 1.0.0</code> — dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura.</li>
 <li><code>PAS-001-IC-VIEW-001 1.0.0</code> — Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais, consistência entre canais e falha segura.</li>
+<li><code>PAS-001-IC-EVENT-001 1.0.0</code> — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidade, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura.</li>
 </ul>
 <p>Os fundamentos iniciais consolidam:</p>
 <ul>
@@ -2850,8 +2864,31 @@
 <li>proteção de terceiros e de intervenções de saúde, finanças, jurídico, religião, voluntariado, institucionais, coletivas e comerciais;</li>
 <li>falha segura, sincronização pendente, conflitos, operação sem conexão e auditoria compreensível.</li>
 </ul>
-<p>A Capacidade 07 está <strong>In progress</strong>, com progresso editorial de referência de <code>60%</code>.</p>
-<p>O próximo bloco deverá consolidar os contratos dos eventos funcionais das Intervenções Contextuais.</p>
+<p>Os contratos dos eventos funcionais consolidam:</p>
+<ul>
+<li>distinção entre comando, proposta e evento funcional reconhecido;</li>
+<li>persistência funcional suficiente antes da publicação de eventos materiais;</li>
+<li>agregado <code>Registro de Intervenção Contextual</code> e estrutura comum versionada;</li>
+<li>identidade, participante, ator, destinatário, papel, autoridade, fonte, finalidade e proveniência;</li>
+<li>temporalidades de fato, solicitação, observação, conhecimento, avaliação, reconhecimento, persistência, publicação, aplicação, entrega, resposta, propagação e correção;</li>
+<li>correlação e causalidade funcional sem fabricação de relação causal;</li>
+<li>classificação de sensibilidade, minimização de payload e retenção proporcional;</li>
+<li>declaração obrigatória de publicidade, patrocínio, comissão, afiliação e demais relações comerciais;</li>
+<li>19 famílias de eventos funcionais de identificação, avaliação, admissão, comportamento, programação, entrega, resposta, preferências, execução externa, correção, revogação, integração e falhas;</li>
+<li>deduplicação semântica e versão esperada do agregado;</li>
+<li>avaliação de atenção, interruptibilidade, urgência, fadiga e frequência sem inferência de consentimento;</li>
+<li>admissão separada de apresentação, entrega, visualização, resposta e transação;</li>
+<li>comportamento principal explícito entre agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar;</li>
+<li>programação, prontidão e revalidação anterior à entrega;</li>
+<li>apresentação, entrega técnica, visualização, resposta e ausência de resposta como fatos distintos;</li>
+<li>adiamento, silêncio, recusa, ocultação, bloqueio e preferências com contratos próprios;</li>
+<li>execução externa sob autoridade do produto ou sistema executor;</li>
+<li>contestação, correção compensatória, cancelamento, expiração, encerramento e reabertura;</li>
+<li>revogação concluída somente após propagação suficiente;</li>
+<li>idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.</li>
+</ul>
+<p>A Capacidade 07 está <strong>In progress</strong>, com progresso editorial de referência de <code>80%</code>.</p>
+<p>O próximo bloco deverá consolidar as integrações funcionais das Intervenções Contextuais.</p>
 <h2 id="regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#regras-arquiteturais" title="Permanent link">¶</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -3408,7 +3445,52 @@
 <li>Métricas avaliam a capacidade.</li>
 <li>A interface não maximiza notificações ou tempo de tela.</li>
 <li>O silêncio deve ser tão acessível quanto a resposta.</li>
-<li>A Capacidade 07 está <code>In progress</code>, com progresso editorial de referência de <code>60%</code>, e o participante permanece no controle da visualização e do controle.</li>
+<li>A visualização e o controle das Intervenções Contextuais estão consolidados por <code>PAS-001-IC-VIEW-001 1.0.0</code>.</li>
+<li>Comando, proposta e evento funcional permanecem conceitos distintos.</li>
+<li>Evento material somente é publicado após persistência funcional suficiente.</li>
+<li>O Registro de Intervenção Contextual preserva identidade, estado, decisões, preferências, correções, revogações e falhas.</li>
+<li>Mudança material de finalidade, destinatário, comportamento ou impacto exige novo agregado ou ciclo.</li>
+<li>Todo evento declara tipo, versão contratual, agregado, versões, autoridade, finalidade, temporalidades, proveniência, sensibilidade e idempotência.</li>
+<li>Identificadores de eventos são únicos, imutáveis e não reutilizáveis.</li>
+<li>Consumidores rejeitam versões incompatíveis de forma segura e preservam eventos desconhecidos.</li>
+<li>Versão do agregado impede sobrescrita silenciosa, regressão, duplicidade e concorrência não detectada.</li>
+<li>Participante, ator, destinatário, terceiro, organização e executor externo permanecem distintos.</li>
+<li>Acesso técnico e presença de dados não ampliam autoridade.</li>
+<li>Finalidades genéricas de engajamento, conversão, receita ou retenção não justificam contexto pessoal ou sensível.</li>
+<li>Tempo do fato, solicitação, conhecimento, avaliação, persistência, publicação, entrega, resposta, propagação e correção permanecem distintos.</li>
+<li>Correlação não representa causalidade funcional.</li>
+<li>A causalidade não pode ser inferida por clique, proximidade temporal, abertura de aplicativo ou localização.</li>
+<li>Proveniência reconstrói a cadeia desde a fonte até o consumidor e o efeito.</li>
+<li>Sensibilidade governa payload, logs, consumidores, retenção, visualização, notificação e compartilhamento.</li>
+<li>Payloads são minimizados e não carregam narrativas integrais quando recortes funcionais forem suficientes.</li>
+<li>Relações comerciais são declaradas e não elevam relevância, urgência ou prioridade.</li>
+<li>As 19 famílias de eventos preservam responsabilidades e significados próprios.</li>
+<li>Identificação não representa candidatura e candidatura não autoriza entrega, notificação, execução ou compartilhamento.</li>
+<li>Duplicidade semântica deve ser reconhecida mesmo com identificadores distintos.</li>
+<li>Mudança material de finalidade exige nova avaliação e pode exigir novo agregado.</li>
+<li>Excesso de autoridade bloqueia novos efeitos, limita automação e exige correção auditável.</li>
+<li>Avaliação contextual declara critérios, contexto utilizado, exclusões, limitações, incerteza, alternativas e custo de interrupção.</li>
+<li>Atenção avaliada não representa consentimento ou intenção.</li>
+<li>Disponibilidade técnica do canal não representa interruptibilidade.</li>
+<li>Promoção, comissão, estoque, campanha e meta comercial não fundamentam urgência funcional.</li>
+<li>Fadiga elevada reduz pressão, frequência e intensidade.</li>
+<li>Admissão não representa apresentação, entrega, visualização, resposta ou autorização transacional.</li>
+<li>Um comportamento principal deve permanecer explícito em cada decisão de intervenção.</li>
+<li>Agir exige autorização vigente, executor identificado, escopo delimitado, risco compatível e reversibilidade suficiente.</li>
+<li>Programação declara janela, fuso, canal, validade, reavaliação, cancelamento e horários protegidos.</li>
+<li>Autorização, validade, canal, sensibilidade, fadiga, preferências, revogações e conflitos são revalidados antes da entrega.</li>
+<li>Apresentação, entrega técnica, visualização, resposta e ação externa permanecem fatos distintos.</li>
+<li>Confirmação técnica de entrega não representa leitura, compreensão, concordância, interesse, consentimento ou execução.</li>
+<li>Resposta ambígua não produz efeito material sem esclarecimento.</li>
+<li>Ausência de resposta não representa recusa, desinteresse ou julgamento.</li>
+<li>Adiamento não representa recusa e silêncio é evento funcional legítimo.</li>
+<li>Preferências produzem efeitos dentro de seu escopo e não reescrevem eventos anteriores.</li>
+<li>Relação comercial oculta limita apresentação e gera incidente de governança.</li>
+<li>Execução externa permanece sob autoridade do produto ou sistema executor.</li>
+<li>Contestação material limita efeitos, preserva evidências e pode exigir avaliação humana.</li>
+<li>Correções são compensatórias e não apagam eventos históricos.</li>
+<li>Revogação somente se conclui após bloqueio e propagação suficiente aos consumidores relevantes.</li>
+<li>Reprocessamento, ordenação, concorrência, atomicidade, reconstrução e falha segura preservam o controle do participante; a Capacidade 07 está <code>In progress</code>, com progresso editorial de referência de <code>80%</code>.</li>
 </ol>
 <h2 id="documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#documentos-do-dominio" title="Permanent link">¶</a></h2>
 <ul>
@@ -3427,6 +3509,7 @@
 <li><a href="pas-001-intervencoes-contextuais-fundamentos-iniciais/">PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais de Intervenções Contextuais</a></li>
 <li><a href="pas-001-intervencoes-contextuais-ciclo-de-vida/">PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais</a></li>
 <li><a href="pas-001-intervencoes-contextuais-visualizacao-controle/">PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais</a></li>
+<li><a href="pas-001-intervencoes-contextuais-eventos-funcionais/">PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais</a></li>
 <li><a href="journey/">Guivos Journey</a></li>
 <li><a href="mall/">Guivos Mall</a></li>
 <li><a href="travel/">Guivos Travel</a></li>
