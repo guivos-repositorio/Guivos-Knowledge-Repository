@@ -60,7 +60,7 @@ As seis extensões normativas consolidaram fundamentos, ciclo de vida, visualiza
 
 A Capacidade 05 permanece **Functionally complete**, com progresso editorial de referência de `100%`.
 
-## Capacidade ativa
+## Capacidade 06 concluída
 
 ### Capacidade 06 — Oportunidades Ativas
 
@@ -204,7 +204,7 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 - gerar o formulário definitivo de aplicação;
 - construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
 
-Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 06.
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 07.
 
 ## Restrições
 

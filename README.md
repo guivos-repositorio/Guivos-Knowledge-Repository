@@ -162,7 +162,7 @@ A Capacidade 07 permanece `Planned / concept consolidated` até a aprovação de
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 06 está `In progress` e deverá avançar por extensões normativas modulares até seu contrato final.
+A Capacidade 06 está `Functionally complete`; a próxima frente oficial é a Capacidade 07 — Intervenções Contextuais, ainda `Planned / concept consolidated`.
 
 ## Capacidades do Journey
 
