@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 9.2.0
+version: 9.3.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -18,9 +18,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
-- **Capacidade ativa:** `07 — Intervenções Contextuais`, `In progress`, 40%.
+- **Capacidade ativa:** `07 — Intervenções Contextuais`, `In progress`, 60%.
 - **Extensões normativas vigentes de Oportunidades Ativas:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
-- **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0` e `PAS-001-IC-LIFECYCLE-001 1.0.0`.
+- **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0` e `PAS-001-IC-VIEW-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -31,7 +31,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os comportamentos funcionais da visualização e do controle da `Capacidade 07 — Intervenções Contextuais`.
+O próximo trabalho deverá consolidar os contratos dos eventos funcionais da `Capacidade 07 — Intervenções Contextuais`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -215,7 +215,24 @@ A Capacidade 06 está `Functionally complete`, com progresso editorial de refer�
 - horários protegidos, intervenções sensíveis, compartilhamento e revogação;
 - propagação, retroatividade, idempotência, ordenação, concorrência, falha segura e reconstrução.
 
-A Capacidade 07 está `In progress`, com progresso editorial de referência de `40%`.
+`PAS-001-IC-VIEW-001 1.0.0` consolida:
+
+- Central de Intervenções e Fila de Atenção como superfícies distintas;
+- ausência legítima, contagens não avaliativas, agrupamentos e ordenação funcional neutra;
+- cartões minimizados, títulos funcionais e títulos neutros;
+- estados e dimensões independentes;
+- perguntas, informações, sugestões, lembretes, alertas, confirmações e ações contextuais;
+- espera, observação, silêncio, detalhamento, justificativas e proveniência;
+- importância, urgência, prazo, sensibilidade e relações comerciais visíveis;
+- histórico, correções, busca, filtros e controles principais;
+- resposta, adiamento, silêncio, recusa, ocultação, bloqueio, contestação, correção e revogação;
+- frequência, horários protegidos, canais, categorias, intensidade, resumos e fadiga;
+- notificações, e-mail, canais conversacionais, calendário e superfícies especializadas;
+- consistência entre canais, acessibilidade, linguagem e privacidade visual;
+- proteção de intervenções sensíveis, coletivas, institucionais, comerciais e de terceiros;
+- falha segura, sincronização pendente, conflitos, operação sem conexão e auditoria.
+
+A Capacidade 07 está `In progress`, com progresso editorial de referência de `60%`.
 
 ## Progresso das capacidades do Journey
 
@@ -227,7 +244,7 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
 | 06 — Oportunidades Ativas | Functionally complete | 100% |
-| 07 — Intervenções Contextuais | In progress | 40% |
+| 07 — Intervenções Contextuais | In progress | 60% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
 
@@ -289,19 +306,18 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nos **comportamentos funcionais da visualização e do controle das Intervenções Contextuais**.
+Retomar nos **contratos dos eventos funcionais das Intervenções Contextuais**.
 
 Próxima entrega:
 
-1. central de intervenções e fila de atenção;
-2. mensagens, perguntas, lembretes, alertas e confirmações;
-3. justificativas `Por que estou vendo isto?` e `Por que agora?`;
-4. estados de entrega, resposta e histórico;
-5. adiamento, silêncio, recusa, ocultação e bloqueio;
-6. frequência, agrupamento, recorrência e horários protegidos;
-7. canais, preferências e consistência entre superfícies;
-8. acessibilidade e carga cognitiva;
-9. privacidade e intervenções sensíveis;
-10. relações comerciais e separação de publicidade;
-11. contestação, correção e falha segura;
-12. eventos iniciais da visualização e do controle.
+1. estrutura comum do evento e agregado funcional;
+2. identidade, participante, ator, papel e autoridade;
+3. finalidade, proveniência, sensibilidade e permissões;
+4. temporalidades, correlação e causalidade funcional;
+5. eventos de identificação, candidatura, avaliação e admissão;
+6. eventos de seleção de comportamento, programação e prontidão;
+7. eventos de apresentação, entrega, resposta e ausência de resposta;
+8. eventos de adiamento, silêncio, recusa, ocultação e bloqueio;
+9. eventos de contestação, correção e revogação;
+10. propagação, idempotência, ordenação, concorrência e atomicidade;
+11. reconstrução, auditoria, compatibilidade e falha segura.
