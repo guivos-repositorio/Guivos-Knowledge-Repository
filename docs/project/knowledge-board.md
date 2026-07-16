@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 8.6.0
+version: 9.0.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -29,6 +29,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-OA-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Oportunidades Ativas |
 | PAS-001-OA-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Oportunidades Ativas |
 | PAS-001-OA-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Oportunidades Ativas |
+| PAS-001-OA-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final das Oportunidades Ativas |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -42,16 +43,16 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
-| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos` |
-| Capacidade ativa | `06 — Oportunidades Ativas` |
-| Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-OA-INTEGRATION-001 1.0.0` |
-| Progresso editorial de Oportunidades Ativas | `90%` |
+| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos` e `06 — Oportunidades Ativas` |
+| Próxima frente oficial | `07 — Intervenções Contextuais` |
+| Estado da próxima frente | `Planned / concept consolidated` |
+| Contrato final vigente | `PAS-001-OA-CONTRACT-001 1.0.0` |
+| Progresso editorial de Oportunidades Ativas | `100%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar KPIs, guardrails, baseline, cenários e contrato final das Oportunidades Ativas |
+| Foco imediato | Consolidar fundamentos iniciais de Intervenções Contextuais |
 
 ## Capacidades do Journey
 
@@ -62,7 +63,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
-| 06 — Oportunidades Ativas | In progress — 90% | Fundamentos, ciclo, visualização, eventos e integrações consolidados; contrato final é a próxima entrega |
+| 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
 | 07 — Intervenções Contextuais | Planned / concept consolidated | Agir, perguntar, esperar ou silenciar |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
@@ -211,6 +212,19 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 - proteção de integrações pessoais, temporárias, compartilhadas, sensíveis e de terceiros;
 - eventos funcionais, métricas, observabilidade, explicabilidade, auditoria e responsabilidades.
 
+### KPIs, guardrails, cenários e contrato final
+
+- 75 KPIs em 15 famílias de indicadores sistêmicos;
+- baseline funcional segmentada antes de metas permanentes;
+- painel de saúde e níveis Crítico, Instável, Adequado, Confiável e Maduro;
+- 24 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão e reabertura normativa;
+- lacunas bloqueantes e não bloqueantes;
+- contrato final de singularidade, titularidade, responsabilidades, limites, entradas, admissão e saídas;
+- neutralidade comercial, privacidade, confiabilidade, explicabilidade e auditoria;
+- ausência de lacuna funcional bloqueante conhecida.
+
 ## Conceitos internos preservados
 
 | Conceito | Estado |
@@ -219,12 +233,15 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | Objetivos | Functionally complete |
 | Eventos de Vida | Functionally complete — 100% |
 | Próximos Passos | Functionally complete — 100% |
-| Oportunidades Ativas | In progress — 90% |
+| Oportunidades Ativas | Functionally complete — 100% |
 | Fundamentos de Oportunidades Ativas | Normative 1.0.0 |
 | Ciclo de Vida de Oportunidades Ativas | Normative 1.0.0 |
 | Visualização e Controle de Oportunidades Ativas | Normative 1.0.0 |
 | Eventos Funcionais de Oportunidades Ativas | Normative 1.0.0 |
 | Integrações Funcionais de Oportunidades Ativas | Normative 1.0.0 |
+| Contrato Final de Oportunidades Ativas | Normative 1.0.0 |
+| Baseline de Oportunidades Ativas | Construída antes de metas permanentes |
+| Guardrail de Oportunidades Ativas | Regra crítica cuja violação não pode ser compensada por média positiva |
 | Integração funcional de oportunidade | Intercâmbio governado de sinais, fatos, propostas, comandos, recortes e solicitações de reavaliação |
 | Sincronização de oportunidade | Processo versionado, idempotente e reconciliável, distinto de decisão funcional |
 | Revogação de integração | Interrupção de novos usos concluída somente após propagação suficiente |
@@ -271,8 +288,8 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 8.5.0 |
-| Knowledge Board | 8.6.0 |
+| Roadmap | 9.0.0 |
+| Knowledge Board | 9.0.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -284,6 +301,7 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 | PAS-001-OA-VIEW-001 | Active 1.0.0 |
 | PAS-001-OA-EVENT-001 | Active 1.0.0 |
 | PAS-001-OA-INTEGRATION-001 | Active 1.0.0 |
+| PAS-001-OA-CONTRACT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -293,4 +311,4 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 ## Próxima atividade
 
-Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final das Oportunidades Ativas**.
+Consolidar os **fundamentos iniciais da Capacidade 07 — Intervenções Contextuais**, mantendo-a `Planned / concept consolidated` até aprovação normativa.
