@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 9.3.0
+version: 9.4.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -33,6 +33,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-IC-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais das Intervenções Contextuais |
 | PAS-001-IC-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Intervenções Contextuais |
 | PAS-001-IC-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Intervenções Contextuais |
+| PAS-001-IC-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Intervenções Contextuais |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -49,13 +50,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos` e `06 — Oportunidades Ativas` |
 | Capacidade ativa | `07 — Intervenções Contextuais` |
 | Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-IC-VIEW-001 1.0.0` |
-| Progresso editorial de Intervenções Contextuais | `60%` |
+| Extensão normativa vigente | `PAS-001-IC-EVENT-001 1.0.0` |
+| Progresso editorial de Intervenções Contextuais | `80%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar os contratos dos eventos funcionais das Intervenções Contextuais |
+| Foco imediato | Consolidar as integrações funcionais das Intervenções Contextuais |
 
 ## Capacidades do Journey
 
@@ -67,7 +68,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
-| 07 — Intervenções Contextuais | In progress — 60% | Fundamentos, ciclo de vida, visualização e controle consolidados; eventos funcionais são a próxima entrega |
+| 07 — Intervenções Contextuais | In progress — 80% | Fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados; integrações são a próxima entrega |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
 
@@ -294,7 +295,30 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 - proteção de terceiros e de intervenções sensíveis, coletivas, institucionais e comerciais;
 - falha segura, sincronização pendente, conflitos, operação sem conexão e auditoria compreensível.
 
-A Capacidade 07 está `In progress`, com progresso editorial de referência de `60%`.
+### Eventos funcionais
+
+- distinção entre comando, proposta e evento funcional reconhecido;
+- persistência funcional suficiente antes da publicação de eventos materiais;
+- agregado `Registro de Intervenção Contextual` e estrutura comum versionada;
+- identidade, participante, ator, destinatário, papel, autoridade, fonte, finalidade e proveniência;
+- temporalidades de fato, solicitação, observação, conhecimento, avaliação, reconhecimento, persistência, publicação, aplicação, entrega, resposta, propagação e correção;
+- correlação e causalidade funcional sem fabricação de relação causal;
+- classificação de sensibilidade, minimização de payload e retenção proporcional;
+- declaração obrigatória de publicidade, patrocínio, comissão, afiliação e demais relações comerciais;
+- 19 famílias de eventos funcionais de identificação, avaliação, admissão, comportamento, programação, entrega, resposta, preferências, execução externa, correção, revogação, integração e falhas;
+- deduplicação semântica e versão esperada do agregado;
+- avaliação de atenção, interruptibilidade, urgência, fadiga e frequência sem inferência de consentimento;
+- admissão separada de apresentação, entrega, visualização, resposta e transação;
+- comportamento principal explícito entre agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar;
+- programação, prontidão e revalidação anterior à entrega;
+- apresentação, entrega técnica, visualização, resposta e ausência de resposta como fatos distintos;
+- adiamento, silêncio, recusa, ocultação, bloqueio e preferências com contratos próprios;
+- execução externa sob autoridade do produto ou sistema executor;
+- contestação, correção compensatória, cancelamento, expiração, encerramento e reabertura;
+- revogação concluída somente após propagação suficiente;
+- idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.
+
+A Capacidade 07 está `In progress`, com progresso editorial de referência de `80%`.
 
 ## Conceitos internos preservados
 
@@ -305,10 +329,14 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | Eventos de Vida | Functionally complete — 100% |
 | Próximos Passos | Functionally complete — 100% |
 | Oportunidades Ativas | Functionally complete — 100% |
-| Intervenções Contextuais | In progress — 60% |
+| Intervenções Contextuais | In progress — 80% |
 | Fundamentos de Intervenções Contextuais | Normative 1.0.0 |
 | Ciclo de Vida de Intervenções Contextuais | Normative 1.0.0 |
 | Visualização e Controle de Intervenções Contextuais | Normative 1.0.0 |
+| Eventos Funcionais de Intervenções Contextuais | Normative 1.0.0 |
+| Registro de Intervenção Contextual | Agregado que preserva identidade, estado, decisões, preferências, correções, revogações e falhas |
+| Evento funcional de intervenção | Fato reconhecido, versionado, persistido e publicado dentro da autoridade e finalidade declaradas |
+| Relação comercial do evento de intervenção | Metadado obrigatório que não altera relevância, urgência ou prioridade funcional |
 | Central de Intervenções | Superfície principal de compreensão, decisão e controle das manifestações |
 | Fila de Atenção de Intervenções | Recorte temporário do que pode justificar atenção atual ou próxima |
 | Privacidade visual de intervenção | Controles de título neutro, prévia, autenticação, modo discreto e histórico protegido |
@@ -374,8 +402,8 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 9.3.0 |
-| Knowledge Board | 9.3.0 |
+| Roadmap | 9.4.0 |
+| Knowledge Board | 9.4.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -391,6 +419,7 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | PAS-001-IC-FOUNDATION-001 | Active 1.0.0 |
 | PAS-001-IC-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-IC-VIEW-001 | Active 1.0.0 |
+| PAS-001-IC-EVENT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -400,4 +429,4 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 
 ## Próxima atividade
 
-Consolidar os **contratos dos eventos funcionais das Intervenções Contextuais**, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, admissão, seleção de comportamento, programação, apresentação, entrega, resposta, adiamento, silêncio, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência e falha segura.
+Consolidar as **integrações funcionais das Intervenções Contextuais** com capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, profissionais, canais, calendários, localização, fontes públicas e sistemas externos, preservando finalidade, minimização, autoridade, sincronização, revogação, neutralidade comercial, observabilidade e falha segura.
