@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.6.4
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -111,6 +111,7 @@ As extensões normativas vigentes são:
 - `PAS-001-OA-VIEW-001 1.0.0` — `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, privacidade, acessibilidade e controles;
 - `PAS-001-OA-EVENT-001 1.0.0` — estrutura comum dos eventos, autoridade, temporalidade, 19 famílias contratuais, correção compensatória, revogação, propagação, idempotência, ordenação, concorrência e reconstrução.
 - `PAS-001-OA-INTEGRATION-001 1.0.0` — contrato comum de integração, identidade, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos especializados, sistemas externos, observabilidade e falha segura.
+- `PAS-001-OA-CONTRACT-001 1.0.0` — 75 KPIs em 15 famílias, 24 guardrails, baseline, painel de saúde, níveis de desempenho, cenários, critérios de conclusão, lacunas, reabertura e contrato final.
 
 O ciclo de vida consolida:
 
@@ -206,9 +207,21 @@ As integrações funcionais consolidam:
 - proteção de integrações pessoais, temporárias, compartilhadas, sensíveis e de terceiros;
 - conflitos entre fontes, correções externas, retroatividade, reconstrução, observabilidade, explicabilidade e auditoria.
 
-A Capacidade 06 está **In progress**, com progresso editorial de referência de `90%`.
+O contrato final consolida:
 
-O próximo bloco deverá consolidar KPIs, guardrails, baseline funcional, cenários e contrato final das Oportunidades Ativas.
+- 75 KPIs em 15 famílias sistêmicas;
+- baseline segmentada antes de metas permanentes;
+- painel de saúde e níveis Crítico, Instável, Adequado, Confiável e Maduro;
+- 24 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão e reabertura;
+- lacunas bloqueantes e não bloqueantes;
+- titularidade, singularidade, responsabilidades, limites, entradas, admissão e saídas;
+- neutralidade comercial, proteção sensível, confiabilidade, explicabilidade e auditoria.
+
+A Capacidade 06 está **Functionally complete**, com progresso editorial de referência de `100%`.
+
+A próxima frente oficial é a Capacidade 07 — Intervenções Contextuais, que permanece `Planned / concept consolidated` até sua primeira extensão normativa.
 
 ## Regras arquiteturais
 
@@ -599,6 +612,35 @@ O próximo bloco deverá consolidar KPIs, guardrails, baseline funcional, cenár
 385. Observabilidade e auditoria devem reconstruir a cadeia desde a fonte até o consumidor.
 386. Métricas das integrações avaliam o sistema, não o participante.
 387. O participante permanece no controle das integrações funcionais de Oportunidades Ativas.
+388. Existência não representa relevância.
+389. Catálogo não representa Oportunidade Ativa.
+390. Candidatura, ativação, apresentação, visualização e interesse permanecem estados distintos.
+391. Disponibilidade, elegibilidade e relevância permanecem dimensões independentes.
+392. Inscrição, aceitação, contratação, participação, resultado e evolução permanecem fatos distintos.
+393. Fonte somente confirma fatos dentro de sua autoridade.
+394. Comissão não altera relevância e patrocínio não altera prioridade.
+395. Publicidade permanece separada da lista funcional.
+396. Alternativas públicas, gratuitas e não patrocinadas permanecem elegíveis.
+397. Custos, riscos e condições materiais permanecem visíveis.
+398. Contexto sensível não alimenta publicidade.
+399. Escassez comercial não fabrica urgência pessoal.
+400. Ausência de oportunidade é estado legítimo.
+401. Organizações não recebem a jornada pessoal integral.
+402. Dados de terceiros não formam perfis paralelos.
+403. Integrações não transferem decisão.
+404. Produtos especializados governam transações e entregas.
+405. Intervenções Contextuais governa o momento da apresentação.
+406. Próximos Passos governa movimentos e Objetivos governa direção e progresso.
+407. Experiências governa o vivido e Evolução Contínua governa mudança humana.
+408. Revogação interrompe novos usos e somente termina após propagação suficiente.
+409. Reprocessamento não duplica efeitos e eventos fora de ordem não criam estados impossíveis.
+410. Conflitos não são resolvidos silenciosamente e correções não reescrevem histórico.
+411. Falha parcial não representa sucesso integral.
+412. Métricas avaliam o sistema, não o participante.
+413. Nenhuma média positiva compensa violação de guardrail.
+414. A Capacidade 06 está funcionalmente concluída por seis extensões normativas.
+415. A Capacidade 07 permanece planejada até sua primeira extensão normativa.
+416. O participante permanece no controle do contrato final de Oportunidades Ativas.
 
 ## Documentos do domínio
 
@@ -613,6 +655,7 @@ O próximo bloco deverá consolidar KPIs, guardrails, baseline funcional, cenár
 - [PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas](pas-001-oportunidades-ativas-visualizacao-controle.md)
 - [PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-eventos-funcionais.md)
 - [PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-integracoes-funcionais.md)
+- [PAS-001-OA-CONTRACT-001 — Contrato Final das Oportunidades Ativas](pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
