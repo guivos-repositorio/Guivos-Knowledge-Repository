@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.8.4
+version: 1.9.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -239,12 +239,13 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
 | Guivos Mall em Oportunidades Ativas | Refinar | Fornece produtos, serviços, preços e estoque; governa transação e entrega, não relevância humana |
 | Guivos Ads em Oportunidades Ativas | Refinar | Opera publicidade identificada sem acessar contexto sensível ou substituir avaliação funcional |
-| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle, eventos e integrações funcionais consolidados e progresso editorial de 90% |
+| Intervenções Contextuais | Manter | Capacidade 07 funcionalmente concluída por seis extensões normativas, 80 KPIs, 28 guardrails, baseline, cenários e progresso editorial de 100% |
 | Fundamentos Iniciais de Intervenções Contextuais | Manter | PAS-001-IC-FOUNDATION-001 1.0.0 define singularidade, decisões, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia, relações e limites |
 | Ciclo de Vida das Intervenções Contextuais | Manter | PAS-001-IC-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura |
 | Visualização e Controle das Intervenções Contextuais | Manter | PAS-001-IC-VIEW-001 1.0.0 define Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais e consistência entre canais |
 | Eventos Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-INTEGRATION-001 1.0.0 define contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura |
+| KPIs, Guardrails, Cenários e Contrato Final das Intervenções Contextuais | Manter | PAS-001-IC-CONTRACT-001 1.0.0 define 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
 | Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
 | Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
 | Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
@@ -274,6 +275,9 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Admissão de intervenção | Refinar | Exige finalidade, autoridade, relevância, temporalidade, risco, sensibilidade, frequência e canal compatíveis |
 | Silêncio pós-avaliação | Manter | Resultado auditável quando a manifestação não produzir utilidade suficiente |
 | Controle de frequência de intervenção | Manter | Limites globais, por categoria e por canal, governados por finalidade, fadiga, preferência e mudança material |
+| Baseline de Intervenções Contextuais | Manter | Referência empírica anterior a metas permanentes, segmentada por comportamento, canal, finalidade, sensibilidade, fadiga, estado e maturidade |
+| Guardrail de Intervenções Contextuais | Manter | Regra crítica de tolerância zero cuja violação interrompe o fluxo e não pode ser compensada por média positiva |
+| Conclusão funcional de Intervenções Contextuais | Manter | Reconhecimento de que os contratos essenciais estão definidos, distinto de implementação, operação ou validação quantitativa |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
 
 ## Governança documental
@@ -289,8 +293,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-IC-INTEGRATION-001 1.0.0` consolida as integrações funcionais da Capacidade 07, mantém seu estado `In progress`, eleva o progresso editorial para 90% e governa titularidade, finalidade, autoridade, minimização, proveniência, temporalidades, consentimento, sincronização, divergência, revogação, propagação, prevenção de ciclos, capacidades, produtos, organizações, profissionais, canais, sistemas externos, observabilidade, explicabilidade, auditoria e falha segura, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05, 06 e 07 estão funcionalmente concluídas. `PAS-001-IC-CONTRACT-001 1.0.0` conclui a Capacidade 07, eleva o progresso editorial para 100% e consolida 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, singularidade, titularidade, responsabilidades, limites, neutralidade, privacidade, confiabilidade, explicabilidade, auditoria e reabertura normativa, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão, lacunas bloqueantes e não bloqueantes, critérios de reabertura e contrato final da Capacidade 07 — Intervenções Contextuais**.
+Consolidar os **fundamentos iniciais da Capacidade 08 — Experiências**, incluindo singularidade, experiência vivida, distinções fundamentais, titularidade, temporalidade, sensibilidade, relações, estados, limites e integrações iniciais. A capacidade permanece `Planned` até a aprovação de sua primeira extensão normativa.
