@@ -10,9 +10,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
 - Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 07 — Intervenções Contextuais em desenvolvimento, `In progress`, 60%;
+- Capacidade 07 — Intervenções Contextuais em desenvolvimento, `In progress`, 80%;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
-- `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0` e `PAS-001-IC-VIEW-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
+- `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0` e `PAS-001-IC-EVENT-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -20,9 +20,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **contratos dos eventos funcionais da Capacidade 07 — Intervenções Contextuais**.
+Consolidar as **integrações funcionais da Capacidade 07 — Intervenções Contextuais**.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As três extensões de Intervenções Contextuais consolidam fundamentos, ciclo de vida, Central de Intervenções, Fila de Atenção, mensagens, justificativas, controles, preferências, acessibilidade, privacidade, relações comerciais e falha segura.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As quatro extensões de Intervenções Contextuais consolidam fundamentos, ciclo de vida, visualização, controle, agregado funcional, estrutura comum e 19 famílias de eventos com autoridade, temporalidade, correção, revogação, idempotência, reconstrução e falha segura.
 
 ## Acesso rápido
 
@@ -41,6 +41,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Fundamentos Iniciais de Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [Ciclo de Vida das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-ciclo-de-vida.md)
 - [Visualização e Controle das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-visualizacao-controle.md)
+- [Eventos Funcionais das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -58,10 +59,10 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
-| 07 — Intervenções Contextuais | In progress — 60% |
+| 07 — Intervenções Contextuais | In progress — 80% |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
 ## Ponto de retomada
 
-Retomar nos contratos dos eventos funcionais da Capacidade 07 — Intervenções Contextuais, incluindo estrutura comum, autoridade, temporalidade, correlação, identificação, avaliação, admissão, seleção de comportamento, programação, apresentação, entrega, resposta, adiamento, silêncio, contestação, correção, revogação, propagação, idempotência, ordenação, concorrência e falha segura.
+Retomar nas integrações funcionais da Capacidade 07 — Intervenções Contextuais com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Experiências, Evolução Contínua, Guivos Intelligence, Platform Layer, produtos especializados, organizações, profissionais, canais, calendários, localização, fontes públicas e sistemas externos.
