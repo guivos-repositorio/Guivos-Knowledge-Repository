@@ -2,6 +2,40 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.36.2 — Contextual Interventions Visualization and Control
+
+- Criação de `PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 07 do `PAS-001 — Guivos Journey`.
+- Definição da Central de Intervenções como superfície principal de compreensão e controle.
+- Definição da Fila de Atenção como recorte temporário do que pode justificar atenção atual ou próxima.
+- Reconhecimento da ausência legítima de intervenções, sem preenchimento por anúncios ou mensagens de engajamento.
+- Limitação de contagens como instrumentos de organização, sem equivalência a produtividade, qualidade, sucesso ou evolução.
+- Consolidação de agrupamentos e ordenação funcional por risco, prazo, confirmação, reversibilidade, impacto e sensibilidade, sem influência de comissão, patrocínio, clique, margem ou meta comercial.
+- Definição dos cartões de intervenção, conteúdo mínimo, títulos funcionais e títulos neutros.
+- Separação visual entre estado funcional, informação, autorização, temporalidade, entrega, resposta, atenção, fadiga, sensibilidade e operação externa.
+- Definição dos comportamentos visuais de pergunta, informação, sugestão, lembrete, alerta, confirmação, ação, espera, observação e silêncio.
+- Consolidação do detalhamento progressivo e das justificativas `Por que estou vendo isto?` e `Por que agora?`.
+- Definição da apresentação de fonte, autoridade, incerteza, validade temporal, importância, urgência, prazo e relações comerciais.
+- Separação visual e funcional de Guivos Ads.
+- Consolidação das relações com outras capacidades e dos processos externos.
+- Definição do histórico, correções, busca, filtros e controles principais.
+- Consolidação das ações de responder, adiar, silenciar, recusar, ocultar, bloquear, contestar, corrigir e revogar.
+- Definição das preferências de frequência, horários protegidos, canais, categorias, intensidade, resumos e controles de fadiga.
+- Consolidação das notificações, e-mail, canais conversacionais, calendário e superfícies de produtos.
+- Definição da consistência entre canais e do detalhamento progressivo.
+- Consolidação da acessibilidade técnica e cognitiva, linguagem proporcional, ambiente, dispositivo e privacidade visual.
+- Proteção das informações de terceiros e das intervenções coletivas, institucionais, de saúde, financeiras, jurídicas, religiosas, sociais, de voluntariado e comerciais.
+- Proibição de converter promoções e escassez comercial em urgência funcional.
+- Definição da falha de apresentação, falha parcial, sincronização pendente, conflitos, operação sem conexão e auditoria compreensível.
+- Registro dos eventos funcionais iniciais da visualização, métricas sistêmicas, responsabilidades, limites, critérios de aceite e 45 regras fundamentais.
+- Atualização da Arquitetura de Produtos para `1.8.2` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `9.3.0`, do Knowledge Board para `9.3.0` e da Matriz de Consolidação Canônica para `1.8.2`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 07 no estado `In progress` e elevação do progresso editorial de referência de 40% para 60%.
+- Preservação das Capacidades 02, 03, 04, 05 e 06 como `Functionally complete`.
+- Preservação da Capacidade 08 — Experiências como `Planned`.
+- Definição dos contratos dos eventos funcionais das Intervenções Contextuais como próximo ponto exato de retomada.
+
 ## 0.36.1 — Contextual Interventions Lifecycle Rules
 
 - Criação de `PAS-001-IC-LIFECYCLE-001 — Regras do Ciclo de Vida das Intervenções Contextuais`, versão `1.0.0`.
