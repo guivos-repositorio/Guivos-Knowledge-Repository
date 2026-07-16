@@ -1,0 +1,31 @@
+name: Apply approved IC final contract
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/trigger/ic-contract.txt
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout approved branch
+        uses: actions/checkout@v4
+        with:
+          ref: ic-contract-20260716
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply approved final contract
+        env:
+          TARGET_BRANCH: ic-contract-20260716
+        run: python .github/scripts/apply_ic_contract.py
