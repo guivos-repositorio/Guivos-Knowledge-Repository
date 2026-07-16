@@ -10,8 +10,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
 - Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 07 — Intervenções Contextuais como próxima frente oficial, ainda `Planned / concept consolidated`;
+- Capacidade 07 — Intervenções Contextuais em desenvolvimento, `In progress`, 20%;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
+- `PAS-001-IC-FOUNDATION-001 1.0.0` como primeira extensão normativa vigente da Capacidade 07;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -19,9 +20,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **fundamentos iniciais da Capacidade 07 — Intervenções Contextuais**.
+Consolidar as **regras do ciclo de vida da Capacidade 07 — Intervenções Contextuais**.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. A primeira extensão de Intervenções Contextuais consolida finalidade, decisões de manifestação, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia e limites.
 
 ## Acesso rápido
 
@@ -37,6 +38,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Eventos Funcionais das Oportunidades Ativas](product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)
 - [Integrações Funcionais das Oportunidades Ativas](product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md)
 - [Contrato Final das Oportunidades Ativas](product-architecture/pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
+- [Fundamentos Iniciais de Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -54,10 +56,10 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
-| 07 — Intervenções Contextuais | Planned / concept consolidated |
+| 07 — Intervenções Contextuais | In progress — 20% |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
 ## Ponto de retomada
 
-Retomar nos fundamentos iniciais da Capacidade 07 — Intervenções Contextuais, preservando seu estado `Planned / concept consolidated` até a aprovação da primeira extensão normativa.
+Retomar nas regras do ciclo de vida da Capacidade 07 — Intervenções Contextuais, incluindo identificação, candidatura, avaliação, admissão, programação, espera, apresentação, resposta, adiamento, silêncio, cancelamento, expiração, contestação, correção, escalonamento, frequência, propagação e falha segura.
