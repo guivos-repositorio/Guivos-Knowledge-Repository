@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.8.0
+version: 1.8.1
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -249,9 +249,28 @@ Os fundamentos iniciais consolidam:
 - limites da Guivos Intelligence, Platform Layer, produtos especializados e Guivos Ads;
 - estados, eventos, responsabilidades, limites e comportamentos proibidos iniciais.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de `20%`.
+O ciclo de vida consolida:
 
-O próximo bloco deverá consolidar as regras do ciclo de vida das Intervenções Contextuais.
+- dimensões independentes de estado funcional, informação, autorização, temporalidade, entrega, relação do participante, atenção, fadiga, sensibilidade e operação externa;
+- estados funcionais desde identificação e candidatura até entrega, resposta, silêncio, correção, falha e encerramento;
+- transições válidas e proibição de atalhos e estados impossíveis;
+- identificação por solicitação, sinal, mudança contextual, prazo, risco e sistema externo;
+- deduplicação, candidatura, rejeição preliminar e início da avaliação;
+- avaliação de finalidade, autoridade, relevância, temporalidade, atenção, interruptibilidade, urgência, importância, sensibilidade, fadiga, frequência, canal, reversibilidade, risco e alternativas;
+- conclusão da avaliação, admissão simples e condicionada, rejeição e seleção de comportamento principal;
+- programação, reprogramação, janela de entrega, prontidão, bloqueio, espera e retomada;
+- entrega, entrega parcial, confirmação técnica, falha e apresentação;
+- resposta, ausência de resposta, adiamento, recusa, ocultação e bloqueio;
+- silêncio pós-avaliação, solicitado, por fadiga e por sensibilidade;
+- cancelamento, expiração, encerramento, contestação, correção, reabertura e nova intervenção;
+- escalonamento, desescalonamento e encaminhamento humano;
+- repetição, recorrência, agrupamento, supressão de duplicidade e controles globais, por categoria e por canal;
+- horários protegidos, mudanças materiais, intervenções sensíveis, compartilhamento, revogação e propagação;
+- retroatividade, idempotência, ordenação, concorrência, falha segura e reconstrução.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de `40%`.
+
+O próximo bloco deverá consolidar os comportamentos funcionais da visualização e do controle das Intervenções Contextuais.
 
 ## Regras arquiteturais
 
@@ -719,6 +738,52 @@ O próximo bloco deverá consolidar as regras do ciclo de vida das Intervençõe
 462. Métricas futuras avaliarão o sistema, não o valor, mérito, fé, disciplina ou produtividade do participante.
 463. A Capacidade 07 está `In progress`, com progresso editorial de referência de `20%`.
 464. O participante permanece no controle dos fundamentos de Intervenções Contextuais.
+465. Estado funcional, informação, autorização, temporalidade, entrega, relação, atenção, fadiga, sensibilidade e operação externa permanecem dimensões independentes.
+466. Sinal não representa necessidade confirmada.
+467. Identificação não representa candidatura.
+468. Candidatura não representa admissão.
+469. Admissão não representa apresentação.
+470. Programação não representa entrega.
+471. Entrega não representa visualização.
+472. Visualização não representa compreensão.
+473. Compreensão não representa concordância.
+474. Resposta não representa progresso.
+475. Atenção não representa consentimento.
+476. Disponibilidade técnica não representa interruptibilidade.
+477. Importância não representa urgência.
+478. Urgência comercial não representa urgência funcional.
+479. Silêncio e espera são decisões funcionais legítimas.
+480. Adiamento não representa recusa e recusa não representa fracasso.
+481. Ausência de resposta não representa desinteresse definitivo.
+482. Repetição exige fundamento novo, prazo real, solicitação, regra autorizada ou falha confirmada.
+483. Fadiga reduz frequência e intensidade e nunca autoriza aumento de pressão.
+484. Horários protegidos prevalecem sobre manifestações não críticas.
+485. Conteúdo sensível exige minimização, título neutro, canal protegido e retenção limitada.
+486. Publicidade permanece separada da intervenção funcional.
+487. Comissão não altera relevância e patrocínio não aumenta prioridade.
+488. Escassez comercial não fabrica urgência.
+489. Produtos especializados executam suas próprias operações.
+490. Intervenções governa o momento da manifestação, não o objetivo do participante.
+491. Guivos Intelligence pode sugerir e explicar, mas não impor manifestação.
+492. Platform Layer entrega mensagens sem definir relevância humana.
+493. Ação material exige autoridade e autorização.
+494. Admissão exige finalidade, autoridade, relevância, temporalidade, risco, sensibilidade, frequência e canal compatíveis.
+495. Mudança material exige reavaliação antes da entrega.
+496. Confirmação técnica de entrega não representa leitura, compreensão, concordância, interesse ou consentimento.
+497. Contestação limita efeitos materiais e correção não reescreve histórico.
+498. Revogação interrompe novos usos e somente termina após propagação suficiente.
+499. Reprocessamento não duplica candidatura, admissão, programação, entrega, alerta, lembrete, resposta, contestação ou revogação.
+500. Eventos fora de ordem não criam estados impossíveis.
+501. Conflitos concorrentes não são sobrescritos silenciosamente.
+502. Falha preserva o último estado válido e impede falsa entrega.
+503. Falha parcial não representa sucesso integral.
+504. Terceiros não formam perfis paralelos.
+505. Intervenções recorrentes exigem finalidade, frequência, limite, janela, expiração, revisão e controle.
+506. Agrupamento não oculta urgências, sensibilidades ou relações comerciais distintas.
+507. Métricas futuras avaliam o sistema, não o participante.
+508. O ciclo apoia decisões reais e não maximiza notificações ou tempo de tela.
+509. A Capacidade 07 está `In progress`, com progresso editorial de referência de `40%`.
+510. O participante permanece no controle do ciclo de vida das Intervenções Contextuais.
 
 ## Documentos do domínio
 
@@ -735,6 +800,7 @@ O próximo bloco deverá consolidar as regras do ciclo de vida das Intervençõe
 - [PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-integracoes-funcionais.md)
 - [PAS-001-OA-CONTRACT-001 — Contrato Final das Oportunidades Ativas](pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
 - [PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais de Intervenções Contextuais](pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
+- [PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais](pas-001-intervencoes-contextuais-ciclo-de-vida.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
