@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.8.4
+version: 1.9.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -230,6 +230,7 @@ As extensões normativas vigentes são:
 - `PAS-001-IC-VIEW-001 1.0.0` — Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais, consistência entre canais e falha segura.
 - `PAS-001-IC-EVENT-001 1.0.0` — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidade, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura.
 - `PAS-001-IC-INTEGRATION-001 1.0.0` — contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura.
+- `PAS-001-IC-CONTRACT-001 1.0.0` — 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final.
 
 Os fundamentos iniciais consolidam:
 
@@ -334,9 +335,25 @@ As integrações funcionais consolidam:
 - proteção de terceiros, coletivos, dispositivos compartilhados e integrações temporárias;
 - observabilidade, explicabilidade, auditoria e reconstrução.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de `90%`.
+O contrato final consolida:
 
-O próximo bloco deverá consolidar os KPIs, guardrails, cenários e contrato final das Intervenções Contextuais.
+- 80 KPIs organizados em 16 famílias;
+- baseline funcional segmentada antes de metas permanentes;
+- painel de saúde com 17 visões e cinco níveis de desempenho;
+- 28 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- singularidade centrada na decisão responsável entre manifestar-se e permanecer em silêncio;
+- contrato final de titularidade, responsabilidades, limites, entradas, admissão e saídas;
+- atenção e interruptibilidade separadas de consentimento;
+- importância, urgência e temporalidade como dimensões independentes;
+- silêncio, espera, adiamento e recusa como resultados legítimos;
+- neutralidade comercial, proteção sensível, confiabilidade, explicabilidade e auditoria;
+- critérios formais de reabertura normativa.
+
+A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de `100%`.
+
+O próximo bloco deverá consolidar os fundamentos iniciais da Capacidade 08 — Experiências, que permanece `Planned` até a aprovação de sua primeira extensão normativa.
 
 ## Regras arquiteturais
 
@@ -984,7 +1001,52 @@ O próximo bloco deverá consolidar os KPIs, guardrails, cenários e contrato fi
 642. Platform Layer transporta, mas não define relevância humana.
 643. Falha parcial não representa sucesso integral.
 644. Métricas avaliam o sistema.
-645. A Capacidade 07 está `In progress`, com progresso editorial de referência de `90%`, e o participante permanece no controle das integrações funcionais.
+645. As integrações funcionais estão consolidadas por `PAS-001-IC-INTEGRATION-001 1.0.0`.
+646. Sinal não representa necessidade.
+647. Identificação não representa candidatura.
+648. Candidatura não representa admissão.
+649. Admissão não representa apresentação.
+650. Programação não representa entrega.
+651. Envio não representa entrega.
+652. Entrega não representa visualização.
+653. Visualização não representa compreensão.
+654. Compreensão não representa concordância.
+655. Atenção não representa consentimento.
+656. Disponibilidade técnica não representa interruptibilidade.
+657. Importância não representa urgência.
+658. Urgência comercial não representa urgência funcional.
+659. Pergunta não representa obrigação.
+660. Sugestão não cria compromisso.
+661. Lembrete não cria compromisso novo.
+662. Alerta exige fundamento material.
+663. Ação material exige autorização.
+664. Silêncio é resultado funcional legítimo.
+665. Espera não representa abandono.
+666. Ausência de resposta não representa recusa.
+667. Adiamento não representa rejeição.
+668. Recusa não representa fracasso.
+669. Fadiga reduz pressão.
+670. Horários protegidos prevalecem sobre intervenções não críticas.
+671. Conteúdo sensível exige proteção reforçada.
+672. Publicidade permanece separada.
+673. Comissão não cria urgência.
+674. Patrocínio não aumenta prioridade.
+675. Contexto sensível não alimenta publicidade.
+676. Organizações não recebem a jornada integral.
+677. Terceiros não formam perfis paralelos.
+678. Produtos especializados governam suas operações.
+679. Intervenções Contextuais governa a manifestação, não a transação.
+680. Guivos Intelligence pode sugerir, mas não impor.
+681. Platform Layer transporta, mas não define relevância humana.
+682. Integrações não transferem titularidade.
+683. Reprocessamento não duplica efeitos.
+684. Eventos fora de ordem não criam estados impossíveis.
+685. Conflitos não são sobrescritos silenciosamente.
+686. Correções não reescrevem o passado.
+687. Revogação somente termina após propagação suficiente.
+688. Falha parcial não representa sucesso integral.
+689. Métricas avaliam o sistema.
+690. `PAS-001-IC-CONTRACT-001 1.0.0` conclui funcionalmente a Capacidade 07, com progresso editorial de referência de `100%`, e o participante permanece no controle.
 
 ## Documentos do domínio
 
@@ -1005,6 +1067,7 @@ O próximo bloco deverá consolidar os KPIs, guardrails, cenários e contrato fi
 - [PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais](pas-001-intervencoes-contextuais-visualizacao-controle.md)
 - [PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-integracoes-funcionais.md)
+- [PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais](pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
