@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.8.1
+version: 1.8.2
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -239,9 +239,10 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
 | Guivos Mall em Oportunidades Ativas | Refinar | Fornece produtos, serviços, preços e estoque; governa transação e entrega, não relevância humana |
 | Guivos Ads em Oportunidades Ativas | Refinar | Opera publicidade identificada sem acessar contexto sensível ou substituir avaliação funcional |
-| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40% |
+| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização e controle consolidados e progresso editorial de 60% |
 | Fundamentos Iniciais de Intervenções Contextuais | Manter | PAS-001-IC-FOUNDATION-001 1.0.0 define singularidade, decisões, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia, relações e limites |
 | Ciclo de Vida das Intervenções Contextuais | Manter | PAS-001-IC-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura |
+| Visualização e Controle das Intervenções Contextuais | Manter | PAS-001-IC-VIEW-001 1.0.0 define Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais e consistência entre canais |
 | Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
 | Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
 | Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
@@ -253,6 +254,10 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Intensidade de intervenção | Refinar | Silenciosa, passiva, discreta, normal, destacada ou crítica, sempre proporcional |
 | Horário protegido | Manter | Período em que intervenções são limitadas conforme preferências e exceções legítimas |
 | Intervenção comercial | Refinar | Comunicação identificada, separada da funcional e proibida de utilizar contexto sensível ou urgência fabricada |
+| Central de Intervenções | Manter | Superfície principal de compreensão e controle, distinta de caixa de entrada infinita, feed social ou canal publicitário |
+| Fila de Atenção de Intervenções | Manter | Recorte temporário do que pode justificar atenção atual ou próxima, distinto do conjunto total de intervenções |
+| Privacidade visual de intervenção | Manter | Títulos neutros, modo discreto, prévias protegidas, autenticação proporcional e histórico restrito |
+| Controle de intervenção | Manter | Responder, adiar, silenciar, recusar, ocultar, bloquear, contestar, corrigir e revogar permanecem ações distintas |
 | Estado funcional da intervenção | Refinar | Identificada, Candidata, Em avaliação, Admitida, Programada, Aguardando, Pronta, Em entrega, Entregue, Respondida, Adiada, Silenciada, Cancelada, Expirada, Contestada, Corrigida, Falha ou Encerrada |
 | Estado de entrega da intervenção | Manter | Dimensão própria que não representa leitura, compreensão, concordância, interesse ou consentimento |
 | Relação do participante com intervenção | Manter | Apresentação, visualização, resposta, aceitação, recusa, adiamento, ocultação, bloqueio e contestação permanecem estados individuais distintos |
