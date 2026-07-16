@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 9.5.0
+version: 10.0.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -35,6 +35,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-IC-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Intervenções Contextuais |
 | PAS-001-IC-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Intervenções Contextuais |
 | PAS-001-IC-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Intervenções Contextuais |
+| PAS-001-IC-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final das Intervenções Contextuais |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -48,16 +49,16 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
-| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos` e `06 — Oportunidades Ativas` |
-| Capacidade ativa | `07 — Intervenções Contextuais` |
-| Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-IC-INTEGRATION-001 1.0.0` |
-| Progresso editorial de Intervenções Contextuais | `90%` |
+| Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas` e `07 — Intervenções Contextuais` |
+| Próxima capacidade | `08 — Experiências` |
+| Estado da próxima capacidade | `Planned` |
+| Extensão normativa vigente | `PAS-001-IC-CONTRACT-001 1.0.0` |
+| Progresso editorial de Intervenções Contextuais | `100%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar KPIs, guardrails, cenários e contrato final das Intervenções Contextuais |
+| Foco imediato | Consolidar os fundamentos iniciais da Capacidade 08 — Experiências |
 
 ## Capacidades do Journey
 
@@ -69,7 +70,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
-| 07 — Intervenções Contextuais | In progress — 90% | Fundamentos, ciclo de vida, visualização, controle, eventos e integrações consolidados; contrato final é a próxima entrega |
+| 07 — Intervenções Contextuais | Functionally complete — 100% | Seis extensões normativas, 80 KPIs, 28 guardrails, baseline, cenários e contrato final consolidados |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
 
@@ -338,7 +339,21 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 - proteção de terceiros, coletivos, dispositivos compartilhados e integrações temporárias;
 - observabilidade, explicabilidade, auditoria e reconstrução.
 
-A Capacidade 07 está `In progress`, com progresso editorial de referência de `90%`.
+### KPIs, guardrails, cenários e contrato final
+
+- 80 KPIs em 16 famílias de indicadores sistêmicos;
+- baseline funcional segmentada antes de metas permanentes;
+- painel de saúde com 17 visões e cinco níveis de desempenho;
+- 28 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- singularidade da decisão entre manifestar-se e permanecer em silêncio;
+- contrato final de titularidade, responsabilidades, limites, entradas, admissão e saídas;
+- silêncio funcional, atenção, interruptibilidade, importância, urgência, sensibilidade, fadiga, frequência, canais e autonomia;
+- neutralidade comercial, proteção de terceiros e separação de Guivos Ads;
+- confiabilidade, correção, revogação, explicabilidade, auditoria e critérios de reabertura.
+
+A Capacidade 07 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
 ## Conceitos internos preservados
 
@@ -349,12 +364,16 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | Eventos de Vida | Functionally complete — 100% |
 | Próximos Passos | Functionally complete — 100% |
 | Oportunidades Ativas | Functionally complete — 100% |
-| Intervenções Contextuais | In progress — 90% |
+| Intervenções Contextuais | Functionally complete — 100% |
 | Fundamentos de Intervenções Contextuais | Normative 1.0.0 |
 | Ciclo de Vida de Intervenções Contextuais | Normative 1.0.0 |
 | Visualização e Controle de Intervenções Contextuais | Normative 1.0.0 |
 | Eventos Funcionais de Intervenções Contextuais | Normative 1.0.0 |
 | Integrações Funcionais de Intervenções Contextuais | Normative 1.0.0 |
+| Contrato Final de Intervenções Contextuais | Normative 1.0.0 |
+| Baseline de Intervenções Contextuais | Construída antes de metas permanentes e segmentada por comportamento, canal, finalidade, sensibilidade, fadiga e estado |
+| Guardrail de Intervenções Contextuais | Regra crítica cuja violação não pode ser compensada por média positiva |
+| Conclusão funcional de Intervenções Contextuais | Contratos essenciais concluídos; não equivale a implementação ou validação em produção |
 | Integração funcional de intervenção | Relação governada entre produtor e consumidor para finalidade específica e escopo minimizado |
 | Sincronização de intervenção | Processo versionado, idempotente e reconciliável, distinto de decisão funcional |
 | Revogação de integração de intervenção | Interrompe novos usos e somente se conclui após propagação suficiente |
@@ -426,8 +445,8 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 9.5.0 |
-| Knowledge Board | 9.5.0 |
+| Roadmap | 10.0.0 |
+| Knowledge Board | 10.0.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -445,6 +464,7 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | PAS-001-IC-VIEW-001 | Active 1.0.0 |
 | PAS-001-IC-EVENT-001 | Active 1.0.0 |
 | PAS-001-IC-INTEGRATION-001 | Active 1.0.0 |
+| PAS-001-IC-CONTRACT-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -454,4 +474,4 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 
 ## Próxima atividade
 
-Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários, critérios de conclusão, lacunas, reabertura e contrato final das Intervenções Contextuais**.
+Consolidar os **fundamentos iniciais da Capacidade 08 — Experiências**, incluindo singularidade, experiência vivida, distinções fundamentais, titularidade, temporalidade, sensibilidade, relações, estados, limites e integrações iniciais. A capacidade permanece `Planned` até a aprovação de sua primeira extensão normativa.
