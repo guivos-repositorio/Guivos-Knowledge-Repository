@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.8.2
+version: 1.8.3
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -228,6 +228,7 @@ As extensões normativas vigentes são:
 - `PAS-001-IC-FOUNDATION-001 1.0.0` — finalidade, pergunta central, singularidade, decisões possíveis, oportunidade de intervenção, silêncio, atenção, interruptibilidade, urgência, sensibilidade, fadiga, canais, autonomia, controles, relações, estados e eventos iniciais.
 - `PAS-001-IC-LIFECYCLE-001 1.0.0` — dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura.
 - `PAS-001-IC-VIEW-001 1.0.0` — Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais, consistência entre canais e falha segura.
+- `PAS-001-IC-EVENT-001 1.0.0` — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidade, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura.
 
 Os fundamentos iniciais consolidam:
 
@@ -289,9 +290,32 @@ A visualização e o controle consolidam:
 - proteção de terceiros e de intervenções de saúde, finanças, jurídico, religião, voluntariado, institucionais, coletivas e comerciais;
 - falha segura, sincronização pendente, conflitos, operação sem conexão e auditoria compreensível.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de `60%`.
+Os contratos dos eventos funcionais consolidam:
 
-O próximo bloco deverá consolidar os contratos dos eventos funcionais das Intervenções Contextuais.
+- distinção entre comando, proposta e evento funcional reconhecido;
+- persistência funcional suficiente antes da publicação de eventos materiais;
+- agregado `Registro de Intervenção Contextual` e estrutura comum versionada;
+- identidade, participante, ator, destinatário, papel, autoridade, fonte, finalidade e proveniência;
+- temporalidades de fato, solicitação, observação, conhecimento, avaliação, reconhecimento, persistência, publicação, aplicação, entrega, resposta, propagação e correção;
+- correlação e causalidade funcional sem fabricação de relação causal;
+- classificação de sensibilidade, minimização de payload e retenção proporcional;
+- declaração obrigatória de publicidade, patrocínio, comissão, afiliação e demais relações comerciais;
+- 19 famílias de eventos funcionais de identificação, avaliação, admissão, comportamento, programação, entrega, resposta, preferências, execução externa, correção, revogação, integração e falhas;
+- deduplicação semântica e versão esperada do agregado;
+- avaliação de atenção, interruptibilidade, urgência, fadiga e frequência sem inferência de consentimento;
+- admissão separada de apresentação, entrega, visualização, resposta e transação;
+- comportamento principal explícito entre agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar;
+- programação, prontidão e revalidação anterior à entrega;
+- apresentação, entrega técnica, visualização, resposta e ausência de resposta como fatos distintos;
+- adiamento, silêncio, recusa, ocultação, bloqueio e preferências com contratos próprios;
+- execução externa sob autoridade do produto ou sistema executor;
+- contestação, correção compensatória, cancelamento, expiração, encerramento e reabertura;
+- revogação concluída somente após propagação suficiente;
+- idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de `80%`.
+
+O próximo bloco deverá consolidar as integrações funcionais das Intervenções Contextuais.
 
 ## Regras arquiteturais
 
@@ -849,7 +873,52 @@ O próximo bloco deverá consolidar os contratos dos eventos funcionais das Inte
 552. Métricas avaliam a capacidade.
 553. A interface não maximiza notificações ou tempo de tela.
 554. O silêncio deve ser tão acessível quanto a resposta.
-555. A Capacidade 07 está `In progress`, com progresso editorial de referência de `60%`, e o participante permanece no controle da visualização e do controle.
+555. A visualização e o controle das Intervenções Contextuais estão consolidados por `PAS-001-IC-VIEW-001 1.0.0`.
+556. Comando, proposta e evento funcional permanecem conceitos distintos.
+557. Evento material somente é publicado após persistência funcional suficiente.
+558. O Registro de Intervenção Contextual preserva identidade, estado, decisões, preferências, correções, revogações e falhas.
+559. Mudança material de finalidade, destinatário, comportamento ou impacto exige novo agregado ou ciclo.
+560. Todo evento declara tipo, versão contratual, agregado, versões, autoridade, finalidade, temporalidades, proveniência, sensibilidade e idempotência.
+561. Identificadores de eventos são únicos, imutáveis e não reutilizáveis.
+562. Consumidores rejeitam versões incompatíveis de forma segura e preservam eventos desconhecidos.
+563. Versão do agregado impede sobrescrita silenciosa, regressão, duplicidade e concorrência não detectada.
+564. Participante, ator, destinatário, terceiro, organização e executor externo permanecem distintos.
+565. Acesso técnico e presença de dados não ampliam autoridade.
+566. Finalidades genéricas de engajamento, conversão, receita ou retenção não justificam contexto pessoal ou sensível.
+567. Tempo do fato, solicitação, conhecimento, avaliação, persistência, publicação, entrega, resposta, propagação e correção permanecem distintos.
+568. Correlação não representa causalidade funcional.
+569. A causalidade não pode ser inferida por clique, proximidade temporal, abertura de aplicativo ou localização.
+570. Proveniência reconstrói a cadeia desde a fonte até o consumidor e o efeito.
+571. Sensibilidade governa payload, logs, consumidores, retenção, visualização, notificação e compartilhamento.
+572. Payloads são minimizados e não carregam narrativas integrais quando recortes funcionais forem suficientes.
+573. Relações comerciais são declaradas e não elevam relevância, urgência ou prioridade.
+574. As 19 famílias de eventos preservam responsabilidades e significados próprios.
+575. Identificação não representa candidatura e candidatura não autoriza entrega, notificação, execução ou compartilhamento.
+576. Duplicidade semântica deve ser reconhecida mesmo com identificadores distintos.
+577. Mudança material de finalidade exige nova avaliação e pode exigir novo agregado.
+578. Excesso de autoridade bloqueia novos efeitos, limita automação e exige correção auditável.
+579. Avaliação contextual declara critérios, contexto utilizado, exclusões, limitações, incerteza, alternativas e custo de interrupção.
+580. Atenção avaliada não representa consentimento ou intenção.
+581. Disponibilidade técnica do canal não representa interruptibilidade.
+582. Promoção, comissão, estoque, campanha e meta comercial não fundamentam urgência funcional.
+583. Fadiga elevada reduz pressão, frequência e intensidade.
+584. Admissão não representa apresentação, entrega, visualização, resposta ou autorização transacional.
+585. Um comportamento principal deve permanecer explícito em cada decisão de intervenção.
+586. Agir exige autorização vigente, executor identificado, escopo delimitado, risco compatível e reversibilidade suficiente.
+587. Programação declara janela, fuso, canal, validade, reavaliação, cancelamento e horários protegidos.
+588. Autorização, validade, canal, sensibilidade, fadiga, preferências, revogações e conflitos são revalidados antes da entrega.
+589. Apresentação, entrega técnica, visualização, resposta e ação externa permanecem fatos distintos.
+590. Confirmação técnica de entrega não representa leitura, compreensão, concordância, interesse, consentimento ou execução.
+591. Resposta ambígua não produz efeito material sem esclarecimento.
+592. Ausência de resposta não representa recusa, desinteresse ou julgamento.
+593. Adiamento não representa recusa e silêncio é evento funcional legítimo.
+594. Preferências produzem efeitos dentro de seu escopo e não reescrevem eventos anteriores.
+595. Relação comercial oculta limita apresentação e gera incidente de governança.
+596. Execução externa permanece sob autoridade do produto ou sistema executor.
+597. Contestação material limita efeitos, preserva evidências e pode exigir avaliação humana.
+598. Correções são compensatórias e não apagam eventos históricos.
+599. Revogação somente se conclui após bloqueio e propagação suficiente aos consumidores relevantes.
+600. Reprocessamento, ordenação, concorrência, atomicidade, reconstrução e falha segura preservam o controle do participante; a Capacidade 07 está `In progress`, com progresso editorial de referência de `80%`.
 
 ## Documentos do domínio
 
@@ -868,6 +937,7 @@ O próximo bloco deverá consolidar os contratos dos eventos funcionais das Inte
 - [PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais de Intervenções Contextuais](pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais](pas-001-intervencoes-contextuais-ciclo-de-vida.md)
 - [PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais](pas-001-intervencoes-contextuais-visualizacao-controle.md)
+- [PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
