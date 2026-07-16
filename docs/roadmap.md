@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 9.4.0
+version: 9.5.0
 owner: Guivos
-last_updated: 2026-07-15
+last_updated: 2026-07-16
 ---
 
 # Roadmap Arquitetural
@@ -18,9 +18,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
-- **Capacidade ativa:** `07 — Intervenções Contextuais`, `In progress`, 80%.
+- **Capacidade ativa:** `07 — Intervenções Contextuais`, `In progress`, 90%.
 - **Extensões normativas vigentes de Oportunidades Ativas:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
-- **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0` e `PAS-001-IC-EVENT-001 1.0.0`.
+- **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0` e `PAS-001-IC-INTEGRATION-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -255,7 +255,25 @@ A Capacidade 06 está `Functionally complete`, com progresso editorial de refer�
 - revogação concluída somente após propagação suficiente;
 - idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.
 
-A Capacidade 07 está `In progress`, com progresso editorial de referência de `80%`.
+`PAS-001-IC-INTEGRATION-001 1.0.0` consolida:
+
+- integração funcional como relação governada entre produtor e consumidor;
+- titularidade, finalidade, autoridade, escopo, sensibilidade, proveniência, temporalidades, retenção, permissões e relação comercial;
+- identidade e associação confiáveis, com efeitos limitados diante de incerteza;
+- qualidade técnica, confiança funcional e autoridade da fonte como dimensões distintas;
+- transformações permitidas e proibição de fabricar estados, intenção, prioridade, resultado, progresso ou diagnóstico;
+- finalidade específica, minimização, recortes funcionais e consentimento granular;
+- pausa, desconexão, revogação, propagação e retenção pós-revogação;
+- sincronização, divergência, ordenação, concorrência e reconciliação;
+- prevenção de ciclos e restrição de tempo real;
+- retentativas idempotentes, falha segura e degradação controlada;
+- integrações com todas as capacidades do Journey;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com produtos, organizações, profissionais, setores sensíveis, canais, calendários, localização, fontes públicas e sistemas externos;
+- proteção de terceiros, coletivos e dispositivos compartilhados;
+- observabilidade, explicabilidade, auditoria e reconstrução.
+
+A Capacidade 07 está `In progress`, com progresso editorial de referência de `90%`.
 
 ## Progresso das capacidades do Journey
 
@@ -267,7 +285,7 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
 | 06 — Oportunidades Ativas | Functionally complete | 100% |
-| 07 — Intervenções Contextuais | In progress | 80% |
+| 07 — Intervenções Contextuais | In progress | 90% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
 
@@ -329,18 +347,18 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nas **integrações funcionais das Intervenções Contextuais**.
+Retomar nos **KPIs, guardrails, cenários e contrato final das Intervenções Contextuais**.
 
 Próxima entrega:
 
-1. contrato funcional comum de integração;
-2. identidade, finalidade, autoridade, minimização, proveniência e sensibilidade;
-3. integração com Captura de Contexto e Contexto Vivo;
-4. integração com Objetivos, Eventos de Vida, Próximos Passos e Oportunidades Ativas;
-5. relações com Experiências e Evolução Contínua;
-6. limites da Guivos Intelligence e da Platform Layer;
-7. integrações com Guivos Business, Mall, Travel, Media e Ads;
-8. organizações, profissionais, canais, calendários, localização e fontes públicas;
-9. sistemas externos, execução, sincronização e reconciliação;
-10. pausa, desconexão, revogação e propagação;
-11. prevenção de ciclos, neutralidade comercial, observabilidade, auditoria e falha segura.
+1. famílias de KPIs e indicadores sistêmicos;
+2. guardrails de tolerância zero;
+3. baseline funcional segmentada;
+4. painel de saúde da capacidade;
+5. níveis Crítico, Instável, Adequado, Confiável e Maduro;
+6. cenários funcionalmente ideais;
+7. cenários alternativos;
+8. cenários limite;
+9. critérios de conclusão e lacunas bloqueantes;
+10. lacunas não bloqueantes e critérios de reabertura;
+11. contrato final de singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas, neutralidade, proteção sensível, confiabilidade, explicabilidade e auditoria.
