@@ -60,7 +60,7 @@ As seis extensões normativas consolidaram fundamentos, ciclo de vida, visualiza
 
 A Capacidade 05 permanece **Functionally complete**, com progresso editorial de referência de `100%`.
 
-## Capacidade ativa
+## Capacidade 06 concluída
 
 ### Capacidade 06 — Oportunidades Ativas
 
@@ -204,7 +204,7 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 - gerar o formulário definitivo de aplicação;
 - construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
 
-Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 06.
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 07.
 
 ## Restrições
 
@@ -212,7 +212,7 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não promover LPM, CIE, GPMA ou outros candidatos diretamente à Canon;
 - não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
-- não reabrir as Capacidades 02, 03, 04 ou 05 sem fundamento formal;
+- não reabrir as Capacidades 02, 03, 04, 05 ou 06 sem fundamento formal;
 - não reduzir Oportunidade Ativa a anúncio, produto, recomendação, Próximo Passo ou compromisso;
 - não tratar disponibilidade como relevância ou elegibilidade;
 - não transformar oportunidade em decisão pessoal;
