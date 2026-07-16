@@ -2,6 +2,40 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.36.4 — Contextual Interventions Functional Integrations
+
+- Criação de `PAS-001-IC-INTEGRATION-001 — Integrações Funcionais da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 07 do `PAS-001 — Guivos Journey`.
+- Definição de integração funcional como relação governada entre produtor e consumidor para finalidade específica.
+- Preservação de titularidade, responsabilidade e autoridade por domínio.
+- Formalização do contrato comum com produtor, consumidor, participante, destinatário, finalidade, modo, autoridade, escopo, sensibilidade, fonte, proveniência, temporalidades, qualidade, confiança, retenção, permissões, relação comercial, sincronização, revogação e falha.
+- Definição das responsabilidades de produtores, consumidores, executores e canais.
+- Consolidação de identidade suficientemente confiável, associação incerta limitada e correção auditável de associação incorreta.
+- Separação entre qualidade técnica, confiança funcional e autoridade da fonte.
+- Definição de transformações permitidas e proibição de fabricar disponibilidade, urgência, elegibilidade, aprovação, intenção, interesse, prioridade, compromisso, causalidade, resultado, progresso, transformação, diagnóstico ou precisão inexistente.
+- Consolidação de finalidade específica, minimização, recortes funcionais e consentimento granular.
+- Definição de pausa, desconexão, revogação, propagação e retenção pós-revogação.
+- Consolidação dos estados de sincronização, divergência, ordenação, concorrência e reconciliação.
+- Formalização da prevenção de ciclos automáticos.
+- Limitação de integrações em tempo real e definição de processamento em lote.
+- Definição de retentativas idempotentes, falha segura e degradação controlada.
+- Consolidação das integrações com Captura de Contexto, Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Experiências e Evolução Contínua.
+- Definição dos limites da Guivos Intelligence e da Platform Layer.
+- Consolidação das integrações com Guivos Mall, Travel, Business, Media e Ads.
+- Definição das relações com organizações, profissionais, saúde, finanças, jurídico, educação, trabalho, religião, voluntariado e serviços públicos.
+- Consolidação dos contratos para canais internos, conversacionais, notificações móveis, e-mail, calendários, localização, fontes públicas e sistemas externos.
+- Proteção de informações de terceiros, intervenções coletivas, integrações entre organizações, dispositivos compartilhados e integrações temporárias.
+- Registro dos eventos funcionais de integração e dos tratamentos de falha parcial, falha externa, correção e retroatividade.
+- Consolidação de reconstrução, observabilidade, explicabilidade, auditoria e métricas sistêmicas.
+- Registro de 25 comportamentos proibidos, 45 critérios de aceite e 45 regras fundamentais.
+- Atualização da Arquitetura de Produtos para `1.8.4` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `9.5.0`, do Knowledge Board para `9.5.0` e da Matriz de Consolidação Canônica para `1.8.4`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 07 no estado `In progress` e elevação do progresso editorial de referência de 80% para 90%.
+- Preservação das Capacidades 02, 03, 04, 05 e 06 como `Functionally complete`.
+- Preservação da Capacidade 08 — Experiências como `Planned`.
+- Definição dos KPIs, guardrails, baseline, cenários e contrato final das Intervenções Contextuais como próximo ponto exato de retomada.
+
 ## 0.36.3 — Contextual Interventions Functional Event Contracts
 
 - Criação de `PAS-001-IC-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
