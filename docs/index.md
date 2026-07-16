@@ -8,11 +8,12 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - marco `M5.9 — Chat Continuity and Repository Reconciliation Completed` concluído;
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
-- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos funcionalmente concluídas;
+- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 07 — Intervenções Contextuais em desenvolvimento, `In progress`, 90%;
+- Capacidade 07 — Intervenções Contextuais funcionalmente concluída, `Functionally complete`, 100%;
+- Capacidade 08 — Experiências preservada como `Planned`, 0%;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
-- `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0` e `PAS-001-IC-INTEGRATION-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
+- `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -20,9 +21,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **KPIs, guardrails, cenários e contrato final da Capacidade 07 — Intervenções Contextuais**.
+Consolidar os **fundamentos iniciais da Capacidade 08 — Experiências**.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As cinco extensões de Intervenções Contextuais consolidam fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos e integrações funcionais com capacidades, produtos, organizações, profissionais, canais e sistemas externos, preservando finalidade, autoridade, minimização, neutralidade, revogação e falha segura.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final.
 
 ## Acesso rápido
 
@@ -43,6 +44,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Visualização e Controle das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-visualizacao-controle.md)
 - [Eventos Funcionais das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [Integrações Funcionais das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais.md)
+- [Contrato Final das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -60,10 +62,10 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
-| 07 — Intervenções Contextuais | In progress — 90% |
+| 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
 ## Ponto de retomada
 
-Retomar nos KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão, lacunas bloqueantes e não bloqueantes, critérios de reabertura e contrato final da Capacidade 07 — Intervenções Contextuais.
+Retomar nos fundamentos iniciais da Capacidade 08 — Experiências, incluindo singularidade, definição da experiência vivida, distinção entre atividade, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida, além de titularidade, temporalidade, sensibilidade, relações, estados, limites e integrações iniciais. A capacidade permanece `Planned` até a aprovação de sua primeira extensão normativa.
