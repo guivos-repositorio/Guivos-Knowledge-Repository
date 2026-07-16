@@ -10,9 +10,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida e 05 — Próximos Passos
-- **Capacidade ativa:** 06 — Oportunidades Ativas, `In progress`, 90%
-- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001 e PAS-001-OA-INTEGRATION-001, todas em 1.0.0
+- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos e 06 — Oportunidades Ativas
+- **Próxima frente oficial:** 07 — Intervenções Contextuais, `Planned / concept consolidated`
+- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -128,22 +128,35 @@ A Capacidade 05 está **funcionalmente concluída**, com progresso editorial de 
 - proteção de oportunidades sensíveis, informações de terceiros e neutralidade comercial;
 - observabilidade, explicabilidade, auditoria e falha segura.
 
-A Capacidade 06 está **em desenvolvimento**, com progresso editorial de referência de **90%**.
+`PAS-001-OA-CONTRACT-001 1.0.0` consolida:
+
+- 75 KPIs organizados em 15 famílias;
+- baseline funcional antes de metas permanentes;
+- painel de saúde e cinco níveis de desempenho;
+- 24 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- contrato final de titularidade, responsabilidades, limites, entradas, admissão, saídas e relações;
+- neutralidade comercial, privacidade, confiabilidade, explicabilidade e auditoria;
+- critérios de reabertura normativa.
+
+A Capacidade 06 está **Functionally complete**, com progresso editorial de referência de **100%**.
 
 ## Ponto exato de retomada
 
-Retomar nos KPIs, guardrails, baseline funcional, cenários e contrato final da Capacidade de Oportunidades Ativas.
+Retomar nos fundamentos iniciais da Capacidade 07 — Intervenções Contextuais.
 
 Próxima entrega:
 
-- famílias de indicadores e KPIs sistêmicos;
-- guardrails de tolerância zero;
-- baseline funcional antes de metas permanentes;
-- painel de saúde e níveis de desempenho;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão e reabertura;
-- lacunas bloqueantes e não bloqueantes;
-- contrato final da Capacidade 06.
+- singularidade da capacidade;
+- decisão entre agir, perguntar, lembrar, aguardar, observar ou silenciar;
+- oportunidade de intervenção;
+- atenção, urgência, sensibilidade e fadiga;
+- autoridade, autonomia e limites;
+- canais e consistência entre superfícies;
+- relação com Contexto Vivo, Objetivos, Eventos de Vida, Próximos Passos e Oportunidades Ativas.
+
+A Capacidade 07 permanece `Planned / concept consolidated` até a aprovação de sua primeira extensão normativa.
 
 ## Product Engineering
 
@@ -160,7 +173,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
-| 06 — Oportunidades Ativas | In progress — 90% |
+| 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Planned / concept consolidated |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
@@ -178,6 +191,7 @@ A Capacidade 06 está `In progress` e deverá avançar por extensões normativas
 - [Visualização e Controle das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-visualizacao-controle.md)
 - [Eventos Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md)
 - [Integrações Funcionais das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md)
+- [Contrato Final das Oportunidades Ativas](docs/product-architecture/pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
