@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -221,7 +221,37 @@ O contrato final consolida:
 
 A Capacidade 06 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A próxima frente oficial é a Capacidade 07 — Intervenções Contextuais, que permanece `Planned / concept consolidated` até sua primeira extensão normativa.
+### Capacidade 07 — Intervenções Contextuais
+
+A extensão normativa vigente é:
+
+- `PAS-001-IC-FOUNDATION-001 1.0.0` — finalidade, pergunta central, singularidade, decisões possíveis, oportunidade de intervenção, silêncio, atenção, interruptibilidade, urgência, sensibilidade, fadiga, canais, autonomia, controles, relações, estados e eventos iniciais.
+
+Os fundamentos iniciais consolidam:
+
+- Intervenção Contextual como manifestação deliberada, proporcional e explicável;
+- singularidade centrada na decisão responsável entre manifestar-se ou permanecer em silêncio;
+- decisões de agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar;
+- silêncio como resultado funcional legítimo;
+- oportunidade candidata e oportunidade admitida de intervenção;
+- fluxo canônico de sinal ou solicitação até intervenção, silêncio e reavaliação;
+- distinção entre intervenção, notificação, publicidade, comando, tarefa, oportunidade, transação e conteúdo editorial;
+- reatividade, proatividade, gatilhos legítimos e não gatilhos comerciais;
+- contexto mínimo, atenção, interruptibilidade, importância, urgência e temporalidade;
+- sensibilidade, fadiga, frequência, repetição, intensidade, escalonamento e desescalonamento;
+- seleção e consistência de canais;
+- explicabilidade por motivo, momento, dados, fontes, autoridade, incertezas e controles;
+- autonomia, autoridade limitada e papéis funcionais distintos;
+- horários protegidos, adiamento, recusa, ocultação, bloqueio e silêncio;
+- proteção de saúde, finanças, jurídico, religião, voluntariado, organizações, coletivos e terceiros;
+- separação entre intervenções funcionais, comerciais e institucionais;
+- relações governadas com as capacidades concluídas do Journey;
+- limites da Guivos Intelligence, Platform Layer, produtos especializados e Guivos Ads;
+- estados, eventos, responsabilidades, limites e comportamentos proibidos iniciais.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de `20%`.
+
+O próximo bloco deverá consolidar as regras do ciclo de vida das Intervenções Contextuais.
 
 ## Regras arquiteturais
 
@@ -641,6 +671,54 @@ A próxima frente oficial é a Capacidade 07 — Intervenções Contextuais, que
 414. A Capacidade 06 está funcionalmente concluída por seis extensões normativas.
 415. A Capacidade 07 permanece planejada até sua primeira extensão normativa.
 416. O participante permanece no controle do contrato final de Oportunidades Ativas.
+417. Intervenções Contextuais governa se, quando, como e com qual intensidade a Guivos se manifesta.
+418. Sinal não representa necessidade, urgência, autorização ou intervenção.
+419. Oportunidade de intervenção exige utilidade legítima superior ao custo provável da interrupção.
+420. Silêncio é resultado funcional legítimo e não representa falha.
+421. Agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar possuem significados distintos.
+422. Ação material exige autorização e permanece sob responsabilidade do produto executor.
+423. Pergunta solicita o mínimo necessário e permite recusa ou resposta posterior.
+424. Informação deve distinguir fato, estimativa, hipótese, fonte, validade e limitação.
+425. Sugestão não cria compromisso, prioridade, Objetivo, Próximo Passo ou transação.
+426. Lembrete recupera algo conhecido e não cria novo compromisso.
+427. Alerta exige risco, prazo ou mudança material e não pode operar como promoção.
+428. Confirmação deve preceder compartilhamento sensível, inscrição, contratação, pagamento ou efeito irreversível.
+429. Aguardar e observar são decisões legítimas, distintas de abandono e vigilância.
+430. Intervenção proativa exige controles reforçados de finalidade, relevância, atenção, frequência, sensibilidade e silêncio.
+431. Clique, rolagem, tempo de tela, popularidade, comissão, margem, patrocínio e estoque não são gatilhos funcionais.
+432. Contexto de decisão deve ser mínimo, autorizado e temporalmente adequado.
+433. Atenção não representa consentimento.
+434. Interruptibilidade avalia adequação de interromper, não disponibilidade técnica do canal.
+435. Importância e urgência permanecem dimensões distintas.
+436. Urgência somente pode decorrer de risco, prazo real, perda objetiva, segurança, obrigação ou necessidade declarada.
+437. Escassez promocional, meta comercial e pressão social não fabricam urgência.
+438. Sensibilidade governa conteúdo, título, prévia, canal, autenticação, horário, retenção e compartilhamento.
+439. Fadiga elevada reduz frequência, agrupa, adia, simplifica, suspende ou silencia.
+440. Repetição exige mudança material, prazo real, solicitação, regra autorizada ou falha de entrega.
+441. Intensidade crítica exige fundamento forte e nunca pode ser utilizada para publicidade.
+442. Canal deve considerar finalidade, urgência, sensibilidade, acessibilidade, preferência e ambiente.
+443. Toda intervenção deve explicar por que ocorreu e por que naquele momento.
+444. Autonomia exige adiamento, recusa, ocultação, controle de frequência, escolha de canal, revogação e silêncio.
+445. Intervenções Contextuais decide a manifestação, não Objetivos, Próximos Passos, interesse, transações, progresso ou transformação.
+446. O participante controla categorias, canais, frequência, horários, intensidade, fontes, organizações, localização e silêncio.
+447. Horários protegidos devem ser respeitados, salvo exceção legítima previamente definida.
+448. Adiamento não representa recusa e recusa não produz penalidade ou julgamento.
+449. Conteúdo sensível exige título neutro, canal protegido, ausência de prévia pública e retenção limitada.
+450. Intervenções comerciais devem permanecer identificadas e separadas das funcionais.
+451. Contexto sensível não pode alimentar publicidade ou pressão comercial.
+452. Organizações somente originam comunicações dentro de sua autoridade.
+453. Intervenções coletivas preservam contexto coletivo e confirmação individual.
+454. Informações de terceiros não formam perfis independentes.
+455. Capacidades do Journey fornecem recortes e solicitações sem transferir decisão.
+456. Oportunidades Ativas fornece relevância e janela; Intervenções Contextuais decide quando, como ou se apresentar.
+457. Guivos Intelligence pode detectar, estimar, resumir, justificar e propor silêncio, mas não impor intervenção.
+458. Platform Layer sustenta filas, canais, entrega e observabilidade sem definir urgência humana.
+459. Produtos especializados executam ações autorizadas e não determinam prioridade pessoal.
+460. Guivos Ads opera contratos próprios e permanece separado de alertas, lembretes, perguntas e intervenções sensíveis.
+461. Falha parcial não representa entrega integral.
+462. Métricas futuras avaliarão o sistema, não o valor, mérito, fé, disciplina ou produtividade do participante.
+463. A Capacidade 07 está `In progress`, com progresso editorial de referência de `20%`.
+464. O participante permanece no controle dos fundamentos de Intervenções Contextuais.
 
 ## Documentos do domínio
 
@@ -656,6 +734,7 @@ A próxima frente oficial é a Capacidade 07 — Intervenções Contextuais, que
 - [PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-eventos-funcionais.md)
 - [PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas](pas-001-oportunidades-ativas-integracoes-funcionais.md)
 - [PAS-001-OA-CONTRACT-001 — Contrato Final das Oportunidades Ativas](pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
+- [PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais de Intervenções Contextuais](pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
