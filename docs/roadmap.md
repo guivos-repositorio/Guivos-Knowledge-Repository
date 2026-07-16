@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 9.5.0
+version: 10.0.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -16,11 +16,12 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Marco vigente:** `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida` e `05 — Próximos Passos`.
+- **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas` e `07 — Intervenções Contextuais`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
-- **Capacidade ativa:** `07 — Intervenções Contextuais`, `In progress`, 90%.
+- **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
+- **Próxima capacidade:** `08 — Experiências`, `Planned`, 0%.
 - **Extensões normativas vigentes de Oportunidades Ativas:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
-- **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0` e `PAS-001-IC-INTEGRATION-001 1.0.0`.
+- **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -31,7 +32,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 07 — Intervenções Contextuais`.
+O próximo trabalho deverá consolidar os fundamentos iniciais da `Capacidade 08 — Experiências`, preservada como `Planned` até a aprovação de sua primeira extensão normativa.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -171,7 +172,7 @@ A Capacidade 05 permanece **Functionally complete**, com progresso editorial de 
 
 A Capacidade 06 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
-## Capacidade 07 ativa
+## Capacidade 07 concluída
 
 ### Capacidade 07 — Intervenções Contextuais
 
@@ -273,7 +274,20 @@ A Capacidade 06 está `Functionally complete`, com progresso editorial de refer�
 - proteção de terceiros, coletivos e dispositivos compartilhados;
 - observabilidade, explicabilidade, auditoria e reconstrução.
 
-A Capacidade 07 está `In progress`, com progresso editorial de referência de `90%`.
+`PAS-001-IC-CONTRACT-001 1.0.0` consolida:
+
+- 80 KPIs em 16 famílias;
+- baseline funcional segmentada;
+- painel de saúde e cinco níveis de desempenho;
+- 28 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- singularidade, titularidade, responsabilidades, limites, entradas, admissão e saídas;
+- silêncio funcional, atenção, interruptibilidade, importância, urgência, sensibilidade, fadiga, frequência, canais e autonomia;
+- neutralidade comercial, proteção de terceiros, confiabilidade, explicabilidade e auditoria;
+- critérios formais de reabertura normativa.
+
+A Capacidade 07 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
 ## Progresso das capacidades do Journey
 
@@ -285,7 +299,7 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | 04 — Eventos de Vida | Functionally complete | 100% |
 | 05 — Próximos Passos | Functionally complete | 100% |
 | 06 — Oportunidades Ativas | Functionally complete | 100% |
-| 07 — Intervenções Contextuais | In progress | 90% |
+| 07 — Intervenções Contextuais | Functionally complete | 100% |
 | 08 — Experiências | Planned | 0% |
 | 09 — Evolução Contínua | Planned | 0% |
 
@@ -309,7 +323,7 @@ Os percentuais são referências editoriais de acompanhamento, não medição au
 - gerar o formulário definitivo de aplicação;
 - construir a planilha automática de tratamento, KPIs, IGV, gates e decisão.
 
-Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 07.
+Esses entregáveis podem ser executados como frente operacional independente, sem substituir a prioridade arquitetural da Capacidade 08.
 
 ## Restrições
 
@@ -317,7 +331,7 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 - não promover LPM, CIE, GPMA ou outros candidatos diretamente à Canon;
 - não tratar conceitos candidatos como componentes técnicos obrigatórios;
 - preservar rastreabilidade entre decisões funcionais e arquiteturas vigentes;
-- não reabrir as Capacidades 02, 03, 04, 05 ou 06 sem fundamento formal;
+- não reabrir as Capacidades 02, 03, 04, 05, 06 ou 07 sem fundamento formal;
 - não reduzir Oportunidade Ativa a anúncio, produto, recomendação, Próximo Passo ou compromisso;
 - não tratar disponibilidade como relevância ou elegibilidade;
 - não transformar oportunidade em decisão pessoal;
@@ -347,18 +361,19 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nos **KPIs, guardrails, cenários e contrato final das Intervenções Contextuais**.
+Retomar nos **fundamentos iniciais da Capacidade 08 — Experiências**.
 
 Próxima entrega:
 
-1. famílias de KPIs e indicadores sistêmicos;
-2. guardrails de tolerância zero;
-3. baseline funcional segmentada;
-4. painel de saúde da capacidade;
-5. níveis Crítico, Instável, Adequado, Confiável e Maduro;
-6. cenários funcionalmente ideais;
-7. cenários alternativos;
-8. cenários limite;
-9. critérios de conclusão e lacunas bloqueantes;
-10. lacunas não bloqueantes e critérios de reabertura;
-11. contrato final de singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas, neutralidade, proteção sensível, confiabilidade, explicabilidade e auditoria.
+1. finalidade e pergunta central;
+2. singularidade da experiência vivida;
+3. distinção entre atividade, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida;
+4. titularidade, participantes, papéis e autoridade;
+5. temporalidade, duração, intensidade e recorrência;
+6. sensibilidade, privacidade e informações de terceiros;
+7. relações com Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
+8. estados e transições iniciais;
+9. responsabilidades e limites;
+10. comportamentos proibidos e critérios de aceite iniciais.
+
+A Capacidade 08 permanece `Planned` até a aprovação de sua primeira extensão normativa.
