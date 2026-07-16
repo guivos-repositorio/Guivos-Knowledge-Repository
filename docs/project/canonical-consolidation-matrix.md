@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.8.3
+version: 1.8.4
 owner: Guivos
-last_updated: 2026-07-15
+last_updated: 2026-07-16
 ---
 
 # Matriz de Consolidação Canônica
@@ -239,11 +239,12 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
 | Guivos Mall em Oportunidades Ativas | Refinar | Fornece produtos, serviços, preços e estoque; governa transação e entrega, não relevância humana |
 | Guivos Ads em Oportunidades Ativas | Refinar | Opera publicidade identificada sem acessar contexto sensível ou substituir avaliação funcional |
-| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados e progresso editorial de 80% |
+| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle, eventos e integrações funcionais consolidados e progresso editorial de 90% |
 | Fundamentos Iniciais de Intervenções Contextuais | Manter | PAS-001-IC-FOUNDATION-001 1.0.0 define singularidade, decisões, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia, relações e limites |
 | Ciclo de Vida das Intervenções Contextuais | Manter | PAS-001-IC-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura |
 | Visualização e Controle das Intervenções Contextuais | Manter | PAS-001-IC-VIEW-001 1.0.0 define Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais e consistência entre canais |
 | Eventos Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
+| Integrações Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-INTEGRATION-001 1.0.0 define contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura |
 | Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
 | Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
 | Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
@@ -262,6 +263,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Registro de Intervenção Contextual | Manter | Agregado principal que preserva identidade, estado, decisões, preferências, correções, revogações e falhas |
 | Evento funcional de intervenção | Manter | Fato reconhecido, versionado, imutável e publicado após persistência funcional suficiente |
 | Contrato de evento de intervenção | Manter | Estrutura comum com agregado, versões, participante, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, idempotência e retenção |
+| Integração funcional de intervenção | Refinar | Relação governada entre produtor e consumidor, limitada por finalidade, autoridade, escopo, sensibilidade, temporalidade, permissões e revogação |
+| Contrato de integração de intervenção | Manter | Define produtor, consumidor, participante, destinatário, finalidade, modo, autoridade, dados, proveniência, retenção, relação comercial, sincronização e falha |
+| Sincronização de intervenção | Manter | Processo versionado, idempotente, ordenado e reconciliável que não redefine relevância, urgência ou decisão |
+| Revogação de integração de intervenção | Refinar | Interrompe novos usos e somente se conclui após propagação suficiente aos consumidores aplicáveis |
+| Prevenção de ciclos de intervenção | Manter | Impede que respostas inferidas e alterações derivadas produzam manifestações equivalentes automáticas |
 | Estado funcional da intervenção | Refinar | Identificada, Candidata, Em avaliação, Admitida, Programada, Aguardando, Pronta, Em entrega, Entregue, Respondida, Adiada, Silenciada, Cancelada, Expirada, Contestada, Corrigida, Falha ou Encerrada |
 | Estado de entrega da intervenção | Manter | Dimensão própria que não representa leitura, compreensão, concordância, interesse ou consentimento |
 | Relação do participante com intervenção | Manter | Apresentação, visualização, resposta, aceitação, recusa, adiamento, ocultação, bloqueio e contestação permanecem estados individuais distintos |
@@ -283,8 +289,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-IC-LIFECYCLE-001 1.0.0` consolida o ciclo de vida da Capacidade 07, mantém seu estado `In progress`, eleva o progresso editorial para 40% e governa dimensões independentes, estados, transições, identificação, candidatura, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência, ordenação, concorrência e falha segura, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-IC-INTEGRATION-001 1.0.0` consolida as integrações funcionais da Capacidade 07, mantém seu estado `In progress`, eleva o progresso editorial para 90% e governa titularidade, finalidade, autoridade, minimização, proveniência, temporalidades, consentimento, sincronização, divergência, revogação, propagação, prevenção de ciclos, capacidades, produtos, organizações, profissionais, canais, sistemas externos, observabilidade, explicabilidade, auditoria e falha segura, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **comportamentos funcionais da visualização e do controle da Capacidade 07 — Intervenções Contextuais**, incluindo central de intervenções, fila de atenção, mensagens, perguntas, lembretes, alertas, justificativas, histórico, adiamento, silêncio, frequência, horários protegidos, canais, preferências, acessibilidade, privacidade, relações comerciais e consistência entre superfícies.
+Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão, lacunas bloqueantes e não bloqueantes, critérios de reabertura e contrato final da Capacidade 07 — Intervenções Contextuais**.
