@@ -3552,6 +3552,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../../product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../product-architecture/journey/" class="md-nav__link">
         
   
@@ -7169,7 +7204,7 @@
 <tr>
 <td>Intervenções Contextuais</td>
 <td>Refinar</td>
-<td>Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados e progresso editorial de 80%</td>
+<td>Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle, eventos e integrações funcionais consolidados e progresso editorial de 90%</td>
 </tr>
 <tr>
 <td>Fundamentos Iniciais de Intervenções Contextuais</td>
@@ -7190,6 +7225,11 @@
 <td>Eventos Funcionais das Intervenções Contextuais</td>
 <td>Manter</td>
 <td>PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria</td>
+</tr>
+<tr>
+<td>Integrações Funcionais das Intervenções Contextuais</td>
+<td>Manter</td>
+<td>PAS-001-IC-INTEGRATION-001 1.0.0 define contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura</td>
 </tr>
 <tr>
 <td>Intervenção Contextual</td>
@@ -7282,6 +7322,31 @@
 <td>Estrutura comum com agregado, versões, participante, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, idempotência e retenção</td>
 </tr>
 <tr>
+<td>Integração funcional de intervenção</td>
+<td>Refinar</td>
+<td>Relação governada entre produtor e consumidor, limitada por finalidade, autoridade, escopo, sensibilidade, temporalidade, permissões e revogação</td>
+</tr>
+<tr>
+<td>Contrato de integração de intervenção</td>
+<td>Manter</td>
+<td>Define produtor, consumidor, participante, destinatário, finalidade, modo, autoridade, dados, proveniência, retenção, relação comercial, sincronização e falha</td>
+</tr>
+<tr>
+<td>Sincronização de intervenção</td>
+<td>Manter</td>
+<td>Processo versionado, idempotente, ordenado e reconciliável que não redefine relevância, urgência ou decisão</td>
+</tr>
+<tr>
+<td>Revogação de integração de intervenção</td>
+<td>Refinar</td>
+<td>Interrompe novos usos e somente se conclui após propagação suficiente aos consumidores aplicáveis</td>
+</tr>
+<tr>
+<td>Prevenção de ciclos de intervenção</td>
+<td>Manter</td>
+<td>Impede que respostas inferidas e alterações derivadas produzam manifestações equivalentes automáticas</td>
+</tr>
+<tr>
 <td>Estado funcional da intervenção</td>
 <td>Refinar</td>
 <td>Identificada, Candidata, Em avaliação, Admitida, Programada, Aguardando, Pronta, Em entrega, Entregue, Respondida, Adiada, Silenciada, Cancelada, Expirada, Contestada, Corrigida, Falha ou Encerrada</td>
@@ -7361,9 +7426,9 @@
 </tbody>
 </table>
 <h2 id="reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. <code>PAS-001-IC-LIFECYCLE-001 1.0.0</code> consolida o ciclo de vida da Capacidade 07, mantém seu estado <code>In progress</code>, eleva o progresso editorial para 40% e governa dimensões independentes, estados, transições, identificação, candidatura, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência, ordenação, concorrência e falha segura, sem promover candidatos arquiteturais à Canon.</p>
+<p>As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. <code>PAS-001-IC-INTEGRATION-001 1.0.0</code> consolida as integrações funcionais da Capacidade 07, mantém seu estado <code>In progress</code>, eleva o progresso editorial para 90% e governa titularidade, finalidade, autoridade, minimização, proveniência, temporalidades, consentimento, sincronização, divergência, revogação, propagação, prevenção de ciclos, capacidades, produtos, organizações, profissionais, canais, sistemas externos, observabilidade, explicabilidade, auditoria e falha segura, sem promover candidatos arquiteturais à Canon.</p>
 <h2 id="proxima-revisao">Próxima revisão<a class="headerlink" href="#proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Consolidar os <strong>comportamentos funcionais da visualização e do controle da Capacidade 07 — Intervenções Contextuais</strong>, incluindo central de intervenções, fila de atenção, mensagens, perguntas, lembretes, alertas, justificativas, histórico, adiamento, silêncio, frequência, horários protegidos, canais, preferências, acessibilidade, privacidade, relações comerciais e consistência entre superfícies.</p>
+<p>Consolidar os <strong>KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão, lacunas bloqueantes e não bloqueantes, critérios de reabertura e contrato final da Capacidade 07 — Intervenções Contextuais</strong>.</p>
 
 
 
