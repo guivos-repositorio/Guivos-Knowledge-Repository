@@ -2,6 +2,41 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.37.0 — Contextual Interventions Final Contract
+
+- Criação de `PAS-001-IC-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa e contrato final da Capacidade 07 do `PAS-001 — Guivos Journey`.
+- Consolidação de 80 KPIs organizados em 16 famílias.
+- Definição dos princípios, unidades, segmentações e janelas de medição.
+- Consolidação da baseline funcional anterior a metas permanentes.
+- Definição do painel de saúde com 17 visões e dos níveis Crítico, Instável, Adequado, Confiável e Maduro.
+- Registro de 28 guardrails de tolerância zero e de seu tratamento obrigatório.
+- Consolidação dos cenários funcionalmente ideais de silêncio, pergunta mínima, lembrete, alerta, ação autorizada, intervenção sensível, apresentação de oportunidade, Evento de Vida, recorrência, comunicação coletiva, consistência entre canais, contestação e execução externa.
+- Consolidação dos cenários alternativos de contexto incompleto, identidade incerta, canal indisponível, fontes conflitantes, fadiga elevada, integração indisponível, entrega parcial, resposta ambígua e ausência de resposta.
+- Consolidação dos cenários limite de risco crítico, dispositivo compartilhado, obrigação institucional, sistema externo indisponível, contestação após entrega, revogação em processamento, múltiplas urgências, dependência de terceiro e evento fora de ordem.
+- Registro de 40 critérios de conclusão funcional.
+- Definição de lacunas não bloqueantes pertencentes a design, engenharia, segurança, dados, operação e validação.
+- Declaração de inexistência de lacuna funcional bloqueante conhecida na baseline normativa.
+- Consolidação da finalidade e singularidade da Capacidade 07.
+- Consolidação de titularidade, responsabilidades, limites, entradas, admissão, saídas, estados e dimensões.
+- Definição do comportamento menos intrusivo suficiente como regra de seleção.
+- Consolidação do silêncio como resultado funcional legítimo.
+- Separação entre atenção, interruptibilidade, importância, urgência e temporalidade.
+- Consolidação de sensibilidade, privacidade, fadiga, frequência, canais, autonomia e controles.
+- Definição dos papéis e limites de Guivos Intelligence, Platform Layer, produtos, organizações e profissionais.
+- Consolidação da neutralidade comercial e da proteção de terceiros.
+- Definição de confiabilidade, explicabilidade, auditoria, contestação, correção, revogação e critérios de reabertura.
+- Registro de 45 regras fundamentais finais.
+- Atualização da Arquitetura de Produtos para `1.9.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.0.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.9.0`.
+- Atualização do README e da página inicial do GKR.
+- Substituição do estado da Capacidade 07 de `In progress` por `Functionally complete`.
+- Elevação do progresso editorial de referência de 90% para 100%.
+- Preservação das Capacidades 02, 03, 04, 05 e 06 como `Functionally complete`.
+- Preservação da Capacidade 08 — Experiências como `Planned`.
+- Definição dos fundamentos iniciais de Experiências como próximo ponto exato de retomada.
+
 ## 0.36.4 — Contextual Interventions Functional Integrations
 
 - Criação de `PAS-001-IC-INTEGRATION-001 — Integrações Funcionais da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
