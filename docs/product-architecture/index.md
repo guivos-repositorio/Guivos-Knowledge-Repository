@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.8.1
+version: 1.8.2
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -223,9 +223,11 @@ A Capacidade 06 está **Functionally complete**, com progresso editorial de refe
 
 ### Capacidade 07 — Intervenções Contextuais
 
-A extensão normativa vigente é:
+As extensões normativas vigentes são:
 
 - `PAS-001-IC-FOUNDATION-001 1.0.0` — finalidade, pergunta central, singularidade, decisões possíveis, oportunidade de intervenção, silêncio, atenção, interruptibilidade, urgência, sensibilidade, fadiga, canais, autonomia, controles, relações, estados e eventos iniciais.
+- `PAS-001-IC-LIFECYCLE-001 1.0.0` — dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura.
+- `PAS-001-IC-VIEW-001 1.0.0` — Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais, consistência entre canais e falha segura.
 
 Os fundamentos iniciais consolidam:
 
@@ -268,9 +270,28 @@ O ciclo de vida consolida:
 - horários protegidos, mudanças materiais, intervenções sensíveis, compartilhamento, revogação e propagação;
 - retroatividade, idempotência, ordenação, concorrência, falha segura e reconstrução.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de `40%`.
+A visualização e o controle consolidam:
 
-O próximo bloco deverá consolidar os comportamentos funcionais da visualização e do controle das Intervenções Contextuais.
+- `Central de Intervenções` como superfície principal de compreensão, decisão e controle;
+- `Fila de Atenção` como recorte temporal do que pode exigir atenção atual ou próxima;
+- ausência legítima sem preenchimento por anúncios, recomendações artificiais ou mensagens de engajamento;
+- agrupamentos e ordenação por risco, prazo, confirmação, reversibilidade, impacto e sensibilidade, sem influência comercial;
+- cartões minimizados, títulos funcionais e títulos neutros;
+- estados e dimensões independentes de informação, autorização, temporalidade, entrega, resposta, atenção, fadiga, sensibilidade e operação externa;
+- perguntas, informações, sugestões, lembretes, alertas, confirmações, ações, espera, observação e silêncio com contratos visuais próprios;
+- detalhamento progressivo e explicações `Por que estou vendo isto?` e `Por que agora?`;
+- fonte, autoridade, incerteza, validade, importância, urgência e relações comerciais visíveis;
+- histórico imutável, correções compensatórias, busca, filtros e controles principais;
+- resposta, adiamento, silêncio, recusa, ocultação, bloqueio, contestação, correção e revogação;
+- preferências de frequência, horários protegidos, canais, categorias, intensidade, resumos e fadiga;
+- notificações, e-mail, canais conversacionais, calendário e superfícies de produtos com consistência de estado;
+- acessibilidade técnica e cognitiva, linguagem proporcional, ambiente, dispositivo e privacidade visual;
+- proteção de terceiros e de intervenções de saúde, finanças, jurídico, religião, voluntariado, institucionais, coletivas e comerciais;
+- falha segura, sincronização pendente, conflitos, operação sem conexão e auditoria compreensível.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de `60%`.
+
+O próximo bloco deverá consolidar os contratos dos eventos funcionais das Intervenções Contextuais.
 
 ## Regras arquiteturais
 
@@ -688,7 +709,7 @@ O próximo bloco deverá consolidar os comportamentos funcionais da visualizaç�
 412. Métricas avaliam o sistema, não o participante.
 413. Nenhuma média positiva compensa violação de guardrail.
 414. A Capacidade 06 está funcionalmente concluída por seis extensões normativas.
-415. A Capacidade 07 permanece planejada até sua primeira extensão normativa.
+415. A Capacidade 07 foi iniciada normativamente por sua primeira extensão.
 416. O participante permanece no controle do contrato final de Oportunidades Ativas.
 417. Intervenções Contextuais governa se, quando, como e com qual intensidade a Guivos se manifesta.
 418. Sinal não representa necessidade, urgência, autorização ou intervenção.
@@ -736,7 +757,7 @@ O próximo bloco deverá consolidar os comportamentos funcionais da visualizaç�
 460. Guivos Ads opera contratos próprios e permanece separado de alertas, lembretes, perguntas e intervenções sensíveis.
 461. Falha parcial não representa entrega integral.
 462. Métricas futuras avaliarão o sistema, não o valor, mérito, fé, disciplina ou produtividade do participante.
-463. A Capacidade 07 está `In progress`, com progresso editorial de referência de `20%`.
+463. Os fundamentos de Intervenções Contextuais estão consolidados por `PAS-001-IC-FOUNDATION-001 1.0.0`.
 464. O participante permanece no controle dos fundamentos de Intervenções Contextuais.
 465. Estado funcional, informação, autorização, temporalidade, entrega, relação, atenção, fadiga, sensibilidade e operação externa permanecem dimensões independentes.
 466. Sinal não representa necessidade confirmada.
@@ -782,8 +803,53 @@ O próximo bloco deverá consolidar os comportamentos funcionais da visualizaç�
 506. Agrupamento não oculta urgências, sensibilidades ou relações comerciais distintas.
 507. Métricas futuras avaliam o sistema, não o participante.
 508. O ciclo apoia decisões reais e não maximiza notificações ou tempo de tela.
-509. A Capacidade 07 está `In progress`, com progresso editorial de referência de `40%`.
+509. O ciclo de vida das Intervenções Contextuais está consolidado por `PAS-001-IC-LIFECYCLE-001 1.0.0`.
 510. O participante permanece no controle do ciclo de vida das Intervenções Contextuais.
+511. Central de Intervenções não é caixa de entrada infinita.
+512. Fila de Atenção não representa todas as intervenções existentes.
+513. Nem toda intervenção requer atenção imediata.
+514. Ausência de intervenção é estado legítimo.
+515. Contagem não representa qualidade, produtividade ou evolução.
+516. Ordenação funcional não utiliza receita, patrocínio ou clique.
+517. Cartões utilizam minimização e detalhamento progressivo.
+518. Conteúdo sensível exige título neutro.
+519. Estado funcional, informação, autorização, temporalidade, entrega e resposta permanecem distintos.
+520. Pergunta não representa obrigação.
+521. Sugestão não cria compromisso.
+522. Lembrete não cria compromisso novo.
+523. Alerta exige fundamento material.
+524. Confirmação precede efeitos relevantes.
+525. Entrega não representa visualização.
+526. Visualização não representa compreensão.
+527. Compreensão não representa concordância.
+528. Atenção não representa consentimento.
+529. Ausência de resposta não representa recusa.
+530. Adiamento não representa rejeição.
+531. Silêncio não representa falha.
+532. Recusa não gera penalidade.
+533. Importância não representa urgência.
+534. Prazo promocional não representa prazo funcional.
+535. Escassez comercial não fabrica urgência.
+536. Relações comerciais permanecem visíveis.
+537. Guivos Ads permanece separado de intervenções funcionais.
+538. O participante controla frequência, canais, horários, categorias e intensidade.
+539. Horários protegidos prevalecem sobre intervenções não críticas.
+540. Fadiga reduz frequência e intensidade.
+541. Fadiga não autoriza pressão adicional.
+542. Intervenções sensíveis não expõem conteúdo em prévias públicas.
+543. Terceiros não formam perfis paralelos.
+544. Intervenções coletivas preservam decisões individuais.
+545. Processos externos permanecem sob autoridade do executor.
+546. Conflitos não são ocultados.
+547. Correções preservam histórico.
+548. Revogação permanece visível até propagação suficiente.
+549. Falha parcial não representa sucesso integral.
+550. Sincronização pendente não representa estado definitivo.
+551. Acessibilidade técnica e cognitiva são obrigatórias.
+552. Métricas avaliam a capacidade.
+553. A interface não maximiza notificações ou tempo de tela.
+554. O silêncio deve ser tão acessível quanto a resposta.
+555. A Capacidade 07 está `In progress`, com progresso editorial de referência de `60%`, e o participante permanece no controle da visualização e do controle.
 
 ## Documentos do domínio
 
@@ -801,6 +867,7 @@ O próximo bloco deverá consolidar os comportamentos funcionais da visualizaç�
 - [PAS-001-OA-CONTRACT-001 — Contrato Final das Oportunidades Ativas](pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
 - [PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais de Intervenções Contextuais](pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais](pas-001-intervencoes-contextuais-ciclo-de-vida.md)
+- [PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais](pas-001-intervencoes-contextuais-visualizacao-controle.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
