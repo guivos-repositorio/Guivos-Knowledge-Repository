@@ -2,6 +2,48 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.36.3 — Contextual Interventions Functional Event Contracts
+
+- Criação de `PAS-001-IC-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 07 do `PAS-001 — Guivos Journey`.
+- Distinção normativa entre comando, proposta e evento funcional reconhecido.
+- Exigência de persistência funcional suficiente antes da publicação de eventos materiais.
+- Definição do agregado `Registro de Intervenção Contextual`.
+- Formalização da estrutura comum versionada dos eventos, incluindo agregado, versões, participante, ator, papel, autoridade, fonte, finalidade, comportamento, canal, sensibilidade, correlação, causalidade, idempotência, temporalidades, proveniência, relação comercial, permissões, payload, consumidores e retenção.
+- Consolidação da identidade permanente do agregado e dos critérios para novo ciclo ou novo agregado.
+- Separação entre participante, ator, destinatário, terceiro, organização e executor externo.
+- Limitação da autoridade de declaração, solicitação, confirmação, avaliação, execução, correção e revogação.
+- Proibição de finalidades genéricas de engajamento, conversão, receita, personalização ou retenção para uso de contexto pessoal ou sensível.
+- Definição das temporalidades de fato, solicitação, observação, conhecimento, avaliação, reconhecimento, persistência, publicação, aplicação, entrega, resposta, propagação e correção.
+- Separação entre correlação e causalidade funcional.
+- Consolidação de proveniência, sensibilidade, minimização de payload e declaração de relações comerciais.
+- Definição de 19 famílias de eventos funcionais.
+- Consolidação dos eventos de identificação, candidatura, finalidade, autoridade e avaliação contextual.
+- Definição dos eventos de atenção, interruptibilidade, urgência, sensibilidade, fadiga e frequência.
+- Consolidação dos eventos de admissão, rejeição, encaminhamento humano e silêncio após avaliação.
+- Definição dos eventos de seleção de comportamento entre agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar.
+- Consolidação dos eventos de programação, prontidão, apresentação e entrega.
+- Separação entre confirmação técnica de entrega, visualização, compreensão, concordância, interesse, resposta, consentimento e ação externa.
+- Definição dos eventos de resposta, ambiguidade, ausência de resposta, adiamento, silêncio, recusa, ocultação e bloqueio.
+- Consolidação dos eventos de preferências, horários protegidos, modo discreto e resumos.
+- Definição dos eventos comerciais e tratamento de relações comerciais ocultas.
+- Consolidação dos eventos de execução externa sob autoridade do produto ou sistema executor.
+- Definição dos eventos de contestação, limitação de efeitos e correção compensatória.
+- Consolidação dos eventos de cancelamento, expiração, encerramento, reabertura e novo ciclo.
+- Definição da revogação e de sua conclusão somente após propagação suficiente.
+- Consolidação dos eventos de integração, sincronização, reconciliação e conflitos.
+- Formalização de idempotência, duplicidade semântica, ordenação, concorrência e atomicidade funcional.
+- Definição dos eventos de falha, recuperação, falha segura e falha parcial.
+- Consolidação de reconstrução, retenção proporcional, logs minimizados, responsabilidades de produtores e consumidores, compatibilidade, explicabilidade e auditoria.
+- Registro de métricas sistêmicas, 25 comportamentos proibidos e 45 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.8.3` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `9.4.0`, do Knowledge Board para `9.4.0` e da Matriz de Consolidação Canônica para `1.8.3`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 07 no estado `In progress` e elevação do progresso editorial de referência de 60% para 80%.
+- Preservação das Capacidades 02, 03, 04, 05 e 06 como `Functionally complete`.
+- Preservação da Capacidade 08 — Experiências como `Planned`.
+- Definição das integrações funcionais das Intervenções Contextuais como próximo ponto exato de retomada.
+
 ## 0.36.2 — Contextual Interventions Visualization and Control
 
 - Criação de `PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais`, versão `1.0.0`.
