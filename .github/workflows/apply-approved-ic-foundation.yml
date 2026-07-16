@@ -1,0 +1,30 @@
+name: Apply approved IC foundation
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.head_ref == 'ic-foundation-20260715'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout approved branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply approved update
+        run: python .github/scripts/apply_ic_foundation.py
