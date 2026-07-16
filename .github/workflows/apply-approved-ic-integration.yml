@@ -1,0 +1,29 @@
+name: Apply approved IC integration
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/trigger-ic-integration
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout approved branch
+        uses: actions/checkout@v4
+        with:
+          ref: ic-integration-run-20260716
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply approved integration update
+        run: python .github/scripts/apply_ic_integration.py
