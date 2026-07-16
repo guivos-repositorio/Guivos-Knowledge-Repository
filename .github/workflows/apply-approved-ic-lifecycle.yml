@@ -1,0 +1,28 @@
+name: Apply approved IC lifecycle
+
+on:
+  push:
+    branches:
+      - ic-lifecycle-20260716
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ic-lifecycle-20260716
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply approved lifecycle update
+        run: python .github/scripts/apply_ic_lifecycle.py
