@@ -2,6 +2,41 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.36.1 — Contextual Interventions Lifecycle Rules
+
+- Criação de `PAS-001-IC-LIFECYCLE-001 — Regras do Ciclo de Vida das Intervenções Contextuais`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 07 do `PAS-001 — Guivos Journey`.
+- Definição da finalidade do ciclo desde identificação até encerramento, correção ou nova manifestação.
+- Consolidação das dimensões independentes de estado funcional, informação, autorização, temporalidade, entrega, relação do participante, atenção, fadiga, sensibilidade e operação externa.
+- Definição dos estados funcionais de Identificada, Candidata, Em avaliação, Admitida, Programada, Aguardando, Pronta, Em entrega, Entregue, Respondida, Adiada, Silenciada, Cancelada, Expirada, Contestada, Corrigida, Falha e Encerrada.
+- Definição dos estados da informação, entrega, relação do participante, temporalidade, fadiga, sensibilidade e autorização.
+- Consolidação das transições fundamentais e das transições funcionalmente proibidas.
+- Definição da identificação por solicitação, sinal, mudança contextual, prazo, risco e sistema externo.
+- Consolidação da deduplicação inicial, candidatura e rejeição preliminar.
+- Definição das avaliações de finalidade, autoridade, relevância, temporalidade, atenção, interruptibilidade, urgência, importância, sensibilidade, fadiga, frequência, canal, reversibilidade, risco, alternativas e custo de interrupção.
+- Definição dos tratamentos para informação insuficiente e solicitação proporcional de informação.
+- Consolidação da admissão simples e condicionada, rejeição após avaliação e seleção de comportamento principal.
+- Definição dos contratos de agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar.
+- Consolidação de programação, reprogramação, janela de entrega, prontidão, bloqueio, espera e retomada.
+- Definição da entrega, entrega parcial, confirmação técnica, falha de entrega, apresentação e relação com execução externa.
+- Consolidação das respostas, ausência de resposta, adiamento, recusa, ocultação e bloqueio.
+- Definição do silêncio pós-avaliação, solicitado, por fadiga e por sensibilidade.
+- Consolidação de cancelamento, expiração, encerramento, contestação, correção, reabertura e criação de nova intervenção diante de mudança material.
+- Definição de escalonamento, desescalonamento e encaminhamento humano.
+- Consolidação de repetição, recorrência, agrupamento, supressão de duplicidade e controles de frequência global, por categoria e por canal.
+- Definição dos horários protegidos e da reavaliação por mudança material.
+- Proteção de intervenções de saúde, finanças, jurídico, religião, espiritualidade, social, voluntariado, institucionais, comerciais, coletivas e relacionadas a terceiros.
+- Definição do compartilhamento, revogação e propagação suficiente.
+- Consolidação de retroatividade, idempotência, ordenação, concorrência, estados impossíveis, falha segura, falha parcial e reconstrução.
+- Registro dos eventos funcionais do ciclo, responsabilidades, limites, critérios de aceite e 45 regras fundamentais.
+- Atualização da Arquitetura de Produtos para `1.8.1` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap para `9.2.0`, do Knowledge Board para `9.2.0` e da Matriz de Consolidação Canônica para `1.8.1`.
+- Atualização do README e da página inicial do GKR.
+- Manutenção da Capacidade 07 no estado `In progress` e elevação do progresso editorial de referência de 20% para 40%.
+- Preservação das Capacidades 02, 03, 04, 05 e 06 como `Functionally complete`.
+- Preservação da Capacidade 08 — Experiências como `Planned`.
+- Definição da visualização e do controle das Intervenções Contextuais como próximo ponto exato de retomada.
+
 ## 0.36.0 — Contextual Interventions Capability Foundation
 
 - Criação de `PAS-001-IC-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
