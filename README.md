@@ -10,10 +10,10 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos e 06 — Oportunidades Ativas
-- **Capacidade ativa:** 07 — Intervenções Contextuais, `In progress`, 90%
+- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais
+- **Próxima capacidade:** 08 — Experiências, `Planned`, 0%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001 e PAS-001-IC-INTEGRATION-001, todas em 1.0.0
+- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -244,29 +244,46 @@ A Capacidade 06 está **Functionally complete**, com progresso editorial de refe
 - proteção de terceiros, coletivos, dispositivos compartilhados e integrações temporárias;
 - observabilidade, explicabilidade, auditoria e reconstrução.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de **90%**.
+`PAS-001-IC-CONTRACT-001 1.0.0` consolida:
+
+- 80 KPIs em 16 famílias de indicadores sistêmicos;
+- baseline funcional segmentada antes de metas permanentes;
+- painel de saúde com 17 visões e cinco níveis de desempenho;
+- 28 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- contrato final de singularidade, titularidade, responsabilidades, limites, entradas, admissão e saídas;
+- silêncio como resultado funcional legítimo;
+- atenção e interruptibilidade como dimensões distintas de consentimento;
+- importância, urgência e temporalidade separadas;
+- sensibilidade, privacidade, fadiga, frequência, canais e autonomia;
+- neutralidade comercial, proteção de terceiros e separação de Guivos Ads;
+- confiabilidade, correção, revogação, explicabilidade, auditoria e critérios de reabertura.
+
+A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de **100%**.
 
 ## Ponto exato de retomada
 
-Retomar no contrato final da Capacidade 07 — Intervenções Contextuais.
+Retomar nos fundamentos iniciais da Capacidade 08 — Experiências.
 
 Próxima entrega:
 
-- KPIs e famílias de indicadores;
-- guardrails de tolerância zero;
-- baseline funcional e painel de saúde;
-- níveis Crítico, Instável, Adequado, Confiável e Maduro;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão e reabertura;
-- lacunas bloqueantes e não bloqueantes;
-- singularidade, titularidade, responsabilidades, limites, entradas, admissão e saídas;
-- neutralidade comercial, proteção sensível, confiabilidade, explicabilidade e auditoria.
+- finalidade e pergunta central da capacidade;
+- singularidade da experiência vivida;
+- distinção entre atividade, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida;
+- titularidade, participantes, papéis e autoridade;
+- temporalidade, duração, intensidade e recorrência;
+- sensibilidade, privacidade e informações de terceiros;
+- relações com Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
+- estados, transições, responsabilidades, limites e comportamentos proibidos iniciais.
+
+A Capacidade 08 permanece `Planned` até a aprovação de sua primeira extensão normativa.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervenções Contextuais está `In progress`, com progresso editorial de referência de `90%`.
+As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências permanece `Planned`.
 
 ## Capacidades do Journey
 
@@ -278,7 +295,7 @@ A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervençõe
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
-| 07 — Intervenções Contextuais | In progress — 90% |
+| 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
@@ -301,6 +318,7 @@ A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervençõe
 - [Visualização e Controle das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-visualizacao-controle.md)
 - [Eventos Funcionais das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [Integrações Funcionais das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais.md)
+- [Contrato Final das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
