@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.8.2
+version: 1.8.3
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -239,10 +239,11 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
 | Guivos Mall em Oportunidades Ativas | Refinar | Fornece produtos, serviços, preços e estoque; governa transação e entrega, não relevância humana |
 | Guivos Ads em Oportunidades Ativas | Refinar | Opera publicidade identificada sem acessar contexto sensível ou substituir avaliação funcional |
-| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização e controle consolidados e progresso editorial de 60% |
+| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados e progresso editorial de 80% |
 | Fundamentos Iniciais de Intervenções Contextuais | Manter | PAS-001-IC-FOUNDATION-001 1.0.0 define singularidade, decisões, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia, relações e limites |
 | Ciclo de Vida das Intervenções Contextuais | Manter | PAS-001-IC-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, avaliação, admissão, programação, entrega, resposta, silêncio, frequência, revogação, idempotência e falha segura |
 | Visualização e Controle das Intervenções Contextuais | Manter | PAS-001-IC-VIEW-001 1.0.0 define Central de Intervenções, Fila de Atenção, cartões, justificativas, histórico, controles, preferências, acessibilidade, privacidade, relações comerciais e consistência entre canais |
+| Eventos Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
 | Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
 | Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
@@ -258,6 +259,9 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Fila de Atenção de Intervenções | Manter | Recorte temporário do que pode justificar atenção atual ou próxima, distinto do conjunto total de intervenções |
 | Privacidade visual de intervenção | Manter | Títulos neutros, modo discreto, prévias protegidas, autenticação proporcional e histórico restrito |
 | Controle de intervenção | Manter | Responder, adiar, silenciar, recusar, ocultar, bloquear, contestar, corrigir e revogar permanecem ações distintas |
+| Registro de Intervenção Contextual | Manter | Agregado principal que preserva identidade, estado, decisões, preferências, correções, revogações e falhas |
+| Evento funcional de intervenção | Manter | Fato reconhecido, versionado, imutável e publicado após persistência funcional suficiente |
+| Contrato de evento de intervenção | Manter | Estrutura comum com agregado, versões, participante, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, idempotência e retenção |
 | Estado funcional da intervenção | Refinar | Identificada, Candidata, Em avaliação, Admitida, Programada, Aguardando, Pronta, Em entrega, Entregue, Respondida, Adiada, Silenciada, Cancelada, Expirada, Contestada, Corrigida, Falha ou Encerrada |
 | Estado de entrega da intervenção | Manter | Dimensão própria que não representa leitura, compreensão, concordância, interesse ou consentimento |
 | Relação do participante com intervenção | Manter | Apresentação, visualização, resposta, aceitação, recusa, adiamento, ocultação, bloqueio e contestação permanecem estados individuais distintos |
