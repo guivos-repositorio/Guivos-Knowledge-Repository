@@ -11,9 +11,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos e 06 — Oportunidades Ativas
-- **Capacidade ativa:** 07 — Intervenções Contextuais, `In progress`, 60%
+- **Capacidade ativa:** 07 — Intervenções Contextuais, `In progress`, 80%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001 e PAS-001-IC-VIEW-001, todas em 1.0.0
+- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001 e PAS-001-IC-EVENT-001, todas em 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -202,30 +202,53 @@ A Capacidade 06 está **Functionally complete**, com progresso editorial de refe
 - proteção de saúde, finanças, jurídico, religião, voluntariado, coletivos e terceiros;
 - falha segura, sincronização pendente, conflitos e auditoria compreensível.
 
-A Capacidade 07 está **In progress**, com progresso editorial de referência de **60%**.
+`PAS-001-IC-EVENT-001 1.0.0` consolida:
+
+- distinção entre comando, proposta e evento funcional reconhecido;
+- persistência funcional suficiente antes da publicação de eventos materiais;
+- agregado `Registro de Intervenção Contextual` e estrutura comum versionada;
+- identidade, participante, ator, destinatário, papel, autoridade, fonte, finalidade e proveniência;
+- temporalidades de fato, solicitação, observação, conhecimento, avaliação, reconhecimento, persistência, publicação, aplicação, entrega, resposta, propagação e correção;
+- correlação e causalidade funcional sem fabricação de relação causal;
+- classificação de sensibilidade, minimização de payload e retenção proporcional;
+- declaração obrigatória de publicidade, patrocínio, comissão, afiliação e demais relações comerciais;
+- 19 famílias de eventos funcionais de identificação, avaliação, admissão, comportamento, programação, entrega, resposta, preferências, execução externa, correção, revogação, integração e falhas;
+- deduplicação semântica e versão esperada do agregado;
+- avaliação de atenção, interruptibilidade, urgência, fadiga e frequência sem inferência de consentimento;
+- admissão separada de apresentação, entrega, visualização, resposta e transação;
+- comportamento principal explícito entre agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar e silenciar;
+- programação, prontidão e revalidação anterior à entrega;
+- apresentação, entrega técnica, visualização, resposta e ausência de resposta como fatos distintos;
+- adiamento, silêncio, recusa, ocultação, bloqueio e preferências com contratos próprios;
+- execução externa sob autoridade do produto ou sistema executor;
+- contestação, correção compensatória, cancelamento, expiração, encerramento e reabertura;
+- revogação concluída somente após propagação suficiente;
+- idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.
+
+A Capacidade 07 está **In progress**, com progresso editorial de referência de **80%**.
 
 ## Ponto exato de retomada
 
-Retomar nos contratos dos eventos funcionais da Capacidade 07 — Intervenções Contextuais.
+Retomar nas integrações funcionais da Capacidade 07 — Intervenções Contextuais.
 
 Próxima entrega:
 
-- estrutura comum e agregado funcional;
-- autoridade, finalidade, proveniência e sensibilidade;
-- temporalidades, correlação e causalidade funcional;
-- eventos de identificação, avaliação e admissão;
-- seleção de comportamento, programação e prontidão;
-- apresentação, entrega e resposta;
-- adiamento, silêncio, recusa e bloqueio;
-- contestação, correção e revogação;
-- propagação, idempotência, ordenação e concorrência;
-- reconstrução, auditoria e falha segura.
+- contrato funcional comum de integração;
+- finalidade, minimização, identidade e autoridade;
+- integrações com Captura de Contexto e Contexto Vivo;
+- integrações com Objetivos, Eventos de Vida, Próximos Passos e Oportunidades Ativas;
+- relações com Experiências e Evolução Contínua;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com produtos especializados, organizações e profissionais;
+- canais, calendários, localização, fontes públicas e sistemas externos;
+- sincronização, revogação, propagação e prevenção de ciclos;
+- neutralidade comercial, observabilidade, auditoria e falha segura.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervenções Contextuais está `In progress`, com progresso editorial de referência de `60%`.
+A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervenções Contextuais está `In progress`, com progresso editorial de referência de `80%`.
 
 ## Capacidades do Journey
 
@@ -237,7 +260,7 @@ A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervençõe
 | 04 — Eventos de Vida | Functionally complete |
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
-| 07 — Intervenções Contextuais | In progress — 60% |
+| 07 — Intervenções Contextuais | In progress — 80% |
 | 08 — Experiências | Planned |
 | 09 — Evolução Contínua | Planned |
 
@@ -258,6 +281,7 @@ A Capacidade 06 está `Functionally complete`; a Capacidade 07 — Intervençõe
 - [Fundamentos Iniciais de Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
 - [Ciclo de Vida das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-ciclo-de-vida.md)
 - [Visualização e Controle das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-visualizacao-controle.md)
+- [Eventos Funcionais das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
