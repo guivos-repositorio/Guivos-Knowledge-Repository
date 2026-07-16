@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.6.4
+version: 1.7.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -194,12 +194,13 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida | Manter | PAS-001-EV-CONTRACT-001 1.0.0 define 60 KPIs, 13 famílias, 18 guardrails, baseline, cenários e contrato final |
 | Próximos Passos | Manter | Capacidade 05 funcionalmente concluída por seis extensões normativas e progresso editorial de 100% |
 | KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos | Manter | PAS-001-PP-CONTRACT-001 1.0.0 define 68 KPIs, 14 famílias, 20 guardrails, baseline, painel de saúde, cenários, critérios de conclusão e contrato final |
-| Oportunidades Ativas | Refinar | Capacidade 06 em desenvolvimento, com fundamentos, ciclo de vida, visualização, eventos funcionais e integrações consolidados e progresso editorial de 90% |
+| Oportunidades Ativas | Manter | Capacidade 06 funcionalmente concluída por seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e progresso editorial de 100% |
 | Fundamentos Iniciais da Capacidade de Oportunidades Ativas | Manter | PAS-001-OA-FOUNDATION-001 1.0.0 define singularidade, conceito, distinções, titularidade, autoridade, relevância, elegibilidade, disponibilidade, temporalidade, custo, risco, patrocínio, neutralidade e controle |
 | Ciclo de Vida das Oportunidades Ativas | Manter | PAS-001-OA-LIFECYCLE-001 1.0.0 define estados independentes, identificação, candidatura, avaliação, ativação, apresentação, relação do participante, inscrições, atualizações, encerramentos, revogação e falha segura |
 | Visualização e Controle das Oportunidades Ativas | Manter | PAS-001-OA-VIEW-001 1.0.0 define `Minhas Oportunidades`, descoberta, busca, filtros, ordenação, cartões, detalhamento, comparação, transparência comercial, custos, riscos, controles, privacidade e consistência entre canais |
 | Eventos Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-EVENT-001 1.0.0 define agregado, estrutura comum, 19 famílias, autoridade, temporalidade, correção compensatória, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Oportunidades Ativas | Manter | PAS-001-OA-INTEGRATION-001 1.0.0 define contrato comum, identidade, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, fontes externas, observabilidade e falha segura |
+| KPIs, Guardrails, Cenários e Contrato Final das Oportunidades Ativas | Manter | PAS-001-OA-CONTRACT-001 1.0.0 define 75 KPIs, 15 famílias, 24 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
 | Singularidade de Oportunidades Ativas | Manter | Governa a relevância atual de meios disponíveis para uma jornada específica |
 | Oportunidade candidata | Manter | Registro ainda em avaliação e sem ativação funcional |
 | Oportunidade Ativa | Refinar | Meio admissível e potencialmente compatível que pode ser apresentado, salvo, comparado ou utilizado como apoio |
@@ -254,8 +255,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04 e 05 permanecem funcionalmente concluídas. `PAS-001-OA-INTEGRATION-001 1.0.0` consolida as integrações funcionais da Capacidade 06, mantém seu estado `In progress`, eleva o progresso editorial para 90% e preserva titularidade, autoridade, finalidade, minimização, proveniência, sincronização, revogação, neutralidade comercial, proteção de terceiros, falha segura e controle do participante, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-OA-CONTRACT-001 1.0.0` consolida 75 KPIs em 15 famílias, 24 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas e contrato final, eleva Oportunidades Ativas para 100% e preserva neutralidade comercial, privacidade, confiabilidade, explicabilidade e controle do participante, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão e contrato final da Capacidade de Oportunidades Ativas**.
+Consolidar os **fundamentos iniciais da Capacidade 07 — Intervenções Contextuais**, mantendo seu estado `Planned / concept consolidated` até a primeira extensão normativa.
