@@ -1,9 +1,9 @@
 ---
 title: Knowledge Board
 status: active
-version: 9.4.0
+version: 9.5.0
 owner: Guivos
-last_updated: 2026-07-15
+last_updated: 2026-07-16
 ---
 
 # Knowledge Board
@@ -34,6 +34,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-IC-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Intervenções Contextuais |
 | PAS-001-IC-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Intervenções Contextuais |
 | PAS-001-IC-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Intervenções Contextuais |
+| PAS-001-IC-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Intervenções Contextuais |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -50,13 +51,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos` e `06 — Oportunidades Ativas` |
 | Capacidade ativa | `07 — Intervenções Contextuais` |
 | Estado da capacidade ativa | `In progress` |
-| Extensão normativa vigente | `PAS-001-IC-EVENT-001 1.0.0` |
-| Progresso editorial de Intervenções Contextuais | `80%` |
+| Extensão normativa vigente | `PAS-001-IC-INTEGRATION-001 1.0.0` |
+| Progresso editorial de Intervenções Contextuais | `90%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar as integrações funcionais das Intervenções Contextuais |
+| Foco imediato | Consolidar KPIs, guardrails, cenários e contrato final das Intervenções Contextuais |
 
 ## Capacidades do Journey
 
@@ -68,7 +69,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
-| 07 — Intervenções Contextuais | In progress — 80% | Fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados; integrações são a próxima entrega |
+| 07 — Intervenções Contextuais | In progress — 90% | Fundamentos, ciclo de vida, visualização, controle, eventos e integrações consolidados; contrato final é a próxima entrega |
 | 08 — Experiências | Planned | — |
 | 09 — Evolução Contínua | Planned | — |
 
@@ -318,7 +319,26 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 - revogação concluída somente após propagação suficiente;
 - idempotência, ordenação, concorrência, atomicidade, reconstrução, compatibilidade, explicabilidade, auditoria e falha segura.
 
-A Capacidade 07 está `In progress`, com progresso editorial de referência de `80%`.
+### Integrações funcionais
+
+- relação governada entre produtor e consumidor, sem acesso irrestrito à jornada;
+- titularidade, responsabilidade e autoridade preservadas por domínio;
+- contrato comum de finalidade, escopo, sensibilidade, proveniência, temporalidades, retenção, permissões, relação comercial, sincronização, revogação e falha;
+- identidade confiável, associação incerta limitada e correção auditável;
+- separação entre qualidade técnica, confiança funcional e autoridade da fonte;
+- transformações permitidas e proibição de fabricar disponibilidade, urgência, elegibilidade, intenção, prioridade, progresso ou diagnóstico;
+- finalidade específica, minimização, recortes funcionais e consentimento granular;
+- pausa, desconexão, revogação, propagação e retenção pós-revogação;
+- sincronização, divergência, ordenação, concorrência e reconciliação;
+- prevenção de ciclos, tempo real limitado, processamento em lote e retentativas idempotentes;
+- falha segura e degradação controlada;
+- integrações com todas as capacidades do Journey;
+- limites da Guivos Intelligence e da Platform Layer;
+- integrações com produtos, organizações, profissionais, setores sensíveis, canais, calendários, localização, fontes públicas e sistemas externos;
+- proteção de terceiros, coletivos, dispositivos compartilhados e integrações temporárias;
+- observabilidade, explicabilidade, auditoria e reconstrução.
+
+A Capacidade 07 está `In progress`, com progresso editorial de referência de `90%`.
 
 ## Conceitos internos preservados
 
@@ -329,11 +349,15 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | Eventos de Vida | Functionally complete — 100% |
 | Próximos Passos | Functionally complete — 100% |
 | Oportunidades Ativas | Functionally complete — 100% |
-| Intervenções Contextuais | In progress — 80% |
+| Intervenções Contextuais | In progress — 90% |
 | Fundamentos de Intervenções Contextuais | Normative 1.0.0 |
 | Ciclo de Vida de Intervenções Contextuais | Normative 1.0.0 |
 | Visualização e Controle de Intervenções Contextuais | Normative 1.0.0 |
 | Eventos Funcionais de Intervenções Contextuais | Normative 1.0.0 |
+| Integrações Funcionais de Intervenções Contextuais | Normative 1.0.0 |
+| Integração funcional de intervenção | Relação governada entre produtor e consumidor para finalidade específica e escopo minimizado |
+| Sincronização de intervenção | Processo versionado, idempotente e reconciliável, distinto de decisão funcional |
+| Revogação de integração de intervenção | Interrompe novos usos e somente se conclui após propagação suficiente |
 | Registro de Intervenção Contextual | Agregado que preserva identidade, estado, decisões, preferências, correções, revogações e falhas |
 | Evento funcional de intervenção | Fato reconhecido, versionado, persistido e publicado dentro da autoridade e finalidade declaradas |
 | Relação comercial do evento de intervenção | Metadado obrigatório que não altera relevância, urgência ou prioridade funcional |
@@ -402,8 +426,8 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 9.4.0 |
-| Knowledge Board | 9.4.0 |
+| Roadmap | 9.5.0 |
+| Knowledge Board | 9.5.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -420,6 +444,7 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 | PAS-001-IC-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-IC-VIEW-001 | Active 1.0.0 |
 | PAS-001-IC-EVENT-001 | Active 1.0.0 |
+| PAS-001-IC-INTEGRATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -429,4 +454,4 @@ A Capacidade 07 está `In progress`, com progresso editorial de referência de `
 
 ## Próxima atividade
 
-Consolidar as **integrações funcionais das Intervenções Contextuais** com capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, profissionais, canais, calendários, localização, fontes públicas e sistemas externos, preservando finalidade, minimização, autoridade, sincronização, revogação, neutralidade comercial, observabilidade e falha segura.
+Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários, critérios de conclusão, lacunas, reabertura e contrato final das Intervenções Contextuais**.
