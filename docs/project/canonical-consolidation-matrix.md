@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.7.0
+version: 1.8.0
 owner: Guivos
 last_updated: 2026-07-15
 ---
@@ -239,7 +239,19 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Platform Layer em Oportunidades Ativas | Refinar | Sustenta catálogos, busca, eventos, sincronização, localização, pagamentos, auditoria e segurança sem definir relevância |
 | Guivos Mall em Oportunidades Ativas | Refinar | Fornece produtos, serviços, preços e estoque; governa transação e entrega, não relevância humana |
 | Guivos Ads em Oportunidades Ativas | Refinar | Opera publicidade identificada sem acessar contexto sensível ou substituir avaliação funcional |
-| Intervenção Contextual | Manter | Decisão de agir, perguntar, esperar, observar ou silenciar |
+| Intervenções Contextuais | Refinar | Capacidade 07 em desenvolvimento, com primeira extensão normativa e progresso editorial de 20% |
+| Fundamentos Iniciais de Intervenções Contextuais | Manter | PAS-001-IC-FOUNDATION-001 1.0.0 define singularidade, decisões, silêncio, atenção, urgência, sensibilidade, fadiga, canais, autonomia, relações e limites |
+| Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
+| Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
+| Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
+| Silêncio contextual | Manter | Resultado funcional legítimo de não manifestação atual, distinto de falha |
+| Atenção contextual | Refinar | Capacidade provável de receber e compreender uma manifestação; não representa consentimento |
+| Interruptibilidade | Manter | Adequação de interromper o participante em determinado momento e canal |
+| Urgência de intervenção | Refinar | Proximidade temporal baseada em risco, prazo, segurança, perda objetiva, obrigação ou necessidade declarada |
+| Fadiga de intervenção | Manter | Custo acumulado de manifestações recentes que deve reduzir frequência, intensidade ou produzir silêncio |
+| Intensidade de intervenção | Refinar | Silenciosa, passiva, discreta, normal, destacada ou crítica, sempre proporcional |
+| Horário protegido | Manter | Período em que intervenções são limitadas conforme preferências e exceções legítimas |
+| Intervenção comercial | Refinar | Comunicação identificada, separada da funcional e proibida de utilizar contexto sensível ou urgência fabricada |
 | LPM, CIE e GPMA | Pendente | Permanecem candidatos fora da Canon |
 
 ## Governança documental
@@ -255,8 +267,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-OA-CONTRACT-001 1.0.0` consolida 75 KPIs em 15 famílias, 24 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas e contrato final, eleva Oportunidades Ativas para 100% e preserva neutralidade comercial, privacidade, confiabilidade, explicabilidade e controle do participante, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05 e 06 estão funcionalmente concluídas. `PAS-001-IC-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 07, altera seu estado para `In progress`, estabelece progresso editorial de 20% e consolida finalidade, oportunidade de intervenção, silêncio, atenção, interruptibilidade, urgência, sensibilidade, fadiga, canais, autonomia, relações, responsabilidades e limites, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **fundamentos iniciais da Capacidade 07 — Intervenções Contextuais**, mantendo seu estado `Planned / concept consolidated` até a primeira extensão normativa.
+Consolidar as **regras do ciclo de vida da Capacidade 07 — Intervenções Contextuais**, incluindo identificação, candidatura, avaliação, admissão, programação, espera, apresentação, resposta, adiamento, silêncio, cancelamento, expiração, contestação, correção, escalonamento, frequência, propagação e falha segura.
