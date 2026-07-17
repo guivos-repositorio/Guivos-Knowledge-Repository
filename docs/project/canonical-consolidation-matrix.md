@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.15.0
+version: 1.16.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -253,6 +253,15 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Experiências | Manter | PAS-001-EXP-EVENT-001 1.0.0 define Registro de Experiência, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Experiências | Manter | PAS-001-EXP-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Experiências | Manter | PAS-001-EXP-CONTRACT-001 1.0.0 define 85 KPIs, 17 famílias, 32 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
+| Evolução Contínua | Refinar | Capacidade 09 ativa em 20%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
+| Fundamentos Iniciais da Evolução Contínua | Manter | PAS-001-EC-FOUNDATION-001 1.0.0 define finalidade, singularidade, direção, baseline, trajetória, temporalidades, evidências, causalidade, não linearidade, privacidade, estados, eventos e limites iniciais |
+| Trajetória de Evolução | Manter | Unidade funcional com participante, dimensão, direção, baseline, período, estados, mudanças, evidências, interpretações, confiança, incertezas, fatores contribuintes, correções, permissões e histórico |
+| Direção de evolução | Refinar | Referência legítima e revisável; não representa obrigação, sucesso universal ou valor moral |
+| Baseline de evolução | Manter | Referência temporal legítima, preferencialmente centrada na própria trajetória e distinta de ranking populacional |
+| Não linearidade da evolução | Manter | Avanços, pausas, regressões, oscilações, reorientações e períodos sem mudança permanecem representáveis |
+| Observação de evolução | Refinar | Fato, resultado ou diferença identificada, distinto de interpretação, identidade e causalidade |
+| Interpretação de evolução | Refinar | Leitura explicável, rastreável e contestável sobre observações e trajetória |
+| Causalidade de evolução | Refinar | Somente reconhecida com fundamento suficiente; proximidade temporal e correlação não equivalem a causa |
 | Baseline de Experiências | Manter | Construída antes de metas permanentes e segmentada por modalidade, tipo, sensibilidade, origem, estado, participação, resultado, integração e relação comercial |
 | Guardrail de Experiências | Manter | Regra crítica cuja violação não pode ser compensada por média positiva |
 | Conclusão funcional de Experiências | Manter | Contratos essenciais concluídos; não equivale a implementação ou validação em produção |
@@ -317,8 +326,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05, 06 e 07 estão funcionalmente concluídas. `PAS-001-EXP-EVENT-001 1.0.0` mantém a Capacidade 08 como `In progress`, eleva o progresso editorial para 80% e consolida o Registro de Experiência, a estrutura comum dos eventos, 19 famílias, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução, auditoria e falha segura, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION-001 1.0.0` inicia a Capacidade 09 como `In progress — 20%` e consolida finalidade, definição canônica, Trajetória de Evolução, direção, baseline, temporalidades, evidências, correlação, causalidade, não linearidade, autoridade, privacidade, estados, eventos, responsabilidades e limites, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar as **integrações funcionais da Capacidade 08 — Experiências**, incluindo contrato comum, titularidade, finalidade, minimização, autoridade, sincronização, prevenção de ciclos, contestação, correção, revogação, observabilidade e falha segura.
+Consolidar as **regras do ciclo de vida da Capacidade 09 — Evolução Contínua**, incluindo identificação, candidatura, baseline, observação, interpretação, direção, estabilidade, progressão, oscilação, regressão, interrupção, reorientação, contestação, correção, revogação, propagação, reconstrução e falha segura.

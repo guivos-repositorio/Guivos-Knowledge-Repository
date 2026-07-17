@@ -2,6 +2,28 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.44.0 — Continuous Evolution Initial Foundations
+
+- Criação de `PAS-001-EC-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Evolução Contínua`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 09 do `PAS-001 — Guivos Journey`.
+- Substituição do estado da Capacidade 09 de `Planned` para `In progress` e estabelecimento do progresso editorial inicial de 20%.
+- Definição da finalidade, pergunta central, definição canônica, singularidade e valor entregue.
+- Consolidação de Evolução Contínua como trajetória governada de mudanças humanas observadas, declaradas ou sustentadas por evidências ao longo do tempo.
+- Definição da `Trajetória de Evolução` como unidade funcional.
+- Consolidação de direção, ausência de direção, baseline, comparação limitada, temporalidades, duração e sustentação.
+- Reconhecimento de estabilidade, oscilação, regressão, pausa, reorientação e não linearidade.
+- Separação entre observação, interpretação, correlação, contribuição e causalidade.
+- Definição de evidências, autoridade das fontes, fatores contribuintes, confiança e incerteza.
+- Proteção reforçada de espiritualidade, religião, saúde, bem-estar, sensibilidade e informações de terceiros.
+- Definição de estados e eventos funcionais iniciais, controles, explicabilidade, responsabilidades, limites e neutralidade comercial.
+- Registro de 30 comportamentos proibidos e 52 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.16.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.7.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.16.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02 a 08 como `Functionally complete`.
+- Definição das Regras do Ciclo de Vida da Capacidade 09 como próximo ponto exato de retomada.
+
 ## 0.43.0 — Experiences Final Contract
 
 - Criação de `PAS-001-EXP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Experiências`, versão `1.0.0`.

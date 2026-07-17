@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.15.0
+version: 1.16.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -353,7 +353,7 @@ O contrato final consolida:
 
 A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-## Capacidade 08 ativa
+## Capacidade 08 concluída
 
 ### Capacidade 08 — Experiências
 
@@ -450,7 +450,31 @@ O ciclo de vida consolida:
 
 A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A próxima frente oficial é a Capacidade 09 — Evolução Contínua, que permanece `Planned` até a aprovação de sua primeira extensão normativa.
+A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `20%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`.
+
+
+## Capacidade 09 ativa
+
+### Capacidade 09 — Evolução Contínua
+
+`PAS-001-EC-FOUNDATION-001 1.0.0` consolida:
+
+- finalidade, pergunta central, definição canônica, singularidade e valor entregue;
+- Evolução Contínua como trajetória governada de mudanças humanas observadas, declaradas ou sustentadas por evidências ao longo do tempo;
+- distinções entre mudança, evolução, progresso, resultado, satisfação, Experiência, Evento de Vida, Objetivo, identidade, produtividade, mérito e diagnóstico;
+- `Trajetória de Evolução` como unidade funcional, com participante, dimensão, direção, baseline, período, estados, mudanças, evidências, interpretações, confiança, incertezas e histórico;
+- direção declarada, ausência legítima de direção e baseline centrada na trajetória do próprio participante;
+- temporalidades, duração, sustentação, estabilidade, oscilação, regressão, pausa, reorientação e não linearidade;
+- observação e interpretação como dimensões distintas;
+- evidências, autoridade das fontes, correlação, causalidade e fatores contribuintes com limites explícitos;
+- evolução individual, coletiva e institucional como trajetórias distintas;
+- proteção reforçada de espiritualidade, religião, saúde, bem-estar, sensibilidade e terceiros;
+- estados e eventos funcionais iniciais, controles, explicabilidade, responsabilidades, limites e neutralidade comercial;
+- 30 comportamentos proibidos e 52 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `20%`.
+
+O próximo bloco normativo é o ciclo de vida da Evolução Contínua.
 
 ## Regras arquiteturais
 
