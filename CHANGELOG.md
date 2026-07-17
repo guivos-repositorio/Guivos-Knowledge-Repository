@@ -2,6 +2,36 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.38.0 — Experiences Initial Foundations
+
+- Criação de `PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências`, versão `1.0.0`.
+- Registro do documento como primeira extensão normativa da Capacidade 08 do `PAS-001 — Guivos Journey`.
+- Substituição do estado da Capacidade 08 de `Planned` por `In progress` e estabelecimento do progresso editorial inicial de 20%.
+- Definição da finalidade, pergunta central, singularidade e valor entregue pela capacidade.
+- Definição canônica de Experiência como vivência efetivamente situada no tempo.
+- Distinção entre experiência, atividade, presença, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação, Evento de Vida, progresso e evolução.
+- Definição do fluxo canônico inicial e do `Registro de Experiência` como unidade funcional.
+- Consolidação de identidade, titularidade, participantes, papéis e autoridade.
+- Definição das experiências compartilhadas, coletivas, institucionais, físicas, digitais e híbridas.
+- Consolidação de tipos, origem, intenção, convite, inscrição, candidatura e reconhecimento da ocorrência.
+- Definição das temporalidades de previsão, início, participação, ocorrência, percepção, encerramento, resultado, registro, memória, significado, correção e revogação.
+- Consolidação de duração, intensidade, recorrência, episódios, continuidade, presença, envolvimento, agência, autonomia e expectativas.
+- Definição de contexto mínimo, sensibilidade, privacidade, acessibilidade, segurança e proteção de terceiros.
+- Consolidação de entregas, resultados, satisfação, evidências, memórias, significado e reflexão.
+- Limitação da transformação, de Eventos de Vida e de Evolução Contínua a avaliações próprias das capacidades competentes.
+- Consolidação das relações com Objetivos, Próximos Passos, Oportunidades Ativas e Intervenções Contextuais.
+- Definição dos limites da Guivos Intelligence, da Platform Layer, dos produtos especializados, das organizações e dos profissionais.
+- Preservação da neutralidade comercial e proibição de utilização de experiências sensíveis para publicidade ou engajamento.
+- Registro dos estados funcionais, estado da informação, relação individual, eventos iniciais, controles, explicabilidade, responsabilidades e limites.
+- Registro de 25 comportamentos proibidos e 42 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.10.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.1.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.10.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03, 04, 05, 06 e 07 como `Functionally complete`.
+- Preservação da Capacidade 09 — Evolução Contínua como `Planned`.
+- Definição das regras do ciclo de vida de Experiências como próximo ponto exato de retomada.
+
 ## 0.37.0 — Contextual Interventions Final Contract
 
 - Criação de `PAS-001-IC-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Intervenções Contextuais`, versão `1.0.0`.
