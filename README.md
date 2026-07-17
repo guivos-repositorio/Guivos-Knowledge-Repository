@@ -11,11 +11,11 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências
-- **Capacidade ativa:** 09 — Evolução Contínua, `In progress — 20%`
+- **Capacidade ativa:** 09 — Evolução Contínua, `In progress — 40%`
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
-- **Extensão vigente de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0
+- **Extensões vigentes de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0 e PAS-001-EC-LIFECYCLE-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -353,26 +353,28 @@ A Capacidade 08 está **Functionally complete**, com progresso editorial de refe
 
 `PAS-001-EC-FOUNDATION-001 1.0.0` consolida finalidade, pergunta central, definição canônica, singularidade, Trajetória de Evolução, direção, baseline, temporalidades, evidências, correlação, causalidade, não linearidade, autoridade, privacidade, estados, eventos, responsabilidades e limites iniciais.
 
-A Capacidade 09 está **In progress**, com progresso editorial de referência de **20%**.
+`PAS-001-EC-LIFECYCLE-001 1.0.0` consolida 17 dimensões independentes, estados e transições, identificação, candidatura, baseline, direção, observação, interpretação, reconhecimento, acompanhamento proporcional, manutenção, estabilidade, progressão, oscilação, regressão, interrupção, recuperação, reorientação, contestação, correção, revogação, propagação, reconstrução e falha segura.
+
+A Capacidade 09 está **In progress**, com progresso editorial de referência de **40%**.
 
 ## Ponto exato de retomada
 
-Retomar nas **Regras do Ciclo de Vida da Capacidade 09 — Evolução Contínua**.
+Retomar na **Visualização e Controle da Capacidade 09 — Evolução Contínua**.
 
 Próxima entrega:
 
-- identificação de mudança, candidatura e baseline;
-- observação, interpretação, direção e confirmação;
-- estabilidade, progressão, oscilação, regressão, interrupção e reorientação;
-- contestação, correção, revogação e propagação;
-- idempotência, ordenação, reconstrução e falha segura.
+- superfície `Minha Evolução`;
+- trajetórias por dimensão e período;
+- baseline, direção, evidências, confiança e incerteza;
+- interpretações alternativas e ausência legítima de mudança;
+- controles, privacidade, acessibilidade, contestação, correção, revogação e falha segura.
 
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua está `In progress — 20%`.
+As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua está `In progress — 40%`.
 
 ## Capacidades do Journey
 
@@ -386,7 +388,7 @@ As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Functionally complete — 100% |
-| 09 — Evolução Contínua | In progress — 20% |
+| 09 — Evolução Contínua | In progress — 40% |
 
 ## Acesso rápido
 
@@ -415,6 +417,7 @@ As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 
 - [Integrações Funcionais das Experiências](docs/product-architecture/pas-001-experiencias-integracoes-funcionais.md)
 - [Contrato Final das Experiências](docs/product-architecture/pas-001-experiencias-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-fundamentos-iniciais.md)
+- [Ciclo de Vida da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-ciclo-de-vida.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
