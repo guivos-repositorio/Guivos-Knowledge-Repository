@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.14.0
+version: 1.15.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -364,6 +364,7 @@ As extensões normativas vigentes são:
 - `PAS-001-EXP-VIEW-001 1.0.0` — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura;
 - `PAS-001-EXP-EVENT-001 1.0.0` — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria.
 - `PAS-001-EXP-INTEGRATION-001 1.0.0` — contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, dispositivos, canais, observabilidade e falha segura.
+- `PAS-001-EXP-CONTRACT-001 1.0.0` — 85 KPIs em 17 famílias, 32 guardrails, baseline, painel de saúde, níveis de desempenho, cenários, critérios de conclusão, lacunas, reabertura e contrato final.
 
 Os fundamentos consolidam:
 
@@ -435,9 +436,21 @@ O ciclo de vida consolida:
 - integrações com Mall, Travel, Business, Media, Ads, organizações, profissionais, setores sensíveis, esportes, dispositivos, calendários, localização, mídias, fontes públicas e sistemas externos;
 - observabilidade, explicabilidade, auditoria, reconstrução, 30 comportamentos proibidos e 52 critérios de aceite.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de `90%`.
+`PAS-001-EXP-CONTRACT-001 1.0.0` consolida:
 
-O próximo bloco deverá consolidar KPIs, guardrails, baseline, cenários e o contrato final das Experiências.
+- 85 KPIs em 17 famílias sistêmicas;
+- baseline funcional segmentada;
+- painel de saúde com 18 visões e cinco níveis de desempenho;
+- 32 guardrails de tolerância zero;
+- cenários funcionalmente ideais, alternativos e limite;
+- critérios de conclusão, lacunas bloqueantes e não bloqueantes;
+- finalidade, singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas e dimensões preservadas;
+- neutralidade comercial, privacidade, confiabilidade, explicabilidade, auditoria, critérios de reabertura e contrato final;
+- ausência de lacuna funcional bloqueante conhecida.
+
+A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
+
+A próxima frente oficial é a Capacidade 09 — Evolução Contínua, que permanece `Planned` até a aprovação de sua primeira extensão normativa.
 
 ## Regras arquiteturais
 

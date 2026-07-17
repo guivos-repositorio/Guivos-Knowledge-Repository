@@ -8,13 +8,14 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - marco `M5.9 — Chat Continuity and Repository Reconciliation Completed` concluído;
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
-- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais funcionalmente concluídas;
+- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 07 — Intervenções Contextuais funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 08 — Experiências em desenvolvimento, `In progress`, 90%;
+- Capacidade 08 — Experiências funcionalmente concluída, `Functionally complete`, 100%;
+- Capacidade 09 — Evolução Contínua como próxima frente, `Planned`;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
 - `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
-- `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0` e `PAS-001-EXP-INTEGRATION-001 1.0.0` como extensões normativas vigentes da Capacidade 08;
+- `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 08;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -22,9 +23,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **KPIs, guardrails, baseline, cenários e contrato final da Capacidade 08 — Experiências**.
+Consolidar os **Fundamentos Iniciais da Capacidade 09 — Evolução Contínua**.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As cinco extensões de Experiências consolidam o vivido, suas distinções, titularidade, ciclo de vida, Minhas Experiências, áreas funcionais, 19 famílias de eventos, contratos de integração, autoridade, finalidade, minimização, proveniência, sensibilidade, sincronização, prevenção de ciclos, correção, revogação, idempotência, reconstrução e falha segura.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As seis extensões de Experiências concluem a Capacidade 08 com fundamentos, ciclo de vida, Minhas Experiências, 19 famílias de eventos, integrações, 85 KPIs em 17 famílias, 32 guardrails, baseline, painel de saúde, cenários e contrato final.
 
 ## Acesso rápido
 
@@ -51,6 +52,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Visualização e Controle das Experiências](product-architecture/pas-001-experiencias-visualizacao-controle.md)
 - [Eventos Funcionais das Experiências](product-architecture/pas-001-experiencias-eventos-funcionais.md)
 - [Integrações Funcionais das Experiências](product-architecture/pas-001-experiencias-integracoes-funcionais.md)
+- [Contrato Final das Experiências](product-architecture/pas-001-experiencias-kpis-cenarios-contrato-final.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -69,9 +71,9 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
-| 08 — Experiências | In progress — 90% |
+| 08 — Experiências | Functionally complete — 100% |
 | 09 — Evolução Contínua | Planned |
 
 ## Ponto de retomada
 
-Retomar nos KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários, critérios de conclusão, lacunas, reabertura e contrato final da Capacidade 08 — Experiências.
+Retomar nos **Fundamentos Iniciais da Capacidade 09 — Evolução Contínua**.

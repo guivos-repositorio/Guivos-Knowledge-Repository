@@ -150,6 +150,7 @@ nav:
       - PAS-001-EXP-VIEW-001 — Visualização e Controle das Experiências: product-architecture/pas-001-experiencias-visualizacao-controle.md
       - PAS-001-EXP-EVENT-001 — Eventos Funcionais das Experiências: product-architecture/pas-001-experiencias-eventos-funcionais.md
       - PAS-001-EXP-INTEGRATION-001 — Integrações Funcionais das Experiências: product-architecture/pas-001-experiencias-integracoes-funcionais.md
+      - PAS-001-EXP-CONTRACT-001 — Contrato Final das Experiências: product-architecture/pas-001-experiencias-kpis-cenarios-contrato-final.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md

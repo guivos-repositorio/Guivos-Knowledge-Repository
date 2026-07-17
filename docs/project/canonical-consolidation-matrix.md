@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.14.0
+version: 1.15.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -246,12 +246,16 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-INTEGRATION-001 1.0.0 define contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Intervenções Contextuais | Manter | PAS-001-IC-CONTRACT-001 1.0.0 define 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
-| Experiências | Refinar | Capacidade 08 em desenvolvimento, com fundamentos, ciclo de vida, visualização, controle, eventos e integrações funcionais consolidados e progresso editorial de 90% |
+| Experiências | Manter | Capacidade 08 funcionalmente concluída por seis extensões normativas, 85 KPIs, 32 guardrails, baseline, cenários e progresso editorial de 100% |
 | Fundamentos Iniciais da Capacidade de Experiências | Manter | PAS-001-EXP-FOUNDATION-001 1.0.0 define finalidade, pergunta central, singularidade, distinções, titularidade, temporalidade, sensibilidade, relações, estados, eventos, controles e limites iniciais |
 | Ciclo de Vida das Experiências | Manter | PAS-001-EXP-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, validação da ocorrência, planejamento, participação, recorrência, resultados, memórias, correção, revogação, propagação, idempotência e falha segura |
 | Visualização e Controle das Experiências | Manter | PAS-001-EXP-VIEW-001 1.0.0 define Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura |
 | Eventos Funcionais das Experiências | Manter | PAS-001-EXP-EVENT-001 1.0.0 define Registro de Experiência, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Experiências | Manter | PAS-001-EXP-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
+| KPIs, Guardrails, Cenários e Contrato Final das Experiências | Manter | PAS-001-EXP-CONTRACT-001 1.0.0 define 85 KPIs, 17 famílias, 32 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
+| Baseline de Experiências | Manter | Construída antes de metas permanentes e segmentada por modalidade, tipo, sensibilidade, origem, estado, participação, resultado, integração e relação comercial |
+| Guardrail de Experiências | Manter | Regra crítica cuja violação não pode ser compensada por média positiva |
+| Conclusão funcional de Experiências | Manter | Contratos essenciais concluídos; não equivale a implementação ou validação em produção |
 | Evento funcional de experiência | Manter | Fato reconhecido, versionado, imutável e publicado somente após persistência funcional suficiente |
 | Contrato de evento de experiência | Manter | Estrutura comum com agregado, versões, titular, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, idempotência, incerteza e retenção |
 | Integração funcional de experiência | Refinar | Intercâmbio governado de sinais, fatos, declarações, evidências, mídias, resultados e recortes sem reconhecimento automático do vivido |

@@ -2,6 +2,28 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.43.0 — Experiences Final Contract
+
+- Criação de `PAS-001-EXP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Experiências`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa e contrato final da Capacidade 08 do `PAS-001 — Guivos Journey`.
+- Substituição do estado da Capacidade 08 de `In progress` para `Functionally complete`.
+- Elevação do progresso editorial de 90% para 100%.
+- Consolidação de 85 KPIs em 17 famílias.
+- Definição de baseline funcional segmentada, painel de saúde com 18 visões e cinco níveis de desempenho.
+- Consolidação de 32 guardrails de tolerância zero.
+- Definição de cenários funcionalmente ideais, alternativos e limite.
+- Definição de 48 critérios de conclusão funcional.
+- Consolidação de lacunas bloqueantes e não bloqueantes, sem lacuna funcional bloqueante conhecida.
+- Consolidação da finalidade, singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas e dimensões preservadas.
+- Consolidação de neutralidade comercial, privacidade, confiabilidade, explicabilidade, auditoria e critérios de reabertura.
+- Atualização da Arquitetura de Produtos para `1.15.0` e inclusão do contrato final na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.6.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.15.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02 a 07 como `Functionally complete`.
+- Definição da Capacidade 09 — Evolução Contínua como próxima frente oficial, permanecendo `Planned` até sua primeira extensão normativa.
+- Definição dos Fundamentos Iniciais da Capacidade 09 como próximo ponto exato de retomada.
+
 ## 0.42.0 — Experiences Functional Integrations
 
 - Criação de `PAS-001-EXP-INTEGRATION-001 — Integrações Funcionais da Capacidade de Experiências`, versão `1.0.0`.
