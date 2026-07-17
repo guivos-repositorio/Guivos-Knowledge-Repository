@@ -1,0 +1,52 @@
+name: Sync EXP View
+
+on:
+  push:
+    branches:
+      - agent/experiencias-visualizacao-controle
+    paths:
+      - .github/trigger/exp-view.txt
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/experiencias-visualizacao-controle
+          fetch-depth: 0
+
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Synchronize normative artifacts
+        run: python tools/sync_exp_view.py
+
+      - name: Configure Git
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "guivosbrasil@gmail.com"
+
+      - name: Commit architecture and governance
+        run: |
+          git add docs/product-architecture/index.md docs/roadmap.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md
+          git commit -m "docs(canon): sincronizar visualizacao de Experiencias"
+
+      - name: Commit repository entry points
+        run: |
+          git add README.md docs/index.md mkdocs.yml
+          git commit -m "docs(site): publicar visualizacao de Experiencias"
+
+      - name: Commit changelog
+        run: |
+          git add CHANGELOG.md
+          git commit -m "docs(changelog): registrar visualizacao de Experiencias"
+
+      - name: Push synchronized commits
+        run: git push origin HEAD:agent/experiencias-visualizacao-controle
