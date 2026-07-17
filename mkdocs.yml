@@ -159,3 +159,55 @@ nav:
       - Guivos Media: product-architecture/media.md
       - Guivos Intelligence: product-architecture/intelligence.md
       - Guivos Ads: product-architecture/ads.md
+  - Intelligence Architecture:
+      - Visão Geral: intelligence-architecture/index.md
+      - GAI-001 — AI Knowledge Model: intelligence-architecture/knowledge-model.md
+      - GAI-002 — Manifesto da Inteligência do Ecossistema: intelligence-architecture/manifesto.md
+  - Guivos Economic Model:
+      - Visão Geral: economic-model/index.md
+  - Business Architecture:
+      - Visão Geral: business-architecture/index.md
+      - Foundations: business-architecture/foundations/index.md
+      - Strategy:
+          - Business Transformation Model: business-architecture/strategy/business-transformation-model.md
+          - Business Outcomes: business-architecture/strategy/business-outcomes.md
+  - Governance Framework do GKR:
+      - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
+      - Architectural Audit Framework: governance-framework/architectural-audit-framework.md
+      - Outcome Governance Method: governance-framework/outcome-governance-method.md
+  - Validações Arquiteturais:
+      - A2-R01-FEM-001 — Foundation Evidence Matrix: validation/A2-R01-FEM-001-foundation-evidence-matrix.md
+      - A2-R01-CC-001 — Foundation Canonical Consolidation: validation/A2-R01-CC-001-canonical-consolidation.md
+      - A2-R01-RA-001 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
+      - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
+      - A2-R01-AUD-001 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
+      - A2-R02-FMEM-001 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md
+      - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
+  - ADRs:
+      - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
+      - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
+      - ADR-003 — Architectural Ownership: adr/ADR-003-architectural-ownership.md
+      - ADR-004 — Architectural Dependency Order: adr/ADR-004-architectural-dependency-order.md
+      - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
+      - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
+  - Projeto:
+      - Architectural Milestones: project/architectural-milestones.md
+      - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
+      - AR-001 — GKR and GOG Consistency Review: project/AR-001-gkr-gog-consistency-and-diagram-review.md
+      - GE2-SYNC-006 — Context Interpretation and Living Context: project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md
+      - GE2-SYNC-005 — Journey Operational Philosophy: project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md
+      - Architecture Engineering Pause: project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md
+      - GE2-SYNC-004 — Context and Architecture Engineering: project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md
+      - GE2-SYNC-003 — Enterprise Design and GLPA: project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture.md
+      - GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync: project/GE2-SYNC-002-gka-conceptual-architecture-progress.md
+      - GE2-SYNC-001 — Architectural Synchronization Matrix: project/GE2-SYNC-001-architectural-synchronization-matrix.md
+      - GKA Preparation Complete: project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md
+      - GE-2 — GKA Foundation Checkpoint: project/CHECKPOINT-GE2-GKA-FOUNDATION.md
+      - Baseline M1: project/BASELINE-M1.md
+      - Checkpoint M2.0: project/CHECKPOINT-M2.0.md
+      - A2 Baseline B1 — Foundation 5/6: project/A2-BASELINE-B1.md
+      - A2 Baseline B2 — Foundation 6/6: project/A2-BASELINE-B2.md
+      - A2 Baseline B3 — Foundation Frozen: project/A2-BASELINE-B3.md
+      - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+      - Pipeline de Publicação: project/site-pipeline.md
+      - Roadmap: roadmap.md
