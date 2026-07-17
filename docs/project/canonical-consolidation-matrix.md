@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.9.0
+version: 1.10.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -246,6 +246,14 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-INTEGRATION-001 1.0.0 define contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Intervenções Contextuais | Manter | PAS-001-IC-CONTRACT-001 1.0.0 define 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
+| Experiências | Refinar | Capacidade 08 em desenvolvimento, com fundamentos iniciais consolidados e progresso editorial de 20% |
+| Fundamentos Iniciais da Capacidade de Experiências | Manter | PAS-001-EXP-FOUNDATION-001 1.0.0 define finalidade, pergunta central, singularidade, distinções, titularidade, temporalidade, sensibilidade, relações, estados, eventos, controles e limites iniciais |
+| Experiência | Refinar | Vivência efetivamente situada no tempo; distinta de atividade, presença, participação, entrega, resultado, satisfação, memória, significado e transformação |
+| Registro de Experiência | Manter | Agregado funcional que preserva identidade, contexto, temporalidades, participantes, entregas, resultados, percepções, evidências, memórias, significados, correções e permissões |
+| Titularidade da experiência | Manter | Pertence a quem viveu; pagamento, patrocínio, organização, fornecimento ou registro técnico não transferem titularidade |
+| Experiência e transformação | Refinar | Experiência pode contribuir para transformação, mas não a confirma automaticamente |
+| Significado da experiência | Manter | Interpretação opcional, revisável e atribuída pelo participante ou coletivo autorizado |
+| Memória da experiência | Refinar | Representação preservada ou reconstruída, distinta da reprodução exata do ocorrido |
 | Intervenção Contextual | Refinar | Manifestação deliberada, proporcional e explicável que pode agir, perguntar, informar, sugerir, lembrar, alertar, confirmar, aguardar, observar ou silenciar |
 | Oportunidade de intervenção | Manter | Condição em que a utilidade legítima potencial supera o custo provável da interrupção |
 | Oportunidade admitida de intervenção | Manter | Candidatura com finalidade, autoridade, relevância, momento, risco, sensibilidade e canal suficientemente avaliados |
@@ -293,8 +301,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05, 06 e 07 estão funcionalmente concluídas. `PAS-001-IC-CONTRACT-001 1.0.0` conclui a Capacidade 07, eleva o progresso editorial para 100% e consolida 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, singularidade, titularidade, responsabilidades, limites, neutralidade, privacidade, confiabilidade, explicabilidade, auditoria e reabertura normativa, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05, 06 e 07 estão funcionalmente concluídas. `PAS-001-EXP-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 08, substitui seu estado `Planned` por `In progress`, estabelece progresso editorial de 20% e consolida a experiência vivida, distinções fundamentais, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar os **fundamentos iniciais da Capacidade 08 — Experiências**, incluindo singularidade, experiência vivida, distinções fundamentais, titularidade, temporalidade, sensibilidade, relações, estados, limites e integrações iniciais. A capacidade permanece `Planned` até a aprovação de sua primeira extensão normativa.
+Consolidar as **regras do ciclo de vida da Capacidade 08 — Experiências**, incluindo identificação, candidatura, validação da ocorrência, planejamento, preparação, início, participação, acompanhamento, pausa, retomada, conclusão, interrupção, cancelamento, recorrência, episódios, entrega, resultado, percepção, satisfação, evidência, memória, significado, contestação, correção, revogação, propagação e falha segura.
