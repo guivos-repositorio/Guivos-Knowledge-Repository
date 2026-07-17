@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "<stdin>", line 17, in <module>
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/tools/sync_exp_event_payload.py", line 39, in <module>
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/tools/sync_exp_event_payload.py", line 19, in replace_once
-RuntimeError: docs/product-architecture/index.md: versão: esperado 1 ocorrência, encontrado 0
