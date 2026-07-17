@@ -12,11 +12,11 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 07 — Intervenções Contextuais funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 08 — Experiências funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 09 — Evolução Contínua como frente ativa, `In progress`, 60%;
+- Capacidade 09 — Evolução Contínua como frente ativa, `In progress`, 80%;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
 - `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
 - `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 08;
-- `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0` e `PAS-001-EC-VIEW-001 1.0.0` como extensões normativas vigentes da Capacidade 09;
+- `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0` e `PAS-001-EC-EVENT-001 1.0.0` como extensões normativas vigentes da Capacidade 09;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -24,9 +24,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **Eventos Funcionais da Capacidade 09 — Evolução Contínua**.
+Consolidar as **Integrações Funcionais da Capacidade 09 — Evolução Contínua**.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As seis extensões de Experiências concluem a Capacidade 08 com fundamentos, ciclo de vida, Minhas Experiências, 19 famílias de eventos, integrações, 85 KPIs em 17 famílias, 32 guardrails, baseline, painel de saúde, cenários e contrato final. As três extensões de Evolução Contínua mantêm a Capacidade 09 ativa com fundamentos, ciclo de vida, `Minha Evolução`, direção, baseline, temporalidades, evidências, causalidade, não linearidade, 17 dimensões independentes, estados, transições, visualização, interpretações alternativas, controles, privacidade, acessibilidade, contestação, correção, revogação, reconstrução e falha segura.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As seis extensões de Experiências concluem a Capacidade 08 com fundamentos, ciclo de vida, Minhas Experiências, 19 famílias de eventos, integrações, 85 KPIs em 17 famílias, 32 guardrails, baseline, painel de saúde, cenários e contrato final. As quatro extensões de Evolução Contínua mantêm a Capacidade 09 ativa com fundamentos, ciclo de vida, `Minha Evolução`, `Trajetória de Evolução` como agregado, estrutura comum, 19 famílias de eventos, direção, baseline, temporalidades, evidências, causalidade, não linearidade, estados, transições, interpretações alternativas, controles, privacidade, contestação, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura.
 
 ## Acesso rápido
 
@@ -57,6 +57,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Fundamentos Iniciais de Evolução Contínua](product-architecture/pas-001-evolucao-continua-fundamentos-iniciais.md)
 - [Ciclo de Vida da Evolução Contínua](product-architecture/pas-001-evolucao-continua-ciclo-de-vida.md)
 - [Visualização e Controle da Evolução Contínua](product-architecture/pas-001-evolucao-continua-visualizacao-controle.md)
+- [Eventos Funcionais da Evolução Contínua](product-architecture/pas-001-evolucao-continua-eventos-funcionais.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -76,8 +77,8 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Functionally complete — 100% |
-| 09 — Evolução Contínua | In progress — 60% |
+| 09 — Evolução Contínua | In progress — 80% |
 
 ## Ponto de retomada
 
-Retomar nos **Eventos Funcionais da Capacidade 09 — Evolução Contínua**.
+Retomar nas **Integrações Funcionais da Capacidade 09 — Evolução Contínua**.

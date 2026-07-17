@@ -2,6 +2,25 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.47.0 — Continuous Evolution Functional Events
+
+- Criação de `PAS-001-EC-EVENT-001 — Contratos dos Eventos Funcionais da Evolução Contínua`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 09 do `PAS-001 — Guivos Journey`.
+- Elevação do progresso editorial da Capacidade 09 de 60% para 80%, mantendo o estado `In progress`.
+- Consolidação da `Trajetória de Evolução` como agregado funcional permanente, com segmentos e janelas de observação.
+- Definição de estrutura comum versionada com autoridade, finalidade, dimensão, baseline, direção, temporalidades, proveniência, sensibilidade, confiança, incerteza, permissões e retenção.
+- Definição de 19 famílias de eventos funcionais.
+- Persistência funcional anterior à publicação e consumo limitado à semântica reconhecida.
+- Consolidação de observações, evidências, interpretações, reconhecimento, manutenção, progressão, oscilação, regressão, recuperação, reorientação e causalidade limitada.
+- Consolidação de controles do participante, privacidade, compartilhamento, validações externas e proteção de terceiros.
+- Definição de correção compensatória, revogação propagada, idempotência, ordenação, concorrência, atomicidade, compatibilidade, reconstrução, explicabilidade, auditoria e falha segura.
+- Registro de 34 comportamentos proibidos e 64 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.19.0`.
+- Atualização do Roadmap e do Knowledge Board para `11.0.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.19.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição de Integrações Funcionais da Capacidade 09 como próximo ponto exato.
+
 ## 0.46.0 — Continuous Evolution View and Control
 
 - Criação de `PAS-001-EC-VIEW-001 — Visualização e Controle da Evolução Contínua`, versão `1.0.0`.
