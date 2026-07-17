@@ -27,24 +27,61 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Diagnose synchronization
+      - name: Synchronize normative artifacts
         shell: bash
         run: |
           set +e
-          python tools/sync_exp_event.py > /tmp/sync-exp-event.log 2>&1
+          python - <<'PY' > /tmp/sync-exp-event.log 2>&1
+          import base64
+          import re
+          import zlib
+          from pathlib import Path
+
+          bootstrap = Path("tools/sync_exp_event.py").read_text(encoding="utf-8")
+          match = re.search(r'b64decode\("([A-Za-z0-9+/=]+)"\)', bootstrap)
+          if not match:
+              raise RuntimeError("payload comprimido não encontrado")
+          payload = match.group(1)
+          payload += "=" * (-len(payload) % 4)
+          source = zlib.decompress(base64.b64decode(payload)).decode("utf-8")
+          exec(compile(source, "tools/sync_exp_event_payload.py", "exec"))
+          PY
           status=$?
           if [ "$status" -ne 0 ]; then
             tail -n 40 /tmp/sync-exp-event.log > .github/trigger/exp-event-error.txt
             git config user.name "guivos-repositorio"
             git config user.email "guivosbrasil@gmail.com"
             git add .github/trigger/exp-event-error.txt
-            git commit -m "chore(sync): registrar diagnostico dos eventos"
+            git commit -m "chore(sync): registrar diagnostico dos eventos" || true
             git push origin HEAD:${{ github.head_ref }}
             exit "$status"
           fi
-          echo "synchronization completed" > .github/trigger/exp-event-error.txt
+          rm -f .github/trigger/exp-event-error.txt
+
+      - name: Configure Git
+        run: |
           git config user.name "guivos-repositorio"
           git config user.email "guivosbrasil@gmail.com"
-          git add .github/trigger/exp-event-error.txt
-          git commit -m "chore(sync): registrar diagnostico dos eventos"
-          git push origin HEAD:${{ github.head_ref }}
+
+      - name: Commit normative contract
+        run: |
+          git add docs/product-architecture/pas-001-experiencias-eventos-funcionais.md .github/trigger/exp-event-error.txt
+          git commit -m "docs(experiencias): consolidar eventos funcionais"
+
+      - name: Commit architecture and governance
+        run: |
+          git add docs/product-architecture/index.md docs/roadmap.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md
+          git commit -m "docs(canon): sincronizar eventos de Experiencias"
+
+      - name: Commit repository entry points
+        run: |
+          git add README.md docs/index.md mkdocs.yml
+          git commit -m "docs(site): publicar eventos de Experiencias"
+
+      - name: Commit changelog
+        run: |
+          git add CHANGELOG.md
+          git commit -m "docs(changelog): registrar eventos de Experiencias"
+
+      - name: Push synchronized commits
+        run: git push origin HEAD:${{ github.head_ref }}
