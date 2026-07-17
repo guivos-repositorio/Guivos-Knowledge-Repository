@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.46.0 — Continuous Evolution View and Control
+
+- Criação de `PAS-001-EC-VIEW-001 — Visualização e Controle da Evolução Contínua`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 09 do `PAS-001 — Guivos Journey`.
+- Elevação do progresso editorial da Capacidade 09 de 40% para 60%, mantendo o estado `In progress`.
+- Consolidação de `Minha Evolução` como superfície principal de compreensão, acompanhamento, revisão e controle.
+- Definição de visão geral, áreas funcionais, lista, cartões, linha do tempo, períodos comparados, matriz de dimensões, gráficos, escalas e cores governadas.
+- Representação independente de baseline, direção, estado funcional, padrão, evidências, confiança, incerteza, observações, interpretações e causalidade.
+- Preservação de interpretações alternativas e da autoria do participante.
+- Representação não julgadora de estabilidade, manutenção, progressão, oscilação, regressão, recuperação, reorientação e inconclusão.
+- Proteção de trajetórias sensíveis, espiritualidade, religião, saúde, trabalho, educação, finanças, voluntariado, coletivos e terceiros.
+- Consolidação de controles de associação, pausa, encerramento, contestação, correção, revogação, compartilhamento e exportação.
+- Definição de acessibilidade técnica e cognitiva, privacidade visual, consistência entre canais e falha segura.
+- Registro de 34 comportamentos proibidos e 72 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.18.0`.
+- Atualização do Roadmap e do Knowledge Board para `10.9.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.18.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição de Eventos Funcionais da Capacidade 09 como próximo ponto exato.
+
 ## 0.45.0 — Continuous Evolution Lifecycle
 
 - Criação de `PAS-001-EC-LIFECYCLE-001 — Regras do Ciclo de Vida da Evolução Contínua`, versão `1.0.0`.
