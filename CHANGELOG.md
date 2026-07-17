@@ -2,6 +2,31 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.42.0 — Experiences Functional Integrations
+
+- Criação de `PAS-001-EXP-INTEGRATION-001 — Integrações Funcionais da Capacidade de Experiências`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 08 do `PAS-001 — Guivos Journey`.
+- Manutenção da Capacidade 08 como `In progress` e elevação do progresso editorial de 80% para 90%.
+- Definição da integração funcional como intercâmbio governado sem reconhecimento automático da experiência.
+- Consolidação do contrato comum com produtor, consumidor, participante, Registro de Experiência, série, episódio, finalidade, modo, autoridade, escopo, sensibilidade, proveniência, qualidade, confiança, incerteza, retenção, sincronização, revogação e falha.
+- Definição de identidade, associação incerta, associação incorreta e autoridade por participante, organização, profissional, dispositivo, sensor e sistema transacional.
+- Separação entre qualidade técnica, confiança funcional, completude, precisão temporal e autoridade.
+- Definição de transformações permitidas e proibição de fabricar ocorrência, participação, percepção, satisfação, memória, significado, transformação ou evolução.
+- Consolidação de finalidade específica, minimização, recortes funcionais, consentimento granular, proteção de terceiros e neutralidade comercial.
+- Definição de séries, episódios, experiências compartilhadas, coletivas, institucionais e operação offline.
+- Consolidação de sincronização, divergência, ordenação, concorrência, reconciliação e prevenção de ciclos.
+- Definição de pausa, desconexão, revogação, propagação, retenção residual, retentativas e falha segura.
+- Consolidação das integrações com todas as capacidades do Journey, Guivos Intelligence e Platform Layer.
+- Consolidação das integrações com Mall, Travel, Business, Media, Ads, organizações, profissionais, setores sensíveis, esportes, dispositivos, calendários, localização, mídias, fontes públicas e sistemas externos.
+- Registro de 30 comportamentos proibidos e 52 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.14.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.5.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.14.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03, 04, 05, 06 e 07 como `Functionally complete`.
+- Preservação da Capacidade 09 — Evolução Contínua como `Planned`.
+- Definição dos KPIs, guardrails, baseline, cenários e contrato final de Experiências como próximo ponto exato de retomada.
+
 ## 0.41.0 — Experiences Functional Events
 
 - Criação de `PAS-001-EXP-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Experiências`, versão `1.0.0`.
