@@ -1,0 +1,29 @@
+name: Apply approved Experiences foundation
+
+on:
+  push:
+    branches:
+      - exp-foundation-20260717
+    paths:
+      - .github/workflows/apply-approved-exp-foundation.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout approved branch
+        uses: actions/checkout@v4
+        with:
+          ref: exp-foundation-20260717
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply approved foundation update
+        run: python .github/scripts/apply_exp_foundation.py
