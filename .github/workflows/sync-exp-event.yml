@@ -1,9 +1,11 @@
 name: Sync EXP Events
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
     branches:
-      - agent/experiencias-eventos-execucao
+      - main
     paths:
       - .github/trigger/exp-event.txt
 
@@ -14,10 +16,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
+      - name: Checkout pull request branch
         uses: actions/checkout@v4
         with:
-          ref: agent/experiencias-eventos-execucao
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Configure Python
@@ -54,4 +56,4 @@ jobs:
           git commit -m "docs(changelog): registrar eventos de Experiencias"
 
       - name: Push synchronized commits
-        run: git push origin HEAD:agent/experiencias-eventos-execucao
+        run: git push origin HEAD:${{ github.head_ref }}
