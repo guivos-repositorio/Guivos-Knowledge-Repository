@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.9.0
+version: 1.10.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -353,7 +353,33 @@ O contrato final consolida:
 
 A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-O próximo bloco deverá consolidar os fundamentos iniciais da Capacidade 08 — Experiências, que permanece `Planned` até a aprovação de sua primeira extensão normativa.
+## Capacidade 08 ativa
+
+### Capacidade 08 — Experiências
+
+A extensão normativa vigente é:
+
+- `PAS-001-EXP-FOUNDATION-001 1.0.0` — finalidade, pergunta central, definição canônica, singularidade, distinções, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais.
+
+Os fundamentos consolidam:
+
+- Experiência como vivência efetivamente situada no tempo;
+- distinção entre atividade, presença, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida;
+- `Registro de Experiência` como unidade funcional;
+- identidade, titularidade, papéis e autoridade;
+- experiências compartilhadas, coletivas, institucionais, físicas, digitais e híbridas;
+- origem, intenção, candidatura e validação proporcional da ocorrência;
+- temporalidades, duração, intensidade, recorrência, episódios e continuidade;
+- presença, envolvimento, agência, autonomia e expectativas;
+- contexto mínimo, sensibilidade, privacidade, acessibilidade, segurança e proteção de terceiros;
+- entregas, resultados, satisfação, evidências, memórias, significado e reflexão;
+- limites para transformação, Eventos de Vida e Evolução Contínua;
+- relações com as capacidades do Journey, Intelligence, Platform Layer, produtos, organizações e profissionais;
+- neutralidade comercial, estados, eventos, controles, explicabilidade, responsabilidades e comportamentos proibidos.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de `20%`.
+
+O próximo bloco deverá consolidar as regras do ciclo de vida das Experiências.
 
 ## Regras arquiteturais
 
@@ -1047,6 +1073,48 @@ O próximo bloco deverá consolidar os fundamentos iniciais da Capacidade 08 —
 688. Falha parcial não representa sucesso integral.
 689. Métricas avaliam o sistema.
 690. `PAS-001-IC-CONTRACT-001 1.0.0` conclui funcionalmente a Capacidade 07, com progresso editorial de referência de `100%`, e o participante permanece no controle.
+691. Experiência representa o vivido, não a atividade prevista ou a transação.
+692. Compra, reserva, contratação, entrega e presença não comprovam experiência concluída.
+693. Atividade, presença, participação, percepção, resultado, satisfação, memória, significado e transformação permanecem distintos.
+694. Uma atividade pode produzir experiências diferentes para participantes diferentes.
+695. Participação não comprova percepção, aprendizagem, satisfação ou transformação.
+696. Entrega não representa utilização, benefício, resultado ou experiência positiva.
+697. Resultado não esgota a experiência.
+698. Satisfação não representa benefício objetivo, segurança ou transformação.
+699. Evidência sustenta afirmações, mas não representa a experiência integral.
+700. Memória é revisável e não constitui reprodução exata e imutável do ocorrido.
+701. Significado pertence ao participante ou coletivo autorizado e não pode ser imposto.
+702. Experiência não representa transformação automaticamente.
+703. Experiência somente origina Evento de Vida após avaliação própria da capacidade competente.
+704. Objetivos governam progresso, prioridade, revisão e conclusão.
+705. Próximos Passos governam movimentos e não são concluídos pela experiência.
+706. Oportunidade, interesse, inscrição, contratação, participação e experiência permanecem distintos.
+707. Intervenções Contextuais pode apoiar, mas não declarar a vivência sem fundamento.
+708. Consumo de conteúdo não comprova atenção, compreensão, aprendizagem ou aplicação.
+709. Produto executor governa transação, entrega, atendimento e operação.
+710. O Registro de Experiência preserva identidade, contexto, temporalidades, participantes, percepções, resultados, evidências, memórias, significados, correções e permissões.
+711. Mudança material pode exigir novo episódio, ciclo ou Registro de Experiência.
+712. A experiência pertence a quem a viveu; pagamento, patrocínio ou registro técnico não transferem titularidade.
+713. Experiências compartilhadas preservam percepções, memórias e significados individuais.
+714. Registros coletivos não substituem registros pessoais.
+715. Organizações confirmam fatos institucionais, não percepção ou transformação pessoal.
+716. Modalidade física, digital ou híbrida não determina intensidade, qualidade ou significado.
+717. Classificações de experiência são funcionais e não avaliativas.
+718. Origem não representa autoria total ou controle sobre a experiência.
+719. Experiências involuntárias exigem proteção reforçada.
+720. Convite, inscrição, presença confirmada e experiência iniciada permanecem distintos.
+721. Candidatura de experiência não representa ocorrência confirmada.
+722. Ocorrência deve preservar incerteza quando as evidências forem insuficientes.
+723. Momentos previsto, inicial, de participação, percepção, encerramento, resultado, memória e significado permanecem distintos.
+724. Duração não representa intensidade, qualidade ou significado.
+725. Intensidade não representa valor, impacto ou transformação.
+726. Recorrência não comprova hábito, compromisso, identidade ou evolução.
+727. Baixa autonomia limita inferências e automações.
+728. Contexto utilizado deve ser mínimo, autorizado e proporcional.
+729. Experiências sensíveis exigem privacidade, minimização e proteção de terceiros.
+730. Relações comerciais não alteram a interpretação do vivido nem fabricam transformação.
+731. Guivos Intelligence organiza e propõe, mas não impõe significado, emoção ou transformação.
+732. `PAS-001-EXP-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 08, com progresso editorial de referência de `20%`, e o participante permanece no controle.
 
 ## Documentos do domínio
 
@@ -1068,6 +1136,7 @@ O próximo bloco deverá consolidar os fundamentos iniciais da Capacidade 08 —
 - [PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-integracoes-funcionais.md)
 - [PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais](pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
+- [PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências](pas-001-experiencias-fundamentos-iniciais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
