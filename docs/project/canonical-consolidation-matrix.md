@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.11.0
+version: 1.12.0
 owner: Guivos
-last_updated: 2026-07-16
+last_updated: 2026-07-17
 ---
 
 # Matriz de Consolidação Canônica
@@ -246,9 +246,12 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-EVENT-001 1.0.0 define agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Intervenções Contextuais | Manter | PAS-001-IC-INTEGRATION-001 1.0.0 define contrato comum, titularidade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, canais, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Intervenções Contextuais | Manter | PAS-001-IC-CONTRACT-001 1.0.0 define 80 KPIs, 16 famílias, 28 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
-| Experiências | Refinar | Capacidade 08 em desenvolvimento, com fundamentos e ciclo de vida consolidados e progresso editorial de 40% |
+| Experiências | Refinar | Capacidade 08 em desenvolvimento, com fundamentos, ciclo de vida, visualização e controle consolidados e progresso editorial de 60% |
 | Fundamentos Iniciais da Capacidade de Experiências | Manter | PAS-001-EXP-FOUNDATION-001 1.0.0 define finalidade, pergunta central, singularidade, distinções, titularidade, temporalidade, sensibilidade, relações, estados, eventos, controles e limites iniciais |
 | Ciclo de Vida das Experiências | Manter | PAS-001-EXP-LIFECYCLE-001 1.0.0 define dimensões independentes, estados, transições, identificação, validação da ocorrência, planejamento, participação, recorrência, resultados, memórias, correção, revogação, propagação, idempotência e falha segura |
+| Visualização e Controle das Experiências | Manter | PAS-001-EXP-VIEW-001 1.0.0 define Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura |
+| Minhas Experiências | Manter | Superfície principal de compreensão, acompanhamento, revisão e controle, distinta de feed social, mural de conquistas ou histórico comercial |
+| Privacidade visual de experiência | Manter | Títulos neutros, prévias protegidas, ocultação de participantes e localização, modo discreto, autenticação e restrição de mídias |
 | Estado funcional da experiência | Refinar | Identificação, candidatura, validação, planejamento, preparação, início, andamento, pausa, retomada, conclusão, interrupção, cancelamento, expiração, contestação, correção, revogação, arquivamento e falha permanecem estados distinguíveis |
 | Ocorrência da experiência | Refinar | Possibilidade, probabilidade, confirmação parcial, confirmação, divergência, contestação, não confirmação e impossibilidade de determinar preservam incerteza |
 | Experiência | Refinar | Vivência efetivamente situada no tempo; distinta de atividade, presença, participação, entrega, resultado, satisfação, memória, significado e transformação |
@@ -304,8 +307,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02, 03, 04, 05, 06 e 07 estão funcionalmente concluídas. `PAS-001-EXP-LIFECYCLE-001 1.0.0` mantém a Capacidade 08 como `In progress`, eleva o progresso editorial para 40% e consolida dimensões independentes, estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, entregas, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e consistência técnica, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02, 03, 04, 05, 06 e 07 estão funcionalmente concluídas. `PAS-001-EXP-VIEW-001 1.0.0` mantém a Capacidade 08 como `In progress`, eleva o progresso editorial para 60% e consolida Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, participantes, entregas, resultados, percepção, satisfação, evidências, memórias, significado, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar a **visualização e o controle da Capacidade 08 — Experiências**, incluindo superfícies, cartões, linha do tempo, calendário, episódios, participantes, estados independentes, evidências, memórias, significado, privacidade, explicabilidade, contestação, correção, revogação, acessibilidade e falha segura.
+Consolidar os **eventos funcionais da Capacidade 08 — Experiências**, incluindo agregado principal, estrutura comum, famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução, retenção, auditoria e falha segura.
