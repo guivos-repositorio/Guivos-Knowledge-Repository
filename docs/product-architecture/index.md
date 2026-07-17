@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.13.0
+version: 1.14.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -363,6 +363,7 @@ As extensões normativas vigentes são:
 - `PAS-001-EXP-LIFECYCLE-001 1.0.0` — estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e falha segura;
 - `PAS-001-EXP-VIEW-001 1.0.0` — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura;
 - `PAS-001-EXP-EVENT-001 1.0.0` — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria.
+- `PAS-001-EXP-INTEGRATION-001 1.0.0` — contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, capacidades, produtos, organizações, dispositivos, canais, observabilidade e falha segura.
 
 Os fundamentos consolidam:
 
@@ -419,9 +420,24 @@ O ciclo de vida consolida:
 - correção compensatória, revogação propagada, retenção proporcional, explicabilidade e auditoria;
 - 30 comportamentos proibidos e 60 critérios de aceite.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de `80%`.
+`PAS-001-EXP-INTEGRATION-001 1.0.0` consolida:
 
-O próximo bloco deverá consolidar as integrações funcionais das Experiências.
+- integração funcional como intercâmbio governado sem reconhecimento automático da experiência;
+- titularidade, produtores, consumidores, modos, finalidade, autoridade, escopo, sensibilidade, proveniência, temporalidades, permissões, retenção e relação comercial;
+- identidade e associação confiáveis, com limitação de efeitos diante de incerteza e correção auditável de associações incorretas;
+- qualidade técnica, confiança funcional, completude e autoridade como dimensões independentes;
+- transformações permitidas e proibição de fabricar ocorrência, participação, percepção, satisfação, memória, significado, transformação ou evolução;
+- minimização, recortes funcionais, consentimento granular, proteção de terceiros e neutralidade comercial;
+- séries, episódios, experiências compartilhadas, operação offline e sincronização reconciliável;
+- pausa, desconexão, revogação, propagação e retenção residual justificada;
+- ordenação, concorrência, prevenção de ciclos, tempo real limitado, lote, retentativas e falha segura;
+- integrações com todas as capacidades do Journey, Guivos Intelligence e Platform Layer;
+- integrações com Mall, Travel, Business, Media, Ads, organizações, profissionais, setores sensíveis, esportes, dispositivos, calendários, localização, mídias, fontes públicas e sistemas externos;
+- observabilidade, explicabilidade, auditoria, reconstrução, 30 comportamentos proibidos e 52 critérios de aceite.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de `90%`.
+
+O próximo bloco deverá consolidar KPIs, guardrails, baseline, cenários e o contrato final das Experiências.
 
 ## Regras arquiteturais
 

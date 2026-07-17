@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 10.4.0
+version: 10.5.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -40,6 +40,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-EXP-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Experiências |
 | PAS-001-EXP-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Experiências |
 | PAS-001-EXP-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Experiências |
+| PAS-001-EXP-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Experiências |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -56,13 +57,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas` e `07 — Intervenções Contextuais` |
 | Capacidade ativa | `08 — Experiências` |
 | Estado da capacidade ativa | `In progress` |
-| Extensões normativas vigentes | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0` e `PAS-001-EXP-EVENT-001 1.0.0` |
-| Progresso editorial de Experiências | `80%` |
+| Extensões normativas vigentes | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0` e `PAS-001-EXP-INTEGRATION-001 1.0.0` |
+| Progresso editorial de Experiências | `90%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar as integrações funcionais da Capacidade 08 — Experiências |
+| Foco imediato | Consolidar KPIs, guardrails, baseline, cenários e contrato final da Capacidade 08 — Experiências |
 
 ## Capacidades do Journey
 
@@ -75,7 +76,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
 | 07 — Intervenções Contextuais | Functionally complete — 100% | Seis extensões normativas, 80 KPIs, 28 guardrails, baseline, cenários e contrato final consolidados |
-| 08 — Experiências | In progress — 80% | Fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados; integrações funcionais são a próxima entrega |
+| 08 — Experiências | In progress — 90% | Fundamentos, ciclo de vida, visualização, controle, eventos e integrações funcionais consolidados; contrato final é a próxima entrega |
 | 09 — Evolução Contínua | Planned | — |
 
 ## Baselines concluídas
@@ -409,7 +410,29 @@ A Capacidade 07 está `Functionally complete`, com progresso editorial de refer�
 - acessibilidade, consistência entre canais, dispositivos compartilhados, operação offline e falha segura;
 - 30 comportamentos proibidos e 70 critérios de aceite.
 
-A Capacidade 08 está `In progress`, com progresso editorial de referência de `60%`.
+### Eventos funcionais
+
+- distinção entre sinal, comando, proposta, declaração, evento e efeito;
+- Registro de Experiência como agregado funcional principal;
+- estrutura comum versionada com titular, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, permissões, incerteza e retenção;
+- 19 famílias de eventos cobrindo identificação, ocorrência, planejamento, participação, encerramento, resultados, percepção, evidências, memórias, significado, privacidade, compartilhamento, correção, revogação, sincronização e reconstrução;
+- persistência anterior à publicação, idempotência, ordenação, concorrência, atomicidade, compatibilidade e falha segura;
+- correção compensatória, revogação propagada, explicabilidade, auditoria, 30 comportamentos proibidos e 60 critérios de aceite.
+
+### Integrações funcionais
+
+- integração funcional sem reconhecimento automático do vivido;
+- contrato comum, produtores, consumidores, titularidade, finalidade, autoridade, escopo, sensibilidade, proveniência, temporalidades, permissões, retenção, sincronização, revogação e falha;
+- identidade confiável, associação incerta limitada e correção auditável;
+- qualidade, confiança, completude e autoridade separadas;
+- transformações permitidas e proibição de fabricar ocorrência, participação, percepção, satisfação, memória, significado, transformação ou evolução;
+- minimização, consentimento granular, séries, episódios, experiências compartilhadas, operação offline e proteção de terceiros;
+- pausa, desconexão, revogação, propagação, prevenção de ciclos, tempo real limitado e falha segura;
+- integrações com capacidades, produtos, organizações, profissionais, dispositivos, canais e sistemas externos;
+- observabilidade, explicabilidade, auditoria, reconstrução, 30 comportamentos proibidos e 52 critérios de aceite.
+
+A Capacidade 08 está `In progress`, com progresso editorial de referência de `90%`.
+
 
 ## Conceitos internos preservados
 
@@ -421,10 +444,12 @@ A Capacidade 08 está `In progress`, com progresso editorial de referência de `
 | Próximos Passos | Functionally complete — 100% |
 | Oportunidades Ativas | Functionally complete — 100% |
 | Intervenções Contextuais | Functionally complete — 100% |
-| Experiências | In progress — 60% |
+| Experiências | In progress — 90% |
 | Fundamentos de Experiências | Normative 1.0.0 |
 | Ciclo de Vida de Experiências | Normative 1.0.0 |
 | Visualização e Controle de Experiências | Normative 1.0.0 |
+| Eventos Funcionais de Experiências | Normative 1.0.0 |
+| Integrações Funcionais de Experiências | Normative 1.0.0 |
 | Minhas Experiências | Superfície principal de compreensão, revisão e controle, distinta de feed social |
 | Privacidade visual de experiência | Títulos neutros, prévias protegidas, modo discreto, autenticação e restrição de mídias |
 | Estado funcional da experiência | Identificada, Candidata, Em validação, Rejeitada, Planejada, Em preparação, Pronta, Iniciada, Em andamento, Pausada, Retomada, Concluída, Interrompida, Cancelada, Expirada, Contestada, Corrigida, Revogada, Arquivada ou Falha |
@@ -512,8 +537,8 @@ A Capacidade 08 está `In progress`, com progresso editorial de referência de `
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 10.2.0 |
-| Knowledge Board | 10.2.0 |
+| Roadmap | 10.5.0 |
+| Knowledge Board | 10.5.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -542,6 +567,6 @@ A Capacidade 08 está `In progress`, com progresso editorial de referência de `
 | AR-001 | Completed 0.5.0 |
 | GE2-SYNC-007 | Completed 1.0.0 |
 
-## Próximo ponto de retomada
+## Próxima atividade
 
-Consolidar as **integrações funcionais da Capacidade 08 — Experiências**, incluindo contrato comum, titularidade, finalidade, minimização, autoridade, proveniência, sensibilidade, sincronização, prevenção de ciclos, contestação, correção, revogação, observabilidade e falha segura.
+Consolidar os **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários funcionalmente ideal, alternativo e limite, critérios de conclusão, lacunas bloqueantes e não bloqueantes, critérios de reabertura e contrato final da Capacidade 08 — Experiências**.
