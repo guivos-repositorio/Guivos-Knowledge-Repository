@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "<stdin>", line 12, in <module>
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/tools/sync_exp_event_payload.py", line 129, in <module>
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/tools/sync_exp_event_payload.py", line 25, in regex_once
-RuntimeError: docs/project/knowledge-board.md: retomada: esperado 1 match, encontrado 0
