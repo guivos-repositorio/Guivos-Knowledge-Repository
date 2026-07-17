@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 10.0.0
+version: 10.1.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -36,6 +36,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-IC-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Intervenções Contextuais |
 | PAS-001-IC-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Intervenções Contextuais |
 | PAS-001-IC-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final das Intervenções Contextuais |
+| PAS-001-EXP-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Experiências |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -50,15 +51,15 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas` e `07 — Intervenções Contextuais` |
-| Próxima capacidade | `08 — Experiências` |
-| Estado da próxima capacidade | `Planned` |
-| Extensão normativa vigente | `PAS-001-IC-CONTRACT-001 1.0.0` |
-| Progresso editorial de Intervenções Contextuais | `100%` |
+| Capacidade ativa | `08 — Experiências` |
+| Estado da capacidade ativa | `In progress` |
+| Extensão normativa vigente | `PAS-001-EXP-FOUNDATION-001 1.0.0` |
+| Progresso editorial de Experiências | `20%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar os fundamentos iniciais da Capacidade 08 — Experiências |
+| Foco imediato | Consolidar as regras do ciclo de vida da Capacidade 08 — Experiências |
 
 ## Capacidades do Journey
 
@@ -71,7 +72,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
 | 07 — Intervenções Contextuais | Functionally complete — 100% | Seis extensões normativas, 80 KPIs, 28 guardrails, baseline, cenários e contrato final consolidados |
-| 08 — Experiências | Planned | — |
+| 08 — Experiências | In progress — 20% | Fundamentos iniciais consolidados; ciclo de vida é a próxima entrega |
 | 09 — Evolução Contínua | Planned | — |
 
 ## Baselines concluídas
@@ -355,6 +356,28 @@ O contrato final consolidou 68 KPIs em 14 famílias, 20 guardrails de tolerânci
 
 A Capacidade 07 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
+## Consolidação inicial da Capacidade 08 — Experiências
+
+### Fundamentos iniciais
+
+- pergunta central sobre o que foi efetivamente vivido, em qual contexto e com qual forma de participação;
+- singularidade centrada no vivido e na distinção entre ocorrência, percepção, resultado, memória, significado e transformação;
+- Experiência definida como vivência efetivamente situada no tempo;
+- distinção entre atividade, presença, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida;
+- Registro de Experiência como unidade funcional;
+- identidade, titularidade, participantes, papéis e autoridade;
+- experiências compartilhadas, coletivas, institucionais, físicas, digitais e híbridas;
+- tipos, origem, intenção, convite, inscrição, candidatura e validação da ocorrência;
+- temporalidades, início, encerramento, duração, intensidade, recorrência, episódios e continuidade;
+- presença, envolvimento, agência, autonomia e expectativas;
+- contexto mínimo, sensibilidade, privacidade, acessibilidade, segurança e proteção de terceiros;
+- entregas, resultados, satisfação, evidências, memórias, significado e reflexão;
+- relações com Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas, Intervenções Contextuais e Evolução Contínua;
+- limites da Guivos Intelligence, Platform Layer, produtos especializados, organizações e profissionais;
+- neutralidade comercial, estados, eventos, controles, explicabilidade, responsabilidades e comportamentos proibidos.
+
+A Capacidade 08 está `In progress`, com progresso editorial de referência de `20%`.
+
 ## Conceitos internos preservados
 
 | Conceito | Estado |
@@ -365,6 +388,11 @@ A Capacidade 07 está `Functionally complete`, com progresso editorial de refer�
 | Próximos Passos | Functionally complete — 100% |
 | Oportunidades Ativas | Functionally complete — 100% |
 | Intervenções Contextuais | Functionally complete — 100% |
+| Experiências | In progress — 20% |
+| Fundamentos de Experiências | Normative 1.0.0 |
+| Registro de Experiência | Agregado que preserva identidade, contexto, temporalidades, participantes, percepções, resultados, evidências, memórias, significados, correções e permissões |
+| Experiência | Vivência efetivamente situada no tempo; distinta de atividade, presença, participação, entrega, resultado e transformação |
+| Significado da experiência | Interpretação opcional, pessoal ou coletiva autorizada, revisável e não imposta |
 | Fundamentos de Intervenções Contextuais | Normative 1.0.0 |
 | Ciclo de Vida de Intervenções Contextuais | Normative 1.0.0 |
 | Visualização e Controle de Intervenções Contextuais | Normative 1.0.0 |
@@ -445,8 +473,8 @@ A Capacidade 07 está `Functionally complete`, com progresso editorial de refer�
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 10.0.0 |
-| Knowledge Board | 10.0.0 |
+| Roadmap | 10.1.0 |
+| Knowledge Board | 10.1.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -465,6 +493,7 @@ A Capacidade 07 está `Functionally complete`, com progresso editorial de refer�
 | PAS-001-IC-EVENT-001 | Active 1.0.0 |
 | PAS-001-IC-INTEGRATION-001 | Active 1.0.0 |
 | PAS-001-IC-CONTRACT-001 | Active 1.0.0 |
+| PAS-001-EXP-FOUNDATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -474,4 +503,4 @@ A Capacidade 07 está `Functionally complete`, com progresso editorial de refer�
 
 ## Próxima atividade
 
-Consolidar os **fundamentos iniciais da Capacidade 08 — Experiências**, incluindo singularidade, experiência vivida, distinções fundamentais, titularidade, temporalidade, sensibilidade, relações, estados, limites e integrações iniciais. A capacidade permanece `Planned` até a aprovação de sua primeira extensão normativa.
+Consolidar as **regras do ciclo de vida da Capacidade 08 — Experiências**, incluindo identificação, candidatura, validação da ocorrência, planejamento, preparação, início, participação, acompanhamento, pausa, retomada, conclusão, interrupção, cancelamento, recorrência, episódios, entrega, resultado, percepção, satisfação, evidência, memória, significado, contestação, correção, revogação, propagação e falha segura.
