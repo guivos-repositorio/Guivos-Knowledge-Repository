@@ -353,7 +353,7 @@ O contrato final consolida:
 
 A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-## Capacidade 08 ativa
+## Capacidade 08 concluída
 
 ### Capacidade 08 — Experiências
 

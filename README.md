@@ -361,19 +361,18 @@ Retomar nas **Regras do Ciclo de Vida da Capacidade 09 — Evolução Contínua*
 
 Próxima entrega:
 
-- finalidade e pergunta central;
-- singularidade da evolução contínua;
-- mudança observada, direção, temporalidade e evidência;
-- interpretação, causalidade e progresso humano não linear;
-- autonomia, limites e proteção contra avaliação moral;
-- relações com as demais capacidades do Journey.
+- identificação de mudança, candidatura e baseline;
+- observação, interpretação, direção e confirmação;
+- estabilidade, progressão, oscilação, regressão, interrupção e reorientação;
+- contestação, correção, revogação e propagação;
+- idempotência, ordenação, reconstrução e falha segura.
 
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua permanece `Planned`.
+As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua está `In progress — 20%`.
 
 ## Capacidades do Journey
 

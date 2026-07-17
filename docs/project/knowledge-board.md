@@ -609,6 +609,10 @@ A Capacidade 09 está `In progress`, com progresso editorial de referência de `
 | PAS-001-EXP-FOUNDATION-001 | Active 1.0.0 |
 | PAS-001-EXP-LIFECYCLE-001 | Active 1.0.0 |
 | PAS-001-EXP-VIEW-001 | Active 1.0.0 |
+| PAS-001-EXP-EVENT-001 | Active 1.0.0 |
+| PAS-001-EXP-INTEGRATION-001 | Active 1.0.0 |
+| PAS-001-EXP-CONTRACT-001 | Active 1.0.0 |
+| PAS-001-EC-FOUNDATION-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
