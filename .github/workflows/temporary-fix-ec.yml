@@ -1,0 +1,12 @@
+name: Temporary EC Consistency Check
+on:
+  push:
+    branches:
+      - agent/evolucao-continua-fundamentos
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo validation-only
