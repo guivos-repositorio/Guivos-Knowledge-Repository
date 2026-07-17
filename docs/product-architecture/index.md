@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.17.0
+version: 1.18.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -450,7 +450,7 @@ O ciclo de vida consolida:
 
 A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `40%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0` e `PAS-001-EC-LIFECYCLE-001 1.0.0`.
+A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `60%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0` e `PAS-001-EC-VIEW-001 1.0.0`.
 
 
 ## Capacidade 09 ativa
@@ -487,9 +487,22 @@ A Capacidade 09 — Evolução Contínua está `In progress`, com progresso edit
 - casos sensíveis, contestação, correção, revogação, propagação, retroatividade, idempotência, ordenação, concorrência, reconstrução e falha segura;
 - 32 comportamentos proibidos e 64 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `40%`.
+`PAS-001-EC-VIEW-001 1.0.0` consolida:
 
-O próximo bloco normativo é a visualização e o controle da Evolução Contínua.
+- `Minha Evolução` como superfície principal de compreensão, acompanhamento, revisão e controle;
+- trajetórias por dimensão, período e segmento, sem nota global ou ranking humano;
+- visão geral, áreas funcionais, lista, cartões, linha do tempo, períodos comparados, matriz de dimensões e gráficos limitados;
+- baseline, direção, estados, padrões, evidências, confiança, incerteza, observações, interpretações e causalidade representados separadamente;
+- interpretações do participante, profissionais, institucionais e automatizadas com autoria, autoridade e alternativas preservadas;
+- estabilidade, manutenção, progressão, oscilação, regressão, recuperação, reorientação e inconclusão com linguagem não julgadora;
+- proteção de espiritualidade, saúde, trabalho, educação, finanças, voluntariado, trajetórias coletivas e terceiros;
+- controles de associação, pausa, encerramento, contestação, correção, revogação, compartilhamento e exportação;
+- acessibilidade técnica e cognitiva, privacidade visual, consistência entre canais e falha segura;
+- 34 comportamentos proibidos e 72 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `60%`.
+
+O próximo bloco normativo são os eventos funcionais da Evolução Contínua.
 
 ## Regras arquiteturais
 
