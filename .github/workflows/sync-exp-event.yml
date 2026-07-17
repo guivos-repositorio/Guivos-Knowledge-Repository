@@ -3,7 +3,7 @@ name: Sync EXP Events
 on:
   pull_request:
     types:
-      - reopened
+      - synchronize
     branches:
       - main
     paths:
