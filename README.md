@@ -11,9 +11,10 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais
-- **Próxima capacidade:** 08 — Experiências, `Planned`, 0%
+- **Capacidade ativa:** 08 — Experiências, `In progress`, 20%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
+- **Extensão vigente de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -262,28 +263,48 @@ A Capacidade 06 está **Functionally complete**, com progresso editorial de refe
 
 A Capacidade 07 está **Functionally complete**, com progresso editorial de referência de **100%**.
 
+## Capacidade 08 — Experiências
+
+`PAS-001-EXP-FOUNDATION-001 1.0.0` consolida:
+
+- finalidade, pergunta central, singularidade e valor entregue;
+- Experiência como vivência efetivamente situada no tempo;
+- distinções entre atividade, presença, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida;
+- `Registro de Experiência` como unidade funcional;
+- identidade, titularidade, participantes, papéis e autoridade;
+- experiências compartilhadas, coletivas, institucionais, físicas, digitais e híbridas;
+- origem, intenção, candidatura e reconhecimento da ocorrência;
+- temporalidades, duração, intensidade, recorrência, episódios e continuidade;
+- presença, envolvimento, agência, autonomia e expectativas;
+- contexto mínimo, sensibilidade, privacidade, acessibilidade, segurança e proteção de terceiros;
+- entregas, resultados, satisfação, evidências, memórias, significado e reflexão;
+- limites para transformação, Eventos de Vida e Evolução Contínua;
+- relações com as capacidades do Journey, Guivos Intelligence, Platform Layer, produtos, organizações e profissionais;
+- neutralidade comercial, estados, eventos, controles, explicabilidade, responsabilidades, limites e comportamentos proibidos.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de **20%**.
+
 ## Ponto exato de retomada
 
-Retomar nos fundamentos iniciais da Capacidade 08 — Experiências.
+Retomar nas regras do ciclo de vida da Capacidade 08 — Experiências.
 
 Próxima entrega:
 
-- finalidade e pergunta central da capacidade;
-- singularidade da experiência vivida;
-- distinção entre atividade, participação, entrega, resultado, satisfação, evidência, memória, significado, transformação e Evento de Vida;
-- titularidade, participantes, papéis e autoridade;
-- temporalidade, duração, intensidade e recorrência;
-- sensibilidade, privacidade e informações de terceiros;
-- relações com Objetivos, Eventos de Vida, Próximos Passos, Oportunidades Ativas e Intervenções Contextuais;
-- estados, transições, responsabilidades, limites e comportamentos proibidos iniciais.
-
-A Capacidade 08 permanece `Planned` até a aprovação de sua primeira extensão normativa.
+- identificação, candidatura e validação da ocorrência;
+- planejamento, preparação, prontidão e início;
+- presença, participação, envolvimento e acompanhamento;
+- pausa, retomada, conclusão, interrupção, cancelamento e expiração;
+- recorrência, séries, episódios e continuidade;
+- entregas, resultados, percepções e satisfação;
+- evidências, memórias, significado e reflexão;
+- contestação, correção, revogação e propagação;
+- ordenação, concorrência, reconstrução e falha segura.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências permanece `Planned`.
+As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências está `In progress`, com progresso editorial de referência de `20%`.
 
 ## Capacidades do Journey
 
@@ -296,7 +317,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
-| 08 — Experiências | Planned |
+| 08 — Experiências | In progress — 20% |
 | 09 — Evolução Contínua | Planned |
 
 ## Acesso rápido
@@ -319,6 +340,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 - [Eventos Funcionais das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md)
 - [Integrações Funcionais das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais.md)
 - [Contrato Final das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
+- [Fundamentos Iniciais de Experiências](docs/product-architecture/pas-001-experiencias-fundamentos-iniciais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
