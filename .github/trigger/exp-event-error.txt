@@ -1,11 +1,5 @@
 Traceback (most recent call last):
-  File "<stdin>", line 10, in <module>
-  File "tools/sync_exp_event_payload.py", line 38, in <module>
-  File "tools/sync_exp_event_payload.py", line 9, in read
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/pathlib.py", line 1027, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/pathlib.py", line 1013, in open
-    return io.open(self, mode, buffering, encoding, errors, newline)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/Guivos-Knowledge-Repository/docs/product-architecture/index.md'
+  File "<stdin>", line 12, in <module>
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/tools/sync_exp_event_payload.py", line 129, in <module>
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/tools/sync_exp_event_payload.py", line 25, in regex_once
+RuntimeError: docs/project/knowledge-board.md: retomada: esperado 1 match, encontrado 0
