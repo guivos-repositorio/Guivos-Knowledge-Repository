@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 10.3.0
+version: 10.4.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -19,10 +19,10 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas` e `07 — Intervenções Contextuais`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
-- **Capacidade ativa:** `08 — Experiências`, `In progress`, 60%.
+- **Capacidade ativa:** `08 — Experiências`, `In progress`, 80%.
 - **Extensões normativas vigentes de Oportunidades Ativas:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
 - **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0`.
-- **Extensões normativas vigentes de Experiências:** `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0` e `PAS-001-EXP-VIEW-001 1.0.0`.
+- **Extensões normativas vigentes de Experiências:** `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0` e `PAS-001-EXP-EVENT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -33,7 +33,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os eventos funcionais da `Capacidade 08 — Experiências`.
+O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 08 — Experiências`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -339,7 +339,18 @@ A Capacidade 07 está `Functionally complete`, com progresso editorial de refer�
 - acessibilidade, consistência entre canais, dispositivos compartilhados, operação offline e falha segura;
 - 30 comportamentos proibidos e 70 critérios de aceite.
 
-A Capacidade 08 está `In progress`, com progresso editorial de referência de `60%`.
+`PAS-001-EXP-EVENT-001 1.0.0` consolida:
+
+- distinção entre sinal, comando, proposta, declaração, evento e efeito;
+- `Registro de Experiência` como agregado funcional principal;
+- estrutura comum versionada com titular, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, permissões, incerteza e retenção;
+- 19 famílias de eventos cobrindo identificação, ocorrência, planejamento, participação, encerramento, resultados, percepção, evidências, memórias, significado, privacidade, compartilhamento, correção, revogação, sincronização e reconstrução;
+- persistência anterior à publicação e consumo limitado à semântica do evento;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, compatibilidade e falha segura;
+- correção compensatória, revogação propagada, retenção proporcional, explicabilidade e auditoria;
+- 30 comportamentos proibidos e 60 critérios de aceite.
+
+A Capacidade 08 está `In progress`, com progresso editorial de referência de `80%`.
 
 ## Progresso das capacidades do Journey
 
@@ -352,7 +363,7 @@ A Capacidade 08 está `In progress`, com progresso editorial de referência de `
 | 05 — Próximos Passos | Functionally complete | 100% |
 | 06 — Oportunidades Ativas | Functionally complete | 100% |
 | 07 — Intervenções Contextuais | Functionally complete | 100% |
-| 08 — Experiências | In progress | 60% |
+| 08 — Experiências | In progress | 80% |
 | 09 — Evolução Contínua | Planned | 0% |
 
 Os percentuais são referências editoriais de acompanhamento, não medição automatizada.
@@ -424,13 +435,13 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nos **eventos funcionais da Capacidade 08 — Experiências**.
+Retomar nas **integrações funcionais da Capacidade 08 — Experiências**.
 
 Próxima entrega:
 
-1. agregado funcional principal e estrutura comum dos eventos;
-2. famílias de identificação, validação, planejamento, participação, encerramento, resultados e memórias;
-3. autoridade, finalidade, proveniência, sensibilidade e temporalidades;
-4. eventos de visualização, controle, compartilhamento, contestação, correção e revogação;
-5. idempotência, ordenação, concorrência, atomicidade e reconstrução;
-6. retenção, auditoria, explicabilidade e falha segura.
+1. contrato comum de integração e recortes minimizados;
+2. titularidade, finalidade, autoridade, proveniência, sensibilidade, permissões e retenção;
+3. integrações com as Capacidades 01 a 07 e candidatura limitada para Evolução Contínua;
+4. integrações com Guivos Intelligence, Platform Layer e produtos especializados;
+5. organizações, profissionais, canais, calendários, localização, dispositivos, mídias, fontes públicas e sistemas externos;
+6. sincronização, prevenção de ciclos, contestação, correção, revogação, observabilidade e falha segura.

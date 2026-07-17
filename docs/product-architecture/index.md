@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.12.0
+version: 1.13.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -361,7 +361,8 @@ As extensões normativas vigentes são:
 
 - `PAS-001-EXP-FOUNDATION-001 1.0.0` — finalidade, pergunta central, definição canônica, singularidade, distinções, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais;
 - `PAS-001-EXP-LIFECYCLE-001 1.0.0` — estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e falha segura;
-- `PAS-001-EXP-VIEW-001 1.0.0` — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura.
+- `PAS-001-EXP-VIEW-001 1.0.0` — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura;
+- `PAS-001-EXP-EVENT-001 1.0.0` — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria.
 
 Os fundamentos consolidam:
 
@@ -407,9 +408,20 @@ O ciclo de vida consolida:
 - acessibilidade, consistência entre canais, dispositivos compartilhados, operação offline e falha segura;
 - 30 comportamentos proibidos e 70 critérios de aceite.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de `60%`.
+`PAS-001-EXP-EVENT-001 1.0.0` consolida:
 
-O próximo bloco deverá consolidar os eventos funcionais das Experiências.
+- distinção entre sinal, comando, proposta, declaração, evento e efeito;
+- `Registro de Experiência` como agregado funcional principal;
+- estrutura comum versionada com titular, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, permissões, incerteza e retenção;
+- 19 famílias de eventos cobrindo identificação, ocorrência, planejamento, participação, encerramento, resultados, percepção, evidências, memórias, significado, privacidade, compartilhamento, correção, revogação, sincronização e reconstrução;
+- persistência anterior à publicação e consumo limitado à semântica do evento;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, compatibilidade e falha segura;
+- correção compensatória, revogação propagada, retenção proporcional, explicabilidade e auditoria;
+- 30 comportamentos proibidos e 60 critérios de aceite.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de `80%`.
+
+O próximo bloco deverá consolidar as integrações funcionais das Experiências.
 
 ## Regras arquiteturais
 
@@ -1233,6 +1245,46 @@ O próximo bloco deverá consolidar os eventos funcionais das Experiências.
 818. Produtos especializados preservam estados canônicos e controles equivalentes.
 819. Métricas avaliam a interface, não o valor humano do participante.
 820. `PAS-001-EXP-VIEW-001 1.0.0` eleva a Capacidade 08 para `60%`, mantém `In progress` e preserva o participante no controle.
+821. Sinal, comando, proposta, declaração, evento e efeito permanecem distintos.
+822. Evento material somente é publicado após persistência funcional suficiente.
+823. `Registro de Experiência` é o agregado funcional principal dos eventos.
+824. Eventos possuem identidade imutável, versão contratual e versão do agregado.
+825. Titular, participante, ator, fonte, executor e terceiro afetado permanecem distintos.
+826. Autoridade técnica não amplia autoridade funcional.
+827. Finalidade genérica ou comercial não justifica contexto pessoal ou sensível.
+828. Temporalidades do fato, declaração, conhecimento, reconhecimento e registro permanecem distintas.
+829. Correlação não representa causalidade.
+830. Proveniência permite reconstruir fonte, transformações, decisão, evento, consumidor e efeito.
+831. Sensibilidade governa payload, logs, retenção, visualização e consumidores.
+832. Payload é minimizado à finalidade declarada.
+833. Relações comerciais são declaradas e não alteram semântica funcional.
+834. Incerteza é explícita, preservada e contestável.
+835. Identificação e candidatura não representam ocorrência.
+836. Ocorrência não representa presença ou participação.
+837. Planejamento, reserva, inscrição e compra não representam início.
+838. Presença e participação permanecem eventos individuais distintos.
+839. Envolvimento, agência e autonomia não são inferidos silenciosamente.
+840. Conclusão não representa resultado, satisfação, significado ou transformação.
+841. Séries e episódios preservam identidades e estados próprios.
+842. Recorrência não representa evolução.
+843. Entrega, uso, resultado e efeito permanecem distintos.
+844. Percepção e satisfação são opcionais e pertencem ao participante.
+845. Evidência declara escopo, autoridade, limites e validade.
+846. Memória permanece distinta de evidência e preserva autoria.
+847. Significado e reflexão são opcionais e privados por padrão.
+848. Candidaturas a Evento de Vida e transformação não confirmam seus objetos.
+849. Estado coletivo não substitui estados individuais.
+850. Visualização não representa interesse, satisfação ou significado.
+851. Compartilhamento é granular, finalístico, temporário e revogável.
+852. Proteção de terceiros é aplicada antes da publicação e do consumo.
+853. Executor externo confirma somente fatos dentro da própria autoridade.
+854. Contestação limita efeitos incompatíveis.
+855. Correções são compensatórias e eventos históricos não são reescritos.
+856. Revogação somente se conclui após propagação suficiente.
+857. Retentativas e reprocessamentos não duplicam efeitos.
+858. Eventos fora de ordem e conflitos de versão são reconciliados com segurança.
+859. Recuperação reconstrói versões, correções e revogações preservando lacunas.
+860. `PAS-001-EXP-EVENT-001 1.0.0` eleva a Capacidade 08 para `80%`, mantém `In progress` e preserva o participante no controle.
 
 ## Documentos do domínio
 
@@ -1257,6 +1309,7 @@ O próximo bloco deverá consolidar os eventos funcionais das Experiências.
 - [PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências](pas-001-experiencias-fundamentos-iniciais.md)
 - [PAS-001-EXP-LIFECYCLE-001 — Regras do Ciclo de Vida das Experiências](pas-001-experiencias-ciclo-de-vida.md)
 - [PAS-001-EXP-VIEW-001 — Visualização e Controle da Capacidade de Experiências](pas-001-experiencias-visualizacao-controle.md)
+- [PAS-001-EXP-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Experiências](pas-001-experiencias-eventos-funcionais.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)

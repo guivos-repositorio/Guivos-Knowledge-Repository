@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 10.3.0
+version: 10.4.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -39,6 +39,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-EXP-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Experiências |
 | PAS-001-EXP-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida das Experiências |
 | PAS-001-EXP-VIEW-001 | Active 1.0.0 | Definir a visualização e o controle das Experiências |
+| PAS-001-EXP-EVENT-001 | Active 1.0.0 | Definir os contratos dos eventos funcionais das Experiências |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -55,13 +56,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas` e `07 — Intervenções Contextuais` |
 | Capacidade ativa | `08 — Experiências` |
 | Estado da capacidade ativa | `In progress` |
-| Extensões normativas vigentes | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0` e `PAS-001-EXP-VIEW-001 1.0.0` |
-| Progresso editorial de Experiências | `60%` |
+| Extensões normativas vigentes | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0` e `PAS-001-EXP-EVENT-001 1.0.0` |
+| Progresso editorial de Experiências | `80%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar os eventos funcionais da Capacidade 08 — Experiências |
+| Foco imediato | Consolidar as integrações funcionais da Capacidade 08 — Experiências |
 
 ## Capacidades do Journey
 
@@ -74,7 +75,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 05 — Próximos Passos | Functionally complete — 100% | Seis extensões normativas, 68 KPIs, 20 guardrails, cenários e contrato final consolidados |
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
 | 07 — Intervenções Contextuais | Functionally complete — 100% | Seis extensões normativas, 80 KPIs, 28 guardrails, baseline, cenários e contrato final consolidados |
-| 08 — Experiências | In progress — 60% | Fundamentos, ciclo de vida, visualização e controle consolidados; eventos funcionais são a próxima entrega |
+| 08 — Experiências | In progress — 80% | Fundamentos, ciclo de vida, visualização, controle e eventos funcionais consolidados; integrações funcionais são a próxima entrega |
 | 09 — Evolução Contínua | Planned | — |
 
 ## Baselines concluídas
@@ -541,6 +542,6 @@ A Capacidade 08 está `In progress`, com progresso editorial de referência de `
 | AR-001 | Completed 0.5.0 |
 | GE2-SYNC-007 | Completed 1.0.0 |
 
-## Próxima atividade
+## Próximo ponto de retomada
 
-Consolidar os **eventos funcionais da Capacidade 08 — Experiências**, incluindo agregado principal, estrutura comum, famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução, retenção, auditoria e falha segura.
+Consolidar as **integrações funcionais da Capacidade 08 — Experiências**, incluindo contrato comum, titularidade, finalidade, minimização, autoridade, proveniência, sensibilidade, sincronização, prevenção de ciclos, contestação, correção, revogação, observabilidade e falha segura.
