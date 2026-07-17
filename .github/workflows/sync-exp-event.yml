@@ -3,7 +3,7 @@ name: Sync EXP Events
 on:
   pull_request:
     types:
-      - opened
+      - synchronize
     branches:
       - main
     paths:
@@ -69,7 +69,7 @@ jobs:
 
       - name: Commit normative contract
         run: |
-          git add docs/product-architecture/pas-001-experiencias-eventos-funcionais.md .github/trigger/exp-event-error.txt
+          git add docs/product-architecture/pas-001-experiencias-eventos-funcionais.md
           git commit -m "docs(experiencias): consolidar eventos funcionais"
 
       - name: Commit architecture and governance
