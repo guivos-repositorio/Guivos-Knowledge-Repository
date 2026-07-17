@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.11.0
+version: 1.12.0
 owner: Guivos
-last_updated: 2026-07-16
+last_updated: 2026-07-17
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -360,7 +360,8 @@ A Capacidade 07 está **Functionally complete**, com progresso editorial de refe
 As extensões normativas vigentes são:
 
 - `PAS-001-EXP-FOUNDATION-001 1.0.0` — finalidade, pergunta central, definição canônica, singularidade, distinções, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais;
-- `PAS-001-EXP-LIFECYCLE-001 1.0.0` — estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e falha segura.
+- `PAS-001-EXP-LIFECYCLE-001 1.0.0` — estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e falha segura;
+- `PAS-001-EXP-VIEW-001 1.0.0` — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura.
 
 Os fundamentos consolidam:
 
@@ -391,9 +392,24 @@ O ciclo de vida consolida:
 - contestação, correção compensatória, revogação e propagação;
 - idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, reconstrução, retenção, auditoria e falha segura.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de `40%`.
+`PAS-001-EXP-VIEW-001 1.0.0` consolida:
 
-O próximo bloco deverá consolidar a visualização e o controle das Experiências.
+- `Minhas Experiências` como superfície principal de compreensão, acompanhamento, revisão e controle;
+- áreas Agora, Próximas, Linha do tempo, Séries e episódios, Para validar e Arquivo;
+- lista, cartões, calendário, linha do tempo, séries, episódios e mapa opcional;
+- títulos funcionais, títulos neutros, privacidade visual e detalhamento progressivo;
+- representação separada dos estados funcionais, ocorrência, participação, entrega, resultado, percepção, satisfação, evidências, memória, significado, autorização, contestação e propagação;
+- experiências compartilhadas, coletivas e institucionais com autoridade limitada;
+- entregas, resultados, efeitos positivos, negativos, neutros e ambivalentes;
+- percepção e satisfação opcionais, evidências, memórias, significado e reflexão;
+- explicabilidade por `Por que esta experiência está aqui?` e explicação de reconstrução retrospectiva;
+- controles de confirmação, negação, incerteza, visibilidade, compartilhamento, contestação, correção e revogação;
+- acessibilidade, consistência entre canais, dispositivos compartilhados, operação offline e falha segura;
+- 30 comportamentos proibidos e 70 critérios de aceite.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de `60%`.
+
+O próximo bloco deverá consolidar os eventos funcionais das Experiências.
 
 ## Regras arquiteturais
 
@@ -1177,6 +1193,46 @@ O próximo bloco deverá consolidar a visualização e o controle das Experiênc
 778. A capacidade não avalia mérito, fé, valor humano ou evolução pela quantidade de experiências.
 779. Visualização posterior deverá preservar dimensões independentes, privacidade, explicabilidade e controle.
 780. `PAS-001-EXP-LIFECYCLE-001 1.0.0` eleva a Capacidade 08 para `40%`, mantém `In progress` e preserva o participante no controle.
+781. `Minhas Experiências` é superfície de compreensão e controle, não feed social.
+782. Ausência legítima de experiências não deve ser preenchida com publicidade.
+783. Planejamento e ocorrência devem possuir representação visual distinta.
+784. Cartões exibem recortes mínimos e não atribuem emoção ou transformação.
+785. Experiências sensíveis suportam título neutro, prévia protegida e modo discreto.
+786. Linha do tempo preserva momentos do fato, declaração, conhecimento e persistência.
+787. Reconstrução retrospectiva exibe proveniência, lacunas e incerteza.
+788. Calendário preserva precisão temporal e distingue previsão de ocorrência.
+789. Séries e episódios mantêm identidades, participantes e estados próprios.
+790. Localização é opcional, minimizada e proporcional.
+791. Estados independentes não podem ser condensados em rótulo enganoso.
+792. Confirmação de um participante não confirma os demais.
+793. Organizações confirmam fatos institucionais, não percepção ou significado pessoal.
+794. Entrega, resultado, percepção e satisfação permanecem visualmente distintos.
+795. Efeitos negativos, neutros e ambivalentes permanecem registráveis.
+796. Satisfação é opcional e ausência de resposta não produz inferência.
+797. Evidência apresenta fonte, autoridade, escopo e limitações.
+798. Memória permanece distinta de evidência e preserva autoria.
+799. Significado e reflexão são opcionais e privados por padrão.
+800. Experiência não confirma Evento de Vida ou transformação.
+801. Relações comerciais são declaradas e não alteram ordenação funcional.
+802. Publicidade permanece separada da linha do tempo funcional.
+803. Todo registro oferece `Por que esta experiência está aqui?`.
+804. Controles de ocultação, arquivamento, exclusão e revogação permanecem distintos.
+805. Compartilhamento é granular, explicado e revogável.
+806. Contestação material limita efeitos incompatíveis.
+807. Correções são compensatórias, auditáveis e propagadas.
+808. Revogação somente se conclui após propagação suficiente.
+809. Retenção residual é explicada ao participante.
+810. Busca sensível não alimenta publicidade ou perfis paralelos.
+811. Canais limitados mostram menos informação, não informação incompatível.
+812. Dispositivos compartilhados recebem proteção visual reforçada.
+813. Operação offline distingue registro local de confirmação sincronizada.
+814. Conflitos preservam versões, autoridade e histórico.
+815. Retentativas não criam cartões, memórias ou compartilhamentos duplicados.
+816. Inferências são identificadas, explicáveis e contestáveis.
+817. Guivos Intelligence organiza e explica sem impor narrativa ou significado.
+818. Produtos especializados preservam estados canônicos e controles equivalentes.
+819. Métricas avaliam a interface, não o valor humano do participante.
+820. `PAS-001-EXP-VIEW-001 1.0.0` eleva a Capacidade 08 para `60%`, mantém `In progress` e preserva o participante no controle.
 
 ## Documentos do domínio
 
@@ -1200,6 +1256,7 @@ O próximo bloco deverá consolidar a visualização e o controle das Experiênc
 - [PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais](pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências](pas-001-experiencias-fundamentos-iniciais.md)
 - [PAS-001-EXP-LIFECYCLE-001 — Regras do Ciclo de Vida das Experiências](pas-001-experiencias-ciclo-de-vida.md)
+- [PAS-001-EXP-VIEW-001 — Visualização e Controle da Capacidade de Experiências](pas-001-experiencias-visualizacao-controle.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)

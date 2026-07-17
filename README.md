@@ -11,10 +11,10 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais
-- **Capacidade ativa:** 08 — Experiências, `In progress`, 40%
+- **Capacidade ativa:** 08 — Experiências, `In progress`, 60%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0 e PAS-001-EXP-LIFECYCLE-001 1.0.0
+- **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0 e PAS-001-EXP-VIEW-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -298,24 +298,35 @@ A Capacidade 07 está **Functionally complete**, com progresso editorial de refe
 - contestação, correção compensatória, revogação e propagação proporcional;
 - idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, reconstrução, retenção, auditoria e falha segura.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de **40%**.
+`PAS-001-EXP-VIEW-001 1.0.0` consolida:
+
+- `Minhas Experiências` como superfície principal de compreensão, acompanhamento, revisão e controle;
+- áreas Agora, Próximas, Linha do tempo, Séries e episódios, Para validar e Arquivo;
+- lista, cartões, calendário, linha do tempo, séries, episódios e mapa opcional;
+- títulos funcionais, títulos neutros, privacidade visual e detalhamento progressivo;
+- representação separada dos estados funcionais, ocorrência, participação, entrega, resultado, percepção, satisfação, evidências, memória, significado, autorização, contestação e propagação;
+- experiências compartilhadas, coletivas e institucionais com autoridade limitada;
+- entregas, resultados, efeitos positivos, negativos, neutros e ambivalentes;
+- percepção e satisfação opcionais, evidências, memórias, significado e reflexão;
+- explicabilidade por `Por que esta experiência está aqui?` e explicação de reconstrução retrospectiva;
+- controles de confirmação, negação, incerteza, visibilidade, compartilhamento, contestação, correção e revogação;
+- acessibilidade, consistência entre canais, dispositivos compartilhados, operação offline e falha segura;
+- 30 comportamentos proibidos e 70 critérios de aceite.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de **60%**.
 
 ## Ponto exato de retomada
 
-Retomar na visualização e no controle da Capacidade 08 — Experiências.
+Retomar nos eventos funcionais da Capacidade 08 — Experiências.
 
 Próxima entrega:
 
-- superfícies principais de experiências;
-- linha do tempo, calendário, séries e episódios;
-- cartões e detalhamento progressivo;
-- participantes, presença, participação e estados independentes;
-- entregas, resultados, percepções e satisfação;
-- evidências, memórias, significado e reflexão;
-- privacidade visual, conteúdo sensível e proteção de terceiros;
-- explicabilidade, histórico, contestação e correção;
-- revogação, compartilhamento e controles do participante;
-- acessibilidade, consistência entre canais e falha segura.
+- agregado principal e estrutura comum;
+- famílias de eventos de identificação, validação, planejamento, participação, encerramento, resultados e memórias;
+- autoridade, finalidade, proveniência, sensibilidade e temporalidades;
+- eventos de visualização, controle, compartilhamento, contestação, correção e revogação;
+- idempotência, ordenação, concorrência, atomicidade e reconstrução;
+- retenção, auditoria, explicabilidade e falha segura.
 
 ## Product Engineering
 
@@ -359,6 +370,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 - [Contrato Final das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais de Experiências](docs/product-architecture/pas-001-experiencias-fundamentos-iniciais.md)
 - [Ciclo de Vida das Experiências](docs/product-architecture/pas-001-experiencias-ciclo-de-vida.md)
+- [Visualização e Controle das Experiências](docs/product-architecture/pas-001-experiencias-visualizacao-controle.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)

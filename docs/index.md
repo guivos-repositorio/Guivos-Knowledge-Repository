@@ -11,10 +11,10 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 07 — Intervenções Contextuais funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 08 — Experiências em desenvolvimento, `In progress`, 40%;
+- Capacidade 08 — Experiências em desenvolvimento, `In progress`, 60%;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
 - `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
-- `PAS-001-EXP-FOUNDATION-001 1.0.0` e `PAS-001-EXP-LIFECYCLE-001 1.0.0` como extensões normativas vigentes da Capacidade 08;
+- `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0` e `PAS-001-EXP-VIEW-001 1.0.0` como extensões normativas vigentes da Capacidade 08;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -22,9 +22,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar a **visualização e o controle da Capacidade 08 — Experiências**.
+Consolidar os **eventos funcionais da Capacidade 08 — Experiências**.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As duas extensões de Experiências consolidam o vivido, suas distinções, titularidade, temporalidade, sensibilidade, estados, transições, validação da ocorrência, recorrência, resultados, memórias, correção, revogação e falha segura.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As três extensões de Experiências consolidam o vivido, suas distinções, titularidade, ciclo de vida, Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, correção, revogação e falha segura.
 
 ## Acesso rápido
 
@@ -48,6 +48,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Contrato Final das Intervenções Contextuais](product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais de Experiências](product-architecture/pas-001-experiencias-fundamentos-iniciais.md)
 - [Ciclo de Vida das Experiências](product-architecture/pas-001-experiencias-ciclo-de-vida.md)
+- [Visualização e Controle das Experiências](product-architecture/pas-001-experiencias-visualizacao-controle.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -66,9 +67,9 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
-| 08 — Experiências | In progress — 40% |
+| 08 — Experiências | In progress — 60% |
 | 09 — Evolução Contínua | Planned |
 
 ## Ponto de retomada
 
-Retomar na visualização e no controle da Capacidade 08 — Experiências, incluindo superfícies, cartões, linha do tempo, calendário, séries, episódios, participantes, estados independentes, evidências, memórias, significado, privacidade, explicabilidade, contestação, correção, revogação, acessibilidade e falha segura.
+Retomar nos eventos funcionais da Capacidade 08 — Experiências, incluindo agregado principal, estrutura comum, famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução, retenção, auditoria e falha segura.
