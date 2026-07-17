@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.16.0
+version: 1.17.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -253,8 +253,9 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Experiências | Manter | PAS-001-EXP-EVENT-001 1.0.0 define Registro de Experiência, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Experiências | Manter | PAS-001-EXP-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Experiências | Manter | PAS-001-EXP-CONTRACT-001 1.0.0 define 85 KPIs, 17 famílias, 32 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
-| Evolução Contínua | Refinar | Capacidade 09 ativa em 20%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
+| Evolução Contínua | Refinar | Capacidade 09 ativa em 40%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
 | Fundamentos Iniciais da Evolução Contínua | Manter | PAS-001-EC-FOUNDATION-001 1.0.0 define finalidade, singularidade, direção, baseline, trajetória, temporalidades, evidências, causalidade, não linearidade, privacidade, estados, eventos e limites iniciais |
+| Ciclo de Vida da Evolução Contínua | Manter | PAS-001-EC-LIFECYCLE-001 1.0.0 define 17 dimensões independentes, estados, transições, identificação, candidatura, baseline, direção, observação, interpretação, reconhecimento, acompanhamento, não linearidade, contestação, correção, revogação, propagação, reconstrução e falha segura |
 | Trajetória de Evolução | Manter | Unidade funcional com participante, dimensão, direção, baseline, período, estados, mudanças, evidências, interpretações, confiança, incertezas, fatores contribuintes, correções, permissões e histórico |
 | Direção de evolução | Refinar | Referência legítima e revisável; não representa obrigação, sucesso universal ou valor moral |
 | Baseline de evolução | Manter | Referência temporal legítima, preferencialmente centrada na própria trajetória e distinta de ranking populacional |
@@ -326,8 +327,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION-001 1.0.0` inicia a Capacidade 09 como `In progress — 20%` e consolida finalidade, definição canônica, Trajetória de Evolução, direção, baseline, temporalidades, evidências, correlação, causalidade, não linearidade, autoridade, privacidade, estados, eventos, responsabilidades e limites, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION-001 1.0.0` e `PAS-001-EC-LIFECYCLE-001 1.0.0` mantêm a Capacidade 09 como `In progress — 40%` e consolidam finalidade, definição canônica, Trajetória de Evolução, direção, baseline, temporalidades, evidências, causalidade, não linearidade, estados, transições, acompanhamento, contestação, correção, revogação, reconstrução e falha segura, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar as **regras do ciclo de vida da Capacidade 09 — Evolução Contínua**, incluindo identificação, candidatura, baseline, observação, interpretação, direção, estabilidade, progressão, oscilação, regressão, interrupção, reorientação, contestação, correção, revogação, propagação, reconstrução e falha segura.
+Consolidar a **visualização e o controle da Capacidade 09 — Evolução Contínua**, incluindo `Minha Evolução`, trajetórias por dimensão e período, baseline, direção, evidências, confiança, incerteza, interpretações alternativas, ausência legítima de mudança, controles, privacidade, acessibilidade, contestação, correção, revogação e falha segura.

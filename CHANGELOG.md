@@ -2,6 +2,29 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.45.0 — Continuous Evolution Lifecycle
+
+- Criação de `PAS-001-EC-LIFECYCLE-001 — Regras do Ciclo de Vida da Evolução Contínua`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 09 do `PAS-001 — Guivos Journey`.
+- Elevação do progresso editorial da Capacidade 09 de 20% para 40%, mantendo o estado `In progress`.
+- Definição do significado de continuidade sem vigilância permanente, rastreamento contínuo ou progresso obrigatório.
+- Consolidação de Trajetória de Evolução, segmentos, janelas de observação, mudanças candidatas, observações, interpretações, evidências e fatores contribuintes.
+- Definição de 17 dimensões independentes e seus estados.
+- Consolidação de transições fundamentais e transições proibidas.
+- Definição de identificação, fontes, deduplicação, candidatura, rejeição preliminar e avaliação.
+- Consolidação de baseline, direção, dimensão, temporalidade, evidências, confiança e incerteza.
+- Definição de reconhecimento delimitado e acompanhamento proporcional.
+- Consolidação de manutenção, estabilidade, progressão, oscilação, regressão, interrupção, recuperação e reorientação.
+- Proteção de múltiplas dimensões, trajetórias paralelas e ausência legítima de mudança.
+- Separação entre trajetórias individuais, coletivas e institucionais.
+- Consolidação de contestação, correção, revogação, propagação, retroatividade, idempotência, ordenação, concorrência, reconstrução e falha segura.
+- Registro de 32 comportamentos proibidos e 64 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.17.0`.
+- Atualização do Roadmap e do Knowledge Board para `10.8.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.17.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição de Visualização e Controle da Capacidade 09 como próximo ponto exato.
+
 ## 0.44.0 — Continuous Evolution Initial Foundations
 
 - Criação de `PAS-001-EC-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Evolução Contínua`, versão `1.0.0`.

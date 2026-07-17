@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 10.7.0
+version: 10.8.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -43,6 +43,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | PAS-001-EXP-INTEGRATION-001 | Active 1.0.0 | Definir as integrações funcionais das Experiências |
 | PAS-001-EXP-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final das Experiências |
 | PAS-001-EC-FOUNDATION-001 | Active 1.0.0 | Definir os fundamentos iniciais da Capacidade de Evolução Contínua |
+| PAS-001-EC-LIFECYCLE-001 | Active 1.0.0 | Definir o ciclo de vida da Evolução Contínua |
 | GLPA-001 | Approved 1.1.1 | Organizar a Guivos por camadas funcionais |
 | GIA-000 | Active 1.3.0 | Governar inteligência e candidatos internos |
 | Glossário Canônico | Consolidated 1.8.0 | Padronizar terminologia oficial |
@@ -58,16 +59,16 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais` e `08 — Experiências` |
 | Capacidade ativa | `09 — Evolução Contínua` |
-| Estado da capacidade ativa | `In progress — 20%` |
+| Estado da capacidade ativa | `In progress — 40%` |
 | Extensões normativas de Experiências | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0` |
-| Extensão normativa de Evolução Contínua | `PAS-001-EC-FOUNDATION-001 1.0.0` |
-| Progresso editorial de Evolução Contínua | `20%` |
+| Extensões normativas de Evolução Contínua | `PAS-001-EC-FOUNDATION-001 1.0.0` e `PAS-001-EC-LIFECYCLE-001 1.0.0` |
+| Progresso editorial de Evolução Contínua | `40%` |
 | Progresso editorial de Experiências | `100%` |
 | Arquitetura funcional | `GLPA-001 1.1.1` |
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Consolidar as regras do ciclo de vida da Capacidade 09 — Evolução Contínua |
+| Foco imediato | Consolidar a visualização e o controle da Capacidade 09 — Evolução Contínua |
 
 ## Capacidades do Journey
 
@@ -81,7 +82,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | 06 — Oportunidades Ativas | Functionally complete — 100% | Seis extensões normativas, 75 KPIs, 24 guardrails, baseline, cenários e contrato final consolidados |
 | 07 — Intervenções Contextuais | Functionally complete — 100% | Seis extensões normativas, 80 KPIs, 28 guardrails, baseline, cenários e contrato final consolidados |
 | 08 — Experiências | Functionally complete — 100% | Seis extensões normativas, 85 KPIs, 32 guardrails, baseline, cenários e contrato final consolidados |
-| 09 — Evolução Contínua | In progress — 20% | Primeira extensão normativa consolidada; ciclo de vida como próximo bloco |
+| 09 — Evolução Contínua | In progress — 40% | Duas extensões normativas consolidadas; visualização e controle como próximo bloco |
 
 ## Baselines concluídas
 
@@ -471,7 +472,22 @@ A Capacidade 08 está `Functionally complete`, com progresso editorial de refer�
 - estados e eventos iniciais, controles, explicabilidade, responsabilidades, limites e neutralidade comercial;
 - 30 comportamentos proibidos e 52 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `20%`.
+### Ciclo de vida
+
+- continuidade compreendida sem vigilância permanente ou progresso obrigatório;
+- Trajetória de Evolução, segmentos, janelas, mudanças candidatas, observações e interpretações;
+- 17 dimensões independentes com estados próprios;
+- transições fundamentais e transições proibidas;
+- identificação, fontes, deduplicação, candidatura, rejeição e avaliação;
+- baseline, direção, dimensão, temporalidade, evidências, confiança e incerteza;
+- reconhecimento delimitado e acompanhamento proporcional;
+- manutenção, estabilidade, progressão, oscilação, regressão, interrupção, recuperação e reorientação;
+- múltiplas dimensões, trajetórias paralelas e ausência legítima de mudança;
+- trajetórias individuais, coletivas e institucionais separadas;
+- casos sensíveis, contestação, correção, revogação, propagação, retroatividade, idempotência, ordenação, concorrência, reconstrução e falha segura;
+- 32 comportamentos proibidos e 64 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `40%`.
 
 ## Conceitos internos preservados
 
@@ -484,8 +500,9 @@ A Capacidade 09 está `In progress`, com progresso editorial de referência de `
 | Oportunidades Ativas | Functionally complete — 100% |
 | Intervenções Contextuais | Functionally complete — 100% |
 | Experiências | Functionally complete — 100% |
-| Evolução Contínua | In progress — 20% |
+| Evolução Contínua | In progress — 40% |
 | Fundamentos de Evolução Contínua | Normative 1.0.0 |
+| Ciclo de Vida de Evolução Contínua | Normative 1.0.0 |
 | Trajetória de Evolução | Unidade funcional que preserva participante, dimensão, direção, baseline, período, estados, mudanças, evidências, interpretações, confiança, incertezas e histórico |
 | Baseline de evolução | Referência legítima, preferencialmente centrada na trajetória do próprio participante |
 | Não linearidade da evolução | Reconhecimento de avanços, pausas, regressões, oscilações, reorientações e períodos sem mudança |
@@ -586,8 +603,8 @@ A Capacidade 09 está `In progress`, com progresso editorial de referência de `
 
 | Ativo | Status |
 |---|---|
-| Roadmap | 10.7.0 |
-| Knowledge Board | 10.7.0 |
+| Roadmap | 10.8.0 |
+| Knowledge Board | 10.8.0 |
 | Architectural Milestones | 4.9.0 |
 | PAS-001 | Draft 0.5.0 |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 |
@@ -613,6 +630,7 @@ A Capacidade 09 está `In progress`, com progresso editorial de referência de `
 | PAS-001-EXP-INTEGRATION-001 | Active 1.0.0 |
 | PAS-001-EXP-CONTRACT-001 | Active 1.0.0 |
 | PAS-001-EC-FOUNDATION-001 | Active 1.0.0 |
+| PAS-001-EC-LIFECYCLE-001 | Active 1.0.0 |
 | GLPA-001 | Approved 1.1.1 |
 | GIA-000 | Active 1.3.0 |
 | Glossário | Consolidated 1.8.0 |
@@ -622,4 +640,4 @@ A Capacidade 09 está `In progress`, com progresso editorial de referência de `
 
 ## Próxima atividade
 
-Consolidar as **Regras do Ciclo de Vida da Capacidade 09 — Evolução Contínua**, incluindo identificação, candidatura, baseline, observação, interpretação, direção, estabilidade, progressão, oscilação, regressão, interrupção, reorientação, contestação, correção, revogação, propagação, reconstrução e falha segura.
+Consolidar a **Visualização e Controle da Capacidade 09 — Evolução Contínua**, incluindo `Minha Evolução`, trajetórias por dimensão e período, baseline, direção, evidências, confiança, incerteza, interpretações alternativas, ausência legítima de mudança, controles, privacidade, acessibilidade, contestação, correção, revogação e falha segura.

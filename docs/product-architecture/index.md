@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.16.0
+version: 1.17.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -450,7 +450,7 @@ O ciclo de vida consolida:
 
 A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `20%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`.
+A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `40%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0` e `PAS-001-EC-LIFECYCLE-001 1.0.0`.
 
 
 ## Capacidade 09 ativa
@@ -472,9 +472,24 @@ A Capacidade 09 — Evolução Contínua está `In progress`, com progresso edit
 - estados e eventos funcionais iniciais, controles, explicabilidade, responsabilidades, limites e neutralidade comercial;
 - 30 comportamentos proibidos e 52 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `20%`.
+`PAS-001-EC-LIFECYCLE-001 1.0.0` consolida:
 
-O próximo bloco normativo é o ciclo de vida da Evolução Contínua.
+- significado de continuidade sem vigilância permanente ou exigência de progresso constante;
+- `Trajetória de Evolução`, segmentos, janelas de observação, mudanças candidatas, observações, interpretações, evidências e fatores contribuintes;
+- 17 dimensões independentes de estado funcional, informação, baseline, direção, observação, reconhecimento, interpretação, evidências, confiança, temporalidade, sustentação, padrão, causalidade, relação, autorização, contestação e propagação;
+- estados funcionais, transições fundamentais e transições proibidas;
+- identificação, fontes, deduplicação, candidatura, rejeição e avaliação;
+- identidade, titularidade, finalidade, sensibilidade, dimensão, baseline e janela temporal;
+- evidências, suficiência, observação, divergência, magnitude e interpretação;
+- direção, ausência de direção, confirmação do participante e validação profissional limitada;
+- reconhecimento delimitado, acompanhamento proporcional, manutenção, estabilidade, progressão, oscilação, regressão, interrupção, recuperação e reorientação;
+- múltiplas dimensões, trajetórias paralelas, ausência de mudança e separação entre trajetórias individuais, coletivas e institucionais;
+- casos sensíveis, contestação, correção, revogação, propagação, retroatividade, idempotência, ordenação, concorrência, reconstrução e falha segura;
+- 32 comportamentos proibidos e 64 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `40%`.
+
+O próximo bloco normativo é a visualização e o controle da Evolução Contínua.
 
 ## Regras arquiteturais
 

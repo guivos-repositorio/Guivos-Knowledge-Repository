@@ -152,6 +152,7 @@ nav:
       - PAS-001-EXP-INTEGRATION-001 — Integrações Funcionais das Experiências: product-architecture/pas-001-experiencias-integracoes-funcionais.md
       - PAS-001-EXP-CONTRACT-001 — Contrato Final das Experiências: product-architecture/pas-001-experiencias-kpis-cenarios-contrato-final.md
       - PAS-001-EC-FOUNDATION-001 — Fundamentos de Evolução Contínua: product-architecture/pas-001-evolucao-continua-fundamentos-iniciais.md
+      - PAS-001-EC-LIFECYCLE-001 — Ciclo de Vida da Evolução Contínua: product-architecture/pas-001-evolucao-continua-ciclo-de-vida.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
