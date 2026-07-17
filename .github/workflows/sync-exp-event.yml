@@ -33,28 +33,14 @@ jobs:
           set +e
           python - <<'PY' > /tmp/sync-exp-event.log 2>&1
           import base64
-          import re
           import zlib
           from pathlib import Path
 
-          bootstrap = Path("tools/sync_exp_event.py").read_text(encoding="utf-8")
-          match = re.search(r'b64decode\("([A-Za-z0-9+/=]+)"\)', bootstrap)
-          if not match:
-              raise RuntimeError("payload comprimido não encontrado")
-          payload = match.group(1)
-          payload += "=" * (-len(payload) % 4)
-          compressed = base64.b64decode(payload)
-          source_bytes = None
-          errors = []
-          for wbits in (zlib.MAX_WBITS, -zlib.MAX_WBITS, zlib.MAX_WBITS | 16):
-              try:
-                  source_bytes = zlib.decompress(compressed, wbits)
-                  break
-              except zlib.error as exc:
-                  errors.append(str(exc))
-          if source_bytes is None:
-              raise RuntimeError("payload não pôde ser descomprimido: " + " | ".join(errors))
-          source = source_bytes.decode("utf-8")
+          parts = sorted(Path("tools/sync_exp_event_payload").glob("part-*.txt"))
+          if len(parts) != 6:
+              raise RuntimeError(f"esperadas 6 partes do payload, encontradas {len(parts)}")
+          payload = "".join(path.read_text(encoding="utf-8").strip() for path in parts)
+          source = zlib.decompress(base64.b64decode(payload)).decode("utf-8")
           exec(compile(source, "tools/sync_exp_event_payload.py", "exec"))
           PY
           status=$?
