@@ -32,13 +32,27 @@ jobs:
           fetch-depth: 0
 
       - name: Apply canonical synchronization
-        run: python .github/scripts/sync_ec_integration.py
+        run: |
+          set +e
+          python .github/scripts/sync_ec_integration.py > /tmp/ec-integration.log 2>&1
+          status=$?
+          cat /tmp/ec-integration.log
+          if [ "$status" -ne 0 ]; then
+            cp /tmp/ec-integration.log .github/ec-integration-error.log
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/ec-integration-error.log
+            git commit -m "chore: registrar falha de sincronização [skip ci]"
+            git push origin HEAD:agent/evolucao-continua-integracoes-funcionais
+            exit "$status"
+          fi
 
       - name: Commit canonical artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md CHANGELOG.md docs/index.md docs/roadmap.md docs/product-architecture/index.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md mkdocs.yml
+          rm -f .github/ec-integration-error.log
+          git add README.md CHANGELOG.md docs/index.md docs/roadmap.md docs/product-architecture/index.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md mkdocs.yml .github/ec-integration-error.log
           git diff --cached --quiet && exit 1
           git commit -m "docs: sincronizar integrações funcionais da evolução contínua"
 
