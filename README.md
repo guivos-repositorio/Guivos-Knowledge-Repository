@@ -11,10 +11,10 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais
-- **Capacidade ativa:** 08 — Experiências, `In progress`, 80%
+- **Capacidade ativa:** 08 — Experiências, `In progress`, 90%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0 e PAS-001-EXP-EVENT-001 1.0.0
+- **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0 e PAS-001-EXP-INTEGRATION-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -324,26 +324,37 @@ A Capacidade 07 está **Functionally complete**, com progresso editorial de refe
 - correção compensatória, revogação propagada, retenção proporcional, explicabilidade e auditoria;
 - 30 comportamentos proibidos e 60 critérios de aceite.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de **80%**.
+`PAS-001-EXP-INTEGRATION-001 1.0.0` consolida:
+
+- integração funcional sem transferência de titularidade ou reconhecimento automático do vivido;
+- contrato comum, produtores, consumidores, identidade, associação, autoridade, finalidade, escopo, sensibilidade, proveniência, temporalidades, permissões, retenção, sincronização, revogação e falha;
+- transformações permitidas e proibição de fabricar ocorrência, participação, percepção, satisfação, memória, significado, transformação ou evolução;
+- minimização, consentimento granular, séries, episódios, experiências compartilhadas, operação offline e proteção de terceiros;
+- prevenção de ciclos, pausa, desconexão, revogação propagada, observabilidade, explicabilidade, auditoria e reconstrução;
+- integrações com capacidades, produtos, organizações, profissionais, dispositivos, canais e sistemas externos;
+- 30 comportamentos proibidos e 52 critérios de aceite.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de **90%**.
 
 ## Ponto exato de retomada
 
-Retomar nas integrações funcionais da Capacidade 08 — Experiências.
+Retomar nos KPIs, guardrails, baseline, cenários e contrato final da Capacidade 08 — Experiências.
 
 Próxima entrega:
 
-- agregado principal e estrutura comum;
-- famílias de eventos de identificação, validação, planejamento, participação, encerramento, resultados e memórias;
-- autoridade, finalidade, proveniência, sensibilidade e temporalidades;
-- eventos de visualização, controle, compartilhamento, contestação, correção e revogação;
-- idempotência, ordenação, concorrência, atomicidade e reconstrução;
-- retenção, auditoria, explicabilidade e falha segura.
+- famílias de KPIs sistêmicos e baseline funcional segmentada;
+- painel de saúde e níveis de desempenho;
+- guardrails de tolerância zero;
+- cenários funcionalmente ideal, alternativo e limite;
+- critérios de conclusão, lacunas e reabertura;
+- contrato final da Capacidade 08.
+
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências está `In progress`, com progresso editorial de referência de `40%`.
+As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências está `In progress`, com progresso editorial de referência de `90%`.
 
 ## Capacidades do Journey
 
@@ -356,7 +367,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
-| 08 — Experiências | In progress — 40% |
+| 08 — Experiências | In progress — 90% |
 | 09 — Evolução Contínua | Planned |
 
 ## Acesso rápido
@@ -383,6 +394,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 - [Ciclo de Vida das Experiências](docs/product-architecture/pas-001-experiencias-ciclo-de-vida.md)
 - [Visualização e Controle das Experiências](docs/product-architecture/pas-001-experiencias-visualizacao-controle.md)
 - [Eventos Funcionais das Experiências](docs/product-architecture/pas-001-experiencias-eventos-funcionais.md)
+- [Integrações Funcionais das Experiências](docs/product-architecture/pas-001-experiencias-integracoes-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
