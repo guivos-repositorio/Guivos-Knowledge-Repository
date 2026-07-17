@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/.github/scripts/sync_ec_integration.py", line 156, in <module>
+    text = insert_after_once(text, "| PAS-001-EC-EVENT-001 | Active 1.0.0 |", "\n| PAS-001-EC-INTEGRATION-001 | Active 1.0.0 |", f"{path} governança integração")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/.github/scripts/sync_ec_integration.py", line 27, in insert_after_once
+    raise RuntimeError(f"{label}: esperado 1 anchor, encontrado {count}")
+RuntimeError: docs/project/knowledge-board.md governança integração: esperado 1 anchor, encontrado 2
