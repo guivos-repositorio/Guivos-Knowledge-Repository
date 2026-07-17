@@ -2,6 +2,34 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.39.0 — Experiences Lifecycle
+
+- Criação de `PAS-001-EXP-LIFECYCLE-001 — Regras do Ciclo de Vida das Experiências`, versão `1.0.0`.
+- Registro do documento como segunda extensão normativa da Capacidade 08 do `PAS-001 — Guivos Journey`.
+- Manutenção da Capacidade 08 como `In progress` e elevação do progresso editorial de 20% para 40%.
+- Consolidação de 18 dimensões independentes do ciclo de vida.
+- Definição dos estados funcionais desde identificação até arquivamento, revogação e falha.
+- Definição dos estados da informação, ocorrência, temporalidade, presença, participação, envolvimento, entrega, resultado, percepção, satisfação, evidências, memória, significado, autorização, contestação e propagação.
+- Consolidação das transições válidas, proibidas e retrospectivas.
+- Definição das regras de identificação, fontes, deduplicação, candidatura, rejeição preliminar e validação.
+- Consolidação da validação de autoridade, identidade, participantes, temporalidade e ocorrência.
+- Definição da reconstrução retrospectiva com preservação de proveniência, lacunas e incerteza.
+- Consolidação de planejamento, preparação, prontidão, início, presença, participação, envolvimento e acompanhamento proporcional.
+- Definição de pausa, retomada, conclusão, interrupção, cancelamento e expiração.
+- Consolidação de recorrência, séries, episódios e continuidade.
+- Separação normativa entre entrega, resultado, percepção, satisfação, evidência, memória, significado e transformação.
+- Reconhecimento de efeitos positivos, negativos, neutros e ambivalentes.
+- Consolidação de contestação, correção compensatória, revogação e propagação proporcional.
+- Definição de idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, reconstrução, retenção, auditoria e falha segura.
+- Registro de 30 comportamentos proibidos e 58 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.11.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.2.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.11.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03, 04, 05, 06 e 07 como `Functionally complete`.
+- Preservação da Capacidade 09 — Evolução Contínua como `Planned`.
+- Definição da visualização e do controle de Experiências como próximo ponto exato de retomada.
+
 ## 0.38.0 — Experiences Initial Foundations
 
 - Criação de `PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências`, versão `1.0.0`.

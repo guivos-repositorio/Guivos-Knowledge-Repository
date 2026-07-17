@@ -11,10 +11,10 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas e 07 — Intervenções Contextuais
-- **Capacidade ativa:** 08 — Experiências, `In progress`, 20%
+- **Capacidade ativa:** 08 — Experiências, `In progress`, 40%
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
-- **Extensão vigente de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0
+- **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0 e PAS-001-EXP-LIFECYCLE-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -282,29 +282,46 @@ A Capacidade 07 está **Functionally complete**, com progresso editorial de refe
 - relações com as capacidades do Journey, Guivos Intelligence, Platform Layer, produtos, organizações e profissionais;
 - neutralidade comercial, estados, eventos, controles, explicabilidade, responsabilidades, limites e comportamentos proibidos.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de **20%**.
+`PAS-001-EXP-LIFECYCLE-001 1.0.0` consolida:
+
+- dimensões independentes de estado funcional, informação, ocorrência, temporalidade, relação individual, presença, participação, envolvimento, entrega, resultado, percepção, satisfação, evidências, memória, significado, autorização, contestação e propagação;
+- estados funcionais desde identificação até arquivamento, revogação e falha;
+- transições válidas e proibição de conversões indevidas entre planejamento, presença, participação, resultado, satisfação, significado e transformação;
+- identificação, fontes, deduplicação, candidatura, rejeição e validação de autoridade, identidade, temporalidade e ocorrência;
+- reconstrução retrospectiva com preservação de incerteza, proveniência e eventos ausentes;
+- planejamento, preparação, prontidão, início, presença, participação, envolvimento e acompanhamento proporcional;
+- pausa, retomada, conclusão, interrupção, cancelamento e expiração;
+- recorrência, séries, episódios e continuidade;
+- entrega, resultado, percepção, satisfação e efeitos positivos, negativos, neutros ou ambivalentes;
+- evidências, memórias, significado e reflexão opcionais;
+- candidaturas limitadas para Eventos de Vida e possível transformação;
+- contestação, correção compensatória, revogação e propagação proporcional;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, reconstrução, retenção, auditoria e falha segura.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de **40%**.
 
 ## Ponto exato de retomada
 
-Retomar nas regras do ciclo de vida da Capacidade 08 — Experiências.
+Retomar na visualização e no controle da Capacidade 08 — Experiências.
 
 Próxima entrega:
 
-- identificação, candidatura e validação da ocorrência;
-- planejamento, preparação, prontidão e início;
-- presença, participação, envolvimento e acompanhamento;
-- pausa, retomada, conclusão, interrupção, cancelamento e expiração;
-- recorrência, séries, episódios e continuidade;
+- superfícies principais de experiências;
+- linha do tempo, calendário, séries e episódios;
+- cartões e detalhamento progressivo;
+- participantes, presença, participação e estados independentes;
 - entregas, resultados, percepções e satisfação;
 - evidências, memórias, significado e reflexão;
-- contestação, correção, revogação e propagação;
-- ordenação, concorrência, reconstrução e falha segura.
+- privacidade visual, conteúdo sensível e proteção de terceiros;
+- explicabilidade, histórico, contestação e correção;
+- revogação, compartilhamento e controles do participante;
+- acessibilidade, consistência entre canais e falha segura.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências está `In progress`, com progresso editorial de referência de `20%`.
+As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais estão `Functionally complete`; a Capacidade 08 — Experiências está `In progress`, com progresso editorial de referência de `40%`.
 
 ## Capacidades do Journey
 
@@ -317,7 +334,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 | 05 — Próximos Passos | Functionally complete |
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
-| 08 — Experiências | In progress — 20% |
+| 08 — Experiências | In progress — 40% |
 | 09 — Evolução Contínua | Planned |
 
 ## Acesso rápido
@@ -341,6 +358,7 @@ As Capacidades 06 — Oportunidades Ativas e 07 — Intervenções Contextuais e
 - [Integrações Funcionais das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais.md)
 - [Contrato Final das Intervenções Contextuais](docs/product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [Fundamentos Iniciais de Experiências](docs/product-architecture/pas-001-experiencias-fundamentos-iniciais.md)
+- [Ciclo de Vida das Experiências](docs/product-architecture/pas-001-experiencias-ciclo-de-vida.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)

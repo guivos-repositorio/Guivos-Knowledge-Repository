@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.10.0
+version: 1.11.0
 owner: Guivos
 last_updated: 2026-07-16
 ---
@@ -357,9 +357,10 @@ A Capacidade 07 está **Functionally complete**, com progresso editorial de refe
 
 ### Capacidade 08 — Experiências
 
-A extensão normativa vigente é:
+As extensões normativas vigentes são:
 
-- `PAS-001-EXP-FOUNDATION-001 1.0.0` — finalidade, pergunta central, definição canônica, singularidade, distinções, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais.
+- `PAS-001-EXP-FOUNDATION-001 1.0.0` — finalidade, pergunta central, definição canônica, singularidade, distinções, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais;
+- `PAS-001-EXP-LIFECYCLE-001 1.0.0` — estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e falha segura.
 
 Os fundamentos consolidam:
 
@@ -377,9 +378,22 @@ Os fundamentos consolidam:
 - relações com as capacidades do Journey, Intelligence, Platform Layer, produtos, organizações e profissionais;
 - neutralidade comercial, estados, eventos, controles, explicabilidade, responsabilidades e comportamentos proibidos.
 
-A Capacidade 08 está **In progress**, com progresso editorial de referência de `20%`.
+O ciclo de vida consolida:
 
-O próximo bloco deverá consolidar as regras do ciclo de vida das Experiências.
+- dimensões independentes do estado da experiência;
+- estados funcionais e transições válidas, proibidas e retrospectivas;
+- identificação, fontes, deduplicação, candidatura, rejeição e validação da ocorrência;
+- planejamento, preparação, prontidão, início, presença, participação, envolvimento e acompanhamento proporcional;
+- pausa, retomada, conclusão, interrupção, cancelamento e expiração;
+- recorrência, séries, episódios e continuidade;
+- entrega, resultado, percepção, satisfação e efeitos ambivalentes;
+- evidências, memórias, significado e reflexão opcionais;
+- contestação, correção compensatória, revogação e propagação;
+- idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, reconstrução, retenção, auditoria e falha segura.
+
+A Capacidade 08 está **In progress**, com progresso editorial de referência de `40%`.
+
+O próximo bloco deverá consolidar a visualização e o controle das Experiências.
 
 ## Regras arquiteturais
 
@@ -1115,6 +1129,54 @@ O próximo bloco deverá consolidar as regras do ciclo de vida das Experiências
 730. Relações comerciais não alteram a interpretação do vivido nem fabricam transformação.
 731. Guivos Intelligence organiza e propõe, mas não impõe significado, emoção ou transformação.
 732. `PAS-001-EXP-FOUNDATION-001 1.0.0` inicia normativamente a Capacidade 08, com progresso editorial de referência de `20%`, e o participante permanece no controle.
+733. O ciclo de vida separa estado funcional, informação, ocorrência, temporalidade, relação individual, presença, participação, envolvimento, entrega, resultado, percepção, satisfação, evidência, memória, significado, autorização, contestação e propagação.
+734. Identificação não representa candidatura aceita ou ocorrência.
+735. Candidatura não representa experiência vivida.
+736. Planejamento não representa início.
+737. Preparação não representa prontidão.
+738. Prontidão não representa presença ou participação.
+739. Início técnico isolado não representa início funcional.
+740. Presença não representa participação.
+741. Participação não representa envolvimento integral.
+742. Envolvimento não representa satisfação, resultado ou transformação.
+743. Conclusão não representa satisfação ou significado.
+744. Interrupção preserva resultados e percepções parciais.
+745. Cancelamento anterior ao início não deve ser apresentado como experiência vivida.
+746. Expiração exige nova validação antes de eventual reativação.
+747. Experiências recorrentes devem possuir séries e episódios distinguíveis.
+748. Episódios podem possuir participantes e estados diferentes.
+749. Continuidade não pode ser presumida apenas por repetição técnica.
+750. Entrega permanece separada da experiência e do resultado.
+751. Resultado preserva fonte, período, limitações e incerteza causal.
+752. Percepção pertence ao participante.
+753. Satisfação é opcional e não pode ser pressionada.
+754. Efeitos negativos, neutros e ambivalentes devem permanecer registráveis.
+755. Evidência somente sustenta afirmações dentro de seu escopo.
+756. Memória preserva autoria, privacidade, terceiros e revisões.
+757. Significado não pode ser imposto por fornecedor, patrocinador ou sistema.
+758. Reflexão é opcional e sua ausência não torna a experiência incompleta.
+759. Experiência somente envia candidatura para Evento de Vida, sem confirmá-lo.
+760. Possível transformação permanece sob avaliação de capacidade competente.
+761. Contestação pode atingir ocorrência, datas, participantes, entrega, resultado, percepção, evidência, memória, significado, uso e propagação.
+762. Correções são compensatórias e auditáveis.
+763. Revogação bloqueia novos usos e depende de propagação suficiente.
+764. Capacidades consumidoras recebem apenas recortes necessários e decidem dentro de sua própria autoridade.
+765. Reprocessamento idempotente não duplica experiências, episódios, resultados, memórias ou propagações.
+766. Duplicidade semântica deve ser avaliada mesmo sem identificador técnico comum.
+767. Eventos fora de ordem preservam momento do fato, declaração, conhecimento e persistência.
+768. Atualizações concorrentes preservam versão, autoridade, conflitos e histórico.
+769. Percepção do participante não pode ser sobrescrita por fornecedor.
+770. Falha parcial não produz sucesso integral aparente.
+771. Estado funcional deve ser reconstruível a partir do histórico válido.
+772. Ausência de informação suficiente produz estado desconhecido ou validação pendente.
+773. Falha segura reduz automação, propagação e exposição sensível.
+774. Retenção é proporcional à finalidade, sensibilidade, autorização e necessidade legítima.
+775. Arquivamento não autoriza publicidade ou exposição indefinida.
+776. O participante compreende origem, validação, inferências, incertezas e propagação.
+777. O participante pode confirmar, negar, corrigir, ocultar, compartilhar, contestar e revogar.
+778. A capacidade não avalia mérito, fé, valor humano ou evolução pela quantidade de experiências.
+779. Visualização posterior deverá preservar dimensões independentes, privacidade, explicabilidade e controle.
+780. `PAS-001-EXP-LIFECYCLE-001 1.0.0` eleva a Capacidade 08 para `40%`, mantém `In progress` e preserva o participante no controle.
 
 ## Documentos do domínio
 
@@ -1137,6 +1199,7 @@ O próximo bloco deverá consolidar as regras do ciclo de vida das Experiências
 - [PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais](pas-001-intervencoes-contextuais-integracoes-funcionais.md)
 - [PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais](pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
 - [PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências](pas-001-experiencias-fundamentos-iniciais.md)
+- [PAS-001-EXP-LIFECYCLE-001 — Regras do Ciclo de Vida das Experiências](pas-001-experiencias-ciclo-de-vida.md)
 - [Guivos Journey](journey.md)
 - [Guivos Mall](mall.md)
 - [Guivos Travel](travel.md)
