@@ -1,3 +1,11 @@
 Traceback (most recent call last):
-  File "<stdin>", line 22, in <module>
-RuntimeError: payload não pôde ser descomprimido: Error -3 while decompressing data: incorrect header check | Error -3 while decompressing data: invalid block type | Error -3 while decompressing data: incorrect header check
+  File "<stdin>", line 10, in <module>
+  File "tools/sync_exp_event_payload.py", line 38, in <module>
+  File "tools/sync_exp_event_payload.py", line 9, in read
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/Guivos-Knowledge-Repository/docs/product-architecture/index.md'
