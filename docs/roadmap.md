@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 11.0.0
+version: 11.1.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -20,11 +20,11 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `08 — Experiências`, `Functionally complete`, 100%.
-- **Capacidade ativa:** `09 — Evolução Contínua`, `In progress`, 80%.
+- **Capacidade ativa:** `09 — Evolução Contínua`, `In progress`, 90%.
 - **Extensões normativas vigentes de Oportunidades Ativas:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
 - **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0`.
 - **Extensões normativas vigentes de Experiências:** `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0`.
-- **Extensões normativas vigentes de Evolução Contínua:** `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0` e `PAS-001-EC-EVENT-001 1.0.0`.
+- **Extensões normativas vigentes de Evolução Contínua:** `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -35,7 +35,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar as integrações funcionais da `Capacidade 09 — Evolução Contínua`.
+O próximo trabalho deverá consolidar os KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato final da `Capacidade 09 — Evolução Contínua`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -438,7 +438,21 @@ A Capacidade 08 está `Functionally complete`, com progresso editorial de refer�
 - correção compensatória, revogação propagada, idempotência, ordenação, concorrência, atomicidade, compatibilidade, explicabilidade, auditoria e falha segura;
 - 34 comportamentos proibidos e 64 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `80%`.
+
+`PAS-001-EC-INTEGRATION-001 1.0.0` consolidou:
+
+- integração funcional como intercâmbio governado sem reconhecimento automático de evolução;
+- contrato comum com produtores, consumidores, participante, trajetória, segmento, finalidade, modo, autoridade, dimensão, baseline, direção, escopo, sensibilidade, proveniência, qualidade, confiança, incerteza, temporalidades, permissões, retenção, sincronização e revogação;
+- identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência e temporalidades com limites explícitos;
+- qualidade técnica, confiança funcional e autoridade como dimensões independentes;
+- transformações permitidas e proibição de fabricar evolução, progresso, regressão, direção, baseline, intenção, significado, mérito, fé, diagnóstico ou causalidade;
+- consentimento granular, pausa, desconexão, revogação propagada e retenção residual justificada;
+- sincronização, divergência, ordenação, concorrência, reconciliação e prevenção de ciclos;
+- integrações com todas as capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, profissionais, dispositivos, canais e sistemas externos;
+- proteção de saúde, espiritualidade, trabalho, educação, finanças, voluntariado, fontes públicas e terceiros;
+- observabilidade, explicabilidade, auditoria, reconstrução, 36 comportamentos proibidos e 58 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `90%`.
 
 ## Progresso das capacidades do Journey
 
@@ -523,12 +537,12 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar nas **Integrações Funcionais da Capacidade 09 — Evolução Contínua**.
+Retomar em **KPIs, Guardrails, Cenários e Contrato Final da Capacidade 09 — Evolução Contínua**.
 
 Próxima entrega:
 
-1. contrato comum de integração, identidade, associação, finalidade e autoridade;
-2. minimização, proveniência, temporalidades, qualidade, confiança e incerteza;
-3. sincronização, prevenção de ciclos, ordenação, concorrência e reconciliação;
-4. correção, pausa, desconexão, revogação, propagação e retenção residual;
-5. integrações internas, externas, profissionais, organizacionais, dispositivos, canais, observabilidade e falha segura.
+1. KPIs e famílias de indicadores sistêmicos;
+2. guardrails de tolerância zero e baseline funcional segmentada;
+3. painel de saúde, níveis de desempenho e metas posteriores à baseline;
+4. cenários funcionalmente ideal, alternativo e limite;
+5. critérios de conclusão, lacunas, reabertura e contrato funcional final.

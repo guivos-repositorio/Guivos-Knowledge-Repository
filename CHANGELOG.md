@@ -2,6 +2,26 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+
+## 0.48.0 — Continuous Evolution Functional Integrations
+
+- Criação de `PAS-001-EC-INTEGRATION-001 — Integrações Funcionais da Evolução Contínua`, versão `1.0.0`.
+- Registro do documento como quinta extensão normativa da Capacidade 09 do `PAS-001 — Guivos Journey`.
+- Elevação do progresso editorial da Capacidade 09 de 80% para 90%, mantendo o estado `In progress`.
+- Consolidação do contrato comum de integração com produtores, consumidores, participante, trajetória, segmento, finalidade, modo, autoridade, dimensão, baseline, direção, escopo, sensibilidade, proveniência, confiança, incerteza, temporalidades, permissões, retenção, sincronização e revogação.
+- Consolidação de identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência, temporalidades, qualidade, confiança e incerteza.
+- Definição de transformações permitidas e proibição de fabricar evolução, progresso, regressão, baseline, direção, intenção, significado, mérito, fé, diagnóstico ou causalidade.
+- Consolidação de consentimento granular, pausa, desconexão, revogação propagada e retenção residual justificada.
+- Consolidação de sincronização, divergência, ordenação, concorrência, reconciliação, prevenção de ciclos, correção, retroatividade e falha segura.
+- Integração governada com todas as capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, profissionais, dispositivos, canais e sistemas externos.
+- Proteção reforçada de saúde, espiritualidade, trabalho, educação, finanças, voluntariado, fontes públicas, dispositivos compartilhados e terceiros.
+- Definição de observabilidade, explicabilidade, auditoria, reconstrução, 36 comportamentos proibidos e 58 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.20.0`.
+- Atualização do Roadmap e do Knowledge Board para `11.1.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.20.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição de KPIs, guardrails, baseline, cenários e contrato final da Capacidade 09 como próximo ponto exato.
+
 ## 0.47.0 — Continuous Evolution Functional Events
 
 - Criação de `PAS-001-EC-EVENT-001 — Contratos dos Eventos Funcionais da Evolução Contínua`, versão `1.0.0`.

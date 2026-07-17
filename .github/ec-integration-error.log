@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/.github/scripts/sync_ec_integration.py", line 251, in <module>
-    raise RuntimeError(f"{file_path}: estado antigo remanescente: {[line for line in content.splitlines() if chr(73)+chr(110)+chr(32)+chr(112)+chr(114)+chr(111)+chr(103)+chr(114)+chr(101)+chr(115)+chr(115)+chr(32)+chr(8212)+chr(32)+chr(56)+chr(48)+chr(37) in line]}")
-RuntimeError: docs/project/knowledge-board.md: estado antigo remanescente: ['| Estado da capacidade ativa | `In progress — 80%` |']

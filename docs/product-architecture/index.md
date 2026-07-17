@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.19.0
+version: 1.20.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -450,7 +450,7 @@ O ciclo de vida consolida:
 
 A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `80%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0` e `PAS-001-EC-EVENT-001 1.0.0`.
+A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `90%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0`.
 
 
 ## Capacidade 09 ativa
@@ -510,9 +510,23 @@ A Capacidade 09 — Evolução Contínua está `In progress`, com progresso edit
 - correção compensatória, revogação propagada, idempotência, ordenação, concorrência, atomicidade, compatibilidade, explicabilidade, auditoria e falha segura;
 - 34 comportamentos proibidos e 64 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `80%`.
 
-O próximo bloco normativo são as integrações funcionais da Evolução Contínua.
+`PAS-001-EC-INTEGRATION-001 1.0.0` consolida:
+
+- integração funcional como intercâmbio governado sem reconhecimento automático de evolução;
+- contrato comum com produtores, consumidores, participante, trajetória, segmento, finalidade, modo, autoridade, dimensão, baseline, direção, escopo, sensibilidade, proveniência, qualidade, confiança, incerteza, temporalidades, permissões, retenção, sincronização e revogação;
+- identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência e temporalidades com limites explícitos;
+- qualidade técnica, confiança funcional e autoridade como dimensões independentes;
+- transformações permitidas e proibição de fabricar evolução, progresso, regressão, direção, baseline, intenção, significado, mérito, fé, diagnóstico ou causalidade;
+- consentimento granular, pausa, desconexão, revogação propagada e retenção residual justificada;
+- sincronização, divergência, ordenação, concorrência, reconciliação e prevenção de ciclos;
+- integrações com todas as capacidades do Journey, Guivos Intelligence, Platform Layer, produtos especializados, organizações, profissionais, dispositivos, canais e sistemas externos;
+- proteção de saúde, espiritualidade, trabalho, educação, finanças, voluntariado, fontes públicas e terceiros;
+- observabilidade, explicabilidade, auditoria, reconstrução, 36 comportamentos proibidos e 58 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `90%`.
+
+O próximo bloco normativo consolida KPIs, guardrails, baseline, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Evolução Contínua.
 
 ## Regras arquiteturais
 
