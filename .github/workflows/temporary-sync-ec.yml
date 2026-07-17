@@ -1,12 +1,62 @@
 name: Temporary EC Sync
+
 on:
   push:
     branches:
       - agent/evolucao-continua-fundamentos
+
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: temporary-ec-sync
+  cancel-in-progress: false
+
 jobs:
-  validate:
+  synchronize:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      - run: echo validation-only
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/evolucao-continua-fundamentos
+          fetch-depth: 0
+
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply deterministic synchronization
+        run: |
+          set -euo pipefail
+          python tools/sync_ec_foundation.py
+          python tools/sync_ec_foundation.py --check
+
+      - name: Validate canonical markers
+        run: |
+          set -euo pipefail
+          grep -F 'version: 1.16.0' docs/product-architecture/index.md
+          grep -F 'version: 10.7.0' docs/roadmap.md
+          grep -F 'version: 10.7.0' docs/project/knowledge-board.md
+          grep -F 'version: 1.16.0' docs/project/canonical-consolidation-matrix.md
+          grep -F 'PAS-001-EC-FOUNDATION-001 1.0.0' README.md
+          grep -F '## 0.44.0 — Continuous Evolution Initial Foundations' CHANGELOG.md
+          grep -F 'PAS-001-EC-FOUNDATION-001 — Fundamentos de Evolução Contínua' mkdocs.yml
+
+      - name: Commit synchronized documents
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/product-architecture/index.md docs/roadmap.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md README.md CHANGELOG.md
+          git commit -m 'docs(sync): sincronizar fundamentos de Evolucao Continua'
+
+      - name: Remove temporary executor
+        run: |
+          set -euo pipefail
+          rm -f tools/sync_ec_foundation.py tools/low_level_probe.txt .github/workflows/temporary-sync-ec.yml
+          git add -A
+          git commit -m 'chore(sync): remover executor temporario'
+          git push origin HEAD:agent/evolucao-continua-fundamentos
