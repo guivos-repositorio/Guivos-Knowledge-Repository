@@ -31,6 +31,19 @@ jobs:
           ref: agent/evolucao-continua-integracoes-funcionais
           fetch-depth: 0
 
+      - name: Restrict governance anchor
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('.github/scripts/sync_ec_integration.py')
+          text = path.read_text(encoding='utf-8')
+          old = 'text = insert_after_once(text, "| PAS-001-EC-EVENT-001 | Active 1.0.0 |", "\\n| PAS-001-EC-INTEGRATION-001 | Active 1.0.0 |", f"{path} governança integração")'
+          new = 'text = replace_once(text, "| PAS-001-EC-EVENT-001 | Active 1.0.0 |\\n| GLPA-001 |", "| PAS-001-EC-EVENT-001 | Active 1.0.0 |\\n| PAS-001-EC-INTEGRATION-001 | Active 1.0.0 |\\n| GLPA-001 |", f"{path} governança integração")'
+          if text.count(old) != 1:
+              raise SystemExit('âncora temporária de governança não encontrada')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+
       - name: Apply canonical synchronization
         run: |
           set +e
