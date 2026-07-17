@@ -11,11 +11,11 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências
-- **Capacidade ativa:** 09 — Evolução Contínua, `In progress — 60%`
+- **Capacidade ativa:** 09 — Evolução Contínua, `In progress — 80%`
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
-- **Extensões vigentes de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0, PAS-001-EC-LIFECYCLE-001 1.0.0 e PAS-001-EC-VIEW-001 1.0.0
+- **Extensões vigentes de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0, PAS-001-EC-LIFECYCLE-001 1.0.0, PAS-001-EC-VIEW-001 1.0.0 e PAS-001-EC-EVENT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -357,26 +357,28 @@ A Capacidade 08 está **Functionally complete**, com progresso editorial de refe
 
 `PAS-001-EC-VIEW-001 1.0.0` consolida `Minha Evolução`, trajetórias por dimensão, período e segmento, baseline, direção, estados, padrões, evidências, confiança, incerteza, interpretações alternativas, controles, privacidade, acessibilidade, contestação, correção, revogação, compartilhamento, exportação e falha segura.
 
-A Capacidade 09 está **In progress**, com progresso editorial de referência de **60%**.
+`PAS-001-EC-EVENT-001 1.0.0` consolida a `Trajetória de Evolução` como agregado funcional, estrutura comum versionada, 19 famílias de eventos, autoridade, finalidade, dimensão, baseline, direção, temporalidades, proveniência, sensibilidade, confiança, incerteza, correção compensatória, revogação, idempotência, ordenação, concorrência, reconstrução, explicabilidade, auditoria e falha segura.
+
+A Capacidade 09 está **In progress**, com progresso editorial de referência de **80%**.
 
 ## Ponto exato de retomada
 
-Retomar nos **Eventos Funcionais da Capacidade 09 — Evolução Contínua**.
+Retomar nas **Integrações Funcionais da Capacidade 09 — Evolução Contínua**.
 
 Próxima entrega:
 
-- sinais, comandos, propostas, declarações e eventos reconhecidos;
-- agregado `Trajetória de Evolução` e estrutura comum versionada;
-- autoridade, finalidade, temporalidades, proveniência e sensibilidade;
-- famílias de eventos, correção compensatória, revogação e propagação;
-- idempotência, ordenação, concorrência, reconstrução, auditoria e falha segura.
+- contrato comum, identidade, associação, finalidade e autoridade;
+- minimização, proveniência, temporalidades, qualidade, confiança e incerteza;
+- sincronização, prevenção de ciclos, ordenação, concorrência e reconciliação;
+- correção, pausa, desconexão, revogação, propagação e retenção residual;
+- integrações internas, externas, profissionais, organizacionais, dispositivos, canais, observabilidade e falha segura.
 
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua está `In progress — 60%`.
+As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua está `In progress — 80%`.
 
 ## Capacidades do Journey
 
@@ -390,7 +392,7 @@ As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Functionally complete — 100% |
-| 09 — Evolução Contínua | In progress — 60% |
+| 09 — Evolução Contínua | In progress — 80% |
 
 ## Acesso rápido
 
@@ -421,6 +423,7 @@ As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 
 - [Fundamentos Iniciais da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-fundamentos-iniciais.md)
 - [Ciclo de Vida da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-ciclo-de-vida.md)
 - [Visualização e Controle da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-visualizacao-controle.md)
+- [Eventos Funcionais da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-eventos-funcionais.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)

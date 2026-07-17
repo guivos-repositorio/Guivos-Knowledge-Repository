@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.18.0
+version: 1.19.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -450,7 +450,7 @@ O ciclo de vida consolida:
 
 A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `60%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0` e `PAS-001-EC-VIEW-001 1.0.0`.
+A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `80%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0` e `PAS-001-EC-EVENT-001 1.0.0`.
 
 
 ## Capacidade 09 ativa
@@ -500,9 +500,19 @@ A Capacidade 09 — Evolução Contínua está `In progress`, com progresso edit
 - acessibilidade técnica e cognitiva, privacidade visual, consistência entre canais e falha segura;
 - 34 comportamentos proibidos e 72 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `60%`.
+`PAS-001-EC-EVENT-001 1.0.0` consolida:
 
-O próximo bloco normativo são os eventos funcionais da Evolução Contínua.
+- distinção entre sinal, comando, proposta, declaração, observação, interpretação, evento e efeito;
+- `Trajetória de Evolução` como agregado funcional permanente, com segmentos e janelas de observação;
+- estrutura comum versionada com participante, ator, autoridade, finalidade, baseline, direção, temporalidades, proveniência, sensibilidade, confiança, incerteza, permissões e retenção;
+- 19 famílias de eventos cobrindo identificação, baseline, direção, observações, evidências, interpretações, reconhecimento, padrões, causalidade, controles, privacidade, contestação, correção, revogação, sincronização e reconstrução;
+- persistência anterior à publicação e consumo limitado à semântica do evento;
+- correção compensatória, revogação propagada, idempotência, ordenação, concorrência, atomicidade, compatibilidade, explicabilidade, auditoria e falha segura;
+- 34 comportamentos proibidos e 64 critérios de aceite.
+
+A Capacidade 09 está `In progress`, com progresso editorial de referência de `80%`.
+
+O próximo bloco normativo são as integrações funcionais da Evolução Contínua.
 
 ## Regras arquiteturais
 
