@@ -31,17 +31,25 @@ jobs:
           ref: agent/evolucao-continua-integracoes-funcionais
           fetch-depth: 0
 
-      - name: Restrict governance anchor and diagnostics
+      - name: Patch deterministic synchronization
         run: |
           python - <<'PY'
           from pathlib import Path
           path = Path('.github/scripts/sync_ec_integration.py')
           text = path.read_text(encoding='utf-8')
+
           old = 'text = insert_after_once(text, "| PAS-001-EC-EVENT-001 | Active 1.0.0 |", "\\n| PAS-001-EC-INTEGRATION-001 | Active 1.0.0 |", f"{path} governança integração")'
           new = 'text = replace_once(text, "| PAS-001-EC-EVENT-001 | Active 1.0.0 |\\n| GLPA-001 |", "| PAS-001-EC-EVENT-001 | Active 1.0.0 |\\n| PAS-001-EC-INTEGRATION-001 | Active 1.0.0 |\\n| GLPA-001 |", f"{path} governança integração")'
           if text.count(old) != 1:
               raise SystemExit('âncora temporária de governança não encontrada')
           text = text.replace(old, new, 1)
+
+          focus_line = 'text = replace_once(text, "| Foco imediato | Consolidar as integrações funcionais da Capacidade 09 — Evolução Contínua |", "| Foco imediato | Consolidar KPIs, guardrails, baseline, cenários e contrato final da Capacidade 09 — Evolução Contínua |", f"{path} foco")'
+          state_line = 'text = replace_once(text, "| Estado da capacidade ativa | `In progress — 80%` |", "| Estado da capacidade ativa | `In progress — 90%` |", f"{path} estado da capacidade")'
+          if text.count(focus_line) != 1:
+              raise SystemExit('âncora de foco não encontrada')
+          text = text.replace(focus_line, focus_line + '\n' + state_line, 1)
+
           old_diag = '        raise RuntimeError(f"{file_path}: estado antigo remanescente")'
           new_diag = '        raise RuntimeError(f"{file_path}: estado antigo remanescente: {[line for line in content.splitlines() if chr(73)+chr(110)+chr(32)+chr(112)+chr(114)+chr(111)+chr(103)+chr(114)+chr(101)+chr(115)+chr(115)+chr(32)+chr(8212)+chr(32)+chr(56)+chr(48)+chr(37) in line]}")'
           if text.count(old_diag) != 1:
