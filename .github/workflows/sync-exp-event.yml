@@ -41,7 +41,9 @@ jobs:
               raise RuntimeError(f"esperadas 6 partes do payload, encontradas {len(parts)}")
           payload = "".join(path.read_text(encoding="utf-8").strip() for path in parts)
           source = zlib.decompress(base64.b64decode(payload)).decode("utf-8")
-          exec(compile(source, "tools/sync_exp_event_payload.py", "exec"))
+          virtual_file = Path("tools/sync_exp_event_payload.py").resolve()
+          namespace = {"__file__": str(virtual_file), "__name__": "__main__"}
+          exec(compile(source, str(virtual_file), "exec"), namespace)
           PY
           status=$?
           if [ "$status" -ne 0 ]; then
