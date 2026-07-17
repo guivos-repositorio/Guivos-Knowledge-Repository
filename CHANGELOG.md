@@ -2,6 +2,32 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.40.0 — Experiences Visualization and Control
+
+- Criação de `PAS-001-EXP-VIEW-001 — Visualização e Controle da Capacidade de Experiências`, versão `1.0.0`.
+- Registro do documento como terceira extensão normativa da Capacidade 08 do `PAS-001 — Guivos Journey`.
+- Manutenção da Capacidade 08 como `In progress` e elevação do progresso editorial de 40% para 60%.
+- Consolidação de `Minhas Experiências` como superfície principal de compreensão, acompanhamento, revisão e controle.
+- Definição das áreas Agora, Próximas, Linha do tempo, Séries e episódios, Para validar e Arquivo.
+- Consolidação dos modos lista, cartões, linha do tempo, calendário, séries, episódios e mapa opcional.
+- Definição de títulos funcionais, títulos neutros, privacidade visual, conteúdo sensível e detalhamento progressivo.
+- Representação separada dos estados funcionais, ocorrência, temporalidade, relação individual, presença, participação, envolvimento, entrega, resultado, percepção, satisfação, evidências, memória, significado, autorização, contestação e propagação.
+- Consolidação das experiências compartilhadas, coletivas e institucionais com proteção de terceiros e autoridade limitada.
+- Separação visual entre entrega, resultado, efeitos, percepção, satisfação, evidência, memória, significado, Evento de Vida e transformação.
+- Definição de explicabilidade por `Por que esta experiência está aqui?` e `Como este registro foi reconstruído?`.
+- Consolidação de controles de confirmação, negação, incerteza, visibilidade, ocultação, arquivamento, compartilhamento, contestação, correção, revogação, exportação e exclusão.
+- Definição de busca, filtros e ordenação neutra sem utilização de comissão, patrocínio, popularidade ou tempo de tela.
+- Consolidação de acessibilidade técnica e cognitiva, consistência entre canais, interface conversacional e proteção de dispositivos compartilhados.
+- Definição de operação offline, conflitos, idempotência visual, auditoria, explicabilidade de inferências e falha segura.
+- Registro de 30 comportamentos proibidos e 70 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.12.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.3.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.12.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03, 04, 05, 06 e 07 como `Functionally complete`.
+- Preservação da Capacidade 09 — Evolução Contínua como `Planned`.
+- Definição dos eventos funcionais de Experiências como próximo ponto exato de retomada.
+
 ## 0.39.0 — Experiences Lifecycle
 
 - Criação de `PAS-001-EXP-LIFECYCLE-001 — Regras do Ciclo de Vida das Experiências`, versão `1.0.0`.
