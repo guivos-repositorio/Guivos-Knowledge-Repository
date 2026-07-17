@@ -1626,6 +1626,19 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="pas-001-experiencias-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-EVENT-001 — Eventos Funcionais das Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="journey/">
 <span class="md-ellipsis">
     
@@ -3041,7 +3054,8 @@
 <ul>
 <li><code>PAS-001-EXP-FOUNDATION-001 1.0.0</code> — finalidade, pergunta central, definição canônica, singularidade, distinções, Registro de Experiência, titularidade, participantes, temporalidades, sensibilidade, entregas, resultados, evidências, memórias, significado, relações, estados, eventos, controles e limites iniciais;</li>
 <li><code>PAS-001-EXP-LIFECYCLE-001 1.0.0</code> — estados, transições, identificação, validação da ocorrência, planejamento, preparação, início, participação, recorrência, resultados, percepção, satisfação, evidências, memórias, significado, contestação, correção, revogação, propagação e falha segura;</li>
-<li><code>PAS-001-EXP-VIEW-001 1.0.0</code> — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura.</li>
+<li><code>PAS-001-EXP-VIEW-001 1.0.0</code> — Minhas Experiências, áreas funcionais, cartões, linha do tempo, calendário, séries, episódios, estados independentes, privacidade, explicabilidade, compartilhamento, contestação, correção, revogação, acessibilidade e falha segura;</li>
+<li><code>PAS-001-EXP-EVENT-001 1.0.0</code> — agregado funcional, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria.</li>
 </ul>
 <p>Os fundamentos consolidam:</p>
 <ul>
@@ -3087,8 +3101,19 @@
 <li>acessibilidade, consistência entre canais, dispositivos compartilhados, operação offline e falha segura;</li>
 <li>30 comportamentos proibidos e 70 critérios de aceite.</li>
 </ul>
-<p>A Capacidade 08 está <strong>In progress</strong>, com progresso editorial de referência de <code>60%</code>.</p>
-<p>O próximo bloco deverá consolidar os eventos funcionais das Experiências.</p>
+<p><code>PAS-001-EXP-EVENT-001 1.0.0</code> consolida:</p>
+<ul>
+<li>distinção entre sinal, comando, proposta, declaração, evento e efeito;</li>
+<li><code>Registro de Experiência</code> como agregado funcional principal;</li>
+<li>estrutura comum versionada com titular, ator, autoridade, finalidade, temporalidades, proveniência, sensibilidade, permissões, incerteza e retenção;</li>
+<li>19 famílias de eventos cobrindo identificação, ocorrência, planejamento, participação, encerramento, resultados, percepção, evidências, memórias, significado, privacidade, compartilhamento, correção, revogação, sincronização e reconstrução;</li>
+<li>persistência anterior à publicação e consumo limitado à semântica do evento;</li>
+<li>idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, compatibilidade e falha segura;</li>
+<li>correção compensatória, revogação propagada, retenção proporcional, explicabilidade e auditoria;</li>
+<li>30 comportamentos proibidos e 60 critérios de aceite.</li>
+</ul>
+<p>A Capacidade 08 está <strong>In progress</strong>, com progresso editorial de referência de <code>80%</code>.</p>
+<p>O próximo bloco deverá consolidar as integrações funcionais das Experiências.</p>
 <h2 id="regras-arquiteturais">Regras arquiteturais<a class="headerlink" href="#regras-arquiteturais" title="Permanent link">¶</a></h2>
 <ol>
 <li>Nenhum componente representa sozinho todo o Ecossistema Guivos.</li>
@@ -3911,6 +3936,46 @@
 <li>Produtos especializados preservam estados canônicos e controles equivalentes.</li>
 <li>Métricas avaliam a interface, não o valor humano do participante.</li>
 <li><code>PAS-001-EXP-VIEW-001 1.0.0</code> eleva a Capacidade 08 para <code>60%</code>, mantém <code>In progress</code> e preserva o participante no controle.</li>
+<li>Sinal, comando, proposta, declaração, evento e efeito permanecem distintos.</li>
+<li>Evento material somente é publicado após persistência funcional suficiente.</li>
+<li><code>Registro de Experiência</code> é o agregado funcional principal dos eventos.</li>
+<li>Eventos possuem identidade imutável, versão contratual e versão do agregado.</li>
+<li>Titular, participante, ator, fonte, executor e terceiro afetado permanecem distintos.</li>
+<li>Autoridade técnica não amplia autoridade funcional.</li>
+<li>Finalidade genérica ou comercial não justifica contexto pessoal ou sensível.</li>
+<li>Temporalidades do fato, declaração, conhecimento, reconhecimento e registro permanecem distintas.</li>
+<li>Correlação não representa causalidade.</li>
+<li>Proveniência permite reconstruir fonte, transformações, decisão, evento, consumidor e efeito.</li>
+<li>Sensibilidade governa payload, logs, retenção, visualização e consumidores.</li>
+<li>Payload é minimizado à finalidade declarada.</li>
+<li>Relações comerciais são declaradas e não alteram semântica funcional.</li>
+<li>Incerteza é explícita, preservada e contestável.</li>
+<li>Identificação e candidatura não representam ocorrência.</li>
+<li>Ocorrência não representa presença ou participação.</li>
+<li>Planejamento, reserva, inscrição e compra não representam início.</li>
+<li>Presença e participação permanecem eventos individuais distintos.</li>
+<li>Envolvimento, agência e autonomia não são inferidos silenciosamente.</li>
+<li>Conclusão não representa resultado, satisfação, significado ou transformação.</li>
+<li>Séries e episódios preservam identidades e estados próprios.</li>
+<li>Recorrência não representa evolução.</li>
+<li>Entrega, uso, resultado e efeito permanecem distintos.</li>
+<li>Percepção e satisfação são opcionais e pertencem ao participante.</li>
+<li>Evidência declara escopo, autoridade, limites e validade.</li>
+<li>Memória permanece distinta de evidência e preserva autoria.</li>
+<li>Significado e reflexão são opcionais e privados por padrão.</li>
+<li>Candidaturas a Evento de Vida e transformação não confirmam seus objetos.</li>
+<li>Estado coletivo não substitui estados individuais.</li>
+<li>Visualização não representa interesse, satisfação ou significado.</li>
+<li>Compartilhamento é granular, finalístico, temporário e revogável.</li>
+<li>Proteção de terceiros é aplicada antes da publicação e do consumo.</li>
+<li>Executor externo confirma somente fatos dentro da própria autoridade.</li>
+<li>Contestação limita efeitos incompatíveis.</li>
+<li>Correções são compensatórias e eventos históricos não são reescritos.</li>
+<li>Revogação somente se conclui após propagação suficiente.</li>
+<li>Retentativas e reprocessamentos não duplicam efeitos.</li>
+<li>Eventos fora de ordem e conflitos de versão são reconciliados com segurança.</li>
+<li>Recuperação reconstrói versões, correções e revogações preservando lacunas.</li>
+<li><code>PAS-001-EXP-EVENT-001 1.0.0</code> eleva a Capacidade 08 para <code>80%</code>, mantém <code>In progress</code> e preserva o participante no controle.</li>
 </ol>
 <h2 id="documentos-do-dominio">Documentos do domínio<a class="headerlink" href="#documentos-do-dominio" title="Permanent link">¶</a></h2>
 <ul>
@@ -3935,6 +4000,7 @@
 <li><a href="pas-001-experiencias-fundamentos-iniciais/">PAS-001-EXP-FOUNDATION-001 — Fundamentos Iniciais da Capacidade de Experiências</a></li>
 <li><a href="pas-001-experiencias-ciclo-de-vida/">PAS-001-EXP-LIFECYCLE-001 — Regras do Ciclo de Vida das Experiências</a></li>
 <li><a href="pas-001-experiencias-visualizacao-controle/">PAS-001-EXP-VIEW-001 — Visualização e Controle da Capacidade de Experiências</a></li>
+<li><a href="pas-001-experiencias-eventos-funcionais/">PAS-001-EXP-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Experiências</a></li>
 <li><a href="journey/">Guivos Journey</a></li>
 <li><a href="mall/">Guivos Mall</a></li>
 <li><a href="travel/">Guivos Travel</a></li>
