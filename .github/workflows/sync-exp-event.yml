@@ -1,11 +1,9 @@
 name: Sync EXP Events
 
 on:
-  pull_request:
-    types:
-      - synchronize
+  push:
     branches:
-      - main
+      - agent/experiencias-eventos-final
     paths:
       - .github/trigger/exp-event.txt
 
@@ -16,10 +14,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pull request branch
+      - name: Checkout execution branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: agent/experiencias-eventos-final
           fetch-depth: 0
 
       - name: Configure Python
@@ -57,7 +55,7 @@ jobs:
             git config user.email "guivosbrasil@gmail.com"
             git add .github/trigger/exp-event-error.txt
             git commit -m "chore(sync): registrar diagnostico dos eventos" || true
-            git push origin HEAD:${{ github.head_ref }}
+            git push origin HEAD:agent/experiencias-eventos-final
             exit "$status"
           fi
           rm -f .github/trigger/exp-event-error.txt
@@ -88,4 +86,4 @@ jobs:
           git commit -m "docs(changelog): registrar eventos de Experiencias"
 
       - name: Push synchronized commits
-        run: git push origin HEAD:${{ github.head_ref }}
+        run: git push origin HEAD:agent/experiencias-eventos-final
