@@ -1,3 +1,3 @@
 Traceback (most recent call last):
-  File "<stdin>", line 12, in <module>
-zlib.error: Error -3 while decompressing data: incorrect header check
+  File "<stdin>", line 22, in <module>
+RuntimeError: payload não pôde ser descomprimido: Error -3 while decompressing data: incorrect header check | Error -3 while decompressing data: invalid block type | Error -3 while decompressing data: incorrect header check
