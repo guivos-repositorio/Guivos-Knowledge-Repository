@@ -6,12 +6,19 @@ on:
       - agent/evolucao-continua-integracoes-funcionais
     paths:
       - .github/ec-integration-trigger.txt
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 permissions:
   contents: write
 
 concurrency:
-  group: sync-ec-integration
+  group: sync-ec-integration-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -27,17 +34,21 @@ jobs:
       - name: Apply canonical synchronization
         run: python .github/scripts/sync_ec_integration.py
 
+      - name: Commit canonical artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md CHANGELOG.md docs/index.md docs/roadmap.md docs/product-architecture/index.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md mkdocs.yml
+          git diff --cached --quiet && exit 1
+          git commit -m "docs: sincronizar integrações funcionais da evolução contínua"
+
       - name: Remove temporary executor
         run: |
           rm -f .github/scripts/sync_ec_integration.py
           rm -f .github/workflows/sync-ec-integration.yml
           rm -f .github/ec-integration-trigger.txt
+          git add -A
+          git commit -m "chore: remover executor temporário das integrações de evolução"
 
-      - name: Commit synchronized artifacts
-        run: |
-          git config user.name "guivos-repositorio"
-          git config user.email "guivos-repositorio@users.noreply.github.com"
-          git add README.md CHANGELOG.md docs/index.md docs/roadmap.md docs/product-architecture/index.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md mkdocs.yml .github
-          git diff --cached --quiet && exit 1
-          git commit -m "Sincronizar integrações funcionais da Evolução Contínua"
-          git push origin HEAD:agent/evolucao-continua-integracoes-funcionais
+      - name: Push commits
+        run: git push origin HEAD:agent/evolucao-continua-integracoes-funcionais
