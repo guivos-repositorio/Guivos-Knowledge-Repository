@@ -2,6 +2,29 @@
 
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
+## 0.41.0 — Experiences Functional Events
+
+- Criação de `PAS-001-EXP-EVENT-001 — Contratos dos Eventos Funcionais da Capacidade de Experiências`, versão `1.0.0`.
+- Registro do documento como quarta extensão normativa da Capacidade 08 do `PAS-001 — Guivos Journey`.
+- Manutenção da Capacidade 08 como `In progress` e elevação do progresso editorial de 60% para 80%.
+- Distinção normativa entre sinal, comando, proposta, declaração, evento e efeito.
+- Consolidação do `Registro de Experiência` como agregado funcional principal.
+- Definição da estrutura comum dos eventos, identidade, versões, titular, ator, autoridade, fonte, finalidade, temporalidades, proveniência, sensibilidade, permissões, incerteza e retenção.
+- Consolidação de 19 famílias de eventos funcionais.
+- Definição de eventos de identificação, candidatura, autoridade, ocorrência, reconhecimento histórico, planejamento, preparação, início, presença, participação, envolvimento, encerramento, recorrência, entregas, resultados e efeitos.
+- Definição de eventos de percepção, satisfação, evidências, memórias, mídias, autoria, significado, reflexão, participantes, visualização, privacidade, compartilhamento e proteção de terceiros.
+- Consolidação de relações comerciais, execução externa, contestação, correção compensatória, revogação e propagação.
+- Definição de persistência anterior à publicação e consumo limitado à semântica funcional.
+- Consolidação de idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, compatibilidade, retenção, recuperação, reconstrução, explicabilidade, auditoria e falha segura.
+- Registro de 30 comportamentos proibidos e 60 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.13.0` e inclusão da extensão na navegação do MkDocs.
+- Atualização do Roadmap e do Knowledge Board para `10.4.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.13.0`.
+- Atualização do README e da página inicial do GKR.
+- Preservação das Capacidades 02, 03, 04, 05, 06 e 07 como `Functionally complete`.
+- Preservação da Capacidade 09 — Evolução Contínua como `Planned`.
+- Definição das integrações funcionais de Experiências como próximo ponto exato de retomada.
+
 ## 0.40.0 — Experiences Visualization and Control
 
 - Criação de `PAS-001-EXP-VIEW-001 — Visualização e Controle da Capacidade de Experiências`, versão `1.0.0`.
