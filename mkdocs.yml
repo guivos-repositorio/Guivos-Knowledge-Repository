@@ -145,6 +145,7 @@ nav:
       - PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md
       - PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais.md
       - PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md
+      - PAS-001-EXP-FOUNDATION-001 — Fundamentos de Experiências: product-architecture/pas-001-experiencias-fundamentos-iniciais.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
