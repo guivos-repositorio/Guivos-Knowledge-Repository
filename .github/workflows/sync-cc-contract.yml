@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - agent/captura-contexto-contrato-final
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
