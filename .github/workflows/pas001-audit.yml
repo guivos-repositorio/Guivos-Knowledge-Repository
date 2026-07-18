@@ -33,7 +33,20 @@ jobs:
       - name: Generate normative audit
         run: python scripts/generate_pas001_audit.py
       - name: Synchronize canonical artifacts
-        run: python scripts/sync_pas001_audit.py
+        id: sync
+        continue-on-error: true
+        run: python scripts/sync_pas001_audit.py > pas001-sync-log.txt 2>&1
+      - name: Upload synchronization diagnostic
+        if: steps.sync.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: pas001-sync-diagnostic
+          path: pas001-sync-log.txt
+      - name: Stop on synchronization failure
+        if: steps.sync.outcome == 'failure'
+        run: |
+          cat pas001-sync-log.txt
+          exit 1
       - name: Validate final repository state
         run: |
           python scripts/audit_pas001.py
