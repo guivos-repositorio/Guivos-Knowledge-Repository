@@ -1,9 +1,6 @@
 name: Sync CC Final Contract
 
 on:
-  push:
-    branches:
-      - agent/captura-contexto-contrato-final
   pull_request:
     branches:
       - main
@@ -34,7 +31,10 @@ jobs:
           set +e
           python scripts/sync_cc_contract.py > /tmp/sync-cc-contract.log 2>&1
           status=$?
-          if [ "$status" -ne 0 ]; then
+          if [ "$status" -eq 0 ]; then
+            git checkout HEAD -- .github/workflows/sync-cc-contract.yml scripts/sync_cc_contract.py
+            rm -f sync-cc-contract-error.txt
+          else
             git reset --hard HEAD
             tail -n 80 /tmp/sync-cc-contract.log > sync-cc-contract-error.txt
           fi
