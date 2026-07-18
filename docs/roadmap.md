@@ -1,9 +1,9 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 11.1.0
+version: 11.2.0
 owner: Guivos
-last_updated: 2026-07-17
+last_updated: 2026-07-18
 ---
 
 # Roadmap Arquitetural
@@ -16,15 +16,15 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Marco vigente:** `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
-- **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais` e `08 — Experiências`.
+- **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais`, `08 — Experiências` e `09 — Evolução Contínua`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `08 — Experiências`, `Functionally complete`, 100%.
-- **Capacidade ativa:** `09 — Evolução Contínua`, `In progress`, 90%.
+- **Capacidade concluída:** `09 — Evolução Contínua`, `Functionally complete`, 100%.
 - **Extensões normativas vigentes de Oportunidades Ativas:** `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0`.
 - **Extensões normativas vigentes de Intervenções Contextuais:** `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0`.
 - **Extensões normativas vigentes de Experiências:** `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0`.
-- **Extensões normativas vigentes de Evolução Contínua:** `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0`.
+- **Extensões normativas vigentes de Evolução Contínua:** `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0`, `PAS-001-EC-INTEGRATION-001 1.0.0` e `PAS-001-EC-CONTRACT-001 1.0.0`.
 - **Arquitetura funcional:** `GLPA-001 1.1.1`.
 - **Intelligence Architecture:** `GIA-000 1.3.0`.
 - **Glossário Canônico:** `1.8.0`.
@@ -35,7 +35,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá consolidar os KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato final da `Capacidade 09 — Evolução Contínua`.
+O próximo trabalho deverá realizar a Reconciliação e o Fechamento do `PAS-001 — Guivos Journey`, revisar a Capacidade 01, consolidar o mapa final de capacidades e avaliar a prontidão para `PAS-001 1.0.0`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -452,7 +452,20 @@ A Capacidade 08 está `Functionally complete`, com progresso editorial de refer�
 - proteção de saúde, espiritualidade, trabalho, educação, finanças, voluntariado, fontes públicas e terceiros;
 - observabilidade, explicabilidade, auditoria, reconstrução, 36 comportamentos proibidos e 58 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `90%`.
+
+
+`PAS-001-EC-CONTRACT-001 1.0.0` consolidou:
+
+- 90 KPIs em 18 famílias, orientados à qualidade da capacidade e do sistema;
+- baseline funcional segmentada, critérios de maturidade e metas posteriores à baseline real;
+- painel de saúde com 19 visões e cinco níveis de desempenho;
+- 36 guardrails de tolerância zero, prevalentes sobre médias agregadas;
+- cenários funcionalmente ideais, alternativos e limite;
+- 52 critérios de conclusão funcional, lacunas bloqueantes e não bloqueantes e critérios de reabertura;
+- finalidade, singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas e 28 dimensões preservadas;
+- neutralidade comercial, privacidade, confiabilidade, explicabilidade, auditoria, reconstrução e controle do participante;
+- ausência de lacuna funcional bloqueante conhecida na baseline normativa.
+A Capacidade 09 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
 ## Progresso das capacidades do Journey
 
@@ -537,12 +550,12 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar em **KPIs, Guardrails, Cenários e Contrato Final da Capacidade 09 — Evolução Contínua**.
+Retomar na **Reconciliação e Fechamento do PAS-001 — Guivos Journey**.
 
 Próxima entrega:
 
-1. KPIs e famílias de indicadores sistêmicos;
-2. guardrails de tolerância zero e baseline funcional segmentada;
-3. painel de saúde, níveis de desempenho e metas posteriores à baseline;
-4. cenários funcionalmente ideal, alternativo e limite;
-5. critérios de conclusão, lacunas, reabertura e contrato funcional final.
+1. revisar o estado da Capacidade 01 — Captura de Contexto;
+2. atualizar o Mapa de Capacidades do Journey;
+3. consolidar as extensões normativas das Capacidades 02 a 09;
+4. resolver divergências residuais e disposições substituídas;
+5. avaliar a prontidão para `PAS-001 1.0.0` e definir o próximo ciclo de Product Engineering.

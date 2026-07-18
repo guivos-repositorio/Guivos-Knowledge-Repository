@@ -2,9 +2,9 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.20.0
+version: 1.21.0
 owner: Guivos
-last_updated: 2026-07-17
+last_updated: 2026-07-18
 ---
 
 # Matriz de Consolidação Canônica
@@ -253,12 +253,16 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Experiências | Manter | PAS-001-EXP-EVENT-001 1.0.0 define Registro de Experiência, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Experiências | Manter | PAS-001-EXP-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Experiências | Manter | PAS-001-EXP-CONTRACT-001 1.0.0 define 85 KPIs, 17 famílias, 32 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
-| Evolução Contínua | Refinar | Capacidade 09 ativa em 90%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
+| Evolução Contínua | Manter | Capacidade 09 Functionally complete em 100%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
 | Fundamentos Iniciais da Evolução Contínua | Manter | PAS-001-EC-FOUNDATION-001 1.0.0 define finalidade, singularidade, direção, baseline, trajetória, temporalidades, evidências, causalidade, não linearidade, privacidade, estados, eventos e limites iniciais |
 | Ciclo de Vida da Evolução Contínua | Manter | PAS-001-EC-LIFECYCLE-001 1.0.0 define 17 dimensões independentes, estados, transições, identificação, candidatura, baseline, direção, observação, interpretação, reconhecimento, acompanhamento, não linearidade, contestação, correção, revogação, propagação, reconstrução e falha segura |
 | Visualização e Controle da Evolução Contínua | Manter | PAS-001-EC-VIEW-001 1.0.0 define `Minha Evolução`, trajetórias por dimensão e período, baseline, direção, estados, padrões, evidências, confiança, incerteza, interpretações alternativas, controles, privacidade, acessibilidade e falha segura |
 | Eventos Funcionais da Evolução Contínua | Manter | PAS-001-EC-EVENT-001 1.0.0 define Trajetória de Evolução, estrutura comum, 19 famílias, autoridade, finalidade, baseline, direção, temporalidades, proveniência, confiança, incerteza, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais da Evolução Contínua | Manter | PAS-001-EC-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência, temporalidades, confiança, incerteza, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
+| KPIs, Guardrails, Cenários e Contrato Final da Evolução Contínua | Manter | PAS-001-EC-CONTRACT-001 1.0.0 define 90 KPIs, 18 famílias, 36 guardrails, baseline, painel de saúde, cinco níveis, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
+| Baseline de Evolução Contínua | Manter | Referência empírica segmentada construída antes de metas permanentes para avaliar a capacidade e o sistema |
+| Guardrail de Evolução Contínua | Manter | Regra crítica de tolerância zero prevalente sobre médias agregadas |
+| Conclusão funcional de Evolução Contínua | Manter | Contratos essenciais concluídos; não equivale a implementação ou validação em produção |
 | Minha Evolução | Manter | Superfície de compreensão, acompanhamento, revisão e controle, sem nota global, ranking, perfil determinístico ou expectativa de melhoria contínua |
 | Privacidade visual de evolução | Manter | Títulos neutros, prévias protegidas, autenticação proporcional e minimização de trajetórias sensíveis |
 | Matriz de dimensões de evolução | Manter | Representa dimensões independentes sem média global ou comparação de valor humano |

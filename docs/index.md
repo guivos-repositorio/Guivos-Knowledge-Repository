@@ -8,15 +8,15 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - marco `M5.9 — Chat Continuity and Repository Reconciliation Completed` concluído;
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
-- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências funcionalmente concluídas;
+- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 07 — Intervenções Contextuais funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 08 — Experiências funcionalmente concluída, `Functionally complete`, 100%;
-- Capacidade 09 — Evolução Contínua como frente ativa, `In progress`, 90%;
+- Capacidade 09 — Evolução Contínua funcionalmente concluída, `Functionally complete`, 100%;
 - `PAS-001-OA-FOUNDATION-001 1.0.0`, `PAS-001-OA-LIFECYCLE-001 1.0.0`, `PAS-001-OA-VIEW-001 1.0.0`, `PAS-001-OA-EVENT-001 1.0.0`, `PAS-001-OA-INTEGRATION-001 1.0.0` e `PAS-001-OA-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 06;
 - `PAS-001-IC-FOUNDATION-001 1.0.0`, `PAS-001-IC-LIFECYCLE-001 1.0.0`, `PAS-001-IC-VIEW-001 1.0.0`, `PAS-001-IC-EVENT-001 1.0.0`, `PAS-001-IC-INTEGRATION-001 1.0.0` e `PAS-001-IC-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 07;
 - `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 08;
-- `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0` como extensões normativas vigentes da Capacidade 09;
+- `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0`, `PAS-001-EC-INTEGRATION-001 1.0.0` e `PAS-001-EC-CONTRACT-001 1.0.0` como extensões normativas vigentes da Capacidade 09;
 - `GLPA-001 1.1.1` vigente;
 - `GIA-000 1.3.0` vigente;
 - Glossário Canônico `1.8.0`;
@@ -24,9 +24,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Capacidade 09 — Evolução Contínua**.
+Realizar a **Reconciliação e o Fechamento do PAS-001 — Guivos Journey**, revisar a Capacidade 01, consolidar o mapa de capacidades e avaliar a prontidão para `PAS-001 1.0.0`.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com fundamentos, ciclo de vida, visualização, controle, 19 famílias de eventos, integrações, 80 KPIs em 16 famílias, 28 guardrails, baseline, cenários e contrato final. As seis extensões de Experiências concluem a Capacidade 08 com fundamentos, ciclo de vida, Minhas Experiências, 19 famílias de eventos, integrações, 85 KPIs em 17 famílias, 32 guardrails, baseline, painel de saúde, cenários e contrato final. As cinco extensões de Evolução Contínua mantêm a Capacidade 09 ativa com fundamentos, ciclo de vida, `Minha Evolução`, `Trajetória de Evolução` como agregado, estrutura comum, 19 famílias de eventos, contrato comum de integração, identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência, temporalidades, evidências, causalidade, não linearidade, estados, transições, interpretações alternativas, sincronização, prevenção de ciclos, controles, privacidade, contestação, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura.
+As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com 80 KPIs em 16 famílias e 28 guardrails. As seis extensões de Experiências concluem a Capacidade 08 com 85 KPIs em 17 famílias e 32 guardrails. As seis extensões de Evolução Contínua concluem a Capacidade 09 com fundamentos, ciclo de vida, `Minha Evolução`, eventos, integrações, 90 KPIs em 18 famílias, 36 guardrails, baseline, painel de saúde, cenários e contrato final.
 
 ## Acesso rápido
 
@@ -59,6 +59,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Visualização e Controle da Evolução Contínua](product-architecture/pas-001-evolucao-continua-visualizacao-controle.md)
 - [Eventos Funcionais da Evolução Contínua](product-architecture/pas-001-evolucao-continua-eventos-funcionais.md)
 - [Integrações Funcionais da Evolução Contínua](product-architecture/pas-001-evolucao-continua-integracoes-funcionais.md)
+- [Contrato Final da Evolução Contínua](product-architecture/pas-001-evolucao-continua-kpis-cenarios-contrato-final.md)
 - [GLPA-001](product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](intelligence-architecture/index.md)
 - [Glossário Canônico](glossary.md)
@@ -78,8 +79,8 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Functionally complete — 100% |
-| 09 — Evolução Contínua | In progress — 90% |
+| 09 — Evolução Contínua | Functionally complete — 100% |
 
 ## Ponto de retomada
 
-Retomar em **KPIs, Guardrails, Cenários e Contrato Final da Capacidade 09 — Evolução Contínua**.
+Retomar na **Reconciliação e Fechamento do PAS-001 — Guivos Journey**.

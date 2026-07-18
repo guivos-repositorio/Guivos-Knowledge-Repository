@@ -10,12 +10,12 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências
-- **Capacidade ativa:** 09 — Evolução Contínua, `In progress — 90%`
+- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
+- **Próxima frente:** Reconciliação e Fechamento do PAS-001 — Guivos Journey
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
-- **Extensões vigentes de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0, PAS-001-EC-LIFECYCLE-001 1.0.0, PAS-001-EC-VIEW-001 1.0.0, PAS-001-EC-EVENT-001 1.0.0 e PAS-001-EC-INTEGRATION-001 1.0.0
+- **Extensões vigentes de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0, PAS-001-EC-LIFECYCLE-001 1.0.0, PAS-001-EC-VIEW-001 1.0.0, PAS-001-EC-EVENT-001 1.0.0, PAS-001-EC-INTEGRATION-001 1.0.0 e PAS-001-EC-CONTRACT-001 1.0.0
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
@@ -361,26 +361,28 @@ A Capacidade 08 está **Functionally complete**, com progresso editorial de refe
 
 `PAS-001-EC-INTEGRATION-001 1.0.0` consolida o contrato comum de integração, identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência, temporalidades, sensibilidade, confiança, incerteza, transformações, sincronização, prevenção de ciclos, correção, pausa, desconexão, revogação, propagação, integrações internas e externas, observabilidade, explicabilidade, auditoria, reconstrução e falha segura.
 
-A Capacidade 09 está **In progress**, com progresso editorial de referência de **90%**.
+`PAS-001-EC-CONTRACT-001 1.0.0` consolida 90 KPIs em 18 famílias, baseline funcional segmentada, painel de saúde com 19 visões, cinco níveis de desempenho, 36 guardrails de tolerância zero, cenários ideais, alternativos e limite, 52 critérios de conclusão, lacunas, reabertura e contrato funcional final.
+
+A Capacidade 09 está **Functionally complete**, com progresso editorial de referência de **100%**.
 
 ## Ponto exato de retomada
 
-Retomar em **KPIs, Guardrails, Cenários e Contrato Final da Capacidade 09 — Evolução Contínua**.
+Retomar na **Reconciliação e Fechamento do PAS-001 — Guivos Journey**.
 
 Próxima entrega:
 
-- KPIs e famílias de indicadores sistêmicos;
-- guardrails de tolerância zero e baseline funcional segmentada;
-- painel de saúde, níveis de desempenho e metas posteriores à baseline;
-- cenários funcionalmente ideal, alternativo e limite;
-- critérios de conclusão, lacunas, reabertura e contrato funcional final.
+- revisar a Capacidade 01 — Captura de Contexto;
+- atualizar o Mapa de Capacidades;
+- consolidar extensões e disposições substituídas;
+- resolver divergências residuais;
+- avaliar a prontidão para `PAS-001 1.0.0`.
 
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 08 — Experiências estão `Functionally complete`; a Capacidade 09 — Evolução Contínua está `In progress — 90%`.
+As Capacidades 02 a 09 estão funcionalmente concluídas. A próxima frente é a Reconciliação e o Fechamento do `PAS-001 — Guivos Journey`.
 
 ## Capacidades do Journey
 
@@ -394,7 +396,7 @@ As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 
 | 06 — Oportunidades Ativas | Functionally complete — 100% |
 | 07 — Intervenções Contextuais | Functionally complete — 100% |
 | 08 — Experiências | Functionally complete — 100% |
-| 09 — Evolução Contínua | In progress — 90% |
+| 09 — Evolução Contínua | Functionally complete — 100% |
 
 ## Acesso rápido
 
@@ -427,6 +429,7 @@ As Capacidades 06 — Oportunidades Ativas, 07 — Intervenções Contextuais e 
 - [Visualização e Controle da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-visualizacao-controle.md)
 - [Eventos Funcionais da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-eventos-funcionais.md)
 - [Integrações Funcionais da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-integracoes-funcionais.md)
+- [Contrato Final da Evolução Contínua](docs/product-architecture/pas-001-evolucao-continua-kpis-cenarios-contrato-final.md)
 - [GLPA-001 — Guivos Layered Product Architecture](docs/product-architecture/layered-product-architecture.md)
 - [Guivos Intelligence Architecture](docs/intelligence-architecture/index.md)
 - [Glossário Canônico](docs/glossary.md)
