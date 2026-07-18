@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_cc_contract.py", line 395, in <module>
-    raise RuntimeError(f"{filename}: missing validation token {needle!r}")
-RuntimeError: README.md: missing validation token 'PAS-001-AUDIT-001'

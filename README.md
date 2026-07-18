@@ -10,11 +10,11 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Sincronização vigente:** GE2-SYNC-007
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
-- **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
+- **Capacidades concluídas:** 01 — Captura de Contexto, 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
 - **Reconciliação vigente:** PAS-001-RECON-001 1.0.0
-- **Extensões vigentes da Capacidade 01:** PAS-001-CC-LIFECYCLE-001 1.0.0 e PAS-001-CC-EVENT-INTEGRATION-001 1.0.0 — etapa 2 de 3
-- **Parecer de prontidão:** `Not ready — Capability 01 closure required`
-- **Próxima frente:** KPIs, Guardrails, Cenários e Contrato Final da Capacidade 01 — Captura de Contexto
+- **Extensões vigentes da Capacidade 01:** PAS-001-CC-LIFECYCLE-001 1.0.0, PAS-001-CC-EVENT-INTEGRATION-001 1.0.0 e PAS-001-CC-CONTRACT-001 1.0.0 — etapa 3 de 3 concluída
+- **Parecer de prontidão:** `Conditionally ready — final PAS-001 audit required`
+- **Próxima frente:** `PAS-001-AUDIT-001` — Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
@@ -29,9 +29,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 
 ## Capacidade 01 — Captura de Contexto
 
-`PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida e os estados. `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` conclui a etapa `2 de 3`, com estrutura comum versionada, 20 famílias de eventos, integrações funcionais, recortes autorizados, correção compensatória, revogação propagada, sincronização e prevenção de ciclos.
+`PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida e os estados. `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` consolidou eventos, integrações, recortes, correção compensatória e revogação propagada. `PAS-001-CC-CONTRACT-001 1.0.0` conclui a etapa `3 de 3`, com 80 KPIs em 16 famílias, baseline segmentada, painel de saúde com 17 visões, cinco níveis de desempenho, 42 guardrails, cenários e contrato final.
 
-A capacidade permanece **Substantially complete**. KPIs, guardrails, cenários e contrato final ainda são necessários.
+A capacidade está **Functionally complete — 100%**. Todas as nove capacidades do Journey estão funcionalmente concluídas; o `PAS-001` permanece em `Draft 0.5.0` até a auditoria final.
 
 ## Capacidade 02 — Contexto Vivo
 

@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.24.0
+version: 1.25.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -187,13 +187,16 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Conceito | Decisão | Situação |
 |---|---|---|
 | Reconciliação do PAS-001 | Manter | `PAS-001-RECON-001 1.0.0` governa hierarquia, supersessão, inventário e prontidão |
-| Prontidão para PAS-001 1.0.0 | Refinar | Estado vigente `Not ready — Capability 01 closure required` |
+| Prontidão para PAS-001 1.0.0 | Refinar | Estado vigente `Conditionally ready — final PAS-001 audit required` |
 | Mapa de Capacidades da seção 7 | Histórico | Estados da versão 0.5.0 substituídos pelas extensões normativas |
-| Captura de Contexto | Refinar | `Substantially complete`; etapa `2 de 3` concluída por `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` |
+| Captura de Contexto | Manter | `Functionally complete — 100%`; etapa `3 de 3` concluída por `PAS-001-CC-CONTRACT-001 1.0.0` |
 | Registro de Captura de Contexto | Manter | Unidade funcional recomendada para sessão, entradas, síntese, confirmações e histórico |
 | Sessão de Captura de Contexto | Refinar | Ciclo próprio, estados independentes, encerramento e falha segura |
 | Ciclo de Vida da Captura de Contexto | Manter | `PAS-001-CC-LIFECYCLE-001 1.0.0` governa agregado, sessão, estados, transições, canais, transcrição, interpretação, síntese, confirmação, autorização e persistência |
 | Eventos e Integrações da Captura de Contexto | Manter | `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` governa eventos versionados, 20 famílias, integrações, recortes, propagação, sincronização e prevenção de ciclos |
+| Contrato Final da Captura de Contexto | Manter | `PAS-001-CC-CONTRACT-001 1.0.0` governa 80 KPIs, 16 famílias, baseline, painel de saúde, cinco níveis, 42 guardrails, cenários, conclusão e reabertura |
+| KPIs da Captura de Contexto | Manter | 80 indicadores avaliam o sistema, sem medir quantidade de dados ou valor humano |
+| Guardrails da Captura de Contexto | Manter | 42 proibições de tolerância zero prevalecem sobre médias e metas operacionais |
 | Evento funcional de Captura de Contexto | Refinar | Fato reconhecido e persistido sobre o Registro de Captura, distinto de sinal, comando, proposta, entrada, transcrição, interpretação e síntese |
 | Contrato de integração da Captura de Contexto | Manter | Define produtor, consumidor, finalidade, autoridade, escopo, natureza da informação, sensibilidade, proveniência, temporalidades, retenção e revogação |
 | Recorte de Captura de Contexto | Refinar | Conjunto minimizado, autorizado e versionado para finalidade e consumidor específicos; não equivale à captura integral |
@@ -202,13 +205,13 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Estado funcional da sessão de captura | Manter | `Not initiated`, `Explaining purpose`, `Awaiting participant`, `Capturing`, `Paused`, `Processing`, `Reflecting understanding`, `Awaiting review`, `Partially confirmed`, `Confirmed`, `Correction requested`, `Limited`, `Temporary`, `Abandoned`, `Expired`, `Contested`, `Revoked`, `Closed` ou `Failed` |
 | Entrada original de contexto | Manter | Permanece distinta de transcrição, interpretação, síntese e confirmação |
 | Confirmação suficiente da captura | Refinar | Confirmação delimitada à finalidade; não representa verdade absoluta, perfil integral ou autorização universal |
-| Etapa de fechamento da Capacidade 01 | Manter | Ciclo de vida, eventos e integrações concluídos; contrato final permanece obrigatório |
+| Etapa de fechamento da Capacidade 01 | Manter | Ciclo de vida, eventos, integrações e contrato final concluídos; etapa `3 de 3` encerrada |
 | Síntese inicial suficientemente confirmada | Refinar | Substitui a noção de contexto inicial como verdade completa ou autorização universal |
 | Persistência temporária | Manter | Alternativa legítima sem incorporação automática ao Contexto Vivo |
 | Distância para Evolução | Restringir | Linguagem estratégica não normativa; não pode operar como score, percentual ou ranking humano |
 | Ativação e apresentação de oportunidade | Refinar | Oportunidades governa ativação; Intervenções governa apresentação |
 | Experiência e evolução | Refinar | Vivência e trajetória de mudança permanecem conceitos funcionalmente distintos |
-| Edição PAS-001 1.0.0 | Planejar | Especificação consolidada e federada após fechamento da Capacidade 01 e auditoria final |
+| Edição PAS-001 1.0.0 | Planejar | Todas as capacidades estão concluídas; publicação depende de `PAS-001-AUDIT-001` e decisão formal |
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade |
 | Objetivos | Manter | Capacidade 03 funcionalmente concluída por sete extensões normativas |

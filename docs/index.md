@@ -9,9 +9,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - frente `Product Engineering` ativa;
 - `PAS-001 — Guivos Journey 0.5.0` como especificação-base;
 - `PAS-001-RECON-001 1.0.0` como reconciliação normativa vigente;
-- `PAS-001-CC-LIFECYCLE-001 1.0.0` e `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` como extensões de fechamento da Capacidade 01, etapa `2 de 3`;
-- prontidão `Not ready — Capability 01 closure required`;
-- Capacidades 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua funcionalmente concluídas;
+- `PAS-001-CC-LIFECYCLE-001 1.0.0`, `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` e `PAS-001-CC-CONTRACT-001 1.0.0` como extensões de fechamento da Capacidade 01, etapa `3 de 3` concluída;
+- prontidão `Conditionally ready — final PAS-001 audit required`;
+- Capacidades 01 — Captura de Contexto, 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua funcionalmente concluídas;
 - Capacidade 06 — Oportunidades Ativas funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 07 — Intervenções Contextuais funcionalmente concluída, `Functionally complete`, 100%;
 - Capacidade 08 — Experiências funcionalmente concluída, `Functionally complete`, 100%;
@@ -27,9 +27,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Consolidar os **KPIs, Guardrails, Cenários e Contrato Final da Capacidade 01 — Captura de Contexto** por `PAS-001-CC-CONTRACT-001`, concluindo a etapa `3 de 3` antes da auditoria final de prontidão.
+Executar a **Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey** por `PAS-001-AUDIT-001`, preservando o `PAS-001` em `Draft 0.5.0` até a decisão formal de publicação.
 
-As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com 80 KPIs em 16 famílias e 28 guardrails. As seis extensões de Experiências concluem a Capacidade 08 com 85 KPIs em 17 famílias e 32 guardrails. As seis extensões de Evolução Contínua concluem a Capacidade 09 com fundamentos, ciclo de vida, `Minha Evolução`, eventos, integrações, 90 KPIs em 18 famílias, 36 guardrails, baseline, painel de saúde, cenários e contrato final.
+As três extensões vigentes concluem a Capacidade 01 com ciclo de vida, 20 famílias de eventos, integrações, 80 KPIs em 16 famílias, 42 guardrails, baseline, painel de saúde, cenários e contrato final. As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com 80 KPIs em 16 famílias e 28 guardrails. As seis extensões de Experiências concluem a Capacidade 08 com 85 KPIs em 17 famílias e 32 guardrails. As seis extensões de Evolução Contínua concluem a Capacidade 09 com fundamentos, ciclo de vida, `Minha Evolução`, eventos, integrações, 90 KPIs em 18 famílias, 36 guardrails, baseline, painel de saúde, cenários e contrato final.
 
 ## Acesso rápido
 
@@ -38,6 +38,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 - [Reconciliação e Prontidão do Guivos Journey](product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md)
 - [Ciclo de Vida e Estados Funcionais da Captura de Contexto](product-architecture/pas-001-captura-de-contexto-ciclo-de-vida.md)
 - [Eventos e Integrações Funcionais da Captura de Contexto](product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md)
+- [Contrato Final da Captura de Contexto](product-architecture/pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md)
 - [Cenários e Contrato Final do Contexto Vivo](product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
@@ -77,7 +78,7 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 
 | Capacidade | Estado |
 |---|---|
-| 01 — Captura de Contexto | Substantially complete — etapa 2 de 3 |
+| 01 — Captura de Contexto | Functionally complete — 100% |
 | 02 — Contexto Vivo | Functionally complete |
 | 03 — Objetivos | Functionally complete |
 | 04 — Eventos de Vida | Functionally complete |
@@ -89,4 +90,4 @@ As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de v
 
 ## Ponto de retomada
 
-Retomar nos **KPIs, Guardrails, Cenários e Contrato Final da Capacidade 01 — Captura de Contexto**.
+Retomar na **Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey**.

@@ -14,12 +14,15 @@ related:
   - GE2-SYNC-007
   - AR-001
   - PAS-001-RECON-001
+  - PAS-001-CC-LIFECYCLE-001
+  - PAS-001-CC-EVENT-INTEGRATION-001
+  - PAS-001-CC-CONTRACT-001
   - DR-001
 ---
 
 # PAS-001 — Guivos Journey Product Architecture Specification
 
-> **Aviso normativo de reconciliação:** `PAS-001-RECON-001 1.0.0` estabelece que esta especificação-base permanece `Draft 0.5.0`, classifica o mapa e os pontos de retomada históricos conforme as extensões posteriores e registra a prontidão como `Not ready — Capability 01 closure required`.
+> **Aviso normativo de reconciliação:** `PAS-001-RECON-001 1.0.0` estabelece que esta especificação-base permanece `Draft 0.5.0` e classifica o mapa e os pontos de retomada históricos. `PAS-001-CC-CONTRACT-001 1.0.0` conclui funcionalmente a Capacidade 01 e atualiza a prontidão para `Conditionally ready — final PAS-001 audit required`.
 
 ## 0. Product Philosophy
 
