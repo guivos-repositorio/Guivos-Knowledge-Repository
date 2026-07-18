@@ -1,0 +1,46 @@
+name: Sync PAS-001 Candidate
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - docs/product-architecture/pas-001-guivos-journey-1.0.0-candidate.md
+      - scripts/sync_pas_001_candidate.py
+      - .github/workflows/sync-pas-001-candidate.yml
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout candidate branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Preserve canonical PAS-001 checksum
+        run: sha256sum docs/product-architecture/pas-001-guivos-journey.md > /tmp/pas-before.sha
+
+      - name: Synchronize canonical artifacts
+        run: python scripts/sync_pas_001_candidate.py
+
+      - name: Validate canonical PAS-001 remains unchanged
+        run: |
+          sha256sum docs/product-architecture/pas-001-guivos-journey.md > /tmp/pas-after.sha
+          diff -u /tmp/pas-before.sha /tmp/pas-after.sha
+
+      - name: Commit synchronized artifacts
+        run: |
+          git config user.name "guivos-repositorio"
+          git config user.email "guivos-repositorio@users.noreply.github.com"
+          git add README.md CHANGELOG.md docs/index.md docs/product-architecture/index.md docs/roadmap.md docs/project/knowledge-board.md docs/project/canonical-consolidation-matrix.md mkdocs.yml
+          if git diff --cached --quiet; then
+            echo "No synchronization changes required"
+          else
+            git commit -m "Sincroniza artefatos da edição candidata do PAS-001"
+            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          fi
