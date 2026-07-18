@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Adapt legacy Knowledge Board anchor
+      - name: Adapt legacy anchors
         shell: bash
         run: |
           python - <<'PY'
@@ -52,7 +52,13 @@ jobs:
               "board next activity",
           )'''.splitlines()
           lines[start:end + 1] = replacement
-          path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+          text = "\n".join(lines) + "\n"
+          old = '"- **Próxima frente:** Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey",'
+          new = '"- **Próxima frente:** `PAS-001-AUDIT-001` — Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey",'
+          if text.count(old) != 1:
+              raise SystemExit("README audit identifier anchor not found")
+          text = text.replace(old, new, 1)
+          path.write_text(text, encoding="utf-8")
           PY
 
       - name: Synchronize canonical artifacts
