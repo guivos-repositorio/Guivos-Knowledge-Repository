@@ -1,0 +1,106 @@
+name: Reconcile PAS-001 publication matrix
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/tmp-reconcile-pas001-matrix-publication.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    if: github.head_ref == 'agent/pas-001-publication'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/pas-001-publication
+          fetch-depth: 1
+          show-progress: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Reconcile superseded matrix states
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('docs/project/canonical-consolidation-matrix.md')
+          text = path.read_text(encoding='utf-8')
+          replacements = [
+              (
+                  'Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` aplica a consolidação federada. `PAS-001-RELEASE-VALIDATION-001 1.0.0` confirma ausência de regressões, preserva o `PAS-001 0.5.0`, os nove contratos e as 54 extensões, e emite `Ready for publication` condicionado à aprovação expressa.',
+                  'Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` consolidou a edição federada e agora é histórica. `PAS-001-RELEASE-VALIDATION-001 1.0.0` confirmou ausência de regressões. `PAS-001-PUBLICATION-001 1.0.0` promoveu a edição validada para `PAS-001 1.0.0 active`, preservando os nove contratos e as 54 extensões.'
+              ),
+              (
+                  '| PAS-001 0.5.0 | Manter | Permanece versão canônica até aprovação formal de publicação |',
+                  '| PAS-001 0.5.0 | Historical only | Versão substituída e preservada integralmente no histórico do Git |'
+              ),
+              (
+                  '| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Manter como candidata | Consolida filosofia, camadas, princípios, invariantes, capacidades, perguntas, fronteiras e autoridade federada |',
+                  '| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Historical only — promoted | Candidata validada cujo núcleo arquitetural originou o PAS-001 1.0.0 |'
+              ),
+              (
+                  '| Estado de prontidão | Refinar | `Ready for publication — PAS-001 1.0.0 publication requires explicit approval` |',
+                  '| Estado canônico | Supersede | `Published — PAS-001 1.0.0 active` |'
+              ),
+              (
+                  '| PAS-001-RELEASE-VALIDATION-001 1.0.0 | Manter | Autoridade da validação de release e do parecer condicionado |',
+                  '| PAS-001-RELEASE-VALIDATION-001 1.0.0 | Manter | Autoridade histórica da validação que autorizou a publicação |'
+              ),
+              (
+                  '| PAS-001 0.5.0 | Manter | Permanece canônico até aprovação expressa |',
+                  '| PAS-001 0.5.0 | Historical only | Substituído por PAS-001 1.0.0 e preservado no histórico |'
+              ),
+              (
+                  '| Publicação controlada | Pendente de aprovação | Próxima frente normativa |',
+                  '| Publicação controlada | Concluída | Registrada por PAS-001-PUBLICATION-001 1.0.0 |'
+              ),
+              (
+                  '## Próxima revisão\n\nExecutar `PAS-001-PUBLICATION-001` somente após aprovação expressa, promovendo a candidata de forma controlada, preservando histórico, sincronizando artefatos e validando rollback.',
+                  '## Próxima revisão\n\nExecutar `PAS-001-CAPABILITY-MAP-001`, produzindo o Mapa Final de Capacidades do Guivos Journey a partir do `PAS-001 1.0.0` publicado e de seus contratos especializados.'
+              ),
+              (
+                  'Parecer vigente: `Ready for publication — PAS-001 1.0.0 publication requires explicit approval`.',
+                  'Estado vigente: `Published — PAS-001 1.0.0 active`.'
+              ),
+          ]
+
+          for old, new in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'expected one matrix anchor, found {count}: {old[:90]}')
+              text = text.replace(old, new, 1)
+
+          required = [
+              'version: 1.29.0',
+              'PAS-001 1.0.0 active',
+              'PAS-001-CAPABILITY-MAP-001',
+              '| Publicação controlada | Concluída |',
+              '## PAS-001 — Publicação Controlada 1.0.0',
+          ]
+          for item in required:
+              if item not in text:
+                  raise SystemExit(f'matrix missing {item}')
+          forbidden = [
+              'Permanece versão canônica até aprovação formal de publicação',
+              'Permanece canônico até aprovação expressa',
+              '| Publicação controlada | Pendente de aprovação |',
+              'Executar `PAS-001-PUBLICATION-001` somente após aprovação expressa',
+              'Parecer vigente: `Ready for publication',
+          ]
+          for item in forbidden:
+              if item in text:
+                  raise SystemExit(f'stale matrix state remains: {item}')
+
+          path.write_text(text, encoding='utf-8')
+          PY
+          git diff --check
+          git config user.name "guivos-repositorio"
+          git config user.email "guivos-repositorio@users.noreply.github.com"
+          git add docs/project/canonical-consolidation-matrix.md
+          git commit -m "Reconcile PAS-001 publication matrix state"
+          git push origin HEAD:agent/pas-001-publication
