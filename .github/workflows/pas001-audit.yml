@@ -5,7 +5,8 @@ on:
     branches:
       - agent/pas-001-auditoria-final-prontidao
     paths:
-      - scripts/audit_pas001.py
+      - scripts/generate_pas001_audit.py
+      - scripts/sync_pas001_audit.py
       - .github/workflows/pas001-audit.yml
 
 permissions:
@@ -20,13 +21,48 @@ jobs:
         with:
           ref: agent/pas-001-auditoria-final-prontidao
           fetch-depth: 0
-      - name: Run PAS-001 audit
+      - name: Regenerate mechanical evidence
         run: python scripts/audit_pas001.py
-      - name: Commit audit output
+      - name: Generate normative audit
+        run: python scripts/generate_pas001_audit.py
+      - name: Synchronize canonical artifacts
+        run: python scripts/sync_pas001_audit.py
+      - name: Validate final repository state
+        run: |
+          python scripts/audit_pas001.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('pas001-audit-output.json').read_text(encoding='utf-8'))
+          assert data['total_capability_extensions'] == 54
+          assert not data['missing_metadata']
+          assert not data['links']['broken']
+          assert not data['nav']['missing_targets']
+          assert data['nav']['audit_present']
+          assert data['full_supersession_matrix_present']
+          assert data['authority_register_present']
+          assert data['versions']['product_architecture'] == '1.26.0'
+          assert data['versions']['roadmap'] == '11.7.0'
+          assert data['versions']['board'] == '11.7.0'
+          assert data['versions']['matrix'] == '1.26.0'
+          assert data['versions']['pas001'] == '0.5.0'
+          print('final PAS-001 audit validation passed')
+          PY
+      - name: Commit normative audit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pas001-audit-output.json
+          git add \
+            CHANGELOG.md \
+            README.md \
+            docs/index.md \
+            docs/product-architecture/index.md \
+            docs/product-architecture/pas-001-guivos-journey.md \
+            docs/product-architecture/pas-001-guivos-journey-auditoria-final-prontidao.md \
+            docs/project/canonical-consolidation-matrix.md \
+            docs/project/knowledge-board.md \
+            docs/roadmap.md \
+            mkdocs.yml
           git diff --cached --quiet && exit 0
-          git commit -m "Registrar evidências mecânicas da auditoria PAS-001"
+          git commit -m "Concluir auditoria final de prontidão do PAS-001"
           git push
