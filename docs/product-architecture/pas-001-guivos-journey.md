@@ -772,7 +772,7 @@ As demais extensões das capacidades permanecem vigentes e são referenciadas pe
 
 # 25. Preservação histórica
 
-A publicação futura do `PAS-001 1.0.0` não deverá:
+A publicação e a manutenção do `PAS-001 1.0.0` não deverão:
 
 - apagar o histórico do `0.5.0`;
 - apagar a reconciliação;
