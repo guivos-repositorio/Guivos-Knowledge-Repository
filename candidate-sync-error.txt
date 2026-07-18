@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_001_candidate.py", line 169, in <module>
-    raise RuntimeError(f"validation failed: {needle!r} missing from {file_path}")
-RuntimeError: validation failed: 'PAS-001-RELEASE-VALIDATION-001' missing from docs/index.md
