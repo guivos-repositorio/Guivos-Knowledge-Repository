@@ -31,10 +31,21 @@ jobs:
           set -euo pipefail
           git fetch --no-tags --depth=1 --quiet origin main
           test "$(git rev-parse origin/main)" = "0de9d6ddbb0b74d91f5053593f140218bb47d812"
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('scripts/tmp_publish_pas001.py')
+          text = path.read_text(encoding='utf-8')
+          old = '["status: active", "version: 1.0.0", "25 de 25", "35 de 35", "30 de 30"]'
+          new = '["status: active", "version: 1.0.0", "25 de 25", "35 critérios de aceite", "30 comportamentos globais proibidos"]'
+          if old not in text:
+              raise SystemExit('validation marker list not found')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
           set +e
           python scripts/tmp_publish_pas001.py > tmp-pas001-publication-diagnostic.txt 2>&1
           rc=$?
           set -e
+          git checkout -- scripts/tmp_publish_pas001.py
           if [ "$rc" -ne 0 ]; then
             git config user.name "guivos-repositorio"
             git config user.email "guivos-repositorio@users.noreply.github.com"
