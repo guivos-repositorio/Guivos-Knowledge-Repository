@@ -14,8 +14,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Reconciliação vigente:** PAS-001-RECON-001 1.0.0
 - **Extensões vigentes da Capacidade 01:** PAS-001-CC-LIFECYCLE-001 1.0.0, PAS-001-CC-EVENT-INTEGRATION-001 1.0.0 e PAS-001-CC-CONTRACT-001 1.0.0 — etapa 3 de 3 concluída
 - **Auditoria final:** PAS-001-AUDIT-001 1.0.0
-- **Parecer de prontidão:** `Ready for consolidation — PAS-001 1.0.0 editorial consolidation authorized`
-- **Próxima frente:** Edição Consolidada e Federada do `PAS-001 — Guivos Journey 1.0.0`
+- **Edição candidata:** PAS-001-CANDIDATE-001 1.0.0-rc.1
+- **Parecer de prontidão:** `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized`
+- **Próxima frente:** `PAS-001-RELEASE-VALIDATION-001` — Validação Editorial e Normativa da Edição Candidata
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
@@ -416,6 +417,7 @@ As Capacidades 01 a 09 estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0
 - [Eventos e Integrações da Captura de Contexto](docs/product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md)
 - [Contrato Final da Captura de Contexto](docs/product-architecture/pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md)
 - [Auditoria Final do PAS-001](docs/product-architecture/pas-001-guivos-journey-auditoria-final-prontidao.md)
+- [Edição Candidata Federada do PAS-001 1.0.0](docs/product-architecture/pas-001-guivos-journey-1.0.0-candidate.md)
 - [Cenários e Contrato Final do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
