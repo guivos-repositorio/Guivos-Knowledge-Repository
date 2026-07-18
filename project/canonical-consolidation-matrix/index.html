@@ -2467,6 +2467,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../../product-architecture/pas-001-guivos-journey-validacao-publicacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-RELEASE-VALIDATION-001 — Validação Editorial e Normativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../product-architecture/pas-001-contexto-vivo-estados-dimensionais/" class="md-nav__link">
         
   
@@ -6577,6 +6612,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#validacao-de-release-do-pas-001" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validação de release do PAS-001
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#proxima-revisao" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6823,6 +6869,17 @@
     <span class="md-ellipsis">
       
         Edição candidata do PAS-001
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacao-de-release-do-pas-001" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validação de release do PAS-001
       
     </span>
   </a>
@@ -8530,7 +8587,7 @@
 </tbody>
 </table>
 <h2 id="reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>Todas as nove capacidades estão funcionalmente concluídas. <code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates, consolidou a matriz final de supersessão e o registro transversal de autoridade. <code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> aplica essas decisões em uma edição federada, preservando o <code>PAS-001 0.5.0</code> e as 54 extensões especializadas.</p>
+<p>Todas as nove capacidades estão funcionalmente concluídas. <code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates. <code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> aplica a consolidação federada. <code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> confirma ausência de regressões, preserva o <code>PAS-001 0.5.0</code>, os nove contratos e as 54 extensões, e emite <code>Ready for publication</code> condicionado à aprovação expressa.</p>
 <h2 id="edicao-candidata-do-pas-001">Edição candidata do PAS-001<a class="headerlink" href="#edicao-candidata-do-pas-001" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -8569,15 +8626,57 @@
 <tr>
 <td>Estado de prontidão</td>
 <td>Refinar</td>
-<td><code>Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized</code></td>
+<td><code>Ready for publication — PAS-001 1.0.0 publication requires explicit approval</code></td>
+</tr>
+<tr>
+<td>PAS-001-RELEASE-VALIDATION-001 1.0.0</td>
+<td>Manter</td>
+<td>Autoridade da validação de release e do parecer condicionado</td>
+</tr>
+</tbody>
+</table>
+<h2 id="validacao-de-release-do-pas-001">Validação de release do PAS-001<a class="headerlink" href="#validacao-de-release-do-pas-001" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Decisão</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25 gates de release</td>
+<td>Manter</td>
+<td>Todos aprovados, sem regressão dos 15 gates anteriores</td>
+</tr>
+<tr>
+<td>35 critérios da candidata</td>
+<td>Manter</td>
+<td>Todos atendidos</td>
+</tr>
+<tr>
+<td>30 comportamentos proibidos</td>
+<td>Manter</td>
+<td>Todos bloqueados</td>
+</tr>
+<tr>
+<td>PAS-001 0.5.0</td>
+<td>Manter</td>
+<td>Permanece canônico até aprovação expressa</td>
+</tr>
+<tr>
+<td>Publicação controlada</td>
+<td>Pendente de aprovação</td>
+<td>Próxima frente normativa</td>
 </tr>
 </tbody>
 </table>
 <h2 id="proxima-revisao">Próxima revisão<a class="headerlink" href="#proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Executar <code>PAS-001-RELEASE-VALIDATION-001</code>, comparando a candidata com os 15 gates, contratos finais, matriz de supersessão, registro de autoridade, <code>GLPA-001</code>, <code>GIA-000</code>, links, versões e navegação.</p>
+<p>Executar <code>PAS-001-PUBLICATION-001</code> somente após aprovação expressa, promovendo a candidata de forma controlada, preservando histórico, sincronizando artefatos e validando rollback.</p>
 <h2 id="auditoria-final-do-pas-001">Auditoria final do PAS-001<a class="headerlink" href="#auditoria-final-do-pas-001" title="Permanent link">&para;</a></h2>
 <p><code>PAS-001-AUDIT-001 1.0.0</code> permanece como autoridade da consolidação. Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.</p>
-<p>Parecer vigente: <code>Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized</code>.</p>
+<p>Parecer vigente: <code>Ready for publication — PAS-001 1.0.0 publication requires explicit approval</code>.</p>
 
 
 
