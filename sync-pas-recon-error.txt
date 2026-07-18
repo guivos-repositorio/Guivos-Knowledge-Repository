@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/run_sync_pas_recon.py", line 21, in <module>
+    runpy.run_path(str(ROOT / "scripts/sync_pas_recon.py"), run_name="__main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_recon.py", line 313, in <module>
+    main()
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_recon.py", line 303, in main
+    update_matrix()
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_recon.py", line 169, in update_matrix
+    replace_once(path, anchor, anchor + rows)
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_recon.py", line 23, in replace_once
+    raise RuntimeError(f"{path}: expected one anchor, found {count}: {old[:100]!r}")
+RuntimeError: docs/project/canonical-consolidation-matrix.md: expected one anchor, found 6: '| Conceito | Decisão | Situação |\n|---|---|---|\n'
