@@ -26,6 +26,19 @@ jobs:
       - name: Preserve canonical PAS-001 checksum
         run: sha256sum docs/product-architecture/pas-001-guivos-journey.md > /tmp/pas-before.sha
 
+      - name: Apply validated mission identifier
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('scripts/sync_pas_001_candidate.py')
+          text = path.read_text(encoding='utf-8')
+          old = 'Executar a **Validação Editorial e Normativa da Edição Candidata do PAS-001 — Guivos Journey 1.0.0**, preservando o arquivo canônico em `Draft 0.5.0` até decisão formal `Ready for publication`.'
+          new = 'Executar `PAS-001-RELEASE-VALIDATION-001` — **Validação Editorial e Normativa da Edição Candidata do PAS-001 — Guivos Journey 1.0.0**, preservando o arquivo canônico em `Draft 0.5.0` até decisão formal `Ready for publication`.'
+          if text.count(old) != 1:
+              raise SystemExit('mission replacement anchor not found exactly once')
+          path.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+
       - name: Synchronize canonical artifacts
         run: |
           set +e
@@ -47,7 +60,7 @@ jobs:
           git config user.name "guivos-repositorio"
           git config user.email "guivos-repositorio@users.noreply.github.com"
           git add candidate-sync-error.txt
-          git commit -m "Registra diagnóstico da sincronização candidata"
+          git commit -m "Atualiza diagnóstico da sincronização candidata"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
 
       - name: Stop after diagnostic
