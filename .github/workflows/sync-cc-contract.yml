@@ -1,0 +1,37 @@
+name: Sync CC Final Contract
+
+on:
+  push:
+    branches:
+      - agent/captura-contexto-contrato-final
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/captura-contexto-contrato-final
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Synchronize canonical artifacts
+        run: python scripts/sync_cc_contract.py
+
+      - name: Commit synchronized artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Synchronize Capture Context final contract"
+          git push origin HEAD:agent/captura-contexto-contrato-final
