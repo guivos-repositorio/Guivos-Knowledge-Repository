@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.27.0
+version: 1.28.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -80,9 +80,9 @@ O `PAS-001 — Guivos Journey 0.5.0` é a especificação-base da Experience Lay
 
 ### Reconciliação e prontidão do PAS-001
 
-`PAS-001-RECON-001 1.0.0` reconcilia a especificação-base. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates e autorizou a consolidação editorial. `PAS-001-CANDIDATE-001 1.0.0-rc.1` materializa a edição candidata federada e emite `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized`.
+`PAS-001-RECON-001 1.0.0` reconcilia a especificação-base. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` materializa a edição federada. `PAS-001-RELEASE-VALIDATION-001 1.0.0` aprova os 25 gates de release e emite `Ready for publication — PAS-001 1.0.0 publication requires explicit approval`.
 
-Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001` canônico permanece `Draft 0.5.0` até validação e aprovação formal de publicação.
+Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001` canônico permanece `Draft 0.5.0` até aprovação expressa e execução de `PAS-001-PUBLICATION-001`.
 
 ### Auditoria final do PAS-001
 
@@ -91,6 +91,10 @@ Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001` canôni
 ### Edição candidata do PAS-001
 
 `PAS-001-CANDIDATE-001 1.0.0-rc.1` consolida filosofia, arquitetura em camadas, princípios, invariantes, mapa das nove capacidades, perguntas centrais, fronteiras, autoridade federada e critérios globais, preservando os contratos especializados e o arquivo canônico `0.5.0`.
+
+### Validação de release do PAS-001
+
+`PAS-001-RELEASE-VALIDATION-001 1.0.0` confirma 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer é `Ready for publication`, condicionado à aprovação expressa.
 
 ### Capacidade 01 — Captura de Contexto
 
