@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.27.0
+version: 1.28.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -368,7 +368,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates, consolidou a matriz final de supersessão e o registro transversal de autoridade. `PAS-001-CANDIDATE-001 1.0.0-rc.1` aplica essas decisões em uma edição federada, preservando o `PAS-001 0.5.0` e as 54 extensões especializadas.
+Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` aplica a consolidação federada. `PAS-001-RELEASE-VALIDATION-001 1.0.0` confirma ausência de regressões, preserva o `PAS-001 0.5.0`, os nove contratos e as 54 extensões, e emite `Ready for publication` condicionado à aprovação expressa.
 
 ## Edição candidata do PAS-001
 
@@ -379,14 +379,25 @@ Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 
 | Contratos e extensões especializadas | Manter | Permanecem autoridade detalhada e não são duplicados integralmente |
 | Pergunta central do Contexto Vivo | Refinar | Remove a formulação totalizante e preserva representação revisável do contexto atual |
 | Pergunta central de Objetivos | Refinar | Substitui desejo de evoluir por direções conscientemente assumidas |
-| Estado de prontidão | Refinar | `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized` |
+| Estado de prontidão | Refinar | `Ready for publication — PAS-001 1.0.0 publication requires explicit approval` |
+| PAS-001-RELEASE-VALIDATION-001 1.0.0 | Manter | Autoridade da validação de release e do parecer condicionado |
+
+## Validação de release do PAS-001
+
+| Elemento | Decisão | Situação |
+|---|---|---|
+| 25 gates de release | Manter | Todos aprovados, sem regressão dos 15 gates anteriores |
+| 35 critérios da candidata | Manter | Todos atendidos |
+| 30 comportamentos proibidos | Manter | Todos bloqueados |
+| PAS-001 0.5.0 | Manter | Permanece canônico até aprovação expressa |
+| Publicação controlada | Pendente de aprovação | Próxima frente normativa |
 
 ## Próxima revisão
 
-Executar `PAS-001-RELEASE-VALIDATION-001`, comparando a candidata com os 15 gates, contratos finais, matriz de supersessão, registro de autoridade, `GLPA-001`, `GIA-000`, links, versões e navegação.
+Executar `PAS-001-PUBLICATION-001` somente após aprovação expressa, promovendo a candidata de forma controlada, preservando histórico, sincronizando artefatos e validando rollback.
 
 ## Auditoria final do PAS-001
 
 `PAS-001-AUDIT-001 1.0.0` permanece como autoridade da consolidação. Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.
 
-Parecer vigente: `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized`.
+Parecer vigente: `Ready for publication — PAS-001 1.0.0 publication requires explicit approval`.
