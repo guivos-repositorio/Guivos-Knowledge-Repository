@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_publish_pas001.py", line 535, in <module>
+    main()
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_publish_pas001.py", line 531, in main
+    validate()
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_publish_pas001.py", line 458, in validate
+    raise RuntimeError(f"validation missing {item}")
+RuntimeError: validation missing 35 de 35
