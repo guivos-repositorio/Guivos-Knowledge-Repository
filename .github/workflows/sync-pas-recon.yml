@@ -21,4 +21,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Synchronize canonical artifacts
-        run: python scripts/sync_pas_recon.py
+        run: python scripts/run_sync_pas_recon.py
