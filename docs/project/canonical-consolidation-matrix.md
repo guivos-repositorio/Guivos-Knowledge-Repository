@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.19.0
+version: 1.20.0
 owner: Guivos
 last_updated: 2026-07-17
 ---
@@ -253,11 +253,12 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Eventos Funcionais das Experiências | Manter | PAS-001-EXP-EVENT-001 1.0.0 define Registro de Experiência, estrutura comum, 19 famílias de eventos, autoridade, finalidade, temporalidades, proveniência, sensibilidade, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
 | Integrações Funcionais das Experiências | Manter | PAS-001-EXP-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
 | KPIs, Guardrails, Cenários e Contrato Final das Experiências | Manter | PAS-001-EXP-CONTRACT-001 1.0.0 define 85 KPIs, 17 famílias, 32 guardrails, baseline, painel de saúde, cenários, critérios de conclusão, lacunas, reabertura e contrato final |
-| Evolução Contínua | Refinar | Capacidade 09 ativa em 80%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
+| Evolução Contínua | Refinar | Capacidade 09 ativa em 90%, responsável por trajetórias de mudança humana reconhecidas ao longo do tempo |
 | Fundamentos Iniciais da Evolução Contínua | Manter | PAS-001-EC-FOUNDATION-001 1.0.0 define finalidade, singularidade, direção, baseline, trajetória, temporalidades, evidências, causalidade, não linearidade, privacidade, estados, eventos e limites iniciais |
 | Ciclo de Vida da Evolução Contínua | Manter | PAS-001-EC-LIFECYCLE-001 1.0.0 define 17 dimensões independentes, estados, transições, identificação, candidatura, baseline, direção, observação, interpretação, reconhecimento, acompanhamento, não linearidade, contestação, correção, revogação, propagação, reconstrução e falha segura |
 | Visualização e Controle da Evolução Contínua | Manter | PAS-001-EC-VIEW-001 1.0.0 define `Minha Evolução`, trajetórias por dimensão e período, baseline, direção, estados, padrões, evidências, confiança, incerteza, interpretações alternativas, controles, privacidade, acessibilidade e falha segura |
 | Eventos Funcionais da Evolução Contínua | Manter | PAS-001-EC-EVENT-001 1.0.0 define Trajetória de Evolução, estrutura comum, 19 famílias, autoridade, finalidade, baseline, direção, temporalidades, proveniência, confiança, incerteza, correção, revogação, idempotência, ordenação, concorrência, reconstrução e auditoria |
+| Integrações Funcionais da Evolução Contínua | Manter | PAS-001-EC-INTEGRATION-001 1.0.0 define contrato comum, identidade, associação, titularidade, autoridade, finalidade, minimização, proveniência, temporalidades, confiança, incerteza, sincronização, prevenção de ciclos, revogação, produtos, organizações, dispositivos, observabilidade e falha segura |
 | Minha Evolução | Manter | Superfície de compreensão, acompanhamento, revisão e controle, sem nota global, ranking, perfil determinístico ou expectativa de melhoria contínua |
 | Privacidade visual de evolução | Manter | Títulos neutros, prévias protegidas, autenticação proporcional e minimização de trajetórias sensíveis |
 | Matriz de dimensões de evolução | Manter | Representa dimensões independentes sem média global ou comparação de valor humano |
@@ -265,6 +266,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Trajetória de Evolução | Manter | Unidade funcional com participante, dimensão, direção, baseline, período, estados, mudanças, evidências, interpretações, confiança, incertezas, fatores contribuintes, correções, permissões e histórico |
 | Evento funcional de evolução | Manter | Fato reconhecido, persistido, versionado e publicado dentro de autoridade, finalidade, dimensão e incerteza explícitas |
 | Contrato de evento de evolução | Manter | Estrutura comum com trajetória, segmento, participante, ator, autoridade, baseline, direção, temporalidades, proveniência, confiança, permissões e retenção |
+| Integração funcional de evolução | Refinar | Intercâmbio governado de sinais, fatos, observações, evidências, interpretações, propostas, comandos e recortes sem reconhecimento automático |
+| Contrato de integração de evolução | Manter | Define produtor, consumidor, participante, trajetória, segmento, finalidade, modo, autoridade, dimensão, baseline, direção, escopo, sensibilidade, proveniência, qualidade, confiança, incerteza, temporalidades, retenção, sincronização e revogação |
 | Direção de evolução | Refinar | Referência legítima e revisável; não representa obrigação, sucesso universal ou valor moral |
 | Baseline de evolução | Manter | Referência temporal legítima, preferencialmente centrada na própria trajetória e distinta de ranking populacional |
 | Não linearidade da evolução | Manter | Avanços, pausas, regressões, oscilações, reorientações e períodos sem mudança permanecem representáveis |
@@ -335,8 +338,8 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0` e `PAS-001-EC-EVENT-001 1.0.0` mantêm a Capacidade 09 como `In progress — 80%` e consolidam finalidade, Trajetória de Evolução, direção, baseline, estados, transições, visualização, estrutura comum, 19 famílias de eventos, evidências, interpretações, confiança, incerteza, causalidade, controles, privacidade, contestação, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura, sem promover candidatos arquiteturais à Canon.
+As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0` mantêm a Capacidade 09 como `In progress — 90%` e consolidam finalidade, Trajetória de Evolução, direção, baseline, estados, transições, visualização, estrutura comum, 19 famílias de eventos, contrato comum de integração, identidade, associação, autoridade, minimização, proveniência, temporalidades, evidências, interpretações, confiança, incerteza, causalidade, sincronização, prevenção de ciclos, controles, privacidade, contestação, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura, sem promover candidatos arquiteturais à Canon.
 
 ## Próxima revisão
 
-Consolidar as **integrações funcionais da Capacidade 09 — Evolução Contínua**, incluindo contrato comum, identidade, associação, autoridade, finalidade, minimização, proveniência, temporalidades, sincronização, prevenção de ciclos, correção, revogação, propagação, observabilidade, neutralidade comercial e falha segura.
+Consolidar **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Capacidade 09 — Evolução Contínua**, incluindo critérios de conclusão, lacunas bloqueantes e não bloqueantes e critérios de reabertura.

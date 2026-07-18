@@ -155,6 +155,7 @@ nav:
       - PAS-001-EC-LIFECYCLE-001 — Ciclo de Vida da Evolução Contínua: product-architecture/pas-001-evolucao-continua-ciclo-de-vida.md
       - PAS-001-EC-VIEW-001 — Visualização e Controle da Evolução Contínua: product-architecture/pas-001-evolucao-continua-visualizacao-controle.md
       - PAS-001-EC-EVENT-001 — Eventos Funcionais da Evolução Contínua: product-architecture/pas-001-evolucao-continua-eventos-funcionais.md
+      - PAS-001-EC-INTEGRATION-001 — Integrações Funcionais da Evolução Contínua: product-architecture/pas-001-evolucao-continua-integracoes-funcionais.md
       - Guivos Journey: product-architecture/journey.md
       - Guivos Mall: product-architecture/mall.md
       - Guivos Travel: product-architecture/travel.md
