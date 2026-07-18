@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.25.0
+version: 1.26.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -80,9 +80,13 @@ O `PAS-001 — Guivos Journey 0.5.0` é a especificação-base da Experience Lay
 
 ### Reconciliação e prontidão do PAS-001
 
-`PAS-001-RECON-001 1.0.0` reconcilia a especificação-base com as extensões normativas, classifica estados e pontos de retomada históricos e define a hierarquia documental. Após o contrato final da Capacidade 01, o parecer vigente passa a `Conditionally ready — final PAS-001 audit required`.
+`PAS-001-RECON-001 1.0.0` reconcilia a especificação-base. `PAS-001-AUDIT-001 1.0.0` avalia os 15 gates, consolida supersessão e autoridade documental e emite `Ready for consolidation — PAS-001 1.0.0 editorial consolidation authorized`.
 
-A Capacidade 01 está `Functionally complete — 100%` pelas extensões `PAS-001-CC-LIFECYCLE-001`, `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001`. Todas as nove capacidades estão funcionalmente concluídas.
+Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001` permanece `Draft 0.5.0` até validação e publicação formal da edição candidata.
+
+### Auditoria final do PAS-001
+
+`PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates, inventariou 54 extensões, validou links, versões, navegação e coerência entre camadas e autorizou a edição candidata `PAS-001 1.0.0`.
 
 ### Capacidade 01 — Captura de Contexto
 
@@ -92,7 +96,7 @@ A Capacidade 01 está `Functionally complete — 100%` pelas extensões `PAS-001
 
 `PAS-001-CC-CONTRACT-001 1.0.0` conclui a etapa `3 de 3`, consolidando 80 KPIs em 16 famílias, baseline segmentada, painel de saúde com 17 visões, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão, 50 regras fundamentais e contrato funcional final.
 
-A capacidade está `Functionally complete — 100%`; o próximo ponto é `PAS-001-AUDIT-001`.
+A capacidade está `Functionally complete — 100%`. A auditoria final foi concluída por `PAS-001-AUDIT-001 1.0.0`.
 
 ### Capacidade 02 — Contexto Vivo
 

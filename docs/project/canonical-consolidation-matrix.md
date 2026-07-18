@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.25.0
+version: 1.26.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -373,3 +373,11 @@ As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION
 ## Próxima revisão
 
 Consolidar **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Capacidade 09 — Evolução Contínua**, incluindo critérios de conclusão, lacunas bloqueantes e não bloqueantes e critérios de reabertura.
+
+## Auditoria final do PAS-001
+
+`PAS-001-AUDIT-001 1.0.0` registra a matriz final de supersessão e o registro transversal de autoridade documental.
+
+Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.
+
+Parecer: `Ready for consolidation — PAS-001 1.0.0 editorial consolidation authorized`.

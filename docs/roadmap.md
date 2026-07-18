@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 11.6.0
+version: 11.7.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -17,9 +17,10 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Reconciliação vigente:** `PAS-001-RECON-001 1.0.0`.
+- **Auditoria final vigente:** `PAS-001-AUDIT-001 1.0.0`.
 - **Extensões vigentes da Capacidade 01:** `PAS-001-CC-LIFECYCLE-001 1.0.0`, `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` e `PAS-001-CC-CONTRACT-001 1.0.0`, etapa `3 de 3` concluída.
-- **Parecer de prontidão:** `Conditionally ready — final PAS-001 audit required`.
-- **Lacuna funcional bloqueante:** nenhuma no nível de especificação das capacidades; permanece obrigatória a auditoria final do `PAS-001`.
+- **Parecer de prontidão:** `Ready for consolidation — PAS-001 1.0.0 editorial consolidation authorized`.
+- **Lacuna bloqueante:** nenhuma para iniciar a consolidação editorial; quatro ações editoriais não bloqueantes estão registradas.
 - **Capacidades concluídas:** `01 — Captura de Contexto`, `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais`, `08 — Experiências` e `09 — Evolução Contínua`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
@@ -39,15 +40,19 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-A Capacidade 01 foi concluída por `PAS-001-CC-CONTRACT-001 1.0.0`. O próximo trabalho deverá executar a **Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey**, mantendo o `PAS-001` em `Draft 0.5.0` até a decisão formal de publicação.
+`PAS-001-AUDIT-001 1.0.0` concluiu a auditoria com parecer `Ready for consolidation`. O próximo trabalho deverá criar a **Edição Consolidada e Federada do PAS-001 — Guivos Journey 1.0.0**, mantendo o arquivo vigente em `Draft 0.5.0` até decisão `Ready for publication`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
+
+## Auditoria final concluída
+
+A auditoria avaliou 15 gates, inventariou 54 extensões e registrou quatro ações editoriais não bloqueantes.
 
 ## Capacidade 01 — Fechamento formal concluído
 
 `PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida. `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` consolidou eventos e integrações. `PAS-001-CC-CONTRACT-001 1.0.0` conclui a etapa `3 de 3`, com 80 KPIs em 16 famílias, baseline, painel de saúde, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão e 50 regras fundamentais.
 
-A Capacidade 01 está `Functionally complete — 100%`. Todas as capacidades do Journey estão funcionalmente concluídas; resta a auditoria final do `PAS-001`.
+A Capacidade 01 está `Functionally complete — 100%`. Todas as capacidades estão funcionalmente concluídas; a próxima etapa é a edição candidata federada do `PAS-001 1.0.0`.
 
 ## Capacidades concluídas
 
