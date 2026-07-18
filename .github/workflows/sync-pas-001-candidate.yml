@@ -32,14 +32,36 @@ jobs:
           python scripts/sync_pas_001_candidate.py > /tmp/sync.log 2>&1
           status=$?
           cat /tmp/sync.log
-          exit $status
+          if [ "$status" -ne 0 ]; then
+            cp /tmp/sync.log candidate-sync-error.txt
+            echo "SYNC_FAILED=1" >> "$GITHUB_ENV"
+          else
+            echo "SYNC_FAILED=0" >> "$GITHUB_ENV"
+          fi
+
+      - name: Publish diagnostic only
+        if: env.SYNC_FAILED == '1'
+        run: |
+          git reset --hard HEAD
+          cp /tmp/sync.log candidate-sync-error.txt
+          git config user.name "guivos-repositorio"
+          git config user.email "guivos-repositorio@users.noreply.github.com"
+          git add candidate-sync-error.txt
+          git commit -m "Registra diagnóstico da sincronização candidata"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+
+      - name: Stop after diagnostic
+        if: env.SYNC_FAILED == '1'
+        run: exit 1
 
       - name: Validate canonical PAS-001 remains unchanged
+        if: env.SYNC_FAILED == '0'
         run: |
           sha256sum docs/product-architecture/pas-001-guivos-journey.md > /tmp/pas-after.sha
           diff -u /tmp/pas-before.sha /tmp/pas-after.sha
 
       - name: Commit synchronized artifacts
+        if: env.SYNC_FAILED == '0'
         run: |
           git config user.name "guivos-repositorio"
           git config user.email "guivos-repositorio@users.noreply.github.com"
