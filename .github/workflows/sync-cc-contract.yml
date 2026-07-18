@@ -31,22 +31,28 @@ jobs:
           from pathlib import Path
 
           path = Path("scripts/sync_cc_contract.py")
-          text = path.read_text(encoding="utf-8")
-          old = '''text = replace_regex(
-              text,
-              r"Retomar nos \\\*\\\*KPIs, Guardrails, Cenários e Contrato Final da Capacidade 01 — Captura de Contexto\\\*\\\*\\\.",
-              "Retomar na **Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey**.",
-              "board resumption",
-          )'''
-          new = '''text = replace_exact(
+          lines = path.read_text(encoding="utf-8").splitlines()
+          marker = next((i for i, line in enumerate(lines) if '"board resumption",' in line), None)
+          if marker is None:
+              raise SystemExit("board resumption marker not found")
+          start = marker
+          while start >= 0 and not lines[start].startswith("text = replace_regex("):
+              start -= 1
+          if start < 0:
+              raise SystemExit("board resumption block start not found")
+          end = marker
+          while end < len(lines) and lines[end] != ")":
+              end += 1
+          if end >= len(lines):
+              raise SystemExit("board resumption block end not found")
+          replacement = '''text = replace_exact(
               text,
               "Consolidar **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Capacidade 09 — Evolução Contínua**, incluindo critérios de conclusão, lacunas bloqueantes e não bloqueantes e critérios de reabertura.",
               "Executar a **Auditoria Final de Prontidão e Consolidação Editorial do PAS-001 — Guivos Journey**, incluindo autoridade documental, supersessão, estados, perguntas centrais, contratos finais, mapa de capacidades, links, navegação e decisão formal de publicação.",
               "board next activity",
-          )'''
-          if old not in text:
-              raise SystemExit("legacy board patch anchor not found")
-          path.write_text(text.replace(old, new, 1), encoding="utf-8")
+          )'''.splitlines()
+          lines[start:end + 1] = replacement
+          path.write_text("\n".join(lines) + "\n", encoding="utf-8")
           PY
 
       - name: Synchronize canonical artifacts
