@@ -11,7 +11,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Revisão concluída:** AR-001 0.5.0
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
-- **Próxima frente:** Reconciliação e Fechamento do PAS-001 — Guivos Journey
+- **Reconciliação vigente:** PAS-001-RECON-001 1.0.0
+- **Parecer de prontidão:** `Not ready — Capability 01 closure required`
+- **Próxima frente:** Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
@@ -367,22 +369,21 @@ A Capacidade 09 está **Functionally complete**, com progresso editorial de refe
 
 ## Ponto exato de retomada
 
-Retomar na **Reconciliação e Fechamento do PAS-001 — Guivos Journey**.
+Retomar no **Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto**.
 
 Próxima entrega:
 
-- revisar a Capacidade 01 — Captura de Contexto;
-- atualizar o Mapa de Capacidades;
-- consolidar extensões e disposições substituídas;
-- resolver divergências residuais;
-- avaliar a prontidão para `PAS-001 1.0.0`.
-
+- criar `PAS-001-CC-LIFECYCLE-001`;
+- consolidar o Registro de Captura de Contexto;
+- definir estados, transições, autorizações, contestação e encerramento;
+- preparar eventos, integrações e contrato final;
+- preservar o `PAS-001` em `0.5.0` até a auditoria final.
 
 ## Product Engineering
 
 A unidade de trabalho vigente é a **capacidade funcional completa**, não a funcionalidade isolada ou a descrição de tela.
 
-As Capacidades 02 a 09 estão funcionalmente concluídas. A próxima frente é a Reconciliação e o Fechamento do `PAS-001 — Guivos Journey`.
+As Capacidades 02 a 09 estão funcionalmente concluídas. `PAS-001-RECON-001 1.0.0` registra que a Capacidade 01 permanece `Substantially complete` e bloqueia o avanço direto para `PAS-001 1.0.0`.
 
 ## Capacidades do Journey
 
@@ -402,6 +403,7 @@ As Capacidades 02 a 09 estão funcionalmente concluídas. A próxima frente é a
 
 - [Guia Oficial da Guivos](docs/public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](docs/product-architecture/pas-001-guivos-journey.md)
+- [Reconciliação e Prontidão do Guivos Journey](docs/product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md)
 - [Cenários e Contrato Final do Contexto Vivo](docs/product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md)
 - [KPIs, Cenários e Contrato Final da Capacidade de Objetivos](docs/product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md)
 - [KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida](docs/product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)

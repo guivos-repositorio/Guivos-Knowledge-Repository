@@ -3,6 +3,29 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+## 0.50.0 — PAS-001 Reconciliation and Readiness
+
+- Criação de `PAS-001-RECON-001 — Reconciliação, Supersessão e Prontidão do Guivos Journey`, versão `1.0.0`.
+- Registro da hierarquia normativa, regra de especificidade, temporalidade documental e categorias de reconciliação.
+- Reconciliação das 51 extensões normativas das Capacidades 02 a 09 com o `PAS-001 0.5.0`.
+- Classificação do mapa e dos pontos de retomada históricos da especificação-base.
+- Preservação das Capacidades 02 a 09 como `Functionally complete`.
+- Manutenção da Capacidade 01 — Captura de Contexto como `Substantially complete`.
+- Registro do parecer `Not ready — Capability 01 closure required` para `PAS-001 1.0.0`.
+- Definição de `Registro de Captura de Contexto` como unidade funcional recomendada.
+- Definição do caminho de fechamento por `PAS-001-CC-LIFECYCLE-001`, `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001`.
+- Reconciliação dos conceitos Oportunidade Ativa, Experiência, Evolução Contínua, Distância para Evolução, contexto inicial confirmado e primeiro valor.
+- Definição de matriz de supersessão, registro de autoridade, gates e estados de prontidão.
+- Registro de 20 comportamentos proibidos e 52 critérios de aceite.
+- Atualização da Arquitetura de Produtos para `1.22.0`.
+- Atualização do Roadmap e do Knowledge Board para `11.3.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.22.0`.
+- Manutenção do `PAS-001` em `0.5.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição do Ciclo de Vida e Estados Funcionais da Capacidade 01 como próximo ponto exato.
+
+
+
 
 
 ## 0.49.0 — Continuous Evolution Functional Completion

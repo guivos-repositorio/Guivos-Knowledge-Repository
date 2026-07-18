@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.21.0
+version: 1.22.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -77,6 +77,12 @@ O Ecossistema Guivos está acima de todos os componentes.
 ## Especificação vigente do Journey
 
 O `PAS-001 — Guivos Journey 0.5.0` é a especificação-base da Experience Layer.
+
+### Reconciliação e prontidão do PAS-001
+
+`PAS-001-RECON-001 1.0.0` reconcilia a especificação-base com as 51 extensões normativas das Capacidades 02 a 09, classifica estados e pontos de retomada históricos, define a hierarquia documental e registra o parecer `Not ready — Capability 01 closure required`.
+
+A Capacidade 01 permanece `Substantially complete` e deverá ser concluída por `PAS-001-CC-LIFECYCLE-001`, `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001`.
 
 ### Capacidade 02 — Contexto Vivo
 
@@ -539,7 +545,9 @@ A Capacidade 09 — Evolução Contínua está `Functionally complete`, com prog
 - ausência de lacuna funcional bloqueante conhecida na baseline normativa.
 A Capacidade 09 está `Functionally complete`, com progresso editorial de referência de `100%`.
 
-A próxima frente oficial é a Reconciliação e o Fechamento do `PAS-001 — Guivos Journey`, com revisão da Capacidade 01, consolidação do mapa de capacidades e avaliação de prontidão para `PAS-001 1.0.0`.
+`PAS-001-RECON-001 1.0.0` conclui a avaliação de prontidão, preserva as Capacidades 02 a 09 como `Functionally complete`, mantém a Capacidade 01 como `Substantially complete` e impede o avanço direto para `PAS-001 1.0.0`.
+
+A próxima frente oficial é o **Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto**, por meio de `PAS-001-CC-LIFECYCLE-001`.
 
 ## Regras arquiteturais
 

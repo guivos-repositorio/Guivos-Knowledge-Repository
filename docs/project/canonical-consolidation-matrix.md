@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.21.0
+version: 1.22.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -186,6 +186,18 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 | Conceito | Decisão | Situação |
 |---|---|---|
+| Reconciliação do PAS-001 | Manter | `PAS-001-RECON-001 1.0.0` governa hierarquia, supersessão, inventário e prontidão |
+| Prontidão para PAS-001 1.0.0 | Refinar | Estado vigente `Not ready — Capability 01 closure required` |
+| Mapa de Capacidades da seção 7 | Histórico | Estados da versão 0.5.0 substituídos pelas extensões normativas |
+| Captura de Contexto | Refinar | `Substantially complete`; requer fechamento formal por três extensões |
+| Registro de Captura de Contexto | Manter | Unidade funcional recomendada para sessão, entradas, síntese, confirmações e histórico |
+| Sessão de Captura de Contexto | Refinar | Ciclo próprio, estados independentes, encerramento e falha segura |
+| Síntese inicial suficientemente confirmada | Refinar | Substitui a noção de contexto inicial como verdade completa ou autorização universal |
+| Persistência temporária | Manter | Alternativa legítima sem incorporação automática ao Contexto Vivo |
+| Distância para Evolução | Restringir | Linguagem estratégica não normativa; não pode operar como score, percentual ou ranking humano |
+| Ativação e apresentação de oportunidade | Refinar | Oportunidades governa ativação; Intervenções governa apresentação |
+| Experiência e evolução | Refinar | Vivência e trajetória de mudança permanecem conceitos funcionalmente distintos |
+| Edição PAS-001 1.0.0 | Planejar | Especificação consolidada e federada após fechamento da Capacidade 01 e auditoria final |
 | Contexto Vivo | Manter | Capacidade 02 funcionalmente concluída pelo PAS-001 0.5.0 e oito extensões normativas |
 | Cenários e Contrato Final do Contexto Vivo | Manter | PAS-001-CV-CONTRACT-001 1.0.0 conclui a capacidade |
 | Objetivos | Manter | Capacidade 03 funcionalmente concluída por sete extensões normativas |

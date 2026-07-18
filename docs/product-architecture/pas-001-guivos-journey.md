@@ -4,7 +4,7 @@ title: Guivos Journey Product Architecture Specification
 status: draft
 version: 0.5.0
 owner: Guivos
-last_updated: 2026-07-13
+last_updated: 2026-07-18
 related:
   - GPA-001
   - GLPA-001
@@ -13,10 +13,13 @@ related:
   - GE2-SYNC-006
   - GE2-SYNC-007
   - AR-001
+  - PAS-001-RECON-001
   - DR-001
 ---
 
 # PAS-001 — Guivos Journey Product Architecture Specification
+
+> **Aviso normativo de reconciliação:** `PAS-001-RECON-001 1.0.0` estabelece que esta especificação-base permanece `Draft 0.5.0`, classifica o mapa e os pontos de retomada históricos conforme as extensões posteriores e registra a prontidão como `Not ready — Capability 01 closure required`.
 
 ## 0. Product Philosophy
 
@@ -280,6 +283,8 @@ flowchart LR
 Esse ciclo é funcional. Não representa pipeline técnico obrigatório, modelo de IA específico ou sequência rígida para todos os casos.
 
 ## 7. Mapa de Capacidades do Journey
+
+> **Estado histórico:** a tabela abaixo registra o estado editorial da versão `0.5.0`. Os estados efetivos são governados por `PAS-001-RECON-001 1.0.0` e pelos contratos finais das capacidades.
 
 | Capacidade | Pergunta central | Estado |
 |---|---|---|
@@ -1285,4 +1290,6 @@ Ainda pendentes:
 
 ## 45. Ponto de retomada
 
-Retomar na Capacidade 02 — Contexto Vivo, definindo os estados funcionais de cada dimensão e, em seguida, as regras de atualização e envelhecimento.
+O ponto de retomada original desta versão é histórico.
+
+Retomar no **Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto**, por meio de `PAS-001-CC-LIFECYCLE-001`.
