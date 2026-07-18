@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 11.2.0
+version: 11.3.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -16,6 +16,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Marco vigente:** `M5.9 — Chat Continuity and Repository Reconciliation Completed`.
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
+- **Reconciliação vigente:** `PAS-001-RECON-001 1.0.0`.
+- **Parecer de prontidão:** `Not ready — Capability 01 closure required`.
+- **Lacuna bloqueante:** ausência de fechamento funcional formal da Capacidade 01 — Captura de Contexto.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais`, `08 — Experiências` e `09 — Evolução Contínua`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
@@ -35,7 +38,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-O próximo trabalho deverá realizar a Reconciliação e o Fechamento do `PAS-001 — Guivos Journey`, revisar a Capacidade 01, consolidar o mapa final de capacidades e avaliar a prontidão para `PAS-001 1.0.0`.
+A reconciliação do `PAS-001 — Guivos Journey` foi concluída por `PAS-001-RECON-001 1.0.0`. O próximo trabalho deverá consolidar o **Ciclo de Vida e os Estados Funcionais da Capacidade 01 — Captura de Contexto**, sem avançar diretamente para `PAS-001 1.0.0`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -550,12 +553,12 @@ Esses entregáveis podem ser executados como frente operacional independente, se
 
 ## Ponto exato de retomada
 
-Retomar na **Reconciliação e Fechamento do PAS-001 — Guivos Journey**.
+Retomar no **Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto**.
 
 Próxima entrega:
 
-1. revisar o estado da Capacidade 01 — Captura de Contexto;
-2. atualizar o Mapa de Capacidades do Journey;
-3. consolidar as extensões normativas das Capacidades 02 a 09;
-4. resolver divergências residuais e disposições substituídas;
-5. avaliar a prontidão para `PAS-001 1.0.0` e definir o próximo ciclo de Product Engineering.
+1. criar `PAS-001-CC-LIFECYCLE-001`;
+2. consolidar o `Registro de Captura de Contexto`;
+3. definir estados independentes e transições;
+4. governar síntese, confirmação, autorização, persistência temporária, contestação e encerramento;
+5. preparar eventos, integrações e contrato final da Capacidade 01.

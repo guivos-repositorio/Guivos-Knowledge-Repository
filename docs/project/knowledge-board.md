@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 11.2.0
+version: 11.3.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -20,6 +20,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | GE2-SYNC-007 | Completed 1.0.0 | Reconciliar conversa anterior, GKR e ponto de retomada |
 | AR-001 | Completed 0.5.0 | Revisar consistência, atualização e diagramas |
 | PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
+| PAS-001-RECON-001 | Active 1.0.0 | Reconciliar autoridade, supersessão e prontidão do Journey |
 | PAS-001-CV-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final do Contexto Vivo |
 | PAS-001-OBJ-CONTRACT-001 | Active 1.0.0 | Consolidar o contrato final da Capacidade de Objetivos |
 | PAS-001-EV-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final de Eventos de Vida |
@@ -61,9 +62,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 |---|---|
 | Frente operacional | `Product Engineering` |
 | Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
+| Reconciliação vigente | `PAS-001-RECON-001 1.0.0` |
+| Parecer de prontidão | `Not ready — Capability 01 closure required` |
+| Lacuna bloqueante | Fechamento funcional formal da Capacidade 01 — Captura de Contexto |
+| Extensões projetadas da Capacidade 01 | `PAS-001-CC-LIFECYCLE-001`, `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001` |
 | Capacidades concluídas | `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais`, `08 — Experiências` e `09 — Evolução Contínua` |
-| Frente ativa | Reconciliação e Fechamento do `PAS-001 — Guivos Journey` |
-| Estado da frente ativa | Próxima frente oficial |
+| Frente ativa | Ciclo de Vida e Estados Funcionais da Capacidade 01 — Captura de Contexto |
+| Estado da frente ativa | Próximo ciclo normativo |
 | Extensões normativas de Experiências | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0` |
 | Extensões normativas de Evolução Contínua | `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0`, `PAS-001-EC-INTEGRATION-001 1.0.0` e `PAS-001-EC-CONTRACT-001 1.0.0` |
 | Progresso editorial de Evolução Contínua | `100%` |
@@ -72,13 +77,13 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Reconciliar e fechar o PAS-001 — Guivos Journey, revisar a Capacidade 01 e avaliar prontidão para 1.0.0 |
+| Foco imediato | Criar `PAS-001-CC-LIFECYCLE-001` e iniciar o fechamento formal da Capacidade 01 |
 
 ## Capacidades do Journey
 
 | Capacidade | Estado | Observação |
 |---|---|---|
-| 01 — Captura de Contexto | Substantially complete | Fluxo e contrato registrados |
+| 01 — Captura de Contexto | Substantially complete | Fechamento formal requerido; ciclo de vida, eventos/integrações e contrato final projetados |
 | 02 — Contexto Vivo | Functionally complete | Oito extensões normativas e contrato final consolidados |
 | 03 — Objetivos | Functionally complete | Sete extensões normativas, KPIs, cenários, guardrails e contrato final consolidados |
 | 04 — Eventos de Vida | Functionally complete | Seis extensões normativas, 60 KPIs, 18 guardrails, cenários e contrato final consolidados |

@@ -106,6 +106,7 @@ nav:
       - Visão Geral: product-architecture/index.md
       - GLPA-001 — Layered Product Architecture: product-architecture/layered-product-architecture.md
       - PAS-001 — Guivos Journey: product-architecture/pas-001-guivos-journey.md
+      - PAS-001-RECON-001 — Reconciliação e Prontidão: product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md
       - PAS-001-CV-STATE-001 — Estados do Contexto Vivo: product-architecture/pas-001-contexto-vivo-estados-dimensionais.md
       - PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento: product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md
       - PAS-001-CV-CONFLICT-001 — Resolução de Conflitos: product-architecture/pas-001-contexto-vivo-resolucao-conflitos.md
