@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.28.0
+version: 1.29.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -401,3 +401,15 @@ Executar `PAS-001-PUBLICATION-001` somente após aprovação expressa, promovend
 `PAS-001-AUDIT-001 1.0.0` permanece como autoridade da consolidação. Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.
 
 Parecer vigente: `Ready for publication — PAS-001 1.0.0 publication requires explicit approval`.
+
+## PAS-001 — Publicação Controlada 1.0.0
+
+| Objeto | Decisão | Autoridade vigente | Situação |
+|---|---|---|---|
+| PAS-001 0.5.0 | Historical only | Histórico do Git, reconciliação e auditoria | Substituído pela edição 1.0.0 |
+| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Historical only — promoted | PAS-001-PUBLICATION-001 | Núcleo arquitetural promovido |
+| PAS-001 1.0.0 | Maintain | Arquivo canônico `pas-001-guivos-journey.md` | Active e normativo |
+| Contratos finais | Maintain | Nove documentos `*-CONTRACT-001` | Autoridades especializadas |
+| Extensões normativas | Maintain | 54 extensões das Capacidades 01–09 | Vigentes |
+| Prontidão | Supersede | PAS-001-PUBLICATION-001 | `Published — PAS-001 1.0.0 active` |
+| Próximo ponto | Refine | Roadmap e Knowledge Board | `PAS-001-CAPABILITY-MAP-001` |
