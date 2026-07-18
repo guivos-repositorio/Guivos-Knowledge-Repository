@@ -29,12 +29,17 @@ except Exception:
     git("push", "origin", "HEAD")
     raise
 else:
-    wrapper = ROOT / "scripts/run_sync_pas_recon.py"
-    if wrapper.exists():
-        wrapper.unlink()
-        configure()
-        git("add", "-A")
-        status = git("status", "--porcelain").stdout.strip()
-        if status:
-            git("commit", "-m", "remove PAS reconciliation diagnostic wrapper")
-            git("push", "origin", "HEAD")
+    for relative in [
+        "scripts/run_sync_pas_recon.py",
+        "scripts/patch_sync_pas_recon.py",
+        "sync-pas-recon-error.txt",
+    ]:
+        path = ROOT / relative
+        if path.exists():
+            path.unlink()
+    configure()
+    git("add", "-A")
+    status = git("status", "--porcelain").stdout.strip()
+    if status:
+        git("commit", "-m", "remove PAS reconciliation diagnostic files")
+        git("push", "origin", "HEAD")
