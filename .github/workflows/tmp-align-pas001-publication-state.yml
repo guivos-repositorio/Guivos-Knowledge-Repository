@@ -1,0 +1,62 @@
+name: Align PAS-001 publication historical state
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/tmp-align-pas001-publication-state.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  align:
+    if: github.head_ref == 'agent/pas-001-publication'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/pas-001-publication
+          fetch-depth: 1
+          show-progress: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Align historical publication wording
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              Path('docs/roadmap.md'): (
+                  '`PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou 25 gates, validou os 35 critérios da candidata e confirmou o bloqueio dos 30 comportamentos proibidos. O estado é `Ready for publication`, mas a publicação depende de aprovação expressa.',
+                  '`PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou 25 gates, validou os 35 critérios da candidata e confirmou o bloqueio dos 30 comportamentos proibidos. O parecer `Ready for publication` autorizou a promoção posteriormente executada por `PAS-001-PUBLICATION-001 1.0.0`.'
+              ),
+              Path('docs/product-architecture/index.md'): (
+                  '`PAS-001-RELEASE-VALIDATION-001 1.0.0` confirma 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer é `Ready for publication`, condicionado à aprovação expressa.',
+                  '`PAS-001-RELEASE-VALIDATION-001 1.0.0` confirmou 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer `Ready for publication` autorizou a promoção posteriormente registrada por `PAS-001-PUBLICATION-001 1.0.0`.'
+              ),
+          }
+
+          for path, (old, new) in replacements.items():
+              text = path.read_text(encoding='utf-8')
+              if text.count(old) != 1:
+                  raise SystemExit(f'{path}: expected one historical phrase, found {text.count(old)}')
+              path.write_text(text.replace(old, new, 1), encoding='utf-8')
+
+          roadmap = Path('docs/roadmap.md').read_text(encoding='utf-8')
+          architecture = Path('docs/product-architecture/index.md').read_text(encoding='utf-8')
+          for marker in ['version: 11.10.0', 'Published — PAS-001 1.0.0 active', 'PAS-001-CAPABILITY-MAP-001']:
+              if marker not in roadmap:
+                  raise SystemExit(f'roadmap missing {marker}')
+          for marker in ['version: 1.29.0', 'PAS-001 1.0.0 active', 'PAS-001-PUBLICATION-001 1.0.0']:
+              if marker not in architecture:
+                  raise SystemExit(f'architecture index missing {marker}')
+          PY
+          git diff --check
+          git config user.name "guivos-repositorio"
+          git config user.email "guivos-repositorio@users.noreply.github.com"
+          git add docs/roadmap.md docs/product-architecture/index.md
+          git commit -m "Align PAS-001 publication historical state"
+          git push origin HEAD:agent/pas-001-publication
