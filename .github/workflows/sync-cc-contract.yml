@@ -28,7 +28,13 @@ jobs:
           python-version: '3.12'
 
       - name: Synchronize canonical artifacts
-        run: python scripts/sync_cc_contract.py
+        shell: bash
+        run: |
+          set +e
+          python scripts/sync_cc_contract.py > /tmp/sync-cc-contract.log 2>&1
+          status=$?
+          tail -n 80 /tmp/sync-cc-contract.log
+          exit $status
 
       - name: Commit synchronized artifacts
         run: |
