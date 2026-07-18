@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.22.0
+version: 1.23.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -83,6 +83,12 @@ O `PAS-001 — Guivos Journey 0.5.0` é a especificação-base da Experience Lay
 `PAS-001-RECON-001 1.0.0` reconcilia a especificação-base com as 51 extensões normativas das Capacidades 02 a 09, classifica estados e pontos de retomada históricos, define a hierarquia documental e registra o parecer `Not ready — Capability 01 closure required`.
 
 A Capacidade 01 permanece `Substantially complete` e deverá ser concluída por `PAS-001-CC-LIFECYCLE-001`, `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001`.
+
+### Capacidade 01 — Captura de Contexto
+
+`PAS-001-CC-LIFECYCLE-001 1.0.0` conclui a etapa `1 de 3` do fechamento formal da Capacidade 01, consolidando o `Registro de Captura de Contexto`, sessão, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, limitação, contestação, revogação, acessibilidade, idempotência, ordenação, concorrência, reconstrução e falha segura.
+
+A capacidade permanece `Substantially complete`; `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001` continuam obrigatórios antes da auditoria final de prontidão.
 
 ### Capacidade 02 — Contexto Vivo
 
