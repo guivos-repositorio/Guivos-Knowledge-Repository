@@ -1,0 +1,60 @@
+name: Publish PAS-001 controlled edition
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/tmp_publish_pas001.py'
+      - '.github/workflows/tmp-publish-pas001.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'agent/pas-001-publication'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout publication branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/pas-001-publication
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify base and execute controlled publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git merge-base HEAD origin/main)" = "0de9d6ddbb0b74d91f5053593f140218bb47d812"
+          python scripts/tmp_publish_pas001.py
+
+      - name: Inspect publication diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          git status --short
+          git diff --check
+          test -n "$(git status --porcelain)"
+
+      - name: Commit generated publication artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "guivos-repositorio"
+          git config user.email "guivos-repositorio@users.noreply.github.com"
+          git add \
+            CHANGELOG.md \
+            README.md \
+            docs/index.md \
+            docs/product-architecture/index.md \
+            docs/product-architecture/pas-001-guivos-journey.md \
+            docs/product-architecture/pas-001-guivos-journey-1.0.0-candidate.md \
+            docs/product-architecture/pas-001-guivos-journey-publicacao-controlada.md \
+            docs/project/canonical-consolidation-matrix.md \
+            docs/project/knowledge-board.md \
+            docs/roadmap.md \
+            mkdocs.yml
+          git commit -m "Publish PAS-001 Guivos Journey 1.0.0"
+          git push origin HEAD:agent/pas-001-publication
