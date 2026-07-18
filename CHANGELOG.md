@@ -3,6 +3,27 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+## 0.51.0 — Capture Context Lifecycle and Functional States
+
+- Criação de `PAS-001-CC-LIFECYCLE-001 — Regras do Ciclo de Vida e Estados Funcionais da Captura de Contexto`, versão `1.0.0`.
+- Registro do documento como primeira extensão complementar de fechamento da Capacidade 01.
+- Consolidação do `Registro de Captura de Contexto` como agregado funcional permanente.
+- Consolidação de sessão, entradas, canais, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, limitação, remoção, contestação, revogação e encerramento.
+- Definição de 14 dimensões de estado independentes e 19 estados funcionais da sessão.
+- Definição de transições fundamentais e transições proibidas.
+- Preservação da entrada original e distinção entre captura, transcrição, interpretação, síntese e confirmação.
+- Proteção de voz, texto, fluxo guiado, arquivos, dispositivos compartilhados, informações sensíveis, crianças, adolescentes e terceiros.
+- Consolidação de acessibilidade, idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, reconstrução, observabilidade, auditoria e falha segura.
+- Registro de 34 comportamentos proibidos e 68 critérios de aceite.
+- Manutenção da Capacidade 01 como `Substantially complete`, com etapa `1 de 3` concluída.
+- Manutenção do `PAS-001` em `Draft 0.5.0` e da prontidão `Not ready — Capability 01 closure required`.
+- Atualização da Arquitetura de Produtos para `1.23.0`.
+- Atualização do Roadmap e do Knowledge Board para `11.4.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.23.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição de Eventos e Integrações Funcionais da Capacidade 01 como próximo ponto exato.
+
+
 ## 0.50.0 — PAS-001 Reconciliation and Readiness
 
 - Criação de `PAS-001-RECON-001 — Reconciliação, Supersessão e Prontidão do Guivos Journey`, versão `1.0.0`.

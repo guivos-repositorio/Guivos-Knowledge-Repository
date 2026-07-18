@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 11.3.0
+version: 11.4.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -17,8 +17,9 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Frente operacional vigente:** `Product Engineering`.
 - **Especificação-base ativa:** `PAS-001 — Guivos Journey 0.5.0`.
 - **Reconciliação vigente:** `PAS-001-RECON-001 1.0.0`.
+- **Extensão vigente da Capacidade 01:** `PAS-001-CC-LIFECYCLE-001 1.0.0`, etapa `1 de 3`.
 - **Parecer de prontidão:** `Not ready — Capability 01 closure required`.
-- **Lacuna bloqueante:** ausência de fechamento funcional formal da Capacidade 01 — Captura de Contexto.
+- **Lacuna bloqueante:** permanecem `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001` para o fechamento funcional formal da Capacidade 01.
 - **Capacidades concluídas:** `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais`, `08 — Experiências` e `09 — Evolução Contínua`.
 - **Capacidade concluída:** `06 — Oportunidades Ativas`, `Functionally complete`, 100%.
 - **Capacidade concluída:** `07 — Intervenções Contextuais`, `Functionally complete`, 100%.
@@ -38,9 +39,15 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-A reconciliação do `PAS-001 — Guivos Journey` foi concluída por `PAS-001-RECON-001 1.0.0`. O próximo trabalho deverá consolidar o **Ciclo de Vida e os Estados Funcionais da Capacidade 01 — Captura de Contexto**, sem avançar diretamente para `PAS-001 1.0.0`.
+O ciclo de vida e os estados funcionais da Capacidade 01 foram consolidados por `PAS-001-CC-LIFECYCLE-001 1.0.0`. O próximo trabalho deverá consolidar os **Eventos e Integrações Funcionais da Capacidade 01 — Captura de Contexto**, mantendo o `PAS-001` em `Draft 0.5.0` e a prontidão como `Not ready`.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
+
+## Capacidade 01 — Fechamento formal em andamento
+
+`PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou a primeira das três etapas obrigatórias, com 103 seções normativas, 34 comportamentos proibidos e 68 critérios de aceite.
+
+A Capacidade 01 permanece `Substantially complete`. Eventos, integrações, KPIs, guardrails, cenários e contrato final permanecem necessários para a conclusão funcional.
 
 ## Capacidades concluídas
 
