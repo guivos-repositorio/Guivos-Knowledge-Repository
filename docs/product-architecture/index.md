@@ -2,9 +2,9 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.20.0
+version: 1.21.0
 owner: Guivos
-last_updated: 2026-07-17
+last_updated: 2026-07-18
 ---
 
 # Arquitetura de Produtos da Guivos
@@ -450,7 +450,7 @@ O ciclo de vida consolida:
 
 A Capacidade 08 está **Functionally complete**, com progresso editorial de referência de `100%`.
 
-A Capacidade 09 — Evolução Contínua está `In progress`, com progresso editorial de referência de `90%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0`.
+A Capacidade 09 — Evolução Contínua está `Functionally complete`, com progresso editorial de referência de `100%`, por meio de `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0`, `PAS-001-EC-INTEGRATION-001 1.0.0` e `PAS-001-EC-CONTRACT-001 1.0.0`.
 
 
 ## Capacidade 09 ativa
@@ -524,9 +524,22 @@ A Capacidade 09 — Evolução Contínua está `In progress`, com progresso edit
 - proteção de saúde, espiritualidade, trabalho, educação, finanças, voluntariado, fontes públicas e terceiros;
 - observabilidade, explicabilidade, auditoria, reconstrução, 36 comportamentos proibidos e 58 critérios de aceite.
 
-A Capacidade 09 está `In progress`, com progresso editorial de referência de `90%`.
 
-O próximo bloco normativo consolida KPIs, guardrails, baseline, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Evolução Contínua.
+
+`PAS-001-EC-CONTRACT-001 1.0.0` consolida:
+
+- 90 KPIs em 18 famílias, orientados à qualidade da capacidade e do sistema;
+- baseline funcional segmentada, critérios de maturidade e metas posteriores à baseline real;
+- painel de saúde com 19 visões e cinco níveis de desempenho;
+- 36 guardrails de tolerância zero, prevalentes sobre médias agregadas;
+- cenários funcionalmente ideais, alternativos e limite;
+- 52 critérios de conclusão funcional, lacunas bloqueantes e não bloqueantes e critérios de reabertura;
+- finalidade, singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas e 28 dimensões preservadas;
+- neutralidade comercial, privacidade, confiabilidade, explicabilidade, auditoria, reconstrução e controle do participante;
+- ausência de lacuna funcional bloqueante conhecida na baseline normativa.
+A Capacidade 09 está `Functionally complete`, com progresso editorial de referência de `100%`.
+
+A próxima frente oficial é a Reconciliação e o Fechamento do `PAS-001 — Guivos Journey`, com revisão da Capacidade 01, consolidação do mapa de capacidades e avaliação de prontidão para `PAS-001 1.0.0`.
 
 ## Regras arquiteturais
 

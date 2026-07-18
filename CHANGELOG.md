@@ -3,6 +3,28 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+
+
+## 0.49.0 — Continuous Evolution Functional Completion
+
+- Criação de `PAS-001-EC-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final da Capacidade de Evolução Contínua`, versão `1.0.0`.
+- Registro do documento como sexta extensão normativa e contrato final da Capacidade 09 do `PAS-001 — Guivos Journey`.
+- Substituição do estado `In progress` por `Functionally complete` e elevação do progresso editorial de 90% para 100%.
+- Consolidação de 90 KPIs em 18 famílias, baseline funcional segmentada, critérios de maturidade e metas posteriores à baseline real.
+- Definição de painel de saúde com 19 visões e cinco níveis de desempenho.
+- Consolidação de 36 guardrails de tolerância zero, prevalentes sobre médias agregadas.
+- Consolidação de cenários funcionalmente ideais, alternativos e limite.
+- Definição de 52 critérios de conclusão, lacunas bloqueantes e não bloqueantes e critérios de reabertura.
+- Consolidação da finalidade, singularidade, titularidade, responsabilidades, limites, entradas, admissão, saídas e 28 dimensões preservadas.
+- Preservação de neutralidade comercial, privacidade, confiabilidade, explicabilidade, auditoria, reconstrução e controle do participante.
+- Registro de ausência de lacuna funcional bloqueante conhecida na baseline normativa.
+- Conclusão funcional das Capacidades 02 a 09 do Journey.
+- Atualização da Arquitetura de Produtos para `1.21.0`.
+- Atualização do Roadmap e do Knowledge Board para `11.2.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.21.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição da Reconciliação e Fechamento do `PAS-001 — Guivos Journey` como próximo ponto exato.
+
 ## 0.48.0 — Continuous Evolution Functional Integrations
 
 - Criação de `PAS-001-EC-INTEGRATION-001 — Integrações Funcionais da Evolução Contínua`, versão `1.0.0`.
