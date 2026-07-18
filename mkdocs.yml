@@ -111,6 +111,7 @@ nav:
       - PAS-001-CC-EVENT-INTEGRATION-001 — Eventos e Integrações da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md
       - PAS-001-CC-CONTRACT-001 — Contrato Final da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md
       - PAS-001-AUDIT-001 — Auditoria Final de Prontidão: product-architecture/pas-001-guivos-journey-auditoria-final-prontidao.md
+      - PAS-001-CANDIDATE-001 — Edição Candidata Federada 1.0.0: product-architecture/pas-001-guivos-journey-1.0.0-candidate.md
       - PAS-001-CV-STATE-001 — Estados do Contexto Vivo: product-architecture/pas-001-contexto-vivo-estados-dimensionais.md
       - PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento: product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md
       - PAS-001-CV-CONFLICT-001 — Resolução de Conflitos: product-architecture/pas-001-contexto-vivo-resolucao-conflitos.md

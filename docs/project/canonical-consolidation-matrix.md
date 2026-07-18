@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.26.0
+version: 1.27.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -368,16 +368,25 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-As Capacidades 02 a 08 estão funcionalmente concluídas. `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0` e `PAS-001-EC-INTEGRATION-001 1.0.0` mantêm a Capacidade 09 como `In progress — 90%` e consolidam finalidade, Trajetória de Evolução, direção, baseline, estados, transições, visualização, estrutura comum, 19 famílias de eventos, contrato comum de integração, identidade, associação, autoridade, minimização, proveniência, temporalidades, evidências, interpretações, confiança, incerteza, causalidade, sincronização, prevenção de ciclos, controles, privacidade, contestação, correção, revogação, idempotência, ordenação, concorrência, reconstrução e falha segura, sem promover candidatos arquiteturais à Canon.
+Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates, consolidou a matriz final de supersessão e o registro transversal de autoridade. `PAS-001-CANDIDATE-001 1.0.0-rc.1` aplica essas decisões em uma edição federada, preservando o `PAS-001 0.5.0` e as 54 extensões especializadas.
+
+## Edição candidata do PAS-001
+
+| Conceito | Decisão | Situação |
+|---|---|---|
+| PAS-001 0.5.0 | Manter | Permanece versão canônica até aprovação formal de publicação |
+| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Manter como candidata | Consolida filosofia, camadas, princípios, invariantes, capacidades, perguntas, fronteiras e autoridade federada |
+| Contratos e extensões especializadas | Manter | Permanecem autoridade detalhada e não são duplicados integralmente |
+| Pergunta central do Contexto Vivo | Refinar | Remove a formulação totalizante e preserva representação revisável do contexto atual |
+| Pergunta central de Objetivos | Refinar | Substitui desejo de evoluir por direções conscientemente assumidas |
+| Estado de prontidão | Refinar | `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized` |
 
 ## Próxima revisão
 
-Consolidar **KPIs, guardrails, baseline funcional, painel de saúde, níveis de desempenho, cenários e contrato funcional final da Capacidade 09 — Evolução Contínua**, incluindo critérios de conclusão, lacunas bloqueantes e não bloqueantes e critérios de reabertura.
+Executar `PAS-001-RELEASE-VALIDATION-001`, comparando a candidata com os 15 gates, contratos finais, matriz de supersessão, registro de autoridade, `GLPA-001`, `GIA-000`, links, versões e navegação.
 
 ## Auditoria final do PAS-001
 
-`PAS-001-AUDIT-001 1.0.0` registra a matriz final de supersessão e o registro transversal de autoridade documental.
+`PAS-001-AUDIT-001 1.0.0` permanece como autoridade da consolidação. Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.
 
-Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.
-
-Parecer: `Ready for consolidation — PAS-001 1.0.0 editorial consolidation authorized`.
+Parecer vigente: `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized`.

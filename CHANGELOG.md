@@ -3,6 +3,18 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+## 0.55.0 — PAS-001 Federated Candidate Edition
+
+- Criação de `PAS-001-CANDIDATE-001 1.0.0-rc.1`.
+- Consolidação federada da filosofia, propósito, arquitetura em camadas, princípios, invariantes, mapa das nove capacidades, perguntas centrais, fronteiras e autoridade documental.
+- Aplicação dos refinamentos editoriais do Contexto Vivo e de Objetivos registrados pela auditoria.
+- Preservação das 54 extensões normativas e dos nove contratos finais como autoridades especializadas.
+- Manutenção do arquivo canônico `PAS-001` em `Draft 0.5.0`, sem alteração de conteúdo.
+- Parecer `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized`.
+- Arquitetura e Matriz `1.27.0`; Roadmap e Board `11.8.0`.
+- Próximo ponto: `PAS-001-RELEASE-VALIDATION-001`.
+
+
 ## 0.54.0 — PAS-001 Final Readiness Audit
 
 - Criação de `PAS-001-AUDIT-001 1.0.0`.
