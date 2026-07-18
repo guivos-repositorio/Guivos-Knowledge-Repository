@@ -109,6 +109,7 @@ nav:
       - PAS-001-RECON-001 — Reconciliação e Prontidão: product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md
       - PAS-001-CC-LIFECYCLE-001 — Ciclo de Vida da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-ciclo-de-vida.md
       - PAS-001-CC-EVENT-INTEGRATION-001 — Eventos e Integrações da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md
+      - PAS-001-CC-CONTRACT-001 — Contrato Final da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md
       - PAS-001-CV-STATE-001 — Estados do Contexto Vivo: product-architecture/pas-001-contexto-vivo-estados-dimensionais.md
       - PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento: product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md
       - PAS-001-CV-CONFLICT-001 — Resolução de Conflitos: product-architecture/pas-001-contexto-vivo-resolucao-conflitos.md
