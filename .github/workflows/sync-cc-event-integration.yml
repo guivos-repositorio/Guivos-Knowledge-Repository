@@ -1,0 +1,31 @@
+name: Synchronize Capture Context Events and Integrations
+
+on:
+  push:
+    branches:
+      - agent/captura-contexto-eventos-integracoes
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Synchronize canonical artifacts
+        run: python .github/scripts/sync_cc_event_integration.py
+
+      - name: Commit synchronized artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --exit-code && { echo "No synchronized changes were produced"; exit 1; } || true
+          git commit -m "Synchronize capture context events and integrations"
+          git push
