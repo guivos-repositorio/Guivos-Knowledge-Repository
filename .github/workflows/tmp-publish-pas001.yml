@@ -20,14 +20,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: agent/pas-001-publication
-          fetch-depth: 0
+          fetch-depth: 2
+          show-progress: false
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Verify base and execute controlled publication
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git merge-base HEAD origin/main)" = "0de9d6ddbb0b74d91f5053593f140218bb47d812"
+          git fetch --no-tags --depth=1 --quiet origin main
+          test "$(git rev-parse origin/main)" = "0de9d6ddbb0b74d91f5053593f140218bb47d812"
           python scripts/tmp_publish_pas001.py
 
       - name: Inspect publication diff
