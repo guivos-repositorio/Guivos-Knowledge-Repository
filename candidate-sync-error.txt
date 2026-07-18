@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_001_candidate.py", line 31, in <module>
-    t = replace_once(t,
-        ^^^^^^^^^^^^^^^
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/sync_pas_001_candidate.py", line 17, in replace_once
-    raise RuntimeError(f"{label}: expected 1 anchor, found {count}")
-RuntimeError: README status: expected 1 anchor, found 0
