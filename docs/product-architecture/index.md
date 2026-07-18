@@ -94,7 +94,7 @@ Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001 1.0.0` e
 
 ### Validação de release do PAS-001
 
-`PAS-001-RELEASE-VALIDATION-001 1.0.0` confirma 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer é `Ready for publication`, condicionado à aprovação expressa.
+`PAS-001-RELEASE-VALIDATION-001 1.0.0` confirmou 25 gates, 35 critérios de aceite, 30 comportamentos proibidos, nove contratos finais, 54 extensões, links, navegação, versões, preservação histórica, plano de publicação e rollback. O parecer `Ready for publication` autorizou a promoção posteriormente registrada por `PAS-001-PUBLICATION-001 1.0.0`.
 
 ### Publicação controlada do PAS-001
 

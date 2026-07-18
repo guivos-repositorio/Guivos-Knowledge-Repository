@@ -56,7 +56,7 @@ A auditoria avaliou 15 gates, inventariou 54 extensões e registrou quatro açõ
 
 ## Validação de release concluída
 
-`PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou 25 gates, validou os 35 critérios da candidata e confirmou o bloqueio dos 30 comportamentos proibidos. O estado é `Ready for publication`, mas a publicação depende de aprovação expressa.
+`PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou 25 gates, validou os 35 critérios da candidata e confirmou o bloqueio dos 30 comportamentos proibidos. O parecer `Ready for publication` autorizou a promoção posteriormente executada por `PAS-001-PUBLICATION-001 1.0.0`.
 
 ## Publicação controlada concluída
 
