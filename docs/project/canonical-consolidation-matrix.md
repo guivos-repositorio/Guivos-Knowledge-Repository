@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.23.0
+version: 1.24.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -189,14 +189,20 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 | Reconciliação do PAS-001 | Manter | `PAS-001-RECON-001 1.0.0` governa hierarquia, supersessão, inventário e prontidão |
 | Prontidão para PAS-001 1.0.0 | Refinar | Estado vigente `Not ready — Capability 01 closure required` |
 | Mapa de Capacidades da seção 7 | Histórico | Estados da versão 0.5.0 substituídos pelas extensões normativas |
-| Captura de Contexto | Refinar | `Substantially complete`; etapa `1 de 3` concluída por `PAS-001-CC-LIFECYCLE-001 1.0.0` |
+| Captura de Contexto | Refinar | `Substantially complete`; etapa `2 de 3` concluída por `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` |
 | Registro de Captura de Contexto | Manter | Unidade funcional recomendada para sessão, entradas, síntese, confirmações e histórico |
 | Sessão de Captura de Contexto | Refinar | Ciclo próprio, estados independentes, encerramento e falha segura |
 | Ciclo de Vida da Captura de Contexto | Manter | `PAS-001-CC-LIFECYCLE-001 1.0.0` governa agregado, sessão, estados, transições, canais, transcrição, interpretação, síntese, confirmação, autorização e persistência |
+| Eventos e Integrações da Captura de Contexto | Manter | `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` governa eventos versionados, 20 famílias, integrações, recortes, propagação, sincronização e prevenção de ciclos |
+| Evento funcional de Captura de Contexto | Refinar | Fato reconhecido e persistido sobre o Registro de Captura, distinto de sinal, comando, proposta, entrada, transcrição, interpretação e síntese |
+| Contrato de integração da Captura de Contexto | Manter | Define produtor, consumidor, finalidade, autoridade, escopo, natureza da informação, sensibilidade, proveniência, temporalidades, retenção e revogação |
+| Recorte de Captura de Contexto | Refinar | Conjunto minimizado, autorizado e versionado para finalidade e consumidor específicos; não equivale à captura integral |
+| Correção compensatória da Captura de Contexto | Manter | Novo evento preserva o histórico, corrige elementos derivados e propaga a alteração aos consumidores afetados |
+| Revogação propagada da Captura de Contexto | Manter | Bloqueia novos usos e somente é concluída após propagação suficiente e registro de retenção residual aplicável |
 | Estado funcional da sessão de captura | Manter | `Not initiated`, `Explaining purpose`, `Awaiting participant`, `Capturing`, `Paused`, `Processing`, `Reflecting understanding`, `Awaiting review`, `Partially confirmed`, `Confirmed`, `Correction requested`, `Limited`, `Temporary`, `Abandoned`, `Expired`, `Contested`, `Revoked`, `Closed` ou `Failed` |
 | Entrada original de contexto | Manter | Permanece distinta de transcrição, interpretação, síntese e confirmação |
 | Confirmação suficiente da captura | Refinar | Confirmação delimitada à finalidade; não representa verdade absoluta, perfil integral ou autorização universal |
-| Etapa de fechamento da Capacidade 01 | Manter | Ciclo de vida concluído; eventos/integrações e contrato final permanecem obrigatórios |
+| Etapa de fechamento da Capacidade 01 | Manter | Ciclo de vida, eventos e integrações concluídos; contrato final permanece obrigatório |
 | Síntese inicial suficientemente confirmada | Refinar | Substitui a noção de contexto inicial como verdade completa ou autorização universal |
 | Persistência temporária | Manter | Alternativa legítima sem incorporação automática ao Contexto Vivo |
 | Distância para Evolução | Restringir | Linguagem estratégica não normativa; não pode operar como score, percentual ou ranking humano |

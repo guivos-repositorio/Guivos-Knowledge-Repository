@@ -3,6 +3,27 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+## 0.52.0 — Capture Context Events and Functional Integrations
+
+- Criação de `PAS-001-CC-EVENT-INTEGRATION-001 — Eventos e Integrações Funcionais da Captura de Contexto`, versão `1.0.0`.
+- Registro do documento como segunda extensão complementar de fechamento da Capacidade 01.
+- Conclusão da etapa `2 de 3`, mantendo a capacidade como `Substantially complete`.
+- Consolidação de estrutura comum versionada para eventos do `Registro de Captura de Contexto`.
+- Consolidação de 20 famílias de eventos funcionais.
+- Distinção entre sinal, comando, proposta, declaração, entrada, transcrição, interpretação, síntese, confirmação, evento, recorte e efeito.
+- Consolidação de produtores, consumidores, autoridade, finalidade, temporalidades, proveniência, sensibilidade, minimização, confiança e incerteza.
+- Consolidação do contrato funcional comum de integração e dos recortes para as capacidades do Journey.
+- Definição de persistência anterior à publicação, correção compensatória e revogação propagada.
+- Consolidação de idempotência, duplicidade semântica, ordenação, concorrência, atomicidade, sincronização, reconstrução e prevenção de ciclos.
+- Registro de 42 comportamentos proibidos e 80 critérios de aceite.
+- Manutenção do `PAS-001` em `Draft 0.5.0` e da prontidão `Not ready — Capability 01 closure required`.
+- Atualização da Arquitetura de Produtos para `1.24.0`.
+- Atualização do Roadmap e do Knowledge Board para `11.5.0`.
+- Atualização da Matriz de Consolidação Canônica para `1.24.0`.
+- Atualização do README, da página inicial e da navegação do MkDocs.
+- Definição de `PAS-001-CC-CONTRACT-001` como próximo ponto exato.
+
+
 ## 0.51.0 — Capture Context Lifecycle and Functional States
 
 - Criação de `PAS-001-CC-LIFECYCLE-001 — Regras do Ciclo de Vida e Estados Funcionais da Captura de Contexto`, versão `1.0.0`.

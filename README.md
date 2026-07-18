@@ -12,9 +12,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **Especificação-base:** PAS-001 — Guivos Journey 0.5.0
 - **Capacidades concluídas:** 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
 - **Reconciliação vigente:** PAS-001-RECON-001 1.0.0
-- **Extensão vigente da Capacidade 01:** PAS-001-CC-LIFECYCLE-001 1.0.0 — etapa 1 de 3
+- **Extensões vigentes da Capacidade 01:** PAS-001-CC-LIFECYCLE-001 1.0.0 e PAS-001-CC-EVENT-INTEGRATION-001 1.0.0 — etapa 2 de 3
 - **Parecer de prontidão:** `Not ready — Capability 01 closure required`
-- **Próxima frente:** Eventos e Integrações Funcionais da Capacidade 01 — Captura de Contexto
+- **Próxima frente:** KPIs, Guardrails, Cenários e Contrato Final da Capacidade 01 — Captura de Contexto
 - **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
 - **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
@@ -29,9 +29,9 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 
 ## Capacidade 01 — Captura de Contexto
 
-`PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou a etapa `1 de 3` do fechamento formal, com `Registro de Captura de Contexto`, sessão, estados independentes, transições, entradas, canais, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, limitação, contestação, revogação, acessibilidade, idempotência, ordenação, concorrência, reconstrução e falha segura.
+`PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida e os estados. `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` conclui a etapa `2 de 3`, com estrutura comum versionada, 20 famílias de eventos, integrações funcionais, recortes autorizados, correção compensatória, revogação propagada, sincronização e prevenção de ciclos.
 
-A capacidade permanece **Substantially complete**. Eventos/integrações e o contrato final ainda são necessários.
+A capacidade permanece **Substantially complete**. KPIs, guardrails, cenários e contrato final ainda são necessários.
 
 ## Capacidade 02 — Contexto Vivo
 

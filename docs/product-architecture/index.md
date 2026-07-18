@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.23.0
+version: 1.24.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -86,9 +86,11 @@ A Capacidade 01 permanece `Substantially complete` e deverá ser concluída por 
 
 ### Capacidade 01 — Captura de Contexto
 
-`PAS-001-CC-LIFECYCLE-001 1.0.0` conclui a etapa `1 de 3` do fechamento formal da Capacidade 01, consolidando o `Registro de Captura de Contexto`, sessão, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, limitação, contestação, revogação, acessibilidade, idempotência, ordenação, concorrência, reconstrução e falha segura.
+`PAS-001-CC-LIFECYCLE-001 1.0.0` concluiu a etapa `1 de 3`, consolidando o `Registro de Captura de Contexto`, sessão, estados, transições, entradas, transcrição, interpretação, síntese, confirmação, autorização, persistência temporária, correção, contestação, reconstrução e falha segura.
 
-A capacidade permanece `Substantially complete`; `PAS-001-CC-EVENT-INTEGRATION-001` e `PAS-001-CC-CONTRACT-001` continuam obrigatórios antes da auditoria final de prontidão.
+`PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` conclui a etapa `2 de 3`, consolidando estrutura comum versionada, 20 famílias de eventos, contrato funcional comum de integração, produtores, consumidores, recortes, correção compensatória, revogação propagada, sincronização, prevenção de ciclos, idempotência, ordenação, concorrência, explicabilidade e auditoria.
+
+A capacidade permanece `Substantially complete`; somente `PAS-001-CC-CONTRACT-001` continua obrigatório antes da auditoria final de prontidão.
 
 ### Capacidade 02 — Contexto Vivo
 
