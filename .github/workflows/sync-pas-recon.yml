@@ -20,5 +20,8 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Scope synchronization anchors
+        run: python scripts/patch_sync_pas_recon.py
+
       - name: Synchronize canonical artifacts
         run: python scripts/run_sync_pas_recon.py
