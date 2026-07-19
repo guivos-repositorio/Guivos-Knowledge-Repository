@@ -1,1 +1,0 @@
-docs/project/canonical-consolidation-matrix.md:428: new blank line at EOF.
