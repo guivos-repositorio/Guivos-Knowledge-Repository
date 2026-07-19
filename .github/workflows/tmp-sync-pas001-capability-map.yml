@@ -31,6 +31,7 @@ jobs:
           set -euo pipefail
           git fetch --no-tags --depth=1 --quiet origin main
           test "$(git rev-parse origin/main)" = "4289faad709eeed326042de263d1682d13d84243"
+          sed -i 's#(product-architecture/pas-001-guivos-journey-publicacao-controlada.md)#(docs/product-architecture/pas-001-guivos-journey-publicacao-controlada.md)#g; s#(product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)#(docs/product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)#g' scripts/tmp_sync_pas001_capability_map.py
           set +e
           python scripts/tmp_sync_pas001_capability_map.py > tmp-pas001-capability-map-diagnostic.txt 2>&1
           rc=$?
