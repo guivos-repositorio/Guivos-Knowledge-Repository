@@ -10,7 +10,8 @@ supersedes_partial:
 related:
   - PAS-001-ENGINEERING-HANDOFF-001
   - PAS-001-CC-UIC-001
-  - M5.12
+  - PAS-001-CC-UIC-DOMAIN-001
+  - M5.13
 ---
 
 # Knowledge Board — Estado Efetivo 11.14.0
@@ -24,10 +25,12 @@ related:
 | PAS-001 | Active 1.0.0 |
 | Mapa Final | Active 1.0.1 |
 | Engineering Handoff | Draft 0.2.0 efetivo |
-| UIC-01 | Draft 0.1.0 |
-| Marco | M5.12 |
+| UIC-01 | Draft 0.2.0 efetivo |
+| Estado técnico | Domain model proposed |
+| Progresso | 40% |
+| Marco | M5.13 |
 | Frente | Product Engineering |
-| Próxima transição | UIC-01 para Domain model proposed |
+| Próxima transição | Lifecycle technically defined — 60% |
 
 ## Decisões vigentes
 
@@ -36,43 +39,52 @@ related:
 | D-067 | Adotar PAS-001-CC-UIC-001 como primeira UIC publicada | Aprovada |
 | D-068 | Preservar o Handoff-base e elevar sua versão por overlay efetivo | Aprovada |
 | D-069 | Manter tecnologia e topologia em aberto até maturidade do domínio | Aprovada |
-| D-070 | Tratar CaptureRecord e CaptureSession como hipótese a validar | Aprovada |
-| D-071 | Separar entrada, transcrição, interpretação, síntese e confirmação | Aprovada |
-| D-072 | Exigir finalidade, autorização, correção e revogação como invariantes transversais | Aprovada |
-| D-073 | Priorizar UIC01-GAP-001 e UIC01-GAP-002 | Aprovada |
-| D-074 | Definir M5.12 como marco vigente | Aprovada |
+| D-070 | Confirmar `CaptureRecord` como Aggregate Root | Aprovada |
+| D-071 | Confirmar `CaptureSession` como entidade interna com identidade própria | Aprovada |
+| D-072 | Separar entrada, transcrição, interpretação, síntese e confirmação | Aprovada |
+| D-073 | Definir identidade permanente e opaca para `CaptureInput` | Aprovada |
+| D-074 | Adotar consistência imediata para alterações funcionais do registro | Aprovada |
+| D-075 | Permitir consistência eventual apenas para derivados e projeções controladas | Aprovada |
+| D-076 | Adotar concorrência otimista e idempotência material | Aprovada |
+| D-077 | Tratar autorização como agregado auxiliar e revogação como processo explícito | Aprovada |
+| D-078 | Resolver `UIC01-GAP-001` e `UIC01-GAP-002` | Aprovada |
+| D-079 | Definir M5.13 como marco vigente | Aprovada |
 
 ## Riscos prioritários
 
-- mistura entre entrada original e interpretação;
-- persistência sem autorização;
-- revogação incompleta;
-- conteúdo sensível em logs ou índices;
-- Intelligence promovida a autoridade;
-- recorte excessivo para consumidores;
-- definição prematura de microsserviços;
-- escolha tecnológica anterior à consolidação do domínio.
+- confirmação sobre síntese desatualizada;
+- conflito entre correções concorrentes;
+- revogação durante processamento;
+- reconstrução de conteúdo legitimamente eliminado;
+- conteúdo sensível em eventos, logs ou índices;
+- autorização ampliada por consumidor;
+- transformação do agregado em microsserviço por conveniência;
+- escolha tecnológica anterior ao ciclo técnico completo.
 
 ## Evidências publicadas
 
-- UIC-01 com autoridade, agregados candidatos e invariantes;
-- catálogo inicial de comandos e eventos;
-- estados e transições preservados;
-- produtores e consumidores delimitados;
-- classificação de persistência, busca e grafo;
-- requisitos de segurança, privacidade, observabilidade e testes;
-- dependências da Onda 0;
-- 12 riscos e 10 lacunas iniciais.
+- mapa de agregados;
+- classificação de entidades e objetos de valor;
+- política de identidades;
+- 31 invariantes estruturais confirmadas;
+- matriz comando–agregado–invariantes–evento;
+- limites de consistência;
+- regras de concorrência e idempotência;
+- modelo de reconstrução;
+- diagramas de correção e revogação;
+- 28 testes obrigatórios de domínio;
+- resolução documentada de dois gaps prioritários.
 
 ## Backlog imediato
 
-1. mapa detalhado de agregados;
-2. identidade técnica de CaptureInput;
-3. invariantes por comando;
-4. consistência e concorrência;
-5. estratégia de reconstrução;
-6. revisão técnica do domínio proposto.
+1. máquinas de estado independentes;
+2. matriz completa de transições;
+3. precondições e efeitos por transição;
+4. compensações e timeouts;
+5. falhas parciais;
+6. testes completos de ciclo;
+7. revisão técnica para `Lifecycle technically defined`.
 
 ## Ponto de retomada
 
-> Aprofundar agregados, identidades e invariantes da Captura de Contexto.
+> Definir tecnicamente o ciclo de vida da UIC-01 e elevá-la para 60%.
