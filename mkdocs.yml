@@ -116,6 +116,9 @@ nav:
       - PAS-001-PUBLICATION-001 — Publicação Controlada 1.0.0: product-architecture/pas-001-guivos-journey-publicacao-controlada.md
       - PAS-001-CAPABILITY-MAP-001 — Mapa Final de Capacidades: product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md
       - PAS-001-ENGINEERING-HANDOFF-001 — Engineering Handoff: product-architecture/pas-001-guivos-journey-engineering-handoff.md
+      - Engineering Handoff 0.2.0 — Effective State: product-architecture/pas-001-guivos-journey-engineering-handoff-0.2.0.md
+      - PAS-001-CC-UIC-001 — Capture Context Engineering Unit: product-architecture/pas-001-captura-de-contexto-engineering-unit.md
+      - Product Architecture 1.33.0 — UIC-01 Defined: product-architecture/product-architecture-1.33.0.md
       - Product Architecture 1.32.0 — Engineering Handoff Initiated: product-architecture/product-architecture-1.32.0.md
       - PAS-001-CV-STATE-001 — Estados do Contexto Vivo: product-architecture/pas-001-contexto-vivo-estados-dimensionais.md
       - PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento: product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md
@@ -208,9 +211,13 @@ nav:
       - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.61.0 — UIC-01: project/changelog-0.61.0-uic-01-defined.md
       - Changelog 0.60.0 — Engineering Handoff: project/changelog-0.60.0-engineering-handoff-initiated.md
       - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
       - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
@@ -232,4 +239,5 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.14.0 — UIC-01: roadmap-11.14.0.md
       - Roadmap 11.13.0 — Engineering Handoff: roadmap-11.13.0.md
