@@ -1,0 +1,60 @@
+name: Sync PAS-001 final capability map
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/tmp_sync_pas001_capability_map.py'
+      - '.github/workflows/tmp-sync-pas001-capability-map.yml'
+      - 'docs/product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.event_name == 'workflow_dispatch' || github.head_ref == 'agent/pas-001-capability-map'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout capability map branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/pas-001-capability-map
+          fetch-depth: 2
+          show-progress: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify base and synchronize capability map
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 --quiet origin main
+          test "$(git rev-parse origin/main)" = "4289faad709eeed326042de263d1682d13d84243"
+          python scripts/tmp_sync_pas001_capability_map.py
+
+      - name: Inspect generated diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          git status --short
+          git diff --check
+          test -n "$(git status --porcelain)"
+
+      - name: Commit synchronized artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "guivos-repositorio"
+          git config user.email "guivos-repositorio@users.noreply.github.com"
+          git add \
+            CHANGELOG.md \
+            README.md \
+            docs/index.md \
+            docs/product-architecture/index.md \
+            docs/project/canonical-consolidation-matrix.md \
+            docs/project/knowledge-board.md \
+            docs/roadmap.md \
+            mkdocs.yml
+          git commit -m "Synchronize PAS-001 final capability map"
+          git push origin HEAD:agent/pas-001-capability-map
