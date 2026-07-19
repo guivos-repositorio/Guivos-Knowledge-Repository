@@ -11,25 +11,26 @@ related:
   - PAS-001-CAPABILITY-MAP-001
   - PAS-001-ENGINEERING-HANDOFF-001
   - PAS-001-CC-UIC-001
+  - PAS-001-CC-UIC-DOMAIN-001
 ---
 
 # Adendo da Matriz de Consolidação Canônica — UIC-01
 
-> Este adendo preserva a Matriz de Consolidação Canônica-base e acrescenta a rastreabilidade da primeira Unidade de Implementação de Capacidade.
+> Este adendo preserva a Matriz de Consolidação Canônica-base e registra a fundação e o modelo de domínio da primeira Unidade de Implementação de Capacidade.
 
-## 1. Registro do ativo
+## 1. Registro dos ativos
 
-| Campo | Valor |
-|---|---|
-| ID | PAS-001-CC-UIC-001 |
-| Título | Unidade de Implementação da Capacidade de Captura de Contexto |
-| Versão | 0.1.0 |
-| Estado | Draft |
-| Parent | PAS-001-ENGINEERING-HANDOFF-001 |
-| Capacidade | Captura de Contexto |
-| Estado funcional | Functionally complete |
-| Estado técnico | Normative sources mapped |
-| Marco | M5.12 |
+| Campo | Fundação da UIC | Modelo de domínio |
+|---|---|---|
+| ID | PAS-001-CC-UIC-001 | PAS-001-CC-UIC-DOMAIN-001 |
+| Versão | 0.1.0 | 0.1.0 |
+| Estado documental | Draft | Draft |
+| Estado efetivo da UIC | Draft 0.2.0 | Domain model proposed |
+| Parent | PAS-001-ENGINEERING-HANDOFF-001 | PAS-001-CC-UIC-001 |
+| Capacidade | Captura de Contexto | Captura de Contexto |
+| Estado funcional | Functionally complete | Functionally complete |
+| Progresso técnico | 40% | 40% |
+| Marco | M5.13 | M5.13 |
 
 ## 2. Cadeia de autoridade
 
@@ -42,63 +43,72 @@ related:
 | 5 | Mapa Final 1.0.1 | Visão navegável das capacidades |
 | 6 | Contratos e extensões da Captura de Contexto | Autoridade especializada |
 | 7 | Engineering Handoff 0.2.0 efetivo | Tradução para Product Engineering |
-| 8 | UIC-01 0.1.0 | Unidade técnica da capacidade |
-| 9 | Artefatos técnicos derivados | Implementação futura |
+| 8 | UIC-01 0.2.0 efetivo | Unidade técnica da capacidade |
+| 9 | Modelo de domínio | Decisões de agregados, identidades e invariantes |
+| 10 | Artefatos técnicos derivados | Implementação futura |
 
-## 3. Rastreabilidade funcional-técnica
+## 3. Rastreabilidade funcional-técnica consolidada
 
-| Elemento funcional | Representação técnica candidata | Autoridade preservada |
+| Elemento funcional | Representação técnica confirmada | Classificação | Autoridade preservada |
+|---|---|---|---|
+| Registro de Captura | `CaptureRecord` | Aggregate Root | Captura de Contexto |
+| Sessão | `CaptureSession` | Entidade interna | Captura de Contexto |
+| Finalidade | `PurposeDescriptor` | Objeto de valor versionado | Autoridade contextual |
+| Entrada original | `CaptureInput` | Entidade interna | Participante ou produtor autorizado |
+| Mídia original | `CaptureMediaReference` | Objeto de valor protegido | Fonte original |
+| Transcrição | `CaptureTranscript` | Entidade derivada | Resultado derivado |
+| Interpretação | `CaptureInterpretation` | Entidade derivada | Resultado derivado e incerto |
+| Síntese | `CaptureSynthesis` | Entidade versionada | Conteúdo revisável |
+| Confirmação | `CaptureConfirmation` | Entidade de evidência | Participante ou representante autorizado |
+| Autorização | `CaptureAuthorizationGrant` | Aggregate Root auxiliar | Autoridade contextual |
+| Recorte | `CaptureSlice` | Projeção autorizada | Integração minimizada |
+| Correção | `CaptureCorrection` | Entidade compensatória | Captura de Contexto |
+| Contestação | `CaptureContest` | Entidade de controle | Participante ou representante |
+| Revogação | `CaptureRevocationProcess` | Process manager | Autoridade aplicável |
+
+## 4. Decisões de consistência
+
+| Decisão | Resultado |
+|---|---|
+| Limite principal | Alterações funcionais materiais passam pelo `CaptureRecord` |
+| Sessão | Subordinada ao registro; não emite recorte independentemente |
+| Autorização | Consistência imediata em agregado auxiliar |
+| Derivados | Consistência eventual permitida com proveniência |
+| Projeções | Reconstruíveis e não autoritativas |
+| Concorrência | `expected_version` e rejeição de sobrescrita silenciosa |
+| Idempotência | Mesma chave e conteúdo preservam o resultado original |
+| Reconstrução | Estado efetivo, eventos, fontes, correções e revogações |
+
+## 5. Guardrails rastreados
+
+| Guardrail | Mecanismo técnico | Estado |
 |---|---|---|
-| Registro de Captura | CaptureRecord | Captura de Contexto |
-| Sessão | CaptureSession | Captura de Contexto |
-| Entrada original | CaptureInput | Participante ou produtor autorizado |
-| Transcrição | CaptureTranscript | Resultado derivado |
-| Interpretação | CaptureInterpretation | Resultado derivado e incerto |
-| Síntese | CaptureSynthesis | Conteúdo revisável |
-| Confirmação | CaptureConfirmation | Participante ou representante autorizado |
-| Autorização | CaptureAuthorization | Autoridade contextual |
-| Recorte | CaptureSlice | Integração minimizada |
-| Correção | CaptureCorrection | Registro compensatório |
-| Contestação | CaptureContest | Participante ou representante autorizado |
-| Revogação | CaptureRevocation | Autoridade aplicável |
+| Entrada não equivale a confirmação | Entidades e IDs distintos | Confirmado no domínio |
+| Transcrição não equivale a verdade | Derivação versionada e proveniência | Confirmado no domínio |
+| Interpretação não equivale a fato | Confiança, incerteza e autoridade limitada | Confirmado no domínio |
+| Síntese exige revisão | Versão apresentada vinculada à confirmação | Confirmado no domínio |
+| Persistência exige autoridade | `CaptureAuthorizationGrant` | Proposto e delimitado |
+| Contexto Vivo avalia recortes | `CaptureSlice` minimizado | Confirmado no domínio |
+| Correção preserva histórico | Entidade compensatória e reconstrução | Confirmado no domínio |
+| Revogação bloqueia novos usos | Processo de revogação explícito | Proposto e diagramado |
+| Dados sensíveis não vão para logs | Referências protegidas e testes | Confirmado como requisito |
+| IA não confirma fatos | Limite de produtor e invariantes | Confirmado no domínio |
 
-## 4. Guardrails rastreados
+## 6. Gaps
 
-| Guardrail | Mecanismo técnico inicial | Estado |
+| Gap | Estado | Evidência |
 |---|---|---|
-| Entrada não equivale a confirmação | Tipos e eventos distintos | Proposto |
-| Transcrição não equivale a verdade | Proveniência e versionamento | Proposto |
-| Interpretação não equivale a fato | Tipo derivado e confiança | Proposto |
-| Síntese exige revisão | Estado Awaiting review | Proposto |
-| Persistência exige autoridade | Policy enforcement | Proposto |
-| Contexto Vivo avalia recortes | Contrato consumidor próprio | Proposto |
-| Correção preserva histórico | Evento compensatório | Proposto |
-| Revogação bloqueia novos usos | Protocolo a detalhar | Em aberto |
-| Dados sensíveis não vão para logs | Redação e testes | Proposto |
-| IA não confirma fatos | Limite de produtor | Proposto |
-
-## 5. Dependências
-
-- identidade do participante e do ator;
-- representação e delegação;
-- autorização e finalidade;
-- envelope de eventos;
-- idempotência;
-- auditoria;
-- criptografia;
-- retenção e eliminação;
-- observabilidade;
-- versionamento de schemas;
-- propagação de revogação;
-- testes de contrato.
-
-## 6. Lacunas prioritárias
-
-1. `UIC01-GAP-001 — limite entre CaptureRecord e CaptureSession`;
-2. `UIC01-GAP-002 — identidade técnica da entrada original`;
-3. `UIC01-GAP-006 — propagação técnica de revogação`;
-4. `UIC01-GAP-009 — contratos mínimos da Onda 0`.
+| `UIC01-GAP-001` | Resolved | Limite do agregado e cardinalidade confirmados |
+| `UIC01-GAP-002` | Resolved | Política de identidade de `CaptureInput` confirmada |
+| `UIC01-GAP-003` | Open | Tecnologia de conteúdo multimodal permanece aberta |
+| `UIC01-GAP-004` | Open | Protocolo detalhado de transcrição e correção |
+| `UIC01-GAP-005` | Open | Política completa de persistência temporária |
+| `UIC01-GAP-006` | Open | Protocolo operacional completo de revogação |
+| `UIC01-GAP-007` | Open | Estratégia final de reconstrução depende de ADR |
+| `UIC01-GAP-008` | Open | Política de busca sensível |
+| `UIC01-GAP-009` | Open | Contratos mínimos da Onda 0 |
+| `UIC01-GAP-010` | Open | Matriz técnica final dos guardrails |
 
 ## 7. Próxima consolidação
 
-A próxima atualização deverá registrar o modelo de domínio proposto da UIC-01, incluindo agregados confirmados, identidades, objetos de valor, invariantes por comando e regras de consistência.
+A próxima atualização deverá registrar o ciclo técnico completo da UIC-01, incluindo máquinas de estado independentes, transições, compensações, timeouts, falhas parciais e testes de ciclo, elevando a unidade para `Lifecycle technically defined — 60%`.
