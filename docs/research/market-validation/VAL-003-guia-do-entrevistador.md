@@ -2,7 +2,7 @@
 id: VAL-003
 title: Guia do Entrevistador
 status: active
-version: 1.2.0
+version: 1.2.1
 owner: Guivos
 last_updated: 2026-07-19
 related:
@@ -18,77 +18,43 @@ related:
 
 Padronizar entrevistas de validação para reduzir indução, preservar respostas espontâneas e registrar evidências comparáveis.
 
-A entrevista deverá funcionar com pessoas que:
-
-- possuem objetivo claro;
-- possuem apenas uma ideia inicial;
-- sentem necessidade de mudança sem direção definida;
-- enfrentam problema específico;
-- desejam retomar algo;
-- desejam manter ou fortalecer algo positivo;
-- não possuem prioridade atual.
+As entrevistas aprofundam temas que não devem sobrecarregar o questionário público.
 
 ## 2. Postura esperada
 
 O entrevistador deve:
 
+- falar diretamente com a pessoa;
+- utilizar perguntas curtas;
 - ouvir mais do que explicar;
 - pedir exemplos reais;
 - evitar defender a Guivos;
 - aceitar respostas negativas sem contestação;
 - distinguir fato passado de intenção futura;
-- distinguir ausência de clareza de falta de interesse;
 - registrar frases exatas quando forem relevantes;
 - observar dúvidas antes de esclarecer;
 - não completar a resposta do participante;
-- não pressupor que a pessoa deveria possuir um objetivo;
-- não transformar incerteza em problema psicológico.
+- não sugerir que a pessoa deveria ter um objetivo definido.
 
 ## 3. Abertura recomendada
 
-> Esta conversa não é uma apresentação comercial. Estamos tentando entender como as pessoas vivem diferentes momentos, como percebem que algo merece atenção, como procuram caminhos ou oportunidades e onde nossa proposta pode estar errada. Você não precisa ter um objetivo definido. Não há resposta certa. Quanto mais sincera for sua resposta, mais útil será para nós.
+> Esta conversa não é uma apresentação comercial. Queremos compreender como você percebe o seu momento, como procura caminhos e oportunidades e onde a proposta da Guivos pode estar errada. Não existe resposta certa. Quanto mais sincera for a sua resposta, mais útil ela será.
 
 ## 4. Perguntas de aprofundamento permitidas
 
-### 4.1 Área e momento atual
-
-- O que faz essa área ser importante para você agora?
-- Você sente que sabe claramente o que deseja ou ainda está explorando?
-- O que faz você perceber que algo precisa mudar?
-- Existe alguma necessidade específica?
-- Há algo que você gostaria de retomar?
-- Existe algo positivo que você gostaria de manter ou fortalecer?
-- Você já havia parado para pensar sobre essa área antes desta conversa?
-
-### 4.2 Mudança ou resultado desejado
-
-- O que você gostaria que estivesse diferente daqui a 12 meses?
-- Como perceberia que houve uma melhora?
-- Existe algum resultado concreto ou ainda é cedo para definir?
-- O que seria suficiente para considerar que valeu a pena?
-- O que você não gostaria que acontecesse?
-
-### 4.3 Comportamento e experiências passadas
-
 - Pode me contar um exemplo real?
 - Quando isso aconteceu pela última vez?
-- Como você tentou resolver ou avançar?
-- Onde costuma procurar informações, caminhos ou possibilidades?
-- Você já descobriu tarde demais uma oportunidade que poderia ter sido útil?
-- Você já procurou possibilidades e não encontrou nenhuma que fizesse sentido para seu momento?
-- O que tornava as opções encontradas inadequadas?
+- O que você estava tentando encontrar ou resolver?
+- Você conheceu alguma oportunidade tarde demais?
+- Você procurou algo e não encontrou uma opção adequada?
+- O que tornava as opções inadequadas para você?
+- Como você tentou resolver isso?
 - Quanto tempo ou esforço isso exigiu?
-- O que tornou essa experiência difícil?
-
-### 4.4 Compreensão e valor
-
-- Como você explicaria a Guivos com suas palavras?
-- Em qual situação você procuraria algo assim pela primeira vez?
-- Qual parte da proposta parece mais útil?
-- Qual parte parece genérica, desnecessária ou pouco confiável?
-- Qual resultado faria isso ser realmente útil para você?
+- O que mais dificultou?
+- O que você quis dizer com essa expressão?
+- Em qual situação você procuraria a Guivos pela primeira vez?
+- O que faria a Guivos ser realmente útil para você?
 - O que faria você mudar de opinião?
-- O que precisaria ser demonstrado em uma primeira experiência?
 
 ## 5. Perguntas proibidas ou enviesadas
 
@@ -96,74 +62,77 @@ Evitar:
 
 - Você não acha essa ideia útil?
 - Você usaria, certo?
-- Isso resolveria seu problema?
-- Você deveria definir um objetivo antes?
-- Você não sabe o que quer?
-- A Guivos ajudaria você a se conhecer melhor, não é?
-- Você entendeu que a plataforma é muito diferente?
-- Posso explicar por que sua objeção não se aplica?
+- Isso resolveria o seu problema?
+- Você entendeu que a plataforma é diferente?
+- Posso explicar por que a sua objeção não se aplica?
 - Com que frequência você usaria, mesmo sem conhecer a experiência?
 - Você confiaria na plataforma se ela tivesse segurança?
 - Quantas oportunidades você perdeu sem saber que existiam?
-- Quanto você pagaria por uma plataforma que ainda não utilizou?
+- Você já deveria saber qual é o seu objetivo, não acha?
 
 ## 6. Ordem da entrevista
 
-1. explicar o objetivo da pesquisa;
-2. compreender a área da vida que merece atenção;
-3. compreender o momento atual sem exigir objetivo definido;
-4. explorar a mudança ou resultado desejado;
-5. explorar dificuldades e comportamento passado;
-6. diferenciar descoberta tardia de ausência de opção adequada;
-7. apresentar o texto neutro da Guivos;
-8. pedir explicação com palavras próprias;
-9. explorar situação de primeiro uso, expectativa e resultado concreto;
-10. explorar relevância, contribuição percebida e objeções;
-11. perguntar sobre participação em primeira experiência;
+1. explicar o objetivo da conversa;
+2. compreender a área da vida escolhida;
+3. explorar o momento atual e o nível de clareza;
+4. compreender o que a pessoa gostaria que acontecesse;
+5. investigar dificuldades e comportamento passado;
+6. diferenciar descoberta tardia de busca sem opção adequada;
+7. apresentar o texto oficial da Guivos sem acrescentar argumentos;
+8. pedir que a pessoa explique a proposta com palavras próprias;
+9. explorar situação de primeiro uso e utilidade esperada;
+10. investigar relevância, contribuição percebida e objeções;
+11. perguntar sobre primeira experiência;
 12. registrar observações comportamentais;
 13. encerrar sem tentar converter a pessoa.
 
-## 7. Registro mínimo
+## 7. Relação com o VAL-002 2.1.0
+
+A entrevista deverá aprofundar, quando necessário:
+
+- `Q4` — área escolhida;
+- `Q5` — momento atual;
+- `Q6` — mudança desejada;
+- `Q7` — dificuldades;
+- `Q8` — oportunidade conhecida tarde demais;
+- `Q9` — busca sem opção adequada;
+- `Q11` — compreensão da proposta;
+- `Q13` — situação de primeiro uso;
+- `Q14` — utilidade esperada;
+- `Q18` — barreira principal.
+
+A entrevista não deverá transformar todas as perguntas fechadas em longos roteiros obrigatórios. O aprofundamento deve ser seletivo e orientado pelas respostas da pessoa.
+
+## 8. Registro mínimo
 
 - código da entrevista;
+- versão do instrumento;
 - data e duração;
-- versão do roteiro;
 - perfil básico;
-- área prioritária ou ausência de prioridade;
+- área escolhida;
 - momento atual;
-- grau de clareza percebido pelo próprio participante;
-- mudança ou resultado desejado;
+- mudança desejada;
 - principais dificuldades;
-- comportamento atual;
 - episódio de descoberta tardia, quando houver;
 - episódio de busca sem opção adequada, quando houver;
-- motivos de inadequação das opções encontradas;
+- motivos de inadequação;
 - compreensão espontânea da Guivos;
 - primeiro uso imaginado;
-- o que espera encontrar ou fazer na plataforma;
-- resultado concreto considerado valioso;
+- utilidade esperada;
 - contribuição percebida;
 - objeções e barreiras;
 - interesse em primeira experiência;
 - frase mais relevante;
 - observações comportamentais.
 
-## 8. Regra de neutralidade
+## 9. Regra de neutralidade
 
-Quando o participante interpretar a proposta de forma incorreta, o entrevistador deve primeiro registrar a interpretação. Somente depois poderá reler o texto oficial, sem adicionar argumentos comerciais.
+Quando a pessoa interpretar a proposta de forma incorreta, o entrevistador deve primeiro registrar a interpretação. Somente depois poderá reler o texto oficial, sem adicionar argumentos comerciais.
 
-Quando a pessoa disser que ainda não sabe o que deseja, o entrevistador deverá:
+Preocupações espontâneas com privacidade, confiança, esforço ou controle deverão ser registradas, mas não transformadas em provas de comportamento futuro.
 
-- aceitar a resposta;
-- investigar o momento sem pressionar por definição;
-- não converter incerteza em objetivo;
-- não sugerir opções antes de registrar a resposta espontânea;
-- distinguir exploração legítima de desinteresse.
+O entrevistador não deverá afirmar que a pessoa perdeu uma oportunidade que nunca chegou a conhecer.
 
-Preocupações espontâneas com confiança, privacidade, recorrência ou preço deverão ser registradas, mas o entrevistador não deverá forçar previsões sobre aspectos ainda não demonstrados.
+## 10. Encerramento
 
-O entrevistador não deverá sugerir que uma oportunidade foi perdida quando o participante nunca chegou a conhecê-la. A investigação deverá se limitar a experiências recordadas de descoberta tardia, busca frustrada ou inadequação das opções encontradas.
-
-## 9. Encerramento
-
-> Obrigado. Respostas críticas são especialmente importantes porque mostram o que precisa ser corrigido antes do lançamento. O fato de você ter ou não uma direção clara também é uma informação importante para esta pesquisa.
+> Obrigado. Respostas críticas são especialmente importantes porque mostram o que precisa ser corrigido antes do lançamento.
