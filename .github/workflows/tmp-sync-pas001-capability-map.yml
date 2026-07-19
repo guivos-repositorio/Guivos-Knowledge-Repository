@@ -44,7 +44,12 @@ jobs:
               '(product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)',
               '(docs/product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)',
           )
-          path.write_text(start + 'def update_readme() -> None:' + block + 'def update_home() -> None:' + end, encoding='utf-8')
+          text = start + 'def update_readme() -> None:' + block + 'def update_home() -> None:' + end
+          text = text.replace(
+              '`PAS-001-CAPABILITY-MAP-001 1.0.0` apresenta as nove capacidades',
+              '[`PAS-001-CAPABILITY-MAP-001 1.0.0`](pas-001-guivos-journey-mapa-final-capacidades.md) apresenta as nove capacidades',
+          )
+          path.write_text(text, encoding='utf-8')
           PY
           set +e
           python scripts/tmp_sync_pas001_capability_map.py > tmp-pas001-capability-map-diagnostic.txt 2>&1
