@@ -1,0 +1,4275 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Base oficial de conhecimento e arquitetura da Guivos" name="description"/>
+<meta content="Guivos" name="author"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
+<title>Modelo de Domínio da Unidade de Implementação da Captura de Contexto - Guivos Knowledge Repository</title>
+<link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../css/print-site.css" rel="stylesheet"/>
+<link href="../../css/print-site-material.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#pas-001-cc-uic-domain-001-modelo-de-dominio-da-unidade-de-implementacao-da-captura-de-contexto">
+          Pular para conteúdo
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guivos Knowledge Repository" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Guivos Knowledge Repository
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Modelo de Domínio da Unidade de Implementação da Captura de Contexto
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="blue" data-md-color-media="" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guivos Knowledge Repository" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Guivos Knowledge Repository">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    Guivos Knowledge Repository
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    guivos-repositorio/Guivos-Knowledge-Repository
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Guia Oficial da Guivos
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Guia Oficial da Guivos
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../public/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../public/guia-oficial-da-guivos/">
+<span class="md-ellipsis">
+    
+  
+    Guia Completo
+  
+
+    
+  </span>
+<span class="md-status md-status--public-canon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Guivos Evolution Framework
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Evolution Framework
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../evolution-framework/">
+<span class="md-ellipsis">
+    
+  
+    GEF-001 — Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Validação de Mercado
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Validação de Mercado
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-001-framework-de-validacao-de-mercado/">
+<span class="md-ellipsis">
+    
+  
+    VAL-001 — Framework
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-002-pesquisa-oficial-da-guivos/">
+<span class="md-ellipsis">
+    
+  
+    VAL-002 — Pesquisa Oficial
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-003-guia-do-entrevistador/">
+<span class="md-ellipsis">
+    
+  
+    VAL-003 — Guia do Entrevistador
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-004-modelo-de-consolidacao-e-analise/">
+<span class="md-ellipsis">
+    
+  
+    VAL-004 — Consolidação e Análise
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-005-plano-de-amostragem/">
+<span class="md-ellipsis">
+    
+  
+    VAL-005 — Plano de Amostragem
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-006-dashboard-de-indicadores/">
+<span class="md-ellipsis">
+    
+  
+    VAL-006 — Dashboard
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-007-criterios-de-decisao/">
+<span class="md-ellipsis">
+    
+  
+    VAL-007 — Critérios de Decisão
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/market-validation/VAL-008-sinais-comportamentais/">
+<span class="md-ellipsis">
+    
+  
+    VAL-008 — Sinais Comportamentais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    RP-001 — Ecosystem Research Program
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    RP-001 — Ecosystem Research Program
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/protocol/">
+<span class="md-ellipsis">
+    
+  
+    Research Protocol
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/MS-001/">
+<span class="md-ellipsis">
+    
+  
+    Meta-Síntese MS-001
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/evidence-registry/">
+<span class="md-ellipsis">
+    
+  
+    Evidence Registry
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/ecosystem-phenomena-catalog/">
+<span class="md-ellipsis">
+    
+  
+    Ecosystem Phenomena Catalog
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../research/RP-001/recommendations/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Recommendations
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Guivos Enterprise Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Enterprise Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../enterprise-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../enterprise-architecture/permanence-layer-model/">
+<span class="md-ellipsis">
+    
+  
+    Permanence Layer Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Reference Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../reference-architecture/gccm-001/">
+<span class="md-ellipsis">
+    
+  
+    GCCM-001 — Core Capability Model
+  
+
+    
+  </span>
+<span class="md-status md-status--discovery"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../glossary/">
+<span class="md-ellipsis">
+    
+  
+    Glossário Canônico
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    GEB
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    GEB
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Parte I — Fundação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte I — Fundação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/01-essence/">
+<span class="md-ellipsis">
+    
+  
+    Essência
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/02-purpose/">
+<span class="md-ellipsis">
+    
+  
+    Propósito
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/03-mission/">
+<span class="md-ellipsis">
+    
+  
+    Missão Operacional
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/04-vision/">
+<span class="md-ellipsis">
+    
+  
+    Visão de Longo Prazo
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/05-constitution/">
+<span class="md-ellipsis">
+    
+  
+    Constituição
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-01-foundation/06-principles/">
+<span class="md-ellipsis">
+    
+  
+    Princípios Permanentes
+  
+
+    
+  </span>
+<span class="md-status md-status--approved-draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Parte II — Modelo Fundamental
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte II — Modelo Fundamental
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/phenomenon/">
+<span class="md-ellipsis">
+    
+  
+    Fenômeno da Evolução
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/fundamental-journey/">
+<span class="md-ellipsis">
+    
+  
+    Modelo Fundamental da Jornada
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../geb/part-02-fundamental-model/four-fundamental-natures/">
+<span class="md-ellipsis">
+    
+  
+    Quatro Naturezas Fundamentais
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Arquitetura de Produtos
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquitetura de Produtos
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../layered-product-architecture/">
+<span class="md-ellipsis">
+    
+  
+    GLPA-001 — Layered Product Architecture
+  
+
+    
+  </span>
+<span class="md-status md-status--approved"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001 — Guivos Journey
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-reconciliacao-fechamento/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-RECON-001 — Reconciliação e Prontidão
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-captura-de-contexto-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CC-LIFECYCLE-001 — Ciclo de Vida da Captura de Contexto
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-captura-de-contexto-eventos-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CC-EVENT-INTEGRATION-001 — Eventos e Integrações da Captura de Contexto
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-captura-de-contexto-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CC-CONTRACT-001 — Contrato Final da Captura de Contexto
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-auditoria-final-prontidao/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-AUDIT-001 — Auditoria Final de Prontidão
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-1.0.0-candidate/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CANDIDATE-001 — Edição Candidata Histórica 1.0.0
+  
+
+    
+  </span>
+<span class="md-status md-status--historical"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-validacao-publicacao/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-RELEASE-VALIDATION-001 — Validação Editorial e Normativa
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-publicacao-controlada/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PUBLICATION-001 — Publicação Controlada 1.0.0
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-mapa-final-capacidades/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CAPABILITY-MAP-001 — Mapa Final de Capacidades
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-engineering-handoff/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-ENGINEERING-HANDOFF-001 — Engineering Handoff
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-guivos-journey-engineering-handoff-0.2.0/">
+<span class="md-ellipsis">
+    
+  
+    Engineering Handoff 0.2.0 — Effective State
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-captura-de-contexto-engineering-unit/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CC-UIC-001 — Capture Context Engineering Unit
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../product-architecture-1.33.0/">
+<span class="md-ellipsis">
+    
+  
+    Product Architecture 1.33.0 — UIC-01 Defined
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../product-architecture-1.32.0/">
+<span class="md-ellipsis">
+    
+  
+    Product Architecture 1.32.0 — Engineering Handoff Initiated
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-estados-dimensionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-STATE-001 — Estados do Contexto Vivo
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-atualizacao-envelhecimento/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-resolucao-conflitos/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-CONFLICT-001 — Resolução de Conflitos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-meu-contexto-hoje/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-VIEW-001 — Meu Contexto Hoje
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-EVENT-001 — Eventos Funcionais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-INTEGRATION-001 — Integrações Funcionais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-kpis-desempenho/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-KPI-001 — KPIs e Desempenho
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-contexto-vivo-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-objetivos-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-FOUNDATION-001 — Fundamentos de Objetivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-objetivos-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-LIFECYCLE-001 — Ciclo de Vida dos Objetivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-objetivos-progresso-e-conclusao/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-PROGRESS-001 — Progresso e Conclusão
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-meus-objetivos/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-VIEW-001 — Meus Objetivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-objetivos-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-EVENT-001 — Eventos Funcionais de Objetivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-objetivos-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais de Objetivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-objetivos-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final de Objetivos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-eventos-de-vida-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EV-FOUNDATION-001 — Fundamentos de Eventos de Vida
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-eventos-de-vida-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EV-LIFECYCLE-001 — Ciclo de Vida dos Eventos de Vida
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-eventos-de-vida-visualizacao-controle/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EV-VIEW-001 — Visualização e Controle de Eventos de Vida
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-eventos-de-vida-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EV-EVENT-001 — Eventos Funcionais de Eventos de Vida
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-eventos-de-vida-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EV-INTEGRATION-001 — Integrações Funcionais de Eventos de Vida
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-eventos-de-vida-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-proximos-passos-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PP-FOUNDATION-001 — Fundamentos de Próximos Passos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-proximos-passos-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PP-LIFECYCLE-001 — Ciclo de Vida dos Próximos Passos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-proximos-passos-visualizacao-controle/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-proximos-passos-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-proximos-passos-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-proximos-passos-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-oportunidades-ativas-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OA-FOUNDATION-001 — Fundamentos de Oportunidades Ativas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-oportunidades-ativas-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OA-LIFECYCLE-001 — Ciclo de Vida das Oportunidades Ativas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-oportunidades-ativas-visualizacao-controle/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-oportunidades-ativas-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-oportunidades-ativas-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-oportunidades-ativas-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-OA-CONTRACT-001 — Contrato Final das Oportunidades Ativas
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-intervencoes-contextuais-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-FOUNDATION-001 — Fundamentos de Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-intervencoes-contextuais-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-intervencoes-contextuais-visualizacao-controle/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-intervencoes-contextuais-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-intervencoes-contextuais-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-experiencias-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-FOUNDATION-001 — Fundamentos de Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-experiencias-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-LIFECYCLE-001 — Ciclo de Vida das Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-experiencias-visualizacao-controle/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-VIEW-001 — Visualização e Controle das Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-experiencias-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-EVENT-001 — Eventos Funcionais das Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-experiencias-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-INTEGRATION-001 — Integrações Funcionais das Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-experiencias-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EXP-CONTRACT-001 — Contrato Final das Experiências
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-evolucao-continua-fundamentos-iniciais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EC-FOUNDATION-001 — Fundamentos de Evolução Contínua
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-evolucao-continua-ciclo-de-vida/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EC-LIFECYCLE-001 — Ciclo de Vida da Evolução Contínua
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-evolucao-continua-visualizacao-controle/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EC-VIEW-001 — Visualização e Controle da Evolução Contínua
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-evolucao-continua-eventos-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EC-EVENT-001 — Eventos Funcionais da Evolução Contínua
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-evolucao-continua-integracoes-funcionais/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EC-INTEGRATION-001 — Integrações Funcionais da Evolução Contínua
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pas-001-evolucao-continua-kpis-cenarios-contrato-final/">
+<span class="md-ellipsis">
+    
+  
+    PAS-001-EC-CONTRACT-001 — Contrato Final da Evolução Contínua
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../journey/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Journey
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mall/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Mall
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../travel/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Travel
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../business/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Business
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../media/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Media
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../intelligence/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Intelligence
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ads/">
+<span class="md-ellipsis">
+    
+  
+    Guivos Ads
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Intelligence Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Intelligence Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intelligence-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intelligence-architecture/knowledge-model/">
+<span class="md-ellipsis">
+    
+  
+    GAI-001 — AI Knowledge Model
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../intelligence-architecture/manifesto/">
+<span class="md-ellipsis">
+    
+  
+    GAI-002 — Manifesto da Inteligência do Ecossistema
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Guivos Economic Model
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Guivos Economic Model
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../economic-model/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--planned"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Business Architecture
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Business Architecture
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/foundations/">
+<span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_12_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Strategy
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_12_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_12_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Strategy
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/strategy/business-transformation-model/">
+<span class="md-ellipsis">
+    
+  
+    Business Transformation Model
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../business-architecture/strategy/business-outcomes/">
+<span class="md-ellipsis">
+    
+  
+    Business Outcomes
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Governance Framework do GKR
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance Framework do GKR
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/architectural-knowledge-consolidation-pipeline/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Knowledge Consolidation Pipeline
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/architectural-audit-framework/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Audit Framework
+  
+
+    
+  </span>
+<span class="md-status md-status--validated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../governance-framework/outcome-governance-method/">
+<span class="md-ellipsis">
+    
+  
+    Outcome Governance Method
+  
+
+    
+  </span>
+<span class="md-status md-status--draft"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_14" type="checkbox"/>
+<label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Validações Arquiteturais
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_14">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Validações Arquiteturais
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-FEM-001-foundation-evidence-matrix/">
+<span class="md-ellipsis">
+    
+  
+    A2-R01-FEM-001 — Foundation Evidence Matrix
+  
+
+    
+  </span>
+<span class="md-status md-status--working"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-CC-001-canonical-consolidation/">
+<span class="md-ellipsis">
+    
+  
+    A2-R01-CC-001 — Foundation Canonical Consolidation
+  
+
+    
+  </span>
+<span class="md-status md-status--consolidated"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-RA-001-foundation-readiness-assessment/">
+<span class="md-ellipsis">
+    
+  
+    A2-R01-RA-001 — Foundation Readiness Assessment
+  
+
+    
+  </span>
+<span class="md-status md-status--complete"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/AV-A2-001-foundation-architecture-validation/">
+<span class="md-ellipsis">
+    
+  
+    AV-A2-001 — Foundation Architecture Validation
+  
+
+    
+  </span>
+<span class="md-status md-status--approved_with_recommendations"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R01-AUD-001-foundation-architecture-audit/">
+<span class="md-ellipsis">
+    
+  
+    A2-R01-AUD-001 — Foundation Architecture Audit
+  
+
+    
+  </span>
+<span class="md-status md-status--passed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix/">
+<span class="md-ellipsis">
+    
+  
+    A2-R02-FMEM-001 — Fundamental Model Evidence Matrix
+  
+
+    
+  </span>
+<span class="md-status md-status--execution-ready"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../validation/AV-001-gea-structure-validation/">
+<span class="md-ellipsis">
+    
+  
+    AV-001 — GEA Structure Validation
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_15" type="checkbox"/>
+<label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    ADRs
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_15_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_15">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    ADRs
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-001-gkr-as-source-of-truth/">
+<span class="md-ellipsis">
+    
+  
+    ADR-001 — GKR como fonte única da verdade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-002-foundation-principles/">
+<span class="md-ellipsis">
+    
+  
+    ADR-002 — Fundação da Guivos
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-003-architectural-ownership/">
+<span class="md-ellipsis">
+    
+  
+    ADR-003 — Architectural Ownership
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-004-architectural-dependency-order/">
+<span class="md-ellipsis">
+    
+  
+    ADR-004 — Architectural Dependency Order
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-005-architectural-traceability-principle/">
+<span class="md-ellipsis">
+    
+  
+    ADR-005 — Architectural Traceability Principle
+  
+
+    
+  </span>
+<span class="md-status md-status--accepted"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../adr/ADR-006-guivos-knowledge-architecture/">
+<span class="md-ellipsis">
+    
+  
+    ADR-006 — Guivos Knowledge Architecture
+  
+
+    
+  </span>
+<span class="md-status md-status--approved"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_16" type="checkbox"/>
+<label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Projeto
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_16_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_16">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Projeto
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/architectural-milestones/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Milestones
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/architectural-milestones-4.12.0/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Milestones 4.12.0 — M5.12
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/architectural-milestones-4.11.0/">
+<span class="md-ellipsis">
+    
+  
+    Architectural Milestones 4.11.0 — M5.11
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/knowledge-board-11.14.0/">
+<span class="md-ellipsis">
+    
+  
+    Knowledge Board 11.14.0 — UIC-01
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/knowledge-board-11.13.0/">
+<span class="md-ellipsis">
+    
+  
+    Knowledge Board 11.13.0 — Engineering Handoff
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/canonical-consolidation-matrix-uic-01-addendum/">
+<span class="md-ellipsis">
+    
+  
+    Canonical Matrix 1.33.0 — UIC-01
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/canonical-consolidation-matrix-engineering-handoff-addendum/">
+<span class="md-ellipsis">
+    
+  
+    Canonical Matrix 1.32.0 — Engineering Handoff
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/changelog-0.61.0-uic-01-defined/">
+<span class="md-ellipsis">
+    
+  
+    Changelog 0.61.0 — UIC-01
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/changelog-0.60.0-engineering-handoff-initiated/">
+<span class="md-ellipsis">
+    
+  
+    Changelog 0.60.0 — Engineering Handoff
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-008 — Post-Publication Reconciliation
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-007 — Chat Continuity and Repository Reconciliation
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/AR-001-gkr-gog-consistency-and-diagram-review/">
+<span class="md-ellipsis">
+    
+  
+    AR-001 — GKR and GOG Consistency Review
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-006-context-interpretation-and-living-context-progress/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-006 — Context Interpretation and Living Context
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-005 — Journey Operational Philosophy
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE/">
+<span class="md-ellipsis">
+    
+  
+    Architecture Engineering Pause
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-004-context-participant-model-and-architecture-engineering/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-004 — Context and Architecture Engineering
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-003 — Enterprise Design and GLPA
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-002-gka-conceptual-architecture-progress/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/GE2-SYNC-001-architectural-synchronization-matrix/">
+<span class="md-ellipsis">
+    
+  
+    GE2-SYNC-001 — Architectural Synchronization Matrix
+  
+
+    
+  </span>
+<span class="md-status md-status--completed"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-GKA-PREPARATION-COMPLETE/">
+<span class="md-ellipsis">
+    
+  
+    GKA Preparation Complete
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-GE2-GKA-FOUNDATION/">
+<span class="md-ellipsis">
+    
+  
+    GE-2 — GKA Foundation Checkpoint
+  
+
+    
+  </span>
+<span class="md-status md-status--superseded"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/BASELINE-M1/">
+<span class="md-ellipsis">
+    
+  
+    Baseline M1
+  
+
+    
+  </span>
+<span class="md-status md-status--frozen"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/CHECKPOINT-M2.0/">
+<span class="md-ellipsis">
+    
+  
+    Checkpoint M2.0
+  
+
+    
+  </span>
+<span class="md-status md-status--experimental"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/A2-BASELINE-B1/">
+<span class="md-ellipsis">
+    
+  
+    A2 Baseline B1 — Foundation 5/6
+  
+
+    
+  </span>
+<span class="md-status md-status--working-baseline"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/A2-BASELINE-B2/">
+<span class="md-ellipsis">
+    
+  
+    A2 Baseline B2 — Foundation 6/6
+  
+
+    
+  </span>
+<span class="md-status md-status--working-baseline"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/A2-BASELINE-B3/">
+<span class="md-ellipsis">
+    
+  
+    A2 Baseline B3 — Foundation Frozen
+  
+
+    
+  </span>
+<span class="md-status md-status--frozen"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/canonical-consolidation-matrix/">
+<span class="md-ellipsis">
+    
+  
+    Matriz de Consolidação Canônica
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../project/site-pipeline/">
+<span class="md-ellipsis">
+    
+  
+    Pipeline de Publicação
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../roadmap/">
+<span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../roadmap-11.14.0/">
+<span class="md-ellipsis">
+    
+  
+    Roadmap 11.14.0 — UIC-01
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../roadmap-11.13.0/">
+<span class="md-ellipsis">
+    
+  
+    Roadmap 11.13.0 — Engineering Handoff
+  
+
+    
+  </span>
+<span class="md-status md-status--active"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../print_page/">
+<span class="md-ellipsis">
+    
+  
+    GKR — Versão para Impressão
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/guivos-repositorio/Guivos-Knowledge-Repository/edit/main/docs/product-architecture/pas-001-captura-de-contexto-domain-model.md" rel="edit" title="Editar esta página">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<h1 id="pas-001-cc-uic-domain-001-modelo-de-dominio-da-unidade-de-implementacao-da-captura-de-contexto">PAS-001-CC-UIC-DOMAIN-001 — Modelo de Domínio da Unidade de Implementação da Captura de Contexto<a class="headerlink" href="#pas-001-cc-uic-domain-001-modelo-de-dominio-da-unidade-de-implementacao-da-captura-de-contexto" title="Permanent link">¶</a></h1>
+<blockquote>
+<p><strong>Estado:</strong> <code>Draft 0.1.0 — Domain model proposed</code>.</p>
+<p>Este documento confirma os limites dos agregados, as identidades, as classificações de domínio, as invariantes por comando, a consistência, a concorrência e a reconstrução da <code>UIC-01</code>. Ele resolve <code>UIC01-GAP-001</code> e <code>UIC01-GAP-002</code> sem escolher linguagem, framework, banco, broker, nuvem ou topologia final de serviços.</p>
+</blockquote>
+<h1 id="7101-pergunta-central">7101. Pergunta central<a class="headerlink" href="#7101-pergunta-central" title="Permanent link">¶</a></h1>
+<blockquote>
+<p>Como estruturar o domínio técnico da Captura de Contexto para preservar uma fonte original, várias sessões relacionadas, derivados versionados, confirmação delimitada, autorização por finalidade, correção compensatória e revogação propagada sem transformar uma sessão técnica ou uma inferência em verdade integral sobre o participante?</p>
+</blockquote>
+<h1 id="7102-autoridade-e-alcance">7102. Autoridade e alcance<a class="headerlink" href="#7102-autoridade-e-alcance" title="Permanent link">¶</a></h1>
+<h2 id="71021-ordem-normativa">7102.1 Ordem normativa<a class="headerlink" href="#71021-ordem-normativa" title="Permanent link">¶</a></h2>
+<p>A interpretação deverá respeitar:</p>
+<ol>
+<li>Foundation e Princípios Permanentes;</li>
+<li><code>GIA-000</code>;</li>
+<li><code>GLPA-001</code>;</li>
+<li><code>PAS-001 1.0.0</code>;</li>
+<li><code>PAS-001-CAPABILITY-MAP-001 1.0.1</code>;</li>
+<li><code>PAS-001-CC-LIFECYCLE-001 1.0.0</code>;</li>
+<li><code>PAS-001-CC-EVENT-INTEGRATION-001 1.0.0</code>;</li>
+<li><code>PAS-001-CC-CONTRACT-001 1.0.0</code>;</li>
+<li><code>PAS-001-ENGINEERING-HANDOFF-001</code> e seu estado efetivo;</li>
+<li><code>PAS-001-CC-UIC-001</code> e seu estado efetivo;</li>
+<li>este modelo de domínio;</li>
+<li>especificações técnicas derivadas;</li>
+<li>código, schemas, infraestrutura e configuração.</li>
+</ol>
+<p>Nenhuma conveniência técnica poderá inverter essa ordem.</p>
+<h2 id="71022-decisoes-efetivamente-encerradas">7102.2 Decisões efetivamente encerradas<a class="headerlink" href="#71022-decisoes-efetivamente-encerradas" title="Permanent link">¶</a></h2>
+<p>Este documento encerra as seguintes decisões:</p>
+<ul>
+<li><code>CaptureRecord</code> é a raiz principal do agregado funcional da Captura de Contexto;</li>
+<li><code>CaptureSession</code> é entidade temporal e operacional interna ao <code>CaptureRecord</code>;</li>
+<li>sessão e registro possuem identidades próprias e não equivalentes;</li>
+<li>um registro pode conter uma ou mais sessões relacionadas;</li>
+<li><code>CaptureInput</code> possui identidade própria, permanente e independente da representação física;</li>
+<li>entradas, transcrições, interpretações, sínteses e confirmações são entidades distintas;</li>
+<li>conteúdo multimodal pesado permanece fora do agregado, representado por referência protegida;</li>
+<li>autorização possui ciclo de vida próprio e não é inferida do estado da sessão;</li>
+<li>revogação é coordenada por processo explícito e não por alteração silenciosa de campo;</li>
+<li>projeções, índices, caches e grafos nunca são sistemas de registro.</li>
+</ul>
+<h2 id="71023-decisoes-ainda-abertas">7102.3 Decisões ainda abertas<a class="headerlink" href="#71023-decisoes-ainda-abertas" title="Permanent link">¶</a></h2>
+<p>Permanecem abertas:</p>
+<ul>
+<li>tecnologia de persistência;</li>
+<li>event sourcing integral, parcial ou inexistente;</li>
+<li>frequência de snapshots;</li>
+<li>tecnologia de objetos multimodais;</li>
+<li>tecnologia de busca;</li>
+<li>tecnologia de mensageria;</li>
+<li>topologia de implantação;</li>
+<li>particionamento físico;</li>
+<li>estratégia final de sharding;</li>
+<li>algoritmo específico de geração de identificadores.</li>
+</ul>
+<h1 id="7103-linguagem-ubiqua-tecnica">7103. Linguagem ubíqua técnica<a class="headerlink" href="#7103-linguagem-ubiqua-tecnica" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Definição normativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Registro de Captura</td>
+<td>Unidade funcional principal que preserva identidade, finalidade, sessões relacionadas, fonte, derivados, controles e histórico</td>
+</tr>
+<tr>
+<td>Sessão de Captura</td>
+<td>Unidade temporal e operacional de interação dentro de um registro</td>
+</tr>
+<tr>
+<td>Entrada</td>
+<td>Expressão ou material recebido com identidade própria</td>
+</tr>
+<tr>
+<td>Fonte original</td>
+<td>Representação preservada do material recebido antes das derivações</td>
+</tr>
+<tr>
+<td>Transcrição</td>
+<td>Representação textual derivada de uma entrada</td>
+</tr>
+<tr>
+<td>Interpretação</td>
+<td>Leitura proposta, incerta e contestável sobre entradas ou transcrições</td>
+</tr>
+<tr>
+<td>Síntese</td>
+<td>Organização versionada apresentada ao participante</td>
+</tr>
+<tr>
+<td>Confirmação</td>
+<td>Manifestação delimitada sobre versão e escopo apresentados</td>
+</tr>
+<tr>
+<td>Autorização</td>
+<td>Permissão explícita vinculada a finalidade, escopo, temporalidade e consumidor</td>
+</tr>
+<tr>
+<td>Recorte</td>
+<td>Projeção minimizada e autorizada para avaliação de consumidor</td>
+</tr>
+<tr>
+<td>Correção</td>
+<td>Fato compensatório que preserva o histórico e altera o estado efetivo</td>
+</tr>
+<tr>
+<td>Contestação</td>
+<td>Suspensão ou questionamento explícito de associação, conteúdo ou efeito</td>
+</tr>
+<tr>
+<td>Revogação</td>
+<td>Invalidação de autorização ou uso, com bloqueio e propagação aplicável</td>
+</tr>
+<tr>
+<td>Projeção</td>
+<td>Modelo de leitura reconstruível e não autoritativo</td>
+</tr>
+<tr>
+<td>Evento funcional</td>
+<td>Fato reconhecido pelo agregado e persistido com autoridade</td>
+</tr>
+<tr>
+<td>Evento técnico</td>
+<td>Fato operacional sem autoridade para redefinir significado humano</td>
+</tr>
+</tbody>
+</table>
+<h1 id="7104-decisao-de-fronteira-do-agregado">7104. Decisão de fronteira do agregado<a class="headerlink" href="#7104-decisao-de-fronteira-do-agregado" title="Permanent link">¶</a></h1>
+<h2 id="71041-raiz-principal">7104.1 Raiz principal<a class="headerlink" href="#71041-raiz-principal" title="Permanent link">¶</a></h2>
+<p><code>CaptureRecord</code> é a raiz principal porque a autoridade funcional exige uma identidade permanente capaz de preservar:</p>
+<ul>
+<li>participante ou modo de identidade;</li>
+<li>finalidade;</li>
+<li>conjunto relacionado de sessões;</li>
+<li>entradas originais;</li>
+<li>derivações;</li>
+<li>confirmações;</li>
+<li>autorizações;</li>
+<li>correções;</li>
+<li>limitações;</li>
+<li>contestações;</li>
+<li>revogações;</li>
+<li>recortes emitidos;</li>
+<li>histórico de versões;</li>
+<li>proveniência.</li>
+</ul>
+<p>Somente a raiz poderá reconhecer alterações materiais no estado funcional do registro.</p>
+<h2 id="71042-papel-de-capturesession">7104.2 Papel de <code>CaptureSession</code><a class="headerlink" href="#71042-papel-de-capturesession" title="Permanent link">¶</a></h2>
+<p><code>CaptureSession</code> é entidade interna porque:</p>
+<ul>
+<li>representa um ciclo temporal e operacional;</li>
+<li>depende de uma finalidade pertencente ao registro;</li>
+<li>não pode confirmar contexto fora do registro;</li>
+<li>não pode emitir recorte sem autoridade do registro;</li>
+<li>não possui autoridade independente para persistência definitiva;</li>
+<li>deve compartilhar histórico, correções e revogações com o registro;</li>
+<li>pode ser pausada, retomada, abandonada, expirada ou encerrada sem encerrar o registro completo.</li>
+</ul>
+<p>A sessão possui identidade globalmente única, porém sua consistência funcional permanece subordinada ao <code>CaptureRecord</code>.</p>
+<h2 id="71043-cardinalidade">7104.3 Cardinalidade<a class="headerlink" href="#71043-cardinalidade" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code>CaptureRecord 1 ─── 1..N CaptureSession
+CaptureSession 1 ─── 0..N CaptureInput
+CaptureInput 1 ─── 0..N CaptureTranscript
+CaptureInput 1 ─── 0..N CaptureInterpretation
+CaptureRecord 1 ─── 0..N CaptureSynthesis
+CaptureSynthesis 1 ─── 0..N CaptureConfirmation
+CaptureRecord 1 ─── 0..N CaptureAuthorization
+CaptureRecord 1 ─── 0..N CaptureCorrection
+CaptureRecord 1 ─── 0..N CaptureContest
+CaptureRecord 1 ─── 0..N CaptureRevocation
+CaptureRecord 1 ─── 0..N CaptureSlice
+</code></pre></div>
+<h2 id="71044-fronteiras-auxiliares">7104.4 Fronteiras auxiliares<a class="headerlink" href="#71044-fronteiras-auxiliares" title="Permanent link">¶</a></h2>
+<p>Dois limites auxiliares poderão existir sem competir com o agregado principal:</p>
+<h3 id="captureauthorizationgrant"><code>CaptureAuthorizationGrant</code><a class="headerlink" href="#captureauthorizationgrant" title="Permanent link">¶</a></h3>
+<p>Agregado auxiliar para:</p>
+<ul>
+<li>concessão;</li>
+<li>escopo;</li>
+<li>validade;</li>
+<li>consumidores;</li>
+<li>finalidade;</li>
+<li>limitação;</li>
+<li>expiração;</li>
+<li>revogação.</li>
+</ul>
+<p>Sua existência separada é permitida para garantir concorrência e revogação seguras. Ele nunca poderá confirmar conteúdo.</p>
+<h3 id="capturerevocationprocess"><code>CaptureRevocationProcess</code><a class="headerlink" href="#capturerevocationprocess" title="Permanent link">¶</a></h3>
+<p>Process manager ou saga para:</p>
+<ul>
+<li>bloquear novos usos;</li>
+<li>identificar consumidores afetados;</li>
+<li>emitir solicitações de revogação;</li>
+<li>acompanhar confirmações;</li>
+<li>registrar falhas;</li>
+<li>concluir propagação suficiente.</li>
+</ul>
+<p>Ele coordena efeitos, mas não redefine a decisão funcional de revogar.</p>
+<h1 id="7105-mapa-de-agregados">7105. Mapa de agregados<a class="headerlink" href="#7105-mapa-de-agregados" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>flowchart LR
+    CR[CaptureRecord\nAggregate Root]
+    CS[CaptureSession\nEntity]
+    CI[CaptureInput\nEntity]
+    CT[CaptureTranscript\nEntity]
+    INT[CaptureInterpretation\nEntity]
+    SYN[CaptureSynthesis\nEntity]
+    CONF[CaptureConfirmation\nEntity]
+    AUTH[CaptureAuthorizationGrant\nAuxiliary Aggregate]
+    CORR[CaptureCorrection\nEntity]
+    CONT[CaptureContest\nEntity]
+    REV[CaptureRevocationProcess\nProcess Manager]
+    SLICE[CaptureSlice\nAuthorized Projection]
+    MEDIA[Protected Media Store\nExternal Content]
+
+    CR --&gt; CS
+    CS --&gt; CI
+    CI --&gt; CT
+    CI --&gt; INT
+    CR --&gt; SYN
+    SYN --&gt; CONF
+    CR --&gt; CORR
+    CR --&gt; CONT
+    CR -. authority reference .-&gt; AUTH
+    AUTH -. revocation trigger .-&gt; REV
+    CR --&gt; SLICE
+    CI -. content reference .-&gt; MEDIA
+    CT -. source reference .-&gt; CI
+    INT -. provenance .-&gt; CI
+    SYN -. selected elements .-&gt; CT
+    SYN -. selected elements .-&gt; INT
+    SLICE -. minimized from .-&gt; CR
+</code></pre>
+<h1 id="7106-classificacao-dos-elementos-de-dominio">7106. Classificação dos elementos de domínio<a class="headerlink" href="#7106-classificacao-dos-elementos-de-dominio" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Classificação confirmada</th>
+<th style="text-align: right;">Identidade própria</th>
+<th>Mutabilidade</th>
+<th>Sistema de registro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CaptureRecord</code></td>
+<td>Aggregate Root</td>
+<td style="text-align: right;">Sim</td>
+<td>Versionada</td>
+<td>Journey Domain</td>
+</tr>
+<tr>
+<td><code>CaptureSession</code></td>
+<td>Entidade interna</td>
+<td style="text-align: right;">Sim</td>
+<td>Versionada</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CapturePurpose</code></td>
+<td>Objeto de valor versionado</td>
+<td style="text-align: right;">Não isolada</td>
+<td>Substituição versionada</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureInput</code></td>
+<td>Entidade interna</td>
+<td style="text-align: right;">Sim</td>
+<td>Fonte imutável; estado versionado</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureMediaReference</code></td>
+<td>Objeto de valor</td>
+<td style="text-align: right;">Não isolada</td>
+<td>Referência versionada</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureTranscript</code></td>
+<td>Entidade derivada</td>
+<td style="text-align: right;">Sim</td>
+<td>Nova versão, nunca sobrescrita</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureInterpretation</code></td>
+<td>Entidade derivada</td>
+<td style="text-align: right;">Sim</td>
+<td>Nova versão</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureSynthesis</code></td>
+<td>Entidade versionada</td>
+<td style="text-align: right;">Sim</td>
+<td>Nova versão</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureConfirmation</code></td>
+<td>Entidade de evidência</td>
+<td style="text-align: right;">Sim</td>
+<td>Imutável; correção compensatória</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureAuthorizationGrant</code></td>
+<td>Aggregate Root auxiliar</td>
+<td style="text-align: right;">Sim</td>
+<td>Versionada</td>
+<td>Authorization Domain</td>
+</tr>
+<tr>
+<td><code>CaptureSlice</code></td>
+<td>Projeção autorizada materializada</td>
+<td style="text-align: right;">Sim</td>
+<td>Nova emissão</td>
+<td>Integration Boundary</td>
+</tr>
+<tr>
+<td><code>CaptureCorrection</code></td>
+<td>Entidade compensatória</td>
+<td style="text-align: right;">Sim</td>
+<td>Imutável</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureContest</code></td>
+<td>Entidade de controle</td>
+<td style="text-align: right;">Sim</td>
+<td>Estado versionado</td>
+<td><code>CaptureRecord</code></td>
+</tr>
+<tr>
+<td><code>CaptureRevocationProcess</code></td>
+<td>Process manager</td>
+<td style="text-align: right;">Sim</td>
+<td>Versionado</td>
+<td>Integration Boundary</td>
+</tr>
+<tr>
+<td><code>CaptureProcessingAttempt</code></td>
+<td>Registro técnico</td>
+<td style="text-align: right;">Sim</td>
+<td>Append-only</td>
+<td>Operations</td>
+</tr>
+<tr>
+<td><code>CaptureDeliveryRecord</code></td>
+<td>Registro técnico</td>
+<td style="text-align: right;">Sim</td>
+<td>Append-only</td>
+<td>Integration Boundary</td>
+</tr>
+<tr>
+<td><code>CaptureProjection</code></td>
+<td>Projeção de leitura</td>
+<td style="text-align: right;">Derivada</td>
+<td>Reconstruível</td>
+<td>Nunca é fonte primária</td>
+</tr>
+</tbody>
+</table>
+<h1 id="7107-objetos-de-valor-obrigatorios">7107. Objetos de valor obrigatórios<a class="headerlink" href="#7107-objetos-de-valor-obrigatorios" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Objeto de valor</th>
+<th>Conteúdo mínimo</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CaptureRecordId</code></td>
+<td>identificador opaco</td>
+<td>Permanente e não reutilizável</td>
+</tr>
+<tr>
+<td><code>CaptureSessionId</code></td>
+<td>identificador opaco</td>
+<td>Único e subordinado ao registro</td>
+</tr>
+<tr>
+<td><code>CaptureInputId</code></td>
+<td>identificador opaco</td>
+<td>Permanente e independente da mídia</td>
+</tr>
+<tr>
+<td><code>PurposeDescriptor</code></td>
+<td>código, descrição, versão</td>
+<td>Específico e compreensível</td>
+</tr>
+<tr>
+<td><code>ActorReference</code></td>
+<td>ator, papel, autoridade</td>
+<td>Acesso técnico não cria autoridade</td>
+</tr>
+<tr>
+<td><code>ParticipantReference</code></td>
+<td>titular, modo de identidade</td>
+<td>Pode ser provisório ou pseudonimizado</td>
+</tr>
+<tr>
+<td><code>ChannelDescriptor</code></td>
+<td>canal, capacidades, proteção</td>
+<td>Canal não é autoridade</td>
+</tr>
+<tr>
+<td><code>SourceReference</code></td>
+<td>origem, autor, temporalidade</td>
+<td>Preserva proveniência</td>
+</tr>
+<tr>
+<td><code>ContentReference</code></td>
+<td>localização protegida, digest, tipo</td>
+<td>Não expõe conteúdo sensível em eventos</td>
+</tr>
+<tr>
+<td><code>ContentDigest</code></td>
+<td>algoritmo, valor</td>
+<td>Detecta integridade sem definir identidade humana</td>
+</tr>
+<tr>
+<td><code>SensitivityClassification</code></td>
+<td>classe, justificativa, versão</td>
+<td>Controla acesso e retenção</td>
+</tr>
+<tr>
+<td><code>ConfidenceAssessment</code></td>
+<td>valor, faixa, método</td>
+<td>Não equivale a verdade</td>
+</tr>
+<tr>
+<td><code>UncertaintySet</code></td>
+<td>pontos incertos</td>
+<td>Deve permanecer explicável</td>
+</tr>
+<tr>
+<td><code>ConfirmationScope</code></td>
+<td>elementos, versão, finalidade</td>
+<td>Impede confirmação genérica</td>
+</tr>
+<tr>
+<td><code>AuthorizationScope</code></td>
+<td>ações, consumidores, prazo</td>
+<td>Impede ampliação silenciosa</td>
+</tr>
+<tr>
+<td><code>TemporalValidity</code></td>
+<td>início, expiração, condição</td>
+<td>Temporalidades distintas são preservadas</td>
+</tr>
+<tr>
+<td><code>ProvenanceChain</code></td>
+<td>fontes e transformações</td>
+<td>Obrigatória para derivados</td>
+</tr>
+<tr>
+<td><code>IdempotencyKey</code></td>
+<td>chave e escopo</td>
+<td>Evita repetição material</td>
+</tr>
+<tr>
+<td><code>AggregateVersion</code></td>
+<td>inteiro monotônico</td>
+<td>Controla concorrência otimista</td>
+</tr>
+<tr>
+<td><code>SequenceNumber</code></td>
+<td>ordem dentro do registro</td>
+<td>Ordena eventos funcionais</td>
+</tr>
+</tbody>
+</table>
+<h1 id="7108-politica-de-identidades">7108. Política de identidades<a class="headerlink" href="#7108-politica-de-identidades" title="Permanent link">¶</a></h1>
+<h2 id="71081-propriedades-comuns">7108.1 Propriedades comuns<a class="headerlink" href="#71081-propriedades-comuns" title="Permanent link">¶</a></h2>
+<p>Todo identificador funcional deverá ser:</p>
+<ul>
+<li>globalmente único dentro do domínio;</li>
+<li>opaco;</li>
+<li>imutável;</li>
+<li>não reutilizável;</li>
+<li>independente de banco, fila, URL ou dispositivo;</li>
+<li>preservado em retentativas;</li>
+<li>resistente a colisão;</li>
+<li>gerado sem incorporar conteúdo pessoal;</li>
+<li>rastreável por correlação, não por significado embutido.</li>
+</ul>
+<p>O algoritmo poderá ser decidido por ADR, desde que preserve essas propriedades.</p>
+<h2 id="71082-identidade-do-registro">7108.2 Identidade do registro<a class="headerlink" href="#71082-identidade-do-registro" title="Permanent link">¶</a></h2>
+<p><code>capture_record_id</code>:</p>
+<ul>
+<li>nasce quando a primeira finalidade válida é aceita para iniciar uma captura persistível;</li>
+<li>pode existir em modo temporário;</li>
+<li>permanece estável entre sessões relacionadas;</li>
+<li>não muda com canal, conta, dispositivo ou autenticação progressiva;</li>
+<li>não é substituído por <code>participant_id</code>;</li>
+<li>não é exposto como identificador público previsível.</li>
+</ul>
+<h2 id="71083-identidade-da-sessao">7108.3 Identidade da sessão<a class="headerlink" href="#71083-identidade-da-sessao" title="Permanent link">¶</a></h2>
+<p><code>capture_session_id</code>:</p>
+<ul>
+<li>identifica um ciclo temporal específico;</li>
+<li>pertence a exatamente um <code>CaptureRecord</code>;</li>
+<li>pode ser retomado enquanto válido;</li>
+<li>não é reutilizado após expiração ou encerramento definitivo;</li>
+<li>mudança de canal não exige nova sessão se a continuidade for validada;</li>
+<li>nova finalidade material exige nova sessão ou novo registro conforme avaliação da raiz.</li>
+</ul>
+<h2 id="71084-identidade-da-entrada-original">7108.4 Identidade da entrada original<a class="headerlink" href="#71084-identidade-da-entrada-original" title="Permanent link">¶</a></h2>
+<p><code>capture_input_id</code> é criado para cada unidade material recebida.</p>
+<p>A identidade:</p>
+<ul>
+<li>pertence a exatamente uma sessão;</li>
+<li>permanece estável mesmo quando o conteúdo físico muda de localização;</li>
+<li>não é o hash da mídia;</li>
+<li>não é o nome do arquivo;</li>
+<li>não é o ID do upload;</li>
+<li>não é o ID da mensagem do broker;</li>
+<li>não muda após transcrição, interpretação ou correção;</li>
+<li>referencia o conteúdo original por <code>ContentReference</code>;</li>
+<li>preserva autoria, origem, canal e momento de ocorrência;</li>
+<li>admite chave de idempotência do produtor para deduplicação.</li>
+</ul>
+<p>Correção da entrada não reescreve <code>capture_input_id</code>; cria <code>CaptureCorrection</code> e, quando necessário, nova entrada relacionada por <code>supersedes_input_id</code>.</p>
+<h2 id="71085-identidades-derivadas">7108.5 Identidades derivadas<a class="headerlink" href="#71085-identidades-derivadas" title="Permanent link">¶</a></h2>
+<p>Cada transcrição, interpretação, síntese e confirmação possui ID próprio.</p>
+<p>A derivação deve declarar:</p>
+<ul>
+<li>elemento de origem;</li>
+<li>versão de origem;</li>
+<li>método;</li>
+<li>ator ou componente;</li>
+<li>data;</li>
+<li>confiança;</li>
+<li>incerteza;</li>
+<li>propósito;</li>
+<li>modelo e versão, quando houver IA.</li>
+</ul>
+<h2 id="71086-matriz-de-identidades">7108.6 Matriz de identidades<a class="headerlink" href="#71086-matriz-de-identidades" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Identificador</th>
+<th>Escopo</th>
+<th>Criador autorizado</th>
+<th style="text-align: right;">Pode ser regenerado</th>
+<th style="text-align: right;">Pode ser reutilizado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>capture_record_id</code></td>
+<td>Registro</td>
+<td>Journey Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>capture_session_id</code></td>
+<td>Sessão</td>
+<td>Journey Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>capture_input_id</code></td>
+<td>Entrada</td>
+<td>Journey Domain após deduplicação</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>transcript_id</code></td>
+<td>Versão de transcrição</td>
+<td>Serviço autorizado</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>interpretation_id</code></td>
+<td>Interpretação</td>
+<td>Intelligence ou regra autorizada</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>synthesis_id</code></td>
+<td>Versão de síntese</td>
+<td>Journey Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>confirmation_id</code></td>
+<td>Manifestação</td>
+<td>Journey Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>authorization_id</code></td>
+<td>Concessão</td>
+<td>Authorization Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>correction_id</code></td>
+<td>Correção</td>
+<td>Journey Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>contest_id</code></td>
+<td>Contestação</td>
+<td>Journey Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>revocation_id</code></td>
+<td>Revogação</td>
+<td>Authorization Domain</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>slice_id</code></td>
+<td>Recorte emitido</td>
+<td>Integration Boundary</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+<tr>
+<td><code>event_id</code></td>
+<td>Evento</td>
+<td>Sistema de registro competente</td>
+<td style="text-align: right;">Não</td>
+<td style="text-align: right;">Não</td>
+</tr>
+</tbody>
+</table>
+<h1 id="7109-estrutura-do-capturerecord">7109. Estrutura do <code>CaptureRecord</code><a class="headerlink" href="#7109-estrutura-do-capturerecord" title="Permanent link">¶</a></h1>
+<p>O estado mínimo da raiz deverá conter referências ou índices funcionais para:</p>
+<div class="highlight"><pre><span></span><code>CaptureRecord
+├── capture_record_id
+├── participant_reference
+├── identity_mode
+├── purposes[]
+├── sessions[]
+├── input_index[]
+├── synthesis_index[]
+├── confirmation_index[]
+├── authorization_references[]
+├── correction_index[]
+├── contest_index[]
+├── revocation_references[]
+├── slice_index[]
+├── effective_limitations[]
+├── sensitivity_summary
+├── propagation_state
+├── aggregate_version
+└── last_functional_sequence
+</code></pre></div>
+<p>Conteúdo multimodal, texto integral sensível e payloads extensos não precisam residir no estado carregado da raiz. Eles poderão ser preservados em armazenamento protegido, mediante referência, digest e política de retenção.</p>
+<h1 id="7110-estrutura-da-sessao">7110. Estrutura da sessão<a class="headerlink" href="#7110-estrutura-da-sessao" title="Permanent link">¶</a></h1>
+<div class="highlight"><pre><span></span><code>CaptureSession
+├── capture_session_id
+├── capture_record_id
+├── purpose_version
+├── identity_mode
+├── channel_history[]
+├── state
+├── started_at
+├── paused_at
+├── resumed_at
+├── expires_at
+├── closed_at
+├── input_ids[]
+├── active_synthesis_id
+├── confirmation_state
+├── persistence_state
+├── technical_health
+└── session_version
+</code></pre></div>
+<p>A sessão controla operação, não autoridade universal.</p>
+<h1 id="7111-invariantes-estruturais-confirmadas">7111. Invariantes estruturais confirmadas<a class="headerlink" href="#7111-invariantes-estruturais-confirmadas" title="Permanent link">¶</a></h1>
+<h2 id="71111-registro-e-sessao">7111.1 Registro e sessão<a class="headerlink" href="#71111-registro-e-sessao" title="Permanent link">¶</a></h2>
+<ol>
+<li>Todo <code>CaptureSession</code> pertence a exatamente um <code>CaptureRecord</code>.</li>
+<li>Nenhuma sessão poderá alterar o participante titular do registro sem processo explícito de correção de identidade.</li>
+<li>Finalidade materialmente diferente não poderá ser incorporada silenciosamente à mesma sessão.</li>
+<li>Encerramento de uma sessão não encerra automaticamente o registro.</li>
+<li>Expiração de uma sessão não elimina fatos legitimamente preservados.</li>
+<li>Sessão temporária não autoriza persistência permanente.</li>
+<li>Canal não define identidade do registro ou da sessão.</li>
+<li>Estado técnico não substitui estado funcional.</li>
+</ol>
+<h2 id="71112-entrada-original">7111.2 Entrada original<a class="headerlink" href="#71112-entrada-original" title="Permanent link">¶</a></h2>
+<ol>
+<li>Toda entrada possui <code>capture_input_id</code> permanente.</li>
+<li>Toda entrada referencia exatamente uma sessão.</li>
+<li>Entrada original e conteúdo físico são vinculados por referência e digest, não por identidade equivalente.</li>
+<li>Transcrição, interpretação e síntese nunca substituem a entrada original.</li>
+<li>Falha de upload não poderá produzir <code>CaptureInputReceived</code>.</li>
+<li>Retentativa com mesma chave e mesmo digest deverá devolver o mesmo resultado funcional.</li>
+<li>Mesma chave com digest diferente deverá produzir conflito de idempotência.</li>
+<li>Exclusão legítima do conteúdo deverá preservar tombstone mínimo quando necessário para auditoria e propagação.</li>
+</ol>
+<h2 id="71113-derivados">7111.3 Derivados<a class="headerlink" href="#71113-derivados" title="Permanent link">¶</a></h2>
+<ol>
+<li>Toda transcrição referencia entrada e versão de origem.</li>
+<li>Toda interpretação declara proveniência, confiança e incerteza.</li>
+<li>Toda síntese referencia versões exatas dos elementos selecionados.</li>
+<li>Nova versão de síntese não invalida silenciosamente confirmações anteriores; ela altera seu estado efetivo conforme regras explícitas.</li>
+<li>Confirmação somente pode atingir versão apresentada ao ator autorizado.</li>
+<li>Confirmação parcial deverá registrar elementos confirmados, recusados, limitados e pendentes.</li>
+<li>Resultado de IA nunca poderá criar confirmação.</li>
+</ol>
+<h2 id="71114-autorizacao-correcao-e-revogacao">7111.4 Autorização, correção e revogação<a class="headerlink" href="#71114-autorizacao-correcao-e-revogacao" title="Permanent link">¶</a></h2>
+<ol>
+<li>Autorização pertence a finalidade e escopo definidos.</li>
+<li>Confirmação de conteúdo não implica autorização universal de persistência.</li>
+<li>Correção material cria registro compensatório e nova versão efetiva.</li>
+<li>Contestação material bloqueia novos efeitos incompatíveis.</li>
+<li>Revogação efetiva bloqueia novos recortes sob o escopo revogado.</li>
+<li>Revogação não é concluída antes da propagação suficiente.</li>
+<li>Consumidor nunca poderá ampliar autorização recebida.</li>
+<li>Recorte emitido referencia autorização e versão do registro.</li>
+</ol>
+<h1 id="7112-limites-de-consistencia">7112. Limites de consistência<a class="headerlink" href="#7112-limites-de-consistencia" title="Permanent link">¶</a></h1>
+<h2 id="71121-consistencia-imediata-no-capturerecord">7112.1 Consistência imediata no <code>CaptureRecord</code><a class="headerlink" href="#71121-consistencia-imediata-no-capturerecord" title="Permanent link">¶</a></h2>
+<p>Exigem consistência imediata:</p>
+<ul>
+<li>criação de sessão;</li>
+<li>mudança de estado funcional da sessão;</li>
+<li>registro de entrada recebida;</li>
+<li>seleção da síntese ativa;</li>
+<li>confirmação total ou parcial;</li>
+<li>registro de correção;</li>
+<li>abertura de contestação;</li>
+<li>emissão autorizada de recorte;</li>
+<li>fechamento da sessão;</li>
+<li>avanço de <code>aggregate_version</code>;</li>
+<li>avanço da sequência funcional.</li>
+</ul>
+<h2 id="71122-consistencia-imediata-no-captureauthorizationgrant">7112.2 Consistência imediata no <code>CaptureAuthorizationGrant</code><a class="headerlink" href="#71122-consistencia-imediata-no-captureauthorizationgrant" title="Permanent link">¶</a></h2>
+<p>Exigem consistência imediata:</p>
+<ul>
+<li>concessão;</li>
+<li>limitação;</li>
+<li>expiração;</li>
+<li>revogação;</li>
+<li>validação de escopo;</li>
+<li>bloqueio de novo uso.</li>
+</ul>
+<h2 id="71123-consistencia-eventual-permitida">7112.3 Consistência eventual permitida<a class="headerlink" href="#71123-consistencia-eventual-permitida" title="Permanent link">¶</a></h2>
+<p>Podem operar com consistência eventual:</p>
+<ul>
+<li>transcrição;</li>
+<li>interpretação;</li>
+<li>construção de síntese;</li>
+<li>atualização de projeções;</li>
+<li>indexação;</li>
+<li>atualização de grafo;</li>
+<li>confirmação de entrega;</li>
+<li>propagação de correção;</li>
+<li>propagação de revogação;</li>
+<li>remoção de índices;</li>
+<li>eliminação física de dados temporários.</li>
+</ul>
+<p>A consistência eventual não autoriza exposição de estado incorreto como concluído.</p>
+<h1 id="7113-concorrencia">7113. Concorrência<a class="headerlink" href="#7113-concorrencia" title="Permanent link">¶</a></h1>
+<h2 id="71131-controle-otimista">7113.1 Controle otimista<a class="headerlink" href="#71131-controle-otimista" title="Permanent link">¶</a></h2>
+<p>Toda alteração material deverá declarar:</p>
+<ul>
+<li><code>capture_record_id</code>;</li>
+<li><code>expected_version</code>;</li>
+<li><code>idempotency_key</code>;</li>
+<li><code>actor_id</code>;</li>
+<li><code>authority_scope</code>;</li>
+<li><code>correlation_id</code>;</li>
+<li><code>causation_id</code>.</li>
+</ul>
+<p>Se <code>expected_version</code> divergir, o comando deverá:</p>
+<ol>
+<li>ser rejeitado como conflito;</li>
+<li>recuperar o estado efetivo;</li>
+<li>reavaliar precondições;</li>
+<li>ser reapresentado conscientemente ou abandonado;</li>
+<li>nunca sobrescrever silenciosamente.</li>
+</ol>
+<h2 id="71132-entradas-simultaneas">7113.2 Entradas simultâneas<a class="headerlink" href="#71132-entradas-simultaneas" title="Permanent link">¶</a></h2>
+<p>Entradas simultâneas são permitidas quando:</p>
+<ul>
+<li>pertencem a sessão em <code>Capturing</code>;</li>
+<li>possuem IDs e chaves de idempotência distintos;</li>
+<li>preservam ordem funcional por sequência;</li>
+<li>não encerram ou revogam a sessão;</li>
+<li>não excedem limites de canal ou finalidade.</li>
+</ul>
+<p>O sistema poderá aceitar conteúdo em paralelo, mas o reconhecimento funcional da entrada deverá ser serializado por versão ou sequência do registro.</p>
+<h2 id="71133-confirmacao-sobre-sintese-desatualizada">7113.3 Confirmação sobre síntese desatualizada<a class="headerlink" href="#71133-confirmacao-sobre-sintese-desatualizada" title="Permanent link">¶</a></h2>
+<p>Uma confirmação deverá ser rejeitada quando:</p>
+<ul>
+<li><code>synthesis_id</code> não for a versão apresentada;</li>
+<li>a síntese tiver sido substituída materialmente;</li>
+<li>houver correção posterior relevante;</li>
+<li>a finalidade ou autorização tiver expirado;</li>
+<li>o ator não possuir autoridade atual.</li>
+</ul>
+<p>A interface deverá apresentar a versão atual e solicitar nova revisão.</p>
+<h2 id="71134-correcao-concorrente">7113.4 Correção concorrente<a class="headerlink" href="#71134-correcao-concorrente" title="Permanent link">¶</a></h2>
+<p>Duas correções sobre o mesmo elemento deverão:</p>
+<ul>
+<li>preservar ambas as solicitações;</li>
+<li>detectar base versionada divergente;</li>
+<li>impedir aplicação silenciosa em ordem arbitrária;</li>
+<li>produzir estado <code>Contested</code> quando não houver resolução determinística;</li>
+<li>exigir revisão humana quando o efeito for material.</li>
+</ul>
+<h2 id="71135-revogacao-durante-processamento">7113.5 Revogação durante processamento<a class="headerlink" href="#71135-revogacao-durante-processamento" title="Permanent link">¶</a></h2>
+<p>Quando ocorrer revogação durante processamento:</p>
+<ul>
+<li>novos trabalhos deverão ser bloqueados;</li>
+<li>trabalhos canceláveis deverão ser interrompidos;</li>
+<li>resultados posteriores não poderão ser publicados;</li>
+<li>artefatos temporários deverão seguir política de eliminação;</li>
+<li>tentativas não canceláveis deverão registrar conclusão técnica sem efeito funcional;</li>
+<li>a propagação deverá incluir consumidores que já receberam recortes.</li>
+</ul>
+<h2 id="71136-encerramento-com-operacoes-pendentes">7113.6 Encerramento com operações pendentes<a class="headerlink" href="#71136-encerramento-com-operacoes-pendentes" title="Permanent link">¶</a></h2>
+<p><code>CloseCaptureSession</code> poderá encerrar a interação, mas deverá registrar:</p>
+<ul>
+<li>processamentos pendentes;</li>
+<li>entregas pendentes;</li>
+<li>correções pendentes;</li>
+<li>revogações pendentes;</li>
+<li>prazo de resolução;</li>
+<li>estado final apresentado ao participante.</li>
+</ul>
+<p>Encerramento operacional não falsifica conclusão de efeitos assíncronos.</p>
+<h1 id="7114-matriz-comandoagregadoinvariantesevento">7114. Matriz comando–agregado–invariantes–evento<a class="headerlink" href="#7114-matriz-comandoagregadoinvariantesevento" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Alvo</th>
+<th>Precondições principais</th>
+<th>Invariantes verificadas</th>
+<th>Evento funcional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>StartCaptureSession</code></td>
+<td><code>CaptureRecord</code></td>
+<td>finalidade válida; identidade mínima</td>
+<td>1–8, 24</td>
+<td><code>CaptureSessionStarted</code></td>
+</tr>
+<tr>
+<td><code>ExplainCapturePurpose</code></td>
+<td><code>CaptureRecord</code></td>
+<td>sessão iniciada</td>
+<td>3, 24</td>
+<td><code>CapturePurposeExplained</code></td>
+</tr>
+<tr>
+<td><code>SubmitCaptureInput</code></td>
+<td><code>CaptureRecord</code></td>
+<td>sessão capturando; canal permitido</td>
+<td>9–16</td>
+<td><code>CaptureInputReceived</code></td>
+</tr>
+<tr>
+<td><code>AttachCaptureMedia</code></td>
+<td><code>CaptureRecord</code></td>
+<td>entrada válida; mídia íntegra</td>
+<td>9–16</td>
+<td><code>CaptureMediaAttached</code></td>
+</tr>
+<tr>
+<td><code>PauseCaptureSession</code></td>
+<td><code>CaptureRecord</code></td>
+<td>sessão capturando</td>
+<td>1–8</td>
+<td><code>CaptureSessionPaused</code></td>
+</tr>
+<tr>
+<td><code>ResumeCaptureSession</code></td>
+<td><code>CaptureRecord</code></td>
+<td>continuidade e autorização válidas</td>
+<td>1–8, 24</td>
+<td><code>CaptureSessionResumed</code></td>
+</tr>
+<tr>
+<td><code>RequestCaptureProcessing</code></td>
+<td><code>CaptureRecord</code></td>
+<td>entrada recebida; finalidade permite</td>
+<td>12, 17–23, 24</td>
+<td><code>CaptureProcessingRequested</code></td>
+</tr>
+<tr>
+<td><code>RecordCaptureTranscript</code></td>
+<td><code>CaptureRecord</code></td>
+<td>origem e versão válidas</td>
+<td>12, 17</td>
+<td><code>CaptureTranscriptProduced</code></td>
+</tr>
+<tr>
+<td><code>RecordCaptureInterpretation</code></td>
+<td><code>CaptureRecord</code></td>
+<td>proveniência e confiança presentes</td>
+<td>18, 23</td>
+<td><code>CaptureInterpretationProduced</code></td>
+</tr>
+<tr>
+<td><code>PresentCaptureSynthesis</code></td>
+<td><code>CaptureRecord</code></td>
+<td>síntese versionada e explicável</td>
+<td>19–23</td>
+<td><code>CaptureSynthesisPresented</code></td>
+</tr>
+<tr>
+<td><code>ConfirmCaptureSynthesis</code></td>
+<td><code>CaptureRecord</code></td>
+<td>versão apresentada; ator autorizado</td>
+<td>20–25</td>
+<td><code>CaptureSynthesisConfirmed</code></td>
+</tr>
+<tr>
+<td><code>PartiallyConfirmCaptureSynthesis</code></td>
+<td><code>CaptureRecord</code></td>
+<td>escopo explícito</td>
+<td>20–25</td>
+<td><code>CaptureSynthesisPartiallyConfirmed</code></td>
+</tr>
+<tr>
+<td><code>RequestCaptureCorrection</code></td>
+<td><code>CaptureRecord</code></td>
+<td>elemento identificável</td>
+<td>26–27</td>
+<td><code>CaptureCorrectionRequested</code></td>
+</tr>
+<tr>
+<td><code>RegisterCaptureCorrection</code></td>
+<td><code>CaptureRecord</code></td>
+<td>autoria e base versionada</td>
+<td>26–27</td>
+<td><code>CaptureCorrectionRegistered</code></td>
+</tr>
+<tr>
+<td><code>AuthorizeCapturePersistence</code></td>
+<td><code>CaptureAuthorizationGrant</code></td>
+<td>escopo e finalidade explícitos</td>
+<td>24–25</td>
+<td><code>CapturePersistenceAuthorized</code></td>
+</tr>
+<tr>
+<td><code>PersistCaptureTemporarily</code></td>
+<td><code>CaptureRecord</code></td>
+<td>expiração definida</td>
+<td>6, 16, 24</td>
+<td><code>TemporaryCapturePersistenceRegistered</code></td>
+</tr>
+<tr>
+<td><code>IssueCaptureSlice</code></td>
+<td><code>CaptureRecord</code> + autorização</td>
+<td>confirmação aplicável; escopo válido</td>
+<td>28–31</td>
+<td><code>CaptureSliceIssued</code></td>
+</tr>
+<tr>
+<td><code>ContestCaptureRecord</code></td>
+<td><code>CaptureRecord</code></td>
+<td>alvo identificável</td>
+<td>27</td>
+<td><code>CaptureRecordContested</code></td>
+</tr>
+<tr>
+<td><code>RevokeCaptureAuthorization</code></td>
+<td>autorização</td>
+<td>concessão ativa ou efeito residual</td>
+<td>28–30</td>
+<td><code>CaptureAuthorizationRevoked</code></td>
+</tr>
+<tr>
+<td><code>ConfirmRevocationPropagation</code></td>
+<td>processo de revogação</td>
+<td>consumidor e efeito identificados</td>
+<td>28–30</td>
+<td><code>CaptureRevocationPropagated</code></td>
+</tr>
+<tr>
+<td><code>CloseCaptureSession</code></td>
+<td><code>CaptureRecord</code></td>
+<td>estado encerrável</td>
+<td>1–8</td>
+<td><code>CaptureSessionClosed</code></td>
+</tr>
+<tr>
+<td><code>ExpireCaptureSession</code></td>
+<td><code>CaptureRecord</code></td>
+<td>validade encerrada</td>
+<td>5–6</td>
+<td><code>CaptureSessionExpired</code></td>
+</tr>
+<tr>
+<td><code>AbandonCaptureSession</code></td>
+<td><code>CaptureRecord</code></td>
+<td>sessão não concluída</td>
+<td>4–6</td>
+<td><code>CaptureSessionAbandoned</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="7115-fluxo-comandoagregadoevento">7115. Fluxo comando–agregado–evento<a class="headerlink" href="#7115-fluxo-comandoagregadoevento" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>sequenceDiagram
+    participant UX as Journey Experience
+    participant CMD as Command Handler
+    participant CR as CaptureRecord
+    participant STORE as System of Record
+    participant OUT as Event Outbox
+    participant CON as Authorized Consumer
+
+    UX-&gt;&gt;CMD: Command + expected_version + idempotency_key
+    CMD-&gt;&gt;CMD: Validate identity, authority and purpose
+    CMD-&gt;&gt;CR: Load effective aggregate
+    CR-&gt;&gt;CR: Validate preconditions and invariants
+    alt command accepted
+        CR--&gt;&gt;CMD: New state + functional events
+        CMD-&gt;&gt;STORE: Persist state and events atomically
+        STORE-&gt;&gt;OUT: Commit publishable event reference
+        OUT--&gt;&gt;CON: Minimized functional event
+        CON-&gt;&gt;CON: Perform own authority evaluation
+    else conflict or invalid command
+        CR--&gt;&gt;CMD: Domain rejection
+        CMD--&gt;&gt;UX: Explainable failure without silent overwrite
+    end
+</code></pre>
+<h1 id="7116-ciclo-tecnico-da-sessao">7116. Ciclo técnico da sessão<a class="headerlink" href="#7116-ciclo-tecnico-da-sessao" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>stateDiagram-v2
+    [*] --&gt; NotInitiated
+    NotInitiated --&gt; ExplainingPurpose: StartCaptureSession
+    ExplainingPurpose --&gt; AwaitingParticipant: CapturePurposeExplained
+    AwaitingParticipant --&gt; Capturing: authorization valid
+    Capturing --&gt; Paused: PauseCaptureSession
+    Paused --&gt; Capturing: ResumeCaptureSession
+    Capturing --&gt; Processing: valid input received
+    Processing --&gt; ReflectingUnderstanding: synthesis ready
+    ReflectingUnderstanding --&gt; AwaitingReview: synthesis presented
+    AwaitingReview --&gt; PartiallyConfirmed: partial confirmation
+    AwaitingReview --&gt; Confirmed: sufficient confirmation
+    AwaitingReview --&gt; CorrectionRequested: correction requested
+    AwaitingReview --&gt; Limited: scope limited
+    CorrectionRequested --&gt; ReflectingUnderstanding: corrected synthesis
+    PartiallyConfirmed --&gt; Closed: session closed
+    Confirmed --&gt; Closed: session closed
+    Limited --&gt; Closed: session closed
+    Capturing --&gt; Abandoned: participant abandons
+    Paused --&gt; Expired: validity ends
+    AwaitingReview --&gt; Contested: participant contests
+    Confirmed --&gt; Contested: later contest
+    Contested --&gt; CorrectionRequested: correction accepted for review
+    state AnyMaterialState &lt;<choice>&gt;
+    AnyMaterialState --&gt; Failed: unrecoverable functional failure
+    AnyMaterialState --&gt; Revoked: authorization revoked
+</choice></code></pre>
+<p>A representação técnica deverá manter estados independentes para entrada, transcrição, interpretação, síntese, autorização, persistência e propagação.</p>
+<h1 id="7117-idempotencia">7117. Idempotência<a class="headerlink" href="#7117-idempotencia" title="Permanent link">¶</a></h1>
+<h2 id="71171-escopo-da-chave">7117.1 Escopo da chave<a class="headerlink" href="#71171-escopo-da-chave" title="Permanent link">¶</a></h2>
+<p>A chave deverá ser avaliada por:</p>
+<div class="highlight"><pre><span></span><code>actor + command_type + capture_record_id + purpose + idempotency_key
+</code></pre></div>
+<p>Para entrada, deverá incluir também uma evidência de conteúdo ou referência do produtor.</p>
+<h2 id="71172-resultado-repetido">7117.2 Resultado repetido<a class="headerlink" href="#71172-resultado-repetido" title="Permanent link">¶</a></h2>
+<p>Mesma chave com mesmos parâmetros materiais deverá:</p>
+<ul>
+<li>retornar o resultado funcional original;</li>
+<li>preservar os mesmos IDs;</li>
+<li>não emitir novo evento funcional;</li>
+<li>permitir novo evento técnico de retentativa, quando necessário.</li>
+</ul>
+<h2 id="71173-conflito-de-chave">7117.3 Conflito de chave<a class="headerlink" href="#71173-conflito-de-chave" title="Permanent link">¶</a></h2>
+<p>Mesma chave com conteúdo materialmente diferente deverá:</p>
+<ul>
+<li>rejeitar a operação;</li>
+<li>registrar conflito técnico;</li>
+<li>não alterar o agregado;</li>
+<li>não escolher silenciosamente uma versão.</li>
+</ul>
+<h1 id="7118-ordenacao-e-causalidade">7118. Ordenação e causalidade<a class="headerlink" href="#7118-ordenacao-e-causalidade" title="Permanent link">¶</a></h1>
+<p>O agregado deverá manter:</p>
+<ul>
+<li><code>aggregate_version</code> monotônico;</li>
+<li><code>functional_sequence</code> monotônica;</li>
+<li><code>occurred_at</code> para o fato;</li>
+<li><code>recorded_at</code> para persistência;</li>
+<li><code>causation_id</code> para causa direta;</li>
+<li><code>correlation_id</code> para fluxo;</li>
+<li><code>source_sequence</code> quando a origem possuir ordenação confiável.</li>
+</ul>
+<p>Eventos fora de ordem poderão ser recebidos, mas não aplicados sem reavaliação da versão e da causalidade.</p>
+<h1 id="7119-persistencia-e-reconstrucao">7119. Persistência e reconstrução<a class="headerlink" href="#7119-persistencia-e-reconstrucao" title="Permanent link">¶</a></h1>
+<h2 id="71191-fonte-primaria">7119.1 Fonte primária<a class="headerlink" href="#71191-fonte-primaria" title="Permanent link">¶</a></h2>
+<p>A fonte primária deverá preservar:</p>
+<ul>
+<li>estado efetivo do <code>CaptureRecord</code>;</li>
+<li>histórico de eventos funcionais;</li>
+<li>referências imutáveis às entradas originais;</li>
+<li>versões de derivados;</li>
+<li>evidências de confirmação;</li>
+<li>autorizações e revogações;</li>
+<li>correções e contestações;</li>
+<li>políticas de retenção e eliminação.</li>
+</ul>
+<p>A decisão entre estado + log, event sourcing ou abordagem híbrida será tomada por ADR.</p>
+<h2 id="71192-reconstrucao-minima">7119.2 Reconstrução mínima<a class="headerlink" href="#71192-reconstrucao-minima" title="Permanent link">¶</a></h2>
+<p>Deverá ser possível reconstruir:</p>
+<ul>
+<li>sessões e seus estados;</li>
+<li>entradas reconhecidas;</li>
+<li>derivações e versões;</li>
+<li>síntese efetiva em cada momento;</li>
+<li>escopo confirmado;</li>
+<li>autorizações válidas em cada momento;</li>
+<li>correções aplicadas;</li>
+<li>contestações abertas;</li>
+<li>revogações e propagação;</li>
+<li>recortes emitidos.</li>
+</ul>
+<h2 id="71193-conteudo-eliminado">7119.3 Conteúdo eliminado<a class="headerlink" href="#71193-conteudo-eliminado" title="Permanent link">¶</a></h2>
+<p>Quando conteúdo for legitimamente eliminado:</p>
+<ul>
+<li>o conteúdo não deverá ser recriado por cache, índice, backup operacional ou modelo de IA;</li>
+<li>poderá permanecer tombstone minimizado quando exigido para integridade, segurança ou auditoria;</li>
+<li>o tombstone não deverá conter o conteúdo eliminado;</li>
+<li>projeções deverão ser reconstruídas sem o conteúdo;</li>
+<li>recortes afetados deverão ser invalidados conforme contrato.</li>
+</ul>
+<h2 id="71194-snapshots">7119.4 Snapshots<a class="headerlink" href="#71194-snapshots" title="Permanent link">¶</a></h2>
+<p>Snapshots são opcionais e deverão:</p>
+<ul>
+<li>declarar versão do agregado;</li>
+<li>ser verificáveis contra eventos;</li>
+<li>ser elimináveis ou reconstruíveis;</li>
+<li>não ocultar correções;</li>
+<li>não reintroduzir conteúdo revogado;</li>
+<li>não se tornar fonte normativa independente.</li>
+</ul>
+<h1 id="7120-modelo-de-reconstrucao">7120. Modelo de reconstrução<a class="headerlink" href="#7120-modelo-de-reconstrucao" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>flowchart TD
+    FE[Functional Event History]
+    SRC[Protected Original References]
+    AUTH[Authorization and Revocation History]
+    CORR[Corrections and Contests]
+    RED[Reducer / Domain Reconstruction]
+    CR[Effective CaptureRecord]
+    PROJ[Read Projections]
+    SEARCH[Search Index]
+    GRAPH[Knowledge Graph Relations]
+
+    FE --&gt; RED
+    SRC --&gt; RED
+    AUTH --&gt; RED
+    CORR --&gt; RED
+    RED --&gt; CR
+    CR --&gt; PROJ
+    PROJ --&gt; SEARCH
+    PROJ --&gt; GRAPH
+    AUTH -. revoke or limit .-&gt; RED
+    CORR -. compensate .-&gt; RED
+</code></pre>
+<p>Busca e grafo são reconstruídos a partir de projeções autorizadas, nunca diretamente promovidos a autoridade.</p>
+<h1 id="7121-propagacao-de-correcao">7121. Propagação de correção<a class="headerlink" href="#7121-propagacao-de-correcao" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>sequenceDiagram
+    participant P as Participant
+    participant CR as CaptureRecord
+    participant PROJ as Projections
+    participant C as Authorized Consumers
+    participant AUD as Audit
+
+    P-&gt;&gt;CR: RequestCaptureCorrection(target, base_version)
+    CR-&gt;&gt;CR: Validate authority and preserve original
+    CR--&gt;&gt;AUD: CaptureCorrectionRequested
+    CR-&gt;&gt;CR: Register compensating correction
+    CR--&gt;&gt;PROJ: CaptureCorrectionRegistered
+    PROJ-&gt;&gt;PROJ: Rebuild affected views
+    PROJ--&gt;&gt;C: Correction notice with minimized scope
+    C--&gt;&gt;CR: Consumer correction acknowledgement
+    CR--&gt;&gt;P: Effective correction and pending effects
+</code></pre>
+<p>A correção não apaga a fonte necessária e não autoriza compartilhamento adicional.</p>
+<h1 id="7122-propagacao-de-revogacao">7122. Propagação de revogação<a class="headerlink" href="#7122-propagacao-de-revogacao" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>sequenceDiagram
+    participant P as Participant
+    participant AUTH as Authorization Domain
+    participant CR as CaptureRecord
+    participant REV as Revocation Process
+    participant C as Authorized Consumers
+    participant IDX as Search and Graph
+
+    P-&gt;&gt;AUTH: RevokeCaptureAuthorization(scope)
+    AUTH-&gt;&gt;AUTH: Mark grant revoked atomically
+    AUTH--&gt;&gt;CR: CaptureAuthorizationRevoked
+    CR-&gt;&gt;CR: Block new slices under scope
+    AUTH-&gt;&gt;REV: Start propagation
+    REV--&gt;&gt;C: Revoke applicable use or reference
+    REV--&gt;&gt;IDX: Remove or limit derived indexes
+    C--&gt;&gt;REV: Propagation acknowledgement
+    IDX--&gt;&gt;REV: Index removal acknowledgement
+    REV-&gt;&gt;REV: Evaluate sufficient propagation
+    REV--&gt;&gt;CR: CaptureRevocationPropagated
+    CR--&gt;&gt;P: Effective state and residual obligations
+</code></pre>
+<p>A conclusão deverá distinguir propagação suficiente, falha parcial e retenção residual obrigatória.</p>
+<h1 id="7123-seguranca-do-dominio">7123. Segurança do domínio<a class="headerlink" href="#7123-seguranca-do-dominio" title="Permanent link">¶</a></h1>
+<p>O modelo deverá impedir:</p>
+<ul>
+<li>enumeração de IDs;</li>
+<li>inclusão de conteúdo sensível no identificador;</li>
+<li>leitura direta do objeto multimodal por referência não autorizada;</li>
+<li>confirmação por componente automatizado;</li>
+<li>emissão de recorte sem autorização válida;</li>
+<li>reuso de idempotency key entre finalidades;</li>
+<li>replay de comando com autoridade expirada;</li>
+<li>reconstrução de conteúdo removido;</li>
+<li>associação determinística entre sessões temporárias sem base legítima;</li>
+<li>promoção de telemetria a contexto humano.</li>
+</ul>
+<h1 id="7124-testes-obrigatorios-do-modelo-de-dominio">7124. Testes obrigatórios do modelo de domínio<a class="headerlink" href="#7124-testes-obrigatorios-do-modelo-de-dominio" title="Permanent link">¶</a></h1>
+<h2 id="71241-agregados-e-identidades">7124.1 Agregados e identidades<a class="headerlink" href="#71241-agregados-e-identidades" title="Permanent link">¶</a></h2>
+<ol>
+<li>registro mantém identidade entre sessões relacionadas;</li>
+<li>sessão não pode migrar para outro registro;</li>
+<li>entrada mantém ID após mudança de localização física;</li>
+<li>retentativa idempotente preserva IDs;</li>
+<li>chave repetida com conteúdo diferente é rejeitada;</li>
+<li>canal não altera identidade;</li>
+<li>conteúdo pessoal não aparece nos IDs.</li>
+</ol>
+<h2 id="71242-invariantes">7124.2 Invariantes<a class="headerlink" href="#71242-invariantes" title="Permanent link">¶</a></h2>
+<ol>
+<li>sessão não captura antes da finalidade;</li>
+<li>transcrição não substitui entrada;</li>
+<li>interpretação não confirma fato;</li>
+<li>confirmação desatualizada é rejeitada;</li>
+<li>persistência definitiva sem autoridade é rejeitada;</li>
+<li>recorte sem autorização é rejeitado;</li>
+<li>correção preserva histórico;</li>
+<li>contestação bloqueia efeito incompatível;</li>
+<li>revogação bloqueia novos recortes.</li>
+</ol>
+<h2 id="71243-concorrencia">7124.3 Concorrência<a class="headerlink" href="#71243-concorrencia" title="Permanent link">¶</a></h2>
+<ol>
+<li>duas entradas válidas são ordenadas sem perda;</li>
+<li>duas correções conflitantes não sobrescrevem silenciosamente;</li>
+<li>revogação concorrente prevalece sobre nova emissão de recorte;</li>
+<li>fechamento registra operações pendentes;</li>
+<li>evento fora de ordem não regride estado;</li>
+<li>retry técnico não duplica evento funcional.</li>
+</ol>
+<h2 id="71244-reconstrucao">7124.4 Reconstrução<a class="headerlink" href="#71244-reconstrucao" title="Permanent link">¶</a></h2>
+<ol>
+<li>projeção pode ser reconstruída do histórico autorizado;</li>
+<li>correção altera estado efetivo sem apagar origem;</li>
+<li>revogação remove usos reconstruíveis;</li>
+<li>conteúdo eliminado não reaparece;</li>
+<li>snapshot desatualizado é detectado;</li>
+<li>busca e grafo não viram fonte primária.</li>
+</ol>
+<h1 id="7125-decisoes-de-gaps">7125. Decisões de gaps<a class="headerlink" href="#7125-decisoes-de-gaps" title="Permanent link">¶</a></h1>
+<h2 id="71251-uic01-gap-001-resolvido">7125.1 <code>UIC01-GAP-001</code> — Resolvido<a class="headerlink" href="#71251-uic01-gap-001-resolvido" title="Permanent link">¶</a></h2>
+<p><strong>Questão:</strong> confirmar limite entre <code>CaptureRecord</code> e <code>CaptureSession</code>.</p>
+<p><strong>Decisão:</strong></p>
+<ul>
+<li><code>CaptureRecord</code> é Aggregate Root;</li>
+<li><code>CaptureSession</code> é entidade interna com identidade própria;</li>
+<li>o registro possui uma ou mais sessões;</li>
+<li>sessão não confirma, não autoriza persistência e não emite recorte independentemente;</li>
+<li>autorização e propagação de revogação podem utilizar agregados auxiliares sem competir com a raiz funcional.</li>
+</ul>
+<p><strong>Evidência:</strong> seções 7104, 7105, 7106, 7112 e 7114.</p>
+<p><strong>Estado:</strong> <code>Resolved</code>.</p>
+<h2 id="71252-uic01-gap-002-resolvido">7125.2 <code>UIC01-GAP-002</code> — Resolvido<a class="headerlink" href="#71252-uic01-gap-002-resolvido" title="Permanent link">¶</a></h2>
+<p><strong>Questão:</strong> definir identidade técnica da entrada original.</p>
+<p><strong>Decisão:</strong></p>
+<ul>
+<li><code>CaptureInput</code> possui <code>capture_input_id</code> permanente, opaco e não reutilizável;</li>
+<li>o ID pertence a uma sessão e permanece independente de mídia, arquivo, upload, broker e derivados;</li>
+<li>deduplicação usa chave de idempotência e evidência de conteúdo;</li>
+<li>correção não reescreve identidade; produz registro compensatório ou nova entrada relacionada;</li>
+<li>eliminação legítima preserva somente tombstone mínimo quando necessário.</li>
+</ul>
+<p><strong>Evidência:</strong> seções 7107, 7108, 7111, 7113 e 7117.</p>
+<p><strong>Estado:</strong> <code>Resolved</code>.</p>
+<h1 id="7126-estado-da-uic-01-apos-este-incremento">7126. Estado da UIC-01 após este incremento<a class="headerlink" href="#7126-estado-da-uic-01-apos-este-incremento" title="Permanent link">¶</a></h1>
+<table>
+<thead>
+<tr>
+<th>Dimensão</th>
+<th>Estado efetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fontes normativas</td>
+<td>Mapeadas</td>
+</tr>
+<tr>
+<td>Responsabilidade técnica</td>
+<td>Definida</td>
+</tr>
+<tr>
+<td>Decisões proibidas</td>
+<td>Definidas</td>
+</tr>
+<tr>
+<td>Raiz do agregado</td>
+<td>Confirmada</td>
+</tr>
+<tr>
+<td>Relação registro–sessão</td>
+<td>Confirmada</td>
+</tr>
+<tr>
+<td>Identidade da entrada</td>
+<td>Confirmada</td>
+</tr>
+<tr>
+<td>Entidades e objetos de valor</td>
+<td>Classificados</td>
+</tr>
+<tr>
+<td>Invariantes estruturais</td>
+<td>Confirmadas</td>
+</tr>
+<tr>
+<td>Invariantes por comando</td>
+<td>Mapeadas</td>
+</tr>
+<tr>
+<td>Consistência</td>
+<td>Definida</td>
+</tr>
+<tr>
+<td>Concorrência</td>
+<td>Definida</td>
+</tr>
+<tr>
+<td>Idempotência</td>
+<td>Definida</td>
+</tr>
+<tr>
+<td>Reconstrução</td>
+<td>Proposta</td>
+</tr>
+<tr>
+<td>Diagramas</td>
+<td>Publicados</td>
+</tr>
+<tr>
+<td><code>UIC01-GAP-001</code></td>
+<td>Resolvido</td>
+</tr>
+<tr>
+<td><code>UIC01-GAP-002</code></td>
+<td>Resolvido</td>
+</tr>
+<tr>
+<td>Estado técnico</td>
+<td><code>Domain model proposed</code></td>
+</tr>
+<tr>
+<td>Progresso de referência</td>
+<td><code>40%</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="7127-criterios-atendidos-para-domain-model-proposed">7127. Critérios atendidos para <code>Domain model proposed</code><a class="headerlink" href="#7127-criterios-atendidos-para-domain-model-proposed" title="Permanent link">¶</a></h1>
+<p>O estado é alcançado porque:</p>
+<ol>
+<li>a raiz do agregado foi confirmada;</li>
+<li>a sessão foi classificada;</li>
+<li>a identidade da entrada foi definida;</li>
+<li>entidades e objetos de valor foram classificados;</li>
+<li>invariantes estruturais foram formalizadas;</li>
+<li>comandos foram vinculados a agregados e eventos;</li>
+<li>consistência imediata e eventual foi delimitada;</li>
+<li>concorrência otimista foi definida;</li>
+<li>idempotência foi definida;</li>
+<li>reconstrução foi proposta;</li>
+<li>correção e revogação possuem fluxos explícitos;</li>
+<li>dois gaps prioritários foram resolvidos;</li>
+<li>nenhum conflito funcional bloqueante foi identificado.</li>
+</ol>
+<p>Esse estado não equivale a <code>Technically ready for implementation</code>.</p>
+<h1 id="7128-proximo-incremento">7128. Próximo incremento<a class="headerlink" href="#7128-proximo-incremento" title="Permanent link">¶</a></h1>
+<p>O próximo ciclo deverá elevar a UIC-01 para:</p>
+<blockquote>
+<p><strong><code>Lifecycle technically defined — 60%</code>.</strong></p>
+</blockquote>
+<p>Deverá concluir:</p>
+<ul>
+<li>máquinas de estado independentes;</li>
+<li>matriz completa de transições;</li>
+<li>precondições por estado;</li>
+<li>compensações;</li>
+<li>timeouts e expirações;</li>
+<li>pausas e retomadas;</li>
+<li>falhas parciais;</li>
+<li>relação entre estado funcional e estado técnico;</li>
+<li>testes de transição;</li>
+<li>resolução prioritária das lacunas de processamento e persistência temporária aplicáveis ao ciclo.</li>
+</ul>
+<h1 id="7129-limite-de-aprovacao">7129. Limite de aprovação<a class="headerlink" href="#7129-limite-de-aprovacao" title="Permanent link">¶</a></h1>
+<p>A aprovação deste modelo:</p>
+<ul>
+<li>não autoriza implementação em produção;</li>
+<li>não define tecnologia;</li>
+<li>não transforma agregado em microsserviço;</li>
+<li>não torna a sessão independente do registro;</li>
+<li>não incorpora conteúdo ao Contexto Vivo;</li>
+<li>não encerra lacunas além de <code>UIC01-GAP-001</code> e <code>UIC01-GAP-002</code>;</li>
+<li>não reduz direitos de correção, limitação, contestação ou revogação.</li>
+</ul>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../js/print-site.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+window.mermaidConfig = {default: {
+    startOnLoad: false
+}};</script></body>
+</html>
