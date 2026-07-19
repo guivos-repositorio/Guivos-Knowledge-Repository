@@ -2,7 +2,7 @@
 id: GPA-000
 title: Arquitetura de Produtos da Guivos
 status: consolidated
-version: 1.29.0
+version: 1.30.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -99,6 +99,10 @@ Todas as nove capacidades estão funcionalmente concluídas. O `PAS-001 1.0.0` e
 ### Publicação controlada do PAS-001
 
 `PAS-001-PUBLICATION-001 1.0.0` promove o núcleo arquitetural validado para `PAS-001 1.0.0 active`, classifica a candidata como histórica e encerra o ciclo de consolidação sem criar tag ou release.
+
+### Mapa Final de Capacidades
+
+[`PAS-001-CAPABILITY-MAP-001 1.0.0`](pas-001-guivos-journey-mapa-final-capacidades.md) apresenta as nove capacidades, perguntas centrais, responsabilidades, entradas, saídas, fronteiras, relações não lineares, contratos e critérios de reabertura. O próximo ponto é `PAS-001-ENGINEERING-HANDOFF-001`.
 
 ### Capacidade 01 — Captura de Contexto
 
