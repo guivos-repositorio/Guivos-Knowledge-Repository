@@ -31,7 +31,21 @@ jobs:
           set -euo pipefail
           git fetch --no-tags --depth=1 --quiet origin main
           test "$(git rev-parse origin/main)" = "4289faad709eeed326042de263d1682d13d84243"
-          sed -i 's#(product-architecture/pas-001-guivos-journey-publicacao-controlada.md)#(docs/product-architecture/pas-001-guivos-journey-publicacao-controlada.md)#g; s#(product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)#(docs/product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)#g' scripts/tmp_sync_pas001_capability_map.py
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('scripts/tmp_sync_pas001_capability_map.py')
+          text = path.read_text(encoding='utf-8')
+          start, tail = text.split('def update_readme() -> None:', 1)
+          block, end = tail.split('def update_home() -> None:', 1)
+          block = block.replace(
+              '(product-architecture/pas-001-guivos-journey-publicacao-controlada.md)',
+              '(docs/product-architecture/pas-001-guivos-journey-publicacao-controlada.md)',
+          ).replace(
+              '(product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)',
+              '(docs/product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md)',
+          )
+          path.write_text(start + 'def update_readme() -> None:' + block + 'def update_home() -> None:' + end, encoding='utf-8')
+          PY
           set +e
           python scripts/tmp_sync_pas001_capability_map.py > tmp-pas001-capability-map-diagnostic.txt 2>&1
           rc=$?
