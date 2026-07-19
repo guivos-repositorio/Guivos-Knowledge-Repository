@@ -1,10 +1,8 @@
 Traceback (most recent call last):
   File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 244, in <module>
     main()
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 235, in main
-    update_home()
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 150, in update_home
-    replace_once(
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 22, in replace_once
-    raise RuntimeError(f"{path}: expected one anchor, found {text.count(old)}: {old[:80]!r}")
-RuntimeError: docs/index.md: expected one anchor, found 0: '- [Publicação Controlada do PAS-001 1.0.0](docs/product-architecture/pas-001-gui'
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 238, in main
+    validate_final()
+  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 220, in validate_final
+    raise RuntimeError(f"{path} missing capability map link")
+RuntimeError: /home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/docs/product-architecture/index.md missing capability map link
