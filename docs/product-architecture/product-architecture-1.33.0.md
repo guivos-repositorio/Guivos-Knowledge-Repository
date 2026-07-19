@@ -13,6 +13,7 @@ related:
   - PAS-001-CAPABILITY-MAP-001
   - PAS-001-ENGINEERING-HANDOFF-001
   - PAS-001-CC-UIC-001
+  - PAS-001-CC-UIC-DOMAIN-001
 ---
 
 # Arquitetura de Produtos — Estado Efetivo 1.33.0
@@ -26,25 +27,39 @@ related:
 | PAS-001 | Active 1.0.0 |
 | Mapa Final | Active 1.0.1 |
 | Engineering Handoff | Draft 0.2.0 efetivo |
-| UIC-01 — Captura de Contexto | Draft 0.1.0 |
+| UIC-01 — Captura de Contexto | Draft 0.2.0 — Domain model proposed |
+| Progresso técnico da UIC-01 | 40% |
 | Capacidades 01–09 | Functionally complete |
 | Frente operacional | Product Engineering |
-| Marco vigente | M5.12 |
+| Marco vigente | M5.13 |
 
-## Novo ativo normativo
+## Ativos normativos incorporados
 
-[`PAS-001-CC-UIC-001`](pas-001-captura-de-contexto-engineering-unit.md) traduz a Captura de Contexto para uma unidade técnica rastreável contendo:
+A frente técnica da Captura de Contexto passa a ser composta por:
 
-- autoridade e decisões proibidas;
-- agregados candidatos;
-- invariantes iniciais;
-- estados e transições;
-- comandos e eventos;
-- produtores e consumidores;
-- persistência, busca e grafo;
-- segurança, privacidade e Intelligence;
-- observabilidade e testes;
-- dependências, riscos e critérios de prontidão.
+- [`PAS-001-CC-UIC-001`](pas-001-captura-de-contexto-engineering-unit.md), fundação da unidade;
+- [`PAS-001-CC-UIC-001 — Estado Efetivo 0.2.0`](pas-001-captura-de-contexto-engineering-unit-0.2.0.md), maturidade técnica vigente;
+- [`PAS-001-CC-UIC-DOMAIN-001`](pas-001-captura-de-contexto-domain-model.md), modelo de domínio proposto.
+
+O modelo confirma:
+
+- `CaptureRecord` como Aggregate Root;
+- `CaptureSession` como entidade interna;
+- identidade permanente da entrada original;
+- entidades e objetos de valor;
+- invariantes estruturais e por comando;
+- consistência imediata e eventual;
+- concorrência otimista;
+- idempotência;
+- reconstrução;
+- propagação de correção e revogação.
+
+## Gaps efetivamente resolvidos
+
+| Gap | Estado |
+|---|---|
+| `UIC01-GAP-001` | Resolved |
+| `UIC01-GAP-002` | Resolved |
 
 ## Autoridades preservadas
 
@@ -61,11 +76,13 @@ A UIC-01 é uma tradução técnica subordinada e não reabre a arquitetura func
 
 ## Próximo ponto
 
-> Aprofundar agregados, identidades e invariantes da Captura de Contexto para preparar `Domain model proposed`.
+> Elevar a UIC-01 para `Lifecycle technically defined — 60%`.
 
 Prioridades:
 
-1. confirmar o limite entre `CaptureRecord` e `CaptureSession`;
-2. definir a identidade técnica da entrada original;
-3. formalizar invariantes por comando;
-4. classificar consistência, concorrência e reconstrução.
+1. máquinas de estado independentes;
+2. matriz completa de transições;
+3. precondições e invariantes por transição;
+4. compensações e timeouts;
+5. falhas parciais e retomadas;
+6. testes completos de ciclo.
