@@ -2,9 +2,9 @@
 id: PAS-001-CAPABILITY-MAP-001
 title: Mapa Final de Capacidades do Guivos Journey
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Guivos
-last_updated: 2026-07-18
+last_updated: 2026-07-19
 parent: PAS-001
 normative: true
 related:
@@ -22,13 +22,14 @@ related:
   - PAS-001-EC-CONTRACT-001
   - GLPA-001
   - GIA-000
+  - GE2-SYNC-008
 ---
 
 # PAS-001-CAPABILITY-MAP-001 — Mapa Final de Capacidades do Guivos Journey
 
-> **Estado:** `Active 1.0.0`.
+> **Estado:** `Active 1.0.1`.
 >
-> Visão normativa, executiva e navegável das nove capacidades funcionalmente concluídas do Guivos Journey. O `PAS-001 1.0.0` permanece como autoridade global; os nove contratos finais e as 54 extensões normativas permanecem como autoridades especializadas.
+> Visão normativa, executiva e navegável das nove capacidades funcionalmente concluídas do Guivos Journey. O [`PAS-001 1.0.0`](pas-001-guivos-journey.md) permanece como autoridade global; os nove contratos finais e as 54 extensões normativas permanecem como autoridades especializadas.
 
 # 5021. Autoridade e finalidade
 
@@ -51,19 +52,19 @@ O mapa sintetiza responsabilidades, relações, entradas, saídas, fronteiras, c
 11. Interesses comerciais não determinam relevância.
 12. Contratos finais permanecem como autoridades especializadas.
 
-# 5023. Visão executiva
+# 5023. Visão executiva e autoridades
 
-| Nº | Capacidade | Verbo | Responsabilidade | Estado | Contrato final |
-|---:|---|---|---|---|---|
-| 01 | Captura de Contexto | Compreender | Iniciar compreensão autorizada | Functionally complete | `PAS-001-CC-CONTRACT-001` |
-| 02 | Contexto Vivo | Representar | Manter representação contextual atual | Functionally complete | `PAS-001-CV-CONTRACT-001` |
-| 03 | Objetivos | Direcionar | Governar direções assumidas | Functionally complete | `PAS-001-OBJ-CONTRACT-001` |
-| 04 | Eventos de Vida | Reconhecer mudança | Governar mudanças relevantes | Functionally complete | `PAS-001-EV-CONTRACT-001` |
-| 05 | Próximos Passos | Movimentar | Governar movimentos possíveis | Functionally complete | `PAS-001-PP-CONTRACT-001` |
-| 06 | Oportunidades Ativas | Encontrar meios | Governar meios admissíveis | Functionally complete | `PAS-001-OA-CONTRACT-001` |
-| 07 | Intervenções Contextuais | Manifestar ou silenciar | Governar manifestação, espera ou silêncio | Functionally complete | `PAS-001-IC-CONTRACT-001` |
-| 08 | Experiências | Reconhecer o vivido | Governar aquilo que foi efetivamente vivido | Functionally complete | `PAS-001-EXP-CONTRACT-001` |
-| 09 | Evolução Contínua | Compreender trajetória | Governar mudanças ao longo do tempo | Functionally complete | `PAS-001-EC-CONTRACT-001` |
+| Nº | Capacidade | Verbo | Responsabilidade | Estado | PAS-001 | Contrato final |
+|---:|---|---|---|---|---|---|
+| 01 | Captura de Contexto | Compreender | Iniciar compreensão autorizada | Functionally complete | [Seções 11, 12.1 e 13.1](pas-001-guivos-journey.md#121-captura-de-contexto) | [`PAS-001-CC-CONTRACT-001`](pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md) |
+| 02 | Contexto Vivo | Representar | Manter representação contextual atual | Functionally complete | [Seções 11, 12.2 e 13.2](pas-001-guivos-journey.md#122-contexto-vivo) | [`PAS-001-CV-CONTRACT-001`](pas-001-contexto-vivo-cenarios-contrato-final.md) |
+| 03 | Objetivos | Direcionar | Governar direções assumidas | Functionally complete | [Seções 11, 12.3 e 13.3](pas-001-guivos-journey.md#123-objetivos) | [`PAS-001-OBJ-CONTRACT-001`](pas-001-objetivos-kpis-cenarios-contrato-final.md) |
+| 04 | Eventos de Vida | Reconhecer mudança | Governar mudanças relevantes | Functionally complete | [Seções 11, 12.4 e 13.4](pas-001-guivos-journey.md#124-eventos-de-vida) | [`PAS-001-EV-CONTRACT-001`](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md) |
+| 05 | Próximos Passos | Movimentar | Governar movimentos possíveis | Functionally complete | [Seções 11, 12.5 e 13.5](pas-001-guivos-journey.md#125-proximos-passos) | [`PAS-001-PP-CONTRACT-001`](pas-001-proximos-passos-kpis-cenarios-contrato-final.md) |
+| 06 | Oportunidades Ativas | Encontrar meios | Governar meios admissíveis | Functionally complete | [Seções 11, 12.6 e 13.6](pas-001-guivos-journey.md#126-oportunidades-ativas) | [`PAS-001-OA-CONTRACT-001`](pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md) |
+| 07 | Intervenções Contextuais | Manifestar ou silenciar | Governar manifestação, espera ou silêncio | Functionally complete | [Seções 11, 12.7 e 13.7](pas-001-guivos-journey.md#127-intervencoes-contextuais) | [`PAS-001-IC-CONTRACT-001`](pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md) |
+| 08 | Experiências | Reconhecer o vivido | Governar aquilo que foi efetivamente vivido | Functionally complete | [Seções 11, 12.8 e 13.8](pas-001-guivos-journey.md#128-experiencias) | [`PAS-001-EXP-CONTRACT-001`](pas-001-experiencias-kpis-cenarios-contrato-final.md) |
+| 09 | Evolução Contínua | Compreender trajetória | Governar mudanças ao longo do tempo | Functionally complete | [Seções 11, 12.9 e 13.9](pas-001-guivos-journey.md#129-evolucao-continua) | [`PAS-001-EC-CONTRACT-001`](pas-001-evolucao-continua-kpis-cenarios-contrato-final.md) |
 
 # 5024. Mapa visual
 
@@ -107,7 +108,90 @@ O diagrama representa relações possíveis, não fluxo obrigatório, funil come
 | Experiências | O que foi efetivamente vivido por este participante, em qual contexto, com qual forma de participação e o que pode legitimamente ser reconhecido a partir dessa vivência? |
 | Evolução Contínua | Que mudanças podem ser legitimamente reconhecidas na trajetória deste participante ao longo do tempo, em relação a quais direções ou referências, com quais evidências, limitações e incertezas? |
 
-# 5026. Entradas, saídas e limites
+# 5026. Extensões normativas navegáveis
+
+## 01 — Captura de Contexto
+
+- [`PAS-001-CC-LIFECYCLE-001`](pas-001-captura-de-contexto-ciclo-de-vida.md)
+- [`PAS-001-CC-EVENT-INTEGRATION-001`](pas-001-captura-de-contexto-eventos-integracoes-funcionais.md)
+- [`PAS-001-CC-CONTRACT-001`](pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md)
+
+## 02 — Contexto Vivo
+
+- [`PAS-001-CV-STATE-001`](pas-001-contexto-vivo-estados-dimensionais.md)
+- [`PAS-001-CV-UPDATE-001`](pas-001-contexto-vivo-atualizacao-envelhecimento.md)
+- [`PAS-001-CV-CONFLICT-001`](pas-001-contexto-vivo-resolucao-conflitos.md)
+- [`PAS-001-CV-VIEW-001`](pas-001-meu-contexto-hoje.md)
+- [`PAS-001-CV-EVENT-001`](pas-001-contexto-vivo-eventos-funcionais.md)
+- [`PAS-001-CV-INTEGRATION-001`](pas-001-contexto-vivo-integracoes-funcionais.md)
+- [`PAS-001-CV-KPI-001`](pas-001-contexto-vivo-kpis-desempenho.md)
+- [`PAS-001-CV-CONTRACT-001`](pas-001-contexto-vivo-cenarios-contrato-final.md)
+
+## 03 — Objetivos
+
+- [`PAS-001-OBJ-FOUNDATION-001`](pas-001-objetivos-fundamentos-iniciais.md)
+- [`PAS-001-OBJ-LIFECYCLE-001`](pas-001-objetivos-ciclo-de-vida.md)
+- [`PAS-001-OBJ-PROGRESS-001`](pas-001-objetivos-progresso-e-conclusao.md)
+- [`PAS-001-OBJ-VIEW-001`](pas-001-meus-objetivos.md)
+- [`PAS-001-OBJ-EVENT-001`](pas-001-objetivos-eventos-funcionais.md)
+- [`PAS-001-OBJ-INTEGRATION-001`](pas-001-objetivos-integracoes-funcionais.md)
+- [`PAS-001-OBJ-CONTRACT-001`](pas-001-objetivos-kpis-cenarios-contrato-final.md)
+
+## 04 — Eventos de Vida
+
+- [`PAS-001-EV-FOUNDATION-001`](pas-001-eventos-de-vida-fundamentos-iniciais.md)
+- [`PAS-001-EV-LIFECYCLE-001`](pas-001-eventos-de-vida-ciclo-de-vida.md)
+- [`PAS-001-EV-VIEW-001`](pas-001-eventos-de-vida-visualizacao-controle.md)
+- [`PAS-001-EV-EVENT-001`](pas-001-eventos-de-vida-eventos-funcionais.md)
+- [`PAS-001-EV-INTEGRATION-001`](pas-001-eventos-de-vida-integracoes-funcionais.md)
+- [`PAS-001-EV-CONTRACT-001`](pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md)
+
+## 05 — Próximos Passos
+
+- [`PAS-001-PP-FOUNDATION-001`](pas-001-proximos-passos-fundamentos-iniciais.md)
+- [`PAS-001-PP-LIFECYCLE-001`](pas-001-proximos-passos-ciclo-de-vida.md)
+- [`PAS-001-PP-VIEW-001`](pas-001-proximos-passos-visualizacao-controle.md)
+- [`PAS-001-PP-EVENT-001`](pas-001-proximos-passos-eventos-funcionais.md)
+- [`PAS-001-PP-INTEGRATION-001`](pas-001-proximos-passos-integracoes-funcionais.md)
+- [`PAS-001-PP-CONTRACT-001`](pas-001-proximos-passos-kpis-cenarios-contrato-final.md)
+
+## 06 — Oportunidades Ativas
+
+- [`PAS-001-OA-FOUNDATION-001`](pas-001-oportunidades-ativas-fundamentos-iniciais.md)
+- [`PAS-001-OA-LIFECYCLE-001`](pas-001-oportunidades-ativas-ciclo-de-vida.md)
+- [`PAS-001-OA-VIEW-001`](pas-001-oportunidades-ativas-visualizacao-controle.md)
+- [`PAS-001-OA-EVENT-001`](pas-001-oportunidades-ativas-eventos-funcionais.md)
+- [`PAS-001-OA-INTEGRATION-001`](pas-001-oportunidades-ativas-integracoes-funcionais.md)
+- [`PAS-001-OA-CONTRACT-001`](pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md)
+
+## 07 — Intervenções Contextuais
+
+- [`PAS-001-IC-FOUNDATION-001`](pas-001-intervencoes-contextuais-fundamentos-iniciais.md)
+- [`PAS-001-IC-LIFECYCLE-001`](pas-001-intervencoes-contextuais-ciclo-de-vida.md)
+- [`PAS-001-IC-VIEW-001`](pas-001-intervencoes-contextuais-visualizacao-controle.md)
+- [`PAS-001-IC-EVENT-001`](pas-001-intervencoes-contextuais-eventos-funcionais.md)
+- [`PAS-001-IC-INTEGRATION-001`](pas-001-intervencoes-contextuais-integracoes-funcionais.md)
+- [`PAS-001-IC-CONTRACT-001`](pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md)
+
+## 08 — Experiências
+
+- [`PAS-001-EXP-FOUNDATION-001`](pas-001-experiencias-fundamentos-iniciais.md)
+- [`PAS-001-EXP-LIFECYCLE-001`](pas-001-experiencias-ciclo-de-vida.md)
+- [`PAS-001-EXP-VIEW-001`](pas-001-experiencias-visualizacao-controle.md)
+- [`PAS-001-EXP-EVENT-001`](pas-001-experiencias-eventos-funcionais.md)
+- [`PAS-001-EXP-INTEGRATION-001`](pas-001-experiencias-integracoes-funcionais.md)
+- [`PAS-001-EXP-CONTRACT-001`](pas-001-experiencias-kpis-cenarios-contrato-final.md)
+
+## 09 — Evolução Contínua
+
+- [`PAS-001-EC-FOUNDATION-001`](pas-001-evolucao-continua-fundamentos-iniciais.md)
+- [`PAS-001-EC-LIFECYCLE-001`](pas-001-evolucao-continua-ciclo-de-vida.md)
+- [`PAS-001-EC-VIEW-001`](pas-001-evolucao-continua-visualizacao-controle.md)
+- [`PAS-001-EC-EVENT-001`](pas-001-evolucao-continua-eventos-funcionais.md)
+- [`PAS-001-EC-INTEGRATION-001`](pas-001-evolucao-continua-integracoes-funcionais.md)
+- [`PAS-001-EC-CONTRACT-001`](pas-001-evolucao-continua-kpis-cenarios-contrato-final.md)
+
+# 5027. Entradas, saídas e limites
 
 | Capacidade | Recebe tipicamente | Produz em nível de mapa | Não decide ou não representa |
 |---|---|---|---|
@@ -121,7 +205,7 @@ O diagrama representa relações possíveis, não fluxo obrigatório, funil come
 | Experiências | Ocorrência, participação, evidências e percepções | Registro do que foi efetivamente vivido | Evolução automática ou transformação presumida |
 | Evolução Contínua | Experiências, observações, baselines e evidências | Interpretações e reconhecimentos de trajetória | Valor humano, mérito, ranking ou causalidade presumida |
 
-# 5027. Fronteiras decisórias
+# 5028. Fronteiras decisórias
 
 | Origem | Elemento disponibilizado | Decisão preservada na capacidade receptora |
 |---|---|---|
@@ -136,11 +220,11 @@ O diagrama representa relações possíveis, não fluxo obrigatório, funil come
 | Experiências | Evidência do vivido | Evolução Contínua decide se existe mudança reconhecível |
 | Evolução Contínua | Mudança reconhecida | Contexto Vivo decide incorporação à representação atual |
 
-# 5028. Relações não lineares
+# 5029. Relações não lineares
 
 Evento de Vida pode provocar revisão de Objetivo; Experiência pode alterar Contexto Vivo sem reconhecimento de Evolução; Contexto Vivo pode limitar Intervenções; contestação pode retornar a capacidades anteriores; revogação pode interromper múltiplos consumidores; falha pode encerrar um fluxo; ausência de oportunidade pode ser resultado válido; silêncio pode ser resultado final.
 
-# 5029. Relações com as camadas
+# 5030. Relações com as camadas
 
 ## Guivos Intelligence
 
@@ -154,9 +238,9 @@ Business, Mall, Travel, Media e Ads fornecem fatos, serviços, produtos, conteú
 
 Sustenta identidade, autorização, persistência, eventos, APIs, integrações, criptografia, auditoria, idempotência, observabilidade, correção e revogação. Não redefine significado funcional.
 
-# 5030. Navegação e camadas de leitura
+# 5031. Navegação e camadas de leitura
 
-Cada capacidade deve permitir acesso à seção do `PAS-001`, ao contrato final, às extensões, à pergunta central, às fronteiras, aos critérios de reabertura e ao estado de conclusão.
+Cada capacidade permite acesso ao `PAS-001`, ao contrato final, às extensões normativas, à pergunta central, às fronteiras, aos critérios de reabertura e ao estado de conclusão.
 
 - **Executiva:** problema, responsabilidade, estado e relação principal.
 - **Produto e design:** perguntas, controles, limites e superfícies possíveis.
@@ -164,7 +248,7 @@ Cada capacidade deve permitir acesso à seção do `PAS-001`, ao contrato final,
 - **Intelligence e dados:** autoridade, candidatos, confiança, incerteza e proibições.
 - **Governança:** documentos, reabertura, proteção e rastreabilidade.
 
-# 5031. Estados e reabertura
+# 5032. Estados e reabertura
 
 Estados possíveis: `Defined`, `In specification`, `Functionally complete`, `Reopened`, `Superseded` e `Historical`. Nesta versão, todas as nove capacidades estão `Functionally complete`.
 
@@ -172,7 +256,7 @@ O mapa não reabre capacidade. Registra gatilho, capacidade afetada, contrato co
 
 Permanecem aplicáveis os critérios globais do `PAS-001`: nova capacidade, mudança de camada, conflito entre contratos, novo uso sensível, regressão da autonomia, transferência indevida de autoridade, obrigação regulatória estrutural ou proteção insuficiente.
 
-# 5032. Atualização e proibições
+# 5033. Atualização e proibições
 
 - **Patch:** correção de link, texto ou visual.
 - **Minor:** nova visão ou relação compatível.
@@ -180,31 +264,27 @@ Permanecem aplicáveis os critérios globais do `PAS-001`: nova capacidade, muda
 
 O mapa não deve criar fluxo obrigatório, funil, score, nova capacidade visual, transferência de decisões, duplicação de contratos, Intelligence decisora, Platform normativa, relevância comercial, Evolução automática, intervenção automática, silêncio como falha ou apagamento histórico.
 
-# 5033. Critérios de aceite
+# 5034. Critérios de aceite
 
 O mapa deve conter exatamente nove capacidades na ordem canônica; preservar perguntas, responsabilidades, contratos e 54 extensões; apresentar visão executiva, diagrama, entradas, saídas e fronteiras; preservar não linearidade; apresentar as relações entre camadas; não alterar `PAS-001 1.0.0`, contratos ou extensões; não criar percentual global; possuir links e Mermaid válidos; sincronizar artefatos e definir o próximo ponto.
 
-# 5034. Versionamento e estado resultante
+# 5035. Versionamento e estado resultante
 
 - `PAS-001`: permanece `1.0.0`;
-- `PAS-001-CAPABILITY-MAP-001`: `1.0.0`;
-- Arquitetura de Produtos: `1.30.0`;
-- Roadmap: `11.11.0`;
-- Knowledge Board: `11.11.0`;
-- Matriz de Consolidação Canônica: `1.30.0`;
-- Changelog: `0.58.0`.
+- `PAS-001-CAPABILITY-MAP-001`: `1.0.1`;
+- correção registrada por `GE2-SYNC-008 1.0.0`.
 
 | Ativo | Estado |
 |---|---|
 | PAS-001 | Active 1.0.0 |
-| Mapa Final de Capacidades | Active 1.0.0 |
+| Mapa Final de Capacidades | Active 1.0.1 |
 | Capacidades 01–09 | Functionally complete |
 | Contratos finais | Active 1.0.0 |
 | Extensões normativas | 54 vigentes |
 | Lacuna de mapa executivo | Encerrada |
-| Arquitetura funcional | Publicada e navegável |
+| Navegação normativa | Implementada |
 
-# 5035. Próximo ponto exato
+# 5036. Próximo ponto exato
 
 > **`PAS-001-ENGINEERING-HANDOFF-001 — Handoff Arquitetural do Guivos Journey para Product Engineering`**
 
@@ -212,7 +292,7 @@ O Handoff deve transformar a arquitetura funcional em plano de engenharia por ca
 
 ```text
 PAS-001 1.0.0
-→ PAS-001-CAPABILITY-MAP-001
+→ PAS-001-CAPABILITY-MAP-001 1.0.1
 → mapa executivo e navegável
 → PAS-001-ENGINEERING-HANDOFF-001
 → planejamento técnico por capacidade
