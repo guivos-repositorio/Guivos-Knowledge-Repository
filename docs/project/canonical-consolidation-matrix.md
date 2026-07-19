@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.28.0
+version: 1.29.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -368,19 +368,19 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` aplica a consolidação federada. `PAS-001-RELEASE-VALIDATION-001 1.0.0` confirma ausência de regressões, preserva o `PAS-001 0.5.0`, os nove contratos e as 54 extensões, e emite `Ready for publication` condicionado à aprovação expressa.
+Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` consolidou a edição federada e agora é histórica. `PAS-001-RELEASE-VALIDATION-001 1.0.0` confirmou ausência de regressões. `PAS-001-PUBLICATION-001 1.0.0` promoveu a edição validada para `PAS-001 1.0.0 active`, preservando os nove contratos e as 54 extensões.
 
 ## Edição candidata do PAS-001
 
 | Conceito | Decisão | Situação |
 |---|---|---|
-| PAS-001 0.5.0 | Manter | Permanece versão canônica até aprovação formal de publicação |
-| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Manter como candidata | Consolida filosofia, camadas, princípios, invariantes, capacidades, perguntas, fronteiras e autoridade federada |
+| PAS-001 0.5.0 | Historical only | Versão substituída e preservada integralmente no histórico do Git |
+| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Historical only — promoted | Candidata validada cujo núcleo arquitetural originou o PAS-001 1.0.0 |
 | Contratos e extensões especializadas | Manter | Permanecem autoridade detalhada e não são duplicados integralmente |
 | Pergunta central do Contexto Vivo | Refinar | Remove a formulação totalizante e preserva representação revisável do contexto atual |
 | Pergunta central de Objetivos | Refinar | Substitui desejo de evoluir por direções conscientemente assumidas |
-| Estado de prontidão | Refinar | `Ready for publication — PAS-001 1.0.0 publication requires explicit approval` |
-| PAS-001-RELEASE-VALIDATION-001 1.0.0 | Manter | Autoridade da validação de release e do parecer condicionado |
+| Estado canônico | Supersede | `Published — PAS-001 1.0.0 active` |
+| PAS-001-RELEASE-VALIDATION-001 1.0.0 | Manter | Autoridade histórica da validação que autorizou a publicação |
 
 ## Validação de release do PAS-001
 
@@ -389,15 +389,27 @@ Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 
 | 25 gates de release | Manter | Todos aprovados, sem regressão dos 15 gates anteriores |
 | 35 critérios da candidata | Manter | Todos atendidos |
 | 30 comportamentos proibidos | Manter | Todos bloqueados |
-| PAS-001 0.5.0 | Manter | Permanece canônico até aprovação expressa |
-| Publicação controlada | Pendente de aprovação | Próxima frente normativa |
+| PAS-001 0.5.0 | Historical only | Substituído por PAS-001 1.0.0 e preservado no histórico |
+| Publicação controlada | Concluída | Registrada por PAS-001-PUBLICATION-001 1.0.0 |
 
 ## Próxima revisão
 
-Executar `PAS-001-PUBLICATION-001` somente após aprovação expressa, promovendo a candidata de forma controlada, preservando histórico, sincronizando artefatos e validando rollback.
+Executar `PAS-001-CAPABILITY-MAP-001`, produzindo o Mapa Final de Capacidades do Guivos Journey a partir do `PAS-001 1.0.0` publicado e de seus contratos especializados.
 
 ## Auditoria final do PAS-001
 
 `PAS-001-AUDIT-001 1.0.0` permanece como autoridade da consolidação. Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.
 
-Parecer vigente: `Ready for publication — PAS-001 1.0.0 publication requires explicit approval`.
+Estado vigente: `Published — PAS-001 1.0.0 active`.
+
+## PAS-001 — Publicação Controlada 1.0.0
+
+| Objeto | Decisão | Autoridade vigente | Situação |
+|---|---|---|---|
+| PAS-001 0.5.0 | Historical only | Histórico do Git, reconciliação e auditoria | Substituído pela edição 1.0.0 |
+| PAS-001-CANDIDATE-001 1.0.0-rc.1 | Historical only — promoted | PAS-001-PUBLICATION-001 | Núcleo arquitetural promovido |
+| PAS-001 1.0.0 | Maintain | Arquivo canônico `pas-001-guivos-journey.md` | Active e normativo |
+| Contratos finais | Maintain | Nove documentos `*-CONTRACT-001` | Autoridades especializadas |
+| Extensões normativas | Maintain | 54 extensões das Capacidades 01–09 | Vigentes |
+| Prontidão | Supersede | PAS-001-PUBLICATION-001 | `Published — PAS-001 1.0.0 active` |
+| Próximo ponto | Refine | Roadmap e Knowledge Board | `PAS-001-CAPABILITY-MAP-001` |

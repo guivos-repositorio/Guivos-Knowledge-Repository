@@ -3,6 +3,19 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+## 0.57.0 — PAS-001 Controlled Publication
+
+- Publicação de `PAS-001 1.0.0` como especificação arquitetural canônica ativa.
+- Promoção das 28 seções arquiteturais validadas da candidata.
+- Classificação de `PAS-001-CANDIDATE-001 1.0.0-rc.1` como histórica e promovida.
+- Criação de `PAS-001-PUBLICATION-001 1.0.0`.
+- Preservação dos nove contratos finais e das 54 extensões especializadas.
+- Arquitetura e Matriz `1.29.0`; Roadmap e Board `11.10.0`.
+- Estado `Published — PAS-001 1.0.0 active`.
+- Próximo ponto: `PAS-001-CAPABILITY-MAP-001`.
+- Nenhuma tag ou GitHub Release criada.
+
+
 ## 0.56.0 — PAS-001 Release Validation
 
 - Criação de `PAS-001-RELEASE-VALIDATION-001 1.0.0`.

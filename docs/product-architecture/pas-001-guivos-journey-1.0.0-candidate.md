@@ -1,16 +1,21 @@
 ---
 id: PAS-001-CANDIDATE-001
 title: Edição Consolidada e Federada do PAS-001 — Guivos Journey 1.0.0
-status: candidate
+status: historical
 version: 1.0.0-rc.1
 owner: Guivos
 last_updated: 2026-07-18
 parent: PAS-001
 normative: true
+promoted_to: PAS-001
+promoted_version: 1.0.0
+promotion_record: PAS-001-PUBLICATION-001
 related:
   - PAS-001
   - PAS-001-RECON-001
   - PAS-001-AUDIT-001
+  - PAS-001-RELEASE-VALIDATION-001
+  - PAS-001-PUBLICATION-001
   - GLPA-001
   - GIA-000
   - PAS-001-CC-CONTRACT-001
@@ -26,9 +31,9 @@ related:
 
 # PAS-001-CANDIDATE-001 — Edição Consolidada e Federada do PAS-001 — Guivos Journey 1.0.0
 
-> **Estado da candidata:** `Candidate ready for validation — PAS-001 1.0.0 publication not yet authorized.`
+> **Estado histórico:** `Historical 1.0.0-rc.1 — promoted to PAS-001 1.0.0.`
 >
-> Esta edição candidata não substitui o arquivo canônico `PAS-001 0.5.0`, não autoriza publicação, tag, release ou lançamento e deverá ser validada por `PAS-001-RELEASE-VALIDATION-001`.
+> Esta candidata foi validada por `PAS-001-RELEASE-VALIDATION-001` e seu núcleo arquitetural foi promovido ao arquivo canônico por `PAS-001-PUBLICATION-001`. Ela permanece disponível para rastreabilidade e não constitui a versão operacional vigente.
 
 # 1. Autoridade da especificação
 

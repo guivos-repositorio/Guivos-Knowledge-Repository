@@ -1,7 +1,7 @@
 ---
 title: Knowledge Board
 status: active
-version: 11.9.0
+version: 11.10.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -19,11 +19,12 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | M5.9 — Chat Continuity and Repository Reconciliation Completed | Completed | Preservar continuidade entre conversas e sincronizar o estado vigente |
 | GE2-SYNC-007 | Completed 1.0.0 | Reconciliar conversa anterior, GKR e ponto de retomada |
 | AR-001 | Completed 0.5.0 | Revisar consistência, atualização e diagramas |
-| PAS-001 — Guivos Journey | Draft 0.5.0 — Active | Especificar a Experience Layer |
+| PAS-001 — Guivos Journey | Active 1.0.0 | Governar a arquitetura canônica da Experience Layer |
 | PAS-001-RECON-001 | Active 1.0.0 | Reconciliar autoridade, supersessão e prontidão do Journey |
 | PAS-001-AUDIT-001 | Active 1.0.0 | Auditar os 15 gates e autorizar a consolidação editorial do PAS-001 |
-| PAS-001-CANDIDATE-001 | Candidate 1.0.0-rc.1 | Consolidar a edição federada candidata do Guivos Journey |
-| PAS-001-RELEASE-VALIDATION-001 | Active 1.0.0 | Validar a candidata e emitir parecer de publicação |
+| PAS-001-CANDIDATE-001 | Historical 1.0.0-rc.1 — promoted | Preservar a edição candidata que originou o PAS-001 1.0.0 |
+| PAS-001-RELEASE-VALIDATION-001 | Active 1.0.0 | Preservar a validação que autorizou a publicação |
+| PAS-001-PUBLICATION-001 | Active 1.0.0 | Registrar a publicação controlada do PAS-001 1.0.0 |
 | PAS-001-CC-LIFECYCLE-001 | Active 1.0.0 | Consolidar ciclo de vida e estados funcionais da Captura de Contexto |
 | PAS-001-CC-EVENT-INTEGRATION-001 | Active 1.0.0 | Consolidar eventos e integrações funcionais da Captura de Contexto |
 | PAS-001-CC-CONTRACT-001 | Active 1.0.0 | Consolidar KPIs, guardrails, cenários e contrato final da Captura de Contexto |
@@ -67,15 +68,15 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Campo | Estado |
 |---|---|
 | Frente operacional | `Product Engineering` |
-| Especificação-base | `PAS-001 — Guivos Journey 0.5.0` |
+| Especificação arquitetural | `PAS-001 — Guivos Journey 1.0.0` |
 | Reconciliação vigente | `PAS-001-RECON-001 1.0.0` |
-| Parecer de prontidão | `Ready for publication — PAS-001 1.0.0 publication requires explicit approval` |
-| Lacuna bloqueante | Aprovação expressa e execução controlada de `PAS-001-PUBLICATION-001` |
+| Estado canônico | `Published — PAS-001 1.0.0 active` |
+| Lacuna bloqueante da arquitetura funcional | Nenhuma |
 | Extensões vigentes da Capacidade 01 | `PAS-001-CC-LIFECYCLE-001 1.0.0`, `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` e `PAS-001-CC-CONTRACT-001 1.0.0`, etapa `3 de 3` concluída |
 | Extensão restante da Capacidade 01 | Nenhuma |
 | Capacidades concluídas | `01 — Captura de Contexto`, `02 — Contexto Vivo`, `03 — Objetivos`, `04 — Eventos de Vida`, `05 — Próximos Passos`, `06 — Oportunidades Ativas`, `07 — Intervenções Contextuais`, `08 — Experiências` e `09 — Evolução Contínua` |
-| Frente ativa | `PAS-001-PUBLICATION-001` — Publicação Controlada do PAS-001 — Guivos Journey 1.0.0 |
-| Estado da frente ativa | Validação concluída; publicação depende de aprovação expressa |
+| Frente ativa | `PAS-001-CAPABILITY-MAP-001` — Mapa Final de Capacidades do Guivos Journey |
+| Estado da frente ativa | Publicação concluída; mapa executivo e navegável pendente |
 | Extensões normativas de Experiências | `PAS-001-EXP-FOUNDATION-001 1.0.0`, `PAS-001-EXP-LIFECYCLE-001 1.0.0`, `PAS-001-EXP-VIEW-001 1.0.0`, `PAS-001-EXP-EVENT-001 1.0.0`, `PAS-001-EXP-INTEGRATION-001 1.0.0` e `PAS-001-EXP-CONTRACT-001 1.0.0` |
 | Extensões normativas de Evolução Contínua | `PAS-001-EC-FOUNDATION-001 1.0.0`, `PAS-001-EC-LIFECYCLE-001 1.0.0`, `PAS-001-EC-VIEW-001 1.0.0`, `PAS-001-EC-EVENT-001 1.0.0`, `PAS-001-EC-INTEGRATION-001 1.0.0` e `PAS-001-EC-CONTRACT-001 1.0.0` |
 | Progresso editorial de Evolução Contínua | `100%` |
@@ -84,7 +85,7 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 | Intelligence Architecture | `GIA-000 1.3.0` |
 | Glossário | `1.8.0` |
 | Documento público | `GOG-001 4.2.1` |
-| Foco imediato | Preparar a promoção controlada da candidata, sem alterar o canônico antes da aprovação expressa |
+| Foco imediato | Consolidar o Mapa Final de Capacidades a partir do PAS-001 1.0.0 publicado |
 
 ## Auditoria final do PAS-001
 
@@ -92,11 +93,15 @@ Painel oficial de acompanhamento do patrimônio intelectual, arquitetural, públ
 
 ## Edição candidata do PAS-001
 
-`PAS-001-CANDIDATE-001 1.0.0-rc.1` está criada e pronta para validação. O `PAS-001 0.5.0` permanece canônico e a publicação de `1.0.0` continua condicionada.
+`PAS-001-CANDIDATE-001 1.0.0-rc.1` permanece histórica após a promoção de seu núcleo ao `PAS-001 1.0.0`.
 
 ## Validação de release do PAS-001
 
-`PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou os 25 gates, os 35 critérios de aceite e o bloqueio dos 30 comportamentos proibidos. O `PAS-001 0.5.0` permanece canônico até aprovação expressa e publicação controlada.
+`PAS-001-RELEASE-VALIDATION-001 1.0.0` aprovou os 25 gates, os 35 critérios de aceite e o bloqueio dos 30 comportamentos proibidos.
+
+## Publicação controlada do PAS-001
+
+`PAS-001-PUBLICATION-001 1.0.0` promoveu a candidata para `PAS-001 1.0.0 active`, preservou o histórico e encerrou a lacuna de publicação arquitetural.
 
 ## Capacidades do Journey
 
