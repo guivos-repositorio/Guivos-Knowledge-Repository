@@ -1,6 +1,6 @@
 ---
 id: CANONICAL-CONSOLIDATION-MATRIX-UIC-01-READINESS-ADDENDUM
- title: Matriz de Consolidação Canônica — Addendum de Readiness da UIC-01
+title: Matriz de Consolidação Canônica — Addendum de Readiness da UIC-01
 status: active
 version: 1.36.0
 owner: Guivos
