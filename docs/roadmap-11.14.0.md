@@ -10,7 +10,8 @@ supersedes_partial:
 related:
   - PAS-001-ENGINEERING-HANDOFF-001
   - PAS-001-CC-UIC-001
-  - M5.12
+  - PAS-001-CC-UIC-DOMAIN-001
+  - M5.13
 ---
 
 # Roadmap Arquitetural — Estado Efetivo 11.14.0
@@ -23,41 +24,47 @@ related:
 |---|---|
 | Arquitetura funcional do Journey | Publicada e funcionalmente concluída |
 | Engineering Handoff | Draft 0.2.0 efetivo |
-| UIC-01 — Captura de Contexto | Draft 0.1.0 |
-| Estado técnico da UIC-01 | Normative sources mapped |
-| Marco vigente | M5.12 — Capture Context Engineering Unit Defined |
+| UIC-01 — Captura de Contexto | Draft 0.2.0 efetivo |
+| Estado técnico da UIC-01 | Domain model proposed |
+| Progresso de referência | 40% |
+| Marco vigente | M5.13 — Capture Context Domain Model Proposed |
 | Frente operacional | Product Engineering |
 
-## Entrega concluída nesta versão
+## Entregas concluídas nesta versão
 
 - criação da primeira Unidade de Implementação de Capacidade;
 - definição de autoridade e decisões proibidas;
-- proposta de agregados e invariantes;
-- catálogo inicial de comandos e eventos;
-- delimitação de produtores e consumidores;
-- classificação de persistência, busca e grafo;
-- incorporação de segurança, privacidade, observabilidade e testes;
-- mapeamento de dependências da Onda 0;
-- registro de riscos e lacunas.
+- confirmação de `CaptureRecord` como Aggregate Root;
+- confirmação de `CaptureSession` como entidade interna;
+- definição da identidade permanente de `CaptureInput`;
+- classificação de entidades e objetos de valor;
+- formalização de invariantes estruturais e por comando;
+- definição de consistência imediata e eventual;
+- definição de concorrência otimista e idempotência;
+- proposta de reconstrução;
+- diagramas de agregados, entidades, comandos, ciclo, correção e revogação;
+- resolução de `UIC01-GAP-001` e `UIC01-GAP-002`.
 
 ## Backlog prioritário
 
-### P0 — Domain model da UIC-01
+### P0 — Ciclo técnico da UIC-01
 
-1. resolver `UIC01-GAP-001`;
-2. resolver `UIC01-GAP-002`;
-3. confirmar raiz e limites de agregados;
-4. definir identidades e chaves;
-5. formalizar invariantes por comando;
-6. classificar consistência e concorrência;
-7. definir estratégia inicial de reconstrução.
+1. definir máquinas de estado independentes;
+2. concluir matriz de transições;
+3. definir precondições por transição;
+4. formalizar compensações;
+5. definir timeouts e expirações;
+6. detalhar pausas e retomadas;
+7. tratar falhas parciais;
+8. concluir testes de transição;
+9. elevar a unidade para `Lifecycle technically defined — 60%`.
 
 ### P1 — Contratos técnicos derivados
 
 - catálogo versionado de comandos;
 - catálogo versionado de eventos;
 - política de persistência temporária;
-- protocolo de revogação;
+- protocolo completo de revogação;
 - contratos mínimos da Onda 0.
 
 ### P2 — Decisões tecnológicas
@@ -66,10 +73,10 @@ Permanecem posteriores ao domínio e deverão ser registradas por ADRs comparati
 
 ## Próximo marco candidato
 
-> `M5.13 — Capture Context Domain Model Proposed`
+> `M5.14 — Capture Context Technical Lifecycle Defined`
 
-Condição: UIC-01 em `Domain model proposed`, com agregados, identidades e invariantes suficientemente definidos para revisão técnica.
+Condição: UIC-01 em `Lifecycle technically defined — 60%`, com máquinas de estado, transições, compensações, falhas e testes de ciclo concluídos.
 
 ## Ponto exato de retomada
 
-> Aprofundar agregados, identidades e invariantes da Captura de Contexto.
+> Definir tecnicamente o ciclo de vida da UIC-01.
