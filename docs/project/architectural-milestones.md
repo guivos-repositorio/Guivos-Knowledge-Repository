@@ -1,9 +1,9 @@
 ---
 title: Architectural Milestones
 status: active
-version: 4.9.0
+version: 4.10.0
 owner: Guivos
-last_updated: 2026-07-12
+last_updated: 2026-07-19
 ---
 
 # Architectural Milestones
@@ -28,61 +28,73 @@ Registro oficial dos principais marcos de maturidade arquitetural e de Product E
 | M5.6 — Journey Operational Philosophy Consolidated | Completed | Consolidar o comportamento permanente do Journey |
 | M5.7 — Context Capabilities Progress Registered | Completed | Registrar Captura, Interpretação e Contexto Vivo |
 | M5.8 — GKR and GOG Consistency Review Completed | Completed | Revisar consistência conceitual, documental e visual |
-| M5.9 — Chat Continuity and Repository Reconciliation Completed | Completed | Reconciliar o chat anterior, o GKR e o estado de retomada |
-| A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
+| M5.9 — Chat Continuity and Repository Reconciliation Completed | Completed | Reconciliar o chat anterior e o estado de retomada |
+| M5.10 — Journey Functional Architecture Published and Engineering Handoff Ready | Completed | Publicar a arquitetura funcional e autorizar sua tradução técnica |
+| A2 — Functional Architecture Discovery | Active — Operationally Paused | Descobrir e validar estruturas funcionais e Core Capabilities |
 | K1 — Fundamental Knowledge Frozen | Planned | Congelar conhecimento fundamental após A2-R02 |
 
-## M5.9 — Chat Continuity and Repository Reconciliation Completed
+## M5.10 — Journey Functional Architecture Published and Engineering Handoff Ready
 
-**Estado:** Completed em 12/07/2026.
+**Estado:** Completed em 19/07/2026.
 
 ### Critério de conclusão
 
-O corpus do GKR foi comparado ao extrato final da conversa anterior, as pendências reais foram separadas de conteúdo já incorporado e o ponto de retomada foi formalmente preservado.
+O Guivos Journey possui especificação arquitetural canônica publicada, nove capacidades funcionalmente concluídas, contratos especializados vigentes, mapa executivo navegável e ponto único de retomada para Product Engineering.
 
 ### Resultados
 
-- criação de `GE2-SYNC-007`;
-- confirmação de que nenhuma decisão arquitetural madura estava ausente do GKR;
-- confirmação do Contexto Vivo como modelo multidimensional de compreensão;
-- confirmação do Guivos Market Validation System e de seus refinamentos posteriores;
-- sincronização das referências atuais para `PAS-001 0.4.2`, `GOG-001 4.2.1` e `GLPA-001 1.1.1`;
-- atualização de referências do sistema VAL;
-- correção de nomenclatura residual de Guivos Marketplace para Guivos Mall;
-- preservação do formulário e da planilha automática como entregáveis operacionais futuros;
-- manutenção da Capacidade 02 como ponto oficial de retomada.
+- publicação de `PAS-001 1.0.0 active`;
+- preservação de `PAS-001-CANDIDATE-001 1.0.0-rc.1` como histórica;
+- aprovação dos 15 gates de auditoria e dos 25 gates de release;
+- conclusão das nove capacidades;
+- ativação dos nove contratos finais em `1.0.0`;
+- preservação das 54 extensões normativas;
+- criação de `PAS-001-CAPABILITY-MAP-001 1.0.0`;
+- correção navegacional do Mapa para `1.0.1`;
+- criação de `GE2-SYNC-008 1.0.0`;
+- reconciliação do Roadmap e do Knowledge Board;
+- definição de `PAS-001-ENGINEERING-HANDOFF-001` como próxima frente.
+
+### Fronteira do marco
+
+M5.10 confirma prontidão para planejamento técnico. Não representa:
+
+- arquitetura física aprovada;
+- backlog técnico concluído;
+- implementação;
+- validação em produção;
+- tag ou GitHub Release do Journey;
+- reabertura automática do `PAS-001`.
 
 ### Ponto de retomada
 
-Retomar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, iniciando por responsabilidades e limites.
+Criar `PAS-001-ENGINEERING-HANDOFF-001`, iniciando por autoridade, finalidade, escopo, fontes normativas, unidade de trabalho, entregáveis, critérios de aceite e comportamentos proibidos.
+
+## M5.9 — Chat Continuity and Repository Reconciliation Completed
+
+**Estado:** Completed em 12/07/2026; ponto de retomada superado por M5.10.
+
+### Resultados preservados
+
+- criação de `GE2-SYNC-007`;
+- confirmação do Contexto Vivo como modelo multidimensional de compreensão;
+- confirmação do Guivos Market Validation System;
+- correção de nomenclatura residual de Guivos Marketplace para Guivos Mall;
+- preservação do formulário e da planilha automática como entregáveis futuros.
+
+O ponto antigo de retomada na Capacidade 02 permanece histórico e não governa a frente atual.
 
 ## M5.8 — GKR and GOG Consistency Review Completed
 
 **Estado:** Completed em 11/07/2026.
 
-### Critério de conclusão
-
-As divergências demonstráveis, referências desatualizadas e lacunas prioritárias de diagramas entre o GOG e os principais documentos do GKR foram tratadas e sincronizadas.
-
-### Resultados
+### Resultados preservados
 
 - criação e conclusão de `AR-001`;
-- atualização do `GOG-001` para `4.2.0`;
-- atualização do `PAS-001` para `0.4.1`;
-- atualização da `GLPA-001` para `1.1.0`;
-- atualização da `GIA-000` para `1.3.0`;
-- atualização do Glossário Canônico para `1.8.0`;
+- atualização do `GOG-001`, `PAS-001`, `GLPA-001`, `GIA-000` e Glossário;
 - alinhamento literal de propósito, missão e visão;
-- esclarecimento de `Public Canon`;
-- revisão e criação dos diagramas públicos e funcionais prioritários;
-- remoção de `perfil` e `feed` como definições permanentes do Journey;
-- distinção entre Contexto Vivo e candidatos técnicos como LPM;
-- distinção entre tipos de capacidade;
-- sincronização dos documentos de estado.
-
-### Ponto de retomada
-
-Retomar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, completando responsabilidades, entradas, estados, envelhecimento, conflitos, eventos, KPIs, cenários e contrato.
+- revisão dos diagramas públicos e funcionais;
+- distinção entre Contexto Vivo e candidatos técnicos como LPM.
 
 ## M5.7 — Context Capabilities Progress Registered
 
@@ -91,8 +103,7 @@ Retomar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, completando responsa
 Resultados principais:
 
 - criação de `GE2-SYNC-006`;
-- atualização do PAS-001 para `0.4.0`;
-- consolidação da Capacidade 01;
+- consolidação inicial da Capacidade 01;
 - início da Capacidade 02;
 - registro da Representação Humilde e das oito dimensões.
 
@@ -104,7 +115,7 @@ Resultados principais:
 
 - criação de `GE2-SYNC-005`;
 - Product Engineering ativado;
-- cinco responsabilidades permanentes consolidadas;
+- responsabilidades permanentes consolidadas;
 - Estado, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais e Distância para Evolução registrados.
 
 ## M5.5 — Context and Architecture Engineering Checkpoint
