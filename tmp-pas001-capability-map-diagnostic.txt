@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 244, in <module>
-    main()
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 238, in main
-    validate_final()
-  File "/home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/scripts/tmp_sync_pas001_capability_map.py", line 220, in validate_final
-    raise RuntimeError(f"{path} missing capability map link")
-RuntimeError: /home/runner/work/Guivos-Knowledge-Repository/Guivos-Knowledge-Repository/docs/product-architecture/index.md missing capability map link
