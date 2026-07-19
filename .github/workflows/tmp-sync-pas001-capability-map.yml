@@ -31,7 +31,19 @@ jobs:
           set -euo pipefail
           git fetch --no-tags --depth=1 --quiet origin main
           test "$(git rev-parse origin/main)" = "4289faad709eeed326042de263d1682d13d84243"
-          python scripts/tmp_sync_pas001_capability_map.py
+          set +e
+          python scripts/tmp_sync_pas001_capability_map.py > tmp-pas001-capability-map-diagnostic.txt 2>&1
+          rc=$?
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            git config user.name "guivos-repositorio"
+            git config user.email "guivos-repositorio@users.noreply.github.com"
+            git add tmp-pas001-capability-map-diagnostic.txt
+            git commit -m "Record PAS-001 capability map diagnostic"
+            git push origin HEAD:agent/pas-001-capability-map
+            exit "$rc"
+          fi
+          rm -f tmp-pas001-capability-map-diagnostic.txt
 
       - name: Inspect generated diff
         shell: bash
