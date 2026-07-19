@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.29.0
+version: 1.30.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -368,7 +368,7 @@ Evento, Projeto e Agente de IA não são categorias de Participante enquanto nã
 
 ## Reconciliação mais recente
 
-Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 1.0.0` aprovou os 15 gates. `PAS-001-CANDIDATE-001 1.0.0-rc.1` consolidou a edição federada e agora é histórica. `PAS-001-RELEASE-VALIDATION-001 1.0.0` confirmou ausência de regressões. `PAS-001-PUBLICATION-001 1.0.0` promoveu a edição validada para `PAS-001 1.0.0 active`, preservando os nove contratos e as 54 extensões.
+Todas as nove capacidades estão funcionalmente concluídas. `PAS-001 1.0.0` está ativo. `PAS-001-CAPABILITY-MAP-001 1.0.0` consolida a visão executiva e navegável, preservando os nove contratos, as 54 extensões e a autoridade federada.
 
 ## Edição candidata do PAS-001
 
@@ -394,7 +394,7 @@ Todas as nove capacidades estão funcionalmente concluídas. `PAS-001-AUDIT-001 
 
 ## Próxima revisão
 
-Executar `PAS-001-CAPABILITY-MAP-001`, produzindo o Mapa Final de Capacidades do Guivos Journey a partir do `PAS-001 1.0.0` publicado e de seus contratos especializados.
+Executar `PAS-001-ENGINEERING-HANDOFF-001`, transformando a arquitetura funcional publicada e o Mapa Final em planejamento técnico por capacidade.
 
 ## Auditoria final do PAS-001
 
@@ -413,3 +413,15 @@ Estado vigente: `Published — PAS-001 1.0.0 active`.
 | Extensões normativas | Maintain | 54 extensões das Capacidades 01–09 | Vigentes |
 | Prontidão | Supersede | PAS-001-PUBLICATION-001 | `Published — PAS-001 1.0.0 active` |
 | Próximo ponto | Refine | Roadmap e Knowledge Board | `PAS-001-CAPABILITY-MAP-001` |
+
+## PAS-001 — Mapa Final de Capacidades 1.0.0
+
+| Objeto | Decisão | Autoridade vigente | Situação |
+|---|---|---|---|
+| PAS-001-CAPABILITY-MAP-001 | Maintain | PAS-001 1.0.0 e nove contratos finais | Active 1.0.0 |
+| Nove capacidades | Maintain | PAS-001 e contratos `*-CONTRACT-001` | Functionally complete |
+| Perguntas e responsabilidades | Maintain | PAS-001 1.0.0 | Consolidadas no mapa |
+| Entradas, saídas e fronteiras | Refine | Mapa e contratos especializados | Visão executiva não linear |
+| Extensões normativas | Maintain | 54 documentos vigentes | Autoridades detalhadas |
+| Intelligence, Service e Platform Layers | Maintain | GLPA-001, GIA-000 e PAS-001 | Fronteiras preservadas |
+| Próximo ponto | Refine | Roadmap e Knowledge Board | PAS-001-ENGINEERING-HANDOFF-001 |

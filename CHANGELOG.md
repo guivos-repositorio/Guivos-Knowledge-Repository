@@ -3,6 +3,18 @@
 Todas as alterações relevantes do Guivos Knowledge Repository são registradas neste arquivo.
 
 
+## 0.58.0 — PAS-001 Final Capability Map
+
+- Criação de `PAS-001-CAPABILITY-MAP-001 1.0.0`.
+- Consolidação executiva e navegável das nove capacidades do Guivos Journey.
+- Preservação das nove perguntas centrais, responsabilidades, fronteiras e contratos finais.
+- Referência às 54 extensões normativas como autoridades especializadas.
+- Inclusão de mapa Mermaid, matrizes de entradas, saídas e fronteiras decisórias.
+- Arquitetura e Matriz `1.30.0`; Roadmap e Board `11.11.0`.
+- Próximo ponto: `PAS-001-ENGINEERING-HANDOFF-001`.
+- `PAS-001 1.0.0`, contratos e extensões permaneceram inalterados.
+
+
 ## 0.57.0 — PAS-001 Controlled Publication
 
 - Publicação de `PAS-001 1.0.0` como especificação arquitetural canônica ativa.

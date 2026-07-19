@@ -1,7 +1,7 @@
 ---
 title: Roadmap Arquitetural
 status: active
-version: 11.10.0
+version: 11.11.0
 owner: Guivos
 last_updated: 2026-07-18
 ---
@@ -20,6 +20,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 - **Auditoria final vigente:** `PAS-001-AUDIT-001 1.0.0`.
 - **Edição candidata histórica:** `PAS-001-CANDIDATE-001 1.0.0-rc.1 — promoted`.
 - **Validação de release vigente:** `PAS-001-RELEASE-VALIDATION-001 1.0.0`.
+- **Mapa final vigente:** `PAS-001-CAPABILITY-MAP-001 1.0.0`.
 - **Extensões vigentes da Capacidade 01:** `PAS-001-CC-LIFECYCLE-001 1.0.0`, `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` e `PAS-001-CC-CONTRACT-001 1.0.0`, etapa `3 de 3` concluída.
 - **Estado canônico:** `Published — PAS-001 1.0.0 active`.
 - **Lacuna bloqueante da arquitetura funcional:** nenhuma.
@@ -42,7 +43,7 @@ Este roadmap acompanha a evolução do GKR, da arquitetura empresarial e das fre
 
 ## Direção vigente
 
-`PAS-001-PUBLICATION-001 1.0.0` promoveu a candidata validada para `PAS-001 1.0.0 active`. O próximo trabalho é `PAS-001-CAPABILITY-MAP-001`, mantendo contratos e extensões como autoridades especializadas.
+`PAS-001-CAPABILITY-MAP-001 1.0.0` consolidou a visão executiva e navegável das nove capacidades. O próximo trabalho é `PAS-001-ENGINEERING-HANDOFF-001`, mantendo `PAS-001`, contratos e extensões como autoridades normativas.
 
 > A unidade de trabalho é a capacidade funcional completa, não uma funcionalidade isolada ou descrição de tela.
 
@@ -62,11 +63,15 @@ A auditoria avaliou 15 gates, inventariou 54 extensões e registrou quatro açõ
 
 `PAS-001-PUBLICATION-001 1.0.0` publicou `PAS-001 1.0.0 active`, preservou o histórico e definiu o Mapa Final de Capacidades como próxima frente.
 
+## Mapa Final de Capacidades concluído
+
+`PAS-001-CAPABILITY-MAP-001 1.0.0` consolida perguntas, responsabilidades, entradas, saídas, fronteiras, relações não lineares, contratos e critérios de reabertura das nove capacidades. A lacuna de mapa executivo está encerrada.
+
 ## Capacidade 01 — Fechamento formal concluído
 
 `PAS-001-CC-LIFECYCLE-001 1.0.0` consolidou o ciclo de vida. `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` consolidou eventos e integrações. `PAS-001-CC-CONTRACT-001 1.0.0` conclui a etapa `3 de 3`, com 80 KPIs em 16 famílias, baseline, painel de saúde, cinco níveis de desempenho, 42 guardrails, cenários, 52 critérios de conclusão e 50 regras fundamentais.
 
-A Capacidade 01 está `Functionally complete — 100%`. Todas as capacidades estão funcionalmente concluídas; o `PAS-001 1.0.0` está publicado; a próxima etapa é o Mapa Final de Capacidades.
+A Capacidade 01 está `Functionally complete — 100%`. Todas as capacidades estão funcionalmente concluídas; o `PAS-001 1.0.0` e o Mapa Final estão ativos; a próxima etapa é o Handoff Arquitetural para Product Engineering.
 
 ## Capacidades concluídas
 
