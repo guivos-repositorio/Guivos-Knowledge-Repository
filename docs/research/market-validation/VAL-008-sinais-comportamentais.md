@@ -2,7 +2,7 @@
 id: VAL-008
 title: Sinais Comportamentais na Validação
 status: active
-version: 1.1.0
+version: 1.1.1
 owner: Guivos
 last_updated: 2026-07-19
 related:
@@ -16,56 +16,42 @@ related:
 
 ## 1. Finalidade
 
-Registrar sinais observáveis durante entrevistas e testes, sem tratá-los como substitutos das respostas declaradas.
-
-A versão atual incorpora sinais relacionados a diferentes níveis de clareza, inclusive pessoas que nunca haviam parado para refletir sobre determinada área da vida.
+Registrar sinais observáveis durante entrevistas e pré-testes, sem tratá-los como substitutos das respostas declaradas.
 
 ## 2. Princípio
 
-Comportamentos espontâneos podem revelar compreensão, curiosidade, dúvida ou intenção. Devem ser registrados de forma descritiva, sem inferências psicológicas indevidas.
+Comportamentos espontâneos podem revelar compreensão, curiosidade, dúvida, esforço de leitura ou intenção real. Devem ser registrados de forma descritiva, sem inferências psicológicas indevidas.
 
-A ausência de objetivo claro:
+## 3. Sinais de carga cognitiva
 
-- não representa desinteresse;
-- não representa incapacidade;
-- não deve ser corrigida pelo entrevistador;
-- pode indicar estágio legítimo de exploração.
+Durante o pré-teste do VAL-002, registrar se a pessoa:
 
-## 3. Sinais durante área, momento e mudança desejada
+- relê o enunciado várias vezes;
+- pede explicação sobre uma pergunta;
+- esquece as primeiras alternativas antes de chegar às últimas;
+- demonstra dúvida entre opções muito semelhantes;
+- abandona uma pergunta sem responder;
+- leva tempo excessivo para escolher;
+- afirma que existem opções demais;
+- considera algum texto longo ou cansativo;
+- conclui o formulário em tempo incompatível com leitura consciente;
+- abandona antes ou depois da apresentação oficial.
 
-Registrar se a pessoa:
-
-- identifica imediatamente uma área prioritária;
-- afirma nunca ter pensado sobre a pergunta;
-- demonstra dificuldade para escolher uma única área;
-- possui objetivo claro;
-- descreve desejo genérico ainda em exploração;
-- sente que algo precisa mudar, mas não sabe o quê;
-- relata necessidade ou problema específico;
-- deseja retomar algo interrompido;
-- deseja manter ou fortalecer algo positivo;
-- não percebe necessidade de mudança;
-- consegue imaginar uma mudança desejada;
-- prefere permanecer em incerteza sem escolher alternativa;
-- pede exemplos para compreender a diferença entre momento e resultado.
-
-O registro deverá reproduzir o que foi observado ou dito, sem classificar a pessoa como confusa, desmotivada ou sem propósito.
+Esses sinais deverão orientar ajustes no instrumento, não conclusões sobre a proposta da Guivos.
 
 ## 4. Sinais durante a apresentação
 
 Registrar se a pessoa:
 
 - interrompe para perguntar;
-- pede exemplo;
+- pede exemplo adicional;
 - relaciona a proposta a uma situação própria;
 - demonstra confusão;
 - repete a ideia com palavras próprias;
 - compara com outra plataforma;
 - demonstra ceticismo;
-- percebe que a Guivos não exige objetivo pronto;
-- demonstra alívio ou interesse ao ouvir que não precisa ter tudo planejado;
-- interpreta incorretamente que a Guivos decidirá por ela;
-- muda de postura ou atenção de forma perceptível.
+- reconhece que a proposta também atende pessoas sem objetivo definido;
+- percebe que permanece no controle das decisões.
 
 ## 5. Sinais durante as perguntas
 
@@ -75,36 +61,29 @@ Registrar se a pessoa:
 - conta histórias espontâneas;
 - apresenta objeções concretas;
 - evita determinadas perguntas;
-- recorda oportunidade conhecida tarde demais;
-- descreve busca em que nenhuma opção fazia sentido;
-- identifica por que opções eram inadequadas;
+- recorda uma oportunidade conhecida tarde demais;
+- descreve busca sem opção adequada;
+- identifica por que uma opção não servia para o seu momento;
 - confunde ausência de busca com ausência de oportunidade;
-- identifica primeiro caso de uso;
-- consegue apontar resultado concreto;
-- associa a proposta à área escolhida;
-- associa a proposta ao próprio momento;
-- demonstra dificuldade para diferenciar Guivos de catálogo, rede social ou buscador;
-- considera que o início da experiência exigiria esforço demais;
-- pergunta como a plataforma compreenderia seu momento;
-- pergunta como controlaria suas informações.
+- identifica imediatamente um primeiro caso de uso;
+- consegue apontar o que faria a Guivos ser útil;
+- associa espontaneamente a proposta à área escolhida;
+- diferencia a Guivos de catálogo, rede social ou buscador genérico.
 
 ## 6. Sinais ao final
 
 - pergunta quando será lançado;
 - solicita participação em primeira experiência;
 - oferece contato espontaneamente;
-- pergunta sobre preço;
 - pergunta sobre privacidade ou uso das informações;
-- indica outra pessoa;
-- não demonstra interesse;
-- afirma que procuraria apenas em situação específica;
-- descreve espontaneamente algo que esperaria encontrar ou fazer;
-- identifica uma aplicação mesmo sem possuir objetivo claro;
-- afirma que a proposta não teria utilidade para seu momento.
+- indica outra pessoa que poderia participar;
+- não demonstra interesse em continuidade;
+- afirma que procuraria a Guivos apenas em situação específica;
+- descreve espontaneamente algo que esperaria encontrar ou fazer.
 
 ## 7. Escala de registro
 
-Cada entrevista poderá classificar sinais em:
+Cada entrevista ou pré-teste poderá classificar sinais em:
 
 - forte positivo;
 - positivo;
@@ -113,38 +92,39 @@ Cada entrevista poderá classificar sinais em:
 - forte negativo;
 - não observado.
 
-A classificação deverá ser acompanhada por observação objetiva ou trecho da fala.
+A classificação deverá ser acompanhada por observação objetiva.
+
+Para sinais de carga cognitiva, registrar também:
+
+- pergunta em que ocorreu;
+- tempo aproximado;
+- frase espontânea da pessoa, quando relevante;
+- necessidade ou não de intervenção do entrevistador.
 
 ## 8. Restrições
 
 - não diagnosticar emoções;
-- não interpretar silêncio como rejeição;
+- não interpretar silêncio automaticamente como rejeição;
 - não usar sorriso, postura ou contato visual como prova isolada;
-- não substituir respostas explícitas por interpretação;
-- não inferir que pessoa sem objetivo está perdida;
-- não pressionar por definição;
-- não afirmar que a pessoa perdeu oportunidade desconhecida;
-- não transformar `não procurei` ou `não me recordo` em ausência do problema;
+- não substituir respostas explícitas pela interpretação do entrevistador;
+- não afirmar que a pessoa perdeu oportunidade que nunca conheceu;
+- não transformar `não procurei` ou `não me lembro` em ausência do problema;
 - não registrar dados sensíveis desnecessários;
 - não filmar ou gravar sem autorização;
-- não inferir recorrência, retenção, confiança operacional ou pagamento a partir da entrevista.
+- não inferir recorrência, retenção ou confiança operacional;
+- não confundir dificuldade de responder à pesquisa com baixa aderência à proposta.
 
 ## 9. Uso na análise
 
 Os sinais serão utilizados para:
 
+- identificar perguntas confusas ou cansativas;
+- verificar se a quantidade de alternativas é adequada;
+- verificar se os exemplos facilitam a compreensão;
+- comparar tempo estimado e tempo real;
+- localizar pontos de abandono;
 - complementar respostas quantitativas;
-- identificar perguntas confusas;
-- verificar se pessoas sem objetivo conseguem responder;
-- avaliar se exemplos facilitam compreensão;
-- aprofundar diferenças entre descoberta tardia e busca sem opção adequada;
+- aprofundar descoberta tardia e busca sem opção adequada;
 - comparar intenção declarada e interesse espontâneo;
-- identificar situações de primeiro uso;
-- identificar resultados valorizados;
-- detectar esforço percebido no início da experiência;
-- selecionar trechos para aprofundamento;
-- melhorar o roteiro seguinte.
-
-## 10. Compatibilidade
-
-A versão `1.1.0` acompanha a reconstrução do VAL-002 `2.0.0`.
+- identificar situações de primeiro uso e utilidades valorizadas;
+- melhorar o instrumento da rodada seguinte.
