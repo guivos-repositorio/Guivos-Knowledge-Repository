@@ -13,6 +13,7 @@ related:
   - PAS-001-PUBLICATION-001
   - PAS-001-CAPABILITY-MAP-001
   - PAS-001-ENGINEERING-HANDOFF-001
+  - GKR-CANON-MATRIX-ADDENDUM-001
 ---
 
 # GE2-SYNC-008 — Post-Publication Chat Continuity and Engineering Handoff Readiness
@@ -36,7 +37,7 @@ Conversas permanecem evidências de continuidade. O GKR permanece como fonte ofi
 Foram confirmados:
 
 - `PAS-001 1.0.0` como especificação arquitetural canônica ativa;
-- `PAS-001-CAPABILITY-MAP-001 1.0.0` como mapa final ativo;
+- `PAS-001-CAPABILITY-MAP-001 1.0.0` como mapa final ativo antes da correção navegacional;
 - nove capacidades funcionalmente concluídas;
 - nove contratos finais ativos em `1.0.0`;
 - 54 extensões normativas vigentes;
@@ -76,11 +77,12 @@ A frente vigente estava correta, porém a governança final ainda registrava ver
 | Alteração | Classificação | Reabre PAS-001 |
 |---|---|---|
 | Links no Mapa Final | Patch editorial | Não |
-| Correção de estados no Roadmap | Sincronização de estado | Não |
-| Correção de governança no Knowledge Board | Sincronização de estado | Não |
+| Correção de estados no Roadmap | Overlay de estado | Não |
+| Correção de governança no Knowledge Board | Overlay de estado | Não |
 | Novo checkpoint de continuidade | Governança documental | Não |
-| Registro de M5.10 | Governança de marcos | Não |
-| Atualização de README, início e navegação | Publicação derivada | Não |
+| Registro de M5.10 | Overlay de marcos | Não |
+| Atualização de Arquitetura e Matriz | Overlay de estado | Não |
+| Atualização de navegação | Publicação derivada | Não |
 
 ## 5. Decisões de continuidade
 
@@ -89,12 +91,27 @@ A frente vigente estava correta, porém a governança final ainda registrava ver
 | D-059 | Reconhecer o commit `4bbf407...` como base reconciliada | Aprovada |
 | D-060 | Preservar `PAS-001 1.0.0`, contratos e extensões sem alteração | Aprovada |
 | D-061 | Corrigir a navegabilidade declarada do Mapa Final | Aprovada |
-| D-062 | Remover estados e pontos de retomada editoriais já superados | Aprovada |
+| D-062 | Remover estados e pontos de retomada editoriais já superados por overlays não destrutivos | Aprovada |
 | D-063 | Registrar `M5.10 — Journey Functional Architecture Published and Engineering Handoff Ready` | Aprovada |
 | D-064 | Encerrar `GE2-SYNC-007` como autoridade do ponto atual de retomada | Aprovada |
 | D-065 | Definir `PAS-001-ENGINEERING-HANDOFF-001` como ponto único de retomada | Aprovada |
+| D-066 | Preservar documentos extensos e publicar versões reconciliadas como overlays prevalentes | Aprovada |
 
-## 6. Estado resultante
+## 6. Artefatos reconciliados
+
+| Artefato | Versão efetiva | Vínculo |
+|---|---:|---|
+| Mapa Final de Capacidades | 1.0.1 | [Documento](../product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md) |
+| Roadmap Arquitetural | 11.12.0 | [Overlay](../roadmap-11.12.0.md) |
+| Knowledge Board | 11.12.0 | [Overlay](knowledge-board-11.12.0.md) |
+| Architectural Milestones | 4.10.0 | [Overlay](architectural-milestones-4.10.0.md) |
+| Arquitetura de Produtos | 1.31.0 | [Overlay](../product-architecture/product-architecture-1.31.0.md) |
+| Matriz de Consolidação Canônica | 1.31.0 | [Adendo](canonical-consolidation-matrix-post-publication-addendum.md) |
+| Changelog da reconciliação | 0.59.0 | [Registro](changelog-0.59.0-post-publication-reconciliation.md) |
+
+Os documentos-base extensos permanecem integralmente preservados. Os overlays prevalecem apenas sobre estado, versão, prontidão, governança e retomada.
+
+## 7. Estado resultante
 
 | Ativo | Estado resultante |
 |---|---|
@@ -108,7 +125,7 @@ A frente vigente estava correta, porém a governança final ainda registrava ver
 | Frente operacional | Product Engineering |
 | Próxima especificação | PAS-001-ENGINEERING-HANDOFF-001 |
 
-## 7. Prontidão para o Handoff
+## 8. Prontidão para o Handoff
 
 A arquitetura funcional está suficientemente consolidada para tradução técnica por capacidade.
 
@@ -133,7 +150,7 @@ O Handoff não poderá:
 - tratar microsserviço, tela ou banco de dados como capacidade;
 - reabrir o `PAS-001` sem conflito funcional demonstrado.
 
-## 8. Ponto exato de retomada
+## 9. Ponto exato de retomada
 
 > **Criar `PAS-001-ENGINEERING-HANDOFF-001 — Handoff Arquitetural do Guivos Journey para Product Engineering`.**
 
