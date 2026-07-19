@@ -1,9 +1,9 @@
 ---
 title: Guivos Market Validation System
 status: active
-version: 1.2.1
+version: 1.3.0
 owner: Guivos
-last_updated: 2026-07-12
+last_updated: 2026-07-19
 ---
 
 # Guivos Market Validation System
@@ -22,16 +22,18 @@ Transformar hipóteses internas em perguntas testáveis, coletar evidências de 
 
 > Uma pergunta somente integra uma rodada quando o participante possui informação suficiente para avaliá-la de forma consciente.
 
+> A validação não pressupõe que a pessoa já possua objetivo, plano ou próximo passo definido.
+
 ## Documentos
 
-- [VAL-001 — Framework de Validação de Mercado](VAL-001-framework-de-validacao-de-mercado.md) — versão 1.2.1;
-- [VAL-002 — Pesquisa Conceitual B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 1.2.1, título público `Construindo a Guivos`;
-- [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md) — versão 1.1.1;
-- [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md) — versão 1.2.1;
-- [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md) — versão 1.1.0;
-- [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.2.1;
-- [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.2.1;
-- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.0.2.
+- [VAL-001 — Framework de Validação de Mercado](VAL-001-framework-de-validacao-de-mercado.md) — versão 1.3.0;
+- [VAL-002 — Pesquisa Oficial B2C](VAL-002-pesquisa-oficial-da-guivos.md) — versão 2.0.0, título público `Construindo a Guivos`;
+- [VAL-003 — Guia do Entrevistador](VAL-003-guia-do-entrevistador.md) — versão 1.2.0;
+- [VAL-004 — Modelo de Consolidação e Análise](VAL-004-modelo-de-consolidacao-e-analise.md) — versão 1.3.0;
+- [VAL-005 — Plano de Amostragem](VAL-005-plano-de-amostragem.md) — versão 1.2.0;
+- [VAL-006 — Dashboard de Indicadores](VAL-006-dashboard-de-indicadores.md) — versão 1.3.0;
+- [VAL-007 — Critérios de Decisão](VAL-007-criterios-de-decisao.md) — versão 1.3.0;
+- [VAL-008 — Sinais Comportamentais](VAL-008-sinais-comportamentais.md) — versão 1.1.0.
 
 ## Sequência oficial
 
@@ -44,32 +46,39 @@ flowchart LR
 
 A primeira aplicação valida a proposta B2C da Guivos, com foco em:
 
-- descoberta tardia de oportunidades potencialmente úteis;
-- busca sem encontro de oportunidade adequada ao momento;
-- esforço atual para encontrar possibilidades relevantes;
+- área da vida que merece atenção;
+- momento atual e nível de clareza;
+- mudança ou resultado desejado;
+- dificuldades;
+- descoberta tardia de oportunidades;
+- busca sem encontro de opção adequada;
+- esforço atual;
 - compreensão da proposta;
-- relevância para a área prioritária da vida;
+- relevância contextual;
 - situação prática de primeiro uso;
-- expectativas sobre o que encontrar ou fazer na Guivos;
+- expectativas sobre o que encontrar ou fazer;
 - resultado concreto considerado valioso;
 - contribuição percebida;
-- intenção de experimentar uma primeira versão;
-- interesse em participar de uma primeira experiência;
-- sinais iniciais de monetização;
+- intenção de experimentar;
+- interesse em primeira experiência;
 - barreiras e diferenças entre segmentos.
 
-Confiança operacional, recorrência, retenção e recomendação serão validadas posteriormente por protótipos, beta e comportamento real, e não por previsão abstrata nesta primeira pesquisa.
+Confiança operacional, recorrência, retenção, recomendação e monetização serão validadas posteriormente por protótipos, beta, demonstração de valor e comportamento real.
 
 ## Estado operacional
 
-- instrumento oficial revisado para 5 a 7 minutos;
-- 22 perguntas principais;
-- apenas duas perguntas abertas centrais;
-- apresentação da proposta com exemplos de saúde e espiritualidade;
-- descoberta tardia e ausência de oportunidade adequada medidas separadamente;
-- Índice de Fricção de Oportunidades — IFO composto por `Q8` e `Q9`;
+- instrumento oficial reconstruído para 4 a 6 minutos;
+- 20 perguntas principais;
+- uma pergunta aberta obrigatória e uma opcional;
+- área, momento atual e mudança desejada medidos separadamente;
+- pessoas sem objetivo definido reconhecidas como segmento legítimo;
+- apresentação da proposta sem exigir planejamento prévio;
+- comportamento atual aprofundado nas entrevistas qualitativas;
+- monetização retirada da primeira pesquisa conceitual;
+- descoberta tardia e ausência de opção adequada medidas separadamente;
+- IFO composto por `Q8` e `Q9`;
 - alternativas codificadas no padrão `n.x`;
-- coleta geográfica principal por estado ou Distrito Federal;
+- coleta geográfica por estado ou Distrito Federal;
 - cidade ou município como campo complementar opcional;
 - dashboard vinculado diretamente às perguntas;
 - IGV composto por problema, compreensão, relevância, contribuição, intenção e primeira experiência;
@@ -79,5 +88,7 @@ Confiança operacional, recorrência, retenção e recomendação serão validad
 
 ## Entregáveis operacionais pendentes
 
+- pré-teste da versão 2.0.0 com 10 a 15 participantes;
 - formulário definitivo para aplicação;
-- planilha automática para recepção, tratamento e cálculo dos KPIs, IGV e gates.
+- planilha automática para recepção, tratamento e cálculo dos KPIs, IGV e gates;
+- protocolo posterior de monetização baseado em experiência real.
