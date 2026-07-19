@@ -2239,7 +2239,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -2439,7 +2439,7 @@
   <span class="md-ellipsis">
     
   
-    PAS-001-CANDIDATE-001 — Edição Candidata Federada 1.0.0
+    PAS-001-CANDIDATE-001 — Edição Candidata Histórica 1.0.0
   
 
     
@@ -2449,7 +2449,7 @@
     
   
   
-    <span class="md-status md-status--candidate"></span>
+    <span class="md-status md-status--historical"></span>
   
 
   
@@ -2475,6 +2475,41 @@
     
   
     PAS-001-RELEASE-VALIDATION-001 — Validação Editorial e Normativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/pas-001-guivos-journey-publicacao-controlada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PUBLICATION-001 — Publicação Controlada 1.0.0
   
 
     
@@ -6644,6 +6679,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pas-001-publicacao-controlada-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PAS-001 — Publicação Controlada 1.0.0
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6902,6 +6948,17 @@
     <span class="md-ellipsis">
       
         Auditoria final do PAS-001
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pas-001-publicacao-controlada-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PAS-001 — Publicação Controlada 1.0.0
       
     </span>
   </a>
@@ -8587,7 +8644,7 @@
 </tbody>
 </table>
 <h2 id="reconciliacao-mais-recente">Reconciliação mais recente<a class="headerlink" href="#reconciliacao-mais-recente" title="Permanent link">&para;</a></h2>
-<p>Todas as nove capacidades estão funcionalmente concluídas. <code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates. <code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> aplica a consolidação federada. <code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> confirma ausência de regressões, preserva o <code>PAS-001 0.5.0</code>, os nove contratos e as 54 extensões, e emite <code>Ready for publication</code> condicionado à aprovação expressa.</p>
+<p>Todas as nove capacidades estão funcionalmente concluídas. <code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates. <code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> consolidou a edição federada e agora é histórica. <code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> confirmou ausência de regressões. <code>PAS-001-PUBLICATION-001 1.0.0</code> promoveu a edição validada para <code>PAS-001 1.0.0 active</code>, preservando os nove contratos e as 54 extensões.</p>
 <h2 id="edicao-candidata-do-pas-001">Edição candidata do PAS-001<a class="headerlink" href="#edicao-candidata-do-pas-001" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -8600,13 +8657,13 @@
 <tbody>
 <tr>
 <td>PAS-001 0.5.0</td>
-<td>Manter</td>
-<td>Permanece versão canônica até aprovação formal de publicação</td>
+<td>Historical only</td>
+<td>Versão substituída e preservada integralmente no histórico do Git</td>
 </tr>
 <tr>
 <td>PAS-001-CANDIDATE-001 1.0.0-rc.1</td>
-<td>Manter como candidata</td>
-<td>Consolida filosofia, camadas, princípios, invariantes, capacidades, perguntas, fronteiras e autoridade federada</td>
+<td>Historical only — promoted</td>
+<td>Candidata validada cujo núcleo arquitetural originou o PAS-001 1.0.0</td>
 </tr>
 <tr>
 <td>Contratos e extensões especializadas</td>
@@ -8624,14 +8681,14 @@
 <td>Substitui desejo de evoluir por direções conscientemente assumidas</td>
 </tr>
 <tr>
-<td>Estado de prontidão</td>
-<td>Refinar</td>
-<td><code>Ready for publication — PAS-001 1.0.0 publication requires explicit approval</code></td>
+<td>Estado canônico</td>
+<td>Supersede</td>
+<td><code>Published — PAS-001 1.0.0 active</code></td>
 </tr>
 <tr>
 <td>PAS-001-RELEASE-VALIDATION-001 1.0.0</td>
 <td>Manter</td>
-<td>Autoridade da validação de release e do parecer condicionado</td>
+<td>Autoridade histórica da validação que autorizou a publicação</td>
 </tr>
 </tbody>
 </table>
@@ -8662,21 +8719,76 @@
 </tr>
 <tr>
 <td>PAS-001 0.5.0</td>
-<td>Manter</td>
-<td>Permanece canônico até aprovação expressa</td>
+<td>Historical only</td>
+<td>Substituído por PAS-001 1.0.0 e preservado no histórico</td>
 </tr>
 <tr>
 <td>Publicação controlada</td>
-<td>Pendente de aprovação</td>
-<td>Próxima frente normativa</td>
+<td>Concluída</td>
+<td>Registrada por PAS-001-PUBLICATION-001 1.0.0</td>
 </tr>
 </tbody>
 </table>
 <h2 id="proxima-revisao">Próxima revisão<a class="headerlink" href="#proxima-revisao" title="Permanent link">&para;</a></h2>
-<p>Executar <code>PAS-001-PUBLICATION-001</code> somente após aprovação expressa, promovendo a candidata de forma controlada, preservando histórico, sincronizando artefatos e validando rollback.</p>
+<p>Executar <code>PAS-001-CAPABILITY-MAP-001</code>, produzindo o Mapa Final de Capacidades do Guivos Journey a partir do <code>PAS-001 1.0.0</code> publicado e de seus contratos especializados.</p>
 <h2 id="auditoria-final-do-pas-001">Auditoria final do PAS-001<a class="headerlink" href="#auditoria-final-do-pas-001" title="Permanent link">&para;</a></h2>
 <p><code>PAS-001-AUDIT-001 1.0.0</code> permanece como autoridade da consolidação. Campos obrigatórios: seção original, conceito, documento substituto, decisão, ação editorial, necessidade de reabertura, documento pai, autoridade, dependências e critérios de reabertura.</p>
-<p>Parecer vigente: <code>Ready for publication — PAS-001 1.0.0 publication requires explicit approval</code>.</p>
+<p>Estado vigente: <code>Published — PAS-001 1.0.0 active</code>.</p>
+<h2 id="pas-001-publicacao-controlada-100">PAS-001 — Publicação Controlada 1.0.0<a class="headerlink" href="#pas-001-publicacao-controlada-100" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Objeto</th>
+<th>Decisão</th>
+<th>Autoridade vigente</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PAS-001 0.5.0</td>
+<td>Historical only</td>
+<td>Histórico do Git, reconciliação e auditoria</td>
+<td>Substituído pela edição 1.0.0</td>
+</tr>
+<tr>
+<td>PAS-001-CANDIDATE-001 1.0.0-rc.1</td>
+<td>Historical only — promoted</td>
+<td>PAS-001-PUBLICATION-001</td>
+<td>Núcleo arquitetural promovido</td>
+</tr>
+<tr>
+<td>PAS-001 1.0.0</td>
+<td>Maintain</td>
+<td>Arquivo canônico <code>pas-001-guivos-journey.md</code></td>
+<td>Active e normativo</td>
+</tr>
+<tr>
+<td>Contratos finais</td>
+<td>Maintain</td>
+<td>Nove documentos <code>*-CONTRACT-001</code></td>
+<td>Autoridades especializadas</td>
+</tr>
+<tr>
+<td>Extensões normativas</td>
+<td>Maintain</td>
+<td>54 extensões das Capacidades 01–09</td>
+<td>Vigentes</td>
+</tr>
+<tr>
+<td>Prontidão</td>
+<td>Supersede</td>
+<td>PAS-001-PUBLICATION-001</td>
+<td><code>Published — PAS-001 1.0.0 active</code></td>
+</tr>
+<tr>
+<td>Próximo ponto</td>
+<td>Refine</td>
+<td>Roadmap e Knowledge Board</td>
+<td><code>PAS-001-CAPABILITY-MAP-001</code></td>
+</tr>
+</tbody>
+</table>
 
 
 

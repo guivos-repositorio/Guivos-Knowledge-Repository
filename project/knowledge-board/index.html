@@ -2235,7 +2235,7 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -2435,7 +2435,7 @@
   <span class="md-ellipsis">
     
   
-    PAS-001-CANDIDATE-001 — Edição Candidata Federada 1.0.0
+    PAS-001-CANDIDATE-001 — Edição Candidata Histórica 1.0.0
   
 
     
@@ -2445,7 +2445,7 @@
     
   
   
-    <span class="md-status md-status--candidate"></span>
+    <span class="md-status md-status--historical"></span>
   
 
   
@@ -2471,6 +2471,41 @@
     
   
     PAS-001-RELEASE-VALIDATION-001 — Validação Editorial e Normativa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../product-architecture/pas-001-guivos-journey-publicacao-controlada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PAS-001-PUBLICATION-001 — Publicação Controlada 1.0.0
   
 
     
@@ -6642,6 +6677,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#publicacao-controlada-do-pas-001" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Publicação controlada do PAS-001
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#capacidades-do-journey" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7131,8 +7177,8 @@
 </tr>
 <tr>
 <td>PAS-001 — Guivos Journey</td>
-<td>Draft 0.5.0 — Active</td>
-<td>Especificar a Experience Layer</td>
+<td>Active 1.0.0</td>
+<td>Governar a arquitetura canônica da Experience Layer</td>
 </tr>
 <tr>
 <td>PAS-001-RECON-001</td>
@@ -7146,13 +7192,18 @@
 </tr>
 <tr>
 <td>PAS-001-CANDIDATE-001</td>
-<td>Candidate 1.0.0-rc.1</td>
-<td>Consolidar a edição federada candidata do Guivos Journey</td>
+<td>Historical 1.0.0-rc.1 — promoted</td>
+<td>Preservar a edição candidata que originou o PAS-001 1.0.0</td>
 </tr>
 <tr>
 <td>PAS-001-RELEASE-VALIDATION-001</td>
 <td>Active 1.0.0</td>
-<td>Validar a candidata e emitir parecer de publicação</td>
+<td>Preservar a validação que autorizou a publicação</td>
+</tr>
+<tr>
+<td>PAS-001-PUBLICATION-001</td>
+<td>Active 1.0.0</td>
+<td>Registrar a publicação controlada do PAS-001 1.0.0</td>
 </tr>
 <tr>
 <td>PAS-001-CC-LIFECYCLE-001</td>
@@ -7355,20 +7406,20 @@
 <td><code>Product Engineering</code></td>
 </tr>
 <tr>
-<td>Especificação-base</td>
-<td><code>PAS-001 — Guivos Journey 0.5.0</code></td>
+<td>Especificação arquitetural</td>
+<td><code>PAS-001 — Guivos Journey 1.0.0</code></td>
 </tr>
 <tr>
 <td>Reconciliação vigente</td>
 <td><code>PAS-001-RECON-001 1.0.0</code></td>
 </tr>
 <tr>
-<td>Parecer de prontidão</td>
-<td><code>Ready for publication — PAS-001 1.0.0 publication requires explicit approval</code></td>
+<td>Estado canônico</td>
+<td><code>Published — PAS-001 1.0.0 active</code></td>
 </tr>
 <tr>
-<td>Lacuna bloqueante</td>
-<td>Aprovação expressa e execução controlada de <code>PAS-001-PUBLICATION-001</code></td>
+<td>Lacuna bloqueante da arquitetura funcional</td>
+<td>Nenhuma</td>
 </tr>
 <tr>
 <td>Extensões vigentes da Capacidade 01</td>
@@ -7384,11 +7435,11 @@
 </tr>
 <tr>
 <td>Frente ativa</td>
-<td><code>PAS-001-PUBLICATION-001</code> — Publicação Controlada do PAS-001 — Guivos Journey 1.0.0</td>
+<td><code>PAS-001-CAPABILITY-MAP-001</code> — Mapa Final de Capacidades do Guivos Journey</td>
 </tr>
 <tr>
 <td>Estado da frente ativa</td>
-<td>Validação concluída; publicação depende de aprovação expressa</td>
+<td>Publicação concluída; mapa executivo e navegável pendente</td>
 </tr>
 <tr>
 <td>Extensões normativas de Experiências</td>
@@ -7424,16 +7475,18 @@
 </tr>
 <tr>
 <td>Foco imediato</td>
-<td>Preparar a promoção controlada da candidata, sem alterar o canônico antes da aprovação expressa</td>
+<td>Consolidar o Mapa Final de Capacidades a partir do PAS-001 1.0.0 publicado</td>
 </tr>
 </tbody>
 </table>
 <h2 id="auditoria-final-do-pas-001">Auditoria final do PAS-001<a class="headerlink" href="#auditoria-final-do-pas-001" title="Permanent link">&para;</a></h2>
 <p><code>PAS-001-AUDIT-001 1.0.0</code> aprovou os 15 gates, registrou supersessão e autoridade e autorizou a edição candidata.</p>
 <h2 id="edicao-candidata-do-pas-001">Edição candidata do PAS-001<a class="headerlink" href="#edicao-candidata-do-pas-001" title="Permanent link">&para;</a></h2>
-<p><code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> está criada e pronta para validação. O <code>PAS-001 0.5.0</code> permanece canônico e a publicação de <code>1.0.0</code> continua condicionada.</p>
+<p><code>PAS-001-CANDIDATE-001 1.0.0-rc.1</code> permanece histórica após a promoção de seu núcleo ao <code>PAS-001 1.0.0</code>.</p>
 <h2 id="validacao-de-release-do-pas-001">Validação de release do PAS-001<a class="headerlink" href="#validacao-de-release-do-pas-001" title="Permanent link">&para;</a></h2>
-<p><code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> aprovou os 25 gates, os 35 critérios de aceite e o bloqueio dos 30 comportamentos proibidos. O <code>PAS-001 0.5.0</code> permanece canônico até aprovação expressa e publicação controlada.</p>
+<p><code>PAS-001-RELEASE-VALIDATION-001 1.0.0</code> aprovou os 25 gates, os 35 critérios de aceite e o bloqueio dos 30 comportamentos proibidos.</p>
+<h2 id="publicacao-controlada-do-pas-001">Publicação controlada do PAS-001<a class="headerlink" href="#publicacao-controlada-do-pas-001" title="Permanent link">&para;</a></h2>
+<p><code>PAS-001-PUBLICATION-001 1.0.0</code> promoveu a candidata para <code>PAS-001 1.0.0 active</code>, preservou o histórico e encerrou a lacuna de publicação arquitetural.</p>
 <h2 id="capacidades-do-journey">Capacidades do Journey<a class="headerlink" href="#capacidades-do-journey" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
