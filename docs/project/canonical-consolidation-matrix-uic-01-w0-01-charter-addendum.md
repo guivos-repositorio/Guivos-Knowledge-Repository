@@ -1,6 +1,6 @@
 ---
 id: CANONICAL-CONSOLIDATION-MATRIX-UIC-01-W0-01-CHARTER-ADDENDUM
-ntitle: Matriz de Consolidação Canônica — Addendum W0-01 Charter
+title: Matriz de Consolidação Canônica — Addendum W0-01 Charter
 status: active
 version: 1.38.0
 owner: Guivos
