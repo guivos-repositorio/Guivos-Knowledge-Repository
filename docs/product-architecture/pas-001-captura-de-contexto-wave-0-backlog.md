@@ -58,6 +58,7 @@ Cada história deverá possuir:
 | W0-01-ST-006 | criar registro de riscos, exceções e interrupções | P0 | exceção possui expiração, mitigação e aprovador | EV-017 |
 | W0-01-ST-007 | definir política de dados sintéticos | P0 | nenhum dado pessoal real é necessário no desenvolvimento | EV-004 |
 | W0-01-ST-008 | inventariar segredos e credenciais por ambiente | P1 | nenhum segredo aparece em código, payload ou log | EV-005 |
+| W0-01-ST-009 | validar prontidão das dependências `required_before_build` | P0 | cada dependência possui owner, contrato, fallback e evidência de disponibilidade | EV-017 |
 
 ## 4. W0-02 — Núcleo de domínio
 
