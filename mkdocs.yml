@@ -116,11 +116,13 @@ nav:
       - PAS-001-PUBLICATION-001 — Publicação Controlada 1.0.0: product-architecture/pas-001-guivos-journey-publicacao-controlada.md
       - PAS-001-CAPABILITY-MAP-001 — Mapa Final de Capacidades: product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md
       - PAS-001-ENGINEERING-HANDOFF-001 — Engineering Handoff: product-architecture/pas-001-guivos-journey-engineering-handoff.md
+      - Engineering Handoff 0.6.0 — Wave 0 Planned: product-architecture/pas-001-guivos-journey-engineering-handoff-0.6.0.md
       - Engineering Handoff 0.5.0 — Technically Ready: product-architecture/pas-001-guivos-journey-engineering-handoff-0.5.0.md
       - Engineering Handoff 0.4.0 — Technical Contracts: product-architecture/pas-001-guivos-journey-engineering-handoff-0.4.0.md
       - Engineering Handoff 0.3.0 — Technical Lifecycle: product-architecture/pas-001-guivos-journey-engineering-handoff-0.3.0.md
       - Engineering Handoff 0.2.0 — Effective State: product-architecture/pas-001-guivos-journey-engineering-handoff-0.2.0.md
       - PAS-001-CC-UIC-001 — Capture Context Engineering Unit: product-architecture/pas-001-captura-de-contexto-engineering-unit.md
+      - UIC-01 0.6.0 — Wave 0 Implementation Planned: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.6.0.md
       - UIC-01 0.5.0 — Technically Ready for Implementation: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.5.0.md
       - UIC-01 0.4.0 — Contracts Technically Proposed: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.4.0.md
       - UIC-01 0.3.0 — Lifecycle Technically Defined: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.3.0.md
@@ -133,6 +135,15 @@ nav:
       - PAS-001-CC-UIC-GUARDRAILS-ACCESS-001 — Guardrails and Access Matrix: product-architecture/pas-001-captura-de-contexto-guardrails-and-access-matrix.md
       - PAS-001-CC-UIC-NFR-SECURITY-001 — NFR, SLO and Threat Model: product-architecture/pas-001-captura-de-contexto-nfr-slo-threat-model.md
       - PAS-001-CC-UIC-READINESS-001 — Tests, Evidence and Readiness: product-architecture/pas-001-captura-de-contexto-test-evidence-readiness.md
+      - PAS-001-CC-W0-PLAN-001 — Wave 0 Implementation Plan: product-architecture/pas-001-captura-de-contexto-wave-0-implementation-plan.md
+      - PAS-001-CC-W0-BACKLOG-001 — Wave 0 Backlog: product-architecture/pas-001-captura-de-contexto-wave-0-backlog.md
+      - PAS-001-CC-W0-DEPENDENCY-001 — Wave 0 Dependencies: product-architecture/pas-001-captura-de-contexto-wave-0-dependency-plan.md
+      - PAS-001-CC-W0-ENV-001 — Wave 0 Environments and Integration: product-architecture/pas-001-captura-de-contexto-wave-0-environments-integration.md
+      - PAS-001-CC-W0-POC-001 — Wave 0 Proof Plan: product-architecture/pas-001-captura-de-contexto-wave-0-proof-plan.md
+      - PAS-001-CC-W0-EVIDENCE-001 — Wave 0 Evidence Plan: product-architecture/pas-001-captura-de-contexto-wave-0-evidence-plan.md
+      - PAS-001-CC-W0-RISK-001 — Wave 0 Risk and Stop Register: product-architecture/pas-001-captura-de-contexto-wave-0-risk-stop-register.md
+      - PAS-001-CC-W0-TECH-DECISIONS-001 — Wave 0 Technology Decisions: product-architecture/pas-001-captura-de-contexto-wave-0-technology-decision-register.md
+      - Product Architecture 1.37.0 — Wave 0 Planned: product-architecture/product-architecture-1.37.0.md
       - Product Architecture 1.36.0 — Technically Ready: product-architecture/product-architecture-1.36.0.md
       - Product Architecture 1.35.0 — Technical Contracts: product-architecture/product-architecture-1.35.0.md
       - Product Architecture 1.34.0 — Technical Lifecycle: product-architecture/product-architecture-1.34.0.md
@@ -234,21 +245,25 @@ nav:
       - ADR-CC-005 — Readiness da Onda 0: product-architecture/adrs/adr-cc-005-criterios-readiness-onda-0.md
   - Projeto:
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.16.0 — M5.17: project/architectural-milestones-4.16.0.md
       - Architectural Milestones 4.15.0 — M5.16: project/architectural-milestones-4.15.0.md
       - Architectural Milestones 4.14.0 — M5.15: project/architectural-milestones-4.14.0.md
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.18.0 — Wave 0 Planned: project/knowledge-board-11.18.0.md
       - Knowledge Board 11.17.0 — Technically Ready: project/knowledge-board-11.17.0.md
       - Knowledge Board 11.16.0 — Technical Contracts: project/knowledge-board-11.16.0.md
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.37.0 — Wave 0 Planning: project/canonical-consolidation-matrix-uic-01-wave-0-planning-addendum.md
       - Canonical Matrix 1.36.0 — Technically Ready: project/canonical-consolidation-matrix-uic-01-readiness-addendum.md
       - Canonical Matrix 1.35.0 — Technical Contracts: project/canonical-consolidation-matrix-uic-01-contracts-addendum.md
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.65.0 — Wave 0 Planning: project/changelog-0.65.0-uic-01-wave-0-planning.md
       - Changelog 0.64.0 — Technically Ready: project/changelog-0.64.0-uic-01-technically-ready.md
       - Changelog 0.63.0 — Technical Contracts: project/changelog-0.63.0-uic-01-contracts-proposed.md
       - Changelog 0.62.0 — Technical Lifecycle: project/changelog-0.62.0-uic-01-lifecycle-defined.md
@@ -274,6 +289,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.18.0 — Wave 0 Planned: roadmap-11.18.0.md
       - Roadmap 11.17.0 — Technically Ready: roadmap-11.17.0.md
       - Roadmap 11.16.0 — Technical Contracts: roadmap-11.16.0.md
       - Roadmap 11.15.0 — Technical Lifecycle: roadmap-11.15.0.md
