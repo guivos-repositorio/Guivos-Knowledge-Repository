@@ -231,6 +231,15 @@ nav:
       - GEM-001 — Atores Econômicos: economic-model/gem-001-economic-actors.md
       - GEM-001 — Princípios e Guardrails: economic-model/gem-001-principles-and-guardrails.md
       - GEM-001 — Mapa de Desenvolvimento: economic-model/gem-001-development-map.md
+      - GEM-001 — Checkpoint de Dependência: economic-model/gem-001-dependency-validation-checkpoint.md
+      - GEM-002 — Geração e Fluxos de Valor: economic-model/gem-002-value-generation-and-flows.md
+      - GEM-002 — Fontes de Valor: economic-model/gem-002-value-source-catalog.md
+      - GEM-002 — Objetos de Valor: economic-model/gem-002-value-object-taxonomy.md
+      - GEM-002 — Contrato de Fluxo: economic-model/gem-002-value-flow-contract.md
+      - GEM-002 — Mapa de Fluxos: economic-model/gem-002-ecosystem-value-flow-map.md
+      - GEM-002 — Custos, Riscos e Vazamentos: economic-model/gem-002-cost-risk-leakage-map.md
+      - GEM-002 — Fronteiras Econômicas: economic-model/gem-002-capture-sharing-reinvestment-boundaries.md
+      - GEM-002 — Cenários e Gates: economic-model/gem-002-scenarios-and-gates.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -264,6 +273,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.19.0 — M6.1: project/architectural-milestones-4.19.0.md
       - Architectural Milestones 4.18.0 — M6.0: project/architectural-milestones-4.18.0.md
       - Architectural Milestones 4.17.0 — M5.18: project/architectural-milestones-4.17.0.md
       - Architectural Milestones 4.16.0 — M5.17: project/architectural-milestones-4.16.0.md
@@ -272,6 +282,7 @@ nav:
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.21.0 — GEM-002: project/knowledge-board-11.21.0.md
       - Knowledge Board 11.20.0 — GEM-001: project/knowledge-board-11.20.0.md
       - Knowledge Board 11.19.0 — W0-01 Charter: project/knowledge-board-11.19.0.md
       - Knowledge Board 11.18.0 — Wave 0 Planned: project/knowledge-board-11.18.0.md
@@ -280,6 +291,7 @@ nav:
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.40.0 — GEM-002: project/canonical-consolidation-matrix-gem-002-addendum.md
       - Canonical Matrix 1.39.0 — GEM-001: project/canonical-consolidation-matrix-gem-001-foundation-addendum.md
       - Canonical Matrix 1.38.0 — W0-01 Charter: project/canonical-consolidation-matrix-uic-01-w0-01-charter-addendum.md
       - Canonical Matrix 1.37.0 — Wave 0 Planning: project/canonical-consolidation-matrix-uic-01-wave-0-planning-addendum.md
@@ -288,6 +300,7 @@ nav:
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.68.0 — GEM-002: project/changelog-0.68.0-gem-002.md
       - Changelog 0.67.0 — GEM-001: project/changelog-0.67.0-gem-001-foundation.md
       - Changelog 0.66.0 — W0-01 Charter: project/changelog-0.66.0-uic-01-w0-01-charter.md
       - Changelog 0.65.0 — Wave 0 Planning: project/changelog-0.65.0-uic-01-wave-0-planning.md
@@ -316,6 +329,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.21.0 — GEM-002: roadmap-11.21.0.md
       - Roadmap 11.20.0 — GEM-001: roadmap-11.20.0.md
       - Roadmap 11.19.0 — W0-01 Charter: roadmap-11.19.0.md
       - Roadmap 11.18.0 — Wave 0 Planned: roadmap-11.18.0.md
