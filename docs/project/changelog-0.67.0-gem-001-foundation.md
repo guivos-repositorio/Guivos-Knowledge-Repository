@@ -1,6 +1,6 @@
 ---
 id: CHANGELOG-0.67.0-GEM-001
- title: Changelog 0.67.0 — Fundação do Guivos Economic Model
+title: Changelog 0.67.0 — Fundação do Guivos Economic Model
 status: active
 version: 0.67.0
 owner: Guivos
