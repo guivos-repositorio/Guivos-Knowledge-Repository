@@ -2,13 +2,14 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.4.0
+version: 0.5.0
 owner: Guivos
 last_updated: 2026-07-21
 related:
   - GEM-001
   - GEM-002
   - GEM-003
+  - GEM-004
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -18,9 +19,9 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Revenue architecture defined — GEM-003 Draft 0.1.0`.
+`Free and paid model defined — GEM-004 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor e GEM-003 organiza famílias de receita, eventos, atores econômicos, bases candidatas, conflitos, concentração e validação, sem aprovar preços, contratos ou implementação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas e GEM-004 define o baseline gratuito, ampliações pagas, arquétipos, elegibilidade, ciclo de vida e paywalls, sem aprovar preços, ofertas, cobrança ou implementação.
 
 ## Princípio central
 
@@ -38,6 +39,7 @@ necessidade ou potencial
 → valor realizado
 → valor percebido e/ou comprovado
 → família de receita conceitualmente admissível
+→ modelo gratuito, pago ou financiado
 → captura legítima futura
 → compartilhamento
 → reinvestimento
@@ -54,6 +56,7 @@ necessidade ou potencial
 - famílias e mecanismos de receita;
 - eventos econômicos e bases de cobrança;
 - planos gratuitos e pagos;
+- elegibilidade, entitlements e ciclo de vida conceitual;
 - sustentabilidade financeira;
 - Guivos Mall;
 - Guivos Travel;
@@ -101,7 +104,22 @@ necessidade ou potencial
 - [Política de Transparência e Conflitos](gem-003-disclosure-and-conflict-policy.md);
 - [Concentração e Resiliência](gem-003-concentration-and-resilience.md);
 - [Framework de Validação](gem-003-validation-framework.md);
-- [Cenários e Gates](gem-003-scenarios-and-gates.md).
+- [Cenários e Gates](gem-003-scenarios-and-gates.md);
+- [Checkpoint de Validação como Dependência](gem-003-dependency-validation-checkpoint.md).
+
+## Autoridades do GEM-004
+
+- [Modelo Gratuito e Pago](gem-004-free-and-paid-model.md);
+- [Baseline de Valor Universal Gratuito](gem-004-universal-free-value-baseline.md);
+- [Taxonomia de Ampliações de Valor Pago](gem-004-paid-value-extension-taxonomy.md);
+- [Catálogo de Arquétipos de Acesso e Planos](gem-004-plan-archetype-catalog.md);
+- [Matriz de Alocação de Capacidades](gem-004-capability-allocation-matrix.md);
+- [Elegibilidade e Acesso Financiado](gem-004-eligibility-and-funded-access.md);
+- [Ciclo de Vida Conceitual dos Planos](gem-004-plan-lifecycle.md);
+- [Política de Paywall e Proteção do Gratuito](gem-004-paywall-policy.md);
+- [Política de Upgrade, Downgrade e Cancelamento](gem-004-upgrade-downgrade-cancellation-policy.md);
+- [Contrato Canônico de Plano](gem-004-plan-contract.md);
+- [Cenários e Gates](gem-004-scenarios-and-gates.md).
 
 ## Separações canônicas
 
@@ -119,7 +137,14 @@ necessidade ou potencial
 - contribuição não é remuneração automática;
 - pagamento não é autoridade;
 - família conceitualmente admissível não é mecanismo comercial aprovado;
-- base de cobrança candidata não é preço.
+- base de cobrança candidata não é preço;
+- gratuito real não é trial oculto;
+- arquétipo não é plano comercial;
+- plano comercial não é preço;
+- preço futuro não autoriza cobrança automática;
+- ampliação paga não é direito essencial;
+- financiador não é autoridade sobre o beneficiário;
+- downgrade não é punição.
 
 ## Dependências
 
@@ -129,10 +154,12 @@ O desenvolvimento utiliza Foundation, Fundamental Model, Core Capability Model, 
 
 Não estão definidos:
 
-- preços;
+- nomes comerciais finais;
+- preços, moedas ou descontos;
 - percentuais de comissão;
 - mecanismos comerciais específicos;
-- planos finais;
+- composição final de planos;
+- limites quantitativos e períodos de cobrança;
 - projeções financeiras;
 - unit economics;
 - valuation;
@@ -147,4 +174,4 @@ Não estão definidos:
 
 ## Próximo ponto
 
-`GEM-004 — Modelo Gratuito e Pago`, após validação e integração separadas do GEM-003.
+`GEM-005 — Incentivos e Recompensas`, após validação e integração separadas do GEM-004.
