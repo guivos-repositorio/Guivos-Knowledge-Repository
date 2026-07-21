@@ -60,7 +60,7 @@ Não substitui Foundation, Business Architecture, Product Architecture, GEM-001,
 - gratuito real não é trial oculto;
 - arquétipo não é plano comercial;
 - plano comercial não é preço;
-- price future does not authorize billing;
+- preço futuro não autoriza cobrança automática;
 - ampliação paga não é direito essencial;
 - falha de pagamento não autoriza perda de dados;
 - financiador não é autoridade sobre o beneficiário;
