@@ -2,12 +2,13 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.3.0
+version: 0.4.0
 owner: Guivos
-last_updated: 2026-07-20
+last_updated: 2026-07-21
 related:
   - GEM-001
   - GEM-002
+  - GEM-003
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -17,9 +18,9 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Value generation and flows defined — GEM-002 Draft 0.1.0`.
+`Revenue architecture defined — GEM-003 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual e GEM-002 define como o valor surge, circula, é realizado, comprovado, capturado, compartilhado e reinvestido, sem aprovar receitas, preços ou implementação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor e GEM-003 organiza famílias de receita, eventos, atores econômicos, bases candidatas, conflitos, concentração e validação, sem aprovar preços, contratos ou implementação.
 
 ## Princípio central
 
@@ -36,6 +37,7 @@ necessidade ou potencial
 → objeto de valor disponibilizado
 → valor realizado
 → valor percebido e/ou comprovado
+→ família de receita conceitualmente admissível
 → captura legítima futura
 → compartilhamento
 → reinvestimento
@@ -49,7 +51,8 @@ necessidade ou potencial
 - atores e relações econômicas;
 - fontes e objetos de valor;
 - custos, riscos, vazamentos e externalidades;
-- fontes de receita;
+- famílias e mecanismos de receita;
+- eventos econômicos e bases de cobrança;
 - planos gratuitos e pagos;
 - sustentabilidade financeira;
 - Guivos Mall;
@@ -84,7 +87,21 @@ necessidade ou potencial
 - [Mapa de Fluxos do Ecossistema](gem-002-ecosystem-value-flow-map.md);
 - [Custos, Riscos e Vazamentos](gem-002-cost-risk-leakage-map.md);
 - [Fronteiras de Captura, Compartilhamento e Reinvestimento](gem-002-capture-sharing-reinvestment-boundaries.md);
-- [Cenários e Gates](gem-002-scenarios-and-gates.md).
+- [Cenários e Gates](gem-002-scenarios-and-gates.md);
+- [Checkpoint de Validação como Dependência](gem-002-dependency-validation-checkpoint.md).
+
+## Autoridades do GEM-003
+
+- [Arquitetura de Receitas](gem-003-revenue-architecture.md);
+- [Catálogo de Famílias de Receita](gem-003-revenue-family-catalog.md);
+- [Modelo de Eventos Econômicos](gem-003-revenue-event-model.md);
+- [Matriz de Pagadores, Beneficiários e Recebedores](gem-003-payer-beneficiary-matrix.md);
+- [Catálogo de Bases de Cobrança](gem-003-charge-basis-catalog.md);
+- [Contrato Canônico de Família de Receita](gem-003-revenue-family-contract.md);
+- [Política de Transparência e Conflitos](gem-003-disclosure-and-conflict-policy.md);
+- [Concentração e Resiliência](gem-003-concentration-and-resilience.md);
+- [Framework de Validação](gem-003-validation-framework.md);
+- [Cenários e Gates](gem-003-scenarios-and-gates.md).
 
 ## Separações canônicas
 
@@ -92,12 +109,17 @@ necessidade ou potencial
 - entrega não é realização;
 - percepção não é comprovação;
 - comprovação não é receita;
-- receita não é lucro ou sustentabilidade;
+- GMV não é receita da Guivos;
+- caixa recebido não é reconhecimento;
+- receita não é margem, lucro ou sustentabilidade;
+- repasse não é receita integral;
+- capital, dívida e aporte não são receita operacional;
 - dados não são mercadoria livre;
 - atenção não é consentimento;
 - contribuição não é remuneração automática;
 - pagamento não é autoridade;
-- ponto candidato de captura não é receita aprovada.
+- família conceitualmente admissível não é mecanismo comercial aprovado;
+- base de cobrança candidata não é preço.
 
 ## Dependências
 
@@ -109,16 +131,20 @@ Não estão definidos:
 
 - preços;
 - percentuais de comissão;
-- famílias finais de receita;
+- mecanismos comerciais específicos;
+- planos finais;
 - projeções financeiras;
+- unit economics;
 - valuation;
 - divisão societária;
+- tratamento tributário ou contábil;
 - token ou criptomoeda;
 - quantidade ou valor de pontos;
 - parceiros ou contratos específicos;
 - fornecedores tecnológicos;
+- sistemas de pagamento;
 - implementação.
 
 ## Próximo ponto
 
-`GEM-003 — Arquitetura de Receitas`, após validação e integração separadas do GEM-002.
+`GEM-004 — Modelo Gratuito e Pago`, após validação e integração separadas do GEM-003.
