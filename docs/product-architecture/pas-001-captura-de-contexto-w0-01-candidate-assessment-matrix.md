@@ -9,7 +9,7 @@ normative: true
 parent: PAS-001-CC-W0-01-OWNER-APPOINTMENT-001
 related:
   - PAS-001-CC-W0-01-ROLE-PROFILES-001
-  - PAS-001-CC-W0-01-RISK-001
+  - PAS-001-CC-W0-RISK-001
 ---
 
 # PAS-001-CC-W0-01-CANDIDATE-ASSESSMENT-001 — Matriz de Avaliação de Candidatos
