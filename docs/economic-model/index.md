@@ -2,11 +2,12 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.2.0
+version: 0.3.0
 owner: Guivos
 last_updated: 2026-07-20
 related:
   - GEM-001
+  - GEM-002
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -16,9 +17,9 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Foundation initiated — GEM-001 Draft 0.1.0`.
+`Value generation and flows defined — GEM-002 Draft 0.1.0`.
 
-O domínio deixa o estado meramente `planned` e passa a `in_progress`. Esta mudança inicia sua fundação conceitual, sem definir preços, percentuais, projeções ou implementação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual e GEM-002 define como o valor surge, circula, é realizado, comprovado, capturado, compartilhado e reinvestido, sem aprovar receitas, preços ou implementação.
 
 ## Princípio central
 
@@ -30,10 +31,12 @@ A sustentabilidade econômica não poderá depender de exploração de vulnerabi
 
 ```text
 necessidade ou potencial
-→ geração de valor
-→ entrega de valor
+→ fonte e proposta de valor
+→ capacidades mobilizadas
+→ objeto de valor disponibilizado
+→ valor realizado
 → valor percebido e/ou comprovado
-→ captura legítima
+→ captura legítima futura
 → compartilhamento
 → reinvestimento
 → fortalecimento do ecossistema
@@ -44,6 +47,8 @@ necessidade ou potencial
 - princípios econômicos;
 - arquitetura de geração, entrega, captura, compartilhamento e reinvestimento de valor;
 - atores e relações econômicas;
+- fontes e objetos de valor;
+- custos, riscos, vazamentos e externalidades;
 - fontes de receita;
 - planos gratuitos e pagos;
 - sustentabilidade financeira;
@@ -67,7 +72,32 @@ necessidade ou potencial
 - [Arquitetura de Valor](gem-001-value-architecture.md);
 - [Atores e Relações Econômicas](gem-001-economic-actors.md);
 - [Princípios e Guardrails](gem-001-principles-and-guardrails.md);
-- [Mapa de Desenvolvimento](gem-001-development-map.md).
+- [Mapa de Desenvolvimento](gem-001-development-map.md);
+- [Checkpoint de Validação como Dependência](gem-001-dependency-validation-checkpoint.md).
+
+## Autoridades do GEM-002
+
+- [Geração e Fluxos de Valor](gem-002-value-generation-and-flows.md);
+- [Catálogo de Fontes de Valor](gem-002-value-source-catalog.md);
+- [Taxonomia de Objetos de Valor](gem-002-value-object-taxonomy.md);
+- [Contrato Canônico de Fluxo](gem-002-value-flow-contract.md);
+- [Mapa de Fluxos do Ecossistema](gem-002-ecosystem-value-flow-map.md);
+- [Custos, Riscos e Vazamentos](gem-002-cost-risk-leakage-map.md);
+- [Fronteiras de Captura, Compartilhamento e Reinvestimento](gem-002-capture-sharing-reinvestment-boundaries.md);
+- [Cenários e Gates](gem-002-scenarios-and-gates.md).
+
+## Separações canônicas
+
+- valor potencial não é entrega;
+- entrega não é realização;
+- percepção não é comprovação;
+- comprovação não é receita;
+- receita não é lucro ou sustentabilidade;
+- dados não são mercadoria livre;
+- atenção não é consentimento;
+- contribuição não é remuneração automática;
+- pagamento não é autoridade;
+- ponto candidato de captura não é receita aprovada.
 
 ## Dependências
 
@@ -79,14 +109,16 @@ Não estão definidos:
 
 - preços;
 - percentuais de comissão;
+- famílias finais de receita;
 - projeções financeiras;
 - valuation;
 - divisão societária;
 - token ou criptomoeda;
 - quantidade ou valor de pontos;
+- parceiros ou contratos específicos;
 - fornecedores tecnológicos;
 - implementação.
 
 ## Próximo ponto
 
-`GEM-002 — Geração e Fluxos de Valor`, após validação e integração separadas do GEM-001.
+`GEM-003 — Arquitetura de Receitas`, após validação e integração separadas do GEM-002.
