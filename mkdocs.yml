@@ -263,6 +263,20 @@ nav:
       - GEM-004 — Upgrade, Downgrade e Cancelamento: economic-model/gem-004-upgrade-downgrade-cancellation-policy.md
       - GEM-004 — Contrato Canônico de Plano: economic-model/gem-004-plan-contract.md
       - GEM-004 — Cenários e Gates: economic-model/gem-004-scenarios-and-gates.md
+      - GEM-004 — Checkpoint de Dependência: economic-model/gem-004-dependency-validation-checkpoint.md
+      - GEM-005 — Incentivos e Recompensas: economic-model/gem-005-incentives-and-rewards-model.md
+      - GEM-005 — Camadas de Incentivo: economic-model/gem-005-incentive-layer-architecture.md
+      - GEM-005 — Famílias de Incentivo: economic-model/gem-005-incentive-family-catalog.md
+      - GEM-005 — Pontos e Créditos: economic-model/gem-005-points-and-credits-policy.md
+      - GEM-005 — Financiamento de Recompensas: economic-model/gem-005-reward-funding-model.md
+      - GEM-005 — Eventos e Evidências: economic-model/gem-005-eligible-events-and-evidence.md
+      - GEM-005 — Ciclo de Vida de Recompensas: economic-model/gem-005-reward-lifecycle.md
+      - GEM-005 — Resgate, Expiração e Reversão: economic-model/gem-005-redemption-expiration-reversal-policy.md
+      - GEM-005 — Segurança Comportamental: economic-model/gem-005-behavioral-safety-policy.md
+      - GEM-005 — Fraude e Abuso: economic-model/gem-005-fraud-and-abuse-control-model.md
+      - GEM-005 — Voluntariado e Impacto Social: economic-model/gem-005-volunteering-and-social-impact-incentives.md
+      - GEM-005 — Contrato Canônico de Programa: economic-model/gem-005-incentive-program-contract.md
+      - GEM-005 — Cenários e Gates: economic-model/gem-005-scenarios-and-gates.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -296,6 +310,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.22.0 — M6.4: project/architectural-milestones-4.22.0.md
       - Architectural Milestones 4.21.0 — M6.3: project/architectural-milestones-4.21.0.md
       - Architectural Milestones 4.20.0 — M6.2: project/architectural-milestones-4.20.0.md
       - Architectural Milestones 4.19.0 — M6.1: project/architectural-milestones-4.19.0.md
@@ -307,6 +322,7 @@ nav:
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.24.0 — GEM-005: project/knowledge-board-11.24.0.md
       - Knowledge Board 11.23.0 — GEM-004: project/knowledge-board-11.23.0.md
       - Knowledge Board 11.22.0 — GEM-003: project/knowledge-board-11.22.0.md
       - Knowledge Board 11.21.0 — GEM-002: project/knowledge-board-11.21.0.md
@@ -318,6 +334,7 @@ nav:
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.43.0 — GEM-005: project/canonical-consolidation-matrix-gem-005-addendum.md
       - Canonical Matrix 1.42.0 — GEM-004: project/canonical-consolidation-matrix-gem-004-addendum.md
       - Canonical Matrix 1.41.0 — GEM-003: project/canonical-consolidation-matrix-gem-003-addendum.md
       - Canonical Matrix 1.40.0 — GEM-002: project/canonical-consolidation-matrix-gem-002-addendum.md
@@ -329,6 +346,7 @@ nav:
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.71.0 — GEM-005: project/changelog-0.71.0-gem-005.md
       - Changelog 0.70.0 — GEM-004: project/changelog-0.70.0-gem-004.md
       - Changelog 0.69.0 — GEM-003: project/changelog-0.69.0-gem-003.md
       - Changelog 0.68.0 — GEM-002: project/changelog-0.68.0-gem-002.md
@@ -360,6 +378,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.24.0 — GEM-005: roadmap-11.24.0.md
       - Roadmap 11.23.0 — GEM-004: roadmap-11.23.0.md
       - Roadmap 11.22.0 — GEM-003: roadmap-11.22.0.md
       - Roadmap 11.21.0 — GEM-002: roadmap-11.21.0.md
