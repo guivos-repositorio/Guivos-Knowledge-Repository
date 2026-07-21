@@ -1,6 +1,6 @@
 ---
 id: CHANGELOG-0.67.0-UIC-01-W0-01-OWNER-APPOINTMENT
- title: Changelog 0.67.0 — Framework de Nomeação dos Owners do W0-01
+title: Changelog 0.67.0 — Framework de Nomeação dos Owners do W0-01
 status: active
 version: 0.67.0
 owner: Guivos
