@@ -240,6 +240,17 @@ nav:
       - GEM-002 — Custos, Riscos e Vazamentos: economic-model/gem-002-cost-risk-leakage-map.md
       - GEM-002 — Fronteiras Econômicas: economic-model/gem-002-capture-sharing-reinvestment-boundaries.md
       - GEM-002 — Cenários e Gates: economic-model/gem-002-scenarios-and-gates.md
+      - GEM-002 — Checkpoint de Dependência: economic-model/gem-002-dependency-validation-checkpoint.md
+      - GEM-003 — Arquitetura de Receitas: economic-model/gem-003-revenue-architecture.md
+      - GEM-003 — Famílias de Receita: economic-model/gem-003-revenue-family-catalog.md
+      - GEM-003 — Eventos Econômicos: economic-model/gem-003-revenue-event-model.md
+      - GEM-003 — Pagadores e Beneficiários: economic-model/gem-003-payer-beneficiary-matrix.md
+      - GEM-003 — Bases de Cobrança: economic-model/gem-003-charge-basis-catalog.md
+      - GEM-003 — Contrato de Família: economic-model/gem-003-revenue-family-contract.md
+      - GEM-003 — Transparência e Conflitos: economic-model/gem-003-disclosure-and-conflict-policy.md
+      - GEM-003 — Concentração e Resiliência: economic-model/gem-003-concentration-and-resilience.md
+      - GEM-003 — Framework de Validação: economic-model/gem-003-validation-framework.md
+      - GEM-003 — Cenários e Gates: economic-model/gem-003-scenarios-and-gates.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -273,6 +284,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.20.0 — M6.2: project/architectural-milestones-4.20.0.md
       - Architectural Milestones 4.19.0 — M6.1: project/architectural-milestones-4.19.0.md
       - Architectural Milestones 4.18.0 — M6.0: project/architectural-milestones-4.18.0.md
       - Architectural Milestones 4.17.0 — M5.18: project/architectural-milestones-4.17.0.md
@@ -282,6 +294,7 @@ nav:
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.22.0 — GEM-003: project/knowledge-board-11.22.0.md
       - Knowledge Board 11.21.0 — GEM-002: project/knowledge-board-11.21.0.md
       - Knowledge Board 11.20.0 — GEM-001: project/knowledge-board-11.20.0.md
       - Knowledge Board 11.19.0 — W0-01 Charter: project/knowledge-board-11.19.0.md
@@ -291,6 +304,7 @@ nav:
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.41.0 — GEM-003: project/canonical-consolidation-matrix-gem-003-addendum.md
       - Canonical Matrix 1.40.0 — GEM-002: project/canonical-consolidation-matrix-gem-002-addendum.md
       - Canonical Matrix 1.39.0 — GEM-001: project/canonical-consolidation-matrix-gem-001-foundation-addendum.md
       - Canonical Matrix 1.38.0 — W0-01 Charter: project/canonical-consolidation-matrix-uic-01-w0-01-charter-addendum.md
@@ -300,6 +314,7 @@ nav:
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.69.0 — GEM-003: project/changelog-0.69.0-gem-003.md
       - Changelog 0.68.0 — GEM-002: project/changelog-0.68.0-gem-002.md
       - Changelog 0.67.0 — GEM-001: project/changelog-0.67.0-gem-001-foundation.md
       - Changelog 0.66.0 — W0-01 Charter: project/changelog-0.66.0-uic-01-w0-01-charter.md
@@ -329,6 +344,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.22.0 — GEM-003: roadmap-11.22.0.md
       - Roadmap 11.21.0 — GEM-002: roadmap-11.21.0.md
       - Roadmap 11.20.0 — GEM-001: roadmap-11.20.0.md
       - Roadmap 11.19.0 — W0-01 Charter: roadmap-11.19.0.md
