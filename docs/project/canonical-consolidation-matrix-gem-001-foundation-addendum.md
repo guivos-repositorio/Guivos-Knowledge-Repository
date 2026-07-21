@@ -1,6 +1,6 @@
 ---
 id: GKR-CANON-MATRIX-ADDENDUM-GEM-001
- title: Matriz de Consolidação Canônica — GEM-001 Foundation
+title: Matriz de Consolidação Canônica — GEM-001 Foundation
 status: active
 version: 1.39.0
 owner: Guivos
