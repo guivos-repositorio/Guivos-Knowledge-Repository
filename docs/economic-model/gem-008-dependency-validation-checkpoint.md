@@ -1,7 +1,7 @@
 ---
 id: GEM-008-DEPENDENCY-VALIDATION-CHECKPOINT-001
 title: Checkpoint de Validação do GEM-008 como Dependência
-status: draft
+status: passed_documentally
 version: 0.1.0
 owner: Guivos Economic Model
 last_updated: 2026-07-22

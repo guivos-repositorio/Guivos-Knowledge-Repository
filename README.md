@@ -5,31 +5,21 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M5.9 — Chat Continuity and Repository Reconciliation Completed
-- **Frente operacional:** Product Engineering
-- **Sincronização vigente:** GE2-SYNC-007
-- **Revisão concluída:** AR-001 0.5.0
+- **Marco vigente:** M6.10 — Guivos Economic Model Documentarily Closed
+- **Frente estratégica candidata:** A2-R03 — Business Architecture Review
 - **Especificação vigente:** PAS-001 — Guivos Journey 1.0.0
 - **Capacidades concluídas:** 01 — Captura de Contexto, 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
-- **Reconciliação vigente:** PAS-001-RECON-001 1.0.0
-- **Extensões vigentes da Capacidade 01:** PAS-001-CC-LIFECYCLE-001 1.0.0, PAS-001-CC-EVENT-INTEGRATION-001 1.0.0 e PAS-001-CC-CONTRACT-001 1.0.0 — etapa 3 de 3 concluída
-- **Auditoria final:** PAS-001-AUDIT-001 1.0.0
-- **Candidata histórica:** PAS-001-CANDIDATE-001 1.0.0-rc.1 — promoted
-- **Validação de release:** PAS-001-RELEASE-VALIDATION-001 1.0.0
 - **Estado canônico:** `Published — PAS-001 1.0.0 active`
 - **Mapa final:** `PAS-001-CAPABILITY-MAP-001 1.0.0` — ativo
-- **Próxima frente:** `PAS-001-ENGINEERING-HANDOFF-001` — Handoff Arquitetural para Product Engineering
-- **Extensões vigentes de Oportunidades Ativas:** PAS-001-OA-FOUNDATION-001, PAS-001-OA-LIFECYCLE-001, PAS-001-OA-VIEW-001, PAS-001-OA-EVENT-001, PAS-001-OA-INTEGRATION-001 e PAS-001-OA-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Intervenções Contextuais:** PAS-001-IC-FOUNDATION-001, PAS-001-IC-LIFECYCLE-001, PAS-001-IC-VIEW-001, PAS-001-IC-EVENT-001, PAS-001-IC-INTEGRATION-001 e PAS-001-IC-CONTRACT-001, todas em 1.0.0
-- **Extensões vigentes de Experiências:** PAS-001-EXP-FOUNDATION-001 1.0.0, PAS-001-EXP-LIFECYCLE-001 1.0.0, PAS-001-EXP-VIEW-001 1.0.0, PAS-001-EXP-EVENT-001 1.0.0, PAS-001-EXP-INTEGRATION-001 1.0.0 e PAS-001-EXP-CONTRACT-001 1.0.0
-- **Extensões vigentes de Evolução Contínua:** PAS-001-EC-FOUNDATION-001 1.0.0, PAS-001-EC-LIFECYCLE-001 1.0.0, PAS-001-EC-VIEW-001 1.0.0, PAS-001-EC-EVENT-001 1.0.0, PAS-001-EC-INTEGRATION-001 1.0.0 e PAS-001-EC-CONTRACT-001 1.0.0
+- **Product Engineering:** pausado antes do W0-01; readiness da UIC-01 em 100% e execução em 0%
 - **Arquitetura funcional:** GLPA-001 1.1.1
 - **Intelligence Architecture:** GIA-000 1.3.0
 - **Glossário Canônico:** 1.8.0
 - **Guia Oficial:** GOG-001 4.2.1
-- **GKA-000:** Parte V pendente
 - **A2-R02:** em espera operacional
-- **Guivos Economic Model:** planejado
+- **Guivos Economic Model:** arquitetura documental inicial concluída em GEM-001 a GEM-010; parâmetros, validações especializadas e operação pendentes
+- **Market Validation:** trilha operacional de evidência preservada
+- **Próximo incremento candidato:** Candidate Outcome Register do BA-STR-002, sujeito a aprovação separada
 
 ## Capacidade 01 — Captura de Contexto
 

@@ -5,6 +5,10 @@ status: draft
 version: 0.1.0
 owner: Guivos Economic Model
 last_updated: 2026-07-22
+parent: GEM-000
+depends_on:
+  - GEM-008
+  - GEM-008-DEPENDENCY-VALIDATION-CHECKPOINT-001
 related:
   - GEM-008
   - GEM-010

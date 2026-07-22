@@ -5,6 +5,10 @@ status: draft
 version: 0.1.0
 owner: Guivos Economic Model
 last_updated: 2026-07-22
+parent: GEM-000
+depends_on:
+  - GEM-009
+  - GEM-009-DEPENDENCY-VALIDATION-CHECKPOINT-001
 related:
   - GEM-009
   - M6.9
@@ -66,4 +70,3 @@ Esta versão não aprova valores, preços, orçamento, captação, dívida, inve
 ## 7. Estado
 
 `conceptually_defined — financial scenario architecture defined, parameters and approvals pending`.
-

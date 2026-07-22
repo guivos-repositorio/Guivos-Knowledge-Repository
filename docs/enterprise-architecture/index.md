@@ -2,9 +2,9 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.4.0
+version: 1.5.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-07-22
 related_adrs:
   - ADR-003
   - ADR-004
@@ -93,7 +93,7 @@ graph TD
 | Product Architecture | Quais produtos materializam capacidades e propostas de valor? | Consolidada em sua estrutura superior |
 | Business Architecture | Como a Guivos gera, entrega, captura e reinveste valor para sustentar o ecossistema? | Fundamentos validados |
 | Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | Conceitos superiores consolidados |
-| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | Domínio planejado |
+| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | Arquitetura documental inicial concluída; validação empírica e especializada pendente |
 | Technology / Engineering Architecture | Como as capacidades são implementadas tecnicamente? | Planejada |
 | Governance Architecture | Como decisões, riscos e mudanças são controlados? | Parcialmente iniciada |
 

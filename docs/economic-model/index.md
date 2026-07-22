@@ -1,8 +1,8 @@
 ---
 id: GEM-000
 title: Guivos Economic Model
-status: in_progress
-version: 1.0.0
+status: active
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-22
 related:
@@ -16,6 +16,7 @@ related:
   - GEM-008
   - GEM-009
   - GEM-010
+  - GEM-CLOSURE-REVIEW-001
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -25,9 +26,11 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Financial scenario architecture defined — GEM-010 Draft 0.1.0`.
+`Documentarily complete — GEM-001 to GEM-010 preserved as Draft 0.1.0 authorities`.
 
-O domínio permanece `in_progress`. GEM-001 a GEM-009 preservam as fundações, fluxos, receitas, acesso, incentivos, parceiros, produtos, sustentabilidade e métricas; GEM-010 define a arquitetura de premissas, cenários e modelo financeiro sem aprovar parâmetros, orçamento, projeção oficial, contabilização, valuation ou operação.
+O domínio concluiu sua arquitetura documental inicial. GEM-001 a GEM-010 preservam fundações, fluxos, receitas, acesso, incentivos, parceiros, produtos, sustentabilidade, métricas, premissas, cenários e modelo financeiro. A conclusão não promove os drafts a baseline validada e não aprova parâmetros, orçamento, projeção oficial, contabilização, valuation ou operação.
+
+A decisão e os limites do fechamento estão registrados na [Revisão de Fechamento do Guivos Economic Model](gem-closure-review.md).
 
 ## Princípio central
 
@@ -121,7 +124,7 @@ necessidade ou potencial
 - incentivos;
 - limites de monetização;
 - métricas econômicas;
-- cenários e modelos financeiros posteriores.
+- cenários e modelos financeiros posteriores;
 - premissas, drivers e cenários financeiros comparáveis;
 - receitas, custos, margem, caixa, capital de giro e funding modelados;
 - unit economics, sensibilidade, break-even e consolidação entre produtos;
@@ -419,4 +422,4 @@ Não estão definidos:
 
 ## Próximo ponto
 
-`Revisão de fechamento do Guivos Economic Model e definição da próxima frente estratégica`, após proposta e aprovação separadas.
+`A2-R03 — Business Architecture Review`, iniciada pela conclusão governada de `BA-STR-002 — Business Outcomes`, após proposta e aprovação separadas. Product Engineering, W0-01, valores financeiros, operação e implementação permanecem pausados.
