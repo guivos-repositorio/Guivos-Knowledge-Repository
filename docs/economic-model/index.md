@@ -2,9 +2,9 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.8.0
+version: 0.9.0
 owner: Guivos
-last_updated: 2026-07-21
+last_updated: 2026-07-22
 related:
   - GEM-001
   - GEM-002
@@ -13,6 +13,7 @@ related:
   - GEM-005
   - GEM-006
   - GEM-007
+  - GEM-008
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -22,15 +23,15 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Product economic roles defined — GEM-007 Draft 0.1.0`.
+`Sustainability and reinvestment architecture defined — GEM-008 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, GEM-006 organiza a economia de parceiros e GEM-007 define como Journey, Mall, Travel, Business, Media, Intelligence e Ads participam economicamente sem aprovar preços, atribuição percentual, contabilização ou operação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, GEM-006 organiza a economia de parceiros, GEM-007 define os papéis econômicos dos produtos e GEM-008 consolida custos, capacidade, fontes, gratuito, subsídios, obrigações, reservas, reinvestimento, concentração e continuidade sem aprovar valores, orçamento, unit economics, contabilização ou operação.
 
 ## Princípio central
 
-A Guivos poderá mobilizar vários produtos em um mesmo fluxo quando existir valor legítimo, responsabilidade principal, contribuições identificadas, custos visíveis e atribuição sem duplicidade.
+A Guivos deverá mobilizar valor, produtos, parceiros e recursos somente quando existirem responsabilidade principal, custos e riscos visíveis, capacidade adequada, obrigações protegidas, fontes compatíveis, continuidade e atribuição sem duplicidade.
 
-A sustentabilidade econômica não poderá depender de exploração de vulnerabilidade, venda de dados pessoais, influência oculta, compra de relevância, redução artificial da autonomia, confusão entre receita e repasse, dupla contagem ou eliminação das fronteiras funcionais dos produtos.
+A sustentabilidade econômica não poderá depender de exploração de vulnerabilidade, venda de dados pessoais, influência oculta, compra de relevância, redução artificial da autonomia, confusão entre receita e recurso livre, dupla contagem, degradação do gratuito, expansão sem capacidade ou eliminação das fronteiras funcionais dos produtos.
 
 ## Arquitetura de referência
 
@@ -48,8 +49,10 @@ necessidade ou potencial
 → produto responsável e produtos contribuintes
 → evento econômico atribuível
 → captura legítima futura
-→ compartilhamento e repasse
-→ reinvestimento
+→ compartilhamento, repasse e obrigação
+→ custos, capacidade e riscos visíveis
+→ fontes, reservas e continuidade
+→ reinvestimento responsável
 → fortalecimento do ecossistema
 ```
 
@@ -85,7 +88,16 @@ necessidade ou potencial
 - ownership de eventos;
 - atribuição entre produtos;
 - capacidades e custos compartilhados;
-- sustentabilidade financeira;
+- dimensões e estados de sustentabilidade;
+- capacidade, saturação e growth gates;
+- fontes e estados de recursos;
+- financiamento do gratuito;
+- subsídios e obrigações protegidas;
+- reservas e precedência econômica;
+- prioridades e ciclo de reinvestimento;
+- produtos subsidiados;
+- externalidades sociais e ambientais;
+- sustentabilidade financeira futura;
 - Guivos Mall;
 - Guivos Travel;
 - Guivos Business;
@@ -204,7 +216,30 @@ necessidade ou potencial
 - [Atribuição de Valor entre Produtos](gem-007-cross-product-value-attribution.md);
 - [Fronteiras de Capacidades e Custos Compartilhados](gem-007-shared-capability-and-cost-boundaries.md);
 - [Matriz de Riscos e Guardrails](gem-007-product-risk-and-guardrail-matrix.md);
-- [Cenários e Gates](gem-007-scenarios-and-gates.md).
+- [Cenários e Gates](gem-007-scenarios-and-gates.md);
+- [Checkpoint de Validação como Dependência](gem-007-dependency-validation-checkpoint.md).
+
+## Autoridades do GEM-008
+
+- [Sustentabilidade e Reinvestimento](gem-008-sustainability-and-reinvestment.md);
+- [Taxonomia das Dimensões de Sustentabilidade](gem-008-sustainability-dimension-taxonomy.md);
+- [Arquitetura de Custos](gem-008-cost-architecture.md);
+- [Fronteiras de Custos Compartilhados](gem-008-shared-cost-boundaries.md);
+- [Modelo de Capacidade e Saturação](gem-008-capacity-and-saturation-model.md);
+- [Gates de Crescimento e Capacidade](gem-008-growth-and-capacity-gates.md);
+- [Fontes Econômicas e Estados de Recursos](gem-008-funding-source-and-resource-status.md);
+- [Política de Financiamento do Valor Universal Gratuito](gem-008-universal-free-funding-policy.md);
+- [Política de Subsídios Cruzados](gem-008-cross-subsidy-policy.md);
+- [Mapa de Obrigações Protegidas](gem-008-protected-obligations-map.md);
+- [Arquitetura Conceitual de Reservas](gem-008-reserve-architecture.md);
+- [Framework de Prioridade de Reinvestimento](gem-008-reinvestment-priority-framework.md);
+- [Ciclo de Vida do Reinvestimento](gem-008-reinvestment-lifecycle.md);
+- [Política de Concentração e Resiliência](gem-008-concentration-and-resilience-policy.md);
+- [Política de Financiamento da Continuidade e Saída](gem-008-continuity-and-exit-funding-policy.md);
+- [Política de Produtos Subsidiados](gem-008-subsidized-product-policy.md);
+- [Externalidades Sociais e Ambientais](gem-008-social-and-environmental-externalities.md);
+- [Contrato Canônico de Sustentabilidade](gem-008-sustainability-contract.md);
+- [Cenários e Gates](gem-008-scenarios-and-gates.md).
 
 ## Separações canônicas
 
@@ -262,7 +297,20 @@ necessidade ou potencial
 - custo compartilhado não é custo inexistente;
 - atribuição não é causalidade comprovada;
 - cross-sell não é obrigação de compra;
-- integração entre produtos não elimina fronteiras.
+- integração entre produtos não elimina fronteiras;
+- reserva não é lucro distribuível;
+- reserva proposta não é reserva constituída;
+- orçamento não é disponibilidade financeira;
+- gratuidade não é ausência de custo;
+- subsídio não elimina custo nem comprova viabilidade;
+- capacidade instalada não é capacidade disponível;
+- demanda não é capacidade de atendimento;
+- crescimento não é prontidão operacional;
+- reinvestimento não é distribuição de resultado;
+- reinvestimento proposto não é alocação autorizada;
+- continuidade planejada não é continuidade comprovada;
+- diversificação não é resiliência quando riscos são correlacionados;
+- produto relevante não é produto economicamente sustentável.
 
 ## Dependências
 
@@ -287,9 +335,13 @@ Não estão definidos:
 - catálogo operacional de recompensas;
 - regulamentos promocionais;
 - atribuição percentual;
+- valores de custos, fontes, subsídios, reservas ou reinvestimentos;
+- orçamento, fluxo de caixa, runway ou capital de giro;
+- reservas constituídas, contas bancárias ou política de investimento;
 - P&L, centros de custo ou centros de resultado;
 - rateios ou transfer pricing;
-- projeções, unit economics ou valuation;
+- unit economics, CAC, LTV, churn, payback ou break-even;
+- projeções, cenários financeiros ou valuation;
 - divisão societária;
 - tratamento jurídico, tributário, regulatório, trabalhista ou contábil;
 - merchant of record, gateway, adquirente ou settlement;
@@ -302,4 +354,4 @@ Não estão definidos:
 
 ## Próximo ponto
 
-`GEM-008 — Sustentabilidade e Reinvestimento`, após validação e integração separadas do GEM-007.
+`GEM-009 — Métricas Econômicas`, após validação e integração separadas do GEM-008.
