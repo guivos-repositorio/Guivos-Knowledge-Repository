@@ -2,7 +2,7 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.7.0
+version: 0.8.0
 owner: Guivos
 last_updated: 2026-07-21
 related:
@@ -12,6 +12,7 @@ related:
   - GEM-004
   - GEM-005
   - GEM-006
+  - GEM-007
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -21,15 +22,15 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Partner economy defined — GEM-006 Draft 0.1.0`.
+`Product economic roles defined — GEM-007 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, e GEM-006 organiza categorias, papéis, relacionamentos, economia, responsabilidades, qualidade, dados, conflitos, concentração e saída de parceiros sem aprovar parceiro, contrato, valor ou operação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, GEM-006 organiza a economia de parceiros e GEM-007 define como Journey, Mall, Travel, Business, Media, Intelligence e Ads participam economicamente sem aprovar preços, atribuição percentual, contabilização ou operação.
 
 ## Princípio central
 
-A Guivos poderá relacionar-se economicamente com parceiros quando o vínculo produzir valor legítimo para participantes e ecossistema, possuir responsabilidades, qualidade, transparência, dados mínimos e saída compreensível.
+A Guivos poderá mobilizar vários produtos em um mesmo fluxo quando existir valor legítimo, responsabilidade principal, contribuições identificadas, custos visíveis e atribuição sem duplicidade.
 
-A sustentabilidade econômica não poderá depender de exploração de vulnerabilidade, venda de dados pessoais, influência oculta, compra de relevância, redução artificial da autonomia, confusão entre repasse e receita, ou concentração de autoridade em parceiro externo.
+A sustentabilidade econômica não poderá depender de exploração de vulnerabilidade, venda de dados pessoais, influência oculta, compra de relevância, redução artificial da autonomia, confusão entre receita e repasse, dupla contagem ou eliminação das fronteiras funcionais dos produtos.
 
 ## Arquitetura de referência
 
@@ -44,6 +45,8 @@ necessidade ou potencial
 → modelo gratuito, pago ou financiado
 → progresso, reconhecimento ou recompensa
 → parceiro e relacionamento elegíveis
+→ produto responsável e produtos contribuintes
+→ evento econômico atribuível
 → captura legítima futura
 → compartilhamento e repasse
 → reinvestimento
@@ -78,6 +81,10 @@ necessidade ou potencial
 - dados e acessos de parceiros;
 - transparência, ranking e conflitos;
 - concentração, resiliência, suspensão e saída;
+- papéis econômicos dos produtos;
+- ownership de eventos;
+- atribuição entre produtos;
+- capacidades e custos compartilhados;
 - sustentabilidade financeira;
 - Guivos Mall;
 - Guivos Travel;
@@ -89,7 +96,6 @@ necessidade ou potencial
 - parcerias e patrocínios;
 - incentivos;
 - limites de monetização;
-- papéis econômicos dos produtos;
 - métricas econômicas;
 - cenários e modelos financeiros posteriores.
 
@@ -177,7 +183,28 @@ necessidade ou potencial
 - [Concentração e Resiliência](gem-006-concentration-and-resilience.md);
 - [Suspensão, Saída e Continuidade](gem-006-suspension-exit-and-continuity.md);
 - [Contrato Canônico de Relacionamento](gem-006-partner-relationship-contract.md);
-- [Cenários e Gates](gem-006-scenarios-and-gates.md).
+- [Cenários e Gates](gem-006-scenarios-and-gates.md);
+- [Checkpoint de Validação como Dependência](gem-006-dependency-validation-checkpoint.md).
+
+## Autoridades do GEM-007
+
+- [Papéis Econômicos dos Produtos](gem-007-product-economic-roles.md);
+- [Taxonomia de Papéis Econômicos](gem-007-economic-role-taxonomy.md);
+- [Contrato Canônico de Papel Econômico](gem-007-product-economic-role-contract.md);
+- [Papel Econômico do Journey](gem-007-journey-economic-role.md);
+- [Papel Econômico do Mall](gem-007-mall-economic-role.md);
+- [Papel Econômico do Travel](gem-007-travel-economic-role.md);
+- [Papel Econômico do Business](gem-007-business-economic-role.md);
+- [Papel Econômico do Media](gem-007-media-economic-role.md);
+- [Papel Econômico do Intelligence](gem-007-intelligence-economic-role.md);
+- [Papel Econômico do Ads](gem-007-ads-economic-role.md);
+- [Matriz de Produtos e Famílias de Receita](gem-007-product-revenue-family-matrix.md);
+- [Matriz de Produtos e Papéis de Parceiros](gem-007-product-partner-role-matrix.md);
+- [Mapa de Responsabilidade por Eventos](gem-007-economic-event-ownership-map.md);
+- [Atribuição de Valor entre Produtos](gem-007-cross-product-value-attribution.md);
+- [Fronteiras de Capacidades e Custos Compartilhados](gem-007-shared-capability-and-cost-boundaries.md);
+- [Matriz de Riscos e Guardrails](gem-007-product-risk-and-guardrail-matrix.md);
+- [Cenários e Gates](gem-007-scenarios-and-gates.md).
 
 ## Separações canônicas
 
@@ -223,7 +250,19 @@ necessidade ou potencial
 - integração não é acesso irrestrito;
 - exclusividade não é melhor opção;
 - parceiro estratégico não é autoridade de governança;
-- suspensão não encerra obrigações.
+- suspensão não encerra obrigações;
+- produto funcional não é unidade societária;
+- produto relacionado à receita não é proprietário automático da receita;
+- origem da demanda não é proprietário da transação;
+- superfície de distribuição não é responsável comercial integral;
+- produto líder não é executor de todas as capacidades;
+- produto anfitrião não é proprietário do anúncio;
+- uso de Intelligence não transfere propriedade da capacidade;
+- receita compartilhada não é receita duplicada;
+- custo compartilhado não é custo inexistente;
+- atribuição não é causalidade comprovada;
+- cross-sell não é obrigação de compra;
+- integração entre produtos não elimina fronteiras.
 
 ## Dependências
 
@@ -247,6 +286,9 @@ Não estão definidos:
 - token, criptomoeda ou blockchain;
 - catálogo operacional de recompensas;
 - regulamentos promocionais;
+- atribuição percentual;
+- P&L, centros de custo ou centros de resultado;
+- rateios ou transfer pricing;
 - projeções, unit economics ou valuation;
 - divisão societária;
 - tratamento jurídico, tributário, regulatório, trabalhista ou contábil;
@@ -260,4 +302,4 @@ Não estão definidos:
 
 ## Próximo ponto
 
-`GEM-007 — Papéis Econômicos dos Produtos`, após validação e integração separadas do GEM-006.
+`GEM-008 — Sustentabilidade e Reinvestimento`, após validação e integração separadas do GEM-007.
