@@ -2,7 +2,7 @@
 id: GBA-000
 title: Guivos Business Architecture
 status: validated
-version: 0.6.0
+version: 0.7.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-22
 related_adrs:
@@ -25,9 +25,10 @@ Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ec
 
 ## Unidade ativa
 
-- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.7.0; protocolo de validação pronto; execução e catálogo canônico pendentes.
-- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos internos registrados, sem aprovação canônica.
-- [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — cobertura e critérios definidos; execução não iniciada.
+- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.8.0; validação externa em execução; catálogo canônico pendente.
+- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos; três em `Under Validation`; nenhum aprovado.
+- [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — execução em lotes governados.
+- [BA-STR-002-EOVB-001 — Batch 01, Agency and Evolution](strategy/outcome-validation-batch-01-agency-evolution.md) — três sínteses e um cluster concluídos.
 
 ## Organização interna
 
@@ -89,7 +90,7 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 1. `BA-FND-001` — Business Architecture Foundations — **Validated**
 2. `BA-STR-001` — Business Transformation Model — **Validated**
-3. `BA-STR-002` — Business Outcomes — **Draft 0.7.0; protocolo de validação externa pronto**
+3. `BA-STR-002` — Business Outcomes — **Draft 0.8.0; primeiro lote de validação externa concluído**
 4. `BA-CAP-001` — Core Business Capabilities
 5. `BA-CAP-002` — Capability Map
 6. `BA-STR-003` — Value Chains
@@ -102,8 +103,8 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 A Business Architecture está em estado **Validated em seus fundamentos e em seu modelo de transformação**.
 
-O BA-STR-002 possui definição, propriedades, limites, governança conceitual, primeiro COR e protocolo de validação externa consolidados, mas permanece `draft` até execução da validação, COEM, catálogos canônicos e matriz de sustentação.
+O BA-STR-002 possui definição, propriedades, limites, governança conceitual, primeiro COR, protocolo e primeiro lote externo consolidados, mas permanece `draft` até cobertura integral da validação, COEM, catálogos canônicos e matriz de sustentação.
 
 ## Próximo incremento candidato
 
-Execução governada do `BA-STR-002-EOVP-001`, limitada aos 18 candidatos e aos seis clusters do COR e sujeita a aprovação separada. O incremento não promove Outcomes, não inicia `BA-CAP-001` e não retoma Product Engineering.
+Próximo lote governado do `BA-STR-002-EOVP-001`, cobrindo candidatos e cluster ainda não validados. O incremento não promove Outcomes, não inicia `BA-CAP-001` e não retoma Product Engineering.
