@@ -2,7 +2,7 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.6.0
+version: 0.7.0
 owner: Guivos
 last_updated: 2026-07-21
 related:
@@ -11,6 +11,7 @@ related:
   - GEM-003
   - GEM-004
   - GEM-005
+  - GEM-006
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -20,15 +21,15 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Incentives and rewards model defined — GEM-005 Draft 0.1.0`.
+`Partner economy defined — GEM-006 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, e GEM-005 separa progresso, reconhecimento e recompensa, estruturando incentivos, pontos, cobertura, evidências, ciclo de vida, segurança e fraude sem aprovar valor monetário, programas ou implementação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, e GEM-006 organiza categorias, papéis, relacionamentos, economia, responsabilidades, qualidade, dados, conflitos, concentração e saída de parceiros sem aprovar parceiro, contrato, valor ou operação.
 
 ## Princípio central
 
-A Guivos poderá reconhecer contribuições e oferecer recompensas quando o mecanismo fortalecer valor legítimo, permanecer voluntário e possuir regras, evidências, cobertura e responsabilidades compreensíveis.
+A Guivos poderá relacionar-se economicamente com parceiros quando o vínculo produzir valor legítimo para participantes e ecossistema, possuir responsabilidades, qualidade, transparência, dados mínimos e saída compreensível.
 
-A sustentabilidade econômica não poderá depender de exploração de vulnerabilidade, venda de dados pessoais, influência oculta, redução artificial da autonomia, compra de reconhecimento ou confusão entre pontos e valor humano.
+A sustentabilidade econômica não poderá depender de exploração de vulnerabilidade, venda de dados pessoais, influência oculta, compra de relevância, redução artificial da autonomia, confusão entre repasse e receita, ou concentração de autoridade em parceiro externo.
 
 ## Arquitetura de referência
 
@@ -42,8 +43,9 @@ necessidade ou potencial
 → família de receita conceitualmente admissível
 → modelo gratuito, pago ou financiado
 → progresso, reconhecimento ou recompensa
+→ parceiro e relacionamento elegíveis
 → captura legítima futura
-→ compartilhamento
+→ compartilhamento e repasse
 → reinvestimento
 → fortalecimento do ecossistema
 ```
@@ -51,13 +53,13 @@ necessidade ou potencial
 ## Escopo do domínio
 
 - princípios econômicos;
-- arquitetura de geração, entrega, captura, compartilhamento e reinvestimento de valor;
+- geração, entrega, captura, compartilhamento e reinvestimento de valor;
 - atores e relações econômicas;
 - fontes e objetos de valor;
 - custos, riscos, vazamentos e externalidades;
 - famílias e mecanismos de receita;
 - eventos econômicos e bases de cobrança;
-- planos gratuitos e pagos;
+- planos gratuitos, pagos e financiados;
 - elegibilidade, entitlements e ciclo de vida conceitual;
 - progresso, reconhecimento e recompensas;
 - pontos, créditos e benefícios;
@@ -67,19 +69,18 @@ necessidade ou potencial
 - segurança comportamental;
 - fraude e abuso;
 - voluntariado e impacto social;
+- categorias e papéis de parceiros;
+- arquétipos de relacionamento;
+- valor bilateral;
+- due diligence e ativação;
+- mecanismos de remuneração e repasse;
+- qualidade e desempenho;
+- dados e acessos de parceiros;
+- transparência, ranking e conflitos;
+- concentração, resiliência, suspensão e saída;
 - sustentabilidade financeira;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Business;
-- Guivos Media;
-- Guivos Ads;
-- Guivos Intelligence;
-- assinaturas;
-- parcerias e patrocínios;
-- incentivos;
-- limites de monetização;
-- métricas econômicas;
-- cenários e modelos financeiros posteriores.
+- papéis econômicos dos produtos;
+- métricas e modelos financeiros posteriores.
 
 ## Autoridades do GEM-001
 
@@ -145,7 +146,27 @@ necessidade ou potencial
 - [Modelo de Controle de Fraude e Abuso](gem-005-fraud-and-abuse-control-model.md);
 - [Incentivos de Voluntariado e Impacto Social](gem-005-volunteering-and-social-impact-incentives.md);
 - [Contrato Canônico de Programa de Incentivo](gem-005-incentive-program-contract.md);
-- [Cenários e Gates](gem-005-scenarios-and-gates.md).
+- [Cenários e Gates](gem-005-scenarios-and-gates.md);
+- [Checkpoint de Validação como Dependência](gem-005-dependency-validation-checkpoint.md).
+
+## Autoridades do GEM-006
+
+- [Economia de Parceiros](gem-006-partner-economy.md);
+- [Taxonomia de Papéis de Parceiros](gem-006-partner-role-taxonomy.md);
+- [Arquétipos de Relacionamento](gem-006-relationship-archetypes.md);
+- [Mapa de Troca de Valor](gem-006-partner-value-exchange-map.md);
+- [Ciclo de Vida de Parceiros](gem-006-partner-lifecycle.md);
+- [Elegibilidade e Due Diligence](gem-006-eligibility-and-due-diligence.md);
+- [Gates de Onboarding e Ativação](gem-006-onboarding-and-activation-gates.md);
+- [Mecanismos Econômicos e Fluxo de Fundos](gem-006-economic-mechanisms-and-funds-flow.md);
+- [Responsabilidade, Reembolso e Disputa](gem-006-responsibility-refund-and-dispute-map.md);
+- [Qualidade e Desempenho](gem-006-quality-and-performance-framework.md);
+- [Dados e Finalidade](gem-006-data-access-and-purpose-policy.md);
+- [Transparência, Ranking e Conflitos](gem-006-disclosure-ranking-and-conflict-policy.md);
+- [Concentração e Resiliência](gem-006-concentration-and-resilience.md);
+- [Suspensão, Saída e Continuidade](gem-006-suspension-exit-and-continuity.md);
+- [Contrato Canônico de Relacionamento](gem-006-partner-relationship-contract.md);
+- [Cenários e Gates](gem-006-scenarios-and-gates.md).
 
 ## Separações canônicas
 
@@ -157,13 +178,14 @@ necessidade ou potencial
 - caixa recebido não é reconhecimento;
 - receita não é margem, lucro ou sustentabilidade;
 - repasse não é receita integral;
+- recurso vinculado não é recurso livre;
 - capital, dívida e aporte não são receita operacional;
 - dados não são mercadoria livre;
 - atenção não é consentimento;
 - contribuição não é remuneração automática;
-- pagamento não é autoridade;
-- família conceitualmente admissível não é mecanismo comercial aprovado;
-- base de cobrança candidata não é preço;
+- pagamento não é autoridade ou relevância;
+- família admissível não é mecanismo comercial aprovado;
+- base candidata não é preço;
 - gratuito real não é trial oculto;
 - arquétipo não é plano comercial;
 - plano comercial não é preço;
@@ -179,9 +201,15 @@ necessidade ou potencial
 - cobertura candidata não é cobertura confirmada;
 - recompensa não é prova de impacto;
 - patrocinador não altera evidência;
-- expiração econômica não apaga histórico;
-- sinal de fraude não é fraude comprovada;
-- horas de voluntariado não são impacto comprovado.
+- parceiro não é papel;
+- papel não é relacionamento;
+- relacionamento não é oferta;
+- aprovação não é ativação;
+- contrato não é qualidade comprovada;
+- integração não é acesso irrestrito;
+- exclusividade não é melhor opção;
+- parceiro estratégico não é autoridade de governança;
+- suspensão não encerra obrigações.
 
 ## Dependências
 
@@ -191,29 +219,21 @@ O desenvolvimento utiliza Foundation, Fundamental Model, Core Capability Model, 
 
 Não estão definidos:
 
-- nomes comerciais finais;
-- preços, moedas ou descontos;
-- percentuais de comissão;
+- parceiros, patrocinadores ou fornecedores específicos;
+- contratos, exclusividades ou territórios comerciais;
+- preços, moedas, descontos, taxas, comissões, margens ou repasses;
+- SLAs, thresholds ou scores;
 - mecanismos comerciais específicos;
 - composição final de planos;
-- limites quantitativos e períodos de cobrança;
-- projeções financeiras;
-- unit economics;
-- valuation;
-- divisão societária;
-- tratamento tributário ou contábil;
 - quantidade ou valor monetário de pontos;
-- taxa de conversão;
-- cashback, saque, transferência ou negociação;
-- token, criptomoeda ou blockchain;
-- catálogo operacional de recompensas;
-- parceiros, patrocinadores ou contratos específicos;
-- regulamentos promocionais;
-- ledger, carteira ou antifraude técnico;
+- projeções, unit economics ou valuation;
+- tratamento jurídico, tributário, regulatório, trabalhista ou contábil;
+- merchant of record, gateway, adquirente ou settlement;
+- due diligence executada;
+- integrações, CRM, portal, API ou banco de dados;
 - fornecedores tecnológicos;
-- sistemas de pagamento;
-- implementação.
+- pesquisa, piloto, operação, produção ou implementação.
 
 ## Próximo ponto
 
-`GEM-006 — Economia de Parceiros`, após validação e integração separadas do GEM-005.
+`GEM-007 — Papéis Econômicos dos Produtos`, após validação e integração separadas do GEM-006.
