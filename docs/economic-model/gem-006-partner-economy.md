@@ -1,6 +1,6 @@
 ---
 id: GEM-006
- title: Economia de Parceiros
+title: Economia de Parceiros
 status: draft
 version: 0.1.0
 owner: Guivos Economic Model
