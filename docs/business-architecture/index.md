@@ -2,9 +2,9 @@
 id: GBA-000
 title: Guivos Business Architecture
 status: validated
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Business Architecture
-last_updated: 2026-06-28
+last_updated: 2026-07-22
 related_adrs:
   - ADR-003
   - ADR-004
@@ -25,7 +25,8 @@ Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ec
 
 ## Unidade ativa
 
-- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint conceitual consolidado; catálogo canônico pendente.
+- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.6.0; COR inicial concluído; validação externa e catálogo canônico pendentes.
+- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos internos registrados, sem aprovação canônica.
 
 ## Organização interna
 
@@ -87,7 +88,7 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 1. `BA-FND-001` — Business Architecture Foundations — **Validated**
 2. `BA-STR-001` — Business Transformation Model — **Validated**
-3. `BA-STR-002` — Business Outcomes — **Draft com checkpoint conceitual consolidado**
+3. `BA-STR-002` — Business Outcomes — **Draft 0.6.0; COR inicial concluído**
 4. `BA-CAP-001` — Core Business Capabilities
 5. `BA-CAP-002` — Capability Map
 6. `BA-STR-003` — Value Chains
@@ -100,4 +101,8 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 A Business Architecture está em estado **Validated em seus fundamentos e em seu modelo de transformação**.
 
-O BA-STR-002 possui definição, propriedades, limites e governança conceitual consolidados, mas permanece `draft` até a conclusão de seus catálogos e matriz de alinhamento.
+O BA-STR-002 possui definição, propriedades, limites, governança conceitual e primeiro COR consolidados, mas permanece `draft` até validação externa, COEM, catálogos canônicos e matriz de sustentação.
+
+## Próximo incremento candidato
+
+`External Outcome Validation Protocol`, limitado aos 18 candidatos do COR e sujeito a aprovação separada. O incremento não promove Outcomes, não inicia `BA-CAP-001` e não retoma Product Engineering.

@@ -5,8 +5,13 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M5.9 — Chat Continuity and Repository Reconciliation Completed` concluído;
-- frente `Product Engineering` ativa;
+- marco `M7.0 — Candidate Outcome Register Established` concluído documentariamente;
+- frente `A2-R03 — Business Architecture Review` ativa;
+- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.6.0`;
+- `BA-STR-002-COR-001 0.1.0` com oito candidatos de ecossistema e dez empresariais;
+- nenhum Outcome aprovado ou canônico;
+- Product Engineering pausado antes do W0-01;
+- Guivos Economic Model encerrado documentariamente em GEM-001 a GEM-010;
 - `PAS-001 — Guivos Journey 1.0.0` como especificação arquitetural canônica ativa;
 - `PAS-001-RECON-001 1.0.0` como reconciliação normativa vigente;
 - `PAS-001-CC-LIFECYCLE-001 1.0.0`, `PAS-001-CC-EVENT-INTEGRATION-001 1.0.0` e `PAS-001-CC-CONTRACT-001 1.0.0` como extensões de fechamento da Capacidade 01, etapa `3 de 3` concluída;
@@ -32,12 +37,14 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Executar `PAS-001-ENGINEERING-HANDOFF-001` — **Handoff Arquitetural do Guivos Journey para Product Engineering**, utilizando o `PAS-001 1.0.0`, o Mapa Final e os contratos especializados.
+Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR inicial está concluído; o próximo incremento candidato é o `External Outcome Validation Protocol`, sujeito a aprovação separada.
 
-As três extensões vigentes concluem a Capacidade 01 com ciclo de vida, 20 famílias de eventos, integrações, 80 KPIs em 16 famílias, 42 guardrails, baseline, painel de saúde, cenários e contrato final. As seis extensões vigentes concluem a Capacidade 06 com fundamentos, ciclo de vida, visualização, 19 famílias de eventos, integrações, 75 KPIs em 15 famílias, 24 guardrails, baseline, cenários e contrato final. As seis extensões de Intervenções Contextuais concluem a Capacidade 07 com 80 KPIs em 16 famílias e 28 guardrails. As seis extensões de Experiências concluem a Capacidade 08 com 85 KPIs em 17 famílias e 32 guardrails. As seis extensões de Evolução Contínua concluem a Capacidade 09 com fundamentos, ciclo de vida, `Minha Evolução`, eventos, integrações, 90 KPIs em 18 famílias, 36 guardrails, baseline, painel de saúde, cenários e contrato final.
+Os 18 registros do COR são hipóteses internas em estado `Candidate`. Validação externa, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
 
 ## Acesso rápido
 
+- [Candidate Outcome Register](business-architecture/strategy/candidate-outcome-register.md)
+- [Business Outcomes](business-architecture/strategy/business-outcomes.md)
 - [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)
 - [Reconciliação e Prontidão do Guivos Journey](product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md)
