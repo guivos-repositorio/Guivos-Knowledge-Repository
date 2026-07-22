@@ -2,7 +2,7 @@
 id: GEM-000
 title: Guivos Economic Model
 status: in_progress
-version: 0.9.0
+version: 1.0.0
 owner: Guivos
 last_updated: 2026-07-22
 related:
@@ -14,6 +14,7 @@ related:
   - GEM-006
   - GEM-007
   - GEM-008
+  - GEM-009
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -23,9 +24,9 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Sustainability and reinvestment architecture defined — GEM-008 Draft 0.1.0`.
+`Economic metrics architecture defined — GEM-009 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, GEM-006 organiza a economia de parceiros, GEM-007 define os papéis econômicos dos produtos e GEM-008 consolida custos, capacidade, fontes, gratuito, subsídios, obrigações, reservas, reinvestimento, concentração e continuidade sem aprovar valores, orçamento, unit economics, contabilização ou operação.
+O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, GEM-006 organiza a economia de parceiros, GEM-007 define os papéis econômicos dos produtos, GEM-008 consolida sustentabilidade e reinvestimento e GEM-009 define métricas, fórmulas conceituais, evidências e governança sem aprovar resultados, metas, orçamento, projeções, contabilização ou operação.
 
 ## Princípio central
 
@@ -53,6 +54,8 @@ necessidade ou potencial
 → custos, capacidade e riscos visíveis
 → fontes, reservas e continuidade
 → reinvestimento responsável
+→ medição reproduzível e contextual
+→ interpretação limitada por evidência
 → fortalecimento do ecossistema
 ```
 
@@ -97,6 +100,14 @@ necessidade ou potencial
 - prioridades e ciclo de reinvestimento;
 - produtos subsidiados;
 - externalidades sociais e ambientais;
+- taxonomia e contratos de métricas econômicas;
+- indicadores de valor, adoção, receita, custos e eficiência;
+- unit economics conceitual;
+- métricas de capacidade, qualidade, concentração e resiliência;
+- métricas do gratuito, subsídios, reservas e reinvestimento;
+- impacto e saúde do ecossistema;
+- proveniência, qualidade, cadência e ownership de evidências;
+- baselines, thresholds e maturidade de medição;
 - sustentabilidade financeira futura;
 - Guivos Mall;
 - Guivos Travel;
@@ -241,6 +252,24 @@ necessidade ou potencial
 - [Contrato Canônico de Sustentabilidade](gem-008-sustainability-contract.md);
 - [Cenários e Gates](gem-008-scenarios-and-gates.md).
 
+## Autoridades do GEM-009
+
+- [Checkpoint de Validação do GEM-008](gem-008-dependency-validation-checkpoint.md);
+- [Métricas Econômicas](gem-009-economic-metrics.md);
+- [Taxonomia de Métricas Econômicas](gem-009-metric-taxonomy.md);
+- [Contrato Canônico de Métrica Econômica](gem-009-measurement-contract.md);
+- [Métricas de Valor e Adoção](gem-009-value-and-adoption-metrics.md);
+- [Métricas de Receita e Captura de Valor](gem-009-revenue-and-capture-metrics.md);
+- [Métricas de Custos e Unit Economics Conceitual](gem-009-cost-and-unit-economics.md);
+- [Métricas de Capacidade e Qualidade](gem-009-capacity-and-quality-metrics.md);
+- [Métricas de Concentração e Resiliência](gem-009-concentration-and-resilience-metrics.md);
+- [Métricas do Gratuito, Subsídios e Acesso Financiado](gem-009-free-subsidy-and-access-metrics.md);
+- [Métricas de Reservas e Reinvestimento](gem-009-reserve-and-reinvestment-metrics.md);
+- [Métricas de Impacto e Saúde do Ecossistema](gem-009-impact-and-ecosystem-health.md);
+- [Evidências, Periodicidade e Responsabilidade](gem-009-evidence-cadence-and-ownership.md);
+- [Baselines, Thresholds e Maturidade](gem-009-baselines-thresholds-and-maturity.md);
+- [Cenários e Gates](gem-009-scenarios-and-gates.md).
+
 ## Separações canônicas
 
 - valor potencial não é entrega;
@@ -310,7 +339,19 @@ necessidade ou potencial
 - reinvestimento proposto não é alocação autorizada;
 - continuidade planejada não é continuidade comprovada;
 - diversificação não é resiliência quando riscos são correlacionados;
-- produto relevante não é produto economicamente sustentável.
+- produto relevante não é produto economicamente sustentável;
+- atividade não é valor;
+- alcance não é atenção qualificada;
+- intenção não é comportamento;
+- correlação não é causalidade;
+- receita não é caixa;
+- CAC não é custo total de servir;
+- LTV estimado não é valor realizado;
+- média não representa todos os segmentos;
+- ausência de dado não é zero;
+- proxy não é fato direto;
+- threshold proposto não é threshold aprovado;
+- dashboard não é autoridade decisória.
 
 ## Dependências
 
@@ -340,7 +381,9 @@ Não estão definidos:
 - reservas constituídas, contas bancárias ou política de investimento;
 - P&L, centros de custo ou centros de resultado;
 - rateios ou transfer pricing;
-- unit economics, CAC, LTV, churn, payback ou break-even;
+- valores reais de unit economics, CAC, LTV, churn, payback ou break-even;
+- baselines, metas, thresholds ou benchmarks aprovados;
+- dashboards, instrumentação analítica ou decisões automatizadas;
 - projeções, cenários financeiros ou valuation;
 - divisão societária;
 - tratamento jurídico, tributário, regulatório, trabalhista ou contábil;
@@ -354,4 +397,4 @@ Não estão definidos:
 
 ## Próximo ponto
 
-`GEM-009 — Métricas Econômicas`, após validação e integração separadas do GEM-008.
+`GEM-010 — Cenários e Modelo Financeiro`, após proposta e aprovação separadas.
