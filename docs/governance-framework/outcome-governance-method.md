@@ -2,11 +2,13 @@
 id: GKR-GOV-OUT-001
 title: Outcome Governance Method
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Knowledge Repository
-last_updated: 2026-06-29
+last_updated: 2026-07-22
 applies_to:
   - BA-STR-002
+related:
+  - BA-STR-002-COR-001
 ---
 
 # Outcome Governance Method
@@ -173,4 +175,4 @@ Cada Outcome consolidado deverá possuir:
 
 ## Próximo passo
 
-Construir o primeiro `Candidate Outcome Register` do BA-STR-002 e submetê-lo à validação externa e à COEM antes da definição de qualquer `EO-001`.
+Preparar o `External Outcome Validation Protocol` para os 18 registros do primeiro COR. A validação externa e a COEM ocorrerão em ciclos próprios antes da definição de qualquer código canônico `EO-###` ou `BO-###`.
