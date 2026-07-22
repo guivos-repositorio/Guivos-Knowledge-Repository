@@ -2,7 +2,7 @@
 id: BA-STR-002
 title: Business Outcomes
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-22
 depends_on:
@@ -12,17 +12,18 @@ related_governance:
   - GKR-GOV-OUT-001
 related:
   - BA-STR-002-COR-001
+  - BA-STR-002-EOVP-001
   - GEM-CLOSURE-REVIEW-001
-checkpoint: candidate-outcome-register
+checkpoint: external-outcome-validation-protocol
 ---
 
 # BA-STR-002 — Business Outcomes
 
 ## Estado do ativo
 
-Este documento registra o checkpoint conceitual, metodológico e de descoberta interna do BA-STR-002.
+Este documento registra o checkpoint conceitual, metodológico e de prontidão para validação externa do BA-STR-002.
 
-O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) foi concluído com 18 hipóteses rastreáveis. Os catálogos canônicos de Ecosystem Outcomes e Business Outcomes ainda não foram consolidados.
+O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) foi concluído com 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) está pronto para execução governada. Nenhuma evidência externa foi coletada neste checkpoint, e os catálogos canônicos de Ecosystem Outcomes e Business Outcomes ainda não foram consolidados.
 
 ## Pergunta arquitetural
 
@@ -299,6 +300,8 @@ Além dos critérios de qualidade, ele define que cada Outcome consolidado dever
 8. O AQS-O01 será validado na prática antes de estabilização.
 9. O COR inicial contém oito candidatos de ecossistema e dez candidatos empresariais, todos em estado `Candidate`.
 10. O catálogo canônico ainda não está consolidado.
+11. A validação externa possui protocolo próprio, cobrindo individualmente os 18 candidatos, os seis clusters de sobreposição, contradições e omissões materiais.
+12. A existência do protocolo não altera o estado dos candidatos nem autoriza a COEM.
 
 ## Hipóteses preservadas fora da Canon
 
@@ -334,6 +337,7 @@ O ativo somente poderá ser promovido a `validated` quando:
 | Critério | Estado |
 |---|---|
 | Candidate Outcome Register concluído | atendido no primeiro passe interno |
+| protocolo de validação externa | atendido; execução não iniciada |
 | validação externa registrada | pendente |
 | COEM concluída | pendente |
 | AQS-O01 testado e ajustado | pendente |
@@ -344,4 +348,4 @@ O ativo somente poderá ser promovido a `validated` quando:
 
 ## Próxima etapa
 
-Preparar o **External Outcome Validation Protocol** e submetê-lo a aprovação separada. Nenhum candidato receberá código canônico `EO-###` ou `BO-###` antes de passar pela validação externa e pela COEM.
+Preparar e submeter para aprovação separada a execução do **External Outcome Validation Protocol**. A coleta deverá registrar evidências no `RP-001-EVIDENCE`, e nenhum candidato receberá código canônico `EO-###` ou `BO-###` antes de passar pela validação externa e pela COEM.

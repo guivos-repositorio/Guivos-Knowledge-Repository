@@ -2,13 +2,14 @@
 id: GKR-GOV-OUT-001
 title: Outcome Governance Method
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-22
 applies_to:
   - BA-STR-002
 related:
   - BA-STR-002-COR-001
+  - BA-STR-002-EOVP-001
 ---
 
 # Outcome Governance Method
@@ -101,6 +102,12 @@ A validação externa compara grupos de candidatos com o melhor conhecimento dis
 - não copiar estruturas sem avaliar aderência à Guivos;
 - registrar confirmação, ampliação, contradição ou ausência de evidência.
 
+### Protocolo de execução
+
+O [External Outcome Validation Protocol](../business-architecture/strategy/external-outcome-validation-protocol.md) aplica estas regras ao primeiro COR. Ele define cobertura, perguntas, critérios de fonte, direção da evidência, tratamento de omissões, testes dos clusters e gate de saída.
+
+A existência do protocolo não equivale à validação. Candidatos somente passam a `Under Validation` individualmente após autorização de execução e registro da primeira evidência qualificada.
+
 ## 4. Candidate Outcome Evaluation Matrix — COEM
 
 A COEM avalia cada candidato por critérios repetíveis.
@@ -175,4 +182,4 @@ Cada Outcome consolidado deverá possuir:
 
 ## Próximo passo
 
-Preparar o `External Outcome Validation Protocol` para os 18 registros do primeiro COR. A validação externa e a COEM ocorrerão em ciclos próprios antes da definição de qualquer código canônico `EO-###` ou `BO-###`.
+Executar o `BA-STR-002-EOVP-001` somente após aprovação separada. A validação externa e a COEM ocorrerão em ciclos próprios antes da definição de qualquer código canônico `EO-###` ou `BO-###`.

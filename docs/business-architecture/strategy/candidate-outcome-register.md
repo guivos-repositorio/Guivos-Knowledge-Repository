@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-22
 parent: BA-STR-002
@@ -11,6 +11,7 @@ depends_on:
   - BA-STR-001
   - GKR-GOV-OUT-001
 related:
+  - BA-STR-002-EOVP-001
   - GEM-CLOSURE-REVIEW-001
   - M7.0
 normative: false
@@ -34,6 +35,7 @@ Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 External validation: not started
+External validation protocol: ready
 COEM: not started
 AQS-O01 practical validation: not started
 Operational authorization: no
@@ -310,7 +312,7 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 Antes de qualquer COEM deverão existir:
 
-1. protocolo de validação externa com perguntas, critérios de fonte e registro de resultados;
+1. execução do `BA-STR-002-EOVP-001`, com perguntas, critérios de fonte e registro de resultados;
 2. pesquisa direta sobre os clusters de sobreposição e omissões materiais;
 3. confirmação, ampliação, contradição ou ausência de evidência por candidato;
 4. revisão de linguagem para evitar etapas de jornada, capacidades e guardrails disfarçados de Outcomes;
@@ -327,10 +329,11 @@ Antes de qualquer COEM deverão existir:
 | participantes afetados declarados | Pass |
 | dúvidas e sobreposições preservadas | Pass |
 | promoção automática bloqueada | Pass |
+| protocolo de validação externa | Ready |
 | validação externa realizada | Not started |
 | COEM realizada | Not started |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Preparar e submeter para aprovação separada o **External Outcome Validation Protocol**, limitado à validação dos 18 candidatos e de suas sobreposições. Nenhum candidato mudará de estado nem será promovido antes da existência de evidência registrada.
+Preparar e submeter para aprovação separada a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md), limitado aos 18 candidatos e aos seis clusters de sobreposição. Nenhum candidato mudará de estado enquanto sua primeira evidência qualificada não estiver registrada, e nenhuma promoção ocorrerá antes da COEM.

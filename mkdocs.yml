@@ -370,6 +370,7 @@ nav:
           - Business Transformation Model: business-architecture/strategy/business-transformation-model.md
           - Business Outcomes: business-architecture/strategy/business-outcomes.md
           - Candidate Outcome Register: business-architecture/strategy/candidate-outcome-register.md
+          - External Outcome Validation Protocol: business-architecture/strategy/external-outcome-validation-protocol.md
   - Governance Framework do GKR:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - Architectural Audit Framework: governance-framework/architectural-audit-framework.md
@@ -397,6 +398,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.30.0 — M7.0.1: project/architectural-milestones-4.30.0.md
       - Architectural Milestones 4.29.0 — M7.0: project/architectural-milestones-4.29.0.md
       - Architectural Milestones 4.28.0 — M6.10: project/architectural-milestones-4.28.0.md
       - Architectural Milestones 4.27.0 — M6.9: project/architectural-milestones-4.27.0.md
@@ -416,6 +418,7 @@ nav:
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.32.0 — External Validation Protocol: project/knowledge-board-11.32.0.md
       - Knowledge Board 11.31.0 — Candidate Outcome Register: project/knowledge-board-11.31.0.md
       - Knowledge Board 11.30.0 — Fechamento do Economic Model: project/knowledge-board-11.30.0.md
       - Knowledge Board 11.29.0 — GEM-010: project/knowledge-board-11.29.0.md
@@ -435,6 +438,7 @@ nav:
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.51.0 — External Validation Protocol: project/canonical-consolidation-matrix-ba-str-002-eovp-addendum.md
       - Canonical Matrix 1.50.0 — Candidate Outcome Register: project/canonical-consolidation-matrix-ba-str-002-cor-addendum.md
       - Canonical Matrix 1.49.0 — Fechamento do Economic Model: project/canonical-consolidation-matrix-gem-closure-addendum.md
       - Canonical Matrix 1.48.0 — GEM-010: project/canonical-consolidation-matrix-gem-010-addendum.md
@@ -454,6 +458,7 @@ nav:
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.79.0 — External Validation Protocol: project/changelog-0.79.0-ba-str-002-eovp.md
       - Changelog 0.78.0 — Candidate Outcome Register: project/changelog-0.78.0-ba-str-002-cor.md
       - Changelog 0.77.0 — Fechamento do Economic Model: project/changelog-0.77.0-economic-model-closure.md
       - Changelog 0.76.0 — GEM-010: project/changelog-0.76.0-gem-010.md
@@ -493,6 +498,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.32.0 — External Validation Protocol: roadmap-11.32.0.md
       - Roadmap 11.31.0 — Candidate Outcome Register: roadmap-11.31.0.md
       - Roadmap 11.30.0 — Fechamento do Economic Model: roadmap-11.30.0.md
       - Roadmap 11.29.0 — GEM-010: roadmap-11.29.0.md
