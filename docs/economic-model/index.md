@@ -79,8 +79,19 @@ necessidade ou potencial
 - transparência, ranking e conflitos;
 - concentração, resiliência, suspensão e saída;
 - sustentabilidade financeira;
+- Guivos Mall;
+- Guivos Travel;
+- Guivos Business;
+- Guivos Media;
+- Guivos Ads;
+- Guivos Intelligence;
+- assinaturas;
+- parcerias e patrocínios;
+- incentivos;
+- limites de monetização;
 - papéis econômicos dos produtos;
-- métricas e modelos financeiros posteriores.
+- métricas econômicas;
+- cenários e modelos financeiros posteriores.
 
 ## Autoridades do GEM-001
 
@@ -201,6 +212,9 @@ necessidade ou potencial
 - cobertura candidata não é cobertura confirmada;
 - recompensa não é prova de impacto;
 - patrocinador não altera evidência;
+- expiração econômica não apaga histórico;
+- sinal de fraude não é fraude comprovada;
+- horas de voluntariado não são impacto comprovado;
 - parceiro não é papel;
 - papel não é relacionamento;
 - relacionamento não é oferta;
@@ -219,19 +233,29 @@ O desenvolvimento utiliza Foundation, Fundamental Model, Core Capability Model, 
 
 Não estão definidos:
 
+- nomes comerciais finais;
 - parceiros, patrocinadores ou fornecedores específicos;
 - contratos, exclusividades ou territórios comerciais;
 - preços, moedas, descontos, taxas, comissões, margens ou repasses;
 - SLAs, thresholds ou scores;
 - mecanismos comerciais específicos;
 - composição final de planos;
+- limites quantitativos e períodos de cobrança;
 - quantidade ou valor monetário de pontos;
+- taxa de conversão;
+- cashback, saque, transferência ou negociação;
+- token, criptomoeda ou blockchain;
+- catálogo operacional de recompensas;
+- regulamentos promocionais;
 - projeções, unit economics ou valuation;
+- divisão societária;
 - tratamento jurídico, tributário, regulatório, trabalhista ou contábil;
 - merchant of record, gateway, adquirente ou settlement;
 - due diligence executada;
+- ledger, carteira ou antifraude técnico;
 - integrações, CRM, portal, API ou banco de dados;
 - fornecedores tecnológicos;
+- sistemas de pagamento;
 - pesquisa, piloto, operação, produção ou implementação.
 
 ## Próximo ponto
