@@ -5,10 +5,11 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M7.0 — Candidate Outcome Register Established` concluído documentariamente;
+- marco `M7.0.1 — External Outcome Validation Protocol Ready` concluído documentariamente;
 - frente `A2-R03 — Business Architecture Review` ativa;
-- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.6.0`;
-- `BA-STR-002-COR-001 0.1.0` com oito candidatos de ecossistema e dez empresariais;
+- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.7.0`;
+- `BA-STR-002-COR-001 0.2.0` com oito candidatos de ecossistema e dez empresariais;
+- `BA-STR-002-EOVP-001 0.1.0` pronto para execução governada, ainda sem evidências coletadas;
 - nenhum Outcome aprovado ou canônico;
 - Product Engineering pausado antes do W0-01;
 - Guivos Economic Model encerrado documentariamente em GEM-001 a GEM-010;
@@ -37,13 +38,14 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR inicial está concluído; o próximo incremento candidato é o `External Outcome Validation Protocol`, sujeito a aprovação separada.
+Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR inicial e o protocolo de validação externa estão concluídos; o próximo incremento candidato é a execução governada do `BA-STR-002-EOVP-001`, sujeita a aprovação separada.
 
-Os 18 registros do COR são hipóteses internas em estado `Candidate`. Validação externa, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
+Os 18 registros do COR são hipóteses internas em estado `Candidate`. O protocolo pronto não equivale a validação: coleta externa, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
 
 ## Acesso rápido
 
 - [Candidate Outcome Register](business-architecture/strategy/candidate-outcome-register.md)
+- [External Outcome Validation Protocol](business-architecture/strategy/external-outcome-validation-protocol.md)
 - [Business Outcomes](business-architecture/strategy/business-outcomes.md)
 - [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)
