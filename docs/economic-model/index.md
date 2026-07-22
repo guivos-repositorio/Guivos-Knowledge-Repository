@@ -15,6 +15,7 @@ related:
   - GEM-007
   - GEM-008
   - GEM-009
+  - GEM-010
   - GKR-STRATEGIC-RESEQUENCING-001
 ---
 
@@ -24,9 +25,9 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Economic metrics architecture defined — GEM-009 Draft 0.1.0`.
+`Financial scenario architecture defined — GEM-010 Draft 0.1.0`.
 
-O domínio permanece `in_progress`. GEM-001 fornece a fundação conceitual, GEM-002 define geração e fluxos de valor, GEM-003 organiza a arquitetura de receitas, GEM-004 define o modelo gratuito, pago e financiado, GEM-005 estrutura incentivos e recompensas, GEM-006 organiza a economia de parceiros, GEM-007 define os papéis econômicos dos produtos, GEM-008 consolida sustentabilidade e reinvestimento e GEM-009 define métricas, fórmulas conceituais, evidências e governança sem aprovar resultados, metas, orçamento, projeções, contabilização ou operação.
+O domínio permanece `in_progress`. GEM-001 a GEM-009 preservam as fundações, fluxos, receitas, acesso, incentivos, parceiros, produtos, sustentabilidade e métricas; GEM-010 define a arquitetura de premissas, cenários e modelo financeiro sem aprovar parâmetros, orçamento, projeção oficial, contabilização, valuation ou operação.
 
 ## Princípio central
 
@@ -121,6 +122,9 @@ necessidade ou potencial
 - limites de monetização;
 - métricas econômicas;
 - cenários e modelos financeiros posteriores.
+- premissas, drivers e cenários financeiros comparáveis;
+- receitas, custos, margem, caixa, capital de giro e funding modelados;
+- unit economics, sensibilidade, break-even e consolidação entre produtos;
 
 ## Autoridades do GEM-001
 
@@ -270,6 +274,24 @@ necessidade ou potencial
 - [Baselines, Thresholds e Maturidade](gem-009-baselines-thresholds-and-maturity.md);
 - [Cenários e Gates](gem-009-scenarios-and-gates.md).
 
+## Autoridades do GEM-010
+
+- [Checkpoint de Validação do GEM-009](gem-009-dependency-validation-checkpoint.md);
+- [Cenários e Modelo Financeiro](gem-010-financial-scenarios-and-model.md);
+- [Governança de Premissas](gem-010-assumption-governance.md);
+- [Arquitetura de Cenários](gem-010-scenario-architecture.md);
+- [Modelo de Drivers Operacionais](gem-010-operating-driver-model.md);
+- [Modelo de Receitas e Captura](gem-010-revenue-model.md);
+- [Modelo de Custos e Capacidade](gem-010-cost-and-capacity-model.md);
+- [Demonstrativos Gerenciais](gem-010-management-statements.md);
+- [Caixa, Capital de Giro e Necessidade de Capital](gem-010-cash-working-capital-and-funding.md);
+- [Unit Economics, Segmentos e Coortes](gem-010-unit-economics-and-cohorts.md);
+- [Sensibilidade, Break-even e Estresse](gem-010-sensitivity-break-even-and-stress.md);
+- [Consolidação Financeira entre Produtos](gem-010-cross-product-consolidation.md);
+- [Reservas, Subsídios e Reinvestimento](gem-010-reserves-subsidies-and-reinvestment.md);
+- [Contrato Canônico do Modelo Financeiro](gem-010-financial-model-contract.md);
+- [Cenários e Gates](gem-010-scenarios-and-gates.md).
+
 ## Separações canônicas
 
 - valor potencial não é entrega;
@@ -397,4 +419,4 @@ Não estão definidos:
 
 ## Próximo ponto
 
-`GEM-010 — Cenários e Modelo Financeiro`, após proposta e aprovação separadas.
+`Revisão de fechamento do Guivos Economic Model e definição da próxima frente estratégica`, após proposta e aprovação separadas.
