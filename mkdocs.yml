@@ -312,6 +312,26 @@ nav:
       - GEM-007 — Capacidades e Custos Compartilhados: economic-model/gem-007-shared-capability-and-cost-boundaries.md
       - GEM-007 — Riscos e Guardrails: economic-model/gem-007-product-risk-and-guardrail-matrix.md
       - GEM-007 — Cenários e Gates: economic-model/gem-007-scenarios-and-gates.md
+      - GEM-007 — Checkpoint de Dependência: economic-model/gem-007-dependency-validation-checkpoint.md
+      - GEM-008 — Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
+      - GEM-008 — Taxonomia das Dimensões de Sustentabilidade: economic-model/gem-008-sustainability-dimension-taxonomy.md
+      - GEM-008 — Arquitetura de Custos: economic-model/gem-008-cost-architecture.md
+      - GEM-008 — Fronteiras de Custos Compartilhados: economic-model/gem-008-shared-cost-boundaries.md
+      - GEM-008 — Modelo de Capacidade e Saturação: economic-model/gem-008-capacity-and-saturation-model.md
+      - GEM-008 — Gates de Crescimento e Capacidade: economic-model/gem-008-growth-and-capacity-gates.md
+      - GEM-008 — Fontes Econômicas e Estados de Recursos: economic-model/gem-008-funding-source-and-resource-status.md
+      - GEM-008 — Financiamento do Valor Universal Gratuito: economic-model/gem-008-universal-free-funding-policy.md
+      - GEM-008 — Política de Subsídios Cruzados: economic-model/gem-008-cross-subsidy-policy.md
+      - GEM-008 — Mapa de Obrigações Protegidas: economic-model/gem-008-protected-obligations-map.md
+      - GEM-008 — Arquitetura Conceitual de Reservas: economic-model/gem-008-reserve-architecture.md
+      - GEM-008 — Prioridade de Reinvestimento: economic-model/gem-008-reinvestment-priority-framework.md
+      - GEM-008 — Ciclo de Vida do Reinvestimento: economic-model/gem-008-reinvestment-lifecycle.md
+      - GEM-008 — Concentração e Resiliência: economic-model/gem-008-concentration-and-resilience-policy.md
+      - GEM-008 — Financiamento da Continuidade e Saída: economic-model/gem-008-continuity-and-exit-funding-policy.md
+      - GEM-008 — Política de Produtos Subsidiados: economic-model/gem-008-subsidized-product-policy.md
+      - GEM-008 — Externalidades Sociais e Ambientais: economic-model/gem-008-social-and-environmental-externalities.md
+      - GEM-008 — Contrato Canônico de Sustentabilidade: economic-model/gem-008-sustainability-contract.md
+      - GEM-008 — Cenários e Gates: economic-model/gem-008-scenarios-and-gates.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -345,6 +365,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.25.0 — M6.7: project/architectural-milestones-4.25.0.md
       - Architectural Milestones 4.24.0 — M6.6: project/architectural-milestones-4.24.0.md
       - Architectural Milestones 4.23.0 — M6.5: project/architectural-milestones-4.23.0.md
       - Architectural Milestones 4.22.0 — M6.4: project/architectural-milestones-4.22.0.md
@@ -359,6 +380,7 @@ nav:
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.27.0 — GEM-008: project/knowledge-board-11.27.0.md
       - Knowledge Board 11.26.0 — GEM-007: project/knowledge-board-11.26.0.md
       - Knowledge Board 11.25.0 — GEM-006: project/knowledge-board-11.25.0.md
       - Knowledge Board 11.24.0 — GEM-005: project/knowledge-board-11.24.0.md
@@ -373,6 +395,7 @@ nav:
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.46.0 — GEM-008: project/canonical-consolidation-matrix-gem-008-addendum.md
       - Canonical Matrix 1.45.0 — GEM-007: project/canonical-consolidation-matrix-gem-007-addendum.md
       - Canonical Matrix 1.44.0 — GEM-006: project/canonical-consolidation-matrix-gem-006-addendum.md
       - Canonical Matrix 1.43.0 — GEM-005: project/canonical-consolidation-matrix-gem-005-addendum.md
@@ -387,6 +410,7 @@ nav:
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.74.0 — GEM-008: project/changelog-0.74.0-gem-008.md
       - Changelog 0.73.0 — GEM-007: project/changelog-0.73.0-gem-007.md
       - Changelog 0.72.0 — GEM-006: project/changelog-0.72.0-gem-006.md
       - Changelog 0.71.0 — GEM-005: project/changelog-0.71.0-gem-005.md
@@ -421,6 +445,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.27.0 — GEM-008: roadmap-11.27.0.md
       - Roadmap 11.26.0 — GEM-007: roadmap-11.26.0.md
       - Roadmap 11.25.0 — GEM-006: roadmap-11.25.0.md
       - Roadmap 11.24.0 — GEM-005: roadmap-11.24.0.md
