@@ -277,6 +277,23 @@ nav:
       - GEM-005 — Voluntariado e Impacto Social: economic-model/gem-005-volunteering-and-social-impact-incentives.md
       - GEM-005 — Contrato Canônico de Programa: economic-model/gem-005-incentive-program-contract.md
       - GEM-005 — Cenários e Gates: economic-model/gem-005-scenarios-and-gates.md
+      - GEM-005 — Checkpoint de Dependência: economic-model/gem-005-dependency-validation-checkpoint.md
+      - GEM-006 — Economia de Parceiros: economic-model/gem-006-partner-economy.md
+      - GEM-006 — Papéis de Parceiros: economic-model/gem-006-partner-role-taxonomy.md
+      - GEM-006 — Arquétipos de Relacionamento: economic-model/gem-006-relationship-archetypes.md
+      - GEM-006 — Troca de Valor: economic-model/gem-006-partner-value-exchange-map.md
+      - GEM-006 — Ciclo de Vida de Parceiros: economic-model/gem-006-partner-lifecycle.md
+      - GEM-006 — Elegibilidade e Due Diligence: economic-model/gem-006-eligibility-and-due-diligence.md
+      - GEM-006 — Onboarding e Ativação: economic-model/gem-006-onboarding-and-activation-gates.md
+      - GEM-006 — Mecanismos e Fluxo de Fundos: economic-model/gem-006-economic-mechanisms-and-funds-flow.md
+      - GEM-006 — Responsabilidade e Disputas: economic-model/gem-006-responsibility-refund-and-dispute-map.md
+      - GEM-006 — Qualidade e Desempenho: economic-model/gem-006-quality-and-performance-framework.md
+      - GEM-006 — Dados e Finalidade: economic-model/gem-006-data-access-and-purpose-policy.md
+      - GEM-006 — Transparência, Ranking e Conflitos: economic-model/gem-006-disclosure-ranking-and-conflict-policy.md
+      - GEM-006 — Concentração e Resiliência: economic-model/gem-006-concentration-and-resilience.md
+      - GEM-006 — Suspensão, Saída e Continuidade: economic-model/gem-006-suspension-exit-and-continuity.md
+      - GEM-006 — Contrato Canônico de Relacionamento: economic-model/gem-006-partner-relationship-contract.md
+      - GEM-006 — Cenários e Gates: economic-model/gem-006-scenarios-and-gates.md
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -310,6 +327,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.23.0 — M6.5: project/architectural-milestones-4.23.0.md
       - Architectural Milestones 4.22.0 — M6.4: project/architectural-milestones-4.22.0.md
       - Architectural Milestones 4.21.0 — M6.3: project/architectural-milestones-4.21.0.md
       - Architectural Milestones 4.20.0 — M6.2: project/architectural-milestones-4.20.0.md
@@ -322,6 +340,7 @@ nav:
       - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
       - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
+      - Knowledge Board 11.25.0 — GEM-006: project/knowledge-board-11.25.0.md
       - Knowledge Board 11.24.0 — GEM-005: project/knowledge-board-11.24.0.md
       - Knowledge Board 11.23.0 — GEM-004: project/knowledge-board-11.23.0.md
       - Knowledge Board 11.22.0 — GEM-003: project/knowledge-board-11.22.0.md
@@ -334,6 +353,7 @@ nav:
       - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
       - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
+      - Canonical Matrix 1.44.0 — GEM-006: project/canonical-consolidation-matrix-gem-006-addendum.md
       - Canonical Matrix 1.43.0 — GEM-005: project/canonical-consolidation-matrix-gem-005-addendum.md
       - Canonical Matrix 1.42.0 — GEM-004: project/canonical-consolidation-matrix-gem-004-addendum.md
       - Canonical Matrix 1.41.0 — GEM-003: project/canonical-consolidation-matrix-gem-003-addendum.md
@@ -346,6 +366,7 @@ nav:
       - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
       - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
+      - Changelog 0.72.0 — GEM-006: project/changelog-0.72.0-gem-006.md
       - Changelog 0.71.0 — GEM-005: project/changelog-0.71.0-gem-005.md
       - Changelog 0.70.0 — GEM-004: project/changelog-0.70.0-gem-004.md
       - Changelog 0.69.0 — GEM-003: project/changelog-0.69.0-gem-003.md
@@ -378,6 +399,7 @@ nav:
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Pipeline de Publicação: project/site-pipeline.md
       - Roadmap: roadmap.md
+      - Roadmap 11.25.0 — GEM-006: roadmap-11.25.0.md
       - Roadmap 11.24.0 — GEM-005: roadmap-11.24.0.md
       - Roadmap 11.23.0 — GEM-004: roadmap-11.23.0.md
       - Roadmap 11.22.0 — GEM-003: roadmap-11.22.0.md
