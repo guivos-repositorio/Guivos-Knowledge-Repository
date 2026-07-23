@@ -2,7 +2,7 @@
 id: RP-001-EVIDENCE
 title: Evidence Registry
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Research
 last_updated: 2026-07-23
 related:
@@ -10,6 +10,7 @@ related:
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-003
+  - BA-STR-002-EOVB-004
 ---
 
 # RP-001 — Evidence Registry
@@ -479,6 +480,152 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | Independência | Linha institucional de governança distinta das teorias de restrição financeira e agência. |
 | Status e revisão | Accepted — Guivos Research, 2026-07-23 |
 
+## Lote 04 — Resiliência
+
+### RP1-EV-028 — Resiliência organizacional orientada ao contexto
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; BUS-CAND-006; cluster resiliência |
+| Fonte | ISO (2017). *ISO 22316:2017 — Security and resilience — Organizational resilience — Principles and attributes*. [Página oficial](https://www.iso.org/standard/50053.html) |
+| Disciplina e papel | Resiliência e gestão organizacional; padrão institucional |
+| Conceito ou alegação | A resiliência deve ser fortalecida ao longo da vida da organização por princípios e atributos ajustados às suas necessidades, sem impor abordagem uniforme. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade institucional alta; rigor normativo; generalidade alta; permanência moderada; aplicabilidade alta; revisão do padrão em andamento explicitada. |
+| Nível | E2 — padrão internacional consolidado para orientação de resiliência organizacional |
+| Aplicabilidade | Sustenta resiliência como qualidade organizacional contextual e governada, não como taxa de crescimento ou resposta técnica isolada. |
+| Limitações | Oferece orientação, não certificação de resultado nem relação causal universal entre atributos e continuidade econômica. |
+| Independência | Linha normativa distinta da literatura de capacidades, ecologia e estudos empíricos empresariais. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-029 — Resiliência como meta-capacidade processual
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; BUS-CAND-006; cluster resiliência |
+| Fonte | Duchek, S. (2020). *Organizational resilience: a capability-based conceptualization*. Business Research, 13, 215–246. [DOI](https://doi.org/10.1007/s40685-019-0085-7) |
+| Disciplina e papel | Estratégia e estudos organizacionais; modelo teórico integrador |
+| Conceito ou alegação | Resiliência é decomposta como meta-capacidade processual formada por estágios de antecipação, enfrentamento e adaptação, apoiados por capacidades organizacionais interdependentes. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade alta; rigor de síntese e proposições; generalidade alta; permanência alta; aplicabilidade alta; necessidade de teste empírico explícita. |
+| Nível | E2 — conceptualização consolidada e integradora |
+| Aplicabilidade | Separa a condição resiliente das capacidades que a produzem e impede reduzir resiliência a retorno após crise. |
+| Limitações | Modelo conceitual; sequência e composição das capacidades dependem do contexto e ainda exigem validação empírica. |
+| Independência | Linha de capacidades organizacionais distinta do padrão ISO e da origem ecológica do conceito. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-030 — Persistência distinta de estabilidade
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; cluster resiliência |
+| Fonte | Holling, C. S. (1973). *Resilience and Stability of Ecological Systems*. Annual Review of Ecology and Systematics, 4, 1–23. [DOI](https://doi.org/10.1146/annurev.es.04.110173.000245) |
+| Disciplina e papel | Ecologia de sistemas; fundamento conceitual e analogia limitada |
+| Conceito ou alegação | Resiliência descreve persistência e capacidade de absorver mudanças mantendo relações essenciais, enquanto estabilidade enfatiza retorno e baixa flutuação ao redor de um equilíbrio. |
+| Direção | Amplia |
+| Qualidade | Relevância conceitual alta; autoridade seminal alta; rigor de modelagem ecológica; generalidade direta baixa para empresas; permanência alta; aplicabilidade analógica moderada; extrapolação explicitada. |
+| Nível | E1 — fundamento conceitual forte, com transferência disciplinar limitada |
+| Aplicabilidade | Impede equiparar continuidade a imobilidade, baixa variância ou restauração exata do estado anterior. |
+| Limitações | Sistemas ecológicos não são organizações; governança, intenção e responsabilidade empresarial não podem ser inferidas pela analogia. |
+| Independência | Linha ecológica independente das teorias organizacionais e financeiras. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-031 — Benefícios de longo prazo e ausência de retorno imediato
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; BUS-CAND-006; cluster resiliência |
+| Fonte | Ortiz-de-Mandojana, N., & Bansal, P. (2016). *The long-term benefits of organizational resilience through sustainable business practices*. Strategic Management Journal, 37(8), 1615–1631. [DOI](https://doi.org/10.1002/smj.2410) |
+| Disciplina e papel | Estratégia e sustentabilidade; estudo longitudinal empírico |
+| Conceito ou alegação | Em pares de empresas acompanhados por 15 anos, práticas sociais e ambientais foram associadas a menor volatilidade financeira, maior crescimento e sobrevivência, sem suporte para desempenho financeiro de curto prazo. |
+| Direção | Relaciona |
+| Qualidade | Relevância alta; autoridade alta; rigor longitudinal com pares; generalidade moderada; permanência alta; aplicabilidade alta; constructo latente e amostra explicitados. |
+| Nível | E1 — evidência empírica qualificada em contexto empresarial específico |
+| Aplicabilidade | Sustenta horizonte longo e múltiplos sinais de resiliência, sem transformar crescimento isolado em sua definição. |
+| Limitações | Associação observacional em empresas dos Estados Unidos; não comprova causalidade universal nem aplica automaticamente à Guivos. |
+| Independência | Linha empírica distinta dos padrões e modelos conceituais. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-032 — Exploração e aproveitamento em tensão
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-006; cluster resiliência |
+| Fonte | March, J. G. (1991). *Exploration and Exploitation in Organizational Learning*. Organization Science, 2(1), 71–87. [DOI](https://doi.org/10.1287/orsc.2.1.71) |
+| Disciplina e papel | Aprendizagem organizacional; modelagem teórica |
+| Conceito ou alegação | Organizações distribuem recursos entre exploração de novas possibilidades e aproveitamento das competências existentes; retornos, riscos e horizontes diferentes tornam o equilíbrio difícil e sujeito a armadilhas adaptativas. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade seminal alta; rigor de modelagem; generalidade alta; permanência alta; aplicabilidade alta; abstrações do modelo explícitas. |
+| Nível | E2 — teoria consolidada sobre tensões da adaptação organizacional |
+| Aplicabilidade | Bloqueia presumir que ampliar alcance, inovar ou explorar continuamente fortalece resiliência sem custos para execução e continuidade atuais. |
+| Limitações | Modelo abstrato; não prescreve proporção ótima nem mede responsabilidade, proteção ou valor legítimo. |
+| Independência | Linha de aprendizagem distinta de finanças, crescimento e resiliência normativa. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-033 — Capacidades dinâmicas como processos, não resultado permanente
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-006; cluster resiliência |
+| Fonte | Eisenhardt, K. M., & Martin, J. A. (2000). *Dynamic capabilities: what are they?* Strategic Management Journal, 21(10–11), 1105–1121. [DOI](https://doi.org/10.1002/1097-0266(200010/11)21:10/11%3C1105::AID-SMJ133%3E3.0.CO;2-E) |
+| Disciplina e papel | Estratégia e visão baseada em recursos; artigo teórico |
+| Conceito ou alegação | Capacidades dinâmicas são processos identificáveis de integração e reconfiguração de recursos; seu valor e forma dependem do dinamismo de mercado e elas não são, por si, vantagem sustentável permanente. |
+| Direção | Reclassifica |
+| Qualidade | Relevância alta; autoridade alta; rigor conceitual; generalidade alta; permanência alta; aplicabilidade alta; condições ambientais discutidas. |
+| Nível | E2 — referência consolidada para classificação de capacidades adaptativas |
+| Aplicabilidade | Reclassifica adaptação, alianças e reconfiguração como capacidades sustentadoras, não como prova de crescimento responsável ou Outcome. |
+| Limitações | Ênfase competitiva e empresarial; não incorpora sozinho propósito, legitimidade multistakeholder ou proteção. |
+| Independência | Linha estratégica distinta da aprendizagem de March e dos padrões de resiliência. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-034 — Crescimento financeiramente suportável
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-006; BUS-CAND-005; cluster resiliência |
+| Fonte | Higgins, R. C. (1977). *How Much Growth Can a Firm Afford?* Financial Management, 6(3), 7–16. [DOI](https://doi.org/10.2307/3665251) |
+| Disciplina e papel | Finanças corporativas; modelo analítico |
+| Conceito ou alegação | O crescimento suportável depende da coerência entre margem, retenção, intensidade de ativos, alavancagem e acesso a capital; expansão superior ao limite exige mudança operacional ou financeira. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade alta; rigor analítico; generalidade moderada; permanência alta; aplicabilidade alta; premissas financeiras identificáveis. |
+| Nível | E2 — modelo consolidado para limites financeiros da expansão |
+| Aplicabilidade | Impede tratar crescimento como objetivo independente da continuidade econômica e das escolhas de financiamento e risco. |
+| Limitações | Modelo financeiro simplificado e orientado a firmas; não mede qualidade, propósito, impacto ou resiliência organizacional completa. |
+| Independência | Linha financeira distinta das teorias de aprendizagem, recursos e resiliência. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-035 — Limites gerenciais ao ritmo de crescimento
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-006; cluster resiliência |
+| Fonte | Penrose, E. T. (1959/2009). *The Theory of the Growth of the Firm* (4th ed.). Oxford University Press. [Catálogo](https://ideas.repec.org/b/oxp/obooks/9780199573844.html) |
+| Disciplina e papel | Economia da firma e estratégia; obra teórica seminal |
+| Conceito ou alegação | O crescimento emerge do uso de recursos e oportunidades, mas seu ritmo é condicionado por conhecimento, experiência e serviços gerenciais internos necessários para integrar a expansão. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade seminal alta; rigor teórico; generalidade alta; permanência muito alta; aplicabilidade alta; limites históricos e intraorganizacionais conhecidos. |
+| Nível | E2 — teoria consolidada sobre recursos e limites internos ao crescimento |
+| Aplicabilidade | Sustenta que capacidade de absorver complexidade importa mais que aumento bruto de escala e que crescimento pode precisar desacelerar. |
+| Limitações | Formulação original de 1959; não trata integralmente plataformas digitais, conflitos internos, proteção ou modelos multistakeholder. |
+| Independência | Linha baseada em recursos distinta dos modelos financeiro e de aprendizagem. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-036 — Alto crescimento e sobrevivência contingente
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-006; cluster resiliência |
+| Fonte | Choi, T., Rupasingha, A., Robertson, J. C., & Leigh, N. G. (2017). *The Effects of High Growth on New Business Survival*. Review of Regional Studies, 47(1), 1–23. [DOI](https://doi.org/10.52324/001c.8025) |
+| Disciplina e papel | Economia regional e dinâmica empresarial; estudo empírico |
+| Conceito ou alegação | Os efeitos de alto crescimento do emprego sobre a sobrevivência de novos estabelecimentos variam conforme idade, tamanho e trajetória, não sustentando uma relação simples e universal. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade moderada a alta; rigor empírico; generalidade moderada; permanência moderada; aplicabilidade moderada; recorte de novos estabelecimentos explícito. |
+| Nível | E1 — evidência empírica direta sobre crescimento e sobrevivência em contexto delimitado |
+| Aplicabilidade | Bloqueia usar crescimento elevado como proxy automática de saúde, resiliência ou continuidade. |
+| Limitações | Foco em emprego, novos estabelecimentos e contexto regional dos Estados Unidos; não mede qualidade, valor ou causalidade completa. |
+| Independência | Linha empírica de sobrevivência distinta dos modelos financeiro, gerencial e de capacidades. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
 ## Síntese de força cumulativa
 
 | Alvo | Linhas independentes | Busca de contradição ou limite | Estado da evidência |
@@ -490,7 +637,8 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | ECO-CAND-008 | 4 | risco residual e distinção entre proteção e confiança registradas | E3 provisório para composição de guardrails e condição vivida |
 | BUS-CAND-004 | 4 | falha, reparação e distinção entre confiança e legitimidade registradas | E3 provisório para materialidade institucional; formulação composta |
 | BUS-CAND-003 | 3 | limite ao controle unilateral e distinção entre qualidade e valor registrado | E3 provisório para materialidade da entrega; formulação composta |
-| BUS-CAND-005 | 5 | fronteiras entre viabilidade, operação e sustentabilidade registradas | E3 provisório para continuidade como condição estratégica composta |
+| BUS-CAND-005 | 9 | fronteiras entre viabilidade, operação, estabilidade, adaptação e sustentabilidade registradas | E3 provisório para continuidade como condição estratégica composta |
+| BUS-CAND-006 | 8 | obrigação de crescer, limites financeiros e gerenciais e sobrevivência contingente confrontados | E3 provisório para trajetória governada; independência como Outcome enfraquecida |
 | BUS-CAND-010 | 3 | restrições financeiras e risco de sobreinvestimento confrontados | E3 provisório para alocação governada; independência como Outcome incerta |
 
 Nenhum nível de evidência aprova, rejeita ou funde candidatos.
