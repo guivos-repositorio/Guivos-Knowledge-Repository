@@ -2,9 +2,9 @@
 id: BA-STR-002-EOVP-001
 title: External Outcome Validation Protocol
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Business Architecture
-last_updated: 2026-07-22
+last_updated: 2026-07-23
 parent: BA-STR-002
 depends_on:
   - BA-STR-002-COR-001
@@ -14,6 +14,7 @@ related:
   - RP-001-EVIDENCE
   - RP-001-REC
   - BA-STR-002-EOVB-001
+  - BA-STR-002-EOVB-002
 normative: false
 execution_status: in-progress
 ---
@@ -31,9 +32,9 @@ Ele transforma as dúvidas do COR em um plano de investigação repetível, rast
 ```text
 Protocol: governed execution in progress
 Scope: 18 candidates and 6 overlap clusters
-Candidate state changes: 3 to Under Validation
-External evidence registered: 9
-External validation: in progress — batch 01 completed
+Candidate state changes: 6 to Under Validation
+External evidence registered: 18
+External validation: in progress — batches 01 and 02 completed
 COEM: not started
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -266,10 +267,10 @@ O gate poderá resultar em `Ready for COEM`, `Additional Evidence Required` ou `
 | registro mínimo de evidência definido | Pass |
 | contradições e omissões tratadas | Pass |
 | regra de mudança de estado definida | Pass |
-| validação externa executada | In progress — 3/18 candidatos; 1/6 clusters |
+| validação externa executada | In progress — 6/18 candidatos; 2/6 clusters |
 | COEM iniciada | Not started |
 | Outcomes promovidos | 0 |
 
 ## 18. Próximo passo governado
 
-Continuar a validação em lotes sem reduzir a cobertura final dos 18 candidatos e dos seis clusters. O [lote 01 — agência e evolução](outcome-validation-batch-01-agency-evolution.md) está concluído para `ECO-CAND-001`, `ECO-CAND-003` e `ECO-CAND-005`; os outros 15 candidatos e cinco clusters permanecem pendentes.
+Continuar a validação em lotes sem reduzir a cobertura final dos 18 candidatos e dos seis clusters. O [lote 01 — agência e evolução](outcome-validation-batch-01-agency-evolution.md) e o [lote 02 — confiança](outcome-validation-batch-02-trust.md) estão concluídos; os outros 12 candidatos e quatro clusters permanecem pendentes.

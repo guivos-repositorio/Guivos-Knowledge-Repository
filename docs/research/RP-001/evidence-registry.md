@@ -2,12 +2,13 @@
 id: RP-001-EVIDENCE
 title: Evidence Registry
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Research
-last_updated: 2026-07-22
+last_updated: 2026-07-23
 related:
   - BA-STR-002-EOVP-001
   - BA-STR-002-EOVB-001
+  - BA-STR-002-EOVB-002
 ---
 
 # RP-001 — Evidence Registry
@@ -184,3 +185,162 @@ Os níveis pertencem à síntese disponível, não ao prestígio isolado da font
 | ECO-CAND-005 | 3 | não linearidade, ganhos e perdas, desengajamento adaptativo registrados | E3 provisório para regulação adaptativa contínua; classificação e cobertura coletiva permanecem abertas |
 
 Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada orienta a síntese arquitetural e a futura COEM.
+
+## Lote 02 — Confiança
+
+### RP1-EV-010 — Pontes, informação e oportunidades
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-006; cluster confiança |
+| Fonte | Granovetter, M. S. (1973). *The Strength of Weak Ties*. American Journal of Sociology, 78(6), 1360–1380. [JSTOR](https://www.jstor.org/stable/2776392) |
+| Disciplina e papel | Sociologia de redes; obra teórica e empírica reconhecida |
+| Conceito ou alegação | Laços fracos conectam segmentos sociais e podem funcionar como pontes para informação, mobilidade e oportunidades não disponíveis em círculos próximos. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade alta; rigor teórico e empírico; generalidade moderada; permanência alta; aplicabilidade alta; contexto histórico identificável. |
+| Nível | E2 — mecanismo estrutural amplamente replicado e desenvolvido |
+| Aplicabilidade | Sustenta que relevância relacional depende também de diversidade e alcance estrutural, não apenas de força ou frequência do vínculo. |
+| Limitações | Não demonstra reciprocidade, proteção ou benefício universal; efeitos variam por contexto e distribuição de acesso. |
+| Independência | Linha de redes independente da teoria funcional de capital social e dos modelos de confiança organizacional. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-011 — Capital social incorporado às relações
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-006; cluster confiança |
+| Fonte | Coleman, J. S. (1988). *Social Capital in the Creation of Human Capital*. American Journal of Sociology, 94, S95–S120. [JSTOR](https://www.jstor.org/stable/2780243) |
+| Disciplina e papel | Sociologia; formulação teórica com aplicação empírica |
+| Conceito ou alegação | Capital social não é uma entidade única: consiste em aspectos da estrutura social que facilitam ações, incluindo obrigações, expectativas, canais de informação e normas. |
+| Direção | Relaciona |
+| Qualidade | Relevância alta; autoridade alta; rigor explícito; generalidade moderada; permanência alta; aplicabilidade alta; pressupostos funcionais claros. |
+| Nível | E2 — formulação consolidada com múltiplas aplicações posteriores |
+| Aplicabilidade | Sustenta recursos e cooperação produzidos pelas relações, mas reclassifica “conexão fortalecedora” como efeito funcional dependente da estrutura. |
+| Limitações | A definição funcional pode ocultar distribuição desigual de benefícios e custos a não membros. |
+| Independência | Referencial de capital social distinto da análise de pontes de Granovetter. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-012 — Consequências negativas do capital social
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-006; cluster confiança |
+| Fonte | Portes, A. (1998). *Social Capital: Its Origins and Applications in Modern Sociology*. Annual Review of Sociology, 24, 1–24. [DOI](https://doi.org/10.1146/annurev.soc.24.1.1) |
+| Disciplina e papel | Sociologia; revisão crítica e contraevidência |
+| Conceito ou alegação | Redes e normas podem produzir benefícios, mas também exclusão de terceiros, exigências excessivas, restrições à liberdade e nivelamento descendente. |
+| Direção | Contradiz |
+| Qualidade | Relevância muito alta; autoridade alta; rigor de síntese; generalidade alta; permanência alta; aplicabilidade alta; controvérsias preservadas. |
+| Nível | E2 — convergência crítica de múltiplas linhas sociológicas |
+| Aplicabilidade | Impede classificar conexões densas, coesas ou confiáveis como fortalecedoras sem avaliar distribuição de benefícios, autonomia e efeitos externos. |
+| Limitações | Síntese conceitual; não fornece medida única nem limiar universal de dano. |
+| Independência | Revisão crítica distinta das fontes que sustentam benefícios relacionais. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-013 — Privacidade como gestão de riscos a indivíduos
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-008; cluster confiança |
+| Fonte | NIST (2020). *Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management, Version 1.0*. [Documento oficial](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.01162020.pdf) |
+| Disciplina e papel | Gestão de risco e privacidade; framework institucional |
+| Conceito ou alegação | Privacidade requer identificar e gerir problemas que pessoas podem experimentar durante o tratamento de dados, integrando governança, controle, comunicação, proteção e avaliação de risco. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade institucional alta; rigor colaborativo; generalidade alta; permanência moderada a alta; aplicabilidade alta; caráter voluntário explícito. |
+| Nível | E2 — referência institucional consolidada para gestão de risco de privacidade |
+| Aplicabilidade | Sustenta privacidade e autonomia como resultados verificáveis de governança e gestão de risco, não como confiança percebida por si só. |
+| Limitações | Framework não prova eficácia causal universal nem cobre integralmente justiça, legitimidade ou relações sociais. |
+| Independência | Linha de privacidade distinta de segurança cibernética e justiça procedimental. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-014 — Segurança como ciclo de gestão de risco
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-008; cluster confiança |
+| Fonte | NIST (2024). *The NIST Cybersecurity Framework 2.0*. [Documento oficial](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) |
+| Disciplina e papel | Segurança cibernética e gestão de risco; framework institucional |
+| Conceito ou alegação | Resultados de segurança são organizados pelas funções Governar, Identificar, Proteger, Detectar, Responder e Recuperar, compondo gestão contínua de risco. |
+| Direção | Reclassifica |
+| Qualidade | Relevância alta; autoridade institucional alta; rigor multissetorial; generalidade alta; permanência moderada; aplicabilidade alta; implementação dependente de contexto. |
+| Nível | E2 — padrão de referência amplamente adotado |
+| Aplicabilidade | Reforça segurança e recuperação como guardrails e resultados operacionais governados, não como sinônimo de confiança institucional. |
+| Limitações | Recorte de risco cibernético; não cobre sozinho segurança física, justiça, privacidade ou dignidade. |
+| Independência | Linha técnica e institucional distinta do NIST Privacy Framework, embora complementar. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-015 — Justiça procedimental, legitimidade e cooperação
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-008; BUS-CAND-004; cluster confiança |
+| Fonte | Sunshine, J., & Tyler, T. R. (2003). *The Role of Procedural Justice and Legitimacy in Shaping Public Support for Policing*. Law & Society Review, 37(3), 513–548. [Cambridge Core](https://www.cambridge.org/core/journals/law-and-society-review/article/role-of-procedural-justice-and-legitimacy-in-shaping-public-support-for-policing/3EB985ACD855B32B3C10EDAAD0B0EA57) |
+| Disciplina e papel | Psicologia jurídica e governança pública; estudo empírico |
+| Conceito ou alegação | Justiça procedimental influencia legitimidade percebida e cooperação voluntária de modo distinto de avaliações instrumentais de desempenho, risco de sanção e distribuição de serviços. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade alta; rigor empírico; generalidade moderada; permanência alta; aplicabilidade moderada a alta; recorte institucional explícito. |
+| Nível | E1 — evidência empírica direta em domínio específico |
+| Aplicabilidade | Sustenta voz, neutralidade, tratamento respeitoso e confiança na autoridade como dimensões de participação e legitimidade. |
+| Limitações | Contexto policial e jurídico; extrapolação para ecossistema comercial e social exige cautela. |
+| Independência | Linha comportamental independente dos frameworks de risco e da teoria organizacional de legitimidade. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-016 — Confiança, confiabilidade e aceitação de risco
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-004; ECO-CAND-008; cluster confiança |
+| Fonte | Mayer, R. C., Davis, J. H., & Schoorman, F. D. (1995). *An Integrative Model of Organizational Trust*. Academy of Management Review, 20(3), 709–734. [DOI](https://doi.org/10.5465/amr.1995.9508080335) |
+| Disciplina e papel | Estudos organizacionais; modelo teórico integrador |
+| Conceito ou alegação | Confiança é disposição de aceitar vulnerabilidade; distingue-se da confiabilidade percebida, associada a capacidade, benevolência e integridade, e do comportamento posterior de assumir risco. |
+| Direção | Amplia |
+| Qualidade | Relevância muito alta; autoridade alta; rigor conceitual; generalidade alta; permanência alta; aplicabilidade alta; limites de nível de análise discutidos. |
+| Nível | E2 — modelo consolidado e extensamente desenvolvido |
+| Aplicabilidade | Impede fundir confiança com conformidade, segurança ou transação; sugere observação separada de antecedentes, disposição e comportamento. |
+| Limitações | Modelo originalmente interpessoal e intraorganizacional; aplicação à instituição requer extensão explícita. |
+| Independência | Linha organizacional distinta de legitimidade institucional e justiça procedimental. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-017 — Legitimidade socialmente conferida
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-004; cluster confiança |
+| Fonte | Suchman, M. C. (1995). *Managing Legitimacy: Strategic and Institutional Approaches*. Academy of Management Review, 20(3), 571–610. [DOI](https://doi.org/10.5465/amr.1995.9508080331) |
+| Disciplina e papel | Sociologia organizacional; síntese teórica reconhecida |
+| Conceito ou alegação | Legitimidade é avaliação generalizada e socialmente construída de adequação organizacional; possui dimensões pragmática, moral e cognitiva e não equivale à confiança de um participante individual. |
+| Direção | Amplia |
+| Qualidade | Relevância muito alta; autoridade alta; rigor de síntese; generalidade alta; permanência alta; aplicabilidade alta; pluralidade conceitual explícita. |
+| Nível | E2 — conceito consolidado em teoria institucional |
+| Aplicabilidade | Sustenta legitimidade como condição institucional emergente e exige separá-la de reputação, conformidade e confiança interpessoal. |
+| Limitações | Não fornece medida universal e reconhece tensões entre gestão estratégica e construção institucional. |
+| Independência | Linha institucional independente do modelo de confiança de Mayer et al. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-018 — Falha e reparação da confiança organizacional
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-004; cluster confiança |
+| Fonte | Gillespie, N., & Dietz, G. (2009). *Trust Repair After an Organization-Level Failure*. Academy of Management Review, 34(1), 127–145. [DOI](https://doi.org/10.5465/amr.2009.35713319) |
+| Disciplina e papel | Estudos organizacionais; modelo de processo e contraevidência à estabilidade |
+| Conceito ou alegação | Falhas organizacionais podem degradar confiança de forma sistêmica; reparação requer diagnóstico, respostas confiáveis e reformas que atuem sobre controles, cultura, liderança e relações. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade alta; rigor teórico integrador; generalidade moderada a alta; permanência alta; aplicabilidade alta; validação contextual necessária. |
+| Nível | E2 — síntese de mecanismos de violação e reparação |
+| Aplicabilidade | Bloqueia tratar confiança como ativo estável, reputação comunicacional ou efeito automático de conformidade; inclui reparabilidade e aprendizado após falhas. |
+| Limitações | Modelo teórico; intensidade e eficácia das respostas dependem do tipo de falha e do contexto. |
+| Independência | Linha de dinâmica pós-falha distinta das definições basais de confiança e legitimidade. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+## Síntese de força cumulativa
+
+| Alvo | Linhas independentes | Busca de contradição ou limite | Estado da evidência |
+|---|---:|---|---|
+| ECO-CAND-001 | 3 | limites de introspecção registrados | E3 provisório para natureza habilitadora |
+| ECO-CAND-003 | 3 | dependência socioestrutural e generalização registradas | E3 provisório para agência situada |
+| ECO-CAND-005 | 3 | não linearidade e desengajamento adaptativo registrados | E3 provisório para regulação adaptativa |
+| ECO-CAND-006 | 3 | exclusão, restrição e distribuição desigual registradas | E3 provisório para qualidade relacional; conexão isolada insuficiente |
+| ECO-CAND-008 | 4 | risco residual e distinção entre proteção e confiança registradas | E3 provisório para composição de guardrails e condição vivida |
+| BUS-CAND-004 | 4 | falha, reparação e distinção entre confiança e legitimidade registradas | E3 provisório para materialidade institucional; formulação composta |
+
+Nenhum nível de evidência aprova, rejeita ou funde candidatos.
