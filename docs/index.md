@@ -5,15 +5,16 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M7.0.5 — Fourth External Outcome Validation Batch Completed` concluído documentariamente;
+- marco `M7.0.6 — Fifth External Outcome Validation Batch Completed` concluído documentariamente;
 - frente `A2-R03 — Business Architecture Review` ativa;
-- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.11.0`;
-- `BA-STR-002-COR-001 0.6.0` com 18 candidatos, dos quais dez estão em `Under Validation`;
-- `BA-STR-002-EOVP-001 0.5.0` em execução governada;
+- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.12.0`;
+- `BA-STR-002-COR-001 0.7.0` com 18 candidatos, dos quais 13 estão em `Under Validation`;
+- `BA-STR-002-EOVP-001 0.6.0` em execução governada;
 - `BA-STR-002-EOVB-001 0.1.0` com nove evidências, três sínteses individuais e o cluster agência e evolução analisado;
 - `BA-STR-002-EOVB-002 0.1.0` com nove evidências, três sínteses individuais e o cluster confiança analisado;
 - `BA-STR-002-EOVB-003 0.1.0` com nove evidências, três sínteses individuais e o cluster valor e continuidade analisado;
 - `BA-STR-002-EOVB-004 0.1.0` com nove evidências, duas sínteses individuais e o cluster resiliência analisado;
+- `BA-STR-002-EOVB-005 0.1.0` com nove evidências, três sínteses individuais e o cluster adaptação analisado;
 - nenhum Outcome aprovado ou canônico;
 - Product Engineering pausado antes do W0-01;
 - Guivos Economic Model encerrado documentariamente em GEM-001 a GEM-010;
@@ -42,9 +43,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR, o protocolo e quatro lotes de validação externa estão concluídos; o próximo incremento candidato é o quinto lote governado do `BA-STR-002-EOVP-001`, sujeito a aprovação separada.
+Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR, o protocolo e cinco lotes de validação externa estão concluídos; o próximo incremento candidato é o sexto lote governado do `BA-STR-002-EOVP-001`, sujeito a aprovação separada.
 
-Dez dos 18 registros do COR estão em `Under Validation`; os demais permanecem `Candidate`. Os quatro lotes não equivalem à validação integral: dois clusters, oito candidatos, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
+Treze dos 18 registros do COR estão em `Under Validation`; os demais permanecem `Candidate`. Os cinco lotes não equivalem à validação integral: um cluster, cinco candidatos, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
 
 ## Acesso rápido
 

@@ -2,7 +2,7 @@
 id: RP-001-EVIDENCE
 title: Evidence Registry
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Guivos Research
 last_updated: 2026-07-23
 related:
@@ -11,6 +11,7 @@ related:
   - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
+  - BA-STR-002-EOVB-005
 ---
 
 # RP-001 — Evidence Registry
@@ -626,6 +627,152 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | Independência | Linha empírica de sobrevivência distinta dos modelos financeiro, gerencial e de capacidades. |
 | Status e revisão | Accepted — Guivos Research, 2026-07-23 |
 
+## Lote 05 — Adaptação
+
+### RP1-EV-037 — Orientação de mercado como inteligência e resposta
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-002; BUS-CAND-007; cluster adaptação |
+| Fonte | Kohli, A. K., & Jaworski, B. J. (1990). *Market Orientation: The Construct, Research Propositions, and Managerial Implications*. Journal of Marketing, 54(2), 1–18. [DOI](https://doi.org/10.1177/002224299005400201) |
+| Disciplina e papel | Marketing e comportamento organizacional; framework teórico apoiado por entrevistas de campo |
+| Conceito ou alegação | Orientação de mercado envolve geração organizacional de inteligência sobre necessidades presentes e futuras, disseminação entre funções e resposta coordenada. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade seminal alta; rigor teórico e qualitativo; generalidade alta; permanência alta; aplicabilidade alta; escopo mercadológico explícito. |
+| Nível | E2 — framework consolidado para sensing, circulação de conhecimento e resposta |
+| Aplicabilidade | Reclassifica relevância contínua como efeito de capacidades distribuídas de inteligência e resposta, não como resultado autônomo garantido. |
+| Limitações | Ênfase em mercados e organizações comerciais; não mede legitimidade, propósito ou valor vivido por todos os participantes. |
+| Independência | Linha de inteligência de mercado distinta da cultura de orientação de mercado e das teorias de aprendizagem. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-038 — Orientação de mercado e desempenho em contexto delimitado
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-002; cluster adaptação |
+| Fonte | Narver, J. C., & Slater, S. F. (1990). *The Effect of a Market Orientation on Business Profitability*. Journal of Marketing, 54(4), 20–35. [DOI](https://doi.org/10.1177/002224299005400403) |
+| Disciplina e papel | Marketing estratégico; estudo empírico exploratório |
+| Conceito ou alegação | Uma medida de orientação de mercado, formada por orientação ao cliente, concorrentes e coordenação interfuncional, apresentou relação positiva com rentabilidade na amostra de 140 unidades de negócio. |
+| Direção | Relaciona |
+| Qualidade | Relevância alta; autoridade seminal alta; rigor empírico para a época; generalidade moderada; permanência alta; aplicabilidade moderada; amostra e medida delimitadas. |
+| Nível | E1 — evidência empírica qualificada em contexto empresarial específico |
+| Aplicabilidade | Sustenta a materialidade de organizar respostas relevantes, mas não demonstra relevância como Outcome independente nem causalidade universal. |
+| Limitações | Desenho exploratório e contexto empresarial; rentabilidade não equivale a valor legítimo, relevância contínua ou impacto no ecossistema. |
+| Independência | Linha empírica distinta do framework comportamental de Kohli e Jaworski. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-039 — Resposta reativa versus orientação ampla
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-002; BUS-CAND-007; cluster adaptação |
+| Fonte | Slater, S. F., & Narver, J. C. (1998). *Customer-led and market-oriented: let's not confuse the two*. Strategic Management Journal, 19(10), 1001–1006. [DOI](https://doi.org/10.1002/%28SICI%291097-0266%28199810%2919%3A10%3C1001%3A%3AAID-SMJ996%3E3.0.CO%3B2-4) |
+| Disciplina e papel | Estratégia e marketing; ensaio teórico e contraevidência |
+| Conceito ou alegação | Ser guiado por solicitações expressas de clientes atuais pode produzir aprendizagem adaptativa e de curto alcance; orientação de mercado mais ampla inclui necessidades latentes, concorrentes e aprendizagem generativa. |
+| Direção | Contradiz |
+| Qualidade | Relevância muito alta; autoridade alta; rigor argumentativo; generalidade moderada; permanência alta; aplicabilidade alta; natureza não empírica explícita. |
+| Nível | E1 — linha teórica qualificada que explicita limite à resposta reativa |
+| Aplicabilidade | Impede equiparar relevância a obedecer pedidos atuais ou personalizar continuamente sem visão de futuro, propósito e aprendizado generativo. |
+| Limitações | Ensaio curto, orientado a estratégia competitiva; a distinção não fornece critério universal para necessidades legítimas. |
+| Independência | Contraevidência estratégica distinta das medidas empíricas e do framework de inteligência. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-040 — Aprendizagem entre níveis e renovação
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-007; cluster adaptação |
+| Fonte | Crossan, M. M., Lane, H. W., & White, R. E. (1999). *An Organizational Learning Framework: From Intuition to Institution*. Academy of Management Review, 24(3), 522–537. [DOI](https://doi.org/10.5465/amr.1999.2202135) |
+| Disciplina e papel | Estudos organizacionais; framework teórico integrador |
+| Conceito ou alegação | Aprendizagem organizacional liga indivíduos, grupos e organização por processos de intuição, interpretação, integração e institucionalização, em tensão entre assimilação do novo e uso do aprendido. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade seminal alta; rigor teórico integrador; generalidade alta; permanência alta; aplicabilidade alta; necessidade de operacionalização explícita. |
+| Nível | E2 — framework consolidado de aprendizagem e renovação organizacional |
+| Aplicabilidade | Reclassifica aprendizado institucional como processo e capacidade multinível, não como Outcome produzido pela coleta isolada de evidências. |
+| Limitações | Modelo teórico; não demonstra por si que aprendizagem melhora decisões, valor ou adaptação em todo contexto. |
+| Independência | Linha multinível distinta da capacidade absortiva e da miopia de aprendizagem. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-041 — Capacidade absortiva cumulativa
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-007; BUS-CAND-002; cluster adaptação |
+| Fonte | Cohen, W. M., & Levinthal, D. A. (1990). *Absorptive Capacity: A New Perspective on Learning and Innovation*. Administrative Science Quarterly, 35(1), 128–152. [DOI](https://doi.org/10.2307/2393553) |
+| Disciplina e papel | Inovação e aprendizagem organizacional; teoria apoiada por análise empírica |
+| Conceito ou alegação | Reconhecer o valor de informação externa, assimilá-la e aplicá-la depende de conhecimento prévio relacionado; a capacidade é cumulativa e não corresponde à soma simples dos indivíduos. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade seminal alta; rigor teórico e empírico; generalidade alta; permanência alta; aplicabilidade alta; foco em inovação e P&D explícito. |
+| Nível | E2 — teoria consolidada sobre capacidade organizacional de aprender externamente |
+| Aplicabilidade | Sustenta aprendizagem e adaptação como capacidades que exigem base de conhecimento, diversidade e comunicação, não como resposta automática a novos dados. |
+| Limitações | Ênfase em conhecimento tecnológico e finalidade comercial; não cobre sozinho legitimidade, cultura ou aprendizado ético. |
+| Independência | Linha de capacidade e inovação distinta do framework multinível de Crossan e da orientação de mercado. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-042 — Miopia do aprendizado
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-007; BUS-CAND-002; cluster adaptação |
+| Fonte | Levinthal, D. A., & March, J. G. (1993). *The Myopia of Learning*. Strategic Management Journal, 14(S2), 95–112. [DOI](https://doi.org/10.1002/smj.4250141009) |
+| Disciplina e papel | Estratégia e aprendizagem organizacional; síntese teórica e contraevidência |
+| Conceito ou alegação | Processos adaptativos tendem a privilegiar o curto prazo, o contexto próximo e sucessos observados, podendo subinvestir em exploração, alternativas distantes e aprendizado com falhas. |
+| Direção | Contradiz |
+| Qualidade | Relevância muito alta; autoridade seminal alta; rigor teórico; generalidade alta; permanência alta; aplicabilidade alta; abstrações reconhecidas. |
+| Nível | E2 — limitação consolidada dos processos de aprendizagem por experiência |
+| Aplicabilidade | Bloqueia presumir que mais dados, experimentos ou ciclos de feedback produzem adaptação coerente e relevância de longo prazo. |
+| Limitações | Não prescreve desenho ótimo de aprendizagem nem resolve conflitos entre exploração, eficiência, propósito e proteção. |
+| Independência | Contraevidência comportamental distinta da capacidade absortiva e dos modelos de transferência internacional. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-043 — Fit entre padronização e contexto
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-009; BUS-CAND-002; cluster adaptação |
+| Fonte | Katsikeas, C. S., Samiee, S., & Theodosiou, M. (2006). *Strategy Fit and Performance Consequences of International Marketing Standardization*. Strategic Management Journal, 27(9), 867–890. [DOI](https://doi.org/10.1002/smj.549) |
+| Disciplina e papel | Estratégia internacional; estudo empírico de fit |
+| Conceito ou alegação | A padronização se relaciona a melhor desempenho quando está alinhada à similaridade dos ambientes regulatórios, tecnológicos, culturais, competitivos e de mercado; desalinhamento reduz desempenho. |
+| Direção | Amplia |
+| Qualidade | Relevância muito alta; autoridade alta; rigor empírico; generalidade moderada; permanência alta; aplicabilidade alta; recorte de marketing e subsidiárias explícito. |
+| Nível | E1 — evidência empírica qualificada sobre contingência entre coerência e adaptação |
+| Aplicabilidade | Sustenta adequação contextual como decisão de fit, preservando padronização quando legítima e adaptação quando as diferenças materiais exigem. |
+| Limitações | Estudo transversal e orientado a marketing; não cobre integralmente arquitetura, propósito, idiomas, proteção ou múltiplos stakeholders. |
+| Independência | Linha empírica de estratégia internacional distinta da transferência institucional e da revisão sistemática. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-044 — Transferência transnacional contextualmente incorporada
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-009; BUS-CAND-007; cluster adaptação |
+| Fonte | Kostova, T. (1999). *Transnational Transfer of Strategic Organizational Practices: A Contextual Perspective*. Academy of Management Review, 24(2), 308–324. [DOI](https://doi.org/10.5465/amr.1999.1893938) |
+| Disciplina e papel | Negócios internacionais e teoria institucional; modelo teórico multinível |
+| Conceito ou alegação | A transferência de práticas depende de sua institucionalização na unidade receptora e de contextos sociais, organizacionais e relacionais, não apenas da replicação formal. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade seminal alta; rigor teórico multinível; generalidade moderada; permanência alta; aplicabilidade alta; foco intraorganizacional explícito. |
+| Nível | E2 — referência consolidada para incorporação contextual de práticas transnacionais |
+| Aplicabilidade | Impede tratar coerência global como cópia uniforme e adequação como tradução superficial; adoção requer significado, valor e legitimidade locais. |
+| Limitações | Modelo teórico voltado a multinacionais e práticas internas; não demonstra aceitação por participantes externos nem define limites constitucionais da adaptação. |
+| Independência | Linha institucional distinta do fit de marketing e das evidências de aprendizagem interna. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-045 — Resultados mistos da padronização e adaptação
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-009; BUS-CAND-002; cluster adaptação |
+| Fonte | Mandler, T., Sezen, B., Chen, J., & Özsomer, A. (2021). *Performance consequences of marketing standardization/adaptation: A systematic literature review and future research agenda*. Journal of Business Research, 125, 416–435. [DOI](https://doi.org/10.1016/j.jbusres.2020.12.023) |
+| Disciplina e papel | Marketing internacional; revisão sistemática |
+| Conceito ou alegação | A literatura apresenta resultados mistos e inconclusivos sobre efeitos de padronização e adaptação, com dependência de teoria, contexto, componente analisado, medida de desempenho e método. |
+| Direção | Contradiz |
+| Qualidade | Relevância muito alta; autoridade alta; rigor de revisão sistemática; generalidade alta dentro do campo; permanência moderada a alta; aplicabilidade alta; lacunas explicitadas. |
+| Nível | E2 — síntese qualificada de 68 estudos e de inconsistências acumuladas |
+| Aplicabilidade | Bloqueia elevar adaptação ou padronização a objetivo universal e reforça decisão contextual, dinâmica e por componente. |
+| Limitações | Campo de marketing; predominância de resultados empresariais e lacunas em serviços digitais e mercados emergentes reconhecidas pelos autores. |
+| Independência | Síntese ampla que integra estudos distintos e funciona como limite às inferências dos casos individuais. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
 ## Síntese de força cumulativa
 
 | Alvo | Linhas independentes | Busca de contradição ou limite | Estado da evidência |
@@ -639,6 +786,9 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | BUS-CAND-003 | 3 | limite ao controle unilateral e distinção entre qualidade e valor registrado | E3 provisório para materialidade da entrega; formulação composta |
 | BUS-CAND-005 | 9 | fronteiras entre viabilidade, operação, estabilidade, adaptação e sustentabilidade registradas | E3 provisório para continuidade como condição estratégica composta |
 | BUS-CAND-006 | 8 | obrigação de crescer, limites financeiros e gerenciais e sobrevivência contingente confrontados | E3 provisório para trajetória governada; independência como Outcome enfraquecida |
+| BUS-CAND-002 | 7 | resposta reativa, necessidades latentes e ausência de garantia confrontadas | E3 provisório para relevância como qualidade emergente; independência enfraquecida |
+| BUS-CAND-007 | 6 | miopia, dependência de conhecimento prévio e falha de institucionalização confrontadas | E3 provisório para capacidade de aprendizagem e renovação |
+| BUS-CAND-009 | 3 | padronização e adaptação universais e fragmentação contextual confrontadas | E3 provisório para princípio de fit; independência como Outcome enfraquecida |
 | BUS-CAND-010 | 3 | restrições financeiras e risco de sobreinvestimento confrontados | E3 provisório para alocação governada; independência como Outcome incerta |
 
 Nenhum nível de evidência aprova, rejeita ou funde candidatos.
