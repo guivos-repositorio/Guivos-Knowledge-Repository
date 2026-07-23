@@ -2,7 +2,7 @@
 id: BA-STR-002
 title: Business Outcomes
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-22
 depends_on:
@@ -13,17 +13,18 @@ related_governance:
 related:
   - BA-STR-002-COR-001
   - BA-STR-002-EOVP-001
+  - BA-STR-002-EOVB-001
   - GEM-CLOSURE-REVIEW-001
-checkpoint: external-outcome-validation-protocol
+checkpoint: external-outcome-validation-batch-01
 ---
 
 # BA-STR-002 — Business Outcomes
 
 ## Estado do ativo
 
-Este documento registra o checkpoint conceitual, metodológico e de prontidão para validação externa do BA-STR-002.
+Este documento registra o checkpoint conceitual, metodológico e de execução inicial da validação externa do BA-STR-002.
 
-O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) foi concluído com 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) está pronto para execução governada. Nenhuma evidência externa foi coletada neste checkpoint, e os catálogos canônicos de Ecosystem Outcomes e Business Outcomes ainda não foram consolidados.
+O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) está em execução governada. O [primeiro lote](outcome-validation-batch-01-agency-evolution.md) registrou nove evidências para o cluster agência e evolução e moveu três candidatos a `Under Validation`. Os catálogos canônicos de Ecosystem Outcomes e Business Outcomes ainda não foram consolidados.
 
 ## Pergunta arquitetural
 

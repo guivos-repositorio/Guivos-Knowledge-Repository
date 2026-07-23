@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-22
 parent: BA-STR-002
@@ -28,13 +28,14 @@ O COR é uma superfície de descoberta governada. Ele preserva origem, formulaç
 ## 2. Estado formal
 
 ```text
-Register: complete for the initial internal discovery pass
+Register: initial discovery complete; external validation in progress
 Candidates: 18
 Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-External validation: not started
+Under Validation: 3
+External validation: in progress — batch 01 completed
 External validation protocol: ready
 COEM: not started
 AQS-O01 practical validation: not started
@@ -77,7 +78,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | Pessoas, Organizações e Coletivos conseguem compreender seu Momento Atual, necessidades, objetivos, restrições e possibilidades com suficiência para decisões conscientes. |
 | Origem | GEB-P01-F01; GEB-P01-F02; GEB-P01-F05; BA-STR-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Pode ser condição habilitadora de autonomia e próximos passos, e não Outcome independente. |
 | Questão de validação | A compreensão contextual orienta decisões permanentes por si mesma ou deve ser incorporada a um candidato mais amplo de agência? |
 
@@ -99,7 +100,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | Participantes preservam liberdade de escolha e capacidade de definir, revisar ou recusar seus próprios próximos passos de evolução. |
 | Origem | GEB-P01-F01; GEB-P01-F03; GEB-P01-F05; GEB-P01-F06 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Não promete que o participante avançará nem atribui à Guivos controle sobre decisões. |
 | Questão de validação | O candidato é observável sem converter autonomia em engajamento, adesão ou conclusão de tarefas? |
 
@@ -121,7 +122,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | Participantes mantêm condições para reconhecer mudanças, aprender e iniciar novos ciclos de evolução coerentes com suas próprias escolhas. |
 | Origem | GEB-P01-F01; GEB-P01-F02; GEB-P01-F03; GEB-P01-F06 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Deve evitar a promessa de progresso linear, universal ou determinado pela Guivos. |
 | Questão de validação | Este candidato é um Outcome distinto ou a formulação agregada dos candidatos 001 a 004? |
 
@@ -296,6 +297,8 @@ Esta matriz serve apenas para orientar validação. Ela não atende ainda ao req
 | adaptação | BUS-CAND-002, 007 e 009 | confundir relevância, aprendizado e escalabilidade |
 | resiliência | BUS-CAND-005 e 006 | duplicar continuidade e crescimento responsável |
 
+O cluster `agência e evolução` possui primeiro lote externo concluído em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md). A análise recomenda manter os três registros separados e em `Under Validation` até a COEM, preservando a hipótese de compreensão como habilitador, agência como capacidade situada e continuidade como regulação adaptativa.
+
 ## 9. Cobertura das origens internas
 
 | Origem | Cobertura no COR |
@@ -308,12 +311,12 @@ Esta matriz serve apenas para orientar validação. Ela não atende ainda ao req
 
 Cobertura interna não equivale a validação externa nem comprova completude do conjunto.
 
-## 10. Pendências para o próximo ciclo
+## 10. Pendências para os próximos ciclos
 
 Antes de qualquer COEM deverão existir:
 
-1. execução do `BA-STR-002-EOVP-001`, com perguntas, critérios de fonte e registro de resultados;
-2. pesquisa direta sobre os clusters de sobreposição e omissões materiais;
+1. continuidade da execução do `BA-STR-002-EOVP-001` para os 15 candidatos e cinco clusters ainda não cobertos;
+2. pesquisa direta sobre as sobreposições restantes e omissões materiais;
 3. confirmação, ampliação, contradição ou ausência de evidência por candidato;
 4. revisão de linguagem para evitar etapas de jornada, capacidades e guardrails disfarçados de Outcomes;
 5. atualização do COR para `Under Validation` somente nos candidatos efetivamente submetidos;
@@ -330,10 +333,10 @@ Antes de qualquer COEM deverão existir:
 | dúvidas e sobreposições preservadas | Pass |
 | promoção automática bloqueada | Pass |
 | protocolo de validação externa | Ready |
-| validação externa realizada | Not started |
+| validação externa realizada | In progress — 3/18 candidatos e 1/6 clusters |
 | COEM realizada | Not started |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Preparar e submeter para aprovação separada a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md), limitado aos 18 candidatos e aos seis clusters de sobreposição. Nenhum candidato mudará de estado enquanto sua primeira evidência qualificada não estiver registrada, e nenhuma promoção ocorrerá antes da COEM.
+Continuar a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md) em lotes governados. O primeiro lote está registrado em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md); nenhuma promoção ocorrerá antes da cobertura integral, do gate de validação e da COEM.

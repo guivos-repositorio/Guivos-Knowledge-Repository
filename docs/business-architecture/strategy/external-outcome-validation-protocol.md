@@ -2,7 +2,7 @@
 id: BA-STR-002-EOVP-001
 title: External Outcome Validation Protocol
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-22
 parent: BA-STR-002
@@ -13,8 +13,9 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - RP-001-REC
+  - BA-STR-002-EOVB-001
 normative: false
-execution_status: not-started
+execution_status: in-progress
 ---
 
 # BA-STR-002-EOVP-001 — External Outcome Validation Protocol
@@ -28,11 +29,11 @@ Ele transforma as dúvidas do COR em um plano de investigação repetível, rast
 ## 2. Estado formal
 
 ```text
-Protocol: ready for governed execution
+Protocol: governed execution in progress
 Scope: 18 candidates and 6 overlap clusters
-Candidate state changes: 0
-External evidence collected in this increment: 0
-External validation: not started
+Candidate state changes: 3 to Under Validation
+External evidence registered: 9
+External validation: in progress — batch 01 completed
 COEM: not started
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -265,10 +266,10 @@ O gate poderá resultar em `Ready for COEM`, `Additional Evidence Required` ou `
 | registro mínimo de evidência definido | Pass |
 | contradições e omissões tratadas | Pass |
 | regra de mudança de estado definida | Pass |
-| validação externa executada | Not started |
+| validação externa executada | In progress — 3/18 candidatos; 1/6 clusters |
 | COEM iniciada | Not started |
 | Outcomes promovidos | 0 |
 
 ## 18. Próximo passo governado
 
-Preparar e submeter para aprovação separada a execução da validação externa conforme este protocolo. A execução deverá começar pelo registro das fontes no `RP-001-EVIDENCE` e poderá ser dividida em lotes sem reduzir a cobertura final dos 18 candidatos e dos seis clusters.
+Continuar a validação em lotes sem reduzir a cobertura final dos 18 candidatos e dos seis clusters. O [lote 01 — agência e evolução](outcome-validation-batch-01-agency-evolution.md) está concluído para `ECO-CAND-001`, `ECO-CAND-003` e `ECO-CAND-005`; os outros 15 candidatos e cinco clusters permanecem pendentes.
