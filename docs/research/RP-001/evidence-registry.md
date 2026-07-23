@@ -2,13 +2,14 @@
 id: RP-001-EVIDENCE
 title: Evidence Registry
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Research
 last_updated: 2026-07-23
 related:
   - BA-STR-002-EOVP-001
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
+  - BA-STR-002-EOVB-003
 ---
 
 # RP-001 — Evidence Registry
@@ -332,6 +333,152 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | Independência | Linha de dinâmica pós-falha distinta das definições basais de confiança e legitimidade. |
 | Status e revisão | Accepted — Guivos Research, 2026-07-23 |
 
+## Lote 03 — Valor e continuidade
+
+### RP1-EV-019 — Valor contextual e cocriado
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-003; cluster valor e continuidade |
+| Fonte | Vargo, S. L., Maglio, P. P., & Akaka, M. A. (2008). *On value and value co-creation: A service systems and service logic perspective*. European Management Journal, 26(3), 145–152. [DOI](https://doi.org/10.1016/j.emj.2008.04.003) |
+| Disciplina e papel | Lógica de serviço e sistemas de serviço; obra teórica reconhecida |
+| Conceito ou alegação | Valor emerge no uso e no contexto mediante integração de recursos entre atores; organizações oferecem proposições e participam da criação, sem controlar unilateralmente o valor realizado. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade alta; rigor conceitual; generalidade alta; permanência alta; aplicabilidade alta; pressupostos explícitos. |
+| Nível | E2 — referencial consolidado para distinguir proposição, coconstrução e valor realizado |
+| Aplicabilidade | Limita “entrega de valor” a condições e proposições que habilitam valor contextual, preservando a agência do participante. |
+| Limitações | Referencial teórico; não determina sozinho critérios de legitimidade, qualidade ou sustentabilidade econômica. |
+| Independência | Linha de lógica de serviço distinta de gestão da qualidade e teoria de stakeholders. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-020 — Consistência como resultado de gestão da qualidade
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-003; cluster valor e continuidade |
+| Fonte | ISO (2015). *ISO 9001:2015 — Quality management systems — Requirements*. [Página oficial](https://www.iso.org/standard/62085.html) |
+| Disciplina e papel | Gestão da qualidade; padrão institucional |
+| Conceito ou alegação | Um sistema de gestão da qualidade estrutura a capacidade de fornecer consistentemente produtos e serviços conformes, aumentar satisfação e melhorar processos. |
+| Direção | Reclassifica |
+| Qualidade | Relevância alta; autoridade institucional alta; rigor normativo; generalidade alta; permanência moderada a alta; aplicabilidade alta; escopo de conformidade explícito. |
+| Nível | E2 — padrão internacional consolidado para consistência e melhoria da entrega |
+| Aplicabilidade | Sustenta qualidade e consistência como resultados governados de capacidades e processos, sem provar valor legítimo vivido. |
+| Limitações | Conformidade e satisfação não demonstram transformação, legitimidade distributiva ou valor contextual. |
+| Independência | Linha normativa de qualidade distinta da lógica de serviço e da teoria de stakeholders. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-021 — Valor e utilidades de múltiplos stakeholders
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-003; cluster valor e continuidade |
+| Fonte | Harrison, J. S., Bosse, D. A., & Phillips, R. A. (2010). *Managing for stakeholders, stakeholder utility functions, and competitive advantage*. Strategic Management Journal, 31(1), 58–74. [DOI](https://doi.org/10.1002/smj.801) |
+| Disciplina e papel | Estratégia e teoria de stakeholders; modelo teórico integrador |
+| Conceito ou alegação | Relações justas e conhecimento das diferentes funções de utilidade dos stakeholders podem melhorar alocação de recursos, inovação, reciprocidade e vantagem competitiva. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade alta; rigor teórico; generalidade moderada a alta; permanência alta; aplicabilidade alta; tensões de poder reconhecidas. |
+| Nível | E2 — modelo consolidado para criação e distribuição de valor entre stakeholders |
+| Aplicabilidade | Amplia “valor legítimo” para além do cliente e exige observar distribuição, justiça e reciprocidade. |
+| Limitações | Argumento predominantemente teórico e empresarial; não oferece medida universal de distribuição justa. |
+| Independência | Linha de stakeholders distinta da lógica de serviço e do padrão de qualidade. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-022 — Continuidade operacional como capacidade governada
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; cluster valor e continuidade |
+| Fonte | ISO (2019). *ISO 22301:2019 — Security and resilience — Business continuity management systems — Requirements*. [Página oficial](https://www.iso.org/standard/75106.html) |
+| Disciplina e papel | Continuidade de negócios e resiliência; padrão institucional |
+| Conceito ou alegação | Continuidade requer sistema para preparar, responder e recuperar de disrupções, mantendo produtos e serviços em capacidade aceitável predefinida. |
+| Direção | Reclassifica |
+| Qualidade | Relevância alta; autoridade institucional alta; rigor normativo; generalidade alta; permanência moderada a alta; aplicabilidade alta; dependência contextual explícita. |
+| Nível | E2 — padrão internacional consolidado para continuidade operacional |
+| Aplicabilidade | Separa continuidade de operações e serviços da viabilidade econômica de longo prazo. |
+| Limitações | Não define sustentabilidade financeira, valor legítimo ou continuidade institucional fora de disrupções. |
+| Independência | Linha de continuidade operacional distinta da avaliação contábil e do framework de valor sustentável. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-023 — *Going concern* como avaliação contábil prospectiva
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; cluster valor e continuidade |
+| Fonte | IFRS Foundation (2025). *Going concern — a focus on disclosure*. [Material oficial](https://www.ifrs.org/content/dam/ifrs/supporting-implementation/educational-materials/going-concern-2025.pdf) |
+| Disciplina e papel | Contabilidade e divulgação financeira; referência institucional |
+| Conceito ou alegação | A administração avalia a capacidade de continuar operando com informação prospectiva por período mínimo, preservando incertezas materiais e efeitos de mudanças estruturais. |
+| Direção | Relaciona |
+| Qualidade | Relevância alta; autoridade institucional muito alta; rigor normativo e educacional; generalidade alta para entidades reportantes; permanência alta; aplicabilidade moderada; limites contábeis explícitos. |
+| Nível | E2 — referência institucional consolidada para o piso de continuidade financeira reportável |
+| Aplicabilidade | Demonstra que viabilidade exige avaliação prospectiva de recursos, obrigações e incertezas, mas não esgota sustentabilidade estratégica. |
+| Limitações | Recorte contábil e de divulgação; horizonte mínimo não define Outcome permanente nem comprova criação de valor. |
+| Independência | Linha contábil distinta de continuidade operacional e sustentabilidade estratégica. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-024 — Valor sustentável em múltiplos horizontes
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-005; BUS-CAND-003; cluster valor e continuidade |
+| Fonte | Hart, S. L., & Milstein, M. B. (2003). *Creating sustainable value*. Academy of Management Executive, 17(2), 56–67. [DOI](https://doi.org/10.5465/AME.2003.10025194) |
+| Disciplina e papel | Estratégia e sustentabilidade; framework teórico reconhecido |
+| Conceito ou alegação | Valor sustentável exige administrar simultaneamente desempenho presente e opções futuras, capacidades internas e relações externas, conectando desafios sociais e ambientais à criação de valor. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade alta; rigor de framework; generalidade moderada a alta; permanência alta; aplicabilidade alta; natureza prescritiva identificada. |
+| Nível | E2 — framework consolidado para ampliar continuidade além de sobrevivência financeira |
+| Aplicabilidade | Sustenta que continuidade econômica depende de múltiplos horizontes e não pode ser reduzida a receita, caixa ou operação ininterrupta. |
+| Limitações | Framework conceitual; não estabelece causalidade universal nem critérios específicos para a Guivos. |
+| Independência | Linha estratégica de sustentabilidade distinta da contabilidade e da continuidade de negócios. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-025 — Fundos internos e restrições ao investimento
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-010; BUS-CAND-005; cluster valor e continuidade |
+| Fonte | Fazzari, S. M., Hubbard, R. G., & Petersen, B. C. (1988). *Financing constraints and corporate investment*. Brookings Papers on Economic Activity, 1988(1), 141–206. [Brookings](https://www.brookings.edu/wp-content/uploads/1988/01/1988a_bpea_fazzari_hubbard_petersen_blinder_poterba.pdf) |
+| Disciplina e papel | Economia financeira; estudo empírico |
+| Conceito ou alegação | Imperfeições de mercado criam hierarquia de financiamento; empresas com maior restrição externa apresentam investimento mais sensível a fluxo de caixa e fundos internos. |
+| Direção | Confirma |
+| Qualidade | Relevância alta; autoridade alta; rigor empírico; generalidade moderada; permanência alta; aplicabilidade moderada a alta; controvérsia metodológica conhecida. |
+| Nível | E1 — evidência empírica seminal para materialidade de recursos internos sob restrição |
+| Aplicabilidade | Sustenta que capacidade de reter e alocar recursos pode viabilizar investimentos que não encontrariam financiamento externo equivalente. |
+| Limitações | Amostra histórica de empresas industriais; sensibilidade a fluxo de caixa não mede eficiência nem responsabilidade do investimento. |
+| Independência | Linha empírica de restrições financeiras distinta da teoria de agência e da governança corporativa. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-026 — Custos de agência e risco de sobreinvestimento
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-010; cluster valor e continuidade |
+| Fonte | Jensen, M. C. (1986). *Agency costs of free cash flow, corporate finance, and takeovers*. American Economic Review, 76(2), 323–329. [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=99580) |
+| Disciplina e papel | Finanças corporativas; teoria e contraevidência |
+| Conceito ou alegação | Fluxo de caixa livre sob discricionariedade gerencial pode financiar projetos de baixo retorno ou desperdício; retenção e reinvestimento não maximizam valor automaticamente. |
+| Direção | Contradiz |
+| Qualidade | Relevância muito alta; autoridade alta; rigor teórico; generalidade moderada; permanência alta; aplicabilidade alta; premissa de agência explícita. |
+| Nível | E2 — teoria consolidada sobre riscos de retenção e sobreinvestimento |
+| Aplicabilidade | Bloqueia tratar volume de reinvestimento como evidência de responsabilidade ou de fortalecimento do ecossistema. |
+| Limitações | Ênfase em empresas com separação entre propriedade e gestão e em valor para acionistas; não resolve objetivos multistakeholder. |
+| Independência | Linha de agência distinta da evidência de restrições financeiras e das normas de governança. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-027 — Alocação de capital como responsabilidade de governança
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-010; BUS-CAND-005; cluster valor e continuidade |
+| Fonte | OECD (2023). *G20/OECD Principles of Corporate Governance 2023*. [DOI](https://doi.org/10.1787/ed750b30-en) |
+| Disciplina e papel | Governança corporativa; padrão institucional |
+| Conceito ou alegação | O conselho deve orientar estratégia, supervisionar riscos e desempenho e exercer julgamento sobre usos de recursos e decisões relevantes para sustentabilidade e criação de valor de longo prazo. |
+| Direção | Reclassifica |
+| Qualidade | Relevância alta; autoridade institucional alta; rigor multilateral; generalidade alta para governança; permanência moderada a alta; aplicabilidade moderada; escopo de companhias explicitado. |
+| Nível | E2 — referência institucional consolidada para supervisão estratégica e alocação responsável |
+| Aplicabilidade | Reclassifica reinvestimento como decisão governada de capital, dependente de estratégia, risco, alternativas e prestação de contas. |
+| Limitações | Voltado principalmente a companhias e mercados de capitais; não prescreve fórmula universal de alocação nem prioridade automática ao reinvestimento. |
+| Independência | Linha institucional de governança distinta das teorias de restrição financeira e agência. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
 ## Síntese de força cumulativa
 
 | Alvo | Linhas independentes | Busca de contradição ou limite | Estado da evidência |
@@ -342,5 +489,8 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | ECO-CAND-006 | 3 | exclusão, restrição e distribuição desigual registradas | E3 provisório para qualidade relacional; conexão isolada insuficiente |
 | ECO-CAND-008 | 4 | risco residual e distinção entre proteção e confiança registradas | E3 provisório para composição de guardrails e condição vivida |
 | BUS-CAND-004 | 4 | falha, reparação e distinção entre confiança e legitimidade registradas | E3 provisório para materialidade institucional; formulação composta |
+| BUS-CAND-003 | 3 | limite ao controle unilateral e distinção entre qualidade e valor registrado | E3 provisório para materialidade da entrega; formulação composta |
+| BUS-CAND-005 | 5 | fronteiras entre viabilidade, operação e sustentabilidade registradas | E3 provisório para continuidade como condição estratégica composta |
+| BUS-CAND-010 | 3 | restrições financeiras e risco de sobreinvestimento confrontados | E3 provisório para alocação governada; independência como Outcome incerta |
 
 Nenhum nível de evidência aprova, rejeita ou funde candidatos.

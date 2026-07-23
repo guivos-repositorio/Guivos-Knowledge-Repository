@@ -373,6 +373,7 @@ nav:
           - External Outcome Validation Protocol: business-architecture/strategy/external-outcome-validation-protocol.md
           - External Outcome Validation Batch 01: business-architecture/strategy/outcome-validation-batch-01-agency-evolution.md
           - External Outcome Validation Batch 02: business-architecture/strategy/outcome-validation-batch-02-trust.md
+          - External Outcome Validation Batch 03: business-architecture/strategy/outcome-validation-batch-03-value-continuity.md
   - Governance Framework do GKR:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - Architectural Audit Framework: governance-framework/architectural-audit-framework.md
@@ -400,6 +401,7 @@ nav:
   - Projeto:
       - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
       - Architectural Milestones: project/architectural-milestones.md
+      - Architectural Milestones 4.33.0 — M7.0.4: project/architectural-milestones-4.33.0.md
       - Architectural Milestones 4.32.0 — M7.0.3: project/architectural-milestones-4.32.0.md
       - Architectural Milestones 4.31.0 — M7.0.2: project/architectural-milestones-4.31.0.md
       - Architectural Milestones 4.30.0 — M7.0.1: project/architectural-milestones-4.30.0.md
@@ -424,6 +426,7 @@ nav:
       - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
       - Knowledge Board 11.33.0 — External Validation Batch 01: project/knowledge-board-11.33.0.md
       - Knowledge Board 11.34.0 — External Validation Batch 02: project/knowledge-board-11.34.0.md
+      - Knowledge Board 11.35.0 — External Validation Batch 03: project/knowledge-board-11.35.0.md
       - Knowledge Board 11.32.0 — External Validation Protocol: project/knowledge-board-11.32.0.md
       - Knowledge Board 11.31.0 — Candidate Outcome Register: project/knowledge-board-11.31.0.md
       - Knowledge Board 11.30.0 — Fechamento do Economic Model: project/knowledge-board-11.30.0.md
@@ -446,6 +449,7 @@ nav:
       - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
       - Canonical Matrix 1.52.0 — External Validation Batch 01: project/canonical-consolidation-matrix-ba-str-002-eovb-001-addendum.md
       - Canonical Matrix 1.53.0 — External Validation Batch 02: project/canonical-consolidation-matrix-ba-str-002-eovb-002-addendum.md
+      - Canonical Matrix 1.54.0 — External Validation Batch 03: project/canonical-consolidation-matrix-ba-str-002-eovb-003-addendum.md
       - Canonical Matrix 1.51.0 — External Validation Protocol: project/canonical-consolidation-matrix-ba-str-002-eovp-addendum.md
       - Canonical Matrix 1.50.0 — Candidate Outcome Register: project/canonical-consolidation-matrix-ba-str-002-cor-addendum.md
       - Canonical Matrix 1.49.0 — Fechamento do Economic Model: project/canonical-consolidation-matrix-gem-closure-addendum.md
@@ -468,6 +472,7 @@ nav:
       - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
       - Changelog 0.80.0 — External Validation Batch 01: project/changelog-0.80.0-ba-str-002-eovb-001.md
       - Changelog 0.81.0 — External Validation Batch 02: project/changelog-0.81.0-ba-str-002-eovb-002.md
+      - Changelog 0.82.0 — External Validation Batch 03: project/changelog-0.82.0-ba-str-002-eovb-003.md
       - Changelog 0.79.0 — External Validation Protocol: project/changelog-0.79.0-ba-str-002-eovp.md
       - Changelog 0.78.0 — Candidate Outcome Register: project/changelog-0.78.0-ba-str-002-cor.md
       - Changelog 0.77.0 — Fechamento do Economic Model: project/changelog-0.77.0-economic-model-closure.md
@@ -510,6 +515,7 @@ nav:
       - Roadmap: roadmap.md
       - Roadmap 11.33.0 — External Validation Batch 01: roadmap-11.33.0.md
       - Roadmap 11.34.0 — External Validation Batch 02: roadmap-11.34.0.md
+      - Roadmap 11.35.0 — External Validation Batch 03: roadmap-11.35.0.md
       - Roadmap 11.32.0 — External Validation Protocol: roadmap-11.32.0.md
       - Roadmap 11.31.0 — Candidate Outcome Register: roadmap-11.31.0.md
       - Roadmap 11.30.0 — Fechamento do Economic Model: roadmap-11.30.0.md

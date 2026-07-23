@@ -2,7 +2,7 @@
 id: RP-001
 title: Ecosystem Research Program
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Research
 last_updated: 2026-07-23
 supports:
@@ -10,6 +10,7 @@ supports:
 related:
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
+  - BA-STR-002-EOVB-003
 ---
 
 # RP-001 — Ecosystem Research Program
@@ -46,11 +47,11 @@ Ele não cria Ecosystem Outcomes diretamente. Seus resultados serão utilizados 
 
 O Ciclo 1 conceitual foi concluído com uma síntese preliminar de oito perspectivas interdisciplinares. A MS-001 está publicada em estado `draft`.
 
-A Fase M2 registrou 18 evidências qualificadas em dois lotes, cobrindo agência e evolução, relações, participação protegida, confiança e legitimidade. O Evidence Registry está ativo e a cobertura cumulativa deve continuar.
+A Fase M2 registrou 27 evidências qualificadas em três lotes, cobrindo agência e evolução, relações, participação protegida, confiança, legitimidade, valor, continuidade e reinvestimento. O Evidence Registry está ativo e a cobertura cumulativa deve continuar.
 
 ## Limite de maturidade
 
-A MS-001 e as evidências dos dois lotes não integram automaticamente a Canon. A cobertura permanece parcial: seis candidatos e dois clusters analisados, sem decisão da COEM.
+A MS-001 e as evidências dos três lotes não integram automaticamente a Canon. A cobertura permanece parcial: nove candidatos e três clusters analisados, sem decisão da COEM.
 
 ## Próximo passo
 

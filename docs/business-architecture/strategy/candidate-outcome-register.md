@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-23
 parent: BA-STR-002
@@ -14,6 +14,7 @@ related:
   - BA-STR-002-EOVP-001
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
+  - BA-STR-002-EOVB-003
   - GEM-CLOSURE-REVIEW-001
   - M7.0
 normative: false
@@ -36,8 +37,8 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 6
-External validation: in progress — batches 01 and 02 completed
+Under Validation: 9
+External validation: in progress — batches 01 to 03 completed
 External validation protocol: ready
 COEM: not started
 AQS-O01 practical validation: not started
@@ -192,7 +193,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A Guivos entrega valor legítimo com qualidade, segurança e continuidade suficientes para sustentar experiências relevantes. |
 | Origem | BA-STR-001; GEM-001; GEM-008; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Pessoa, Organização, Coletivo e parceiros |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Deve permanecer distinto de volume de atividade, satisfação pontual ou disponibilidade técnica. |
 | Questão de validação | Qual fronteira separa este candidato de continuidade econômica e confiança? |
 
@@ -214,7 +215,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo. |
 | Origem | BA-STR-001; GEM-001; GEM-008; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Receita, margem, caixa, reserva e sustentabilidade permanecem conceitos distintos. |
 | Questão de validação | A formulação é suficientemente independente de métricas financeiras e do modelo atual de receita? |
 
@@ -269,7 +270,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A Guivos mantém condições para reinvestir valor legitimamente capturado no fortalecimento de capacidades, conhecimento e valor entregue ao ecossistema. |
 | Origem | BA-FND-001; BA-STR-001; GEM-001; GEM-008 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Reinvestimento proposto, aprovado, realizado e eficaz são estados distintos. |
 | Questão de validação | Este candidato é autônomo ou componente necessário da continuidade econômica sustentável? |
 
@@ -303,6 +304,8 @@ O cluster `agência e evolução` possui primeiro lote externo concluído em [BA
 
 O cluster `confiança` possui segundo lote externo concluído em [BA-STR-002-EOVB-002](outcome-validation-batch-02-trust.md). A análise preserva três camadas: qualidade relacional, guardrails verificáveis de participação e confiança ou legitimidade institucionais. Os três candidatos permanecem separados e em `Under Validation`.
 
+O cluster `valor e continuidade` possui terceiro lote externo concluído em [BA-STR-002-EOVB-003](outcome-validation-batch-03-value-continuity.md). A análise identifica um ciclo entre valor contextual, viabilidade e alocação governada, mas sugere que entrega consistente pode combinar capacidade e qualidade e que reinvestimento pode ser mecanismo, não Outcome independente.
+
 ## 9. Cobertura das origens internas
 
 | Origem | Cobertura no COR |
@@ -319,7 +322,7 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 Antes de qualquer COEM deverão existir:
 
-1. continuidade da execução do `BA-STR-002-EOVP-001` para os 12 candidatos e quatro clusters ainda não cobertos;
+1. continuidade da execução do `BA-STR-002-EOVP-001` para os nove candidatos e três clusters ainda não cobertos;
 2. pesquisa direta sobre as sobreposições restantes e omissões materiais;
 3. confirmação, ampliação, contradição ou ausência de evidência por candidato;
 4. revisão de linguagem para evitar etapas de jornada, capacidades e guardrails disfarçados de Outcomes;
@@ -337,10 +340,10 @@ Antes de qualquer COEM deverão existir:
 | dúvidas e sobreposições preservadas | Pass |
 | promoção automática bloqueada | Pass |
 | protocolo de validação externa | Ready |
-| validação externa realizada | In progress — 6/18 candidatos e 2/6 clusters |
+| validação externa realizada | In progress — 9/18 candidatos e 3/6 clusters |
 | COEM realizada | Not started |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Continuar a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md) em lotes governados. Os lotes concluídos estão registrados em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md) e [BA-STR-002-EOVB-002](outcome-validation-batch-02-trust.md); nenhuma promoção ocorrerá antes da cobertura integral, do gate de validação e da COEM.
+Continuar a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md) em lotes governados. Os três lotes concluídos estão registrados em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md), [BA-STR-002-EOVB-002](outcome-validation-batch-02-trust.md) e [BA-STR-002-EOVB-003](outcome-validation-batch-03-value-continuity.md); nenhuma promoção ocorrerá antes da cobertura integral, do gate de validação e da COEM.

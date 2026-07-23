@@ -5,13 +5,14 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M7.0.3 — Second External Outcome Validation Batch Completed` concluído documentariamente;
+- marco `M7.0.4 — Third External Outcome Validation Batch Completed` concluído documentariamente;
 - frente `A2-R03 — Business Architecture Review` ativa;
-- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.9.0`;
-- `BA-STR-002-COR-001 0.4.0` com 18 candidatos, dos quais seis estão em `Under Validation`;
-- `BA-STR-002-EOVP-001 0.3.0` em execução governada;
+- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.10.0`;
+- `BA-STR-002-COR-001 0.5.0` com 18 candidatos, dos quais nove estão em `Under Validation`;
+- `BA-STR-002-EOVP-001 0.4.0` em execução governada;
 - `BA-STR-002-EOVB-001 0.1.0` com nove evidências, três sínteses individuais e o cluster agência e evolução analisado;
 - `BA-STR-002-EOVB-002 0.1.0` com nove evidências, três sínteses individuais e o cluster confiança analisado;
+- `BA-STR-002-EOVB-003 0.1.0` com nove evidências, três sínteses individuais e o cluster valor e continuidade analisado;
 - nenhum Outcome aprovado ou canônico;
 - Product Engineering pausado antes do W0-01;
 - Guivos Economic Model encerrado documentariamente em GEM-001 a GEM-010;
@@ -40,9 +41,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR, o protocolo e dois lotes de validação externa estão concluídos; o próximo incremento candidato é o terceiro lote governado do `BA-STR-002-EOVP-001`, sujeito a aprovação separada.
+Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR, o protocolo e três lotes de validação externa estão concluídos; o próximo incremento candidato é o quarto lote governado do `BA-STR-002-EOVP-001`, sujeito a aprovação separada.
 
-Seis dos 18 registros do COR estão em `Under Validation`; os demais permanecem `Candidate`. Os dois lotes não equivalem à validação integral: quatro clusters, 12 candidatos, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
+Nove dos 18 registros do COR estão em `Under Validation`; os demais permanecem `Candidate`. Os três lotes não equivalem à validação integral: três clusters, nove candidatos, COEM, AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
 
 ## Acesso rápido
 
@@ -50,6 +51,7 @@ Seis dos 18 registros do COR estão em `Under Validation`; os demais permanecem 
 - [External Outcome Validation Protocol](business-architecture/strategy/external-outcome-validation-protocol.md)
 - [External Outcome Validation Batch 01 — Agency and Evolution](business-architecture/strategy/outcome-validation-batch-01-agency-evolution.md)
 - [External Outcome Validation Batch 02 — Trust](business-architecture/strategy/outcome-validation-batch-02-trust.md)
+- [External Outcome Validation Batch 03 — Value and Continuity](business-architecture/strategy/outcome-validation-batch-03-value-continuity.md)
 - [Business Outcomes](business-architecture/strategy/business-outcomes.md)
 - [Guia Oficial da Guivos](public/guia-oficial-da-guivos.md)
 - [PAS-001 — Guivos Journey](product-architecture/pas-001-guivos-journey.md)

@@ -2,7 +2,7 @@
 id: BA-STR-002
 title: Business Outcomes
 status: draft
-version: 0.9.0
+version: 0.10.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-23
 depends_on:
@@ -15,8 +15,9 @@ related:
   - BA-STR-002-EOVP-001
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
+  - BA-STR-002-EOVB-003
   - GEM-CLOSURE-REVIEW-001
-checkpoint: external-outcome-validation-batch-02
+checkpoint: external-outcome-validation-batch-03
 ---
 
 # BA-STR-002 — Business Outcomes
@@ -25,7 +26,7 @@ checkpoint: external-outcome-validation-batch-02
 
 Este documento registra o checkpoint conceitual, metodológico e de execução cumulativa da validação externa do BA-STR-002.
 
-O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) está em execução governada. O [primeiro lote](outcome-validation-batch-01-agency-evolution.md) cobriu agência e evolução; o [segundo lote](outcome-validation-batch-02-trust.md) cobriu confiança e a fronteira Ecosystem–Business. Há 18 evidências registradas e seis candidatos em `Under Validation`. Os catálogos canônicos ainda não foram consolidados.
+O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) está em execução governada. O [primeiro lote](outcome-validation-batch-01-agency-evolution.md) cobriu agência e evolução; o [segundo lote](outcome-validation-batch-02-trust.md) cobriu confiança e a fronteira Ecosystem–Business; o [terceiro lote](outcome-validation-batch-03-value-continuity.md) cobriu valor e continuidade. Há 27 evidências registradas e nove candidatos em `Under Validation`. Os catálogos canônicos ainda não foram consolidados.
 
 ## Pergunta arquitetural
 
