@@ -376,6 +376,7 @@ nav:
           - External Outcome Validation Batch 03: business-architecture/strategy/outcome-validation-batch-03-value-continuity.md
           - External Outcome Validation Batch 04: business-architecture/strategy/outcome-validation-batch-04-resilience.md
           - External Outcome Validation Batch 05: business-architecture/strategy/outcome-validation-batch-05-adaptation.md
+          - External Outcome Validation Batch 06: business-architecture/strategy/outcome-validation-batch-06-coverage-completion.md
   - Governance Framework do GKR:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - Architectural Audit Framework: governance-framework/architectural-audit-framework.md
@@ -406,6 +407,7 @@ nav:
       - Architectural Milestones 4.33.0 — M7.0.4: project/architectural-milestones-4.33.0.md
       - Architectural Milestones 4.34.0 — M7.0.5: project/architectural-milestones-4.34.0.md
       - Architectural Milestones 4.35.0 — M7.0.6: project/architectural-milestones-4.35.0.md
+      - Architectural Milestones 4.36.0 — M7.0.7: project/architectural-milestones-4.36.0.md
       - Architectural Milestones 4.32.0 — M7.0.3: project/architectural-milestones-4.32.0.md
       - Architectural Milestones 4.31.0 — M7.0.2: project/architectural-milestones-4.31.0.md
       - Architectural Milestones 4.30.0 — M7.0.1: project/architectural-milestones-4.30.0.md
@@ -433,6 +435,7 @@ nav:
       - Knowledge Board 11.35.0 — External Validation Batch 03: project/knowledge-board-11.35.0.md
       - Knowledge Board 11.36.0 — External Validation Batch 04: project/knowledge-board-11.36.0.md
       - Knowledge Board 11.37.0 — External Validation Batch 05: project/knowledge-board-11.37.0.md
+      - Knowledge Board 11.38.0 — External Validation Coverage: project/knowledge-board-11.38.0.md
       - Knowledge Board 11.32.0 — External Validation Protocol: project/knowledge-board-11.32.0.md
       - Knowledge Board 11.31.0 — Candidate Outcome Register: project/knowledge-board-11.31.0.md
       - Knowledge Board 11.30.0 — Fechamento do Economic Model: project/knowledge-board-11.30.0.md
@@ -458,6 +461,7 @@ nav:
       - Canonical Matrix 1.54.0 — External Validation Batch 03: project/canonical-consolidation-matrix-ba-str-002-eovb-003-addendum.md
       - Canonical Matrix 1.55.0 — External Validation Batch 04: project/canonical-consolidation-matrix-ba-str-002-eovb-004-addendum.md
       - Canonical Matrix 1.56.0 — External Validation Batch 05: project/canonical-consolidation-matrix-ba-str-002-eovb-005-addendum.md
+      - Canonical Matrix 1.57.0 — External Validation Batch 06: project/canonical-consolidation-matrix-ba-str-002-eovb-006-addendum.md
       - Canonical Matrix 1.51.0 — External Validation Protocol: project/canonical-consolidation-matrix-ba-str-002-eovp-addendum.md
       - Canonical Matrix 1.50.0 — Candidate Outcome Register: project/canonical-consolidation-matrix-ba-str-002-cor-addendum.md
       - Canonical Matrix 1.49.0 — Fechamento do Economic Model: project/canonical-consolidation-matrix-gem-closure-addendum.md
@@ -483,6 +487,7 @@ nav:
       - Changelog 0.82.0 — External Validation Batch 03: project/changelog-0.82.0-ba-str-002-eovb-003.md
       - Changelog 0.83.0 — External Validation Batch 04: project/changelog-0.83.0-ba-str-002-eovb-004.md
       - Changelog 0.84.0 — External Validation Batch 05: project/changelog-0.84.0-ba-str-002-eovb-005.md
+      - Changelog 0.85.0 — External Validation Batch 06: project/changelog-0.85.0-ba-str-002-eovb-006.md
       - Changelog 0.79.0 — External Validation Protocol: project/changelog-0.79.0-ba-str-002-eovp.md
       - Changelog 0.78.0 — Candidate Outcome Register: project/changelog-0.78.0-ba-str-002-cor.md
       - Changelog 0.77.0 — Fechamento do Economic Model: project/changelog-0.77.0-economic-model-closure.md
@@ -528,6 +533,7 @@ nav:
       - Roadmap 11.35.0 — External Validation Batch 03: roadmap-11.35.0.md
       - Roadmap 11.36.0 — External Validation Batch 04: roadmap-11.36.0.md
       - Roadmap 11.37.0 — External Validation Batch 05: roadmap-11.37.0.md
+      - Roadmap 11.38.0 — External Validation Coverage: roadmap-11.38.0.md
       - Roadmap 11.32.0 — External Validation Protocol: roadmap-11.32.0.md
       - Roadmap 11.31.0 — Candidate Outcome Register: roadmap-11.31.0.md
       - Roadmap 11.30.0 — Fechamento do Economic Model: roadmap-11.30.0.md

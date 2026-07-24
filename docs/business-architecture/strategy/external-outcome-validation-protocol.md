@@ -2,7 +2,7 @@
 id: BA-STR-002-EOVP-001
 title: External Outcome Validation Protocol
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-23
 parent: BA-STR-002
@@ -18,8 +18,9 @@ related:
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
   - BA-STR-002-EOVB-005
+  - BA-STR-002-EOVB-006
 normative: false
-execution_status: in-progress
+execution_status: completed
 ---
 
 # BA-STR-002-EOVP-001 — External Outcome Validation Protocol
@@ -33,11 +34,11 @@ Ele transforma as dúvidas do COR em um plano de investigação repetível, rast
 ## 2. Estado formal
 
 ```text
-Protocol: governed execution in progress
+Protocol: governed execution completed
 Scope: 18 candidates and 6 overlap clusters
-Candidate state changes: 13 to Under Validation
-External evidence registered: 45
-External validation: in progress — batches 01 to 05 completed
+Candidate state changes: 18 to Under Validation
+External evidence registered: 60
+External validation: completed — batches 01 to 06
 COEM: not started
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -270,10 +271,10 @@ O gate poderá resultar em `Ready for COEM`, `Additional Evidence Required` ou `
 | registro mínimo de evidência definido | Pass |
 | contradições e omissões tratadas | Pass |
 | regra de mudança de estado definida | Pass |
-| validação externa executada | In progress — 13/18 candidatos; 5/6 clusters |
+| validação externa executada | Pass — 18/18 candidatos; 6/6 clusters |
 | COEM iniciada | Not started |
 | Outcomes promovidos | 0 |
 
 ## 18. Próximo passo governado
 
-Continuar a validação em lotes sem reduzir a cobertura final dos 18 candidatos e dos seis clusters. O [lote 01 — agência e evolução](outcome-validation-batch-01-agency-evolution.md), o [lote 02 — confiança](outcome-validation-batch-02-trust.md), o [lote 03 — valor e continuidade](outcome-validation-batch-03-value-continuity.md), o [lote 04 — resiliência](outcome-validation-batch-04-resilience.md) e o [lote 05 — adaptação](outcome-validation-batch-05-adaptation.md) estão concluídos; os outros cinco candidatos e o cluster `oportunidade e experiência` permanecem pendentes.
+Os seis lotes estão concluídos, incluindo o [lote 06 — conclusão da cobertura](outcome-validation-batch-06-coverage-completion.md). O gate integral resultou em `Ready for COEM`. O próximo passo exige revisão humana e aprovação separada para abrir a COEM; cobertura não aprova, rejeita, funde ou promove candidatos.
