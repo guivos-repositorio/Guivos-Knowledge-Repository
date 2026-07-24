@@ -2,7 +2,7 @@
 id: BA-STR-002-COEM-001
 title: Candidate Outcome Evaluation Matrix
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-24
 parent: BA-STR-002
@@ -13,6 +13,7 @@ depends_on:
 related:
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
+  - BA-STR-002-EOVB-003
   - RP-001-EVIDENCE
 normative: false
 execution_status: in-progress
@@ -38,9 +39,9 @@ A COEM não promove candidatos automaticamente. Uma disposição `Approve`, `Rej
 ```text
 Matrix: in progress
 Candidates in scope: 18
-Candidates evaluated: 6
-Clusters evaluated: 2 of 6
-Current batch: trust
+Candidates evaluated: 9
+Clusters evaluated: 3 of 6
+Current batch: value and continuity
 Candidate state changes: 0
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -53,11 +54,11 @@ Operational authorization: no
 ### Incluído
 
 - definição da escala comum dos quatro testes obrigatórios;
-- preservação da calibração aplicada a `ECO-CAND-001`, `ECO-CAND-003` e `ECO-CAND-005`;
-- aplicação a `ECO-CAND-006`, `ECO-CAND-008` e `BUS-CAND-004`;
-- avaliação conjunta do cluster `confiança`;
-- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-018`;
-- continuidade do padrão que será aplicado aos outros 12 candidatos.
+- preservação das seis avaliações dos clusters `agência e evolução` e `confiança`;
+- aplicação a `BUS-CAND-003`, `BUS-CAND-005` e `BUS-CAND-010`;
+- avaliação conjunta do cluster `valor e continuidade`;
+- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-027`;
+- continuidade do padrão que será aplicado aos outros nove candidatos.
 
 ### Excluído
 
@@ -115,14 +116,14 @@ Uma disposição não altera o status do COR neste incremento.
 | ECO-CAND-008 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-001 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | BUS-CAND-002 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
-| BUS-CAND-003 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-003 | Partial | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-004 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
-| BUS-CAND-005 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-005 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-006 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | BUS-CAND-007 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | BUS-CAND-008 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | BUS-CAND-009 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
-| BUS-CAND-010 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-010 | Partial | Pass | Pass | Partial | Merge into BUS-CAND-005 | Pending human decision |
 
 ## 8. Avaliação — ECO-CAND-001
 
@@ -371,21 +372,147 @@ Os três candidatos ocupam camadas diferentes e não devem ser fundidos:
 | mudanças de estado | 0 |
 | código canônico criado | 0 |
 
-## 16. Gate do incremento
+## 16. Avaliação — BUS-CAND-003
+
+### Formulação avaliada
+
+A Guivos entrega valor legítimo com qualidade, segurança e continuidade suficientes para sustentar experiências relevantes.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | capacidade consistente de habilitar valor legítimo é material ao propósito, mas valor é contextual e cocriado; a Guivos não controla unilateralmente sua realização por participantes e stakeholders |
+| Decision | Pass | degradação persistente da qualidade, segurança, continuidade ou legitimidade da entrega exigiria revisão de prioridades, capacidades, proposições, controles e relações econômicas |
+| Replacement | Pass | a necessidade de habilitar valor legítimo e consistente permanece válida independentemente dos produtos, canais ou tecnologias atuais |
+| Outcome Quality | Partial | a formulação é permanente e decisória, porém combina capacidade organizacional, propriedades de qualidade, guardrails e resultado vivido por terceiros, sem uma unidade observável própria |
+
+### Evidências determinantes
+
+- `RP1-EV-019` sustenta valor como contextual e cocriado, bloqueando a leitura de entrega unilateral;
+- `RP1-EV-020` trata consistência, conformidade e melhoria como resultados de um sistema de gestão da qualidade;
+- `RP1-EV-021` amplia valor para utilidades e relações distributivas entre múltiplos stakeholders.
+
+### Disposição recomendada
+
+`Reformulate`.
+
+Preservar a condição empresarial de **habilitar valor legítimo com consistência**, distinguindo-a do valor efetivamente realizado pelos participantes. Qualidade, segurança e continuidade devem sustentar a formulação como propriedades verificáveis, sem serem acumuladas como sub-Outcomes.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A reformulação não transfere à Guivos controle sobre valor contextual, não substitui Outcomes do ecossistema e não converte satisfação pontual ou disponibilidade técnica em prova suficiente.
+
+## 17. Avaliação — BUS-CAND-005
+
+### Formulação avaliada
+
+A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Pass | sem continuidade econômica suficiente para cumprir obrigações e preservar valor essencial, o propósito não pode ser sustentado ao longo do tempo |
+| Decision | Pass | degradação contínua exigiria revisão própria de modelo econômico, compromissos, prioridades, riscos, reservas, dependências e capacidade institucional |
+| Replacement | Pass | a condição permanece válida após substituição de receitas, produtos, estruturas, tecnologias e mecanismos financeiros atuais |
+| Outcome Quality | Partial | o núcleo é permanente, observável e decisório, mas a formulação agrega viabilidade econômica, continuidade operacional, capacidade organizacional e sustentabilidade estratégica sem fronteiras explícitas |
+
+### Evidências determinantes
+
+- `RP1-EV-022` distingue continuidade operacional como capacidade governada de manter entregas aceitáveis durante disrupções;
+- `RP1-EV-023` limita *going concern* a uma avaliação contábil prospectiva, não à definição integral de sustentabilidade;
+- `RP1-EV-024` amplia sustentabilidade para criação de valor em múltiplos horizontes e dimensões;
+- `RP1-EV-028` a `RP1-EV-031` relacionam resiliência à continuidade sem reduzi-la a estabilidade, caixa ou retorno ao estado anterior.
+
+### Disposição recomendada
+
+`Reformulate`.
+
+Preservar **continuidade econômica sustentável** como condição empresarial autônoma, centrada na capacidade de cumprir obrigações e sustentar valor essencial em múltiplos horizontes. Continuidade operacional, resiliência e equilíbrio financeiro devem permanecer dimensões ou capacidades sustentadoras, não sinônimos do Outcome.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A formulação revisada deverá evitar uma métrica financeira única, promessa de permanência absoluta ou confusão entre sobrevivência contábil, disponibilidade operacional e geração sustentável de valor.
+
+## 18. Avaliação — BUS-CAND-010
+
+### Formulação avaliada
+
+A Guivos mantém condições para reinvestir valor legitimamente capturado no fortalecimento de capacidades, conhecimento e valor entregue ao ecossistema.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | renovação de capacidades pode exigir investimento, mas o propósito pode continuar por diferentes fontes e formas de financiamento; reinvestimento interno não é condição universal nem intrinsecamente responsável |
+| Decision | Pass | incapacidade persistente de financiar renovação ou alocação destrutiva de recursos exigiria revisão estratégica de capital, prioridades, riscos e alternativas de financiamento |
+| Replacement | Pass | a necessidade de alocar recursos para renovação permanece válida, embora os mecanismos, fontes e objetos de investimento possam mudar integralmente |
+| Outcome Quality | Partial | o conceito é decisório e observável, mas descreve predominantemente uma condição financeira e um mecanismo governado de alocação, com forte dependência da continuidade econômica |
+
+### Evidências determinantes
+
+- `RP1-EV-025` mostra que fundos internos podem ser materiais quando há restrições de financiamento;
+- `RP1-EV-026` demonstra custos de agência e risco de sobreinvestimento, bloqueando a presunção de benefício automático;
+- `RP1-EV-027` trata alocação de capital, estratégia e sustentabilidade como responsabilidades de governança.
+
+### Disposição recomendada
+
+`Merge into BUS-CAND-005`.
+
+Incorporar a capacidade governada de financiar renovação e preservar opções de investimento como dimensão de continuidade econômica sustentável. Reinvestimento deve permanecer decisão de alocação condicionada por adicionalidade, riscos, obrigações e alternativas legítimas de uso ou financiamento.
+
+### Limite da recomendação
+
+Nenhuma fusão é executada neste incremento. `BUS-CAND-010` permanece rastreável e `Under Validation`; maior retenção ou gasto não constitui evidência de responsabilidade, eficácia ou geração futura de valor.
+
+## 19. Avaliação conjunta do cluster valor e continuidade
+
+### Síntese
+
+```text
+capacidades e proposições habilitam valor contextual
+→ relações legítimas permitem captura econômica
+→ continuidade preserva obrigações e valor essencial
+→ alocação governada financia renovação quando justificável
+→ capacidades renovadas ampliam futuras condições de valor
+```
+
+O cluster descreve um ciclo de sustentação, não três Outcomes empresariais equivalentes:
+
+- `BUS-CAND-003` mistura a condição empresarial de habilitar valor com propriedades de entrega e valor realizado por terceiros;
+- `BUS-CAND-005` possui a unidade decisória mais próxima de um Business Outcome autônomo, embora ainda precise de fronteiras explícitas;
+- `BUS-CAND-010` descreve principalmente mecanismo governado de alocação e financiamento da renovação;
+- a relação causal e econômica entre os três não elimina suas diferenças de natureza;
+- a recomendação de fusão preserva rastreabilidade e depende de decisão humana posterior.
+
+### Resultado cumulativo
+
+| Elemento | Resultado |
+|---|---|
+| candidatos avaliados | 9 de 18 |
+| clusters avaliados | 3 de 6 |
+| recomendações `Reformulate` | 7 |
+| recomendações `Merge` | 2 |
+| recomendações `Approve` | 0 |
+| mudanças de estado | 0 |
+| código canônico criado | 0 |
+
+## 20. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| quatro testes obrigatórios aplicados | 6/6 — Pass |
+| quatro testes obrigatórios aplicados | 9/9 — Pass |
 | evidência externa rastreável | Pass |
 | contradições e limites preservados | Pass |
 | disposição singular por candidato | Pass |
 | distinção entre recomendação e decisão | Pass |
 | promoção automática bloqueada | Pass |
-| candidatos avaliados | 6/18 — In progress |
-| clusters avaliados | 2/6 — In progress |
+| candidatos avaliados | 9/18 — In progress |
+| clusters avaliados | 3/6 — In progress |
 | AQS-O01 iniciado | No |
 | Outcomes canônicos definidos | 0 |
 
-## 17. Próximo passo governado
+## 21. Próximo passo governado
 
-Submeter as seis disposições cumulativas à revisão humana. Se o padrão permanecer aceito, continuar a COEM pelo próximo cluster governado, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
+Submeter as nove disposições cumulativas à revisão humana. Se o padrão permanecer aceito, continuar a COEM pelo próximo cluster governado, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
