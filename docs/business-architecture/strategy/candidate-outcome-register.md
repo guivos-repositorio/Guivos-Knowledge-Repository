@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-23
 parent: BA-STR-002
@@ -18,6 +18,7 @@ related:
   - BA-STR-002-EOVB-004
   - BA-STR-002-EOVB-005
   - BA-STR-002-EOVB-006
+  - BA-STR-002-COEM-001
   - GEM-CLOSURE-REVIEW-001
   - M7.0
 normative: false
@@ -43,7 +44,7 @@ Canonical EO/BO codes: 0
 Under Validation: 18
 External validation: completed — batches 01 to 06
 External validation protocol: completed
-COEM: not started
+COEM: in progress — 3 of 18 candidates; 1 of 6 clusters
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -329,12 +330,12 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 ## 10. Pendências para os próximos ciclos
 
-Antes de qualquer decisão da COEM deverão existir:
+Antes de qualquer mudança de estado derivada da COEM deverão existir:
 
-1. revisão humana do gate integral e das recomendações dos seis lotes;
-2. decisão separada para iniciar a COEM;
-3. aplicação consistente dos critérios de permanência, independência e utilidade decisória;
-4. preservação das contradições, reclassificações e limites;
+1. aplicação consistente dos quatro testes obrigatórios;
+2. preservação das contradições, reclassificações e limites;
+3. disposição singular e fundamentada por candidato;
+4. distinção explícita entre recomendação da matriz e decisão humana;
 5. proibição de promoção automática por força cumulativa da evidência;
 6. decisão formal e rastreável por candidato.
 
@@ -350,9 +351,9 @@ Antes de qualquer decisão da COEM deverão existir:
 | promoção automática bloqueada | Pass |
 | protocolo de validação externa | Ready |
 | validação externa realizada | Pass — 18/18 candidatos e 6/6 clusters |
-| COEM realizada | Not started |
+| COEM realizada | In progress — 3/18 candidatos e 1/6 clusters |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Submeter o gate `Ready for COEM` à revisão humana e, mediante aprovação separada, abrir a Candidate Outcome Evaluation Matrix. Os seis lotes permanecem evidência preparatória; nenhuma promoção ocorrerá antes da avaliação formal e da decisão governada.
+Submeter as disposições calibradas de `ECO-CAND-001`, `ECO-CAND-003` e `ECO-CAND-005` à revisão humana e, mediante aprovação separada, continuar a [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) pelo cluster confiança. Os seis lotes permanecem evidência preparatória; nenhuma disposição altera o COR antes de decisão governada.

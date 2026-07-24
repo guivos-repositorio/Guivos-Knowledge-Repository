@@ -2,7 +2,7 @@
 id: GKR-GOV-OUT-001
 title: Outcome Governance Method
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-22
 applies_to:
@@ -10,6 +10,7 @@ applies_to:
 related:
   - BA-STR-002-COR-001
   - BA-STR-002-EOVP-001
+  - BA-STR-002-COEM-001
 ---
 
 # Outcome Governance Method
@@ -129,6 +130,19 @@ A COEM avalia cada candidato por critérios repetíveis.
 - Defer;
 - Reformulate.
 
+### Separação decisória
+
+O resultado registrado na COEM é uma **disposição recomendada**, não uma mudança automática de estado.
+
+O ciclo preserva quatro atos distintos:
+
+1. aplicação dos testes;
+2. disposição recomendada pela matriz;
+3. decisão humana sobre o candidato;
+4. consolidação posterior na Canon, quando aplicável.
+
+Uma contagem de testes não substitui julgamento arquitetural. Falhas de natureza, nível ou independência não podem ser compensadas aritmeticamente por outros testes.
+
 ## 5. Outcome Quality Standard — AQS-O01
 
 O AQS-O01 permanece em validação prática até ser aplicado aos primeiros candidatos.
@@ -182,4 +196,4 @@ Cada Outcome consolidado deverá possuir:
 
 ## Próximo passo
 
-Executar o `BA-STR-002-EOVP-001` somente após aprovação separada. A validação externa e a COEM ocorrerão em ciclos próprios antes da definição de qualquer código canônico `EO-###` ou `BO-###`.
+Continuar a [Candidate Outcome Evaluation Matrix](../business-architecture/strategy/candidate-outcome-evaluation-matrix.md) em lotes governados após a calibração inicial. Nenhuma disposição poderá alterar o COR ou criar código canônico `EO-###` ou `BO-###` sem decisão humana explícita.
