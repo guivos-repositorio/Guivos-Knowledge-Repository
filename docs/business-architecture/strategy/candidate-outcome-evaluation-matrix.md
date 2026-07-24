@@ -2,7 +2,7 @@
 id: BA-STR-002-COEM-001
 title: Candidate Outcome Evaluation Matrix
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-24
 parent: BA-STR-002
@@ -15,6 +15,7 @@ related:
   - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
+  - BA-STR-002-EOVB-005
   - RP-001-EVIDENCE
 normative: false
 execution_status: in-progress
@@ -40,9 +41,9 @@ A COEM não promove candidatos automaticamente. Uma disposição `Approve`, `Rej
 ```text
 Matrix: in progress
 Candidates in scope: 18
-Candidates evaluated: 10
-Clusters evaluated: 4 of 6
-Current batch: resilience
+Candidates evaluated: 13
+Clusters evaluated: 5 of 6
+Current batch: adaptation
 Candidate state changes: 0
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -55,11 +56,11 @@ Operational authorization: no
 ### Incluído
 
 - definição da escala comum dos quatro testes obrigatórios;
-- preservação das nove avaliações dos três clusters anteriores;
-- aplicação a `BUS-CAND-006`, sem recontar `BUS-CAND-005`;
-- avaliação conjunta do cluster `resiliência`;
-- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-036`;
-- continuidade do padrão que será aplicado aos outros oito candidatos.
+- preservação das dez avaliações dos quatro clusters anteriores;
+- aplicação a `BUS-CAND-002`, `BUS-CAND-007` e `BUS-CAND-009`;
+- avaliação conjunta do cluster `adaptação`;
+- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-045`;
+- continuidade do padrão que será aplicado aos outros cinco candidatos.
 
 ### Excluído
 
@@ -116,14 +117,14 @@ Uma disposição não altera o status do COR neste incremento.
 | ECO-CAND-007 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | ECO-CAND-008 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-001 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
-| BUS-CAND-002 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-002 | Partial | Pass | Pass | Partial | Merge into BUS-CAND-003 | Pending human decision |
 | BUS-CAND-003 | Partial | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-004 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-005 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-006 | Fail | Partial | Pass | Fail | Reject | Pending human decision |
-| BUS-CAND-007 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-007 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-008 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
-| BUS-CAND-009 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-009 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-010 | Partial | Pass | Pass | Partial | Merge into BUS-CAND-005 | Pending human decision |
 
 ## 8. Avaliação — ECO-CAND-001
@@ -565,21 +566,151 @@ O cluster descreve uma condição permanente e uma trajetória opcional, não do
 | mudanças de estado | 0 |
 | código canônico criado | 0 |
 
-## 22. Gate do incremento
+## 22. Avaliação — BUS-CAND-002
+
+### Formulação avaliada
+
+As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | respostas relevantes são materiais à geração de valor, mas o propósito não exige que relevância seja um estado empresarial autônomo; ela emerge do ajuste entre contexto, capacidades, proposições e valor vivido |
+| Decision | Pass | degradação persistente da relevância exigiria revisão estratégica de inteligência, prioridades, proposições, capacidades de resposta e critérios de valor |
+| Replacement | Pass | a necessidade de produzir respostas contextualmente relevantes permanece válida após substituição dos produtos, canais e tecnologias atuais |
+| Outcome Quality | Partial | o conceito é observável e decisório, porém descreve qualidade emergente e percebida, com forte sobreposição à habilitação consistente de valor de `BUS-CAND-003` |
+
+### Evidências determinantes
+
+- `RP1-EV-037` relaciona relevância à geração, disseminação e resposta organizacional à inteligência;
+- `RP1-EV-038` relaciona orientação de mercado a desempenho sem demonstrar Outcome autônomo;
+- `RP1-EV-039` impede reduzir relevância a reação aos pedidos expressos dos participantes atuais;
+- a avaliação de `BUS-CAND-003` já preserva valor como contextual e distingue habilitação empresarial de realização por terceiros.
+
+### Disposição recomendada
+
+`Merge into BUS-CAND-003`.
+
+Incorporar **relevância contextual contínua** como propriedade observável da condição empresarial de habilitar valor legítimo com consistência. A formulação resultante deve exigir detecção de mudanças e resposta coerente sem prometer relevância universal, permanente ou unilateralmente controlada.
+
+### Limite da recomendação
+
+Nenhuma fusão é executada neste incremento. `BUS-CAND-002` permanece rastreável e `Under Validation`; personalização, satisfação pontual ou resposta rápida não constituem prova suficiente de relevância.
+
+## 23. Avaliação — BUS-CAND-007
+
+### Formulação avaliada
+
+A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | aprender e renovar capacidades é necessário à sustentabilidade do propósito em ambientes mutáveis, mas aprendizagem descreve o meio institucional de adaptação, não o estado permanente de resultado |
+| Decision | Pass | incapacidade persistente de interpretar, integrar, institucionalizar ou usar conhecimento exigiria revisão estratégica de governança, memória, diversidade, incentivos e capacidades |
+| Replacement | Pass | a necessidade de aprendizagem institucional permanece válida independentemente das fontes de evidência, estruturas, métodos ou tecnologias atuais |
+| Outcome Quality | Fail | a formulação descreve processos multinível e uma capacidade dinâmica, combina mecanismo com melhoria presumida e não possui unidade de Outcome independente |
+
+### Evidências determinantes
+
+- `RP1-EV-040` modela aprendizagem como processos entre níveis individual, grupal e organizacional;
+- `RP1-EV-041` define capacidade absortiva como habilidade cumulativa de reconhecer, assimilar e aplicar conhecimento;
+- `RP1-EV-042` demonstra miopia temporal, espacial e de falhas, bloqueando a presunção de melhoria contínua;
+- a análise de resiliência já posiciona antecipação, resposta e adaptação como capacidades sustentadoras.
+
+### Disposição recomendada
+
+`Reject`.
+
+Retirar aprendizado institucional do futuro catálogo de Business Outcomes. Preservá-lo como capacidade sustentadora de sensing, interpretação, memória, contestação, renovação e adaptação, vinculada aos Outcomes que vierem a exigir resposta a mudanças.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A recomendação não reduz a importância de aprender, não autoriza sua remoção da arquitetura e não considera coleta de dados, analytics, IA ou retrospectivas como evidência suficiente de aprendizagem institucional.
+
+## 24. Avaliação — BUS-CAND-009
+
+### Formulação avaliada
+
+A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | coerência e adequação são necessárias à atuação legítima em contextos diversos, mas não constituem condição empresarial universal separada; sua materialidade depende da estratégia e do contexto de atuação |
+| Decision | Pass | fragmentação persistente ou inadequação contextual exigiria revisão estratégica de identidade, autoridade, governança, internacionalização e desenho de capacidades |
+| Replacement | Pass | a tensão entre coerência e adaptação permanece válida depois da substituição de produtos, estruturas e tecnologias |
+| Outcome Quality | Fail | a formulação combina princípio arquitetural, escolha estratégica contingente e critério de admissibilidade; não há estado único nem solução superior observável em todos os contextos |
+
+### Evidências determinantes
+
+- `RP1-EV-043` sustenta desempenho quando o grau de padronização se ajusta ao ambiente;
+- `RP1-EV-044` mostra que transferência transnacional depende de contextos sociais, organizacionais e relacionais;
+- `RP1-EV-045` registra resultados mistos sobre padronização, adaptação e desempenho;
+- tradução, presença local e variação de produto não comprovam adequação legítima.
+
+### Disposição recomendada
+
+`Reject`.
+
+Retirar coerência global com adequação contextual do futuro catálogo de Business Outcomes. Preservar o conteúdo como princípio arquitetural e critério governado para internacionalização, desenho de capacidades e avaliação de mudanças, relacionado à aderência ao propósito e à legitimidade institucional.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A recomendação não impõe padronização global, não proíbe adaptação local e não antecipa a avaliação de `BUS-CAND-001`; ela corrige somente a classificação do conceito como Outcome autônomo.
+
+## 25. Avaliação conjunta do cluster adaptação
+
+### Síntese
+
+```text
+mudanças de contexto e sinais externos
+→ capacidades de sensing, absorção e aprendizagem
+→ escolhas governadas de resposta
+→ coerência e adequação funcionam como critérios
+→ relevância emerge na habilitação e realização de valor
+→ novos efeitos alimentam aprendizagem e revisão
+```
+
+O cluster descreve um sistema adaptativo, não três Outcomes equivalentes:
+
+- `BUS-CAND-002` expressa uma propriedade emergente da habilitação consistente de valor;
+- `BUS-CAND-007` descreve predominantemente capacidade institucional multinível;
+- `BUS-CAND-009` combina princípio arquitetural e critério de decisão contingente;
+- os três permanecem relevantes após substituição dos meios atuais, mas falham em autonomia ou natureza arquitetural;
+- a fusão recomendada preserva relevância em `BUS-CAND-003`, enquanto as rejeições preservam aprendizagem e adequação em suas camadas corretas.
+
+### Resultado cumulativo
+
+| Elemento | Resultado |
+|---|---|
+| candidatos avaliados | 13 de 18 |
+| clusters avaliados | 5 de 6 |
+| recomendações `Reformulate` | 7 |
+| recomendações `Merge` | 3 |
+| recomendações `Reject` | 3 |
+| recomendações `Approve` | 0 |
+| mudanças de estado | 0 |
+| código canônico criado | 0 |
+
+## 26. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| quatro testes obrigatórios aplicados | 10/10 — Pass |
+| quatro testes obrigatórios aplicados | 13/13 — Pass |
 | evidência externa rastreável | Pass |
 | contradições e limites preservados | Pass |
 | disposição singular por candidato | Pass |
 | distinção entre recomendação e decisão | Pass |
 | promoção automática bloqueada | Pass |
-| candidatos avaliados | 10/18 — In progress |
-| clusters avaliados | 4/6 — In progress |
+| candidatos avaliados | 13/18 — In progress |
+| clusters avaliados | 5/6 — In progress |
 | AQS-O01 iniciado | No |
 | Outcomes canônicos definidos | 0 |
 
-## 23. Próximo passo governado
+## 27. Próximo passo governado
 
-Submeter as dez disposições cumulativas à revisão humana. Se o padrão permanecer aceito, continuar a COEM pelo próximo cluster governado, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
+Submeter as treze disposições cumulativas à revisão humana. Se o padrão permanecer aceito, concluir a COEM pelo cluster `oportunidade e experiência` e pelas três sínteses individuais associadas, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
