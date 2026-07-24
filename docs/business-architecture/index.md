@@ -25,8 +25,8 @@ Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ec
 
 ## Unidade ativa
 
-- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.16.0; COEM em execução; catálogo canônico pendente.
-- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos em `Under Validation`; nove disposições pendentes de decisão.
+- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.17.0; COEM em execução; catálogo canônico pendente.
+- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos em `Under Validation`; dez disposições pendentes de decisão.
 - [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — execução concluída; gate `Ready for COEM`.
 - [BA-STR-002-EOVB-001 — Batch 01, Agency and Evolution](strategy/outcome-validation-batch-01-agency-evolution.md) — três sínteses e um cluster concluídos.
 - [BA-STR-002-EOVB-002 — Batch 02, Trust](strategy/outcome-validation-batch-02-trust.md) — três sínteses e a fronteira Ecosystem–Business analisada.
@@ -34,7 +34,7 @@ Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ec
 - [BA-STR-002-EOVB-004 — Batch 04, Resilience](strategy/outcome-validation-batch-04-resilience.md) — continuidade, resiliência e crescimento responsável discriminados.
 - [BA-STR-002-EOVB-005 — Batch 05, Adaptation](strategy/outcome-validation-batch-05-adaptation.md) — relevância, aprendizagem e adequação contextual discriminadas.
 - [BA-STR-002-EOVB-006 — Batch 06, Coverage Completion](strategy/outcome-validation-batch-06-coverage-completion.md) — cobertura de 18 candidatos e seis clusters concluída.
-- [BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix](strategy/candidate-outcome-evaluation-matrix.md) — 9 de 18 candidatos e 3 de 6 clusters avaliados.
+- [BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix](strategy/candidate-outcome-evaluation-matrix.md) — 10 de 18 candidatos e 4 de 6 clusters avaliados.
 
 ## Organização interna
 
@@ -96,7 +96,7 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 1. `BA-FND-001` — Business Architecture Foundations — **Validated**
 2. `BA-STR-001` — Business Transformation Model — **Validated**
-3. `BA-STR-002` — Business Outcomes — **Draft 0.16.0; COEM em execução**
+3. `BA-STR-002` — Business Outcomes — **Draft 0.17.0; COEM em execução**
 4. `BA-CAP-001` — Core Business Capabilities
 5. `BA-CAP-002` — Capability Map
 6. `BA-STR-003` — Value Chains
