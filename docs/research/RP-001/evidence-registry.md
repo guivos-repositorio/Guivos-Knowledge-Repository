@@ -2,7 +2,7 @@
 id: RP-001-EVIDENCE
 title: Evidence Registry
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Guivos Research
 last_updated: 2026-07-23
 related:
@@ -12,6 +12,7 @@ related:
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
   - BA-STR-002-EOVB-005
+  - BA-STR-002-EOVB-006
 ---
 
 # RP-001 — Evidence Registry
@@ -773,21 +774,268 @@ Nenhum nível do lote aprova, rejeita ou funde candidatos. A força registrada o
 | Independência | Síntese ampla que integra estudos distintos e funciona como limite às inferências dos casos individuais. |
 | Status e revisão | Accepted — Guivos Research, 2026-07-23 |
 
+## Lote 06 — Conclusão da cobertura
+
+### RP1-EV-046 — Capacidades como oportunidades reais
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-002; cluster oportunidade e experiência |
+| Fonte | Sen, A. (1993). *Capability and Well-Being*. In M. Nussbaum & A. Sen (Eds.), The Quality of Life. [Oxford Academic](https://academic.oup.com/book/9949/chapter/157296473) |
+| Disciplina e papel | Economia do bem-estar e filosofia política; fundamento teórico |
+| Conceito ou alegação | Capacidade avalia a liberdade substantiva ou habilidade real de alcançar funcionamentos valiosos, distinguindo o conjunto de oportunidades do funcionamento efetivamente realizado. |
+| Direção | Confirma |
+| Qualidade | Relevância muito alta; autoridade seminal; rigor teórico; generalidade alta; permanência alta; aplicabilidade alta; incompletude deliberada explicitada. |
+| Nível | E2 — fundamento consolidado para distinguir oportunidade real de realização |
+| Aplicabilidade | Sustenta ECO-CAND-002 como condição de possibilidades efetivas e separa acesso de experiência realizada em ECO-CAND-004. |
+| Limitações | Não fornece lista universal de possibilidades relevantes nem método único de mensuração; origem centrada em pessoas exige cautela para organizações e coletivos. |
+| Independência | Linha normativa de capacidades distinta da psicologia experimental e da lógica de serviço. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-047 — Escopo de escolha, agência e fatores de conversão
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-002; ECO-CAND-004; cluster oportunidade e experiência |
+| Fonte | Osmani, S. R. (2016). *The Capability Approach and Human Development*. UNDP Human Development Report Office. [UNDP](https://hdr.undp.org/system/files/documents/osmanitemplate.pdf) |
+| Disciplina e papel | Desenvolvimento humano; síntese institucional qualificada |
+| Conceito ou alegação | O escopo de escolha representa oportunidades possíveis sob restrições e fatores de conversão, enquanto o ato de escolha e o funcionamento alcançado são estados distintos. |
+| Direção | Amplia |
+| Qualidade | Relevância muito alta; autoridade institucional alta; rigor de síntese; generalidade alta para desenvolvimento humano; permanência alta; aplicabilidade alta; pressupostos explícitos. |
+| Nível | E2 — síntese consolidada da distinção entre oportunidade, escolha e realização |
+| Aplicabilidade | Exige que acesso seja avaliado por possibilidade real de compreensão e conversão, não apenas por disponibilidade nominal. |
+| Limitações | Aplicação a um ecossistema digital requer tradução contextual e não define legitimidade comercial ou regulatória de cada opção. |
+| Independência | Linha institucional independente do capítulo teórico de Sen e da evidência experimental de escolha. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-048 — Sobrecarga de escolha
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-002; cluster oportunidade e experiência |
+| Fonte | Iyengar, S. S., & Lepper, M. R. (2000). *When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?* Journal of Personality and Social Psychology, 79(6), 995–1006. [DOI](https://doi.org/10.1037/0022-3514.79.6.995) |
+| Disciplina e papel | Psicologia social; estudos experimentais e contraevidência |
+| Conceito ou alegação | Em três estudos, conjuntos extensos de opções atraíram atenção, mas conjuntos limitados produziram mais escolha, maior satisfação ou melhor desempenho em contextos específicos. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade alta; rigor experimental; generalidade moderada; permanência alta; aplicabilidade alta; replicabilidade e contingências posteriores reconhecidas. |
+| Nível | E1 — evidência empírica seminal, contextual e não universal |
+| Aplicabilidade | Bloqueia usar quantidade de oportunidades como proxy de acesso relevante e reforça curadoria, compreensibilidade e adequação contextual. |
+| Limitações | Estudos com escolhas de consumo e tarefa; efeitos dependem de complexidade, preferências e expertise e não demonstram sobrecarga universal. |
+| Independência | Contraevidência experimental distinta das linhas normativas de capacidades. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-049 — Valor em uso e papéis na cocriação
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-004; cluster oportunidade e experiência |
+| Fonte | Grönroos, C., & Voima, P. (2013). *Critical service logic: making sense of value creation and co-creation*. Journal of the Academy of Marketing Science, 41, 133–150. [DOI](https://doi.org/10.1007/s11747-012-0308-3) |
+| Disciplina e papel | Marketing de serviços; modelo teórico crítico |
+| Conceito ou alegação | O participante cria valor em uso em sua própria esfera; a organização facilita valor e somente participa diretamente da cocriação em interações conjuntas. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade alta; rigor conceitual; generalidade alta em serviços; permanência alta; aplicabilidade alta; fronteiras do modelo explícitas. |
+| Nível | E2 — conceptualização consolidada dos papéis de criação e facilitação de valor |
+| Aplicabilidade | Impede atribuir à Guivos controle unilateral sobre o valor da experiência e reclassifica realização como evento contextual. |
+| Limitações | Modelo de serviços; não comprova efeitos de evolução nem determina como medir valor entre participantes distintos. |
+| Independência | Linha de lógica de serviço distinta da psicologia da experiência e da abordagem de capacidades. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-050 — Dimensões experienciais do consumo
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-004; cluster oportunidade e experiência |
+| Fonte | Holbrook, M. B., & Hirschman, E. C. (1982). *The Experiential Aspects of Consumption: Consumer Fantasies, Feelings, and Fun*. Journal of Consumer Research, 9(2), 132–140. [DOI](https://doi.org/10.1086/208906) |
+| Disciplina e papel | Comportamento do consumidor; teoria reconhecida |
+| Conceito ou alegação | Experiências incluem dimensões simbólicas, hedônicas, estéticas, afetivas e multissensoriais que não são capturadas por modelos exclusivamente utilitários de processamento de informação. |
+| Direção | Amplia |
+| Qualidade | Relevância alta; autoridade seminal; rigor teórico; generalidade moderada; permanência alta; aplicabilidade moderada a alta; contexto de consumo explícito. |
+| Nível | E1 — linha teórica seminal para natureza multidimensional da experiência |
+| Aplicabilidade | Amplia a observação de experiências de valor além de conclusão, transação ou satisfação pontual. |
+| Limitações | Foco em consumo e dimensões hedônicas; não implica evolução, benefício duradouro ou valor positivo universal. |
+| Independência | Linha experiencial independente da lógica de serviço e da psicologia da memória. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-051 — Experiência vivida e experiência lembrada
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-004; cluster oportunidade e experiência |
+| Fonte | Kahneman, D., Fredrickson, B. L., Schreiber, C. A., & Redelmeier, D. A. (1993). *When More Pain Is Preferred to Less: Adding a Better End*. Psychological Science, 4(6), 401–405. [DOI](https://doi.org/10.1111/j.1467-9280.1993.tb00589.x) |
+| Disciplina e papel | Psicologia da decisão; estudo experimental e limite de mensuração |
+| Conceito ou alegação | Avaliações retrospectivas podem privilegiar pico e final e divergir da duração e da soma da experiência vivida; participantes chegaram a preferir repetir o episódio mais longo e doloroso. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade alta; rigor experimental; generalidade moderada; permanência alta; aplicabilidade moderada; escopo aversivo explícito. |
+| Nível | E1 — evidência experimental forte para divergência entre vivência e memória |
+| Aplicabilidade | Impede tratar recordação, avaliação posterior ou NPS como equivalentes à experiência completa e ao valor vivido. |
+| Limitações | Experimento de dor controlada; transferência para experiências positivas, complexas e sociais deve ser cautelosa. |
+| Independência | Contraevidência psicológica independente das teorias de valor e consumo. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-052 — Dignidade, acessibilidade e participação plena
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-007 |
+| Fonte | United Nations (2006). *Convention on the Rights of Persons with Disabilities*. [OHCHR](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities) |
+| Disciplina e papel | Direitos humanos; tratado internacional |
+| Conceito ou alegação | Dignidade inerente, autonomia, não discriminação, acessibilidade e participação plena e efetiva são princípios e obrigações interdependentes, incluindo acomodação razoável. |
+| Direção | Amplia |
+| Qualidade | Relevância muito alta; autoridade jurídica internacional alta; rigor normativo; generalidade alta para pessoas com deficiência; permanência alta; aplicabilidade alta; escopo jurídico definido. |
+| Nível | E3 — autoridade normativa multilateral amplamente ratificada |
+| Aplicabilidade | Sustenta dignidade e inclusão como condições obrigatórias e bloqueia participação baseada apenas em disponibilidade formal. |
+| Limitações | Tratado específico sobre direitos das pessoas com deficiência; não cobre sozinho todas as diferenças culturais, econômicas ou organizacionais e exige tradução jurídica local. |
+| Independência | Linha de direitos humanos distinta da inclusão digital e da teoria de participação. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-053 — Inclusão digital multidimensional
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-007; ECO-CAND-002 |
+| Fonte | International Telecommunication Union (2025). *Telecommunication/ICT accessibility to enable inclusive communication for all*. [ITU](https://www.itu.int/dms_pub/itu-d/opb/stg/D-STG-SG01.07.1-2025-PDF-E.pdf) |
+| Disciplina e papel | Inclusão e acessibilidade digital; referência institucional |
+| Conceito ou alegação | Inclusão digital depende conjuntamente de acesso à internet, affordability, acessibilidade, políticas e padrões, tecnologias acessíveis e apropriação efetiva. |
+| Direção | Reclassifica |
+| Qualidade | Relevância alta; autoridade institucional alta; rigor de síntese internacional; generalidade alta para ICT; permanência moderada; aplicabilidade alta; atualização tecnológica necessária. |
+| Nível | E2 — referência institucional multicontexto para barreiras de inclusão digital |
+| Aplicabilidade | Reclassifica inclusão como sistema de condições, capacidades e guardrails e impede confundir presença digital com participação efetiva. |
+| Limitações | Ênfase em telecomunicações e deficiência; não mede dignidade vivida nem resolve todas as barreiras culturais e econômicas. |
+| Independência | Linha técnica e institucional distinta do tratado de direitos e da teoria de poder participativo. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-054 — Participação efetiva versus tokenismo
+
+| Campo | Registro |
+|---|---|
+| Alvo | ECO-CAND-007 |
+| Fonte | Arnstein, S. R. (1969). *A Ladder of Citizen Participation*. Journal of the American Institute of Planners, 35(4), 216–224. [DOI](https://doi.org/10.1080/01944366908977225) |
+| Disciplina e papel | Planejamento e participação pública; tipologia teórica baseada em prática |
+| Conceito ou alegação | Informação e consulta podem permanecer tokenismo quando participantes não possuem influência material; participação efetiva envolve redistribuição de poder e capacidade de afetar decisões e benefícios. |
+| Direção | Contradiz |
+| Qualidade | Relevância alta; autoridade seminal; rigor tipológico e experiencial; generalidade moderada; permanência alta; aplicabilidade alta; contexto histórico explicitado. |
+| Nível | E1 — modelo seminal e influente, não validação causal universal |
+| Aplicabilidade | Bloqueia usar presença, consulta ou representação nominal como prova de participação inclusiva e digna. |
+| Limitações | Baseada em programas públicos dos Estados Unidos dos anos 1960; a metáfora linear não captura toda forma contemporânea de participação. |
+| Independência | Contraevidência de poder participativo distinta dos direitos humanos e da acessibilidade digital. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-055 — Propósito como razão de ser
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-001 |
+| Fonte | van Ingen, R., Peters, P., De Ruiter, M., & Robben, H. (2021). *Exploring the Meaning of Organizational Purpose at a New Dawn: The Development of a Conceptual Model Through Expert Interviews*. Frontiers in Psychology, 12, 675543. [DOI](https://doi.org/10.3389/fpsyg.2021.675543) |
+| Disciplina e papel | Estudos organizacionais; pesquisa qualitativa exploratória |
+| Conceito ou alegação | Propósito organizacional é razão de ser caracterizada por significância, aspiração, direção, unificação e motivação e não se confunde com declaração, missão, visão ou seus efeitos. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade moderada a alta; rigor qualitativo com 44 especialistas; generalidade moderada; permanência moderada; aplicabilidade alta; estágio exploratório explícito. |
+| Nível | E1 — evidência qualitativa qualificada para definição e funções |
+| Aplicabilidade | Sustenta propósito como orientação superior e enfraquece aderência como Outcome empresarial autônomo. |
+| Limitações | Amostra de especialistas e modelo conceitual ainda carente de validação ampla; não comprova aderência efetiva nem desempenho. |
+| Independência | Linha empírica qualitativa distinta da revisão de propósito e da governança de mission drift. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-056 — Ambiguidade e efeitos do propósito
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-001 |
+| Fonte | George, G., Haas, M. R., McGahan, A. M., Schillebeeckx, S. J. D., & Tracey, P. (2023). *Purpose in the For-Profit Firm: A Review and Framework for Management Research*. Journal of Management, 49(6), 1841–1869. [DOI](https://doi.org/10.1177/01492063211006450) |
+| Disciplina e papel | Gestão e estratégia; revisão integradora |
+| Conceito ou alegação | O uso de propósito em gestão permanece conceitualmente variado e ambíguo; associações com crescimento, inovação, satisfação ou desempenho são efeitos propostos, não sua definição. |
+| Direção | Contradiz |
+| Qualidade | Relevância muito alta; autoridade alta; rigor de revisão; generalidade alta para empresas; permanência moderada a alta; aplicabilidade alta; lacunas reconhecidas. |
+| Nível | E2 — síntese qualificada das ambiguidades e correntes do campo |
+| Aplicabilidade | Impede definir aderência por resultados positivos ou por declaração inspiracional e exige constructo e evidência próprios. |
+| Limitações | Campo ainda emergente e voltado a firmas com fins lucrativos; não resolve a constituição específica da Guivos. |
+| Independência | Síntese de gestão distinta da entrevista de especialistas e da governança de organizações híbridas. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-057 — Mission drift e governança híbrida
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-001; BUS-CAND-008 |
+| Fonte | Ebrahim, A., Battilana, J., & Mair, J. (2014). *The governance of social enterprises: Mission drift and accountability challenges in hybrid organizations*. Research in Organizational Behavior, 34, 81–100. [DOI](https://doi.org/10.1016/j.riob.2014.09.001) |
+| Disciplina e papel | Governança e organizações híbridas; modelo teórico integrador |
+| Conceito ou alegação | Prevenir mission drift exige monitorar tensões entre atividades sociais e comerciais, controles adequados e accountability significativa aos beneficiários; forma jurídica isolada não elimina o risco. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade alta; rigor teórico e baseado em literatura; generalidade moderada; permanência alta; aplicabilidade muito alta; tipos organizacionais explícitos. |
+| Nível | E2 — conceptualização consolidada de governança em organizações híbridas |
+| Aplicabilidade | Reclassifica aderência como dever contínuo de governança e relaciona parceiros e recursos externos ao risco de desvio. |
+| Limitações | Foco em empresas sociais e arquétipos híbridos; mecanismos devem ser adaptados ao futuro formato institucional da Guivos. |
+| Independência | Linha de governança híbrida distinta das definições gerais de propósito. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-058 — Valor incorporado nas relações interorganizacionais
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-008 |
+| Fonte | Dyer, J. H., & Singh, H. (1998). *The Relational View: Cooperative Strategy and Sources of Interorganizational Competitive Advantage*. Academy of Management Review, 23(4), 660–679. [DOI](https://doi.org/10.5465/amr.1998.1255632) |
+| Disciplina e papel | Estratégia cooperativa; teoria reconhecida |
+| Conceito ou alegação | Recursos críticos e rendas relacionais podem estar incorporados em ativos específicos, rotinas de compartilhamento de conhecimento, complementaridades e governança entre organizações. |
+| Direção | Confirma |
+| Qualidade | Relevância muito alta; autoridade seminal; rigor teórico; generalidade alta; permanência alta; aplicabilidade alta; unidade relacional explícita. |
+| Nível | E2 — teoria consolidada da relação como fonte própria de valor |
+| Aplicabilidade | Sustenta materialidade estratégica da saúde das parcerias sem reduzi-la à soma de contratos ou recursos internos. |
+| Limitações | Ênfase em vantagem competitiva e rendas; não cobre sozinho dignidade, propósito, distribuição de valor ou riscos multistakeholder. |
+| Independência | Linha estratégica relacional distinta da capacidade de alianças e da gestão de risco. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-059 — Capacidade dedicada de alianças
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-008; BUS-CAND-007 |
+| Fonte | Kale, P., Dyer, J. H., & Singh, H. (2002). *Alliance Capability, Stock Market Response, and Long-Term Alliance Success: The Role of the Alliance Function*. Strategic Management Journal, 23(8), 747–767. [DOI](https://doi.org/10.1002/smj.248) |
+| Disciplina e papel | Estratégia e alianças; estudo empírico |
+| Conceito ou alegação | Experiência acumulada e, especialmente, uma função dedicada de alianças associam-se a maior sucesso declarado e melhor resposta de mercado às alianças. |
+| Direção | Reclassifica |
+| Qualidade | Relevância muito alta; autoridade alta; rigor empírico; generalidade moderada; permanência alta; aplicabilidade alta; medidas e amostra explicitadas. |
+| Nível | E1 — evidência empírica qualificada para capacidade de gestão de alianças |
+| Aplicabilidade | Indica que parte da saúde das parcerias depende de capacidade organizacional de coordenar, aprender e disseminar conhecimento. |
+| Limitações | Medidas incluem avaliações gerenciais e reação de mercado; associação não prova causalidade universal nem cobre redes de impacto social. |
+| Independência | Linha empírica de capacidade distinta da teoria relacional e do framework de risco. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
+### RP1-EV-060 — Confiança, controle e risco em alianças
+
+| Campo | Registro |
+|---|---|
+| Alvo | BUS-CAND-008; BUS-CAND-004 |
+| Fonte | Das, T. K., & Teng, B.-S. (2001). *Trust, Control, and Risk in Strategic Alliances: An Integrated Framework*. Organization Studies, 22(2), 251–283. [DOI](https://doi.org/10.1177/0170840601222004) |
+| Disciplina e papel | Estudos organizacionais; framework teórico e contraevidência |
+| Conceito ou alegação | Alianças carregam riscos relacionais e de desempenho; confiança de boa vontade e competência e controles comportamentais, de resultados e sociais influenciam a confiança na cooperação. |
+| Direção | Amplia |
+| Qualidade | Relevância muito alta; autoridade alta; rigor teórico; generalidade alta para alianças; permanência alta; aplicabilidade alta; dimensões explicitadas. |
+| Nível | E2 — framework consolidado de confiança, controle e risco |
+| Aplicabilidade | Impede equiparar ausência de conflito, duração ou confiança declarada à saúde e exige gestão de riscos e controles proporcionais. |
+| Limitações | Modelo teórico; combinações eficazes variam por aliança e contexto e controles excessivos também podem degradar cooperação. |
+| Independência | Linha de risco e governança distinta da teoria de rendas relacionais e da evidência de capacidade. |
+| Status e revisão | Accepted — Guivos Research, 2026-07-23 |
+
 ## Síntese de força cumulativa
 
 | Alvo | Linhas independentes | Busca de contradição ou limite | Estado da evidência |
 |---|---:|---|---|
 | ECO-CAND-001 | 3 | limites de introspecção registrados | E3 provisório para natureza habilitadora |
+| ECO-CAND-002 | 3 | fatores de conversão e sobrecarga de escolha registrados | E3 provisório para oportunidade real; volume de opções insuficiente |
 | ECO-CAND-003 | 3 | dependência socioestrutural e generalização registradas | E3 provisório para agência situada |
+| ECO-CAND-004 | 3 | controle do valor, multidimensionalidade e divergência entre vivência e memória registrados | E3 provisório para experiência episódica; independência enfraquecida |
 | ECO-CAND-005 | 3 | não linearidade e desengajamento adaptativo registrados | E3 provisório para regulação adaptativa |
 | ECO-CAND-006 | 3 | exclusão, restrição e distribuição desigual registradas | E3 provisório para qualidade relacional; conexão isolada insuficiente |
+| ECO-CAND-007 | 3 | acessibilidade, barreiras e tokenismo registrados | E3 provisório para condição composta entre direitos, guardrails e participação |
 | ECO-CAND-008 | 4 | risco residual e distinção entre proteção e confiança registradas | E3 provisório para composição de guardrails e condição vivida |
+| BUS-CAND-001 | 3 | ambiguidade conceitual, mission drift e declaração sem prática registrados | E3 provisório para princípio e conformidade constitucional |
 | BUS-CAND-004 | 4 | falha, reparação e distinção entre confiança e legitimidade registradas | E3 provisório para materialidade institucional; formulação composta |
 | BUS-CAND-003 | 3 | limite ao controle unilateral e distinção entre qualidade e valor registrado | E3 provisório para materialidade da entrega; formulação composta |
 | BUS-CAND-005 | 9 | fronteiras entre viabilidade, operação, estabilidade, adaptação e sustentabilidade registradas | E3 provisório para continuidade como condição estratégica composta |
 | BUS-CAND-006 | 8 | obrigação de crescer, limites financeiros e gerenciais e sobrevivência contingente confrontados | E3 provisório para trajetória governada; independência como Outcome enfraquecida |
 | BUS-CAND-002 | 7 | resposta reativa, necessidades latentes e ausência de garantia confrontadas | E3 provisório para relevância como qualidade emergente; independência enfraquecida |
 | BUS-CAND-007 | 6 | miopia, dependência de conhecimento prévio e falha de institucionalização confrontadas | E3 provisório para capacidade de aprendizagem e renovação |
+| BUS-CAND-008 | 4 | risco relacional, medidas de sucesso e dependência de capacidade registrados | E3 provisório para condição relacional sustentada por capacidades |
 | BUS-CAND-009 | 3 | padronização e adaptação universais e fragmentação contextual confrontadas | E3 provisório para princípio de fit; independência como Outcome enfraquecida |
 | BUS-CAND-010 | 3 | restrições financeiras e risco de sobreinvestimento confrontados | E3 provisório para alocação governada; independência como Outcome incerta |
 

@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.7.0
+version: 0.8.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-23
 parent: BA-STR-002
@@ -17,6 +17,7 @@ related:
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
   - BA-STR-002-EOVB-005
+  - BA-STR-002-EOVB-006
   - GEM-CLOSURE-REVIEW-001
   - M7.0
 normative: false
@@ -33,15 +34,15 @@ O COR é uma superfície de descoberta governada. Ele preserva origem, formulaç
 ## 2. Estado formal
 
 ```text
-Register: initial discovery complete; external validation in progress
+Register: initial discovery and external validation coverage complete
 Candidates: 18
 Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 13
-External validation: in progress — batches 01 to 05 completed
-External validation protocol: ready
+Under Validation: 18
+External validation: completed — batches 01 to 06
+External validation protocol: completed
 COEM: not started
 AQS-O01 practical validation: not started
 Operational authorization: no
@@ -94,7 +95,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | Participantes encontram possibilidades legítimas, compreensíveis e relevantes para seu contexto, seus objetivos e seu momento de vida. |
 | Origem | GEB-P01-F01; GEB-P01-F02; GEB-P01-F04; GEB-P01-F06 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Deve permanecer independente de catálogo, recomendação, marketplace ou produto específico. |
 | Questão de validação | Acesso e relevância formam um único estado permanente ou exigem candidatos distintos? |
 
@@ -116,7 +117,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | Participantes conseguem converter oportunidades escolhidas em experiências vividas que produzem valor percebido e potencial de evolução. |
 | Origem | GEB-P01-F01; GEB-P01-F06; BA-STR-001; GEM-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Experiência vivida não comprova transformação, impacto causal ou resultado duradouro. |
 | Questão de validação | “Realização de valor” é suficientemente permanente ou descreve evento intermediário da jornada? |
 
@@ -149,7 +150,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | Participantes de diferentes culturas, crenças, países e contextos conseguem participar do ecossistema com dignidade, acolhimento e acesso a valor essencial. |
 | Origem | GEB-P01-F02; GEB-P01-F04; GEB-P01-F05; GEM-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Não equivale a disponibilidade universal imediata nem elimina requisitos legítimos de elegibilidade, segurança ou conformidade. |
 | Questão de validação | Quais condições mínimas tornam inclusão e dignidade observáveis sem transformar o Outcome em política de acesso? |
 
@@ -173,7 +174,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes. |
 | Origem | BA-FND-001; BA-STR-001; GEB-P01-F03; GEB-P01-F05 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Pode ser princípio de governança superior, e não Outcome empresarial. |
 | Questão de validação | Sua degradação constitui resultado empresarial observável ou não conformidade constitucional? |
 
@@ -250,7 +251,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco. |
 | Origem | GEB-P01-F06; GEM-001; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Organizações, Coletivos, parceiros e participantes atendidos |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Quantidade de parceiros ou contratos não comprova saúde relacional. |
 | Questão de validação | O candidato é permanente em escala institucional ou pertence à futura arquitetura de capacidades e relações? |
 
@@ -312,6 +313,8 @@ O cluster `resiliência` possui quarto lote externo concluído em [BA-STR-002-EO
 
 O cluster `adaptação` possui quinto lote externo concluído em [BA-STR-002-EOVB-005](outcome-validation-batch-05-adaptation.md). A análise distingue relevância como qualidade emergente, aprendizagem como capacidade multinível e adequação contextual como princípio e decisão de fit, enfraquecendo a independência dos três candidatos como Outcomes.
 
+O cluster `oportunidade e experiência` e as sínteses individuais restantes foram concluídos no [BA-STR-002-EOVB-006](outcome-validation-batch-06-coverage-completion.md). A análise distingue liberdade real de acesso de experiência realizada, trata inclusão como condição composta, propósito como orientação de governança e saúde de parcerias como condição relacional sustentada por capacidades.
+
 ## 9. Cobertura das origens internas
 
 | Origem | Cobertura no COR |
@@ -326,14 +329,14 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 ## 10. Pendências para os próximos ciclos
 
-Antes de qualquer COEM deverão existir:
+Antes de qualquer decisão da COEM deverão existir:
 
-1. continuidade da execução do `BA-STR-002-EOVP-001` para os cinco candidatos e o cluster ainda não cobertos;
-2. pesquisa direta sobre as sobreposições restantes e omissões materiais;
-3. confirmação, ampliação, contradição ou ausência de evidência por candidato;
-4. revisão de linguagem para evitar etapas de jornada, capacidades e guardrails disfarçados de Outcomes;
-5. atualização do COR para `Under Validation` somente nos candidatos efetivamente submetidos;
-6. decisão separada para iniciar a COEM.
+1. revisão humana do gate integral e das recomendações dos seis lotes;
+2. decisão separada para iniciar a COEM;
+3. aplicação consistente dos critérios de permanência, independência e utilidade decisória;
+4. preservação das contradições, reclassificações e limites;
+5. proibição de promoção automática por força cumulativa da evidência;
+6. decisão formal e rastreável por candidato.
 
 ## 11. Gate do incremento
 
@@ -346,10 +349,10 @@ Antes de qualquer COEM deverão existir:
 | dúvidas e sobreposições preservadas | Pass |
 | promoção automática bloqueada | Pass |
 | protocolo de validação externa | Ready |
-| validação externa realizada | In progress — 13/18 candidatos e 5/6 clusters |
+| validação externa realizada | Pass — 18/18 candidatos e 6/6 clusters |
 | COEM realizada | Not started |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Continuar a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md) em lotes governados. Os cinco lotes concluídos estão registrados em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md), [BA-STR-002-EOVB-002](outcome-validation-batch-02-trust.md), [BA-STR-002-EOVB-003](outcome-validation-batch-03-value-continuity.md), [BA-STR-002-EOVB-004](outcome-validation-batch-04-resilience.md) e [BA-STR-002-EOVB-005](outcome-validation-batch-05-adaptation.md); nenhuma promoção ocorrerá antes da cobertura integral, do gate de validação e da COEM.
+Submeter o gate `Ready for COEM` à revisão humana e, mediante aprovação separada, abrir a Candidate Outcome Evaluation Matrix. Os seis lotes permanecem evidência preparatória; nenhuma promoção ocorrerá antes da avaliação formal e da decisão governada.
