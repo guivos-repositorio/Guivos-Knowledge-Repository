@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-24
 parent: BA-STR-002
@@ -351,9 +351,9 @@ Antes de qualquer mudança de estado derivada da COEM deverão existir:
 | promoção automática bloqueada | Pass |
 | protocolo de validação externa | Ready |
 | validação externa realizada | Pass — 18/18 candidatos e 6/6 clusters |
-| COEM realizada | In progress — 13/18 candidatos e 5/6 clusters |
+| COEM realizada | Complete — 18/18 candidatos e 6/6 clusters |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Submeter as treze disposições cumulativas dos clusters agência e evolução, confiança, valor e continuidade, resiliência e adaptação à revisão humana e, mediante aprovação separada, concluir a [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) pelo cluster oportunidade e experiência e pelas três sínteses individuais restantes. Os seis lotes permanecem evidência preparatória; nenhuma disposição altera o COR antes de decisão governada.
+Submeter as dezoito disposições cumulativas da [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) à decisão humana individual e rastreável. Os seis lotes permanecem evidência preparatória e os 18 candidatos continuam `Under Validation`; nenhuma disposição altera o COR antes de decisão governada.

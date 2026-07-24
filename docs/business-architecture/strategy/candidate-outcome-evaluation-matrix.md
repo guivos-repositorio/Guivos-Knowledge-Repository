@@ -2,7 +2,7 @@
 id: BA-STR-002-COEM-001
 title: Candidate Outcome Evaluation Matrix
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-24
 parent: BA-STR-002
@@ -16,9 +16,10 @@ related:
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
   - BA-STR-002-EOVB-005
+  - BA-STR-002-EOVB-006
   - RP-001-EVIDENCE
 normative: false
-execution_status: in-progress
+execution_status: completed
 ---
 
 # BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix
@@ -39,11 +40,11 @@ A COEM não promove candidatos automaticamente. Uma disposição `Approve`, `Rej
 ## 2. Estado formal
 
 ```text
-Matrix: in progress
+Matrix: completed
 Candidates in scope: 18
-Candidates evaluated: 13
-Clusters evaluated: 5 of 6
-Current batch: adaptation
+Candidates evaluated: 18
+Clusters evaluated: 6 of 6
+Current batch: coverage completion
 Candidate state changes: 0
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -56,11 +57,12 @@ Operational authorization: no
 ### Incluído
 
 - definição da escala comum dos quatro testes obrigatórios;
-- preservação das dez avaliações dos quatro clusters anteriores;
-- aplicação a `BUS-CAND-002`, `BUS-CAND-007` e `BUS-CAND-009`;
-- avaliação conjunta do cluster `adaptação`;
-- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-045`;
-- continuidade do padrão que será aplicado aos outros cinco candidatos.
+- preservação das treze avaliações dos cinco clusters anteriores;
+- aplicação a `ECO-CAND-002`, `ECO-CAND-004`, `ECO-CAND-007`, `BUS-CAND-001` e `BUS-CAND-008`;
+- avaliação conjunta do cluster `oportunidade e experiência`;
+- sínteses individuais de inclusão e dignidade, propósito e parcerias;
+- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-060`;
+- conclusão da cobertura matricial dos 18 candidatos e seis clusters.
 
 ### Excluído
 
@@ -111,19 +113,19 @@ Uma disposição não altera o status do COR neste incremento.
 | ECO-CAND-001 | Partial | Pass | Pass | Partial | Reformulate | Pending human decision |
 | ECO-CAND-003 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | ECO-CAND-005 | Partial | Pass | Pass | Partial | Merge into ECO-CAND-003 | Pending human decision |
-| ECO-CAND-002 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
-| ECO-CAND-004 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| ECO-CAND-002 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
+| ECO-CAND-004 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
 | ECO-CAND-006 | Partial | Pass | Pass | Partial | Reformulate | Pending human decision |
-| ECO-CAND-007 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| ECO-CAND-007 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | ECO-CAND-008 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
-| BUS-CAND-001 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-001 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-002 | Partial | Pass | Pass | Partial | Merge into BUS-CAND-003 | Pending human decision |
 | BUS-CAND-003 | Partial | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-004 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-005 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-006 | Fail | Partial | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-007 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
-| BUS-CAND-008 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-008 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-009 | Partial | Pass | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-010 | Partial | Pass | Pass | Partial | Merge into BUS-CAND-005 | Pending human decision |
 
@@ -696,21 +698,221 @@ O cluster descreve um sistema adaptativo, não três Outcomes equivalentes:
 | mudanças de estado | 0 |
 | código canônico criado | 0 |
 
-## 26. Gate do incremento
+## 26. Avaliação — ECO-CAND-002
+
+### Formulação avaliada
+
+Participantes encontram possibilidades legítimas, compreensíveis e relevantes para seu contexto, seus objetivos e seu momento de vida.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Pass | sem possibilidades reais de acesso, compreensão e escolha, o ecossistema não amplia de forma material as condições para transformação autodeterminada |
+| Decision | Pass | degradação persistente do acesso real exigiria revisão estratégica de curadoria, elegibilidade, acessibilidade, fatores de conversão, diversidade e capacidades de resposta |
+| Replacement | Pass | a condição permanece válida independentemente de catálogo, recomendação, marketplace, canal ou tecnologia |
+| Outcome Quality | Partial | o núcleo é permanente, ecossistêmico e observável, mas “encontram possibilidades” sugere disponibilidade ou descoberta nominal e não explicita liberdade real, restrições e capacidade de conversão |
+
+### Evidências determinantes
+
+- `RP1-EV-046` distingue oportunidades reais de funcionamentos efetivamente realizados;
+- `RP1-EV-047` separa escopo de escolha, ato de escolher, restrições e fatores de conversão;
+- `RP1-EV-048` demonstra que mais opções podem reduzir escolha, satisfação e desempenho;
+- volume de ofertas, exposição ou recomendação não comprova acesso real.
+
+### Disposição recomendada
+
+`Reformulate`.
+
+Preservar o núcleo como **acesso real a possibilidades legítimas e manejáveis**: participantes dispõem de condições para compreender, converter, comparar e escolher possibilidades compatíveis com seu contexto, sem transformar abundância de opções em prova de valor.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A reformulação não promete acesso irrestrito, escolha, realização da experiência ou transformação posterior.
+
+## 27. Avaliação — ECO-CAND-004
+
+### Formulação avaliada
+
+Participantes conseguem converter oportunidades escolhidas em experiências vividas que produzem valor percebido e potencial de evolução.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | experiências são o momento em que participantes podem realizar valor, mas o propósito não depende de transformar cada realização episódica em condição permanente autônoma |
+| Decision | Pass | incapacidade persistente de participantes realizarem valor exigiria revisão estratégica das possibilidades, capacidades, barreiras, relações e experiências sustentadas pelo ecossistema |
+| Replacement | Pass | experiência e valor em uso permanecem materiais depois da substituição dos produtos, canais e tecnologias atuais |
+| Outcome Quality | Fail | a formulação descreve conversão, episódio vivido, avaliação subjetiva e efeito potencial em sequência; mistura etapa de jornada, experiência e promessa de evolução sem unidade permanente própria |
+
+### Evidências determinantes
+
+- `RP1-EV-049` posiciona o participante como criador primário do valor em uso e a organização como facilitadora;
+- `RP1-EV-050` demonstra dimensões simbólicas, afetivas, estéticas e utilitárias da experiência;
+- `RP1-EV-051` separa experiência momento a momento de avaliação retrospectiva;
+- o `BA-STR-002` já distingue Outcome, experiência e resultado observado.
+
+### Disposição recomendada
+
+`Reject`.
+
+Retirar realização de experiências de valor do futuro catálogo de Ecosystem Outcomes. Preservar experiência como momento de realização de valor, unidade arquitetural da jornada e fonte de evidência para os Outcomes, sem prometer transformação causal ou efeito duradouro.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A recomendação não reduz a centralidade das experiências nem as incorpora a `ECO-CAND-002`; corrige apenas sua classificação como Outcome permanente autônomo.
+
+## 28. Avaliação conjunta do cluster oportunidade e experiência
+
+### Síntese
+
+```text
+possibilidades legítimas e manejáveis
+→ fatores reais de acesso e conversão
+→ compreensão e escolha autônoma
+→ experiência realizada
+→ valor vivido e avaliação
+→ evidências para novos ciclos e decisões
+```
+
+O cluster descreve condições e ocorrências relacionadas, não dois Outcomes pares nem um catálogo organizado como jornada:
+
+- `ECO-CAND-002` preserva uma condição permanente de liberdade real de acesso;
+- `ECO-CAND-004` descreve predominantemente episódio de realização e avaliação de valor;
+- acesso não garante escolha, experiência ou transformação;
+- experiência não prova causalidade, permanência ou efeito posterior;
+- a distinção entre oportunidade real e funcionamento realizado permanece rastreável sem promover ambos a Outcomes.
+
+## 29. Avaliação — ECO-CAND-007
+
+### Formulação avaliada
+
+Participantes de diferentes culturas, crenças, países e contextos conseguem participar do ecossistema com dignidade, acolhimento e acesso a valor essencial.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Pass | participação estruturalmente excludente ou indigna contradiz o propósito, a universalidade responsável e a legitimidade do ecossistema |
+| Decision | Pass | degradação persistente exigiria revisão estratégica de barreiras, elegibilidade, acessibilidade, representação, voz, proteção, capacidades e alocação de recursos |
+| Replacement | Pass | inclusão e dignidade permanecem materiais independentemente dos meios atuais |
+| Outcome Quality | Partial | a condição vivida é permanente e observável, mas a formulação combina diversidade, direitos, acolhimento, acesso e valor essencial, misturando Outcome, guardrails constitucionais e capacidades |
+
+### Evidências determinantes
+
+- `RP1-EV-052` relaciona dignidade, não discriminação, acessibilidade, autonomia e participação plena;
+- `RP1-EV-053` demonstra que disponibilidade técnica não comprova inclusão;
+- `RP1-EV-054` separa participação efetiva de informação, consulta simbólica e tokenismo;
+- cadastro, tradução, presença global ou representação nominal não comprovam participação inclusiva.
+
+### Disposição recomendada
+
+`Reformulate`.
+
+Preservar o núcleo como **participação inclusiva, digna e efetiva**, observável na remoção de barreiras materiais, capacidade de uso, respeito, voz e contestabilidade. Direitos, guardrails e capacidades de acessibilidade devem sustentar a condição sem serem acumulados em sua definição.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A reformulação não promete acesso universal imediato, elimina requisitos legítimos nem reduz inclusão a presença, cadastro ou representação.
+
+## 30. Avaliação — BUS-CAND-001
+
+### Formulação avaliada
+
+A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | aderência ao propósito é indispensável à legitimidade institucional, mas sua ausência constitui violação constitucional e de governança, não falta de um resultado empresarial autônomo |
+| Decision | Pass | sinais persistentes de mission drift exigiriam revisão estratégica, accountability, correção de autoridade, portfólio, investimentos e relações |
+| Replacement | Pass | a obrigação permanece válida depois da substituição dos produtos, estruturas e tecnologias |
+| Outcome Quality | Fail | a formulação descreve orientação superior, conformidade constitucional e dever permanente de governança; promovê-la a Outcome faria o propósito medir a aderência a si próprio |
+
+### Evidências determinantes
+
+- `RP1-EV-055` distingue propósito como razão de ser de sua declaração;
+- `RP1-EV-056` registra ambiguidade conceitual e impede confundir propósito com efeitos de desempenho;
+- `RP1-EV-057` posiciona prevenção de mission drift em governança, controle e accountability;
+- coerência declarada não comprova prática institucional.
+
+### Disposição recomendada
+
+`Reject`.
+
+Retirar aderência permanente ao propósito do futuro catálogo de Business Outcomes. Preservá-la como princípio constitucional, obrigação de governança e critério de admissibilidade para decisões, capacidades, produtos, relações e Outcomes.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A recomendação não relativiza o propósito nem reduz sua autoridade; impede apenas que um dever constitucional seja tratado como resultado empresarial.
+
+## 31. Avaliação — BUS-CAND-008
+
+### Formulação avaliada
+
+A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Partial | relações de parceria podem sustentar valor e escala, mas o propósito não depende de uma rede ou composição específica e pode exigir diferentes formas de provisão ao longo do tempo |
+| Decision | Pass | degradação persistente de valor, alinhamento, diversidade, autoridade ou risco exigiria revisão estratégica do portfólio, critérios de entrada, governança, controles, aprendizagem e saída |
+| Replacement | Pass | a necessidade de governar dependências e relações externas permanece válida independentemente dos parceiros, contratos, produtos e tecnologias atuais |
+| Outcome Quality | Fail | a formulação agrega qualificação, alinhamento, diversidade, reciprocidade, autoridade e risco em uma condição gerida; sua unidade depende de capacidades de alianças e governança relacional |
+
+### Evidências determinantes
+
+- `RP1-EV-058` demonstra que recursos e rendas relacionais podem residir entre organizações;
+- `RP1-EV-059` reclassifica gestão de alianças e aprendizagem acumulada como capacidade;
+- `RP1-EV-060` distingue riscos relacionais e de desempenho e combina confiança com controles;
+- quantidade, duração ou ausência de conflito não comprovam saúde, e encerramento pode ser legítimo.
+
+### Disposição recomendada
+
+`Reject`.
+
+Retirar saúde das relações de parceria do futuro catálogo de Business Outcomes. Preservar o conteúdo na arquitetura de capacidades, governança de parceiros e critérios de portfólio, relacionado à habilitação de valor, legitimidade e continuidade quando houver dependências externas materiais.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A recomendação não reduz a importância estratégica das parcerias nem exige internalização; corrige sua classificação e preserva decisões de entrada, evolução e saída.
+
+## 32. Resultado final da COEM
+
+| Elemento | Resultado |
+|---|---|
+| candidatos avaliados | 18 de 18 |
+| clusters avaliados | 6 de 6 |
+| recomendações `Reformulate` | 9 |
+| recomendações `Merge` | 3 |
+| recomendações `Reject` | 6 |
+| recomendações `Approve` | 0 |
+| recomendações `Defer` | 0 |
+| mudanças de estado | 0 |
+| código canônico criado | 0 |
+
+A ausência de recomendações `Approve` não invalida a matriz. Ela demonstra que o primeiro COR cumpriu a função de ampliar cobertura e expor sobreposições, enquanto a COEM corrigiu fronteiras entre Outcome, capacidade, experiência, princípio, guardrail e trajetória estratégica.
+
+As dezoito disposições permanecem propostas arquiteturais. A conclusão da cobertura não autoriza decisão em lote, alteração do COR, estabilização do AQS-O01 ou consolidação canônica.
+
+## 33. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| quatro testes obrigatórios aplicados | 13/13 — Pass |
+| quatro testes obrigatórios aplicados | 18/18 — Pass |
 | evidência externa rastreável | Pass |
 | contradições e limites preservados | Pass |
 | disposição singular por candidato | Pass |
 | distinção entre recomendação e decisão | Pass |
 | promoção automática bloqueada | Pass |
-| candidatos avaliados | 13/18 — In progress |
-| clusters avaliados | 5/6 — In progress |
+| candidatos avaliados | 18/18 — Complete |
+| clusters avaliados | 6/6 — Complete |
+| COEM concluída | Yes |
 | AQS-O01 iniciado | No |
 | Outcomes canônicos definidos | 0 |
 
-## 27. Próximo passo governado
+## 34. Próximo passo governado
 
-Submeter as treze disposições cumulativas à revisão humana. Se o padrão permanecer aceito, concluir a COEM pelo cluster `oportunidade e experiência` e pelas três sínteses individuais associadas, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
+Submeter as dezoito disposições cumulativas à decisão humana individual e rastreável. Somente após esse ato poderão ser alterados os estados do COR e iniciado o ajuste prático do AQS-O01. Nenhuma recomendação deve ser executada por inferência, contagem de testes ou conclusão da cobertura, e nenhum código canônico `EO-###` ou `BO-###` deve ser criado antes da consolidação governada.
