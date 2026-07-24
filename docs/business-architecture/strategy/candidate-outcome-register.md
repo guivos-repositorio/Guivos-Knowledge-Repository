@@ -35,7 +35,7 @@ O COR é uma superfície de descoberta governada. Ele preserva origem, formulaç
 ## 2. Estado formal
 
 ```text
-Register: initial discovery and external validation coverage complete
+Register: discovery, external validation and COEM coverage complete
 Candidates: 18
 Ecosystem candidates: 8
 Business candidates: 10
@@ -44,7 +44,7 @@ Canonical EO/BO codes: 0
 Under Validation: 18
 External validation: completed — batches 01 to 06
 External validation protocol: completed
-COEM: in progress — 13 of 18 candidates; 5 of 6 clusters
+COEM: completed — 18 of 18 candidates; 6 of 6 clusters
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
