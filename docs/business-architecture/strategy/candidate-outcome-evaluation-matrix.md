@@ -2,7 +2,7 @@
 id: BA-STR-002-COEM-001
 title: Candidate Outcome Evaluation Matrix
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-24
 parent: BA-STR-002
@@ -14,6 +14,7 @@ related:
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-003
+  - BA-STR-002-EOVB-004
   - RP-001-EVIDENCE
 normative: false
 execution_status: in-progress
@@ -39,9 +40,9 @@ A COEM não promove candidatos automaticamente. Uma disposição `Approve`, `Rej
 ```text
 Matrix: in progress
 Candidates in scope: 18
-Candidates evaluated: 9
-Clusters evaluated: 3 of 6
-Current batch: value and continuity
+Candidates evaluated: 10
+Clusters evaluated: 4 of 6
+Current batch: resilience
 Candidate state changes: 0
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
@@ -54,11 +55,11 @@ Operational authorization: no
 ### Incluído
 
 - definição da escala comum dos quatro testes obrigatórios;
-- preservação das seis avaliações dos clusters `agência e evolução` e `confiança`;
-- aplicação a `BUS-CAND-003`, `BUS-CAND-005` e `BUS-CAND-010`;
-- avaliação conjunta do cluster `valor e continuidade`;
-- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-027`;
-- continuidade do padrão que será aplicado aos outros nove candidatos.
+- preservação das nove avaliações dos três clusters anteriores;
+- aplicação a `BUS-CAND-006`, sem recontar `BUS-CAND-005`;
+- avaliação conjunta do cluster `resiliência`;
+- rastreabilidade cumulativa às evidências `RP1-EV-001` a `RP1-EV-036`;
+- continuidade do padrão que será aplicado aos outros oito candidatos.
 
 ### Excluído
 
@@ -119,7 +120,7 @@ Uma disposição não altera o status do COR neste incremento.
 | BUS-CAND-003 | Partial | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-004 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
 | BUS-CAND-005 | Pass | Pass | Pass | Partial | Reformulate | Pending human decision |
-| BUS-CAND-006 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
+| BUS-CAND-006 | Fail | Partial | Pass | Fail | Reject | Pending human decision |
 | BUS-CAND-007 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | BUS-CAND-008 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
 | BUS-CAND-009 | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Not evaluated | Under Validation |
@@ -498,21 +499,87 @@ O cluster descreve um ciclo de sustentação, não três Outcomes empresariais e
 | mudanças de estado | 0 |
 | código canônico criado | 0 |
 
-## 20. Gate do incremento
+## 20. Avaliação — BUS-CAND-006
+
+### Formulação avaliada
+
+A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade.
+
+### Aplicação dos testes
+
+| Teste | Resultado | Fundamentação |
+|---|---|---|
+| Essential | Fail | o propósito pode permanecer alcançável de forma sustentável sem crescimento em determinado período; expansão não é condição universal nem obrigatória |
+| Decision | Partial | degradação causada por uma expansão exigiria revisão estratégica, mas ausência ou desaceleração de crescimento não exige revisão por si mesma; a implicação decisória pertence aos limites e Outcomes que a expansão não pode degradar |
+| Replacement | Pass | a possibilidade de ampliar alcance e valor continua compreensível após substituição dos produtos e tecnologias atuais |
+| Outcome Quality | Fail | a formulação descreve trajetória estratégica opcional e agrega critérios de admissibilidade, capacidades e propriedades de continuidade, em vez de estado empresarial permanente e autônomo |
+
+### Evidências determinantes
+
+- `RP1-EV-032` sustenta a tensão entre exploração de novas possibilidades e uso das competências existentes;
+- `RP1-EV-033` reclassifica capacidades dinâmicas como processos de reconfiguração, sem garantia de resultado permanente;
+- `RP1-EV-034` e `RP1-EV-035` mostram que crescimento é condicionado por rentabilidade, retenção, ativos, financiamento, conhecimento e capacidade gerencial;
+- `RP1-EV-036` demonstra que a relação entre alto crescimento e sobrevivência é contingente;
+- `RP1-EV-028` a `RP1-EV-031` sustentam resiliência como propriedade e capacidade adaptativa, não como sinônimo de expansão.
+
+### Disposição recomendada
+
+`Reject`.
+
+Retirar crescimento do futuro catálogo de Business Outcomes. Preservar **expansão responsável** como trajetória estratégica opcional, sujeita a capacidade demonstrada, adicionalidade e critérios de não degradação. Incorporar resiliência e adaptação legítima à reformulação de `BUS-CAND-005` e às futuras capacidades sustentadoras.
+
+### Limite da recomendação
+
+O candidato permanece `Under Validation`. A recomendação não proíbe crescimento, não rejeita a importância de ampliar alcance e valor e não executa qualquer mudança de estado; ela rejeita apenas a formulação de crescimento como Outcome permanente.
+
+## 21. Avaliação conjunta do cluster resiliência
+
+### Síntese
+
+```text
+continuidade econômica sustentável
+→ exige capacidades de antecipação, resposta e adaptação
+→ preserva opções estratégicas e valor essencial
+→ expansão pode ser escolhida quando capacidade e contexto permitem
+→ novos riscos e dependências retornam ao gate de continuidade
+```
+
+O cluster descreve uma condição permanente e uma trajetória opcional, não dois Outcomes equivalentes:
+
+- `BUS-CAND-005` permanece recomendado para reformulação como eixo de continuidade econômica sustentável;
+- resiliência funciona como propriedade do eixo e como conjunto de capacidades sustentadoras;
+- `BUS-CAND-006` combina decisão de expansão, restrições de responsabilidade e propriedades de continuidade;
+- não crescimento deliberado pode ser estratégia legítima;
+- a avaliação conjunta não reabre nem reconta `BUS-CAND-005`.
+
+### Resultado cumulativo
+
+| Elemento | Resultado |
+|---|---|
+| candidatos avaliados | 10 de 18 |
+| clusters avaliados | 4 de 6 |
+| recomendações `Reformulate` | 7 |
+| recomendações `Merge` | 2 |
+| recomendações `Reject` | 1 |
+| recomendações `Approve` | 0 |
+| mudanças de estado | 0 |
+| código canônico criado | 0 |
+
+## 22. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| quatro testes obrigatórios aplicados | 9/9 — Pass |
+| quatro testes obrigatórios aplicados | 10/10 — Pass |
 | evidência externa rastreável | Pass |
 | contradições e limites preservados | Pass |
 | disposição singular por candidato | Pass |
 | distinção entre recomendação e decisão | Pass |
 | promoção automática bloqueada | Pass |
-| candidatos avaliados | 9/18 — In progress |
-| clusters avaliados | 3/6 — In progress |
+| candidatos avaliados | 10/18 — In progress |
+| clusters avaliados | 4/6 — In progress |
 | AQS-O01 iniciado | No |
 | Outcomes canônicos definidos | 0 |
 
-## 21. Próximo passo governado
+## 23. Próximo passo governado
 
-Submeter as nove disposições cumulativas à revisão humana. Se o padrão permanecer aceito, continuar a COEM pelo próximo cluster governado, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
+Submeter as dez disposições cumulativas à revisão humana. Se o padrão permanecer aceito, continuar a COEM pelo próximo cluster governado, sem executar automaticamente nenhuma recomendação, alterar o COR ou criar Outcomes canônicos.
