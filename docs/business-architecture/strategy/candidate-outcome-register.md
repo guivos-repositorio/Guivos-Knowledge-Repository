@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-23
 parent: BA-STR-002
@@ -16,6 +16,7 @@ related:
   - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-003
   - BA-STR-002-EOVB-004
+  - BA-STR-002-EOVB-005
   - GEM-CLOSURE-REVIEW-001
   - M7.0
 normative: false
@@ -38,8 +39,8 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 10
-External validation: in progress — batches 01 to 04 completed
+Under Validation: 13
+External validation: in progress — batches 01 to 05 completed
 External validation protocol: ready
 COEM: not started
 AQS-O01 practical validation: not started
@@ -183,7 +184,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes. |
 | Origem | BA-FND-001; BA-STR-001; GEB-P01-F01; GEB-P01-F06 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Não se limita à personalização algorítmica nem a um produto. |
 | Questão de validação | Relevância é Outcome empresarial ou atributo de qualidade da geração de valor? |
 
@@ -238,7 +239,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor. |
 | Origem | GEB-P01-F05; GEB-P01-F06; BA-STR-001; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Coleta de dados, analytics e IA são meios e não definem o candidato. |
 | Questão de validação | Aprendizado institucional é Outcome empresarial ou capacidade de negócio? |
 
@@ -260,7 +261,7 @@ Os identificadores deste documento são estáveis para rastreabilidade do proces
 | Definição provisória | A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos. |
 | Origem | GEB-P01-F02; GEB-P01-F04; GEB-P01-F06; BA-FND-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo em diferentes contextos |
-| Status | Candidate |
+| Status | Under Validation |
 | Observações | Expansão internacional, presença física e tradução não comprovam esta condição. |
 | Questão de validação | A condição orienta estratégia permanente ou deve permanecer princípio arquitetural de escalabilidade? |
 
@@ -309,6 +310,8 @@ O cluster `valor e continuidade` possui terceiro lote externo concluído em [BA-
 
 O cluster `resiliência` possui quarto lote externo concluído em [BA-STR-002-EOVB-004](outcome-validation-batch-04-resilience.md). A análise preserva continuidade como eixo provável, trata resiliência como propriedade e meta-capacidade sustentadora e enfraquece crescimento como Outcome independente, sem fundir os candidatos.
 
+O cluster `adaptação` possui quinto lote externo concluído em [BA-STR-002-EOVB-005](outcome-validation-batch-05-adaptation.md). A análise distingue relevância como qualidade emergente, aprendizagem como capacidade multinível e adequação contextual como princípio e decisão de fit, enfraquecendo a independência dos três candidatos como Outcomes.
+
 ## 9. Cobertura das origens internas
 
 | Origem | Cobertura no COR |
@@ -325,7 +328,7 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 Antes de qualquer COEM deverão existir:
 
-1. continuidade da execução do `BA-STR-002-EOVP-001` para os oito candidatos e dois clusters ainda não cobertos;
+1. continuidade da execução do `BA-STR-002-EOVP-001` para os cinco candidatos e o cluster ainda não cobertos;
 2. pesquisa direta sobre as sobreposições restantes e omissões materiais;
 3. confirmação, ampliação, contradição ou ausência de evidência por candidato;
 4. revisão de linguagem para evitar etapas de jornada, capacidades e guardrails disfarçados de Outcomes;
@@ -343,10 +346,10 @@ Antes de qualquer COEM deverão existir:
 | dúvidas e sobreposições preservadas | Pass |
 | promoção automática bloqueada | Pass |
 | protocolo de validação externa | Ready |
-| validação externa realizada | In progress — 10/18 candidatos e 4/6 clusters |
+| validação externa realizada | In progress — 13/18 candidatos e 5/6 clusters |
 | COEM realizada | Not started |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Continuar a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md) em lotes governados. Os quatro lotes concluídos estão registrados em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md), [BA-STR-002-EOVB-002](outcome-validation-batch-02-trust.md), [BA-STR-002-EOVB-003](outcome-validation-batch-03-value-continuity.md) e [BA-STR-002-EOVB-004](outcome-validation-batch-04-resilience.md); nenhuma promoção ocorrerá antes da cobertura integral, do gate de validação e da COEM.
+Continuar a execução do [External Outcome Validation Protocol](external-outcome-validation-protocol.md) em lotes governados. Os cinco lotes concluídos estão registrados em [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md), [BA-STR-002-EOVB-002](outcome-validation-batch-02-trust.md), [BA-STR-002-EOVB-003](outcome-validation-batch-03-value-continuity.md), [BA-STR-002-EOVB-004](outcome-validation-batch-04-resilience.md) e [BA-STR-002-EOVB-005](outcome-validation-batch-05-adaptation.md); nenhuma promoção ocorrerá antes da cobertura integral, do gate de validação e da COEM.

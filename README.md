@@ -5,7 +5,7 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 ## Status atual
 
 - **Era vigente:** GE-2 — Knowledge
-- **Marco vigente:** M7.0.5 — Fourth External Outcome Validation Batch Completed
+- **Marco vigente:** M7.0.6 — Fifth External Outcome Validation Batch Completed
 - **Frente estratégica ativa:** A2-R03 — Business Architecture Review
 - **Especificação vigente:** PAS-001 — Guivos Journey 1.0.0
 - **Capacidades concluídas:** 01 — Captura de Contexto, 02 — Contexto Vivo, 03 — Objetivos, 04 — Eventos de Vida, 05 — Próximos Passos, 06 — Oportunidades Ativas, 07 — Intervenções Contextuais, 08 — Experiências e 09 — Evolução Contínua
@@ -19,8 +19,8 @@ O Guivos Knowledge Repository representa a Guivos em seu estado de maturidade in
 - **A2-R02:** em espera operacional
 - **Guivos Economic Model:** arquitetura documental inicial concluída em GEM-001 a GEM-010; parâmetros, validações especializadas e operação pendentes
 - **Market Validation:** trilha operacional de evidência preservada
-- **BA-STR-002:** checkpoint 0.11.0; validação externa em execução; 10 de 18 candidatos e 4 de 6 clusters cobertos; nenhum Outcome canônico definido
-- **Próximo incremento candidato:** quinto lote governado do External Outcome Validation Protocol, sujeito a aprovação separada
+- **BA-STR-002:** checkpoint 0.12.0; validação externa em execução; 13 de 18 candidatos e 5 de 6 clusters cobertos; nenhum Outcome canônico definido
+- **Próximo incremento candidato:** sexto lote governado do External Outcome Validation Protocol, sujeito a aprovação separada
 
 ## Capacidade 01 — Captura de Contexto
 
