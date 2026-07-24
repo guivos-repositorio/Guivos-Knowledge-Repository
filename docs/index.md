@@ -5,10 +5,10 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 ## Estado atual
 
 - GE-2 — Knowledge ativa;
-- marco `M7.1.1 — Trust Cluster COEM Completed` concluído documentariamente;
+- marco `M7.1.2 — Value and Continuity Cluster COEM Completed` concluído documentariamente;
 - frente `A2-R03 — Business Architecture Review` ativa;
-- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.15.0`;
-- `BA-STR-002-COR-001 0.10.0` com 18 candidatos em `Under Validation`;
+- `BA-STR-002 — Business Outcomes` no checkpoint `Draft 0.16.0`;
+- `BA-STR-002-COR-001 0.11.0` com 18 candidatos em `Under Validation`;
 - `BA-STR-002-EOVP-001 0.7.0` com execução concluída e gate `Ready for COEM`;
 - `BA-STR-002-EOVB-001 0.1.0` com nove evidências, três sínteses individuais e o cluster agência e evolução analisado;
 - `BA-STR-002-EOVB-002 0.1.0` com nove evidências, três sínteses individuais e o cluster confiança analisado;
@@ -16,7 +16,7 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 - `BA-STR-002-EOVB-004 0.1.0` com nove evidências, duas sínteses individuais e o cluster resiliência analisado;
 - `BA-STR-002-EOVB-005 0.1.0` com nove evidências, três sínteses individuais e o cluster adaptação analisado;
 - `BA-STR-002-EOVB-006 0.1.0` com 15 evidências, cinco sínteses individuais e o cluster oportunidade e experiência analisado;
-- `BA-STR-002-COEM-001 0.2.0` em execução, com 6 de 18 candidatos e 2 de 6 clusters avaliados;
+- `BA-STR-002-COEM-001 0.3.0` em execução, com 9 de 18 candidatos e 3 de 6 clusters avaliados;
 - nenhum Outcome aprovado ou canônico;
 - Product Engineering pausado antes do W0-01;
 - Guivos Economic Model encerrado documentariamente em GEM-001 a GEM-010;
@@ -45,9 +45,9 @@ O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Missão atual
 
-Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR e a validação externa estão concluídos; a COEM avaliou os clusters agência e evolução e confiança.
+Conduzir a **A2-R03 — Business Architecture Review** pela conclusão governada do `BA-STR-002 — Business Outcomes`. O COR e a validação externa estão concluídos; a COEM avaliou os clusters agência e evolução, confiança e valor e continuidade.
 
-Os 18 registros do COR permanecem em `Under Validation`. A matriz acumula cinco recomendações `Reformulate` e uma `Merge`, sem executar nenhuma disposição. AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
+Os 18 registros do COR permanecem em `Under Validation`. A matriz acumula sete recomendações `Reformulate` e duas `Merge`, sem executar nenhuma disposição. AQS-O01, catálogos canônicos e matriz de sustentação continuam pendentes. Product Engineering, W0-01, implementação e produção permanecem não autorizados.
 
 ## Acesso rápido
 

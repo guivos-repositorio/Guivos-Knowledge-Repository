@@ -2,7 +2,7 @@
 id: BA-STR-002
 title: Business Outcomes
 status: draft
-version: 0.15.0
+version: 0.16.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-24
 depends_on:
@@ -21,7 +21,7 @@ related:
   - BA-STR-002-EOVB-006
   - BA-STR-002-COEM-001
   - GEM-CLOSURE-REVIEW-001
-checkpoint: trust-cluster-coem-completed
+checkpoint: value-continuity-cluster-coem-completed
 ---
 
 # BA-STR-002 — Business Outcomes
@@ -30,7 +30,7 @@ checkpoint: trust-cluster-coem-completed
 
 Este documento registra o checkpoint conceitual, metodológico e de execução cumulativa da COEM do BA-STR-002.
 
-O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) concluiu sua execução governada com 60 evidências. A [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) avaliou os clusters agência e evolução e confiança: seis candidatos foram avaliados, com cinco disposições `Reformulate` e uma `Merge` recomendadas. Os 18 candidatos permanecem em `Under Validation`; nenhuma disposição foi executada e nenhum Outcome foi promovido.
+O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) concluiu sua execução governada com 60 evidências. A [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) avaliou os clusters agência e evolução, confiança e valor e continuidade: nove candidatos foram avaliados, com sete disposições `Reformulate` e duas `Merge` recomendadas. Os 18 candidatos permanecem em `Under Validation`; nenhuma disposição foi executada e nenhum Outcome foi promovido.
 
 ## Pergunta arquitetural
 
@@ -347,7 +347,7 @@ O ativo somente poderá ser promovido a `validated` quando:
 | Candidate Outcome Register concluído | atendido no primeiro passe interno |
 | protocolo de validação externa | atendido; execução concluída |
 | validação externa registrada | atendido; 18 candidatos, seis clusters e 60 evidências |
-| COEM concluída | em execução; 6/18 candidatos e 2/6 clusters |
+| COEM concluída | em execução; 9/18 candidatos e 3/6 clusters |
 | AQS-O01 testado e ajustado | pendente |
 | catálogo canônico de Ecosystem Outcomes | pendente |
 | catálogo canônico de Business Outcomes | pendente |
@@ -356,4 +356,4 @@ O ativo somente poderá ser promovido a `validated` quando:
 
 ## Próxima etapa
 
-Submeter as seis disposições cumulativas à revisão humana e, mediante aprovação separada, continuar a **Candidate Outcome Evaluation Matrix** pelo próximo cluster governado. Nenhum candidato receberá código canônico `EO-###` ou `BO-###` antes da conclusão da matriz, da decisão formal e da consolidação governada.
+Submeter as nove disposições cumulativas à revisão humana e, mediante aprovação separada, continuar a **Candidate Outcome Evaluation Matrix** pelo próximo cluster governado. Nenhum candidato receberá código canônico `EO-###` ou `BO-###` antes da conclusão da matriz, da decisão formal e da consolidação governada.
