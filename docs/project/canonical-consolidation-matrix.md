@@ -48,15 +48,32 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | A2-R03 | Manter ativa | em execução |
 | BA-STR-002 | Manter ativo | Business Outcomes como prioridade atual |
 | validação externa e COEM | Manter concluídas | 18/18 candidatos e 6/6 clusters |
-| `COD-001` a `COD-013` | Manter | decisões humanas registradas e rastreáveis |
+| `COD-001` | Manter | `Reformulate` aceito para `ECO-CAND-001` |
+| `COD-002` | Manter | `Reformulate` aceito para `ECO-CAND-003` |
+| `COD-003` | Manter | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
+| `COD-004` | Manter | `Reformulate` aceito para `ECO-CAND-002` |
+| `COD-005` | Manter | `Reject` aceito para `ECO-CAND-004` |
+| `COD-006` | Manter | `Reformulate` aceito para `ECO-CAND-006` |
+| `COD-007` | Manter | `Reformulate` aceito para `ECO-CAND-007` |
+| `COD-008` | Manter | `Reformulate` aceito para `ECO-CAND-008` |
+| `COD-009` | Manter | `Reject` aceito para `BUS-CAND-001` |
+| `COD-010` | Manter | `Merge into BUS-CAND-003` aceito para `BUS-CAND-002` |
+| `COD-011` | Manter | `Reformulate` aceito para `BUS-CAND-003` |
+| `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
+| `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
 | CODR | Manter ativo | 13 de 18 decisões; 1 submissão aberta |
 | COR | Refinar | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
+| `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
+| `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
 | `ECO-CAND-005` | Unificar em `ECO-CAND-003` | `Merged`; formulação e evidências preservadas |
+| `ECO-CAND-006` | Refinar e manter `Under Validation` | formulação de saúde relacional registrada; nova COEM pendente |
+| `ECO-CAND-007` | Refinar e manter `Under Validation` | formulação de participação inclusiva, digna e efetiva registrada; nova COEM pendente |
+| `ECO-CAND-008` | Refinar e manter `Under Validation` | formulação de participação protegida, justa e contestável registrada; nova COEM pendente |
 | `BUS-CAND-001` | Remover do catálogo de Business Outcomes | `Rejected`; conteúdo preservado como autoridade constitucional e obrigação de governança |
 | `BUS-CAND-002` | Unificar em `BUS-CAND-003` | `Merged`; formulação, evidências e rastreabilidade preservadas |
 | `BUS-CAND-003` | Refinar e manter `Under Validation` | `COD-011`; formulação revisada registrada; nova COEM pendente |
-| `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada |
+| `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
 | `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
 | `BUS-CAND-006` | Pendente de decisão humana | `BA-STR-002-COD-SUB-014`; recomendação `Reject` |
 | `BUS-CAND-010` | Pendente | decisão individual e eventual fusão não antecipadas |
@@ -77,17 +94,19 @@ A recomendação `Reject` foi submetida sem decisão humana inferida.
 
 ### Destino arquitetural proposto
 
-- retirar crescimento do futuro catálogo de Business Outcomes;
-- preservar expansão responsável como trajetória estratégica opcional;
-- condicionar expansão à capacidade demonstrada, adicionalidade e critérios de não degradação;
-- preservar resiliência e adaptação legítima como propriedades de continuidade ou capacidades sustentadoras;
-- manter formulação, evidências e rastreabilidade;
-- não proibir crescimento nem rejeitar a importância de ampliar alcance e valor;
-- manter `BUS-CAND-006` em `Under Validation` até manifestação humana;
-- não criar `COD-014`;
-- não alterar o COR;
-- não criar código canônico;
-- não iniciar AQS-O01, Business Capabilities ou Product Engineering.
+A submissão:
+
+- propõe retirar crescimento do futuro catálogo de Business Outcomes;
+- preserva expansão responsável como trajetória estratégica opcional;
+- condiciona expansão à capacidade demonstrada, adicionalidade e critérios de não degradação;
+- preserva resiliência e adaptação legítima como propriedades de continuidade ou capacidades sustentadoras;
+- preserva formulação original, evidências e rastreabilidade;
+- não proíbe crescimento nem rejeita a importância de ampliar alcance e valor;
+- mantém `BUS-CAND-006` em `Under Validation`;
+- não cria `COD-014`;
+- não altera o COR;
+- não cria código canônico;
+- não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
 ## 5. Addendum vigente
 
