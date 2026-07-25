@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-004
-title: Human Decision Submission — ECO-CAND-002
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — ECO-CAND-002
+status: decided
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -14,17 +14,18 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - COD-003
-  - M7.5.1
+  - COD-004
+  - M7.6
 normative: false
 ---
 
-# Human Decision Submission — ECO-CAND-002
+# Human Decision Resolution — ECO-CAND-002
 
 ## 1. Finalidade
 
-Submeter `ECO-CAND-002 — Acesso a possibilidades relevantes` à quarta decisão humana individual do Candidate Outcome Decision Register.
+Registrar a quarta decisão humana individual do Candidate Outcome Decision Register para `ECO-CAND-002 — Acesso a possibilidades relevantes`.
 
-Este documento organiza a recomendação e as alternativas. Ele **não registra `COD-004`**, não altera o COR, não aprova o candidato e não cria Outcome canônico antes da manifestação explícita do Fundador da Guivos.
+Este documento preserva a formulação original, a recomendação da COEM, a manifestação do Fundador e os limites do ato. A decisão não aprova nem canonicaliza o candidato.
 
 ## 2. Formulação originalmente avaliada
 
@@ -40,70 +41,64 @@ Este documento organiza a recomendação e as alternativas. Ele **não registra 
 | Outcome Quality | Partial | a formulação sugere descoberta nominal e não explicita restrições, liberdade real, capacidade de comparação e fatores de conversão |
 | Disposição recomendada | `Reformulate` | preservar acesso real a possibilidades legítimas e manejáveis |
 
-## 4. Fundamentação consolidada
+## 4. Manifestação humana
 
-O núcleo é material, permanente, ecossistêmico e independente dos meios atuais. Entretanto, presença ou exposição a opções não comprova acesso real.
+| Campo | Registro |
+|---|---|
+| Decisão | `COD-004` |
+| Candidato | `ECO-CAND-002` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade decisória | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-A reformulação é recomendada porque:
+## 5. Fundamentação consolidada
 
-1. oportunidades reais devem ser distinguidas de funcionamentos ou experiências efetivamente realizados;
-2. o escopo de possibilidades não equivale ao ato de escolher;
-3. restrições e fatores de conversão podem tornar uma opção nominalmente disponível impraticável;
-4. mais opções podem aumentar complexidade, reduzir escolha e degradar valor percebido;
-5. acesso não garante escolha, experiência, benefício ou transformação posterior;
-6. volume de ofertas, exposição ou recomendação não pode operar como prova suficiente.
+A reformulação foi aceita porque acesso real não equivale à mera exposição, descoberta ou disponibilidade nominal de alternativas.
 
-## 5. Formulação candidata proposta
+A nova formulação deve preservar:
+
+1. distinção entre oportunidade real e experiência efetivamente realizada;
+2. restrições e fatores de conversão que tornam opções praticáveis ou impraticáveis;
+3. capacidade de compreender, comparar e escolher;
+4. liberdade substantiva, sem promessa de acesso irrestrito;
+5. bloqueio do volume de ofertas como evidência suficiente de acesso ou valor;
+6. independência de catálogo, recomendação, marketplace, canal ou tecnologia.
+
+## 6. Formulação candidata revisada
 
 **Nome provisório revisado:** Acesso real a possibilidades legítimas e manejáveis.
 
 > Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
 
-A formulação deverá retornar aos quatro testes da COEM antes de qualquer recomendação `Approve`.
+## 7. Efeitos autorizados
 
-## 6. Alternativas submetidas à decisão humana
-
-### Alternativa A — Aceitar `Reformulate` — recomendada
-
-Autoriza, em incremento posterior de registro:
-
-- criar `COD-004`;
-- aceitar formalmente a disposição recomendada;
+- aceitar formalmente a disposição `Reformulate`;
 - preservar a formulação original para rastreabilidade;
-- registrar a formulação revisada como candidata;
+- registrar a formulação revisada como versão candidata;
 - manter `ECO-CAND-002` em `Under Validation`;
 - reaplicar os quatro testes da COEM antes de qualquer aprovação.
 
-Não autoriza código canônico, AQS-O01, Business Capabilities ou Product Engineering.
+## 8. Efeitos não autorizados
 
-### Alternativa B — Rejeitar `Reformulate`
+- promover `ECO-CAND-002` a `Approved`;
+- criar código canônico `EO-###`;
+- tratar quantidade de ofertas, exposição ou recomendação como prova suficiente;
+- prometer escolha, experiência, benefício ou transformação posterior;
+- iniciar AQS-O01, Business Capabilities ou Product Engineering.
 
-Exige fundamentação sobre a manutenção da formulação original ou outra disposição para o candidato. A rejeição da recomendação não aprova automaticamente `ECO-CAND-002`.
+## 9. Gate de reentrada na COEM
 
-### Alternativa C — Devolver para nova análise
+A formulação revisada somente poderá receber nova disposição após:
 
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
+1. reaplicação explícita dos quatro testes;
+2. definição de sinais de acesso real que não dependam de volume de opções;
+3. verificação de restrições e fatores de conversão para Pessoas, Organizações e Coletivos;
+4. separação entre acesso, escolha, experiência e valor realizado;
+5. confirmação de independência de produto, canal e tecnologia.
 
-- fatores de conversão e restrições reais;
-- fronteira entre acesso, escolha e experiência;
-- observabilidade sem métricas de volume;
-- adequação da formulação para Pessoas, Organizações e Coletivos.
+## 10. Próximo passo governado
 
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-004` não existe;
-- decisões humanas permanecem em `3 de 18`;
-- `ECO-CAND-002` permanece `Under Validation`;
-- o COR permanece inalterado;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Preparar e submeter `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual sobre a recomendação `Reject`.
