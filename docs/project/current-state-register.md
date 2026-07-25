@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.21.0
+version: 1.23.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -14,12 +14,12 @@ related:
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-010
+  - BA-STR-002-COD-SUB-011
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - COD-010
-  - ROADMAP-11.68.0
-  - M7.12
+  - COD-011
+  - ROADMAP-11.70.0
+  - M7.13
 normative: true
 ---
 
@@ -34,13 +34,13 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.12 — Tenth Human Outcome Decision Recorded` |
+| Marco vigente | `M7.13 — Eleventh Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.22.0`; 14 `Under Validation`, 2 `Merged` e 2 `Rejected` |
-| CODR | `0.19.0`; 10 de 18 decisões humanas; 0 submissões aguardando resposta |
+| COR | `0.23.0`; 14 `Under Validation`, 2 `Merged` e 2 `Rejected` |
+| CODR | `0.21.0`; 11 de 18 decisões humanas; 0 submissões aguardando resposta |
 | `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
 | `COD-003` | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
@@ -51,9 +51,9 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | `COD-008` | `Reformulate` aceito para `ECO-CAND-008` |
 | `COD-009` | `Reject` aceito para `BUS-CAND-001` |
 | `COD-010` | `Merge into BUS-CAND-003` aceito para `BUS-CAND-002` |
-| `BUS-CAND-002` | `Merged` em `BUS-CAND-003`; formulação e evidências preservadas |
-| `BUS-CAND-003` | `Under Validation`; formulação combinada registrada e recomendação própria `Reformulate` pendente |
-| Próximo candidato | `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo` |
+| `COD-011` | `Reformulate` aceito para `BUS-CAND-003` |
+| `BUS-CAND-003` | `Under Validation`; formulação revisada registrada; nova COEM pendente |
+| Próximo candidato | `BUS-CAND-004 — Confiança e legitimidade institucional` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -64,19 +64,19 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Resultado de COD-010
+## 3. Resultado de COD-011
 
-O Fundador aceitou `Merge into BUS-CAND-003` para `BUS-CAND-002 — Relevância contínua das respostas`.
+O Fundador aceitou `Reformulate` para `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo`.
 
-A formulação original permanece preservada:
+Formulação originalmente avaliada:
 
-> As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes.
+> A Guivos entrega valor legítimo com qualidade, segurança e continuidade suficientes para sustentar experiências relevantes.
 
-`BUS-CAND-002` foi movido para `Merged`. A relevância contextual foi incorporada à formulação candidata do alvo:
+Formulação candidata revisada:
 
 > A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
 
-`BUS-CAND-003` permanece `Under Validation`, conserva sua recomendação própria `Reformulate` e deverá retornar aos quatro testes da COEM.
+`BUS-CAND-003` permanece `Under Validation`. A formulação incorpora a relevância contextual proveniente de `COD-010` e deverá retornar aos quatro testes da COEM.
 
 ## 4. Sequência oficial
 
@@ -85,7 +85,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 10 de 18
+→ decisões humanas do BA-STR-002 — 11 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -96,7 +96,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Preparar e submeter `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo` à décima primeira decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-004 — Confiança e legitimidade institucional` à décima segunda decisão humana individual sobre a recomendação `Reformulate`.
 
 Nenhuma decisão posterior será registrada automaticamente.
 
@@ -121,7 +121,7 @@ O estado atual não autoriza:
 
 - promover `BUS-CAND-003` ou qualquer candidato a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
-- tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente de relevância;
+- tratar personalização, satisfação pontual, atividade, disponibilidade técnica ou velocidade de resposta como prova suficiente de valor legítimo;
 - atribuir à Guivos controle unilateral sobre valor vivido;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;

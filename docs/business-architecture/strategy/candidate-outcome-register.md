@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.22.0
+version: 0.23.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -28,8 +28,9 @@ related:
   - COD-008
   - COD-009
   - COD-010
+  - COD-011
   - GEM-CLOSURE-REVIEW-001
-  - M7.12
+  - M7.13
 normative: false
 ---
 
@@ -55,7 +56,7 @@ Merged: 2
 Rejected: 2
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 10 of 18
+Human decisions: 11 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -221,10 +222,10 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | Origem | BA-STR-001; GEM-001; GEM-008; GEM-CLOSURE-REVIEW-001; BUS-CAND-002 |
 | Participantes afetados | Pessoa, Organização, Coletivo e parceiros |
 | Status | Under Validation |
-| Decisão relacionada | `COD-010 — BUS-CAND-002 Merged into BUS-CAND-003` |
-| Recomendação própria da COEM | `Reformulate` — decisão humana pendente |
-| Observações | Relevância contextual foi incorporada sem transferir à Guivos controle unilateral sobre valor vivido. Qualidade, segurança e continuidade permanecem propriedades verificáveis e capacidades sustentadoras. |
-| Questão de validação | A formulação combinada possui unidade, observabilidade e implicação estratégica próprias sem acumular propriedades de entrega, capacidades e valor realizado por terceiros como sub-Outcomes? |
+| Decisões relacionadas | `COD-010 — BUS-CAND-002 Merged into BUS-CAND-003`; `COD-011 — Aceitar Reformulate` |
+| Recomendação própria da COEM | `Reformulate` — aceita por `COD-011` |
+| Observações | A formulação revisada preserva habilitação empresarial, consistência e relevância contextual sem transferir à Guivos controle unilateral sobre valor vivido. Qualidade, segurança, continuidade, inteligência e adaptação permanecem propriedades verificáveis ou capacidades sustentadoras. |
+| Questão de validação | A formulação revisada possui unidade, observabilidade e implicação estratégica próprias sem acumular propriedades de entrega, capacidades e valor realizado por terceiros como sub-Outcomes? |
 
 ### BUS-CAND-004 — Confiança e legitimidade institucional
 
@@ -307,10 +308,10 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Candidate Ecosystem Outcome | Business candidates ou autoridades potencialmente sustentadoras |
 |---|---|
-| ECO-CAND-001 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-003 — inclui relevância herdada de BUS-CAND-002; BUS-CAND-007 |
+| ECO-CAND-001 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-003; BUS-CAND-007 |
 | ECO-CAND-002 | BUS-CAND-003, BUS-CAND-008 |
 | ECO-CAND-003 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-003; BUS-CAND-004; BUS-CAND-007; BUS-CAND-010 |
-| ECO-CAND-004 — Rejected | relação histórica preservada: BUS-CAND-003 — inclui relevância herdada de BUS-CAND-002; BUS-CAND-005 |
+| ECO-CAND-004 — Rejected | relação histórica preservada: BUS-CAND-003; BUS-CAND-005 |
 | ECO-CAND-005 — Merged into ECO-CAND-003 | relação histórica preservada: BUS-CAND-003, BUS-CAND-007, BUS-CAND-010 |
 | ECO-CAND-006 | BUS-CAND-004, BUS-CAND-008 |
 | ECO-CAND-007 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-005; BUS-CAND-009; BUS-CAND-010 |
@@ -325,7 +326,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | confiança | ECO-CAND-006, 008 e BUS-CAND-004 | ECO-CAND-006 e ECO-CAND-008 reformulados; BUS-CAND-004 pendente |
 | inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | ECO-CAND-007 e ECO-CAND-008 reformulados; fronteiras exigem nova COEM |
 | propósito | BUS-CAND-001 | rejeitado como Outcome por `COD-009`; autoridade constitucional e obrigação de governança preservadas |
-| valor e continuidade | BUS-CAND-003, 005 e 010 | BUS-CAND-003 incorpora relevância contextual por `COD-010`; decisões individuais permanecem pendentes |
+| valor e continuidade | BUS-CAND-003, 005 e 010 | BUS-CAND-003 reformulado por `COD-011`; BUS-CAND-005 e BUS-CAND-010 pendentes |
 | adaptação | BUS-CAND-002, 007 e 009 | BUS-CAND-002 fundido em BUS-CAND-003; BUS-CAND-007 e BUS-CAND-009 pendentes |
 | resiliência | BUS-CAND-005 e 006 | decisão humana pendente |
 
@@ -333,7 +334,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as oito disposições restantes;
+1. decisão humana individual para as sete disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -342,17 +343,15 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-010` registrado | Pass |
-| formulação e evidências de `BUS-CAND-002` preservadas | Pass |
-| `BUS-CAND-002` movido para `Merged` | Pass |
-| formulação combinada de `BUS-CAND-003` registrada | Pass |
-| alvo mantido em `Under Validation` | Pass |
-| recomendação própria `Reformulate` preservada | Pass |
-| distribuição 14/2/2 registrada | Pass |
+| `COD-011` registrado | Pass |
+| formulação e evidências de `BUS-CAND-003` preservadas | Pass |
+| formulação revisada registrada | Pass |
+| candidato mantido em `Under Validation` | Pass |
+| distribuição 14/2/2 preservada | Pass |
 | nova COEM exigida | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 11. Próximo passo governado
 
-Preparar e submeter `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo` à décima primeira decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-004 — Confiança e legitimidade institucional` à décima segunda decisão humana individual sobre a recomendação `Reformulate`.
