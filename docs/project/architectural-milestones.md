@@ -32,7 +32,31 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M5–M5.18 | Completed | arquitetura funcional e publicação do Journey |
 | M6.0–M6.10 | Completed | desenvolvimento e fechamento documental do Economic Model |
 | M7.0–M7.1.5 | Completed | COR, validação externa e COEM concluídos |
-| M7.2–M7.15 | Completed | `COD-001` a `COD-013` registrados, com auditoria, remediação e retomada governada preservadas |
+| M7.2 | Completed | `COD-001` registrado |
+| M7.3–M7.3.5 | Completed | auditoria, remediação, validação e retomada governada |
+| M7.4 | Completed | `COD-002` registrado |
+| M7.4.1 | Completed | terceira decisão submetida |
+| M7.5 | Completed | `COD-003` registrado |
+| M7.5.1 | Completed | quarta decisão submetida |
+| M7.6 | Completed | `COD-004` registrado |
+| M7.6.1 | Completed | quinta decisão submetida |
+| M7.7 | Completed | `COD-005` registrado |
+| M7.7.1 | Completed | sexta decisão submetida |
+| M7.8 | Completed | `COD-006` registrado |
+| M7.8.1 | Completed | sétima decisão submetida |
+| M7.9 | Completed | `COD-007` registrado |
+| M7.9.1 | Completed | oitava decisão submetida |
+| M7.10 | Completed | `COD-008` registrado |
+| M7.10.1 | Completed | nona decisão submetida |
+| M7.11 | Completed | `COD-009` registrado |
+| M7.11.1 | Completed | décima decisão submetida |
+| M7.12 | Completed | `COD-010` registrado |
+| M7.12.1 | Completed | décima primeira decisão submetida |
+| M7.13 | Completed | `COD-011` registrado |
+| M7.13.1 | Completed | décima segunda decisão submetida |
+| M7.14 | Completed | `COD-012` registrado |
+| M7.14.1 | Completed | décima terceira decisão submetida |
+| M7.15 | Completed | `COD-013` registrado para `BUS-CAND-005` |
 | M7.15.1 | Completed neste incremento | décima quarta decisão submetida para `BUS-CAND-006` |
 
 ## 3. Marco vigente
