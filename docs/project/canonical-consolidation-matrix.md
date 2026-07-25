@@ -2,18 +2,18 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.71.0
+version: 1.72.0
 owner: Guivos
-last_updated: 2026-07-24
+last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-002
+  - GKR-CANON-MATRIX-COD-003-SUBMISSION
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-002
+  - BA-STR-002-COD-SUB-003
   - COD-002
-  - M7.4
+  - M7.4.1
 normative: false
 ---
 
@@ -50,9 +50,10 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | COR, validação externa e COEM | Manter concluídos | 18/18 candidatos e 6/6 clusters |
 | `COD-001` | Manter | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | Manter | `Reformulate` aceito para `ECO-CAND-003` |
-| CODR | Manter ativo | 2 de 18 decisões registradas |
+| CODR | Manter ativo | 2 de 18 decisões; 1 submissão aguardando resposta |
 | `ECO-CAND-003` | Manter `Under Validation` | Agência efetiva e situada pendente de nova COEM |
-| `ECO-CAND-005` | Pendente | recomendação `Merge into ECO-CAND-003`; decisão humana própria necessária |
+| `ECO-CAND-005` | Pendente | submetido sobre `Merge into ECO-CAND-003` |
+| `COD-003` | Pendente | não existe antes da manifestação humana |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
 | produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
@@ -60,20 +61,32 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado da decisão COD-002
+## 4. Resultado de COD-002 preservado
 
-A alternativa `A — Aceitar Reformulate` foi consolidada como decisão humana.
+A alternativa `A — Aceitar Reformulate` permanece consolidada para `ECO-CAND-003`.
 
-A formulação candidata registrada é:
+A formulação candidata vigente continua:
 
 > O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
 
-A decisão não aprova o candidato, não cria código canônico e não executa a fusão de `ECO-CAND-005`.
+## 5. Submissão corrente
 
-## 5. Addendum vigente
+`BA-STR-002-COD-SUB-003` oferece ao Fundador:
 
-O addendum vigente é `Canonical Consolidation Matrix 1.71.0 — COD-002`.
+```text
+A — Aceitar Merge into ECO-CAND-003
+B — Rejeitar a fusão, com fundamentação
+C — Devolver para nova análise
+```
 
-## 6. Próximo ato
+A alternativa A é recomendada. Ela propõe preservar `ECO-CAND-005` como registro rastreável, incorporando sua dimensão de continuidade adaptativa à formulação candidata de Agência efetiva e situada.
 
-Preparar a submissão de `ECO-CAND-005` e preservar a separação entre recomendação `Merge`, decisão humana e futura alteração do COR.
+Nenhuma alternativa foi consolidada como decisão. O COR permanece inalterado.
+
+## 6. Addendum vigente
+
+O addendum vigente é `Canonical Consolidation Matrix 1.72.0 — ECO-CAND-005 Decision Submission`.
+
+## 7. Próximo ato
+
+Registrar a manifestação humana e somente então definir se será criado `COD-003`, se `ECO-CAND-005` será preservado como candidato independente ou se retornará à análise.
