@@ -12857,7 +12857,7 @@
     
   
   
-    <span class="md-status md-status--proposed"></span>
+    <span class="md-status md-status--executed"></span>
   
 
   
@@ -19372,7 +19372,7 @@
 <h1 id="gkr-state-001-current-state-register">GKR-STATE-001 — Current State Register<a class="headerlink" href="#gkr-state-001-current-state-register" title="Permanent link">&para;</a></h1>
 <h2 id="1-autoridade">1. Autoridade<a class="headerlink" href="#1-autoridade" title="Permanent link">&para;</a></h2>
 <p>Este registro é a superfície oficial para o <strong>estado global vigente</strong> do Guivos Knowledge Repository.</p>
-<p>Ele não substitui as autoridades normativas de cada domínio. Sua função é declarar, de forma curta e inequívoca, qual etapa está concluída, qual frente está ativa, quais frentes estão pausadas e qual próximo incremento está autorizado.</p>
+<p>Ele não substitui as autoridades normativas de cada domínio. Sua função é declarar qual etapa está concluída, qual frente está ativa, quais frentes estão pausadas e qual próximo incremento está autorizado.</p>
 <p>README, Home, Guivos Enterprise Architecture, Roadmap, Knowledge Board e demais superfícies de navegação devem referenciar este registro e não manter estados globais independentes.</p>
 <h2 id="2-regra-de-precedencia-documental">2. Regra de precedência documental<a class="headerlink" href="#2-regra-de-precedencia-documental" title="Permanent link">&para;</a></h2>
 <p>Quando houver aparente divergência, aplica-se a seguinte ordem:</p>
@@ -19398,11 +19398,27 @@
 </tr>
 <tr>
 <td>Marco vigente</td>
-<td><code>M7.3.1 — Repository State Precedence and Global Roadmap Reconciled</code></td>
+<td><code>M7.3.2 — Central Governance Controls Reconciled</code></td>
 </tr>
 <tr>
 <td>Frente de controle</td>
-<td><code>GKR-REMEDIATION-002</code>; R1 e R2 concluídos, R3 a R5 pendentes</td>
+<td><code>GKR-REMEDIATION-002</code>; R1, R2 e R3 concluídos</td>
+</tr>
+<tr>
+<td>Remediação pendente</td>
+<td>R4 — navegação e R5 — validação mecânica</td>
+</tr>
+<tr>
+<td>Achados Critical abertos</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Achados Major abertos</td>
+<td>1 — navegação oficial incompleta</td>
+</tr>
+<tr>
+<td>Achados Minor abertos</td>
+<td>0 conhecidos antes de R5</td>
 </tr>
 <tr>
 <td>Frente arquitetural preservada</td>
@@ -19410,7 +19426,7 @@
 </tr>
 <tr>
 <td>Execução da A2-R03</td>
-<td>temporariamente pausada até a reconciliação dos controles, navegação e validação mecânica</td>
+<td>temporariamente pausada até R4, R5 e resultado <code>PASS</code></td>
 </tr>
 <tr>
 <td>Guivos Journey</td>
@@ -19461,7 +19477,7 @@
 <h2 id="4-sequencia-oficial-reconciliada">4. Sequência oficial reconciliada<a class="headerlink" href="#4-sequencia-oficial-reconciliada" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
-→ reconciliação do estado e da navegação do GKR
+→ reconciliação do estado, controles e navegação do GKR
 → conclusão de BA-STR-002 — Business Outcomes
 → BA-CAP-001 e BA-CAP-002 — Business Capabilities
 → rebaseline e especificação do portfólio especializado
@@ -19484,17 +19500,17 @@
 </ol>
 <p>A ordem entre os seis produtos permanece provisoriamente preservada. Sua confirmação dependerá dos Outcomes canônicos, do mapa de capacidades, das dependências econômicas e das evidências de mercado.</p>
 <h2 id="6-trilha-operacional-paralela">6. Trilha operacional paralela<a class="headerlink" href="#6-trilha-operacional-paralela" title="Permanent link">&para;</a></h2>
-<p>Market Validation pode avançar sem substituir a prioridade arquitetural, por meio de:</p>
+<p>Market Validation pode avançar em incremento próprio por meio de:</p>
 <ul>
 <li>formulário definitivo de aplicação;</li>
 <li>planilha automática de tratamento;</li>
 <li>KPIs e Índice Geral de Validação;</li>
 <li>gates e registro de decisão.</li>
 </ul>
-<p>A execução desses entregáveis exige incremento próprio. Este registro apenas preserva a autorização de coexistência entre a trilha operacional de evidência e a remediação documental.</p>
+<p>A execução desses entregáveis exige incremento próprio. Este registro apenas preserva a coexistência entre a trilha operacional de evidência e a remediação documental.</p>
 <h2 id="7-proximo-incremento-autorizado">7. Próximo incremento autorizado<a class="headerlink" href="#7-proximo-incremento-autorizado" title="Permanent link">&para;</a></h2>
-<p>Executar <code>R3 — Controles centrais</code>, seguido de <code>R4 — Navegação</code> e <code>R5 — Validação mecânica</code> do <code>GKR-REMEDIATION-002</code>.</p>
-<p>Somente após o fechamento das não conformidades Major e resultado <code>PASS</code> da auditoria de correção poderá ocorrer <code>R6 — Retomada governada</code>, com retorno ao <code>BA-STR-002-CODR-001</code> e decisão individual sobre <code>ECO-CAND-003</code>.</p>
+<p>Executar <code>R4 — Navegação</code>, tornando os ativos vigentes acessíveis pelo <code>mkdocs.yml</code>, seguido de <code>R5 — Validação mecânica</code>.</p>
+<p>Somente após o fechamento da não conformidade Major restante e resultado <code>PASS</code> poderá ocorrer <code>R6 — Retomada governada</code>, com retorno ao <code>BA-STR-002-CODR-001</code> e decisão individual sobre <code>ECO-CAND-003</code>.</p>
 <h2 id="8-limites">8. Limites<a class="headerlink" href="#8-limites" title="Permanent link">&para;</a></h2>
 <p>O estado atual não autoriza:</p>
 <ul>
