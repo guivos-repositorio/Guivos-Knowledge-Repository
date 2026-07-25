@@ -2,17 +2,18 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.70.0
+version: 1.71.0
 owner: Guivos
 last_updated: 2026-07-24
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-GKR-R6
+  - GKR-CANON-MATRIX-COD-002
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-002
-  - M7.3.5
+  - COD-002
+  - M7.4
 normative: false
 ---
 
@@ -20,7 +21,7 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz central registra decisões consolidadas de maior alcance e aponta para as autoridades e addenda que preservam o detalhamento. Ela não substitui documentos normativos, ADRs, validações, auditorias ou registros de decisão.
+Esta matriz central registra decisões consolidadas de maior alcance e aponta para autoridades e addenda que preservam o detalhamento. Ela não substitui documentos normativos, ADRs, validações, auditorias ou registros de decisão.
 
 ## 2. Vocabulário de decisão
 
@@ -44,13 +45,14 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Guivos Economic Model | Manter documentariamente concluído | `GEM-001` a `GEM-010`; validação real pendente |
 | remediação R1–R5 | Manter concluída | `GKR-R5-VALIDATION-001` com `PASS` |
 | R6 | Manter concluído | retomada governada registrada |
-| A2-R03 | Retomar | ativa em execução |
-| BA-STR-002 | Retomar | Business Outcomes como prioridade atual |
+| A2-R03 | Manter ativa | em execução |
+| BA-STR-002 | Manter ativo | Business Outcomes como prioridade atual |
 | COR, validação externa e COEM | Manter concluídos | 18/18 candidatos e 6/6 clusters |
-| `COD-001` | Manter | `ECO-CAND-001` com `Reformulate` aceito |
-| CODR | Manter ativo | 1 de 18 decisões registradas |
-| `ECO-CAND-003` | Pendente | submetido à manifestação humana |
-| `COD-002` | Pendente | não existe antes da manifestação |
+| `COD-001` | Manter | `Reformulate` aceito para `ECO-CAND-001` |
+| `COD-002` | Manter | `Reformulate` aceito para `ECO-CAND-003` |
+| CODR | Manter ativo | 2 de 18 decisões registradas |
+| `ECO-CAND-003` | Manter `Under Validation` | Agência efetiva e situada pendente de nova COEM |
+| `ECO-CAND-005` | Pendente | recomendação `Merge into ECO-CAND-003`; decisão humana própria necessária |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
 | produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
@@ -58,26 +60,20 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado da remediação
+## 4. Resultado da decisão COD-002
 
-As não conformidades `NC-MAJ-01` a `NC-MAJ-07` e `NC-MIN-01` a `NC-MIN-03` foram corrigidas conforme seus incrementos e validadas mecanicamente em R5.
+A alternativa `A — Aceitar Reformulate` foi consolidada como decisão humana.
 
-`GKR-REMEDIATION-002` está concluído. O R6 não reabre a remediação; apenas devolve a prioridade ao fluxo arquitetural correto.
+A formulação candidata registrada é:
 
-## 5. Decisão corrente
+> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
 
-O addendum vigente é `Canonical Consolidation Matrix 1.70.0 — R6 Governed Resumption`.
+A decisão não aprova o candidato, não cria código canônico e não executa a fusão de `ECO-CAND-005`.
 
-A submissão `BA-STR-002-COD-SUB-002` oferece três alternativas ao Fundador:
+## 5. Addendum vigente
 
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
-
-Nenhuma alternativa foi consolidada como decisão.
+O addendum vigente é `Canonical Consolidation Matrix 1.71.0 — COD-002`.
 
 ## 6. Próximo ato
 
-Registrar a manifestação humana e somente então definir se será criado `COD-002` ou se o candidato retornará à análise.
+Preparar a submissão de `ECO-CAND-005` e preservar a separação entre recomendação `Merge`, decisão humana e futura alteração do COR.
