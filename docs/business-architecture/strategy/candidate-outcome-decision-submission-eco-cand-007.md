@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-007
-title: Human Decision Submission — ECO-CAND-007
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — ECO-CAND-007
+status: decision-recorded
+version: 0.2.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -14,105 +14,94 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - COD-006
-  - M7.8.1
+  - COD-007
+  - M7.9
 normative: false
 ---
 
-# Human Decision Submission — ECO-CAND-007
+# Human Decision Resolution — ECO-CAND-007
 
 ## 1. Finalidade
 
-Submeter `ECO-CAND-007 — Participação inclusiva e digna` à sétima decisão humana individual do Candidate Outcome Decision Register.
+Registrar a sétima decisão humana individual do Candidate Outcome Decision Register para `ECO-CAND-007 — Participação inclusiva e digna`.
 
-Este documento organiza a recomendação e as alternativas. Ele **não registra `COD-007`**, não altera o COR, não reformula o candidato e não cria Outcome canônico antes da manifestação explícita do Fundador da Guivos.
+O Fundador da Guivos escolheu explicitamente:
+
+```text
+A — Aceitar Reformulate
+```
+
+A manifestação autoriza `COD-007`, preserva a formulação original, registra uma formulação candidata revisada e mantém o candidato em `Under Validation`.
 
 ## 2. Formulação originalmente avaliada
 
 > Participantes de diferentes culturas, crenças, países e contextos conseguem participar do ecossistema com dignidade, acolhimento e acesso a valor essencial.
 
-## 3. Resultado da COEM
+## 3. Resultado da COEM preservado
 
 | Teste | Resultado | Síntese |
 |---|---|---|
 | Essential | Pass | participação estruturalmente excludente ou indigna contradiz o propósito, a universalidade responsável e a legitimidade do ecossistema |
-| Decision | Pass | degradação persistente exigiria revisão estratégica de barreiras, elegibilidade, acessibilidade, representação, voz, proteção, capacidades e recursos |
+| Decision | Pass | degradação persistente exige revisão estratégica de barreiras, elegibilidade, acessibilidade, representação, voz, proteção, capacidades e recursos |
 | Replacement | Pass | inclusão e dignidade permanecem materiais independentemente dos meios atuais |
-| Outcome Quality | Partial | a condição vivida é permanente e observável, mas a formulação combina diversidade, direitos, acolhimento, acesso e valor essencial, misturando Outcome, guardrails e capacidades |
-| Disposição recomendada | `Reformulate` | preservar o núcleo como participação inclusiva, digna e efetiva |
+| Outcome Quality | Partial | a formulação mistura condição vivida, diversidade, direitos, acolhimento, acesso, guardrails e capacidades |
+| Disposição | `Reformulate` | aceita pelo Fundador |
 
-## 4. Evidências e limites
-
-A validação externa e a COEM sustentam que:
-
-1. dignidade, não discriminação, acessibilidade, autonomia e participação plena são dimensões interdependentes;
-2. disponibilidade técnica não comprova inclusão;
-3. informação, consulta simbólica e representação nominal não comprovam participação efetiva;
-4. cadastro, tradução, presença global ou representação não constituem evidência suficiente;
-5. participação exige redução de barreiras, capacidade real de uso, respeito, voz e contestabilidade;
-6. requisitos legítimos de elegibilidade, segurança e conformidade podem coexistir com inclusão responsável.
-
-## 5. Formulação candidata proposta
+## 4. Formulação candidata registrada
 
 ### Participação inclusiva, digna e efetiva
 
 > Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
 
-A formulação proposta:
+## 5. Fundamentação consolidada
 
-- preserva inclusão e dignidade como condição ecossistêmica;
-- substitui acolhimento e presença nominal por participação efetiva e observável;
-- inclui capacidade real de uso, respeito, voz e contestabilidade;
-- reconhece barreiras materiais evitáveis sem prometer acesso universal imediato;
-- preserva requisitos legítimos de elegibilidade, segurança e conformidade;
-- mantém direitos, guardrails e capacidades de acessibilidade como sustentadores, sem acumulá-los como sub-Outcomes;
-- não trata cadastro, tradução, presença global ou representação nominal como prova suficiente.
+A decisão:
 
-## 6. Alternativas submetidas à decisão humana
+1. preserva inclusão e dignidade como condição ecossistêmica material;
+2. substitui acolhimento e presença nominal por participação efetiva e observável;
+3. exige capacidade real de uso, respeito, voz e contestabilidade;
+4. reconhece barreiras materiais evitáveis sem prometer acesso universal imediato;
+5. preserva requisitos legítimos de elegibilidade, segurança e conformidade;
+6. mantém direitos, guardrails e capacidades de acessibilidade como sustentadores da condição;
+7. bloqueia cadastro, tradução, presença global ou representação nominal como prova suficiente.
 
-### Alternativa A — Aceitar `Reformulate` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 6. Efeitos autorizados
 
 - criar `COD-007`;
-- aceitar formalmente a disposição `Reformulate`;
-- preservar a formulação original;
+- aceitar formalmente `Reformulate`;
+- preservar a formulação original e as evidências;
 - registrar **Participação inclusiva, digna e efetiva** como formulação candidata;
 - manter `ECO-CAND-007` em `Under Validation`;
 - reaplicar os quatro testes da COEM antes de qualquer aprovação.
 
-Não autoriza promover o candidato a `Approved`, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 7. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reformulate`
+A decisão não autoriza:
 
-Mantém `ECO-CAND-007` em `Under Validation` e exige fundamentação para preservar a formulação original ou adotar outra disposição.
+- promover `ECO-CAND-007` a `Approved`;
+- criar código canônico `EO-###`;
+- prometer acesso universal imediato;
+- eliminar requisitos legítimos de elegibilidade, segurança ou conformidade;
+- iniciar AQS-O01 ou Business Capabilities;
+- iniciar produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-A rejeição da recomendação não aprova automaticamente o candidato.
-
-### Alternativa C — Devolver para nova análise
-
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- fronteira entre Outcome, direitos, guardrails constitucionais e capacidades de acessibilidade;
-- observabilidade de dignidade, voz e contestabilidade;
-- barreiras materiais evitáveis e requisitos legítimos;
-- diferenças culturais, territoriais e jurisdicionais;
-- possível sobreposição com `ECO-CAND-002` e `ECO-CAND-008`.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
+## 8. Estado resultante
 
 ```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
+COD-007: recorded
+Human decisions: 7 of 18
+Accepted Reformulate dispositions: 5
+ECO-CAND-007: Under Validation
+COR: 16 Under Validation; 1 Merged; 1 Rejected
+Approved Outcomes: 0
+Canonical EO/BO codes: 0
+AQS-O01: not started
+Product Engineering: paused before W0-01
 ```
 
-Até essa manifestação:
+## 9. Próximo ato governado
 
-- `COD-007` não existe;
-- decisões humanas permanecem em `6 de 18`;
-- `ECO-CAND-007` permanece `Under Validation`;
-- o COR permanece com 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
+
+Nenhuma integração deste incremento é inferida por esta decisão.
