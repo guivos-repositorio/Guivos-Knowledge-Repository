@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.57.0
+version: 11.58.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.57.0
+  - ROADMAP-11.58.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-005
-  - COD-004
-  - M7.6.1
+  - COD-005
+  - M7.7
 normative: false
 ---
 
@@ -28,18 +28,17 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.6.1 — Fifth Human Outcome Decision Submitted` |
+| Marco | `M7.7 — Fifth Human Outcome Decision Recorded` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 17 `Under Validation`; 1 `Merged` |
-| CODR | 4 de 18 decisões humanas; 1 submissão aguardando resposta |
+| COR | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
+| CODR | 5 de 18 decisões humanas; 0 submissões abertas |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
 | COD-004 | `Reformulate` aceito para ECO-CAND-002 |
-| Submissão atual | ECO-CAND-004 sobre `Reject` |
-| COD-005 | não criado |
+| COD-005 | `Reject` aceito para ECO-CAND-004 |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -53,19 +52,18 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - Guivos Economic Model documentariamente concluído;
 - COR, validação externa e COEM concluídos;
 - remediação R1–R5 e R6 concluídas;
-- `COD-001` a `COD-004` registrados.
+- `COD-001` a `COD-005` registrados.
 
 ### Ativo
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- submissão humana de `ECO-CAND-004`.
+- preparação da submissão de `ECO-CAND-006`.
 
 ### Pendente
 
-- manifestação do Fundador sobre `ECO-CAND-004`;
-- treze decisões posteriores;
+- treze decisões humanas restantes;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -76,18 +74,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. Submissão atual
+## 4. COD-005
 
-`BA-STR-002-COD-SUB-005` apresenta:
+O Fundador aceitou `Reject` para `ECO-CAND-004 — Realização de experiências de valor`.
 
-```text
-A — Aceitar Reject
-B — Rejeitar Reject, com fundamentação
-C — Devolver para nova análise
-```
+O candidato foi alterado para `Rejected`, mas experiência continua preservada como unidade da Jornada, realização de valor em uso, fonte de evidências para Outcomes e referência para capacidades e métricas futuras.
 
-A alternativa A é recomendada. Ela preserva experiência como unidade da Jornada, momento de realização de valor e fonte de evidências, mas não como Outcome permanente independente.
+A decisão não altera automaticamente o `PAS-001` e não remove experiência da Guivos.
 
 ## 5. Próximo movimento
 
-Registrar a manifestação do Fundador. Nenhuma rejeição, mudança no COR ou criação de código canônico ocorrerá antes desse ato.
+Preparar a sexta submissão humana para `ECO-CAND-006 — Conexões relevantes e fortalecedoras`, cuja recomendação da COEM é `Reformulate`. Nenhuma decisão será inferida automaticamente.
