@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.24.0
+version: 0.25.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -30,8 +30,9 @@ related:
   - COD-010
   - COD-011
   - COD-012
+  - COD-013
   - GEM-CLOSURE-REVIEW-001
-  - M7.14
+  - M7.15
 normative: false
 ---
 
@@ -57,7 +58,7 @@ Merged: 2
 Rejected: 2
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 12 of 18
+Human decisions: 13 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -237,12 +238,15 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo. |
+| Definição originalmente avaliada | A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo. |
+| Formulação candidata vigente | A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente. |
 | Origem | BA-STR-001; GEM-001; GEM-008; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Ecossistema como um todo |
 | Status | Under Validation |
-| Observações | Receita, margem, caixa, reserva e sustentabilidade permanecem conceitos distintos. |
-| Questão de validação | A formulação é suficientemente independente de métricas financeiras e do modelo atual de receita? |
+| Decisão | `COD-013 — Aceitar Reformulate` |
+| BUS-CAND-010 | preservado como candidato separado até decisão humana individual posterior |
+| Observações | Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras, não sub-Outcomes. |
+| Questão de validação | A formulação revisada possui unidade, observabilidade e implicação estratégica próprias sem depender de métrica financeira única, disponibilidade operacional ou promessa de permanência absoluta? |
 
 ### BUS-CAND-006 — Crescimento responsável e resiliente
 
@@ -308,15 +312,15 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | confiança | ECO-CAND-006, ECO-CAND-008 e BUS-CAND-004 | três camadas preservadas; BUS-CAND-004 reformulado como legitimidade institucional sustentada |
 | inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | formulações revisadas exigem nova COEM |
 | propósito | BUS-CAND-001 | rejeitado como Outcome por `COD-009`; autoridade constitucional preservada |
-| valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 reformulado; BUS-CAND-005 e BUS-CAND-010 pendentes |
+| valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 e BUS-CAND-005 reformulados; BUS-CAND-010 pendente de decisão individual |
 | adaptação | BUS-CAND-002, BUS-CAND-007 e BUS-CAND-009 | BUS-CAND-002 fundido em BUS-CAND-003; demais pendentes |
-| resiliência | BUS-CAND-005 e BUS-CAND-006 | decisões humanas pendentes |
+| resiliência | BUS-CAND-005 e BUS-CAND-006 | BUS-CAND-005 reformulado; BUS-CAND-006 pendente |
 
 ## 8. Pendências para os próximos ciclos
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as seis disposições restantes;
+1. decisão humana individual para as cinco disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -325,11 +329,12 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-012` registrado | Pass |
+| `COD-013` registrado | Pass |
 | formulação original e evidências preservadas | Pass |
-| legitimidade institucional registrada como núcleo candidato | Pass |
-| confiança institucional preservada sem novo candidato automático | Pass |
-| `BUS-CAND-004` mantido em `Under Validation` | Pass |
+| formulação candidata revisada registrada | Pass |
+| `BUS-CAND-005` mantido em `Under Validation` | Pass |
+| `BUS-CAND-010` preservado sem fusão antecipada | Pass |
+| continuidade econômica separada de métricas isoladas | Pass |
 | distribuição 14/2/2 preservada | Pass |
 | nova COEM exigida | Pass |
 | promoção automática bloqueada | Pass |
@@ -337,4 +342,4 @@ Antes de qualquer promoção canônica deverão existir:
 
 ## 10. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
