@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.10.0
- title: Changelog 1.10.0 — ECO-CAND-008 Decision Submission
+title: Changelog 1.10.0 — ECO-CAND-008 Decision Submission
 status: active
 version: 1.10.0
 owner: Guivos
