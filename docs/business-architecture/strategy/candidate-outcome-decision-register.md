@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -12,6 +12,7 @@ depends_on:
   - GKR-GOV-OUT-001
 related:
   - BA-STR-002-EOVB-001
+  - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-006
   - RP-001-EVIDENCE
   - GKR-R6-RESUMPTION-001
@@ -19,12 +20,13 @@ related:
   - BA-STR-002-COD-SUB-003
   - BA-STR-002-COD-SUB-004
   - BA-STR-002-COD-SUB-005
+  - BA-STR-002-COD-SUB-006
   - COD-001
   - COD-002
   - COD-003
   - COD-004
   - COD-005
-  - M7.7
+  - M7.7.1
 normative: false
 execution_status: in-progress
 ---
@@ -53,7 +55,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 5
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: ECO-CAND-006
 Accepted Reformulate dispositions: 3
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
@@ -205,42 +208,43 @@ A formulação permanece `Under Validation` e deverá retornar à COEM.
 
 ### Fundamentação consolidada
 
-A recomendação foi aceita porque:
+A recomendação foi aceita porque experiência vivida é episódio de realização, não condição permanente autônoma do ecossistema. A decisão preserva experiência na arquitetura da Jornada, como realização de valor em uso, fonte de evidências e referência para capacidades e métricas futuras.
 
-1. experiência vivida é episódio de realização, não condição permanente autônoma do ecossistema;
-2. o participante realiza valor em uso, enquanto a Guivos cria condições e facilita experiências;
-3. valor vivido e avaliação retrospectiva podem divergir;
-4. a formulação mistura acesso, escolha, conversão, experiência, percepção e potencial de evolução;
-5. experiência não garante transformação causal nem efeito duradouro;
-6. promover o candidato estruturaria o catálogo de Outcomes como sequência de jornada.
+## 9. Submissão decisória atual — ECO-CAND-006
 
-### Destino arquitetural preservado
+A submissão `BA-STR-002-COD-SUB-006` apresenta a recomendação `Reformulate`.
 
-Experiência permanece:
+### Formulação originalmente avaliada
 
-- unidade relevante da arquitetura da Jornada;
-- momento possível de realização de valor;
-- fonte de evidências para avaliação de Outcomes;
-- referência para capacidades, experiências e métricas futuras;
-- distinta de acesso, escolha, valor lembrado e transformação posterior.
+> Participantes formam e preservam relações relevantes que ampliam cooperação, acesso a oportunidades e geração recíproca de valor.
 
-### Efeitos autorizados
+### Formulação candidata proposta
 
-- aceitar `Reject`;
-- alterar `ECO-CAND-004` para `Rejected`;
-- preservar formulação, evidências e rastreabilidade;
-- retirar o candidato do futuro catálogo de Outcomes;
-- preservar experiência em sua camada arquitetural adequada.
+**Saúde relacional no ecossistema**
 
-### Efeitos não autorizados
+> O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
 
-- remover experiência da Guivos;
-- alterar automaticamente o `PAS-001`;
-- apagar o candidato ou suas evidências;
-- criar código canônico;
-- iniciar AQS-O01, Business Capabilities ou Product Engineering.
+### Fundamentação da recomendação
 
-## 9. Matriz cumulativa de decisões
+A formulação original pressupõe benefício e agrega relação, mecanismo e efeito. A evidência exige diversidade estrutural, reciprocidade, voluntariedade, autonomia e limites contra exclusão ou dano material. Quantidade, densidade, intensidade ou coesão das conexões não constituem prova suficiente de saúde relacional.
+
+### Alternativas
+
+```text
+A — Aceitar Reformulate
+B — Rejeitar Reformulate, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada. Enquanto não houver manifestação explícita:
+
+- `COD-006` não existe;
+- decisões humanas permanecem em `5 de 18`;
+- `ECO-CAND-006` permanece `Under Validation`;
+- nenhuma alteração é executada no COR;
+- nenhum código canônico é criado.
+
+## 10. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
@@ -249,7 +253,7 @@ Experiência permanece:
 | ECO-CAND-005 | Merge into ECO-CAND-003 | Aceitar `Merge into ECO-CAND-003` | `Merged`; alvo ECO-CAND-003 |
 | ECO-CAND-002 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected`; experiência preservada na Jornada |
-| ECO-CAND-006 | Reformulate | — | Pending human decision |
+| ECO-CAND-006 | Reformulate | — | submitted to human decision; awaiting response |
 | ECO-CAND-007 | Reformulate | — | Pending human decision |
 | ECO-CAND-008 | Reformulate | — | Pending human decision |
 | BUS-CAND-001 | Reject | — | Pending human decision |
@@ -263,20 +267,23 @@ Experiência permanece:
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 10. Gate do incremento
+## 11. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
+| submissão individual de ECO-CAND-006 criada | Pass |
 | recomendação original preservada | Pass |
-| `COD-005` registrado | Pass |
-| `ECO-CAND-004` alterado para `Rejected` | Pass |
-| formulação e evidências preservadas | Pass |
-| experiência preservada na Jornada | Pass |
-| promoção canônica bloqueada | Pass |
+| evidências e contraevidências explicitadas | Pass |
+| formulação candidata proposta | Pass |
+| alternativas humanas A, B e C registradas | Pass |
+| decisão humana inferida automaticamente | Blocked |
+| alteração automática do COR | Blocked |
+| promoção canônica | Blocked |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 11. Próximo passo governado
+## 12. Próximo passo governado
 
-Preparar e submeter `ECO-CAND-006 — Conexões relevantes e fortalecedoras` à sexta decisão humana individual sobre a recomendação `Reformulate`.
+Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-006`.
+
+Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-006`, preservar a formulação original, registrar a formulação candidata de saúde relacional, manter `ECO-CAND-006` em `Under Validation` e exigir nova aplicação dos quatro testes da COEM.
