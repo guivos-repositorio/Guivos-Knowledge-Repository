@@ -2,17 +2,17 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.49.0
+version: 4.50.0
 owner: Guivos
 last_updated: 2026-07-24
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.51.0
+  - ROADMAP-11.52.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-002
-  - M7.3.5
+  - COD-002
+  - M7.4
 normative: false
 ---
 
@@ -20,7 +20,7 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. Os documentos `architectural-milestones-*.md` preservam os snapshots e critérios detalhados. O estado transversal é governado pelo [Current State Register](current-state-register.md).
+Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. Os documentos `architectural-milestones-*.md` preservam snapshots e critérios detalhados. O estado transversal é governado pelo [Current State Register](current-state-register.md).
 
 ## 2. Linha de maturidade consolidada
 
@@ -33,21 +33,21 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.0–M7.1.5 | Completed | COR, validação externa e COEM concluídos |
 | M7.2 | Completed | ciclo decisório iniciado; `COD-001` registrado |
 | M7.3–M7.3.4 | Completed | auditoria, remediação, navegação e validação mecânica |
-| M7.3.5 | Completed neste incremento | trabalho arquitetural governado retomado |
+| M7.3.5 | Completed | trabalho arquitetural governado retomado |
+| M7.4 | Completed neste incremento | segunda decisão humana registrada como `COD-002` |
 
 ## 3. Marco vigente
 
-### M7.3.5 — Governed Architectural Work Resumed
+### M7.4 — Second Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- remediação R1–R5 concluída com `PASS`;
-- R6 autorizado e registrado;
-- pausa da A2-R03 encerrada;
-- BA-STR-002 e CODR retomados;
-- `ECO-CAND-003` submetido à decisão humana;
-- recomendação e alternativas explicitadas;
-- `COD-002` bloqueado até manifestação;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reformulate` aceita;
+- `COD-002` criado para `ECO-CAND-003`;
+- formulação candidata **Agência efetiva e situada** registrada;
+- `ECO-CAND-003` preservado em `Under Validation`;
+- decisões humanas atualizadas para 2 de 18;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -63,8 +63,8 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Manifestação humana sobre `BA-STR-002-COD-SUB-002`. O marco seguinte dependerá da alternativa escolhida e não foi antecipado.
+Submeter `ECO-CAND-005` à decisão humana sobre `Merge into ECO-CAND-003`. O próximo marco dependerá dessa manifestação e não é antecipado.
 
 ## 6. Regra de transição
 
-Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Submissões decisórias não equivalem a decisões registradas.
+Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Recomendações, submissões e decisões registradas permanecem atos separados.
