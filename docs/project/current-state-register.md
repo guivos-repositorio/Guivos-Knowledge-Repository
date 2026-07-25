@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-24
 depends_on:
@@ -16,8 +16,9 @@ related:
   - BA-STR-002-COD-SUB-002
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - ROADMAP-11.51.0
-  - M7.3.5
+  - COD-002
+  - ROADMAP-11.52.0
+  - M7.4
 normative: true
 ---
 
@@ -27,80 +28,84 @@ normative: true
 
 Este registro é a superfície oficial para o **estado global vigente** do Guivos Knowledge Repository.
 
-Ele não substitui as autoridades normativas de cada domínio. Sua função é declarar qual etapa está concluída, qual frente está ativa, quais frentes estão pausadas e qual próximo ato está autorizado.
+Ele não substitui autoridades normativas de domínio. Sua função é declarar qual etapa está concluída, qual frente está ativa, quais frentes estão pausadas e qual próximo ato está autorizado.
 
-README, Home, Guivos Enterprise Architecture, Roadmap, Knowledge Board e demais superfícies de navegação devem referenciar este registro e não manter estados globais independentes.
+README, Home, Guivos Enterprise Architecture, Roadmap, Knowledge Board e demais superfícies de navegação devem consumir este registro e não manter estados globais independentes.
 
 ## 2. Regra de precedência documental
 
 Quando houver aparente divergência, aplica-se a seguinte ordem:
 
-1. **autoridades normativas do domínio e decisões formalmente aprovadas** determinam o conteúdo arquitetural;
-2. **este Current State Register** determina o estado transversal vigente e o próximo ato autorizado;
-3. **Roadmap, Board, GEA, README e Home** resumem o estado e devem permanecer sincronizados com este registro;
-4. **overlays versionados anteriores e documentos históricos** preservam a evolução, mas não substituem o estado mais recente.
+1. autoridades normativas do domínio e decisões formalmente aprovadas;
+2. este Current State Register para estado transversal e próximo ato;
+3. Roadmap, Board, GEA, README e Home como resumos sincronizados;
+4. overlays anteriores e documentos históricos como evidência da evolução.
 
-Conflitos entre essas superfícies constituem não conformidade documental. Eles não criam duas rotas válidas nem autorização implícita para execução.
+Conflitos entre essas superfícies constituem não conformidade documental e não criam autorização implícita.
 
 ## 3. Estado global vigente
 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.3.5 — Governed Architectural Work Resumed` |
-| Remediação do GKR | `GKR-REMEDIATION-002` concluída |
-| Parecer mecânico | `PASS — GKR-R5-VALIDATION-001` |
-| R6 | concluído |
+| Marco vigente | `M7.4 — Second Human Outcome Decision Recorded` |
+| Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| Registro decisório | `BA-STR-002-CODR-001` retomado |
-| Decisões humanas registradas | `1 de 18`; `COD-001` para `ECO-CAND-001` |
-| Submissão atual | `ECO-CAND-003`; resposta humana pendente |
-| `COD-002` | não criado |
+| Registro decisório | `BA-STR-002-CODR-001 0.3.0` |
+| Decisões humanas registradas | `2 de 18` |
+| `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
+| `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
+| `ECO-CAND-003` | `Under Validation`; formulação candidata Agência efetiva e situada |
+| Próximo candidato | `ECO-CAND-005` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
-| Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades funcionalmente concluídas |
+| Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
 | Guivos Economic Model | arquitetura documental inicial concluída em `GEM-001` a `GEM-010`; validações reais pendentes |
 | Portfólio especializado | Mall, Business, Intelligence, Ads, Media e Travel pendentes de rebaseline |
 | Commercial Model | não iniciado |
 | Go-to-Market | não iniciado |
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
-| Market Validation | trilha operacional paralela preservada; formulário e planilha pendentes |
+| Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
 ## 4. Sequência oficial
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
-→ remediação R1–R5 do GKR — PASS
+→ remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — em execução
+→ decisões humanas do BA-STR-002 — 2 de 18
 → conclusão de Business Outcomes
-→ BA-CAP-001 e BA-CAP-002 — Business Capabilities
+→ BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
 → Commercial Model
 → Go-to-Market
 → Product Engineering somente mediante autorização explícita
 ```
 
-A passagem do Economic Model para a A2-R03 foi definida pela revisão de fechamento do próprio Economic Model porque Outcomes e Business Capabilities antecedem organização, processos, ofertas e execução.
+A passagem do Economic Model para A2-R03 foi definida pela revisão de fechamento do próprio Economic Model porque Outcomes e Business Capabilities antecedem organização, processos, ofertas e execução.
 
-## 5. Ato governado atual
+## 5. Decisão vigente
 
-O próximo ato autorizado é a manifestação do Fundador da Guivos sobre `BA-STR-002-COD-SUB-002`:
+O Fundador da Guivos aceitou a alternativa `A — Aceitar Reformulate` para `ECO-CAND-003`.
 
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
+A formulação candidata registrada é:
 
-A alternativa A é a recomendada pela COEM e pelo pacote decisório. Nenhuma alternativa foi inferida ou registrada como decisão.
+> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
 
-## 6. Backlog global preservado
+Essa decisão não aprova o candidato nem cria código canônico.
 
-Após a conclusão do `BA-STR-002` e das Business Capabilities, deverão ser reavaliados, nesta ordem histórica de referência:
+## 6. Próximo ato autorizado
+
+Preparar e submeter `ECO-CAND-005 — Continuidade da evolução autodeterminada` à decisão humana individual sobre a recomendação `Merge into ECO-CAND-003`.
+
+A submissão deverá preservar `ECO-CAND-005` como candidato independente até manifestação explícita. Nenhuma fusão poderá ser inferida.
+
+## 7. Backlog global preservado
+
+Após BA-STR-002 e Business Capabilities, deverão ser reavaliados, nesta ordem histórica de referência:
 
 1. Guivos Mall;
 2. Guivos Business;
@@ -113,20 +118,16 @@ Após a conclusão do `BA-STR-002` e das Business Capabilities, deverão ser rea
 
 Essa ordem permanece provisória e não constitui autorização de início.
 
-## 7. Trilha operacional paralela
-
-Market Validation pode avançar em incremento próprio por meio de formulário definitivo, planilha automática, KPIs, Índice Geral de Validação, gates e registro de decisão.
-
 ## 8. Limites
 
 O estado atual não autoriza:
 
-- criar `COD-002` sem manifestação humana;
-- alterar `ECO-CAND-003` no COR;
-- aprovar ou canonicalizar Candidate Outcomes por inferência;
+- promover `ECO-CAND-003` a `Approved`;
+- executar automaticamente a fusão de `ECO-CAND-005`;
+- criar códigos canônicos `EO-###` ou `BO-###`;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
-- especificar os seis produtos especializados;
+- especificar os produtos especializados;
 - iniciar Commercial Model ou Go-to-Market;
 - retomar Product Engineering, W0-01, POCs, ambientes ou produção;
 - tratar Market Validation como já executada.
