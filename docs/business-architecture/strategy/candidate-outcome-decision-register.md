@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.18.0
+version: 0.19.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -35,7 +35,8 @@ related:
   - COD-007
   - COD-008
   - COD-009
-  - M7.11.1
+  - COD-010
+  - M7.12
 normative: false
 execution_status: in-progress
 ---
@@ -63,13 +64,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 9
-Decision submissions awaiting human response: 1
-Current submission: BUS-CAND-002
+Human decisions recorded: 10
+Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 6
-Accepted Merge dispositions: 1
+Accepted Merge dispositions: 2
 Accepted Reject dispositions: 2
-Candidate state changes: 3
+Candidate state changes: 4
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -273,39 +273,33 @@ A rejeição atinge somente a classificação como Business Outcome autônomo. A
 
 A decisão não relativiza o propósito, não reduz a autoridade dos princípios permanentes e não trata desempenho, reputação, comunicação ou aderência declarada como prova suficiente de prática institucional.
 
-## 13. Submissão decisória atual — BUS-CAND-002
+## 13. COD-010 — BUS-CAND-002
 
-A submissão `BA-STR-002-COD-SUB-010` apresenta a recomendação `Merge into BUS-CAND-003`.
+| Campo | Registro |
+|---|---|
+| Nome | Relevância contínua das respostas |
+| Recomendação | `Merge into BUS-CAND-003` |
+| Decisão humana | Aceitar `Merge into BUS-CAND-003` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado após a decisão | `Merged` |
+| Alvo | `BUS-CAND-003` |
+| Estado do alvo | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
 ### Formulação originalmente avaliada
 
 > As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes.
 
-### Formulação combinada candidata
+### Formulação combinada resultante
 
 **Habilitação consistente e contextualmente relevante de valor legítimo**
 
 > A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
 
-### Fundamentação da recomendação
-
-Relevância é material, observável e decisória, porém emerge do ajuste entre contexto, capacidades, proposições e valor vivido. Sua autonomia como Outcome não foi demonstrada, e a sobreposição com `BUS-CAND-003` é material.
-
-### Alternativas
-
-```text
-A — Aceitar Merge into BUS-CAND-003
-B — Rejeitar Merge, com fundamentação
-C — Devolver para nova análise
-```
-
-A alternativa A é recomendada. Enquanto não houver manifestação explícita:
-
-- `COD-010` não existe;
-- decisões humanas permanecem em `9 de 18`;
-- `BUS-CAND-002` e `BUS-CAND-003` permanecem `Under Validation`;
-- nenhuma alteração é executada no COR;
-- nenhum código canônico é criado.
+A formulação permanece candidata. `BUS-CAND-003` conserva sua recomendação própria `Reformulate` e deverá retornar aos quatro testes da COEM antes de qualquer aprovação.
 
 ## 14. Matriz cumulativa de decisões
 
@@ -320,8 +314,8 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | BUS-CAND-001 | Reject | Aceitar `Reject` | `Rejected`; conteúdo preservado na Constituição e governança |
-| BUS-CAND-002 | Merge into BUS-CAND-003 | — | submitted to human decision; awaiting response |
-| BUS-CAND-003 | Reformulate | — | Pending human decision |
+| BUS-CAND-002 | Merge into BUS-CAND-003 | Aceitar `Merge into BUS-CAND-003` | `Merged`; alvo BUS-CAND-003 |
+| BUS-CAND-003 | Reformulate | — | Pending human decision; formulação combinada registrada |
 | BUS-CAND-004 | Reformulate | — | Pending human decision |
 | BUS-CAND-005 | Reformulate | — | Pending human decision |
 | BUS-CAND-006 | Reject | — | Pending human decision |
@@ -334,20 +328,19 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 
 | Critério | Resultado |
 |---|---|
-| submissão individual de BUS-CAND-002 criada | Pass |
+| manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| evidências e limites explicitados | Pass |
-| alvo e formulação combinada candidata registrados | Pass |
-| alternativas humanas A, B e C registradas | Pass |
-| decisão humana inferida automaticamente | Blocked |
-| alteração automática do COR | Blocked |
-| aprovação automática do alvo | Blocked |
-| promoção canônica | Blocked |
+| `COD-010` registrado | Pass |
+| formulação e evidências de `BUS-CAND-002` preservadas | Pass |
+| `BUS-CAND-002` movido para `Merged` | Pass |
+| formulação combinada de `BUS-CAND-003` registrada | Pass |
+| alvo mantido em `Under Validation` | Pass |
+| recomendação própria `Reformulate` do alvo preservada | Pass |
+| nova COEM exigida | Pass |
+| promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 16. Próximo passo governado
 
-Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-010`.
-
-Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-010`, preservar formulação e evidências, mover `BUS-CAND-002` para `Merged`, incorporar relevância contextual à formulação candidata de `BUS-CAND-003`, manter o alvo em `Under Validation` e exigir nova aplicação dos quatro testes da COEM.
+Preparar e submeter `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo` à décima primeira decisão humana individual sobre a recomendação `Reformulate`.
