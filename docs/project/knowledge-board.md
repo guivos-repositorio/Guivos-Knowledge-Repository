@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.52.0
+version: 11.53.0
 owner: Guivos
-last_updated: 2026-07-24
+last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.52.0
+  - ROADMAP-11.53.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-002
+  - BA-STR-002-COD-SUB-003
   - COD-002
-  - M7.4
+  - M7.4.1
 normative: false
 ---
 
@@ -28,14 +28,15 @@ Este painel resume o portfólio intelectual e arquitetural vigente. O estado tra
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.4 — Second Human Outcome Decision Recorded` |
+| Marco | `M7.4.1 — Third Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| CODR | 2 de 18 decisões humanas |
+| CODR | 2 de 18 decisões humanas; 1 submissão aguardando resposta |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
-| ECO-CAND-003 | `Under Validation`; Agência efetiva e situada |
+| Submissão atual | ECO-CAND-005 sobre `Merge into ECO-CAND-003` |
+| COD-003 | não criado |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -57,13 +58,14 @@ Este painel resume o portfólio intelectual e arquitetural vigente. O estado tra
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
-- Candidate Outcome Decision Register.
+- Candidate Outcome Decision Register;
+- submissão humana de `ECO-CAND-005`.
 
 ### Pendente por decisão ou dependência
 
-- decisão individual sobre `ECO-CAND-005`;
+- manifestação do Fundador sobre `ECO-CAND-005`;
 - quinze decisões posteriores;
-- reavaliação das formulações `Reformulate`;
+- reavaliação das formulações `Reformulate` e combinadas;
 - AQS-O01;
 - catálogos canônicos e matriz de sustentação;
 - `BA-CAP-001` e `BA-CAP-002`;
@@ -76,12 +78,18 @@ Este painel resume o portfólio intelectual e arquitetural vigente. O estado tra
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. Decisão registrada
+## 4. Submissão atual
 
-O Fundador escolheu `A — Aceitar Reformulate` para `ECO-CAND-003`.
+`BA-STR-002-COD-SUB-003` apresenta:
 
-A formulação candidata **Agência efetiva e situada** permanece em `Under Validation` e deverá retornar à COEM antes de qualquer aprovação.
+```text
+A — Aceitar Merge into ECO-CAND-003
+B — Rejeitar a fusão, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada. Ela propõe incorporar continuidade adaptativa como dimensão temporal de Agência efetiva e situada, preservar a rastreabilidade de `ECO-CAND-005` e manter o candidato-alvo em `Under Validation` para nova COEM.
 
 ## 5. Próximo movimento
 
-Preparar a submissão humana de `ECO-CAND-005` sobre a recomendação `Merge into ECO-CAND-003`. A fusão não poderá ser inferida ou executada automaticamente.
+Registrar a manifestação do Fundador. Nenhuma fusão, mudança no COR ou criação de código canônico ocorrerá antes desse ato.
