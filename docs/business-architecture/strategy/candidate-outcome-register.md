@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.15.0
+version: 0.16.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -21,8 +21,9 @@ related:
   - BA-STR-002-COEM-001
   - BA-STR-002-CODR-001
   - COD-003
+  - COD-004
   - GEM-CLOSURE-REVIEW-001
-  - M7.5
+  - M7.6
 normative: false
 ---
 
@@ -48,7 +49,7 @@ Merged: 1
 External validation: completed — batches 01 to 06
 External validation protocol: completed
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 3 of 18
+Human decisions: 4 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -86,23 +87,25 @@ Os identificadores são estáveis para rastreabilidade e não antecipam a numera
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | Pessoas, Organizações e Coletivos conseguem compreender seu Momento Atual, necessidades, objetivos, restrições e possibilidades com suficiência para decisões conscientes. |
+| Definição originalmente avaliada | Pessoas, Organizações e Coletivos conseguem compreender seu Momento Atual, necessidades, objetivos, restrições e possibilidades com suficiência para decisões conscientes. |
+| Formulação candidata vigente | Pessoas, Organizações e Coletivos formam e revisam uma compreensão contextual suficientemente fundamentada sobre sua situação, objetivos, necessidades, restrições e possibilidades, fortalecendo sua capacidade de realizar escolhas conscientes. |
 | Origem | GEB-P01-F01; GEB-P01-F02; GEB-P01-F05; BA-STR-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
 | Status | Under Validation |
 | Observações | `COD-001` aceitou `Reformulate`; a formulação revisada permanece candidata e pode operar como condição habilitadora da agência. |
 | Questão de validação | A compreensão contextual possui implicação estratégica independente suficiente ou deve permanecer condição sustentadora de agência? |
 
-### ECO-CAND-002 — Acesso a possibilidades relevantes
+### ECO-CAND-002 — Acesso real a possibilidades legítimas e manejáveis
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | Participantes encontram possibilidades legítimas, compreensíveis e relevantes para seu contexto, seus objetivos e seu momento de vida. |
+| Definição originalmente avaliada | Participantes encontram possibilidades legítimas, compreensíveis e relevantes para seu contexto, seus objetivos e seu momento de vida. |
+| Formulação candidata vigente | Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor. |
 | Origem | GEB-P01-F01; GEB-P01-F02; GEB-P01-F04; GEB-P01-F06 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
 | Status | Under Validation |
-| Observações | Deve permanecer independente de catálogo, recomendação, marketplace ou produto específico. |
-| Questão de validação | Acesso e relevância formam um único estado permanente ou exigem candidatos distintos? |
+| Observações | `COD-004` aceitou `Reformulate`; acesso real permanece distinto de disponibilidade, descoberta, escolha, experiência e transformação posterior. |
+| Questão de validação | A formulação revisada é observável por restrições e fatores de conversão sem transformar volume de opções em evidência de acesso ou valor? |
 
 ### ECO-CAND-003 — Agência efetiva e situada
 
@@ -305,7 +308,7 @@ Esta matriz orienta validação e não atende ainda à futura matriz canônica d
 | Cluster | Candidatos | Estado |
 |---|---|---|
 | agência e evolução | ECO-CAND-001, 003 e 005 | `ECO-CAND-005` fundido em `ECO-CAND-003` por `COD-003`; ECO-CAND-001 e formulação combinada ainda exigem nova COEM |
-| oportunidade e experiência | ECO-CAND-002 e 004 | decisão humana pendente |
+| oportunidade e experiência | ECO-CAND-002 e 004 | `COD-004` aceitou `Reformulate` para ECO-CAND-002; ECO-CAND-004 aguarda decisão sobre `Reject` |
 | confiança | ECO-CAND-006, 008 e BUS-CAND-004 | decisão humana pendente |
 | valor e continuidade | BUS-CAND-003, 005 e 010 | decisão humana pendente |
 | adaptação | BUS-CAND-002, 007 e 009 | decisão humana pendente |
@@ -313,7 +316,9 @@ Esta matriz orienta validação e não atende ainda à futura matriz canônica d
 
 O cluster `agência e evolução` possui validação externa no [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md), avaliação na COEM e três decisões humanas registradas. A compreensão contextual permanece candidata; a agência efetiva e situada recebeu a dimensão temporal da continuidade adaptativa; a formulação combinada ainda não foi aprovada.
 
-Os demais clusters preservam as sínteses dos lotes externos 02 a 06 e aguardam decisões individuais no CODR.
+O cluster `oportunidade e experiência` possui validação externa no [BA-STR-002-EOVB-006](outcome-validation-batch-06-coverage-completion.md). `ECO-CAND-002` foi reformulado por `COD-004`, enquanto `ECO-CAND-004` permanece pendente de decisão humana própria.
+
+Os demais clusters preservam as sínteses dos lotes externos 02 a 05 e aguardam decisões individuais no CODR.
 
 ## 9. Cobertura das origens internas
 
@@ -331,7 +336,7 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as quinze disposições restantes;
+1. decisão humana individual para as quatorze disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. preservação das contradições, reclassificações e limites;
 4. distinção explícita entre recomendação, decisão humana e mudança de estado;
@@ -342,14 +347,15 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| decisão humana `COD-003` registrada | Pass |
-| `ECO-CAND-005` alterado para `Merged` | Pass |
-| alvo `ECO-CAND-003` explicitado | Pass |
-| formulação e evidências originais preservadas | Pass |
-| formulação combinada mantida em `Under Validation` | Pass |
+| decisão humana `COD-004` registrada | Pass |
+| formulação original de `ECO-CAND-002` preservada | Pass |
+| formulação revisada registrada | Pass |
+| candidato mantido em `Under Validation` | Pass |
+| separação entre acesso, escolha e experiência | Pass |
+| volume de opções bloqueado como evidência suficiente | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Submeter `ECO-CAND-002 — Acesso a possibilidades relevantes` à quarta decisão humana individual sobre a recomendação `Reformulate`. As decisões registradas permanecem separadas da reavaliação da COEM e da futura Canon.
+Preparar e submeter `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual sobre a recomendação `Reject`. As decisões registradas permanecem separadas da reavaliação da COEM e da futura Canon.
