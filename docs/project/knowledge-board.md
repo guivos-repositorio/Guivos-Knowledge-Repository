@@ -2,19 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.55.0
+version: 11.56.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.55.0
-  - GKR-R6-RESUMPTION-001
+  - ROADMAP-11.56.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-004
-  - COD-003
-  - M7.5.1
+  - COD-004
+  - M7.6
 normative: false
 ---
 
@@ -22,28 +21,26 @@ normative: false
 
 ## 1. Autoridade
 
-Este painel resume o portfólio intelectual e arquitetural vigente. O estado transversal oficial é definido pelo [Current State Register](current-state-register.md). O Board não cria decisões, estados ou autorizações independentes.
+Este painel resume o portfólio arquitetural vigente. O estado transversal oficial é definido pelo [Current State Register](current-state-register.md).
 
 ## 2. Estado institucional
 
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.5.1 — Fourth Human Outcome Decision Submitted` |
+| Marco | `M7.6 — Fourth Human Outcome Decision Recorded` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 17 `Under Validation`; 1 `Merged` |
-| CODR | 3 de 18 decisões humanas; 1 submissão aguardando resposta |
+| CODR | 4 de 18 decisões humanas |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
-| Submissão atual | ECO-CAND-002 sobre `Reformulate` |
-| COD-004 | não criado |
+| COD-004 | `Reformulate` aceito para ECO-CAND-002 |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
-| Market Validation | trilha paralela preservada |
 
 ## 3. Portfólio por situação
 
@@ -53,46 +50,37 @@ Este painel resume o portfólio intelectual e arquitetural vigente. O estado tra
 - Guivos Journey publicado e funcionalmente concluído;
 - Guivos Economic Model documentariamente concluído;
 - COR, validação externa e COEM concluídos;
-- remediação R1–R5 concluída e validada;
-- R6 concluído;
-- `COD-001`, `COD-002` e `COD-003` registrados.
+- remediação R1–R5 e R6 concluídas;
+- `COD-001` a `COD-004` registrados.
 
 ### Ativo
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- submissão humana de `ECO-CAND-002`.
+- preparação da submissão de `ECO-CAND-004`.
 
-### Pendente por decisão ou dependência
+### Pendente
 
-- manifestação do Fundador sobre `ECO-CAND-002`;
-- quatorze decisões posteriores;
-- reavaliação das formulações `Reformulate` e combinadas;
-- AQS-O01;
-- catálogos canônicos e matriz de sustentação;
-- `BA-CAP-001` e `BA-CAP-002`;
-- rebaseline dos produtos;
-- Commercial Model e Go-to-Market.
+- quatorze decisões humanas restantes;
+- reavaliação das formulações revisadas e combinadas;
+- AQS-O01, catálogos canônicos e matriz de sustentação;
+- Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
 
-### Pausado por decisão
+### Pausado
 
 - Product Engineering;
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. Submissão atual
+## 4. COD-004
 
-`BA-STR-002-COD-SUB-004` apresenta:
+O Fundador aceitou `Reformulate` para `ECO-CAND-002`.
 
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
+> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
 
-A alternativa A é recomendada. Ela propõe reformular o candidato como **Acesso real a possibilidades legítimas e manejáveis**, preservando restrições, fatores de conversão e liberdade substantiva sem transformar abundância de opções em evidência de valor.
+O candidato permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
 
 ## 5. Próximo movimento
 
-Registrar a manifestação do Fundador. Nenhuma reformulação, mudança no COR ou criação de código canônico ocorrerá antes desse ato.
+Preparar a quinta submissão humana para `ECO-CAND-004 — Realização de experiências de valor`, cuja recomendação da COEM é `Reject`. Nenhuma decisão será inferida automaticamente.
