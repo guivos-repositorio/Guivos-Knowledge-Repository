@@ -2,19 +2,18 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.70.0
+version: 4.71.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.72.0
+  - ROADMAP-11.73.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-012
-  - COD-012
-  - M7.14
+  - BA-STR-002-COD-SUB-013
+  - M7.14.1
 normative: false
 ---
 
@@ -55,25 +54,26 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.12.1 | Completed | décima primeira decisão submetida |
 | M7.13 | Completed | `COD-011` registrado |
 | M7.13.1 | Completed | décima segunda decisão submetida |
-| M7.14 | Completed neste incremento | `COD-012` registrado para `BUS-CAND-004` |
+| M7.14 | Completed | `COD-012` registrado |
+| M7.14.1 | Completed neste incremento | décima terceira decisão submetida |
 
 ## 3. Marco vigente
 
-### M7.14 — Twelfth Human Outcome Decision Recorded
+### M7.14.1 — Thirteenth Human Outcome Decision Submitted
 
 **Critérios atendidos:**
 
-- manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Reformulate` aceita;
-- `COD-012` criado para `BUS-CAND-004`;
+- branch baseada diretamente no merge do PR #89;
+- submissão individual `BA-STR-002-COD-SUB-013` criada;
+- recomendação `Reformulate` preservada sem inferência de decisão;
+- resultados `Pass / Pass / Pass / Partial` preservados;
 - formulação original e evidências preservadas;
-- confiança e legitimidade separadas conceitualmente;
-- formulação candidata **Legitimidade institucional sustentada** registrada;
-- confiança institucional preservada como avaliação relacional associada;
-- nenhum novo candidato automático criado;
-- candidato mantido em `Under Validation`;
-- nova aplicação dos quatro testes da COEM exigida;
-- decisões humanas atualizadas para 12 de 18;
+- formulação candidata revisada proposta;
+- continuidade operacional, resiliência e métricas financeiras isoladas separadas do núcleo candidato;
+- `BUS-CAND-010` preservado para decisão individual posterior;
+- `BUS-CAND-005` mantido em `Under Validation`;
+- `COD-013` não criado;
+- decisões humanas preservadas em 12 de 18;
 - COR preservado em 14 `Under Validation`, 2 `Merged` e 2 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
@@ -90,7 +90,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Após integração deste incremento, preparar a submissão de `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana sobre a recomendação `Reformulate`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-013`.
 
 ## 6. Regra de transição
 
