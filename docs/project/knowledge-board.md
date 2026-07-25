@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.62.0
+version: 11.63.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.62.0
+  - ROADMAP-11.63.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-007
+  - BA-STR-002-COD-SUB-008
   - COD-007
-  - M7.9
+  - M7.9.1
 normative: false
 ---
 
@@ -28,12 +28,13 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.9 — Seventh Human Outcome Decision Recorded` |
+| Marco | `M7.9.1 — Eighth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
-| CODR | 7 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 7 de 18 decisões humanas; 1 submissão aberta |
+| Submissão vigente | `ECO-CAND-008 — Reformulate` |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
@@ -61,11 +62,11 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `ECO-CAND-008`.
+- submissão `BA-STR-002-COD-SUB-008` aguardando decisão humana.
 
 ### Pendente
 
-- onze decisões humanas restantes;
+- onze decisões humanas restantes, incluindo a submissão vigente;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -76,16 +77,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-007
+## 4. Submissão de ECO-CAND-008
 
-O Fundador aceitou `Reformulate` para `ECO-CAND-007`.
+A COEM recomenda `Reformulate` para **Participação confiável e protegida**.
 
-**Participação inclusiva, digna e efetiva** foi registrada como formulação candidata:
+Formulação candidata proposta:
 
-> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
+> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
 
-O candidato permanece `Under Validation` e deverá retornar à COEM.
+Proteção absoluta é impossível. Cumprimento de controles não prova confiança, e confiança declarada não substitui proteção verificável.
 
 ## 5. Próximo movimento
 
-Preparar a oitava submissão humana para `ECO-CAND-008 — Participação confiável e protegida`, cuja recomendação da COEM é `Reformulate`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-008`. Nenhuma decisão será inferida automaticamente e `COD-008` não existe neste incremento.
