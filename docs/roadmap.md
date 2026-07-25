@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.56.0
-title: Roadmap Arquitetural — COD-004 Registrado
+id: ROADMAP-11.57.0
+title: Roadmap Arquitetural — ECO-CAND-004 Submetido
 status: active
-version: 11.56.0
+version: 11.57.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.55.0
+  - ROADMAP-11.56.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-004
+  - BA-STR-002-COD-SUB-005
   - COD-004
-  - M7.6
+  - M7.6.1
 ---
 
-# Roadmap Arquitetural — COD-004 Registrado
+# Roadmap Arquitetural — ECO-CAND-004 Submetido
 
 ## 1. Autoridade
 
@@ -30,17 +30,19 @@ Roadmaps anteriores permanecem no histórico e não substituem esta sequência.
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.6` |
+| Marco | `M7.6.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 17 `Under Validation`; 1 `Merged` |
-| CODR | `4 de 18` decisões |
+| CODR | `4 de 18` decisões; 1 submissão aguardando resposta |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
 | COD-004 | `Reformulate` aceito para ECO-CAND-002 |
+| Submissão atual | ECO-CAND-004 sobre `Reject` |
+| COD-005 | não criado |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -73,23 +75,31 @@ Estado:
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 4 de 18;
-- `ECO-CAND-001`: `Reformulate` aceito, permanecendo `Under Validation`;
-- `ECO-CAND-003`: formulação combinada de Agência efetiva e situada, permanecendo `Under Validation`;
-- `ECO-CAND-005`: `Merged into ECO-CAND-003`, com formulação e evidências preservadas;
+- submissões aguardando resposta: 1;
+- `ECO-CAND-005`: `Merged into ECO-CAND-003`, com rastreabilidade preservada;
 - `ECO-CAND-002`: `Reformulate` aceito, permanecendo `Under Validation`;
+- `ECO-CAND-004`: submetido à quinta decisão individual;
 - Outcomes canônicos: 0.
 
-## 5. COD-004 — Acesso real registrado
+## 5. Submissão atual — ECO-CAND-004
 
-A formulação candidata vigente é:
+A COEM recomenda `Reject` porque a formulação descreve conversão, experiência vivida, avaliação subjetiva e efeito potencial em uma sequência de jornada, sem unidade permanente autônoma.
 
-> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
+O Fundador deverá escolher:
 
-A reformulação não aprova o candidato, não cria código canônico e não inicia AQS-O01.
+```text
+A — Aceitar Reject
+B — Rejeitar Reject, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A preserva experiência na arquitetura da Jornada e como fonte de evidências, mas retira `ECO-CAND-004` do futuro catálogo de Outcomes.
+
+Até a manifestação, `COD-005` não existe, `ECO-CAND-004` permanece `Under Validation` e o COR não é alterado.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `ECO-CAND-004` à decisão humana sobre `Reject`;
+1. registrar a decisão humana sobre `ECO-CAND-004`;
 2. concluir as treze decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
@@ -126,4 +136,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Preparar e submeter `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual. Nenhuma rejeição será registrada antes da manifestação explícita do Fundador.
+Receber e registrar a manifestação humana sobre `BA-STR-002-COD-SUB-005`. Nenhuma rejeição será registrada antes desse ato.
