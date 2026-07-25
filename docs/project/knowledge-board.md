@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.65.0
+version: 11.66.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.65.0
+  - ROADMAP-11.66.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-009
-  - COD-008
-  - M7.10.1
+  - COD-009
+  - M7.11
 normative: false
 ---
 
@@ -28,13 +28,12 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.10.1 — Ninth Human Outcome Decision Submitted` |
+| Marco | `M7.11 — Ninth Human Outcome Decision Recorded` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
-| CODR | 8 de 18 decisões humanas; 1 submissão aberta |
-| Submissão vigente | `BUS-CAND-001 — Reject` |
+| COR | 15 `Under Validation`; 1 `Merged`; 2 `Rejected` |
+| CODR | 9 de 18 decisões humanas; 0 submissões abertas |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
@@ -43,6 +42,7 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | COD-006 | `Reformulate` aceito para ECO-CAND-006 |
 | COD-007 | `Reformulate` aceito para ECO-CAND-007 |
 | COD-008 | `Reformulate` aceito para ECO-CAND-008 |
+| COD-009 | `Reject` aceito para BUS-CAND-001 |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -56,18 +56,18 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - Guivos Economic Model documentariamente concluído;
 - COR, validação externa e COEM concluídos;
 - remediação R1–R5 e R6 concluídas;
-- `COD-001` a `COD-008` registrados.
+- `COD-001` a `COD-009` registrados.
 
 ### Ativo
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- submissão `BA-STR-002-COD-SUB-009` aguardando decisão humana.
+- preparação da submissão de `BUS-CAND-002`.
 
 ### Pendente
 
-- dez decisões humanas restantes, incluindo a submissão vigente;
+- nove decisões humanas restantes;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -78,14 +78,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. Submissão de BUS-CAND-001
+## 4. COD-009
 
-A COEM recomenda `Reject` para **Aderência permanente ao propósito**.
+O Fundador aceitou `Reject` para `BUS-CAND-001 — Aderência permanente ao propósito`.
 
 > A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes.
 
-A recomendação rejeita somente a classificação como Business Outcome. Propósito e princípios permanecem autoridades constitucionais; aderência continua obrigação de governança, critério de admissibilidade e referência para prevenção de *mission drift*.
+A candidatura foi retirada do futuro catálogo de Business Outcomes. Aderência ao propósito permanece princípio constitucional, obrigação de governança e accountability, critério de admissibilidade, referência para prevenção e correção de *mission drift* e requisito transversal de coerência institucional.
 
 ## 5. Próximo movimento
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-009`. Nenhuma decisão será inferida automaticamente e `COD-009` não existe neste incremento.
+Preparar a décima submissão humana para `BUS-CAND-002 — Relevância contínua das respostas`, cuja recomendação da COEM é `Merge into BUS-CAND-003`.
