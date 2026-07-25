@@ -2,19 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.75.0
+version: 1.76.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-004
+  - GKR-CANON-MATRIX-COD-005-SUBMISSION
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-004
+  - BA-STR-002-COD-SUB-005
   - COD-004
-  - M7.6
+  - M7.6.1
 normative: false
 ---
 
@@ -53,11 +53,13 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-002` | Manter | `Reformulate` aceito para `ECO-CAND-003` |
 | `COD-003` | Manter | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
 | `COD-004` | Manter | `Reformulate` aceito para `ECO-CAND-002` |
-| CODR | Manter ativo | 4 de 18 decisões registradas |
-| COR | Refinar | 17 candidatos `Under Validation`; 1 `Merged` |
+| CODR | Manter ativo | 4 de 18 decisões; 1 submissão aguardando resposta |
+| COR | Manter | 17 candidatos `Under Validation`; 1 `Merged` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-005` | Unificar em `ECO-CAND-003` | estado `Merged`; formulação e evidências preservadas |
+| `ECO-CAND-004` | Pendente | submetido sobre `Reject`; decisão humana própria necessária |
+| `COD-005` | Pendente | não existe antes da manifestação humana |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
 | produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
@@ -65,27 +67,33 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado de COD-004
+## 4. Resultado de COD-004 preservado
 
-A alternativa `A — Aceitar Reformulate` foi consolidada como decisão humana para `ECO-CAND-002`.
+A alternativa `A — Aceitar Reformulate` permanece consolidada para `ECO-CAND-002`, que continua `Under Validation` com formulação revisada e nova COEM pendente.
 
-### Formulação candidata vigente
+## 5. Submissão corrente
 
-> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
+`BA-STR-002-COD-SUB-005` oferece ao Fundador:
 
-A decisão:
+```text
+A — Aceitar Reject
+B — Rejeitar Reject, com fundamentação
+C — Devolver para nova análise
+```
 
-- preserva a formulação originalmente avaliada;
-- registra a formulação revisada como candidata;
-- mantém `ECO-CAND-002` em `Under Validation`;
-- exige nova aplicação dos quatro testes da COEM;
-- não cria código canônico;
-- não inicia AQS-O01, Business Capabilities ou Product Engineering.
+A alternativa A é recomendada. Ela propõe:
 
-## 5. Addendum vigente
+- retirar `ECO-CAND-004` do futuro catálogo de Outcomes;
+- preservar o candidato, sua formulação e evidências para rastreabilidade;
+- preservar experiência como unidade da Jornada e fonte de evidências;
+- não alterar automaticamente PAS-001, produtos ou capacidades.
 
-O addendum vigente é `Canonical Consolidation Matrix 1.75.0 — COD-004`.
+Nenhuma alternativa foi consolidada como decisão. O COR permanece inalterado.
 
-## 6. Próximo ato
+## 6. Addendum vigente
 
-Preparar a submissão de `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual sobre a recomendação `Reject`.
+O addendum vigente é `Canonical Consolidation Matrix 1.76.0 — ECO-CAND-004 Decision Submission`.
+
+## 7. Próximo ato
+
+Registrar a manifestação humana e somente então definir se será criado `COD-005`, se a recomendação será rejeitada ou se o candidato retornará à análise.
