@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.17.0
+version: 0.18.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -13,6 +13,7 @@ depends_on:
 related:
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
+  - BA-STR-002-EOVB-005
   - BA-STR-002-EOVB-006
   - RP-001-EVIDENCE
   - GKR-R6-RESUMPTION-001
@@ -24,6 +25,7 @@ related:
   - BA-STR-002-COD-SUB-007
   - BA-STR-002-COD-SUB-008
   - BA-STR-002-COD-SUB-009
+  - BA-STR-002-COD-SUB-010
   - COD-001
   - COD-002
   - COD-003
@@ -33,7 +35,7 @@ related:
   - COD-007
   - COD-008
   - COD-009
-  - M7.11
+  - M7.11.1
 normative: false
 execution_status: in-progress
 ---
@@ -62,7 +64,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 9
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: BUS-CAND-002
 Accepted Reformulate dispositions: 6
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 2
@@ -270,7 +273,41 @@ A rejeição atinge somente a classificação como Business Outcome autônomo. A
 
 A decisão não relativiza o propósito, não reduz a autoridade dos princípios permanentes e não trata desempenho, reputação, comunicação ou aderência declarada como prova suficiente de prática institucional.
 
-## 13. Matriz cumulativa de decisões
+## 13. Submissão decisória atual — BUS-CAND-002
+
+A submissão `BA-STR-002-COD-SUB-010` apresenta a recomendação `Merge into BUS-CAND-003`.
+
+### Formulação originalmente avaliada
+
+> As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes.
+
+### Formulação combinada candidata
+
+**Habilitação consistente e contextualmente relevante de valor legítimo**
+
+> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+
+### Fundamentação da recomendação
+
+Relevância é material, observável e decisória, porém emerge do ajuste entre contexto, capacidades, proposições e valor vivido. Sua autonomia como Outcome não foi demonstrada, e a sobreposição com `BUS-CAND-003` é material.
+
+### Alternativas
+
+```text
+A — Aceitar Merge into BUS-CAND-003
+B — Rejeitar Merge, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada. Enquanto não houver manifestação explícita:
+
+- `COD-010` não existe;
+- decisões humanas permanecem em `9 de 18`;
+- `BUS-CAND-002` e `BUS-CAND-003` permanecem `Under Validation`;
+- nenhuma alteração é executada no COR;
+- nenhum código canônico é criado.
+
+## 14. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
@@ -283,7 +320,7 @@ A decisão não relativiza o propósito, não reduz a autoridade dos princípios
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | BUS-CAND-001 | Reject | Aceitar `Reject` | `Rejected`; conteúdo preservado na Constituição e governança |
-| BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
+| BUS-CAND-002 | Merge into BUS-CAND-003 | — | submitted to human decision; awaiting response |
 | BUS-CAND-003 | Reformulate | — | Pending human decision |
 | BUS-CAND-004 | Reformulate | — | Pending human decision |
 | BUS-CAND-005 | Reformulate | — | Pending human decision |
@@ -293,21 +330,24 @@ A decisão não relativiza o propósito, não reduz a autoridade dos princípios
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 14. Gate do incremento
+## 15. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
+| submissão individual de BUS-CAND-002 criada | Pass |
 | recomendação original preservada | Pass |
-| `COD-009` registrado | Pass |
-| formulação e evidências preservadas | Pass |
-| `BUS-CAND-001` movido para `Rejected` | Pass |
-| destino constitucional e de governança preservado | Pass |
-| autoridade do propósito preservada | Pass |
-| promoção canônica bloqueada | Pass |
+| evidências e limites explicitados | Pass |
+| alvo e formulação combinada candidata registrados | Pass |
+| alternativas humanas A, B e C registradas | Pass |
+| decisão humana inferida automaticamente | Blocked |
+| alteração automática do COR | Blocked |
+| aprovação automática do alvo | Blocked |
+| promoção canônica | Blocked |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 15. Próximo passo governado
+## 16. Próximo passo governado
 
-Preparar e submeter `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana individual sobre a recomendação `Merge into BUS-CAND-003`.
+Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-010`.
+
+Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-010`, preservar formulação e evidências, mover `BUS-CAND-002` para `Merged`, incorporar relevância contextual à formulação candidata de `BUS-CAND-003`, manter o alvo em `Under Validation` e exigir nova aplicação dos quatro testes da COEM.
