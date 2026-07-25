@@ -2,15 +2,16 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.47.0
+version: 4.48.0
 owner: Guivos
 last_updated: 2026-07-24
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.49.0
+  - ROADMAP-11.50.0
   - GKR-REMEDIATION-002
-  - M7.3.3
+  - GKR-R5-VALIDATION-001
+  - M7.3.4
 normative: false
 ---
 
@@ -33,22 +34,25 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.3 | Completed | auditoria de estado e sequência concluída |
 | M7.3.1 | Completed | precedência documental e Roadmap global reconciliados |
 | M7.3.2 | Completed | controles centrais reconciliados |
-| M7.3.3 | Completed neste incremento | navegação oficial reconciliada |
+| M7.3.3 | Completed | navegação oficial reconciliada |
+| M7.3.4 | Completed neste PR | validação mecânica integral aprovada |
 
 ## 3. Marco vigente
 
-### M7.3.3 — Official Navigation Reconciled
+### M7.3.4 — Repository Mechanical Validation Completed
 
 **Critérios atendidos:**
 
-- Current State Register exposto no menu oficial;
-- Candidate Outcome Decision Register exposto no menu oficial;
-- auditoria e plano de remediação acessíveis;
-- controles centrais e registros recentes acessíveis;
-- autoridades principais de Journey, Economic Model e Business Architecture priorizadas;
-- documentos históricos mantidos no site e na pesquisa, sem concorrer no menu com o estado vigente;
-- `NC-MAJ-06` encerrada documentalmente;
-- R5 preservado como gate obrigatório anterior à retomada da A2-R03.
+- workflow reproduzível incorporado ao repositório;
+- front matter YAML validado;
+- IDs declarados validados como únicos;
+- entradas do `mkdocs.yml` resolvidas;
+- links e imagens Markdown locais resolvidos;
+- `git diff --check` aprovado;
+- `mkdocs build --strict` aprovado;
+- árvore rastreada permaneceu limpa após os testes;
+- zero achados Critical, Major ou Minor conhecidos abertos;
+- R6 preservado como próximo incremento após integração e autorização explícita.
 
 ## 4. Estado das revisões A2
 
@@ -56,17 +60,15 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 |---|---|
 | A2-R01 — Foundation Architecture Review | Completed — Frozen in A2-B3 |
 | A2-R02 — Fundamental Model Review | Execution Ready — Operationally Paused |
-| A2-R03 — Business Architecture Review | Active — Temporarily Paused for GKR Remediation |
+| A2-R03 — Business Architecture Review | Active — Awaiting Governed Resumption |
 | A2-R04 — Product Architecture Review | Planned |
 | A2-R05 — Cross-Architecture Review | Planned |
 
-A A2-R03 não foi cancelada. Sua execução será retomada somente após R5 e resultado `PASS`, começando pela decisão individual de `ECO-CAND-003`.
+A A2-R03 não foi cancelada. Sua execução será retomada somente pelo R6, começando pela decisão individual de `ECO-CAND-003`.
 
 ## 5. Próximo marco candidato
 
-`M7.3.4 — Repository Mechanical Validation Completed`, correspondente ao R5.
-
-O parecer de R5 poderá autorizar R6 ou registrar bloqueios adicionais.
+`M7.3.5 — Governed Architectural Work Resumed`, correspondente ao R6.
 
 ## 6. Regra de transição
 

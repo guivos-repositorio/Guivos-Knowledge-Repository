@@ -1,0 +1,54 @@
+name: GKR Mechanical Validation
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install documentation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt PyYAML
+
+      - name: Validate front matter, IDs, links and navigation
+        run: python scripts/validate_gkr.py
+
+      - name: Check whitespace errors in the proposed diff
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            git diff --check "${{ github.event.pull_request.base.sha }}...HEAD"
+          else
+            git diff --check "HEAD^...HEAD"
+          fi
+
+      - name: Build MkDocs in strict mode
+        run: mkdocs build --strict --site-dir /tmp/gkr-site
+
+      - name: Confirm clean tracked tree
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain --untracked-files=no)" ]]; then
+            git status --short
+            echo "Tracked files changed during validation."
+            exit 1
+          fi
