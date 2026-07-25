@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.54.0
-title: Roadmap Arquitetural — COD-003 Registrado
+id: ROADMAP-11.55.0
+title: Roadmap Arquitetural — ECO-CAND-002 Submetido
 status: active
-version: 11.54.0
+version: 11.55.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.53.0
+  - ROADMAP-11.54.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-003
+  - BA-STR-002-COD-SUB-004
   - COD-003
-  - M7.5
+  - M7.5.1
 ---
 
-# Roadmap Arquitetural — COD-003 Registrado
+# Roadmap Arquitetural — ECO-CAND-002 Submetido
 
 ## 1. Autoridade
 
@@ -30,16 +30,18 @@ Roadmaps anteriores permanecem no histórico e não substituem esta sequência.
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.5` |
+| Marco | `M7.5.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 17 `Under Validation`; 1 `Merged` |
-| CODR | `3 de 18` decisões |
+| CODR | `3 de 18` decisões; 1 submissão aguardando resposta |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
+| Submissão atual | ECO-CAND-002 sobre `Reformulate` |
+| COD-004 | não criado |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -72,22 +74,32 @@ Estado:
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 3 de 18;
-- `ECO-CAND-001`: `Reformulate` aceito, permanecendo `Under Validation`;
-- `ECO-CAND-003`: formulação combinada de Agência efetiva e situada, permanecendo `Under Validation`;
-- `ECO-CAND-005`: `Merged into ECO-CAND-003`, com formulação e evidências preservadas;
+- submissões aguardando resposta: 1;
+- `ECO-CAND-005`: `Merged into ECO-CAND-003`, com rastreabilidade preservada;
+- `ECO-CAND-002`: submetido à quarta decisão individual;
 - Outcomes canônicos: 0.
 
-## 5. COD-003 — Continuidade adaptativa incorporada
+## 5. Submissão atual — ECO-CAND-002
 
-A formulação combinada candidata é:
+A COEM recomenda `Reformulate` porque a formulação original sugere descoberta nominal de opções e não explicita acesso real, restrições, fatores de conversão e liberdade substantiva de escolha.
 
-> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar, abandonar ou renovar seus próprios próximos passos diante de mudanças, aprendizados e limites legítimos, individualmente ou em relações de co-agência.
+O Fundador deverá escolher:
 
-A fusão não aprova o alvo, não cria código canônico e não inicia AQS-O01.
+```text
+A — Aceitar Reformulate
+B — Rejeitar Reformulate, com fundamentação
+C — Devolver para nova análise
+```
+
+### Formulação candidata proposta
+
+> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
+
+Até a manifestação, `COD-004` não existe, `ECO-CAND-002` permanece `Under Validation` e o COR não é alterado.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `ECO-CAND-002` à decisão humana sobre `Reformulate`;
+1. registrar a decisão humana sobre `ECO-CAND-002`;
 2. concluir as quatorze decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
@@ -124,4 +136,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Preparar e submeter `ECO-CAND-002` à quarta decisão humana individual. Nenhuma reformulação será registrada antes da manifestação explícita do Fundador.
+Receber e registrar a manifestação humana sobre `BA-STR-002-COD-SUB-004`. Nenhuma reformulação será aceita antes desse ato.
