@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.11.0
+version: 1.13.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -14,12 +14,12 @@ related:
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-005
+  - BA-STR-002-COD-SUB-006
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - COD-005
-  - ROADMAP-11.58.0
-  - M7.7
+  - COD-006
+  - ROADMAP-11.60.0
+  - M7.8
 normative: true
 ---
 
@@ -29,27 +29,26 @@ normative: true
 
 Este registro é a superfície oficial para o estado global vigente do Guivos Knowledge Repository.
 
-Quando houver divergência, autoridades normativas e decisões formalmente registradas governam o conteúdo arquitetural; este registro governa o estado transversal e o próximo ato autorizado.
-
 ## 2. Estado global vigente
 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.7 — Fifth Human Outcome Decision Recorded` |
+| Marco vigente | `M7.8 — Sixth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.17.0`; 16 `Under Validation`, 1 `Merged` e 1 `Rejected` |
-| CODR | `0.9.0`; 5 de 18 decisões humanas; 0 submissões aguardando resposta |
+| COR | `0.18.0`; 16 `Under Validation`, 1 `Merged` e 1 `Rejected` |
+| CODR | `0.11.0`; 6 de 18 decisões humanas; 0 submissões aguardando resposta |
 | `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
 | `COD-003` | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
 | `COD-004` | `Reformulate` aceito para `ECO-CAND-002` |
 | `COD-005` | `Reject` aceito para `ECO-CAND-004` |
-| `ECO-CAND-004` | `Rejected`; experiência preservada na Jornada e como fonte de evidências |
-| Próximo candidato | `ECO-CAND-006 — Conexões relevantes e fortalecedoras` |
+| `COD-006` | `Reformulate` aceito para `ECO-CAND-006` |
+| `ECO-CAND-006` | `Under Validation`; formulação candidata **Saúde relacional no ecossistema** registrada |
+| Próximo candidato | `ECO-CAND-007 — Participação inclusiva e digna` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -60,29 +59,15 @@ Quando houver divergência, autoridades normativas e decisões formalmente regis
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Decisões registradas
+## 3. Resultado de COD-006
 
-### COD-001 — ECO-CAND-001
+O Fundador aceitou `Reformulate` para `ECO-CAND-006`.
 
-`Reformulate` aceito. O candidato permanece `Under Validation`.
+A formulação original foi preservada e a formulação candidata registrada é:
 
-### COD-002 — ECO-CAND-003
+> O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
 
-`Reformulate` aceito. A formulação candidata de agência permanece `Under Validation`.
-
-### COD-003 — ECO-CAND-005
-
-`Merge into ECO-CAND-003` aceito. O candidato permanece rastreável como `Merged`.
-
-### COD-004 — ECO-CAND-002
-
-`Reformulate` aceito. A formulação de acesso real permanece `Under Validation`.
-
-### COD-005 — ECO-CAND-004
-
-`Reject` aceito. `ECO-CAND-004` foi alterado para `Rejected` porque descreve episódio de experiência e realização de valor, e não condição permanente autônoma do ecossistema.
-
-A decisão preserva experiência como unidade da Jornada, realização de valor em uso, fonte de evidências e referência para capacidades e métricas futuras.
+O candidato permanece `Under Validation`. Quantidade, densidade, intensidade ou coesão de conexões não constituem evidência suficiente de saúde relacional.
 
 ## 4. Sequência oficial
 
@@ -91,7 +76,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 5 de 18
+→ decisões humanas do BA-STR-002 — 6 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -102,9 +87,9 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Preparar e submeter `ECO-CAND-006 — Conexões relevantes e fortalecedoras` à sexta decisão humana individual sobre a recomendação `Reformulate`.
+Preparar e submeter `ECO-CAND-007 — Participação inclusiva e digna` à sétima decisão humana individual sobre a recomendação `Reformulate`.
 
-Nenhuma reformulação será executada automaticamente. `COD-006` somente poderá nascer após manifestação explícita do Fundador.
+Nenhuma decisão será registrada automaticamente.
 
 ## 6. Backlog global preservado
 
@@ -127,7 +112,6 @@ O estado atual não autoriza:
 
 - promover candidatos a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
-- remover experiência da Guivos ou alterar automaticamente o `PAS-001`;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
 - especificar produtos especializados;

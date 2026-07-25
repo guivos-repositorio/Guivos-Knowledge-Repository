@@ -2,19 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.56.0
+version: 4.58.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.58.0
+  - ROADMAP-11.60.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-005
-  - COD-005
-  - M7.7
+  - BA-STR-002-COD-SUB-006
+  - COD-006
+  - M7.8
 normative: false
 ---
 
@@ -22,7 +22,7 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. Os documentos `architectural-milestones-*.md` preservam snapshots e critérios detalhados. O estado transversal é governado pelo [Current State Register](current-state-register.md).
+Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. Os documentos `architectural-milestones-*.md` preservam snapshots e critérios detalhados.
 
 ## 2. Linha de maturidade consolidada
 
@@ -33,30 +33,33 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M5–M5.18 | Completed | arquitetura funcional e publicação do Journey |
 | M6.0–M6.10 | Completed | desenvolvimento e fechamento documental do Economic Model |
 | M7.0–M7.1.5 | Completed | COR, validação externa e COEM concluídos |
-| M7.2 | Completed | ciclo decisório iniciado; `COD-001` registrado |
+| M7.2 | Completed | `COD-001` registrado |
 | M7.3–M7.3.5 | Completed | auditoria, remediação, validação e retomada governada |
-| M7.4 | Completed | segunda decisão registrada como `COD-002` |
+| M7.4 | Completed | `COD-002` registrado |
 | M7.4.1 | Completed | terceira decisão submetida |
-| M7.5 | Completed | terceira decisão registrada como `COD-003` |
+| M7.5 | Completed | `COD-003` registrado |
 | M7.5.1 | Completed | quarta decisão submetida |
-| M7.6 | Completed | quarta decisão registrada como `COD-004` |
-| M7.6.1 | Completed | quinta decisão submetida para `ECO-CAND-004` |
-| M7.7 | Completed neste incremento | quinta decisão registrada como `COD-005` |
+| M7.6 | Completed | `COD-004` registrado |
+| M7.6.1 | Completed | quinta decisão submetida |
+| M7.7 | Completed | `COD-005` registrado |
+| M7.7.1 | Completed | sexta decisão submetida |
+| M7.8 | Completed neste incremento | sexta decisão registrada como `COD-006` |
 
 ## 3. Marco vigente
 
-### M7.7 — Fifth Human Outcome Decision Recorded
+### M7.8 — Sixth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
 - manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Reject` aceita;
-- `COD-005` criado para `ECO-CAND-004`;
-- candidato alterado para `Rejected`;
-- formulação e evidências preservadas;
-- experiência preservada na Jornada e como fonte de evidências;
-- decisões humanas atualizadas para 5 de 18;
-- COR atualizado para 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
+- alternativa `A — Aceitar Reformulate` aceita;
+- `COD-006` criado para `ECO-CAND-006`;
+- formulação original preservada;
+- formulação candidata **Saúde relacional no ecossistema** registrada;
+- candidato mantido em `Under Validation`;
+- nova aplicação dos quatro testes da COEM exigida;
+- decisões humanas atualizadas para 6 de 18;
+- COR preservado em 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -72,7 +75,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Preparar a submissão de `ECO-CAND-006 — Conexões relevantes e fortalecedoras` à sexta decisão humana sobre a recomendação `Reformulate`.
+Preparar a submissão de `ECO-CAND-007 — Participação inclusiva e digna` à sétima decisão humana sobre a recomendação `Reformulate`.
 
 ## 6. Regra de transição
 
