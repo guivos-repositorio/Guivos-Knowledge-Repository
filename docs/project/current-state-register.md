@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Guivos Knowledge Repository
-last_updated: 2026-07-24
+last_updated: 2026-07-25
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -14,11 +14,12 @@ related:
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-002
+  - BA-STR-002-COD-SUB-003
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
   - COD-002
-  - ROADMAP-11.52.0
-  - M7.4
+  - ROADMAP-11.53.0
+  - M7.4.1
 normative: true
 ---
 
@@ -48,17 +49,19 @@ Conflitos entre essas superfícies constituem não conformidade documental e nã
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.4 — Second Human Outcome Decision Recorded` |
+| Marco vigente | `M7.4.1 — Third Human Outcome Decision Submitted` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| Registro decisório | `BA-STR-002-CODR-001 0.3.0` |
+| Registro decisório | `BA-STR-002-CODR-001 0.4.0` |
 | Decisões humanas registradas | `2 de 18` |
 | `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
-| `ECO-CAND-003` | `Under Validation`; formulação candidata Agência efetiva e situada |
-| Próximo candidato | `ECO-CAND-005` |
+| Submissão atual | `BA-STR-002-COD-SUB-003` para `ECO-CAND-005` |
+| Recomendação atual | `Merge into ECO-CAND-003` |
+| `COD-003` | não criado |
+| `ECO-CAND-005` | permanece `Under Validation`; nenhuma fusão executada |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -76,7 +79,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 2 de 18
+→ decisões humanas do BA-STR-002 — 2 de 18; terceira submissão aberta
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -87,21 +90,34 @@ Guivos Journey — concluído funcionalmente e publicado
 
 A passagem do Economic Model para A2-R03 foi definida pela revisão de fechamento do próprio Economic Model porque Outcomes e Business Capabilities antecedem organização, processos, ofertas e execução.
 
-## 5. Decisão vigente
+## 5. Decisões registradas
 
-O Fundador da Guivos aceitou a alternativa `A — Aceitar Reformulate` para `ECO-CAND-003`.
+### COD-001 — ECO-CAND-001
 
-A formulação candidata registrada é:
+`Reformulate` aceito. O candidato permanece `Under Validation`.
 
-> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
+### COD-002 — ECO-CAND-003
 
-Essa decisão não aprova o candidato nem cria código canônico.
+`Reformulate` aceito. A formulação candidata **Agência efetiva e situada** permanece `Under Validation` e não possui código canônico.
 
-## 6. Próximo ato autorizado
+## 6. Ato governado atual
 
-Preparar e submeter `ECO-CAND-005 — Continuidade da evolução autodeterminada` à decisão humana individual sobre a recomendação `Merge into ECO-CAND-003`.
+O próximo ato autorizado é a manifestação do Fundador sobre `BA-STR-002-COD-SUB-003`:
 
-A submissão deverá preservar `ECO-CAND-005` como candidato independente até manifestação explícita. Nenhuma fusão poderá ser inferida.
+```text
+A — Aceitar Merge into ECO-CAND-003
+B — Rejeitar a fusão, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada pela COEM e pelo pacote decisório. Nenhuma alternativa foi inferida ou registrada como decisão.
+
+Até a manifestação:
+
+- `ECO-CAND-005` permanece rastreável e `Under Validation`;
+- `COD-003` não existe;
+- a formulação de `ECO-CAND-003` registrada em `COD-002` permanece vigente;
+- nenhuma mudança é executada no COR.
 
 ## 7. Backlog global preservado
 
@@ -122,8 +138,10 @@ Essa ordem permanece provisória e não constitui autorização de início.
 
 O estado atual não autoriza:
 
-- promover `ECO-CAND-003` a `Approved`;
-- executar automaticamente a fusão de `ECO-CAND-005`;
+- criar `COD-003` sem manifestação humana;
+- alterar `ECO-CAND-005` para `Merged` automaticamente;
+- alterar a formulação de `ECO-CAND-003` por inferência;
+- promover candidatos a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
