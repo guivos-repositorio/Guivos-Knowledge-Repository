@@ -187,6 +187,7 @@ nav:
           - Decision Resolution — BUS-CAND-003: business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-003.md
           - Decision Resolution — BUS-CAND-004: business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-004.md
           - Decision Resolution — BUS-CAND-005: business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-005.md
+          - Decision Submission — BUS-CAND-006: business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-006.md
 
   - Governança e Validação:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
@@ -245,6 +246,7 @@ nav:
           - 11.72.0 — COD-012: project/knowledge-board-11.72.0.md
           - 11.73.0 — BUS-CAND-005 Submitted: project/knowledge-board-11.73.0.md
           - 11.74.0 — COD-013: project/knowledge-board-11.74.0.md
+          - 11.75.0 — BUS-CAND-006 Submitted: project/knowledge-board-11.75.0.md
       - Architectural Milestones:
           - 4.43.0 — M7.2: project/architectural-milestones-4.43.0.md
           - 4.44.0 — M7.3: project/architectural-milestones-4.44.0.md
@@ -276,6 +278,7 @@ nav:
           - 4.70.0 — M7.14: project/architectural-milestones-4.70.0.md
           - 4.71.0 — M7.14.1: project/architectural-milestones-4.71.0.md
           - 4.72.0 — M7.15: project/architectural-milestones-4.72.0.md
+          - 4.73.0 — M7.15.1: project/architectural-milestones-4.73.0.md
       - Canonical Consolidation Matrix:
           - 1.65.0 — Repository State Audit: project/canonical-consolidation-matrix-gkr-audit-002-addendum.md
           - 1.66.0 — R1 and R2: project/canonical-consolidation-matrix-gkr-remediation-r1-r2-addendum.md
@@ -306,6 +309,7 @@ nav:
           - 1.91.0 — COD-012: project/canonical-consolidation-matrix-cod-012-addendum.md
           - 1.92.0 — BUS-CAND-005 Submission: project/canonical-consolidation-matrix-cod-013-submission-addendum.md
           - 1.93.0 — COD-013: project/canonical-consolidation-matrix-cod-013-addendum.md
+          - 1.94.0 — BUS-CAND-006 Submission: project/canonical-consolidation-matrix-cod-014-submission-addendum.md
       - Changelogs:
           - 0.93.0 — Repository State Audit: project/changelog-0.93.0-gkr-audit-002.md
           - 0.94.0 — R1 and R2: project/changelog-0.94.0-gkr-remediation-r1-r2.md
@@ -322,7 +326,7 @@ nav:
           - 1.5.0 — COD-005: project/changelog-1.5.0-cod-005.md
           - 1.6.0 — ECO-CAND-006 Submission: project/changelog-1.6.0-cod-006-submission.md
           - 1.7.0 — COD-006: project/changelog-1.7.0-cod-006.md
-          - 1.8.0 — ECO-CAND-007 Submission: project/changelog-1.8.0-cod-007-submission.md
+          - 1.8.0 — ECO-CAND-007 Submitted: project/changelog-1.8.0-cod-007-submission.md
           - 1.9.0 — COD-007: project/changelog-1.9.0-cod-007.md
           - 1.10.0 — ECO-CAND-008 Submission: project/changelog-1.10.0-cod-008-submission.md
           - 1.11.0 — COD-008: project/changelog-1.11.0-cod-008.md
@@ -336,6 +340,7 @@ nav:
           - 1.19.0 — COD-012: project/changelog-1.19.0-cod-012.md
           - 1.20.0 — BUS-CAND-005 Submission: project/changelog-1.20.0-cod-013-submission.md
           - 1.21.0 — COD-013: project/changelog-1.21.0-cod-013.md
+          - 1.22.0 — BUS-CAND-006 Submission: project/changelog-1.22.0-cod-014-submission.md
       - Continuidade:
           - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
           - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
