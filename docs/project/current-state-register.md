@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.9.0
+version: 1.10.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -14,12 +14,12 @@ related:
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-004
+  - BA-STR-002-COD-SUB-005
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
   - COD-004
-  - ROADMAP-11.56.0
-  - M7.6
+  - ROADMAP-11.57.0
+  - M7.6.1
 normative: true
 ---
 
@@ -36,19 +36,21 @@ Quando houver divergência, autoridades normativas e decisões formalmente regis
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.6 — Fourth Human Outcome Decision Recorded` |
+| Marco vigente | `M7.6.1 — Fifth Human Outcome Decision Submitted` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
 | COR | `0.16.0`; 17 candidatos `Under Validation` e 1 `Merged` |
-| CODR | `0.7.0`; 4 de 18 decisões humanas |
+| CODR | `0.8.0`; 4 de 18 decisões humanas; 1 submissão aguardando resposta |
 | `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
 | `COD-003` | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
 | `COD-004` | `Reformulate` aceito para `ECO-CAND-002` |
-| `ECO-CAND-002` | `Under Validation`; formulação revisada pendente de nova COEM |
-| Próximo candidato | `ECO-CAND-004` |
+| Submissão atual | `BA-STR-002-COD-SUB-005` para `ECO-CAND-004` |
+| Recomendação atual | `Reject` |
+| `COD-005` | não criado |
+| `ECO-CAND-004` | permanece `Under Validation`; nenhuma rejeição aceita |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -77,16 +79,41 @@ Quando houver divergência, autoridades normativas e decisões formalmente regis
 
 `Reformulate` aceito. A formulação candidata **Acesso real a possibilidades legítimas e manejáveis** permanece `Under Validation`.
 
-> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
+## 4. Ato governado atual
 
-## 4. Sequência oficial
+O próximo ato autorizado é a manifestação do Fundador sobre `BA-STR-002-COD-SUB-005`:
+
+```text
+A — Aceitar Reject
+B — Rejeitar Reject, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada pela COEM e pelo pacote decisório.
+
+### Formulação avaliada
+
+> Participantes conseguem converter oportunidades escolhidas em experiências vividas que produzem valor percebido e potencial de evolução.
+
+### Destino arquitetural preservado na alternativa A
+
+A aceitação de `Reject` retirará o candidato do futuro catálogo de Outcomes, mas preservará experiência como unidade da Jornada, momento de realização de valor e fonte de evidências arquiteturais.
+
+Até a manifestação:
+
+- `ECO-CAND-004` permanece rastreável e `Under Validation`;
+- `COD-005` não existe;
+- nenhuma mudança é executada no COR;
+- nenhum código canônico é criado.
+
+## 5. Sequência oficial
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 4 de 18
+→ decisões humanas do BA-STR-002 — 4 de 18; quinta submissão aberta
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -94,12 +121,6 @@ Guivos Journey — concluído funcionalmente e publicado
 → Go-to-Market
 → Product Engineering somente mediante autorização explícita
 ```
-
-## 5. Próximo ato autorizado
-
-Preparar e submeter `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual sobre a recomendação `Reject`.
-
-Nenhuma rejeição será executada automaticamente. `COD-005` somente poderá nascer após manifestação explícita do Fundador.
 
 ## 6. Backlog global preservado
 
@@ -120,7 +141,10 @@ Essa ordem não constitui autorização de início.
 
 O estado atual não autoriza:
 
-- promover `ECO-CAND-002` ou qualquer outro candidato a `Approved`;
+- criar `COD-005` sem manifestação humana;
+- alterar `ECO-CAND-004` para `Rejected` por inferência;
+- remover experiência da Guivos ou alterar automaticamente o PAS-001;
+- promover candidatos a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
