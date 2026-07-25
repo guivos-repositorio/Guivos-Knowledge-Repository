@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.23.0
+version: 0.25.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -29,6 +29,7 @@ related:
   - BA-STR-002-COD-SUB-010
   - BA-STR-002-COD-SUB-011
   - BA-STR-002-COD-SUB-012
+  - BA-STR-002-COD-SUB-013
   - COD-001
   - COD-002
   - COD-003
@@ -41,7 +42,8 @@ related:
   - COD-010
   - COD-011
   - COD-012
-  - M7.14
+  - COD-013
+  - M7.15
 normative: false
 execution_status: in-progress
 ---
@@ -69,9 +71,9 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 12
+Human decisions recorded: 13
 Decision submissions awaiting human response: 0
-Accepted Reformulate dispositions: 8
+Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
 Accepted Reject dispositions: 2
 Candidate state changes: 4
@@ -247,6 +249,30 @@ Relevância contextual foi incorporada à formulação candidata de `BUS-CAND-00
 
 Confiança institucional permanece avaliação relacional associada. A decisão não cria novo candidato ou Outcome para confiança, mantém `BUS-CAND-004` em `Under Validation` e exige nova aplicação dos quatro testes da COEM.
 
+### COD-013 — BUS-CAND-005
+
+| Campo | Registro |
+|---|---|
+| Nome | Continuidade econômica sustentável |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+#### Formulação originalmente avaliada
+
+> A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
+
+#### Formulação candidata revisada
+
+> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
+
+Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado e aguarda sua própria decisão humana.
+
 ## 5. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
@@ -263,7 +289,7 @@ Confiança institucional permanece avaliação relacional associada. A decisão 
 | BUS-CAND-002 | Merge into BUS-CAND-003 | Aceitar `Merge into BUS-CAND-003` | `Merged` |
 | BUS-CAND-003 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-005 | Reformulate | — | Pending human decision |
+| BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-006 | Reject | — | Pending human decision |
 | BUS-CAND-007 | Reject | — | Pending human decision |
 | BUS-CAND-008 | Reject | — | Pending human decision |
@@ -276,11 +302,12 @@ Confiança institucional permanece avaliação relacional associada. A decisão 
 |---|---|
 | manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| `COD-012` registrado | Pass |
-| confiança e legitimidade separadas conceitualmente | Pass |
+| `COD-013` registrado | Pass |
 | formulação candidata revisada registrada | Pass |
-| confiança preservada sem novo candidato automático | Pass |
-| `BUS-CAND-004` mantido em `Under Validation` | Pass |
+| continuidade econômica separada de métricas isoladas | Pass |
+| continuidade operacional e resiliência preservadas como sustentadoras | Pass |
+| `BUS-CAND-010` preservado sem fusão antecipada | Pass |
+| `BUS-CAND-005` mantido em `Under Validation` | Pass |
 | distribuição 14/2/2 preservada | Pass |
 | nova COEM exigida | Pass |
 | promoção canônica bloqueada | Pass |
@@ -289,4 +316,4 @@ Confiança institucional permanece avaliação relacional associada. A decisão 
 
 ## 7. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.

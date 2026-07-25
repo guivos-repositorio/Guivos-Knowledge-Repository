@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.25.0
+version: 1.27.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -14,12 +14,12 @@ related:
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-012
+  - BA-STR-002-COD-SUB-013
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - COD-012
-  - ROADMAP-11.72.0
-  - M7.14
+  - COD-013
+  - ROADMAP-11.74.0
+  - M7.15
 normative: true
 ---
 
@@ -34,13 +34,13 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.14 — Twelfth Human Outcome Decision Recorded` |
+| Marco vigente | `M7.15 — Thirteenth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.24.0`; 14 `Under Validation`, 2 `Merged` e 2 `Rejected` |
-| CODR | `0.23.0`; 12 de 18 decisões humanas; 0 submissões aguardando resposta |
+| COR | `0.25.0`; 14 `Under Validation`, 2 `Merged` e 2 `Rejected` |
+| CODR | `0.25.0`; 13 de 18 decisões humanas; 0 submissões aguardando resposta |
 | `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
 | `COD-003` | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
@@ -53,8 +53,10 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | `COD-010` | `Merge into BUS-CAND-003` aceito para `BUS-CAND-002` |
 | `COD-011` | `Reformulate` aceito para `BUS-CAND-003` |
 | `COD-012` | `Reformulate` aceito para `BUS-CAND-004` |
-| `BUS-CAND-004` | `Under Validation`; formulação revisada registrada; nova COEM pendente |
-| Próximo candidato | `BUS-CAND-005 — Continuidade econômica sustentável` |
+| `COD-013` | `Reformulate` aceito para `BUS-CAND-005` |
+| `BUS-CAND-005` | `Under Validation`; formulação revisada registrada; nova COEM pendente |
+| `BUS-CAND-010` | `Under Validation`; decisão individual e eventual fusão pendentes |
+| Próximo candidato | `BUS-CAND-006 — Crescimento responsável e resiliente` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -65,21 +67,21 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Resultado de COD-012
+## 3. Resultado de COD-013
 
-O Fundador aceitou `Reformulate` para `BUS-CAND-004`.
+O Fundador aceitou `Reformulate` para `BUS-CAND-005`.
 
 Formulação originalmente avaliada:
 
-> A Guivos preserva confiança e legitimidade suficientes para manter relações voluntárias, transparentes e duradouras no ecossistema.
+> A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
 
 Formulação candidata revisada:
 
-> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
+> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
 
-`BUS-CAND-004` passa a ser denominado **Legitimidade institucional sustentada** e permanece `Under Validation`.
+`BUS-CAND-005` permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
 
-Confiança institucional permanece avaliação relacional associada. Nenhum novo candidato foi criado e a formulação deverá retornar aos quatro testes da COEM.
+Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` continua separado até sua própria decisão humana.
 
 ## 4. Sequência oficial
 
@@ -88,7 +90,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 12 de 18
+→ decisões humanas do BA-STR-002 — 13 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -99,7 +101,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
 
 Nenhuma decisão posterior será registrada automaticamente.
 
@@ -122,11 +124,11 @@ Essa ordem não constitui autorização de início.
 
 O estado atual não autoriza:
 
-- promover `BUS-CAND-004` ou qualquer candidato a `Approved`;
+- promover `BUS-CAND-005` ou qualquer candidato a `Approved`;
+- fundir antecipadamente `BUS-CAND-010`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
-- criar automaticamente outro Outcome para confiança institucional;
-- tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente;
-- presumir controle unilateral sobre legitimidade ou confiança;
+- tratar receita, margem, caixa, reservas, disponibilidade operacional ou crescimento isolados como prova suficiente de continuidade econômica sustentável;
+- prometer permanência absoluta;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
 - especificar produtos especializados;
