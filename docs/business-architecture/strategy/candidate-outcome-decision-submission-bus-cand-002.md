@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-010
-title: Human Decision Submission — BUS-CAND-002
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Submission and Resolution — BUS-CAND-002
+status: decided
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -14,30 +14,31 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - COD-009
+  - COD-010
   - BUS-CAND-003
-  - M7.11.1
+  - M7.12
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-002
+# Human Decision Submission and Resolution — BUS-CAND-002
 
 ## 1. Finalidade
 
-Submeter `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana individual do Candidate Outcome Decision Register.
+Este documento preserva a submissão e a resolução da décima decisão humana individual do Candidate Outcome Decision Register para `BUS-CAND-002 — Relevância contínua das respostas`.
 
-Este documento organiza a recomendação e as alternativas. Ele **não registra `COD-010`**, não altera o COR, não executa a fusão e não aprova `BUS-CAND-003` antes da manifestação explícita do Fundador da Guivos.
+O Fundador da Guivos aceitou explicitamente a alternativa `A — Aceitar Merge into BUS-CAND-003`. A decisão foi registrada como `COD-010` no `BA-STR-002-CODR-001`.
 
 ## 2. Formulação originalmente avaliada
 
 > As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes.
 
-## 3. Alvo recomendado
+## 3. Alvo da fusão
 
 `BUS-CAND-003 — Entrega consistente de valor legítimo`:
 
 > A Guivos entrega valor legítimo com qualidade, segurança e continuidade suficientes para sustentar experiências relevantes.
 
-O alvo permanece `Under Validation` e possui recomendação própria `Reformulate`. A eventual fusão não equivale a aprovação do alvo.
+O alvo permanece `Under Validation` e conserva sua recomendação própria `Reformulate`. A fusão não equivale a aprovação do alvo.
 
 ## 4. Resultado da COEM
 
@@ -49,9 +50,9 @@ O alvo permanece `Under Validation` e possui recomendação própria `Reformulat
 | Outcome Quality | Partial | o conceito é observável e decisório, porém funciona como qualidade emergente e percebida, com forte sobreposição a `BUS-CAND-003` |
 | Disposição recomendada | `Merge into BUS-CAND-003` | incorporar relevância contextual contínua à condição empresarial de habilitar valor legítimo com consistência |
 
-## 5. Evidências e limites
+## 5. Fundamentação consolidada
 
-A validação externa e a COEM sustentam que:
+A fusão foi aceita porque:
 
 1. relevância depende de geração, disseminação e resposta organizacional à inteligência;
 2. resposta aos pedidos expressos dos participantes atuais não cobre necessidades latentes ou mudanças de contexto;
@@ -60,19 +61,30 @@ A validação externa e a COEM sustentam que:
 5. `BUS-CAND-003` já distingue habilitação empresarial de valor legítimo e realização contextual por terceiros;
 6. dois Outcomes pares aumentariam redundância entre relevância e habilitação consistente de valor.
 
-## 6. Formulação combinada candidata
+## 6. Decisão humana registrada
+
+```text
+Decisão: COD-010
+Candidato: BUS-CAND-002
+Recomendação da COEM: Merge into BUS-CAND-003
+Decisão humana: Aceitar Merge into BUS-CAND-003
+Autoridade: Fundador da Guivos
+Data: 25/07/2026
+Estado de BUS-CAND-002: Merged
+Alvo: BUS-CAND-003
+Estado do alvo: Under Validation
+Código canônico: não criado
+```
+
+## 7. Formulação combinada resultante
 
 **Habilitação consistente e contextualmente relevante de valor legítimo**
 
 > A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
 
-Se a fusão for aceita, esta formulação permanecerá candidata e deverá retornar aos quatro testes da COEM. Qualidade, segurança e continuidade permanecem propriedades verificáveis e capacidades sustentadoras, não sub-Outcomes acumulados.
+A formulação permanece candidata e deverá retornar aos quatro testes da COEM. Qualidade, segurança e continuidade permanecem propriedades verificáveis e capacidades sustentadoras, não sub-Outcomes acumulados.
 
-## 7. Alternativas submetidas à decisão humana
-
-### Alternativa A — Aceitar `Merge into BUS-CAND-003` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 8. Efeitos autorizados
 
 - criar `COD-010`;
 - aceitar formalmente a disposição `Merge into BUS-CAND-003`;
@@ -82,39 +94,15 @@ Autoriza, em incremento posterior de registro:
 - manter `BUS-CAND-003` em `Under Validation`;
 - reaplicar os quatro testes da COEM antes de qualquer aprovação.
 
-Não autoriza promover o alvo a `Approved`, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 9. Efeitos não autorizados
 
-### Alternativa B — Rejeitar a recomendação `Merge`
+- promover `BUS-CAND-003` a `Approved`;
+- criar código canônico `BO-###`;
+- apagar ou reescrever retroativamente `BUS-CAND-002`;
+- tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente de relevância;
+- atribuir à Guivos controle unilateral sobre o valor realizado pelos participantes;
+- iniciar AQS-O01, Business Capabilities, produtos, Commercial Model, Go-to-Market ou Product Engineering.
 
-Mantém `BUS-CAND-002` em `Under Validation` e exige fundamentação para preservar sua autonomia ou adotar outra disposição.
+## 10. Próximo passo governado
 
-A rejeição da recomendação não aprova automaticamente o candidato nem o alvo.
-
-### Alternativa C — Devolver para nova análise
-
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- fronteira entre relevância, habilitação de valor e valor vivido;
-- independência estratégica de `BUS-CAND-002`;
-- observabilidade da relevância sem garantias universais;
-- relação entre sensing, resposta, adaptação e valor legítimo;
-- risco de sobreposição ou perda de rastreabilidade na fusão.
-
-## 8. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Merge into BUS-CAND-003
-B — Rejeitar Merge, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-010` não existe;
-- decisões humanas permanecem em `9 de 18`;
-- `BUS-CAND-002` e `BUS-CAND-003` permanecem `Under Validation`;
-- o COR permanece com 15 `Under Validation`, 1 `Merged` e 2 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Preparar e submeter `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo` à décima primeira decisão humana individual sobre sua recomendação própria `Reformulate`, preservando a obrigação de nova aplicação dos quatro testes da COEM à formulação combinada.
