@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.66.0
-title: Roadmap Arquitetural — COD-009 Registrado
+id: ROADMAP-11.67.0
+title: Roadmap Arquitetural — BUS-CAND-002 Submetido
 status: active
-version: 11.66.0
+version: 11.67.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.65.0
+  - ROADMAP-11.66.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-009
+  - BA-STR-002-COD-SUB-010
   - COD-009
-  - M7.11
+  - M7.11.1
 ---
 
-# Roadmap Arquitetural — COD-009 Registrado
+# Roadmap Arquitetural — BUS-CAND-002 Submetido
 
 ## 1. Autoridade
 
@@ -28,13 +28,14 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.11` |
+| Marco | `M7.11.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 15 `Under Validation`; 1 `Merged`; 2 `Rejected` |
-| CODR | `9 de 18` decisões; 0 submissões abertas |
+| CODR | `9 de 18` decisões; 1 submissão aberta |
+| Submissão vigente | `BUS-CAND-002 — Merge into BUS-CAND-003` |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
@@ -74,23 +75,27 @@ R1 — precedência e estado global — concluído
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 9 de 18;
+- décima submissão aberta para `BUS-CAND-002`;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
-- `ECO-CAND-004`: `Rejected` por `COD-005`;
-- `BUS-CAND-001`: `Rejected` por `COD-009`, com conteúdo constitucional e de governança preservado;
+- `ECO-CAND-004` e `BUS-CAND-001`: `Rejected`;
 - `ECO-CAND-006`, `ECO-CAND-007` e `ECO-CAND-008`: `Reformulate` aceito, com nova COEM pendente;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-009
+## 5. Submissão de BUS-CAND-002
 
-A recomendação `Reject` foi aceita para **Aderência permanente ao propósito**.
+A COEM recomenda `Merge into BUS-CAND-003` para **Relevância contínua das respostas**.
 
-> A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes.
+> As respostas organizadas pela Guivos permanecem relevantes diante da mudança de contextos, necessidades e prioridades dos participantes.
 
-A candidatura foi retirada do futuro catálogo de Business Outcomes. O propósito e seus princípios permanecem autoridades superiores; aderência continua obrigação de governança e accountability, critério de admissibilidade e referência para prevenção e correção de *mission drift*.
+A submissão propõe incorporar relevância contextual à formulação candidata de `BUS-CAND-003`:
+
+> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+
+A fusão não foi executada. `BUS-CAND-002` e `BUS-CAND-003` permanecem `Under Validation`, e o alvo conserva sua recomendação própria `Reformulate`.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `BUS-CAND-002` à decisão humana sobre `Merge into BUS-CAND-003`;
+1. receber a decisão humana sobre `BUS-CAND-002`;
 2. concluir as oito decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
@@ -127,4 +132,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Preparar e submeter `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana individual sobre a recomendação `Merge into BUS-CAND-003`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-010`. Nenhuma fusão será registrada antes dessa manifestação explícita.
