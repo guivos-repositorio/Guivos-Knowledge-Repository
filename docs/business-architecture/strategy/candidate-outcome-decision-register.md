@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.21.0
+version: 0.22.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -28,6 +28,7 @@ related:
   - BA-STR-002-COD-SUB-009
   - BA-STR-002-COD-SUB-010
   - BA-STR-002-COD-SUB-011
+  - BA-STR-002-COD-SUB-012
   - COD-001
   - COD-002
   - COD-003
@@ -39,7 +40,7 @@ related:
   - COD-009
   - COD-010
   - COD-011
-  - M7.13
+  - M7.13.1
 normative: false
 execution_status: in-progress
 ---
@@ -68,7 +69,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 11
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: BUS-CAND-004
 Accepted Reformulate dispositions: 7
 Accepted Merge dispositions: 2
 Accepted Reject dispositions: 2
@@ -244,7 +246,7 @@ A formulação incorpora `BUS-CAND-002` por `COD-010`, permanece candidata e dev
 | BUS-CAND-001 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | Aceitar `Merge into BUS-CAND-003` | `Merged` |
 | BUS-CAND-003 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-004 | Reformulate | — | Pending human decision |
+| BUS-CAND-004 | Reformulate | — | Pending human decision; `BA-STR-002-COD-SUB-012` aberto |
 | BUS-CAND-005 | Reformulate | — | Pending human decision |
 | BUS-CAND-006 | Reject | — | Pending human decision |
 | BUS-CAND-007 | Reject | — | Pending human decision |
@@ -252,20 +254,31 @@ A formulação incorpora `BUS-CAND-002` por `COD-010`, permanece candidata e dev
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 6. Gate do incremento
+## 6. Submissão humana vigente
+
+`BA-STR-002-COD-SUB-012` submete `BUS-CAND-004` à decisão humana sobre `Reformulate`.
+
+A formulação candidata proposta é **Legitimidade institucional sustentada**:
+
+> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
+
+Confiança institucional permanece avaliação relacional associada. `COD-012` não existe, o COR não foi alterado e nenhuma alternativa foi inferida como decisão.
+
+## 7. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
+| submissão individual criada | Pass |
 | recomendação original preservada | Pass |
-| `COD-011` registrado | Pass |
-| formulações e linhagem preservadas | Pass |
-| `BUS-CAND-003` mantido em `Under Validation` | Pass |
-| nova COEM exigida | Pass |
+| confiança e legitimidade separadas conceitualmente | Pass |
+| formulação candidata revisada proposta | Pass |
+| confiança preservada sem novo candidato automático | Pass |
+| `COD-012` não criado | Pass |
+| COR inalterado | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 7. Próximo passo governado
+## 8. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-004 — Confiança e legitimidade institucional` à décima segunda decisão humana individual sobre a recomendação `Reformulate`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-012`. Nenhuma decisão posterior será registrada automaticamente.
