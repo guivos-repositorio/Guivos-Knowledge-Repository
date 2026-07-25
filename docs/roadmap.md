@@ -1,23 +1,22 @@
 ---
-id: ROADMAP-11.74.0
-title: Roadmap Arquitetural — COD-013 Registrado
+id: ROADMAP-11.75.0
+title: Roadmap Arquitetural — BUS-CAND-006 Decision Submission
 status: active
-version: 11.74.0
+version: 11.75.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.73.0
+  - ROADMAP-11.74.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-013
-  - COD-013
-  - M7.15
+  - BA-STR-002-COD-SUB-014
+  - M7.15.1
 ---
 
-# Roadmap Arquitetural — COD-013 Registrado
+# Roadmap Arquitetural — BUS-CAND-006 Decision Submission
 
 ## 1. Autoridade
 
@@ -28,13 +27,14 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.15` |
+| Marco | `M7.15.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
-| CODR | `13 de 18` decisões; 0 submissões abertas |
+| CODR | `13 de 18` decisões; 1 submissão aberta |
+| Submissão vigente | `BUS-CAND-006 — Reject` |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
 | Reject aceitos | 2 |
@@ -68,29 +68,29 @@ R1 — precedência e estado global — concluído
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 13 de 18;
+- submissões abertas: 1;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
 - `ECO-CAND-004` e `BUS-CAND-001`: `Rejected`;
-- `BUS-CAND-003`: `Reformulate` aceito por `COD-011`;
-- `BUS-CAND-004`: `Reformulate` aceito por `COD-012`;
-- `BUS-CAND-005`: `Reformulate` aceito por `COD-013`;
+- `BUS-CAND-003`, `BUS-CAND-004` e `BUS-CAND-005`: `Reformulate` aceitos;
+- `BUS-CAND-006`: submetido à decisão sobre `Reject`;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-013
+## 5. Submissão de BUS-CAND-006
 
-A recomendação `Reformulate` foi aceita para `BUS-CAND-005`.
+A COEM recomenda `Reject`.
 
-**Continuidade econômica sustentável**
+Formulação avaliada:
 
-> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
+> A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade.
 
-`BUS-CAND-005` permanece `Under Validation`. Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado até decisão individual posterior.
+A recomendação retira crescimento do futuro catálogo de Business Outcomes e preserva **expansão responsável** como trajetória estratégica opcional, sujeita à capacidade demonstrada, adicionalidade e critérios de não degradação.
 
-A decisão não equivale a `Approve`, não cria código canônico e exige nova aplicação dos quatro testes da COEM.
+Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras. A recomendação não proíbe crescimento e não executa mudança de estado antes da manifestação humana.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `BUS-CAND-006` à decisão humana sobre `Reject`;
+1. receber a decisão humana sobre `BUS-CAND-006`;
 2. concluir as quatro decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
@@ -127,4 +127,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-014`. Nenhuma decisão será inferida automaticamente.
