@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.54.0
-title: Roadmap Arquitetural — COD-003 Registrado
+id: ROADMAP-11.56.0
+title: Roadmap Arquitetural — COD-004 Registrado
 status: active
-version: 11.54.0
+version: 11.56.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.53.0
+  - ROADMAP-11.55.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-003
-  - COD-003
-  - M7.5
+  - BA-STR-002-COD-SUB-004
+  - COD-004
+  - M7.6
 ---
 
-# Roadmap Arquitetural — COD-003 Registrado
+# Roadmap Arquitetural — COD-004 Registrado
 
 ## 1. Autoridade
 
@@ -30,16 +30,17 @@ Roadmaps anteriores permanecem no histórico e não substituem esta sequência.
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.5` |
+| Marco | `M7.6` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 17 `Under Validation`; 1 `Merged` |
-| CODR | `3 de 18` decisões |
+| CODR | `4 de 18` decisões |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
+| COD-004 | `Reformulate` aceito para ECO-CAND-002 |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -71,24 +72,25 @@ Estado:
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 3 de 18;
+- decisões humanas: 4 de 18;
 - `ECO-CAND-001`: `Reformulate` aceito, permanecendo `Under Validation`;
 - `ECO-CAND-003`: formulação combinada de Agência efetiva e situada, permanecendo `Under Validation`;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`, com formulação e evidências preservadas;
+- `ECO-CAND-002`: `Reformulate` aceito, permanecendo `Under Validation`;
 - Outcomes canônicos: 0.
 
-## 5. COD-003 — Continuidade adaptativa incorporada
+## 5. COD-004 — Acesso real registrado
 
-A formulação combinada candidata é:
+A formulação candidata vigente é:
 
-> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar, abandonar ou renovar seus próprios próximos passos diante de mudanças, aprendizados e limites legítimos, individualmente ou em relações de co-agência.
+> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
 
-A fusão não aprova o alvo, não cria código canônico e não inicia AQS-O01.
+A reformulação não aprova o candidato, não cria código canônico e não inicia AQS-O01.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `ECO-CAND-002` à decisão humana sobre `Reformulate`;
-2. concluir as quatorze decisões posteriores;
+1. submeter `ECO-CAND-004` à decisão humana sobre `Reject`;
+2. concluir as treze decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -124,4 +126,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Preparar e submeter `ECO-CAND-002` à quarta decisão humana individual. Nenhuma reformulação será registrada antes da manifestação explícita do Fundador.
+Preparar e submeter `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual. Nenhuma rejeição será registrada antes da manifestação explícita do Fundador.
