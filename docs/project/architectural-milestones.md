@@ -2,19 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.61.0
+version: 4.62.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.63.0
+  - ROADMAP-11.64.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-008
-  - COD-007
-  - M7.9.1
+  - COD-008
+  - M7.10
 normative: false
 ---
 
@@ -46,24 +46,24 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.8 | Completed | `COD-006` registrado |
 | M7.8.1 | Completed | sétima decisão submetida |
 | M7.9 | Completed | `COD-007` registrado |
-| M7.9.1 | Completed neste incremento | oitava decisão submetida para `ECO-CAND-008` |
+| M7.9.1 | Completed | oitava decisão submetida |
+| M7.10 | Completed neste incremento | oitava decisão registrada como `COD-008` |
 
 ## 3. Marco vigente
 
-### M7.9.1 — Eighth Human Outcome Decision Submitted
+### M7.10 — Eighth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- submissão individual `BA-STR-002-COD-SUB-008` criada;
-- recomendação `Reformulate` preservada;
-- resultados `Pass / Pass / Pass / Partial` registrados;
-- evidências e contraevidências consolidadas;
-- formulação candidata **Participação protegida, justa e contestável** proposta;
-- alternativas A, B e C apresentadas;
-- decisões humanas preservadas em 7 de 18;
-- `ECO-CAND-008` preservado em `Under Validation`;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reformulate` aceita;
+- `COD-008` criado para `ECO-CAND-008`;
+- formulação original preservada;
+- formulação candidata **Participação protegida, justa e contestável** registrada;
+- candidato mantido em `Under Validation`;
+- nova aplicação dos quatro testes da COEM exigida;
+- decisões humanas atualizadas para 8 de 18;
 - COR preservado em 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
-- `COD-008` não criado;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -79,7 +79,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-008`.
+Preparar a submissão de `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana sobre a recomendação `Reject`.
 
 ## 6. Regra de transição
 
