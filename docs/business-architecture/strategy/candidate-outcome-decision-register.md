@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.15.0
+version: 0.16.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -23,6 +23,7 @@ related:
   - BA-STR-002-COD-SUB-006
   - BA-STR-002-COD-SUB-007
   - BA-STR-002-COD-SUB-008
+  - BA-STR-002-COD-SUB-009
   - COD-001
   - COD-002
   - COD-003
@@ -31,7 +32,7 @@ related:
   - COD-006
   - COD-007
   - COD-008
-  - M7.10
+  - M7.10.1
 normative: false
 execution_status: in-progress
 ---
@@ -60,7 +61,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 8
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: BUS-CAND-001
 Accepted Reformulate dispositions: 6
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
@@ -242,13 +244,41 @@ Cadastro, tradução, presença global ou representação nominal não comprovam
 
 > Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
 
-### Fundamentação e limites
-
-A reformulação concentra o candidato em uma condição ecossistêmica vivida e observável. Proteção, justiça, contestabilidade, redução de vulnerabilidades evitáveis, compreensão, questionamento e reparação integram sua fronteira.
-
 Privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis. Proteção absoluta é impossível; conformidade, ausência de incidentes ou confiança declarada não constituem evidência suficiente. A formulação deverá retornar aos quatro testes da COEM.
 
-## 12. Matriz cumulativa de decisões
+## 12. Submissão decisória atual — BUS-CAND-001
+
+A submissão `BA-STR-002-COD-SUB-009` apresenta a recomendação `Reject`.
+
+### Formulação originalmente avaliada
+
+> A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes.
+
+### Destino arquitetural proposto
+
+Retirar o candidato do futuro catálogo de Business Outcomes e preservar aderência ao propósito como princípio constitucional, obrigação de governança, critério de admissibilidade e referência para prevenção e correção de *mission drift*.
+
+### Fundamentação da recomendação
+
+A aderência ao propósito é indispensável, porém sua ausência representa violação constitucional e de governança. Tratar o dever como Outcome empresarial criaria circularidade entre o propósito e a medição de aderência a ele próprio.
+
+### Alternativas
+
+```text
+A — Aceitar Reject
+B — Rejeitar Reject, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada. Enquanto não houver manifestação explícita:
+
+- `COD-009` não existe;
+- decisões humanas permanecem em `8 de 18`;
+- `BUS-CAND-001` permanece `Under Validation`;
+- nenhuma alteração é executada no COR;
+- nenhum código canônico é criado.
+
+## 13. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
@@ -260,7 +290,7 @@ Privacidade, segurança, transparência e autonomia permanecem guardrails verifi
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| BUS-CAND-001 | Reject | — | Pending human decision |
+| BUS-CAND-001 | Reject | — | submitted to human decision; awaiting response |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
 | BUS-CAND-003 | Reformulate | — | Pending human decision |
 | BUS-CAND-004 | Reformulate | — | Pending human decision |
@@ -271,21 +301,24 @@ Privacidade, segurança, transparência e autonomia permanecem guardrails verifi
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 13. Gate do incremento
+## 14. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
+| submissão individual de BUS-CAND-001 criada | Pass |
 | recomendação original preservada | Pass |
-| `COD-008` registrado | Pass |
-| formulação original preservada | Pass |
-| formulação candidata registrada | Pass |
-| `ECO-CAND-008` mantido em `Under Validation` | Pass |
-| nova COEM exigida antes de aprovação | Pass |
-| promoção canônica bloqueada | Pass |
+| evidências e contraevidências explicitadas | Pass |
+| destino arquitetural proposto | Pass |
+| alternativas humanas A, B e C registradas | Pass |
+| decisão humana inferida automaticamente | Blocked |
+| alteração automática do COR | Blocked |
+| redução da autoridade do propósito | Blocked |
+| promoção canônica | Blocked |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 14. Próximo passo governado
+## 15. Próximo passo governado
 
-Preparar e submeter `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.
+Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-009`.
+
+Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-009`, preservar formulação e evidências, mover `BUS-CAND-001` para `Rejected`, retirar a candidatura do futuro catálogo de Business Outcomes e manter aderência ao propósito como autoridade constitucional e obrigação de governança.
