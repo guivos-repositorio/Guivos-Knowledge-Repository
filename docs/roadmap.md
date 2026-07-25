@@ -1,17 +1,18 @@
 ---
-id: ROADMAP-11.49.0
+id: ROADMAP-11.50.0
 title: Roadmap Arquitetural — Sequência Global Reconciliada
 status: active
-version: 11.49.0
+version: 11.50.0
 owner: Guivos
 last_updated: 2026-07-24
 supersedes_partial:
-  - ROADMAP-11.48.0
+  - ROADMAP-11.49.0
 related:
   - GKR-STATE-001
   - GKR-AUD-002
   - GKR-REMEDIATION-002
-  - M7.3.3
+  - GKR-R5-VALIDATION-001
+  - M7.3.4
 ---
 
 # Roadmap Arquitetural — Sequência Global Reconciliada
@@ -27,16 +28,16 @@ Roadmaps e overlays anteriores permanecem no histórico, mas não substituem est
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.3.3 — Official Navigation Reconciled` |
-| Frente de controle | remediação documental do GKR |
+| Marco | `M7.3.4` |
 | R1 — Precedência e estado global | concluído |
 | R2 — Roadmap e backlog global | concluído |
 | R3 — Controles centrais | concluído |
-| R4 — Navegação | concluído neste incremento |
-| R5 — Validação mecânica | próximo incremento |
-| R6 — Retomada governada | bloqueado até resultado `PASS` |
-| Achados Critical conhecidos | 0 |
-| Achados Major conhecidos | 0; resultado sujeito à confirmação mecânica em R5 |
+| R4 — Navegação | concluído |
+| R5 — Validação mecânica | `PASS` neste PR |
+| R6 — Retomada governada | próximo após integração e autorização explícita |
+| Achados Critical abertos | 0 |
+| Achados Major abertos | 0 |
+| Achados Minor conhecidos abertos | 0 |
 | Frente arquitetural preservada | `A2-R03 — Business Architecture Review` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -72,15 +73,15 @@ R1 — precedência e estado global — concluído
 → R2 — roadmap e backlog global — concluído
 → R3 — controles centrais — concluído
 → R4 — navegação — concluído
-→ R5 — validação mecânica
+→ R5 — validação mecânica — PASS
 → R6 — retomada governada
 ```
 
-R4 reorganizou o menu oficial para apresentar autoridades vigentes e registros recentes. Documentos históricos continuam construídos, pesquisáveis e acessíveis, porém não concorrem no menu com o estado atual.
+O relatório `GKR-R5-VALIDATION-001` aprovou front matter, IDs declarados, navegação, links locais, `git diff --check`, `mkdocs build --strict` e integridade da árvore rastreada.
 
-## 5. Próxima frente arquitetural retomada
+## 5. Próxima frente arquitetural
 
-Após o `PASS` da remediação, retomar `BA-STR-002 — Business Outcomes`:
+Após integração deste PR e autorização explícita, executar R6 e retomar `BA-STR-002 — Business Outcomes`:
 
 1. submeter `ECO-CAND-003` à próxima decisão humana;
 2. concluir as dezessete decisões restantes;
@@ -125,7 +126,7 @@ Guivos Journey permanece o produto arquitetural já concluído e não integra no
 
 ## 8. Commercial Model
 
-Será desenvolvido após o rebaseline mínimo do portfólio e deverá transformar autoridades econômicas e de negócio em decisões comerciais governadas.
+Será desenvolvido após o rebaseline mínimo do portfólio e deverá transformar autoridades econômicas e de negócio em decisões comerciais governadas, sem confundir família de receita com oferta, arquétipo de plano com preço, parceiro elegível com contrato ou cenário financeiro com previsão oficial.
 
 ## 9. Go-to-Market
 
@@ -155,4 +156,4 @@ Essa trilha fornece evidências para produtos, Economic Model, Commercial Model 
 
 ## 12. Próximo ponto exato
 
-Executar `R5 — Validação mecânica`. Somente retomar `ECO-CAND-003` se o parecer final da remediação for `PASS`.
+Após a integração do PR do R5, executar `R6 — Retomada governada` e somente então submeter `ECO-CAND-003` à decisão humana individual.
