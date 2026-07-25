@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -18,7 +18,8 @@ related:
   - BA-STR-002-COD-SUB-003
   - COD-001
   - COD-002
-  - M7.4.1
+  - COD-003
+  - M7.5
 normative: false
 execution_status: in-progress
 ---
@@ -46,13 +47,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 2
-Decision submissions awaiting human response: 1
-Current submission: ECO-CAND-005
+Human decisions recorded: 3
+Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 2
-Accepted Merge dispositions: 0
+Accepted Merge dispositions: 1
 Accepted Reject dispositions: 0
-Candidate state changes: 0
+Candidate state changes: 1
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -81,6 +81,7 @@ Operational authorization: no
 - uma recomendação `Merge` aceita não aprova automaticamente o candidato-alvo;
 - formulações revisadas ou combinadas devem ser reavaliadas pelos quatro testes da COEM;
 - decisões `Merge` ou `Reject` somente alteram o COR quando o próprio registro decisório autorizar expressamente a mudança;
+- candidatos fundidos permanecem rastreáveis e não são apagados;
 - nenhum código `EO-###` ou `BO-###` nasce neste registro;
 - AQS-O01 e consolidação canônica permanecem atos posteriores.
 
@@ -105,46 +106,13 @@ Operational authorization: no
 
 > Pessoas, Organizações e Coletivos conseguem compreender seu Momento Atual, necessidades, objetivos, restrições e possibilidades com suficiência para decisões conscientes.
 
-### Fundamentação consolidada
-
-A compreensão contextual possui relevância material, independência de produtos e capacidade de orientar decisões estratégicas sobre explicabilidade, captura de contexto e apoio à decisão. Entretanto, as evidências não sustentam ainda sua promoção como Outcome autônomo.
-
-A formulação original apresenta três insuficiências:
-
-1. pode tratar compreensão como resultado autônomo quando ela opera predominantemente como condição de agência;
-2. utiliza “suficiência” sem explicitar que o critério é contextual, revisável e apoiado por múltiplas evidências;
-3. pode permitir que introspecção ou autodeclaração sejam interpretadas como prova única da condição.
-
 ### Formulação candidata revisada
 
 > Pessoas, Organizações e Coletivos formam e revisam uma compreensão contextual suficientemente fundamentada sobre sua situação, objetivos, necessidades, restrições e possibilidades, fortalecendo sua capacidade de realizar escolhas conscientes.
 
-### Efeitos autorizados
+### Fundamentação e limites
 
-- aceitar formalmente a disposição `Reformulate`;
-- preservar a formulação original para rastreabilidade;
-- registrar a formulação revisada como nova versão candidata;
-- manter `ECO-CAND-001` em `Under Validation`;
-- submeter a formulação revisada aos quatro testes da COEM em incremento posterior;
-- reavaliar a fronteira com `ECO-CAND-003` antes de qualquer aprovação.
-
-### Efeitos não autorizados
-
-- promover `ECO-CAND-001` a `Approved`;
-- criar código canônico `EO-###`;
-- tratar a compreensão contextual como Outcome independente já demonstrado;
-- incorporar automaticamente o candidato a `ECO-CAND-003`;
-- iniciar AQS-O01, catálogo canônico ou `BA-CAP-001`;
-- retomar Product Engineering ou autorizar W0-01.
-
-### Gate de reentrada na COEM
-
-A formulação revisada somente poderá receber nova disposição após:
-
-1. reaplicação explícita dos quatro testes;
-2. verificação de independência em relação a `ECO-CAND-003`;
-3. definição de evidências possíveis que não dependam de autodeclaração isolada;
-4. confirmação de que a formulação descreve condição permanente do ecossistema e não processo de captura ou interpretação de contexto.
+A compreensão contextual possui relevância material e independência de produtos, mas pode operar predominantemente como condição de agência. A formulação revisada permanece `Under Validation`, deve retornar aos quatro testes e não recebe código canônico.
 
 ## 5. COD-002 — ECO-CAND-003
 
@@ -168,76 +136,87 @@ A formulação revisada somente poderá receber nova disposição após:
 
 > Participantes preservam liberdade de escolha e capacidade de definir, revisar ou recusar seus próprios próximos passos de evolução.
 
-### Fundamentação consolidada
-
-O núcleo de agência atende aos testes Essential, Decision e Replacement e possui a implicação estratégica mais autônoma do cluster formado por `ECO-CAND-001`, `ECO-CAND-003` e `ECO-CAND-005`.
-
-A reformulação foi aceita porque:
-
-1. liberdade formal de escolha não comprova agência efetiva;
-2. agência depende de condições contextuais, competência, pertencimento e relações de co-agência;
-3. a condição deve ser descrita no nível do ecossistema, e não apenas como habilidade individual;
-4. autonomia não equivale a adesão, engajamento ou conclusão de tarefas;
-5. continuidade adaptativa deve aparecer como possibilidade de revisar, pausar, recusar ou renovar caminhos.
-
-### Formulação candidata revisada
+### Formulação candidata registrada em COD-002
 
 > O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
 
+### Fundamentação e limites
+
+O núcleo de agência atende aos testes Essential, Decision e Replacement. A reformulação reconhece contexto, competência, pertencimento e co-agência. Ela não equivale a aprovação e foi posteriormente ampliada por `COD-003`, sem perder a rastreabilidade desta versão.
+
+## 6. COD-003 — ECO-CAND-005
+
+### Registro da decisão
+
+| Campo | Registro |
+|---|---|
+| Decisão | `COD-003` |
+| Candidato | `ECO-CAND-005` |
+| Nome provisório | Continuidade da evolução autodeterminada |
+| Recomendação da COEM | `Merge into ECO-CAND-003` |
+| Decisão humana | Aceitar `Merge into ECO-CAND-003` |
+| Autoridade decisória | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Merged` |
+| Alvo | `ECO-CAND-003` |
+| Estado do alvo | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+### Formulação originalmente avaliada
+
+> Participantes mantêm condições para reconhecer mudanças, aprender e iniciar novos ciclos de evolução coerentes com suas próprias escolhas.
+
+### Fundamentação consolidada
+
+A continuidade adaptativa é material, permanente e independente dos meios atuais, mas não demonstrou implicação estratégica autônoma suficiente em relação a `ECO-CAND-003`.
+
+A fusão foi aceita porque:
+
+1. continuidade adaptativa descreve a dimensão temporal do exercício da agência;
+2. ajustar, pausar, abandonar e reiniciar caminhos são processos de regulação ligados à agência efetiva;
+3. dois Outcomes pares aumentariam redundância e enfraqueceriam fronteiras e evidências;
+4. a evidência para Organizações e Coletivos permanece parcial;
+5. a formulação combinada deverá retornar à COEM antes de qualquer `Approve`.
+
+### Formulação combinada resultante
+
+> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar, abandonar ou renovar seus próprios próximos passos diante de mudanças, aprendizados e limites legítimos, individualmente ou em relações de co-agência.
+
 ### Efeitos autorizados
 
-- aceitar formalmente a disposição `Reformulate`;
-- preservar a formulação original para rastreabilidade;
-- registrar a formulação revisada como nova versão candidata;
+- aceitar formalmente a disposição `Merge into ECO-CAND-003`;
+- alterar `ECO-CAND-005` para `Merged`, com alvo `ECO-CAND-003`;
+- preservar integralmente formulação original, evidências e rastreabilidade;
+- incorporar continuidade adaptativa à formulação candidata de `ECO-CAND-003`;
 - manter `ECO-CAND-003` em `Under Validation`;
-- reaplicar os quatro testes da COEM antes de qualquer recomendação `Approve`;
-- revisar posteriormente as fronteiras com `ECO-CAND-001` e `ECO-CAND-005`.
+- reaplicar os quatro testes da COEM antes de qualquer aprovação.
 
 ### Efeitos não autorizados
 
 - promover `ECO-CAND-003` a `Approved`;
 - criar código canônico `EO-###`;
-- executar automaticamente a fusão de `ECO-CAND-005`;
-- incorporar automaticamente `ECO-CAND-001`;
-- usar voz, consentimento formal, quantidade de opções ou engajamento como prova suficiente de agência;
+- apagar `ECO-CAND-005` ou suas evidências;
+- tratar persistência, engajamento ou permanência no mesmo objetivo como prova suficiente;
 - iniciar AQS-O01, Business Capabilities ou Product Engineering.
 
 ### Gate de reentrada na COEM
 
-A formulação revisada somente poderá receber nova disposição após:
+A formulação combinada somente poderá receber nova disposição após:
 
 1. reaplicação explícita dos quatro testes;
-2. definição de evidências de condições reais e não coercitivas de escolha, revisão, pausa, recusa e renovação;
-3. verificação de que a formulação não depende de produto, tecnologia, jornada ou métrica de engajamento;
-4. revisão das fronteiras com compreensão contextual e continuidade adaptativa;
-5. confirmação de observabilidade por múltiplos sinais, sem autodeclaração isolada.
-
-## 6. Submissão decisória atual — ECO-CAND-005
-
-A submissão `BA-STR-002-COD-SUB-003` apresenta a recomendação `Merge into ECO-CAND-003`, preservando a diferença entre fusão, aprovação e canonicalização.
-
-```text
-A — Aceitar Merge into ECO-CAND-003
-B — Rejeitar a fusão, com fundamentação
-C — Devolver para nova análise
-```
-
-A alternativa A é recomendada. Enquanto não houver manifestação explícita:
-
-- `COD-003` não existe;
-- decisões humanas permanecem em `2 de 18`;
-- `ECO-CAND-005` permanece `Under Validation` e rastreável de forma independente;
-- nenhuma alteração é executada no COR;
-- a formulação de `ECO-CAND-003` registrada em `COD-002` permanece vigente;
-- nenhum código canônico é criado.
+2. verificação de condições reais e não coercitivas de escolha, revisão, pausa, recusa, abandono e renovação;
+3. definição de sinais que distingam continuidade adaptativa de persistência ou engajamento;
+4. cobertura adicional para Organizações e Coletivos;
+5. confirmação de independência de produto, tecnologia, jornada ou métrica única.
 
 ## 7. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
 | ECO-CAND-001 | Reformulate | Aceitar `Reformulate` | decisão registrada; revisão candidata pendente de nova COEM |
-| ECO-CAND-003 | Reformulate | Aceitar `Reformulate` | decisão registrada; revisão candidata pendente de nova COEM |
-| ECO-CAND-005 | Merge into ECO-CAND-003 | — | submitted to human decision; awaiting response |
+| ECO-CAND-003 | Reformulate | Aceitar `Reformulate` | decisão registrada; formulação combinada pendente de nova COEM |
+| ECO-CAND-005 | Merge into ECO-CAND-003 | Aceitar `Merge into ECO-CAND-003` | `Merged`; alvo ECO-CAND-003; rastreabilidade preservada |
 | ECO-CAND-002 | Reformulate | — | Pending human decision |
 | ECO-CAND-004 | Reject | — | Pending human decision |
 | ECO-CAND-006 | Reformulate | — | Pending human decision |
@@ -258,18 +237,18 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 
 | Critério | Resultado |
 |---|---|
-| submissão individual de ECO-CAND-005 criada | Pass |
-| recomendação original preservada | Pass |
-| alvo de fusão explicitado | Pass |
-| alternativas de decisão explicitadas | Pass |
-| decisão humana inferida automaticamente | Blocked |
-| alteração automática do COR | Blocked |
-| promoção canônica | Blocked |
+| manifestação humana explícita | Pass |
+| recomendação e alvo preservados | Pass |
+| `COD-003` registrado | Pass |
+| COR alterado de forma explícita | Pass |
+| rastreabilidade do candidato fundido | Pass |
+| alvo mantido em `Under Validation` | Pass |
+| promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 9. Próximo passo governado
 
-Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-003`.
+Submeter `ECO-CAND-002 — Acesso a possibilidades relevantes` à quarta decisão humana individual sobre a recomendação `Reformulate`.
 
-Se a alternativa A for escolhida, o próximo incremento deverá criar `COD-003`, alterar `ECO-CAND-005` para `Merged` com alvo `ECO-CAND-003`, preservar sua rastreabilidade e manter a formulação combinada em `Under Validation` para nova COEM.
+As formulações revisadas e combinadas permanecem candidatas, sem códigos canônicos, até reentrada formal na COEM.
