@@ -2,19 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.79.0
+version: 1.80.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-006
+  - GKR-CANON-MATRIX-COD-007-SUBMISSION
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-006
+  - BA-STR-002-COD-SUB-007
   - COD-006
-  - M7.8
+  - M7.8.1
 normative: false
 ---
 
@@ -55,13 +55,14 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-004` | Manter | `Reformulate` aceito para `ECO-CAND-002` |
 | `COD-005` | Manter | `Reject` aceito para `ECO-CAND-004` |
 | `COD-006` | Manter | `Reformulate` aceito para `ECO-CAND-006` |
-| CODR | Manter ativo | 6 de 18 decisões; 0 submissões abertas |
-| COR | Refinar | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
+| CODR | Manter ativo | 6 de 18 decisões; 1 submissão aberta |
+| COR | Manter | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
 | `ECO-CAND-005` | Unificar em `ECO-CAND-003` | `Merged`; formulação e evidências preservadas |
 | `ECO-CAND-006` | Refinar e manter `Under Validation` | formulação de saúde relacional registrada; nova COEM pendente |
+| `ECO-CAND-007` | Pendente | `Reformulate` submetido; sem decisão humana ou alteração no COR |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
 | produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
@@ -69,29 +70,39 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado de COD-006
+## 4. Submissão de ECO-CAND-007
 
-A alternativa `A — Aceitar Reformulate` foi consolidada para `ECO-CAND-006`.
+A COEM recomenda `Reformulate` e a submissão apresenta a formulação candidata **Participação inclusiva, digna e efetiva**:
 
-**Saúde relacional no ecossistema**:
+> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
 
-> O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
+A submissão preserva:
 
-A decisão:
+- a formulação original;
+- os resultados dos quatro testes;
+- inclusão e dignidade como condição ecossistêmica material;
+- capacidade de uso, respeito, voz e contestabilidade como sinais observáveis;
+- barreiras materiais evitáveis como limite de inclusão;
+- requisitos legítimos de elegibilidade, segurança e conformidade;
+- a distinção entre Outcome, direitos, guardrails e capacidades de acessibilidade;
+- `ECO-CAND-007` em `Under Validation`;
+- `COD-007` inexistente até manifestação humana explícita.
 
-- preserva a formulação original;
-- registra a formulação revisada como candidata;
-- mantém `ECO-CAND-006` em `Under Validation`;
-- exige nova COEM antes de qualquer aprovação;
-- preserva diversidade estrutural, reciprocidade, autonomia e efeitos sobre terceiros;
-- bloqueia quantidade, densidade, intensidade ou coesão como evidência suficiente;
-- não cria código canônico;
-- não inicia AQS-O01, Business Capabilities ou Product Engineering.
+## 5. Limites
 
-## 5. Addendum vigente
+A submissão não:
 
-O addendum vigente é `Canonical Consolidation Matrix 1.79.0 — COD-006`.
+- transforma cadastro, tradução, presença global ou representação nominal em evidência suficiente;
+- promete acesso universal imediato;
+- elimina requisitos legítimos;
+- cria Outcome canônico;
+- altera o COR;
+- inicia AQS-O01, Business Capabilities ou Product Engineering.
 
-## 6. Próximo ato
+## 6. Addendum vigente
 
-Preparar a submissão de `ECO-CAND-007 — Participação inclusiva e digna` à sétima decisão humana individual sobre a recomendação `Reformulate`.
+O addendum vigente é `Canonical Consolidation Matrix 1.80.0 — ECO-CAND-007 Decision Submission`.
+
+## 7. Próximo ato
+
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-007`.
