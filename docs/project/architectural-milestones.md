@@ -2,19 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.62.0
+version: 4.64.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.64.0
+  - ROADMAP-11.66.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-008
-  - COD-008
-  - M7.10
+  - BA-STR-002-COD-SUB-009
+  - COD-009
+  - M7.11
 normative: false
 ---
 
@@ -47,23 +47,25 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.8.1 | Completed | sétima decisão submetida |
 | M7.9 | Completed | `COD-007` registrado |
 | M7.9.1 | Completed | oitava decisão submetida |
-| M7.10 | Completed neste incremento | oitava decisão registrada como `COD-008` |
+| M7.10 | Completed | `COD-008` registrado |
+| M7.10.1 | Completed | nona decisão submetida |
+| M7.11 | Completed neste incremento | `COD-009` registrado para `BUS-CAND-001` |
 
 ## 3. Marco vigente
 
-### M7.10 — Eighth Human Outcome Decision Recorded
+### M7.11 — Ninth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
 - manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Reformulate` aceita;
-- `COD-008` criado para `ECO-CAND-008`;
-- formulação original preservada;
-- formulação candidata **Participação protegida, justa e contestável** registrada;
-- candidato mantido em `Under Validation`;
-- nova aplicação dos quatro testes da COEM exigida;
-- decisões humanas atualizadas para 8 de 18;
-- COR preservado em 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
+- alternativa `A — Aceitar Reject` aceita;
+- `COD-009` criado para `BUS-CAND-001`;
+- formulação original e evidências preservadas;
+- candidato movido de `Under Validation` para `Rejected`;
+- aderência ao propósito preservada como autoridade constitucional, obrigação de governança e critério de admissibilidade;
+- prevenção e correção de *mission drift* preservadas;
+- decisões humanas atualizadas para 9 de 18;
+- COR atualizado para 15 `Under Validation`, 1 `Merged` e 2 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -79,7 +81,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Preparar a submissão de `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana sobre a recomendação `Reject`.
+Preparar a submissão de `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana sobre a recomendação `Merge into BUS-CAND-003`.
 
 ## 6. Regra de transição
 
