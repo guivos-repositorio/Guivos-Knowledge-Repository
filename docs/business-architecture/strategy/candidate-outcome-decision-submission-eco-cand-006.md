@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-006
-title: Human Decision Submission — ECO-CAND-006
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — ECO-CAND-006
+status: decided
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -14,23 +14,32 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - COD-005
-  - M7.7.1
+  - COD-006
+  - M7.8
 normative: false
 ---
 
-# Human Decision Submission — ECO-CAND-006
+# Human Decision Resolution — ECO-CAND-006
 
 ## 1. Finalidade
 
-Submeter `ECO-CAND-006 — Conexões relevantes e fortalecedoras` à sexta decisão humana individual do Candidate Outcome Decision Register.
+Registrar a sexta decisão humana individual do Candidate Outcome Decision Register para `ECO-CAND-006 — Conexões relevantes e fortalecedoras`.
 
-Este documento organiza a recomendação e as alternativas. Ele **não registra `COD-006`**, não altera o COR, não reformula o candidato e não cria Outcome canônico antes da manifestação explícita do Fundador da Guivos.
+## 2. Manifestação humana
 
-## 2. Formulação originalmente avaliada
+O Fundador da Guivos aceitou explicitamente:
+
+```text
+A — Aceitar Reformulate
+```
+
+A manifestação autoriza `COD-006`, preserva a formulação original e registra uma nova formulação candidata sem promover o candidato a Outcome aprovado.
+
+## 3. Formulação originalmente avaliada
 
 > Participantes formam e preservam relações relevantes que ampliam cooperação, acesso a oportunidades e geração recíproca de valor.
 
-## 3. Resultado da COEM
+## 4. Resultado da COEM
 
 | Teste | Resultado | Síntese |
 |---|---|---|
@@ -40,78 +49,65 @@ Este documento organiza a recomendação e as alternativas. Ele **não registra 
 | Outcome Quality | Partial | o núcleo é permanente e ecossistêmico, mas a formulação pressupõe benefício e agrega relação, mecanismo e efeito sem explicitar diversidade, reciprocidade, autonomia e ausência de dano material |
 | Disposição recomendada | `Reformulate` | preservar o núcleo como saúde relacional no ecossistema |
 
-## 4. Evidências e limites
-
-A validação externa e a COEM sustentam que:
-
-1. pontes relacionais podem ampliar circulação de informação e oportunidades;
-2. recursos funcionais podem estar incorporados às relações;
-3. redes densas ou fechadas podem excluir terceiros, restringir autonomia ou produzir nivelamento descendente;
-4. número de conexões, intensidade do vínculo, coesão ou confiança declarada não comprovam saúde relacional;
-5. diversidade estrutural, reciprocidade, voluntariedade e efeitos sobre terceiros são dimensões materiais;
-6. o candidato descreve uma condição relacional distinta de guardrails de proteção e de confiança ou legitimidade institucionais.
-
-## 5. Formulação candidata proposta
+## 5. Formulação candidata registrada
 
 ### Saúde relacional no ecossistema
 
 > O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
 
-A formulação proposta:
+A formulação:
 
 - preserva o núcleo relacional;
-- substitui a presunção de conexões necessariamente fortalecedoras por condições observáveis de saúde relacional;
-- inclui diversidade, reciprocidade, voluntariedade e autonomia;
+- inclui diversidade estrutural, reciprocidade, voluntariedade e autonomia;
 - inclui limites contra exclusão, captura e dano material;
 - permanece independente de rede social, comunidade, marketplace, algoritmo, canal ou tecnologia;
-- não trata quantidade ou intensidade das conexões como prova suficiente.
+- não trata quantidade, densidade, intensidade ou coesão das conexões como evidência suficiente.
 
-## 6. Alternativas submetidas à decisão humana
+## 6. Decisão registrada
 
-### Alternativa A — Aceitar `Reformulate` — recomendada
+| Campo | Resultado |
+|---|---|
+| Decisão | `COD-006` |
+| Candidato | `ECO-CAND-006` |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-Autoriza, em incremento posterior de registro:
+## 7. Efeitos autorizados
 
 - criar `COD-006`;
-- aceitar formalmente a disposição `Reformulate`;
 - preservar a formulação original;
 - registrar **Saúde relacional no ecossistema** como formulação candidata;
 - manter `ECO-CAND-006` em `Under Validation`;
-- reaplicar os quatro testes da COEM antes de qualquer aprovação.
+- exigir nova aplicação dos quatro testes da COEM antes de qualquer aprovação.
 
-Não autoriza promover o candidato a `Approved`, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 8. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reformulate`
+- promover `ECO-CAND-006` a `Approved`;
+- criar código canônico `EO-###`;
+- tratar volume, densidade, intensidade ou coesão de conexões como prova suficiente;
+- iniciar AQS-O01 ou Business Capabilities;
+- iniciar produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-Mantém `ECO-CAND-006` em `Under Validation` e exige fundamentação para preservar a formulação original ou adotar outra disposição.
-
-A rejeição da recomendação não aprova automaticamente o candidato.
-
-### Alternativa C — Devolver para nova análise
-
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- fronteira entre saúde relacional, confiança e proteção;
-- critérios de diversidade estrutural e reciprocidade;
-- efeitos de redes fechadas sobre não membros e terceiros;
-- observabilidade sem usar volume, densidade ou intensidade de vínculos como prova;
-- possível sobreposição com `ECO-CAND-002` e `ECO-CAND-008`.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
+## 9. Estado resultante
 
 ```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
+Human decisions recorded: 6 of 18
+Decision submissions awaiting human response: 0
+Accepted Reformulate dispositions: 4
+Accepted Merge dispositions: 1
+Accepted Reject dispositions: 1
+ECO-CAND-006: Under Validation
+COR: 16 Under Validation; 1 Merged; 1 Rejected
+Approved Outcomes: 0
+Canonical EO/BO codes: 0
 ```
 
-Até essa manifestação:
+## 10. Próximo passo governado
 
-- `COD-006` não existe;
-- decisões humanas permanecem em `5 de 18`;
-- `ECO-CAND-006` permanece `Under Validation`;
-- o COR permanece com 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Submeter `ECO-CAND-007 — Participação inclusiva e digna` à sétima decisão humana individual sobre a recomendação `Reformulate`.
