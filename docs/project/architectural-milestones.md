@@ -2,19 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.59.0
+version: 4.60.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.61.0
+  - ROADMAP-11.62.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-007
-  - COD-006
-  - M7.8.1
+  - COD-007
+  - M7.9
 normative: false
 ---
 
@@ -44,24 +44,24 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.7 | Completed | `COD-005` registrado |
 | M7.7.1 | Completed | sexta decisão submetida |
 | M7.8 | Completed | `COD-006` registrado |
-| M7.8.1 | Completed neste incremento | sétima decisão submetida para `ECO-CAND-007` |
+| M7.8.1 | Completed | sétima decisão submetida |
+| M7.9 | Completed neste incremento | sétima decisão registrada como `COD-007` |
 
 ## 3. Marco vigente
 
-### M7.8.1 — Seventh Human Outcome Decision Submitted
+### M7.9 — Seventh Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- submissão individual `BA-STR-002-COD-SUB-007` criada;
-- recomendação `Reformulate` preservada;
-- resultados `Pass / Pass / Pass / Partial` registrados;
-- evidências e contraevidências consolidadas;
-- formulação candidata **Participação inclusiva, digna e efetiva** proposta;
-- alternativas A, B e C apresentadas;
-- decisões humanas preservadas em 6 de 18;
-- `ECO-CAND-007` preservado em `Under Validation`;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reformulate` aceita;
+- `COD-007` criado para `ECO-CAND-007`;
+- formulação original preservada;
+- formulação candidata **Participação inclusiva, digna e efetiva** registrada;
+- candidato mantido em `Under Validation`;
+- nova aplicação dos quatro testes da COEM exigida;
+- decisões humanas atualizadas para 7 de 18;
 - COR preservado em 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
-- `COD-007` não criado;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -77,7 +77,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-007`.
+Preparar a submissão de `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana sobre a recomendação `Reformulate`.
 
 ## 6. Regra de transição
 
