@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -12,14 +12,16 @@ depends_on:
   - GKR-GOV-OUT-001
 related:
   - BA-STR-002-EOVB-001
+  - BA-STR-002-EOVB-006
   - RP-001-EVIDENCE
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COD-SUB-002
   - BA-STR-002-COD-SUB-003
+  - BA-STR-002-COD-SUB-004
   - COD-001
   - COD-002
   - COD-003
-  - M7.5
+  - M7.5.1
 normative: false
 execution_status: in-progress
 ---
@@ -48,7 +50,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 3
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: ECO-CAND-002
 Accepted Reformulate dispositions: 2
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 0
@@ -183,41 +186,48 @@ A fusão foi aceita porque:
 
 > O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar, abandonar ou renovar seus próprios próximos passos diante de mudanças, aprendizados e limites legítimos, individualmente ou em relações de co-agência.
 
-### Efeitos autorizados
+### Efeitos e limites
 
-- aceitar formalmente a disposição `Merge into ECO-CAND-003`;
-- alterar `ECO-CAND-005` para `Merged`, com alvo `ECO-CAND-003`;
-- preservar integralmente formulação original, evidências e rastreabilidade;
-- incorporar continuidade adaptativa à formulação candidata de `ECO-CAND-003`;
-- manter `ECO-CAND-003` em `Under Validation`;
-- reaplicar os quatro testes da COEM antes de qualquer aprovação.
+A decisão alterou `ECO-CAND-005` para `Merged`, preservou sua rastreabilidade e manteve `ECO-CAND-003` em `Under Validation`. Não criou código canônico, não iniciou AQS-O01 e não autorizou Business Capabilities ou Product Engineering.
 
-### Efeitos não autorizados
+## 7. Submissão decisória atual — ECO-CAND-002
 
-- promover `ECO-CAND-003` a `Approved`;
-- criar código canônico `EO-###`;
-- apagar `ECO-CAND-005` ou suas evidências;
-- tratar persistência, engajamento ou permanência no mesmo objetivo como prova suficiente;
-- iniciar AQS-O01, Business Capabilities ou Product Engineering.
+A submissão `BA-STR-002-COD-SUB-004` apresenta a recomendação `Reformulate`.
 
-### Gate de reentrada na COEM
+### Formulação originalmente avaliada
 
-A formulação combinada somente poderá receber nova disposição após:
+> Participantes encontram possibilidades legítimas, compreensíveis e relevantes para seu contexto, seus objetivos e seu momento de vida.
 
-1. reaplicação explícita dos quatro testes;
-2. verificação de condições reais e não coercitivas de escolha, revisão, pausa, recusa, abandono e renovação;
-3. definição de sinais que distingam continuidade adaptativa de persistência ou engajamento;
-4. cobertura adicional para Organizações e Coletivos;
-5. confirmação de independência de produto, tecnologia, jornada ou métrica única.
+### Formulação candidata proposta
 
-## 7. Matriz cumulativa de decisões
+**Acesso real a possibilidades legítimas e manejáveis**
+
+> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
+
+### Alternativas
+
+```text
+A — Aceitar Reformulate
+B — Rejeitar Reformulate, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada. Enquanto não houver manifestação explícita:
+
+- `COD-004` não existe;
+- decisões humanas permanecem em `3 de 18`;
+- `ECO-CAND-002` permanece `Under Validation`;
+- nenhuma alteração é executada no COR;
+- nenhum código canônico é criado.
+
+## 8. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
 | ECO-CAND-001 | Reformulate | Aceitar `Reformulate` | decisão registrada; revisão candidata pendente de nova COEM |
 | ECO-CAND-003 | Reformulate | Aceitar `Reformulate` | decisão registrada; formulação combinada pendente de nova COEM |
 | ECO-CAND-005 | Merge into ECO-CAND-003 | Aceitar `Merge into ECO-CAND-003` | `Merged`; alvo ECO-CAND-003; rastreabilidade preservada |
-| ECO-CAND-002 | Reformulate | — | Pending human decision |
+| ECO-CAND-002 | Reformulate | — | submitted to human decision; awaiting response |
 | ECO-CAND-004 | Reject | — | Pending human decision |
 | ECO-CAND-006 | Reformulate | — | Pending human decision |
 | ECO-CAND-007 | Reformulate | — | Pending human decision |
@@ -233,22 +243,22 @@ A formulação combinada somente poderá receber nova disposição após:
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 8. Gate do incremento
+## 9. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
-| recomendação e alvo preservados | Pass |
-| `COD-003` registrado | Pass |
-| COR alterado de forma explícita | Pass |
-| rastreabilidade do candidato fundido | Pass |
-| alvo mantido em `Under Validation` | Pass |
-| promoção canônica bloqueada | Pass |
+| submissão individual de ECO-CAND-002 criada | Pass |
+| recomendação original preservada | Pass |
+| formulação candidata proposta | Pass |
+| alternativas humanas explicitadas | Pass |
+| decisão humana inferida automaticamente | Blocked |
+| alteração automática do COR | Blocked |
+| promoção canônica | Blocked |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 9. Próximo passo governado
+## 10. Próximo passo governado
 
-Submeter `ECO-CAND-002 — Acesso a possibilidades relevantes` à quarta decisão humana individual sobre a recomendação `Reformulate`.
+Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-004`.
 
-As formulações revisadas e combinadas permanecem candidatas, sem códigos canônicos, até reentrada formal na COEM.
+Se a alternativa A for escolhida, o próximo incremento deverá criar `COD-004`, registrar a formulação revisada, manter `ECO-CAND-002` em `Under Validation` e preservar a reentrada obrigatória nos quatro testes da COEM.
