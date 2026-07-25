@@ -1,8 +1,8 @@
 ---
 id: GKR-REMEDIATION-002
 title: Repository State and Navigation Remediation Plan
-status: proposed
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-24
 parent: GKR-AUD-002
@@ -10,8 +10,10 @@ depends_on:
   - GKR-AUD-002
   - GEA-AUDIT-001
 related:
+  - GKR-STATE-001
   - BA-STR-002-CODR-001
   - GEM-CLOSURE-REVIEW-001
+  - ROADMAP-11.47.0
 normative: false
 ---
 
@@ -19,93 +21,104 @@ normative: false
 
 ## 1. Objetivo
 
-Eliminar as não conformidades abertas pelo `GKR-AUD-002`, restabelecer uma única leitura do estado vigente e impedir que documentos históricos concorram com os overlays atuais.
+Eliminar as não conformidades abertas pelo `GKR-AUD-002`, restabelecer uma única leitura do estado vigente e impedir que documentos históricos concorram com o estado atual.
 
-## 2. Princípios de correção
+## 2. Estado de execução
+
+| Incremento | Estado | Resultado |
+|---|---|---|
+| R1 — Precedência e estado global | concluído neste incremento | `GKR-STATE-001`, README, Home e GEA reconciliados |
+| R2 — Roadmap e backlog global | concluído neste incremento | Roadmap central reestruturado e backlog rebaselined |
+| R3 — Controles centrais | próximo | Board, Milestones, Matrix e referências centrais |
+| R4 — Navegação | pendente | `mkdocs.yml` e ativos recentes acessíveis |
+| R5 — Validação mecânica | pendente | IDs, links, front matter, diff e build estrito |
+| R6 — Retomada governada | bloqueado | retorno ao CODR após resultado `PASS` |
+
+## 3. Princípios de correção
 
 - preservar integralmente o histórico;
 - não apagar decisões ou versões anteriores;
-- tornar explícita a precedência documental;
+- manter precedência documental explícita;
 - reduzir duplicação de estado em superfícies globais;
 - separar estado atual, histórico e backlog futuro;
 - não alterar conteúdo arquitetural apenas para corrigir navegação;
-- validar mecanicamente o resultado antes da integração final.
+- validar mecanicamente o resultado antes da retomada da A2-R03.
 
-## 3. Estratégia de organização
+## 4. Estratégia de organização
 
-### Superfície única de estado atual
+### 4.1 Superfície única de estado atual
 
-Criar ou consolidar um `Current State Register` curto, responsável por declarar:
+O [GKR-STATE-001 — Current State Register](current-state-register.md) passa a declarar:
 
 - era e marco vigentes;
-- frente estratégica ativa;
+- frente estratégica e frente de controle;
 - domínios concluídos, pausados e pendentes;
 - próximo incremento autorizado;
 - trilhas paralelas;
-- documento de sequência global vigente.
+- sequência global vigente.
 
-README, Home, Roadmap, Board e GEA deverão consumir esse registro e evitar listas independentes extensas.
+README, Home, Roadmap, Board e GEA devem consumir esse registro e evitar estados independentes.
 
-### Separação entre atual e histórico
+### 4.2 Separação entre atual e histórico
 
 | Classe | Tratamento |
 |---|---|
-| documento de estado vigente | `status: active` e referência explícita ao predecessor |
-| overlay versionado anterior | preservado como histórico de estado |
-| documento central desatualizado | atualizado ou classificado como `historical` com `superseded_by` |
-| backlog superado | preservado em seção histórica, fora do próximo incremento |
-| decisão de reordenamento executada | atualizar de `proposed` para estado executado ou histórico |
+| autoridade normativa do domínio | preserva definição, decisão e conteúdo arquitetural |
+| Current State Register | governa estado transversal e próximo incremento |
+| documento central de navegação | resume e referencia o estado vigente |
+| overlay versionado anterior | preserva snapshot histórico |
+| backlog superado | permanece em histórico, fora do trabalho futuro |
+| decisão de reordenamento executada | deve ser classificada como executada ou histórica em R3/R4 |
 
-## 4. Incrementos de remediação
+## 5. Incrementos de remediação
 
-### R1 — Precedência e estado global
+### R1 — Precedência e estado global — concluído
 
-Corrigir:
+Executado:
 
-- `README.md`;
-- `docs/index.md`;
-- `docs/enterprise-architecture/index.md`;
-- registro de estado atual;
-- regra de precedência entre documento central e overlay.
+- criação de `GKR-STATE-001`;
+- reconciliação de `README.md`;
+- reconciliação de `docs/index.md`;
+- atualização de `GEA-000` para 1.9.0;
+- regra de precedência documental explícita.
 
-**Saída:** M7.2 e COD-001 visíveis nas entradas principais.
+**Resultado:** entradas principais apresentam o mesmo estado e não criam rotas paralelas.
 
-### R2 — Roadmap e backlog global
+### R2 — Roadmap e backlog global — concluído
 
-Reconciliar:
+Executado:
 
-- `docs/roadmap.md`;
-- backlog histórico do Journey;
-- conclusão documental do Economic Model;
-- A2-R03 como frente atual;
-- sequência de Business Architecture;
-- backlog dos seis produtos;
-- Commercial Model e Go-to-Market;
-- trilha paralela de Market Validation.
+- substituição do roadmap central desatualizado;
+- registro de Journey como concluído;
+- registro do Economic Model como documentariamente concluído;
+- preservação da A2-R03 como sequência autorizada;
+- detalhamento do ciclo Outcomes → Business Capabilities;
+- preservação e rebaseline do backlog dos seis produtos;
+- Commercial Model e Go-to-Market mantidos como ciclos posteriores;
+- Market Validation preservada como trilha operacional paralela.
 
-**Saída:** um backlog global rebaselined, sem itens concluídos apresentados como futuros.
+**Resultado:** itens concluídos não são mais apresentados como trabalho futuro.
 
-### R3 — Controles centrais
+### R3 — Controles centrais — próximo
 
 Reconciliar:
 
 - `docs/project/knowledge-board.md`;
 - `docs/project/architectural-milestones.md`;
 - `docs/project/canonical-consolidation-matrix.md`;
-- referências de changelog e versões.
+- referências de changelog e versões;
+- estado da decisão de reordenamento Journey → Economic Model.
 
-**Saída:** controles centrais sincronizados com overlays 11.45, 4.43, 1.64 e 0.92.
+**Saída:** controles centrais sincronizados com `GKR-STATE-001` e com os overlays atuais.
 
 ### R4 — Navegação
 
 Atualizar `mkdocs.yml` para incluir:
 
+- Current State Register;
 - Candidate Outcome Decision Register;
-- M7.2;
-- Roadmap 11.45.0 e posterior;
-- Knowledge Board 11.45.0 e posterior;
-- Canonical Consolidation Matrix 1.64.0 e posterior;
-- Changelog 0.92.0 e posterior;
+- marcos M7.2, M7.3 e posteriores;
+- Roadmaps, Boards, Matrices e Changelogs recentes;
 - auditoria e plano de remediação.
 
 **Saída:** todos os ativos vigentes acessíveis pelo site oficial.
@@ -131,20 +144,19 @@ Após `PASS` da auditoria de correção:
 - encerrar a pausa de reconciliação;
 - retomar `BA-STR-002-CODR-001`;
 - submeter `ECO-CAND-003` à decisão humana individual;
-- preservar a trilha de Market Validation como frente paralela.
+- preservar Market Validation como frente paralela.
 
-## 5. Priorização
+## 6. Priorização remanescente
 
 | Prioridade | Item | Motivo |
 |---|---|---|
-| P0 | precedência documental e entradas principais | elimina ambiguidade imediata |
-| P0 | roadmap e backlog global | restabelece a rota oficial |
-| P0 | navegação dos ativos vigentes | evita ativos órfãos |
-| P1 | controles centrais | consolida governança e histórico |
-| P1 | validação mecânica integral | comprova integridade da correção |
-| P2 | redução estrutural de duplicação | previne recorrência de drift |
+| P0 | controles centrais | elimina estados antigos ainda apresentados como oficiais |
+| P0 | navegação dos ativos vigentes | evita autoridades órfãs |
+| P0 | validação mecânica integral | comprova a integridade da correção |
+| P1 | classificação de documentos históricos | reduz risco de novo drift |
+| P2 | redução adicional de duplicação | previne recorrência no longo prazo |
 
-## 6. Limites
+## 7. Limites
 
 A remediação não:
 
@@ -152,12 +164,13 @@ A remediação não:
 - altera o conteúdo de `COD-001`;
 - toma decisões sobre outros Candidate Outcomes;
 - inicia AQS-O01;
+- inicia Business Capabilities;
 - especifica Mall ou outros produtos;
 - cria Commercial Model ou Go-to-Market;
 - retoma Product Engineering;
 - executa Market Validation automaticamente.
 
-## 7. Critério de conclusão
+## 8. Critério de conclusão
 
 ```text
 Critical findings open: 0
@@ -172,6 +185,6 @@ mkdocs build --strict: pass
 A2-R03 continuation gate: open
 ```
 
-## 8. Próximo incremento proposto
+## 9. Próximo incremento
 
-Executar `R1 — Precedência e estado global` e `R2 — Roadmap e backlog global` em um PR isolado. A atualização deverá preservar documentos históricos e apresentar claramente a sequência Journey → Economic Model → Business Architecture → Product Portfolio → Commercial Model → Go-to-Market.
+Executar `R3 — Controles centrais` em PR isolado. A integração deverá atualizar Board, Milestones, Matrix e referências centrais sem avançar para `ECO-CAND-003`.
