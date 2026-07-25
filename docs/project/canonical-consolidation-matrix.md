@@ -2,19 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.84.0
+version: 1.85.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-009-SUBMISSION
+  - GKR-CANON-MATRIX-COD-009
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-009
-  - COD-008
-  - M7.10.1
+  - COD-009
+  - M7.11
 normative: false
 ---
 
@@ -57,8 +57,9 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-006` | Manter | `Reformulate` aceito para `ECO-CAND-006` |
 | `COD-007` | Manter | `Reformulate` aceito para `ECO-CAND-007` |
 | `COD-008` | Manter | `Reformulate` aceito para `ECO-CAND-008` |
-| CODR | Manter ativo | 8 de 18 decisões; 1 submissão aberta |
-| COR | Manter | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
+| `COD-009` | Manter | `Reject` aceito para `BUS-CAND-001` |
+| CODR | Manter ativo | 9 de 18 decisões; 0 submissões abertas |
+| COR | Refinar | 15 `Under Validation`; 1 `Merged`; 2 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
@@ -66,7 +67,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `ECO-CAND-006` | Refinar e manter `Under Validation` | formulação de saúde relacional registrada; nova COEM pendente |
 | `ECO-CAND-007` | Refinar e manter `Under Validation` | formulação de participação inclusiva, digna e efetiva registrada; nova COEM pendente |
 | `ECO-CAND-008` | Refinar e manter `Under Validation` | formulação de participação protegida, justa e contestável registrada; nova COEM pendente |
-| `BUS-CAND-001` | Pendente | `Reject` submetido; sem decisão humana ou alteração no COR |
+| `BUS-CAND-001` | Remover do catálogo de Business Outcomes | `Rejected`; conteúdo preservado como autoridade constitucional e obrigação de governança |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
 | produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
@@ -74,37 +75,28 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Submissão de BUS-CAND-001
+## 4. Resultado de COD-009
 
-A COEM recomenda `Reject` para **Aderência permanente ao propósito**:
+A alternativa `A — Aceitar Reject` foi consolidada para `BUS-CAND-001 — Aderência permanente ao propósito`.
 
 > A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes.
 
-A submissão preserva:
+A decisão:
 
-- a formulação original;
-- os resultados dos quatro testes;
-- propósito como razão de ser e autoridade constitucional;
-- aderência como obrigação de governança, accountability e critério de admissibilidade;
-- sinais de *mission drift* como gatilhos de revisão e correção;
-- `BUS-CAND-001` em `Under Validation`;
-- `COD-009` inexistente até manifestação humana explícita.
+- preserva a formulação original, evidências e rastreabilidade;
+- move `BUS-CAND-001` para `Rejected`;
+- retira a candidatura do futuro catálogo de Business Outcomes;
+- mantém aderência ao propósito como princípio constitucional permanente;
+- mantém governança, accountability e prevenção de *mission drift* como obrigações transversais;
+- preserva o conteúdo como critério de admissibilidade para decisões, investimentos, relações, capacidades, produtos e Outcomes;
+- não relativiza o propósito nem reduz a autoridade dos princípios permanentes;
+- não cria código canônico;
+- não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
-## 5. Limites
+## 5. Addendum vigente
 
-A submissão não:
+O addendum vigente é `Canonical Consolidation Matrix 1.85.0 — COD-009`.
 
-- relativiza o propósito ou os princípios permanentes;
-- transforma aderência declarada em prova de prática institucional;
-- rejeita automaticamente `BUS-CAND-001`;
-- cria Outcome canônico;
-- altera o COR;
-- inicia AQS-O01, Business Capabilities ou Product Engineering.
+## 6. Próximo ato
 
-## 6. Addendum vigente
-
-O addendum vigente é `Canonical Consolidation Matrix 1.84.0 — BUS-CAND-001 Decision Submission`.
-
-## 7. Próximo ato
-
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-009`.
+Preparar a submissão de `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana individual sobre a recomendação `Merge into BUS-CAND-003`.
