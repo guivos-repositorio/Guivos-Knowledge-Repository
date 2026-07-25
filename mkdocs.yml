@@ -189,7 +189,7 @@ nav:
       - Validações Arquiteturais:
           - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
           - A2-R01 — Foundation Evidence Matrix: validation/A2-R01-FEM-001-foundation-evidence-matrix.md
-          - A2-R01 — Foundation Canonical Consolidation: validation/A2-R01-CC-001-foundation-canonical-consolidation.md
+          - A2-R01 — Foundation Canonical Consolidation: validation/A2-R01-CC-001-canonical-consolidation.md
           - A2-R01 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
           - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
           - A2-R01 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
