@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.15.0
+version: 1.17.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -14,12 +14,12 @@ related:
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-007
+  - BA-STR-002-COD-SUB-008
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - COD-007
-  - ROADMAP-11.62.0
-  - M7.9
+  - COD-008
+  - ROADMAP-11.64.0
+  - M7.10
 normative: true
 ---
 
@@ -34,13 +34,13 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.9 — Seventh Human Outcome Decision Recorded` |
+| Marco vigente | `M7.10 — Eighth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.19.0`; 16 `Under Validation`, 1 `Merged` e 1 `Rejected` |
-| CODR | `0.13.0`; 7 de 18 decisões humanas; 0 submissões aguardando resposta |
+| COR | `0.20.0`; 16 `Under Validation`, 1 `Merged` e 1 `Rejected` |
+| CODR | `0.15.0`; 8 de 18 decisões humanas; 0 submissões aguardando resposta |
 | `COD-001` | `Reformulate` aceito para `ECO-CAND-001` |
 | `COD-002` | `Reformulate` aceito para `ECO-CAND-003` |
 | `COD-003` | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
@@ -48,8 +48,9 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | `COD-005` | `Reject` aceito para `ECO-CAND-004` |
 | `COD-006` | `Reformulate` aceito para `ECO-CAND-006` |
 | `COD-007` | `Reformulate` aceito para `ECO-CAND-007` |
-| `ECO-CAND-007` | `Under Validation`; formulação candidata **Participação inclusiva, digna e efetiva** registrada |
-| Próximo candidato | `ECO-CAND-008 — Participação confiável e protegida` |
+| `COD-008` | `Reformulate` aceito para `ECO-CAND-008` |
+| `ECO-CAND-008` | `Under Validation`; formulação candidata **Participação protegida, justa e contestável** registrada |
+| Próximo candidato | `BUS-CAND-001 — Aderência permanente ao propósito` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -60,15 +61,15 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Resultado de COD-007
+## 3. Resultado de COD-008
 
-O Fundador aceitou `Reformulate` para `ECO-CAND-007`.
+O Fundador aceitou `Reformulate` para `ECO-CAND-008`.
 
 A formulação original foi preservada e a formulação candidata registrada é:
 
-> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
+> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
 
-O candidato permanece `Under Validation`. Cadastro, tradução, presença global ou representação nominal não constituem evidência suficiente de inclusão. A formulação não promete acesso universal imediato e preserva requisitos legítimos.
+O candidato permanece `Under Validation`. Privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis. Proteção absoluta é impossível, e conformidade, ausência de incidentes ou confiança declarada não constituem evidência suficiente.
 
 ## 4. Sequência oficial
 
@@ -77,7 +78,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 7 de 18
+→ decisões humanas do BA-STR-002 — 8 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -88,7 +89,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
+Preparar e submeter `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.
 
 Nenhuma decisão será registrada automaticamente.
 

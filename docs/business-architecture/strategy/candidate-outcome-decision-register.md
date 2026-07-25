@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.13.0
+version: 0.15.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -22,6 +22,7 @@ related:
   - BA-STR-002-COD-SUB-005
   - BA-STR-002-COD-SUB-006
   - BA-STR-002-COD-SUB-007
+  - BA-STR-002-COD-SUB-008
   - COD-001
   - COD-002
   - COD-003
@@ -29,7 +30,8 @@ related:
   - COD-005
   - COD-006
   - COD-007
-  - M7.9
+  - COD-008
+  - M7.10
 normative: false
 execution_status: in-progress
 ---
@@ -57,9 +59,9 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 7
+Human decisions recorded: 8
 Decision submissions awaiting human response: 0
-Accepted Reformulate dispositions: 5
+Accepted Reformulate dispositions: 6
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
 Candidate state changes: 2
@@ -216,13 +218,37 @@ A formulação permanece `Under Validation` e deverá retornar aos quatro testes
 
 > Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
 
+Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
+
+## 11. COD-008 — ECO-CAND-008
+
+| Campo | Registro |
+|---|---|
+| Nome original | Participação confiável e protegida |
+| Nome revisado | Participação protegida, justa e contestável |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+### Formulação originalmente avaliada
+
+> Participantes interagem em condições de transparência, segurança, privacidade, justiça, contestabilidade e respeito à sua autonomia.
+
+### Formulação candidata revisada
+
+> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
+
 ### Fundamentação e limites
 
-A reformulação concentra o candidato em participação efetiva e observável. Capacidade real de uso, respeito, voz, contestabilidade e redução de barreiras materiais evitáveis integram a fronteira da condição.
+A reformulação concentra o candidato em uma condição ecossistêmica vivida e observável. Proteção, justiça, contestabilidade, redução de vulnerabilidades evitáveis, compreensão, questionamento e reparação integram sua fronteira.
 
-Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação não promete acesso universal imediato, preserva requisitos legítimos e deverá retornar aos quatro testes da COEM.
+Privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis. Proteção absoluta é impossível; conformidade, ausência de incidentes ou confiança declarada não constituem evidência suficiente. A formulação deverá retornar aos quatro testes da COEM.
 
-## 11. Matriz cumulativa de decisões
+## 12. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
@@ -233,7 +259,7 @@ Cadastro, tradução, presença global ou representação nominal não comprovam
 | ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected`; experiência preservada na Jornada |
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| ECO-CAND-008 | Reformulate | — | Pending human decision |
+| ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | BUS-CAND-001 | Reject | — | Pending human decision |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
 | BUS-CAND-003 | Reformulate | — | Pending human decision |
@@ -245,21 +271,21 @@ Cadastro, tradução, presença global ou representação nominal não comprovam
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 12. Gate do incremento
+## 13. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
 | manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| `COD-007` registrado | Pass |
+| `COD-008` registrado | Pass |
 | formulação original preservada | Pass |
 | formulação candidata registrada | Pass |
-| `ECO-CAND-007` mantido em `Under Validation` | Pass |
+| `ECO-CAND-008` mantido em `Under Validation` | Pass |
 | nova COEM exigida antes de aprovação | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 13. Próximo passo governado
+## 14. Próximo passo governado
 
-Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
+Preparar e submeter `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.

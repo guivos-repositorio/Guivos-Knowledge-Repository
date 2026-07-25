@@ -2,19 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.81.0
+version: 1.83.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-007
+  - GKR-CANON-MATRIX-COD-008
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-007
-  - COD-007
-  - M7.9
+  - BA-STR-002-COD-SUB-008
+  - COD-008
+  - M7.10
 normative: false
 ---
 
@@ -56,7 +56,8 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-005` | Manter | `Reject` aceito para `ECO-CAND-004` |
 | `COD-006` | Manter | `Reformulate` aceito para `ECO-CAND-006` |
 | `COD-007` | Manter | `Reformulate` aceito para `ECO-CAND-007` |
-| CODR | Manter ativo | 7 de 18 decisões; 0 submissões abertas |
+| `COD-008` | Manter | `Reformulate` aceito para `ECO-CAND-008` |
+| CODR | Manter ativo | 8 de 18 decisões; 0 submissões abertas |
 | COR | Refinar | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
@@ -64,6 +65,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `ECO-CAND-005` | Unificar em `ECO-CAND-003` | `Merged`; formulação e evidências preservadas |
 | `ECO-CAND-006` | Refinar e manter `Under Validation` | formulação de saúde relacional registrada; nova COEM pendente |
 | `ECO-CAND-007` | Refinar e manter `Under Validation` | formulação de participação inclusiva, digna e efetiva registrada; nova COEM pendente |
+| `ECO-CAND-008` | Refinar e manter `Under Validation` | formulação de participação protegida, justa e contestável registrada; nova COEM pendente |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
 | produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
@@ -71,31 +73,31 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado de COD-007
+## 4. Resultado de COD-008
 
-A alternativa `A — Aceitar Reformulate` foi consolidada para `ECO-CAND-007`.
+A alternativa `A — Aceitar Reformulate` foi consolidada para `ECO-CAND-008`.
 
-**Participação inclusiva, digna e efetiva**:
+**Participação protegida, justa e contestável**:
 
-> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
+> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
 
 A decisão:
 
 - preserva a formulação original;
 - registra a formulação revisada como candidata;
-- mantém `ECO-CAND-007` em `Under Validation`;
+- mantém `ECO-CAND-008` em `Under Validation`;
 - exige nova COEM antes de qualquer aprovação;
-- preserva capacidade de uso, respeito, voz, contestabilidade e redução de barreiras materiais evitáveis;
-- bloqueia cadastro, tradução, presença global ou representação nominal como evidência suficiente;
-- não promete acesso universal imediato;
-- preserva requisitos legítimos de elegibilidade, segurança e conformidade;
+- preserva proteção, justiça, contestabilidade, redução de vulnerabilidades evitáveis, compreensão, questionamento e reparação;
+- mantém privacidade, segurança, transparência e autonomia como guardrails verificáveis;
+- reconhece risco residual e a impossibilidade de proteção absoluta;
+- bloqueia conformidade, ausência de incidentes ou confiança declarada como evidência suficiente;
 - não cria código canônico;
 - não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
 ## 5. Addendum vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 1.81.0 — COD-007`.
+O addendum vigente é `Canonical Consolidation Matrix 1.83.0 — COD-008`.
 
 ## 6. Próximo ato
 
-Preparar a submissão de `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
+Preparar a submissão de `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.
