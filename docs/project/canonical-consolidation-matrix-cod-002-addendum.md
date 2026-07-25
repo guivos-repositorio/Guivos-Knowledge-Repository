@@ -1,6 +1,6 @@
 ---
 id: GKR-CANON-MATRIX-COD-002
- title: Canonical Consolidation Matrix 1.71.0 — COD-002
+title: Canonical Consolidation Matrix 1.71.0 — COD-002
 status: active
 version: 1.71.0
 owner: Guivos
