@@ -2,18 +2,17 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.72.0
+version: 11.73.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.72.0
+  - ROADMAP-11.73.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-012
-  - COD-012
-  - M7.14
+  - BA-STR-002-COD-SUB-013
+  - M7.14.1
 normative: false
 ---
 
@@ -28,16 +27,17 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.14 — Twelfth Human Outcome Decision Recorded` |
+| Marco | `M7.14.1 — Thirteenth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
-| CODR | 12 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 12 de 18 decisões humanas; 1 submissão aberta |
 | Reformulate aceitos | 8 |
 | Merge aceitos | 2 |
 | Reject aceitos | 2 |
-| `BUS-CAND-004` | Legitimidade institucional sustentada; `Under Validation` |
+| Submissão vigente | `BUS-CAND-005 — Reformulate` |
+| `COD-013` | não criado |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -58,11 +58,12 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-005`.
+- `BA-STR-002-COD-SUB-013 — BUS-CAND-005` aguardando decisão humana.
 
 ### Pendente
 
-- seis decisões humanas restantes;
+- decisão humana sobre `BUS-CAND-005`;
+- cinco decisões humanas posteriores;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -73,16 +74,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-012
+## 4. Submissão de BUS-CAND-005
 
-O Fundador aceitou `Reformulate` para `BUS-CAND-004`.
+A COEM recomenda `Reformulate` para **Continuidade econômica sustentável**.
 
-**Legitimidade institucional sustentada**
+> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
 
-> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
-
-A formulação permanece candidata e deverá retornar à COEM. Confiança institucional permanece avaliação relacional associada, sem novo candidato automático.
+A formulação permanece proposta. `BUS-CAND-005` e `BUS-CAND-010` continuam `Under Validation`; nenhuma fusão, aprovação ou promoção canônica ocorreu.
 
 ## 5. Próximo movimento
 
-Após integração deste incremento, preparar a décima terceira submissão humana para `BUS-CAND-005 — Continuidade econômica sustentável`, cuja recomendação da COEM é `Reformulate`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-013`. Nenhuma alternativa será inferida automaticamente.
