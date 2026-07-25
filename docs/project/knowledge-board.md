@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.58.0
+version: 11.59.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.58.0
+  - ROADMAP-11.59.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-005
+  - BA-STR-002-COD-SUB-006
   - COD-005
-  - M7.7
+  - M7.7.1
 normative: false
 ---
 
@@ -28,12 +28,13 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.7 — Fifth Human Outcome Decision Recorded` |
+| Marco | `M7.7.1 — Sixth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
-| CODR | 5 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 5 de 18 decisões humanas; 1 submissão aberta |
+| Submissão vigente | `ECO-CAND-006 — Reformulate` |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
@@ -59,11 +60,11 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `ECO-CAND-006`.
+- submissão `BA-STR-002-COD-SUB-006` aguardando decisão humana.
 
 ### Pendente
 
-- treze decisões humanas restantes;
+- treze decisões humanas restantes, incluindo a submissão vigente;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -74,14 +75,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-005
+## 4. Submissão de ECO-CAND-006
 
-O Fundador aceitou `Reject` para `ECO-CAND-004 — Realização de experiências de valor`.
+A COEM recomenda `Reformulate` para **Conexões relevantes e fortalecedoras**.
 
-O candidato foi alterado para `Rejected`, mas experiência continua preservada como unidade da Jornada, realização de valor em uso, fonte de evidências para Outcomes e referência para capacidades e métricas futuras.
+Formulação candidata proposta:
 
-A decisão não altera automaticamente o `PAS-001` e não remove experiência da Guivos.
+> O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
+
+A proposta não transforma volume, densidade, intensidade ou coesão das conexões em evidência de saúde relacional.
 
 ## 5. Próximo movimento
 
-Preparar a sexta submissão humana para `ECO-CAND-006 — Conexões relevantes e fortalecedoras`, cuja recomendação da COEM é `Reformulate`. Nenhuma decisão será inferida automaticamente.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-006`. Nenhuma decisão será inferida automaticamente e `COD-006` não existe neste incremento.
