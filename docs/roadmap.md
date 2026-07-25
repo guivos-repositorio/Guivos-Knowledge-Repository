@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.70.0
-title: Roadmap Arquitetural — COD-011 Registrado
+id: ROADMAP-11.72.0
+title: Roadmap Arquitetural — COD-012 Registrado
 status: active
-version: 11.70.0
+version: 11.72.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.69.0
+  - ROADMAP-11.71.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-011
-  - COD-011
-  - M7.13
+  - BA-STR-002-COD-SUB-012
+  - COD-012
+  - M7.14
 ---
 
-# Roadmap Arquitetural — COD-011 Registrado
+# Roadmap Arquitetural — COD-012 Registrado
 
 ## 1. Autoridade
 
@@ -28,24 +28,16 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.13` |
+| Marco | `M7.14` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
-| CODR | `11 de 18` decisões; 0 submissões abertas |
-| COD-001 | `Reformulate` aceito para ECO-CAND-001 |
-| COD-002 | `Reformulate` aceito para ECO-CAND-003 |
-| COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
-| COD-004 | `Reformulate` aceito para ECO-CAND-002 |
-| COD-005 | `Reject` aceito para ECO-CAND-004 |
-| COD-006 | `Reformulate` aceito para ECO-CAND-006 |
-| COD-007 | `Reformulate` aceito para ECO-CAND-007 |
-| COD-008 | `Reformulate` aceito para ECO-CAND-008 |
-| COD-009 | `Reject` aceito para BUS-CAND-001 |
-| COD-010 | `Merge into BUS-CAND-003` aceito para BUS-CAND-002 |
-| COD-011 | `Reformulate` aceito para BUS-CAND-003 |
+| CODR | `12 de 18` decisões; 0 submissões abertas |
+| Reformulate aceitos | 8 |
+| Merge aceitos | 2 |
+| Reject aceitos | 2 |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -75,25 +67,28 @@ R1 — precedência e estado global — concluído
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 11 de 18;
+- decisões humanas: 12 de 18;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
 - `ECO-CAND-004` e `BUS-CAND-001`: `Rejected`;
-- `BUS-CAND-003`: `Reformulate` aceito por `COD-011`, nova COEM pendente;
+- `BUS-CAND-003`: `Reformulate` aceito por `COD-011`;
+- `BUS-CAND-004`: `Reformulate` aceito por `COD-012`;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-011
+## 5. Resultado de COD-012
 
-A recomendação `Reformulate` foi aceita para **Habilitação consistente e contextualmente relevante de valor legítimo**.
+A recomendação `Reformulate` foi aceita para `BUS-CAND-004`.
 
-> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+**Legitimidade institucional sustentada**
 
-`BUS-CAND-003` permanece `Under Validation`. A decisão não equivale a `Approve`, não cria código canônico e exige nova aplicação dos quatro testes da COEM.
+> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
+
+`BUS-CAND-004` permanece `Under Validation`. Confiança institucional permanece avaliação relacional associada, sem novo candidato automático. A decisão não equivale a `Approve`, não cria código canônico e exige nova aplicação dos quatro testes da COEM.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `BUS-CAND-004` à decisão humana sobre `Reformulate`;
-2. concluir as seis decisões posteriores;
+1. submeter `BUS-CAND-005` à decisão humana sobre `Reformulate`;
+2. concluir as cinco decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -129,4 +124,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-004 — Confiança e legitimidade institucional` à décima segunda decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana individual sobre a recomendação `Reformulate`.

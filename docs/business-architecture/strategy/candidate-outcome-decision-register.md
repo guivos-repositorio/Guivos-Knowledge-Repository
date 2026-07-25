@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.21.0
+version: 0.23.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -28,6 +28,7 @@ related:
   - BA-STR-002-COD-SUB-009
   - BA-STR-002-COD-SUB-010
   - BA-STR-002-COD-SUB-011
+  - BA-STR-002-COD-SUB-012
   - COD-001
   - COD-002
   - COD-003
@@ -39,7 +40,8 @@ related:
   - COD-009
   - COD-010
   - COD-011
-  - M7.13
+  - COD-012
+  - M7.14
 normative: false
 execution_status: in-progress
 ---
@@ -67,9 +69,9 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 11
+Human decisions recorded: 12
 Decision submissions awaiting human response: 0
-Accepted Reformulate dispositions: 7
+Accepted Reformulate dispositions: 8
 Accepted Merge dispositions: 2
 Accepted Reject dispositions: 2
 Candidate state changes: 4
@@ -219,15 +221,31 @@ Relevância contextual foi incorporada à formulação candidata de `BUS-CAND-00
 | Código canônico | não criado |
 | AQS-O01 | não iniciado |
 
+> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+
+### COD-012 — BUS-CAND-004
+
+| Campo | Registro |
+|---|---|
+| Nome | Legitimidade institucional sustentada |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
 #### Formulação originalmente avaliada
 
-> A Guivos entrega valor legítimo com qualidade, segurança e continuidade suficientes para sustentar experiências relevantes.
+> A Guivos preserva confiança e legitimidade suficientes para manter relações voluntárias, transparentes e duradouras no ecossistema.
 
 #### Formulação candidata revisada
 
-> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
 
-A formulação incorpora `BUS-CAND-002` por `COD-010`, permanece candidata e deverá retornar aos quatro testes da COEM.
+Confiança institucional permanece avaliação relacional associada. A decisão não cria novo candidato ou Outcome para confiança, mantém `BUS-CAND-004` em `Under Validation` e exige nova aplicação dos quatro testes da COEM.
 
 ## 5. Matriz cumulativa de decisões
 
@@ -244,7 +262,7 @@ A formulação incorpora `BUS-CAND-002` por `COD-010`, permanece candidata e dev
 | BUS-CAND-001 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | Aceitar `Merge into BUS-CAND-003` | `Merged` |
 | BUS-CAND-003 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-004 | Reformulate | — | Pending human decision |
+| BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-005 | Reformulate | — | Pending human decision |
 | BUS-CAND-006 | Reject | — | Pending human decision |
 | BUS-CAND-007 | Reject | — | Pending human decision |
@@ -258,9 +276,12 @@ A formulação incorpora `BUS-CAND-002` por `COD-010`, permanece candidata e dev
 |---|---|
 | manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| `COD-011` registrado | Pass |
-| formulações e linhagem preservadas | Pass |
-| `BUS-CAND-003` mantido em `Under Validation` | Pass |
+| `COD-012` registrado | Pass |
+| confiança e legitimidade separadas conceitualmente | Pass |
+| formulação candidata revisada registrada | Pass |
+| confiança preservada sem novo candidato automático | Pass |
+| `BUS-CAND-004` mantido em `Under Validation` | Pass |
+| distribuição 14/2/2 preservada | Pass |
 | nova COEM exigida | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
@@ -268,4 +289,4 @@ A formulação incorpora `BUS-CAND-002` por `COD-010`, permanece candidata e dev
 
 ## 7. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-004 — Confiança e legitimidade institucional` à décima segunda decisão humana individual sobre a recomendação `Reformulate`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana individual sobre a recomendação `Reformulate`.
