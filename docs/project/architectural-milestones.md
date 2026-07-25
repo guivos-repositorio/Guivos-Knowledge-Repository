@@ -2,19 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.52.0
+version: 4.53.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.54.0
+  - ROADMAP-11.55.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-003
+  - BA-STR-002-COD-SUB-004
   - COD-003
-  - M7.5
+  - M7.5.1
 normative: false
 ---
 
@@ -38,22 +38,23 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.3.5 | Completed | trabalho arquitetural governado retomado |
 | M7.4 | Completed | segunda decisão humana registrada como `COD-002` |
 | M7.4.1 | Completed | terceira decisão humana submetida para `ECO-CAND-005` |
-| M7.5 | Completed neste incremento | terceira decisão humana registrada como `COD-003` |
+| M7.5 | Completed | terceira decisão humana registrada como `COD-003` |
+| M7.5.1 | Completed neste incremento | quarta decisão humana submetida para `ECO-CAND-002` |
 
 ## 3. Marco vigente
 
-### M7.5 — Third Human Outcome Decision Recorded
+### M7.5.1 — Fourth Human Outcome Decision Submitted
 
 **Critérios atendidos:**
 
-- manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Merge into ECO-CAND-003` aceita;
-- `COD-003` criado para `ECO-CAND-005`;
-- COR atualizado para 17 candidatos `Under Validation` e 1 `Merged`;
-- `ECO-CAND-005` preservado como registro rastreável, com alvo `ECO-CAND-003`;
-- continuidade adaptativa incorporada à formulação candidata de Agência efetiva e situada;
-- `ECO-CAND-003` preservado em `Under Validation`;
-- decisões humanas atualizadas para 3 de 18;
+- `COD-001`, `COD-002` e `COD-003` preservados;
+- `ECO-CAND-002` submetido individualmente;
+- recomendação `Reformulate` preservada sem reinterpretação;
+- insuficiência da formulação original explicitada;
+- formulação candidata **Acesso real a possibilidades legítimas e manejáveis** proposta;
+- alternativas humanas A, B e C registradas;
+- `COD-004` bloqueado até manifestação;
+- `ECO-CAND-002` preservado em `Under Validation`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -69,7 +70,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Preparar a submissão de `ECO-CAND-002 — Acesso a possibilidades relevantes` à quarta decisão humana sobre a recomendação `Reformulate`.
+Manifestação humana sobre `BA-STR-002-COD-SUB-004`. O próximo marco dependerá da alternativa escolhida e não foi antecipado.
 
 ## 6. Regra de transição
 
