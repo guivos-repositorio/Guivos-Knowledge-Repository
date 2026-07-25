@@ -1,135 +1,71 @@
 ---
+id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.9.0
+version: 4.46.0
 owner: Guivos
-last_updated: 2026-07-12
+last_updated: 2026-07-24
+depends_on:
+  - GKR-STATE-001
+related:
+  - ROADMAP-11.48.0
+  - GKR-REMEDIATION-002
+  - M7.3.2
+normative: false
 ---
 
 # Architectural Milestones
 
-Registro oficial dos principais marcos de maturidade arquitetural e de Product Engineering da Guivos.
+## 1. Autoridade
 
-## Visão geral
+Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. Os documentos `architectural-milestones-*.md` preservam os snapshots e critérios detalhados de cada incremento. O estado transversal é governado pelo [Current State Register](current-state-register.md).
 
-| Marco | Estado | Finalidade |
+## 2. Linha de maturidade consolidada
+
+| Faixa | Estado | Resultado principal |
 |---|---|---|
-| A0 — GKR Foundation | Completed | Estabelecer o repositório e a infraestrutura documental |
-| A1 — Institutional Architecture Complete | Completed | Consolidar macroestrutura, permanência e governança |
-| M3 — Foundation Architecture Frozen | Completed | Congelar a primeira arquitetura integralmente revisada |
-| M3.1 — Fundamental Discovery Method Frozen | Completed | Congelar o método de execução da FMEM |
-| M4 — Knowledge Architecture Established | Completed | Reconhecer a GKA e iniciar GE-2 |
-| M5 — GKA Foundation Started | Active | Iniciar a fundação documental da GKA |
-| M5.1 — GKA Preparation Complete | Completed | Encerrar preparação e iniciar redação institucional |
-| M5.2 — GKA Institutional Consolidation Registered | Completed | Registrar decisões metodológicas posteriores |
-| M5.3 — GKA Conceptual Architecture Advanced | Completed | Registrar conclusão conceitual das Partes II, III e IV |
-| M5.4 — Enterprise Design and GLPA Registered | Completed | Registrar PAS-001 e GLPA |
-| M5.5 — Context and Architecture Engineering Checkpoint | Completed | Preservar contexto multimodal, LPM, CIE e pausa |
-| M5.6 — Journey Operational Philosophy Consolidated | Completed | Consolidar o comportamento permanente do Journey |
-| M5.7 — Context Capabilities Progress Registered | Completed | Registrar Captura, Interpretação e Contexto Vivo |
-| M5.8 — GKR and GOG Consistency Review Completed | Completed | Revisar consistência conceitual, documental e visual |
-| M5.9 — Chat Continuity and Repository Reconciliation Completed | Completed | Reconciliar o chat anterior, o GKR e o estado de retomada |
-| A2 — Functional Architecture Discovery | Active | Descobrir e validar estruturas funcionais e Core Capabilities |
-| K1 — Fundamental Knowledge Frozen | Planned | Congelar conhecimento fundamental após A2-R02 |
+| A0–A1 | Completed | fundação do GKR e macroestrutura institucional |
+| M3–M4 | Completed | Foundation congelada, método fundamental e Knowledge Architecture estabelecidos |
+| M5–M5.18 | Completed | consolidação progressiva da arquitetura funcional e publicação do Journey |
+| M6.0–M6.10 | Completed | desenvolvimento e fechamento documental do Guivos Economic Model |
+| M7.0–M7.1.5 | Completed | início da A2-R03, COR, validação externa e COEM concluídos |
+| M7.2 | Completed | ciclo de decisões humanas iniciado; `COD-001` registrado |
+| M7.3 | Completed | auditoria de estado e sequência concluída |
+| M7.3.1 | Completed | precedência documental e Roadmap global reconciliados |
+| M7.3.2 | Completed neste incremento | controles centrais reconciliados |
 
-## M5.9 — Chat Continuity and Repository Reconciliation Completed
+## 3. Marco vigente
 
-**Estado:** Completed em 12/07/2026.
+### M7.3.2 — Central Governance Controls Reconciled
 
-### Critério de conclusão
+**Critérios atendidos:**
 
-O corpus do GKR foi comparado ao extrato final da conversa anterior, as pendências reais foram separadas de conteúdo já incorporado e o ponto de retomada foi formalmente preservado.
+- Knowledge Board central sincronizado com `GKR-STATE-001`;
+- Architectural Milestones central atualizado da faixa M5 para M7.3.2;
+- Matriz de Consolidação Canônica central transformada em registro vigente de decisões e addenda;
+- decisão `GKR-STRATEGIC-RESEQUENCING-001` classificada como executada;
+- versões e referências centrais reconciliadas;
+- nenhum conteúdo arquitetural, Outcome ou estado de produto alterado;
+- R4 e R5 preservados como gates anteriores à retomada da A2-R03.
 
-### Resultados
-
-- criação de `GE2-SYNC-007`;
-- confirmação de que nenhuma decisão arquitetural madura estava ausente do GKR;
-- confirmação do Contexto Vivo como modelo multidimensional de compreensão;
-- confirmação do Guivos Market Validation System e de seus refinamentos posteriores;
-- sincronização das referências atuais para `PAS-001 0.4.2`, `GOG-001 4.2.1` e `GLPA-001 1.1.1`;
-- atualização de referências do sistema VAL;
-- correção de nomenclatura residual de Guivos Marketplace para Guivos Mall;
-- preservação do formulário e da planilha automática como entregáveis operacionais futuros;
-- manutenção da Capacidade 02 como ponto oficial de retomada.
-
-### Ponto de retomada
-
-Retomar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, iniciando por responsabilidades e limites.
-
-## M5.8 — GKR and GOG Consistency Review Completed
-
-**Estado:** Completed em 11/07/2026.
-
-### Critério de conclusão
-
-As divergências demonstráveis, referências desatualizadas e lacunas prioritárias de diagramas entre o GOG e os principais documentos do GKR foram tratadas e sincronizadas.
-
-### Resultados
-
-- criação e conclusão de `AR-001`;
-- atualização do `GOG-001` para `4.2.0`;
-- atualização do `PAS-001` para `0.4.1`;
-- atualização da `GLPA-001` para `1.1.0`;
-- atualização da `GIA-000` para `1.3.0`;
-- atualização do Glossário Canônico para `1.8.0`;
-- alinhamento literal de propósito, missão e visão;
-- esclarecimento de `Public Canon`;
-- revisão e criação dos diagramas públicos e funcionais prioritários;
-- remoção de `perfil` e `feed` como definições permanentes do Journey;
-- distinção entre Contexto Vivo e candidatos técnicos como LPM;
-- distinção entre tipos de capacidade;
-- sincronização dos documentos de estado.
-
-### Ponto de retomada
-
-Retomar a **Capacidade 02 — Contexto Vivo** no `PAS-001`, completando responsabilidades, entradas, estados, envelhecimento, conflitos, eventos, KPIs, cenários e contrato.
-
-## M5.7 — Context Capabilities Progress Registered
-
-**Estado:** Completed em 04/07/2026.
-
-Resultados principais:
-
-- criação de `GE2-SYNC-006`;
-- atualização do PAS-001 para `0.4.0`;
-- consolidação da Capacidade 01;
-- início da Capacidade 02;
-- registro da Representação Humilde e das oito dimensões.
-
-## M5.6 — Journey Operational Philosophy Consolidated
-
-**Estado:** Completed em 04/07/2026.
-
-Resultados principais:
-
-- criação de `GE2-SYNC-005`;
-- Product Engineering ativado;
-- cinco responsabilidades permanentes consolidadas;
-- Estado, Eventos de Vida, Oportunidades Ativas, Intervenções Contextuais e Distância para Evolução registrados.
-
-## M5.5 — Context and Architecture Engineering Checkpoint
-
-**Estado:** Completed em 04/07/2026.
-
-Resultados principais:
-
-- criação de `GE2-SYNC-004`;
-- Captura Multimodal registrada;
-- voz priorizada sem exclusividade;
-- LPM e CIE preservados como candidatos.
-
-## A2 — Functional Architecture Discovery
-
-**Estado:** Active — Operationally Paused.
+## 4. Estado das revisões A2
 
 | Revisão | Estado |
 |---|---|
 | A2-R01 — Foundation Architecture Review | Completed — Frozen in A2-B3 |
-| A2-R02 — Fundamental Model Review | Active — Execution Ready — Operationally Paused |
-| A2-R03 — Business Architecture Review | Planned |
+| A2-R02 — Fundamental Model Review | Execution Ready — Operationally Paused |
+| A2-R03 — Business Architecture Review | Active — Temporarily Paused for GKR Remediation |
 | A2-R04 — Product Architecture Review | Planned |
 | A2-R05 — Cross-Architecture Review | Planned |
 
-## Regra de transição
+A A2-R03 não foi cancelada. Sua execução será retomada após R4, R5 e resultado `PASS`, começando pela decisão individual de `ECO-CAND-003`.
 
-Um marco somente muda de estado quando seus critérios de conclusão estiverem demonstrados no GKR. Nenhuma hipótese, draft ou ativo experimental é promovido automaticamente à Canon.
+## 5. Próximo marco candidato
+
+`M7.3.3 — Official Navigation Reconciled`, correspondente ao R4.
+
+Depois dele, R5 deverá produzir o parecer de validação mecânica e autorizar ou bloquear R6.
+
+## 6. Regra de transição
+
+Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Marcos históricos não determinam o ponto de retomada atual quando existir registro posterior aprovado.

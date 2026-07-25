@@ -1,18 +1,17 @@
 ---
-id: ROADMAP-11.47.0
+id: ROADMAP-11.48.0
 title: Roadmap Arquitetural — Sequência Global Reconciliada
 status: active
-version: 11.47.0
+version: 11.48.0
 owner: Guivos
 last_updated: 2026-07-24
 supersedes_partial:
-  - ROADMAP-11.46.0
-  - ROADMAP-11.45.0
+  - ROADMAP-11.47.0
 related:
   - GKR-STATE-001
   - GKR-AUD-002
   - GKR-REMEDIATION-002
-  - M7.3.1
+  - M7.3.2
 ---
 
 # Roadmap Arquitetural — Sequência Global Reconciliada
@@ -28,18 +27,19 @@ Roadmaps e overlays anteriores permanecem no histórico, mas não substituem est
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.3.1` |
+| Marco | `M7.3.2` |
 | Frente de controle | remediação documental do GKR |
-| R1 — Precedência e estado global | concluído neste incremento |
-| R2 — Roadmap e backlog global | concluído neste incremento |
-| R3 — Controles centrais | próximo incremento |
-| R4 — Navegação | pendente |
+| R1 — Precedência e estado global | concluído |
+| R2 — Roadmap e backlog global | concluído |
+| R3 — Controles centrais | concluído neste incremento |
+| R4 — Navegação | próximo incremento |
 | R5 — Validação mecânica | pendente |
 | R6 — Retomada governada | bloqueado até resultado `PASS` |
+| Achados Major abertos | 1 — navegação oficial incompleta |
 | Frente arquitetural preservada | `A2-R03 — Business Architecture Review` |
 | Product Engineering | pausado antes do `W0-01` |
 
-## 3. Sequência executada
+## 3. Sequência já executada
 
 ### 3.1 Guivos Journey
 
@@ -62,35 +62,34 @@ Roadmaps e overlays anteriores permanecem no histórico, mas não substituem est
 
 A conclusão do Economic Model definiu a A2-R03 como próxima frente porque Outcomes e Business Capabilities antecedem organização, processos, ofertas e execução.
 
-## 4. Frente de controle atual
+## 4. Remediação do GKR
 
 A auditoria `GKR-AUD-002` confirmou a integridade da rota e identificou divergências entre documentos centrais e overlays recentes.
-
-A remediação `GKR-REMEDIATION-002` ocorre antes da continuidade da A2-R03:
 
 ```text
 R1 — precedência e estado global — concluído
 → R2 — roadmap e backlog global — concluído
-→ R3 — controles centrais
+→ R3 — controles centrais — concluído
 → R4 — navegação
 → R5 — validação mecânica
 → R6 — retomada governada
 ```
 
+R3 sincronizou Knowledge Board, Architectural Milestones, Matriz de Consolidação Canônica e o registro de reordenamento estratégico.
+
 ## 5. Próxima frente arquitetural retomada
 
-Após o `PASS` da auditoria de correção, retomar `BA-STR-002 — Business Outcomes`:
+Após o `PASS` da remediação, retomar `BA-STR-002 — Business Outcomes`:
 
-1. continuar as decisões humanas individuais no Candidate Outcome Decision Register;
-2. submeter `ECO-CAND-003` à próxima decisão;
-3. concluir as dezessete decisões restantes;
-4. reavaliar as formulações reformuladas pelos quatro testes da COEM;
-5. aplicar e ajustar o `AQS-O01`;
-6. consolidar o catálogo de Ecosystem Outcomes;
-7. consolidar o catálogo de Business Outcomes;
-8. construir a matriz canônica de sustentação.
+1. submeter `ECO-CAND-003` à próxima decisão humana;
+2. concluir as dezessete decisões restantes;
+3. reavaliar as formulações `Reformulate` pelos quatro testes da COEM;
+4. aplicar e ajustar o `AQS-O01`;
+5. consolidar o catálogo de Ecosystem Outcomes;
+6. consolidar o catálogo de Business Outcomes;
+7. construir a matriz canônica de sustentação.
 
-Estado atual do ciclo:
+Estado atual:
 
 - COEM: `18 de 18` candidatos e `6 de 6` clusters;
 - decisões humanas: `1 de 18`;
@@ -103,7 +102,7 @@ Após a conclusão governada dos Outcomes:
 
 1. desenvolver `BA-CAP-001 — Core Business Capabilities`;
 2. desenvolver `BA-CAP-002 — Capability Map`;
-3. confirmar dependências, ownership e fronteiras entre capacidades;
+3. confirmar dependências, ownership e fronteiras;
 4. utilizar o mapa para rebaselinear o portfólio especializado.
 
 Business Capabilities não poderão ser inferidas diretamente dos produtos existentes nem iniciadas antes do gate do `BA-STR-002`.
@@ -119,75 +118,40 @@ A ordem histórica permanece preservada como referência:
 5. Guivos Media;
 6. Guivos Travel.
 
-Essa ordem não é ainda uma autorização de início. Ela será confirmada ou ajustada após Outcomes e Business Capabilities, considerando:
-
-- valor e transformação sustentados;
-- dependências funcionais;
-- papéis econômicos já definidos no `GEM-007`;
-- capacidade organizacional e operacional;
-- riscos e proteção do ecossistema;
-- evidências de Market Validation.
+Essa ordem não é autorização de início. Será confirmada ou ajustada após Outcomes e Business Capabilities, considerando valor sustentado, dependências funcionais, papéis econômicos do `GEM-007`, capacidade operacional, riscos e evidências de mercado.
 
 Guivos Journey permanece o produto arquitetural já concluído e não integra novamente o backlog de especificação funcional.
 
 ## 8. Commercial Model
 
-O Commercial Model será desenvolvido após o rebaseline mínimo do portfólio e deverá transformar autoridades econômicas e de negócio em decisões comerciais governadas, sem confundir:
-
-- família de receita com oferta aprovada;
-- arquétipo de plano com preço;
-- parceiro elegível com contrato ativo;
-- papel econômico com ownership societário;
-- cenário financeiro com previsão oficial.
+Será desenvolvido após o rebaseline mínimo do portfólio e deverá transformar autoridades econômicas e de negócio em decisões comerciais governadas, sem confundir família de receita com oferta, arquétipo de plano com preço, parceiro elegível com contrato ou cenário financeiro com previsão oficial.
 
 ## 9. Go-to-Market
 
-O Go-to-Market será desenvolvido após o Commercial Model e dependerá de:
-
-- proposta de valor validável;
-- segmentos e contextos prioritários;
-- canais e relações comerciais governados;
-- capacidade de entrega e suporte;
-- métricas, gates e critérios de interrupção;
-- conformidade jurídica, regulatória, fiscal, contábil e de dados aplicável.
+Será desenvolvido após o Commercial Model e dependerá de proposta de valor validável, segmentos prioritários, canais governados, capacidade de entrega, métricas, gates e conformidade aplicável.
 
 ## 10. Product Engineering
 
-Product Engineering somente poderá ser retomado por decisão explícita que defina motivo estratégico, escopo, owners, orçamento, capacidade, dependências econômicas e critérios de interrupção.
+Somente poderá ser retomado por decisão explícita que defina motivo, escopo, owners, orçamento, capacidade, dependências econômicas e critérios de interrupção.
 
 Até essa decisão:
 
 - `W0-01` permanece em `0%`;
 - POCs, ambientes e integrações não são iniciados;
 - produção permanece não autorizada;
-- a readiness já documentada não é descartada.
+- a readiness documentada não é descartada.
 
 ## 11. Trilha operacional paralela — Market Validation
 
-Os seguintes entregáveis permanecem pendentes e podem ser executados em incremento próprio, sem substituir a prioridade arquitetural:
+Podem ser executados em incremento próprio:
 
 1. formulário definitivo de aplicação;
 2. planilha automática de tratamento;
-3. cálculo de KPIs e Índice Geral de Validação;
-4. gates e classificação de aceitação;
-5. registro de decisão e evidências.
+3. KPIs e Índice Geral de Validação;
+4. gates e registro de decisão.
 
-Os resultados deverão alimentar Outcomes, priorização do portfólio, Economic Model, Commercial Model e Go-to-Market sem promover respostas de pesquisa diretamente à Canon.
+Essa trilha fornece evidências para produtos, Economic Model, Commercial Model e Go-to-Market, sem substituir a prioridade arquitetural.
 
-## 12. Reconciliação do backlog histórico
+## 12. Próximo ponto exato
 
-| Item histórico | Estado reconciliado |
-|---|---|
-| concluir funcionalmente o Journey | concluído |
-| desenvolver o Guivos Economic Model | concluído documentalmente; validações reais pendentes |
-| especificar Mall, Business, Intelligence, Ads, Media e Travel | preservado após Outcomes e Business Capabilities |
-| desenvolver Commercial Model | preservado como ciclo posterior |
-| desenvolver Go-to-Market | preservado como ciclo posterior ao Commercial Model |
-| formulário definitivo de validação | pendente em trilha operacional paralela |
-| planilha automática de validação | pendente em trilha operacional paralela |
-
-## 13. Próximo incremento autorizado
-
-Executar `R3 — Controles centrais` do `GKR-REMEDIATION-002`, reconciliando Knowledge Board, Architectural Milestones, Canonical Consolidation Matrix e referências de changelog.
-
-A decisão sobre `ECO-CAND-003` permanece bloqueada até a conclusão de R3, R4 e R5 e o resultado `PASS` da auditoria de correção.
+Executar `R4 — Navegação`, atualizando `mkdocs.yml` e tornando os ativos vigentes acessíveis. Em seguida, executar R5 e somente retomar `ECO-CAND-003` se o parecer for `PASS`.

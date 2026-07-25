@@ -1,78 +1,90 @@
 ---
 id: GKR-STRATEGIC-RESEQUENCING-001
 title: Reordenamento Estratégico — Journey para Guivos Economic Model
-status: proposed
-version: 0.1.0
+status: executed
+version: 1.0.0
 owner: Guivos
-last_updated: 2026-07-20
+last_updated: 2026-07-24
+executed_on: 2026-07-20
+superseded_current_state_by:
+  - GKR-STATE-001
+  - ROADMAP-11.48.0
 related:
   - PAS-001
   - PAS-001-ENGINEERING-HANDOFF-001-OVERLAY-0.7.1
   - PAS-001-CC-UIC-001-OVERLAY-0.7.1
   - GEM-000
-  - GEM-001
+  - GEM-CLOSURE-REVIEW-001
+normative: false
 ---
 
 # Reordenamento Estratégico — Journey para Guivos Economic Model
 
-## 1. Decisão
+## 1. Estado da decisão
 
-Após a conclusão funcional e a publicação do Guivos Journey, a frente estratégica ativa passa a ser o **Guivos Economic Model**.
+> **Executed — the Journey-to-Economic-Model resequencing was completed and later extended by the Economic Model closure decision.**
 
-A trilha de Product Engineering do Journey permanece válida, documentada e preservada, porém pausada antes da execução do W0-01.
+Este registro preserva a decisão que pausou Product Engineering após a conclusão funcional do Journey e transferiu a prioridade estratégica para o Guivos Economic Model.
 
-## 2. Sequência efetiva
+A decisão não está mais em estado `proposed`: o Economic Model foi desenvolvido de `GEM-001` a `GEM-010` e encerrado documentalmente. O estado global atual é governado pelo [Current State Register](current-state-register.md).
+
+## 2. Sequência executada
 
 ```text
-Journey funcionalmente concluído e publicado
-→ fundação do Guivos Economic Model
-→ desenvolvimento da arquitetura econômica do ecossistema
-→ integração econômica com Journey e demais produtos
-→ retomada futura e explicitamente autorizada de Product Engineering
+Guivos Journey funcionalmente concluído e publicado
+→ Product Engineering pausado antes do W0-01
+→ Guivos Economic Model fundado
+→ GEM-001 a GEM-010 desenvolvidos
+→ revisão de fechamento do Economic Model
+→ A2-R03 definida como próxima frente documental
 ```
 
-## 3. Motivo
+## 3. Justificativa preservada
 
-A sequência anterior avançou corretamente dentro da trilha técnica local, mas passou a tratar a preparação da implementação como prioridade estratégica automática. A Guivos ainda precisa consolidar como gera, entrega, captura, compartilha e reinveste valor antes de avançar para estruturas técnicas e organizacionais de execução.
+A preparação de implementação não poderia ser tratada como prioridade estratégica automática antes da consolidação de como a Guivos gera, entrega, captura, compartilha e reinveste valor.
+
+A pausa permitiu desenvolver uma arquitetura econômica anterior à execução técnica, sem descartar o Journey, seu handoff, sua readiness ou o planejamento da Onda 0.
 
 ## 4. Estado preservado do Journey
 
 Permanecem válidos:
 
-- PAS-001 1.0.0;
-- Mapa Final 1.0.1;
+- `PAS-001 1.0.0 active`;
+- Mapa Final de Capacidades;
 - nove capacidades funcionalmente concluídas;
-- Engineering Handoff até 0.7.0;
-- UIC-01 com readiness arquitetural de 100%;
+- Engineering Handoff e UIC-01;
+- readiness arquitetural de 100%;
 - planejamento da Onda 0;
-- charter documental do W0-01;
-- backlog, riscos, evidências e dossiers tecnológicos já definidos.
+- charter, riscos, evidências e dossiers tecnológicos.
 
 Pausa não significa cancelamento, regressão ou descarte.
 
-## 5. Estado pausado
+## 5. Limites ainda vigentes
 
-Enquanto esta decisão estiver vigente:
+Enquanto não houver decisão explícita de retomada:
 
-- owners técnicos não serão nomeados como prioridade do GKR;
-- o repositório de implementação não será criado;
-- W0-01 permanecerá em 0%;
-- ADRs tecnológicos não serão aceitos;
-- POCs e ambientes não serão iniciados;
-- W0-02 a W0-08 permanecerão não iniciados;
-- produção continuará não autorizada.
+- W0-01 permanece em 0%;
+- owners técnicos, orçamento e capacidade de execução não são presumidos;
+- POCs, ambientes e integrações não são iniciados;
+- produção permanece não autorizada;
+- readiness não equivale a execução.
 
-## 6. Retomada da trilha técnica
+## 6. Continuidade posterior
 
-Product Engineering somente poderá ser reativado por decisão explícita que defina:
+A revisão `GEM-CLOSURE-REVIEW-001` encerrou a arquitetura documental inicial do Economic Model e determinou a A2-R03 como próxima frente porque Business Outcomes e Business Capabilities antecedem organização, processos, ofertas e implementação.
 
-- motivo estratégico;
-- escopo técnico;
-- owners competentes;
-- orçamento e capacidade de execução;
-- relação com o Economic Model vigente;
-- critérios de interrupção e revisão.
+A sequência vigente passou a ser:
 
-## 7. Próximo ponto
+```text
+Economic Model concluído documentalmente
+→ Business Outcomes
+→ Business Capabilities
+→ rebaseline do portfólio especializado
+→ Commercial Model
+→ Go-to-Market
+→ Product Engineering somente mediante autorização explícita
+```
 
-`GEM-001 — Fundação do Guivos Economic Model`.
+## 7. Regra de uso histórico
+
+Este documento é evidência de uma decisão executada. Ele não determina sozinho o próximo incremento atual e não substitui o Current State Register, o Roadmap vigente ou decisões posteriores.
