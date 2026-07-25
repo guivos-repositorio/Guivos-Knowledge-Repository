@@ -55,13 +55,28 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
+# Documentos históricos permanecem construídos e pesquisáveis, mas não concorrem
+# com as autoridades vigentes no menu oficial.
+not_in_nav: |
+  *
+
 nav:
   - Início: index.md
+
+  - Estado Atual:
+      - Current State Register: project/current-state-register.md
+      - Roadmap Arquitetural: roadmap.md
+      - Knowledge Board: project/knowledge-board.md
+      - Architectural Milestones: project/architectural-milestones.md
+      - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+
   - Guia Oficial da Guivos:
       - Visão Geral: public/index.md
       - Guia Completo: public/guia-oficial-da-guivos.md
+
   - Guivos Evolution Framework:
       - GEF-001 — Visão Geral: evolution-framework/index.md
+
   - Research:
       - Visão Geral: research/index.md
       - Validação de Mercado:
@@ -81,15 +96,16 @@ nav:
           - Evidence Registry: research/RP-001/evidence-registry.md
           - Ecosystem Phenomena Catalog: research/RP-001/ecosystem-phenomena-catalog.md
           - Architectural Recommendations: research/RP-001/recommendations.md
+
   - Guivos Enterprise Architecture:
       - Visão Geral: enterprise-architecture/index.md
       - Permanence Layer Model: enterprise-architecture/permanence-layer-model.md
-  - Reference Architecture:
-      - GCCM-001 — Core Capability Model: reference-architecture/gccm-001.md
-  - Glossário Canônico: glossary.md
-  - GEB:
+      - Reference Architecture — GCCM-001: reference-architecture/gccm-001.md
+      - Glossário Canônico: glossary.md
+
+  - GEB — Ecosystem Architecture:
       - Visão Geral: geb/index.md
-      - Parte I — Fundação:
+      - Fundação:
           - Visão Geral: geb/part-01-foundation/index.md
           - Essência: geb/part-01-foundation/01-essence.md
           - Propósito: geb/part-01-foundation/02-purpose.md
@@ -97,272 +113,50 @@ nav:
           - Visão de Longo Prazo: geb/part-01-foundation/04-vision.md
           - Constituição: geb/part-01-foundation/05-constitution.md
           - Princípios Permanentes: geb/part-01-foundation/06-principles.md
-      - Parte II — Modelo Fundamental:
+      - Modelo Fundamental:
           - Visão Geral: geb/part-02-fundamental-model/index.md
           - Fenômeno da Evolução: geb/part-02-fundamental-model/phenomenon.md
           - Modelo Fundamental da Jornada: geb/part-02-fundamental-model/fundamental-journey.md
           - Quatro Naturezas Fundamentais: geb/part-02-fundamental-model/four-fundamental-natures.md
+
   - Arquitetura de Produtos:
       - Visão Geral: product-architecture/index.md
       - GLPA-001 — Layered Product Architecture: product-architecture/layered-product-architecture.md
       - PAS-001 — Guivos Journey: product-architecture/pas-001-guivos-journey.md
-      - PAS-001-RECON-001 — Reconciliação e Prontidão: product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md
-      - PAS-001-CC-LIFECYCLE-001 — Ciclo de Vida da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-ciclo-de-vida.md
-      - PAS-001-CC-EVENT-INTEGRATION-001 — Eventos e Integrações da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-eventos-integracoes-funcionais.md
-      - PAS-001-CC-CONTRACT-001 — Contrato Final da Captura de Contexto: product-architecture/pas-001-captura-de-contexto-kpis-cenarios-contrato-final.md
-      - PAS-001-AUDIT-001 — Auditoria Final de Prontidão: product-architecture/pas-001-guivos-journey-auditoria-final-prontidao.md
-      - PAS-001-CANDIDATE-001 — Edição Candidata Histórica 1.0.0: product-architecture/pas-001-guivos-journey-1.0.0-candidate.md
-      - PAS-001-RELEASE-VALIDATION-001 — Validação Editorial e Normativa: product-architecture/pas-001-guivos-journey-validacao-publicacao.md
-      - PAS-001-PUBLICATION-001 — Publicação Controlada 1.0.0: product-architecture/pas-001-guivos-journey-publicacao-controlada.md
-      - PAS-001-CAPABILITY-MAP-001 — Mapa Final de Capacidades: product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md
-      - PAS-001-ENGINEERING-HANDOFF-001 — Engineering Handoff: product-architecture/pas-001-guivos-journey-engineering-handoff.md
-      - Engineering Handoff 0.7.1 — Paused for Economic Model: product-architecture/pas-001-guivos-journey-engineering-handoff-0.7.1.md
-      - Engineering Handoff 0.7.0 — W0-01 Charter: product-architecture/pas-001-guivos-journey-engineering-handoff-0.7.0.md
-      - Engineering Handoff 0.6.0 — Wave 0 Planned: product-architecture/pas-001-guivos-journey-engineering-handoff-0.6.0.md
-      - Engineering Handoff 0.5.0 — Technically Ready: product-architecture/pas-001-guivos-journey-engineering-handoff-0.5.0.md
-      - Engineering Handoff 0.4.0 — Technical Contracts: product-architecture/pas-001-guivos-journey-engineering-handoff-0.4.0.md
-      - Engineering Handoff 0.3.0 — Technical Lifecycle: product-architecture/pas-001-guivos-journey-engineering-handoff-0.3.0.md
-      - Engineering Handoff 0.2.0 — Effective State: product-architecture/pas-001-guivos-journey-engineering-handoff-0.2.0.md
-      - PAS-001-CC-UIC-001 — Capture Context Engineering Unit: product-architecture/pas-001-captura-de-contexto-engineering-unit.md
-      - UIC-01 0.7.1 — Paused before W0-01: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.7.1.md
-      - UIC-01 0.7.0 — W0-01 Charter Defined: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.7.0.md
-      - UIC-01 0.6.0 — Wave 0 Implementation Planned: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.6.0.md
-      - UIC-01 0.5.0 — Technically Ready for Implementation: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.5.0.md
-      - UIC-01 0.4.0 — Contracts Technically Proposed: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.4.0.md
-      - UIC-01 0.3.0 — Lifecycle Technically Defined: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.3.0.md
-      - UIC-01 0.2.0 — Domain Model Proposed: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.2.0.md
-      - PAS-001-CC-UIC-DOMAIN-001 — Domain Model: product-architecture/pas-001-captura-de-contexto-domain-model.md
-      - PAS-001-CC-UIC-LIFECYCLE-001 — Technical Lifecycle: product-architecture/pas-001-captura-de-contexto-technical-lifecycle.md
-      - PAS-001-CC-UIC-CONTRACTS-001 — Technical Contracts: product-architecture/pas-001-captura-de-contexto-technical-contracts.md
-      - PAS-001-CC-UIC-SCHEMAS-001 — Contract Schema Pack: product-architecture/pas-001-captura-de-contexto-contract-schema-pack.md
-      - PAS-001-CC-UIC-STORAGE-INDEX-001 — Storage and Sensitive Indexing: product-architecture/pas-001-captura-de-contexto-storage-and-sensitive-indexing.md
-      - PAS-001-CC-UIC-GUARDRAILS-ACCESS-001 — Guardrails and Access Matrix: product-architecture/pas-001-captura-de-contexto-guardrails-and-access-matrix.md
-      - PAS-001-CC-UIC-NFR-SECURITY-001 — NFR, SLO and Threat Model: product-architecture/pas-001-captura-de-contexto-nfr-slo-threat-model.md
-      - PAS-001-CC-UIC-READINESS-001 — Tests, Evidence and Readiness: product-architecture/pas-001-captura-de-contexto-test-evidence-readiness.md
-      - PAS-001-CC-W0-PLAN-001 — Wave 0 Implementation Plan: product-architecture/pas-001-captura-de-contexto-wave-0-implementation-plan.md
-      - PAS-001-CC-W0-BACKLOG-001 — Wave 0 Backlog: product-architecture/pas-001-captura-de-contexto-wave-0-backlog.md
-      - PAS-001-CC-W0-DEPENDENCY-001 — Wave 0 Dependencies: product-architecture/pas-001-captura-de-contexto-wave-0-dependency-plan.md
-      - PAS-001-CC-W0-ENV-001 — Wave 0 Environments and Integration: product-architecture/pas-001-captura-de-contexto-wave-0-environments-integration.md
-      - PAS-001-CC-W0-POC-001 — Wave 0 Proof Plan: product-architecture/pas-001-captura-de-contexto-wave-0-proof-plan.md
-      - PAS-001-CC-W0-EVIDENCE-001 — Wave 0 Evidence Plan: product-architecture/pas-001-captura-de-contexto-wave-0-evidence-plan.md
-      - PAS-001-CC-W0-RISK-001 — Wave 0 Risk and Stop Register: product-architecture/pas-001-captura-de-contexto-wave-0-risk-stop-register.md
-      - PAS-001-CC-W0-TECH-DECISIONS-001 — Wave 0 Technology Decisions: product-architecture/pas-001-captura-de-contexto-wave-0-technology-decision-register.md
-      - PAS-001-CC-W0-01-CHARTER-001 — W0-01 Execution Charter: product-architecture/pas-001-captura-de-contexto-w0-01-execution-charter.md
-      - PAS-001-CC-W0-01-OWNERS-001 — W0-01 Owners: product-architecture/pas-001-captura-de-contexto-w0-01-owner-assignment.md
-      - PAS-001-CC-W0-01-REPO-001 — W0-01 Repository and Branches: product-architecture/pas-001-captura-de-contexto-w0-01-repository-branch-strategy.md
-      - PAS-001-CC-W0-01-PIPELINE-001 — W0-01 Minimum Pipeline: product-architecture/pas-001-captura-de-contexto-w0-01-minimum-pipeline-contract.md
-      - PAS-001-CC-W0-01-SYNTHETIC-DATA-001 — W0-01 Synthetic Data: product-architecture/pas-001-captura-de-contexto-w0-01-synthetic-data-policy.md
-      - PAS-001-CC-W0-01-EVIDENCE-001 — W0-01 Evidence Contract: product-architecture/pas-001-captura-de-contexto-w0-01-evidence-storage-contract.md
-      - PAS-001-CC-W0-01-DECISIONS-001 — W0-01 Blocking Decisions: product-architecture/pas-001-captura-de-contexto-w0-01-blocking-decisions-plan.md
-      - PAS-001-CC-W0-01-READINESS-001 — W0-01 Readiness Checklist: product-architecture/pas-001-captura-de-contexto-w0-01-readiness-checklist.md
-      - Product Architecture 1.38.0 — W0-01 Charter: product-architecture/product-architecture-1.38.0.md
-      - Product Architecture 1.37.0 — Wave 0 Planned: product-architecture/product-architecture-1.37.0.md
-      - Product Architecture 1.36.0 — Technically Ready: product-architecture/product-architecture-1.36.0.md
-      - Product Architecture 1.35.0 — Technical Contracts: product-architecture/product-architecture-1.35.0.md
-      - Product Architecture 1.34.0 — Technical Lifecycle: product-architecture/product-architecture-1.34.0.md
-      - Product Architecture 1.33.0 — UIC-01 Defined: product-architecture/product-architecture-1.33.0.md
-      - Product Architecture 1.32.0 — Engineering Handoff Initiated: product-architecture/product-architecture-1.32.0.md
-      - PAS-001-CV-STATE-001 — Estados do Contexto Vivo: product-architecture/pas-001-contexto-vivo-estados-dimensionais.md
-      - PAS-001-CV-UPDATE-001 — Atualização e Envelhecimento: product-architecture/pas-001-contexto-vivo-atualizacao-envelhecimento.md
-      - PAS-001-CV-CONFLICT-001 — Resolução de Conflitos: product-architecture/pas-001-contexto-vivo-resolucao-conflitos.md
-      - PAS-001-CV-VIEW-001 — Meu Contexto Hoje: product-architecture/pas-001-meu-contexto-hoje.md
-      - PAS-001-CV-EVENT-001 — Eventos Funcionais: product-architecture/pas-001-contexto-vivo-eventos-funcionais.md
-      - PAS-001-CV-INTEGRATION-001 — Integrações Funcionais: product-architecture/pas-001-contexto-vivo-integracoes-funcionais.md
-      - PAS-001-CV-KPI-001 — KPIs e Desempenho: product-architecture/pas-001-contexto-vivo-kpis-desempenho.md
-      - PAS-001-CV-CONTRACT-001 — Cenários e Contrato Final: product-architecture/pas-001-contexto-vivo-cenarios-contrato-final.md
-      - PAS-001-OBJ-FOUNDATION-001 — Fundamentos de Objetivos: product-architecture/pas-001-objetivos-fundamentos-iniciais.md
-      - PAS-001-OBJ-LIFECYCLE-001 — Ciclo de Vida dos Objetivos: product-architecture/pas-001-objetivos-ciclo-de-vida.md
-      - PAS-001-OBJ-PROGRESS-001 — Progresso e Conclusão: product-architecture/pas-001-objetivos-progresso-e-conclusao.md
-      - PAS-001-OBJ-VIEW-001 — Meus Objetivos: product-architecture/pas-001-meus-objetivos.md
-      - PAS-001-OBJ-EVENT-001 — Eventos Funcionais de Objetivos: product-architecture/pas-001-objetivos-eventos-funcionais.md
-      - PAS-001-OBJ-INTEGRATION-001 — Integrações Funcionais de Objetivos: product-architecture/pas-001-objetivos-integracoes-funcionais.md
-      - PAS-001-OBJ-CONTRACT-001 — KPIs, Cenários e Contrato Final de Objetivos: product-architecture/pas-001-objetivos-kpis-cenarios-contrato-final.md
-      - PAS-001-EV-FOUNDATION-001 — Fundamentos de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-fundamentos-iniciais.md
-      - PAS-001-EV-LIFECYCLE-001 — Ciclo de Vida dos Eventos de Vida: product-architecture/pas-001-eventos-de-vida-ciclo-de-vida.md
-      - PAS-001-EV-VIEW-001 — Visualização e Controle de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-visualizacao-controle.md
-      - PAS-001-EV-EVENT-001 — Eventos Funcionais de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-eventos-funcionais.md
-      - PAS-001-EV-INTEGRATION-001 — Integrações Funcionais de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-integracoes-funcionais.md
-      - PAS-001-EV-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final de Eventos de Vida: product-architecture/pas-001-eventos-de-vida-kpis-cenarios-contrato-final.md
-      - PAS-001-PP-FOUNDATION-001 — Fundamentos de Próximos Passos: product-architecture/pas-001-proximos-passos-fundamentos-iniciais.md
-      - PAS-001-PP-LIFECYCLE-001 — Ciclo de Vida dos Próximos Passos: product-architecture/pas-001-proximos-passos-ciclo-de-vida.md
-      - PAS-001-PP-VIEW-001 — Visualização e Controle dos Próximos Passos: product-architecture/pas-001-proximos-passos-visualizacao-controle.md
-      - PAS-001-PP-EVENT-001 — Eventos Funcionais dos Próximos Passos: product-architecture/pas-001-proximos-passos-eventos-funcionais.md
-      - PAS-001-PP-INTEGRATION-001 — Integrações Funcionais dos Próximos Passos: product-architecture/pas-001-proximos-passos-integracoes-funcionais.md
-      - PAS-001-PP-CONTRACT-001 — KPIs, Guardrails, Cenários e Contrato Final dos Próximos Passos: product-architecture/pas-001-proximos-passos-kpis-cenarios-contrato-final.md
-      - PAS-001-OA-FOUNDATION-001 — Fundamentos de Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-fundamentos-iniciais.md
-      - PAS-001-OA-LIFECYCLE-001 — Ciclo de Vida das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-ciclo-de-vida.md
-      - PAS-001-OA-VIEW-001 — Visualização e Controle das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-visualizacao-controle.md
-      - PAS-001-OA-EVENT-001 — Eventos Funcionais das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-eventos-funcionais.md
-      - PAS-001-OA-INTEGRATION-001 — Integrações Funcionais das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-integracoes-funcionais.md
-      - PAS-001-OA-CONTRACT-001 — Contrato Final das Oportunidades Ativas: product-architecture/pas-001-oportunidades-ativas-kpis-cenarios-contrato-final.md
-      - PAS-001-IC-FOUNDATION-001 — Fundamentos de Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-fundamentos-iniciais.md
-      - PAS-001-IC-LIFECYCLE-001 — Ciclo de Vida das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-ciclo-de-vida.md
-      - PAS-001-IC-VIEW-001 — Visualização e Controle das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-visualizacao-controle.md
-      - PAS-001-IC-EVENT-001 — Eventos Funcionais das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-eventos-funcionais.md
-      - PAS-001-IC-INTEGRATION-001 — Integrações Funcionais das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-integracoes-funcionais.md
-      - PAS-001-IC-CONTRACT-001 — Contrato Final das Intervenções Contextuais: product-architecture/pas-001-intervencoes-contextuais-kpis-cenarios-contrato-final.md
-      - PAS-001-EXP-FOUNDATION-001 — Fundamentos de Experiências: product-architecture/pas-001-experiencias-fundamentos-iniciais.md
-      - PAS-001-EXP-LIFECYCLE-001 — Ciclo de Vida das Experiências: product-architecture/pas-001-experiencias-ciclo-de-vida.md
-      - PAS-001-EXP-VIEW-001 — Visualização e Controle das Experiências: product-architecture/pas-001-experiencias-visualizacao-controle.md
-      - PAS-001-EXP-EVENT-001 — Eventos Funcionais das Experiências: product-architecture/pas-001-experiencias-eventos-funcionais.md
-      - PAS-001-EXP-INTEGRATION-001 — Integrações Funcionais das Experiências: product-architecture/pas-001-experiencias-integracoes-funcionais.md
-      - PAS-001-EXP-CONTRACT-001 — Contrato Final das Experiências: product-architecture/pas-001-experiencias-kpis-cenarios-contrato-final.md
-      - PAS-001-EC-FOUNDATION-001 — Fundamentos de Evolução Contínua: product-architecture/pas-001-evolucao-continua-fundamentos-iniciais.md
-      - PAS-001-EC-LIFECYCLE-001 — Ciclo de Vida da Evolução Contínua: product-architecture/pas-001-evolucao-continua-ciclo-de-vida.md
-      - PAS-001-EC-VIEW-001 — Visualização e Controle da Evolução Contínua: product-architecture/pas-001-evolucao-continua-visualizacao-controle.md
-      - PAS-001-EC-EVENT-001 — Eventos Funcionais da Evolução Contínua: product-architecture/pas-001-evolucao-continua-eventos-funcionais.md
-      - PAS-001-EC-INTEGRATION-001 — Integrações Funcionais da Evolução Contínua: product-architecture/pas-001-evolucao-continua-integracoes-funcionais.md
-      - PAS-001-EC-CONTRACT-001 — Contrato Final da Evolução Contínua: product-architecture/pas-001-evolucao-continua-kpis-cenarios-contrato-final.md
-      - Guivos Journey: product-architecture/journey.md
-      - Guivos Mall: product-architecture/mall.md
-      - Guivos Travel: product-architecture/travel.md
-      - Guivos Business: product-architecture/business.md
-      - Guivos Media: product-architecture/media.md
-      - Guivos Intelligence: product-architecture/intelligence.md
-      - Guivos Ads: product-architecture/ads.md
+      - Reconciliação e Prontidão: product-architecture/pas-001-guivos-journey-reconciliacao-fechamento.md
+      - Publicação Controlada: product-architecture/pas-001-guivos-journey-publicacao-controlada.md
+      - Mapa Final de Capacidades: product-architecture/pas-001-guivos-journey-mapa-final-capacidades.md
+      - Engineering Handoff: product-architecture/pas-001-guivos-journey-engineering-handoff.md
+      - Engineering Handoff — Paused for Economic Model: product-architecture/pas-001-guivos-journey-engineering-handoff-0.7.1.md
+      - UIC-01 — Paused before W0-01: product-architecture/pas-001-captura-de-contexto-engineering-unit-0.7.1.md
+      - Produtos Especializados:
+          - Guivos Journey: product-architecture/journey.md
+          - Guivos Mall: product-architecture/mall.md
+          - Guivos Business: product-architecture/business.md
+          - Guivos Intelligence: product-architecture/intelligence.md
+          - Guivos Ads: product-architecture/ads.md
+          - Guivos Media: product-architecture/media.md
+          - Guivos Travel: product-architecture/travel.md
+
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
       - GAI-001 — AI Knowledge Model: intelligence-architecture/knowledge-model.md
-      - GAI-002 — Manifesto da Inteligência do Ecossistema: intelligence-architecture/manifesto.md
+      - GAI-002 — Manifesto da Inteligência: intelligence-architecture/manifesto.md
+
   - Guivos Economic Model:
       - Visão Geral: economic-model/index.md
       - Revisão de Fechamento: economic-model/gem-closure-review.md
       - GEM-001 — Fundação: economic-model/gem-001-foundation.md
-      - GEM-001 — Arquitetura de Valor: economic-model/gem-001-value-architecture.md
-      - GEM-001 — Atores Econômicos: economic-model/gem-001-economic-actors.md
-      - GEM-001 — Princípios e Guardrails: economic-model/gem-001-principles-and-guardrails.md
-      - GEM-001 — Mapa de Desenvolvimento: economic-model/gem-001-development-map.md
-      - GEM-001 — Checkpoint de Dependência: economic-model/gem-001-dependency-validation-checkpoint.md
       - GEM-002 — Geração e Fluxos de Valor: economic-model/gem-002-value-generation-and-flows.md
-      - GEM-002 — Fontes de Valor: economic-model/gem-002-value-source-catalog.md
-      - GEM-002 — Objetos de Valor: economic-model/gem-002-value-object-taxonomy.md
-      - GEM-002 — Contrato de Fluxo: economic-model/gem-002-value-flow-contract.md
-      - GEM-002 — Mapa de Fluxos: economic-model/gem-002-ecosystem-value-flow-map.md
-      - GEM-002 — Custos, Riscos e Vazamentos: economic-model/gem-002-cost-risk-leakage-map.md
-      - GEM-002 — Fronteiras Econômicas: economic-model/gem-002-capture-sharing-reinvestment-boundaries.md
-      - GEM-002 — Cenários e Gates: economic-model/gem-002-scenarios-and-gates.md
-      - GEM-002 — Checkpoint de Dependência: economic-model/gem-002-dependency-validation-checkpoint.md
       - GEM-003 — Arquitetura de Receitas: economic-model/gem-003-revenue-architecture.md
-      - GEM-003 — Famílias de Receita: economic-model/gem-003-revenue-family-catalog.md
-      - GEM-003 — Eventos Econômicos: economic-model/gem-003-revenue-event-model.md
-      - GEM-003 — Pagadores e Beneficiários: economic-model/gem-003-payer-beneficiary-matrix.md
-      - GEM-003 — Bases de Cobrança: economic-model/gem-003-charge-basis-catalog.md
-      - GEM-003 — Contrato de Família: economic-model/gem-003-revenue-family-contract.md
-      - GEM-003 — Transparência e Conflitos: economic-model/gem-003-disclosure-and-conflict-policy.md
-      - GEM-003 — Concentração e Resiliência: economic-model/gem-003-concentration-and-resilience.md
-      - GEM-003 — Framework de Validação: economic-model/gem-003-validation-framework.md
-      - GEM-003 — Cenários e Gates: economic-model/gem-003-scenarios-and-gates.md
-      - GEM-003 — Checkpoint de Dependência: economic-model/gem-003-dependency-validation-checkpoint.md
       - GEM-004 — Modelo Gratuito e Pago: economic-model/gem-004-free-and-paid-model.md
-      - GEM-004 — Baseline Gratuito: economic-model/gem-004-universal-free-value-baseline.md
-      - GEM-004 — Ampliações Pagas: economic-model/gem-004-paid-value-extension-taxonomy.md
-      - GEM-004 — Arquétipos de Acesso: economic-model/gem-004-plan-archetype-catalog.md
-      - GEM-004 — Matriz de Capacidades: economic-model/gem-004-capability-allocation-matrix.md
-      - GEM-004 — Elegibilidade e Acesso Financiado: economic-model/gem-004-eligibility-and-funded-access.md
-      - GEM-004 — Ciclo de Vida dos Planos: economic-model/gem-004-plan-lifecycle.md
-      - GEM-004 — Política de Paywall: economic-model/gem-004-paywall-policy.md
-      - GEM-004 — Upgrade, Downgrade e Cancelamento: economic-model/gem-004-upgrade-downgrade-cancellation-policy.md
-      - GEM-004 — Contrato Canônico de Plano: economic-model/gem-004-plan-contract.md
-      - GEM-004 — Cenários e Gates: economic-model/gem-004-scenarios-and-gates.md
-      - GEM-004 — Checkpoint de Dependência: economic-model/gem-004-dependency-validation-checkpoint.md
       - GEM-005 — Incentivos e Recompensas: economic-model/gem-005-incentives-and-rewards-model.md
-      - GEM-005 — Camadas de Incentivo: economic-model/gem-005-incentive-layer-architecture.md
-      - GEM-005 — Famílias de Incentivo: economic-model/gem-005-incentive-family-catalog.md
-      - GEM-005 — Pontos e Créditos: economic-model/gem-005-points-and-credits-policy.md
-      - GEM-005 — Financiamento de Recompensas: economic-model/gem-005-reward-funding-model.md
-      - GEM-005 — Eventos e Evidências: economic-model/gem-005-eligible-events-and-evidence.md
-      - GEM-005 — Ciclo de Vida de Recompensas: economic-model/gem-005-reward-lifecycle.md
-      - GEM-005 — Resgate, Expiração e Reversão: economic-model/gem-005-redemption-expiration-reversal-policy.md
-      - GEM-005 — Segurança Comportamental: economic-model/gem-005-behavioral-safety-policy.md
-      - GEM-005 — Fraude e Abuso: economic-model/gem-005-fraud-and-abuse-control-model.md
-      - GEM-005 — Voluntariado e Impacto Social: economic-model/gem-005-volunteering-and-social-impact-incentives.md
-      - GEM-005 — Contrato Canônico de Programa: economic-model/gem-005-incentive-program-contract.md
-      - GEM-005 — Cenários e Gates: economic-model/gem-005-scenarios-and-gates.md
-      - GEM-005 — Checkpoint de Dependência: economic-model/gem-005-dependency-validation-checkpoint.md
       - GEM-006 — Economia de Parceiros: economic-model/gem-006-partner-economy.md
-      - GEM-006 — Papéis de Parceiros: economic-model/gem-006-partner-role-taxonomy.md
-      - GEM-006 — Arquétipos de Relacionamento: economic-model/gem-006-relationship-archetypes.md
-      - GEM-006 — Troca de Valor: economic-model/gem-006-partner-value-exchange-map.md
-      - GEM-006 — Ciclo de Vida de Parceiros: economic-model/gem-006-partner-lifecycle.md
-      - GEM-006 — Elegibilidade e Due Diligence: economic-model/gem-006-eligibility-and-due-diligence.md
-      - GEM-006 — Onboarding e Ativação: economic-model/gem-006-onboarding-and-activation-gates.md
-      - GEM-006 — Mecanismos e Fluxo de Fundos: economic-model/gem-006-economic-mechanisms-and-funds-flow.md
-      - GEM-006 — Responsabilidade e Disputas: economic-model/gem-006-responsibility-refund-and-dispute-map.md
-      - GEM-006 — Qualidade e Desempenho: economic-model/gem-006-quality-and-performance-framework.md
-      - GEM-006 — Dados e Finalidade: economic-model/gem-006-data-access-and-purpose-policy.md
-      - GEM-006 — Transparência, Ranking e Conflitos: economic-model/gem-006-disclosure-ranking-and-conflict-policy.md
-      - GEM-006 — Concentração e Resiliência: economic-model/gem-006-concentration-and-resilience.md
-      - GEM-006 — Suspensão, Saída e Continuidade: economic-model/gem-006-suspension-exit-and-continuity.md
-      - GEM-006 — Contrato Canônico de Relacionamento: economic-model/gem-006-partner-relationship-contract.md
-      - GEM-006 — Cenários e Gates: economic-model/gem-006-scenarios-and-gates.md
-      - GEM-006 — Checkpoint de Dependência: economic-model/gem-006-dependency-validation-checkpoint.md
       - GEM-007 — Papéis Econômicos dos Produtos: economic-model/gem-007-product-economic-roles.md
-      - GEM-007 — Taxonomia de Papéis Econômicos: economic-model/gem-007-economic-role-taxonomy.md
-      - GEM-007 — Contrato Canônico de Papel Econômico: economic-model/gem-007-product-economic-role-contract.md
-      - GEM-007 — Guivos Journey: economic-model/gem-007-journey-economic-role.md
-      - GEM-007 — Guivos Mall: economic-model/gem-007-mall-economic-role.md
-      - GEM-007 — Guivos Travel: economic-model/gem-007-travel-economic-role.md
-      - GEM-007 — Guivos Business: economic-model/gem-007-business-economic-role.md
-      - GEM-007 — Guivos Media: economic-model/gem-007-media-economic-role.md
-      - GEM-007 — Guivos Intelligence: economic-model/gem-007-intelligence-economic-role.md
-      - GEM-007 — Guivos Ads: economic-model/gem-007-ads-economic-role.md
-      - GEM-007 — Produtos e Famílias de Receita: economic-model/gem-007-product-revenue-family-matrix.md
-      - GEM-007 — Produtos e Parceiros: economic-model/gem-007-product-partner-role-matrix.md
-      - GEM-007 — Ownership de Eventos: economic-model/gem-007-economic-event-ownership-map.md
-      - GEM-007 — Atribuição entre Produtos: economic-model/gem-007-cross-product-value-attribution.md
-      - GEM-007 — Capacidades e Custos Compartilhados: economic-model/gem-007-shared-capability-and-cost-boundaries.md
-      - GEM-007 — Riscos e Guardrails: economic-model/gem-007-product-risk-and-guardrail-matrix.md
-      - GEM-007 — Cenários e Gates: economic-model/gem-007-scenarios-and-gates.md
-      - GEM-007 — Checkpoint de Dependência: economic-model/gem-007-dependency-validation-checkpoint.md
       - GEM-008 — Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
-      - GEM-008 — Taxonomia das Dimensões de Sustentabilidade: economic-model/gem-008-sustainability-dimension-taxonomy.md
-      - GEM-008 — Arquitetura de Custos: economic-model/gem-008-cost-architecture.md
-      - GEM-008 — Fronteiras de Custos Compartilhados: economic-model/gem-008-shared-cost-boundaries.md
-      - GEM-008 — Modelo de Capacidade e Saturação: economic-model/gem-008-capacity-and-saturation-model.md
-      - GEM-008 — Gates de Crescimento e Capacidade: economic-model/gem-008-growth-and-capacity-gates.md
-      - GEM-008 — Fontes Econômicas e Estados de Recursos: economic-model/gem-008-funding-source-and-resource-status.md
-      - GEM-008 — Financiamento do Valor Universal Gratuito: economic-model/gem-008-universal-free-funding-policy.md
-      - GEM-008 — Política de Subsídios Cruzados: economic-model/gem-008-cross-subsidy-policy.md
-      - GEM-008 — Mapa de Obrigações Protegidas: economic-model/gem-008-protected-obligations-map.md
-      - GEM-008 — Arquitetura Conceitual de Reservas: economic-model/gem-008-reserve-architecture.md
-      - GEM-008 — Prioridade de Reinvestimento: economic-model/gem-008-reinvestment-priority-framework.md
-      - GEM-008 — Ciclo de Vida do Reinvestimento: economic-model/gem-008-reinvestment-lifecycle.md
-      - GEM-008 — Concentração e Resiliência: economic-model/gem-008-concentration-and-resilience-policy.md
-      - GEM-008 — Financiamento da Continuidade e Saída: economic-model/gem-008-continuity-and-exit-funding-policy.md
-      - GEM-008 — Política de Produtos Subsidiados: economic-model/gem-008-subsidized-product-policy.md
-      - GEM-008 — Externalidades Sociais e Ambientais: economic-model/gem-008-social-and-environmental-externalities.md
-      - GEM-008 — Contrato Canônico de Sustentabilidade: economic-model/gem-008-sustainability-contract.md
-      - GEM-008 — Cenários e Gates: economic-model/gem-008-scenarios-and-gates.md
-      - GEM-009 — Checkpoint do GEM-008: economic-model/gem-008-dependency-validation-checkpoint.md
       - GEM-009 — Métricas Econômicas: economic-model/gem-009-economic-metrics.md
-      - GEM-009 — Taxonomia de Métricas: economic-model/gem-009-metric-taxonomy.md
-      - GEM-009 — Contrato Canônico de Métrica: economic-model/gem-009-measurement-contract.md
-      - GEM-009 — Valor e Adoção: economic-model/gem-009-value-and-adoption-metrics.md
-      - GEM-009 — Receita e Captura: economic-model/gem-009-revenue-and-capture-metrics.md
-      - GEM-009 — Custos e Unit Economics: economic-model/gem-009-cost-and-unit-economics.md
-      - GEM-009 — Capacidade e Qualidade: economic-model/gem-009-capacity-and-quality-metrics.md
-      - GEM-009 — Concentração e Resiliência: economic-model/gem-009-concentration-and-resilience-metrics.md
-      - GEM-009 — Gratuito, Subsídios e Acesso: economic-model/gem-009-free-subsidy-and-access-metrics.md
-      - GEM-009 — Reservas e Reinvestimento: economic-model/gem-009-reserve-and-reinvestment-metrics.md
-      - GEM-009 — Impacto e Saúde do Ecossistema: economic-model/gem-009-impact-and-ecosystem-health.md
-      - GEM-009 — Evidências, Periodicidade e Responsabilidade: economic-model/gem-009-evidence-cadence-and-ownership.md
-      - GEM-009 — Baselines, Thresholds e Maturidade: economic-model/gem-009-baselines-thresholds-and-maturity.md
-      - GEM-009 — Cenários e Gates: economic-model/gem-009-scenarios-and-gates.md
-      - GEM-010 — Checkpoint do GEM-009: economic-model/gem-009-dependency-validation-checkpoint.md
       - GEM-010 — Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios-and-model.md
-      - GEM-010 — Governança de Premissas: economic-model/gem-010-assumption-governance.md
-      - GEM-010 — Arquitetura de Cenários: economic-model/gem-010-scenario-architecture.md
-      - GEM-010 — Drivers Operacionais: economic-model/gem-010-operating-driver-model.md
-      - GEM-010 — Receitas e Captura: economic-model/gem-010-revenue-model.md
-      - GEM-010 — Custos e Capacidade: economic-model/gem-010-cost-and-capacity-model.md
-      - GEM-010 — Demonstrativos Gerenciais: economic-model/gem-010-management-statements.md
-      - GEM-010 — Caixa, Capital de Giro e Funding: economic-model/gem-010-cash-working-capital-and-funding.md
-      - GEM-010 — Unit Economics e Coortes: economic-model/gem-010-unit-economics-and-cohorts.md
-      - GEM-010 — Sensibilidade, Break-even e Estresse: economic-model/gem-010-sensitivity-break-even-and-stress.md
-      - GEM-010 — Consolidação entre Produtos: economic-model/gem-010-cross-product-consolidation.md
-      - GEM-010 — Reservas, Subsídios e Reinvestimento: economic-model/gem-010-reserves-subsidies-and-reinvestment.md
-      - GEM-010 — Contrato Canônico do Modelo Financeiro: economic-model/gem-010-financial-model-contract.md
-      - GEM-010 — Cenários e Gates: economic-model/gem-010-scenarios-and-gates.md
+
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
       - Foundations: business-architecture/foundations/index.md
@@ -371,217 +165,62 @@ nav:
           - Business Outcomes: business-architecture/strategy/business-outcomes.md
           - Candidate Outcome Register: business-architecture/strategy/candidate-outcome-register.md
           - External Outcome Validation Protocol: business-architecture/strategy/external-outcome-validation-protocol.md
-          - External Outcome Validation Batch 01: business-architecture/strategy/outcome-validation-batch-01-agency-evolution.md
-          - External Outcome Validation Batch 02: business-architecture/strategy/outcome-validation-batch-02-trust.md
-          - External Outcome Validation Batch 03: business-architecture/strategy/outcome-validation-batch-03-value-continuity.md
-          - External Outcome Validation Batch 04: business-architecture/strategy/outcome-validation-batch-04-resilience.md
-          - External Outcome Validation Batch 05: business-architecture/strategy/outcome-validation-batch-05-adaptation.md
-          - External Outcome Validation Batch 06: business-architecture/strategy/outcome-validation-batch-06-coverage-completion.md
+          - Validation Batch 01 — Agency and Evolution: business-architecture/strategy/outcome-validation-batch-01-agency-evolution.md
+          - Validation Batch 02 — Trust: business-architecture/strategy/outcome-validation-batch-02-trust.md
+          - Validation Batch 03 — Value and Continuity: business-architecture/strategy/outcome-validation-batch-03-value-continuity.md
+          - Validation Batch 04 — Resilience: business-architecture/strategy/outcome-validation-batch-04-resilience.md
+          - Validation Batch 05 — Adaptation: business-architecture/strategy/outcome-validation-batch-05-adaptation.md
+          - Validation Batch 06 — Coverage Completion: business-architecture/strategy/outcome-validation-batch-06-coverage-completion.md
           - Candidate Outcome Evaluation Matrix: business-architecture/strategy/candidate-outcome-evaluation-matrix.md
-  - Governance Framework do GKR:
+          - Candidate Outcome Decision Register: business-architecture/strategy/candidate-outcome-decision-register.md
+
+  - Governança e Validação:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - Architectural Audit Framework: governance-framework/architectural-audit-framework.md
       - Outcome Governance Method: governance-framework/outcome-governance-method.md
-  - Validações Arquiteturais:
-      - A2-R01-FEM-001 — Foundation Evidence Matrix: validation/A2-R01-FEM-001-foundation-evidence-matrix.md
-      - A2-R01-CC-001 — Foundation Canonical Consolidation: validation/A2-R01-CC-001-canonical-consolidation.md
-      - A2-R01-RA-001 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
-      - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
-      - A2-R01-AUD-001 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
-      - A2-R02-FMEM-001 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md
-      - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
-  - ADRs:
-      - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
-      - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
-      - ADR-003 — Architectural Ownership: adr/ADR-003-architectural-ownership.md
-      - ADR-004 — Architectural Dependency Order: adr/ADR-004-architectural-dependency-order.md
-      - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
-      - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
-      - ADR-CC-001 — Conteúdo Multimodal e Registro Funcional: product-architecture/adrs/adr-cc-001-separacao-conteudo-multimodal-registro-funcional.md
-      - ADR-CC-002 — Indexação Sensível: product-architecture/adrs/adr-cc-002-politica-logica-indexacao-sensivel.md
-      - ADR-CC-003 — Pontos de Aplicação dos Guardrails: product-architecture/adrs/adr-cc-003-pontos-aplicacao-guardrails.md
-      - ADR-CC-004 — Acesso por Finalidade e Autoridade: product-architecture/adrs/adr-cc-004-acesso-por-finalidade-e-autoridade.md
-      - ADR-CC-005 — Readiness da Onda 0: product-architecture/adrs/adr-cc-005-criterios-readiness-onda-0.md
-  - Projeto:
-      - Reordenamento Estratégico — Journey para Economic Model: project/strategic-resequencing-journey-to-economic-model.md
-      - Architectural Milestones: project/architectural-milestones.md
-      - Architectural Milestones 4.33.0 — M7.0.4: project/architectural-milestones-4.33.0.md
-      - Architectural Milestones 4.34.0 — M7.0.5: project/architectural-milestones-4.34.0.md
-      - Architectural Milestones 4.35.0 — M7.0.6: project/architectural-milestones-4.35.0.md
-      - Architectural Milestones 4.36.0 — M7.0.7: project/architectural-milestones-4.36.0.md
-      - Architectural Milestones 4.37.0 — M7.1: project/architectural-milestones-4.37.0.md
-      - Architectural Milestones 4.38.0 — M7.1.1: project/architectural-milestones-4.38.0.md
-      - Architectural Milestones 4.39.0 — M7.1.2: project/architectural-milestones-4.39.0.md
-      - Architectural Milestones 4.40.0 — M7.1.3: project/architectural-milestones-4.40.0.md
-      - Architectural Milestones 4.41.0 — M7.1.4: project/architectural-milestones-4.41.0.md
-      - Architectural Milestones 4.42.0 — M7.1.5: project/architectural-milestones-4.42.0.md
-      - Architectural Milestones 4.32.0 — M7.0.3: project/architectural-milestones-4.32.0.md
-      - Architectural Milestones 4.31.0 — M7.0.2: project/architectural-milestones-4.31.0.md
-      - Architectural Milestones 4.30.0 — M7.0.1: project/architectural-milestones-4.30.0.md
-      - Architectural Milestones 4.29.0 — M7.0: project/architectural-milestones-4.29.0.md
-      - Architectural Milestones 4.28.0 — M6.10: project/architectural-milestones-4.28.0.md
-      - Architectural Milestones 4.27.0 — M6.9: project/architectural-milestones-4.27.0.md
-      - Architectural Milestones 4.26.0 — M6.8: project/architectural-milestones-4.26.0.md
-      - Architectural Milestones 4.25.0 — M6.7: project/architectural-milestones-4.25.0.md
-      - Architectural Milestones 4.24.0 — M6.6: project/architectural-milestones-4.24.0.md
-      - Architectural Milestones 4.23.0 — M6.5: project/architectural-milestones-4.23.0.md
-      - Architectural Milestones 4.22.0 — M6.4: project/architectural-milestones-4.22.0.md
-      - Architectural Milestones 4.21.0 — M6.3: project/architectural-milestones-4.21.0.md
-      - Architectural Milestones 4.20.0 — M6.2: project/architectural-milestones-4.20.0.md
-      - Architectural Milestones 4.19.0 — M6.1: project/architectural-milestones-4.19.0.md
-      - Architectural Milestones 4.18.0 — M6.0: project/architectural-milestones-4.18.0.md
-      - Architectural Milestones 4.17.0 — M5.18: project/architectural-milestones-4.17.0.md
-      - Architectural Milestones 4.16.0 — M5.17: project/architectural-milestones-4.16.0.md
-      - Architectural Milestones 4.15.0 — M5.16: project/architectural-milestones-4.15.0.md
-      - Architectural Milestones 4.14.0 — M5.15: project/architectural-milestones-4.14.0.md
-      - Architectural Milestones 4.13.0 — M5.14: project/architectural-milestones-4.13.0.md
-      - Architectural Milestones 4.12.0 — M5.12: project/architectural-milestones-4.12.0.md
-      - Architectural Milestones 4.11.0 — M5.11: project/architectural-milestones-4.11.0.md
-      - Knowledge Board 11.33.0 — External Validation Batch 01: project/knowledge-board-11.33.0.md
-      - Knowledge Board 11.34.0 — External Validation Batch 02: project/knowledge-board-11.34.0.md
-      - Knowledge Board 11.35.0 — External Validation Batch 03: project/knowledge-board-11.35.0.md
-      - Knowledge Board 11.36.0 — External Validation Batch 04: project/knowledge-board-11.36.0.md
-      - Knowledge Board 11.37.0 — External Validation Batch 05: project/knowledge-board-11.37.0.md
-      - Knowledge Board 11.38.0 — External Validation Coverage: project/knowledge-board-11.38.0.md
-      - Knowledge Board 11.39.0 — COEM Initiated: project/knowledge-board-11.39.0.md
-      - Knowledge Board 11.40.0 — Trust Cluster COEM: project/knowledge-board-11.40.0.md
-      - Knowledge Board 11.41.0 — Value and Continuity Cluster COEM: project/knowledge-board-11.41.0.md
-      - Knowledge Board 11.42.0 — Resilience Cluster COEM: project/knowledge-board-11.42.0.md
-      - Knowledge Board 11.43.0 — Adaptation Cluster COEM: project/knowledge-board-11.43.0.md
-      - Knowledge Board 11.44.0 — COEM Coverage Completion: project/knowledge-board-11.44.0.md
-      - Knowledge Board 11.32.0 — External Validation Protocol: project/knowledge-board-11.32.0.md
-      - Knowledge Board 11.31.0 — Candidate Outcome Register: project/knowledge-board-11.31.0.md
-      - Knowledge Board 11.30.0 — Fechamento do Economic Model: project/knowledge-board-11.30.0.md
-      - Knowledge Board 11.29.0 — GEM-010: project/knowledge-board-11.29.0.md
-      - Knowledge Board 11.28.0 — GEM-009: project/knowledge-board-11.28.0.md
-      - Knowledge Board 11.27.0 — GEM-008: project/knowledge-board-11.27.0.md
-      - Knowledge Board 11.26.0 — GEM-007: project/knowledge-board-11.26.0.md
-      - Knowledge Board 11.25.0 — GEM-006: project/knowledge-board-11.25.0.md
-      - Knowledge Board 11.24.0 — GEM-005: project/knowledge-board-11.24.0.md
-      - Knowledge Board 11.23.0 — GEM-004: project/knowledge-board-11.23.0.md
-      - Knowledge Board 11.22.0 — GEM-003: project/knowledge-board-11.22.0.md
-      - Knowledge Board 11.21.0 — GEM-002: project/knowledge-board-11.21.0.md
-      - Knowledge Board 11.20.0 — GEM-001: project/knowledge-board-11.20.0.md
-      - Knowledge Board 11.19.0 — W0-01 Charter: project/knowledge-board-11.19.0.md
-      - Knowledge Board 11.18.0 — Wave 0 Planned: project/knowledge-board-11.18.0.md
-      - Knowledge Board 11.17.0 — Technically Ready: project/knowledge-board-11.17.0.md
-      - Knowledge Board 11.16.0 — Technical Contracts: project/knowledge-board-11.16.0.md
-      - Knowledge Board 11.15.0 — Technical Lifecycle: project/knowledge-board-11.15.0.md
-      - Knowledge Board 11.14.0 — UIC-01: project/knowledge-board-11.14.0.md
-      - Knowledge Board 11.13.0 — Engineering Handoff: project/knowledge-board-11.13.0.md
-      - Canonical Matrix 1.52.0 — External Validation Batch 01: project/canonical-consolidation-matrix-ba-str-002-eovb-001-addendum.md
-      - Canonical Matrix 1.53.0 — External Validation Batch 02: project/canonical-consolidation-matrix-ba-str-002-eovb-002-addendum.md
-      - Canonical Matrix 1.54.0 — External Validation Batch 03: project/canonical-consolidation-matrix-ba-str-002-eovb-003-addendum.md
-      - Canonical Matrix 1.55.0 — External Validation Batch 04: project/canonical-consolidation-matrix-ba-str-002-eovb-004-addendum.md
-      - Canonical Matrix 1.56.0 — External Validation Batch 05: project/canonical-consolidation-matrix-ba-str-002-eovb-005-addendum.md
-      - Canonical Matrix 1.57.0 — External Validation Batch 06: project/canonical-consolidation-matrix-ba-str-002-eovb-006-addendum.md
-      - Canonical Matrix 1.58.0 — COEM Initiation: project/canonical-consolidation-matrix-ba-str-002-coem-001-addendum.md
-      - Canonical Matrix 1.59.0 — Trust Cluster COEM: project/canonical-consolidation-matrix-ba-str-002-coem-002-addendum.md
-      - Canonical Matrix 1.60.0 — Value and Continuity Cluster COEM: project/canonical-consolidation-matrix-ba-str-002-coem-003-addendum.md
-      - Canonical Matrix 1.61.0 — Resilience Cluster COEM: project/canonical-consolidation-matrix-ba-str-002-coem-004-addendum.md
-      - Canonical Matrix 1.62.0 — Adaptation Cluster COEM: project/canonical-consolidation-matrix-ba-str-002-coem-005-addendum.md
-      - Canonical Matrix 1.63.0 — COEM Coverage Completion: project/canonical-consolidation-matrix-ba-str-002-coem-006-addendum.md
-      - Canonical Matrix 1.51.0 — External Validation Protocol: project/canonical-consolidation-matrix-ba-str-002-eovp-addendum.md
-      - Canonical Matrix 1.50.0 — Candidate Outcome Register: project/canonical-consolidation-matrix-ba-str-002-cor-addendum.md
-      - Canonical Matrix 1.49.0 — Fechamento do Economic Model: project/canonical-consolidation-matrix-gem-closure-addendum.md
-      - Canonical Matrix 1.48.0 — GEM-010: project/canonical-consolidation-matrix-gem-010-addendum.md
-      - Canonical Matrix 1.47.0 — GEM-009: project/canonical-consolidation-matrix-gem-009-addendum.md
-      - Canonical Matrix 1.46.0 — GEM-008: project/canonical-consolidation-matrix-gem-008-addendum.md
-      - Canonical Matrix 1.45.0 — GEM-007: project/canonical-consolidation-matrix-gem-007-addendum.md
-      - Canonical Matrix 1.44.0 — GEM-006: project/canonical-consolidation-matrix-gem-006-addendum.md
-      - Canonical Matrix 1.43.0 — GEM-005: project/canonical-consolidation-matrix-gem-005-addendum.md
-      - Canonical Matrix 1.42.0 — GEM-004: project/canonical-consolidation-matrix-gem-004-addendum.md
-      - Canonical Matrix 1.41.0 — GEM-003: project/canonical-consolidation-matrix-gem-003-addendum.md
-      - Canonical Matrix 1.40.0 — GEM-002: project/canonical-consolidation-matrix-gem-002-addendum.md
-      - Canonical Matrix 1.39.0 — GEM-001: project/canonical-consolidation-matrix-gem-001-foundation-addendum.md
-      - Canonical Matrix 1.38.0 — W0-01 Charter: project/canonical-consolidation-matrix-uic-01-w0-01-charter-addendum.md
-      - Canonical Matrix 1.37.0 — Wave 0 Planning: project/canonical-consolidation-matrix-uic-01-wave-0-planning-addendum.md
-      - Canonical Matrix 1.36.0 — Technically Ready: project/canonical-consolidation-matrix-uic-01-readiness-addendum.md
-      - Canonical Matrix 1.35.0 — Technical Contracts: project/canonical-consolidation-matrix-uic-01-contracts-addendum.md
-      - Canonical Matrix 1.34.0 — Technical Lifecycle: project/canonical-consolidation-matrix-uic-01-lifecycle-addendum.md
-      - Canonical Matrix 1.33.0 — UIC-01: project/canonical-consolidation-matrix-uic-01-addendum.md
-      - Canonical Matrix 1.32.0 — Engineering Handoff: project/canonical-consolidation-matrix-engineering-handoff-addendum.md
-      - Changelog 0.80.0 — External Validation Batch 01: project/changelog-0.80.0-ba-str-002-eovb-001.md
-      - Changelog 0.81.0 — External Validation Batch 02: project/changelog-0.81.0-ba-str-002-eovb-002.md
-      - Changelog 0.82.0 — External Validation Batch 03: project/changelog-0.82.0-ba-str-002-eovb-003.md
-      - Changelog 0.83.0 — External Validation Batch 04: project/changelog-0.83.0-ba-str-002-eovb-004.md
-      - Changelog 0.84.0 — External Validation Batch 05: project/changelog-0.84.0-ba-str-002-eovb-005.md
-      - Changelog 0.85.0 — External Validation Batch 06: project/changelog-0.85.0-ba-str-002-eovb-006.md
-      - Changelog 0.86.0 — COEM Initiation: project/changelog-0.86.0-ba-str-002-coem-001.md
-      - Changelog 0.87.0 — Trust Cluster COEM: project/changelog-0.87.0-ba-str-002-coem-002.md
-      - Changelog 0.88.0 — Value and Continuity Cluster COEM: project/changelog-0.88.0-ba-str-002-coem-003.md
-      - Changelog 0.89.0 — Resilience Cluster COEM: project/changelog-0.89.0-ba-str-002-coem-004.md
-      - Changelog 0.90.0 — Adaptation Cluster COEM: project/changelog-0.90.0-ba-str-002-coem-005.md
-      - Changelog 0.91.0 — COEM Coverage Completion: project/changelog-0.91.0-ba-str-002-coem-006.md
-      - Changelog 0.79.0 — External Validation Protocol: project/changelog-0.79.0-ba-str-002-eovp.md
-      - Changelog 0.78.0 — Candidate Outcome Register: project/changelog-0.78.0-ba-str-002-cor.md
-      - Changelog 0.77.0 — Fechamento do Economic Model: project/changelog-0.77.0-economic-model-closure.md
-      - Changelog 0.76.0 — GEM-010: project/changelog-0.76.0-gem-010.md
-      - Changelog 0.75.0 — GEM-009: project/changelog-0.75.0-gem-009.md
-      - Changelog 0.74.0 — GEM-008: project/changelog-0.74.0-gem-008.md
-      - Changelog 0.73.0 — GEM-007: project/changelog-0.73.0-gem-007.md
-      - Changelog 0.72.0 — GEM-006: project/changelog-0.72.0-gem-006.md
-      - Changelog 0.71.0 — GEM-005: project/changelog-0.71.0-gem-005.md
-      - Changelog 0.70.0 — GEM-004: project/changelog-0.70.0-gem-004.md
-      - Changelog 0.69.0 — GEM-003: project/changelog-0.69.0-gem-003.md
-      - Changelog 0.68.0 — GEM-002: project/changelog-0.68.0-gem-002.md
-      - Changelog 0.67.0 — GEM-001: project/changelog-0.67.0-gem-001-foundation.md
-      - Changelog 0.66.0 — W0-01 Charter: project/changelog-0.66.0-uic-01-w0-01-charter.md
-      - Changelog 0.65.0 — Wave 0 Planning: project/changelog-0.65.0-uic-01-wave-0-planning.md
-      - Changelog 0.64.0 — Technically Ready: project/changelog-0.64.0-uic-01-technically-ready.md
-      - Changelog 0.63.0 — Technical Contracts: project/changelog-0.63.0-uic-01-contracts-proposed.md
-      - Changelog 0.62.0 — Technical Lifecycle: project/changelog-0.62.0-uic-01-lifecycle-defined.md
-      - Changelog 0.61.0 — UIC-01: project/changelog-0.61.0-uic-01-defined.md
-      - Changelog 0.60.0 — Engineering Handoff: project/changelog-0.60.0-engineering-handoff-initiated.md
-      - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
-      - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
-      - AR-001 — GKR and GOG Consistency Review: project/AR-001-gkr-gog-consistency-and-diagram-review.md
-      - GE2-SYNC-006 — Context Interpretation and Living Context: project/GE2-SYNC-006-context-interpretation-and-living-context-progress.md
-      - GE2-SYNC-005 — Journey Operational Philosophy: project/GE2-SYNC-005-journey-operational-philosophy-and-product-engineering.md
-      - Architecture Engineering Pause: project/CHECKPOINT-ARCHITECTURE-ENGINEERING-PAUSE.md
-      - GE2-SYNC-004 — Context and Architecture Engineering: project/GE2-SYNC-004-context-participant-model-and-architecture-engineering.md
-      - GE2-SYNC-003 — Enterprise Design and GLPA: project/GE2-SYNC-003-enterprise-design-and-layered-product-architecture.md
-      - GE2-SYNC-002 — GKA Conceptual Architecture Progress Sync: project/GE2-SYNC-002-gka-conceptual-architecture-progress.md
-      - GE2-SYNC-001 — Architectural Synchronization Matrix: project/GE2-SYNC-001-architectural-synchronization-matrix.md
-      - GKA Preparation Complete: project/CHECKPOINT-GKA-PREPARATION-COMPLETE.md
-      - GE-2 — GKA Foundation Checkpoint: project/CHECKPOINT-GE2-GKA-FOUNDATION.md
-      - Baseline M1: project/BASELINE-M1.md
-      - Checkpoint M2.0: project/CHECKPOINT-M2.0.md
-      - A2 Baseline B1 — Foundation 5/6: project/A2-BASELINE-B1.md
-      - A2 Baseline B2 — Foundation 6/6: project/A2-BASELINE-B2.md
-      - A2 Baseline B3 — Foundation Frozen: project/A2-BASELINE-B3.md
-      - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
-      - Pipeline de Publicação: project/site-pipeline.md
-      - Roadmap: roadmap.md
-      - Roadmap 11.33.0 — External Validation Batch 01: roadmap-11.33.0.md
-      - Roadmap 11.34.0 — External Validation Batch 02: roadmap-11.34.0.md
-      - Roadmap 11.35.0 — External Validation Batch 03: roadmap-11.35.0.md
-      - Roadmap 11.36.0 — External Validation Batch 04: roadmap-11.36.0.md
-      - Roadmap 11.37.0 — External Validation Batch 05: roadmap-11.37.0.md
-      - Roadmap 11.38.0 — External Validation Coverage: roadmap-11.38.0.md
-      - Roadmap 11.39.0 — COEM Initiated: roadmap-11.39.0.md
-      - Roadmap 11.40.0 — Trust Cluster COEM: roadmap-11.40.0.md
-      - Roadmap 11.41.0 — Value and Continuity Cluster COEM: roadmap-11.41.0.md
-      - Roadmap 11.42.0 — Resilience Cluster COEM: roadmap-11.42.0.md
-      - Roadmap 11.43.0 — Adaptation Cluster COEM: roadmap-11.43.0.md
-      - Roadmap 11.44.0 — COEM Coverage Completion: roadmap-11.44.0.md
-      - Roadmap 11.32.0 — External Validation Protocol: roadmap-11.32.0.md
-      - Roadmap 11.31.0 — Candidate Outcome Register: roadmap-11.31.0.md
-      - Roadmap 11.30.0 — Fechamento do Economic Model: roadmap-11.30.0.md
-      - Roadmap 11.29.0 — GEM-010: roadmap-11.29.0.md
-      - Roadmap 11.28.0 — GEM-009: roadmap-11.28.0.md
-      - Roadmap 11.27.0 — GEM-008: roadmap-11.27.0.md
-      - Roadmap 11.26.0 — GEM-007: roadmap-11.26.0.md
-      - Roadmap 11.25.0 — GEM-006: roadmap-11.25.0.md
-      - Roadmap 11.24.0 — GEM-005: roadmap-11.24.0.md
-      - Roadmap 11.23.0 — GEM-004: roadmap-11.23.0.md
-      - Roadmap 11.22.0 — GEM-003: roadmap-11.22.0.md
-      - Roadmap 11.21.0 — GEM-002: roadmap-11.21.0.md
-      - Roadmap 11.20.0 — GEM-001: roadmap-11.20.0.md
-      - Roadmap 11.19.0 — W0-01 Charter: roadmap-11.19.0.md
-      - Roadmap 11.18.0 — Wave 0 Planned: roadmap-11.18.0.md
-      - Roadmap 11.17.0 — Technically Ready: roadmap-11.17.0.md
-      - Roadmap 11.16.0 — Technical Contracts: roadmap-11.16.0.md
-      - Roadmap 11.15.0 — Technical Lifecycle: roadmap-11.15.0.md
-      - Roadmap 11.14.0 — UIC-01: roadmap-11.14.0.md
-      - Roadmap 11.13.0 — Engineering Handoff: roadmap-11.13.0.md
+      - Auditoria de Estado e Sequência: project/repository-state-sequencing-audit-2026-07-24.md
+      - Plano de Remediação: project/repository-state-navigation-remediation-plan.md
+      - Reordenamento Estratégico Executado: project/strategic-resequencing-journey-to-economic-model.md
+      - Validações Arquiteturais:
+          - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
+          - A2-R01 — Foundation Evidence Matrix: validation/A2-R01-FEM-001-foundation-evidence-matrix.md
+          - A2-R01 — Foundation Canonical Consolidation: validation/A2-R01-CC-001-canonical-consolidation.md
+          - A2-R01 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
+          - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
+          - A2-R01 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
+          - A2-R02 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md
+      - ADRs:
+          - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
+          - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
+          - ADR-003 — Architectural Ownership: adr/ADR-003-architectural-ownership.md
+          - ADR-004 — Architectural Dependency Order: adr/ADR-004-architectural-dependency-order.md
+          - ADR-005 — Architectural Traceability Principle: adr/ADR-005-architectural-traceability-principle.md
+          - ADR-006 — Guivos Knowledge Architecture: adr/ADR-006-guivos-knowledge-architecture.md
+
+  - Histórico Governado Recente:
+      - Knowledge Boards:
+          - 11.45.0 — COD-001: project/knowledge-board-11.45.0.md
+          - 11.46.0 — Repository State Audit: project/knowledge-board-11.46.0.md
+          - 11.47.0 — State and Roadmap Reconciled: project/knowledge-board-11.47.0.md
+          - 11.48.0 — Central Controls Reconciled: project/knowledge-board-11.48.0.md
+          - 11.49.0 — Official Navigation Reconciled: project/knowledge-board-11.49.0.md
+      - Architectural Milestones:
+          - 4.43.0 — M7.2: project/architectural-milestones-4.43.0.md
+          - 4.44.0 — M7.3: project/architectural-milestones-4.44.0.md
+          - 4.45.0 — M7.3.1: project/architectural-milestones-4.45.0.md
+          - 4.46.0 — M7.3.2: project/architectural-milestones-4.46.0.md
+          - 4.47.0 — M7.3.3: project/architectural-milestones-4.47.0.md
+      - Canonical Consolidation Matrix:
+          - 1.65.0 — Repository State Audit: project/canonical-consolidation-matrix-gkr-audit-002-addendum.md
+          - 1.66.0 — R1 and R2: project/canonical-consolidation-matrix-gkr-remediation-r1-r2-addendum.md
+          - 1.67.0 — R3: project/canonical-consolidation-matrix-gkr-remediation-r3-addendum.md
+          - 1.68.0 — R4: project/canonical-consolidation-matrix-gkr-remediation-r4-addendum.md
+      - Changelogs:
+          - 0.93.0 — Repository State Audit: project/changelog-0.93.0-gkr-audit-002.md
+          - 0.94.0 — R1 and R2: project/changelog-0.94.0-gkr-remediation-r1-r2.md
+          - 0.95.0 — R3: project/changelog-0.95.0-gkr-remediation-r3.md
+          - 0.96.0 — R4: project/changelog-0.96.0-gkr-remediation-r4.md
+      - Continuidade:
+          - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
+          - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
+          - Site Pipeline: project/site-pipeline.md
