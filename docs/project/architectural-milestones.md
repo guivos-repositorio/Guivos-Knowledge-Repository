@@ -2,19 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.55.0
+version: 4.56.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.57.0
+  - ROADMAP-11.58.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-005
-  - COD-004
-  - M7.6.1
+  - COD-005
+  - M7.7
 normative: false
 ---
 
@@ -34,29 +34,29 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M6.0–M6.10 | Completed | desenvolvimento e fechamento documental do Economic Model |
 | M7.0–M7.1.5 | Completed | COR, validação externa e COEM concluídos |
 | M7.2 | Completed | ciclo decisório iniciado; `COD-001` registrado |
-| M7.3–M7.3.4 | Completed | auditoria, remediação, navegação e validação mecânica |
-| M7.3.5 | Completed | trabalho arquitetural governado retomado |
-| M7.4 | Completed | segunda decisão humana registrada como `COD-002` |
-| M7.4.1 | Completed | terceira decisão humana submetida para `ECO-CAND-005` |
-| M7.5 | Completed | terceira decisão humana registrada como `COD-003` |
-| M7.5.1 | Completed | quarta decisão humana submetida para `ECO-CAND-002` |
-| M7.6 | Completed | quarta decisão humana registrada como `COD-004` |
-| M7.6.1 | Completed neste incremento | quinta decisão humana submetida para `ECO-CAND-004` |
+| M7.3–M7.3.5 | Completed | auditoria, remediação, validação e retomada governada |
+| M7.4 | Completed | segunda decisão registrada como `COD-002` |
+| M7.4.1 | Completed | terceira decisão submetida |
+| M7.5 | Completed | terceira decisão registrada como `COD-003` |
+| M7.5.1 | Completed | quarta decisão submetida |
+| M7.6 | Completed | quarta decisão registrada como `COD-004` |
+| M7.6.1 | Completed | quinta decisão submetida para `ECO-CAND-004` |
+| M7.7 | Completed neste incremento | quinta decisão registrada como `COD-005` |
 
 ## 3. Marco vigente
 
-### M7.6.1 — Fifth Human Outcome Decision Submitted
+### M7.7 — Fifth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- `COD-001` a `COD-004` preservados;
-- `ECO-CAND-004` submetido individualmente;
-- recomendação `Reject` preservada sem reinterpretação;
-- falha de Outcome Quality e natureza episódica explicitadas;
-- destino arquitetural da experiência preservado;
-- alternativas humanas A, B e C registradas;
-- `COD-005` bloqueado até manifestação;
-- `ECO-CAND-004` preservado em `Under Validation`;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reject` aceita;
+- `COD-005` criado para `ECO-CAND-004`;
+- candidato alterado para `Rejected`;
+- formulação e evidências preservadas;
+- experiência preservada na Jornada e como fonte de evidências;
+- decisões humanas atualizadas para 5 de 18;
+- COR atualizado para 16 `Under Validation`, 1 `Merged` e 1 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -72,7 +72,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Manifestação humana sobre `BA-STR-002-COD-SUB-005`. O próximo marco dependerá da alternativa escolhida e não foi antecipado.
+Preparar a submissão de `ECO-CAND-006 — Conexões relevantes e fortalecedoras` à sexta decisão humana sobre a recomendação `Reformulate`.
 
 ## 6. Regra de transição
 
