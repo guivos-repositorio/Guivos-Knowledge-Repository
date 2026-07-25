@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -22,6 +22,7 @@ related:
   - BA-STR-002-COD-SUB-005
   - BA-STR-002-COD-SUB-006
   - BA-STR-002-COD-SUB-007
+  - BA-STR-002-COD-SUB-008
   - COD-001
   - COD-002
   - COD-003
@@ -29,7 +30,7 @@ related:
   - COD-005
   - COD-006
   - COD-007
-  - M7.9
+  - M7.9.1
 normative: false
 execution_status: in-progress
 ---
@@ -58,7 +59,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 7
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: ECO-CAND-008
 Accepted Reformulate dispositions: 5
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
@@ -216,13 +218,43 @@ A formulação permanece `Under Validation` e deverá retornar aos quatro testes
 
 > Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
 
-### Fundamentação e limites
+Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
 
-A reformulação concentra o candidato em participação efetiva e observável. Capacidade real de uso, respeito, voz, contestabilidade e redução de barreiras materiais evitáveis integram a fronteira da condição.
+## 11. Submissão decisória atual — ECO-CAND-008
 
-Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação não promete acesso universal imediato, preserva requisitos legítimos e deverá retornar aos quatro testes da COEM.
+A submissão `BA-STR-002-COD-SUB-008` apresenta a recomendação `Reformulate`.
 
-## 11. Matriz cumulativa de decisões
+### Formulação originalmente avaliada
+
+> Participantes interagem em condições de transparência, segurança, privacidade, justiça, contestabilidade e respeito à sua autonomia.
+
+### Formulação candidata proposta
+
+**Participação protegida, justa e contestável**
+
+> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
+
+### Fundamentação da recomendação
+
+A formulação original acumula guardrails, controles e percepções heterogêneas. A evidência sustenta uma condição vivida única de participação protegida, justa e contestável, enquanto privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis e meios de sustentação.
+
+### Alternativas
+
+```text
+A — Aceitar Reformulate
+B — Rejeitar Reformulate, com fundamentação
+C — Devolver para nova análise
+```
+
+A alternativa A é recomendada. Enquanto não houver manifestação explícita:
+
+- `COD-008` não existe;
+- decisões humanas permanecem em `7 de 18`;
+- `ECO-CAND-008` permanece `Under Validation`;
+- nenhuma alteração é executada no COR;
+- nenhum código canônico é criado.
+
+## 12. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
@@ -233,7 +265,7 @@ Cadastro, tradução, presença global ou representação nominal não comprovam
 | ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected`; experiência preservada na Jornada |
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| ECO-CAND-008 | Reformulate | — | Pending human decision |
+| ECO-CAND-008 | Reformulate | — | submitted to human decision; awaiting response |
 | BUS-CAND-001 | Reject | — | Pending human decision |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
 | BUS-CAND-003 | Reformulate | — | Pending human decision |
@@ -245,21 +277,23 @@ Cadastro, tradução, presença global ou representação nominal não comprovam
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 12. Gate do incremento
+## 13. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
+| submissão individual de ECO-CAND-008 criada | Pass |
 | recomendação original preservada | Pass |
-| `COD-007` registrado | Pass |
-| formulação original preservada | Pass |
-| formulação candidata registrada | Pass |
-| `ECO-CAND-007` mantido em `Under Validation` | Pass |
-| nova COEM exigida antes de aprovação | Pass |
-| promoção canônica bloqueada | Pass |
+| evidências e contraevidências explicitadas | Pass |
+| formulação candidata proposta | Pass |
+| alternativas humanas A, B e C registradas | Pass |
+| decisão humana inferida automaticamente | Blocked |
+| alteração automática do COR | Blocked |
+| promoção canônica | Blocked |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 13. Próximo passo governado
+## 14. Próximo passo governado
 
-Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
+Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-008`.
+
+Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-008`, preservar a formulação original, registrar a formulação candidata de participação protegida, justa e contestável, manter `ECO-CAND-008` em `Under Validation` e exigir nova aplicação dos quatro testes da COEM.
