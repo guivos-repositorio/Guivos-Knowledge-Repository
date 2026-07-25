@@ -1,22 +1,22 @@
 ---
-id: ROADMAP-11.52.0
-title: Roadmap Arquitetural — COD-002 Registrado
+id: ROADMAP-11.53.0
+title: Roadmap Arquitetural — ECO-CAND-005 Submetido
 status: active
-version: 11.52.0
+version: 11.53.0
 owner: Guivos
-last_updated: 2026-07-24
+last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.51.0
+  - ROADMAP-11.52.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-002
+  - BA-STR-002-COD-SUB-003
   - COD-002
-  - M7.4
+  - M7.4.1
 ---
 
-# Roadmap Arquitetural — COD-002 Registrado
+# Roadmap Arquitetural — ECO-CAND-005 Submetido
 
 ## 1. Autoridade
 
@@ -29,7 +29,7 @@ Roadmaps anteriores permanecem no histórico e não substituem esta sequência.
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.4` |
+| Marco | `M7.4.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
@@ -37,6 +37,8 @@ Roadmaps anteriores permanecem no histórico e não substituem esta sequência.
 | CODR | `2 de 18` decisões |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
+| Submissão atual | ECO-CAND-005 sobre `Merge into ECO-CAND-003` |
+| COD-003 | não criado |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -69,29 +71,47 @@ Estado:
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 2 de 18;
+- submissões aguardando resposta: 1;
 - Outcomes canônicos: 0;
 - `ECO-CAND-001`: `Reformulate` aceito, permanecendo `Under Validation`;
 - `ECO-CAND-003`: `Reformulate` aceito, permanecendo `Under Validation`;
-- `ECO-CAND-005`: próxima decisão individual.
+- `ECO-CAND-005`: submetido à terceira decisão individual.
 
-## 5. COD-002 — Agência efetiva e situada
+## 5. Submissão atual — ECO-CAND-005
 
-A formulação candidata aceita para futura reavaliação é:
+A COEM recomenda `Merge into ECO-CAND-003` porque continuidade adaptativa apresenta forte sobreposição com a dimensão temporal da agência efetiva e situada.
 
-> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
+O Fundador deverá escolher:
 
-A decisão não cria Outcome canônico, não altera o estado do COR e não executa fusão com `ECO-CAND-005`.
+```text
+A — Aceitar Merge into ECO-CAND-003
+B — Rejeitar a fusão, com fundamentação
+C — Devolver para nova análise
+```
 
-## 6. Sequência restante de BA-STR-002
+A alternativa A é recomendada. Até a manifestação, `COD-003` não existe, `ECO-CAND-005` permanece `Under Validation` e o COR não é alterado.
 
-1. submeter `ECO-CAND-005` à decisão humana sobre `Merge into ECO-CAND-003`;
-2. concluir as quinze decisões posteriores;
-3. reavaliar as formulações `Reformulate` pelos quatro testes;
+## 6. Efeito proposto da alternativa A
+
+Caso autorizada em decisão posterior:
+
+1. `ECO-CAND-005` será registrado como `Merged`, com alvo `ECO-CAND-003`;
+2. a formulação e as evidências originais serão preservadas integralmente;
+3. a dimensão de continuidade adaptativa será incorporada à formulação candidata de Agência efetiva e situada;
+4. `ECO-CAND-003` permanecerá `Under Validation`;
+5. a formulação combinada retornará aos quatro testes da COEM;
+6. nenhum código canônico será criado nesse ato.
+
+## 7. Sequência restante de BA-STR-002
+
+1. registrar a decisão humana sobre `ECO-CAND-005`;
+2. concluir as quinze decisões posteriores se a submissão não gerar candidato adicional;
+3. reavaliar as formulações `Reformulate` e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
 6. construir a matriz canônica de sustentação.
 
-## 7. Business Capabilities
+## 8. Business Capabilities
 
 Após a conclusão governada dos Outcomes:
 
@@ -100,7 +120,7 @@ Após a conclusão governada dos Outcomes:
 3. confirmar dependências, ownership e fronteiras;
 4. rebaselinear o portfólio especializado.
 
-## 8. Portfólio e frentes posteriores
+## 9. Portfólio e frentes posteriores
 
 A ordem histórica de referência permanece:
 
@@ -115,10 +135,10 @@ A ordem histórica de referência permanece:
 
 Essa ordem não autoriza início. Product Engineering somente poderá ser retomado por decisão explícita posterior.
 
-## 9. Market Validation
+## 10. Market Validation
 
 Permanece como trilha operacional paralela e pode avançar por incremento próprio, sem alterar automaticamente Outcomes ou Economic Model.
 
-## 10. Próximo ponto exato
+## 11. Próximo ponto exato
 
-Preparar e submeter `ECO-CAND-005` à decisão humana individual. Nenhuma fusão será executada antes de manifestação explícita do Fundador.
+Receber e registrar a manifestação humana sobre `BA-STR-002-COD-SUB-003`. Nenhuma fusão será executada antes desse ato.
