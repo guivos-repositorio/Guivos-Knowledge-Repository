@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.16.0
- title: Changelog 1.16.0 — BUS-CAND-003 Decision Submission
+title: Changelog 1.16.0 — BUS-CAND-003 Decision Submission
 status: historical
 version: 1.16.0
 owner: Guivos
