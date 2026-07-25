@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -30,7 +30,8 @@ related:
   - COD-005
   - COD-006
   - COD-007
-  - M7.9.1
+  - COD-008
+  - M7.10
 normative: false
 execution_status: in-progress
 ---
@@ -58,10 +59,9 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 7
-Decision submissions awaiting human response: 1
-Current submission: ECO-CAND-008
-Accepted Reformulate dispositions: 5
+Human decisions recorded: 8
+Decision submissions awaiting human response: 0
+Accepted Reformulate dispositions: 6
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
 Candidate state changes: 2
@@ -220,39 +220,33 @@ A formulação permanece `Under Validation` e deverá retornar aos quatro testes
 
 Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
 
-## 11. Submissão decisória atual — ECO-CAND-008
+## 11. COD-008 — ECO-CAND-008
 
-A submissão `BA-STR-002-COD-SUB-008` apresenta a recomendação `Reformulate`.
+| Campo | Registro |
+|---|---|
+| Nome original | Participação confiável e protegida |
+| Nome revisado | Participação protegida, justa e contestável |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
 ### Formulação originalmente avaliada
 
 > Participantes interagem em condições de transparência, segurança, privacidade, justiça, contestabilidade e respeito à sua autonomia.
 
-### Formulação candidata proposta
-
-**Participação protegida, justa e contestável**
+### Formulação candidata revisada
 
 > Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
 
-### Fundamentação da recomendação
+### Fundamentação e limites
 
-A formulação original acumula guardrails, controles e percepções heterogêneas. A evidência sustenta uma condição vivida única de participação protegida, justa e contestável, enquanto privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis e meios de sustentação.
+A reformulação concentra o candidato em uma condição ecossistêmica vivida e observável. Proteção, justiça, contestabilidade, redução de vulnerabilidades evitáveis, compreensão, questionamento e reparação integram sua fronteira.
 
-### Alternativas
-
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
-
-A alternativa A é recomendada. Enquanto não houver manifestação explícita:
-
-- `COD-008` não existe;
-- decisões humanas permanecem em `7 de 18`;
-- `ECO-CAND-008` permanece `Under Validation`;
-- nenhuma alteração é executada no COR;
-- nenhum código canônico é criado.
+Privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis. Proteção absoluta é impossível; conformidade, ausência de incidentes ou confiança declarada não constituem evidência suficiente. A formulação deverá retornar aos quatro testes da COEM.
 
 ## 12. Matriz cumulativa de decisões
 
@@ -265,7 +259,7 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 | ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected`; experiência preservada na Jornada |
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| ECO-CAND-008 | Reformulate | — | submitted to human decision; awaiting response |
+| ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | BUS-CAND-001 | Reject | — | Pending human decision |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
 | BUS-CAND-003 | Reformulate | — | Pending human decision |
@@ -281,19 +275,17 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 
 | Critério | Resultado |
 |---|---|
-| submissão individual de ECO-CAND-008 criada | Pass |
+| manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| evidências e contraevidências explicitadas | Pass |
-| formulação candidata proposta | Pass |
-| alternativas humanas A, B e C registradas | Pass |
-| decisão humana inferida automaticamente | Blocked |
-| alteração automática do COR | Blocked |
-| promoção canônica | Blocked |
+| `COD-008` registrado | Pass |
+| formulação original preservada | Pass |
+| formulação candidata registrada | Pass |
+| `ECO-CAND-008` mantido em `Under Validation` | Pass |
+| nova COEM exigida antes de aprovação | Pass |
+| promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 14. Próximo passo governado
 
-Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-008`.
-
-Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-008`, preservar a formulação original, registrar a formulação candidata de participação protegida, justa e contestável, manter `ECO-CAND-008` em `Under Validation` e exigir nova aplicação dos quatro testes da COEM.
+Preparar e submeter `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.
