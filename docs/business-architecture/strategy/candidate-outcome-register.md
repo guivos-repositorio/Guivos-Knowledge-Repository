@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.19.0
+version: 0.20.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -25,8 +25,9 @@ related:
   - COD-005
   - COD-006
   - COD-007
+  - COD-008
   - GEM-CLOSURE-REVIEW-001
-  - M7.9
+  - M7.10
 normative: false
 ---
 
@@ -52,7 +53,7 @@ Merged: 1
 Rejected: 1
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 7 of 18
+Human decisions: 8 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -168,16 +169,18 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | Observações | Participação efetiva exige capacidade real de uso, respeito, voz, contestabilidade e redução de barreiras materiais evitáveis. Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. |
 | Questão de validação | A formulação revisada possui unidade e observabilidade próprias sem acumular direitos, guardrails constitucionais ou capacidades de acessibilidade como sub-Outcomes? |
 
-### ECO-CAND-008 — Participação confiável e protegida
+### ECO-CAND-008 — Participação protegida, justa e contestável
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | Participantes interagem em condições de transparência, segurança, privacidade, justiça, contestabilidade e respeito à sua autonomia. |
+| Definição originalmente avaliada | Participantes interagem em condições de transparência, segurança, privacidade, justiça, contestabilidade e respeito à sua autonomia. |
+| Formulação candidata vigente | Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente. |
 | Origem | GEB-P01-F05; GEB-P01-F06; GEM-001; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
 | Status | Under Validation |
-| Observações | Pode representar conjunto de guardrails obrigatórios, e não Outcome autônomo. |
-| Questão de validação | A degradação dessa condição exige revisão estratégica ou apenas remediação de governança e operação? |
+| Decisão | `COD-008 — Aceitar Reformulate` |
+| Observações | Proteção, justiça e contestabilidade definem a condição vivida. Privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis; proteção absoluta é impossível. |
+| Questão de validação | A formulação revisada possui unidade e observabilidade próprias sem converter guardrails, controles ou confiança percebida em sub-Outcomes? |
 
 ## 6. Candidate Business Outcomes
 
@@ -310,8 +313,8 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 |---|---|---|
 | agência e evolução | ECO-CAND-001, 003 e 005 | ECO-CAND-005 fundido em ECO-CAND-003; formulações restantes exigem nova COEM |
 | oportunidade e experiência | ECO-CAND-002 e 004 | ECO-CAND-004 rejeitado; experiência preservada na Jornada |
-| confiança | ECO-CAND-006, 008 e BUS-CAND-004 | ECO-CAND-006 reformulado por `COD-006`; ECO-CAND-008 e BUS-CAND-004 pendentes |
-| inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | ECO-CAND-007 reformulado por `COD-007`; fronteiras exigem nova COEM |
+| confiança | ECO-CAND-006, 008 e BUS-CAND-004 | ECO-CAND-006 e ECO-CAND-008 reformulados; BUS-CAND-004 pendente |
+| inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | ECO-CAND-007 e ECO-CAND-008 reformulados; fronteiras exigem nova COEM |
 | valor e continuidade | BUS-CAND-003, 005 e 010 | decisão humana pendente |
 | adaptação | BUS-CAND-002, 007 e 009 | decisão humana pendente |
 | resiliência | BUS-CAND-005 e 006 | decisão humana pendente |
@@ -320,7 +323,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as onze disposições restantes;
+1. decisão humana individual para as dez disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -329,14 +332,14 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-007` registrado | Pass |
+| `COD-008` registrado | Pass |
 | formulação original preservada | Pass |
 | formulação candidata registrada | Pass |
-| `ECO-CAND-007` mantido em `Under Validation` | Pass |
+| `ECO-CAND-008` mantido em `Under Validation` | Pass |
 | distribuição 16/1/1 preservada | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 11. Próximo passo governado
 
-Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
+Preparar e submeter `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.
