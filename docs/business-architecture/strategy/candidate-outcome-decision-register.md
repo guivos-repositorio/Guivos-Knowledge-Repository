@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.12.0
+version: 0.13.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -28,7 +28,8 @@ related:
   - COD-004
   - COD-005
   - COD-006
-  - M7.8.1
+  - COD-007
+  - M7.9
 normative: false
 execution_status: in-progress
 ---
@@ -56,10 +57,9 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 6
-Decision submissions awaiting human response: 1
-Current submission: ECO-CAND-007
-Accepted Reformulate dispositions: 4
+Human decisions recorded: 7
+Decision submissions awaiting human response: 0
+Accepted Reformulate dispositions: 5
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
 Candidate state changes: 2
@@ -194,39 +194,33 @@ Experiência permanece na arquitetura da Jornada, como realização de valor em 
 
 A formulação permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
 
-## 10. Submissão decisória atual — ECO-CAND-007
+## 10. COD-007 — ECO-CAND-007
 
-A submissão `BA-STR-002-COD-SUB-007` apresenta a recomendação `Reformulate`.
+| Campo | Registro |
+|---|---|
+| Nome original | Participação inclusiva e digna |
+| Nome revisado | Participação inclusiva, digna e efetiva |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
 ### Formulação originalmente avaliada
 
 > Participantes de diferentes culturas, crenças, países e contextos conseguem participar do ecossistema com dignidade, acolhimento e acesso a valor essencial.
 
-### Formulação candidata proposta
-
-**Participação inclusiva, digna e efetiva**
+### Formulação candidata revisada
 
 > Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
 
-### Fundamentação da recomendação
+### Fundamentação e limites
 
-A formulação original combina diversidade, direitos, acolhimento, acesso e valor essencial. A evidência exige participação efetiva, remoção de barreiras materiais evitáveis, capacidade real de uso, respeito, voz e contestabilidade, sem confundir inclusão com cadastro, tradução, presença global ou representação nominal.
+A reformulação concentra o candidato em participação efetiva e observável. Capacidade real de uso, respeito, voz, contestabilidade e redução de barreiras materiais evitáveis integram a fronteira da condição.
 
-### Alternativas
-
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
-
-A alternativa A é recomendada. Enquanto não houver manifestação explícita:
-
-- `COD-007` não existe;
-- decisões humanas permanecem em `6 de 18`;
-- `ECO-CAND-007` permanece `Under Validation`;
-- nenhuma alteração é executada no COR;
-- nenhum código canônico é criado.
+Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação não promete acesso universal imediato, preserva requisitos legítimos e deverá retornar aos quatro testes da COEM.
 
 ## 11. Matriz cumulativa de decisões
 
@@ -238,7 +232,7 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 | ECO-CAND-002 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected`; experiência preservada na Jornada |
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| ECO-CAND-007 | Reformulate | — | submitted to human decision; awaiting response |
+| ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-008 | Reformulate | — | Pending human decision |
 | BUS-CAND-001 | Reject | — | Pending human decision |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
@@ -255,19 +249,17 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 
 | Critério | Resultado |
 |---|---|
-| submissão individual de ECO-CAND-007 criada | Pass |
+| manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| evidências e contraevidências explicitadas | Pass |
-| formulação candidata proposta | Pass |
-| alternativas humanas A, B e C registradas | Pass |
-| decisão humana inferida automaticamente | Blocked |
-| alteração automática do COR | Blocked |
-| promoção canônica | Blocked |
+| `COD-007` registrado | Pass |
+| formulação original preservada | Pass |
+| formulação candidata registrada | Pass |
+| `ECO-CAND-007` mantido em `Under Validation` | Pass |
+| nova COEM exigida antes de aprovação | Pass |
+| promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 13. Próximo passo governado
 
-Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-007`.
-
-Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-007`, preservar a formulação original, registrar a formulação candidata de participação inclusiva, digna e efetiva, manter `ECO-CAND-007` em `Under Validation` e exigir nova aplicação dos quatro testes da COEM.
+Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
