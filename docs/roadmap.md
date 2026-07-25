@@ -1,17 +1,17 @@
 ---
-id: ROADMAP-11.48.0
+id: ROADMAP-11.49.0
 title: Roadmap Arquitetural — Sequência Global Reconciliada
 status: active
-version: 11.48.0
+version: 11.49.0
 owner: Guivos
 last_updated: 2026-07-24
 supersedes_partial:
-  - ROADMAP-11.47.0
+  - ROADMAP-11.48.0
 related:
   - GKR-STATE-001
   - GKR-AUD-002
   - GKR-REMEDIATION-002
-  - M7.3.2
+  - M7.3.3
 ---
 
 # Roadmap Arquitetural — Sequência Global Reconciliada
@@ -27,15 +27,16 @@ Roadmaps e overlays anteriores permanecem no histórico, mas não substituem est
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.3.2` |
+| Marco | `M7.3.3 — Official Navigation Reconciled` |
 | Frente de controle | remediação documental do GKR |
 | R1 — Precedência e estado global | concluído |
 | R2 — Roadmap e backlog global | concluído |
-| R3 — Controles centrais | concluído neste incremento |
-| R4 — Navegação | próximo incremento |
-| R5 — Validação mecânica | pendente |
+| R3 — Controles centrais | concluído |
+| R4 — Navegação | concluído neste incremento |
+| R5 — Validação mecânica | próximo incremento |
 | R6 — Retomada governada | bloqueado até resultado `PASS` |
-| Achados Major abertos | 1 — navegação oficial incompleta |
+| Achados Critical conhecidos | 0 |
+| Achados Major conhecidos | 0; resultado sujeito à confirmação mecânica em R5 |
 | Frente arquitetural preservada | `A2-R03 — Business Architecture Review` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -70,12 +71,12 @@ A auditoria `GKR-AUD-002` confirmou a integridade da rota e identificou divergê
 R1 — precedência e estado global — concluído
 → R2 — roadmap e backlog global — concluído
 → R3 — controles centrais — concluído
-→ R4 — navegação
+→ R4 — navegação — concluído
 → R5 — validação mecânica
 → R6 — retomada governada
 ```
 
-R3 sincronizou Knowledge Board, Architectural Milestones, Matriz de Consolidação Canônica e o registro de reordenamento estratégico.
+R4 reorganizou o menu oficial para apresentar autoridades vigentes e registros recentes. Documentos históricos continuam construídos, pesquisáveis e acessíveis, porém não concorrem no menu com o estado atual.
 
 ## 5. Próxima frente arquitetural retomada
 
@@ -124,7 +125,7 @@ Guivos Journey permanece o produto arquitetural já concluído e não integra no
 
 ## 8. Commercial Model
 
-Será desenvolvido após o rebaseline mínimo do portfólio e deverá transformar autoridades econômicas e de negócio em decisões comerciais governadas, sem confundir família de receita com oferta, arquétipo de plano com preço, parceiro elegível com contrato ou cenário financeiro com previsão oficial.
+Será desenvolvido após o rebaseline mínimo do portfólio e deverá transformar autoridades econômicas e de negócio em decisões comerciais governadas.
 
 ## 9. Go-to-Market
 
@@ -154,4 +155,4 @@ Essa trilha fornece evidências para produtos, Economic Model, Commercial Model 
 
 ## 12. Próximo ponto exato
 
-Executar `R4 — Navegação`, atualizando `mkdocs.yml` e tornando os ativos vigentes acessíveis. Em seguida, executar R5 e somente retomar `ECO-CAND-003` se o parecer for `PASS`.
+Executar `R5 — Validação mecânica`. Somente retomar `ECO-CAND-003` se o parecer final da remediação for `PASS`.
