@@ -2,17 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.50.0
+version: 4.52.0
 owner: Guivos
-last_updated: 2026-07-24
+last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.52.0
+  - ROADMAP-11.54.0
   - GKR-R6-RESUMPTION-001
+  - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - COD-002
-  - M7.4
+  - BA-STR-002-COD-SUB-003
+  - COD-003
+  - M7.5
 normative: false
 ---
 
@@ -34,20 +36,24 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.2 | Completed | ciclo decisório iniciado; `COD-001` registrado |
 | M7.3–M7.3.4 | Completed | auditoria, remediação, navegação e validação mecânica |
 | M7.3.5 | Completed | trabalho arquitetural governado retomado |
-| M7.4 | Completed neste incremento | segunda decisão humana registrada como `COD-002` |
+| M7.4 | Completed | segunda decisão humana registrada como `COD-002` |
+| M7.4.1 | Completed | terceira decisão humana submetida para `ECO-CAND-005` |
+| M7.5 | Completed neste incremento | terceira decisão humana registrada como `COD-003` |
 
 ## 3. Marco vigente
 
-### M7.4 — Second Human Outcome Decision Recorded
+### M7.5 — Third Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
 - manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Reformulate` aceita;
-- `COD-002` criado para `ECO-CAND-003`;
-- formulação candidata **Agência efetiva e situada** registrada;
+- alternativa `A — Aceitar Merge into ECO-CAND-003` aceita;
+- `COD-003` criado para `ECO-CAND-005`;
+- COR atualizado para 17 candidatos `Under Validation` e 1 `Merged`;
+- `ECO-CAND-005` preservado como registro rastreável, com alvo `ECO-CAND-003`;
+- continuidade adaptativa incorporada à formulação candidata de Agência efetiva e situada;
 - `ECO-CAND-003` preservado em `Under Validation`;
-- decisões humanas atualizadas para 2 de 18;
+- decisões humanas atualizadas para 3 de 18;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -63,8 +69,8 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Submeter `ECO-CAND-005` à decisão humana sobre `Merge into ECO-CAND-003`. O próximo marco dependerá dessa manifestação e não é antecipado.
+Preparar a submissão de `ECO-CAND-002 — Acesso a possibilidades relevantes` à quarta decisão humana sobre a recomendação `Reformulate`.
 
 ## 6. Regra de transição
 
-Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Recomendações, submissões e decisões registradas permanecem atos separados.
+Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Recomendações, submissões, decisões, mudanças no COR e consolidação canônica permanecem atos separados.

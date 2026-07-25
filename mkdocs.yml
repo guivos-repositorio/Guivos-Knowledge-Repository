@@ -175,7 +175,8 @@ nav:
           - Validation Batch 06 — Coverage Completion: business-architecture/strategy/outcome-validation-batch-06-coverage-completion.md
           - Candidate Outcome Evaluation Matrix: business-architecture/strategy/candidate-outcome-evaluation-matrix.md
           - Candidate Outcome Decision Register: business-architecture/strategy/candidate-outcome-decision-register.md
-          - Decision Submission — ECO-CAND-003: business-architecture/strategy/candidate-outcome-decision-submission-eco-cand-003.md
+          - Decision Resolution — ECO-CAND-003: business-architecture/strategy/candidate-outcome-decision-submission-eco-cand-003.md
+          - Decision Resolution — ECO-CAND-005: business-architecture/strategy/candidate-outcome-decision-submission-eco-cand-005.md
 
   - Governança e Validação:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
@@ -211,6 +212,9 @@ nav:
           - 11.49.0 — Official Navigation Reconciled: project/knowledge-board-11.49.0.md
           - 11.50.0 — Mechanical Validation Passed: project/knowledge-board-11.50.0.md
           - 11.51.0 — Governed Resumption: project/knowledge-board-11.51.0.md
+          - 11.52.0 — COD-002: project/knowledge-board-11.52.0.md
+          - 11.53.0 — ECO-CAND-005 Submitted: project/knowledge-board-11.53.0.md
+          - 11.54.0 — COD-003: project/knowledge-board-11.54.0.md
       - Architectural Milestones:
           - 4.43.0 — M7.2: project/architectural-milestones-4.43.0.md
           - 4.44.0 — M7.3: project/architectural-milestones-4.44.0.md
@@ -219,6 +223,9 @@ nav:
           - 4.47.0 — M7.3.3: project/architectural-milestones-4.47.0.md
           - 4.48.0 — M7.3.4: project/architectural-milestones-4.48.0.md
           - 4.49.0 — M7.3.5: project/architectural-milestones-4.49.0.md
+          - 4.50.0 — M7.4: project/architectural-milestones-4.50.0.md
+          - 4.51.0 — M7.4.1: project/architectural-milestones-4.51.0.md
+          - 4.52.0 — M7.5: project/architectural-milestones-4.52.0.md
       - Canonical Consolidation Matrix:
           - 1.65.0 — Repository State Audit: project/canonical-consolidation-matrix-gkr-audit-002-addendum.md
           - 1.66.0 — R1 and R2: project/canonical-consolidation-matrix-gkr-remediation-r1-r2-addendum.md
@@ -226,6 +233,9 @@ nav:
           - 1.68.0 — R4: project/canonical-consolidation-matrix-gkr-remediation-r4-addendum.md
           - 1.69.0 — R5: project/canonical-consolidation-matrix-gkr-remediation-r5-addendum.md
           - 1.70.0 — R6: project/canonical-consolidation-matrix-gkr-r6-addendum.md
+          - 1.71.0 — COD-002: project/canonical-consolidation-matrix-cod-002-addendum.md
+          - 1.72.0 — ECO-CAND-005 Submission: project/canonical-consolidation-matrix-cod-003-submission-addendum.md
+          - 1.73.0 — COD-003: project/canonical-consolidation-matrix-cod-003-addendum.md
       - Changelogs:
           - 0.93.0 — Repository State Audit: project/changelog-0.93.0-gkr-audit-002.md
           - 0.94.0 — R1 and R2: project/changelog-0.94.0-gkr-remediation-r1-r2.md
@@ -233,6 +243,9 @@ nav:
           - 0.96.0 — R4: project/changelog-0.96.0-gkr-remediation-r4.md
           - 0.97.0 — R5: project/changelog-0.97.0-gkr-remediation-r5.md
           - 0.98.0 — R6: project/changelog-0.98.0-gkr-r6-governed-resumption.md
+          - 0.99.0 — COD-002: project/changelog-0.99.0-cod-002.md
+          - 1.0.0 — ECO-CAND-005 Submission: project/changelog-1.0.0-cod-003-submission.md
+          - 1.1.0 — COD-003: project/changelog-1.1.0-cod-003.md
       - Continuidade:
           - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
           - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
