@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -26,8 +26,9 @@ related:
   - COD-006
   - COD-007
   - COD-008
+  - COD-009
   - GEM-CLOSURE-REVIEW-001
-  - M7.10
+  - M7.11
 normative: false
 ---
 
@@ -48,12 +49,12 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 16
+Under Validation: 15
 Merged: 1
-Rejected: 1
+Rejected: 2
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 8 of 18
+Human decisions: 9 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -188,12 +189,14 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes. |
+| Definição original preservada | A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes. |
 | Origem | BA-FND-001; BA-STR-001; GEB-P01-F03; GEB-P01-F05 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Under Validation |
-| Observações | Pode ser princípio de governança superior, e não Outcome empresarial. |
-| Questão de validação | Sua degradação constitui resultado empresarial observável ou não conformidade constitucional? |
+| Status | Rejected |
+| Decisão | `COD-009 — Aceitar Reject` |
+| Destino arquitetural preservado | princípio constitucional permanente; obrigação de governança e accountability; critério de admissibilidade; prevenção e correção de mission drift |
+| Observações | A rejeição corrige somente a classificação como Business Outcome autônomo e preserva integralmente a autoridade do propósito e dos princípios permanentes. |
+| Questão de validação | Resolvida quanto à candidatura autônoma. |
 
 ### BUS-CAND-002 — Relevância contínua das respostas
 
@@ -296,15 +299,15 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 ## 7. Hipóteses de relação, sem aprovação
 
-| Candidate Ecosystem Outcome | Business candidates potencialmente sustentadores |
+| Candidate Ecosystem Outcome | Business candidates ou autoridades potencialmente sustentadoras |
 |---|---|
-| ECO-CAND-001 | BUS-CAND-001, BUS-CAND-002, BUS-CAND-007 |
+| ECO-CAND-001 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-002; BUS-CAND-007 |
 | ECO-CAND-002 | BUS-CAND-002, BUS-CAND-003, BUS-CAND-008 |
-| ECO-CAND-003 | BUS-CAND-001, BUS-CAND-003, BUS-CAND-004, BUS-CAND-007, BUS-CAND-010 |
+| ECO-CAND-003 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-003; BUS-CAND-004; BUS-CAND-007; BUS-CAND-010 |
 | ECO-CAND-004 — Rejected | relação histórica preservada: BUS-CAND-002, BUS-CAND-003, BUS-CAND-005 |
 | ECO-CAND-005 — Merged into ECO-CAND-003 | relação histórica preservada: BUS-CAND-003, BUS-CAND-007, BUS-CAND-010 |
 | ECO-CAND-006 | BUS-CAND-004, BUS-CAND-008 |
-| ECO-CAND-007 | BUS-CAND-001, BUS-CAND-005, BUS-CAND-009, BUS-CAND-010 |
+| ECO-CAND-007 | BUS-CAND-001 — Rejected, relação constitucional preservada; BUS-CAND-005; BUS-CAND-009; BUS-CAND-010 |
 | ECO-CAND-008 | BUS-CAND-003, BUS-CAND-004, BUS-CAND-006 |
 
 ## 8. Sobreposições e decisões
@@ -315,6 +318,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | oportunidade e experiência | ECO-CAND-002 e 004 | ECO-CAND-004 rejeitado; experiência preservada na Jornada |
 | confiança | ECO-CAND-006, 008 e BUS-CAND-004 | ECO-CAND-006 e ECO-CAND-008 reformulados; BUS-CAND-004 pendente |
 | inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | ECO-CAND-007 e ECO-CAND-008 reformulados; fronteiras exigem nova COEM |
+| propósito | BUS-CAND-001 | rejeitado como Outcome por `COD-009`; autoridade constitucional e obrigação de governança preservadas |
 | valor e continuidade | BUS-CAND-003, 005 e 010 | decisão humana pendente |
 | adaptação | BUS-CAND-002, 007 e 009 | decisão humana pendente |
 | resiliência | BUS-CAND-005 e 006 | decisão humana pendente |
@@ -323,7 +327,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as dez disposições restantes;
+1. decisão humana individual para as nove disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -332,14 +336,15 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-008` registrado | Pass |
-| formulação original preservada | Pass |
-| formulação candidata registrada | Pass |
-| `ECO-CAND-008` mantido em `Under Validation` | Pass |
-| distribuição 16/1/1 preservada | Pass |
+| `COD-009` registrado | Pass |
+| formulação e evidências preservadas | Pass |
+| `BUS-CAND-001` movido para `Rejected` | Pass |
+| destino constitucional e de governança preservado | Pass |
+| autoridade do propósito preservada | Pass |
+| distribuição 15/1/2 registrada | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 11. Próximo passo governado
 
-Preparar e submeter `BUS-CAND-001 — Aderência permanente ao propósito` à nona decisão humana individual sobre a recomendação `Reject`.
+Preparar e submeter `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana individual sobre a recomendação `Merge into BUS-CAND-003`.
