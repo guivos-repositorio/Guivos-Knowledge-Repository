@@ -1,22 +1,23 @@
 ---
-id: ROADMAP-11.73.0
-title: Roadmap Arquitetural — BUS-CAND-005 Decision Submission
+id: ROADMAP-11.74.0
+title: Roadmap Arquitetural — COD-013 Registrado
 status: active
-version: 11.73.0
+version: 11.74.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.72.0
+  - ROADMAP-11.73.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-013
-  - M7.14.1
+  - COD-013
+  - M7.15
 ---
 
-# Roadmap Arquitetural — BUS-CAND-005 Decision Submission
+# Roadmap Arquitetural — COD-013 Registrado
 
 ## 1. Autoridade
 
@@ -27,15 +28,14 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.14.1` |
+| Marco | `M7.15` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
-| CODR | `12 de 18` decisões; 1 submissão aberta |
-| Submissão vigente | `BUS-CAND-005 — Reformulate` |
-| Reformulate aceitos | 8 |
+| CODR | `13 de 18` decisões; 0 submissões abertas |
+| Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
 | Reject aceitos | 2 |
 | Outcomes canônicos | `0` |
@@ -67,30 +67,31 @@ R1 — precedência e estado global — concluído
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 12 de 18;
-- submissões abertas: 1;
+- decisões humanas: 13 de 18;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
 - `ECO-CAND-004` e `BUS-CAND-001`: `Rejected`;
 - `BUS-CAND-003`: `Reformulate` aceito por `COD-011`;
 - `BUS-CAND-004`: `Reformulate` aceito por `COD-012`;
-- `BUS-CAND-005`: submetido à decisão sobre `Reformulate`;
+- `BUS-CAND-005`: `Reformulate` aceito por `COD-013`;
 - Outcomes canônicos: 0.
 
-## 5. Submissão de BUS-CAND-005
+## 5. Resultado de COD-013
 
-A COEM recomenda `Reformulate`.
+A recomendação `Reformulate` foi aceita para `BUS-CAND-005`.
 
-Formulação candidata revisada:
+**Continuidade econômica sustentável**
 
 > A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
 
-A formulação preserva continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação como dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado até decisão individual posterior.
+`BUS-CAND-005` permanece `Under Validation`. Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado até decisão individual posterior.
+
+A decisão não equivale a `Approve`, não cria código canônico e exige nova aplicação dos quatro testes da COEM.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. receber a decisão humana sobre `BUS-CAND-005`;
-2. concluir as cinco decisões posteriores;
+1. submeter `BUS-CAND-006` à decisão humana sobre `Reject`;
+2. concluir as quatro decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -126,4 +127,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-013`. Nenhuma decisão será inferida automaticamente.
+Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
