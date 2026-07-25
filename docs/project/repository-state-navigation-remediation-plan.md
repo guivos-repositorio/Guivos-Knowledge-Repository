@@ -2,7 +2,7 @@
 id: GKR-REMEDIATION-002
 title: Repository State and Navigation Remediation Plan
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-24
 parent: GKR-AUD-002
@@ -13,7 +13,7 @@ related:
   - GKR-STATE-001
   - BA-STR-002-CODR-001
   - GEM-CLOSURE-REVIEW-001
-  - ROADMAP-11.48.0
+  - ROADMAP-11.49.0
 normative: false
 ---
 
@@ -29,27 +29,27 @@ Eliminar as não conformidades abertas pelo `GKR-AUD-002`, restabelecer uma úni
 |---|---|---|
 | R1 — Precedência e estado global | concluído | `GKR-STATE-001`, README, Home e GEA reconciliados |
 | R2 — Roadmap e backlog global | concluído | Roadmap central reestruturado e backlog rebaselined |
-| R3 — Controles centrais | concluído neste incremento | Board, Milestones, Matrix e reordenamento sincronizados |
-| R4 — Navegação | próximo | `mkdocs.yml` e ativos recentes acessíveis |
-| R5 — Validação mecânica | pendente | IDs, links, front matter, diff e build estrito |
+| R3 — Controles centrais | concluído | Board, Milestones, Matrix e reordenamento sincronizados |
+| R4 — Navegação | concluído neste incremento | autoridades vigentes e registros recentes acessíveis no site oficial |
+| R5 — Validação mecânica | próximo | IDs, links, front matter, diff e build estrito |
 | R6 — Retomada governada | bloqueado | retorno ao CODR após resultado `PASS` |
 
 ## 3. Situação das não conformidades
 
-| ID | Estado após R3 |
+| ID | Estado após R4 |
 |---|---|
 | NC-MAJ-01 — Roadmap central desatualizado | corrigida em R2 |
 | NC-MAJ-02 — Knowledge Board central desatualizado | corrigida em R3 |
 | NC-MAJ-03 — Architectural Milestones central desatualizado | corrigida em R3 |
 | NC-MAJ-04 — Matriz Canônica central desatualizada | corrigida em R3 |
 | NC-MAJ-05 — README e Home desatualizados | corrigida em R1 |
-| NC-MAJ-06 — navegação incompleta | aberta para R4 |
+| NC-MAJ-06 — navegação incompleta | corrigida documentalmente em R4; confirmação mecânica pendente em R5 |
 | NC-MAJ-07 — precedência documental ausente | corrigida em R1 |
 | NC-MIN-01 — reordenamento ainda `proposed` | corrigida em R3 |
 | NC-MIN-02 — GEA anterior ao CODR | corrigida em R1 |
-| NC-MIN-03 — duplicação de estado | corrigida progressivamente em R1–R3 |
+| NC-MIN-03 — duplicação de estado | corrigida progressivamente em R1–R4 |
 
-Não há achado Critical aberto. Um achado Major permanece aberto antes de R5.
+Não há achado Critical ou Major conhecido após R4. R5 deverá confirmar ou reabrir achados com base em evidência mecânica.
 
 ## 4. Princípios de correção
 
@@ -67,7 +67,7 @@ Não há achado Critical aberto. Um achado Major permanece aberto antes de R5.
 
 O [GKR-STATE-001 — Current State Register](current-state-register.md) declara era, marco, frente estratégica, frente de controle, domínios concluídos, pausas, trilhas paralelas e próximo incremento.
 
-README, Home, Roadmap, Board e GEA devem consumir esse registro e evitar estados independentes.
+README, Home, Roadmap, Board, GEA e navegação devem consumir esse registro e evitar estados independentes.
 
 ### 5.2 Separação entre atual e histórico
 
@@ -75,7 +75,8 @@ README, Home, Roadmap, Board e GEA devem consumir esse registro e evitar estados
 |---|---|
 | autoridade normativa do domínio | preserva definição, decisão e conteúdo arquitetural |
 | Current State Register | governa estado transversal e próximo incremento |
-| documento central de navegação | resume e referencia o estado vigente |
+| menu oficial | prioriza autoridades vigentes e registros recentes |
+| documento fora do menu | permanece construído, pesquisável e acessível por link |
 | overlay versionado anterior | preserva snapshot histórico |
 | backlog superado | permanece em histórico, fora do trabalho futuro |
 | decisão executada | classificada como executada e subordinada ao estado atual |
@@ -100,26 +101,23 @@ README, Home, Roadmap, Board e GEA devem consumir esse registro e evitar estados
 
 ### R3 — Controles centrais
 
-- Knowledge Board central atualizado para 11.48.0;
-- Architectural Milestones central atualizado para 4.46.0;
-- Matriz de Consolidação Canônica central atualizada para 1.67.0;
-- reordenamento Journey → Economic Model classificado como `executed` 1.0.0;
-- Current State Register e Roadmap sincronizados com M7.3.2;
+- Knowledge Board central atualizado;
+- Architectural Milestones central atualizado;
+- Matriz de Consolidação Canônica central atualizada;
+- reordenamento Journey → Economic Model classificado como `executed`;
 - referências de controle e changelog registradas.
-
-## 7. Incrementos remanescentes
 
 ### R4 — Navegação
 
-Atualizar `mkdocs.yml` para incluir:
+- Current State Register e controles centrais incluídos no menu;
+- Candidate Outcome Decision Register incluído;
+- auditoria e plano de remediação incluídos;
+- autoridades principais de Journey, Economic Model e Business Architecture priorizadas;
+- últimos Boards, Milestones, Matrices e Changelogs incluídos;
+- documentos históricos mantidos no build e na pesquisa por `not_in_nav`;
+- menu reduzido para evitar concorrência entre versões antigas e estado atual.
 
-- Current State Register;
-- Candidate Outcome Decision Register;
-- marcos M7.2, M7.3 e posteriores;
-- Roadmaps, Boards, Matrices e Changelogs recentes;
-- auditoria e plano de remediação.
-
-**Saída:** todos os ativos vigentes acessíveis pelo site oficial e `NC-MAJ-06` encerrada.
+## 7. Incrementos remanescentes
 
 ### R5 — Validação mecânica
 
@@ -129,6 +127,7 @@ Executar:
 - unicidade de IDs;
 - resolução de links relativos;
 - resolução de entradas de navegação;
+- validação da política `not_in_nav`;
 - `git diff --check`;
 - `mkdocs build --strict`;
 - comparação da árvore remota com a árvore validada.
@@ -174,4 +173,4 @@ A2-R03 continuation gate: open
 
 ## 10. Próximo incremento proposto
 
-Executar `R4 — Navegação` em PR isolado. R5 deverá ocorrer somente depois que a árvore de navegação refletir integralmente o estado vigente.
+Executar `R5 — Validação mecânica` em PR isolado. R6 continuará bloqueado até parecer `PASS`.
