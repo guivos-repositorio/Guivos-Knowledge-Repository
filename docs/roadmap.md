@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.62.0
-title: Roadmap Arquitetural — COD-007 Registrado
+id: ROADMAP-11.63.0
+title: Roadmap Arquitetural — ECO-CAND-008 Submetido
 status: active
-version: 11.62.0
+version: 11.63.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.61.0
+  - ROADMAP-11.62.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-007
+  - BA-STR-002-COD-SUB-008
   - COD-007
-  - M7.9
+  - M7.9.1
 ---
 
-# Roadmap Arquitetural — COD-007 Registrado
+# Roadmap Arquitetural — ECO-CAND-008 Submetido
 
 ## 1. Autoridade
 
@@ -28,13 +28,14 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.9` |
+| Marco | `M7.9.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 16 `Under Validation`; 1 `Merged`; 1 `Rejected` |
-| CODR | `7 de 18` decisões; 0 submissões abertas |
+| CODR | `7 de 18` decisões; 1 submissão aberta |
+| Submissão vigente | `ECO-CAND-008 — Reformulate` |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
@@ -72,23 +73,33 @@ R1 — precedência e estado global — concluído
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 7 de 18;
+- oitava submissão aberta para `ECO-CAND-008`;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `ECO-CAND-004`: `Rejected` por `COD-005`;
 - `ECO-CAND-006`: `Reformulate` aceito, com nova COEM pendente;
 - `ECO-CAND-007`: `Reformulate` aceito, com nova COEM pendente;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-007
+## 5. Submissão de ECO-CAND-008
 
-A formulação candidata **Participação inclusiva, digna e efetiva** foi registrada:
+A COEM recomenda `Reformulate` para **Participação confiável e protegida**.
 
-> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
+Formulação candidata proposta:
 
-O candidato permanece `Under Validation`. A decisão não transforma cadastro, tradução, presença global ou representação nominal em evidência suficiente e não promete acesso universal imediato.
+> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
+
+A submissão preserva:
+
+- a formulação originalmente avaliada;
+- os resultados `Pass / Pass / Pass / Partial`;
+- a recomendação `Reformulate`;
+- o estado `Under Validation`;
+- a separação entre submissão e decisão humana;
+- a distinção entre condição vivida, guardrails verificáveis e confiança institucional.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `ECO-CAND-008` à decisão humana sobre `Reformulate`;
+1. receber a decisão humana sobre `ECO-CAND-008`;
 2. concluir as dez decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
@@ -125,4 +136,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-008`. Nenhuma reformulação será registrada antes dessa manifestação explícita.
