@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-014
-title: Human Decision Submission — BUS-CAND-006
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — BUS-CAND-006
+status: decided
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -14,23 +14,30 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - BUS-CAND-005
-  - M7.15.1
+  - COD-014
+  - M7.16
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-006
+# Human Decision Resolution — BUS-CAND-006
 
 ## 1. Finalidade
 
-Submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual do Candidate Outcome Decision Register.
+Registrar a décima quarta decisão humana individual do Candidate Outcome Decision Register para `BUS-CAND-006 — Crescimento responsável e resiliente`.
 
-Este documento organiza a recomendação `Reject` e as alternativas. Ele **não registra `COD-014`**, não altera o COR, não rejeita o candidato antes da manifestação explícita do Fundador e não cria código canônico.
+O Fundador da Guivos manifestou explicitamente:
+
+```text
+A — Aceitar Reject
+```
+
+A decisão foi registrada como `COD-014`. Ela rejeita apenas a candidatura de crescimento como Business Outcome permanente; não proíbe crescimento, não elimina expansão da estratégia, não aprova outro candidato e não cria código canônico.
 
 ## 2. Formulação originalmente avaliada
 
 > A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade.
 
-## 3. Resultado da COEM
+## 3. Resultado da COEM preservado
 
 | Teste | Resultado | Síntese |
 |---|---|---|
@@ -40,76 +47,68 @@ Este documento organiza a recomendação `Reject` e as alternativas. Ele **não 
 | Outcome Quality | Fail | a formulação descreve trajetória estratégica opcional e agrega critérios de admissibilidade, capacidades e propriedades de continuidade |
 | Disposição recomendada | `Reject` | retirar crescimento do futuro catálogo de Business Outcomes e preservar expansão responsável como trajetória estratégica opcional |
 
-## 4. Evidências e limites
+## 4. Decisão humana registrada
 
-A validação externa e a COEM sustentam que:
+| Campo | Registro |
+|---|---|
+| Candidato | `BUS-CAND-006 — Crescimento responsável e resiliente` |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-1. crescimento não é obrigatório em todo período e não equivale a aquisição de usuários;
-2. exploração de novas possibilidades e uso das competências existentes exigem escolhas contextuais;
-3. capacidades dinâmicas são processos de reconfiguração, não garantia permanente de resultado;
-4. crescimento depende de rentabilidade, retenção, ativos, financiamento, conhecimento e capacidade gerencial;
-5. a relação entre alto crescimento e sobrevivência é contingente;
-6. resiliência é propriedade e capacidade adaptativa, não sinônimo de expansão;
-7. não crescimento deliberado pode constituir estratégia legítima;
-8. a recomendação não proíbe expansão nem rejeita a importância de ampliar alcance e valor.
+## 5. Destino arquitetural preservado
 
-## 5. Destino arquitetural proposto
+`BUS-CAND-006` é retirado do futuro catálogo de Business Outcomes, mantendo-se rastreável como hipótese rejeitada.
 
-Retirar `BUS-CAND-006` do futuro catálogo de Business Outcomes e preservar:
+Permanecem preservados:
 
 - **expansão responsável** como trajetória estratégica opcional;
 - capacidade demonstrada, adicionalidade e critérios de não degradação como gates de decisão;
-- resiliência e adaptação legítima como propriedades de `BUS-CAND-005` e futuras capacidades sustentadoras;
-- formulação original, evidências e rastreabilidade para consulta histórica e governança.
+- resiliência e adaptação legítima como propriedades de `BUS-CAND-005` ou futuras capacidades sustentadoras;
+- a formulação original, as evidências e a rastreabilidade para consulta histórica e governança.
 
-## 6. Alternativas submetidas à decisão humana
+Não crescimento deliberado pode constituir decisão estratégica legítima. A rejeição não impede a Guivos de ampliar alcance e valor quando contexto, capacidade e critérios de admissibilidade sustentarem essa escolha.
 
-### Alternativa A — Aceitar `Reject` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 6. Efeitos autorizados
 
 - criar `COD-014`;
-- aceitar formalmente a disposição `Reject`;
+- aceitar formalmente `Reject`;
 - preservar formulação original, evidências e rastreabilidade;
 - alterar `BUS-CAND-006` de `Under Validation` para `Rejected`;
 - retirar crescimento do futuro catálogo de Business Outcomes;
 - preservar expansão responsável como trajetória estratégica opcional;
 - preservar resiliência e adaptação legítima como propriedades ou capacidades sustentadoras.
 
-Não autoriza proibir crescimento, eliminar expansão da estratégia, aprovar outro candidato, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 7. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reject`
+- proibir crescimento ou eliminar expansão da estratégia;
+- tratar não crescimento como falha automática;
+- aprovar ou canonicalizar outro candidato;
+- criar código canônico `BO-###`;
+- iniciar AQS-O01, Business Capabilities, produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-Mantém `BUS-CAND-006` em `Under Validation` e exige fundamentação para preservar sua candidatura, reformulá-la ou adotar disposição distinta.
+## 8. Gate da resolução
 
-A rejeição da recomendação não aprova automaticamente a formulação original ou o candidato.
+| Critério | Resultado |
+|---|---|
+| manifestação humana explícita | Pass |
+| recomendação original preservada | Pass |
+| `COD-014` registrado | Pass |
+| `BUS-CAND-006` alterado para `Rejected` | Pass |
+| expansão responsável preservada fora do catálogo | Pass |
+| resiliência preservada como propriedade ou capacidade sustentadora | Pass |
+| crescimento não proibido | Pass |
+| distribuição 13/2/3 registrada | Pass |
+| promoção canônica bloqueada | Pass |
+| AQS-O01 não antecipado | Pass |
+| Product Engineering preservado em pausa | Pass |
 
-### Alternativa C — Devolver para nova análise
+## 9. Próximo passo governado
 
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- crescimento como Outcome versus trajetória estratégica;
-- expansão responsável e critérios de admissibilidade;
-- adicionalidade e não degradação;
-- fronteiras entre crescimento, resiliência, continuidade e capacidade institucional;
-- observabilidade sem metas universais de escala;
-- condições em que não crescer constitui decisão legítima.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Reject
-B — Rejeitar Reject, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-014` não existe;
-- decisões humanas permanecem em `13 de 18`;
-- `BUS-CAND-006` permanece `Under Validation`;
-- o COR permanece com 14 `Under Validation`, 2 `Merged` e 2 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
