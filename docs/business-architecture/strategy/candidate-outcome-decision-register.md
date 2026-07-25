@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.16.0
+version: 0.17.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -32,7 +32,8 @@ related:
   - COD-006
   - COD-007
   - COD-008
-  - M7.10.1
+  - COD-009
+  - M7.11
 normative: false
 execution_status: in-progress
 ---
@@ -60,13 +61,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 8
-Decision submissions awaiting human response: 1
-Current submission: BUS-CAND-001
+Human decisions recorded: 9
+Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 6
 Accepted Merge dispositions: 1
-Accepted Reject dispositions: 1
-Candidate state changes: 2
+Accepted Reject dispositions: 2
+Candidate state changes: 3
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -246,37 +246,29 @@ Cadastro, tradução, presença global ou representação nominal não comprovam
 
 Privacidade, segurança, transparência e autonomia permanecem guardrails verificáveis. Proteção absoluta é impossível; conformidade, ausência de incidentes ou confiança declarada não constituem evidência suficiente. A formulação deverá retornar aos quatro testes da COEM.
 
-## 12. Submissão decisória atual — BUS-CAND-001
+## 12. COD-009 — BUS-CAND-001
 
-A submissão `BA-STR-002-COD-SUB-009` apresenta a recomendação `Reject`.
+| Campo | Registro |
+|---|---|
+| Nome | Aderência permanente ao propósito |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado após a decisão | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
 ### Formulação originalmente avaliada
 
 > A Guivos mantém decisões, investimentos, relações e evolução institucional coerentes com seu propósito e seus princípios permanentes.
 
-### Destino arquitetural proposto
+### Destino arquitetural preservado
 
-Retirar o candidato do futuro catálogo de Business Outcomes e preservar aderência ao propósito como princípio constitucional, obrigação de governança, critério de admissibilidade e referência para prevenção e correção de *mission drift*.
+A rejeição atinge somente a classificação como Business Outcome autônomo. Aderência ao propósito permanece princípio constitucional permanente, obrigação de governança e accountability, critério de admissibilidade para decisões, investimentos, relações, capacidades, produtos e Outcomes, referência para prevenção e correção de *mission drift* e requisito transversal de coerência institucional.
 
-### Fundamentação da recomendação
-
-A aderência ao propósito é indispensável, porém sua ausência representa violação constitucional e de governança. Tratar o dever como Outcome empresarial criaria circularidade entre o propósito e a medição de aderência a ele próprio.
-
-### Alternativas
-
-```text
-A — Aceitar Reject
-B — Rejeitar Reject, com fundamentação
-C — Devolver para nova análise
-```
-
-A alternativa A é recomendada. Enquanto não houver manifestação explícita:
-
-- `COD-009` não existe;
-- decisões humanas permanecem em `8 de 18`;
-- `BUS-CAND-001` permanece `Under Validation`;
-- nenhuma alteração é executada no COR;
-- nenhum código canônico é criado.
+A decisão não relativiza o propósito, não reduz a autoridade dos princípios permanentes e não trata desempenho, reputação, comunicação ou aderência declarada como prova suficiente de prática institucional.
 
 ## 13. Matriz cumulativa de decisões
 
@@ -290,7 +282,7 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| BUS-CAND-001 | Reject | — | submitted to human decision; awaiting response |
+| BUS-CAND-001 | Reject | Aceitar `Reject` | `Rejected`; conteúdo preservado na Constituição e governança |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
 | BUS-CAND-003 | Reformulate | — | Pending human decision |
 | BUS-CAND-004 | Reformulate | — | Pending human decision |
@@ -305,20 +297,17 @@ A alternativa A é recomendada. Enquanto não houver manifestação explícita:
 
 | Critério | Resultado |
 |---|---|
-| submissão individual de BUS-CAND-001 criada | Pass |
+| manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| evidências e contraevidências explicitadas | Pass |
-| destino arquitetural proposto | Pass |
-| alternativas humanas A, B e C registradas | Pass |
-| decisão humana inferida automaticamente | Blocked |
-| alteração automática do COR | Blocked |
-| redução da autoridade do propósito | Blocked |
-| promoção canônica | Blocked |
+| `COD-009` registrado | Pass |
+| formulação e evidências preservadas | Pass |
+| `BUS-CAND-001` movido para `Rejected` | Pass |
+| destino constitucional e de governança preservado | Pass |
+| autoridade do propósito preservada | Pass |
+| promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 15. Próximo passo governado
 
-Registrar a manifestação do Fundador sobre `BA-STR-002-COD-SUB-009`.
-
-Se a alternativa A for escolhida, um incremento posterior deverá criar `COD-009`, preservar formulação e evidências, mover `BUS-CAND-001` para `Rejected`, retirar a candidatura do futuro catálogo de Business Outcomes e manter aderência ao propósito como autoridade constitucional e obrigação de governança.
+Preparar e submeter `BUS-CAND-002 — Relevância contínua das respostas` à décima decisão humana individual sobre a recomendação `Merge into BUS-CAND-003`.
