@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-24
 depends_on:
@@ -13,8 +13,8 @@ related:
   - PAS-001
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-CODR-001
-  - ROADMAP-11.48.0
-  - M7.3.2
+  - ROADMAP-11.49.0
+  - M7.3.3
 normative: true
 ---
 
@@ -34,7 +34,7 @@ Quando houver aparente divergência, aplica-se a seguinte ordem:
 
 1. **autoridades normativas do domínio e decisões formalmente aprovadas** determinam o conteúdo arquitetural;
 2. **este Current State Register** determina o estado transversal vigente e o próximo incremento autorizado;
-3. **Roadmap, Board, GEA, README e Home** resumem o estado e devem permanecer sincronizados com este registro;
+3. **Roadmap, Board, GEA, README, Home e navegação oficial** resumem o estado e devem permanecer sincronizados com este registro;
 4. **overlays versionados anteriores e documentos históricos** preservam a evolução, mas não substituem o estado mais recente.
 
 Conflitos entre essas superfícies constituem não conformidade documental. Eles não criam duas rotas válidas nem autorização implícita para execução.
@@ -44,14 +44,14 @@ Conflitos entre essas superfícies constituem não conformidade documental. Eles
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.3.2 — Central Governance Controls Reconciled` |
-| Frente de controle | `GKR-REMEDIATION-002`; R1, R2 e R3 concluídos |
-| Remediação pendente | R4 — navegação e R5 — validação mecânica |
-| Achados Critical abertos | 0 |
-| Achados Major abertos | 1 — navegação oficial incompleta |
+| Marco vigente | `M7.3.3 — Official Navigation Reconciled` |
+| Frente de controle | `GKR-REMEDIATION-002`; R1, R2, R3 e R4 concluídos |
+| Remediação pendente | R5 — validação mecânica; R6 bloqueado até parecer `PASS` |
+| Achados Critical abertos | 0 conhecidos antes de R5 |
+| Achados Major abertos | 0 conhecidos; `NC-MAJ-06` encerrada em R4 |
 | Achados Minor abertos | 0 conhecidos antes de R5 |
 | Frente arquitetural preservada | `A2-R03 — Business Architecture Review` |
-| Execução da A2-R03 | temporariamente pausada até R4, R5 e resultado `PASS` |
+| Execução da A2-R03 | temporariamente pausada até R5 e resultado `PASS` |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades funcionalmente concluídas |
 | Guivos Economic Model | arquitetura documental inicial concluída em `GEM-001` a `GEM-010`; validações empíricas e especializadas pendentes |
 | Business Outcomes | COEM concluída; Candidate Outcome Decision Register iniciado |
@@ -64,12 +64,32 @@ Conflitos entre essas superfícies constituem não conformidade documental. Eles
 | Product Engineering | pausado antes do `W0-01`; readiness preservada e execução em `0%` |
 | Market Validation | trilha operacional paralela preservada; formulário definitivo e planilha automática pendentes |
 
-## 4. Sequência oficial reconciliada
+## 4. Política de navegação vigente
+
+O menu oficial do site apresenta:
+
+- estado global e controles centrais vigentes;
+- autoridades principais de cada arquitetura e modelo;
+- CODR, auditoria e plano de remediação;
+- registros recentes necessários para rastrear a transição atual.
+
+Documentos históricos e extensões especializadas omitidos do menu continuam:
+
+- preservados no repositório;
+- construídos pelo MkDocs;
+- indexados pela pesquisa;
+- acessíveis por links diretos;
+- subordinados à precedência deste registro e das autoridades normativas.
+
+A ausência de um documento histórico no menu não significa exclusão, revogação ou perda de autoridade quando ele permanecer normativo em seu domínio.
+
+## 5. Sequência oficial reconciliada
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → reconciliação do estado, controles e navegação do GKR
+→ validação mecânica integral do repositório
 → conclusão de BA-STR-002 — Business Outcomes
 → BA-CAP-001 e BA-CAP-002 — Business Capabilities
 → rebaseline e especificação do portfólio especializado
@@ -80,7 +100,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 A passagem do Economic Model para a A2-R03 não representa saída de rota. Ela foi definida pela revisão de fechamento do próprio Economic Model porque Outcomes e Business Capabilities são dependências anteriores à especificação comercial e operacional dos demais produtos.
 
-## 5. Backlog global preservado
+## 6. Backlog global preservado
 
 Após a conclusão do `BA-STR-002` e das Business Capabilities, deverão ser reavaliados, nesta ordem histórica de referência:
 
@@ -95,7 +115,7 @@ Após a conclusão do `BA-STR-002` e das Business Capabilities, deverão ser rea
 
 A ordem entre os seis produtos permanece provisoriamente preservada. Sua confirmação dependerá dos Outcomes canônicos, do mapa de capacidades, das dependências econômicas e das evidências de mercado.
 
-## 6. Trilha operacional paralela
+## 7. Trilha operacional paralela
 
 Market Validation pode avançar em incremento próprio por meio de:
 
@@ -106,13 +126,13 @@ Market Validation pode avançar em incremento próprio por meio de:
 
 A execução desses entregáveis exige incremento próprio. Este registro apenas preserva a coexistência entre a trilha operacional de evidência e a remediação documental.
 
-## 7. Próximo incremento autorizado
+## 8. Próximo incremento autorizado
 
-Executar `R4 — Navegação`, tornando os ativos vigentes acessíveis pelo `mkdocs.yml`, seguido de `R5 — Validação mecânica`.
+Executar `R5 — Validação mecânica`, incluindo front matter, unicidade de IDs, links relativos, entradas de navegação, `git diff --check`, `mkdocs build --strict` e comparação da árvore remota.
 
-Somente após o fechamento da não conformidade Major restante e resultado `PASS` poderá ocorrer `R6 — Retomada governada`, com retorno ao `BA-STR-002-CODR-001` e decisão individual sobre `ECO-CAND-003`.
+Somente após resultado `PASS` poderá ocorrer `R6 — Retomada governada`, com retorno ao `BA-STR-002-CODR-001` e decisão individual sobre `ECO-CAND-003`.
 
-## 8. Limites
+## 9. Limites
 
 O estado atual não autoriza:
 
