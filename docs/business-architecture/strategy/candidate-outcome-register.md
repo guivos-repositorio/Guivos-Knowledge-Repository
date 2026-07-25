@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.16.0
+version: 0.17.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -22,8 +22,9 @@ related:
   - BA-STR-002-CODR-001
   - COD-003
   - COD-004
+  - COD-005
   - GEM-CLOSURE-REVIEW-001
-  - M7.6
+  - M7.7
 normative: false
 ---
 
@@ -44,12 +45,13 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 17
+Under Validation: 16
 Merged: 1
+Rejected: 1
 External validation: completed — batches 01 to 06
 External validation protocol: completed
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 4 of 18
+Human decisions: 5 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -65,7 +67,7 @@ Este registro não:
 - conclui o `BA-STR-002`;
 - retoma Product Engineering ou autoriza o W0-01.
 
-A mudança para `Merged` preserva o candidato, sua formulação original, evidências e histórico. Ela não equivale a remoção, aprovação ou canonicalização.
+Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e histórico. Eles não equivalem a apagamento, aprovação ou remoção dos conceitos de suas camadas arquiteturais adequadas.
 
 ## 4. Convenção dos registros
 
@@ -75,6 +77,7 @@ A mudança para `Merged` preserva o candidato, sua formulação original, evidê
 | `BUS-CAND-###` | identificador provisório de candidato a Business Outcome |
 | `Under Validation` | candidato ativo aguardando decisão ou nova avaliação |
 | `Merged` | candidato incorporado a outro por decisão humana, com rastreabilidade preservada |
+| `Rejected` | candidato retirado do futuro catálogo de Outcomes, sem apagar conceito, evidências ou destino arquitetural |
 | Origem | autoridade que sustenta a hipótese, sem equivaler a evidência externa |
 | Participantes | classes potencialmente afetadas, não público-alvo comercial |
 | Questão de validação | incerteza que deve ser resolvida antes de promoção canônica |
@@ -116,19 +119,21 @@ Os identificadores são estáveis para rastreabilidade e não antecipam a numera
 | Origem | GEB-P01-F01; GEB-P01-F03; GEB-P01-F05; GEB-P01-F06 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
 | Status | Under Validation |
-| Observações | `COD-002` aceitou `Reformulate`; `COD-003` incorporou a dimensão temporal de `ECO-CAND-005`. A formulação combinada deverá retornar à COEM. |
+| Observações | `COD-002` aceitou `Reformulate`; `COD-003` incorporou a dimensão temporal de `ECO-CAND-005`. |
 | Questão de validação | A formulação combinada é observável sem converter agência e continuidade adaptativa em engajamento, persistência ou conclusão de tarefas? |
 
 ### ECO-CAND-004 — Realização de experiências de valor
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | Participantes conseguem converter oportunidades escolhidas em experiências vividas que produzem valor percebido e potencial de evolução. |
+| Definição original preservada | Participantes conseguem converter oportunidades escolhidas em experiências vividas que produzem valor percebido e potencial de evolução. |
 | Origem | GEB-P01-F01; GEB-P01-F06; BA-STR-001; GEM-001 |
 | Participantes afetados | Pessoa, Organização e Coletivo |
-| Status | Under Validation |
-| Observações | Experiência vivida não comprova transformação, impacto causal ou resultado duradouro. |
-| Questão de validação | “Realização de valor” é suficientemente permanente ou descreve evento intermediário da jornada? |
+| Status | Rejected |
+| Decisão | `COD-005 — Aceitar Reject` |
+| Destino arquitetural preservado | arquitetura da Jornada, realização de valor em uso e fonte de evidências para Outcomes |
+| Observações | A rejeição corrige a classificação como Outcome permanente independente. Experiência permanece central e não foi removida da Guivos. |
+| Questão de validação | Resolvida quanto à candidatura autônoma; experiência permanece fenômeno e unidade arquitetural, não Outcome canônico independente. |
 
 ### ECO-CAND-005 — Continuidade da evolução autodeterminada
 
@@ -140,7 +145,7 @@ Os identificadores são estáveis para rastreabilidade e não antecipam a numera
 | Status | Merged |
 | Merged into | ECO-CAND-003 |
 | Decisão | `COD-003 — Aceitar Merge into ECO-CAND-003` |
-| Observações | Continuidade adaptativa foi incorporada como dimensão temporal da Agência efetiva e situada. O registro, as evidências e a formulação original permanecem preservados. |
+| Observações | Continuidade adaptativa foi incorporada como dimensão temporal da Agência efetiva e situada. |
 | Questão de validação | Resolvida quanto à independência decisória; a formulação combinada do alvo permanece pendente de nova COEM. |
 
 ### ECO-CAND-006 — Conexões relevantes e fortalecedoras
@@ -295,7 +300,7 @@ Os identificadores são estáveis para rastreabilidade e não antecipam a numera
 | ECO-CAND-001 | BUS-CAND-001, BUS-CAND-002, BUS-CAND-007 |
 | ECO-CAND-002 | BUS-CAND-002, BUS-CAND-003, BUS-CAND-008 |
 | ECO-CAND-003 | BUS-CAND-001, BUS-CAND-003, BUS-CAND-004, BUS-CAND-007, BUS-CAND-010 |
-| ECO-CAND-004 | BUS-CAND-002, BUS-CAND-003, BUS-CAND-005 |
+| ECO-CAND-004 — Rejected | relação histórica preservada: BUS-CAND-002, BUS-CAND-003, BUS-CAND-005 |
 | ECO-CAND-005 — Merged into ECO-CAND-003 | relação histórica preservada: BUS-CAND-003, BUS-CAND-007, BUS-CAND-010 |
 | ECO-CAND-006 | BUS-CAND-004, BUS-CAND-008 |
 | ECO-CAND-007 | BUS-CAND-001, BUS-CAND-005, BUS-CAND-009, BUS-CAND-010 |
@@ -307,18 +312,12 @@ Esta matriz orienta validação e não atende ainda à futura matriz canônica d
 
 | Cluster | Candidatos | Estado |
 |---|---|---|
-| agência e evolução | ECO-CAND-001, 003 e 005 | `ECO-CAND-005` fundido em `ECO-CAND-003` por `COD-003`; ECO-CAND-001 e formulação combinada ainda exigem nova COEM |
-| oportunidade e experiência | ECO-CAND-002 e 004 | `COD-004` aceitou `Reformulate` para ECO-CAND-002; ECO-CAND-004 aguarda decisão sobre `Reject` |
+| agência e evolução | ECO-CAND-001, 003 e 005 | ECO-CAND-005 fundido em ECO-CAND-003; formulações restantes exigem nova COEM |
+| oportunidade e experiência | ECO-CAND-002 e 004 | ECO-CAND-004 rejeitado por `COD-005`; experiência preservada na Jornada; ECO-CAND-002 permanece candidato |
 | confiança | ECO-CAND-006, 008 e BUS-CAND-004 | decisão humana pendente |
 | valor e continuidade | BUS-CAND-003, 005 e 010 | decisão humana pendente |
 | adaptação | BUS-CAND-002, 007 e 009 | decisão humana pendente |
 | resiliência | BUS-CAND-005 e 006 | decisão humana pendente |
-
-O cluster `agência e evolução` possui validação externa no [BA-STR-002-EOVB-001](outcome-validation-batch-01-agency-evolution.md), avaliação na COEM e três decisões humanas registradas. A compreensão contextual permanece candidata; a agência efetiva e situada recebeu a dimensão temporal da continuidade adaptativa; a formulação combinada ainda não foi aprovada.
-
-O cluster `oportunidade e experiência` possui validação externa no [BA-STR-002-EOVB-006](outcome-validation-batch-06-coverage-completion.md). `ECO-CAND-002` foi reformulado por `COD-004`, enquanto `ECO-CAND-004` permanece pendente de decisão humana própria.
-
-Os demais clusters preservam as sínteses dos lotes externos 02 a 05 e aguardam decisões individuais no CODR.
 
 ## 9. Cobertura das origens internas
 
@@ -336,26 +335,24 @@ Cobertura interna não equivale a validação externa nem comprova completude do
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as quatorze disposições restantes;
+1. decisão humana individual para as treze disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. preservação das contradições, reclassificações e limites;
-4. distinção explícita entre recomendação, decisão humana e mudança de estado;
-5. aplicação e ajuste do AQS-O01;
-6. decisão formal sobre catálogos e códigos canônicos.
+4. aplicação e ajuste do AQS-O01;
+5. decisão formal sobre catálogos e códigos canônicos.
 
 ## 11. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| decisão humana `COD-004` registrada | Pass |
-| formulação original de `ECO-CAND-002` preservada | Pass |
-| formulação revisada registrada | Pass |
-| candidato mantido em `Under Validation` | Pass |
-| separação entre acesso, escolha e experiência | Pass |
-| volume de opções bloqueado como evidência suficiente | Pass |
+| `COD-005` registrado | Pass |
+| `ECO-CAND-004` alterado para `Rejected` | Pass |
+| formulação e evidências preservadas | Pass |
+| destino arquitetural da experiência preservado | Pass |
+| distribuição 16/1/1 registrada | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 12. Próximo passo governado
 
-Preparar e submeter `ECO-CAND-004 — Realização de experiências de valor` à quinta decisão humana individual sobre a recomendação `Reject`. As decisões registradas permanecem separadas da reavaliação da COEM e da futura Canon.
+Preparar e submeter `ECO-CAND-006 — Conexões relevantes e fortalecedoras` à sexta decisão humana individual sobre a recomendação `Reformulate`.
