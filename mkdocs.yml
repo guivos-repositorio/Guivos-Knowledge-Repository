@@ -70,6 +70,7 @@ nav:
       - Architectural Milestones: project/architectural-milestones.md
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
       - Parecer Mecânico do R5: project/repository-mechanical-validation-2026-07-24.md
+      - Retomada Governada do R6: project/governed-resumption-r6.md
 
   - Guia Oficial da Guivos:
       - Visão Geral: public/index.md
@@ -174,14 +175,16 @@ nav:
           - Validation Batch 06 — Coverage Completion: business-architecture/strategy/outcome-validation-batch-06-coverage-completion.md
           - Candidate Outcome Evaluation Matrix: business-architecture/strategy/candidate-outcome-evaluation-matrix.md
           - Candidate Outcome Decision Register: business-architecture/strategy/candidate-outcome-decision-register.md
+          - Decision Submission — ECO-CAND-003: business-architecture/strategy/candidate-outcome-decision-submission-eco-cand-003.md
 
   - Governança e Validação:
       - Architectural Knowledge Consolidation Pipeline: governance-framework/architectural-knowledge-consolidation-pipeline.md
       - Architectural Audit Framework: governance-framework/architectural-audit-framework.md
       - Outcome Governance Method: governance-framework/outcome-governance-method.md
       - Auditoria de Estado e Sequência: project/repository-state-sequencing-audit-2026-07-24.md
-      - Plano de Remediação: project/repository-state-navigation-remediation-plan.md
+      - Plano de Remediação — Concluído: project/repository-state-navigation-remediation-plan.md
       - Parecer Mecânico do R5: project/repository-mechanical-validation-2026-07-24.md
+      - Retomada Governada do R6: project/governed-resumption-r6.md
       - Reordenamento Estratégico Executado: project/strategic-resequencing-journey-to-economic-model.md
       - Validações Arquiteturais:
           - AV-001 — GEA Structure Validation: validation/AV-001-gea-structure-validation.md
@@ -207,6 +210,7 @@ nav:
           - 11.48.0 — Central Controls Reconciled: project/knowledge-board-11.48.0.md
           - 11.49.0 — Official Navigation Reconciled: project/knowledge-board-11.49.0.md
           - 11.50.0 — Mechanical Validation Passed: project/knowledge-board-11.50.0.md
+          - 11.51.0 — Governed Resumption: project/knowledge-board-11.51.0.md
       - Architectural Milestones:
           - 4.43.0 — M7.2: project/architectural-milestones-4.43.0.md
           - 4.44.0 — M7.3: project/architectural-milestones-4.44.0.md
@@ -214,18 +218,21 @@ nav:
           - 4.46.0 — M7.3.2: project/architectural-milestones-4.46.0.md
           - 4.47.0 — M7.3.3: project/architectural-milestones-4.47.0.md
           - 4.48.0 — M7.3.4: project/architectural-milestones-4.48.0.md
+          - 4.49.0 — M7.3.5: project/architectural-milestones-4.49.0.md
       - Canonical Consolidation Matrix:
           - 1.65.0 — Repository State Audit: project/canonical-consolidation-matrix-gkr-audit-002-addendum.md
           - 1.66.0 — R1 and R2: project/canonical-consolidation-matrix-gkr-remediation-r1-r2-addendum.md
           - 1.67.0 — R3: project/canonical-consolidation-matrix-gkr-remediation-r3-addendum.md
           - 1.68.0 — R4: project/canonical-consolidation-matrix-gkr-remediation-r4-addendum.md
           - 1.69.0 — R5: project/canonical-consolidation-matrix-gkr-remediation-r5-addendum.md
+          - 1.70.0 — R6: project/canonical-consolidation-matrix-gkr-r6-addendum.md
       - Changelogs:
           - 0.93.0 — Repository State Audit: project/changelog-0.93.0-gkr-audit-002.md
           - 0.94.0 — R1 and R2: project/changelog-0.94.0-gkr-remediation-r1-r2.md
           - 0.95.0 — R3: project/changelog-0.95.0-gkr-remediation-r3.md
           - 0.96.0 — R4: project/changelog-0.96.0-gkr-remediation-r4.md
           - 0.97.0 — R5: project/changelog-0.97.0-gkr-remediation-r5.md
+          - 0.98.0 — R6: project/changelog-0.98.0-gkr-r6-governed-resumption.md
       - Continuidade:
           - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
           - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md

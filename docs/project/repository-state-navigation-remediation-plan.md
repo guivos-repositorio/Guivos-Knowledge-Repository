@@ -1,8 +1,8 @@
 ---
 id: GKR-REMEDIATION-002
 title: Repository State and Navigation Remediation Plan
-status: active
-version: 0.5.0
+status: completed
+version: 1.0.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-24
 parent: GKR-AUD-002
@@ -11,10 +11,10 @@ depends_on:
   - GEA-AUDIT-001
 related:
   - GKR-STATE-001
-  - BA-STR-002-CODR-001
-  - GEM-CLOSURE-REVIEW-001
   - GKR-R5-VALIDATION-001
-  - ROADMAP-11.50.0
+  - GKR-R6-RESUMPTION-001
+  - BA-STR-002-CODR-001
+  - ROADMAP-11.51.0
 normative: false
 ---
 
@@ -22,125 +22,79 @@ normative: false
 
 ## 1. Objetivo
 
-Eliminar as não conformidades abertas pelo `GKR-AUD-002`, restabelecer uma única leitura do estado vigente e impedir que documentos históricos concorram com o estado atual.
+Eliminar as não conformidades abertas pelo `GKR-AUD-002`, restabelecer uma única leitura do estado vigente e devolver a prioridade ao trabalho arquitetural governado.
 
-## 2. Estado de execução
+## 2. Resultado final
 
 | Incremento | Estado | Resultado |
 |---|---|---|
-| R1 — Precedência e estado global | concluído | `GKR-STATE-001`, README, Home e GEA reconciliados |
-| R2 — Roadmap e backlog global | concluído | Roadmap central reestruturado e backlog rebaselined |
+| R1 — Precedência e estado global | concluído | Current State Register, README, Home e GEA reconciliados |
+| R2 — Roadmap e backlog global | concluído | sequência e backlog rebaselined |
 | R3 — Controles centrais | concluído | Board, Milestones, Matrix e reordenamento sincronizados |
 | R4 — Navegação | concluído | autoridades vigentes acessíveis e histórico subordinado |
-| R5 — Validação mecânica | `PASS` neste PR | front matter, IDs, links, navegação, diff, build e árvore aprovados |
-| R6 — Retomada governada | próximo após integração | retorno controlado ao CODR |
+| R5 — Validação mecânica | `PASS` | front matter, IDs, links, navegação, diff, build e árvore aprovados |
+| R6 — Retomada governada | concluído | A2-R03 e CODR retomados; ECO-CAND-003 submetido à decisão humana |
 
-## 3. Situação das não conformidades
-
-| ID | Estado após R5 |
-|---|---|
-| NC-MAJ-01 — Roadmap central desatualizado | corrigida e validada |
-| NC-MAJ-02 — Knowledge Board central desatualizado | corrigida e validada |
-| NC-MAJ-03 — Architectural Milestones central desatualizado | corrigida e validada |
-| NC-MAJ-04 — Matriz Canônica central desatualizada | corrigida e validada |
-| NC-MAJ-05 — README e Home desatualizados | corrigida e validada |
-| NC-MAJ-06 — navegação incompleta | corrigida e validada |
-| NC-MAJ-07 — precedência documental ausente | corrigida e validada |
-| NC-MIN-01 — reordenamento ainda `proposed` | corrigida |
-| NC-MIN-02 — GEA anterior ao CODR | corrigida |
-| NC-MIN-03 — duplicação de estado | corrigida progressivamente |
+## 3. Não conformidades
 
 ```text
 Critical findings open: 0
 Major findings open: 0
 Known Minor findings open: 0
 Mechanical validation: PASS
+Repository remediation: COMPLETE
 ```
 
-## 4. Princípios preservados
+As não conformidades `NC-MAJ-01` a `NC-MAJ-07` e `NC-MIN-01` a `NC-MIN-03` foram corrigidas conforme seus incrementos e validadas pelos controles aplicáveis.
 
-- histórico integral preservado;
-- decisões e versões anteriores não apagadas;
+## 4. Ativos permanentes resultantes
+
+- `GKR-STATE-001` como autoridade transversal;
 - precedência documental explícita;
-- estado atual separado do histórico e do backlog futuro;
-- conteúdo arquitetural não alterado apenas para corrigir navegação;
-- retomada da A2-R03 condicionada ao R6.
+- Roadmap global reconciliado;
+- controles centrais concisos e atuais;
+- navegação governada do MkDocs;
+- histórico preservado fora do menu principal;
+- `scripts/validate_gkr.py`;
+- workflow `GKR Mechanical Validation`;
+- relatório `GKR-R5-VALIDATION-001`;
+- registro `GKR-R6-RESUMPTION-001`.
 
-## 5. Incrementos concluídos
+## 5. Retomada arquitetural
 
-### R1 — Precedência e estado global
+O R6 encerrou formalmente a pausa da remediação e retomou:
 
-- Current State Register criado;
-- README, Home e GEA reconciliados;
-- precedência documental explicitada.
+- `A2-R03 — Business Architecture Review`;
+- `BA-STR-002 — Business Outcomes`;
+- `BA-STR-002-CODR-001`.
 
-### R2 — Roadmap e backlog global
+A submissão `BA-STR-002-COD-SUB-002` apresenta `ECO-CAND-003` ao Fundador. Essa submissão não constitui decisão e não cria `COD-002`.
 
-- Journey registrado como concluído;
-- Economic Model registrado como documentariamente concluído;
-- A2-R03 preservada;
-- ciclo Outcomes → Business Capabilities explicitado;
-- portfólio, Commercial Model, Go-to-Market e Market Validation rebaselined.
+## 6. Limites preservados
 
-### R3 — Controles centrais
-
-- Knowledge Board, Milestones e Matrix atualizados;
-- reordenamento Journey → Economic Model classificado como executado;
-- versões e referências de controle reconciliadas.
-
-### R4 — Navegação
-
-- autoridades vigentes priorizadas no `mkdocs.yml`;
-- CODR, auditoria, remediação e registros recentes expostos;
-- histórico preservado fora do menu principal e disponível na pesquisa.
-
-### R5 — Validação mecânica
-
-- validador permanente criado;
-- workflow GitHub Actions incorporado;
-- front matter, IDs, links locais e navegação aprovados;
-- `git diff --check` aprovado;
-- `mkdocs build --strict` aprovado;
-- árvore rastreada permaneceu limpa.
-
-## 6. R6 — Retomada governada
-
-Após integração deste PR e autorização explícita:
-
-1. encerrar formalmente a pausa de remediação;
-2. retomar `BA-STR-002-CODR-001`;
-3. submeter `ECO-CAND-003` à decisão humana individual;
-4. preservar Market Validation como frente paralela;
-5. manter Product Engineering pausado antes do W0-01.
-
-## 7. Limites
-
-A remediação não:
+A conclusão da remediação não:
 
 - reabre o Economic Model sem condição material;
-- altera o conteúdo de `COD-001`;
-- toma decisões sobre outros Candidate Outcomes;
+- aprova Candidate Outcomes automaticamente;
 - inicia AQS-O01 ou Business Capabilities;
-- especifica Mall ou outros produtos;
-- cria Commercial Model ou Go-to-Market;
+- especifica produtos, Commercial Model ou Go-to-Market;
 - retoma Product Engineering;
 - executa Market Validation automaticamente.
 
-## 8. Critério de conclusão
+## 7. Critério de conclusão
 
 ```text
-Critical findings open: 0
-Major findings open: 0
-Minor findings: corrected or accepted with owner and due gate
 State precedence: explicit
 Global roadmap: current
 Global board: current
 Navigation: complete
 IDs and links: valid
 mkdocs build --strict: pass
-A2-R03 continuation gate: eligible for R6
+A2-R03: active
+CODR: resumed
+Human decision inference: blocked
 ```
 
-## 9. Próximo incremento
+## 8. Encerramento
 
-Executar R6 somente após a integração do PR do R5 e nova autorização explícita.
+Este plano está concluído. Novos trabalhos devem seguir o Roadmap e o Current State Register, sem reabrir a remediação salvo surgimento de nova não conformidade material.
