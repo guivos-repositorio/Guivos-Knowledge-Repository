@@ -2,19 +2,18 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.72.0
+version: 4.73.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.74.0
+  - ROADMAP-11.75.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-013
-  - COD-013
-  - M7.15
+  - BA-STR-002-COD-SUB-014
+  - M7.15.1
 normative: false
 ---
 
@@ -33,49 +32,26 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M5–M5.18 | Completed | arquitetura funcional e publicação do Journey |
 | M6.0–M6.10 | Completed | desenvolvimento e fechamento documental do Economic Model |
 | M7.0–M7.1.5 | Completed | COR, validação externa e COEM concluídos |
-| M7.2 | Completed | `COD-001` registrado |
-| M7.3–M7.3.5 | Completed | auditoria, remediação, validação e retomada governada |
-| M7.4 | Completed | `COD-002` registrado |
-| M7.4.1 | Completed | terceira decisão submetida |
-| M7.5 | Completed | `COD-003` registrado |
-| M7.5.1 | Completed | quarta decisão submetida |
-| M7.6 | Completed | `COD-004` registrado |
-| M7.6.1 | Completed | quinta decisão submetida |
-| M7.7 | Completed | `COD-005` registrado |
-| M7.7.1 | Completed | sexta decisão submetida |
-| M7.8 | Completed | `COD-006` registrado |
-| M7.8.1 | Completed | sétima decisão submetida |
-| M7.9 | Completed | `COD-007` registrado |
-| M7.9.1 | Completed | oitava decisão submetida |
-| M7.10 | Completed | `COD-008` registrado |
-| M7.10.1 | Completed | nona decisão submetida |
-| M7.11 | Completed | `COD-009` registrado |
-| M7.11.1 | Completed | décima decisão submetida |
-| M7.12 | Completed | `COD-010` registrado |
-| M7.12.1 | Completed | décima primeira decisão submetida |
-| M7.13 | Completed | `COD-011` registrado |
-| M7.13.1 | Completed | décima segunda decisão submetida |
-| M7.14 | Completed | `COD-012` registrado |
-| M7.14.1 | Completed | décima terceira decisão submetida |
-| M7.15 | Completed neste incremento | `COD-013` registrado para `BUS-CAND-005` |
+| M7.2–M7.15 | Completed | `COD-001` a `COD-013` registrados, com auditoria, remediação e retomada governada preservadas |
+| M7.15.1 | Completed neste incremento | décima quarta decisão submetida para `BUS-CAND-006` |
 
 ## 3. Marco vigente
 
-### M7.15 — Thirteenth Human Outcome Decision Recorded
+### M7.15.1 — Fourteenth Human Outcome Decision Submitted
 
 **Critérios atendidos:**
 
-- manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Reformulate` aceita;
-- `COD-013` criado para `BUS-CAND-005`;
+- branch baseada diretamente no merge do PR #90;
+- submissão individual `BA-STR-002-COD-SUB-014` criada;
+- recomendação `Reject` preservada sem inferência de decisão;
+- resultados `Fail / Partial / Pass / Fail` preservados;
 - formulação original e evidências preservadas;
-- formulação candidata **Continuidade econômica sustentável** registrada;
-- continuidade econômica separada de continuidade operacional e métricas financeiras isoladas;
-- resiliência, equilíbrio financeiro, reservas, financiamento e alocação preservados como dimensões ou capacidades sustentadoras;
-- `BUS-CAND-010` preservado para decisão individual posterior;
-- candidato mantido em `Under Validation`;
-- nova aplicação dos quatro testes da COEM exigida;
-- decisões humanas atualizadas para 13 de 18;
+- crescimento separado de Outcome empresarial permanente;
+- expansão responsável preservada como trajetória estratégica opcional;
+- resiliência e adaptação legítima preservadas como propriedades ou capacidades sustentadoras;
+- `BUS-CAND-006` mantido em `Under Validation`;
+- `COD-014` não criado;
+- decisões humanas preservadas em 13 de 18;
 - COR preservado em 14 `Under Validation`, 2 `Merged` e 2 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
@@ -92,7 +68,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Após integração deste incremento, preparar a submissão de `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana sobre a recomendação `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-014`.
 
 ## 6. Regra de transição
 
