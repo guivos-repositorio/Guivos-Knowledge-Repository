@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.70.0
+version: 11.71.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.70.0
+  - ROADMAP-11.71.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-011
+  - BA-STR-002-COD-SUB-012
   - COD-011
-  - M7.13
+  - M7.13.1
 normative: false
 ---
 
@@ -28,12 +28,13 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.13 — Eleventh Human Outcome Decision Recorded` |
+| Marco | `M7.13.1 — Twelfth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
-| CODR | 11 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 11 de 18 decisões humanas; 1 submissão aberta |
+| Submissão vigente | `BUS-CAND-004 — Reformulate` |
 | COD-001 | `Reformulate` aceito para ECO-CAND-001 |
 | COD-002 | `Reformulate` aceito para ECO-CAND-003 |
 | COD-003 | `Merge into ECO-CAND-003` aceito para ECO-CAND-005 |
@@ -65,11 +66,12 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-004`.
+- submissão humana de `BUS-CAND-004`.
 
 ### Pendente
 
-- sete decisões humanas restantes;
+- decisão humana sobre `BUS-CAND-004`;
+- seis decisões posteriores;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -80,14 +82,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-011
+## 4. BUS-CAND-004
 
-O Fundador aceitou `Reformulate` para `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo`.
+A COEM recomenda `Reformulate` porque confiança e legitimidade são avaliações emergentes relacionadas, porém distintas.
 
-> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+A proposta preserva **Legitimidade institucional sustentada** como núcleo candidato:
 
-A formulação permanece candidata e deverá retornar à COEM. Qualidade, segurança, continuidade, inteligência e adaptação permanecem propriedades verificáveis ou capacidades sustentadoras.
+> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
+
+Confiança permanece avaliação relacional associada. `COD-012` não foi criado e o COR não foi alterado.
 
 ## 5. Próximo movimento
 
-Após integração deste incremento, preparar a décima segunda submissão humana para `BUS-CAND-004 — Confiança e legitimidade institucional`, cuja recomendação da COEM é `Reformulate`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-012`.
