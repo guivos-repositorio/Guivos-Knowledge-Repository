@@ -53,7 +53,7 @@ Esses entregáveis produzem evidência, mas não substituem autoridades arquitet
 - [Roadmap](roadmap.md)
 - [Auditoria de estado e sequência](project/repository-state-sequencing-audit-2026-07-24.md)
 - [Plano de remediação](project/repository-state-navigation-remediation-plan.md)
-- [Knowledge Board](project/knowledge-board.md)
+- [Knowledge Board atual](project/knowledge-board-11.47.0.md)
 
 ### Arquiteturas e modelos
 
