@@ -2,15 +2,15 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.67.0
+version: 1.68.0
 owner: Guivos
 last_updated: 2026-07-24
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-GKR-REMEDIATION-R3
+  - GKR-CANON-MATRIX-GKR-REMEDIATION-R4
   - GKR-REMEDIATION-002
-  - M7.3.2
+  - M7.3.3
 normative: false
 ---
 
@@ -20,7 +20,7 @@ normative: false
 
 Esta matriz central registra as decisões consolidadas de maior alcance e aponta para as autoridades e addenda que preservam o detalhamento. Ela não substitui documentos normativos de domínio, ADRs, validações, auditorias ou registros de decisão.
 
-A versão anterior continha extensa duplicação de decisões já governadas em documentos especializados. Esse conteúdo permanece integralmente recuperável no histórico Git e nos addenda versionados.
+O conteúdo histórico permanece integralmente recuperável no Git, nos documentos normativos e nos addenda versionados.
 
 ## 2. Vocabulário de decisão
 
@@ -53,7 +53,8 @@ A versão anterior continha extensa duplicação de decisões já governadas em 
 | Go-to-Market | Pendente | posterior ao Commercial Model e aos gates de validação |
 | Market Validation | Manter como trilha paralela | formulário e planilha ainda pendentes |
 | Current State Register | Manter | autoridade do estado transversal vigente |
-| Roadmap, Board, GEA, README e Home | Refinar como resumos | devem consumir o Current State Register |
+| menu oficial do MkDocs | Refinar | autoridades vigentes priorizadas; histórico preservado fora do menu |
+| documentos fora do menu | Manter construídos e pesquisáveis | ausência no menu não revoga autoridade normativa |
 | overlays anteriores | Historical only | preservam snapshots, não determinam o estado atual |
 
 ## 4. Decisões da remediação
@@ -65,20 +66,20 @@ A versão anterior continha extensa duplicação de decisões já governadas em 
 | NC-MAJ-03 — Milestones antigo | Refinar | corrigida em R3 |
 | NC-MAJ-04 — Matrix antiga | Refinar | corrigida em R3 |
 | NC-MAJ-05 — README e Home antigos | Refinar | corrigida em R1 |
-| NC-MAJ-06 — navegação incompleta | Pendente | R4 |
+| NC-MAJ-06 — navegação incompleta | Refinar | corrigida em R4; confirmação mecânica pendente em R5 |
 | NC-MAJ-07 — precedência ausente | Refinar | corrigida em R1 |
 | NC-MIN-01 — reordenamento ainda proposed | Refinar | corrigida em R3 |
 | NC-MIN-02 — GEA anterior ao CODR | Refinar | corrigida em R1 |
-| NC-MIN-03 — duplicação de estado | Refinar | corrigida progressivamente em R1–R3 |
+| NC-MIN-03 — duplicação de estado | Refinar | corrigida progressivamente em R1–R4 |
 
 ## 5. Registro de addenda
 
-Os addenda versionados preservam as decisões incrementais posteriores à antiga versão central 1.30.0. A navegação integral desses ativos será concluída em R4.
+Os addenda versionados preservam as decisões incrementais posteriores à antiga versão central 1.30.0.
 
-O addendum vigente deste incremento é `Canonical Consolidation Matrix 1.67.0 — R3 Central Controls`.
+O addendum vigente deste incremento é `Canonical Consolidation Matrix 1.68.0 — R4 Official Navigation`.
 
 ## 6. Próxima decisão de controle
 
-Executar R4 para tornar Current State Register, CODR, auditoria, remediação, Roadmaps, Boards, Milestones, Matrices e Changelogs recentes acessíveis pela navegação oficial.
+Executar R5 para validar front matter, unicidade de IDs, links, entradas de navegação, diff e `mkdocs build --strict`.
 
 Nenhuma decisão adicional de Outcome é autorizada até o resultado `PASS` de R5.
