@@ -2,18 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.92.0
+version: 1.93.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-013-SUBMISSION
+  - GKR-CANON-MATRIX-COD-013
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-013
-  - M7.14.1
+  - COD-013
+  - M7.15
 normative: false
 ---
 
@@ -60,7 +61,8 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-010` | Manter | `Merge into BUS-CAND-003` aceito para `BUS-CAND-002` |
 | `COD-011` | Manter | `Reformulate` aceito para `BUS-CAND-003` |
 | `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
-| CODR | Manter ativo | 12 de 18 decisões; 1 submissão aberta |
+| `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
+| CODR | Manter ativo | 13 de 18 decisões; 0 submissões abertas |
 | COR | Refinar | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
@@ -73,7 +75,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `BUS-CAND-002` | Unificar em `BUS-CAND-003` | `Merged`; formulação, evidências e rastreabilidade preservadas |
 | `BUS-CAND-003` | Refinar e manter `Under Validation` | `COD-011`; formulação revisada registrada; nova COEM pendente |
 | `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
-| `BUS-CAND-005` | Pendente de decisão humana | `BA-STR-002-COD-SUB-013`; recomendação `Reformulate` |
+| `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
 | `BUS-CAND-010` | Pendente | decisão individual e eventual fusão não antecipadas |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
@@ -82,36 +84,36 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Submissão de BUS-CAND-005
+## 4. Resultado de COD-013
 
-A recomendação `Reformulate` foi submetida sem decisão humana inferida.
+A alternativa `A — Aceitar Reformulate` foi consolidada para `BUS-CAND-005`.
 
 ### Formulação originalmente avaliada
 
 > A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
 
-### Formulação candidata revisada proposta
+### Formulação candidata revisada
 
 **Continuidade econômica sustentável**
 
 > A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
 
-A submissão:
+A decisão:
 
 - preserva formulação original, evidências e rastreabilidade;
 - separa continuidade econômica de continuidade operacional e métricas financeiras isoladas;
-- preserva resiliência, reservas, financiamento e alocação como dimensões ou capacidades sustentadoras;
+- preserva resiliência, equilíbrio financeiro, reservas, financiamento e alocação como dimensões ou capacidades sustentadoras;
 - mantém `BUS-CAND-005` em `Under Validation`;
 - preserva `BUS-CAND-010` para decisão individual posterior;
-- não cria `COD-013`;
-- não altera o COR;
+- exige nova aplicação dos quatro testes da COEM;
+- não presume permanência absoluta;
 - não cria código canônico;
 - não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
 ## 5. Addendum vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 1.92.0 — BUS-CAND-005 Decision Submission`.
+O addendum vigente é `Canonical Consolidation Matrix 1.93.0 — COD-013`.
 
 ## 6. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-013`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
