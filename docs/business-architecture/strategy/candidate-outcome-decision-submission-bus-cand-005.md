@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-013
-title: Human Decision Submission — BUS-CAND-005
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — BUS-CAND-005
+status: decided
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -15,23 +15,30 @@ related:
   - RP-001-EVIDENCE
   - BUS-CAND-003
   - BUS-CAND-010
-  - M7.14.1
+  - COD-013
+  - M7.15
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-005
+# Human Decision Resolution — BUS-CAND-005
 
 ## 1. Finalidade
 
-Submeter `BUS-CAND-005 — Continuidade econômica sustentável` à décima terceira decisão humana individual do Candidate Outcome Decision Register.
+Registrar a décima terceira decisão humana individual do Candidate Outcome Decision Register para `BUS-CAND-005 — Continuidade econômica sustentável`.
 
-Este documento organiza a recomendação `Reformulate` e as alternativas. Ele **não registra `COD-013`**, não altera o COR, não aprova o candidato e não cria código canônico antes da manifestação explícita do Fundador da Guivos.
+O Fundador da Guivos manifestou explicitamente:
+
+```text
+A — Aceitar Reformulate
+```
+
+A decisão foi registrada como `COD-013`. Ela não aprova o candidato, não cria código canônico, não funde antecipadamente `BUS-CAND-010` e não autoriza fases posteriores.
 
 ## 2. Formulação originalmente avaliada
 
 > A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
 
-## 3. Resultado da COEM
+## 3. Resultado da COEM preservado
 
 | Teste | Resultado | Síntese |
 |---|---|---|
@@ -41,75 +48,66 @@ Este documento organiza a recomendação `Reformulate` e as alternativas. Ele **
 | Outcome Quality | Partial | a formulação agrega viabilidade econômica, continuidade operacional, capacidade organizacional e sustentabilidade estratégica sem fronteiras explícitas |
 | Disposição recomendada | `Reformulate` | preservar continuidade econômica sustentável como condição autônoma e separar dimensões e capacidades sustentadoras |
 
-## 4. Evidências e limites
+## 4. Decisão humana registrada
 
-A validação externa e a COEM sustentam que:
+| Campo | Registro |
+|---|---|
+| Candidato | `BUS-CAND-005 — Continuidade econômica sustentável` |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-1. continuidade operacional é capacidade governada de manter entregas aceitáveis durante disrupções;
-2. *going concern* é avaliação contábil prospectiva e não define integralmente sustentabilidade;
-3. sustentabilidade envolve criação e preservação de valor em múltiplos horizontes e dimensões;
-4. resiliência contribui para continuidade, mas não equivale a estabilidade, caixa ou retorno automático ao estado anterior;
-5. receita, margem, caixa, reservas e disponibilidade operacional são sinais ou dimensões, não o Outcome em si;
-6. permanência absoluta não é controlável nem deve ser prometida;
-7. `BUS-CAND-010` permanece candidato separado até sua própria decisão humana sobre a recomendação de fusão.
-
-## 5. Formulação candidata revisada submetida
+## 5. Formulação candidata revisada
 
 **Continuidade econômica sustentável**
 
 > A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
 
-A formulação deverá retornar aos quatro testes da COEM. Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras, não sub-Outcomes automáticos.
+A formulação permanece candidata e deverá retornar aos quatro testes da COEM.
 
-## 6. Alternativas submetidas à decisão humana
+Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras, não sub-Outcomes automáticos.
 
-### Alternativa A — Aceitar `Reformulate` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 6. Efeitos autorizados
 
 - criar `COD-013`;
-- aceitar formalmente a disposição `Reformulate`;
-- preservar a formulação original, as evidências e a rastreabilidade;
+- aceitar formalmente `Reformulate`;
+- preservar formulação original, evidências e rastreabilidade;
 - registrar a formulação candidata revisada;
 - manter `BUS-CAND-005` em `Under Validation`;
 - preservar `BUS-CAND-010` para decisão individual posterior;
-- reaplicar os quatro testes da COEM antes de qualquer aprovação.
+- exigir nova aplicação dos quatro testes da COEM.
 
-Não autoriza promover o candidato a `Approved`, criar código canônico, fundir antecipadamente `BUS-CAND-010`, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 7. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reformulate`
+- promover `BUS-CAND-005` a `Approved`;
+- criar código canônico `BO-###`;
+- fundir antecipadamente `BUS-CAND-010`;
+- tratar receita, margem, caixa, reservas, disponibilidade operacional ou crescimento isolados como prova suficiente;
+- presumir permanência absoluta;
+- iniciar AQS-O01, Business Capabilities, produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-Mantém `BUS-CAND-005` em `Under Validation` e exige fundamentação para preservar a formulação original ou escolher disposição distinta.
+## 8. Gate da resolução
 
-A rejeição da recomendação não aprova automaticamente a formulação original ou o candidato.
+| Critério | Resultado |
+|---|---|
+| manifestação humana explícita | Pass |
+| recomendação original preservada | Pass |
+| `COD-013` registrado | Pass |
+| formulação candidata revisada registrada | Pass |
+| `BUS-CAND-005` mantido em `Under Validation` | Pass |
+| `BUS-CAND-010` preservado sem fusão antecipada | Pass |
+| distribuição 14/2/2 preservada | Pass |
+| nova COEM exigida | Pass |
+| promoção canônica bloqueada | Pass |
+| AQS-O01 não antecipado | Pass |
+| Product Engineering preservado em pausa | Pass |
 
-### Alternativa C — Devolver para nova análise
+## 9. Próximo passo governado
 
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- fronteira entre continuidade econômica, operacional e institucional;
-- sustentabilidade em múltiplos horizontes;
-- observabilidade sem métrica financeira única;
-- papel de reservas, financiamento, resiliência e capacidade organizacional;
-- relação com `BUS-CAND-010` e alocação governada para renovação;
-- limites contra promessa de permanência absoluta.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-013` não existe;
-- decisões humanas permanecem em `12 de 18`;
-- `BUS-CAND-005` permanece `Under Validation`;
-- `BUS-CAND-010` permanece `Under Validation` e não foi fundido;
-- o COR permanece com 14 `Under Validation`, 2 `Merged` e 2 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
