@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.11.0
+version: 0.13.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -21,13 +21,15 @@ related:
   - BA-STR-002-COD-SUB-004
   - BA-STR-002-COD-SUB-005
   - BA-STR-002-COD-SUB-006
+  - BA-STR-002-COD-SUB-007
   - COD-001
   - COD-002
   - COD-003
   - COD-004
   - COD-005
   - COD-006
-  - M7.8
+  - COD-007
+  - M7.9
 normative: false
 execution_status: in-progress
 ---
@@ -55,9 +57,9 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 6
+Human decisions recorded: 7
 Decision submissions awaiting human response: 0
-Accepted Reformulate dispositions: 4
+Accepted Reformulate dispositions: 5
 Accepted Merge dispositions: 1
 Accepted Reject dispositions: 1
 Candidate state changes: 2
@@ -190,13 +192,37 @@ Experiência permanece na arquitetura da Jornada, como realização de valor em 
 
 > O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
 
+A formulação permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
+
+## 10. COD-007 — ECO-CAND-007
+
+| Campo | Registro |
+|---|---|
+| Nome original | Participação inclusiva e digna |
+| Nome revisado | Participação inclusiva, digna e efetiva |
+| Recomendação | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado após a decisão | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+### Formulação originalmente avaliada
+
+> Participantes de diferentes culturas, crenças, países e contextos conseguem participar do ecossistema com dignidade, acolhimento e acesso a valor essencial.
+
+### Formulação candidata revisada
+
+> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
+
 ### Fundamentação e limites
 
-A reformulação substitui a presunção de conexões necessariamente fortalecedoras por uma condição observável de saúde relacional. Diversidade estrutural, reciprocidade, voluntariedade, autonomia e efeitos sobre terceiros passam a integrar a fronteira do candidato.
+A reformulação concentra o candidato em participação efetiva e observável. Capacidade real de uso, respeito, voz, contestabilidade e redução de barreiras materiais evitáveis integram a fronteira da condição.
 
-Quantidade, densidade, intensidade ou coesão de conexões não constituem evidência suficiente. A formulação permanece `Under Validation` e deverá retornar aos quatro testes da COEM.
+Cadastro, tradução, presença global ou representação nominal não comprovam inclusão. A formulação não promete acesso universal imediato, preserva requisitos legítimos e deverá retornar aos quatro testes da COEM.
 
-## 10. Matriz cumulativa de decisões
+## 11. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
 |---|---|---|---|
@@ -206,7 +232,7 @@ Quantidade, densidade, intensidade ou coesão de conexões não constituem evid�
 | ECO-CAND-002 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected`; experiência preservada na Jornada |
 | ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
-| ECO-CAND-007 | Reformulate | — | Pending human decision |
+| ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | revisão candidata pendente de nova COEM |
 | ECO-CAND-008 | Reformulate | — | Pending human decision |
 | BUS-CAND-001 | Reject | — | Pending human decision |
 | BUS-CAND-002 | Merge into BUS-CAND-003 | — | Pending human decision |
@@ -219,21 +245,21 @@ Quantidade, densidade, intensidade ou coesão de conexões não constituem evid�
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 11. Gate do incremento
+## 12. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
 | manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| `COD-006` registrado | Pass |
+| `COD-007` registrado | Pass |
 | formulação original preservada | Pass |
 | formulação candidata registrada | Pass |
-| `ECO-CAND-006` mantido em `Under Validation` | Pass |
+| `ECO-CAND-007` mantido em `Under Validation` | Pass |
 | nova COEM exigida antes de aprovação | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 12. Próximo passo governado
+## 13. Próximo passo governado
 
-Preparar e submeter `ECO-CAND-007 — Participação inclusiva e digna` à sétima decisão humana individual sobre a recomendação `Reformulate`.
+Preparar e submeter `ECO-CAND-008 — Participação confiável e protegida` à oitava decisão humana individual sobre a recomendação `Reformulate`.
