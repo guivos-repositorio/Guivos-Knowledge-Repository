@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-011
-title: Human Decision Submission — BUS-CAND-003
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — BUS-CAND-003
+status: decision-recorded
+version: 0.2.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -15,108 +15,88 @@ depends_on:
 related:
   - RP-001-EVIDENCE
   - COD-010
+  - COD-011
   - BUS-CAND-002
-  - M7.12.1
+  - M7.13
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-003
+# Human Decision Resolution — BUS-CAND-003
 
-## 1. Finalidade
+## 1. Decisão humana registrada
 
-Submeter `BUS-CAND-003 — Habilitação consistente e contextualmente relevante de valor legítimo` à décima primeira decisão humana individual do Candidate Outcome Decision Register.
+| Campo | Registro |
+|---|---|
+| Candidato | `BUS-CAND-003` |
+| Nome | Habilitação consistente e contextualmente relevante de valor legítimo |
+| Recomendação da COEM | `Reformulate` |
+| Decisão humana | Aceitar `Reformulate` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-Este documento organiza a recomendação `Reformulate` e as alternativas. Ele **não registra `COD-011`**, não altera o COR, não aprova o candidato e não cria código canônico antes da manifestação explícita do Fundador da Guivos.
+A manifestação explícita do Fundador foi registrada como `COD-011`.
 
-## 2. Linhagem da formulação
+## 2. Linhagem preservada
 
-### Formulação originalmente avaliada pela COEM
+### Formulação originalmente avaliada
 
 > A Guivos entrega valor legítimo com qualidade, segurança e continuidade suficientes para sustentar experiências relevantes.
 
-### Formulação combinada vigente após COD-010
+### Formulação candidata revisada
 
 **Habilitação consistente e contextualmente relevante de valor legítimo**
 
 > A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
 
-`COD-010` incorporou a relevância contextual de `BUS-CAND-002`, mas não decidiu a recomendação própria `Reformulate` de `BUS-CAND-003`.
+A formulação incorpora a relevância contextual proveniente de `COD-010`, sem apagar a formulação originalmente avaliada ou a contribuição rastreável de `BUS-CAND-002`.
 
-## 3. Resultado da COEM
+## 3. Fundamentos da decisão
 
-| Teste | Resultado | Síntese |
-|---|---|---|
-| Essential | Partial | habilitar valor legítimo é material ao propósito, mas o valor é contextual e cocriado e não permanece sob controle unilateral da Guivos |
-| Decision | Pass | degradação persistente exige revisão de prioridades, capacidades, proposições, controles e relações econômicas |
-| Replacement | Pass | a condição permanece válida após substituição de produtos, canais e tecnologias |
-| Outcome Quality | Partial | a formulação original combinava capacidade organizacional, propriedades de qualidade, guardrails e resultado vivido por terceiros |
-| Disposição recomendada | `Reformulate` | preservar a condição empresarial de habilitar valor legítimo com consistência, distinguindo-a do valor efetivamente realizado |
+A COEM registrou `Partial / Pass / Pass / Partial` e recomendou `Reformulate` porque:
 
-## 4. Evidências e limites
+1. habilitar valor legítimo é material ao propósito, mas o valor é contextual e cocriado;
+2. a Guivos não controla unilateralmente o valor realizado por participantes e stakeholders;
+3. qualidade, segurança e continuidade são propriedades verificáveis e capacidades sustentadoras;
+4. a formulação original combinava capacidade organizacional, guardrails e resultado vivido por terceiros;
+5. personalização, satisfação pontual, atividade, disponibilidade técnica ou velocidade de resposta não constituem prova suficiente de valor legítimo ou relevância.
 
-A validação externa e a COEM sustentam que:
-
-1. valor é contextual e cocriado, não entregue unilateralmente;
-2. consistência e qualidade são propriedades de sistemas de gestão e entrega;
-3. legitimidade exige considerar reciprocidade, distribuição e efeitos sobre múltiplos stakeholders;
-4. qualidade, segurança e continuidade sustentam a condição, mas não devem ser acumuladas como sub-Outcomes;
-5. personalização, satisfação pontual, atividade, disponibilidade técnica ou velocidade de resposta não comprovam valor legítimo ou relevância;
-6. `COD-010` incorporou sensing, adaptação e relevância contextual sem aprovar o alvo.
-
-## 5. Formulação candidata revisada submetida
-
-**Habilitação consistente e contextualmente relevante de valor legítimo**
-
-> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
-
-A formulação deverá retornar aos quatro testes da COEM. Qualidade, segurança, continuidade, inteligência e adaptação permanecem propriedades verificáveis ou capacidades sustentadoras, não evidência automática de valor realizado.
-
-## 6. Alternativas submetidas à decisão humana
-
-### Alternativa A — Aceitar `Reformulate` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 4. Efeitos autorizados
 
 - criar `COD-011`;
-- aceitar formalmente a disposição `Reformulate`;
-- preservar a formulação originalmente avaliada, a incorporação de `BUS-CAND-002`, as evidências e a rastreabilidade;
-- registrar a formulação combinada vigente como formulação candidata revisada de `BUS-CAND-003`;
+- aceitar formalmente `Reformulate`;
+- preservar formulações, evidências e rastreabilidade;
+- registrar a formulação combinada como formulação candidata revisada de `BUS-CAND-003`;
 - manter `BUS-CAND-003` em `Under Validation`;
-- reaplicar os quatro testes da COEM antes de qualquer aprovação.
+- exigir nova aplicação dos quatro testes da COEM.
 
-Não autoriza promover o candidato a `Approved`, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 5. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reformulate`
+A decisão não:
 
-Mantém `BUS-CAND-003` em `Under Validation` e exige fundamentação para preservar outra formulação ou escolher disposição distinta.
+- aprova ou canonicaliza `BUS-CAND-003`;
+- cria código `BO-###`;
+- atribui à Guivos controle unilateral sobre valor vivido;
+- transforma propriedades de entrega ou capacidades sustentadoras em sub-Outcomes;
+- inicia AQS-O01, Business Capabilities, produtos, Commercial Model ou Go-to-Market;
+- retoma Product Engineering, W0-01, POCs, ambientes ou produção.
 
-A rejeição da recomendação não aprova automaticamente a formulação original, a formulação combinada ou o candidato.
-
-### Alternativa C — Devolver para nova análise
-
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- fronteira entre habilitação empresarial e valor realizado por terceiros;
-- unidade observável do candidato após a incorporação de relevância contextual;
-- papel de qualidade, segurança, continuidade, inteligência e adaptação;
-- legitimidade, reciprocidade e efeitos distributivos entre stakeholders;
-- risco de transformar capacidades sustentadoras em sub-Outcomes.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
+## 6. Estado após a decisão
 
 ```text
-A — Aceitar Reformulate
-B — Rejeitar Reformulate, com fundamentação
-C — Devolver para nova análise
+Human decisions recorded: 11 of 18
+Decision submissions awaiting human response: 0
+BUS-CAND-003: Under Validation
+COR: 14 Under Validation, 2 Merged, 2 Rejected
+Approved Outcomes: 0
+Canonical EO/BO codes: 0
+AQS-O01: not started
+Product Engineering: paused before W0-01
 ```
 
-Até essa manifestação:
+## 7. Próximo passo governado
 
-- `COD-011` não existe;
-- decisões humanas permanecem em `10 de 18`;
-- `BUS-CAND-003` permanece `Under Validation`;
-- o COR permanece com 14 `Under Validation`, 2 `Merged` e 2 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Após integração deste incremento, preparar e submeter `BUS-CAND-004 — Confiança e legitimidade institucional` à décima segunda decisão humana individual sobre a recomendação `Reformulate`.
