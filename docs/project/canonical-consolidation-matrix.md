@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.6.0
+version: 2.7.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-012
   - GKR-CANON-MATRIX-UXA-011
   - GKR-CANON-MATRIX-UXA-010
   - GKR-CANON-MATRIX-UXA-009
@@ -30,7 +31,8 @@ related:
   - UXA-009
   - UXA-010
   - UXA-011
-  - M7.19.5
+  - UXA-012
+  - M7.19.6
 normative: false
 ---
 
@@ -49,9 +51,9 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Unificar | elementos redundantes são consolidados sob uma autoridade |
 | Remover do catálogo | candidato não integra o catálogo futuro, mas permanece rastreável |
 | Pausar | trabalho permanece válido, sem execução adicional até nova autorização |
-| Descoberta (`Discovery`) | hipótese e arquitetura inicial em desenvolvimento, sem implementação |
+| Descoberta | hipótese e arquitetura inicial em desenvolvimento, sem implementação |
 | Wireframe | hipótese visual estrutural para validação, sem design final ou implementação |
-| Somente histórico (`Historical only`) | elemento permanece como evidência histórica |
+| Somente histórico | elemento permanece como evidência histórica |
 | Pendente | depende de evidência ou autoridade competente |
 
 ## 3. Decisões estruturais vigentes
@@ -60,56 +62,48 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 |---|---|---|
 | Repositório de Conhecimento da Guivos como fonte oficial | Manter | ADR-001 e governança vigente |
 | Arquitetura de Fundação | Manter congelada | baseline A2-B3 |
-| Guivos Journey | Manter | PAS-001 1.0.0 ativo; nove capacidades concluídas |
+| Guivos Journey | Manter | PAS-001 1.0.0; nove capacidades concluídas |
 | Engenharia de Produto | Manter pausada | antes de W0-01; execução 0% |
 | Modelo Econômico da Guivos | Manter documentariamente concluído | GEM-001 a GEM-010; validação real pendente |
 | Remediação do repositório | Manter concluída | R1–R6 concluídos |
 | Revisão da Arquitetura de Negócios | Manter ativa e pausar operacionalmente | após COD-017 e antes de BUS-CAND-010 |
-| Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões; nenhuma submissão aberta |
-| Validação externa e matriz de avaliação | Manter concluídas | 18 de 18 candidatos e 6 de 6 grupos avaliados |
-| Decisões humanas 1 a 17 | Manter | COD-001 a COD-017 preservados |
-| Registro de Decisões sobre Candidatos a Resultados | Manter ativo | CODR 0.33.0; 17 de 18 decisões |
-| Registro de Candidatos a Resultados | Refinar | COR 0.29.0; 10 em validação, 2 incorporados e 6 rejeitados |
-| Capacidade de reinvestimento responsável | Manter pendente | BUS-CAND-010 em validação; decisão não antecipada |
-| Décima oitava submissão | Pendente | BA-STR-002-COD-SUB-018 não criado |
-| Décima oitava decisão | Pendente | COD-018 não criado |
-| Arquitetura da Experiência da Guivos | Descoberta | UXA-000 a UXA-004 integrados |
-| Programa Inicial de Wireframes de Baixa Fidelidade | Wireframe | UXA-005 criado; método e critérios registrados |
-| Tela Hoje | Refinar em wireframe | UXA-006 0.4.0; validação funcional e presença companheira aplicadas |
-| Detalhe de oportunidade | Wireframe | UXA-007; validação funcional segundo UXA-011 pendente |
-| Cadastro de oportunidade pela Organização | Wireframe | UXA-008; validação funcional pendente |
-| Padrão de Linguagem Clara e Identificadores Técnicos | Refinar | UXA-009; nome completo antes do código e estados traduzidos |
-| Validação Funcional e Reformulação da Tela Hoje | Manter | UXA-010; decisão humana e consequências registradas |
-| Presença Companheira e Coerência de Posicionamento | Manter como princípio transversal | UXA-011; aplicável a produtos, canais e participantes |
-| Acompanhamento da jornada | Refinar em descoberta | reconhecer continuidade sem controlar decisões |
-| Propósito na experiência | Manter | demonstrado por utilidade, contexto e Próximo Passo, não por slogans genéricos |
-| Autonomia na comunicação | Manter | revisar, adiar, corrigir, recusar e encerrar permanecem alternativas legítimas |
-| Voz da Guivos | Refinar | humana, serena, específica, contextual, respeitosa, profunda, transparente, inclusiva e consistente |
-| Intimidade artificial e pressão emocional | Remover do padrão | não constituem presença companheira |
-| Publicidade e voz companheira | Separar explicitamente | Guivos Ads não poderá disfarçar patrocínio ou manipular relevância |
-| Coerência entre produtos | Manter | Journey, Mall, Travel, Business, Media, Ads e Intelligence preservam o mesmo posicionamento |
-| Síntese do momento | Refinar | bloco condicional; omitido quando repetir um único item ou não acrescentar compreensão |
-| Atenção principal | Manter | no máximo um item destacado; itens adicionais na Central de Intervenções |
-| Contexto de atuação | Refinar | seletor explícito com `Agindo como` |
-| Possibilidades na Tela Hoje | Refinar em wireframe | até dois cartões empilhados e em largura integral; relação com o Próximo Passo explicada |
-| Coletivos e atividades na Tela Hoje | Refinar em wireframe | bloco somente com utilidade temporal |
+| Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões |
+| Decisões humanas 1 a 17 | Manter | COD-001 a COD-017 |
+| Capacidade de reinvestimento responsável | Manter pendente | BUS-CAND-010 em validação |
+| Décima oitava submissão e decisão | Pendente | não criadas |
+| Arquitetura da Experiência | Descoberta | UXA-000 a UXA-012 |
+| Programa de Wireframes | Wireframe | UXA-005 |
+| Tela Hoje | Refinar em wireframe | UXA-006 0.4.0; UXA-010 e UXA-011 |
+| Detalhe de Oportunidade | Refinar em wireframe | UXA-007 0.3.0; validação aplicada por UXA-012 |
+| Cadastro pela Organização | Wireframe | UXA-008; validação funcional pendente |
+| Linguagem Clara | Manter | UXA-009 |
+| Presença Companheira | Manter como princípio transversal | UXA-011 |
+| Gate de alinhamento à Fundação | Manter como obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios Permanentes |
+| Validação do Detalhe de Oportunidade | Manter | UXA-012 |
+| Oportunidade como meio | Manter | oportunidade apoia Próximo Passo; não constitui finalidade |
+| Relação com a jornada | Refinar | antecede preço e conversão no Detalhe de Oportunidade |
+| Possibilidade versus recomendação | Separar explicitamente | apresentação não equivale a recomendação definitiva |
+| Investimento e condições | Refinar em wireframe | preço, custo total, validade, prazo e cancelamento transparentes |
+| Relevância e temporalidade | Refinar | explicar relação com objetivo, Próximo Passo e motivo de aparecer agora |
+| Condições para participar | Refinar | elegibilidade explicada sem simular aprovação |
+| Organização responsável | Refinar | apresentada em `Quem oferece` |
+| Relação comercial | Refinar | apresentada em `Relação comercial com a Guivos`; não altera relevância |
+| Ação principal | Refinar | varia conforme tipo e estado da oportunidade |
+| Salvar e comparar | Manter | alternativas legítimas sem pressão |
+| Mapa | Condicionar | somente quando localização for material |
 | Navegação pessoal | Manter em descoberta | Hoje, Jornada, Explorar, Mapa e Eu |
-| Validade do preço | Refinar | período até o qual o valor permanece vigente para novas adesões |
-| Experiência da Organização | Descoberta | visão geral, oportunidades, programas, coletivos, resultados e gestão |
+| Experiência da Organização | Descoberta | validação do cadastro é próximo ato |
 | Experiência do Coletivo | Descoberta | início, atividades, pessoas, mapa, recursos e gestão |
-| Controle de relevância | Refinar em descoberta | explícito, explicável, ajustável e contestável |
-| Fluxo de oportunidades | Refinar em descoberta | cadastro, avaliação, ativação, apresentação e encerramento separados |
-| Preços e condições | Refinar em wireframe | preço principal, custo total, taxas, validade, cancelamento e relação comercial visíveis |
-| Mapa | Descoberta | oportunidades, Organizações, Coletivos e atividades; localização de participantes bloqueada |
+| Controle de relevância | Refinar | explícito, explicável, ajustável e contestável |
+| Fluxo de oportunidades | Refinar | cadastro, avaliação, ativação, apresentação e encerramento separados |
 | Protótipo navegável | Pendente | não iniciado |
 | Design visual | Pendente | não iniciado |
 | Testes de usabilidade | Pendente | não iniciados |
-| Resultados canônicos | Pendente | nenhum código ou catálogo canônico |
+| Resultados canônicos | Pendente | nenhum criado |
 | Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
 | Produtos especializados | Preservar para replanejamento | ordem histórica não autoriza início |
-| Modelo Comercial e Entrada no Mercado | Pendente | posteriores às dependências arquiteturais |
-| Validação de Mercado | Manter em paralelo | execução própria ainda pendente |
-| Validador mecânico | Manter | workflow permanente do repositório |
+| Validação de Mercado | Manter em paralelo | execução própria pendente |
+| Validador mecânico | Manter | workflow permanente |
 
 ## 4. Decisões sobre candidatos preservadas
 
@@ -117,41 +111,43 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 |---|---|---|
 | ECO-CAND-001 | candidato de resultado do ecossistema | Reformular aceito; nova avaliação pendente |
 | ECO-CAND-002 | candidato de resultado do ecossistema | Reformular aceito; nova avaliação pendente |
-| ECO-CAND-003 | candidato combinado do ecossistema | formulação combinada pendente de nova avaliação |
+| ECO-CAND-003 | candidato combinado do ecossistema | formulação combinada pendente |
 | ECO-CAND-004 | experiência como resultado | Rejeitado; conteúdo preservado na Jornada |
 | ECO-CAND-005 | candidato incorporado | Incorporado em ECO-CAND-003 |
-| ECO-CAND-006 | saúde relacional | Reformular aceito; nova avaliação pendente |
-| ECO-CAND-007 | participação inclusiva, digna e efetiva | Reformular aceito; nova avaliação pendente |
-| ECO-CAND-008 | participação protegida, justa e contestável | Reformular aceito; nova avaliação pendente |
-| BUS-CAND-001 | autoridade constitucional | Rejeitado como Resultado Empresarial; obrigação de governança preservada |
-| BUS-CAND-002 | candidato empresarial incorporado | Incorporado em BUS-CAND-003 |
-| BUS-CAND-003 | valor sustentável | Reformular aceito; nova avaliação pendente |
+| ECO-CAND-006 | saúde relacional | Reformular aceito |
+| ECO-CAND-007 | participação inclusiva, digna e efetiva | Reformular aceito |
+| ECO-CAND-008 | participação protegida, justa e contestável | Reformular aceito |
+| BUS-CAND-001 | autoridade constitucional | Rejeitado como Resultado; obrigação preservada |
+| BUS-CAND-002 | candidato incorporado | Incorporado em BUS-CAND-003 |
+| BUS-CAND-003 | valor sustentável | Reformular aceito |
 | BUS-CAND-004 | legitimidade institucional sustentada | Reformular aceito |
 | BUS-CAND-005 | continuidade econômica sustentável | Reformular aceito |
-| BUS-CAND-006 | crescimento responsável e resiliente | Rejeitado como Resultado permanente; expansão responsável preservada |
-| BUS-CAND-007 | aprendizado e adaptação institucionais | Rejeitado como Resultado permanente; capacidades preservadas |
-| BUS-CAND-008 | saúde das relações de parceria | Rejeitado como Resultado permanente; governança de parceiros preservada |
-| BUS-CAND-009 | coerência global com adequação contextual | Rejeitado como Resultado permanente; princípio arquitetural preservado |
+| BUS-CAND-006 | crescimento responsável e resiliente | Rejeitado como Resultado permanente |
+| BUS-CAND-007 | aprendizado e adaptação institucionais | Rejeitado como Resultado permanente |
+| BUS-CAND-008 | saúde das relações de parceria | Rejeitado como Resultado permanente |
+| BUS-CAND-009 | coerência global com adequação contextual | Rejeitado como Resultado; princípio preservado |
 | BUS-CAND-010 | capacidade de reinvestimento responsável | Em validação; decisão pendente |
 
-## 5. Resultado da presença companheira
+## 5. Resultado da validação do Detalhe de Oportunidade
 
 A decisão consolidada:
 
-- transforma o conceito de companheira em princípio verificável de experiência;
-- relaciona Momento Atual, jornada, relevância e Próximo Passo;
-- preserva autonomia e alternativas legítimas;
-- exige propósito perceptível no comportamento da tela;
-- impede linguagem genérica sem relação com a identidade da Guivos;
-- separa cuidado, relevância, publicidade e intenção comercial;
-- aplica o mesmo posicionamento a todos os produtos do ecossistema;
-- atualiza a Tela Hoje como demonstração de baixa fidelidade;
-- não cria personagem, protótipo, design visual, testes ou Engenharia de Produto.
+- aplica o gate obrigatório da Fundação;
+- posiciona a contribuição para a jornada antes da leitura comercial;
+- mantém preço e condições transparentes;
+- declara a oportunidade como possibilidade;
+- explica relevância e temporalidade;
+- preserva autonomia para corrigir, recusar, salvar e comparar;
+- adapta a ação principal ao estado real;
+- condiciona mapa à materialidade da localização;
+- separa publicidade e comissão da relevância funcional;
+- impede que a superfície seja tratada como página genérica de venda;
+- não inicia protótipo, design, teste ou desenvolvimento.
 
 ## 6. Documento complementar vigente
 
-O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Presença Companheira e Coerência de Posicionamento`.
+O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Validação Funcional do Detalhe de Oportunidade`.
 
 ## 7. Próximo ato
 
-Validar funcionalmente o Detalhe de Oportunidade segundo o princípio de presença companheira, preservando transparência comercial, elegibilidade, explicação de relevância e autonomia.
+Validar funcionalmente o Cadastro de Oportunidade pela Organização segundo a Fundação da Guivos, presença companheira institucional e responsabilidade sobre o ciclo da oportunidade.
