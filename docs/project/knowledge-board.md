@@ -2,17 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.79.0
+version: 11.80.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.79.0
+  - ROADMAP-11.80.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-016
-  - M7.17.1
+  - COD-016
+  - M7.18
 normative: false
 ---
 
@@ -27,16 +28,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.17.1 — Sixteenth Human Outcome Decision Submitted` |
+| Marco | `M7.18 — Sixteenth Human Outcome Decision Recorded` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 12 `Under Validation`; 2 `Merged`; 4 `Rejected` |
-| CODR | 15 de 18 decisões humanas; 1 submissão aberta |
+| COR | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
+| CODR | 16 de 18 decisões humanas; 0 submissões abertas |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
-| Reject aceitos | 4 |
-| `BUS-CAND-008` | `Under Validation`; decisão pendente sobre `Reject` |
+| Reject aceitos | 5 |
+| `BUS-CAND-008` | `Rejected`; governança de parceiros e gestão de alianças preservadas |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -50,18 +51,18 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - Guivos Economic Model documentariamente concluído;
 - COR, validação externa e COEM concluídos;
 - remediação R1–R5 e R6 concluídas;
-- `COD-001` a `COD-015` registrados.
+- `COD-001` a `COD-016` registrados.
 
 ### Ativo
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- submissão de `BUS-CAND-008` aguardando manifestação humana.
+- preparação da submissão de `BUS-CAND-009`.
 
 ### Pendente
 
-- três decisões humanas restantes;
+- duas decisões humanas restantes;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -72,14 +73,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. Submissão de BUS-CAND-008
+## 4. COD-016
 
-A COEM recomenda `Reject` para `BUS-CAND-008 — Saúde das relações de parceria`.
+O Fundador aceitou `Reject` para `BUS-CAND-008 — Saúde das relações de parceria`.
 
-A recomendação retira saúde das relações de parceria do futuro catálogo de Business Outcomes e preserva seu conteúdo na arquitetura de capacidades, governança de parceiros e critérios de portfólio.
+Saúde das relações de parceria foi retirada do futuro catálogo de Business Outcomes. Governança de parceiros, gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios de portfólio permanecem preservados na futura arquitetura de capacidades.
 
-A importância estratégica das parcerias permanece preservada. Quantidade, duração ou ausência de conflito não constituem prova suficiente, e decisões de entrada, evolução, renovação, substituição e saída permanecem legítimas e governadas.
+A decisão não reduz a importância estratégica das parcerias, não exige internalização e não considera quantidade, duração ou ausência de conflito como prova suficiente de saúde relacional.
 
 ## 5. Próximo movimento
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-016`. Nenhuma decisão será inferida automaticamente.
+Após integração deste incremento, preparar a décima sétima submissão humana para `BUS-CAND-009 — Coerência global com adequação contextual`, cuja recomendação da COEM é `Reject`.
