@@ -1,22 +1,23 @@
 ---
-id: ROADMAP-11.77.0
-title: Roadmap Arquitetural — BUS-CAND-007 Decision Submission
+id: ROADMAP-11.78.0
+title: Roadmap Arquitetural — COD-015 Registrado
 status: active
-version: 11.77.0
+version: 11.78.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.76.0
+  - ROADMAP-11.77.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-015
-  - M7.16.1
+  - COD-015
+  - M7.17
 ---
 
-# Roadmap Arquitetural — BUS-CAND-007 Decision Submission
+# Roadmap Arquitetural — COD-015 Registrado
 
 ## 1. Autoridade
 
@@ -27,17 +28,16 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.16.1` |
+| Marco | `M7.17` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 13 `Under Validation`; 2 `Merged`; 3 `Rejected` |
-| CODR | `14 de 18` decisões; 1 submissão aberta |
-| Submissão vigente | `BUS-CAND-007 — Reject` |
+| COR | 12 `Under Validation`; 2 `Merged`; 4 `Rejected` |
+| CODR | `15 de 18` decisões; 0 submissões abertas |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
-| Reject aceitos | 3 |
+| Reject aceitos | 4 |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -67,31 +67,26 @@ R1 — precedência e estado global — concluído
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 14 de 18;
-- submissões abertas: 1;
+- decisões humanas: 15 de 18;
+- submissões abertas: 0;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
-- `ECO-CAND-004`, `BUS-CAND-001` e `BUS-CAND-006`: `Rejected`;
+- `ECO-CAND-004`, `BUS-CAND-001`, `BUS-CAND-006` e `BUS-CAND-007`: `Rejected`;
 - `BUS-CAND-003`, `BUS-CAND-004` e `BUS-CAND-005`: `Reformulate` aceitos;
-- `BUS-CAND-007`: submetido à decisão sobre `Reject`;
 - Outcomes canônicos: 0.
 
-## 5. Submissão de BUS-CAND-007
+## 5. Resultado de COD-015
 
-A COEM recomenda `Reject`.
+A recomendação `Reject` foi aceita para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
 
-Formulação avaliada:
+A decisão retirou aprendizado institucional do futuro catálogo de Business Outcomes e preservou **aprendizado institucional** como capacidade sustentadora multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
 
-> A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor.
-
-A recomendação retira aprendizado institucional do futuro catálogo de Business Outcomes e preserva **aprendizado e adaptação institucionais** como capacidade sustentadora de sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
-
-A recomendação não elimina aprendizagem da arquitetura. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
+A decisão não elimina aprendizagem da arquitetura. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. receber a decisão humana sobre `BUS-CAND-007`;
-2. concluir as três decisões posteriores;
+1. submeter `BUS-CAND-008` à decisão humana sobre `Reject`;
+2. concluir as duas decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -127,4 +122,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`. Nenhuma decisão será inferida automaticamente.
+Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
