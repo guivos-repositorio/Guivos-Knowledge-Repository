@@ -35,7 +35,7 @@ normative: false
 - Knowledge Board central atualizado para `11.83.0`;
 - Architectural Milestones central atualizado para `4.81.0`;
 - Matriz de Consolidação Canônica central atualizada para `2.2.0`;
-- navegação oficial ampliada com Experience Architecture;
+- Experience Architecture adicionada como domínio documental construído e pesquisável do GKR;
 - Business Outcomes registrado como operacionalmente pausado antes de `BUS-CAND-010`.
 
 ## Preserved
