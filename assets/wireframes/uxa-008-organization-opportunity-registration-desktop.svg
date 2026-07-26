@@ -1,121 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe de baixa fidelidade do cadastro de oportunidade pela Organização</title>
-  <desc id="desc">Estrutura desktop com navegação lateral, progresso em onze etapas, formulário de preço e condições, painel de consistência e ações de salvamento e envio.</desc>
-  <rect width="1440" height="1024" fill="#ffffff"/>
-  <rect x="0" y="0" width="250" height="1024" fill="#f3f3f3" stroke="#999999"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe reformulado do Cadastro de Oportunidade pela Organização</title>
+  <desc id="desc">Estrutura desktop com contexto institucional, contribuição para jornadas, onze etapas reformuladas, investimento e condições, painel de coerência com a Fundação da Guivos, prévia e ações de salvamento.</desc>
+  <rect width="1440" height="1120" fill="#ffffff"/>
+  <rect x="0" y="0" width="250" height="1120" fill="#f3f3f3" stroke="#999999"/>
   <text x="28" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="700">Guivos Business</text>
-  <text x="28" y="82" font-family="Arial, sans-serif" font-size="12">Instituto Horizonte ▾</text>
+  <text x="28" y="82" font-family="Arial, sans-serif" font-size="12">Agindo como: Instituto Horizonte ▾</text>
   <g font-family="Arial, sans-serif" font-size="14">
     <text x="28" y="138">Visão Geral</text>
     <rect x="16" y="158" width="218" height="42" rx="6" fill="#222222"/>
     <text x="28" y="184" fill="#ffffff" font-weight="700">Oportunidades</text>
     <text x="28" y="230">Programas e Públicos</text>
     <text x="28" y="270">Coletivos e Parcerias</text>
-    <text x="28" y="310">Resultados</text>
+    <text x="28" y="310">Resultados e Aprendizados</text>
     <text x="28" y="350">Organização</text>
   </g>
-  <text x="28" y="940" font-family="Arial, sans-serif" font-size="11">Central de ajuda</text>
-  <text x="28" y="966" font-family="Arial, sans-serif" font-size="11">Permissões e conformidade</text>
+  <text x="28" y="1036" font-family="Arial, sans-serif" font-size="11">Central de ajuda</text>
+  <text x="28" y="1062" font-family="Arial, sans-serif" font-size="11">Permissões, dados e conformidade</text>
 
   <rect x="250" y="0" width="1190" height="76" fill="#ffffff" stroke="#cccccc"/>
-  <text x="286" y="46" font-family="Arial, sans-serif" font-size="22" font-weight="700">Nova oportunidade</text>
-  <text x="1170" y="45" font-family="Arial, sans-serif" font-size="12">Rascunho salvo às 09:38</text>
+  <text x="286" y="44" font-family="Arial, sans-serif" font-size="22" font-weight="700">Criar oportunidade responsável</text>
+  <text x="286" y="64" font-family="Arial, sans-serif" font-size="10" fill="#555555">Unidade: Educação Profissional · Responsável: Marina Souza</text>
+  <text x="1160" y="45" font-family="Arial, sans-serif" font-size="12">Rascunho salvo às 09:38</text>
   <rect x="1280" y="22" width="126" height="34" rx="6" fill="#ffffff" stroke="#555555"/>
   <text x="1343" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Pré-visualizar</text>
 
   <rect x="250" y="76" width="1190" height="70" fill="#fafafa" stroke="#dddddd"/>
-  <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle">
-    <circle cx="300" cy="108" r="14" fill="#222222"/><text x="300" y="112" fill="#ffffff">1</text><text x="300" y="135">Tipo</text>
+  <g font-family="Arial, sans-serif" font-size="9" text-anchor="middle">
+    <circle cx="300" cy="108" r="14" fill="#222222"/><text x="300" y="112" fill="#ffffff">1</text><text x="300" y="135">Natureza</text>
     <line x1="314" y1="108" x2="386" y2="108" stroke="#888888"/>
-    <circle cx="400" cy="108" r="14" fill="#222222"/><text x="400" y="112" fill="#ffffff">2</text><text x="400" y="135">Finalidade</text>
+    <circle cx="400" cy="108" r="14" fill="#222222"/><text x="400" y="112" fill="#ffffff">2</text><text x="400" y="135">Jornada</text>
     <line x1="414" y1="108" x2="486" y2="108" stroke="#888888"/>
-    <circle cx="500" cy="108" r="14" fill="#222222"/><text x="500" y="112" fill="#ffffff">3</text><text x="500" y="135">Responsável</text>
+    <circle cx="500" cy="108" r="14" fill="#222222"/><text x="500" y="112" fill="#ffffff">3</text><text x="500" y="135">Responsabilidade</text>
     <line x1="514" y1="108" x2="586" y2="108" stroke="#888888"/>
     <circle cx="600" cy="108" r="14" fill="#222222"/><text x="600" y="112" fill="#ffffff">4</text><text x="600" y="135">Disponibilidade</text>
     <line x1="614" y1="108" x2="686" y2="108" stroke="#888888"/>
-    <circle cx="700" cy="108" r="14" fill="#222222"/><text x="700" y="112" fill="#ffffff">5</text><text x="700" y="135">Local</text>
+    <circle cx="700" cy="108" r="14" fill="#222222"/><text x="700" y="112" fill="#ffffff">5</text><text x="700" y="135">Acesso</text>
     <line x1="714" y1="108" x2="786" y2="108" stroke="#888888"/>
-    <circle cx="800" cy="108" r="15" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="800" y="112" font-weight="700">6</text><text x="800" y="135" font-weight="700">Preço</text>
+    <circle cx="800" cy="108" r="15" fill="#ffffff" stroke="#111111" stroke-width="2"/><text x="800" y="112" font-weight="700">6</text><text x="800" y="135" font-weight="700">Investimento</text>
     <line x1="815" y1="108" x2="886" y2="108" stroke="#cccccc"/>
-    <circle cx="900" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="900" y="112">7</text><text x="900" y="135">Elegibilidade</text>
+    <circle cx="900" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="900" y="112">7</text><text x="900" y="135">Participação</text>
     <line x1="914" y1="108" x2="986" y2="108" stroke="#cccccc"/>
     <circle cx="1000" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="1000" y="112">8</text><text x="1000" y="135">Proteção</text>
     <line x1="1014" y1="108" x2="1086" y2="108" stroke="#cccccc"/>
     <circle cx="1100" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="1100" y="112">9</text><text x="1100" y="135">Comercial</text>
     <line x1="1114" y1="108" x2="1186" y2="108" stroke="#cccccc"/>
-    <circle cx="1200" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="1200" y="112">10</text><text x="1200" y="135">Prévia</text>
+    <circle cx="1200" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="1200" y="112">10</text><text x="1200" y="135">Coerência</text>
     <line x1="1214" y1="108" x2="1286" y2="108" stroke="#cccccc"/>
-    <circle cx="1300" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="1300" y="112">11</text><text x="1300" y="135">Enviar</text>
+    <circle cx="1300" cy="108" r="14" fill="#ffffff" stroke="#999999"/><text x="1300" y="112">11</text><text x="1300" y="135">Declarar</text>
   </g>
 
-  <text x="286" y="188" font-family="Arial, sans-serif" font-size="24" font-weight="700">Preço e condições</text>
-  <text x="286" y="214" font-family="Arial, sans-serif" font-size="12" fill="#555555">Informe o custo real da oportunidade. Valores e condições serão exibidos antes da decisão do participante.</text>
+  <rect x="286" y="166" width="1120" height="126" rx="10" fill="#f7f7f7" stroke="#999999"/>
+  <text x="310" y="194" font-family="Arial, sans-serif" font-size="14" font-weight="700">Jornada e contribuição declaradas</text>
+  <text x="310" y="220" font-family="Arial, sans-serif" font-size="11" font-weight="700">Momento geral</text>
+  <text x="310" y="240" font-family="Arial, sans-serif" font-size="11">Conhecimento básico de inglês e necessidade de prática profissional.</text>
+  <text x="690" y="220" font-family="Arial, sans-serif" font-size="11" font-weight="700">Próximo Passo e avanço possível</text>
+  <text x="690" y="240" font-family="Arial, sans-serif" font-size="11">Praticar comunicação aplicada e ampliar confiança em situações de trabalho.</text>
+  <text x="1080" y="220" font-family="Arial, sans-serif" font-size="11" font-weight="700">Limite declarado</text>
+  <text x="1080" y="240" font-family="Arial, sans-serif" font-size="11">Não garante fluência, promoção ou contratação.</text>
+  <text x="310" y="272" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Editar Jornada e contribuição</text>
+  <text x="510" y="272" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver evidências apresentadas</text>
 
-  <rect x="286" y="244" width="744" height="654" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
-  <text x="316" y="282" font-family="Arial, sans-serif" font-size="14" font-weight="700">Modelo de acesso *</text>
+  <text x="286" y="334" font-family="Arial, sans-serif" font-size="24" font-weight="700">Investimento e condições</text>
+  <text x="286" y="360" font-family="Arial, sans-serif" font-size="12" fill="#555555">Informe o custo real sem desconectar o investimento da contribuição e dos limites já declarados.</text>
+
+  <rect x="286" y="390" width="744" height="562" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="316" y="426" font-family="Arial, sans-serif" font-size="14" font-weight="700">Modelo de acesso *</text>
   <g font-family="Arial, sans-serif" font-size="12">
-    <rect x="316" y="300" width="138" height="38" rx="6" fill="#222222"/><text x="385" y="324" text-anchor="middle" fill="#ffffff">Paga</text>
-    <rect x="466" y="300" width="138" height="38" rx="6" fill="#ffffff" stroke="#777777"/><text x="535" y="324" text-anchor="middle">Gratuita</text>
-    <rect x="616" y="300" width="138" height="38" rx="6" fill="#ffffff" stroke="#777777"/><text x="685" y="324" text-anchor="middle">Subsidiada</text>
-    <rect x="766" y="300" width="138" height="38" rx="6" fill="#ffffff" stroke="#777777"/><text x="835" y="324" text-anchor="middle">Benefício</text>
+    <rect x="316" y="444" width="138" height="38" rx="6" fill="#222222"/><text x="385" y="468" text-anchor="middle" fill="#ffffff">Paga</text>
+    <rect x="466" y="444" width="138" height="38" rx="6" fill="#ffffff" stroke="#777777"/><text x="535" y="468" text-anchor="middle">Gratuita</text>
+    <rect x="616" y="444" width="138" height="38" rx="6" fill="#ffffff" stroke="#777777"/><text x="685" y="468" text-anchor="middle">Subsidiada</text>
+    <rect x="766" y="444" width="138" height="38" rx="6" fill="#ffffff" stroke="#777777"/><text x="835" y="468" text-anchor="middle">Benefício</text>
   </g>
 
-  <text x="316" y="378" font-family="Arial, sans-serif" font-size="12" font-weight="700">Preço principal *</text>
-  <rect x="316" y="392" width="260" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="330" y="418" font-family="Arial, sans-serif" font-size="13">R$ 79,90</text>
-  <text x="604" y="378" font-family="Arial, sans-serif" font-size="12" font-weight="700">Cobrança</text>
-  <rect x="604" y="392" width="280" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="620" y="418" font-family="Arial, sans-serif" font-size="13">Mensal ▾</text>
+  <text x="316" y="522" font-family="Arial, sans-serif" font-size="12" font-weight="700">Preço principal *</text>
+  <rect x="316" y="536" width="260" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
+  <text x="330" y="562" font-family="Arial, sans-serif" font-size="13">R$ 79,90</text>
+  <text x="604" y="522" font-family="Arial, sans-serif" font-size="12" font-weight="700">Cobrança</text>
+  <rect x="604" y="536" width="280" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
+  <text x="620" y="562" font-family="Arial, sans-serif" font-size="13">Mensal ▾</text>
 
-  <text x="316" y="472" font-family="Arial, sans-serif" font-size="12" font-weight="700">Número de parcelas ou ciclos</text>
-  <rect x="316" y="486" width="260" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="330" y="512" font-family="Arial, sans-serif" font-size="13">6</text>
-  <text x="604" y="472" font-family="Arial, sans-serif" font-size="12" font-weight="700">Custo total conhecido</text>
-  <rect x="604" y="486" width="280" height="42" rx="5" fill="#f7f7f7" stroke="#999999"/>
-  <text x="620" y="512" font-family="Arial, sans-serif" font-size="13">R$ 479,40</text>
+  <text x="316" y="616" font-family="Arial, sans-serif" font-size="12" font-weight="700">Parcelas ou ciclos</text>
+  <rect x="316" y="630" width="260" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
+  <text x="330" y="656" font-family="Arial, sans-serif" font-size="13">6</text>
+  <text x="604" y="616" font-family="Arial, sans-serif" font-size="12" font-weight="700">Custo total conhecido</text>
+  <rect x="604" y="630" width="280" height="42" rx="5" fill="#f7f7f7" stroke="#999999"/>
+  <text x="620" y="656" font-family="Arial, sans-serif" font-size="13">R$ 479,40</text>
 
-  <text x="316" y="566" font-family="Arial, sans-serif" font-size="12" font-weight="700">Taxas adicionais</text>
-  <rect x="316" y="580" width="568" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="330" y="606" font-family="Arial, sans-serif" font-size="12" fill="#777777">Ex.: matrícula, material obrigatório ou taxa de emissão</text>
+  <text x="316" y="710" font-family="Arial, sans-serif" font-size="12" font-weight="700">Taxas e custos externos *</text>
+  <rect x="316" y="724" width="568" height="42" rx="5" fill="#ffffff" stroke="#777777"/>
+  <text x="330" y="750" font-family="Arial, sans-serif" font-size="12" fill="#777777">Nenhuma taxa obrigatória adicional</text>
 
-  <text x="316" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="700">O que está incluído</text>
-  <rect x="316" y="674" width="270" height="92" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="330" y="698" font-family="Arial, sans-serif" font-size="11">Aulas ao vivo</text>
-  <text x="330" y="718" font-family="Arial, sans-serif" font-size="11">Material digital</text>
-  <text x="330" y="738" font-family="Arial, sans-serif" font-size="11">Avaliação de nivelamento</text>
-  <text x="604" y="660" font-family="Arial, sans-serif" font-size="12" font-weight="700">O que não está incluído</text>
-  <rect x="604" y="674" width="280" height="92" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="618" y="698" font-family="Arial, sans-serif" font-size="11">Certificação internacional</text>
-  <text x="618" y="718" font-family="Arial, sans-serif" font-size="11">Equipamento e internet</text>
+  <text x="316" y="804" font-family="Arial, sans-serif" font-size="12" font-weight="700">Incluído</text>
+  <rect x="316" y="818" width="270" height="82" rx="5" fill="#ffffff" stroke="#777777"/>
+  <text x="330" y="842" font-family="Arial, sans-serif" font-size="11">Aulas ao vivo · material digital</text>
+  <text x="330" y="862" font-family="Arial, sans-serif" font-size="11">Avaliação de nivelamento</text>
+  <text x="604" y="804" font-family="Arial, sans-serif" font-size="12" font-weight="700">Não incluído</text>
+  <rect x="604" y="818" width="280" height="82" rx="5" fill="#ffffff" stroke="#777777"/>
+  <text x="618" y="842" font-family="Arial, sans-serif" font-size="11">Certificação internacional</text>
+  <text x="618" y="862" font-family="Arial, sans-serif" font-size="11">Equipamento e internet</text>
 
-  <text x="316" y="804" font-family="Arial, sans-serif" font-size="12" font-weight="700">Cancelamento, reembolso e validade do preço</text>
-  <rect x="316" y="818" width="568" height="54" rx="5" fill="#ffffff" stroke="#777777"/>
-  <text x="330" y="842" font-family="Arial, sans-serif" font-size="11">Cancelamento mensal sem multa. Reembolso em até 7 dias.</text>
-  <text x="330" y="860" font-family="Arial, sans-serif" font-size="11">Preço válido para inscrições realizadas até 31/07/2026.</text>
+  <text x="316" y="928" font-family="Arial, sans-serif" font-size="10">Cancelamento mensal sem multa · reembolso em até 7 dias · preço válido até 31/07/2026</text>
 
-  <rect x="1054" y="244" width="352" height="420" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
-  <text x="1080" y="280" font-family="Arial, sans-serif" font-size="16" font-weight="700">Consistência e transparência</text>
+  <rect x="1054" y="390" width="352" height="562" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="1080" y="426" font-family="Arial, sans-serif" font-size="16" font-weight="700">Coerência com a Guivos</text>
   <g font-family="Arial, sans-serif" font-size="12">
-    <text x="1080" y="318">✓ Preço principal informado</text>
-    <text x="1080" y="348">✓ Custo total calculado</text>
-    <text x="1080" y="378">✓ Condição de cancelamento informada</text>
-    <text x="1080" y="408">○ Confirmar taxas adicionais</text>
-    <text x="1080" y="438">○ Informar política de reajuste</text>
+    <text x="1080" y="464">✓ Jornada e contribuição declaradas</text>
+    <text x="1080" y="494">✓ Próximo Passo possível definido</text>
+    <text x="1080" y="524">✓ Avanço descrito sem promessa</text>
+    <text x="1080" y="554">✓ Limite e não garantia informados</text>
+    <text x="1080" y="584">✓ Preço e custo total informados</text>
+    <text x="1080" y="614">○ Confirmar taxas adicionais</text>
+    <text x="1080" y="644">○ Informar método de avaliação</text>
+    <text x="1080" y="674">○ Revisar dados e consentimentos</text>
   </g>
-  <line x1="1080" y1="466" x2="1380" y2="466" stroke="#cccccc"/>
-  <text x="1080" y="498" font-family="Arial, sans-serif" font-size="13" font-weight="700">Como aparecerá ao participante</text>
-  <text x="1080" y="526" font-family="Arial, sans-serif" font-size="16" font-weight="700">R$ 79,90 por mês</text>
-  <text x="1080" y="550" font-family="Arial, sans-serif" font-size="11">Custo total estimado: R$ 479,40</text>
-  <text x="1080" y="574" font-family="Arial, sans-serif" font-size="11">6 parcelas · cancelamento mensal</text>
-  <text x="1080" y="598" font-family="Arial, sans-serif" font-size="11">Preço válido até 31/07</text>
-  <text x="1080" y="632" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir pré-visualização completa</text>
+  <line x1="1080" y1="704" x2="1380" y2="704" stroke="#cccccc"/>
+  <text x="1080" y="736" font-family="Arial, sans-serif" font-size="13" font-weight="700">Como aparecerá ao participante</text>
+  <text x="1080" y="766" font-family="Arial, sans-serif" font-size="11">Pode apoiar prática de inglês profissional.</text>
+  <text x="1080" y="790" font-family="Arial, sans-serif" font-size="11">Não garante fluência ou contratação.</text>
+  <text x="1080" y="822" font-family="Arial, sans-serif" font-size="16" font-weight="700">R$ 79,90 por mês</text>
+  <text x="1080" y="846" font-family="Arial, sans-serif" font-size="11">Custo total estimado: R$ 479,40</text>
+  <text x="1080" y="870" font-family="Arial, sans-serif" font-size="11">Ativação não garante apresentação contextual.</text>
+  <text x="1080" y="912" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir pré-visualização responsável</text>
+  <text x="1080" y="936" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Corrigir inconsistências</text>
 
-  <rect x="250" y="922" width="1190" height="102" fill="#ffffff" stroke="#cccccc"/>
-  <rect x="286" y="950" width="132" height="42" rx="6" fill="#ffffff" stroke="#555555"/>
-  <text x="352" y="976" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">← Voltar</text>
-  <text x="780" y="976" font-family="Arial, sans-serif" font-size="11" fill="#555555">Etapa 6 de 11</text>
-  <rect x="1110" y="950" width="132" height="42" rx="6" fill="#ffffff" stroke="#555555"/>
-  <text x="1176" y="976" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Salvar rascunho</text>
-  <rect x="1254" y="950" width="152" height="42" rx="6" fill="#222222"/>
-  <text x="1330" y="976" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Continuar</text>
+  <rect x="250" y="984" width="1190" height="136" fill="#ffffff" stroke="#cccccc"/>
+  <text x="286" y="1014" font-family="Arial, sans-serif" font-size="10" fill="#555555">Etapa 6 de 11 · o envio ocorrerá somente após declaração e avaliação institucional</text>
+  <rect x="286" y="1038" width="132" height="42" rx="6" fill="#ffffff" stroke="#555555"/>
+  <text x="352" y="1064" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">← Voltar</text>
+  <rect x="1110" y="1038" width="132" height="42" rx="6" fill="#ffffff" stroke="#555555"/>
+  <text x="1176" y="1064" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Salvar rascunho</text>
+  <rect x="1254" y="1038" width="152" height="42" rx="6" fill="#222222"/>
+  <text x="1330" y="1064" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Continuar revisão</text>
 </svg>
