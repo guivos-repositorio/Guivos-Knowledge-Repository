@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.28.0
+version: 0.29.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -47,7 +47,8 @@ related:
   - COD-012
   - COD-013
   - COD-014
-  - M7.16.1
+  - COD-015
+  - M7.17
 normative: false
 execution_status: in-progress
 ---
@@ -75,13 +76,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 14
-Decision submissions awaiting human response: 1
-Current submission: BUS-CAND-007
+Human decisions recorded: 15
+Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
-Accepted Reject dispositions: 3
-Candidate state changes: 5
+Accepted Reject dispositions: 4
+Candidate state changes: 6
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -294,6 +294,22 @@ Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financ
 
 A rejeição alcança somente a candidatura de crescimento como Outcome permanente. **Expansão responsável** permanece trajetória estratégica opcional, condicionada à capacidade demonstrada, adicionalidade e critérios de não degradação. Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras.
 
+### COD-015 — BUS-CAND-007
+
+| Campo | Registro |
+|---|---|
+| Nome | Aprendizado e adaptação institucionais |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+A rejeição alcança somente a candidatura de aprendizado institucional como Outcome permanente. Aprendizado e adaptação permanecem capacidades sustentadoras multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
+
 ## 5. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
@@ -312,35 +328,27 @@ A rejeição alcança somente a candidatura de crescimento como Outcome permanen
 | BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-007 | Reject | — | Pending human decision; `BA-STR-002-COD-SUB-015` aberto |
+| BUS-CAND-007 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-008 | Reject | — | Pending human decision |
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 6. Submissão humana vigente
-
-`BA-STR-002-COD-SUB-015` submete `BUS-CAND-007 — Aprendizado e adaptação institucionais` à decisão humana sobre `Reject`.
-
-A recomendação propõe retirar aprendizado institucional do futuro catálogo de Business Outcomes e preservá-lo como capacidade sustentadora de sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
-
-A recomendação não reduz a importância de aprender, não remove aprendizagem da arquitetura, não cria `COD-015` e não altera o COR antes da manifestação humana.
-
-## 7. Gate do incremento
+## 6. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| submissão individual criada | Pass |
+| manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| resultados `Partial / Pass / Pass / Fail` preservados | Pass |
-| aprendizado separado de Outcome permanente | Pass |
-| aprendizagem preservada como capacidade sustentadora | Pass |
+| `COD-015` registrado | Pass |
+| `BUS-CAND-007` alterado para `Rejected` | Pass |
+| aprendizado preservado como capacidade sustentadora | Pass |
+| dimensões multinível preservadas | Pass |
 | analytics e IA bloqueados como prova suficiente | Pass |
-| `COD-015` não criado | Pass |
-| COR inalterado | Pass |
+| distribuição 12/2/4 registrada | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 8. Próximo passo governado
+## 7. Próximo passo governado
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`. Nenhuma decisão posterior será registrada automaticamente.
+Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
