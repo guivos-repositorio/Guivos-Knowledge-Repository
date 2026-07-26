@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.31.0
+version: 0.32.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -34,6 +34,7 @@ related:
   - BA-STR-002-COD-SUB-014
   - BA-STR-002-COD-SUB-015
   - BA-STR-002-COD-SUB-016
+  - BA-STR-002-COD-SUB-017
   - COD-001
   - COD-002
   - COD-003
@@ -50,7 +51,7 @@ related:
   - COD-014
   - COD-015
   - COD-016
-  - M7.18
+  - M7.18.1
 normative: false
 execution_status: in-progress
 ---
@@ -79,7 +80,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 16
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: BUS-CAND-009
 Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
 Accepted Reject dispositions: 5
@@ -355,18 +357,20 @@ A rejeição alcança somente a candidatura de saúde das relações de parceria
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
-| recomendação original preservada | Pass |
-| `COD-016` registrado | Pass |
-| `BUS-CAND-008` alterado para `Rejected` | Pass |
-| governança de parceiros preservada | Pass |
-| gestão de alianças e critérios de portfólio preservados | Pass |
-| métricas relacionais simplistas bloqueadas como prova suficiente | Pass |
-| distribuição 11/2/5 registrada | Pass |
+| submissão individual `BA-STR-002-COD-SUB-017` criada | Pass |
+| formulação original de `BUS-CAND-009` preservada | Pass |
+| resultados `Partial / Pass / Pass / Fail` preservados | Pass |
+| recomendação `Reject` preservada sem inferência de decisão | Pass |
+| princípio arquitetural e critério de internacionalização preservados | Pass |
+| padronização global não imposta | Pass |
+| adaptação local não proibida | Pass |
+| `COD-017` não criado | Pass |
+| `BUS-CAND-009` mantido em `Under Validation` | Pass |
+| distribuição 11/2/5 preservada | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 7. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-017`. Nenhuma decisão será inferida automaticamente.
