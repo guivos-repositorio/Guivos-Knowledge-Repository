@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [GKR-STATE-001 — Re
 | Elemento | Estado resumido |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.20 — Eighteenth Human Outcome Decision Recorded` |
+| Marco | `M7.21 — Página Inicial da Guivos e Início da Jornada Estabelecidos` |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -17,30 +17,57 @@ A autoridade única para o estado transversal vigente é o [GKR-STATE-001 — Re
 | Business Outcomes | 9 `Under Validation`, 3 `Merged` e 6 `Rejected` |
 | BUS-CAND-010 | fundido em BUS-CAND-005 por `COD-018` |
 | Outcomes canônicos | `0` |
-| Experience Architecture | integrada até `UXA-019`; sem protótipo, design ou testes |
+| Experience Architecture | integrada até `UXA-020`; HOME estabelecida e Tela Hoje reposicionada |
+| Personalização inicial | bloqueada antes de compreensão suficiente e autorizada |
+| Protótipo, design e testes | não iniciados |
 | Product Engineering | pausado antes do `W0-01` |
 | Market Validation | trilha operacional paralela preservada |
 
-## Sequência oficial
+## Sequência pessoal estabelecida
 
 ```text
-Journey concluído
-→ Economic Model documentariamente concluído
-→ remediação do GKR concluída
-→ validação externa e COEM inicial concluídas
+Página Inicial da Guivos
+→ apresentação do propósito e do ecossistema
+→ início voluntário da jornada
+→ relato do Momento Atual por texto, voz, arquivos ou perguntas progressivas
+→ compreensão inicial apresentada pela Guivos
+→ revisão, correção e autorização
+→ Tela Hoje
+```
+
+A HOME permite conhecer Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads sem iniciar a jornada.
+
+Antes da compreensão inicial confirmada, o conteúdo permanece geral, institucional, editorial ou resultante de busca explícita. Nenhuma oportunidade ou solução é apresentada como relevante para o Momento Atual da pessoa.
+
+Depois do gate, a Tela Hoje passa a organizar o que mudou, o que merece atenção e quais possibilidades podem apoiar o contexto autorizado.
+
+## Estado dos Resultados Empresariais
+
+```text
+Validação externa concluída
+→ Matriz de Avaliação inicial concluída
 → 18 decisões humanas concluídas
-→ reaplicação da COEM após nova autorização
+→ 9 candidatos em validação, 3 fundidos e 6 rejeitados
+→ reaplicação dos quatro testes após nova autorização
 → ajuste do AQS-O01
 → catálogos canônicos
 → Business Capabilities
-→ portfólio especializado
-→ Modelo Comercial e Entrada no Mercado
-→ Engenharia de Produto mediante autorização explícita
 ```
 
 A última decisão aceitou `Merge into BUS-CAND-005` para `BUS-CAND-010 — Capacidade de reinvestimento responsável`.
 
 A fusão preserva financiamento responsável da renovação como dimensão de Continuidade Econômica Sustentável, sem aprovar o candidato-alvo, tornar reinvestimento obrigatório ou tratar retenção e gasto como prova automática de valor.
+
+## Próximos atos possíveis
+
+Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
+
+- validação funcional da Página Inicial da Guivos;
+- detalhamento do relato por texto, voz e arquivos;
+- criação do arquivo gráfico da HOME;
+- validação da compreensão inicial e da transição para a Tela Hoje;
+- reaplicação dos quatro testes dos Outcomes;
+- ajuste do AQS-O01 e consolidação canônica em fases posteriores.
 
 ## Backlog estratégico preservado
 
@@ -69,7 +96,8 @@ A ordem final dos seis produtos dependerá dos Outcomes canônicos, das capacida
 - [Guivos Economic Model](docs/economic-model/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Business Outcomes](docs/business-architecture/strategy/business-outcomes.md)
-- [Candidate Outcome Decision Register](docs/business-architecture/strategy/candidate-outcome-decision-register.md)
+- [Arquitetura da Experiência](docs/experience-architecture/index.md)
+- [Página Inicial da Guivos e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
 - [Resolução COD-018](docs/business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-010.md)
 - [Documentação completa](docs/index.md)
 
