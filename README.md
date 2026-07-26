@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.25 — Wireframe Móvel do Mapa de Oportunidades Criado |
+| Marco | M7.26 — Mapa de Oportunidades Funcionalmente Validado e Reformulado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -21,8 +21,8 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Wireframe do início protegido | não iniciado |
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
-| Mapa de Oportunidades | contrato e wireframe móvel de baixa fidelidade criados |
-| Validação funcional do Mapa | não iniciada |
+| Mapa de Oportunidades | wireframe móvel funcionalmente validado e reformulado |
+| Estados alternativos do Mapa | não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Validação de Mercado | trilha operacional paralela preservada |
@@ -54,17 +54,19 @@ O ambiente protegido deverá explicar o processo antes da autenticação e da co
 
 O Mapa é uma superfície própria da navegação recorrente.
 
-O wireframe móvel UXA-024 representa:
+A validação UXA-025 reformulou o wireframe móvel UXA-024 para representar:
 
+- `Agindo como` explícito;
 - pesquisa por oportunidade, Organização ou região;
-- alternância entre mapa e lista;
-- filtros compactos;
+- Mapa e Lista com estado compartilhado;
+- filtros progressivos;
+- ação `Pesquisar nesta região`;
 - camadas de oportunidades, Organizações, Coletivos e eventos;
-- localização aproximada declarada;
+- localização aproximada e acesso a localização e privacidade;
 - cartão selecionado com preço, distância, data, vagas e acessibilidade;
-- explicação de relevância e relação comercial;
-- ações para detalhe, salvamento e rota;
-- controles de privacidade territorial.
+- explicação `Por que estou vendo isto?`;
+- relação comercial identificada;
+- ações para detalhe, salvamento e rota contextual.
 
 Arquivo vetorial:
 
@@ -91,7 +93,6 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional do wireframe do Mapa;
 - estados alternativos do Mapa;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido;
@@ -125,6 +126,7 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Wireframe da Página Inicial Pública](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
 - [Validação do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Mapa de Oportunidades](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
+- [Validação Funcional do Mapa](docs/experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
