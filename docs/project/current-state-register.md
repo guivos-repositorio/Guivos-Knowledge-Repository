@@ -56,7 +56,7 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 
 ## 3. Resultado de COD-015
 
-O Fundador aceitou `Reject` para `BUS-CAND-007 — Aprendado e adaptação institucionais`.
+O Fundador aceitou `Reject` para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
 
 Formulação originalmente avaliada:
 
