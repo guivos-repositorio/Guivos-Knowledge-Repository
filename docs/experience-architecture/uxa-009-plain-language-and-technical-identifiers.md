@@ -82,7 +82,7 @@ Quando uma tradução puder alterar o significado canônico, o termo em inglês 
 
 ## 5. Regras para títulos e navegação
 
-Títulos e menus deverão:
+Títulos e novas entradas de menu deverão:
 
 - começar pelo nome completo;
 - apresentar o identificador no final, quando necessário;
@@ -97,6 +97,8 @@ Exemplo preferencial:
 Exemplo a evitar:
 
 > UXA-006 — Hoje
+
+A navegação histórica existente será normalizada progressivamente, sem reescrever ou desorganizar grandes blocos de referências em um único incremento.
 
 ## 6. Regras para tabelas e relatórios
 
@@ -157,10 +159,10 @@ A regra passa a valer imediatamente para:
 
 - novos documentos da Arquitetura da Experiência;
 - respostas e apresentações futuras;
-- navegação oficial dessa frente;
-- revisões dos documentos ativos.
+- revisões dos documentos ativos;
+- novas entradas ou alterações da navegação oficial.
 
-Snapshots históricos e registros imutáveis não serão reescritos apenas para adequação editorial. Eles permanecem como evidência do estado existente no momento em que foram criados.
+O menu histórico existente será normalizado progressivamente. Snapshots históricos e registros imutáveis não serão reescritos apenas para adequação editorial.
 
 ## 11. Critérios de conformidade
 
