@@ -2,24 +2,26 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.98.0
+version: 11.99.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.98.0
+  - ROADMAP-11.99.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
   - UXA-000
+  - UXA-004
   - UXA-011-A1
   - UXA-020
   - UXA-021
   - UXA-022
   - UXA-023
-  - M7.24
+  - UXA-024
+  - M7.25
 normative: false
 ---
 
@@ -34,7 +36,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | início protegido da jornada validado e reformulado | M7.24; UXA-023 |
+| Marco | wireframe móvel do Mapa de Oportunidades criado | M7.25; UXA-024 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -44,6 +46,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Wireframe do início protegido | não iniciado | — |
 | Referência móvel da Home | não iniciada | — |
 | Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
+| Mapa de Oportunidades | contrato e wireframe móvel criados | UXA-004; UXA-024 |
+| Validação do wireframe do Mapa | não iniciada | — |
 | Personalização | bloqueada antes de contexto suficiente, revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
 | Capacidades Empresariais | não iniciadas | — |
@@ -66,7 +70,9 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - relações entre Organizações e Coletivos detalhadas;
 - Página Inicial pública validada e reformulada;
 - wireframe gráfico da Home para computador criado;
-- início protegido da jornada validado e reformulado.
+- início protegido da jornada validado e reformulado;
+- posição do Mapa na navegação recorrente consolidada;
+- wireframe gráfico móvel do Mapa de Oportunidades criado.
 
 ### Em validação
 
@@ -78,12 +84,14 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
+- validação funcional do wireframe do Mapa;
+- estados alternativos do Mapa;
+- referência do Mapa para computador;
 - wireframe gráfico do início protegido da jornada;
 - referência móvel da Página Inicial pública;
 - detalhamento de estados especializados de texto, voz e arquivos;
 - validação da revisão da compreensão inicial;
-- validação da transição para a Tela Hoje;
-- estados alternativos e exceções para novos wireframes.
+- validação da transição para a Tela Hoje.
 
 #### Arquitetura de Negócios
 
@@ -105,54 +113,45 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 ```text
 Página Inicial pública
 → decisão voluntária de iniciar ou explorar
-→ explicação do ambiente protegido
-→ autenticação ou criação de conta
-→ finalidades, privacidade e controles
-→ escolha de modalidade
-→ compartilhamento mínimo
-→ revisão do que foi recebido
-→ autorização específica
-→ processamento visível
+→ início protegido da jornada
 → compreensão inicial revisável
-→ decisão sobre continuidade
+→ Tela Hoje
+→ Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Resultado do início protegido
+## 5. Resultado do Mapa de Oportunidades
 
-A superfície foi considerada funcionalmente válida após reformulação porque:
+O wireframe móvel materializa:
 
-- explica antes de autenticar e coletar;
-- não inicia gravação ou upload automaticamente;
-- separa conta de autorização;
-- apresenta finalidades e controles;
-- preserva compartilhamento mínimo;
-- trata modalidades como alternativas;
-- exige revisão antes do processamento material;
-- mostra estados e falhas;
-- permite pausa, correção, retirada e exclusão;
-- protege informações sensíveis e de terceiros;
-- distingue original, transcrição, extração e interpretação;
-- apresenta compreensão inicial revisável;
-- bloqueia personalização antes do gate.
+- pesquisa por oportunidade, Organização ou região;
+- alternância entre mapa e lista;
+- filtros compactos;
+- localização aproximada e raio visíveis;
+- camadas territoriais de oportunidades, Organizações, Coletivos e eventos;
+- pontos e agrupamentos selecionáveis;
+- cartão resumido com preço, distância, data, vagas e acessibilidade;
+- explicação de relevância e relação comercial;
+- ações para detalhe, salvamento e rota;
+- navegação inferior com Mapa selecionado.
 
-## 6. Estados mínimos
+O mapa desenhado é esquemático e não representa cidade, endereço ou coordenada real.
 
-O início protegido distingue os estados não iniciado, autenticação pendente, privacidade pendente, rascunho, aguardando revisão, autorizado para processamento, em processamento, ação necessária, compreensão disponível, pausado, exclusão solicitada e encerrado.
-
-## 7. Proteções preservadas
+## 6. Proteções preservadas
 
 - a Home pública não coleta relato pessoal;
 - iniciar a jornada é voluntário;
 - autenticação antecede persistência associada a uma pessoa;
 - autorização genérica não libera todos os usos;
-- a pessoa pode compartilhar menos e continuar;
 - informações não confirmadas não viram fatos;
-- conteúdo de terceiros exige proteção própria;
 - exploração sem personalização permanece disponível;
 - publicidade não aumenta relevância pessoal;
+- localização de participantes não aparece no Mapa;
+- residências e locais sensíveis permanecem protegidos;
+- rastreamento contínuo não é obrigatório;
+- proximidade não equivale a relevância;
 - wireframes não equivalem a design ou implementação.
 
-## 8. Distribuição dos candidatos
+## 7. Distribuição dos candidatos
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -161,6 +160,6 @@ O início protegido distingue os estados não iniciado, autenticação pendente,
 | Rejeitados | 6 | retirados do catálogo futuro com destinos preservados |
 | Aprovados | 0 | nenhuma aprovação ocorreu |
 
-## 9. Próximo movimento
+## 8. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre wireframe do início protegido, referência móvel da Home, detalhamento de modalidades, validação da compreensão inicial, transição para a Tela Hoje ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do Mapa, estados alternativos do Mapa, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
