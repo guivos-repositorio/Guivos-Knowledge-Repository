@@ -2,18 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.96.0
+version: 1.97.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-015-SUBMISSION
+  - GKR-CANON-MATRIX-COD-015
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-015
-  - M7.16.1
+  - COD-015
+  - M7.17
 normative: false
 ---
 
@@ -62,8 +63,9 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
 | `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
 | `COD-014` | Manter | `Reject` aceito para `BUS-CAND-006` |
-| CODR | Manter ativo | 14 de 18 decisões; 1 submissão aberta |
-| COR | Refinar | 13 `Under Validation`; 2 `Merged`; 3 `Rejected` |
+| `COD-015` | Manter | `Reject` aceito para `BUS-CAND-007` |
+| CODR | Manter ativo | 15 de 18 decisões; 0 submissões abertas |
+| COR | Refinar | 12 `Under Validation`; 2 `Merged`; 4 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
@@ -77,7 +79,9 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
 | `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
 | `BUS-CAND-006` | Remover do catálogo de Business Outcomes | `COD-014`; crescimento rejeitado como Outcome permanente; expansão responsável preservada como trajetória opcional |
-| `BUS-CAND-007` | Pendente | recomendação `Reject` submetida; aprendizado preservado como capacidade sustentadora sem mudança no COR |
+| `BUS-CAND-007` | Remover do catálogo de Business Outcomes | `COD-015`; aprendizado rejeitado como Outcome permanente; aprendizagem e adaptação preservadas como capacidades sustentadoras |
+| `BUS-CAND-008` | Pendente | decisão individual ainda não submetida |
+| `BUS-CAND-009` | Pendente | decisão individual ainda não submetida |
 | `BUS-CAND-010` | Pendente | decisão individual e eventual fusão não antecipadas |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
@@ -86,29 +90,32 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Submissão de BUS-CAND-007
+## 4. Resultado de COD-015
 
-A COEM recomenda `Reject` para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
+A alternativa `A — Aceitar Reject` foi consolidada para `BUS-CAND-007`.
 
 ### Formulação originalmente avaliada
 
 > A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor.
 
-A recomendação propõe:
+A decisão:
 
-- retirar aprendizado institucional do futuro catálogo de Business Outcomes;
-- preservar aprendizagem como capacidade sustentadora multinível;
-- preservar sensing, interpretação, absorção, memória, contestação, renovação e adaptação como dimensões governadas;
-- vincular a capacidade aos Outcomes que exigirem resposta legítima a mudanças;
-- bloquear dados, analytics, IA, reuniões ou retrospectivas como prova suficiente;
-- preservar formulação original, evidências e rastreabilidade;
-- manter `BUS-CAND-007` em `Under Validation` até manifestação humana;
-- não criar `COD-015`, código canônico ou autorização operacional.
+- preserva formulação original, evidências e rastreabilidade;
+- altera `BUS-CAND-007` para `Rejected`;
+- retira aprendizado institucional do futuro catálogo de Business Outcomes;
+- preserva aprendizagem como capacidade sustentadora multinível;
+- preserva sensing, interpretação, absorção, memória, contestação, renovação e adaptação como dimensões governadas;
+- vincula a capacidade aos Outcomes que exigirem resposta legítima a mudanças;
+- bloqueia dados, analytics, IA, reuniões ou retrospectivas como prova suficiente;
+- não reduz a importância de aprender;
+- não remove aprendizagem ou adaptação da arquitetura;
+- não cria código canônico;
+- não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
 ## 5. Addendum vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 1.96.0 — BUS-CAND-007 Decision Submission`.
+O addendum vigente é `Canonical Consolidation Matrix 1.97.0 — COD-015`.
 
 ## 6. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
