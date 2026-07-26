@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.4.0
+version: 2.5.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-010
   - GKR-CANON-MATRIX-UXA-009
   - GKR-CANON-MATRIX-UXA-005
   - GKR-CANON-MATRIX-UXA-001
@@ -26,7 +27,8 @@ related:
   - UXA-007
   - UXA-008
   - UXA-009
-  - M7.19.3
+  - UXA-010
+  - M7.19.4
 normative: false
 ---
 
@@ -71,12 +73,18 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Décima oitava decisão | Pendente | COD-018 não criado |
 | Arquitetura da Experiência da Guivos | Descoberta | UXA-000 a UXA-004 integrados |
 | Programa Inicial de Wireframes de Baixa Fidelidade | Wireframe | UXA-005 criado; método e critérios registrados |
-| Tela Hoje | Wireframe | UXA-006; estrutura móvel inicial criada |
-| Detalhe de oportunidade | Wireframe | UXA-007; preço, relevância, elegibilidade e transparência estruturados |
-| Cadastro de oportunidade pela Organização | Wireframe | UXA-008; onze etapas e preço detalhado |
+| Tela Hoje | Refinar em wireframe | UXA-006 0.3.0; primeira validação funcional aplicada por UXA-010 |
+| Detalhe de oportunidade | Wireframe | UXA-007; validação funcional pendente |
+| Cadastro de oportunidade pela Organização | Wireframe | UXA-008; validação funcional pendente |
 | Padrão de Linguagem Clara e Identificadores Técnicos | Refinar | UXA-009; nome completo antes do código e estados traduzidos |
+| Validação Funcional e Reformulação da Tela Hoje | Manter | UXA-010; decisão humana e consequências registradas |
+| Síntese do momento | Refinar | bloco condicional; omitido quando repetir um único item ou não acrescentar compreensão |
+| Atenção principal | Manter | no máximo um item destacado; itens adicionais na Central de Intervenções |
+| Contexto de atuação | Refinar | seletor explícito com `Agindo como` |
+| Oportunidades na Tela Hoje | Refinar em wireframe | até dois cartões empilhados e em largura integral; nenhum preenchimento artificial |
+| Coletivos e atividades na Tela Hoje | Refinar em wireframe | bloco somente com utilidade temporal |
+| Navegação pessoal | Manter em descoberta | Hoje, Jornada, Explorar, Mapa e Eu |
 | Validade do preço | Refinar | período até o qual o valor permanece vigente para novas adesões |
-| Navegação pessoal | Descoberta | Hoje, Jornada, Explorar, Mapa e Eu |
 | Experiência da Organização | Descoberta | visão geral, oportunidades, programas, coletivos, resultados e gestão |
 | Experiência do Coletivo | Descoberta | início, atividades, pessoas, mapa, recursos e gestão |
 | Controle de relevância | Refinar em descoberta | explícito, explicável, ajustável e contestável |
@@ -116,50 +124,24 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | BUS-CAND-009 | coerência global com adequação contextual | Rejeitado como Resultado permanente; princípio arquitetural preservado |
 | BUS-CAND-010 | capacidade de reinvestimento responsável | Em validação; decisão pendente |
 
-## 5. Resultado da decisão humana 17 preservado
+## 5. Resultado da reformulação da Tela Hoje
 
-A rejeição de **Coerência global com adequação contextual** como Resultado Empresarial permanece consolidada pela decisão número 17 (COD-017).
+A decisão consolidada:
 
-A formulação, as evidências, a rastreabilidade e o princípio arquitetural foram preservados. Nenhum código canônico ou fase posterior foi iniciado.
+- mantém a Tela Hoje como porta de entrada orientada por utilidade material;
+- torna a síntese do momento condicional;
+- preserva um único item principal;
+- direciona itens críticos adicionais à Central de Intervenções;
+- mantém o movimento atual antes das oportunidades;
+- substitui cartões lado a lado por cartões empilhados em largura integral;
+- condiciona Coletivos e atividades à utilidade temporal;
+- preserva a navegação pessoal consolidada;
+- não inicia protótipo, design visual, testes ou Engenharia de Produto.
 
-## 6. Resultado da fundação da Arquitetura da Experiência preservado
+## 6. Documento complementar vigente
 
-A fundação:
+O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Reformulação Funcional da Tela Hoje`.
 
-- integrou a pausa antes da capacidade de reinvestimento responsável;
-- criou a Arquitetura da Experiência em descoberta;
-- preservou os contratos do Guivos Journey;
-- propôs Tela Hoje, navegação, jornadas, oportunidades, Organizações, Coletivos e Mapa;
-- não iniciou Engenharia de Produto.
+## 7. Próximo ato
 
-## 7. Resultado do programa de wireframes preservado
-
-O programa:
-
-- materializou três superfícies prioritárias;
-- registrou critérios de aceite e perguntas de validação;
-- utilizou valores monetários ilustrativos no padrão brasileiro;
-- preservou preço, custo total, elegibilidade e relação comercial como informações materiais;
-- manteve envio, ativação, apresentação e contratação como estados distintos;
-- não iniciou protótipo, design visual, testes ou Engenharia de Produto.
-
-## 8. Resultado do padrão de linguagem clara
-
-O incremento atual:
-
-- cria o Padrão de Linguagem Clara e Identificadores Técnicos (UXA-009);
-- determina nome completo antes do código;
-- traduz estados técnicos para português;
-- classifica códigos como referências secundárias;
-- explica o significado de validade do preço;
-- normaliza os documentos ativos da Arquitetura da Experiência;
-- preserva snapshots históricos sem reescrita editorial;
-- não altera decisões arquiteturais nem inicia protótipo.
-
-## 9. Documento complementar vigente
-
-O documento complementar vigente é `Matriz de Consolidação Canônica 2.4.0 — Linguagem Clara e Identificadores Técnicos`.
-
-## 10. Próximo ato
-
-Receber a validação do Fundador sobre os três wireframes e decidir entre reformulação, estados alternativos ou autorização separada de protótipo navegável de baixa fidelidade.
+Escolher entre validar funcionalmente o Detalhe de Oportunidade, validar funcionalmente o Cadastro pela Organização ou criar um estado alternativo selecionado da Tela Hoje.
