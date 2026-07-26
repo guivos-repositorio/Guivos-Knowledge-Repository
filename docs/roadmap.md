@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-11.95.0
-title: Roadmap Arquitetural — Página Inicial da Guivos e Início da Jornada
+id: ROADMAP-11.96.0
+title: Roadmap Arquitetural — Página Inicial Pública Validada
 status: active
-version: 11.95.0
+version: 11.96.0
 owner: Guivos
 last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.94.0
+  - ROADMAP-11.95.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -14,16 +14,14 @@ related:
   - BA-STR-002-CODR-001
   - COD-018
   - UXA-000
-  - UXA-002
-  - UXA-005
-  - UXA-006
   - UXA-010
   - UXA-011-A1
   - UXA-020
-  - M7.21
+  - UXA-021
+  - M7.22
 ---
 
-# Roadmap Arquitetural — Página Inicial da Guivos e Início da Jornada
+# Roadmap Arquitetural — Página Inicial Pública Validada
 
 ## 1. Autoridade
 
@@ -34,16 +32,15 @@ Este documento governa a sequência global de evolução arquitetural do **Repos
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Página Inicial da Guivos e sequência de início da jornada estabelecidas | M7.21; UXA-020 |
+| Marco | Página Inicial pública funcionalmente validada e reformulada | M7.22; UXA-021 |
 | Remediação | concluída | R1–R6 |
-| Revisão da Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação dos testes aguardando autorização | A2-R03; BA-STR-002 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
-| Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
-| Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | BUS-CAND-010 → BUS-CAND-005; COD-018 |
-| Arquitetura da Experiência | Página Inicial da Guivos acrescentada às superfícies existentes | UXA-000 a UXA-020 |
-| Página Inicial da Guivos | contrato funcional e wireframe textual estabelecidos | UXA-020 |
-| Tela Hoje | reposicionada como entrada recorrente após compreensão inicial | UXA-002; UXA-006; UXA-010 |
-| Personalização inicial | bloqueada até compreensão suficiente, revisável e autorizada | UXA-011-A1; UXA-020 |
+| Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
+| Arquitetura da Experiência | ativa até a validação da Home pública | UXA-000 a UXA-021 |
+| Página Inicial pública | validada e reformulada | UXA-020; UXA-021 |
+| Início protegido da jornada | contrato estabelecido; validação detalhada pendente | UXA-020 |
+| Tela Hoje | entrada recorrente após compreensão inicial | UXA-002; UXA-006; UXA-010 |
+| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -52,168 +49,149 @@ Este documento governa a sequência global de evolução arquitetural do **Repos
 1. Guivos Journey concluído funcionalmente e publicado;
 2. Modelo Econômico documentado inicialmente;
 3. validação externa dos 18 candidatos concluída;
-4. Matriz de Avaliação inicial concluída para 18 candidatos e seis clusters;
+4. Matriz de Avaliação inicial concluída;
 5. decisões humanas 1 a 18 registradas;
 6. remediação do repositório concluída;
 7. Arquitetura da Experiência integrada;
-8. três superfícies pessoais e institucionais iniciais validadas e reformuladas;
-9. fundação funcional de Organizações e Coletivos estabelecida;
-10. Visão Geral da Organização validada;
-11. Início do Coletivo validado;
-12. relações entre Organizações e Coletivos detalhadas;
-13. `COD-018` registrado e `BUS-CAND-010` fundido em `BUS-CAND-005`;
-14. fase de decisões humanas concluída em 18 de 18;
-15. Solicitação de Integração número 107 integrada;
-16. Página Inicial da Guivos e sequência de início da jornada estabelecidas;
-17. Tela Hoje reposicionada como superfície recorrente após a compreensão inicial.
+8. Tela Hoje, Detalhe de Oportunidade e Cadastro pela Organização validados;
+9. experiências de Organizações e Coletivos estruturadas e validadas;
+10. relações entre Organizações e Coletivos detalhadas;
+11. `BUS-CAND-010` fundido em `BUS-CAND-005`;
+12. Página Inicial pública e início protegido da jornada separados;
+13. Tela Hoje reposicionada como superfície recorrente;
+14. Página Inicial pública validada e reformulada.
 
-## 4. Resultado preservado da decisão COD-018
+## 4. Resultado da Página Inicial pública
 
-### 4.1 Decisão
+### 4.1 Pergunta respondida
 
-O Fundador aceitou:
+A Home deverá permitir que uma pessoa compreenda:
 
-```text
-Merge BUS-CAND-010 into BUS-CAND-005
-```
+- o que é a Guivos;
+- como o ecossistema pode ser utilizado;
+- que a pessoa mantém suas decisões;
+- que poderá iniciar uma jornada ou explorar sem personalização;
+- que a superfície pública não coleta seu relato.
 
-### 4.2 Efeito
-
-- `BUS-CAND-010` permanece `Merged`;
-- `BUS-CAND-005` permanece `Under Validation`;
-- financiamento responsável da renovação compõe o contexto interpretativo da continuidade econômica sustentável;
-- opções internas e externas de financiamento permanecem legítimas;
-- adicionalidade, riscos, obrigações, alternativas e custo de oportunidade permanecem requisitos explícitos;
-- reinvestimento proposto, aprovado, realizado e eficaz permanecem estados diferentes;
-- maior retenção, gasto ou percentual reinvestido não constituem prova automática de responsabilidade ou valor futuro.
-
-### 4.3 Limite
-
-A fusão não aprova o candidato de destino, não cria código canônico e não inicia AQS-O01, Capacidades Empresariais ou Engenharia de Produto.
-
-## 5. Resultado da Página Inicial da Guivos
-
-### 5.1 Decisão de sequência
-
-A experiência pessoal passa a seguir:
+### 4.2 Hierarquia validada
 
 ```text
-Página Inicial da Guivos
-→ apresentação do propósito e do ecossistema
-→ início voluntário da jornada
-→ relato multimodal do Momento Atual
-→ compreensão inicial apresentada pela Guivos
-→ revisão, correção e autorização
-→ Tela Hoje
+identidade, propósito e descrição concreta da Guivos
+→ ação principal adequada ao estado e exploração sem personalização
+→ explicação simples de como a Guivos atua
+→ caminhos pessoal, geral e institucional
+→ ecossistema organizado por finalidade
+→ possibilidades gerais opcionais e identificadas
+→ confiança, privacidade, transparência e controle
+→ acesso institucional, ajuda e rodapé
 ```
 
-### 5.2 Responsabilidade da HOME
+### 4.3 Ações por estado
 
-A HOME deverá:
+- visitante: `Iniciar minha jornada` e `Explorar sem personalização`;
+- pessoa com relato em andamento: `Continuar minha jornada`;
+- pessoa com compreensão aguardando revisão: `Revisar minha compreensão`;
+- pessoa com jornada ativa: `Ir para a Tela Hoje`.
 
-- ser a página de impacto e primeira entrada da Guivos;
-- convidar a pessoa a iniciar sua jornada;
-- permitir relato por texto, voz, arquivos ou perguntas progressivas;
-- permitir conhecer as soluções do ecossistema sem iniciar a jornada;
-- explicar privacidade, fontes, inferências, uso e controles;
-- impedir indicações pessoais antes do gate de compreensão.
+A Home não exibirá dados do relato, alertas pessoais ou oportunidades personalizadas.
 
-### 5.3 Soluções do ecossistema
+### 4.4 Ecossistema organizado
 
-A HOME poderá apresentar:
+#### Jornada e possibilidades para pessoas
 
 - Guivos Journey;
 - Guivos Mall;
 - Guivos Travel;
-- Guivos Business;
-- Guivos Media;
-- Guivos Intelligence;
+- Guivos Media.
+
+#### Organizações, programas e Coletivos
+
+- Guivos Business.
+
+#### Compreensão e transparência
+
+- Guivos Intelligence.
+
+#### Publicidade e patrocínio institucional
+
 - Guivos Ads.
 
-Antes da personalização, os itens serão gerais, institucionais, editoriais ou resultantes de busca explícita. Nenhuma solução será descrita como relevante para o Momento Atual da pessoa.
+Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome oficial da solução de anúncios, publicidade e patrocínios.
 
-### 5.4 Tela Hoje
+## 5. Sequência pessoal preservada
 
-Depois da compreensão inicial confirmada, a Tela Hoje poderá se tornar a entrada recorrente após autenticação.
+```text
+Página Inicial pública da Guivos
+→ decisão voluntária de iniciar ou explorar
+→ autenticação e explicação de privacidade, quando necessárias
+→ ambiente protegido para relato do Momento Atual
+→ compreensão inicial apresentada pela Guivos
+→ revisão, correção, limitação e autorização
+→ Tela Hoje
+```
 
-Ela continuará responsável por:
-
-- mostrar o que mudou;
-- organizar o que merece atenção;
-- preservar continuidade da jornada;
-- apresentar oportunidades com razão de relevância;
-- permitir correção, pausa, recusa e alternativas.
+A validação da Home não valida automaticamente o ambiente protegido.
 
 ## 6. Estado da fase de Resultados Empresariais
 
 ```text
 External validation: completed
-Initial COEM: completed
+Initial four-test evaluation: completed
 Human decisions: completed — 18 of 18
 Under Validation: 9
 Merged: 3
 Rejected: 6
 Approved Outcomes: 0
 Canonical codes: 0
-Reapplication of COEM: not started
+Reapplication of the four tests: not started
 AQS-O01: not started
 Canonical consolidation: not started
 ```
 
-## 7. Ordem autorizada neste incremento
+A fusão de `BUS-CAND-010` em `BUS-CAND-005` não aprova o candidato-alvo e não torna reinvestimento obrigatório.
 
-A sequência autorizada pelo usuário foi:
+## 7. Próximas etapas candidatas
 
-1. concluir e integrar a Solicitação de Integração número 107 — concluído;
-2. iniciar a definição da HOME anterior à Tela Hoje — concluído documentalmente neste incremento;
-3. permitir relato do Momento Atual por texto, voz, arquivos e outras formas autorizadas — governado funcionalmente;
-4. permitir acesso às soluções do ecossistema sem indicação personalizada — governado funcionalmente;
-5. reposicionar a Tela Hoje como segunda experiência pessoal e entrada recorrente — concluído documentalmente.
-
-A conclusão deste incremento não autoriza automaticamente validação funcional, arquivo gráfico, protótipo ou desenvolvimento.
-
-## 8. Próximas etapas candidatas
-
-### 8.1 Arquitetura da Experiência
+### 7.1 Arquitetura da Experiência
 
 Após integração e nova autorização, poderá ocorrer um dos seguintes atos separados:
 
-1. validar funcionalmente a Página Inicial da Guivos;
-2. criar o arquivo gráfico vetorial de baixa fidelidade da HOME;
-3. detalhar a captura por texto, voz e arquivos;
+1. criar o arquivo gráfico vetorial de baixa fidelidade da Página Inicial pública;
+2. validar funcionalmente a entrada protegida da jornada;
+3. detalhar texto, voz e arquivos;
 4. detalhar e validar a revisão da compreensão inicial;
-5. criar a primeira variação da Tela Hoje após a transição.
+5. validar a transição entre o início protegido e a Tela Hoje.
 
-### 8.2 Arquitetura de Negócios
+### 7.2 Arquitetura de Negócios
 
 Também permanece pendente, em ato independente:
 
 ```text
-reaplicação da COEM
+reaplicação dos quatro testes
 → ajuste prático do AQS-O01
 → decisão sobre catálogos canônicos
-→ matriz de sustentação entre Outcomes
+→ matriz de sustentação entre Resultados
 → preparação da Arquitetura de Capacidades Empresariais
 ```
 
 Nenhuma das duas frentes avança automaticamente.
 
-## 9. Regras transversais preservadas
+## 8. Regras transversais preservadas
 
 - nenhum candidato é aprovado por fusão, reformulação ou contagem de testes;
-- Outcomes canônicos continuam em zero;
+- Resultados canônicos continuam em zero;
 - reinvestimento não é obrigação automática;
 - financiamento interno e externo permanecem alternativas legítimas;
 - resultado financeiro isolado não comprova continuidade ou valor;
-- formulações combinadas retornam aos quatro testes;
-- a HOME não afirma conhecer o Momento Atual antes do relato;
+- a Home não coleta relato pessoal;
 - personalização material exige compreensão revisável e autorizada;
-- exploração geral do ecossistema permanece disponível sem início da jornada;
+- exploração geral permanece disponível sem início da jornada;
 - publicidade e relação comercial permanecem identificadas;
-- Arquitetura da Experiência não inicia a Engenharia de Produto;
+- Guivos Ads não aumenta relevância pessoal;
+- Arquitetura da Experiência não inicia Engenharia de Produto;
 - protótipo, design, testes e desenvolvimento permanecem não iniciados;
 - Validação de Mercado mantém execução própria e paralela.
 
-## 10. Frentes posteriores preservadas
+## 9. Frentes posteriores preservadas
 
-Guivos Mall, Guivos Business, Guivos Intelligence, Guivos Ads, Guivos Media e Guivos Travel permanecem soluções do ecossistema acessíveis para conhecimento e exploração geral. Sua evolução arquitetural, Modelo Comercial e Entrada no Mercado continuam sem autorização de início neste incremento.
+A evolução especializada de Guivos Mall, Guivos Business, Guivos Intelligence, Guivos Ads, Guivos Media e Guivos Travel, bem como Modelo Comercial e Entrada no Mercado, continua sem autorização de início neste incremento.
