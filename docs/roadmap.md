@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-11.96.0
-title: Roadmap Arquitetural — Página Inicial Pública Validada
+id: ROADMAP-11.97.0
+title: Roadmap Arquitetural — Wireframe Gráfico da Página Inicial Pública
 status: active
-version: 11.96.0
+version: 11.97.0
 owner: Guivos
 last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.95.0
+  - ROADMAP-11.96.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -18,10 +18,11 @@ related:
   - UXA-011-A1
   - UXA-020
   - UXA-021
-  - M7.22
+  - UXA-022
+  - M7.23
 ---
 
-# Roadmap Arquitetural — Página Inicial Pública Validada
+# Roadmap Arquitetural — Wireframe Gráfico da Página Inicial Pública
 
 ## 1. Autoridade
 
@@ -32,15 +33,15 @@ Este documento governa a sequência global de evolução arquitetural do **Repos
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Página Inicial pública funcionalmente validada e reformulada | M7.22; UXA-021 |
+| Marco | wireframe gráfico vetorial da Página Inicial pública criado | M7.23; UXA-022 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
-| Arquitetura da Experiência | ativa até a validação da Home pública | UXA-000 a UXA-021 |
-| Página Inicial pública | validada e reformulada | UXA-020; UXA-021 |
+| Arquitetura da Experiência | ativa até o wireframe gráfico da Home pública | UXA-000 a UXA-022 |
+| Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
+| Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | contrato estabelecido; validação detalhada pendente | UXA-020 |
 | Tela Hoje | entrada recorrente após compreensão inicial | UXA-002; UXA-006; UXA-010 |
-| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -59,7 +60,8 @@ Este documento governa a sequência global de evolução arquitetural do **Repos
 11. `BUS-CAND-010` fundido em `BUS-CAND-005`;
 12. Página Inicial pública e início protegido da jornada separados;
 13. Tela Hoje reposicionada como superfície recorrente;
-14. Página Inicial pública validada e reformulada.
+14. Página Inicial pública validada e reformulada;
+15. wireframe gráfico vetorial da Página Inicial pública criado para computador.
 
 ## 4. Resultado da Página Inicial pública
 
@@ -118,7 +120,26 @@ A Home não exibirá dados do relato, alertas pessoais ou oportunidades personal
 
 Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome oficial da solução de anúncios, publicidade e patrocínios.
 
-## 5. Sequência pessoal preservada
+## 5. Resultado do wireframe gráfico
+
+O arquivo vetorial de baixa fidelidade foi criado com referência de **1.440 × 2.200 pixels**.
+
+Ele materializa:
+
+- cabeçalho público orientado por intenção;
+- primeiro campo visual com propósito e descrição concreta;
+- início voluntário e exploração sem personalização;
+- garantia de ausência de coleta pública;
+- explicação do funcionamento em seis etapas;
+- três caminhos de entrada;
+- ecossistema agrupado por finalidade;
+- possibilidades gerais identificadas;
+- confiança, privacidade e transparência;
+- rodapé institucional.
+
+O arquivo é monocromático e estrutural. Ele não define identidade visual, textos finais, responsividade, componentes, protótipo ou implementação.
+
+## 6. Sequência pessoal preservada
 
 ```text
 Página Inicial pública da Guivos
@@ -130,9 +151,9 @@ Página Inicial pública da Guivos
 → Tela Hoje
 ```
 
-A validação da Home não valida automaticamente o ambiente protegido.
+A criação do arquivo gráfico não valida automaticamente o ambiente protegido.
 
-## 6. Estado da fase de Resultados Empresariais
+## 7. Estado da fase de Resultados Empresariais
 
 ```text
 External validation: completed
@@ -150,19 +171,20 @@ Canonical consolidation: not started
 
 A fusão de `BUS-CAND-010` em `BUS-CAND-005` não aprova o candidato-alvo e não torna reinvestimento obrigatório.
 
-## 7. Próximas etapas candidatas
+## 8. Próximas etapas candidatas
 
-### 7.1 Arquitetura da Experiência
+### 8.1 Arquitetura da Experiência
 
 Após integração e nova autorização, poderá ocorrer um dos seguintes atos separados:
 
-1. criar o arquivo gráfico vetorial de baixa fidelidade da Página Inicial pública;
-2. validar funcionalmente a entrada protegida da jornada;
+1. validar funcionalmente a entrada protegida da jornada;
+2. criar a referência móvel da Página Inicial pública;
 3. detalhar texto, voz e arquivos;
 4. detalhar e validar a revisão da compreensão inicial;
-5. validar a transição entre o início protegido e a Tela Hoje.
+5. validar a transição entre o início protegido e a Tela Hoje;
+6. selecionar estados alternativos para novos wireframes.
 
-### 7.2 Arquitetura de Negócios
+### 8.2 Arquitetura de Negócios
 
 Também permanece pendente, em ato independente:
 
@@ -176,7 +198,7 @@ reaplicação dos quatro testes
 
 Nenhuma das duas frentes avança automaticamente.
 
-## 8. Regras transversais preservadas
+## 9. Regras transversais preservadas
 
 - nenhum candidato é aprovado por fusão, reformulação ou contagem de testes;
 - Resultados canônicos continuam em zero;
@@ -188,10 +210,12 @@ Nenhuma das duas frentes avança automaticamente.
 - exploração geral permanece disponível sem início da jornada;
 - publicidade e relação comercial permanecem identificadas;
 - Guivos Ads não aumenta relevância pessoal;
+- wireframe não equivale a design, protótipo ou implementação;
+- a referência para computador não conclui responsividade;
 - Arquitetura da Experiência não inicia Engenharia de Produto;
 - protótipo, design, testes e desenvolvimento permanecem não iniciados;
 - Validação de Mercado mantém execução própria e paralela.
 
-## 9. Frentes posteriores preservadas
+## 10. Frentes posteriores preservadas
 
 A evolução especializada de Guivos Mall, Guivos Business, Guivos Intelligence, Guivos Ads, Guivos Media e Guivos Travel, bem como Modelo Comercial e Entrada no Mercado, continua sem autorização de início neste incremento.
