@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.34.0
+version: 1.35.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -17,8 +17,9 @@ related:
   - BA-STR-002-COD-SUB-017
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - ROADMAP-11.81.0
-  - M7.18.1
+  - COD-017
+  - ROADMAP-11.82.0
+  - M7.19
 normative: true
 ---
 
@@ -33,17 +34,16 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.18.1 — Seventeenth Human Outcome Decision Submitted` |
+| Marco vigente | `M7.19 — Seventeenth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.28.0`; 11 `Under Validation`, 2 `Merged` e 5 `Rejected` |
-| CODR | `0.32.0`; 16 de 18 decisões humanas; 1 submissão aguardando resposta |
-| `COD-001` a `COD-016` | registrados e preservados |
-| Submissão vigente | `BA-STR-002-COD-SUB-017 — BUS-CAND-009` |
-| `COD-017` | não criado |
-| `BUS-CAND-009` | `Under Validation`; decisão humana pendente sobre `Reject` |
+| COR | `0.29.0`; 10 `Under Validation`, 2 `Merged` e 6 `Rejected` |
+| CODR | `0.33.0`; 17 de 18 decisões humanas; 0 submissões aguardando resposta |
+| `COD-001` a `COD-017` | registrados e preservados |
+| `BUS-CAND-009` | `Rejected`; coerência global com adequação contextual preservada como princípio arquitetural e critério governado |
+| Próximo candidato | `BUS-CAND-010 — Capacidade de reinvestimento responsável` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -54,26 +54,23 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Submissão de BUS-CAND-009
+## 3. Resultado de COD-017
 
-A COEM recomenda `Reject` para `BUS-CAND-009 — Coerência global com adequação contextual`.
+O Fundador aceitou `Reject` para `BUS-CAND-009 — Coerência global com adequação contextual`.
 
-Formulação avaliada:
+Formulação originalmente avaliada:
 
 > A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
 
-Resultados:
+A decisão retirou o candidato do futuro catálogo de Business Outcomes e preservou:
 
-```text
-Essential: Partial
-Decision: Pass
-Replacement: Pass
-Outcome Quality: Fail
-```
+- coerência global com adequação contextual como princípio arquitetural e critério governado;
+- critérios de internacionalização, localização e desenho de capacidades;
+- avaliação de mudanças contra identidade, propósito, autoridade e legitimidade institucional;
+- decisões contextuais sobre padronização, adaptação, integração e autonomia local;
+- formulação, evidências e rastreabilidade histórica.
 
-A recomendação propõe retirar coerência global com adequação contextual do futuro catálogo de Business Outcomes e preservar o conteúdo como princípio arquitetural e critério governado para internacionalização, localização, desenho de capacidades e avaliação de mudanças.
-
-A recomendação não impõe padronização global, não proíbe adaptação local, não exige presença internacional e não considera tradução, presença local ou variação nominal de produto como prova suficiente de adequação legítima.
+A decisão não impõe padronização global, não proíbe adaptação local, não exige internacionalização e não considera tradução, presença local ou variação nominal de produto como prova suficiente de adequação legítima.
 
 ## 4. Sequência oficial
 
@@ -82,7 +79,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 16 de 18; uma submissão aberta
+→ decisões humanas do BA-STR-002 — 17 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -93,7 +90,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-017`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
 
 Nenhuma decisão posterior será registrada automaticamente.
 
@@ -116,10 +113,7 @@ Essa ordem não constitui autorização de início.
 
 O estado atual não autoriza:
 
-- criar `COD-017` sem manifestação humana explícita;
-- alterar o COR ou mover `BUS-CAND-009` para `Rejected`;
-- impor padronização global ou proibir adaptação local;
-- exigir internacionalização, localização ou presença física;
+- impor padronização global, proibir adaptação local ou exigir internacionalização;
 - tratar tradução, presença local ou variação de produto como prova suficiente de adequação legítima;
 - promover qualquer candidato a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
