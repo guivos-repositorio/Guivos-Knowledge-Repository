@@ -2,24 +2,22 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.91.1
+version: 4.92.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.93.0
+  - ROADMAP-11.94.0
   - GKR-R6-RESUMPTION-001
+  - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
+  - BA-STR-002-COD-SUB-018
+  - COD-018
   - UXA-000
-  - UXA-014
-  - UXA-015
-  - UXA-016
-  - UXA-017
-  - UXA-018
   - UXA-019
-  - M7.19.11
+  - M7.20
 normative: false
 ---
 
@@ -37,46 +35,35 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M3–M4 | Concluído | Arquitetura de Fundação congelada e Arquitetura do Conhecimento estabelecida |
 | M5–M5.18 | Concluído | arquitetura funcional e publicação do Guivos Journey |
 | M6.0–M6.10 | Concluído | desenvolvimento e fechamento documental do Modelo Econômico |
-| M7.0–M7.19 | Concluído | validação externa e decisões humanas 1 a 17 |
+| M7.0–M7.19 | Concluído | validação externa, Matriz de Avaliação e decisões humanas 1 a 17 |
 | M7.3–M7.3.5 | Concluído | auditoria, remediação e retomada governada |
-| M7.19.1 | Concluído | Arquitetura da Experiência integrada |
-| M7.19.2 | Concluído | três wireframes iniciais criados |
-| M7.19.3 | Concluído | linguagem clara estabelecida |
-| M7.19.4 | Concluído | Tela Hoje validada e reformulada |
-| M7.19.5 | Concluído | presença companheira e gate da Fundação estabelecidos |
-| M7.19.6 | Concluído | Detalhe de Oportunidade validado e reformulado |
-| M7.19.7 | Concluído | Cadastro pela Organização validado e reformulado |
-| M7.19.8 | Concluído | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
-| M7.19.9 | Concluído | Visão Geral da Organização validada e reformulada |
-| M7.19.10 | Concluído | Início do Coletivo validado e reformulado |
-| M7.19.11 | Concluído | relações entre Organizações e Coletivos detalhadas funcionalmente e integradas |
+| M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência, wireframes e experiências de Organizações e Coletivos |
+| M7.20 | Concluído neste incremento | décima oitava decisão humana registrada e fase decisória concluída |
 
 ## 3. Marco vigente
 
-### Relações entre Organizações e Coletivos Detalhadas Funcionalmente (marco M7.19.11)
+### Décima Oitava Decisão Humana sobre Resultados Empresariais Registrada — M7.20
 
 **Critérios atendidos:**
 
-- gate de alinhamento à Fundação aplicado;
-- Organização e Coletivo preservados como participantes distintos;
-- relação impedida de equivaler a propriedade ou subordinação;
-- finalidade e escopo compartilhado tornados explícitos;
-- consentimento bilateral exigido para ativação;
-- autoridades e limites de representação identificados;
-- silêncio, presença, recurso recebido e uso informal de marca rejeitados como aceite implícito;
-- compromissos definidos com responsáveis, evidências, dependências e alternativas;
-- recursos, condições econômicas, patrocínio e uso de marca tornados transparentes;
-- dados governados por finalidade, acesso, retenção, correção e saída;
-- autonomia, influência, dependência e conflitos tornados visíveis;
-- proteção, acessibilidade e não retaliação preservadas;
-- ciclo de vida estabelecido de rascunho a encerramento;
-- alterações materiais condicionadas a nova aprovação bilateral;
-- avanço da relação condicionado a mudança relacionada à finalidade e evidência;
-- ausência de avanço declarada sem simulação de impacto;
-- contestação, suspensão urgente e encerramento responsável estabelecidos;
-- protótipo, design, testes, sistema jurídico e desenvolvimento preservados como não iniciados;
-- Resultados Empresariais preservados em 17 de 18 decisões;
-- integração da etapa 3 concluída sem iniciar a etapa 4.
+- Resultados Empresariais retomados após autorização explícita;
+- `BUS-CAND-010 — Capacidade de reinvestimento responsável` submetido à decisão individual;
+- recomendação `Merge into BUS-CAND-005` preservada;
+- manifestação explícita do Fundador registrada;
+- `COD-018` criado;
+- `BUS-CAND-010` alterado de `Under Validation` para `Merged`;
+- `BUS-CAND-005 — Continuidade econômica sustentável` identificado como alvo;
+- alvo mantido em `Under Validation`;
+- formulação, evidências e histórico do candidato fundido preservados;
+- financiamento interno e externo preservados como alternativas legítimas;
+- adicionalidade, riscos, obrigações, alternativas e custo de oportunidade incorporados;
+- reinvestimento proposto, aprovado, realizado e eficaz mantidos como estados distintos;
+- retenção automática, sobreinvestimento e gasto como prova de responsabilidade bloqueados;
+- distribuição atualizada para 9 em validação, 3 fundidos e 6 rejeitados;
+- 18 de 18 decisões humanas registradas;
+- nenhum Resultado aprovado ou canonicalizado;
+- AQS-O01 e Capacidades Empresariais preservados como não iniciados;
+- Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Estado das revisões arquiteturais
 
@@ -84,7 +71,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 |---|---|
 | Revisão da Arquitetura de Fundação | concluída e congelada |
 | Revisão do Modelo Fundamental | pronta e pausada operacionalmente |
-| Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável |
+| Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída e próximo ato aguardando autorização |
 | Revisão da Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -92,8 +79,16 @@ A Arquitetura da Experiência permanece uma frente preparatória transversal e n
 
 ## 5. Próximo ato da ordem
 
-Após nova autorização, a próxima etapa será o retorno aos **Resultados Empresariais** para a decisão sobre **Capacidade de reinvestimento responsável**.
+Após integração e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas.
+
+A futura sequência preservada é:
+
+1. reaplicação da Matriz de Avaliação;
+2. ajuste prático do AQS-O01;
+3. consolidação governada dos catálogos canônicos;
+4. matriz de sustentação entre Ecosystem Outcomes e Business Outcomes;
+5. preparação da Arquitetura de Capacidades Empresariais.
 
 ## 6. Regra de transição
 
-Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Contrato jurídico, protótipo, testes, design, Engenharia de Produto e decisões sobre Resultados permanecem atos separados.
+Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Fusão de candidato não equivale a aprovação do alvo. Resultado canônico, AQS-O01, Capacidade Empresarial, protótipo, testes, design e Engenharia de Produto permanecem atos separados.
