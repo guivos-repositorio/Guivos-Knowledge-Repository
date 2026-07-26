@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.99.0
+version: 12.00.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.99.0
+  - ROADMAP-12.00.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -21,7 +21,8 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
-  - M7.25
+  - UXA-025
+  - M7.26
 normative: false
 ---
 
@@ -36,7 +37,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframe móvel do Mapa de Oportunidades criado | M7.25; UXA-024 |
+| Marco | Mapa de Oportunidades funcionalmente validado e reformulado | M7.26; UXA-024; UXA-025 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -46,8 +47,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Wireframe do início protegido | não iniciado | — |
 | Referência móvel da Home | não iniciada | — |
 | Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | contrato e wireframe móvel criados | UXA-004; UXA-024 |
-| Validação do wireframe do Mapa | não iniciada | — |
+| Mapa de Oportunidades | wireframe móvel funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
+| Estados alternativos do Mapa | não iniciados | — |
 | Personalização | bloqueada antes de contexto suficiente, revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
 | Capacidades Empresariais | não iniciadas | — |
@@ -72,7 +73,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - wireframe gráfico da Home para computador criado;
 - início protegido da jornada validado e reformulado;
 - posição do Mapa na navegação recorrente consolidada;
-- wireframe gráfico móvel do Mapa de Oportunidades criado.
+- wireframe gráfico móvel do Mapa criado;
+- Mapa de Oportunidades funcionalmente validado e reformulado.
 
 ### Em validação
 
@@ -84,14 +86,13 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- validação funcional do wireframe do Mapa;
 - estados alternativos do Mapa;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido da jornada;
 - referência móvel da Página Inicial pública;
 - detalhamento de estados especializados de texto, voz e arquivos;
 - validação da revisão da compreensão inicial;
-- validação da transição para a Tela Hoje.
+- validação da transição específica para a primeira Tela Hoje.
 
 #### Arquitetura de Negócios
 
@@ -119,19 +120,23 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Resultado do Mapa de Oportunidades
+## 5. Resultado da validação do Mapa
 
-O wireframe móvel materializa:
+O wireframe móvel reformulado materializa:
 
+- `Agindo como` explícito;
 - pesquisa por oportunidade, Organização ou região;
-- alternância entre mapa e lista;
-- filtros compactos;
+- Mapa e Lista com estado compartilhado;
+- filtros compactos e progressivos;
+- ação `Pesquisar nesta região`;
 - localização aproximada e raio visíveis;
+- acesso `Ajustar localização e privacidade`;
 - camadas territoriais de oportunidades, Organizações, Coletivos e eventos;
 - pontos e agrupamentos selecionáveis;
 - cartão resumido com preço, distância, data, vagas e acessibilidade;
-- explicação de relevância e relação comercial;
-- ações para detalhe, salvamento e rota;
+- explicação `Por que estou vendo isto?`;
+- relação comercial identificada;
+- ações para detalhe, salvamento e rota contextual;
 - navegação inferior com Mapa selecionado.
 
 O mapa desenhado é esquemático e não representa cidade, endereço ou coordenada real.
@@ -149,7 +154,8 @@ O mapa desenhado é esquemático e não representa cidade, endereço ou coordena
 - residências e locais sensíveis permanecem protegidos;
 - rastreamento contínuo não é obrigatório;
 - proximidade não equivale a relevância;
-- wireframes não equivalem a design ou implementação.
+- abertura de rota externa exige transparência;
+- wireframes e validações funcionais não equivalem a design ou implementação.
 
 ## 7. Distribuição dos candidatos
 
@@ -162,4 +168,4 @@ O mapa desenhado é esquemático e não representa cidade, endereço ou coordena
 
 ## 8. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do Mapa, estados alternativos do Mapa, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre estados alternativos do Mapa, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
