@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.7.0
+version: 2.8.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-013
   - GKR-CANON-MATRIX-UXA-012
   - GKR-CANON-MATRIX-UXA-011
   - GKR-CANON-MATRIX-UXA-010
@@ -20,19 +21,16 @@ related:
   - BA-STR-002-CODR-001
   - COD-017
   - UXA-000
-  - UXA-001
-  - UXA-002
-  - UXA-003
-  - UXA-004
-  - UXA-005
   - UXA-006
   - UXA-007
   - UXA-008
   - UXA-009
   - UXA-010
   - UXA-011
+  - UXA-011-A1
   - UXA-012
-  - M7.19.6
+  - UXA-013
+  - M7.19.7
 normative: false
 ---
 
@@ -68,40 +66,41 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Remediação do repositório | Manter concluída | R1–R6 concluídos |
 | Revisão da Arquitetura de Negócios | Manter ativa e pausar operacionalmente | após COD-017 e antes de BUS-CAND-010 |
 | Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões |
-| Decisões humanas 1 a 17 | Manter | COD-001 a COD-017 |
 | Capacidade de reinvestimento responsável | Manter pendente | BUS-CAND-010 em validação |
 | Décima oitava submissão e decisão | Pendente | não criadas |
-| Arquitetura da Experiência | Descoberta | UXA-000 a UXA-012 |
+| Arquitetura da Experiência | Descoberta | UXA-000 a UXA-013 |
 | Programa de Wireframes | Wireframe | UXA-005 |
-| Tela Hoje | Refinar em wireframe | UXA-006 0.4.0; UXA-010 e UXA-011 |
-| Detalhe de Oportunidade | Refinar em wireframe | UXA-007 0.3.0; validação aplicada por UXA-012 |
-| Cadastro pela Organização | Wireframe | UXA-008; validação funcional pendente |
+| Tela Hoje | Refinar em wireframe | UXA-006 0.4.0; UXA-010 |
+| Detalhe de Oportunidade | Refinar em wireframe | UXA-007 0.4.0; UXA-012 |
+| Cadastro pela Organização | Refinar em wireframe | UXA-008 0.3.0; UXA-013 |
 | Linguagem Clara | Manter | UXA-009 |
 | Presença Companheira | Manter como princípio transversal | UXA-011 |
-| Gate de alinhamento à Fundação | Manter como obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios Permanentes |
-| Validação do Detalhe de Oportunidade | Manter | UXA-012 |
-| Oportunidade como meio | Manter | oportunidade apoia Próximo Passo; não constitui finalidade |
-| Relação com a jornada | Refinar | antecede preço e conversão no Detalhe de Oportunidade |
-| Possibilidade versus recomendação | Separar explicitamente | apresentação não equivale a recomendação definitiva |
-| Investimento e condições | Refinar em wireframe | preço, custo total, validade, prazo e cancelamento transparentes |
-| Relevância e temporalidade | Refinar | explicar relação com objetivo, Próximo Passo e motivo de aparecer agora |
-| Condições para participar | Refinar | elegibilidade explicada sem simular aprovação |
-| Organização responsável | Refinar | apresentada em `Quem oferece` |
-| Relação comercial | Refinar | apresentada em `Relação comercial com a Guivos`; não altera relevância |
-| Ação principal | Refinar | varia conforme tipo e estado da oportunidade |
-| Salvar e comparar | Manter | alternativas legítimas sem pressão |
-| Mapa | Condicionar | somente quando localização for material |
-| Navegação pessoal | Manter em descoberta | Hoje, Jornada, Explorar, Mapa e Eu |
-| Experiência da Organização | Descoberta | validação do cadastro é próximo ato |
-| Experiência do Coletivo | Descoberta | início, atividades, pessoas, mapa, recursos e gestão |
+| Gate de alinhamento à Fundação | Manter obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios |
+| Compreensão do momento | Manter verificável e corrigível | UXA-011-A1 |
+| Evidência de avanço | Refinar | mudança relevante não equivale a engajamento |
+| Explicabilidade do Próximo Passo | Manter | cadeia entre momento, avanço, objetivo, lacuna e contribuição |
+| Oportunidade como meio | Manter | apoia Próximo Passo; não constitui finalidade |
+| Organização no ecossistema | Refinar | participante institucional responsável, não apenas anunciante |
+| Jornada e contribuição | Posicionar antes do preço | finalidade e contribuição antecedem conversão |
+| Momento Atual geral | Estruturar | Organização descreve contexto geral sem alegar conhecimento individual |
+| Avanço possível | Refinar | contribuição esperada sem promessa de resultado |
+| Níveis de evidência | Separar | intenção, fundamento, evidência, experiência e resultado verificado não se confundem |
+| Métricas operacionais | Limitar | cliques, inscrições, vendas e tempo de uso não substituem impacto |
+| Limites e não garantias | Tornar obrigatórios | resultados não poderão ser prometidos ou ocultados |
+| Relevância individual | Reservar à Guivos e ao participante | Organização não define prioridade pessoal |
+| Investimento e condições | Refinar | preço, custo total, validade, cancelamento e reembolso transparentes |
+| Condições para participar | Refinar | requisitos e autoridade decisória explícitos |
+| Proteção, dados e evidências | Refinar | coleta proporcional, consentimento e método de avaliação |
+| Painel de coerência | Manter em wireframe | verifica contribuição, evidências, limites, preço e Fundação |
+| Pré-visualização responsável | Manter | distingue declaração da Organização e avaliação da Guivos |
+| Envio, avaliação, ativação e apresentação | Separar explicitamente | nenhum estado implica automaticamente o seguinte |
+| Patrocínio e relevância | Separar | investimento comercial não aumenta relevância funcional |
 | Controle de relevância | Refinar | explícito, explicável, ajustável e contestável |
-| Fluxo de oportunidades | Refinar | cadastro, avaliação, ativação, apresentação e encerramento separados |
 | Protótipo navegável | Pendente | não iniciado |
 | Design visual | Pendente | não iniciado |
 | Testes de usabilidade | Pendente | não iniciados |
 | Resultados canônicos | Pendente | nenhum criado |
 | Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
-| Produtos especializados | Preservar para replanejamento | ordem histórica não autoriza início |
 | Validação de Mercado | Manter em paralelo | execução própria pendente |
 | Validador mecânico | Manter | workflow permanente |
 
@@ -128,26 +127,28 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | BUS-CAND-009 | coerência global com adequação contextual | Rejeitado como Resultado; princípio preservado |
 | BUS-CAND-010 | capacidade de reinvestimento responsável | Em validação; decisão pendente |
 
-## 5. Resultado da validação do Detalhe de Oportunidade
+## 5. Resultado da validação do Cadastro pela Organização
 
 A decisão consolidada:
 
 - aplica o gate obrigatório da Fundação;
-- posiciona a contribuição para a jornada antes da leitura comercial;
-- mantém preço e condições transparentes;
-- declara a oportunidade como possibilidade;
-- explica relevância e temporalidade;
-- preserva autonomia para corrigir, recusar, salvar e comparar;
-- adapta a ação principal ao estado real;
-- condiciona mapa à materialidade da localização;
-- separa publicidade e comissão da relevância funcional;
-- impede que a superfície seja tratada como página genérica de venda;
+- transforma a Organização em participante institucional responsável;
+- posiciona Jornada e contribuição antes do investimento;
+- estrutura Momento Atual geral, Próximo Passo e avanço possível;
+- distingue intenção, evidência, experiência e resultado;
+- impede métricas operacionais de substituírem impacto;
+- exige limites e não garantias;
+- impede definição indevida de relevância individual;
+- mantém preço, condições, dados e consentimento transparentes;
+- cria painel de coerência e prévia responsável;
+- separa envio, avaliação, ativação e apresentação;
+- impede patrocínio de elevar relevância;
 - não inicia protótipo, design, teste ou desenvolvimento.
 
 ## 6. Documento complementar vigente
 
-O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Validação Funcional do Detalhe de Oportunidade`.
+O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Validação Funcional do Cadastro de Oportunidade pela Organização`.
 
 ## 7. Próximo ato
 
-Validar funcionalmente o Cadastro de Oportunidade pela Organização segundo a Fundação da Guivos, presença companheira institucional e responsabilidade sobre o ciclo da oportunidade.
+Escolher separadamente entre estado alternativo, protótipo navegável de baixa fidelidade ou retorno aos Resultados Empresariais.
