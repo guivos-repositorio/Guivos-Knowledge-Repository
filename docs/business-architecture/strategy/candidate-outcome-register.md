@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.27.0
+version: 0.28.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -33,8 +33,9 @@ related:
   - COD-013
   - COD-014
   - COD-015
+  - COD-016
   - GEM-CLOSURE-REVIEW-001
-  - M7.17
+  - M7.18
 normative: false
 ---
 
@@ -55,12 +56,12 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 12
+Under Validation: 11
 Merged: 2
-Rejected: 4
+Rejected: 5
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 15 of 18
+Human decisions: 16 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -281,12 +282,15 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco. |
+| Definição original preservada | A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco. |
 | Origem | GEB-P01-F06; GEM-001; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Organizações, Coletivos, parceiros e participantes atendidos |
-| Status | Under Validation |
-| Observações | Quantidade de parceiros ou contratos não comprova saúde relacional. |
-| Questão de validação | O candidato é permanente em escala institucional ou pertence à futura arquitetura de capacidades e relações? |
+| Status | Rejected |
+| Decisão | `COD-016 — Aceitar Reject` |
+| Destino arquitetural preservado | governança das relações de parceria, gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios de portfólio na futura arquitetura de capacidades |
+| Evidência insuficiente | quantidade de parceiros, duração contratual ou ausência de conflito não comprovam saúde relacional |
+| Observações | A rejeição não reduz a importância estratégica das parcerias e não exige internalização; entrada, evolução, renovação, substituição e saída permanecem decisões legítimas e governadas. |
+| Questão de validação | Resolvida quanto à candidatura autônoma. |
 
 ### BUS-CAND-009 — Coerência global com adequação contextual
 
@@ -322,12 +326,13 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 e BUS-CAND-005 reformulados; BUS-CAND-010 pendente de decisão individual |
 | adaptação | BUS-CAND-002, BUS-CAND-007 e BUS-CAND-009 | BUS-CAND-002 fundido em BUS-CAND-003; BUS-CAND-007 rejeitado como Outcome e preservado como capacidade; BUS-CAND-009 pendente |
 | resiliência | BUS-CAND-005 e BUS-CAND-006 | BUS-CAND-005 preservado como candidato reformulado; BUS-CAND-006 rejeitado como Outcome e expansão responsável preservada como trajetória opcional |
+| parcerias | BUS-CAND-008 | rejeitado como Outcome; governança de parceiros, gestão de alianças e critérios de portfólio preservados como capacidades e decisões governadas |
 
 ## 8. Pendências para os próximos ciclos
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as três disposições restantes;
+1. decisão humana individual para as duas disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -336,16 +341,16 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-015` registrado | Pass |
+| `COD-016` registrado | Pass |
 | formulação original e evidências preservadas | Pass |
-| `BUS-CAND-007` alterado para `Rejected` | Pass |
-| aprendizado institucional preservado como capacidade sustentadora | Pass |
-| sensing, interpretação, absorção, memória, contestação, renovação e adaptação preservados | Pass |
-| analytics e IA bloqueados como prova suficiente | Pass |
-| distribuição 12/2/4 registrada | Pass |
+| `BUS-CAND-008` alterado para `Rejected` | Pass |
+| governança de parceiros e gestão de alianças preservadas | Pass |
+| critérios de portfólio e decisões de ciclo de parceria preservados | Pass |
+| métricas relacionais simplistas bloqueadas como prova suficiente | Pass |
+| distribuição 11/2/5 registrada | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 10. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
