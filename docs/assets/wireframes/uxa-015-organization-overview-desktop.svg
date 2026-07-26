@@ -1,99 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe de baixa fidelidade da Visão Geral da Organização</title>
-  <desc id="desc">Estrutura para computador com contexto institucional, momento atual, atenção principal, jornadas apoiadas, oportunidades, avanço institucional, capacidade, relações e próximos passos.</desc>
-  <rect width="1440" height="1024" fill="#ffffff"/>
-  <rect x="0" y="0" width="250" height="1024" fill="#f3f3f3" stroke="#999999"/>
-  <text x="28" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="700">Guivos Business</text>
-  <text x="28" y="78" font-family="Arial, sans-serif" font-size="12">Instituto Horizonte · Unidade Central</text>
-  <text x="28" y="99" font-family="Arial, sans-serif" font-size="10">Agindo como Administrador institucional</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe reformulado da Visão Geral da Organização</title>
+  <desc id="desc">Estrutura para computador com autoridade representada, momento institucional, responsabilidade principal, jornadas e compromissos, capacidade, movimentos institucionais, avanço, relações e decisões justificadas.</desc>
+  <rect width="1440" height="1120" fill="#ffffff"/>
+  <rect x="0" y="0" width="250" height="1120" fill="#f3f3f3" stroke="#999999"/>
+  <text x="28" y="46" font-family="Arial, sans-serif" font-size="21" font-weight="700">Guivos Business</text>
+  <text x="28" y="76" font-family="Arial, sans-serif" font-size="12">Instituto Horizonte · Unidade Central</text>
+  <text x="28" y="97" font-family="Arial, sans-serif" font-size="10">Administrador institucional</text>
+  <text x="28" y="116" font-family="Arial, sans-serif" font-size="10">Pode revisar, atribuir e pausar nesta unidade</text>
   <g font-family="Arial, sans-serif" font-size="14">
-    <rect x="16" y="126" width="218" height="42" rx="6" fill="#222222"/>
-    <text x="28" y="152" fill="#ffffff" font-weight="700">Visão Geral</text>
-    <text x="28" y="202">Oportunidades</text>
-    <text x="28" y="242">Programas e Públicos</text>
-    <text x="28" y="282">Coletivos e Parcerias</text>
-    <text x="28" y="322">Resultados e Evidências</text>
-    <text x="28" y="362">Equipe e Papéis</text>
-    <text x="28" y="402">Organização</text>
-    <text x="28" y="442">Privacidade e Conformidade</text>
+    <rect x="16" y="140" width="218" height="42" rx="6" fill="#222222"/>
+    <text x="28" y="166" fill="#ffffff" font-weight="700">Visão Geral</text>
+    <text x="28" y="216">Oportunidades</text>
+    <text x="28" y="256">Programas e Jornadas</text>
+    <text x="28" y="296">Coletivos e Relações</text>
+    <text x="28" y="336">Resultados e Evidências</text>
+    <text x="28" y="376">Equipe, Papéis e Autoridades</text>
+    <text x="28" y="416">Organização e Unidades</text>
+    <text x="28" y="456">Privacidade e Conformidade</text>
   </g>
-  <text x="28" y="946" font-family="Arial, sans-serif" font-size="11">Ajuda e contestação</text>
-  <text x="28" y="972" font-family="Arial, sans-serif" font-size="11">Alternar contexto de atuação</text>
+  <text x="28" y="1042" font-family="Arial, sans-serif" font-size="11">Ajuda, correção e contestação</text>
+  <text x="28" y="1070" font-family="Arial, sans-serif" font-size="11">Alternar contexto de atuação</text>
 
-  <rect x="250" y="0" width="1190" height="76" fill="#ffffff" stroke="#cccccc"/>
-  <text x="286" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700">Visão Geral da Organização</text>
-  <text x="286" y="62" font-family="Arial, sans-serif" font-size="11" fill="#555555">Organização verificada · informações atualizadas hoje</text>
-  <rect x="1250" y="20" width="156" height="36" rx="6" fill="#ffffff" stroke="#555555"/>
-  <text x="1328" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Ver informações utilizadas</text>
+  <rect x="250" y="0" width="1190" height="84" fill="#ffffff" stroke="#cccccc"/>
+  <text x="286" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="700">Visão Geral da Organização</text>
+  <text x="286" y="59" font-family="Arial, sans-serif" font-size="11">Organização verificada · autoridade ativa · informações atualizadas hoje</text>
+  <rect x="1190" y="20" width="216" height="40" rx="6" fill="#ffffff" stroke="#555555"/>
+  <text x="1298" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">Ver autoridade e permissões</text>
 
-  <rect x="286" y="100" width="748" height="112" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
-  <text x="310" y="128" font-family="Arial, sans-serif" font-size="14" font-weight="700">Momento institucional em poucas palavras</text>
-  <text x="310" y="153" font-family="Arial, sans-serif" font-size="11">Três oportunidades estão ativas, duas seguem em avaliação e uma está próxima do limite de capacidade.</text>
-  <text x="310" y="176" font-family="Arial, sans-serif" font-size="11">A informação de acessibilidade de uma atividade ainda precisa ser confirmada.</text>
-  <text x="310" y="198" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Corrigir contexto institucional</text>
-  <text x="470" y="198" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Informar uma mudança</text>
-  <text x="612" y="198" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Contestar esta leitura</text>
+  <rect x="286" y="108" width="1120" height="118" rx="10" fill="#f7f7f7" stroke="#999999"/>
+  <text x="310" y="136" font-family="Arial, sans-serif" font-size="14" font-weight="700">Como compreendemos este momento</text>
+  <text x="310" y="162" font-family="Arial, sans-serif" font-size="11">A formação de Inglês profissional se aproxima da capacidade declarada.</text>
+  <text x="310" y="183" font-family="Arial, sans-serif" font-size="11">A condição de acessibilidade do próximo encontro ainda não foi confirmada e afeta um compromisso ativo.</text>
+  <text x="310" y="207" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver informações, fontes e incertezas</text>
+  <text x="520" y="207" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Corrigir contexto</text>
+  <text x="625" y="207" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Contestar leitura</text>
+  <text x="1110" y="136" font-family="Arial, sans-serif" font-size="10" font-weight="700">CONFIRMADO</text>
+  <text x="1110" y="159" font-family="Arial, sans-serif" font-size="10">42 inscrições</text>
+  <text x="1110" y="182" font-family="Arial, sans-serif" font-size="10" font-weight="700">DESCONHECIDO</text>
+  <text x="1110" y="205" font-family="Arial, sans-serif" font-size="10">acessibilidade final</text>
 
-  <rect x="1054" y="100" width="352" height="112" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
-  <text x="1078" y="128" font-family="Arial, sans-serif" font-size="14" font-weight="700">Atenção principal</text>
-  <text x="1078" y="153" font-family="Arial, sans-serif" font-size="11">Confirmar condição de acessibilidade</text>
-  <text x="1078" y="174" font-family="Arial, sans-serif" font-size="10">A informação afeta a decisão dos participantes.</text>
-  <text x="1078" y="197" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Revisar agora</text>
-  <text x="1170" y="197" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Atribuir responsável</text>
+  <rect x="286" y="246" width="1120" height="136" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="310" y="276" font-family="Arial, sans-serif" font-size="15" font-weight="700">Responsabilidade principal agora</text>
+  <text x="310" y="303" font-family="Arial, sans-serif" font-size="13" font-weight="700">Confirmar a condição de acessibilidade do próximo encontro</text>
+  <text x="310" y="326" font-family="Arial, sans-serif" font-size="11">O compromisso afeta a participação e precisa ser confirmado antes de novas inscrições.</text>
+  <text x="310" y="350" font-family="Arial, sans-serif" font-size="10">Responsável: não atribuído · consequência real: informação insuficiente para decisão do participante</text>
+  <rect x="1110" y="278" width="132" height="36" rx="6" fill="#222222"/>
+  <text x="1176" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff">Revisar agora</text>
+  <rect x="1254" y="278" width="128" height="36" rx="6" fill="#ffffff" stroke="#555555"/>
+  <text x="1318" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">Atribuir responsável</text>
+  <text x="1110" y="345" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver alternativas ou contestar</text>
 
-  <text x="286" y="252" font-family="Arial, sans-serif" font-size="17" font-weight="700">Jornadas e públicos apoiados</text>
-  <rect x="286" y="266" width="556" height="130" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
-  <text x="310" y="294" font-family="Arial, sans-serif" font-size="12" font-weight="700">Transição profissional</text>
-  <text x="310" y="318" font-family="Arial, sans-serif" font-size="11">Formação, mentoria e acesso a oportunidades para pessoas em mudança de carreira.</text>
-  <text x="310" y="342" font-family="Arial, sans-serif" font-size="10">Público autorizado: adultos que declararam interesse profissional.</text>
-  <text x="310" y="366" font-family="Arial, sans-serif" font-size="10">Limite: adequação individual permanece com a Guivos e o participante.</text>
-  <text x="310" y="386" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver jornadas e públicos</text>
+  <text x="286" y="426" font-family="Arial, sans-serif" font-size="17" font-weight="700">Jornadas apoiadas e compromissos ativos</text>
+  <rect x="286" y="440" width="548" height="146" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="310" y="470" font-family="Arial, sans-serif" font-size="12" font-weight="700">Transição profissional</text>
+  <text x="310" y="494" font-family="Arial, sans-serif" font-size="11">Compromisso: formação e mentoria com condições compreensíveis e acesso sem barreiras evitáveis.</text>
+  <text x="310" y="518" font-family="Arial, sans-serif" font-size="10">Contribuição: formação, mentoria e acesso a oportunidades.</text>
+  <text x="310" y="541" font-family="Arial, sans-serif" font-size="10">Limite: adequação individual permanece com a Guivos e o participante.</text>
+  <text x="310" y="566" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver compromissos, evidências e limites</text>
 
-  <rect x="862" y="266" width="544" height="130" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
-  <text x="886" y="294" font-family="Arial, sans-serif" font-size="12" font-weight="700">Avanço institucional reconhecido</text>
-  <text x="886" y="318" font-family="Arial, sans-serif" font-size="11">Todas as oportunidades ativas passaram a informar custo total e cancelamento.</text>
-  <text x="886" y="342" font-family="Arial, sans-serif" font-size="10">Evidência: revisão documental e redução de dúvidas recorrentes.</text>
-  <text x="886" y="366" font-family="Arial, sans-serif" font-size="10">Período observado: últimos 30 dias · confirmação institucional registrada.</text>
-  <text x="886" y="386" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Entender evidências e limitações</text>
+  <rect x="854" y="440" width="552" height="146" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="878" y="470" font-family="Arial, sans-serif" font-size="12" font-weight="700">Capacidade e condições para cumprir</text>
+  <text x="878" y="494" font-family="Arial, sans-serif" font-size="11">Capacidade declarada: 50 · inscrições confirmadas: 42</text>
+  <text x="878" y="518" font-family="Arial, sans-serif" font-size="10">Ampliação: não confirmada · suporte: disponível · acessibilidade: pendente</text>
+  <text x="878" y="541" font-family="Arial, sans-serif" font-size="10">Decisão: manter 8 vagas, criar lista de espera, ampliar com confirmação ou encerrar.</text>
+  <text x="878" y="566" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver condições, responsáveis e limitações</text>
 
-  <text x="286" y="440" font-family="Arial, sans-serif" font-size="17" font-weight="700">Oportunidades e programas em movimento</text>
-  <rect x="286" y="454" width="1120" height="190" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="286" y="630" font-family="Arial, sans-serif" font-size="17" font-weight="700">Movimentos institucionais</text>
+  <rect x="286" y="644" width="1120" height="176" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
   <g font-family="Arial, sans-serif">
-    <text x="310" y="484" font-size="11" font-weight="700">Oportunidade</text>
-    <text x="675" y="484" font-size="11" font-weight="700">Estado e capacidade</text>
-    <text x="955" y="484" font-size="11" font-weight="700">Responsabilidade e próximo passo</text>
-    <line x1="310" y1="496" x2="1380" y2="496" stroke="#cccccc"/>
-    <text x="310" y="524" font-size="11">Inglês profissional · Formação</text>
-    <text x="675" y="524" font-size="11">Ativa · 42 de 50 vagas</text>
-    <text x="955" y="524" font-size="11">Revisar capacidade antes de novas inscrições</text>
-    <line x1="310" y1="542" x2="1380" y2="542" stroke="#eeeeee"/>
-    <text x="310" y="570" font-size="11">Mentoria de carreira · Programa</text>
-    <text x="675" y="570" font-size="11">Em avaliação</text>
-    <text x="955" y="570" font-size="11">Responder aos ajustes de proteção de dados</text>
-    <line x1="310" y1="588" x2="1380" y2="588" stroke="#eeeeee"/>
-    <text x="310" y="616" font-size="11">Encontro de preparação · Atividade</text>
-    <text x="675" y="616" font-size="11">Ajuste necessário</text>
-    <text x="955" y="616" font-size="11">Confirmar acessibilidade e responsável</text>
+    <text x="310" y="674" font-size="11" font-weight="700">Movimento e compromisso</text>
+    <text x="655" y="674" font-size="11" font-weight="700">Estado e condição</text>
+    <text x="950" y="674" font-size="11" font-weight="700">Responsabilidade e decisão</text>
+    <line x1="310" y1="687" x2="1380" y2="687" stroke="#cccccc"/>
+    <text x="310" y="714" font-size="11">Inglês profissional · formação</text>
+    <text x="655" y="714" font-size="11">Ativa · 42 de 50 vagas</text>
+    <text x="950" y="714" font-size="11">Decidir capacidade final antes de novas inscrições</text>
+    <line x1="310" y1="732" x2="1380" y2="732" stroke="#eeeeee"/>
+    <text x="310" y="759" font-size="11">Mentoria de carreira · programa</text>
+    <text x="655" y="759" font-size="11">Em avaliação</text>
+    <text x="950" y="759" font-size="11">Responder aos ajustes de proteção de dados</text>
+    <line x1="310" y1="777" x2="1380" y2="777" stroke="#eeeeee"/>
+    <text x="310" y="804" font-size="11">Encontro de preparação · atividade</text>
+    <text x="655" y="804" font-size="11">Informação incompleta</text>
+    <text x="950" y="804" font-size="11">Confirmar acessibilidade e atribuir responsável</text>
   </g>
 
-  <text x="286" y="688" font-family="Arial, sans-serif" font-size="17" font-weight="700">Capacidade, riscos e responsabilidades</text>
-  <rect x="286" y="702" width="544" height="140" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
-  <text x="310" y="732" font-family="Arial, sans-serif" font-size="11">Capacidade declarada: 84% utilizada</text>
-  <text x="310" y="756" font-family="Arial, sans-serif" font-size="11">Informações válidas: 9 de 10 itens materiais</text>
-  <text x="310" y="780" font-family="Arial, sans-serif" font-size="11">Responsabilidade sem titular: acessibilidade de uma atividade</text>
-  <text x="310" y="804" font-family="Arial, sans-serif" font-size="11">Risco atual: inscrições acima da capacidade informada</text>
-  <text x="310" y="828" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir responsabilidades e riscos</text>
+  <rect x="286" y="844" width="548" height="136" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="310" y="874" font-family="Arial, sans-serif" font-size="12" font-weight="700">Avanço institucional e evidências</text>
+  <text x="310" y="899" font-family="Arial, sans-serif" font-size="11">Custos, cancelamento e acessibilidade passaram a ser informados nas oportunidades ativas.</text>
+  <text x="310" y="923" font-family="Arial, sans-serif" font-size="10">Evidência: revisão documental · contribuição: maior clareza para decisão.</text>
+  <text x="310" y="947" font-family="Arial, sans-serif" font-size="10">Limite: resultado individual não foi inferido.</text>
+  <text x="310" y="969" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver evidências, período e limitações</text>
 
-  <rect x="850" y="702" width="556" height="140" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
-  <text x="874" y="732" font-family="Arial, sans-serif" font-size="12" font-weight="700">Relações com Coletivos e Organizações</text>
-  <text x="874" y="758" font-family="Arial, sans-serif" font-size="11">Rede de Mentores · apoio à execução de encontros mensais</text>
-  <text x="874" y="782" font-family="Arial, sans-serif" font-size="11">Empresa Parceira · bolsas para formação profissional</text>
-  <text x="874" y="806" font-family="Arial, sans-serif" font-size="10">Finalidade, recursos, dados e responsabilidades permanecem visíveis.</text>
-  <text x="874" y="828" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver relações e responsabilidades</text>
+  <rect x="854" y="844" width="552" height="136" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="878" y="874" font-family="Arial, sans-serif" font-size="12" font-weight="700">Relações, dependências e transparência</text>
+  <text x="878" y="899" font-family="Arial, sans-serif" font-size="11">Rede de Mentores · autonomia de governança · encontros mensais</text>
+  <text x="878" y="923" font-family="Arial, sans-serif" font-size="11">Empresa Parceira · bolsas · relação comercial identificada</text>
+  <text x="878" y="947" font-family="Arial, sans-serif" font-size="10">Finalidade, recursos, dados, responsabilidades e encerramento permanecem visíveis.</text>
+  <text x="878" y="969" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver relações e dependências</text>
 
-  <text x="286" y="886" font-family="Arial, sans-serif" font-size="17" font-weight="700">Próximos Passos justificados</text>
-  <rect x="286" y="900" width="1120" height="86" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
-  <text x="310" y="930" font-family="Arial, sans-serif" font-size="11" font-weight="700">Revisar a capacidade da turma de Inglês profissional</text>
-  <text x="310" y="952" font-family="Arial, sans-serif" font-size="10">Faz sentido porque as inscrições se aproximam do limite. Alternativas: ampliar capacidade, criar lista de espera, encerrar inscrições ou ajustar a data.</text>
-  <text x="310" y="974" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver justificativa e escolher caminho</text>
+  <text x="286" y="1024" font-family="Arial, sans-serif" font-size="17" font-weight="700">Decisões e Próximos Passos</text>
+  <rect x="286" y="1038" width="1120" height="62" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="310" y="1065" font-family="Arial, sans-serif" font-size="11" font-weight="700">Decidir a capacidade final da turma</text>
+  <text x="310" y="1087" font-family="Arial, sans-serif" font-size="10">Alternativas: manter 8 vagas, criar lista de espera, confirmar ampliação responsável ou encerrar inscrições.</text>
+  <text x="1252" y="1077" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver justificativa</text>
 </svg>
