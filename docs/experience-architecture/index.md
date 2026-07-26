@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -20,6 +20,7 @@ related:
   - UXA-008
   - UXA-009
   - UXA-010
+  - UXA-011
 normative: false
 ---
 
@@ -27,7 +28,7 @@ normative: false
 
 ## 1. Finalidade
 
-A Arquitetura da Experiência da Guivos transforma capacidades, princípios e contratos funcionais já consolidados no **Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR)** em uma experiência navegável, compreensível e coerente para Pessoas, Organizações e Coletivos.
+A Arquitetura da Experiência da Guivos transforma capacidades, princípios e contratos funcionais já consolidados no **Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR)** em uma experiência navegável, compreensível, coerente e reconhecível para Pessoas, Organizações e Coletivos.
 
 Ela governa, antes do design visual definitivo:
 
@@ -39,7 +40,8 @@ Ela governa, antes do design visual definitivo:
 - relações entre telas;
 - pontos de entrada e retorno;
 - controles de relevância, frequência e privacidade;
-- fluxos entre Guivos Journey, Guivos Business, Guivos Mall, Guivos Travel, Guivos Media, Guivos Ads e Guivos Intelligence;
+- presença companheira e posicionamento institucional;
+- coerência entre Guivos Journey, Guivos Business, Guivos Mall, Guivos Travel, Guivos Media, Guivos Ads e Guivos Intelligence;
 - critérios para wireframes, protótipos e testes posteriores.
 
 ## 2. O que esta frente não representa
@@ -69,6 +71,7 @@ Esta frente não:
 | [Wireframe de Baixa Fidelidade do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | fluxo institucional e etapa de preço e condições |
 | [Padrão de Linguagem Clara e Identificadores Técnicos](uxa-009-plain-language-and-technical-identifiers.md) | UXA-009 | nomes completos, tradução de estados e uso secundário de códigos |
 | [Validação Funcional e Reformulação da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana, critérios e consequências da primeira reformulação funcional |
+| [Presença Companheira e Coerência de Posicionamento da Guivos](uxa-011-companion-presence-and-ecosystem-positioning.md) | UXA-011 | princípio transversal de comunicação, comportamento e coerência entre produtos |
 
 ## 4. Estado atual
 
@@ -77,9 +80,10 @@ Esta frente não:
 | Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-004 |
 | Resultados Empresariais (Business Outcomes) | pausados antes da decisão sobre capacidade de reinvestimento responsável | BUS-CAND-010 |
 | Engenharia de Produto (Product Engineering) | pausada antes da primeira unidade de trabalho | W0-01 |
-| Tela Hoje | primeira validação funcional concluída e wireframe reformulado | UXA-006 e UXA-010 |
-| Detalhe de oportunidade | wireframe inicial aguardando validação funcional | UXA-007 |
+| Tela Hoje | primeira validação funcional concluída; wireframe reformulado e alinhado à presença companheira | UXA-006, UXA-010 e UXA-011 |
+| Detalhe de oportunidade | wireframe inicial aguardando validação funcional segundo o novo princípio | UXA-007 e UXA-011 |
 | Cadastro de oportunidade pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
+| Presença companheira | princípio transversal estabelecido para todo o ecossistema | UXA-011 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
@@ -94,7 +98,7 @@ contexto de atuação
 → síntese condicional
 → atenção principal
 → movimento atual
-→ oportunidades para considerar
+→ possibilidades para o próximo passo
 → Coletivos e atividades, quando materialmente relevantes
 → navegação global
 ```
@@ -109,26 +113,46 @@ Foram aplicadas as seguintes decisões:
 - Coletivos e atividades somente com utilidade temporal;
 - navegação Hoje, Jornada, Explorar, Mapa e Eu preservada.
 
-## 6. Wireframes atuais
+## 6. Presença companheira e posicionamento
+
+Toda superfície deverá demonstrar que a Guivos acompanha a jornada sem controlar decisões.
+
+A experiência deverá:
+
+- reconhecer o momento e a continuidade da jornada;
+- explicar por que algo importa agora;
+- relacionar informações a possibilidades ou Próximos Passos;
+- preservar alternativas, correção, pausa e recusa;
+- mostrar propósito por meio do comportamento da tela, não por slogans genéricos;
+- manter intenção comercial explicitamente separada do apoio à jornada;
+- preservar a mesma identidade institucional em todos os produtos.
+
+A voz companheira não representa amizade simulada, intimidade artificial, pressão emocional, vigilância ou autoridade sobre a vida do participante.
+
+## 7. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
-| Tela Hoje | aplicativo móvel | reformulada após primeira validação funcional |
-| Detalhe de oportunidade | aplicativo móvel | wireframe inicial criado |
+| Tela Hoje | aplicativo móvel | reformulada e alinhada ao princípio de presença companheira |
+| Detalhe de oportunidade | aplicativo móvel | wireframe inicial criado; validação funcional pendente |
 | Cadastro de oportunidade pela Organização | web para computador | wireframe inicial criado |
 
 Os artefatos são hipóteses estruturais. Eles não definem design visual, componentes técnicos ou comportamento implementado.
 
-## 7. Regra de comunicação
+## 8. Regra de comunicação
 
 O nome completo deverá aparecer antes do identificador técnico. Identificadores não deverão aparecer sozinhos em respostas, títulos executivos ou explicações dirigidas ao Fundador.
 
-## 8. Próximo ponto de decisão
+Textos e comportamentos deverão refletir a presença companheira e o propósito da Guivos. Uma formulação que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo deverá ser reavaliada.
 
-Decidir separadamente entre:
+## 9. Próximo ponto de decisão
 
-1. validar funcionalmente o Detalhe de Oportunidade;
-2. validar funcionalmente o Cadastro de Oportunidade pela Organização;
-3. selecionar um estado alternativo da Tela Hoje para novo wireframe.
+Validar funcionalmente o Detalhe de Oportunidade aplicando, desde o início:
+
+1. presença companheira;
+2. relação explícita com a jornada;
+3. explicação de relevância e temporalidade;
+4. autonomia para considerar, salvar, comparar, recusar ou iniciar;
+5. transparência de preço, elegibilidade, fonte e relação comercial.
 
 Protótipo navegável, design visual, testes e desenvolvimento permanecem não iniciados.
