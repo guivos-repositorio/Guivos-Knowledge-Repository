@@ -1,8 +1,8 @@
 ---
 id: UXA-010
 title: Validação Funcional e Reformulação da Tela Hoje
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -26,7 +26,7 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento registra a primeira validação humana funcional da **Tela Hoje**, governa a reformulação do respectivo wireframe de baixa fidelidade e preserva a decisão posterior de que a **Página Inicial da Guivos e Início da Jornada** deverá antecedê-la na primeira entrada pessoal.
+Este documento registra a primeira validação humana funcional da **Tela Hoje**, governa a reformulação do respectivo wireframe de baixa fidelidade e preserva a decisão posterior de que a **Página Inicial da Guivos** e o **início protegido da jornada** deverão antecedê-la na primeira experiência pessoal.
 
 A decisão permanece restrita à arquitetura da experiência. Ela não aprova design visual, componentes técnicos, protótipo navegável, testes de usabilidade ou desenvolvimento.
 
@@ -44,13 +44,21 @@ A decisão aceitou os seguintes ajustes:
 4. explicitar o contexto de atuação com a expressão `Agindo como`;
 5. mostrar Coletivos e atividades somente quando houver utilidade temporal.
 
-### 2.2 Precedência da HOME
+### 2.2 Precedência da Página Inicial e do início protegido da jornada
 
-Em 26/07/2026, o Fundador determinou que a experiência pessoal deverá possuir uma **HOME anterior à Tela Hoje**, na qual a pessoa:
+Em 26/07/2026, o Fundador determinou que a experiência pessoal deverá possuir uma **Página Inicial da Guivos anterior à Tela Hoje**.
 
-- conhece a Guivos e o ecossistema;
-- é convidada a iniciar sua jornada;
-- conta seu Momento Atual por texto, voz, arquivos ou outras formas autorizadas;
+A auditoria funcional posterior estabeleceu três responsabilidades distintas:
+
+- a **Página Inicial da Guivos** apresenta a instituição, o propósito e o ecossistema sem coletar relatos pessoais;
+- o **início protegido da jornada** recebe texto, voz, arquivos ou respostas progressivas depois de transição consciente, autenticação e autorização compatíveis;
+- a **Tela Hoje** utiliza somente compreensão suficiente, revisável e autorizada para apoiar a continuidade da jornada.
+
+A pessoa:
+
+- conhece a Guivos e o ecossistema na Página Inicial;
+- decide voluntariamente iniciar a jornada;
+- entra em ambiente protegido antes de compartilhar seu Momento Atual;
 - revisa o que a Guivos compreendeu;
 - corrige, limita e confirma a compreensão;
 - somente então recebe indicações contextuais na Tela Hoje.
@@ -63,7 +71,8 @@ A sequência pessoal passa a ser:
 
 ```text
 Página Inicial da Guivos
-→ início voluntário da jornada
+→ decisão voluntária de iniciar
+→ início protegido da jornada
 → relato do Momento Atual
 → compreensão inicial revisável
 → confirmação e autorização
@@ -72,10 +81,11 @@ Página Inicial da Guivos
 
 A Tela Hoje não deverá:
 
-- substituir a apresentação institucional da HOME;
-- coletar o primeiro relato completo sem contexto;
+- substituir a apresentação institucional da Página Inicial;
+- coletar o primeiro relato completo sem contexto e proteção;
 - apresentar personalização antes do gate de compreensão;
-- utilizar popularidade, publicidade ou perfil genérico para simular relevância.
+- utilizar popularidade, publicidade ou perfil genérico para simular relevância;
+- receber diretamente voz, arquivos ou outras informações quando a pessoa ainda estiver na superfície pública.
 
 ## 4. Estrutura recorrente preservada
 
@@ -162,7 +172,7 @@ A apresentação reformulada deverá:
 
 A quantidade máxima de dois cartões não constitui meta de preenchimento. Nenhuma oportunidade deverá ser apresentada apenas para completar a tela.
 
-Antes do gate da compreensão inicial, itens gerais poderão existir em Explorar ou na HOME, mas não serão descritos como indicação pessoal.
+Antes do gate da compreensão inicial, itens gerais poderão existir em Explorar ou na Página Inicial, mas não serão descritos como indicação pessoal.
 
 ## 9. Coletivos e atividades
 
@@ -189,13 +199,13 @@ A navegação pessoal permanece:
 
 `Jornada` é o termo consolidado para contexto, objetivos, Próximos Passos, experiências e evolução. O incremento não altera essa nomenclatura.
 
-A HOME continuará acessível por marca, menu institucional ou opção de acesso ao Ecossistema Guivos, sem necessariamente ocupar a navegação principal recorrente.
+A Página Inicial continuará acessível por marca, menu institucional ou opção de acesso ao Ecossistema Guivos, sem necessariamente ocupar a navegação principal recorrente.
 
 ## 11. Resultado da reformulação
 
 A nova versão do Wireframe de Baixa Fidelidade da Tela Hoje deverá demonstrar:
 
-- posição recorrente após a HOME e a compreensão inicial;
+- posição recorrente após a Página Inicial, o início protegido da jornada e a compreensão inicial;
 - contexto de atuação mais explícito;
 - síntese condicional;
 - um único item principal;
@@ -236,10 +246,11 @@ Esta decisão não autoriza:
 
 Após a integração desta reformulação, os próximos atos dependerão de autorização separada e poderão:
 
-1. validar funcionalmente a HOME da Guivos;
-2. detalhar a captura multimodal do Momento Atual;
-3. validar a revisão da compreensão inicial;
-4. criar a primeira variação da Tela Hoje após a transição da HOME;
-5. selecionar outro estado alternativo da Tela Hoje para wireframe.
+1. validar funcionalmente a Página Inicial pública;
+2. validar funcionalmente a entrada do fluxo protegido;
+3. detalhar a captura multimodal do Momento Atual;
+4. validar a revisão da compreensão inicial;
+5. criar a primeira variação da Tela Hoje após a transição;
+6. selecionar outro estado alternativo da Tela Hoje para wireframe.
 
 O protótipo navegável continuará dependendo de autorização explícita posterior.
