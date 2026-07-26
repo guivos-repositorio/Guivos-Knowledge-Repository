@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.13.0
+version: 2.14.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-020
   - GKR-CANON-MATRIX-COD-018
   - GKR-CANON-MATRIX-UXA-019
   - GKR-CANON-MATRIX-UXA-018
@@ -20,7 +21,6 @@ related:
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-018
   - COD-018
   - UXA-000
   - UXA-014
@@ -29,7 +29,9 @@ related:
   - UXA-017
   - UXA-018
   - UXA-019
+  - UXA-020
   - M7.20
+  - M7.21
 normative: false
 ---
 
@@ -70,9 +72,11 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Resultados canônicos | Pendente | nenhum criado |
 | AQS-O01 | Pendente | aplicação prática não iniciada |
 | Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
-| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-019 |
-| Programa de Wireframes | Wireframe | programa inicial preservado |
-| Tela Hoje | Refinar em wireframe | validada e reformulada |
+| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-020 |
+| Programa de Wireframes | Wireframe | programa ampliado com HOME textual |
+| Página Inicial da Guivos | Criar contrato funcional | impacto, início da jornada, ecossistema, contexto e transição governados pela UXA-020 |
+| Wireframe gráfico da HOME | Pendente | wireframe textual criado; arquivo gráfico não iniciado |
+| Tela Hoje | Refinar em wireframe | validada, reformulada e reposicionada como entrada recorrente |
 | Detalhe de Oportunidade | Refinar em wireframe | validado e reformulado |
 | Cadastro pela Organização | Refinar em wireframe | validado e reformulado |
 | Visão Geral da Organização | Refinar em wireframe | validada e reformulada pela UXA-017 |
@@ -80,6 +84,19 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Linguagem Clara | Manter | nomes completos antes de identificadores técnicos |
 | Presença Companheira | Manter como princípio transversal | acompanha sem controlar decisões |
 | Gate de alinhamento à Fundação | Manter obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios |
+| Primeira entrada pessoal | Refinar | HOME antecede relato, compreensão e Tela Hoje |
+| Início da jornada | Manter voluntário | pessoa pode explorar o ecossistema sem iniciar |
+| Relato do Momento Atual | Permitir multimodalmente | texto, voz, arquivos, perguntas progressivas e fontes autorizadas |
+| Compartilhamento de contexto | Minimizar e tornar progressivo | somente informações justificáveis e controláveis |
+| Compreensão inicial | Tornar revisável | confirmado, observado, externo autorizado, inferido, desconhecido e contestado distintos |
+| Gate de personalização | Exigir | indicação pessoal somente após base suficiente, revisão e autorização |
+| Exploração sem personalização | Manter disponível | conteúdo geral, institucional, editorial ou buscado explicitamente |
+| Soluções do ecossistema na HOME | Apresentar com identidade própria | Journey, Mall, Travel, Business, Media, Intelligence e Ads |
+| Publicidade e relevância na HOME | Separar | posição comercial não constitui relevância pessoal |
+| Voz | Governar | gravação e transcrição revisáveis, corrigíveis e removíveis |
+| Arquivos | Governar | finalidade, extração, retenção, informação de terceiros e exclusão explícitas |
+| Transição para Tela Hoje | Explicar | pessoa compreende uso do contexto e mantém controles |
+| Tela Hoje recorrente | Manter | organiza mudança, atenção, continuidade e possibilidades contextuais |
 | Compreensão do momento | Manter verificável e corrigível | fatos, observações, fontes, inferências e desconhecidos distintos |
 | Evidência de avanço | Refinar | mudança relevante não equivale a engajamento ou atividade |
 | Explicabilidade do Próximo Passo | Manter | momento, finalidade, compromisso, evidência, autoridade e alternativas relacionados |
@@ -153,11 +170,31 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Continuidade econômica sustentável | candidato empresarial combinado | Reformular aceito; recebeu BUS-CAND-010 por COD-018; nova avaliação pendente |
 | Capacidade de reinvestimento responsável | candidato empresarial fundido | Fundir em BUS-CAND-005 aceito por COD-018 |
 
-## 5. Consolidação da decisão COD-018
+## 5. Consolidação da Página Inicial da Guivos
 
 | Elemento | Decisão consolidada |
 |---|---|
-| `BUS-CAND-010` | alterar para `Merged` |
+| primeira superfície pessoal | criar HOME anterior à Tela Hoje |
+| papel institucional | apresentar propósito, impacto e amplitude do ecossistema |
+| ação principal | convidar voluntariamente a iniciar a jornada |
+| exploração geral | permitir sem início da jornada |
+| relato do Momento Atual | permitir texto, voz, arquivos e perguntas progressivas |
+| compreensão inicial | apresentar antes da personalização |
+| controles | confirmar, corrigir, limitar, remover, rejeitar ou recomeçar |
+| base insuficiente | declarar ausência de compreensão segura |
+| indicação pessoal | bloquear antes do gate |
+| soluções do ecossistema | apresentar com origem e finalidade próprias |
+| Tela Hoje | reposicionar como entrada recorrente após confirmação |
+| navegação recorrente | manter Hoje, Jornada, Explorar, Mapa e Eu |
+| acesso posterior à HOME | manter por marca ou menu institucional |
+| arquivo gráfico | manter pendente |
+| implementação | não iniciar |
+
+## 6. Consolidação da decisão COD-018
+
+| Elemento | Decisão consolidada |
+|---|---|
+| `BUS-CAND-010` | manter `Merged` |
 | recomendação da COEM | aceitar `Merge into BUS-CAND-005` |
 | candidato-alvo | `BUS-CAND-005 — Continuidade econômica sustentável` |
 | estado do alvo | manter `Under Validation` |
@@ -175,7 +212,7 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 
 A fusão elimina a duplicidade de candidatura. Ela não transforma reinvestimento em obrigação automática, não impõe financiamento exclusivamente interno e não presume que maior gasto produz maior valor.
 
-## 6. Resultado do detalhamento das relações
+## 7. Resultado do detalhamento das relações
 
 A decisão consolidada da UXA-019 permanece:
 
@@ -192,23 +229,27 @@ A decisão consolidada da UXA-019 permanece:
 - governa dados, recursos, marcas e responsabilidades após o término;
 - não inicia contrato jurídico, protótipo, design, teste ou desenvolvimento.
 
-## 7. Documentos complementares vigentes
+## 8. Documentos complementares vigentes
 
-Os detalhamentos vigentes são:
+Os detalhamentos vigentes incluem:
 
+- `Matriz de Consolidação Canônica — Adendo da Página Inicial da Guivos e Início da Jornada`;
 - `Matriz de Consolidação Canônica — Adendo do Contrato Funcional das Relações entre Organizações e Coletivos`;
 - `Matriz de Consolidação Canônica — Adendo COD-018`;
+- `Página Inicial da Guivos e Início da Jornada`;
 - `Human Decision Resolution — BUS-CAND-010`.
 
-## 8. Ordem autorizada concluída
+## 9. Ordem autorizada concluída
 
 1. Visão Geral da Organização — validada e integrada;
 2. Início do Coletivo — validado e integrado;
 3. relações entre Organizações e Coletivos — detalhadas e integradas;
-4. Resultados Empresariais e capacidade de reinvestimento responsável — decisão concluída neste incremento.
+4. Resultados Empresariais e capacidade de reinvestimento responsável — decisão concluída e integrada;
+5. Solicitação de Integração número 107 — concluída;
+6. Página Inicial da Guivos e início da jornada — estabelecidos neste incremento.
 
-## 9. Próximo ato governado
+## 10. Próximos atos governados
 
-Após integração e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas.
+A validação funcional da HOME, o arquivo gráfico, o detalhamento de voz e arquivos, a reaplicação dos testes dos Outcomes e qualquer etapa posterior dependem de autorização específica.
 
-Nenhuma aprovação, código canônico, AQS-O01, Capacidade Empresarial ou atividade de Engenharia de Produto é iniciada automaticamente.
+Nenhuma aprovação, código canônico, AQS-O01, Capacidade Empresarial, protótipo ou atividade de Engenharia de Produto é iniciada automaticamente.
