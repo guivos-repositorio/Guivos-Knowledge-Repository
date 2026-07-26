@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.74.0
-title: Roadmap Arquitetural — COD-013 Registrado
+id: ROADMAP-11.76.0
+title: Roadmap Arquitetural — COD-014 Registrado
 status: active
-version: 11.74.0
+version: 11.76.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.73.0
+  - ROADMAP-11.75.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-013
-  - COD-013
-  - M7.15
+  - BA-STR-002-COD-SUB-014
+  - COD-014
+  - M7.16
 ---
 
-# Roadmap Arquitetural — COD-013 Registrado
+# Roadmap Arquitetural — COD-014 Registrado
 
 ## 1. Autoridade
 
@@ -28,16 +28,16 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.15` |
+| Marco | `M7.16` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
-| CODR | `13 de 18` decisões; 0 submissões abertas |
+| COR | 13 `Under Validation`; 2 `Merged`; 3 `Rejected` |
+| CODR | `14 de 18` decisões; 0 submissões abertas |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
-| Reject aceitos | 2 |
+| Reject aceitos | 3 |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -67,31 +67,26 @@ R1 — precedência e estado global — concluído
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 13 de 18;
+- decisões humanas: 14 de 18;
+- submissões abertas: 0;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
-- `ECO-CAND-004` e `BUS-CAND-001`: `Rejected`;
-- `BUS-CAND-003`: `Reformulate` aceito por `COD-011`;
-- `BUS-CAND-004`: `Reformulate` aceito por `COD-012`;
-- `BUS-CAND-005`: `Reformulate` aceito por `COD-013`;
+- `ECO-CAND-004`, `BUS-CAND-001` e `BUS-CAND-006`: `Rejected`;
+- `BUS-CAND-003`, `BUS-CAND-004` e `BUS-CAND-005`: `Reformulate` aceitos;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-013
+## 5. Resultado de COD-014
 
-A recomendação `Reformulate` foi aceita para `BUS-CAND-005`.
+A recomendação `Reject` foi aceita para `BUS-CAND-006 — Crescimento responsável e resiliente`.
 
-**Continuidade econômica sustentável**
+A decisão retirou crescimento do futuro catálogo de Business Outcomes e preservou **expansão responsável** como trajetória estratégica opcional, sujeita à capacidade demonstrada, adicionalidade e critérios de não degradação.
 
-> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
-
-`BUS-CAND-005` permanece `Under Validation`. Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado até decisão individual posterior.
-
-A decisão não equivale a `Approve`, não cria código canônico e exige nova aplicação dos quatro testes da COEM.
+Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras. A decisão não proíbe crescimento nem trata ausência de expansão como falha automática.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `BUS-CAND-006` à decisão humana sobre `Reject`;
-2. concluir as quatro decisões posteriores;
+1. submeter `BUS-CAND-007` à decisão humana sobre `Reject`;
+2. concluir as três decisões posteriores;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -127,4 +122,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.

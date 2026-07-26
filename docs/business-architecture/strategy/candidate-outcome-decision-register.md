@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.25.0
+version: 0.27.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -14,6 +14,7 @@ related:
   - BA-STR-002-EOVB-001
   - BA-STR-002-EOVB-002
   - BA-STR-002-EOVB-003
+  - BA-STR-002-EOVB-004
   - BA-STR-002-EOVB-005
   - BA-STR-002-EOVB-006
   - RP-001-EVIDENCE
@@ -30,6 +31,7 @@ related:
   - BA-STR-002-COD-SUB-011
   - BA-STR-002-COD-SUB-012
   - BA-STR-002-COD-SUB-013
+  - BA-STR-002-COD-SUB-014
   - COD-001
   - COD-002
   - COD-003
@@ -43,7 +45,8 @@ related:
   - COD-011
   - COD-012
   - COD-013
-  - M7.15
+  - COD-014
+  - M7.16
 normative: false
 execution_status: in-progress
 ---
@@ -71,12 +74,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 13
+Human decisions recorded: 14
 Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
-Accepted Reject dispositions: 2
-Candidate state changes: 4
+Accepted Reject dispositions: 3
+Candidate state changes: 5
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -89,7 +92,7 @@ Operational authorization: no
 - nenhuma decisão é inferida por contagem de testes ou decisão de outro candidato;
 - `Reformulate` aceito não equivale a `Approved`;
 - `Merge` aceito não aprova automaticamente o alvo;
-- `Reject` aceito preserva registro, formulação e evidências;
+- `Reject` aceito preserva registro, formulação, evidências e destino arquitetural;
 - formulações revisadas ou combinadas retornam aos quatro testes da COEM;
 - candidatos fundidos ou rejeitados permanecem rastreáveis;
 - nenhum código `EO-###` ou `BO-###` nasce neste registro;
@@ -273,6 +276,22 @@ Confiança institucional permanece avaliação relacional associada. A decisão 
 
 Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado e aguarda sua própria decisão humana.
 
+### COD-014 — BUS-CAND-006
+
+| Campo | Registro |
+|---|---|
+| Nome | Crescimento responsável e resiliente |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+A rejeição alcança somente a candidatura de crescimento como Outcome permanente. **Expansão responsável** permanece trajetória estratégica opcional, condicionada à capacidade demonstrada, adicionalidade e critérios de não degradação. Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras.
+
 ## 5. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
@@ -290,7 +309,7 @@ Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financ
 | BUS-CAND-003 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-006 | Reject | — | Pending human decision |
+| BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-007 | Reject | — | Pending human decision |
 | BUS-CAND-008 | Reject | — | Pending human decision |
 | BUS-CAND-009 | Reject | — | Pending human decision |
@@ -302,18 +321,16 @@ Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financ
 |---|---|
 | manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| `COD-013` registrado | Pass |
-| formulação candidata revisada registrada | Pass |
-| continuidade econômica separada de métricas isoladas | Pass |
-| continuidade operacional e resiliência preservadas como sustentadoras | Pass |
-| `BUS-CAND-010` preservado sem fusão antecipada | Pass |
-| `BUS-CAND-005` mantido em `Under Validation` | Pass |
-| distribuição 14/2/2 preservada | Pass |
-| nova COEM exigida | Pass |
+| `COD-014` registrado | Pass |
+| `BUS-CAND-006` alterado para `Rejected` | Pass |
+| crescimento retirado do futuro catálogo | Pass |
+| expansão responsável preservada como trajetória opcional | Pass |
+| resiliência preservada como propriedade ou capacidade sustentadora | Pass |
+| distribuição 13/2/3 registrada | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 7. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.

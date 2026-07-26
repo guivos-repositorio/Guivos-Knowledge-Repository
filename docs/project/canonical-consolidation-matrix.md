@@ -2,19 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.93.0
+version: 1.95.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-013
+  - GKR-CANON-MATRIX-COD-014
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-013
-  - COD-013
-  - M7.15
+  - BA-STR-002-COD-SUB-014
+  - COD-014
+  - M7.16
 normative: false
 ---
 
@@ -62,8 +62,9 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-011` | Manter | `Reformulate` aceito para `BUS-CAND-003` |
 | `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
 | `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
-| CODR | Manter ativo | 13 de 18 decisões; 0 submissões abertas |
-| COR | Refinar | 14 `Under Validation`; 2 `Merged`; 2 `Rejected` |
+| `COD-014` | Manter | `Reject` aceito para `BUS-CAND-006` |
+| CODR | Manter ativo | 14 de 18 decisões; 0 submissões abertas |
+| COR | Refinar | 13 `Under Validation`; 2 `Merged`; 3 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
@@ -76,6 +77,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `BUS-CAND-003` | Refinar e manter `Under Validation` | `COD-011`; formulação revisada registrada; nova COEM pendente |
 | `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
 | `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
+| `BUS-CAND-006` | Remover do catálogo de Business Outcomes | `COD-014`; crescimento rejeitado como Outcome permanente; expansão responsável preservada como trajetória opcional |
 | `BUS-CAND-010` | Pendente | decisão individual e eventual fusão não antecipadas |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
@@ -84,36 +86,31 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado de COD-013
+## 4. Resultado de COD-014
 
-A alternativa `A — Aceitar Reformulate` foi consolidada para `BUS-CAND-005`.
+A alternativa `A — Aceitar Reject` foi consolidada para `BUS-CAND-006`.
 
 ### Formulação originalmente avaliada
 
-> A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
-
-### Formulação candidata revisada
-
-**Continuidade econômica sustentável**
-
-> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
+> A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade.
 
 A decisão:
 
 - preserva formulação original, evidências e rastreabilidade;
-- separa continuidade econômica de continuidade operacional e métricas financeiras isoladas;
-- preserva resiliência, equilíbrio financeiro, reservas, financiamento e alocação como dimensões ou capacidades sustentadoras;
-- mantém `BUS-CAND-005` em `Under Validation`;
-- preserva `BUS-CAND-010` para decisão individual posterior;
-- exige nova aplicação dos quatro testes da COEM;
-- não presume permanência absoluta;
+- altera `BUS-CAND-006` para `Rejected`;
+- retira crescimento do futuro catálogo de Business Outcomes;
+- preserva expansão responsável como trajetória estratégica opcional;
+- preserva capacidade demonstrada, adicionalidade e não degradação como gates;
+- preserva resiliência e adaptação legítima como propriedades de continuidade ou capacidades sustentadoras;
+- não proíbe crescimento;
+- não trata ausência de expansão como falha automática;
 - não cria código canônico;
 - não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
 ## 5. Addendum vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 1.93.0 — COD-013`.
+O addendum vigente é `Canonical Consolidation Matrix 1.95.0 — COD-014`.
 
 ## 6. Próximo ato
 
-Após integração deste incremento, preparar a submissão de `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
