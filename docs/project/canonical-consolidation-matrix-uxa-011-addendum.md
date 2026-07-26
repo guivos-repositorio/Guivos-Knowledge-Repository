@@ -2,7 +2,7 @@
 id: GKR-CANON-MATRIX-UXA-011
 title: Matriz de Consolidação Canônica — Adendo da Presença Companheira e Coerência de Posicionamento
 status: active
-version: 1.0.0
+version: 1.1.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -12,6 +12,12 @@ related:
   - UXA-006
   - UXA-007
   - UXA-008
+  - GEB-P01-F01
+  - GEB-P01-F02
+  - GEB-P01-F03
+  - GEB-P01-F04
+  - GEB-P01-F05
+  - GEB-P01-F06
   - M7.19.5
 normative: false
 ---
@@ -36,6 +42,7 @@ Este adendo preserva a decisão transversal que determina como a Guivos deverá 
 | Pressão e culpa | Rejeitar | não utilizar urgência artificial, comparação, sequência de dias ou cobrança por ausência |
 | Publicidade | Separar explicitamente | não utilizar a voz companheira para ocultar patrocínio ou intenção comercial |
 | Coerência do ecossistema | Manter | Journey, Mall, Travel, Business, Media, Ads e Intelligence seguem o mesmo posicionamento |
+| Alinhamento à Fundação da Guivos | Manter como gate obrigatório | nenhuma superfície avança sem aderência demonstrada à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes |
 | Tela Hoje | Refinar em wireframe | demonstrar o princípio em títulos, explicações, alternativas e estados vazios |
 | Detalhe de Oportunidade | Validar em seguida | aplicar propósito, relevância explicada, transparência e autonomia |
 
@@ -50,10 +57,25 @@ reconhecer o momento
 → permitir pausa, correção ou saída
 ```
 
-## 4. Regra de identidade
+## 4. Gate de alinhamento à Fundação
+
+Antes de avançar, toda superfície deverá demonstrar:
+
+1. aderência à **Essência da Guivos**;
+2. contribuição ao **Propósito**;
+3. execução coerente com a **Missão Operacional**;
+4. compatibilidade com a **Visão de Longo Prazo**;
+5. respeito à **Constituição da Guivos**;
+6. preservação dos **Princípios Permanentes**.
+
+A avaliação abrangerá finalidade, hierarquia, linguagem, ações, estados alternativos, publicidade, uso de dados, inteligência artificial, privacidade, consentimento e coerência entre produtos.
+
+Falha material no gate exige reformulação antes de protótipo, design, teste, especificação técnica ou desenvolvimento.
+
+## 5. Regra de identidade
 
 Uma tela que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo não demonstra aderência suficiente à identidade da Guivos e deverá ser reformulada.
 
-## 5. Limites
+## 6. Limites
 
 Este adendo não cria design visual, personalidade artificial, protótipo navegável, teste de usabilidade, sistema técnico ou autorização de desenvolvimento.
