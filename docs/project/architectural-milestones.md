@@ -2,18 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.75.0
+version: 4.76.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.77.0
+  - ROADMAP-11.78.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-015
-  - M7.16.1
+  - COD-015
+  - M7.17
 normative: false
 ---
 
@@ -59,26 +60,26 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.15 | Completed | `COD-013` registrado para `BUS-CAND-005` |
 | M7.15.1 | Completed | décima quarta decisão submetida |
 | M7.16 | Completed | `COD-014` registrado para `BUS-CAND-006` |
-| M7.16.1 | Completed neste incremento | décima quinta decisão submetida para `BUS-CAND-007` |
+| M7.16.1 | Completed | décima quinta decisão submetida para `BUS-CAND-007` |
+| M7.17 | Completed neste incremento | `COD-015` registrado para `BUS-CAND-007` |
 
 ## 3. Marco vigente
 
-### M7.16.1 — Fifteenth Human Outcome Decision Submitted
+### M7.17 — Fifteenth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- submissão individual `BA-STR-002-COD-SUB-015` criada;
-- formulação original de `BUS-CAND-007` preservada;
-- resultados `Partial / Pass / Pass / Fail` preservados;
-- recomendação `Reject` preservada sem inferência de decisão;
-- aprendizado separado de Outcome permanente;
-- aprendizagem e adaptação preservadas como capacidade sustentadora;
-- sensing, interpretação, absorção, memória, contestação e renovação preservados como dimensões governadas;
-- analytics e IA bloqueados como prova suficiente;
-- `COD-015` não criado;
-- candidato mantido em `Under Validation`;
-- decisões humanas preservadas em 14 de 18;
-- COR preservado em 13 `Under Validation`, 2 `Merged` e 3 `Rejected`;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reject` aceita;
+- `COD-015` criado para `BUS-CAND-007`;
+- formulação original, evidências e rastreabilidade preservadas;
+- candidato alterado de `Under Validation` para `Rejected`;
+- aprendizado institucional retirado do futuro catálogo de Business Outcomes;
+- aprendizagem preservada como capacidade sustentadora multinível;
+- sensing, interpretação, absorção, memória, contestação, renovação e adaptação preservados como dimensões governadas;
+- dados, analytics, IA, reuniões e retrospectivas bloqueados como prova suficiente;
+- decisões humanas atualizadas para 15 de 18;
+- COR atualizado para 12 `Under Validation`, 2 `Merged` e 4 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -94,7 +95,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana sobre a recomendação `Reject`.
 
 ## 6. Regra de transição
 
