@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -46,6 +46,7 @@ Ela governa:
 - arquitetura de informação e navegação;
 - responsabilidade e hierarquia das superfícies;
 - primeira entrada e início voluntário da jornada;
+- separação entre superfície pública e ambiente protegido;
 - relato multimodal e compreensão inicial do Momento Atual;
 - presença companheira e posicionamento institucional;
 - compreensão verificável do momento;
@@ -79,7 +80,7 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | momento, avanço, Próximo Passo, preço, fonte e ação contextual |
 | [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | contribuição para jornadas, responsabilidade, preço, proteção e envio |
 | [Padrão de Linguagem Clara](uxa-009-plain-language-and-technical-identifiers.md) | UXA-009 | nomes completos, tradução de estados e uso secundário de códigos |
-| [Validação Funcional da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana, reformulação da experiência recorrente e precedência da HOME |
+| [Validação Funcional da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana, reformulação da experiência recorrente e precedência da Página Inicial |
 | [Presença Companheira e Coerência de Posicionamento](uxa-011-companion-presence-and-ecosystem-positioning.md) | UXA-011 | princípio transversal e gate da Fundação |
 | [Compreensão do Momento, Evidência de Avanço e Explicabilidade](uxa-011-a1-moment-progress-and-next-step-explainability.md) | UXA-011-A1 | critérios para contexto, mudança e justificativa |
 | [Validação Funcional do Detalhe de Oportunidade](uxa-012-opportunity-detail-functional-validation-and-reformulation.md) | UXA-012 | decisão humana e reformulação da oportunidade |
@@ -90,7 +91,7 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Validação Funcional da Visão Geral da Organização](uxa-017-organization-overview-functional-validation-and-reformulation.md) | UXA-017 | validação e reformulação da superfície institucional inicial |
 | [Validação Funcional do Início do Coletivo](uxa-018-collective-home-functional-validation-and-reformulation.md) | UXA-018 | validação e reformulação da superfície coletiva inicial |
 | [Contrato Funcional das Relações entre Organizações e Coletivos](uxa-019-organization-collective-relationship-functional-contract.md) | UXA-019 | consentimento bilateral, autoridade, compromissos, recursos, dados, autonomia e ciclo de vida da relação |
-| [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | impacto, acesso ao ecossistema, relato multimodal, compreensão inicial e transição para a Tela Hoje |
+| [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | HOME pública, entrada protegida, compreensão inicial e transição para a Tela Hoje |
 
 ## 4. Estado atual
 
@@ -99,9 +100,9 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-020 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
-| Página Inicial da Guivos | contrato funcional e wireframe textual estabelecidos neste incremento | UXA-020 |
-| Início da jornada pessoal | relato multimodal, compreensão inicial e confirmação governados | UXA-020; UXA-011-A1 |
-| Tela Hoje | validada, reformulada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
+| Página Inicial da Guivos | superfície pública e institucional estabelecida | UXA-020 |
+| Início protegido da jornada | relato multimodal, autenticação, consentimento e compreensão inicial governados | UXA-020; UXA-011-A1 |
+| Tela Hoje | validada, ativa e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-011-A1; UXA-012 |
 | Cadastro pela Organização | validado e reformulado segundo a Fundação | UXA-008; UXA-013 |
 | Fundação de Organizações e Coletivos | estabelecida | UXA-014 |
@@ -125,26 +126,39 @@ A sequência estabelecida é:
 ```text
 Página Inicial da Guivos
 → apresentação do propósito e do ecossistema
-→ início voluntário da jornada
-→ relato do Momento Atual por texto, voz, arquivos ou perguntas progressivas
+→ decisão voluntária de iniciar a jornada
+→ autenticação e explicação de privacidade, quando necessárias
+→ ambiente protegido para texto, voz, arquivos ou perguntas progressivas
 → compreensão inicial com fontes, inferências e desconhecidos
 → revisão, correção, limitação e autorização
 → Tela Hoje
 ```
 
-### 6.1 Responsabilidade da HOME
+### 6.1 Responsabilidade da Página Inicial
 
-A HOME deverá:
+A Página Inicial deverá:
 
 - ser a página de impacto e entrada institucional da Guivos;
 - convidar a pessoa a iniciar sua jornada sem coerção;
 - permitir conhecer todas as soluções do ecossistema;
 - permitir exploração geral sem início da jornada;
-- explicar como a Guivos compreenderá e utilizará o Momento Atual;
+- explicar o que acontecerá caso a pessoa decida compartilhar seu Momento Atual;
 - preservar privacidade, acessibilidade e controle;
-- bloquear indicação personalizada antes do gate de compreensão.
+- bloquear indicação personalizada antes do gate de compreensão;
+- não ativar coleta de texto pessoal, voz, arquivos ou fontes externas na superfície pública.
 
-### 6.2 Responsabilidade da Tela Hoje
+### 6.2 Responsabilidade do início protegido da jornada
+
+Depois da escolha consciente de iniciar, o ambiente protegido deverá:
+
+- explicar finalidade, uso, retenção, correção e exclusão;
+- exigir autenticação e autorização compatíveis antes de persistência ou processamento;
+- permitir texto, voz, arquivos e perguntas progressivas como alternativas;
+- preservar compartilhamento mínimo e progressivo;
+- distinguir dados originais, fontes externas e interpretações derivadas;
+- permitir pausa, correção, retirada e reinício.
+
+### 6.3 Responsabilidade da Tela Hoje
 
 Depois da confirmação inicial, a Tela Hoje deverá:
 
@@ -155,7 +169,7 @@ Depois da confirmação inicial, a Tela Hoje deverá:
 - permitir correção, recusa, pausa e alternativas;
 - permanecer vazia ou parcial quando não houver fundamento material.
 
-A HOME continuará acessível após o início da jornada, mas não precisa ocupar uma posição permanente na navegação móvel principal.
+A Página Inicial continuará acessível após o início da jornada, mas não precisa ocupar uma posição permanente na navegação móvel principal.
 
 ## 7. Gate de personalização
 
@@ -248,9 +262,9 @@ Decisões principais:
 - contestação, suspensão e encerramento permanecem possíveis;
 - saída define continuidade de proteção, dados, recursos e responsabilidades.
 
-## 12. Soluções do ecossistema na HOME
+## 12. Soluções do ecossistema na Página Inicial
 
-A HOME deverá permitir conhecer:
+A Página Inicial deverá permitir conhecer:
 
 - Guivos Journey;
 - Guivos Mall;
@@ -259,6 +273,8 @@ A HOME deverá permitir conhecer:
 - Guivos Media;
 - Guivos Intelligence;
 - Guivos Ads.
+
+**Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios e patrocínios.
 
 Cada solução deverá manter identidade, finalidade, público e intenção comercial compreensíveis.
 
@@ -273,7 +289,8 @@ Antes do gate de personalização:
 
 | Superfície | Canal | Situação |
 |---|---|---|
-| Página Inicial da Guivos | web responsiva e aplicativo | contrato funcional e wireframe textual estabelecidos; gráfico pendente |
+| Página Inicial da Guivos | web responsiva e aplicativo | wireframe textual público estabelecido; gráfico pendente |
+| Início protegido da jornada | web responsiva e aplicativo | entrada textual estabelecida; estados detalhados pendentes |
 | Tela Hoje | aplicativo móvel | reformulada como entrada recorrente após compreensão inicial |
 | Detalhe de Oportunidade | aplicativo móvel | reformulado com momento, avanço e Próximo Passo explicável |
 | Cadastro pela Organização | web para computador | reformulado com contribuição para jornadas e responsabilidade institucional |
@@ -287,10 +304,11 @@ Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implem
 A ordem executada é:
 
 1. integrar a Solicitação de Integração número 107 — concluído;
-2. estabelecer a Página Inicial da Guivos e o Início da Jornada — em execução neste incremento;
-3. reposicionar a Tela Hoje como segunda experiência pessoal e entrada recorrente — documentado neste incremento;
-4. preservar validação funcional, wireframes, protótipo, design e desenvolvimento como atos posteriores separados.
+2. estabelecer a Página Inicial pública da Guivos — documentado neste incremento;
+3. separar o início protegido da jornada — documentado neste incremento;
+4. reposicionar a Tela Hoje como experiência recorrente — documentado neste incremento;
+5. preservar validação detalhada, arquivos gráficos, protótipo, design e desenvolvimento como atos posteriores separados.
 
-Após integração, qualquer validação funcional da HOME, criação de arquivo gráfico, detalhamento de voz e arquivos ou protótipo dependerá de nova autorização.
+Após integração, qualquer validação funcional adicional, criação de arquivo gráfico, detalhamento de voz e arquivos ou protótipo dependerá de nova autorização.
 
 Protótipo, design visual, testes e desenvolvimento permanecem não iniciados.
