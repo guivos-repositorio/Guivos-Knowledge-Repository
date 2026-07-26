@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.48.0
- title: Histórico de Alterações 1.48.0 — Validação Funcional do Mapa de Oportunidades
+title: Histórico de Alterações 1.48.0 — Validação Funcional do Mapa de Oportunidades
 status: active
 version: 1.48.0
 owner: Guivos
