@@ -1,23 +1,23 @@
 ---
-id: ROADMAP-11.78.0
-title: Roadmap Arquitetural — COD-015 Registrado
+id: ROADMAP-11.80.0
+title: Roadmap Arquitetural — COD-016 Registrado
 status: active
-version: 11.78.0
+version: 11.80.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.77.0
+  - ROADMAP-11.79.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-015
-  - COD-015
-  - M7.17
+  - BA-STR-002-COD-SUB-016
+  - COD-016
+  - M7.18
 ---
 
-# Roadmap Arquitetural — COD-015 Registrado
+# Roadmap Arquitetural — COD-016 Registrado
 
 ## 1. Autoridade
 
@@ -28,16 +28,16 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.17` |
+| Marco | `M7.18` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 12 `Under Validation`; 2 `Merged`; 4 `Rejected` |
-| CODR | `15 de 18` decisões; 0 submissões abertas |
+| COR | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
+| CODR | `16 de 18` decisões; 0 submissões abertas |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
-| Reject aceitos | 4 |
+| Reject aceitos | 5 |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -67,26 +67,26 @@ R1 — precedência e estado global — concluído
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 15 de 18;
+- decisões humanas: 16 de 18;
 - submissões abertas: 0;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
-- `ECO-CAND-004`, `BUS-CAND-001`, `BUS-CAND-006` e `BUS-CAND-007`: `Rejected`;
+- `ECO-CAND-004`, `BUS-CAND-001`, `BUS-CAND-006`, `BUS-CAND-007` e `BUS-CAND-008`: `Rejected`;
 - `BUS-CAND-003`, `BUS-CAND-004` e `BUS-CAND-005`: `Reformulate` aceitos;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-015
+## 5. Resultado de COD-016
 
-A recomendação `Reject` foi aceita para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
+A recomendação `Reject` foi aceita para `BUS-CAND-008 — Saúde das relações de parceria`.
 
-A decisão retirou aprendizado institucional do futuro catálogo de Business Outcomes e preservou **aprendizado institucional** como capacidade sustentadora multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
+A decisão retirou saúde das relações de parceria do futuro catálogo de Business Outcomes e preservou **governança das relações de parceria** na arquitetura de capacidades, incluindo gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios governados de portfólio.
 
-A decisão não elimina aprendizagem da arquitetura. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
+A decisão não reduz a importância estratégica das parcerias, não exige internalização e não considera quantidade, duração ou ausência de conflito como prova suficiente de saúde relacional.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `BUS-CAND-008` à decisão humana sobre `Reject`;
-2. concluir as duas decisões posteriores;
+1. submeter `BUS-CAND-009` à decisão humana sobre `Reject`;
+2. submeter `BUS-CAND-010` à decisão humana sobre `Merge into BUS-CAND-005`;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -122,4 +122,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
