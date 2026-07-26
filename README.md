@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.24 — Início Protegido da Jornada Validado e Reformulado |
+| Marco | M7.25 — Wireframe Móvel do Mapa de Oportunidades Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -21,6 +21,8 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Wireframe do início protegido | não iniciado |
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
+| Mapa de Oportunidades | contrato e wireframe móvel de baixa fidelidade criados |
+| Validação funcional do Mapa | não iniciada |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Validação de Mercado | trilha operacional paralela preservada |
@@ -30,18 +32,13 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 ```text
 Página Inicial pública
 → decisão voluntária de iniciar ou explorar
-→ explicação do ambiente protegido e das alternativas
-→ autenticação ou criação de conta
-→ finalidades, privacidade e controles
-→ escolha de modalidade
-→ compartilhamento mínimo e progressivo
-→ revisão do que foi recebido
-→ autorização específica para processamento aplicável
-→ processamento visível e interrompível
-→ compreensão inicial apresentada
-→ revisão, correção, limitação e decisão
-→ Tela Hoje, jornada sem personalização ou exploração geral
+→ início protegido da jornada
+→ compreensão inicial revisável
+→ Tela Hoje
+→ Hoje | Jornada | Explorar | Mapa | Eu
 ```
+
+O Mapa não entra entre a Home e a Tela Hoje.
 
 ## Página Inicial pública
 
@@ -51,23 +48,29 @@ O wireframe vetorial para computador permanece uma hipótese monocromática de b
 
 ## Início protegido da jornada
 
-A primeira validação funcional detalhada confirmou que o ambiente protegido deverá:
+O ambiente protegido deverá explicar o processo antes da autenticação e da coleta, separar criação de conta de autorização, preservar compartilhamento mínimo e progressivo, tratar texto, voz, arquivos e perguntas como alternativas, exigir revisão antes do processamento material, mostrar estados e falhas, permitir pausa, retirada, correção e exclusão e bloquear personalização antes do gate.
 
-- explicar o processo antes da autenticação e da coleta;
-- não iniciar gravação, upload ou conexão automaticamente;
-- separar criação de conta de autorização de processamento;
-- apresentar finalidades e controles em linguagem clara;
-- preservar compartilhamento mínimo e progressivo;
-- tratar texto, voz, arquivos e perguntas como alternativas;
-- exigir revisão antes do processamento material;
-- mostrar estados, fontes, falhas e controles;
-- permitir pausa, retomada, retirada, correção e exclusão;
-- proteger informações sensíveis e de terceiros;
-- distinguir conteúdo original, transcrição, extração e interpretação;
-- apresentar compreensão inicial revisável;
-- bloquear personalização antes do gate.
+## Mapa de Oportunidades
 
-A pessoa poderá continuar sem recomendações pessoais, retornar à exploração geral ou encerrar e excluir o relato.
+O Mapa é uma superfície própria da navegação recorrente.
+
+O wireframe móvel UXA-024 representa:
+
+- pesquisa por oportunidade, Organização ou região;
+- alternância entre mapa e lista;
+- filtros compactos;
+- camadas de oportunidades, Organizações, Coletivos e eventos;
+- localização aproximada declarada;
+- cartão selecionado com preço, distância, data, vagas e acessibilidade;
+- explicação de relevância e relação comercial;
+- ações para detalhe, salvamento e rota;
+- controles de privacidade territorial.
+
+Arquivo vetorial:
+
+`docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`
+
+A referência possui 390 por 844 pixels e não representa geografia real, tecnologia cartográfica, design ou implementação.
 
 ## Estado dos Resultados Empresariais
 
@@ -88,11 +91,12 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- wireframe gráfico do início protegido da jornada;
-- referência móvel da Página Inicial pública;
-- detalhamento especializado de texto, voz e arquivos;
+- validação funcional do wireframe do Mapa;
+- estados alternativos do Mapa;
+- referência do Mapa para computador;
+- wireframe gráfico do início protegido;
+- referência móvel da Home;
 - validação da revisão da compreensão inicial;
-- validação da transição para a Tela Hoje;
 - reaplicação dos quatro testes dos Resultados Empresariais;
 - ajuste do AQS-O01 e consolidação canônica em fases posteriores.
 
@@ -117,10 +121,10 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Marcos Arquiteturais](docs/project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](docs/project/canonical-consolidation-matrix.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Página Inicial da Guivos e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Validação da Página Inicial Pública](docs/experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
+- [Página Inicial e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
 - [Wireframe da Página Inicial Pública](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Validação do Início Protegido da Jornada](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
+- [Validação do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
+- [Wireframe do Mapa de Oportunidades](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
