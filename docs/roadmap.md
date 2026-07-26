@@ -139,7 +139,7 @@ A normalização alcança:
 - Painel de Conhecimento;
 - Marcos Arquiteturais;
 - Matriz de Consolidação Canônica;
-- navegação oficial.
+- novas entradas e alterações da navegação oficial.
 
 ### 5.4 Validade do preço
 
