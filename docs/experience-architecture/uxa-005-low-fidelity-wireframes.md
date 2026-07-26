@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -21,6 +21,7 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
+  - UXA-025
   - PAS-001
 normative: false
 ---
@@ -52,11 +53,12 @@ A correção formal está registrada em [Correção da Ordem Funcional da Primei
 3. **Wireframe da Página Inicial Pública** — UXA-022, para computador;
 4. **Validação do Início Protegido da Jornada** — UXA-023;
 5. **Wireframe da Tela Hoje** — UXA-006, depois da compreensão inicial suficiente e autorizada;
-6. **Wireframe do Mapa de Oportunidades** — UXA-024, como superfície recorrente própria;
-7. **Wireframe do Detalhe de Oportunidade** — UXA-007;
-8. **Wireframe do Cadastro pela Organização** — UXA-008.
+6. **Wireframe reformulado do Mapa de Oportunidades** — UXA-024, como superfície recorrente própria;
+7. **Validação Funcional do Mapa de Oportunidades** — UXA-025;
+8. **Wireframe do Detalhe de Oportunidade** — UXA-007;
+9. **Wireframe do Cadastro pela Organização** — UXA-008.
 
-O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo detalhe de uma oportunidade.
+O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo Detalhe de Oportunidade.
 
 ## 4. Natureza dos artefatos
 
@@ -81,7 +83,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A diferença entre Home, início protegido, Tela Hoje, Explorar e Mapa é clara?
 - A pessoa reconhece que a Home pública não coleta relatos pessoais?
 - O participante compreende o que merece atenção na Tela Hoje?
-- A alternância entre lista e mapa representa a mesma descoberta?
+- A alternância entre Lista e Mapa representa a mesma descoberta?
 - Preço, condições, elegibilidade, origem e relação comercial estão claros?
 - Ações principais e alternativas são distinguíveis?
 
@@ -90,7 +92,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - O item mais importante ocupa a posição correta?
 - A Home apresenta propósito antes das soluções comerciais?
 - Os caminhos pessoal, geral e institucional permanecem distintos?
-- O Mapa preserva espaço territorial sem ocultar pesquisa, filtros e privacidade?
+- O Mapa preserva espaço territorial sem ocultar pesquisa, filtros, resultados e privacidade?
 - O cartão selecionado oferece contexto suficiente antes do detalhe?
 - Estados vazios e ausência legítima permanecem possíveis?
 
@@ -120,6 +122,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 | texto sublinhado | ação secundária ou explicação |
 | círculos numerados | etapas ou agrupamentos |
 | linhas e formas esquemáticas | estrutura territorial sem geografia real |
+| marca textual | filtro ativo ou estado confirmado sem dependência exclusiva de cor |
 
 Cor, iconografia e tipografia não possuem significado definitivo neste programa.
 
@@ -171,31 +174,52 @@ Antes da compreensão inicial confirmada, as soluções poderão apresentar some
 | [Wireframe da Página Inicial Pública](uxa-022-public-home-low-fidelity-wireframe.md) | UXA-022 | Home pública | [arquivo vetorial](../assets/wireframes/uxa-022-public-home-desktop.svg) |
 | [Validação do Início Protegido](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) | UXA-023 | início protegido | contrato validado; wireframe pendente |
 | [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | Tela Hoje | [arquivo vetorial](../assets/wireframes/uxa-006-hoje-mobile.svg) |
-| [Wireframe do Mapa de Oportunidades](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa recorrente | [arquivo vetorial](../assets/wireframes/uxa-024-opportunity-map-mobile.svg) |
+| [Wireframe reformulado do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa recorrente | [arquivo vetorial](../assets/wireframes/uxa-024-opportunity-map-mobile.svg) |
+| [Validação Funcional do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md) | UXA-025 | Mapa recorrente | reformulação e critérios funcionais |
 | [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | [arquivo vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
 | [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | [arquivo vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
-## 10. Resultado do Mapa de Oportunidades
+## 10. Resultado validado do Mapa
 
-O wireframe gráfico do Mapa materializa:
+O wireframe reformulado do Mapa demonstra:
 
-- contexto de atuação explícito;
+- `Agindo como: Minha jornada`;
 - pesquisa territorial;
-- alternância entre mapa e lista;
-- filtros compactos;
+- alternância entre Mapa e Lista;
+- filtros ativos identificados;
+- quantidade de filtros e ação de limpeza;
+- quantidade de resultados na área;
+- `Pesquisar nesta área`;
 - mapa esquemático sem geografia real;
-- camadas de oportunidades, Organizações, Coletivos e eventos;
-- agrupamentos e pontos selecionáveis;
+- camadas, agrupamentos, pontos e legenda;
 - localização aproximada declarada;
+- controles de privacidade encontráveis;
 - cartão resumido de oportunidade;
 - preço, distância, data, vagas, acessibilidade e origem;
 - explicação de relevância e relação comercial;
-- ações de detalhe, salvamento e rota;
+- rota condicionada à disponibilidade segura do endereço;
 - navegação recorrente com Mapa selecionado.
 
-O arquivo representa conteúdo ilustrativo e não cria localidades, ofertas, coordenadas ou dados reais.
+A UXA-025 considera o Mapa funcionalmente válido após reformulação.
 
-## 11. Limites
+## 11. Estados funcionais do Mapa
+
+Estão governados, sem wireframes específicos neste incremento:
+
+- localização desativada;
+- localização aproximada;
+- localização exata temporária;
+- ausência de resultados;
+- carregamento;
+- baixa conectividade;
+- item indisponível;
+- endereço protegido;
+- permissão revogada;
+- erro de fonte;
+- contexto sem gate;
+- mapa indisponível com continuidade pela Lista.
+
+## 12. Limites
 
 Este programa não:
 
@@ -210,17 +234,16 @@ Este programa não:
 - define preço ou oferta comercial real;
 - inicia Engenharia de Produto.
 
-## 12. Próximos pontos de decisão
+## 13. Próximos pontos de decisão
 
 Os próximos pontos deverão ser autorizados separadamente e poderão:
 
-1. validar funcionalmente o wireframe do Mapa de Oportunidades;
-2. criar estados alternativos do Mapa;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido;
-5. criar a referência móvel da Home;
-6. validar a compreensão inicial e seus controles;
-7. detalhar a primeira Tela Hoje após a transição;
-8. retomar independentemente os testes dos Resultados Empresariais.
+1. criar estados alternativos do Mapa, começando por Lista ou localização desativada;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido;
+4. criar a referência móvel da Home;
+5. validar a compreensão inicial e seus controles;
+6. detalhar a primeira Tela Hoje após a transição;
+7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.

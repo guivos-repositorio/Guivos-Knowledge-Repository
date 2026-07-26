@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.52.0
+version: 1.53.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -27,13 +27,14 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
+  - UXA-025
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-11.99.0
-  - M7.25
+  - ROADMAP-12.0.0
+  - M7.26
 normative: true
 ---
 
@@ -48,14 +49,14 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | wireframe móvel do Mapa de Oportunidades criado | M7.25; UXA-024 |
+| Marco atual | Mapa de Oportunidades funcionalmente validado e reformulado | M7.26; UXA-024; UXA-025 |
 | Remediação do repositório | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída | A2-R03; BA-STR-002 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
 | Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
-| Arquitetura da Experiência | ativa até o wireframe do Mapa | UXA-000 a UXA-024 |
+| Arquitetura da Experiência | ativa até a validação funcional do Mapa | UXA-000 a UXA-025 |
 | Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | funcionalmente validado e reformulado | UXA-020; UXA-023 |
@@ -63,9 +64,8 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Revisão da compreensão inicial | contrato estabelecido; validação especializada não iniciada | UXA-011-A1; UXA-020; UXA-023 |
 | Gate de personalização | personalização bloqueada antes de compreensão revisável e autorizada | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | contrato funcional e wireframe móvel de baixa fidelidade criados | UXA-004; UXA-024 |
-| Validação funcional do wireframe do Mapa | não iniciada | — |
-| Estados alternativos do Mapa | não iniciados | — |
+| Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
+| Estados alternativos do Mapa | funcionalmente governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
@@ -138,21 +138,23 @@ A compreensão inicial permanece revisável e a personalização permanece bloqu
 
 ## 7. Mapa de Oportunidades
 
-O Mapa é uma superfície própria da navegação recorrente.
+O Mapa é uma superfície própria da navegação recorrente e foi considerado funcionalmente válido após reformulação.
 
-O wireframe móvel de baixa fidelidade materializa:
+A referência móvel demonstra:
 
-- contexto de atuação explícito;
+- `Agindo como: Minha jornada`;
 - busca por oportunidade, Organização ou região;
-- alternância entre mapa e lista;
-- filtros de período, distância, preço e outras dimensões;
+- alternância entre Mapa e Lista como uma descoberta única;
+- filtros ativos identificados, quantidade e limpeza;
+- quantidade de resultados da área;
+- ação `Pesquisar nesta área`;
 - mapa territorial esquemático sem geografia real;
-- camadas de oportunidades, Organizações, Coletivos, eventos e pontos de apoio;
-- localização aproximada declarada;
+- camadas, agrupamentos, pontos e legenda;
+- localização aproximada declarada e privacidade encontrável;
 - cartão selecionado com preço, distância, data, vagas, acessibilidade e origem;
 - explicação de relevância e relação comercial;
-- ações para detalhe, salvamento e rota;
-- controles de privacidade territorial.
+- rota condicionada à disponibilidade segura do endereço;
+- preservação de região, filtros e seleção na continuidade.
 
 Arquivo:
 
@@ -160,7 +162,9 @@ Arquivo:
 
 A referência possui 390 por 844 pixels e não define tecnologia cartográfica, coordenadas reais, design, responsividade, protótipo ou implementação.
 
-## 8. Proteções territoriais
+## 8. Estados funcionais e proteções territoriais
+
+A UXA-025 governa localização desativada, aproximada ou exata temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.
 
 O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo, manter localização exata sem finalidade ou presumir interesse somente pela proximidade.
 
@@ -170,12 +174,12 @@ Localização poderá ser exata e temporária, aproximada, cidade informada, reg
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o wireframe do Mapa de Oportunidades;
-2. criar estados alternativos do Mapa;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido;
-5. criar a referência móvel da Home;
-6. validar a revisão da compreensão inicial;
+1. criar estados alternativos do Mapa, começando por Lista ou localização desativada;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido;
+4. criar a referência móvel da Home;
+5. validar a revisão da compreensão inicial;
+6. validar a transição para a primeira Tela Hoje;
 7. retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
