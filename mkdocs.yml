@@ -190,7 +190,7 @@ nav:
       - GEM-007 — Papéis Econômicos dos Produtos: economic-model/gem-007-product-economic-roles.md
       - GEM-008 — Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
       - GEM-009 — Métricas Econômicas: economic-model/gem-009-economic-metrics.md
-      - GEM-010 — Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios.md
+      - GEM-010 — Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios-and-model.md
 
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
