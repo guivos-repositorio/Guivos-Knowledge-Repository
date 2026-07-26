@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -31,6 +31,7 @@ related:
   - UXA-018
   - UXA-019
   - UXA-020
+  - UXA-021
 normative: false
 ---
 
@@ -47,19 +48,15 @@ Ela governa:
 - responsabilidade e hierarquia das superfícies;
 - primeira entrada e início voluntário da jornada;
 - separação entre superfície pública e ambiente protegido;
-- relato multimodal e compreensão inicial do Momento Atual;
-- presença companheira e posicionamento institucional;
-- compreensão verificável do momento;
+- compreensão verificável do Momento Atual;
 - evidência de avanço relevante;
 - explicabilidade do Próximo Passo;
+- presença companheira e posicionamento institucional;
 - contribuição responsável das Organizações;
 - propósito, pertencimento, participação e governança dos Coletivos;
 - relações bilaterais entre Organizações e Coletivos;
-- autoridade representada e decisões institucionais;
-- voluntariedade, recusa, pausa e saída legítimas;
-- transparência de recursos, dados, patrocínio e influência;
-- contestação, suspensão e encerramento responsável;
-- gate de alinhamento à Fundação da Guivos;
+- voluntariedade, recusa, pausa, contestação e saída;
+- transparência de recursos, dados, publicidade, patrocínio e influência;
 - coerência entre os produtos do ecossistema;
 - critérios para wireframes, protótipos e testes posteriores.
 
@@ -91,17 +88,18 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Validação Funcional da Visão Geral da Organização](uxa-017-organization-overview-functional-validation-and-reformulation.md) | UXA-017 | validação e reformulação da superfície institucional inicial |
 | [Validação Funcional do Início do Coletivo](uxa-018-collective-home-functional-validation-and-reformulation.md) | UXA-018 | validação e reformulação da superfície coletiva inicial |
 | [Contrato Funcional das Relações entre Organizações e Coletivos](uxa-019-organization-collective-relationship-functional-contract.md) | UXA-019 | consentimento bilateral, autoridade, compromissos, recursos, dados, autonomia e ciclo de vida da relação |
-| [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | HOME pública, entrada protegida, compreensão inicial e transição para a Tela Hoje |
+| [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | Home pública, entrada protegida, compreensão inicial e transição para a Tela Hoje |
+| [Validação Funcional da Página Inicial Pública](uxa-021-public-home-functional-validation-and-reformulation.md) | UXA-021 | compreensão inicial da Guivos, hierarquia pública, caminhos de entrada e ecossistema organizado |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-020 |
+| Arquitetura da Experiência | descoberta ativa e integrada até a validação da Home pública | UXA-000 a UXA-021 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
-| Página Inicial da Guivos | superfície pública e institucional estabelecida | UXA-020 |
-| Início protegido da jornada | relato multimodal, autenticação, consentimento e compreensão inicial governados | UXA-020; UXA-011-A1 |
+| Página Inicial pública | funcionalmente validada e reformulada | UXA-020; UXA-021 |
+| Início protegido da jornada | contrato funcional estabelecido; validação detalhada não iniciada | UXA-020; UXA-011-A1 |
 | Tela Hoje | validada, ativa e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-011-A1; UXA-012 |
 | Cadastro pela Organização | validado e reformulado segundo a Fundação | UXA-008; UXA-013 |
@@ -109,6 +107,7 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | Visão Geral da Organização | validada funcionalmente e reformulada | UXA-015; UXA-017 |
 | Início do Coletivo | validado funcionalmente e reformulado | UXA-016; UXA-018 |
 | Relações entre Organizações e Coletivos | contrato funcional detalhado | UXA-019 |
+| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
@@ -117,37 +116,33 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 
 Toda superfície e relação deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
 
-Falha material impede ativação da relação ou avanço para protótipo, design, teste, especificação técnica ou desenvolvimento.
+Falha material impede avanço para protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 6. Primeira entrada e sequência pessoal
-
-A sequência estabelecida é:
+## 6. Sequência pessoal vigente
 
 ```text
-Página Inicial da Guivos
-→ apresentação do propósito e do ecossistema
-→ decisão voluntária de iniciar a jornada
+Página Inicial pública da Guivos
+→ decisão voluntária de iniciar ou explorar
 → autenticação e explicação de privacidade, quando necessárias
-→ ambiente protegido para texto, voz, arquivos ou perguntas progressivas
+→ ambiente protegido para relato do Momento Atual
 → compreensão inicial com fontes, inferências e desconhecidos
 → revisão, correção, limitação e autorização
 → Tela Hoje
 ```
 
-### 6.1 Responsabilidade da Página Inicial
+### 6.1 Página Inicial pública
 
 A Página Inicial deverá:
 
-- ser a página de impacto e entrada institucional da Guivos;
-- convidar a pessoa a iniciar sua jornada sem coerção;
-- permitir conhecer todas as soluções do ecossistema;
-- permitir exploração geral sem início da jornada;
-- explicar o que acontecerá caso a pessoa decida compartilhar seu Momento Atual;
-- preservar privacidade, acessibilidade e controle;
-- bloquear indicação personalizada antes do gate de compreensão;
-- não ativar coleta de texto pessoal, voz, arquivos ou fontes externas na superfície pública.
+- explicar concretamente o que é a Guivos;
+- preservar a frase de propósito sem depender apenas de linguagem abstrata;
+- oferecer `Iniciar minha jornada` e `Explorar sem personalização`;
+- apresentar caminhos pessoais, gerais e institucionais;
+- organizar as soluções por finalidade;
+- não coletar texto pessoal, voz, arquivos ou fontes externas;
+- adaptar a ação principal ao estado real sem exibir conteúdo sensível.
 
-### 6.2 Responsabilidade do início protegido da jornada
+### 6.2 Início protegido da jornada
 
 Depois da escolha consciente de iniciar, o ambiente protegido deverá:
 
@@ -155,10 +150,9 @@ Depois da escolha consciente de iniciar, o ambiente protegido deverá:
 - exigir autenticação e autorização compatíveis antes de persistência ou processamento;
 - permitir texto, voz, arquivos e perguntas progressivas como alternativas;
 - preservar compartilhamento mínimo e progressivo;
-- distinguir dados originais, fontes externas e interpretações derivadas;
 - permitir pausa, correção, retirada e reinício.
 
-### 6.3 Responsabilidade da Tela Hoje
+### 6.3 Tela Hoje
 
 Depois da confirmação inicial, a Tela Hoje deverá:
 
@@ -169,128 +163,86 @@ Depois da confirmação inicial, a Tela Hoje deverá:
 - permitir correção, recusa, pausa e alternativas;
 - permanecer vazia ou parcial quando não houver fundamento material.
 
-A Página Inicial continuará acessível após o início da jornada, mas não precisa ocupar uma posição permanente na navegação móvel principal.
+## 7. Resultado da validação da Página Inicial pública
 
-## 7. Gate de personalização
+A hierarquia funcional validada é:
 
-Toda superfície que apresente evolução, prioridade, oportunidade ou recomendação pessoal deverá mostrar:
+```text
+identidade, propósito e descrição concreta da Guivos
+→ ação principal adequada ao estado e exploração sem personalização
+→ explicação simples de como a Guivos atua
+→ caminhos pessoal, geral e institucional
+→ ecossistema organizado por finalidade
+→ possibilidades gerais opcionais e identificadas
+→ confiança, privacidade, transparência e controle
+→ acesso institucional, ajuda e rodapé
+```
 
-1. como a Guivos compreendeu o momento;
-2. quais informações sustentam a leitura;
-3. o que permanece confirmado, inferido, desconhecido ou contestado;
-4. qual avanço possui evidência suficiente;
-5. por que o Próximo Passo faz sentido;
-6. quais alternativas continuam disponíveis;
-7. como corrigir ou rejeitar a interpretação.
+A primeira área visível deverá responder o que é a Guivos, o que a pessoa pode fazer e que a superfície pública não coleta seu relato.
+
+## 8. Ecossistema organizado por finalidade
+
+### Jornada e possibilidades para pessoas
+
+- **Guivos Journey**;
+- **Guivos Mall**;
+- **Guivos Travel**;
+- **Guivos Media**.
+
+### Organizações, programas e Coletivos
+
+- **Guivos Business**.
+
+### Compreensão e transparência
+
+- **Guivos Intelligence**.
+
+### Publicidade e patrocínio institucional
+
+- **Guivos Ads**.
+
+Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome oficial da solução de anúncios, publicidade e patrocínios.
+
+Guivos Ads não será apresentado como benefício pessoal obrigatório ou como fonte de relevância individual.
+
+## 9. Possibilidades gerais na Home
+
+A Home poderá apresentar até três possibilidades gerais quando houver fundamento verificável.
+
+Cada item deverá identificar, quando aplicável:
+
+- origem e Organização responsável;
+- natureza geral, editorial ou patrocinada;
+- preço, gratuidade ou condição comercial;
+- local, modalidade, disponibilidade e prazo;
+- ausência de personalização.
+
+Nenhum item será incluído para preencher espaço.
+
+## 10. Organizações e Coletivos
+
+Organizações e Coletivos permanecem participantes distintos.
+
+A Home oferecerá caminho institucional claro sem mudar automaticamente o contexto de atuação, acessar informações pessoais ou executar ações em nome de uma entidade.
+
+As experiências validadas permanecem:
+
+- Visão Geral da Organização: autoridade, momento, responsabilidade, compromissos, capacidade, evidências e decisões;
+- Início do Coletivo: propósito, pertencimento, participação voluntária, governança, recursos, autonomia e avanço;
+- relações entre Organizações e Coletivos: finalidade limitada, consentimento bilateral, autoridade, compromissos, recursos, dados, autonomia e saída responsável.
+
+## 11. Gate de personalização
 
 Antes da confirmação suficiente do Momento Atual, a pessoa poderá conhecer o ecossistema, pesquisar e explorar conteúdos gerais, mas não receberá afirmação de relevância pessoal.
 
-Métricas de engajamento ou atividade não poderão substituir evidência de mudança real.
+Publicidade, patrocínio, popularidade, perfil demográfico genérico ou posição comercial não poderão preencher lacunas de contexto.
 
-## 8. Organizações e Coletivos
-
-### Organização
-
-A Organização é participante institucional com autoridade, responsabilidades, capacidade, recursos e obrigação de transparência. Sua experiência deverá mostrar como apoia jornadas humanas, quais compromissos possui e quais evidências sustentam sua atuação.
-
-### Coletivo
-
-O Coletivo é formação voluntária orientada por propósito compartilhado, participação, ação concreta, governança e relações de apoio. Sua experiência deverá preservar entrada, observação, recusa, pausa, saída, contestação, privacidade e ausência de coerção.
-
-Organizações e Coletivos permanecem participantes distintos. Uma relação não cria propriedade, filiação automática, autoridade irrestrita ou acesso geral a pessoas e dados.
-
-## 9. Resultado da Visão Geral da Organização
-
-A ordem funcional validada é:
-
-```text
-autoridade representada e contexto
-→ momento institucional e como foi compreendido
-→ responsabilidade principal agora
-→ jornadas apoiadas e compromissos ativos
-→ capacidade e condições para cumprir
-→ oportunidades e programas em movimento
-→ avanço institucional e evidências
-→ relações, dependências e transparência
-→ decisões e Próximos Passos justificados
-→ navegação institucional
-```
-
-## 10. Resultado do Início do Coletivo
-
-A ordem funcional validada é:
-
-```text
-propósito, identidade e participação
-→ momento coletivo e como foi compreendido
-→ necessidade ou decisão que precisa de cuidado
-→ ação compartilhada relacionada ao propósito
-→ formas voluntárias de participar
-→ decisões, papéis e governança
-→ recursos, relações e autonomia
-→ avanço coletivo e evidências
-→ escolhas e Próximos Passos justificados
-→ navegação do Coletivo
-```
-
-## 11. Resultado das relações entre Organizações e Coletivos
-
-O contrato funcional validado segue:
-
-```text
-participantes distintos
-→ finalidade compartilhada e limitada
-→ consentimento bilateral
-→ autoridade identificada
-→ compromissos verificáveis
-→ recursos e dados transparentes
-→ autonomia protegida
-→ acompanhamento e revisão
-→ saída possível e responsável
-```
-
-Decisões principais:
-
-- relação não equivale a propriedade, subordinação ou representação irrestrita;
-- ativação exige aprovação legítima das duas partes sobre o mesmo escopo;
-- silêncio, recurso recebido ou participação em atividade não equivalem a consentimento;
-- autoridade, compromissos, recursos, dados, patrocínio e influência permanecem explícitos;
-- alterações materiais exigem nova aprovação bilateral;
-- apoio institucional não controla propósito, pertencimento ou governança do Coletivo;
-- dados de membros não são transferidos automaticamente;
-- avanço exige mudança relacionada à finalidade e evidência suficiente;
-- contestação, suspensão e encerramento permanecem possíveis;
-- saída define continuidade de proteção, dados, recursos e responsabilidades.
-
-## 12. Soluções do ecossistema na Página Inicial
-
-A Página Inicial deverá permitir conhecer:
-
-- Guivos Journey;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Business;
-- Guivos Media;
-- Guivos Intelligence;
-- Guivos Ads.
-
-**Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios e patrocínios.
-
-Cada solução deverá manter identidade, finalidade, público e intenção comercial compreensíveis.
-
-Antes do gate de personalização:
-
-- itens serão gerais, editoriais, institucionais ou resultantes de busca explícita;
-- exemplos serão identificados como exemplos;
-- publicidade será identificada;
-- nenhuma solução será descrita como relevante para o Momento Atual da pessoa.
-
-## 13. Wireframes atuais
+## 12. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
-| Página Inicial da Guivos | web responsiva e aplicativo | wireframe textual público estabelecido; gráfico pendente |
-| Início protegido da jornada | web responsiva e aplicativo | entrada textual estabelecida; estados detalhados pendentes |
+| Página Inicial pública | web responsiva e aplicativo | funcionalmente validada e reformulada; arquivo gráfico pendente |
+| Início protegido da jornada | web responsiva e aplicativo | entrada textual estabelecida; validação detalhada pendente |
 | Tela Hoje | aplicativo móvel | reformulada como entrada recorrente após compreensão inicial |
 | Detalhe de Oportunidade | aplicativo móvel | reformulado com momento, avanço e Próximo Passo explicável |
 | Cadastro pela Organização | web para computador | reformulado com contribuição para jornadas e responsabilidade institucional |
@@ -299,16 +251,15 @@ Antes do gate de personalização:
 
 Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
-## 14. Ordem autorizada neste incremento
+## 13. Próximos atos governados
 
-A ordem executada é:
+Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. integrar a Solicitação de Integração número 107 — concluído;
-2. estabelecer a Página Inicial pública da Guivos — documentado neste incremento;
-3. separar o início protegido da jornada — documentado neste incremento;
-4. reposicionar a Tela Hoje como experiência recorrente — documentado neste incremento;
-5. preservar validação detalhada, arquivos gráficos, protótipo, design e desenvolvimento como atos posteriores separados.
+1. criação do arquivo gráfico vetorial da Página Inicial pública;
+2. validação funcional da entrada protegida da jornada;
+3. detalhamento de texto, voz e arquivos;
+4. validação da revisão da compreensão inicial;
+5. validação da transição para a Tela Hoje;
+6. retomada independente da reaplicação dos testes dos Resultados Empresariais.
 
-Após integração, qualquer validação funcional adicional, criação de arquivo gráfico, detalhamento de voz e arquivos ou protótipo dependerá de nova autorização.
-
-Protótipo, design visual, testes e desenvolvimento permanecem não iniciados.
+Nenhum ato é iniciado automaticamente.
