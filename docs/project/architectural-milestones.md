@@ -2,7 +2,7 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.91.0
+version: 4.91.1
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -49,7 +49,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.8 | Concluído | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
 | M7.19.9 | Concluído | Visão Geral da Organização validada e reformulada |
 | M7.19.10 | Concluído | Início do Coletivo validado e reformulado |
-| M7.19.11 | Ativo neste incremento | relações entre Organizações e Coletivos detalhadas funcionalmente |
+| M7.19.11 | Concluído | relações entre Organizações e Coletivos detalhadas funcionalmente e integradas |
 
 ## 3. Marco vigente
 
@@ -75,7 +75,8 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 - ausência de avanço declarada sem simulação de impacto;
 - contestação, suspensão urgente e encerramento responsável estabelecidos;
 - protótipo, design, testes, sistema jurídico e desenvolvimento preservados como não iniciados;
-- Resultados Empresariais preservados em 17 de 18 decisões.
+- Resultados Empresariais preservados em 17 de 18 decisões;
+- integração da etapa 3 concluída sem iniciar a etapa 4.
 
 ## 4. Estado das revisões arquiteturais
 
@@ -91,7 +92,7 @@ A Arquitetura da Experiência permanece uma frente preparatória transversal e n
 
 ## 5. Próximo ato da ordem
 
-Após a integração e nova autorização, a próxima etapa será o retorno aos **Resultados Empresariais** para a decisão sobre **Capacidade de reinvestimento responsável**.
+Após nova autorização, a próxima etapa será o retorno aos **Resultados Empresariais** para a decisão sobre **Capacidade de reinvestimento responsável**.
 
 ## 6. Regra de transição
 
