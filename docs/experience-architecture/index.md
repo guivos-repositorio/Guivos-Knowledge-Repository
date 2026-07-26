@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.11.0
+version: 0.12.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -29,6 +29,7 @@ related:
   - UXA-016
   - UXA-017
   - UXA-018
+  - UXA-019
 normative: false
 ---
 
@@ -49,9 +50,11 @@ Ela governa:
 - explicabilidade do Próximo Passo;
 - contribuição responsável das Organizações;
 - propósito, pertencimento, participação e governança dos Coletivos;
-- relações entre Pessoas, Organizações e Coletivos;
+- relações bilaterais entre Organizações e Coletivos;
 - autoridade representada e decisões institucionais;
 - voluntariedade, recusa, pausa e saída legítimas;
+- transparência de recursos, dados, patrocínio e influência;
+- contestação, suspensão e encerramento responsável;
 - gate de alinhamento à Fundação da Guivos;
 - coerência entre os produtos do ecossistema;
 - critérios para wireframes, protótipos e testes posteriores.
@@ -83,12 +86,13 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Wireframe do Início do Coletivo](uxa-016-collective-home-low-fidelity-wireframe.md) | UXA-016 | propósito, pertencimento, participação voluntária, governança, recursos e avanço coletivo |
 | [Validação Funcional da Visão Geral da Organização](uxa-017-organization-overview-functional-validation-and-reformulation.md) | UXA-017 | validação e reformulação da superfície institucional inicial |
 | [Validação Funcional do Início do Coletivo](uxa-018-collective-home-functional-validation-and-reformulation.md) | UXA-018 | validação e reformulação da superfície coletiva inicial |
+| [Contrato Funcional das Relações entre Organizações e Coletivos](uxa-019-organization-collective-relationship-functional-contract.md) | UXA-019 | consentimento bilateral, autoridade, compromissos, recursos, dados, autonomia e ciclo de vida da relação |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-018 |
+| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-019 |
 | Resultados Empresariais | pausados antes da capacidade de reinvestimento responsável | BUS-CAND-010 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 | Tela Hoje | validada e reformulada | UXA-006, UXA-010 e UXA-011 |
@@ -97,20 +101,20 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | Fundação de Organizações e Coletivos | estabelecida | UXA-014 |
 | Visão Geral da Organização | validada funcionalmente e reformulada | UXA-015 e UXA-017 |
 | Início do Coletivo | validado funcionalmente e reformulado | UXA-016 e UXA-018 |
-| Relações entre Organizações e Coletivos | fundação estabelecida; detalhamento seguinte | UXA-014 |
+| Relações entre Organizações e Coletivos | contrato funcional detalhado | UXA-019 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
 
 ## 5. Gate de alinhamento à Fundação
 
-Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
+Toda superfície e relação deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
 
-Falha material impede avanço para protótipo, design, teste, especificação técnica ou desenvolvimento.
+Falha material impede ativação da relação ou avanço para protótipo, design, teste, especificação técnica ou desenvolvimento.
 
 ## 6. Compreensão do momento, avanço e Próximo Passo
 
-Toda superfície que apresente evolução, prioridade, oportunidade ou recomendação deverá mostrar:
+Toda superfície ou relação que apresente evolução, prioridade, oportunidade ou recomendação deverá mostrar:
 
 1. como a Guivos compreendeu o momento;
 2. quais informações sustentam a leitura;
@@ -132,7 +136,7 @@ A Organização é participante institucional com autoridade, responsabilidades,
 
 O Coletivo é formação voluntária orientada por propósito compartilhado, participação, ação concreta, governança e relações de apoio. Sua experiência deverá preservar entrada, observação, recusa, pausa, saída, contestação, privacidade e ausência de coerção.
 
-Organizações e Coletivos poderão se relacionar, mas finalidade, autoridade, recursos, dados, patrocínio e responsabilidades deverão permanecer visíveis.
+Organizações e Coletivos permanecem participantes distintos. Uma relação não cria propriedade, filiação automática, autoridade irrestrita ou acesso geral a pessoas e dados.
 
 ## 8. Resultado da Visão Geral da Organização
 
@@ -168,22 +172,36 @@ propósito, identidade e participação
 → navegação do Coletivo
 ```
 
+## 10. Resultado das relações entre Organizações e Coletivos
+
+O contrato funcional validado segue:
+
+```text
+participantes distintos
+→ finalidade compartilhada e limitada
+→ consentimento bilateral
+→ autoridade identificada
+→ compromissos verificáveis
+→ recursos e dados transparentes
+→ autonomia protegida
+→ acompanhamento e revisão
+→ saída possível e responsável
+```
+
 Decisões principais:
 
-- propósito e pertencimento antecedem atividade;
-- participação, disponibilidade, responsabilidade e autoridade são estados distintos;
-- convites não criam obrigação;
-- papéis dependem de aceitação explícita;
-- ausência, recusa, silêncio, pausa e saída permanecem legítimos;
-- necessidade material recebe cuidado sem culpa ou exposição;
-- ação compartilhada permanece subordinada ao propósito;
-- governança separa consulta, decisão, execução e moderação;
-- apoio institucional não elimina autonomia;
-- avanço exige evidência relacionada ao propósito;
-- nenhuma pessoa é atribuída automaticamente a um Próximo Passo;
-- membros, mensagens, reações e atividades não substituem evolução coletiva.
+- relação não equivale a propriedade, subordinação ou representação irrestrita;
+- ativação exige aprovação legítima das duas partes sobre o mesmo escopo;
+- silêncio, recurso recebido ou participação em atividade não equivalem a consentimento;
+- autoridade, compromissos, recursos, dados, patrocínio e influência permanecem explícitos;
+- alterações materiais exigem nova aprovação bilateral;
+- apoio institucional não controla propósito, pertencimento ou governança do Coletivo;
+- dados de membros não são transferidos automaticamente;
+- avanço exige mudança relacionada à finalidade e evidência suficiente;
+- contestação, suspensão e encerramento permanecem possíveis;
+- saída define continuidade de proteção, dados, recursos e responsabilidades.
 
-## 10. Wireframes atuais
+## 11. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
@@ -195,13 +213,13 @@ Decisões principais:
 
 Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
-## 11. Ordem autorizada
+## 12. Ordem autorizada
 
 A ordem definida é:
 
 1. Visão Geral da Organização — validada e integrada;
-2. Início do Coletivo — validado neste incremento;
-3. relações entre Organizações e Coletivos — próxima etapa após integração;
-4. retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável — posterior.
+2. Início do Coletivo — validado e integrado;
+3. relações entre Organizações e Coletivos — detalhadas neste incremento;
+4. retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável — próxima etapa após integração e nova autorização.
 
 Protótipo, design visual, testes e desenvolvimento permanecem não iniciados.
