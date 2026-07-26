@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-11.87.0
-title: Roadmap Arquitetural — Presença Companheira e Coerência de Posicionamento
+id: ROADMAP-11.88.0
+title: Roadmap Arquitetural — Validação Funcional do Detalhe de Oportunidade
 status: active
-version: 11.87.0
+version: 11.88.0
 owner: Guivos
 last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.86.0
+  - ROADMAP-11.87.0
 related:
   - GKR-STATE-001
   - UXA-000
@@ -21,176 +21,123 @@ related:
   - UXA-009
   - UXA-010
   - UXA-011
+  - UXA-012
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-017
-  - M7.19.5
+  - M7.19.6
 ---
 
-# Roadmap Arquitetural — Presença Companheira e Coerência de Posicionamento
+# Roadmap Arquitetural — Validação Funcional do Detalhe de Oportunidade
 
 ## 1. Autoridade
 
-Este documento governa a sequência global de evolução arquitetural do **Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR)**. O estado transversal vigente é declarado pelo [Registro do Estado Atual](project/current-state-register.md).
+Este documento governa a sequência global de evolução arquitetural do **Repositório de Conhecimento da Guivos**. O estado transversal vigente é declarado pelo Registro do Estado Atual.
 
 ## 2. Estado atual
 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | presença companheira e coerência de posicionamento estabelecidas | M7.19.5 |
-| Remediação do repositório | concluída | R1–R6 |
+| Marco | Detalhe de Oportunidade validado e reformulado | M7.19.6 |
+| Remediação | concluída | R1–R6 |
 | Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
 | Resultados Empresariais | 17 de 18 decisões; nenhuma submissão aberta | BA-STR-002 |
-| Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | COR 0.29.0 |
-| Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões | CODR 0.33.0 |
-| Arquitetura da Experiência | ativa em descoberta e revisão estrutural | UXA-000 a UXA-011 |
-| Tela Hoje | reformulada e alinhada ao posicionamento da Guivos | UXA-006 0.4.0; UXA-010; UXA-011 |
-| Detalhe de oportunidade | próximo wireframe para validação funcional | UXA-007; UXA-011 |
-| Cadastro pela Organização | wireframe inicial aguardando validação | UXA-008 |
+| Arquitetura da Experiência | ativa em descoberta e revisão estrutural | UXA-000 a UXA-012 |
+| Tela Hoje | validada e reformulada | UXA-006; UXA-010; UXA-011 |
+| Detalhe de Oportunidade | validado segundo presença companheira e gate da Fundação | UXA-007 0.3.0; UXA-012 |
+| Cadastro pela Organização | próximo wireframe para validação funcional | UXA-008 |
 | Protótipo navegável | não iniciado | — |
-| Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
+| Engenharia de Produto | pausada | W0-01 |
 
 ## 3. Sequência já executada
 
-### 3.1 Guivos Journey
-
-Concluído funcionalmente e publicado pela **Especificação Arquitetural do Guivos Journey** (identificador PAS-001), com nove capacidades funcionais concluídas e implementação pausada.
-
-### 3.2 Modelo Econômico da Guivos
-
-Arquitetura documental inicial concluída pelos documentos do Modelo Econômico. Parâmetros reais e validações especializadas permanecem pendentes.
-
-### 3.3 Resultados Empresariais
-
-- 17 de 18 decisões humanas registradas;
-- **Capacidade de reinvestimento responsável** permanece em validação;
-- a décima oitava submissão não foi criada;
-- nenhum Resultado canônico foi criado.
-
-### 3.4 Arquitetura da Experiência
-
-A fundação, a navegação, o mapa de telas e os fluxos de oportunidades, Organizações, Coletivos e Mapa foram integrados.
-
-### 3.5 Wireframes iniciais
-
-Foram criados os wireframes da Tela Hoje, do Detalhe de Oportunidade e do Cadastro pela Organização.
-
-### 3.6 Linguagem clara
-
-O **Padrão de Linguagem Clara e Identificadores Técnicos** determina nome completo antes do identificador, tradução de estados e códigos como referência secundária.
-
-### 3.7 Primeira validação funcional
-
-A primeira validação funcional foi aplicada à Tela Hoje pela **Validação Funcional e Reformulação da Tela Hoje**.
-
-### 3.8 Presença companheira e posicionamento
-
-Foi criado o princípio de **Presença Companheira e Coerência de Posicionamento da Guivos**, aplicável a todos os produtos, canais, participantes e futuras superfícies.
+1. Guivos Journey concluído funcionalmente e publicado;
+2. Modelo Econômico documentado inicialmente;
+3. Resultados Empresariais conduzidos até 17 de 18 decisões;
+4. remediação do repositório concluída;
+5. Arquitetura da Experiência integrada;
+6. três wireframes iniciais criados;
+7. padrão de linguagem clara estabelecido;
+8. Tela Hoje validada e reformulada;
+9. presença companheira e gate obrigatório da Fundação estabelecidos;
+10. Detalhe de Oportunidade validado e reformulado.
 
 ## 4. Pausa governada
 
 A sequência de Resultados Empresariais permanece pausada antes da decisão sobre **Capacidade de reinvestimento responsável**.
 
-A pausa não cancela a arquitetura, não cria a décima oitava decisão, não antecipa incorporação, não inicia Capacidades Empresariais e não autoriza Engenharia de Produto.
+Nenhuma decisão, Resultado canônico, Capacidade Empresarial ou unidade de Engenharia de Produto foi antecipada.
 
-## 5. Incremento atual — presença companheira
+## 5. Incremento atual — Detalhe de Oportunidade
 
 ### 5.1 Objetivo
 
-Garantir que as telas não pareçam genéricas e que o propósito da Guivos seja percebido no comportamento da experiência, na linguagem e na relação entre Momento Atual, jornada, relevância e Próximo Passo.
+Apresentar oportunidades como possibilidades de evolução ligadas à jornada, sem reduzir a Guivos a marketplace ou página de conversão.
 
-### 5.2 Decisão central
+### 5.2 Gate fundacional aplicado
 
-A Guivos deverá ser percebida como uma presença que acompanha a jornada, organiza o que importa e oferece possibilidades sem controlar decisões humanas.
+A superfície foi avaliada segundo:
 
-### 5.3 Regras aplicadas
+- Essência;
+- Propósito;
+- Missão Operacional;
+- Visão de Longo Prazo;
+- Constituição;
+- Princípios Permanentes.
 
-- reconhecer contexto, momento e continuidade;
-- explicar por que algo importa agora;
-- relacionar informações a Próximos Passos possíveis;
-- preservar escolha, correção, pausa e recusa;
-- demonstrar propósito pela utilidade, não por slogans;
-- separar intenção comercial de apoio à jornada;
-- manter coerência em Journey, Mall, Travel, Business, Media, Ads e Intelligence;
-- evitar amizade simulada, paternalismo, vigilância, pressão emocional e texto genérico.
+### 5.3 Decisões aplicadas
 
-### 5.4 Aplicação demonstrativa
+- relação com a jornada antes de preço e conversão;
+- oportunidade como possibilidade, não recomendação definitiva;
+- preço como investimento e condição, sem destaque promocional dominante;
+- explicação de `Por que apareceu agora?`;
+- elegibilidade apresentada em `Condições para participar`;
+- Organização apresentada em `Quem oferece`;
+- transparência apresentada em `Relação comercial com a Guivos`;
+- ação principal variável conforme tipo e estado;
+- `Ver como participar` adotado no wireframe de referência;
+- salvar e comparar como alternativas persistentes;
+- mapa somente quando localização for material.
 
-A Tela Hoje foi ajustada para utilizar:
+### 5.4 Limites preservados
 
-- `Seu momento, em poucas palavras`;
-- `Algo precisa da sua atenção`;
-- `Continuando sua jornada`;
-- `Possibilidades para seu próximo passo`;
-- `Por que apareceu agora?`;
-- alternativas sem culpa ou urgência artificial.
-
-### 5.5 Limites preservados
-
-O incremento não cria protótipo navegável, design visual, sistema de design, testes de usabilidade, desenvolvimento, preços reais ou personalidade artificial da marca.
+O incremento não cria protótipo navegável, design visual, teste de usabilidade, componentes, preços reais, validação de Organizações ou desenvolvimento.
 
 ## 6. Sequência da Arquitetura da Experiência
 
 1. fundação e navegação — concluídas em descoberta;
-2. Tela Hoje e hipótese de retorno — documentadas;
-3. mapa inicial de telas — documentado;
-4. fluxos de oportunidades e ecossistema — documentados;
-5. três wireframes iniciais — criados;
-6. linguagem clara e identificadores técnicos — estabelecidos;
-7. primeira validação funcional da Tela Hoje — concluída;
-8. reformulação da Tela Hoje — aplicada;
-9. presença companheira e coerência de posicionamento — estabelecidas;
-10. validação funcional do Detalhe de Oportunidade segundo o novo princípio — próximo ato;
-11. validação funcional do Cadastro pela Organização — pendente;
-12. estados alternativos — pendentes;
-13. protótipo navegável de baixa fidelidade — depende de autorização;
-14. testes de compreensão e usabilidade — não iniciados;
-15. design visual e entrega para Engenharia de Produto — posteriores.
+2. mapa de jornadas e fluxos — documentados;
+3. três wireframes iniciais — criados;
+4. linguagem clara — estabelecida;
+5. Tela Hoje — validada e reformulada;
+6. presença companheira e gate da Fundação — estabelecidos;
+7. Detalhe de Oportunidade — validado e reformulado;
+8. Cadastro pela Organização — próximo ponto de validação;
+9. estados alternativos — pendentes;
+10. protótipo navegável — depende de autorização;
+11. testes de compreensão e usabilidade — não iniciados;
+12. design visual e entrega para Engenharia — posteriores.
 
-## 7. Aplicação ao Detalhe de Oportunidade
+## 7. Próximo incremento
 
-A próxima validação deverá verificar:
+Validar funcionalmente o Cadastro de Oportunidade pela Organização, verificando:
 
-1. relação da oportunidade com a jornada;
-2. explicação de relevância e temporalidade;
-3. preço, custo total, validade, elegibilidade e Organização responsável;
-4. autonomia para considerar, salvar, comparar, recusar ou iniciar;
-5. distinção entre relevância funcional, publicidade e relação comercial;
-6. linguagem própria da Guivos, sem aparência de página genérica de venda.
+1. contribuição ao propósito e à jornada dos participantes;
+2. responsabilidade institucional sobre informações e condições;
+3. clareza de público, elegibilidade, preço e disponibilidade;
+4. coerência com Guivos Business e Guivos Journey;
+5. separação entre envio, avaliação, ativação e apresentação;
+6. prevenção de linguagem comercial genérica ou manipulação de relevância.
 
-## 8. Estados alternativos candidatos da Tela Hoje
+## 8. Estados alternativos preservados
 
-Permanecem candidatos:
+Permanecem pendentes estados de preço variável, lista de espera, risco elevado, patrocínio, expiração, contestação, falha externa, baixa conectividade e acessibilidade ampliada.
 
-1. estado totalmente vazio;
-2. múltiplos itens críticos;
-3. modo discreto para informação sensível;
-4. falha de fonte externa;
-5. baixa conectividade;
-6. contexto de Organização;
-7. contexto de Coletivo;
-8. acessibilidade com texto ampliado.
+## 9. Retorno aos Resultados Empresariais
 
-Nenhum desses artefatos está automaticamente autorizado.
+Quando explicitamente autorizado, a sequência retornará à Capacidade de reinvestimento responsável e à décima oitava decisão humana.
 
-## 9. Próximo ponto de decisão
+## 10. Frentes posteriores preservadas
 
-Após a integração deste princípio, iniciar a validação funcional do Detalhe de Oportunidade sem iniciar protótipo navegável, design visual, testes ou desenvolvimento.
-
-## 10. Retorno aos Resultados Empresariais
-
-Quando explicitamente autorizado:
-
-1. preparar a submissão da **Capacidade de reinvestimento responsável**;
-2. receber a décima oitava decisão humana;
-3. reavaliar formulações reformuladas e combinadas;
-4. aplicar o padrão de qualidade arquitetural dos Resultados;
-5. consolidar catálogos canônicos;
-6. desenvolver Capacidades Empresariais.
-
-## 11. Frentes posteriores preservadas
-
-A ordem histórica de referência permanece Guivos Mall, Guivos Business, Guivos Intelligence, Guivos Ads, Guivos Media, Guivos Travel, Modelo Comercial e Entrada no Mercado.
-
-Essa ordem não autoriza início.
+Guivos Mall, Business, Intelligence, Ads, Media, Travel, Modelo Comercial e Entrada no Mercado permanecem como referências posteriores, sem autorização de início.
