@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.81.0
+version: 4.82.0
 owner: Guivos
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.83.0
+  - ROADMAP-11.84.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -17,7 +17,11 @@ related:
   - UXA-002
   - UXA-003
   - UXA-004
-  - M7.19.1
+  - UXA-005
+  - UXA-006
+  - UXA-007
+  - UXA-008
+  - M7.19.2
 normative: false
 ---
 
@@ -69,25 +73,28 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.18 | Completed | `COD-016` registrado para `BUS-CAND-008` |
 | M7.18.1 | Completed | décima sétima decisão submetida para `BUS-CAND-009` |
 | M7.19 | Completed | `COD-017` registrado para `BUS-CAND-009` |
-| M7.19.1 | Active neste incremento | Experience Architecture Discovery ativada; Business Outcomes pausado antes de `BUS-CAND-010` |
+| M7.19.1 | Completed | Experience Architecture Discovery ativada e integrada |
+| M7.19.2 | Active neste incremento | três wireframes iniciais de baixa fidelidade criados para revisão |
 
 ## 3. Marco vigente
 
-### M7.19.1 — Experience Architecture Discovery Activated
+### M7.19.2 — Initial Low-Fidelity Wireframes Drafted
 
 **Critérios atendidos:**
 
-- PR #94 integrado e `COD-017` oficializado;
-- manifestação do Fundador para pausar antes de `BUS-CAND-010` registrada;
-- `BUS-CAND-010` preservado em `Under Validation`;
-- `BA-STR-002-COD-SUB-018` e `COD-018` não criados;
-- `UXA-000` criado como índice da frente;
-- `UXA-001` criado com fundação, participantes e navegação;
-- `UXA-002` criado com a hipótese da tela `Hoje` e recorrência legítima;
-- `UXA-003` criado com mapa de jornadas e telas;
-- `UXA-004` criado com fluxos de oportunidades, Organizações, Coletivos e Mapa;
-- wireframes, protótipos e testes preservados como não iniciados;
-- Product Engineering preservado em pausa.
+- PR #95 integrado e Experience Architecture Discovery oficializada;
+- autorização explícita do Fundador para iniciar wireframes registrada;
+- `UXA-005` criado como programa de wireframes;
+- `UXA-006` criado para a tela `Hoje`;
+- artefato SVG móvel da tela `Hoje` criado;
+- `UXA-007` criado para o detalhe de oportunidade;
+- artefato SVG móvel do detalhe criado;
+- `UXA-008` criado para o cadastro de oportunidade pela Organização;
+- artefato SVG desktop do cadastro criado;
+- critérios de aceite e perguntas de validação registrados;
+- protótipo navegável preservado como não iniciado;
+- design visual e testes preservados como não iniciados;
+- `BUS-CAND-010` e Product Engineering preservados em pausa.
 
 ## 4. Estado das revisões A2
 
@@ -99,12 +106,16 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | A2-R04 — Product Architecture Review | Planned; não iniciado por este incremento |
 | A2-R05 — Cross-Architecture Review | Planned |
 
-Experience Architecture Discovery é uma frente preparatória transversal. Ela não conclui A2-R03 nem inicia formalmente A2-R04.
+Experience Architecture e wireframes permanecem uma frente preparatória transversal. Eles não concluem A2-R03 nem iniciam formalmente A2-R04.
 
 ## 5. Próximo ato
 
-Validar as propostas `UXA-001` a `UXA-004` e decidir se o próximo marco deverá aprofundar a arquitetura de informação ou autorizar wireframes de baixa fidelidade.
+Validar `UXA-005` a `UXA-008` e decidir se o próximo marco deverá:
+
+- reformular os wireframes;
+- detalhar estados alternativos; ou
+- autorizar protótipo navegável de baixa fidelidade.
 
 ## 6. Regra de transição
 
-Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Discovery, wireframes, protótipos, testes, Product Engineering e decisões de Outcomes permanecem atos separados.
+Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Wireframes, protótipo, testes, design visual, Product Engineering e decisões de Outcomes permanecem atos separados.
