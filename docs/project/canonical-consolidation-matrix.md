@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.15.0
+version: 2.16.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-022
   - GKR-CANON-MATRIX-UXA-021
   - GKR-CANON-MATRIX-UXA-020
   - GKR-CANON-MATRIX-COD-018
@@ -32,9 +33,11 @@ related:
   - UXA-019
   - UXA-020
   - UXA-021
+  - UXA-022
   - M7.20
   - M7.21
   - M7.22
+  - M7.23
 normative: false
 ---
 
@@ -76,11 +79,12 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Resultados canônicos | Pendente | nenhum criado |
 | AQS-O01 | Pendente | aplicação prática não iniciada |
 | Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
-| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-021 |
-| Programa de Wireframes | Wireframe | programa com Home pública textual e demais superfícies estruturais |
+| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-022 |
+| Programa de Wireframes | Wireframe | programa inclui arquivo gráfico da Home pública para computador |
 | Página Inicial pública | Validar funcionalmente | validada e reformulada por UXA-021 |
 | Início protegido da jornada | Manter contrato funcional | estabelecido por UXA-020; validação detalhada pendente |
-| Arquivo gráfico da Home | Pendente | não iniciado |
+| Arquivo gráfico da Home para computador | Wireframe | criado e documentado por UXA-022 |
+| Referência móvel da Home | Pendente | não iniciada |
 | Tela Hoje | Refinar em wireframe | validada, reformulada e reposicionada como entrada recorrente |
 | Detalhe de Oportunidade | Refinar em wireframe | validado e reformulado |
 | Cadastro pela Organização | Refinar em wireframe | validado e reformulado |
@@ -112,6 +116,9 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Possibilidades gerais na Home | Limitar e identificar | até três itens, sem preenchimento artificial e sem personalização simulada |
 | Publicidade e relevância na Home | Separar | posição comercial não constitui relevância pessoal |
 | Home para pessoa autenticada | Manter institucional | não expõe Momento Atual, alertas ou recomendações pessoais |
+| Wireframe da Home | Materializar hierarquia validada | cabeçalho, primeiro campo, funcionamento, caminhos, ecossistema, possibilidades e confiança |
+| Dimensão do wireframe da Home | Usar como referência | 1.440 × 2.200 pixels, sem definir responsividade final |
+| Conteúdo do wireframe | Manter ilustrativo | não constitui oferta, dado real ou texto final |
 | Voz | Governar no ambiente protegido | gravação e transcrição revisáveis, corrigíveis e removíveis |
 | Arquivos | Governar no ambiente protegido | finalidade, extração, retenção, informação de terceiros e exclusão explícitas |
 | Transição para Tela Hoje | Explicar | pessoa compreende uso do contexto e mantém controles |
@@ -204,7 +211,9 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | publicidade | identificar e separar de relevância pessoal |
 | pessoa autenticada | manter Home institucional sem expor contexto sensível |
 | Tela Hoje | manter como entrada recorrente após confirmação |
-| arquivo gráfico | manter pendente |
+| arquivo gráfico para computador | criar como wireframe vetorial estrutural |
+| dimensão de referência | 1.440 × 2.200 pixels |
+| referência móvel | manter pendente |
 | implementação | não iniciar |
 
 ## 6. Consolidação da decisão COD-018
@@ -227,12 +236,14 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 
 Os detalhamentos vigentes incluem:
 
+- Adendo da Matriz de Consolidação Canônica — Wireframe da Página Inicial Pública;
 - Adendo da Matriz de Consolidação Canônica — Validação da Página Inicial Pública;
 - Adendo da Página Inicial da Guivos e Início da Jornada;
 - Adendo do Contrato Funcional das Relações entre Organizações e Coletivos;
 - Adendo COD-018;
 - Página Inicial da Guivos e Início da Jornada;
 - Validação Funcional e Reformulação da Página Inicial Pública;
+- Wireframe de Baixa Fidelidade da Página Inicial Pública;
 - resolução da decisão sobre BUS-CAND-010.
 
 ## 8. Ordem autorizada concluída
@@ -242,10 +253,11 @@ Os detalhamentos vigentes incluem:
 3. relações entre Organizações e Coletivos — detalhadas e integradas;
 4. Resultados Empresariais e capacidade de reinvestimento responsável — decisão concluída e integrada;
 5. Página Inicial pública e início protegido — estabelecidos e integrados;
-6. Página Inicial pública — validada e reformulada neste incremento.
+6. Página Inicial pública — validada e reformulada;
+7. wireframe gráfico da Página Inicial pública para computador — criado neste incremento.
 
 ## 9. Próximos atos governados
 
-O arquivo gráfico da Home, a validação do início protegido, o detalhamento de voz e arquivos, a reaplicação dos testes dos Resultados e qualquer etapa posterior dependem de autorização específica.
+A validação do início protegido, a referência móvel da Home, o detalhamento de voz e arquivos, a reaplicação dos testes dos Resultados e qualquer etapa posterior dependem de autorização específica.
 
 Nenhuma aprovação, código canônico, AQS-O01, Capacidade Empresarial, protótipo ou atividade de Engenharia de Produto é iniciada automaticamente.
