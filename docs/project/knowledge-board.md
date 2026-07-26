@@ -2,18 +2,17 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.76.0
+version: 11.77.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.76.0
+  - ROADMAP-11.77.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-014
-  - COD-014
-  - M7.16
+  - BA-STR-002-COD-SUB-015
+  - M7.16.1
 normative: false
 ---
 
@@ -28,16 +27,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.16 — Fourteenth Human Outcome Decision Recorded` |
+| Marco | `M7.16.1 — Fifteenth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 13 `Under Validation`; 2 `Merged`; 3 `Rejected` |
-| CODR | 14 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 14 de 18 decisões humanas; 1 submissão aberta |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
 | Reject aceitos | 3 |
-| `BUS-CAND-006` | `Rejected`; expansão responsável preservada fora do catálogo |
+| `BUS-CAND-007` | `Under Validation`; decisão pendente sobre `Reject` |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -58,7 +57,7 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-007`.
+- submissão de `BUS-CAND-007` aguardando manifestação humana.
 
 ### Pendente
 
@@ -73,14 +72,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-014
+## 4. Submissão de BUS-CAND-007
 
-O Fundador aceitou `Reject` para `BUS-CAND-006 — Crescimento responsável e resiliente`.
+A COEM recomenda `Reject` para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
 
-Crescimento foi retirado do futuro catálogo de Business Outcomes. **Expansão responsável** permanece trajetória estratégica opcional, condicionada à capacidade demonstrada, adicionalidade e critérios de não degradação.
+A recomendação retira aprendizado institucional do futuro catálogo de Business Outcomes e o preserva como capacidade sustentadora de sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
 
-Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras. A decisão não proíbe crescimento e não transforma não crescimento em falha automática.
+Aprendizagem não é removida da arquitetura. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
 
 ## 5. Próximo movimento
 
-Após integração deste incremento, preparar a décima quinta submissão humana para `BUS-CAND-007 — Aprendizado e adaptação institucionais`, cuja recomendação da COEM é `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`. Nenhuma decisão será inferida automaticamente.
