@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-11.99.0
-title: Roadmap Arquitetural — Wireframe do Mapa de Oportunidades Criado
+id: ROADMAP-12.0.0
+title: Roadmap Arquitetural — Mapa de Oportunidades Validado
 status: active
-version: 11.99.0
+version: 12.0.0
 owner: Guivos
 last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.98.0
+  - ROADMAP-11.99.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -21,10 +21,11 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
-  - M7.25
+  - UXA-025
+  - M7.26
 ---
 
-# Roadmap Arquitetural — Wireframe do Mapa de Oportunidades Criado
+# Roadmap Arquitetural — Mapa de Oportunidades Validado
 
 ## 1. Autoridade
 
@@ -35,7 +36,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframe móvel do Mapa de Oportunidades criado | M7.25; UXA-024 |
+| Marco | Mapa de Oportunidades funcionalmente validado e reformulado | M7.26; UXA-024; UXA-025 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -43,8 +44,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Início protegido | funcionalmente validado e reformulado | UXA-020; UXA-023 |
 | Wireframe do início protegido | não iniciado | — |
 | Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | contrato e wireframe móvel criados | UXA-004; UXA-024 |
-| Validação do wireframe do Mapa | não iniciada | — |
+| Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
+| Estados alternativos do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -65,7 +66,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 13. wireframe gráfico da Home para computador criado;
 14. início protegido da jornada validado e reformulado;
 15. posição do Mapa na navegação recorrente consolidada;
-16. wireframe gráfico móvel do Mapa de Oportunidades criado.
+16. wireframe gráfico móvel do Mapa de Oportunidades criado;
+17. Mapa de Oportunidades funcionalmente validado e reformulado.
 
 ## 4. Sequência pessoal vigente
 
@@ -80,24 +82,27 @@ Página Inicial pública
 
 O Mapa não integra a sequência obrigatória de primeira entrada.
 
-## 5. Resultado do Mapa de Oportunidades
+## 5. Resultado da validação do Mapa
 
-O wireframe UXA-024 materializa:
+A validação da UXA-025 confirmou, após reformulação:
 
-- contexto pessoal ativo;
+- contexto de atuação explícito com `Agindo como`;
 - pesquisa por oportunidade, Organização ou região;
-- alternância entre mapa e lista;
-- filtros essenciais e filtros adicionais;
+- Mapa e Lista como uma descoberta única;
+- filtros ativos identificados sem dependência exclusiva de cor;
+- quantidade de filtros e ação de limpeza;
+- quantidade de resultados por área;
+- ação consciente `Pesquisar nesta área`;
 - mapa territorial esquemático;
-- camadas de oportunidades, Organizações, Coletivos e eventos;
-- agrupamentos e pontos selecionáveis;
-- localização aproximada e controle de raio;
-- oportunidade selecionada com preço, data, distância, vagas e acessibilidade;
+- camadas, agrupamentos, pontos e legenda;
+- localização aproximada e controle de privacidade;
+- cartão selecionado com preço, data, distância, vagas, acessibilidade e origem;
 - explicação de relevância e relação comercial;
-- continuidade para detalhe, salvamento e rota;
-- navegação inferior com Mapa selecionado.
+- rota condicionada à disponibilidade segura do endereço;
+- continuidade com preservação de região, filtros e seleção;
+- estados sem localização, sem resultados, com erro ou baixa conectividade governados.
 
-A referência tem 390 por 844 pixels e não define mapas reais, tecnologia, coordenadas, design ou implementação.
+A referência possui 390 por 844 pixels e não define mapas reais, tecnologia, coordenadas, design ou implementação.
 
 ## 6. Proteções preservadas
 
@@ -108,7 +113,8 @@ A referência tem 390 por 844 pixels e não define mapas reais, tecnologia, coor
 - proximidade não equivale a relevância;
 - patrocínio não aumenta relevância funcional;
 - ausência de resultados não autoriza preenchimento artificial;
-- conteúdo antes do gate permanece geral ou resultante de busca explícita.
+- conteúdo antes do gate permanece geral ou resultante de busca explícita;
+- rota não contorna endereço protegido.
 
 ## 7. Estado dos Resultados Empresariais
 
@@ -134,14 +140,13 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer um ato separado:
 
-1. validar funcionalmente o wireframe do Mapa de Oportunidades;
-2. criar estados alternativos do Mapa;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido;
-5. criar a referência móvel da Home;
-6. detalhar estados especializados de texto, voz e arquivos;
-7. validar a revisão da compreensão inicial;
-8. validar a transição para a Tela Hoje.
+1. criar estados alternativos do Mapa, começando por Lista ou localização desativada;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido;
+4. criar a referência móvel da Home;
+5. detalhar estados especializados de texto, voz e arquivos;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a primeira Tela Hoje.
 
 ### 8.2 Arquitetura de Negócios
 
@@ -166,7 +171,7 @@ Nenhuma frente avança automaticamente.
 - personalização exige compreensão revisável e autorizada;
 - exploração geral continua disponível;
 - publicidade não aumenta relevância pessoal;
-- wireframe, protótipo, design, testes e desenvolvimento permanecem atos separados;
+- wireframe, validação funcional, protótipo, design, testes e desenvolvimento permanecem atos separados;
 - Validação de Mercado mantém execução própria e paralela.
 
 ## 10. Frentes posteriores preservadas
