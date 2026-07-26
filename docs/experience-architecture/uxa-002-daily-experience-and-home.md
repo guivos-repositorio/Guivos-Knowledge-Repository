@@ -2,9 +2,9 @@
 id: UXA-002
 title: Experiência Diária e Tela Hoje
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Experience Architecture
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 parent: UXA-000
 depends_on:
   - UXA-001
@@ -13,6 +13,8 @@ depends_on:
   - PAS-001-PP-VIEW-001
   - PAS-001-OA-VIEW-001
   - PAS-001-IC-VIEW-001
+related:
+  - UXA-020
 normative: false
 ---
 
@@ -26,10 +28,14 @@ A resposta proposta é uma superfície denominada **Hoje**, orientada por mudan�
 
 ## 2. Decisão de experiência
 
-`Hoje` será a porta de entrada padrão da experiência pessoal.
+`Hoje` será a porta de entrada recorrente da experiência pessoal **depois que a pessoa tiver iniciado sua jornada e confirmado uma compreensão inicial suficiente do Momento Atual**.
 
-Ela não será:
+A primeira entrada pertence à **Página Inicial da Guivos e Início da Jornada (identificador UXA-020)**.
 
+A Tela Hoje não será:
+
+- a página institucional de apresentação da Guivos;
+- a primeira coleta de contexto de uma pessoa sem jornada iniciada;
 - feed social;
 - catálogo infinito;
 - painel de produtividade;
@@ -42,6 +48,21 @@ Ela não será:
 Ela deverá responder:
 
 > **O que mudou, o que merece minha atenção e quais possibilidades podem apoiar meu momento agora?**
+
+### 2.1 Relação com a HOME da Guivos
+
+A sequência funcional é:
+
+```text
+HOME da Guivos
+→ relato voluntário do Momento Atual
+→ compreensão inicial revisada e confirmada
+→ Tela Hoje
+```
+
+Antes da confirmação suficiente, a pessoa poderá conhecer e explorar o ecossistema, mas a Guivos não deverá afirmar que uma oportunidade, solução ou Próximo Passo é relevante para seu momento.
+
+Depois do início da jornada, a Tela Hoje poderá ser a entrada padrão após autenticação. A HOME continuará acessível como superfície institucional e de acesso às soluções do ecossistema.
 
 ## 3. Razões legítimas para entrar hoje
 
