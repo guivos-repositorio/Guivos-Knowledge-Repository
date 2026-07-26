@@ -2,7 +2,7 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.93.0
+version: 11.93.1
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -26,23 +26,23 @@ normative: false
 
 ## 1. Autoridade
 
-Este painel resume o portfólio arquitetural proposto pelo incremento. O estado somente se torna oficial no ramo principal após integração.
+Este painel resume o portfólio arquitetural vigente. O estado oficial é declarado pelo Registro do Estado Atual.
 
-## 2. Estado institucional proposto
+## 2. Estado institucional vigente
 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | relações entre Organizações e Coletivos detalhadas funcionalmente | M7.19.11 |
+| Marco | relações entre Organizações e Coletivos detalhadas funcionalmente e integradas | M7.19.11 |
 | Remediação | concluída | R1–R6 |
 | Revisão da Arquitetura de Negócios | ativa e pausada | A2-R03; BUS-CAND-010 |
-| Resultados Empresariais | 17 de 18 decisões | BA-STR-002 |
+| Resultados Empresariais | 17 de 18 decisões; retomada aguardando autorização | BA-STR-002 |
 | Capacidade de reinvestimento responsável | em validação | BUS-CAND-010 |
-| Frente ativa | detalhamento das relações entre Organizações e Coletivos | UXA-019 |
+| Frente de execução | nenhuma nova etapa iniciada; etapa 4 aguardando autorização | M7.19.11; BUS-CAND-010 |
 | Fundação de Organizações e Coletivos | estabelecida | UXA-014 |
 | Visão Geral da Organização | validada e reformulada | UXA-015 0.2.0; UXA-017 |
 | Início do Coletivo | validado e reformulado | UXA-016 0.2.0; UXA-018 |
-| Relações entre Organizações e Coletivos | contrato funcional estabelecido | UXA-019 |
+| Relações entre Organizações e Coletivos | contrato funcional estabelecido e integrado | UXA-019 |
 | Protótipo navegável | não iniciado | — |
 | Resultados canônicos | nenhum criado | 0 |
 | Capacidades Empresariais | não iniciadas | — |
@@ -65,13 +65,13 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 - fundação funcional de Organizações e Coletivos estabelecida;
 - Visão Geral da Organização validada e reformulada;
 - Início do Coletivo validado e reformulado;
-- relações entre Organizações e Coletivos detalhadas funcionalmente.
+- relações entre Organizações e Coletivos detalhadas funcionalmente e integradas.
 
 ### Ativo
 
-- Programa de Wireframes de Baixa Fidelidade;
-- preparação do fechamento da ordem autorizada;
-- relações entre Pessoas, Organizações e Coletivos em descoberta arquitetural mais ampla.
+- Programa de Wireframes de Baixa Fidelidade como autoridade preparatória;
+- relações entre Pessoas, Organizações e Coletivos em descoberta arquitetural mais ampla;
+- governança do estado e preservação dos limites entre etapas.
 
 ### Pausado
 
@@ -82,7 +82,7 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 
 ### Próximo na ordem
 
-1. retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável, somente após integração e nova autorização.
+1. retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável, somente após nova autorização.
 
 ## 4. Resultado das relações entre Organizações e Coletivos
 
@@ -131,6 +131,6 @@ A relação não deverá parecer propriedade, filiação automática, acesso com
 
 ## 7. Próximo movimento
 
-Após a integração e nova autorização, a próxima etapa da ordem será o retorno aos **Resultados Empresariais**, com a decisão sobre **Capacidade de reinvestimento responsável**.
+Após nova autorização, a próxima etapa da ordem será o retorno aos **Resultados Empresariais**, com a decisão sobre **Capacidade de reinvestimento responsável**.
 
-Nenhum protótipo, teste, design visual, desenvolvimento ou decisão empresarial será iniciado automaticamente.
+Nenhum protótipo, teste, design visual, desenvolvimento ou decisão empresarial foi iniciado automaticamente pela integração da etapa 3.
