@@ -9,13 +9,14 @@ depends_on:
   - GKR-STATE-001
 related:
   - ROADMAP-11.83.0
+  - GKR-R6-RESUMPTION-001
+  - BA-STR-002-COR-001
+  - BA-STR-002-CODR-001
   - UXA-000
   - UXA-001
   - UXA-002
   - UXA-003
   - UXA-004
-  - BA-STR-002-COR-001
-  - BA-STR-002-CODR-001
   - M7.19.1
 normative: false
 ---
@@ -35,34 +36,42 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M5–M5.18 | Completed | arquitetura funcional e publicação do Journey |
 | M6.0–M6.10 | Completed | desenvolvimento e fechamento documental do Economic Model |
 | M7.0–M7.1.5 | Completed | COR, validação externa e COEM concluídos |
-| M7.2–M7.19 | Completed | `COD-001` a `COD-017` registrados com rastreabilidade |
+| M7.2 | Completed | `COD-001` registrado |
+| M7.3–M7.3.5 | Completed | auditoria, remediação, validação e retomada governada |
+| M7.4 | Completed | `COD-002` registrado |
+| M7.4.1 | Completed | terceira decisão submetida |
+| M7.5 | Completed | `COD-003` registrado |
+| M7.5.1 | Completed | quarta decisão submetida |
+| M7.6 | Completed | `COD-004` registrado |
+| M7.6.1 | Completed | quinta decisão submetida |
+| M7.7 | Completed | `COD-005` registrado |
+| M7.7.1 | Completed | sexta decisão submetida |
+| M7.8 | Completed | `COD-006` registrado |
+| M7.8.1 | Completed | sétima decisão submetida |
+| M7.9 | Completed | `COD-007` registrado |
+| M7.9.1 | Completed | oitava decisão submetida |
+| M7.10 | Completed | `COD-008` registrado |
+| M7.10.1 | Completed | nona decisão submetida |
+| M7.11 | Completed | `COD-009` registrado |
+| M7.11.1 | Completed | décima decisão submetida |
+| M7.12 | Completed | `COD-010` registrado |
+| M7.12.1 | Completed | décima primeira decisão submetida |
+| M7.13 | Completed | `COD-011` registrado |
+| M7.13.1 | Completed | décima segunda decisão submetida |
+| M7.14 | Completed | `COD-012` registrado |
+| M7.14.1 | Completed | décima terceira decisão submetida |
+| M7.15 | Completed | `COD-013` registrado para `BUS-CAND-005` |
+| M7.15.1 | Completed | décima quarta decisão submetida |
+| M7.16 | Completed | `COD-014` registrado para `BUS-CAND-006` |
+| M7.16.1 | Completed | décima quinta decisão submetida para `BUS-CAND-007` |
+| M7.17 | Completed | `COD-015` registrado para `BUS-CAND-007` |
+| M7.17.1 | Completed | décima sexta decisão submetida para `BUS-CAND-008` |
+| M7.18 | Completed | `COD-016` registrado para `BUS-CAND-008` |
+| M7.18.1 | Completed | décima sétima decisão submetida para `BUS-CAND-009` |
+| M7.19 | Completed | `COD-017` registrado para `BUS-CAND-009` |
 | M7.19.1 | Active neste incremento | Experience Architecture Discovery ativada; Business Outcomes pausado antes de `BUS-CAND-010` |
 
-## 3. Histórico decisório preservado
-
-| Marco | Resultado |
-|---|---|
-| M7.2 | `COD-001` registrado |
-| M7.4 | `COD-002` registrado |
-| M7.5 | `COD-003` registrado |
-| M7.6 | `COD-004` registrado |
-| M7.7 | `COD-005` registrado |
-| M7.8 | `COD-006` registrado |
-| M7.9 | `COD-007` registrado |
-| M7.10 | `COD-008` registrado |
-| M7.11 | `COD-009` registrado |
-| M7.12 | `COD-010` registrado |
-| M7.13 | `COD-011` registrado |
-| M7.14 | `COD-012` registrado |
-| M7.15 | `COD-013` registrado |
-| M7.16 | `COD-014` registrado |
-| M7.17 | `COD-015` registrado |
-| M7.18 | `COD-016` registrado |
-| M7.19 | `COD-017` registrado |
-
-Os marcos intermediários de submissão permanecem preservados nos snapshots históricos.
-
-## 4. Marco vigente
+## 3. Marco vigente
 
 ### M7.19.1 — Experience Architecture Discovery Activated
 
@@ -80,7 +89,7 @@ Os marcos intermediários de submissão permanecem preservados nos snapshots his
 - wireframes, protótipos e testes preservados como não iniciados;
 - Product Engineering preservado em pausa.
 
-## 5. Estado das revisões A2
+## 4. Estado das revisões A2
 
 | Revisão | Estado |
 |---|---|
@@ -92,10 +101,10 @@ Os marcos intermediários de submissão permanecem preservados nos snapshots his
 
 Experience Architecture Discovery é uma frente preparatória transversal. Ela não conclui A2-R03 nem inicia formalmente A2-R04.
 
-## 6. Próximo ato
+## 5. Próximo ato
 
 Validar as propostas `UXA-001` a `UXA-004` e decidir se o próximo marco deverá aprofundar a arquitetura de informação ou autorizar wireframes de baixa fidelidade.
 
-## 7. Regra de transição
+## 6. Regra de transição
 
 Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Discovery, wireframes, protótipos, testes, Product Engineering e decisões de Outcomes permanecem atos separados.
