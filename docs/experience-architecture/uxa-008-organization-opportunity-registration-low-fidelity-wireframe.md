@@ -2,7 +2,7 @@
 id: UXA-008
 title: Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
@@ -10,6 +10,10 @@ related:
   - UXA-004
   - UXA-007
   - UXA-009
+  - UXA-011
+  - UXA-011-A1
+  - UXA-012
+  - UXA-013
   - GPA-004
   - PAS-001-OA-FOUNDATION-001
   - PAS-001-OA-LIFECYCLE-001
@@ -17,58 +21,146 @@ related:
 normative: false
 ---
 
-# Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização (identificador UXA-008)
+# Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização
 
 O identificador técnico `UXA-008` serve somente para rastreabilidade. O nome de leitura desta superfície é **Cadastro de Oportunidade pela Organização**.
 
+Esta versão incorpora a **Presença Companheira e Coerência de Posicionamento**, a **Compreensão do Momento, Evidência de Avanço e Explicabilidade do Próximo Passo** e a **Validação Funcional e Reformulação do Cadastro de Oportunidade pela Organização**.
+
 ## 1. Pergunta da superfície
 
-> **Como uma Organização informa uma oportunidade de forma completa, transparente e corrigível, sem transformar o envio em ativação automática?**
+> **Como uma Organização declara, com responsabilidade e transparência, quais jornadas pretende apoiar, que avanço poderá viabilizar, quais evidências sustentam essa contribuição e quais condições deverão ser compreendidas antes da decisão do participante?**
 
-O wireframe representa o fluxo web da Organização e detalha a etapa `Preço e condições`, preservando a visão das onze etapas do cadastro.
+A superfície não deverá parecer portal genérico de anúncios, formulário comercial ou mecanismo de publicação automática.
 
-## 2. Wireframe
+## 2. Wireframe reformulado
 
-![Wireframe para computador do cadastro de oportunidade](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
+![Wireframe para computador reformulado do cadastro de oportunidade](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável (SVG)](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
+[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
 
-## 3. Estrutura global
+O wireframe representa a etapa **Investimento e condições**, mantendo visível o contexto declarado anteriormente em **Jornada e contribuição**.
+
+## 3. Papel institucional da Organização
+
+A Organização deverá compreender que atua como participante responsável do ecossistema.
+
+Ela deverá:
+
+- declarar finalidade e contribuição reais;
+- indicar jornadas e momentos gerais que pretende apoiar;
+- explicar o avanço possível sem prometer resultado;
+- apresentar fundamentos, evidências e limitações;
+- garantir preço, condições, proteção e suporte;
+- assumir autoria e responsabilidade pelas informações;
+- corrigir, pausar ou encerrar a oportunidade;
+- respeitar autonomia, contexto e consentimento;
+- distinguir atividade operacional de impacto real.
+
+## 4. Estrutura global
 
 A tela possui:
 
 - navegação institucional lateral;
-- cabeçalho da oportunidade;
-- estado de salvamento;
-- pré-visualização;
+- cabeçalho com Organização, unidade e responsável;
+- estado de salvamento e autoria;
+- resumo persistente de Jornada e contribuição;
 - indicador das onze etapas;
-- formulário principal;
-- painel de consistência e transparência;
+- formulário da etapa atual;
+- painel de coerência com a Guivos;
+- pré-visualização responsável;
 - ações persistentes de voltar, salvar e continuar.
 
-A Organização deverá visualizar claramente em nome de qual entidade e unidade está realizando o cadastro.
+A Organização deverá visualizar claramente em nome de qual entidade, unidade e papel está realizando o cadastro.
 
-## 4. Etapas do fluxo
+## 5. Etapas reformuladas
 
 | Número | Etapa | Resultado esperado |
 |---:|---|---|
-| 1 | Tipo | natureza funcional da oportunidade |
-| 2 | Finalidade | valor, público e relação com necessidades ou movimentos |
-| 3 | Responsável | Organização, unidade, autoridade e suporte |
-| 4 | Disponibilidade | vagas, estoque, janelas, recorrência e validade |
-| 5 | Local | modalidade, endereço, cobertura e acessibilidade |
-| 6 | Preço | custo, condições, inclusão, cancelamento e validade do preço |
-| 7 | Elegibilidade | requisitos necessários e decisor final |
-| 8 | Proteção | riscos, sensibilidade, acessibilidade e políticas |
+| 1 | Natureza da oportunidade | tipo, natureza funcional e forma geral de participação |
+| 2 | Jornada e contribuição | público, Momento Atual geral, Próximo Passo, avanço possível, evidências e limites |
+| 3 | Responsabilidade institucional | Organização, unidade, autoridade, autoria e suporte |
+| 4 | Disponibilidade | vagas, estoque, janelas, recorrência, prazos e atualização |
+| 5 | Modalidade e acesso | local, cobertura, canais, acessibilidade e recursos necessários |
+| 6 | Investimento e condições | preço, custo total, taxas, inclusão, cancelamento, reembolso e validade |
+| 7 | Condições para participar | requisitos, elegibilidade, decisor final e verificações |
+| 8 | Proteção, dados e evidências | riscos, consentimento, dados necessários e método de avaliação |
 | 9 | Relação comercial | comissão, patrocínio, exclusividade e relações financeiras |
-| 10 | Pré-visualização | apresentação em cartão, detalhe, busca, mapa e modo acessível |
-| 11 | Envio para avaliação | declaração, revisão e submissão para análise |
+| 10 | Prévia e coerência | apresentação em diferentes superfícies e revisão de consistência |
+| 11 | Declaração e envio | responsabilidade, limites, correções e submissão para avaliação |
 
-A navegação entre etapas deverá preservar rascunho e sinalizar campos que afetam outras etapas.
+A navegação preservará rascunho, histórico e dependências entre etapas.
 
-## 5. Etapa representada: preço e condições
+## 6. Resumo persistente de Jornada e contribuição
 
-### 5.1 Modelo de acesso
+Durante as etapas posteriores, a tela deverá manter uma síntese da contribuição declarada.
+
+Conteúdo mínimo:
+
+- jornada ou público geral;
+- Momento Atual geral;
+- Próximo Passo que poderá ser apoiado;
+- avanço possível;
+- fundamento principal;
+- não garantia material;
+- acesso à edição da etapa de origem.
+
+Exemplo:
+
+> **Jornada apoiada:** pessoas com conhecimento básico de inglês que desejam praticar comunicação profissional.
+>
+> **Avanço possível:** ampliar confiança e repertório aplicado em situações de trabalho.
+>
+> **Limite declarado:** não garante fluência, promoção ou contratação.
+
+O resumo deverá impedir que preço e condições sejam preenchidos de forma desconectada do propósito da oportunidade.
+
+## 7. Etapa Jornada e contribuição
+
+A Organização deverá informar:
+
+- quem poderá ser apoiado;
+- qual Momento Atual geral pretende atender;
+- qual necessidade, barreira ou possibilidade foi identificada;
+- qual Próximo Passo poderá ser apoiado;
+- qual mudança poderá ser observada;
+- como essa mudança poderá ser reconhecida;
+- quais evidências ou fundamentos sustentam a afirmação;
+- quais condições influenciam o resultado;
+- o que a oportunidade não garante;
+- quais caminhos alternativos também podem ser válidos.
+
+A Organização descreverá contexto geral. A compreensão individual será responsabilidade da Guivos com base em informações autorizadas e permanecerá corrigível pelo participante.
+
+## 8. Evidência de avanço
+
+A Organização poderá declarar contribuição esperada, mas deverá distinguir:
+
+- intenção;
+- fundamento;
+- evidência observada;
+- validação externa;
+- experiência relatada;
+- resultado verificado;
+- desconhecido.
+
+Exemplos de avanço potencial:
+
+- capacidade desenvolvida;
+- acesso ampliado;
+- barreira reduzida;
+- experiência vivida;
+- relação construída;
+- decisão melhor informada;
+- contexto alterado;
+- ação concreta realizada;
+- conhecimento aplicado.
+
+Visualizações, cliques, inscrições, vendas, pontos e tempo de uso são indicadores operacionais e não poderão ser apresentados isoladamente como evolução ou impacto.
+
+## 9. Etapa representada: Investimento e condições
+
+### 9.1 Modelo de acesso
 
 Opções iniciais:
 
@@ -79,7 +171,7 @@ Opções iniciais:
 
 A seleção altera campos posteriores, mas não deverá apagar informações já fornecidas sem confirmação.
 
-### 5.2 Preço principal e cobrança
+### 9.2 Preço principal e cobrança
 
 Campos:
 
@@ -93,7 +185,7 @@ Campos:
 
 No padrão monetário brasileiro, valores ilustrativos utilizam `R$` e formatação como `R$ 79,90`.
 
-### 5.3 Taxas e custos externos
+### 9.3 Taxas e custos externos
 
 A Organização deverá declarar:
 
@@ -106,18 +198,13 @@ A Organização deverá declarar:
 - impostos ou taxas;
 - outros custos necessários.
 
-A ausência de taxa deverá ser confirmada, não apenas presumida pelo campo vazio.
+A ausência de taxa deverá ser confirmada, não presumida por campo vazio.
 
-### 5.4 Incluído e não incluído
+### 9.4 Incluído e não incluído
 
-A separação deverá impedir que uma descrição positiva oculte custos ou responsabilidades externas.
+A separação deverá impedir que descrição positiva oculte custos ou responsabilidades externas.
 
-Exemplos:
-
-- incluído: aulas, material digital e avaliação;
-- não incluído: certificação externa, equipamento e conectividade.
-
-### 5.5 Cancelamento, reembolso e validade do preço
+### 9.5 Cancelamento, reembolso e validade do preço
 
 A etapa deverá solicitar:
 
@@ -125,55 +212,82 @@ A etapa deverá solicitar:
 - multa ou ausência de multa;
 - prazo de arrependimento;
 - regras de reembolso;
-- data até a qual o preço permanece vigente para novas inscrições ou compras;
+- validade do preço para novas adesões;
 - política de reajuste;
-- efeitos de alteração após inscrição.
+- efeitos de alteração após início do processo.
 
-**Validade do preço** não significa vencimento da parcela, duração do serviço, prazo de inscrição ou período do contrato. Ela define até quando o valor informado deverá ser respeitado para uma nova adesão.
+**Validade do preço** não significa vencimento da parcela, duração, prazo de inscrição ou período contratual.
 
-## 6. Painel de consistência
+Preço maior, patrocínio ou maior investimento comercial não significam maior relevância, qualidade ou avanço.
 
-O painel lateral deverá:
+## 10. Proteção, dados e avaliação
 
-- indicar campos atendidos;
-- apontar omissões materiais;
-- explicar por que determinada informação é necessária;
-- apresentar como o preço será exibido ao participante;
-- detectar contradições, como `gratuito` com taxa obrigatória não declarada;
-- permitir abrir pré-visualização completa.
+A Organização deverá informar:
 
-O painel não substitui avaliação humana ou institucional posterior.
+- dados estritamente necessários;
+- finalidade de uso;
+- momento de coleta;
+- destinatário;
+- retenção;
+- compartilhamentos;
+- riscos e proteção;
+- consentimentos;
+- dados que não serão solicitados;
+- método proposto para observar contribuição ou resultado.
 
-## 7. Salvamento e continuidade
+A avaliação deverá ser proporcional, consentida e não invasiva.
+
+## 11. Painel de coerência com a Guivos
+
+O painel lateral deverá verificar:
+
+- Jornada e contribuição preenchidas;
+- Momento Atual geral identificado;
+- Próximo Passo possível definido;
+- avanço descrito sem promessa;
+- evidência ou fundamento apresentado;
+- limites e não garantias declarados;
+- preço e custo total transparentes;
+- dados e consentimentos identificados;
+- relação comercial declarada;
+- contradições entre finalidade, público, requisitos e preço;
+- distinção entre envio, avaliação, ativação e apresentação;
+- aderência à Fundação da Guivos.
+
+O painel deverá explicar cada inconsistência e permitir abrir a etapa de origem.
+
+Ele não substitui avaliação humana ou institucional.
+
+## 12. Salvamento, autoria e continuidade
 
 O fluxo deverá suportar:
 
-- salvamento automático;
-- salvamento manual;
+- salvamento automático e manual;
 - retorno posterior;
 - histórico de alterações;
 - autoria por campo material;
 - colaboração por papéis;
 - bloqueio de envio quando houver informação crítica ausente;
-- aviso antes de sair com alterações não sincronizadas.
+- aviso antes de sair com alterações não sincronizadas;
+- identificação de quem declarou finalidade, evidência, preço e limites.
 
-## 8. Pré-visualização
+## 13. Pré-visualização responsável
 
-A Organização deverá visualizar a oportunidade como aparecerá:
+A Organização deverá visualizar:
 
-- no cartão;
-- no detalhe;
-- na busca;
-- no mapa;
-- em comparação;
-- na Tela Hoje;
-- em intervenção contextual;
-- em modo acessível;
-- em modo discreto, quando aplicável.
+- contribuição para a jornada;
+- avanço possível e limites;
+- origem das informações;
+- preço e condições;
+- condições para participar;
+- relação comercial;
+- como aparecerá no cartão, detalhe, busca, comparação, mapa, Tela Hoje e Jornada;
+- diferença entre declaração da Organização e avaliação da Guivos;
+- aviso de que ativação não garante apresentação contextual.
 
-A prévia deverá distinguir dado fornecido pela Organização de avaliação produzida posteriormente pela Guivos.
+A prévia não poderá simular recomendação individual antes da avaliação contextual.
 
-## 9. Envio e avaliação
+## 14. Envio, avaliação, ativação e apresentação
 
 Fluxo esperado:
 
@@ -186,59 +300,93 @@ Rascunho
 → Ativa
 ```
 
-Também serão possíveis:
+Regras:
 
-- rejeitada antes da ativação;
-- pausada;
-- indisponível;
-- expirada;
-- contestada;
-- corrigida;
-- encerrada;
-- cancelada.
+- envio não significa aprovação;
+- aprovação não significa ativação automática;
+- ativação não significa apresentação a todos;
+- apresentação depende de relevância, contexto, disponibilidade, proteção e controles do participante;
+- patrocínio não garante apresentação;
+- oportunidade ativa poderá ser pausada, contestada, corrigida, expirada ou encerrada.
 
-O envio não poderá ser apresentado como publicação imediata.
+## 15. Linguagem institucional companheira
 
-## 10. Estados alternativos que ainda exigem wireframe
+Formulações preferenciais:
 
+- `Explique como esta oportunidade pode apoiar uma jornada`;
+- `Que mudança poderá ser observada?`;
+- `Quais evidências sustentam essa contribuição?`;
+- `O que esta oportunidade não garante?`;
+- `Esta informação será apresentada antes da decisão do participante`;
+- `Ativação não garante apresentação contextual`.
+
+Formulações a evitar:
+
+- `Destaque sua oferta`;
+- `Aumente suas conversões`;
+- `Alcance o público ideal`;
+- `Garanta resultados`;
+- `Publique agora`;
+- `Invista mais para ganhar relevância`.
+
+## 16. Estados alternativos ainda pendentes
+
+- oportunidade sem evidência suficiente;
+- promessa indevida detectada;
+- contribuição contestada;
+- resultado incompatível com a oferta;
 - oportunidade gratuita;
-- oportunidade subsidiada por patrocinador;
+- oportunidade subsidiada;
 - benefício corporativo;
 - preço sob consulta;
-- custo variável por localização;
 - múltiplas moedas;
-- taxa obrigatória divergente;
-- Organização com informação institucional pendente;
-- ajustes solicitados pela Guivos;
-- cadastro colaborativo por várias pessoas;
+- Organização com verificação pendente;
+- ajustes solicitados;
+- cadastro colaborativo;
 - oportunidade recorrente;
 - oportunidade com crianças ou adolescentes;
-- atividade de Coletivo vinculada a Organização.
+- atividade de Coletivo vinculada a Organização;
+- baixa conectividade;
+- acessibilidade com texto ampliado e leitor de tela.
 
-## 11. Perguntas para validação humana
+## 17. Decisões humanas aplicadas
 
-1. As onze etapas são compreensíveis ou excessivas?
-2. A etapa atual está suficientemente destacada?
-3. O painel lateral ajuda ou aumenta a carga cognitiva?
-4. O cálculo de custo total deve ser automático e editável?
-5. `Incluído` e `não incluído` precisam ser campos estruturados ou texto livre?
-6. A pré-visualização deve estar sempre disponível?
-7. Quais campos devem bloquear o envio?
-8. A validade do preço está clara para a Organização?
-9. A Organização compreende que envio, aprovação, ativação e apresentação são estados diferentes?
-10. Quais papéis institucionais podem cadastrar, revisar e enviar?
+1. A Organização é tratada como participante institucional responsável, não apenas anunciante.
+2. `Finalidade` passa a ser `Jornada e contribuição`.
+3. Contribuição para jornadas antecede investimento e conversão.
+4. Momento Atual geral, Próximo Passo e avanço possível tornam-se estruturados.
+5. Intenção, evidência e resultado permanecem distintos.
+6. Métricas operacionais não substituem avanço.
+7. Limites e não garantias tornam-se obrigatórios.
+8. A Organização não define relevância individual.
+9. `Preço` passa a ser `Investimento e condições`.
+10. `Elegibilidade` passa a ser `Condições para participar`.
+11. `Proteção` passa a incluir dados e evidências.
+12. O painel passa a avaliar coerência com a Fundação.
+13. A prévia mostra contribuição, limites e origem das avaliações.
+14. Ativação permanece distinta de apresentação contextual.
 
-## 12. Critérios de aceite do wireframe
+## 18. Critérios de aceite
 
 O wireframe poderá avançar quando:
 
-- a Organização compreender a sequência e o estado atual;
-- preço e custo total não puderem ser ocultados involuntariamente;
-- validade do preço, prazo de inscrição, vencimento e duração do serviço forem distinguidos;
-- taxas e condições forem explicitadas;
-- rascunho e retorno posterior forem confiáveis;
-- pré-visualização mostrar o efeito dos dados fornecidos;
-- envio não for confundido com ativação;
-- ajustes e recurso forem previstos;
-- autoria e responsabilidade institucional permanecerem rastreáveis;
-- a leitura não depender do conhecimento do identificador técnico.
+- o papel institucional da Organização estiver claro;
+- a finalidade estiver conectada a jornadas e Próximos Passos;
+- o Momento Atual geral estiver descrito sem alegar conhecimento individual indevido;
+- avanço possível estiver explicado sem promessa;
+- evidência, fundamento e incerteza estiverem distinguidos;
+- limites e não garantias estiverem visíveis;
+- métricas operacionais não forem tratadas como impacto;
+- preço e custo total não puderem ser ocultados;
+- validade, prazo, vencimento e duração forem distinguidos;
+- dados e consentimentos estiverem transparentes;
+- envio, avaliação, ativação e apresentação permanecerem distintos;
+- pré-visualização mostrar origem e efeito das informações;
+- autoria e responsabilidade forem rastreáveis;
+- a linguagem não parecer portal genérico de anúncios;
+- aderência à Fundação da Guivos estiver demonstrada;
+- a leitura não depender do identificador técnico.
+
+## 19. Limites
+
+Esta versão não define modelo final de impacto, design visual, protótipo navegável, testes de usabilidade, componentes técnicos, validação real de Organizações ou desenvolvimento.
