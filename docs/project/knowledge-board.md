@@ -2,18 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.80.0
+version: 11.82.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.80.0
+  - ROADMAP-11.82.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-016
-  - COD-016
-  - M7.18
+  - BA-STR-002-COD-SUB-017
+  - COD-017
+  - M7.19
 normative: false
 ---
 
@@ -21,23 +21,23 @@ normative: false
 
 ## 1. Autoridade
 
-Este painel resume o portfólio arquitetural vigente. O estado transversal oficial é definido pelo [Current State Register](current-state-register.md).
+Este painel resume o portfólio arquitetural proposto pelo incremento. O estado transversal somente se torna oficial na `main` após integração.
 
-## 2. Estado institucional
+## 2. Estado institucional proposto
 
-| Elemento | Estado vigente |
+| Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.18 — Sixteenth Human Outcome Decision Recorded` |
+| Marco | `M7.19 — Seventeenth Human Outcome Decision Recorded` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
-| CODR | 16 de 18 decisões humanas; 0 submissões abertas |
+| COR | 10 `Under Validation`; 2 `Merged`; 6 `Rejected` |
+| CODR | 17 de 18 decisões humanas; 0 submissões abertas |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
-| Reject aceitos | 5 |
-| `BUS-CAND-008` | `Rejected`; governança de parceiros e gestão de alianças preservadas |
+| Reject aceitos | 6 |
+| `BUS-CAND-009` | `Rejected`; coerência global com adequação contextual preservada como princípio e critério governado |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -51,18 +51,18 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - Guivos Economic Model documentariamente concluído;
 - COR, validação externa e COEM concluídos;
 - remediação R1–R5 e R6 concluídas;
-- `COD-001` a `COD-016` registrados.
+- `COD-001` a `COD-017` registrados neste incremento acumulado.
 
 ### Ativo
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-009`.
+- preparação da submissão de `BUS-CAND-010` após integração.
 
 ### Pendente
 
-- duas decisões humanas restantes;
+- uma decisão humana restante;
 - reavaliação das formulações revisadas e combinadas;
 - AQS-O01, catálogos canônicos e matriz de sustentação;
 - Business Capabilities, rebaseline dos produtos, Commercial Model e Go-to-Market.
@@ -73,14 +73,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-016
+## 4. COD-017
 
-O Fundador aceitou `Reject` para `BUS-CAND-008 — Saúde das relações de parceria`.
+O Fundador aceitou `Reject` para `BUS-CAND-009 — Coerência global com adequação contextual`.
 
-Saúde das relações de parceria foi retirada do futuro catálogo de Business Outcomes. Governança de parceiros, gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios de portfólio permanecem preservados na futura arquitetura de capacidades.
+O candidato foi retirado do futuro catálogo de Business Outcomes. Coerência global com adequação contextual permanece preservada como princípio arquitetural e critério governado para internacionalização, localização, desenho de capacidades e avaliação de mudanças.
 
-A decisão não reduz a importância estratégica das parcerias, não exige internalização e não considera quantidade, duração ou ausência de conflito como prova suficiente de saúde relacional.
+A decisão não impõe padronização global, não proíbe adaptação local, não exige internacionalização e não considera tradução, presença local ou variação nominal de produto como prova suficiente de adequação legítima.
 
-## 5. Próximo movimento
+## 5. Próximo movimento após integração
 
-Após integração deste incremento, preparar a décima sétima submissão humana para `BUS-CAND-009 — Coerência global com adequação contextual`, cuja recomendação da COEM é `Reject`.
+Preparar a décima oitava submissão humana para `BUS-CAND-010 — Capacidade de reinvestimento responsável`, cuja recomendação da COEM é `Merge into BUS-CAND-005`.

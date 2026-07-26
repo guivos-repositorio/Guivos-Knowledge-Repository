@@ -2,19 +2,19 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.99.0
+version: 2.1.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-016
+  - GKR-CANON-MATRIX-COD-017
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-016
-  - COD-016
-  - M7.18
+  - BA-STR-002-COD-SUB-017
+  - COD-017
+  - M7.19
 normative: false
 ---
 
@@ -65,8 +65,9 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-014` | Manter | `Reject` aceito para `BUS-CAND-006` |
 | `COD-015` | Manter | `Reject` aceito para `BUS-CAND-007` |
 | `COD-016` | Manter | `Reject` aceito para `BUS-CAND-008` |
-| CODR | Manter ativo | 16 de 18 decisões; 0 submissões abertas |
-| COR | Refinar | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
+| `COD-017` | Manter | `Reject` aceito para `BUS-CAND-009` |
+| CODR | Manter ativo | 17 de 18 decisões; 0 submissões abertas |
+| COR | Refinar | 10 `Under Validation`; 2 `Merged`; 6 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
 | `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
@@ -82,7 +83,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `BUS-CAND-006` | Remover do catálogo de Business Outcomes | `COD-014`; crescimento rejeitado como Outcome permanente; expansão responsável preservada como trajetória opcional |
 | `BUS-CAND-007` | Remover do catálogo de Business Outcomes | `COD-015`; aprendizado rejeitado como Outcome permanente; aprendizagem e adaptação preservadas como capacidades sustentadoras |
 | `BUS-CAND-008` | Remover do catálogo de Business Outcomes | `COD-016`; saúde das relações de parceria rejeitada como Outcome permanente; governança de parceiros e gestão de alianças preservadas |
-| `BUS-CAND-009` | Pendente | decisão individual ainda não submetida |
+| `BUS-CAND-009` | Remover do catálogo de Business Outcomes | `COD-017`; coerência global com adequação contextual rejeitada como Outcome permanente; princípio arquitetural e critério governado preservados |
 | `BUS-CAND-010` | Pendente | decisão individual e eventual fusão não antecipadas |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
@@ -91,32 +92,33 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado de COD-016
+## 4. Resultado de COD-017
 
-A alternativa `A — Aceitar Reject` foi consolidada para `BUS-CAND-008`.
+A alternativa `A — Aceitar Reject` foi consolidada para `BUS-CAND-009`.
 
 ### Formulação originalmente avaliada
 
-> A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco.
+> A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
 
 A decisão:
 
 - preserva formulação original, evidências e rastreabilidade;
-- altera `BUS-CAND-008` para `Rejected`;
-- retira saúde das relações de parceria do futuro catálogo de Business Outcomes;
-- preserva governança das relações de parceria na arquitetura de capacidades;
-- preserva gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho;
-- preserva critérios governados de entrada, qualificação, evolução, renovação, substituição e saída;
-- bloqueia quantidade, duração ou ausência de conflito como prova suficiente;
-- não reduz a importância estratégica das parcerias;
-- não exige internalização;
+- altera `BUS-CAND-009` para `Rejected`;
+- retira coerência global com adequação contextual do futuro catálogo de Business Outcomes;
+- preserva o conteúdo como princípio arquitetural e critério governado;
+- preserva critérios de internacionalização, localização e desenho de capacidades;
+- preserva decisões contextuais de padronização, adaptação, integração e autonomia local;
+- bloqueia tradução, presença local ou variação nominal de produto como prova suficiente;
+- não impõe padronização global;
+- não proíbe adaptação local;
+- não exige internacionalização;
 - não cria código canônico;
 - não inicia AQS-O01, Business Capabilities ou Product Engineering.
 
 ## 5. Addendum vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 1.99.0 — COD-016`.
+O addendum vigente é `Canonical Consolidation Matrix 2.1.0 — COD-017`.
 
 ## 6. Próximo ato
 
-Após integração deste incremento, preparar a submissão de `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana sobre a recomendação `Merge into BUS-CAND-005`.
