@@ -2,9 +2,9 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.33.0
+version: 0.34.0
 owner: Guivos Business Architecture
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 parent: BA-STR-002
 depends_on:
   - BA-STR-002-COR-001
@@ -35,6 +35,7 @@ related:
   - BA-STR-002-COD-SUB-015
   - BA-STR-002-COD-SUB-016
   - BA-STR-002-COD-SUB-017
+  - BA-STR-002-COD-SUB-018
   - COD-001
   - COD-002
   - COD-003
@@ -52,9 +53,10 @@ related:
   - COD-015
   - COD-016
   - COD-017
-  - M7.19
+  - COD-018
+  - M7.20
 normative: false
-execution_status: in-progress
+execution_status: completed
 ---
 
 # BA-STR-002-CODR-001 — Candidate Outcome Decision Register
@@ -66,11 +68,11 @@ Este registro preserva as decisões humanas individuais sobre as disposições r
 Ele mantém separados:
 
 1. formulação originalmente avaliada;
-2. resultados dos quatro testes da COEM;
+2. resultados dos quatro testes;
 3. disposição recomendada;
 4. decisão humana explícita;
 5. formulação revisada, alvo de fusão ou destino arquitetural;
-6. mudança de estado no COR;
+6. mudança de estado no Candidate Outcome Register;
 7. futura consolidação na Canon.
 
 Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Reformulações permanecem candidatas; fusões e rejeições preservam rastreabilidade.
@@ -78,14 +80,17 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ## 2. Estado formal
 
 ```text
-Decision register: in progress — resumed by R6
+Decision register: completed
 Candidate dispositions in scope: 18
-Human decisions recorded: 17
+Human decisions recorded: 18
 Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 9
-Accepted Merge dispositions: 2
+Accepted Merge dispositions: 3
 Accepted Reject dispositions: 6
-Candidate state changes: 8
+Candidate state changes: 9
+Under Validation: 9
+Merged: 3
+Rejected: 6
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -99,293 +104,120 @@ Operational authorization: no
 - `Reformulate` aceito não equivale a `Approved`;
 - `Merge` aceito não aprova automaticamente o alvo;
 - `Reject` aceito preserva registro, formulação, evidências e destino arquitetural;
-- formulações revisadas ou combinadas retornam aos quatro testes da COEM;
+- formulações revisadas ou combinadas retornam aos quatro testes;
 - candidatos fundidos ou rejeitados permanecem rastreáveis;
 - nenhum código `EO-###` ou `BO-###` nasce neste registro;
 - AQS-O01 e consolidação canônica permanecem atos posteriores.
 
-## 4. Decisões registradas
+## 4. Matriz cumulativa das decisões
 
-### COD-001 — ECO-CAND-001
+| Código | Candidato | Recomendação aceita | Estado resultante | Destino ou situação |
+|---|---|---|---|---|
+| COD-001 | ECO-CAND-001 | Reformulate | Under Validation | compreensão contextual reformulada; nova avaliação pendente |
+| COD-002 | ECO-CAND-003 | Reformulate | Under Validation | agência efetiva e situada; nova avaliação pendente |
+| COD-003 | ECO-CAND-005 | Merge into ECO-CAND-003 | Merged | continuidade adaptativa incorporada à agência |
+| COD-004 | ECO-CAND-002 | Reformulate | Under Validation | acesso real a possibilidades; nova avaliação pendente |
+| COD-005 | ECO-CAND-004 | Reject | Rejected | experiência preservada na Arquitetura da Jornada |
+| COD-006 | ECO-CAND-006 | Reformulate | Under Validation | saúde relacional reformulada; nova avaliação pendente |
+| COD-007 | ECO-CAND-007 | Reformulate | Under Validation | participação inclusiva e digna; nova avaliação pendente |
+| COD-008 | ECO-CAND-008 | Reformulate | Under Validation | participação protegida e contestável; nova avaliação pendente |
+| COD-009 | BUS-CAND-001 | Reject | Rejected | aderência ao propósito preservada como autoridade constitucional e obrigação de governança |
+| COD-010 | BUS-CAND-002 | Merge into BUS-CAND-003 | Merged | relevância contextual incorporada à habilitação de valor |
+| COD-011 | BUS-CAND-003 | Reformulate | Under Validation | formulação combinada pendente de nova avaliação |
+| COD-012 | BUS-CAND-004 | Reformulate | Under Validation | legitimidade institucional sustentada; nova avaliação pendente |
+| COD-013 | BUS-CAND-005 | Reformulate | Under Validation | continuidade econômica sustentável; nova avaliação pendente |
+| COD-014 | BUS-CAND-006 | Reject | Rejected | expansão responsável preservada como trajetória opcional |
+| COD-015 | BUS-CAND-007 | Reject | Rejected | aprendizagem e adaptação preservadas como capacidades sustentadoras |
+| COD-016 | BUS-CAND-008 | Reject | Rejected | governança de parceiros e alianças preservada como capacidade |
+| COD-017 | BUS-CAND-009 | Reject | Rejected | coerência global e adequação contextual preservadas como princípio e critério governado |
+| COD-018 | BUS-CAND-010 | Merge into BUS-CAND-005 | Merged | financiamento responsável da renovação incorporado à continuidade econômica sustentável |
+
+## 5. Resolução da décima oitava decisão — COD-018
+
+### Candidato
+
+`BUS-CAND-010 — Capacidade de reinvestimento responsável`
+
+### Formulação originalmente avaliada
+
+> A Guivos mantém condições para reinvestir valor legitimamente capturado no fortalecimento de capacidades, conhecimento e valor entregue ao ecossistema.
+
+### Resultado da Matriz de Avaliação
+
+| Teste | Resultado | Fundamentação resumida |
+|---|---|---|
+| Essential | Partial | renovação pode depender de diferentes fontes e formas de financiamento; reinvestimento interno não é condição universal nem intrinsecamente responsável |
+| Decision | Pass | incapacidade de financiar renovação ou alocação destrutiva exige revisão estratégica |
+| Replacement | Pass | a necessidade de financiar renovação permanece mesmo com substituição dos meios atuais |
+| Outcome Quality | Partial | o conceito descreve predominantemente condição financeira e mecanismo governado de alocação |
+
+### Decisão humana
 
 | Campo | Registro |
 |---|---|
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Data | 24/07/2026 |
-| Estado resultante | `Under Validation` |
-
-> Pessoas, Organizações e Coletivos formam e revisam uma compreensão contextual suficientemente fundamentada sobre sua situação, objetivos, necessidades, restrições e possibilidades, fortalecendo sua capacidade de realizar escolhas conscientes.
-
-### COD-002 — ECO-CAND-003
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Data | 24/07/2026 |
-| Estado resultante | `Under Validation` |
-
-> O ecossistema preserva condições reais, contextualmente adequadas e não coercitivas para que Pessoas, Organizações e Coletivos exerçam agência efetiva e situada ao definir, revisar, pausar, recusar ou renovar seus próprios próximos passos, individualmente ou em relações de co-agência.
-
-### COD-003 — ECO-CAND-005
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Merge into ECO-CAND-003` |
-| Decisão humana | Aceitar `Merge into ECO-CAND-003` |
-| Data | 25/07/2026 |
+| Recomendação | `Merge into BUS-CAND-005` |
+| Decisão humana | Aceitar `Merge into BUS-CAND-005` |
+| Autoridade | Fundador da Guivos |
+| Data | 26/07/2026 |
+| Estado anterior | `Under Validation` |
 | Estado resultante | `Merged` |
-| Alvo | `ECO-CAND-003` |
-
-Continuidade adaptativa foi incorporada como dimensão temporal da agência efetiva e situada.
-
-### COD-004 — ECO-CAND-002
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Data | 25/07/2026 |
-| Estado resultante | `Under Validation` |
-
-> Pessoas, Organizações e Coletivos dispõem de acesso real a possibilidades legítimas, compreensíveis e manejáveis, compatíveis com seu contexto, objetivos, restrições e fatores de conversão, preservando liberdade substantiva para compará-las e escolhê-las sem que a abundância de opções seja tratada como evidência de valor.
-
-### COD-005 — ECO-CAND-004
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reject` |
-| Decisão humana | Aceitar `Reject` |
-| Data | 25/07/2026 |
-| Estado resultante | `Rejected` |
-
-Experiência permanece preservada na arquitetura da Jornada, como realização de valor em uso e fonte de evidências.
-
-### COD-006 — ECO-CAND-006
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Data | 25/07/2026 |
-| Estado resultante | `Under Validation` |
-
-> O ecossistema sustenta condições para que Pessoas, Organizações e Coletivos estabeleçam e preservem relações voluntárias, diversas e reciprocamente construtivas, capazes de ampliar cooperação, acesso e valor recíproco sem restringir autonomia, excluir terceiros ou produzir dano material.
-
-### COD-007 — ECO-CAND-007
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Data | 25/07/2026 |
-| Estado resultante | `Under Validation` |
-
-> Pessoas, Organizações e Coletivos, em diferentes culturas, crenças, países e contextos, dispõem de condições reais para participar do ecossistema de forma digna e efetiva, com capacidade de uso, respeito, voz e contestabilidade, mediante redução de barreiras materiais evitáveis e preservação de requisitos legítimos de elegibilidade, segurança e conformidade.
-
-### COD-008 — ECO-CAND-008
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Data | 25/07/2026 |
-| Estado resultante | `Under Validation` |
-
-> Pessoas, Organizações e Coletivos participam do ecossistema em condições verificáveis de proteção, justiça e contestabilidade, com vulnerabilidades evitáveis reduzidas, possibilidade efetiva de compreender e questionar decisões, obter reparação diante de danos ou falhas e preservar sua autonomia, sem que conformidade, ausência de incidentes ou confiança declarada sejam tratadas como prova suficiente.
-
-### COD-009 — BUS-CAND-001
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Reject` |
-| Decisão humana | Aceitar `Reject` |
-| Data | 25/07/2026 |
-| Estado resultante | `Rejected` |
-
-Aderência ao propósito permanece autoridade constitucional, obrigação de governança, critério de admissibilidade e referência contra *mission drift*.
-
-### COD-010 — BUS-CAND-002
-
-| Campo | Registro |
-|---|---|
-| Recomendação | `Merge into BUS-CAND-003` |
-| Decisão humana | Aceitar `Merge into BUS-CAND-003` |
-| Data | 25/07/2026 |
-| Estado resultante | `Merged` |
-| Alvo | `BUS-CAND-003` |
-
-Relevância contextual foi incorporada à formulação candidata de `BUS-CAND-003`.
-
-### COD-011 — BUS-CAND-003
-
-| Campo | Registro |
-|---|---|
-| Nome | Habilitação consistente e contextualmente relevante de valor legítimo |
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Under Validation` |
+| Alvo | `BUS-CAND-005 — Continuidade econômica sustentável` |
+| Estado do alvo | `Under Validation` |
 | Código canônico | não criado |
 | AQS-O01 | não iniciado |
 
-> A Guivos sustenta condições para habilitar valor legítimo com consistência e relevância contextual, detectando mudanças materiais e ajustando proposições, capacidades e respostas de forma coerente, sem presumir controle unilateral sobre o valor realizado pelos participantes nem tratar personalização, satisfação pontual, disponibilidade técnica ou velocidade de resposta como prova suficiente.
+### Conteúdo incorporado
 
-### COD-012 — BUS-CAND-004
+A continuidade econômica sustentável passa a preservar explicitamente:
 
-| Campo | Registro |
-|---|---|
-| Nome | Legitimidade institucional sustentada |
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Under Validation` |
-| Código canônico | não criado |
-| AQS-O01 | não iniciado |
+- opções legítimas de financiamento interno e externo;
+- financiamento da renovação condicionado por adicionalidade e justificativa material;
+- avaliação de riscos, obrigações protegidas, custo de oportunidade e alternativas;
+- distinção entre reinvestimento proposto, aprovado, realizado e eficaz;
+- avaliação anterior à alocação e aprendizado posterior à execução;
+- bloqueio de retenção automática, sobreinvestimento e projetos de baixo valor legítimo;
+- proibição de tratar maior gasto, retenção ou percentual reinvestido como prova automática de responsabilidade, continuidade ou eficácia.
 
-#### Formulação originalmente avaliada
+A formulação candidata de `BUS-CAND-005` permanece em validação e deverá retornar aos quatro testes.
 
-> A Guivos preserva confiança e legitimidade suficientes para manter relações voluntárias, transparentes e duradouras no ecossistema.
+## 6. Efeitos autorizados por COD-018
 
-#### Formulação candidata revisada
+- registrar a décima oitava decisão humana;
+- alterar BUS-CAND-010 para `Merged`;
+- identificar BUS-CAND-005 como alvo;
+- preservar formulação, evidências e histórico do candidato fundido;
+- incorporar requisitos de financiamento e alocação responsável ao contexto interpretativo do alvo;
+- manter BUS-CAND-005 em `Under Validation`;
+- concluir a fase de decisões humanas individuais.
 
-> A legitimidade institucional da Guivos é sustentada perante participantes e stakeholders por conduta coerente, governança responsável, transparência, contestabilidade e reparação verificáveis, sem presumir controle unilateral sobre avaliações socialmente conferidas nem tratar reputação, conformidade, satisfação, confiança declarada ou longevidade das relações como prova suficiente.
+## 7. Efeitos bloqueados
 
-Confiança institucional permanece avaliação relacional associada. A decisão não cria novo candidato ou Outcome para confiança, mantém `BUS-CAND-004` em `Under Validation` e exige nova aplicação dos quatro testes da COEM.
+- aprovar ou canonicalizar BUS-CAND-005;
+- criar código canônico `BO-###`;
+- tornar reinvestimento obrigatório ou automático;
+- exigir financiamento exclusivamente interno;
+- usar gasto, retenção ou volume de investimento como prova de valor;
+- iniciar AQS-O01, catálogos canônicos ou matriz de sustentação;
+- iniciar Capacidades Empresariais, produtos, Modelo Comercial ou Entrada no Mercado;
+- retomar Engenharia de Produto ou W0-01.
 
-### COD-013 — BUS-CAND-005
-
-| Campo | Registro |
-|---|---|
-| Nome | Continuidade econômica sustentável |
-| Recomendação | `Reformulate` |
-| Decisão humana | Aceitar `Reformulate` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Under Validation` |
-| Código canônico | não criado |
-| AQS-O01 | não iniciado |
-
-#### Formulação originalmente avaliada
-
-> A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo.
-
-#### Formulação candidata revisada
-
-> A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
-
-Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado e aguarda sua própria decisão humana.
-
-### COD-014 — BUS-CAND-006
-
-| Campo | Registro |
-|---|---|
-| Nome | Crescimento responsável e resiliente |
-| Recomendação | `Reject` |
-| Decisão humana | Aceitar `Reject` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Rejected` |
-| Código canônico | não criado |
-| AQS-O01 | não iniciado |
-
-A rejeição alcança somente a candidatura de crescimento como Outcome permanente. **Expansão responsável** permanece trajetória estratégica opcional, condicionada à capacidade demonstrada, adicionalidade e critérios de não degradação. Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras.
-
-### COD-015 — BUS-CAND-007
-
-| Campo | Registro |
-|---|---|
-| Nome | Aprendizado e adaptação institucionais |
-| Recomendação | `Reject` |
-| Decisão humana | Aceitar `Reject` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Rejected` |
-| Código canônico | não criado |
-| AQS-O01 | não iniciado |
-
-A rejeição alcança somente a candidatura de aprendizado institucional como Outcome permanente. Aprendizado e adaptação permanecem capacidades sustentadoras multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
-
-### COD-016 — BUS-CAND-008
-
-| Campo | Registro |
-|---|---|
-| Nome | Saúde das relações de parceria |
-| Recomendação | `Reject` |
-| Decisão humana | Aceitar `Reject` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Rejected` |
-| Código canônico | não criado |
-| AQS-O01 | não iniciado |
-
-A rejeição alcança somente a candidatura de saúde das relações de parceria como Outcome permanente. Governança de parceiros, gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios de portfólio permanecem capacidades e dimensões governadas. A decisão não reduz a importância estratégica das parcerias e não exige internalização.
-
-### COD-017 — BUS-CAND-009
-
-| Campo | Registro |
-|---|---|
-| Nome | Coerência global com adequação contextual |
-| Recomendação | `Reject` |
-| Decisão humana | Aceitar `Reject` |
-| Autoridade | Fundador da Guivos |
-| Data | 25/07/2026 |
-| Estado anterior | `Under Validation` |
-| Estado resultante | `Rejected` |
-| Código canônico | não criado |
-| AQS-O01 | não iniciado |
-
-A rejeição alcança somente a candidatura de coerência global com adequação contextual como Outcome permanente. O conteúdo permanece como princípio arquitetural e critério governado para internacionalização, localização, desenho de capacidades e avaliação de mudanças. A decisão não impõe padronização global, não proíbe adaptação local e não exige internacionalização.
-
-## 5. Matriz cumulativa de decisões
-
-| Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
-|---|---|---|---|
-| ECO-CAND-001 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| ECO-CAND-003 | Reformulate | Aceitar `Reformulate` | formulação combinada pendente de nova COEM |
-| ECO-CAND-005 | Merge into ECO-CAND-003 | Aceitar `Merge into ECO-CAND-003` | `Merged` |
-| ECO-CAND-002 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| ECO-CAND-004 | Reject | Aceitar `Reject` | `Rejected` |
-| ECO-CAND-006 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| ECO-CAND-007 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| ECO-CAND-008 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-001 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-002 | Merge into BUS-CAND-003 | Aceitar `Merge into BUS-CAND-003` | `Merged` |
-| BUS-CAND-003 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-007 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-008 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-009 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
-
-## 6. Gate do incremento
+## 8. Gate de conclusão do registro
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
-| recomendação original preservada | Pass |
-| `COD-017` registrado | Pass |
-| `BUS-CAND-009` alterado para `Rejected` | Pass |
-| princípio arquitetural e critério governado preservados | Pass |
-| padronização global não imposta | Pass |
-| adaptação local não proibida | Pass |
-| tradução e presença local bloqueadas como prova suficiente | Pass |
-| distribuição 10/2/6 registrada | Pass |
+| decisões individuais registradas | 18/18 — Pass |
+| recomendações originais preservadas | Pass |
+| decisões humanas explícitas | Pass |
+| distribuição 9/3/6 registrada | Pass |
+| candidatos fundidos e rejeitados rastreáveis | Pass |
+| alvos das fusões identificados | Pass |
+| candidatos reformulados mantidos em validação | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
-| Product Engineering preservado em pausa | Pass |
+| Engenharia de Produto preservada em pausa | Pass |
 
-## 7. Próximo passo governado
+## 9. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
+Após integração deste incremento e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas, ajustar o AQS-O01 e preparar a futura consolidação governada dos catálogos canônicos.
+
+A conclusão deste registro não autoriza automaticamente nenhuma dessas etapas.
