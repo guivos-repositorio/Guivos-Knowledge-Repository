@@ -9,7 +9,7 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 | Dimensão | Situação |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.21 — Página Inicial da Guivos e Início da Jornada Estabelecidos` |
+| Marco | `M7.22 — Página Inicial Pública Validada e Reformulada` |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em `PAS-001 1.0.0`; nove capacidades concluídas |
@@ -17,52 +17,74 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 | Resultados Empresariais | 18 de 18 decisões humanas; 9 em validação, 3 fundidos e 6 rejeitados |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável por `COD-018` |
 | Resultados canônicos | nenhum criado |
-| Arquitetura da Experiência | integrada até `UXA-020`; HOME estabelecida e Tela Hoje reposicionada |
-| Personalização inicial | bloqueada antes da compreensão suficiente e autorizada |
+| Arquitetura da Experiência | integrada até `UXA-021`; Home pública validada |
+| Início protegido da jornada | contrato estabelecido; validação detalhada pendente |
+| Tela Hoje | entrada recorrente após compreensão inicial |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de `W0-01` |
 
 ## Missão atual
 
-Preservar o estado concluído das 18 decisões humanas e consolidar a primeira entrada pessoal da Guivos por meio da HOME, do relato do Momento Atual, da compreensão inicial e da transição governada para a Tela Hoje.
+Preservar o estado concluído das 18 decisões humanas e consolidar a primeira entrada pública da Guivos com compreensão concreta, exploração sem personalização, caminhos distintos e transição protegida para o início da jornada.
 
 Nenhum Resultado canônico, Capacidade Empresarial, protótipo, design, teste, produto especializado, Modelo Comercial, Entrada no Mercado ou implementação técnica é iniciado automaticamente.
 
 ## Primeira entrada pessoal
 
 ```text
-Página Inicial da Guivos
-→ apresentação do propósito e do ecossistema
-→ início voluntário da jornada
-→ relato por texto, voz, arquivos ou perguntas progressivas
+Página Inicial pública da Guivos
+→ decisão voluntária de iniciar ou explorar
+→ autenticação e explicação de privacidade, quando necessárias
+→ ambiente protegido para relato do Momento Atual
 → compreensão inicial apresentada
-→ revisão, correção e autorização
+→ revisão, correção, limitação e autorização
 → Tela Hoje
 ```
 
-A HOME permite conhecer Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads antes do início da jornada.
+A Home pública não coleta relato pessoal. Ela oferece `Iniciar minha jornada`, `Explorar sem personalização` e caminhos institucionais claros.
 
-Nesse estado, o conteúdo permanece geral, institucional, editorial ou resultante de busca explícita. A Guivos somente poderá afirmar relevância pessoal depois que o Momento Atual possuir base suficiente, revisável e autorizada.
+## Página Inicial pública validada
 
-A Tela Hoje passa a ser a principal entrada recorrente após esse gate, preservando contexto, síntese condicional, atenção principal, continuidade da jornada e oportunidades explicáveis.
+A hierarquia funcional é:
+
+```text
+identidade, propósito e descrição concreta da Guivos
+→ ação principal adequada ao estado e exploração sem personalização
+→ explicação simples de como a Guivos atua
+→ caminhos pessoal, geral e institucional
+→ ecossistema organizado por finalidade
+→ possibilidades gerais opcionais e identificadas
+→ confiança, privacidade, transparência e controle
+→ acesso institucional, ajuda e rodapé
+```
+
+O ecossistema é apresentado por finalidade:
+
+- Guivos Journey, Guivos Mall, Guivos Travel e Guivos Media para jornada e possibilidades;
+- Guivos Business para Organizações, programas e Coletivos;
+- Guivos Intelligence para compreensão e transparência;
+- Guivos Ads para anúncios, publicidade e patrocínios institucionais identificados.
+
+Guivos Mall e Guivos Ads permanecem os nomes oficiais.
 
 ## Sequência global
 
 1. **Concluído:** Guivos Journey funcional e publicação arquitetural.
 2. **Concluído documentalmente:** Modelo Econômico, de `GEM-001` a `GEM-010`.
 3. **Concluído:** remediação, validação externa, Matriz de Avaliação inicial e 18 decisões humanas.
-4. **Concluído neste incremento:** HOME e início da jornada estabelecidos funcionalmente.
-5. **Pendente mediante autorização:** validação funcional e estados especializados da HOME.
-6. **Pendente mediante autorização independente:** reaplicação dos quatro testes às nove formulações ativas.
-7. **Posterior:** ajuste prático do AQS-O01 e consolidação dos catálogos canônicos.
-8. **Dependência seguinte:** `BA-CAP-001` e `BA-CAP-002`.
-9. **Backlog preservado:** Mall, Business, Intelligence, Ads, Media e Travel.
-10. **Ciclos posteriores:** Modelo Comercial e Entrada no Mercado.
-11. **Execução técnica:** somente mediante autorização explícita.
+4. **Concluído:** separação entre Home pública, início protegido e Tela Hoje.
+5. **Concluído neste incremento:** validação funcional e reformulação da Home pública.
+6. **Pendente mediante autorização:** arquivo gráfico ou validação do início protegido.
+7. **Pendente mediante autorização independente:** reaplicação dos quatro testes às nove formulações ativas.
+8. **Posterior:** ajuste do AQS-O01 e consolidação dos catálogos canônicos.
+9. **Dependência seguinte:** Arquitetura de Capacidades Empresariais.
+10. **Backlog preservado:** Mall, Business, Intelligence, Ads, Media e Travel.
+11. **Ciclos posteriores:** Modelo Comercial e Entrada no Mercado.
+12. **Execução técnica:** somente mediante autorização explícita.
 
 ## Decisão COD-018
 
-A recomendação `Merge into BUS-CAND-005` foi aceita para `BUS-CAND-010 — Capacidade de reinvestimento responsável`.
+A recomendação de fundir `BUS-CAND-010 — Capacidade de reinvestimento responsável` em `BUS-CAND-005 — Continuidade econômica sustentável` foi aceita.
 
 A fusão:
 
@@ -102,6 +124,7 @@ Esses entregáveis produzem evidência, mas não substituem autoridades arquitet
 - [Guivos Business Architecture](business-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Página Inicial da Guivos e Início da Jornada](experience-architecture/uxa-020-home-and-journey-entry.md)
+- [Validação Funcional da Página Inicial Pública](experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
 
 ### Resultados Empresariais
 

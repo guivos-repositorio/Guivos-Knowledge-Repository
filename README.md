@@ -9,37 +9,58 @@ A autoridade única para o estado transversal vigente é o [GKR-STATE-001 — Re
 | Elemento | Estado resumido |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.21 — Página Inicial da Guivos e Início da Jornada Estabelecidos` |
+| Marco | `M7.22 — Página Inicial Pública Validada e Reformulada` |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
 | Guivos Economic Model | `GEM-001` a `GEM-010` documentariamente concluídos |
-| Business Outcomes | 9 `Under Validation`, 3 `Merged` e 6 `Rejected` |
+| Business Outcomes | 9 em validação, 3 fundidos e 6 rejeitados |
 | BUS-CAND-010 | fundido em BUS-CAND-005 por `COD-018` |
 | Outcomes canônicos | `0` |
-| Experience Architecture | integrada até `UXA-020`; HOME estabelecida e Tela Hoje reposicionada |
-| Personalização inicial | bloqueada antes de compreensão suficiente e autorizada |
+| Arquitetura da Experiência | integrada até `UXA-021`; Home pública validada |
+| Início protegido da jornada | contrato estabelecido; validação detalhada pendente |
+| Tela Hoje | entrada recorrente após compreensão inicial |
 | Protótipo, design e testes | não iniciados |
 | Product Engineering | pausado antes do `W0-01` |
 | Market Validation | trilha operacional paralela preservada |
 
-## Sequência pessoal estabelecida
+## Sequência pessoal vigente
 
 ```text
-Página Inicial da Guivos
-→ apresentação do propósito e do ecossistema
-→ início voluntário da jornada
-→ relato do Momento Atual por texto, voz, arquivos ou perguntas progressivas
+Página Inicial pública da Guivos
+→ decisão voluntária de iniciar ou explorar
+→ autenticação e explicação de privacidade, quando necessárias
+→ ambiente protegido para relato do Momento Atual
 → compreensão inicial apresentada pela Guivos
-→ revisão, correção e autorização
+→ revisão, correção, limitação e autorização
 → Tela Hoje
 ```
 
-A HOME permite conhecer Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads sem iniciar a jornada.
+A Home pública não coleta texto pessoal, voz ou arquivos. Ela explica concretamente o que é a Guivos, oferece início voluntário ou exploração sem personalização e apresenta caminhos pessoais, gerais e institucionais.
 
-Antes da compreensão inicial confirmada, o conteúdo permanece geral, institucional, editorial ou resultante de busca explícita. Nenhuma oportunidade ou solução é apresentada como relevante para o Momento Atual da pessoa.
+## Página Inicial pública validada
 
-Depois do gate, a Tela Hoje passa a organizar o que mudou, o que merece atenção e quais possibilidades podem apoiar o contexto autorizado.
+A hierarquia funcional aprovada é:
+
+```text
+identidade, propósito e descrição concreta da Guivos
+→ ação principal adequada ao estado e exploração sem personalização
+→ explicação simples de como a Guivos atua
+→ caminhos pessoal, geral e institucional
+→ ecossistema organizado por finalidade
+→ possibilidades gerais opcionais e identificadas
+→ confiança, privacidade, transparência e controle
+→ acesso institucional, ajuda e rodapé
+```
+
+O ecossistema é apresentado por finalidade:
+
+- jornada e possibilidades para pessoas: Guivos Journey, Guivos Mall, Guivos Travel e Guivos Media;
+- Organizações, programas e Coletivos: Guivos Business;
+- compreensão e transparência: Guivos Intelligence;
+- publicidade e patrocínio institucional: Guivos Ads.
+
+**Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios, publicidade e patrocínios.
 
 ## Estado dos Resultados Empresariais
 
@@ -54,24 +75,22 @@ Validação externa concluída
 → Business Capabilities
 ```
 
-A última decisão aceitou `Merge into BUS-CAND-005` para `BUS-CAND-010 — Capacidade de reinvestimento responsável`.
-
-A fusão preserva financiamento responsável da renovação como dimensão de Continuidade Econômica Sustentável, sem aprovar o candidato-alvo, tornar reinvestimento obrigatório ou tratar retenção e gasto como prova automática de valor.
+A fusão de `BUS-CAND-010 — Capacidade de reinvestimento responsável` em `BUS-CAND-005 — Continuidade econômica sustentável` não aprova o candidato-alvo, não torna reinvestimento obrigatório e não cria Resultado canônico.
 
 ## Próximos atos possíveis
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional da Página Inicial da Guivos;
-- detalhamento do relato por texto, voz e arquivos;
-- criação do arquivo gráfico da HOME;
+- criação do arquivo gráfico vetorial da Página Inicial pública;
+- validação funcional do início protegido da jornada;
+- detalhamento de texto, voz e arquivos;
 - validação da compreensão inicial e da transição para a Tela Hoje;
-- reaplicação dos quatro testes dos Outcomes;
+- reaplicação dos quatro testes dos Resultados Empresariais;
 - ajuste do AQS-O01 e consolidação canônica em fases posteriores.
 
 ## Backlog estratégico preservado
 
-Após Outcomes e Business Capabilities, o portfólio será rebaselineado a partir da ordem histórica:
+Após Resultados e Capacidades Empresariais, o portfólio será rebaselineado a partir da ordem histórica:
 
 1. Guivos Mall;
 2. Guivos Business;
@@ -82,7 +101,7 @@ Após Outcomes e Business Capabilities, o portfólio será rebaselineado a parti
 7. Modelo Comercial;
 8. Entrada no Mercado.
 
-A ordem final dos seis produtos dependerá dos Outcomes canônicos, das capacidades, das dependências econômicas e das evidências de mercado.
+A ordem final dos seis produtos dependerá dos Resultados canônicos, das capacidades, das dependências econômicas e das evidências de mercado.
 
 ## Acesso principal
 
@@ -98,6 +117,7 @@ A ordem final dos seis produtos dependerá dos Outcomes canônicos, das capacida
 - [Business Outcomes](docs/business-architecture/strategy/business-outcomes.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Página Inicial da Guivos e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
+- [Validação Funcional da Página Inicial Pública](docs/experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
 - [Resolução COD-018](docs/business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-010.md)
 - [Documentação completa](docs/index.md)
 

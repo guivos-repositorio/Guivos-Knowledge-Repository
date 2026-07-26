@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.48.0
+version: 1.49.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -12,35 +12,24 @@ related:
   - GEA-000
   - PAS-001
   - UXA-000
-  - UXA-001
-  - UXA-002
-  - UXA-003
-  - UXA-004
-  - UXA-005
-  - UXA-006
-  - UXA-007
-  - UXA-008
-  - UXA-009
   - UXA-010
   - UXA-011
   - UXA-011-A1
   - UXA-012
   - UXA-013
   - UXA-014
-  - UXA-015
-  - UXA-016
   - UXA-017
   - UXA-018
   - UXA-019
   - UXA-020
+  - UXA-021
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-018
   - COD-018
-  - ROADMAP-11.95.0
-  - M7.21
+  - ROADMAP-11.96.0
+  - M7.22
 normative: true
 ---
 
@@ -55,34 +44,28 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | Página Inicial da Guivos e sequência de início da jornada estabelecidas | M7.21; UXA-020 |
-| Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
+| Marco atual | Página Inicial pública validada e reformulada | M7.22; UXA-021 |
+| Remediação do repositório | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
-| Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída e reaplicação dos testes aguardando autorização | A2-R03; BA-STR-002 |
-| Resultados Empresariais | 18 de 18 decisões humanas registradas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
+| Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída | A2-R03; BA-STR-002 |
+| Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
 | Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | BUS-CAND-010 → BUS-CAND-005; COD-018 |
 | Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
-| Frente de execução | Arquitetura da Experiência retomada para estabelecer a HOME e o início da jornada | UXA-020; M7.21 |
-| Arquitetura da Experiência | seis superfícies validadas ou estruturadas e contrato funcional das relações estabelecido | UXA-000 a UXA-020 |
-| Página Inicial da Guivos | contrato funcional e wireframe textual estabelecidos | UXA-020 0.1.0 |
-| Início da jornada pessoal | relato multimodal, compreensão inicial, revisão e autorização governados | UXA-020; UXA-011-A1 |
-| Gate de personalização | indicações pessoais bloqueadas antes de compreensão inicial suficiente e confirmada | UXA-020; UXA-011-A1 |
-| Tela Hoje | validada, reformulada e reposicionada como entrada recorrente após a HOME | UXA-002 0.2.0; UXA-006 0.5.0; UXA-010 0.2.0 |
-| Presença companheira | princípio transversal estabelecido | UXA-011 |
-| Compreensão do momento | leitura verificável, corrigível e baseada em sinais autorizados | UXA-011-A1 0.2.0 |
-| Evidência de avanço | mudança relevante na jornada, capacidade institucional, ação coletiva ou finalidade da relação | UXA-011-A1; UXA-014; UXA-017; UXA-018; UXA-019 |
-| Explicabilidade do Próximo Passo | relação entre momento, finalidade, compromisso, evidência, autoridade e alternativas | UXA-011-A1; UXA-019; UXA-020 |
-| Detalhe de Oportunidade | validado e reformulado | UXA-007 0.4.0; UXA-012 0.2.0 |
-| Cadastro pela Organização | validado com contribuição para jornadas, evidências, limites e responsabilidade | UXA-008 0.3.0; UXA-013 0.1.0 |
-| Fundação de Organizações e Coletivos | estabelecida | UXA-014 0.1.0 |
-| Visão Geral da Organização | validada e reformulada com autoridade, compromissos, capacidade e decisões | UXA-015 0.2.0; UXA-017 0.1.0 |
-| Início do Coletivo | validado e reformulado com pertencimento, participação voluntária, governança e autonomia | UXA-016 0.2.0; UXA-018 0.1.0 |
-| Relações entre Organizações e Coletivos | contrato funcional bilateral, transparente, revisável e encerrável, documentado e integrado | UXA-019 0.1.0 |
+| Arquitetura da Experiência | ativa até a validação funcional da Home pública | UXA-000 a UXA-021 |
+| Página Inicial pública | funcionalmente validada e reformulada | UXA-020; UXA-021 |
+| Início protegido da jornada | contrato funcional estabelecido; validação detalhada não iniciada | UXA-020; UXA-011-A1 |
+| Gate de personalização | indicações pessoais bloqueadas antes de compreensão suficiente, revisável e autorizada | UXA-011-A1; UXA-020 |
+| Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
+| Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
+| Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
+| Visão Geral da Organização | validada e reformulada | UXA-015; UXA-017 |
+| Início do Coletivo | validado e reformulado | UXA-016; UXA-018 |
+| Relações entre Organizações e Coletivos | contrato funcional estabelecido | UXA-019 |
+| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Testes de usabilidade | não iniciados | — |
-| Resultados canônicos | nenhum criado | 0 |
 | AQS-O01 | aplicação prática não iniciada | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Guivos Journey | especificação arquitetural ativa; nove capacidades concluídas | PAS-001 1.0.0 |
@@ -90,34 +73,9 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho; execução em 0% | W0-01 |
 | Validação de Mercado | trilha paralela preservada; execução pendente | — |
 
-## 3. Resultado da décima oitava decisão humana
+## 3. Estado dos Resultados Empresariais
 
-O Fundador da Guivos aceitou a recomendação:
-
-```text
-A — Aceitar Merge into BUS-CAND-005
-```
-
-A decisão foi registrada como `COD-018` e integrada pela Solicitação de Integração número 107.
-
-### 3.1 Efeito sobre BUS-CAND-010
-
-`BUS-CAND-010 — Capacidade de reinvestimento responsável` passou de `Under Validation` para `Merged`, mantendo sua formulação, as evidências e o histórico.
-
-### 3.2 Efeito sobre BUS-CAND-005
-
-`BUS-CAND-005 — Continuidade econômica sustentável` permanece em `Under Validation` e recebeu como dimensão interpretativa:
-
-- opções legítimas de financiamento interno e externo;
-- financiamento de renovação condicionado por adicionalidade e justificativa material;
-- avaliação de riscos, obrigações protegidas, alternativas e custo de oportunidade;
-- distinção entre reinvestimento proposto, aprovado, realizado e eficaz;
-- avaliação anterior à alocação e aprendizado posterior à execução;
-- bloqueio de retenção automática, sobreinvestimento e uso de volume de gasto como prova de responsabilidade.
-
-A fusão não equivale a aprovação do candidato de destino.
-
-### 3.3 Estado formal dos Resultados Empresariais
+A fase de decisões humanas está concluída:
 
 ```text
 Human decisions: 18 of 18 — completed
@@ -126,267 +84,236 @@ Merged: 3
 Rejected: 6
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Reapplication of COEM: not started
+Reapplication of the four tests: not started
 AQS-O01: not started
 Canonical consolidation: not started
 Business Capabilities: not started
 ```
 
-## 4. Resultado da Página Inicial da Guivos
+`BUS-CAND-010 — Capacidade de reinvestimento responsável` foi fundido em `BUS-CAND-005 — Continuidade econômica sustentável` por `COD-018`.
 
-A experiência pessoal passa a seguir:
+A fusão:
+
+- preserva financiamento interno e externo como alternativas legítimas;
+- exige adicionalidade, riscos, obrigações protegidas, alternativas e custo de oportunidade;
+- distingue reinvestimento proposto, aprovado, realizado e eficaz;
+- não aprova o candidato de destino;
+- não cria Resultado canônico;
+- não torna reinvestimento obrigatório.
+
+## 4. Sequência pessoal vigente
 
 ```text
-Página Inicial da Guivos
-→ apresentação do propósito e do ecossistema
-→ início voluntário da jornada
-→ relato do Momento Atual por texto, voz, arquivos ou perguntas progressivas
+Página Inicial pública da Guivos
+→ decisão voluntária de iniciar ou explorar
+→ autenticação e explicação de privacidade, quando necessárias
+→ ambiente protegido para relato do Momento Atual
 → compreensão inicial com fontes, inferências e desconhecidos
 → revisão, correção, limitação e autorização
 → Tela Hoje
 ```
 
-### 4.1 HOME
+A pessoa poderá explorar o ecossistema sem iniciar uma jornada e sem receber afirmações de relevância pessoal.
 
-A HOME:
+## 5. Resultado da validação da Página Inicial pública
 
-- apresenta a Guivos como ecossistema e página de impacto;
-- convida a pessoa a iniciar sua jornada;
-- permite conhecer Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads;
-- permite explorar sem iniciar a jornada;
-- explica como o Momento Atual poderá ser compartilhado e utilizado;
-- preserva privacidade, acessibilidade, correção, recusa e exclusão;
-- não afirma relevância pessoal antes da compreensão inicial confirmada.
+A Página Inicial foi considerada **funcionalmente válida após reformulação**.
 
-### 4.2 Relato multimodal
+### 5.1 Primeira compreensão exigida
 
-A pessoa poderá contar seu momento por:
+A primeira área visível deverá explicar:
 
-- texto livre;
-- voz e transcrição revisável;
-- arquivos com finalidade e uso transparentes;
-- perguntas progressivas e adiáveis;
-- fontes externas autorizadas em evolução posterior.
+- o que é a Guivos;
+- como o ecossistema pode ser utilizado;
+- que a pessoa mantém suas decisões;
+- que poderá iniciar uma jornada ou explorar sem personalização;
+- que a superfície pública não coleta seu relato.
 
-O compartilhamento será mínimo e progressivo. Nenhuma modalidade será obrigatória como único caminho.
+### 5.2 Hierarquia validada
 
-### 4.3 Compreensão inicial
+```text
+identidade, propósito e descrição concreta da Guivos
+→ ação principal adequada ao estado e exploração sem personalização
+→ explicação simples de como a Guivos atua
+→ caminhos pessoal, geral e institucional
+→ ecossistema organizado por finalidade
+→ possibilidades gerais opcionais e identificadas
+→ confiança, privacidade, transparência e controle
+→ acesso institucional, ajuda e rodapé
+```
 
-A Guivos deverá distinguir:
+### 5.3 Ações por estado
 
-- o que a pessoa contou;
-- o que foi confirmado;
-- o que foi observado;
-- o que veio de fonte externa autorizada;
-- o que foi inferido;
-- o que permanece desconhecido;
-- o que foi contestado.
+| Estado | Ação principal | Alternativa legítima |
+|---|---|---|
+| visitante sem jornada | Iniciar minha jornada | Explorar sem personalização |
+| pessoa autenticada sem jornada | Iniciar minha jornada | Conhecer o ecossistema |
+| relato em andamento | Continuar minha jornada | Explorar sem personalização |
+| compreensão aguardando revisão | Revisar minha compreensão | Conhecer o ecossistema |
+| jornada ativa | Ir para a Tela Hoje | Conhecer o ecossistema |
 
-A pessoa poderá confirmar, corrigir, limitar, remover, rejeitar a personalização ou apagar e recomeçar.
+A Home não exibirá conteúdo sensível, resumo do Momento Atual, alertas pessoais ou oportunidades personalizadas.
 
-### 4.4 Gate de personalização
+### 5.4 Caminhos de entrada
 
-Antes de compreensão suficiente, revisável e autorizada:
+A Home distinguirá:
 
-- soluções poderão ser conhecidas;
-- busca e exploração geral permanecerão disponíveis;
-- exemplos serão identificados como gerais;
-- publicidade será identificada;
-- nenhuma oportunidade ou solução será descrita como relevante para o momento da pessoa.
+1. caminho pessoal para iniciar ou continuar uma jornada;
+2. exploração geral de conteúdos, produtos, serviços, viagens, oportunidades, Organizações e Coletivos;
+3. caminho institucional para Organizações, Coletivos, parceiros, patrocinadores e anunciantes.
 
-### 4.5 Tela Hoje
+Nenhum caminho muda automaticamente o contexto de atuação ou concede autoridade institucional.
 
-A Tela Hoje deixa de ser a primeira apresentação da Guivos e passa a ser a principal superfície recorrente depois do início da jornada.
+## 6. Ecossistema organizado por finalidade
 
-Ela utilizará a compreensão confirmada para mostrar o que mudou, o que merece atenção e quais possibilidades podem apoiar o momento atual, sem preenchimento artificial.
+### Jornada e possibilidades para pessoas
 
-## 5. Autoridades da Arquitetura da Experiência
+- Guivos Journey;
+- Guivos Mall;
+- Guivos Travel;
+- Guivos Media.
+
+### Organizações, programas e Coletivos
+
+- Guivos Business.
+
+### Compreensão e transparência
+
+- Guivos Intelligence.
+
+### Publicidade e patrocínio institucional
+
+- Guivos Ads.
+
+**Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios, publicidade e patrocínios.
+
+Guivos Ads não constitui recomendação pessoal e publicidade não aumenta relevância funcional.
+
+## 7. Possibilidades gerais na Home
+
+A Home poderá apresentar até três possibilidades gerais quando houver fundamento verificável.
+
+Cada item deverá identificar, quando aplicável:
+
+- origem e Organização responsável;
+- natureza geral, editorial ou patrocinada;
+- preço, gratuidade ou condição comercial;
+- local, modalidade, disponibilidade e prazo;
+- ausência de personalização.
+
+Nenhum item será incluído para preencher espaço.
+
+## 8. Proteção da superfície pública
+
+A Home pública não poderá:
+
+- solicitar relato pessoal;
+- ativar microfone, câmera ou upload;
+- processar voz, imagens ou arquivos;
+- apresentar perfil inferido;
+- utilizar `para você` antes do gate;
+- apresentar anúncio sem identificação;
+- usar popularidade ou posição comercial para simular relevância;
+- expor informações da jornada ativa.
+
+A proteção deverá ser demonstrada pelo comportamento da interface, não apenas por avisos jurídicos.
+
+## 9. Autoridades da Arquitetura da Experiência
 
 Permanecem ativas:
 
-1. Arquitetura da Experiência da Guivos;
-2. Fundação da Arquitetura da Experiência;
-3. Experiência Diária e Tela Hoje;
-4. Mapa Inicial de Jornadas e Telas;
-5. Oportunidades, Organizações, Coletivos e Mapa;
-6. Programa Inicial de Wireframes de Baixa Fidelidade;
-7. Wireframe da Tela Hoje;
-8. Wireframe do Detalhe de Oportunidade;
-9. Wireframe do Cadastro pela Organização;
-10. Padrão de Linguagem Clara;
-11. Validação Funcional da Tela Hoje;
-12. Presença Companheira e Coerência de Posicionamento;
-13. Compreensão do Momento, Evidência de Avanço e Explicabilidade do Próximo Passo;
-14. Validação Funcional do Detalhe de Oportunidade;
-15. Validação Funcional do Cadastro pela Organização;
-16. Fundação Funcional das Experiências de Organizações e Coletivos;
-17. Wireframe da Visão Geral da Organização;
-18. Wireframe do Início do Coletivo;
-19. Validação Funcional da Visão Geral da Organização;
-20. Validação Funcional do Início do Coletivo;
-21. Contrato Funcional das Relações entre Organizações e Coletivos;
-22. Página Inicial da Guivos e Início da Jornada.
+1. Fundação da Arquitetura da Experiência;
+2. Experiência Diária e Tela Hoje;
+3. Mapa Inicial de Jornadas e Telas;
+4. Oportunidades, Organizações, Coletivos e Mapa;
+5. Programa Inicial de Wireframes;
+6. Padrão de Linguagem Clara;
+7. Validação Funcional da Tela Hoje;
+8. Presença Companheira e Coerência de Posicionamento;
+9. Compreensão do Momento, Evidência de Avanço e Explicabilidade;
+10. Validação Funcional do Detalhe de Oportunidade;
+11. Validação Funcional do Cadastro pela Organização;
+12. Fundação Funcional de Organizações e Coletivos;
+13. Validação Funcional da Visão Geral da Organização;
+14. Validação Funcional do Início do Coletivo;
+15. Contrato Funcional das Relações entre Organizações e Coletivos;
+16. Página Inicial da Guivos e Início da Jornada;
+17. Validação Funcional e Reformulação da Página Inicial pública.
 
-## 6. Gate obrigatório de alinhamento à Fundação
+## 10. Estados alternativos pendentes
 
-Nenhuma superfície ou relação poderá avançar sem demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
+Para a Página Inicial permanecem pendentes de detalhamento:
 
-A avaliação abrange finalidade, autoridade, linguagem, ações, estados alternativos, publicidade, recursos, dados, inteligência artificial, privacidade, consentimento, autonomia, proteção e coerência do ecossistema.
+- baixa conectividade com versão essencial;
+- texto ampliado e navegação assistiva;
+- idioma ou região parcialmente suportados;
+- solução indisponível na região;
+- ausência de possibilidades gerais;
+- conteúdo geral indisponível;
+- publicidade patrocinada;
+- jornada suspensa ou encerrada;
+- conta com acesso restrito;
+- pessoa que exige proteção adicional;
+- incidente de segurança ou indisponibilidade do início protegido.
 
-## 7. Resultado das relações entre Organizações e Coletivos
+Para a Tela Hoje permanecem pendentes:
 
-A cadeia funcional estabelecida é:
-
-```text
-participantes distintos
-→ finalidade compartilhada e limitada
-→ consentimento bilateral
-→ autoridade identificada
-→ compromissos verificáveis
-→ recursos e dados transparentes
-→ autonomia protegida
-→ acompanhamento e revisão
-→ saída possível e responsável
-```
-
-A relação:
-
-- não cria propriedade, subordinação ou representação irrestrita;
-- exige aprovação das autoridades legítimas dos dois participantes;
-- não trata silêncio, recurso recebido ou participação como consentimento;
-- distingue apoio, patrocínio, serviço, operação conjunta, uso de marca e compartilhamento de dados;
-- torna visíveis compromissos, recursos, condições econômicas, influência e conflitos;
-- impede acesso automático a dados de membros;
-- preserva propósito, pertencimento e governança do Coletivo;
-- limita a representação do Coletivo em nome da Organização;
-- exige nova aprovação para alterações materiais;
-- reconhece avanço somente com mudança relacionada à finalidade e evidência suficiente;
-- declara ausência de avanço sem simular impacto;
-- permite correção, contestação, suspensão e encerramento;
-- governa o destino de recursos, dados, marcas e responsabilidades após o término.
-
-## 8. Ciclo de vida da relação
-
-```text
-rascunho
-→ proposta
-→ avaliação bilateral
-→ negociação
-→ aprovada pelas autoridades
-→ ativa
-→ em revisão
-→ renovada, ajustada, pausada ou encerrada
-```
-
-Nenhuma relação poderá tornar-se ativa antes de haver finalidade, escopo, autoridade, compromissos, recursos, dados, prazo e saída suficientemente definidos.
-
-## 9. Estados alternativos preservados
-
-Permanecem reconhecidos:
-
-- proposta recusada;
-- autoridade insuficiente;
-- aprovação divergente;
-- relação ativa sem atenção material;
-- compromisso atrasado;
-- recurso indisponível;
-- dado ou consentimento ausente;
-- conflito de interesse;
-- uso de marca contestado;
-- relação comercial não declarada;
-- risco de perda de autonomia;
-- denúncia em análise;
-- suspensão urgente;
-- renovação pendente;
-- encerramento solicitado;
-- encerramento com obrigações remanescentes;
+- primeira entrada após confirmação da compreensão;
+- estado totalmente vazio;
+- múltiplos itens críticos;
+- informação sensível em modo discreto;
+- falha de fonte externa;
 - baixa conectividade;
-- operação internacional;
-- informação sensível protegida.
+- contexto de Organização;
+- contexto de Coletivo;
+- alteração de preço em processo iniciado;
+- texto ampliado.
 
-Para a HOME também permanecem pendentes de detalhamento:
-
-- visitante que deseja apenas explorar;
-- relato salvo incompleto;
-- gravação interrompida;
-- transcrição de baixa confiança;
-- arquivo ilegível ou com informação de terceiros;
-- compreensão insuficiente;
-- inferência contestada;
-- pedido de exclusão durante análise;
-- primeira Tela Hoje após a confirmação.
-
-## 10. Sequência oficial vigente
+## 11. Sequência oficial vigente
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
 → Modelo Econômico — arquitetura documental inicial concluída
 → remediação do repositório — concluída
 → Resultados Empresariais — 18 decisões humanas concluídas
-→ BUS-CAND-010 fundido em BUS-CAND-005
-→ Página Inicial da Guivos e Início da Jornada — estabelecidos funcionalmente
-→ validação funcional da HOME — não iniciada
-→ formulações revisadas e combinadas dos Outcomes — aguardando reaplicação dos quatro testes
-→ AQS-O01 — pendente
-→ catálogos canônicos — pendentes
-→ Capacidades Empresariais — não iniciadas
+→ Página Inicial pública — validada e reformulada
+→ próximo ato depende de nova autorização
 ```
-
-A Arquitetura da Experiência permanece uma frente preparatória transversal e não inicia formalmente a Revisão da Arquitetura de Produtos.
-
-## 11. Ordem autorizada executada
-
-A ordem definida pelo usuário foi executada em incrementos separados:
-
-1. validar funcionalmente a Visão Geral da Organização — concluído e integrado;
-2. validar funcionalmente o Início do Coletivo — concluído e integrado;
-3. detalhar as relações entre Organizações e Coletivos — concluído e integrado;
-4. retornar aos Resultados Empresariais e decidir sobre Capacidade de reinvestimento responsável — concluído e integrado;
-5. concluir a Solicitação de Integração número 107 — concluído;
-6. iniciar a Página Inicial da Guivos e reposicionar a Tela Hoje — executado neste incremento.
-
-A conclusão deste incremento não inicia automaticamente validação, arquivo gráfico, protótipo ou etapa empresarial posterior.
 
 ## 12. Próximos atos governados
 
-Após integração e nova autorização, poderão ser tratados separadamente:
-
 ### Arquitetura da Experiência
 
-1. validação funcional da HOME;
-2. criação do arquivo gráfico vetorial de baixa fidelidade;
-3. detalhamento do relato por texto, voz e arquivos;
-4. validação da compreensão inicial;
-5. primeira variação da Tela Hoje após a transição.
+1. criar o arquivo gráfico vetorial da Página Inicial pública;
+2. validar funcionalmente a entrada protegida da jornada;
+3. detalhar texto, voz e arquivos;
+4. validar a revisão da compreensão inicial;
+5. validar a transição para a Tela Hoje.
 
 ### Arquitetura de Negócios
 
-1. reaplicação dos quatro testes às nove formulações revisadas e combinadas;
-2. ajuste prático do AQS-O01;
-3. consolidação dos catálogos canônicos;
-4. matriz de sustentação entre Ecosystem Outcomes e Business Outcomes;
-5. preparação da Arquitetura de Capacidades Empresariais.
+1. reaplicar os quatro testes às nove formulações revisadas e combinadas;
+2. ajustar o AQS-O01;
+3. consolidar catálogos canônicos;
+4. criar matriz de sustentação entre Resultados;
+5. preparar a Arquitetura de Capacidades Empresariais.
 
-Nenhuma dessas ações é autorizada automaticamente.
+Nenhum ato é iniciado automaticamente.
 
 ## 13. Limites
 
 Este estado não autoriza:
 
-- iniciar automaticamente a reaplicação da COEM;
-- aprovar ou canonicalizar `BUS-CAND-005` ou qualquer outro candidato;
+- iniciar automaticamente a reaplicação dos testes;
+- aprovar ou canonicalizar qualquer candidato;
 - criar códigos canônicos `EO-###` ou `BO-###`;
-- tratar reinvestimento como obrigação automática;
-- exigir financiamento exclusivamente interno;
-- usar receita, margem, caixa, retenção, gasto ou percentual reinvestido isolados como prova de continuidade ou responsabilidade;
-- iniciar AQS-O01, catálogos canônicos ou matriz de sustentação;
-- iniciar Capacidades Empresariais;
-- tratar a HOME como design visual final;
-- definir formatos técnicos definitivos de voz ou arquivos;
-- executar inferências sensíveis sem governança especializada;
-- apresentar indicações pessoais antes do gate de compreensão;
-- criar protótipo navegável;
+- iniciar AQS-O01 ou Capacidades Empresariais;
+- tratar a Home como design visual final;
+- validar automaticamente o início protegido da jornada;
+- criar arquivo gráfico, protótipo ou componentes;
 - executar testes de usabilidade;
-- definir preços e planos finais;
+- definir tecnologia de voz, arquivos ou inteligência artificial;
+- executar inferências sensíveis;
+- definir preços ou planos finais;
 - iniciar Engenharia de Produto, ambientes, provas de conceito ou produção;
 - tratar Validação de Mercado como executada.
