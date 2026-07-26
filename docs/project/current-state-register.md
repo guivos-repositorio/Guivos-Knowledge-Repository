@@ -1,9 +1,9 @@
 ---
 id: GKR-STATE-001
-title: Current State Register
+title: Registro do Estado Atual
 status: active
-version: 1.37.0
-owner: Guivos Knowledge Repository
+version: 1.38.0
+owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-AUD-002
@@ -20,157 +20,140 @@ related:
   - UXA-006
   - UXA-007
   - UXA-008
+  - UXA-009
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-017
-  - ROADMAP-11.84.0
-  - M7.19.2
+  - ROADMAP-11.85.0
+  - M7.19.3
 normative: true
 ---
 
-# GKR-STATE-001 — Current State Register
+# Registro do Estado Atual (identificador GKR-STATE-001)
 
 ## 1. Autoridade
 
-Este registro é a superfície oficial para o estado global vigente do Guivos Knowledge Repository quando o incremento correspondente estiver integrado à branch principal.
+Este registro é a superfície oficial do estado global vigente do **Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR)** quando o incremento correspondente estiver integrado à branch principal.
 
-## 2. Estado global proposto por este incremento
+## 2. Estado global proposto
 
-| Elemento | Estado |
-|---|---|
-| Era | `GE-2 — Knowledge` |
-| Marco | `M7.19.2 — Initial Low-Fidelity Wireframes Drafted` |
-| Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
-| Achados Critical, Major ou Minor conhecidos abertos | 0 |
-| A2-R03 — Business Architecture Review | ativa, operacionalmente pausada antes de `BUS-CAND-010` |
-| Business Outcomes | 17 de 18 decisões; nenhuma submissão aberta |
-| `BUS-CAND-010` | `Under Validation`; decisão e fusão não antecipadas |
-| COR | `0.29.0`; 10 `Under Validation`, 2 `Merged` e 6 `Rejected` |
-| CODR | `0.33.0`; 17 de 18 decisões humanas |
-| Frente ativa | `UXA-005 — Programa Inicial de Wireframes de Baixa Fidelidade` |
-| Experience Architecture | fundação e arquitetura inicial integradas; wireframes em revisão |
-| Wireframes de baixa fidelidade | 3 superfícies iniciais criadas |
-| Protótipo navegável | não iniciado |
-| Design visual | não iniciado |
-| Testes de usabilidade | não iniciados |
-| Outcomes canônicos | `0` |
-| Business Capabilities | não iniciadas |
-| Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
-| Guivos Economic Model | arquitetura documental inicial concluída; validações reais pendentes |
-| Product Engineering | pausado antes do `W0-01`; execução em `0%` |
-| Market Validation | trilha paralela preservada; formulário e planilha pendentes |
+| Elemento | Estado em linguagem clara | Referência técnica |
+|---|---|---|
+| Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
+| Marco atual | padrão de linguagem clara e identificadores técnicos estabelecido | M7.19.3 |
+| Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
+| Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
+| Revisão da Arquitetura de Negócios | ativa, mas pausada antes da decisão sobre capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
+| Resultados Empresariais (Business Outcomes) | 17 de 18 decisões humanas; nenhuma submissão aberta | BA-STR-002 |
+| Capacidade de reinvestimento responsável | em validação; decisão e incorporação não antecipadas | BUS-CAND-010; `Under Validation` |
+| Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | Candidate Outcome Register — COR 0.29.0 |
+| Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas registradas | Candidate Outcome Decision Register — CODR 0.33.0 |
+| Frente ativa | linguagem clara aplicada à Arquitetura da Experiência e aos wireframes | UXA-009 |
+| Arquitetura da Experiência da Guivos | fundação integrada; três wireframes iniciais em revisão | UXA-000 a UXA-009 |
+| Protótipo navegável | não iniciado | — |
+| Design visual | não iniciado | — |
+| Testes de usabilidade | não iniciados | — |
+| Resultados canônicos | nenhum criado | 0 códigos EO/BO |
+| Capacidades Empresariais (Business Capabilities) | não iniciadas | — |
+| Guivos Journey | especificação arquitetural ativa; nove capacidades concluídas | PAS-001 1.0.0 |
+| Modelo Econômico da Guivos | arquitetura documental inicial concluída; validações reais pendentes | GEM-001 a GEM-010 |
+| Engenharia de Produto (Product Engineering) | pausada antes da primeira unidade de trabalho; execução em 0% | W0-01 |
+| Validação de Mercado | trilha paralela preservada; execução pendente | — |
 
-## 3. Pausa governada de Business Outcomes
+## 3. Pausa governada dos Resultados Empresariais
 
-A pausa determinada antes da décima oitava decisão permanece vigente.
+A pausa antes da décima oitava decisão permanece vigente.
 
-Consequências preservadas:
-
-- `BUS-CAND-010 — Capacidade de reinvestimento responsável` permanece `Under Validation`;
-- `BA-STR-002-COD-SUB-018` não existe;
-- `COD-018` não existe;
-- a recomendação `Merge into BUS-CAND-005` não foi executada;
-- a frente de Business Outcomes não foi concluída;
-- nenhum Outcome foi promovido ou canonicalizado;
+- **Capacidade de reinvestimento responsável** permanece em validação (candidato empresarial BUS-CAND-010);
+- a décima oitava submissão de decisão não existe (identificador previsto BA-STR-002-COD-SUB-018);
+- a décima oitava decisão não existe (identificador previsto COD-018);
+- a recomendação de incorporação ao resultado de continuidade econômica não foi executada;
+- a frente de Resultados Empresariais não foi concluída;
+- nenhum Resultado foi promovido ou canonicalizado;
 - a retomada dependerá de autorização explícita posterior.
 
-## 4. Experience Architecture integrada
+## 4. Arquitetura da Experiência integrada
 
-As autoridades iniciais permanecem:
+As autoridades iniciais são:
 
-- `UXA-000 — Arquitetura da Experiência da Guivos`;
-- `UXA-001 — Fundação da Arquitetura da Experiência`;
-- `UXA-002 — Experiência Diária e Tela Hoje`;
-- `UXA-003 — Mapa Inicial de Jornadas e Telas`;
-- `UXA-004 — Oportunidades, Organizações, Coletivos e Mapa`.
+1. **Arquitetura da Experiência da Guivos** (identificador UXA-000);
+2. **Fundação da Arquitetura da Experiência** (identificador UXA-001);
+3. **Experiência Diária e Tela Hoje** (identificador UXA-002);
+4. **Mapa Inicial de Jornadas e Telas** (identificador UXA-003);
+5. **Oportunidades, Organizações, Coletivos e Mapa** (identificador UXA-004);
+6. **Programa Inicial de Wireframes de Baixa Fidelidade** (identificador UXA-005);
+7. **Wireframe de Baixa Fidelidade da Tela Hoje** (identificador UXA-006);
+8. **Wireframe de Baixa Fidelidade do Detalhe de Oportunidade** (identificador UXA-007);
+9. **Wireframe de Baixa Fidelidade do Cadastro pela Organização** (identificador UXA-008);
+10. **Padrão de Linguagem Clara e Identificadores Técnicos** (identificador UXA-009).
 
-O incremento atual adiciona:
-
-- `UXA-005 — Programa Inicial de Wireframes de Baixa Fidelidade`;
-- `UXA-006 — Wireframe da Tela Hoje`;
-- `UXA-007 — Wireframe do Detalhe de Oportunidade`;
-- `UXA-008 — Wireframe do Cadastro de Oportunidade pela Organização`.
-
-## 5. Wireframes iniciais
+## 5. Wireframes em revisão
 
 ### 5.1 Tela Hoje
 
-Wireframe móvel com:
-
-- cabeçalho contextual;
-- síntese do momento;
-- atenção principal;
-- movimento atual;
-- oportunidades para considerar;
-- Coletivos e atividades;
-- navegação `Hoje, Jornada, Explorar, Mapa e Eu`.
+Wireframe para aplicativo móvel com cabeçalho contextual, síntese do momento, atenção principal, Próximo Passo, oportunidades, Coletivos e navegação global.
 
 ### 5.2 Detalhe de oportunidade
 
-Wireframe móvel com:
-
-- identidade, preço e custo total;
-- explicação de relevância;
-- disponibilidade e condições;
-- elegibilidade;
-- Organização responsável;
-- transparência comercial;
-- ações de inscrição, salvamento e mapa.
+Wireframe para aplicativo móvel com identidade, preço, custo total, validade do preço, relevância, disponibilidade, elegibilidade, Organização responsável, transparência comercial e ações.
 
 ### 5.3 Cadastro pela Organização
 
-Wireframe desktop com:
+Wireframe para web em computador com onze etapas, preço e condições, consistência, salvamento, pré-visualização e separação entre envio, avaliação, ativação e apresentação.
 
-- onze etapas de cadastro;
-- etapa detalhada de preço e condições;
-- painel de consistência e transparência;
-- salvamento de rascunho;
-- pré-visualização;
-- separação entre envio, avaliação, ativação e apresentação.
+## 6. Padrão de linguagem clara
 
-## 6. Sequência oficial vigente
+O nome completo deverá aparecer antes do identificador. Códigos permanecem para rastreabilidade, não como forma principal de comunicação.
+
+Estados técnicos serão apresentados em português, com o termo canônico entre parênteses quando necessário:
+
+- Em validação (`Under Validation`);
+- Incorporado (`Merged`);
+- Rejeitado (`Rejected`).
+
+A regra vale imediatamente para novos documentos, respostas, títulos, tabelas e apresentações da Arquitetura da Experiência. Snapshots históricos não serão reescritos apenas por motivo editorial.
+
+## 7. Sequência oficial vigente
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
-→ Guivos Economic Model — arquitetura documental inicial concluída
-→ remediação R1–R5 — PASS
-→ R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 17 de 18
-→ pausa governada antes de BUS-CAND-010
-→ Experience Architecture Discovery — integrada
-→ três wireframes iniciais de baixa fidelidade — em revisão
-→ decisão sobre reformulação ou protótipo navegável
-→ retorno a BUS-CAND-010 quando autorizado
-→ conclusão de Business Outcomes
-→ Business Capabilities e fases posteriores
+→ Modelo Econômico da Guivos — arquitetura documental inicial concluída
+→ remediação do repositório — concluída
+→ decisões humanas sobre Resultados Empresariais — 17 de 18
+→ pausa antes da capacidade de reinvestimento responsável
+→ Arquitetura da Experiência — integrada
+→ três wireframes iniciais — em revisão
+→ linguagem clara e identificadores técnicos — estabelecidos
+→ decisão futura sobre reformulação ou protótipo navegável
+→ retorno aos Resultados Empresariais quando autorizado
 ```
 
-## 7. Próximo ato autorizado
+## 8. Próximo ato autorizado
 
 Revisar e decidir sobre:
 
-1. hierarquia e conteúdo da tela `Hoje`;
-2. estrutura do detalhe de oportunidade;
-3. sequência e densidade do cadastro organizacional;
-4. estados alternativos prioritários;
-5. reformulação dos wireframes ou autorização posterior de protótipo navegável de baixa fidelidade.
+1. hierarquia e conteúdo da Tela Hoje;
+2. estrutura do Detalhe de Oportunidade;
+3. sequência e densidade do Cadastro pela Organização;
+4. clareza da validade do preço;
+5. estados alternativos prioritários;
+6. reformulação dos wireframes ou autorização posterior de protótipo navegável de baixa fidelidade.
 
 Nenhum protótipo, teste ou desenvolvimento será iniciado automaticamente.
 
-## 8. Limites
+## 9. Limites
 
-O estado proposto não autoriza:
+Este estado não autoriza:
 
-- criar `BA-STR-002-COD-SUB-018` ou `COD-018`;
-- fundir `BUS-CAND-010` em `BUS-CAND-005`;
-- concluir Business Outcomes;
-- promover candidatos a `Approved`;
-- criar códigos canônicos `EO-###` ou `BO-###`;
-- iniciar AQS-O01 ou Business Capabilities;
+- criar a décima oitava submissão ou decisão sobre Resultados Empresariais;
+- incorporar a capacidade de reinvestimento responsável a outro resultado;
+- concluir Resultados Empresariais;
+- criar Resultados canônicos;
+- iniciar Capacidades Empresariais;
 - tratar os wireframes como design visual definitivo;
 - criar protótipo navegável sem nova autorização;
 - executar testes de usabilidade;
 - definir preços e planos finais;
-- iniciar Product Engineering, W0-01, POCs, ambientes ou produção;
-- tratar Market Validation como já executada.
+- iniciar Engenharia de Produto, ambientes, provas de conceito ou produção;
+- tratar Validação de Mercado como já executada.

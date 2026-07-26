@@ -2,8 +2,8 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.1.0
-owner: Guivos Experience Architecture
+version: 0.2.0
+owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
 related:
@@ -14,11 +14,12 @@ related:
   - UXA-006
   - UXA-007
   - UXA-008
+  - UXA-009
   - PAS-001
 normative: false
 ---
 
-# UXA-005 — Programa Inicial de Wireframes de Baixa Fidelidade
+# Programa Inicial de Wireframes de Baixa Fidelidade (identificador UXA-005)
 
 ## 1. Finalidade
 
@@ -26,9 +27,9 @@ Este incremento materializa as primeiras hipóteses de arquitetura da experiênc
 
 Os primeiros wireframes são:
 
-1. `UXA-006 — Tela Hoje`;
-2. `UXA-007 — Detalhe de Oportunidade`;
-3. `UXA-008 — Cadastro de Oportunidade pela Organização`.
+1. **Wireframe de Baixa Fidelidade da Tela Hoje** (identificador UXA-006);
+2. **Wireframe de Baixa Fidelidade do Detalhe de Oportunidade** (identificador UXA-007);
+3. **Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização** (identificador UXA-008).
 
 ## 2. Natureza dos artefatos
 
@@ -40,37 +41,38 @@ Os wireframes:
 - podem ser alterados sem migração de produto;
 - não definem componentes técnicos;
 - não constituem especificação de implementação;
-- não substituem os contratos especializados do `PAS-001`;
+- não substituem os contratos especializados da Especificação Arquitetural do Guivos Journey (identificador PAS-001);
 - não autorizam protótipo de alta fidelidade.
 
 ## 3. O que deverá ser validado
 
 ### 3.1 Compreensão
 
-- a finalidade da tela é compreendida rapidamente?;
-- o participante reconhece o que merece atenção?;
-- preço, condições, elegibilidade e relação comercial estão claros?;
-- a Organização entende o que precisa informar e por quê?;
-- ações principais e alternativas são distinguíveis?;
+- A finalidade da tela é compreendida rapidamente?
+- O participante reconhece o que merece atenção?
+- Preço, condições, elegibilidade e relação comercial estão claros?
+- A Organização entende o que precisa informar e por quê?
+- Ações principais e alternativas são distinguíveis?
+- Identificadores técnicos podem ser ignorados sem prejudicar a leitura?
 
 ### 3.2 Hierarquia
 
-- o item mais importante ocupa a posição correta?;
-- informações secundárias permanecem acessíveis sem competir com a decisão?;
-- a tela evita excesso de cartões e blocos?;
-- estados vazios e ausência legítima permanecem possíveis?;
+- O item mais importante ocupa a posição correta?
+- Informações secundárias permanecem acessíveis sem competir com a decisão?
+- A tela evita excesso de cartões e blocos?
+- Estados vazios e ausência legítima permanecem possíveis?
 
 ### 3.3 Autonomia
 
-- o participante consegue adiar, salvar, ocultar, contestar ou ajustar relevância?;
-- o fluxo evita pressionar contratação ou inscrição?;
-- a Organização consegue salvar rascunho, revisar e corrigir antes do envio?;
+- O participante consegue adiar, salvar, ocultar, contestar ou ajustar relevância?
+- O fluxo evita pressionar contratação ou inscrição?
+- A Organização consegue salvar rascunho, revisar e corrigir antes do envio?
 
 ### 3.4 Continuidade
 
-- `Hoje` conduz naturalmente ao Próximo Passo, oportunidade, Coletivo ou controle aplicável?;
-- o detalhe de oportunidade preserva contexto, origem e condições antes da ação?;
-- o cadastro organizacional produz informações suficientes para cartões, detalhe, mapa, busca e comparação?;
+- A Tela Hoje conduz naturalmente ao Próximo Passo, oportunidade, Coletivo ou controle aplicável?
+- O detalhe de oportunidade preserva contexto, origem e condições antes da ação?
+- O cadastro organizacional produz informações suficientes para cartões, detalhe, mapa, busca e comparação?
 
 ## 4. Convenções de baixa fidelidade
 
@@ -85,20 +87,20 @@ Os wireframes:
 
 Cor, iconografia e tipografia não possuem significado definitivo neste incremento.
 
-## 5. Viewports iniciais
+## 5. Dimensões iniciais de tela
 
 | Wireframe | Canal | Dimensão de referência |
 |---|---|---|
-| Hoje | aplicativo móvel | 390 × 844 |
+| Tela Hoje | aplicativo móvel | 390 × 844 |
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
-| Cadastro pela Organização | web desktop | 1440 × 1024 |
+| Cadastro pela Organização | web para computador | 1440 × 1024 |
 
 As dimensões servem somente para verificar densidade e hierarquia iniciais. Responsividade e adaptação a outros dispositivos permanecem pendentes.
 
 ## 6. Relação entre os três wireframes
 
 ```text
-Hoje
+Tela Hoje
 → oportunidade apresentada com razão resumida
 → detalhe da oportunidade
 → decisão consciente de salvar, comparar ou iniciar processo
@@ -106,18 +108,18 @@ Hoje
 Organização
 → cadastro governado da oportunidade
 → avaliação e ativação
-→ apresentação no Hoje, Explorar, Mapa ou intervenção contextual
+→ apresentação na Tela Hoje, em Explorar, no Mapa ou em uma intervenção contextual
 ```
 
 O cadastro não garante ativação. A ativação não garante apresentação. A apresentação não representa recomendação definitiva nem contratação.
 
 ## 7. Artefatos especializados
 
-| Documento | Superfície | Artefato visual |
-|---|---|---|
-| [UXA-006](uxa-006-today-low-fidelity-wireframe.md) | Hoje | [`uxa-006-hoje-mobile.svg`](../assets/wireframes/uxa-006-hoje-mobile.svg) |
-| [UXA-007](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | Detalhe de oportunidade | [`uxa-007-opportunity-detail-mobile.svg`](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
-| [UXA-008](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | Cadastro pela Organização | [`uxa-008-organization-opportunity-registration-desktop.svg`](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
+| Nome completo | Identificador | Superfície | Artefato visual |
+|---|---|---|---|
+| [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | Tela Hoje | [arquivo gráfico vetorial](../assets/wireframes/uxa-006-hoje-mobile.svg) |
+| [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | Detalhe de oportunidade | [arquivo gráfico vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
+| [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | Cadastro pela Organização | [arquivo gráfico vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
 ## 8. Limites
 
@@ -125,20 +127,26 @@ Este incremento não:
 
 - aprova a navegação como definitiva;
 - define marca, paleta, tipografia ou ilustração;
-- define microcopy final;
-- cria componentes de design system;
+- define textos finais de interface;
+- cria componentes de sistema de design;
 - conclui acessibilidade;
 - cria protótipo navegável;
 - executa teste de usabilidade;
 - define preço ou oferta comercial real;
-- inicia Product Engineering;
-- retoma `BUS-CAND-010`.
+- inicia Engenharia de Produto (Product Engineering);
+- retoma a decisão sobre **Capacidade de reinvestimento responsável** (candidato empresarial BUS-CAND-010).
 
-## 9. Gate seguinte
+## 9. Padrão de linguagem
 
-O próximo gate deverá decidir, separadamente:
+O **Padrão de Linguagem Clara e Identificadores Técnicos** (identificador UXA-009) é obrigatório para revisões e comunicações desta frente.
 
-1. aceitar ou reformular a estrutura da tela `Hoje`;
+O nome completo deverá aparecer antes do código, e estados técnicos deverão possuir explicação em português.
+
+## 10. Próximo ponto de decisão
+
+O próximo ponto deverá decidir, separadamente:
+
+1. aceitar ou reformular a estrutura da Tela Hoje;
 2. aceitar ou reformular a hierarquia do detalhe de oportunidade;
 3. aceitar ou reformular o fluxo de cadastro da Organização;
 4. selecionar estados alternativos e exceções para novos wireframes;

@@ -2,14 +2,15 @@
 id: UXA-006
 title: Wireframe de Baixa Fidelidade da Tela Hoje
 status: draft
-version: 0.1.0
-owner: Guivos Experience Architecture
+version: 0.2.0
+owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
 related:
   - UXA-002
   - UXA-003
   - UXA-004
+  - UXA-009
   - PAS-001-CV-VIEW-001
   - PAS-001-PP-VIEW-001
   - PAS-001-OA-VIEW-001
@@ -17,19 +18,21 @@ related:
 normative: false
 ---
 
-# UXA-006 — Wireframe de Baixa Fidelidade da Tela Hoje
+# Wireframe de Baixa Fidelidade da Tela Hoje (identificador UXA-006)
+
+O identificador técnico `UXA-006` serve somente para rastreabilidade. O nome de leitura desta superfície é **Tela Hoje**.
 
 ## 1. Pergunta da superfície
 
 > **O que mudou, o que merece minha atenção e quais possibilidades podem apoiar meu momento agora?**
 
-A tela `Hoje` é a hipótese de porta de entrada pessoal. Ela deverá reduzir esforço de decisão sem transformar a Guivos em feed, catálogo infinito ou painel de produtividade.
+A Tela Hoje é a hipótese de porta de entrada pessoal. Ela deverá reduzir esforço de decisão sem transformar a Guivos em feed, catálogo infinito ou painel de produtividade.
 
 ## 2. Wireframe
 
-![Wireframe móvel da tela Hoje](../assets/wireframes/uxa-006-hoje-mobile.svg)
+![Wireframe móvel da Tela Hoje](../assets/wireframes/uxa-006-hoje-mobile.svg)
 
-[Visualizar o SVG isoladamente](../assets/wireframes/uxa-006-hoje-mobile.svg)
+[Visualizar o arquivo gráfico vetorial escalável (SVG)](../assets/wireframes/uxa-006-hoje-mobile.svg)
 
 ## 3. Hierarquia proposta
 
@@ -47,7 +50,7 @@ A tela `Hoje` é a hipótese de porta de entrada pessoal. Ela deverá reduzir es
 
 O cabeçalho deverá indicar:
 
-- que a pessoa está na superfície `Hoje`;
+- que a pessoa está na Tela Hoje;
 - em qual contexto atua: jornada pessoal, Organização ou Coletivo;
 - acesso à Central de Intervenções;
 - modo discreto ou proteção visual, quando aplicável.
@@ -125,7 +128,7 @@ Regras:
 - o recorte deverá ser pequeno;
 - patrocínio não poderá elevar relevância funcional;
 - a tela deverá evitar oportunidades repetitivas;
-- o catálogo completo pertence a `Explorar` ou `Minhas Oportunidades`;
+- o catálogo completo pertence a Explorar ou Minhas Oportunidades;
 - uma oportunidade poderá ser relevante e ainda assim não aparecer hoje.
 
 ## 9. Coletivos e atividades
@@ -138,7 +141,7 @@ O bloco deverá privilegiar:
 - ação de causa ou voluntariado;
 - decisão necessária de líder ou moderador.
 
-Publicações sociais sem finalidade não deverão ocupar a tela `Hoje`.
+Publicações sociais sem finalidade não deverão ocupar a Tela Hoje.
 
 ## 10. Estados alternativos que ainda exigem wireframe
 
@@ -161,7 +164,7 @@ Publicações sociais sem finalidade não deverão ocupar a tela `Hoje`.
 4. Duas oportunidades são suficientes no primeiro recorte?
 5. O bloco de Coletivos deve permanecer na tela inicial?
 6. O seletor de contexto está suficientemente visível?
-7. A navegação `Hoje, Jornada, Explorar, Mapa e Eu` é compreensível?
+7. A navegação Hoje, Jornada, Explorar, Mapa e Eu é compreensível?
 8. Quais informações precisam permanecer ocultas na tela bloqueada?
 
 ## 12. Critérios de aceite do wireframe
@@ -174,4 +177,5 @@ O wireframe poderá avançar quando demonstrar que:
 - preço e prazo aparecem sem pressão comercial;
 - controle de relevância é encontrável;
 - ausência de itens não é tratada como falha;
-- a tela conduz a ações reais sem exigir permanência prolongada.
+- a tela conduz a ações reais sem exigir permanência prolongada;
+- a leitura não depende do conhecimento do identificador técnico.

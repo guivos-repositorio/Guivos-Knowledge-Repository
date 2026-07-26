@@ -2,13 +2,14 @@
 id: UXA-008
 title: Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização
 status: draft
-version: 0.1.0
-owner: Guivos Experience Architecture
+version: 0.2.0
+owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
 related:
   - UXA-004
   - UXA-007
+  - UXA-009
   - GPA-004
   - PAS-001-OA-FOUNDATION-001
   - PAS-001-OA-LIFECYCLE-001
@@ -16,7 +17,9 @@ related:
 normative: false
 ---
 
-# UXA-008 — Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização
+# Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização (identificador UXA-008)
+
+O identificador técnico `UXA-008` serve somente para rastreabilidade. O nome de leitura desta superfície é **Cadastro de Oportunidade pela Organização**.
 
 ## 1. Pergunta da superfície
 
@@ -26,9 +29,9 @@ O wireframe representa o fluxo web da Organização e detalha a etapa `Preço e 
 
 ## 2. Wireframe
 
-![Wireframe desktop do cadastro de oportunidade](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
+![Wireframe para computador do cadastro de oportunidade](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
 
-[Visualizar o SVG isoladamente](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
+[Visualizar o arquivo gráfico vetorial escalável (SVG)](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg)
 
 ## 3. Estrutura global
 
@@ -47,19 +50,19 @@ A Organização deverá visualizar claramente em nome de qual entidade e unidade
 
 ## 4. Etapas do fluxo
 
-| Nº | Etapa | Resultado esperado |
+| Número | Etapa | Resultado esperado |
 |---:|---|---|
 | 1 | Tipo | natureza funcional da oportunidade |
 | 2 | Finalidade | valor, público e relação com necessidades ou movimentos |
 | 3 | Responsável | Organização, unidade, autoridade e suporte |
 | 4 | Disponibilidade | vagas, estoque, janelas, recorrência e validade |
 | 5 | Local | modalidade, endereço, cobertura e acessibilidade |
-| 6 | Preço | custo, condições, inclusão, cancelamento e validade |
+| 6 | Preço | custo, condições, inclusão, cancelamento e validade do preço |
 | 7 | Elegibilidade | requisitos necessários e decisor final |
 | 8 | Proteção | riscos, sensibilidade, acessibilidade e políticas |
-| 9 | Comercial | comissão, patrocínio, exclusividade e relações financeiras |
-| 10 | Prévia | apresentação em cartão, detalhe, busca, mapa e modo acessível |
-| 11 | Enviar | declaração, revisão e submissão para avaliação |
+| 9 | Relação comercial | comissão, patrocínio, exclusividade e relações financeiras |
+| 10 | Pré-visualização | apresentação em cartão, detalhe, busca, mapa e modo acessível |
+| 11 | Envio para avaliação | declaração, revisão e submissão para análise |
 
 A navegação entre etapas deverá preservar rascunho e sinalizar campos que afetam outras etapas.
 
@@ -88,7 +91,7 @@ Campos:
 - custo total conhecido ou estimado;
 - possibilidade de reajuste.
 
-No locale pt-BR, valores ilustrativos utilizam `R$` e formatação brasileira, como `R$ 79,90`.
+No padrão monetário brasileiro, valores ilustrativos utilizam `R$` e formatação como `R$ 79,90`.
 
 ### 5.3 Taxas e custos externos
 
@@ -114,7 +117,7 @@ Exemplos:
 - incluído: aulas, material digital e avaliação;
 - não incluído: certificação externa, equipamento e conectividade.
 
-### 5.5 Cancelamento, reembolso e validade
+### 5.5 Cancelamento, reembolso e validade do preço
 
 A etapa deverá solicitar:
 
@@ -122,9 +125,11 @@ A etapa deverá solicitar:
 - multa ou ausência de multa;
 - prazo de arrependimento;
 - regras de reembolso;
-- validade do preço;
+- data até a qual o preço permanece vigente para novas inscrições ou compras;
 - política de reajuste;
 - efeitos de alteração após inscrição.
+
+**Validade do preço** não significa vencimento da parcela, duração do serviço, prazo de inscrição ou período do contrato. Ela define até quando o valor informado deverá ser respeitado para uma nova adesão.
 
 ## 6. Painel de consistência
 
@@ -161,7 +166,7 @@ A Organização deverá visualizar a oportunidade como aparecerá:
 - na busca;
 - no mapa;
 - em comparação;
-- na tela `Hoje`;
+- na Tela Hoje;
 - em intervenção contextual;
 - em modo acessível;
 - em modo discreto, quando aplicável.
@@ -174,7 +179,7 @@ Fluxo esperado:
 
 ```text
 Rascunho
-→ Enviada
+→ Enviada para avaliação
 → Em avaliação
 → Ajustes solicitados
 → Aprovada para ativação
@@ -219,8 +224,9 @@ O envio não poderá ser apresentado como publicação imediata.
 5. `Incluído` e `não incluído` precisam ser campos estruturados ou texto livre?
 6. A pré-visualização deve estar sempre disponível?
 7. Quais campos devem bloquear o envio?
-8. A Organização compreende que envio, aprovação, ativação e apresentação são estados diferentes?
-9. Quais papéis institucionais podem cadastrar, revisar e enviar?
+8. A validade do preço está clara para a Organização?
+9. A Organização compreende que envio, aprovação, ativação e apresentação são estados diferentes?
+10. Quais papéis institucionais podem cadastrar, revisar e enviar?
 
 ## 12. Critérios de aceite do wireframe
 
@@ -228,9 +234,11 @@ O wireframe poderá avançar quando:
 
 - a Organização compreender a sequência e o estado atual;
 - preço e custo total não puderem ser ocultados involuntariamente;
+- validade do preço, prazo de inscrição, vencimento e duração do serviço forem distinguidos;
 - taxas e condições forem explicitadas;
 - rascunho e retorno posterior forem confiáveis;
 - pré-visualização mostrar o efeito dos dados fornecidos;
 - envio não for confundido com ativação;
 - ajustes e recurso forem previstos;
-- autoria e responsabilidade institucional permanecerem rastreáveis.
+- autoria e responsabilidade institucional permanecerem rastreáveis;
+- a leitura não depender do conhecimento do identificador técnico.

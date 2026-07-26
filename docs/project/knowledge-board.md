@@ -1,14 +1,14 @@
 ---
 id: GKR-KNOWLEDGE-BOARD-001
-title: Knowledge Board
+title: Painel de Conhecimento
 status: active
-version: 11.84.0
+version: 11.85.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.84.0
+  - ROADMAP-11.85.0
   - UXA-000
   - UXA-001
   - UXA-002
@@ -18,66 +18,68 @@ related:
   - UXA-006
   - UXA-007
   - UXA-008
+  - UXA-009
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.19.2
+  - M7.19.3
 normative: false
 ---
 
-# Knowledge Board
+# Painel de Conhecimento (identificador GKR-KNOWLEDGE-BOARD-001)
 
 ## 1. Autoridade
 
-Este painel resume o portfólio arquitetural proposto pelo incremento. O estado transversal somente se torna oficial na `main` após integração.
+Este painel resume o portfólio arquitetural proposto pelo incremento. O estado transversal somente se torna oficial na branch principal após integração.
 
 ## 2. Estado institucional proposto
 
-| Elemento | Estado |
-|---|---|
-| Era | `GE-2 — Knowledge` |
-| Marco | `M7.19.2 — Initial Low-Fidelity Wireframes Drafted` |
-| Remediação | concluída; R5 `PASS` e R6 concluído |
-| A2-R03 | ativa, operacionalmente pausada antes de `BUS-CAND-010` |
-| Business Outcomes | 17 de 18 decisões; 0 submissões abertas |
-| COR | 10 `Under Validation`; 2 `Merged`; 6 `Rejected` |
-| CODR | 17 de 18 decisões humanas |
-| `BUS-CAND-010` | `Under Validation`; decisão não submetida |
-| Frente ativa | `UXA-005 — Wireframes de Baixa Fidelidade` |
-| Tela Hoje | wireframe móvel inicial criado |
-| Detalhe de oportunidade | wireframe móvel inicial criado |
-| Cadastro pela Organização | wireframe desktop inicial criado |
-| Protótipo navegável | não iniciado |
-| Outcomes canônicos | 0 |
-| Business Capabilities | não iniciadas |
-| Product Engineering | pausado antes do `W0-01`; execução 0% |
+| Elemento | Estado em linguagem clara | Referência técnica |
+|---|---|---|
+| Era | fase de conhecimento | GE-2 — Knowledge |
+| Marco | linguagem clara e identificadores técnicos estabelecidos | M7.19.3 |
+| Remediação | concluída | R1–R6 |
+| Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
+| Resultados Empresariais | 17 de 18 decisões; nenhuma submissão aberta | BA-STR-002 |
+| Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | COR 0.29.0 |
+| Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas | CODR 0.33.0 |
+| Capacidade de reinvestimento responsável | em validação; decisão não submetida | BUS-CAND-010 |
+| Frente ativa | linguagem clara aplicada aos wireframes e controles | UXA-009 |
+| Tela Hoje | wireframe móvel inicial criado | UXA-006 |
+| Detalhe de oportunidade | wireframe móvel inicial criado | UXA-007 |
+| Cadastro pela Organização | wireframe para computador criado | UXA-008 |
+| Protótipo navegável | não iniciado | — |
+| Resultados canônicos | nenhum criado | 0 |
+| Capacidades Empresariais | não iniciadas | — |
+| Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 
 ## 3. Portfólio por situação
 
 ### Concluído ou consolidado
 
-- Foundation Architecture congelada em A2-B3;
+- Arquitetura de Fundação congelada;
 - Guivos Journey publicado e funcionalmente concluído;
-- Guivos Economic Model documentariamente concluído;
-- COR, validação externa e COEM concluídos;
-- remediação R1–R5 e R6 concluídas;
-- `COD-001` a `COD-017` registrados;
-- Experience Architecture Discovery integrada por `UXA-000` a `UXA-004`.
+- Modelo Econômico da Guivos documentariamente concluído;
+- Registro de Candidatos a Resultados, validação externa e matriz de avaliação concluídos;
+- remediação do repositório concluída;
+- decisões humanas 1 a 17 registradas;
+- fundação da Arquitetura da Experiência integrada.
 
 ### Ativo
 
-- programa inicial de wireframes;
-- revisão da tela `Hoje`;
-- revisão do detalhe de oportunidade;
-- revisão do cadastro de oportunidade pela Organização;
+- Programa Inicial de Wireframes de Baixa Fidelidade (UXA-005);
+- revisão da Tela Hoje (UXA-006);
+- revisão do Detalhe de Oportunidade (UXA-007);
+- revisão do Cadastro de Oportunidade pela Organização (UXA-008);
+- Padrão de Linguagem Clara e Identificadores Técnicos (UXA-009);
 - definição dos estados alternativos prioritários.
 
 ### Pausado
 
-- preparação de `BUS-CAND-010`;
-- conclusão de Business Outcomes;
-- Product Engineering;
-- W0-01 a W0-08;
-- POCs, ambientes, integrações e produção.
+- preparação da decisão sobre Capacidade de reinvestimento responsável;
+- conclusão dos Resultados Empresariais;
+- Engenharia de Produto;
+- unidades de trabalho iniciais;
+- provas de conceito, ambientes, integrações e produção.
 
 ### Pendente
 
@@ -87,37 +89,44 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 - testes de compreensão e usabilidade;
 - décima oitava decisão humana;
 - reavaliação das formulações revisadas e combinadas;
-- AQS-O01, catálogos canônicos e matriz de sustentação;
-- Business Capabilities e fases posteriores.
+- padrão de qualidade arquitetural dos Resultados;
+- catálogos canônicos e matriz de sustentação;
+- Capacidades Empresariais e fases posteriores.
 
-## 4. Artefatos criados
+## 4. Artefatos em linguagem clara
 
-### UXA-005
+### Programa Inicial de Wireframes de Baixa Fidelidade — UXA-005
 
-Define método, convenções, viewports, relação entre telas e gates.
+Define método, convenções, dimensões de referência, relação entre telas e critérios de avanço.
 
-### UXA-006
+### Wireframe da Tela Hoje — UXA-006
 
-Propõe a tela `Hoje` com síntese, atenção principal, movimento atual, oportunidades, Coletivos e navegação global.
+Propõe síntese, atenção principal, Próximo Passo, oportunidades, Coletivos e navegação global.
 
-### UXA-007
+### Wireframe do Detalhe de Oportunidade — UXA-007
 
-Propõe detalhe de oportunidade com preço, custo total, relevância, disponibilidade, elegibilidade, fonte, relação comercial e ações.
+Propõe preço, custo total, validade do preço, relevância, disponibilidade, elegibilidade, fonte, relação comercial e ações.
 
-### UXA-008
+### Wireframe do Cadastro pela Organização — UXA-008
 
-Propõe o cadastro organizacional com onze etapas e detalha preço, condições, consistência, pré-visualização e salvamento.
+Propõe onze etapas e detalha preço, condições, consistência, pré-visualização e salvamento.
+
+### Padrão de Linguagem Clara e Identificadores Técnicos — UXA-009
+
+Determina nome completo antes do código, tradução de estados e explicação de termos técnicos e comerciais.
 
 ## 5. Decisões preservadas
 
 - recorrência nasce de utilidade material, não de estímulo compulsivo;
 - preço, condições, elegibilidade e relações comerciais permanecem transparentes;
+- validade do preço significa até quando o valor permanece vigente para novas adesões;
 - envio de oportunidade não equivale a ativação;
 - ativação não equivale a apresentação;
 - apresentação não equivale a recomendação definitiva;
 - ausência legítima permanece um estado válido;
-- wireframes não equivalem a design visual ou implementação.
+- wireframes não equivalem a design visual ou implementação;
+- identificadores técnicos não substituem nomes completos.
 
 ## 6. Próximo movimento
 
-Receber a revisão do Fundador sobre `UXA-005` a `UXA-008` e, somente depois, decidir entre reformulação, estados alternativos ou protótipo navegável de baixa fidelidade.
+Receber a revisão do Fundador sobre a Tela Hoje, o Detalhe de Oportunidade e o Cadastro pela Organização e, somente depois, decidir entre reformulação, estados alternativos ou protótipo navegável de baixa fidelidade.
