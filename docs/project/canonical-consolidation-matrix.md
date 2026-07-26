@@ -9,14 +9,16 @@ depends_on:
   - GKR-STATE-001
 related:
   - GKR-CANON-MATRIX-UXA-001
+  - GKR-CANON-MATRIX-COD-017
+  - GKR-R6-RESUMPTION-001
+  - BA-STR-002-COR-001
+  - BA-STR-002-CODR-001
+  - COD-017
   - UXA-000
   - UXA-001
   - UXA-002
   - UXA-003
   - UXA-004
-  - BA-STR-002-COR-001
-  - BA-STR-002-CODR-001
-  - COD-017
   - M7.19.1
 normative: false
 ---
@@ -51,13 +53,45 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Guivos Economic Model | Manter documentariamente concluído | `GEM-001` a `GEM-010`; validação real pendente |
 | remediação R1–R5 | Manter concluída | `GKR-R5-VALIDATION-001` com `PASS` |
 | R6 | Manter concluído | retomada governada registrada |
-| A2-R03 | Pausar operacionalmente | após `COD-017` e antes de `BUS-CAND-010` |
+| A2-R03 | Manter ativa e pausar operacionalmente | após `COD-017` e antes de `BUS-CAND-010` |
 | BA-STR-002 | Manter ativo e pausado | 17 de 18 decisões; nenhuma submissão aberta |
 | validação externa e COEM | Manter concluídas | 18/18 candidatos e 6/6 clusters |
-| `COD-001` a `COD-017` | Manter | decisões humanas registradas e rastreáveis |
+| `COD-001` | Manter | `Reformulate` aceito para `ECO-CAND-001` |
+| `COD-002` | Manter | `Reformulate` aceito para `ECO-CAND-003` |
+| `COD-003` | Manter | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
+| `COD-004` | Manter | `Reformulate` aceito para `ECO-CAND-002` |
+| `COD-005` | Manter | `Reject` aceito para `ECO-CAND-004` |
+| `COD-006` | Manter | `Reformulate` aceito para `ECO-CAND-006` |
+| `COD-007` | Manter | `Reformulate` aceito para `ECO-CAND-007` |
+| `COD-008` | Manter | `Reformulate` aceito para `ECO-CAND-008` |
+| `COD-009` | Manter | `Reject` aceito para `BUS-CAND-001` |
+| `COD-010` | Manter | `Merge into BUS-CAND-003` aceito para `BUS-CAND-002` |
+| `COD-011` | Manter | `Reformulate` aceito para `BUS-CAND-003` |
+| `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
+| `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
+| `COD-014` | Manter | `Reject` aceito para `BUS-CAND-006` |
+| `COD-015` | Manter | `Reject` aceito para `BUS-CAND-007` |
+| `COD-016` | Manter | `Reject` aceito para `BUS-CAND-008` |
+| `COD-017` | Manter | `Reject` aceito para `BUS-CAND-009` |
 | CODR | Manter ativo | 17 de 18 decisões; 0 submissões abertas |
 | COR | Refinar | 10 `Under Validation`; 2 `Merged`; 6 `Rejected` |
-| `BUS-CAND-010` | Manter pendente | `Under Validation`; decisão e fusão não antecipadas |
+| `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
+| `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
+| `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
+| `ECO-CAND-005` | Unificar em `ECO-CAND-003` | `Merged`; formulação e evidências preservadas |
+| `ECO-CAND-006` | Refinar e manter `Under Validation` | formulação de saúde relacional registrada; nova COEM pendente |
+| `ECO-CAND-007` | Refinar e manter `Under Validation` | formulação de participação inclusiva, digna e efetiva registrada; nova COEM pendente |
+| `ECO-CAND-008` | Refinar e manter `Under Validation` | formulação de participação protegida, justa e contestável registrada; nova COEM pendente |
+| `BUS-CAND-001` | Remover do catálogo de Business Outcomes | `Rejected`; conteúdo preservado como autoridade constitucional e obrigação de governança |
+| `BUS-CAND-002` | Unificar em `BUS-CAND-003` | `Merged`; formulação, evidências e rastreabilidade preservadas |
+| `BUS-CAND-003` | Refinar e manter `Under Validation` | `COD-011`; formulação revisada registrada; nova COEM pendente |
+| `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
+| `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
+| `BUS-CAND-006` | Remover do catálogo de Business Outcomes | `COD-014`; crescimento rejeitado como Outcome permanente; expansão responsável preservada como trajetória opcional |
+| `BUS-CAND-007` | Remover do catálogo de Business Outcomes | `COD-015`; aprendizado rejeitado como Outcome permanente; aprendizagem e adaptação preservadas como capacidades sustentadoras |
+| `BUS-CAND-008` | Remover do catálogo de Business Outcomes | `COD-016`; saúde das relações de parceria rejeitada como Outcome permanente; governança de parceiros e gestão de alianças preservadas |
+| `BUS-CAND-009` | Remover do catálogo de Business Outcomes | `COD-017`; coerência global com adequação contextual rejeitada como Outcome permanente; princípio arquitetural e critério governado preservados |
+| `BUS-CAND-010` | Manter pendente | `Under Validation`; decisão individual e eventual fusão não antecipadas |
 | `BA-STR-002-COD-SUB-018` | Pendente | não criado |
 | `COD-018` | Pendente | não criado |
 | Experience Architecture | Discovery | `UXA-000` a `UXA-004` criados para validação |
@@ -79,30 +113,30 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Decisões de Outcomes preservadas
+## 4. Resultado de COD-017 preservado
 
-| Candidato | Decisão vigente |
-|---|---|
-| ECO-CAND-001 | `Reformulate` aceito; nova COEM pendente |
-| ECO-CAND-002 | `Reformulate` aceito; nova COEM pendente |
-| ECO-CAND-003 | `Reformulate` aceito; formulação combinada pendente de nova COEM |
-| ECO-CAND-004 | `Rejected`; experiência preservada na Jornada |
-| ECO-CAND-005 | `Merged into ECO-CAND-003` |
-| ECO-CAND-006 | `Reformulate` aceito; nova COEM pendente |
-| ECO-CAND-007 | `Reformulate` aceito; nova COEM pendente |
-| ECO-CAND-008 | `Reformulate` aceito; nova COEM pendente |
-| BUS-CAND-001 | `Rejected`; autoridade constitucional preservada |
-| BUS-CAND-002 | `Merged into BUS-CAND-003` |
-| BUS-CAND-003 | `Reformulate` aceito; nova COEM pendente |
-| BUS-CAND-004 | `Reformulate` aceito; nova COEM pendente |
-| BUS-CAND-005 | `Reformulate` aceito; nova COEM pendente |
-| BUS-CAND-006 | `Rejected`; expansão responsável preservada |
-| BUS-CAND-007 | `Rejected`; aprendizagem e adaptação preservadas como capacidades |
-| BUS-CAND-008 | `Rejected`; governança de parceiros preservada |
-| BUS-CAND-009 | `Rejected`; coerência e adequação preservadas como princípio |
-| BUS-CAND-010 | `Under Validation`; decisão pendente |
+A alternativa `A — Aceitar Reject` permanece consolidada para `BUS-CAND-009`.
 
-## 5. Resultado deste incremento
+### Formulação originalmente avaliada
+
+> A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
+
+A decisão:
+
+- preserva formulação original, evidências e rastreabilidade;
+- altera `BUS-CAND-009` para `Rejected`;
+- retira coerência global com adequação contextual do futuro catálogo de Business Outcomes;
+- preserva o conteúdo como princípio arquitetural e critério governado;
+- preserva critérios de internacionalização, localização e desenho de capacidades;
+- preserva decisões contextuais de padronização, adaptação, integração e autonomia local;
+- bloqueia tradução, presença local ou variação nominal de produto como prova suficiente;
+- não impõe padronização global;
+- não proíbe adaptação local;
+- não exige internacionalização;
+- não cria código canônico;
+- não inicia AQS-O01, Business Capabilities ou Product Engineering.
+
+## 5. Resultado de UXA-001
 
 O incremento:
 
