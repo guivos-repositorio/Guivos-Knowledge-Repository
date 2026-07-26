@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.3.0
+version: 2.4.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-009
   - GKR-CANON-MATRIX-UXA-005
   - GKR-CANON-MATRIX-UXA-001
   - GKR-CANON-MATRIX-COD-017
@@ -24,7 +25,8 @@ related:
   - UXA-006
   - UXA-007
   - UXA-008
-  - M7.19.2
+  - UXA-009
+  - M7.19.3
 normative: false
 ---
 
@@ -32,7 +34,7 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz central registra decisões consolidadas de maior alcance e aponta para autoridades e addenda que preservam o detalhamento.
+Esta matriz registra decisões consolidadas de maior alcance e aponta para autoridades e documentos complementares que preservam o detalhamento.
 
 ## 2. Vocabulário de decisão
 
@@ -43,117 +45,121 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Unificar | elementos redundantes são consolidados sob uma autoridade |
 | Remover do catálogo | candidato não integra o catálogo futuro, mas permanece rastreável |
 | Pausar | trabalho permanece válido, sem execução adicional até nova autorização |
-| Discovery | hipótese e arquitetura inicial em desenvolvimento, sem promoção a implementação |
-| Wireframe | hipótese estrutural visual para validação, sem design ou implementação |
-| Historical only | elemento permanece como evidência histórica |
+| Descoberta (`Discovery`) | hipótese e arquitetura inicial em desenvolvimento, sem implementação |
+| Wireframe | hipótese visual estrutural para validação, sem design final ou implementação |
+| Somente histórico (`Historical only`) | elemento permanece como evidência histórica |
 | Pendente | depende de evidência ou autoridade competente |
 
 ## 3. Decisões estruturais vigentes
 
-| Elemento | Decisão | Autoridade e situação |
+| Elemento em linguagem clara | Decisão | Referência técnica e situação |
 |---|---|---|
-| GKR como fonte oficial | Manter | ADR-001 e governança vigente |
-| Foundation Architecture | Manter congelada | baseline A2-B3 |
-| Guivos Journey | Manter | `PAS-001 1.0.0 active`; nove capacidades concluídas |
-| Product Engineering | Manter pausado | antes do W0-01; execução 0% |
-| Guivos Economic Model | Manter documentariamente concluído | `GEM-001` a `GEM-010`; validação real pendente |
-| remediação R1–R5 | Manter concluída | `GKR-R5-VALIDATION-001` com `PASS` |
-| R6 | Manter concluído | retomada governada registrada |
-| A2-R03 | Manter ativa e pausar operacionalmente | após `COD-017` e antes de `BUS-CAND-010` |
-| BA-STR-002 | Manter ativo e pausado | 17 de 18 decisões; nenhuma submissão aberta |
-| validação externa e COEM | Manter concluídas | 18/18 candidatos e 6/6 clusters |
-| `COD-001` | Manter | `Reformulate` aceito para `ECO-CAND-001` |
-| `COD-002` | Manter | `Reformulate` aceito para `ECO-CAND-003` |
-| `COD-003` | Manter | `Merge into ECO-CAND-003` aceito para `ECO-CAND-005` |
-| `COD-004` | Manter | `Reformulate` aceito para `ECO-CAND-002` |
-| `COD-005` | Manter | `Reject` aceito para `ECO-CAND-004` |
-| `COD-006` | Manter | `Reformulate` aceito para `ECO-CAND-006` |
-| `COD-007` | Manter | `Reformulate` aceito para `ECO-CAND-007` |
-| `COD-008` | Manter | `Reformulate` aceito para `ECO-CAND-008` |
-| `COD-009` | Manter | `Reject` aceito para `BUS-CAND-001` |
-| `COD-010` | Manter | `Merge into BUS-CAND-003` aceito para `BUS-CAND-002` |
-| `COD-011` | Manter | `Reformulate` aceito para `BUS-CAND-003` |
-| `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
-| `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
-| `COD-014` | Manter | `Reject` aceito para `BUS-CAND-006` |
-| `COD-015` | Manter | `Reject` aceito para `BUS-CAND-007` |
-| `COD-016` | Manter | `Reject` aceito para `BUS-CAND-008` |
-| `COD-017` | Manter | `Reject` aceito para `BUS-CAND-009` |
-| CODR | Manter ativo | 17 de 18 decisões; 0 submissões abertas |
-| COR | Refinar | 10 `Under Validation`; 2 `Merged`; 6 `Rejected` |
-| `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
-| `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
-| `ECO-CAND-004` | Remover do catálogo de Outcomes | `Rejected`; experiência preservada na Jornada e como evidência |
-| `ECO-CAND-005` | Unificar em `ECO-CAND-003` | `Merged`; formulação e evidências preservadas |
-| `ECO-CAND-006` | Refinar e manter `Under Validation` | formulação de saúde relacional registrada; nova COEM pendente |
-| `ECO-CAND-007` | Refinar e manter `Under Validation` | formulação de participação inclusiva, digna e efetiva registrada; nova COEM pendente |
-| `ECO-CAND-008` | Refinar e manter `Under Validation` | formulação de participação protegida, justa e contestável registrada; nova COEM pendente |
-| `BUS-CAND-001` | Remover do catálogo de Business Outcomes | `Rejected`; conteúdo preservado como autoridade constitucional e obrigação de governança |
-| `BUS-CAND-002` | Unificar em `BUS-CAND-003` | `Merged`; formulação, evidências e rastreabilidade preservadas |
-| `BUS-CAND-003` | Refinar e manter `Under Validation` | `COD-011`; formulação revisada registrada; nova COEM pendente |
-| `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
-| `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
-| `BUS-CAND-006` | Remover do catálogo de Business Outcomes | `COD-014`; crescimento rejeitado como Outcome permanente; expansão responsável preservada como trajetória opcional |
-| `BUS-CAND-007` | Remover do catálogo de Business Outcomes | `COD-015`; aprendizado rejeitado como Outcome permanente; aprendizagem e adaptação preservadas como capacidades sustentadoras |
-| `BUS-CAND-008` | Remover do catálogo de Business Outcomes | `COD-016`; saúde das relações de parceria rejeitada como Outcome permanente; governança de parceiros e gestão de alianças preservadas |
-| `BUS-CAND-009` | Remover do catálogo de Business Outcomes | `COD-017`; coerência global com adequação contextual rejeitada como Outcome permanente; princípio arquitetural e critério governado preservados |
-| `BUS-CAND-010` | Manter pendente | `Under Validation`; decisão individual e eventual fusão não antecipadas |
-| `BA-STR-002-COD-SUB-018` | Pendente | não criado |
-| `COD-018` | Pendente | não criado |
-| Experience Architecture | Discovery | `UXA-000` a `UXA-004` integrados |
-| programa de wireframes | Wireframe | `UXA-005` criado; método e gates registrados |
-| tela `Hoje` | Wireframe | `UXA-006`; estrutura móvel inicial criada |
-| detalhe de oportunidade | Wireframe | `UXA-007`; preço, relevância, elegibilidade e transparência estruturados |
-| cadastro pela Organização | Wireframe | `UXA-008`; onze etapas e preço detalhado em desktop |
-| navegação pessoal | Discovery | Hoje, Jornada, Explorar, Mapa e Eu |
-| experiência da Organização | Discovery | visão geral, oportunidades, programas, coletivos, resultados e gestão |
-| experiência do Coletivo | Discovery | início, atividades, pessoas, mapa, recursos e gestão |
-| controle de relevância | Refinar em Discovery | explícito, explicável, ajustável e contestável |
-| fluxo de oportunidades | Refinar em Discovery | cadastro, avaliação, ativação, apresentação e encerramento separados |
-| preços e condições | Refinar em Wireframe | preço principal, custo total, taxas, cancelamento e relação comercial visíveis |
-| Mapa | Discovery | oportunidades, Organizações, Coletivos e atividades; localização de participantes bloqueada |
-| protótipo navegável | Pendente | não iniciado |
-| design visual | Pendente | não iniciado |
-| testes de usabilidade | Pendente | não iniciados |
-| Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
-| Business Capabilities | Pendente | posteriores ao BA-STR-002 |
-| produtos especializados | Preservar para rebaseline | ordem histórica não autoriza início |
-| Commercial Model e Go-to-Market | Pendente | posteriores às dependências arquiteturais |
-| Market Validation | Manter em paralelo | execução própria ainda pendente |
-| validador mecânico | Manter | workflow permanente do GKR |
+| Repositório de Conhecimento da Guivos como fonte oficial | Manter | ADR-001 e governança vigente |
+| Arquitetura de Fundação | Manter congelada | baseline A2-B3 |
+| Guivos Journey | Manter | PAS-001 1.0.0 ativo; nove capacidades concluídas |
+| Engenharia de Produto | Manter pausada | antes de W0-01; execução 0% |
+| Modelo Econômico da Guivos | Manter documentariamente concluído | GEM-001 a GEM-010; validação real pendente |
+| Remediação do repositório | Manter concluída | R1–R6 concluídos |
+| Revisão da Arquitetura de Negócios | Manter ativa e pausar operacionalmente | após COD-017 e antes de BUS-CAND-010 |
+| Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões; nenhuma submissão aberta |
+| Validação externa e matriz de avaliação | Manter concluídas | 18 de 18 candidatos e 6 de 6 grupos avaliados |
+| Decisões humanas 1 a 17 | Manter | COD-001 a COD-017 preservados |
+| Registro de Decisões sobre Candidatos a Resultados | Manter ativo | CODR 0.33.0; 17 de 18 decisões |
+| Registro de Candidatos a Resultados | Refinar | COR 0.29.0; 10 em validação, 2 incorporados e 6 rejeitados |
+| Capacidade de reinvestimento responsável | Manter pendente | BUS-CAND-010 em validação; decisão não antecipada |
+| Décima oitava submissão | Pendente | BA-STR-002-COD-SUB-018 não criado |
+| Décima oitava decisão | Pendente | COD-018 não criado |
+| Arquitetura da Experiência da Guivos | Descoberta | UXA-000 a UXA-004 integrados |
+| Programa Inicial de Wireframes de Baixa Fidelidade | Wireframe | UXA-005 criado; método e critérios registrados |
+| Tela Hoje | Wireframe | UXA-006; estrutura móvel inicial criada |
+| Detalhe de oportunidade | Wireframe | UXA-007; preço, relevância, elegibilidade e transparência estruturados |
+| Cadastro de oportunidade pela Organização | Wireframe | UXA-008; onze etapas e preço detalhado |
+| Padrão de Linguagem Clara e Identificadores Técnicos | Refinar | UXA-009; nome completo antes do código e estados traduzidos |
+| Validade do preço | Refinar | período até o qual o valor permanece vigente para novas adesões |
+| Navegação pessoal | Descoberta | Hoje, Jornada, Explorar, Mapa e Eu |
+| Experiência da Organização | Descoberta | visão geral, oportunidades, programas, coletivos, resultados e gestão |
+| Experiência do Coletivo | Descoberta | início, atividades, pessoas, mapa, recursos e gestão |
+| Controle de relevância | Refinar em descoberta | explícito, explicável, ajustável e contestável |
+| Fluxo de oportunidades | Refinar em descoberta | cadastro, avaliação, ativação, apresentação e encerramento separados |
+| Preços e condições | Refinar em wireframe | preço principal, custo total, taxas, validade, cancelamento e relação comercial visíveis |
+| Mapa | Descoberta | oportunidades, Organizações, Coletivos e atividades; localização de participantes bloqueada |
+| Protótipo navegável | Pendente | não iniciado |
+| Design visual | Pendente | não iniciado |
+| Testes de usabilidade | Pendente | não iniciados |
+| Resultados canônicos | Pendente | nenhum código ou catálogo canônico |
+| Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
+| Produtos especializados | Preservar para replanejamento | ordem histórica não autoriza início |
+| Modelo Comercial e Entrada no Mercado | Pendente | posteriores às dependências arquiteturais |
+| Validação de Mercado | Manter em paralelo | execução própria ainda pendente |
+| Validador mecânico | Manter | workflow permanente do repositório |
 
-## 4. Resultado de COD-017 preservado
+## 4. Decisões sobre candidatos preservadas
 
-A alternativa `A — Aceitar Reject` permanece consolidada para `BUS-CAND-009`.
+| Candidato | Nome ou natureza | Decisão vigente |
+|---|---|---|
+| ECO-CAND-001 | candidato de resultado do ecossistema | Reformular aceito; nova avaliação pendente |
+| ECO-CAND-002 | candidato de resultado do ecossistema | Reformular aceito; nova avaliação pendente |
+| ECO-CAND-003 | candidato combinado do ecossistema | formulação combinada pendente de nova avaliação |
+| ECO-CAND-004 | experiência como resultado | Rejeitado; conteúdo preservado na Jornada |
+| ECO-CAND-005 | candidato incorporado | Incorporado em ECO-CAND-003 |
+| ECO-CAND-006 | saúde relacional | Reformular aceito; nova avaliação pendente |
+| ECO-CAND-007 | participação inclusiva, digna e efetiva | Reformular aceito; nova avaliação pendente |
+| ECO-CAND-008 | participação protegida, justa e contestável | Reformular aceito; nova avaliação pendente |
+| BUS-CAND-001 | autoridade constitucional | Rejeitado como Resultado Empresarial; obrigação de governança preservada |
+| BUS-CAND-002 | candidato empresarial incorporado | Incorporado em BUS-CAND-003 |
+| BUS-CAND-003 | valor sustentável | Reformular aceito; nova avaliação pendente |
+| BUS-CAND-004 | legitimidade institucional sustentada | Reformular aceito |
+| BUS-CAND-005 | continuidade econômica sustentável | Reformular aceito |
+| BUS-CAND-006 | crescimento responsável e resiliente | Rejeitado como Resultado permanente; expansão responsável preservada |
+| BUS-CAND-007 | aprendizado e adaptação institucionais | Rejeitado como Resultado permanente; capacidades preservadas |
+| BUS-CAND-008 | saúde das relações de parceria | Rejeitado como Resultado permanente; governança de parceiros preservada |
+| BUS-CAND-009 | coerência global com adequação contextual | Rejeitado como Resultado permanente; princípio arquitetural preservado |
+| BUS-CAND-010 | capacidade de reinvestimento responsável | Em validação; decisão pendente |
 
-A decisão preserva formulação, evidências, rastreabilidade, princípios de coerência e adequação, sem criar código canônico ou iniciar fases posteriores.
+## 5. Resultado da decisão humana 17 preservado
 
-## 5. Resultado de UXA-001 preservado
+A rejeição de **Coerência global com adequação contextual** como Resultado Empresarial permanece consolidada pela decisão número 17 (COD-017).
 
-O incremento anterior:
+A formulação, as evidências, a rastreabilidade e o princípio arquitetural foram preservados. Nenhum código canônico ou fase posterior foi iniciado.
 
-- integrou a pausa governada antes de `BUS-CAND-010`;
-- criou a frente de Experience Architecture em Discovery;
-- preservou as capacidades e contratos normativos do `PAS-001`;
-- propôs a tela `Hoje`, navegação, jornadas, oportunidades, Organizações, Coletivos e Mapa;
-- não iniciou Product Engineering.
+## 6. Resultado da fundação da Arquitetura da Experiência preservado
 
-## 6. Resultado de UXA-005
+A fundação:
+
+- integrou a pausa antes da capacidade de reinvestimento responsável;
+- criou a Arquitetura da Experiência em descoberta;
+- preservou os contratos do Guivos Journey;
+- propôs Tela Hoje, navegação, jornadas, oportunidades, Organizações, Coletivos e Mapa;
+- não iniciou Engenharia de Produto.
+
+## 7. Resultado do programa de wireframes preservado
+
+O programa:
+
+- materializou três superfícies prioritárias;
+- registrou critérios de aceite e perguntas de validação;
+- utilizou valores monetários ilustrativos no padrão brasileiro;
+- preservou preço, custo total, elegibilidade e relação comercial como informações materiais;
+- manteve envio, ativação, apresentação e contratação como estados distintos;
+- não iniciou protótipo, design visual, testes ou Engenharia de Produto.
+
+## 8. Resultado do padrão de linguagem clara
 
 O incremento atual:
 
-- cria um programa explícito de wireframes;
-- materializa três superfícies prioritárias;
-- registra critérios de aceite e perguntas de validação;
-- utiliza valores ilustrativos em locale pt-BR;
-- preserva preço, custo total, elegibilidade e relação comercial como informações materiais;
-- mantém envio, ativação, apresentação e contratação como estados distintos;
-- não inicia protótipo, design visual, testes ou Product Engineering.
+- cria o Padrão de Linguagem Clara e Identificadores Técnicos (UXA-009);
+- determina nome completo antes do código;
+- traduz estados técnicos para português;
+- classifica códigos como referências secundárias;
+- explica o significado de validade do preço;
+- normaliza os documentos ativos da Arquitetura da Experiência;
+- preserva snapshots históricos sem reescrita editorial;
+- não altera decisões arquiteturais nem inicia protótipo.
 
-## 7. Addendum vigente
+## 9. Documento complementar vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 2.3.0 — UXA-005 Initial Low-Fidelity Wireframes`.
+O documento complementar vigente é `Matriz de Consolidação Canônica 2.4.0 — Linguagem Clara e Identificadores Técnicos`.
 
-## 8. Próximo ato
+## 10. Próximo ato
 
-Receber a validação do Fundador sobre `UXA-005` a `UXA-008` e decidir entre reformulação, estados alternativos ou autorização separada de protótipo navegável de baixa fidelidade.
+Receber a validação do Fundador sobre os três wireframes e decidir entre reformulação, estados alternativos ou autorização separada de protótipo navegável de baixa fidelidade.
