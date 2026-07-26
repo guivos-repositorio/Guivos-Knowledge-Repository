@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.85.0
+version: 11.86.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.85.0
+  - ROADMAP-11.86.0
   - UXA-000
   - UXA-001
   - UXA-002
@@ -19,9 +19,10 @@ related:
   - UXA-007
   - UXA-008
   - UXA-009
+  - UXA-010
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.19.3
+  - M7.19.4
 normative: false
 ---
 
@@ -36,17 +37,17 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | linguagem clara e identificadores técnicos estabelecidos | M7.19.3 |
+| Marco | primeira validação funcional da Tela Hoje concluída | M7.19.4 |
 | Remediação | concluída | R1–R6 |
 | Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
 | Resultados Empresariais | 17 de 18 decisões; nenhuma submissão aberta | BA-STR-002 |
 | Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | COR 0.29.0 |
 | Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas | CODR 0.33.0 |
 | Capacidade de reinvestimento responsável | em validação; decisão não submetida | BUS-CAND-010 |
-| Frente ativa | linguagem clara aplicada aos wireframes e controles | UXA-009 |
-| Tela Hoje | wireframe móvel inicial criado | UXA-006 |
-| Detalhe de oportunidade | wireframe móvel inicial criado | UXA-007 |
-| Cadastro pela Organização | wireframe para computador criado | UXA-008 |
+| Frente ativa | reformulação funcional da Tela Hoje | UXA-010 |
+| Tela Hoje | wireframe reformulado após validação humana | UXA-006 0.3.0 |
+| Detalhe de oportunidade | wireframe inicial aguardando validação | UXA-007 |
+| Cadastro pela Organização | wireframe inicial aguardando validação | UXA-008 |
 | Protótipo navegável | não iniciado | — |
 | Resultados canônicos | nenhum criado | 0 |
 | Capacidades Empresariais | não iniciadas | — |
@@ -62,16 +63,17 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 - Registro de Candidatos a Resultados, validação externa e matriz de avaliação concluídos;
 - remediação do repositório concluída;
 - decisões humanas 1 a 17 registradas;
-- fundação da Arquitetura da Experiência integrada.
+- fundação da Arquitetura da Experiência integrada;
+- padrão de linguagem clara estabelecido;
+- primeira validação funcional da Tela Hoje registrada.
 
 ### Ativo
 
-- Programa Inicial de Wireframes de Baixa Fidelidade (UXA-005);
-- revisão da Tela Hoje (UXA-006);
-- revisão do Detalhe de Oportunidade (UXA-007);
-- revisão do Cadastro de Oportunidade pela Organização (UXA-008);
-- Padrão de Linguagem Clara e Identificadores Técnicos (UXA-009);
-- definição dos estados alternativos prioritários.
+- Programa Inicial de Wireframes de Baixa Fidelidade;
+- Tela Hoje reformulada em baixa fidelidade;
+- revisão do Detalhe de Oportunidade;
+- revisão do Cadastro de Oportunidade pela Organização;
+- definição futura dos estados alternativos prioritários.
 
 ### Pausado
 
@@ -83,8 +85,9 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 
 ### Pendente
 
-- validação dos três wireframes pelo Fundador;
-- reformulação ou aprovação estrutural;
+- validação funcional do Detalhe de Oportunidade;
+- validação funcional do Cadastro pela Organização;
+- seleção do primeiro estado alternativo da Tela Hoje;
 - protótipo navegável de baixa fidelidade;
 - testes de compreensão e usabilidade;
 - décima oitava decisão humana;
@@ -93,27 +96,18 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 - catálogos canônicos e matriz de sustentação;
 - Capacidades Empresariais e fases posteriores.
 
-## 4. Artefatos em linguagem clara
+## 4. Resultado da Tela Hoje
 
-### Programa Inicial de Wireframes de Baixa Fidelidade — UXA-005
+A reformulação funcional passou a adotar:
 
-Define método, convenções, dimensões de referência, relação entre telas e critérios de avanço.
-
-### Wireframe da Tela Hoje — UXA-006
-
-Propõe síntese, atenção principal, Próximo Passo, oportunidades, Coletivos e navegação global.
-
-### Wireframe do Detalhe de Oportunidade — UXA-007
-
-Propõe preço, custo total, validade do preço, relevância, disponibilidade, elegibilidade, fonte, relação comercial e ações.
-
-### Wireframe do Cadastro pela Organização — UXA-008
-
-Propõe onze etapas e detalha preço, condições, consistência, pré-visualização e salvamento.
-
-### Padrão de Linguagem Clara e Identificadores Técnicos — UXA-009
-
-Determina nome completo antes do código, tradução de estados e explicação de termos técnicos e comerciais.
+- `Agindo como` para explicitar o contexto;
+- síntese condicional;
+- uma atenção principal;
+- Central de Intervenções para itens adicionais;
+- movimento atual antes das oportunidades;
+- oportunidades empilhadas e em largura integral;
+- Coletivos e atividades somente com utilidade temporal;
+- navegação Hoje, Jornada, Explorar, Mapa e Eu.
 
 ## 5. Decisões preservadas
 
@@ -125,8 +119,11 @@ Determina nome completo antes do código, tradução de estados e explicação d
 - apresentação não equivale a recomendação definitiva;
 - ausência legítima permanece um estado válido;
 - wireframes não equivalem a design visual ou implementação;
-- identificadores técnicos não substituem nomes completos.
+- identificadores técnicos não substituem nomes completos;
+- nenhum bloco deverá ser preenchido sem relevância suficiente.
 
 ## 6. Próximo movimento
 
-Receber a revisão do Fundador sobre a Tela Hoje, o Detalhe de Oportunidade e o Cadastro pela Organização e, somente depois, decidir entre reformulação, estados alternativos ou protótipo navegável de baixa fidelidade.
+Escolher separadamente entre validar o Detalhe de Oportunidade, validar o Cadastro pela Organização ou criar um estado alternativo selecionado da Tela Hoje.
+
+Nenhum protótipo, teste, design visual ou desenvolvimento será iniciado automaticamente.
