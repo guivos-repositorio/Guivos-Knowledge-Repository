@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -19,6 +19,7 @@ related:
   - UXA-007
   - UXA-008
   - UXA-009
+  - UXA-010
 normative: false
 ---
 
@@ -63,10 +64,11 @@ Esta frente não:
 | [Mapa Inicial de Jornadas e Telas](uxa-003-journeys-and-screen-map.md) | UXA-003 | inventário de superfícies para Pessoa, Organização e Coletivo |
 | [Oportunidades, Organizações, Coletivos e Mapa](uxa-004-opportunities-organizations-collectives-map.md) | UXA-004 | cadastro, descoberta, relevância, preço e localização |
 | [Programa Inicial de Wireframes de Baixa Fidelidade](uxa-005-low-fidelity-wireframes.md) | UXA-005 | método, convenções, relação entre artefatos e critérios de avanço |
-| [Wireframe de Baixa Fidelidade da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | estrutura móvel da entrada diária pessoal |
+| [Wireframe de Baixa Fidelidade da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | estrutura móvel reformulada da entrada diária pessoal |
 | [Wireframe de Baixa Fidelidade do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | preço, relevância, elegibilidade, fonte e ação |
 | [Wireframe de Baixa Fidelidade do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | fluxo institucional e etapa de preço e condições |
 | [Padrão de Linguagem Clara e Identificadores Técnicos](uxa-009-plain-language-and-technical-identifiers.md) | UXA-009 | nomes completos, tradução de estados e uso secundário de códigos |
+| [Validação Funcional e Reformulação da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana, critérios e consequências da primeira reformulação funcional |
 
 ## 4. Estado atual
 
@@ -75,38 +77,58 @@ Esta frente não:
 | Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-004 |
 | Resultados Empresariais (Business Outcomes) | pausados antes da decisão sobre capacidade de reinvestimento responsável | BUS-CAND-010 |
 | Engenharia de Produto (Product Engineering) | pausada antes da primeira unidade de trabalho | W0-01 |
-| Wireframes de baixa fidelidade | três superfícies iniciais criadas e em revisão | UXA-005 a UXA-008 |
+| Tela Hoje | primeira validação funcional concluída e wireframe reformulado | UXA-006 e UXA-010 |
+| Detalhe de oportunidade | wireframe inicial aguardando validação funcional | UXA-007 |
+| Cadastro de oportunidade pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
-| Linguagem clara | padrão criado para aplicação imediata | UXA-009 |
+| Linguagem clara | padrão aplicado aos documentos ativos | UXA-009 |
 
-## 5. Wireframes iniciais
+## 5. Resultado da reformulação da Tela Hoje
+
+A Tela Hoje preserva a ordem funcional:
+
+```text
+contexto de atuação
+→ síntese condicional
+→ atenção principal
+→ movimento atual
+→ oportunidades para considerar
+→ Coletivos e atividades, quando materialmente relevantes
+→ navegação global
+```
+
+Foram aplicadas as seguintes decisões:
+
+- seletor com `Agindo como`;
+- síntese somente quando acrescentar compreensão;
+- um único item principal de atenção;
+- Próximo Passo antes das oportunidades;
+- até dois cartões de oportunidade em largura integral;
+- Coletivos e atividades somente com utilidade temporal;
+- navegação Hoje, Jornada, Explorar, Mapa e Eu preservada.
+
+## 6. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
-| Tela Hoje | aplicativo móvel | wireframe inicial criado |
+| Tela Hoje | aplicativo móvel | reformulada após primeira validação funcional |
 | Detalhe de oportunidade | aplicativo móvel | wireframe inicial criado |
 | Cadastro de oportunidade pela Organização | web para computador | wireframe inicial criado |
 
 Os artefatos são hipóteses estruturais. Eles não definem design visual, componentes técnicos ou comportamento implementado.
 
-## 6. Regra de comunicação
+## 7. Regra de comunicação
 
-O nome completo deverá aparecer antes do identificador técnico. Exemplo:
+O nome completo deverá aparecer antes do identificador técnico. Identificadores não deverão aparecer sozinhos em respostas, títulos executivos ou explicações dirigidas ao Fundador.
 
-> Wireframe de Baixa Fidelidade da Tela Hoje (identificador UXA-006).
+## 8. Próximo ponto de decisão
 
-Identificadores não deverão aparecer sozinhos em respostas, títulos executivos ou explicações dirigidas ao Fundador.
+Decidir separadamente entre:
 
-## 7. Próximo ponto de decisão
+1. validar funcionalmente o Detalhe de Oportunidade;
+2. validar funcionalmente o Cadastro de Oportunidade pela Organização;
+3. selecionar um estado alternativo da Tela Hoje para novo wireframe.
 
-Validar:
-
-1. hierarquia da Tela Hoje;
-2. posição de preço, relevância e elegibilidade no detalhe da oportunidade;
-3. sequência e densidade do cadastro pela Organização;
-4. significado e apresentação da validade do preço;
-5. estados alternativos prioritários;
-6. aplicação do padrão de linguagem clara;
-7. autorização futura para reformulação ou protótipo navegável de baixa fidelidade.
+Protótipo navegável, design visual, testes e desenvolvimento permanecem não iniciados.
