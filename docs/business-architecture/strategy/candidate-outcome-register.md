@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.26.0
+version: 0.27.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -32,8 +32,9 @@ related:
   - COD-012
   - COD-013
   - COD-014
+  - COD-015
   - GEM-CLOSURE-REVIEW-001
-  - M7.16
+  - M7.17
 normative: false
 ---
 
@@ -54,12 +55,12 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 13
+Under Validation: 12
 Merged: 2
-Rejected: 3
+Rejected: 4
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 14 of 18
+Human decisions: 15 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -266,12 +267,15 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor. |
+| Definição original preservada | A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor. |
 | Origem | GEB-P01-F05; GEB-P01-F06; BA-STR-001; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Under Validation |
-| Observações | Coleta de dados, analytics e IA são meios e não definem o candidato. |
-| Questão de validação | Aprendizado institucional é Outcome empresarial ou capacidade de negócio? |
+| Status | Rejected |
+| Decisão | `COD-015 — Aceitar Reject` |
+| Destino arquitetural preservado | aprendizado institucional como capacidade sustentadora multinível; sensing, interpretação, absorção, memória, contestação, renovação e adaptação como dimensões governadas |
+| Evidência insuficiente | coleta de dados, analytics, IA, reuniões ou retrospectivas não comprovam aprendizagem institucional |
+| Observações | A rejeição não reduz a importância de aprender e não remove aprendizagem ou adaptação da arquitetura. |
+| Questão de validação | Resolvida quanto à candidatura autônoma. |
 
 ### BUS-CAND-008 — Saúde das relações de parceria
 
@@ -316,14 +320,14 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | formulações revisadas exigem nova COEM |
 | propósito | BUS-CAND-001 | rejeitado como Outcome por `COD-009`; autoridade constitucional preservada |
 | valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 e BUS-CAND-005 reformulados; BUS-CAND-010 pendente de decisão individual |
-| adaptação | BUS-CAND-002, BUS-CAND-007 e BUS-CAND-009 | BUS-CAND-002 fundido em BUS-CAND-003; demais pendentes |
+| adaptação | BUS-CAND-002, BUS-CAND-007 e BUS-CAND-009 | BUS-CAND-002 fundido em BUS-CAND-003; BUS-CAND-007 rejeitado como Outcome e preservado como capacidade; BUS-CAND-009 pendente |
 | resiliência | BUS-CAND-005 e BUS-CAND-006 | BUS-CAND-005 preservado como candidato reformulado; BUS-CAND-006 rejeitado como Outcome e expansão responsável preservada como trajetória opcional |
 
 ## 8. Pendências para os próximos ciclos
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as quatro disposições restantes;
+1. decisão humana individual para as três disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -332,16 +336,16 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-014` registrado | Pass |
+| `COD-015` registrado | Pass |
 | formulação original e evidências preservadas | Pass |
-| `BUS-CAND-006` alterado para `Rejected` | Pass |
-| expansão responsável preservada fora do catálogo | Pass |
-| resiliência e adaptação preservadas como sustentadoras | Pass |
-| crescimento não proibido | Pass |
-| distribuição 13/2/3 registrada | Pass |
+| `BUS-CAND-007` alterado para `Rejected` | Pass |
+| aprendizado institucional preservado como capacidade sustentadora | Pass |
+| sensing, interpretação, absorção, memória, contestação, renovação e adaptação preservados | Pass |
+| analytics e IA bloqueados como prova suficiente | Pass |
+| distribuição 12/2/4 registrada | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 10. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
