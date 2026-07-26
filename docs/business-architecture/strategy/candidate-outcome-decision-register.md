@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.27.0
+version: 0.28.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -32,6 +32,7 @@ related:
   - BA-STR-002-COD-SUB-012
   - BA-STR-002-COD-SUB-013
   - BA-STR-002-COD-SUB-014
+  - BA-STR-002-COD-SUB-015
   - COD-001
   - COD-002
   - COD-003
@@ -46,7 +47,7 @@ related:
   - COD-012
   - COD-013
   - COD-014
-  - M7.16
+  - M7.16.1
 normative: false
 execution_status: in-progress
 ---
@@ -75,7 +76,8 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
 Human decisions recorded: 14
-Decision submissions awaiting human response: 0
+Decision submissions awaiting human response: 1
+Current submission: BUS-CAND-007
 Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
 Accepted Reject dispositions: 3
@@ -310,27 +312,35 @@ A rejeição alcança somente a candidatura de crescimento como Outcome permanen
 | BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-007 | Reject | — | Pending human decision |
+| BUS-CAND-007 | Reject | — | Pending human decision; `BA-STR-002-COD-SUB-015` aberto |
 | BUS-CAND-008 | Reject | — | Pending human decision |
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 6. Gate do incremento
+## 6. Submissão humana vigente
+
+`BA-STR-002-COD-SUB-015` submete `BUS-CAND-007 — Aprendizado e adaptação institucionais` à decisão humana sobre `Reject`.
+
+A recomendação propõe retirar aprendizado institucional do futuro catálogo de Business Outcomes e preservá-lo como capacidade sustentadora de sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
+
+A recomendação não reduz a importância de aprender, não remove aprendizagem da arquitetura, não cria `COD-015` e não altera o COR antes da manifestação humana.
+
+## 7. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
+| submissão individual criada | Pass |
 | recomendação original preservada | Pass |
-| `COD-014` registrado | Pass |
-| `BUS-CAND-006` alterado para `Rejected` | Pass |
-| crescimento retirado do futuro catálogo | Pass |
-| expansão responsável preservada como trajetória opcional | Pass |
-| resiliência preservada como propriedade ou capacidade sustentadora | Pass |
-| distribuição 13/2/3 registrada | Pass |
+| resultados `Partial / Pass / Pass / Fail` preservados | Pass |
+| aprendizado separado de Outcome permanente | Pass |
+| aprendizagem preservada como capacidade sustentadora | Pass |
+| analytics e IA bloqueados como prova suficiente | Pass |
+| `COD-015` não criado | Pass |
+| COR inalterado | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 7. Próximo passo governado
+## 8. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`. Nenhuma decisão posterior será registrada automaticamente.
