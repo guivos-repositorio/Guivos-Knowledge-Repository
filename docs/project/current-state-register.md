@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.39.0
+version: 1.40.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -22,12 +22,13 @@ related:
   - UXA-008
   - UXA-009
   - UXA-010
+  - UXA-011
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-017
-  - ROADMAP-11.86.0
-  - M7.19.4
+  - ROADMAP-11.87.0
+  - M7.19.5
 normative: true
 ---
 
@@ -42,7 +43,7 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | primeira validação funcional da Tela Hoje registrada e aplicada | M7.19.4 |
+| Marco atual | presença companheira e coerência de posicionamento estabelecidas | M7.19.5 |
 | Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa, mas pausada antes da decisão sobre capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
@@ -50,10 +51,10 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Capacidade de reinvestimento responsável | em validação; decisão e incorporação não antecipadas | BUS-CAND-010; `Under Validation` |
 | Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | Candidate Outcome Register — COR 0.29.0 |
 | Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas registradas | Candidate Outcome Decision Register — CODR 0.33.0 |
-| Frente ativa | reformulação funcional da Tela Hoje | UXA-010 |
-| Arquitetura da Experiência da Guivos | fundação integrada; Tela Hoje reformulada; dois wireframes aguardam validação | UXA-000 a UXA-010 |
-| Tela Hoje | primeira validação funcional concluída e wireframe reformulado | UXA-006 0.3.0; UXA-010 |
-| Detalhe de oportunidade | wireframe inicial aguardando validação funcional | UXA-007 |
+| Frente ativa | presença companheira e coerência de posicionamento da Guivos | UXA-011 |
+| Arquitetura da Experiência da Guivos | fundação integrada; princípio transversal estabelecido; dois wireframes aguardam validação | UXA-000 a UXA-011 |
+| Tela Hoje | wireframe reformulado e alinhado à presença companheira | UXA-006 0.4.0; UXA-010; UXA-011 |
+| Detalhe de oportunidade | wireframe inicial aguardando validação funcional segundo o novo princípio | UXA-007; UXA-011 |
 | Cadastro pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
@@ -69,10 +70,10 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 
 A pausa antes da décima oitava decisão permanece vigente.
 
-- **Capacidade de reinvestimento responsável** permanece em validação (candidato empresarial BUS-CAND-010);
-- a décima oitava submissão de decisão não existe (identificador previsto BA-STR-002-COD-SUB-018);
-- a décima oitava decisão não existe (identificador previsto COD-018);
-- a recomendação de incorporação ao resultado de continuidade econômica não foi executada;
+- **Capacidade de reinvestimento responsável** permanece em validação;
+- a décima oitava submissão de decisão não existe;
+- a décima oitava decisão não existe;
+- a recomendação de incorporação não foi executada;
 - a frente de Resultados Empresariais não foi concluída;
 - nenhum Resultado foi promovido ou canonicalizado;
 - a retomada dependerá de autorização explícita posterior.
@@ -91,44 +92,61 @@ As autoridades ativas são:
 8. **Wireframe de Baixa Fidelidade do Detalhe de Oportunidade** (identificador UXA-007);
 9. **Wireframe de Baixa Fidelidade do Cadastro pela Organização** (identificador UXA-008);
 10. **Padrão de Linguagem Clara e Identificadores Técnicos** (identificador UXA-009);
-11. **Validação Funcional e Reformulação da Tela Hoje** (identificador UXA-010).
+11. **Validação Funcional e Reformulação da Tela Hoje** (identificador UXA-010);
+12. **Presença Companheira e Coerência de Posicionamento da Guivos** (identificador UXA-011).
 
-## 5. Resultado da primeira validação funcional
+## 5. Presença companheira e coerência de posicionamento
 
-A Tela Hoje foi reformulada para aplicar:
+A Guivos deverá ser percebida como uma presença que acompanha a jornada, organiza o que importa e oferece possibilidades sem controlar decisões humanas.
 
-- contexto de atuação explícito por meio de `Agindo como`;
-- síntese do momento condicional;
-- um único item principal de atenção;
-- múltiplos itens críticos reunidos na Central de Intervenções;
-- movimento atual antes das oportunidades;
-- até dois cartões de oportunidade empilhados e em largura integral;
-- Coletivos e atividades somente quando houver utilidade temporal;
-- navegação Hoje, Jornada, Explorar, Mapa e Eu preservada.
+O princípio estabelece:
 
-A reformulação não transforma o wireframe em design final nem valida a experiência com participantes.
+- reconhecimento do momento e da continuidade da jornada;
+- explicação específica de relevância e temporalidade;
+- conexão entre informações, oportunidades e Próximos Passos;
+- autonomia para revisar, adiar, corrigir, recusar ou encerrar;
+- propósito demonstrado pelo comportamento da tela, não por slogans;
+- separação explícita entre apoio à jornada e intenção comercial;
+- coerência entre Journey, Mall, Travel, Business, Media, Ads e Intelligence;
+- proibição de intimidade artificial, paternalismo, pressão emocional e recomendações genéricas sem explicação.
 
-## 6. Wireframes em revisão
+## 6. Aplicação imediata à Tela Hoje
 
-### 6.1 Tela Hoje
+A Tela Hoje passa a utilizar:
 
-Wireframe móvel reformulado após decisão humana funcional. Os estados vazio, múltiplos itens críticos, modo discreto, baixa conectividade e contextos institucionais permanecem pendentes.
+- `Seu momento, em poucas palavras` para organizar acontecimentos materiais;
+- `Algo precisa da sua atenção` para indicar prioridade sem culpa;
+- `Continuando sua jornada` para preservar continuidade;
+- `Possibilidades para seu próximo passo` para relacionar oportunidades ao contexto;
+- explicação de `Por que apareceu agora?`;
+- alternativas como revisar, deixar para depois, corrigir ou encerrar;
+- estado vazio que preserva a jornada sem pressionar retorno.
 
-### 6.2 Detalhe de oportunidade
+A reformulação continua sendo um wireframe de baixa fidelidade e não valida a experiência com participantes.
 
-Wireframe móvel com identidade, preço, custo total, validade do preço, relevância, disponibilidade, elegibilidade, Organização responsável, transparência comercial e ações. A validação funcional ainda não foi realizada.
+## 7. Wireframes em revisão
 
-### 6.3 Cadastro pela Organização
+### 7.1 Tela Hoje
+
+Wireframe móvel reformulado após decisão humana funcional e alinhado ao princípio de presença companheira. Estados alternativos permanecem pendentes.
+
+### 7.2 Detalhe de oportunidade
+
+Wireframe móvel com identidade, preço, custo total, validade do preço, relevância, disponibilidade, elegibilidade, Organização responsável, transparência comercial e ações. A próxima validação deverá aplicar o princípio de presença companheira.
+
+### 7.3 Cadastro pela Organização
 
 Wireframe para web em computador com onze etapas, preço e condições, consistência, salvamento, pré-visualização e separação entre envio, avaliação, ativação e apresentação. A validação funcional ainda não foi realizada.
 
-## 7. Padrão de linguagem clara
+## 8. Padrões de comunicação
 
 O nome completo deverá aparecer antes do identificador. Códigos permanecem para rastreabilidade, não como forma principal de comunicação.
 
-Estados técnicos serão apresentados em português, com o termo canônico entre parênteses quando necessário.
+A linguagem deverá ser humana, serena, específica, contextual, respeitosa, profunda, transparente, inclusiva e consistente.
 
-## 8. Sequência oficial vigente
+Uma formulação que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo deverá ser reavaliada.
+
+## 9. Sequência oficial vigente
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
@@ -141,21 +159,25 @@ Guivos Journey — concluído funcionalmente e publicado
 → padrão de linguagem clara — estabelecido
 → primeira validação funcional da Tela Hoje — concluída
 → Tela Hoje — reformulada em baixa fidelidade
-→ validação do Detalhe de Oportunidade, do Cadastro pela Organização ou de estado alternativo
+→ presença companheira e coerência de posicionamento — estabelecidas
+→ validação funcional do Detalhe de Oportunidade segundo o novo princípio
 → retorno aos Resultados Empresariais quando autorizado
 ```
 
-## 9. Próximo ato autorizado
+## 10. Próximo ato autorizado
 
-Decidir separadamente entre:
+Validar funcionalmente o Detalhe de Oportunidade, verificando:
 
-1. validar funcionalmente o Detalhe de Oportunidade;
-2. validar funcionalmente o Cadastro de Oportunidade pela Organização;
-3. selecionar um estado alternativo da Tela Hoje para novo wireframe.
+1. relação com a jornada e o momento atual;
+2. explicação de por que a oportunidade apareceu agora;
+3. autonomia para considerar, salvar, comparar, recusar ou iniciar;
+4. clareza de preço, custo total, validade, elegibilidade e Organização responsável;
+5. separação entre relevância funcional e intenção comercial;
+6. linguagem própria da Guivos, sem aparência de página genérica de venda.
 
 Nenhum protótipo, teste ou desenvolvimento será iniciado automaticamente.
 
-## 10. Limites
+## 11. Limites
 
 Este estado não autoriza:
 
