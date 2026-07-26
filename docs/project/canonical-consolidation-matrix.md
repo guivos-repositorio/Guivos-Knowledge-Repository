@@ -2,19 +2,18 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 1.95.0
+version: 1.96.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - GKR-CANON-MATRIX-COD-014
+  - GKR-CANON-MATRIX-COD-015-SUBMISSION
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-014
-  - COD-014
-  - M7.16
+  - BA-STR-002-COD-SUB-015
+  - M7.16.1
 normative: false
 ---
 
@@ -63,7 +62,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `COD-012` | Manter | `Reformulate` aceito para `BUS-CAND-004` |
 | `COD-013` | Manter | `Reformulate` aceito para `BUS-CAND-005` |
 | `COD-014` | Manter | `Reject` aceito para `BUS-CAND-006` |
-| CODR | Manter ativo | 14 de 18 decisões; 0 submissões abertas |
+| CODR | Manter ativo | 14 de 18 decisões; 1 submissão aberta |
 | COR | Refinar | 13 `Under Validation`; 2 `Merged`; 3 `Rejected` |
 | `ECO-CAND-002` | Refinar e manter `Under Validation` | formulação revisada registrada; nova COEM pendente |
 | `ECO-CAND-003` | Manter `Under Validation` | formulação combinada pendente de nova COEM |
@@ -78,6 +77,7 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | `BUS-CAND-004` | Refinar e manter `Under Validation` | `COD-012`; legitimidade institucional sustentada registrada; confiança preservada como avaliação associada |
 | `BUS-CAND-005` | Refinar e manter `Under Validation` | `COD-013`; continuidade econômica sustentável registrada; nova COEM pendente |
 | `BUS-CAND-006` | Remover do catálogo de Business Outcomes | `COD-014`; crescimento rejeitado como Outcome permanente; expansão responsável preservada como trajetória opcional |
+| `BUS-CAND-007` | Pendente | recomendação `Reject` submetida; aprendizado preservado como capacidade sustentadora sem mudança no COR |
 | `BUS-CAND-010` | Pendente | decisão individual e eventual fusão não antecipadas |
 | Outcomes canônicos | Pendente | zero códigos ou catálogos canônicos |
 | Business Capabilities | Pendente | posteriores ao BA-STR-002 |
@@ -86,31 +86,29 @@ Esta matriz central registra decisões consolidadas de maior alcance e aponta pa
 | Market Validation | Manter em paralelo | execução própria ainda pendente |
 | validador mecânico | Manter | workflow permanente do GKR |
 
-## 4. Resultado de COD-014
+## 4. Submissão de BUS-CAND-007
 
-A alternativa `A — Aceitar Reject` foi consolidada para `BUS-CAND-006`.
+A COEM recomenda `Reject` para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
 
 ### Formulação originalmente avaliada
 
-> A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade.
+> A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor.
 
-A decisão:
+A recomendação propõe:
 
-- preserva formulação original, evidências e rastreabilidade;
-- altera `BUS-CAND-006` para `Rejected`;
-- retira crescimento do futuro catálogo de Business Outcomes;
-- preserva expansão responsável como trajetória estratégica opcional;
-- preserva capacidade demonstrada, adicionalidade e não degradação como gates;
-- preserva resiliência e adaptação legítima como propriedades de continuidade ou capacidades sustentadoras;
-- não proíbe crescimento;
-- não trata ausência de expansão como falha automática;
-- não cria código canônico;
-- não inicia AQS-O01, Business Capabilities ou Product Engineering.
+- retirar aprendizado institucional do futuro catálogo de Business Outcomes;
+- preservar aprendizagem como capacidade sustentadora multinível;
+- preservar sensing, interpretação, absorção, memória, contestação, renovação e adaptação como dimensões governadas;
+- vincular a capacidade aos Outcomes que exigirem resposta legítima a mudanças;
+- bloquear dados, analytics, IA, reuniões ou retrospectivas como prova suficiente;
+- preservar formulação original, evidências e rastreabilidade;
+- manter `BUS-CAND-007` em `Under Validation` até manifestação humana;
+- não criar `COD-015`, código canônico ou autorização operacional.
 
 ## 5. Addendum vigente
 
-O addendum vigente é `Canonical Consolidation Matrix 1.95.0 — COD-014`.
+O addendum vigente é `Canonical Consolidation Matrix 1.96.0 — BUS-CAND-007 Decision Submission`.
 
 ## 6. Próximo ato
 
-Após integração deste incremento, preparar a submissão de `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`.
