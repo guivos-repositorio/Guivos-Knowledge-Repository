@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-017
-title: Human Decision Submission — BUS-CAND-009
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — BUS-CAND-009
+status: resolved
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -16,48 +16,58 @@ related:
   - BUS-CAND-001
   - BUS-CAND-004
   - BUS-CAND-007
-  - M7.18.1
+  - COD-017
+  - M7.19
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-009
+# Human Decision Resolution — BUS-CAND-009
 
 ## 1. Finalidade
 
-Submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual do Candidate Outcome Decision Register.
+Registrar a décima sétima decisão humana individual do Candidate Outcome Decision Register para `BUS-CAND-009 — Coerência global com adequação contextual`.
 
-Este documento organiza a recomendação `Reject` e as alternativas. Ele **não registra `COD-017`**, não altera o COR, não rejeita o candidato antes da manifestação explícita do Fundador e não cria código canônico.
+O Fundador da Guivos manifestou explicitamente:
+
+```text
+A — Aceitar Reject
+```
+
+A decisão foi registrada como `COD-017`. Ela rejeita apenas a candidatura de coerência global com adequação contextual como Business Outcome permanente; não impõe padronização global, não proíbe adaptação local, não exige internacionalização, não aprova outro candidato e não cria código canônico.
 
 ## 2. Formulação originalmente avaliada
 
 > A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
 
-## 3. Resultado da COEM
+## 3. Resultado da COEM preservado
 
 | Teste | Resultado | Síntese |
 |---|---|---|
-| Essential | Partial | coerência e adequação são necessárias à atuação legítima em contextos diversos, mas sua materialidade depende da estratégia e do contexto de atuação e não constitui condição empresarial universal separada |
+| Essential | Partial | coerência e adequação são necessárias à atuação legítima em contextos diversos, mas sua materialidade depende da estratégia e do contexto e não constitui condição empresarial universal separada |
 | Decision | Pass | fragmentação persistente ou inadequação contextual exigiria revisão estratégica de identidade, autoridade, governança, internacionalização e desenho de capacidades |
 | Replacement | Pass | a tensão entre coerência e adaptação permanece válida depois da substituição de produtos, estruturas e tecnologias |
 | Outcome Quality | Fail | a formulação combina princípio arquitetural, escolha estratégica contingente e critério de admissibilidade, sem estado único ou solução superior observável em todos os contextos |
 | Disposição recomendada | `Reject` | retirar coerência global com adequação contextual do futuro catálogo de Business Outcomes e preservar seu conteúdo nas camadas arquiteturais adequadas |
 
-## 4. Evidências e limites
+## 4. Decisão humana registrada
 
-A validação externa e a COEM sustentam que:
+| Campo | Registro |
+|---|---|
+| Candidato | `BUS-CAND-009 — Coerência global com adequação contextual` |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-1. não existe solução universal entre padronização global e adaptação local;
-2. desempenho depende do ajuste entre grau de padronização e ambiente;
-3. transferência transnacional depende de contextos sociais, organizacionais e relacionais;
-4. tradução, presença local ou variação de produto não comprovam adequação legítima;
-5. coerência global preserva identidade, autoridade e integração;
-6. adequação contextual preserva significado, legitimidade e aplicabilidade;
-7. adaptação excessiva pode fragmentar propósito, arquitetura e governança;
-8. a recomendação não impõe padronização global e não proíbe adaptação local.
+## 5. Destino arquitetural preservado
 
-## 5. Destino arquitetural proposto
+`BUS-CAND-009` é retirado do futuro catálogo de Business Outcomes, mantendo-se rastreável como hipótese rejeitada.
 
-Retirar `BUS-CAND-009` do futuro catálogo de Business Outcomes e preservar:
+Permanecem preservados:
 
 - **coerência global com adequação contextual** como princípio arquitetural e critério governado;
 - critérios de internacionalização, localização e desenho de capacidades;
@@ -65,56 +75,46 @@ Retirar `BUS-CAND-009` do futuro catálogo de Business Outcomes e preservar:
 - decisões contextuais sobre padronização, adaptação, integração e autonomia local;
 - formulação original, evidências e rastreabilidade para consulta histórica e governança.
 
-O princípio deverá orientar decisões sem pressupor solução universal, presença internacional obrigatória, tradução como evidência suficiente ou adaptação local irrestrita.
+Tradução, presença local ou variação nominal de produto não constituem prova suficiente de adequação legítima. Padronização e adaptação permanecem escolhas governadas conforme contexto, autoridade, riscos e limites arquiteturais.
 
-## 6. Alternativas submetidas à decisão humana
-
-### Alternativa A — Aceitar `Reject` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 6. Efeitos autorizados
 
 - criar `COD-017`;
-- aceitar formalmente a disposição `Reject`;
+- aceitar formalmente `Reject`;
 - preservar formulação original, evidências e rastreabilidade;
 - alterar `BUS-CAND-009` de `Under Validation` para `Rejected`;
 - retirar coerência global com adequação contextual do futuro catálogo de Business Outcomes;
-- preservar o conteúdo como princípio arquitetural e critério governado para internacionalização, localização e desenho de capacidades;
-- preservar decisões legítimas de padronização e adaptação conforme contexto e autoridade.
+- preservar o conteúdo como princípio arquitetural e critério governado;
+- preservar decisões legítimas de padronização, adaptação, integração e autonomia local.
 
-Não autoriza impor padronização global, proibir adaptação local, exigir internacionalização, aprovar outro candidato, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 7. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reject`
+- impor padronização global;
+- proibir adaptação local;
+- exigir internacionalização ou presença internacional;
+- tratar tradução, presença local ou variação de produto como prova automática de adequação;
+- aprovar ou canonicalizar outro candidato;
+- criar código canônico `BO-###`;
+- iniciar AQS-O01, Business Capabilities, produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-Mantém `BUS-CAND-009` em `Under Validation` e exige fundamentação para preservar sua candidatura, reformulá-la ou adotar disposição distinta.
+## 8. Gate da resolução
 
-A rejeição da recomendação não aprova automaticamente a formulação original ou o candidato.
+| Critério | Resultado |
+|---|---|
+| manifestação humana explícita | Pass |
+| recomendação original preservada | Pass |
+| `COD-017` registrado | Pass |
+| `BUS-CAND-009` alterado para `Rejected` | Pass |
+| princípio arquitetural e critério governado preservados | Pass |
+| padronização global não imposta | Pass |
+| adaptação local não proibida | Pass |
+| tradução e presença local bloqueadas como prova suficiente | Pass |
+| distribuição 10/2/6 registrada | Pass |
+| promoção canônica bloqueada | Pass |
+| AQS-O01 não antecipado | Pass |
+| Product Engineering preservado em pausa | Pass |
 
-### Alternativa C — Devolver para nova análise
+## 9. Próximo passo governado
 
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- coerência e adequação como Outcome versus princípio arquitetural;
-- fronteiras entre identidade, autoridade, padronização, adaptação e legitimidade;
-- critérios para internacionalização e autonomia local;
-- riscos de fragmentação arquitetural ou inadequação contextual;
-- relação com aderência ao propósito e legitimidade institucional;
-- evidências que distinguem adequação legítima de tradução, presença local ou variação nominal de produto.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Reject
-B — Rejeitar Reject, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-017` não existe;
-- decisões humanas permanecem em `16 de 18`;
-- `BUS-CAND-009` permanece `Under Validation`;
-- o COR permanece com 11 `Under Validation`, 2 `Merged` e 5 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Após integração deste incremento, preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
