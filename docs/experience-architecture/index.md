@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -73,18 +73,22 @@ Página Inicial pública da Guivos
 → compreensão inicial apresentada
 → revisão, correção, limitação e decisão
 → Tela Hoje, jornada sem personalização ou exploração geral
+→ navegação recorrente: Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
 A **Página Inicial pública antecede o início protegido e a Tela Hoje**.
+
+O **Mapa de Oportunidades não entra entre a Home e a Tela Hoje**. Ele é uma superfície própria da navegação recorrente e também pode ser acessado pela exploração geral da Home, por `Explorar` e pelo bloco contextual `Perto de mim` da Tela Hoje.
 
 ## 5. Documentos ativos por responsabilidade funcional
 
 | Responsabilidade | Documentos principais |
 |---|---|
-| Fundação, mapas e padrões | UXA-001, UXA-003, UXA-003-A1, UXA-004, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
+| Fundação, mapas e padrões | UXA-001, UXA-003, UXA-003-A1, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
 | Página Inicial pública | [Contrato da primeira entrada](uxa-020-home-and-journey-entry.md), [validação funcional](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe gráfico](uxa-022-public-home-low-fidelity-wireframe.md) |
 | Início protegido da jornada | [Validação funcional do início protegido](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
 | Tela Hoje recorrente | [Experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação funcional](uxa-010-today-functional-validation-and-reformulation.md) |
+| Explorar e Mapa | [Oportunidades, Organizações, Coletivos e Mapa](uxa-004-opportunities-organizations-collectives-map.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014, UXA-015, UXA-016, UXA-017, UXA-018 e UXA-019 |
 
@@ -100,6 +104,7 @@ A **Página Inicial pública antecede o início protegido e a Tela Hoje**.
 | Início protegido da jornada | funcionalmente validado e reformulado | UXA-020; UXA-023 |
 | Compreensão inicial | contrato e gate estabelecidos; validação especializada posterior | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
+| Mapa de Oportunidades | contrato funcional existente; wireframe gráfico ainda pendente | UXA-004 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
 | Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
@@ -116,6 +121,8 @@ Arquivo vetorial:
 `docs/assets/wireframes/uxa-022-public-home-desktop.svg`
 
 A referência possui dimensão estrutural de 1.440 por 2.200 pixels para web em computador. Ela permanece monocromática e não representa design, implementação ou versão móvel.
+
+A Home poderá oferecer um acesso secundário para explorar oportunidades no mapa por cidade ou região. Esse acesso permanecerá geral e não personalizado antes do gate.
 
 ## 8. Início protegido da jornada
 
@@ -145,7 +152,39 @@ Ela não deverá receber o primeiro relato completo nem apresentar oportunidades
 
 O wireframe existente permanece registrado como **UXA-006 — Wireframe de Baixa Fidelidade da Tela Hoje**.
 
-## 10. Estados do início protegido
+Quando localização estiver autorizada e houver utilidade material, a Tela Hoje poderá exibir um bloco compacto denominado `Perto de mim`, com a ação `Abrir no mapa`. O mapa completo não será incorporado à Tela Hoje.
+
+## 10. Explorar e Mapa
+
+`Explorar` organiza a descoberta ampla por lista, busca, categorias e filtros.
+
+`Mapa` organiza a descoberta pela dimensão territorial e permanece uma área própria da navegação recorrente:
+
+```text
+Hoje | Jornada | Explorar | Mapa | Eu
+```
+
+O Mapa poderá reunir:
+
+- oportunidades;
+- Organizações;
+- Coletivos;
+- eventos e atividades;
+- experiências públicas;
+- pontos de apoio;
+- locais salvos;
+- mapa e lista sincronizada;
+- pesquisa nesta região;
+- perto de mim;
+- calendário geográfico;
+- rota ou deslocamento;
+- filtros de categoria, data, distância, preço, modalidade, disponibilidade, acessibilidade e origem.
+
+A localização poderá ser exata e temporária, aproximada, informada por cidade, selecionada por região ou desativada.
+
+O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo ou presumir interesse somente pela proximidade.
+
+## 11. Estados do início protegido
 
 Os estados mínimos são:
 
@@ -162,28 +201,29 @@ Os estados mínimos são:
 - exclusão solicitada;
 - encerrado.
 
-## 11. Gate de personalização
+## 12. Gate de personalização
 
 Personalização material exige base suficiente, origem e finalidade identificadas, distinção entre naturezas da informação, revisão real, controles de correção e limitação, autorização compatível, ausência de conflito material e incertezas visíveis.
 
 Sem o gate, a pessoa poderá contar mais, corrigir, pausar, continuar sem personalização, explorar ou encerrar e excluir.
 
-## 12. Gate de alinhamento à Fundação
+## 13. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 13. Próximos atos governados
+## 14. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
 1. criar o wireframe gráfico do início protegido da jornada;
 2. criar a referência móvel da Página Inicial pública;
-3. detalhar estados especializados de texto, voz e arquivos;
-4. validar a revisão da compreensão inicial;
-5. validar a transição para a Tela Hoje;
-6. selecionar estados alternativos para novos wireframes;
-7. retomar independentemente os testes dos Resultados Empresariais.
+3. criar o wireframe gráfico do Mapa de Oportunidades;
+4. detalhar estados especializados de texto, voz e arquivos;
+5. validar a revisão da compreensão inicial;
+6. validar a transição para a Tela Hoje;
+7. selecionar estados alternativos para novos wireframes;
+8. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
