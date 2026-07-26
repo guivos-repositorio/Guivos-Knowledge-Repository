@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.27.0
+version: 0.29.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -32,6 +32,7 @@ related:
   - BA-STR-002-COD-SUB-012
   - BA-STR-002-COD-SUB-013
   - BA-STR-002-COD-SUB-014
+  - BA-STR-002-COD-SUB-015
   - COD-001
   - COD-002
   - COD-003
@@ -46,7 +47,8 @@ related:
   - COD-012
   - COD-013
   - COD-014
-  - M7.16
+  - COD-015
+  - M7.17
 normative: false
 execution_status: in-progress
 ---
@@ -74,12 +76,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 14
+Human decisions recorded: 15
 Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
-Accepted Reject dispositions: 3
-Candidate state changes: 5
+Accepted Reject dispositions: 4
+Candidate state changes: 6
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -292,6 +294,22 @@ Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financ
 
 A rejeição alcança somente a candidatura de crescimento como Outcome permanente. **Expansão responsável** permanece trajetória estratégica opcional, condicionada à capacidade demonstrada, adicionalidade e critérios de não degradação. Resiliência e adaptação legítima permanecem propriedades de continuidade ou capacidades sustentadoras.
 
+### COD-015 — BUS-CAND-007
+
+| Campo | Registro |
+|---|---|
+| Nome | Aprendizado e adaptação institucionais |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+A rejeição alcança somente a candidatura de aprendizado institucional como Outcome permanente. Aprendizado e adaptação permanecem capacidades sustentadoras multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
+
 ## 5. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
@@ -310,7 +328,7 @@ A rejeição alcança somente a candidatura de crescimento como Outcome permanen
 | BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-007 | Reject | — | Pending human decision |
+| BUS-CAND-007 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-008 | Reject | — | Pending human decision |
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
@@ -321,16 +339,16 @@ A rejeição alcança somente a candidatura de crescimento como Outcome permanen
 |---|---|
 | manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| `COD-014` registrado | Pass |
-| `BUS-CAND-006` alterado para `Rejected` | Pass |
-| crescimento retirado do futuro catálogo | Pass |
-| expansão responsável preservada como trajetória opcional | Pass |
-| resiliência preservada como propriedade ou capacidade sustentadora | Pass |
-| distribuição 13/2/3 registrada | Pass |
+| `COD-015` registrado | Pass |
+| `BUS-CAND-007` alterado para `Rejected` | Pass |
+| aprendizado preservado como capacidade sustentadora | Pass |
+| dimensões multinível preservadas | Pass |
+| analytics e IA bloqueados como prova suficiente | Pass |
+| distribuição 12/2/4 registrada | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 7. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
