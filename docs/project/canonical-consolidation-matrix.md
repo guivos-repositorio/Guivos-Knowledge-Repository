@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.5.0
+version: 2.6.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-011
   - GKR-CANON-MATRIX-UXA-010
   - GKR-CANON-MATRIX-UXA-009
   - GKR-CANON-MATRIX-UXA-005
@@ -28,7 +29,8 @@ related:
   - UXA-008
   - UXA-009
   - UXA-010
-  - M7.19.4
+  - UXA-011
+  - M7.19.5
 normative: false
 ---
 
@@ -73,15 +75,23 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Décima oitava decisão | Pendente | COD-018 não criado |
 | Arquitetura da Experiência da Guivos | Descoberta | UXA-000 a UXA-004 integrados |
 | Programa Inicial de Wireframes de Baixa Fidelidade | Wireframe | UXA-005 criado; método e critérios registrados |
-| Tela Hoje | Refinar em wireframe | UXA-006 0.3.0; primeira validação funcional aplicada por UXA-010 |
-| Detalhe de oportunidade | Wireframe | UXA-007; validação funcional pendente |
+| Tela Hoje | Refinar em wireframe | UXA-006 0.4.0; validação funcional e presença companheira aplicadas |
+| Detalhe de oportunidade | Wireframe | UXA-007; validação funcional segundo UXA-011 pendente |
 | Cadastro de oportunidade pela Organização | Wireframe | UXA-008; validação funcional pendente |
 | Padrão de Linguagem Clara e Identificadores Técnicos | Refinar | UXA-009; nome completo antes do código e estados traduzidos |
 | Validação Funcional e Reformulação da Tela Hoje | Manter | UXA-010; decisão humana e consequências registradas |
+| Presença Companheira e Coerência de Posicionamento | Manter como princípio transversal | UXA-011; aplicável a produtos, canais e participantes |
+| Acompanhamento da jornada | Refinar em descoberta | reconhecer continuidade sem controlar decisões |
+| Propósito na experiência | Manter | demonstrado por utilidade, contexto e Próximo Passo, não por slogans genéricos |
+| Autonomia na comunicação | Manter | revisar, adiar, corrigir, recusar e encerrar permanecem alternativas legítimas |
+| Voz da Guivos | Refinar | humana, serena, específica, contextual, respeitosa, profunda, transparente, inclusiva e consistente |
+| Intimidade artificial e pressão emocional | Remover do padrão | não constituem presença companheira |
+| Publicidade e voz companheira | Separar explicitamente | Guivos Ads não poderá disfarçar patrocínio ou manipular relevância |
+| Coerência entre produtos | Manter | Journey, Mall, Travel, Business, Media, Ads e Intelligence preservam o mesmo posicionamento |
 | Síntese do momento | Refinar | bloco condicional; omitido quando repetir um único item ou não acrescentar compreensão |
 | Atenção principal | Manter | no máximo um item destacado; itens adicionais na Central de Intervenções |
 | Contexto de atuação | Refinar | seletor explícito com `Agindo como` |
-| Oportunidades na Tela Hoje | Refinar em wireframe | até dois cartões empilhados e em largura integral; nenhum preenchimento artificial |
+| Possibilidades na Tela Hoje | Refinar em wireframe | até dois cartões empilhados e em largura integral; relação com o Próximo Passo explicada |
 | Coletivos e atividades na Tela Hoje | Refinar em wireframe | bloco somente com utilidade temporal |
 | Navegação pessoal | Manter em descoberta | Hoje, Jornada, Explorar, Mapa e Eu |
 | Validade do preço | Refinar | período até o qual o valor permanece vigente para novas adesões |
@@ -124,24 +134,24 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | BUS-CAND-009 | coerência global com adequação contextual | Rejeitado como Resultado permanente; princípio arquitetural preservado |
 | BUS-CAND-010 | capacidade de reinvestimento responsável | Em validação; decisão pendente |
 
-## 5. Resultado da reformulação da Tela Hoje
+## 5. Resultado da presença companheira
 
 A decisão consolidada:
 
-- mantém a Tela Hoje como porta de entrada orientada por utilidade material;
-- torna a síntese do momento condicional;
-- preserva um único item principal;
-- direciona itens críticos adicionais à Central de Intervenções;
-- mantém o movimento atual antes das oportunidades;
-- substitui cartões lado a lado por cartões empilhados em largura integral;
-- condiciona Coletivos e atividades à utilidade temporal;
-- preserva a navegação pessoal consolidada;
-- não inicia protótipo, design visual, testes ou Engenharia de Produto.
+- transforma o conceito de companheira em princípio verificável de experiência;
+- relaciona Momento Atual, jornada, relevância e Próximo Passo;
+- preserva autonomia e alternativas legítimas;
+- exige propósito perceptível no comportamento da tela;
+- impede linguagem genérica sem relação com a identidade da Guivos;
+- separa cuidado, relevância, publicidade e intenção comercial;
+- aplica o mesmo posicionamento a todos os produtos do ecossistema;
+- atualiza a Tela Hoje como demonstração de baixa fidelidade;
+- não cria personagem, protótipo, design visual, testes ou Engenharia de Produto.
 
 ## 6. Documento complementar vigente
 
-O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Reformulação Funcional da Tela Hoje`.
+O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Presença Companheira e Coerência de Posicionamento`.
 
 ## 7. Próximo ato
 
-Escolher entre validar funcionalmente o Detalhe de Oportunidade, validar funcionalmente o Cadastro pela Organização ou criar um estado alternativo selecionado da Tela Hoje.
+Validar funcionalmente o Detalhe de Oportunidade segundo o princípio de presença companheira, preservando transparência comercial, elegibilidade, explicação de relevância e autonomia.

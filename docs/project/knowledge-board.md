@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.86.0
+version: 11.87.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.86.0
+  - ROADMAP-11.87.0
   - UXA-000
   - UXA-001
   - UXA-002
@@ -20,9 +20,10 @@ related:
   - UXA-008
   - UXA-009
   - UXA-010
+  - UXA-011
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.19.4
+  - M7.19.5
 normative: false
 ---
 
@@ -37,16 +38,16 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | primeira validação funcional da Tela Hoje concluída | M7.19.4 |
+| Marco | presença companheira e coerência de posicionamento estabelecidas | M7.19.5 |
 | Remediação | concluída | R1–R6 |
 | Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
 | Resultados Empresariais | 17 de 18 decisões; nenhuma submissão aberta | BA-STR-002 |
 | Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | COR 0.29.0 |
 | Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas | CODR 0.33.0 |
 | Capacidade de reinvestimento responsável | em validação; decisão não submetida | BUS-CAND-010 |
-| Frente ativa | reformulação funcional da Tela Hoje | UXA-010 |
-| Tela Hoje | wireframe reformulado após validação humana | UXA-006 0.3.0 |
-| Detalhe de oportunidade | wireframe inicial aguardando validação | UXA-007 |
+| Frente ativa | presença companheira e coerência de posicionamento | UXA-011 |
+| Tela Hoje | wireframe reformulado e alinhado ao posicionamento | UXA-006 0.4.0 |
+| Detalhe de oportunidade | próximo wireframe para validação funcional | UXA-007; UXA-011 |
 | Cadastro pela Organização | wireframe inicial aguardando validação | UXA-008 |
 | Protótipo navegável | não iniciado | — |
 | Resultados canônicos | nenhum criado | 0 |
@@ -60,19 +61,19 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 - Arquitetura de Fundação congelada;
 - Guivos Journey publicado e funcionalmente concluído;
 - Modelo Econômico da Guivos documentariamente concluído;
-- Registro de Candidatos a Resultados, validação externa e matriz de avaliação concluídos;
 - remediação do repositório concluída;
 - decisões humanas 1 a 17 registradas;
 - fundação da Arquitetura da Experiência integrada;
 - padrão de linguagem clara estabelecido;
-- primeira validação funcional da Tela Hoje registrada.
+- primeira validação funcional da Tela Hoje registrada;
+- princípio de presença companheira e coerência de posicionamento estabelecido.
 
 ### Ativo
 
-- Programa Inicial de Wireframes de Baixa Fidelidade;
+- aplicação do posicionamento às superfícies da Arquitetura da Experiência;
 - Tela Hoje reformulada em baixa fidelidade;
-- revisão do Detalhe de Oportunidade;
-- revisão do Cadastro de Oportunidade pela Organização;
+- preparação da validação funcional do Detalhe de Oportunidade;
+- revisão futura do Cadastro de Oportunidade pela Organização;
 - definição futura dos estados alternativos prioritários.
 
 ### Pausado
@@ -85,7 +86,7 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 
 ### Pendente
 
-- validação funcional do Detalhe de Oportunidade;
+- validação funcional do Detalhe de Oportunidade segundo a presença companheira;
 - validação funcional do Cadastro pela Organização;
 - seleção do primeiro estado alternativo da Tela Hoje;
 - protótipo navegável de baixa fidelidade;
@@ -96,34 +97,45 @@ Este painel resume o portfólio arquitetural proposto pelo incremento. O estado 
 - catálogos canônicos e matriz de sustentação;
 - Capacidades Empresariais e fases posteriores.
 
-## 4. Resultado da Tela Hoje
+## 4. Presença companheira
 
-A reformulação funcional passou a adotar:
+A experiência deverá demonstrar que a Guivos:
 
-- `Agindo como` para explicitar o contexto;
-- síntese condicional;
-- uma atenção principal;
-- Central de Intervenções para itens adicionais;
-- movimento atual antes das oportunidades;
-- oportunidades empilhadas e em largura integral;
-- Coletivos e atividades somente com utilidade temporal;
-- navegação Hoje, Jornada, Explorar, Mapa e Eu.
+- acompanha a continuidade da jornada;
+- compreende o momento sem simular intimidade;
+- explica por que algo importa agora;
+- conecta possibilidades a Próximos Passos;
+- preserva autonomia, pausa, correção e recusa;
+- separa relevância funcional de publicidade e intenção comercial;
+- mantém a mesma identidade institucional em Journey, Mall, Travel, Business, Media, Ads e Intelligence.
 
-## 5. Decisões preservadas
+Não serão aceitos paternalismo, pressão emocional, vigilância, slogans genéricos ou recomendações sem explicação.
+
+## 5. Aplicação à Tela Hoje
+
+A Tela Hoje passa a adotar:
+
+- `Seu momento, em poucas palavras`;
+- `Algo precisa da sua atenção`;
+- `Continuando sua jornada`;
+- `Possibilidades para seu próximo passo`;
+- `Por que apareceu agora?`;
+- alternativas sem culpa ou urgência artificial.
+
+## 6. Decisões preservadas
 
 - recorrência nasce de utilidade material, não de estímulo compulsivo;
 - preço, condições, elegibilidade e relações comerciais permanecem transparentes;
 - validade do preço significa até quando o valor permanece vigente para novas adesões;
-- envio de oportunidade não equivale a ativação;
-- ativação não equivale a apresentação;
-- apresentação não equivale a recomendação definitiva;
+- envio, ativação, apresentação e recomendação permanecem estados distintos;
 - ausência legítima permanece um estado válido;
 - wireframes não equivalem a design visual ou implementação;
 - identificadores técnicos não substituem nomes completos;
-- nenhum bloco deverá ser preenchido sem relevância suficiente.
+- nenhum bloco deverá ser preenchido sem relevância suficiente;
+- contratar ou participar não será apresentado como obrigação de evolução.
 
-## 6. Próximo movimento
+## 7. Próximo movimento
 
-Escolher separadamente entre validar o Detalhe de Oportunidade, validar o Cadastro pela Organização ou criar um estado alternativo selecionado da Tela Hoje.
+Validar funcionalmente o Detalhe de Oportunidade segundo o princípio de presença companheira, preservando preço, elegibilidade, fonte, transparência comercial e autonomia.
 
 Nenhum protótipo, teste, design visual ou desenvolvimento será iniciado automaticamente.
