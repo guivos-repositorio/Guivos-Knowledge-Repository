@@ -4,80 +4,70 @@ O Guivos Knowledge Repository é a fonte oficial, versionada e governada do conh
 
 ## Estado atual
 
-A autoridade única para o estado transversal vigente é o [GKR-STATE-001 — Registro do Estado Atual](docs/project/current-state-register.md).
+A autoridade única para o estado transversal vigente é o [Registro do Estado Atual](docs/project/current-state-register.md).
 
 | Elemento | Estado resumido |
 |---|---|
-| Era | `GE-2 — Knowledge` |
-| Marco | `M7.23 — Wireframe Gráfico da Página Inicial Pública Criado` |
+| Era | GE-2 — Knowledge |
+| Marco | M7.24 — Início Protegido da Jornada Validado e Reformulado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
-| Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
-| Guivos Economic Model | `GEM-001` a `GEM-010` documentariamente concluídos |
-| Business Outcomes | 9 em validação, 3 fundidos e 6 rejeitados |
-| BUS-CAND-010 | fundido em BUS-CAND-005 por `COD-018` |
-| Outcomes canônicos | `0` |
-| Arquitetura da Experiência | integrada até `UXA-022`; Home pública validada e materializada para computador |
+| Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
+| Modelo Econômico | GEM-001 a GEM-010 documentariamente concluídos |
+| Resultados Empresariais | 9 em validação, 3 fundidos e 6 rejeitados |
+| Resultados canônicos | nenhum criado |
+| Página Inicial pública | validada e materializada para computador |
+| Início protegido da jornada | funcionalmente validado e reformulado |
+| Wireframe do início protegido | não iniciado |
 | Referência móvel da Home | não iniciada |
-| Início protegido da jornada | contrato estabelecido; validação detalhada pendente |
-| Tela Hoje | entrada recorrente após compreensão inicial |
+| Tela Hoje | entrada recorrente após compreensão confirmada |
 | Protótipo, design e testes | não iniciados |
-| Product Engineering | pausado antes do `W0-01` |
-| Market Validation | trilha operacional paralela preservada |
+| Engenharia de Produto | pausada antes de W0-01 |
+| Validação de Mercado | trilha operacional paralela preservada |
 
 ## Sequência pessoal vigente
 
 ```text
-Página Inicial pública da Guivos
+Página Inicial pública
 → decisão voluntária de iniciar ou explorar
-→ autenticação e explicação de privacidade, quando necessárias
-→ ambiente protegido para relato do Momento Atual
-→ compreensão inicial apresentada pela Guivos
-→ revisão, correção, limitação e autorização
-→ Tela Hoje
+→ explicação do ambiente protegido e das alternativas
+→ autenticação ou criação de conta
+→ finalidades, privacidade e controles
+→ escolha de modalidade
+→ compartilhamento mínimo e progressivo
+→ revisão do que foi recebido
+→ autorização específica para processamento aplicável
+→ processamento visível e interrompível
+→ compreensão inicial apresentada
+→ revisão, correção, limitação e decisão
+→ Tela Hoje, jornada sem personalização ou exploração geral
 ```
-
-A Home pública não coleta texto pessoal, voz ou arquivos. Ela explica concretamente o que é a Guivos, oferece início voluntário ou exploração sem personalização e apresenta caminhos pessoais, gerais e institucionais.
 
 ## Página Inicial pública
 
-A hierarquia funcional aprovada é:
+A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização, distingue caminhos pessoais, gerais e institucionais e não coleta texto pessoal, voz, arquivos ou fontes externas.
 
-```text
-identidade, propósito e descrição concreta da Guivos
-→ ação principal adequada ao estado e exploração sem personalização
-→ explicação simples de como a Guivos atua
-→ caminhos pessoal, geral e institucional
-→ ecossistema organizado por finalidade
-→ possibilidades gerais opcionais e identificadas
-→ confiança, privacidade, transparência e controle
-→ acesso institucional, ajuda e rodapé
-```
+O wireframe vetorial para computador permanece uma hipótese monocromática de baixa fidelidade. Ele não representa a versão móvel, identidade visual ou implementação.
 
-O ecossistema é apresentado por finalidade:
+## Início protegido da jornada
 
-- jornada e possibilidades para pessoas: Guivos Journey, Guivos Mall, Guivos Travel e Guivos Media;
-- Organizações, programas e Coletivos: Guivos Business;
-- compreensão e transparência: Guivos Intelligence;
-- publicidade e patrocínio institucional: Guivos Ads.
+A primeira validação funcional detalhada confirmou que o ambiente protegido deverá:
 
-**Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios, publicidade e patrocínios.
+- explicar o processo antes da autenticação e da coleta;
+- não iniciar gravação, upload ou conexão automaticamente;
+- separar criação de conta de autorização de processamento;
+- apresentar finalidades e controles em linguagem clara;
+- preservar compartilhamento mínimo e progressivo;
+- tratar texto, voz, arquivos e perguntas como alternativas;
+- exigir revisão antes do processamento material;
+- mostrar estados, fontes, falhas e controles;
+- permitir pausa, retomada, retirada, correção e exclusão;
+- proteger informações sensíveis e de terceiros;
+- distinguir conteúdo original, transcrição, extração e interpretação;
+- apresentar compreensão inicial revisável;
+- bloquear personalização antes do gate.
 
-## Wireframe gráfico criado
-
-A referência para computador utiliza dimensão de 1.440 × 2.200 pixels e materializa:
-
-- cabeçalho público orientado por intenção;
-- primeiro campo visual com propósito, descrição concreta e ações;
-- garantia de ausência de coleta pública;
-- funcionamento em seis etapas;
-- caminhos pessoal, geral e institucional;
-- ecossistema agrupado por finalidade;
-- possibilidades gerais identificadas;
-- confiança, privacidade e transparência;
-- rodapé institucional.
-
-O arquivo permanece monocromático, estrutural e ilustrativo. Ele não define identidade visual, texto final, responsividade, protótipo, componente ou implementação.
+A pessoa poderá continuar sem recomendações pessoais, retornar à exploração geral ou encerrar e excluir o relato.
 
 ## Estado dos Resultados Empresariais
 
@@ -89,26 +79,26 @@ Validação externa concluída
 → reaplicação dos quatro testes após nova autorização
 → ajuste do AQS-O01
 → catálogos canônicos
-→ Business Capabilities
+→ Capacidades Empresariais
 ```
 
-A fusão de `BUS-CAND-010 — Capacidade de reinvestimento responsável` em `BUS-CAND-005 — Continuidade econômica sustentável` não aprova o candidato-alvo, não torna reinvestimento obrigatório e não cria Resultado canônico.
+A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torna reinvestimento obrigatório e não cria Resultado canônico.
 
 ## Próximos atos possíveis
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional do início protegido da jornada;
-- criação da referência móvel da Página Inicial pública;
-- detalhamento de texto, voz e arquivos;
-- validação da compreensão inicial e da transição para a Tela Hoje;
-- seleção de estados alternativos para novos wireframes;
+- wireframe gráfico do início protegido da jornada;
+- referência móvel da Página Inicial pública;
+- detalhamento especializado de texto, voz e arquivos;
+- validação da revisão da compreensão inicial;
+- validação da transição para a Tela Hoje;
 - reaplicação dos quatro testes dos Resultados Empresariais;
 - ajuste do AQS-O01 e consolidação canônica em fases posteriores.
 
 ## Backlog estratégico preservado
 
-Após Resultados e Capacidades Empresariais, o portfólio será rebaselineado a partir da ordem histórica:
+Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a partir da ordem histórica:
 
 1. Guivos Mall;
 2. Guivos Business;
@@ -119,8 +109,6 @@ Após Resultados e Capacidades Empresariais, o portfólio será rebaselineado a 
 7. Modelo Comercial;
 8. Entrada no Mercado.
 
-A ordem final dos seis produtos dependerá dos Resultados canônicos, das capacidades, das dependências econômicas e das evidências de mercado.
-
 ## Acesso principal
 
 - [Estado atual oficial](docs/project/current-state-register.md)
@@ -128,19 +116,18 @@ A ordem final dos seis produtos dependerá dos Resultados canônicos, das capaci
 - [Painel de Conhecimento](docs/project/knowledge-board.md)
 - [Marcos Arquiteturais](docs/project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](docs/project/canonical-consolidation-matrix.md)
+- [Arquitetura da Experiência](docs/experience-architecture/index.md)
+- [Página Inicial da Guivos e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
+- [Validação da Página Inicial Pública](docs/experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
+- [Wireframe da Página Inicial Pública](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
+- [Validação do Início Protegido da Jornada](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Business Outcomes](docs/business-architecture/strategy/business-outcomes.md)
-- [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Página Inicial da Guivos e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Validação Funcional da Página Inicial Pública](docs/experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
-- [Wireframe da Página Inicial Pública](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Arquivo vetorial da Página Inicial Pública](docs/assets/wireframes/uxa-022-public-home-desktop.svg)
-- [Resolução COD-018](docs/business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-010.md)
 - [Documentação completa](docs/index.md)
 
 ## Regra de leitura
 
-Documentos normativos de domínio definem a arquitetura. O Registro do Estado Atual define qual é o estado global vigente. Roadmaps, painéis, páginas iniciais e registros históricos não constituem rotas paralelas nem autorizações independentes.
+Documentos normativos de domínio definem a arquitetura. O Registro do Estado Atual define o estado global vigente. Roadmaps, painéis, páginas iniciais e registros históricos não criam autorizações independentes.
