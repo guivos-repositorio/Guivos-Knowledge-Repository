@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.16.0
+version: 2.17.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-023
   - GKR-CANON-MATRIX-UXA-022
   - GKR-CANON-MATRIX-UXA-021
   - GKR-CANON-MATRIX-UXA-020
@@ -34,10 +35,12 @@ related:
   - UXA-020
   - UXA-021
   - UXA-022
+  - UXA-023
   - M7.20
   - M7.21
   - M7.22
   - M7.23
+  - M7.24
 normative: false
 ---
 
@@ -79,10 +82,11 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Resultados canônicos | Pendente | nenhum criado |
 | AQS-O01 | Pendente | aplicação prática não iniciada |
 | Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
-| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-022 |
+| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-023 |
 | Programa de Wireframes | Wireframe | programa inclui arquivo gráfico da Home pública para computador |
 | Página Inicial pública | Validar funcionalmente | validada e reformulada por UXA-021 |
-| Início protegido da jornada | Manter contrato funcional | estabelecido por UXA-020; validação detalhada pendente |
+| Início protegido da jornada | Validar funcionalmente | validado e reformulado por UXA-023 |
+| Wireframe do início protegido | Pendente | não iniciado |
 | Arquivo gráfico da Home para computador | Wireframe | criado e documentado por UXA-022 |
 | Referência móvel da Home | Pendente | não iniciada |
 | Tela Hoje | Refinar em wireframe | validada, reformulada e reposicionada como entrada recorrente |
@@ -96,10 +100,22 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Primeira entrada pessoal | Refinar | Home pública antecede início protegido, compreensão e Tela Hoje |
 | Início da jornada | Manter voluntário | pessoa pode explorar o ecossistema sem iniciar |
 | Coleta na Home pública | Proibir | texto pessoal, voz, arquivos e fontes externas permanecem fora da superfície pública |
+| Transição ao ambiente protegido | Tornar consciente | explicar mudança de superfície e ausência de coleta automática |
+| Explicação antes da autenticação | Exigir | pessoa conhece processo, modalidades e controles antes de criar ou acessar conta |
+| Criação de conta | Separar de autorização | conta não libera gravação, análise, compreensão ou personalização |
+| Autorização genérica | Rejeitar | finalidades materiais exigem decisões específicas quando aplicáveis |
 | Relato do Momento Atual | Permitir multimodalmente no ambiente protegido | texto, voz, arquivos, perguntas progressivas e fontes autorizadas |
+| Modalidades de relato | Manter alternativas | nenhuma modalidade é obrigatória ou superior |
 | Compartilhamento de contexto | Minimizar e tornar progressivo | somente informações justificáveis e controláveis |
+| Revisão antes do processamento material | Exigir | conteúdo recebido pode ser editado, removido, substituído ou limitado |
+| Estados do relato | Tornar explícitos | rascunho, revisão, autorização, processamento, falha, pausa, exclusão e encerramento distintos |
+| Processamento | Tornar visível e interrompível | fontes, finalidade, estado, falhas e controles permanecem visíveis |
+| Pausa, retirada e exclusão | Separar efeitos | ações distintas não são apresentadas como equivalentes |
+| Conteúdo original e derivado | Distinguir | original, transcrição, extração, correção e interpretação permanecem identificáveis |
+| Informação sensível ou de terceiro | Proteger adicionalmente | envio não implica autorização irrestrita nem consentimento de terceiros |
 | Compreensão inicial | Tornar revisável | confirmado, observado, externo autorizado, inferido, desconhecido e contestado distintos |
 | Gate de personalização | Exigir | indicação pessoal somente após base suficiente, revisão e autorização |
+| Jornada sem personalização | Manter disponível | pessoa pode continuar sem recomendações pessoais |
 | Exploração sem personalização | Manter disponível | conteúdo geral, institucional, editorial ou buscado explicitamente |
 | Descrição da Guivos no primeiro campo visual | Exigir | propósito acompanhado por explicação concreta do ecossistema |
 | Ação principal da Home | Tornar contextual | iniciar, continuar, revisar ou acessar a Tela Hoje conforme o estado |
@@ -216,12 +232,32 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | referência móvel | manter pendente |
 | implementação | não iniciar |
 
-## 6. Consolidação da decisão COD-018
+## 6. Consolidação do início protegido da jornada
 
 | Elemento | Decisão consolidada |
 |---|---|
-| `BUS-CAND-010` | manter fundido |
-| candidato-alvo | `BUS-CAND-005 — Continuidade econômica sustentável` |
+| transição a partir da Home | explicar mudança de superfície e ausência de coleta automática |
+| autenticação | ocorrer depois da explicação e antes de persistência ou processamento associado |
+| criação de conta | não equivaler a autorização de uso |
+| finalidades | apresentar em linguagem clara e por uso material |
+| relato | permitir modalidades alternativas e compartilhamento mínimo |
+| revisão | ocorrer antes do processamento material |
+| processamento | mostrar estado, fontes, finalidade, falhas e controles |
+| pausa e retirada | permitir sem culpa ou avanço automático |
+| exclusão | distinguir item, relato, autorização e encerramento |
+| informação de terceiro | proteger e não presumir consentimento |
+| compreensão inicial | apresentar fatos, fontes, inferências, desconhecidos e controles |
+| personalização | bloquear até revisão e autorização suficientes |
+| jornada sem personalização | preservar como saída legítima |
+| wireframe do início protegido | manter pendente |
+| implementação | não iniciar |
+
+## 7. Consolidação da decisão COD-018
+
+| Elemento | Decisão consolidada |
+|---|---|
+| BUS-CAND-010 | manter fundido |
+| candidato-alvo | BUS-CAND-005 — Continuidade econômica sustentável |
 | estado do alvo | manter em validação |
 | financiamento interno | preservar como opção legítima, não obrigação |
 | financiamento externo | preservar como alternativa legítima |
@@ -232,10 +268,11 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | aprovação do candidato-alvo | manter pendente |
 | código canônico | não criar |
 
-## 7. Documentos complementares vigentes
+## 8. Documentos complementares vigentes
 
 Os detalhamentos vigentes incluem:
 
+- Adendo da Matriz de Consolidação Canônica — Validação do Início Protegido da Jornada;
 - Adendo da Matriz de Consolidação Canônica — Wireframe da Página Inicial Pública;
 - Adendo da Matriz de Consolidação Canônica — Validação da Página Inicial Pública;
 - Adendo da Página Inicial da Guivos e Início da Jornada;
@@ -244,9 +281,10 @@ Os detalhamentos vigentes incluem:
 - Página Inicial da Guivos e Início da Jornada;
 - Validação Funcional e Reformulação da Página Inicial Pública;
 - Wireframe de Baixa Fidelidade da Página Inicial Pública;
+- Validação Funcional e Reformulação do Início Protegido da Jornada;
 - resolução da decisão sobre BUS-CAND-010.
 
-## 8. Ordem autorizada concluída
+## 9. Ordem autorizada concluída
 
 1. Visão Geral da Organização — validada e integrada;
 2. Início do Coletivo — validado e integrado;
@@ -254,10 +292,11 @@ Os detalhamentos vigentes incluem:
 4. Resultados Empresariais e capacidade de reinvestimento responsável — decisão concluída e integrada;
 5. Página Inicial pública e início protegido — estabelecidos e integrados;
 6. Página Inicial pública — validada e reformulada;
-7. wireframe gráfico da Página Inicial pública para computador — criado neste incremento.
+7. wireframe gráfico da Página Inicial pública para computador — criado;
+8. início protegido da jornada — validado e reformulado neste incremento.
 
-## 9. Próximos atos governados
+## 10. Próximos atos governados
 
-A validação do início protegido, a referência móvel da Home, o detalhamento de voz e arquivos, a reaplicação dos testes dos Resultados e qualquer etapa posterior dependem de autorização específica.
+O wireframe do início protegido, a referência móvel da Home, o detalhamento especializado de texto, voz e arquivos, a validação da compreensão inicial, a reaplicação dos testes dos Resultados e qualquer etapa posterior dependem de autorização específica.
 
 Nenhuma aprovação, código canônico, AQS-O01, Capacidade Empresarial, protótipo ou atividade de Engenharia de Produto é iniciada automaticamente.
