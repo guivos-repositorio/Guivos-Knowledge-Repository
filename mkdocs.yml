@@ -55,8 +55,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-# Documentos históricos permanecem construídos e pesquisáveis, mas não concorrem
-# com as autoridades vigentes no menu oficial.
 not_in_nav: |
   *
 
@@ -160,7 +158,8 @@ nav:
           - UXA-006 — Wireframe da Tela Hoje: experience-architecture/uxa-006-today-low-fidelity-wireframe.md
           - UXA-010 — Validação da Tela Hoje: experience-architecture/uxa-010-today-functional-validation-and-reformulation.md
       - Explorar e Mapa — navegação recorrente:
-          - UXA-004 — Oportunidades, Organizações, Coletivos e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
+          - UXA-004 — Contrato de Oportunidades e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
+          - UXA-024 — Wireframe do Mapa de Oportunidades: experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
