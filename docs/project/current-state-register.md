@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.44.0
+version: 1.45.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -30,12 +30,13 @@ related:
   - UXA-015
   - UXA-016
   - UXA-017
+  - UXA-018
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-017
-  - ROADMAP-11.91.0
-  - M7.19.9
+  - ROADMAP-11.92.0
+  - M7.19.10
 normative: true
 ---
 
@@ -50,25 +51,25 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | Visão Geral da Organização validada e reformulada | M7.19.9 |
+| Marco atual | Início do Coletivo validado e reformulado | M7.19.10 |
 | Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa, mas pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
 | Resultados Empresariais | 17 de 18 decisões humanas; nenhuma submissão aberta | BA-STR-002 |
 | Capacidade de reinvestimento responsável | em validação; decisão não antecipada | BUS-CAND-010 |
-| Frente ativa | validação funcional da Visão Geral da Organização | UXA-017 |
-| Arquitetura da Experiência | quatro superfícies validadas; Início do Coletivo em estrutura inicial | UXA-000 a UXA-017 |
+| Frente ativa | validação funcional do Início do Coletivo | UXA-018 |
+| Arquitetura da Experiência | cinco superfícies validadas; relações institucionais e coletivas como próxima etapa | UXA-000 a UXA-018 |
 | Presença companheira | princípio transversal estabelecido | UXA-011 |
 | Compreensão do momento | leitura verificável, corrigível e baseada em sinais autorizados | UXA-011-A1 |
-| Evidência de avanço | mudança relevante na jornada, capacidade institucional ou ação coletiva | UXA-011-A1; UXA-014; UXA-017 |
-| Explicabilidade do Próximo Passo | relação entre momento, compromisso, evidência, decisão e alternativas | UXA-011-A1; UXA-017 |
+| Evidência de avanço | mudança relevante na jornada, capacidade institucional ou ação coletiva | UXA-011-A1; UXA-014; UXA-017; UXA-018 |
+| Explicabilidade do Próximo Passo | relação entre momento, propósito, evidência, escolha e alternativas | UXA-011-A1; UXA-018 |
 | Tela Hoje | validada e reformulada | UXA-006 0.4.0; UXA-010 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007 0.4.0; UXA-012 0.2.0 |
 | Cadastro pela Organização | validado com contribuição para jornadas, evidências, limites e responsabilidade | UXA-008 0.3.0; UXA-013 0.1.0 |
 | Fundação de Organizações e Coletivos | estabelecida | UXA-014 0.1.0 |
 | Visão Geral da Organização | validada e reformulada com autoridade, compromissos, capacidade e decisões | UXA-015 0.2.0; UXA-017 0.1.0 |
-| Início do Coletivo | wireframe estrutural inicial criado; validação seguinte na ordem | UXA-016 0.1.0 |
-| Relações entre Organizações e Coletivos | fundação estabelecida; detalhamento posterior | UXA-014 |
+| Início do Coletivo | validado e reformulado com pertencimento, participação voluntária, governança e autonomia | UXA-016 0.2.0; UXA-018 0.1.0 |
+| Relações entre Organizações e Coletivos | fundação estabelecida; detalhamento seguinte na ordem | UXA-014 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Testes de usabilidade | não iniciados | — |
@@ -112,7 +113,8 @@ Permanecem ativas:
 16. Fundação Funcional das Experiências de Organizações e Coletivos;
 17. Wireframe da Visão Geral da Organização;
 18. Wireframe do Início do Coletivo;
-19. Validação Funcional da Visão Geral da Organização.
+19. Validação Funcional da Visão Geral da Organização;
+20. Validação Funcional do Início do Coletivo.
 
 ## 5. Gate obrigatório de alinhamento à Fundação
 
@@ -120,55 +122,61 @@ Nenhuma superfície poderá avançar sem demonstrar aderência à Essência, Pro
 
 A avaliação abrange finalidade, hierarquia, linguagem, ações, estados alternativos, publicidade, dados, inteligência artificial, privacidade, consentimento e coerência do ecossistema.
 
-## 6. Resultado da Visão Geral da Organização
+## 6. Resultado do Início do Coletivo
 
 A hierarquia validada é:
 
 ```text
-autoridade representada e contexto
-→ momento institucional e como foi compreendido
-→ responsabilidade principal agora
-→ jornadas apoiadas e compromissos ativos
-→ capacidade e condições para cumprir
-→ oportunidades e programas em movimento
-→ avanço institucional e evidências
-→ relações, dependências e transparência
-→ decisões e Próximos Passos justificados
-→ navegação institucional
+propósito, identidade e participação
+→ momento coletivo e como foi compreendido
+→ necessidade ou decisão que precisa de cuidado
+→ ação compartilhada relacionada ao propósito
+→ formas voluntárias de participar
+→ decisões, papéis e governança
+→ recursos, relações e autonomia
+→ avanço coletivo e evidências
+→ escolhas e Próximos Passos justificados
+→ navegação do Coletivo
 ```
 
 A superfície:
 
-- mantém Organização, unidade, papel e escopo de autoridade visíveis;
-- inicia por mudanças e compromissos materiais, não por contagens;
-- apresenta uma responsabilidade principal com motivo e consequência real;
-- mostra jornadas e compromissos antes de oportunidades;
-- relaciona capacidade ao dever de cumprir;
-- subordina movimentos operacionais à responsabilidade institucional;
-- reconhece avanço somente com evidência e contribuição demonstrável;
+- mantém propósito, identidade e estado de participação visíveis;
+- distingue pertencimento, disponibilidade, responsabilidade e autoridade;
+- inicia o momento por mudanças, necessidades e decisões materiais;
+- apresenta uma necessidade principal sem culpa ou exposição;
+- subordina atividades ao propósito;
+- torna convites recusáveis e papéis dependentes de aceitação explícita;
+- preserva ausência, silêncio, recusa, pausa e saída como estados legítimos;
+- separa consulta, decisão, execução e moderação;
+- mantém apoio institucional sem retirar autonomia;
+- reconhece avanço somente com evidência relacionada ao propósito;
 - declara ausência de evidência sem simular progresso;
-- apresenta relações, dependências, dados, recursos e patrocínio;
-- distingue decisão de tarefa;
-- preserva alternativas, correção e contestação;
-- impede vendas, publicidade e volume de substituírem evolução institucional.
+- apresenta escolhas e alternativas sem atribuir pessoas automaticamente;
+- impede membros, mensagens, reações e volume de atividade de substituírem evolução coletiva.
 
 ## 7. Estados alternativos preservados
 
 Permanecem pendentes de detalhamento separado:
 
-- operação regular sem responsabilidade urgente;
-- Organização não verificada;
-- autoridade insuficiente;
-- unidade sem responsável;
-- contexto incompleto;
-- informação contestada;
-- ausência de movimentos ativos;
-- capacidade limitada ou esgotada;
-- obrigação vencida ou risco elevado;
+- Coletivo recém-criado;
+- pessoa observando antes de participar;
+- solicitação de entrada pendente;
+- participação pausada;
+- ausência de atividade próxima;
+- operação regular sem necessidade material;
+- nenhuma pessoa disponível para uma função;
+- atividade ajustada, adiada ou cancelada;
+- conflito de governança;
+- moderação ou proteção urgente;
+- saída de responsável;
+- recurso insuficiente;
+- relação com Organização contestada;
+- informação sensível protegida;
 - nenhuma evidência de avanço confirmada;
-- relação suspensa;
-- falha de integração ou baixa conectividade;
-- operação internacional.
+- baixa conectividade;
+- acessibilidade ampliada;
+- encerramento do Coletivo.
 
 ## 8. Sequência oficial vigente
 
@@ -182,8 +190,8 @@ Guivos Journey — concluído funcionalmente e publicado
 → três superfícies iniciais — validadas e reformuladas
 → fundação funcional de Organizações e Coletivos — estabelecida
 → Visão Geral da Organização — validada e reformulada
-→ Início do Coletivo — próximo na ordem autorizada
-→ relações entre Organizações e Coletivos — terceira etapa
+→ Início do Coletivo — validado e reformulado
+→ relações entre Organizações e Coletivos — próxima etapa
 → retorno aos Resultados Empresariais — quarta etapa
 ```
 
@@ -191,18 +199,18 @@ Guivos Journey — concluído funcionalmente e publicado
 
 A ordem definida pelo usuário permanece:
 
-1. validar funcionalmente a Visão Geral da Organização — concluído neste incremento;
-2. validar funcionalmente o Início do Coletivo — próximo incremento, após integração;
-3. detalhar as relações entre Organizações e Coletivos — posterior;
+1. validar funcionalmente a Visão Geral da Organização — concluído e integrado;
+2. validar funcionalmente o Início do Coletivo — concluído neste incremento;
+3. detalhar as relações entre Organizações e Coletivos — próximo incremento após integração;
 4. retornar aos Resultados Empresariais e à capacidade de reinvestimento responsável — posterior.
 
-A integração deste incremento não inicia automaticamente a segunda etapa.
+A integração deste incremento não inicia automaticamente a terceira etapa.
 
 ## 10. Limites
 
 Este estado não autoriza:
 
-- iniciar a etapa 2 antes da integração e da próxima autorização operacional;
+- iniciar a etapa 3 antes da integração e da próxima autorização operacional;
 - criar a décima oitava submissão ou decisão sobre Resultados Empresariais;
 - incorporar a capacidade de reinvestimento responsável;
 - concluir Resultados Empresariais;
