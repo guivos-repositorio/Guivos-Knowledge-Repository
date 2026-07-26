@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.96.0
+version: 11.97.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.96.0
+  - ROADMAP-11.97.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -18,7 +18,8 @@ related:
   - UXA-011-A1
   - UXA-020
   - UXA-021
-  - M7.22
+  - UXA-022
+  - M7.23
 normative: false
 ---
 
@@ -33,18 +34,18 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Página Inicial pública validada e reformulada | M7.22; UXA-021 |
+| Marco | wireframe gráfico vetorial da Página Inicial pública criado | M7.23; UXA-022 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Continuidade econômica sustentável | formulação combinada em validação | BUS-CAND-005; COD-018 |
 | Próxima fase empresarial | reaplicação dos quatro testes, aguardando autorização | BA-STR-002 |
-| Arquitetura da Experiência | ativa até a validação da Home pública | UXA-000 a UXA-021 |
-| Página Inicial pública | funcionalmente validada e reformulada | UXA-020; UXA-021 |
+| Arquitetura da Experiência | ativa até o wireframe gráfico da Home pública | UXA-000 a UXA-022 |
+| Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
+| Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | contrato estabelecido; validação detalhada pendente | UXA-020 |
 | Tela Hoje | entrada recorrente após compreensão inicial | UXA-002; UXA-006; UXA-010 |
 | Personalização | bloqueada antes de contexto suficiente, revisável e autorizado | UXA-011-A1; UXA-020 |
-| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Engenharia de Produto | pausada | W0-01 |
@@ -66,6 +67,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - relações entre Organizações e Coletivos detalhadas;
 - Página Inicial pública separada do início protegido;
 - Página Inicial pública validada e reformulada;
+- wireframe gráfico vetorial da Página Inicial pública criado para computador;
 - Tela Hoje reposicionada como superfície recorrente.
 
 ### Em validação
@@ -78,11 +80,12 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- arquivo gráfico vetorial da Página Inicial pública;
 - validação funcional do início protegido da jornada;
+- referência móvel da Página Inicial pública;
 - detalhamento de texto, voz e arquivos;
 - validação da compreensão inicial;
-- transição entre início protegido e Tela Hoje.
+- transição entre início protegido e Tela Hoje;
+- estados alternativos para novos wireframes.
 
 #### Arquitetura de Negócios
 
@@ -116,7 +119,26 @@ identidade, propósito e descrição concreta da Guivos
 
 A Home deverá explicar concretamente o que é a Guivos, oferecer início voluntário ou exploração geral e declarar que a superfície pública não coleta relato pessoal.
 
-## 5. Ações por estado
+## 5. Wireframe gráfico criado
+
+A referência para computador possui dimensão de 1.440 × 2.200 pixels.
+
+Ela materializa:
+
+- cabeçalho público orientado por intenção;
+- primeiro campo visual com propósito e descrição concreta;
+- ações de iniciar e explorar;
+- garantia de ausência de coleta pública;
+- funcionamento em seis etapas;
+- caminhos pessoal, geral e institucional;
+- ecossistema agrupado por finalidade;
+- possibilidades gerais identificadas;
+- confiança, privacidade e transparência;
+- rodapé institucional.
+
+O arquivo permanece monocromático e estrutural. Ele não define identidade visual, conteúdo final, responsividade, protótipo, componentes ou implementação.
+
+## 6. Ações por estado
 
 | Estado | Ação principal | Alternativa |
 |---|---|---|
@@ -128,7 +150,7 @@ A Home deverá explicar concretamente o que é a Guivos, oferecer início volunt
 
 A Home não exibirá conteúdo sensível ou detalhes do Momento Atual.
 
-## 6. Ecossistema organizado por finalidade
+## 7. Ecossistema organizado por finalidade
 
 ### Jornada e possibilidades para pessoas
 
@@ -151,7 +173,7 @@ A Home não exibirá conteúdo sensível ou detalhes do Momento Atual.
 
 Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome oficial da solução de anúncios, publicidade e patrocínios.
 
-## 7. Proteções preservadas
+## 8. Proteções preservadas
 
 - a Home pública não coleta texto pessoal, voz ou arquivos;
 - iniciar uma jornada é voluntário;
@@ -161,9 +183,10 @@ Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome o
 - Guivos Intelligence não decide pela pessoa;
 - preços, gratuidade e condições são transparentes quando aplicáveis;
 - Organizações e Coletivos não acessam contexto pessoal sem autoridade e finalidade legítimas;
-- wireframes não equivalem a design ou implementação.
+- wireframes não equivalem a design ou implementação;
+- a referência para computador não conclui responsividade.
 
-## 8. Distribuição dos candidatos
+## 9. Distribuição dos candidatos
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -172,16 +195,17 @@ Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome o
 | Rejeitados | 6 | retirados do futuro catálogo, com destinos arquiteturais preservados |
 | Aprovados | 0 | nenhuma aprovação ocorreu |
 
-## 9. Próximo movimento
+## 10. Próximo movimento
 
 Após integração, nenhum movimento é automático.
 
 A próxima ação poderá ser escolhida entre:
 
-1. arquivo gráfico da Página Inicial pública;
-2. validação funcional do início protegido da jornada;
+1. validação funcional do início protegido da jornada;
+2. referência móvel da Página Inicial pública;
 3. detalhamento de texto, voz e arquivos;
 4. validação da compreensão inicial;
-5. retomada independente dos testes dos Resultados Empresariais.
+5. seleção de estados alternativos para novos wireframes;
+6. retomada independente dos testes dos Resultados Empresariais.
 
 Nenhum protótipo, teste, design visual, desenvolvimento, AQS-O01, catálogo canônico ou Capacidade Empresarial será iniciado automaticamente.

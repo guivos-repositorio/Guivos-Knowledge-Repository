@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.94.0
+version: 4.95.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.96.0
+  - ROADMAP-11.97.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -16,9 +16,11 @@ related:
   - UXA-000
   - UXA-020
   - UXA-021
+  - UXA-022
   - M7.20
   - M7.21
   - M7.22
+  - M7.23
 normative: false
 ---
 
@@ -41,38 +43,52 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência, wireframes e experiências de Organizações e Coletivos |
 | M7.20 | Concluído | décima oitava decisão humana registrada e fase decisória concluída |
 | M7.21 | Concluído | Página Inicial pública, início protegido e precedência sobre a Tela Hoje estabelecidos |
-| M7.22 | Concluído neste incremento | Página Inicial pública validada e reformulada funcionalmente |
+| M7.22 | Concluído | Página Inicial pública validada e reformulada funcionalmente |
+| M7.23 | Concluído neste incremento | wireframe gráfico vetorial da Página Inicial pública criado para computador |
 
 ## 3. Marco vigente
 
-### Página Inicial Pública Validada e Reformulada — M7.22
+### Wireframe Gráfico da Página Inicial Pública Criado — M7.23
 
 **Critérios atendidos:**
 
-- Página Inicial pública avaliada segundo a Fundação da Guivos;
-- pergunta funcional da superfície definida;
-- cenários de primeira visita, exploração, retorno autenticado e entrada institucional avaliados;
-- abertura abstrata complementada por descrição concreta da Guivos;
-- ação principal preservada com explicação do destino;
-- exploração sem personalização mantida como alternativa legítima;
-- caminhos pessoal, geral e institucional distinguidos;
-- Home pública preservada sem coleta de texto pessoal, voz ou arquivos;
-- ecossistema organizado por finalidade, evitando lista plana de produtos;
-- Guivos Journey, Guivos Mall, Guivos Travel e Guivos Media agrupados como jornada e possibilidades para pessoas;
-- Guivos Business apresentado no caminho de Organizações, programas e Coletivos;
-- Guivos Intelligence apresentado como compreensão e transparência, sem autoridade infalível;
-- Guivos Ads apresentado como solução institucional de anúncios e patrocínios identificados;
-- nomes oficiais Guivos Mall e Guivos Ads preservados;
-- possibilidades gerais limitadas, opcionais e identificadas como não personalizadas;
-- ação principal adaptada ao estado real da pessoa;
-- privacidade demonstrada pelo comportamento da superfície;
-- linguagem coercitiva, intimidade artificial e urgência não fundamentada bloqueadas;
-- wireframe textual reformulado registrado;
-- validação funcional concluída sem criar arquivo gráfico, protótipo, design, teste ou desenvolvimento;
+- validação funcional da Página Inicial pública integrada antes da criação do arquivo;
+- Programa Inicial de Wireframes atualizado;
+- documento especializado do wireframe criado;
+- arquivo gráfico vetorial escalável criado;
+- dimensão de referência de 1.440 × 2.200 pixels registrada;
+- cabeçalho público orientado por intenção materializado;
+- primeiro campo visual com propósito, descrição concreta e ações materializado;
+- exploração sem personalização preservada como alternativa legítima;
+- garantia curta de ausência de coleta pública apresentada;
+- funcionamento em seis etapas representado;
+- caminhos pessoal, geral e institucional separados;
+- ecossistema agrupado por finalidade;
+- Guivos Mall e Guivos Ads preservados como nomes oficiais;
+- Guivos Intelligence preservada sem autoridade infalível;
+- Guivos Ads apresentado como publicidade e patrocínio institucional identificados;
+- até três possibilidades gerais representadas com natureza e ausência de personalização;
+- confiança, privacidade, transparência e controle materializados;
+- conteúdo ilustrativo distinguido de oferta real;
+- referência móvel preservada como não iniciada;
+- protótipo, identidade visual, design, testes e desenvolvimento preservados como não iniciados;
 - Resultados Empresariais preservados em 18 de 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Página Inicial Pública Validada e Reformulada — M7.22
+
+O marco permanece concluído com:
+
+- avaliação segundo a Fundação da Guivos;
+- descrição concreta do ecossistema;
+- início voluntário e exploração geral;
+- caminhos pessoal, geral e institucional;
+- ecossistema organizado por finalidade;
+- ausência de coleta pública;
+- publicidade identificada;
+- ações adaptadas ao estado real.
 
 ### Página Inicial e Início da Jornada Estabelecidos — M7.21
 
@@ -103,7 +119,7 @@ O marco permanece concluído com:
 | Revisão da Arquitetura de Fundação | concluída e congelada |
 | Revisão do Modelo Fundamental | pronta e pausada operacionalmente |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; Home pública validada, início protegido aguardando validação |
+| Arquitetura da Experiência | ativa; Home pública validada e materializada para computador, início protegido aguardando validação |
 | Revisão da Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -115,11 +131,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. criar o arquivo gráfico vetorial da Página Inicial pública;
-2. validar funcionalmente a entrada protegida da jornada;
+1. validar funcionalmente a entrada protegida da jornada;
+2. criar a referência móvel da Página Inicial pública;
 3. detalhar texto, voz e arquivos;
 4. validar a compreensão inicial;
-5. validar a transição para a Tela Hoje.
+5. validar a transição para a Tela Hoje;
+6. selecionar estados alternativos para novos wireframes.
 
 ### Arquitetura de Negócios
 
@@ -133,4 +150,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Validação funcional não equivale a design ou implementação. Fusão de candidato não equivale a aprovação do alvo. Resultado canônico, AQS-O01, Capacidade Empresarial, protótipo, testes, design e Engenharia de Produto permanecem atos separados.
+Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Wireframe não equivale a design, protótipo ou implementação. Fusão de candidato não equivale a aprovação do alvo. Resultado canônico, AQS-O01, Capacidade Empresarial, testes, design e Engenharia de Produto permanecem atos separados.

@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.49.0
+version: 1.50.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -23,13 +23,14 @@ related:
   - UXA-019
   - UXA-020
   - UXA-021
+  - UXA-022
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-11.96.0
-  - M7.22
+  - ROADMAP-11.97.0
+  - M7.23
 normative: true
 ---
 
@@ -44,7 +45,7 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | Página Inicial pública validada e reformulada | M7.22; UXA-021 |
+| Marco atual | wireframe gráfico vetorial da Página Inicial pública criado | M7.23; UXA-022 |
 | Remediação do repositório | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída | A2-R03; BA-STR-002 |
@@ -52,8 +53,9 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | BUS-CAND-010 → BUS-CAND-005; COD-018 |
 | Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
-| Arquitetura da Experiência | ativa até a validação funcional da Home pública | UXA-000 a UXA-021 |
-| Página Inicial pública | funcionalmente validada e reformulada | UXA-020; UXA-021 |
+| Arquitetura da Experiência | ativa até o wireframe gráfico da Home pública | UXA-000 a UXA-022 |
+| Página Inicial pública | funcionalmente validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
+| Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | contrato funcional estabelecido; validação detalhada não iniciada | UXA-020; UXA-011-A1 |
 | Gate de personalização | indicações pessoais bloqueadas antes de compreensão suficiente, revisável e autorizada | UXA-011-A1; UXA-020 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
@@ -62,7 +64,6 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Visão Geral da Organização | validada e reformulada | UXA-015; UXA-017 |
 | Início do Coletivo | validado e reformulado | UXA-016; UXA-018 |
 | Relações entre Organizações e Coletivos | contrato funcional estabelecido | UXA-019 |
-| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Testes de usabilidade | não iniciados | — |
@@ -164,7 +165,53 @@ A Home distinguirá:
 
 Nenhum caminho muda automaticamente o contexto de atuação ou concede autoridade institucional.
 
-## 6. Ecossistema organizado por finalidade
+## 6. Resultado do wireframe gráfico da Página Inicial pública
+
+O arquivo vetorial para computador foi criado como hipótese estrutural de baixa fidelidade.
+
+### 6.1 Dimensão de referência
+
+A dimensão utilizada é **1.440 × 2.200 pixels**.
+
+Ela serve para verificar:
+
+- densidade;
+- ordem vertical;
+- agrupamento;
+- hierarquia;
+- continuidade entre blocos.
+
+Ela não define largura final, pontos de quebra, responsividade ou altura de produção.
+
+### 6.2 Estrutura materializada
+
+O arquivo representa:
+
+- cabeçalho público orientado por intenção;
+- propósito e descrição concreta da Guivos;
+- ação principal e exploração sem personalização;
+- garantia curta de ausência de coleta pública;
+- explicação do funcionamento em seis etapas;
+- caminhos pessoal, geral e institucional;
+- ecossistema agrupado por finalidade;
+- até três possibilidades gerais identificadas;
+- confiança, privacidade, transparência e controle;
+- rodapé institucional.
+
+### 6.3 Natureza preservada
+
+O wireframe:
+
+- é monocromático;
+- utiliza conteúdo ilustrativo;
+- não define identidade visual;
+- não define textos finais;
+- não define componentes técnicos;
+- não cria protótipo navegável;
+- não autoriza desenvolvimento;
+- não representa versão móvel.
+
+## 7. Ecossistema organizado por finalidade
 
 ### Jornada e possibilidades para pessoas
 
@@ -189,7 +236,7 @@ Nenhum caminho muda automaticamente o contexto de atuação ou concede autoridad
 
 Guivos Ads não constitui recomendação pessoal e publicidade não aumenta relevância funcional.
 
-## 7. Possibilidades gerais na Home
+## 8. Possibilidades gerais na Home
 
 A Home poderá apresentar até três possibilidades gerais quando houver fundamento verificável.
 
@@ -203,7 +250,7 @@ Cada item deverá identificar, quando aplicável:
 
 Nenhum item será incluído para preencher espaço.
 
-## 8. Proteção da superfície pública
+## 9. Proteção da superfície pública
 
 A Home pública não poderá:
 
@@ -218,7 +265,7 @@ A Home pública não poderá:
 
 A proteção deverá ser demonstrada pelo comportamento da interface, não apenas por avisos jurídicos.
 
-## 9. Autoridades da Arquitetura da Experiência
+## 10. Autoridades da Arquitetura da Experiência
 
 Permanecem ativas:
 
@@ -238,12 +285,14 @@ Permanecem ativas:
 14. Validação Funcional do Início do Coletivo;
 15. Contrato Funcional das Relações entre Organizações e Coletivos;
 16. Página Inicial da Guivos e Início da Jornada;
-17. Validação Funcional e Reformulação da Página Inicial pública.
+17. Validação Funcional e Reformulação da Página Inicial pública;
+18. Wireframe de Baixa Fidelidade da Página Inicial Pública.
 
-## 10. Estados alternativos pendentes
+## 11. Estados alternativos pendentes
 
 Para a Página Inicial permanecem pendentes de detalhamento:
 
+- referência móvel;
 - baixa conectividade com versão essencial;
 - texto ampliado e navegação assistiva;
 - idioma ou região parcialmente suportados;
@@ -254,7 +303,9 @@ Para a Página Inicial permanecem pendentes de detalhamento:
 - jornada suspensa ou encerrada;
 - conta com acesso restrito;
 - pessoa que exige proteção adicional;
-- incidente de segurança ou indisponibilidade do início protegido.
+- incidente de segurança ou indisponibilidade do início protegido;
+- chegada direta por solução específica;
+- retorno autenticado à Home institucional.
 
 Para a Tela Hoje permanecem pendentes:
 
@@ -269,7 +320,7 @@ Para a Tela Hoje permanecem pendentes:
 - alteração de preço em processo iniciado;
 - texto ampliado.
 
-## 11. Sequência oficial vigente
+## 12. Sequência oficial vigente
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
@@ -277,18 +328,20 @@ Guivos Journey — concluído funcionalmente e publicado
 → remediação do repositório — concluída
 → Resultados Empresariais — 18 decisões humanas concluídas
 → Página Inicial pública — validada e reformulada
+→ wireframe gráfico para computador — criado
 → próximo ato depende de nova autorização
 ```
 
-## 12. Próximos atos governados
+## 13. Próximos atos governados
 
 ### Arquitetura da Experiência
 
-1. criar o arquivo gráfico vetorial da Página Inicial pública;
-2. validar funcionalmente a entrada protegida da jornada;
+1. validar funcionalmente a entrada protegida da jornada;
+2. criar a referência móvel da Página Inicial pública;
 3. detalhar texto, voz e arquivos;
 4. validar a revisão da compreensão inicial;
-5. validar a transição para a Tela Hoje.
+5. validar a transição para a Tela Hoje;
+6. selecionar estados alternativos para novos wireframes.
 
 ### Arquitetura de Negócios
 
@@ -300,7 +353,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 Nenhum ato é iniciado automaticamente.
 
-## 13. Limites
+## 14. Limites
 
 Este estado não autoriza:
 
@@ -308,9 +361,10 @@ Este estado não autoriza:
 - aprovar ou canonicalizar qualquer candidato;
 - criar códigos canônicos `EO-###` ou `BO-###`;
 - iniciar AQS-O01 ou Capacidades Empresariais;
-- tratar a Home como design visual final;
+- tratar a Home ou o wireframe como design visual final;
 - validar automaticamente o início protegido da jornada;
-- criar arquivo gráfico, protótipo ou componentes;
+- criar protótipo navegável ou componentes técnicos;
+- tratar a referência para computador como responsividade concluída;
 - executar testes de usabilidade;
 - definir tecnologia de voz, arquivos ou inteligência artificial;
 - executar inferências sensíveis;

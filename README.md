@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [GKR-STATE-001 — Re
 | Elemento | Estado resumido |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.22 — Página Inicial Pública Validada e Reformulada` |
+| Marco | `M7.23 — Wireframe Gráfico da Página Inicial Pública Criado` |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -17,7 +17,8 @@ A autoridade única para o estado transversal vigente é o [GKR-STATE-001 — Re
 | Business Outcomes | 9 em validação, 3 fundidos e 6 rejeitados |
 | BUS-CAND-010 | fundido em BUS-CAND-005 por `COD-018` |
 | Outcomes canônicos | `0` |
-| Arquitetura da Experiência | integrada até `UXA-021`; Home pública validada |
+| Arquitetura da Experiência | integrada até `UXA-022`; Home pública validada e materializada para computador |
+| Referência móvel da Home | não iniciada |
 | Início protegido da jornada | contrato estabelecido; validação detalhada pendente |
 | Tela Hoje | entrada recorrente após compreensão inicial |
 | Protótipo, design e testes | não iniciados |
@@ -38,7 +39,7 @@ Página Inicial pública da Guivos
 
 A Home pública não coleta texto pessoal, voz ou arquivos. Ela explica concretamente o que é a Guivos, oferece início voluntário ou exploração sem personalização e apresenta caminhos pessoais, gerais e institucionais.
 
-## Página Inicial pública validada
+## Página Inicial pública
 
 A hierarquia funcional aprovada é:
 
@@ -62,6 +63,22 @@ O ecossistema é apresentado por finalidade:
 
 **Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios, publicidade e patrocínios.
 
+## Wireframe gráfico criado
+
+A referência para computador utiliza dimensão de 1.440 × 2.200 pixels e materializa:
+
+- cabeçalho público orientado por intenção;
+- primeiro campo visual com propósito, descrição concreta e ações;
+- garantia de ausência de coleta pública;
+- funcionamento em seis etapas;
+- caminhos pessoal, geral e institucional;
+- ecossistema agrupado por finalidade;
+- possibilidades gerais identificadas;
+- confiança, privacidade e transparência;
+- rodapé institucional.
+
+O arquivo permanece monocromático, estrutural e ilustrativo. Ele não define identidade visual, texto final, responsividade, protótipo, componente ou implementação.
+
 ## Estado dos Resultados Empresariais
 
 ```text
@@ -81,10 +98,11 @@ A fusão de `BUS-CAND-010 — Capacidade de reinvestimento responsável` em `BUS
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- criação do arquivo gráfico vetorial da Página Inicial pública;
 - validação funcional do início protegido da jornada;
+- criação da referência móvel da Página Inicial pública;
 - detalhamento de texto, voz e arquivos;
 - validação da compreensão inicial e da transição para a Tela Hoje;
+- seleção de estados alternativos para novos wireframes;
 - reaplicação dos quatro testes dos Resultados Empresariais;
 - ajuste do AQS-O01 e consolidação canônica em fases posteriores.
 
@@ -118,6 +136,8 @@ A ordem final dos seis produtos dependerá dos Resultados canônicos, das capaci
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Página Inicial da Guivos e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
 - [Validação Funcional da Página Inicial Pública](docs/experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
+- [Wireframe da Página Inicial Pública](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
+- [Arquivo vetorial da Página Inicial Pública](docs/assets/wireframes/uxa-022-public-home-desktop.svg)
 - [Resolução COD-018](docs/business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-010.md)
 - [Documentação completa](docs/index.md)
 

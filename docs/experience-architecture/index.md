@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -32,6 +32,7 @@ related:
   - UXA-019
   - UXA-020
   - UXA-021
+  - UXA-022
 normative: false
 ---
 
@@ -90,15 +91,17 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Contrato Funcional das Relações entre Organizações e Coletivos](uxa-019-organization-collective-relationship-functional-contract.md) | UXA-019 | consentimento bilateral, autoridade, compromissos, recursos, dados, autonomia e ciclo de vida da relação |
 | [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | Home pública, entrada protegida, compreensão inicial e transição para a Tela Hoje |
 | [Validação Funcional da Página Inicial Pública](uxa-021-public-home-functional-validation-and-reformulation.md) | UXA-021 | compreensão inicial da Guivos, hierarquia pública, caminhos de entrada e ecossistema organizado |
+| [Wireframe da Página Inicial Pública](uxa-022-public-home-low-fidelity-wireframe.md) | UXA-022 | materialização gráfica da Home pública para computador, sem design final |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada até a validação da Home pública | UXA-000 a UXA-021 |
+| Arquitetura da Experiência | descoberta ativa e integrada até o wireframe gráfico da Home pública | UXA-000 a UXA-022 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
-| Página Inicial pública | funcionalmente validada e reformulada | UXA-020; UXA-021 |
+| Página Inicial pública | funcionalmente validada, reformulada e materializada em wireframe gráfico para computador | UXA-020; UXA-021; UXA-022 |
+| Versão móvel da Página Inicial | não iniciada | — |
 | Início protegido da jornada | contrato funcional estabelecido; validação detalhada não iniciada | UXA-020; UXA-011-A1 |
 | Tela Hoje | validada, ativa e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-011-A1; UXA-012 |
@@ -107,7 +110,6 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | Visão Geral da Organização | validada funcionalmente e reformulada | UXA-015; UXA-017 |
 | Início do Coletivo | validado funcionalmente e reformulado | UXA-016; UXA-018 |
 | Relações entre Organizações e Coletivos | contrato funcional detalhado | UXA-019 |
-| Arquivo gráfico da Home | não iniciado | — |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
@@ -180,7 +182,23 @@ identidade, propósito e descrição concreta da Guivos
 
 A primeira área visível deverá responder o que é a Guivos, o que a pessoa pode fazer e que a superfície pública não coleta seu relato.
 
-## 8. Ecossistema organizado por finalidade
+## 8. Resultado do wireframe gráfico da Página Inicial pública
+
+O arquivo gráfico vetorial de referência possui dimensão de 1.440 × 2.200 pixels e materializa:
+
+- cabeçalho público orientado por intenção;
+- primeiro campo visual com propósito, descrição concreta, ação principal e exploração geral;
+- garantia curta de ausência de coleta pública;
+- explicação de funcionamento em seis etapas;
+- caminhos pessoal, geral e institucional;
+- ecossistema agrupado por finalidade;
+- até três possibilidades gerais identificadas;
+- confiança, privacidade, transparência e controle;
+- rodapé institucional.
+
+O arquivo permanece monocromático, estrutural e ilustrativo. Ele não define identidade visual, textos finais, componentes, responsividade, protótipo ou implementação.
+
+## 9. Ecossistema organizado por finalidade
 
 ### Jornada e possibilidades para pessoas
 
@@ -205,7 +223,7 @@ Guivos Mall é o nome oficial do shopping do ecossistema. Guivos Ads é o nome o
 
 Guivos Ads não será apresentado como benefício pessoal obrigatório ou como fonte de relevância individual.
 
-## 9. Possibilidades gerais na Home
+## 10. Possibilidades gerais na Home
 
 A Home poderá apresentar até três possibilidades gerais quando houver fundamento verificável.
 
@@ -219,7 +237,7 @@ Cada item deverá identificar, quando aplicável:
 
 Nenhum item será incluído para preencher espaço.
 
-## 10. Organizações e Coletivos
+## 11. Organizações e Coletivos
 
 Organizações e Coletivos permanecem participantes distintos.
 
@@ -231,17 +249,17 @@ As experiências validadas permanecem:
 - Início do Coletivo: propósito, pertencimento, participação voluntária, governança, recursos, autonomia e avanço;
 - relações entre Organizações e Coletivos: finalidade limitada, consentimento bilateral, autoridade, compromissos, recursos, dados, autonomia e saída responsável.
 
-## 11. Gate de personalização
+## 12. Gate de personalização
 
 Antes da confirmação suficiente do Momento Atual, a pessoa poderá conhecer o ecossistema, pesquisar e explorar conteúdos gerais, mas não receberá afirmação de relevância pessoal.
 
 Publicidade, patrocínio, popularidade, perfil demográfico genérico ou posição comercial não poderão preencher lacunas de contexto.
 
-## 12. Wireframes atuais
+## 13. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
-| Página Inicial pública | web responsiva e aplicativo | funcionalmente validada e reformulada; arquivo gráfico pendente |
+| Página Inicial pública | web para computador | funcionalmente validada e materializada em arquivo gráfico vetorial; versão móvel pendente |
 | Início protegido da jornada | web responsiva e aplicativo | entrada textual estabelecida; validação detalhada pendente |
 | Tela Hoje | aplicativo móvel | reformulada como entrada recorrente após compreensão inicial |
 | Detalhe de Oportunidade | aplicativo móvel | reformulado com momento, avanço e Próximo Passo explicável |
@@ -251,15 +269,16 @@ Publicidade, patrocínio, popularidade, perfil demográfico genérico ou posiç�
 
 Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
-## 13. Próximos atos governados
+## 14. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criação do arquivo gráfico vetorial da Página Inicial pública;
-2. validação funcional da entrada protegida da jornada;
+1. validação funcional da entrada protegida da jornada;
+2. criação da referência móvel da Página Inicial pública;
 3. detalhamento de texto, voz e arquivos;
 4. validação da revisão da compreensão inicial;
 5. validação da transição para a Tela Hoje;
-6. retomada independente da reaplicação dos testes dos Resultados Empresariais.
+6. seleção de estados alternativos para novos wireframes;
+7. retomada independente da reaplicação dos testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
