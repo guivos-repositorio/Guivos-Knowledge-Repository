@@ -2,18 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.77.0
+version: 4.78.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.79.0
+  - ROADMAP-11.80.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-016
-  - M7.17.1
+  - COD-016
+  - M7.18
 normative: false
 ---
 
@@ -61,26 +62,26 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.16 | Completed | `COD-014` registrado para `BUS-CAND-006` |
 | M7.16.1 | Completed | décima quinta decisão submetida para `BUS-CAND-007` |
 | M7.17 | Completed | `COD-015` registrado para `BUS-CAND-007` |
-| M7.17.1 | Completed neste incremento | décima sexta decisão submetida para `BUS-CAND-008` |
+| M7.17.1 | Completed | décima sexta decisão submetida para `BUS-CAND-008` |
+| M7.18 | Completed neste incremento | `COD-016` registrado para `BUS-CAND-008` |
 
 ## 3. Marco vigente
 
-### M7.17.1 — Sixteenth Human Outcome Decision Submitted
+### M7.18 — Sixteenth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- submissão individual `BA-STR-002-COD-SUB-016` criada;
-- formulação original de `BUS-CAND-008` preservada;
-- resultados `Partial / Pass / Pass / Fail` preservados;
-- recomendação `Reject` preservada sem inferência de decisão;
-- saúde das relações de parceria separada de Outcome permanente;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reject` aceita;
+- `COD-016` criado para `BUS-CAND-008`;
+- formulação original, evidências e rastreabilidade preservadas;
+- candidato alterado de `Under Validation` para `Rejected`;
+- saúde das relações de parceria retirada do futuro catálogo de Business Outcomes;
 - governança de parceiros, gestão de alianças e critérios de portfólio preservados na arquitetura;
-- riscos relacionais e de desempenho preservados como dimensões distintas;
+- confiança, controles, riscos relacionais e riscos de desempenho preservados como dimensões governadas;
 - quantidade, duração e ausência de conflito bloqueadas como prova suficiente;
-- `COD-016` não criado;
-- candidato mantido em `Under Validation`;
-- decisões humanas preservadas em 15 de 18;
-- COR preservado em 12 `Under Validation`, 2 `Merged` e 4 `Rejected`;
+- decisões humanas atualizadas para 16 de 18;
+- COR atualizado para 11 `Under Validation`, 2 `Merged` e 5 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -96,7 +97,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-016`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana sobre a recomendação `Reject`.
 
 ## 6. Regra de transição
 
