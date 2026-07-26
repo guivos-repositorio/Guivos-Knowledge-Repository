@@ -2,27 +2,30 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.96.0
+version: 4.97.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.98.0
+  - ROADMAP-11.99.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
   - UXA-000
+  - UXA-004
   - UXA-020
   - UXA-021
   - UXA-022
   - UXA-023
+  - UXA-024
   - M7.20
   - M7.21
   - M7.22
   - M7.23
   - M7.24
+  - M7.25
 normative: false
 ---
 
@@ -46,36 +49,42 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.21 | Concluído | Home pública, início protegido e Tela Hoje separados |
 | M7.22 | Concluído | Home pública validada e reformulada |
 | M7.23 | Concluído | wireframe gráfico da Home para computador criado |
-| M7.24 | Concluído neste incremento | início protegido da jornada validado e reformulado |
+| M7.24 | Concluído | início protegido da jornada validado e reformulado |
+| M7.25 | Concluído neste incremento | wireframe móvel do Mapa de Oportunidades criado |
 
 ## 3. Marco vigente
 
-### Início Protegido da Jornada Validado e Reformulado — M7.24
+### Wireframe Móvel do Mapa de Oportunidades Criado — M7.25
 
 Critérios atendidos:
 
-- transição consciente a partir da Home pública;
-- explicação anterior à autenticação e à coleta;
-- nenhuma gravação, upload ou conexão iniciada automaticamente;
-- criação de conta separada de autorização de processamento;
-- finalidades, privacidade e controles apresentados em linguagem clara;
-- autorizações específicas quando aplicáveis;
-- compartilhamento mínimo e progressivo;
-- texto, voz, arquivos e perguntas preservados como alternativas;
-- revisão do conteúdo recebido antes do processamento material;
-- estados de rascunho, revisão, processamento, falha, pausa e exclusão distinguidos;
-- processamento visível e interrompível;
-- proteção de informações sensíveis e de terceiros;
-- original, transcrição, extração e interpretação separados;
-- compreensão inicial apresentada com fontes, inferências e desconhecidos;
-- correção, limitação, retirada e exclusão disponíveis;
-- personalização bloqueada antes do gate;
-- jornada sem personalização e exploração geral preservadas;
-- wireframe, protótipo, design, testes e desenvolvimento não iniciados;
+- Mapa preservado fora da sequência obrigatória entre Home e Tela Hoje;
+- Mapa estabelecido como superfície própria da navegação recorrente;
+- contexto de atuação explícito;
+- busca por oportunidade, Organização ou região;
+- alternância entre mapa e lista;
+- filtros essenciais e adicionais;
+- mapa esquemático sem representação geográfica real;
+- camadas de oportunidades, Organizações, Coletivos, eventos e pontos de apoio;
+- agrupamentos e pontos selecionáveis;
+- localização aproximada declarada;
+- oportunidade selecionada com preço, data, distância, vagas e acessibilidade;
+- origem, relevância e relação comercial visíveis;
+- ações para detalhe, salvamento e rota;
+- proteção de localização de participantes e locais sensíveis;
+- alternativas de localização exata temporária, aproximada, manual ou desativada;
+- estados de ausência, erro, baixa conectividade e permissão revogada definidos no contrato;
+- arquivo vetorial móvel criado em 390 por 844 pixels;
+- validação funcional posterior preservada como ato separado;
+- tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Início Protegido da Jornada Validado — M7.24
+
+O início protegido permanece funcionalmente validado, com coleta consciente, revisão, estados verificáveis e personalização bloqueada antes do gate.
 
 ### Wireframe Gráfico da Home Criado — M7.23
 
@@ -100,7 +109,7 @@ COD-018 permanece integrado, com BUS-CAND-010 fundido em BUS-CAND-005 e nenhum R
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; Home e início protegido validados; compreensão inicial aguardando validação especializada |
+| Arquitetura da Experiência | ativa; Home, início protegido e Mapa estruturados; validações posteriores aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -112,12 +121,13 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. criar o wireframe gráfico do início protegido;
-2. criar a referência móvel da Home;
-3. detalhar estados de texto, voz e arquivos;
-4. validar a revisão da compreensão inicial;
-5. validar a transição para a Tela Hoje;
-6. selecionar estados alternativos.
+1. validar funcionalmente o wireframe do Mapa;
+2. criar estados alternativos do Mapa;
+3. criar referência do Mapa para computador;
+4. criar o wireframe do início protegido;
+5. criar a referência móvel da Home;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a Tela Hoje.
 
 ### Arquitetura de Negócios
 
@@ -131,4 +141,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Validação funcional não equivale a wireframe, design ou implementação. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
+Wireframe não equivale a validação funcional, design ou implementação. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.

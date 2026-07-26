@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.24 — Início Protegido da Jornada Validado e Reformulado |
+| Marco | M7.25 — Wireframe Móvel do Mapa de Oportunidades Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em PAS-001 1.0.0; nove capacidades concluídas |
@@ -21,32 +21,29 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Wireframe do início protegido | não iniciado |
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
+| Mapa de Oportunidades | contrato e wireframe móvel criados |
+| Validação funcional do Mapa | não iniciada |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
 ## Missão atual
 
-Preservar o estado concluído das decisões humanas e consolidar uma primeira entrada que diferencie Home pública, ambiente protegido, compreensão revisável e Tela Hoje.
+Preservar o estado concluído das decisões humanas e evoluir a experiência pessoal com separação clara entre Home pública, ambiente protegido, compreensão revisável, Tela Hoje e navegação recorrente.
 
 Nenhum Resultado canônico, Capacidade Empresarial, protótipo, design, teste, produto especializado, Modelo Comercial, Entrada no Mercado ou implementação técnica é iniciado automaticamente.
 
-## Primeira entrada pessoal
+## Experiência pessoal vigente
 
 ```text
 Página Inicial pública
 → decisão voluntária de iniciar ou explorar
-→ explicação do ambiente protegido e das alternativas
-→ autenticação ou criação de conta
-→ finalidades, privacidade e controles
-→ escolha de modalidade
-→ compartilhamento mínimo e progressivo
-→ revisão do que foi recebido
-→ autorização específica
-→ processamento visível e interrompível
+→ início protegido da jornada
 → compreensão inicial revisável
-→ decisão da pessoa
-→ Tela Hoje, jornada sem personalização ou exploração geral
+→ Tela Hoje
+→ Hoje | Jornada | Explorar | Mapa | Eu
 ```
+
+O Mapa não entra entre a Home e a Tela Hoje.
 
 ## Página Inicial pública
 
@@ -56,21 +53,26 @@ O arquivo vetorial para computador é um wireframe de baixa fidelidade e não re
 
 ## Início protegido da jornada
 
-A validação funcional confirmou:
+A validação funcional confirmou explicação anterior à autenticação e à coleta, ausência de gravação ou carga automática, separação entre conta e autorização, compartilhamento mínimo, modalidades alternativas, revisão antes do processamento material, estados e falhas visíveis, controles de pausa, retirada, correção e exclusão, proteção de informações sensíveis e compreensão inicial revisável.
 
-- explicação antes da autenticação e da coleta;
-- nenhuma gravação ou carga de arquivo automática;
-- conta separada de autorização;
-- finalidades e controles compreensíveis;
-- compartilhamento mínimo;
-- modalidades alternativas;
-- revisão antes do processamento material;
-- estados e falhas visíveis;
-- pausa, retirada, correção e exclusão;
-- proteção de informações sensíveis e de terceiros;
-- separação entre original, transcrição, extração e interpretação;
-- compreensão inicial revisável;
-- personalização bloqueada antes do gate.
+## Mapa de Oportunidades
+
+O Mapa é uma superfície própria da navegação recorrente, sincronizada com Explorar.
+
+O wireframe UXA-024 apresenta:
+
+- pesquisa territorial;
+- alternância entre mapa e lista;
+- filtros;
+- localização aproximada;
+- camadas de oportunidades, Organizações, Coletivos e eventos;
+- pontos e agrupamentos selecionáveis;
+- cartão resumido com preço, distância, data, vagas e acessibilidade;
+- explicação de relevância e relação comercial;
+- ações para detalhe, salvamento e rota;
+- controles de privacidade.
+
+O mapa desenhado é esquemático e não representa geografia, endereço ou coordenada real.
 
 ## Sequência global
 
@@ -81,9 +83,10 @@ A validação funcional confirmou:
 5. Home pública validada e reformulada.
 6. Wireframe gráfico da Home para computador criado.
 7. Início protegido da jornada validado e reformulado.
-8. Próximo ato dependente de nova autorização.
-9. Reaplicação dos quatro testes dos Resultados dependente de autorização independente.
-10. AQS-O01, catálogos canônicos e Capacidades Empresariais permanecem posteriores.
+8. Posição do Mapa na navegação recorrente consolidada.
+9. Wireframe móvel do Mapa de Oportunidades criado.
+10. Próximo ato dependente de nova autorização.
+11. Reaplicação dos quatro testes dependente de autorização independente.
 
 ## Decisão COD-018
 
@@ -102,8 +105,8 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico da Validação do Início Protegido](project/canonical-consolidation-matrix-uxa-023-addendum.md)
-- [Histórico de Alterações 1.45.0](project/changelog-1.45.0-uxa-023.md)
+- [Adendo Canônico do Mapa](project/canonical-consolidation-matrix-uxa-024-addendum.md)
+- [Histórico de Alterações 1.47.0](project/changelog-1.47.0-uxa-024.md)
 
 ### Arquiteturas e modelos
 
@@ -113,9 +116,9 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Guivos Business Architecture](business-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Página Inicial da Guivos e Início da Jornada](experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Validação da Página Inicial Pública](experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
 - [Wireframe da Página Inicial Pública](experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Validação do Início Protegido da Jornada](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
+- [Validação do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
+- [Wireframe do Mapa de Oportunidades](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 
 ### Resultados Empresariais
 

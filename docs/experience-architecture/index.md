@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.19.0
+version: 0.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -35,6 +35,7 @@ related:
   - UXA-021
   - UXA-022
   - UXA-023
+  - UXA-024
 normative: false
 ---
 
@@ -54,11 +55,11 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia, não cria
 
 Os identificadores registram a ordem histórica de criação dos documentos. Eles não representam a ordem em que as telas aparecem para a pessoa.
 
-Por isso, o fato de existir um documento denominado **UXA-006 — Wireframe da Tela Hoje** antes do documento **UXA-022 — Wireframe da Página Inicial Pública** não significa que a Tela Hoje antecede a Home.
+A existência do documento **UXA-006 — Wireframe da Tela Hoje** antes do documento **UXA-022 — Wireframe da Página Inicial Pública** não significa que a Tela Hoje antecede a Home.
 
-A correção formal dessa leitura está registrada em [Correção da Ordem Funcional da Primeira Entrada Pessoal](uxa-003-a1-first-entry-functional-order.md).
+A correção formal está registrada em [Correção da Ordem Funcional da Primeira Entrada Pessoal](uxa-003-a1-first-entry-functional-order.md).
 
-## 4. Ordem funcional da primeira entrada pessoal
+## 4. Ordem funcional da experiência pessoal
 
 ```text
 Página Inicial pública da Guivos
@@ -76,9 +77,9 @@ Página Inicial pública da Guivos
 → navegação recorrente: Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-A **Página Inicial pública antecede o início protegido e a Tela Hoje**.
+A Página Inicial pública antecede o início protegido e a Tela Hoje.
 
-O **Mapa de Oportunidades não entra entre a Home e a Tela Hoje**. Ele é uma superfície própria da navegação recorrente e também pode ser acessado pela exploração geral da Home, por `Explorar` e pelo bloco contextual `Perto de mim` da Tela Hoje.
+O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superfície própria da navegação recorrente e também pode ser acessado pela exploração geral da Home, por `Explorar` e pelo bloco contextual `Perto de mim` da Tela Hoje.
 
 ## 5. Documentos ativos por responsabilidade funcional
 
@@ -86,9 +87,9 @@ O **Mapa de Oportunidades não entra entre a Home e a Tela Hoje**. Ele é uma su
 |---|---|
 | Fundação, mapas e padrões | UXA-001, UXA-003, UXA-003-A1, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
 | Página Inicial pública | [Contrato da primeira entrada](uxa-020-home-and-journey-entry.md), [validação funcional](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe gráfico](uxa-022-public-home-low-fidelity-wireframe.md) |
-| Início protegido da jornada | [Validação funcional do início protegido](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
+| Início protegido da jornada | [Validação funcional](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
 | Tela Hoje recorrente | [Experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação funcional](uxa-010-today-functional-validation-and-reformulation.md) |
-| Explorar e Mapa | [Oportunidades, Organizações, Coletivos e Mapa](uxa-004-opportunities-organizations-collectives-map.md) |
+| Explorar e Mapa | [Contrato funcional](uxa-004-opportunities-organizations-collectives-map.md) e [wireframe do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014, UXA-015, UXA-016, UXA-017, UXA-018 e UXA-019 |
 
@@ -96,15 +97,16 @@ O **Mapa de Oportunidades não entra entre a Home e a Tela Hoje**. Ele é uma su
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada até a validação do início protegido | UXA-000 a UXA-023; UXA-003-A1 |
+| Arquitetura da Experiência | descoberta ativa e integrada até o wireframe do Mapa | UXA-000 a UXA-024; UXA-003-A1 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 | Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | funcionalmente validado e reformulado | UXA-020; UXA-023 |
+| Wireframe do início protegido | não iniciado | — |
 | Compreensão inicial | contrato e gate estabelecidos; validação especializada posterior | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | contrato funcional existente; wireframe gráfico ainda pendente | UXA-004 |
+| Mapa de Oportunidades | contrato funcional e wireframe móvel de baixa fidelidade criados | UXA-004; UXA-024 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
 | Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
@@ -114,35 +116,23 @@ O **Mapa de Oportunidades não entra entre a Home e a Tela Hoje**. Ele é uma su
 
 A Home explica concretamente o que é a Guivos, oferece `Iniciar minha jornada` e `Explorar sem personalização`, apresenta caminhos pessoais, gerais e institucionais e não coleta texto pessoal, voz, arquivos ou fontes externas.
 
-O wireframe da Home já está elaborado como **UXA-022 — Wireframe de Baixa Fidelidade da Página Inicial Pública da Guivos**.
+O wireframe está registrado como **UXA-022 — Wireframe de Baixa Fidelidade da Página Inicial Pública da Guivos**.
 
 Arquivo vetorial:
 
 `docs/assets/wireframes/uxa-022-public-home-desktop.svg`
 
-A referência possui dimensão estrutural de 1.440 por 2.200 pixels para web em computador. Ela permanece monocromática e não representa design, implementação ou versão móvel.
+A referência possui dimensão estrutural de 1.440 por 2.200 pixels para web em computador e não representa design, implementação ou versão móvel.
 
-A Home poderá oferecer um acesso secundário para explorar oportunidades no mapa por cidade ou região. Esse acesso permanecerá geral e não personalizado antes do gate.
+A Home poderá oferecer acesso secundário para explorar oportunidades no mapa por cidade ou região. Esse acesso permanecerá geral e não personalizado antes do gate.
 
 ## 8. Início protegido da jornada
 
 O ambiente protegido foi considerado funcionalmente válido após reformulação.
 
-Ele deverá:
+Ele deverá explicar o processo antes da autenticação e da coleta, separar conta de autorização, preservar compartilhamento mínimo, tratar modalidades como alternativas, exigir revisão anterior ao processamento material, tornar estados e falhas verificáveis, proteger informações sensíveis e apresentar compreensão inicial revisável.
 
-- explicar o processo antes da autenticação e da coleta;
-- impedir coleta automática na saída da Home;
-- separar conta de autorização de processamento;
-- apresentar finalidades e controles em linguagem clara;
-- preservar compartilhamento mínimo e progressivo;
-- tratar texto, voz, arquivos e perguntas como alternativas;
-- exigir revisão anterior ao processamento material;
-- tornar estados, falhas e fontes visíveis;
-- permitir pausa, retomada, retirada, correção e exclusão;
-- proteger informações sensíveis e de terceiros;
-- distinguir original, transcrição, extração e interpretação;
-- apresentar compreensão inicial revisável;
-- bloquear personalização antes do gate.
+A personalização permanece bloqueada antes do gate.
 
 ## 9. Tela Hoje
 
@@ -150,9 +140,9 @@ A Tela Hoje é a superfície recorrente pessoal posterior à compreensão inicia
 
 Ela não deverá receber o primeiro relato completo nem apresentar oportunidades como personalizadas antes do gate.
 
-O wireframe existente permanece registrado como **UXA-006 — Wireframe de Baixa Fidelidade da Tela Hoje**.
+O wireframe permanece registrado como **UXA-006 — Wireframe de Baixa Fidelidade da Tela Hoje**.
 
-Quando localização estiver autorizada e houver utilidade material, a Tela Hoje poderá exibir um bloco compacto denominado `Perto de mim`, com a ação `Abrir no mapa`. O mapa completo não será incorporado à Tela Hoje.
+Quando localização estiver autorizada e houver utilidade material, a Tela Hoje poderá exibir um bloco compacto `Perto de mim`, com a ação `Abrir no mapa`. O mapa completo não será incorporado à Tela Hoje.
 
 ## 10. Explorar e Mapa
 
@@ -164,66 +154,43 @@ Quando localização estiver autorizada e houver utilidade material, a Tela Hoje
 Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O Mapa poderá reunir:
+O wireframe móvel está registrado como **UXA-024 — Wireframe de Baixa Fidelidade do Mapa de Oportunidades**.
 
-- oportunidades;
-- Organizações;
-- Coletivos;
-- eventos e atividades;
-- experiências públicas;
-- pontos de apoio;
-- locais salvos;
-- mapa e lista sincronizada;
-- pesquisa nesta região;
-- perto de mim;
-- calendário geográfico;
-- rota ou deslocamento;
-- filtros de categoria, data, distância, preço, modalidade, disponibilidade, acessibilidade e origem.
+Arquivo vetorial:
+
+`docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`
+
+A referência possui dimensão de 390 por 844 pixels e representa pesquisa, mapa e lista sincronizados, filtros, localização aproximada, camadas territoriais, cartão selecionado, preço, acessibilidade, explicação de relevância e privacidade.
+
+O Mapa poderá reunir oportunidades, Organizações, Coletivos, eventos, atividades, experiências públicas, pontos de apoio e locais salvos.
 
 A localização poderá ser exata e temporária, aproximada, informada por cidade, selecionada por região ou desativada.
 
 O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo ou presumir interesse somente pela proximidade.
 
-## 11. Estados do início protegido
-
-Os estados mínimos são:
-
-- não iniciado;
-- autenticação pendente;
-- privacidade pendente;
-- rascunho;
-- aguardando revisão;
-- autorizado para processamento;
-- em processamento;
-- ação necessária;
-- compreensão disponível;
-- pausado;
-- exclusão solicitada;
-- encerrado.
-
-## 12. Gate de personalização
+## 11. Gate de personalização
 
 Personalização material exige base suficiente, origem e finalidade identificadas, distinção entre naturezas da informação, revisão real, controles de correção e limitação, autorização compatível, ausência de conflito material e incertezas visíveis.
 
-Sem o gate, a pessoa poderá contar mais, corrigir, pausar, continuar sem personalização, explorar ou encerrar e excluir.
+Sem o gate, a pessoa poderá continuar sem personalização, explorar, corrigir, pausar ou excluir.
 
-## 13. Gate de alinhamento à Fundação
+## 12. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 14. Próximos atos governados
+## 13. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar o wireframe gráfico do início protegido da jornada;
-2. criar a referência móvel da Página Inicial pública;
-3. criar o wireframe gráfico do Mapa de Oportunidades;
-4. detalhar estados especializados de texto, voz e arquivos;
-5. validar a revisão da compreensão inicial;
-6. validar a transição para a Tela Hoje;
-7. selecionar estados alternativos para novos wireframes;
+1. validar funcionalmente o wireframe do Mapa de Oportunidades;
+2. criar estados alternativos do Mapa;
+3. criar referência do Mapa para computador;
+4. criar o wireframe gráfico do início protegido da jornada;
+5. criar a referência móvel da Página Inicial pública;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a Tela Hoje;
 8. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
