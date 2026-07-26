@@ -2,7 +2,7 @@
 id: UXA-011-A1
 title: Compreensão do Momento, Evidência de Avanço e Explicabilidade do Próximo Passo
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-011
@@ -21,6 +21,7 @@ related:
   - UXA-007
   - UXA-008
   - UXA-012
+  - UXA-020
 normative: false
 ---
 
@@ -35,6 +36,8 @@ Toda superfície que apresente evolução, progresso, recomendação, prioridade
 3. **por que o Próximo Passo apresentado faz sentido neste contexto**.
 
 A Guivos não poderá afirmar compreensão, progresso ou relevância sem demonstrar a base utilizada e permitir correção pelo participante.
+
+A **Página Inicial da Guivos e Início da Jornada** é a superfície responsável por iniciar essa compreensão na jornada pessoal. A **Tela Hoje** utiliza a compreensão somente depois de confirmação suficiente.
 
 ## 2. Como a Guivos compreende o momento
 
@@ -62,6 +65,23 @@ A interface deverá mostrar, conforme a relevância:
 
 Quando a base for insuficiente, a Guivos deverá declarar que não compreende o momento com segurança, em vez de preencher a lacuna com suposições.
 
+### 2.1 Primeira compreensão na HOME
+
+O relato inicial poderá utilizar texto, voz, arquivos, escolhas rápidas e fontes externas autorizadas.
+
+A Guivos deverá apresentar antes da personalização:
+
+```text
+o que a pessoa contou
+→ o que a Guivos compreendeu
+→ o que foi inferido
+→ o que permanece desconhecido
+→ como as informações poderão ser utilizadas
+→ controles de correção, limitação e exclusão
+```
+
+A confirmação parcial é válida. Informações não confirmadas não deverão ser elevadas silenciosamente a fatos.
+
 ## 3. Como o avanço deverá ser percebido
 
 Avanço representa mudança relevante na jornada, não atividade dentro da plataforma.
@@ -88,7 +108,8 @@ Não constituem avanço por si só:
 - receber muitas oportunidades;
 - concluir tarefas sem significado demonstrado;
 - permanecer mais tempo na plataforma;
-- comprar um produto ou contratar um serviço.
+- comprar um produto ou contratar um serviço;
+- concluir o relato inicial ou enviar mais dados.
 
 ## 4. Formas de demonstrar avanço
 
@@ -139,11 +160,17 @@ A explicação deverá responder:
 - Quais outros caminhos são possíveis?
 - Como corrigir ou rejeitar esta relação?
 
+Antes de a compreensão inicial ser confirmada, a Guivos não deverá apresentar um Próximo Passo como pessoalmente relevante. Poderá apenas mostrar exemplos gerais ou opções de exploração sem personalização.
+
 ## 6. Linguagem de referência
 
 Formulação alinhada:
 
 > A Guivos compreende que você deseja realizar uma transição de carreira, já organizou suas competências e informou dificuldade para demonstrar sua experiência em processos seletivos. Por isso, preparar uma apresentação profissional pode ser um próximo passo coerente. Esta é uma possibilidade, e outros caminhos continuam disponíveis.
+
+Formulação alinhada quando a base ainda for insuficiente:
+
+> Ainda não compreendemos seu momento com segurança suficiente para indicar possibilidades pessoais. Você pode contar mais, corrigir o que já informou ou continuar explorando o ecossistema sem personalização.
 
 Formulações inadequadas:
 
@@ -151,7 +178,8 @@ Formulações inadequadas:
 - `A Guivos sabe que este é o melhor caminho`;
 - `Você precisa concluir este passo para continuar evoluindo`;
 - `Seu progresso diminuiu porque você não acessou a plataforma`;
-- `Recomendado para você` sem razão, fonte ou possibilidade de correção.
+- `Recomendado para você` sem razão, fonte ou possibilidade de correção;
+- `Encontramos as melhores oportunidades para você` antes da confirmação do Momento Atual.
 
 ## 7. Resposta do participante
 
@@ -163,15 +191,20 @@ A pessoa deverá poder responder à leitura da Guivos por meio de controles como
 - `Meu momento mudou`;
 - `Esta informação está incorreta`;
 - `Quero outro caminho`;
-- `Não usar esta informação`.
+- `Não usar esta informação`;
+- `Remover e recomeçar`.
 
 Essas respostas poderão aprimorar a compreensão futura, mas não deverão ser utilizadas para pressionar ação ou ocultar alternativas.
 
 ## 8. Aplicação por superfície
 
+### Página Inicial da Guivos e Início da Jornada
+
+Deverá permitir relato multimodal do Momento Atual, apresentar a primeira compreensão com fontes e incertezas, receber correções e bloquear personalização até haver confirmação suficiente.
+
 ### Tela Hoje
 
-Deverá mostrar o que mudou desde a última interação material, o que merece atenção e como o Próximo Passo se relaciona ao momento atual.
+Deverá mostrar o que mudou desde a última interação material, o que merece atenção e como o Próximo Passo se relaciona ao momento atual já compreendido e autorizado.
 
 ### Detalhe de Oportunidade
 
@@ -202,7 +235,8 @@ Uma superfície somente poderá avançar quando:
 7. a pessoa puder corrigir, contestar ou rejeitar a relação;
 8. a comunicação preservar autonomia, privacidade e dignidade;
 9. métricas de engajamento não forem confundidas com evolução;
-10. o comportamento permanecer alinhado à Fundação da Guivos.
+10. o comportamento permanecer alinhado à Fundação da Guivos;
+11. personalização material não ocorrer antes de compreensão inicial suficiente e autorizada.
 
 ## 10. Limites
 
