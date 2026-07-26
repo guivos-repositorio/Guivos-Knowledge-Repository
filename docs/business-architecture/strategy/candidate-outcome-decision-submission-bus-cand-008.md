@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-016
-title: Human Decision Submission — BUS-CAND-008
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — BUS-CAND-008
+status: resolved
+version: 1.0.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -16,23 +16,30 @@ related:
   - BUS-CAND-003
   - BUS-CAND-004
   - BUS-CAND-005
-  - M7.17.1
+  - COD-016
+  - M7.18
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-008
+# Human Decision Resolution — BUS-CAND-008
 
 ## 1. Finalidade
 
-Submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual do Candidate Outcome Decision Register.
+Registrar a décima sexta decisão humana individual do Candidate Outcome Decision Register para `BUS-CAND-008 — Saúde das relações de parceria`.
 
-Este documento organiza a recomendação `Reject` e as alternativas. Ele **não registra `COD-016`**, não altera o COR, não rejeita o candidato antes da manifestação explícita do Fundador e não cria código canônico.
+O Fundador da Guivos manifestou explicitamente:
+
+```text
+A — Aceitar Reject
+```
+
+A decisão foi registrada como `COD-016`. Ela rejeita apenas a candidatura de saúde das relações de parceria como Business Outcome permanente; não reduz a importância estratégica das parcerias, não exige internalização, não aprova outro candidato e não cria código canônico.
 
 ## 2. Formulação originalmente avaliada
 
 > A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco.
 
-## 3. Resultado da COEM
+## 3. Resultado da COEM preservado
 
 | Teste | Resultado | Síntese |
 |---|---|---|
@@ -42,76 +49,70 @@ Este documento organiza a recomendação `Reject` e as alternativas. Ele **não 
 | Outcome Quality | Fail | a formulação agrega qualificação, alinhamento, diversidade, reciprocidade, autoridade e risco em uma condição gerida cuja unidade depende de capacidades de alianças e governança relacional |
 | Disposição recomendada | `Reject` | retirar saúde das relações de parceria do futuro catálogo de Business Outcomes e preservar seu conteúdo nas camadas arquiteturais adequadas |
 
-## 4. Evidências e limites
+## 4. Decisão humana registrada
 
-A validação externa e a COEM sustentam que:
+| Campo | Registro |
+|---|---|
+| Candidato | `BUS-CAND-008 — Saúde das relações de parceria` |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-1. recursos e rendas relacionais podem residir entre organizações;
-2. gestão de alianças e aprendizagem acumulada constituem capacidades institucionais;
-3. riscos relacionais e riscos de desempenho são distintos e exigem confiança combinada com controles;
-4. quantidade de parceiros, duração contratual ou ausência de conflito não comprovam saúde relacional;
-5. encerramento, substituição ou internalização de uma relação podem ser decisões legítimas;
-6. a recomendação não reduz a importância estratégica das parcerias e não exige internalização;
-7. critérios de entrada, evolução, contestação, renovação e saída permanecem governados.
+## 5. Destino arquitetural preservado
 
-## 5. Destino arquitetural proposto
+`BUS-CAND-008` é retirado do futuro catálogo de Business Outcomes, mantendo-se rastreável como hipótese rejeitada.
 
-Retirar `BUS-CAND-008` do futuro catálogo de Business Outcomes e preservar:
+Permanecem preservados:
 
 - **governança das relações de parceria** na futura arquitetura de capacidades;
-- gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho;
+- gestão de alianças, dependências externas, confiança, controles, riscos relacionais e riscos de desempenho;
 - critérios governados de entrada, qualificação, evolução, renovação, substituição e saída;
 - critérios de portfólio relacionados à habilitação de valor, legitimidade institucional e continuidade econômica quando houver dependências externas materiais;
 - formulação original, evidências e rastreabilidade para consulta histórica e governança.
 
-## 6. Alternativas submetidas à decisão humana
+Quantidade de parceiros, duração contratual ou ausência de conflito não constituem prova suficiente de saúde relacional. Encerramento, substituição ou internalização permanecem decisões legítimas quando governadas e justificadas.
 
-### Alternativa A — Aceitar `Reject` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 6. Efeitos autorizados
 
 - criar `COD-016`;
-- aceitar formalmente a disposição `Reject`;
+- aceitar formalmente `Reject`;
 - preservar formulação original, evidências e rastreabilidade;
 - alterar `BUS-CAND-008` de `Under Validation` para `Rejected`;
 - retirar saúde das relações de parceria do futuro catálogo de Business Outcomes;
 - preservar o conteúdo na arquitetura de capacidades, governança de parceiros e critérios de portfólio;
 - preservar decisões legítimas de entrada, evolução, renovação, substituição e saída.
 
-Não autoriza reduzir a importância das parcerias, exigir internalização, aprovar outro candidato, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 7. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reject`
+- reduzir a importância estratégica das parcerias;
+- exigir internalização de atividades ou relações;
+- tratar quantidade, duração ou ausência de conflito como prova automática de saúde relacional;
+- aprovar ou canonicalizar outro candidato;
+- criar código canônico `BO-###`;
+- iniciar AQS-O01, Business Capabilities, produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-Mantém `BUS-CAND-008` em `Under Validation` e exige fundamentação para preservar sua candidatura, reformulá-la ou adotar disposição distinta.
+## 8. Gate da resolução
 
-A rejeição da recomendação não aprova automaticamente a formulação original ou o candidato.
+| Critério | Resultado |
+|---|---|
+| manifestação humana explícita | Pass |
+| recomendação original preservada | Pass |
+| `COD-016` registrado | Pass |
+| `BUS-CAND-008` alterado para `Rejected` | Pass |
+| governança de parceiros preservada | Pass |
+| gestão de alianças e critérios de portfólio preservados | Pass |
+| métricas relacionais simplistas bloqueadas como prova suficiente | Pass |
+| distribuição 11/2/5 registrada | Pass |
+| promoção canônica bloqueada | Pass |
+| AQS-O01 não antecipado | Pass |
+| Product Engineering preservado em pausa | Pass |
 
-### Alternativa C — Devolver para nova análise
+## 9. Próximo passo governado
 
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- saúde relacional como Outcome versus capacidade de alianças;
-- fronteiras entre qualificação, alinhamento, diversidade, reciprocidade, autoridade e risco;
-- dependências externas materiais e alternativas de provisão;
-- critérios de entrada, evolução, renovação, substituição e saída;
-- relação com habilitação de valor, legitimidade institucional e continuidade econômica;
-- evidências que distinguem relações saudáveis de quantidade, duração ou ausência de conflito.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Reject
-B — Rejeitar Reject, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-016` não existe;
-- decisões humanas permanecem em `15 de 18`;
-- `BUS-CAND-008` permanece `Under Validation`;
-- o COR permanece com 12 `Under Validation`, 2 `Merged` e 4 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
