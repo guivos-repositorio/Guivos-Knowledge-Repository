@@ -140,6 +140,18 @@ nav:
           - Guivos Media: product-architecture/media.md
           - Guivos Travel: product-architecture/travel.md
 
+  - Experience Architecture:
+      - Visão Geral: experience-architecture/index.md
+      - UXA-001 — Fundação: experience-architecture/uxa-001-foundation.md
+      - UXA-002 — Experiência Diária e Tela Hoje: experience-architecture/uxa-002-daily-experience-and-home.md
+      - UXA-003 — Mapa de Jornadas e Telas: experience-architecture/uxa-003-journeys-and-screen-map.md
+      - UXA-004 — Oportunidades, Organizações, Coletivos e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
+      - Wireframes de Baixa Fidelidade:
+          - UXA-005 — Programa Inicial: experience-architecture/uxa-005-low-fidelity-wireframes.md
+          - UXA-006 — Tela Hoje: experience-architecture/uxa-006-today-low-fidelity-wireframe.md
+          - UXA-007 — Detalhe de Oportunidade: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
+          - UXA-008 — Cadastro pela Organização: experience-architecture/uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md
+
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
       - GAI-001 — AI Knowledge Model: intelligence-architecture/knowledge-model.md
@@ -257,6 +269,8 @@ nav:
           - 11.80.0 — COD-016: project/knowledge-board-11.80.0.md
           - 11.81.0 — BUS-CAND-009 Submitted: project/knowledge-board-11.81.0.md
           - 11.82.0 — COD-017: project/knowledge-board-11.82.0.md
+          - 11.83.0 — Experience Architecture Discovery: project/knowledge-board-11.83.0.md
+          - 11.84.0 — Initial Low-Fidelity Wireframes: project/knowledge-board-11.84.0.md
       - Architectural Milestones:
           - 4.43.0 — M7.2: project/architectural-milestones-4.43.0.md
           - 4.44.0 — M7.3: project/architectural-milestones-4.44.0.md
@@ -296,6 +310,8 @@ nav:
           - 4.78.0 — M7.18: project/architectural-milestones-4.78.0.md
           - 4.79.0 — M7.18.1: project/architectural-milestones-4.79.0.md
           - 4.80.0 — M7.19: project/architectural-milestones-4.80.0.md
+          - 4.81.0 — M7.19.1: project/architectural-milestones-4.81.0.md
+          - 4.82.0 — M7.19.2: project/architectural-milestones-4.82.0.md
       - Canonical Consolidation Matrix:
           - 1.65.0 — Repository State Audit: project/canonical-consolidation-matrix-gkr-audit-002-addendum.md
           - 1.66.0 — R1 and R2: project/canonical-consolidation-matrix-gkr-remediation-r1-r2-addendum.md
@@ -334,6 +350,8 @@ nav:
           - 1.99.0 — COD-016: project/canonical-consolidation-matrix-cod-016-addendum.md
           - 2.0.0 — BUS-CAND-009 Submission: project/canonical-consolidation-matrix-cod-017-submission-addendum.md
           - 2.1.0 — COD-017: project/canonical-consolidation-matrix-cod-017-addendum.md
+          - 2.2.0 — Experience Architecture Discovery: project/canonical-consolidation-matrix-uxa-001-addendum.md
+          - 2.3.0 — Initial Low-Fidelity Wireframes: project/canonical-consolidation-matrix-uxa-005-addendum.md
       - Changelogs:
           - 0.93.0 — Repository State Audit: project/changelog-0.93.0-gkr-audit-002.md
           - 0.94.0 — R1 and R2: project/changelog-0.94.0-gkr-remediation-r1-r2.md
@@ -372,6 +390,8 @@ nav:
           - 1.27.0 — COD-016: project/changelog-1.27.0-cod-016.md
           - 1.28.0 — BUS-CAND-009 Submission: project/changelog-1.28.0-cod-017-submission.md
           - 1.29.0 — COD-017: project/changelog-1.29.0-cod-017.md
+          - 1.30.0 — Experience Architecture Discovery: project/changelog-1.30.0-uxa-001.md
+          - 1.31.0 — Initial Low-Fidelity Wireframes: project/changelog-1.31.0-uxa-005.md
       - Continuidade:
           - GE2-SYNC-008 — Post-Publication Reconciliation: project/GE2-SYNC-008-post-publication-continuity-and-engineering-handoff-readiness.md
           - GE2-SYNC-007 — Chat Continuity and Repository Reconciliation: project/GE2-SYNC-007-chat-continuity-and-repository-reconciliation.md
