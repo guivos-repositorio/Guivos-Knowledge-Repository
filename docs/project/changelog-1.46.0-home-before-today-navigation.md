@@ -9,6 +9,7 @@ related:
   - UXA-000
   - UXA-003
   - UXA-003-A1
+  - UXA-004
   - UXA-005
   - UXA-006
   - UXA-020
@@ -29,6 +30,7 @@ Página Inicial pública da Guivos
 → início protegido da jornada
 → compreensão inicial revisável
 → Tela Hoje
+→ navegação recorrente: Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
 ## Motivo
@@ -37,16 +39,21 @@ A numeração histórica dos documentos fazia o Wireframe da Tela Hoje, identifi
 
 Essa ordem documental não representa a ordem das telas. O menu oficial também omitia os documentos UXA-020 a UXA-023, gerando uma leitura incorreta.
 
+Também era necessário esclarecer que o Mapa de Oportunidades não é uma etapa obrigatória entre a Home e a Tela Hoje.
+
 ## Adicionado
 
 - UXA-003-A1 — Correção da Ordem Funcional da Primeira Entrada Pessoal;
 - explicação explícita de que identificadores registram criação documental, não precedência de tela;
-- acesso direto ao wireframe da Página Inicial pública no menu oficial.
+- acesso direto ao wireframe da Página Inicial pública no menu oficial;
+- posição explícita do Mapa como superfície própria da navegação recorrente;
+- três acessos complementares ao Mapa: Home pública, Explorar e bloco `Perto de mim` da Tela Hoje.
 
 ## Alterado
 
 - menu oficial da Arquitetura da Experiência reorganizado por responsabilidade funcional;
 - Página Inicial pública posicionada antes da Tela Hoje;
+- `Explorar e Mapa` separado da primeira entrada e apresentado como navegação recorrente;
 - Programa Inicial de Wireframes reorganizado pela ordem real de uso;
 - visão geral da Arquitetura da Experiência reorganizada por responsabilidades;
 - documentos ativos UXA-020 a UXA-023 incluídos na navegação oficial;
@@ -63,6 +70,16 @@ O wireframe da Página Inicial pública já existe como:
 
 A versão móvel da Home permanece pendente.
 
+## Posição do Mapa de Oportunidades
+
+O Mapa passa a ser apresentado oficialmente em três níveis:
+
+1. Home pública — acesso secundário para exploração geral por cidade ou região, sem personalização;
+2. Tela Hoje — bloco compacto `Perto de mim`, com a ação `Abrir no mapa`;
+3. Mapa — superfície completa e independente da navegação `Hoje | Jornada | Explorar | Mapa | Eu`.
+
+O contrato funcional do Mapa permanece em UXA-004. O wireframe gráfico do Mapa ainda não foi criado.
+
 ## Preservado
 
 - UXA-006 permanece o identificador histórico da Tela Hoje;
@@ -70,5 +87,7 @@ A versão móvel da Home permanece pendente.
 - a Home pública não coleta texto pessoal, voz, arquivos ou fontes externas;
 - o início protegido permanece separado da Home;
 - o wireframe do início protegido permanece pendente;
+- o wireframe gráfico do Mapa permanece pendente;
+- localização de participantes e locais sensíveis permanece protegida;
 - protótipo, design visual, testes e Engenharia de Produto permanecem não iniciados;
 - Resultados Empresariais permanecem sem alteração.
