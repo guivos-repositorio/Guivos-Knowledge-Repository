@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -27,6 +27,7 @@ related:
   - UXA-014
   - UXA-015
   - UXA-016
+  - UXA-017
 normative: false
 ---
 
@@ -48,6 +49,7 @@ Ela governa:
 - contribuição responsável das Organizações;
 - propósito, participação e governança dos Coletivos;
 - relações entre Pessoas, Organizações e Coletivos;
+- autoridade representada e decisões institucionais;
 - gate de alinhamento à Fundação da Guivos;
 - coerência entre os produtos do ecossistema;
 - critérios para wireframes, protótipos e testes posteriores.
@@ -75,21 +77,22 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Validação Funcional do Detalhe de Oportunidade](uxa-012-opportunity-detail-functional-validation-and-reformulation.md) | UXA-012 | decisão humana e reformulação da oportunidade |
 | [Validação Funcional do Cadastro pela Organização](uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md) | UXA-013 | papel institucional, contribuição, evidências, condições e ciclo da oportunidade |
 | [Fundação Funcional das Experiências de Organizações e Coletivos](uxa-014-organizations-and-collectives-functional-foundation.md) | UXA-014 | papéis, diferenças, relações, avanço e Próximos Passos institucionais e coletivos |
-| [Wireframe da Visão Geral da Organização](uxa-015-organization-overview-low-fidelity-wireframe.md) | UXA-015 | momento institucional, responsabilidade, capacidade, relações e avanço |
+| [Wireframe da Visão Geral da Organização](uxa-015-organization-overview-low-fidelity-wireframe.md) | UXA-015 | autoridade, momento, compromissos, capacidade, evidências, relações e decisões |
 | [Wireframe do Início do Coletivo](uxa-016-collective-home-low-fidelity-wireframe.md) | UXA-016 | propósito, participação, atividade, governança, recursos e avanço coletivo |
+| [Validação Funcional da Visão Geral da Organização](uxa-017-organization-overview-functional-validation-and-reformulation.md) | UXA-017 | validação e reformulação da superfície institucional inicial |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-016 |
+| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-017 |
 | Resultados Empresariais | pausados antes da capacidade de reinvestimento responsável | BUS-CAND-010 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 | Tela Hoje | validada e reformulada | UXA-006, UXA-010 e UXA-011 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007, UXA-011-A1 e UXA-012 |
 | Cadastro pela Organização | validado e reformulado segundo a Fundação | UXA-008 e UXA-013 |
-| Fundação de Organizações e Coletivos | estabelecida neste incremento | UXA-014 |
-| Visão Geral da Organização | wireframe estrutural inicial criado | UXA-015 |
+| Fundação de Organizações e Coletivos | estabelecida | UXA-014 |
+| Visão Geral da Organização | validada funcionalmente e reformulada | UXA-015 e UXA-017 |
 | Início do Coletivo | wireframe estrutural inicial criado | UXA-016 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
@@ -113,7 +116,7 @@ Toda superfície que apresente evolução, prioridade, oportunidade ou recomenda
 6. quais alternativas continuam disponíveis;
 7. como corrigir ou rejeitar a interpretação.
 
-Métricas de engajamento não poderão substituir evidência de mudança real.
+Métricas de engajamento ou atividade não poderão substituir evidência de mudança real.
 
 ## 7. Organizações e Coletivos
 
@@ -123,32 +126,44 @@ A Organização é participante institucional com autoridade, responsabilidades,
 
 ### Coletivo
 
-O Coletivo é uma formação voluntária orientada por propósito compartilhado, participação, ação concreta, governança e relações de apoio. Sua experiência deverá preservar entrada, pausa, saída, contestação, privacidade e ausência de coerção.
+O Coletivo é formação voluntária orientada por propósito compartilhado, participação, ação concreta, governança e relações de apoio. Sua experiência deverá preservar entrada, pausa, saída, contestação, privacidade e ausência de coerção.
 
 Organizações e Coletivos poderão se relacionar, mas finalidade, autoridade, recursos, dados, patrocínio e responsabilidades deverão permanecer visíveis.
 
-## 8. Visão Geral da Organização
+## 8. Resultado da Visão Geral da Organização
 
-A ordem funcional inicial é:
+A ordem funcional validada é:
 
 ```text
-identidade e contexto
-→ momento institucional
-→ atenção principal
-→ jornadas e públicos apoiados
-→ oportunidades e programas
-→ avanço institucional
-→ capacidade, riscos e responsabilidades
-→ relações
-→ Próximos Passos justificados
+autoridade representada e contexto
+→ momento institucional e como foi compreendido
+→ responsabilidade principal agora
+→ jornadas apoiadas e compromissos ativos
+→ capacidade e condições para cumprir
+→ oportunidades e programas em movimento
+→ avanço institucional e evidências
+→ relações, dependências e transparência
+→ decisões e Próximos Passos justificados
 → navegação institucional
 ```
 
-A superfície não deverá parecer painel de vendas ou catálogo de anúncios.
+Decisões principais:
+
+- autoridade antecede ação;
+- momento institucional começa por mudanças e compromissos materiais;
+- uma responsabilidade principal recebe prioridade;
+- jornadas e compromissos antecedem volume operacional;
+- capacidade é relacionada ao dever de cumprir;
+- oportunidades e programas permanecem subordinados;
+- avanço exige evidência e contribuição demonstrável;
+- ausência de evidência é declarada sem simular progresso;
+- relações mostram dependências, dados, recursos e autonomia;
+- decisões apresentam justificativa e alternativas;
+- vendas, publicidade e contagens não substituem evolução institucional.
 
 ## 9. Início do Coletivo
 
-A ordem funcional inicial é:
+A ordem funcional inicial permanece:
 
 ```text
 propósito, identidade e contexto
@@ -163,32 +178,27 @@ propósito, identidade e contexto
 → navegação do Coletivo
 ```
 
-A superfície não deverá parecer feed, mural genérico ou ranking de membros.
+A superfície ainda aguarda validação funcional separada.
 
-## 10. Presença companheira institucional e coletiva
-
-A comunicação deverá organizar contexto, explicar prioridades, reconhecer avanços com evidências e justificar Próximos Passos sem controlar decisões.
-
-Organizações não serão tratadas apenas como anunciantes. Coletivos não serão tratados apenas como grupos sociais. Em ambos os casos, a utilidade deverá permanecer relacionada ao propósito da Guivos e às jornadas humanas apoiadas.
-
-## 11. Wireframes atuais
+## 10. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
 | Tela Hoje | aplicativo móvel | reformulada após validação funcional |
 | Detalhe de Oportunidade | aplicativo móvel | reformulado com momento, avanço e Próximo Passo explicável |
 | Cadastro pela Organização | web para computador | reformulado com contribuição para jornadas e responsabilidade institucional |
-| Visão Geral da Organização | web para computador | wireframe estrutural inicial criado |
+| Visão Geral da Organização | web para computador | validada e reformulada com autoridade, compromissos, capacidade e decisões |
 | Início do Coletivo | aplicativo móvel | wireframe estrutural inicial criado |
 
 Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
-## 12. Próximo ponto de decisão
+## 11. Ordem autorizada
 
-Após a integração, validar funcionalmente, em incrementos separados:
+A ordem definida é:
 
-1. a Visão Geral da Organização;
-2. o Início do Coletivo;
-3. as relações entre Organizações e Coletivos.
+1. Visão Geral da Organização — validada neste incremento;
+2. Início do Coletivo — próxima etapa após integração e nova autorização de execução;
+3. relações entre Organizações e Coletivos — posterior;
+4. retorno aos Resultados Empresariais e à capacidade de reinvestimento responsável — posterior.
 
 Protótipo, design visual, testes e desenvolvimento permanecem não iniciados.
