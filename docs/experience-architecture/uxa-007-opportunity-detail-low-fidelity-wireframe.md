@@ -2,7 +2,7 @@
 id: UXA-007
 title: Wireframe de Baixa Fidelidade do Detalhe de Oportunidade
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
@@ -27,7 +27,7 @@ Esta versão incorpora a **Presença Companheira e Coerência de Posicionamento 
 
 ## 1. Pergunta da superfície
 
-> **Como esta oportunidade pode apoiar minha jornada, o que preciso compreender antes de decidir e quais caminhos permanecem disponíveis?**
+> **Como a Guivos compreende meu momento, qual avanço já reconhece, por que esta oportunidade pode fazer sentido agora e o que preciso saber antes de decidir?**
 
 A superfície deverá apresentar a oportunidade como meio para um possível Próximo Passo. Ela não deverá parecer página genérica de venda, recomendação definitiva ou etapa obrigatória de evolução.
 
@@ -44,13 +44,15 @@ O wireframe permanece monocromático e estrutural. Ele não define identidade vi
 | Ordem | Bloco | Responsabilidade |
 |---:|---|---|
 | 1 | identidade e origem | identificar a possibilidade, seu tipo, estado e responsável |
-| 2 | como pode apoiar sua jornada | explicar objetivo, Próximo Passo, contexto e motivo temporal |
-| 3 | investimento e condições | mostrar preço, custo total, validade, prazo e cancelamento |
-| 4 | antes de decidir | reunir disponibilidade, modalidade, horário, acessibilidade e compromissos |
-| 5 | condições para participar | explicar elegibilidade, autoridade decisória e verificações |
-| 6 | quem oferece | permitir avaliar a Organização ou o Coletivo responsável |
-| 7 | relação comercial com a Guivos | revelar comissão, patrocínio ou outra relação material |
-| 8 | ações contextuais | permitir agir, salvar ou comparar sem ocultar alternativas |
+| 2 | como a Guivos compreende seu momento | mostrar informações confirmadas, observadas, externas, inferidas e ainda desconhecidas |
+| 3 | avanço reconhecido | demonstrar mudanças já percebidas sem inventar progresso |
+| 4 | por que este Próximo Passo faz sentido | explicar a cadeia entre momento, objetivo, lacuna, possibilidade e contribuição esperada |
+| 5 | investimento e condições | mostrar preço, custo total, validade, prazo e cancelamento |
+| 6 | antes de decidir | reunir disponibilidade, modalidade, horário, acessibilidade e compromissos |
+| 7 | condições para participar | explicar elegibilidade, autoridade decisória e verificações |
+| 8 | quem oferece | permitir avaliar a Organização ou o Coletivo responsável |
+| 9 | relação comercial com a Guivos | revelar comissão, patrocínio ou outra relação material |
+| 10 | ações contextuais | permitir agir, salvar ou comparar sem ocultar alternativas |
 
 ## 4. Gate de alinhamento à Fundação da Guivos
 
@@ -80,34 +82,91 @@ O topo deverá apresentar:
 
 A palavra `possibilidade` orienta a leitura, mas não substitui a entidade canônica Oportunidade.
 
-## 6. Como pode apoiar sua jornada
+## 6. Como a Guivos compreende seu momento
 
-Este bloco antecede o investimento e deverá explicar:
+O bloco deverá apresentar uma leitura verificável e corrigível do momento atual.
 
-- objetivo confirmado relacionado;
-- Próximo Passo relacionado;
-- preferência ou necessidade declarada;
-- razão para aparecer neste momento;
-- possível contribuição, sem garantia;
-- fonte utilizada na relação.
+Deverá distinguir:
+
+- objetivo confirmado pelo participante;
+- Próximo Passo atual;
+- experiência ou etapa já registrada;
+- preferência declarada;
+- limitação ou dúvida ainda existente;
+- informação proveniente de fonte autorizada;
+- inferência da Guivos;
+- informação que ainda não está disponível.
 
 Exemplo:
 
-> Pode apoiar seu próximo passo de desenvolver comunicação profissional em inglês. Apareceu agora porque as inscrições encerram em 31/07 e você informou preferência por atividades online à noite.
-
-A mensagem deverá incluir:
-
-> Esta é uma possibilidade para você considerar. A decisão continua sendo sua.
+> A Guivos compreende que você deseja desenvolver comunicação profissional em inglês, já concluiu o nível básico e prefere atividades online à noite. Ainda não sabemos se você possui disponibilidade para aulas ao vivo duas vezes por semana.
 
 Controles mínimos:
 
-- `Por que apareceu agora?`;
-- `Corrigir esta relação`;
-- `Não faz sentido para mim`;
-- `Não usar esta informação`;
-- `Mostrar menos como isto`.
+- `Ver informações utilizadas`;
+- `Corrigir meu momento`;
+- `Meu momento mudou`;
+- `Não usar esta informação`.
 
-## 7. Investimento e condições
+Quando a base for insuficiente, a tela deverá declarar que não possui informação suficiente, em vez de simular compreensão.
+
+## 7. Avanço reconhecido
+
+O avanço deverá ser percebido por mudança relevante na jornada, e não por percentual genérico, pontos, sequência de dias ou volume de tarefas.
+
+Evidências possíveis:
+
+- passo concreto concluído;
+- capacidade desenvolvida;
+- barreira removida;
+- experiência vivida;
+- decisão consciente registrada;
+- mudança de contexto;
+- confirmação do próprio participante.
+
+Exemplo:
+
+> Avanço reconhecido: você concluiu o nível básico e registrou que já consegue compreender textos simples. O desafio atual informado é utilizar o idioma em situações profissionais.
+
+A evidência deverá informar origem, data e possibilidade de correção. Quando não houver base suficiente, a interface deverá dizer que ainda não há evidência para afirmar avanço.
+
+## 8. Por que este Próximo Passo faz sentido
+
+A justificativa deverá conectar:
+
+```text
+momento atual confirmado
+→ avanço reconhecido
+→ objetivo autorizado
+→ lacuna ou possibilidade atual
+→ Próximo Passo
+→ contribuição possível da oportunidade
+```
+
+Exemplo:
+
+> Este Próximo Passo faz sentido porque você já concluiu o nível básico, deseja utilizar o inglês no trabalho e informou que a prática profissional ainda é uma dificuldade. O curso pode oferecer situações de comunicação aplicada, mas não é o único caminho possível.
+
+A tela deverá apresentar:
+
+- informações utilizadas;
+- distinção entre fato e inferência;
+- razão temporal;
+- contribuição possível;
+- incertezas;
+- alternativas disponíveis;
+- controles para corrigir ou rejeitar a relação.
+
+Respostas possíveis:
+
+- `Faz sentido para mim`;
+- `Faz sentido parcialmente`;
+- `Não faz sentido para mim`;
+- `Quero outro caminho`.
+
+A concordância não cria obrigação de agir.
+
+## 9. Investimento e condições
 
 O bloco deverá apresentar:
 
@@ -125,7 +184,7 @@ Exemplo:
 
 > R$ 79,90 por mês, em seis parcelas. Custo total estimado: R$ 479,40. Valor válido para novas inscrições até 31/07/2026.
 
-### 7.1 Validade do preço
+### 9.1 Validade do preço
 
 Validade do preço é a data ou período até o qual a Organização declara que o valor permanece vigente para nova inscrição, contratação ou compra.
 
@@ -147,7 +206,7 @@ Regras:
 - preço sob consulta limitará comparação e apresentação;
 - destaque promocional não poderá superar custo total e condições.
 
-## 8. O que precisa saber antes de decidir
+## 10. O que precisa saber antes de decidir
 
 O primeiro nível deverá mostrar:
 
@@ -165,7 +224,7 @@ O primeiro nível deverá mostrar:
 
 Políticas extensas permanecerão em detalhamento progressivo.
 
-## 9. Condições para participar
+## 11. Condições para participar
 
 O título de leitura será **Condições para participar**. O estado técnico de elegibilidade permanecerá explícito.
 
@@ -190,7 +249,7 @@ A tela deverá explicar:
 
 A Guivos não poderá apresentar probabilidade como aprovação.
 
-## 10. Quem oferece
+## 12. Quem oferece
 
 O bloco deverá permitir verificar:
 
@@ -206,7 +265,7 @@ O bloco deverá permitir verificar:
 
 Verificação institucional não representa garantia de resultado ou adequação individual.
 
-## 11. Relação comercial com a Guivos
+## 13. Relação comercial com a Guivos
 
 A tela deverá declarar, quando aplicável:
 
@@ -225,7 +284,7 @@ Formulação de referência:
 
 A presença companheira não poderá ser utilizada para disfarçar publicidade.
 
-## 12. Ações contextuais
+## 14. Ações contextuais
 
 Não haverá uma ação principal universal.
 
@@ -253,8 +312,14 @@ Ações secundárias persistentes:
 
 `Mapa` não permanecerá na barra quando a oportunidade não depender de localização.
 
-## 13. Estados alternativos ainda pendentes
+## 15. Estados alternativos ainda pendentes
 
+- informação insuficiente sobre o momento;
+- sinais de contexto conflitantes;
+- avanço ainda não confirmado;
+- inferência contestada;
+- momento alterado recentemente;
+- múltiplos Próximos Passos igualmente válidos;
 - oportunidade gratuita com custos externos;
 - preço variável ou sob consulta;
 - lista de espera;
@@ -270,25 +335,33 @@ Ações secundárias persistentes:
 - baixa conectividade;
 - acessibilidade com texto ampliado e leitor de tela.
 
-## 14. Decisões humanas aplicadas
+## 16. Decisões humanas aplicadas
 
-1. A relação com a jornada antecede preço e conversão.
-2. O preço permanece visível como investimento e condição, não argumento promocional.
-3. A oportunidade é declarada como possibilidade, não recomendação definitiva.
-4. A temporalidade passa a utilizar `Por que apareceu agora?`.
-5. Elegibilidade passa a ser lida em `Condições para participar`.
-6. `Organização responsável` passa a ser `Quem oferece`.
-7. `Transparência comercial` passa a ser `Relação comercial com a Guivos`.
-8. A ação principal passa a depender do tipo e estado real.
-9. `Mapa` deixa de ser ação persistente quando não for material.
-10. Salvar e comparar permanecem alternativas legítimas.
-11. O gate da Fundação passa a integrar os critérios de aceite.
+1. A leitura do momento antecede a justificativa do Próximo Passo.
+2. O avanço é demonstrado por evidências de mudança relevantes para a jornada.
+3. A Guivos explica por que o Próximo Passo faz sentido por meio de uma cadeia compreensível e contestável.
+4. A relação com a jornada antecede preço e conversão.
+5. O preço permanece visível como investimento e condição, não argumento promocional.
+6. A oportunidade é declarada como possibilidade, não recomendação definitiva.
+7. A temporalidade passa a utilizar `Por que apareceu agora?`.
+8. Elegibilidade passa a ser lida em `Condições para participar`.
+9. `Organização responsável` passa a ser `Quem oferece`.
+10. `Transparência comercial` passa a ser `Relação comercial com a Guivos`.
+11. A ação principal passa a depender do tipo e estado real.
+12. `Mapa` deixa de ser ação persistente quando não for material.
+13. Salvar e comparar permanecem alternativas legítimas.
+14. O gate da Fundação integra os critérios de aceite.
 
-## 15. Critérios de aceite
+## 17. Critérios de aceite
 
 O wireframe poderá avançar quando:
 
 - aderência à Fundação da Guivos estiver demonstrada;
+- a leitura do momento apresentar informações e fontes utilizadas;
+- fato, evidência, informação externa e inferência estiverem distinguidos;
+- o avanço reconhecido for demonstrado sem inventar progresso;
+- o Próximo Passo for explicado por uma cadeia lógica e corrigível;
+- alternativas e incertezas permanecerem visíveis;
 - a relação com a jornada for compreendida antes da conversão;
 - possibilidade e recomendação definitiva forem distinguidas;
 - preço, custo total, validade e condições forem compreendidos;
@@ -303,6 +376,6 @@ O wireframe poderá avançar quando:
 - a interação favorecer compreensão e ação no mundo real;
 - a leitura não depender do identificador técnico.
 
-## 16. Limites
+## 18. Limites
 
 Esta versão não autoriza protótipo navegável, design visual, testes de usabilidade, componentes técnicos, preços reais, validação de Organizações ou desenvolvimento.
