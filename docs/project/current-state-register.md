@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.35.0
+version: 1.36.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -11,15 +11,17 @@ depends_on:
 related:
   - GEA-000
   - PAS-001
+  - UXA-000
+  - UXA-001
+  - UXA-002
+  - UXA-003
+  - UXA-004
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-017
-  - GKR-R5-VALIDATION-001
-  - GKR-R6-RESUMPTION-001
   - COD-017
-  - ROADMAP-11.82.0
-  - M7.19
+  - ROADMAP-11.83.0
+  - M7.19.1
 normative: true
 ---
 
@@ -34,45 +36,64 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.19 — Seventeenth Human Outcome Decision Recorded` |
+| Marco | `M7.19.1 — Experience Architecture Discovery Activated` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
-| Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
-| Trabalho ativo | `BA-STR-002 — Business Outcomes` |
+| A2-R03 — Business Architecture Review | ativa, operacionalmente pausada antes de `BUS-CAND-010` |
+| Business Outcomes | 17 de 18 decisões; nenhuma submissão aberta |
+| `BUS-CAND-010` | `Under Validation`; decisão e fusão não antecipadas |
 | COR | `0.29.0`; 10 `Under Validation`, 2 `Merged` e 6 `Rejected` |
-| CODR | `0.33.0`; 17 de 18 decisões humanas; 0 submissões aguardando resposta |
-| `COD-001` a `COD-017` | registrados e preservados |
-| `BUS-CAND-009` | `Rejected`; coerência global com adequação contextual preservada como princípio arquitetural e critério governado |
-| Próximo candidato | `BUS-CAND-010 — Capacidade de reinvestimento responsável` |
+| CODR | `0.33.0`; 17 de 18 decisões humanas |
+| Frente ativa | `UXA-001 — Experience Architecture Discovery` |
+| Experience Architecture | fundação, tela Hoje, mapa de jornadas e fluxos de ecossistema propostos |
+| Wireframes | não iniciados |
+| Protótipos | não iniciados |
+| Testes de usabilidade | não iniciados |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
 | Guivos Economic Model | arquitetura documental inicial concluída; validações reais pendentes |
-| Portfólio especializado | Mall, Business, Intelligence, Ads, Media e Travel pendentes de rebaseline |
-| Commercial Model | não iniciado |
-| Go-to-Market | não iniciado |
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Resultado de COD-017
+## 3. Pausa governada de Business Outcomes
 
-O Fundador aceitou `Reject` para `BUS-CAND-009 — Coerência global com adequação contextual`.
+O Fundador autorizou a integração de `COD-017` e determinou uma pausa antes da preparação da décima oitava decisão.
 
-Formulação originalmente avaliada:
+Consequências:
 
-> A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
+- `BUS-CAND-010 — Capacidade de reinvestimento responsável` permanece `Under Validation`;
+- `BA-STR-002-COD-SUB-018` não existe;
+- `COD-018` não existe;
+- a recomendação `Merge into BUS-CAND-005` não foi executada;
+- a frente de Business Outcomes não foi concluída;
+- nenhum Outcome foi promovido ou canonicalizado;
+- a retomada dependerá de autorização explícita posterior.
 
-A decisão retirou o candidato do futuro catálogo de Business Outcomes e preservou:
+## 4. Experience Architecture ativada
 
-- coerência global com adequação contextual como princípio arquitetural e critério governado;
-- critérios de internacionalização, localização e desenho de capacidades;
-- avaliação de mudanças contra identidade, propósito, autoridade e legitimidade institucional;
-- decisões contextuais sobre padronização, adaptação, integração e autonomia local;
-- formulação, evidências e rastreabilidade histórica.
+A nova frente documenta como as capacidades funcionais já consolidadas se tornam uma experiência navegável para Pessoas, Organizações e Coletivos.
 
-A decisão não impõe padronização global, não proíbe adaptação local, não exige internacionalização e não considera tradução, presença local ou variação nominal de produto como prova suficiente de adequação legítima.
+Documentos iniciais:
 
-## 4. Sequência oficial após integração
+- `UXA-000 — Arquitetura da Experiência da Guivos`;
+- `UXA-001 — Fundação da Arquitetura da Experiência`;
+- `UXA-002 — Experiência Diária e Tela Hoje`;
+- `UXA-003 — Mapa Inicial de Jornadas e Telas`;
+- `UXA-004 — Oportunidades, Organizações, Coletivos e Mapa`.
+
+A frente estabelece, como hipóteses para validação:
+
+- `Hoje` como porta de entrada pessoal orientada por utilidade material;
+- navegação pessoal em Hoje, Jornada, Explorar, Mapa e Eu;
+- contextos próprios para Organização e Coletivo;
+- controle explícito de relevância;
+- cadastro governado de oportunidades;
+- apresentação transparente de preços, elegibilidade e relações comerciais;
+- mapa com camadas de oportunidades, Organizações, Coletivos e atividades;
+- recorrência por valor real, não por frequência compulsiva.
+
+## 5. Sequência oficial vigente
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
@@ -80,46 +101,39 @@ Guivos Journey — concluído funcionalmente e publicado
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
 → decisões humanas do BA-STR-002 — 17 de 18
+→ pausa governada antes de BUS-CAND-010
+→ Experience Architecture Discovery — ativa
+→ validação da navegação, jornadas e mapa de telas
+→ wireframes somente após decisão explícita
+→ retorno a BUS-CAND-010 quando autorizado
 → conclusão de Business Outcomes
-→ BA-CAP-001 e BA-CAP-002
-→ rebaseline do portfólio especializado
-→ Commercial Model
-→ Go-to-Market
-→ Product Engineering somente mediante autorização explícita
+→ Business Capabilities e fases posteriores
 ```
 
-## 5. Próximo ato autorizado após integração
+## 6. Próximo ato autorizado
 
-Preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
+Revisar e decidir sobre:
 
-Nenhuma decisão posterior será registrada automaticamente.
+1. arquitetura de navegação proposta;
+2. papel da tela `Hoje`;
+3. mapa inicial de telas;
+4. fluxos de oportunidades, Organizações, Coletivos e Mapa;
+5. autorização para iniciar wireframes de baixa fidelidade.
 
-## 6. Backlog global preservado
-
-Após BA-STR-002 e Business Capabilities, deverão ser reavaliados, nesta ordem histórica de referência:
-
-1. Guivos Mall;
-2. Guivos Business;
-3. Guivos Intelligence;
-4. Guivos Ads;
-5. Guivos Media;
-6. Guivos Travel;
-7. Commercial Model;
-8. Go-to-Market.
-
-Essa ordem não constitui autorização de início.
+Nenhum wireframe, protótipo, teste ou desenvolvimento será iniciado automaticamente.
 
 ## 7. Limites
 
 O estado proposto não autoriza:
 
-- impor padronização global, proibir adaptação local ou exigir internacionalização;
-- tratar tradução, presença local ou variação de produto como prova suficiente de adequação legítima;
-- promover qualquer candidato a `Approved`;
+- criar `BA-STR-002-COD-SUB-018` ou `COD-018`;
+- fundir `BUS-CAND-010` em `BUS-CAND-005`;
+- concluir Business Outcomes;
+- promover candidatos a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
 - iniciar AQS-O01 ou Business Capabilities;
-- reabrir o Economic Model sem condição material;
-- especificar produtos especializados;
-- iniciar Commercial Model ou Go-to-Market;
-- retomar Product Engineering, W0-01, POCs, ambientes ou produção;
+- tratar a navegação proposta como layout visual definitivo;
+- iniciar wireframes, protótipos ou testes sem autorização;
+- definir preços e planos finais;
+- iniciar Product Engineering, W0-01, POCs, ambientes ou produção;
 - tratar Market Validation como já executada.
