@@ -9,7 +9,7 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 | Dimensão | Situação |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.20 — Décima Oitava Decisão Humana Registrada` |
+| Marco | `M7.21 — Página Inicial da Guivos e Início da Jornada Estabelecidos` |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em `PAS-001 1.0.0`; nove capacidades concluídas |
@@ -17,26 +17,48 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 | Resultados Empresariais | 18 de 18 decisões humanas; 9 em validação, 3 fundidos e 6 rejeitados |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável por `COD-018` |
 | Resultados canônicos | nenhum criado |
-| Arquitetura da Experiência | integrada até `UXA-019`; protótipo, design e testes não iniciados |
+| Arquitetura da Experiência | integrada até `UXA-020`; HOME estabelecida e Tela Hoje reposicionada |
+| Personalização inicial | bloqueada antes da compreensão suficiente e autorizada |
+| Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de `W0-01` |
 
 ## Missão atual
 
-Preservar o estado concluído das 18 decisões humanas e preparar, somente mediante nova autorização, a reaplicação dos quatro testes às formulações revisadas e combinadas.
+Preservar o estado concluído das 18 decisões humanas e consolidar a primeira entrada pessoal da Guivos por meio da HOME, do relato do Momento Atual, da compreensão inicial e da transição governada para a Tela Hoje.
 
-Nenhum Resultado canônico, Capacidade Empresarial, produto especializado, Modelo Comercial, Entrada no Mercado ou implementação técnica é iniciado automaticamente.
+Nenhum Resultado canônico, Capacidade Empresarial, protótipo, design, teste, produto especializado, Modelo Comercial, Entrada no Mercado ou implementação técnica é iniciado automaticamente.
+
+## Primeira entrada pessoal
+
+```text
+Página Inicial da Guivos
+→ apresentação do propósito e do ecossistema
+→ início voluntário da jornada
+→ relato por texto, voz, arquivos ou perguntas progressivas
+→ compreensão inicial apresentada
+→ revisão, correção e autorização
+→ Tela Hoje
+```
+
+A HOME permite conhecer Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads antes do início da jornada.
+
+Nesse estado, o conteúdo permanece geral, institucional, editorial ou resultante de busca explícita. A Guivos somente poderá afirmar relevância pessoal depois que o Momento Atual possuir base suficiente, revisável e autorizada.
+
+A Tela Hoje passa a ser a principal entrada recorrente após esse gate, preservando contexto, síntese condicional, atenção principal, continuidade da jornada e oportunidades explicáveis.
 
 ## Sequência global
 
 1. **Concluído:** Guivos Journey funcional e publicação arquitetural.
 2. **Concluído documentalmente:** Modelo Econômico, de `GEM-001` a `GEM-010`.
-3. **Concluído:** remediação, validação externa, COEM inicial e 18 decisões humanas.
-4. **Próximo, após autorização:** reaplicação da COEM às nove formulações ativas.
-5. **Posterior:** ajuste prático do AQS-O01 e consolidação dos catálogos canônicos.
-6. **Dependência seguinte:** `BA-CAP-001` e `BA-CAP-002`.
-7. **Backlog preservado:** Mall, Business, Intelligence, Ads, Media e Travel.
-8. **Ciclos posteriores:** Modelo Comercial e Entrada no Mercado.
-9. **Execução técnica:** somente mediante autorização explícita.
+3. **Concluído:** remediação, validação externa, Matriz de Avaliação inicial e 18 decisões humanas.
+4. **Concluído neste incremento:** HOME e início da jornada estabelecidos funcionalmente.
+5. **Pendente mediante autorização:** validação funcional e estados especializados da HOME.
+6. **Pendente mediante autorização independente:** reaplicação dos quatro testes às nove formulações ativas.
+7. **Posterior:** ajuste prático do AQS-O01 e consolidação dos catálogos canônicos.
+8. **Dependência seguinte:** `BA-CAP-001` e `BA-CAP-002`.
+9. **Backlog preservado:** Mall, Business, Intelligence, Ads, Media e Travel.
+10. **Ciclos posteriores:** Modelo Comercial e Entrada no Mercado.
+11. **Execução técnica:** somente mediante autorização explícita.
 
 ## Decisão COD-018
 
@@ -79,6 +101,7 @@ Esses entregáveis produzem evidência, mas não substituem autoridades arquitet
 - [Guivos Economic Model](economic-model/index.md)
 - [Guivos Business Architecture](business-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
+- [Página Inicial da Guivos e Início da Jornada](experience-architecture/uxa-020-home-and-journey-entry.md)
 
 ### Resultados Empresariais
 

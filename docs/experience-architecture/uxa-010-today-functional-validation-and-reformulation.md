@@ -1,8 +1,8 @@
 ---
 id: UXA-010
 title: Validação Funcional e Reformulação da Tela Hoje
-status: draft
-version: 0.1.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -14,6 +14,7 @@ depends_on:
 related:
   - UXA-003
   - UXA-004
+  - UXA-020
   - PAS-001-CV-VIEW-001
   - PAS-001-PP-VIEW-001
   - PAS-001-OA-VIEW-001
@@ -25,15 +26,17 @@ normative: true
 
 ## 1. Finalidade
 
-Este documento registra a primeira validação humana funcional da **Tela Hoje** e governa a reformulação do respectivo wireframe de baixa fidelidade.
+Este documento registra a primeira validação humana funcional da **Tela Hoje**, governa a reformulação do respectivo wireframe de baixa fidelidade e preserva a decisão posterior de que a **Página Inicial da Guivos** e o **início protegido da jornada** deverão antecedê-la na primeira experiência pessoal.
 
 A decisão permanece restrita à arquitetura da experiência. Ela não aprova design visual, componentes técnicos, protótipo navegável, testes de usabilidade ou desenvolvimento.
 
-## 2. Decisão humana registrada
+## 2. Decisões humanas registradas
+
+### 2.1 Reformulação funcional original
 
 O Fundador aprovou o prosseguimento com a reformulação funcional apresentada após a revisão do wireframe inicial.
 
-A decisão aceita os seguintes ajustes:
+A decisão aceitou os seguintes ajustes:
 
 1. manter a síntese do momento, mas torná-la condicional;
 2. preservar somente um item principal de atenção;
@@ -41,9 +44,52 @@ A decisão aceita os seguintes ajustes:
 4. explicitar o contexto de atuação com a expressão `Agindo como`;
 5. mostrar Coletivos e atividades somente quando houver utilidade temporal.
 
-## 3. Estrutura preservada
+### 2.2 Precedência da Página Inicial e do início protegido da jornada
 
-A ordem funcional permanece:
+Em 26/07/2026, o Fundador determinou que a experiência pessoal deverá possuir uma **Página Inicial da Guivos anterior à Tela Hoje**.
+
+A auditoria funcional posterior estabeleceu três responsabilidades distintas:
+
+- a **Página Inicial da Guivos** apresenta a instituição, o propósito e o ecossistema sem coletar relatos pessoais;
+- o **início protegido da jornada** recebe texto, voz, arquivos ou respostas progressivas depois de transição consciente, autenticação e autorização compatíveis;
+- a **Tela Hoje** utiliza somente compreensão suficiente, revisável e autorizada para apoiar a continuidade da jornada.
+
+A pessoa:
+
+- conhece a Guivos e o ecossistema na Página Inicial;
+- decide voluntariamente iniciar a jornada;
+- entra em ambiente protegido antes de compartilhar seu Momento Atual;
+- revisa o que a Guivos compreendeu;
+- corrige, limita e confirma a compreensão;
+- somente então recebe indicações contextuais na Tela Hoje.
+
+Essa decisão não invalida a hierarquia funcional já aprovada para a Tela Hoje. Ela altera sua posição na jornada: de primeira entrada pessoal para **entrada recorrente após a compreensão inicial confirmada**.
+
+## 3. Sequência de entrada preservada
+
+A sequência pessoal passa a ser:
+
+```text
+Página Inicial da Guivos
+→ decisão voluntária de iniciar
+→ início protegido da jornada
+→ relato do Momento Atual
+→ compreensão inicial revisável
+→ confirmação e autorização
+→ Tela Hoje
+```
+
+A Tela Hoje não deverá:
+
+- substituir a apresentação institucional da Página Inicial;
+- coletar o primeiro relato completo sem contexto e proteção;
+- apresentar personalização antes do gate de compreensão;
+- utilizar popularidade, publicidade ou perfil genérico para simular relevância;
+- receber diretamente voz, arquivos ou outras informações quando a pessoa ainda estiver na superfície pública.
+
+## 4. Estrutura recorrente preservada
+
+Dentro da Tela Hoje, a ordem funcional permanece:
 
 ```text
 contexto de atuação
@@ -57,11 +103,11 @@ contexto de atuação
 
 O Próximo Passo permanece antes das oportunidades para preservar continuidade da jornada e evitar que o conteúdo comercial ocupe prioridade superior ao movimento declarado pela pessoa.
 
-## 4. Síntese do momento
+## 5. Síntese do momento
 
 A síntese permanece válida, mas não será um bloco obrigatório.
 
-### 4.1 Quando aparece
+### 5.1 Quando aparece
 
 A síntese deverá aparecer quando existirem pelo menos dois acontecimentos materiais que possam ser compreendidos melhor em conjunto, por exemplo:
 
@@ -71,18 +117,21 @@ A síntese deverá aparecer quando existirem pelo menos dois acontecimentos mate
 - uma atividade próxima;
 - uma alteração material em processo iniciado.
 
-### 4.2 Quando não aparece
+A síntese deverá possuir base em compreensão confirmada, atualização posterior ou fonte autorizada.
+
+### 5.2 Quando não aparece
 
 A síntese deverá ser omitida quando:
 
 - houver somente um item relevante, evitando repetição;
 - não houver informação material;
 - a agregação aumentar exposição de informação sensível;
-- a fonte estiver incompleta ou com sincronização incerta.
+- a fonte estiver incompleta ou com sincronização incerta;
+- a compreensão inicial ainda não possuir segurança suficiente.
 
 A ausência da síntese não deverá deixar espaço vazio artificial.
 
-## 5. Atenção principal e múltiplos itens críticos
+## 6. Atenção principal e múltiplos itens críticos
 
 A Tela Hoje continuará destacando no máximo um item principal de atenção.
 
@@ -96,7 +145,7 @@ Quando existirem múltiplos itens críticos:
 
 A priorização seguirá segurança e direitos, prazo ou risco material, confirmação solicitada, processo iniciado, dependência real e prioridade declarada.
 
-## 6. Contexto de atuação
+## 7. Contexto de atuação
 
 O seletor deverá apresentar explicitamente:
 
@@ -106,7 +155,7 @@ As alternativas poderão incluir Organização representada ou Coletivo administ
 
 A interface deverá impedir que uma ação institucional seja executada como ação pessoal ou vice-versa. Mudanças de contexto deverão ser conscientes, visíveis e reversíveis.
 
-## 7. Oportunidades para considerar
+## 8. Oportunidades para considerar
 
 Os cartões lado a lado deixam de ser a solução preferencial para a tela móvel de referência.
 
@@ -118,11 +167,14 @@ A apresentação reformulada deverá:
 - oferecer explicação de por que a oportunidade aparece;
 - manter acesso ao conjunto completo em Explorar ou Minhas Oportunidades;
 - evitar repetição de categorias ou fontes;
-- permitir que somente uma oportunidade seja exibida quando apenas uma possuir utilidade temporal suficiente.
+- permitir que somente uma oportunidade seja exibida quando apenas uma possuir utilidade temporal suficiente;
+- utilizar somente contexto autorizado e corrigível para justificar relevância pessoal.
 
 A quantidade máxima de dois cartões não constitui meta de preenchimento. Nenhuma oportunidade deverá ser apresentada apenas para completar a tela.
 
-## 8. Coletivos e atividades
+Antes do gate da compreensão inicial, itens gerais poderão existir em Explorar ou na Página Inicial, mas não serão descritos como indicação pessoal.
+
+## 9. Coletivos e atividades
 
 O bloco de Coletivos permanece na Tela Hoje somente quando houver utilidade temporal, como:
 
@@ -135,7 +187,7 @@ O bloco de Coletivos permanece na Tela Hoje somente quando houver utilidade temp
 
 Publicações sociais, atualizações genéricas ou ausência recente não justificam o bloco.
 
-## 9. Navegação preservada
+## 10. Navegação preservada
 
 A navegação pessoal permanece:
 
@@ -147,22 +199,27 @@ A navegação pessoal permanece:
 
 `Jornada` é o termo consolidado para contexto, objetivos, Próximos Passos, experiências e evolução. O incremento não altera essa nomenclatura.
 
-## 10. Resultado da reformulação
+A Página Inicial continuará acessível por marca, menu institucional ou opção de acesso ao Ecossistema Guivos, sem necessariamente ocupar a navegação principal recorrente.
+
+## 11. Resultado da reformulação
 
 A nova versão do Wireframe de Baixa Fidelidade da Tela Hoje deverá demonstrar:
 
+- posição recorrente após a Página Inicial, o início protegido da jornada e a compreensão inicial;
 - contexto de atuação mais explícito;
 - síntese condicional;
 - um único item principal;
 - continuidade da jornada antes da descoberta comercial;
 - oportunidades legíveis em largura integral;
 - ausência legítima de blocos sem utilidade temporal;
-- acesso claro a itens adicionais sem sobrecarregar a superfície.
+- acesso claro a itens adicionais sem sobrecarregar a superfície;
+- personalização sustentada por contexto confirmado e corrigível.
 
-## 11. Estados ainda não resolvidos
+## 12. Estados ainda não resolvidos
 
 Permanecem pendentes de wireframes separados:
 
+- primeira Tela Hoje após a confirmação da compreensão inicial;
 - estado totalmente vazio;
 - múltiplos itens críticos;
 - informação sensível em modo discreto;
@@ -173,7 +230,7 @@ Permanecem pendentes de wireframes separados:
 - alteração de preço em processo iniciado;
 - acessibilidade com texto ampliado.
 
-## 12. Limites
+## 13. Limites
 
 Esta decisão não autoriza:
 
@@ -183,15 +240,17 @@ Esta decisão não autoriza:
 - testes de usabilidade;
 - implementação;
 - criação automática dos estados alternativos;
-- retomada da decisão sobre Capacidade de reinvestimento responsável;
 - início da Engenharia de Produto.
 
-## 13. Próximo ponto de decisão
+## 14. Próximo ponto de decisão
 
-Após a integração desta reformulação, a próxima decisão deverá escolher separadamente entre:
+Após a integração desta reformulação, os próximos atos dependerão de autorização separada e poderão:
 
-1. validar funcionalmente o Detalhe de Oportunidade;
-2. validar funcionalmente o Cadastro de Oportunidade pela Organização;
-3. selecionar um estado alternativo da Tela Hoje para novo wireframe.
+1. validar funcionalmente a Página Inicial pública;
+2. validar funcionalmente a entrada do fluxo protegido;
+3. detalhar a captura multimodal do Momento Atual;
+4. validar a revisão da compreensão inicial;
+5. criar a primeira variação da Tela Hoje após a transição;
+6. selecionar outro estado alternativo da Tela Hoje para wireframe.
 
 O protótipo navegável continuará dependendo de autorização explícita posterior.

@@ -2,9 +2,9 @@
 id: UXA-001
 title: Fundação da Arquitetura da Experiência da Guivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Experience Architecture
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 parent: UXA-000
 depends_on:
   - PAS-001
@@ -12,6 +12,7 @@ depends_on:
   - GLPA-001
   - GIA-000
 related:
+  - UXA-020
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
   - PAS-001-PP-VIEW-001
@@ -24,7 +25,7 @@ normative: false
 
 ## 1. Problema central
 
-O GKR já define com profundidade o que as capacidades do Guivos Journey devem governar, mas ainda não consolida como Pessoas, Organizações e Coletivos navegarão entre essas capacidades, quais telas existirão, o que aparecerá primeiro, como a relevância será controlada e como as soluções especializadas serão integradas à experiência.
+O GKR já define com profundidade o que as capacidades do Guivos Journey devem governar, mas ainda precisa consolidar como Pessoas, Organizações e Coletivos navegarão entre essas capacidades, quais telas existirão, o que aparecerá primeiro, como a relevância será controlada e como as soluções especializadas serão integradas à experiência.
 
 A pergunta central desta frente é:
 
@@ -41,31 +42,35 @@ A Guivos possuirá uma **arquitetura de experiência unificada**, com superfíci
 - responsabilidade institucional;
 - canal e dispositivo;
 - sensibilidade e privacidade;
-- estado da relação com uma oportunidade, organização ou coletivo.
+- estado da relação com uma oportunidade, organização ou coletivo;
+- estágio de entrada: visitante, jornada não iniciada ou jornada em continuidade.
 
 Pessoa, Organização e Coletivo são categorias arquiteturais. Uma mesma conta humana poderá exercer papéis em mais de um participante, mediante autorização e troca explícita de contexto.
 
 ## 3. Princípios permanentes de experiência
 
 1. **Utilidade antes de frequência.** A Guivos não será otimizada para tempo de tela ou acesso compulsivo.
-2. **Hoje antes de feed.** A superfície inicial deverá explicar o que é material no momento, não oferecer rolagem infinita.
-3. **Jornada não linear.** Nenhuma tela deverá transformar as nove capacidades do Journey em pipeline obrigatório.
-4. **Decisão com o participante.** A interface poderá explicar, comparar e propor, mas não decidir objetivo, prioridade ou compromisso humano.
-5. **Relevância controlável.** Toda personalização material deverá ser explicável, ajustável e contestável.
-6. **Clareza comercial.** Preço, patrocínio, comissão, subsídio e relação financeira deverão ser visíveis sem alterar relevância funcional.
-7. **Silêncio legítimo.** Ausência de oportunidade, intervenção ou Próximo Passo é um estado válido.
-8. **Detalhamento progressivo.** A tela apresenta primeiro o necessário para compreender e decidir; evidências, histórico e permissões permanecem acessíveis.
-9. **Privacidade por padrão.** Informações sensíveis não devem aparecer em resumos, notificações ou telas compartilhadas sem necessidade.
-10. **Ação no mundo real.** A experiência deverá facilitar participação, contratação, encontro, aprendizagem e realização fora da plataforma.
-11. **Consistência entre canais.** Aplicativo, web e futuras interfaces deverão preservar a mesma semântica funcional.
-12. **Acessibilidade estrutural.** A experiência deverá funcionar sem depender apenas de cor, gesto, áudio ou alta capacidade cognitiva.
+2. **HOME antes de personalização.** A Guivos deverá apresentar propósito, início voluntário e controles antes de afirmar relevância pessoal.
+3. **Hoje antes de feed.** Depois do início da jornada, a superfície recorrente deverá explicar o que é material no momento, não oferecer rolagem infinita.
+4. **Jornada não linear.** Nenhuma tela deverá transformar as nove capacidades do Journey em pipeline obrigatório.
+5. **Decisão com o participante.** A interface poderá explicar, comparar e propor, mas não decidir objetivo, prioridade ou compromisso humano.
+6. **Relevância controlável.** Toda personalização material deverá ser explicável, ajustável e contestável.
+7. **Clareza comercial.** Preço, patrocínio, comissão, subsídio e relação financeira deverão ser visíveis sem alterar relevância funcional.
+8. **Silêncio legítimo.** Ausência de oportunidade, intervenção ou Próximo Passo é um estado válido.
+9. **Detalhamento progressivo.** A tela apresenta primeiro o necessário para compreender e decidir; evidências, histórico e permissões permanecem acessíveis.
+10. **Privacidade por padrão.** Informações sensíveis não devem aparecer em resumos, notificações ou telas compartilhadas sem necessidade.
+11. **Ação no mundo real.** A experiência deverá facilitar participação, contratação, encontro, aprendizagem e realização fora da plataforma.
+12. **Consistência entre canais.** Aplicativo, web e futuras interfaces deverão preservar a mesma semântica funcional.
+13. **Acessibilidade estrutural.** A experiência deverá funcionar sem depender apenas de cor, gesto, áudio ou alta capacidade cognitiva.
+14. **Exploração sem coerção.** A pessoa poderá conhecer o ecossistema sem iniciar sua jornada ou compartilhar contexto pessoal.
+15. **Compreensão antes de indicação.** Conteúdo geral e indicação pessoal deverão permanecer distintos até existir contexto suficiente e autorizado.
 
-## 4. Objetivos da Experience Architecture
+## 4. Objetivos da Arquitetura da Experiência
 
 A frente deverá produzir:
 
 - mapa de jornadas por participante e papel;
-- arquitetura global de navegação;
+- arquitetura global de entrada e navegação;
 - inventário de telas e estados;
 - responsabilidade e conteúdo mínimo de cada tela;
 - fluxos críticos de entrada, descoberta, decisão, participação e revisão;
@@ -76,13 +81,29 @@ A frente deverá produzir:
 - hipóteses e roteiros de teste de usabilidade;
 - contratos de handoff posteriores para Produto, UI, Engenharia, QA, Segurança, Jurídico, IA e Analytics.
 
-## 5. Modelo de navegação global proposto
+## 5. Modelo de entrada e navegação global proposto
+
+### 5.0 Página Inicial da Guivos — HOME
+
+A HOME é uma superfície global anterior à navegação recorrente pessoal.
+
+Responsabilidades:
+
+- apresentar propósito e impacto da Guivos;
+- convidar voluntariamente a iniciar a jornada;
+- permitir relato do Momento Atual por modalidades autorizadas;
+- apresentar a compreensão inicial para revisão;
+- permitir conhecer as soluções do ecossistema sem personalização;
+- direcionar a pessoa para autenticação, privacidade, ajuda e acessibilidade;
+- conduzir à Tela Hoje somente depois do gate de compreensão.
+
+A HOME poderá permanecer acessível por marca ou menu institucional depois do início da jornada, sem necessariamente ocupar uma posição na navegação móvel principal.
 
 ### 5.1 Navegação principal da Pessoa
 
 | Destino | Responsabilidade |
 |---|---|
-| **Hoje** | concentrar o que mudou, o que merece atenção e o que pode apoiar o momento atual |
+| **Hoje** | concentrar o que mudou, o que merece atenção e o que pode apoiar o momento atual depois da compreensão inicial |
 | **Jornada** | reunir Contexto, Objetivos, Próximos Passos, Experiências e Evolução |
 | **Explorar** | descobrir Oportunidades, Organizações, Coletivos, conteúdos, serviços e experiências |
 | **Mapa** | visualizar oportunidades, organizações, coletivos e eventos por localização autorizada |
@@ -124,9 +145,19 @@ Uma pessoa autenticada poderá:
 
 A interface nunca deverá permitir que uma ação institucional pareça pessoal ou que uma ação pessoal seja executada em nome de uma Organização ou Coletivo sem confirmação.
 
+A HOME anterior ao início da jornada não deverá presumir que a pessoa está representando uma Organização ou Coletivo. Essa escolha deverá ser consciente e contextual.
+
 ## 7. Hierarquia de superfícies
 
-### Nível 1 — Orientação
+### Nível 0 — Entrada global
+
+- Página Inicial da Guivos;
+- entrada e autenticação;
+- início da jornada;
+- compreensão inicial e confirmação;
+- conhecimento do ecossistema.
+
+### Nível 1 — Orientação recorrente
 
 - Hoje;
 - visão geral da Organização;
@@ -176,7 +207,9 @@ O Journey permanece responsável pela experiência visível e contextual. Os pro
 - Guivos Ads: publicidade explicitamente identificada;
 - Guivos Intelligence: interpretação, comparação, explicação e candidatos de relevância.
 
-A navegação poderá apresentar conteúdos desses produtos sem apagar sua origem ou transferir autoridade funcional.
+A HOME poderá apresentar todas as soluções do ecossistema sem apagar sua origem ou transferir autoridade funcional.
+
+Antes do gate de personalização, conteúdos serão gerais, institucionais, editoriais ou resultantes de busca explícita. A navegação não utilizará contexto presumido para afirmar relevância pessoal.
 
 ## 9. Frequência e recorrência
 
@@ -193,28 +226,50 @@ A frequência de acesso não será definida por uma meta universal. Ela deverá 
 
 A Guivos poderá ser útil diariamente para alguns participantes e esporadicamente para outros. Ambos os comportamentos são legítimos.
 
-## 10. Ordem inicial de detalhamento
+A HOME não deverá ser forçada a cada retorno. Depois do início da jornada, a Tela Hoje poderá se tornar a entrada recorrente preferencial.
 
-1. tela `Hoje` e navegação global;
-2. descoberta e detalhe de oportunidades;
-3. controle de relevância;
-4. mapa;
-5. cadastro de oportunidade pela Organização;
-6. perfil e operação de Coletivos;
-7. integração com Contexto, Objetivos e Próximos Passos;
-8. estados transacionais e experiências;
-9. wireframes e testes.
+## 10. Ordem inicial de detalhamento atualizada
+
+1. Página Inicial da Guivos e início da jornada;
+2. Tela Hoje e navegação global recorrente;
+3. descoberta e detalhe de oportunidades;
+4. controle de relevância;
+5. mapa;
+6. cadastro de oportunidade pela Organização;
+7. perfil e operação de Coletivos;
+8. integração com Contexto, Objetivos e Próximos Passos;
+9. estados transacionais e experiências;
+10. wireframes e testes.
+
+A ordem representa dependência funcional, não cronologia obrigatória de desenvolvimento.
 
 ## 11. Gate desta fundação
 
 | Critério | Estado |
 |---|---|
-| Experience Architecture separada de Product Engineering | definido |
+| Arquitetura da Experiência separada de Engenharia de Produto | definido |
 | Pessoa, Organização e Coletivo contemplados | definido |
-| navegação global inicial | proposta |
+| HOME anterior à experiência recorrente | definido pela UXA-020 |
+| início voluntário e exploração geral | definido pela UXA-020 |
+| personalização condicionada à compreensão | definido pela UXA-011-A1 e UXA-020 |
+| navegação global recorrente | proposta e preservada |
 | recorrência não compulsiva | definido |
-| tela Hoje como hipótese central | proposta |
+| Tela Hoje como hipótese central recorrente | reformulada e validada funcionalmente |
 | mapa de telas detalhado | UXA-003 |
 | fluxos de oportunidades, organizações e coletivos | UXA-004 |
-| wireframes | não iniciados |
+| wireframes | programa ativo; HOME textual e demais artefatos estruturais |
 | validação com participantes | não iniciada |
+| design visual e implementação | não iniciados |
+
+## 12. Limites
+
+Esta fundação não autoriza:
+
+- texto final da HOME;
+- identidade visual ou campanha de lançamento;
+- formato técnico de voz ou arquivos;
+- inferências sensíveis;
+- protótipo navegável;
+- teste de usabilidade;
+- Engenharia de Produto;
+- desenvolvimento ou produção.
