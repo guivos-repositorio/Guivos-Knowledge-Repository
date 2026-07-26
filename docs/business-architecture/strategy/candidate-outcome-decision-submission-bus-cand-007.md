@@ -1,8 +1,8 @@
 ---
 id: BA-STR-002-COD-SUB-015
-title: Human Decision Submission — BUS-CAND-007
-status: awaiting-decision
-version: 0.1.0
+title: Human Decision Resolution — BUS-CAND-007
+status: decision-recorded
+version: 0.2.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002-CODR-001
@@ -15,23 +15,30 @@ related:
   - RP-001-EVIDENCE
   - BUS-CAND-003
   - BUS-CAND-005
-  - M7.16.1
+  - COD-015
+  - M7.17
 normative: false
 ---
 
-# Human Decision Submission — BUS-CAND-007
+# Human Decision Resolution — BUS-CAND-007
 
 ## 1. Finalidade
 
-Submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual do Candidate Outcome Decision Register.
+Registrar a décima quinta decisão humana individual do Candidate Outcome Decision Register para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
 
-Este documento organiza a recomendação `Reject` e as alternativas. Ele **não registra `COD-015`**, não altera o COR, não rejeita o candidato antes da manifestação explícita do Fundador e não cria código canônico.
+O Fundador da Guivos manifestou explicitamente:
+
+```text
+A — Aceitar Reject
+```
+
+A decisão foi registrada como `COD-015`. Ela rejeita apenas a candidatura de aprendizado institucional como Business Outcome permanente; não reduz a importância de aprender, não remove aprendizagem da arquitetura, não aprova outro candidato e não cria código canônico.
 
 ## 2. Formulação originalmente avaliada
 
 > A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor.
 
-## 3. Resultado da COEM
+## 3. Resultado da COEM preservado
 
 | Teste | Resultado | Síntese |
 |---|---|---|
@@ -41,21 +48,25 @@ Este documento organiza a recomendação `Reject` e as alternativas. Ele **não 
 | Outcome Quality | Fail | a formulação descreve processos multinível e uma capacidade dinâmica, combina mecanismo com melhoria presumida e não possui unidade de Outcome independente |
 | Disposição recomendada | `Reject` | retirar aprendizado institucional do futuro catálogo de Business Outcomes e preservá-lo como capacidade sustentadora |
 
-## 4. Evidências e limites
+## 4. Decisão humana registrada
 
-A validação externa e a COEM sustentam que:
+| Campo | Registro |
+|---|---|
+| Candidato | `BUS-CAND-007 — Aprendizado e adaptação institucionais` |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
 
-1. aprendizagem institucional ocorre entre níveis individual, grupal e organizacional;
-2. capacidade absortiva exige reconhecer, assimilar e aplicar conhecimento de forma cumulativa;
-3. organizações podem sofrer miopia temporal, espacial e de falhas;
-4. aprendizagem não garante melhoria contínua nem resposta superior;
-5. sensing, interpretação, memória, contestação, renovação e adaptação são capacidades sustentadoras;
-6. coleta de dados, analytics, IA, reuniões ou retrospectivas não comprovam aprendizagem institucional;
-7. a recomendação não reduz a importância de aprender nem autoriza remover aprendizagem da arquitetura.
+## 5. Destino arquitetural preservado
 
-## 5. Destino arquitetural proposto
+`BUS-CAND-007` é retirado do futuro catálogo de Business Outcomes, mantendo-se rastreável como hipótese rejeitada.
 
-Retirar `BUS-CAND-007` do futuro catálogo de Business Outcomes e preservar:
+Permanecem preservados:
 
 - **aprendizado institucional** como capacidade sustentadora multinível;
 - sensing, interpretação, absorção, memória, contestação, renovação e adaptação como dimensões governadas dessa capacidade;
@@ -63,54 +74,43 @@ Retirar `BUS-CAND-007` do futuro catálogo de Business Outcomes e preservar:
 - evidências de uso, incorporação e revisão do conhecimento, sem presumir melhoria automática;
 - formulação original, evidências e rastreabilidade para consulta histórica e governança.
 
-## 6. Alternativas submetidas à decisão humana
+Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional. A decisão não elimina essas ferramentas; apenas impede que sua existência seja tratada como evidência automática de aprendizado efetivo.
 
-### Alternativa A — Aceitar `Reject` — recomendada
-
-Autoriza, em incremento posterior de registro:
+## 6. Efeitos autorizados
 
 - criar `COD-015`;
-- aceitar formalmente a disposição `Reject`;
+- aceitar formalmente `Reject`;
 - preservar formulação original, evidências e rastreabilidade;
 - alterar `BUS-CAND-007` de `Under Validation` para `Rejected`;
 - retirar aprendizado institucional do futuro catálogo de Business Outcomes;
 - preservar aprendizado e adaptação como capacidades sustentadoras da arquitetura;
 - bloquear o uso de coleta de dados, analytics, IA ou retrospectivas como prova suficiente.
 
-Não autoriza eliminar aprendizagem da arquitetura, aprovar outro candidato, criar código canônico, iniciar AQS-O01, Business Capabilities, produtos ou Product Engineering.
+## 7. Efeitos bloqueados
 
-### Alternativa B — Rejeitar a recomendação `Reject`
+- eliminar aprendizagem ou adaptação da arquitetura;
+- tratar coleta de dados, analytics, IA, reuniões ou retrospectivas como prova automática de aprendizado;
+- aprovar ou canonicalizar outro candidato;
+- criar código canônico `BO-###`;
+- iniciar AQS-O01, Business Capabilities, produtos, Commercial Model ou Go-to-Market;
+- retomar Product Engineering ou W0-01.
 
-Mantém `BUS-CAND-007` em `Under Validation` e exige fundamentação para preservar sua candidatura, reformulá-la ou adotar disposição distinta.
+## 8. Gate da resolução
 
-A rejeição da recomendação não aprova automaticamente a formulação original ou o candidato.
+| Critério | Resultado |
+|---|---|
+| manifestação humana explícita | Pass |
+| recomendação original preservada | Pass |
+| `COD-015` registrado | Pass |
+| `BUS-CAND-007` alterado para `Rejected` | Pass |
+| aprendizagem preservada como capacidade sustentadora | Pass |
+| dimensões multinível preservadas | Pass |
+| analytics e IA bloqueados como prova suficiente | Pass |
+| distribuição 12/2/4 registrada | Pass |
+| promoção canônica bloqueada | Pass |
+| AQS-O01 não antecipado | Pass |
+| Product Engineering preservado em pausa | Pass |
 
-### Alternativa C — Devolver para nova análise
+## 9. Próximo passo governado
 
-Mantém a recomendação sem decisão e solicita aprofundamento sobre:
-
-- aprendizado como Outcome versus capacidade institucional;
-- fronteiras entre sensing, absorção, memória, contestação e adaptação;
-- observabilidade de aprendizagem sem presumir melhoria;
-- relação com `BUS-CAND-003`, `BUS-CAND-005` e futuras capacidades;
-- limites de analytics, IA, reuniões e retrospectivas como evidência;
-- critérios para demonstrar incorporação efetiva de conhecimento nas decisões.
-
-## 7. Manifestação requerida
-
-O Fundador da Guivos deverá escolher:
-
-```text
-A — Aceitar Reject
-B — Rejeitar Reject, com fundamentação
-C — Devolver para nova análise
-```
-
-Até essa manifestação:
-
-- `COD-015` não existe;
-- decisões humanas permanecem em `14 de 18`;
-- `BUS-CAND-007` permanece `Under Validation`;
-- o COR permanece com 13 `Under Validation`, 2 `Merged` e 3 `Rejected`;
-- Outcomes canônicos permanecem em `0`;
-- Product Engineering permanece pausado antes do W0-01.
+Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
