@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1180" viewBox="0 0 390 1180" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1340" viewBox="0 0 390 1340" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe reformulado de baixa fidelidade do Detalhe de Oportunidade</title>
-  <desc id="desc">Estrutura móvel alinhada à Fundação da Guivos, com identidade, contribuição para a jornada, investimento, condições, elegibilidade, organização responsável, relação comercial e ações contextuais.</desc>
-  <rect width="390" height="1180" fill="#ffffff"/>
-  <rect x="1" y="1" width="388" height="1178" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+  <desc id="desc">Estrutura móvel alinhada à Fundação da Guivos, demonstrando como a Guivos compreende o momento, qual avanço foi reconhecido, por que o próximo passo faz sentido, investimento, condições, responsável, relação comercial e ações contextuais.</desc>
+  <rect width="390" height="1340" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="1338" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
 
   <text x="24" y="36" font-family="Arial, sans-serif" font-size="12" fill="#555555">09:41</text>
   <text x="24" y="72" font-family="Arial, sans-serif" font-size="16">←</text>
@@ -16,61 +16,70 @@
   <text x="34" y="190" font-family="Arial, sans-serif" font-size="12">Instituto Horizonte</text>
   <text x="34" y="208" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver origem e responsável</text>
 
-  <rect x="20" y="234" width="350" height="126" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
-  <text x="34" y="258" font-family="Arial, sans-serif" font-size="13" font-weight="700">Como pode apoiar sua jornada</text>
-  <text x="34" y="280" font-family="Arial, sans-serif" font-size="10">Pode apoiar seu próximo passo de desenvolver comunicação</text>
-  <text x="34" y="297" font-family="Arial, sans-serif" font-size="10">profissional em inglês.</text>
-  <text x="34" y="318" font-family="Arial, sans-serif" font-size="10">Apareceu agora: inscrições até 31/07 e preferência por aulas à noite.</text>
-  <text x="34" y="339" font-family="Arial, sans-serif" font-size="9">Uma possibilidade para considerar. A decisão continua sendo sua.</text>
-  <text x="34" y="354" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Por que apareceu agora?</text>
-  <text x="185" y="354" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Corrigir relação</text>
-  <text x="282" y="354" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Não faz sentido</text>
+  <rect x="20" y="234" width="350" height="112" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="34" y="258" font-family="Arial, sans-serif" font-size="13" font-weight="700">Como a Guivos compreende seu momento</text>
+  <text x="34" y="280" font-family="Arial, sans-serif" font-size="10">Objetivo confirmado: usar inglês em situações profissionais.</text>
+  <text x="34" y="298" font-family="Arial, sans-serif" font-size="10">Preferência informada: atividades online no período noturno.</text>
+  <text x="34" y="316" font-family="Arial, sans-serif" font-size="10">Ainda não sabemos: disponibilidade para duas aulas por semana.</text>
+  <text x="34" y="337" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver informações utilizadas</text>
+  <text x="191" y="337" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Corrigir meu momento</text>
 
-  <text x="20" y="390" font-family="Arial, sans-serif" font-size="15" font-weight="700">Investimento e condições</text>
-  <rect x="20" y="404" width="350" height="118" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="34" y="432" font-family="Arial, sans-serif" font-size="18" font-weight="700">R$ 79,90 por mês</text>
-  <text x="34" y="453" font-family="Arial, sans-serif" font-size="10">6 parcelas · custo total estimado: R$ 479,40</text>
-  <text x="34" y="474" font-family="Arial, sans-serif" font-size="10">Preço válido para novas inscrições até 31/07/2026</text>
-  <text x="34" y="495" font-family="Arial, sans-serif" font-size="10">Cancelamento mensal · sem taxa obrigatória informada</text>
-  <text x="34" y="514" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender preço, validade e cancelamento</text>
+  <rect x="20" y="362" width="350" height="88" rx="10" fill="#f7f7f7" stroke="#999999"/>
+  <text x="34" y="386" font-family="Arial, sans-serif" font-size="13" font-weight="700">Avanço reconhecido</text>
+  <text x="34" y="407" font-family="Arial, sans-serif" font-size="10">Você concluiu o nível básico e registrou compreensão de textos simples.</text>
+  <text x="34" y="426" font-family="Arial, sans-serif" font-size="10">Desafio atual informado: comunicação aplicada ao trabalho.</text>
+  <text x="34" y="443" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver evidência e data</text>
+  <text x="177" y="443" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Corrigir avanço</text>
 
-  <text x="20" y="552" font-family="Arial, sans-serif" font-size="15" font-weight="700">O que saber antes de decidir</text>
-  <rect x="20" y="566" width="350" height="142" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
-  <text x="34" y="590" font-family="Arial, sans-serif" font-size="11" font-weight="700">Disponibilidade</text>
-  <text x="184" y="590" font-family="Arial, sans-serif" font-size="11">Inscrições até 31/07</text>
-  <text x="34" y="616" font-family="Arial, sans-serif" font-size="11" font-weight="700">Modalidade</text>
-  <text x="184" y="616" font-family="Arial, sans-serif" font-size="11">Online · aulas ao vivo</text>
-  <text x="34" y="642" font-family="Arial, sans-serif" font-size="11" font-weight="700">Horário</text>
-  <text x="184" y="642" font-family="Arial, sans-serif" font-size="11">Terças e quintas, 19h</text>
-  <text x="34" y="668" font-family="Arial, sans-serif" font-size="11" font-weight="700">Duração</text>
-  <text x="184" y="668" font-family="Arial, sans-serif" font-size="11">6 meses</text>
-  <text x="34" y="694" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver acessibilidade, requisitos e todas as condições</text>
+  <rect x="20" y="466" width="350" height="122" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="34" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="700">Por que este próximo passo faz sentido</text>
+  <text x="34" y="512" font-family="Arial, sans-serif" font-size="10">Você já construiu uma base, deseja usar o idioma no trabalho</text>
+  <text x="34" y="529" font-family="Arial, sans-serif" font-size="10">e informou que a prática profissional ainda é uma dificuldade.</text>
+  <text x="34" y="550" font-family="Arial, sans-serif" font-size="10">O curso pode apoiar essa prática, mas não é o único caminho.</text>
+  <text x="34" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Faz sentido</text>
+  <text x="109" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Parcialmente</text>
+  <text x="196" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Não faz sentido</text>
+  <text x="294" y="572" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Outro caminho</text>
 
-  <text x="20" y="738" font-family="Arial, sans-serif" font-size="15" font-weight="700">Condições para participar</text>
-  <rect x="20" y="752" width="350" height="98" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
-  <text x="34" y="776" font-family="Arial, sans-serif" font-size="11" font-weight="700">Sua situação: possivelmente elegível</text>
-  <text x="34" y="797" font-family="Arial, sans-serif" font-size="10">Requisito: nível básico concluído ou teste de nivelamento.</text>
-  <text x="34" y="818" font-family="Arial, sans-serif" font-size="10">Decisão final: Instituto Horizonte.</text>
-  <text x="34" y="839" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Verificar ou corrigir informações</text>
+  <text x="20" y="620" font-family="Arial, sans-serif" font-size="15" font-weight="700">Investimento e condições</text>
+  <rect x="20" y="634" width="350" height="118" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="662" font-family="Arial, sans-serif" font-size="18" font-weight="700">R$ 79,90 por mês</text>
+  <text x="34" y="683" font-family="Arial, sans-serif" font-size="10">6 parcelas · custo total estimado: R$ 479,40</text>
+  <text x="34" y="704" font-family="Arial, sans-serif" font-size="10">Preço válido para novas inscrições até 31/07/2026</text>
+  <text x="34" y="725" font-family="Arial, sans-serif" font-size="10">Cancelamento mensal · sem taxa obrigatória informada</text>
+  <text x="34" y="744" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender preço, validade e cancelamento</text>
 
-  <text x="20" y="882" font-family="Arial, sans-serif" font-size="15" font-weight="700">Quem oferece</text>
-  <rect x="20" y="896" width="350" height="82" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
-  <rect x="34" y="910" width="42" height="42" rx="8" fill="#eeeeee" stroke="#999999"/>
-  <text x="90" y="926" font-family="Arial, sans-serif" font-size="12" font-weight="700">Instituto Horizonte</text>
-  <text x="90" y="945" font-family="Arial, sans-serif" font-size="10">Organização verificada · suporte em até 2 dias</text>
-  <text x="90" y="964" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Conhecer a organização</text>
+  <text x="20" y="782" font-family="Arial, sans-serif" font-size="15" font-weight="700">O que saber antes de decidir</text>
+  <rect x="20" y="796" width="350" height="142" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="34" y="820" font-family="Arial, sans-serif" font-size="11" font-weight="700">Disponibilidade</text>
+  <text x="184" y="820" font-family="Arial, sans-serif" font-size="11">Inscrições até 31/07</text>
+  <text x="34" y="846" font-family="Arial, sans-serif" font-size="11" font-weight="700">Modalidade</text>
+  <text x="184" y="846" font-family="Arial, sans-serif" font-size="11">Online · aulas ao vivo</text>
+  <text x="34" y="872" font-family="Arial, sans-serif" font-size="11" font-weight="700">Horário</text>
+  <text x="184" y="872" font-family="Arial, sans-serif" font-size="11">Terças e quintas, 19h</text>
+  <text x="34" y="898" font-family="Arial, sans-serif" font-size="11" font-weight="700">Duração</text>
+  <text x="184" y="898" font-family="Arial, sans-serif" font-size="11">6 meses</text>
+  <text x="34" y="924" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver acessibilidade, requisitos e todas as condições</text>
 
-  <text x="20" y="1010" font-family="Arial, sans-serif" font-size="15" font-weight="700">Relação comercial com a Guivos</text>
-  <rect x="20" y="1024" width="350" height="62" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
-  <text x="34" y="1048" font-family="Arial, sans-serif" font-size="10">A Guivos poderá receber comissão se houver contratação.</text>
-  <text x="34" y="1066" font-family="Arial, sans-serif" font-size="10">Isso não aumentou a relevância funcional desta oportunidade.</text>
-  <text x="34" y="1082" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender esta relação</text>
+  <text x="20" y="968" font-family="Arial, sans-serif" font-size="15" font-weight="700">Condições para participar</text>
+  <rect x="20" y="982" width="350" height="98" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="34" y="1006" font-family="Arial, sans-serif" font-size="11" font-weight="700">Sua situação: possivelmente elegível</text>
+  <text x="34" y="1027" font-family="Arial, sans-serif" font-size="10">Requisito: nível básico concluído ou teste de nivelamento.</text>
+  <text x="34" y="1048" font-family="Arial, sans-serif" font-size="10">Decisão final: Instituto Horizonte.</text>
+  <text x="34" y="1069" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Verificar ou corrigir informações</text>
 
-  <rect x="1" y="1102" width="388" height="77" fill="#ffffff" stroke="#cccccc"/>
-  <rect x="20" y="1120" width="200" height="40" rx="8" fill="#222222"/>
-  <text x="120" y="1145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Ver como participar</text>
-  <rect x="232" y="1120" width="64" height="40" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="264" y="1145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Salvar</text>
-  <rect x="306" y="1120" width="64" height="40" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="338" y="1145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Comparar</text>
+  <text x="20" y="1112" font-family="Arial, sans-serif" font-size="15" font-weight="700">Quem oferece</text>
+  <rect x="20" y="1126" width="350" height="82" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <rect x="34" y="1140" width="42" height="42" rx="8" fill="#eeeeee" stroke="#999999"/>
+  <text x="90" y="1156" font-family="Arial, sans-serif" font-size="12" font-weight="700">Instituto Horizonte</text>
+  <text x="90" y="1175" font-family="Arial, sans-serif" font-size="10">Organização verificada · suporte em até 2 dias</text>
+  <text x="90" y="1194" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Conhecer a organização</text>
+
+  <text x="20" y="1240" font-family="Arial, sans-serif" font-size="15" font-weight="700">Relação comercial com a Guivos</text>
+  <rect x="20" y="1254" width="350" height="62" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="34" y="1278" font-family="Arial, sans-serif" font-size="10">A Guivos poderá receber comissão se houver contratação.</text>
+  <text x="34" y="1296" font-family="Arial, sans-serif" font-size="10">Isso não aumentou a relevância funcional desta oportunidade.</text>
+  <text x="34" y="1312" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender esta relação</text>
+
+  <rect x="1" y="1262" width="388" height="77" fill="#ffffff" stroke="#cccccc" opacity="0"/>
 </svg>
