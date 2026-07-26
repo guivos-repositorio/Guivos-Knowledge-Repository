@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.30.0
+version: 1.31.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -17,8 +17,9 @@ related:
   - BA-STR-002-COD-SUB-015
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - ROADMAP-11.77.0
-  - M7.16.1
+  - COD-015
+  - ROADMAP-11.78.0
+  - M7.17
 normative: true
 ---
 
@@ -33,17 +34,16 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.16.1 — Fifteenth Human Outcome Decision Submitted` |
+| Marco vigente | `M7.17 — Fifteenth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.26.0`; 13 `Under Validation`, 2 `Merged` e 3 `Rejected` |
-| CODR | `0.28.0`; 14 de 18 decisões humanas; 1 submissão aguardando resposta |
-| `COD-001` a `COD-014` | registrados e preservados |
-| Submissão vigente | `BA-STR-002-COD-SUB-015 — BUS-CAND-007` |
-| `COD-015` | não criado |
-| `BUS-CAND-007` | `Under Validation`; decisão humana pendente sobre `Reject` |
+| COR | `0.27.0`; 12 `Under Validation`, 2 `Merged` e 4 `Rejected` |
+| CODR | `0.29.0`; 15 de 18 decisões humanas; 0 submissões aguardando resposta |
+| `COD-001` a `COD-015` | registrados e preservados |
+| `BUS-CAND-007` | `Rejected`; aprendizado e adaptação preservados como capacidades sustentadoras |
+| Próximo candidato | `BUS-CAND-008 — Saúde das relações de parceria` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -54,26 +54,23 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Submissão de BUS-CAND-007
+## 3. Resultado de COD-015
 
-A COEM recomenda `Reject` para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
+O Fundador aceitou `Reject` para `BUS-CAND-007 — Aprendado e adaptação institucionais`.
 
-Formulação avaliada:
+Formulação originalmente avaliada:
 
 > A Guivos transforma evidências, conhecimento e resultados observados em decisões que preservam coerência e melhoram continuamente sua geração de valor.
 
-Resultados:
+A decisão retirou aprendizado institucional do futuro catálogo de Business Outcomes e preservou:
 
-```text
-Essential: Partial
-Decision: Pass
-Replacement: Pass
-Outcome Quality: Fail
-```
+- aprendizado institucional como capacidade sustentadora multinível;
+- sensing, interpretação, absorção, memória, contestação, renovação e adaptação como dimensões governadas;
+- vínculo com Outcomes que exigirem resposta legítima a mudanças;
+- evidências de incorporação e uso do conhecimento, sem presumir melhoria automática;
+- formulação, evidências e rastreabilidade histórica.
 
-A recomendação propõe retirar aprendizado institucional do futuro catálogo de Business Outcomes e preservá-lo como capacidade sustentadora de sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
-
-A recomendação não reduz a importância de aprender, não remove aprendizagem da arquitetura e não considera coleta de dados, analytics, IA, reuniões ou retrospectivas como evidência suficiente de aprendizagem institucional.
+A decisão não reduz a importância de aprender, não elimina aprendizagem ou adaptação da arquitetura e não considera coleta de dados, analytics, IA, reuniões ou retrospectivas como prova suficiente de aprendizagem institucional.
 
 ## 4. Sequência oficial
 
@@ -82,7 +79,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 14 de 18; uma submissão aberta
+→ decisões humanas do BA-STR-002 — 15 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -93,7 +90,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-015`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-008 — Saúde das relações de parceria` à décima sexta decisão humana individual sobre a recomendação `Reject`.
 
 Nenhuma decisão posterior será registrada automaticamente.
 
@@ -116,12 +113,10 @@ Essa ordem não constitui autorização de início.
 
 O estado atual não autoriza:
 
-- criar `COD-015` sem manifestação humana explícita;
-- alterar o COR ou mover `BUS-CAND-007` para `Rejected`;
-- eliminar aprendizagem ou adaptação da arquitetura;
-- tratar dados, analytics, IA, reuniões ou retrospectivas como prova suficiente de aprendizagem institucional;
 - promover qualquer candidato a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
+- eliminar aprendizagem ou adaptação da arquitetura;
+- tratar dados, analytics, IA, reuniões ou retrospectivas como prova suficiente de aprendizagem institucional;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
 - especificar produtos especializados;
