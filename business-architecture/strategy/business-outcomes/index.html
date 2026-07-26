@@ -5326,8 +5326,8 @@
 </a>
 <h1 id="ba-str-002-business-outcomes">BA-STR-002 — Business Outcomes<a class="headerlink" href="#ba-str-002-business-outcomes" title="Permanent link">¶</a></h1>
 <h2 id="estado-do-ativo">Estado do ativo<a class="headerlink" href="#estado-do-ativo" title="Permanent link">¶</a></h2>
-<p>Este documento registra o checkpoint conceitual, metodológico e de execução cumulativa da COEM do BA-STR-002.</p>
-<p>O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro <a href="../candidate-outcome-register/">Candidate Outcome Register</a> possui 18 hipóteses rastreáveis, e o <a href="../external-outcome-validation-protocol/">External Outcome Validation Protocol</a> concluiu sua execução governada com 60 evidências. A <a href="../candidate-outcome-evaluation-matrix/">Candidate Outcome Evaluation Matrix</a> concluiu a cobertura dos 18 candidatos e seis clusters, com nove disposições <code>Reformulate</code>, três <code>Merge</code> e seis <code>Reject</code> recomendadas. Os 18 candidatos permanecem em <code>Under Validation</code>; nenhuma disposição foi executada e nenhum Outcome foi promovido.</p>
+<p>Este documento registra o checkpoint conceitual, metodológico e decisório cumulativo do BA-STR-002.</p>
+<p>O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro <a href="../candidate-outcome-register/">Candidate Outcome Register</a> possui 18 hipóteses rastreáveis, e o <a href="../external-outcome-validation-protocol/">External Outcome Validation Protocol</a> concluiu sua execução governada com 60 evidências. A <a href="../candidate-outcome-evaluation-matrix/">Candidate Outcome Evaluation Matrix</a> concluiu a cobertura dos 18 candidatos e seis clusters. O <a href="../candidate-outcome-decision-register/">Candidate Outcome Decision Register</a> registra as 18 decisões humanas individuais: nove candidatos permanecem em <code>Under Validation</code>, três foram fundidos e seis foram rejeitados. Nenhum Outcome foi aprovado ou promovido à Canon.</p>
 <h2 id="pergunta-arquitetural">Pergunta arquitetural<a class="headerlink" href="#pergunta-arquitetural" title="Permanent link">¶</a></h2>
 <blockquote>
 <p>Quais resultados definem o sucesso sustentável da Guivos?</p>
@@ -5528,7 +5528,9 @@
     D[Discovery] --&gt; COR[Candidate Outcome Register]
     COR --&gt; EV[External Validation]
     EV --&gt; COEM[Candidate Outcome Evaluation Matrix]
-    COEM --&gt; AO[Approved Outcomes]
+    COEM --&gt; HD[Human Decisions]
+    HD --&gt; RCOEM[Reaplicação da COEM]
+    RCOEM --&gt; AO[Approved Outcomes]
     AO --&gt; C[Canon]
 </code></pre>
 <h3 id="candidate-outcome-register-cor">Candidate Outcome Register — COR<a class="headerlink" href="#candidate-outcome-register-cor" title="Permanent link">¶</a></h3>
@@ -5649,13 +5651,15 @@
 <li>Capabilities existem para produzir um ou mais Outcomes.</li>
 <li>Ecosystem Outcomes e Business Outcomes são níveis distintos e interdependentes.</li>
 <li>Ecosystem Outcomes descrevem condições do ecossistema, não transformações controladas pela Guivos.</li>
-<li>Todo candidato deve percorrer Discovery, COR, External Validation e COEM antes da Canon.</li>
+<li>Todo candidato deve percorrer Discovery, COR, External Validation, COEM e decisão humana antes da Canon.</li>
 <li>O AQS-O01 será validado na prática antes de estabilização.</li>
-<li>O COR inicial contém oito candidatos de ecossistema e dez candidatos empresariais, atualmente preservados em <code>Under Validation</code>.</li>
+<li>O COR inicial contém oito candidatos de ecossistema e dez candidatos empresariais; após 18 decisões humanas, nove permanecem em <code>Under Validation</code>, três estão <code>Merged</code> e seis estão <code>Rejected</code>.</li>
 <li>O catálogo canônico ainda não está consolidado.</li>
 <li>A validação externa cobriu individualmente os 18 candidatos, os seis clusters de sobreposição, contradições e omissões materiais.</li>
 <li>A COEM distingue resultado dos testes, disposição recomendada, decisão humana e consolidação canônica.</li>
 <li>Uma disposição da matriz não altera automaticamente o estado de um candidato.</li>
+<li>A fase de decisões humanas individuais foi concluída por <code>COD-018</code>.</li>
+<li>Formulações revisadas e combinadas deverão retornar aos quatro testes antes de qualquer aprovação.</li>
 </ol>
 <h2 id="hipoteses-preservadas-fora-da-canon">Hipóteses preservadas fora da Canon<a class="headerlink" href="#hipoteses-preservadas-fora-da-canon" title="Permanent link">¶</a></h2>
 <p>As seguintes hipóteses permanecem registradas, mas não bloqueiam o BA-STR-002:</p>
@@ -5677,6 +5681,8 @@
 <li>o Candidate Outcome Register estiver concluído;</li>
 <li>a validação externa dos candidatos estiver registrada;</li>
 <li>a COEM estiver concluída;</li>
+<li>as decisões humanas individuais estiverem concluídas;</li>
+<li>formulações revisadas e combinadas retornarem aos quatro testes;</li>
 <li>o AQS-O01 tiver sido testado e ajustado;</li>
 <li>o catálogo canônico de Ecosystem Outcomes estiver definido;</li>
 <li>o catálogo canônico de Business Outcomes estiver definido;</li>
@@ -5706,8 +5712,16 @@
 <td>atendido; 18 candidatos, seis clusters e 60 evidências</td>
 </tr>
 <tr>
-<td>COEM concluída</td>
+<td>COEM inicial concluída</td>
 <td>atendido; 18/18 candidatos e 6/6 clusters</td>
+</tr>
+<tr>
+<td>decisões humanas individuais</td>
+<td>atendido; 18/18 registradas</td>
+</tr>
+<tr>
+<td>reaplicação da COEM às formulações revisadas e combinadas</td>
+<td>pendente</td>
 </tr>
 <tr>
 <td>AQS-O01 testado e ajustado</td>
@@ -5732,7 +5746,7 @@
 </tbody>
 </table>
 <h2 id="proxima-etapa">Próxima etapa<a class="headerlink" href="#proxima-etapa" title="Permanent link">¶</a></h2>
-<p>Submeter as dezoito disposições cumulativas à decisão humana individual e rastreável. Nenhum candidato receberá código canônico <code>EO-###</code> ou <code>BO-###</code> antes da decisão formal, do ajuste prático do AQS-O01 e da consolidação governada.</p>
+<p>Após integração deste incremento e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas, ajustar o AQS-O01 e preparar a futura consolidação governada dos catálogos. Nenhum candidato receberá código canônico <code>EO-###</code> ou <code>BO-###</code> antes dessas etapas.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
