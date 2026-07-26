@@ -27,14 +27,14 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro é a superfície oficial para o estado global vigente do Guivos Knowledge Repository.
+Este registro é a superfície oficial para o estado global vigente do Guivos Knowledge Repository quando o incremento correspondente estiver integrado à branch principal.
 
-## 2. Estado global vigente
+## 2. Estado global proposto por este incremento
 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.19 — Seventeenth Human Outcome Decision Recorded` |
+| Marco | `M7.19 — Seventeenth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
@@ -72,7 +72,7 @@ A decisão retirou o candidato do futuro catálogo de Business Outcomes e preser
 
 A decisão não impõe padronização global, não proíbe adaptação local, não exige internacionalização e não considera tradução, presença local ou variação nominal de produto como prova suficiente de adequação legítima.
 
-## 4. Sequência oficial
+## 4. Sequência oficial após integração
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
@@ -88,9 +88,9 @@ Guivos Journey — concluído funcionalmente e publicado
 → Product Engineering somente mediante autorização explícita
 ```
 
-## 5. Próximo ato autorizado
+## 5. Próximo ato autorizado após integração
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
+Preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
 
 Nenhuma decisão posterior será registrada automaticamente.
 
@@ -111,7 +111,7 @@ Essa ordem não constitui autorização de início.
 
 ## 7. Limites
 
-O estado atual não autoriza:
+O estado proposto não autoriza:
 
 - impor padronização global, proibir adaptação local ou exigir internacionalização;
 - tratar tradução, presença local ou variação de produto como prova suficiente de adequação legítima;
