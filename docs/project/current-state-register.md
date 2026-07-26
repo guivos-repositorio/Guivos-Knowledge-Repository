@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Current State Register
 status: active
-version: 1.28.0
+version: 1.29.0
 owner: Guivos Knowledge Repository
 last_updated: 2026-07-25
 depends_on:
@@ -17,8 +17,9 @@ related:
   - BA-STR-002-COD-SUB-014
   - GKR-R5-VALIDATION-001
   - GKR-R6-RESUMPTION-001
-  - ROADMAP-11.75.0
-  - M7.15.1
+  - COD-014
+  - ROADMAP-11.76.0
+  - M7.16
 normative: true
 ---
 
@@ -33,17 +34,16 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco vigente | `M7.15.1 — Fourteenth Human Outcome Decision Submitted` |
+| Marco vigente | `M7.16 — Fourteenth Human Outcome Decision Recorded` |
 | Remediação do GKR | concluída; R5 `PASS` e R6 concluído |
 | Achados Critical, Major ou Minor conhecidos abertos | 0 |
 | Frente arquitetural ativa | `A2-R03 — Business Architecture Review` |
 | Trabalho ativo | `BA-STR-002 — Business Outcomes` |
-| COR | `0.25.0`; 14 `Under Validation`, 2 `Merged` e 2 `Rejected` |
-| CODR | `0.26.0`; 13 de 18 decisões humanas; 1 submissão aguardando resposta |
-| `COD-001` a `COD-013` | registrados e preservados |
-| Submissão vigente | `BA-STR-002-COD-SUB-014 — BUS-CAND-006` |
-| `COD-014` | não criado |
-| `BUS-CAND-006` | `Under Validation`; decisão humana pendente sobre `Reject` |
+| COR | `0.26.0`; 13 `Under Validation`, 2 `Merged` e 3 `Rejected` |
+| CODR | `0.27.0`; 14 de 18 decisões humanas; 0 submissões aguardando resposta |
+| `COD-001` a `COD-014` | registrados e preservados |
+| `BUS-CAND-006` | `Rejected`; expansão responsável preservada como trajetória estratégica opcional |
+| Próximo candidato | `BUS-CAND-007 — Aprendizado e adaptação institucionais` |
 | Outcomes canônicos | `0` |
 | Business Capabilities | não iniciadas |
 | Guivos Journey | `PAS-001 1.0.0 active`; nove capacidades concluídas |
@@ -54,26 +54,22 @@ Este registro é a superfície oficial para o estado global vigente do Guivos Kn
 | Product Engineering | pausado antes do `W0-01`; execução em `0%` |
 | Market Validation | trilha paralela preservada; formulário e planilha pendentes |
 
-## 3. Submissão de BUS-CAND-006
+## 3. Resultado de COD-014
 
-A COEM recomenda `Reject` para `BUS-CAND-006 — Crescimento responsável e resiliente`.
+O Fundador aceitou `Reject` para `BUS-CAND-006 — Crescimento responsável e resiliente`.
 
-Formulação avaliada:
+Formulação originalmente avaliada:
 
 > A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade.
 
-Resultados:
+A decisão retirou crescimento do futuro catálogo de Business Outcomes e preservou:
 
-```text
-Essential: Fail
-Decision: Partial
-Replacement: Pass
-Outcome Quality: Fail
-```
+- expansão responsável como trajetória estratégica opcional;
+- capacidade demonstrada, adicionalidade e critérios de não degradação como gates de decisão;
+- resiliência e adaptação legítima como propriedades de continuidade ou capacidades sustentadoras;
+- formulação, evidências e rastreabilidade histórica.
 
-A recomendação propõe retirar crescimento do futuro catálogo de Business Outcomes e preservar **expansão responsável** como trajetória estratégica opcional, condicionada à capacidade demonstrada, adicionalidade e critérios de não degradação.
-
-A recomendação não proíbe crescimento, não rejeita a importância de ampliar alcance e valor e não altera o estado do candidato antes da manifestação humana.
+A decisão não proíbe crescimento, não elimina expansão da estratégia e não trata ausência de crescimento como falha automática.
 
 ## 4. Sequência oficial
 
@@ -82,7 +78,7 @@ Guivos Journey — concluído funcionalmente e publicado
 → Guivos Economic Model — arquitetura documental inicial concluída
 → remediação R1–R5 — PASS
 → R6 — retomada governada concluída
-→ decisões humanas do BA-STR-002 — 13 de 18; uma submissão aberta
+→ decisões humanas do BA-STR-002 — 14 de 18
 → conclusão de Business Outcomes
 → BA-CAP-001 e BA-CAP-002
 → rebaseline do portfólio especializado
@@ -93,7 +89,7 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ## 5. Próximo ato autorizado
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-014`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
 
 Nenhuma decisão posterior será registrada automaticamente.
 
@@ -116,10 +112,10 @@ Essa ordem não constitui autorização de início.
 
 O estado atual não autoriza:
 
-- criar `COD-014` sem manifestação humana explícita;
-- alterar o COR ou mover `BUS-CAND-006` para `Rejected`;
-- proibir crescimento ou eliminar expansão da estratégia;
+- promover qualquer candidato a `Approved`;
 - criar códigos canônicos `EO-###` ou `BO-###`;
+- transformar expansão responsável em obrigação universal de crescimento;
+- tratar ausência de crescimento como falha automática;
 - iniciar AQS-O01 ou Business Capabilities;
 - reabrir o Economic Model sem condição material;
 - especificar produtos especializados;
