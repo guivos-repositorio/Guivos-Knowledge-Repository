@@ -1,23 +1,22 @@
 ---
-id: ROADMAP-11.80.0
-title: Roadmap Arquitetural — COD-016 Registrado
+id: ROADMAP-11.81.0
+title: Roadmap Arquitetural — BUS-CAND-009 Decision Submission
 status: active
-version: 11.80.0
+version: 11.81.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.79.0
+  - ROADMAP-11.80.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-016
-  - COD-016
-  - M7.18
+  - BA-STR-002-COD-SUB-017
+  - M7.18.1
 ---
 
-# Roadmap Arquitetural — COD-016 Registrado
+# Roadmap Arquitetural — BUS-CAND-009 Decision Submission
 
 ## 1. Autoridade
 
@@ -28,13 +27,14 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.18` |
+| Marco | `M7.18.1` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
-| CODR | `16 de 18` decisões; 0 submissões abertas |
+| CODR | `16 de 18` decisões; 1 submissão aberta |
+| Submissão vigente | `BUS-CAND-009 — Reject` |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
 | Reject aceitos | 5 |
@@ -68,24 +68,29 @@ R1 — precedência e estado global — concluído
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
 - decisões humanas: 16 de 18;
-- submissões abertas: 0;
+- submissões abertas: 1;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
 - `ECO-CAND-004`, `BUS-CAND-001`, `BUS-CAND-006`, `BUS-CAND-007` e `BUS-CAND-008`: `Rejected`;
 - `BUS-CAND-003`, `BUS-CAND-004` e `BUS-CAND-005`: `Reformulate` aceitos;
+- `BUS-CAND-009`: submetido à decisão sobre `Reject`;
 - Outcomes canônicos: 0.
 
-## 5. Resultado de COD-016
+## 5. Submissão de BUS-CAND-009
 
-A recomendação `Reject` foi aceita para `BUS-CAND-008 — Saúde das relações de parceria`.
+A COEM recomenda `Reject`.
 
-A decisão retirou saúde das relações de parceria do futuro catálogo de Business Outcomes e preservou **governança das relações de parceria** na arquitetura de capacidades, incluindo gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios governados de portfólio.
+Formulação avaliada:
 
-A decisão não reduz a importância estratégica das parcerias, não exige internalização e não considera quantidade, duração ou ausência de conflito como prova suficiente de saúde relacional.
+> A Guivos preserva identidade e coerência arquitetural enquanto se adapta legitimamente a países, culturas, idiomas e contextos distintos.
+
+A recomendação retira coerência global com adequação contextual do futuro catálogo de Business Outcomes e preserva seu conteúdo como princípio arquitetural e critério governado para internacionalização, localização, desenho de capacidades e avaliação de mudanças.
+
+A recomendação não impõe padronização global, não proíbe adaptação local e não considera tradução, presença local ou variação nominal de produto como prova suficiente.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. submeter `BUS-CAND-009` à decisão humana sobre `Reject`;
+1. receber a decisão humana sobre `BUS-CAND-009`;
 2. submeter `BUS-CAND-010` à decisão humana sobre `Merge into BUS-CAND-005`;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
@@ -122,4 +127,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-017`. Nenhuma decisão será inferida automaticamente.
