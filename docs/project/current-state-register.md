@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.46.0
+version: 1.46.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -47,18 +47,18 @@ normative: true
 
 Este registro é a superfície oficial do estado global vigente do **Repositório de Conhecimento da Guivos** quando o incremento correspondente estiver integrado ao ramo principal.
 
-## 2. Estado global proposto
+## 2. Estado global vigente
 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | relações entre Organizações e Coletivos detalhadas funcionalmente | M7.19.11 |
+| Marco atual | relações entre Organizações e Coletivos detalhadas funcionalmente e integradas | M7.19.11 |
 | Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa, mas pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
-| Resultados Empresariais | 17 de 18 decisões humanas; nenhuma submissão aberta | BA-STR-002 |
+| Resultados Empresariais | 17 de 18 decisões humanas; retomada aguardando autorização | BA-STR-002 |
 | Capacidade de reinvestimento responsável | em validação; decisão não antecipada | BUS-CAND-010 |
-| Frente ativa | detalhamento funcional das relações entre Organizações e Coletivos | UXA-019 |
+| Frente de execução | nenhuma nova etapa iniciada; transição governada aguardando autorização para a etapa 4 | M7.19.11; BUS-CAND-010 |
 | Arquitetura da Experiência | cinco superfícies validadas e contrato funcional das relações estabelecido | UXA-000 a UXA-019 |
 | Presença companheira | princípio transversal estabelecido | UXA-011 |
 | Compreensão do momento | leitura verificável, corrigível e baseada em sinais autorizados | UXA-011-A1 |
@@ -70,7 +70,7 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Fundação de Organizações e Coletivos | estabelecida | UXA-014 0.1.0 |
 | Visão Geral da Organização | validada e reformulada com autoridade, compromissos, capacidade e decisões | UXA-015 0.2.0; UXA-017 0.1.0 |
 | Início do Coletivo | validado e reformulado com pertencimento, participação voluntária, governança e autonomia | UXA-016 0.2.0; UXA-018 0.1.0 |
-| Relações entre Organizações e Coletivos | contrato funcional bilateral, transparente, revisável e encerrável | UXA-019 0.1.0 |
+| Relações entre Organizações e Coletivos | contrato funcional bilateral, transparente, revisável e encerrável, documentado e integrado | UXA-019 0.1.0 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Testes de usabilidade | não iniciados | — |
@@ -90,7 +90,7 @@ A pausa antes da décima oitava decisão permanece vigente.
 - a décima oitava decisão não existe;
 - nenhuma incorporação foi executada;
 - nenhum Resultado foi canonicalizado;
-- a retomada permanece como quarta etapa da ordem autorizada.
+- a retomada permanece como quarta etapa da ordem autorizada e aguarda nova autorização.
 
 ## 4. Autoridades da Arquitetura da Experiência
 
@@ -208,8 +208,8 @@ Guivos Journey — concluído funcionalmente e publicado
 → fundação funcional de Organizações e Coletivos — estabelecida
 → Visão Geral da Organização — validada e reformulada
 → Início do Coletivo — validado e reformulado
-→ relações entre Organizações e Coletivos — detalhadas funcionalmente
-→ retorno aos Resultados Empresariais — próximo após integração e nova autorização
+→ relações entre Organizações e Coletivos — detalhadas funcionalmente e integradas
+→ retorno aos Resultados Empresariais — próximo somente após nova autorização
 ```
 
 ## 10. Ordem autorizada
@@ -218,16 +218,16 @@ A ordem definida pelo usuário permanece:
 
 1. validar funcionalmente a Visão Geral da Organização — concluído e integrado;
 2. validar funcionalmente o Início do Coletivo — concluído e integrado;
-3. detalhar as relações entre Organizações e Coletivos — concluído neste incremento;
-4. retornar aos Resultados Empresariais e à capacidade de reinvestimento responsável — próximo incremento após integração e nova autorização.
+3. detalhar as relações entre Organizações e Coletivos — concluído e integrado;
+4. retornar aos Resultados Empresariais e à capacidade de reinvestimento responsável — próximo incremento após nova autorização.
 
-A integração deste incremento não inicia automaticamente a quarta etapa.
+A integração da terceira etapa foi concluída e não iniciou automaticamente a quarta etapa.
 
 ## 11. Limites
 
 Este estado não autoriza:
 
-- iniciar a etapa 4 antes da integração e da próxima autorização operacional;
+- iniciar a etapa 4 sem nova autorização operacional;
 - criar a décima oitava submissão ou decisão sobre Resultados Empresariais;
 - incorporar a capacidade de reinvestimento responsável;
 - concluir Resultados Empresariais;
