@@ -2,7 +2,7 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.30.0
+version: 0.31.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -49,7 +49,8 @@ related:
   - COD-013
   - COD-014
   - COD-015
-  - M7.17.1
+  - COD-016
+  - M7.18
 normative: false
 execution_status: in-progress
 ---
@@ -77,13 +78,12 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ```text
 Decision register: in progress — resumed by R6
 Candidate dispositions in scope: 18
-Human decisions recorded: 15
-Decision submissions awaiting human response: 1
-Current submission: BUS-CAND-008
+Human decisions recorded: 16
+Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 9
 Accepted Merge dispositions: 2
-Accepted Reject dispositions: 4
-Candidate state changes: 6
+Accepted Reject dispositions: 5
+Candidate state changes: 7
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -312,6 +312,22 @@ A rejeição alcança somente a candidatura de crescimento como Outcome permanen
 
 A rejeição alcança somente a candidatura de aprendizado institucional como Outcome permanente. Aprendizado e adaptação permanecem capacidades sustentadoras multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
 
+### COD-016 — BUS-CAND-008
+
+| Campo | Registro |
+|---|---|
+| Nome | Saúde das relações de parceria |
+| Recomendação | `Reject` |
+| Decisão humana | Aceitar `Reject` |
+| Autoridade | Fundador da Guivos |
+| Data | 25/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Rejected` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+A rejeição alcança somente a candidatura de saúde das relações de parceria como Outcome permanente. Governança de parceiros, gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios de portfólio permanecem capacidades e dimensões governadas. A decisão não reduz a importância estratégica das parcerias e não exige internalização.
+
 ## 5. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
@@ -331,34 +347,26 @@ A rejeição alcança somente a candidatura de aprendizado institucional como Ou
 | BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-007 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-008 | Reject | — | Pending human decision; `BA-STR-002-COD-SUB-016` aberto |
+| BUS-CAND-008 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-009 | Reject | — | Pending human decision |
 | BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
 
-## 6. Submissão humana vigente
-
-`BA-STR-002-COD-SUB-016` submete `BUS-CAND-008 — Saúde das relações de parceria` à decisão humana sobre `Reject`.
-
-A recomendação propõe retirar saúde das relações de parceria do futuro catálogo de Business Outcomes e preservar seu conteúdo na arquitetura de capacidades, governança de parceiros e critérios de portfólio.
-
-A recomendação não reduz a importância estratégica das parcerias, não exige internalização, não cria `COD-016` e não altera o COR antes da manifestação humana.
-
-## 7. Gate do incremento
+## 6. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| submissão individual criada | Pass |
+| manifestação humana explícita | Pass |
 | recomendação original preservada | Pass |
-| resultados `Partial / Pass / Pass / Fail` preservados | Pass |
-| saúde de parceria separada de Outcome permanente | Pass |
-| governança de parceiros preservada na arquitetura | Pass |
-| quantidade, duração e ausência de conflito bloqueadas como prova suficiente | Pass |
-| `COD-016` não criado | Pass |
-| COR inalterado | Pass |
+| `COD-016` registrado | Pass |
+| `BUS-CAND-008` alterado para `Rejected` | Pass |
+| governança de parceiros preservada | Pass |
+| gestão de alianças e critérios de portfólio preservados | Pass |
+| métricas relacionais simplistas bloqueadas como prova suficiente | Pass |
+| distribuição 11/2/5 registrada | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
-## 8. Próximo passo governado
+## 7. Próximo passo governado
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-016`. Nenhuma decisão posterior será registrada automaticamente.
+Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
