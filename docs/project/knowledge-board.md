@@ -2,18 +2,17 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.78.0
+version: 11.79.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.78.0
+  - ROADMAP-11.79.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-015
-  - COD-015
-  - M7.17
+  - BA-STR-002-COD-SUB-016
+  - M7.17.1
 normative: false
 ---
 
@@ -28,16 +27,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.17 — Fifteenth Human Outcome Decision Recorded` |
+| Marco | `M7.17.1 — Sixteenth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 12 `Under Validation`; 2 `Merged`; 4 `Rejected` |
-| CODR | 15 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 15 de 18 decisões humanas; 1 submissão aberta |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
 | Reject aceitos | 4 |
-| `BUS-CAND-007` | `Rejected`; aprendizado e adaptação preservados como capacidades sustentadoras |
+| `BUS-CAND-008` | `Under Validation`; decisão pendente sobre `Reject` |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -58,7 +57,7 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-008`.
+- submissão de `BUS-CAND-008` aguardando manifestação humana.
 
 ### Pendente
 
@@ -73,14 +72,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-015
+## 4. Submissão de BUS-CAND-008
 
-O Fundador aceitou `Reject` para `BUS-CAND-007 — Aprendizado e adaptação institucionais`.
+A COEM recomenda `Reject` para `BUS-CAND-008 — Saúde das relações de parceria`.
 
-Aprendizado institucional foi retirado do futuro catálogo de Business Outcomes e preservado como capacidade sustentadora multinível, incluindo sensing, interpretação, absorção, memória, contestação, renovação e adaptação.
+A recomendação retira saúde das relações de parceria do futuro catálogo de Business Outcomes e preserva seu conteúdo na arquitetura de capacidades, governança de parceiros e critérios de portfólio.
 
-Aprendizagem e adaptação não foram removidas da arquitetura. Coleta de dados, analytics, IA, reuniões ou retrospectivas não constituem prova suficiente de aprendizagem institucional.
+A importância estratégica das parcerias permanece preservada. Quantidade, duração ou ausência de conflito não constituem prova suficiente, e decisões de entrada, evolução, renovação, substituição e saída permanecem legítimas e governadas.
 
 ## 5. Próximo movimento
 
-Após integração deste incremento, preparar a décima sexta submissão humana para `BUS-CAND-008 — Saúde das relações de parceria`, cuja recomendação da COEM é `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-016`. Nenhuma decisão será inferida automaticamente.
