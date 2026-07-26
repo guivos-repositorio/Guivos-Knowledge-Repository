@@ -9,7 +9,7 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 | Dimensão | Situação |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.22 — Página Inicial Pública Validada e Reformulada` |
+| Marco | `M7.23 — Wireframe Gráfico da Página Inicial Pública Criado` |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em `PAS-001 1.0.0`; nove capacidades concluídas |
@@ -17,7 +17,8 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 | Resultados Empresariais | 18 de 18 decisões humanas; 9 em validação, 3 fundidos e 6 rejeitados |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável por `COD-018` |
 | Resultados canônicos | nenhum criado |
-| Arquitetura da Experiência | integrada até `UXA-021`; Home pública validada |
+| Arquitetura da Experiência | integrada até `UXA-022`; Home pública validada e materializada para computador |
+| Referência móvel da Home | não iniciada |
 | Início protegido da jornada | contrato estabelecido; validação detalhada pendente |
 | Tela Hoje | entrada recorrente após compreensão inicial |
 | Protótipo, design e testes | não iniciados |
@@ -25,7 +26,7 @@ Consulte o [GKR-STATE-001 — Registro do Estado Atual](project/current-state-re
 
 ## Missão atual
 
-Preservar o estado concluído das 18 decisões humanas e consolidar a primeira entrada pública da Guivos com compreensão concreta, exploração sem personalização, caminhos distintos e transição protegida para o início da jornada.
+Preservar o estado concluído das 18 decisões humanas e consolidar a primeira entrada pública da Guivos com compreensão concreta, exploração sem personalização, caminhos distintos e representação gráfica estrutural anterior ao início protegido da jornada.
 
 Nenhum Resultado canônico, Capacidade Empresarial, protótipo, design, teste, produto especializado, Modelo Comercial, Entrada no Mercado ou implementação técnica é iniciado automaticamente.
 
@@ -43,7 +44,7 @@ Página Inicial pública da Guivos
 
 A Home pública não coleta relato pessoal. Ela oferece `Iniciar minha jornada`, `Explorar sem personalização` e caminhos institucionais claros.
 
-## Página Inicial pública validada
+## Página Inicial pública
 
 A hierarquia funcional é:
 
@@ -67,20 +68,39 @@ O ecossistema é apresentado por finalidade:
 
 Guivos Mall e Guivos Ads permanecem os nomes oficiais.
 
+## Wireframe gráfico da Home
+
+A referência para computador possui dimensão de 1.440 × 2.200 pixels.
+
+Ela representa:
+
+- cabeçalho público orientado por intenção;
+- propósito, descrição concreta e ações no primeiro campo visual;
+- garantia de ausência de coleta pública;
+- funcionamento em seis etapas;
+- caminhos pessoal, geral e institucional;
+- ecossistema agrupado por finalidade;
+- possibilidades gerais identificadas;
+- confiança, privacidade e transparência;
+- rodapé institucional.
+
+O arquivo é monocromático e estrutural. A referência móvel, a identidade visual, o protótipo, os componentes e a implementação permanecem não iniciados.
+
 ## Sequência global
 
 1. **Concluído:** Guivos Journey funcional e publicação arquitetural.
 2. **Concluído documentalmente:** Modelo Econômico, de `GEM-001` a `GEM-010`.
 3. **Concluído:** remediação, validação externa, Matriz de Avaliação inicial e 18 decisões humanas.
 4. **Concluído:** separação entre Home pública, início protegido e Tela Hoje.
-5. **Concluído neste incremento:** validação funcional e reformulação da Home pública.
-6. **Pendente mediante autorização:** arquivo gráfico ou validação do início protegido.
-7. **Pendente mediante autorização independente:** reaplicação dos quatro testes às nove formulações ativas.
-8. **Posterior:** ajuste do AQS-O01 e consolidação dos catálogos canônicos.
-9. **Dependência seguinte:** Arquitetura de Capacidades Empresariais.
-10. **Backlog preservado:** Mall, Business, Intelligence, Ads, Media e Travel.
-11. **Ciclos posteriores:** Modelo Comercial e Entrada no Mercado.
-12. **Execução técnica:** somente mediante autorização explícita.
+5. **Concluído:** validação funcional e reformulação da Home pública.
+6. **Concluído neste incremento:** wireframe gráfico vetorial da Home para computador.
+7. **Pendente mediante autorização:** validação do início protegido ou referência móvel.
+8. **Pendente mediante autorização independente:** reaplicação dos quatro testes às nove formulações ativas.
+9. **Posterior:** ajuste do AQS-O01 e consolidação dos catálogos canônicos.
+10. **Dependência seguinte:** Arquitetura de Capacidades Empresariais.
+11. **Backlog preservado:** Mall, Business, Intelligence, Ads, Media e Travel.
+12. **Ciclos posteriores:** Modelo Comercial e Entrada no Mercado.
+13. **Execução técnica:** somente mediante autorização explícita.
 
 ## Decisão COD-018
 
@@ -125,6 +145,8 @@ Esses entregáveis produzem evidência, mas não substituem autoridades arquitet
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Página Inicial da Guivos e Início da Jornada](experience-architecture/uxa-020-home-and-journey-entry.md)
 - [Validação Funcional da Página Inicial Pública](experience-architecture/uxa-021-public-home-functional-validation-and-reformulation.md)
+- [Wireframe da Página Inicial Pública](experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
+- [Arquivo vetorial da Página Inicial Pública](assets/wireframes/uxa-022-public-home-desktop.svg)
 
 ### Resultados Empresariais
 
