@@ -2,9 +2,9 @@
 id: GEA-000
 title: Guivos Enterprise Architecture
 status: consolidated
-version: 1.9.0
+version: 1.10.0
 owner: Guivos
-last_updated: 2026-07-24
+last_updated: 2026-07-26
 related_adrs:
   - ADR-003
   - ADR-004
@@ -16,6 +16,10 @@ related:
   - GKR-STATE-001
   - GKR-AUD-002
   - GKR-REMEDIATION-002
+  - BA-STR-002
+  - BA-STR-002-CODR-001
+  - COD-018
+  - M7.20
 ---
 
 # Guivos Enterprise Architecture
@@ -24,21 +28,26 @@ related:
 
 A Guivos Enterprise Architecture (GEA) é o sistema de arquiteturas que organiza, conecta e governa a evolução da Guivos como ecossistema, empresa e plataforma de produtos.
 
-A GEA não é uma arquitetura isolada. Ela integra todas as arquiteturas oficiais, preservando ownership único, dependências explícitas e evolução governada.
+A GEA não é uma arquitetura isolada. Ela integra todas as arquiteturas oficiais, preservando propriedade única, dependências explícitas e evolução governada.
 
 O Guivos Knowledge Repository é a fonte oficial em que a GEA é documentada, versionada e publicada.
 
 ## Estado transversal
 
-O estado global vigente não é mantido de forma independente nesta página. Ele é declarado pelo [GKR-STATE-001 — Current State Register](../project/current-state-register.md).
+O estado global vigente não é mantido de forma independente nesta página. Ele é declarado pelo [GKR-STATE-001 — Registro do Estado Atual](../project/current-state-register.md).
 
 No estado atual:
 
 - Guivos Journey está publicado em `PAS-001 1.0.0`, com nove capacidades funcionalmente concluídas;
 - Guivos Economic Model possui arquitetura documental inicial concluída em `GEM-001` a `GEM-010`;
-- `A2-R03 — Business Architecture Review` permanece como frente arquitetural correta;
-- a execução da A2-R03 está temporariamente pausada durante a remediação documental do GKR;
-- Product Engineering permanece pausado antes do `W0-01`.
+- a remediação e a validação mecânica do repositório estão concluídas;
+- `A2-R03 — Revisão da Arquitetura de Negócios` permanece como frente arquitetural ativa;
+- a validação externa, a Matriz de Avaliação inicial e as 18 decisões humanas sobre Resultados estão concluídas;
+- o registro possui 9 candidatos em validação, 3 fundidos e 6 rejeitados;
+- `BUS-CAND-010` foi fundido em `BUS-CAND-005` por `COD-018`;
+- nenhum Resultado canônico foi criado;
+- a reaplicação dos testes, o AQS-O01 e as Capacidades Empresariais aguardam atos separados;
+- Engenharia de Produto permanece pausada antes de `W0-01`.
 
 ## Missão
 
@@ -54,20 +63,20 @@ A GEA representa a Guivos em sua capacidade institucional máxima. Ela não deve
 
 A GEA classifica seus ativos por dois eixos complementares:
 
-1. **Domínio arquitetural:** Foundation, Knowledge, Ecosystem, Product, Business, Data & Intelligence, Economic, Technology e Governance.
-2. **Permanência:** Permanent Architecture, Reference Architecture, Enterprise Programs e Enterprise Delivery.
+1. **Domínio arquitetural:** Fundação, Conhecimento, Ecossistema, Produto, Negócio, Dados e Inteligência, Economia, Tecnologia e Governança.
+2. **Permanência:** Arquitetura Permanente, Arquitetura de Referência, Programas Empresariais e Entrega Empresarial.
 
 O domínio define responsabilidade conceitual. A camada de permanência define horizonte, velocidade de mudança e rigor de governança.
 
-Consulte o [GEA-PLM-001 — Permanence Layer Model](permanence-layer-model.md).
+Consulte o [GEA-PLM-001 — Modelo de Camadas de Permanência](permanence-layer-model.md).
 
 ## Modelo de camadas de permanência
 
 ```mermaid
 graph TD
-    PA[Permanent Architecture] --> RA[Reference Architecture]
-    RA --> EP[Enterprise Programs]
-    EP --> ED[Enterprise Delivery]
+    PA[Arquitetura Permanente] --> RA[Arquitetura de Referência]
+    RA --> EP[Programas Empresariais]
+    EP --> ED[Entrega Empresarial]
     ED --> L[Resultados e Aprendizado]
     L --> R[Revisão formal quando necessária]
     R --> RA
@@ -75,10 +84,10 @@ graph TD
 
 | Camada | Horizonte | Pergunta principal |
 |---|---|---|
-| Permanent Architecture | Décadas | O que continuará verdadeiro na maturidade da Guivos? |
-| Reference Architecture | Anos | Qual é a melhor forma arquitetural conhecida de realizar a visão? |
-| Enterprise Programs | Meses e ciclos plurianuais | Quais programas transformarão a arquitetura em realidade? |
-| Enterprise Delivery | Dias, semanas e releases | O que será entregue agora e como será implementado? |
+| Arquitetura Permanente | décadas | O que continuará verdadeiro na maturidade da Guivos? |
+| Arquitetura de Referência | anos | Qual é a melhor forma arquitetural conhecida de realizar a visão? |
+| Programas Empresariais | meses e ciclos plurianuais | Quais programas transformarão a arquitetura em realidade? |
+| Entrega Empresarial | dias, semanas e versões | O que será entregue agora e como será implementado? |
 
 ## Estrutura oficial
 
@@ -92,7 +101,7 @@ graph TD
     GEA --> BA[Business Architecture]
     GEA --> GIA[Guivos Intelligence Architecture]
     GEA --> EM[Guivos Economic Model]
-    GEA --> TA[Technology / Engineering Architecture]
+    GEA --> TA[Technology and Engineering Architecture]
     GEA --> GA[Governance Architecture]
     EA --> GEB[Guivos Ecosystem Blueprint]
 ```
@@ -101,15 +110,15 @@ graph TD
 
 | Arquitetura | Pergunta principal | Situação vigente |
 |---|---|---|
-| Foundation Architecture | Quem é a Guivos e por que ela existe? | Frozen em `A2-B3` |
-| Guivos Knowledge Architecture | Como a Guivos descobre, valida, consolida e evolui conhecimento institucional? | Reconhecida por `ADR-006`; documentação interna pendente |
-| Ecosystem Architecture | Como ocorre a transformação dos participantes? | Em consolidação por meio do GEB |
-| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | Estrutura superior consolidada; Journey publicado; portfólio especializado pendente de rebaseline |
-| Business Architecture | Como a Guivos organiza transformação, Outcomes, capacidades e execução do negócio? | `A2-R03` preservada; COEM concluída; decisão humana `1 de 18`; pausa temporária de remediação |
-| Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | Conceitos superiores consolidados; produto especializado ainda não rebaselineado |
-| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | Arquitetura documental inicial concluída; validação empírica e especializada pendente |
-| Technology / Engineering Architecture | Como as capacidades são implementadas tecnicamente? | Planejada e pausada antes do `W0-01` |
-| Governance Architecture | Como decisões, riscos e mudanças são controlados? | Ativa por métodos, auditorias, decisões e remediação do GKR |
+| Foundation Architecture | Quem é a Guivos e por que ela existe? | congelada em `A2-B3` |
+| Guivos Knowledge Architecture | Como a Guivos descobre, valida, consolida e evolui conhecimento institucional? | reconhecida por `ADR-006`; documentação interna pendente |
+| Ecosystem Architecture | Como ocorre a transformação dos participantes? | em consolidação por meio do GEB |
+| Product Architecture | Quais produtos materializam capacidades e propostas de valor? | estrutura superior consolidada; Journey publicado; portfólio especializado pendente de rebaseline |
+| Business Architecture | Como a Guivos organiza transformação, Resultados, capacidades e execução do negócio? | `A2-R03` ativa; 18 decisões humanas concluídas; reavaliação e Canon pendentes |
+| Guivos Intelligence Architecture | Como conhecimento, dados, contexto e conexões se tornam inteligência aplicada? | conceitos superiores consolidados; produto especializado ainda não rebaselineado |
+| Guivos Economic Model | Como a Guivos sustenta economicamente o ecossistema sem contrariar seu propósito? | arquitetura documental inicial concluída; validação empírica e especializada pendente |
+| Technology and Engineering Architecture | Como as capacidades são implementadas tecnicamente? | planejada e pausada antes de `W0-01` |
+| Governance Architecture | Como decisões, riscos e mudanças são controlados? | ativa por métodos, auditorias, decisões e validação permanente do GKR |
 
 ## Relação entre GEA, GKR, GKA e GEB
 
@@ -125,7 +134,7 @@ Todo conceito, modelo, capacidade, ativo arquitetural ou decisão canônica deve
 
 Arquiteturas consumidoras podem utilizar e referenciar esses ativos, mas não redefini-los.
 
-A decisão de ownership está registrada no [ADR-003 — Architectural Ownership](../adr/ADR-003-architectural-ownership.md).
+A decisão de propriedade está registrada no [ADR-003 — Architectural Ownership](../adr/ADR-003-architectural-ownership.md).
 
 ## Princípios permanentes
 
@@ -143,7 +152,7 @@ Quando evidências consistentes demonstrarem inadequação, o conhecimento dever
 
 ### Uma decisão, uma fonte da verdade
 
-Cada decisão arquitetural possui registro oficial. Resumos, roadmaps e boards não criam decisões paralelas.
+Cada decisão arquitetural possui registro oficial. Resumos, roadmaps e painéis não criam decisões paralelas.
 
 ### Propriedade arquitetural única
 
@@ -173,40 +182,20 @@ Todo ativo arquitetural deve declarar quais decisões orienta e quais não orien
 
 Nenhuma decisão estrutural deve ser tomada apenas por preferência.
 
-### Progressive Realization
+### Realização progressiva
 
 A Guivos é concebida em sua capacidade máxima e realizada progressivamente por programas, entregas e ciclos de implementação.
 
 ## Fluxo oficial de fundamentação
 
-```mermaid
-graph LR
-    R[Realidade observada] --> E[Evidências]
-    E --> K[Conhecimento consolidado]
-    K --> C[Canon]
-    C --> A[Arquiteturas]
-    A --> CAP[Capacidades]
-    CAP --> P[Produtos]
-    P --> I[Implementação]
-    I --> NE[Novas evidências]
-    NE --> E
+```text
+realidade e evidências
+→ conhecimento validado
+→ arquitetura permanente e de referência
+→ programas empresariais
+→ entrega empresarial
+→ resultados observados
+→ aprendizado e revisão governada
 ```
 
-## Padrão das arquiteturas
-
-Cada arquitetura deverá documentar progressivamente objetivo, propósito, escopo, limites, princípios, modelos, capacidades, relações, decisões orientadas, critérios de validação, evolução, permanência, owner e processo autorizado de mudança.
-
-## Regra de maturidade
-
-| Estado | Significado |
-|---|---|
-| Draft | Em construção inicial |
-| Validated | Conceitualmente validado e utilizável |
-| Canonical | Integrante da versão canônica vigente |
-| Stable | Improvável de sofrer alterações estruturais |
-
-Nenhuma unidade deve ser considerada `stable` antes que suas dependências estejam, no mínimo, `validated`.
-
-## Regra de estabilidade
-
-A estrutura principal da GEA permanece estável. Refinamentos dentro das arquiteturas não devem alterar desnecessariamente a estrutura superior. Mudanças no conjunto principal exigem justificativa formal, evidência e ADR.
+Nenhuma camada posterior redefine silenciosamente a anterior.
