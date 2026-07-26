@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -23,6 +23,7 @@ related:
   - UXA-011
   - UXA-011-A1
   - UXA-012
+  - UXA-013
 normative: false
 ---
 
@@ -30,25 +31,25 @@ normative: false
 
 ## 1. Finalidade
 
-A Arquitetura da Experiência da Guivos transforma capacidades, princípios e contratos funcionais consolidados no **Repositório de Conhecimento da Guivos** em uma experiência navegável, compreensível, coerente e reconhecível para Pessoas, Organizações e Coletivos.
+A Arquitetura da Experiência da Guivos transforma capacidades, princípios e contratos funcionais consolidados no **Repositório de Conhecimento da Guivos** em experiências navegáveis, compreensíveis, coerentes e reconhecíveis para Pessoas, Organizações e Coletivos.
 
-Ela governa, antes do design visual definitivo:
+Ela governa:
 
 - jornadas por tipo de participante;
 - arquitetura de informação e navegação;
-- responsabilidade e hierarquia de cada superfície;
-- controles de relevância, frequência e privacidade;
+- responsabilidade e hierarquia das superfícies;
 - presença companheira e posicionamento institucional;
 - compreensão verificável do momento;
-- evidência de avanço relevante para a jornada;
+- evidência de avanço relevante;
 - explicabilidade do Próximo Passo;
+- contribuição responsável das Organizações;
 - gate de alinhamento à Fundação da Guivos;
-- coerência entre Guivos Journey, Business, Mall, Travel, Media, Ads e Intelligence;
+- coerência entre os produtos do ecossistema;
 - critérios para wireframes, protótipos e testes posteriores.
 
-## 2. O que esta frente não representa
+## 2. Limite da frente
 
-Esta frente não inicia Engenharia de Produto, não define tecnologia ou código, não cria design visual final, não conclui preços e planos e não autoriza produção.
+Esta frente não inicia Engenharia de Produto, não define tecnologia ou código, não cria design visual final, não conclui preços ou planos e não autoriza produção.
 
 ## 3. Documentos ativos
 
@@ -59,98 +60,103 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Mapa Inicial de Jornadas e Telas](uxa-003-journeys-and-screen-map.md) | UXA-003 | inventário de superfícies para Pessoa, Organização e Coletivo |
 | [Oportunidades, Organizações, Coletivos e Mapa](uxa-004-opportunities-organizations-collectives-map.md) | UXA-004 | cadastro, descoberta, relevância, preço e localização |
 | [Programa Inicial de Wireframes de Baixa Fidelidade](uxa-005-low-fidelity-wireframes.md) | UXA-005 | método, convenções e critérios de avanço |
-| [Wireframe de Baixa Fidelidade da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | entrada diária pessoal reformulada |
-| [Wireframe de Baixa Fidelidade do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | momento, avanço, Próximo Passo, preço, elegibilidade, fonte e ação contextual |
-| [Wireframe de Baixa Fidelidade do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | fluxo institucional e etapa de preço e condições |
-| [Padrão de Linguagem Clara e Identificadores Técnicos](uxa-009-plain-language-and-technical-identifiers.md) | UXA-009 | nomes completos, tradução de estados e uso secundário de códigos |
-| [Validação Funcional e Reformulação da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana e consequências da primeira reformulação funcional |
-| [Presença Companheira e Coerência de Posicionamento da Guivos](uxa-011-companion-presence-and-ecosystem-positioning.md) | UXA-011 | princípio transversal e gate de alinhamento à Fundação |
-| [Compreensão do Momento, Evidência de Avanço e Explicabilidade do Próximo Passo](uxa-011-a1-moment-progress-and-next-step-explainability.md) | UXA-011-A1 | critérios transversais para demonstrar contexto, mudança e justificativa |
-| [Validação Funcional e Reformulação do Detalhe de Oportunidade](uxa-012-opportunity-detail-functional-validation-and-reformulation.md) | UXA-012 | decisão humana, gate fundacional e reformulação da superfície |
+| [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | entrada diária pessoal reformulada |
+| [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | momento, avanço, Próximo Passo, preço, fonte e ação contextual |
+| [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | contribuição para jornadas, responsabilidade, preço, proteção e envio |
+| [Padrão de Linguagem Clara](uxa-009-plain-language-and-technical-identifiers.md) | UXA-009 | nomes completos, tradução de estados e uso secundário de códigos |
+| [Validação Funcional da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana e reformulação da entrada diária |
+| [Presença Companheira e Coerência de Posicionamento](uxa-011-companion-presence-and-ecosystem-positioning.md) | UXA-011 | princípio transversal e gate da Fundação |
+| [Compreensão do Momento, Evidência de Avanço e Explicabilidade](uxa-011-a1-moment-progress-and-next-step-explainability.md) | UXA-011-A1 | critérios para contexto, mudança e justificativa |
+| [Validação Funcional do Detalhe de Oportunidade](uxa-012-opportunity-detail-functional-validation-and-reformulation.md) | UXA-012 | decisão humana e reformulação da oportunidade |
+| [Validação Funcional do Cadastro pela Organização](uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md) | UXA-013 | papel institucional, contribuição, evidências, condições e ciclo da oportunidade |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-012 |
+| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-013 |
 | Resultados Empresariais | pausados antes da capacidade de reinvestimento responsável | BUS-CAND-010 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
-| Tela Hoje | validada funcionalmente e reformulada | UXA-006, UXA-010 e UXA-011 |
-| Detalhe de Oportunidade | validado e reformulado com compreensão do momento, avanço e justificativa | UXA-007, UXA-011-A1 e UXA-012 |
-| Cadastro pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
-| Compreensão do momento | princípio transversal estabelecido | UXA-011-A1 |
-| Evidência de avanço | princípio transversal estabelecido | UXA-011-A1 |
-| Explicabilidade do Próximo Passo | princípio transversal estabelecido | UXA-011-A1 |
+| Tela Hoje | validada e reformulada | UXA-006, UXA-010 e UXA-011 |
+| Detalhe de Oportunidade | validado e reformulado | UXA-007, UXA-011-A1 e UXA-012 |
+| Cadastro pela Organização | validado e reformulado segundo a Fundação | UXA-008 e UXA-013 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
 
 ## 5. Gate de alinhamento à Fundação
 
-Toda superfície deverá demonstrar aderência à:
-
-- Essência da Guivos;
-- Propósito;
-- Missão Operacional;
-- Visão de Longo Prazo;
-- Constituição da Guivos;
-- Princípios Permanentes.
+Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para protótipo, design, teste, especificação técnica ou desenvolvimento.
 
 ## 6. Compreensão do momento, avanço e Próximo Passo
 
-Toda superfície que apresente evolução, progresso, prioridade, oportunidade ou recomendação deverá mostrar:
+Toda superfície que apresente evolução, prioridade, oportunidade ou recomendação deverá mostrar:
 
-1. como a Guivos compreende o momento atual;
-2. quais informações sustentam essa leitura;
-3. qual avanço já foi reconhecido com evidência suficiente;
-4. o que ainda é desconhecido, inferido ou contestado;
-5. por que o Próximo Passo apresentado faz sentido;
+1. como a Guivos compreendeu o momento;
+2. quais informações sustentam a leitura;
+3. qual avanço possui evidência suficiente;
+4. o que permanece desconhecido, inferido ou contestado;
+5. por que o Próximo Passo faz sentido;
 6. quais alternativas continuam disponíveis;
 7. como corrigir ou rejeitar a interpretação.
 
-Métricas de engajamento não poderão ser apresentadas como evolução. A Guivos deverá demonstrar mudança real na jornada, não apenas atividade dentro da plataforma.
+Métricas de engajamento não poderão substituir evidência de mudança real.
 
-## 7. Resultado da Tela Hoje
+## 7. Resultado do Detalhe de Oportunidade
 
-A Tela Hoje preserva contexto de atuação, síntese condicional, uma atenção principal, continuidade da jornada, possibilidades para o Próximo Passo, atividades temporalmente relevantes e navegação global.
-
-## 8. Resultado do Detalhe de Oportunidade
-
-A ordem funcional reformulada é:
+A superfície apresenta, antes da conversão:
 
 ```text
 identidade e origem
-→ como a Guivos compreende seu momento
+→ compreensão do momento
 → avanço reconhecido
-→ por que este Próximo Passo faz sentido
+→ justificativa do Próximo Passo
 → investimento e condições
-→ o que precisa saber antes de decidir
+→ informações para decidir
 → condições para participar
 → quem oferece
-→ relação comercial com a Guivos
+→ relação comercial
 → ações contextuais
+```
+
+## 8. Resultado do Cadastro pela Organização
+
+As onze etapas passam a ser:
+
+```text
+Natureza da oportunidade
+→ Jornada e contribuição
+→ Responsabilidade institucional
+→ Disponibilidade
+→ Modalidade e acesso
+→ Investimento e condições
+→ Condições para participar
+→ Proteção, dados e evidências
+→ Relação comercial
+→ Prévia e coerência
+→ Declaração e envio
 ```
 
 Decisões principais:
 
-- a leitura do momento apresenta informações, fontes, lacunas e possibilidade de correção;
-- o avanço é demonstrado por evidência de mudança, não por engajamento;
-- o Próximo Passo é justificado por uma cadeia compreensível e contestável;
-- a relação com a jornada antecede preço e conversão;
-- a oportunidade é apresentada como possibilidade, não recomendação definitiva;
-- preço e custo total permanecem visíveis e transparentes;
-- elegibilidade é apresentada em `Condições para participar`;
-- ação principal varia conforme tipo e estado real;
-- salvar e comparar permanecem alternativas legítimas;
-- publicidade e comissão não alteram relevância funcional.
+- a Organização é participante institucional responsável, não apenas anunciante;
+- contribuição para jornadas antecede preço e conversão;
+- Momento Atual geral, Próximo Passo e avanço possível são estruturados;
+- intenção, evidência, experiência e resultado verificado permanecem distintos;
+- métricas operacionais não substituem impacto;
+- limites e não garantias são obrigatórios;
+- a Organização não define relevância individual;
+- o painel lateral verifica coerência com a Fundação;
+- ativação não garante apresentação contextual;
+- patrocínio não eleva relevância funcional.
 
-## 9. Presença companheira e posicionamento
+## 9. Presença companheira institucional
 
-Toda superfície deverá demonstrar que a Guivos acompanha a jornada sem controlar decisões, preservando contexto, explicação, alternativas, correção, pausa e recusa.
+A comunicação com Organizações deverá ser objetiva, responsável e colaborativa. Ela deverá explicar por que cada informação é necessária, como será apresentada e quais responsabilidades permanecem com a Organização e com a Guivos.
 
-Uma formulação que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo deverá ser reavaliada.
+Linguagem de conversão genérica, promessa de resultado ou venda de relevância deverá ser rejeitada.
 
 ## 10. Wireframes atuais
 
@@ -158,12 +164,17 @@ Uma formulação que poderia pertencer indistintamente a qualquer marketplace, r
 |---|---|---|
 | Tela Hoje | aplicativo móvel | reformulada após validação funcional |
 | Detalhe de Oportunidade | aplicativo móvel | reformulado com momento, avanço e Próximo Passo explicável |
-| Cadastro de Oportunidade pela Organização | web para computador | wireframe inicial criado |
+| Cadastro pela Organização | web para computador | reformulado com contribuição para jornadas e responsabilidade institucional |
 
 Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
 ## 11. Próximo ponto de decisão
 
-Validar funcionalmente o Cadastro de Oportunidade pela Organização aplicando presença companheira, gate fundacional, compreensão institucional do momento, evidência de avanço, clareza de contribuição para jornadas, responsabilidade, preço, condições e separação entre envio, avaliação, ativação e apresentação.
+Após a integração, selecionar separadamente entre:
 
-Protótipo navegável, design visual, testes e desenvolvimento permanecem não iniciados.
+1. detalhar um estado alternativo prioritário da Tela Hoje;
+2. detalhar um estado alternativo do Detalhe de Oportunidade;
+3. detalhar um estado alternativo do Cadastro pela Organização;
+4. preparar um protótipo navegável de baixa fidelidade, mediante nova autorização.
+
+Protótipo, design visual, testes e desenvolvimento permanecem não iniciados.

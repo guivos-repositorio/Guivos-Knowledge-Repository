@@ -2,30 +2,27 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.86.0
+version: 4.87.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.88.0
+  - ROADMAP-11.89.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - UXA-000
-  - UXA-001
-  - UXA-002
-  - UXA-003
-  - UXA-004
-  - UXA-005
   - UXA-006
   - UXA-007
   - UXA-008
   - UXA-009
   - UXA-010
   - UXA-011
+  - UXA-011-A1
   - UXA-012
-  - M7.19.6
+  - UXA-013
+  - M7.19.7
 normative: false
 ---
 
@@ -50,26 +47,31 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.3 | Concluído | linguagem clara estabelecida |
 | M7.19.4 | Concluído | Tela Hoje validada e reformulada |
 | M7.19.5 | Concluído | presença companheira e gate da Fundação estabelecidos |
-| M7.19.6 | Ativo neste incremento | Detalhe de Oportunidade validado e reformulado |
+| M7.19.6 | Concluído | Detalhe de Oportunidade validado e reformulado |
+| M7.19.7 | Ativo neste incremento | Cadastro pela Organização validado e reformulado |
 
 ## 3. Marco vigente
 
-### Detalhe de Oportunidade Validado e Reformulado (marco M7.19.6)
+### Cadastro pela Organização Validado e Reformulado (marco M7.19.7)
 
 **Critérios atendidos:**
 
 - gate de alinhamento à Fundação aplicado;
-- oportunidade tratada como meio para evolução;
-- relação com a jornada posicionada antes de preço e conversão;
-- oportunidade declarada como possibilidade, não recomendação definitiva;
-- preço, custo total, validade e cancelamento preservados;
-- relevância e temporalidade explicadas;
-- elegibilidade apresentada sem simular aprovação;
-- Organização responsável e relação comercial explicitadas;
-- ação principal tornada contextual;
-- salvar e comparar preservados sem pressão;
-- mapa condicionado à relevância da localização;
-- wireframe móvel atualizado para a versão 0.3.0;
+- Organização tratada como participante institucional responsável;
+- etapa `Jornada e contribuição` posicionada antes de preço;
+- Momento Atual geral, Próximo Passo e avanço possível estruturados;
+- intenção, fundamento, evidência, experiência e resultado verificado distinguidos;
+- métricas operacionais impedidas de substituir avanço ou impacto;
+- limites e não garantias tornados obrigatórios;
+- Organização impedida de definir relevância individual;
+- etapa `Investimento e condições` refinada;
+- proteção ampliada para dados, consentimentos e evidências;
+- painel lateral orientado à coerência com a Fundação;
+- pré-visualização responsável criada;
+- envio, avaliação, ativação e apresentação preservados como estados distintos;
+- patrocínio e investimento comercial impedidos de elevar relevância;
+- wireframe para computador atualizado para a versão 0.3.0;
+- três wireframes iniciais funcionalmente validados;
 - protótipo, design, testes e desenvolvimento preservados como não iniciados;
 - Resultados Empresariais e Engenharia de Produto preservados em pausa.
 
@@ -87,7 +89,7 @@ A Arquitetura da Experiência permanece uma frente preparatória transversal e n
 
 ## 5. Próximo ato
 
-Validar funcionalmente o Cadastro de Oportunidade pela Organização segundo a Fundação da Guivos, presença companheira institucional e responsabilidade pelo ciclo da oportunidade.
+Escolher separadamente entre estado alternativo, protótipo navegável de baixa fidelidade ou retorno à frente de Resultados Empresariais.
 
 ## 6. Regra de transição
 
