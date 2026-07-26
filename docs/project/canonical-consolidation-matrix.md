@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.10.0
+version: 2.11.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-018
   - GKR-CANON-MATRIX-UXA-017
   - GKR-CANON-MATRIX-UXA-014
   - GKR-CANON-MATRIX-UXA-013
@@ -22,7 +23,8 @@ related:
   - UXA-015
   - UXA-016
   - UXA-017
-  - M7.19.9
+  - UXA-018
+  - M7.19.10
 normative: false
 ---
 
@@ -60,19 +62,19 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões |
 | Capacidade de reinvestimento responsável | Manter pendente | em validação |
 | Décima oitava submissão e decisão | Pendente | não criadas |
-| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-017 |
+| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-018 |
 | Programa de Wireframes | Wireframe | programa inicial preservado |
 | Tela Hoje | Refinar em wireframe | validada e reformulada |
 | Detalhe de Oportunidade | Refinar em wireframe | validado e reformulado |
 | Cadastro pela Organização | Refinar em wireframe | validado e reformulado |
 | Visão Geral da Organização | Refinar em wireframe | validada e reformulada pela UXA-017 |
-| Início do Coletivo | Manter em wireframe inicial | validação seguinte na ordem |
+| Início do Coletivo | Refinar em wireframe | validado e reformulado pela UXA-018 |
 | Linguagem Clara | Manter | nomes completos antes de identificadores técnicos |
 | Presença Companheira | Manter como princípio transversal | acompanha sem controlar decisões |
 | Gate de alinhamento à Fundação | Manter obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios |
 | Compreensão do momento | Manter verificável e corrigível | fatos, observações, fontes, inferências e desconhecidos distintos |
 | Evidência de avanço | Refinar | mudança relevante não equivale a engajamento ou atividade |
-| Explicabilidade do Próximo Passo | Manter | momento, compromisso, evidência, decisão, contribuição e alternativas relacionados |
+| Explicabilidade do Próximo Passo | Manter | momento, propósito, evidência, escolha, contribuição e alternativas relacionados |
 | Organização no ecossistema | Refinar | participante institucional responsável, não apenas anunciante |
 | Coletivo no ecossistema | Refinar | formação voluntária orientada por propósito compartilhado |
 | Organização e Coletivo | Manter distintos | identidade, autoridade, responsabilidade e governança não se confundem |
@@ -88,7 +90,20 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Relações e dependências | Refinar | autonomia, recursos, dados, patrocínio, responsabilidades e encerramento visíveis |
 | Decisão institucional | Separar de tarefa | decisão apresenta justificativa, alternativas, responsável e prazo material |
 | Métricas institucionais | Limitar | vendas, anúncios, visualizações, seguidores e volume não equivalem a evolução |
-| Participação coletiva | Manter voluntária | entrada, pausa, recusa, saída e contestação preservadas |
+| Propósito coletivo | Posicionar antes da atividade | atividade e agenda não definem o Coletivo |
+| Pertencimento coletivo | Separar de disponibilidade | ser membro não implica estar disponível ou aceitar uma função |
+| Participação coletiva | Manter voluntária | entrada, observação, recusa, pausa, saída e contestação preservadas |
+| Convite para colaborar | Tornar recusável | convite não cria obrigação, punição ou exposição |
+| Papel coletivo | Exigir aceitação | responsabilidade somente existe após aceite explícito e permite desistência |
+| Necessidade coletiva | Apresentar sem pressão | ausência de voluntários não gera culpa ou cobrança pública |
+| Ação compartilhada | Subordinar ao propósito | atividade é meio para o propósito, não finalidade isolada |
+| Governança coletiva | Separar funções | consulta, decisão, execução, moderação e revisão permanecem distintas |
+| Votação e popularidade | Limitar | não constituem padrão universal de governança |
+| Autonomia do Coletivo | Manter | apoio institucional não transfere direção automaticamente |
+| Avanço coletivo | Refinar | exige propósito, mudança, evidência, período, contribuição e limitações |
+| Ausência de avanço coletivo | Tornar explícita | nenhum progresso será simulado sem evidência suficiente |
+| Próximo Passo coletivo | Não atribuir automaticamente | pessoas somente assumem responsabilidades após aceitação |
+| Métricas coletivas | Limitar | membros, mensagens, reações, publicações e atividades não equivalem a evolução |
 | Relevância individual | Reservar à Guivos e ao participante | Organização e Coletivo não definem prioridade pessoal |
 | Publicidade e relevância | Separar | patrocínio e investimento comercial não elevam relevância funcional |
 | Protótipo navegável | Pendente | não iniciado |
@@ -115,32 +130,35 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Continuidade econômica sustentável | candidato empresarial | Reformular aceito |
 | Capacidade de reinvestimento responsável | candidato empresarial | Em validação; decisão pendente |
 
-## 5. Resultado da validação da Visão Geral da Organização
+## 5. Resultado da validação do Início do Coletivo
 
 A decisão consolidada:
 
 - aplica o gate obrigatório da Fundação;
-- mantém autoridade representada antes de ações;
-- inicia o momento por mudanças e compromissos materiais;
-- cria uma responsabilidade principal com prioridade legítima;
-- posiciona jornadas e compromissos antes de oportunidades;
-- liga capacidade ao dever de cumprir;
-- subordina movimentos operacionais;
+- mantém propósito e pertencimento antes da atividade;
+- separa pertencimento, disponibilidade, responsabilidade e autoridade;
+- inicia o momento por mudanças e necessidades materiais;
+- apresenta necessidade principal sem culpa ou exposição;
+- subordina ações ao propósito;
+- torna convites recusáveis;
+- condiciona papéis a aceitação explícita;
+- preserva ausência, silêncio, recusa, pausa e saída;
+- separa consulta, decisão, execução e moderação;
+- limita votação, ranking e popularidade;
+- mantém autonomia diante de apoio institucional;
 - exige evidência e contribuição demonstrável para reconhecer avanço;
 - declara ausência de evidência sem simular progresso;
-- torna relações, dependências, dados, recursos e patrocínio transparentes;
-- separa decisão de tarefa;
-- preserva alternativas, correção e contestação;
-- impede métricas comerciais de substituírem evolução;
-- não inicia protótipo, design, teste ou desenvolvimento.
+- impede atribuição automática de pessoas;
+- impede métricas de atividade de substituírem evolução;
+- não inicia a etapa 3, protótipo, design, teste ou desenvolvimento.
 
 ## 6. Documento complementar vigente
 
-O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Validação Funcional da Visão Geral da Organização`.
+O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Validação Funcional do Início do Coletivo`.
 
 ## 7. Ordem autorizada
 
-1. Visão Geral da Organização — validada neste incremento;
-2. Início do Coletivo — próximo incremento;
-3. relações entre Organizações e Coletivos — posterior;
+1. Visão Geral da Organização — validada e integrada;
+2. Início do Coletivo — validado neste incremento;
+3. relações entre Organizações e Coletivos — próximo incremento;
 4. Resultados Empresariais e capacidade de reinvestimento responsável — posterior.

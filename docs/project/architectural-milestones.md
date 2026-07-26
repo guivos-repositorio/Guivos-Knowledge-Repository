@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.89.0
+version: 4.90.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.91.0
+  - ROADMAP-11.92.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -17,7 +17,8 @@ related:
   - UXA-015
   - UXA-016
   - UXA-017
-  - M7.19.9
+  - UXA-018
+  - M7.19.10
 normative: false
 ---
 
@@ -45,31 +46,34 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.6 | Concluído | Detalhe de Oportunidade validado e reformulado |
 | M7.19.7 | Concluído | Cadastro pela Organização validado e reformulado |
 | M7.19.8 | Concluído | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
-| M7.19.9 | Ativo neste incremento | Visão Geral da Organização validada e reformulada |
+| M7.19.9 | Concluído | Visão Geral da Organização validada e reformulada |
+| M7.19.10 | Ativo neste incremento | Início do Coletivo validado e reformulado |
 
 ## 3. Marco vigente
 
-### Visão Geral da Organização Validada e Reformulada (marco M7.19.9)
+### Início do Coletivo Validado e Reformulado (marco M7.19.10)
 
 **Critérios atendidos:**
 
 - gate de alinhamento à Fundação aplicado;
-- autoridade representada posicionada antes de ações;
-- papel e escopo de autoridade mantidos visíveis;
-- momento institucional iniciado por mudanças e compromissos materiais;
-- contagens operacionais impedidas de dominar a leitura;
-- responsabilidade principal apresentada com motivo, consequência, responsável e alternativas;
-- jornadas apoiadas e compromissos posicionados antes de oportunidades;
-- capacidade relacionada ao compromisso que precisa ser cumprido;
-- oportunidades e programas tratados como movimentos subordinados;
-- avanço institucional condicionado a evidência, período, contribuição e limitações;
+- propósito, identidade e estado de participação posicionados antes da atividade;
+- pertencimento, disponibilidade, responsabilidade e autoridade mantidos distintos;
+- momento coletivo iniciado por mudanças, necessidades e decisões materiais;
+- contagens de membros e atividades impedidas de dominar a leitura;
+- necessidade principal apresentada sem culpa, exposição ou pressão;
+- ação compartilhada subordinada ao propósito;
+- convites tornados recusáveis;
+- papéis condicionados a aceitação explícita e desistência legítima;
+- ausência, silêncio, recusa, pausa e saída preservados;
+- governança separada entre consulta, decisão, execução e moderação;
+- votação e popularidade impedidas de se tornarem padrões universais;
+- apoio institucional apresentado sem perda de autonomia;
+- avanço coletivo condicionado a propósito, evidência, período, contribuição e limitações;
 - ausência de evidência declarada sem simulação de progresso;
-- relações institucionais apresentadas com autonomia, recursos, dados, patrocínio e dependências;
-- decisões separadas de tarefas;
-- alternativas, correção e contestação preservadas;
-- wireframe para computador atualizado para a versão 0.2.0;
+- nenhuma pessoa atribuída automaticamente a um Próximo Passo;
+- wireframe móvel atualizado para a versão 0.2.0;
 - protótipo, design, testes e desenvolvimento preservados como não iniciados;
-- Início do Coletivo preservado como próximo na ordem;
+- relações entre Organizações e Coletivos preservadas como próximas na ordem;
 - Resultados Empresariais e Engenharia de Produto preservados em pausa.
 
 ## 4. Estado das revisões arquiteturais
@@ -86,9 +90,9 @@ A Arquitetura da Experiência permanece uma frente preparatória transversal e n
 
 ## 5. Próximo ato da ordem
 
-Após a integração, a próxima etapa será a validação funcional do **Início do Coletivo**.
+Após a integração, a próxima etapa será o detalhamento funcional das **relações entre Organizações e Coletivos**.
 
-O detalhamento das relações entre Organizações e Coletivos e o retorno aos Resultados Empresariais permanecem como terceira e quarta etapas.
+O retorno aos Resultados Empresariais permanece como quarta etapa.
 
 ## 6. Regra de transição
 
