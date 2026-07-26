@@ -2,18 +2,17 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Knowledge Board
 status: active
-version: 11.80.0
+version: 11.81.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.80.0
+  - ROADMAP-11.81.0
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-016
-  - COD-016
-  - M7.18
+  - BA-STR-002-COD-SUB-017
+  - M7.18.1
 normative: false
 ---
 
@@ -28,16 +27,16 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 | Elemento | Estado vigente |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.18 — Sixteenth Human Outcome Decision Recorded` |
+| Marco | `M7.18.1 — Seventeenth Human Outcome Decision Submitted` |
 | Remediação | concluída; R5 `PASS` e R6 concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
 | COR | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
-| CODR | 16 de 18 decisões humanas; 0 submissões abertas |
+| CODR | 16 de 18 decisões humanas; 1 submissão aberta |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
 | Reject aceitos | 5 |
-| `BUS-CAND-008` | `Rejected`; governança de parceiros e gestão de alianças preservadas |
+| `BUS-CAND-009` | `Under Validation`; decisão pendente sobre `Reject` |
 | Outcomes canônicos | 0 |
 | Business Capabilities | não iniciadas |
 | Product Engineering | pausado antes do `W0-01`; execução 0% |
@@ -58,7 +57,7 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-009`.
+- submissão de `BUS-CAND-009` aguardando manifestação humana.
 
 ### Pendente
 
@@ -73,14 +72,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - W0-01 a W0-08;
 - POCs, ambientes, integrações e produção.
 
-## 4. COD-016
+## 4. Submissão de BUS-CAND-009
 
-O Fundador aceitou `Reject` para `BUS-CAND-008 — Saúde das relações de parceria`.
+A COEM recomenda `Reject` para `BUS-CAND-009 — Coerência global com adequação contextual`.
 
-Saúde das relações de parceria foi retirada do futuro catálogo de Business Outcomes. Governança de parceiros, gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios de portfólio permanecem preservados na futura arquitetura de capacidades.
+A recomendação retira o conceito do futuro catálogo de Business Outcomes e preserva seu conteúdo como princípio arquitetural e critério governado para internacionalização, localização, desenho de capacidades e avaliação de mudanças.
 
-A decisão não reduz a importância estratégica das parcerias, não exige internalização e não considera quantidade, duração ou ausência de conflito como prova suficiente de saúde relacional.
+Não existe solução universal entre padronização e adaptação. Tradução, presença local ou variação de produto não constituem prova suficiente de adequação legítima, e adaptação excessiva pode fragmentar identidade, propósito e governança.
 
 ## 5. Próximo movimento
 
-Após integração deste incremento, preparar a décima sétima submissão humana para `BUS-CAND-009 — Coerência global com adequação contextual`, cuja recomendação da COEM é `Reject`.
+Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-017`. Nenhuma decisão será inferida automaticamente.
