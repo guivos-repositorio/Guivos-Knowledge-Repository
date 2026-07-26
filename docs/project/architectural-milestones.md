@@ -2,18 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.79.0
+version: 4.80.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.81.0
+  - ROADMAP-11.82.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-017
-  - M7.18.1
+  - COD-017
+  - M7.19
 normative: false
 ---
 
@@ -63,27 +64,27 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.17 | Completed | `COD-015` registrado para `BUS-CAND-007` |
 | M7.17.1 | Completed | décima sexta decisão submetida para `BUS-CAND-008` |
 | M7.18 | Completed | `COD-016` registrado para `BUS-CAND-008` |
-| M7.18.1 | Completed neste incremento | décima sétima decisão submetida para `BUS-CAND-009` |
+| M7.18.1 | Completed | décima sétima decisão submetida para `BUS-CAND-009` |
+| M7.19 | Completed neste incremento | `COD-017` registrado para `BUS-CAND-009` |
 
 ## 3. Marco vigente
 
-### M7.18.1 — Seventeenth Human Outcome Decision Submitted
+### M7.19 — Seventeenth Human Outcome Decision Recorded
 
 **Critérios atendidos:**
 
-- submissão individual `BA-STR-002-COD-SUB-017` criada;
-- formulação original de `BUS-CAND-009` preservada;
-- resultados `Partial / Pass / Pass / Fail` preservados;
-- recomendação `Reject` preservada sem inferência de decisão;
-- coerência global com adequação contextual separada de Outcome permanente;
-- princípio arquitetural e critério governado de internacionalização preservados;
-- padronização global não imposta;
-- adaptação local não proibida;
+- manifestação explícita do Fundador registrada;
+- alternativa `A — Aceitar Reject` aceita;
+- `COD-017` criado para `BUS-CAND-009`;
+- formulação original, evidências e rastreabilidade preservadas;
+- candidato alterado de `Under Validation` para `Rejected`;
+- coerência global com adequação contextual retirada do futuro catálogo de Business Outcomes;
+- princípio arquitetural e critério governado preservados;
+- critérios de internacionalização, localização e desenho de capacidades preservados;
+- padronização global não imposta e adaptação local não proibida;
 - tradução, presença local e variação nominal bloqueadas como prova suficiente;
-- `COD-017` não criado;
-- candidato mantido em `Under Validation`;
-- decisões humanas preservadas em 16 de 18;
-- COR preservado em 11 `Under Validation`, 2 `Merged` e 5 `Rejected`;
+- decisões humanas atualizadas para 17 de 18;
+- COR atualizado para 10 `Under Validation`, 2 `Merged` e 6 `Rejected`;
 - nenhum Outcome canônico criado;
 - Product Engineering preservado em pausa.
 
@@ -99,7 +100,7 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 
 ## 5. Próximo ato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-017`.
+Após integração deste incremento, preparar a submissão de `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana sobre a recomendação `Merge into BUS-CAND-005`.
 
 ## 6. Regra de transição
 
