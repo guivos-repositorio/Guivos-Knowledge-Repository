@@ -2,24 +2,25 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 11.94.0
+version: 11.95.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.94.0
+  - ROADMAP-11.95.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-018
   - COD-018
   - UXA-000
-  - UXA-014
-  - UXA-017
-  - UXA-018
-  - UXA-019
-  - M7.20
+  - UXA-002
+  - UXA-005
+  - UXA-006
+  - UXA-010
+  - UXA-011-A1
+  - UXA-020
+  - M7.21
 normative: false
 ---
 
@@ -34,15 +35,18 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | décima oitava decisão humana registrada | M7.20 |
+| Marco | Página Inicial da Guivos e início da jornada estabelecidos | M7.21; UXA-020 |
 | Remediação | concluída | R1–R6 |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões concluída | A2-R03; BA-STR-002 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | COD-018 |
 | Continuidade econômica sustentável | formulação combinada em validação | BUS-CAND-005 |
-| Próxima fase | reaplicação dos quatro testes, aguardando autorização | BA-STR-002-COEM-001 |
-| Arquitetura da Experiência | integrada e preparatória | UXA-000 a UXA-019 |
+| Próxima fase empresarial | reaplicação dos quatro testes, aguardando autorização | BA-STR-002-COEM-001 |
+| Arquitetura da Experiência | HOME acrescentada às superfícies preparatórias | UXA-000 a UXA-020 |
+| Página Inicial da Guivos | contrato funcional e wireframe textual estabelecidos | UXA-020 |
+| Tela Hoje | reposicionada como entrada recorrente após a compreensão inicial | UXA-002; UXA-006; UXA-010 |
+| Personalização | bloqueada antes de contexto suficiente, revisável e autorizado | UXA-011-A1; UXA-020 |
 | Protótipo navegável | não iniciado | — |
 | Resultados canônicos | nenhum criado | 0 |
 | Capacidades Empresariais | não iniciadas | — |
@@ -64,15 +68,28 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Tela Hoje, Detalhe de Oportunidade e Cadastro pela Organização validados;
 - Fundação de Organizações e Coletivos estabelecida;
 - Visão Geral da Organização e Início do Coletivo validados;
-- relações entre Organizações e Coletivos detalhadas funcionalmente.
+- relações entre Organizações e Coletivos detalhadas funcionalmente;
+- Página Inicial da Guivos e sequência de início da jornada estabelecidas;
+- Tela Hoje reposicionada como superfície recorrente.
 
 ### Em validação
 
 - nove formulações candidatas ativas;
 - formulações combinadas de agência, habilitação de valor e continuidade econômica;
-- fronteiras entre Outcomes, princípios, capacidades e propriedades sustentadoras.
+- fronteiras entre Outcomes, princípios, capacidades e propriedades sustentadoras;
+- contrato funcional da HOME como hipótese estrutural a ser validada posteriormente.
 
 ### Aguardando autorização
+
+#### Arquitetura da Experiência
+
+- validação funcional da HOME;
+- arquivo gráfico vetorial da HOME;
+- detalhamento do relato por texto, voz e arquivos;
+- validação da compreensão inicial;
+- primeira variação da Tela Hoje após a transição.
+
+#### Arquitetura de Negócios
 
 - reaplicação dos quatro testes às formulações revisadas e combinadas;
 - ajuste prático do AQS-O01;
@@ -97,17 +114,48 @@ Merge BUS-CAND-010 into BUS-CAND-005
 
 A decisão:
 
-- encerra a candidatura autônoma de Capacidade de reinvestimento responsável;
-- preserva integralmente sua formulação, evidências e histórico;
-- incorpora financiamento responsável da renovação à Continuidade Econômica Sustentável;
-- preserva financiamento interno e externo como alternativas legítimas;
-- exige adicionalidade, riscos, obrigações, alternativas e custo de oportunidade;
-- distingue reinvestimento proposto, aprovado, realizado e eficaz;
-- bloqueia retenção automática, sobreinvestimento e uso de volume de gasto como prova de responsabilidade;
-- mantém `BUS-CAND-005` em validação;
-- não cria Resultado canônico.
+- encerrou a candidatura autônoma de Capacidade de reinvestimento responsável;
+- preservou integralmente sua formulação, evidências e histórico;
+- incorporou financiamento responsável da renovação à Continuidade Econômica Sustentável;
+- preservou financiamento interno e externo como alternativas legítimas;
+- exigiu adicionalidade, riscos, obrigações, alternativas e custo de oportunidade;
+- distinguiu reinvestimento proposto, aprovado, realizado e eficaz;
+- bloqueou retenção automática, sobreinvestimento e uso de volume de gasto como prova de responsabilidade;
+- manteve `BUS-CAND-005` em validação;
+- não criou Resultado canônico.
 
-## 5. Distribuição dos candidatos
+## 5. Resultado da Página Inicial da Guivos
+
+A sequência pessoal estabelecida é:
+
+```text
+Página Inicial da Guivos
+→ convite para iniciar a jornada
+→ relato multimodal do Momento Atual
+→ compreensão inicial apresentada
+→ revisão, correção e autorização
+→ Tela Hoje
+```
+
+A HOME:
+
+- comunica o impacto e o propósito da Guivos;
+- permite iniciar a jornada por texto, voz, arquivos ou perguntas progressivas;
+- permite conhecer o ecossistema sem iniciar a jornada;
+- apresenta Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads;
+- distingue conteúdo geral de indicação pessoal;
+- mantém publicidade e intenção comercial visíveis;
+- bloqueia personalização antes de compreensão suficiente;
+- preserva correção, limitação, exclusão, pausa e recusa.
+
+A Tela Hoje:
+
+- deixa de ser a primeira apresentação institucional;
+- passa a ser a principal entrada recorrente depois do gate;
+- utiliza contexto autorizado para explicar oportunidades e Próximos Passos;
+- permanece parcial ou vazia quando não houver base material.
+
+## 6. Distribuição dos candidatos
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -116,7 +164,7 @@ A decisão:
 | Rejected | 6 | retirados do futuro catálogo, com destinos arquiteturais preservados |
 | Approved | 0 | nenhuma aprovação ocorreu |
 
-## 6. Decisões transversais preservadas
+## 7. Decisões transversais preservadas
 
 - oportunidade é meio para evolução, não finalidade;
 - relevância individual depende do contexto autorizado do participante;
@@ -128,11 +176,16 @@ A decisão:
 - financiamento externo permanece alternativa legítima;
 - fusão não aprova o candidato de destino;
 - formulações combinadas retornam aos quatro testes;
+- a HOME não afirma compreender uma pessoa antes do relato;
+- exploração geral não equivale a recomendação;
+- voz e arquivos não autorizam uso irrestrito;
 - contrato funcional não equivale a instrumento jurídico;
 - wireframes não equivalem a design ou implementação.
 
-## 7. Próximo movimento
+## 8. Próximo movimento
 
-Após integração deste incremento e nova autorização, reaplicar os quatro testes às nove formulações ativas.
+Após integração, nenhum movimento é automático.
+
+A próxima ação poderá ser escolhida entre a validação funcional da HOME ou a retomada da reaplicação dos testes dos Resultados Empresariais, sempre em incrementos separados e mediante nova autorização.
 
 Nenhum protótipo, teste, design visual, desenvolvimento, AQS-O01, catálogo canônico ou Capacidade Empresarial será iniciado automaticamente.
