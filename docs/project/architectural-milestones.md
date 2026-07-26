@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.85.0
+version: 4.86.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.87.0
+  - ROADMAP-11.88.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -24,7 +24,8 @@ related:
   - UXA-009
   - UXA-010
   - UXA-011
-  - M7.19.5
+  - UXA-012
+  - M7.19.6
 normative: false
 ---
 
@@ -32,60 +33,62 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. Os arquivos históricos preservam snapshots e critérios detalhados.
+Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 
 ## 2. Linha de maturidade consolidada
 
-| Faixa ou marco | Estado em português | Resultado principal |
+| Faixa ou marco | Estado | Resultado principal |
 |---|---|---|
-| A0–A1 | Concluído | fundação do Repositório de Conhecimento da Guivos e macroestrutura institucional |
+| A0–A1 | Concluído | fundação do Repositório de Conhecimento e macroestrutura institucional |
 | M3–M4 | Concluído | Arquitetura de Fundação congelada e Arquitetura do Conhecimento estabelecida |
 | M5–M5.18 | Concluído | arquitetura funcional e publicação do Guivos Journey |
 | M6.0–M6.10 | Concluído | desenvolvimento e fechamento documental do Modelo Econômico |
-| M7.0–M7.1.5 | Concluído | Registro de Candidatos a Resultados, validação externa e matriz de avaliação concluídos |
-| M7.2–M7.19 | Concluído | decisões humanas 1 a 17 registradas |
-| M7.3–M7.3.5 | Concluído | auditoria, remediação, validação e retomada governada |
-| M7.19.1 | Concluído | Arquitetura da Experiência ativada e integrada |
-| M7.19.2 | Concluído | três wireframes iniciais de baixa fidelidade criados |
-| M7.19.3 | Concluído | padrão de linguagem clara e identificadores técnicos criado e aplicado |
-| M7.19.4 | Concluído | primeira validação funcional da Tela Hoje registrada e aplicada |
-| M7.19.5 | Ativo neste incremento | presença companheira e coerência de posicionamento estabelecidas |
+| M7.0–M7.19 | Concluído | validação externa e decisões humanas 1 a 17 |
+| M7.3–M7.3.5 | Concluído | auditoria, remediação e retomada governada |
+| M7.19.1 | Concluído | Arquitetura da Experiência integrada |
+| M7.19.2 | Concluído | três wireframes iniciais criados |
+| M7.19.3 | Concluído | linguagem clara estabelecida |
+| M7.19.4 | Concluído | Tela Hoje validada e reformulada |
+| M7.19.5 | Concluído | presença companheira e gate da Fundação estabelecidos |
+| M7.19.6 | Ativo neste incremento | Detalhe de Oportunidade validado e reformulado |
 
 ## 3. Marco vigente
 
-### Presença Companheira e Coerência de Posicionamento Estabelecidas (marco M7.19.5)
+### Detalhe de Oportunidade Validado e Reformulado (marco M7.19.6)
 
 **Critérios atendidos:**
 
-- princípio transversal criado para todos os produtos e canais da Guivos;
-- conceito de companheira definido como acompanhamento sem controle;
-- propósito relacionado ao comportamento da interface, não a slogans repetidos;
-- continuidade entre Momento Atual, jornada, relevância e Próximo Passo estabelecida;
-- autonomia para revisar, adiar, corrigir, recusar ou encerrar preservada;
-- intenção comercial separada do apoio à jornada;
-- intimidade artificial, paternalismo, vigilância e pressão emocional proibidos;
-- coerência entre Guivos Journey, Mall, Travel, Business, Media, Ads e Intelligence definida;
-- Tela Hoje atualizada para demonstrar o princípio em baixa fidelidade;
-- próximo incremento orientado à validação funcional do Detalhe de Oportunidade;
-- protótipo navegável, design visual, testes e desenvolvimento preservados como não iniciados;
-- Capacidade de reinvestimento responsável e Engenharia de Produto preservadas em pausa.
+- gate de alinhamento à Fundação aplicado;
+- oportunidade tratada como meio para evolução;
+- relação com a jornada posicionada antes de preço e conversão;
+- oportunidade declarada como possibilidade, não recomendação definitiva;
+- preço, custo total, validade e cancelamento preservados;
+- relevância e temporalidade explicadas;
+- elegibilidade apresentada sem simular aprovação;
+- Organização responsável e relação comercial explicitadas;
+- ação principal tornada contextual;
+- salvar e comparar preservados sem pressão;
+- mapa condicionado à relevância da localização;
+- wireframe móvel atualizado para a versão 0.3.0;
+- protótipo, design, testes e desenvolvimento preservados como não iniciados;
+- Resultados Empresariais e Engenharia de Produto preservados em pausa.
 
 ## 4. Estado das revisões arquiteturais
 
 | Revisão | Estado em linguagem clara |
 |---|---|
-| Revisão da Arquitetura de Fundação (A2-R01) | concluída e congelada |
-| Revisão do Modelo Fundamental (A2-R02) | pronta para execução e pausada operacionalmente |
-| Revisão da Arquitetura de Negócios (A2-R03) | ativa e pausada antes da capacidade de reinvestimento responsável |
-| Revisão da Arquitetura de Produtos (A2-R04) | planejada; não iniciada por este incremento |
-| Revisão entre Arquiteturas (A2-R05) | planejada |
+| Revisão da Arquitetura de Fundação | concluída e congelada |
+| Revisão do Modelo Fundamental | pronta e pausada operacionalmente |
+| Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável |
+| Revisão da Arquitetura de Produtos | planejada; não iniciada |
+| Revisão entre Arquiteturas | planejada |
 
-A Arquitetura da Experiência e os wireframes permanecem uma frente preparatória transversal. Eles não concluem a Revisão da Arquitetura de Negócios nem iniciam formalmente a Revisão da Arquitetura de Produtos.
+A Arquitetura da Experiência permanece uma frente preparatória transversal e não inicia formalmente a Revisão da Arquitetura de Produtos.
 
 ## 5. Próximo ato
 
-Validar funcionalmente o Detalhe de Oportunidade segundo a presença companheira e a coerência de posicionamento da Guivos.
+Validar funcionalmente o Cadastro de Oportunidade pela Organização segundo a Fundação da Guivos, presença companheira institucional e responsabilidade pelo ciclo da oportunidade.
 
 ## 6. Regra de transição
 
-Um marco somente muda de estado quando seus critérios estiverem demonstrados no Repositório de Conhecimento da Guivos. Wireframes, protótipo, testes, design visual, Engenharia de Produto e decisões sobre Resultados permanecem atos separados.
+Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Wireframes, protótipo, testes, design, Engenharia de Produto e decisões sobre Resultados permanecem atos separados.

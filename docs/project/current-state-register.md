@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.40.0
+version: 1.41.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -23,12 +23,14 @@ related:
   - UXA-009
   - UXA-010
   - UXA-011
+  - UXA-011-A1
+  - UXA-012
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-017
-  - ROADMAP-11.87.0
-  - M7.19.5
+  - ROADMAP-11.88.0
+  - M7.19.6
 normative: true
 ---
 
@@ -36,34 +38,38 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro é a superfície oficial do estado global vigente do **Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR)** quando o incremento correspondente estiver integrado à branch principal.
+Este registro é a superfície oficial do estado global vigente do **Repositório de Conhecimento da Guivos** quando o incremento correspondente estiver integrado ao ramo principal.
 
 ## 2. Estado global proposto
 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | presença companheira e coerência de posicionamento estabelecidas | M7.19.5 |
+| Marco atual | Detalhe de Oportunidade validado e reformulado | M7.19.6 |
 | Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa, mas pausada antes da decisão sobre capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
-| Resultados Empresariais (Business Outcomes) | 17 de 18 decisões humanas; nenhuma submissão aberta | BA-STR-002 |
-| Capacidade de reinvestimento responsável | em validação; decisão e incorporação não antecipadas | BUS-CAND-010; `Under Validation` |
-| Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | Candidate Outcome Register — COR 0.29.0 |
-| Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas registradas | Candidate Outcome Decision Register — CODR 0.33.0 |
-| Frente ativa | presença companheira e coerência de posicionamento da Guivos | UXA-011 |
-| Arquitetura da Experiência da Guivos | fundação integrada; princípio transversal estabelecido; dois wireframes aguardam validação | UXA-000 a UXA-011 |
-| Tela Hoje | wireframe reformulado e alinhado à presença companheira | UXA-006 0.4.0; UXA-010; UXA-011 |
-| Detalhe de oportunidade | wireframe inicial aguardando validação funcional segundo o novo princípio | UXA-007; UXA-011 |
+| Resultados Empresariais | 17 de 18 decisões humanas; nenhuma submissão aberta | BA-STR-002 |
+| Capacidade de reinvestimento responsável | em validação; decisão e incorporação não antecipadas | BUS-CAND-010 |
+| Registro de Candidatos a Resultados | 10 em validação, 2 incorporados e 6 rejeitados | COR 0.29.0 |
+| Registro de Decisões sobre Candidatos a Resultados | 17 de 18 decisões humanas | CODR 0.33.0 |
+| Frente ativa | validação funcional do Detalhe de Oportunidade | UXA-012 |
+| Arquitetura da Experiência | Tela Hoje e Detalhe de Oportunidade reformulados; Cadastro pela Organização aguardando validação | UXA-000 a UXA-012 |
+| Presença companheira | princípio transversal estabelecido | UXA-011 |
+| Compreensão do momento | leitura verificável, corrigível e baseada em sinais autorizados | UXA-011-A1 |
+| Evidência de avanço | mudança relevante na jornada, não engajamento | UXA-011-A1 |
+| Explicabilidade do Próximo Passo | cadeia entre momento, avanço, objetivo, lacuna e contribuição possível | UXA-011-A1 |
+| Tela Hoje | wireframe reformulado segundo presença companheira | UXA-006 0.4.0; UXA-010 |
+| Detalhe de Oportunidade | wireframe reformulado com momento, avanço e Próximo Passo explicável | UXA-007 0.4.0; UXA-012 0.2.0 |
 | Cadastro pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Testes de usabilidade | não iniciados | — |
-| Resultados canônicos | nenhum criado | 0 códigos EO/BO |
-| Capacidades Empresariais (Business Capabilities) | não iniciadas | — |
+| Resultados canônicos | nenhum criado | 0 |
+| Capacidades Empresariais | não iniciadas | — |
 | Guivos Journey | especificação arquitetural ativa; nove capacidades concluídas | PAS-001 1.0.0 |
 | Modelo Econômico da Guivos | arquitetura documental inicial concluída; validações reais pendentes | GEM-001 a GEM-010 |
-| Engenharia de Produto (Product Engineering) | pausada antes da primeira unidade de trabalho; execução em 0% | W0-01 |
+| Engenharia de Produto | pausada antes da primeira unidade de trabalho; execução em 0% | W0-01 |
 | Validação de Mercado | trilha paralela preservada; execução pendente | — |
 
 ## 3. Pausa governada dos Resultados Empresariais
@@ -71,109 +77,131 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 A pausa antes da décima oitava decisão permanece vigente.
 
 - **Capacidade de reinvestimento responsável** permanece em validação;
-- a décima oitava submissão de decisão não existe;
+- a décima oitava submissão não existe;
 - a décima oitava decisão não existe;
-- a recomendação de incorporação não foi executada;
-- a frente de Resultados Empresariais não foi concluída;
-- nenhum Resultado foi promovido ou canonicalizado;
-- a retomada dependerá de autorização explícita posterior.
+- nenhuma incorporação foi executada;
+- nenhum Resultado foi canonicalizado;
+- a retomada depende de autorização explícita posterior.
 
-## 4. Arquitetura da Experiência integrada
+## 4. Autoridades da Arquitetura da Experiência
 
-As autoridades ativas são:
+Permanecem ativas:
 
-1. **Arquitetura da Experiência da Guivos** (identificador UXA-000);
-2. **Fundação da Arquitetura da Experiência** (identificador UXA-001);
-3. **Experiência Diária e Tela Hoje** (identificador UXA-002);
-4. **Mapa Inicial de Jornadas e Telas** (identificador UXA-003);
-5. **Oportunidades, Organizações, Coletivos e Mapa** (identificador UXA-004);
-6. **Programa Inicial de Wireframes de Baixa Fidelidade** (identificador UXA-005);
-7. **Wireframe de Baixa Fidelidade da Tela Hoje** (identificador UXA-006);
-8. **Wireframe de Baixa Fidelidade do Detalhe de Oportunidade** (identificador UXA-007);
-9. **Wireframe de Baixa Fidelidade do Cadastro pela Organização** (identificador UXA-008);
-10. **Padrão de Linguagem Clara e Identificadores Técnicos** (identificador UXA-009);
-11. **Validação Funcional e Reformulação da Tela Hoje** (identificador UXA-010);
-12. **Presença Companheira e Coerência de Posicionamento da Guivos** (identificador UXA-011).
+1. Arquitetura da Experiência da Guivos;
+2. Fundação da Arquitetura da Experiência;
+3. Experiência Diária e Tela Hoje;
+4. Mapa Inicial de Jornadas e Telas;
+5. Oportunidades, Organizações, Coletivos e Mapa;
+6. Programa Inicial de Wireframes de Baixa Fidelidade;
+7. Wireframe da Tela Hoje;
+8. Wireframe do Detalhe de Oportunidade;
+9. Wireframe do Cadastro pela Organização;
+10. Padrão de Linguagem Clara;
+11. Validação Funcional da Tela Hoje;
+12. Presença Companheira e Coerência de Posicionamento;
+13. Compreensão do Momento, Evidência de Avanço e Explicabilidade do Próximo Passo;
+14. Validação Funcional do Detalhe de Oportunidade.
 
-## 5. Presença companheira e coerência de posicionamento
+## 5. Gate obrigatório de alinhamento à Fundação
 
-A Guivos deverá ser percebida como uma presença que acompanha a jornada, organiza o que importa e oferece possibilidades sem controlar decisões humanas.
+Nenhuma superfície poderá avançar sem demonstrar aderência à:
 
-O princípio estabelece:
+- Essência da Guivos;
+- Propósito;
+- Missão Operacional;
+- Visão de Longo Prazo;
+- Constituição da Guivos;
+- Princípios Permanentes.
 
-- reconhecimento do momento e da continuidade da jornada;
-- explicação específica de relevância e temporalidade;
-- conexão entre informações, oportunidades e Próximos Passos;
-- autonomia para revisar, adiar, corrigir, recusar ou encerrar;
-- propósito demonstrado pelo comportamento da tela, não por slogans;
-- separação explícita entre apoio à jornada e intenção comercial;
-- coerência entre Journey, Mall, Travel, Business, Media, Ads e Intelligence;
-- proibição de intimidade artificial, paternalismo, pressão emocional e recomendações genéricas sem explicação.
+A avaliação abrange finalidade, hierarquia, linguagem, ações, estados alternativos, publicidade, dados, inteligência artificial, privacidade, consentimento e coerência do ecossistema.
 
-## 6. Aplicação imediata à Tela Hoje
+## 6. Compreensão do momento, avanço e Próximo Passo
 
-A Tela Hoje passa a utilizar:
+A Guivos deverá mostrar:
 
-- `Seu momento, em poucas palavras` para organizar acontecimentos materiais;
-- `Algo precisa da sua atenção` para indicar prioridade sem culpa;
-- `Continuando sua jornada` para preservar continuidade;
-- `Possibilidades para seu próximo passo` para relacionar oportunidades ao contexto;
-- explicação de `Por que apareceu agora?`;
-- alternativas como revisar, deixar para depois, corrigir ou encerrar;
-- estado vazio que preserva a jornada sem pressionar retorno.
+1. como compreendeu o momento atual;
+2. quais informações sustentam a leitura;
+3. o que é confirmado, observado, externo, inferido, desconhecido ou contestado;
+4. qual avanço foi reconhecido com evidência suficiente;
+5. o que ainda não mudou ou precisa ser compreendido;
+6. por que o Próximo Passo faz sentido;
+7. quais alternativas e incertezas permanecem;
+8. como o participante pode corrigir ou rejeitar a interpretação.
 
-A reformulação continua sendo um wireframe de baixa fidelidade e não valida a experiência com participantes.
+Avanço não poderá ser reduzido a acesso, pontos, sequência de dias, quantidade de tarefas, consumo de conteúdo ou tempo na plataforma.
 
-## 7. Wireframes em revisão
+## 7. Resultado do Detalhe de Oportunidade
 
-### 7.1 Tela Hoje
+A hierarquia reformulada passa a ser:
 
-Wireframe móvel reformulado após decisão humana funcional e alinhado ao princípio de presença companheira. Estados alternativos permanecem pendentes.
+```text
+identidade e origem
+→ como a Guivos compreende seu momento
+→ avanço reconhecido
+→ por que este Próximo Passo faz sentido
+→ investimento e condições
+→ o que precisa saber antes de decidir
+→ condições para participar
+→ quem oferece
+→ relação comercial com a Guivos
+→ ações contextuais
+```
 
-### 7.2 Detalhe de oportunidade
+A superfície:
 
-Wireframe móvel com identidade, preço, custo total, validade do preço, relevância, disponibilidade, elegibilidade, Organização responsável, transparência comercial e ações. A próxima validação deverá aplicar o princípio de presença companheira.
+- apresenta a oportunidade como possibilidade, não recomendação definitiva;
+- demonstra informações e fontes utilizadas na leitura do momento;
+- declara lacunas e incertezas;
+- apresenta avanço apenas quando houver evidência suficiente;
+- explica a relação entre momento, objetivo, avanço e Próximo Passo;
+- mantém preço, custo total, validade e cancelamento transparentes;
+- preserva elegibilidade sem simulação de aprovação;
+- utiliza ação principal contextual;
+- mantém salvar e comparar como alternativas;
+- separa relação comercial da relevância funcional.
 
-### 7.3 Cadastro pela Organização
+## 8. Wireframes em revisão
 
-Wireframe para web em computador com onze etapas, preço e condições, consistência, salvamento, pré-visualização e separação entre envio, avaliação, ativação e apresentação. A validação funcional ainda não foi realizada.
+### Tela Hoje
 
-## 8. Padrões de comunicação
+Validada funcionalmente e reformulada em baixa fidelidade.
 
-O nome completo deverá aparecer antes do identificador. Códigos permanecem para rastreabilidade, não como forma principal de comunicação.
+### Detalhe de Oportunidade
 
-A linguagem deverá ser humana, serena, específica, contextual, respeitosa, profunda, transparente, inclusiva e consistente.
+Validado funcionalmente e reformulado com compreensão do momento, avanço percebido e justificativa do Próximo Passo.
 
-Uma formulação que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo deverá ser reavaliada.
+### Cadastro pela Organização
+
+Wireframe inicial aguardando validação funcional segundo a Fundação, a presença companheira institucional e os novos critérios transversais.
 
 ## 9. Sequência oficial vigente
 
 ```text
 Guivos Journey — concluído funcionalmente e publicado
-→ Modelo Econômico da Guivos — arquitetura documental inicial concluída
+→ Modelo Econômico — arquitetura documental inicial concluída
 → remediação do repositório — concluída
-→ decisões humanas sobre Resultados Empresariais — 17 de 18
+→ Resultados Empresariais — 17 de 18 decisões
 → pausa antes da capacidade de reinvestimento responsável
 → Arquitetura da Experiência — integrada
-→ três wireframes iniciais — criados
-→ padrão de linguagem clara — estabelecido
-→ primeira validação funcional da Tela Hoje — concluída
-→ Tela Hoje — reformulada em baixa fidelidade
-→ presença companheira e coerência de posicionamento — estabelecidas
-→ validação funcional do Detalhe de Oportunidade segundo o novo princípio
+→ Tela Hoje — validada e reformulada
+→ presença companheira e gate da Fundação — estabelecidos
+→ compreensão do momento, evidência de avanço e explicabilidade — estabelecidas
+→ Detalhe de Oportunidade — validado e reformulado
+→ validação funcional do Cadastro pela Organização
 → retorno aos Resultados Empresariais quando autorizado
 ```
 
 ## 10. Próximo ato autorizado
 
-Validar funcionalmente o Detalhe de Oportunidade, verificando:
+Validar funcionalmente o Cadastro de Oportunidade pela Organização segundo:
 
-1. relação com a jornada e o momento atual;
-2. explicação de por que a oportunidade apareceu agora;
-3. autonomia para considerar, salvar, comparar, recusar ou iniciar;
-4. clareza de preço, custo total, validade, elegibilidade e Organização responsável;
-5. separação entre relevância funcional e intenção comercial;
-6. linguagem própria da Guivos, sem aparência de página genérica de venda.
+- Fundação da Guivos;
+- presença companheira institucional;
+- compreensão verificável do contexto institucional e das jornadas atendidas;
+- demonstração de contribuição e resultados sem confundir volume com avanço;
+- explicação de como a oportunidade poderá apoiar Próximos Passos;
+- responsabilidade sobre preço, condições, elegibilidade, dados e ciclo da oportunidade;
+- separação entre envio, avaliação, ativação e apresentação.
 
 Nenhum protótipo, teste ou desenvolvimento será iniciado automaticamente.
 
@@ -182,13 +210,13 @@ Nenhum protótipo, teste ou desenvolvimento será iniciado automaticamente.
 Este estado não autoriza:
 
 - criar a décima oitava submissão ou decisão sobre Resultados Empresariais;
-- incorporar a capacidade de reinvestimento responsável a outro resultado;
+- incorporar a capacidade de reinvestimento responsável;
 - concluir Resultados Empresariais;
 - criar Resultados canônicos;
 - iniciar Capacidades Empresariais;
-- tratar os wireframes como design visual definitivo;
-- criar protótipo navegável sem nova autorização;
+- tratar wireframes como design visual definitivo;
+- criar protótipo navegável;
 - executar testes de usabilidade;
 - definir preços e planos finais;
 - iniciar Engenharia de Produto, ambientes, provas de conceito ou produção;
-- tratar Validação de Mercado como já executada.
+- tratar Validação de Mercado como executada.
