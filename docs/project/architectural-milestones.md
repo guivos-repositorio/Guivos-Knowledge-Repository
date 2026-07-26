@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.97.0
+version: 4.98.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.99.0
+  - ROADMAP-12.00.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -20,12 +20,14 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
+  - UXA-025
   - M7.20
   - M7.21
   - M7.22
   - M7.23
   - M7.24
   - M7.25
+  - M7.26
 normative: false
 ---
 
@@ -50,37 +52,45 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.22 | Concluído | Home pública validada e reformulada |
 | M7.23 | Concluído | wireframe gráfico da Home para computador criado |
 | M7.24 | Concluído | início protegido da jornada validado e reformulado |
-| M7.25 | Concluído neste incremento | wireframe móvel do Mapa de Oportunidades criado |
+| M7.25 | Concluído | wireframe móvel do Mapa de Oportunidades criado |
+| M7.26 | Concluído neste incremento | Mapa de Oportunidades funcionalmente validado e reformulado |
 
 ## 3. Marco vigente
 
-### Wireframe Móvel do Mapa de Oportunidades Criado — M7.25
+### Mapa de Oportunidades Validado e Reformulado — M7.26
 
 Critérios atendidos:
 
 - Mapa preservado fora da sequência obrigatória entre Home e Tela Hoje;
-- Mapa estabelecido como superfície própria da navegação recorrente;
-- contexto de atuação explícito;
-- busca por oportunidade, Organização ou região;
-- alternância entre mapa e lista;
-- filtros essenciais e adicionais;
+- Mapa mantido como superfície própria da navegação recorrente;
+- contexto de atuação reformulado para `Agindo como`;
+- busca por oportunidade, Organização ou região preservada;
+- Mapa e Lista definidos como uma descoberta única;
+- busca, filtros, região e seleção preservados na alternância;
+- ação `Pesquisar nesta região` incluída;
+- filtros essenciais e progressivos governados;
 - mapa esquemático sem representação geográfica real;
-- camadas de oportunidades, Organizações, Coletivos, eventos e pontos de apoio;
-- agrupamentos e pontos selecionáveis;
+- camadas distinguíveis sem dependência exclusiva de cor;
 - localização aproximada declarada;
-- oportunidade selecionada com preço, data, distância, vagas e acessibilidade;
-- origem, relevância e relação comercial visíveis;
-- ações para detalhe, salvamento e rota;
+- acesso `Ajustar localização e privacidade` incluído;
+- localização exata temporária condicionada a finalidade, duração e encerramento;
+- cartão selecionado com preço, data, distância, vagas, acessibilidade e origem;
+- explicação `Por que estou vendo isto?` padronizada;
+- relação comercial visível;
+- ações de detalhe, salvamento e rota contextual;
 - proteção de localização de participantes e locais sensíveis;
-- alternativas de localização exata temporária, aproximada, manual ou desativada;
-- estados de ausência, erro, baixa conectividade e permissão revogada definidos no contrato;
-- arquivo vetorial móvel criado em 390 por 844 pixels;
-- validação funcional posterior preservada como ato separado;
-- tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
+- conteúdo anterior ao gate limitado a busca, filtros ou conteúdo geral;
+- estados de ausência, erro, baixa conectividade e permissão revogada governados;
+- arquivo vetorial móvel reformulado em 390 por 844 pixels;
+- teste de usabilidade, tecnologia, design, protótipo e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Wireframe Móvel do Mapa Criado — M7.25
+
+O primeiro artefato gráfico móvel do Mapa permanece preservado como origem da reformulação registrada em UXA-025.
 
 ### Início Protegido da Jornada Validado — M7.24
 
@@ -109,7 +119,7 @@ COD-018 permanece integrado, com BUS-CAND-010 fundido em BUS-CAND-005 e nenhum R
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; Home, início protegido e Mapa estruturados; validações posteriores aguardando autorização |
+| Arquitetura da Experiência | ativa; Home, início protegido e Mapa funcionalmente validados; estados e transições posteriores aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -121,13 +131,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente o wireframe do Mapa;
-2. criar estados alternativos do Mapa;
-3. criar referência do Mapa para computador;
-4. criar o wireframe do início protegido;
-5. criar a referência móvel da Home;
-6. validar a revisão da compreensão inicial;
-7. validar a transição para a Tela Hoje.
+1. criar estados alternativos do Mapa;
+2. criar referência do Mapa para computador;
+3. criar o wireframe do início protegido;
+4. criar a referência móvel da Home;
+5. validar a revisão da compreensão inicial;
+6. validar a transição específica para a primeira Tela Hoje.
 
 ### Arquitetura de Negócios
 
@@ -141,4 +150,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe não equivale a validação funcional, design ou implementação. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
+Wireframe não equivale a validação funcional, design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
