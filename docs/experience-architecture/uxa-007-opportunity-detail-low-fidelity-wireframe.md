@@ -2,7 +2,7 @@
 id: UXA-007
 title: Wireframe de Baixa Fidelidade do Detalhe de Oportunidade
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
@@ -11,6 +11,8 @@ related:
   - UXA-004
   - UXA-006
   - UXA-009
+  - UXA-011
+  - UXA-012
   - PAS-001-OA-FOUNDATION-001
   - PAS-001-OA-LIFECYCLE-001
   - PAS-001-OA-VIEW-001
@@ -21,54 +23,113 @@ normative: false
 
 O identificador técnico `UXA-007` serve somente para rastreabilidade. O nome de leitura desta superfície é **Detalhe de Oportunidade**.
 
+Esta versão incorpora a **Presença Companheira e Coerência de Posicionamento da Guivos** e a **Validação Funcional e Reformulação do Detalhe de Oportunidade**.
+
 ## 1. Pergunta da superfície
 
-> **O que preciso compreender sobre esta oportunidade antes de decidir se desejo salvá-la, compará-la ou iniciar um processo?**
+> **Como esta oportunidade pode apoiar minha jornada, o que preciso compreender antes de decidir e quais caminhos permanecem disponíveis?**
 
-A superfície deverá explicar valor, condições, limites, relevância, elegibilidade, fonte e relação comercial antes de enfatizar conversão.
+A superfície deverá apresentar a oportunidade como meio para um possível Próximo Passo. Ela não deverá parecer página genérica de venda, recomendação definitiva ou etapa obrigatória de evolução.
 
-## 2. Wireframe
+## 2. Wireframe reformulado
 
-![Wireframe móvel do Detalhe de Oportunidade](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
+![Wireframe móvel reformulado do Detalhe de Oportunidade](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
-[Visualizar o arquivo gráfico vetorial escalável (SVG)](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
+[Visualizar o arquivo gráfico vetorial escalável](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
-## 3. Hierarquia proposta
+O wireframe permanece monocromático e estrutural. Ele não define identidade visual, componentes técnicos ou comportamento implementado.
+
+## 3. Hierarquia aprovada
 
 | Ordem | Bloco | Responsabilidade |
 |---:|---|---|
-| 1 | identidade e preço | identificar oportunidade, responsável, custo e validade |
-| 2 | relevância explicada | demonstrar por que pode apoiar a jornada atual |
-| 3 | informações principais | mostrar disponibilidade, modalidade, horário e acessibilidade |
-| 4 | elegibilidade | distinguir estimativa da decisão final de terceiro |
-| 5 | Organização responsável | permitir avaliar fonte, identidade e suporte |
-| 6 | transparência comercial | revelar comissão, patrocínio ou outra relação material |
-| 7 | ações persistentes | iniciar, salvar ou localizar sem ocultar alternativas |
+| 1 | identidade e origem | identificar a possibilidade, seu tipo, estado e responsável |
+| 2 | como pode apoiar sua jornada | explicar objetivo, Próximo Passo, contexto e motivo temporal |
+| 3 | investimento e condições | mostrar preço, custo total, validade, prazo e cancelamento |
+| 4 | antes de decidir | reunir disponibilidade, modalidade, horário, acessibilidade e compromissos |
+| 5 | condições para participar | explicar elegibilidade, autoridade decisória e verificações |
+| 6 | quem oferece | permitir avaliar a Organização ou o Coletivo responsável |
+| 7 | relação comercial com a Guivos | revelar comissão, patrocínio ou outra relação material |
+| 8 | ações contextuais | permitir agir, salvar ou comparar sem ocultar alternativas |
 
-## 4. Identidade, custo e temporalidade
+## 4. Gate de alinhamento à Fundação da Guivos
+
+A superfície somente poderá avançar quando demonstrar:
+
+- **Essência:** reduz a distância entre Momento Atual e Próximo Passo;
+- **Propósito:** amplia possibilidades concretas de evolução;
+- **Missão Operacional:** ajuda a compreender ou realizar um próximo movimento relevante;
+- **Visão de Longo Prazo:** funciona como parte de um ecossistema global, não como produto isolado;
+- **Constituição:** preserva evolução como finalidade, oportunidade como meio, autonomia e relevância contextual;
+- **Princípios Permanentes:** prioriza Próximo Passo, contexto, experiência vivida, simplicidade e ação real.
+
+Preço, conversão ou relação comercial não poderão ocupar uma posição que descaracterize esses fundamentos.
+
+## 5. Identidade e origem
 
 O topo deverá apresentar:
 
+- indicação `Possibilidade para sua jornada`;
 - tipo da oportunidade;
 - modalidade;
 - estado de disponibilidade;
 - título;
 - Organização ou Coletivo responsável;
-- preço principal;
-- custo total conhecido ou estimado;
-- número de parcelas ou recorrência;
-- validade do preço;
-- prazo material.
+- origem funcional;
+- ações de ocultar, contestar ou denunciar.
 
-### 4.1 O que significa validade do preço
+A palavra `possibilidade` orienta a leitura, mas não substitui a entidade canônica Oportunidade.
 
-**Validade do preço** é a data ou o período até o qual a Organização declara que o valor informado permanece vigente para uma nova inscrição, contratação ou compra.
+## 6. Como pode apoiar sua jornada
+
+Este bloco antecede o investimento e deverá explicar:
+
+- objetivo confirmado relacionado;
+- Próximo Passo relacionado;
+- preferência ou necessidade declarada;
+- razão para aparecer neste momento;
+- possível contribuição, sem garantia;
+- fonte utilizada na relação.
 
 Exemplo:
 
-> R$ 79,90 por mês, válido para novas inscrições realizadas até 31/08/2026.
+> Pode apoiar seu próximo passo de desenvolver comunicação profissional em inglês. Apareceu agora porque as inscrições encerram em 31/07 e você informou preferência por atividades online à noite.
 
-A validade do preço não representa:
+A mensagem deverá incluir:
+
+> Esta é uma possibilidade para você considerar. A decisão continua sendo sua.
+
+Controles mínimos:
+
+- `Por que apareceu agora?`;
+- `Corrigir esta relação`;
+- `Não faz sentido para mim`;
+- `Não usar esta informação`;
+- `Mostrar menos como isto`.
+
+## 7. Investimento e condições
+
+O bloco deverá apresentar:
+
+- preço principal;
+- custo total conhecido ou estimado;
+- parcelas ou recorrência;
+- custos obrigatórios adicionais;
+- validade do preço;
+- prazo de inscrição;
+- cancelamento;
+- reembolso, quando aplicável;
+- última confirmação da fonte.
+
+Exemplo:
+
+> R$ 79,90 por mês, em seis parcelas. Custo total estimado: R$ 479,40. Valor válido para novas inscrições até 31/07/2026.
+
+### 7.1 Validade do preço
+
+Validade do preço é a data ou período até o qual a Organização declara que o valor permanece vigente para nova inscrição, contratação ou compra.
+
+Ela não representa:
 
 - duração do serviço;
 - vencimento da parcela;
@@ -77,58 +138,38 @@ A validade do preço não representa:
 - prazo de cancelamento;
 - prazo de reembolso.
 
-Após a validade, o preço deverá ser confirmado novamente. Caso o valor mude durante um processo já iniciado, a nova condição deverá ser apresentada para confirmação consciente antes da continuidade.
+Após a validade, o preço deverá ser confirmado novamente. Mudança durante processo iniciado exigirá confirmação consciente.
 
-Regras adicionais:
+Regras:
 
-- `grátis` não poderá ser utilizado quando existirem custos obrigatórios;
-- `a partir de` deverá indicar o que pode alterar o valor;
-- preço sob consulta deverá limitar a apresentação e comparação;
-- mudança de preço após processo iniciado deverá produzir nova confirmação.
+- `grátis` não poderá ocultar custos obrigatórios;
+- `a partir de` deverá indicar variáveis de preço;
+- preço sob consulta limitará comparação e apresentação;
+- destaque promocional não poderá superar custo total e condições.
 
-## 5. Por que pode ser relevante
+## 8. O que precisa saber antes de decidir
 
-A explicação resumida poderá utilizar:
-
-- objetivo confirmado;
-- Próximo Passo;
-- preferência declarada;
-- busca realizada;
-- localização autorizada;
-- disponibilidade compatível;
-- necessidade explicitamente informada.
-
-O participante deverá poder:
-
-- abrir `Por que estou vendo isto?`;
-- ajustar relevância;
-- impedir uso de determinada informação;
-- corrigir contexto;
-- ocultar categoria ou fonte;
-- contestar a avaliação.
-
-Inferência sensível não deverá ser revelada desnecessariamente.
-
-## 6. Informações principais
-
-O primeiro nível deverá permitir decisão inicial sem leitura de todo o documento.
-
-Informações propostas:
+O primeiro nível deverá mostrar:
 
 - disponibilidade;
 - modalidade;
 - data e horário;
 - local ou abrangência;
+- duração;
 - acessibilidade;
+- compromissos exigidos;
 - requisitos principais;
 - cancelamento;
+- riscos ou limitações materiais;
 - última atualização.
 
-Detalhes, políticas e documentos deverão permanecer em níveis progressivos.
+Políticas extensas permanecerão em detalhamento progressivo.
 
-## 7. Elegibilidade
+## 9. Condições para participar
 
-A tela deverá distinguir:
+O título de leitura será **Condições para participar**. O estado técnico de elegibilidade permanecerá explícito.
+
+Estados possíveis:
 
 - não avaliada;
 - possivelmente elegível;
@@ -139,24 +180,33 @@ A tela deverá distinguir:
 - não elegível;
 - contestada.
 
-Quando a decisão final pertencer a terceiro, isso deverá ser declarado. A Guivos não poderá apresentar probabilidade como aprovação.
+A tela deverá explicar:
 
-## 8. Organização responsável
+- requisito considerado;
+- informação ainda não verificada;
+- autoridade responsável pela decisão;
+- passo de verificação;
+- correção ou contestação disponível.
+
+A Guivos não poderá apresentar probabilidade como aprovação.
+
+## 10. Quem oferece
 
 O bloco deverá permitir verificar:
 
 - nome e identidade;
 - estado de verificação;
 - unidade responsável;
+- propósito ou atuação relevante;
 - canal de suporte;
-- atualização e histórico relevantes;
-- outras oportunidades;
+- atualização e histórico materiais;
 - perfil institucional;
-- meios de contestação ou denúncia.
+- outras oportunidades;
+- contestação ou denúncia.
 
-Verificação institucional não representa garantia de resultado.
+Verificação institucional não representa garantia de resultado ou adequação individual.
 
-## 9. Transparência comercial
+## 11. Relação comercial com a Guivos
 
 A tela deverá declarar, quando aplicável:
 
@@ -169,31 +219,41 @@ A tela deverá declarar, quando aplicável:
 - financiamento;
 - relação indireta relevante.
 
-A declaração deverá informar que a relação comercial não aumenta relevância funcional.
+Formulação de referência:
 
-## 10. Ações persistentes
+> A Guivos poderá receber comissão se a contratação for concluída. Essa relação não aumentou a relevância funcional desta oportunidade.
 
-A barra inferior do wireframe contém:
+A presença companheira não poderá ser utilizada para disfarçar publicidade.
 
-- ação principal: iniciar inscrição;
-- ação secundária: salvar;
-- ação contextual: abrir no mapa.
+## 12. Ações contextuais
 
-Outras ações possíveis:
+Não haverá uma ação principal universal.
 
-- comparar;
-- compartilhar;
-- declarar interesse;
-- ocultar;
-- mostrar menos como isto;
-- contestar informação;
-- denunciar;
-- entrar em lista de espera;
-- solicitar aviso de abertura futura.
+A ação poderá ser:
 
-O início da inscrição deverá abrir confirmação de executor, compartilhamento de dados, custos, destinatário e reversibilidade.
+- `Ver como participar`;
+- `Iniciar inscrição`;
+- `Solicitar contato`;
+- `Reservar`;
+- `Entrar na lista de espera`;
+- `Acompanhar abertura`;
+- `Abrir no mapa`, quando localização for material;
+- `Conhecer a Organização`.
 
-## 11. Estados alternativos que ainda exigem wireframe
+No wireframe de referência, a ação principal será:
+
+> Ver como participar
+
+Essa ação abrirá uma etapa intermediária com executor, dados compartilhados, destinatário, custos, compromissos e reversibilidade.
+
+Ações secundárias persistentes:
+
+- salvar para considerar;
+- comparar.
+
+`Mapa` não permanecerá na barra quando a oportunidade não depender de localização.
+
+## 13. Estados alternativos ainda pendentes
 
 - oportunidade gratuita com custos externos;
 - preço variável ou sob consulta;
@@ -206,30 +266,43 @@ O início da inscrição deverá abrir confirmação de executor, compartilhamen
 - oportunidade presencial com localização protegida;
 - oportunidade expirada;
 - informação contestada;
-- falha de sincronização com fonte externa.
+- falha de sincronização com fonte externa;
+- baixa conectividade;
+- acessibilidade com texto ampliado e leitor de tela.
 
-## 12. Perguntas para validação humana
+## 14. Decisões humanas aplicadas
 
-1. O preço deve aparecer antes da explicação de relevância?
-2. O custo total estimado está suficientemente destacado?
-3. A validade do preço está clara e não se confunde com prazo de inscrição ou duração do serviço?
-4. A diferença entre `possivelmente elegível` e `elegível` é compreensível?
-5. A relação comercial está clara sem dominar a tela?
-6. O perfil da Organização precisa de maior destaque?
-7. `Iniciar inscrição` é a ação principal correta para todos os tipos?
-8. Salvar e comparar deveriam ocupar a mesma hierarquia?
-9. O participante compreende que a Guivos não garante disponibilidade ou resultado?
+1. A relação com a jornada antecede preço e conversão.
+2. O preço permanece visível como investimento e condição, não argumento promocional.
+3. A oportunidade é declarada como possibilidade, não recomendação definitiva.
+4. A temporalidade passa a utilizar `Por que apareceu agora?`.
+5. Elegibilidade passa a ser lida em `Condições para participar`.
+6. `Organização responsável` passa a ser `Quem oferece`.
+7. `Transparência comercial` passa a ser `Relação comercial com a Guivos`.
+8. A ação principal passa a depender do tipo e estado real.
+9. `Mapa` deixa de ser ação persistente quando não for material.
+10. Salvar e comparar permanecem alternativas legítimas.
+11. O gate da Fundação passa a integrar os critérios de aceite.
 
-## 13. Critérios de aceite do wireframe
+## 15. Critérios de aceite
 
 O wireframe poderá avançar quando:
 
-- preço e custo total forem compreendidos;
-- validade do preço, prazo de inscrição e duração do serviço forem distinguidos;
-- prazo e disponibilidade não forem confundidos;
-- relevância for explicável e ajustável;
+- aderência à Fundação da Guivos estiver demonstrada;
+- a relação com a jornada for compreendida antes da conversão;
+- possibilidade e recomendação definitiva forem distinguidas;
+- preço, custo total, validade e condições forem compreendidos;
+- prazo de inscrição, validade do preço e duração não forem confundidos;
+- relevância e temporalidade forem explicáveis e ajustáveis;
 - elegibilidade não for interpretada como aprovação;
-- fonte e relação comercial forem identificáveis;
-- ação principal não ocultar condições ou riscos;
-- o participante puder desistir, salvar ou comparar sem pressão;
-- a leitura não depender do conhecimento do identificador técnico.
+- fonte, responsável e relação comercial forem identificáveis;
+- ação principal refletir o estado real;
+- o participante puder corrigir, recusar, salvar ou comparar sem pressão;
+- publicidade permanecer subordinada à relevância funcional;
+- a tela não parecer página genérica de venda;
+- a interação favorecer compreensão e ação no mundo real;
+- a leitura não depender do identificador técnico.
+
+## 16. Limites
+
+Esta versão não autoriza protótipo navegável, design visual, testes de usabilidade, componentes técnicos, preços reais, validação de Organizações ou desenvolvimento.
