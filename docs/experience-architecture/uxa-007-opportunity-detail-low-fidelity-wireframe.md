@@ -2,21 +2,24 @@
 id: UXA-007
 title: Wireframe de Baixa Fidelidade do Detalhe de Oportunidade
 status: draft
-version: 0.1.0
-owner: Guivos Experience Architecture
+version: 0.2.0
+owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
 related:
   - UXA-002
   - UXA-004
   - UXA-006
+  - UXA-009
   - PAS-001-OA-FOUNDATION-001
   - PAS-001-OA-LIFECYCLE-001
   - PAS-001-OA-VIEW-001
 normative: false
 ---
 
-# UXA-007 — Wireframe de Baixa Fidelidade do Detalhe de Oportunidade
+# Wireframe de Baixa Fidelidade do Detalhe de Oportunidade (identificador UXA-007)
+
+O identificador técnico `UXA-007` serve somente para rastreabilidade. O nome de leitura desta superfície é **Detalhe de Oportunidade**.
 
 ## 1. Pergunta da superfície
 
@@ -26,9 +29,9 @@ A superfície deverá explicar valor, condições, limites, relevância, elegibi
 
 ## 2. Wireframe
 
-![Wireframe móvel do detalhe de oportunidade](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
+![Wireframe móvel do Detalhe de Oportunidade](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
-[Visualizar o SVG isoladamente](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
+[Visualizar o arquivo gráfico vetorial escalável (SVG)](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg)
 
 ## 3. Hierarquia proposta
 
@@ -57,7 +60,26 @@ O topo deverá apresentar:
 - validade do preço;
 - prazo material.
 
-Regras:
+### 4.1 O que significa validade do preço
+
+**Validade do preço** é a data ou o período até o qual a Organização declara que o valor informado permanece vigente para uma nova inscrição, contratação ou compra.
+
+Exemplo:
+
+> R$ 79,90 por mês, válido para novas inscrições realizadas até 31/08/2026.
+
+A validade do preço não representa:
+
+- duração do serviço;
+- vencimento da parcela;
+- prazo de inscrição;
+- período do contrato;
+- prazo de cancelamento;
+- prazo de reembolso.
+
+Após a validade, o preço deverá ser confirmado novamente. Caso o valor mude durante um processo já iniciado, a nova condição deverá ser apresentada para confirmação consciente antes da continuidade.
+
+Regras adicionais:
 
 - `grátis` não poderá ser utilizado quando existirem custos obrigatórios;
 - `a partir de` deverá indicar o que pode alterar o valor;
@@ -190,21 +212,24 @@ O início da inscrição deverá abrir confirmação de executor, compartilhamen
 
 1. O preço deve aparecer antes da explicação de relevância?
 2. O custo total estimado está suficientemente destacado?
-3. A diferença entre `possivelmente elegível` e `elegível` é compreensível?
-4. A relação comercial está clara sem dominar a tela?
-5. O perfil da Organização precisa de maior destaque?
-6. `Iniciar inscrição` é a ação principal correta para todos os tipos?
-7. Salvar e comparar deveriam ocupar a mesma hierarquia?
-8. O participante compreende que a Guivos não garante disponibilidade ou resultado?
+3. A validade do preço está clara e não se confunde com prazo de inscrição ou duração do serviço?
+4. A diferença entre `possivelmente elegível` e `elegível` é compreensível?
+5. A relação comercial está clara sem dominar a tela?
+6. O perfil da Organização precisa de maior destaque?
+7. `Iniciar inscrição` é a ação principal correta para todos os tipos?
+8. Salvar e comparar deveriam ocupar a mesma hierarquia?
+9. O participante compreende que a Guivos não garante disponibilidade ou resultado?
 
 ## 13. Critérios de aceite do wireframe
 
 O wireframe poderá avançar quando:
 
 - preço e custo total forem compreendidos;
+- validade do preço, prazo de inscrição e duração do serviço forem distinguidos;
 - prazo e disponibilidade não forem confundidos;
 - relevância for explicável e ajustável;
 - elegibilidade não for interpretada como aprovação;
 - fonte e relação comercial forem identificáveis;
 - ação principal não ocultar condições ou riscos;
-- o participante puder desistir, salvar ou comparar sem pressão.
+- o participante puder desistir, salvar ou comparar sem pressão;
+- a leitura não depender do conhecimento do identificador técnico.
