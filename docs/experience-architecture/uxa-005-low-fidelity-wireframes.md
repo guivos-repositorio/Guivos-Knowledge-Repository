@@ -48,31 +48,31 @@ Os wireframes:
 
 ### 3.1 Compreensão
 
-- a finalidade da tela é compreendida rapidamente?;
-- o participante reconhece o que merece atenção?;
-- preço, condições, elegibilidade e relação comercial estão claros?;
-- a Organização entende o que precisa informar e por quê?;
-- ações principais e alternativas são distinguíveis?;
-- identificadores técnicos podem ser ignorados sem prejudicar a leitura?.
+- A finalidade da tela é compreendida rapidamente?
+- O participante reconhece o que merece atenção?
+- Preço, condições, elegibilidade e relação comercial estão claros?
+- A Organização entende o que precisa informar e por quê?
+- Ações principais e alternativas são distinguíveis?
+- Identificadores técnicos podem ser ignorados sem prejudicar a leitura?
 
 ### 3.2 Hierarquia
 
-- o item mais importante ocupa a posição correta?;
-- informações secundárias permanecem acessíveis sem competir com a decisão?;
-- a tela evita excesso de cartões e blocos?;
-- estados vazios e ausência legítima permanecem possíveis?.
+- O item mais importante ocupa a posição correta?
+- Informações secundárias permanecem acessíveis sem competir com a decisão?
+- A tela evita excesso de cartões e blocos?
+- Estados vazios e ausência legítima permanecem possíveis?
 
 ### 3.3 Autonomia
 
-- o participante consegue adiar, salvar, ocultar, contestar ou ajustar relevância?;
-- o fluxo evita pressionar contratação ou inscrição?;
-- a Organização consegue salvar rascunho, revisar e corrigir antes do envio?.
+- O participante consegue adiar, salvar, ocultar, contestar ou ajustar relevância?
+- O fluxo evita pressionar contratação ou inscrição?
+- A Organização consegue salvar rascunho, revisar e corrigir antes do envio?
 
 ### 3.4 Continuidade
 
-- a Tela Hoje conduz naturalmente ao Próximo Passo, oportunidade, Coletivo ou controle aplicável?;
-- o detalhe de oportunidade preserva contexto, origem e condições antes da ação?;
-- o cadastro organizacional produz informações suficientes para cartões, detalhe, mapa, busca e comparação?.
+- A Tela Hoje conduz naturalmente ao Próximo Passo, oportunidade, Coletivo ou controle aplicável?
+- O detalhe de oportunidade preserva contexto, origem e condições antes da ação?
+- O cadastro organizacional produz informações suficientes para cartões, detalhe, mapa, busca e comparação?
 
 ## 4. Convenções de baixa fidelidade
 
