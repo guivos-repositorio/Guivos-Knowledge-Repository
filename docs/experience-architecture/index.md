@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -36,6 +36,7 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
+  - UXA-025
 normative: false
 ---
 
@@ -89,7 +90,7 @@ O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superf
 | Página Inicial pública | [Contrato da primeira entrada](uxa-020-home-and-journey-entry.md), [validação funcional](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe gráfico](uxa-022-public-home-low-fidelity-wireframe.md) |
 | Início protegido da jornada | [Validação funcional](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
 | Tela Hoje recorrente | [Experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação funcional](uxa-010-today-functional-validation-and-reformulation.md) |
-| Explorar e Mapa | [Contrato funcional](uxa-004-opportunities-organizations-collectives-map.md) e [wireframe do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md) |
+| Explorar e Mapa | [Contrato funcional](uxa-004-opportunities-organizations-collectives-map.md), [wireframe reformulado](uxa-024-opportunity-map-low-fidelity-wireframe.md) e [validação funcional](uxa-025-opportunity-map-functional-validation-and-reformulation.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014, UXA-015, UXA-016, UXA-017, UXA-018 e UXA-019 |
 
@@ -97,7 +98,7 @@ O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superf
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada até o wireframe do Mapa | UXA-000 a UXA-024; UXA-003-A1 |
+| Arquitetura da Experiência | descoberta ativa e integrada até a validação funcional do Mapa | UXA-000 a UXA-025; UXA-003-A1 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 | Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
@@ -106,7 +107,9 @@ O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superf
 | Wireframe do início protegido | não iniciado | — |
 | Compreensão inicial | contrato e gate estabelecidos; validação especializada posterior | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | contrato funcional e wireframe móvel de baixa fidelidade criados | UXA-004; UXA-024 |
+| Mapa de Oportunidades | wireframe móvel funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
+| Estados alternativos do Mapa | não iniciados | — |
+| Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
 | Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
@@ -154,17 +157,24 @@ Quando localização estiver autorizada e houver utilidade material, a Tela Hoje
 Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O wireframe móvel está registrado como **UXA-024 — Wireframe de Baixa Fidelidade do Mapa de Oportunidades**.
+O wireframe móvel reformulado está registrado como **UXA-024 — Wireframe de Baixa Fidelidade do Mapa de Oportunidades** e sua validação funcional como **UXA-025 — Validação Funcional e Reformulação do Mapa de Oportunidades**.
 
 Arquivo vetorial:
 
 `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`
 
-A referência possui dimensão de 390 por 844 pixels e representa pesquisa, mapa e lista sincronizados, filtros, localização aproximada, camadas territoriais, cartão selecionado, preço, acessibilidade, explicação de relevância e privacidade.
+A referência possui dimensão de 390 por 844 pixels e representa:
 
-O Mapa poderá reunir oportunidades, Organizações, Coletivos, eventos, atividades, experiências públicas, pontos de apoio e locais salvos.
-
-A localização poderá ser exata e temporária, aproximada, informada por cidade, selecionada por região ou desativada.
+- `Agindo como` explícito;
+- pesquisa por oportunidade, Organização ou região;
+- Mapa e Lista com estado compartilhado;
+- filtros progressivos;
+- ação `Pesquisar nesta região`;
+- localização aproximada e acesso a localização e privacidade;
+- camadas territoriais;
+- cartão selecionado com preço, origem, acessibilidade e relação comercial;
+- explicação `Por que estou vendo isto?`;
+- ações de detalhe, salvamento e rota contextual.
 
 O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo ou presumir interesse somente pela proximidade.
 
@@ -184,13 +194,12 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o wireframe do Mapa de Oportunidades;
-2. criar estados alternativos do Mapa;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido da jornada;
-5. criar a referência móvel da Página Inicial pública;
-6. validar a revisão da compreensão inicial;
-7. validar a transição para a Tela Hoje;
-8. retomar independentemente os testes dos Resultados Empresariais.
+1. criar estados alternativos do Mapa, começando por Lista, ausência de resultados ou localização desativada;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido da jornada;
+4. criar a referência móvel da Página Inicial pública;
+5. validar a revisão da compreensão inicial;
+6. validar a transição específica para a primeira Tela Hoje;
+7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
