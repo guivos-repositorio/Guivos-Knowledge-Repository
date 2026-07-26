@@ -2,7 +2,7 @@
 id: UXA-006
 title: Wireframe de Baixa Fidelidade da Tela Hoje
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
@@ -13,6 +13,7 @@ related:
   - UXA-009
   - UXA-010
   - UXA-011
+  - UXA-020
   - PAS-001-CV-VIEW-001
   - PAS-001-PP-VIEW-001
   - PAS-001-OA-VIEW-001
@@ -24,13 +25,31 @@ normative: false
 
 O identificador técnico `UXA-006` serve somente para rastreabilidade. O nome de leitura desta superfície é **Tela Hoje**.
 
-Esta versão incorpora a **Validação Funcional e Reformulação da Tela Hoje** e o princípio de **Presença Companheira e Coerência de Posicionamento da Guivos**.
+Esta versão incorpora a **Validação Funcional e Reformulação da Tela Hoje**, o princípio de **Presença Companheira e Coerência de Posicionamento da Guivos** e a nova precedência da **Página Inicial da Guivos e Início da Jornada**.
 
 ## 1. Pergunta da superfície
 
 > **O que mudou, o que merece minha atenção e quais possibilidades podem apoiar meu momento agora?**
 
-A Tela Hoje é a hipótese de porta de entrada pessoal. Ela deverá reduzir esforço de decisão e transmitir continuidade de jornada sem transformar a Guivos em feed, catálogo infinito, painel de produtividade ou voz genérica de recomendação.
+A Tela Hoje é a hipótese de porta de entrada **recorrente** da experiência pessoal depois que a pessoa iniciou sua jornada e confirmou uma compreensão inicial suficiente do Momento Atual.
+
+Ela deverá reduzir esforço de decisão e transmitir continuidade de jornada sem transformar a Guivos em feed, catálogo infinito, painel de produtividade ou voz genérica de recomendação.
+
+### 1.1 Precedência da HOME
+
+A primeira entrada pessoal segue:
+
+```text
+Página Inicial da Guivos
+→ relato voluntário do Momento Atual
+→ compreensão inicial apresentada
+→ correção, confirmação e autorização
+→ Tela Hoje
+```
+
+A Tela Hoje não deverá ser utilizada para solicitar o primeiro relato completo nem para apresentar personalização antes desse gate.
+
+Quando a compreensão inicial ainda for insuficiente, a pessoa permanecerá na experiência de início da jornada ou poderá explorar o ecossistema sem indicações pessoais.
 
 ## 2. Wireframe reformulado
 
@@ -90,7 +109,7 @@ As alternativas poderão representar uma Organização ou um Coletivo. A troca d
 
 ## 6. Síntese condicional do momento
 
-A síntese deverá reunir somente fatos ou avaliações suficientemente relevantes.
+A síntese deverá reunir somente fatos ou avaliações suficientemente relevantes e sustentados pela compreensão inicial confirmada, por atualizações posteriores ou por fontes autorizadas.
 
 Exemplo alinhado ao posicionamento:
 
@@ -104,7 +123,8 @@ Ela será omitida quando:
 - nenhum item material estiver disponível;
 - a agregação repetir o bloco principal;
 - a fonte estiver incompleta ou incerta;
-- o resumo puder expor informação sensível.
+- o resumo puder expor informação sensível;
+- a compreensão ainda não possuir base suficiente para personalização.
 
 Estado sem itens materiais:
 
@@ -190,7 +210,9 @@ Regras:
 - o catálogo completo pertence a Explorar ou Minhas Oportunidades;
 - uma oportunidade poderá ser relevante e ainda assim não aparecer hoje;
 - a pessoa deverá poder abrir outras oportunidades sem sobrecarregar a superfície;
-- contratar ou participar nunca será apresentado como obrigação de evolução.
+- contratar ou participar nunca será apresentado como obrigação de evolução;
+- a relevância deverá derivar de contexto autorizado, não apenas de perfil genérico ou comportamento observado;
+- antes do gate da compreensão inicial, oportunidades somente poderão ser exploradas fora da Tela Hoje como conteúdo geral não personalizado.
 
 ## 10. Coletivos e atividades
 
@@ -219,9 +241,13 @@ A navegação permanece:
 
 `Jornada` reúne contexto, objetivos, Próximos Passos, experiências e evolução. Esta reformulação não altera a nomenclatura consolidada.
 
+A HOME permanece acessível pela marca, menu institucional ou acesso ao Ecossistema Guivos, sem necessariamente ocupar uma sexta posição na navegação móvel principal.
+
 ## 12. Estados alternativos que ainda exigem wireframe
 
 - nenhuma atenção e nenhuma oportunidade;
+- primeira entrada após confirmação da compreensão inicial;
+- compreensão inicial parcialmente confirmada;
 - informação sensível em modo discreto;
 - múltiplos itens críticos;
 - falha ao carregar uma fonte externa;
@@ -242,6 +268,8 @@ A navegação permanece:
 6. O seletor de contexto explica que a pessoa está agindo em determinado papel.
 7. A navegação Hoje, Jornada, Explorar, Mapa e Eu foi preservada.
 8. A presença companheira e o propósito passam a orientar títulos, explicações, alternativas e estados vazios.
+9. A HOME da Guivos passa a anteceder a Tela Hoje na primeira entrada pessoal.
+10. A personalização material permanece bloqueada antes da compreensão inicial confirmada.
 
 ## 14. Perguntas ainda abertas
 
@@ -251,6 +279,7 @@ A navegação permanece:
 4. Como a hierarquia se adapta a texto ampliado e leitores de tela?
 5. Qual será o comportamento em baixa conectividade?
 6. A presença companheira é percebida sem parecer personagem, amizade simulada ou pressão emocional?
+7. Como será a primeira Tela Hoje imediatamente após a transição da HOME?
 
 ## 15. Critérios de aceite do wireframe
 
@@ -258,6 +287,7 @@ O wireframe poderá avançar quando demonstrar que:
 
 - a finalidade da tela é compreendida sem explicação externa;
 - a Guivos é percebida como apoio contínuo à jornada, não como painel genérico;
+- a Tela Hoje é reconhecida como superfície recorrente, não como apresentação institucional inicial;
 - o contexto de atuação está explícito;
 - a síntese não repete um único item;
 - a atenção principal é identificada rapidamente;
@@ -268,6 +298,7 @@ O wireframe poderá avançar quando demonstrar que:
 - ausência de itens não é tratada como falha;
 - a linguagem preserva autonomia, calma e possibilidade de pausa;
 - a tela conduz a ações reais sem exigir permanência prolongada;
+- a personalização possui base confirmada e corrigível;
 - a leitura não depende do conhecimento do identificador técnico.
 
 ## 16. Limites
