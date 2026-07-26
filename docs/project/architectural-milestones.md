@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.84.0
+version: 4.85.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.86.0
+  - ROADMAP-11.87.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -23,7 +23,8 @@ related:
   - UXA-008
   - UXA-009
   - UXA-010
-  - M7.19.4
+  - UXA-011
+  - M7.19.5
 normative: false
 ---
 
@@ -47,26 +48,25 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.19.1 | Concluído | Arquitetura da Experiência ativada e integrada |
 | M7.19.2 | Concluído | três wireframes iniciais de baixa fidelidade criados |
 | M7.19.3 | Concluído | padrão de linguagem clara e identificadores técnicos criado e aplicado |
-| M7.19.4 | Ativo neste incremento | primeira validação funcional da Tela Hoje registrada e aplicada |
+| M7.19.4 | Concluído | primeira validação funcional da Tela Hoje registrada e aplicada |
+| M7.19.5 | Ativo neste incremento | presença companheira e coerência de posicionamento estabelecidas |
 
 ## 3. Marco vigente
 
-### Primeira Validação Funcional da Tela Hoje Concluída (marco M7.19.4)
+### Presença Companheira e Coerência de Posicionamento Estabelecidas (marco M7.19.5)
 
 **Critérios atendidos:**
 
-- Pull Request número 97 integrado, estabelecendo o padrão de linguagem clara;
-- decisão humana de prosseguir com a reformulação funcional registrada;
-- documento **Validação Funcional e Reformulação da Tela Hoje** criado;
-- Wireframe de Baixa Fidelidade da Tela Hoje atualizado para a versão 0.3.0;
-- contexto de atuação explicitado por `Agindo como`;
-- síntese do momento tornada condicional;
-- um único item principal preservado;
-- múltiplos itens críticos encaminhados à Central de Intervenções;
-- Próximo Passo preservado antes das oportunidades;
-- oportunidades apresentadas em largura integral e empilhadas;
-- Coletivos e atividades condicionados à utilidade temporal;
-- navegação Hoje, Jornada, Explorar, Mapa e Eu preservada;
+- princípio transversal criado para todos os produtos e canais da Guivos;
+- conceito de companheira definido como acompanhamento sem controle;
+- propósito relacionado ao comportamento da interface, não a slogans repetidos;
+- continuidade entre Momento Atual, jornada, relevância e Próximo Passo estabelecida;
+- autonomia para revisar, adiar, corrigir, recusar ou encerrar preservada;
+- intenção comercial separada do apoio à jornada;
+- intimidade artificial, paternalismo, vigilância e pressão emocional proibidos;
+- coerência entre Guivos Journey, Mall, Travel, Business, Media, Ads e Intelligence definida;
+- Tela Hoje atualizada para demonstrar o princípio em baixa fidelidade;
+- próximo incremento orientado à validação funcional do Detalhe de Oportunidade;
 - protótipo navegável, design visual, testes e desenvolvimento preservados como não iniciados;
 - Capacidade de reinvestimento responsável e Engenharia de Produto preservadas em pausa.
 
@@ -84,11 +84,7 @@ A Arquitetura da Experiência e os wireframes permanecem uma frente preparatóri
 
 ## 5. Próximo ato
 
-Escolher separadamente entre:
-
-- validar funcionalmente o Detalhe de Oportunidade;
-- validar funcionalmente o Cadastro pela Organização;
-- detalhar um estado alternativo da Tela Hoje.
+Validar funcionalmente o Detalhe de Oportunidade segundo a presença companheira e a coerência de posicionamento da Guivos.
 
 ## 6. Regra de transição
 
