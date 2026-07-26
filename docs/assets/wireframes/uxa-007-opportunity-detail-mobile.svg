@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1340" viewBox="0 0 390 1340" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1420" viewBox="0 0 390 1420" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe reformulado de baixa fidelidade do Detalhe de Oportunidade</title>
   <desc id="desc">Estrutura móvel alinhada à Fundação da Guivos, demonstrando como a Guivos compreende o momento, qual avanço foi reconhecido, por que o próximo passo faz sentido, investimento, condições, responsável, relação comercial e ações contextuais.</desc>
-  <rect width="390" height="1340" fill="#ffffff"/>
-  <rect x="1" y="1" width="388" height="1338" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+  <rect width="390" height="1420" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="1418" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
 
   <text x="24" y="36" font-family="Arial, sans-serif" font-size="12" fill="#555555">09:41</text>
   <text x="24" y="72" font-family="Arial, sans-serif" font-size="16">←</text>
@@ -81,5 +81,11 @@
   <text x="34" y="1296" font-family="Arial, sans-serif" font-size="10">Isso não aumentou a relevância funcional desta oportunidade.</text>
   <text x="34" y="1312" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender esta relação</text>
 
-  <rect x="1" y="1262" width="388" height="77" fill="#ffffff" stroke="#cccccc" opacity="0"/>
+  <rect x="1" y="1340" width="388" height="79" fill="#ffffff" stroke="#cccccc"/>
+  <rect x="20" y="1358" width="200" height="40" rx="8" fill="#222222"/>
+  <text x="120" y="1383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Ver como participar</text>
+  <rect x="232" y="1358" width="64" height="40" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="264" y="1383" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Salvar</text>
+  <rect x="306" y="1358" width="64" height="40" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="338" y="1383" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Comparar</text>
 </svg>
