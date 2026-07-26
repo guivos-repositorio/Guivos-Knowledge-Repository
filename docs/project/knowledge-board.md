@@ -21,11 +21,11 @@ normative: false
 
 ## 1. Autoridade
 
-Este painel resume o portfólio arquitetural vigente. O estado transversal oficial é definido pelo [Current State Register](current-state-register.md).
+Este painel resume o portfólio arquitetural proposto pelo incremento. O estado transversal somente se torna oficial na `main` após integração.
 
-## 2. Estado institucional
+## 2. Estado institucional proposto
 
-| Elemento | Estado vigente |
+| Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
 | Marco | `M7.19 — Seventeenth Human Outcome Decision Recorded` |
@@ -51,14 +51,14 @@ Este painel resume o portfólio arquitetural vigente. O estado transversal ofici
 - Guivos Economic Model documentariamente concluído;
 - COR, validação externa e COEM concluídos;
 - remediação R1–R5 e R6 concluídas;
-- `COD-001` a `COD-017` registrados.
+- `COD-001` a `COD-017` registrados neste incremento acumulado.
 
 ### Ativo
 
 - `A2-R03 — Business Architecture Review`;
 - `BA-STR-002 — Business Outcomes`;
 - Candidate Outcome Decision Register;
-- preparação da submissão de `BUS-CAND-010`.
+- preparação da submissão de `BUS-CAND-010` após integração.
 
 ### Pendente
 
@@ -81,6 +81,6 @@ O candidato foi retirado do futuro catálogo de Business Outcomes. Coerência gl
 
 A decisão não impõe padronização global, não proíbe adaptação local, não exige internacionalização e não considera tradução, presença local ou variação nominal de produto como prova suficiente de adequação legítima.
 
-## 5. Próximo movimento
+## 5. Próximo movimento após integração
 
-Após integração deste incremento, preparar a décima oitava submissão humana para `BUS-CAND-010 — Capacidade de reinvestimento responsável`, cuja recomendação da COEM é `Merge into BUS-CAND-005`.
+Preparar a décima oitava submissão humana para `BUS-CAND-010 — Capacidade de reinvestimento responsável`, cuja recomendação da COEM é `Merge into BUS-CAND-005`.
