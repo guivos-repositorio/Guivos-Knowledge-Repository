@@ -2,7 +2,7 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.25.0
+version: 0.26.0
 owner: Guivos Business Architecture
 last_updated: 2026-07-25
 parent: BA-STR-002
@@ -31,8 +31,9 @@ related:
   - COD-011
   - COD-012
   - COD-013
+  - COD-014
   - GEM-CLOSURE-REVIEW-001
-  - M7.15
+  - M7.16
 normative: false
 ---
 
@@ -53,12 +54,12 @@ Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 14
+Under Validation: 13
 Merged: 2
-Rejected: 2
+Rejected: 3
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 13 of 18
+Human decisions: 14 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -252,12 +253,14 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade. |
+| Definição original preservada | A Guivos amplia alcance e valor sem degradar qualidade, proteção, capacidade, diversidade de dependências ou continuidade. |
 | Origem | GEB-P01-F04; BA-STR-001; GEM-008; GEM-CLOSURE-REVIEW-001 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Under Validation |
-| Observações | Crescimento não é obrigatório em todo período e não equivale a aquisição de usuários. |
-| Questão de validação | Resiliência deve ser Outcome separado ou propriedade obrigatória da continuidade sustentável? |
+| Status | Rejected |
+| Decisão | `COD-014 — Aceitar Reject` |
+| Destino arquitetural preservado | expansão responsável como trajetória estratégica opcional; capacidade demonstrada, adicionalidade e critérios de não degradação como gates; resiliência e adaptação legítima como propriedades de continuidade ou capacidades sustentadoras |
+| Observações | A rejeição não proíbe crescimento e não trata ausência de expansão como falha automática. |
+| Questão de validação | Resolvida quanto à candidatura autônoma. |
 
 ### BUS-CAND-007 — Aprendizado e adaptação institucionais
 
@@ -314,13 +317,13 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | propósito | BUS-CAND-001 | rejeitado como Outcome por `COD-009`; autoridade constitucional preservada |
 | valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 e BUS-CAND-005 reformulados; BUS-CAND-010 pendente de decisão individual |
 | adaptação | BUS-CAND-002, BUS-CAND-007 e BUS-CAND-009 | BUS-CAND-002 fundido em BUS-CAND-003; demais pendentes |
-| resiliência | BUS-CAND-005 e BUS-CAND-006 | BUS-CAND-005 reformulado; BUS-CAND-006 pendente |
+| resiliência | BUS-CAND-005 e BUS-CAND-006 | BUS-CAND-005 preservado como candidato reformulado; BUS-CAND-006 rejeitado como Outcome e expansão responsável preservada como trajetória opcional |
 
 ## 8. Pendências para os próximos ciclos
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para as cinco disposições restantes;
+1. decisão humana individual para as quatro disposições restantes;
 2. reaplicação dos quatro testes às formulações revisadas e combinadas;
 3. aplicação e ajuste do AQS-O01;
 4. decisão formal sobre catálogos e códigos canônicos.
@@ -329,17 +332,16 @@ Antes de qualquer promoção canônica deverão existir:
 
 | Critério | Resultado |
 |---|---|
-| `COD-013` registrado | Pass |
+| `COD-014` registrado | Pass |
 | formulação original e evidências preservadas | Pass |
-| formulação candidata revisada registrada | Pass |
-| `BUS-CAND-005` mantido em `Under Validation` | Pass |
-| `BUS-CAND-010` preservado sem fusão antecipada | Pass |
-| continuidade econômica separada de métricas isoladas | Pass |
-| distribuição 14/2/2 preservada | Pass |
-| nova COEM exigida | Pass |
+| `BUS-CAND-006` alterado para `Rejected` | Pass |
+| expansão responsável preservada fora do catálogo | Pass |
+| resiliência e adaptação preservadas como sustentadoras | Pass |
+| crescimento não proibido | Pass |
+| distribuição 13/2/3 registrada | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 10. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-006 — Crescimento responsável e resiliente` à décima quarta decisão humana individual sobre a recomendação `Reject`.
+Após integração deste incremento, preparar e submeter `BUS-CAND-007 — Aprendizado e adaptação institucionais` à décima quinta decisão humana individual sobre a recomendação `Reject`.
