@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -21,6 +21,7 @@ related:
   - UXA-009
   - UXA-010
   - UXA-011
+  - UXA-012
 normative: false
 ---
 
@@ -28,34 +29,22 @@ normative: false
 
 ## 1. Finalidade
 
-A Arquitetura da Experiência da Guivos transforma capacidades, princípios e contratos funcionais já consolidados no **Repositório de Conhecimento da Guivos (Guivos Knowledge Repository — GKR)** em uma experiência navegável, compreensível, coerente e reconhecível para Pessoas, Organizações e Coletivos.
+A Arquitetura da Experiência da Guivos transforma capacidades, princípios e contratos funcionais consolidados no **Repositório de Conhecimento da Guivos** em uma experiência navegável, compreensível, coerente e reconhecível para Pessoas, Organizações e Coletivos.
 
 Ela governa, antes do design visual definitivo:
 
 - jornadas por tipo de participante;
-- arquitetura de informação;
-- navegação global;
-- responsabilidades de cada superfície;
-- hierarquia e prioridade do conteúdo;
-- relações entre telas;
-- pontos de entrada e retorno;
+- arquitetura de informação e navegação;
+- responsabilidade e hierarquia de cada superfície;
 - controles de relevância, frequência e privacidade;
 - presença companheira e posicionamento institucional;
-- coerência entre Guivos Journey, Guivos Business, Guivos Mall, Guivos Travel, Guivos Media, Guivos Ads e Guivos Intelligence;
+- gate de alinhamento à Fundação da Guivos;
+- coerência entre Guivos Journey, Business, Mall, Travel, Media, Ads e Intelligence;
 - critérios para wireframes, protótipos e testes posteriores.
 
 ## 2. O que esta frente não representa
 
-Esta frente não:
-
-- inicia Engenharia de Produto (Product Engineering);
-- define tecnologia, componentes ou código;
-- cria layout visual final;
-- escolhe cores, tipografia ou identidade visual definitiva;
-- transforma capacidades da Especificação Arquitetural do Guivos Journey (identificador PAS-001) em etapas obrigatórias;
-- altera os contratos funcionais do Guivos Journey;
-- conclui preços, planos ou regras comerciais;
-- autoriza produção.
+Esta frente não inicia Engenharia de Produto, não define tecnologia ou código, não cria design visual final, não conclui preços e planos e não autoriza produção.
 
 ## 3. Documentos ativos
 
@@ -65,94 +54,90 @@ Esta frente não:
 | [Experiência Diária e Tela Hoje](uxa-002-daily-experience-and-home.md) | UXA-002 | recorrência legítima, prioridade diária e superfície inicial |
 | [Mapa Inicial de Jornadas e Telas](uxa-003-journeys-and-screen-map.md) | UXA-003 | inventário de superfícies para Pessoa, Organização e Coletivo |
 | [Oportunidades, Organizações, Coletivos e Mapa](uxa-004-opportunities-organizations-collectives-map.md) | UXA-004 | cadastro, descoberta, relevância, preço e localização |
-| [Programa Inicial de Wireframes de Baixa Fidelidade](uxa-005-low-fidelity-wireframes.md) | UXA-005 | método, convenções, relação entre artefatos e critérios de avanço |
-| [Wireframe de Baixa Fidelidade da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | estrutura móvel reformulada da entrada diária pessoal |
-| [Wireframe de Baixa Fidelidade do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | preço, relevância, elegibilidade, fonte e ação |
+| [Programa Inicial de Wireframes de Baixa Fidelidade](uxa-005-low-fidelity-wireframes.md) | UXA-005 | método, convenções e critérios de avanço |
+| [Wireframe de Baixa Fidelidade da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | entrada diária pessoal reformulada |
+| [Wireframe de Baixa Fidelidade do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | jornada, preço, elegibilidade, fonte e ação contextual |
 | [Wireframe de Baixa Fidelidade do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | fluxo institucional e etapa de preço e condições |
 | [Padrão de Linguagem Clara e Identificadores Técnicos](uxa-009-plain-language-and-technical-identifiers.md) | UXA-009 | nomes completos, tradução de estados e uso secundário de códigos |
-| [Validação Funcional e Reformulação da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana, critérios e consequências da primeira reformulação funcional |
-| [Presença Companheira e Coerência de Posicionamento da Guivos](uxa-011-companion-presence-and-ecosystem-positioning.md) | UXA-011 | princípio transversal de comunicação, comportamento e coerência entre produtos |
+| [Validação Funcional e Reformulação da Tela Hoje](uxa-010-today-functional-validation-and-reformulation.md) | UXA-010 | decisão humana e consequências da primeira reformulação funcional |
+| [Presença Companheira e Coerência de Posicionamento da Guivos](uxa-011-companion-presence-and-ecosystem-positioning.md) | UXA-011 | princípio transversal e gate de alinhamento à Fundação |
+| [Validação Funcional e Reformulação do Detalhe de Oportunidade](uxa-012-opportunity-detail-functional-validation-and-reformulation.md) | UXA-012 | decisão humana, gate fundacional e reformulação da superfície |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-004 |
-| Resultados Empresariais (Business Outcomes) | pausados antes da decisão sobre capacidade de reinvestimento responsável | BUS-CAND-010 |
-| Engenharia de Produto (Product Engineering) | pausada antes da primeira unidade de trabalho | W0-01 |
-| Tela Hoje | primeira validação funcional concluída; wireframe reformulado e alinhado à presença companheira | UXA-006, UXA-010 e UXA-011 |
-| Detalhe de oportunidade | wireframe inicial aguardando validação funcional segundo o novo princípio | UXA-007 e UXA-011 |
-| Cadastro de oportunidade pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
-| Presença companheira | princípio transversal estabelecido para todo o ecossistema | UXA-011 |
+| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-012 |
+| Resultados Empresariais | pausados antes da capacidade de reinvestimento responsável | BUS-CAND-010 |
+| Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
+| Tela Hoje | validada funcionalmente e reformulada | UXA-006, UXA-010 e UXA-011 |
+| Detalhe de Oportunidade | validado funcionalmente e reformulado segundo a Fundação | UXA-007, UXA-011 e UXA-012 |
+| Cadastro pela Organização | wireframe inicial aguardando validação funcional | UXA-008 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
-| Linguagem clara | padrão aplicado aos documentos ativos | UXA-009 |
 
-## 5. Resultado da reformulação da Tela Hoje
+## 5. Gate de alinhamento à Fundação
 
-A Tela Hoje preserva a ordem funcional:
+Toda superfície deverá demonstrar aderência à:
+
+- Essência da Guivos;
+- Propósito;
+- Missão Operacional;
+- Visão de Longo Prazo;
+- Constituição da Guivos;
+- Princípios Permanentes.
+
+Falha material impede avanço para protótipo, design, teste, especificação técnica ou desenvolvimento.
+
+## 6. Resultado da Tela Hoje
+
+A Tela Hoje preserva contexto de atuação, síntese condicional, uma atenção principal, continuidade da jornada, possibilidades para o Próximo Passo, atividades temporalmente relevantes e navegação global.
+
+## 7. Resultado do Detalhe de Oportunidade
+
+A ordem funcional reformulada é:
 
 ```text
-contexto de atuação
-→ síntese condicional
-→ atenção principal
-→ movimento atual
-→ possibilidades para o próximo passo
-→ Coletivos e atividades, quando materialmente relevantes
-→ navegação global
+identidade e origem
+→ como pode apoiar sua jornada
+→ investimento e condições
+→ o que precisa saber antes de decidir
+→ condições para participar
+→ quem oferece
+→ relação comercial com a Guivos
+→ ações contextuais
 ```
 
-Foram aplicadas as seguintes decisões:
+Decisões principais:
 
-- seletor com `Agindo como`;
-- síntese somente quando acrescentar compreensão;
-- um único item principal de atenção;
-- Próximo Passo antes das oportunidades;
-- até dois cartões de oportunidade em largura integral;
-- Coletivos e atividades somente com utilidade temporal;
-- navegação Hoje, Jornada, Explorar, Mapa e Eu preservada.
+- a relação com a jornada antecede preço e conversão;
+- a oportunidade é apresentada como possibilidade, não recomendação definitiva;
+- preço e custo total permanecem visíveis e transparentes;
+- relevância explica também por que a oportunidade apareceu agora;
+- elegibilidade é apresentada em `Condições para participar`;
+- ação principal varia conforme tipo e estado real;
+- salvar e comparar permanecem alternativas legítimas;
+- publicidade e comissão não alteram relevância funcional.
 
-## 6. Presença companheira e posicionamento
+## 8. Presença companheira e posicionamento
 
-Toda superfície deverá demonstrar que a Guivos acompanha a jornada sem controlar decisões.
+Toda superfície deverá demonstrar que a Guivos acompanha a jornada sem controlar decisões, preservando contexto, explicação, alternativas, correção, pausa e recusa.
 
-A experiência deverá:
+Uma formulação que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo deverá ser reavaliada.
 
-- reconhecer o momento e a continuidade da jornada;
-- explicar por que algo importa agora;
-- relacionar informações a possibilidades ou Próximos Passos;
-- preservar alternativas, correção, pausa e recusa;
-- mostrar propósito por meio do comportamento da tela, não por slogans genéricos;
-- manter intenção comercial explicitamente separada do apoio à jornada;
-- preservar a mesma identidade institucional em todos os produtos.
-
-A voz companheira não representa amizade simulada, intimidade artificial, pressão emocional, vigilância ou autoridade sobre a vida do participante.
-
-## 7. Wireframes atuais
+## 9. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
-| Tela Hoje | aplicativo móvel | reformulada e alinhada ao princípio de presença companheira |
-| Detalhe de oportunidade | aplicativo móvel | wireframe inicial criado; validação funcional pendente |
-| Cadastro de oportunidade pela Organização | web para computador | wireframe inicial criado |
+| Tela Hoje | aplicativo móvel | reformulada após validação funcional |
+| Detalhe de Oportunidade | aplicativo móvel | reformulado após validação funcional e gate fundacional |
+| Cadastro de Oportunidade pela Organização | web para computador | wireframe inicial criado |
 
-Os artefatos são hipóteses estruturais. Eles não definem design visual, componentes técnicos ou comportamento implementado.
+Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
-## 8. Regra de comunicação
+## 10. Próximo ponto de decisão
 
-O nome completo deverá aparecer antes do identificador técnico. Identificadores não deverão aparecer sozinhos em respostas, títulos executivos ou explicações dirigidas ao Fundador.
-
-Textos e comportamentos deverão refletir a presença companheira e o propósito da Guivos. Uma formulação que poderia pertencer indistintamente a qualquer marketplace, rede social, aplicativo de tarefas ou plataforma de conteúdo deverá ser reavaliada.
-
-## 9. Próximo ponto de decisão
-
-Validar funcionalmente o Detalhe de Oportunidade aplicando, desde o início:
-
-1. presença companheira;
-2. relação explícita com a jornada;
-3. explicação de relevância e temporalidade;
-4. autonomia para considerar, salvar, comparar, recusar ou iniciar;
-5. transparência de preço, elegibilidade, fonte e relação comercial.
+Validar funcionalmente o Cadastro de Oportunidade pela Organização aplicando presença companheira, gate fundacional, clareza institucional, responsabilidade, preço, condições e separação entre envio, avaliação, ativação e apresentação.
 
 Protótipo navegável, design visual, testes e desenvolvimento permanecem não iniciados.
