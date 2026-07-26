@@ -1,22 +1,23 @@
 ---
-id: ROADMAP-11.79.0
-title: Roadmap Arquitetural — BUS-CAND-008 Decision Submission
+id: ROADMAP-11.80.0
+title: Roadmap Arquitetural — COD-016 Registrado
 status: active
-version: 11.79.0
+version: 11.80.0
 owner: Guivos
 last_updated: 2026-07-25
 supersedes_partial:
-  - ROADMAP-11.78.0
+  - ROADMAP-11.79.0
 related:
   - GKR-STATE-001
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - BA-STR-002-COD-SUB-016
-  - M7.17.1
+  - COD-016
+  - M7.18
 ---
 
-# Roadmap Arquitetural — BUS-CAND-008 Decision Submission
+# Roadmap Arquitetural — COD-016 Registrado
 
 ## 1. Autoridade
 
@@ -27,17 +28,16 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.17.1` |
+| Marco | `M7.18` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa em execução |
 | BA-STR-002 | ativo |
-| COR | 12 `Under Validation`; 2 `Merged`; 4 `Rejected` |
-| CODR | `15 de 18` decisões; 1 submissão aberta |
-| Submissão vigente | `BUS-CAND-008 — Reject` |
+| COR | 11 `Under Validation`; 2 `Merged`; 5 `Rejected` |
+| CODR | `16 de 18` decisões; 0 submissões abertas |
 | Reformulate aceitos | 9 |
 | Merge aceitos | 2 |
-| Reject aceitos | 4 |
+| Reject aceitos | 5 |
 | Outcomes canônicos | `0` |
 | Product Engineering | pausado antes do `W0-01` |
 
@@ -67,31 +67,26 @@ R1 — precedência e estado global — concluído
 - COR: 18 registros rastreáveis;
 - validação externa: 6 de 6 lotes;
 - COEM: 18 de 18 candidatos e 6 de 6 clusters;
-- decisões humanas: 15 de 18;
-- submissões abertas: 1;
+- decisões humanas: 16 de 18;
+- submissões abertas: 0;
 - `ECO-CAND-005`: `Merged into ECO-CAND-003`;
 - `BUS-CAND-002`: `Merged into BUS-CAND-003`;
-- `ECO-CAND-004`, `BUS-CAND-001`, `BUS-CAND-006` e `BUS-CAND-007`: `Rejected`;
+- `ECO-CAND-004`, `BUS-CAND-001`, `BUS-CAND-006`, `BUS-CAND-007` e `BUS-CAND-008`: `Rejected`;
 - `BUS-CAND-003`, `BUS-CAND-004` e `BUS-CAND-005`: `Reformulate` aceitos;
-- `BUS-CAND-008`: submetido à decisão sobre `Reject`;
 - Outcomes canônicos: 0.
 
-## 5. Submissão de BUS-CAND-008
+## 5. Resultado de COD-016
 
-A COEM recomenda `Reject`.
+A recomendação `Reject` foi aceita para `BUS-CAND-008 — Saúde das relações de parceria`.
 
-Formulação avaliada:
+A decisão retirou saúde das relações de parceria do futuro catálogo de Business Outcomes e preservou **governança das relações de parceria** na arquitetura de capacidades, incluindo gestão de alianças, dependências externas, confiança, controles, riscos relacionais e de desempenho e critérios governados de portfólio.
 
-> A rede de parceiros permanece qualificada, alinhada, diversa e capaz de gerar valor recíproco sem transferir indevidamente autoridade ou risco.
-
-A recomendação retira saúde das relações de parceria do futuro catálogo de Business Outcomes e preserva seu conteúdo na arquitetura de capacidades, governança de parceiros e critérios de portfólio.
-
-A recomendação não reduz a importância estratégica das parcerias, não exige internalização e preserva decisões legítimas de entrada, evolução, renovação, substituição e saída.
+A decisão não reduz a importância estratégica das parcerias, não exige internalização e não considera quantidade, duração ou ausência de conflito como prova suficiente de saúde relacional.
 
 ## 6. Sequência restante de BA-STR-002
 
-1. receber a decisão humana sobre `BUS-CAND-008`;
-2. concluir as duas decisões posteriores;
+1. submeter `BUS-CAND-009` à decisão humana sobre `Reject`;
+2. submeter `BUS-CAND-010` à decisão humana sobre `Merge into BUS-CAND-005`;
 3. reavaliar formulações reformuladas e combinadas pelos quatro testes;
 4. aplicar e ajustar o `AQS-O01`;
 5. consolidar os catálogos de Ecosystem Outcomes e Business Outcomes;
@@ -127,4 +122,4 @@ Permanece como trilha operacional paralela e pode avançar por incremento própr
 
 ## 10. Próximo ponto exato
 
-Receber a manifestação do Fundador sobre `BA-STR-002-COD-SUB-016`. Nenhuma decisão será inferida automaticamente.
+Após integração deste incremento, preparar e submeter `BUS-CAND-009 — Coerência global com adequação contextual` à décima sétima decisão humana individual sobre a recomendação `Reject`.
