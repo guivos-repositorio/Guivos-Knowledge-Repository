@@ -1,28 +1,28 @@
 ---
-id: ROADMAP-11.93.0
-title: Roadmap Arquitetural — Relações entre Organizações e Coletivos Detalhadas
+id: ROADMAP-11.94.0
+title: Roadmap Arquitetural — Décima Oitava Decisão Humana Registrada
 status: active
-version: 11.93.0
+version: 11.94.0
 owner: Guivos
 last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.92.0
+  - ROADMAP-11.93.0
 related:
   - GKR-STATE-001
+  - BA-STR-002
+  - BA-STR-002-COR-001
+  - BA-STR-002-CODR-001
+  - BA-STR-002-COD-SUB-018
+  - COD-018
   - UXA-000
   - UXA-014
-  - UXA-015
-  - UXA-016
   - UXA-017
   - UXA-018
   - UXA-019
-  - BA-STR-002-COR-001
-  - BA-STR-002-CODR-001
-  - COD-017
-  - M7.19.11
+  - M7.20
 ---
 
-# Roadmap Arquitetural — Relações entre Organizações e Coletivos Detalhadas
+# Roadmap Arquitetural — Décima Oitava Decisão Humana Registrada
 
 ## 1. Autoridade
 
@@ -33,120 +33,111 @@ Este documento governa a sequência global de evolução arquitetural do **Repos
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | relações entre Organizações e Coletivos detalhadas funcionalmente | M7.19.11 |
+| Marco | décima oitava decisão humana sobre Resultados Empresariais registrada | M7.20 |
 | Remediação | concluída | R1–R6 |
-| Revisão da Arquitetura de Negócios | ativa e pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
-| Resultados Empresariais | 17 de 18 decisões; nenhuma submissão aberta | BA-STR-002 |
+| Revisão da Arquitetura de Negócios | ativa; decisões humanas concluídas e próximo ato aguardando autorização | A2-R03; BA-STR-002 |
+| Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
+| Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
+| Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | BUS-CAND-010 → BUS-CAND-005; COD-018 |
+| Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
 | Arquitetura da Experiência | cinco superfícies validadas e contrato funcional das relações estabelecido | UXA-000 a UXA-019 |
-| Visão Geral da Organização | validada com autoridade, compromissos, capacidade, evidências e decisões | UXA-015; UXA-017 |
-| Início do Coletivo | validado com propósito, pertencimento, voluntariedade, governança e autonomia | UXA-016; UXA-018 |
-| Relações entre Organizações e Coletivos | detalhadas com consentimento bilateral, autoridade, recursos, dados, autonomia e saída | UXA-019 |
 | Protótipo navegável | não iniciado | — |
-| Engenharia de Produto | pausada | W0-01 |
+| Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Sequência executada
 
 1. Guivos Journey concluído funcionalmente e publicado;
 2. Modelo Econômico documentado inicialmente;
-3. Resultados Empresariais conduzidos até 17 de 18 decisões;
-4. remediação do repositório concluída;
-5. Arquitetura da Experiência integrada;
-6. Tela Hoje, Detalhe de Oportunidade e Cadastro pela Organização validados e reformulados;
-7. linguagem clara estabelecida;
-8. presença companheira e gate da Fundação estabelecidos;
-9. compreensão do momento, evidência de avanço e explicabilidade estabelecidas;
-10. Fundação Funcional das Experiências de Organizações e Coletivos estabelecida;
-11. estruturas iniciais da Visão Geral da Organização e do Início do Coletivo criadas;
-12. Visão Geral da Organização validada e reformulada;
-13. Início do Coletivo validado e reformulado;
-14. relações entre Organizações e Coletivos detalhadas funcionalmente.
+3. validação externa dos 18 candidatos concluída;
+4. Matriz de Avaliação inicial concluída para 18 candidatos e seis clusters;
+5. decisões humanas 1 a 17 registradas;
+6. remediação do repositório concluída;
+7. Arquitetura da Experiência integrada;
+8. três superfícies iniciais validadas e reformuladas;
+9. fundação funcional de Organizações e Coletivos estabelecida;
+10. Visão Geral da Organização validada;
+11. Início do Coletivo validado;
+12. relações entre Organizações e Coletivos detalhadas;
+13. Resultados Empresariais retomados;
+14. `COD-018` registrado e `BUS-CAND-010` fundido em `BUS-CAND-005`;
+15. fase de decisões humanas concluída em 18 de 18.
 
-## 4. Pausa governada
+## 4. Resultado da decisão COD-018
 
-A sequência de Resultados Empresariais permanece pausada antes da decisão sobre **Capacidade de reinvestimento responsável**.
+### 4.1 Decisão
 
-Nenhuma decisão, Resultado canônico, Capacidade Empresarial ou unidade de Engenharia de Produto foi antecipada.
-
-## 5. Resultado do detalhamento das relações
-
-### 5.1 Problemas corrigidos
-
-A fundação inicial não resolvia integralmente:
-
-- como uma relação é proposta e aprovada;
-- quem possui autoridade de cada lado;
-- quais compromissos, recursos e dados fazem parte do escopo;
-- como patrocínio, serviço, marca e operação conjunta permanecem distintos;
-- como alterações materiais exigem nova aprovação;
-- como autonomia e influência são demonstradas;
-- como evidências e riscos são acompanhados;
-- como contestar, suspender ou encerrar a relação;
-- o que acontece com dados, recursos e responsabilidades após o término.
-
-### 5.2 Cadeia funcional estabelecida
+O Fundador aceitou:
 
 ```text
-participantes distintos
-→ finalidade compartilhada e limitada
-→ consentimento bilateral
-→ autoridade identificada
-→ compromissos verificáveis
-→ recursos e dados transparentes
-→ autonomia protegida
-→ acompanhamento e revisão
-→ saída possível e responsável
+Merge BUS-CAND-010 into BUS-CAND-005
 ```
 
-### 5.3 Decisões aplicadas
+### 4.2 Efeito
 
-- relação não equivale a propriedade ou subordinação;
-- consentimento precisa ser bilateral e explícito;
-- silêncio, presença, recurso recebido ou uso informal de marca não constituem aceite;
-- limites de representação permanecem visíveis;
-- compromissos possuem responsáveis, evidências e alternativas;
-- recursos, condições econômicas e patrocínio permanecem transparentes;
-- dados possuem finalidade, acesso, retenção e saída definidos;
-- apoio institucional não controla propósito, pertencimento ou governança do Coletivo;
-- alterações materiais exigem nova aprovação bilateral;
-- marca, comunicação, influência e conflitos permanecem identificados;
-- avanço exige mudança relacionada à finalidade e evidência suficiente;
-- contestação, suspensão e encerramento permanecem legítimos;
-- término governa dados, recursos, comunicação, proteção e obrigações remanescentes.
+- `BUS-CAND-010` passa para `Merged`;
+- `BUS-CAND-005` permanece `Under Validation`;
+- financiamento responsável da renovação passa a compor o contexto interpretativo da continuidade econômica sustentável;
+- opções internas e externas de financiamento permanecem legítimas;
+- adicionalidade, riscos, obrigações, alternativas e custo de oportunidade tornam-se requisitos explícitos;
+- reinvestimento proposto, aprovado, realizado e eficaz permanecem estados diferentes;
+- maior retenção, gasto ou percentual reinvestido não constituem prova automática de responsabilidade ou valor futuro.
 
-### 5.4 Limites preservados
+### 4.3 Limite
 
-O incremento não cria contrato jurídico, assinatura eletrônica, protótipo navegável, design visual, testes de usabilidade, componentes técnicos, regras universais internacionais ou desenvolvimento.
+A fusão não aprova o candidato de destino, não cria código canônico e não inicia AQS-O01, Capacidades Empresariais ou Engenharia de Produto.
 
-## 6. Ordem autorizada
+## 5. Estado da fase de Resultados Empresariais
 
-A sequência definida é:
+```text
+External validation: completed
+Initial COEM: completed
+Human decisions: completed — 18 of 18
+Under Validation: 9
+Merged: 3
+Rejected: 6
+Approved Outcomes: 0
+Canonical codes: 0
+Reapplication of COEM: not started
+AQS-O01: not started
+Canonical consolidation: not started
+```
+
+## 6. Ordem anteriormente autorizada
+
+A sequência definida foi concluída em incrementos separados:
 
 1. **Visão Geral da Organização** — validada e integrada;
 2. **Início do Coletivo** — validado e integrado;
-3. **Relações entre Organizações e Coletivos** — detalhadas neste incremento;
-4. **Resultados Empresariais e capacidade de reinvestimento responsável** — próxima etapa após integração e nova autorização.
+3. **Relações entre Organizações e Coletivos** — detalhadas e integradas;
+4. **Resultados Empresariais e Capacidade de reinvestimento responsável** — decisão concluída neste incremento.
 
-Cada etapa continuará sendo executada e integrada separadamente.
+A conclusão da quarta etapa não autoriza automaticamente a fase seguinte.
 
-## 7. Próxima etapa
+## 7. Próxima etapa candidata
 
-Após a integração deste incremento e nova autorização, retomar os **Resultados Empresariais** na decisão sobre **Capacidade de reinvestimento responsável**.
+Após integração e nova autorização, reaplicar os quatro testes às nove formulações revisadas e combinadas.
 
-A integração não inicia automaticamente essa retomada.
+A futura sequência, sempre em atos separados, é:
+
+```text
+reaplicação da COEM
+→ ajuste prático do AQS-O01
+→ decisão sobre catálogos canônicos
+→ matriz de sustentação entre Outcomes
+→ preparação da Arquitetura de Capacidades Empresariais
+```
 
 ## 8. Regras transversais preservadas
 
-Toda superfície e relação deverá:
-
-- demonstrar aderência à Fundação da Guivos;
-- comunicar presença companheira sem intimidade artificial;
-- mostrar como o momento foi compreendido;
-- demonstrar avanço por mudança relevante;
-- explicar por que uma decisão, escolha ou Próximo Passo faz sentido;
-- preservar alternativas, recusa, correção, pausa, saída e autonomia;
-- separar relevância funcional de publicidade e relação comercial;
-- manter Pessoas, Organizações e Coletivos como participantes distintos;
-- não ampliar autoridade, dados, recursos ou obrigações sem aprovação legítima.
+- nenhum candidato é aprovado por fusão, reformulação ou contagem de testes;
+- Outcomes canônicos continuam em zero;
+- reinvestimento não é obrigação automática;
+- financiamento interno e externo permanecem alternativas legítimas;
+- resultado financeiro isolado não comprova continuidade ou valor;
+- formulações combinadas retornam aos quatro testes;
+- Arquitetura da Experiência não inicia a Engenharia de Produto;
+- protótipo, design, testes e desenvolvimento permanecem não iniciados;
+- Validação de Mercado mantém execução própria e paralela.
 
 ## 9. Frentes posteriores preservadas
 
