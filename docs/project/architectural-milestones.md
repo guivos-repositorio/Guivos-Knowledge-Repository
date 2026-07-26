@@ -2,19 +2,22 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Architectural Milestones
 status: active
-version: 4.80.0
+version: 4.81.0
 owner: Guivos
 last_updated: 2026-07-25
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.82.0
+  - ROADMAP-11.83.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - BA-STR-002-COD-SUB-017
-  - COD-017
-  - M7.19
+  - UXA-000
+  - UXA-001
+  - UXA-002
+  - UXA-003
+  - UXA-004
+  - M7.19.1
 normative: false
 ---
 
@@ -65,27 +68,25 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 | M7.17.1 | Completed | décima sexta decisão submetida para `BUS-CAND-008` |
 | M7.18 | Completed | `COD-016` registrado para `BUS-CAND-008` |
 | M7.18.1 | Completed | décima sétima decisão submetida para `BUS-CAND-009` |
-| M7.19 | Completed neste incremento | `COD-017` registrado para `BUS-CAND-009` |
+| M7.19 | Completed | `COD-017` registrado para `BUS-CAND-009` |
+| M7.19.1 | Active neste incremento | Experience Architecture Discovery ativada; Business Outcomes pausado antes de `BUS-CAND-010` |
 
 ## 3. Marco vigente
 
-### M7.19 — Seventeenth Human Outcome Decision Recorded
+### M7.19.1 — Experience Architecture Discovery Activated
 
 **Critérios atendidos:**
 
-- manifestação explícita do Fundador registrada;
-- alternativa `A — Aceitar Reject` aceita;
-- `COD-017` criado para `BUS-CAND-009`;
-- formulação original, evidências e rastreabilidade preservadas;
-- candidato alterado de `Under Validation` para `Rejected`;
-- coerência global com adequação contextual retirada do futuro catálogo de Business Outcomes;
-- princípio arquitetural e critério governado preservados;
-- critérios de internacionalização, localização e desenho de capacidades preservados;
-- padronização global não imposta e adaptação local não proibida;
-- tradução, presença local e variação nominal bloqueadas como prova suficiente;
-- decisões humanas atualizadas para 17 de 18;
-- COR atualizado para 10 `Under Validation`, 2 `Merged` e 6 `Rejected`;
-- nenhum Outcome canônico criado;
+- PR #94 integrado e `COD-017` oficializado;
+- manifestação do Fundador para pausar antes de `BUS-CAND-010` registrada;
+- `BUS-CAND-010` preservado em `Under Validation`;
+- `BA-STR-002-COD-SUB-018` e `COD-018` não criados;
+- `UXA-000` criado como índice da frente;
+- `UXA-001` criado com fundação, participantes e navegação;
+- `UXA-002` criado com a hipótese da tela `Hoje` e recorrência legítima;
+- `UXA-003` criado com mapa de jornadas e telas;
+- `UXA-004` criado com fluxos de oportunidades, Organizações, Coletivos e Mapa;
+- wireframes, protótipos e testes preservados como não iniciados;
 - Product Engineering preservado em pausa.
 
 ## 4. Estado das revisões A2
@@ -94,14 +95,16 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada. 
 |---|---|
 | A2-R01 — Foundation Architecture Review | Completed — Frozen in A2-B3 |
 | A2-R02 — Fundamental Model Review | Execution Ready — Operationally Paused |
-| A2-R03 — Business Architecture Review | Active — In Execution |
-| A2-R04 — Product Architecture Review | Planned |
+| A2-R03 — Business Architecture Review | Active — Operationally Paused before BUS-CAND-010 |
+| A2-R04 — Product Architecture Review | Planned; não iniciado por este incremento |
 | A2-R05 — Cross-Architecture Review | Planned |
+
+Experience Architecture Discovery é uma frente preparatória transversal. Ela não conclui A2-R03 nem inicia formalmente A2-R04.
 
 ## 5. Próximo ato
 
-Após integração deste incremento, preparar a submissão de `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana sobre a recomendação `Merge into BUS-CAND-005`.
+Validar as propostas `UXA-001` a `UXA-004` e decidir se o próximo marco deverá aprofundar a arquitetura de informação ou autorizar wireframes de baixa fidelidade.
 
 ## 6. Regra de transição
 
-Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Recomendações, submissões, decisões, mudanças no COR e consolidação canônica permanecem atos separados.
+Um marco somente muda de estado quando seus critérios estiverem demonstrados no GKR. Discovery, wireframes, protótipos, testes, Product Engineering e decisões de Outcomes permanecem atos separados.
