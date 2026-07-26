@@ -2,31 +2,25 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.87.0
+version: 4.88.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.89.0
+  - ROADMAP-11.90.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - UXA-000
-  - UXA-006
-  - UXA-007
-  - UXA-008
-  - UXA-009
-  - UXA-010
-  - UXA-011
-  - UXA-011-A1
-  - UXA-012
-  - UXA-013
-  - M7.19.7
+  - UXA-014
+  - UXA-015
+  - UXA-016
+  - M7.19.8
 normative: false
 ---
 
-# Marcos Arquiteturais (identificador GKR-ARCHITECTURAL-MILESTONES-001)
+# Marcos Arquiteturais
 
 ## 1. Autoridade
 
@@ -48,30 +42,27 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.4 | Concluído | Tela Hoje validada e reformulada |
 | M7.19.5 | Concluído | presença companheira e gate da Fundação estabelecidos |
 | M7.19.6 | Concluído | Detalhe de Oportunidade validado e reformulado |
-| M7.19.7 | Ativo neste incremento | Cadastro pela Organização validado e reformulado |
+| M7.19.7 | Concluído | Cadastro pela Organização validado e reformulado |
+| M7.19.8 | Ativo neste incremento | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
 
 ## 3. Marco vigente
 
-### Cadastro pela Organização Validado e Reformulado (marco M7.19.7)
+### Fundação Funcional de Organizações e Coletivos (marco M7.19.8)
 
 **Critérios atendidos:**
 
 - gate de alinhamento à Fundação aplicado;
-- Organização tratada como participante institucional responsável;
-- etapa `Jornada e contribuição` posicionada antes de preço;
-- Momento Atual geral, Próximo Passo e avanço possível estruturados;
-- intenção, fundamento, evidência, experiência e resultado verificado distinguidos;
-- métricas operacionais impedidas de substituir avanço ou impacto;
-- limites e não garantias tornados obrigatórios;
-- Organização impedida de definir relevância individual;
-- etapa `Investimento e condições` refinada;
-- proteção ampliada para dados, consentimentos e evidências;
-- painel lateral orientado à coerência com a Fundação;
-- pré-visualização responsável criada;
-- envio, avaliação, ativação e apresentação preservados como estados distintos;
-- patrocínio e investimento comercial impedidos de elevar relevância;
-- wireframe para computador atualizado para a versão 0.3.0;
-- três wireframes iniciais funcionalmente validados;
+- Organização definida como participante institucional responsável;
+- Coletivo definido como formação voluntária orientada por propósito compartilhado;
+- papéis, autoridades e responsabilidades mantidos distintos;
+- relações entre Organizações e Coletivos tornadas transparentes;
+- momento institucional e coletivo definidos como leituras verificáveis e corrigíveis;
+- avanço institucional separado de vendas, publicidade e volume de atividade;
+- avanço coletivo separado de número de membros, publicações e engajamento;
+- Próximos Passos institucionais e coletivos tornados justificáveis;
+- Visão Geral da Organização estruturada em baixa fidelidade;
+- Início do Coletivo estruturado em baixa fidelidade;
+- participação, pausa, saída e contestação preservadas;
 - protótipo, design, testes e desenvolvimento preservados como não iniciados;
 - Resultados Empresariais e Engenharia de Produto preservados em pausa.
 
@@ -89,7 +80,7 @@ A Arquitetura da Experiência permanece uma frente preparatória transversal e n
 
 ## 5. Próximo ato
 
-Escolher separadamente entre estado alternativo, protótipo navegável de baixa fidelidade ou retorno à frente de Resultados Empresariais.
+Após a integração, escolher separadamente entre validar a Visão Geral da Organização, validar o Início do Coletivo, detalhar as relações entre Organizações e Coletivos ou retornar à frente de Resultados Empresariais.
 
 ## 6. Regra de transição
 
