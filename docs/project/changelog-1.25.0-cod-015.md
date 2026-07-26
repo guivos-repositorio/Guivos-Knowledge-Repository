@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.25.0
- title: Changelog 1.25.0 — COD-015
+title: Changelog 1.25.0 — COD-015
 status: historical
 version: 1.25.0
 owner: Guivos
