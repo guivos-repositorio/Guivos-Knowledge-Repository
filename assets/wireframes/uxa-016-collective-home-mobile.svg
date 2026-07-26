@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1180" viewBox="0 0 390 1180" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe de baixa fidelidade do Início do Coletivo</title>
+  <desc id="desc">Estrutura móvel com propósito, momento coletivo, atenção principal, próxima atividade, participação, avanço coletivo, recursos, governança e próximos passos.</desc>
+  <rect width="390" height="1180" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="1178" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+
+  <text x="24" y="36" font-family="Arial, sans-serif" font-size="12" fill="#555555">09:41</text>
+  <text x="24" y="72" font-family="Arial, sans-serif" font-size="16">←</text>
+  <text x="54" y="72" font-family="Arial, sans-serif" font-size="17" font-weight="700">Rede de Mentores</text>
+  <text x="348" y="72" font-family="Arial, sans-serif" font-size="18">⋯</text>
+  <text x="24" y="96" font-family="Arial, sans-serif" font-size="10" fill="#555555">COLETIVO ABERTO · MEMBRO · ABRANGÊNCIA LOCAL</text>
+
+  <rect x="20" y="114" width="350" height="86" rx="10" fill="#f2f2f2" stroke="#999999"/>
+  <text x="34" y="140" font-family="Arial, sans-serif" font-size="13" font-weight="700">Propósito compartilhado</text>
+  <text x="34" y="162" font-family="Arial, sans-serif" font-size="10">Apoiar pessoas em transição profissional por meio de</text>
+  <text x="34" y="178" font-family="Arial, sans-serif" font-size="10">mentoria, encontros e relações de confiança.</text>
+  <text x="34" y="194" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver regras, responsáveis e privacidade</text>
+
+  <rect x="20" y="216" width="350" height="118" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="34" y="242" font-family="Arial, sans-serif" font-size="13" font-weight="700">Momento coletivo em poucas palavras</text>
+  <text x="34" y="264" font-family="Arial, sans-serif" font-size="10">O encontro de sábado está confirmado. Conteúdo pronto.</text>
+  <text x="34" y="282" font-family="Arial, sans-serif" font-size="10">Ainda faltam responsáveis pela recepção e acessibilidade.</text>
+  <text x="34" y="304" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver informações utilizadas</text>
+  <text x="176" y="304" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Corrigir momento</text>
+  <text x="270" y="304" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Contestar leitura</text>
+  <text x="34" y="324" font-family="Arial, sans-serif" font-size="9" fill="#555555">Duas decisões de organização permanecem abertas.</text>
+
+  <rect x="20" y="350" width="350" height="108" rx="10" fill="#ffffff" stroke="#111111" stroke-width="1.5"/>
+  <text x="34" y="376" font-family="Arial, sans-serif" font-size="13" font-weight="700">Atenção principal</text>
+  <text x="34" y="398" font-family="Arial, sans-serif" font-size="11" font-weight="700">O encontro ainda precisa de apoio de acessibilidade.</text>
+  <text x="34" y="418" font-family="Arial, sans-serif" font-size="10">Sem essa definição, algumas pessoas poderão encontrar barreiras.</text>
+  <text x="34" y="444" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Assumir responsabilidade</text>
+  <text x="170" y="444" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Solicitar apoio</text>
+  <text x="262" y="444" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ajustar formato</text>
+
+  <text x="20" y="492" font-family="Arial, sans-serif" font-size="15" font-weight="700">Próxima atividade</text>
+  <rect x="20" y="506" width="350" height="150" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="34" y="532" font-family="Arial, sans-serif" font-size="12" font-weight="700">Encontro de preparação profissional</text>
+  <text x="34" y="554" font-family="Arial, sans-serif" font-size="10">Sábado, 9 horas · presencial · 24 participantes confirmados</text>
+  <text x="34" y="576" font-family="Arial, sans-serif" font-size="10">Finalidade: revisar currículo e simular entrevistas.</text>
+  <text x="34" y="598" font-family="Arial, sans-serif" font-size="10">Responsáveis confirmados: conteúdo e mentoria.</text>
+  <text x="34" y="620" font-family="Arial, sans-serif" font-size="10">Pendentes: recepção e apoio de acessibilidade.</text>
+  <text x="34" y="644" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver atividade e formas de participar</text>
+
+  <text x="20" y="690" font-family="Arial, sans-serif" font-size="15" font-weight="700">Participação, papéis e necessidades</text>
+  <rect x="20" y="704" width="350" height="108" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="34" y="730" font-family="Arial, sans-serif" font-size="10">Recepção · função sem responsável · cerca de 45 minutos</text>
+  <text x="34" y="752" font-family="Arial, sans-serif" font-size="10">Acessibilidade · apoio solicitado à Organização parceira</text>
+  <text x="34" y="774" font-family="Arial, sans-serif" font-size="10">Moderação · responsável confirmado</text>
+  <text x="34" y="798" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver papéis, necessidades e permissões</text>
+
+  <text x="20" y="846" font-family="Arial, sans-serif" font-size="15" font-weight="700">Avanço coletivo reconhecido</text>
+  <rect x="20" y="860" width="350" height="106" rx="10" fill="#ffffff" stroke="#aaaaaa"/>
+  <text x="34" y="886" font-family="Arial, sans-serif" font-size="10">Três encontros passaram a oferecer materiais digitais antes</text>
+  <text x="34" y="904" font-family="Arial, sans-serif" font-size="10">das atividades. Participantes relataram melhor preparação.</text>
+  <text x="34" y="926" font-family="Arial, sans-serif" font-size="9">Evidência: registros das atividades e relatos autorizados.</text>
+  <text x="34" y="950" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender evidências e limitações</text>
+
+  <text x="20" y="1000" font-family="Arial, sans-serif" font-size="15" font-weight="700">Recursos, relações e decisões</text>
+  <rect x="20" y="1014" width="350" height="80" rx="10" fill="#f7f7f7" stroke="#aaaaaa"/>
+  <text x="34" y="1040" font-family="Arial, sans-serif" font-size="10">Organização apoiadora: Instituto Horizonte · espaço e suporte</text>
+  <text x="34" y="1060" font-family="Arial, sans-serif" font-size="10">Decisão aberta: formato do próximo encontro mensal</text>
+  <text x="34" y="1082" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver recursos, relações e governança</text>
+
+  <rect x="1" y="1110" width="388" height="69" fill="#ffffff" stroke="#cccccc"/>
+  <text x="24" y="1134" font-family="Arial, sans-serif" font-size="10" font-weight="700">Próximo Passo sugerido</text>
+  <text x="24" y="1152" font-family="Arial, sans-serif" font-size="9">Organizar a recepção ou solicitar apoio antes do encontro.</text>
+  <text x="24" y="1170" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver justificativa e escolher outro caminho</text>
+</svg>
