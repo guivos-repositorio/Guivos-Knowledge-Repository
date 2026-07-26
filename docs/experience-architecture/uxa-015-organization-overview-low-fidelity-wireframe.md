@@ -14,9 +14,9 @@ depends_on:
   - UXA-011-A1
   - UXA-013
   - UXA-014
-  - UXA-017
 related:
   - UXA-016
+  - UXA-017
 normative: false
 ---
 
@@ -67,7 +67,8 @@ O cabeçalho deverá permanecer visível e apresentar:
 
 Exemplo:
 
-> **Instituto Horizonte · Unidade Central**  
+> **Instituto Horizonte · Unidade Central**
+>
 > Você está atuando como Administrador institucional. Pode revisar informações, atribuir responsabilidades e pausar oportunidades desta unidade.
 
 Ações fora do escopo deverão ser bloqueadas com explicação e caminho para solicitar autoridade legítima.
@@ -102,7 +103,8 @@ Somente uma responsabilidade material deverá receber prioridade principal.
 
 Exemplo:
 
-> **Confirmar a condição de acessibilidade do próximo encontro.**  
+> **Confirmar a condição de acessibilidade do próximo encontro.**
+>
 > Esse compromisso afeta a decisão e a participação das pessoas. A informação precisa ser confirmada antes da abertura de novas inscrições. Ainda não existe responsável atribuído.
 
 O bloco deverá mostrar:
@@ -139,8 +141,10 @@ O bloco deverá apresentar:
 
 Exemplo:
 
-> **Transição profissional**  
-> Compromisso ativo: oferecer formação, mentoria e acesso a oportunidades com custos, condições e acessibilidade informados de forma compreensível.  
+> **Transição profissional**
+>
+> Compromisso ativo: oferecer formação, mentoria e acesso a oportunidades com custos, condições e acessibilidade informados de forma compreensível.
+>
 > A adequação individual permanece com a Guivos e o participante.
 
 A Organização não receberá contexto pessoal individual sem autoridade, finalidade, necessidade e consentimento legítimos.
@@ -256,7 +260,8 @@ momento institucional compreendido
 
 Exemplo:
 
-> **Decidir a capacidade final da turma.**  
+> **Decidir a capacidade final da turma.**
+>
 > Faz sentido decidir agora porque as inscrições se aproximam do limite confirmado. As alternativas são manter oito vagas, criar lista de espera, confirmar ampliação responsável ou encerrar inscrições. Nenhuma alternativa será selecionada automaticamente.
 
 ## 13. Navegação institucional
