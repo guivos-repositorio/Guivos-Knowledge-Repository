@@ -142,11 +142,10 @@ nav:
 
   - Arquitetura da Experiência:
       - Visão Geral: experience-architecture/index.md
-      - Fundação, mapas e padrões:
+      - Fundação e padrões:
           - UXA-001 — Fundação: experience-architecture/uxa-001-foundation.md
           - UXA-003 — Mapa de Jornadas e Telas: experience-architecture/uxa-003-journeys-and-screen-map.md
           - UXA-003-A1 — Correção da Ordem Funcional: experience-architecture/uxa-003-a1-first-entry-functional-order.md
-          - UXA-004 — Oportunidades, Organizações, Coletivos e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
           - UXA-005 — Programa de Wireframes: experience-architecture/uxa-005-low-fidelity-wireframes.md
           - UXA-009 — Linguagem Clara: experience-architecture/uxa-009-plain-language-and-technical-identifiers.md
           - UXA-011 — Presença Companheira: experience-architecture/uxa-011-companion-presence-and-ecosystem-positioning.md
@@ -160,6 +159,8 @@ nav:
           - UXA-002 — Experiência Diária e Tela Hoje: experience-architecture/uxa-002-daily-experience-and-home.md
           - UXA-006 — Wireframe da Tela Hoje: experience-architecture/uxa-006-today-low-fidelity-wireframe.md
           - UXA-010 — Validação da Tela Hoje: experience-architecture/uxa-010-today-functional-validation-and-reformulation.md
+      - Explorar e Mapa — navegação recorrente:
+          - UXA-004 — Oportunidades, Organizações, Coletivos e Mapa: experience-architecture/uxa-004-opportunities-organizations-collectives-map.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
