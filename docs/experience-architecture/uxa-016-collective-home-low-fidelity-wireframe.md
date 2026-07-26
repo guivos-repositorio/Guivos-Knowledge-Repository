@@ -1,19 +1,21 @@
 ---
 id: UXA-016
 title: Wireframe de Baixa Fidelidade do Início do Coletivo
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
 depends_on:
   - UXA-003
   - UXA-004
+  - UXA-009
   - UXA-011
   - UXA-011-A1
   - UXA-014
 related:
   - UXA-015
+  - UXA-018
 normative: false
 ---
 
@@ -21,13 +23,13 @@ normative: false
 
 ## 1. Pergunta da superfície
 
-> **O que estamos construindo juntos, o que precisa de atenção e qual próximo movimento faz sentido para o propósito compartilhado?**
+> **Por que este Coletivo existe, qual é seu momento, o que precisa ser cuidado e como posso participar sem pressão ou perda de autonomia?**
 
-O Início do Coletivo é a superfície principal para membros, responsáveis e moderadores compreenderem o momento coletivo, a próxima ação, as necessidades de participação, os recursos e a governança.
+O Início do Coletivo é a superfície principal para compreender propósito, pertencimento, momento coletivo, necessidades materiais, ações compartilhadas, participação voluntária, governança, recursos, relações e avanço.
 
-A superfície não deverá funcionar como feed infinito, mural de mensagens, ranking de membros, agenda isolada ou mecanismo de pressão por participação.
+A superfície não deverá funcionar como feed infinito, mural genérico, ranking de membros, agenda isolada, sistema de cobrança ou mecanismo de pressão por participação.
 
-## 2. Wireframe
+## 2. Wireframe reformulado
 
 ![Wireframe móvel do Início do Coletivo](../assets/wireframes/uxa-016-collective-home-mobile.svg)
 
@@ -39,18 +41,18 @@ O wireframe permanece estrutural e monocromático. Ele não define identidade vi
 
 | Ordem | Bloco | Responsabilidade |
 |---:|---|---|
-| 1 | propósito, identidade e contexto | mostrar Coletivo, papel, visibilidade e regras essenciais |
-| 2 | momento coletivo | sintetizar atividades, decisões, necessidades e informações incertas |
-| 3 | atenção principal | apresentar um item material relacionado a participação, proteção ou ação |
-| 4 | próxima atividade ou ação | mostrar o movimento temporal mais relevante e seus requisitos |
-| 5 | participação, papéis e necessidades | tornar visíveis responsabilidades e formas de contribuir |
-| 6 | avanço coletivo | reconhecer mudança real com evidência e limites |
-| 7 | oportunidades, recursos e relações | conectar apoio, atividades e parceiros ao propósito |
-| 8 | decisões e governança | mostrar decisões abertas, moderação, regras e contestação |
-| 9 | Próximos Passos | justificar possibilidades sem impor ritmo |
-| 10 | navegação | permitir acesso às áreas do Coletivo |
+| 1 | propósito, identidade e participação | mostrar Coletivo, propósito, papel, visibilidade, pertencimento, disponibilidade e regras essenciais |
+| 2 | momento coletivo | explicar mudanças, necessidades, decisões, fontes e incertezas relacionadas ao propósito |
+| 3 | necessidade ou decisão que precisa de cuidado | apresentar um item material sem culpa, exposição ou pressão |
+| 4 | ação compartilhada | mostrar atividade ou ação relacionada ao propósito, com condições e alternativas |
+| 5 | formas voluntárias de participar | diferenciar convite, disponibilidade, papel aceito, recusa, pausa e saída |
+| 6 | decisões, papéis e governança | separar consulta, autoridade, decisão, execução, moderação e revisão |
+| 7 | recursos, relações e autonomia | apresentar apoios, dependências, dados, patrocínios e limites de autoridade |
+| 8 | avanço coletivo e evidências | reconhecer mudança relevante relacionada ao propósito, com limites |
+| 9 | escolhas e Próximos Passos | justificar possibilidades sem impor ritmo ou atribuir pessoas automaticamente |
+| 10 | navegação do Coletivo | permitir acesso às demais áreas do Coletivo |
 
-## 4. Propósito, identidade e contexto
+## 4. Propósito, identidade e participação
 
 O cabeçalho deverá apresentar:
 
@@ -60,21 +62,29 @@ O cabeçalho deverá apresentar:
 - visibilidade;
 - papel da pessoa autenticada;
 - estado de participação;
+- disponibilidade atual;
 - responsáveis ou moderadores;
-- seletor de contexto para Pessoa, Organização ou Coletivo;
-- acesso a regras, privacidade, ajuda e denúncia.
-
-A participação deverá ser compreensível como voluntária e reversível.
-
-## 5. Momento coletivo em poucas palavras
-
-A síntese deverá organizar o estado atual com base em informações coletivas autorizadas.
+- acesso a regras, privacidade, ajuda, denúncia, pausa e saída.
 
 Exemplo:
 
-> O próximo encontro está confirmado para sábado. A equipe de conteúdo está pronta, mas ainda faltam responsáveis pela recepção e pelo apoio de acessibilidade. Duas decisões de organização permanecem abertas.
+> **Rede de Mentores**
+>
+> Propósito: apoiar pessoas em transição profissional por meio de mentoria, encontros e relações de confiança.
+>
+> Você participa como membro e informou que ainda não decidiu se poderá colaborar nesta semana.
 
-A síntese deverá distinguir:
+Pertencimento, disponibilidade, responsabilidade e autoridade deverão permanecer distintos.
+
+## 5. Como compreendemos este momento
+
+A síntese deverá começar pelo propósito, por mudanças e necessidades materiais.
+
+Exemplo:
+
+> O encontro de sábado está confirmado e o conteúdo está preparado. A recepção ainda não possui responsável aceito, e o apoio de acessibilidade depende de confirmação. Uma decisão sobre o formato do encontro seguinte continua aberta, sem prazo para hoje.
+
+A superfície deverá distinguir:
 
 - informação confirmada pelo Coletivo;
 - atividade observada;
@@ -83,198 +93,264 @@ A síntese deverá distinguir:
 - informação desconhecida;
 - informação contestada.
 
-Controles disponíveis:
+Controles:
 
-- `Ver informações utilizadas`;
+- `Ver informações, fontes e incertezas`;
 - `Corrigir o momento do Coletivo`;
 - `Informar uma mudança`;
 - `Contestar esta leitura`.
 
-## 6. Atenção principal
+Contagens de membros, mensagens ou atividades poderão aparecer como contexto secundário, nunca como definição principal do momento.
 
-A superfície apresentará somente um item principal quando houver necessidade material.
+## 6. O que precisa de cuidado agora
+
+Somente uma necessidade ou decisão material deverá receber prioridade principal quando existir.
 
 Exemplo:
 
-> **O encontro ainda precisa de apoio de acessibilidade.**
+> **Definir uma forma acessível de recepção para o encontro.**
 >
-> Sem essa definição, algumas pessoas poderão encontrar barreiras para participar.
+> Essa necessidade afeta a participação de algumas pessoas. Ninguém aceitou a função até o momento. O Coletivo pode simplificar a recepção, solicitar apoio, ajustar o formato ou adiar a atividade.
 
-Ações possíveis:
+O bloco deverá mostrar:
 
-- assumir a responsabilidade;
-- convidar alguém;
-- solicitar apoio à Organização parceira;
-- ajustar o formato;
-- adiar a decisão;
-- contestar a prioridade.
+- relação com o propósito;
+- motivo;
+- consequência real;
+- prazo legítimo, quando houver;
+- quem pode decidir;
+- quem pode colaborar;
+- alternativas;
+- possibilidade de recusa e contestação.
 
-A ausência de voluntários não deverá ser tratada com culpa, exposição pública ou pressão emocional.
+A ausência de voluntários não deverá gerar culpa, exposição pública ou pressão emocional.
 
-## 7. Próxima atividade ou ação
+## 7. Ação compartilhada
+
+A próxima atividade continuará visível quando for material, mas será subordinada ao propósito.
 
 O bloco deverá mostrar:
 
 - título;
 - finalidade;
+- resultado esperado sem promessa;
 - data e horário;
 - modalidade ou local;
-- responsáveis;
+- condições de participação;
 - capacidade;
 - acessibilidade;
-- recursos necessários;
-- estado das inscrições;
+- responsáveis confirmados;
+- necessidades ainda abertas;
 - riscos ou alterações;
-- forma de participação.
+- alternativas em caso de insuficiência;
+- formas de participar, observar, apoiar ou não participar.
 
 Exemplo:
 
-> Encontro de preparação profissional, sábado às 9 horas. A atividade apoia participantes que desejam revisar currículo e simular entrevistas. A recepção e o apoio de acessibilidade ainda precisam de responsáveis.
+> **Encontro de preparação profissional**
+>
+> Sábado, às 9 horas. A atividade apoia pessoas que desejam revisar currículo e simular entrevistas. Conteúdo e mentoria possuem responsáveis confirmados. Recepção e acessibilidade ainda dependem de solução aceita.
 
-## 8. Participação, papéis e necessidades
+## 8. Formas voluntárias de participar
 
-A superfície deverá mostrar funções e necessidades sem expor indevidamente membros.
+A superfície deverá diferenciar:
 
-Estados possíveis:
+- membro;
+- observador;
+- participante de atividade;
+- colaborador ocasional;
+- responsável por função aceita;
+- moderador;
+- pessoa com autoridade de decisão.
 
-- papel confirmado;
-- convite pendente;
-- função sem responsável;
+Estados de disponibilidade:
+
+- disponível;
+- indisponível;
+- ainda não decidiu;
+- deseja apenas acompanhar;
 - participação pausada;
-- apoio solicitado;
-- conflito de permissão;
-- moderação necessária.
+- saiu do Coletivo.
 
-Cada necessidade deverá explicar:
+Cada convite ou necessidade deverá explicar:
 
 - finalidade;
 - esforço estimado;
 - prazo real;
-- responsabilidade;
 - informações acessadas;
-- possibilidade de recusa;
-- alternativa disponível.
+- autoridade necessária;
+- como aceitar;
+- como recusar;
+- como desistir;
+- alternativa caso ninguém aceite.
 
-## 9. Avanço coletivo reconhecido
+Nenhum papel será atribuído automaticamente. Recusa, silêncio, ausência ou pausa não reduzirão pertencimento nem reputação.
 
-Avanço somente aparecerá quando houver evidência de mudança relevante para o propósito.
+## 9. Decisões, papéis e governança
 
-Exemplo:
+A superfície deverá separar:
 
-> **Avanço reconhecido:** o Coletivo realizou três encontros acessíveis e passou a disponibilizar materiais em formato digital antes das atividades. Participantes confirmaram que a mudança facilitou a preparação.
+- consulta;
+- recomendação;
+- decisão formal;
+- execução;
+- moderação;
+- revisão e contestação.
 
-A interface deverá mostrar:
+Cada decisão deverá mostrar:
 
-- mudança observada;
-- evidência utilizada;
-- período;
-- pessoas ou fontes autorizadas;
-- limitações;
-- possibilidade de correção.
+- natureza;
+- quem pode propor;
+- quem pode contribuir;
+- quem possui autoridade para decidir;
+- prazo;
+- alternativas;
+- impactos esperados;
+- conflitos declarados;
+- fundamento e registro;
+- possibilidade de revisão;
+- responsável pela execução, quando houver aceitação.
 
-Número de membros, publicações, curtidas ou dias ativos não será apresentado isoladamente como evolução coletiva.
+Votação não será o padrão universal. Popularidade, competição, maioria simples ou volume de reações não substituirão regras legítimas de governança.
 
-## 10. Oportunidades, recursos e relações
+## 10. Recursos, relações e autonomia
 
 O bloco poderá reunir:
 
-- oportunidades criadas ou compartilhadas;
 - recursos disponíveis;
+- necessidades de apoio;
 - locais e equipamentos;
 - conteúdos e documentos;
 - Organizações apoiadoras;
 - Coletivos parceiros;
 - especialistas;
-- patrocínios;
-- necessidades de apoio.
+- patrocínios identificados;
+- dados compartilhados;
+- dependências materiais;
+- limites de autoridade;
+- possibilidade de encerramento.
 
-Toda relação deverá mostrar finalidade, responsabilidades, recursos, dados compartilhados e possibilidade de encerramento.
+Exemplo:
 
-## 11. Decisões e governança
+> O Instituto Horizonte fornece espaço e suporte administrativo. O Coletivo mantém sua governança. Nenhum dado pessoal é compartilhado fora das finalidades informadas.
 
-A superfície deverá apresentar:
+O detalhamento completo das relações entre Organizações e Coletivos permanece para a etapa 3.
 
-- decisões abertas;
-- quem pode decidir;
-- prazo;
-- opções disponíveis;
-- impactos esperados;
-- conflitos declarados;
-- registro de decisão;
-- possibilidade de revisão;
-- estado de moderação;
-- regras que afetam a participação.
+## 11. Avanço coletivo e evidências
 
-A Guivos não deverá transformar governança coletiva em votação compulsória ou disputa por popularidade.
+Avanço somente aparecerá quando houver evidência suficiente de mudança relevante para o propósito.
 
-## 12. Próximos Passos justificados
+Exemplo:
+
+> **Avanço coletivo reconhecido:** os materiais passaram a ser disponibilizados antes dos encontros e em formato digital acessível. Participantes autorizados relataram melhor preparação. A evidência ainda não permite concluir resultado profissional individual.
+
+A interface deverá mostrar:
+
+- mudança observada;
+- propósito relacionado;
+- evidência utilizada;
+- período;
+- contribuição demonstrável;
+- fontes autorizadas;
+- limitações e incertezas;
+- possibilidade de correção.
+
+Quando não houver evidência suficiente:
+
+> **Nenhum avanço coletivo foi confirmado neste período.**
+
+Número de membros, publicações, reações, mensagens, atividades ou dias ativos não será apresentado isoladamente como evolução coletiva.
+
+## 12. Escolhas e Próximos Passos
+
+A superfície deverá apresentar escolhas sem determinar quem deve agir.
 
 A explicação seguirá:
 
 ```text
-momento coletivo
+momento coletivo compreendido
 → propósito relacionado
-→ avanço já reconhecido
-→ necessidade ou possibilidade atual
-→ Próximo Passo
+→ necessidade, decisão ou possibilidade atual
+→ evidências e incertezas
+→ escolha ou Próximo Passo
 → contribuição esperada
-→ alternativas, responsáveis e incertezas
+→ alternativas e limites
+→ responsáveis somente após aceitação
 ```
 
 Exemplo:
 
-> Organizar a recepção faz sentido porque o encontro está confirmado e a chegada dos participantes ainda não possui responsável. O Coletivo pode distribuir a função, solicitar apoio, simplificar o formato ou ajustar o horário.
+> **Escolher como garantir a recepção do encontro.**
+>
+> Faz sentido resolver essa necessidade porque a atividade está confirmada e a chegada dos participantes precisa ser compreensível. O Coletivo pode simplificar o processo, convidar pessoas, solicitar apoio, ajustar o formato ou adiar. Ninguém será atribuído automaticamente.
 
 ## 13. Navegação do Coletivo
 
 A navegação inicial deverá incluir:
 
 - Início;
-- Atividades;
-- Pessoas e Papéis;
-- Oportunidades;
+- Propósito e Sobre o Coletivo;
+- Atividades e Ações;
+- Participação e Papéis;
+- Decisões e Governança;
 - Recursos;
 - Relações e Apoios;
-- Decisões e Governança;
-- Sobre o Coletivo.
+- Avanços e Aprendizados;
+- Privacidade, Proteção e Moderação.
 
 Os nomes poderão ser refinados posteriormente, mas deverão comunicar responsabilidades completas.
 
 ## 14. Estados alternativos preservados
 
-Ainda exigirão detalhamento separado:
+Exigirão detalhamento separado:
 
 - Coletivo recém-criado;
-- entrada por convite;
+- pessoa observando antes de participar;
 - solicitação de participação pendente;
-- ausência de atividade próxima;
-- conflito de governança;
-- moderação urgente;
 - participação pausada;
+- ausência de atividade próxima;
+- operação regular sem necessidade material;
+- nenhuma pessoa disponível para uma função;
+- atividade ajustada, adiada ou cancelada;
+- conflito de governança;
+- moderação ou proteção urgente;
 - saída de responsável;
-- atividade cancelada;
 - recurso insuficiente;
 - relação com Organização contestada;
 - informação sensível protegida;
+- nenhuma evidência de avanço confirmada;
 - baixa conectividade;
-- acessibilidade ampliada.
+- acessibilidade ampliada;
+- encerramento do Coletivo.
 
 ## 15. Critérios de aceite
 
-A superfície poderá avançar quando:
+A superfície foi considerada funcionalmente válida porque:
 
-1. o propósito compartilhado permanecer visível;
-2. o momento coletivo for compreensível e corrigível;
-3. a atenção principal possuir relação material com participação, proteção ou ação;
-4. a próxima atividade apresentar finalidade e requisitos completos;
-5. papéis e necessidades preservarem voluntariedade e privacidade;
-6. avanço coletivo utilizar evidência de mudança relevante;
-7. recursos, oportunidades e relações permanecerem transparentes;
-8. decisões e governança forem revisáveis e contestáveis;
-9. Próximos Passos possuírem justificativa e alternativas;
-10. a superfície não parecer feed ou rede social genérica;
-11. o comportamento permanecer alinhado à Fundação da Guivos.
+1. propósito e pertencimento antecedem atividade;
+2. o momento coletivo é compreensível, verificável e corrigível;
+3. uma necessidade material recebe cuidado sem pressão;
+4. a ação compartilhada permanece subordinada ao propósito;
+5. pertencimento, disponibilidade, responsabilidade e autoridade são distintos;
+6. papéis dependem de aceitação explícita;
+7. ausência, recusa, pausa e saída permanecem legítimas;
+8. governança separa consulta, decisão e execução;
+9. relações de apoio preservam autonomia;
+10. avanço utiliza evidência de mudança relevante;
+11. escolhas possuem justificativa e alternativas;
+12. a superfície não parece feed, ranking, agenda ou sistema de cobrança;
+13. o comportamento permanece alinhado à Fundação da Guivos.
 
-## 16. Limites
+## 16. Situação
 
-Esta versão não cria protótipo navegável, design visual, testes de usabilidade, componentes técnicos, sistema de votação final, modelo jurídico, regras universais de moderação ou desenvolvimento.
+O Início do Coletivo está **validado funcionalmente e reformulado em baixa fidelidade**.
+
+Ele continua sendo hipótese estrutural e ainda não constitui protótipo navegável, design visual ou implementação.
+
+## 17. Limites
+
+Esta versão não detalha integralmente as relações entre Organizações e Coletivos, não cria protótipo navegável, design visual final, testes de usabilidade, componentes técnicos, sistema universal de votação, modelo jurídico, regras universais de moderação ou desenvolvimento.
+
+## 18. Próxima etapa da ordem autorizada
+
+Após a integração deste incremento, a próxima etapa será o detalhamento funcional das **relações entre Organizações e Coletivos**, em incremento separado.
