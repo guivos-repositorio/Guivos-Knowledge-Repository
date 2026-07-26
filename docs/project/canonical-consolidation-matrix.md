@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.14.0
+version: 2.15.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-021
   - GKR-CANON-MATRIX-UXA-020
   - GKR-CANON-MATRIX-COD-018
   - GKR-CANON-MATRIX-UXA-019
@@ -30,8 +31,10 @@ related:
   - UXA-018
   - UXA-019
   - UXA-020
+  - UXA-021
   - M7.20
   - M7.21
+  - M7.22
 normative: false
 ---
 
@@ -52,6 +55,7 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Pausar | trabalho permanece válido, sem execução adicional até nova autorização |
 | Descoberta | hipótese e arquitetura inicial em desenvolvimento, sem implementação |
 | Wireframe | hipótese visual estrutural para validação, sem design final ou implementação |
+| Validar funcionalmente | confirmar responsabilidade, hierarquia, ações, estados e limites após reformulação |
 | Somente histórico | elemento permanece como evidência histórica |
 | Pendente | depende de evidência ou autoridade competente |
 
@@ -72,10 +76,11 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Resultados canônicos | Pendente | nenhum criado |
 | AQS-O01 | Pendente | aplicação prática não iniciada |
 | Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
-| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-020 |
-| Programa de Wireframes | Wireframe | programa ampliado com HOME textual |
-| Página Inicial da Guivos | Criar contrato funcional | impacto, início da jornada, ecossistema, contexto e transição governados pela UXA-020 |
-| Wireframe gráfico da HOME | Pendente | wireframe textual criado; arquivo gráfico não iniciado |
+| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-021 |
+| Programa de Wireframes | Wireframe | programa com Home pública textual e demais superfícies estruturais |
+| Página Inicial pública | Validar funcionalmente | validada e reformulada por UXA-021 |
+| Início protegido da jornada | Manter contrato funcional | estabelecido por UXA-020; validação detalhada pendente |
+| Arquivo gráfico da Home | Pendente | não iniciado |
 | Tela Hoje | Refinar em wireframe | validada, reformulada e reposicionada como entrada recorrente |
 | Detalhe de Oportunidade | Refinar em wireframe | validado e reformulado |
 | Cadastro pela Organização | Refinar em wireframe | validado e reformulado |
@@ -84,17 +89,31 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Linguagem Clara | Manter | nomes completos antes de identificadores técnicos |
 | Presença Companheira | Manter como princípio transversal | acompanha sem controlar decisões |
 | Gate de alinhamento à Fundação | Manter obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios |
-| Primeira entrada pessoal | Refinar | HOME antecede relato, compreensão e Tela Hoje |
+| Primeira entrada pessoal | Refinar | Home pública antecede início protegido, compreensão e Tela Hoje |
 | Início da jornada | Manter voluntário | pessoa pode explorar o ecossistema sem iniciar |
-| Relato do Momento Atual | Permitir multimodalmente | texto, voz, arquivos, perguntas progressivas e fontes autorizadas |
+| Coleta na Home pública | Proibir | texto pessoal, voz, arquivos e fontes externas permanecem fora da superfície pública |
+| Relato do Momento Atual | Permitir multimodalmente no ambiente protegido | texto, voz, arquivos, perguntas progressivas e fontes autorizadas |
 | Compartilhamento de contexto | Minimizar e tornar progressivo | somente informações justificáveis e controláveis |
 | Compreensão inicial | Tornar revisável | confirmado, observado, externo autorizado, inferido, desconhecido e contestado distintos |
 | Gate de personalização | Exigir | indicação pessoal somente após base suficiente, revisão e autorização |
 | Exploração sem personalização | Manter disponível | conteúdo geral, institucional, editorial ou buscado explicitamente |
-| Soluções do ecossistema na HOME | Apresentar com identidade própria | Journey, Mall, Travel, Business, Media, Intelligence e Ads |
-| Publicidade e relevância na HOME | Separar | posição comercial não constitui relevância pessoal |
-| Voz | Governar | gravação e transcrição revisáveis, corrigíveis e removíveis |
-| Arquivos | Governar | finalidade, extração, retenção, informação de terceiros e exclusão explícitas |
+| Descrição da Guivos no primeiro campo visual | Exigir | propósito acompanhado por explicação concreta do ecossistema |
+| Ação principal da Home | Tornar contextual | iniciar, continuar, revisar ou acessar a Tela Hoje conforme o estado |
+| Caminhos de entrada | Separar | jornada pessoal, exploração geral e caminho institucional |
+| Ecossistema na Home | Organizar por finalidade | soluções não aparecem como lista plana de mesma prioridade |
+| Jornada e possibilidades para pessoas | Agrupar | Journey, Mall, Travel e Media |
+| Organizações, programas e Coletivos | Agrupar | Business |
+| Compreensão e transparência | Agrupar | Intelligence |
+| Publicidade e patrocínio institucional | Agrupar | Ads |
+| Guivos Mall | Manter nome oficial | shopping do ecossistema |
+| Guivos Ads | Manter nome oficial | solução de anúncios, publicidade e patrocínios |
+| Shopping Guivos como produto | Rejeitar | expressão apenas descritiva do Guivos Mall |
+| Anúncios da Guivos como produto | Rejeitar | expressão apenas descritiva do Guivos Ads |
+| Possibilidades gerais na Home | Limitar e identificar | até três itens, sem preenchimento artificial e sem personalização simulada |
+| Publicidade e relevância na Home | Separar | posição comercial não constitui relevância pessoal |
+| Home para pessoa autenticada | Manter institucional | não expõe Momento Atual, alertas ou recomendações pessoais |
+| Voz | Governar no ambiente protegido | gravação e transcrição revisáveis, corrigíveis e removíveis |
+| Arquivos | Governar no ambiente protegido | finalidade, extração, retenção, informação de terceiros e exclusão explícitas |
 | Transição para Tela Hoje | Explicar | pessoa compreende uso do contexto e mantém controles |
 | Tela Hoje recorrente | Manter | organiza mudança, atenção, continuidade e possibilidades contextuais |
 | Compreensão do momento | Manter verificável e corrigível | fatos, observações, fontes, inferências e desconhecidos distintos |
@@ -103,7 +122,7 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Organização no ecossistema | Refinar | participante institucional responsável, não apenas anunciante |
 | Coletivo no ecossistema | Refinar | formação voluntária orientada por propósito compartilhado |
 | Organização e Coletivo | Manter distintos | identidade, autoridade, responsabilidade e governança não se confundem |
-| Relação entre Organização e Coletivo | Criar contrato funcional | finalidade, consentimento bilateral, compromissos, recursos, dados, autonomia e saída governados pela UXA-019 |
+| Relação entre Organização e Coletivo | Manter contrato funcional | finalidade, consentimento bilateral, compromissos, recursos, dados, autonomia e saída governados pela UXA-019 |
 | Propriedade ou subordinação implícita | Proibir | relação não transfere direção, pertencimento ou representação irrestrita |
 | Natureza da relação | Tornar explícita | apoio, patrocínio, serviço, operação, marca e dados permanecem distintos |
 | Consentimento da relação | Exigir bilateralmente | ativação depende das autoridades legítimas dos dois participantes |
@@ -170,23 +189,21 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Continuidade econômica sustentável | candidato empresarial combinado | Reformular aceito; recebeu BUS-CAND-010 por COD-018; nova avaliação pendente |
 | Capacidade de reinvestimento responsável | candidato empresarial fundido | Fundir em BUS-CAND-005 aceito por COD-018 |
 
-## 5. Consolidação da Página Inicial da Guivos
+## 5. Consolidação da Página Inicial pública
 
 | Elemento | Decisão consolidada |
 |---|---|
-| primeira superfície pessoal | criar HOME anterior à Tela Hoje |
-| papel institucional | apresentar propósito, impacto e amplitude do ecossistema |
-| ação principal | convidar voluntariamente a iniciar a jornada |
-| exploração geral | permitir sem início da jornada |
-| relato do Momento Atual | permitir texto, voz, arquivos e perguntas progressivas |
-| compreensão inicial | apresentar antes da personalização |
-| controles | confirmar, corrigir, limitar, remover, rejeitar ou recomeçar |
-| base insuficiente | declarar ausência de compreensão segura |
-| indicação pessoal | bloquear antes do gate |
-| soluções do ecossistema | apresentar com origem e finalidade próprias |
-| Tela Hoje | reposicionar como entrada recorrente após confirmação |
-| navegação recorrente | manter Hoje, Jornada, Explorar, Mapa e Eu |
-| acesso posterior à HOME | manter por marca ou menu institucional |
+| responsabilidade | superfície pública e institucional, sem coleta de relato |
+| primeira compreensão | explicar o que é a Guivos, os caminhos e a ausência de coleta pública |
+| abertura | preservar propósito com descrição concreta do ecossistema |
+| ação principal | adaptar ao estado real da pessoa |
+| exploração geral | permitir sem início da jornada ou personalização |
+| caminhos | separar pessoal, geral e institucional |
+| ecossistema | organizar por finalidade |
+| possibilidades gerais | limitar, identificar e não preencher artificialmente |
+| publicidade | identificar e separar de relevância pessoal |
+| pessoa autenticada | manter Home institucional sem expor contexto sensível |
+| Tela Hoje | manter como entrada recorrente após confirmação |
 | arquivo gráfico | manter pendente |
 | implementação | não iniciar |
 
@@ -194,62 +211,41 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 
 | Elemento | Decisão consolidada |
 |---|---|
-| `BUS-CAND-010` | manter `Merged` |
-| recomendação da COEM | aceitar `Merge into BUS-CAND-005` |
+| `BUS-CAND-010` | manter fundido |
 | candidato-alvo | `BUS-CAND-005 — Continuidade econômica sustentável` |
-| estado do alvo | manter `Under Validation` |
+| estado do alvo | manter em validação |
 | financiamento interno | preservar como opção legítima, não obrigação |
 | financiamento externo | preservar como alternativa legítima |
 | adicionalidade | exigir como justificativa material da alocação |
 | riscos, obrigações e custo de oportunidade | tornar explícitos |
-| alternativas de uso ou financiamento | comparar antes da decisão |
 | reinvestimento proposto, aprovado, realizado e eficaz | manter como estados distintos |
-| avaliação da alocação | exigir análise anterior e aprendizado posterior |
 | retenção automática e sobreinvestimento | bloquear |
-| gasto ou percentual reinvestido | não constituem prova suficiente |
 | aprovação do candidato-alvo | manter pendente |
-| código canônico BO-### | não criar |
+| código canônico | não criar |
 
-A fusão elimina a duplicidade de candidatura. Ela não transforma reinvestimento em obrigação automática, não impõe financiamento exclusivamente interno e não presume que maior gasto produz maior valor.
-
-## 7. Resultado do detalhamento das relações
-
-A decisão consolidada da UXA-019 permanece:
-
-- aplica o gate obrigatório da Fundação;
-- mantém Organização e Coletivo como participantes distintos;
-- impede propriedade, subordinação e representação irrestrita;
-- exige finalidade e escopo explícitos;
-- exige consentimento bilateral das autoridades legítimas;
-- torna compromissos, recursos, dados, patrocínio e influência transparentes;
-- preserva autonomia, proteção, acessibilidade e não retaliação;
-- governa ciclo de vida, alterações materiais e revisão periódica;
-- reconhece avanço somente com mudança relacionada à finalidade;
-- mantém correção, contestação, suspensão e encerramento disponíveis;
-- governa dados, recursos, marcas e responsabilidades após o término;
-- não inicia contrato jurídico, protótipo, design, teste ou desenvolvimento.
-
-## 8. Documentos complementares vigentes
+## 7. Documentos complementares vigentes
 
 Os detalhamentos vigentes incluem:
 
-- `Matriz de Consolidação Canônica — Adendo da Página Inicial da Guivos e Início da Jornada`;
-- `Matriz de Consolidação Canônica — Adendo do Contrato Funcional das Relações entre Organizações e Coletivos`;
-- `Matriz de Consolidação Canônica — Adendo COD-018`;
-- `Página Inicial da Guivos e Início da Jornada`;
-- `Human Decision Resolution — BUS-CAND-010`.
+- Adendo da Matriz de Consolidação Canônica — Validação da Página Inicial Pública;
+- Adendo da Página Inicial da Guivos e Início da Jornada;
+- Adendo do Contrato Funcional das Relações entre Organizações e Coletivos;
+- Adendo COD-018;
+- Página Inicial da Guivos e Início da Jornada;
+- Validação Funcional e Reformulação da Página Inicial Pública;
+- resolução da decisão sobre BUS-CAND-010.
 
-## 9. Ordem autorizada concluída
+## 8. Ordem autorizada concluída
 
 1. Visão Geral da Organização — validada e integrada;
 2. Início do Coletivo — validado e integrado;
 3. relações entre Organizações e Coletivos — detalhadas e integradas;
 4. Resultados Empresariais e capacidade de reinvestimento responsável — decisão concluída e integrada;
-5. Solicitação de Integração número 107 — concluída;
-6. Página Inicial da Guivos e início da jornada — estabelecidos neste incremento.
+5. Página Inicial pública e início protegido — estabelecidos e integrados;
+6. Página Inicial pública — validada e reformulada neste incremento.
 
-## 10. Próximos atos governados
+## 9. Próximos atos governados
 
-A validação funcional da HOME, o arquivo gráfico, o detalhamento de voz e arquivos, a reaplicação dos testes dos Outcomes e qualquer etapa posterior dependem de autorização específica.
+O arquivo gráfico da Home, a validação do início protegido, o detalhamento de voz e arquivos, a reaplicação dos testes dos Resultados e qualquer etapa posterior dependem de autorização específica.
 
 Nenhuma aprovação, código canônico, AQS-O01, Capacidade Empresarial, protótipo ou atividade de Engenharia de Produto é iniciada automaticamente.
