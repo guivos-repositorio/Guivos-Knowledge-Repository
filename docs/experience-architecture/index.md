@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 related:
@@ -24,10 +24,13 @@ related:
   - UXA-011-A1
   - UXA-012
   - UXA-013
+  - UXA-014
+  - UXA-015
+  - UXA-016
 normative: false
 ---
 
-# Arquitetura da Experiência da Guivos (identificador UXA-000)
+# Arquitetura da Experiência da Guivos
 
 ## 1. Finalidade
 
@@ -43,6 +46,8 @@ Ela governa:
 - evidência de avanço relevante;
 - explicabilidade do Próximo Passo;
 - contribuição responsável das Organizações;
+- propósito, participação e governança dos Coletivos;
+- relações entre Pessoas, Organizações e Coletivos;
 - gate de alinhamento à Fundação da Guivos;
 - coerência entre os produtos do ecossistema;
 - critérios para wireframes, protótipos e testes posteriores.
@@ -69,17 +74,23 @@ Esta frente não inicia Engenharia de Produto, não define tecnologia ou código
 | [Compreensão do Momento, Evidência de Avanço e Explicabilidade](uxa-011-a1-moment-progress-and-next-step-explainability.md) | UXA-011-A1 | critérios para contexto, mudança e justificativa |
 | [Validação Funcional do Detalhe de Oportunidade](uxa-012-opportunity-detail-functional-validation-and-reformulation.md) | UXA-012 | decisão humana e reformulação da oportunidade |
 | [Validação Funcional do Cadastro pela Organização](uxa-013-organization-opportunity-registration-functional-validation-and-reformulation.md) | UXA-013 | papel institucional, contribuição, evidências, condições e ciclo da oportunidade |
+| [Fundação Funcional das Experiências de Organizações e Coletivos](uxa-014-organizations-and-collectives-functional-foundation.md) | UXA-014 | papéis, diferenças, relações, avanço e Próximos Passos institucionais e coletivos |
+| [Wireframe da Visão Geral da Organização](uxa-015-organization-overview-low-fidelity-wireframe.md) | UXA-015 | momento institucional, responsabilidade, capacidade, relações e avanço |
+| [Wireframe do Início do Coletivo](uxa-016-collective-home-low-fidelity-wireframe.md) | UXA-016 | propósito, participação, atividade, governança, recursos e avanço coletivo |
 
 ## 4. Estado atual
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-013 |
+| Arquitetura da Experiência | descoberta ativa e integrada | UXA-000 a UXA-016 |
 | Resultados Empresariais | pausados antes da capacidade de reinvestimento responsável | BUS-CAND-010 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 | Tela Hoje | validada e reformulada | UXA-006, UXA-010 e UXA-011 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007, UXA-011-A1 e UXA-012 |
 | Cadastro pela Organização | validado e reformulado segundo a Fundação | UXA-008 e UXA-013 |
+| Fundação de Organizações e Coletivos | estabelecida neste incremento | UXA-014 |
+| Visão Geral da Organização | wireframe estrutural inicial criado | UXA-015 |
+| Início do Coletivo | wireframe estrutural inicial criado | UXA-016 |
 | Protótipo navegável | não iniciado | — |
 | Design visual | não iniciado | — |
 | Validação de usabilidade | não iniciada | — |
@@ -104,77 +115,80 @@ Toda superfície que apresente evolução, prioridade, oportunidade ou recomenda
 
 Métricas de engajamento não poderão substituir evidência de mudança real.
 
-## 7. Resultado do Detalhe de Oportunidade
+## 7. Organizações e Coletivos
 
-A superfície apresenta, antes da conversão:
+### Organização
 
-```text
-identidade e origem
-→ compreensão do momento
-→ avanço reconhecido
-→ justificativa do Próximo Passo
-→ investimento e condições
-→ informações para decidir
-→ condições para participar
-→ quem oferece
-→ relação comercial
-→ ações contextuais
-```
+A Organização é participante institucional com autoridade, responsabilidades, capacidade, recursos e obrigação de transparência. Sua experiência deverá mostrar como apoia jornadas humanas, quais compromissos possui e quais evidências sustentam sua atuação.
 
-## 8. Resultado do Cadastro pela Organização
+### Coletivo
 
-As onze etapas passam a ser:
+O Coletivo é uma formação voluntária orientada por propósito compartilhado, participação, ação concreta, governança e relações de apoio. Sua experiência deverá preservar entrada, pausa, saída, contestação, privacidade e ausência de coerção.
+
+Organizações e Coletivos poderão se relacionar, mas finalidade, autoridade, recursos, dados, patrocínio e responsabilidades deverão permanecer visíveis.
+
+## 8. Visão Geral da Organização
+
+A ordem funcional inicial é:
 
 ```text
-Natureza da oportunidade
-→ Jornada e contribuição
-→ Responsabilidade institucional
-→ Disponibilidade
-→ Modalidade e acesso
-→ Investimento e condições
-→ Condições para participar
-→ Proteção, dados e evidências
-→ Relação comercial
-→ Prévia e coerência
-→ Declaração e envio
+identidade e contexto
+→ momento institucional
+→ atenção principal
+→ jornadas e públicos apoiados
+→ oportunidades e programas
+→ avanço institucional
+→ capacidade, riscos e responsabilidades
+→ relações
+→ Próximos Passos justificados
+→ navegação institucional
 ```
 
-Decisões principais:
+A superfície não deverá parecer painel de vendas ou catálogo de anúncios.
 
-- a Organização é participante institucional responsável, não apenas anunciante;
-- contribuição para jornadas antecede preço e conversão;
-- Momento Atual geral, Próximo Passo e avanço possível são estruturados;
-- intenção, evidência, experiência e resultado verificado permanecem distintos;
-- métricas operacionais não substituem impacto;
-- limites e não garantias são obrigatórios;
-- a Organização não define relevância individual;
-- o painel lateral verifica coerência com a Fundação;
-- ativação não garante apresentação contextual;
-- patrocínio não eleva relevância funcional.
+## 9. Início do Coletivo
 
-## 9. Presença companheira institucional
+A ordem funcional inicial é:
 
-A comunicação com Organizações deverá ser objetiva, responsável e colaborativa. Ela deverá explicar por que cada informação é necessária, como será apresentada e quais responsabilidades permanecem com a Organização e com a Guivos.
+```text
+propósito, identidade e contexto
+→ momento coletivo
+→ atenção principal
+→ próxima atividade ou ação
+→ participação, papéis e necessidades
+→ avanço coletivo
+→ oportunidades, recursos e relações
+→ decisões e governança
+→ Próximos Passos justificados
+→ navegação do Coletivo
+```
 
-Linguagem de conversão genérica, promessa de resultado ou venda de relevância deverá ser rejeitada.
+A superfície não deverá parecer feed, mural genérico ou ranking de membros.
 
-## 10. Wireframes atuais
+## 10. Presença companheira institucional e coletiva
+
+A comunicação deverá organizar contexto, explicar prioridades, reconhecer avanços com evidências e justificar Próximos Passos sem controlar decisões.
+
+Organizações não serão tratadas apenas como anunciantes. Coletivos não serão tratados apenas como grupos sociais. Em ambos os casos, a utilidade deverá permanecer relacionada ao propósito da Guivos e às jornadas humanas apoiadas.
+
+## 11. Wireframes atuais
 
 | Superfície | Canal | Situação |
 |---|---|---|
 | Tela Hoje | aplicativo móvel | reformulada após validação funcional |
 | Detalhe de Oportunidade | aplicativo móvel | reformulado com momento, avanço e Próximo Passo explicável |
 | Cadastro pela Organização | web para computador | reformulado com contribuição para jornadas e responsabilidade institucional |
+| Visão Geral da Organização | web para computador | wireframe estrutural inicial criado |
+| Início do Coletivo | aplicativo móvel | wireframe estrutural inicial criado |
 
 Os artefatos continuam sendo hipóteses estruturais, sem design visual ou implementação.
 
-## 11. Próximo ponto de decisão
+## 12. Próximo ponto de decisão
 
-Após a integração, selecionar separadamente entre:
+Após a integração, validar funcionalmente, em incrementos separados:
 
-1. detalhar um estado alternativo prioritário da Tela Hoje;
-2. detalhar um estado alternativo do Detalhe de Oportunidade;
-3. detalhar um estado alternativo do Cadastro pela Organização;
-4. preparar um protótipo navegável de baixa fidelidade, mediante nova autorização.
+1. a Visão Geral da Organização;
+2. o Início do Coletivo;
+3. as relações entre Organizações e Coletivos.
 
 Protótipo, design visual, testes e desenvolvimento permanecem não iniciados.
