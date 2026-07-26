@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -21,6 +21,7 @@ related:
   - UXA-022
   - UXA-023
   - UXA-024
+  - UXA-025
   - PAS-001
 normative: false
 ---
@@ -53,10 +54,11 @@ A correção formal está registrada em [Correção da Ordem Funcional da Primei
 4. **Validação do Início Protegido da Jornada** — UXA-023;
 5. **Wireframe da Tela Hoje** — UXA-006, depois da compreensão inicial suficiente e autorizada;
 6. **Wireframe do Mapa de Oportunidades** — UXA-024, como superfície recorrente própria;
-7. **Wireframe do Detalhe de Oportunidade** — UXA-007;
-8. **Wireframe do Cadastro pela Organização** — UXA-008.
+7. **Validação Funcional do Mapa de Oportunidades** — UXA-025;
+8. **Wireframe do Detalhe de Oportunidade** — UXA-007;
+9. **Wireframe do Cadastro pela Organização** — UXA-008.
 
-O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo detalhe de uma oportunidade.
+O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo Detalhe de Oportunidade.
 
 ## 4. Natureza dos artefatos
 
@@ -81,7 +83,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A diferença entre Home, início protegido, Tela Hoje, Explorar e Mapa é clara?
 - A pessoa reconhece que a Home pública não coleta relatos pessoais?
 - O participante compreende o que merece atenção na Tela Hoje?
-- A alternância entre lista e mapa representa a mesma descoberta?
+- A alternância entre Lista e Mapa representa a mesma descoberta?
 - Preço, condições, elegibilidade, origem e relação comercial estão claros?
 - Ações principais e alternativas são distinguíveis?
 
@@ -106,7 +108,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 
 - A Home conduz naturalmente ao início protegido, à compreensão e à Tela Hoje?
 - A Tela Hoje conduz ao Mapa por um recorte compacto, sem incorporar o mapa completo?
-- Explorar e Mapa permanecem sincronizados?
+- Explorar, Lista e Mapa permanecem sincronizados?
 - O Mapa conduz ao Detalhe de Oportunidade preservando contexto e condições?
 - O cadastro organizacional produz informações suficientes para cartão, detalhe, mapa, busca e comparação?
 
@@ -171,26 +173,30 @@ Antes da compreensão inicial confirmada, as soluções poderão apresentar some
 | [Wireframe da Página Inicial Pública](uxa-022-public-home-low-fidelity-wireframe.md) | UXA-022 | Home pública | [arquivo vetorial](../assets/wireframes/uxa-022-public-home-desktop.svg) |
 | [Validação do Início Protegido](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) | UXA-023 | início protegido | contrato validado; wireframe pendente |
 | [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | Tela Hoje | [arquivo vetorial](../assets/wireframes/uxa-006-hoje-mobile.svg) |
-| [Wireframe do Mapa de Oportunidades](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa recorrente | [arquivo vetorial](../assets/wireframes/uxa-024-opportunity-map-mobile.svg) |
+| [Wireframe reformulado do Mapa de Oportunidades](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa recorrente | [arquivo vetorial](../assets/wireframes/uxa-024-opportunity-map-mobile.svg) |
+| [Validação Funcional do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md) | UXA-025 | Mapa recorrente | decisão e contratos da reformulação |
 | [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | [arquivo vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
 | [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | [arquivo vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
 ## 10. Resultado do Mapa de Oportunidades
 
-O wireframe gráfico do Mapa materializa:
+O wireframe reformulado e funcionalmente validado materializa:
 
-- contexto de atuação explícito;
+- `Agindo como` explícito;
 - pesquisa territorial;
-- alternância entre mapa e lista;
-- filtros compactos;
+- Mapa e Lista com estado compartilhado;
+- filtros compactos e progressivos;
+- ação `Pesquisar nesta região`;
 - mapa esquemático sem geografia real;
 - camadas de oportunidades, Organizações, Coletivos e eventos;
 - agrupamentos e pontos selecionáveis;
 - localização aproximada declarada;
+- acesso `Ajustar localização e privacidade`;
 - cartão resumido de oportunidade;
 - preço, distância, data, vagas, acessibilidade e origem;
-- explicação de relevância e relação comercial;
-- ações de detalhe, salvamento e rota;
+- explicação `Por que estou vendo isto?`;
+- relação comercial identificada;
+- ações de detalhe, salvamento e rota contextual;
 - navegação recorrente com Mapa selecionado.
 
 O arquivo representa conteúdo ilustrativo e não cria localidades, ofertas, coordenadas ou dados reais.
@@ -214,13 +220,12 @@ Este programa não:
 
 Os próximos pontos deverão ser autorizados separadamente e poderão:
 
-1. validar funcionalmente o wireframe do Mapa de Oportunidades;
-2. criar estados alternativos do Mapa;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido;
-5. criar a referência móvel da Home;
-6. validar a compreensão inicial e seus controles;
-7. detalhar a primeira Tela Hoje após a transição;
-8. retomar independentemente os testes dos Resultados Empresariais.
+1. criar estados alternativos do Mapa, começando por Lista, ausência de resultados ou localização desativada;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido;
+4. criar a referência móvel da Home;
+5. validar a compreensão inicial e seus controles;
+6. detalhar a primeira Tela Hoje após a transição;
+7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.
