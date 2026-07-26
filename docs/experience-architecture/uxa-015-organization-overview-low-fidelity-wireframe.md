@@ -1,18 +1,20 @@
 ---
 id: UXA-015
 title: Wireframe de Baixa Fidelidade da Visão Geral da Organização
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-005
 depends_on:
   - UXA-003
   - UXA-004
+  - UXA-009
   - UXA-011
   - UXA-011-A1
   - UXA-013
   - UXA-014
+  - UXA-017
 related:
   - UXA-016
 normative: false
@@ -22,13 +24,13 @@ normative: false
 
 ## 1. Pergunta da superfície
 
-> **O que está acontecendo na Organização, o que exige responsabilidade agora e como sua atuação está apoiando jornadas humanas?**
+> **Em nome de qual Organização estou atuando, qual é o momento institucional, qual responsabilidade exige decisão e como a Organização está cumprindo seus compromissos com jornadas humanas?**
 
-A Visão Geral da Organização é a superfície inicial do contexto institucional. Ela organiza responsabilidades, jornadas apoiadas, oportunidades em movimento, capacidade, riscos e Próximos Passos.
+A Visão Geral da Organização é a superfície inicial do contexto institucional. Ela organiza autoridade, momento, compromissos, capacidade, responsabilidades, movimentos operacionais, evidências, relações e decisões.
 
-Ela não deverá funcionar como painel de vendas, página de publicidade, relatório financeiro isolado ou catálogo de oportunidades.
+Ela não deverá funcionar como painel de vendas, página publicitária, catálogo de oportunidades, relatório financeiro isolado ou painel genérico de indicadores.
 
-## 2. Wireframe
+## 2. Wireframe reformulado
 
 ![Wireframe para computador da Visão Geral da Organização](../assets/wireframes/uxa-015-organization-overview-desktop.svg)
 
@@ -40,96 +42,144 @@ O wireframe permanece estrutural e monocromático. Ele não define identidade vi
 
 | Ordem | Bloco | Responsabilidade |
 |---:|---|---|
-| 1 | identidade e contexto | mostrar Organização, unidade, papel representado e estado de verificação |
-| 2 | momento institucional | sintetizar fatos, mudanças, limitações e informações ainda desconhecidas |
-| 3 | atenção principal | apresentar um único item material e explicar por que exige ação |
-| 4 | jornadas e públicos apoiados | mostrar finalidades humanas e públicos autorizados sem expor perfis pessoais |
-| 5 | oportunidades e programas | apresentar movimentos institucionais com estado, capacidade e responsabilidade |
-| 6 | avanço institucional | reconhecer mudança relevante com evidência e limitações |
-| 7 | capacidade, riscos e responsabilidades | mostrar disponibilidade, obrigações, conformidade e qualidade da informação |
-| 8 | relações | apresentar Coletivos, parceiros e apoios com finalidade e autoridade |
-| 9 | Próximos Passos | justificar ações institucionais e preservar alternativas |
-| 10 | navegação | permitir acesso às áreas da Organização |
+| 1 | autoridade representada e contexto | mostrar Organização, unidade, papel, escopo de autoridade e verificação |
+| 2 | momento institucional | explicar mudanças, compromissos afetados, fontes e incertezas |
+| 3 | responsabilidade principal agora | apresentar uma responsabilidade material, motivo, consequência, responsável e alternativas |
+| 4 | jornadas apoiadas e compromissos ativos | mostrar finalidade humana, compromisso assumido, limites e evidências sem expor perfis individuais |
+| 5 | capacidade e condições para cumprir | relacionar recursos, disponibilidade, acessibilidade, suporte e limitações aos compromissos |
+| 6 | movimentos institucionais | apresentar oportunidades e programas por estado, responsabilidade e decisão necessária |
+| 7 | avanço institucional e evidências | reconhecer mudança relevante relacionada a compromissos, com evidência e limitações |
+| 8 | relações, dependências e transparência | apresentar Coletivos, Organizações, recursos, dados, patrocínio e autonomia |
+| 9 | decisões e Próximos Passos | justificar decisões e preservar alternativas legítimas |
+| 10 | navegação institucional | permitir acesso às demais áreas da Organização |
 
-## 4. Identidade e contexto de atuação
+## 4. Autoridade representada e contexto
 
-O cabeçalho deverá apresentar:
+O cabeçalho deverá permanecer visível e apresentar:
 
 - nome da Organização;
-- unidade ou filial representada;
+- unidade ou filial;
 - papel da pessoa autenticada;
+- escopo de autoridade;
 - estado de verificação;
-- estado geral da operação;
-- seletor de contexto para Pessoa, Organização ou Coletivo;
+- contexto selecionado;
 - acesso a permissões, ajuda e contestação.
-
-A interface deverá impedir que alguém atue em nome de uma Organização ou unidade sem autoridade visível.
-
-## 5. Momento institucional em poucas palavras
-
-A síntese deverá explicar o estado atual com linguagem verificável.
 
 Exemplo:
 
-> A Organização possui três oportunidades ativas, duas em avaliação e uma próxima do limite de capacidade. A informação de acessibilidade de uma atividade ainda precisa ser confirmada.
+> **Instituto Horizonte · Unidade Central**  
+> Você está atuando como Administrador institucional. Pode revisar informações, atribuir responsabilidades e pausar oportunidades desta unidade.
 
-A síntese deverá distinguir:
+Ações fora do escopo deverão ser bloqueadas com explicação e caminho para solicitar autoridade legítima.
 
-- informações confirmadas;
-- observações operacionais;
-- fontes externas autorizadas;
-- inferências da Guivos;
-- informações desconhecidas;
-- informações contestadas.
+## 5. Como compreendemos este momento
 
-Controles disponíveis:
+A síntese deverá começar por mudanças e compromissos materiais, não por contagens.
 
-- `Ver informações utilizadas`;
+Exemplo:
+
+> A formação de Inglês profissional se aproxima da capacidade declarada. A condição de acessibilidade do próximo encontro ainda não foi confirmada e afeta o compromisso de participação sem barreiras. Duas oportunidades continuam em avaliação, sem decisão necessária hoje.
+
+A superfície deverá distinguir:
+
+- informação confirmada pela Organização;
+- observação operacional;
+- fonte externa autorizada;
+- inferência da Guivos;
+- informação desconhecida;
+- informação contestada.
+
+Controles:
+
+- `Ver informações, fontes e incertezas`;
 - `Corrigir o contexto institucional`;
 - `Informar uma mudança`;
 - `Contestar esta leitura`.
 
-## 6. Atenção principal
+## 6. Responsabilidade principal agora
 
-A superfície apresentará somente um item principal de atenção quando houver prioridade material.
+Somente uma responsabilidade material deverá receber prioridade principal.
 
 Exemplo:
 
-> **Uma condição de acessibilidade precisa ser confirmada.**
->
-> Essa informação afeta a decisão dos participantes e a oportunidade não deverá avançar sem clareza suficiente.
+> **Confirmar a condição de acessibilidade do próximo encontro.**  
+> Esse compromisso afeta a decisão e a participação das pessoas. A informação precisa ser confirmada antes da abertura de novas inscrições. Ainda não existe responsável atribuído.
+
+O bloco deverá mostrar:
+
+- compromisso relacionado;
+- motivo;
+- prazo, risco ou consequência real;
+- responsável ou ausência de responsável;
+- ação principal;
+- alternativas;
+- possibilidade de contestação.
 
 Ações possíveis:
 
 - revisar agora;
 - atribuir responsável;
-- definir prazo;
-- solicitar apoio;
-- pausar a oportunidade;
+- solicitar apoio especializado;
+- limitar disponibilidade;
+- pausar a atividade;
+- definir prazo legítimo;
 - contestar a prioridade.
 
-Urgência somente poderá ser utilizada quando houver prazo, risco ou obrigação real.
-
-## 7. Jornadas e públicos apoiados
+## 7. Jornadas apoiadas e compromissos ativos
 
 O bloco deverá apresentar:
 
-- jornadas humanas apoiadas;
-- públicos autorizados;
-- objetivos institucionais relacionados;
-- necessidades gerais atendidas;
+- jornada ou necessidade geral apoiada;
+- compromisso institucional;
+- forma de contribuição;
+- grupo geral autorizado;
 - limites de atuação;
-- informações ainda não verificadas.
-
-A Organização não receberá contexto pessoal individual sem autoridade e finalidade legítimas.
+- evidências disponíveis;
+- informações ainda não confirmadas.
 
 Exemplo:
 
-> A Organização apoia pessoas em transição profissional por meio de formação, mentoria e acesso a oportunidades. A adequação individual continua sendo avaliada pela Guivos e pelo participante.
+> **Transição profissional**  
+> Compromisso ativo: oferecer formação, mentoria e acesso a oportunidades com custos, condições e acessibilidade informados de forma compreensível.  
+> A adequação individual permanece com a Guivos e o participante.
 
-## 8. Oportunidades e programas em movimento
+A Organização não receberá contexto pessoal individual sem autoridade, finalidade, necessidade e consentimento legítimos.
 
-A superfície deverá priorizar estado e responsabilidade, não volume.
+## 8. Capacidade e condições para cumprir
+
+A capacidade deverá ser relacionada ao compromisso, evitando percentuais isolados.
+
+Deverá apresentar:
+
+- capacidade declarada;
+- capacidade confirmada;
+- utilização conhecida;
+- recursos disponíveis;
+- suporte;
+- acessibilidade;
+- qualidade e validade da informação;
+- limitações;
+- responsável;
+- decisão necessária.
+
+Exemplo:
+
+> A turma possui capacidade declarada para 50 participantes e 42 inscrições confirmadas. A ampliação não está confirmada. A Organização precisa decidir entre manter oito vagas, criar lista de espera ou encerrar inscrições.
+
+## 9. Movimentos institucionais
+
+Oportunidades e programas permanecerão visíveis, mas subordinados aos compromissos e responsabilidades.
+
+Cada item deverá mostrar:
+
+- título e natureza;
+- jornada ou compromisso relacionado;
+- estado;
+- capacidade ou condição material;
+- responsável institucional;
+- alteração recente;
+- decisão necessária;
+- relação comercial, quando aplicável.
 
 Estados resumidos:
 
@@ -139,89 +189,75 @@ Estados resumidos:
 - próxima do limite de capacidade;
 - pausada;
 - expirando;
-- informação contestada.
+- informação contestada;
+- encerrada.
 
-Cada item deverá mostrar:
+Volume, vendas, conversão e publicidade não definirão a prioridade funcional.
 
-- título e tipo;
-- jornada ou público relacionado;
-- estado;
-- capacidade ou disponibilidade;
-- responsável institucional;
-- alteração material recente;
-- Próximo Passo necessário;
-- relação comercial, quando aplicável.
+## 10. Avanço institucional e evidências
 
-## 9. Avanço institucional reconhecido
-
-Avanço somente aparecerá quando houver evidência suficiente de mudança relevante.
+Avanço somente aparecerá quando houver evidência suficiente de mudança relevante relacionada a um compromisso.
 
 Exemplo:
 
-> **Avanço reconhecido:** a Organização passou a informar custo total e condições de cancelamento em todas as oportunidades ativas. A mudança reduziu dúvidas recorrentes registradas no processo de avaliação.
+> **Avanço institucional reconhecido:** todas as oportunidades ativas passaram a informar custo total, cancelamento e recursos de acessibilidade. A mudança melhorou a clareza das condições para participantes e reduziu correções solicitadas durante a avaliação.
 
 A interface deverá mostrar:
 
 - mudança observada;
+- compromisso relacionado;
 - evidência utilizada;
 - período;
-- limitações;
-- quem confirmou;
+- contribuição demonstrável;
+- limitações e incertezas;
+- fonte ou confirmação;
 - possibilidade de correção.
 
-Aumento de vendas, visualizações, anúncios ou seguidores não será apresentado isoladamente como evolução institucional.
+Quando não houver evidência suficiente:
 
-## 10. Capacidade, riscos e responsabilidades
+> **Nenhum avanço institucional foi confirmado neste período.**
 
-O bloco deverá apresentar somente informações materiais:
+Aumento de vendas, visualizações, anúncios, seguidores ou quantidade de oportunidades não será apresentado isoladamente como evolução institucional.
 
-- capacidade declarada e utilizada;
-- prazos institucionais;
-- qualidade e validade das informações;
-- itens de conformidade;
-- riscos operacionais;
-- acessibilidade;
-- proteção de dados;
-- suporte e atendimento;
-- responsabilidades sem titular;
-- alterações relevantes.
-
-A informação deverá favorecer ação e prevenção, sem criar painel excessivo de indicadores.
-
-## 11. Relações com Coletivos e Organizações
+## 11. Relações, dependências e transparência
 
 Cada relação deverá mostrar:
 
 - participante relacionado;
 - finalidade;
 - natureza do vínculo;
+- autonomia e autoridade;
 - responsabilidades;
 - recursos ou apoio envolvidos;
-- compartilhamento de dados;
+- dados compartilhados;
 - relação comercial ou patrocínio;
-- estado e possibilidade de encerramento.
+- dependências materiais;
+- estado, revisão e encerramento.
 
 Exemplo:
 
-> O Coletivo Rede de Mentores apoia a execução de encontros mensais. A Organização fornece espaço e suporte administrativo. Nenhum dado pessoal é compartilhado fora das finalidades informadas.
+> O Coletivo Rede de Mentores conduz encontros mensais com autonomia de governança. A Organização fornece espaço e suporte administrativo. Nenhum dado pessoal é compartilhado fora das finalidades informadas.
 
-## 12. Próximos Passos justificados
+## 12. Decisões e Próximos Passos
+
+A superfície deverá distinguir decisão institucional de tarefa operacional.
 
 A explicação seguirá:
 
 ```text
-momento institucional
-→ responsabilidade relacionada
-→ avanço já reconhecido
-→ necessidade ou risco atual
-→ Próximo Passo
+momento institucional compreendido
+→ compromisso ou responsabilidade afetada
+→ evidência e incertezas
+→ decisão necessária
+→ alternativas legítimas
 → contribuição esperada
-→ alternativas e responsáveis
+→ responsável e prazo material
 ```
 
 Exemplo:
 
-> Revisar a capacidade da turma faz sentido porque as inscrições se aproximam do limite informado. A Organização pode ampliar a capacidade, criar lista de espera, encerrar inscrições ou ajustar a data.
+> **Decidir a capacidade final da turma.**  
+> Faz sentido decidir agora porque as inscrições se aproximam do limite confirmado. As alternativas são manter oito vagas, criar lista de espera, confirmar ampliação responsável ou encerrar inscrições. Nenhuma alternativa será selecionada automaticamente.
 
 ## 13. Navegação institucional
 
@@ -229,46 +265,61 @@ A navegação inicial deverá incluir:
 
 - Visão Geral;
 - Oportunidades;
-- Programas e Públicos;
-- Coletivos e Parcerias;
+- Programas e Jornadas Apoiadas;
+- Coletivos e Relações;
 - Resultados e Evidências;
-- Equipe e Papéis;
-- Organização;
-- Privacidade e Conformidade.
+- Equipe, Papéis e Autoridades;
+- Organização e Unidades;
+- Privacidade, Proteção e Conformidade.
 
 Os nomes poderão ser refinados posteriormente, mas deverão comunicar responsabilidades completas.
 
 ## 14. Estados alternativos preservados
 
-Ainda exigirão detalhamento separado:
+Exigirão detalhamento separado:
 
+- operação regular sem responsabilidade urgente;
 - Organização não verificada;
+- autoridade insuficiente;
 - unidade sem responsável;
-- nenhuma oportunidade ativa;
-- capacidade esgotada;
-- informação institucional contestada;
+- contexto incompleto;
+- informação contestada ou conflitante;
+- nenhuma oportunidade ou programa ativo;
+- capacidade limitada ou esgotada;
+- obrigação material vencida;
 - risco elevado;
-- obrigação legal pendente;
+- nenhuma evidência de avanço confirmada;
+- relação institucional suspensa;
 - falha de integração;
 - baixa conectividade;
-- acesso restrito por papel;
-- operação em vários países e moedas.
+- operação em vários países, idiomas e moedas.
 
 ## 15. Critérios de aceite
 
-A superfície poderá avançar quando:
+A superfície foi considerada funcionalmente válida porque:
 
-1. o momento institucional for compreensível e corrigível;
-2. a atenção principal possuir motivo material;
-3. jornadas apoiadas aparecerem antes de métricas comerciais;
-4. oportunidades forem apresentadas por estado e responsabilidade;
-5. avanço institucional utilizar evidência de mudança relevante;
-6. capacidade, risco e conformidade favorecerem ação concreta;
-7. relações com Coletivos e Organizações forem transparentes;
-8. Próximos Passos possuírem justificativa e alternativas;
-9. a superfície não parecer painel comercial genérico;
-10. o comportamento permanecer alinhado à Fundação da Guivos.
+1. autoridade e contexto antecedem ação;
+2. o momento institucional é compreensível, verificável e corrigível;
+3. uma responsabilidade material recebe prioridade;
+4. jornadas e compromissos antecedem volume operacional;
+5. capacidade é relacionada ao compromisso que precisa ser cumprido;
+6. oportunidades e programas permanecem subordinados;
+7. avanço utiliza evidência de mudança relevante;
+8. relações e dependências são transparentes;
+9. decisões possuem justificativa e alternativas;
+10. a superfície não parece painel comercial genérico;
+11. o comportamento permanece alinhado à Fundação da Guivos.
 
-## 16. Limites
+## 16. Situação
 
-Esta versão não cria protótipo navegável, design visual, testes de usabilidade, componentes técnicos, indicadores finais, preços, planos comerciais ou desenvolvimento.
+A Visão Geral da Organização está **validada funcionalmente e reformulada em baixa fidelidade**.
+
+Ela continua sendo hipótese estrutural e ainda não constitui protótipo navegável, design visual ou implementação.
+
+## 17. Limites
+
+Esta versão não cria protótipo navegável, design visual final, testes de usabilidade, componentes técnicos, indicadores empresariais finais, preços, planos comerciais, validação jurídica ou desenvolvimento.
+
+## 18. Próxima etapa da ordem autorizada
+
+Após a integração deste incremento, a próxima etapa será a validação funcional do **Início do Coletivo**, em incremento separado.
