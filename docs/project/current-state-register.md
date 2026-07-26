@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.46.1
+version: 1.47.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -33,11 +33,13 @@ related:
   - UXA-018
   - UXA-019
   - GEM-CLOSURE-REVIEW-001
+  - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - COD-017
-  - ROADMAP-11.93.0
-  - M7.19.11
+  - BA-STR-002-COD-SUB-018
+  - COD-018
+  - ROADMAP-11.94.0
+  - M7.20
 normative: true
 ---
 
@@ -52,13 +54,15 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | relações entre Organizações e Coletivos detalhadas funcionalmente e integradas | M7.19.11 |
+| Marco atual | décima oitava decisão humana sobre Resultados Empresariais registrada | M7.20 |
 | Remediação do repositório | concluída; validação mecânica aprovada | R1–R6 |
 | Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
-| Revisão da Arquitetura de Negócios | ativa, mas pausada antes da capacidade de reinvestimento responsável | A2-R03; BUS-CAND-010 |
-| Resultados Empresariais | 17 de 18 decisões humanas; retomada aguardando autorização | BA-STR-002 |
-| Capacidade de reinvestimento responsável | em validação; decisão não antecipada | BUS-CAND-010 |
-| Frente de execução | nenhuma nova etapa iniciada; transição governada aguardando autorização para a etapa 4 | M7.19.11; BUS-CAND-010 |
+| Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída e próximo ato aguardando autorização | A2-R03; BA-STR-002 |
+| Resultados Empresariais | 18 de 18 decisões humanas registradas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
+| Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
+| Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | BUS-CAND-010 → BUS-CAND-005; COD-018 |
+| Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
+| Frente de execução | nenhuma etapa posterior iniciada; reaplicação dos testes aguarda autorização | M7.20 |
 | Arquitetura da Experiência | cinco superfícies validadas e contrato funcional das relações estabelecido | UXA-000 a UXA-019 |
 | Presença companheira | princípio transversal estabelecido | UXA-011 |
 | Compreensão do momento | leitura verificável, corrigível e baseada em sinais autorizados | UXA-011-A1 |
@@ -75,22 +79,54 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | Design visual | não iniciado | — |
 | Testes de usabilidade | não iniciados | — |
 | Resultados canônicos | nenhum criado | 0 |
+| AQS-O01 | aplicação prática não iniciada | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Guivos Journey | especificação arquitetural ativa; nove capacidades concluídas | PAS-001 1.0.0 |
 | Modelo Econômico da Guivos | arquitetura documental inicial concluída; validações reais pendentes | GEM-001 a GEM-010 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho; execução em 0% | W0-01 |
 | Validação de Mercado | trilha paralela preservada; execução pendente | — |
 
-## 3. Pausa governada dos Resultados Empresariais
+## 3. Resultado da décima oitava decisão humana
 
-A pausa antes da décima oitava decisão permanece vigente.
+O Fundador da Guivos aceitou a recomendação:
 
-- **Capacidade de reinvestimento responsável** permanece em validação;
-- a décima oitava submissão não existe;
-- a décima oitava decisão não existe;
-- nenhuma incorporação foi executada;
-- nenhum Resultado foi canonicalizado;
-- a retomada permanece como quarta etapa da ordem autorizada e aguarda nova autorização.
+```text
+A — Aceitar Merge into BUS-CAND-005
+```
+
+A decisão foi registrada como `COD-018`.
+
+### 3.1 Efeito sobre BUS-CAND-010
+
+`BUS-CAND-010 — Capacidade de reinvestimento responsável` passa de `Under Validation` para `Merged`, mantendo sua formulação, as evidências e o histórico.
+
+### 3.2 Efeito sobre BUS-CAND-005
+
+`BUS-CAND-005 — Continuidade econômica sustentável` permanece em `Under Validation` e recebe como dimensão interpretativa:
+
+- opções legítimas de financiamento interno e externo;
+- financiamento de renovação condicionado por adicionalidade e justificativa material;
+- avaliação de riscos, obrigações protegidas, alternativas e custo de oportunidade;
+- distinção entre reinvestimento proposto, aprovado, realizado e eficaz;
+- avaliação anterior à alocação e aprendizado posterior à execução;
+- bloqueio de retenção automática, sobreinvestimento e uso de volume de gasto como prova de responsabilidade.
+
+A fusão não equivale a aprovação do candidato de destino.
+
+### 3.3 Estado formal dos Resultados Empresariais
+
+```text
+Human decisions: 18 of 18 — completed
+Under Validation: 9
+Merged: 3
+Rejected: 6
+Approved Outcomes: 0
+Canonical EO/BO codes: 0
+Reapplication of COEM: not started
+AQS-O01: not started
+Canonical consolidation: not started
+Business Capabilities: not started
+```
 
 ## 4. Autoridades da Arquitetura da Experiência
 
@@ -201,37 +237,49 @@ Permanecem reconhecidos:
 Guivos Journey — concluído funcionalmente e publicado
 → Modelo Econômico — arquitetura documental inicial concluída
 → remediação do repositório — concluída
-→ Resultados Empresariais — 17 de 18 decisões
-→ pausa antes da capacidade de reinvestimento responsável
-→ Arquitetura da Experiência — integrada
-→ três superfícies iniciais — validadas e reformuladas
-→ fundação funcional de Organizações e Coletivos — estabelecida
-→ Visão Geral da Organização — validada e reformulada
-→ Início do Coletivo — validado e reformulado
-→ relações entre Organizações e Coletivos — detalhadas funcionalmente e integradas
-→ retorno aos Resultados Empresariais — próximo somente após nova autorização
+→ Resultados Empresariais — 18 decisões humanas concluídas
+→ BUS-CAND-010 fundido em BUS-CAND-005
+→ formulações revisadas e combinadas — aguardando reaplicação dos quatro testes
+→ AQS-O01 — pendente
+→ catálogos canônicos — pendentes
+→ Capacidades Empresariais — não iniciadas
 ```
 
-## 10. Ordem autorizada
+A Arquitetura da Experiência permanece integrada como frente preparatória transversal e não inicia formalmente a Revisão da Arquitetura de Produtos.
 
-A ordem definida pelo usuário permanece:
+## 10. Ordem autorizada concluída
+
+A ordem definida pelo usuário foi executada em incrementos separados:
 
 1. validar funcionalmente a Visão Geral da Organização — concluído e integrado;
 2. validar funcionalmente o Início do Coletivo — concluído e integrado;
 3. detalhar as relações entre Organizações e Coletivos — concluído e integrado;
-4. retornar aos Resultados Empresariais e à capacidade de reinvestimento responsável — próximo incremento após nova autorização.
+4. retornar aos Resultados Empresariais e decidir sobre Capacidade de reinvestimento responsável — concluído neste incremento.
 
-A integração da terceira etapa foi concluída e não iniciou automaticamente a quarta etapa.
+A conclusão da quarta etapa não inicia automaticamente a próxima fase do BA-STR-002.
 
-## 11. Limites
+## 11. Próximo ato governado
+
+Após integração deste incremento e nova autorização, poderão ser reaplicados os quatro testes às formulações revisadas e combinadas.
+
+Somente depois dessa reaplicação poderão ser tratados, em atos separados:
+
+1. ajuste prático do AQS-O01;
+2. consolidação dos catálogos canônicos;
+3. matriz de sustentação entre Ecosystem Outcomes e Business Outcomes;
+4. preparação da Arquitetura de Capacidades Empresariais.
+
+## 12. Limites
 
 Este estado não autoriza:
 
-- iniciar a etapa 4 sem nova autorização operacional;
-- criar a décima oitava submissão ou decisão sobre Resultados Empresariais;
-- incorporar a capacidade de reinvestimento responsável;
-- concluir Resultados Empresariais;
-- criar Resultados canônicos;
+- iniciar automaticamente a reaplicação da COEM;
+- aprovar ou canonicalizar `BUS-CAND-005` ou qualquer outro candidato;
+- criar códigos canônicos `EO-###` ou `BO-###`;
+- tratar reinvestimento como obrigação automática;
+- exigir financiamento exclusivamente interno;
+- usar receita, margem, caixa, retenção, gasto ou percentual reinvestido isolados como prova de continuidade ou responsabilidade;
+- iniciar AQS-O01, catálogos canônicos ou matriz de sustentação;
 - iniciar Capacidades Empresariais;
 - tratar o contrato funcional como instrumento jurídico;
 - criar sistema técnico de assinatura;

@@ -2,9 +2,9 @@
 id: BA-STR-002-CODR-001
 title: Candidate Outcome Decision Register
 status: active
-version: 0.33.0
+version: 0.34.0
 owner: Guivos Business Architecture
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 parent: BA-STR-002
 depends_on:
   - BA-STR-002-COR-001
@@ -35,6 +35,7 @@ related:
   - BA-STR-002-COD-SUB-015
   - BA-STR-002-COD-SUB-016
   - BA-STR-002-COD-SUB-017
+  - BA-STR-002-COD-SUB-018
   - COD-001
   - COD-002
   - COD-003
@@ -52,9 +53,10 @@ related:
   - COD-015
   - COD-016
   - COD-017
-  - M7.19
+  - COD-018
+  - M7.20
 normative: false
-execution_status: in-progress
+execution_status: completed
 ---
 
 # BA-STR-002-CODR-001 — Candidate Outcome Decision Register
@@ -78,14 +80,17 @@ Uma decisão registrada aqui não cria automaticamente um Outcome canônico. Ref
 ## 2. Estado formal
 
 ```text
-Decision register: in progress — resumed by R6
+Decision register: completed
 Candidate dispositions in scope: 18
-Human decisions recorded: 17
+Human decisions recorded: 18
 Decision submissions awaiting human response: 0
 Accepted Reformulate dispositions: 9
-Accepted Merge dispositions: 2
+Accepted Merge dispositions: 3
 Accepted Reject dispositions: 6
-Candidate state changes: 8
+Candidate state changes: 9
+Under Validation: 9
+Merged: 3
+Rejected: 6
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
 AQS-O01: not started
@@ -280,7 +285,7 @@ Confiança institucional permanece avaliação relacional associada. A decisão 
 
 > A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente.
 
-Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` permanece separado e aguarda sua própria decisão humana.
+Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras. `BUS-CAND-010` foi posteriormente fundido neste candidato por `COD-018`; a formulação combinada permanece em `Under Validation` e exige nova aplicação dos quatro testes.
 
 ### COD-014 — BUS-CAND-006
 
@@ -346,6 +351,47 @@ A rejeição alcança somente a candidatura de saúde das relações de parceria
 
 A rejeição alcança somente a candidatura de coerência global com adequação contextual como Outcome permanente. O conteúdo permanece como princípio arquitetural e critério governado para internacionalização, localização, desenho de capacidades e avaliação de mudanças. A decisão não impõe padronização global, não proíbe adaptação local e não exige internacionalização.
 
+### COD-018 — BUS-CAND-010
+
+| Campo | Registro |
+|---|---|
+| Nome | Capacidade de reinvestimento responsável |
+| Recomendação | `Merge into BUS-CAND-005` |
+| Decisão humana | Aceitar `Merge into BUS-CAND-005` |
+| Autoridade | Fundador da Guivos |
+| Data | 26/07/2026 |
+| Estado anterior | `Under Validation` |
+| Estado resultante | `Merged` |
+| Alvo | `BUS-CAND-005 — Continuidade econômica sustentável` |
+| Estado do alvo | `Under Validation` |
+| Código canônico | não criado |
+| AQS-O01 | não iniciado |
+
+#### Formulação originalmente avaliada
+
+> A Guivos mantém condições para reinvestir valor legitimamente capturado no fortalecimento de capacidades, conhecimento e valor entregue ao ecossistema.
+
+#### Resultado da COEM preservado
+
+| Teste | Resultado | Fundamentação resumida |
+|---|---|---|
+| Essential | Partial | renovação pode depender de diferentes fontes e formas de financiamento; reinvestimento interno não é condição universal nem intrinsecamente responsável |
+| Decision | Pass | incapacidade de financiar renovação ou alocação destrutiva exige revisão estratégica |
+| Replacement | Pass | a necessidade de financiar renovação permanece mesmo com substituição dos meios atuais |
+| Outcome Quality | Partial | o conceito descreve predominantemente condição financeira e mecanismo governado de alocação |
+
+#### Conteúdo incorporado ao alvo
+
+- opções legítimas de financiamento interno e externo;
+- financiamento da renovação condicionado por adicionalidade e justificativa material;
+- avaliação de riscos, obrigações protegidas, custo de oportunidade e alternativas;
+- distinção entre reinvestimento proposto, aprovado, realizado e eficaz;
+- avaliação anterior à alocação e aprendizado posterior à execução;
+- bloqueio de retenção automática, sobreinvestimento e projetos de baixo valor legítimo;
+- proibição de tratar maior gasto, retenção ou percentual reinvestido como prova automática de responsabilidade, continuidade ou eficácia.
+
+A fusão não aprova `BUS-CAND-005`. Sua formulação combinada permanece em `Under Validation` e deverá retornar aos quatro testes da COEM.
+
 ## 5. Matriz cumulativa de decisões
 
 | Candidato | Recomendação da COEM | Decisão humana | Estado decisório |
@@ -362,30 +408,30 @@ A rejeição alcança somente a candidatura de coerência global com adequação
 | BUS-CAND-002 | Merge into BUS-CAND-003 | Aceitar `Merge into BUS-CAND-003` | `Merged` |
 | BUS-CAND-003 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
 | BUS-CAND-004 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
-| BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | nova COEM pendente |
+| BUS-CAND-005 | Reformulate | Aceitar `Reformulate` | formulação combinada pendente de nova COEM |
 | BUS-CAND-006 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-007 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-008 | Reject | Aceitar `Reject` | `Rejected` |
 | BUS-CAND-009 | Reject | Aceitar `Reject` | `Rejected` |
-| BUS-CAND-010 | Merge into BUS-CAND-005 | — | Pending human decision |
+| BUS-CAND-010 | Merge into BUS-CAND-005 | Aceitar `Merge into BUS-CAND-005` | `Merged` |
 
-## 6. Gate do incremento
+## 6. Gate de conclusão
 
 | Critério | Resultado |
 |---|---|
-| manifestação humana explícita | Pass |
-| recomendação original preservada | Pass |
-| `COD-017` registrado | Pass |
-| `BUS-CAND-009` alterado para `Rejected` | Pass |
-| princípio arquitetural e critério governado preservados | Pass |
-| padronização global não imposta | Pass |
-| adaptação local não proibida | Pass |
-| tradução e presença local bloqueadas como prova suficiente | Pass |
-| distribuição 10/2/6 registrada | Pass |
+| manifestação humana explícita para cada candidato | 18/18 — Pass |
+| recomendações originais preservadas | Pass |
+| `COD-018` registrado | Pass |
+| `BUS-CAND-010` alterado para `Merged` | Pass |
+| alvo `BUS-CAND-005` identificado e mantido em validação | Pass |
+| formulações e evidências preservadas | Pass |
+| distribuição 9/3/6 registrada | Pass |
 | promoção canônica bloqueada | Pass |
 | AQS-O01 não antecipado | Pass |
 | Product Engineering preservado em pausa | Pass |
 
 ## 7. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
+Após integração deste incremento e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas, ajustar o AQS-O01 e preparar a futura consolidação governada dos catálogos.
+
+A conclusão deste registro não inicia automaticamente nenhuma dessas etapas.

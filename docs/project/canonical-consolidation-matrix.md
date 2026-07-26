@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.12.0
+version: 2.13.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-COD-018
   - GKR-CANON-MATRIX-UXA-019
   - GKR-CANON-MATRIX-UXA-018
   - GKR-CANON-MATRIX-UXA-017
@@ -16,9 +17,11 @@ related:
   - GKR-CANON-MATRIX-UXA-012
   - GKR-CANON-MATRIX-UXA-011
   - GKR-R6-RESUMPTION-001
+  - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - COD-017
+  - BA-STR-002-COD-SUB-018
+  - COD-018
   - UXA-000
   - UXA-014
   - UXA-015
@@ -26,7 +29,7 @@ related:
   - UXA-017
   - UXA-018
   - UXA-019
-  - M7.19.11
+  - M7.20
 normative: false
 ---
 
@@ -60,10 +63,13 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Engenharia de Produto | Manter pausada | antes da primeira unidade de trabalho; execução 0% |
 | Modelo Econômico da Guivos | Manter documentariamente concluído | GEM-001 a GEM-010; validação real pendente |
 | Remediação do repositório | Manter concluída | R1–R6 concluídos |
-| Revisão da Arquitetura de Negócios | Manter ativa e pausar operacionalmente | após a decisão humana 17 e antes da capacidade de reinvestimento responsável |
-| Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões |
-| Capacidade de reinvestimento responsável | Manter pendente | em validação |
-| Décima oitava submissão e decisão | Pendente | não criadas |
+| Revisão da Arquitetura de Negócios | Manter ativa | fase de decisões humanas concluída; próximo ato aguardando autorização |
+| Resultados Empresariais | Manter em validação | 18 de 18 decisões; 9 em validação, 3 fundidos e 6 rejeitados |
+| Capacidade de reinvestimento responsável | Unificar | fundida em Continuidade Econômica Sustentável por COD-018 |
+| Décima oitava submissão e decisão | Manter concluída | BA-STR-002-COD-SUB-018 e COD-018 |
+| Resultados canônicos | Pendente | nenhum criado |
+| AQS-O01 | Pendente | aplicação prática não iniciada |
+| Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
 | Arquitetura da Experiência | Descoberta | documentos ativos até UXA-019 |
 | Programa de Wireframes | Wireframe | programa inicial preservado |
 | Tela Hoje | Refinar em wireframe | validada e reformulada |
@@ -128,8 +134,6 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Protótipo navegável | Pendente | não iniciado |
 | Design visual | Pendente | não iniciado |
 | Testes de usabilidade | Pendente | não iniciados |
-| Resultados canônicos | Pendente | nenhum criado |
-| Capacidades Empresariais | Pendente | posteriores aos Resultados Empresariais |
 | Validação de Mercado | Manter em paralelo | execução própria pendente |
 | Validador mecânico | Manter | workflow permanente |
 
@@ -139,19 +143,41 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 |---|---|---|
 | Candidato de resultado do ecossistema 1 | formulação em revisão | Reformular aceito; nova avaliação pendente |
 | Candidato de resultado do ecossistema 2 | formulação em revisão | Reformular aceito; nova avaliação pendente |
-| Candidato combinado do ecossistema | formulação combinada | pendente |
+| Candidato combinado do ecossistema | formulação combinada | nova avaliação pendente |
 | Experiência como resultado | hipótese rejeitada | conteúdo preservado na Jornada |
 | Saúde relacional | candidato do ecossistema | Reformular aceito |
 | Participação inclusiva, digna e efetiva | candidato do ecossistema | Reformular aceito |
 | Participação protegida, justa e contestável | candidato do ecossistema | Reformular aceito |
-| Valor sustentável | candidato empresarial | Reformular aceito |
+| Habilitação consistente de valor | candidato empresarial combinado | Reformular aceito; recebeu BUS-CAND-002; nova avaliação pendente |
 | Legitimidade institucional sustentada | candidato empresarial | Reformular aceito |
-| Continuidade econômica sustentável | candidato empresarial | Reformular aceito |
-| Capacidade de reinvestimento responsável | candidato empresarial | Em validação; decisão pendente |
+| Continuidade econômica sustentável | candidato empresarial combinado | Reformular aceito; recebeu BUS-CAND-010 por COD-018; nova avaliação pendente |
+| Capacidade de reinvestimento responsável | candidato empresarial fundido | Fundir em BUS-CAND-005 aceito por COD-018 |
 
-## 5. Resultado do detalhamento das relações
+## 5. Consolidação da decisão COD-018
 
-A decisão consolidada:
+| Elemento | Decisão consolidada |
+|---|---|
+| `BUS-CAND-010` | alterar para `Merged` |
+| recomendação da COEM | aceitar `Merge into BUS-CAND-005` |
+| candidato-alvo | `BUS-CAND-005 — Continuidade econômica sustentável` |
+| estado do alvo | manter `Under Validation` |
+| financiamento interno | preservar como opção legítima, não obrigação |
+| financiamento externo | preservar como alternativa legítima |
+| adicionalidade | exigir como justificativa material da alocação |
+| riscos, obrigações e custo de oportunidade | tornar explícitos |
+| alternativas de uso ou financiamento | comparar antes da decisão |
+| reinvestimento proposto, aprovado, realizado e eficaz | manter como estados distintos |
+| avaliação da alocação | exigir análise anterior e aprendizado posterior |
+| retenção automática e sobreinvestimento | bloquear |
+| gasto ou percentual reinvestido | não constituem prova suficiente |
+| aprovação do candidato-alvo | manter pendente |
+| código canônico BO-### | não criar |
+
+A fusão elimina a duplicidade de candidatura. Ela não transforma reinvestimento em obrigação automática, não impõe financiamento exclusivamente interno e não presume que maior gasto produz maior valor.
+
+## 6. Resultado do detalhamento das relações
+
+A decisão consolidada da UXA-019 permanece:
 
 - aplica o gate obrigatório da Fundação;
 - mantém Organização e Coletivo como participantes distintos;
@@ -164,16 +190,25 @@ A decisão consolidada:
 - reconhece avanço somente com mudança relacionada à finalidade;
 - mantém correção, contestação, suspensão e encerramento disponíveis;
 - governa dados, recursos, marcas e responsabilidades após o término;
-- não inicia contrato jurídico, protótipo, design, teste ou desenvolvimento;
-- não inicia a etapa 4.
+- não inicia contrato jurídico, protótipo, design, teste ou desenvolvimento.
 
-## 6. Documento complementar vigente
+## 7. Documentos complementares vigentes
 
-O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo do Contrato Funcional das Relações entre Organizações e Coletivos`.
+Os detalhamentos vigentes são:
 
-## 7. Ordem autorizada
+- `Matriz de Consolidação Canônica — Adendo do Contrato Funcional das Relações entre Organizações e Coletivos`;
+- `Matriz de Consolidação Canônica — Adendo COD-018`;
+- `Human Decision Resolution — BUS-CAND-010`.
+
+## 8. Ordem autorizada concluída
 
 1. Visão Geral da Organização — validada e integrada;
 2. Início do Coletivo — validado e integrado;
-3. relações entre Organizações e Coletivos — detalhadas neste incremento;
-4. Resultados Empresariais e capacidade de reinvestimento responsável — próximo incremento após integração e nova autorização.
+3. relações entre Organizações e Coletivos — detalhadas e integradas;
+4. Resultados Empresariais e capacidade de reinvestimento responsável — decisão concluída neste incremento.
+
+## 9. Próximo ato governado
+
+Após integração e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas.
+
+Nenhuma aprovação, código canônico, AQS-O01, Capacidade Empresarial ou atividade de Engenharia de Produto é iniciada automaticamente.

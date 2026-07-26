@@ -2,12 +2,18 @@
 id: GBA-000
 title: Guivos Business Architecture
 status: validated
-version: 0.15.0
+version: 0.16.0
 owner: Guivos Business Architecture
-last_updated: 2026-07-24
+last_updated: 2026-07-26
 related_adrs:
   - ADR-003
   - ADR-004
+related:
+  - BA-STR-002
+  - BA-STR-002-COR-001
+  - BA-STR-002-CODR-001
+  - COD-018
+  - M7.20
 ---
 
 # Guivos Business Architecture
@@ -25,17 +31,27 @@ Ela integra a Guivos Enterprise Architecture e não substitui a Foundation, a Ec
 
 ## Unidade ativa
 
-- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.19.0; COEM concluída; ciclo decisório iniciado; catálogo canônico pendente.
-- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos em `Under Validation`; uma disposição aceita e dezessete pendentes de decisão.
-- [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — execução concluída; gate `Ready for COEM`.
-- [BA-STR-002-EOVB-001 — Batch 01, Agency and Evolution](strategy/outcome-validation-batch-01-agency-evolution.md) — três sínteses e um cluster concluídos.
-- [BA-STR-002-EOVB-002 — Batch 02, Trust](strategy/outcome-validation-batch-02-trust.md) — três sínteses e a fronteira Ecosystem–Business analisada.
-- [BA-STR-002-EOVB-003 — Batch 03, Value and Continuity](strategy/outcome-validation-batch-03-value-continuity.md) — três sínteses e um ciclo empresarial de sustentação analisado.
-- [BA-STR-002-EOVB-004 — Batch 04, Resilience](strategy/outcome-validation-batch-04-resilience.md) — continuidade, resiliência e crescimento responsável discriminados.
-- [BA-STR-002-EOVB-005 — Batch 05, Adaptation](strategy/outcome-validation-batch-05-adaptation.md) — relevância, aprendizagem e adequação contextual discriminadas.
-- [BA-STR-002-EOVB-006 — Batch 06, Coverage Completion](strategy/outcome-validation-batch-06-coverage-completion.md) — cobertura de 18 candidatos e seis clusters concluída.
-- [BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix](strategy/candidate-outcome-evaluation-matrix.md) — cobertura concluída; 18 candidatos e 6 clusters avaliados.
-- [BA-STR-002-CODR-001 — Candidate Outcome Decision Register](strategy/candidate-outcome-decision-register.md) — ciclo decisório em execução; `COD-001` registrado para `ECO-CAND-001`.
+- [BA-STR-002 — Business Outcomes](strategy/business-outcomes.md) — checkpoint 0.20.0; validação externa, COEM inicial e 18 decisões humanas concluídas; catálogo canônico pendente.
+- [BA-STR-002-COR-001 — Candidate Outcome Register](strategy/candidate-outcome-register.md) — 18 candidatos; 9 em `Under Validation`, 3 `Merged` e 6 `Rejected`; nenhum aprovado.
+- [BA-STR-002-EOVP-001 — External Outcome Validation Protocol](strategy/external-outcome-validation-protocol.md) — execução concluída com seis lotes e 60 evidências.
+- [BA-STR-002-COEM-001 — Candidate Outcome Evaluation Matrix](strategy/candidate-outcome-evaluation-matrix.md) — cobertura inicial concluída para 18 candidatos e seis clusters.
+- [BA-STR-002-CODR-001 — Candidate Outcome Decision Register](strategy/candidate-outcome-decision-register.md) — concluído; 18 de 18 decisões humanas registradas.
+- [Human Decision Resolution — BUS-CAND-010](strategy/candidate-outcome-decision-submission-bus-cand-010.md) — `COD-018`; fusão em `BUS-CAND-005` registrada.
+
+## Resultado da fase decisória
+
+```text
+Human decisions: 18 of 18
+Under Validation: 9
+Merged: 3
+Rejected: 6
+Approved Outcomes: 0
+Canonical codes: 0
+```
+
+A última decisão aceitou `Merge into BUS-CAND-005` para `BUS-CAND-010 — Capacidade de reinvestimento responsável`.
+
+A fusão preserva reinvestimento como decisão governada de financiamento e alocação dentro de Continuidade Econômica Sustentável. Ela não aprova o candidato-alvo e não transforma retenção ou gasto em prova de responsabilidade.
 
 ## Organização interna
 
@@ -61,20 +77,18 @@ graph TD
 
 ```text
 Contexto
--> Necessidade
--> Priorização Estratégica
--> Capacidade
--> Produto ou Serviço
--> Experiência
--> Ecosystem Outcome
--> Business Outcome
--> Valor Gerado
--> Valor Capturado
--> Reinvestimento
--> Novo Contexto
+→ Necessidade
+→ Priorização Estratégica
+→ Outcome
+→ Capacidade
+→ Produto ou Serviço
+→ Experiência
+→ Evidência
+→ Aprendizado
+→ Nova decisão
 ```
 
-Cada nível possui responsabilidade própria e não deve ser confundido com os demais.
+A geração, captura, financiamento e reinvestimento de valor permanecem meios e decisões governadas que sustentam Outcomes; não constituem automaticamente Outcomes independentes.
 
 ## Ordem por dependências
 
@@ -97,8 +111,8 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 1. `BA-FND-001` — Business Architecture Foundations — **Validated**
 2. `BA-STR-001` — Business Transformation Model — **Validated**
-3. `BA-STR-002` — Business Outcomes — **Draft 0.19.0; decisão humana 1/18**
-4. `BA-CAP-001` — Core Business Capabilities
+3. `BA-STR-002` — Business Outcomes — **Draft 0.20.0; 18 decisões concluídas; reavaliação e Canon pendentes**
+4. `BA-CAP-001` — Core Business Capabilities — **não iniciado**
 5. `BA-CAP-002` — Capability Map
 6. `BA-STR-003` — Value Chains
 7. `BA-ORG-001` — Organizational Model
@@ -108,10 +122,10 @@ A ordem de construção é determinada pelas dependências arquiteturais, confor
 
 ## Estado de maturidade
 
-A Business Architecture está em estado **Validated em seus fundamentos e em seu modelo de transformação**.
+A Business Architecture está **validada em seus fundamentos e em seu modelo de transformação**.
 
-O BA-STR-002 possui definição, propriedades, limites, governança conceitual, primeiro COR, seis lotes externos consolidados e COEM concluída. O ciclo de decisões humanas foi iniciado com `COD-001`: a recomendação `Reformulate` de `ECO-CAND-001` foi aceita, uma formulação revisada foi registrada e o candidato permanece `Under Validation`. O ativo continua `draft` até conclusão das decisões individuais, reavaliação das reformulações, aplicação do AQS-O01, catálogos canônicos e matriz de sustentação.
+O BA-STR-002 concluiu Discovery, registro de candidatos, validação externa, cobertura inicial da COEM e 18 decisões humanas. Permanece `draft` porque nove formulações revisadas ou combinadas ainda precisam retornar aos quatro testes, o AQS-O01 não foi ajustado na prática, os catálogos canônicos não foram definidos e a matriz de sustentação não foi consolidada.
 
 ## Próximo incremento candidato
 
-Decisão humana individual sobre `ECO-CAND-003`. O incremento não poderá reavaliar automaticamente `ECO-CAND-001`, executar disposições sobre outros candidatos, iniciar `BA-CAP-001` ou retomar Product Engineering.
+Após integração e nova autorização, reaplicar os quatro testes às nove formulações ativas. O incremento não poderá aprovar candidatos automaticamente, criar códigos canônicos, iniciar `BA-CAP-001` ou retomar Engenharia de Produto.

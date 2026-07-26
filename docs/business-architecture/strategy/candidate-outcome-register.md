@@ -2,9 +2,9 @@
 id: BA-STR-002-COR-001
 title: Candidate Outcome Register
 status: active
-version: 0.29.0
+version: 0.30.0
 owner: Guivos Business Architecture
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 parent: BA-STR-002
 depends_on:
   - BA-FND-001
@@ -35,8 +35,9 @@ related:
   - COD-015
   - COD-016
   - COD-017
+  - COD-018
   - GEM-CLOSURE-REVIEW-001
-  - M7.19
+  - M7.20
 normative: false
 ---
 
@@ -51,18 +52,18 @@ O COR preserva origem, formulações, dúvidas, sobreposições, decisões e ras
 ## 2. Estado formal
 
 ```text
-Register: discovery, external validation and COEM coverage complete; human decisions in progress
+Register: discovery, external validation, COEM coverage and human decisions complete
 Candidates: 18
 Ecosystem candidates: 8
 Business candidates: 10
 Approved Outcomes: 0
 Canonical EO/BO codes: 0
-Under Validation: 10
-Merged: 2
+Under Validation: 9
+Merged: 3
 Rejected: 6
 External validation: completed — batches 01 to 06
 COEM: completed — 18 of 18 candidates; 6 of 6 clusters
-Human decisions: 17 of 18
+Human decisions: 18 of 18
 AQS-O01 practical validation: not started
 Operational authorization: no
 ```
@@ -84,7 +85,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Estado | Regra |
 |---|---|
-| `Under Validation` | candidato ativo aguardando decisão ou nova avaliação |
+| `Under Validation` | candidato ativo aguardando nova avaliação ou consolidação posterior |
 | `Merged` | candidato incorporado a outro por decisão humana, com rastreabilidade preservada |
 | `Rejected` | candidato retirado do futuro catálogo de Outcomes, sem apagar conceito, evidências ou destino arquitetural |
 
@@ -244,13 +245,13 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 |---|---|
 | Definição originalmente avaliada | A Guivos mantém recursos, capacidade e equilíbrio econômico suficientes para cumprir obrigações e preservar o valor essencial ao longo do tempo. |
 | Formulação candidata vigente | A Guivos sustenta condições econômicas suficientes para cumprir obrigações e preservar valor essencial em múltiplos horizontes, mantendo opções legítimas de financiamento, alocação e renovação sem presumir permanência absoluta nem tratar receita, margem, caixa, disponibilidade operacional ou crescimento isolados como prova suficiente. |
-| Origem | BA-STR-001; GEM-001; GEM-008; GEM-CLOSURE-REVIEW-001 |
+| Origem | BA-STR-001; GEM-001; GEM-008; GEM-CLOSURE-REVIEW-001; BUS-CAND-010 |
 | Participantes afetados | Ecossistema como um todo |
 | Status | Under Validation |
-| Decisão | `COD-013 — Aceitar Reformulate` |
-| BUS-CAND-010 | preservado como candidato separado até decisão humana individual posterior |
-| Observações | Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento e alocação permanecem dimensões ou capacidades sustentadoras, não sub-Outcomes. |
-| Questão de validação | A formulação revisada possui unidade, observabilidade e implicação estratégica próprias sem depender de métrica financeira única, disponibilidade operacional ou promessa de permanência absoluta? |
+| Decisões relacionadas | `COD-013 — Aceitar Reformulate`; `COD-018 — BUS-CAND-010 Merged into BUS-CAND-005` |
+| Conteúdo incorporado de BUS-CAND-010 | financiamento responsável da renovação; adicionalidade; riscos; obrigações protegidas; custo de oportunidade; alternativas legítimas de uso ou financiamento; avaliação anterior e posterior da alocação |
+| Observações | Continuidade operacional, resiliência, equilíbrio financeiro, reservas, financiamento, alocação e renovação permanecem dimensões ou capacidades sustentadoras, não sub-Outcomes. Reinvestimento proposto, aprovado, realizado e eficaz são estados distintos. |
+| Questão de validação | A formulação combinada possui unidade, observabilidade e implicação estratégica próprias sem depender de métrica financeira única, disponibilidade operacional, promessa de permanência absoluta ou reinvestimento automático? |
 
 ### BUS-CAND-006 — Crescimento responsável e resiliente
 
@@ -311,12 +312,15 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 | Campo | Registro |
 |---|---|
-| Definição provisória | A Guivos mantém condições para reinvestir valor legitimamente capturado no fortalecimento de capacidades, conhecimento e valor entregue ao ecossistema. |
+| Definição original preservada | A Guivos mantém condições para reinvestir valor legitimamente capturado no fortalecimento de capacidades, conhecimento e valor entregue ao ecossistema. |
 | Origem | BA-FND-001; BA-STR-001; GEM-001; GEM-008 |
 | Participantes afetados | Ecossistema como um todo |
-| Status | Under Validation |
-| Observações | Reinvestimento proposto, aprovado, realizado e eficaz são estados distintos. |
-| Questão de validação | Este candidato é autônomo ou componente necessário da continuidade econômica sustentável? |
+| Status | Merged |
+| Merged into | BUS-CAND-005 |
+| Decisão | `COD-018 — Aceitar Merge into BUS-CAND-005` |
+| Conteúdo preservado | capacidade governada de financiar renovação e preservar opções de investimento; adicionalidade, riscos, obrigações, alternativas e avaliação de eficácia |
+| Evidência insuficiente | maior retenção, gasto ou percentual reinvestido não comprova responsabilidade, eficácia, continuidade ou geração futura de valor |
+| Questão de validação | Resolvida quanto à independência; formulação combinada do alvo pendente de nova COEM. |
 
 ## 7. Sobreposições e decisões
 
@@ -327,7 +331,7 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 | confiança | ECO-CAND-006, ECO-CAND-008 e BUS-CAND-004 | três camadas preservadas; BUS-CAND-004 reformulado como legitimidade institucional sustentada |
 | inclusão | ECO-CAND-007, ECO-CAND-002 e ECO-CAND-008 | formulações revisadas exigem nova COEM |
 | propósito | BUS-CAND-001 | rejeitado como Outcome por `COD-009`; autoridade constitucional preservada |
-| valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 e BUS-CAND-005 reformulados; BUS-CAND-010 pendente de decisão individual |
+| valor e continuidade | BUS-CAND-003, BUS-CAND-005 e BUS-CAND-010 | BUS-CAND-003 e BUS-CAND-005 reformulados; BUS-CAND-010 fundido em BUS-CAND-005 por `COD-018`; formulações ativas exigem nova COEM |
 | adaptação | BUS-CAND-002, BUS-CAND-007 e BUS-CAND-009 | BUS-CAND-002 fundido em BUS-CAND-003; BUS-CAND-007 rejeitado e preservado como capacidade; BUS-CAND-009 rejeitado e preservado como princípio arquitetural e critério governado |
 | resiliência | BUS-CAND-005 e BUS-CAND-006 | BUS-CAND-005 preservado como candidato reformulado; BUS-CAND-006 rejeitado e expansão responsável preservada como trajetória opcional |
 | parcerias | BUS-CAND-008 | rejeitado como Outcome; governança de parceiros, gestão de alianças e critérios de portfólio preservados como capacidades e decisões governadas |
@@ -336,26 +340,28 @@ Estados `Merged` e `Rejected` preservam candidatos, formulações, evidências e
 
 Antes de qualquer promoção canônica deverão existir:
 
-1. decisão humana individual para a disposição restante de `BUS-CAND-010`;
-2. reaplicação dos quatro testes às formulações revisadas e combinadas;
-3. aplicação e ajuste do AQS-O01;
-4. decisão formal sobre catálogos e códigos canônicos.
+1. reaplicação dos quatro testes às formulações revisadas e combinadas;
+2. aplicação e ajuste do AQS-O01;
+3. decisão formal sobre catálogos e códigos canônicos;
+4. matriz de sustentação entre Ecosystem Outcomes e Business Outcomes;
+5. clareza suficiente para iniciar a arquitetura de Capacidades Empresariais.
 
 ## 9. Gate do incremento
 
 | Critério | Resultado |
 |---|---|
-| `COD-017` registrado | Pass |
+| `COD-018` registrado | Pass |
 | formulação original e evidências preservadas | Pass |
-| `BUS-CAND-009` alterado para `Rejected` | Pass |
-| princípio arquitetural e critério governado preservados | Pass |
-| padronização global não imposta | Pass |
-| adaptação local não proibida | Pass |
-| tradução e presença local bloqueadas como prova suficiente | Pass |
-| distribuição 10/2/6 registrada | Pass |
+| `BUS-CAND-010` alterado para `Merged` | Pass |
+| alvo `BUS-CAND-005` identificado | Pass |
+| alvo mantido em `Under Validation` | Pass |
+| reinvestimento automático bloqueado | Pass |
+| alternativas internas e externas preservadas | Pass |
+| distribuição 9/3/6 registrada | Pass |
+| decisões humanas 18/18 registradas | Pass |
 | promoção automática bloqueada | Pass |
 | Outcomes canônicos definidos | Not started |
 
 ## 10. Próximo passo governado
 
-Após integração deste incremento, preparar e submeter `BUS-CAND-010 — Capacidade de reinvestimento responsável` à décima oitava decisão humana individual sobre a recomendação `Merge into BUS-CAND-005`.
+Após integração deste incremento e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas, ajustar o AQS-O01 e preparar a futura consolidação governada dos catálogos.

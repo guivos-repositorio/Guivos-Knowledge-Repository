@@ -2,9 +2,9 @@
 id: BA-STR-002
 title: Business Outcomes
 status: draft
-version: 0.19.0
+version: 0.20.0
 owner: Guivos Business Architecture
-last_updated: 2026-07-24
+last_updated: 2026-07-26
 depends_on:
   - BA-FND-001
   - BA-STR-001
@@ -20,17 +20,19 @@ related:
   - BA-STR-002-EOVB-005
   - BA-STR-002-EOVB-006
   - BA-STR-002-COEM-001
+  - BA-STR-002-CODR-001
+  - COD-018
   - GEM-CLOSURE-REVIEW-001
-checkpoint: coem-coverage-completed
+checkpoint: human-decisions-completed
 ---
 
 # BA-STR-002 — Business Outcomes
 
 ## Estado do ativo
 
-Este documento registra o checkpoint conceitual, metodológico e de execução cumulativa da COEM do BA-STR-002.
+Este documento registra o checkpoint conceitual, metodológico e decisório cumulativo do BA-STR-002.
 
-O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) concluiu sua execução governada com 60 evidências. A [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) concluiu a cobertura dos 18 candidatos e seis clusters, com nove disposições `Reformulate`, três `Merge` e seis `Reject` recomendadas. Os 18 candidatos permanecem em `Under Validation`; nenhuma disposição foi executada e nenhum Outcome foi promovido.
+O conceito de Outcome, suas propriedades, limites, função decisória e método de governança estão definidos. O primeiro [Candidate Outcome Register](candidate-outcome-register.md) possui 18 hipóteses rastreáveis, e o [External Outcome Validation Protocol](external-outcome-validation-protocol.md) concluiu sua execução governada com 60 evidências. A [Candidate Outcome Evaluation Matrix](candidate-outcome-evaluation-matrix.md) concluiu a cobertura dos 18 candidatos e seis clusters. O [Candidate Outcome Decision Register](candidate-outcome-decision-register.md) registra as 18 decisões humanas individuais: nove candidatos permanecem em `Under Validation`, três foram fundidos e seis foram rejeitados. Nenhum Outcome foi aprovado ou promovido à Canon.
 
 ## Pergunta arquitetural
 
@@ -191,7 +193,9 @@ graph LR
     D[Discovery] --> COR[Candidate Outcome Register]
     COR --> EV[External Validation]
     EV --> COEM[Candidate Outcome Evaluation Matrix]
-    COEM --> AO[Approved Outcomes]
+    COEM --> HD[Human Decisions]
+    HD --> RCOEM[Reaplicação da COEM]
+    RCOEM --> AO[Approved Outcomes]
     AO --> C[Canon]
 ```
 
@@ -303,13 +307,15 @@ Além dos critérios de qualidade, ele define que cada Outcome consolidado dever
 4. Capabilities existem para produzir um ou mais Outcomes.
 5. Ecosystem Outcomes e Business Outcomes são níveis distintos e interdependentes.
 6. Ecosystem Outcomes descrevem condições do ecossistema, não transformações controladas pela Guivos.
-7. Todo candidato deve percorrer Discovery, COR, External Validation e COEM antes da Canon.
+7. Todo candidato deve percorrer Discovery, COR, External Validation, COEM e decisão humana antes da Canon.
 8. O AQS-O01 será validado na prática antes de estabilização.
-9. O COR inicial contém oito candidatos de ecossistema e dez candidatos empresariais, atualmente preservados em `Under Validation`.
+9. O COR inicial contém oito candidatos de ecossistema e dez candidatos empresariais; após 18 decisões humanas, nove permanecem em `Under Validation`, três estão `Merged` e seis estão `Rejected`.
 10. O catálogo canônico ainda não está consolidado.
 11. A validação externa cobriu individualmente os 18 candidatos, os seis clusters de sobreposição, contradições e omissões materiais.
 12. A COEM distingue resultado dos testes, disposição recomendada, decisão humana e consolidação canônica.
 13. Uma disposição da matriz não altera automaticamente o estado de um candidato.
+14. A fase de decisões humanas individuais foi concluída por `COD-018`.
+15. Formulações revisadas e combinadas deverão retornar aos quatro testes antes de qualquer aprovação.
 
 ## Hipóteses preservadas fora da Canon
 
@@ -333,6 +339,8 @@ O ativo somente poderá ser promovido a `validated` quando:
 - o Candidate Outcome Register estiver concluído;
 - a validação externa dos candidatos estiver registrada;
 - a COEM estiver concluída;
+- as decisões humanas individuais estiverem concluídas;
+- formulações revisadas e combinadas retornarem aos quatro testes;
 - o AQS-O01 tiver sido testado e ajustado;
 - o catálogo canônico de Ecosystem Outcomes estiver definido;
 - o catálogo canônico de Business Outcomes estiver definido;
@@ -347,7 +355,9 @@ O ativo somente poderá ser promovido a `validated` quando:
 | Candidate Outcome Register concluído | atendido no primeiro passe interno |
 | protocolo de validação externa | atendido; execução concluída |
 | validação externa registrada | atendido; 18 candidatos, seis clusters e 60 evidências |
-| COEM concluída | atendido; 18/18 candidatos e 6/6 clusters |
+| COEM inicial concluída | atendido; 18/18 candidatos e 6/6 clusters |
+| decisões humanas individuais | atendido; 18/18 registradas |
+| reaplicação da COEM às formulações revisadas e combinadas | pendente |
 | AQS-O01 testado e ajustado | pendente |
 | catálogo canônico de Ecosystem Outcomes | pendente |
 | catálogo canônico de Business Outcomes | pendente |
@@ -356,4 +366,4 @@ O ativo somente poderá ser promovido a `validated` quando:
 
 ## Próxima etapa
 
-Submeter as dezoito disposições cumulativas à decisão humana individual e rastreável. Nenhum candidato receberá código canônico `EO-###` ou `BO-###` antes da decisão formal, do ajuste prático do AQS-O01 e da consolidação governada.
+Após integração deste incremento e nova autorização, reaplicar os quatro testes às formulações revisadas e combinadas, ajustar o AQS-O01 e preparar a futura consolidação governada dos catálogos. Nenhum candidato receberá código canônico `EO-###` ou `BO-###` antes dessas etapas.
