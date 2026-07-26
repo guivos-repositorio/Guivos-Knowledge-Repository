@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-11.83.0
-title: Roadmap Arquitetural — Experience Architecture Discovery
+id: ROADMAP-11.84.0
+title: Roadmap Arquitetural — Wireframes Iniciais de Baixa Fidelidade
 status: active
-version: 11.83.0
+version: 11.84.0
 owner: Guivos
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.82.0
+  - ROADMAP-11.83.0
 related:
   - GKR-STATE-001
   - UXA-000
@@ -14,13 +14,17 @@ related:
   - UXA-002
   - UXA-003
   - UXA-004
+  - UXA-005
+  - UXA-006
+  - UXA-007
+  - UXA-008
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-017
-  - M7.19.1
+  - M7.19.2
 ---
 
-# Roadmap Arquitetural — Experience Architecture Discovery
+# Roadmap Arquitetural — Wireframes Iniciais de Baixa Fidelidade
 
 ## 1. Autoridade
 
@@ -31,7 +35,7 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | Elemento | Estado |
 |---|---|
 | Era | `GE-2 — Knowledge` |
-| Marco | `M7.19.1` |
+| Marco | `M7.19.2` |
 | Remediação R1–R5 | concluída; `PASS` |
 | R6 | concluído |
 | A2-R03 | ativa, operacionalmente pausada antes de `BUS-CAND-010` |
@@ -39,7 +43,8 @@ Este documento governa a sequência global de evolução arquitetural do GKR. O 
 | COR | 10 `Under Validation`; 2 `Merged`; 6 `Rejected` |
 | CODR | 17 de 18 decisões |
 | Experience Architecture | ativa em Discovery |
-| Wireframes | não iniciados |
+| Wireframes de baixa fidelidade | três superfícies iniciais criadas |
+| Protótipo navegável | não iniciado |
 | Product Engineering | pausado antes do `W0-01` |
 
 ## 3. Sequência já executada
@@ -61,9 +66,20 @@ Arquitetura documental inicial concluída em `GEM-001` a `GEM-010`. Parâmetros 
 - nenhuma submissão `018` criada;
 - nenhum Outcome canônico criado.
 
+### 3.4 Experience Architecture Discovery
+
+Integrada por `UXA-000` a `UXA-004`, com:
+
+- princípios e método;
+- tela `Hoje` como hipótese de entrada;
+- navegação pessoal;
+- contextos de Organização e Coletivo;
+- mapa inicial de telas;
+- fluxo de oportunidades, preços, relevância, Organizações, Coletivos e Mapa.
+
 ## 4. Pausa governada
 
-O Fundador determinou que a sequência de Business Outcomes seja pausada antes de `BUS-CAND-010` para permitir o desenvolvimento da Arquitetura da Experiência e da Jornada do Usuário.
+A sequência de Business Outcomes permanece pausada antes de `BUS-CAND-010`.
 
 A pausa:
 
@@ -74,50 +90,83 @@ A pausa:
 - não inicia Business Capabilities;
 - não autoriza Product Engineering.
 
-## 5. Experience Architecture — frente ativa
+## 5. Incremento atual — wireframes iniciais
 
-### Incremento inicial
+### 5.1 Programa
 
-- `UXA-000` — índice e autoridade;
-- `UXA-001` — fundação, princípios, participantes e navegação;
-- `UXA-002` — experiência diária e tela `Hoje`;
-- `UXA-003` — mapa inicial de jornadas e telas;
-- `UXA-004` — oportunidades, Organizações, Coletivos e Mapa.
+`UXA-005` define:
 
-### Perguntas que a frente deverá responder
+- natureza dos wireframes;
+- convenções de baixa fidelidade;
+- viewports iniciais;
+- critérios de validação;
+- relação entre as superfícies;
+- gates posteriores.
 
-1. O que faz um participante retornar à Guivos de forma legítima?
-2. O que aparece na tela inicial e em qual ordem?
-3. Como a pessoa controla o que considera relevante?
-4. Onde aparecem oportunidades, preços, condições e relações comerciais?
-5. Como Organizações cadastram e gerenciam oportunidades?
-6. Como Coletivos são criados, descobertos e operados?
-7. Como o Mapa conecta oportunidades, Organizações, Coletivos e atividades?
-8. Como alternar entre jornada pessoal, Organização e Coletivo?
-9. Quais telas são necessárias antes de qualquer implementação?
+### 5.2 Tela Hoje
 
-## 6. Sequência proposta da Experience Architecture
+`UXA-006` materializa a estrutura móvel de:
 
-1. validar fundação e navegação;
-2. validar a tela `Hoje` e a hipótese de retorno;
-3. validar mapa de telas;
-4. detalhar fluxos críticos;
-5. criar wireframes de baixa fidelidade, somente após autorização;
-6. prototipar jornadas selecionadas;
-7. executar testes de compreensão e usabilidade;
-8. ajustar contratos de experiência;
-9. preparar handoff posterior para Product Engineering.
+- síntese do momento;
+- atenção principal;
+- Próximo Passo;
+- oportunidades;
+- Coletivos;
+- navegação global.
 
-## 7. Fluxos prioritários para wireframes futuros
+### 5.3 Detalhe de oportunidade
 
-1. entrada e captura progressiva de contexto;
-2. `Hoje`;
-3. descoberta e detalhe de oportunidade;
-4. controle de relevância;
-5. Mapa;
-6. criação de oportunidade por Organização;
-7. perfil e operação de Coletivo;
-8. integração com Objetivos e Próximos Passos.
+`UXA-007` materializa:
+
+- identidade e preço;
+- custo total;
+- relevância explicada;
+- disponibilidade;
+- elegibilidade;
+- Organização responsável;
+- transparência comercial;
+- ações conscientes.
+
+### 5.4 Cadastro pela Organização
+
+`UXA-008` materializa:
+
+- navegação institucional;
+- onze etapas de cadastro;
+- preço e condições;
+- consistência e transparência;
+- pré-visualização;
+- salvamento de rascunho;
+- separação de envio, avaliação, ativação e apresentação.
+
+## 6. Sequência da Experience Architecture
+
+1. fundação e navegação — concluídas em Discovery;
+2. tela `Hoje` e hipótese de retorno — documentadas;
+3. mapa inicial de telas — documentado;
+4. fluxos de oportunidades e ecossistema — documentados;
+5. três wireframes iniciais de baixa fidelidade — criados;
+6. revisão e reformulação — próximo gate;
+7. estados alternativos — pendentes;
+8. protótipo navegável de baixa fidelidade — depende de autorização;
+9. testes de compreensão e usabilidade — não iniciados;
+10. design visual e handoff — posteriores.
+
+## 7. Próximos wireframes candidatos
+
+A prioridade posterior deverá ser decidida entre:
+
+1. estado vazio da tela `Hoje`;
+2. controle de relevância;
+3. Mapa;
+4. perfil de Organização;
+5. perfil e atividade de Coletivo;
+6. captura progressiva de contexto;
+7. comparação de oportunidades;
+8. inscrição e confirmação de compartilhamento;
+9. estados de erro, expiração e contestação.
+
+Nenhum desses artefatos está automaticamente autorizado.
 
 ## 8. Retorno a Business Outcomes
 
@@ -147,7 +196,8 @@ Essa ordem não autoriza início.
 
 ## 10. Próximo ponto exato
 
-Revisar as decisões propostas por `UXA-001` a `UXA-004` e definir se o próximo incremento deverá:
+Revisar `UXA-005` a `UXA-008` e decidir se o próximo incremento deverá:
 
-- refinar a arquitetura de informação; ou
-- iniciar wireframes de baixa fidelidade da tela `Hoje` e do fluxo de oportunidades.
+- reformular os wireframes;
+- criar estados alternativos selecionados; ou
+- iniciar um protótipo navegável de baixa fidelidade, mediante autorização separada.
