@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.90.0
+version: 4.91.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.92.0
+  - ROADMAP-11.93.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -18,7 +18,8 @@ related:
   - UXA-016
   - UXA-017
   - UXA-018
-  - M7.19.10
+  - UXA-019
+  - M7.19.11
 normative: false
 ---
 
@@ -47,34 +48,34 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.7 | Concluído | Cadastro pela Organização validado e reformulado |
 | M7.19.8 | Concluído | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
 | M7.19.9 | Concluído | Visão Geral da Organização validada e reformulada |
-| M7.19.10 | Ativo neste incremento | Início do Coletivo validado e reformulado |
+| M7.19.10 | Concluído | Início do Coletivo validado e reformulado |
+| M7.19.11 | Ativo neste incremento | relações entre Organizações e Coletivos detalhadas funcionalmente |
 
 ## 3. Marco vigente
 
-### Início do Coletivo Validado e Reformulado (marco M7.19.10)
+### Relações entre Organizações e Coletivos Detalhadas Funcionalmente (marco M7.19.11)
 
 **Critérios atendidos:**
 
 - gate de alinhamento à Fundação aplicado;
-- propósito, identidade e estado de participação posicionados antes da atividade;
-- pertencimento, disponibilidade, responsabilidade e autoridade mantidos distintos;
-- momento coletivo iniciado por mudanças, necessidades e decisões materiais;
-- contagens de membros e atividades impedidas de dominar a leitura;
-- necessidade principal apresentada sem culpa, exposição ou pressão;
-- ação compartilhada subordinada ao propósito;
-- convites tornados recusáveis;
-- papéis condicionados a aceitação explícita e desistência legítima;
-- ausência, silêncio, recusa, pausa e saída preservados;
-- governança separada entre consulta, decisão, execução e moderação;
-- votação e popularidade impedidas de se tornarem padrões universais;
-- apoio institucional apresentado sem perda de autonomia;
-- avanço coletivo condicionado a propósito, evidência, período, contribuição e limitações;
-- ausência de evidência declarada sem simulação de progresso;
-- nenhuma pessoa atribuída automaticamente a um Próximo Passo;
-- wireframe móvel atualizado para a versão 0.2.0;
-- protótipo, design, testes e desenvolvimento preservados como não iniciados;
-- relações entre Organizações e Coletivos preservadas como próximas na ordem;
-- Resultados Empresariais e Engenharia de Produto preservados em pausa.
+- Organização e Coletivo preservados como participantes distintos;
+- relação impedida de equivaler a propriedade ou subordinação;
+- finalidade e escopo compartilhado tornados explícitos;
+- consentimento bilateral exigido para ativação;
+- autoridades e limites de representação identificados;
+- silêncio, presença, recurso recebido e uso informal de marca rejeitados como aceite implícito;
+- compromissos definidos com responsáveis, evidências, dependências e alternativas;
+- recursos, condições econômicas, patrocínio e uso de marca tornados transparentes;
+- dados governados por finalidade, acesso, retenção, correção e saída;
+- autonomia, influência, dependência e conflitos tornados visíveis;
+- proteção, acessibilidade e não retaliação preservadas;
+- ciclo de vida estabelecido de rascunho a encerramento;
+- alterações materiais condicionadas a nova aprovação bilateral;
+- avanço da relação condicionado a mudança relacionada à finalidade e evidência;
+- ausência de avanço declarada sem simulação de impacto;
+- contestação, suspensão urgente e encerramento responsável estabelecidos;
+- protótipo, design, testes, sistema jurídico e desenvolvimento preservados como não iniciados;
+- Resultados Empresariais preservados em 17 de 18 decisões.
 
 ## 4. Estado das revisões arquiteturais
 
@@ -90,10 +91,8 @@ A Arquitetura da Experiência permanece uma frente preparatória transversal e n
 
 ## 5. Próximo ato da ordem
 
-Após a integração, a próxima etapa será o detalhamento funcional das **relações entre Organizações e Coletivos**.
-
-O retorno aos Resultados Empresariais permanece como quarta etapa.
+Após a integração e nova autorização, a próxima etapa será o retorno aos **Resultados Empresariais** para a decisão sobre **Capacidade de reinvestimento responsável**.
 
 ## 6. Regra de transição
 
-Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Wireframes, protótipo, testes, design, Engenharia de Produto e decisões sobre Resultados permanecem atos separados.
+Um marco somente muda quando seus critérios estiverem demonstrados no Repositório. Contrato jurídico, protótipo, testes, design, Engenharia de Produto e decisões sobre Resultados permanecem atos separados.
