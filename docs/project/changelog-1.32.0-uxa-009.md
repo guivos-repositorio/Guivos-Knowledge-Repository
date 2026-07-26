@@ -33,11 +33,12 @@ normative: false
 - Painel de Conhecimento central atualizado para versão 11.85.0;
 - Marcos Arquiteturais centrais atualizados para versão 4.83.0;
 - Matriz de Consolidação Canônica central atualizada para versão 2.4.0;
-- navegação oficial preparada para nomes completos.
+- novas alterações de navegação passam a seguir o padrão de nomes completos.
 
 ## Preservado
 
 - identificadores técnicos e referências internas;
+- menu histórico existente, que será normalizado progressivamente;
 - snapshots históricos anteriores;
 - três wireframes estruturais;
 - protótipo navegável como não iniciado;
