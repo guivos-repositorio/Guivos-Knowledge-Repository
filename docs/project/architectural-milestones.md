@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.88.0
+version: 4.89.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-11.90.0
+  - ROADMAP-11.91.0
   - GKR-R6-RESUMPTION-001
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -16,7 +16,8 @@ related:
   - UXA-014
   - UXA-015
   - UXA-016
-  - M7.19.8
+  - UXA-017
+  - M7.19.9
 normative: false
 ---
 
@@ -43,27 +44,32 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.5 | Concluído | presença companheira e gate da Fundação estabelecidos |
 | M7.19.6 | Concluído | Detalhe de Oportunidade validado e reformulado |
 | M7.19.7 | Concluído | Cadastro pela Organização validado e reformulado |
-| M7.19.8 | Ativo neste incremento | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
+| M7.19.8 | Concluído | fundação funcional de Organizações e Coletivos e duas superfícies iniciais estabelecidas |
+| M7.19.9 | Ativo neste incremento | Visão Geral da Organização validada e reformulada |
 
 ## 3. Marco vigente
 
-### Fundação Funcional de Organizações e Coletivos (marco M7.19.8)
+### Visão Geral da Organização Validada e Reformulada (marco M7.19.9)
 
 **Critérios atendidos:**
 
 - gate de alinhamento à Fundação aplicado;
-- Organização definida como participante institucional responsável;
-- Coletivo definido como formação voluntária orientada por propósito compartilhado;
-- papéis, autoridades e responsabilidades mantidos distintos;
-- relações entre Organizações e Coletivos tornadas transparentes;
-- momento institucional e coletivo definidos como leituras verificáveis e corrigíveis;
-- avanço institucional separado de vendas, publicidade e volume de atividade;
-- avanço coletivo separado de número de membros, publicações e engajamento;
-- Próximos Passos institucionais e coletivos tornados justificáveis;
-- Visão Geral da Organização estruturada em baixa fidelidade;
-- Início do Coletivo estruturado em baixa fidelidade;
-- participação, pausa, saída e contestação preservadas;
+- autoridade representada posicionada antes de ações;
+- papel e escopo de autoridade mantidos visíveis;
+- momento institucional iniciado por mudanças e compromissos materiais;
+- contagens operacionais impedidas de dominar a leitura;
+- responsabilidade principal apresentada com motivo, consequência, responsável e alternativas;
+- jornadas apoiadas e compromissos posicionados antes de oportunidades;
+- capacidade relacionada ao compromisso que precisa ser cumprido;
+- oportunidades e programas tratados como movimentos subordinados;
+- avanço institucional condicionado a evidência, período, contribuição e limitações;
+- ausência de evidência declarada sem simulação de progresso;
+- relações institucionais apresentadas com autonomia, recursos, dados, patrocínio e dependências;
+- decisões separadas de tarefas;
+- alternativas, correção e contestação preservadas;
+- wireframe para computador atualizado para a versão 0.2.0;
 - protótipo, design, testes e desenvolvimento preservados como não iniciados;
+- Início do Coletivo preservado como próximo na ordem;
 - Resultados Empresariais e Engenharia de Produto preservados em pausa.
 
 ## 4. Estado das revisões arquiteturais
@@ -78,9 +84,11 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 
 A Arquitetura da Experiência permanece uma frente preparatória transversal e não inicia formalmente a Revisão da Arquitetura de Produtos.
 
-## 5. Próximo ato
+## 5. Próximo ato da ordem
 
-Após a integração, escolher separadamente entre validar a Visão Geral da Organização, validar o Início do Coletivo, detalhar as relações entre Organizações e Coletivos ou retornar à frente de Resultados Empresariais.
+Após a integração, a próxima etapa será a validação funcional do **Início do Coletivo**.
+
+O detalhamento das relações entre Organizações e Coletivos e o retorno aos Resultados Empresariais permanecem como terceira e quarta etapas.
 
 ## 6. Regra de transição
 

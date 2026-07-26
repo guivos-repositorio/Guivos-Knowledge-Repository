@@ -2,12 +2,13 @@
 id: GKR-CANON-MATRIX-001
 title: Matriz de Consolidação Canônica
 status: active
-version: 2.9.0
+version: 2.10.0
 owner: Guivos
 last_updated: 2026-07-26
 depends_on:
   - GKR-STATE-001
 related:
+  - GKR-CANON-MATRIX-UXA-017
   - GKR-CANON-MATRIX-UXA-014
   - GKR-CANON-MATRIX-UXA-013
   - GKR-CANON-MATRIX-UXA-012
@@ -20,7 +21,8 @@ related:
   - UXA-014
   - UXA-015
   - UXA-016
-  - M7.19.8
+  - UXA-017
+  - M7.19.9
 normative: false
 ---
 
@@ -58,29 +60,34 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Resultados Empresariais | Manter ativos e pausados | 17 de 18 decisões |
 | Capacidade de reinvestimento responsável | Manter pendente | em validação |
 | Décima oitava submissão e decisão | Pendente | não criadas |
-| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-016 |
+| Arquitetura da Experiência | Descoberta | documentos ativos até UXA-017 |
 | Programa de Wireframes | Wireframe | programa inicial preservado |
 | Tela Hoje | Refinar em wireframe | validada e reformulada |
 | Detalhe de Oportunidade | Refinar em wireframe | validado e reformulado |
 | Cadastro pela Organização | Refinar em wireframe | validado e reformulado |
+| Visão Geral da Organização | Refinar em wireframe | validada e reformulada pela UXA-017 |
+| Início do Coletivo | Manter em wireframe inicial | validação seguinte na ordem |
 | Linguagem Clara | Manter | nomes completos antes de identificadores técnicos |
 | Presença Companheira | Manter como princípio transversal | acompanha sem controlar decisões |
 | Gate de alinhamento à Fundação | Manter obrigatório | Essência, Propósito, Missão, Visão, Constituição e Princípios |
 | Compreensão do momento | Manter verificável e corrigível | fatos, observações, fontes, inferências e desconhecidos distintos |
-| Evidência de avanço | Refinar | mudança relevante não equivale a engajamento |
-| Explicabilidade do Próximo Passo | Manter | momento, avanço, responsabilidade, propósito e contribuição relacionados |
+| Evidência de avanço | Refinar | mudança relevante não equivale a engajamento ou atividade |
+| Explicabilidade do Próximo Passo | Manter | momento, compromisso, evidência, decisão, contribuição e alternativas relacionados |
 | Organização no ecossistema | Refinar | participante institucional responsável, não apenas anunciante |
 | Coletivo no ecossistema | Refinar | formação voluntária orientada por propósito compartilhado |
 | Organização e Coletivo | Manter distintos | identidade, autoridade, responsabilidade e governança não se confundem |
 | Relações institucionais e coletivas | Refinar | finalidade, autoridade, recursos, dados, patrocínio e encerramento visíveis |
-| Momento institucional | Estruturar | capacidade, responsabilidades, riscos, oportunidades e mudanças verificáveis |
-| Momento coletivo | Estruturar | propósito, atividades, necessidades, papéis, governança e relações verificáveis |
-| Avanço institucional | Refinar | melhoria comprovável na capacidade de apoiar jornadas e cumprir responsabilidades |
-| Avanço coletivo | Refinar | ação concreta, participação efetiva, aprendizado aplicado ou governança aprimorada |
-| Métricas institucionais | Limitar | vendas, anúncios, visualizações e seguidores não equivalem a evolução |
-| Métricas coletivas | Limitar | membros, publicações, curtidas e dias ativos não equivalem a evolução |
-| Visão Geral da Organização | Criar em wireframe | momento, atenção, jornadas, capacidade, evidências, relações e Próximos Passos |
-| Início do Coletivo | Criar em wireframe | propósito, atividade, participação, avanço, recursos, governança e Próximos Passos |
+| Autoridade representada | Tornar persistente | Organização, unidade, papel e escopo antecedem ações |
+| Momento institucional | Refinar | começa por mudanças e compromissos materiais, não por contagens |
+| Responsabilidade principal | Criar como prioridade | uma responsabilidade material com motivo, consequência, responsável e alternativas |
+| Jornadas e compromissos | Posicionar antes de movimentos operacionais | finalidade humana antecede volume de oportunidades |
+| Capacidade institucional | Refinar | relacionar recursos e condições ao compromisso que precisa ser cumprido |
+| Oportunidades e programas | Subordinar | movimentos operacionais não dominam a superfície inicial |
+| Avanço institucional | Refinar | exige mudança, compromisso, evidência, período, contribuição e limitações |
+| Ausência de evidência | Tornar explícita | nenhum progresso será simulado quando não houver confirmação suficiente |
+| Relações e dependências | Refinar | autonomia, recursos, dados, patrocínio, responsabilidades e encerramento visíveis |
+| Decisão institucional | Separar de tarefa | decisão apresenta justificativa, alternativas, responsável e prazo material |
+| Métricas institucionais | Limitar | vendas, anúncios, visualizações, seguidores e volume não equivalem a evolução |
 | Participação coletiva | Manter voluntária | entrada, pausa, recusa, saída e contestação preservadas |
 | Relevância individual | Reservar à Guivos e ao participante | Organização e Coletivo não definem prioridade pessoal |
 | Publicidade e relevância | Separar | patrocínio e investimento comercial não elevam relevância funcional |
@@ -108,27 +115,32 @@ Esta matriz registra decisões consolidadas de maior alcance e aponta para autor
 | Continuidade econômica sustentável | candidato empresarial | Reformular aceito |
 | Capacidade de reinvestimento responsável | candidato empresarial | Em validação; decisão pendente |
 
-## 5. Resultado do incremento de Organizações e Coletivos
+## 5. Resultado da validação da Visão Geral da Organização
 
 A decisão consolidada:
 
 - aplica o gate obrigatório da Fundação;
-- distingue Organização e Coletivo como participantes diferentes;
-- define presença companheira institucional e coletiva;
-- torna momento institucional e coletivo verificáveis e corrigíveis;
-- separa avanço real de métricas de atividade;
-- exige justificativa para Próximos Passos;
-- preserva participação, pausa, saída e contestação;
-- torna relações, recursos, dados, patrocínio e responsabilidades transparentes;
-- cria a estrutura inicial da Visão Geral da Organização;
-- cria a estrutura inicial do Início do Coletivo;
-- impede redução a painel comercial, catálogo, feed ou ranking;
+- mantém autoridade representada antes de ações;
+- inicia o momento por mudanças e compromissos materiais;
+- cria uma responsabilidade principal com prioridade legítima;
+- posiciona jornadas e compromissos antes de oportunidades;
+- liga capacidade ao dever de cumprir;
+- subordina movimentos operacionais;
+- exige evidência e contribuição demonstrável para reconhecer avanço;
+- declara ausência de evidência sem simular progresso;
+- torna relações, dependências, dados, recursos e patrocínio transparentes;
+- separa decisão de tarefa;
+- preserva alternativas, correção e contestação;
+- impede métricas comerciais de substituírem evolução;
 - não inicia protótipo, design, teste ou desenvolvimento.
 
 ## 6. Documento complementar vigente
 
-O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Fundação Funcional de Organizações e Coletivos`.
+O documento complementar vigente é `Matriz de Consolidação Canônica — Adendo da Validação Funcional da Visão Geral da Organização`.
 
-## 7. Próximo ato
+## 7. Ordem autorizada
 
-Após a integração, escolher separadamente entre validar a Visão Geral da Organização, validar o Início do Coletivo, detalhar as relações entre Organizações e Coletivos ou retornar aos Resultados Empresariais.
+1. Visão Geral da Organização — validada neste incremento;
+2. Início do Coletivo — próximo incremento;
+3. relações entre Organizações e Coletivos — posterior;
+4. Resultados Empresariais e capacidade de reinvestimento responsável — posterior.
