@@ -2,7 +2,7 @@
 id: UXA-011
 title: Presença Companheira e Coerência de Posicionamento da Guivos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -12,6 +12,8 @@ depends_on:
   - GEB-P01-F01
   - GEB-P01-F02
   - GEB-P01-F03
+  - GEB-P01-F04
+  - GEB-P01-F05
   - GEB-P01-F06
 related:
   - UXA-006
@@ -54,7 +56,9 @@ Portanto, uma tela alinhada à Guivos não poderá ser apenas funcionalmente cor
 2. a relevância para o momento atual;
 3. a relação com um próximo passo possível;
 4. a autonomia do participante;
-5. o propósito de ampliar possibilidades humanas.
+5. o propósito de ampliar possibilidades humanas;
+6. a natureza da Guivos como ecossistema, e não como produto isolado;
+7. a coerência institucional necessária à operação global e a diferentes contextos.
 
 ## 3. O que significa ser companheira de jornada
 
@@ -235,7 +239,37 @@ Antes de avançar, cada superfície deverá responder positivamente:
 9. A experiência preserva calma, dignidade, privacidade e autonomia?
 10. A interação favorece uma ação ou compreensão real fora da plataforma?
 
-## 15. Limites
+## 15. Gate obrigatório de alinhamento à Fundação da Guivos
+
+Toda tela, fluxo, estado, mensagem, notificação, recomendação, conteúdo ou comportamento de interface deverá demonstrar alinhamento explícito com a Fundação da Guivos antes de avançar para protótipo navegável, design visual, teste de usabilidade, especificação técnica ou desenvolvimento.
+
+A avaliação deverá considerar, no mínimo:
+
+| Autoridade da Fundação | Pergunta obrigatória para a superfície |
+|---|---|
+| **Essência da Guivos** | A tela reduz a distância entre o Momento Atual e um Próximo Passo sem substituir o papel ativo do participante? |
+| **Propósito** | A experiência amplia possibilidades concretas de evolução de forma universal, aberta, acolhedora e não coercitiva? |
+| **Missão Operacional** | A tela ajuda o participante a compreender ou realizar um Próximo Passo relevante para seu momento de vida? |
+| **Visão de Longo Prazo** | A superfície preserva a Guivos como ecossistema global coerente, e não como produto, marketplace, feed ou aplicativo isolado? |
+| **Constituição da Guivos** | Evolução permanece como finalidade, oportunidade como meio, autonomia como limite e contexto como base da relevância? |
+| **Princípios Permanentes** | A experiência prioriza evolução contínua, Próximo Passo, relevância contextual, autonomia, experiência vivida, relacionamentos, conhecimento, simplicidade e validade global? |
+
+O alinhamento deverá abranger:
+
+- finalidade da tela;
+- hierarquia de conteúdo;
+- linguagem e microtexto;
+- ações principais e alternativas;
+- recomendações e explicações;
+- estados vazios, erros, riscos e incertezas;
+- relações comerciais e publicidade;
+- uso de dados e inteligência artificial;
+- privacidade e consentimento;
+- coerência com os demais produtos do ecossistema.
+
+Uma superfície que falhar em qualquer princípio material da Fundação deverá ser reformulada antes de avançar. Restrições de prazo, tecnologia, equipe, orçamento ou estágio de implementação não autorizam descaracterizar a Essência, o Propósito, a Missão, a Visão, a Constituição ou os Princípios Permanentes.
+
+## 16. Limites
 
 Este documento:
 
@@ -248,4 +282,4 @@ Este documento:
 - não altera a pausa dos Resultados Empresariais;
 - não antecipa a decisão sobre Capacidade de Reinvestimento Responsável.
 
-Ele estabelece um princípio transversal que deverá orientar os próximos wireframes, reformulações, protótipos, conteúdos, notificações e produtos do ecossistema.
+Ele estabelece um princípio transversal e um gate obrigatório que deverão orientar os próximos wireframes, reformulações, protótipos, conteúdos, notificações e produtos do ecossistema.
