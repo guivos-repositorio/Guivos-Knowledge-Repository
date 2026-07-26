@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.50.0
+version: 1.51.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-26
 depends_on:
@@ -24,13 +24,14 @@ related:
   - UXA-020
   - UXA-021
   - UXA-022
+  - UXA-023
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-11.97.0
-  - M7.23
+  - ROADMAP-11.98.0
+  - M7.24
 normative: true
 ---
 
@@ -38,26 +39,28 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro é a superfície oficial do estado global vigente do **Repositório de Conhecimento da Guivos** quando o incremento correspondente estiver integrado ao ramo principal.
+Este registro é a superfície oficial do estado global vigente do Repositório de Conhecimento da Guivos quando o incremento correspondente estiver integrado ao ramo principal.
 
 ## 2. Estado global vigente
 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | wireframe gráfico vetorial da Página Inicial pública criado | M7.23; UXA-022 |
+| Marco atual | início protegido da jornada validado e reformulado | M7.24; UXA-023 |
 | Remediação do repositório | concluída; validação mecânica permanente ativa | R1–R6 |
-| Achados críticos, maiores ou menores conhecidos | nenhum aberto | 0 |
+| Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída | A2-R03; BA-STR-002 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
 | Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Capacidade de reinvestimento responsável | fundida em Continuidade Econômica Sustentável | BUS-CAND-010 → BUS-CAND-005; COD-018 |
 | Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
-| Arquitetura da Experiência | ativa até o wireframe gráfico da Home pública | UXA-000 a UXA-022 |
-| Página Inicial pública | funcionalmente validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
+| Arquitetura da Experiência | ativa até a validação do início protegido | UXA-000 a UXA-023 |
+| Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
-| Início protegido da jornada | contrato funcional estabelecido; validação detalhada não iniciada | UXA-020; UXA-011-A1 |
-| Gate de personalização | indicações pessoais bloqueadas antes de compreensão suficiente, revisável e autorizada | UXA-011-A1; UXA-020 |
+| Início protegido da jornada | funcionalmente validado e reformulado | UXA-020; UXA-023 |
+| Wireframe do início protegido | não iniciado | — |
+| Revisão da compreensão inicial | contrato estabelecido; validação especializada não iniciada | UXA-011-A1; UXA-020; UXA-023 |
+| Gate de personalização | personalização bloqueada antes de compreensão revisável e autorizada | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
@@ -70,13 +73,11 @@ Este registro é a superfície oficial do estado global vigente do **Repositóri
 | AQS-O01 | aplicação prática não iniciada | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Guivos Journey | especificação arquitetural ativa; nove capacidades concluídas | PAS-001 1.0.0 |
-| Modelo Econômico da Guivos | arquitetura documental inicial concluída; validações reais pendentes | GEM-001 a GEM-010 |
+| Modelo Econômico | arquitetura documental inicial concluída; validações reais pendentes | GEM-001 a GEM-010 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho; execução em 0% | W0-01 |
 | Validação de Mercado | trilha paralela preservada; execução pendente | — |
 
 ## 3. Estado dos Resultados Empresariais
-
-A fase de decisões humanas está concluída:
 
 ```text
 Human decisions: 18 of 18 — completed
@@ -91,234 +92,165 @@ Canonical consolidation: not started
 Business Capabilities: not started
 ```
 
-`BUS-CAND-010 — Capacidade de reinvestimento responsável` foi fundido em `BUS-CAND-005 — Continuidade econômica sustentável` por `COD-018`.
-
-A fusão:
-
-- preserva financiamento interno e externo como alternativas legítimas;
-- exige adicionalidade, riscos, obrigações protegidas, alternativas e custo de oportunidade;
-- distingue reinvestimento proposto, aprovado, realizado e eficaz;
-- não aprova o candidato de destino;
-- não cria Resultado canônico;
-- não torna reinvestimento obrigatório.
+A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato de destino, não cria Resultado canônico e não torna reinvestimento obrigatório.
 
 ## 4. Sequência pessoal vigente
 
 ```text
-Página Inicial pública da Guivos
+Página Inicial pública
 → decisão voluntária de iniciar ou explorar
-→ autenticação e explicação de privacidade, quando necessárias
-→ ambiente protegido para relato do Momento Atual
-→ compreensão inicial com fontes, inferências e desconhecidos
-→ revisão, correção, limitação e autorização
-→ Tela Hoje
+→ explicação do ambiente protegido e das alternativas
+→ autenticação ou criação de conta
+→ finalidades, privacidade e controles
+→ escolha de modalidade
+→ compartilhamento mínimo e progressivo
+→ revisão do que foi recebido
+→ autorização específica para processamento aplicável
+→ processamento visível e interrompível
+→ compreensão inicial apresentada
+→ revisão, correção, limitação e decisão
+→ Tela Hoje, jornada sem personalização ou exploração geral
 ```
 
-A pessoa poderá explorar o ecossistema sem iniciar uma jornada e sem receber afirmações de relevância pessoal.
+## 5. Página Inicial pública
 
-## 5. Resultado da validação da Página Inicial pública
+A Home foi funcionalmente validada e possui wireframe gráfico de baixa fidelidade para computador.
 
-A Página Inicial foi considerada **funcionalmente válida após reformulação**.
+Ela:
 
-### 5.1 Primeira compreensão exigida
+- explica concretamente o que é a Guivos;
+- oferece início voluntário ou exploração sem personalização;
+- distingue caminhos pessoais, gerais e institucionais;
+- organiza o ecossistema por finalidade;
+- não coleta texto pessoal, voz, arquivos ou fontes externas;
+- não expõe informações de jornada ativa.
 
-A primeira área visível deverá explicar:
+A referência móvel permanece não iniciada.
 
-- o que é a Guivos;
-- como o ecossistema pode ser utilizado;
-- que a pessoa mantém suas decisões;
-- que poderá iniciar uma jornada ou explorar sem personalização;
-- que a superfície pública não coleta seu relato.
+## 6. Resultado da validação do início protegido
 
-### 5.2 Hierarquia validada
+O início protegido da jornada foi considerado funcionalmente válido após reformulação.
+
+### 6.1 Princípios confirmados
+
+- explicação anterior à autenticação e à coleta;
+- nenhuma gravação, upload ou processamento iniciado automaticamente;
+- criação de conta separada de autorização de processamento;
+- finalidades compreensíveis e controles visíveis;
+- autorizações específicas quando aplicáveis;
+- compartilhamento mínimo e progressivo;
+- texto, voz, arquivos e perguntas como alternativas;
+- revisão anterior ao processamento material;
+- estados e falhas verificáveis;
+- pausa, retomada, retirada, correção e exclusão;
+- proteção de informações sensíveis e de terceiros;
+- separação entre original, transcrição, extração e interpretação;
+- compreensão inicial revisável;
+- personalização bloqueada antes do gate.
+
+### 6.2 Hierarquia reformulada
 
 ```text
-identidade, propósito e descrição concreta da Guivos
-→ ação principal adequada ao estado e exploração sem personalização
-→ explicação simples de como a Guivos atua
-→ caminhos pessoal, geral e institucional
-→ ecossistema organizado por finalidade
-→ possibilidades gerais opcionais e identificadas
-→ confiança, privacidade, transparência e controle
-→ acesso institucional, ajuda e rodapé
+identificação do ambiente protegido
+→ explicação curta do que acontecerá
+→ alternativas legítimas antes da autenticação
+→ autenticação e recuperação de acesso
+→ finalidades, privacidade e controles
+→ escolha de modalidade
+→ relato mínimo e progressivo
+→ revisão dos conteúdos recebidos
+→ autorização específica de processamento
+→ estado de processamento e possibilidade de interrupção
+→ compreensão inicial revisável
+→ decisão sobre uso e continuidade
 ```
 
-### 5.3 Ações por estado
+### 6.3 Estados funcionais
 
-| Estado | Ação principal | Alternativa legítima |
-|---|---|---|
-| visitante sem jornada | Iniciar minha jornada | Explorar sem personalização |
-| pessoa autenticada sem jornada | Iniciar minha jornada | Conhecer o ecossistema |
-| relato em andamento | Continuar minha jornada | Explorar sem personalização |
-| compreensão aguardando revisão | Revisar minha compreensão | Conhecer o ecossistema |
-| jornada ativa | Ir para a Tela Hoje | Conhecer o ecossistema |
+| Estado | Significado |
+|---|---|
+| não iniciado | nenhuma informação pessoal foi recebida |
+| autenticação pendente | conta ainda não acessada ou criada |
+| privacidade pendente | finalidades e controles ainda não foram decididos |
+| rascunho | conteúdo salvo sem processamento material autorizado |
+| aguardando revisão | conteúdo disponível para correção |
+| autorizado para processamento | finalidades aplicáveis foram decididas |
+| em processamento | a compreensão inicial está sendo organizada |
+| ação necessária | falha, conflito ou proteção adicional exige decisão |
+| compreensão disponível | síntese inicial pronta para revisão |
+| pausado | processo interrompido sem avanço automático |
+| exclusão solicitada | remoção pedida e efeito apresentado |
+| encerrado | relato ou jornada encerrados pela pessoa |
 
-A Home não exibirá conteúdo sensível, resumo do Momento Atual, alertas pessoais ou oportunidades personalizadas.
+### 6.4 Saídas legítimas
 
-### 5.4 Caminhos de entrada
+A pessoa poderá:
 
-A Home distinguirá:
+- voltar à Home;
+- explorar sem personalização;
+- compartilhar menos;
+- salvar rascunho;
+- pausar;
+- retirar uma autorização;
+- remover conteúdo específico;
+- apagar e recomeçar;
+- continuar sem recomendações pessoais;
+- encerrar a jornada.
 
-1. caminho pessoal para iniciar ou continuar uma jornada;
-2. exploração geral de conteúdos, produtos, serviços, viagens, oportunidades, Organizações e Coletivos;
-3. caminho institucional para Organizações, Coletivos, parceiros, patrocinadores e anunciantes.
+## 7. Gate de personalização
 
-Nenhum caminho muda automaticamente o contexto de atuação ou concede autoridade institucional.
+Personalização material exige:
 
-## 6. Resultado do wireframe gráfico da Página Inicial pública
+1. base suficiente para uma leitura inicial limitada;
+2. origem e finalidade identificadas;
+3. distinção entre confirmado, observado, externo autorizado, inferido, desconhecido e contestado;
+4. revisão real pela pessoa;
+5. correção e limitação possíveis;
+6. autorização compatível;
+7. ausência de conflito material não resolvido;
+8. incertezas e alternativas visíveis.
 
-O arquivo vetorial para computador foi criado como hipótese estrutural de baixa fidelidade.
+A Tela Hoje não será apresentada como recompensa pela exposição de mais dados.
 
-### 6.1 Dimensão de referência
+## 8. Modalidades preservadas
 
-A dimensão utilizada é **1.440 × 2.200 pixels**.
+Texto, voz, arquivos, perguntas progressivas e fontes externas autorizadas permanecem alternativas governadas.
 
-Ela serve para verificar:
+Este incremento não define formatos, tamanhos, duração, tecnologia, armazenamento, criptografia, transcrição, extração ou modelo de inteligência artificial.
 
-- densidade;
-- ordem vertical;
-- agrupamento;
-- hierarquia;
-- continuidade entre blocos.
+## 9. Proteções preservadas
 
-Ela não define largura final, pontos de quebra, responsividade ou altura de produção.
+- a Home pública continua sem coleta pessoal;
+- autenticação antecede persistência e processamento associado a uma pessoa;
+- uma confirmação genérica não autoriza todas as finalidades;
+- conteúdo de terceiros não recebe autorização automática;
+- falha ou insuficiência não é preenchida por suposição;
+- publicidade não aumenta relevância pessoal;
+- informação não confirmada não vira fato silenciosamente;
+- ausência de personalização permanece uma opção legítima.
 
-### 6.2 Estrutura materializada
+## 10. Estados alternativos pendentes
 
-O arquivo representa:
+Para o início protegido ainda exigem detalhamento posterior:
 
-- cabeçalho público orientado por intenção;
-- propósito e descrição concreta da Guivos;
-- ação principal e exploração sem personalização;
-- garantia curta de ausência de coleta pública;
-- explicação do funcionamento em seis etapas;
-- caminhos pessoal, geral e institucional;
-- ecossistema agrupado por finalidade;
-- até três possibilidades gerais identificadas;
-- confiança, privacidade, transparência e controle;
-- rodapé institucional.
-
-### 6.3 Natureza preservada
-
-O wireframe:
-
-- é monocromático;
-- utiliza conteúdo ilustrativo;
-- não define identidade visual;
-- não define textos finais;
-- não define componentes técnicos;
-- não cria protótipo navegável;
-- não autoriza desenvolvimento;
-- não representa versão móvel.
-
-## 7. Ecossistema organizado por finalidade
-
-### Jornada e possibilidades para pessoas
-
-- Guivos Journey;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Media.
-
-### Organizações, programas e Coletivos
-
-- Guivos Business.
-
-### Compreensão e transparência
-
-- Guivos Intelligence.
-
-### Publicidade e patrocínio institucional
-
-- Guivos Ads.
-
-**Guivos Mall** é o nome oficial do shopping do ecossistema. **Guivos Ads** é o nome oficial da solução de anúncios, publicidade e patrocínios.
-
-Guivos Ads não constitui recomendação pessoal e publicidade não aumenta relevância funcional.
-
-## 8. Possibilidades gerais na Home
-
-A Home poderá apresentar até três possibilidades gerais quando houver fundamento verificável.
-
-Cada item deverá identificar, quando aplicável:
-
-- origem e Organização responsável;
-- natureza geral, editorial ou patrocinada;
-- preço, gratuidade ou condição comercial;
-- local, modalidade, disponibilidade e prazo;
-- ausência de personalização.
-
-Nenhum item será incluído para preencher espaço.
-
-## 9. Proteção da superfície pública
-
-A Home pública não poderá:
-
-- solicitar relato pessoal;
-- ativar microfone, câmera ou upload;
-- processar voz, imagens ou arquivos;
-- apresentar perfil inferido;
-- utilizar `para você` antes do gate;
-- apresentar anúncio sem identificação;
-- usar popularidade ou posição comercial para simular relevância;
-- expor informações da jornada ativa.
-
-A proteção deverá ser demonstrada pelo comportamento da interface, não apenas por avisos jurídicos.
-
-## 10. Autoridades da Arquitetura da Experiência
-
-Permanecem ativas:
-
-1. Fundação da Arquitetura da Experiência;
-2. Experiência Diária e Tela Hoje;
-3. Mapa Inicial de Jornadas e Telas;
-4. Oportunidades, Organizações, Coletivos e Mapa;
-5. Programa Inicial de Wireframes;
-6. Padrão de Linguagem Clara;
-7. Validação Funcional da Tela Hoje;
-8. Presença Companheira e Coerência de Posicionamento;
-9. Compreensão do Momento, Evidência de Avanço e Explicabilidade;
-10. Validação Funcional do Detalhe de Oportunidade;
-11. Validação Funcional do Cadastro pela Organização;
-12. Fundação Funcional de Organizações e Coletivos;
-13. Validação Funcional da Visão Geral da Organização;
-14. Validação Funcional do Início do Coletivo;
-15. Contrato Funcional das Relações entre Organizações e Coletivos;
-16. Página Inicial da Guivos e Início da Jornada;
-17. Validação Funcional e Reformulação da Página Inicial pública;
-18. Wireframe de Baixa Fidelidade da Página Inicial Pública.
-
-## 11. Estados alternativos pendentes
-
-Para a Página Inicial permanecem pendentes de detalhamento:
-
-- referência móvel;
-- baixa conectividade com versão essencial;
-- texto ampliado e navegação assistiva;
-- idioma ou região parcialmente suportados;
-- solução indisponível na região;
-- ausência de possibilidades gerais;
-- conteúdo geral indisponível;
-- publicidade patrocinada;
-- jornada suspensa ou encerrada;
-- conta com acesso restrito;
-- pessoa que exige proteção adicional;
-- incidente de segurança ou indisponibilidade do início protegido;
-- chegada direta por solução específica;
-- retorno autenticado à Home institucional.
-
-Para a Tela Hoje permanecem pendentes:
-
-- primeira entrada após confirmação da compreensão;
-- estado totalmente vazio;
-- múltiplos itens críticos;
-- informação sensível em modo discreto;
-- falha de fonte externa;
+- recuperação de acesso com proteção adicional;
+- conta restrita ou suspensa;
+- menor de idade ou pessoa que exige proteção adicional;
 - baixa conectividade;
-- contexto de Organização;
-- contexto de Coletivo;
-- alteração de preço em processo iniciado;
-- texto ampliado.
+- texto ampliado e navegação assistiva;
+- gravação interrompida;
+- transcrição incompleta;
+- arquivo incompatível, corrompido ou com conteúdo de terceiro;
+- fonte externa indisponível ou conflitante;
+- processamento demorado;
+- incidente de segurança;
+- exclusão parcialmente concluída;
+- jornada sem personalização material;
+- compreensão inicial insuficiente ou contestada.
+
+## 11. Autoridades da Arquitetura da Experiência
+
+Permanecem ativas as autoridades UXA-001 a UXA-023, com UXA-020 como contrato normativo da primeira entrada e UXA-023 como validação funcional detalhada do início protegido.
 
 ## 12. Sequência oficial vigente
 
@@ -328,7 +260,8 @@ Guivos Journey — concluído funcionalmente e publicado
 → remediação do repositório — concluída
 → Resultados Empresariais — 18 decisões humanas concluídas
 → Página Inicial pública — validada e reformulada
-→ wireframe gráfico para computador — criado
+→ wireframe gráfico da Home para computador — criado
+→ início protegido da jornada — validado e reformulado
 → próximo ato depende de nova autorização
 ```
 
@@ -336,9 +269,9 @@ Guivos Journey — concluído funcionalmente e publicado
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente a entrada protegida da jornada;
+1. criar o wireframe gráfico do início protegido da jornada;
 2. criar a referência móvel da Página Inicial pública;
-3. detalhar texto, voz e arquivos;
+3. detalhar estados especializados de texto, voz e arquivos;
 4. validar a revisão da compreensão inicial;
 5. validar a transição para a Tela Hoje;
 6. selecionar estados alternativos para novos wireframes.
@@ -357,17 +290,14 @@ Nenhum ato é iniciado automaticamente.
 
 Este estado não autoriza:
 
-- iniciar automaticamente a reaplicação dos testes;
-- aprovar ou canonicalizar qualquer candidato;
-- criar códigos canônicos `EO-###` ou `BO-###`;
+- aprovar ou canonicalizar candidatos;
+- criar códigos EO ou BO;
 - iniciar AQS-O01 ou Capacidades Empresariais;
-- tratar a Home ou o wireframe como design visual final;
-- validar automaticamente o início protegido da jornada;
-- criar protótipo navegável ou componentes técnicos;
-- tratar a referência para computador como responsividade concluída;
-- executar testes de usabilidade;
-- definir tecnologia de voz, arquivos ou inteligência artificial;
+- criar wireframe do início protegido automaticamente;
+- tratar a Home ou qualquer wireframe como design final;
+- criar protótipo ou componentes técnicos;
+- definir tecnologia de autenticação, voz, arquivos ou inteligência artificial;
 - executar inferências sensíveis;
-- definir preços ou planos finais;
+- realizar testes de usabilidade;
 - iniciar Engenharia de Produto, ambientes, provas de conceito ou produção;
 - tratar Validação de Mercado como executada.
