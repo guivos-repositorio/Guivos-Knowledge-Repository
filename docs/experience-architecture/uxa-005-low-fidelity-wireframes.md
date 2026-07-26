@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -10,6 +10,7 @@ related:
   - UXA-001
   - UXA-002
   - UXA-003
+  - UXA-003-A1
   - UXA-004
   - UXA-006
   - UXA-007
@@ -18,28 +19,45 @@ related:
   - UXA-020
   - UXA-021
   - UXA-022
+  - UXA-023
   - PAS-001
 normative: false
 ---
 
-# Programa Inicial de Wireframes de Baixa Fidelidade (identificador UXA-005)
+# Programa Inicial de Wireframes de Baixa Fidelidade
 
 ## 1. Finalidade
 
-Este programa materializa hipóteses de arquitetura da experiência em wireframes de baixa fidelidade, permitindo validar organização, hierarquia, conteúdo, ações e continuidade entre superfícies antes de qualquer decisão de identidade visual ou implementação.
+Este programa materializa hipóteses de Arquitetura da Experiência em wireframes de baixa fidelidade. O objetivo é validar organização, hierarquia, conteúdo, ações e continuidade entre superfícies antes de qualquer decisão de identidade visual ou implementação.
 
-Os wireframes e contratos estruturais atualmente incluídos são:
+## 2. Regra de ordem
 
-1. **Wireframe de Baixa Fidelidade da Tela Hoje** (identificador UXA-006);
-2. **Wireframe de Baixa Fidelidade do Detalhe de Oportunidade** (identificador UXA-007);
-3. **Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização** (identificador UXA-008);
-4. **Página Inicial da Guivos e Início da Jornada** (identificador UXA-020), com contrato funcional e wireframes textuais;
-5. **Validação Funcional e Reformulação da Página Inicial Pública** (identificador UXA-021);
-6. **Wireframe de Baixa Fidelidade da Página Inicial Pública** (identificador UXA-022), com arquivo gráfico vetorial para computador.
+Os identificadores preservam a ordem histórica de criação dos documentos. Eles não determinam a ordem em que as telas aparecem para a pessoa.
 
-A HOME antecede a Tela Hoje na primeira entrada pessoal. Essa sequência não invalida os wireframes anteriores; ela delimita melhor suas responsabilidades.
+A ordem funcional da primeira entrada é:
 
-## 2. Natureza dos artefatos
+```text
+Página Inicial pública da Guivos
+→ início protegido da jornada
+→ compreensão inicial revisável
+→ Tela Hoje
+```
+
+A correção formal está registrada em [Correção da Ordem Funcional da Primeira Entrada Pessoal](uxa-003-a1-first-entry-functional-order.md).
+
+## 3. Artefatos pela ordem funcional
+
+1. **Página Inicial da Guivos e Início da Jornada** — identificador UXA-020, com o contrato entre Home, ambiente protegido e Tela Hoje;
+2. **Validação Funcional e Reformulação da Página Inicial Pública** — identificador UXA-021;
+3. **Wireframe de Baixa Fidelidade da Página Inicial Pública** — identificador UXA-022, com arquivo gráfico vetorial para computador;
+4. **Validação Funcional do Início Protegido da Jornada** — identificador UXA-023;
+5. **Wireframe de Baixa Fidelidade da Tela Hoje** — identificador UXA-006, utilizado somente depois da compreensão inicial suficiente e autorizada;
+6. **Wireframe de Baixa Fidelidade do Detalhe de Oportunidade** — identificador UXA-007;
+7. **Wireframe de Baixa Fidelidade do Cadastro de Oportunidade pela Organização** — identificador UXA-008.
+
+A Página Inicial pública antecede o início protegido, e ambos antecedem a Tela Hoje.
+
+## 4. Natureza dos artefatos
 
 Os wireframes:
 
@@ -49,17 +67,17 @@ Os wireframes:
 - podem ser alterados sem migração de produto;
 - não definem componentes técnicos;
 - não constituem especificação de implementação;
-- não substituem os contratos especializados da Especificação Arquitetural do Guivos Journey (identificador PAS-001);
+- não substituem os contratos especializados do Guivos Journey;
 - não autorizam protótipo de alta fidelidade.
 
 Wireframes textuais e arquivos gráficos vetoriais possuem a mesma natureza preparatória. Um arquivo gráfico materializa a hierarquia para inspeção, mas não equivale a identidade visual, protótipo navegável ou desenvolvimento.
 
-## 3. O que deverá ser validado
+## 5. O que deverá ser validado
 
-### 3.1 Compreensão
+### 5.1 Compreensão
 
-- A finalidade da superfície é compreendida rapidamente?
-- A diferença entre HOME e Tela Hoje é clara?
+- A finalidade de cada superfície é compreendida rapidamente?
+- A diferença entre Página Inicial pública, início protegido e Tela Hoje é clara?
 - A pessoa compreende como iniciar sua jornada e o que acontecerá com o relato?
 - A pessoa reconhece que a Home pública não coleta relatos pessoais?
 - O participante reconhece o que merece atenção na Tela Hoje?
@@ -68,17 +86,17 @@ Wireframes textuais e arquivos gráficos vetoriais possuem a mesma natureza prep
 - Ações principais e alternativas são distinguíveis?
 - Identificadores técnicos podem ser ignorados sem prejudicar a leitura?
 
-### 3.2 Hierarquia
+### 5.2 Hierarquia
 
 - O item mais importante ocupa a posição correta?
-- A HOME apresenta propósito e descrição concreta antes das soluções comerciais?
+- A Home apresenta propósito e descrição concreta antes das soluções comerciais?
 - Os caminhos pessoal, geral e institucional permanecem distintos?
 - O ecossistema é organizado por finalidade, e não como lista plana?
 - Informações secundárias permanecem acessíveis sem competir com a decisão?
 - A tela evita excesso de cartões e blocos?
 - Estados vazios e ausência legítima permanecem possíveis?
 
-### 3.3 Autonomia
+### 5.3 Autonomia
 
 - A pessoa consegue conhecer o ecossistema sem iniciar a jornada?
 - A pessoa escolhe entre texto, voz, arquivos, perguntas progressivas ou adiamento no ambiente protegido?
@@ -86,14 +104,14 @@ Wireframes textuais e arquivos gráficos vetoriais possuem a mesma natureza prep
 - O fluxo evita pressionar contratação ou inscrição?
 - A Organização consegue salvar rascunho, revisar e corrigir antes do envio?
 
-### 3.4 Continuidade
+### 5.4 Continuidade
 
-- A HOME conduz naturalmente ao início protegido, à compreensão inicial e à Tela Hoje?
+- A Home conduz naturalmente ao início protegido, à compreensão inicial e à Tela Hoje?
 - A Tela Hoje conduz naturalmente ao Próximo Passo, oportunidade, Coletivo ou controle aplicável?
 - O detalhe de oportunidade preserva contexto, origem e condições antes da ação?
 - O cadastro organizacional produz informações suficientes para cartões, detalhe, mapa, busca e comparação?
 
-## 4. Convenções de baixa fidelidade
+## 6. Convenções de baixa fidelidade
 
 | Elemento | Convenção |
 |---|---|
@@ -106,7 +124,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem a mesma natureza prep
 
 Cor, iconografia e tipografia não possuem significado definitivo neste programa.
 
-## 5. Dimensões iniciais de tela
+## 7. Dimensões iniciais
 
 | Wireframe | Canal | Dimensão de referência |
 |---|---|---|
@@ -119,7 +137,7 @@ As dimensões servem somente para verificar densidade e hierarquia iniciais. Res
 
 A referência gráfica da Página Inicial pública representa o estado principal para visitante sem jornada. A versão móvel e as variações por estado permanecem atos posteriores separados.
 
-## 6. Relação entre os wireframes
+## 8. Relação entre os wireframes
 
 ```text
 Página Inicial pública da Guivos
@@ -139,20 +157,21 @@ Organização
 
 O início da jornada não garante recomendação. O cadastro não garante ativação. A ativação não garante apresentação. A apresentação não representa recomendação definitiva nem contratação.
 
-Antes da compreensão inicial confirmada, a HOME e as soluções do ecossistema poderão apresentar somente conteúdo geral, institucional, editorial ou resultante de busca explícita, sem afirmar relevância pessoal.
+Antes da compreensão inicial confirmada, a Home e as soluções do ecossistema poderão apresentar somente conteúdo geral, institucional, editorial ou resultante de busca explícita, sem afirmar relevância pessoal.
 
-## 7. Artefatos especializados
+## 9. Artefatos especializados
 
 | Nome completo | Identificador | Superfície | Artefato visual |
 |---|---|---|---|
-| [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | HOME e início protegido | wireframes textuais no documento |
-| [Validação Funcional da Página Inicial Pública](uxa-021-public-home-functional-validation-and-reformulation.md) | UXA-021 | HOME pública | hierarquia funcional validada |
-| [Wireframe da Página Inicial Pública](uxa-022-public-home-low-fidelity-wireframe.md) | UXA-022 | HOME pública | [arquivo gráfico vetorial](../assets/wireframes/uxa-022-public-home-desktop.svg) |
-| [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | Tela Hoje | [arquivo gráfico vetorial](../assets/wireframes/uxa-006-hoje-mobile.svg) |
-| [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | Detalhe de oportunidade | [arquivo gráfico vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
-| [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | Cadastro pela Organização | [arquivo gráfico vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
+| [Página Inicial da Guivos e Início da Jornada](uxa-020-home-and-journey-entry.md) | UXA-020 | Home e início protegido | wireframes textuais no documento |
+| [Validação Funcional da Página Inicial Pública](uxa-021-public-home-functional-validation-and-reformulation.md) | UXA-021 | Home pública | hierarquia funcional validada |
+| [Wireframe da Página Inicial Pública](uxa-022-public-home-low-fidelity-wireframe.md) | UXA-022 | Home pública | [arquivo gráfico vetorial](../assets/wireframes/uxa-022-public-home-desktop.svg) |
+| [Validação do Início Protegido da Jornada](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) | UXA-023 | início protegido | contrato funcional validado; wireframe gráfico pendente |
+| [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | Tela Hoje recorrente | [arquivo gráfico vetorial](../assets/wireframes/uxa-006-hoje-mobile.svg) |
+| [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe da oportunidade | [arquivo gráfico vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
+| [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro pela Organização | [arquivo gráfico vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
-## 8. Resultado da Página Inicial pública
+## 10. Resultado da Página Inicial pública
 
 O wireframe gráfico da Página Inicial pública materializa:
 
@@ -170,7 +189,7 @@ O wireframe gráfico da Página Inicial pública materializa:
 
 O arquivo representa conteúdo ilustrativo e não cria textos finais, ofertas reais ou componentes de interface.
 
-## 9. Limites
+## 11. Limites
 
 Este programa não:
 
@@ -185,19 +204,13 @@ Este programa não:
 - define formatos técnicos de voz ou arquivos;
 - inicia Engenharia de Produto.
 
-## 10. Padrão de linguagem
-
-O **Padrão de Linguagem Clara e Identificadores Técnicos** (identificador UXA-009) é obrigatório para revisões e comunicações desta frente.
-
-O nome completo deverá aparecer antes do código, e estados técnicos deverão possuir explicação em português.
-
-## 11. Próximo ponto de decisão
+## 12. Próximos pontos de decisão
 
 Os próximos pontos deverão ser autorizados separadamente e poderão:
 
-1. validar funcionalmente o início protegido da jornada;
+1. criar o wireframe gráfico do início protegido da jornada;
 2. criar a referência móvel da Página Inicial pública;
-3. detalhar captura por texto, voz e arquivo;
+3. detalhar estados de texto, voz e arquivos;
 4. validar a compreensão inicial e seus controles;
 5. detalhar a primeira Tela Hoje após a transição;
 6. selecionar estados alternativos e exceções para novos wireframes;
