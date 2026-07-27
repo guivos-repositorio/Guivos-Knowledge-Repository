@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.26 — Mapa de Oportunidades Validado e Reformulado |
+| Marco | M7.27 — Estado do Mapa sem Localização Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em PAS-001 1.0.0; nove capacidades concluídas |
@@ -22,7 +22,8 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
-| Estados alternativos do Mapa | governados; wireframes não iniciados |
+| Estado de localização desativada | wireframe móvel criado; validação especializada pendente |
+| Demais estados alternativos do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -59,20 +60,22 @@ A validação funcional confirmou explicação anterior à autenticação e à c
 
 O Mapa é uma superfície própria da navegação recorrente, sincronizada com Explorar, e foi considerado funcionalmente válido após reformulação.
 
-A UXA-024 e a UXA-025 estabelecem:
+A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa territorial, Mapa e Lista como uma descoberta única, filtros ativos, quantidade de resultados, `Pesquisar nesta área`, camadas, legenda, localização, privacidade, cartão resumido, relação comercial e rota contextual.
 
-- contexto `Agindo como`;
-- pesquisa territorial;
-- Mapa e Lista como uma descoberta única;
-- filtros ativos, quantidade e limpeza;
-- quantidade de resultados;
-- ação `Pesquisar nesta área`;
-- camadas, pontos, agrupamentos e legenda;
-- localização aproximada, raio e privacidade;
-- cartão resumido com preço, distância, data, vagas e acessibilidade;
-- explicação de relevância e relação comercial;
-- rota condicionada à disponibilidade segura do endereço;
-- estados sem localização, sem resultados, com erro ou baixa conectividade.
+## Estado sem localização
+
+A UXA-026 demonstra que o Mapa continua disponível quando a localização do dispositivo está desativada.
+
+O estado apresenta:
+
+- exploração geral sem personalização;
+- cidade ou região informada manualmente;
+- pesquisa e filtros preservados;
+- Mapa e Lista sincronizados;
+- área territorial sem marcador da pessoa;
+- resultados explicados por região e busca explícita;
+- ativação opcional de localização aproximada;
+- origem manual para rota quando aplicável.
 
 O mapa desenhado é esquemático e não representa geografia, endereço ou coordenada real.
 
@@ -88,8 +91,9 @@ O mapa desenhado é esquemático e não representa geografia, endereço ou coord
 8. Posição do Mapa na navegação recorrente consolidada.
 9. Wireframe móvel do Mapa de Oportunidades criado.
 10. Mapa de Oportunidades funcionalmente validado e reformulado.
-11. Próximo ato dependente de nova autorização.
-12. Reaplicação dos quatro testes dependente de autorização independente.
+11. Estado do Mapa com localização desativada criado.
+12. Próximo ato dependente de nova autorização.
+13. Reaplicação dos quatro testes dependente de autorização independente.
 
 ## Decisão COD-018
 
@@ -110,7 +114,8 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
 - [Adendo Canônico do Wireframe do Mapa](project/canonical-consolidation-matrix-uxa-024-addendum.md)
 - [Adendo Canônico da Validação do Mapa](project/canonical-consolidation-matrix-uxa-025-addendum.md)
-- [Histórico de Alterações 1.48.0](project/changelog-1.48.0-uxa-025.md)
+- [Adendo Canônico do Estado sem Localização](project/canonical-consolidation-matrix-uxa-026-addendum.md)
+- [Histórico de Alterações 1.49.0](project/changelog-1.49.0-uxa-026.md)
 
 ### Arquiteturas e modelos
 
@@ -124,6 +129,7 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Validação do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Mapa de Oportunidades](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Validação Funcional do Mapa](experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
+- [Mapa com Localização Desativada](experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
 
 ### Resultados Empresariais
 
