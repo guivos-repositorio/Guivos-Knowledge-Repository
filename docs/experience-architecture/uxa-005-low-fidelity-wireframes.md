@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-000
@@ -24,6 +24,7 @@ related:
   - UXA-025
   - UXA-026
   - UXA-027
+  - UXA-028
   - PAS-001
 normative: false
 ---
@@ -59,8 +60,9 @@ A correção formal está registrada em [Correção da Ordem Funcional da Primei
 7. **Validação Funcional do Mapa de Oportunidades** — UXA-025;
 8. **Estado do Mapa com Localização Desativada** — UXA-026;
 9. **Validação do Estado sem Localização** — UXA-027;
-10. **Wireframe do Detalhe de Oportunidade** — UXA-007;
-11. **Wireframe do Cadastro pela Organização** — UXA-008.
+10. **Visualização em Lista do Mapa** — UXA-028;
+11. **Wireframe do Detalhe de Oportunidade** — UXA-007;
+12. **Wireframe do Cadastro pela Organização** — UXA-008.
 
 O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo Detalhe de Oportunidade.
 
@@ -88,8 +90,10 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A pessoa reconhece que a Home pública não coleta relatos pessoais?
 - O participante compreende o que merece atenção na Tela Hoje?
 - A alternância entre Lista e Mapa representa a mesma descoberta?
+- A diferença entre `Explorar` e Lista do Mapa é clara?
 - O Mapa continua compreensível quando a localização está desativada?
 - A pessoa reconhece que posição não acessada difere de região manual?
+- Quantidade, ordenação e critérios da Lista são compreensíveis?
 - Preço, condições, elegibilidade, origem e relação comercial estão claros?
 - Ações principais e alternativas são distinguíveis?
 
@@ -100,6 +104,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - Os caminhos pessoal, geral e institucional permanecem distintos?
 - O Mapa preserva espaço territorial sem ocultar pesquisa, filtros, resultados e privacidade?
 - O estado sem localização apresenta privacidade e região manual antes dos resultados?
+- A Lista apresenta quantidade e ordenação antes dos cartões?
 - O cartão selecionado oferece contexto suficiente antes do detalhe?
 - Salvamento e origem manual são encontráveis sem competir com o detalhe?
 - Estados vazios e ausência legítima permanecem possíveis?
@@ -111,6 +116,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - O participante consegue alterar filtros, raio, localização e relevância?
 - Localização exata, aproximada, manual e desativada são alternativas reais?
 - A recusa de localização preserva busca, Mapa, Lista, Detalhe e salvamento?
+- A pessoa pode escolher Lista por preferência, acessibilidade ou conectividade?
 - A ativação posterior permanece opcional?
 - O fluxo evita pressionar contratação, inscrição ou consentimento?
 
@@ -119,6 +125,8 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A Home conduz naturalmente ao início protegido, à compreensão e à Tela Hoje?
 - A Tela Hoje conduz ao Mapa por um recorte compacto, sem incorporar o mapa completo?
 - Explorar e Mapa permanecem sincronizados?
+- Mapa e Lista preservam a mesma consulta territorial?
+- Região, busca, filtros, ordenação e item selecionado permanecem ao trocar de modo?
 - O estado sem localização preserva região, busca e filtros ao alternar para Lista?
 - O Mapa conduz ao Detalhe de Oportunidade preservando contexto e condições?
 - A origem manual para rota não altera o consentimento territorial?
@@ -137,6 +145,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 | marca textual | filtro ativo ou estado confirmado sem dependência exclusiva de cor |
 | ausência de marcador | localização da pessoa não utilizada ou não disponível |
 | declaração textual | confirmação de estado que não pode depender somente do desenho |
+| rótulo `Selecionada` | preservação explícita de item entre Mapa e Lista |
 
 Cor, iconografia e tipografia não possuem significado definitivo neste programa.
 
@@ -148,6 +157,7 @@ Cor, iconografia e tipografia não possuem significado definitivo neste programa
 | Tela Hoje | aplicativo móvel | 390 × 844 |
 | Mapa de Oportunidades | aplicativo móvel | 390 × 844 |
 | Mapa — localização desativada | aplicativo móvel | 390 × 844 |
+| Mapa — visualização em Lista | aplicativo móvel | 390 × 844 |
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
 
@@ -167,7 +177,8 @@ Página Inicial pública da Guivos
 → decisão consciente de salvar, comparar ou iniciar processo
 
 Explorar em lista
-↔ visualizar no Mapa
+↔ abrir consulta territorial no Mapa
+↔ alternar entre Mapa e Lista sem perder contexto
 ↔ abrir Detalhe de Oportunidade
 
 Localização desativada
@@ -176,6 +187,13 @@ Localização desativada
 → explorar no Mapa ou na Lista
 → salvar ou abrir Detalhe
 → definir origem manual ou ativar localização opcionalmente
+
+Lista do Mapa
+→ preservar região, busca e filtros
+→ mostrar quantidade e ordenação
+→ comparar cartões
+→ manter item selecionado
+→ retornar ao Mapa na mesma consulta
 
 Organização
 → cadastro governado da oportunidade
@@ -200,6 +218,7 @@ Antes da compreensão inicial confirmada, as soluções poderão apresentar some
 | [Validação Funcional do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md) | UXA-025 | Mapa recorrente | reformulação e critérios funcionais |
 | [Mapa com Localização Desativada](uxa-026-opportunity-map-location-disabled-state.md) | UXA-026 | estado alternativo | [arquivo vetorial](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg) |
 | [Validação do Estado sem Localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md) | UXA-027 | estado alternativo | validação e reformulação funcional |
+| [Visualização em Lista do Mapa](uxa-028-opportunity-map-list-state.md) | UXA-028 | modo alternativo | [arquivo vetorial](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg) |
 | [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | [arquivo vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
 | [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | [arquivo vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
@@ -228,7 +247,24 @@ A UXA-026 reformulada demonstra:
 
 A UXA-027 considera o estado funcionalmente válido após reformulação.
 
-## 12. Demais estados funcionais do Mapa
+## 12. Visualização em Lista do Mapa
+
+A UXA-028 demonstra:
+
+- Lista selecionada dentro da superfície Mapa;
+- localização desativada, posição não acessada e região manual;
+- pesquisa, filtros e quantidade preservados;
+- ordenação explícita;
+- cartões comparáveis;
+- oportunidade selecionada;
+- explicação de origem e relação comercial;
+- salvamento, definição de origem e Detalhe;
+- retorno ao Mapa sem perda de contexto;
+- alternativa integral para acessibilidade e falha cartográfica.
+
+A validação funcional especializada permanece pendente.
+
+## 13. Demais estados funcionais do Mapa
 
 Permanecem governados, sem wireframes específicos neste incremento:
 
@@ -244,7 +280,7 @@ Permanecem governados, sem wireframes específicos neste incremento:
 - contexto sem gate;
 - mapa indisponível com continuidade pela Lista.
 
-## 13. Limites
+## 14. Limites
 
 Este programa não:
 
@@ -252,6 +288,7 @@ Este programa não:
 - define marca, paleta, tipografia ou ilustração;
 - define tecnologia ou fornecedor de mapas;
 - cria geocodificação, rotas ou rastreamento;
+- define algoritmo de ordenação;
 - define textos finais de interface;
 - conclui acessibilidade ou responsividade;
 - cria protótipo navegável;
@@ -259,11 +296,11 @@ Este programa não:
 - define preço ou oferta comercial real;
 - inicia Engenharia de Produto.
 
-## 14. Próximos pontos de decisão
+## 15. Próximos pontos de decisão
 
 Os próximos pontos deverão ser autorizados separadamente e poderão:
 
-1. criar o estado alternativo em Lista;
+1. validar funcionalmente a visualização em Lista;
 2. criar o estado sem resultados;
 3. criar referência do Mapa para computador;
 4. criar o wireframe gráfico do início protegido;
