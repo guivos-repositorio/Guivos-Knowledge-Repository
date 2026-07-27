@@ -166,6 +166,7 @@ nav:
           - UXA-028 — Visualização em Lista do Mapa: experience-architecture/uxa-028-opportunity-map-list-state.md
           - UXA-029 — Validação da Lista do Mapa: experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md
           - UXA-030 — Mapa sem Resultados: experience-architecture/uxa-030-opportunity-map-no-results-state.md
+          - UXA-031 — Validação do Estado sem Resultados: experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
