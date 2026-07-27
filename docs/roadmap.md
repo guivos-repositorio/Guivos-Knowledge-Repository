@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.2.0
-title: Roadmap Arquitetural — Estado do Mapa sem Localização Validado
+id: ROADMAP-12.3.0
+title: Roadmap Arquitetural — Visualização em Lista do Mapa Criada
 status: active
-version: 12.2.0
+version: 12.3.0
 owner: Guivos
 last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.1.0
+  - ROADMAP-12.2.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -24,10 +24,11 @@ related:
   - UXA-025
   - UXA-026
   - UXA-027
-  - M7.28
+  - UXA-028
+  - M7.29
 ---
 
-# Roadmap Arquitetural — Estado do Mapa sem Localização Validado
+# Roadmap Arquitetural — Visualização em Lista do Mapa Criada
 
 ## 1. Autoridade
 
@@ -38,7 +39,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | estado do Mapa sem localização funcionalmente validado e reformulado | M7.28; UXA-026; UXA-027 |
+| Marco | visualização em Lista do Mapa materializada em wireframe móvel | M7.29; UXA-028 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -48,6 +49,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
+| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente | UXA-028 |
 | Demais estados alternativos do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -72,7 +74,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 16. wireframe gráfico móvel do Mapa de Oportunidades criado;
 17. Mapa de Oportunidades funcionalmente validado e reformulado;
 18. estado móvel de localização desativada criado;
-19. estado sem localização funcionalmente validado e reformulado.
+19. estado sem localização funcionalmente validado e reformulado;
+20. visualização móvel em Lista do Mapa criada.
 
 ## 4. Sequência pessoal vigente
 
@@ -85,41 +88,42 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O Mapa não integra a sequência obrigatória de primeira entrada.
+O Mapa não integra a sequência obrigatória de primeira entrada. Mapa e Lista são modos internos da mesma superfície recorrente.
 
-## 5. Resultado da validação especializada
+## 5. Resultado da visualização em Lista
 
-A UXA-027 confirmou, após reformulação:
+A UXA-028 demonstra:
 
-- compreensão de que o Mapa funciona sem localização;
-- confirmação de que a posição não foi acessada;
-- região manual explicitamente distinta da posição pessoal;
-- pesquisa, filtros, Mapa e Lista preservados;
-- área territorial sem marcador ou posição presumida;
-- linguagem geral sem personalização indevida;
-- distância pessoal omitida sem origem válida;
-- salvamento disponível sem localização;
-- origem manual para rota;
-- continuidade para Detalhe de Oportunidade;
-- ativação de localização aproximada como ação opcional.
+- item `Mapa` preservado na navegação recorrente;
+- alternância interna `Mapa ↔ Lista`;
+- localização desativada, posição não acessada e região manual;
+- pesquisa e filtros preservados;
+- quantidade de resultados consistente com a consulta;
+- ordenação explícita por critérios declarados;
+- cartões comparáveis;
+- oportunidade selecionada preservada;
+- explicação de origem e relação comercial separadas;
+- salvamento sem localização;
+- definição de origem específica;
+- continuidade para o Detalhe;
+- retorno ao Mapa sem perda de contexto;
+- alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.
 
-A referência possui 390 por 844 pixels e não define geografia real, tecnologia cartográfica, coordenadas, design ou implementação.
+A referência possui 390 por 844 pixels e não define algoritmo, tecnologia, design ou implementação.
 
 ## 6. Proteções preservadas
 
+- Lista não duplica `Explorar` nem abandona a consulta territorial;
 - localização permanece opcional;
-- recusa de permissão não bloqueia exploração;
-- posição não acessada é declarada quando verdadeiro;
 - região manual não equivale a posição atual;
-- marcador pessoal não aparece no estado;
-- linguagem personalizada é removida sem gate;
+- busca, filtros e seleção não são apagados ao trocar de modo;
+- ordenação não é apresentada como personalização sem gate;
+- patrocínio não aumenta relevância de forma oculta;
 - salvamento não autoriza localização ou rastreamento;
 - origem manual não autoriza histórico territorial;
-- rastreamento contínuo não é exigido;
+- troca de modo não altera permissões;
 - residências e locais sensíveis permanecem protegidos;
-- proximidade não equivale a relevância;
-- patrocínio não aumenta relevância funcional;
-- rota depende de origem válida e não contorna endereço protegido.
+- dados ausentes não são completados por inferência.
 
 ## 7. Estado dos Resultados Empresariais
 
@@ -145,7 +149,7 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer um ato separado:
 
-1. criar o estado alternativo em Lista;
+1. validar funcionalmente a visualização em Lista;
 2. criar o estado sem resultados;
 3. criar referência do Mapa para computador;
 4. criar o wireframe gráfico do início protegido;
