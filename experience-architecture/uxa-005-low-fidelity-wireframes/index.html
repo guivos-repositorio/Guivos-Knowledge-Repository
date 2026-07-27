@@ -3503,10 +3503,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-estados-funcionais-do-mapa" class="md-nav__link">
+  <a href="#11-estado-de-localizacao-desativada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Estados funcionais do Mapa
+        11. Estado de localização desativada
       
     </span>
   </a>
@@ -3514,10 +3514,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-limites" class="md-nav__link">
+  <a href="#12-demais-estados-funcionais-do-mapa" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Limites
+        12. Demais estados funcionais do Mapa
       
     </span>
   </a>
@@ -3525,10 +3525,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-proximos-pontos-de-decisao" class="md-nav__link">
+  <a href="#13-limites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. Próximos pontos de decisão
+        13. Limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-proximos-pontos-de-decisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Próximos pontos de decisão
       
     </span>
   </a>
@@ -4166,6 +4177,41 @@
   
   
     <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uxa-026-opportunity-map-location-disabled-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-026 — Mapa com Localização Desativada
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
   
 
   
@@ -6785,10 +6831,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-estados-funcionais-do-mapa" class="md-nav__link">
+  <a href="#11-estado-de-localizacao-desativada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Estados funcionais do Mapa
+        11. Estado de localização desativada
       
     </span>
   </a>
@@ -6796,10 +6842,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-limites" class="md-nav__link">
+  <a href="#12-demais-estados-funcionais-do-mapa" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Limites
+        12. Demais estados funcionais do Mapa
       
     </span>
   </a>
@@ -6807,10 +6853,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#13-proximos-pontos-de-decisao" class="md-nav__link">
+  <a href="#13-limites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        13. Próximos pontos de decisão
+        13. Limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-proximos-pontos-de-decisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Próximos pontos de decisão
       
     </span>
   </a>
@@ -6863,6 +6920,7 @@
 <li><strong>Wireframe da Tela Hoje</strong> — UXA-006, depois da compreensão inicial suficiente e autorizada;</li>
 <li><strong>Wireframe reformulado do Mapa de Oportunidades</strong> — UXA-024, como superfície recorrente própria;</li>
 <li><strong>Validação Funcional do Mapa de Oportunidades</strong> — UXA-025;</li>
+<li><strong>Estado do Mapa com Localização Desativada</strong> — UXA-026;</li>
 <li><strong>Wireframe do Detalhe de Oportunidade</strong> — UXA-007;</li>
 <li><strong>Wireframe do Cadastro pela Organização</strong> — UXA-008.</li>
 </ol>
@@ -6888,6 +6946,7 @@
 <li>A pessoa reconhece que a Home pública não coleta relatos pessoais?</li>
 <li>O participante compreende o que merece atenção na Tela Hoje?</li>
 <li>A alternância entre Lista e Mapa representa a mesma descoberta?</li>
+<li>O Mapa continua compreensível quando a localização está desativada?</li>
 <li>Preço, condições, elegibilidade, origem e relação comercial estão claros?</li>
 <li>Ações principais e alternativas são distinguíveis?</li>
 </ul>
@@ -6897,6 +6956,7 @@
 <li>A Home apresenta propósito antes das soluções comerciais?</li>
 <li>Os caminhos pessoal, geral e institucional permanecem distintos?</li>
 <li>O Mapa preserva espaço territorial sem ocultar pesquisa, filtros, resultados e privacidade?</li>
+<li>O estado sem localização apresenta região manual antes dos resultados?</li>
 <li>O cartão selecionado oferece contexto suficiente antes do detalhe?</li>
 <li>Estados vazios e ausência legítima permanecem possíveis?</li>
 </ul>
@@ -6906,13 +6966,15 @@
 <li>A pessoa escolhe como relatar no ambiente protegido?</li>
 <li>O participante consegue alterar filtros, raio, localização e relevância?</li>
 <li>Localização exata, aproximada, manual e desativada são alternativas reais?</li>
-<li>O fluxo evita pressionar contratação ou inscrição?</li>
+<li>A recusa de localização preserva busca, Mapa, Lista e Detalhe?</li>
+<li>O fluxo evita pressionar contratação, inscrição ou consentimento?</li>
 </ul>
 <h3 id="54-continuidade">5.4 Continuidade<a class="headerlink" href="#54-continuidade" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A Home conduz naturalmente ao início protegido, à compreensão e à Tela Hoje?</li>
 <li>A Tela Hoje conduz ao Mapa por um recorte compacto, sem incorporar o mapa completo?</li>
 <li>Explorar e Mapa permanecem sincronizados?</li>
+<li>O estado sem localização preserva região, busca e filtros ao alternar para Lista?</li>
 <li>O Mapa conduz ao Detalhe de Oportunidade preservando contexto e condições?</li>
 <li>O cadastro organizacional produz informações suficientes para cartão, detalhe, mapa, busca e comparação?</li>
 </ul>
@@ -6953,6 +7015,10 @@
 <td>marca textual</td>
 <td>filtro ativo ou estado confirmado sem dependência exclusiva de cor</td>
 </tr>
+<tr>
+<td>ausência de marcador</td>
+<td>localização da pessoa não utilizada ou não disponível</td>
+</tr>
 </tbody>
 </table>
 <p>Cor, iconografia e tipografia não possuem significado definitivo neste programa.</p>
@@ -6978,6 +7044,11 @@
 </tr>
 <tr>
 <td>Mapa de Oportunidades</td>
+<td>aplicativo móvel</td>
+<td>390 × 844</td>
+</tr>
+<tr>
+<td>Mapa — localização desativada</td>
 <td>aplicativo móvel</td>
 <td>390 × 844</td>
 </tr>
@@ -7008,6 +7079,12 @@
 Explorar em lista
 ↔ visualizar no Mapa
 ↔ abrir Detalhe de Oportunidade
+
+Localização desativada
+→ escolher cidade ou região
+→ explorar no Mapa ou na Lista
+→ abrir Detalhe
+→ definir origem manual ou ativar localização opcionalmente
 
 Organização
 → cadastro governado da oportunidade
@@ -7070,6 +7147,12 @@ Organização
 <td>reformulação e critérios funcionais</td>
 </tr>
 <tr>
+<td><a href="../uxa-026-opportunity-map-location-disabled-state/">Mapa com Localização Desativada</a></td>
+<td>UXA-026</td>
+<td>estado alternativo</td>
+<td><a href="../../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg">arquivo vetorial</a></td>
+</tr>
+<tr>
 <td><a href="../uxa-007-opportunity-detail-low-fidelity-wireframe/">Wireframe do Detalhe de Oportunidade</a></td>
 <td>UXA-007</td>
 <td>detalhe</td>
@@ -7084,30 +7167,25 @@ Organização
 </tbody>
 </table>
 <h2 id="10-resultado-validado-do-mapa">10. Resultado validado do Mapa<a class="headerlink" href="#10-resultado-validado-do-mapa" title="Permanent link">&para;</a></h2>
-<p>O wireframe reformulado do Mapa demonstra:</p>
-<ul>
-<li><code>Agindo como: Minha jornada</code>;</li>
-<li>pesquisa territorial;</li>
-<li>alternância entre Mapa e Lista;</li>
-<li>filtros ativos identificados;</li>
-<li>quantidade de filtros e ação de limpeza;</li>
-<li>quantidade de resultados na área;</li>
-<li><code>Pesquisar nesta área</code>;</li>
-<li>mapa esquemático sem geografia real;</li>
-<li>camadas, agrupamentos, pontos e legenda;</li>
-<li>localização aproximada declarada;</li>
-<li>controles de privacidade encontráveis;</li>
-<li>cartão resumido de oportunidade;</li>
-<li>preço, distância, data, vagas, acessibilidade e origem;</li>
-<li>explicação de relevância e relação comercial;</li>
-<li>rota condicionada à disponibilidade segura do endereço;</li>
-<li>navegação recorrente com Mapa selecionado.</li>
-</ul>
+<p>O wireframe reformulado do Mapa demonstra contexto de atuação, pesquisa territorial, Mapa e Lista sincronizados, filtros ativos, resultados, <code>Pesquisar nesta área</code>, mapa esquemático, camadas, legenda, localização aproximada, privacidade, cartão resumido, relação comercial e rota contextual.</p>
 <p>A UXA-025 considera o Mapa funcionalmente válido após reformulação.</p>
-<h2 id="11-estados-funcionais-do-mapa">11. Estados funcionais do Mapa<a class="headerlink" href="#11-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
-<p>Estão governados, sem wireframes específicos neste incremento:</p>
+<h2 id="11-estado-de-localizacao-desativada">11. Estado de localização desativada<a class="headerlink" href="#11-estado-de-localizacao-desativada" title="Permanent link">&para;</a></h2>
+<p>A UXA-026 demonstra:</p>
 <ul>
-<li>localização desativada;</li>
+<li>exploração geral sem personalização;</li>
+<li>região escolhida manualmente;</li>
+<li>pesquisa, filtros e resultados preservados;</li>
+<li>Mapa sem marcador da pessoa;</li>
+<li>Lista como alternativa integral;</li>
+<li>oportunidade explicada por região e busca;</li>
+<li>distância pessoal omitida;</li>
+<li>ativação opcional de localização aproximada;</li>
+<li>origem manual para rota quando aplicável.</li>
+</ul>
+<p>A validação funcional especializada deste estado permanece pendente.</p>
+<h2 id="12-demais-estados-funcionais-do-mapa">12. Demais estados funcionais do Mapa<a class="headerlink" href="#12-demais-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
+<p>Permanecem governados, sem wireframes específicos neste incremento:</p>
+<ul>
 <li>localização aproximada;</li>
 <li>localização exata temporária;</li>
 <li>ausência de resultados;</li>
@@ -7120,7 +7198,7 @@ Organização
 <li>contexto sem gate;</li>
 <li>mapa indisponível com continuidade pela Lista.</li>
 </ul>
-<h2 id="12-limites">12. Limites<a class="headerlink" href="#12-limites" title="Permanent link">&para;</a></h2>
+<h2 id="13-limites">13. Limites<a class="headerlink" href="#13-limites" title="Permanent link">&para;</a></h2>
 <p>Este programa não:</p>
 <ul>
 <li>aprova navegação como definitiva;</li>
@@ -7134,15 +7212,15 @@ Organização
 <li>define preço ou oferta comercial real;</li>
 <li>inicia Engenharia de Produto.</li>
 </ul>
-<h2 id="13-proximos-pontos-de-decisao">13. Próximos pontos de decisão<a class="headerlink" href="#13-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
+<h2 id="14-proximos-pontos-de-decisao">14. Próximos pontos de decisão<a class="headerlink" href="#14-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos deverão ser autorizados separadamente e poderão:</p>
 <ol>
-<li>criar estados alternativos do Mapa, começando por Lista ou localização desativada;</li>
+<li>validar funcionalmente o estado de localização desativada;</li>
+<li>criar o estado alternativo em Lista;</li>
+<li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
-<li>validar a compreensão inicial e seus controles;</li>
-<li>detalhar a primeira Tela Hoje após a transição;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhuma etapa posterior é iniciada automaticamente.</p>
