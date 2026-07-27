@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.28 — Estado do Mapa sem Localização Validado e Reformulado |
+| Marco | M7.29 — Visualização em Lista do Mapa Criada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em PAS-001 1.0.0; nove capacidades concluídas |
@@ -23,6 +23,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
 | Estado de localização desativada | funcionalmente validado e reformulado |
+| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente |
 | Demais estados alternativos do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -81,7 +82,24 @@ O estado reformulado apresenta:
 - ativação opcional de localização aproximada;
 - continuidade para o Detalhe.
 
-O mapa desenhado é esquemático e não representa geografia, endereço ou coordenada real.
+## Visualização em Lista do Mapa
+
+A UXA-028 materializa a Lista como modo interno da mesma consulta territorial do Mapa.
+
+O estado apresenta:
+
+- item `Mapa` preservado na navegação recorrente;
+- alternância `Mapa ↔ Lista`;
+- posição não acessada e região manual;
+- pesquisa, filtros, quantidade e ordenação preservados;
+- cartões comparáveis;
+- oportunidade selecionada;
+- explicação de origem e relação comercial;
+- salvamento, definição de origem e Detalhe;
+- retorno ao Mapa sem perda de contexto;
+- alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.
+
+A Lista não duplica `Explorar` e sua validação funcional especializada permanece pendente.
 
 ## Sequência global
 
@@ -97,8 +115,9 @@ O mapa desenhado é esquemático e não representa geografia, endereço ou coord
 10. Mapa de Oportunidades funcionalmente validado e reformulado.
 11. Estado do Mapa com localização desativada criado.
 12. Estado sem localização funcionalmente validado e reformulado.
-13. Próximo ato dependente de nova autorização.
-14. Reaplicação dos quatro testes dependente de autorização independente.
+13. Visualização em Lista do Mapa criada.
+14. Próximo ato dependente de nova autorização.
+15. Reaplicação dos quatro testes dependente de autorização independente.
 
 ## Decisão COD-018
 
@@ -121,7 +140,8 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Adendo Canônico da Validação do Mapa](project/canonical-consolidation-matrix-uxa-025-addendum.md)
 - [Adendo Canônico do Estado sem Localização](project/canonical-consolidation-matrix-uxa-026-addendum.md)
 - [Adendo Canônico da Validação do Estado sem Localização](project/canonical-consolidation-matrix-uxa-027-addendum.md)
-- [Histórico de Alterações 1.50.0](project/changelog-1.50.0-uxa-027.md)
+- [Adendo Canônico da Visualização em Lista](project/canonical-consolidation-matrix-uxa-028-addendum.md)
+- [Histórico de Alterações 1.51.0](project/changelog-1.51.0-uxa-028.md)
 
 ### Arquiteturas e modelos
 
@@ -137,6 +157,7 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Validação Funcional do Mapa](experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
 - [Mapa com Localização Desativada](experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
 - [Validação do Estado sem Localização](experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
+- [Visualização em Lista do Mapa](experience-architecture/uxa-028-opportunity-map-list-state.md)
 
 ### Resultados Empresariais
 
