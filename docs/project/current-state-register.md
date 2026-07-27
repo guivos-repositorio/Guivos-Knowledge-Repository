@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.55.0
+version: 1.56.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 depends_on:
@@ -30,13 +30,14 @@ related:
   - UXA-025
   - UXA-026
   - UXA-027
+  - UXA-028
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.2.0
-  - M7.28
+  - ROADMAP-12.3.0
+  - M7.29
 normative: true
 ---
 
@@ -51,14 +52,14 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | estado do Mapa sem localização funcionalmente validado e reformulado | M7.28; UXA-026; UXA-027 |
+| Marco atual | visualização em Lista do Mapa materializada em wireframe móvel | M7.29; UXA-028 |
 | Remediação do repositório | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída | A2-R03; BA-STR-002 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
 | Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
-| Arquitetura da Experiência | ativa até a validação do estado sem localização | UXA-000 a UXA-027 |
+| Arquitetura da Experiência | ativa até a visualização em Lista do Mapa | UXA-000 a UXA-028 |
 | Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | funcionalmente validado e reformulado | UXA-020; UXA-023 |
@@ -68,6 +69,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
+| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada não iniciada | UXA-028 |
 | Demais estados alternativos do Mapa | funcionalmente governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
@@ -173,21 +175,43 @@ Arquivo:
 
 `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`
 
-A referência possui 390 por 844 pixels e não define tecnologia cartográfica, coordenadas reais, design, protótipo ou implementação.
+## 9. Visualização em Lista do Mapa
 
-## 9. Proteções territoriais
+A UXA-028 materializa a Lista como representação textual integral da mesma consulta territorial do Mapa.
+
+O estado demonstra:
+
+- item `Mapa` preservado na navegação recorrente;
+- alternância interna `Mapa ↔ Lista`;
+- posição não acessada e região manual;
+- busca, filtros e quantidade de resultados preservados;
+- ordenação explícita baseada em critérios declarados;
+- cartões comparáveis;
+- oportunidade selecionada preservada;
+- explicação de origem e relação comercial separadas;
+- salvamento, definição de origem e abertura do Detalhe;
+- retorno ao Mapa sem perda de contexto;
+- Lista como alternativa integral para acessibilidade, baixa conectividade e indisponibilidade cartográfica.
+
+Arquivo:
+
+`docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
+
+A validação funcional especializada da Lista permanece não iniciada.
+
+## 10. Proteções territoriais
 
 O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo, manter localização exata sem finalidade ou presumir interesse somente pela proximidade.
 
 Localização poderá ser exata e temporária, aproximada, cidade informada, região selecionada ou desativada.
 
-A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento. Região manual não equivale a posição atual. Salvamento não autoriza rastreamento. Definir origem não autoriza retenção ou histórico territorial.
+A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento. Região manual não equivale a posição atual. Salvamento não autoriza rastreamento. Definir origem não autoriza retenção ou histórico territorial. Alternar entre Mapa e Lista não modifica permissões.
 
-## 10. Próximos atos governados
+## 11. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar o estado alternativo em Lista;
+1. validar funcionalmente a visualização em Lista;
 2. criar o estado sem resultados;
 3. criar referência do Mapa para computador;
 4. criar o wireframe gráfico do início protegido;
