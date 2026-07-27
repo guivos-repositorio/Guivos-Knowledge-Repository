@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.1.0
-title: Roadmap Arquitetural — Estado do Mapa sem Localização Criado
+id: ROADMAP-12.2.0
+title: Roadmap Arquitetural — Estado do Mapa sem Localização Validado
 status: active
-version: 12.1.0
+version: 12.2.0
 owner: Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.0.0
+  - ROADMAP-12.1.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -23,10 +23,11 @@ related:
   - UXA-024
   - UXA-025
   - UXA-026
-  - M7.27
+  - UXA-027
+  - M7.28
 ---
 
-# Roadmap Arquitetural — Estado do Mapa sem Localização Criado
+# Roadmap Arquitetural — Estado do Mapa sem Localização Validado
 
 ## 1. Autoridade
 
@@ -37,7 +38,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | primeiro estado alternativo do Mapa criado para localização desativada | M7.27; UXA-026 |
+| Marco | estado do Mapa sem localização funcionalmente validado e reformulado | M7.28; UXA-026; UXA-027 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -46,7 +47,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Wireframe do início protegido | não iniciado | — |
 | Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado de localização desativada | wireframe móvel criado; validação especializada pendente | UXA-026 |
+| Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Demais estados alternativos do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -70,7 +71,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 15. posição do Mapa na navegação recorrente consolidada;
 16. wireframe gráfico móvel do Mapa de Oportunidades criado;
 17. Mapa de Oportunidades funcionalmente validado e reformulado;
-18. estado móvel de localização desativada criado.
+18. estado móvel de localização desativada criado;
+19. estado sem localização funcionalmente validado e reformulado.
 
 ## 4. Sequência pessoal vigente
 
@@ -85,22 +87,21 @@ Página Inicial pública
 
 O Mapa não integra a sequência obrigatória de primeira entrada.
 
-## 5. Resultado do estado sem localização
+## 5. Resultado da validação especializada
 
-A UXA-026 demonstra:
+A UXA-027 confirmou, após reformulação:
 
-- exploração geral sem personalização;
-- aviso claro de localização desativada;
-- escolha manual de cidade ou região;
-- pesquisa territorial preservada;
-- Mapa e Lista sincronizados;
-- filtros e quantidade de resultados da região;
-- área territorial sem marcador da pessoa;
-- legenda e controles de camadas;
-- oportunidade explicada por busca e região, não por Momento Atual;
+- compreensão de que o Mapa funciona sem localização;
+- confirmação de que a posição não foi acessada;
+- região manual explicitamente distinta da posição pessoal;
+- pesquisa, filtros, Mapa e Lista preservados;
+- área territorial sem marcador ou posição presumida;
+- linguagem geral sem personalização indevida;
 - distância pessoal omitida sem origem válida;
-- ativação opcional de localização aproximada;
-- possibilidade de definir origem manual para rota.
+- salvamento disponível sem localização;
+- origem manual para rota;
+- continuidade para Detalhe de Oportunidade;
+- ativação de localização aproximada como ação opcional.
 
 A referência possui 390 por 844 pixels e não define geografia real, tecnologia cartográfica, coordenadas, design ou implementação.
 
@@ -108,9 +109,12 @@ A referência possui 390 por 844 pixels e não define geografia real, tecnologia
 
 - localização permanece opcional;
 - recusa de permissão não bloqueia exploração;
+- posição não acessada é declarada quando verdadeiro;
+- região manual não equivale a posição atual;
 - marcador pessoal não aparece no estado;
-- região manual permanece visível e editável;
 - linguagem personalizada é removida sem gate;
+- salvamento não autoriza localização ou rastreamento;
+- origem manual não autoriza histórico territorial;
 - rastreamento contínuo não é exigido;
 - residências e locais sensíveis permanecem protegidos;
 - proximidade não equivale a relevância;
@@ -141,14 +145,13 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer um ato separado:
 
-1. validar funcionalmente o estado de localização desativada;
-2. criar o estado alternativo em Lista;
-3. criar o estado sem resultados;
-4. criar referência do Mapa para computador;
-5. criar o wireframe gráfico do início protegido;
-6. criar a referência móvel da Home;
-7. validar a revisão da compreensão inicial;
-8. validar a transição para a primeira Tela Hoje.
+1. criar o estado alternativo em Lista;
+2. criar o estado sem resultados;
+3. criar referência do Mapa para computador;
+4. criar o wireframe gráfico do início protegido;
+5. criar a referência móvel da Home;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a primeira Tela Hoje.
 
 ### 8.2 Arquitetura de Negócios
 

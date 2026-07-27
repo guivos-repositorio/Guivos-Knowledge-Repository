@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 4.99.0
+version: 5.0.0
 owner: Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.1.0
+  - ROADMAP-12.2.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -22,6 +22,7 @@ related:
   - UXA-024
   - UXA-025
   - UXA-026
+  - UXA-027
   - M7.20
   - M7.21
   - M7.22
@@ -30,6 +31,7 @@ related:
   - M7.25
   - M7.26
   - M7.27
+  - M7.28
 normative: false
 ---
 
@@ -56,32 +58,41 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.24 | Concluído | início protegido da jornada validado e reformulado |
 | M7.25 | Concluído | wireframe móvel do Mapa de Oportunidades criado |
 | M7.26 | Concluído | Mapa de Oportunidades funcionalmente validado e reformulado |
-| M7.27 | Concluído neste incremento | primeiro estado alternativo do Mapa criado para localização desativada |
+| M7.27 | Concluído | primeiro estado alternativo do Mapa criado para localização desativada |
+| M7.28 | Concluído neste incremento | estado sem localização funcionalmente validado e reformulado |
 
 ## 3. Marco vigente
 
-### Estado do Mapa sem Localização Criado — M7.27
+### Estado do Mapa sem Localização Validado e Reformulado — M7.28
 
 Critérios atendidos:
 
-- localização do dispositivo preservada como opcional;
+- Mapa preservado como superfície recorrente;
+- localização do dispositivo mantida como opcional;
 - exploração territorial mantida por cidade ou região manual;
+- declaração `Posição não acessada` adicionada;
+- região manual diferenciada explicitamente da posição pessoal;
 - linguagem de exploração geral utilizada sem gate de personalização;
 - busca, filtros, Mapa e Lista preservados;
-- marcador de posição pessoal removido;
+- marcador e posição pessoal presumida removidos;
 - resultados relacionados à região e à busca explícita;
 - distância pessoal omitida sem origem válida;
-- ativação de localização aproximada apresentada como ação secundária;
+- salvamento demonstrado sem ativação de localização;
+- origem manual demonstrada para rota;
+- ativação de localização aproximada apresentada como ação secundária e opcional;
 - revisão de privacidade disponível antes da ativação;
-- origem manual permitida para rota quando aplicável;
 - recusa de localização sem bloqueio de Detalhe ou salvamento;
-- arquivo vetorial móvel criado em 390 por 844 pixels;
-- validação funcional especializada preservada como ato posterior;
+- arquivo vetorial móvel reformulado em 390 por 844 pixels;
+- demais estados gráficos e referência para computador preservados como atos separados;
 - tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Estado do Mapa sem Localização Criado — M7.27
+
+A UXA-026 permanece como origem histórica do estado, posteriormente reformulado e validado pela UXA-027.
 
 ### Mapa de Oportunidades Validado e Reformulado — M7.26
 
@@ -118,7 +129,7 @@ COD-018 permanece integrado, com BUS-CAND-010 fundido em BUS-CAND-005 e nenhum R
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; primeiro estado alternativo do Mapa materializado; validações e estados posteriores aguardando autorização |
+| Arquitetura da Experiência | ativa; estado sem localização validado; estados e transições posteriores aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -130,14 +141,13 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente o estado de localização desativada;
-2. criar o estado alternativo em Lista;
-3. criar o estado sem resultados;
-4. criar referência do Mapa para computador;
-5. criar o wireframe do início protegido;
-6. criar a referência móvel da Home;
-7. validar a revisão da compreensão inicial;
-8. validar a transição para a primeira Tela Hoje.
+1. criar o estado alternativo em Lista;
+2. criar o estado sem resultados;
+3. criar referência do Mapa para computador;
+4. criar o wireframe do início protegido;
+5. criar a referência móvel da Home;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a primeira Tela Hoje.
 
 ### Arquitetura de Negócios
 

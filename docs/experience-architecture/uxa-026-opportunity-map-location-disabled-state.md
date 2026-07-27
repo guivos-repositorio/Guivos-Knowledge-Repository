@@ -1,10 +1,10 @@
 ---
 id: UXA-026
 title: Wireframe Alternativo do Mapa de Oportunidades — Localização Desativada
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 parent: UXA-024
 depends_on:
   - UXA-004
@@ -15,6 +15,7 @@ related:
   - UXA-002
   - UXA-010
   - UXA-012
+  - UXA-027
 normative: false
 ---
 
@@ -22,9 +23,11 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa o primeiro estado alternativo do Mapa de Oportunidades: uso territorial com a localização do dispositivo desativada.
+Este documento materializa o estado alternativo do Mapa de Oportunidades para uso com a localização do dispositivo desativada.
 
-O estado demonstra que a pessoa pode explorar oportunidades por cidade ou região informada manualmente, preservar busca e filtros, alternar entre Mapa e Lista e continuar sem conceder acesso à localização.
+A versão 0.2.0 incorpora a reformulação governada pela **UXA-027 — Validação Funcional Especializada e Reformulação do Estado do Mapa sem Localização**.
+
+O estado demonstra que a pessoa pode explorar oportunidades por cidade ou região informada manualmente, preservar busca e filtros, alternar entre Mapa e Lista, abrir detalhes, salvar itens e definir origem para rota sem conceder acesso à posição do dispositivo.
 
 O wireframe não representa mapa real, design visual, tecnologia cartográfica, coordenadas, dados de produção ou implementação.
 
@@ -45,11 +48,11 @@ Ele poderá ocorrer quando:
 - o gate de personalização ainda não foi atendido;
 - a exploração geral foi escolhida conscientemente.
 
-A localização desativada não bloqueia o Mapa, a Lista, a busca ou o Detalhe de Oportunidade.
+A localização desativada não bloqueia o Mapa, a Lista, a busca, o Detalhe de Oportunidade ou o salvamento.
 
-## 3. Artefato visual
+## 3. Artefato visual reformulado
 
-![Wireframe alternativo do Mapa de Oportunidades com localização desativada](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg)
+![Wireframe reformulado do Mapa de Oportunidades com localização desativada](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg)
 
 Arquivo vetorial:
 
@@ -60,23 +63,25 @@ Dimensão de referência:
 - canal: aplicativo móvel;
 - largura: 390 pixels;
 - altura: 844 pixels;
-- estado: localização do dispositivo desativada, região manual selecionada e exploração geral sem personalização.
+- estado: localização do dispositivo desativada, posição não acessada, região manual selecionada e exploração geral sem personalização.
 
-## 4. Hierarquia funcional
+## 4. Hierarquia funcional validada
 
 ```text
 nome da superfície e contexto de exploração
-→ aviso de localização desativada
-→ escolha manual de cidade ou região
+→ localização desativada e posição não acessada
+→ região manual explicitamente distinta da posição pessoal
 → pesquisa
 → Mapa ou Lista
 → filtros e resultados da região
-→ área territorial sem marcador pessoal
+→ área territorial sem marcador ou posição presumida
 → legenda e controles
 → oportunidade geral selecionada
-→ detalhe, salvamento e definição manual de origem
+→ explicação, salvamento, origem manual e detalhe
 → navegação recorrente
 ```
+
+A hierarquia mantém o aviso de privacidade antes dos resultados e torna a alternativa manual utilizável sem converter localização em requisito oculto.
 
 ## 5. Contexto e linguagem
 
@@ -92,30 +97,36 @@ A interface não deverá utilizar expressões como:
 - `perto de você`;
 - qualquer afirmação de adequação pessoal.
 
-A origem dos resultados deverá ser explicada por busca, região, categoria, período ou filtro explícito.
+A origem dos resultados deverá ser explicada por busca, região, categoria, período, fonte ou filtro explícito.
 
-## 6. Localização desativada
+## 6. Localização desativada e confirmação do estado
 
-O aviso deverá informar:
+O aviso reformulado declara:
 
 > **Localização desativada**
 
-> Você pode escolher uma cidade ou região e continuar sem compartilhar sua posição.
+> **Posição não acessada**
+
+> Você escolheu continuar sem compartilhar sua posição.
+
+A confirmação explícita evita que a pessoa confunda ausência de marcador com coleta invisível ou inferência territorial.
 
 A pessoa deverá poder:
 
-- escolher ou alterar cidade ou região;
 - continuar sem localização;
+- escolher ou alterar cidade ou região;
 - ativar localização aproximada posteriormente;
 - revisar privacidade antes de ativar;
 - retirar uma permissão futura;
 - utilizar origem manual para rota quando aplicável.
 
-Ativar localização aproximada é uma ação opcional e secundária. A interface não deverá induzir consentimento por bloqueio, culpa, urgência ou perda artificial de funcionalidade.
+Ativar localização aproximada é uma ação opcional e secundária. A interface não deverá induzir consentimento por bloqueio, culpa, urgência, destaque desproporcional ou perda artificial de funcionalidade.
 
 ## 7. Região manual
 
-A região selecionada manualmente deverá permanecer visível e editável.
+A região selecionada manualmente deverá permanecer visível, editável e acompanhada da declaração:
+
+> **Região informada manualmente · não é sua posição**
 
 A alteração de região não poderá apagar silenciosamente:
 
@@ -139,6 +150,10 @@ O mapa não deverá mostrar:
 - indicação de que a pessoa está em determinada área.
 
 A área territorial poderá ser centralizada na região informada manualmente e exibir somente oportunidades, Organizações, Coletivos, eventos, atividades, pontos de apoio e locais autorizados.
+
+O wireframe reformulado declara:
+
+> **Mapa esquemático · sem posição ou marcador pessoal**
 
 ## 9. Relação com a Lista
 
@@ -176,9 +191,17 @@ A distância pessoal não deverá ser exibida quando não houver origem válida.
 
 ## 11. Oportunidade selecionada
 
-O cartão ilustrado deverá utilizar linguagem geral, como:
+O cartão reformulado utiliza linguagem geral:
 
 > Resultado da busca nesta região
+
+Ele demonstra diretamente:
+
+- `Por que está aqui?`;
+- relação comercial;
+- `Salvar`;
+- `Definir origem`;
+- `Ver detalhes`.
 
 A ação `Por que está aqui?` poderá explicar:
 
@@ -191,48 +214,74 @@ A ação `Por que está aqui?` poderá explicar:
 
 Ela não deverá simular compreensão do Momento Atual.
 
-## 12. Rota sem localização
+## 12. Salvamento
+
+O salvamento deverá permanecer disponível sem localização.
+
+Salvar uma oportunidade não autoriza:
+
+- ativar localização;
+- inferir residência;
+- registrar deslocamento;
+- criar perfil territorial oculto;
+- converter o item em recomendação pessoal.
+
+O item salvo deverá preservar sua origem, região e condições conhecidas.
+
+## 13. Rota sem localização
 
 Sem origem disponível, a interface não deverá executar rota automaticamente.
 
-As alternativas serão:
+O wireframe apresenta a ação:
 
-- `Definir origem para rota`;
-- `Usar endereço informado`;
-- `Ativar localização aproximada`;
-- `Copiar endereço`, quando permitido;
-- `Ver área aproximada`, quando o endereço estiver protegido.
+> **Definir origem**
 
-A escolha de origem não autoriza rastreamento contínuo nem retenção posterior.
+As alternativas poderão incluir:
 
-## 13. Privacidade e autonomia
+- informar endereço de partida;
+- selecionar ponto conhecido;
+- utilizar endereço salvo com autorização aplicável;
+- ativar localização aproximada;
+- copiar endereço, quando permitido;
+- ver área aproximada, quando o endereço estiver protegido.
+
+A escolha de origem não autoriza rastreamento contínuo nem retenção posterior. A rota não deverá contornar proteção de residência, endereço sensível ou condição de acesso.
+
+## 14. Privacidade e autonomia
 
 O estado preserva:
 
 - exploração sem localização;
 - exploração sem personalização;
 - cidade ou região manual como alternativa real;
+- confirmação de que a posição não foi acessada;
 - ausência de marcador pessoal;
 - ativação posterior consciente;
 - continuidade pela Lista;
+- salvamento sem consentimento territorial;
+- origem manual para rota;
 - proteção de endereços sensíveis;
 - separação entre proximidade, relevância e publicidade.
 
-## 14. Critérios de validação posterior
+## 15. Resultado da validação
 
-O wireframe deverá permitir verificar:
+A validação funcional especializada está registrada em UXA-027.
 
-- se a pessoa entende que o Mapa continua disponível sem localização;
-- se a região manual é encontrável e editável;
-- se a ausência de marcador pessoal é clara;
-- se ativar localização é opcional;
-- se a linguagem deixa de afirmar relevância pessoal sem gate;
-- se busca e filtros permanecem após alteração territorial;
-- se Mapa e Lista continuam sincronizados;
-- se a rota oferece origem manual sem contornar privacidade;
-- se resultados gerais são distinguíveis de recomendações pessoais.
+O estado é considerado **funcionalmente válido após reformulação** porque:
 
-## 15. Limites
+- comunica que o Mapa continua disponível sem localização;
+- confirma que a posição não foi acessada;
+- distingue região manual de posição pessoal;
+- preserva busca, filtros, Mapa e Lista;
+- remove marcador e distância pessoal presumida;
+- utiliza linguagem geral sem personalização indevida;
+- mantém ativação de localização como escolha opcional;
+- demonstra salvamento;
+- demonstra origem manual para rota;
+- preserva continuidade para o Detalhe;
+- não inicia design ou implementação.
+
+## 16. Limites
 
 Este incremento não:
 
@@ -246,16 +295,16 @@ Este incremento não:
 - cria protótipo navegável;
 - inicia design visual ou Engenharia de Produto.
 
-## 16. Próximos atos governados
+## 17. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o estado de localização desativada;
-2. criar o estado alternativo em Lista;
-3. criar o estado sem resultados;
-4. criar referência do Mapa para computador;
-5. criar o wireframe gráfico do início protegido;
-6. criar a referência móvel da Home;
+1. criar o estado alternativo em Lista;
+2. criar o estado sem resultados;
+3. criar referência do Mapa para computador;
+4. criar o wireframe gráfico do início protegido;
+5. criar a referência móvel da Home;
+6. validar a revisão da compreensão inicial;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

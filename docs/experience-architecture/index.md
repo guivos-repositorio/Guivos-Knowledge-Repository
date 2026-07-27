@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.22.0
+version: 0.23.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 related:
   - PAS-001
   - PAS-001-CAPABILITY-MAP-001
@@ -38,6 +38,7 @@ related:
   - UXA-024
   - UXA-025
   - UXA-026
+  - UXA-027
 normative: false
 ---
 
@@ -91,7 +92,7 @@ O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superf
 | Página Inicial pública | [Contrato da primeira entrada](uxa-020-home-and-journey-entry.md), [validação funcional](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe gráfico](uxa-022-public-home-low-fidelity-wireframe.md) |
 | Início protegido da jornada | [Validação funcional](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
 | Tela Hoje recorrente | [Experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação funcional](uxa-010-today-functional-validation-and-reformulation.md) |
-| Explorar e Mapa | [Contrato funcional](uxa-004-opportunities-organizations-collectives-map.md), [wireframe reformulado](uxa-024-opportunity-map-low-fidelity-wireframe.md), [validação funcional](uxa-025-opportunity-map-functional-validation-and-reformulation.md) e [estado sem localização](uxa-026-opportunity-map-location-disabled-state.md) |
+| Explorar e Mapa | [Contrato funcional](uxa-004-opportunities-organizations-collectives-map.md), [wireframe reformulado](uxa-024-opportunity-map-low-fidelity-wireframe.md), [validação funcional](uxa-025-opportunity-map-functional-validation-and-reformulation.md), [estado sem localização](uxa-026-opportunity-map-location-disabled-state.md) e [validação especializada](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014, UXA-015, UXA-016, UXA-017, UXA-018 e UXA-019 |
 
@@ -99,7 +100,7 @@ O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superf
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | descoberta ativa e integrada até o estado sem localização do Mapa | UXA-000 a UXA-026; UXA-003-A1 |
+| Arquitetura da Experiência | descoberta ativa e integrada até a validação do estado sem localização | UXA-000 a UXA-027; UXA-003-A1 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes da primeira unidade de trabalho | W0-01 |
 | Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
@@ -109,7 +110,7 @@ O Mapa de Oportunidades não entra entre a Home e a Tela Hoje. Ele é uma superf
 | Compreensão inicial | contrato e gate estabelecidos; validação especializada posterior | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado de localização desativada | wireframe móvel criado; validação especializada pendente | UXA-026 |
+| Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Demais estados alternativos do Mapa | funcionalmente governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
@@ -143,8 +144,6 @@ A Tela Hoje é a superfície recorrente pessoal posterior à compreensão inicia
 
 Ela não deverá receber o primeiro relato completo nem apresentar oportunidades como personalizadas antes do gate.
 
-O wireframe permanece registrado como **UXA-006 — Wireframe de Baixa Fidelidade da Tela Hoje**.
-
 Quando localização estiver autorizada e houver utilidade material, a Tela Hoje poderá exibir um bloco compacto `Perto de mim`, com a ação `Abrir no mapa`. O mapa completo não será incorporado à Tela Hoje.
 
 ## 10. Explorar e Mapa
@@ -157,11 +156,9 @@ Quando localização estiver autorizada e houver utilidade material, a Tela Hoje
 Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O wireframe móvel reformulado está registrado como **UXA-024 — Wireframe de Baixa Fidelidade do Mapa de Oportunidades**.
+O wireframe móvel principal está registrado como **UXA-024** e sua validação como **UXA-025**.
 
-A validação funcional está registrada como **UXA-025 — Validação Funcional e Reformulação do Mapa de Oportunidades**.
-
-O primeiro estado alternativo está registrado como **UXA-026 — Wireframe Alternativo do Mapa de Oportunidades — Localização Desativada**.
+O estado sem localização está registrado como **UXA-026** e sua validação especializada como **UXA-027**.
 
 Arquivos vetoriais:
 
@@ -170,17 +167,19 @@ Arquivos vetoriais:
 
 ## 11. Estado de localização desativada
 
-A UXA-026 demonstra que localização não é requisito universal para utilizar o Mapa.
+A UXA-026 e a UXA-027 estabelecem que localização não é requisito universal para utilizar o Mapa.
 
 A pessoa poderá:
 
+- continuar com posição não acessada;
 - escolher cidade ou região manualmente;
+- reconhecer que a região não é sua posição;
 - pesquisar e filtrar sem compartilhar posição;
 - alternar entre Mapa e Lista;
 - explorar sem personalização;
 - abrir detalhes e salvar oportunidades;
-- ativar localização aproximada posteriormente;
-- informar origem manual para rota quando aplicável.
+- definir origem manual para rota;
+- ativar localização aproximada posteriormente e de forma opcional.
 
 O estado não apresenta marcador pessoal, distância individual presumida ou justificativa baseada no Momento Atual.
 
@@ -188,7 +187,7 @@ O estado não apresenta marcador pessoal, distância individual presumida ou jus
 
 A UXA-025 governa localização desativada, localização aproximada, localização exata temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.
 
-A UXA-026 materializa somente o estado de localização desativada. Os demais wireframes permanecem atos separados.
+A UXA-026 e a UXA-027 materializam e validam somente o estado de localização desativada. Os demais wireframes permanecem atos separados.
 
 ## 13. Gate de personalização
 
@@ -206,12 +205,13 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o estado de localização desativada;
-2. criar o estado alternativo em Lista;
-3. criar o estado sem resultados;
-4. criar referência do Mapa para computador;
-5. criar o wireframe gráfico do início protegido da jornada;
-6. criar a referência móvel da Página Inicial pública;
-7. retomar independentemente os testes dos Resultados Empresariais.
+1. criar o estado alternativo em Lista;
+2. criar o estado sem resultados;
+3. criar referência do Mapa para computador;
+4. criar o wireframe gráfico do início protegido da jornada;
+5. criar a referência móvel da Página Inicial pública;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a primeira Tela Hoje;
+8. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

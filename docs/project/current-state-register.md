@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.54.0
+version: 1.55.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -29,13 +29,14 @@ related:
   - UXA-024
   - UXA-025
   - UXA-026
+  - UXA-027
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.1.0
-  - M7.27
+  - ROADMAP-12.2.0
+  - M7.28
 normative: true
 ---
 
@@ -50,14 +51,14 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | primeiro estado alternativo do Mapa criado para localização desativada | M7.27; UXA-026 |
+| Marco atual | estado do Mapa sem localização funcionalmente validado e reformulado | M7.28; UXA-026; UXA-027 |
 | Remediação do repositório | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída | A2-R03; BA-STR-002 |
 | Resultados Empresariais | 18 de 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; BA-STR-002-CODR-001 |
 | Registro de candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Continuidade econômica sustentável | formulação combinada permanece em validação | BUS-CAND-005 |
-| Arquitetura da Experiência | ativa até o estado de localização desativada do Mapa | UXA-000 a UXA-026 |
+| Arquitetura da Experiência | ativa até a validação do estado sem localização | UXA-000 a UXA-027 |
 | Página Inicial pública | validada, reformulada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido da jornada | funcionalmente validado e reformulado | UXA-020; UXA-023 |
@@ -66,7 +67,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Gate de personalização | personalização bloqueada antes de compreensão revisável e autorizada | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado de localização desativada | wireframe móvel criado; validação especializada não iniciada | UXA-026 |
+| Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Demais estados alternativos do Mapa | funcionalmente governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
@@ -126,7 +127,7 @@ O Mapa não entra entre a Home e a Tela Hoje.
 
 A Home foi funcionalmente validada e possui wireframe gráfico de baixa fidelidade para computador.
 
-Ela explica concretamente a Guivos, oferece início voluntário ou exploração sem personalização, distingue caminhos pessoais, gerais e institucionais, organiza o ecossistema por finalidade e não coleta texto pessoal, voz, arquivos ou fontes externas.
+Ela explica concretamente a Guivos, oferece início voluntário ou exploração sem personalização, distingue caminhos pessoais, gerais e institucionais e não coleta texto pessoal, voz, arquivos ou fontes externas.
 
 A referência móvel permanece não iniciada.
 
@@ -150,20 +151,23 @@ Arquivo principal:
 
 ## 8. Estado de localização desativada
 
-A UXA-026 materializa a continuidade do Mapa sem localização do dispositivo.
+A UXA-026 e a UXA-027 estabelecem que o Mapa permanece integralmente utilizável sem localização do dispositivo.
 
-O estado demonstra:
+O estado reformulado demonstra:
 
 - exploração geral sem personalização;
-- aviso claro de localização desativada;
-- escolha manual de cidade ou região;
+- aviso de localização desativada;
+- confirmação `Posição não acessada`;
+- região manual explicitamente distinta da posição pessoal;
 - busca e filtros preservados;
 - Mapa e Lista como uma descoberta única;
-- área territorial sem marcador pessoal;
+- área territorial sem marcador ou posição presumida;
 - resultados explicados por região e busca explícita;
 - distância pessoal omitida sem origem válida;
 - ativação opcional de localização aproximada;
-- definição manual de origem para rota.
+- salvamento sem localização;
+- definição manual de origem para rota;
+- continuidade para o Detalhe.
 
 Arquivo:
 
@@ -177,18 +181,19 @@ O Mapa não deverá mostrar localização de participantes, revelar residências
 
 Localização poderá ser exata e temporária, aproximada, cidade informada, região selecionada ou desativada.
 
-A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento.
+A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento. Região manual não equivale a posição atual. Salvamento não autoriza rastreamento. Definir origem não autoriza retenção ou histórico territorial.
 
 ## 10. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o estado de localização desativada;
-2. criar o estado alternativo em Lista;
-3. criar o estado sem resultados;
-4. criar referência do Mapa para computador;
-5. criar o wireframe gráfico do início protegido;
-6. criar a referência móvel da Home;
-7. retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.
+1. criar o estado alternativo em Lista;
+2. criar o estado sem resultados;
+3. criar referência do Mapa para computador;
+4. criar o wireframe gráfico do início protegido;
+5. criar a referência móvel da Home;
+6. validar a revisão da compreensão inicial;
+7. validar a transição para a primeira Tela Hoje;
+8. retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
