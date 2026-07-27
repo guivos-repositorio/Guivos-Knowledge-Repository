@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.32 — Estado do Mapa sem Resultados Validado e Reformulado |
+| Marco | M7.33 — Referência do Mapa de Oportunidades para Computador Criada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -24,6 +24,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Estado sem localização | funcionalmente validado e reformulado |
 | Lista do Mapa | funcionalmente validada e reformulada |
 | Estado sem resultados | funcionalmente validado e reformulado |
+| Referência do Mapa para computador | criada; validação funcional pendente |
 | Demais estados do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -117,7 +118,34 @@ Arquivo:
 
 `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
 
-A referência possui 390 por 844 pixels. A validação é arquitetural e não representa teste com usuários, design ou implementação.
+## Referência do Mapa para computador
+
+A UXA-032 cria dois wireframes de 1.440 por 1.024 pixels:
+
+- Mapa com resultados;
+- Mapa sem resultados.
+
+A referência apresenta:
+
+- navegação recorrente com `Mapa` selecionado;
+- contexto `Agindo como: Pessoa`;
+- localização desativada e posição não acessada;
+- região manual distinta da posição pessoal;
+- painel de filtros;
+- Mapa e Lista da mesma consulta lado a lado;
+- quantidade, atualização, ordenação e seleção sincronizadas;
+- oportunidade selecionada nos dois painéis;
+- explicabilidade e relação comercial separadas;
+- continuidade para o Detalhe;
+- cobertura verificável no estado zero;
+- Lista integral sem mapa carregado.
+
+Arquivos:
+
+- `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
+- `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
+
+A referência ainda não foi funcionalmente validada e não conclui responsividade, tablet, design, protótipo, teste com usuários ou implementação.
 
 ## Estado dos Resultados Empresariais
 
@@ -138,7 +166,7 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- referência do Mapa para computador;
+- validação funcional da referência do Mapa para computador;
 - wireframe gráfico do início protegido;
 - referência móvel da Home;
 - validação da revisão da compreensão inicial;
@@ -178,8 +206,9 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Validação da Lista](docs/experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md)
 - [Mapa sem Resultados](docs/experience-architecture/uxa-030-opportunity-map-no-results-state.md)
 - [Validação sem Resultados](docs/experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md)
-- [Adendo Canônico UXA-031](docs/project/canonical-consolidation-matrix-uxa-031-addendum.md)
-- [Histórico 1.54.0](docs/project/changelog-1.54.0-uxa-031.md)
+- [Mapa para Computador](docs/experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
+- [Adendo Canônico UXA-032](docs/project/canonical-consolidation-matrix-uxa-032-addendum.md)
+- [Histórico 1.55.0](docs/project/changelog-1.55.0-uxa-032.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
