@@ -178,7 +178,7 @@ nav:
           - UXA-015 — Wireframe da Organização: experience-architecture/uxa-015-organization-overview-low-fidelity-wireframe.md
           - UXA-017 — Validação da Organização: experience-architecture/uxa-017-organization-overview-functional-validation-and-reformulation.md
           - UXA-016 — Wireframe do Coletivo: experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md
-          - UXA-018 — Validação do Coletivo: experience-architecture/uxa-018-collective-home-low-fidelity-wireframe.md
+          - UXA-018 — Validação do Coletivo: experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md
           - UXA-019 — Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
 
   - Intelligence Architecture:
@@ -226,7 +226,7 @@ nav:
           - A2-R01 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
           - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
           - A2-R01 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
-          - A2-R02 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md
+          - A2-R02 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-foundation-evidence-matrix.md
       - ADRs:
           - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
           - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
