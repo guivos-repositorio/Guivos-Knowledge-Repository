@@ -4001,6 +4001,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/uxa-028-opportunity-map-list-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-028 — Visualização em Lista do Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -7604,6 +7639,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-uxa-028-opportunity-map-list-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.6 UXA-028 — Visualização em Lista do Mapa
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -9530,6 +9576,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-uxa-028-opportunity-map-list-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.6 UXA-028 — Visualização em Lista do Mapa
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10329,7 +10386,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Marco</td>
-<td>M7.28 — Estado do Mapa sem Localização Validado e Reformulado</td>
+<td>M7.29 — Visualização em Lista do Mapa Criada</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -10384,6 +10441,10 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <td>funcionalmente validado e reformulado</td>
 </tr>
 <tr>
+<td>Visualização em Lista do Mapa</td>
+<td>wireframe móvel criado; validação especializada pendente</td>
+</tr>
+<tr>
 <td>Demais estados alternativos do Mapa</td>
 <td>governados; wireframes não iniciados</td>
 </tr>
@@ -10434,7 +10495,22 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>ativação opcional de localização aproximada;</li>
 <li>continuidade para o Detalhe.</li>
 </ul>
-<p>O mapa desenhado é esquemático e não representa geografia, endereço ou coordenada real.</p>
+<h2 id="index-visualizacao-em-lista-do-mapa">Visualização em Lista do Mapa<a class="headerlink" href="#index-visualizacao-em-lista-do-mapa" title="Permanent link">&para;</a></h2>
+<p>A UXA-028 materializa a Lista como modo interno da mesma consulta territorial do Mapa.</p>
+<p>O estado apresenta:</p>
+<ul>
+<li>item <code>Mapa</code> preservado na navegação recorrente;</li>
+<li>alternância <code>Mapa ↔ Lista</code>;</li>
+<li>posição não acessada e região manual;</li>
+<li>pesquisa, filtros, quantidade e ordenação preservados;</li>
+<li>cartões comparáveis;</li>
+<li>oportunidade selecionada;</li>
+<li>explicação de origem e relação comercial;</li>
+<li>salvamento, definição de origem e Detalhe;</li>
+<li>retorno ao Mapa sem perda de contexto;</li>
+<li>alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.</li>
+</ul>
+<p>A Lista não duplica <code>Explorar</code> e sua validação funcional especializada permanece pendente.</p>
 <h2 id="index-sequencia-global">Sequência global<a class="headerlink" href="#index-sequencia-global" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Guivos Journey concluído funcionalmente e publicado.</li>
@@ -10449,6 +10525,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li>Mapa de Oportunidades funcionalmente validado e reformulado.</li>
 <li>Estado do Mapa com localização desativada criado.</li>
 <li>Estado sem localização funcionalmente validado e reformulado.</li>
+<li>Visualização em Lista do Mapa criada.</li>
 <li>Próximo ato dependente de nova autorização.</li>
 <li>Reaplicação dos quatro testes dependente de autorização independente.</li>
 </ol>
@@ -10468,7 +10545,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#project-canonical-consolidation-matrix-uxa-025-addendum">Adendo Canônico da Validação do Mapa</a></li>
 <li><a href="#project-canonical-consolidation-matrix-uxa-026-addendum">Adendo Canônico do Estado sem Localização</a></li>
 <li><a href="#project-canonical-consolidation-matrix-uxa-027-addendum">Adendo Canônico da Validação do Estado sem Localização</a></li>
-<li><a href="#project-changelog-1.50.0-uxa-027">Histórico de Alterações 1.50.0</a></li>
+<li><a href="#project-canonical-consolidation-matrix-uxa-028-addendum">Adendo Canônico da Visualização em Lista</a></li>
+<li><a href="#project-changelog-1.51.0-uxa-028">Histórico de Alterações 1.51.0</a></li>
 </ul>
 <h3 id="index-arquiteturas-e-modelos">Arquiteturas e modelos<a class="headerlink" href="#index-arquiteturas-e-modelos" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10484,6 +10562,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#experience-architecture-uxa-025-opportunity-map-functional-validation-and-reformulation">Validação Funcional do Mapa</a></li>
 <li><a href="#experience-architecture-uxa-026-opportunity-map-location-disabled-state">Mapa com Localização Desativada</a></li>
 <li><a href="#experience-architecture-uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation">Validação do Estado sem Localização</a></li>
+<li><a href="#experience-architecture-uxa-028-opportunity-map-list-state">Visualização em Lista do Mapa</a></li>
 </ul>
 <h3 id="index-resultados-empresariais">Resultados Empresariais<a class="headerlink" href="#index-resultados-empresariais" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10518,8 +10597,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Marco atual</td>
-<td>estado do Mapa sem localização funcionalmente validado e reformulado</td>
-<td>M7.28; UXA-026; UXA-027</td>
+<td>visualização em Lista do Mapa materializada em wireframe móvel</td>
+<td>M7.29; UXA-028</td>
 </tr>
 <tr>
 <td>Remediação do repositório</td>
@@ -10553,8 +10632,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa até a validação do estado sem localização</td>
-<td>UXA-000 a UXA-027</td>
+<td>ativa até a visualização em Lista do Mapa</td>
+<td>UXA-000 a UXA-028</td>
 </tr>
 <tr>
 <td>Página Inicial pública</td>
@@ -10600,6 +10679,11 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <td>Estado de localização desativada</td>
 <td>funcionalmente validado e reformulado</td>
 <td>UXA-026; UXA-027</td>
+</tr>
+<tr>
+<td>Visualização em Lista do Mapa</td>
+<td>wireframe móvel criado; validação especializada não iniciada</td>
+<td>UXA-028</td>
 </tr>
 <tr>
 <td>Demais estados alternativos do Mapa</td>
@@ -10746,15 +10830,33 @@ Business Capabilities: not started
 </ul>
 <p>Arquivo:</p>
 <p><code>docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg</code></p>
-<p>A referência possui 390 por 844 pixels e não define tecnologia cartográfica, coordenadas reais, design, protótipo ou implementação.</p>
-<h2 id="project-current-state-register-9-protecoes-territoriais">9. Proteções territoriais<a class="headerlink" href="#project-current-state-register-9-protecoes-territoriais" title="Permanent link">&para;</a></h2>
+<h2 id="project-current-state-register-9-visualizacao-em-lista-do-mapa">9. Visualização em Lista do Mapa<a class="headerlink" href="#project-current-state-register-9-visualizacao-em-lista-do-mapa" title="Permanent link">&para;</a></h2>
+<p>A UXA-028 materializa a Lista como representação textual integral da mesma consulta territorial do Mapa.</p>
+<p>O estado demonstra:</p>
+<ul>
+<li>item <code>Mapa</code> preservado na navegação recorrente;</li>
+<li>alternância interna <code>Mapa ↔ Lista</code>;</li>
+<li>posição não acessada e região manual;</li>
+<li>busca, filtros e quantidade de resultados preservados;</li>
+<li>ordenação explícita baseada em critérios declarados;</li>
+<li>cartões comparáveis;</li>
+<li>oportunidade selecionada preservada;</li>
+<li>explicação de origem e relação comercial separadas;</li>
+<li>salvamento, definição de origem e abertura do Detalhe;</li>
+<li>retorno ao Mapa sem perda de contexto;</li>
+<li>Lista como alternativa integral para acessibilidade, baixa conectividade e indisponibilidade cartográfica.</li>
+</ul>
+<p>Arquivo:</p>
+<p><code>docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg</code></p>
+<p>A validação funcional especializada da Lista permanece não iniciada.</p>
+<h2 id="project-current-state-register-10-protecoes-territoriais">10. Proteções territoriais<a class="headerlink" href="#project-current-state-register-10-protecoes-territoriais" title="Permanent link">&para;</a></h2>
 <p>O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo, manter localização exata sem finalidade ou presumir interesse somente pela proximidade.</p>
 <p>Localização poderá ser exata e temporária, aproximada, cidade informada, região selecionada ou desativada.</p>
-<p>A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento. Região manual não equivale a posição atual. Salvamento não autoriza rastreamento. Definir origem não autoriza retenção ou histórico territorial.</p>
-<h2 id="project-current-state-register-10-proximos-atos-governados">10. Próximos atos governados<a class="headerlink" href="#project-current-state-register-10-proximos-atos-governados" title="Permanent link">&para;</a></h2>
+<p>A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento. Região manual não equivale a posição atual. Salvamento não autoriza rastreamento. Definir origem não autoriza retenção ou histórico territorial. Alternar entre Mapa e Lista não modifica permissões.</p>
+<h2 id="project-current-state-register-11-proximos-atos-governados">11. Próximos atos governados<a class="headerlink" href="#project-current-state-register-11-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>criar o estado alternativo em Lista;</li>
+<li>validar funcionalmente a visualização em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
@@ -10763,7 +10865,7 @@ Business Capabilities: not started
 <li>validar a transição para a primeira Tela Hoje;</li>
 <li>retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.</li>
 </ol>
-<p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="roadmap" heading-number="2.2"><h1 id="roadmap-roadmap-arquitetural-estado-do-mapa-sem-localizacao-validado">Roadmap Arquitetural — Estado do Mapa sem Localização Validado<a class="headerlink" href="#roadmap-roadmap-arquitetural-estado-do-mapa-sem-localizacao-validado" title="Permanent link">&para;</a></h1>
+<p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="roadmap" heading-number="2.2"><h1 id="roadmap-roadmap-arquitetural-visualizacao-em-lista-do-mapa-criada">Roadmap Arquitetural — Visualização em Lista do Mapa Criada<a class="headerlink" href="#roadmap-roadmap-arquitetural-visualizacao-em-lista-do-mapa-criada" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-autoridade">1. Autoridade<a class="headerlink" href="#roadmap-1-autoridade" title="Permanent link">&para;</a></h2>
 <p>Este documento governa a sequência global de evolução arquitetural do Repositório de Conhecimento da Guivos. O estado transversal vigente é declarado pelo Registro do Estado Atual.</p>
 <h2 id="roadmap-2-estado-atual">2. Estado atual<a class="headerlink" href="#roadmap-2-estado-atual" title="Permanent link">&para;</a></h2>
@@ -10783,8 +10885,8 @@ Business Capabilities: not started
 </tr>
 <tr>
 <td>Marco</td>
-<td>estado do Mapa sem localização funcionalmente validado e reformulado</td>
-<td>M7.28; UXA-026; UXA-027</td>
+<td>visualização em Lista do Mapa materializada em wireframe móvel</td>
+<td>M7.29; UXA-028</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -10832,6 +10934,11 @@ Business Capabilities: not started
 <td>UXA-026; UXA-027</td>
 </tr>
 <tr>
+<td>Visualização em Lista do Mapa</td>
+<td>wireframe móvel criado; validação especializada pendente</td>
+<td>UXA-028</td>
+</tr>
+<tr>
 <td>Demais estados alternativos do Mapa</td>
 <td>governados; wireframes não iniciados</td>
 <td>UXA-025</td>
@@ -10868,7 +10975,8 @@ Business Capabilities: not started
 <li>wireframe gráfico móvel do Mapa de Oportunidades criado;</li>
 <li>Mapa de Oportunidades funcionalmente validado e reformulado;</li>
 <li>estado móvel de localização desativada criado;</li>
-<li>estado sem localização funcionalmente validado e reformulado.</li>
+<li>estado sem localização funcionalmente validado e reformulado;</li>
+<li>visualização móvel em Lista do Mapa criada.</li>
 </ol>
 <h2 id="roadmap-4-sequencia-pessoal-vigente">4. Sequência pessoal vigente<a class="headerlink" href="#roadmap-4-sequencia-pessoal-vigente" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Página Inicial pública
@@ -10878,38 +10986,39 @@ Business Capabilities: not started
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 </code></pre></div>
-<p>O Mapa não integra a sequência obrigatória de primeira entrada.</p>
-<h2 id="roadmap-5-resultado-da-validacao-especializada">5. Resultado da validação especializada<a class="headerlink" href="#roadmap-5-resultado-da-validacao-especializada" title="Permanent link">&para;</a></h2>
-<p>A UXA-027 confirmou, após reformulação:</p>
+<p>O Mapa não integra a sequência obrigatória de primeira entrada. Mapa e Lista são modos internos da mesma superfície recorrente.</p>
+<h2 id="roadmap-5-resultado-da-visualizacao-em-lista">5. Resultado da visualização em Lista<a class="headerlink" href="#roadmap-5-resultado-da-visualizacao-em-lista" title="Permanent link">&para;</a></h2>
+<p>A UXA-028 demonstra:</p>
 <ul>
-<li>compreensão de que o Mapa funciona sem localização;</li>
-<li>confirmação de que a posição não foi acessada;</li>
-<li>região manual explicitamente distinta da posição pessoal;</li>
-<li>pesquisa, filtros, Mapa e Lista preservados;</li>
-<li>área territorial sem marcador ou posição presumida;</li>
-<li>linguagem geral sem personalização indevida;</li>
-<li>distância pessoal omitida sem origem válida;</li>
-<li>salvamento disponível sem localização;</li>
-<li>origem manual para rota;</li>
-<li>continuidade para Detalhe de Oportunidade;</li>
-<li>ativação de localização aproximada como ação opcional.</li>
+<li>item <code>Mapa</code> preservado na navegação recorrente;</li>
+<li>alternância interna <code>Mapa ↔ Lista</code>;</li>
+<li>localização desativada, posição não acessada e região manual;</li>
+<li>pesquisa e filtros preservados;</li>
+<li>quantidade de resultados consistente com a consulta;</li>
+<li>ordenação explícita por critérios declarados;</li>
+<li>cartões comparáveis;</li>
+<li>oportunidade selecionada preservada;</li>
+<li>explicação de origem e relação comercial separadas;</li>
+<li>salvamento sem localização;</li>
+<li>definição de origem específica;</li>
+<li>continuidade para o Detalhe;</li>
+<li>retorno ao Mapa sem perda de contexto;</li>
+<li>alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.</li>
 </ul>
-<p>A referência possui 390 por 844 pixels e não define geografia real, tecnologia cartográfica, coordenadas, design ou implementação.</p>
+<p>A referência possui 390 por 844 pixels e não define algoritmo, tecnologia, design ou implementação.</p>
 <h2 id="roadmap-6-protecoes-preservadas">6. Proteções preservadas<a class="headerlink" href="#roadmap-6-protecoes-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
+<li>Lista não duplica <code>Explorar</code> nem abandona a consulta territorial;</li>
 <li>localização permanece opcional;</li>
-<li>recusa de permissão não bloqueia exploração;</li>
-<li>posição não acessada é declarada quando verdadeiro;</li>
 <li>região manual não equivale a posição atual;</li>
-<li>marcador pessoal não aparece no estado;</li>
-<li>linguagem personalizada é removida sem gate;</li>
+<li>busca, filtros e seleção não são apagados ao trocar de modo;</li>
+<li>ordenação não é apresentada como personalização sem gate;</li>
+<li>patrocínio não aumenta relevância de forma oculta;</li>
 <li>salvamento não autoriza localização ou rastreamento;</li>
 <li>origem manual não autoriza histórico territorial;</li>
-<li>rastreamento contínuo não é exigido;</li>
+<li>troca de modo não altera permissões;</li>
 <li>residências e locais sensíveis permanecem protegidos;</li>
-<li>proximidade não equivale a relevância;</li>
-<li>patrocínio não aumenta relevância funcional;</li>
-<li>rota depende de origem válida e não contorna endereço protegido.</li>
+<li>dados ausentes não são completados por inferência.</li>
 </ul>
 <h2 id="roadmap-7-estado-dos-resultados-empresariais">7. Estado dos Resultados Empresariais<a class="headerlink" href="#roadmap-7-estado-dos-resultados-empresariais" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>External validation: completed
@@ -10929,7 +11038,7 @@ Canonical consolidation: not started
 <h3 id="roadmap-81-arquitetura-da-experiencia">8.1 Arquitetura da Experiência<a class="headerlink" href="#roadmap-81-arquitetura-da-experiencia" title="Permanent link">&para;</a></h3>
 <p>Após integração e nova autorização, poderá ocorrer um ato separado:</p>
 <ol>
-<li>criar o estado alternativo em Lista;</li>
+<li>validar funcionalmente a visualização em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
@@ -10980,8 +11089,8 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>Marco</td>
-<td>estado do Mapa sem localização funcionalmente validado e reformulado</td>
-<td>M7.28; UXA-026; UXA-027</td>
+<td>visualização em Lista do Mapa materializada em wireframe móvel</td>
+<td>M7.29; UXA-028</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -11039,6 +11148,11 @@ Canonical consolidation: not started
 <td>UXA-026; UXA-027</td>
 </tr>
 <tr>
+<td>Visualização em Lista do Mapa</td>
+<td>wireframe móvel criado; validação especializada pendente</td>
+<td>UXA-028</td>
+</tr>
+<tr>
 <td>Demais estados alternativos</td>
 <td>governados; wireframes não iniciados</td>
 <td>UXA-025</td>
@@ -11085,7 +11199,8 @@ Canonical consolidation: not started
 <li>posição do Mapa na navegação recorrente consolidada;</li>
 <li>wireframe gráfico móvel do Mapa criado;</li>
 <li>Mapa de Oportunidades funcionalmente validado e reformulado;</li>
-<li>estado sem localização criado, validado e reformulado.</li>
+<li>estado sem localização criado, validado e reformulado;</li>
+<li>visualização em Lista do Mapa criada.</li>
 </ul>
 <h3 id="project-knowledge-board-em-validacao">Em validação<a class="headerlink" href="#project-knowledge-board-em-validacao" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11096,7 +11211,7 @@ Canonical consolidation: not started
 <h3 id="project-knowledge-board-aguardando-autorizacao">Aguardando autorização<a class="headerlink" href="#project-knowledge-board-aguardando-autorizacao" title="Permanent link">&para;</a></h3>
 <h4 id="project-knowledge-board-arquitetura-da-experiencia">Arquitetura da Experiência<a class="headerlink" href="#project-knowledge-board-arquitetura-da-experiencia" title="Permanent link">&para;</a></h4>
 <ul>
-<li>estado alternativo em Lista;</li>
+<li>validação funcional da visualização em Lista;</li>
 <li>estado sem resultados;</li>
 <li>referência do Mapa para computador;</li>
 <li>wireframe gráfico do início protegido da jornada;</li>
@@ -11145,8 +11260,22 @@ Canonical consolidation: not started
 <li>origem manual para rota;</li>
 <li>continuidade para o Detalhe.</li>
 </ul>
-<p>O mapa desenhado é esquemático e não representa cidade, endereço ou coordenada real.</p>
-<h2 id="project-knowledge-board-6-protecoes-preservadas">6. Proteções preservadas<a class="headerlink" href="#project-knowledge-board-6-protecoes-preservadas" title="Permanent link">&para;</a></h2>
+<h2 id="project-knowledge-board-6-visualizacao-em-lista-do-mapa">6. Visualização em Lista do Mapa<a class="headerlink" href="#project-knowledge-board-6-visualizacao-em-lista-do-mapa" title="Permanent link">&para;</a></h2>
+<p>A UXA-028 demonstra:</p>
+<ul>
+<li>Lista selecionada dentro da superfície Mapa;</li>
+<li>região, busca e filtros preservados;</li>
+<li>quantidade e ordenação explícitas;</li>
+<li>cartões comparáveis;</li>
+<li>oportunidade selecionada preservada;</li>
+<li>explicação de origem e relação comercial separadas;</li>
+<li>salvamento, definição de origem e Detalhe;</li>
+<li>retorno ao Mapa sem perda de contexto;</li>
+<li>uso integral sem localização;</li>
+<li>alternativa textual para acessibilidade, baixa conectividade e falha cartográfica.</li>
+</ul>
+<p>A Lista não duplica <code>Explorar</code> e sua validação funcional especializada permanece pendente.</p>
+<h2 id="project-knowledge-board-7-protecoes-preservadas">7. Proteções preservadas<a class="headerlink" href="#project-knowledge-board-7-protecoes-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>a Home pública não coleta relato pessoal;</li>
 <li>iniciar a jornada é voluntário;</li>
@@ -11163,11 +11292,12 @@ Canonical consolidation: not started
 <li>rastreamento contínuo não é obrigatório;</li>
 <li>salvamento não autoriza rastreamento;</li>
 <li>origem manual não autoriza histórico territorial;</li>
+<li>alternância entre Mapa e Lista não altera permissões;</li>
 <li>proximidade não equivale a relevância;</li>
 <li>rota não contorna endereço protegido;</li>
 <li>wireframes e validações funcionais não equivalem a design ou implementação.</li>
 </ul>
-<h2 id="project-knowledge-board-7-distribuicao-dos-candidatos">7. Distribuição dos candidatos<a class="headerlink" href="#project-knowledge-board-7-distribuicao-dos-candidatos" title="Permanent link">&para;</a></h2>
+<h2 id="project-knowledge-board-8-distribuicao-dos-candidatos">8. Distribuição dos candidatos<a class="headerlink" href="#project-knowledge-board-8-distribuicao-dos-candidatos" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -11199,8 +11329,8 @@ Canonical consolidation: not started
 </tr>
 </tbody>
 </table>
-<h2 id="project-knowledge-board-8-proximo-movimento">8. Próximo movimento<a class="headerlink" href="#project-knowledge-board-8-proximo-movimento" title="Permanent link">&para;</a></h2>
-<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre estado em Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.</p></section><section class="print-page" id="project-architectural-milestones" heading-number="2.4"><h1 id="project-architectural-milestones-marcos-arquiteturais">Marcos Arquiteturais<a class="headerlink" href="#project-architectural-milestones-marcos-arquiteturais" title="Permanent link">&para;</a></h1>
+<h2 id="project-knowledge-board-9-proximo-movimento">9. Próximo movimento<a class="headerlink" href="#project-knowledge-board-9-proximo-movimento" title="Permanent link">&para;</a></h2>
+<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional da Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.</p></section><section class="print-page" id="project-architectural-milestones" heading-number="2.4"><h1 id="project-architectural-milestones-marcos-arquiteturais">Marcos Arquiteturais<a class="headerlink" href="#project-architectural-milestones-marcos-arquiteturais" title="Permanent link">&para;</a></h1>
 <h2 id="project-architectural-milestones-1-autoridade">1. Autoridade<a class="headerlink" href="#project-architectural-milestones-1-autoridade" title="Permanent link">&para;</a></h2>
 <p>Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.</p>
 <h2 id="project-architectural-milestones-2-linha-de-maturidade-consolidada">2. Linha de maturidade consolidada<a class="headerlink" href="#project-architectural-milestones-2-linha-de-maturidade-consolidada" title="Permanent link">&para;</a></h2>
@@ -11285,37 +11415,43 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>M7.28</td>
-<td>Concluído neste incremento</td>
+<td>Concluído</td>
 <td>estado sem localização funcionalmente validado e reformulado</td>
+</tr>
+<tr>
+<td>M7.29</td>
+<td>Concluído neste incremento</td>
+<td>visualização em Lista do Mapa criada</td>
 </tr>
 </tbody>
 </table>
 <h2 id="project-architectural-milestones-3-marco-vigente">3. Marco vigente<a class="headerlink" href="#project-architectural-milestones-3-marco-vigente" title="Permanent link">&para;</a></h2>
-<h3 id="project-architectural-milestones-estado-do-mapa-sem-localizacao-validado-e-reformulado-m728">Estado do Mapa sem Localização Validado e Reformulado — M7.28<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-localizacao-validado-e-reformulado-m728" title="Permanent link">&para;</a></h3>
+<h3 id="project-architectural-milestones-visualizacao-em-lista-do-mapa-criada-m729">Visualização em Lista do Mapa Criada — M7.29<a class="headerlink" href="#project-architectural-milestones-visualizacao-em-lista-do-mapa-criada-m729" title="Permanent link">&para;</a></h3>
 <p>Critérios atendidos:</p>
 <ul>
-<li>Mapa preservado como superfície recorrente;</li>
-<li>localização do dispositivo mantida como opcional;</li>
-<li>exploração territorial mantida por cidade ou região manual;</li>
-<li>declaração <code>Posição não acessada</code> adicionada;</li>
-<li>região manual diferenciada explicitamente da posição pessoal;</li>
-<li>linguagem de exploração geral utilizada sem gate de personalização;</li>
-<li>busca, filtros, Mapa e Lista preservados;</li>
-<li>marcador e posição pessoal presumida removidos;</li>
-<li>resultados relacionados à região e à busca explícita;</li>
-<li>distância pessoal omitida sem origem válida;</li>
-<li>salvamento demonstrado sem ativação de localização;</li>
-<li>origem manual demonstrada para rota;</li>
-<li>ativação de localização aproximada apresentada como ação secundária e opcional;</li>
-<li>revisão de privacidade disponível antes da ativação;</li>
-<li>recusa de localização sem bloqueio de Detalhe ou salvamento;</li>
-<li>arquivo vetorial móvel reformulado em 390 por 844 pixels;</li>
-<li>demais estados gráficos e referência para computador preservados como atos separados;</li>
+<li>Lista materializada como modo interno da superfície Mapa;</li>
+<li>item <code>Mapa</code> preservado na navegação recorrente;</li>
+<li>alternância <code>Mapa ↔ Lista</code> demonstrada;</li>
+<li>diferença funcional entre Lista do Mapa e <code>Explorar</code> registrada;</li>
+<li>posição não acessada e região manual preservadas no exemplo;</li>
+<li>pesquisa, filtros e quantidade de resultados mantidos;</li>
+<li>ordenação explícita demonstrada;</li>
+<li>cartões comparáveis criados;</li>
+<li>oportunidade selecionada preservada;</li>
+<li>explicação de origem e relação comercial separadas;</li>
+<li>salvamento, definição de origem e Detalhe demonstrados;</li>
+<li>retorno ao Mapa sem perda de contexto governado;</li>
+<li>Lista estabelecida como alternativa integral para acessibilidade, baixa conectividade e falha cartográfica;</li>
+<li>arquivo vetorial móvel criado em 390 por 844 pixels;</li>
+<li>validação funcional especializada preservada como ato posterior;</li>
+<li>estado sem resultados e referência para computador não iniciados;</li>
 <li>tecnologia, design, protótipo, testes e desenvolvimento não iniciados;</li>
 <li>Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;</li>
 <li>Engenharia de Produto preservada antes de W0-01.</li>
 </ul>
 <h2 id="project-architectural-milestones-4-marcos-anteriores-preservados">4. Marcos anteriores preservados<a class="headerlink" href="#project-architectural-milestones-4-marcos-anteriores-preservados" title="Permanent link">&para;</a></h2>
+<h3 id="project-architectural-milestones-estado-do-mapa-sem-localizacao-validado-e-reformulado-m728">Estado do Mapa sem Localização Validado e Reformulado — M7.28<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-localizacao-validado-e-reformulado-m728" title="Permanent link">&para;</a></h3>
+<p>A UXA-026 e a UXA-027 permanecem como contrato validado para uso integral sem localização do dispositivo.</p>
 <h3 id="project-architectural-milestones-estado-do-mapa-sem-localizacao-criado-m727">Estado do Mapa sem Localização Criado — M7.27<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-localizacao-criado-m727" title="Permanent link">&para;</a></h3>
 <p>A UXA-026 permanece como origem histórica do estado, posteriormente reformulado e validado pela UXA-027.</p>
 <h3 id="project-architectural-milestones-mapa-de-oportunidades-validado-e-reformulado-m726">Mapa de Oportunidades Validado e Reformulado — M7.26<a class="headerlink" href="#project-architectural-milestones-mapa-de-oportunidades-validado-e-reformulado-m726" title="Permanent link">&para;</a></h3>
@@ -11355,7 +11491,7 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa; estado sem localização validado; estados e transições posteriores aguardando autorização</td>
+<td>ativa; visualização em Lista criada; validação e estados posteriores aguardando autorização</td>
 </tr>
 <tr>
 <td>Arquitetura de Produtos</td>
@@ -11372,7 +11508,7 @@ Canonical consolidation: not started
 <p>Após integração e nova autorização, poderão ocorrer em incrementos separados:</p>
 <h3 id="project-architectural-milestones-arquitetura-da-experiencia">Arquitetura da Experiência<a class="headerlink" href="#project-architectural-milestones-arquitetura-da-experiencia" title="Permanent link">&para;</a></h3>
 <ol>
-<li>criar o estado alternativo em Lista;</li>
+<li>validar funcionalmente a visualização em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe do início protegido;</li>
@@ -27754,7 +27890,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 </tr>
 <tr>
 <td>Explorar e Mapa</td>
-<td><a href="#experience-architecture-uxa-004-opportunities-organizations-collectives-map">Contrato funcional</a>, <a href="#experience-architecture-uxa-024-opportunity-map-low-fidelity-wireframe">wireframe reformulado</a>, <a href="#experience-architecture-uxa-025-opportunity-map-functional-validation-and-reformulation">validação funcional</a>, <a href="#experience-architecture-uxa-026-opportunity-map-location-disabled-state">estado sem localização</a> e <a href="#experience-architecture-uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation">validação especializada</a></td>
+<td><a href="#experience-architecture-uxa-004-opportunities-organizations-collectives-map">Contrato funcional</a>, <a href="#experience-architecture-uxa-024-opportunity-map-low-fidelity-wireframe">wireframe reformulado</a>, <a href="#experience-architecture-uxa-025-opportunity-map-functional-validation-and-reformulation">validação funcional</a>, <a href="#experience-architecture-uxa-026-opportunity-map-location-disabled-state">estado sem localização</a>, <a href="#experience-architecture-uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation">validação especializada</a> e <a href="#experience-architecture-uxa-028-opportunity-map-list-state">visualização em Lista</a></td>
 </tr>
 <tr>
 <td>Oportunidades</td>
@@ -27778,8 +27914,8 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <tbody>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>descoberta ativa e integrada até a validação do estado sem localização</td>
-<td>UXA-000 a UXA-027; UXA-003-A1</td>
+<td>descoberta ativa e integrada até a visualização em Lista do Mapa</td>
+<td>UXA-000 a UXA-028; UXA-003-A1</td>
 </tr>
 <tr>
 <td>Resultados Empresariais</td>
@@ -27830,6 +27966,11 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <td>Estado de localização desativada</td>
 <td>funcionalmente validado e reformulado</td>
 <td>UXA-026; UXA-027</td>
+</tr>
+<tr>
+<td>Visualização em Lista do Mapa</td>
+<td>wireframe móvel criado; validação especializada pendente</td>
+<td>UXA-028</td>
 </tr>
 <tr>
 <td>Demais estados alternativos do Mapa</td>
@@ -27884,10 +28025,12 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 </code></pre></div>
 <p>O wireframe móvel principal está registrado como <strong>UXA-024</strong> e sua validação como <strong>UXA-025</strong>.</p>
 <p>O estado sem localização está registrado como <strong>UXA-026</strong> e sua validação especializada como <strong>UXA-027</strong>.</p>
+<p>A visualização em Lista dentro do Mapa está registrada como <strong>UXA-028</strong>.</p>
 <p>Arquivos vetoriais:</p>
 <ul>
 <li><code>docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg</code>;</li>
-<li><code>docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg</code>.</li>
+<li><code>docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg</code>;</li>
+<li><code>docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg</code>.</li>
 </ul>
 <h2 id="experience-architecture-11-estado-de-localizacao-desativada">11. Estado de localização desativada<a class="headerlink" href="#experience-architecture-11-estado-de-localizacao-desativada" title="Permanent link">&para;</a></h2>
 <p>A UXA-026 e a UXA-027 estabelecem que localização não é requisito universal para utilizar o Mapa.</p>
@@ -27904,19 +28047,35 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>ativar localização aproximada posteriormente e de forma opcional.</li>
 </ul>
 <p>O estado não apresenta marcador pessoal, distância individual presumida ou justificativa baseada no Momento Atual.</p>
-<h2 id="experience-architecture-12-estados-funcionais-do-mapa">12. Estados funcionais do Mapa<a class="headerlink" href="#experience-architecture-12-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-12-visualizacao-em-lista-do-mapa">12. Visualização em Lista do Mapa<a class="headerlink" href="#experience-architecture-12-visualizacao-em-lista-do-mapa" title="Permanent link">&para;</a></h2>
+<p>A UXA-028 materializa a Lista como modo interno da mesma consulta territorial do Mapa.</p>
+<p>Ela preserva:</p>
+<ul>
+<li>item <code>Mapa</code> na navegação recorrente;</li>
+<li>alternância <code>Mapa ↔ Lista</code>;</li>
+<li>região, busca e filtros;</li>
+<li>quantidade e ordenação de resultados;</li>
+<li>oportunidade selecionada;</li>
+<li>explicação de origem;</li>
+<li>relação comercial;</li>
+<li>salvamento e Detalhe;</li>
+<li>retorno ao Mapa sem perda de contexto.</li>
+</ul>
+<p>A Lista não duplica <code>Explorar</code>. Ela constitui alternativa integral para leitura textual, acessibilidade, baixa conectividade e indisponibilidade cartográfica.</p>
+<p>A validação funcional especializada permanece pendente.</p>
+<h2 id="experience-architecture-13-estados-funcionais-do-mapa">13. Estados funcionais do Mapa<a class="headerlink" href="#experience-architecture-13-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
 <p>A UXA-025 governa localização desativada, localização aproximada, localização exata temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.</p>
-<p>A UXA-026 e a UXA-027 materializam e validam somente o estado de localização desativada. Os demais wireframes permanecem atos separados.</p>
-<h2 id="experience-architecture-13-gate-de-personalizacao">13. Gate de personalização<a class="headerlink" href="#experience-architecture-13-gate-de-personalizacao" title="Permanent link">&para;</a></h2>
+<p>A UXA-026 e a UXA-027 materializam e validam o estado de localização desativada. A UXA-028 materializa a Lista. Os demais wireframes permanecem atos separados.</p>
+<h2 id="experience-architecture-14-gate-de-personalizacao">14. Gate de personalização<a class="headerlink" href="#experience-architecture-14-gate-de-personalizacao" title="Permanent link">&para;</a></h2>
 <p>Personalização material exige base suficiente, origem e finalidade identificadas, distinção entre naturezas da informação, revisão real, controles de correção e limitação, autorização compatível, ausência de conflito material e incertezas visíveis.</p>
 <p>Sem o gate, a pessoa poderá continuar sem personalização, explorar, corrigir, pausar ou excluir.</p>
-<h2 id="experience-architecture-14-gate-de-alinhamento-a-fundacao">14. Gate de alinhamento à Fundação<a class="headerlink" href="#experience-architecture-14-gate-de-alinhamento-a-fundacao" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-15-gate-de-alinhamento-a-fundacao">15. Gate de alinhamento à Fundação<a class="headerlink" href="#experience-architecture-15-gate-de-alinhamento-a-fundacao" title="Permanent link">&para;</a></h2>
 <p>Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão de Longo Prazo, Constituição e Princípios Permanentes da Guivos.</p>
 <p>Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.</p>
-<h2 id="experience-architecture-15-proximos-atos-governados">15. Próximos atos governados<a class="headerlink" href="#experience-architecture-15-proximos-atos-governados" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-16-proximos-atos-governados">16. Próximos atos governados<a class="headerlink" href="#experience-architecture-16-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>criar o estado alternativo em Lista;</li>
+<li>validar funcionalmente a visualização em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido da jornada;</li>
@@ -28946,6 +29105,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li><strong>Validação Funcional do Mapa de Oportunidades</strong> — UXA-025;</li>
 <li><strong>Estado do Mapa com Localização Desativada</strong> — UXA-026;</li>
 <li><strong>Validação do Estado sem Localização</strong> — UXA-027;</li>
+<li><strong>Visualização em Lista do Mapa</strong> — UXA-028;</li>
 <li><strong>Wireframe do Detalhe de Oportunidade</strong> — UXA-007;</li>
 <li><strong>Wireframe do Cadastro pela Organização</strong> — UXA-008.</li>
 </ol>
@@ -28971,8 +29131,10 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>A pessoa reconhece que a Home pública não coleta relatos pessoais?</li>
 <li>O participante compreende o que merece atenção na Tela Hoje?</li>
 <li>A alternância entre Lista e Mapa representa a mesma descoberta?</li>
+<li>A diferença entre <code>Explorar</code> e Lista do Mapa é clara?</li>
 <li>O Mapa continua compreensível quando a localização está desativada?</li>
 <li>A pessoa reconhece que posição não acessada difere de região manual?</li>
+<li>Quantidade, ordenação e critérios da Lista são compreensíveis?</li>
 <li>Preço, condições, elegibilidade, origem e relação comercial estão claros?</li>
 <li>Ações principais e alternativas são distinguíveis?</li>
 </ul>
@@ -28983,6 +29145,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>Os caminhos pessoal, geral e institucional permanecem distintos?</li>
 <li>O Mapa preserva espaço territorial sem ocultar pesquisa, filtros, resultados e privacidade?</li>
 <li>O estado sem localização apresenta privacidade e região manual antes dos resultados?</li>
+<li>A Lista apresenta quantidade e ordenação antes dos cartões?</li>
 <li>O cartão selecionado oferece contexto suficiente antes do detalhe?</li>
 <li>Salvamento e origem manual são encontráveis sem competir com o detalhe?</li>
 <li>Estados vazios e ausência legítima permanecem possíveis?</li>
@@ -28994,6 +29157,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>O participante consegue alterar filtros, raio, localização e relevância?</li>
 <li>Localização exata, aproximada, manual e desativada são alternativas reais?</li>
 <li>A recusa de localização preserva busca, Mapa, Lista, Detalhe e salvamento?</li>
+<li>A pessoa pode escolher Lista por preferência, acessibilidade ou conectividade?</li>
 <li>A ativação posterior permanece opcional?</li>
 <li>O fluxo evita pressionar contratação, inscrição ou consentimento?</li>
 </ul>
@@ -29002,6 +29166,8 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>A Home conduz naturalmente ao início protegido, à compreensão e à Tela Hoje?</li>
 <li>A Tela Hoje conduz ao Mapa por um recorte compacto, sem incorporar o mapa completo?</li>
 <li>Explorar e Mapa permanecem sincronizados?</li>
+<li>Mapa e Lista preservam a mesma consulta territorial?</li>
+<li>Região, busca, filtros, ordenação e item selecionado permanecem ao trocar de modo?</li>
 <li>O estado sem localização preserva região, busca e filtros ao alternar para Lista?</li>
 <li>O Mapa conduz ao Detalhe de Oportunidade preservando contexto e condições?</li>
 <li>A origem manual para rota não altera o consentimento territorial?</li>
@@ -29052,6 +29218,10 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <td>declaração textual</td>
 <td>confirmação de estado que não pode depender somente do desenho</td>
 </tr>
+<tr>
+<td>rótulo <code>Selecionada</code></td>
+<td>preservação explícita de item entre Mapa e Lista</td>
+</tr>
 </tbody>
 </table>
 <p>Cor, iconografia e tipografia não possuem significado definitivo neste programa.</p>
@@ -29086,6 +29256,11 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <td>390 × 844</td>
 </tr>
 <tr>
+<td>Mapa — visualização em Lista</td>
+<td>aplicativo móvel</td>
+<td>390 × 844</td>
+</tr>
+<tr>
 <td>Detalhe de oportunidade</td>
 <td>aplicativo móvel</td>
 <td>390 × 980</td>
@@ -29110,7 +29285,8 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 → decisão consciente de salvar, comparar ou iniciar processo
 
 Explorar em lista
-↔ visualizar no Mapa
+↔ abrir consulta territorial no Mapa
+↔ alternar entre Mapa e Lista sem perder contexto
 ↔ abrir Detalhe de Oportunidade
 
 Localização desativada
@@ -29119,6 +29295,13 @@ Localização desativada
 → explorar no Mapa ou na Lista
 → salvar ou abrir Detalhe
 → definir origem manual ou ativar localização opcionalmente
+
+Lista do Mapa
+→ preservar região, busca e filtros
+→ mostrar quantidade e ordenação
+→ comparar cartões
+→ manter item selecionado
+→ retornar ao Mapa na mesma consulta
 
 Organização
 → cadastro governado da oportunidade
@@ -29193,6 +29376,12 @@ Organização
 <td>validação e reformulação funcional</td>
 </tr>
 <tr>
+<td><a href="#experience-architecture-uxa-028-opportunity-map-list-state">Visualização em Lista do Mapa</a></td>
+<td>UXA-028</td>
+<td>modo alternativo</td>
+<td><a href="../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg">arquivo vetorial</a></td>
+</tr>
+<tr>
 <td><a href="#experience-architecture-uxa-007-opportunity-detail-low-fidelity-wireframe">Wireframe do Detalhe de Oportunidade</a></td>
 <td>UXA-007</td>
 <td>detalhe</td>
@@ -29226,7 +29415,22 @@ Organização
 <li>continuidade para o detalhe.</li>
 </ul>
 <p>A UXA-027 considera o estado funcionalmente válido após reformulação.</p>
-<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-12-demais-estados-funcionais-do-mapa">12. Demais estados funcionais do Mapa<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-12-demais-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-12-visualizacao-em-lista-do-mapa">12. Visualização em Lista do Mapa<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-12-visualizacao-em-lista-do-mapa" title="Permanent link">&para;</a></h2>
+<p>A UXA-028 demonstra:</p>
+<ul>
+<li>Lista selecionada dentro da superfície Mapa;</li>
+<li>localização desativada, posição não acessada e região manual;</li>
+<li>pesquisa, filtros e quantidade preservados;</li>
+<li>ordenação explícita;</li>
+<li>cartões comparáveis;</li>
+<li>oportunidade selecionada;</li>
+<li>explicação de origem e relação comercial;</li>
+<li>salvamento, definição de origem e Detalhe;</li>
+<li>retorno ao Mapa sem perda de contexto;</li>
+<li>alternativa integral para acessibilidade e falha cartográfica.</li>
+</ul>
+<p>A validação funcional especializada permanece pendente.</p>
+<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-13-demais-estados-funcionais-do-mapa">13. Demais estados funcionais do Mapa<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-13-demais-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
 <p>Permanecem governados, sem wireframes específicos neste incremento:</p>
 <ul>
 <li>localização aproximada;</li>
@@ -29241,13 +29445,14 @@ Organização
 <li>contexto sem gate;</li>
 <li>mapa indisponível com continuidade pela Lista.</li>
 </ul>
-<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-13-limites">13. Limites<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-13-limites" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-14-limites">14. Limites<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-14-limites" title="Permanent link">&para;</a></h2>
 <p>Este programa não:</p>
 <ul>
 <li>aprova navegação como definitiva;</li>
 <li>define marca, paleta, tipografia ou ilustração;</li>
 <li>define tecnologia ou fornecedor de mapas;</li>
 <li>cria geocodificação, rotas ou rastreamento;</li>
+<li>define algoritmo de ordenação;</li>
 <li>define textos finais de interface;</li>
 <li>conclui acessibilidade ou responsividade;</li>
 <li>cria protótipo navegável;</li>
@@ -29255,10 +29460,10 @@ Organização
 <li>define preço ou oferta comercial real;</li>
 <li>inicia Engenharia de Produto.</li>
 </ul>
-<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-14-proximos-pontos-de-decisao">14. Próximos pontos de decisão<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-14-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-15-proximos-pontos-de-decisao">15. Próximos pontos de decisão<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-15-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos deverão ser autorizados separadamente e poderão:</p>
 <ol>
-<li>criar o estado alternativo em Lista;</li>
+<li>validar funcionalmente a visualização em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
@@ -34085,6 +34290,262 @@ Organização
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
 <li>criar o estado alternativo em Lista;</li>
+<li>criar o estado sem resultados;</li>
+<li>criar referência do Mapa para computador;</li>
+<li>criar o wireframe gráfico do início protegido da jornada;</li>
+<li>criar a referência móvel da Página Inicial pública;</li>
+<li>validar a revisão da compreensão inicial;</li>
+<li>validar a transição para a primeira Tela Hoje;</li>
+<li>retomar independentemente os testes dos Resultados Empresariais.</li>
+</ol>
+<p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="experience-architecture-uxa-028-opportunity-map-list-state" heading-number="9.5.6"><h1 id="experience-architecture-uxa-028-opportunity-map-list-state-wireframe-alternativo-do-mapa-de-oportunidades-visualizacao-em-lista">Wireframe Alternativo do Mapa de Oportunidades — Visualização em Lista<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-wireframe-alternativo-do-mapa-de-oportunidades-visualizacao-em-lista" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento materializa a visualização em Lista da mesma descoberta territorial governada pelo Mapa de Oportunidades.</p>
+<p>A Lista não é uma superfície inferior, uma mensagem de erro ou uma duplicação de <code>Explorar</code>. Ela é uma representação textual integral da consulta territorial ativa e deverá preservar o contexto ao alternar entre Mapa e Lista.</p>
+<p>O wireframe demonstra o estado com localização desativada, posição não acessada e região escolhida manualmente. A Lista também poderá operar quando houver localização aproximada ou exata temporária autorizada, respeitando os controles aplicáveis.</p>
+<p>O artefato não representa design visual, tecnologia, dados reais, algoritmo de ordenação, implementação ou teste com usuários.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-2-posicao-na-experiencia">2. Posição na experiência<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-2-posicao-na-experiencia" title="Permanent link">&para;</a></h2>
+<p>A Lista permanece dentro da superfície recorrente do Mapa:</p>
+<div class="highlight"><pre><span></span><code>Hoje | Jornada | Explorar | Mapa | Eu
+</code></pre></div>
+<p>O item <code>Mapa</code> continua selecionado na navegação principal. A alternância interna ocorre entre:</p>
+<div class="highlight"><pre><span></span><code>Mapa ↔ Lista
+</code></pre></div>
+<p>A Lista poderá ser escolhida pela pessoa ou apresentada como continuidade quando:</p>
+<ul>
+<li>a pessoa preferir leitura textual;</li>
+<li>o mapa não estiver disponível;</li>
+<li>houver baixa conectividade;</li>
+<li>recursos cartográficos apresentarem falha;</li>
+<li>o uso do mapa não for adequado à acessibilidade;</li>
+<li>a comparação entre oportunidades for mais útil em cartões;</li>
+<li>a localização estiver desativada;</li>
+<li>a região tiver sido informada manualmente.</li>
+</ul>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-3-diferenca-entre-explorar-e-lista-do-mapa">3. Diferença entre Explorar e Lista do Mapa<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-3-diferenca-entre-explorar-e-lista-do-mapa" title="Permanent link">&para;</a></h2>
+<p><code>Explorar</code> organiza descoberta ampla por busca, categorias, temas, listas editoriais e filtros gerais.</p>
+<p>A Lista do Mapa representa a mesma consulta territorial já aberta na superfície <code>Mapa</code> e preserva:</p>
+<ul>
+<li>região ou área territorial ativa;</li>
+<li>busca;</li>
+<li>filtros;</li>
+<li>quantidade de resultados;</li>
+<li>ordenação;</li>
+<li>item selecionado;</li>
+<li>explicação de origem;</li>
+<li>condições conhecidas;</li>
+<li>retorno ao Mapa.</li>
+</ul>
+<p>Mudar para a Lista não deverá transportar a pessoa silenciosamente para <code>Explorar</code> nem reiniciar a consulta.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-4-artefato-visual">4. Artefato visual<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-4-artefato-visual" title="Permanent link">&para;</a></h2>
+<p><img alt="Wireframe alternativo do Mapa de Oportunidades em visualização de Lista" src="../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg" /></p>
+<p>Arquivo vetorial:</p>
+<p><code>docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg</code></p>
+<p>Dimensão de referência:</p>
+<ul>
+<li>canal: aplicativo móvel;</li>
+<li>largura: 390 pixels;</li>
+<li>altura: 844 pixels;</li>
+<li>modo: Lista selecionada dentro da superfície Mapa;</li>
+<li>condição ilustrada: localização desativada, posição não acessada e região manual.</li>
+</ul>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-5-hierarquia-funcional">5. Hierarquia funcional<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-5-hierarquia-funcional" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>nome da superfície e contexto de exploração
+→ estado territorial e privacidade
+→ região ativa e editável
+→ pesquisa
+→ alternância Mapa ou Lista
+→ filtros ativos
+→ quantidade de resultados
+→ ordenação explícita
+→ cartões comparáveis
+→ oportunidade selecionada preservada
+→ explicação, relação comercial, salvamento e detalhe
+→ retorno ao Mapa sem perda de contexto
+→ navegação recorrente
+</code></pre></div>
+<p>A Lista deverá priorizar compreensão, comparação e continuidade, sem esconder por que os resultados aparecem.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-6-contexto-territorial">6. Contexto territorial<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-6-contexto-territorial" title="Permanent link">&para;</a></h2>
+<p>Quando a localização estiver desativada, a Lista deverá preservar as declarações:</p>
+<blockquote>
+<p><strong>Localização desativada · posição não acessada</strong></p>
+<p><strong>Região informada manualmente · não é sua posição</strong></p>
+</blockquote>
+<p>A região deverá permanecer visível e editável antes dos resultados.</p>
+<p>Quando localização estiver autorizada, a interface deverá indicar precisão, finalidade e duração aplicáveis, sem tornar rastreamento contínuo requisito da Lista.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-7-pesquisa-filtros-e-atualizacao">7. Pesquisa, filtros e atualização<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-7-pesquisa-filtros-e-atualizacao" title="Permanent link">&para;</a></h2>
+<p>A Lista deverá preservar a mesma busca e os mesmos filtros compatíveis do Mapa.</p>
+<p>Ela deverá mostrar:</p>
+<ul>
+<li>termos pesquisados;</li>
+<li>filtros ativos identificáveis sem depender somente de cor;</li>
+<li>quantidade de filtros adicionais;</li>
+<li>ação para limpar filtros;</li>
+<li>quantidade de resultados;</li>
+<li>região à qual os resultados correspondem;</li>
+<li>ação para atualizar resultados quando a consulta territorial mudar.</li>
+</ul>
+<p>A troca de modo não poderá apagar silenciosamente busca, filtros ou região.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-8-quantidade-e-ordenacao">8. Quantidade e ordenação<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-8-quantidade-e-ordenacao" title="Permanent link">&para;</a></h2>
+<p>A quantidade de resultados deverá permanecer consistente entre Mapa e Lista para a mesma consulta e momento de atualização.</p>
+<p>A ordenação deverá ser explícita e revisável. Poderá considerar:</p>
+<ul>
+<li>correspondência com busca e filtros;</li>
+<li>data ou prazo;</li>
+<li>disponibilidade;</li>
+<li>modalidade;</li>
+<li>acessibilidade;</li>
+<li>preço ou gratuidade;</li>
+<li>distância de uma origem válida, quando aplicável;</li>
+<li>critérios editoriais ou institucionais declarados.</li>
+</ul>
+<p>Sem gate de personalização, a ordenação não poderá ser apresentada como <code>melhor para você</code>, <code>ideal para seu momento</code> ou equivalente.</p>
+<p>Patrocínio não poderá elevar relevância funcional de forma oculta. Relação comercial deverá ser informada separadamente.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-9-cartoes-comparaveis">9. Cartões comparáveis<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-9-cartoes-comparaveis" title="Permanent link">&para;</a></h2>
+<p>Cada cartão deverá apresentar informações suficientes para comparação antes do detalhe:</p>
+<ul>
+<li>tipo de oportunidade;</li>
+<li>modalidade;</li>
+<li>cidade, bairro, região ou disponibilidade online;</li>
+<li>título;</li>
+<li>responsável ou fonte;</li>
+<li>data, horário ou prazo;</li>
+<li>preço ou gratuidade;</li>
+<li>vagas ou disponibilidade;</li>
+<li>acessibilidade conhecida;</li>
+<li>origem do resultado;</li>
+<li>relação comercial;</li>
+<li>ações disponíveis.</li>
+</ul>
+<p>A ausência de uma informação deverá ser indicada como não informada, não confirmada ou indisponível, sem completar dados por inferência.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-10-oportunidade-selecionada">10. Oportunidade selecionada<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-10-oportunidade-selecionada" title="Permanent link">&para;</a></h2>
+<p>A oportunidade selecionada no Mapa deverá permanecer identificada ao abrir a Lista.</p>
+<p>A seleção poderá ser demonstrada por:</p>
+<ul>
+<li>borda estrutural;</li>
+<li>rótulo textual <code>Selecionada</code>;</li>
+<li>posição inicial na Lista, quando compatível com a ordenação;</li>
+<li>foco acessível;</li>
+<li>retorno ao mesmo cartão após fechar o Detalhe.</li>
+</ul>
+<p>A seleção não altera relevância, não implica recomendação e não modifica a ordenação sem regra explícita.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-11-explicacao-e-relacao-comercial">11. Explicação e relação comercial<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-11-explicacao-e-relacao-comercial" title="Permanent link">&para;</a></h2>
+<p>Cada oportunidade deverá oferecer <code>Por que está aqui?</code> ou explicação equivalente.</p>
+<p>A explicação poderá incluir:</p>
+<ul>
+<li>correspondência com a região ativa;</li>
+<li>busca explícita;</li>
+<li>filtros aplicados;</li>
+<li>categoria ou modalidade;</li>
+<li>data e disponibilidade;</li>
+<li>origem editorial, institucional ou organizacional;</li>
+<li>critério de ordenação;</li>
+<li>relação comercial identificada.</li>
+</ul>
+<p>Ela não deverá simular conhecimento do Momento Atual quando o gate não estiver atendido.</p>
+<p>Relação comercial deverá ser apresentada de forma separada, com exemplos como:</p>
+<ul>
+<li><code>Sem patrocínio</code>;</li>
+<li><code>Parceria identificada</code>;</li>
+<li><code>Conteúdo patrocinado</code>, quando aplicável.</li>
+</ul>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-12-salvamento-e-detalhe">12. Salvamento e Detalhe<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-12-salvamento-e-detalhe" title="Permanent link">&para;</a></h2>
+<p>Salvar deverá permanecer disponível na Lista independentemente de localização.</p>
+<p>O salvamento não autoriza:</p>
+<ul>
+<li>ativar localização;</li>
+<li>personalizar recomendações;</li>
+<li>registrar deslocamento;</li>
+<li>criar histórico territorial;</li>
+<li>contornar preferências de privacidade.</li>
+</ul>
+<p><code>Ver detalhes</code> deverá abrir o Detalhe de Oportunidade preservando:</p>
+<ul>
+<li>origem da navegação;</li>
+<li>região ativa;</li>
+<li>busca e filtros;</li>
+<li>ordenação;</li>
+<li>posição da Lista;</li>
+<li>item selecionado;</li>
+<li>condições conhecidas.</li>
+</ul>
+<p>Ao retornar, a pessoa deverá reencontrar o mesmo contexto.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-13-origem-para-rota">13. Origem para rota<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-13-origem-para-rota" title="Permanent link">&para;</a></h2>
+<p>Quando a localização estiver desativada, a Lista poderá apresentar <code>Definir origem</code>.</p>
+<p>A ação deverá solicitar origem específica e não poderá iniciar rastreamento contínuo, criar histórico territorial ou presumir residência.</p>
+<p>Endereços protegidos permanecerão limitados à área permitida ou à condição de liberação aplicável.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-14-retorno-ao-mapa">14. Retorno ao Mapa<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-14-retorno-ao-mapa" title="Permanent link">&para;</a></h2>
+<p>Ao retornar ao Mapa, deverão permanecer:</p>
+<ul>
+<li>região ou área territorial;</li>
+<li>busca;</li>
+<li>filtros;</li>
+<li>ordenação compatível;</li>
+<li>quantidade de resultados;</li>
+<li>item selecionado;</li>
+<li>posição ou foco correspondente, quando possível;</li>
+<li>explicação da origem dos resultados.</li>
+</ul>
+<p>A troca não deverá executar nova personalização, alterar consentimento ou redefinir localização.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-15-acessibilidade-e-resiliencia">15. Acessibilidade e resiliência<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-15-acessibilidade-e-resiliencia" title="Permanent link">&para;</a></h2>
+<p>A Lista constitui alternativa integral para:</p>
+<ul>
+<li>leitores de tela;</li>
+<li>navegação por teclado ou controles assistivos;</li>
+<li>pessoas que preferem conteúdo textual;</li>
+<li>baixa conectividade;</li>
+<li>indisponibilidade do fornecedor cartográfico;</li>
+<li>falha de carregamento do mapa;</li>
+<li>dispositivos com desempenho limitado.</li>
+</ul>
+<p>A Lista não poderá depender de mapa carregado para apresentar oportunidades já disponíveis na consulta.</p>
+<p>Estados de carregamento, atualização, ausência de resultados e erro de fonte deverão ser textuais e recuperáveis.</p>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-16-privacidade-e-autonomia">16. Privacidade e autonomia<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-16-privacidade-e-autonomia" title="Permanent link">&para;</a></h2>
+<p>A Lista preserva:</p>
+<ul>
+<li>localização opcional;</li>
+<li>posição não acessada quando verdadeiro;</li>
+<li>região manual distinta da posição pessoal;</li>
+<li>exploração sem personalização;</li>
+<li>explicação de critérios;</li>
+<li>comparação sem pressão comercial;</li>
+<li>salvamento sem consentimento territorial;</li>
+<li>retorno ao Mapa sem alteração silenciosa;</li>
+<li>proteção de endereços sensíveis;</li>
+<li>separação entre proximidade, relevância e publicidade.</li>
+</ul>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-17-criterios-de-validacao-posterior">17. Critérios de validação posterior<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-17-criterios-de-validacao-posterior" title="Permanent link">&para;</a></h2>
+<p>A validação funcional especializada deverá verificar:</p>
+<ul>
+<li>se a pessoa entende que Lista e Mapa representam a mesma consulta;</li>
+<li>se a diferença entre Lista do Mapa e <code>Explorar</code> é clara;</li>
+<li>se região, busca e filtros permanecem intactos;</li>
+<li>se quantidade e ordenação são compreensíveis;</li>
+<li>se o item selecionado é reencontrado;</li>
+<li>se os cartões permitem comparação suficiente;</li>
+<li>se relevância e relação comercial estão separadas;</li>
+<li>se salvar e abrir detalhes não exigem localização;</li>
+<li>se retornar ao Mapa preserva o contexto;</li>
+<li>se a Lista funciona como alternativa integral em acessibilidade e falhas cartográficas.</li>
+</ul>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-18-limites">18. Limites<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-18-limites" title="Permanent link">&para;</a></h2>
+<p>Este incremento não:</p>
+<ul>
+<li>valida a Lista com usuários reais;</li>
+<li>define algoritmo de busca ou ordenação;</li>
+<li>cria dados de produção;</li>
+<li>conclui acessibilidade técnica;</li>
+<li>define tecnologia cartográfica;</li>
+<li>cria geocodificação ou rotas;</li>
+<li>cria referência para computador;</li>
+<li>cria protótipo navegável;</li>
+<li>inicia design visual;</li>
+<li>inicia Engenharia de Produto.</li>
+</ul>
+<h2 id="experience-architecture-uxa-028-opportunity-map-list-state-19-proximos-atos-governados">19. Próximos atos governados<a class="headerlink" href="#experience-architecture-uxa-028-opportunity-map-list-state-19-proximos-atos-governados" title="Permanent link">&para;</a></h2>
+<p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
+<ol>
+<li>validar funcionalmente a visualização em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido da jornada;</li>
@@ -48432,6 +48893,8 @@ Baseline authorization: YES
 .print-site-enumerate-headings #experience-architecture-uxa-026-opportunity-map-location-disabled-state > h1:before { content: '9.5.4 ' }
 
 .print-site-enumerate-headings #experience-architecture-uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation > h1:before { content: '9.5.5 ' }
+
+.print-site-enumerate-headings #experience-architecture-uxa-028-opportunity-map-list-state > h1:before { content: '9.5.6 ' }
 
 .print-site-enumerate-headings #section-9-6 > h1:before { content: '9.6 ' }
 .print-site-enumerate-headings #experience-architecture-uxa-007-opportunity-detail-low-fidelity-wireframe > h1:before { content: '9.6.1 ' }
