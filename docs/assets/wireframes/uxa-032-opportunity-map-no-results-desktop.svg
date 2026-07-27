@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Referência para computador do Mapa de Oportunidades sem resultados</title>
-  <desc id="desc">Wireframe de baixa fidelidade em tela ampla com consulta territorial preservada, localização desativada, região manual, filtros, zero resultados, cobertura verificada e ações explícitas de recuperação.</desc>
+  <title id="title">Referência reformulada para computador do Mapa de Oportunidades sem resultados</title>
+  <desc id="desc">Wireframe de baixa fidelidade com consulta territorial preservada, filtros consistentes, visão dividida, zero resultados, cobertura verificável, recuperação concentrada e seleção anterior explicável.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
 
@@ -8,12 +8,8 @@
   <text x="28" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700">GUIVOS</text>
   <text x="148" y="42" font-family="Arial, sans-serif" font-size="20" font-weight="700">Mapa de Oportunidades</text>
   <g font-family="Arial, sans-serif" font-size="13" text-anchor="middle">
-    <text x="725" y="42">Hoje</text>
-    <text x="820" y="42">Jornada</text>
-    <text x="925" y="42">Explorar</text>
-    <rect x="978" y="20" width="92" height="34" rx="8" fill="#222222"/>
-    <text x="1024" y="42" fill="#ffffff" font-weight="700">Mapa</text>
-    <text x="1120" y="42">Eu</text>
+    <text x="725" y="42">Hoje</text><text x="820" y="42">Jornada</text><text x="925" y="42">Explorar</text>
+    <rect x="978" y="20" width="92" height="34" rx="8" fill="#222222"/><text x="1024" y="42" fill="#ffffff" font-weight="700">Mapa</text><text x="1120" y="42">Eu</text>
   </g>
   <text x="1388" y="42" text-anchor="end" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Conta e controles</text>
 
@@ -23,116 +19,105 @@
   <line x1="300" y1="96" x2="300" y2="134" stroke="#bbbbbb"/>
   <text x="320" y="110" font-family="Arial, sans-serif" font-size="11" font-weight="700">Localização desativada · posição não acessada</text>
   <text x="320" y="130" font-family="Arial, sans-serif" font-size="10">Região manual · não é sua posição</text>
-  <text x="950" y="110" font-family="Arial, sans-serif" font-size="10" fill="#555555">Cidade de exemplo · região central</text>
+  <text x="950" y="110" font-family="Arial, sans-serif" font-size="10">Cidade de exemplo · região central</text>
   <text x="1190" y="110" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Alterar região</text>
   <text x="1320" y="110" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Privacidade</text>
 
-  <rect x="20" y="158" width="1400" height="58" rx="10" fill="#ffffff" stroke="#777777"/>
-  <circle cx="48" cy="187" r="9" fill="none" stroke="#555555"/>
-  <line x1="54" y1="193" x2="63" y2="202" stroke="#555555"/>
-  <text x="78" y="191" font-family="Arial, sans-serif" font-size="13">mentoria de carreira</text>
-  <text x="560" y="191" font-family="Arial, sans-serif" font-size="10" fill="#555555">Busca preservada nesta região</text>
-  <rect x="1180" y="171" width="108" height="32" rx="7" fill="#222222"/>
-  <text x="1234" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff">Pesquisar</text>
-  <text x="1390" y="191" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Editar busca</text>
+  <rect x="20" y="158" width="1400" height="72" rx="10" fill="#ffffff" stroke="#777777"/>
+  <circle cx="48" cy="184" r="9" fill="none" stroke="#555555"/><line x1="54" y1="190" x2="63" y2="199" stroke="#555555"/>
+  <text x="78" y="188" font-family="Arial, sans-serif" font-size="13">mentoria de carreira</text>
+  <rect x="1180" y="169" width="108" height="32" rx="7" fill="#222222"/><text x="1234" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff">Pesquisar</text>
+  <text x="1390" y="188" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Editar busca</text>
+  <line x1="36" y1="205" x2="1404" y2="205" stroke="#dddddd"/>
+  <text x="38" y="221" font-family="Arial, sans-serif" font-size="10" font-weight="700">Consulta territorial ativa · mesma região, busca, filtros e atualização</text>
+  <text x="760" y="221" font-family="Arial, sans-serif" font-size="10">0 resultados · cobertura verificada · atualizada agora</text>
+  <text x="1390" y="221" text-anchor="end" font-family="Arial, sans-serif" font-size="10" font-weight="700">Visão dividida ativa</text>
 
-  <rect x="20" y="230" width="270" height="734" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="38" y="258" font-family="Arial, sans-serif" font-size="15" font-weight="700">Consulta e filtros</text>
-  <text x="272" y="258" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Revisar</text>
-  <text x="38" y="282" font-family="Arial, sans-serif" font-size="10" fill="#555555">4 filtros ativos · consulta intacta</text>
+  <rect x="20" y="244" width="270" height="720" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="38" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="700">Consulta e filtros</text>
+  <text x="272" y="272" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Revisar consulta</text>
+  <text x="38" y="294" font-family="Arial, sans-serif" font-size="10">4 filtros ativos · consulta intacta</text>
+
   <g font-family="Arial, sans-serif" font-size="10">
-    <rect x="38" y="300" width="108" height="28" rx="14" fill="#f1f1f1" stroke="#777777"/>
-    <text x="92" y="318" text-anchor="middle">Hoje ✓</text>
-    <rect x="154" y="300" width="110" height="28" rx="14" fill="#f1f1f1" stroke="#777777"/>
-    <text x="209" y="318" text-anchor="middle">Gratuitas ✓</text>
-    <rect x="38" y="338" width="108" height="28" rx="14" fill="#f1f1f1" stroke="#777777"/>
-    <text x="92" y="356" text-anchor="middle">Online ✓</text>
-    <rect x="154" y="338" width="110" height="28" rx="14" fill="#f1f1f1" stroke="#777777"/>
-    <text x="209" y="356" text-anchor="middle">Acessível ✓</text>
+    <rect x="38" y="310" width="226" height="42" rx="7" fill="#f1f1f1" stroke="#777777"/><text x="52" y="336">✓ Hoje e próximos 7 dias</text>
+    <rect x="38" y="362" width="226" height="42" rx="7" fill="#f1f1f1" stroke="#777777"/><text x="52" y="388">✓ Gratuitas e preço informado</text>
+    <rect x="38" y="414" width="226" height="42" rx="7" fill="#f1f1f1" stroke="#777777"/><text x="52" y="440">✓ Presencial e online</text>
+    <rect x="38" y="466" width="226" height="50" rx="7" fill="#f1f1f1" stroke="#777777"/><text x="52" y="488">✓ Acessibilidade confirmada</text><text x="52" y="504">ou informada</text>
   </g>
 
-  <rect x="38" y="392" width="226" height="112" rx="8" fill="#f3f3f3" stroke="#999999"/>
-  <text x="52" y="416" font-family="Arial, sans-serif" font-size="10" font-weight="700">O que permanece</text>
-  <text x="52" y="440" font-family="Arial, sans-serif" font-size="9">Região central</text>
-  <text x="52" y="462" font-family="Arial, sans-serif" font-size="9">Busca “mentoria de carreira”</text>
-  <text x="52" y="484" font-family="Arial, sans-serif" font-size="9">4 filtros ativos · sem localização</text>
+  <text x="38" y="548" font-family="Arial, sans-serif" font-size="11" font-weight="700">Ajustar conscientemente</text>
+  <rect x="38" y="562" width="226" height="36" rx="7" fill="#ffffff" stroke="#777777"/><text x="52" y="585" font-family="Arial, sans-serif" font-size="10">Ampliar região</text>
+  <rect x="38" y="608" width="226" height="36" rx="7" fill="#ffffff" stroke="#777777"/><text x="52" y="631" font-family="Arial, sans-serif" font-size="10">Alterar período</text>
+  <rect x="38" y="654" width="226" height="36" rx="7" fill="#ffffff" stroke="#777777"/><text x="52" y="677" font-family="Arial, sans-serif" font-size="10">Revisar filtros</text>
+  <rect x="38" y="700" width="226" height="36" rx="7" fill="#ffffff" stroke="#777777"/><text x="52" y="723" font-family="Arial, sans-serif" font-size="10">Editar busca</text>
+  <text x="38" y="758" font-family="Arial, sans-serif" font-size="9">Valor atual e proposto serão revisados antes de aplicar.</text>
 
-  <text x="38" y="540" font-family="Arial, sans-serif" font-size="11" font-weight="700">Ajustar conscientemente</text>
-  <rect x="38" y="554" width="226" height="38" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="52" y="578" font-family="Arial, sans-serif" font-size="10">Ampliar região</text>
-  <rect x="38" y="602" width="226" height="38" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="52" y="626" font-family="Arial, sans-serif" font-size="10">Alterar período</text>
-  <rect x="38" y="650" width="226" height="38" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="52" y="674" font-family="Arial, sans-serif" font-size="10">Revisar filtros</text>
-  <rect x="38" y="698" width="226" height="38" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="52" y="722" font-family="Arial, sans-serif" font-size="10">Editar busca</text>
-  <text x="38" y="760" font-family="Arial, sans-serif" font-size="9" fill="#555555">Você revisa a mudança antes de aplicar.</text>
+  <rect x="38" y="780" width="226" height="68" rx="8" fill="#f3f3f3" stroke="#999999"/>
+  <text x="52" y="804" font-family="Arial, sans-serif" font-size="10" font-weight="700">Última alteração identificada</text>
+  <text x="52" y="828" font-family="Arial, sans-serif" font-size="9">Filtro “Hoje e próximos 7 dias” aplicado</text>
+  <text x="250" y="842" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Desfazer</text>
 
-  <rect x="38" y="788" width="226" height="70" rx="8" fill="#f3f3f3" stroke="#999999"/>
-  <text x="52" y="812" font-family="Arial, sans-serif" font-size="10" font-weight="700">Última alteração</text>
-  <text x="52" y="834" font-family="Arial, sans-serif" font-size="9">Filtro “Hoje” aplicado</text>
-  <text x="250" y="834" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Desfazer</text>
+  <rect x="38" y="868" width="226" height="66" rx="8" fill="#ffffff" stroke="#999999"/>
+  <text x="52" y="892" font-family="Arial, sans-serif" font-size="10" font-weight="700">Privacidade territorial</text>
+  <text x="52" y="914" font-family="Arial, sans-serif" font-size="9">Sem marcador pessoal · sem rastreamento</text>
 
-  <rect x="38" y="884" width="226" height="54" rx="8" fill="#ffffff" stroke="#999999"/>
-  <text x="52" y="906" font-family="Arial, sans-serif" font-size="10" font-weight="700">Privacidade territorial</text>
-  <text x="52" y="925" font-family="Arial, sans-serif" font-size="9">Sem marcador pessoal · sem rastreamento</text>
+  <rect x="304" y="244" width="704" height="720" rx="10" fill="#f8f8f8" stroke="#777777"/>
+  <text x="324" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="700">Mapa</text>
+  <text x="990" y="272" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Focar no Mapa</text>
+  <text x="324" y="294" font-family="Arial, sans-serif" font-size="10">0 resultados · mesma consulta ativa da Lista</text>
+  <text x="324" y="314" font-family="Arial, sans-serif" font-size="9">Área atual · consulta concluída · cobertura verificada</text>
+  <text x="990" y="314" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver cobertura</text>
 
-  <rect x="304" y="230" width="704" height="734" rx="10" fill="#f8f8f8" stroke="#777777"/>
-  <text x="324" y="258" font-family="Arial, sans-serif" font-size="15" font-weight="700">Mapa</text>
-  <text x="990" y="258" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ampliar Mapa</text>
-  <text x="324" y="280" font-family="Arial, sans-serif" font-size="10" fill="#555555">0 resultados · mesma consulta da Lista</text>
-  <text x="324" y="302" font-family="Arial, sans-serif" font-size="9">Consulta concluída · cobertura verificada · atualizada agora</text>
-  <text x="990" y="302" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver cobertura</text>
-
-  <path d="M330 360 C430 300 520 410 620 340 C730 265 820 405 980 320" fill="none" stroke="#c7c7c7" stroke-width="3"/>
+  <path d="M330 370 C430 310 520 420 620 350 C730 275 820 415 980 330" fill="none" stroke="#c7c7c7" stroke-width="3"/>
   <path d="M340 760 C460 650 590 830 710 700 C820 590 900 780 975 670" fill="none" stroke="#d0d0d0" stroke-width="3"/>
-  <path d="M400 320 L430 930 M585 320 L560 930 M765 320 L790 930 M930 320 L900 930" fill="none" stroke="#dddddd" stroke-width="2"/>
-  <path d="M320 500 L990 530 M320 640 L990 615 M320 820 L990 790" fill="none" stroke="#e1e1e1" stroke-width="2"/>
+  <path d="M400 330 L430 930 M585 330 L560 930 M765 330 L790 930 M930 330 L900 930" fill="none" stroke="#dddddd" stroke-width="2"/>
+  <path d="M320 500 L990 530 M320 650 L990 620 M320 820 L990 790" fill="none" stroke="#e1e1e1" stroke-width="2"/>
 
-  <rect x="410" y="420" width="492" height="264" rx="14" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-  <text x="656" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700">0 resultados correspondem a esta consulta</text>
-  <text x="656" y="496" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Nenhum resultado corresponde à busca, região e filtros atuais.</text>
-  <text x="656" y="524" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555555">Sua consulta permanece intacta.</text>
-  <text x="656" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">A ausência está limitada à cobertura verificada nesta atualização.</text>
-  <rect x="476" y="582" width="142" height="38" rx="8" fill="#222222"/>
-  <text x="547" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">Ampliar região</text>
-  <rect x="632" y="582" width="142" height="38" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="703" y="606" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Alterar período</text>
-  <text x="656" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Explorar sem alterar esta consulta</text>
+  <rect x="414" y="420" width="484" height="252" rx="14" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="656" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700">0 resultados correspondem a esta consulta</text>
+  <text x="656" y="494" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">Nenhum resultado corresponde à busca, região e filtros atuais.</text>
+  <text x="656" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">Sua consulta permanece intacta.</text>
+  <text x="656" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">A conclusão está limitada à cobertura verificada nesta atualização.</text>
+  <rect x="512" y="580" width="288" height="38" rx="8" fill="#222222"/>
+  <text x="656" y="604" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">Revisar consulta preservada</text>
+  <text x="656" y="646" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Explorar sem alterar esta consulta</text>
 
-  <rect x="326" y="820" width="662" height="116" rx="9" fill="#f3f3f3" stroke="#999999"/>
-  <text x="344" y="846" font-family="Arial, sans-serif" font-size="10" font-weight="700">Disponibilidade dos dados</text>
-  <text x="344" y="870" font-family="Arial, sans-serif" font-size="9">Zero legítimo: cobertura consultada e nenhuma falha material ativa.</text>
-  <text x="344" y="892" font-family="Arial, sans-serif" font-size="9">Falha de fonte, indisponibilidade e baixa conexão usam mensagens próprias.</text>
-  <text x="344" y="914" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender disponibilidade dos dados</text>
+  <rect x="326" y="806" width="662" height="128" rx="9" fill="#f3f3f3" stroke="#999999"/>
+  <text x="344" y="832" font-family="Arial, sans-serif" font-size="10" font-weight="700">Cobertura e disponibilidade dos dados</text>
+  <text x="344" y="856" font-family="Arial, sans-serif" font-size="9">Zero legítimo: fontes previstas responderam dentro da cobertura declarada.</text>
+  <text x="344" y="878" font-family="Arial, sans-serif" font-size="9">Falha, cobertura parcial, carregamento e baixa conexão usam mensagens próprias.</text>
+  <text x="344" y="900" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver cobertura</text>
+  <text x="470" y="900" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Entender disponibilidade dos dados</text>
+  <text x="344" y="922" font-family="Arial, sans-serif" font-size="9">A área vazia não é o único sinal; diagnóstico e ações são textuais.</text>
 
-  <rect x="1022" y="230" width="398" height="734" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="1042" y="258" font-family="Arial, sans-serif" font-size="15" font-weight="700">Lista territorial</text>
-  <text x="1400" y="258" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ampliar Lista</text>
-  <text x="1042" y="280" font-family="Arial, sans-serif" font-size="10" fill="#555555">Mesma consulta do Mapa · 0 resultados</text>
-  <text x="1042" y="302" font-family="Arial, sans-serif" font-size="9">Consulta concluída · cobertura verificada</text>
+  <rect x="1022" y="244" width="398" height="720" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="1042" y="272" font-family="Arial, sans-serif" font-size="15" font-weight="700">Lista territorial</text>
+  <text x="1400" y="272" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Focar na Lista</text>
+  <text x="1042" y="294" font-family="Arial, sans-serif" font-size="10">Mesma consulta ativa do Mapa · 0 resultados</text>
+  <text x="1042" y="314" font-family="Arial, sans-serif" font-size="9">Consulta concluída · cobertura verificada</text>
 
-  <rect x="1040" y="324" width="362" height="176" rx="10" fill="#f7f7f7" stroke="#777777"/>
-  <text x="1221" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700">Nenhum item na Lista</text>
-  <text x="1221" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">O total zero é o mesmo apresentado no Mapa.</text>
-  <text x="1221" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Região, busca e filtros foram preservados.</text>
-  <text x="1221" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Revisar consulta</text>
-  <text x="1221" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ver cobertura</text>
+  <rect x="1040" y="330" width="362" height="164" rx="10" fill="#f7f7f7" stroke="#777777"/>
+  <text x="1221" y="366" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700">Nenhum item na Lista</text>
+  <text x="1221" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">O total zero é o mesmo apresentado no Mapa.</text>
+  <text x="1221" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Região, busca, filtros e atualização foram preservados.</text>
+  <text x="1221" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Use “Consulta e filtros” para revisar uma dimensão.</text>
+  <text x="1221" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ir para consulta e filtros</text>
 
-  <rect x="1040" y="520" width="362" height="172" rx="10" fill="#ffffff" stroke="#999999"/>
-  <text x="1058" y="546" font-family="Arial, sans-serif" font-size="10" font-weight="700">Seleção anterior</text>
-  <text x="1058" y="574" font-family="Arial, sans-serif" font-size="12" font-weight="700">Mentoria de carreira</text>
-  <text x="1058" y="598" font-family="Arial, sans-serif" font-size="9">Não corresponde mais à consulta atual.</text>
-  <text x="1058" y="622" font-family="Arial, sans-serif" font-size="9">Não integra o total zero e não foi reinserida artificialmente.</text>
-  <text x="1058" y="654" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Abrir Detalhe</text>
-  <text x="1378" y="654" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Remover seleção</text>
+  <rect x="1040" y="514" width="362" height="184" rx="10" fill="#ffffff" stroke="#999999"/>
+  <text x="1058" y="540" font-family="Arial, sans-serif" font-size="10" font-weight="700">Seleção anterior fora da consulta atual</text>
+  <text x="1058" y="570" font-family="Arial, sans-serif" font-size="12" font-weight="700">Mentoria de carreira</text>
+  <text x="1058" y="594" font-family="Arial, sans-serif" font-size="9">Marcador 1 anterior · não corresponde à consulta atual.</text>
+  <text x="1058" y="618" font-family="Arial, sans-serif" font-size="9">Não integra o total zero nem recebe prioridade artificial.</text>
+  <text x="1058" y="650" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Abrir Detalhe</text>
+  <text x="1378" y="650" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Remover seleção</text>
+  <text x="1058" y="678" font-family="Arial, sans-serif" font-size="9">Desfazer permanece no painel esquerdo quando aplicável.</text>
 
-  <rect x="1040" y="712" width="362" height="224" rx="10" fill="#f3f3f3" stroke="#999999"/>
-  <text x="1058" y="740" font-family="Arial, sans-serif" font-size="10" font-weight="700">Próximas ações</text>
-  <text x="1058" y="770" font-family="Arial, sans-serif" font-size="10">1. revisar a dimensão que deseja alterar</text>
-  <text x="1058" y="798" font-family="Arial, sans-serif" font-size="10">2. confirmar a mudança antes de aplicar</text>
-  <text x="1058" y="826" font-family="Arial, sans-serif" font-size="10">3. reconhecer o novo total e a atualização</text>
-  <text x="1058" y="854" font-family="Arial, sans-serif" font-size="10">4. desfazer quando houver alteração identificada</text>
-  <text x="1058" y="890" font-family="Arial, sans-serif" font-size="9">Localização continua opcional.</text>
-  <text x="1058" y="914" font-family="Arial, sans-serif" font-size="9">Publicidade não preenche artificialmente o estado.</text>
+  <rect x="1040" y="718" width="362" height="216" rx="10" fill="#f3f3f3" stroke="#999999"/>
+  <text x="1058" y="746" font-family="Arial, sans-serif" font-size="10" font-weight="700">Hierarquia de recuperação</text>
+  <text x="1058" y="776" font-family="Arial, sans-serif" font-size="10">1. diagnóstico no Mapa e na Lista</text>
+  <text x="1058" y="804" font-family="Arial, sans-serif" font-size="10">2. ajustes concentrados em “Consulta e filtros”</text>
+  <text x="1058" y="832" font-family="Arial, sans-serif" font-size="10">3. revisão antes de aplicar qualquer mudança</text>
+  <text x="1058" y="860" font-family="Arial, sans-serif" font-size="10">4. retorno com novo total e atualização</text>
+  <text x="1058" y="896" font-family="Arial, sans-serif" font-size="9">Localização continua opcional.</text>
+  <text x="1058" y="918" font-family="Arial, sans-serif" font-size="9">Publicidade não preenche artificialmente o estado.</text>
 </svg>
