@@ -3503,10 +3503,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-estado-sem-resultados-criado" class="md-nav__link">
+  <a href="#11-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Estado sem resultados criado
+        11. Estado sem resultados validado
       
     </span>
   </a>
@@ -4351,7 +4351,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-031 — Validação do Estado sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6971,10 +7006,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-estado-sem-resultados-criado" class="md-nav__link">
+  <a href="#11-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Estado sem resultados criado
+        11. Estado sem resultados validado
       
     </span>
   </a>
@@ -7065,6 +7100,7 @@
 <li>visualização em Lista do Mapa — UXA-028;</li>
 <li>validação da Lista do Mapa — UXA-029;</li>
 <li>estado do Mapa sem resultados — UXA-030;</li>
+<li>validação do estado sem resultados — UXA-031;</li>
 <li>wireframe do Detalhe — UXA-007;</li>
 <li>wireframe do Cadastro pela Organização — UXA-008.</li>
 </ol>
@@ -7094,6 +7130,7 @@
 <li>Dados ausentes são apresentados sem inferência?</li>
 <li>O total zero é entendido como resultado da consulta atual?</li>
 <li>Ausência legítima, falha de fonte e indisponibilidade são distinguíveis?</li>
+<li>A cobertura que sustenta o total zero pode ser verificada?</li>
 </ul>
 <h3 id="52-hierarquia">5.2 Hierarquia<a class="headerlink" href="#52-hierarquia" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7106,6 +7143,7 @@
 <li>Os cartões permitem comparação consistente?</li>
 <li>A oportunidade selecionada permanece reconhecível?</li>
 <li>O estado sem resultados apresenta diagnóstico antes das ações de recuperação?</li>
+<li>A última alteração e a seleção anterior aparecem somente quando aplicáveis?</li>
 </ul>
 <h3 id="53-autonomia">5.3 Autonomia<a class="headerlink" href="#53-autonomia" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7116,6 +7154,7 @@
 <li>A pessoa pode revisar filtros e ordenação?</li>
 <li>O fluxo evita pressão para consentimento ou contratação?</li>
 <li>As ações de recuperação alteram somente a dimensão escolhida?</li>
+<li>A pessoa revisa a mudança antes de aplicá-la?</li>
 <li>O estado vazio evita preenchimento patrocinado artificial?</li>
 </ul>
 <h3 id="54-continuidade">5.4 Continuidade<a class="headerlink" href="#54-continuidade" title="Permanent link">&para;</a></h3>
@@ -7126,8 +7165,9 @@
 <li>Mapa e Lista preservam região, busca, filtros, quantidade, ordenação e seleção?</li>
 <li>O Detalhe devolve a pessoa ao mesmo contexto?</li>
 <li>A Lista funciona sem mapa carregado?</li>
-<li>Mapa e Lista preservam o mesmo total zero, diagnóstico e ações?</li>
+<li>Mapa e Lista preservam o mesmo total zero, cobertura, diagnóstico e ações?</li>
 <li>Uma alteração que produz zero pode ser compreendida e desfeita?</li>
+<li>Uma seleção anterior permanece explicável sem ser reinserida como resultado?</li>
 </ul>
 <h2 id="6-convencoes-de-baixa-fidelidade">6. Convenções de baixa fidelidade<a class="headerlink" href="#6-convencoes-de-baixa-fidelidade" title="Permanent link">&para;</a></h2>
 <table>
@@ -7177,6 +7217,10 @@
 <tr>
 <td>campo territorial vazio com mensagem</td>
 <td>zero resultados sem depender da ausência visual de marcadores</td>
+</tr>
+<tr>
+<td>aviso contextual</td>
+<td>última alteração, cobertura ou seleção anterior quando aplicável</td>
 </tr>
 </tbody>
 </table>
@@ -7244,7 +7288,7 @@
 → Mapa de Oportunidades
 ↔ Lista territorial do Mapa
 → resultados ou estado sem resultados
-→ Detalhe de Oportunidade, quando houver correspondência
+→ Detalhe de Oportunidade, quando houver correspondência ou seleção anterior disponível
 → decisão consciente
 
 Explorar em descoberta ampla
@@ -7334,7 +7378,13 @@ Explorar em descoberta ampla
 <td><a href="../uxa-030-opportunity-map-no-results-state/">Mapa sem Resultados</a></td>
 <td>UXA-030</td>
 <td>estado alternativo</td>
-<td>arquivo vetorial</td>
+<td>arquivo vetorial reformulado</td>
+</tr>
+<tr>
+<td><a href="../uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/">Validação sem Resultados</a></td>
+<td>UXA-031</td>
+<td>estado alternativo</td>
+<td>validação funcional</td>
 </tr>
 <tr>
 <td><a href="../uxa-007-opportunity-detail-low-fidelity-wireframe/">Detalhe</a></td>
@@ -7368,21 +7418,23 @@ Explorar em descoberta ampla
 <li>funcionamento sem mapa carregado.</li>
 </ul>
 <p>A UXA-029 considera a Lista funcionalmente válida após reformulação.</p>
-<h2 id="11-estado-sem-resultados-criado">11. Estado sem resultados criado<a class="headerlink" href="#11-estado-sem-resultados-criado" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 demonstra:</p>
+<h2 id="11-estado-sem-resultados-validado">11. Estado sem resultados validado<a class="headerlink" href="#11-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 reformulada demonstra:</p>
 <ul>
 <li>zero limitado à consulta atual;</li>
-<li>consulta concluída sem falha conhecida;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
 <li>região, busca e filtros preservados;</li>
 <li>ações de recuperação independentes;</li>
-<li>reversibilidade quando aplicável;</li>
-<li>distinção entre ausência, erro e indisponibilidade;</li>
+<li>revisão antes de aplicar mudanças;</li>
+<li>última alteração identificada e reversível;</li>
+<li>seleção anterior tratada sem alterar o total zero;</li>
+<li>distinção entre ausência, erro, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
 <li>ausência de preenchimento artificial;</li>
 <li>tratamento textual acessível sem mapa carregado.</li>
 </ul>
-<p>A validação funcional especializada permanece não iniciada.</p>
+<p>A UXA-031 considera o estado funcionalmente válido após reformulação.</p>
 <h2 id="12-demais-estados-funcionais-do-mapa">12. Demais estados funcionais do Mapa<a class="headerlink" href="#12-demais-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
 <p>Permanecem governados, sem wireframes específicos:</p>
 <ul>
@@ -7402,12 +7454,12 @@ Explorar em descoberta ampla
 <h2 id="14-proximos-pontos-de-decisao">14. Próximos pontos de decisão<a class="headerlink" href="#14-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos exigem autorizações separadas:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a compreensão inicial;</li>
 <li>detalhar a primeira Tela Hoje após a transição;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhuma etapa posterior é iniciada automaticamente.</p>

@@ -4095,7 +4095,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-031 — Validação do Estado sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -7742,6 +7777,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.9 UXA-031 — Validação do Estado sem Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -9701,6 +9747,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.9 UXA-031 — Validação do Estado sem Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -10500,7 +10557,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Marco</td>
-<td>M7.31 — Estado do Mapa sem Resultados Criado</td>
+<td>M7.32 — Estado do Mapa sem Resultados Validado e Reformulado</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -10540,7 +10597,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação funcional pendente</td>
+<td>funcionalmente validado e reformulado</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -10561,25 +10618,29 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 → Hoje | Jornada | Explorar | Mapa | Eu
 </code></pre></div>
 <p>O Mapa não entra entre a Home e a Tela Hoje.</p>
-<h2 id="index-estado-sem-resultados">Estado sem resultados<a class="headerlink" href="#index-estado-sem-resultados" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 cria a referência móvel para uma consulta territorial concluída sem correspondências.</p>
-<p>O estado apresenta:</p>
+<h2 id="index-estado-sem-resultados-validado">Estado sem resultados validado<a class="headerlink" href="#index-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 estabelecem o estado para uma consulta territorial concluída sem correspondências.</p>
+<p>O estado reformulado apresenta:</p>
 <ul>
 <li><code>0 resultados correspondem a esta consulta</code>;</li>
-<li><code>Consulta concluída · nenhuma falha conhecida</code>;</li>
+<li><code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>ação <code>Ver cobertura</code>;</li>
 <li>região, busca e filtros preservados;</li>
 <li>total consolidado de filtros;</li>
 <li>ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência legítima, falha de fonte e indisponibilidade;</li>
+<li>revisão antes de aplicar qualquer alteração;</li>
+<li>última alteração identificada e <code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>distinção entre ausência legítima, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
+<li>exploração geral sem alterar a consulta;</li>
 <li>tratamento textual sem mapa carregado;</li>
 <li>ausência de preenchimento patrocinado ou personalizado artificial.</li>
 </ul>
 <p>Arquivo:</p>
 <p><code>assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg</code></p>
-<p>A validação funcional especializada permanece pendente.</p>
+<p>A validação é arquitetural e não equivale a teste com usuários, design, algoritmo ou conformidade técnica de acessibilidade.</p>
 <h2 id="index-acesso-rapido">Acesso rápido<a class="headerlink" href="#index-acesso-rapido" title="Permanent link">&para;</a></h2>
 <h3 id="index-estado-e-governanca">Estado e governança<a class="headerlink" href="#index-estado-e-governanca" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10589,7 +10650,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#project-architectural-milestones">Marcos Arquiteturais</a></li>
 <li><a href="#project-canonical-consolidation-matrix">Matriz de Consolidação Canônica</a></li>
 <li><a href="#project-canonical-consolidation-matrix-uxa-030-addendum">Adendo Canônico do Estado sem Resultados</a></li>
-<li><a href="#project-changelog-1.53.0-uxa-030">Histórico 1.53.0</a></li>
+<li><a href="#project-canonical-consolidation-matrix-uxa-031-addendum">Adendo Canônico da Validação sem Resultados</a></li>
+<li><a href="#project-changelog-1.54.0-uxa-031">Histórico 1.54.0</a></li>
 </ul>
 <h3 id="index-arquiteturas-e-modelos">Arquiteturas e modelos<a class="headerlink" href="#index-arquiteturas-e-modelos" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10608,6 +10670,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#experience-architecture-uxa-028-opportunity-map-list-state">Lista do Mapa</a></li>
 <li><a href="#experience-architecture-uxa-029-opportunity-map-list-functional-validation-and-reformulation">Validação da Lista</a></li>
 <li><a href="#experience-architecture-uxa-030-opportunity-map-no-results-state">Mapa sem Resultados</a></li>
+<li><a href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation">Validação sem Resultados</a></li>
 </ul>
 <h3 id="index-resultados-empresariais">Resultados Empresariais<a class="headerlink" href="#index-resultados-empresariais" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10617,7 +10680,7 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 <li><a href="#business-architecture-strategy-candidate-outcome-decision-register">Candidate Outcome Decision Register</a></li>
 </ul>
 <h2 id="index-proximos-atos">Próximos atos<a class="headerlink" href="#index-proximos-atos" title="Permanent link">&para;</a></h2>
-<p>Após nova autorização, poderão ocorrer separadamente: validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada dos testes dos Resultados Empresariais.</p>
+<p>Após nova autorização, poderão ocorrer separadamente: referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada dos testes dos Resultados Empresariais.</p>
 <h2 id="index-regra-de-precedencia">Regra de precedência<a class="headerlink" href="#index-regra-de-precedencia" title="Permanent link">&para;</a></h2>
 <p>As autoridades normativas de cada domínio definem o conteúdo arquitetural. O Registro do Estado Atual define o estado transversal vigente. Esta página não cria decisões ou autorizações próprias.</p></section>
                     <section class='print-page md-section' id='section-2' heading-number='2'>
@@ -10643,8 +10706,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Marco atual</td>
-<td>estado móvel do Mapa sem resultados criado</td>
-<td>M7.31; UXA-030</td>
+<td>estado do Mapa sem resultados funcionalmente validado e reformulado</td>
+<td>M7.32; UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -10668,8 +10731,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa até o estado sem resultados do Mapa</td>
-<td>UXA-000 a UXA-030</td>
+<td>ativa até a validação do estado sem resultados</td>
+<td>UXA-000 a UXA-031</td>
 </tr>
 <tr>
 <td>Página Inicial pública</td>
@@ -10718,8 +10781,8 @@ A fonte oficial permanece sendo o Markdown versionado no GitHub.
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação especializada não iniciada</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -10812,20 +10875,23 @@ Business Capabilities: not started
 <li>retorno ao Mapa sem perda de contexto;</li>
 <li>funcionamento integral sem mapa carregado.</li>
 </ul>
-<h2 id="project-current-state-register-6-estado-sem-resultados">6. Estado sem resultados<a class="headerlink" href="#project-current-state-register-6-estado-sem-resultados" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 materializa a ausência legítima de correspondências para uma consulta concluída.</p>
-<p>O estado demonstra:</p>
+<h2 id="project-current-state-register-6-estado-sem-resultados-validado">6. Estado sem resultados validado<a class="headerlink" href="#project-current-state-register-6-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 estabelecem a ausência legítima de correspondências como condição limitada à consulta executada.</p>
+<p>O estado reformulado demonstra:</p>
 <ul>
 <li>região, busca e filtros preservados;</li>
 <li>total consolidado de filtros;</li>
 <li><code>0 resultados correspondem a esta consulta</code>;</li>
-<li><code>Consulta concluída · nenhuma falha conhecida</code>;</li>
+<li><code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>ação <code>Ver cobertura</code>;</li>
 <li>mensagem limitada à consulta atual;</li>
-<li>ampliação de região, alteração de período, revisão de filtros e edição de busca como ações explícitas;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência, falha de fonte e indisponibilidade temporária;</li>
+<li>revisão obrigatória antes de ajustar região, período, filtros ou busca;</li>
+<li>última alteração identificada e <code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual, sem alterar o total zero;</li>
+<li>distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>equivalência entre Mapa e Lista;</li>
 <li>localização opcional e região manual;</li>
+<li>exploração geral sem alterar a consulta territorial;</li>
 <li>tratamento textual sem dependência do mapa carregado.</li>
 </ul>
 <p>Arquivos vetoriais:</p>
@@ -10835,7 +10901,7 @@ Business Capabilities: not started
 <li><code>docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg</code>;</li>
 <li><code>docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg</code>.</li>
 </ul>
-<p>O estado sem resultados ainda não foi funcionalmente validado. Wireframe não equivale a teste com usuários, design ou implementação.</p>
+<p>A validação é arquitetural e não equivale a teste com usuários, design ou implementação.</p>
 <h2 id="project-current-state-register-7-protecoes-vigentes">7. Proteções vigentes<a class="headerlink" href="#project-current-state-register-7-protecoes-vigentes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>localização permanece opcional;</li>
@@ -10848,21 +10914,24 @@ Business Capabilities: not started
 <li>endereços protegidos não são contornados;</li>
 <li>personalização exige gate próprio;</li>
 <li>zero legítimo não é confundido com falha de fonte;</li>
+<li>cobertura precisa ser verificável;</li>
 <li>filtros e região não são alterados silenciosamente;</li>
+<li><code>Desfazer</code> depende de alteração identificável;</li>
+<li>seleção anterior não falseia correspondência atual;</li>
 <li>publicidade não preenche artificialmente o estado vazio.</li>
 </ul>
 <h2 id="project-current-state-register-8-proximos-atos-governados">8. Próximos atos governados<a class="headerlink" href="#project-current-state-register-8-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
 <li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.</li>
 </ol>
-<p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="roadmap" heading-number="2.2"><h1 id="roadmap-roadmap-arquitetural-estado-do-mapa-sem-resultados-criado">Roadmap Arquitetural — Estado do Mapa sem Resultados Criado<a class="headerlink" href="#roadmap-roadmap-arquitetural-estado-do-mapa-sem-resultados-criado" title="Permanent link">&para;</a></h1>
+<p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="roadmap" heading-number="2.2"><h1 id="roadmap-roadmap-arquitetural-estado-do-mapa-sem-resultados-validado">Roadmap Arquitetural — Estado do Mapa sem Resultados Validado<a class="headerlink" href="#roadmap-roadmap-arquitetural-estado-do-mapa-sem-resultados-validado" title="Permanent link">&para;</a></h1>
 <h2 id="roadmap-1-autoridade">1. Autoridade<a class="headerlink" href="#roadmap-1-autoridade" title="Permanent link">&para;</a></h2>
 <p>Este documento governa a sequência global de evolução arquitetural do Repositório de Conhecimento da Guivos. O estado transversal vigente é declarado pelo Registro do Estado Atual.</p>
 <h2 id="roadmap-2-estado-atual">2. Estado atual<a class="headerlink" href="#roadmap-2-estado-atual" title="Permanent link">&para;</a></h2>
@@ -10882,8 +10951,8 @@ Business Capabilities: not started
 </tr>
 <tr>
 <td>Marco</td>
-<td>estado móvel do Mapa sem resultados criado</td>
-<td>M7.31; UXA-030</td>
+<td>estado do Mapa sem resultados funcionalmente validado e reformulado</td>
+<td>M7.32; UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -10932,8 +11001,8 @@ Business Capabilities: not started
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação especializada pendente</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -10975,7 +11044,8 @@ Business Capabilities: not started
 <li>estado sem localização funcionalmente validado e reformulado;</li>
 <li>visualização móvel em Lista criada;</li>
 <li>visualização em Lista funcionalmente validada e reformulada;</li>
-<li>estado móvel sem resultados criado.</li>
+<li>estado móvel sem resultados criado;</li>
+<li>estado sem resultados funcionalmente validado e reformulado.</li>
 </ol>
 <h2 id="roadmap-4-sequencia-pessoal-vigente">4. Sequência pessoal vigente<a class="headerlink" href="#roadmap-4-sequencia-pessoal-vigente" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Página Inicial pública
@@ -10986,29 +11056,32 @@ Business Capabilities: not started
 → Hoje | Jornada | Explorar | Mapa | Eu
 </code></pre></div>
 <p>O Mapa não integra a sequência obrigatória de primeira entrada. Os estados sem localização, em Lista e sem resultados pertencem à mesma superfície recorrente.</p>
-<h2 id="roadmap-5-resultado-do-estado-sem-resultados">5. Resultado do estado sem resultados<a class="headerlink" href="#roadmap-5-resultado-do-estado-sem-resultados" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 demonstra:</p>
+<h2 id="roadmap-5-resultado-da-validacao-especializada">5. Resultado da validação especializada<a class="headerlink" href="#roadmap-5-resultado-da-validacao-especializada" title="Permanent link">&para;</a></h2>
+<p>A UXA-031 confirmou, após reformulação:</p>
 <ul>
-<li><code>Mapa de Oportunidades</code> e contexto <code>Agindo como</code>;</li>
-<li>localização desativada e posição não acessada;</li>
-<li>região manual distinta da posição pessoal;</li>
-<li>busca explícita preservada;</li>
-<li>alternância <code>Mapa ↔ Lista</code>;</li>
+<li>zero limitado à consulta atual;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
+<li>mensagem <code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>região, busca, filtros e contexto preservados;</li>
 <li>total consolidado de filtros;</li>
-<li><code>0 resultados correspondem a esta consulta</code>;</li>
-<li><code>Consulta concluída · nenhuma falha conhecida</code>;</li>
-<li>mensagem limitada à busca, região e filtros atuais;</li>
-<li>ampliação de região, alteração de período, revisão de filtros e edição de busca;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>contexto preservado durante ajustes;</li>
-<li>distinção entre ausência legítima, falha de fonte, indisponibilidade, carregamento e baixa conectividade;</li>
-<li>equivalência do estado entre Mapa e Lista;</li>
-<li>tratamento textual sem dependência do mapa carregado.</li>
+<li>revisão antes de aplicar qualquer ajuste;</li>
+<li>ações independentes para região, período, filtros e busca;</li>
+<li>última alteração identificada;</li>
+<li><code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>acesso ao Detalhe sem reinserção artificial no conjunto;</li>
+<li>exploração geral sem alterar a consulta territorial;</li>
+<li>distinção entre ausência, falha, indisponibilidade e cobertura parcial;</li>
+<li>equivalência entre Mapa e Lista;</li>
+<li>localização opcional;</li>
+<li>funcionamento textual sem mapa carregado;</li>
+<li>ausência de preenchimento comercial ou personalizado artificial.</li>
 </ul>
-<p>A referência possui 390 por 844 pixels e não define algoritmo, cobertura de produção, tecnologia, design ou implementação.</p>
+<p>A referência possui 390 por 844 pixels. A validação é arquitetural e não equivale a teste de usabilidade, design ou implementação.</p>
 <h2 id="roadmap-6-protecoes-preservadas">6. Proteções preservadas<a class="headerlink" href="#roadmap-6-protecoes-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>zero representa somente a consulta atual;</li>
+<li>cobertura precisa ser sustentada e explicável;</li>
 <li>falha de fonte não é apresentada como ausência de oportunidades;</li>
 <li>filtros não são removidos automaticamente;</li>
 <li>região não é ampliada sem confirmação;</li>
@@ -11017,8 +11090,9 @@ Business Capabilities: not started
 <li>região manual não equivale a posição atual;</li>
 <li>personalização não é iniciada para preencher o estado;</li>
 <li>patrocínio não substitui correspondência funcional;</li>
-<li>seleção anterior não é apagada sem explicação;</li>
-<li>Mapa e Lista preservam consulta, diagnóstico e permissões;</li>
+<li><code>Desfazer</code> depende de alteração identificada;</li>
+<li>seleção anterior não altera o total zero;</li>
+<li>Mapa e Lista preservam consulta, cobertura, diagnóstico e permissões;</li>
 <li>dado ausente não é completado por inferência.</li>
 </ul>
 <h2 id="roadmap-7-estado-dos-resultados-empresariais">7. Estado dos Resultados Empresariais<a class="headerlink" href="#roadmap-7-estado-dos-resultados-empresariais" title="Permanent link">&para;</a></h2>
@@ -11039,12 +11113,12 @@ Canonical consolidation: not started
 <h3 id="roadmap-81-arquitetura-da-experiencia">8.1 Arquitetura da Experiência<a class="headerlink" href="#roadmap-81-arquitetura-da-experiencia" title="Permanent link">&para;</a></h3>
 <p>Após integração e nova autorização, poderá ocorrer um ato separado:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
-<li>validar a transição para a primeira Tela Hoje.</li>
+<li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa.</li>
 </ol>
 <h3 id="roadmap-82-arquitetura-de-negocios">8.2 Arquitetura de Negócios<a class="headerlink" href="#roadmap-82-arquitetura-de-negocios" title="Permanent link">&para;</a></h3>
 <p>Também permanece pendente, em ato independente:</p>
@@ -11087,8 +11161,8 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>Marco</td>
-<td>estado móvel do Mapa sem resultados criado</td>
-<td>M7.31; UXA-030</td>
+<td>estado do Mapa sem resultados funcionalmente validado e reformulado</td>
+<td>M7.32; UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -11147,8 +11221,8 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação especializada pendente</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -11192,7 +11266,7 @@ Canonical consolidation: not started
 <li>Mapa principal validado e reformulado;</li>
 <li>estado sem localização validado e reformulado;</li>
 <li>visualização em Lista criada, validada e reformulada;</li>
-<li>wireframe do estado sem resultados criado.</li>
+<li>estado sem resultados criado, validado e reformulado.</li>
 </ul>
 <h3 id="project-knowledge-board-em-validacao">Em validação<a class="headerlink" href="#project-knowledge-board-em-validacao" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11203,13 +11277,13 @@ Canonical consolidation: not started
 <h3 id="project-knowledge-board-aguardando-autorizacao">Aguardando autorização<a class="headerlink" href="#project-knowledge-board-aguardando-autorizacao" title="Permanent link">&para;</a></h3>
 <h4 id="project-knowledge-board-arquitetura-da-experiencia">Arquitetura da Experiência<a class="headerlink" href="#project-knowledge-board-arquitetura-da-experiencia" title="Permanent link">&para;</a></h4>
 <ul>
-<li>validação funcional do estado sem resultados;</li>
 <li>referência do Mapa para computador;</li>
 <li>wireframe gráfico do início protegido;</li>
 <li>referência móvel da Home;</li>
 <li>estados especializados de texto, voz e arquivos;</li>
 <li>validação da revisão da compreensão inicial;</li>
-<li>validação da transição para a primeira Tela Hoje.</li>
+<li>validação da transição para a primeira Tela Hoje;</li>
+<li>demais estados alternativos do Mapa.</li>
 </ul>
 <h4 id="project-knowledge-board-arquitetura-de-negocios">Arquitetura de Negócios<a class="headerlink" href="#project-knowledge-board-arquitetura-de-negocios" title="Permanent link">&para;</a></h4>
 <ul>
@@ -11251,22 +11325,25 @@ Canonical consolidation: not started
 <li>retorno ao Mapa sem perda de contexto;</li>
 <li>funcionamento sem mapa carregado.</li>
 </ul>
-<p>A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.</p>
-<h2 id="project-knowledge-board-6-estado-sem-resultados-criado">6. Estado sem resultados criado<a class="headerlink" href="#project-knowledge-board-6-estado-sem-resultados-criado" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 demonstra:</p>
+<h2 id="project-knowledge-board-6-estado-sem-resultados-validado">6. Estado sem resultados validado<a class="headerlink" href="#project-knowledge-board-6-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 demonstram:</p>
 <ul>
 <li>consulta territorial preservada;</li>
 <li>zero limitado à região, busca e filtros atuais;</li>
-<li>confirmação de consulta concluída sem falha conhecida;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
+<li>confirmação <code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
 <li>ações independentes para ampliar região, alterar período, revisar filtros e editar busca;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência, falha de fonte e indisponibilidade temporária;</li>
+<li>revisão obrigatória antes de aplicar alterações;</li>
+<li>última alteração identificada e <code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
+<li>exploração geral sem alterar a consulta;</li>
 <li>ausência de preenchimento comercial ou personalizado artificial;</li>
 <li>operação textual sem mapa carregado.</li>
 </ul>
-<p>A validação funcional especializada permanece não iniciada.</p>
+<p>A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.</p>
 <h2 id="project-knowledge-board-7-protecoes-preservadas">7. Proteções preservadas<a class="headerlink" href="#project-knowledge-board-7-protecoes-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>a Home não coleta relato pessoal;</li>
@@ -11282,7 +11359,10 @@ Canonical consolidation: not started
 <li>origem manual não autoriza histórico territorial;</li>
 <li>residências e locais sensíveis permanecem protegidos;</li>
 <li>zero legítimo não é confundido com erro técnico;</li>
+<li>cobertura precisa ser explicável;</li>
 <li>consulta não é alterada silenciosamente;</li>
+<li><code>Desfazer</code> depende de alteração identificável;</li>
+<li>seleção anterior não falseia o conjunto atual;</li>
 <li>wireframes e validações não equivalem a design ou implementação.</li>
 </ul>
 <h2 id="project-knowledge-board-8-distribuicao-dos-candidatos">8. Distribuição dos candidatos<a class="headerlink" href="#project-knowledge-board-8-distribuicao-dos-candidatos" title="Permanent link">&para;</a></h2>
@@ -11318,7 +11398,7 @@ Canonical consolidation: not started
 </tbody>
 </table>
 <h2 id="project-knowledge-board-9-proximo-movimento">9. Próximo movimento<a class="headerlink" href="#project-knowledge-board-9-proximo-movimento" title="Permanent link">&para;</a></h2>
-<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.</p></section><section class="print-page" id="project-architectural-milestones" heading-number="2.4"><h1 id="project-architectural-milestones-marcos-arquiteturais">Marcos Arquiteturais<a class="headerlink" href="#project-architectural-milestones-marcos-arquiteturais" title="Permanent link">&para;</a></h1>
+<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada independente dos testes dos Resultados Empresariais.</p></section><section class="print-page" id="project-architectural-milestones" heading-number="2.4"><h1 id="project-architectural-milestones-marcos-arquiteturais">Marcos Arquiteturais<a class="headerlink" href="#project-architectural-milestones-marcos-arquiteturais" title="Permanent link">&para;</a></h1>
 <h2 id="project-architectural-milestones-1-autoridade">1. Autoridade<a class="headerlink" href="#project-architectural-milestones-1-autoridade" title="Permanent link">&para;</a></h2>
 <p>Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.</p>
 <h2 id="project-architectural-milestones-2-linha-de-maturidade-consolidada">2. Linha de maturidade consolidada<a class="headerlink" href="#project-architectural-milestones-2-linha-de-maturidade-consolidada" title="Permanent link">&para;</a></h2>
@@ -11418,16 +11498,21 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>M7.31</td>
-<td>Concluído neste incremento</td>
+<td>Concluído</td>
 <td>estado móvel do Mapa sem resultados criado</td>
+</tr>
+<tr>
+<td>M7.32</td>
+<td>Concluído neste incremento</td>
+<td>estado sem resultados funcionalmente validado e reformulado</td>
 </tr>
 </tbody>
 </table>
 <h2 id="project-architectural-milestones-3-marco-vigente">3. Marco vigente<a class="headerlink" href="#project-architectural-milestones-3-marco-vigente" title="Permanent link">&para;</a></h2>
-<h3 id="project-architectural-milestones-estado-do-mapa-sem-resultados-criado-m731">Estado do Mapa sem Resultados Criado — M7.31<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-resultados-criado-m731" title="Permanent link">&para;</a></h3>
+<h3 id="project-architectural-milestones-estado-do-mapa-sem-resultados-funcionalmente-validado-e-reformulado-m732">Estado do Mapa sem Resultados Funcionalmente Validado e Reformulado — M7.32<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-resultados-funcionalmente-validado-e-reformulado-m732" title="Permanent link">&para;</a></h3>
 <p>Critérios atendidos:</p>
 <ul>
-<li>estado materializado dentro da superfície recorrente do Mapa;</li>
+<li>estado preservado dentro da superfície recorrente do Mapa;</li>
 <li>item <code>Mapa</code> preservado na navegação principal;</li>
 <li>alternância <code>Mapa ↔ Lista</code> mantida;</li>
 <li>contexto <code>Agindo como</code> demonstrado;</li>
@@ -11436,25 +11521,28 @@ Canonical consolidation: not started
 <li>busca e filtros mantidos;</li>
 <li>total consolidado de filtros visível;</li>
 <li>total zero limitado à consulta atual;</li>
-<li>consulta concluída sem falha conhecida declarada;</li>
-<li>ausência legítima separada de falha de fonte e indisponibilidade;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
+<li>mensagem <code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>ausência legítima separada de falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>ampliação de região, alteração de período, revisão de filtros e edição de busca oferecidas separadamente;</li>
-<li>reversão da última alteração prevista quando aplicável;</li>
-<li>nenhuma mudança silenciosa da consulta;</li>
+<li>revisão exigida antes de aplicar qualquer mudança;</li>
+<li>última alteração identificada;</li>
+<li><code>Desfazer</code> exibido somente quando aplicável;</li>
+<li>seleção anterior preservada sem ser reinserida como correspondência;</li>
+<li>exploração geral sem alteração da consulta territorial;</li>
 <li>nenhum preenchimento comercial artificial;</li>
 <li>Mapa e Lista governados como o mesmo estado;</li>
 <li>tratamento textual independente do mapa carregado;</li>
-<li>arquivo vetorial móvel criado em 390 por 844 pixels;</li>
-<li>validação funcional especializada preservada como ato posterior;</li>
+<li>arquivo vetorial reformulado em 390 por 844 pixels;</li>
 <li>referência para computador, tecnologia, design, protótipo, testes e desenvolvimento não iniciados;</li>
 <li>Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;</li>
 <li>Engenharia de Produto preservada antes de W0-01.</li>
 </ul>
 <h2 id="project-architectural-milestones-4-marcos-anteriores-preservados">4. Marcos anteriores preservados<a class="headerlink" href="#project-architectural-milestones-4-marcos-anteriores-preservados" title="Permanent link">&para;</a></h2>
+<h3 id="project-architectural-milestones-estado-do-mapa-sem-resultados-criado-m731">Estado do Mapa sem Resultados Criado — M7.31<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-resultados-criado-m731" title="Permanent link">&para;</a></h3>
+<p>A UXA-030 permanece como origem histórica do wireframe, posteriormente reformulado e validado pela UXA-031.</p>
 <h3 id="project-architectural-milestones-visualizacao-em-lista-do-mapa-validada-e-reformulada-m730">Visualização em Lista do Mapa Validada e Reformulada — M7.30<a class="headerlink" href="#project-architectural-milestones-visualizacao-em-lista-do-mapa-validada-e-reformulada-m730" title="Permanent link">&para;</a></h3>
 <p>A UXA-028 e a UXA-029 permanecem como contrato da representação textual integral da consulta territorial.</p>
-<h3 id="project-architectural-milestones-visualizacao-em-lista-do-mapa-criada-m729">Visualização em Lista do Mapa Criada — M7.29<a class="headerlink" href="#project-architectural-milestones-visualizacao-em-lista-do-mapa-criada-m729" title="Permanent link">&para;</a></h3>
-<p>A UXA-028 permanece como origem histórica do wireframe, posteriormente reformulado e validado pela UXA-029.</p>
 <h3 id="project-architectural-milestones-estado-do-mapa-sem-localizacao-validado-e-reformulado-m728">Estado do Mapa sem Localização Validado e Reformulado — M7.28<a class="headerlink" href="#project-architectural-milestones-estado-do-mapa-sem-localizacao-validado-e-reformulado-m728" title="Permanent link">&para;</a></h3>
 <p>A UXA-026 e a UXA-027 permanecem como contrato do uso sem localização.</p>
 <h3 id="project-architectural-milestones-mapa-de-oportunidades-validado-e-reformulado-m726">Mapa de Oportunidades Validado e Reformulado — M7.26<a class="headerlink" href="#project-architectural-milestones-mapa-de-oportunidades-validado-e-reformulado-m726" title="Permanent link">&para;</a></h3>
@@ -11488,7 +11576,7 @@ Canonical consolidation: not started
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa; estado sem resultados criado; validação posterior aguardando autorização</td>
+<td>ativa; estado sem resultados validado; próximos atos aguardando autorização</td>
 </tr>
 <tr>
 <td>Arquitetura de Produtos</td>
@@ -11505,12 +11593,12 @@ Canonical consolidation: not started
 <p>Após integração e nova autorização, poderão ocorrer em incrementos separados:</p>
 <h3 id="project-architectural-milestones-arquitetura-da-experiencia">Arquitetura da Experiência<a class="headerlink" href="#project-architectural-milestones-arquitetura-da-experiencia" title="Permanent link">&para;</a></h3>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
-<li>validar a transição para a primeira Tela Hoje.</li>
+<li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa.</li>
 </ol>
 <h3 id="project-architectural-milestones-arquitetura-de-negocios">Arquitetura de Negócios<a class="headerlink" href="#project-architectural-milestones-arquitetura-de-negocios" title="Permanent link">&para;</a></h3>
 <ol>
@@ -27884,7 +27972,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 </tr>
 <tr>
 <td>Explorar e Mapa</td>
-<td><a href="#experience-architecture-uxa-004-opportunities-organizations-collectives-map">contrato</a>, <a href="#experience-architecture-uxa-024-opportunity-map-low-fidelity-wireframe">wireframe do Mapa</a>, <a href="#experience-architecture-uxa-025-opportunity-map-functional-validation-and-reformulation">validação do Mapa</a>, <a href="#experience-architecture-uxa-026-opportunity-map-location-disabled-state">estado sem localização</a>, <a href="#experience-architecture-uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation">validação sem localização</a>, <a href="#experience-architecture-uxa-028-opportunity-map-list-state">Lista</a>, <a href="#experience-architecture-uxa-029-opportunity-map-list-functional-validation-and-reformulation">validação da Lista</a> e <a href="#experience-architecture-uxa-030-opportunity-map-no-results-state">estado sem resultados</a></td>
+<td><a href="#experience-architecture-uxa-004-opportunities-organizations-collectives-map">contrato</a>, <a href="#experience-architecture-uxa-024-opportunity-map-low-fidelity-wireframe">wireframe do Mapa</a>, <a href="#experience-architecture-uxa-025-opportunity-map-functional-validation-and-reformulation">validação do Mapa</a>, <a href="#experience-architecture-uxa-026-opportunity-map-location-disabled-state">estado sem localização</a>, <a href="#experience-architecture-uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation">validação sem localização</a>, <a href="#experience-architecture-uxa-028-opportunity-map-list-state">Lista</a>, <a href="#experience-architecture-uxa-029-opportunity-map-list-functional-validation-and-reformulation">validação da Lista</a>, <a href="#experience-architecture-uxa-030-opportunity-map-no-results-state">estado sem resultados</a> e <a href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation">validação sem resultados</a></td>
 </tr>
 <tr>
 <td>Oportunidades</td>
@@ -27908,8 +27996,8 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <tbody>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa e integrada até o estado sem resultados do Mapa</td>
-<td>UXA-000 a UXA-030; UXA-003-A1</td>
+<td>ativa e integrada até a validação do estado sem resultados</td>
+<td>UXA-000 a UXA-031; UXA-003-A1</td>
 </tr>
 <tr>
 <td>Resultados Empresariais</td>
@@ -27963,8 +28051,8 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação funcional pendente</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -28032,26 +28120,30 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>funcionamento sem mapa carregado.</li>
 </ul>
 <p>A Lista não duplica <code>Explorar</code> e constitui alternativa integral para conteúdo textual, acessibilidade, baixa conectividade e indisponibilidade cartográfica.</p>
-<p>A validação é funcional arquitetural. Teste de usabilidade e conformidade técnica de acessibilidade permanecem posteriores.</p>
-<h2 id="experience-architecture-12-estado-sem-resultados">12. Estado sem resultados<a class="headerlink" href="#experience-architecture-12-estado-sem-resultados" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 materializa o estado em que a consulta territorial é concluída sem correspondências.</p>
-<p>O wireframe demonstra:</p>
+<h2 id="experience-architecture-12-estado-sem-resultados-validado">12. Estado sem resultados validado<a class="headerlink" href="#experience-architecture-12-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 estabelecem que o total zero representa somente ausência de correspondências para a consulta executada.</p>
+<p>A reformulação demonstra:</p>
 <ul>
 <li>contexto, região, busca e filtros preservados;</li>
 <li>total zero limitado à consulta atual;</li>
-<li>confirmação de consulta concluída sem falha conhecida;</li>
-<li>ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência legítima, falha de fonte e indisponibilidade;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
+<li><code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>revisão antes de aplicar ajustes;</li>
+<li>ações independentes para região, período, filtros e busca;</li>
+<li>última alteração identificada;</li>
+<li><code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>exploração geral sem alterar a consulta territorial;</li>
+<li>distinção entre ausência legítima, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
 <li>ausência de personalização ou preenchimento patrocinado artificial;</li>
 <li>tratamento textual sem mapa carregado.</li>
 </ul>
-<p>A validação funcional especializada do estado permanece pendente.</p>
+<p>A validação é funcional arquitetural. Teste de usabilidade e conformidade técnica de acessibilidade permanecem posteriores.</p>
 <h2 id="experience-architecture-13-estados-funcionais-do-mapa">13. Estados funcionais do Mapa<a class="headerlink" href="#experience-architecture-13-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
 <p>A UXA-025 governa localização desativada, localização aproximada, localização exata temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.</p>
-<p>A UXA-026 a UXA-030 materializam e validam o uso sem localização, a Lista e o estado sem resultados. Os demais wireframes permanecem atos separados.</p>
+<p>A UXA-026 a UXA-031 materializam e validam o uso sem localização, a Lista e o estado sem resultados. Os demais wireframes permanecem atos separados.</p>
 <h2 id="experience-architecture-14-gate-de-personalizacao">14. Gate de personalização<a class="headerlink" href="#experience-architecture-14-gate-de-personalizacao" title="Permanent link">&para;</a></h2>
 <p>Personalização material exige base suficiente, origem e finalidade identificadas, revisão real, controles de correção e limitação e autorização compatível.</p>
 <p>Sem o gate, a pessoa pode continuar sem personalização, explorar, corrigir, pausar ou excluir.</p>
@@ -28061,12 +28153,12 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <h2 id="experience-architecture-16-proximos-atos-governados">16. Próximos atos governados<a class="headerlink" href="#experience-architecture-16-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
 <li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhum ato é iniciado automaticamente.</p></section>
@@ -29093,6 +29185,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>visualização em Lista do Mapa — UXA-028;</li>
 <li>validação da Lista do Mapa — UXA-029;</li>
 <li>estado do Mapa sem resultados — UXA-030;</li>
+<li>validação do estado sem resultados — UXA-031;</li>
 <li>wireframe do Detalhe — UXA-007;</li>
 <li>wireframe do Cadastro pela Organização — UXA-008.</li>
 </ol>
@@ -29122,6 +29215,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>Dados ausentes são apresentados sem inferência?</li>
 <li>O total zero é entendido como resultado da consulta atual?</li>
 <li>Ausência legítima, falha de fonte e indisponibilidade são distinguíveis?</li>
+<li>A cobertura que sustenta o total zero pode ser verificada?</li>
 </ul>
 <h3 id="experience-architecture-uxa-005-low-fidelity-wireframes-52-hierarquia">5.2 Hierarquia<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-52-hierarquia" title="Permanent link">&para;</a></h3>
 <ul>
@@ -29134,6 +29228,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>Os cartões permitem comparação consistente?</li>
 <li>A oportunidade selecionada permanece reconhecível?</li>
 <li>O estado sem resultados apresenta diagnóstico antes das ações de recuperação?</li>
+<li>A última alteração e a seleção anterior aparecem somente quando aplicáveis?</li>
 </ul>
 <h3 id="experience-architecture-uxa-005-low-fidelity-wireframes-53-autonomia">5.3 Autonomia<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-53-autonomia" title="Permanent link">&para;</a></h3>
 <ul>
@@ -29144,6 +29239,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>A pessoa pode revisar filtros e ordenação?</li>
 <li>O fluxo evita pressão para consentimento ou contratação?</li>
 <li>As ações de recuperação alteram somente a dimensão escolhida?</li>
+<li>A pessoa revisa a mudança antes de aplicá-la?</li>
 <li>O estado vazio evita preenchimento patrocinado artificial?</li>
 </ul>
 <h3 id="experience-architecture-uxa-005-low-fidelity-wireframes-54-continuidade">5.4 Continuidade<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-54-continuidade" title="Permanent link">&para;</a></h3>
@@ -29154,8 +29250,9 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <li>Mapa e Lista preservam região, busca, filtros, quantidade, ordenação e seleção?</li>
 <li>O Detalhe devolve a pessoa ao mesmo contexto?</li>
 <li>A Lista funciona sem mapa carregado?</li>
-<li>Mapa e Lista preservam o mesmo total zero, diagnóstico e ações?</li>
+<li>Mapa e Lista preservam o mesmo total zero, cobertura, diagnóstico e ações?</li>
 <li>Uma alteração que produz zero pode ser compreendida e desfeita?</li>
+<li>Uma seleção anterior permanece explicável sem ser reinserida como resultado?</li>
 </ul>
 <h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-6-convencoes-de-baixa-fidelidade">6. Convenções de baixa fidelidade<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-6-convencoes-de-baixa-fidelidade" title="Permanent link">&para;</a></h2>
 <table>
@@ -29205,6 +29302,10 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 <tr>
 <td>campo territorial vazio com mensagem</td>
 <td>zero resultados sem depender da ausência visual de marcadores</td>
+</tr>
+<tr>
+<td>aviso contextual</td>
+<td>última alteração, cobertura ou seleção anterior quando aplicável</td>
 </tr>
 </tbody>
 </table>
@@ -29272,7 +29373,7 @@ A Capacidade 09 está <code>Functionally complete</code>, com progresso editoria
 → Mapa de Oportunidades
 ↔ Lista territorial do Mapa
 → resultados ou estado sem resultados
-→ Detalhe de Oportunidade, quando houver correspondência
+→ Detalhe de Oportunidade, quando houver correspondência ou seleção anterior disponível
 → decisão consciente
 
 Explorar em descoberta ampla
@@ -29362,7 +29463,13 @@ Explorar em descoberta ampla
 <td><a href="#experience-architecture-uxa-030-opportunity-map-no-results-state">Mapa sem Resultados</a></td>
 <td>UXA-030</td>
 <td>estado alternativo</td>
-<td>arquivo vetorial</td>
+<td>arquivo vetorial reformulado</td>
+</tr>
+<tr>
+<td><a href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation">Validação sem Resultados</a></td>
+<td>UXA-031</td>
+<td>estado alternativo</td>
+<td>validação funcional</td>
 </tr>
 <tr>
 <td><a href="#experience-architecture-uxa-007-opportunity-detail-low-fidelity-wireframe">Detalhe</a></td>
@@ -29396,21 +29503,23 @@ Explorar em descoberta ampla
 <li>funcionamento sem mapa carregado.</li>
 </ul>
 <p>A UXA-029 considera a Lista funcionalmente válida após reformulação.</p>
-<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-11-estado-sem-resultados-criado">11. Estado sem resultados criado<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-11-estado-sem-resultados-criado" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 demonstra:</p>
+<h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-11-estado-sem-resultados-validado">11. Estado sem resultados validado<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-11-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 reformulada demonstra:</p>
 <ul>
 <li>zero limitado à consulta atual;</li>
-<li>consulta concluída sem falha conhecida;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
 <li>região, busca e filtros preservados;</li>
 <li>ações de recuperação independentes;</li>
-<li>reversibilidade quando aplicável;</li>
-<li>distinção entre ausência, erro e indisponibilidade;</li>
+<li>revisão antes de aplicar mudanças;</li>
+<li>última alteração identificada e reversível;</li>
+<li>seleção anterior tratada sem alterar o total zero;</li>
+<li>distinção entre ausência, erro, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
 <li>ausência de preenchimento artificial;</li>
 <li>tratamento textual acessível sem mapa carregado.</li>
 </ul>
-<p>A validação funcional especializada permanece não iniciada.</p>
+<p>A UXA-031 considera o estado funcionalmente válido após reformulação.</p>
 <h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-12-demais-estados-funcionais-do-mapa">12. Demais estados funcionais do Mapa<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-12-demais-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
 <p>Permanecem governados, sem wireframes específicos:</p>
 <ul>
@@ -29430,12 +29539,12 @@ Explorar em descoberta ampla
 <h2 id="experience-architecture-uxa-005-low-fidelity-wireframes-14-proximos-pontos-de-decisao">14. Próximos pontos de decisão<a class="headerlink" href="#experience-architecture-uxa-005-low-fidelity-wireframes-14-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos exigem autorizações separadas:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a compreensão inicial;</li>
 <li>detalhar a primeira Tela Hoje após a transição;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhuma etapa posterior é iniciada automaticamente.</p></section><section class="print-page" id="experience-architecture-uxa-009-plain-language-and-technical-identifiers" heading-number="9.2.5"><h1 id="experience-architecture-uxa-009-plain-language-and-technical-identifiers-padrao-de-linguagem-clara-e-identificadores-tecnicos-identificador-uxa-009">Padrão de Linguagem Clara e Identificadores Técnicos (identificador UXA-009)<a class="headerlink" href="#experience-architecture-uxa-009-plain-language-and-technical-identifiers-padrao-de-linguagem-clara-e-identificadores-tecnicos-identificador-uxa-009" title="Permanent link">&para;</a></h1>
@@ -34953,6 +35062,7 @@ Explorar em descoberta ampla
 <p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="experience-architecture-uxa-030-opportunity-map-no-results-state" heading-number="9.5.8"><h1 id="experience-architecture-uxa-030-opportunity-map-no-results-state-wireframe-alternativo-do-mapa-de-oportunidades-estado-sem-resultados">Wireframe Alternativo do Mapa de Oportunidades — Estado sem Resultados<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-wireframe-alternativo-do-mapa-de-oportunidades-estado-sem-resultados" title="Permanent link">&para;</a></h1>
 <h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento materializa o estado em que uma consulta territorial válida é concluída sem encontrar oportunidades correspondentes à região, busca e filtros vigentes.</p>
+<p>A versão 0.2.0 incorpora a reformulação governada pela <strong>UXA-031 — Validação Funcional Especializada e Reformulação do Estado do Mapa sem Resultados</strong>.</p>
 <p>O estado não deverá ser utilizado como mensagem genérica para falha de fonte, indisponibilidade temporária, carregamento incompleto ou baixa conectividade. Ausência legítima de correspondências e incapacidade de consultar dados são condições diferentes.</p>
 <p>O artefato preserva a consulta da pessoa, explica o que ocorreu e oferece caminhos explícitos de recuperação sem preencher artificialmente o Mapa, apagar filtros ou ativar personalização.</p>
 <p>Este documento não representa design visual, tecnologia cartográfica, dados reais, implementação ou teste com usuários.</p>
@@ -34970,15 +35080,19 @@ Explorar em descoberta ampla
 <li>a consulta tiver sido executada;</li>
 <li>a região estiver definida;</li>
 <li>busca e filtros vigentes forem conhecidos;</li>
-<li>as fontes necessárias tiverem respondido ou sua cobertura aplicável estiver declarada;</li>
+<li>as fontes previstas tiverem respondido ou sua cobertura aplicável estiver declarada;</li>
 <li>não houver falha ativa capaz de explicar o resultado vazio;</li>
 <li>não houver carregamento pendente material;</li>
 <li>o total correspondente for realmente zero naquele momento de atualização.</li>
 </ul>
-<p>A interface deverá indicar:</p>
+<p>A interface reformulada deverá indicar:</p>
 <blockquote>
 <p><strong>0 resultados correspondem a esta consulta</strong></p>
-<p><strong>Consulta concluída · nenhuma falha conhecida</strong></p>
+<p><strong>Consulta concluída · cobertura verificada · atualizada agora</strong></p>
+</blockquote>
+<p>E oferecer:</p>
+<blockquote>
+<p><strong>Ver cobertura</strong></p>
 </blockquote>
 <p>A declaração não significa que não existam oportunidades em toda a cidade, no futuro, em outras categorias ou fora das fontes consultadas.</p>
 <h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-4-artefato-visual">4. Artefato visual<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-4-artefato-visual" title="Permanent link">&para;</a></h2>
@@ -35000,11 +35114,13 @@ Explorar em descoberta ampla
 → pesquisa preservada
 → alternância Mapa ou Lista
 → filtros ativos e total consolidado
-→ quantidade zero e estado da consulta
+→ quantidade zero, cobertura e atualização
 → explicação da ausência de correspondências
-→ resumo do contexto preservado
 → ações explícitas de recuperação
-→ distinção entre ausência, falha e indisponibilidade
+→ revisão antes de aplicar mudanças
+→ última alteração reversível, quando existente
+→ seleção anterior, quando existente
+→ disponibilidade dos dados
 → navegação recorrente
 </code></pre></div>
 <p>A ausência de marcadores no campo territorial não poderá ser o único sinal do estado.</p>
@@ -35027,6 +35143,7 @@ Explorar em descoberta ampla
 <p>A mensagem deverá informar de forma direta:</p>
 <blockquote>
 <p><strong>Nenhum resultado corresponde à busca, região e filtros atuais.</strong></p>
+<p><strong>Sua consulta permanece intacta.</strong></p>
 </blockquote>
 <p>Ela deverá evitar formulações absolutas como:</p>
 <ul>
@@ -35037,18 +35154,41 @@ Explorar em descoberta ampla
 <li><code>Não encontramos o que você precisa</code>.</li>
 </ul>
 <p>O sistema conhece apenas o resultado da consulta executada, não a totalidade de possibilidades existentes nem as necessidades da pessoa.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-8-acoes-de-recuperacao">8. Ações de recuperação<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-8-acoes-de-recuperacao" title="Permanent link">&para;</a></h2>
-<p>A interface deverá oferecer ações conscientes e independentes, como:</p>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-8-cobertura-e-atualizacao">8. Cobertura e atualização<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-8-cobertura-e-atualizacao" title="Permanent link">&para;</a></h2>
+<p>A pessoa deverá poder abrir <code>Ver cobertura</code> para verificar, quando material:</p>
+<ul>
+<li>fontes previstas;</li>
+<li>fontes que responderam;</li>
+<li>fontes não aplicáveis;</li>
+<li>fontes indisponíveis;</li>
+<li>categorias consultadas;</li>
+<li>região e período;</li>
+<li>horário da atualização;</li>
+<li>limitações conhecidas.</li>
+</ul>
+<p><code>Cobertura verificada</code> somente poderá aparecer quando houver evidência correspondente. Cobertura parcial, falha de fonte, carregamento e indisponibilidade deverão utilizar mensagens próprias.</p>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-9-acoes-de-recuperacao">9. Ações de recuperação<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-9-acoes-de-recuperacao" title="Permanent link">&para;</a></h2>
+<p>A interface deverá oferecer ações conscientes e independentes:</p>
 <ul>
 <li><code>Ampliar região</code>;</li>
 <li><code>Alterar período</code>;</li>
 <li><code>Revisar filtros</code>;</li>
 <li><code>Editar busca</code>;</li>
-<li><code>Desfazer última alteração</code>, quando houver histórico local compatível;</li>
-<li><code>Tentar novamente</code>, somente quando uma nova consulta for materialmente útil;</li>
-<li><code>Explorar opções gerais</code>, como saída separada da consulta territorial.</li>
+<li><code>Explorar sem alterar esta consulta</code>.</li>
 </ul>
-<p>Cada ação deverá declarar o que será alterado antes de aplicar a mudança.</p>
+<p>A superfície reformulada declara:</p>
+<blockquote>
+<p><strong>Você revisará cada mudança antes de aplicar.</strong></p>
+</blockquote>
+<p>Cada ação deverá apresentar antes da confirmação:</p>
+<ul>
+<li>dimensão alterada;</li>
+<li>valor atual;</li>
+<li>valor proposto;</li>
+<li>dimensões preservadas;</li>
+<li>ação <code>Aplicar</code>;</li>
+<li>ação <code>Cancelar</code>.</li>
+</ul>
 <p>A superfície não poderá:</p>
 <ul>
 <li>remover filtros automaticamente;</li>
@@ -35059,7 +35199,7 @@ Explorar em descoberta ampla
 <li>inserir resultados patrocinados para evitar a tela vazia;</li>
 <li>iniciar personalização para preencher o estado.</li>
 </ul>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-9-preservacao-e-reversibilidade">9. Preservação e reversibilidade<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-9-preservacao-e-reversibilidade" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-10-preservacao-e-reversibilidade">10. Preservação e reversibilidade<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-10-preservacao-e-reversibilidade" title="Permanent link">&para;</a></h2>
 <p>Quando uma ação de recuperação alterar a consulta, a pessoa deverá poder reconhecer:</p>
 <ul>
 <li>qual dimensão mudou;</li>
@@ -35068,9 +35208,15 @@ Explorar em descoberta ampla
 <li>se a atualização foi concluída;</li>
 <li>como desfazer a última mudança quando tecnicamente possível.</li>
 </ul>
+<p><code>Desfazer</code> somente deverá aparecer quando existir alteração anterior identificável e reversível.</p>
+<p>O wireframe reformulado demonstra:</p>
+<blockquote>
+<p><strong>Última alteração: filtro “Hoje” aplicado</strong></p>
+<p><strong>Desfazer</strong></p>
+</blockquote>
 <p><code>Limpar filtros</code> deverá ser uma decisão explícita e não deverá apagar região ou busca.</p>
 <p><code>Ampliar região</code> não deverá transformar região manual em posição pessoal nem autorizar rastreamento.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-10-mapa-e-lista">10. Mapa e Lista<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-10-mapa-e-lista" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-11-mapa-e-lista">11. Mapa e Lista<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-11-mapa-e-lista" title="Permanent link">&para;</a></h2>
 <p>O estado deverá ser equivalente nos dois modos.</p>
 <p>Ao alternar entre Mapa e Lista, deverão permanecer:</p>
 <ul>
@@ -35078,15 +35224,18 @@ Explorar em descoberta ampla
 <li>busca;</li>
 <li>filtros;</li>
 <li>total zero;</li>
+<li>cobertura;</li>
 <li>momento da atualização;</li>
 <li>diagnóstico da consulta;</li>
 <li>ações de recuperação;</li>
 <li>contexto <code>Agindo como</code>;</li>
-<li>estado de localização.</li>
+<li>estado de localização;</li>
+<li>última alteração reversível, quando existente;</li>
+<li>seleção anterior, quando existente.</li>
 </ul>
 <p>A Lista deverá funcionar integralmente sem mapa carregado.</p>
 <p>O Mapa deverá apresentar informação textual suficiente para leitores de tela e pessoas que não interpretem o campo cartográfico.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-11-estado-territorial">11. Estado territorial<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-11-estado-territorial" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-12-estado-territorial">12. Estado territorial<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-12-estado-territorial" title="Permanent link">&para;</a></h2>
 <p>Quando a localização estiver desativada, deverão permanecer as declarações:</p>
 <blockquote>
 <p><strong>Localização desativada · posição não acessada</strong></p>
@@ -35094,7 +35243,7 @@ Explorar em descoberta ampla
 </blockquote>
 <p>A ausência de resultados não constitui justificativa para solicitar localização de forma bloqueante, insistente ou coerciva.</p>
 <p>A pessoa poderá ampliar ou trocar a região manualmente sem compartilhar a posição do dispositivo.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-12-personalizacao-e-linguagem">12. Personalização e linguagem<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-12-personalizacao-e-linguagem" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-13-personalizacao-e-linguagem">13. Personalização e linguagem<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-13-personalizacao-e-linguagem" title="Permanent link">&para;</a></h2>
 <p>Sem o gate de personalização atendido, o estado deverá utilizar linguagem geral baseada somente em:</p>
 <ul>
 <li>região escolhida;</li>
@@ -35105,7 +35254,8 @@ Explorar em descoberta ampla
 </ul>
 <p>Não deverá afirmar que uma oportunidade seria melhor, ideal ou adequada ao Momento Atual da pessoa.</p>
 <p>Mesmo após o gate, a ausência de resultados deverá ser explicada pela consulta, sem transformar inferências pessoais em certeza.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-13-distincao-entre-estados">13. Distinção entre estados<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-13-distincao-entre-estados" title="Permanent link">&para;</a></h2>
+<p><code>Explorar sem alterar esta consulta</code> poderá abrir descoberta geral separada, preservando a consulta territorial para retorno.</p>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-14-distincao-entre-estados">14. Distinção entre estados<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-14-distincao-entre-estados" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -35118,7 +35268,7 @@ Explorar em descoberta ampla
 <tr>
 <td>consulta concluída com zero correspondências</td>
 <td><code>0 resultados correspondem a esta consulta</code></td>
-<td>preservar contexto e oferecer ajustes explícitos</td>
+<td>preservar contexto, declarar cobertura e oferecer ajustes explícitos</td>
 </tr>
 <tr>
 <td>falha de uma ou mais fontes materiais</td>
@@ -35148,21 +35298,25 @@ Explorar em descoberta ampla
 </tbody>
 </table>
 <p>Falha de fonte não é ausência de oportunidades.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-14-item-anteriormente-selecionado">14. Item anteriormente selecionado<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-14-item-anteriormente-selecionado" title="Permanent link">&para;</a></h2>
-<p>Se a consulta anterior possuía uma oportunidade selecionada e uma alteração produzir zero resultados, a interface não deverá apagar a seleção silenciosamente.</p>
-<p>Quando aplicável, deverá informar:</p>
+<p>A ação orientada à pessoa será:</p>
 <blockquote>
-<p><strong>A oportunidade selecionada não corresponde mais à consulta atual.</strong></p>
+<p><strong>Entender disponibilidade dos dados</strong></p>
+</blockquote>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-15-item-anteriormente-selecionado">15. Item anteriormente selecionado<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-15-item-anteriormente-selecionado" title="Permanent link">&para;</a></h2>
+<p>Se a consulta anterior possuía uma oportunidade selecionada e uma alteração produzir zero resultados, a interface não deverá apagar a seleção silenciosamente.</p>
+<p>O wireframe reformulado demonstra:</p>
+<blockquote>
+<p><strong>Seleção anterior fora da consulta atual</strong></p>
 </blockquote>
 <p>A pessoa poderá:</p>
 <ul>
-<li>desfazer a alteração;</li>
 <li>abrir o Detalhe se o item continuar disponível;</li>
 <li>remover conscientemente a seleção;</li>
+<li>desfazer a alteração;</li>
 <li>manter a nova consulta sem resultados.</li>
 </ul>
-<p>Seleção anterior não deverá ser reinserida artificialmente no conjunto atual.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-15-explicabilidade-e-cobertura">15. Explicabilidade e cobertura<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-15-explicabilidade-e-cobertura" title="Permanent link">&para;</a></h2>
+<p>Seleção anterior não deverá ser reinserida artificialmente no conjunto atual nem alterar o total zero.</p>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-16-explicabilidade-e-cobertura">16. Explicabilidade e cobertura<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-16-explicabilidade-e-cobertura" title="Permanent link">&para;</a></h2>
 <p>A pessoa deverá poder abrir <code>Entender este resultado</code> para verificar:</p>
 <ul>
 <li>região consultada;</li>
@@ -35175,10 +35329,11 @@ Explorar em descoberta ampla
 <li>distinção entre zero legítimo e erro.</li>
 </ul>
 <p>A explicação não deverá expor lógica proprietária desnecessária nem ocultar limitações materiais.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-16-acessibilidade-e-resiliencia">16. Acessibilidade e resiliência<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-16-acessibilidade-e-resiliencia" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-17-acessibilidade-e-resiliencia">17. Acessibilidade e resiliência<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-17-acessibilidade-e-resiliencia" title="Permanent link">&para;</a></h2>
 <p>O estado deverá:</p>
 <ul>
 <li>anunciar textualmente o total zero;</li>
+<li>anunciar cobertura e atualização;</li>
 <li>não depender de cor, marcadores ou mapa vazio;</li>
 <li>possuir ordem de foco coerente;</li>
 <li>manter títulos e ações compreensíveis fora do contexto visual;</li>
@@ -35187,8 +35342,8 @@ Explorar em descoberta ampla
 <li>evitar ciclos de tentativa automática;</li>
 <li>manter ações essenciais disponíveis em baixa conectividade quando possível.</li>
 </ul>
-<p>A criação deste wireframe não conclui conformidade técnica de acessibilidade.</p>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-17-privacidade-e-autonomia">17. Privacidade e autonomia<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-17-privacidade-e-autonomia" title="Permanent link">&para;</a></h2>
+<p>A validação funcional não conclui conformidade técnica de acessibilidade.</p>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-18-privacidade-e-autonomia">18. Privacidade e autonomia<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-18-privacidade-e-autonomia" title="Permanent link">&para;</a></h2>
 <p>O estado preserva:</p>
 <ul>
 <li>localização opcional;</li>
@@ -35197,28 +35352,31 @@ Explorar em descoberta ampla
 <li>consulta sem personalização;</li>
 <li>ausência legítima sem preenchimento comercial artificial;</li>
 <li>ações de recuperação voluntárias;</li>
+<li>revisão antes de aplicar mudanças;</li>
 <li>alteração explícita e reversível;</li>
 <li>separação entre falha técnica e ausência de dados;</li>
 <li>proteção de endereços sensíveis;</li>
 <li>continuidade sem rastreamento.</li>
 </ul>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-18-criterios-de-validacao-posterior">18. Critérios de validação posterior<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-18-criterios-de-validacao-posterior" title="Permanent link">&para;</a></h2>
-<p>A validação funcional especializada deverá verificar:</p>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-19-resultado-da-validacao-especializada">19. Resultado da validação especializada<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-19-resultado-da-validacao-especializada" title="Permanent link">&para;</a></h2>
+<p>A UXA-031 considera o estado <strong>funcionalmente válido após reformulação</strong> porque:</p>
 <ul>
-<li>se a pessoa entende que zero corresponde à consulta atual, não à totalidade de oportunidades;</li>
-<li>se ausência, falha de fonte e indisponibilidade temporária são distinguíveis;</li>
-<li>se região, busca e filtros permanecem reconhecíveis;</li>
-<li>se as ações de recuperação são compreensíveis e independentes;</li>
-<li>se nenhuma ação altera a consulta silenciosamente;</li>
-<li>se Mapa e Lista preservam o mesmo estado;</li>
-<li>se localização continua opcional;</li>
-<li>se a linguagem não cria personalização sem gate;</li>
-<li>se a interface funciona sem mapa carregado;</li>
-<li>se uma seleção anterior é tratada de forma explicável.</li>
+<li>o zero permanece limitado à consulta atual;</li>
+<li>a cobertura passa a ser verificável;</li>
+<li>ausência, falha e indisponibilidade são distintas;</li>
+<li>região, busca, filtros e contexto permanecem visíveis;</li>
+<li>nenhuma recuperação altera a consulta sem revisão;</li>
+<li><code>Desfazer</code> é condicional e identifica a alteração;</li>
+<li>seleção anterior é tratada sem falsear correspondência;</li>
+<li>Mapa e Lista preservam o mesmo estado;</li>
+<li>localização continua opcional;</li>
+<li>não há preenchimento comercial ou personalização artificial;</li>
+<li>o estado funciona sem mapa carregado.</li>
 </ul>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-19-limites">19. Limites<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-19-limites" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-20-limites">20. Limites<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-20-limites" title="Permanent link">&para;</a></h2>
 <p>Este incremento não:</p>
 <ul>
+<li>aprova textos finais de interface;</li>
 <li>valida o estado com usuários reais;</li>
 <li>define algoritmo de busca;</li>
 <li>define cobertura de fontes de produção;</li>
@@ -35231,15 +35389,402 @@ Explorar em descoberta ampla
 <li>inicia design visual;</li>
 <li>inicia Engenharia de Produto.</li>
 </ul>
-<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-20-proximos-atos-governados">20. Próximos atos governados<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-20-proximos-atos-governados" title="Permanent link">&para;</a></h2>
+<h2 id="experience-architecture-uxa-030-opportunity-map-no-results-state-21-proximos-atos-governados">21. Próximos atos governados<a class="headerlink" href="#experience-architecture-uxa-030-opportunity-map-no-results-state-21-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
 <li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa;</li>
+<li>retomar independentemente os testes dos Resultados Empresariais.</li>
+</ol>
+<p>Nenhum ato é iniciado automaticamente.</p></section><section class="print-page" id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation" heading-number="9.5.9"><h1 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-validacao-funcional-especializada-e-reformulacao-do-estado-do-mapa-sem-resultados">Validação Funcional Especializada e Reformulação do Estado do Mapa sem Resultados<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-validacao-funcional-especializada-e-reformulacao-do-estado-do-mapa-sem-resultados" title="Permanent link">&para;</a></h1>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-1-finalidade">1. Finalidade<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-1-finalidade" title="Permanent link">&para;</a></h2>
+<p>Este documento registra a validação funcional especializada do estado sem resultados do Mapa de Oportunidades e governa a reformulação da UXA-030.</p>
+<p>A decisão permanece restrita à Arquitetura da Experiência. Ela não aprova algoritmo de busca, cobertura de fontes de produção, tecnologia cartográfica, geocodificação, rotas, design visual, protótipo navegável, conformidade técnica de acessibilidade, teste de usabilidade ou desenvolvimento.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-2-decisao-humana-registrada">2. Decisão humana registrada<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-2-decisao-humana-registrada" title="Permanent link">&para;</a></h2>
+<p>Em 27/07/2026, o Fundador autorizou a validação funcional especializada da UXA-030 após a integração do marco M7.31.</p>
+<p>A validação examinou:</p>
+<ul>
+<li>compreensão de que o total zero se refere somente à consulta atual;</li>
+<li>distinção entre ausência legítima, falha de fonte e indisponibilidade temporária;</li>
+<li>preservação de região, busca, filtros e contexto <code>Agindo como</code>;</li>
+<li>clareza e independência das ações de recuperação;</li>
+<li>ausência de alterações silenciosas na consulta;</li>
+<li>equivalência do estado entre Mapa e Lista;</li>
+<li>tratamento de uma oportunidade anteriormente selecionada;</li>
+<li>manutenção da localização como opcional;</li>
+<li>funcionamento textual sem o mapa carregado;</li>
+<li>ausência de personalização ou preenchimento comercial artificial;</li>
+<li>aderência à Fundação da Guivos.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-3-resultado-da-validacao">3. Resultado da validação<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-3-resultado-da-validacao" title="Permanent link">&para;</a></h2>
+<p>O estado sem resultados do Mapa é considerado <strong>funcionalmente válido após reformulação</strong>.</p>
+<p>O wireframe inicial já estabelecia corretamente:</p>
+<ul>
+<li>estado interno da superfície recorrente <code>Mapa</code>;</li>
+<li>alternância <code>Mapa ↔ Lista</code>;</li>
+<li>localização desativada e posição não acessada;</li>
+<li>região manual distinta da posição pessoal;</li>
+<li>busca e filtros preservados;</li>
+<li>total zero limitado à consulta atual;</li>
+<li>ações separadas para ajustar região, período, filtros e busca;</li>
+<li>distinção conceitual entre ausência, falha e indisponibilidade;</li>
+<li>exploração geral como saída separada;</li>
+<li>tratamento textual sem depender somente do campo cartográfico.</li>
+</ul>
+<p>Entretanto, seis riscos exigiram correção antes do fechamento funcional:</p>
+<ol>
+<li>a cobertura consultada não aparecia de forma verificável no wireframe;</li>
+<li><code>nenhuma falha conhecida</code> constituía afirmação forte sem evidência acessível na superfície;</li>
+<li>as ações de recuperação não demonstravam revisão antes da aplicação;</li>
+<li><code>Desfazer alteração</code> aparecia sem indicar a existência e a natureza da alteração anterior;</li>
+<li>o tratamento da oportunidade anteriormente selecionada existia no contrato, mas não era materializado no artefato;</li>
+<li><code>Ver estados</code> utilizava linguagem técnica e <code>Explorar opções gerais</code> não declarava a preservação da consulta atual.</li>
+</ol>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-4-posicao-funcional-preservada">4. Posição funcional preservada<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-4-posicao-funcional-preservada" title="Permanent link">&para;</a></h2>
+<p>A ordem vigente permanece:</p>
+<div class="highlight"><pre><span></span><code>Página Inicial pública
+→ início protegido da jornada
+→ compreensão inicial revisável
+→ Tela Hoje
+→ Hoje | Jornada | Explorar | Mapa | Eu
+</code></pre></div>
+<p>O estado sem resultados não constitui uma nova tela obrigatória da jornada. Ele é uma condição transitória e recuperável da superfície recorrente do Mapa.</p>
+<p>O item <code>Mapa</code> permanece selecionado na navegação principal.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-5-gate-de-alinhamento-a-fundacao">5. Gate de alinhamento à Fundação<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-5-gate-de-alinhamento-a-fundacao" title="Permanent link">&para;</a></h2>
+<h3 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-51-essencia">5.1 Essência<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-51-essencia" title="Permanent link">&para;</a></h3>
+<p>A reformulação preserva a possibilidade de reconhecer limites reais sem transformar ausência momentânea de correspondências em ausência de possibilidades para a pessoa.</p>
+<h3 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-52-proposito">5.2 Propósito<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-52-proposito" title="Permanent link">&para;</a></h3>
+<p>O estado ajuda a pessoa a compreender o que foi consultado, o que não foi encontrado e quais mudanças conscientes podem ampliar a descoberta.</p>
+<h3 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-53-missao-operacional">5.3 Missão Operacional<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-53-missao-operacional" title="Permanent link">&para;</a></h3>
+<p>Região, busca, filtros, cobertura, atualização, limitações e ações de recuperação permanecem verificáveis e controláveis.</p>
+<h3 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-54-visao-de-longo-prazo">5.4 Visão de Longo Prazo<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-54-visao-de-longo-prazo" title="Permanent link">&para;</a></h3>
+<p>O contrato permite operar em diferentes territórios, densidades, fontes de dados, condições de conectividade e canais sem produzir falsas conclusões globais.</p>
+<h3 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-55-constituicao-e-principios-permanentes">5.5 Constituição e Princípios Permanentes<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-55-constituicao-e-principios-permanentes" title="Permanent link">&para;</a></h3>
+<p>São preservados:</p>
+<ul>
+<li>autonomia;</li>
+<li>dignidade;</li>
+<li>transparência;</li>
+<li>explicabilidade;</li>
+<li>privacidade;</li>
+<li>não manipulação;</li>
+<li>acessibilidade;</li>
+<li>reversibilidade;</li>
+<li>separação entre ausência funcional e interesse comercial.</li>
+</ul>
+<p>Nenhuma falha material à Fundação foi identificada após a reformulação.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-6-natureza-do-zero-validado">6. Natureza do zero validado<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-6-natureza-do-zero-validado" title="Permanent link">&para;</a></h2>
+<p>O zero validado significa exclusivamente:</p>
+<blockquote>
+<p><strong>Nenhuma correspondência foi encontrada para esta consulta, nesta região, com estes filtros, neste momento e dentro da cobertura declarada.</strong></p>
+</blockquote>
+<p>Ele não significa:</p>
+<ul>
+<li>inexistência de oportunidades no território;</li>
+<li>inexistência de possibilidades futuras;</li>
+<li>inadequação da pessoa;</li>
+<li>falta de capacidade, mérito ou elegibilidade;</li>
+<li>ausência em fontes não consultadas;</li>
+<li>impossibilidade de encontrar alternativas por outros caminhos.</li>
+</ul>
+<p>A interface não poderá converter uma observação limitada em uma conclusão absoluta.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-7-cobertura-verificavel">7. Cobertura verificável<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-7-cobertura-verificavel" title="Permanent link">&para;</a></h2>
+<p>A versão inicial declarava:</p>
+<blockquote>
+<p><strong>Consulta concluída · nenhuma falha conhecida</strong></p>
+</blockquote>
+<p>A formulação era insuficiente porque a pessoa não conseguia verificar quais fontes, categorias ou limites sustentavam a conclusão.</p>
+<p>A reformulação passa a declarar:</p>
+<blockquote>
+<p><strong>Consulta concluída · cobertura verificada · atualizada agora</strong></p>
+</blockquote>
+<p>E oferece:</p>
+<blockquote>
+<p><strong>Ver cobertura</strong></p>
+</blockquote>
+<p>A explicação de cobertura deverá informar, quando material:</p>
+<ul>
+<li>fontes previstas para a consulta;</li>
+<li>fontes que responderam;</li>
+<li>fontes não aplicáveis;</li>
+<li>fontes indisponíveis;</li>
+<li>categorias ou tipos consultados;</li>
+<li>período considerado;</li>
+<li>região consultada;</li>
+<li>horário da atualização;</li>
+<li>limitações conhecidas.</li>
+</ul>
+<p><code>Cobertura verificada</code> somente poderá ser utilizada quando a condição puder ser sustentada. Caso contrário, a interface deverá utilizar estado de cobertura parcial, falha de fonte, carregamento ou indisponibilidade.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-8-mensagem-principal">8. Mensagem principal<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-8-mensagem-principal" title="Permanent link">&para;</a></h2>
+<p>A mensagem validada permanece:</p>
+<blockquote>
+<p><strong>Nenhum resultado corresponde à busca, região e filtros atuais.</strong></p>
+</blockquote>
+<p>Ela deverá ser acompanhada por:</p>
+<blockquote>
+<p><strong>Sua consulta permanece intacta.</strong></p>
+</blockquote>
+<p>A interface não deverá afirmar:</p>
+<ul>
+<li><code>Não existem oportunidades</code>;</li>
+<li><code>Não há nada nesta cidade</code>;</li>
+<li><code>Você não tem opções</code>;</li>
+<li><code>Nada é adequado para você</code>;</li>
+<li><code>Não encontramos o que você precisa</code>.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-9-contexto-preservado">9. Contexto preservado<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-9-contexto-preservado" title="Permanent link">&para;</a></h2>
+<p>O estado deverá manter visíveis:</p>
+<ul>
+<li>contexto <code>Agindo como</code>;</li>
+<li>presença ou ausência de personalização;</li>
+<li>região ativa;</li>
+<li>origem manual ou autorizada da região;</li>
+<li>busca executada;</li>
+<li>filtros ativos;</li>
+<li>total consolidado de filtros;</li>
+<li>modo Mapa ou Lista;</li>
+<li>total zero;</li>
+<li>momento da atualização;</li>
+<li>cobertura declarada.</li>
+</ul>
+<p>O total zero não autoriza apagar, reescrever ou substituir nenhuma dessas dimensões.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-10-recuperacao-com-revisao-previa">10. Recuperação com revisão prévia<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-10-recuperacao-com-revisao-previa" title="Permanent link">&para;</a></h2>
+<p>As ações continuam independentes:</p>
+<ul>
+<li><code>Ampliar região</code>;</li>
+<li><code>Alterar período</code>;</li>
+<li><code>Revisar filtros</code>;</li>
+<li><code>Editar busca</code>;</li>
+<li><code>Explorar sem alterar esta consulta</code>.</li>
+</ul>
+<p>A reformulação acrescenta a declaração:</p>
+<blockquote>
+<p><strong>Você revisará cada mudança antes de aplicar.</strong></p>
+</blockquote>
+<p>Cada ação deverá abrir uma etapa de revisão que informe:</p>
+<ul>
+<li>dimensão que será alterada;</li>
+<li>valor atual;</li>
+<li>valor proposto;</li>
+<li>dimensões preservadas;</li>
+<li>possível efeito esperado;</li>
+<li>ação <code>Aplicar</code>;</li>
+<li>ação <code>Cancelar</code>.</li>
+</ul>
+<p>A interface não poderá aplicar automaticamente uma ampliação territorial, remoção de filtro, alteração de período, substituição de busca ou troca de modalidade.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-11-desfazer-somente-quando-aplicavel">11. Desfazer somente quando aplicável<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-11-desfazer-somente-quando-aplicavel" title="Permanent link">&para;</a></h2>
+<p><code>Desfazer</code> não constitui ação permanente do estado zero.</p>
+<p>Ela somente deverá aparecer quando existir uma alteração anterior identificável e reversível.</p>
+<p>A reformulação demonstra:</p>
+<blockquote>
+<p><strong>Última alteração: filtro “Hoje” aplicado</strong></p>
+<p><strong>Desfazer</strong></p>
+</blockquote>
+<p>O aviso deverá informar o que será restaurado antes da reversão.</p>
+<p>Quando não houver alteração anterior compatível, a ação não deverá aparecer como disponível.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-12-oportunidade-anteriormente-selecionada">12. Oportunidade anteriormente selecionada<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-12-oportunidade-anteriormente-selecionada" title="Permanent link">&para;</a></h2>
+<p>Se uma mudança na consulta produzir total zero enquanto existir uma oportunidade anteriormente selecionada, a interface deverá declarar:</p>
+<blockquote>
+<p><strong>Seleção anterior fora da consulta atual</strong></p>
+</blockquote>
+<p>A pessoa poderá:</p>
+<ul>
+<li>abrir o Detalhe, se a oportunidade ainda estiver disponível;</li>
+<li>remover conscientemente a seleção;</li>
+<li>desfazer a mudança que produziu a incompatibilidade;</li>
+<li>manter a nova consulta sem resultados.</li>
+</ul>
+<p>A seleção anterior não deverá:</p>
+<ul>
+<li>ser apagada silenciosamente;</li>
+<li>ser reinserida como correspondência atual;</li>
+<li>alterar o total zero;</li>
+<li>receber prioridade artificial;</li>
+<li>contornar indisponibilidade ou condição de acesso.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-13-mapa-e-lista-como-o-mesmo-estado">13. Mapa e Lista como o mesmo estado<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-13-mapa-e-lista-como-o-mesmo-estado" title="Permanent link">&para;</a></h2>
+<p>Mapa e Lista continuam representando a mesma consulta e a mesma atualização.</p>
+<p>Ao alternar os modos, deverão permanecer:</p>
+<ul>
+<li>contexto <code>Agindo como</code>;</li>
+<li>região;</li>
+<li>busca;</li>
+<li>filtros;</li>
+<li>total zero;</li>
+<li>cobertura;</li>
+<li>horário de atualização;</li>
+<li>diagnóstico;</li>
+<li>ações de recuperação;</li>
+<li>última alteração reversível, quando existente;</li>
+<li>seleção anterior, quando existente;</li>
+<li>estado de localização.</li>
+</ul>
+<p>A Lista deverá funcionar integralmente sem renderização cartográfica.</p>
+<p>O Mapa deverá anunciar o estado de forma textual e não depender do campo vazio ou da ausência de marcadores.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-14-localizacao-e-privacidade">14. Localização e privacidade<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-14-localizacao-e-privacidade" title="Permanent link">&para;</a></h2>
+<p>O exemplo continua declarando:</p>
+<blockquote>
+<p><strong>Localização desativada · posição não acessada</strong></p>
+<p><strong>Região manual · não é sua posição</strong></p>
+</blockquote>
+<p>O estado zero não poderá ser utilizado para pressionar a ativação de localização.</p>
+<p>A pessoa poderá revisar ou ampliar a região manual sem:</p>
+<ul>
+<li>conceder acesso à posição;</li>
+<li>autorizar rastreamento;</li>
+<li>criar histórico territorial;</li>
+<li>inferir residência;</li>
+<li>transformar região em posição pessoal.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-15-personalizacao-e-preenchimento-comercial">15. Personalização e preenchimento comercial<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-15-personalizacao-e-preenchimento-comercial" title="Permanent link">&para;</a></h2>
+<p>Sem gate de personalização, a explicação utilizará somente:</p>
+<ul>
+<li>região escolhida;</li>
+<li>busca explícita;</li>
+<li>filtros aplicados;</li>
+<li>período;</li>
+<li>cobertura declarada.</li>
+</ul>
+<p>Mesmo após o gate, a ausência deverá ser explicada pela consulta e não pela suposta adequação da pessoa.</p>
+<p>O estado não poderá ser preenchido artificialmente por:</p>
+<ul>
+<li>publicidade;</li>
+<li>conteúdo patrocinado;</li>
+<li>comissão;</li>
+<li>popularidade;</li>
+<li>sugestões sem correspondência;</li>
+<li>inferência pessoal não autorizada.</li>
+</ul>
+<p><code>Explorar sem alterar esta consulta</code> poderá abrir descoberta geral em uma superfície separada, preservando a consulta territorial para retorno.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-16-distincao-validada-entre-condicoes">16. Distinção validada entre condições<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-16-distincao-validada-entre-condicoes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Condição</th>
+<th>Mensagem funcional</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>zero legítimo</td>
+<td><code>0 resultados correspondem a esta consulta</code></td>
+<td>cobertura verificada e contexto preservado</td>
+</tr>
+<tr>
+<td>cobertura parcial</td>
+<td><code>Resultados limitados às fontes disponíveis</code></td>
+<td>declarar limites e não concluir ausência total</td>
+</tr>
+<tr>
+<td>falha de fonte</td>
+<td><code>Não foi possível verificar todas as fontes</code></td>
+<td>não apresentar zero como conclusão</td>
+</tr>
+<tr>
+<td>indisponibilidade temporária</td>
+<td><code>Resultados temporariamente indisponíveis</code></td>
+<td>preservar consulta e permitir nova tentativa</td>
+</tr>
+<tr>
+<td>carregamento</td>
+<td><code>Atualizando resultados</code></td>
+<td>manter estrutura e não concluir zero</td>
+</tr>
+<tr>
+<td>baixa conectividade</td>
+<td><code>Atualização limitada pela conexão</code></td>
+<td>declarar possível desatualização</td>
+</tr>
+</tbody>
+</table>
+<p>A ação anterior <code>Ver estados</code> é substituída por:</p>
+<blockquote>
+<p><strong>Entender disponibilidade dos dados</strong></p>
+</blockquote>
+<p>A linguagem deverá explicar a condição atual sem exigir conhecimento técnico sobre estados internos do sistema.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-17-acessibilidade-e-resiliencia">17. Acessibilidade e resiliência<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-17-acessibilidade-e-resiliencia" title="Permanent link">&para;</a></h2>
+<p>O estado deverá:</p>
+<ul>
+<li>anunciar textualmente o total zero;</li>
+<li>anunciar a cobertura e a atualização;</li>
+<li>não depender de cor, mapa vazio ou ausência de marcadores;</li>
+<li>possuir títulos e ações compreensíveis isoladamente;</li>
+<li>oferecer ordem de foco coerente;</li>
+<li>preservar contexto durante falha cartográfica;</li>
+<li>funcionar integralmente em Lista;</li>
+<li>não criar ciclos automáticos de nova tentativa;</li>
+<li>manter ações essenciais em baixa conectividade quando possível.</li>
+</ul>
+<p>Esta validação arquitetural não conclui conformidade técnica de acessibilidade.</p>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-18-reformulacao-aplicada-ao-wireframe">18. Reformulação aplicada ao wireframe<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-18-reformulacao-aplicada-ao-wireframe" title="Permanent link">&para;</a></h2>
+<p>A versão reformulada da UXA-030 demonstra:</p>
+<ul>
+<li><code>Agindo como: Pessoa</code>;</li>
+<li>exploração geral sem personalização;</li>
+<li>localização desativada e posição não acessada;</li>
+<li>região manual distinta da posição pessoal;</li>
+<li>busca e quatro filtros preservados;</li>
+<li>alternância <code>Mapa ↔ Lista</code>;</li>
+<li><code>0 resultados correspondem a esta consulta</code>;</li>
+<li><code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>ação <code>Ver cobertura</code>;</li>
+<li>mensagem limitada à consulta atual;</li>
+<li>declaração <code>Sua consulta permanece intacta</code>;</li>
+<li>ajustes independentes de região, período, filtros e busca;</li>
+<li>aviso de revisão antes de aplicar;</li>
+<li>última alteração identificada e <code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>acesso ao Detalhe e remoção consciente da seleção;</li>
+<li><code>Explorar sem alterar esta consulta</code>;</li>
+<li><code>Entender disponibilidade dos dados</code>;</li>
+<li>equivalência entre Mapa e Lista.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-19-resultado-final">19. Resultado final<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-19-resultado-final" title="Permanent link">&para;</a></h2>
+<p>Após a reformulação, o estado atende ao contrato funcional porque:</p>
+<ul>
+<li>limita o zero à consulta executada;</li>
+<li>demonstra cobertura verificável;</li>
+<li>não confunde ausência com falha;</li>
+<li>preserva região, busca, filtros e contexto;</li>
+<li>exige revisão antes de alterar a consulta;</li>
+<li>torna reversão condicional e explicável;</li>
+<li>preserva seleção anterior sem falsear correspondência;</li>
+<li>mantém Mapa e Lista equivalentes;</li>
+<li>preserva localização opcional;</li>
+<li>evita personalização e preenchimento comercial artificial;</li>
+<li>funciona textualmente sem mapa carregado;</li>
+<li>não inicia design ou implementação.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-20-limites">20. Limites<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-20-limites" title="Permanent link">&para;</a></h2>
+<p>Esta validação não:</p>
+<ul>
+<li>aprova textos finais de interface;</li>
+<li>valida o estado com usuários reais;</li>
+<li>define algoritmo de busca;</li>
+<li>define cobertura de fontes de produção;</li>
+<li>cria dados reais;</li>
+<li>conclui acessibilidade técnica;</li>
+<li>define tecnologia cartográfica;</li>
+<li>cria geocodificação ou rotas;</li>
+<li>cria referência para computador;</li>
+<li>cria protótipo navegável;</li>
+<li>inicia design visual;</li>
+<li>inicia Engenharia de Produto.</li>
+</ul>
+<h2 id="experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-21-proximos-atos-governados">21. Próximos atos governados<a class="headerlink" href="#experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation-21-proximos-atos-governados" title="Permanent link">&para;</a></h2>
+<p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
+<ol>
+<li>criar referência do Mapa para computador;</li>
+<li>criar o wireframe gráfico do início protegido;</li>
+<li>criar a referência móvel da Home;</li>
+<li>validar a revisão da compreensão inicial;</li>
+<li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhum ato é iniciado automaticamente.</p></section></section>
@@ -49587,6 +50132,8 @@ Baseline authorization: YES
 .print-site-enumerate-headings #experience-architecture-uxa-029-opportunity-map-list-functional-validation-and-reformulation > h1:before { content: '9.5.7 ' }
 
 .print-site-enumerate-headings #experience-architecture-uxa-030-opportunity-map-no-results-state > h1:before { content: '9.5.8 ' }
+
+.print-site-enumerate-headings #experience-architecture-uxa-031-opportunity-map-no-results-functional-validation-and-reformulation > h1:before { content: '9.5.9 ' }
 
 .print-site-enumerate-headings #section-9-6 > h1:before { content: '9.6 ' }
 .print-site-enumerate-headings #experience-architecture-uxa-007-opportunity-detail-low-fidelity-wireframe > h1:before { content: '9.6.1 ' }

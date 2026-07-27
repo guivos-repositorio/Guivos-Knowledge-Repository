@@ -462,10 +462,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado-sem-resultados" class="md-nav__link">
+  <a href="#6-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado sem resultados
+        6. Estado sem resultados validado
       
     </span>
   </a>
@@ -4235,7 +4235,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-031 — Validação do Estado sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6750,10 +6785,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado-sem-resultados" class="md-nav__link">
+  <a href="#6-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado sem resultados
+        6. Estado sem resultados validado
       
     </span>
   </a>
@@ -6827,8 +6862,8 @@
 </tr>
 <tr>
 <td>Marco atual</td>
-<td>estado móvel do Mapa sem resultados criado</td>
-<td>M7.31; UXA-030</td>
+<td>estado do Mapa sem resultados funcionalmente validado e reformulado</td>
+<td>M7.32; UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -6852,8 +6887,8 @@
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa até o estado sem resultados do Mapa</td>
-<td>UXA-000 a UXA-030</td>
+<td>ativa até a validação do estado sem resultados</td>
+<td>UXA-000 a UXA-031</td>
 </tr>
 <tr>
 <td>Página Inicial pública</td>
@@ -6902,8 +6937,8 @@
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação especializada não iniciada</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -6996,20 +7031,23 @@ Business Capabilities: not started
 <li>retorno ao Mapa sem perda de contexto;</li>
 <li>funcionamento integral sem mapa carregado.</li>
 </ul>
-<h2 id="6-estado-sem-resultados">6. Estado sem resultados<a class="headerlink" href="#6-estado-sem-resultados" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 materializa a ausência legítima de correspondências para uma consulta concluída.</p>
-<p>O estado demonstra:</p>
+<h2 id="6-estado-sem-resultados-validado">6. Estado sem resultados validado<a class="headerlink" href="#6-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 estabelecem a ausência legítima de correspondências como condição limitada à consulta executada.</p>
+<p>O estado reformulado demonstra:</p>
 <ul>
 <li>região, busca e filtros preservados;</li>
 <li>total consolidado de filtros;</li>
 <li><code>0 resultados correspondem a esta consulta</code>;</li>
-<li><code>Consulta concluída · nenhuma falha conhecida</code>;</li>
+<li><code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>ação <code>Ver cobertura</code>;</li>
 <li>mensagem limitada à consulta atual;</li>
-<li>ampliação de região, alteração de período, revisão de filtros e edição de busca como ações explícitas;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência, falha de fonte e indisponibilidade temporária;</li>
+<li>revisão obrigatória antes de ajustar região, período, filtros ou busca;</li>
+<li>última alteração identificada e <code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual, sem alterar o total zero;</li>
+<li>distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>equivalência entre Mapa e Lista;</li>
 <li>localização opcional e região manual;</li>
+<li>exploração geral sem alterar a consulta territorial;</li>
 <li>tratamento textual sem dependência do mapa carregado.</li>
 </ul>
 <p>Arquivos vetoriais:</p>
@@ -7019,7 +7057,7 @@ Business Capabilities: not started
 <li><code>docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg</code>;</li>
 <li><code>docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg</code>.</li>
 </ul>
-<p>O estado sem resultados ainda não foi funcionalmente validado. Wireframe não equivale a teste com usuários, design ou implementação.</p>
+<p>A validação é arquitetural e não equivale a teste com usuários, design ou implementação.</p>
 <h2 id="7-protecoes-vigentes">7. Proteções vigentes<a class="headerlink" href="#7-protecoes-vigentes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>localização permanece opcional;</li>
@@ -7032,18 +7070,21 @@ Business Capabilities: not started
 <li>endereços protegidos não são contornados;</li>
 <li>personalização exige gate próprio;</li>
 <li>zero legítimo não é confundido com falha de fonte;</li>
+<li>cobertura precisa ser verificável;</li>
 <li>filtros e região não são alterados silenciosamente;</li>
+<li><code>Desfazer</code> depende de alteração identificável;</li>
+<li>seleção anterior não falseia correspondência atual;</li>
 <li>publicidade não preenche artificialmente o estado vazio.</li>
 </ul>
 <h2 id="8-proximos-atos-governados">8. Próximos atos governados<a class="headerlink" href="#8-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
 <li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhum ato é iniciado automaticamente.</p>

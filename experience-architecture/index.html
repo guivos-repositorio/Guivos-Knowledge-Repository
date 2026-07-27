@@ -3273,10 +3273,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-estado-sem-resultados" class="md-nav__link">
+  <a href="#12-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Estado sem resultados
+        12. Estado sem resultados validado
       
     </span>
   </a>
@@ -4323,7 +4323,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-031 — Validação do Estado sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6904,10 +6939,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-estado-sem-resultados" class="md-nav__link">
+  <a href="#12-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Estado sem resultados
+        12. Estado sem resultados validado
       
     </span>
   </a>
@@ -7035,7 +7070,7 @@
 </tr>
 <tr>
 <td>Explorar e Mapa</td>
-<td><a href="uxa-004-opportunities-organizations-collectives-map/">contrato</a>, <a href="uxa-024-opportunity-map-low-fidelity-wireframe/">wireframe do Mapa</a>, <a href="uxa-025-opportunity-map-functional-validation-and-reformulation/">validação do Mapa</a>, <a href="uxa-026-opportunity-map-location-disabled-state/">estado sem localização</a>, <a href="uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation/">validação sem localização</a>, <a href="uxa-028-opportunity-map-list-state/">Lista</a>, <a href="uxa-029-opportunity-map-list-functional-validation-and-reformulation/">validação da Lista</a> e <a href="uxa-030-opportunity-map-no-results-state/">estado sem resultados</a></td>
+<td><a href="uxa-004-opportunities-organizations-collectives-map/">contrato</a>, <a href="uxa-024-opportunity-map-low-fidelity-wireframe/">wireframe do Mapa</a>, <a href="uxa-025-opportunity-map-functional-validation-and-reformulation/">validação do Mapa</a>, <a href="uxa-026-opportunity-map-location-disabled-state/">estado sem localização</a>, <a href="uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation/">validação sem localização</a>, <a href="uxa-028-opportunity-map-list-state/">Lista</a>, <a href="uxa-029-opportunity-map-list-functional-validation-and-reformulation/">validação da Lista</a>, <a href="uxa-030-opportunity-map-no-results-state/">estado sem resultados</a> e <a href="uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/">validação sem resultados</a></td>
 </tr>
 <tr>
 <td>Oportunidades</td>
@@ -7059,8 +7094,8 @@
 <tbody>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa e integrada até o estado sem resultados do Mapa</td>
-<td>UXA-000 a UXA-030; UXA-003-A1</td>
+<td>ativa e integrada até a validação do estado sem resultados</td>
+<td>UXA-000 a UXA-031; UXA-003-A1</td>
 </tr>
 <tr>
 <td>Resultados Empresariais</td>
@@ -7114,8 +7149,8 @@
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação funcional pendente</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -7183,26 +7218,30 @@
 <li>funcionamento sem mapa carregado.</li>
 </ul>
 <p>A Lista não duplica <code>Explorar</code> e constitui alternativa integral para conteúdo textual, acessibilidade, baixa conectividade e indisponibilidade cartográfica.</p>
-<p>A validação é funcional arquitetural. Teste de usabilidade e conformidade técnica de acessibilidade permanecem posteriores.</p>
-<h2 id="12-estado-sem-resultados">12. Estado sem resultados<a class="headerlink" href="#12-estado-sem-resultados" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 materializa o estado em que a consulta territorial é concluída sem correspondências.</p>
-<p>O wireframe demonstra:</p>
+<h2 id="12-estado-sem-resultados-validado">12. Estado sem resultados validado<a class="headerlink" href="#12-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 estabelecem que o total zero representa somente ausência de correspondências para a consulta executada.</p>
+<p>A reformulação demonstra:</p>
 <ul>
 <li>contexto, região, busca e filtros preservados;</li>
 <li>total zero limitado à consulta atual;</li>
-<li>confirmação de consulta concluída sem falha conhecida;</li>
-<li>ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência legítima, falha de fonte e indisponibilidade;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
+<li><code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
+<li>revisão antes de aplicar ajustes;</li>
+<li>ações independentes para região, período, filtros e busca;</li>
+<li>última alteração identificada;</li>
+<li><code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>exploração geral sem alterar a consulta territorial;</li>
+<li>distinção entre ausência legítima, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
 <li>ausência de personalização ou preenchimento patrocinado artificial;</li>
 <li>tratamento textual sem mapa carregado.</li>
 </ul>
-<p>A validação funcional especializada do estado permanece pendente.</p>
+<p>A validação é funcional arquitetural. Teste de usabilidade e conformidade técnica de acessibilidade permanecem posteriores.</p>
 <h2 id="13-estados-funcionais-do-mapa">13. Estados funcionais do Mapa<a class="headerlink" href="#13-estados-funcionais-do-mapa" title="Permanent link">&para;</a></h2>
 <p>A UXA-025 governa localização desativada, localização aproximada, localização exata temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.</p>
-<p>A UXA-026 a UXA-030 materializam e validam o uso sem localização, a Lista e o estado sem resultados. Os demais wireframes permanecem atos separados.</p>
+<p>A UXA-026 a UXA-031 materializam e validam o uso sem localização, a Lista e o estado sem resultados. Os demais wireframes permanecem atos separados.</p>
 <h2 id="14-gate-de-personalizacao">14. Gate de personalização<a class="headerlink" href="#14-gate-de-personalizacao" title="Permanent link">&para;</a></h2>
 <p>Personalização material exige base suficiente, origem e finalidade identificadas, revisão real, controles de correção e limitação e autorização compatível.</p>
 <p>Sem o gate, a pessoa pode continuar sem personalização, explorar, corrigir, pausar ou excluir.</p>
@@ -7212,12 +7251,12 @@
 <h2 id="16-proximos-atos-governados">16. Próximos atos governados<a class="headerlink" href="#16-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
 <li>validar a revisão da compreensão inicial;</li>
 <li>validar a transição para a primeira Tela Hoje;</li>
+<li>criar outros estados alternativos do Mapa;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhum ato é iniciado automaticamente.</p>

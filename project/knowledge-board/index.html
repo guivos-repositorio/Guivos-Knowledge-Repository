@@ -610,10 +610,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado-sem-resultados-criado" class="md-nav__link">
+  <a href="#6-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado sem resultados criado
+        6. Estado sem resultados validado
       
     </span>
   </a>
@@ -4324,7 +4324,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-031 — Validação do Estado sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6917,10 +6952,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado-sem-resultados-criado" class="md-nav__link">
+  <a href="#6-estado-sem-resultados-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado sem resultados criado
+        6. Estado sem resultados validado
       
     </span>
   </a>
@@ -7005,8 +7040,8 @@
 </tr>
 <tr>
 <td>Marco</td>
-<td>estado móvel do Mapa sem resultados criado</td>
-<td>M7.31; UXA-030</td>
+<td>estado do Mapa sem resultados funcionalmente validado e reformulado</td>
+<td>M7.32; UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -7065,8 +7100,8 @@
 </tr>
 <tr>
 <td>Estado sem resultados</td>
-<td>wireframe móvel criado; validação especializada pendente</td>
-<td>UXA-030</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-030; UXA-031</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -7110,7 +7145,7 @@
 <li>Mapa principal validado e reformulado;</li>
 <li>estado sem localização validado e reformulado;</li>
 <li>visualização em Lista criada, validada e reformulada;</li>
-<li>wireframe do estado sem resultados criado.</li>
+<li>estado sem resultados criado, validado e reformulado.</li>
 </ul>
 <h3 id="em-validacao">Em validação<a class="headerlink" href="#em-validacao" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7121,13 +7156,13 @@
 <h3 id="aguardando-autorizacao">Aguardando autorização<a class="headerlink" href="#aguardando-autorizacao" title="Permanent link">&para;</a></h3>
 <h4 id="arquitetura-da-experiencia">Arquitetura da Experiência<a class="headerlink" href="#arquitetura-da-experiencia" title="Permanent link">&para;</a></h4>
 <ul>
-<li>validação funcional do estado sem resultados;</li>
 <li>referência do Mapa para computador;</li>
 <li>wireframe gráfico do início protegido;</li>
 <li>referência móvel da Home;</li>
 <li>estados especializados de texto, voz e arquivos;</li>
 <li>validação da revisão da compreensão inicial;</li>
-<li>validação da transição para a primeira Tela Hoje.</li>
+<li>validação da transição para a primeira Tela Hoje;</li>
+<li>demais estados alternativos do Mapa.</li>
 </ul>
 <h4 id="arquitetura-de-negocios">Arquitetura de Negócios<a class="headerlink" href="#arquitetura-de-negocios" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7169,22 +7204,25 @@
 <li>retorno ao Mapa sem perda de contexto;</li>
 <li>funcionamento sem mapa carregado.</li>
 </ul>
-<p>A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.</p>
-<h2 id="6-estado-sem-resultados-criado">6. Estado sem resultados criado<a class="headerlink" href="#6-estado-sem-resultados-criado" title="Permanent link">&para;</a></h2>
-<p>A UXA-030 demonstra:</p>
+<h2 id="6-estado-sem-resultados-validado">6. Estado sem resultados validado<a class="headerlink" href="#6-estado-sem-resultados-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 e a UXA-031 demonstram:</p>
 <ul>
 <li>consulta territorial preservada;</li>
 <li>zero limitado à região, busca e filtros atuais;</li>
-<li>confirmação de consulta concluída sem falha conhecida;</li>
+<li>cobertura verificável e ação <code>Ver cobertura</code>;</li>
+<li>confirmação <code>Consulta concluída · cobertura verificada · atualizada agora</code>;</li>
 <li>ações independentes para ampliar região, alterar período, revisar filtros e editar busca;</li>
-<li>reversão da última alteração quando aplicável;</li>
-<li>distinção entre ausência, falha de fonte e indisponibilidade temporária;</li>
+<li>revisão obrigatória antes de aplicar alterações;</li>
+<li>última alteração identificada e <code>Desfazer</code> condicional;</li>
+<li>seleção anterior fora da consulta atual;</li>
+<li>distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;</li>
 <li>continuidade entre Mapa e Lista;</li>
 <li>localização opcional;</li>
+<li>exploração geral sem alterar a consulta;</li>
 <li>ausência de preenchimento comercial ou personalizado artificial;</li>
 <li>operação textual sem mapa carregado.</li>
 </ul>
-<p>A validação funcional especializada permanece não iniciada.</p>
+<p>A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.</p>
 <h2 id="7-protecoes-preservadas">7. Proteções preservadas<a class="headerlink" href="#7-protecoes-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>a Home não coleta relato pessoal;</li>
@@ -7200,7 +7238,10 @@
 <li>origem manual não autoriza histórico territorial;</li>
 <li>residências e locais sensíveis permanecem protegidos;</li>
 <li>zero legítimo não é confundido com erro técnico;</li>
+<li>cobertura precisa ser explicável;</li>
 <li>consulta não é alterada silenciosamente;</li>
+<li><code>Desfazer</code> depende de alteração identificável;</li>
+<li>seleção anterior não falseia o conjunto atual;</li>
 <li>wireframes e validações não equivalem a design ou implementação.</li>
 </ul>
 <h2 id="8-distribuicao-dos-candidatos">8. Distribuição dos candidatos<a class="headerlink" href="#8-distribuicao-dos-candidatos" title="Permanent link">&para;</a></h2>
@@ -7236,7 +7277,7 @@
 </tbody>
 </table>
 <h2 id="9-proximo-movimento">9. Próximo movimento<a class="headerlink" href="#9-proximo-movimento" title="Permanent link">&para;</a></h2>
-<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.</p>
+<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada independente dos testes dos Resultados Empresariais.</p>
 
 
 
