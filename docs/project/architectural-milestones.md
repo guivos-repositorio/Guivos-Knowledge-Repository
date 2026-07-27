@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.1.0
+version: 5.2.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.3.0
+  - ROADMAP-12.4.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -24,6 +24,7 @@ related:
   - UXA-026
   - UXA-027
   - UXA-028
+  - UXA-029
   - M7.20
   - M7.21
   - M7.22
@@ -34,6 +35,7 @@ related:
   - M7.27
   - M7.28
   - M7.29
+  - M7.30
 normative: false
 ---
 
@@ -58,75 +60,68 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.22 | Concluído | Home pública validada e reformulada |
 | M7.23 | Concluído | wireframe gráfico da Home para computador criado |
 | M7.24 | Concluído | início protegido da jornada validado e reformulado |
-| M7.25 | Concluído | wireframe móvel do Mapa de Oportunidades criado |
-| M7.26 | Concluído | Mapa de Oportunidades funcionalmente validado e reformulado |
-| M7.27 | Concluído | primeiro estado alternativo do Mapa criado para localização desativada |
-| M7.28 | Concluído | estado sem localização funcionalmente validado e reformulado |
-| M7.29 | Concluído neste incremento | visualização em Lista do Mapa criada |
+| M7.25 | Concluído | wireframe móvel do Mapa criado |
+| M7.26 | Concluído | Mapa funcionalmente validado e reformulado |
+| M7.27 | Concluído | estado alternativo sem localização criado |
+| M7.28 | Concluído | estado sem localização validado e reformulado |
+| M7.29 | Concluído | visualização em Lista do Mapa criada |
+| M7.30 | Concluído neste incremento | visualização em Lista funcionalmente validada e reformulada |
 
 ## 3. Marco vigente
 
-### Visualização em Lista do Mapa Criada — M7.29
+### Visualização em Lista do Mapa Funcionalmente Validada e Reformulada — M7.30
 
 Critérios atendidos:
 
-- Lista materializada como modo interno da superfície Mapa;
+- Lista preservada como modo interno da superfície Mapa;
 - item `Mapa` preservado na navegação recorrente;
-- alternância `Mapa ↔ Lista` demonstrada;
-- diferença funcional entre Lista do Mapa e `Explorar` registrada;
-- posição não acessada e região manual preservadas no exemplo;
-- pesquisa, filtros e quantidade de resultados mantidos;
-- ordenação explícita demonstrada;
-- cartões comparáveis criados;
-- oportunidade selecionada preservada;
-- explicação de origem e relação comercial separadas;
-- salvamento, definição de origem e Detalhe demonstrados;
-- retorno ao Mapa sem perda de contexto governado;
-- Lista estabelecida como alternativa integral para acessibilidade, baixa conectividade e falha cartográfica;
-- arquivo vetorial móvel criado em 390 por 844 pixels;
-- validação funcional especializada preservada como ato posterior;
-- estado sem resultados e referência para computador não iniciados;
+- `Lista territorial do Mapa · mesma consulta` declarada;
+- diferença para `Explorar` tornada explícita;
+- contexto `Agindo como` demonstrado;
+- localização opcional e região manual preservadas;
+- pesquisa territorial vinculada à região;
+- total consolidado de filtros ativos;
+- quantidade e atualização dos resultados visíveis;
+- ordenação explícita, revisável e explicável;
+- cartões com estrutura mínima comparável;
+- dados ausentes declarados sem inferência;
+- oportunidade selecionada preservada textual e estruturalmente;
+- explicação funcional oferecida em todos os cartões;
+- relação comercial separada da relevância;
+- salvamento, origem e Detalhe disponíveis sem localização;
+- retorno ao Mapa sem perda de contexto;
+- Lista integral sem dependência do mapa carregado;
+- arquivo vetorial reformulado em 390 por 844 pixels;
+- estado sem resultados e referência para computador preservados como atos separados;
 - tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Visualização em Lista do Mapa Criada — M7.29
+
+A UXA-028 permanece como origem histórica do wireframe, posteriormente reformulado e validado pela UXA-029.
+
 ### Estado do Mapa sem Localização Validado e Reformulado — M7.28
 
-A UXA-026 e a UXA-027 permanecem como contrato validado para uso integral sem localização do dispositivo.
-
-### Estado do Mapa sem Localização Criado — M7.27
-
-A UXA-026 permanece como origem histórica do estado, posteriormente reformulado e validado pela UXA-027.
+A UXA-026 e a UXA-027 permanecem como contrato do uso sem localização.
 
 ### Mapa de Oportunidades Validado e Reformulado — M7.26
 
 O Mapa principal permanece funcionalmente validado, com Mapa e Lista sincronizados, filtros, resultados, privacidade e rota contextual.
 
-### Wireframe Móvel do Mapa Criado — M7.25
-
-A primeira referência gráfica móvel permanece como base histórica da reformulação registrada em UXA-024 e UXA-025.
-
 ### Início Protegido da Jornada Validado — M7.24
 
-O início protegido permanece funcionalmente validado, com coleta consciente, revisão, estados verificáveis e personalização bloqueada antes do gate.
-
-### Wireframe Gráfico da Home Criado — M7.23
-
-A Home pública permanece validada e materializada em referência vetorial para computador, sem representar responsividade, design ou implementação.
+O início protegido permanece funcionalmente validado, com coleta consciente, revisão e personalização bloqueada antes do gate.
 
 ### Página Inicial Pública Validada — M7.22
 
-A Home explica concretamente a Guivos, oferece exploração sem personalização, distingue caminhos e não coleta relato pessoal.
-
-### Página Inicial e Início da Jornada Estabelecidos — M7.21
-
-A primeira entrada permanece separada entre Home pública, ambiente protegido e Tela Hoje.
+A Home explica concretamente a Guivos, oferece exploração sem personalização e não coleta relato pessoal.
 
 ### Décima Oitava Decisão Humana — M7.20
 
-COD-018 permanece integrado, com BUS-CAND-010 fundido em BUS-CAND-005 e nenhum Resultado aprovado ou canonicalizado.
+COD-018 permanece integrado, com nenhum Resultado aprovado ou canonicalizado.
 
 ## 5. Estado das revisões arquiteturais
 
@@ -135,7 +130,7 @@ COD-018 permanece integrado, com BUS-CAND-010 fundido em BUS-CAND-005 e nenhum R
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; visualização em Lista criada; validação e estados posteriores aguardando autorização |
+| Arquitetura da Experiência | ativa; Lista do Mapa validada; estados posteriores aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -147,13 +142,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente a visualização em Lista;
-2. criar o estado sem resultados;
-3. criar referência do Mapa para computador;
-4. criar o wireframe do início protegido;
-5. criar a referência móvel da Home;
-6. validar a revisão da compreensão inicial;
-7. validar a transição para a primeira Tela Hoje.
+1. criar o estado sem resultados;
+2. criar referência do Mapa para computador;
+3. criar o wireframe do início protegido;
+4. criar a referência móvel da Home;
+5. validar a revisão da compreensão inicial;
+6. validar a transição para a primeira Tela Hoje.
 
 ### Arquitetura de Negócios
 

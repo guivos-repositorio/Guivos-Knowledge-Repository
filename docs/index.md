@@ -9,30 +9,18 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.29 — Visualização em Lista do Mapa Criada |
+| Marco | M7.30 — Visualização em Lista do Mapa Validada e Reformulada |
 | Remediação | concluída; validação mecânica permanente ativa |
-| Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
-| Guivos Journey | publicado em PAS-001 1.0.0; nove capacidades concluídas |
-| Modelo Econômico | arquitetura documental inicial concluída em GEM-001 a GEM-010 |
-| Resultados Empresariais | 18 decisões humanas; 9 em validação, 3 fundidos e 6 rejeitados |
-| Resultados canônicos | nenhum criado |
-| Página Inicial pública | validada e materializada para computador |
-| Início protegido da jornada | funcionalmente validado e reformulado |
-| Wireframe do início protegido | não iniciado |
-| Referência móvel da Home | não iniciada |
+| Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
+| Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
+| Home pública | validada e materializada para computador |
+| Início protegido | funcionalmente validado; wireframe pendente |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
-| Estado de localização desativada | funcionalmente validado e reformulado |
-| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente |
-| Demais estados alternativos do Mapa | governados; wireframes não iniciados |
-| Protótipo, design e testes | não iniciados |
+| Estado sem localização | funcionalmente validado e reformulado |
+| Lista do Mapa | funcionalmente validada e reformulada |
+| Demais estados do Mapa | governados; wireframes não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
-
-## Missão atual
-
-Preservar o estado concluído das decisões humanas e evoluir a experiência pessoal com separação clara entre Home pública, ambiente protegido, compreensão revisável, Tela Hoje e navegação recorrente.
-
-Nenhum Resultado canônico, Capacidade Empresarial, protótipo, design, teste, produto especializado, Modelo Comercial, Entrada no Mercado ou implementação técnica é iniciado automaticamente.
 
 ## Experiência pessoal vigente
 
@@ -47,85 +35,30 @@ Página Inicial pública
 
 O Mapa não entra entre a Home e a Tela Hoje.
 
-## Página Inicial pública
+## Visualização em Lista validada
 
-A Home não coleta relato pessoal. Ela explica a Guivos, oferece `Iniciar minha jornada` e `Explorar sem personalização`, apresenta caminhos institucionais claros e organiza o ecossistema por finalidade.
-
-O arquivo vetorial para computador é um wireframe de baixa fidelidade e não representa responsividade final, identidade visual ou implementação.
-
-## Início protegido da jornada
-
-A validação funcional confirmou explicação anterior à autenticação e à coleta, ausência de gravação ou carga automática, separação entre conta e autorização, compartilhamento mínimo, modalidades alternativas, revisão antes do processamento material, estados e falhas visíveis, controles de pausa, retirada, correção e exclusão, proteção de informações sensíveis e compreensão inicial revisável.
-
-## Mapa de Oportunidades
-
-O Mapa é uma superfície própria da navegação recorrente, sincronizada com Explorar, e foi considerado funcionalmente válido após reformulação.
-
-A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa territorial, Mapa e Lista como uma descoberta única, filtros ativos, quantidade de resultados, `Pesquisar nesta área`, camadas, legenda, localização, privacidade, cartão resumido, relação comercial e rota contextual.
-
-## Estado sem localização
-
-A UXA-026 e a UXA-027 estabelecem que o Mapa continua disponível quando a localização do dispositivo está desativada.
+A UXA-028 e a UXA-029 estabelecem a Lista como representação textual integral da mesma consulta territorial do Mapa.
 
 O estado reformulado apresenta:
 
-- exploração geral sem personalização;
-- confirmação `Posição não acessada`;
-- cidade ou região informada manualmente e distinta da posição pessoal;
-- pesquisa e filtros preservados;
-- Mapa e Lista sincronizados;
-- área territorial sem marcador ou posição presumida;
-- resultados explicados por região e busca explícita;
-- distância pessoal omitida sem origem válida;
-- salvamento sem localização;
-- definição manual de origem para rota;
-- ativação opcional de localização aproximada;
-- continuidade para o Detalhe.
-
-## Visualização em Lista do Mapa
-
-A UXA-028 materializa a Lista como modo interno da mesma consulta territorial do Mapa.
-
-O estado apresenta:
-
-- item `Mapa` preservado na navegação recorrente;
-- alternância `Mapa ↔ Lista`;
-- posição não acessada e região manual;
-- pesquisa, filtros, quantidade e ordenação preservados;
-- cartões comparáveis;
-- oportunidade selecionada;
-- explicação de origem e relação comercial;
-- salvamento, definição de origem e Detalhe;
+- `LISTA TERRITORIAL DO MAPA · MESMA CONSULTA`;
+- `Agindo como: Pessoa`;
+- localização opcional e região manual;
+- busca, filtros e quantidade preservados;
+- total consolidado de filtros;
+- atualização e ordenação explicáveis;
+- cartões comparáveis com dados ausentes declarados;
+- item selecionado preservado;
+- explicação funcional e relação comercial separadas;
+- salvamento, origem e Detalhe sem localização;
 - retorno ao Mapa sem perda de contexto;
-- alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.
+- funcionamento integral sem mapa carregado.
 
-A Lista não duplica `Explorar` e sua validação funcional especializada permanece pendente.
+Arquivo:
 
-## Sequência global
+`assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
 
-1. Guivos Journey concluído funcionalmente e publicado.
-2. Modelo Econômico documentado inicialmente.
-3. Remediação, validação externa, Matriz de Avaliação e 18 decisões humanas concluídas.
-4. Home pública, início protegido e Tela Hoje separados.
-5. Home pública validada e reformulada.
-6. Wireframe gráfico da Home para computador criado.
-7. Início protegido da jornada validado e reformulado.
-8. Posição do Mapa na navegação recorrente consolidada.
-9. Wireframe móvel do Mapa de Oportunidades criado.
-10. Mapa de Oportunidades funcionalmente validado e reformulado.
-11. Estado do Mapa com localização desativada criado.
-12. Estado sem localização funcionalmente validado e reformulado.
-13. Visualização em Lista do Mapa criada.
-14. Próximo ato dependente de nova autorização.
-15. Reaplicação dos quatro testes dependente de autorização independente.
-
-## Decisão COD-018
-
-BUS-CAND-010 permanece fundido em BUS-CAND-005. A fusão preserva financiamento interno e externo como alternativas, exige adicionalidade e riscos explícitos, mantém o alvo em validação e não cria Resultado canônico.
-
-## Validação de Mercado
-
-A trilha operacional permanece independente e poderá produzir formulário, planilha de tratamento, indicadores, Índice Geral de Validação, gates e registro de decisão. Esses entregáveis produzem evidência, mas não substituem autoridades arquiteturais.
+A validação é arquitetural e não equivale a teste com usuários, design, algoritmo ou conformidade técnica de acessibilidade.
 
 ## Acesso rápido
 
@@ -136,12 +69,9 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico do Wireframe do Mapa](project/canonical-consolidation-matrix-uxa-024-addendum.md)
-- [Adendo Canônico da Validação do Mapa](project/canonical-consolidation-matrix-uxa-025-addendum.md)
-- [Adendo Canônico do Estado sem Localização](project/canonical-consolidation-matrix-uxa-026-addendum.md)
-- [Adendo Canônico da Validação do Estado sem Localização](project/canonical-consolidation-matrix-uxa-027-addendum.md)
-- [Adendo Canônico da Visualização em Lista](project/canonical-consolidation-matrix-uxa-028-addendum.md)
-- [Histórico de Alterações 1.51.0](project/changelog-1.51.0-uxa-028.md)
+- [Adendo Canônico da Lista](project/canonical-consolidation-matrix-uxa-028-addendum.md)
+- [Adendo Canônico da Validação da Lista](project/canonical-consolidation-matrix-uxa-029-addendum.md)
+- [Histórico 1.52.0](project/changelog-1.52.0-uxa-029.md)
 
 ### Arquiteturas e modelos
 
@@ -150,14 +80,15 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Guivos Economic Model](economic-model/index.md)
 - [Guivos Business Architecture](business-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [Página Inicial da Guivos e Início da Jornada](experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Wireframe da Página Inicial Pública](experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
+- [Página Inicial e Início](experience-architecture/uxa-020-home-and-journey-entry.md)
+- [Wireframe da Home](experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
 - [Validação do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
-- [Wireframe do Mapa de Oportunidades](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
-- [Validação Funcional do Mapa](experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
-- [Mapa com Localização Desativada](experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
-- [Validação do Estado sem Localização](experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
-- [Visualização em Lista do Mapa](experience-architecture/uxa-028-opportunity-map-list-state.md)
+- [Wireframe do Mapa](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
+- [Validação do Mapa](experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
+- [Mapa sem Localização](experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
+- [Validação sem Localização](experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
+- [Lista do Mapa](experience-architecture/uxa-028-opportunity-map-list-state.md)
+- [Validação da Lista](experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md)
 
 ### Resultados Empresariais
 
@@ -165,8 +96,11 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Candidate Outcome Register](business-architecture/strategy/candidate-outcome-register.md)
 - [Candidate Outcome Evaluation Matrix](business-architecture/strategy/candidate-outcome-evaluation-matrix.md)
 - [Candidate Outcome Decision Register](business-architecture/strategy/candidate-outcome-decision-register.md)
-- [Resolução COD-018](business-architecture/strategy/candidate-outcome-decision-submission-bus-cand-010.md)
+
+## Próximos atos
+
+Após nova autorização, poderão ocorrer separadamente: estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 
-As autoridades normativas de cada domínio definem o conteúdo arquitetural. O Registro do Estado Atual define o estado transversal vigente. Esta página é uma entrada de navegação e não cria decisões ou autorizações próprias.
+As autoridades normativas de cada domínio definem o conteúdo arquitetural. O Registro do Estado Atual define o estado transversal vigente. Esta página não cria decisões ou autorizações próprias.

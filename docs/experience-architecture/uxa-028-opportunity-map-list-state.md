@@ -1,8 +1,8 @@
 ---
 id: UXA-028
 title: Wireframe Alternativo do Mapa de Oportunidades — Visualização em Lista
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-024
@@ -20,6 +20,7 @@ related:
   - UXA-012
   - UXA-020
   - UXA-023
+  - UXA-029
 normative: false
 ---
 
@@ -29,7 +30,9 @@ normative: false
 
 Este documento materializa a visualização em Lista da mesma descoberta territorial governada pelo Mapa de Oportunidades.
 
-A Lista não é uma superfície inferior, uma mensagem de erro ou uma duplicação de `Explorar`. Ela é uma representação textual integral da consulta territorial ativa e deverá preservar o contexto ao alternar entre Mapa e Lista.
+A versão 0.2.0 incorpora a reformulação governada pela **UXA-029 — Validação Funcional Especializada e Reformulação da Visualização em Lista do Mapa**.
+
+A Lista não é uma superfície inferior, uma mensagem de erro ou uma duplicação de `Explorar`. Ela é uma representação textual integral da consulta territorial ativa e preserva o contexto ao alternar entre Mapa e Lista.
 
 O wireframe demonstra o estado com localização desativada, posição não acessada e região escolhida manualmente. A Lista também poderá operar quando houver localização aproximada ou exata temporária autorizada, respeitando os controles aplicáveis.
 
@@ -64,7 +67,13 @@ A Lista poderá ser escolhida pela pessoa ou apresentada como continuidade quand
 
 `Explorar` organiza descoberta ampla por busca, categorias, temas, listas editoriais e filtros gerais.
 
-A Lista do Mapa representa a mesma consulta territorial já aberta na superfície `Mapa` e preserva:
+A Lista do Mapa representa a mesma consulta territorial já aberta na superfície `Mapa`.
+
+O wireframe reformulado declara:
+
+> **LISTA TERRITORIAL DO MAPA · MESMA CONSULTA**
+
+A Lista preserva:
 
 - região ou área territorial ativa;
 - busca;
@@ -76,11 +85,11 @@ A Lista do Mapa representa a mesma consulta territorial já aberta na superfíci
 - condições conhecidas;
 - retorno ao Mapa.
 
-Mudar para a Lista não deverá transportar a pessoa silenciosamente para `Explorar` nem reiniciar a consulta.
+Mudar para a Lista não transporta a pessoa silenciosamente para `Explorar` nem reinicia a consulta.
 
-## 4. Artefato visual
+## 4. Artefato visual reformulado
 
-![Wireframe alternativo do Mapa de Oportunidades em visualização de Lista](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg)
+![Wireframe reformulado do Mapa de Oportunidades em visualização de Lista](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg)
 
 Arquivo vetorial:
 
@@ -92,61 +101,93 @@ Dimensão de referência:
 - largura: 390 pixels;
 - altura: 844 pixels;
 - modo: Lista selecionada dentro da superfície Mapa;
-- condição ilustrada: localização desativada, posição não acessada e região manual.
+- condição ilustrada: localização desativada, posição não acessada e região manual;
+- resultado: funcionalmente válido após reformulação registrada em UXA-029.
 
-## 5. Hierarquia funcional
+## 5. Hierarquia funcional validada
 
 ```text
-nome da superfície e contexto de exploração
+nome da superfície
+→ declaração de Lista territorial do Mapa
+→ contexto Agindo como
 → estado territorial e privacidade
 → região ativa e editável
-→ pesquisa
+→ pesquisa territorial
 → alternância Mapa ou Lista
-→ filtros ativos
-→ quantidade de resultados
-→ ordenação explícita
+→ total e identificação dos filtros ativos
+→ quantidade e atualização dos resultados
+→ ordenação explícita e explicável
 → cartões comparáveis
 → oportunidade selecionada preservada
 → explicação, relação comercial, salvamento e detalhe
 → retorno ao Mapa sem perda de contexto
+→ Lista integral sem dependência do mapa carregado
 → navegação recorrente
 ```
 
-A Lista deverá priorizar compreensão, comparação e continuidade, sem esconder por que os resultados aparecem.
+A Lista prioriza compreensão, comparação e continuidade, sem esconder por que os resultados aparecem.
 
-## 6. Contexto territorial
+## 6. Contexto Agindo como
 
-Quando a localização estiver desativada, a Lista deverá preservar as declarações:
+O contexto consolidado deverá permanecer visível:
+
+> **Agindo como: Pessoa**
+
+Quando outros contextos forem permitidos, a pessoa deverá poder revisar e alterar a atuação de forma consciente.
+
+Trocar o modo Mapa ou Lista não altera o contexto de atuação.
+
+## 7. Contexto territorial
+
+Quando a localização estiver desativada, a Lista preservará as declarações:
 
 > **Localização desativada · posição não acessada**
 
-> **Região informada manualmente · não é sua posição**
+> **Região manual · não é sua posição**
 
-A região deverá permanecer visível e editável antes dos resultados.
+A região permanecerá visível e editável antes dos resultados.
 
-Quando localização estiver autorizada, a interface deverá indicar precisão, finalidade e duração aplicáveis, sem tornar rastreamento contínuo requisito da Lista.
+Quando localização estiver autorizada, a interface indicará precisão, finalidade e duração aplicáveis, sem tornar rastreamento contínuo requisito da Lista.
 
-## 7. Pesquisa, filtros e atualização
+## 8. Pesquisa, filtros e atualização
 
-A Lista deverá preservar a mesma busca e os mesmos filtros compatíveis do Mapa.
+A Lista preserva a mesma busca e os mesmos filtros compatíveis do Mapa.
 
-Ela deverá mostrar:
+O campo de pesquisa reformulado declara:
+
+> **Buscar nesta região**
+
+A superfície mostra:
 
 - termos pesquisados;
-- filtros ativos identificáveis sem depender somente de cor;
+- total consolidado de filtros ativos;
+- filtros identificáveis sem depender somente de cor;
 - quantidade de filtros adicionais;
 - ação para limpar filtros;
 - quantidade de resultados;
 - região à qual os resultados correspondem;
-- ação para atualizar resultados quando a consulta territorial mudar.
+- momento da última atualização;
+- ação para atualizar resultados.
 
-A troca de modo não poderá apagar silenciosamente busca, filtros ou região.
+O exemplo declara:
 
-## 8. Quantidade e ordenação
+> **4 filtros ativos**
 
-A quantidade de resultados deverá permanecer consistente entre Mapa e Lista para a mesma consulta e momento de atualização.
+A troca de modo não apaga silenciosamente busca, filtros ou região.
 
-A ordenação deverá ser explícita e revisável. Poderá considerar:
+## 9. Quantidade e ordenação
+
+A quantidade de resultados permanece consistente entre Mapa e Lista para a mesma consulta e momento de atualização.
+
+A ordenação é explícita, revisável e acompanhada de ação explicativa:
+
+> **Ordenado por: correspondência à busca e aos filtros**
+
+> **Entender**
+
+A explicação deverá informar os critérios aplicados e as limitações conhecidas.
+
+A ordenação poderá considerar:
 
 - correspondência com busca e filtros;
 - data ou prazo;
@@ -159,11 +200,11 @@ A ordenação deverá ser explícita e revisável. Poderá considerar:
 
 Sem gate de personalização, a ordenação não poderá ser apresentada como `melhor para você`, `ideal para seu momento` ou equivalente.
 
-Patrocínio não poderá elevar relevância funcional de forma oculta. Relação comercial deverá ser informada separadamente.
+Patrocínio não poderá elevar relevância funcional de forma oculta. Relação comercial será informada separadamente.
 
-## 9. Cartões comparáveis
+## 10. Cartões comparáveis
 
-Cada cartão deverá apresentar informações suficientes para comparação antes do detalhe:
+Cada cartão apresenta uma estrutura mínima consistente:
 
 - tipo de oportunidade;
 - modalidade;
@@ -178,25 +219,35 @@ Cada cartão deverá apresentar informações suficientes para comparação ante
 - relação comercial;
 - ações disponíveis.
 
-A ausência de uma informação deverá ser indicada como não informada, não confirmada ou indisponível, sem completar dados por inferência.
+A ausência de informação é declarada como `não informada`, `não confirmada` ou `indisponível`, sem completar dados por inferência.
 
-## 10. Oportunidade selecionada
+O wireframe reformulado demonstra:
 
-A oportunidade selecionada no Mapa deverá permanecer identificada ao abrir a Lista.
+- `Acessibilidade: confirmada`;
+- `Acessibilidade: parcial`;
+- `Acessibilidade: não informada`.
+
+## 11. Oportunidade selecionada
+
+A oportunidade selecionada no Mapa permanece identificada ao abrir a Lista.
+
+O wireframe reformulado declara:
+
+> **Selecionada · preservada do Mapa**
 
 A seleção poderá ser demonstrada por:
 
 - borda estrutural;
-- rótulo textual `Selecionada`;
+- rótulo textual;
 - posição inicial na Lista, quando compatível com a ordenação;
 - foco acessível;
 - retorno ao mesmo cartão após fechar o Detalhe.
 
 A seleção não altera relevância, não implica recomendação e não modifica a ordenação sem regra explícita.
 
-## 11. Explicação e relação comercial
+## 12. Explicação e relação comercial
 
-Cada oportunidade deverá oferecer `Por que está aqui?` ou explicação equivalente.
+Cada oportunidade oferece `Por que está aqui?` ou explicação equivalente.
 
 A explicação poderá incluir:
 
@@ -206,20 +257,21 @@ A explicação poderá incluir:
 - categoria ou modalidade;
 - data e disponibilidade;
 - origem editorial, institucional ou organizacional;
-- critério de ordenação;
-- relação comercial identificada.
+- critério de ordenação.
 
-Ela não deverá simular conhecimento do Momento Atual quando o gate não estiver atendido.
+Ela não simula conhecimento do Momento Atual quando o gate não estiver atendido.
 
-Relação comercial deverá ser apresentada de forma separada, com exemplos como:
+A relação comercial é apresentada em campo separado, com exemplos:
 
-- `Sem patrocínio`;
-- `Parceria identificada`;
-- `Conteúdo patrocinado`, quando aplicável.
+- `Relação comercial: sem patrocínio`;
+- `Relação comercial: parceria identificada`;
+- `Relação comercial: conteúdo patrocinado`.
 
-## 12. Salvamento e Detalhe
+A presença de relação comercial não modifica silenciosamente a posição do cartão.
 
-Salvar deverá permanecer disponível na Lista independentemente de localização.
+## 13. Salvamento e Detalhe
+
+Salvar permanece disponível na Lista independentemente de localização.
 
 O salvamento não autoriza:
 
@@ -229,7 +281,7 @@ O salvamento não autoriza:
 - criar histórico territorial;
 - contornar preferências de privacidade.
 
-`Ver detalhes` deverá abrir o Detalhe de Oportunidade preservando:
+`Ver detalhes` abre o Detalhe de Oportunidade preservando:
 
 - origem da navegação;
 - região ativa;
@@ -239,19 +291,19 @@ O salvamento não autoriza:
 - item selecionado;
 - condições conhecidas.
 
-Ao retornar, a pessoa deverá reencontrar o mesmo contexto.
+Ao retornar, a pessoa reencontra o mesmo contexto.
 
-## 13. Origem para rota
+## 14. Origem para rota
 
 Quando a localização estiver desativada, a Lista poderá apresentar `Definir origem`.
 
-A ação deverá solicitar origem específica e não poderá iniciar rastreamento contínuo, criar histórico territorial ou presumir residência.
+A ação solicita origem específica e não inicia rastreamento contínuo, histórico territorial ou presunção de residência.
 
-Endereços protegidos permanecerão limitados à área permitida ou à condição de liberação aplicável.
+Endereços protegidos permanecem limitados à área permitida ou à condição de liberação aplicável.
 
-## 14. Retorno ao Mapa
+## 15. Retorno ao Mapa
 
-Ao retornar ao Mapa, deverão permanecer:
+Ao retornar ao Mapa, permanecem:
 
 - região ou área territorial;
 - busca;
@@ -262,9 +314,9 @@ Ao retornar ao Mapa, deverão permanecer:
 - posição ou foco correspondente, quando possível;
 - explicação da origem dos resultados.
 
-A troca não deverá executar nova personalização, alterar consentimento ou redefinir localização.
+A troca não executa nova personalização, não altera consentimento e não redefine localização.
 
-## 15. Acessibilidade e resiliência
+## 16. Acessibilidade e resiliência
 
 A Lista constitui alternativa integral para:
 
@@ -276,11 +328,15 @@ A Lista constitui alternativa integral para:
 - falha de carregamento do mapa;
 - dispositivos com desempenho limitado.
 
-A Lista não poderá depender de mapa carregado para apresentar oportunidades já disponíveis na consulta.
+O wireframe reformulado declara:
 
-Estados de carregamento, atualização, ausência de resultados e erro de fonte deverão ser textuais e recuperáveis.
+> **Lista integral · funciona sem carregar o mapa**
 
-## 16. Privacidade e autonomia
+A Lista não depende de mapa carregado para apresentar oportunidades já disponíveis na consulta.
+
+Estados de carregamento, atualização, ausência de resultados e erro de fonte serão textuais e recuperáveis.
+
+## 17. Privacidade e autonomia
 
 A Lista preserva:
 
@@ -295,22 +351,27 @@ A Lista preserva:
 - proteção de endereços sensíveis;
 - separação entre proximidade, relevância e publicidade.
 
-## 17. Critérios de validação posterior
+## 18. Resultado da validação
 
-A validação funcional especializada deverá verificar:
+A validação funcional especializada está registrada em UXA-029.
 
-- se a pessoa entende que Lista e Mapa representam a mesma consulta;
-- se a diferença entre Lista do Mapa e `Explorar` é clara;
-- se região, busca e filtros permanecem intactos;
-- se quantidade e ordenação são compreensíveis;
-- se o item selecionado é reencontrado;
-- se os cartões permitem comparação suficiente;
-- se relevância e relação comercial estão separadas;
-- se salvar e abrir detalhes não exigem localização;
-- se retornar ao Mapa preserva o contexto;
-- se a Lista funciona como alternativa integral em acessibilidade e falhas cartográficas.
+A visualização em Lista é considerada **funcionalmente válida após reformulação** porque:
 
-## 18. Limites
+- identifica que pertence ao Mapa e representa a mesma consulta;
+- distingue-se visualmente de `Explorar`;
+- preserva contexto `Agindo como`;
+- mantém região, busca, filtros, quantidade e seleção;
+- explicita o total de filtros ativos;
+- torna atualização e ordenação compreensíveis;
+- padroniza campos comparáveis;
+- declara dados ausentes sem inferência;
+- separa explicação funcional de relação comercial;
+- mantém salvamento e Detalhe sem localização;
+- retorna ao Mapa sem perda de contexto;
+- funciona sem dependência do mapa carregado;
+- não inicia design ou implementação.
+
+## 19. Limites
 
 Este incremento não:
 
@@ -325,17 +386,16 @@ Este incremento não:
 - inicia design visual;
 - inicia Engenharia de Produto.
 
-## 19. Próximos atos governados
+## 20. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente a visualização em Lista;
-2. criar o estado sem resultados;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido da jornada;
-5. criar a referência móvel da Página Inicial pública;
-6. validar a revisão da compreensão inicial;
-7. validar a transição para a primeira Tela Hoje;
-8. retomar independentemente os testes dos Resultados Empresariais.
+1. criar o estado sem resultados;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido da jornada;
+4. criar a referência móvel da Página Inicial pública;
+5. validar a revisão da compreensão inicial;
+6. validar a transição para a primeira Tela Hoje;
+7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
