@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.27 — Estado do Mapa sem Localização Criado |
+| Marco | M7.28 — Estado do Mapa sem Localização Validado e Reformulado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; fase de decisões humanas concluída |
 | Guivos Journey | publicado em PAS-001 1.0.0; nove capacidades concluídas |
@@ -22,7 +22,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
-| Estado de localização desativada | wireframe móvel criado; validação especializada pendente |
+| Estado de localização desativada | funcionalmente validado e reformulado |
 | Demais estados alternativos do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -64,18 +64,22 @@ A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa territorial, 
 
 ## Estado sem localização
 
-A UXA-026 demonstra que o Mapa continua disponível quando a localização do dispositivo está desativada.
+A UXA-026 e a UXA-027 estabelecem que o Mapa continua disponível quando a localização do dispositivo está desativada.
 
-O estado apresenta:
+O estado reformulado apresenta:
 
 - exploração geral sem personalização;
-- cidade ou região informada manualmente;
+- confirmação `Posição não acessada`;
+- cidade ou região informada manualmente e distinta da posição pessoal;
 - pesquisa e filtros preservados;
 - Mapa e Lista sincronizados;
-- área territorial sem marcador da pessoa;
+- área territorial sem marcador ou posição presumida;
 - resultados explicados por região e busca explícita;
+- distância pessoal omitida sem origem válida;
+- salvamento sem localização;
+- definição manual de origem para rota;
 - ativação opcional de localização aproximada;
-- origem manual para rota quando aplicável.
+- continuidade para o Detalhe.
 
 O mapa desenhado é esquemático e não representa geografia, endereço ou coordenada real.
 
@@ -92,8 +96,9 @@ O mapa desenhado é esquemático e não representa geografia, endereço ou coord
 9. Wireframe móvel do Mapa de Oportunidades criado.
 10. Mapa de Oportunidades funcionalmente validado e reformulado.
 11. Estado do Mapa com localização desativada criado.
-12. Próximo ato dependente de nova autorização.
-13. Reaplicação dos quatro testes dependente de autorização independente.
+12. Estado sem localização funcionalmente validado e reformulado.
+13. Próximo ato dependente de nova autorização.
+14. Reaplicação dos quatro testes dependente de autorização independente.
 
 ## Decisão COD-018
 
@@ -115,7 +120,8 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Adendo Canônico do Wireframe do Mapa](project/canonical-consolidation-matrix-uxa-024-addendum.md)
 - [Adendo Canônico da Validação do Mapa](project/canonical-consolidation-matrix-uxa-025-addendum.md)
 - [Adendo Canônico do Estado sem Localização](project/canonical-consolidation-matrix-uxa-026-addendum.md)
-- [Histórico de Alterações 1.49.0](project/changelog-1.49.0-uxa-026.md)
+- [Adendo Canônico da Validação do Estado sem Localização](project/canonical-consolidation-matrix-uxa-027-addendum.md)
+- [Histórico de Alterações 1.50.0](project/changelog-1.50.0-uxa-027.md)
 
 ### Arquiteturas e modelos
 
@@ -130,6 +136,7 @@ A trilha operacional permanece independente e poderá produzir formulário, plan
 - [Wireframe do Mapa de Oportunidades](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Validação Funcional do Mapa](experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
 - [Mapa com Localização Desativada](experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
+- [Validação do Estado sem Localização](experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
 
 ### Resultados Empresariais
 
