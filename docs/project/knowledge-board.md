@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.4.0
+version: 12.5.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.4.0
+  - ROADMAP-12.5.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -26,7 +26,8 @@ related:
   - UXA-027
   - UXA-028
   - UXA-029
-  - M7.30
+  - UXA-030
+  - M7.31
 normative: false
 ---
 
@@ -41,7 +42,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | visualização em Lista do Mapa funcionalmente validada e reformulada | M7.30; UXA-028; UXA-029 |
+| Marco | estado móvel do Mapa sem resultados criado | M7.31; UXA-030 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -53,6 +54,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
+| Estado sem resultados | wireframe móvel criado; validação especializada pendente | UXA-030 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Personalização | bloqueada antes de contexto revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
@@ -74,7 +76,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - início protegido validado;
 - Mapa principal validado e reformulado;
 - estado sem localização validado e reformulado;
-- visualização em Lista criada, validada e reformulada.
+- visualização em Lista criada, validada e reformulada;
+- wireframe do estado sem resultados criado.
 
 ### Em validação
 
@@ -86,7 +89,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- estado sem resultados;
+- validação funcional do estado sem resultados;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido;
 - referência móvel da Home;
@@ -140,7 +143,24 @@ A UXA-028 e a UXA-029 demonstram:
 
 A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.
 
-## 6. Proteções preservadas
+## 6. Estado sem resultados criado
+
+A UXA-030 demonstra:
+
+- consulta territorial preservada;
+- zero limitado à região, busca e filtros atuais;
+- confirmação de consulta concluída sem falha conhecida;
+- ações independentes para ampliar região, alterar período, revisar filtros e editar busca;
+- reversão da última alteração quando aplicável;
+- distinção entre ausência, falha de fonte e indisponibilidade temporária;
+- continuidade entre Mapa e Lista;
+- localização opcional;
+- ausência de preenchimento comercial ou personalizado artificial;
+- operação textual sem mapa carregado.
+
+A validação funcional especializada permanece não iniciada.
+
+## 7. Proteções preservadas
 
 - a Home não coleta relato pessoal;
 - iniciar a jornada é voluntário;
@@ -154,9 +174,11 @@ A validação é arquitetural e não equivale a teste com usuários ou conformid
 - salvamento não autoriza rastreamento;
 - origem manual não autoriza histórico territorial;
 - residências e locais sensíveis permanecem protegidos;
+- zero legítimo não é confundido com erro técnico;
+- consulta não é alterada silenciosamente;
 - wireframes e validações não equivalem a design ou implementação.
 
-## 7. Distribuição dos candidatos
+## 8. Distribuição dos candidatos
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -165,6 +187,6 @@ A validação é arquitetural e não equivale a teste com usuários ou conformid
 | Rejeitados | 6 | retirados do catálogo futuro |
 | Aprovados | 0 | nenhuma aprovação ocorreu |
 
-## 8. Próximo movimento
+## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
