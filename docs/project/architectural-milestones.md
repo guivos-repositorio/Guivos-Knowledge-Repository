@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.5.0
+version: 5.6.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.7.0
+  - ROADMAP-12.8.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -28,6 +28,7 @@ related:
   - UXA-030
   - UXA-031
   - UXA-032
+  - UXA-033
   - M7.20
   - M7.21
   - M7.22
@@ -42,6 +43,7 @@ related:
   - M7.31
   - M7.32
   - M7.33
+  - M7.34
 normative: false
 ---
 
@@ -64,66 +66,69 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência e experiências institucionais e coletivas |
 | M7.21 | Concluído | Home pública, início protegido e Tela Hoje separados |
 | M7.22 | Concluído | Home pública validada e reformulada |
-| M7.23 | Concluído | wireframe gráfico da Home para computador criado |
-| M7.24 | Concluído | início protegido da jornada validado e reformulado |
+| M7.23 | Concluído | wireframe da Home para computador criado |
+| M7.24 | Concluído | início protegido validado e reformulado |
 | M7.25 | Concluído | wireframe móvel do Mapa criado |
 | M7.26 | Concluído | Mapa funcionalmente validado e reformulado |
-| M7.27 | Concluído | estado alternativo sem localização criado |
+| M7.27 | Concluído | estado sem localização criado |
 | M7.28 | Concluído | estado sem localização validado e reformulado |
-| M7.29 | Concluído | visualização em Lista do Mapa criada |
-| M7.30 | Concluído | visualização em Lista funcionalmente validada e reformulada |
-| M7.31 | Concluído | estado móvel do Mapa sem resultados criado |
-| M7.32 | Concluído | estado sem resultados funcionalmente validado e reformulado |
-| M7.33 | Concluído neste incremento | referência do Mapa de Oportunidades para computador criada |
+| M7.29 | Concluído | visualização em Lista criada |
+| M7.30 | Concluído | visualização em Lista validada e reformulada |
+| M7.31 | Concluído | estado sem resultados criado |
+| M7.32 | Concluído | estado sem resultados validado e reformulado |
+| M7.33 | Concluído | referência do Mapa para computador criada |
+| M7.34 | Concluído neste incremento | referência do Mapa para computador funcionalmente validada e reformulada |
 
 ## 3. Marco vigente
 
-### Referência do Mapa de Oportunidades para Computador Criada — M7.33
+### Referência do Mapa para Computador Funcionalmente Validada e Reformulada — M7.34
 
 Critérios atendidos:
 
-- referência registrada em UXA-032;
-- dois arquivos vetoriais criados em 1.440 por 1.024 pixels;
-- estado com resultados materializado;
-- estado sem resultados materializado;
-- item `Mapa` preservado na navegação recorrente;
-- contexto `Agindo como` visível;
-- exploração geral sem personalização demonstrada;
-- localização desativada e posição não acessada no exemplo;
-- região manual distinta da posição pessoal;
-- pesquisa, filtros e atualização preservados;
-- painel de filtros, campo territorial e Lista integrados;
-- Mapa e Lista tratados como a mesma consulta;
-- quantidade, ordenação e seleção sincronizadas;
-- oportunidade selecionada reconhecível no Mapa e na Lista;
-- explicabilidade e relação comercial separadas;
-- continuidade para o Detalhe preservada;
-- estado zero com cobertura verificável e recuperação explícita;
-- operação textual preservada sem mapa carregado;
-- validação funcional especializada preservada como ato posterior;
+- validação registrada em UXA-033;
+- UXA-032 elevada para 0.2.0 e estado ativo;
+- faixa compartilhada da consulta territorial;
+- filtros resumidos e detalhados semanticamente consistentes;
+- visão dividida declarada como padrão;
+- foco no Mapa ou na Lista com contexto preservado;
+- retorno à visão dividida;
+- movimento do Mapa sem atualização silenciosa;
+- `Pesquisar nesta área` condicionado a movimento pendente;
+- seleção `Marcador 1` vinculada no Mapa, cartão e painel;
+- cartões secundários comparáveis e explicáveis;
+- relação comercial explicitamente rotulada;
+- painel contextual recolhível;
+- recuperação do total zero concentrada no painel de consulta;
+- seleção anterior explicável sem alterar o total zero;
+- localização opcional e região manual preservadas;
+- Lista integral sem mapa carregado;
 - responsividade, tablet, tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
-### Estado do Mapa sem Resultados Validado e Reformulado — M7.32
+### Referência do Mapa para Computador Criada — M7.33
+
+A UXA-032 permanece como a materialização dos dois estados em 1.440 por 1.024 pixels.
+
+### Estado sem Resultados Validado — M7.32
 
 A UXA-030 e a UXA-031 permanecem como contrato do zero legítimo, cobertura verificável e recuperação consciente.
 
-### Visualização em Lista do Mapa Validada e Reformulada — M7.30
+### Lista do Mapa Validada — M7.30
 
 A UXA-028 e a UXA-029 permanecem como contrato da representação textual integral da consulta territorial.
 
-### Estado do Mapa sem Localização Validado e Reformulado — M7.28
+### Estado sem Localização Validado — M7.28
 
 A UXA-026 e a UXA-027 permanecem como contrato do uso sem localização.
 
-### Mapa de Oportunidades Validado e Reformulado — M7.26
+### Mapa de Oportunidades Validado — M7.26
 
-O Mapa principal permanece funcionalmente validado, com Mapa e Lista sincronizados, filtros, resultados, privacidade e rota contextual.
+O Mapa principal permanece funcionalmente validado, com filtros, resultados, privacidade e rota contextual.
 
-### Início Protegido da Jornada Validado — M7.24
+### Início Protegido Validado — M7.24
 
 O início protegido permanece funcionalmente validado, com coleta consciente, revisão e personalização bloqueada antes do gate.
 
@@ -133,7 +138,7 @@ A Home explica concretamente a Guivos, oferece exploração sem personalização
 
 ### Décima Oitava Decisão Humana — M7.20
 
-COD-018 permanece integrado, com nenhum Resultado aprovado ou canonicalizado.
+COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 
 ## 5. Estado das revisões arquiteturais
 
@@ -142,7 +147,7 @@ COD-018 permanece integrado, com nenhum Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; referência desktop do Mapa criada; validação posterior aguardando autorização |
+| Arquitetura da Experiência | ativa; referência desktop do Mapa validada e reformulada |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -154,12 +159,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente a referência do Mapa para computador;
-2. criar o wireframe do início protegido;
-3. criar a referência móvel da Home;
-4. validar a revisão da compreensão inicial;
-5. validar a transição para a primeira Tela Hoje;
-6. criar outros estados alternativos do Mapa.
+1. criar o wireframe do início protegido;
+2. criar a referência móvel da Home;
+3. validar a revisão da compreensão inicial;
+4. validar a transição para a primeira Tela Hoje;
+5. criar outros estados alternativos do Mapa;
+6. criar referência específica para tablet, caso priorizada.
 
 ### Arquitetura de Negócios
 
