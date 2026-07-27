@@ -4019,7 +4019,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-029 — Validação da Lista do Mapa
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6501,10 +6536,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-elementos-materializados" class="md-nav__link">
+  <a href="#3-elementos-materializados-apos-reformulacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Elementos materializados
+        3. Elementos materializados após reformulação
       
     </span>
   </a>
@@ -6512,10 +6547,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-protecoes-preservadas" class="md-nav__link">
+  <a href="#4-resultado-da-validacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Proteções preservadas
+        4. Resultado da validação
       
     </span>
   </a>
@@ -6523,10 +6558,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-limites" class="md-nav__link">
+  <a href="#5-protecoes-preservadas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Limites
+        5. Proteções preservadas
       
     </span>
   </a>
@@ -6534,10 +6569,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-marco" class="md-nav__link">
+  <a href="#6-limites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Marco
+        6. Limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-marcos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Marcos
       
     </span>
   </a>
@@ -6572,6 +6618,7 @@
 <h1 id="adendo-a-matriz-de-consolidacao-canonica-visualizacao-em-lista-do-mapa">Adendo à Matriz de Consolidação Canônica — Visualização em Lista do Mapa<a class="headerlink" href="#adendo-a-matriz-de-consolidacao-canonica-visualizacao-em-lista-do-mapa" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este adendo registra a consolidação canônica do primeiro wireframe alternativo da visualização em Lista dentro do Mapa de Oportunidades.</p>
+<p>A versão 0.2.0 reconcilia o artefato com a validação funcional e a reformulação registradas em UXA-029. As decisões especializadas posteriores prevalecem em caso de conflito.</p>
 <h2 id="2-decisao-consolidada">2. Decisão consolidada<a class="headerlink" href="#2-decisao-consolidada" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -6591,11 +6638,11 @@
 </tr>
 <tr>
 <td>Relação com Explorar</td>
-<td>não duplica nem substitui <code>Explorar</code>; preserva consulta territorial ativa</td>
+<td>não duplica nem substitui <code>Explorar</code>; declara sua natureza territorial</td>
 </tr>
 <tr>
 <td>Contexto</td>
-<td>região, busca, filtros, quantidade, ordenação e seleção devem permanecer</td>
+<td><code>Agindo como</code>, região, busca, filtros, quantidade, ordenação e seleção permanecem</td>
 </tr>
 <tr>
 <td>Localização desativada</td>
@@ -6606,12 +6653,16 @@
 <td>consistente entre Mapa e Lista para a mesma consulta e atualização</td>
 </tr>
 <tr>
+<td>Filtros</td>
+<td>total consolidado e filtros aplicados são revisáveis</td>
+</tr>
+<tr>
 <td>Ordenação</td>
-<td>explícita, revisável e não apresentada como personalização sem gate</td>
+<td>explícita, explicável, revisável e não apresentada como personalização sem gate</td>
 </tr>
 <tr>
 <td>Cartões</td>
-<td>comparáveis, com condições, origem e relação comercial</td>
+<td>comparáveis, com campos consistentes, incertezas, origem e relação comercial</td>
 </tr>
 <tr>
 <td>Seleção</td>
@@ -6619,7 +6670,7 @@
 </tr>
 <tr>
 <td>Explicabilidade</td>
-<td><code>Por que está aqui?</code> separa critérios funcionais de relação comercial</td>
+<td><code>Por que está aqui?</code> aparece em todos os cartões e separa critérios de comércio</td>
 </tr>
 <tr>
 <td>Salvamento</td>
@@ -6635,44 +6686,57 @@
 </tr>
 <tr>
 <td>Resiliência</td>
-<td>Lista é alternativa integral para acessibilidade, baixa conectividade e falha cartográfica</td>
+<td>Lista é alternativa integral e funciona sem mapa carregado</td>
 </tr>
 </tbody>
 </table>
-<h2 id="3-elementos-materializados">3. Elementos materializados<a class="headerlink" href="#3-elementos-materializados" title="Permanent link">&para;</a></h2>
+<h2 id="3-elementos-materializados-apos-reformulacao">3. Elementos materializados após reformulação<a class="headerlink" href="#3-elementos-materializados-apos-reformulacao" title="Permanent link">&para;</a></h2>
 <p>A UXA-028 demonstra:</p>
 <ul>
+<li><code>Mapa de Oportunidades</code>;</li>
+<li><code>LISTA TERRITORIAL DO MAPA · MESMA CONSULTA</code>;</li>
+<li><code>Agindo como: Pessoa</code>;</li>
 <li><code>Exploração geral · sem personalização</code>;</li>
 <li><code>Localização desativada · posição não acessada</code>;</li>
 <li>região informada manualmente;</li>
 <li>Lista selecionada dentro da superfície Mapa;</li>
-<li>pesquisa e filtros preservados;</li>
-<li>quantidade de resultados;</li>
-<li>ordenação explícita;</li>
+<li><code>Buscar nesta região</code>;</li>
+<li><code>4 filtros ativos</code>;</li>
+<li>quantidade e atualização dos resultados;</li>
+<li>ordenação acompanhada de explicação;</li>
 <li>cartões comparáveis;</li>
-<li>oportunidade selecionada;</li>
-<li>explicação de origem;</li>
-<li>relação comercial;</li>
+<li>dados ausentes declarados;</li>
+<li>oportunidade selecionada preservada;</li>
+<li>explicação de origem em todos os cartões;</li>
+<li>relação comercial separada;</li>
 <li>salvamento;</li>
 <li>definição de origem;</li>
 <li>abertura do Detalhe;</li>
-<li>retorno ao Mapa sem perda de contexto.</li>
+<li>retorno ao Mapa sem perda de contexto;</li>
+<li><code>Lista integral · funciona sem carregar o mapa</code>.</li>
 </ul>
-<h2 id="4-protecoes-preservadas">4. Proteções preservadas<a class="headerlink" href="#4-protecoes-preservadas" title="Permanent link">&para;</a></h2>
+<h2 id="4-resultado-da-validacao">4. Resultado da validação<a class="headerlink" href="#4-resultado-da-validacao" title="Permanent link">&para;</a></h2>
+<p>A UXA-029 considera a visualização em Lista <strong>funcionalmente válida após reformulação</strong>.</p>
+<p>O fechamento funcional não representa teste com usuários, conformidade técnica de acessibilidade, design ou implementação.</p>
+<h2 id="5-protecoes-preservadas">5. Proteções preservadas<a class="headerlink" href="#5-protecoes-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Lista não cria personalização sem gate;</li>
-<li>ordenação não pode ocultar patrocínio;</li>
+<li>contexto de atuação não muda silenciosamente;</li>
+<li>ordenação não oculta patrocínio;</li>
 <li>região manual não equivale a posição atual;</li>
+<li>dado ausente não é completado por inferência;</li>
 <li>salvamento não autoriza rastreamento;</li>
 <li>definir origem não autoriza histórico territorial;</li>
 <li>troca de modo não altera permissões;</li>
-<li>endereço protegido não pode ser contornado;</li>
-<li>dados ausentes não são completados por inferência.</li>
+<li>endereço protegido não pode ser contornado.</li>
 </ul>
-<h2 id="5-limites">5. Limites<a class="headerlink" href="#5-limites" title="Permanent link">&para;</a></h2>
-<p>Este adendo não valida a Lista com usuários reais, não define algoritmo de ordenação, tecnologia cartográfica, geocodificação, rotas, design visual, protótipo, acessibilidade técnica ou desenvolvimento.</p>
-<h2 id="6-marco">6. Marco<a class="headerlink" href="#6-marco" title="Permanent link">&para;</a></h2>
-<p>A integração deste incremento estabelece o marco <strong>M7.29 — Visualização em Lista do Mapa Criada</strong>.</p>
+<h2 id="6-limites">6. Limites<a class="headerlink" href="#6-limites" title="Permanent link">&para;</a></h2>
+<p>Este adendo não define algoritmo de ordenação, tecnologia cartográfica, geocodificação, rotas, design visual, protótipo, acessibilidade técnica, testes com usuários ou desenvolvimento.</p>
+<h2 id="7-marcos">7. Marcos<a class="headerlink" href="#7-marcos" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>M7.29 — Visualização em Lista do Mapa Criada</strong>: origem histórica do wireframe;</li>
+<li><strong>M7.30 — Visualização em Lista do Mapa Funcionalmente Validada e Reformulada</strong>: fechamento funcional governado pela UXA-029.</li>
+</ul>
 
 
 
