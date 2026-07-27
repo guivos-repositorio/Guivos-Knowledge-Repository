@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.32 — Estado do Mapa sem Resultados Validado e Reformulado |
+| Marco | M7.33 — Referência do Mapa de Oportunidades para Computador Criada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
@@ -20,6 +20,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Estado sem localização | funcionalmente validado e reformulado |
 | Lista do Mapa | funcionalmente validada e reformulada |
 | Estado sem resultados | funcionalmente validado e reformulado |
+| Referência do Mapa para computador | criada; validação funcional pendente |
 | Demais estados do Mapa | governados; wireframes não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -36,33 +37,34 @@ Página Inicial pública
 
 O Mapa não entra entre a Home e a Tela Hoje.
 
-## Estado sem resultados validado
+## Referência do Mapa para computador
 
-A UXA-030 e a UXA-031 estabelecem o estado para uma consulta territorial concluída sem correspondências.
+A UXA-032 materializa dois estados em 1.440 por 1.024 pixels:
 
-O estado reformulado apresenta:
+- Mapa com resultados;
+- Mapa sem resultados.
 
-- `0 resultados correspondem a esta consulta`;
-- `Consulta concluída · cobertura verificada · atualizada agora`;
-- ação `Ver cobertura`;
-- região, busca e filtros preservados;
-- total consolidado de filtros;
-- ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;
-- revisão antes de aplicar qualquer alteração;
-- última alteração identificada e `Desfazer` condicional;
-- seleção anterior fora da consulta atual;
-- distinção entre ausência legítima, falha de fonte, indisponibilidade e cobertura parcial;
-- continuidade entre Mapa e Lista;
-- localização opcional;
-- exploração geral sem alterar a consulta;
-- tratamento textual sem mapa carregado;
-- ausência de preenchimento patrocinado ou personalizado artificial.
+A referência apresenta:
 
-Arquivo:
+- `Mapa` selecionado na navegação recorrente;
+- contexto `Agindo como: Pessoa`;
+- localização desativada e posição não acessada;
+- região manual distinta da posição pessoal;
+- painel de filtros;
+- Mapa e Lista da mesma consulta lado a lado;
+- quantidade, atualização, ordenação e seleção sincronizadas;
+- oportunidade selecionada nos dois painéis;
+- explicabilidade e relação comercial separadas;
+- continuidade para o Detalhe;
+- cobertura verificável no estado zero;
+- Lista integral sem mapa carregado.
 
-`assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
+Arquivos:
 
-A validação é arquitetural e não equivale a teste com usuários, design, algoritmo ou conformidade técnica de acessibilidade.
+- `assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
+- `assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
+
+A referência ainda não foi funcionalmente validada e não equivale a responsividade, tablet, design, protótipo, teste ou implementação.
 
 ## Acesso rápido
 
@@ -73,9 +75,8 @@ A validação é arquitetural e não equivale a teste com usuários, design, alg
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico do Estado sem Resultados](project/canonical-consolidation-matrix-uxa-030-addendum.md)
-- [Adendo Canônico da Validação sem Resultados](project/canonical-consolidation-matrix-uxa-031-addendum.md)
-- [Histórico 1.54.0](project/changelog-1.54.0-uxa-031.md)
+- [Adendo Canônico da Referência Desktop](project/canonical-consolidation-matrix-uxa-032-addendum.md)
+- [Histórico 1.55.0](project/changelog-1.55.0-uxa-032.md)
 
 ### Arquiteturas e modelos
 
@@ -95,6 +96,7 @@ A validação é arquitetural e não equivale a teste com usuários, design, alg
 - [Validação da Lista](experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md)
 - [Mapa sem Resultados](experience-architecture/uxa-030-opportunity-map-no-results-state.md)
 - [Validação sem Resultados](experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md)
+- [Mapa para Computador](experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
 
 ### Resultados Empresariais
 
@@ -105,7 +107,7 @@ A validação é arquitetural e não equivale a teste com usuários, design, alg
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente: validação funcional da referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 
