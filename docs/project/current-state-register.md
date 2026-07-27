@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.59.0
+version: 1.60.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 depends_on:
@@ -33,13 +33,14 @@ related:
   - UXA-029
   - UXA-030
   - UXA-031
+  - UXA-032
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.6.0
-  - M7.32
+  - ROADMAP-12.7.0
+  - M7.33
 normative: true
 ---
 
@@ -54,12 +55,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | estado do Mapa sem resultados funcionalmente validado e reformulado | M7.32; UXA-030; UXA-031 |
+| Marco atual | referência do Mapa de Oportunidades para computador criada | M7.33; UXA-032 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até a validação do estado sem resultados | UXA-000 a UXA-031 |
+| Arquitetura da Experiência | ativa até a referência desktop do Mapa | UXA-000 a UXA-032 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
@@ -70,8 +71,8 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
 | Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
+| Referência do Mapa para computador | criada; validação funcional especializada não iniciada | UXA-032 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
-| Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
 | Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
@@ -152,16 +153,41 @@ O estado reformulado demonstra:
 - exploração geral sem alterar a consulta territorial;
 - tratamento textual sem dependência do mapa carregado.
 
+## 7. Referência do Mapa para computador
+
+A UXA-032 materializa dois estados em 1.440 por 1.024 pixels:
+
+- Mapa com resultados, filtros e Lista da mesma consulta apresentados lado a lado;
+- Mapa sem resultados, com cobertura verificável e ações de recuperação explícitas.
+
+A referência demonstra:
+
+- navegação recorrente com `Mapa` selecionado;
+- contexto `Agindo como: Pessoa`;
+- exploração geral sem personalização;
+- localização desativada e posição não acessada;
+- região manual distinta da posição pessoal;
+- painel de consulta e filtros;
+- campo territorial como maior área visual;
+- Lista territorial sincronizada;
+- quantidade, atualização e ordenação explícitas;
+- oportunidade selecionada no Mapa e na Lista;
+- explicabilidade e relação comercial separadas;
+- continuidade para o Detalhe;
+- operação integral da Lista sem mapa carregado.
+
 Arquivos vetoriais:
 
 - `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
 - `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`;
 - `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
-- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`.
+- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`;
+- `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
+- `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
 
-A validação é arquitetural e não equivale a teste com usuários, design ou implementação.
+A referência desktop ainda não foi funcionalmente validada. Ela não conclui responsividade, tablet, design, protótipo, teste com usuários ou implementação.
 
-## 7. Proteções vigentes
+## 8. Proteções vigentes
 
 - localização permanece opcional;
 - região manual não equivale a posição atual;
@@ -177,13 +203,14 @@ A validação é arquitetural e não equivale a teste com usuários, design ou i
 - filtros e região não são alterados silenciosamente;
 - `Desfazer` depende de alteração identificável;
 - seleção anterior não falseia correspondência atual;
-- publicidade não preenche artificialmente o estado vazio.
+- publicidade não preenche artificialmente o estado vazio;
+- mais espaço visual não autoriza mais coleta.
 
-## 8. Próximos atos governados
+## 9. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar referência do Mapa para computador;
+1. validar funcionalmente a referência do Mapa para computador;
 2. criar o wireframe gráfico do início protegido;
 3. criar a referência móvel da Home;
 4. validar a revisão da compreensão inicial;

@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.6.0
+version: 12.7.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.6.0
+  - ROADMAP-12.7.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -28,7 +28,8 @@ related:
   - UXA-029
   - UXA-030
   - UXA-031
-  - M7.32
+  - UXA-032
+  - M7.33
 normative: false
 ---
 
@@ -43,7 +44,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | estado do Mapa sem resultados funcionalmente validado e reformulado | M7.32; UXA-030; UXA-031 |
+| Marco | referência do Mapa de Oportunidades para computador criada | M7.33; UXA-032 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -56,6 +57,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
 | Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
+| Referência do Mapa para computador | criada; validação funcional pendente | UXA-032 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Personalização | bloqueada antes de contexto revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
@@ -78,7 +80,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Mapa principal validado e reformulado;
 - estado sem localização validado e reformulado;
 - visualização em Lista criada, validada e reformulada;
-- estado sem resultados criado, validado e reformulado.
+- estado sem resultados criado, validado e reformulado;
+- referência do Mapa para computador criada.
 
 ### Em validação
 
@@ -90,7 +93,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- referência do Mapa para computador;
+- validação funcional da referência do Mapa para computador;
 - wireframe gráfico do início protegido;
 - referência móvel da Home;
 - estados especializados de texto, voz e arquivos;
@@ -111,6 +114,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Engenharia de Produto;
 - protótipo navegável e design visual;
 - testes de usabilidade;
+- responsividade completa e referência para tablet;
 - provas de conceito, integrações e produção.
 
 ## 4. Sequência pessoal vigente
@@ -163,7 +167,27 @@ A UXA-030 e a UXA-031 demonstram:
 
 A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.
 
-## 7. Proteções preservadas
+## 7. Referência para computador
+
+A UXA-032 demonstra:
+
+- dois arquivos em 1.440 por 1.024 pixels;
+- estado com resultados e estado sem resultados;
+- navegação recorrente com `Mapa` selecionado;
+- contexto `Agindo como: Pessoa`;
+- localização desativada e região manual;
+- painel de filtros, Mapa e Lista simultâneos;
+- uma única consulta territorial sincronizada;
+- quantidade, atualização, ordenação e seleção consistentes;
+- oportunidade selecionada no Mapa e na Lista;
+- explicabilidade e relação comercial separadas;
+- continuidade para o Detalhe;
+- cobertura verificável no estado zero;
+- Lista integral sem mapa carregado.
+
+A referência ainda não foi funcionalmente validada e não conclui responsividade, tablet, design, protótipo ou desenvolvimento.
+
+## 8. Proteções preservadas
 
 - a Home não coleta relato pessoal;
 - iniciar a jornada é voluntário;
@@ -171,7 +195,7 @@ A validação é arquitetural e não equivale a teste com usuários ou conformid
 - exploração sem personalização permanece disponível;
 - localização é opcional;
 - região manual não equivale a posição atual;
-- Mapa e Lista não alteram permissões ao alternar;
+- Mapa e Lista não alteram permissões;
 - dados ausentes não são inferidos;
 - publicidade não aumenta relevância pessoal;
 - salvamento não autoriza rastreamento;
@@ -182,9 +206,10 @@ A validação é arquitetural e não equivale a teste com usuários ou conformid
 - consulta não é alterada silenciosamente;
 - `Desfazer` depende de alteração identificável;
 - seleção anterior não falseia o conjunto atual;
+- mais espaço visual não autoriza mais coleta;
 - wireframes e validações não equivalem a design ou implementação.
 
-## 8. Distribuição dos candidatos
+## 9. Distribuição dos candidatos
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -193,6 +218,6 @@ A validação é arquitetural e não equivale a teste com usuários ou conformid
 | Rejeitados | 6 | retirados do catálogo futuro |
 | Aprovados | 0 | nenhuma aprovação ocorreu |
 
-## 9. Próximo movimento
+## 10. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional da referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada independente dos testes dos Resultados Empresariais.

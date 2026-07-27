@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.4.0
+version: 5.5.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.6.0
+  - ROADMAP-12.7.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -27,6 +27,7 @@ related:
   - UXA-029
   - UXA-030
   - UXA-031
+  - UXA-032
   - M7.20
   - M7.21
   - M7.22
@@ -40,6 +41,7 @@ related:
   - M7.30
   - M7.31
   - M7.32
+  - M7.33
 normative: false
 ---
 
@@ -71,45 +73,43 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.29 | Concluído | visualização em Lista do Mapa criada |
 | M7.30 | Concluído | visualização em Lista funcionalmente validada e reformulada |
 | M7.31 | Concluído | estado móvel do Mapa sem resultados criado |
-| M7.32 | Concluído neste incremento | estado sem resultados funcionalmente validado e reformulado |
+| M7.32 | Concluído | estado sem resultados funcionalmente validado e reformulado |
+| M7.33 | Concluído neste incremento | referência do Mapa de Oportunidades para computador criada |
 
 ## 3. Marco vigente
 
-### Estado do Mapa sem Resultados Funcionalmente Validado e Reformulado — M7.32
+### Referência do Mapa de Oportunidades para Computador Criada — M7.33
 
 Critérios atendidos:
 
-- estado preservado dentro da superfície recorrente do Mapa;
-- item `Mapa` preservado na navegação principal;
-- alternância `Mapa ↔ Lista` mantida;
-- contexto `Agindo como` demonstrado;
+- referência registrada em UXA-032;
+- dois arquivos vetoriais criados em 1.440 por 1.024 pixels;
+- estado com resultados materializado;
+- estado sem resultados materializado;
+- item `Mapa` preservado na navegação recorrente;
+- contexto `Agindo como` visível;
+- exploração geral sem personalização demonstrada;
 - localização desativada e posição não acessada no exemplo;
-- região manual preservada;
-- busca e filtros mantidos;
-- total consolidado de filtros visível;
-- total zero limitado à consulta atual;
-- cobertura verificável e ação `Ver cobertura`;
-- mensagem `Consulta concluída · cobertura verificada · atualizada agora`;
-- ausência legítima separada de falha de fonte, indisponibilidade e cobertura parcial;
-- ampliação de região, alteração de período, revisão de filtros e edição de busca oferecidas separadamente;
-- revisão exigida antes de aplicar qualquer mudança;
-- última alteração identificada;
-- `Desfazer` exibido somente quando aplicável;
-- seleção anterior preservada sem ser reinserida como correspondência;
-- exploração geral sem alteração da consulta territorial;
-- nenhum preenchimento comercial artificial;
-- Mapa e Lista governados como o mesmo estado;
-- tratamento textual independente do mapa carregado;
-- arquivo vetorial reformulado em 390 por 844 pixels;
-- referência para computador, tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
+- região manual distinta da posição pessoal;
+- pesquisa, filtros e atualização preservados;
+- painel de filtros, campo territorial e Lista integrados;
+- Mapa e Lista tratados como a mesma consulta;
+- quantidade, ordenação e seleção sincronizadas;
+- oportunidade selecionada reconhecível no Mapa e na Lista;
+- explicabilidade e relação comercial separadas;
+- continuidade para o Detalhe preservada;
+- estado zero com cobertura verificável e recuperação explícita;
+- operação textual preservada sem mapa carregado;
+- validação funcional especializada preservada como ato posterior;
+- responsividade, tablet, tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
-### Estado do Mapa sem Resultados Criado — M7.31
+### Estado do Mapa sem Resultados Validado e Reformulado — M7.32
 
-A UXA-030 permanece como origem histórica do wireframe, posteriormente reformulado e validado pela UXA-031.
+A UXA-030 e a UXA-031 permanecem como contrato do zero legítimo, cobertura verificável e recuperação consciente.
 
 ### Visualização em Lista do Mapa Validada e Reformulada — M7.30
 
@@ -142,7 +142,7 @@ COD-018 permanece integrado, com nenhum Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; estado sem resultados validado; próximos atos aguardando autorização |
+| Arquitetura da Experiência | ativa; referência desktop do Mapa criada; validação posterior aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -154,7 +154,7 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. criar referência do Mapa para computador;
+1. validar funcionalmente a referência do Mapa para computador;
 2. criar o wireframe do início protegido;
 3. criar a referência móvel da Home;
 4. validar a revisão da compreensão inicial;
