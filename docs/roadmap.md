@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.3.0
-title: Roadmap Arquitetural — Visualização em Lista do Mapa Criada
+id: ROADMAP-12.4.0
+title: Roadmap Arquitetural — Visualização em Lista do Mapa Validada
 status: active
-version: 12.3.0
+version: 12.4.0
 owner: Guivos
 last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.2.0
+  - ROADMAP-12.3.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -25,10 +25,11 @@ related:
   - UXA-026
   - UXA-027
   - UXA-028
-  - M7.29
+  - UXA-029
+  - M7.30
 ---
 
-# Roadmap Arquitetural — Visualização em Lista do Mapa Criada
+# Roadmap Arquitetural — Visualização em Lista do Mapa Validada
 
 ## 1. Autoridade
 
@@ -39,18 +40,17 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | visualização em Lista do Mapa materializada em wireframe móvel | M7.29; UXA-028 |
+| Marco | visualização em Lista do Mapa funcionalmente validada e reformulada | M7.30; UXA-028; UXA-029 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
-| Início protegido | funcionalmente validado e reformulado | UXA-020; UXA-023 |
-| Wireframe do início protegido | não iniciado | — |
+| Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
 | Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
-| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente | UXA-028 |
-| Demais estados alternativos do Mapa | governados; wireframes não iniciados | UXA-025 |
+| Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
+| Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
+| Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -71,11 +71,12 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 13. wireframe gráfico da Home para computador criado;
 14. início protegido da jornada validado e reformulado;
 15. posição do Mapa na navegação recorrente consolidada;
-16. wireframe gráfico móvel do Mapa de Oportunidades criado;
-17. Mapa de Oportunidades funcionalmente validado e reformulado;
+16. wireframe gráfico móvel do Mapa criado;
+17. Mapa funcionalmente validado e reformulado;
 18. estado móvel de localização desativada criado;
 19. estado sem localização funcionalmente validado e reformulado;
-20. visualização móvel em Lista do Mapa criada.
+20. visualização móvel em Lista criada;
+21. visualização em Lista funcionalmente validada e reformulada.
 
 ## 4. Sequência pessoal vigente
 
@@ -90,40 +91,43 @@ Página Inicial pública
 
 O Mapa não integra a sequência obrigatória de primeira entrada. Mapa e Lista são modos internos da mesma superfície recorrente.
 
-## 5. Resultado da visualização em Lista
+## 5. Resultado da validação especializada
 
-A UXA-028 demonstra:
+A UXA-029 confirmou, após reformulação:
 
-- item `Mapa` preservado na navegação recorrente;
-- alternância interna `Mapa ↔ Lista`;
-- localização desativada, posição não acessada e região manual;
-- pesquisa e filtros preservados;
-- quantidade de resultados consistente com a consulta;
-- ordenação explícita por critérios declarados;
-- cartões comparáveis;
-- oportunidade selecionada preservada;
-- explicação de origem e relação comercial separadas;
-- salvamento sem localização;
-- definição de origem específica;
-- continuidade para o Detalhe;
+- declaração `Lista territorial do Mapa · mesma consulta`;
+- diferença compreensível para `Explorar`;
+- contexto `Agindo como` preservado;
+- localização opcional e região manual distintas;
+- pesquisa vinculada à região ativa;
+- total consolidado de filtros;
+- quantidade e momento de atualização visíveis;
+- ordenação explícita e acompanhada de explicação;
+- cartões com estrutura mínima comparável;
+- dados ausentes declarados sem inferência;
+- item selecionado preservado;
+- explicação funcional em todos os cartões;
+- relação comercial separada da relevância;
+- salvamento e Detalhe sem localização;
 - retorno ao Mapa sem perda de contexto;
-- alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.
+- Lista integral sem dependência do mapa carregado.
 
-A referência possui 390 por 844 pixels e não define algoritmo, tecnologia, design ou implementação.
+A referência possui 390 por 844 pixels. A validação é arquitetural e não equivale a teste de usabilidade, design ou implementação.
 
 ## 6. Proteções preservadas
 
-- Lista não duplica `Explorar` nem abandona a consulta territorial;
+- Lista não duplica `Explorar`;
+- contexto de atuação não muda silenciosamente;
 - localização permanece opcional;
 - região manual não equivale a posição atual;
-- busca, filtros e seleção não são apagados ao trocar de modo;
+- busca, filtros e seleção permanecem ao trocar de modo;
 - ordenação não é apresentada como personalização sem gate;
 - patrocínio não aumenta relevância de forma oculta;
+- dados ausentes não são completados por inferência;
 - salvamento não autoriza localização ou rastreamento;
 - origem manual não autoriza histórico territorial;
 - troca de modo não altera permissões;
-- residências e locais sensíveis permanecem protegidos;
-- dados ausentes não são completados por inferência.
+- residências e locais sensíveis permanecem protegidos.
 
 ## 7. Estado dos Resultados Empresariais
 
@@ -149,13 +153,12 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer um ato separado:
 
-1. validar funcionalmente a visualização em Lista;
-2. criar o estado sem resultados;
-3. criar referência do Mapa para computador;
-4. criar o wireframe gráfico do início protegido;
-5. criar a referência móvel da Home;
-6. validar a revisão da compreensão inicial;
-7. validar a transição para a primeira Tela Hoje.
+1. criar o estado sem resultados;
+2. criar referência do Mapa para computador;
+3. criar o wireframe gráfico do início protegido;
+4. criar a referência móvel da Home;
+5. validar a revisão da compreensão inicial;
+6. validar a transição para a primeira Tela Hoje.
 
 ### 8.2 Arquitetura de Negócios
 
@@ -183,7 +186,3 @@ Nenhuma frente avança automaticamente.
 - publicidade não aumenta relevância pessoal;
 - wireframe, validação funcional, protótipo, design, testes e desenvolvimento permanecem atos separados;
 - Validação de Mercado mantém execução própria e paralela.
-
-## 10. Frentes posteriores preservadas
-
-A evolução especializada de Guivos Mall, Guivos Business, Guivos Intelligence, Guivos Ads, Guivos Media e Guivos Travel, bem como Modelo Comercial e Entrada no Mercado, continua sem autorização de início neste incremento.
