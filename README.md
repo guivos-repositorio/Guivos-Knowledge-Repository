@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.30 — Visualização em Lista do Mapa Validada e Reformulada |
+| Marco | M7.31 — Estado do Mapa sem Resultados Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -23,6 +23,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
 | Estado sem localização | funcionalmente validado e reformulado |
 | Lista do Mapa | funcionalmente validada e reformulada |
+| Estado sem resultados | wireframe móvel criado; validação funcional pendente |
 | Demais estados do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -92,6 +93,29 @@ Arquivo:
 
 A referência possui 390 por 844 pixels. A validação é arquitetural e não representa teste com usuários, design ou implementação.
 
+## Estado sem resultados
+
+A UXA-030 cria a referência móvel para uma consulta territorial concluída sem correspondências.
+
+O estado apresenta:
+
+- região, busca e filtros preservados;
+- total zero limitado à consulta atual;
+- consulta concluída sem falha conhecida;
+- ações separadas para ampliar região, alterar período, revisar filtros e editar busca;
+- reversão da última alteração quando aplicável;
+- distinção entre ausência legítima, falha de fonte e indisponibilidade;
+- continuidade entre Mapa e Lista;
+- localização opcional;
+- ausência de preenchimento patrocinado ou personalizado artificial;
+- funcionamento textual sem mapa carregado.
+
+Arquivo:
+
+`docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
+
+O estado ainda não foi funcionalmente validado.
+
 ## Estado dos Resultados Empresariais
 
 ```text
@@ -111,7 +135,7 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- estado sem resultados;
+- validação funcional do estado sem resultados;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido;
 - referência móvel da Home;
@@ -149,8 +173,9 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Validação sem Localização](docs/experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
 - [Lista do Mapa](docs/experience-architecture/uxa-028-opportunity-map-list-state.md)
 - [Validação da Lista](docs/experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md)
-- [Adendo Canônico UXA-029](docs/project/canonical-consolidation-matrix-uxa-029-addendum.md)
-- [Histórico 1.52.0](docs/project/changelog-1.52.0-uxa-029.md)
+- [Mapa sem Resultados](docs/experience-architecture/uxa-030-opportunity-map-no-results-state.md)
+- [Adendo Canônico UXA-030](docs/project/canonical-consolidation-matrix-uxa-030-addendum.md)
+- [Histórico 1.53.0](docs/project/changelog-1.53.0-uxa-030.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)

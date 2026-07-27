@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.4.0
-title: Roadmap Arquitetural — Visualização em Lista do Mapa Validada
+id: ROADMAP-12.5.0
+title: Roadmap Arquitetural — Estado do Mapa sem Resultados Criado
 status: active
-version: 12.4.0
+version: 12.5.0
 owner: Guivos
 last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.3.0
+  - ROADMAP-12.4.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -26,10 +26,11 @@ related:
   - UXA-027
   - UXA-028
   - UXA-029
-  - M7.30
+  - UXA-030
+  - M7.31
 ---
 
-# Roadmap Arquitetural — Visualização em Lista do Mapa Validada
+# Roadmap Arquitetural — Estado do Mapa sem Resultados Criado
 
 ## 1. Autoridade
 
@@ -40,7 +41,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | visualização em Lista do Mapa funcionalmente validada e reformulada | M7.30; UXA-028; UXA-029 |
+| Marco | estado móvel do Mapa sem resultados criado | M7.31; UXA-030 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -50,6 +51,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
+| Estado sem resultados | wireframe móvel criado; validação especializada pendente | UXA-030 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -76,7 +78,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 18. estado móvel de localização desativada criado;
 19. estado sem localização funcionalmente validado e reformulado;
 20. visualização móvel em Lista criada;
-21. visualização em Lista funcionalmente validada e reformulada.
+21. visualização em Lista funcionalmente validada e reformulada;
+22. estado móvel sem resultados criado.
 
 ## 4. Sequência pessoal vigente
 
@@ -89,45 +92,44 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O Mapa não integra a sequência obrigatória de primeira entrada. Mapa e Lista são modos internos da mesma superfície recorrente.
+O Mapa não integra a sequência obrigatória de primeira entrada. Os estados sem localização, em Lista e sem resultados pertencem à mesma superfície recorrente.
 
-## 5. Resultado da validação especializada
+## 5. Resultado do estado sem resultados
 
-A UXA-029 confirmou, após reformulação:
+A UXA-030 demonstra:
 
-- declaração `Lista territorial do Mapa · mesma consulta`;
-- diferença compreensível para `Explorar`;
-- contexto `Agindo como` preservado;
-- localização opcional e região manual distintas;
-- pesquisa vinculada à região ativa;
+- `Mapa de Oportunidades` e contexto `Agindo como`;
+- localização desativada e posição não acessada;
+- região manual distinta da posição pessoal;
+- busca explícita preservada;
+- alternância `Mapa ↔ Lista`;
 - total consolidado de filtros;
-- quantidade e momento de atualização visíveis;
-- ordenação explícita e acompanhada de explicação;
-- cartões com estrutura mínima comparável;
-- dados ausentes declarados sem inferência;
-- item selecionado preservado;
-- explicação funcional em todos os cartões;
-- relação comercial separada da relevância;
-- salvamento e Detalhe sem localização;
-- retorno ao Mapa sem perda de contexto;
-- Lista integral sem dependência do mapa carregado.
+- `0 resultados correspondem a esta consulta`;
+- `Consulta concluída · nenhuma falha conhecida`;
+- mensagem limitada à busca, região e filtros atuais;
+- ampliação de região, alteração de período, revisão de filtros e edição de busca;
+- reversão da última alteração quando aplicável;
+- contexto preservado durante ajustes;
+- distinção entre ausência legítima, falha de fonte, indisponibilidade, carregamento e baixa conectividade;
+- equivalência do estado entre Mapa e Lista;
+- tratamento textual sem dependência do mapa carregado.
 
-A referência possui 390 por 844 pixels. A validação é arquitetural e não equivale a teste de usabilidade, design ou implementação.
+A referência possui 390 por 844 pixels e não define algoritmo, cobertura de produção, tecnologia, design ou implementação.
 
 ## 6. Proteções preservadas
 
-- Lista não duplica `Explorar`;
-- contexto de atuação não muda silenciosamente;
+- zero representa somente a consulta atual;
+- falha de fonte não é apresentada como ausência de oportunidades;
+- filtros não são removidos automaticamente;
+- região não é ampliada sem confirmação;
+- busca não é substituída silenciosamente;
 - localização permanece opcional;
 - região manual não equivale a posição atual;
-- busca, filtros e seleção permanecem ao trocar de modo;
-- ordenação não é apresentada como personalização sem gate;
-- patrocínio não aumenta relevância de forma oculta;
-- dados ausentes não são completados por inferência;
-- salvamento não autoriza localização ou rastreamento;
-- origem manual não autoriza histórico territorial;
-- troca de modo não altera permissões;
-- residências e locais sensíveis permanecem protegidos.
+- personalização não é iniciada para preencher o estado;
+- patrocínio não substitui correspondência funcional;
+- seleção anterior não é apagada sem explicação;
+- Mapa e Lista preservam consulta, diagnóstico e permissões;
+- dado ausente não é completado por inferência.
 
 ## 7. Estado dos Resultados Empresariais
 
@@ -153,7 +155,7 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer um ato separado:
 
-1. criar o estado sem resultados;
+1. validar funcionalmente o estado sem resultados;
 2. criar referência do Mapa para computador;
 3. criar o wireframe gráfico do início protegido;
 4. criar a referência móvel da Home;
