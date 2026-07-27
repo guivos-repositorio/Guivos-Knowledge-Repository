@@ -2,9 +2,9 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 parent: UXA-000
 related:
   - UXA-001
@@ -23,6 +23,7 @@ related:
   - UXA-024
   - UXA-025
   - UXA-026
+  - UXA-027
   - PAS-001
 normative: false
 ---
@@ -57,8 +58,9 @@ A correção formal está registrada em [Correção da Ordem Funcional da Primei
 6. **Wireframe reformulado do Mapa de Oportunidades** — UXA-024, como superfície recorrente própria;
 7. **Validação Funcional do Mapa de Oportunidades** — UXA-025;
 8. **Estado do Mapa com Localização Desativada** — UXA-026;
-9. **Wireframe do Detalhe de Oportunidade** — UXA-007;
-10. **Wireframe do Cadastro pela Organização** — UXA-008.
+9. **Validação do Estado sem Localização** — UXA-027;
+10. **Wireframe do Detalhe de Oportunidade** — UXA-007;
+11. **Wireframe do Cadastro pela Organização** — UXA-008.
 
 O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo Detalhe de Oportunidade.
 
@@ -87,6 +89,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - O participante compreende o que merece atenção na Tela Hoje?
 - A alternância entre Lista e Mapa representa a mesma descoberta?
 - O Mapa continua compreensível quando a localização está desativada?
+- A pessoa reconhece que posição não acessada difere de região manual?
 - Preço, condições, elegibilidade, origem e relação comercial estão claros?
 - Ações principais e alternativas são distinguíveis?
 
@@ -96,8 +99,9 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A Home apresenta propósito antes das soluções comerciais?
 - Os caminhos pessoal, geral e institucional permanecem distintos?
 - O Mapa preserva espaço territorial sem ocultar pesquisa, filtros, resultados e privacidade?
-- O estado sem localização apresenta região manual antes dos resultados?
+- O estado sem localização apresenta privacidade e região manual antes dos resultados?
 - O cartão selecionado oferece contexto suficiente antes do detalhe?
+- Salvamento e origem manual são encontráveis sem competir com o detalhe?
 - Estados vazios e ausência legítima permanecem possíveis?
 
 ### 5.3 Autonomia
@@ -106,7 +110,8 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A pessoa escolhe como relatar no ambiente protegido?
 - O participante consegue alterar filtros, raio, localização e relevância?
 - Localização exata, aproximada, manual e desativada são alternativas reais?
-- A recusa de localização preserva busca, Mapa, Lista e Detalhe?
+- A recusa de localização preserva busca, Mapa, Lista, Detalhe e salvamento?
+- A ativação posterior permanece opcional?
 - O fluxo evita pressionar contratação, inscrição ou consentimento?
 
 ### 5.4 Continuidade
@@ -116,6 +121,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - Explorar e Mapa permanecem sincronizados?
 - O estado sem localização preserva região, busca e filtros ao alternar para Lista?
 - O Mapa conduz ao Detalhe de Oportunidade preservando contexto e condições?
+- A origem manual para rota não altera o consentimento territorial?
 - O cadastro organizacional produz informações suficientes para cartão, detalhe, mapa, busca e comparação?
 
 ## 6. Convenções de baixa fidelidade
@@ -130,6 +136,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 | linhas e formas esquemáticas | estrutura territorial sem geografia real |
 | marca textual | filtro ativo ou estado confirmado sem dependência exclusiva de cor |
 | ausência de marcador | localização da pessoa não utilizada ou não disponível |
+| declaração textual | confirmação de estado que não pode depender somente do desenho |
 
 Cor, iconografia e tipografia não possuem significado definitivo neste programa.
 
@@ -164,9 +171,10 @@ Explorar em lista
 ↔ abrir Detalhe de Oportunidade
 
 Localização desativada
-→ escolher cidade ou região
+→ confirmar posição não acessada
+→ escolher cidade ou região manual
 → explorar no Mapa ou na Lista
-→ abrir Detalhe
+→ salvar ou abrir Detalhe
 → definir origem manual ou ativar localização opcionalmente
 
 Organização
@@ -191,30 +199,34 @@ Antes da compreensão inicial confirmada, as soluções poderão apresentar some
 | [Wireframe reformulado do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa recorrente | [arquivo vetorial](../assets/wireframes/uxa-024-opportunity-map-mobile.svg) |
 | [Validação Funcional do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md) | UXA-025 | Mapa recorrente | reformulação e critérios funcionais |
 | [Mapa com Localização Desativada](uxa-026-opportunity-map-location-disabled-state.md) | UXA-026 | estado alternativo | [arquivo vetorial](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg) |
+| [Validação do Estado sem Localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md) | UXA-027 | estado alternativo | validação e reformulação funcional |
 | [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | [arquivo vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
 | [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | [arquivo vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
 ## 10. Resultado validado do Mapa
 
-O wireframe reformulado do Mapa demonstra contexto de atuação, pesquisa territorial, Mapa e Lista sincronizados, filtros ativos, resultados, `Pesquisar nesta área`, mapa esquemático, camadas, legenda, localização aproximada, privacidade, cartão resumido, relação comercial e rota contextual.
+O wireframe principal demonstra contexto de atuação, pesquisa territorial, Mapa e Lista sincronizados, filtros ativos, resultados, `Pesquisar nesta área`, mapa esquemático, camadas, legenda, localização aproximada, privacidade, cartão resumido, relação comercial e rota contextual.
 
 A UXA-025 considera o Mapa funcionalmente válido após reformulação.
 
-## 11. Estado de localização desativada
+## 11. Resultado validado do estado sem localização
 
-A UXA-026 demonstra:
+A UXA-026 reformulada demonstra:
 
 - exploração geral sem personalização;
-- região escolhida manualmente;
+- localização desativada e posição não acessada;
+- região manual explicitamente distinta da posição pessoal;
 - pesquisa, filtros e resultados preservados;
-- Mapa sem marcador da pessoa;
+- Mapa sem marcador ou posição presumida;
 - Lista como alternativa integral;
 - oportunidade explicada por região e busca;
 - distância pessoal omitida;
+- salvamento;
+- origem manual para rota;
 - ativação opcional de localização aproximada;
-- origem manual para rota quando aplicável.
+- continuidade para o detalhe.
 
-A validação funcional especializada deste estado permanece pendente.
+A UXA-027 considera o estado funcionalmente válido após reformulação.
 
 ## 12. Demais estados funcionais do Mapa
 
@@ -251,12 +263,13 @@ Este programa não:
 
 Os próximos pontos deverão ser autorizados separadamente e poderão:
 
-1. validar funcionalmente o estado de localização desativada;
-2. criar o estado alternativo em Lista;
-3. criar o estado sem resultados;
-4. criar referência do Mapa para computador;
-5. criar o wireframe gráfico do início protegido;
-6. criar a referência móvel da Home;
-7. retomar independentemente os testes dos Resultados Empresariais.
+1. criar o estado alternativo em Lista;
+2. criar o estado sem resultados;
+3. criar referência do Mapa para computador;
+4. criar o wireframe gráfico do início protegido;
+5. criar a referência móvel da Home;
+6. validar a compreensão inicial e seus controles;
+7. detalhar a primeira Tela Hoje após a transição;
+8. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.
