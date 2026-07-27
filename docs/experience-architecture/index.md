@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.25.0
+version: 0.26.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 related:
@@ -41,6 +41,7 @@ related:
   - UXA-027
   - UXA-028
   - UXA-029
+  - UXA-030
 normative: false
 ---
 
@@ -90,7 +91,7 @@ O Mapa não entra entre a Home e a Tela Hoje. Ele é uma superfície própria da
 | Página Inicial pública | [contrato](uxa-020-home-and-journey-entry.md), [validação](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe](uxa-022-public-home-low-fidelity-wireframe.md) |
 | Início protegido | [validação funcional](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
 | Tela Hoje | [experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação](uxa-010-today-functional-validation-and-reformulation.md) |
-| Explorar e Mapa | [contrato](uxa-004-opportunities-organizations-collectives-map.md), [wireframe do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md), [validação do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md), [estado sem localização](uxa-026-opportunity-map-location-disabled-state.md), [validação sem localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md), [Lista](uxa-028-opportunity-map-list-state.md) e [validação da Lista](uxa-029-opportunity-map-list-functional-validation-and-reformulation.md) |
+| Explorar e Mapa | [contrato](uxa-004-opportunities-organizations-collectives-map.md), [wireframe do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md), [validação do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md), [estado sem localização](uxa-026-opportunity-map-location-disabled-state.md), [validação sem localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md), [Lista](uxa-028-opportunity-map-list-state.md), [validação da Lista](uxa-029-opportunity-map-list-functional-validation-and-reformulation.md) e [estado sem resultados](uxa-030-opportunity-map-no-results-state.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -98,7 +99,7 @@ O Mapa não entra entre a Home e a Tela Hoje. Ele é uma superfície própria da
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | ativa e integrada até a validação da Lista do Mapa | UXA-000 a UXA-029; UXA-003-A1 |
+| Arquitetura da Experiência | ativa e integrada até o estado sem resultados do Mapa | UXA-000 a UXA-030; UXA-003-A1 |
 | Resultados Empresariais | 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
@@ -109,6 +110,7 @@ O Mapa não entra entre a Home e a Tela Hoje. Ele é uma superfície própria da
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista | funcionalmente validada e reformulada | UXA-028; UXA-029 |
+| Estado sem resultados | wireframe móvel criado; validação funcional pendente | UXA-030 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe e cadastro | validados e reformulados | UXA-007; UXA-008; UXA-012; UXA-013 |
@@ -141,7 +143,8 @@ Arquivos vetoriais:
 
 - `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
 - `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`;
-- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`.
+- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
+- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`.
 
 ## 10. Estado sem localização
 
@@ -172,29 +175,48 @@ A Lista não duplica `Explorar` e constitui alternativa integral para conteúdo 
 
 A validação é funcional arquitetural. Teste de usabilidade e conformidade técnica de acessibilidade permanecem posteriores.
 
-## 12. Estados funcionais do Mapa
+## 12. Estado sem resultados
+
+A UXA-030 materializa o estado em que a consulta territorial é concluída sem correspondências.
+
+O wireframe demonstra:
+
+- contexto, região, busca e filtros preservados;
+- total zero limitado à consulta atual;
+- confirmação de consulta concluída sem falha conhecida;
+- ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;
+- reversão da última alteração quando aplicável;
+- distinção entre ausência legítima, falha de fonte e indisponibilidade;
+- continuidade entre Mapa e Lista;
+- localização opcional;
+- ausência de personalização ou preenchimento patrocinado artificial;
+- tratamento textual sem mapa carregado.
+
+A validação funcional especializada do estado permanece pendente.
+
+## 13. Estados funcionais do Mapa
 
 A UXA-025 governa localização desativada, localização aproximada, localização exata temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.
 
-A UXA-026 a UXA-029 materializam e validam o uso sem localização e a Lista. Os demais wireframes permanecem atos separados.
+A UXA-026 a UXA-030 materializam e validam o uso sem localização, a Lista e o estado sem resultados. Os demais wireframes permanecem atos separados.
 
-## 13. Gate de personalização
+## 14. Gate de personalização
 
 Personalização material exige base suficiente, origem e finalidade identificadas, revisão real, controles de correção e limitação e autorização compatível.
 
 Sem o gate, a pessoa pode continuar sem personalização, explorar, corrigir, pausar ou excluir.
 
-## 14. Gate de alinhamento à Fundação
+## 15. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 15. Próximos atos governados
+## 16. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar o estado sem resultados;
+1. validar funcionalmente o estado sem resultados;
 2. criar referência do Mapa para computador;
 3. criar o wireframe gráfico do início protegido;
 4. criar a referência móvel da Home;
