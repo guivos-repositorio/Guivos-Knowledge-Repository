@@ -332,10 +332,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualizacao-em-lista-validada" class="md-nav__link">
+  <a href="#estado-sem-resultados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Visualização em Lista validada
+        Estado sem resultados
       
     </span>
   </a>
@@ -4219,6 +4219,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="experience-architecture/uxa-030-opportunity-map-no-results-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-030 — Mapa sem Resultados
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6690,10 +6725,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualizacao-em-lista-validada" class="md-nav__link">
+  <a href="#estado-sem-resultados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Visualização em Lista validada
+        Estado sem resultados
       
     </span>
   </a>
@@ -6815,7 +6850,7 @@
 </tr>
 <tr>
 <td>Marco</td>
-<td>M7.30 — Visualização em Lista do Mapa Validada e Reformulada</td>
+<td>M7.31 — Estado do Mapa sem Resultados Criado</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -6854,6 +6889,10 @@
 <td>funcionalmente validada e reformulada</td>
 </tr>
 <tr>
+<td>Estado sem resultados</td>
+<td>wireframe móvel criado; validação funcional pendente</td>
+</tr>
+<tr>
 <td>Demais estados do Mapa</td>
 <td>governados; wireframes não iniciados</td>
 </tr>
@@ -6872,26 +6911,25 @@
 → Hoje | Jornada | Explorar | Mapa | Eu
 </code></pre></div>
 <p>O Mapa não entra entre a Home e a Tela Hoje.</p>
-<h2 id="visualizacao-em-lista-validada">Visualização em Lista validada<a class="headerlink" href="#visualizacao-em-lista-validada" title="Permanent link">&para;</a></h2>
-<p>A UXA-028 e a UXA-029 estabelecem a Lista como representação textual integral da mesma consulta territorial do Mapa.</p>
-<p>O estado reformulado apresenta:</p>
+<h2 id="estado-sem-resultados">Estado sem resultados<a class="headerlink" href="#estado-sem-resultados" title="Permanent link">&para;</a></h2>
+<p>A UXA-030 cria a referência móvel para uma consulta territorial concluída sem correspondências.</p>
+<p>O estado apresenta:</p>
 <ul>
-<li><code>LISTA TERRITORIAL DO MAPA · MESMA CONSULTA</code>;</li>
-<li><code>Agindo como: Pessoa</code>;</li>
-<li>localização opcional e região manual;</li>
-<li>busca, filtros e quantidade preservados;</li>
+<li><code>0 resultados correspondem a esta consulta</code>;</li>
+<li><code>Consulta concluída · nenhuma falha conhecida</code>;</li>
+<li>região, busca e filtros preservados;</li>
 <li>total consolidado de filtros;</li>
-<li>atualização e ordenação explicáveis;</li>
-<li>cartões comparáveis com dados ausentes declarados;</li>
-<li>item selecionado preservado;</li>
-<li>explicação funcional e relação comercial separadas;</li>
-<li>salvamento, origem e Detalhe sem localização;</li>
-<li>retorno ao Mapa sem perda de contexto;</li>
-<li>funcionamento integral sem mapa carregado.</li>
+<li>ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;</li>
+<li>reversão da última alteração quando aplicável;</li>
+<li>distinção entre ausência legítima, falha de fonte e indisponibilidade;</li>
+<li>continuidade entre Mapa e Lista;</li>
+<li>localização opcional;</li>
+<li>tratamento textual sem mapa carregado;</li>
+<li>ausência de preenchimento patrocinado ou personalizado artificial.</li>
 </ul>
 <p>Arquivo:</p>
-<p><code>assets/wireframes/uxa-028-opportunity-map-list-mobile.svg</code></p>
-<p>A validação é arquitetural e não equivale a teste com usuários, design, algoritmo ou conformidade técnica de acessibilidade.</p>
+<p><code>assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg</code></p>
+<p>A validação funcional especializada permanece pendente.</p>
 <h2 id="acesso-rapido">Acesso rápido<a class="headerlink" href="#acesso-rapido" title="Permanent link">&para;</a></h2>
 <h3 id="estado-e-governanca">Estado e governança<a class="headerlink" href="#estado-e-governanca" title="Permanent link">&para;</a></h3>
 <ul>
@@ -6900,9 +6938,8 @@
 <li><a href="project/knowledge-board/">Painel de Conhecimento</a></li>
 <li><a href="project/architectural-milestones/">Marcos Arquiteturais</a></li>
 <li><a href="project/canonical-consolidation-matrix/">Matriz de Consolidação Canônica</a></li>
-<li><a href="project/canonical-consolidation-matrix-uxa-028-addendum/">Adendo Canônico da Lista</a></li>
-<li><a href="project/canonical-consolidation-matrix-uxa-029-addendum/">Adendo Canônico da Validação da Lista</a></li>
-<li><a href="project/changelog-1.52.0-uxa-029/">Histórico 1.52.0</a></li>
+<li><a href="project/canonical-consolidation-matrix-uxa-030-addendum/">Adendo Canônico do Estado sem Resultados</a></li>
+<li><a href="project/changelog-1.53.0-uxa-030/">Histórico 1.53.0</a></li>
 </ul>
 <h3 id="arquiteturas-e-modelos">Arquiteturas e modelos<a class="headerlink" href="#arquiteturas-e-modelos" title="Permanent link">&para;</a></h3>
 <ul>
@@ -6920,6 +6957,7 @@
 <li><a href="experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation/">Validação sem Localização</a></li>
 <li><a href="experience-architecture/uxa-028-opportunity-map-list-state/">Lista do Mapa</a></li>
 <li><a href="experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation/">Validação da Lista</a></li>
+<li><a href="experience-architecture/uxa-030-opportunity-map-no-results-state/">Mapa sem Resultados</a></li>
 </ul>
 <h3 id="resultados-empresariais">Resultados Empresariais<a class="headerlink" href="#resultados-empresariais" title="Permanent link">&para;</a></h3>
 <ul>
@@ -6929,7 +6967,7 @@
 <li><a href="business-architecture/strategy/candidate-outcome-decision-register/">Candidate Outcome Decision Register</a></li>
 </ul>
 <h2 id="proximos-atos">Próximos atos<a class="headerlink" href="#proximos-atos" title="Permanent link">&para;</a></h2>
-<p>Após nova autorização, poderão ocorrer separadamente: estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada dos testes dos Resultados Empresariais.</p>
+<p>Após nova autorização, poderão ocorrer separadamente: validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada dos testes dos Resultados Empresariais.</p>
 <h2 id="regra-de-precedencia">Regra de precedência<a class="headerlink" href="#regra-de-precedencia" title="Permanent link">&para;</a></h2>
 <p>As autoridades normativas de cada domínio definem o conteúdo arquitetural. O Registro do Estado Atual define o estado transversal vigente. Esta página não cria decisões ou autorizações próprias.</p>
 
