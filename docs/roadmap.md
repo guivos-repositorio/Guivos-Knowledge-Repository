@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.0.0
-title: Roadmap Arquitetural — Mapa de Oportunidades Validado
+id: ROADMAP-12.1.0
+title: Roadmap Arquitetural — Estado do Mapa sem Localização Criado
 status: active
-version: 12.0.0
+version: 12.1.0
 owner: Guivos
 last_updated: 2026-07-26
 supersedes_partial:
-  - ROADMAP-11.99.0
+  - ROADMAP-12.0.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -22,10 +22,11 @@ related:
   - UXA-023
   - UXA-024
   - UXA-025
-  - M7.26
+  - UXA-026
+  - M7.27
 ---
 
-# Roadmap Arquitetural — Mapa de Oportunidades Validado
+# Roadmap Arquitetural — Estado do Mapa sem Localização Criado
 
 ## 1. Autoridade
 
@@ -36,7 +37,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Mapa de Oportunidades funcionalmente validado e reformulado | M7.26; UXA-024; UXA-025 |
+| Marco | primeiro estado alternativo do Mapa criado para localização desativada | M7.27; UXA-026 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -45,7 +46,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Wireframe do início protegido | não iniciado | — |
 | Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estados alternativos do Mapa | governados; wireframes não iniciados | UXA-025 |
+| Estado de localização desativada | wireframe móvel criado; validação especializada pendente | UXA-026 |
+| Demais estados alternativos do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -67,7 +69,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 14. início protegido da jornada validado e reformulado;
 15. posição do Mapa na navegação recorrente consolidada;
 16. wireframe gráfico móvel do Mapa de Oportunidades criado;
-17. Mapa de Oportunidades funcionalmente validado e reformulado.
+17. Mapa de Oportunidades funcionalmente validado e reformulado;
+18. estado móvel de localização desativada criado.
 
 ## 4. Sequência pessoal vigente
 
@@ -82,39 +85,37 @@ Página Inicial pública
 
 O Mapa não integra a sequência obrigatória de primeira entrada.
 
-## 5. Resultado da validação do Mapa
+## 5. Resultado do estado sem localização
 
-A validação da UXA-025 confirmou, após reformulação:
+A UXA-026 demonstra:
 
-- contexto de atuação explícito com `Agindo como`;
-- pesquisa por oportunidade, Organização ou região;
-- Mapa e Lista como uma descoberta única;
-- filtros ativos identificados sem dependência exclusiva de cor;
-- quantidade de filtros e ação de limpeza;
-- quantidade de resultados por área;
-- ação consciente `Pesquisar nesta área`;
-- mapa territorial esquemático;
-- camadas, agrupamentos, pontos e legenda;
-- localização aproximada e controle de privacidade;
-- cartão selecionado com preço, data, distância, vagas, acessibilidade e origem;
-- explicação de relevância e relação comercial;
-- rota condicionada à disponibilidade segura do endereço;
-- continuidade com preservação de região, filtros e seleção;
-- estados sem localização, sem resultados, com erro ou baixa conectividade governados.
+- exploração geral sem personalização;
+- aviso claro de localização desativada;
+- escolha manual de cidade ou região;
+- pesquisa territorial preservada;
+- Mapa e Lista sincronizados;
+- filtros e quantidade de resultados da região;
+- área territorial sem marcador da pessoa;
+- legenda e controles de camadas;
+- oportunidade explicada por busca e região, não por Momento Atual;
+- distância pessoal omitida sem origem válida;
+- ativação opcional de localização aproximada;
+- possibilidade de definir origem manual para rota.
 
-A referência possui 390 por 844 pixels e não define mapas reais, tecnologia, coordenadas, design ou implementação.
+A referência possui 390 por 844 pixels e não define geografia real, tecnologia cartográfica, coordenadas, design ou implementação.
 
 ## 6. Proteções preservadas
 
-- localização de participantes não é exibida;
-- residências e locais sensíveis permanecem protegidos;
+- localização permanece opcional;
+- recusa de permissão não bloqueia exploração;
+- marcador pessoal não aparece no estado;
+- região manual permanece visível e editável;
+- linguagem personalizada é removida sem gate;
 - rastreamento contínuo não é exigido;
-- localização exata exige finalidade e duração;
+- residências e locais sensíveis permanecem protegidos;
 - proximidade não equivale a relevância;
 - patrocínio não aumenta relevância funcional;
-- ausência de resultados não autoriza preenchimento artificial;
-- conteúdo antes do gate permanece geral ou resultante de busca explícita;
-- rota não contorna endereço protegido.
+- rota depende de origem válida e não contorna endereço protegido.
 
 ## 7. Estado dos Resultados Empresariais
 
@@ -140,13 +141,14 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer um ato separado:
 
-1. criar estados alternativos do Mapa, começando por Lista ou localização desativada;
-2. criar referência do Mapa para computador;
-3. criar o wireframe gráfico do início protegido;
-4. criar a referência móvel da Home;
-5. detalhar estados especializados de texto, voz e arquivos;
-6. validar a revisão da compreensão inicial;
-7. validar a transição para a primeira Tela Hoje.
+1. validar funcionalmente o estado de localização desativada;
+2. criar o estado alternativo em Lista;
+3. criar o estado sem resultados;
+4. criar referência do Mapa para computador;
+5. criar o wireframe gráfico do início protegido;
+6. criar a referência móvel da Home;
+7. validar a revisão da compreensão inicial;
+8. validar a transição para a primeira Tela Hoje.
 
 ### 8.2 Arquitetura de Negócios
 
@@ -170,6 +172,7 @@ Nenhuma frente avança automaticamente.
 - a Home não coleta relato pessoal;
 - personalização exige compreensão revisável e autorizada;
 - exploração geral continua disponível;
+- localização não é condição universal de uso;
 - publicidade não aumenta relevância pessoal;
 - wireframe, validação funcional, protótipo, design, testes e desenvolvimento permanecem atos separados;
 - Validação de Mercado mantém execução própria e paralela.
