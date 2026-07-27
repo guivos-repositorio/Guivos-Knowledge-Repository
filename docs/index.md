@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.30 — Visualização em Lista do Mapa Validada e Reformulada |
+| Marco | M7.31 — Estado do Mapa sem Resultados Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
@@ -19,6 +19,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
 | Estado sem localização | funcionalmente validado e reformulado |
 | Lista do Mapa | funcionalmente validada e reformulada |
+| Estado sem resultados | wireframe móvel criado; validação funcional pendente |
 | Demais estados do Mapa | governados; wireframes não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -35,30 +36,29 @@ Página Inicial pública
 
 O Mapa não entra entre a Home e a Tela Hoje.
 
-## Visualização em Lista validada
+## Estado sem resultados
 
-A UXA-028 e a UXA-029 estabelecem a Lista como representação textual integral da mesma consulta territorial do Mapa.
+A UXA-030 cria a referência móvel para uma consulta territorial concluída sem correspondências.
 
-O estado reformulado apresenta:
+O estado apresenta:
 
-- `LISTA TERRITORIAL DO MAPA · MESMA CONSULTA`;
-- `Agindo como: Pessoa`;
-- localização opcional e região manual;
-- busca, filtros e quantidade preservados;
+- `0 resultados correspondem a esta consulta`;
+- `Consulta concluída · nenhuma falha conhecida`;
+- região, busca e filtros preservados;
 - total consolidado de filtros;
-- atualização e ordenação explicáveis;
-- cartões comparáveis com dados ausentes declarados;
-- item selecionado preservado;
-- explicação funcional e relação comercial separadas;
-- salvamento, origem e Detalhe sem localização;
-- retorno ao Mapa sem perda de contexto;
-- funcionamento integral sem mapa carregado.
+- ações explícitas para ampliar região, alterar período, revisar filtros ou editar busca;
+- reversão da última alteração quando aplicável;
+- distinção entre ausência legítima, falha de fonte e indisponibilidade;
+- continuidade entre Mapa e Lista;
+- localização opcional;
+- tratamento textual sem mapa carregado;
+- ausência de preenchimento patrocinado ou personalizado artificial.
 
 Arquivo:
 
-`assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
+`assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
 
-A validação é arquitetural e não equivale a teste com usuários, design, algoritmo ou conformidade técnica de acessibilidade.
+A validação funcional especializada permanece pendente.
 
 ## Acesso rápido
 
@@ -69,9 +69,8 @@ A validação é arquitetural e não equivale a teste com usuários, design, alg
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico da Lista](project/canonical-consolidation-matrix-uxa-028-addendum.md)
-- [Adendo Canônico da Validação da Lista](project/canonical-consolidation-matrix-uxa-029-addendum.md)
-- [Histórico 1.52.0](project/changelog-1.52.0-uxa-029.md)
+- [Adendo Canônico do Estado sem Resultados](project/canonical-consolidation-matrix-uxa-030-addendum.md)
+- [Histórico 1.53.0](project/changelog-1.53.0-uxa-030.md)
 
 ### Arquiteturas e modelos
 
@@ -89,6 +88,7 @@ A validação é arquitetural e não equivale a teste com usuários, design, alg
 - [Validação sem Localização](experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
 - [Lista do Mapa](experience-architecture/uxa-028-opportunity-map-list-state.md)
 - [Validação da Lista](experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md)
+- [Mapa sem Resultados](experience-architecture/uxa-030-opportunity-map-no-results-state.md)
 
 ### Resultados Empresariais
 
@@ -99,7 +99,7 @@ A validação é arquitetural e não equivale a teste com usuários, design, alg
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente: validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 
