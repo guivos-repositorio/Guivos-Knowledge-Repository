@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.1.0
+version: 12.2.0
 owner: Guivos
-last_updated: 2026-07-26
+last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.1.0
+  - ROADMAP-12.2.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -23,7 +23,8 @@ related:
   - UXA-024
   - UXA-025
   - UXA-026
-  - M7.27
+  - UXA-027
+  - M7.28
 normative: false
 ---
 
@@ -38,7 +39,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | primeiro estado alternativo do Mapa criado para localização desativada | M7.27; UXA-026 |
+| Marco | estado do Mapa sem localização funcionalmente validado e reformulado | M7.28; UXA-026; UXA-027 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -49,7 +50,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Referência móvel da Home | não iniciada | — |
 | Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado de localização desativada | wireframe móvel criado; validação especializada pendente | UXA-026 |
+| Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Demais estados alternativos | governados; wireframes não iniciados | UXA-025 |
 | Personalização | bloqueada antes de contexto suficiente, revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
@@ -77,7 +78,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - posição do Mapa na navegação recorrente consolidada;
 - wireframe gráfico móvel do Mapa criado;
 - Mapa de Oportunidades funcionalmente validado e reformulado;
-- primeiro estado alternativo do Mapa criado para localização desativada.
+- estado sem localização criado, validado e reformulado.
 
 ### Em validação
 
@@ -89,7 +90,6 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- validação funcional do estado de localização desativada;
 - estado alternativo em Lista;
 - estado sem resultados;
 - referência do Mapa para computador;
@@ -125,20 +125,23 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Estado de localização desativada
+## 5. Estado de localização desativada validado
 
-O wireframe UXA-026 demonstra:
+A UXA-026 e a UXA-027 demonstram:
 
 - exploração geral sem personalização;
 - localização do dispositivo desativada;
-- região escolhida manualmente;
+- confirmação `Posição não acessada`;
+- região escolhida manualmente e distinta da posição pessoal;
 - pesquisa e filtros preservados;
 - Mapa e Lista sincronizados;
-- área territorial sem marcador da pessoa;
+- área territorial sem marcador ou posição presumida;
 - resultados explicados pela região e pela busca;
+- distância pessoal omitida sem origem válida;
 - ativação opcional de localização aproximada;
-- origem manual para rota quando aplicável;
-- continuidade para o Detalhe e salvamento.
+- salvamento sem localização;
+- origem manual para rota;
+- continuidade para o Detalhe.
 
 O mapa desenhado é esquemático e não representa cidade, endereço ou coordenada real.
 
@@ -153,9 +156,12 @@ O mapa desenhado é esquemático e não representa cidade, endereço ou coordena
 - publicidade não aumenta relevância pessoal;
 - localização é opcional;
 - recusa de localização não bloqueia exploração;
+- região manual não equivale a posição atual;
 - localização de participantes não aparece no Mapa;
 - residências e locais sensíveis permanecem protegidos;
 - rastreamento contínuo não é obrigatório;
+- salvamento não autoriza rastreamento;
+- origem manual não autoriza histórico territorial;
 - proximidade não equivale a relevância;
 - rota não contorna endereço protegido;
 - wireframes e validações funcionais não equivalem a design ou implementação.
@@ -171,4 +177,4 @@ O mapa desenhado é esquemático e não representa cidade, endereço ou coordena
 
 ## 8. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do estado sem localização, estado em Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre estado em Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
