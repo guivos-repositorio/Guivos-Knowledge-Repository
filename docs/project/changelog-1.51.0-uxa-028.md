@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.51.0
- title: Histórico de Alterações 1.51.0 — Visualização em Lista do Mapa
+title: Histórico de Alterações 1.51.0 — Visualização em Lista do Mapa
 status: active
 version: 1.51.0
 owner: Guivos
