@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.57.0
+version: 1.58.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 depends_on:
@@ -31,13 +31,14 @@ related:
   - UXA-027
   - UXA-028
   - UXA-029
+  - UXA-030
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.4.0
-  - M7.30
+  - ROADMAP-12.5.0
+  - M7.31
 normative: true
 ---
 
@@ -52,12 +53,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | visualização em Lista do Mapa funcionalmente validada e reformulada | M7.30; UXA-028; UXA-029 |
+| Marco atual | estado móvel do Mapa sem resultados criado | M7.31; UXA-030 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até a validação da Lista do Mapa | UXA-000 a UXA-029 |
+| Arquitetura da Experiência | ativa até o estado sem resultados do Mapa | UXA-000 a UXA-030 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
@@ -67,6 +68,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
+| Estado sem resultados | wireframe móvel criado; validação especializada não iniciada | UXA-030 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
@@ -128,15 +130,34 @@ A visualização em Lista, reformulada pela UXA-029, demonstra:
 - retorno ao Mapa sem perda de contexto;
 - funcionamento integral sem mapa carregado.
 
+## 6. Estado sem resultados
+
+A UXA-030 materializa a ausência legítima de correspondências para uma consulta concluída.
+
+O estado demonstra:
+
+- região, busca e filtros preservados;
+- total consolidado de filtros;
+- `0 resultados correspondem a esta consulta`;
+- `Consulta concluída · nenhuma falha conhecida`;
+- mensagem limitada à consulta atual;
+- ampliação de região, alteração de período, revisão de filtros e edição de busca como ações explícitas;
+- reversão da última alteração quando aplicável;
+- distinção entre ausência, falha de fonte e indisponibilidade temporária;
+- equivalência entre Mapa e Lista;
+- localização opcional e região manual;
+- tratamento textual sem dependência do mapa carregado.
+
 Arquivos vetoriais:
 
 - `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
 - `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`;
-- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`.
+- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
+- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`.
 
-A validação é arquitetural e não equivale a teste com usuários, design ou conformidade técnica de acessibilidade.
+O estado sem resultados ainda não foi funcionalmente validado. Wireframe não equivale a teste com usuários, design ou implementação.
 
-## 6. Proteções vigentes
+## 7. Proteções vigentes
 
 - localização permanece opcional;
 - região manual não equivale a posição atual;
@@ -146,13 +167,16 @@ A validação é arquitetural e não equivale a teste com usuários, design ou c
 - salvamento não autoriza rastreamento;
 - definir origem não autoriza histórico territorial;
 - endereços protegidos não são contornados;
-- personalização exige gate próprio.
+- personalização exige gate próprio;
+- zero legítimo não é confundido com falha de fonte;
+- filtros e região não são alterados silenciosamente;
+- publicidade não preenche artificialmente o estado vazio.
 
-## 7. Próximos atos governados
+## 8. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar o estado sem resultados;
+1. validar funcionalmente o estado sem resultados;
 2. criar referência do Mapa para computador;
 3. criar o wireframe gráfico do início protegido;
 4. criar a referência móvel da Home;
