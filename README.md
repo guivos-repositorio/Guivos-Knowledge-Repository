@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.28 — Estado do Mapa sem Localização Validado e Reformulado |
+| Marco | M7.29 — Visualização em Lista do Mapa Criada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -23,6 +23,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
 | Estado de localização desativada | funcionalmente validado e reformulado |
+| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente |
 | Demais estados alternativos do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -84,7 +85,29 @@ Arquivo vetorial:
 
 `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`
 
-A referência possui 390 por 844 pixels e não representa geografia real, tecnologia cartográfica, design ou implementação.
+## Visualização em Lista do Mapa
+
+A UXA-028 materializa a Lista como modo integral da mesma consulta territorial do Mapa.
+
+A referência demonstra:
+
+- item `Mapa` preservado na navegação recorrente;
+- alternância interna `Mapa ↔ Lista`;
+- posição não acessada e região manual;
+- pesquisa, filtros e quantidade preservados;
+- ordenação explícita;
+- cartões comparáveis;
+- oportunidade selecionada;
+- explicação de origem e relação comercial;
+- salvamento, definição de origem e Detalhe;
+- retorno ao Mapa sem perda de contexto;
+- alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.
+
+Arquivo vetorial:
+
+`docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
+
+A Lista não duplica `Explorar`. Sua validação funcional especializada permanece pendente.
 
 ## Estado dos Resultados Empresariais
 
@@ -105,7 +128,7 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- estado alternativo em Lista;
+- validação funcional da visualização em Lista;
 - estado sem resultados;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido;
@@ -142,6 +165,7 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Validação Funcional do Mapa](docs/experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
 - [Mapa com Localização Desativada](docs/experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
 - [Validação do Estado sem Localização](docs/experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
+- [Visualização em Lista do Mapa](docs/experience-architecture/uxa-028-opportunity-map-list-state.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
