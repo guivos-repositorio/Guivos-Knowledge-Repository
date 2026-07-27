@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.55.0
- title: Histórico 1.55.0 — Referência Desktop do Mapa
+title: Histórico 1.55.0 — Referência Desktop do Mapa
 status: active
 version: 1.55.0
 owner: Repositório de Conhecimento da Guivos
