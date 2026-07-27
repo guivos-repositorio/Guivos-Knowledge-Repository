@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.5.0
+version: 12.6.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.5.0
+  - ROADMAP-12.6.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -27,7 +27,8 @@ related:
   - UXA-028
   - UXA-029
   - UXA-030
-  - M7.31
+  - UXA-031
+  - M7.32
 normative: false
 ---
 
@@ -42,7 +43,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | estado móvel do Mapa sem resultados criado | M7.31; UXA-030 |
+| Marco | estado do Mapa sem resultados funcionalmente validado e reformulado | M7.32; UXA-030; UXA-031 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -54,7 +55,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
-| Estado sem resultados | wireframe móvel criado; validação especializada pendente | UXA-030 |
+| Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Personalização | bloqueada antes de contexto revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
@@ -77,7 +78,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Mapa principal validado e reformulado;
 - estado sem localização validado e reformulado;
 - visualização em Lista criada, validada e reformulada;
-- wireframe do estado sem resultados criado.
+- estado sem resultados criado, validado e reformulado.
 
 ### Em validação
 
@@ -89,13 +90,13 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- validação funcional do estado sem resultados;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido;
 - referência móvel da Home;
 - estados especializados de texto, voz e arquivos;
 - validação da revisão da compreensão inicial;
-- validação da transição para a primeira Tela Hoje.
+- validação da transição para a primeira Tela Hoje;
+- demais estados alternativos do Mapa.
 
 #### Arquitetura de Negócios
 
@@ -141,24 +142,26 @@ A UXA-028 e a UXA-029 demonstram:
 - retorno ao Mapa sem perda de contexto;
 - funcionamento sem mapa carregado.
 
-A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.
+## 6. Estado sem resultados validado
 
-## 6. Estado sem resultados criado
-
-A UXA-030 demonstra:
+A UXA-030 e a UXA-031 demonstram:
 
 - consulta territorial preservada;
 - zero limitado à região, busca e filtros atuais;
-- confirmação de consulta concluída sem falha conhecida;
+- cobertura verificável e ação `Ver cobertura`;
+- confirmação `Consulta concluída · cobertura verificada · atualizada agora`;
 - ações independentes para ampliar região, alterar período, revisar filtros e editar busca;
-- reversão da última alteração quando aplicável;
-- distinção entre ausência, falha de fonte e indisponibilidade temporária;
+- revisão obrigatória antes de aplicar alterações;
+- última alteração identificada e `Desfazer` condicional;
+- seleção anterior fora da consulta atual;
+- distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;
 - continuidade entre Mapa e Lista;
 - localização opcional;
+- exploração geral sem alterar a consulta;
 - ausência de preenchimento comercial ou personalizado artificial;
 - operação textual sem mapa carregado.
 
-A validação funcional especializada permanece não iniciada.
+A validação é arquitetural e não equivale a teste com usuários ou conformidade técnica de acessibilidade.
 
 ## 7. Proteções preservadas
 
@@ -175,7 +178,10 @@ A validação funcional especializada permanece não iniciada.
 - origem manual não autoriza histórico territorial;
 - residências e locais sensíveis permanecem protegidos;
 - zero legítimo não é confundido com erro técnico;
+- cobertura precisa ser explicável;
 - consulta não é alterada silenciosamente;
+- `Desfazer` depende de alteração identificável;
+- seleção anterior não falseia o conjunto atual;
 - wireframes e validações não equivalem a design ou implementação.
 
 ## 8. Distribuição dos candidatos
@@ -189,4 +195,4 @@ A validação funcional especializada permanece não iniciada.
 
 ## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada independente dos testes dos Resultados Empresariais.
