@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.0.0
+version: 5.1.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.2.0
+  - ROADMAP-12.3.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -23,6 +23,7 @@ related:
   - UXA-025
   - UXA-026
   - UXA-027
+  - UXA-028
   - M7.20
   - M7.21
   - M7.22
@@ -32,6 +33,7 @@ related:
   - M7.26
   - M7.27
   - M7.28
+  - M7.29
 normative: false
 ---
 
@@ -59,36 +61,40 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.25 | Concluído | wireframe móvel do Mapa de Oportunidades criado |
 | M7.26 | Concluído | Mapa de Oportunidades funcionalmente validado e reformulado |
 | M7.27 | Concluído | primeiro estado alternativo do Mapa criado para localização desativada |
-| M7.28 | Concluído neste incremento | estado sem localização funcionalmente validado e reformulado |
+| M7.28 | Concluído | estado sem localização funcionalmente validado e reformulado |
+| M7.29 | Concluído neste incremento | visualização em Lista do Mapa criada |
 
 ## 3. Marco vigente
 
-### Estado do Mapa sem Localização Validado e Reformulado — M7.28
+### Visualização em Lista do Mapa Criada — M7.29
 
 Critérios atendidos:
 
-- Mapa preservado como superfície recorrente;
-- localização do dispositivo mantida como opcional;
-- exploração territorial mantida por cidade ou região manual;
-- declaração `Posição não acessada` adicionada;
-- região manual diferenciada explicitamente da posição pessoal;
-- linguagem de exploração geral utilizada sem gate de personalização;
-- busca, filtros, Mapa e Lista preservados;
-- marcador e posição pessoal presumida removidos;
-- resultados relacionados à região e à busca explícita;
-- distância pessoal omitida sem origem válida;
-- salvamento demonstrado sem ativação de localização;
-- origem manual demonstrada para rota;
-- ativação de localização aproximada apresentada como ação secundária e opcional;
-- revisão de privacidade disponível antes da ativação;
-- recusa de localização sem bloqueio de Detalhe ou salvamento;
-- arquivo vetorial móvel reformulado em 390 por 844 pixels;
-- demais estados gráficos e referência para computador preservados como atos separados;
+- Lista materializada como modo interno da superfície Mapa;
+- item `Mapa` preservado na navegação recorrente;
+- alternância `Mapa ↔ Lista` demonstrada;
+- diferença funcional entre Lista do Mapa e `Explorar` registrada;
+- posição não acessada e região manual preservadas no exemplo;
+- pesquisa, filtros e quantidade de resultados mantidos;
+- ordenação explícita demonstrada;
+- cartões comparáveis criados;
+- oportunidade selecionada preservada;
+- explicação de origem e relação comercial separadas;
+- salvamento, definição de origem e Detalhe demonstrados;
+- retorno ao Mapa sem perda de contexto governado;
+- Lista estabelecida como alternativa integral para acessibilidade, baixa conectividade e falha cartográfica;
+- arquivo vetorial móvel criado em 390 por 844 pixels;
+- validação funcional especializada preservada como ato posterior;
+- estado sem resultados e referência para computador não iniciados;
 - tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Estado do Mapa sem Localização Validado e Reformulado — M7.28
+
+A UXA-026 e a UXA-027 permanecem como contrato validado para uso integral sem localização do dispositivo.
 
 ### Estado do Mapa sem Localização Criado — M7.27
 
@@ -129,7 +135,7 @@ COD-018 permanece integrado, com BUS-CAND-010 fundido em BUS-CAND-005 e nenhum R
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; estado sem localização validado; estados e transições posteriores aguardando autorização |
+| Arquitetura da Experiência | ativa; visualização em Lista criada; validação e estados posteriores aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -141,7 +147,7 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. criar o estado alternativo em Lista;
+1. validar funcionalmente a visualização em Lista;
 2. criar o estado sem resultados;
 3. criar referência do Mapa para computador;
 4. criar o wireframe do início protegido;
