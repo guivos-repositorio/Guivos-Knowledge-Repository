@@ -1,8 +1,8 @@
 ---
 id: UXA-032
 title: Wireframe de Baixa Fidelidade do Mapa de Oportunidades — Referência para Computador
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-024
@@ -28,6 +28,7 @@ related:
   - UXA-020
   - UXA-022
   - UXA-023
+  - UXA-033
 normative: false
 ---
 
@@ -35,13 +36,15 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa a primeira referência do Mapa de Oportunidades para computador, preservando os contratos funcionais já validados no canal móvel.
+Este documento materializa a referência funcionalmente validada e reformulada do Mapa de Oportunidades para computador.
 
-A referência verifica como a superfície pode utilizar espaço amplo para manter simultaneamente contexto, pesquisa, filtros, área territorial, Lista da mesma consulta, oportunidade selecionada, explicabilidade, relação comercial, privacidade e continuidade para o Detalhe.
+A superfície utiliza espaço amplo para manter simultaneamente contexto, consulta territorial, pesquisa, filtros, Mapa, Lista da mesma consulta, oportunidade selecionada, explicabilidade, relação comercial, privacidade e continuidade para o Detalhe.
 
-O incremento não cria um produto diferente, um novo catálogo ou uma experiência exclusiva para computador. Mapa e Lista continuam representando a mesma consulta territorial.
+O incremento não cria produto, catálogo ou experiência exclusivos para computador. Mapa e Lista continuam representando a mesma consulta territorial.
 
-O artefato não representa design visual, identidade final, tecnologia cartográfica, dados de produção, algoritmo, componente técnico, responsividade concluída ou implementação.
+O artefato não representa identidade visual final, tecnologia cartográfica, dados de produção, algoritmo, componente técnico, responsividade concluída ou implementação.
+
+A validação funcional está registrada em [UXA-033](uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md).
 
 ## 2. Posição na experiência
 
@@ -55,99 +58,119 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O item `Mapa` permanece selecionado na navegação principal.
+O item `Mapa` permanece selecionado.
 
-A referência para computador não altera a ordem da primeira entrada e não transforma o Mapa em etapa obrigatória da jornada.
+A referência para computador não altera a primeira entrada e não transforma o Mapa em etapa obrigatória.
 
-## 3. Artefatos visuais
+## 3. Artefatos visuais reformulados
 
 ### 3.1 Estado com resultados
 
-![Referência para computador do Mapa de Oportunidades com resultados](../assets/wireframes/uxa-032-opportunity-map-desktop.svg)
+![Referência reformulada para computador do Mapa com resultados](../assets/wireframes/uxa-032-opportunity-map-desktop.svg)
 
-Arquivo vetorial:
+Arquivo:
 
 `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`
 
 ### 3.2 Estado sem resultados
 
-![Referência para computador do Mapa de Oportunidades sem resultados](../assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg)
+![Referência reformulada para computador do Mapa sem resultados](../assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg)
 
-Arquivo vetorial:
+Arquivo:
 
 `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`
 
-Dimensão de referência dos dois arquivos:
+Dimensão de referência:
 
 - canal: aplicação web para computador;
 - largura: 1.440 pixels;
 - altura: 1.024 pixels;
-- condição territorial ilustrada: localização desativada, posição não acessada e região escolhida manualmente;
-- condição funcional principal: Mapa e Lista da mesma consulta apresentados lado a lado;
-- condição alternativa: consulta concluída com zero correspondências e cobertura verificável.
+- localização ilustrada: desativada;
+- posição: não acessada;
+- região: escolhida manualmente;
+- disposição padrão: visão dividida;
+- estado principal: oito resultados;
+- estado alternativo: zero resultados com cobertura verificável.
 
-A dimensão verifica distribuição horizontal e densidade. Ela não define largura máxima, grade final, pontos de quebra, comportamento de tablet ou responsividade completa.
+A dimensão verifica distribuição e densidade. Ela não define pontos de quebra, tablet ou responsividade completa.
 
-## 4. Pergunta da referência
+## 4. Pergunta validada
 
-> **Em uma tela ampla, a pessoa consegue compreender e controlar uma única consulta territorial enquanto vê, sem contradição, o Mapa, a Lista, os filtros, a privacidade, a seleção e as condições da oportunidade?**
+> **Em tela ampla, a pessoa consegue compreender e controlar uma única consulta territorial enquanto vê Mapa, Lista, filtros, seleção, privacidade e condições sem contradição ou sobrecarga funcional?**
 
-## 5. Princípio de paridade entre canais
+A UXA-033 concluiu que a resposta é positiva após as reformulações descritas neste documento.
 
-A referência para computador deverá preservar as mesmas regras funcionais do canal móvel.
+## 5. Paridade entre canais
+
+A referência para computador preserva as regras do canal móvel.
 
 Ela não poderá:
 
 - criar filtros exclusivos sem equivalência funcional;
 - alterar silenciosamente região, busca, filtros ou ordenação;
-- utilizar uma fonte de resultados diferente da Lista móvel;
-- transformar o painel lateral em catálogo independente;
-- ativar localização por haver mais espaço disponível;
-- revelar endereço, residência ou local sensível;
+- utilizar fonte de resultados diferente da Lista móvel;
+- transformar a Lista em catálogo independente;
+- ativar localização por haver mais espaço;
+- revelar residência ou local sensível;
 - promover publicidade como relevância funcional;
-- criar personalização sem o gate aplicável.
+- criar personalização sem gate;
+- mudar significado ao alterar disposição.
 
 Diferenças de disposição são permitidas. Diferenças de significado não são.
 
 ## 6. Estrutura de tela ampla
 
-A referência utiliza quatro faixas funcionais:
+A referência utiliza:
 
 ```text
 cabeçalho e navegação recorrente
-→ contexto, estado territorial e pesquisa
-→ filtros laterais + campo territorial + Lista da mesma consulta
-→ oportunidade selecionada, explicações e ações
+→ contexto territorial e privacidade
+→ consulta territorial ativa e pesquisa
+→ filtros + Mapa + Lista
+→ painel contextual recolhível da seleção
 ```
 
 A área principal é distribuída em três colunas:
 
-1. **painel de consulta e filtros**;
+1. **consulta e filtros**;
 2. **campo territorial do Mapa**;
-3. **Lista e oportunidade selecionada**.
+3. **Lista da mesma consulta**.
 
-As colunas pertencem à mesma consulta e deverão utilizar a mesma versão de dados.
+As três colunas utilizam a mesma região, busca, filtros, quantidade e atualização.
 
-## 7. Cabeçalho e navegação
+## 7. Faixa compartilhada da consulta
+
+A reformulação acrescenta uma declaração transversal:
+
+> **Consulta territorial ativa · mesma região, busca, filtros e atualização**
+
+No estado com resultados:
+
+> **8 resultados · atualizada agora**
+
+No estado sem resultados:
+
+> **0 resultados · cobertura verificada · atualizada agora**
+
+A faixa evita a percepção de três buscas independentes.
+
+Nenhum painel poderá manter versão divergente da consulta.
+
+## 8. Cabeçalho, contexto e navegação
 
 O cabeçalho apresenta:
 
-- identificação `Mapa de Oportunidades`;
-- contexto `Agindo como`;
-- navegação `Hoje | Jornada | Explorar | Mapa | Eu`;
-- item `Mapa` selecionado;
-- acesso a privacidade e controles de conta;
-- indicação de exploração geral ou personalização aplicável.
-
-O contexto ilustrado utiliza:
-
-> **Agindo como: Pessoa**
-
-> **Exploração geral · sem personalização**
+- `Mapa de Oportunidades`;
+- `Agindo como: Pessoa`;
+- `Exploração geral · sem personalização`;
+- `Hoje | Jornada | Explorar | Mapa | Eu`;
+- `Mapa` selecionado;
+- conta e controles;
+- privacidade territorial.
 
 A disposição horizontal não autoriza ocultar o contexto de atuação.
 
-## 8. Localização opcional e região manual
+## 9. Localização opcional e região manual
 
 O estado principal demonstra:
 
@@ -155,138 +178,161 @@ O estado principal demonstra:
 
 > **Região manual · não é sua posição**
 
-A pessoa poderá:
+A pessoa poderá alterar a região, ativar localização aproximada voluntariamente, usar localização exata temporária com finalidade e duração explícitas ou continuar sem compartilhar posição.
 
-- alterar a região manual;
-- ativar localização aproximada de forma voluntária;
-- usar localização exata temporária com finalidade e duração explícitas;
-- continuar sem compartilhar posição;
-- abrir a explicação de privacidade.
+O Mapa não apresenta marcador pessoal.
 
-O mapa não apresenta marcador da pessoa no estado ilustrado.
+Região manual não equivale a residência, posição atual ou histórico territorial.
 
-A região manual não poderá ser tratada como residência, posição atual ou histórico territorial.
+## 10. Pesquisa territorial
 
-## 9. Pesquisa e atualização territorial
+A pesquisa permanece acima do conjunto principal.
 
-A pesquisa permanece visível acima do conjunto principal e poderá abranger oportunidades, Organizações, Coletivos, atividades, eventos, categorias e regiões.
+A consulta reconhece oportunidades, Organizações, Coletivos, atividades, eventos, categorias e regiões.
 
-Quando a área cartográfica for movida, a superfície deverá oferecer:
+Busca, região e filtros permanecem dimensões distintas.
 
-> **Pesquisar nesta área**
+`Limpar busca` não apaga região ou filtros.
 
-A movimentação não atualiza resultados silenciosamente.
+## 11. Consistência dos filtros
 
-A região ativa, o texto pesquisado e o horário da atualização deverão permanecer reconhecíveis nos três painéis.
+Resumo e controles detalhados utilizam os mesmos valores:
 
-## 10. Painel de filtros
+- `Hoje e próximos 7 dias`;
+- `Gratuitas e preço informado`;
+- `Presencial e online`;
+- `Acessibilidade confirmada ou informada`.
 
-O painel esquerdo demonstra:
+O painel também poderá abrir categoria, disponibilidade, fonte, Organização, Coletivo e relação comercial.
 
-- filtros ativos;
-- total consolidado;
-- revisão individual;
-- ação explícita para limpar filtros;
-- período;
-- preço;
-- modalidade;
-- acessibilidade;
-- disponibilidade;
-- categoria;
-- Organização ou Coletivo;
-- origem e confiança da fonte;
-- relação comercial;
-- vínculo com objetivo ou Próximo Passo somente quando o gate estiver atendido.
+Vínculo com objetivo ou Próximo Passo somente poderá aparecer quando o gate estiver atendido.
 
 `Limpar filtros` não apaga busca ou região.
 
-Filtros incompatíveis após alteração territorial deverão ser informados antes de remoção.
+Filtros incompatíveis após alteração territorial serão informados antes de qualquer remoção.
 
-## 11. Mapa e Lista integrados
+## 12. Visão dividida e modos de foco
 
-Em tela ampla, Mapa e Lista poderão ser apresentados simultaneamente.
+A disposição padrão declara:
 
-A Lista lateral deverá declarar:
+> **Visão dividida ativa**
 
-> **Lista territorial · mesma consulta do Mapa**
+As ações são:
 
-A apresentação simultânea não cria dois modos independentes. Deverão permanecer sincronizados:
+- `Focar no Mapa`;
+- `Focar na Lista`;
+- `Voltar à visão dividida` nos estados concentrados.
 
-- região;
-- busca;
-- filtros;
-- quantidade;
-- atualização;
-- ordenação;
-- oportunidade selecionada;
-- explicação da origem;
-- relação comercial;
-- estado territorial.
+Foco não cria nova consulta e não modifica região, busca, filtros, quantidade, atualização, ordenação, seleção, localização ou permissões.
 
-A pessoa poderá ampliar o Mapa ou a Lista para leitura concentrada, sem redefinir a consulta.
+Ao retornar, o contexto e a posição de leitura deverão ser preservados quando materialmente possível.
 
-## 12. Campo territorial
+## 13. Movimento do Mapa
 
-O campo central permanece o maior elemento visual e poderá mostrar:
+Antes de qualquer movimento, o campo declara:
+
+> **Área atual · resultados atualizados**
+
+`Pesquisar nesta área` somente aparece após movimento material do Mapa.
+
+O estado pendente deverá declarar:
+
+> **Área movida · resultados ainda correspondem à consulta anterior**
+
+Mover o campo cartográfico não executa nova consulta silenciosamente.
+
+## 14. Campo territorial
+
+O Mapa permanece o maior elemento visual e poderá apresentar:
 
 - oportunidades;
 - Organizações;
 - Coletivos;
-- eventos e atividades;
+- eventos;
+- atividades;
 - experiências públicas;
 - pontos de apoio;
 - locais salvos;
-- agrupamentos numéricos;
+- agrupamentos;
 - camadas e legenda.
 
-Forma e texto deverão acompanhar qualquer uso de cor.
+Forma e texto acompanham qualquer uso de cor.
 
-A ausência de marcador pessoal deverá ser coerente com o estado de localização.
+A legenda declara que nenhum símbolo representa a posição da pessoa.
 
-## 13. Lista e comparação
+## 15. Lista territorial comparável
 
-A Lista lateral deverá permitir comparação rápida por:
+A Lista declara:
+
+> **Lista territorial · mesma consulta ativa do Mapa**
+
+Cada cartão visível deverá apresentar, de forma compacta:
 
 - tipo;
-- modalidade;
-- região ou disponibilidade online;
 - título;
 - responsável;
+- modalidade;
+- região ou condição online;
 - data ou prazo;
 - preço;
 - disponibilidade;
 - acessibilidade;
 - origem funcional;
-- relação comercial.
+- relação comercial;
+- `Por que aparece aqui?`.
 
-Dados ausentes serão apresentados como não informados, não como inexistentes.
+Dados ausentes serão declarados como não informados.
 
-A ordenação deverá permanecer explícita e explicável.
+A ordenação informa seu critério e oferece:
 
-## 14. Oportunidade selecionada
+> **Entender ordenação**
 
-A seleção deverá ser reconhecível simultaneamente no Mapa e na Lista.
+## 16. Seleção sincronizada
 
-O painel da oportunidade selecionada apresenta:
+A mesma oportunidade utiliza o vínculo:
+
+> **Marcador 1 · selecionada**
+
+O identificador conecta:
+
+- marcador no Mapa;
+- cartão na Lista;
+- painel contextual.
+
+A seleção não altera ordenação, relevância ou permissões.
+
+Ela permanece ao focar Mapa, focar Lista, abrir o Detalhe ou retornar.
+
+## 17. Painel contextual recolhível
+
+A oportunidade selecionada abre um:
+
+> **Painel contextual recolhível**
+
+O painel apresenta:
 
 - título e responsável;
 - tipo e modalidade;
-- região ou distância quando válida;
+- região ou distância válida;
 - data ou disponibilidade;
-- preço e condições resumidas;
+- preço;
+- vagas;
 - acessibilidade;
-- razão de presença na consulta;
-- relação comercial;
 - condição do endereço;
-- ações `Ver detalhes`, `Salvar` e `Definir origem` ou rota quando aplicável.
+- razão funcional;
+- relação comercial;
+- `Ver detalhes`;
+- `Salvar`;
+- `Definir origem`, quando aplicável;
+- ação `Recolher`.
 
-A seleção não altera ordenação nem relevância.
+Recolher o painel preserva seleção e devolve espaço para comparação.
 
-O painel não substitui o Detalhe de Oportunidade.
+O painel não substitui o Detalhe.
 
-## 15. Explicabilidade e relação comercial
+## 18. Explicabilidade e relação comercial
 
-A pessoa deverá poder abrir:
+A pessoa poderá abrir:
 
 - `Por que aparece aqui?`;
 - `Entender ordenação`;
@@ -295,58 +341,93 @@ A pessoa deverá poder abrir:
 - `Privacidade`;
 - explicação da relação comercial.
 
-A relação comercial permanece separada da razão funcional da presença e da posição na Lista.
+A relação comercial utiliza rótulo explícito e permanece separada da origem funcional e da posição na Lista.
 
 Patrocínio, comissão, popularidade ou proximidade isolada não constituem recomendação pessoal.
 
-## 16. Continuidade com o Detalhe
+## 19. Continuidade com o Detalhe
 
-Ao abrir o Detalhe, deverão ser preservados quando aplicável:
+Ao abrir e retornar do Detalhe, permanecem quando aplicável:
 
-- contexto `Agindo como`;
+- `Agindo como`;
 - região;
 - busca;
 - filtros;
-- ordenação;
 - quantidade;
+- atualização;
+- ordenação;
 - posição da Lista;
-- oportunidade selecionada;
+- seleção;
+- modo de foco;
 - estado de localização;
 - origem da navegação.
 
-Ao retornar, a pessoa deverá recuperar o mesmo contexto, salvo alteração de disponibilidade claramente informada.
+Mudança real de disponibilidade será informada.
 
-## 17. Estado sem resultados para computador
+## 20. Estado sem resultados
 
-O segundo artefato utiliza a mesma estrutura, com:
+O estado alternativo preserva:
 
-- região, busca e filtros preservados;
+- região;
+- busca;
+- quatro filtros consistentes;
+- contexto;
+- localização desativada;
+- região manual;
+- total zero;
+- cobertura;
+- atualização;
+- seleção anterior, quando existir.
+
+A recuperação principal fica concentrada no painel `Consulta e filtros`.
+
+O centro apresenta:
+
 - `0 resultados correspondem a esta consulta`;
-- `Consulta concluída · cobertura verificada`;
-- ação `Ver cobertura`;
-- mensagem limitada à consulta atual;
-- revisão antes de aplicar qualquer ajuste;
-- ações independentes para região, período, filtros e busca;
-- `Desfazer` somente quando houver alteração identificada;
-- exploração geral sem alterar a consulta territorial;
-- tratamento de seleção anterior sem reinserir o item no total zero;
-- equivalência entre o campo territorial e a Lista.
+- `Sua consulta permanece intacta`;
+- cobertura limitada à atualização atual;
+- `Revisar consulta preservada`;
+- `Explorar sem alterar esta consulta`.
 
-A área vazia do Mapa não é o único sinal. O diagnóstico e as ações são textuais.
+A Lista apresenta o mesmo diagnóstico e orienta o uso do painel de consulta, sem repetir todas as ações.
 
-## 18. Estados sem localização e sem mapa carregado
+## 21. Recuperação consciente
 
-A Lista, os filtros, o diagnóstico e as ações essenciais deverão continuar operáveis quando:
+As ações independentes permanecem:
 
-- a localização estiver desativada;
-- o fornecedor cartográfico estiver indisponível;
-- o mapa não carregar;
+- `Ampliar região`;
+- `Alterar período`;
+- `Revisar filtros`;
+- `Editar busca`;
+- `Desfazer`, quando houver alteração identificável.
+
+A pessoa revisa valor atual, valor proposto, dimensões preservadas e efeito possível antes de aplicar.
+
+A interface não altera automaticamente região, período, filtros, busca, localização ou personalização.
+
+## 22. Seleção anterior no total zero
+
+Quando houver seleção incompatível com a consulta atual, a Lista declara:
+
+> **Seleção anterior fora da consulta atual**
+
+A oportunidade não integra o total zero.
+
+A pessoa poderá abrir o Detalhe, remover a seleção, desfazer alteração compatível ou manter a consulta.
+
+## 23. Estados sem mapa carregado
+
+Lista, filtros, diagnóstico e ações essenciais continuam operáveis quando:
+
+- localização estiver desativada;
+- fornecedor cartográfico estiver indisponível;
+- Mapa não carregar;
 - houver baixa conectividade;
-- o dispositivo utilizar ampliação ou tecnologia assistiva.
+- houver ampliação ou tecnologia assistiva.
 
-A Lista constitui alternativa integral, não contingência inferior.
+A Lista é alternativa integral, não contingência inferior.
 
-## 19. Privacidade e proteção territorial
+## 24. Privacidade territorial
 
 A referência preserva:
 
@@ -362,47 +443,50 @@ A referência preserva:
 
 Mais espaço visual não autoriza mais coleta.
 
-## 20. Acessibilidade e resiliência
+## 25. Acessibilidade funcional
 
-A referência deverá:
+A ordem funcional é:
 
-- manter ordem de leitura coerente entre cabeçalho, filtros, Mapa, Lista e seleção;
-- permitir salto direto para Mapa, Lista, filtros e oportunidade selecionada;
-- anunciar quantidade, atualização, localização e estado da consulta;
-- não depender somente de cor, posição ou cartografia;
-- oferecer controles operáveis por teclado;
-- manter textos compreensíveis isoladamente;
-- preservar conteúdo durante falha cartográfica;
-- permitir ampliação da Lista para leitura concentrada.
+```text
+cabeçalho e contexto
+→ consulta territorial ativa
+→ pesquisa
+→ filtros
+→ Mapa
+→ Lista
+→ painel contextual
+```
 
-Este incremento não conclui conformidade técnica de acessibilidade.
+A superfície deverá permitir acesso direto a consulta, filtros, Mapa, Lista e seleção.
 
-## 21. Critérios de validação posterior
+Quantidade, atualização, localização, cobertura, foco e seleção deverão ser anunciáveis textualmente.
 
-A validação funcional especializada deverá verificar:
+Esta referência não conclui conformidade técnica de acessibilidade.
 
-- se a pessoa entende que Mapa e Lista representam a mesma consulta;
-- se o painel de filtros não parece uma busca independente;
-- se o contexto `Agindo como` permanece visível;
-- se localização desativada e região manual são compreendidas;
-- se a seleção é reconhecida no Mapa e na Lista;
-- se quantidade, ordenação e atualização são consistentes;
-- se explicação funcional e relação comercial permanecem separadas;
-- se abrir e retornar do Detalhe preserva contexto;
-- se o estado zero mantém diagnóstico e recuperação claros;
-- se a Lista continua integral sem mapa carregado;
-- se a distribuição horizontal não cria sobrecarga ou perda de prioridade.
+## 26. Resultado da validação
 
-## 22. Limites
+A UXA-033 considera a referência **funcionalmente válida após reformulação**.
+
+Foram corrigidos:
+
+- contradições entre filtros resumidos e detalhados;
+- ambiguidade de `Ampliar`;
+- atualização territorial sem estado pendente;
+- vínculo insuficiente da seleção;
+- cartões secundários pouco comparáveis;
+- painel selecionado que comprimida a Lista sem condição de recolhimento;
+- repetição de recuperação no estado zero.
+
+## 27. Limites
 
 Este incremento não:
 
-- define fornecedor ou tecnologia de mapas;
+- define tecnologia de mapas;
 - cria geocodificação, rotas ou rastreamento;
 - define algoritmo de busca, recomendação ou ordenação;
-- define cobertura de fontes de produção;
-- cria dados, cidades ou oportunidades reais;
-- define identidade visual, ícones, cores ou tipografia finais;
+- define cobertura real de fontes;
+- cria dados reais;
+- define identidade visual final;
 - conclui pontos de quebra ou responsividade;
 - cria referência específica para tablet;
 - cria protótipo navegável;
@@ -410,16 +494,16 @@ Este incremento não:
 - conclui acessibilidade técnica;
 - inicia Engenharia de Produto.
 
-## 23. Próximos atos governados
+## 28. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente a referência do Mapa para computador;
-2. criar o wireframe gráfico do início protegido;
-3. criar a referência móvel da Página Inicial pública;
-4. validar a revisão da compreensão inicial;
-5. validar a transição para a primeira Tela Hoje;
-6. criar outros estados especializados do Mapa;
+1. criar o wireframe gráfico do início protegido;
+2. criar a referência móvel da Página Inicial pública;
+3. validar a revisão da compreensão inicial;
+4. validar a transição para a primeira Tela Hoje;
+5. criar outros estados especializados do Mapa;
+6. criar referência específica para tablet, caso priorizada;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
