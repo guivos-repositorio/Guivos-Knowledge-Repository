@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-26
 parent: UXA-000
@@ -22,6 +22,7 @@ related:
   - UXA-023
   - UXA-024
   - UXA-025
+  - UXA-026
   - PAS-001
 normative: false
 ---
@@ -55,8 +56,9 @@ A correção formal está registrada em [Correção da Ordem Funcional da Primei
 5. **Wireframe da Tela Hoje** — UXA-006, depois da compreensão inicial suficiente e autorizada;
 6. **Wireframe reformulado do Mapa de Oportunidades** — UXA-024, como superfície recorrente própria;
 7. **Validação Funcional do Mapa de Oportunidades** — UXA-025;
-8. **Wireframe do Detalhe de Oportunidade** — UXA-007;
-9. **Wireframe do Cadastro pela Organização** — UXA-008.
+8. **Estado do Mapa com Localização Desativada** — UXA-026;
+9. **Wireframe do Detalhe de Oportunidade** — UXA-007;
+10. **Wireframe do Cadastro pela Organização** — UXA-008.
 
 O Mapa não entra entre a Home e a Tela Hoje. Ele integra a navegação recorrente e pode ser acessado pela Home, por Explorar, pelo bloco `Perto de mim` e pelo Detalhe de Oportunidade.
 
@@ -84,6 +86,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A pessoa reconhece que a Home pública não coleta relatos pessoais?
 - O participante compreende o que merece atenção na Tela Hoje?
 - A alternância entre Lista e Mapa representa a mesma descoberta?
+- O Mapa continua compreensível quando a localização está desativada?
 - Preço, condições, elegibilidade, origem e relação comercial estão claros?
 - Ações principais e alternativas são distinguíveis?
 
@@ -93,6 +96,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A Home apresenta propósito antes das soluções comerciais?
 - Os caminhos pessoal, geral e institucional permanecem distintos?
 - O Mapa preserva espaço territorial sem ocultar pesquisa, filtros, resultados e privacidade?
+- O estado sem localização apresenta região manual antes dos resultados?
 - O cartão selecionado oferece contexto suficiente antes do detalhe?
 - Estados vazios e ausência legítima permanecem possíveis?
 
@@ -102,13 +106,15 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 - A pessoa escolhe como relatar no ambiente protegido?
 - O participante consegue alterar filtros, raio, localização e relevância?
 - Localização exata, aproximada, manual e desativada são alternativas reais?
-- O fluxo evita pressionar contratação ou inscrição?
+- A recusa de localização preserva busca, Mapa, Lista e Detalhe?
+- O fluxo evita pressionar contratação, inscrição ou consentimento?
 
 ### 5.4 Continuidade
 
 - A Home conduz naturalmente ao início protegido, à compreensão e à Tela Hoje?
 - A Tela Hoje conduz ao Mapa por um recorte compacto, sem incorporar o mapa completo?
 - Explorar e Mapa permanecem sincronizados?
+- O estado sem localização preserva região, busca e filtros ao alternar para Lista?
 - O Mapa conduz ao Detalhe de Oportunidade preservando contexto e condições?
 - O cadastro organizacional produz informações suficientes para cartão, detalhe, mapa, busca e comparação?
 
@@ -123,6 +129,7 @@ Wireframes textuais e arquivos gráficos vetoriais possuem natureza preparatóri
 | círculos numerados | etapas ou agrupamentos |
 | linhas e formas esquemáticas | estrutura territorial sem geografia real |
 | marca textual | filtro ativo ou estado confirmado sem dependência exclusiva de cor |
+| ausência de marcador | localização da pessoa não utilizada ou não disponível |
 
 Cor, iconografia e tipografia não possuem significado definitivo neste programa.
 
@@ -133,6 +140,7 @@ Cor, iconografia e tipografia não possuem significado definitivo neste programa
 | Página Inicial pública da Guivos | web para computador | 1.440 × 2.200 |
 | Tela Hoje | aplicativo móvel | 390 × 844 |
 | Mapa de Oportunidades | aplicativo móvel | 390 × 844 |
+| Mapa — localização desativada | aplicativo móvel | 390 × 844 |
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
 
@@ -155,6 +163,12 @@ Explorar em lista
 ↔ visualizar no Mapa
 ↔ abrir Detalhe de Oportunidade
 
+Localização desativada
+→ escolher cidade ou região
+→ explorar no Mapa ou na Lista
+→ abrir Detalhe
+→ definir origem manual ou ativar localização opcionalmente
+
 Organização
 → cadastro governado da oportunidade
 → avaliação e ativação
@@ -176,37 +190,36 @@ Antes da compreensão inicial confirmada, as soluções poderão apresentar some
 | [Wireframe da Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | Tela Hoje | [arquivo vetorial](../assets/wireframes/uxa-006-hoje-mobile.svg) |
 | [Wireframe reformulado do Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa recorrente | [arquivo vetorial](../assets/wireframes/uxa-024-opportunity-map-mobile.svg) |
 | [Validação Funcional do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md) | UXA-025 | Mapa recorrente | reformulação e critérios funcionais |
+| [Mapa com Localização Desativada](uxa-026-opportunity-map-location-disabled-state.md) | UXA-026 | estado alternativo | [arquivo vetorial](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg) |
 | [Wireframe do Detalhe de Oportunidade](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | [arquivo vetorial](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg) |
 | [Wireframe do Cadastro pela Organização](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | [arquivo vetorial](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg) |
 
 ## 10. Resultado validado do Mapa
 
-O wireframe reformulado do Mapa demonstra:
-
-- `Agindo como: Minha jornada`;
-- pesquisa territorial;
-- alternância entre Mapa e Lista;
-- filtros ativos identificados;
-- quantidade de filtros e ação de limpeza;
-- quantidade de resultados na área;
-- `Pesquisar nesta área`;
-- mapa esquemático sem geografia real;
-- camadas, agrupamentos, pontos e legenda;
-- localização aproximada declarada;
-- controles de privacidade encontráveis;
-- cartão resumido de oportunidade;
-- preço, distância, data, vagas, acessibilidade e origem;
-- explicação de relevância e relação comercial;
-- rota condicionada à disponibilidade segura do endereço;
-- navegação recorrente com Mapa selecionado.
+O wireframe reformulado do Mapa demonstra contexto de atuação, pesquisa territorial, Mapa e Lista sincronizados, filtros ativos, resultados, `Pesquisar nesta área`, mapa esquemático, camadas, legenda, localização aproximada, privacidade, cartão resumido, relação comercial e rota contextual.
 
 A UXA-025 considera o Mapa funcionalmente válido após reformulação.
 
-## 11. Estados funcionais do Mapa
+## 11. Estado de localização desativada
 
-Estão governados, sem wireframes específicos neste incremento:
+A UXA-026 demonstra:
 
-- localização desativada;
+- exploração geral sem personalização;
+- região escolhida manualmente;
+- pesquisa, filtros e resultados preservados;
+- Mapa sem marcador da pessoa;
+- Lista como alternativa integral;
+- oportunidade explicada por região e busca;
+- distância pessoal omitida;
+- ativação opcional de localização aproximada;
+- origem manual para rota quando aplicável.
+
+A validação funcional especializada deste estado permanece pendente.
+
+## 12. Demais estados funcionais do Mapa
+
+Permanecem governados, sem wireframes específicos neste incremento:
+
 - localização aproximada;
 - localização exata temporária;
 - ausência de resultados;
@@ -219,7 +232,7 @@ Estão governados, sem wireframes específicos neste incremento:
 - contexto sem gate;
 - mapa indisponível com continuidade pela Lista.
 
-## 12. Limites
+## 13. Limites
 
 Este programa não:
 
@@ -234,16 +247,16 @@ Este programa não:
 - define preço ou oferta comercial real;
 - inicia Engenharia de Produto.
 
-## 13. Próximos pontos de decisão
+## 14. Próximos pontos de decisão
 
 Os próximos pontos deverão ser autorizados separadamente e poderão:
 
-1. criar estados alternativos do Mapa, começando por Lista ou localização desativada;
-2. criar referência do Mapa para computador;
-3. criar o wireframe gráfico do início protegido;
-4. criar a referência móvel da Home;
-5. validar a compreensão inicial e seus controles;
-6. detalhar a primeira Tela Hoje após a transição;
+1. validar funcionalmente o estado de localização desativada;
+2. criar o estado alternativo em Lista;
+3. criar o estado sem resultados;
+4. criar referência do Mapa para computador;
+5. criar o wireframe gráfico do início protegido;
+6. criar a referência móvel da Home;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.
