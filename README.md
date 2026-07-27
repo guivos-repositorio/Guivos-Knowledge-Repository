@@ -9,25 +9,24 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.29 — Visualização em Lista do Mapa Criada |
+| Marco | M7.30 — Visualização em Lista do Mapa Validada e Reformulada |
 | Remediação | concluída; validação mecânica permanente ativa |
-| Revisão da Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
+| Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
 | Modelo Econômico | GEM-001 a GEM-010 documentariamente concluídos |
 | Resultados Empresariais | 9 em validação, 3 fundidos e 6 rejeitados |
 | Resultados canônicos | nenhum criado |
-| Página Inicial pública | validada e materializada para computador |
-| Início protegido da jornada | funcionalmente validado e reformulado |
-| Wireframe do início protegido | não iniciado |
+| Home pública | validada e materializada para computador |
+| Início protegido | funcionalmente validado; wireframe pendente |
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa de Oportunidades | funcionalmente validado e reformulado |
-| Estado de localização desativada | funcionalmente validado e reformulado |
-| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente |
-| Demais estados alternativos do Mapa | governados; wireframes não iniciados |
+| Estado sem localização | funcionalmente validado e reformulado |
+| Lista do Mapa | funcionalmente validada e reformulada |
+| Demais estados do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Validação de Mercado | trilha operacional paralela preservada |
+| Validação de Mercado | trilha paralela preservada |
 
 ## Sequência pessoal vigente
 
@@ -42,21 +41,17 @@ Página Inicial pública
 
 O Mapa não entra entre a Home e a Tela Hoje.
 
-## Página Inicial pública
+## Página Inicial e início protegido
 
-A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização, distingue caminhos pessoais, gerais e institucionais e não coleta texto pessoal, voz, arquivos ou fontes externas.
+A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização, distingue caminhos pessoais, gerais e institucionais e não coleta relato pessoal.
 
-O wireframe vetorial para computador permanece uma hipótese monocromática de baixa fidelidade. Ele não representa a versão móvel, identidade visual ou implementação.
-
-## Início protegido da jornada
-
-O ambiente protegido explica o processo antes da autenticação e da coleta, separa criação de conta de autorização, preserva compartilhamento mínimo e progressivo, trata texto, voz, arquivos e perguntas como alternativas, exige revisão antes do processamento material, mostra estados e falhas, permite pausa, retirada, correção e exclusão e bloqueia personalização antes do gate.
+O ambiente protegido explica o processo antes da autenticação e da coleta, separa criação de conta de autorização, preserva compartilhamento mínimo, exige revisão e bloqueia personalização antes do gate.
 
 ## Mapa de Oportunidades
 
 O Mapa é uma superfície própria da navegação recorrente e foi considerado funcionalmente válido após reformulação.
 
-A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa, Mapa e Lista sincronizados, filtros ativos, resultados da área, `Pesquisar nesta área`, camadas, legenda, localização, privacidade, cartão selecionado, relação comercial e rota contextual.
+A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa, Mapa e Lista sincronizados, filtros, resultados da área, camadas, legenda, privacidade, cartão selecionado, relação comercial e rota contextual.
 
 Arquivo principal:
 
@@ -64,50 +59,38 @@ Arquivo principal:
 
 ## Estado sem localização
 
-A UXA-026 e a UXA-027 estabelecem que a pessoa pode continuar usando o Mapa sem conceder localização do dispositivo.
+A UXA-026 e a UXA-027 estabelecem que a pessoa pode utilizar o Mapa sem conceder localização do dispositivo.
 
-O estado reformulado apresenta:
+O estado apresenta posição não acessada, região manual distinta da posição pessoal, busca, filtros, ausência de marcador, salvamento, origem específica e continuidade para o Detalhe.
 
-- exploração geral sem personalização;
-- confirmação `Posição não acessada`;
-- escolha manual de cidade ou região, distinta da posição pessoal;
-- pesquisa e filtros preservados;
-- Mapa e Lista sincronizados;
-- ausência de marcador ou posição presumida;
-- resultados explicados pela região e pela busca;
-- distância pessoal omitida sem origem válida;
-- ativação opcional de localização aproximada;
-- salvamento sem localização;
-- origem manual para rota;
-- continuidade para o Detalhe.
-
-Arquivo vetorial:
+Arquivo:
 
 `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`
 
-## Visualização em Lista do Mapa
+## Visualização em Lista validada
 
-A UXA-028 materializa a Lista como modo integral da mesma consulta territorial do Mapa.
+A UXA-028 e a UXA-029 estabelecem a Lista como representação textual integral da mesma consulta territorial do Mapa.
 
-A referência demonstra:
+A reformulação apresenta:
 
-- item `Mapa` preservado na navegação recorrente;
-- alternância interna `Mapa ↔ Lista`;
-- posição não acessada e região manual;
-- pesquisa, filtros e quantidade preservados;
-- ordenação explícita;
-- cartões comparáveis;
-- oportunidade selecionada;
-- explicação de origem e relação comercial;
-- salvamento, definição de origem e Detalhe;
+- `LISTA TERRITORIAL DO MAPA · MESMA CONSULTA`;
+- contexto `Agindo como: Pessoa`;
+- região, busca e filtros preservados;
+- total consolidado de filtros;
+- quantidade e atualização dos resultados;
+- ordenação explícita e explicável;
+- cartões comparáveis com dados ausentes declarados;
+- item selecionado preservado;
+- explicação funcional e relação comercial separadas;
+- salvamento, origem e Detalhe sem localização;
 - retorno ao Mapa sem perda de contexto;
-- alternativa integral para acessibilidade, baixa conectividade e falha cartográfica.
+- funcionamento sem mapa carregado.
 
-Arquivo vetorial:
+Arquivo:
 
 `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
 
-A Lista não duplica `Explorar`. Sua validação funcional especializada permanece pendente.
+A referência possui 390 por 844 pixels. A validação é arquitetural e não representa teste com usuários, design ou implementação.
 
 ## Estado dos Resultados Empresariais
 
@@ -128,7 +111,6 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional da visualização em Lista;
 - estado sem resultados;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido;
@@ -158,14 +140,17 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Marcos Arquiteturais](docs/project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](docs/project/canonical-consolidation-matrix.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Página Inicial e Início da Jornada](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Wireframe da Página Inicial Pública](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
+- [Página Inicial e Início](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
+- [Wireframe da Home](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
 - [Validação do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
-- [Wireframe do Mapa de Oportunidades](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
-- [Validação Funcional do Mapa](docs/experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
-- [Mapa com Localização Desativada](docs/experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
-- [Validação do Estado sem Localização](docs/experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
-- [Visualização em Lista do Mapa](docs/experience-architecture/uxa-028-opportunity-map-list-state.md)
+- [Wireframe do Mapa](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
+- [Validação do Mapa](docs/experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
+- [Mapa sem Localização](docs/experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
+- [Validação sem Localização](docs/experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md)
+- [Lista do Mapa](docs/experience-architecture/uxa-028-opportunity-map-list-state.md)
+- [Validação da Lista](docs/experience-architecture/uxa-029-opportunity-map-list-functional-validation-and-reformulation.md)
+- [Adendo Canônico UXA-029](docs/project/canonical-consolidation-matrix-uxa-029-addendum.md)
+- [Histórico 1.52.0](docs/project/changelog-1.52.0-uxa-029.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
