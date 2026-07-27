@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-000
@@ -27,6 +27,7 @@ related:
   - UXA-028
   - UXA-029
   - UXA-030
+  - UXA-031
   - PAS-001
 normative: false
 ---
@@ -65,8 +66,9 @@ A correção formal está registrada em [UXA-003-A1](uxa-003-a1-first-entry-func
 10. visualização em Lista do Mapa — UXA-028;
 11. validação da Lista do Mapa — UXA-029;
 12. estado do Mapa sem resultados — UXA-030;
-13. wireframe do Detalhe — UXA-007;
-14. wireframe do Cadastro pela Organização — UXA-008.
+13. validação do estado sem resultados — UXA-031;
+14. wireframe do Detalhe — UXA-007;
+15. wireframe do Cadastro pela Organização — UXA-008.
 
 O Mapa integra a navegação recorrente e pode ser acessado pela Home, por `Explorar`, pelo bloco `Perto de mim` e pelo Detalhe.
 
@@ -98,6 +100,7 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Dados ausentes são apresentados sem inferência?
 - O total zero é entendido como resultado da consulta atual?
 - Ausência legítima, falha de fonte e indisponibilidade são distinguíveis?
+- A cobertura que sustenta o total zero pode ser verificada?
 
 ### 5.2 Hierarquia
 
@@ -110,6 +113,7 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Os cartões permitem comparação consistente?
 - A oportunidade selecionada permanece reconhecível?
 - O estado sem resultados apresenta diagnóstico antes das ações de recuperação?
+- A última alteração e a seleção anterior aparecem somente quando aplicáveis?
 
 ### 5.3 Autonomia
 
@@ -120,6 +124,7 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - A pessoa pode revisar filtros e ordenação?
 - O fluxo evita pressão para consentimento ou contratação?
 - As ações de recuperação alteram somente a dimensão escolhida?
+- A pessoa revisa a mudança antes de aplicá-la?
 - O estado vazio evita preenchimento patrocinado artificial?
 
 ### 5.4 Continuidade
@@ -130,8 +135,9 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Mapa e Lista preservam região, busca, filtros, quantidade, ordenação e seleção?
 - O Detalhe devolve a pessoa ao mesmo contexto?
 - A Lista funciona sem mapa carregado?
-- Mapa e Lista preservam o mesmo total zero, diagnóstico e ações?
+- Mapa e Lista preservam o mesmo total zero, cobertura, diagnóstico e ações?
 - Uma alteração que produz zero pode ser compreendida e desfeita?
+- Uma seleção anterior permanece explicável sem ser reinserida como resultado?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -147,6 +153,7 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 | ausência de marcador | posição da pessoa não utilizada |
 | declaração textual | confirmação de estado, contexto ou incerteza |
 | campo territorial vazio com mensagem | zero resultados sem depender da ausência visual de marcadores |
+| aviso contextual | última alteração, cobertura ou seleção anterior quando aplicável |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -177,7 +184,7 @@ Página Inicial pública
 → Mapa de Oportunidades
 ↔ Lista territorial do Mapa
 → resultados ou estado sem resultados
-→ Detalhe de Oportunidade, quando houver correspondência
+→ Detalhe de Oportunidade, quando houver correspondência ou seleção anterior disponível
 → decisão consciente
 
 Explorar em descoberta ampla
@@ -203,7 +210,8 @@ O início da jornada não garante recomendação. Cadastro não garante ativaç�
 | [Validação sem Localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md) | UXA-027 | estado alternativo | validação funcional |
 | [Lista do Mapa](uxa-028-opportunity-map-list-state.md) | UXA-028 | modo alternativo | arquivo vetorial reformulado |
 | [Validação da Lista](uxa-029-opportunity-map-list-functional-validation-and-reformulation.md) | UXA-029 | modo alternativo | validação funcional |
-| [Mapa sem Resultados](uxa-030-opportunity-map-no-results-state.md) | UXA-030 | estado alternativo | arquivo vetorial |
+| [Mapa sem Resultados](uxa-030-opportunity-map-no-results-state.md) | UXA-030 | estado alternativo | arquivo vetorial reformulado |
+| [Validação sem Resultados](uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md) | UXA-031 | estado alternativo | validação funcional |
 | [Detalhe](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | arquivo vetorial |
 | [Cadastro](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | arquivo vetorial |
 
@@ -227,22 +235,24 @@ A UXA-028 reformulada demonstra:
 
 A UXA-029 considera a Lista funcionalmente válida após reformulação.
 
-## 11. Estado sem resultados criado
+## 11. Estado sem resultados validado
 
-A UXA-030 demonstra:
+A UXA-030 reformulada demonstra:
 
 - zero limitado à consulta atual;
-- consulta concluída sem falha conhecida;
+- cobertura verificável e ação `Ver cobertura`;
 - região, busca e filtros preservados;
 - ações de recuperação independentes;
-- reversibilidade quando aplicável;
-- distinção entre ausência, erro e indisponibilidade;
+- revisão antes de aplicar mudanças;
+- última alteração identificada e reversível;
+- seleção anterior tratada sem alterar o total zero;
+- distinção entre ausência, erro, indisponibilidade e cobertura parcial;
 - continuidade entre Mapa e Lista;
 - localização opcional;
 - ausência de preenchimento artificial;
 - tratamento textual acessível sem mapa carregado.
 
-A validação funcional especializada permanece não iniciada.
+A UXA-031 considera o estado funcionalmente válido após reformulação.
 
 ## 12. Demais estados funcionais do Mapa
 
@@ -267,12 +277,12 @@ Este programa não define marca, tecnologia, geocodificação, rotas, textos fin
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente o estado sem resultados;
-2. criar referência do Mapa para computador;
-3. criar o wireframe do início protegido;
-4. criar a referência móvel da Home;
-5. validar a compreensão inicial;
-6. detalhar a primeira Tela Hoje após a transição;
+1. criar referência do Mapa para computador;
+2. criar o wireframe do início protegido;
+3. criar a referência móvel da Home;
+4. validar a compreensão inicial;
+5. detalhar a primeira Tela Hoje após a transição;
+6. criar outros estados alternativos do Mapa;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.

@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.58.0
+version: 1.59.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 depends_on:
@@ -32,13 +32,14 @@ related:
   - UXA-028
   - UXA-029
   - UXA-030
+  - UXA-031
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.5.0
-  - M7.31
+  - ROADMAP-12.6.0
+  - M7.32
 normative: true
 ---
 
@@ -53,12 +54,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | estado móvel do Mapa sem resultados criado | M7.31; UXA-030 |
+| Marco atual | estado do Mapa sem resultados funcionalmente validado e reformulado | M7.32; UXA-030; UXA-031 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até o estado sem resultados do Mapa | UXA-000 a UXA-030 |
+| Arquitetura da Experiência | ativa até a validação do estado sem resultados | UXA-000 a UXA-031 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
@@ -68,7 +69,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
-| Estado sem resultados | wireframe móvel criado; validação especializada não iniciada | UXA-030 |
+| Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Referência do Mapa para computador | não iniciada | — |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
@@ -130,22 +131,25 @@ A visualização em Lista, reformulada pela UXA-029, demonstra:
 - retorno ao Mapa sem perda de contexto;
 - funcionamento integral sem mapa carregado.
 
-## 6. Estado sem resultados
+## 6. Estado sem resultados validado
 
-A UXA-030 materializa a ausência legítima de correspondências para uma consulta concluída.
+A UXA-030 e a UXA-031 estabelecem a ausência legítima de correspondências como condição limitada à consulta executada.
 
-O estado demonstra:
+O estado reformulado demonstra:
 
 - região, busca e filtros preservados;
 - total consolidado de filtros;
 - `0 resultados correspondem a esta consulta`;
-- `Consulta concluída · nenhuma falha conhecida`;
+- `Consulta concluída · cobertura verificada · atualizada agora`;
+- ação `Ver cobertura`;
 - mensagem limitada à consulta atual;
-- ampliação de região, alteração de período, revisão de filtros e edição de busca como ações explícitas;
-- reversão da última alteração quando aplicável;
-- distinção entre ausência, falha de fonte e indisponibilidade temporária;
+- revisão obrigatória antes de ajustar região, período, filtros ou busca;
+- última alteração identificada e `Desfazer` condicional;
+- seleção anterior fora da consulta atual, sem alterar o total zero;
+- distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;
 - equivalência entre Mapa e Lista;
 - localização opcional e região manual;
+- exploração geral sem alterar a consulta territorial;
 - tratamento textual sem dependência do mapa carregado.
 
 Arquivos vetoriais:
@@ -155,7 +159,7 @@ Arquivos vetoriais:
 - `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
 - `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`.
 
-O estado sem resultados ainda não foi funcionalmente validado. Wireframe não equivale a teste com usuários, design ou implementação.
+A validação é arquitetural e não equivale a teste com usuários, design ou implementação.
 
 ## 7. Proteções vigentes
 
@@ -169,19 +173,22 @@ O estado sem resultados ainda não foi funcionalmente validado. Wireframe não e
 - endereços protegidos não são contornados;
 - personalização exige gate próprio;
 - zero legítimo não é confundido com falha de fonte;
+- cobertura precisa ser verificável;
 - filtros e região não são alterados silenciosamente;
+- `Desfazer` depende de alteração identificável;
+- seleção anterior não falseia correspondência atual;
 - publicidade não preenche artificialmente o estado vazio.
 
 ## 8. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o estado sem resultados;
-2. criar referência do Mapa para computador;
-3. criar o wireframe gráfico do início protegido;
-4. criar a referência móvel da Home;
-5. validar a revisão da compreensão inicial;
-6. validar a transição para a primeira Tela Hoje;
+1. criar referência do Mapa para computador;
+2. criar o wireframe gráfico do início protegido;
+3. criar a referência móvel da Home;
+4. validar a revisão da compreensão inicial;
+5. validar a transição para a primeira Tela Hoje;
+6. criar outros estados alternativos do Mapa;
 7. retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

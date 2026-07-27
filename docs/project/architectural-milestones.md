@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.3.0
+version: 5.4.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.5.0
+  - ROADMAP-12.6.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -26,6 +26,7 @@ related:
   - UXA-028
   - UXA-029
   - UXA-030
+  - UXA-031
   - M7.20
   - M7.21
   - M7.22
@@ -38,6 +39,7 @@ related:
   - M7.29
   - M7.30
   - M7.31
+  - M7.32
 normative: false
 ---
 
@@ -68,15 +70,16 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.28 | Concluído | estado sem localização validado e reformulado |
 | M7.29 | Concluído | visualização em Lista do Mapa criada |
 | M7.30 | Concluído | visualização em Lista funcionalmente validada e reformulada |
-| M7.31 | Concluído neste incremento | estado móvel do Mapa sem resultados criado |
+| M7.31 | Concluído | estado móvel do Mapa sem resultados criado |
+| M7.32 | Concluído neste incremento | estado sem resultados funcionalmente validado e reformulado |
 
 ## 3. Marco vigente
 
-### Estado do Mapa sem Resultados Criado — M7.31
+### Estado do Mapa sem Resultados Funcionalmente Validado e Reformulado — M7.32
 
 Critérios atendidos:
 
-- estado materializado dentro da superfície recorrente do Mapa;
+- estado preservado dentro da superfície recorrente do Mapa;
 - item `Mapa` preservado na navegação principal;
 - alternância `Mapa ↔ Lista` mantida;
 - contexto `Agindo como` demonstrado;
@@ -85,29 +88,32 @@ Critérios atendidos:
 - busca e filtros mantidos;
 - total consolidado de filtros visível;
 - total zero limitado à consulta atual;
-- consulta concluída sem falha conhecida declarada;
-- ausência legítima separada de falha de fonte e indisponibilidade;
+- cobertura verificável e ação `Ver cobertura`;
+- mensagem `Consulta concluída · cobertura verificada · atualizada agora`;
+- ausência legítima separada de falha de fonte, indisponibilidade e cobertura parcial;
 - ampliação de região, alteração de período, revisão de filtros e edição de busca oferecidas separadamente;
-- reversão da última alteração prevista quando aplicável;
-- nenhuma mudança silenciosa da consulta;
+- revisão exigida antes de aplicar qualquer mudança;
+- última alteração identificada;
+- `Desfazer` exibido somente quando aplicável;
+- seleção anterior preservada sem ser reinserida como correspondência;
+- exploração geral sem alteração da consulta territorial;
 - nenhum preenchimento comercial artificial;
 - Mapa e Lista governados como o mesmo estado;
 - tratamento textual independente do mapa carregado;
-- arquivo vetorial móvel criado em 390 por 844 pixels;
-- validação funcional especializada preservada como ato posterior;
+- arquivo vetorial reformulado em 390 por 844 pixels;
 - referência para computador, tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Estado do Mapa sem Resultados Criado — M7.31
+
+A UXA-030 permanece como origem histórica do wireframe, posteriormente reformulado e validado pela UXA-031.
+
 ### Visualização em Lista do Mapa Validada e Reformulada — M7.30
 
 A UXA-028 e a UXA-029 permanecem como contrato da representação textual integral da consulta territorial.
-
-### Visualização em Lista do Mapa Criada — M7.29
-
-A UXA-028 permanece como origem histórica do wireframe, posteriormente reformulado e validado pela UXA-029.
 
 ### Estado do Mapa sem Localização Validado e Reformulado — M7.28
 
@@ -136,7 +142,7 @@ COD-018 permanece integrado, com nenhum Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; estado sem resultados criado; validação posterior aguardando autorização |
+| Arquitetura da Experiência | ativa; estado sem resultados validado; próximos atos aguardando autorização |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -148,12 +154,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente o estado sem resultados;
-2. criar referência do Mapa para computador;
-3. criar o wireframe do início protegido;
-4. criar a referência móvel da Home;
-5. validar a revisão da compreensão inicial;
-6. validar a transição para a primeira Tela Hoje.
+1. criar referência do Mapa para computador;
+2. criar o wireframe do início protegido;
+3. criar a referência móvel da Home;
+4. validar a revisão da compreensão inicial;
+5. validar a transição para a primeira Tela Hoje;
+6. criar outros estados alternativos do Mapa.
 
 ### Arquitetura de Negócios
 

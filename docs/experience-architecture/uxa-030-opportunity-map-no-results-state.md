@@ -1,8 +1,8 @@
 ---
 id: UXA-030
 title: Wireframe Alternativo do Mapa de Oportunidades — Estado sem Resultados
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-024
@@ -23,6 +23,7 @@ related:
   - UXA-012
   - UXA-020
   - UXA-023
+  - UXA-031
 normative: false
 ---
 
@@ -31,6 +32,8 @@ normative: false
 ## 1. Finalidade
 
 Este documento materializa o estado em que uma consulta territorial válida é concluída sem encontrar oportunidades correspondentes à região, busca e filtros vigentes.
+
+A versão 0.2.0 incorpora a reformulação governada pela **UXA-031 — Validação Funcional Especializada e Reformulação do Estado do Mapa sem Resultados**.
 
 O estado não deverá ser utilizado como mensagem genérica para falha de fonte, indisponibilidade temporária, carregamento incompleto ou baixa conectividade. Ausência legítima de correspondências e incapacidade de consultar dados são condições diferentes.
 
@@ -61,16 +64,20 @@ A mensagem de ausência legítima somente poderá aparecer quando:
 - a consulta tiver sido executada;
 - a região estiver definida;
 - busca e filtros vigentes forem conhecidos;
-- as fontes necessárias tiverem respondido ou sua cobertura aplicável estiver declarada;
+- as fontes previstas tiverem respondido ou sua cobertura aplicável estiver declarada;
 - não houver falha ativa capaz de explicar o resultado vazio;
 - não houver carregamento pendente material;
 - o total correspondente for realmente zero naquele momento de atualização.
 
-A interface deverá indicar:
+A interface reformulada deverá indicar:
 
 > **0 resultados correspondem a esta consulta**
 
-> **Consulta concluída · nenhuma falha conhecida**
+> **Consulta concluída · cobertura verificada · atualizada agora**
+
+E oferecer:
+
+> **Ver cobertura**
 
 A declaração não significa que não existam oportunidades em toda a cidade, no futuro, em outras categorias ou fora das fontes consultadas.
 
@@ -99,11 +106,13 @@ nome da superfície e contexto de atuação
 → pesquisa preservada
 → alternância Mapa ou Lista
 → filtros ativos e total consolidado
-→ quantidade zero e estado da consulta
+→ quantidade zero, cobertura e atualização
 → explicação da ausência de correspondências
-→ resumo do contexto preservado
 → ações explícitas de recuperação
-→ distinção entre ausência, falha e indisponibilidade
+→ revisão antes de aplicar mudanças
+→ última alteração reversível, quando existente
+→ seleção anterior, quando existente
+→ disponibilidade dos dados
 → navegação recorrente
 ```
 
@@ -132,6 +141,8 @@ A mensagem deverá informar de forma direta:
 
 > **Nenhum resultado corresponde à busca, região e filtros atuais.**
 
+> **Sua consulta permanece intacta.**
+
 Ela deverá evitar formulações absolutas como:
 
 - `Não existem oportunidades`;
@@ -142,19 +153,43 @@ Ela deverá evitar formulações absolutas como:
 
 O sistema conhece apenas o resultado da consulta executada, não a totalidade de possibilidades existentes nem as necessidades da pessoa.
 
-## 8. Ações de recuperação
+## 8. Cobertura e atualização
 
-A interface deverá oferecer ações conscientes e independentes, como:
+A pessoa deverá poder abrir `Ver cobertura` para verificar, quando material:
+
+- fontes previstas;
+- fontes que responderam;
+- fontes não aplicáveis;
+- fontes indisponíveis;
+- categorias consultadas;
+- região e período;
+- horário da atualização;
+- limitações conhecidas.
+
+`Cobertura verificada` somente poderá aparecer quando houver evidência correspondente. Cobertura parcial, falha de fonte, carregamento e indisponibilidade deverão utilizar mensagens próprias.
+
+## 9. Ações de recuperação
+
+A interface deverá oferecer ações conscientes e independentes:
 
 - `Ampliar região`;
 - `Alterar período`;
 - `Revisar filtros`;
 - `Editar busca`;
-- `Desfazer última alteração`, quando houver histórico local compatível;
-- `Tentar novamente`, somente quando uma nova consulta for materialmente útil;
-- `Explorar opções gerais`, como saída separada da consulta territorial.
+- `Explorar sem alterar esta consulta`.
 
-Cada ação deverá declarar o que será alterado antes de aplicar a mudança.
+A superfície reformulada declara:
+
+> **Você revisará cada mudança antes de aplicar.**
+
+Cada ação deverá apresentar antes da confirmação:
+
+- dimensão alterada;
+- valor atual;
+- valor proposto;
+- dimensões preservadas;
+- ação `Aplicar`;
+- ação `Cancelar`.
 
 A superfície não poderá:
 
@@ -166,7 +201,7 @@ A superfície não poderá:
 - inserir resultados patrocinados para evitar a tela vazia;
 - iniciar personalização para preencher o estado.
 
-## 9. Preservação e reversibilidade
+## 10. Preservação e reversibilidade
 
 Quando uma ação de recuperação alterar a consulta, a pessoa deverá poder reconhecer:
 
@@ -176,11 +211,19 @@ Quando uma ação de recuperação alterar a consulta, a pessoa deverá poder re
 - se a atualização foi concluída;
 - como desfazer a última mudança quando tecnicamente possível.
 
+`Desfazer` somente deverá aparecer quando existir alteração anterior identificável e reversível.
+
+O wireframe reformulado demonstra:
+
+> **Última alteração: filtro “Hoje” aplicado**
+
+> **Desfazer**
+
 `Limpar filtros` deverá ser uma decisão explícita e não deverá apagar região ou busca.
 
 `Ampliar região` não deverá transformar região manual em posição pessoal nem autorizar rastreamento.
 
-## 10. Mapa e Lista
+## 11. Mapa e Lista
 
 O estado deverá ser equivalente nos dois modos.
 
@@ -190,17 +233,20 @@ Ao alternar entre Mapa e Lista, deverão permanecer:
 - busca;
 - filtros;
 - total zero;
+- cobertura;
 - momento da atualização;
 - diagnóstico da consulta;
 - ações de recuperação;
 - contexto `Agindo como`;
-- estado de localização.
+- estado de localização;
+- última alteração reversível, quando existente;
+- seleção anterior, quando existente.
 
 A Lista deverá funcionar integralmente sem mapa carregado.
 
 O Mapa deverá apresentar informação textual suficiente para leitores de tela e pessoas que não interpretem o campo cartográfico.
 
-## 11. Estado territorial
+## 12. Estado territorial
 
 Quando a localização estiver desativada, deverão permanecer as declarações:
 
@@ -212,7 +258,7 @@ A ausência de resultados não constitui justificativa para solicitar localizaç
 
 A pessoa poderá ampliar ou trocar a região manualmente sem compartilhar a posição do dispositivo.
 
-## 12. Personalização e linguagem
+## 13. Personalização e linguagem
 
 Sem o gate de personalização atendido, o estado deverá utilizar linguagem geral baseada somente em:
 
@@ -226,11 +272,13 @@ Não deverá afirmar que uma oportunidade seria melhor, ideal ou adequada ao Mom
 
 Mesmo após o gate, a ausência de resultados deverá ser explicada pela consulta, sem transformar inferências pessoais em certeza.
 
-## 13. Distinção entre estados
+`Explorar sem alterar esta consulta` poderá abrir descoberta geral separada, preservando a consulta territorial para retorno.
+
+## 14. Distinção entre estados
 
 | Condição | Mensagem funcional | Comportamento |
 |---|---|---|
-| consulta concluída com zero correspondências | `0 resultados correspondem a esta consulta` | preservar contexto e oferecer ajustes explícitos |
+| consulta concluída com zero correspondências | `0 resultados correspondem a esta consulta` | preservar contexto, declarar cobertura e oferecer ajustes explícitos |
 | falha de uma ou mais fontes materiais | `Não foi possível verificar todas as fontes` | não apresentar zero como conclusão; identificar limitação e permitir nova tentativa |
 | indisponibilidade temporária | `Resultados temporariamente indisponíveis` | preservar consulta e permitir tentar novamente ou usar Lista quando aplicável |
 | carregamento em andamento | `Atualizando resultados` | manter estrutura, região, busca e filtros |
@@ -239,24 +287,28 @@ Mesmo após o gate, a ausência de resultados deverá ser explicada pela consult
 
 Falha de fonte não é ausência de oportunidades.
 
-## 14. Item anteriormente selecionado
+A ação orientada à pessoa será:
+
+> **Entender disponibilidade dos dados**
+
+## 15. Item anteriormente selecionado
 
 Se a consulta anterior possuía uma oportunidade selecionada e uma alteração produzir zero resultados, a interface não deverá apagar a seleção silenciosamente.
 
-Quando aplicável, deverá informar:
+O wireframe reformulado demonstra:
 
-> **A oportunidade selecionada não corresponde mais à consulta atual.**
+> **Seleção anterior fora da consulta atual**
 
 A pessoa poderá:
 
-- desfazer a alteração;
 - abrir o Detalhe se o item continuar disponível;
 - remover conscientemente a seleção;
+- desfazer a alteração;
 - manter a nova consulta sem resultados.
 
-Seleção anterior não deverá ser reinserida artificialmente no conjunto atual.
+Seleção anterior não deverá ser reinserida artificialmente no conjunto atual nem alterar o total zero.
 
-## 15. Explicabilidade e cobertura
+## 16. Explicabilidade e cobertura
 
 A pessoa deverá poder abrir `Entender este resultado` para verificar:
 
@@ -271,11 +323,12 @@ A pessoa deverá poder abrir `Entender este resultado` para verificar:
 
 A explicação não deverá expor lógica proprietária desnecessária nem ocultar limitações materiais.
 
-## 16. Acessibilidade e resiliência
+## 17. Acessibilidade e resiliência
 
 O estado deverá:
 
 - anunciar textualmente o total zero;
+- anunciar cobertura e atualização;
 - não depender de cor, marcadores ou mapa vazio;
 - possuir ordem de foco coerente;
 - manter títulos e ações compreensíveis fora do contexto visual;
@@ -284,9 +337,9 @@ O estado deverá:
 - evitar ciclos de tentativa automática;
 - manter ações essenciais disponíveis em baixa conectividade quando possível.
 
-A criação deste wireframe não conclui conformidade técnica de acessibilidade.
+A validação funcional não conclui conformidade técnica de acessibilidade.
 
-## 17. Privacidade e autonomia
+## 18. Privacidade e autonomia
 
 O estado preserva:
 
@@ -296,30 +349,33 @@ O estado preserva:
 - consulta sem personalização;
 - ausência legítima sem preenchimento comercial artificial;
 - ações de recuperação voluntárias;
+- revisão antes de aplicar mudanças;
 - alteração explícita e reversível;
 - separação entre falha técnica e ausência de dados;
 - proteção de endereços sensíveis;
 - continuidade sem rastreamento.
 
-## 18. Critérios de validação posterior
+## 19. Resultado da validação especializada
 
-A validação funcional especializada deverá verificar:
+A UXA-031 considera o estado **funcionalmente válido após reformulação** porque:
 
-- se a pessoa entende que zero corresponde à consulta atual, não à totalidade de oportunidades;
-- se ausência, falha de fonte e indisponibilidade temporária são distinguíveis;
-- se região, busca e filtros permanecem reconhecíveis;
-- se as ações de recuperação são compreensíveis e independentes;
-- se nenhuma ação altera a consulta silenciosamente;
-- se Mapa e Lista preservam o mesmo estado;
-- se localização continua opcional;
-- se a linguagem não cria personalização sem gate;
-- se a interface funciona sem mapa carregado;
-- se uma seleção anterior é tratada de forma explicável.
+- o zero permanece limitado à consulta atual;
+- a cobertura passa a ser verificável;
+- ausência, falha e indisponibilidade são distintas;
+- região, busca, filtros e contexto permanecem visíveis;
+- nenhuma recuperação altera a consulta sem revisão;
+- `Desfazer` é condicional e identifica a alteração;
+- seleção anterior é tratada sem falsear correspondência;
+- Mapa e Lista preservam o mesmo estado;
+- localização continua opcional;
+- não há preenchimento comercial ou personalização artificial;
+- o estado funciona sem mapa carregado.
 
-## 19. Limites
+## 20. Limites
 
 Este incremento não:
 
+- aprova textos finais de interface;
 - valida o estado com usuários reais;
 - define algoritmo de busca;
 - define cobertura de fontes de produção;
@@ -332,16 +388,16 @@ Este incremento não:
 - inicia design visual;
 - inicia Engenharia de Produto.
 
-## 20. Próximos atos governados
+## 21. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o estado sem resultados;
-2. criar referência do Mapa para computador;
-3. criar o wireframe gráfico do início protegido;
-4. criar a referência móvel da Home;
-5. validar a revisão da compreensão inicial;
-6. validar a transição para a primeira Tela Hoje;
+1. criar referência do Mapa para computador;
+2. criar o wireframe gráfico do início protegido;
+3. criar a referência móvel da Home;
+4. validar a revisão da compreensão inicial;
+5. validar a transição para a primeira Tela Hoje;
+6. criar outros estados alternativos do Mapa;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
