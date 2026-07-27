@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.2.0
+version: 12.3.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.2.0
+  - ROADMAP-12.3.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -24,7 +24,8 @@ related:
   - UXA-025
   - UXA-026
   - UXA-027
-  - M7.28
+  - UXA-028
+  - M7.29
 normative: false
 ---
 
@@ -39,7 +40,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | estado do Mapa sem localização funcionalmente validado e reformulado | M7.28; UXA-026; UXA-027 |
+| Marco | visualização em Lista do Mapa materializada em wireframe móvel | M7.29; UXA-028 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -51,6 +52,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
 | Estado de localização desativada | funcionalmente validado e reformulado | UXA-026; UXA-027 |
+| Visualização em Lista do Mapa | wireframe móvel criado; validação especializada pendente | UXA-028 |
 | Demais estados alternativos | governados; wireframes não iniciados | UXA-025 |
 | Personalização | bloqueada antes de contexto suficiente, revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
 | Protótipo, design e testes | não iniciados | — |
@@ -78,7 +80,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - posição do Mapa na navegação recorrente consolidada;
 - wireframe gráfico móvel do Mapa criado;
 - Mapa de Oportunidades funcionalmente validado e reformulado;
-- estado sem localização criado, validado e reformulado.
+- estado sem localização criado, validado e reformulado;
+- visualização em Lista do Mapa criada.
 
 ### Em validação
 
@@ -90,7 +93,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- estado alternativo em Lista;
+- validação funcional da visualização em Lista;
 - estado sem resultados;
 - referência do Mapa para computador;
 - wireframe gráfico do início protegido da jornada;
@@ -143,9 +146,24 @@ A UXA-026 e a UXA-027 demonstram:
 - origem manual para rota;
 - continuidade para o Detalhe.
 
-O mapa desenhado é esquemático e não representa cidade, endereço ou coordenada real.
+## 6. Visualização em Lista do Mapa
 
-## 6. Proteções preservadas
+A UXA-028 demonstra:
+
+- Lista selecionada dentro da superfície Mapa;
+- região, busca e filtros preservados;
+- quantidade e ordenação explícitas;
+- cartões comparáveis;
+- oportunidade selecionada preservada;
+- explicação de origem e relação comercial separadas;
+- salvamento, definição de origem e Detalhe;
+- retorno ao Mapa sem perda de contexto;
+- uso integral sem localização;
+- alternativa textual para acessibilidade, baixa conectividade e falha cartográfica.
+
+A Lista não duplica `Explorar` e sua validação funcional especializada permanece pendente.
+
+## 7. Proteções preservadas
 
 - a Home pública não coleta relato pessoal;
 - iniciar a jornada é voluntário;
@@ -162,11 +180,12 @@ O mapa desenhado é esquemático e não representa cidade, endereço ou coordena
 - rastreamento contínuo não é obrigatório;
 - salvamento não autoriza rastreamento;
 - origem manual não autoriza histórico territorial;
+- alternância entre Mapa e Lista não altera permissões;
 - proximidade não equivale a relevância;
 - rota não contorna endereço protegido;
 - wireframes e validações funcionais não equivalem a design ou implementação.
 
-## 7. Distribuição dos candidatos
+## 8. Distribuição dos candidatos
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -175,6 +194,6 @@ O mapa desenhado é esquemático e não representa cidade, endereço ou coordena
 | Rejeitados | 6 | retirados do catálogo futuro com destinos preservados |
 | Aprovados | 0 | nenhuma aprovação ocorreu |
 
-## 8. Próximo movimento
+## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre estado em Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional da Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.
