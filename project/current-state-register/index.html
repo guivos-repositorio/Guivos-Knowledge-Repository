@@ -4117,7 +4117,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-027 — Validação do Estado sem Localização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6731,8 +6766,8 @@
 </tr>
 <tr>
 <td>Marco atual</td>
-<td>primeiro estado alternativo do Mapa criado para localização desativada</td>
-<td>M7.27; UXA-026</td>
+<td>estado do Mapa sem localização funcionalmente validado e reformulado</td>
+<td>M7.28; UXA-026; UXA-027</td>
 </tr>
 <tr>
 <td>Remediação do repositório</td>
@@ -6766,8 +6801,8 @@
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa até o estado de localização desativada do Mapa</td>
-<td>UXA-000 a UXA-026</td>
+<td>ativa até a validação do estado sem localização</td>
+<td>UXA-000 a UXA-027</td>
 </tr>
 <tr>
 <td>Página Inicial pública</td>
@@ -6811,8 +6846,8 @@
 </tr>
 <tr>
 <td>Estado de localização desativada</td>
-<td>wireframe móvel criado; validação especializada não iniciada</td>
-<td>UXA-026</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-026; UXA-027</td>
 </tr>
 <tr>
 <td>Demais estados alternativos do Mapa</td>
@@ -6928,7 +6963,7 @@ Business Capabilities: not started
 <p>O Mapa não entra entre a Home e a Tela Hoje.</p>
 <h2 id="5-pagina-inicial-publica">5. Página Inicial pública<a class="headerlink" href="#5-pagina-inicial-publica" title="Permanent link">&para;</a></h2>
 <p>A Home foi funcionalmente validada e possui wireframe gráfico de baixa fidelidade para computador.</p>
-<p>Ela explica concretamente a Guivos, oferece início voluntário ou exploração sem personalização, distingue caminhos pessoais, gerais e institucionais, organiza o ecossistema por finalidade e não coleta texto pessoal, voz, arquivos ou fontes externas.</p>
+<p>Ela explica concretamente a Guivos, oferece início voluntário ou exploração sem personalização, distingue caminhos pessoais, gerais e institucionais e não coleta texto pessoal, voz, arquivos ou fontes externas.</p>
 <p>A referência móvel permanece não iniciada.</p>
 <h2 id="6-inicio-protegido-da-jornada">6. Início protegido da jornada<a class="headerlink" href="#6-inicio-protegido-da-jornada" title="Permanent link">&para;</a></h2>
 <p>O início protegido foi considerado funcionalmente válido após reformulação.</p>
@@ -6940,19 +6975,22 @@ Business Capabilities: not started
 <p>Arquivo principal:</p>
 <p><code>docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg</code></p>
 <h2 id="8-estado-de-localizacao-desativada">8. Estado de localização desativada<a class="headerlink" href="#8-estado-de-localizacao-desativada" title="Permanent link">&para;</a></h2>
-<p>A UXA-026 materializa a continuidade do Mapa sem localização do dispositivo.</p>
-<p>O estado demonstra:</p>
+<p>A UXA-026 e a UXA-027 estabelecem que o Mapa permanece integralmente utilizável sem localização do dispositivo.</p>
+<p>O estado reformulado demonstra:</p>
 <ul>
 <li>exploração geral sem personalização;</li>
-<li>aviso claro de localização desativada;</li>
-<li>escolha manual de cidade ou região;</li>
+<li>aviso de localização desativada;</li>
+<li>confirmação <code>Posição não acessada</code>;</li>
+<li>região manual explicitamente distinta da posição pessoal;</li>
 <li>busca e filtros preservados;</li>
 <li>Mapa e Lista como uma descoberta única;</li>
-<li>área territorial sem marcador pessoal;</li>
+<li>área territorial sem marcador ou posição presumida;</li>
 <li>resultados explicados por região e busca explícita;</li>
 <li>distância pessoal omitida sem origem válida;</li>
 <li>ativação opcional de localização aproximada;</li>
-<li>definição manual de origem para rota.</li>
+<li>salvamento sem localização;</li>
+<li>definição manual de origem para rota;</li>
+<li>continuidade para o Detalhe.</li>
 </ul>
 <p>Arquivo:</p>
 <p><code>docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg</code></p>
@@ -6960,16 +6998,17 @@ Business Capabilities: not started
 <h2 id="9-protecoes-territoriais">9. Proteções territoriais<a class="headerlink" href="#9-protecoes-territoriais" title="Permanent link">&para;</a></h2>
 <p>O Mapa não deverá mostrar localização de participantes, revelar residências ou locais sensíveis, exigir rastreamento contínuo, manter localização exata sem finalidade ou presumir interesse somente pela proximidade.</p>
 <p>Localização poderá ser exata e temporária, aproximada, cidade informada, região selecionada ou desativada.</p>
-<p>A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento.</p>
+<p>A recusa de localização não bloqueia busca, Mapa, Lista, Detalhe ou salvamento. Região manual não equivale a posição atual. Salvamento não autoriza rastreamento. Definir origem não autoriza retenção ou histórico territorial.</p>
 <h2 id="10-proximos-atos-governados">10. Próximos atos governados<a class="headerlink" href="#10-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente o estado de localização desativada;</li>
 <li>criar o estado alternativo em Lista;</li>
 <li>criar o estado sem resultados;</li>
 <li>criar referência do Mapa para computador;</li>
 <li>criar o wireframe gráfico do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
+<li>validar a revisão da compreensão inicial;</li>
+<li>validar a transição para a primeira Tela Hoje;</li>
 <li>retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhum ato é iniciado automaticamente.</p>

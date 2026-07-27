@@ -599,10 +599,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-de-localizacao-desativada" class="md-nav__link">
+  <a href="#5-estado-de-localizacao-desativada-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado de localização desativada
+        5. Estado de localização desativada validado
       
     </span>
   </a>
@@ -4173,7 +4173,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experience-architecture/uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-027 — Validação do Estado sem Localização
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6755,10 +6790,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-de-localizacao-desativada" class="md-nav__link">
+  <a href="#5-estado-de-localizacao-desativada-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado de localização desativada
+        5. Estado de localização desativada validado
       
     </span>
   </a>
@@ -6843,8 +6878,8 @@
 </tr>
 <tr>
 <td>Marco</td>
-<td>primeiro estado alternativo do Mapa criado para localização desativada</td>
-<td>M7.27; UXA-026</td>
+<td>estado do Mapa sem localização funcionalmente validado e reformulado</td>
+<td>M7.28; UXA-026; UXA-027</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -6898,8 +6933,8 @@
 </tr>
 <tr>
 <td>Estado de localização desativada</td>
-<td>wireframe móvel criado; validação especializada pendente</td>
-<td>UXA-026</td>
+<td>funcionalmente validado e reformulado</td>
+<td>UXA-026; UXA-027</td>
 </tr>
 <tr>
 <td>Demais estados alternativos</td>
@@ -6948,7 +6983,7 @@
 <li>posição do Mapa na navegação recorrente consolidada;</li>
 <li>wireframe gráfico móvel do Mapa criado;</li>
 <li>Mapa de Oportunidades funcionalmente validado e reformulado;</li>
-<li>primeiro estado alternativo do Mapa criado para localização desativada.</li>
+<li>estado sem localização criado, validado e reformulado.</li>
 </ul>
 <h3 id="em-validacao">Em validação<a class="headerlink" href="#em-validacao" title="Permanent link">&para;</a></h3>
 <ul>
@@ -6959,7 +6994,6 @@
 <h3 id="aguardando-autorizacao">Aguardando autorização<a class="headerlink" href="#aguardando-autorizacao" title="Permanent link">&para;</a></h3>
 <h4 id="arquitetura-da-experiencia">Arquitetura da Experiência<a class="headerlink" href="#arquitetura-da-experiencia" title="Permanent link">&para;</a></h4>
 <ul>
-<li>validação funcional do estado de localização desativada;</li>
 <li>estado alternativo em Lista;</li>
 <li>estado sem resultados;</li>
 <li>referência do Mapa para computador;</li>
@@ -6992,19 +7026,22 @@
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 </code></pre></div>
-<h2 id="5-estado-de-localizacao-desativada">5. Estado de localização desativada<a class="headerlink" href="#5-estado-de-localizacao-desativada" title="Permanent link">&para;</a></h2>
-<p>O wireframe UXA-026 demonstra:</p>
+<h2 id="5-estado-de-localizacao-desativada-validado">5. Estado de localização desativada validado<a class="headerlink" href="#5-estado-de-localizacao-desativada-validado" title="Permanent link">&para;</a></h2>
+<p>A UXA-026 e a UXA-027 demonstram:</p>
 <ul>
 <li>exploração geral sem personalização;</li>
 <li>localização do dispositivo desativada;</li>
-<li>região escolhida manualmente;</li>
+<li>confirmação <code>Posição não acessada</code>;</li>
+<li>região escolhida manualmente e distinta da posição pessoal;</li>
 <li>pesquisa e filtros preservados;</li>
 <li>Mapa e Lista sincronizados;</li>
-<li>área territorial sem marcador da pessoa;</li>
+<li>área territorial sem marcador ou posição presumida;</li>
 <li>resultados explicados pela região e pela busca;</li>
+<li>distância pessoal omitida sem origem válida;</li>
 <li>ativação opcional de localização aproximada;</li>
-<li>origem manual para rota quando aplicável;</li>
-<li>continuidade para o Detalhe e salvamento.</li>
+<li>salvamento sem localização;</li>
+<li>origem manual para rota;</li>
+<li>continuidade para o Detalhe.</li>
 </ul>
 <p>O mapa desenhado é esquemático e não representa cidade, endereço ou coordenada real.</p>
 <h2 id="6-protecoes-preservadas">6. Proteções preservadas<a class="headerlink" href="#6-protecoes-preservadas" title="Permanent link">&para;</a></h2>
@@ -7018,9 +7055,12 @@
 <li>publicidade não aumenta relevância pessoal;</li>
 <li>localização é opcional;</li>
 <li>recusa de localização não bloqueia exploração;</li>
+<li>região manual não equivale a posição atual;</li>
 <li>localização de participantes não aparece no Mapa;</li>
 <li>residências e locais sensíveis permanecem protegidos;</li>
 <li>rastreamento contínuo não é obrigatório;</li>
+<li>salvamento não autoriza rastreamento;</li>
+<li>origem manual não autoriza histórico territorial;</li>
 <li>proximidade não equivale a relevância;</li>
 <li>rota não contorna endereço protegido;</li>
 <li>wireframes e validações funcionais não equivalem a design ou implementação.</li>
@@ -7058,7 +7098,7 @@
 </tbody>
 </table>
 <h2 id="8-proximo-movimento">8. Próximo movimento<a class="headerlink" href="#8-proximo-movimento" title="Permanent link">&para;</a></h2>
-<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional do estado sem localização, estado em Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.</p>
+<p>Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre estado em Lista, estado sem resultados, referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial ou retomada independente dos testes dos Resultados Empresariais.</p>
 
 
 
