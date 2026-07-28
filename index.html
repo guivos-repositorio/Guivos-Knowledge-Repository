@@ -332,10 +332,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencia-do-mapa-para-computador" class="md-nav__link">
+  <a href="#referencia-do-mapa-para-computador-validada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Referência do Mapa para computador
+        Referência do Mapa para computador validada
       
     </span>
   </a>
@@ -4313,7 +4313,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-033 — Validação da Referência para Computador
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6795,10 +6830,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#referencia-do-mapa-para-computador" class="md-nav__link">
+  <a href="#referencia-do-mapa-para-computador-validada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Referência do Mapa para computador
+        Referência do Mapa para computador validada
       
     </span>
   </a>
@@ -6920,7 +6955,7 @@
 </tr>
 <tr>
 <td>Marco</td>
-<td>M7.33 — Referência do Mapa de Oportunidades para Computador Criada</td>
+<td>M7.34 — Referência do Mapa para Computador Funcionalmente Validada e Reformulada</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -6964,7 +6999,11 @@
 </tr>
 <tr>
 <td>Referência do Mapa para computador</td>
-<td>criada; validação funcional pendente</td>
+<td>funcionalmente validada e reformulada</td>
+</tr>
+<tr>
+<td>Referência para tablet</td>
+<td>não iniciada</td>
 </tr>
 <tr>
 <td>Demais estados do Mapa</td>
@@ -6985,25 +7024,29 @@
 → Hoje | Jornada | Explorar | Mapa | Eu
 </code></pre></div>
 <p>O Mapa não entra entre a Home e a Tela Hoje.</p>
-<h2 id="referencia-do-mapa-para-computador">Referência do Mapa para computador<a class="headerlink" href="#referencia-do-mapa-para-computador" title="Permanent link">&para;</a></h2>
-<p>A UXA-032 materializa dois estados em 1.440 por 1.024 pixels:</p>
+<h2 id="referencia-do-mapa-para-computador-validada">Referência do Mapa para computador validada<a class="headerlink" href="#referencia-do-mapa-para-computador-validada" title="Permanent link">&para;</a></h2>
+<p>A UXA-032 e a UXA-033 estabelecem dois estados de 1.440 por 1.024 pixels, funcionalmente válidos após reformulação:</p>
 <ul>
 <li>Mapa com resultados;</li>
 <li>Mapa sem resultados.</li>
 </ul>
 <p>A referência apresenta:</p>
 <ul>
-<li><code>Mapa</code> selecionado na navegação recorrente;</li>
-<li>contexto <code>Agindo como: Pessoa</code>;</li>
-<li>localização desativada e posição não acessada;</li>
-<li>região manual distinta da posição pessoal;</li>
-<li>painel de filtros;</li>
-<li>Mapa e Lista da mesma consulta lado a lado;</li>
-<li>quantidade, atualização, ordenação e seleção sincronizadas;</li>
-<li>oportunidade selecionada nos dois painéis;</li>
-<li>explicabilidade e relação comercial separadas;</li>
-<li>continuidade para o Detalhe;</li>
-<li>cobertura verificável no estado zero;</li>
+<li><code>Consulta territorial ativa</code> compartilhada;</li>
+<li>filtros semanticamente consistentes;</li>
+<li><code>Visão dividida ativa</code>;</li>
+<li>foco no Mapa ou na Lista sem perda de contexto;</li>
+<li>retorno à visão dividida;</li>
+<li>movimento do Mapa sem atualização silenciosa;</li>
+<li><code>Pesquisar nesta área</code> condicionado ao movimento;</li>
+<li>seleção <code>Marcador 1</code> sincronizada;</li>
+<li>cartões comparáveis com origem e explicação;</li>
+<li><code>Entender ordenação</code>;</li>
+<li>relação comercial rotulada;</li>
+<li>painel contextual recolhível;</li>
+<li>recuperação do estado zero concentrada em <code>Consulta e filtros</code>;</li>
+<li>seleção anterior explicável;</li>
+<li>localização opcional;</li>
 <li>Lista integral sem mapa carregado.</li>
 </ul>
 <p>Arquivos:</p>
@@ -7011,7 +7054,7 @@
 <li><code>assets/wireframes/uxa-032-opportunity-map-desktop.svg</code>;</li>
 <li><code>assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg</code>.</li>
 </ul>
-<p>A referência ainda não foi funcionalmente validada e não equivale a responsividade, tablet, design, protótipo, teste ou implementação.</p>
+<p>A validação não equivale a responsividade, pontos de quebra, tablet, design, protótipo, teste, acessibilidade técnica ou implementação.</p>
 <h2 id="acesso-rapido">Acesso rápido<a class="headerlink" href="#acesso-rapido" title="Permanent link">&para;</a></h2>
 <h3 id="estado-e-governanca">Estado e governança<a class="headerlink" href="#estado-e-governanca" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7020,8 +7063,8 @@
 <li><a href="project/knowledge-board/">Painel de Conhecimento</a></li>
 <li><a href="project/architectural-milestones/">Marcos Arquiteturais</a></li>
 <li><a href="project/canonical-consolidation-matrix/">Matriz de Consolidação Canônica</a></li>
-<li><a href="project/canonical-consolidation-matrix-uxa-032-addendum/">Adendo Canônico da Referência Desktop</a></li>
-<li><a href="project/changelog-1.55.0-uxa-032/">Histórico 1.55.0</a></li>
+<li><a href="project/canonical-consolidation-matrix-uxa-033-addendum/">Adendo Canônico da Validação Desktop</a></li>
+<li><a href="project/changelog-1.56.0-uxa-033/">Histórico 1.56.0</a></li>
 </ul>
 <h3 id="arquiteturas-e-modelos">Arquiteturas e modelos<a class="headerlink" href="#arquiteturas-e-modelos" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7042,6 +7085,7 @@
 <li><a href="experience-architecture/uxa-030-opportunity-map-no-results-state/">Mapa sem Resultados</a></li>
 <li><a href="experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation/">Validação sem Resultados</a></li>
 <li><a href="experience-architecture/uxa-032-opportunity-map-desktop-reference/">Mapa para Computador</a></li>
+<li><a href="experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation/">Validação Desktop</a></li>
 </ul>
 <h3 id="resultados-empresariais">Resultados Empresariais<a class="headerlink" href="#resultados-empresariais" title="Permanent link">&para;</a></h3>
 <ul>
@@ -7051,7 +7095,7 @@
 <li><a href="business-architecture/strategy/candidate-outcome-decision-register/">Candidate Outcome Decision Register</a></li>
 </ul>
 <h2 id="proximos-atos">Próximos atos<a class="headerlink" href="#proximos-atos" title="Permanent link">&para;</a></h2>
-<p>Após nova autorização, poderão ocorrer separadamente: validação funcional da referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada dos testes dos Resultados Empresariais.</p>
+<p>Após nova autorização, poderão ocorrer separadamente: wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, primeira Tela Hoje após a transição, demais estados do Mapa, referência para tablet ou retomada dos testes dos Resultados Empresariais.</p>
 <h2 id="regra-de-precedencia">Regra de precedência<a class="headerlink" href="#regra-de-precedencia" title="Permanent link">&para;</a></h2>
 <p>As autoridades normativas de cada domínio definem o conteúdo arquitetural. O Registro do Estado Atual define o estado transversal vigente. Esta página não cria decisões ou autorizações próprias.</p>
 
