@@ -2,13 +2,19 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.10.0
+version: 5.11.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.12.0
+  - ROADMAP-12.13.0
+  - GEM-004
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-010
+  - GEM-010-A1
+  - GEM-COMMERCIAL-BASELINE-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -51,6 +57,7 @@ related:
   - M7.36
   - M7.37
   - M7.38
+  - M7.39
 normative: false
 ---
 
@@ -67,43 +74,52 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | A0–A1 | Concluído | fundação do Repositório e macroestrutura institucional |
 | M3–M4 | Concluído | Arquitetura de Fundação congelada e Arquitetura do Conhecimento estabelecida |
 | M5–M5.18 | Concluído | arquitetura funcional e publicação do Guivos Journey |
-| M6.0–M6.10 | Concluído | desenvolvimento e fechamento documental do Modelo Econômico |
+| M6.0–M6.10 | Concluído | desenvolvimento e fechamento documental inicial do Modelo Econômico |
 | M7.0–M7.20 | Concluído | validação externa, Matriz de Avaliação e 18 decisões humanas |
 | M7.3–M7.3.5 | Concluído | auditoria, remediação e retomada governada |
 | M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência e experiências institucionais e coletivas |
 | M7.21–M7.24 | Concluído | Home pública e início protegido separados e validados |
 | M7.25–M7.34 | Concluído | Mapa móvel, estados alternativos e referência desktop criados e validados |
 | M7.35–M7.36 | Concluído | início protegido móvel criado, validado e reformulado |
-| M7.37 | Concluído | wireframe móvel da compreensão inicial criado |
-| M7.38 | Concluído neste incremento | wireframe móvel da compreensão inicial funcionalmente validado e reformulado |
+| M7.37–M7.38 | Concluído | compreensão inicial móvel criada, validada e reformulada |
+| M7.39 | Concluído neste incremento | baseline comercial de planos, benefícios e preços definida |
 
 ## 3. Marco vigente
 
-### Wireframe Móvel da Compreensão Inicial Funcionalmente Validado e Reformulado — M7.38
+### Baseline Comercial de Planos, Benefícios e Preços Definida — M7.39
 
 Critérios atendidos:
 
-- validação registrada em UXA-037;
-- UXA-036 elevada para 0.2.0 e estado ativo;
-- quatro arquivos vetoriais reformulados;
-- quinto estado de base insuficiente criado;
-- interrupção com descarte explícito e sem tarefa oculta;
-- afirmações confirmadas, inferidas e desconhecidas separadas;
-- revisão sem resposta pré-selecionada;
-- afirmações abertas preservadas como não confirmadas;
-- relato original separado da interpretação;
-- escopos distintos de correção, retirada de autorização e exclusão;
-- persistência e personalização como escolhas exclusivas e independentes;
-- combinações incompletas ou incompatíveis bloqueadas;
-- continuidade sem personalização preservada;
-- base insuficiente sem hipótese artificial ou pressão;
-- IA, segurança, armazenamento, protótipo, testes e desenvolvimento não iniciados;
+- reabertura localizada do Modelo Econômico registrada;
+- fechamento econômico inicial preservado;
+- GEM-004 elevado para 0.2.0 e estado ativo;
+- GEM-010 elevado para 0.2.0 e parametrizado como candidato;
+- catálogo comercial para Pessoas, Coletivos e Organizações criado;
+- Guivos Free, Plus e Pro definidos;
+- Coletivo Livre, Gestão, Impacto e Enterprise definidos;
+- Business Start, Growth e Scale definidos;
+- preços mensais e anuais candidatos registrados;
+- cotas periódicas e limites simultâneos registrados;
+- catálogo público preservado no Guivos Free;
+- duas correspondências personalizadas por semana definidas como hipótese;
+- Coletivo Livre limitado a uma atividade e uma oportunidade gratuitas por mês;
+- publicação paga condicionada ao Coletivo Gestão ou superior;
+- Enterprise e Scale subordinados à capacidade contratada;
+- assinatura, transação, comissão e taxa de pagamento separadas;
+- superfícies de oferta e momentos proibidos definidos;
+- upgrade, downgrade e cancelamento documentados;
+- premissas de preço, custos e unit economics registradas;
+- validação de mercado, cobrança, oferta pública e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
-### Wireframe Móvel da Compreensão Inicial Criado — M7.37
+### Compreensão Inicial Móvel Validada — M7.38
+
+A UXA-036 e a UXA-037 permanecem como referência da compreensão inicial móvel funcionalmente validada e reformulada.
+
+### Compreensão Inicial Móvel Criada — M7.37
 
 A UXA-036 permanece como materialização original, reformulada pela UXA-037.
 
@@ -133,25 +149,38 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 |---|---|
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
+| Modelo Econômico | baseline comercial candidata definida; validação e calibração pendentes |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
 | Arquitetura da Experiência | ativa; compreensão inicial móvel validada e reformulada |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
-A Arquitetura da Experiência permanece preparatória e não inicia formalmente a Revisão da Arquitetura de Produtos.
+A baseline comercial não inicia Product Engineering, oferta pública ou operação.
 
 ## 6. Próximos atos possíveis
 
 Após integração e nova autorização, poderão ocorrer em incrementos separados:
 
+### Modelo Econômico e Validação
+
+1. validar planos, cotas e disposição a pagar com Pessoas;
+2. validar planos e preços com Coletivos;
+3. validar planos e bases de cobrança com Organizações;
+4. estimar custos de servir e margens;
+5. modelar unit economics e cenários;
+6. definir comissão e política transacional;
+7. realizar revisões especializadas;
+8. decidir sobre teste controlado.
+
 ### Arquitetura da Experiência
 
-1. criar a referência móvel da Home;
-2. validar a transição para a primeira Tela Hoje;
-3. criar estados especializados de processamento, pausa, falha e retomada;
-4. criar a referência do início protegido e da compreensão para computador;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar referência para tablet, caso priorizada.
+1. criar arquitetura da página de Planos e Preços;
+2. criar estados de limite, comparação, contratação e cancelamento;
+3. criar referência móvel da Home;
+4. validar a transição para a primeira Tela Hoje;
+5. criar estados especializados de processamento, pausa, falha e retomada;
+6. criar referência do início protegido e da compreensão para computador;
+7. criar referência para tablet.
 
 ### Arquitetura de Negócios
 
@@ -165,4 +194,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe não equivale a design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
+Plano documentado não equivale a oferta. Preço candidato não equivale a preço comprovado. Validação de mercado não equivale a autorização de cobrança. Cada transição exige evidência e autorização próprias.

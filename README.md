@@ -9,11 +9,15 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.38 — Wireframe Móvel da Compreensão Inicial Funcionalmente Validado e Reformulado |
+| Marco | M7.39 — Baseline Comercial de Planos, Benefícios e Preços Definida |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
-| Modelo Econômico | GEM-001 a GEM-010 documentariamente concluídos |
+| Modelo Econômico | arquitetura inicial concluída; baseline comercial candidata definida |
+| Planos para Pessoas | Free, Plus e Pro definidos |
+| Planos para Coletivos | Livre, Gestão, Impacto e Enterprise definidos |
+| Planos para Organizações | Business Start, Growth e Scale definidos |
+| Preços | candidatos para validação; cobrança não autorizada |
 | Resultados Empresariais | 9 em validação, 3 fundidos e 6 rejeitados |
 | Resultados canônicos | nenhum criado |
 | Home pública | validada e materializada para computador |
@@ -22,10 +26,51 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após condição explicitamente escolhida |
 | Mapa e estados | funcionalmente validados e reformulados |
-| Referência para tablet | não iniciada |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Validação de Mercado | trilha paralela preservada |
+| Validação de Mercado | planos, limites e preços ainda não testados |
+
+## Baseline comercial candidata
+
+### Pessoas
+
+| Plano | Preço mensal | Preço anual | Ampliação principal |
+|---|---:|---:|---|
+| Guivos Free | R$ 0,00 | R$ 0,00 | catálogo público completo e 2 correspondências personalizadas por semana |
+| Guivos Plus | R$ 24,90 | R$ 249,00 | correspondências, filtros, alertas e histórico ampliados |
+| Guivos Pro | R$ 49,90 | R$ 499,00 | análises, integrações, relatórios e suporte avançados |
+
+### Coletivos
+
+| Plano | Preço mensal | Preço anual | Limite principal |
+|---|---:|---:|---|
+| Coletivo Livre | R$ 0,00 | R$ 0,00 | 1 atividade e 1 oportunidade gratuitas/mês; 2 ativas |
+| Coletivo Gestão | R$ 89,90 | R$ 899,00 | 4 atividades, 4 oportunidades e 6 ativas; monetização permitida |
+| Coletivo Impacto | R$ 249,90 | R$ 2.499,00 | 15 atividades, 15 oportunidades e 20 ativas |
+| Coletivo Enterprise | sob consulta | contrato anual | capacidade contratada, categorias personalizáveis, API, SSO e SLA |
+
+### Organizações
+
+| Plano | Preço mensal | Preço anual | Limite principal |
+|---|---:|---:|---|
+| Business Start | R$ 299,00 | R$ 2.990,00 | 10 novos programas ou oportunidades/mês; 15 ativos |
+| Business Growth | R$ 799,00 | R$ 7.990,00 | 50 novos/mês; 75 ativos; até 5 unidades |
+| Business Scale | a partir de R$ 1.990,00 | contrato anual | capacidade contratada, API, SSO, Power BI e SLA |
+
+Os valores não constituem oferta pública, autorização de cobrança, orçamento ou viabilidade comprovada.
+
+## Regras comerciais centrais
+
+- o catálogo público permanece acessível no Guivos Free;
+- a cota individual limita correspondências personalizadas, não oportunidades públicas;
+- Coletivo Livre publica somente atividades e oportunidades gratuitas;
+- publicação paga exige Coletivo Gestão ou superior;
+- pessoa gratuita pode adquirir atividade paga sem assinar Plus ou Pro;
+- assinatura, transação, comissão, taxa do meio de pagamento e tributo permanecem separados;
+- cota atingida não reduz a visibilidade de publicação existente;
+- Enterprise e Scale operam por capacidade contratada e uso justo;
+- plano pago não aumenta ranking, relevância, impacto ou evidência;
+- oferta não poderá interromper consentimento, compreensão, revisão ou controle de dados.
 
 ## Sequência pessoal vigente
 
@@ -43,9 +88,11 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
+Oferta de plano não entra nessa sequência protegida antes da Tela Hoje.
+
 ## Compreensão inicial móvel validada
 
-A UXA-036 reformulada e a UXA-037 estabelecem cinco estados de 390 por 844 pixels:
+A UXA-036 reformulada e a UXA-037 estabelecem cinco estados:
 
 1. processamento temporário visível e interrompível;
 2. compreensão apresentada como hipótese;
@@ -53,34 +100,7 @@ A UXA-036 reformulada e a UXA-037 estabelecem cinco estados de 390 por 844 pixel
 4. decisões independentes sobre persistência e personalização;
 5. base autorizada insuficiente.
 
-O conjunto demonstra:
-
-- processamento limitado aos itens autorizados;
-- interrupção com descarte explícito e sem tarefa oculta;
-- afirmações confirmadas, inferidas e desconhecidas separadas;
-- Momento Atual, avanço e possibilidade de Próximo Passo distintos;
-- revisão sem resposta selecionada por padrão;
-- confirmação parcial, rejeição e manutenção em aberto;
-- relato original separado da interpretação;
-- correção, retirada de autorização e exclusão com escopos próprios;
-- persistência e personalização como escolhas únicas e independentes;
-- combinações incompatíveis bloqueadas;
-- base insuficiente sem hipótese artificial ou pressão;
-- continuidade sem personalização.
-
-Arquivos:
-
-- `docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`.
-
-A validação não conclui IA, segurança, armazenamento, persistência, personalização, protótipo, teste ou desenvolvimento.
-
-## Mapa de Oportunidades
-
-A UXA-024 a UXA-033 estabelecem o Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador, com consulta compartilhada, explicabilidade, privacidade, seleção e resiliência.
+O conjunto preserva interrupção sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, decisões independentes e continuidade sem personalização.
 
 ## Estado dos Resultados Empresariais
 
@@ -101,26 +121,13 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
+- validação de planos, limites e disposição a pagar;
+- modelagem de custos, margem e unit economics;
+- definição de comissão e política transacional;
+- arquitetura da página de Planos e Preços;
 - referência móvel da Home;
 - validação da transição para a primeira Tela Hoje;
-- estados de processamento, pausa, falha e retomada;
-- referência do início protegido e da compreensão para computador;
-- estados especializados de texto, voz e arquivos;
-- referência para tablet;
 - reaplicação dos quatro testes dos Resultados Empresariais.
-
-## Backlog estratégico preservado
-
-Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a partir da ordem histórica:
-
-1. Guivos Mall;
-2. Guivos Business;
-3. Guivos Intelligence;
-4. Guivos Ads;
-5. Guivos Media;
-6. Guivos Travel;
-7. Modelo Comercial;
-8. Entrada no Mercado.
 
 ## Acesso principal
 
@@ -128,24 +135,17 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Roadmap arquitetural](docs/roadmap.md)
 - [Painel de Conhecimento](docs/project/knowledge-board.md)
 - [Marcos Arquiteturais](docs/project/architectural-milestones.md)
-- [Matriz de Consolidação Canônica](docs/project/canonical-consolidation-matrix.md)
+- [Guivos Economic Model](docs/economic-model/index.md)
+- [Catálogo de Planos e Preços](docs/economic-model/gem-004-a1-commercial-plans-pricing-catalog.md)
+- [Política Comercial de Planos](docs/economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md)
+- [Premissas de Precificação](docs/economic-model/gem-010-a1-pricing-assumptions-and-validation.md)
+- [Revisão da Baseline Comercial](docs/economic-model/gem-commercial-plans-baseline-review.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Página Inicial e Início](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Wireframe da Home](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Contrato do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
-- [Wireframe do Início Protegido](docs/experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
-- [Validação do Wireframe Protegido](docs/experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md)
 - [Wireframe da Compreensão Inicial](docs/experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md)
 - [Validação da Compreensão Inicial](docs/experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md)
-- [Wireframe do Mapa](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
-- [Validação Desktop do Mapa](docs/experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
-- [Adendo Canônico UXA-037](docs/project/canonical-consolidation-matrix-uxa-037-addendum.md)
-- [Histórico 1.60.0](docs/project/changelog-1.60.0-uxa-037.md)
-- [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
-- [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
-- [Guivos Economic Model](docs/economic-model/index.md)
+- [Adendo Canônico dos Planos](docs/project/canonical-consolidation-matrix-gem-commercial-plans-addendum.md)
+- [Histórico 1.61.0](docs/project/changelog-1.61.0-gem-commercial-plans.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
-- [Business Outcomes](docs/business-architecture/strategy/business-outcomes.md)
 - [Documentação completa](docs/index.md)
 
 ## Regra de leitura

@@ -1,18 +1,25 @@
 ---
 id: GEM-004-CAPABILITY-ALLOCATION-MATRIX-001
 title: Matriz de Alocação de Capacidades
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-07-28
 parent: GEM-004
+related:
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-COMMERCIAL-BASELINE-001
+  - M7.39
 ---
 
 # Matriz de Alocação de Capacidades
 
 ## 1. Objetivo
 
-Estabelecer como cada capacidade futura deverá ser classificada entre acesso gratuito, ampliação paga, acesso financiado, acesso de parceiros ou paywall proibido.
+Estabelecer como cada capacidade deverá ser classificada entre acesso gratuito, ampliação paga, acesso financiado, acesso de parceiros ou paywall proibido.
+
+A versão 0.2.0 incorpora exemplos da baseline comercial candidata.
 
 ## 2. Estados canônicos
 
@@ -29,7 +36,24 @@ Estabelecer como cada capacidade futura deverá ser classificada entre acesso gr
 | `prohibited_paywall` | não pode ser condicionado a pagamento | direito, segurança ou controle essencial |
 | `not_assessed` | classificação pendente | não pode avançar para oferta |
 
-## 3. Registro mínimo
+## 3. Exemplos da baseline comercial
+
+| Capacidade | Estado | Regra candidata |
+|---|---|---|
+| catálogo público de oportunidades | `universal_free` | acesso geral no Explorar e Mapa |
+| correspondência personalizada completa | `free_limited` | 2 por semana no Guivos Free |
+| correspondências personalizadas adicionais | `paid_extension` | Plus e Pro |
+| análise aprofundada e comparativa | `paid_extension` | Pro |
+| segurança, privacidade, correção e exclusão | `prohibited_paywall` | disponíveis em todos os planos |
+| uma atividade gratuita do Coletivo | `free_limited` | 1 por mês no Coletivo Livre |
+| uma oportunidade gratuita do Coletivo | `free_limited` | 1 por mês no Coletivo Livre |
+| publicação monetizada por Coletivo | `paid_extension` | Gestão ou superior |
+| indicadores históricos e de impacto | `paid_extension` | Impacto ou Enterprise |
+| API, SSO, Power BI e SLA | `paid_specialized` | Enterprise ou Scale |
+| acesso patrocinado de Pessoa ou Coletivo | `sponsor_funded` | prazo e finalidade declarados |
+| acesso financiado por Organização | `organization_funded` | financiador sem acesso indevido |
+
+## 4. Registro mínimo
 
 ```yaml
 capability_id: string
@@ -45,7 +69,13 @@ beneficiary: string
 data_involved:
   - string
 limits:
-  - string
+  periodic:
+    quantity: number | null
+    period: week | month | contract | none
+    cumulative: false
+  concurrent:
+    quantity: number | null
+  fair_use: boolean
 transition_effects:
   - string
 risks:
@@ -54,20 +84,22 @@ validation_status: not_started
 owner: unassigned
 ```
 
-## 4. Perguntas obrigatórias
+## 5. Perguntas obrigatórias
 
 - Qual valor é produzido?
 - A capacidade é essencial?
 - O gratuito permanece útil sem a ampliação?
 - O pago amplia ou apenas desfaz limitação artificial?
+- O catálogo público permanece acessível?
 - Existem dados ou riscos adicionais?
 - Quem paga e quem se beneficia?
 - Quem pode cancelar ou contestar?
 - O que ocorre no downgrade?
 - A perda de acesso pode causar dano?
 - Existe alternativa gratuita legítima?
+- O plano pago alteraria indevidamente ranking ou relevância?
 
-## 5. Critérios para `universal_free`
+## 6. Critérios para `universal_free`
 
 A classificação é obrigatória quando a capacidade for necessária para:
 
@@ -80,9 +112,10 @@ A classificação é obrigatória quando a capacidade for necessária para:
 - contestação;
 - acesso a registros essenciais;
 - retorno ao gratuito;
-- prevenção de dano material.
+- prevenção de dano material;
+- acesso geral ao catálogo público.
 
-## 6. Critérios para `free_limited`
+## 7. Critérios para `free_limited`
 
 O limite deverá:
 
@@ -93,21 +126,25 @@ O limite deverá:
 - não reduzir segurança;
 - permitir acompanhamento;
 - evitar surpresa ou bloqueio abrupto;
+- não reduzir visibilidade de conteúdo já publicado;
+- possuir alternativa gratuita;
 - possuir tratamento de exceção quando necessário para evitar dano.
 
-## 7. Critérios para `paid_extension`
+## 8. Critérios para `paid_extension`
 
 A capacidade deverá:
 
-- ampliar uma dimensão legítima;
+- ampliar dimensão legítima;
 - possuir valor adicional demonstrável;
 - não ser direito básico;
 - permitir downgrade;
 - informar dados e limites;
 - possuir hipótese de pagamento;
-- não depender de influência ou urgência artificial.
+- não depender de influência ou urgência artificial;
+- não aumentar relevância orgânica;
+- manter assinatura e transação separadas.
 
-## 8. Critérios para acesso financiado
+## 9. Critérios para acesso financiado
 
 Deverão ser registrados:
 
@@ -115,29 +152,31 @@ Deverão ser registrados:
 - beneficiário;
 - finalidade;
 - duração;
+- capacidades financiadas;
 - dados acessíveis ao financiador;
 - condição de término;
 - continuidade no gratuito;
 - conflito de interesse;
 - proteção contra discriminação.
 
-## 9. Conflitos de classificação
+## 10. Conflitos de classificação
 
 Quando uma capacidade puder pertencer a mais de um estado, prevalecerá:
 
 1. `prohibited_paywall` sobre qualquer classificação paga;
 2. `universal_free` sobre conveniência econômica;
 3. o limite mais protetivo para dados e autonomia;
-4. a classificação que preserve retorno ao gratuito;
+4. a classificação que preserve catálogo público e retorno ao gratuito;
 5. `not_assessed` quando evidência for insuficiente.
 
-## 10. Revisão de classificação
+## 11. Revisão de classificação
 
 Mudanças materiais exigirão:
 
 - justificativa;
 - comparação antes/depois;
 - impacto no gratuito;
+- impacto no catálogo público;
 - impacto em dados e direitos;
 - evidência;
 - plano de transição;
@@ -145,10 +184,6 @@ Mudanças materiais exigirão:
 - aprovação formal;
 - possibilidade de reversão.
 
-## 11. Fora do escopo
+## 12. Estado
 
-- inventário funcional completo por produto;
-- limites numéricos;
-- preço;
-- interface;
-- implementação de feature flags ou entitlement.
+`active allocation baseline — candidate commercial capabilities classified; validation and implementation pending`.

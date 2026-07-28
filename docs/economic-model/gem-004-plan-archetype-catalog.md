@@ -1,18 +1,25 @@
 ---
 id: GEM-004-PLAN-ARCHETYPE-CATALOG-001
 title: Catálogo de Arquétipos de Acesso e Planos
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-07-28
 parent: GEM-004
+related:
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-COMMERCIAL-BASELINE-001
+  - M7.39
 ---
 
 # Catálogo de Arquétipos de Acesso e Planos
 
 ## 1. Objetivo
 
-Organizar estruturas conceituais de acesso gratuito, pago e financiado sem estabelecer nomes comerciais, preços, SKUs, contratos ou ofertas finais.
+Organizar estruturas de acesso gratuito, pago e financiado e mapear os arquétipos conceituais para os planos comerciais candidatos vigentes.
+
+Arquétipo continua sendo uma classe conceitual. Nome, preço, benefícios e limites comerciais são governados pelo GEM-004-A1.
 
 ## 2. Catálogo consolidado
 
@@ -26,7 +33,25 @@ Organizar estruturas conceituais de acesso gratuito, pago e financiado sem estab
 | AM-06 | Parceiros e Profissionais | parceiro ou profissional | parceiro e clientes legítimos | gestão, publicação, integração e suporte |
 | AM-07 | Acesso Organizacional | empresa ou instituição | organização e usuários elegíveis | gestão, licenciamento e inteligência agregada |
 
-## 3. AM-01 — Participante Universal
+## 3. Mapeamento comercial candidato
+
+| Plano | Arquétipo principal | Arquétipos contribuintes |
+|---|---|---|
+| Guivos Free | AM-01 | — |
+| Guivos Plus | AM-02 | AM-04; AM-05 |
+| Guivos Pro | AM-02 | AM-03; AM-04; AM-05 |
+| Coletivo Livre | AM-05 | AM-06 |
+| Coletivo Gestão | AM-06 | AM-05 |
+| Coletivo Impacto | AM-06 | AM-05; AM-07 |
+| Coletivo Enterprise | AM-07 | AM-05; AM-06 |
+| Business Start | AM-07 | AM-04; AM-06 |
+| Business Growth | AM-07 | AM-04; AM-06 |
+| Business Scale | AM-07 | AM-04; AM-06 |
+| Guivos Patrocinado | AM-04 ou AM-05 | plano beneficiado correspondente |
+
+O mapeamento não transfere autoridade entre pagador, beneficiário, patrocinador, Organização ou Coletivo.
+
+## 4. AM-01 — Participante Universal
 
 ### Finalidade
 
@@ -39,44 +64,46 @@ Garantir participação, descoberta, orientação e avanço básico.
 - limites transparentes de capacidade;
 - ausência de obrigação de pagamento;
 - possibilidade de upgrade voluntário;
-- retorno automático ou disponível após término de acesso pago.
+- retorno automático ou disponível após término de acesso pago;
+- catálogo público acessível;
+- duas correspondências personalizadas completas por semana na baseline candidata.
 
-## 4. AM-02 — Participante Ampliado
+## 5. AM-02 — Participante Ampliado
 
 ### Finalidade
 
 Ampliar profundidade, personalização, capacidade, conveniência, inteligência ou integração.
 
-### Características candidatas
+### Características
 
-- maior histórico não essencial;
-- maior capacidade;
-- personalização avançada;
+- histórico ampliado;
+- maior capacidade de processamento;
+- personalização ampliada;
 - combinações de serviços;
-- automações;
+- automações e alertas;
 - suporte ampliado;
-- integrações adicionais.
+- integrações adicionais;
+- correspondências personalizadas sem cota semanal fixa, sujeitas a uso justo.
 
-Nenhuma composição final é aprovada por este catálogo.
-
-## 5. AM-03 — Participante Assistido
+## 6. AM-03 — Participante Assistido
 
 ### Finalidade
 
-Oferecer acompanhamento humano, suporte especializado ou serviço profissional.
+Oferecer acompanhamento humano, suporte especializado ou serviço profissional em modelo futuro e separado dos planos digitais básicos.
 
 ### Limites
 
 - pagamento não concede controle sobre decisões pessoais;
 - profissional deverá respeitar limites de competência;
 - evidências não poderão ser alteradas por interesse econômico;
-- escopo e responsabilidade deverão ser compreensíveis.
+- escopo e responsabilidade deverão ser compreensíveis;
+- nenhum serviço humano está incluído automaticamente no Plus ou Pro.
 
-## 6. AM-04 — Acesso Financiado por Organização
+## 7. AM-04 — Acesso Financiado por Organização
 
 ### Finalidade
 
-Permitir que empresa, instituição ou programa financie capacidades para pessoas elegíveis.
+Permitir que empresa, instituição ou programa financie capacidades para pessoas ou grupos elegíveis.
 
 ### Limites
 
@@ -84,9 +111,10 @@ Permitir que empresa, instituição ou programa financie capacidades para pessoa
 - organização não recebe contexto individual além do autorizado;
 - analytics deverão ser agregados quando possível;
 - término do vínculo deverá permitir continuidade no gratuito;
-- recusa não poderá gerar punição incompatível.
+- recusa não poderá gerar punição incompatível;
+- upgrade individual posterior deverá ser opcional.
 
-## 7. AM-05 — Acesso Patrocinado ou Social
+## 8. AM-05 — Acesso Patrocinado ou Social
 
 ### Finalidade
 
@@ -99,9 +127,10 @@ Ampliar acesso por recurso vinculado, patrocínio, fundação, parceiro ou progr
 - condição do beneficiário protegida;
 - patrocinador sem controle sobre evidência ou decisão;
 - recurso vinculado separado de receita livre;
-- encerramento e continuidade compreensíveis.
+- encerramento e continuidade compreensíveis;
+- possibilidade de financiar Plus, Pro, Coletivo Gestão ou Coletivo Impacto conforme contrato.
 
-## 8. AM-06 — Parceiros e Profissionais
+## 9. AM-06 — Parceiros, Profissionais e Coletivos Operadores
 
 ### Finalidade
 
@@ -113,13 +142,15 @@ Disponibilizar recursos para gestão de ofertas, relacionamento, integração, a
 - prioridade comercial disfarçada;
 - dispensa de critérios de qualidade;
 - influência oculta sobre ranking;
-- direito de vender ou reutilizar dados pessoais.
+- direito de vender ou reutilizar dados pessoais;
+- direito de monetizar no Coletivo Livre;
+- capacidade acima da cota contratada.
 
-## 9. AM-07 — Acesso Organizacional
+## 10. AM-07 — Acesso Organizacional e de Escala
 
 ### Finalidade
 
-Organizar capacidades do Guivos Business, Intelligence, integrações e administração.
+Organizar capacidades do Guivos Business, Intelligence, integrações, administração, múltiplas unidades e Coletivos de maior escala.
 
 ### Características candidatas
 
@@ -129,26 +160,24 @@ Organizar capacidades do Guivos Business, Intelligence, integrações e administ
 - administração de elegibilidade;
 - integrações;
 - suporte;
-- capacidades para equipes.
+- capacidades para equipes;
+- API, SSO, Power BI e SLA em Scale ou Enterprise;
+- capacidade dimensionada por contrato.
 
-## 10. Regras comuns
+## 11. Regras comuns
 
-1. arquétipo não é plano comercial;
+1. arquétipo não substitui plano comercial;
 2. financiamento não concede autoridade indevida;
 3. gratuito deverá permanecer disponível quando aplicável;
 4. toda capacidade deverá possuir classificação;
 5. diferenças deverão ser compreensíveis;
 6. direitos e dados serão preservados nas transições;
-7. planos futuros deverão passar por validação separada;
-8. preço permanece indefinido.
+7. planos comerciais permanecem candidatos até validação;
+8. preço candidato não autoriza cobrança;
+9. plano pago não aumenta relevância ou impacto;
+10. assinatura e transação permanecem separadas;
+11. capacidade sem limite fixo exige contrato e uso justo.
 
-## 11. Fora do escopo
+## 12. Estado
 
-- nome comercial;
-- preço;
-- pacote definitivo;
-- segmento final;
-- limite quantitativo;
-- contrato;
-- oferta pública;
-- implementação.
+`commercial_mapping_defined — archetypes mapped to candidate plans; empirical and specialist validation pending`.

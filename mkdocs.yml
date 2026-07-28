@@ -194,16 +194,20 @@ nav:
   - Guivos Economic Model:
       - Visão Geral: economic-model/index.md
       - Revisão de Fechamento: economic-model/gem-closure-review.md
+      - Revisão da Baseline Comercial: economic-model/gem-commercial-plans-baseline-review.md
       - GEM-001 — Fundação: economic-model/gem-001-foundation.md
       - GEM-002 — Geração e Fluxos de Valor: economic-model/gem-002-value-generation-and-flows.md
       - GEM-003 — Arquitetura de Receitas: economic-model/gem-003-revenue-architecture.md
       - GEM-004 — Modelo Gratuito e Pago: economic-model/gem-004-free-and-paid-model.md
+      - GEM-004-A1 — Planos, Benefícios e Preços: economic-model/gem-004-a1-commercial-plans-pricing-catalog.md
+      - GEM-004-A2 — Oferta e Ciclo Comercial: economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md
       - GEM-005 — Incentivos e Recompensas: economic-model/gem-005-incentives-and-rewards-model.md
       - GEM-006 — Economia de Parceiros: economic-model/gem-006-partner-economy.md
       - GEM-007 — Papéis Econômicos dos Produtos: economic-model/gem-007-product-economic-roles.md
       - GEM-008 — Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
       - GEM-009 — Métricas Econômicas: economic-model/gem-009-economic-metrics.md
       - GEM-010 — Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios-and-model.md
+      - GEM-010-A1 — Premissas de Precificação: economic-model/gem-010-a1-pricing-assumptions-and-validation.md
 
   - Business Architecture:
       - Visão Geral: business-architecture/index.md

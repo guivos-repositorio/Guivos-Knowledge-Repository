@@ -1,14 +1,20 @@
 ---
-id: ROADMAP-12.12.0
-title: Roadmap Arquitetural — Compreensão Inicial Móvel Validada
+id: ROADMAP-12.13.0
+title: Roadmap Arquitetural — Baseline Comercial de Planos Definida
 status: active
-version: 12.12.0
+version: 12.13.0
 owner: Guivos
 last_updated: 2026-07-28
 supersedes_partial:
-  - ROADMAP-12.11.0
+  - ROADMAP-12.12.0
 related:
   - GKR-STATE-001
+  - GEM-004
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-010
+  - GEM-010-A1
+  - GEM-COMMERCIAL-BASELINE-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -33,10 +39,10 @@ related:
   - UXA-035
   - UXA-036
   - UXA-037
-  - M7.38
+  - M7.39
 ---
 
-# Roadmap Arquitetural — Compreensão Inicial Móvel Validada
+# Roadmap Arquitetural — Baseline Comercial de Planos Definida
 
 ## 1. Autoridade
 
@@ -47,10 +53,16 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframe móvel da compreensão inicial funcionalmente validado e reformulado | M7.38; UXA-036; UXA-037 |
+| Marco | baseline comercial de planos, benefícios e preços definida | M7.39; GEM-004-A1; GEM-004-A2; GEM-010-A1 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
+| Modelo Econômico | baseline comercial candidata definida; validações pendentes | GEM-004 0.2.0; GEM-010 0.2.0 |
+| Planos para Pessoas | Free, Plus e Pro definidos | GEM-004-A1 |
+| Planos para Coletivos | Livre, Gestão, Impacto e Enterprise definidos | GEM-004-A1 |
+| Planos para Organizações | Business Start, Growth e Scale definidos | GEM-004-A1 |
+| Oferta e ciclo comercial | documentados; não implementados | GEM-004-A2 |
+| Preços e unit economics | parâmetros candidatos; custos e evidência pendentes | GEM-010-A1 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Início protegido móvel | funcionalmente validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados | UXA-011-A1; UXA-036; UXA-037 |
@@ -74,8 +86,9 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 10. Home pública validada e materializada para computador;
 11. Mapa principal, estados móveis e referência desktop criados e validados;
 12. início protegido móvel criado, validado e reformulado;
-13. compreensão inicial móvel criada em quatro estados;
-14. compreensão inicial móvel validada, reformulada e ampliada para cinco estados.
+13. compreensão inicial móvel criada e validada em cinco estados;
+14. Modelo Econômico reaberto de forma localizada;
+15. planos, benefícios, limites e preços candidatos consolidados.
 
 ## 4. Sequência pessoal vigente
 
@@ -95,42 +108,54 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Resultado da validação da compreensão inicial
+Oferta de plano não entra entre a explicação protegida e a decisão sobre personalização.
 
-A UXA-036 reformulada e a UXA-037 estabelecem:
+## 5. Resultado da baseline comercial
 
-- processamento limitado a itens revisados e autorizados;
-- inventário do que está dentro e fora do processamento;
-- interrupção com descarte explícito do resultado parcial;
-- ausência de tarefa oculta em segundo plano;
-- afirmações com identidade, natureza, origem e confiança próprias;
-- hipótese apresentada sem diagnóstico ou certeza;
-- Momento Atual, avanço e possibilidade de Próximo Passo separados;
-- ausência de avanço quando não houver evidência suficiente;
-- revisão sem resposta selecionada por padrão;
-- confirmação parcial, rejeição e manutenção em aberto;
-- relato original separado da interpretação derivada;
-- escopos distintos de correção, retirada de autorização e exclusão;
-- persistência e personalização como escolhas únicas e independentes;
-- bloqueio de combinações incompletas ou incompatíveis;
-- continuidade sem personalização;
-- transição consciente para a Tela Hoje;
-- base insuficiente materializada sem hipótese artificial ou pressão.
+### 5.1 Pessoas
+
+- Guivos Free — catálogo público completo e duas correspondências personalizadas completas por semana;
+- Guivos Plus — R$ 24,90 mensais ou R$ 249,00 anuais;
+- Guivos Pro — R$ 49,90 mensais ou R$ 499,00 anuais.
+
+### 5.2 Coletivos
+
+- Coletivo Livre — uma atividade e uma oportunidade gratuitas por mês, até duas ativas;
+- Coletivo Gestão — quatro atividades, quatro oportunidades e seis ativas;
+- Coletivo Impacto — quinze atividades, quinze oportunidades e vinte ativas;
+- Coletivo Enterprise — capacidade contratada sem limite padrão fixo.
+
+Preços candidatos:
+
+- Gestão — R$ 89,90 mensais ou R$ 899,00 anuais;
+- Impacto — R$ 249,90 mensais ou R$ 2.499,00 anuais;
+- Enterprise — sob consulta e contrato anual.
+
+### 5.3 Organizações
+
+- Business Start — R$ 299,00 mensais ou R$ 2.990,00 anuais;
+- Business Growth — R$ 799,00 mensais ou R$ 7.990,00 anuais;
+- Business Scale — a partir de R$ 1.990,00 mensais e contrato anual.
+
+### 5.4 Estado dos valores
+
+Todos os preços e limites são candidatos para validação. Não autorizam cobrança, oferta pública, orçamento ou implementação.
 
 ## 6. Proteções preservadas
 
-- nenhum relato é solicitado antes da explicação;
-- autenticação não autoriza processamento;
-- processamento utiliza somente itens autorizados;
-- interromper não mantém tarefa oculta;
-- compreensão é hipótese corrigível;
-- confiança não equivale a certeza;
-- engajamento não equivale a evolução;
-- afirmação aberta não equivale a fato;
-- Próximo Passo anterior à confirmação permanece possibilidade geral;
-- persistência não autoriza personalização;
-- personalização não cria nova finalidade;
-- continuar sem personalização é alternativa real;
+- gratuito entrega valor real;
+- catálogo público permanece acessível;
+- limite individual recai sobre personalização, não sobre oportunidade pública;
+- oferta não aparece em consentimento, processamento, revisão ou situação sensível;
+- alternativa gratuita permanece visível;
+- Coletivo Livre não publica oferta paga;
+- pessoa gratuita pode adquirir atividade paga;
+- assinatura e transação permanecem distintas;
+- cota não reduz visibilidade de publicação existente;
+- plano pago não aumenta relevância, impacto ou evidência;
+- acesso financiado não transfere autoridade;
+- cancelamento e retorno ao gratuito permanecem protegidos;
+- preço candidato não autoriza cobrança;
 - wireframe, validação, protótipo, design, testes e desenvolvimento permanecem atos separados.
 
 ## 7. Estado dos Resultados Empresariais
@@ -153,18 +178,32 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 ## 8. Próximas etapas candidatas
 
-### 8.1 Arquitetura da Experiência
+### 8.1 Modelo Econômico e Validação de Mercado
 
 Após integração e nova autorização, poderá ocorrer separadamente:
 
-1. criar a referência móvel da Home;
-2. validar a transição para a primeira Tela Hoje;
-3. criar estados de processamento, pausa, falha e retomada;
-4. criar a referência do início protegido e da compreensão para computador;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar referência para tablet, caso priorizada.
+1. validar utilidade, limites e disposição a pagar com Pessoas;
+2. validar planos e preços com Coletivos;
+3. validar planos e bases de cobrança com Organizações;
+4. estimar custos de servir e margens;
+5. modelar cenários e unit economics;
+6. definir comissão e política transacional de ofertas pagas;
+7. realizar revisões jurídica, fiscal, contábil, de privacidade e segurança;
+8. decidir sobre teste controlado.
 
-### 8.2 Arquitetura de Negócios
+### 8.2 Arquitetura da Experiência
+
+Poderá ocorrer separadamente:
+
+1. criar arquitetura da página de Planos e Preços;
+2. criar estados de limite, comparação, contratação e cancelamento;
+3. criar a referência móvel da Home;
+4. validar a transição para a primeira Tela Hoje;
+5. criar estados especializados de processamento, pausa, falha e retomada;
+6. criar referência do início protegido e da compreensão para computador;
+7. criar referência para tablet, caso priorizada.
+
+### 8.3 Arquitetura de Negócios
 
 Permanece pendente, em ato independente:
 
@@ -186,5 +225,7 @@ Nenhuma frente avança automaticamente.
 - personalização exige compreensão revisável e autorizada;
 - exploração geral continua disponível;
 - localização não é condição universal de uso;
-- publicidade não aumenta relevância pessoal;
-- Validação de Mercado mantém execução própria e paralela.
+- publicidade e pagamento não aumentam relevância;
+- Validação de Mercado mantém execução própria e paralela;
+- preço candidato não equivale a preço comprovado;
+- plano documentado não equivale a oferta pública.

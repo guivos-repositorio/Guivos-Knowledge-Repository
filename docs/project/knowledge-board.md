@@ -2,13 +2,19 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.12.0
+version: 12.13.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.12.0
+  - ROADMAP-12.13.0
+  - GEM-004
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-010
+  - GEM-010-A1
+  - GEM-COMMERCIAL-BASELINE-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -33,7 +39,7 @@ related:
   - UXA-035
   - UXA-036
   - UXA-037
-  - M7.38
+  - M7.39
 normative: false
 ---
 
@@ -48,10 +54,16 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | compreensão inicial móvel funcionalmente validada e reformulada | M7.38; UXA-036; UXA-037 |
+| Marco | baseline comercial de planos, benefícios e preços definida | M7.39; GEM-004-A1; GEM-004-A2; GEM-010-A1 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
+| Modelo Econômico | baseline comercial candidata definida; validação pendente | GEM-004 0.2.0; GEM-010 0.2.0 |
+| Pessoas | Free, Plus e Pro definidos | GEM-004-A1 |
+| Coletivos | Livre, Gestão, Impacto e Enterprise definidos | GEM-004-A1 |
+| Organizações | Business Start, Growth e Scale definidos | GEM-004-A1 |
+| Oferta e ciclo comercial | documentados; não implementados | GEM-004-A2 |
+| Preços | candidatos; sem autorização de cobrança | GEM-010-A1 |
 | Home pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Início protegido móvel | funcionalmente validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados | UXA-011-A1; UXA-036; UXA-037 |
@@ -71,6 +83,9 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Arquitetura de Fundação congelada;
 - Guivos Journey funcionalmente concluído;
 - Modelo Econômico documentado inicialmente;
+- baseline comercial candidata de planos definida;
+- planos e preços para Pessoas, Coletivos e Organizações consolidados;
+- regras de oferta, upgrade, downgrade e cancelamento documentadas;
 - remediação e validação mecânica concluídas;
 - validação externa e 18 decisões humanas concluídas;
 - Tela Hoje, Detalhe e Cadastro validados;
@@ -80,22 +95,39 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - compreensão inicial móvel criada, validada e reformulada;
 - Mapa principal, estados móveis e referência desktop validados e reformulados.
 
-### Em validação
+### Em validação ou calibração pendente
 
 - nove formulações candidatas de Resultados Empresariais;
-- formulações combinadas de agência, habilitação de valor e continuidade econômica;
-- fronteiras entre Resultados, princípios, capacidades e propriedades sustentadoras.
+- utilidade dos limites do Guivos Free;
+- disposição a pagar por Plus e Pro;
+- cotas e preços de Coletivos;
+- bases de cobrança e preços de Organizações;
+- custos de servir e margens;
+- comissão e política transacional;
+- parâmetros de Enterprise e Scale.
 
 ### Aguardando autorização
 
+#### Modelo Econômico e Mercado
+
+- pesquisa de utilidade e disposição a pagar;
+- validação de planos com Coletivos;
+- validação de planos com Organizações;
+- unit economics e cenários;
+- comissão e política transacional;
+- revisões especializadas;
+- teste controlado.
+
 #### Arquitetura da Experiência
 
+- página de Planos e Preços;
+- estados de limite, comparação, contratação e cancelamento;
 - referência móvel da Home;
 - validação da transição para a primeira Tela Hoje;
 - estados de processamento, pausa, falha e retomada;
 - referência do início protegido e da compreensão para computador;
 - estados especializados de texto, voz e arquivos;
-- referência para tablet, caso priorizada.
+- referência para tablet.
 
 #### Arquitetura de Negócios
 
@@ -108,13 +140,42 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 ### Pausado ou não iniciado
 
 - Engenharia de Produto;
+- checkout, gateway e cobrança;
+- oferta pública;
 - protótipo navegável e design visual;
 - testes de usabilidade;
 - autenticação, armazenamento, gravação, transcrição, upload e processamento real;
 - persistência e personalização implementadas;
-- provas de conceito, integrações e produção.
+- integrações e produção.
 
-## 4. Sequência pessoal vigente
+## 4. Baseline de planos
+
+### Pessoas
+
+| Plano | Preço candidato | Valor principal |
+|---|---:|---|
+| Guivos Free | R$ 0,00 | catálogo público e 2 correspondências personalizadas por semana |
+| Guivos Plus | R$ 24,90/mês | correspondências, filtros, alertas e histórico ampliados |
+| Guivos Pro | R$ 49,90/mês | análises, integrações e relatórios avançados |
+
+### Coletivos
+
+| Plano | Preço candidato | Limite principal |
+|---|---:|---|
+| Coletivo Livre | R$ 0,00 | 1 atividade e 1 oportunidade gratuitas/mês; 2 ativas |
+| Coletivo Gestão | R$ 89,90/mês | 4 atividades, 4 oportunidades e 6 ativas |
+| Coletivo Impacto | R$ 249,90/mês | 15 atividades, 15 oportunidades e 20 ativas |
+| Coletivo Enterprise | sob consulta | capacidade contratada; categorias personalizáveis |
+
+### Organizações
+
+| Plano | Preço candidato | Limite principal |
+|---|---:|---|
+| Business Start | R$ 299,00/mês | 10 novos programas ou oportunidades/mês; 15 ativos |
+| Business Growth | R$ 799,00/mês | 50 novos/mês; 75 ativos; até 5 unidades |
+| Business Scale | a partir de R$ 1.990,00/mês | capacidade e integrações contratadas |
+
+## 5. Sequência pessoal vigente
 
 ```text
 Página Inicial pública
@@ -130,29 +191,24 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Compreensão inicial móvel validada
+Oferta de plano não interrompe essa sequência protegida.
 
-A UXA-036 reformulada e a UXA-037 estabelecem:
+## 6. Regras comerciais preservadas
 
-- processamento limitado a itens autorizados;
-- interrupção com descarte e sem tarefa oculta;
-- afirmações confirmadas, inferidas e desconhecidas separadas;
-- confiança distinta de certeza;
-- Momento Atual, avanço e Próximo Passo separados;
-- revisão sem resposta padrão;
-- afirmações abertas sem promoção a fato;
-- relato original separado da interpretação;
-- correção, retirada de autorização e exclusão com escopos próprios;
-- persistência e personalização como escolhas únicas e independentes;
-- combinações incompatíveis bloqueadas;
-- base insuficiente sem hipótese ou pressão;
-- continuidade sem personalização.
+- catálogo público permanece acessível no Guivos Free;
+- limite recai sobre correspondências personalizadas;
+- alternativa gratuita permanece visível;
+- Coletivo Livre publica somente ofertas gratuitas;
+- publicação paga exige Gestão ou superior;
+- pessoa gratuita pode comprar atividade paga;
+- assinatura e transação são objetos distintos;
+- cota não reduz visibilidade de publicação existente;
+- Enterprise e Scale utilizam capacidade contratada e uso justo;
+- plano pago não altera ranking, relevância, impacto ou evidência;
+- preços são candidatos para validação;
+- nenhuma cobrança foi autorizada.
 
-## 6. Mapa e estados validados
-
-A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador com consulta compartilhada, explicabilidade, privacidade, seleção e operação resiliente.
-
-## 7. Proteções preservadas
+## 7. Proteções da experiência preservadas
 
 - a Home não coleta relato pessoal;
 - iniciar a jornada é voluntário;
@@ -165,12 +221,11 @@ A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista ter
 - relato e interpretação permanecem separados;
 - persistência e personalização exigem decisões próprias;
 - exploração sem personalização permanece disponível;
-- informações de terceiros não são exigidas;
 - localização é opcional;
-- publicidade não aumenta relevância pessoal;
+- publicidade e pagamento não aumentam relevância;
 - wireframes e validações não equivalem a design ou implementação.
 
-## 8. Distribuição dos candidatos
+## 8. Distribuição dos candidatos de Resultados
 
 | Estado | Quantidade | Interpretação |
 |---|---:|---|
@@ -181,4 +236,4 @@ A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista ter
 
 ## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência móvel da Home, transição para a primeira Tela Hoje, estados especializados do início protegido e da compreensão, referência para computador ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação dos planos e preços, modelagem de unit economics, política transacional, página de Planos e Preços, referência móvel da Home, transição para a primeira Tela Hoje ou retomada independente dos testes dos Resultados Empresariais.
