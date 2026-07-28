@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.10.0
-title: Roadmap Arquitetural — Início Protegido Móvel Validado
+id: ROADMAP-12.11.0
+title: Roadmap Arquitetural — Compreensão Inicial Móvel Materializada
 status: active
-version: 12.10.0
+version: 12.11.0
 owner: Guivos
-last_updated: 2026-07-27
+last_updated: 2026-07-28
 supersedes_partial:
-  - ROADMAP-12.9.0
+  - ROADMAP-12.10.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -31,10 +31,11 @@ related:
   - UXA-033
   - UXA-034
   - UXA-035
-  - M7.36
+  - UXA-036
+  - M7.37
 ---
 
-# Roadmap Arquitetural — Início Protegido Móvel Validado
+# Roadmap Arquitetural — Compreensão Inicial Móvel Materializada
 
 ## 1. Autoridade
 
@@ -45,14 +46,14 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframe móvel do início protegido funcionalmente validado e reformulado | M7.36; UXA-034; UXA-035 |
+| Marco | wireframe móvel da compreensão inicial criado | M7.37; UXA-036 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
-| Início protegido móvel | funcionalmente validado e reformulado em quatro estados | UXA-023; UXA-034; UXA-035 |
+| Início protegido móvel | funcionalmente validado e reformulado | UXA-023; UXA-034; UXA-035 |
+| Compreensão inicial móvel | quatro estados criados; validação funcional pendente | UXA-011-A1; UXA-036 |
 | Referência móvel da Home | não iniciada | — |
-| Compreensão inicial | contrato estabelecido; materialização pendente | UXA-011-A1; UXA-023; UXA-035 |
 | Tela Hoje | entrada recorrente posterior ao gate | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
 | Protótipo, design e testes | não iniciados | — |
@@ -71,8 +72,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 9. Home pública, início protegido e Tela Hoje separados;
 10. Home pública validada e materializada para computador;
 11. Mapa principal, estados móveis e referência desktop criados e validados;
-12. wireframe móvel do início protegido criado;
-13. wireframe móvel do início protegido funcionalmente validado e reformulado.
+12. início protegido móvel criado, validado e reformulado;
+13. compreensão inicial móvel materializada em quatro estados.
 
 ## 4. Sequência pessoal vigente
 
@@ -83,45 +84,46 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ compreensão inicial revisável
-→ decisão sobre persistência e personalização
+→ processamento visível e interrompível
+→ compreensão inicial apresentada como hipótese
+→ revisão, correção, limitação ou rejeição
+→ decisão separada sobre persistência
+→ decisão separada sobre personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Resultado da validação do início protegido
+## 5. Resultado da compreensão inicial móvel
 
-A UXA-034 reformulada e a UXA-035 estabelecem:
+A UXA-036 demonstra:
 
-- relato pessoal separado de dados técnicos e de acesso;
-- estados nomeados, pausáveis e retomáveis;
-- ausência de formulário linear obrigatório;
-- acesso apresentado somente quando necessário;
-- sessão válida sem repetição da etapa de acesso;
-- ações com destino e efeito explícitos;
-- texto, voz, arquivo e perguntas opcionais sem preferência automática;
-- explicação anterior para voz e arquivo;
-- compartilhamento mínimo legítimo;
-- pausa, salvar, sair e excluir com efeitos distintos;
-- inventário antes do processamento;
-- autorizações específicas e inicialmente desmarcadas;
-- preparação apenas de compreensão inicial temporária e revisável;
-- recusa sem processamento;
-- persistência e personalização bloqueadas até a revisão da compreensão.
+- processamento limitado a itens revisados e autorizados;
+- inventário do que está dentro e fora do processamento;
+- finalidade e operações em linguagem compreensível;
+- interrupção, retorno às autorizações e descarte do resultado temporário;
+- hipótese apresentada sem diagnóstico ou certeza;
+- Momento Atual, avanço e possibilidade de Próximo Passo separados;
+- origem, natureza, confiança, lacunas e desconhecidos;
+- ausência de avanço quando não houver evidência suficiente;
+- correção, contestação, limitação e rejeição por afirmação;
+- relato original separado da interpretação derivada;
+- persistência e personalização como decisões independentes;
+- continuidade sem personalização;
+- transição consciente para a Tela Hoje;
+- base insuficiente sem hipótese artificial ou pressão para compartilhar mais.
 
 ## 6. Proteções preservadas
 
 - nenhum relato é solicitado antes da explicação;
-- dados de acesso não constituem conteúdo da jornada;
 - autenticação não autoriza processamento;
-- modalidades não competem como exigências;
-- compartilhar pouco é legítimo;
-- voz e arquivos exigem explicação anterior;
-- revisão antecede autorização;
-- não autorizar impede processamento;
-- persistência e personalização dependem do gate;
-- exploração sem personalização permanece disponível;
-- informações de terceiros não são exigidas;
+- processamento utiliza somente itens autorizados;
+- compreensão é hipótese corrigível;
+- confiança não equivale a certeza;
+- engajamento não equivale a evolução;
+- Próximo Passo anterior à confirmação permanece possibilidade geral;
+- persistência não autoriza personalização;
+- personalização não cria nova finalidade;
+- continuar sem personalização é alternativa real;
 - wireframe, validação, protótipo, design, testes e desenvolvimento permanecem atos separados.
 
 ## 7. Estado dos Resultados Empresariais
@@ -148,12 +150,12 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer separadamente:
 
-1. criar a referência móvel da Home;
-2. materializar a revisão da compreensão inicial;
+1. validar funcionalmente o wireframe móvel da compreensão inicial;
+2. criar a referência móvel da Home;
 3. validar a transição para a primeira Tela Hoje;
-4. criar estados especializados de texto, voz e arquivos;
-5. criar a referência do início protegido para computador;
-6. criar estados de processamento, pausa, falha e retomada;
+4. criar estados de processamento, pausa, falha e retomada;
+5. criar a referência do início protegido e da compreensão para computador;
+6. criar estados especializados de texto, voz e arquivos;
 7. criar referência para tablet, caso priorizada.
 
 ### 8.2 Arquitetura de Negócios
