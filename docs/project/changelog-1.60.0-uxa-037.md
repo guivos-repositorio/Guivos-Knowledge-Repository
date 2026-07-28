@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.60.0
- title: Histórico 1.60.0 — UXA-037
+title: Histórico 1.60.0 — UXA-037
 status: active
 version: 1.60.0
 owner: Repositório de Conhecimento da Guivos
