@@ -1,45 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Processamento visível e interrompível da compreensão inicial</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade que mostra finalidade, conteúdos autorizados, operações compreensíveis e controles para interromper, revisar autorizações ou excluir o resultado temporário.</desc>
+  <title id="title">Processamento temporário visível e interrompível</title>
+  <desc id="desc">Wireframe móvel reformulado que mostra finalidade, itens autorizados, estados textuais das operações e ações que interrompem e descartam o resultado parcial sem tarefa oculta.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
-  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Sair</text>
+  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ajuda e controles</text>
   <line x1="16" y1="50" x2="374" y2="50" stroke="#cccccc"/>
 
-  <text x="20" y="82" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · PROCESSAMENTO</text>
-  <text x="20" y="116" font-family="Arial, sans-serif" font-size="20" font-weight="700">Preparando uma compreensão inicial</text>
-  <text x="20" y="140" font-family="Arial, sans-serif" font-size="10">Hipótese temporária, revisável e ainda não persistida.</text>
+  <text x="20" y="80" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · PROCESSAMENTO TEMPORÁRIO</text>
+  <text x="20" y="112" font-family="Arial, sans-serif" font-size="19" font-weight="700">Preparando uma hipótese revisável</text>
+  <text x="20" y="136" font-family="Arial, sans-serif" font-size="9">Nada foi persistido ou usado para personalizar.</text>
 
-  <rect x="20" y="164" width="350" height="88" rx="10" fill="#f3f3f3" stroke="#777777"/>
-  <text x="36" y="188" font-family="Arial, sans-serif" font-size="11" font-weight="700">Finalidade atual</text>
-  <text x="36" y="212" font-family="Arial, sans-serif" font-size="9">Usar somente os itens revisados e autorizados para</text>
-  <text x="36" y="230" font-family="Arial, sans-serif" font-size="9">preparar uma compreensão inicial temporária.</text>
-  <text x="36" y="246" font-family="Arial, sans-serif" font-size="8">Sem persistência ou personalização nesta etapa.</text>
+  <rect x="20" y="158" width="350" height="92" rx="10" fill="#f3f3f3" stroke="#777777"/>
+  <text x="36" y="182" font-family="Arial, sans-serif" font-size="11" font-weight="700">Finalidade e efeito da interrupção</text>
+  <text x="36" y="204" font-family="Arial, sans-serif" font-size="9">Usar somente itens revisados e autorizados para preparar</text>
+  <text x="36" y="222" font-family="Arial, sans-serif" font-size="9">uma hipótese temporária. Interromper descarta o resultado parcial.</text>
+  <text x="36" y="240" font-family="Arial, sans-serif" font-size="8">Os conteúdos de origem seguem conforme seus controles anteriores.</text>
 
-  <text x="20" y="284" font-family="Arial, sans-serif" font-size="12" font-weight="700">Itens utilizados</text>
-  <rect x="20" y="298" width="350" height="110" rx="9" fill="#ffffff" stroke="#999999"/>
-  <text x="36" y="322" font-family="Arial, sans-serif" font-size="10" font-weight="700">Texto autorizado</text>
-  <text x="36" y="342" font-family="Arial, sans-serif" font-size="9">“Quero organizar minha transição profissional...”</text>
-  <text x="36" y="364" font-family="Arial, sans-serif" font-size="9">Origem: relato revisado por você</text>
-  <text x="36" y="386" font-family="Arial, sans-serif" font-size="9">Finalidade: compreensão inicial</text>
+  <text x="20" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="700">Escopo atual · 1 item autorizado</text>
+  <rect x="20" y="294" width="350" height="98" rx="9" fill="#ffffff" stroke="#999999"/>
+  <text x="36" y="318" font-family="Arial, sans-serif" font-size="10" font-weight="700">T1 · Texto autorizado</text>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="9">“Quero organizar minha transição profissional...”</text>
+  <text x="36" y="360" font-family="Arial, sans-serif" font-size="8">Origem: relato revisado · Finalidade: compreensão inicial</text>
+  <text x="36" y="382" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Abrir inventário completo</text>
 
-  <rect x="20" y="420" width="350" height="76" rx="9" fill="#ffffff" stroke="#999999"/>
-  <text x="36" y="444" font-family="Arial, sans-serif" font-size="10" font-weight="700">Fora do processamento</text>
-  <text x="36" y="466" font-family="Arial, sans-serif" font-size="9">Arquivo não autorizado · resposta removida</text>
-  <text x="36" y="484" font-family="Arial, sans-serif" font-size="8">Esses itens não serão usados nesta hipótese.</text>
+  <rect x="20" y="406" width="350" height="70" rx="9" fill="#ffffff" stroke="#999999"/>
+  <text x="36" y="430" font-family="Arial, sans-serif" font-size="10" font-weight="700">Fora do processamento</text>
+  <text x="36" y="452" font-family="Arial, sans-serif" font-size="9">Arquivo não autorizado · resposta removida</text>
+  <text x="36" y="468" font-family="Arial, sans-serif" font-size="8">Não serão usados nem analisados nesta hipótese.</text>
 
-  <text x="20" y="530" font-family="Arial, sans-serif" font-size="12" font-weight="700">O que está acontecendo</text>
-  <rect x="20" y="544" width="350" height="124" rx="9" fill="#f7f7f7" stroke="#999999"/>
-  <text x="36" y="568" font-family="Arial, sans-serif" font-size="9">✓ organizar informações relacionadas</text>
-  <text x="36" y="592" font-family="Arial, sans-serif" font-size="9">✓ distinguir relato e interpretação</text>
-  <text x="36" y="616" font-family="Arial, sans-serif" font-size="9">• registrar lacunas e incertezas</text>
-  <text x="36" y="640" font-family="Arial, sans-serif" font-size="9">• preparar hipótese para sua revisão</text>
-  <text x="36" y="658" font-family="Arial, sans-serif" font-size="8">Sem pontuação de evolução ou diagnóstico.</text>
+  <text x="20" y="510" font-family="Arial, sans-serif" font-size="12" font-weight="700">Estado das operações</text>
+  <rect x="20" y="524" width="350" height="126" rx="9" fill="#f7f7f7" stroke="#999999"/>
+  <text x="36" y="548" font-family="Arial, sans-serif" font-size="9">Concluído · organizar informações relacionadas</text>
+  <text x="36" y="572" font-family="Arial, sans-serif" font-size="9">Em andamento · distinguir relato e interpretação</text>
+  <text x="36" y="596" font-family="Arial, sans-serif" font-size="9">Aguardando · registrar lacunas e incertezas</text>
+  <text x="36" y="620" font-family="Arial, sans-serif" font-size="9">Aguardando · preparar hipótese para revisão</text>
+  <text x="36" y="640" font-family="Arial, sans-serif" font-size="8">Sem percentual de evolução, diagnóstico ou pontuação secreta.</text>
 
-  <rect x="20" y="692" width="350" height="48" rx="9" fill="#222222"/>
-  <text x="195" y="722" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="700">Interromper processamento</text>
-  <text x="195" y="762" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Revisar conteúdos e autorizações</text>
-  <text x="195" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Excluir resultado temporário</text>
-  <text x="195" y="818" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Voltar a explorar sem personalização</text>
+  <rect x="20" y="674" width="350" height="48" rx="9" fill="#222222"/>
+  <text x="195" y="704" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Interromper e descartar resultado parcial</text>
+  <text x="195" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Interromper e revisar conteúdos e autorizações</text>
+  <text x="195" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Interromper e explorar sem personalização</text>
+  <text x="195" y="816" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Nenhuma tarefa continuará silenciosamente em segundo plano.</text>
 </svg>
