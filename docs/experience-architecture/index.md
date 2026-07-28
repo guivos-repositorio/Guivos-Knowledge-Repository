@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.32.0
+version: 0.33.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 related:
@@ -48,6 +48,7 @@ related:
   - UXA-034
   - UXA-035
   - UXA-036
+  - UXA-037
 normative: false
 ---
 
@@ -78,9 +79,9 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ processamento visível e interrompível
+→ processamento temporário visível e interrompível
 → compreensão inicial apresentada como hipótese
-→ revisão, correção, limitação ou rejeição
+→ revisão, correção, abertura, limitação ou rejeição
 → decisão separada sobre persistência
 → decisão separada sobre personalização
 → Tela Hoje, jornada sem personalização ou exploração geral
@@ -94,7 +95,7 @@ Página Inicial pública
 | Fundação, mapas e padrões | UXA-001, UXA-003, UXA-003-A1, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
 | Página Inicial pública | [contrato](uxa-020-home-and-journey-entry.md), [validação](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe](uxa-022-public-home-low-fidelity-wireframe.md) |
 | Início protegido | [contrato validado](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md), [wireframe móvel](uxa-034-protected-journey-entry-low-fidelity-wireframe.md) e [validação do wireframe](uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md) |
-| Compreensão inicial | [contrato de explicabilidade](uxa-011-a1-moment-progress-and-next-step-explainability.md) e [wireframe móvel](uxa-036-initial-understanding-low-fidelity-wireframe.md) |
+| Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe móvel](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação do wireframe](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | [experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação](uxa-010-today-functional-validation-and-reformulation.md) |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
@@ -104,21 +105,23 @@ Página Inicial pública
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | ativa e integrada até a compreensão inicial móvel | UXA-000 a UXA-036; UXA-003-A1 |
+| Arquitetura da Experiência | ativa e integrada até a validação da compreensão inicial móvel | UXA-000 a UXA-037; UXA-003-A1 |
 | Resultados Empresariais | 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido móvel | funcionalmente validado e reformulado | UXA-020; UXA-023; UXA-034; UXA-035 |
-| Compreensão inicial móvel | quatro estados criados; validação funcional pendente | UXA-011-A1; UXA-036 |
+| Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados | UXA-011-A1; UXA-036; UXA-037 |
 | Referência do início protegido e compreensão para computador | não iniciada | — |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | estados móveis e referência desktop validados | UXA-004; UXA-024 a UXA-033 |
 | Protótipo, design e testes | não iniciados | — |
 
-## 7. Início protegido
+## 7. Página Inicial e início protegido
 
-A UXA-034 reformulada e a UXA-035 demonstram:
+A Home explica concretamente a Guivos, oferece início voluntário e exploração sem personalização e não coleta relato pessoal.
+
+O início protegido móvel, reformulado pelas UXA-034 e UXA-035, demonstra:
 
 - nenhum relato antes da explicação;
 - dados de acesso separados do conteúdo da jornada;
@@ -126,43 +129,44 @@ A UXA-034 reformulada e a UXA-035 demonstram:
 - acesso somente quando necessário;
 - modalidades equivalentes e sem seleção automática;
 - compartilhamento mínimo;
-- revisão anterior ao processamento;
-- autorização específica e inicialmente desmarcada;
+- voz e arquivo com explicação anterior;
+- pausa, salvamento, saída e exclusão diferenciados;
+- inventário antes do processamento;
+- autorização inicialmente desmarcada e limitada à compreensão temporária;
 - recusa sem processamento;
 - persistência e personalização bloqueadas até o gate.
 
 ## 8. Compreensão inicial móvel
 
-A UXA-036 materializa:
+A UXA-036 reformulada e a UXA-037 estabelecem:
 
-- processamento limitado aos conteúdos autorizados;
-- inventário do que está dentro e fora do processamento;
-- finalidade, interrupção e retorno às autorizações;
-- hipótese inicial sem diagnóstico ou certeza;
-- Momento Atual, avanço e possibilidade de Próximo Passo separados;
-- origem, natureza, confiança, lacunas e desconhecidos;
-- ausência de avanço quando não houver evidência suficiente;
-- correção, contestação, limitação e rejeição por afirmação;
+- processamento temporário limitado aos itens autorizados;
+- interrupção com descarte explícito e ausência de tarefa oculta;
+- afirmações individualizadas por natureza, origem e confiança;
+- hipótese sem diagnóstico ou certeza;
+- separação entre Momento Atual, avanço e possibilidade de Próximo Passo;
+- revisão sem resposta selecionada por padrão;
+- confirmação parcial, rejeição e manutenção em aberto;
 - relato original separado da interpretação;
-- persistência e personalização como decisões independentes;
+- correção, retirada de autorização e exclusão com escopos distintos;
+- persistência e personalização como escolhas exclusivas e independentes;
+- combinações incompatíveis bloqueadas;
 - continuidade sem personalização;
-- transição consciente para a Tela Hoje;
-- base insuficiente sem hipótese artificial.
+- base insuficiente materializada sem pressão para compartilhar mais.
 
 Arquivos vetoriais:
 
 - `docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
 - `docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
 - `docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`.
-
-A referência ainda não foi funcionalmente validada.
+- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`.
 
 ## 9. Tela Hoje
 
-A Tela Hoje é a superfície recorrente posterior à compreensão inicial suficiente, revisável e autorizada.
+A Tela Hoje é a superfície recorrente posterior à compreensão inicial suficiente, revisada e autorizada conforme a condição escolhida.
 
-Sem personalização, poderá apresentar jornada geral, controles e exploração sem chamar possibilidades de recomendações pessoais.
+A validação da transição entre a compreensão e a primeira Tela Hoje ainda não foi iniciada.
 
 ## 10. Explorar e Mapa
 
@@ -172,9 +176,11 @@ Sem personalização, poderá apresentar jornada geral, controles e exploração
 
 ## 11. Gate de persistência e personalização
 
-Criar conta, digitar, gravar, enviar arquivo, concluir relato ou receber uma hipótese não autoriza persistência ou personalização.
+Criar conta, digitar, gravar, enviar arquivo, concluir relato ou aceitar uma afirmação não autoriza automaticamente persistência ou personalização.
 
-Persistência e personalização são decisões separadas, posteriores à apresentação e revisão da compreensão inicial.
+Persistência e personalização possuem escolhas próprias, exclusivas, inicialmente desmarcadas e sujeitas a compatibilidade funcional.
+
+Excluir a compreensão impede personalização baseada nela. Usar somente na sessão limita eventual personalização à sessão e finalidade apresentadas.
 
 ## 12. Gate de alinhamento à Fundação
 
@@ -186,12 +192,12 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o wireframe móvel da compreensão inicial;
-2. criar a referência móvel da Home;
-3. validar a transição para a primeira Tela Hoje;
-4. criar estados de processamento, pausa, falha e retomada;
-5. criar referência do início protegido e da compreensão para computador;
-6. criar estados especializados de texto, voz e arquivos;
+1. criar a referência móvel da Home;
+2. validar a transição da compreensão para a primeira Tela Hoje;
+3. criar estados especializados de processamento, pausa, falha e retomada;
+4. criar referência do início protegido e da compreensão para computador;
+5. criar estados especializados de texto, voz e arquivos;
+6. criar referência para tablet, caso priorizada;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
