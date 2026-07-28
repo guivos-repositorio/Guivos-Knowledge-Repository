@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.8.0
+version: 5.9.0
 owner: Guivos
-last_updated: 2026-07-27
+last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.10.0
+  - ROADMAP-12.11.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -30,6 +30,7 @@ related:
   - UXA-033
   - UXA-034
   - UXA-035
+  - UXA-036
   - M7.20
   - M7.21
   - M7.22
@@ -47,6 +48,7 @@ related:
   - M7.34
   - M7.35
   - M7.36
+  - M7.37
 normative: false
 ---
 
@@ -69,46 +71,47 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência e experiências institucionais e coletivas |
 | M7.21–M7.24 | Concluído | Home pública e início protegido separados e validados |
 | M7.25–M7.34 | Concluído | Mapa móvel, estados alternativos e referência desktop criados e validados |
-| M7.35 | Concluído | wireframe móvel do início protegido criado |
-| M7.36 | Concluído neste incremento | wireframe móvel do início protegido funcionalmente validado e reformulado |
+| M7.35–M7.36 | Concluído | início protegido móvel criado, validado e reformulado |
+| M7.37 | Concluído neste incremento | wireframe móvel da compreensão inicial criado |
 
 ## 3. Marco vigente
 
-### Wireframe Móvel do Início Protegido Funcionalmente Validado e Reformulado — M7.36
+### Wireframe Móvel da Compreensão Inicial Criado — M7.37
 
 Critérios atendidos:
 
-- validação registrada em UXA-035;
-- UXA-034 elevada para 0.2.0 e estado ativo;
-- quatro arquivos vetoriais reformulados;
-- relato pessoal separado de dados técnicos e de acesso;
-- estados nomeados sem contagem obrigatória;
-- acesso apresentado somente quando necessário;
-- sessão válida sem repetição do acesso;
-- ação inicial com destino explícito;
-- modalidades equivalentes e sem seleção automática;
-- explicação anterior para voz e arquivo;
-- compartilhamento mínimo preservado;
-- pausa, salvar, sair e excluir diferenciados;
-- inventário anterior ao processamento;
-- autorização inicialmente desmarcada;
-- finalidade limitada à preparação de compreensão temporária e revisável;
-- recusa sem processamento;
-- persistência e personalização bloqueadas até o gate;
-- exploração sem personalização preservada;
-- autenticação, armazenamento, voz, arquivos, IA, protótipo, testes e desenvolvimento não iniciados;
+- referência registrada em UXA-036;
+- quatro arquivos vetoriais criados em 390 por 844 pixels;
+- processamento visível e interrompível materializado;
+- itens autorizados e excluídos reconhecíveis;
+- finalidade e operações descritas em linguagem compreensível;
+- compreensão apresentada como hipótese, sem diagnóstico ou certeza;
+- Momento Atual, avanço e possibilidade de Próximo Passo separados;
+- origem, natureza, confiança, lacunas e desconhecidos visíveis;
+- ausência de evidência de avanço declarada quando aplicável;
+- revisão, correção, limitação, contestação e rejeição por afirmação;
+- relato original separado da interpretação derivada;
+- retirada de autorização e exclusão diferenciadas;
+- persistência e personalização materializadas como decisões independentes;
+- nenhuma opção marcada por padrão;
+- continuidade sem personalização preservada;
+- retorno ao início protegido preservado;
+- transição consciente para a Tela Hoje materializada;
+- base insuficiente governada sem hipótese artificial;
+- validação funcional especializada preservada como ato posterior;
+- IA, política jurídica, segurança, armazenamento, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
-### Wireframe Móvel do Início Protegido Criado — M7.35
+### Início Protegido Móvel Validado — M7.36
 
-A UXA-034 permanece como materialização dos quatro estados móveis.
+A UXA-034 e a UXA-035 permanecem como contrato gráfico validado do início protegido.
 
 ### Referência do Mapa para Computador Validada — M7.34
 
-A UXA-032 e a UXA-033 permanecem como referência funcionalmente validada e reformulada para tela ampla.
+A UXA-032 e a UXA-033 permanecem como referência funcionalmente validada para tela ampla.
 
 ### Início Protegido Validado — M7.24
 
@@ -129,7 +132,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; início protegido móvel validado e reformulado |
+| Arquitetura da Experiência | ativa; compreensão inicial móvel materializada; validação pendente |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -141,12 +144,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. criar a referência móvel da Home;
-2. materializar a revisão da compreensão inicial;
+1. validar funcionalmente o wireframe móvel da compreensão inicial;
+2. criar a referência móvel da Home;
 3. validar a transição para a primeira Tela Hoje;
-4. criar estados especializados de texto, voz e arquivos;
-5. criar a referência do início protegido para computador;
-6. criar estados de processamento, pausa, falha e retomada;
+4. criar estados de processamento, pausa, falha e retomada;
+5. criar referência do início protegido e da compreensão para computador;
+6. criar estados especializados de texto, voz e arquivos;
 7. criar referência para tablet, caso priorizada.
 
 ### Arquitetura de Negócios
@@ -161,4 +164,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe não equivale a design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
+Wireframe não equivale a validação funcional, design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
