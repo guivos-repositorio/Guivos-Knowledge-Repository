@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.10.0
+version: 12.11.0
 owner: Guivos
-last_updated: 2026-07-27
+last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.10.0
+  - ROADMAP-12.11.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -31,7 +31,8 @@ related:
   - UXA-033
   - UXA-034
   - UXA-035
-  - M7.36
+  - UXA-036
+  - M7.37
 normative: false
 ---
 
@@ -46,18 +47,18 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | início protegido móvel funcionalmente validado e reformulado | M7.36; UXA-034; UXA-035 |
+| Marco | wireframe móvel da compreensão inicial criado | M7.37; UXA-036 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Home pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Início protegido móvel | funcionalmente validado e reformulado | UXA-023; UXA-034; UXA-035 |
+| Compreensão inicial móvel | quatro estados criados; validação funcional pendente | UXA-011-A1; UXA-036 |
 | Referência móvel da Home | não iniciada | — |
-| Referência do início protegido para computador | não iniciada | — |
-| Compreensão inicial | contrato estabelecido; materialização pendente | UXA-011-A1; UXA-023; UXA-035 |
+| Referência do início protegido e compreensão para computador | não iniciada | — |
 | Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
-| Persistência e personalização | bloqueadas antes da revisão da compreensão inicial | UXA-011-A1; UXA-034; UXA-035 |
+| Persistência e personalização | decisões separadas posteriores à revisão | UXA-011-A1; UXA-035; UXA-036 |
 | Protótipo, design e testes | não iniciados | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Engenharia de Produto | pausada | W0-01 |
@@ -75,7 +76,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - experiências de Organizações e Coletivos estabelecidas;
 - Home pública validada e materializada;
 - início protegido móvel criado, validado e reformulado;
-- Mapa principal, estados móveis e referência desktop validados e reformulados.
+- Mapa principal, estados móveis e referência desktop validados e reformulados;
+- compreensão inicial móvel materializada em quatro estados.
 
 ### Em validação
 
@@ -87,12 +89,12 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
+- validação funcional do wireframe móvel da compreensão inicial;
 - referência móvel da Home;
-- materialização da revisão da compreensão inicial;
 - validação da transição para a primeira Tela Hoje;
-- estados especializados de texto, voz e arquivos;
-- referência do início protegido para computador;
 - estados de processamento, pausa, falha e retomada;
+- estados especializados de texto, voz e arquivos;
+- referência do início protegido e da compreensão para computador;
 - referência para tablet, caso priorizada.
 
 #### Arquitetura de Negócios
@@ -119,53 +121,54 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ compreensão inicial revisável
-→ decisão sobre persistência e personalização
+→ processamento visível e interrompível
+→ compreensão inicial apresentada como hipótese
+→ revisão, correção, limitação ou rejeição
+→ decisão separada sobre persistência
+→ decisão separada sobre personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Início protegido móvel validado
+## 5. Compreensão inicial móvel
 
-A UXA-034 reformulada e a UXA-035 estabelecem:
+A UXA-036 demonstra:
 
-- relato pessoal separado de dados técnicos e de acesso;
-- estados nomeados, pausáveis e retomáveis;
-- acesso somente quando necessário;
-- sessão válida sem repetição de acesso;
-- modalidades equivalentes e sem seleção automática;
-- compartilhamento mínimo;
-- explicação anterior para voz e arquivo;
-- pausa, salvar, sair e excluir com efeitos distintos;
-- inventário antes do processamento;
-- autorizações específicas e inicialmente desmarcadas;
-- finalidade limitada à compreensão inicial temporária e revisável;
-- recusa sem processamento;
-- persistência e personalização bloqueadas até o gate;
-- exploração sem personalização disponível.
+- processamento limitado aos conteúdos autorizados;
+- inventário de itens utilizados e excluídos;
+- interrupção e retorno às autorizações;
+- hipótese sem diagnóstico ou certeza;
+- Momento Atual, avanço e possibilidade de Próximo Passo separados;
+- origem, natureza, confiança, lacunas e desconhecidos;
+- ausência de avanço quando não houver evidência;
+- correção e rejeição por afirmação;
+- relato original separado da interpretação;
+- persistência e personalização como decisões independentes;
+- continuidade sem personalização;
+- transição consciente para a Tela Hoje;
+- base insuficiente sem hipótese artificial.
 
-O conjunto é funcionalmente válido após reformulação.
+A referência ainda não foi funcionalmente validada.
 
-## 6. Mapa e estados validados
+## 6. Início protegido e Mapa
 
-A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador com consulta compartilhada, explicabilidade, privacidade, seleção e operação resiliente.
+A UXA-034 e a UXA-035 preservam relato separado de acesso, modalidades equivalentes, compartilhamento mínimo, revisão e recusa sem processamento.
+
+A UXA-024 a UXA-033 preservam Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador com consulta compartilhada, explicabilidade, privacidade, seleção e operação resiliente.
 
 ## 7. Proteções preservadas
 
 - a Home não coleta relato pessoal;
 - iniciar a jornada é voluntário;
-- nenhum relato antecede a explicação;
-- dados de acesso são tratados separadamente;
 - autenticação não autoriza processamento;
-- acesso é condicional;
-- modalidades são equivalentes;
-- compartilhar pouco é legítimo;
-- voz e arquivos exigem explicação anterior;
-- revisão antecede autorização;
-- recusa não inicia processamento;
-- persistência e personalização exigem gate;
+- processamento utiliza somente conteúdos autorizados;
+- compreensão é hipótese corrigível;
+- confiança não equivale a certeza;
+- engajamento não equivale a evolução;
+- relato original e interpretação são distintos;
+- persistência não autoriza personalização;
+- personalização não cria novas finalidades;
 - exploração sem personalização permanece disponível;
-- informações de terceiros não são exigidas;
 - localização é opcional;
 - publicidade não aumenta relevância pessoal;
 - wireframes e validações não equivalem a design ou implementação.
@@ -181,4 +184,4 @@ A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista ter
 
 ## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência móvel da Home, revisão da compreensão inicial, primeira Tela Hoje, estados especializados do início protegido, referência para computador ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional da compreensão inicial móvel, referência móvel da Home, primeira Tela Hoje, estados especializados do início protegido, referência para computador ou retomada independente dos testes dos Resultados Empresariais.
