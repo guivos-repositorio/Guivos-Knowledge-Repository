@@ -5125,6 +5125,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../gem-commercial-plans-baseline-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revisão da Baseline Comercial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../gem-001-foundation/" class="md-nav__link">
         
   
@@ -5247,7 +5282,77 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gem-004-a1-commercial-plans-pricing-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-004-A1 — Planos, Benefícios e Preços
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-004-A2 — Oferta e Ciclo Comercial
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -5457,7 +5562,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gem-010-a1-pricing-assumptions-and-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GEM-010-A1 — Premissas de Precificação
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -6872,10 +7012,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#validation-required" class="md-nav__link">
+  <a href="#candidate-for-validation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Validation required
+        Candidate for validation
       
     </span>
   </a>
@@ -6887,6 +7027,17 @@
     <span class="md-ellipsis">
       
         Approved for test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approved-for-offer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approved for offer
       
     </span>
   </a>
@@ -6980,24 +7131,32 @@
 
 <h1 id="contrato-canonico-de-plano">Contrato Canônico de Plano<a class="headerlink" href="#contrato-canonico-de-plano" title="Permanent link">&para;</a></h1>
 <h2 id="1-objetivo">1. Objetivo<a class="headerlink" href="#1-objetivo" title="Permanent link">&para;</a></h2>
-<p>Estabelecer a estrutura mínima para registrar arquétipos e planos futuros de forma comparável, rastreável e subordinada ao baseline gratuito e aos guardrails da Guivos.</p>
+<p>Estabelecer a estrutura mínima para registrar arquétipos e planos comerciais candidatos de forma comparável, rastreável e subordinada ao baseline gratuito e aos guardrails da Guivos.</p>
 <h2 id="2-natureza">2. Natureza<a class="headerlink" href="#2-natureza" title="Permanent link">&para;</a></h2>
-<p>O contrato é conceitual. Não é configuração de software, contrato comercial, termo de uso, tabela de preço, regra fiscal, modelo contábil ou autorização de cobrança.</p>
+<p>O contrato é documental. Não é configuração de software, contrato com cliente, termo de uso, regra fiscal, modelo contábil ou autorização de cobrança.</p>
+<p>Quando um preço estiver preenchido, ele continuará candidato até aprovação de oferta pública.</p>
 <h2 id="3-estrutura">3. Estrutura<a class="headerlink" href="#3-estrutura" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">plan_archetype_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<div class="highlight"><pre><span></span><code><span class="nt">plan_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="nt">plan_archetype_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <span class="nt">status</span><span class="p">:</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">candidate |</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">conceptually_defined |</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">validation_required |</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">candidate_for_validation |</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">approved_for_test |</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">approved_for_offer |</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">suspended |</span>
 <span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">retired</span>
 
 <span class="nt">audience</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">actor_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">actor_type</span><span class="p">:</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">person |</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">collective |</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">organization |</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">funded_beneficiary</span>
 <span class="w">  </span><span class="nt">eligibility</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">market</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 
 <span class="nt">funding</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">source</span><span class="p">:</span>
@@ -7009,7 +7168,17 @@
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">hybrid</span>
 <span class="w">  </span><span class="nt">payer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string | null</span>
 <span class="w">  </span><span class="nt">beneficiary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="w">  </span><span class="nt">price_defined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="nt">pricing</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">currency</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">monthly_price</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">number | null</span>
+<span class="w">  </span><span class="nt">annual_price</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">number | null</span>
+<span class="w">  </span><span class="nt">annual_billing</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prepaid | not_applicable | contracted</span>
+<span class="w">  </span><span class="nt">starting_from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
+<span class="w">  </span><span class="nt">quote_required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
+<span class="w">  </span><span class="nt">taxes_defined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">transaction_fees_included</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">commercial_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">candidate_for_validation</span>
 
 <span class="nt">value</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">universal_baseline_preserved</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -7032,10 +7201,27 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <span class="w">  </span><span class="nt">excluded</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="w">  </span><span class="nt">limits</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">periodic_limits</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">resource</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">      </span><span class="nt">quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">number | null</span>
+<span class="w">      </span><span class="nt">period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">week | month | contract | none</span>
+<span class="w">      </span><span class="nt">cumulative</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">concurrent_limits</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">resource</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">      </span><span class="nt">quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">number | null</span>
+<span class="w">  </span><span class="nt">contracted_capacity</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
+<span class="w">    </span><span class="nt">dimensions</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">fair_use_applies</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
 <span class="w">  </span><span class="nt">prohibited_paywalls</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+
+<span class="nt">commercial_events</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">subscription_separate_from_transaction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">paid_publication_allowed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">boolean</span>
+<span class="w">  </span><span class="nt">transaction_commission_defined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">payment_fee_defined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 
 <span class="nt">lifecycle</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">activation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
@@ -7046,6 +7232,15 @@
 <span class="w">  </span><span class="nt">cancellation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <span class="w">  </span><span class="nt">expiration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <span class="w">  </span><span class="nt">grace_period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string | null</span>
+
+<span class="nt">experience</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">allowed_offer_surfaces</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">prohibited_offer_moments</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">free_alternatives</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">limit_message</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 
 <span class="nt">data_and_rights</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">data_access_after_downgrade</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
@@ -7069,24 +7264,35 @@
 <span class="nt">validation</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">value_hypothesis</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <span class="w">  </span><span class="nt">willingness_to_pay_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
+<span class="w">  </span><span class="nt">free_utility_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
 <span class="w">  </span><span class="nt">market_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
 <span class="w">  </span><span class="nt">operational_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
+<span class="w">  </span><span class="nt">financial_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
 <span class="w">  </span><span class="nt">legal_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
 <span class="w">  </span><span class="nt">fiscal_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
 <span class="w">  </span><span class="nt">accounting_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
+<span class="w">  </span><span class="nt">privacy_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
+<span class="w">  </span><span class="nt">security_status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not_started</span>
 </code></pre></div>
 <h2 id="4-campos-obrigatorios">4. Campos obrigatórios<a class="headerlink" href="#4-campos-obrigatorios" title="Permanent link">&para;</a></h2>
 <p>Não poderão ser omitidos:</p>
 <ul>
-<li>público e elegibilidade;</li>
+<li>identificador e arquétipo;</li>
+<li>público, elegibilidade e mercado;</li>
 <li>fonte de financiamento;</li>
 <li>pagador e beneficiário;</li>
+<li>moeda e preços candidatos;</li>
+<li>condição mensal, anual ou sob consulta;</li>
 <li>baseline gratuito;</li>
 <li>dimensões de ampliação;</li>
 <li>capacidades incluídas e excluídas;</li>
-<li>limites;</li>
+<li>limites periódicos e simultâneos;</li>
+<li>capacidade contratada e uso justo;</li>
 <li>paywalls proibidos;</li>
+<li>separação entre assinatura e transação;</li>
 <li>ativação, renovação, downgrade e cancelamento;</li>
+<li>superfícies permitidas e momentos proibidos;</li>
+<li>alternativas gratuitas;</li>
 <li>tratamento de dados;</li>
 <li>acesso do financiador;</li>
 <li>disclosures;</li>
@@ -7098,10 +7304,12 @@
 <p>Hipótese registrada sem avaliação suficiente.</p>
 <h3 id="conceptually-defined">Conceptually defined<a class="headerlink" href="#conceptually-defined" title="Permanent link">&para;</a></h3>
 <p>Arquétipo compatível com o GEM-004 em nível documental.</p>
-<h3 id="validation-required">Validation required<a class="headerlink" href="#validation-required" title="Permanent link">&para;</a></h3>
-<p>Depende de evidência de valor, comportamento, pagamento, operação ou análise especializada.</p>
+<h3 id="candidate-for-validation">Candidate for validation<a class="headerlink" href="#candidate-for-validation" title="Permanent link">&para;</a></h3>
+<p>Plano possui nome, benefícios, limites e preço candidatos, mas não foi testado nem autorizado para oferta.</p>
 <h3 id="approved-for-test">Approved for test<a class="headerlink" href="#approved-for-test" title="Permanent link">&para;</a></h3>
-<p>Estado futuro que exigirá aprovação separada, protocolo, owner, limites e critérios de parada.</p>
+<p>Estado futuro que exigirá aprovação separada, protocolo, owner, população, limites e critérios de parada.</p>
+<h3 id="approved-for-offer">Approved for offer<a class="headerlink" href="#approved-for-offer" title="Permanent link">&para;</a></h3>
+<p>Estado futuro que exigirá validações de mercado, operação, finanças, jurídico, fiscal, contabilidade, privacidade, segurança e decisão competente.</p>
 <h3 id="suspended">Suspended<a class="headerlink" href="#suspended" title="Permanent link">&para;</a></h3>
 <p>Interrompido por risco, dano, conflito, falha, incidente ou evidência insuficiente.</p>
 <h3 id="retired">Retired<a class="headerlink" href="#retired" title="Permanent link">&para;</a></h3>
@@ -7109,33 +7317,40 @@
 <h2 id="6-condicoes-de-interrupcao">6. Condições de interrupção<a class="headerlink" href="#6-condicoes-de-interrupcao" title="Permanent link">&para;</a></h2>
 <ul>
 <li>gratuito deixa de ser útil;</li>
-<li>direito básico condicionado a pagamento;</li>
-<li>conversão por vulnerabilidade;</li>
-<li>cancelamento deliberadamente difícil;</li>
-<li>perda indevida de dados;</li>
-<li>acesso excessivo de organização ou patrocinador;</li>
-<li>trial enganoso;</li>
-<li>renovação obscura;</li>
-<li>erro material de entitlement;</li>
-<li>benefício pago não entregue;</li>
-<li>conflito ou risco sem tratamento;</li>
-<li>dependência especializada não atendida.</li>
+<li>oportunidade pública é ocultada para pressionar pagamento;</li>
+<li>direito básico é condicionado a pagamento;</li>
+<li>conversão utiliza vulnerabilidade;</li>
+<li>cancelamento é deliberadamente difícil;</li>
+<li>dado próprio é perdido indevidamente;</li>
+<li>acesso de Organização ou patrocinador é excessivo;</li>
+<li>trial é enganoso;</li>
+<li>renovação é obscura;</li>
+<li>entitlement possui erro material;</li>
+<li>benefício pago não é entregue;</li>
+<li>publicação existente perde visibilidade após limite;</li>
+<li>plano pago altera relevância orgânica;</li>
+<li>capacidade sem limite fixo é vendida sem dimensionamento;</li>
+<li>conflito ou risco permanece sem tratamento;</li>
+<li>dependência especializada não é atendida.</li>
 </ul>
 <h2 id="7-rastreabilidade">7. Rastreabilidade<a class="headerlink" href="#7-rastreabilidade" title="Permanent link">&para;</a></h2>
-<p>Cada plano futuro deverá apontar para:</p>
+<p>Cada plano deverá apontar para:</p>
 <ul>
 <li>arquétipo AM correspondente;</li>
+<li>GEM-004-A1;</li>
+<li>GEM-004-A2;</li>
 <li>capacidades classificadas;</li>
 <li>famílias RF relacionadas;</li>
 <li>fluxos VF relacionados;</li>
 <li>baseline gratuito vigente;</li>
 <li>política de paywall;</li>
+<li>GEM-010-A1;</li>
 <li>gates aplicados;</li>
 <li>evidências;</li>
 <li>decisões e versões posteriores.</li>
 </ul>
 <h2 id="8-regra-de-precedencia">8. Regra de precedência<a class="headerlink" href="#8-regra-de-precedencia" title="Permanent link">&para;</a></h2>
-<p>Quando houver conflito entre campos do plano e o baseline gratuito, direitos, guardrails ou autoridade superior, prevalece o limite mais protetivo.</p>
+<p>Quando houver conflito entre o plano e o baseline gratuito, direitos, guardrails ou autoridade superior, prevalecerá o limite mais protetivo.</p>
 
 
 
