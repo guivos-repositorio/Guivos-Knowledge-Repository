@@ -9,17 +9,57 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.38 — Wireframe Móvel da Compreensão Inicial Funcionalmente Validado e Reformulado |
+| Marco | M7.39 — Baseline Comercial de Planos, Benefícios e Preços Definida |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
+| Modelo Econômico | baseline comercial candidata definida; validação pendente |
+| Pessoas | Guivos Free, Plus e Pro definidos |
+| Coletivos | Livre, Gestão, Impacto e Enterprise definidos |
+| Organizações | Business Start, Growth e Scale definidos |
+| Preços | candidatos; oferta e cobrança não autorizadas |
 | Home pública | validada e materializada para computador |
 | Início protegido móvel | funcionalmente validado e reformulado |
 | Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados |
-| Referência móvel da Home | não iniciada |
 | Tela Hoje | entrada recorrente após condição explicitamente escolhida |
 | Mapa e estados | funcionalmente validados e reformulados |
 | Engenharia de Produto | pausada antes de W0-01 |
+
+## Baseline comercial candidata
+
+### Pessoas
+
+- Guivos Free — catálogo público completo e duas correspondências personalizadas por semana;
+- Guivos Plus — R$ 24,90 mensais ou R$ 249,00 anuais;
+- Guivos Pro — R$ 49,90 mensais ou R$ 499,00 anuais.
+
+### Coletivos
+
+- Coletivo Livre — uma atividade e uma oportunidade gratuitas por mês, até duas ativas;
+- Coletivo Gestão — R$ 89,90 mensais, quatro atividades, quatro oportunidades e seis ativas;
+- Coletivo Impacto — R$ 249,90 mensais, quinze atividades, quinze oportunidades e vinte ativas;
+- Coletivo Enterprise — sob consulta, capacidade contratada e categorias personalizáveis.
+
+### Organizações
+
+- Business Start — R$ 299,00 mensais;
+- Business Growth — R$ 799,00 mensais;
+- Business Scale — a partir de R$ 1.990,00 mensais e contrato anual.
+
+Os valores são candidatos para validação e não constituem oferta pública ou autorização de cobrança.
+
+## Regras comerciais centrais
+
+- catálogo público permanece acessível no Guivos Free;
+- limite individual recai sobre correspondências personalizadas;
+- Coletivo Livre publica somente ofertas gratuitas;
+- publicação paga exige Gestão ou superior;
+- pessoa gratuita pode adquirir atividade paga;
+- assinatura e transação permanecem separadas;
+- cota não reduz visibilidade de publicação existente;
+- Enterprise e Scale operam por capacidade contratada;
+- plano pago não aumenta ranking, relevância, impacto ou evidência;
+- oferta não interrompe consentimento, compreensão ou controle de dados.
 
 ## Experiência pessoal vigente
 
@@ -37,9 +77,11 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
+Oferta de plano não entra nessa sequência protegida.
+
 ## Compreensão inicial móvel validada
 
-A UXA-036 reformulada e a UXA-037 estabelecem cinco estados de 390 por 844 pixels:
+A UXA-036 reformulada e a UXA-037 estabelecem cinco estados:
 
 1. processamento temporário visível e interrompível;
 2. compreensão apresentada como hipótese;
@@ -47,29 +89,7 @@ A UXA-036 reformulada e a UXA-037 estabelecem cinco estados de 390 por 844 pixel
 4. decisões independentes sobre persistência e personalização;
 5. base autorizada insuficiente.
 
-A referência demonstra:
-
-- processamento limitado aos itens autorizados;
-- interrupção com descarte explícito e sem tarefa oculta;
-- afirmações individualizadas por natureza, origem e confiança;
-- revisão sem resposta pré-selecionada;
-- manutenção em aberto sem promoção a fato;
-- relato original separado da interpretação;
-- escopos distintos de correção, retirada de autorização e exclusão;
-- persistência e personalização como escolhas únicas e independentes;
-- combinações incompatíveis bloqueadas;
-- base insuficiente sem hipótese artificial ou pressão;
-- continuidade sem personalização.
-
-Arquivos:
-
-- `assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
-- `assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
-- `assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
-- `assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`;
-- `assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`.
-
-A validação não equivale a modelo de IA, política jurídica, segurança, armazenamento, persistência, personalização, protótipo, teste ou implementação.
+A referência preserva interrupção sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, decisões independentes e continuidade sem personalização.
 
 ## Acesso rápido
 
@@ -80,26 +100,29 @@ A validação não equivale a modelo de IA, política jurídica, segurança, arm
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico da Validação da Compreensão Inicial](project/canonical-consolidation-matrix-uxa-037-addendum.md)
-- [Histórico 1.60.0](project/changelog-1.60.0-uxa-037.md)
+- [Adendo Canônico dos Planos Comerciais](project/canonical-consolidation-matrix-gem-commercial-plans-addendum.md)
+- [Histórico 1.61.0](project/changelog-1.61.0-gem-commercial-plans.md)
 
-### Arquiteturas e modelos
+### Modelo Econômico
+
+- [Guivos Economic Model](economic-model/index.md)
+- [Catálogo de Planos, Benefícios e Preços](economic-model/gem-004-a1-commercial-plans-pricing-catalog.md)
+- [Política Comercial de Planos](economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md)
+- [Premissas de Precificação](economic-model/gem-010-a1-pricing-assumptions-and-validation.md)
+- [Revisão da Baseline Comercial](economic-model/gem-commercial-plans-baseline-review.md)
+
+### Arquiteturas e produtos
 
 - [Guivos Enterprise Architecture](enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](product-architecture/pas-001-guivos-journey.md)
-- [Guivos Economic Model](economic-model/index.md)
 - [Guivos Business Architecture](business-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Página Inicial e Início](experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Wireframe da Home](experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Contrato do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Início Protegido](experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
-- [Validação do Wireframe Protegido](experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md)
 - [Wireframe da Compreensão Inicial](experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md)
 - [Validação da Compreensão Inicial](experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md)
 - [Wireframe do Mapa](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Mapa para Computador](experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
-- [Validação Desktop](experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
 
 ### Resultados Empresariais
 
@@ -110,7 +133,7 @@ A validação não equivale a modelo de IA, política jurídica, segurança, arm
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: referência móvel da Home, validação da transição para a primeira Tela Hoje, estados especializados de processamento, referência para computador ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente: validação dos planos e preços, modelagem de unit economics, política transacional, arquitetura da página de Planos e Preços, referência móvel da Home, validação da transição para a primeira Tela Hoje ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 
