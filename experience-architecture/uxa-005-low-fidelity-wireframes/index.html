@@ -3861,7 +3861,42 @@
     
   
   
-    <span class="md-status md-status--draft"></span>
+    <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UXA-035 — Validação do Wireframe Móvel Protegido
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--active"></span>
   
 
   
@@ -7141,7 +7176,10 @@
 <h2 id="2-regra-de-ordem">2. Regra de ordem<a class="headerlink" href="#2-regra-de-ordem" title="Permanent link">&para;</a></h2>
 <p>Os identificadores preservam a ordem histórica de criação. Eles não determinam a ordem das telas.</p>
 <div class="highlight"><pre><span></span><code>Página Inicial pública
-→ início protegido da jornada
+→ explicação do ambiente protegido
+→ acesso, quando necessário
+→ escolha e rascunho mínimo
+→ revisão e autorização específica
 → compreensão inicial revisável
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
@@ -7153,17 +7191,10 @@
 <li>wireframe da Home para computador — UXA-022;</li>
 <li>validação do início protegido — UXA-023;</li>
 <li>wireframe móvel do início protegido — UXA-034;</li>
+<li>validação do wireframe móvel do início protegido — UXA-035;</li>
 <li>wireframe da Tela Hoje — UXA-006;</li>
 <li>wireframe móvel do Mapa — UXA-024;</li>
-<li>validação do Mapa — UXA-025;</li>
-<li>estado sem localização — UXA-026;</li>
-<li>validação sem localização — UXA-027;</li>
-<li>Lista do Mapa — UXA-028;</li>
-<li>validação da Lista — UXA-029;</li>
-<li>estado sem resultados — UXA-030;</li>
-<li>validação sem resultados — UXA-031;</li>
-<li>referência do Mapa para computador — UXA-032;</li>
-<li>validação da referência para computador — UXA-033;</li>
+<li>validações e estados do Mapa — UXA-025 a UXA-033;</li>
 <li>wireframe do Detalhe — UXA-007;</li>
 <li>wireframe do Cadastro pela Organização — UXA-008.</li>
 </ol>
@@ -7182,52 +7213,48 @@
 <h3 id="51-primeira-entrada-e-inicio-protegido">5.1 Primeira entrada e início protegido<a class="headerlink" href="#51-primeira-entrada-e-inicio-protegido" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A pessoa entende que saiu da Home pública?</li>
-<li>O ambiente protegido é explicado antes da autenticação?</li>
-<li>Fica claro que nenhuma coleta começou automaticamente?</li>
-<li>Entrar, criar conta e recuperar acesso são alternativas compreensíveis?</li>
+<li>Nenhum relato pessoal é solicitado antes da explicação?</li>
+<li>Dados de acesso e conteúdo da jornada são distinguíveis?</li>
+<li>Os quatro artefatos são compreendidos como estados possíveis, não formulário obrigatório?</li>
+<li>O acesso aparece somente quando necessário?</li>
+<li>Sessão válida evita repetição da etapa de acesso?</li>
 <li>Criar conta permanece separado de autorizar processamento?</li>
-<li>Explorar sem personalização permanece uma saída legítima?</li>
-<li>Texto, voz, arquivo e perguntas são percebidos como alternativas?</li>
-<li>A pessoa entende que pode começar com pouco?</li>
-<li>Finalidade e privacidade aparecem antes do uso material?</li>
-<li>Pausar, salvar rascunho e excluir possuem efeitos distintos?</li>
+<li>Explorar sem personalização permanece saída legítima?</li>
+<li>Texto, voz, arquivo e perguntas são alternativas equivalentes?</li>
+<li>Nenhuma modalidade é selecionada automaticamente?</li>
+<li>Compartilhamento mínimo é legítimo?</li>
+<li>Voz e arquivo possuem explicação anterior?</li>
+<li>Pausar, salvar, sair e excluir possuem efeitos distintos?</li>
 <li>Original, transcrição, extração e interpretação são distinguíveis?</li>
-<li>A revisão antecede a autorização específica?</li>
-<li>Personalização permanece bloqueada antes do gate?</li>
+<li>A revisão antecede autorização específica?</li>
+<li>Autorizações começam desmarcadas?</li>
+<li>Recusar impede processamento?</li>
+<li>Persistência e personalização permanecem bloqueadas antes do gate?</li>
 </ul>
 <h3 id="52-mapa-e-superficies-recorrentes">5.2 Mapa e superfícies recorrentes<a class="headerlink" href="#52-mapa-e-superficies-recorrentes" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Mapa e Lista representam a mesma consulta?</li>
 <li>Quantidade, filtros e ordenação são compreensíveis?</li>
-<li>Resumo e controles dos filtros são semanticamente idênticos?</li>
 <li>Relação comercial está separada da relevância?</li>
 <li>Dados ausentes são apresentados sem inferência?</li>
-<li>O total zero é entendido como resultado da consulta atual?</li>
 <li>Cobertura, falha e indisponibilidade são distinguíveis?</li>
 <li>Em computador, filtros, Mapa, Lista e seleção parecem partes da mesma consulta?</li>
-<li>A seleção é reconhecível no marcador, cartão e painel?</li>
-<li>O painel contextual pode ser recolhido sem perder seleção?</li>
-<li>Foco e retorno preservam contexto?</li>
 </ul>
 <h3 id="53-autonomia">5.3 Autonomia<a class="headerlink" href="#53-autonomia" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A pessoa pode adiar, recusar, pausar ou sair sem culpa?</li>
 <li>Modalidades não competem como exigências?</li>
 <li>Compartilhamento mínimo não é tratado como insuficiência pessoal?</li>
-<li>Voz e arquivos possuem explicação anterior?</li>
 <li>A pessoa pode corrigir, limitar, remover e excluir?</li>
+<li>Não autorizar possui consequência clara e não punitiva?</li>
 <li>A recusa de localização preserva o uso do Mapa?</li>
-<li>Mover o Mapa evita atualização silenciosa?</li>
-<li>O estado vazio evita preenchimento patrocinado artificial?</li>
 </ul>
 <h3 id="54-continuidade">5.4 Continuidade<a class="headerlink" href="#54-continuidade" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A Home conduz conscientemente ao início protegido?</li>
-<li>O início protegido conduz a uma compreensão inicial revisável, não diretamente à personalização?</li>
+<li>O início protegido conduz a uma compreensão inicial revisável, não diretamente à persistência ou personalização?</li>
 <li>A compreensão revisada conduz à Tela Hoje ou à exploração geral?</li>
 <li>Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?</li>
-<li>O Detalhe devolve a pessoa ao mesmo estado?</li>
-<li>A Lista funciona sem mapa carregado?</li>
 </ul>
 <h2 id="6-convencoes-de-baixa-fidelidade">6. Convenções de baixa fidelidade<a class="headerlink" href="#6-convencoes-de-baixa-fidelidade" title="Permanent link">&para;</a></h2>
 <table>
@@ -7255,12 +7282,8 @@
 <td>ação secundária ou explicação</td>
 </tr>
 <tr>
-<td>círculos numerados</td>
-<td>etapas, agrupamentos ou vínculo da seleção</td>
-</tr>
-<tr>
-<td>faixa de progresso</td>
-<td>posição na sequência sem obrigatoriedade linear</td>
+<td>estado textual nomeado</td>
+<td>posição funcional sem obrigatoriedade linear</td>
 </tr>
 <tr>
 <td>caixa de seleção vazia</td>
@@ -7268,7 +7291,11 @@
 </tr>
 <tr>
 <td>declaração textual</td>
-<td>estado de coleta, proteção ou processamento</td>
+<td>estado de relato, acesso, rascunho ou processamento</td>
+</tr>
+<tr>
+<td>ação com consequência</td>
+<td>pausa, saída, salvamento, exclusão ou recusa explícita</td>
 </tr>
 <tr>
 <td>ausência de marcador</td>
@@ -7311,32 +7338,12 @@
 <td>390 × 844</td>
 </tr>
 <tr>
-<td>Mapa de Oportunidades</td>
+<td>Mapa e estados móveis</td>
 <td>aplicativo móvel</td>
 <td>390 × 844</td>
 </tr>
 <tr>
-<td>Mapa sem localização</td>
-<td>aplicativo móvel</td>
-<td>390 × 844</td>
-</tr>
-<tr>
-<td>Lista do Mapa</td>
-<td>aplicativo móvel</td>
-<td>390 × 844</td>
-</tr>
-<tr>
-<td>Mapa sem resultados</td>
-<td>aplicativo móvel</td>
-<td>390 × 844</td>
-</tr>
-<tr>
-<td>Mapa com resultados</td>
-<td>web para computador</td>
-<td>1.440 × 1.024</td>
-</tr>
-<tr>
-<td>Mapa sem resultados</td>
+<td>Mapa com e sem resultados</td>
 <td>web para computador</td>
 <td>1.440 × 1.024</td>
 </tr>
@@ -7356,14 +7363,15 @@
 <div class="highlight"><pre><span></span><code>Página Inicial pública
 → decisão voluntária
 → explicação do ambiente protegido
-→ acesso protegido
-→ modalidade e compartilhamento mínimo
+→ acesso, somente quando necessário
+→ modalidade e rascunho mínimo
 → revisão e autorização específica
-→ compreensão inicial revisável
+→ compreensão inicial temporária e revisável
+→ decisão sobre persistência e personalização
 → Tela Hoje ou exploração geral
 → Mapa e demais superfícies recorrentes
 </code></pre></div>
-<p>A sequência protegida não é formulário linear obrigatório. Etapas podem ser pausadas, retomadas ou omitidas quando isso preservar compreensão e autonomia.</p>
+<p>A sequência protegida é pausável e retomável. Acesso, modalidades e conteúdos poderão ser omitidos quando não aplicáveis.</p>
 <h2 id="9-artefatos-especializados">9. Artefatos especializados<a class="headerlink" href="#9-artefatos-especializados" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -7394,16 +7402,22 @@
 <td>arquivo vetorial</td>
 </tr>
 <tr>
-<td>Validação do Início Protegido</td>
+<td>Contrato do Início Protegido</td>
 <td>UXA-023</td>
 <td>início protegido</td>
-<td>contrato validado</td>
+<td>validação funcional</td>
 </tr>
 <tr>
 <td>Wireframe do Início Protegido</td>
 <td>UXA-034</td>
 <td>início protegido</td>
-<td>quatro arquivos vetoriais móveis</td>
+<td>quatro arquivos vetoriais reformulados</td>
+</tr>
+<tr>
+<td>Validação do Wireframe Protegido</td>
+<td>UXA-035</td>
+<td>início protegido</td>
+<td>validação funcional especializada</td>
 </tr>
 <tr>
 <td>Tela Hoje</td>
@@ -7438,33 +7452,33 @@
 </tbody>
 </table>
 <h2 id="10-resultado-do-inicio-protegido">10. Resultado do início protegido<a class="headerlink" href="#10-resultado-do-inicio-protegido" title="Permanent link">&para;</a></h2>
-<p>A UXA-034 demonstra:</p>
+<p>A UXA-034 reformulada e a UXA-035 demonstram:</p>
 <ul>
-<li>nenhuma coleta automática;</li>
-<li>conta separada de autorização;</li>
-<li>alternativas de acesso e exploração;</li>
+<li>relato separado de dados de acesso;</li>
+<li>estados nomeados e não obrigatórios;</li>
+<li>acesso condicional;</li>
 <li>modalidades equivalentes;</li>
 <li>compartilhamento mínimo;</li>
-<li>finalidade e privacidade;</li>
-<li>rascunho protegido;</li>
+<li>explicação anterior para voz e arquivo;</li>
+<li>rascunho com estado declarado;</li>
 <li>revisão do conteúdo;</li>
-<li>correção, remoção e limitação;</li>
-<li>autorização específica;</li>
-<li>personalização bloqueada antes do gate.</li>
+<li>autorização desmarcada e específica;</li>
+<li>recusa sem processamento;</li>
+<li>compreensão inicial temporária;</li>
+<li>persistência e personalização bloqueadas antes do gate.</li>
 </ul>
-<p>A validação funcional especializada do conjunto permanece não iniciada.</p>
+<p>O conjunto é funcionalmente válido após reformulação.</p>
 <h2 id="11-limites">11. Limites<a class="headerlink" href="#11-limites" title="Permanent link">&para;</a></h2>
-<p>Este programa não define marca, tecnologia, autenticação, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade ou Engenharia de Produto.</p>
+<p>Este programa não define marca, tecnologia, autenticação, armazenamento, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade ou Engenharia de Produto.</p>
 <h2 id="12-proximos-pontos-de-decisao">12. Próximos pontos de decisão<a class="headerlink" href="#12-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos exigem autorizações separadas:</p>
 <ol>
-<li>validar funcionalmente o wireframe móvel do início protegido;</li>
 <li>criar a referência móvel da Home;</li>
-<li>validar a compreensão inicial;</li>
+<li>materializar a revisão da compreensão inicial;</li>
 <li>detalhar a primeira Tela Hoje após a transição;</li>
 <li>criar estados especializados de texto, voz e arquivos;</li>
 <li>criar referência do início protegido para computador;</li>
-<li>criar outros estados do Mapa;</li>
+<li>criar estados de processamento, pausa, falha e retomada;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>
 <p>Nenhuma etapa posterior é iniciada automaticamente.</p>
