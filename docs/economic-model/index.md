@@ -2,22 +2,27 @@
 id: GEM-000
 title: Guivos Economic Model
 status: active
-version: 1.1.0
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-07-22
+last_updated: 2026-07-28
 related:
   - GEM-001
   - GEM-002
   - GEM-003
   - GEM-004
+  - GEM-004-A1
+  - GEM-004-A2
   - GEM-005
   - GEM-006
   - GEM-007
   - GEM-008
   - GEM-009
   - GEM-010
+  - GEM-010-A1
   - GEM-CLOSURE-REVIEW-001
+  - GEM-COMMERCIAL-BASELINE-001
   - GKR-STRATEGIC-RESEQUENCING-001
+  - M7.39
 ---
 
 # Guivos Economic Model
@@ -26,11 +31,19 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Documentarily complete — GEM-001 to GEM-010 preserved as Draft 0.1.0 authorities`.
+`Commercial baseline documentarily defined — validation and calibration pending`.
 
-O domínio concluiu sua arquitetura documental inicial. GEM-001 a GEM-010 preservam fundações, fluxos, receitas, acesso, incentivos, parceiros, produtos, sustentabilidade, métricas, premissas, cenários e modelo financeiro. A conclusão não promove os drafts a baseline validada e não aprova parâmetros, orçamento, projeção oficial, contabilização, valuation ou operação.
+O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. A reabertura localizada de GEM-004 e GEM-010 consolidou planos, benefícios, limites e preços candidatos para Pessoas, Coletivos e Organizações.
 
-A decisão e os limites do fechamento estão registrados na [Revisão de Fechamento do Guivos Economic Model](gem-closure-review.md).
+O estado vigente não aprova oferta pública, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.
+
+Autoridades principais:
+
+- [Revisão de Fechamento do Guivos Economic Model](gem-closure-review.md);
+- [Revisão da Baseline Comercial de Planos e Preços](gem-commercial-plans-baseline-review.md);
+- [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
+- [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md);
+- [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md).
 
 ## Princípio central
 
@@ -49,6 +62,7 @@ necessidade ou potencial
 → valor percebido e/ou comprovado
 → família de receita conceitualmente admissível
 → modelo gratuito, pago ou financiado
+→ plano, benefício, limite e preço candidato
 → progresso, reconhecimento ou recompensa
 → parceiro e relacionamento elegíveis
 → produto responsável e produtos contribuintes
@@ -73,7 +87,9 @@ necessidade ou potencial
 - famílias e mecanismos de receita;
 - eventos econômicos e bases de cobrança;
 - planos gratuitos, pagos e financiados;
-- elegibilidade, entitlements e ciclo de vida conceitual;
+- nomes, benefícios, limites e preços candidatos;
+- elegibilidade, entitlements e ciclo de vida;
+- oferta, upgrade, downgrade e cancelamento;
 - progresso, reconhecimento e recompensas;
 - pontos, créditos e benefícios;
 - fontes de financiamento e cobertura;
@@ -113,21 +129,14 @@ necessidade ou potencial
 - proveniência, qualidade, cadência e ownership de evidências;
 - baselines, thresholds e maturidade de medição;
 - sustentabilidade financeira futura;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Business;
-- Guivos Media;
-- Guivos Ads;
-- Guivos Intelligence;
+- Guivos Mall, Travel, Business, Media, Ads e Intelligence;
 - assinaturas;
 - parcerias e patrocínios;
 - incentivos;
 - limites de monetização;
-- métricas econômicas;
-- cenários e modelos financeiros posteriores;
-- premissas, drivers e cenários financeiros comparáveis;
-- receitas, custos, margem, caixa, capital de giro e funding modelados;
-- unit economics, sensibilidade, break-even e consolidação entre produtos;
+- cenários e modelos financeiros;
+- receitas, custos, margem, caixa, capital de giro e funding;
+- unit economics, sensibilidade, break-even e consolidação entre produtos.
 
 ## Autoridades do GEM-001
 
@@ -177,7 +186,9 @@ necessidade ou potencial
 - [Política de Upgrade, Downgrade e Cancelamento](gem-004-upgrade-downgrade-cancellation-policy.md);
 - [Contrato Canônico de Plano](gem-004-plan-contract.md);
 - [Cenários e Gates](gem-004-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-004-dependency-validation-checkpoint.md).
+- [Checkpoint de Validação como Dependência](gem-004-dependency-validation-checkpoint.md);
+- [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
+- [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md).
 
 ## Autoridades do GEM-005
 
@@ -293,7 +304,8 @@ necessidade ou potencial
 - [Consolidação Financeira entre Produtos](gem-010-cross-product-consolidation.md);
 - [Reservas, Subsídios e Reinvestimento](gem-010-reserves-subsidies-and-reinvestment.md);
 - [Contrato Canônico do Modelo Financeiro](gem-010-financial-model-contract.md);
-- [Cenários e Gates](gem-010-scenarios-and-gates.md).
+- [Cenários e Gates](gem-010-scenarios-and-gates.md);
+- [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md).
 
 ## Separações canônicas
 
@@ -312,14 +324,19 @@ necessidade ou potencial
 - contribuição não é remuneração automática;
 - pagamento não é autoridade ou relevância;
 - família admissível não é mecanismo comercial aprovado;
-- base candidata não é preço;
+- base candidata não é preço comprovado;
 - gratuito real não é trial oculto;
 - arquétipo não é plano comercial;
-- plano comercial não é preço;
-- preço futuro não autoriza cobrança automática;
+- plano comercial candidato não é oferta pública;
+- preço candidato não autoriza cobrança automática;
+- catálogo público não é correspondência personalizada;
+- assinatura não é atividade ou oportunidade paga;
+- assinatura não é comissão ou taxa de pagamento;
 - ampliação paga não é direito essencial;
 - financiador não é autoridade sobre o beneficiário;
 - downgrade não é punição;
+- plano pago não aumenta relevância, ranking, impacto ou evidência;
+- capacidade sem limite fixo não é capacidade infinita;
 - progresso não é reconhecimento;
 - reconhecimento não é recompensa econômica;
 - ponto não é dinheiro, investimento ou valor humano;
@@ -384,42 +401,53 @@ O desenvolvimento utiliza Foundation, Fundamental Model, Core Capability Model, 
 
 ## Limites desta versão
 
-Não estão definidos:
+Estão definidos como candidatos, mas ainda não comprovados:
 
-- nomes comerciais finais;
+- nomes comerciais;
+- composição de planos;
+- preços em BRL;
+- descontos anuais;
+- limites quantitativos de Pessoas, Coletivos e Organizações;
+- superfícies de oferta;
+- regras de upgrade, downgrade e cancelamento.
+
+Continuam não aprovados ou não definidos:
+
 - parceiros, patrocinadores ou fornecedores específicos;
 - contratos, exclusividades ou territórios comerciais;
-- preços, moedas, descontos, taxas, comissões, margens ou repasses;
-- SLAs, thresholds ou scores;
-- mecanismos comerciais específicos;
-- composição final de planos;
-- limites quantitativos e períodos de cobrança;
+- taxas, comissões, margens ou repasses;
+- capacidade técnica e SLAs finais;
 - quantidade ou valor monetário de pontos;
 - taxa de conversão;
 - cashback, saque, transferência ou negociação;
 - token, criptomoeda ou blockchain;
-- catálogo operacional de recompensas;
 - regulamentos promocionais;
 - atribuição percentual;
-- valores de custos, fontes, subsídios, reservas ou reinvestimentos;
+- valores reais de custos, fontes, subsídios, reservas ou reinvestimentos;
 - orçamento, fluxo de caixa, runway ou capital de giro;
-- reservas constituídas, contas bancárias ou política de investimento;
 - P&L, centros de custo ou centros de resultado;
-- rateios ou transfer pricing;
-- valores reais de unit economics, CAC, LTV, churn, payback ou break-even;
+- valores reais de CAC, LTV, churn, payback ou break-even;
 - baselines, metas, thresholds ou benchmarks aprovados;
-- dashboards, instrumentação analítica ou decisões automatizadas;
+- dashboards e instrumentação analítica;
 - projeções, cenários financeiros ou valuation;
 - divisão societária;
 - tratamento jurídico, tributário, regulatório, trabalhista ou contábil;
 - merchant of record, gateway, adquirente ou settlement;
 - due diligence executada;
 - ledger, carteira ou antifraude técnico;
-- integrações, CRM, portal, API ou banco de dados;
+- integrações, CRM, portal, API ou banco de dados implementados;
 - fornecedores tecnológicos;
 - sistemas de pagamento;
 - pesquisa, piloto, operação, produção ou implementação.
 
-## Próximo ponto
+## Próximos pontos candidatos
 
-`A2-R03 — Business Architecture Review`, iniciada pela conclusão governada de `BA-STR-002 — Business Outcomes`, após proposta e aprovação separadas. Product Engineering, W0-01, valores financeiros, operação e implementação permanecem pausados.
+Após integração e autorização separada:
+
+1. validação de planos, limites e disposição a pagar;
+2. modelagem de custos, margem e unit economics;
+3. definição de comissão e política transacional;
+4. revisões especializadas;
+5. eventual teste controlado.
+
+Business Architecture, Product Engineering, W0-01, oferta pública, cobrança e operação permanecem independentes e pausados até autorização própria.
