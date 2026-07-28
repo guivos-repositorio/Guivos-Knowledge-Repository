@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.9.0
-title: Roadmap Arquitetural — Wireframe Móvel do Início Protegido Criado
+id: ROADMAP-12.10.0
+title: Roadmap Arquitetural — Início Protegido Móvel Validado
 status: active
-version: 12.9.0
+version: 12.10.0
 owner: Guivos
 last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.8.0
+  - ROADMAP-12.9.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -30,10 +30,11 @@ related:
   - UXA-032
   - UXA-033
   - UXA-034
-  - M7.35
+  - UXA-035
+  - M7.36
 ---
 
-# Roadmap Arquitetural — Wireframe Móvel do Início Protegido Criado
+# Roadmap Arquitetural — Início Protegido Móvel Validado
 
 ## 1. Autoridade
 
@@ -44,18 +45,16 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframe móvel do início protegido da jornada criado | M7.35; UXA-034 |
+| Marco | wireframe móvel do início protegido funcionalmente validado e reformulado | M7.36; UXA-034; UXA-035 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
-| Início protegido | funcionalmente validado e materializado em quatro estados móveis; validação do wireframe pendente | UXA-023; UXA-034 |
+| Início protegido móvel | funcionalmente validado e reformulado em quatro estados | UXA-023; UXA-034; UXA-035 |
 | Referência móvel da Home | não iniciada | — |
-| Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estados móveis do Mapa | sem localização, Lista e sem resultados validados | UXA-026 a UXA-031 |
-| Referência do Mapa para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
-| Referência para tablet | não iniciada | — |
+| Compreensão inicial | contrato estabelecido; materialização pendente | UXA-011-A1; UXA-023; UXA-035 |
+| Tela Hoje | entrada recorrente posterior ao gate | UXA-002; UXA-006; UXA-010 |
+| Mapa de Oportunidades | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -69,68 +68,59 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 6. Arquitetura da Experiência integrada;
 7. Tela Hoje, Detalhe e Cadastro validados;
 8. experiências de Organizações e Coletivos estruturadas e validadas;
-9. relações institucionais e coletivas detalhadas;
-10. BUS-CAND-010 fundido em BUS-CAND-005;
-11. Home pública, início protegido e Tela Hoje separados;
-12. Home pública validada e reformulada;
-13. wireframe da Home para computador criado;
-14. início protegido validado e reformulado;
-15. Mapa principal e estados alternativos móveis criados e validados;
-16. referência do Mapa para computador criada, validada e reformulada;
-17. wireframe móvel do início protegido criado.
+9. Home pública, início protegido e Tela Hoje separados;
+10. Home pública validada e materializada para computador;
+11. Mapa principal, estados móveis e referência desktop criados e validados;
+12. wireframe móvel do início protegido criado;
+13. wireframe móvel do início protegido funcionalmente validado e reformulado.
 
 ## 4. Sequência pessoal vigente
 
 ```text
 Página Inicial pública
 → decisão voluntária de iniciar ou explorar
-→ início protegido da jornada
+→ explicação do ambiente protegido
+→ acesso, somente quando necessário
+→ escolha e rascunho mínimo
+→ revisão e autorização específica
 → compreensão inicial revisável
+→ decisão sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Resultado do wireframe móvel do início protegido
+## 5. Resultado da validação do início protegido
 
-A UXA-034 materializa quatro estados de 390 por 844 pixels:
+A UXA-034 reformulada e a UXA-035 estabelecem:
 
-1. explicação anterior à autenticação;
-2. acesso protegido sem coleta iniciada;
-3. modalidade e compartilhamento mínimo;
-4. revisão e autorização específica.
-
-O conjunto demonstra:
-
-- saída consciente da Home pública;
-- nenhuma coleta automática;
-- continuar, entender, voltar ou explorar sem personalização;
-- entrar, criar conta e recuperar acesso;
-- conta separada de autorização;
-- texto, voz, arquivo e perguntas opcionais;
-- início com pouco conteúdo;
-- finalidade e privacidade visíveis;
-- rascunho ainda não processado;
-- pausa, salvamento e exclusão distintos;
-- inventário do conteúdo recebido;
-- correção, remoção e limitação;
-- autorização específica após revisão;
-- personalização bloqueada antes do gate.
-
-A sequência não é um formulário linear obrigatório. Estados podem ser pausados, retomados ou omitidos quando isso preservar compreensão e autonomia.
+- relato pessoal separado de dados técnicos e de acesso;
+- estados nomeados, pausáveis e retomáveis;
+- ausência de formulário linear obrigatório;
+- acesso apresentado somente quando necessário;
+- sessão válida sem repetição da etapa de acesso;
+- ações com destino e efeito explícitos;
+- texto, voz, arquivo e perguntas opcionais sem preferência automática;
+- explicação anterior para voz e arquivo;
+- compartilhamento mínimo legítimo;
+- pausa, salvar, sair e excluir com efeitos distintos;
+- inventário antes do processamento;
+- autorizações específicas e inicialmente desmarcadas;
+- preparação apenas de compreensão inicial temporária e revisável;
+- recusa sem processamento;
+- persistência e personalização bloqueadas até a revisão da compreensão.
 
 ## 6. Proteções preservadas
 
-- a Home não coleta relato pessoal;
-- iniciar a jornada é voluntário;
-- explicação antecede autenticação e coleta;
-- criar conta não autoriza processamento;
+- nenhum relato é solicitado antes da explicação;
+- dados de acesso não constituem conteúdo da jornada;
+- autenticação não autoriza processamento;
 - modalidades não competem como exigências;
 - compartilhar pouco é legítimo;
 - voz e arquivos exigem explicação anterior;
 - revisão antecede autorização;
-- personalização exige compreensão revisada e autorizada;
+- não autorizar impede processamento;
+- persistência e personalização dependem do gate;
 - exploração sem personalização permanece disponível;
-- pausa, rascunho e exclusão possuem efeitos distintos;
 - informações de terceiros não são exigidas;
 - wireframe, validação, protótipo, design, testes e desenvolvimento permanecem atos separados.
 
@@ -158,14 +148,13 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer separadamente:
 
-1. validar funcionalmente o wireframe móvel do início protegido;
-2. criar a referência móvel da Home;
-3. validar a revisão da compreensão inicial;
-4. validar a transição para a primeira Tela Hoje;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar a referência do início protegido para computador;
-7. criar outros estados alternativos do Mapa;
-8. criar referência para tablet, caso priorizada.
+1. criar a referência móvel da Home;
+2. materializar a revisão da compreensão inicial;
+3. validar a transição para a primeira Tela Hoje;
+4. criar estados especializados de texto, voz e arquivos;
+5. criar a referência do início protegido para computador;
+6. criar estados de processamento, pausa, falha e retomada;
+7. criar referência para tablet, caso priorizada.
 
 ### 8.2 Arquitetura de Negócios
 

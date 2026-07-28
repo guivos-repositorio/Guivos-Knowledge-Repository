@@ -1,45 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Acesso protegido sem coleta iniciada</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com opções para entrar, criar conta ou recuperar acesso, declarando que autenticação não autoriza coleta ou processamento.</desc>
+  <title id="title">Acesso protegido quando necessário</title>
+  <desc id="desc">Wireframe móvel reformulado que apresenta acesso somente quando necessário e separa dados de conta do conteúdo e das autorizações da jornada.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
-
   <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
-  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar</text>
+  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar à explicação</text>
   <line x1="16" y1="50" x2="374" y2="50" stroke="#cccccc"/>
 
-  <text x="20" y="82" font-family="Arial, sans-serif" font-size="10" fill="#555555">INÍCIO PROTEGIDO · 2 DE 4</text>
-  <text x="20" y="118" font-family="Arial, sans-serif" font-size="20" font-weight="700">Acesse o ambiente protegido</text>
-  <text x="20" y="143" font-family="Arial, sans-serif" font-size="10">A conta protege o rascunho e permite retomada segura.</text>
+  <text x="20" y="82" font-family="Arial, sans-serif" font-size="10" fill="#555555">INÍCIO PROTEGIDO · ACESSO, QUANDO NECESSÁRIO</text>
+  <text x="20" y="118" font-family="Arial, sans-serif" font-size="20" font-weight="700">Acesse para proteger e retomar</text>
+  <text x="20" y="143" font-family="Arial, sans-serif" font-size="10">Esta tela aparece somente quando o acesso for necessário.</text>
 
-  <rect x="20" y="168" width="350" height="88" rx="10" fill="#f3f3f3" stroke="#777777"/>
-  <text x="36" y="194" font-family="Arial, sans-serif" font-size="11" font-weight="700">Nenhuma coleta foi iniciada</text>
-  <text x="36" y="218" font-family="Arial, sans-serif" font-size="9">Entrar ou criar conta não autoriza gravação, upload,</text>
-  <text x="36" y="236" font-family="Arial, sans-serif" font-size="9">transcrição, análise, compreensão persistente ou personalização.</text>
+  <rect x="20" y="168" width="350" height="122" rx="10" fill="#f3f3f3" stroke="#777777"/>
+  <text x="36" y="194" font-family="Arial, sans-serif" font-size="11" font-weight="700">Conta e jornada permanecem separadas</text>
+  <text x="36" y="218" font-family="Arial, sans-serif" font-size="9">Dados de acesso servem para autenticação e proteção da conta.</text>
+  <text x="36" y="238" font-family="Arial, sans-serif" font-size="9">Entrar ou criar conta não autoriza relato, gravação, upload,</text>
+  <text x="36" y="256" font-family="Arial, sans-serif" font-size="9">análise, compreensão persistente ou personalização.</text>
+  <text x="36" y="278" font-family="Arial, sans-serif" font-size="9" font-weight="700">Nenhum relato pessoal foi recebido nesta etapa.</text>
 
-  <rect x="20" y="284" width="350" height="54" rx="9" fill="#222222"/>
-  <text x="195" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Entrar na minha conta</text>
+  <rect x="20" y="316" width="350" height="54" rx="9" fill="#222222"/>
+  <text x="195" y="349" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Entrar na minha conta</text>
+  <rect x="20" y="384" width="350" height="54" rx="9" fill="#ffffff" stroke="#777777"/>
+  <text x="195" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700">Criar uma conta</text>
+  <text x="195" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Recuperar acesso</text>
 
-  <rect x="20" y="352" width="350" height="54" rx="9" fill="#ffffff" stroke="#777777"/>
-  <text x="195" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700">Criar uma conta</text>
+  <rect x="20" y="510" width="350" height="120" rx="10" fill="#ffffff" stroke="#999999"/>
+  <text x="36" y="536" font-family="Arial, sans-serif" font-size="11" font-weight="700">Depois do acesso</text>
+  <text x="36" y="560" font-family="Arial, sans-serif" font-size="9">• escolha uma modalidade sem preferência automática;</text>
+  <text x="36" y="582" font-family="Arial, sans-serif" font-size="9">• compartilhe pouco e forme um rascunho revisável;</text>
+  <text x="36" y="604" font-family="Arial, sans-serif" font-size="9">• autorize uma finalidade somente depois da revisão.</text>
 
-  <text x="195" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Recuperar acesso</text>
+  <rect x="20" y="652" width="350" height="72" rx="9" fill="#f3f3f3" stroke="#999999"/>
+  <text x="36" y="678" font-family="Arial, sans-serif" font-size="10" font-weight="700">Sessão válida</text>
+  <text x="36" y="700" font-family="Arial, sans-serif" font-size="9">Quando já autenticada, a pessoa segue sem repetir esta etapa.</text>
+  <text x="350" y="700" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Continuar</text>
 
-  <rect x="20" y="478" width="350" height="130" rx="10" fill="#ffffff" stroke="#999999"/>
-  <text x="36" y="504" font-family="Arial, sans-serif" font-size="11" font-weight="700">Depois do acesso, você poderá</text>
-  <text x="36" y="532" font-family="Arial, sans-serif" font-size="9">• escolher texto, voz, arquivo ou perguntas opcionais;</text>
-  <text x="36" y="554" font-family="Arial, sans-serif" font-size="9">• começar com pouco e salvar um rascunho;</text>
-  <text x="36" y="576" font-family="Arial, sans-serif" font-size="9">• revisar tudo antes de autorizar processamento;</text>
-  <text x="36" y="598" font-family="Arial, sans-serif" font-size="9">• pausar, remover, limitar ou excluir.</text>
-
-  <rect x="20" y="636" width="350" height="58" rx="9" fill="#f3f3f3" stroke="#999999"/>
-  <text x="36" y="660" font-family="Arial, sans-serif" font-size="10" font-weight="700">Proteção de acesso</text>
-  <text x="36" y="680" font-family="Arial, sans-serif" font-size="9">Recuperação não revela se uma conta ou dado pessoal existe.</text>
-
-  <text x="195" y="738" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar e entender o processo</text>
-  <text x="195" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Explorar sem personalização</text>
-
-  <rect x="20" y="804" width="350" height="22" rx="11" fill="#f3f3f3"/>
-  <rect x="20" y="804" width="176" height="22" rx="11" fill="#222222"/>
-  <text x="195" y="819" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Explicação · acesso · compartilhamento · revisão</text>
+  <text x="195" y="766" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Explorar sem personalização</text>
+  <text x="195" y="804" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Sair sem iniciar relato</text>
 </svg>

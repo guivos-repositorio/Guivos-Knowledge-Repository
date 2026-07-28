@@ -1,8 +1,8 @@
 ---
 id: UXA-034
 title: Wireframe de Baixa Fidelidade do Início Protegido da Jornada
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-023
@@ -21,6 +21,7 @@ related:
   - UXA-002
   - UXA-006
   - UXA-010
+  - UXA-035
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
   - PAS-001-PP-VIEW-001
@@ -31,191 +32,201 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa a primeira referência gráfica móvel do início protegido da jornada pessoal da Guivos, conforme o contrato funcional validado e reformulado pela UXA-023.
+Este documento materializa a referência gráfica móvel do início protegido da jornada pessoal da Guivos, conforme o contrato funcional da UXA-023 e a validação especializada da UXA-035.
 
-O incremento demonstra a separação entre:
+O conjunto demonstra estados possíveis e retomáveis para:
 
-1. explicação anterior à autenticação;
-2. entrada ou criação de conta;
-3. escolha consciente da modalidade e compartilhamento mínimo;
-4. revisão do conteúdo recebido;
-5. autorização específica para processamento;
-6. transição para uma compreensão inicial revisável.
+1. explicar o ambiente antes de solicitar relato;
+2. acessar a conta somente quando necessário;
+3. escolher uma modalidade e formar um rascunho mínimo;
+4. revisar o conteúdo e autorizar finalidade específica;
+5. preparar uma compreensão inicial temporária e revisável;
+6. decidir posteriormente sobre persistência e personalização.
 
-O conjunto não representa design visual, textos definitivos, autenticação implementada, gravação real, upload real, processamento de IA, política jurídica completa, protótipo navegável ou desenvolvimento.
+Os quatro artefatos não constituem formulário linear obrigatório. Estados poderão ser omitidos, retomados ou apresentados progressivamente conforme sessão, modalidade escolhida, conteúdo existente e autorizações vigentes.
+
+O conjunto não representa design visual, textos jurídicos finais, autenticação implementada, gravação real, upload real, processamento de IA, protótipo navegável ou desenvolvimento.
 
 ## 2. Posição na experiência
 
 ```text
 Página Inicial pública
 → decisão voluntária de iniciar
-→ início protegido da jornada
+→ explicação do ambiente protegido
+→ acesso, somente quando necessário
+→ escolha e rascunho mínimo
+→ revisão e autorização específica
 → compreensão inicial revisável
+→ decisão sobre persistência e personalização
 → Tela Hoje, jornada sem personalização ou exploração geral
-→ Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
 A pessoa chega ao primeiro estado somente após selecionar conscientemente `Iniciar minha jornada` na Home pública.
 
-Nenhuma coleta, gravação, upload, transcrição, extração ou personalização começa automaticamente.
+Nenhum relato pessoal da jornada, gravação, upload, transcrição, extração ou análise começa automaticamente.
 
-## 3. Artefatos visuais
+Dados técnicos e de acesso, quando necessários, possuem finalidade separada do conteúdo da jornada.
 
-### 3.1 Estado 1 — Explicação antes da autenticação
+## 3. Artefatos visuais reformulados
 
-![Início protegido antes da autenticação](../assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg)
+### 3.1 Estado de explicação
 
-Arquivo:
+![Explicação do ambiente protegido](../assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg)
 
 `docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`
 
-### 3.2 Estado 2 — Acesso protegido
+### 3.2 Estado de acesso, quando necessário
 
-![Acesso protegido sem coleta iniciada](../assets/wireframes/uxa-034-protected-entry-access-mobile.svg)
-
-Arquivo:
+![Acesso protegido quando necessário](../assets/wireframes/uxa-034-protected-entry-access-mobile.svg)
 
 `docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`
 
-### 3.3 Estado 3 — Modalidade e compartilhamento mínimo
+### 3.3 Estado de escolha e rascunho
 
-![Escolha de modalidade e compartilhamento mínimo](../assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg)
-
-Arquivo:
+![Escolha de modalidade e rascunho mínimo](../assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg)
 
 `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`
 
-### 3.4 Estado 4 — Revisão e autorização específica
+### 3.4 Estado de revisão antes do processamento
 
-![Revisão do conteúdo e autorização específica](../assets/wireframes/uxa-034-protected-entry-review-mobile.svg)
-
-Arquivo:
+![Revisão e autorização específica](../assets/wireframes/uxa-034-protected-entry-review-mobile.svg)
 
 `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`
 
-Dimensão de referência de cada arquivo:
+Dimensão de referência:
 
 - canal: aplicativo móvel;
 - largura: 390 pixels;
 - altura: 844 pixels;
 - orientação: retrato;
-- condição: baixa fidelidade;
-- navegação: sequência protegida, não formulário linear obrigatório.
+- fidelidade: baixa;
+- navegação: estados possíveis, pausáveis e retomáveis.
 
-## 4. Pergunta do wireframe
+## 4. Pergunta funcional
 
-> **A pessoa consegue compreender o processo, entrar com segurança, compartilhar somente o necessário, revisar o que foi recebido e autorizar usos específicos sem confundir conta, coleta, processamento e personalização?**
+> **A pessoa consegue compreender onde está, acessar somente quando necessário, compartilhar pouco, revisar tudo e autorizar uma finalidade específica sem confundir dados de acesso, relato, processamento, persistência e personalização?**
 
-A validação funcional especializada do conjunto permanece como ato posterior.
+A UXA-035 considera o conjunto funcionalmente válido após reformulação.
 
 ## 5. Princípios transversais
 
 Os quatro estados preservam:
 
 - voluntariedade;
-- explicação anterior à autenticação;
-- ausência de coleta automática;
+- explicação anterior ao relato;
+- linguagem precisa sobre dados de acesso e conteúdo da jornada;
+- ausência de coleta automática do relato;
 - autenticação separada de autorização;
+- acesso condicional;
 - modalidades equivalentes;
 - compartilhamento mínimo e progressivo;
 - finalidades visíveis;
 - revisão anterior ao processamento material;
-- controles de correção, limitação, remoção, pausa e exclusão;
-- processamento específico e interrompível;
-- personalização bloqueada antes do gate;
+- autorizações específicas e inicialmente desmarcadas;
+- recusa sem processamento;
+- pausa, saída, salvamento e exclusão diferenciados;
+- persistência e personalização bloqueadas antes do gate;
 - saída para exploração sem personalização.
 
-## 6. Estado 1 — Explicação antes da autenticação
+## 6. Estado de explicação
 
 O primeiro estado declara:
 
-> **Você está entrando em um ambiente protegido**
+> **Você saiu da Página Inicial e entrou na explicação do ambiente protegido.**
 
-> **Nenhuma informação pessoal foi coletada até aqui**
+> **Nenhum relato pessoal da jornada foi solicitado ou recebido nesta etapa.**
 
-A pessoa recebe uma explicação curta do processo:
+Também informa que gravação, upload, transcrição e análise não começaram.
+
+A pessoa conhece a sequência funcional de referência:
 
 ```text
-entender o que acontecerá
-→ entrar ou criar conta
+entender o processo
+→ acessar, se necessário
 → escolher como compartilhar
-→ revisar o conteúdo recebido
-→ autorizar somente os usos desejados
+→ revisar o conteúdo
+→ autorizar somente a finalidade desejada
 → revisar a compreensão inicial
 ```
 
-Ações principais:
+Ações:
 
-- `Continuar com segurança`;
-- `Entender como funciona`;
+- `Ir para o acesso protegido`;
+- `Entender finalidades e controles`;
 - `Voltar à Página Inicial`;
-- `Explorar sem personalização`.
+- `Explorar sem personalização`;
+- `Sair sem iniciar relato`.
 
-O estado não apresenta campo de relato, microfone, upload ou autorização genérica.
+Quando já existir sessão válida, a ação principal poderá ser `Continuar para escolher como compartilhar`.
 
-## 7. Estado 2 — Acesso protegido
+## 7. Estado de acesso, quando necessário
 
-O segundo estado apresenta alternativas legítimas:
+O estado declara:
+
+> **Esta etapa aparece somente quando o acesso protegido for necessário.**
+
+> **Dados de acesso são tratados separadamente do conteúdo da jornada.**
+
+A superfície oferece:
 
 - `Entrar na minha conta`;
 - `Criar uma conta`;
 - `Recuperar acesso`;
-- `Voltar e entender o processo`;
+- `Voltar à explicação`;
 - `Explorar sem personalização`.
 
-A superfície declara:
+Entrar ou criar conta não autoriza relato, gravação, upload, transcrição, análise, compreensão persistente ou personalização.
 
-> **Entrar protege o rascunho, mas não autoriza processamento**
+Uma pessoa com sessão válida poderá seguir sem reapresentar criação ou recuperação de conta.
 
-> **Nenhuma coleta foi iniciada**
+A recuperação não deverá revelar a existência de conta ou dado pessoal.
 
-A criação de conta não deverá:
+## 8. Estado de escolha e rascunho
 
-- iniciar gravação;
-- abrir upload automaticamente;
-- autorizar transcrição;
-- autorizar análise de arquivos;
-- formar compreensão persistente;
-- ativar personalização.
-
-## 8. Estado 3 — Modalidade e compartilhamento mínimo
-
-Depois do acesso protegido, a pessoa poderá escolher:
+As modalidades permanecem equivalentes:
 
 - `Escrever`;
 - `Falar`;
 - `Enviar arquivo`;
-- `Responder perguntas opcionais`;
-- `Começar com uma frase`.
+- `Responder perguntas opcionais`.
 
-Nenhuma modalidade é superior ou obrigatória.
+Cada alternativa utiliza `Escolher esta forma`.
 
-O estado demonstra:
+Nenhuma modalidade é selecionada por padrão. `Começar com pouco` aparece somente depois da escolha.
 
-> **Comece somente com o que fizer sentido agora**
+O estado declara:
 
-> **Você não precisa contar toda a sua vida**
+> **Comece somente com o que fizer sentido agora.**
+
+> **Você não precisa contar toda a sua vida.**
 
 Também apresenta:
 
 - finalidade atual;
-- o que será salvo como rascunho;
-- o que ainda não será processado;
-- alerta sobre informações sensíveis e de terceiros;
-- ações `Pausar`, `Salvar rascunho` e `Excluir rascunho`;
-- opção `Prefiro não informar` quando aplicável.
+- estado do rascunho;
+- o que ainda não foi processado;
+- proteção de informações sensíveis e de terceiros;
+- explicação anterior para voz e arquivo;
+- opção de combinar modalidades sem obrigação;
+- `Pausar e manter rascunho`;
+- `Salvar rascunho e sair`;
+- `Sair sem salvar alterações`;
+- `Excluir rascunho`;
+- `Continuar sem compartilhar e sem processamento`.
+
+A implementação futura deverá declarar se o rascunho está somente no dispositivo, associado à conta ou ainda não persistido.
 
 ## 9. Texto, voz e arquivos
 
 ### 9.1 Texto
 
-Digitar não constitui autorização de processamento.
+Digitar não autoriza processamento.
 
 A pessoa poderá editar, remover trechos, limitar finalidade e revisar antes de autorizar.
 
 ### 9.2 Voz
 
-Antes de gravar, a interface deverá explicar:
+Antes de ativar gravação, a interface deverá explicar:
 
 - finalidade;
 - início e fim da gravação;
@@ -225,33 +236,33 @@ Antes de gravar, a interface deverá explicar:
 - remoção e regravação;
 - risco de informações de terceiros.
 
-Gravação e transcrição possuem controles separados quando seus efeitos forem diferentes.
+Gravação, transcrição e manutenção do original possuem controles separados quando seus efeitos diferirem.
 
 ### 9.3 Arquivos
 
 Antes do envio, a pessoa deverá conhecer:
 
 - finalidade;
-- tipos de extração previstos;
+- extrações propostas;
 - limites de leitura;
 - retenção;
 - tratamento de dados sensíveis ou de terceiros;
-- remoção do arquivo e de informações derivadas;
+- remoção do original e de informações derivadas;
 - revisão anterior ao uso material.
 
 Upload não autoriza leitura irrestrita.
 
-## 10. Estado 4 — Revisão do conteúdo recebido
+## 10. Estado de revisão
 
-Antes de qualquer processamento material, a pessoa visualiza um inventário:
+Antes do processamento material, a pessoa visualiza inventário que distingue:
 
-- texto fornecido;
+- texto original;
 - respostas opcionais;
 - gravações;
 - transcrições;
 - arquivos;
 - extrações propostas;
-- itens removidos ou limitados;
+- itens removidos;
 - finalidades associadas.
 
 Cada item poderá oferecer:
@@ -264,82 +275,63 @@ Cada item poderá oferecer:
 - `Limitar uso`;
 - `Excluir`.
 
-O inventário distingue conteúdo original, transcrição, extração e interpretação.
+A ausência de determinada modalidade é declarada, sem ser tratada como insuficiência.
 
 ## 11. Autorização específica
 
-A autorização aparece somente depois da revisão.
+As autorizações aparecem desmarcadas e somente depois da revisão.
 
-O estado demonstra escolhas separadas para:
+Nesta etapa, o wireframe ilustra apenas:
 
-- utilizar o texto revisado na compreensão inicial;
-- utilizar a transcrição revisada;
-- processar extrações aprovadas do arquivo;
-- manter ou excluir o original;
-- formar compreensão persistente;
-- utilizar a compreensão para personalização futura.
+> **Usar os itens marcados para preparar uma compreensão inicial temporária e revisável.**
 
-A última opção permanece bloqueada até que a compreensão inicial seja apresentada, revisada e autorizada no gate correspondente.
+A ação informa qual conteúdo será utilizado e que nenhum item não marcado será processado para essa finalidade.
 
-O wireframe declara:
+A pessoa possui duas saídas explícitas:
 
-> **Criar conta não autorizou estas ações**
+- `Autorizar os itens marcados para preparar a compreensão inicial`;
+- `Não autorizar processamento e voltar a explorar`.
 
-> **Você pode continuar sem personalização**
+A ausência de autorização não inicia compreensão, persistência ou personalização.
 
-## 12. Processamento visível e interrompível
+## 12. Persistência e personalização
+
+A persistência da compreensão e a personalização futura não são solicitadas neste wireframe.
+
+Elas permanecem bloqueadas até que a compreensão inicial seja:
+
+- apresentada;
+- explicada;
+- revisada;
+- corrigida ou limitada;
+- aceita ou recusada pela pessoa.
+
+O estado declara:
+
+> **Persistência e personalização serão decididas somente depois da revisão da compreensão inicial.**
+
+## 13. Processamento visível e interrompível
 
 Após autorização específica, o estado poderá evoluir por:
 
 ```text
-rascunho salvo
-→ aguardando revisão
-→ autorizado para processamento específico
+rascunho revisado
+→ autorizado para finalidade específica
 → em processamento
 → pausado, interrompido ou com falha
 → compreensão inicial disponível
 ```
 
-A pessoa deverá poder:
+A pessoa deverá poder interromper quando aplicável, retirar autorização futura, corrigir origem, excluir itens compatíveis e compreender efeitos de remoções.
 
-- interromper quando aplicável;
-- retirar autorização futura;
-- corrigir origem;
-- excluir itens compatíveis;
-- compreender efeitos de uma remoção;
-- continuar sem personalização material.
+## 14. Pausa, saída, rascunho e exclusão
 
-## 13. Compreensão inicial e gate
+O conjunto diferencia:
 
-A conclusão do relato não garante recomendação, oportunidade, Próximo Passo ou resultado.
-
-A compreensão inicial deverá distinguir:
-
-- fatos fornecidos;
-- fontes;
-- transcrições e extrações;
-- inferências;
-- desconhecidos;
-- limitações;
-- correções realizadas.
-
-Antes de qualquer personalização material, a pessoa deverá poder:
-
-- revisar;
-- corrigir;
-- limitar;
-- remover;
-- discordar;
-- pedir nova análise;
-- continuar sem personalização;
-- voltar à exploração geral.
-
-## 14. Pausa, rascunho e exclusão
-
-O wireframe diferencia:
-
-- pausar a sessão;
-- salvar rascunho;
+- sair sem iniciar relato;
+- pausar e manter rascunho;
+- salvar rascunho e sair;
+- sair sem salvar alterações;
 - excluir rascunho;
 - remover um item;
 - retirar autorização;
@@ -347,9 +339,9 @@ O wireframe diferencia:
 - excluir informações derivadas quando aplicável;
 - encerrar a jornada.
 
-Nenhuma dessas ações deverá ser apresentada como equivalente às demais.
+Ações com perda ou persistência deverão explicar o efeito antes da confirmação.
 
-## 15. Informações sensíveis e de terceiros
+## 15. Proteção de informações sensíveis e de terceiros
 
 A superfície deverá:
 
@@ -357,9 +349,9 @@ A superfície deverá:
 - permitir remoção de trechos e itens;
 - não incentivar exposição excessiva;
 - não exigir informação de terceiros;
-- não utilizar culpa ou urgência artificial;
+- não utilizar culpa, urgência artificial ou promessa absoluta de segurança;
 - oferecer proteção adicional quando houver risco material;
-- orientar ajuda adequada quando necessário.
+- orientar ajuda apropriada quando necessário.
 
 O wireframe não define protocolo clínico, jurídico ou emergencial.
 
@@ -367,47 +359,44 @@ O wireframe não define protocolo clínico, jurídico ou emergencial.
 
 A sequência deverá:
 
-- permitir leitura sem depender de cor;
-- oferecer títulos e estados textuais;
+- não depender de cor;
+- utilizar títulos e estados textuais;
 - manter ações principais e saídas reconhecíveis;
 - não depender de gestos ocultos;
 - anunciar gravação, upload, revisão e processamento;
-- permitir navegação por teclado e tecnologia assistiva em implementação futura;
 - preservar foco e progresso ao pausar;
-- manter alternativa textual para voz e arquivos.
+- manter alternativa textual para voz e arquivos;
+- declarar consequências de autorizar ou recusar.
 
-A criação não conclui conformidade técnica de acessibilidade.
+A validação não conclui conformidade técnica de acessibilidade.
 
-## 17. Critérios de validação posterior
+## 17. Critérios atendidos
 
-A validação funcional especializada deverá verificar:
+A reformulação permite verificar:
 
-- se a pessoa entende que deixou a Home pública;
-- se compreende que nenhuma coleta começou no primeiro estado;
-- se conta e autorização permanecem separadas;
-- se entrar, criar conta e recuperar acesso são claros;
-- se explorar sem personalização permanece legítimo;
-- se texto, voz, arquivos e perguntas são percebidos como alternativas;
-- se o compartilhamento mínimo é compreendido;
-- se pausa, rascunho e exclusão têm efeitos distintos;
-- se original, transcrição, extração e interpretação são distinguíveis;
-- se a revisão antecede o processamento;
-- se as autorizações são específicas;
-- se personalização permanece bloqueada antes do gate;
-- se a transição para a compreensão inicial não parece automática;
-- se o conjunto evita exposição excessiva e pressão.
+- compreensão de que a Home pública foi deixada;
+- ausência de relato pessoal antes da explicação;
+- separação dos dados de acesso;
+- estados não lineares e retomáveis;
+- acesso somente quando necessário;
+- modalidades equivalentes;
+- legitimidade do compartilhamento mínimo;
+- efeitos distintos de pausa, salvamento, saída e exclusão;
+- inventário antes do processamento;
+- autorizações específicas e desmarcadas;
+- recusa sem processamento;
+- persistência e personalização posteriores ao gate.
 
 ## 18. Limites
 
 Este incremento não:
 
+- define textos jurídicos finais;
 - cria autenticação real;
 - define provedor de identidade;
-- implementa gravação, transcrição ou upload;
+- implementa armazenamento, gravação, transcrição ou upload;
 - define modelo de IA;
-- define retenção jurídica definitiva;
-- substitui políticas de privacidade e termos;
-- conclui textos finais;
+- materializa a compreensão inicial;
 - cria referência para computador ou tablet;
 - cria protótipo navegável;
 - executa teste com usuários;
@@ -418,12 +407,12 @@ Este incremento não:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o wireframe móvel do início protegido;
-2. criar a referência móvel da Página Inicial pública;
-3. validar a revisão da compreensão inicial;
-4. validar a transição para a primeira Tela Hoje;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar referência do início protegido para computador;
+1. criar a referência móvel da Página Inicial pública;
+2. materializar a revisão da compreensão inicial;
+3. validar a transição para a primeira Tela Hoje;
+4. criar estados especializados de texto, voz e arquivos;
+5. criar referência do início protegido para computador;
+6. criar estados de processamento, pausa, falha e retomada;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
