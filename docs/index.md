@@ -9,39 +9,55 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.35 — Wireframe Móvel do Início Protegido da Jornada Criado |
+| Marco | M7.36 — Wireframe Móvel do Início Protegido Funcionalmente Validado e Reformulado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Home pública | validada e materializada para computador |
-| Início protegido | funcionalmente validado e materializado em quatro estados móveis; validação do wireframe pendente |
+| Início protegido móvel | funcionalmente validado e reformulado |
 | Referência móvel da Home | não iniciada |
+| Compreensão inicial | contrato estabelecido; materialização pendente |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa e estados | funcionalmente validados e reformulados |
-| Referência do Mapa para computador | funcionalmente validada e reformulada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
 ## Experiência pessoal vigente
 
 ```text
 Página Inicial pública
-→ decisão voluntária de iniciar ou explorar
-→ início protegido da jornada
+→ explicação do ambiente protegido
+→ acesso, somente quando necessário
+→ escolha e rascunho mínimo
+→ revisão e autorização específica
 → compreensão inicial revisável
+→ decisão sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## Wireframe móvel do início protegido
+## Início protegido móvel validado
 
-A UXA-034 materializa quatro estados de 390 por 844 pixels:
+A UXA-034 reformulada e a UXA-035 estabelecem quatro estados de 390 por 844 pixels:
 
-1. explicação anterior à autenticação;
-2. acesso protegido sem coleta iniciada;
-3. modalidade e compartilhamento mínimo;
-4. revisão e autorização específica.
+1. explicação anterior ao relato;
+2. acesso somente quando necessário;
+3. escolha de modalidade e rascunho mínimo;
+4. revisão anterior ao processamento específico.
 
-A referência demonstra ausência de coleta automática, conta separada de autorização, modalidades equivalentes, compartilhamento mínimo, finalidade, privacidade, rascunho protegido, revisão, controles e personalização bloqueada antes do gate.
+A referência demonstra:
+
+- relato pessoal separado de dados técnicos e de acesso;
+- estados nomeados e retomáveis;
+- ausência de formulário linear obrigatório;
+- modalidades equivalentes e sem seleção automática;
+- compartilhamento mínimo;
+- voz e arquivo com explicação anterior;
+- efeitos distintos de pausa, salvamento, saída e exclusão;
+- inventário antes do processamento;
+- autorização desmarcada e específica;
+- recusa sem processamento;
+- compreensão inicial temporária;
+- persistência e personalização bloqueadas antes do gate.
 
 Arquivos:
 
@@ -50,7 +66,7 @@ Arquivos:
 - `assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
 - `assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
 
-A criação não equivale a validação funcional do conjunto, autenticação, gravação, upload, IA, protótipo, teste ou implementação.
+A validação não equivale a política jurídica final, segurança técnica, autenticação, armazenamento, voz, arquivos, IA, protótipo, teste ou implementação.
 
 ## Acesso rápido
 
@@ -61,8 +77,8 @@ A criação não equivale a validação funcional do conjunto, autenticação, g
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico do Início Protegido](project/canonical-consolidation-matrix-uxa-034-addendum.md)
-- [Histórico 1.57.0](project/changelog-1.57.0-uxa-034.md)
+- [Adendo Canônico da Validação do Início Protegido](project/canonical-consolidation-matrix-uxa-035-addendum.md)
+- [Histórico 1.58.0](project/changelog-1.58.0-uxa-035.md)
 
 ### Arquiteturas e modelos
 
@@ -73,13 +89,10 @@ A criação não equivale a validação funcional do conjunto, autenticação, g
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Página Inicial e Início](experience-architecture/uxa-020-home-and-journey-entry.md)
 - [Wireframe da Home](experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Validação do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
+- [Contrato do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Início Protegido](experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
+- [Validação do Wireframe Protegido](experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md)
 - [Wireframe do Mapa](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
-- [Validação do Mapa](experience-architecture/uxa-025-opportunity-map-functional-validation-and-reformulation.md)
-- [Mapa sem Localização](experience-architecture/uxa-026-opportunity-map-location-disabled-state.md)
-- [Lista do Mapa](experience-architecture/uxa-028-opportunity-map-list-state.md)
-- [Mapa sem Resultados](experience-architecture/uxa-030-opportunity-map-no-results-state.md)
 - [Mapa para Computador](experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
 - [Validação Desktop](experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
 
@@ -92,7 +105,7 @@ A criação não equivale a validação funcional do conjunto, autenticação, g
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: validação funcional do wireframe móvel do início protegido, referência móvel da Home, validação da compreensão inicial, primeira Tela Hoje, estados especializados, referência desktop do início protegido ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente: referência móvel da Home, materialização da compreensão inicial, primeira Tela Hoje, estados especializados do início protegido, referência para computador ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 
