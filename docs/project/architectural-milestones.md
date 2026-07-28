@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.7.0
+version: 5.8.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.9.0
+  - ROADMAP-12.10.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -29,6 +29,7 @@ related:
   - UXA-032
   - UXA-033
   - UXA-034
+  - UXA-035
   - M7.20
   - M7.21
   - M7.22
@@ -45,6 +46,7 @@ related:
   - M7.33
   - M7.34
   - M7.35
+  - M7.36
 normative: false
 ---
 
@@ -65,66 +67,52 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.0–M7.20 | Concluído | validação externa, Matriz de Avaliação e 18 decisões humanas |
 | M7.3–M7.3.5 | Concluído | auditoria, remediação e retomada governada |
 | M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência e experiências institucionais e coletivas |
-| M7.21 | Concluído | Home pública, início protegido e Tela Hoje separados |
-| M7.22 | Concluído | Home pública validada e reformulada |
-| M7.23 | Concluído | wireframe da Home para computador criado |
-| M7.24 | Concluído | início protegido validado e reformulado |
+| M7.21–M7.24 | Concluído | Home pública e início protegido separados e validados |
 | M7.25–M7.34 | Concluído | Mapa móvel, estados alternativos e referência desktop criados e validados |
-| M7.35 | Concluído neste incremento | wireframe móvel do início protegido da jornada criado |
+| M7.35 | Concluído | wireframe móvel do início protegido criado |
+| M7.36 | Concluído neste incremento | wireframe móvel do início protegido funcionalmente validado e reformulado |
 
 ## 3. Marco vigente
 
-### Wireframe Móvel do Início Protegido da Jornada Criado — M7.35
+### Wireframe Móvel do Início Protegido Funcionalmente Validado e Reformulado — M7.36
 
 Critérios atendidos:
 
-- referência registrada em UXA-034;
-- contrato funcional da UXA-023 preservado;
-- quatro arquivos vetoriais criados em 390 por 844 pixels;
-- explicação anterior à autenticação materializada;
-- ausência de coleta automática declarada;
-- alternativas para continuar, entender, voltar e explorar sem personalização;
-- entrar, criar conta e recuperar acesso demonstrados;
-- criação de conta separada de autorização;
-- texto, voz, arquivo e perguntas opcionais como modalidades equivalentes;
-- compartilhamento mínimo e progressivo demonstrado;
-- finalidade e privacidade visíveis;
-- rascunho não processado declarado;
-- pausa, salvamento e exclusão diferenciados;
-- inventário do conteúdo recebido materializado;
-- correção, remoção e limitação demonstradas;
-- autorização específica posterior à revisão;
-- personalização bloqueada antes do gate;
-- validação funcional do conjunto preservada como ato posterior;
-- autenticação, gravação, upload, IA, design, protótipo, testes e desenvolvimento não iniciados;
+- validação registrada em UXA-035;
+- UXA-034 elevada para 0.2.0 e estado ativo;
+- quatro arquivos vetoriais reformulados;
+- relato pessoal separado de dados técnicos e de acesso;
+- estados nomeados sem contagem obrigatória;
+- acesso apresentado somente quando necessário;
+- sessão válida sem repetição do acesso;
+- ação inicial com destino explícito;
+- modalidades equivalentes e sem seleção automática;
+- explicação anterior para voz e arquivo;
+- compartilhamento mínimo preservado;
+- pausa, salvar, sair e excluir diferenciados;
+- inventário anterior ao processamento;
+- autorização inicialmente desmarcada;
+- finalidade limitada à preparação de compreensão temporária e revisável;
+- recusa sem processamento;
+- persistência e personalização bloqueadas até o gate;
+- exploração sem personalização preservada;
+- autenticação, armazenamento, voz, arquivos, IA, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Wireframe Móvel do Início Protegido Criado — M7.35
+
+A UXA-034 permanece como materialização dos quatro estados móveis.
+
 ### Referência do Mapa para Computador Validada — M7.34
 
 A UXA-032 e a UXA-033 permanecem como referência funcionalmente validada e reformulada para tela ampla.
 
-### Estado sem Resultados Validado — M7.32
-
-A UXA-030 e a UXA-031 permanecem como contrato do zero legítimo, cobertura verificável e recuperação consciente.
-
-### Lista do Mapa Validada — M7.30
-
-A UXA-028 e a UXA-029 permanecem como contrato da representação textual integral da consulta territorial.
-
-### Estado sem Localização Validado — M7.28
-
-A UXA-026 e a UXA-027 permanecem como contrato do uso sem localização.
-
-### Mapa de Oportunidades Validado — M7.26
-
-O Mapa principal permanece funcionalmente validado, com filtros, resultados, privacidade e rota contextual.
-
 ### Início Protegido Validado — M7.24
 
-A UXA-023 permanece como autoridade funcional do início protegido, com explicação anterior à autenticação, compartilhamento mínimo, revisão e personalização bloqueada antes do gate.
+A UXA-023 permanece como autoridade funcional do início protegido.
 
 ### Página Inicial Pública Validada — M7.22
 
@@ -141,7 +129,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; wireframe móvel do início protegido criado |
+| Arquitetura da Experiência | ativa; início protegido móvel validado e reformulado |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -153,14 +141,13 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente o wireframe móvel do início protegido;
-2. criar a referência móvel da Home;
-3. validar a revisão da compreensão inicial;
-4. validar a transição para a primeira Tela Hoje;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar a referência do início protegido para computador;
-7. criar outros estados alternativos do Mapa;
-8. criar referência para tablet, caso priorizada.
+1. criar a referência móvel da Home;
+2. materializar a revisão da compreensão inicial;
+3. validar a transição para a primeira Tela Hoje;
+4. criar estados especializados de texto, voz e arquivos;
+5. criar a referência do início protegido para computador;
+6. criar estados de processamento, pausa, falha e retomada;
+7. criar referência para tablet, caso priorizada.
 
 ### Arquitetura de Negócios
 
@@ -174,4 +161,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe não equivale a validação funcional, design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
+Wireframe não equivale a design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
