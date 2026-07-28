@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.60.0
+version: 1.61.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-27
 depends_on:
@@ -34,13 +34,14 @@ related:
   - UXA-030
   - UXA-031
   - UXA-032
+  - UXA-033
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.7.0
-  - M7.33
+  - ROADMAP-12.8.0
+  - M7.34
 normative: true
 ---
 
@@ -55,12 +56,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | referência do Mapa de Oportunidades para computador criada | M7.33; UXA-032 |
+| Marco atual | referência do Mapa para computador funcionalmente validada e reformulada | M7.34; UXA-032; UXA-033 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até a referência desktop do Mapa | UXA-000 a UXA-032 |
+| Arquitetura da Experiência | ativa até a validação desktop do Mapa | UXA-000 a UXA-033 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
@@ -71,7 +72,8 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
 | Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
-| Referência do Mapa para computador | criada; validação funcional especializada não iniciada | UXA-032 |
+| Referência do Mapa para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
+| Referência para tablet | não iniciada | — |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
@@ -111,89 +113,80 @@ Página Inicial pública
 
 O Mapa não entra entre a Home e a Tela Hoje.
 
-## 5. Mapa e estados validados
+## 5. Mapa e estados móveis validados
 
 O Mapa principal permanece uma superfície recorrente com contexto de atuação, pesquisa, filtros, resultados, legenda, privacidade, cartão selecionado e rota contextual.
 
 O estado sem localização preserva posição não acessada, região manual, ausência de marcador pessoal, salvamento e origem específica.
 
-A visualização em Lista, reformulada pela UXA-029, demonstra:
+A visualização em Lista demonstra:
 
-- `LISTA TERRITORIAL DO MAPA · MESMA CONSULTA`;
-- `Agindo como: Pessoa`;
+- Lista territorial da mesma consulta do Mapa;
+- contexto `Agindo como`;
 - região, busca e filtros preservados;
 - total consolidado de filtros;
 - quantidade e atualização dos resultados;
 - ordenação explícita e explicável;
 - cartões comparáveis com incertezas declaradas;
-- seleção preservada do Mapa;
+- seleção preservada;
 - explicação funcional e relação comercial separadas;
-- salvamento, origem e Detalhe sem localização;
-- retorno ao Mapa sem perda de contexto;
-- funcionamento integral sem mapa carregado.
+- funcionamento sem mapa carregado.
 
 ## 6. Estado sem resultados validado
 
 A UXA-030 e a UXA-031 estabelecem a ausência legítima de correspondências como condição limitada à consulta executada.
 
-O estado reformulado demonstra:
+O estado demonstra:
 
 - região, busca e filtros preservados;
-- total consolidado de filtros;
-- `0 resultados correspondem a esta consulta`;
-- `Consulta concluída · cobertura verificada · atualizada agora`;
-- ação `Ver cobertura`;
-- mensagem limitada à consulta atual;
-- revisão obrigatória antes de ajustar região, período, filtros ou busca;
-- última alteração identificada e `Desfazer` condicional;
-- seleção anterior fora da consulta atual, sem alterar o total zero;
-- distinção entre ausência, falha de fonte, indisponibilidade e cobertura parcial;
+- total zero limitado à consulta atual;
+- cobertura verificável;
+- revisão antes de ajustar a consulta;
+- `Desfazer` condicional;
+- seleção anterior fora da consulta atual;
+- distinção entre ausência, falha, indisponibilidade e cobertura parcial;
 - equivalência entre Mapa e Lista;
-- localização opcional e região manual;
-- exploração geral sem alterar a consulta territorial;
-- tratamento textual sem dependência do mapa carregado.
+- localização opcional;
+- ausência de preenchimento patrocinado artificial.
 
-## 7. Referência do Mapa para computador
+## 7. Referência do Mapa para computador validada
 
-A UXA-032 materializa dois estados em 1.440 por 1.024 pixels:
-
-- Mapa com resultados, filtros e Lista da mesma consulta apresentados lado a lado;
-- Mapa sem resultados, com cobertura verificável e ações de recuperação explícitas.
+A UXA-032 e a UXA-033 estabelecem dois estados de 1.440 por 1.024 pixels, considerados funcionalmente válidos após reformulação.
 
 A referência demonstra:
 
-- navegação recorrente com `Mapa` selecionado;
-- contexto `Agindo como: Pessoa`;
-- exploração geral sem personalização;
-- localização desativada e posição não acessada;
-- região manual distinta da posição pessoal;
-- painel de consulta e filtros;
-- campo territorial como maior área visual;
-- Lista territorial sincronizada;
-- quantidade, atualização e ordenação explícitas;
-- oportunidade selecionada no Mapa e na Lista;
-- explicabilidade e relação comercial separadas;
-- continuidade para o Detalhe;
+- faixa `Consulta territorial ativa` compartilhada;
+- filtros com valores semanticamente idênticos no resumo e nos controles;
+- `Visão dividida ativa`;
+- ações `Focar no Mapa` e `Focar na Lista`;
+- retorno à visão dividida sem perda de contexto;
+- movimento cartográfico sem atualização silenciosa;
+- `Pesquisar nesta área` somente após movimento pendente;
+- seleção `Marcador 1` vinculando Mapa, cartão e painel contextual;
+- cartões comparáveis com origem, explicação e relação comercial;
+- `Entender ordenação` explícito;
+- painel contextual recolhível;
+- recuperação do estado zero concentrada em `Consulta e filtros`;
+- seleção anterior explicável sem alterar o total zero;
+- localização opcional e região manual;
 - operação integral da Lista sem mapa carregado.
 
 Arquivos vetoriais:
 
-- `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
-- `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`;
-- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
-- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`;
 - `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
 - `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
 
-A referência desktop ainda não foi funcionalmente validada. Ela não conclui responsividade, tablet, design, protótipo, teste com usuários ou implementação.
+A validação não conclui responsividade, pontos de quebra, tablet, design, protótipo, acessibilidade técnica, teste com usuários ou implementação.
 
 ## 8. Proteções vigentes
 
 - localização permanece opcional;
 - região manual não equivale a posição atual;
-- alternar Mapa e Lista não modifica permissões;
+- foco não modifica consulta ou permissões;
+- movimento do Mapa não atualiza resultados silenciosamente;
 - dado ausente não é completado por inferência;
 - ordenação funcional e patrocínio permanecem separados;
+- seleção não aumenta relevância;
 - salvamento não autoriza rastreamento;
 - definir origem não autoriza histórico territorial;
 - endereços protegidos não são contornados;
@@ -210,12 +203,12 @@ A referência desktop ainda não foi funcionalmente validada. Ela não conclui r
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente a referência do Mapa para computador;
-2. criar o wireframe gráfico do início protegido;
-3. criar a referência móvel da Home;
-4. validar a revisão da compreensão inicial;
-5. validar a transição para a primeira Tela Hoje;
-6. criar outros estados alternativos do Mapa;
+1. criar o wireframe gráfico do início protegido;
+2. criar a referência móvel da Home;
+3. validar a revisão da compreensão inicial;
+4. validar a transição para a primeira Tela Hoje;
+5. criar outros estados alternativos do Mapa;
+6. criar referência específica para tablet, caso priorizada;
 7. retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

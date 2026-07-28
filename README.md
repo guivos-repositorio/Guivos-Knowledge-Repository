@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.33 — Referência do Mapa de Oportunidades para Computador Criada |
+| Marco | M7.34 — Referência do Mapa para Computador Funcionalmente Validada e Reformulada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -24,7 +24,8 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Estado sem localização | funcionalmente validado e reformulado |
 | Lista do Mapa | funcionalmente validada e reformulada |
 | Estado sem resultados | funcionalmente validado e reformulado |
-| Referência do Mapa para computador | criada; validação funcional pendente |
+| Referência do Mapa para computador | funcionalmente validada e reformulada |
+| Referência para tablet | não iniciada |
 | Demais estados do Mapa | governados; wireframes não iniciados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -45,99 +46,62 @@ O Mapa não entra entre a Home e a Tela Hoje.
 
 ## Página Inicial e início protegido
 
-A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização, distingue caminhos pessoais, gerais e institucionais e não coleta relato pessoal.
+A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização e não coleta relato pessoal.
 
-O ambiente protegido explica o processo antes da autenticação e da coleta, separa criação de conta de autorização, preserva compartilhamento mínimo, exige revisão e bloqueia personalização antes do gate.
+O ambiente protegido explica o processo antes da autenticação e da coleta, separa criação de conta de autorização, exige revisão e bloqueia personalização antes do gate.
 
 ## Mapa de Oportunidades
 
-O Mapa é uma superfície própria da navegação recorrente e foi considerado funcionalmente válido após reformulação.
+O Mapa é uma superfície da navegação recorrente e foi considerado funcionalmente válido após reformulação.
 
-A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa, Mapa e Lista sincronizados, filtros, resultados da área, camadas, legenda, privacidade, cartão selecionado, relação comercial e rota contextual.
+A UXA-024 e a UXA-025 estabelecem contexto `Agindo como`, pesquisa, filtros, resultados, legenda, privacidade, seleção, relação comercial e rota contextual.
 
-Arquivo principal:
+## Estados móveis validados
 
-`docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`
+A UXA-026 a UXA-031 estabelecem:
 
-## Estado sem localização
+- uso sem localização;
+- região manual distinta da posição pessoal;
+- Lista como representação textual da mesma consulta;
+- filtros e quantidade preservados;
+- cartões comparáveis;
+- cobertura verificável;
+- estado zero limitado à consulta atual;
+- recuperação consciente;
+- seleção anterior explicável;
+- operação sem mapa carregado.
 
-A UXA-026 e a UXA-027 estabelecem que a pessoa pode utilizar o Mapa sem conceder localização do dispositivo.
+Arquivos móveis:
 
-O estado apresenta posição não acessada, região manual distinta da posição pessoal, busca, filtros, ausência de marcador, salvamento, origem específica e continuidade para o Detalhe.
+- `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
+- `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`;
+- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
+- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`.
 
-Arquivo:
+## Referência do Mapa para computador validada
 
-`docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`
-
-## Visualização em Lista validada
-
-A UXA-028 e a UXA-029 estabelecem a Lista como representação textual integral da mesma consulta territorial do Mapa.
-
-A reformulação apresenta:
-
-- `LISTA TERRITORIAL DO MAPA · MESMA CONSULTA`;
-- contexto `Agindo como: Pessoa`;
-- região, busca e filtros preservados;
-- total consolidado de filtros;
-- quantidade e atualização dos resultados;
-- ordenação explícita e explicável;
-- cartões comparáveis com dados ausentes declarados;
-- item selecionado preservado;
-- explicação funcional e relação comercial separadas;
-- salvamento, origem e Detalhe sem localização;
-- retorno ao Mapa sem perda de contexto;
-- funcionamento sem mapa carregado.
-
-Arquivo:
-
-`docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`
-
-## Estado sem resultados validado
-
-A UXA-030 e a UXA-031 estabelecem o estado para uma consulta territorial concluída sem correspondências.
-
-A reformulação apresenta:
-
-- região, busca e filtros preservados;
-- total zero limitado à consulta atual;
-- cobertura verificável e ação `Ver cobertura`;
-- `Consulta concluída · cobertura verificada · atualizada agora`;
-- ações separadas para ampliar região, alterar período, revisar filtros e editar busca;
-- revisão antes de aplicar qualquer mudança;
-- última alteração identificada;
-- `Desfazer` condicional;
-- seleção anterior fora da consulta atual;
-- distinção entre ausência legítima, falha de fonte, indisponibilidade e cobertura parcial;
-- continuidade entre Mapa e Lista;
-- localização opcional;
-- exploração geral sem alterar a consulta territorial;
-- ausência de preenchimento patrocinado ou personalizado artificial;
-- funcionamento textual sem mapa carregado.
-
-Arquivo:
-
-`docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`
-
-## Referência do Mapa para computador
-
-A UXA-032 cria dois wireframes de 1.440 por 1.024 pixels:
+A UXA-032 e a UXA-033 estabelecem dois wireframes de 1.440 por 1.024 pixels, funcionalmente válidos após reformulação:
 
 - Mapa com resultados;
 - Mapa sem resultados.
 
 A referência apresenta:
 
-- navegação recorrente com `Mapa` selecionado;
-- contexto `Agindo como: Pessoa`;
-- localização desativada e posição não acessada;
-- região manual distinta da posição pessoal;
-- painel de filtros;
-- Mapa e Lista da mesma consulta lado a lado;
-- quantidade, atualização, ordenação e seleção sincronizadas;
-- oportunidade selecionada nos dois painéis;
-- explicabilidade e relação comercial separadas;
-- continuidade para o Detalhe;
-- cobertura verificável no estado zero;
+- `Consulta territorial ativa` compartilhada;
+- filtros com valores consistentes;
+- `Visão dividida ativa`;
+- foco no Mapa ou na Lista sem perda de contexto;
+- retorno à visão dividida;
+- movimento do Mapa sem atualização silenciosa;
+- `Pesquisar nesta área` somente após movimento pendente;
+- seleção `Marcador 1` sincronizada;
+- cartões comparáveis com origem e explicação;
+- `Entender ordenação`;
+- relação comercial rotulada;
+- painel contextual recolhível;
+- recuperação do estado zero concentrada em `Consulta e filtros`;
+- seleção anterior explicável;
+- localização opcional;
 - Lista integral sem mapa carregado.
 
 Arquivos:
@@ -145,7 +109,7 @@ Arquivos:
 - `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
 - `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
 
-A referência ainda não foi funcionalmente validada e não conclui responsividade, tablet, design, protótipo, teste com usuários ou implementação.
+A validação não conclui responsividade, pontos de quebra, tablet, design, protótipo, teste com usuários, acessibilidade técnica ou implementação.
 
 ## Estado dos Resultados Empresariais
 
@@ -166,12 +130,12 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional da referência do Mapa para computador;
 - wireframe gráfico do início protegido;
 - referência móvel da Home;
 - validação da revisão da compreensão inicial;
 - validação da primeira Tela Hoje após a transição;
 - demais estados alternativos do Mapa;
+- referência específica para tablet, caso priorizada;
 - reaplicação dos quatro testes dos Resultados Empresariais.
 
 ## Backlog estratégico preservado
@@ -207,8 +171,9 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Mapa sem Resultados](docs/experience-architecture/uxa-030-opportunity-map-no-results-state.md)
 - [Validação sem Resultados](docs/experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md)
 - [Mapa para Computador](docs/experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
-- [Adendo Canônico UXA-032](docs/project/canonical-consolidation-matrix-uxa-032-addendum.md)
-- [Histórico 1.55.0](docs/project/changelog-1.55.0-uxa-032.md)
+- [Validação Desktop](docs/experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
+- [Adendo Canônico UXA-033](docs/project/canonical-consolidation-matrix-uxa-033-addendum.md)
+- [Histórico 1.56.0](docs/project/changelog-1.56.0-uxa-033.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)

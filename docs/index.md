@@ -9,7 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.33 — Referência do Mapa de Oportunidades para Computador Criada |
+| Marco | M7.34 — Referência do Mapa para Computador Funcionalmente Validada e Reformulada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
@@ -20,7 +20,8 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Estado sem localização | funcionalmente validado e reformulado |
 | Lista do Mapa | funcionalmente validada e reformulada |
 | Estado sem resultados | funcionalmente validado e reformulado |
-| Referência do Mapa para computador | criada; validação funcional pendente |
+| Referência do Mapa para computador | funcionalmente validada e reformulada |
+| Referência para tablet | não iniciada |
 | Demais estados do Mapa | governados; wireframes não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -37,26 +38,30 @@ Página Inicial pública
 
 O Mapa não entra entre a Home e a Tela Hoje.
 
-## Referência do Mapa para computador
+## Referência do Mapa para computador validada
 
-A UXA-032 materializa dois estados em 1.440 por 1.024 pixels:
+A UXA-032 e a UXA-033 estabelecem dois estados de 1.440 por 1.024 pixels, funcionalmente válidos após reformulação:
 
 - Mapa com resultados;
 - Mapa sem resultados.
 
 A referência apresenta:
 
-- `Mapa` selecionado na navegação recorrente;
-- contexto `Agindo como: Pessoa`;
-- localização desativada e posição não acessada;
-- região manual distinta da posição pessoal;
-- painel de filtros;
-- Mapa e Lista da mesma consulta lado a lado;
-- quantidade, atualização, ordenação e seleção sincronizadas;
-- oportunidade selecionada nos dois painéis;
-- explicabilidade e relação comercial separadas;
-- continuidade para o Detalhe;
-- cobertura verificável no estado zero;
+- `Consulta territorial ativa` compartilhada;
+- filtros semanticamente consistentes;
+- `Visão dividida ativa`;
+- foco no Mapa ou na Lista sem perda de contexto;
+- retorno à visão dividida;
+- movimento do Mapa sem atualização silenciosa;
+- `Pesquisar nesta área` condicionado ao movimento;
+- seleção `Marcador 1` sincronizada;
+- cartões comparáveis com origem e explicação;
+- `Entender ordenação`;
+- relação comercial rotulada;
+- painel contextual recolhível;
+- recuperação do estado zero concentrada em `Consulta e filtros`;
+- seleção anterior explicável;
+- localização opcional;
 - Lista integral sem mapa carregado.
 
 Arquivos:
@@ -64,7 +69,7 @@ Arquivos:
 - `assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
 - `assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
 
-A referência ainda não foi funcionalmente validada e não equivale a responsividade, tablet, design, protótipo, teste ou implementação.
+A validação não equivale a responsividade, pontos de quebra, tablet, design, protótipo, teste, acessibilidade técnica ou implementação.
 
 ## Acesso rápido
 
@@ -75,8 +80,8 @@ A referência ainda não foi funcionalmente validada e não equivale a responsiv
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico da Referência Desktop](project/canonical-consolidation-matrix-uxa-032-addendum.md)
-- [Histórico 1.55.0](project/changelog-1.55.0-uxa-032.md)
+- [Adendo Canônico da Validação Desktop](project/canonical-consolidation-matrix-uxa-033-addendum.md)
+- [Histórico 1.56.0](project/changelog-1.56.0-uxa-033.md)
 
 ### Arquiteturas e modelos
 
@@ -97,6 +102,7 @@ A referência ainda não foi funcionalmente validada e não equivale a responsiv
 - [Mapa sem Resultados](experience-architecture/uxa-030-opportunity-map-no-results-state.md)
 - [Validação sem Resultados](experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md)
 - [Mapa para Computador](experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
+- [Validação Desktop](experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
 
 ### Resultados Empresariais
 
@@ -107,7 +113,7 @@ A referência ainda não foi funcionalmente validada e não equivale a responsiv
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: validação funcional da referência do Mapa para computador, wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente: wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, primeira Tela Hoje após a transição, demais estados do Mapa, referência para tablet ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 

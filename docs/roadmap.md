@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.7.0
-title: Roadmap Arquitetural — Referência Desktop do Mapa Criada
+id: ROADMAP-12.8.0
+title: Roadmap Arquitetural — Referência Desktop do Mapa Validada
 status: active
-version: 12.7.0
+version: 12.8.0
 owner: Guivos
 last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.6.0
+  - ROADMAP-12.7.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -29,10 +29,11 @@ related:
   - UXA-030
   - UXA-031
   - UXA-032
-  - M7.33
+  - UXA-033
+  - M7.34
 ---
 
-# Roadmap Arquitetural — Referência Desktop do Mapa Criada
+# Roadmap Arquitetural — Referência Desktop do Mapa Validada
 
 ## 1. Autoridade
 
@@ -43,7 +44,7 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | referência do Mapa de Oportunidades para computador criada | M7.33; UXA-032 |
+| Marco | referência do Mapa para computador funcionalmente validada e reformulada | M7.34; UXA-032; UXA-033 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -54,7 +55,8 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
 | Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
 | Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
-| Referência do Mapa para computador | criada; validação funcional pendente | UXA-032 |
+| Referência do Mapa para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
+| Referência para tablet | não iniciada | — |
 | Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -67,24 +69,22 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 4. decisões humanas 1 a 18 registradas;
 5. remediação do repositório concluída;
 6. Arquitetura da Experiência integrada;
-7. Tela Hoje, Detalhe de Oportunidade e Cadastro pela Organização validados;
+7. Tela Hoje, Detalhe e Cadastro validados;
 8. experiências de Organizações e Coletivos estruturadas e validadas;
-9. relações entre Organizações e Coletivos detalhadas;
+9. relações institucionais e coletivas detalhadas;
 10. BUS-CAND-010 fundido em BUS-CAND-005;
 11. Home pública, início protegido e Tela Hoje separados;
 12. Home pública validada e reformulada;
-13. wireframe gráfico da Home para computador criado;
-14. início protegido da jornada validado e reformulado;
-15. posição do Mapa na navegação recorrente consolidada;
-16. wireframe gráfico móvel do Mapa criado;
+13. wireframe da Home para computador criado;
+14. início protegido validado e reformulado;
+15. posição recorrente do Mapa consolidada;
+16. wireframe móvel do Mapa criado;
 17. Mapa funcionalmente validado e reformulado;
-18. estado móvel de localização desativada criado;
-19. estado sem localização funcionalmente validado e reformulado;
-20. visualização móvel em Lista criada;
-21. visualização em Lista funcionalmente validada e reformulada;
-22. estado móvel sem resultados criado;
-23. estado sem resultados funcionalmente validado e reformulado;
-24. referência do Mapa para computador criada.
+18. estado sem localização criado, validado e reformulado;
+19. visualização em Lista criada, validada e reformulada;
+20. estado sem resultados criado, validado e reformulado;
+21. referência do Mapa para computador criada;
+22. referência do Mapa para computador funcionalmente validada e reformulada.
 
 ## 4. Sequência pessoal vigente
 
@@ -97,45 +97,43 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O Mapa não integra a sequência obrigatória de primeira entrada. Os estados sem localização, em Lista, sem resultados e para computador pertencem à mesma superfície recorrente.
+O Mapa não integra a sequência obrigatória de primeira entrada. Seus estados móveis e para computador pertencem à mesma superfície recorrente.
 
-## 5. Resultado da referência para computador
+## 5. Resultado da validação para computador
 
-A UXA-032 demonstra, em dois arquivos de 1.440 por 1.024 pixels:
+A UXA-032 e a UXA-033 estabelecem:
 
-- navegação recorrente com `Mapa` selecionado;
-- contexto `Agindo como: Pessoa`;
-- exploração geral sem personalização;
-- localização desativada e posição não acessada;
-- região manual distinta da posição pessoal;
-- pesquisa territorial preservada;
-- painel lateral de filtros;
-- Mapa como maior campo visual;
-- Lista territorial da mesma consulta ao lado do Mapa;
-- quantidade, atualização e ordenação sincronizadas;
-- oportunidade selecionada reconhecível nos dois painéis;
-- explicação funcional e relação comercial separadas;
-- continuidade para o Detalhe;
-- estado zero com cobertura verificável e recuperação explícita;
-- operação integral da Lista sem mapa carregado.
+- faixa compartilhada `Consulta territorial ativa`;
+- valores de filtros consistentes entre resumo e controles;
+- `Visão dividida ativa`;
+- `Focar no Mapa` e `Focar na Lista` sem perda de contexto;
+- retorno à visão dividida;
+- movimento do Mapa sem atualização silenciosa;
+- `Pesquisar nesta área` somente após movimento pendente;
+- seleção `Marcador 1` sincronizada;
+- cartões com tipo, origem, explicação e relação comercial;
+- `Entender ordenação` explícito;
+- painel contextual recolhível;
+- recuperação do estado zero concentrada em `Consulta e filtros`;
+- seleção anterior explicável;
+- Lista integral sem mapa carregado.
 
-A referência adapta disposição, não significado. Ela não cria um catálogo desktop independente.
+A referência adapta disposição, não significado, e não cria catálogo independente.
 
 ## 6. Proteções preservadas
 
-- Mapa e Lista utilizam a mesma consulta e versão de dados;
+- Mapa, Lista e filtros utilizam a mesma consulta;
 - localização permanece opcional;
 - região manual não equivale a posição atual;
-- mais espaço visual não autoriza mais coleta;
-- filtros não são removidos automaticamente;
-- região não é ampliada sem confirmação;
-- busca não é substituída silenciosamente;
+- foco não altera permissões;
+- mais espaço não autoriza mais coleta;
+- movimento não executa consulta automaticamente;
+- filtros não são removidos sem revisão;
 - seleção não altera relevância ou ordenação;
 - endereço protegido não é revelado;
 - relação comercial permanece separada da relevância funcional;
 - zero representa somente a consulta atual;
 - cobertura precisa ser verificável;
-- falha de fonte não é apresentada como ausência de oportunidades;
 - personalização não é iniciada sem gate;
 - publicidade não preenche artificialmente o estado.
 
@@ -161,18 +159,18 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 ### 8.1 Arquitetura da Experiência
 
-Após integração e nova autorização, poderá ocorrer um ato separado:
+Após integração e nova autorização, poderá ocorrer separadamente:
 
-1. validar funcionalmente a referência do Mapa para computador;
-2. criar o wireframe gráfico do início protegido;
-3. criar a referência móvel da Home;
-4. validar a revisão da compreensão inicial;
-5. validar a transição para a primeira Tela Hoje;
-6. criar outros estados alternativos do Mapa.
+1. criar o wireframe gráfico do início protegido;
+2. criar a referência móvel da Home;
+3. validar a revisão da compreensão inicial;
+4. validar a transição para a primeira Tela Hoje;
+5. criar outros estados alternativos do Mapa;
+6. criar referência específica para tablet, caso priorizada.
 
 ### 8.2 Arquitetura de Negócios
 
-Também permanece pendente, em ato independente:
+Permanece pendente, em ato independente:
 
 ```text
 reaplicação dos quatro testes
