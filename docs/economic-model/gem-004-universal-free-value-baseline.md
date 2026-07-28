@@ -1,11 +1,16 @@
 ---
 id: GEM-004-UNIVERSAL-FREE-VALUE-BASELINE-001
 title: Baseline de Valor Universal Gratuito
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-07-28
 parent: GEM-004
+related:
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-COMMERCIAL-BASELINE-001
+  - M7.39
 ---
 
 # Baseline de Valor Universal Gratuito
@@ -17,6 +22,8 @@ Definir o valor mínimo que deverá permanecer acessível sem pagamento para que
 ## 2. Regra central
 
 O gratuito não será uma demonstração vazia, uma espera artificial ou um mecanismo de frustração. Deverá permitir que a pessoa compreenda a proposta, participe, descubra valor, avance de forma básica e mantenha controle sobre dados, escolhas e saída.
+
+A limitação legítima de personalização, análise, volume ou automação não poderá eliminar acesso ao catálogo público nem ocultar informação essencial de oportunidade já acessível publicamente.
 
 ## 3. Componentes do baseline
 
@@ -48,7 +55,9 @@ O gratuito não será uma demonstração vazia, uma espera artificial ou um meca
 
 ### Descoberta de valor
 
-- descoberta de oportunidades elegíveis;
+- acesso ao catálogo público de oportunidades elegíveis;
+- acesso ao Explorar e ao Mapa;
+- duas correspondências personalizadas completas por semana na baseline candidata;
 - acesso a conteúdos e recursos públicos;
 - compreensão de ofertas e benefícios;
 - participação básica em experiências disponíveis;
@@ -88,7 +97,9 @@ Não poderão ser exclusivamente pagas:
 - informação sobre obrigações;
 - acesso aos próprios dados essenciais;
 - comunicação de risco;
-- suporte necessário para corrigir erro material da Guivos.
+- suporte necessário para corrigir erro material da Guivos;
+- acesso às informações públicas essenciais de uma oportunidade pública;
+- acesso geral ao Explorar e ao Mapa.
 
 ## 5. Limites legítimos do gratuito
 
@@ -99,6 +110,10 @@ A camada gratuita poderá possuir limites transparentes de:
 - histórico não essencial;
 - automação;
 - personalização avançada;
+- correspondências personalizadas completas;
+- análise de aderência;
+- comparação entre alternativas;
+- alertas;
 - colaboração;
 - integrações;
 - suporte especializado;
@@ -107,22 +122,43 @@ A camada gratuita poderá possuir limites transparentes de:
 
 O limite deverá estar ligado a custo, risco, capacidade ou diferenciação legítima. Não poderá ser criado apenas para gerar desconforto e conversão.
 
-## 6. Teste de utilidade real
+## 6. Distinção entre catálogo e correspondência
+
+### Catálogo público
+
+Conjunto de oportunidades públicas acessíveis por busca, Explorar, Mapa ou navegação geral.
+
+O catálogo público não poderá ser reduzido ou desfocado apenas porque a pessoa atingiu cota de personalização.
+
+### Correspondência personalizada
+
+Leitura que utiliza contexto autorizado para selecionar, explicar, comparar ou priorizar possibilidades para aquela pessoa.
+
+A camada gratuita poderá limitar quantidade e profundidade de correspondências personalizadas quando:
+
+- o catálogo público permanecer acessível;
+- a cota for informada;
+- a alternativa gratuita estiver visível;
+- nenhuma informação de segurança ou obrigação for ocultada;
+- a limitação não utilizar vulnerabilidade ou urgência artificial.
+
+## 7. Teste de utilidade real
 
 O gratuito deverá permitir responder positivamente:
 
 1. a pessoa consegue compreender o que é a Guivos?
 2. consegue participar sem pagar?
-3. consegue descobrir oportunidades ou recursos relevantes?
-4. consegue avançar minimamente?
-5. consegue controlar seus dados e permissões?
-6. consegue identificar influência comercial?
-7. consegue contestar, corrigir e sair?
-8. consegue retornar ao gratuito após plano pago?
+3. consegue acessar oportunidades e recursos públicos?
+4. consegue receber valor personalizado mínimo?
+5. consegue avançar minimamente?
+6. consegue controlar seus dados e permissões?
+7. consegue identificar influência comercial?
+8. consegue contestar, corrigir e sair?
+9. consegue retornar ao gratuito após plano pago?
 
 Falha material nesse teste bloqueia a diferenciação proposta.
 
-## 7. Alteração do baseline
+## 8. Alteração do baseline
 
 Toda retirada material deverá possuir:
 
@@ -135,22 +171,19 @@ Toda retirada material deverá possuir:
 - plano de transição;
 - possibilidade de reversão.
 
-## 8. Proibições
+## 9. Proibições
 
 - enfraquecimento progressivo sem governança;
 - atraso artificial;
-- ocultação de oportunidades para pressionar pagamento;
+- ocultação do catálogo público para pressionar pagamento;
+- confusão entre oportunidade pública e análise personalizada;
 - redução de segurança no gratuito;
 - uso de dados como contraprestação silenciosa;
 - perda de dados próprios no downgrade;
 - impedimento de retorno ao gratuito;
-- classificação do participante gratuito como inferior em valor humano.
+- classificação do participante gratuito como inferior em valor humano;
+- sugestão de que plano pago garante evolução ou resultado.
 
-## 9. Fora do escopo
+## 10. Estado
 
-- limites numéricos finais;
-- catálogo funcional definitivo;
-- experiência de interface;
-- implementação;
-- suporte operacional real;
-- testes com participantes.
+`active baseline — public discovery and essential rights preserved; personalized capacity may be transparently limited and remains subject to validation`.
