@@ -1,8 +1,8 @@
 ---
 id: UXA-036
 title: Wireframe de Baixa Fidelidade da Compreensão Inicial
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-011-A1
@@ -21,6 +21,7 @@ related:
   - UXA-002
   - UXA-006
   - UXA-010
+  - UXA-037
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
   - PAS-001-PP-VIEW-001
@@ -31,9 +32,9 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa a primeira referência gráfica móvel da compreensão inicial da jornada pessoal da Guivos.
+Este documento materializa a referência gráfica móvel da compreensão inicial da jornada pessoal da Guivos, reformulada e validada funcionalmente pela UXA-037.
 
-O conjunto demonstra como conteúdos previamente revisados e especificamente autorizados poderão ser utilizados para preparar uma compreensão inicial temporária, verificável e corrigível antes de qualquer decisão sobre persistência ou personalização.
+O conjunto demonstra como conteúdos previamente revisados e especificamente autorizados poderão ser utilizados para preparar uma compreensão temporária, verificável e corrigível antes de qualquer decisão sobre persistência ou personalização.
 
 A referência preserva a distinção entre:
 
@@ -61,7 +62,7 @@ Página Inicial pública
 → autorização específica para preparar compreensão inicial
 → processamento visível e interrompível
 → compreensão inicial apresentada
-→ revisão, correção, limitação ou rejeição
+→ revisão, correção, limitação, abertura ou rejeição
 → decisão separada sobre persistência
 → decisão separada sobre personalização
 → Tela Hoje, jornada sem personalização ou exploração geral
@@ -69,7 +70,7 @@ Página Inicial pública
 
 A compreensão inicial não poderá ser apresentada como concluída, persistida ou personalizada antes da revisão da pessoa.
 
-## 3. Artefatos visuais
+## 3. Artefatos visuais reformulados
 
 ### 3.1 Processamento visível
 
@@ -95,7 +96,13 @@ A compreensão inicial não poderá ser apresentada como concluída, persistida 
 
 `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`
 
-Dimensão de referência dos quatro arquivos:
+### 3.5 Base insuficiente
+
+![Base autorizada insuficiente](../assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg)
+
+`docs/assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`
+
+Dimensão de referência dos cinco arquivos:
 
 - canal: aplicativo móvel;
 - largura: 390 pixels;
@@ -106,7 +113,9 @@ Dimensão de referência dos quatro arquivos:
 
 ## 4. Pergunta funcional
 
-> **A pessoa consegue compreender o que está sendo processado, revisar uma hipótese sobre seu momento, corrigir ou rejeitar cada parte e decidir separadamente sobre persistência e personalização sem pressão para aceitar a leitura da Guivos?**
+> **A pessoa consegue compreender o que está sendo processado, interromper com efeito conhecido, revisar cada afirmação como hipótese e decidir separadamente sobre persistência e personalização sem escolhas implícitas ou pressão para aceitar a leitura da Guivos?**
+
+A UXA-037 considera o conjunto funcionalmente válido após reformulação.
 
 ## 5. Estado de processamento visível
 
@@ -114,29 +123,29 @@ O primeiro artefato demonstra:
 
 - finalidade atual: preparar uma compreensão inicial temporária e revisável;
 - conteúdos autorizados que estão sendo utilizados;
-- conteúdos não autorizados ou removidos que permanecem fora do processamento;
+- conteúdos não autorizados ou removidos fora do processamento;
 - operações em linguagem compreensível;
-- possibilidade de interromper;
-- possibilidade de voltar à revisão de conteúdo e autorizações;
-- possibilidade de excluir o resultado temporário;
+- estado textual de cada operação;
+- possibilidade de interromper e descartar o resultado parcial;
+- possibilidade de voltar à revisão, interrompendo o processamento;
+- possibilidade de explorar sem personalização, sem tarefa oculta em segundo plano;
 - ausência de persistência e personalização nesta etapa.
 
 A superfície utiliza:
 
-> **Preparando uma compreensão inicial**
+> **Processamento temporário em andamento.**
 
 > **Somente os itens revisados e autorizados abaixo estão sendo utilizados.**
 
-> **Nada será mantido como compreensão persistente ou usado para personalizar antes da sua revisão.**
+> **Interromper descarta a hipótese parcial. Os conteúdos de origem seguem somente conforme os controles que você já escolheu.**
 
 Ações:
 
-- `Interromper processamento`;
-- `Revisar conteúdos e autorizações`;
-- `Excluir resultado temporário`;
-- `Voltar a explorar sem personalização`.
+- `Interromper e descartar resultado parcial`;
+- `Interromper e revisar conteúdos e autorizações`;
+- `Interromper e explorar sem personalização`.
 
-Interromper deverá declarar o efeito sobre o resultado parcial. O wireframe ilustra descarte do resultado parcial, preservando o conteúdo original somente conforme os controles já escolhidos no início protegido.
+Não existe continuidade silenciosa do processamento após qualquer dessas ações.
 
 ## 6. Conteúdos e operações visíveis
 
@@ -175,44 +184,47 @@ A compreensão é organizada em três blocos distintos:
 
 A apresentação não utiliza o rótulo `recomendado para você` antes da confirmação suficiente.
 
-### 7.1 Momento Atual
+## 8. Afirmações individualizadas
 
-O bloco deverá mostrar:
+Cada afirmação material possui identidade própria e apresenta:
 
-- interpretação em linguagem simples;
-- natureza de cada informação;
+- identificador visível;
+- texto específico;
+- natureza específica;
 - origem;
 - data ou contexto;
 - finalidade;
-- confiança quando houver inferência;
-- lacunas e desconhecidos;
-- ação `Ver informações utilizadas`.
+- confiança somente quando houver inferência;
+- lacunas relacionadas;
+- ação de revisão.
 
-Exemplo ilustrativo:
+Uma frase não recebe simultaneamente rótulos de `confirmado` e `inferido` sem separar explicitamente os trechos.
 
-> **Você relatou interesse em uma transição profissional e dificuldade para apresentar sua experiência.**
+Exemplos ilustrativos:
 
-Naturezas ilustradas:
+- `A1 · Confirmado por você` — interesse declarado em transição profissional;
+- `A2 · Inferido pela Guivos · confiança moderada` — possível dificuldade para demonstrar experiência;
+- `D1 · Ainda desconhecido` — objetivo profissional específico.
 
-- `Confirmado por você`;
-- `Inferido pela Guivos · confiança moderada`;
-- `Ainda desconhecido`.
+Confiança não equivale a certeza e não poderá pressionar aceitação.
 
-### 7.2 Avanço reconhecível
+## 9. Momento Atual, avanço e Próximo Passo
+
+### 9.1 Momento Atual
+
+O bloco apresenta declarações, inferências e desconhecidos separadamente.
+
+### 9.2 Avanço reconhecível
 
 A primeira compreensão poderá declarar que ainda não existe evidência suficiente de mudança relevante.
 
-Ela não considera envio de relato, criação de conta ou uso da plataforma como avanço humano.
+Criar conta, enviar relato, concluir formulário ou utilizar a plataforma não constituem avanço humano por si só.
 
-Exemplo:
+### 9.3 Próximo Passo como possibilidade
 
-> **Ainda não há evidência suficiente para reconhecer uma mudança na jornada. Organizar sua experiência pode ser um ponto de partida, não um avanço já concluído.**
+Antes da confirmação suficiente, somente uma possibilidade geral poderá ser apresentada.
 
-### 7.3 Próximo Passo como possibilidade
-
-Antes da confirmação da compreensão, somente uma possibilidade geral poderá ser apresentada.
-
-Ela deverá responder:
+Ela deverá mostrar:
 
 - por que pode fazer sentido;
 - qual base foi utilizada;
@@ -220,146 +232,132 @@ Ela deverá responder:
 - quais alternativas existem;
 - como rejeitar a relação.
 
-Exemplo:
+## 10. Estado de revisão e correção
 
-> **Organizar uma apresentação profissional pode ser uma possibilidade porque você informou dificuldade para demonstrar sua experiência. Isso não garante uma oportunidade e outros caminhos continuam disponíveis.**
+O terceiro artefato permite responder por afirmação.
 
-## 8. Origem, natureza e confiança
+Todas as respostas começam desmarcadas.
 
-Toda afirmação material deverá utilizar um rótulo compreensível:
+Controles possíveis:
 
-| Rótulo | Significado |
-|---|---|
-| Confirmado por você | informação declarada ou confirmada pela pessoa |
-| Observado no ecossistema | ação ou experiência registrada e autorizada |
-| Fonte externa autorizada | informação de conexão explicitamente autorizada |
-| Inferido pela Guivos | interpretação corrigível, acompanhada de confiança e base |
-| Ainda desconhecido | informação indisponível ou não confirmada |
-| Contestado por você | informação cuja validade foi questionada |
-
-Confiança não equivale a certeza. Ela deverá ser acompanhada de explicação acessível e não poderá ser usada para pressionar aceitação.
-
-## 9. Estado de revisão e correção
-
-O terceiro artefato permite responder à compreensão por bloco e por afirmação.
-
-Controles principais:
-
-- `Faz sentido`;
-- `Faz sentido parcialmente`;
+- `Confirmar esta afirmação`;
+- `Confirmar parcialmente`;
 - `Não representa meu momento`;
-- `Esta informação está incorreta`;
-- `Meu momento mudou`;
-- `Não usar esta informação`;
+- `Está incorreta`;
+- `Manter em aberto`;
+- `Não usar esta interpretação`;
 - `Editar interpretação`;
-- `Remover interpretação`;
-- `Voltar aos conteúdos de origem`;
-- `Remover e preparar novamente`.
+- `Remover somente a interpretação`;
+- `Ver conteúdo de origem`.
 
-A pessoa poderá confirmar uma parte e rejeitar outra. Confirmação parcial não eleva inferências rejeitadas a fatos.
+A pessoa poderá confirmar uma parte, rejeitar outra e manter uma terceira em aberto.
 
-Cada alteração deverá mostrar:
+Afirmações abertas ou rejeitadas não poderão ser utilizadas como fatos confirmados.
 
-- qual afirmação será alterada;
-- qual informação de origem será mantida ou removida;
-- se o resultado temporário será recalculado;
-- quais decisões ainda não foram tomadas.
+## 11. Correção, retirada de autorização e exclusão
 
-## 10. Correção sem reescrever o relato original
-
-Corrigir uma interpretação não deverá modificar silenciosamente o conteúdo original.
+Corrigir uma interpretação não modifica silenciosamente o conteúdo original.
 
 A interface distingue:
 
-- `corrigir o que a Guivos compreendeu`;
-- `editar o conteúdo que você compartilhou`;
-- `retirar autorização de uso`;
-- `excluir conteúdo e derivados`.
+- corrigir somente o que a Guivos compreendeu;
+- editar o conteúdo compartilhado;
+- retirar autorização de uma finalidade específica;
+- excluir conteúdo de origem e derivados;
+- remover somente uma interpretação;
+- recalcular a hipótese sem o item afetado.
 
-A pessoa deverá poder preservar o conteúdo original e rejeitar somente a interpretação derivada.
+Antes de aplicar a alteração, a pessoa visualiza:
 
-## 11. Estado de decisão
+- afirmação ou conteúdo afetado;
+- finalidade afetada;
+- derivados afetados;
+- conteúdo que será preservado;
+- necessidade de recalcular a hipótese.
+
+## 12. Estado de decisão
 
 O quarto artefato apresenta decisões somente depois da revisão.
 
-### 11.1 Persistência
+### 12.1 Persistência
 
-A pergunta é separada:
-
-> **Você quer manter esta compreensão revisada para retomar sua jornada depois?**
-
-Opções:
+A pessoa escolhe uma única alternativa:
 
 - `Manter compreensão revisada`;
 - `Usar somente nesta sessão`;
 - `Excluir esta compreensão`.
 
-A escolha deverá explicar duração, finalidade, controles de revisão e exclusão.
+### 12.2 Personalização
 
-### 11.2 Personalização
+A pessoa escolhe independentemente uma única alternativa:
 
-A pergunta seguinte é independente:
-
-> **Você autoriza usar esta compreensão revisada para personalizar sua experiência?**
-
-Opções:
-
-- `Autorizar personalização desta finalidade`;
+- `Autorizar personalização para esta finalidade`;
 - `Continuar sem personalização`;
 - `Decidir depois`.
 
+Os controles são exclusivos e começam desmarcados.
+
+A ação `Confirmar escolhas e ir para a Tela Hoje` permanece indisponível até existir uma escolha válida em cada grupo.
+
+Se `Excluir esta compreensão` for escolhido, a personalização fica indisponível e a continuidade ocorre sem personalização.
+
+Se `Usar somente nesta sessão` for escolhido, eventual personalização vale somente para a sessão e finalidade apresentadas.
+
 Autorizar persistência não autoriza personalização. Autorizar personalização não autoriza publicidade baseada em informações sensíveis, compartilhamento externo ou novas finalidades.
 
-### 11.3 Continuidade
+### 12.3 Continuidade
 
 A pessoa poderá:
 
-- `Ir para a Tela Hoje` com a condição escolhida;
-- continuar em jornada sem personalização;
-- explorar o ecossistema de forma geral;
+- confirmar uma combinação válida e ir para a Tela Hoje;
+- usar somente nesta sessão e continuar sem personalização;
 - voltar à compreensão;
 - voltar ao início protegido para revisar conteúdos e autorizações;
 - excluir a compreensão e continuar explorando.
 
-## 12. Estado de base insuficiente
+Nenhuma saída escolhe silenciosamente persistência ou exclusão.
 
-Quando a base autorizada for insuficiente, a Guivos deverá declarar:
+## 13. Estado de base insuficiente
 
-> **Ainda não há base suficiente para compreender seu momento com segurança.**
+Quando a base autorizada for insuficiente, o quinto artefato declara:
 
-A pessoa poderá:
+> **Ainda não há base autorizada suficiente para preparar uma compreensão com segurança.**
 
-- revisar o que compartilhou;
-- acrescentar conteúdo de forma voluntária;
-- corrigir ou retirar informações;
-- continuar sem personalização;
-- explorar o ecossistema;
-- encerrar sem persistir compreensão.
+A superfície mostra:
 
-A ausência de base não deverá produzir uma hipótese artificial, um Próximo Passo pessoal ou pressão para compartilhar mais.
+- conteúdos considerados;
+- informações ainda desconhecidas;
+- ausência de hipótese pessoal;
+- ausência de Próximo Passo pessoal;
+- possibilidade de revisar o que já foi compartilhado;
+- compartilhamento adicional voluntário;
+- continuidade sem personalização;
+- exploração geral;
+- encerramento sem persistir compreensão.
 
-Este estado é governado pelo contrato textual neste incremento e não recebe um quinto wireframe específico.
+A ausência de base não produz hipótese artificial, Próximo Passo pessoal ou pressão para compartilhar mais.
 
-## 13. Transição para a Tela Hoje
+## 14. Transição para a Tela Hoje
 
 A Tela Hoje somente poderá utilizar a compreensão quando:
 
 - a hipótese tiver sido apresentada;
 - a pessoa tiver oportunidade real de revisão;
 - correções e rejeições tiverem sido aplicadas;
+- afirmações abertas permanecerem identificadas como não confirmadas;
 - persistência, quando necessária, tiver autorização própria;
 - personalização material tiver autorização própria;
 - a finalidade ativa estiver identificada.
 
 Sem personalização, a Tela Hoje poderá apresentar jornada geral, controles, histórico voluntário e exploração, sem chamar possibilidades de recomendações pessoais.
 
-## 14. Privacidade e autonomia
+## 15. Privacidade e autonomia
 
 A referência preserva:
 
 - processamento limitado aos itens autorizados;
 - inventário de conteúdos utilizados;
-- interrupção e descarte de resultado temporário;
+- interrupção e descarte de resultado parcial;
 - revisão anterior à persistência;
 - personalização opt-in e separada;
 - finalidade específica;
@@ -370,11 +368,11 @@ A referência preserva:
 - retorno ao início protegido;
 - ausência de culpa, urgência ou recompensa por aceitar a compreensão.
 
-## 15. Acessibilidade e resiliência
+## 16. Acessibilidade e resiliência
 
 A futura implementação deverá:
 
-- anunciar início, estado e conclusão do processamento;
+- anunciar início, estado, interrupção e conclusão do processamento;
 - permitir interrupção por teclado e tecnologia assistiva;
 - não depender de animação ou percentual;
 - apresentar natureza e confiança também em texto;
@@ -382,27 +380,32 @@ A futura implementação deverá:
 - preservar revisão em baixa conectividade quando tecnicamente possível;
 - evitar perda silenciosa de correções;
 - confirmar exclusões destrutivas;
-- distinguir visualmente e semanticamente persistência de personalização.
+- distinguir visualmente e semanticamente persistência de personalização;
+- anunciar indisponibilidade da continuidade enquanto escolhas estiverem incompletas.
 
 Este incremento não conclui conformidade técnica de acessibilidade.
 
-## 16. Critérios de validação posterior
+## 17. Critérios confirmados pela UXA-037
 
-A validação funcional especializada deverá verificar:
+O conjunto reformulado demonstra que:
 
-- se a pessoa entende que o processamento utiliza somente itens autorizados;
-- se consegue interromper e conhecer o efeito;
-- se a compreensão é percebida como hipótese;
-- se Momento Atual, avanço e Próximo Passo não são confundidos;
-- se origem, natureza, confiança e desconhecidos são compreensíveis;
-- se a pessoa consegue rejeitar uma interpretação sem apagar o relato original;
-- se correção, retirada de autorização e exclusão são distintas;
-- se persistência e personalização são decisões independentes;
-- se continuar sem personalização é uma alternativa real;
-- se a transição para a Tela Hoje preserva a condição escolhida;
-- se o estado de base insuficiente evita pressão para compartilhar mais.
+- somente itens autorizados entram no processamento;
+- interrupção possui efeito conhecido;
+- não existe processamento oculto em segundo plano;
+- a compreensão é hipótese corrigível;
+- afirmações confirmadas e inferidas são distintas;
+- Momento Atual, avanço e Próximo Passo não se confundem;
+- revisão não possui resposta pré-selecionada;
+- afirmações podem permanecer em aberto;
+- relato original e interpretação permanecem separados;
+- correção, retirada de autorização e exclusão têm escopos distintos;
+- persistência e personalização são escolhas únicas e independentes;
+- combinações incompatíveis são bloqueadas;
+- continuidade sem personalização é real;
+- base insuficiente não gera pressão para compartilhar mais;
+- a Tela Hoje preserva a condição escolhida.
 
-## 17. Limites
+## 18. Limites
 
 Este incremento não:
 
@@ -420,16 +423,16 @@ Este incremento não:
 - conclui acessibilidade técnica;
 - inicia Engenharia de Produto.
 
-## 18. Próximos atos governados
+## 19. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o wireframe móvel da compreensão inicial;
-2. criar a referência móvel da Página Inicial pública;
-3. validar a transição da compreensão para a primeira Tela Hoje;
-4. criar estados especializados de processamento, pausa, falha e retomada;
-5. criar referência do início protegido e da compreensão para computador;
-6. criar estados especializados de texto, voz e arquivos;
+1. criar a referência móvel da Página Inicial pública;
+2. validar a transição da compreensão para a primeira Tela Hoje;
+3. criar estados especializados de processamento, pausa, falha e retomada;
+4. criar referência do início protegido e da compreensão para computador;
+5. criar estados especializados de texto, voz e arquivos;
+6. criar referência para tablet, caso priorizada;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

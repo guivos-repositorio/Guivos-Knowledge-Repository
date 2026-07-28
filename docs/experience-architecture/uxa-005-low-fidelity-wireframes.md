@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-000
@@ -16,7 +16,6 @@ related:
   - UXA-007
   - UXA-008
   - UXA-009
-  - UXA-011-A1
   - UXA-020
   - UXA-021
   - UXA-022
@@ -34,6 +33,7 @@ related:
   - UXA-034
   - UXA-035
   - UXA-036
+  - UXA-037
   - PAS-001
 normative: false
 ---
@@ -54,10 +54,10 @@ Página Inicial pública
 → acesso, quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ processamento visível e interrompível
+→ processamento temporário visível e interrompível
 → compreensão inicial apresentada como hipótese
-→ revisão da compreensão
-→ decisões separadas sobre persistência e personalização
+→ revisão por afirmação
+→ decisões sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
@@ -71,11 +71,12 @@ Página Inicial pública
 5. wireframe móvel do início protegido — UXA-034;
 6. validação do wireframe móvel do início protegido — UXA-035;
 7. wireframe móvel da compreensão inicial — UXA-036;
-8. wireframe da Tela Hoje — UXA-006;
-9. wireframe móvel do Mapa — UXA-024;
-10. validações e estados do Mapa — UXA-025 a UXA-033;
-11. wireframe do Detalhe — UXA-007;
-12. wireframe do Cadastro pela Organização — UXA-008.
+8. validação do wireframe móvel da compreensão inicial — UXA-037;
+9. wireframe da Tela Hoje — UXA-006;
+10. wireframe móvel do Mapa — UXA-024;
+11. validações e estados do Mapa — UXA-025 a UXA-033;
+12. wireframe do Detalhe — UXA-007;
+13. wireframe do Cadastro pela Organização — UXA-008.
 
 ## 4. Natureza dos artefatos
 
@@ -92,16 +93,17 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 
 ## 5. O que deverá ser validado
 
-### 5.1 Início protegido
+### 5.1 Primeira entrada e início protegido
 
 - A pessoa entende que saiu da Home pública?
 - Nenhum relato pessoal é solicitado antes da explicação?
 - Dados de acesso e conteúdo da jornada são distinguíveis?
-- Os estados são compreendidos como possíveis, não formulário obrigatório?
 - O acesso aparece somente quando necessário?
 - Criar conta permanece separado de autorizar processamento?
+- Explorar sem personalização permanece saída legítima?
 - Texto, voz, arquivo e perguntas são alternativas equivalentes?
 - Compartilhamento mínimo é legítimo?
+- Voz e arquivo possuem explicação anterior?
 - Pausar, salvar, sair e excluir possuem efeitos distintos?
 - A revisão antecede autorização específica?
 - Autorizações começam desmarcadas?
@@ -109,22 +111,20 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 
 ### 5.2 Compreensão inicial
 
-- O processamento utiliza somente itens autorizados?
-- A pessoa reconhece o que está dentro e fora do processamento?
-- A finalidade é compreensível?
-- Interromper possui consequência clara?
+- Somente conteúdos autorizados entram no processamento?
+- Interromper possui efeito explícito e impede tarefa oculta?
+- Afirmações confirmadas, inferidas e desconhecidas são separadas?
+- Momento Atual, avanço e Próximo Passo permanecem distintos?
 - A compreensão é percebida como hipótese, não diagnóstico?
-- Momento Atual, avanço e Próximo Passo são distinguíveis?
-- Origem, natureza, confiança e lacunas são compreensíveis?
-- Ausência de evidência é declarada sem produzir avanço artificial?
-- A pessoa consegue confirmar uma afirmação e rejeitar outra?
-- Corrigir interpretação não altera silenciosamente o relato original?
-- Retirar autorização, remover interpretação e excluir conteúdo são distintos?
-- Persistência e personalização são decisões independentes?
-- Nenhuma opção começa marcada?
-- Continuar sem personalização permanece uma alternativa real?
-- A transição para a Tela Hoje preserva a condição escolhida?
-- Base insuficiente evita pressão para compartilhar mais?
+- Confiança é compreendida como incerteza, não certeza?
+- Nenhuma resposta de revisão começa selecionada?
+- Uma afirmação pode permanecer em aberto?
+- Corrigir interpretação preserva o relato original?
+- Corrigir, retirar autorização e excluir possuem efeitos distintos?
+- Persistência e personalização são escolhas únicas e independentes?
+- Combinações incompatíveis são bloqueadas?
+- Continuar sem personalização possui consequência conhecida?
+- Base insuficiente evita hipótese artificial e pressão?
 
 ### 5.3 Mapa e superfícies recorrentes
 
@@ -135,13 +135,19 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Cobertura, falha e indisponibilidade são distinguíveis?
 - Em computador, filtros, Mapa, Lista e seleção parecem partes da mesma consulta?
 
-### 5.4 Autonomia e continuidade
+### 5.4 Autonomia
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
-- Compartilhar pouco não é tratado como insuficiência pessoal?
+- Compartilhamento mínimo não é tratado como insuficiência pessoal?
+- A pessoa pode corrigir, limitar, remover e excluir?
 - Não autorizar possui consequência clara e não punitiva?
-- O início protegido conduz à compreensão revisável, não diretamente à persistência?
-- A compreensão revisada conduz à Tela Hoje ou à exploração geral?
+- Recusar localização preserva o uso do Mapa?
+
+### 5.5 Continuidade
+
+- A Home conduz conscientemente ao início protegido?
+- O início protegido conduz à compreensão inicial revisável?
+- A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
 - Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
 
 ## 6. Convenções de baixa fidelidade
@@ -149,17 +155,18 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 | Elemento | Convenção |
 |---|---|
 | retângulo com borda | área funcional ou cartão |
-| preenchimento escuro | ação principal ou estado selecionado |
-| preenchimento cinza | resumo ou estado informativo |
+| preenchimento escuro | ação principal ou estado selecionado conscientemente |
+| preenchimento cinza | resumo, informação ou ação indisponível |
 | texto sublinhado | ação secundária ou explicação |
 | estado textual nomeado | posição funcional sem obrigatoriedade linear |
-| caixa de seleção vazia | autorização ou escolha ainda não concedida |
-| declaração textual | estado de relato, processamento, hipótese ou decisão |
-| ação com consequência | interrupção, pausa, saída, exclusão ou recusa explícita |
-| rótulo de natureza | confirmado, inferido, desconhecido ou contestado |
-| confiança em texto | intensidade de inferência sem equivaler a certeza |
-| ausência de marcador | posição da pessoa não utilizada |
+| círculo vazio | escolha única ainda não realizada |
+| caixa vazia | autorização múltipla ainda não concedida |
+| borda tracejada | ação indisponível até condição explícita |
+| declaração textual | estado de relato, acesso, rascunho ou processamento |
+| ação com consequência | pausa, saída, salvamento, exclusão ou recusa explícita |
+| identificador de afirmação | vínculo entre hipótese, origem e revisão |
 | faixa compartilhada | painéis pertencem à mesma consulta |
+| painel recolhível | contexto da seleção sem eliminar comparação |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -169,7 +176,7 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 |---|---|---|
 | Home pública | web para computador | 1.440 × 2.200 |
 | Início protegido — quatro estados | aplicativo móvel | 390 × 844 cada |
-| Compreensão inicial — quatro estados | aplicativo móvel | 390 × 844 cada |
+| Compreensão inicial — cinco estados | aplicativo móvel | 390 × 844 cada |
 | Tela Hoje | aplicativo móvel | 390 × 844 |
 | Mapa e estados móveis | aplicativo móvel | 390 × 844 |
 | Mapa com e sem resultados | web para computador | 1.440 × 1.024 |
@@ -181,19 +188,15 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 ```text
 Página Inicial pública
 → decisão voluntária
-→ explicação do ambiente protegido
-→ acesso, somente quando necessário
-→ modalidade e rascunho mínimo
-→ revisão e autorização específica
-→ processamento visível
-→ hipótese inicial
-→ revisão da hipótese
-→ decisões sobre persistência e personalização
+→ início protegido validado
+→ processamento temporário
+→ hipótese inicial revisável
+→ correções e decisões independentes
 → Tela Hoje ou exploração geral
 → Mapa e demais superfícies recorrentes
 ```
 
-A sequência protegida é pausável e retomável. A compreensão poderá ser rejeitada ou excluída sem impedir exploração geral.
+A sequência protegida é pausável e retomável. Acesso, modalidades e conteúdos poderão ser omitidos quando não aplicáveis.
 
 ## 9. Artefatos especializados
 
@@ -205,33 +208,45 @@ A sequência protegida é pausável e retomável. A compreensão poderá ser rej
 | Contrato do Início Protegido | UXA-023 | início protegido | validação funcional |
 | Wireframe do Início Protegido | UXA-034 | início protegido | quatro arquivos vetoriais reformulados |
 | Validação do Wireframe Protegido | UXA-035 | início protegido | validação funcional especializada |
-| Compreensão Inicial | UXA-036 | compreensão | quatro arquivos vetoriais |
+| Wireframe da Compreensão Inicial | UXA-036 | compreensão inicial | cinco arquivos vetoriais reformulados |
+| Validação da Compreensão Inicial | UXA-037 | compreensão inicial | validação funcional especializada |
 | Tela Hoje | UXA-006 | recorrente | arquivo vetorial |
 | Mapa e estados | UXA-024 a UXA-032 | Mapa | arquivos vetoriais móveis e desktop |
 | Validações do Mapa | UXA-025, UXA-027, UXA-029, UXA-031 e UXA-033 | Mapa | validações funcionais |
 | Detalhe | UXA-007 | detalhe | arquivo vetorial |
 | Cadastro | UXA-008 | cadastro | arquivo vetorial |
 
-## 10. Resultados materializados
+## 10. Resultado da compreensão inicial
 
-O início protegido é funcionalmente válido após reformulação pelas UXA-034 e UXA-035.
+A UXA-036 reformulada e a UXA-037 demonstram:
 
-A compreensão inicial foi materializada pela UXA-036 com processamento visível, hipótese corrigível, revisão por afirmação e decisões separadas sobre persistência e personalização. Sua validação especializada permanece pendente.
+- processamento sem tarefa oculta;
+- afirmações individualizadas;
+- revisão sem resposta padrão;
+- manutenção em aberto sem promoção a fato;
+- relato original separado da interpretação;
+- escopos distintos de correção, autorização e exclusão;
+- persistência e personalização independentes;
+- combinações incompatíveis bloqueadas;
+- base insuficiente sem pressão;
+- continuidade sem personalização.
+
+O conjunto é funcionalmente válido após reformulação.
 
 ## 11. Limites
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, gravação, transcrição, upload, IA, inferências sensíveis, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade ou Engenharia de Produto.
+Este programa não define marca, tecnologia, autenticação, armazenamento, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade ou Engenharia de Produto.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente o wireframe móvel da compreensão inicial;
-2. criar a referência móvel da Home;
-3. detalhar a primeira Tela Hoje após a transição;
-4. criar estados de processamento, pausa, falha e retomada;
-5. criar referência do início protegido e da compreensão para computador;
-6. criar estados especializados de texto, voz e arquivos;
+1. criar a referência móvel da Home;
+2. validar a transição para a primeira Tela Hoje;
+3. criar estados especializados de processamento, pausa, falha e retomada;
+4. criar referência do início protegido e da compreensão para computador;
+5. criar estados especializados de texto, voz e arquivos;
+6. criar referência para tablet, caso priorizada;
 7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.

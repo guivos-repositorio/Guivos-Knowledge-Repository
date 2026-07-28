@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.9.0
+version: 5.10.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.11.0
+  - ROADMAP-12.12.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -31,6 +31,7 @@ related:
   - UXA-034
   - UXA-035
   - UXA-036
+  - UXA-037
   - M7.20
   - M7.21
   - M7.22
@@ -49,6 +50,7 @@ related:
   - M7.35
   - M7.36
   - M7.37
+  - M7.38
 normative: false
 ---
 
@@ -72,46 +74,46 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.21–M7.24 | Concluído | Home pública e início protegido separados e validados |
 | M7.25–M7.34 | Concluído | Mapa móvel, estados alternativos e referência desktop criados e validados |
 | M7.35–M7.36 | Concluído | início protegido móvel criado, validado e reformulado |
-| M7.37 | Concluído neste incremento | wireframe móvel da compreensão inicial criado |
+| M7.37 | Concluído | wireframe móvel da compreensão inicial criado |
+| M7.38 | Concluído neste incremento | wireframe móvel da compreensão inicial funcionalmente validado e reformulado |
 
 ## 3. Marco vigente
 
-### Wireframe Móvel da Compreensão Inicial Criado — M7.37
+### Wireframe Móvel da Compreensão Inicial Funcionalmente Validado e Reformulado — M7.38
 
 Critérios atendidos:
 
-- referência registrada em UXA-036;
-- quatro arquivos vetoriais criados em 390 por 844 pixels;
-- processamento visível e interrompível materializado;
-- itens autorizados e excluídos reconhecíveis;
-- finalidade e operações descritas em linguagem compreensível;
-- compreensão apresentada como hipótese, sem diagnóstico ou certeza;
-- Momento Atual, avanço e possibilidade de Próximo Passo separados;
-- origem, natureza, confiança, lacunas e desconhecidos visíveis;
-- ausência de evidência de avanço declarada quando aplicável;
-- revisão, correção, limitação, contestação e rejeição por afirmação;
-- relato original separado da interpretação derivada;
-- retirada de autorização e exclusão diferenciadas;
-- persistência e personalização materializadas como decisões independentes;
-- nenhuma opção marcada por padrão;
+- validação registrada em UXA-037;
+- UXA-036 elevada para 0.2.0 e estado ativo;
+- quatro arquivos vetoriais reformulados;
+- quinto estado de base insuficiente criado;
+- interrupção com descarte explícito e sem tarefa oculta;
+- afirmações confirmadas, inferidas e desconhecidas separadas;
+- revisão sem resposta pré-selecionada;
+- afirmações abertas preservadas como não confirmadas;
+- relato original separado da interpretação;
+- escopos distintos de correção, retirada de autorização e exclusão;
+- persistência e personalização como escolhas exclusivas e independentes;
+- combinações incompletas ou incompatíveis bloqueadas;
 - continuidade sem personalização preservada;
-- retorno ao início protegido preservado;
-- transição consciente para a Tela Hoje materializada;
-- base insuficiente governada sem hipótese artificial;
-- validação funcional especializada preservada como ato posterior;
-- IA, política jurídica, segurança, armazenamento, protótipo, testes e desenvolvimento não iniciados;
+- base insuficiente sem hipótese artificial ou pressão;
+- IA, segurança, armazenamento, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Wireframe Móvel da Compreensão Inicial Criado — M7.37
+
+A UXA-036 permanece como materialização original, reformulada pela UXA-037.
+
 ### Início Protegido Móvel Validado — M7.36
 
-A UXA-034 e a UXA-035 permanecem como contrato gráfico validado do início protegido.
+A UXA-034 e a UXA-035 permanecem como referência funcional do início protegido móvel.
 
 ### Referência do Mapa para Computador Validada — M7.34
 
-A UXA-032 e a UXA-033 permanecem como referência funcionalmente validada para tela ampla.
+A UXA-032 e a UXA-033 permanecem como referência funcionalmente validada e reformulada para tela ampla.
 
 ### Início Protegido Validado — M7.24
 
@@ -132,7 +134,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; compreensão inicial móvel materializada; validação pendente |
+| Arquitetura da Experiência | ativa; compreensão inicial móvel validada e reformulada |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -144,13 +146,12 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. validar funcionalmente o wireframe móvel da compreensão inicial;
-2. criar a referência móvel da Home;
-3. validar a transição para a primeira Tela Hoje;
-4. criar estados de processamento, pausa, falha e retomada;
-5. criar referência do início protegido e da compreensão para computador;
-6. criar estados especializados de texto, voz e arquivos;
-7. criar referência para tablet, caso priorizada.
+1. criar a referência móvel da Home;
+2. validar a transição para a primeira Tela Hoje;
+3. criar estados especializados de processamento, pausa, falha e retomada;
+4. criar a referência do início protegido e da compreensão para computador;
+5. criar estados especializados de texto, voz e arquivos;
+6. criar referência para tablet, caso priorizada.
 
 ### Arquitetura de Negócios
 
@@ -164,4 +165,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe não equivale a validação funcional, design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.
+Wireframe não equivale a design ou implementação. Validação funcional não equivale a teste de usabilidade. Fusão de candidato não equivale a aprovação. Cada transição exige evidência registrada e autorização própria.

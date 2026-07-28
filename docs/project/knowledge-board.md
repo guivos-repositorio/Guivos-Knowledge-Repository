@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.11.0
+version: 12.12.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.11.0
+  - ROADMAP-12.12.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -32,7 +32,8 @@ related:
   - UXA-034
   - UXA-035
   - UXA-036
-  - M7.37
+  - UXA-037
+  - M7.38
 normative: false
 ---
 
@@ -47,18 +48,18 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframe móvel da compreensão inicial criado | M7.37; UXA-036 |
+| Marco | compreensão inicial móvel funcionalmente validada e reformulada | M7.38; UXA-036; UXA-037 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Home pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Início protegido móvel | funcionalmente validado e reformulado | UXA-023; UXA-034; UXA-035 |
-| Compreensão inicial móvel | quatro estados criados; validação funcional pendente | UXA-011-A1; UXA-036 |
+| Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados | UXA-011-A1; UXA-036; UXA-037 |
 | Referência móvel da Home | não iniciada | — |
-| Referência do início protegido e compreensão para computador | não iniciada | — |
-| Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
+| Referência desktop do início protegido e compreensão | não iniciada | — |
+| Tela Hoje | entrada recorrente após condição explicitamente escolhida | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
-| Persistência e personalização | decisões separadas posteriores à revisão | UXA-011-A1; UXA-035; UXA-036 |
+| Persistência e personalização | governadas; implementação não iniciada | UXA-011-A1; UXA-036; UXA-037 |
 | Protótipo, design e testes | não iniciados | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Engenharia de Produto | pausada | W0-01 |
@@ -76,8 +77,8 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - experiências de Organizações e Coletivos estabelecidas;
 - Home pública validada e materializada;
 - início protegido móvel criado, validado e reformulado;
-- Mapa principal, estados móveis e referência desktop validados e reformulados;
-- compreensão inicial móvel materializada em quatro estados.
+- compreensão inicial móvel criada, validada e reformulada;
+- Mapa principal, estados móveis e referência desktop validados e reformulados.
 
 ### Em validação
 
@@ -89,12 +90,11 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- validação funcional do wireframe móvel da compreensão inicial;
 - referência móvel da Home;
 - validação da transição para a primeira Tela Hoje;
 - estados de processamento, pausa, falha e retomada;
-- estados especializados de texto, voz e arquivos;
 - referência do início protegido e da compreensão para computador;
+- estados especializados de texto, voz e arquivos;
 - referência para tablet, caso priorizada.
 
 #### Arquitetura de Negócios
@@ -111,6 +111,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - protótipo navegável e design visual;
 - testes de usabilidade;
 - autenticação, armazenamento, gravação, transcrição, upload e processamento real;
+- persistência e personalização implementadas;
 - provas de conceito, integrações e produção.
 
 ## 4. Sequência pessoal vigente
@@ -121,54 +122,50 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ processamento visível e interrompível
-→ compreensão inicial apresentada como hipótese
-→ revisão, correção, limitação ou rejeição
-→ decisão separada sobre persistência
-→ decisão separada sobre personalização
+→ processamento temporário visível e interrompível
+→ hipótese inicial
+→ revisão por afirmação
+→ decisões independentes sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Compreensão inicial móvel
+## 5. Compreensão inicial móvel validada
 
-A UXA-036 demonstra:
+A UXA-036 reformulada e a UXA-037 estabelecem:
 
-- processamento limitado aos conteúdos autorizados;
-- inventário de itens utilizados e excluídos;
-- interrupção e retorno às autorizações;
-- hipótese sem diagnóstico ou certeza;
-- Momento Atual, avanço e possibilidade de Próximo Passo separados;
-- origem, natureza, confiança, lacunas e desconhecidos;
-- ausência de avanço quando não houver evidência;
-- correção e rejeição por afirmação;
+- processamento limitado a itens autorizados;
+- interrupção com descarte e sem tarefa oculta;
+- afirmações confirmadas, inferidas e desconhecidas separadas;
+- confiança distinta de certeza;
+- Momento Atual, avanço e Próximo Passo separados;
+- revisão sem resposta padrão;
+- afirmações abertas sem promoção a fato;
 - relato original separado da interpretação;
-- persistência e personalização como decisões independentes;
-- continuidade sem personalização;
-- transição consciente para a Tela Hoje;
-- base insuficiente sem hipótese artificial.
+- correção, retirada de autorização e exclusão com escopos próprios;
+- persistência e personalização como escolhas únicas e independentes;
+- combinações incompatíveis bloqueadas;
+- base insuficiente sem hipótese ou pressão;
+- continuidade sem personalização.
 
-A referência ainda não foi funcionalmente validada.
+## 6. Mapa e estados validados
 
-## 6. Início protegido e Mapa
-
-A UXA-034 e a UXA-035 preservam relato separado de acesso, modalidades equivalentes, compartilhamento mínimo, revisão e recusa sem processamento.
-
-A UXA-024 a UXA-033 preservam Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador com consulta compartilhada, explicabilidade, privacidade, seleção e operação resiliente.
+A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador com consulta compartilhada, explicabilidade, privacidade, seleção e operação resiliente.
 
 ## 7. Proteções preservadas
 
 - a Home não coleta relato pessoal;
 - iniciar a jornada é voluntário;
+- nenhum relato antecede a explicação;
+- dados de acesso são tratados separadamente;
 - autenticação não autoriza processamento;
-- processamento utiliza somente conteúdos autorizados;
+- interromper não mantém tarefa oculta;
 - compreensão é hipótese corrigível;
-- confiança não equivale a certeza;
-- engajamento não equivale a evolução;
-- relato original e interpretação são distintos;
-- persistência não autoriza personalização;
-- personalização não cria novas finalidades;
+- afirmação aberta não equivale a fato;
+- relato e interpretação permanecem separados;
+- persistência e personalização exigem decisões próprias;
 - exploração sem personalização permanece disponível;
+- informações de terceiros não são exigidas;
 - localização é opcional;
 - publicidade não aumenta relevância pessoal;
 - wireframes e validações não equivalem a design ou implementação.
@@ -184,4 +181,4 @@ A UXA-024 a UXA-033 preservam Mapa principal, uso sem localização, Lista terri
 
 ## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação funcional da compreensão inicial móvel, referência móvel da Home, primeira Tela Hoje, estados especializados do início protegido, referência para computador ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre referência móvel da Home, transição para a primeira Tela Hoje, estados especializados do início protegido e da compreensão, referência para computador ou retomada independente dos testes dos Resultados Empresariais.

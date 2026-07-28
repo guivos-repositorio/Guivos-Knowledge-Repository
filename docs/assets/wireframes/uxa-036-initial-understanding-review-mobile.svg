@@ -1,49 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Revisão, correção e limitação da compreensão inicial</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com controles para confirmar parcialmente, rejeitar, corrigir, limitar uso, remover interpretação e voltar aos conteúdos de origem sem alterar silenciosamente o relato original.</desc>
+  <title id="title">Revisão sem resposta padrão da compreensão inicial</title>
+  <desc id="desc">Wireframe móvel reformulado que permite confirmar, corrigir, rejeitar ou manter cada afirmação em aberto, preservando o relato original e mostrando o escopo das alterações.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
-  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar à hipótese</text>
+  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Voltar à hipótese</text>
   <line x1="16" y1="50" x2="374" y2="50" stroke="#cccccc"/>
 
-  <text x="20" y="80" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · REVISÃO</text>
-  <text x="20" y="112" font-family="Arial, sans-serif" font-size="20" font-weight="700">Revise cada parte</text>
-  <text x="20" y="136" font-family="Arial, sans-serif" font-size="10">Você pode confirmar uma parte e rejeitar outra.</text>
+  <text x="20" y="80" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · REVISÃO POR AFIRMAÇÃO</text>
+  <text x="20" y="112" font-family="Arial, sans-serif" font-size="19" font-weight="700">Revise sem resposta pré-selecionada</text>
+  <text x="20" y="136" font-family="Arial, sans-serif" font-size="9">Você pode confirmar uma parte, rejeitar outra ou manter em aberto.</text>
 
-  <rect x="20" y="160" width="350" height="174" rx="10" fill="#f7f7f7" stroke="#777777"/>
-  <text x="36" y="186" font-family="Arial, sans-serif" font-size="11" font-weight="700">Afirmação 1 · Momento Atual</text>
-  <text x="36" y="212" font-family="Arial, sans-serif" font-size="9">“Você está considerando uma transição profissional.”</text>
-  <text x="36" y="234" font-family="Arial, sans-serif" font-size="8">Base: texto confirmado por você</text>
-  <rect x="36" y="252" width="92" height="28" rx="7" fill="#222222"/>
-  <text x="82" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff">Faz sentido</text>
-  <rect x="136" y="252" width="126" height="28" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="199" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Faz sentido parcialmente</text>
-  <text x="36" y="306" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Editar interpretação</text>
-  <text x="212" y="306" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Não representa meu momento</text>
+  <rect x="20" y="158" width="350" height="190" rx="10" fill="#f7f7f7" stroke="#777777"/>
+  <text x="36" y="182" font-family="Arial, sans-serif" font-size="11" font-weight="700">A1 · Confirmado por você</text>
+  <text x="36" y="204" font-family="Arial, sans-serif" font-size="9">“Você declarou interesse em uma transição profissional.”</text>
+  <text x="36" y="224" font-family="Arial, sans-serif" font-size="8">Origem: T1 · O relato original permanece separado.</text>
+  <rect x="36" y="242" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="60" y="254" font-family="Arial, sans-serif" font-size="8">Confirmar esta afirmação</text>
+  <rect x="196" y="242" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="220" y="254" font-family="Arial, sans-serif" font-size="8">Confirmar parcialmente</text>
+  <rect x="36" y="270" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="60" y="282" font-family="Arial, sans-serif" font-size="8">Não representa meu momento</text>
+  <rect x="196" y="270" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="220" y="282" font-family="Arial, sans-serif" font-size="8">Manter em aberto</text>
+  <text x="36" y="314" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Editar somente a interpretação</text>
+  <text x="238" y="314" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver origem T1</text>
+  <text x="36" y="338" font-family="Arial, sans-serif" font-size="8">Nenhuma resposta está marcada por padrão.</text>
 
-  <rect x="20" y="348" width="350" height="182" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="36" y="374" font-family="Arial, sans-serif" font-size="11" font-weight="700">Afirmação 2 · Inferência</text>
-  <text x="36" y="400" font-family="Arial, sans-serif" font-size="9">“Apresentar sua experiência parece ser uma dificuldade atual.”</text>
-  <text x="36" y="422" font-family="Arial, sans-serif" font-size="8">Inferido pela Guivos · confiança moderada</text>
-  <text x="36" y="444" font-family="Arial, sans-serif" font-size="8">O relato original permanece separado desta interpretação.</text>
-  <rect x="36" y="462" width="130" height="28" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="101" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Está incorreta</text>
-  <rect x="174" y="462" width="160" height="28" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="254" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Não usar esta informação</text>
-  <text x="36" y="514" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Remover somente a interpretação</text>
-  <text x="246" y="514" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver origem</text>
+  <rect x="20" y="362" width="350" height="184" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="386" font-family="Arial, sans-serif" font-size="11" font-weight="700">A2 · Inferido · confiança moderada</text>
+  <text x="36" y="408" font-family="Arial, sans-serif" font-size="9">“Pode existir dificuldade para demonstrar sua experiência.”</text>
+  <text x="36" y="428" font-family="Arial, sans-serif" font-size="8">Base: T1 · Confiança não equivale a certeza.</text>
+  <rect x="36" y="446" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="60" y="458" font-family="Arial, sans-serif" font-size="8">Confirmar esta afirmação</text>
+  <rect x="196" y="446" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="220" y="458" font-family="Arial, sans-serif" font-size="8">Está incorreta</text>
+  <rect x="36" y="474" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="60" y="486" font-family="Arial, sans-serif" font-size="8">Não usar esta interpretação</text>
+  <rect x="196" y="474" width="14" height="14" rx="7" fill="#ffffff" stroke="#111111"/>
+  <text x="220" y="486" font-family="Arial, sans-serif" font-size="8">Manter em aberto</text>
+  <text x="36" y="518" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Remover somente A2</text>
+  <text x="214" y="518" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver conteúdo de origem</text>
 
-  <rect x="20" y="544" width="350" height="116" rx="10" fill="#f3f3f3" stroke="#999999"/>
-  <text x="36" y="570" font-family="Arial, sans-serif" font-size="11" font-weight="700">Efeito da revisão</text>
-  <text x="36" y="594" font-family="Arial, sans-serif" font-size="9">1 afirmação confirmada · 1 interpretação em revisão</text>
-  <text x="36" y="616" font-family="Arial, sans-serif" font-size="9">A hipótese será recalculada antes da próxima decisão.</text>
-  <text x="36" y="642" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver o que será mantido, alterado ou removido</text>
+  <rect x="20" y="560" width="350" height="106" rx="10" fill="#f3f3f3" stroke="#999999"/>
+  <text x="36" y="584" font-family="Arial, sans-serif" font-size="11" font-weight="700">Prévia do efeito</text>
+  <text x="36" y="606" font-family="Arial, sans-serif" font-size="9">A1: sem decisão · A2: sem decisão · D1: desconhecido</text>
+  <text x="36" y="626" font-family="Arial, sans-serif" font-size="8">Itens abertos não serão tratados como fatos confirmados.</text>
+  <text x="36" y="650" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver conteúdo, finalidade e derivados afetados</text>
 
-  <rect x="20" y="680" width="350" height="48" rx="9" fill="#222222"/>
-  <text x="195" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="700">Aplicar revisão à hipótese</text>
-  <text x="195" y="754" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar aos conteúdos que compartilhei</text>
-  <text x="195" y="782" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Retirar autorização de uso</text>
-  <text x="195" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Remover e preparar novamente</text>
-  <text x="195" y="832" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Nada foi persistido ou personalizado.</text>
+  <rect x="20" y="684" width="350" height="46" rx="9" fill="#222222"/>
+  <text x="195" y="713" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Aplicar respostas e recalcular hipótese</text>
+  <text x="195" y="754" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Editar o conteúdo que compartilhei</text>
+  <text x="195" y="782" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Retirar autorização desta finalidade</text>
+  <text x="195" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Excluir conteúdo de origem e derivados</text>
+  <text x="195" y="832" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Antes de aplicar, o escopo e as consequências serão mostrados.</text>
 </svg>
