@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Revisão do conteúdo e autorização específica</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com inventário do conteúdo recebido, controles de edição e autorização específica antes do processamento, mantendo personalização bloqueada.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+
+  <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
+  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Pausar</text>
+  <line x1="16" y1="50" x2="374" y2="50" stroke="#cccccc"/>
+
+  <text x="20" y="82" font-family="Arial, sans-serif" font-size="10" fill="#555555">INÍCIO PROTEGIDO · 4 DE 4</text>
+  <text x="20" y="116" font-family="Arial, sans-serif" font-size="19" font-weight="700">Revise antes de autorizar</text>
+  <text x="20" y="140" font-family="Arial, sans-serif" font-size="10">Nada será processado materialmente sem sua decisão.</text>
+
+  <rect x="20" y="164" width="350" height="194" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="700">Conteúdo recebido</text>
+
+  <text x="36" y="219" font-family="Arial, sans-serif" font-size="10" font-weight="700">Texto original</text>
+  <text x="36" y="239" font-family="Arial, sans-serif" font-size="9">“Quero reorganizar minha vida profissional...”</text>
+  <text x="336" y="239" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Editar</text>
+
+  <line x1="36" y1="255" x2="354" y2="255" stroke="#dddddd"/>
+  <text x="36" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="700">Resposta opcional</text>
+  <text x="36" y="298" font-family="Arial, sans-serif" font-size="9">Prioridade principal: trabalho</text>
+  <text x="336" y="298" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Revisar</text>
+
+  <line x1="36" y1="314" x2="354" y2="314" stroke="#dddddd"/>
+  <text x="36" y="337" font-family="Arial, sans-serif" font-size="9" fill="#555555">Sem gravação · sem arquivo · sem fonte externa</text>
+
+  <rect x="20" y="378" width="350" height="112" rx="10" fill="#f3f3f3" stroke="#999999"/>
+  <text x="36" y="404" font-family="Arial, sans-serif" font-size="11" font-weight="700">Controles antes do uso</text>
+  <text x="36" y="430" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Corrigir ou remover conteúdo</text>
+  <text x="36" y="452" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Limitar finalidade</text>
+  <text x="36" y="474" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Excluir rascunho</text>
+  <text x="346" y="474" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Voltar</text>
+
+  <text x="20" y="526" font-family="Arial, sans-serif" font-size="12" font-weight="700">Autorizações específicas</text>
+
+  <rect x="20" y="544" width="350" height="54" rx="9" fill="#ffffff" stroke="#777777"/>
+  <rect x="36" y="562" width="18" height="18" fill="#ffffff" stroke="#222222"/>
+  <text x="68" y="568" font-family="Arial, sans-serif" font-size="10" font-weight="700">Usar o texto revisado</text>
+  <text x="68" y="586" font-family="Arial, sans-serif" font-size="8">Somente para preparar a compreensão inicial.</text>
+
+  <rect x="20" y="610" width="350" height="54" rx="9" fill="#ffffff" stroke="#777777"/>
+  <rect x="36" y="628" width="18" height="18" fill="#ffffff" stroke="#222222"/>
+  <text x="68" y="634" font-family="Arial, sans-serif" font-size="10" font-weight="700">Manter compreensão persistente</text>
+  <text x="68" y="652" font-family="Arial, sans-serif" font-size="8">Você poderá corrigir, limitar ou excluir depois.</text>
+
+  <rect x="20" y="676" width="350" height="62" rx="9" fill="#f3f3f3" stroke="#999999"/>
+  <text x="36" y="700" font-family="Arial, sans-serif" font-size="10" font-weight="700">Personalização futura</text>
+  <text x="36" y="720" font-family="Arial, sans-serif" font-size="9">Bloqueada até você revisar a compreensão inicial.</text>
+  <text x="350" y="720" text-anchor="end" font-family="Arial, sans-serif" font-size="9">BLOQUEADA</text>
+
+  <rect x="20" y="756" width="350" height="44" rx="9" fill="#222222"/>
+  <text x="195" y="783" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="700">Autorizar somente os itens marcados</text>
+
+  <text x="195" y="821" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Continuar sem personalização</text>
+</svg>

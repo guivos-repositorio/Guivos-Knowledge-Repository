@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 parent: UXA-000
@@ -30,6 +30,7 @@ related:
   - UXA-031
   - UXA-032
   - UXA-033
+  - UXA-034
   - PAS-001
 normative: false
 ---
@@ -52,29 +53,26 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-A correção formal está registrada em [UXA-003-A1](uxa-003-a1-first-entry-functional-order.md).
-
 ## 3. Artefatos pela ordem funcional
 
 1. Página Inicial e início da jornada — UXA-020;
 2. validação da Home pública — UXA-021;
 3. wireframe da Home para computador — UXA-022;
 4. validação do início protegido — UXA-023;
-5. wireframe da Tela Hoje — UXA-006;
-6. wireframe móvel do Mapa — UXA-024;
-7. validação do Mapa — UXA-025;
-8. estado sem localização — UXA-026;
-9. validação sem localização — UXA-027;
-10. Lista do Mapa — UXA-028;
-11. validação da Lista — UXA-029;
-12. estado sem resultados — UXA-030;
-13. validação sem resultados — UXA-031;
-14. referência do Mapa para computador — UXA-032;
-15. validação da referência para computador — UXA-033;
-16. wireframe do Detalhe — UXA-007;
-17. wireframe do Cadastro pela Organização — UXA-008.
-
-O Mapa integra a navegação recorrente e pode ser acessado pela Home, por `Explorar`, por `Perto de mim` e pelo Detalhe.
+5. wireframe móvel do início protegido — UXA-034;
+6. wireframe da Tela Hoje — UXA-006;
+7. wireframe móvel do Mapa — UXA-024;
+8. validação do Mapa — UXA-025;
+9. estado sem localização — UXA-026;
+10. validação sem localização — UXA-027;
+11. Lista do Mapa — UXA-028;
+12. validação da Lista — UXA-029;
+13. estado sem resultados — UXA-030;
+14. validação sem resultados — UXA-031;
+15. referência do Mapa para computador — UXA-032;
+16. validação da referência para computador — UXA-033;
+17. wireframe do Detalhe — UXA-007;
+18. wireframe do Cadastro pela Organização — UXA-008.
 
 ## 4. Natureza dos artefatos
 
@@ -83,7 +81,6 @@ Os wireframes:
 - são hipóteses estruturais para revisão;
 - utilizam conteúdo ilustrativo;
 - representam prioridade e relação funcional, não acabamento;
-- podem ser alterados sem migração de produto;
 - não definem componentes técnicos;
 - não constituem especificação de implementação;
 - não autorizam protótipo de alta fidelidade.
@@ -92,13 +89,25 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 
 ## 5. O que deverá ser validado
 
-### 5.1 Compreensão
+### 5.1 Primeira entrada e início protegido
 
-- A finalidade de cada superfície é compreendida rapidamente?
-- Home, início protegido, Tela Hoje, Explorar e Mapa são distintos?
+- A pessoa entende que saiu da Home pública?
+- O ambiente protegido é explicado antes da autenticação?
+- Fica claro que nenhuma coleta começou automaticamente?
+- Entrar, criar conta e recuperar acesso são alternativas compreensíveis?
+- Criar conta permanece separado de autorizar processamento?
+- Explorar sem personalização permanece uma saída legítima?
+- Texto, voz, arquivo e perguntas são percebidos como alternativas?
+- A pessoa entende que pode começar com pouco?
+- Finalidade e privacidade aparecem antes do uso material?
+- Pausar, salvar rascunho e excluir possuem efeitos distintos?
+- Original, transcrição, extração e interpretação são distinguíveis?
+- A revisão antecede a autorização específica?
+- Personalização permanece bloqueada antes do gate?
+
+### 5.2 Mapa e superfícies recorrentes
+
 - Mapa e Lista representam a mesma consulta?
-- A Lista territorial se diferencia de `Explorar`?
-- `Agindo como`, região e localização são reconhecíveis?
 - Quantidade, filtros e ordenação são compreensíveis?
 - Resumo e controles dos filtros são semanticamente idênticos?
 - Relação comercial está separada da relevância?
@@ -106,43 +115,29 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - O total zero é entendido como resultado da consulta atual?
 - Cobertura, falha e indisponibilidade são distinguíveis?
 - Em computador, filtros, Mapa, Lista e seleção parecem partes da mesma consulta?
-
-### 5.2 Hierarquia
-
-- O item mais importante ocupa a posição correta?
-- O Mapa preserva espaço territorial sem ocultar contexto?
-- A Lista preserva contexto antes dos resultados?
-- Os cartões permitem comparação consistente?
 - A seleção é reconhecível no marcador, cartão e painel?
 - O painel contextual pode ser recolhido sem perder seleção?
-- O estado zero apresenta diagnóstico antes da recuperação?
-- As ações de recuperação possuem uma hierarquia única?
-- A distribuição horizontal evita competição excessiva?
+- Foco e retorno preservam contexto?
 
 ### 5.3 Autonomia
 
-- Localização exata, aproximada, manual e desativada são alternativas reais?
-- A recusa de localização preserva busca, Mapa, Lista, Detalhe e salvamento?
-- Foco no Mapa ou na Lista mantém permissões e contexto?
+- A pessoa pode adiar, recusar, pausar ou sair sem culpa?
+- Modalidades não competem como exigências?
+- Compartilhamento mínimo não é tratado como insuficiência pessoal?
+- Voz e arquivos possuem explicação anterior?
+- A pessoa pode corrigir, limitar, remover e excluir?
+- A recusa de localização preserva o uso do Mapa?
 - Mover o Mapa evita atualização silenciosa?
-- A pessoa pode revisar filtros e ordenação?
-- Ações de recuperação alteram somente a dimensão escolhida?
-- A mudança é revisada antes de aplicar?
 - O estado vazio evita preenchimento patrocinado artificial?
-- Mais espaço visual evita aumentar coleta ou inferência territorial?
 
 ### 5.4 Continuidade
 
-- A Home conduz ao início protegido, à compreensão e à Tela Hoje?
-- A Tela Hoje conduz ao Mapa por um recorte compacto?
-- Explorar e Mapa permanecem relacionados sem serem confundidos?
-- Mapa e Lista preservam região, busca, filtros, quantidade, atualização, ordenação e seleção?
-- Foco e retorno à visão dividida preservam o contexto?
+- A Home conduz conscientemente ao início protegido?
+- O início protegido conduz a uma compreensão inicial revisável, não diretamente à personalização?
+- A compreensão revisada conduz à Tela Hoje ou à exploração geral?
+- Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
 - O Detalhe devolve a pessoa ao mesmo estado?
 - A Lista funciona sem mapa carregado?
-- Mapa e Lista preservam o mesmo total zero e cobertura?
-- Uma alteração que produz zero pode ser compreendida e desfeita?
-- A referência desktop mantém paridade sem criar catálogo independente?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -153,13 +148,11 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 | preenchimento cinza | resumo ou estado informativo |
 | texto sublinhado | ação secundária ou explicação |
 | círculos numerados | etapas, agrupamentos ou vínculo da seleção |
-| linhas esquemáticas | estrutura territorial sem geografia real |
-| marca textual | filtro ativo ou estado confirmado |
+| faixa de progresso | posição na sequência sem obrigatoriedade linear |
+| caixa de seleção vazia | autorização ainda não concedida |
+| declaração textual | estado de coleta, proteção ou processamento |
 | ausência de marcador | posição da pessoa não utilizada |
 | faixa compartilhada | painéis pertencem à mesma consulta |
-| campo territorial vazio com mensagem | zero resultados sem depender da cartografia |
-| aviso contextual | última alteração, cobertura ou seleção anterior |
-| colunas simultâneas | visão dividida em tela ampla |
 | painel recolhível | contexto da seleção sem eliminar comparação |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
@@ -169,6 +162,7 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Wireframe | Canal | Dimensão de referência |
 |---|---|---|
 | Home pública | web para computador | 1.440 × 2.200 |
+| Início protegido — quatro estados | aplicativo móvel | 390 × 844 cada |
 | Tela Hoje | aplicativo móvel | 390 × 844 |
 | Mapa de Oportunidades | aplicativo móvel | 390 × 844 |
 | Mapa sem localização | aplicativo móvel | 390 × 844 |
@@ -179,108 +173,70 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
 
-As dimensões servem somente para verificar densidade e hierarquia.
-
 ## 8. Relação entre os wireframes
 
 ```text
 Página Inicial pública
-→ início voluntário
-→ ambiente protegido
-→ compreensão inicial revisada
-→ Tela Hoje
-→ Perto de mim
-→ Mapa de Oportunidades
-↔ Lista territorial do Mapa
-→ resultados ou estado sem resultados
-→ Detalhe de Oportunidade
-→ decisão consciente
-
-Explorar
-↔ consulta territorial no Mapa
-↔ Mapa e Lista sem perda de contexto
-↔ visão dividida em tela ampla
-↔ foco no Mapa ou na Lista
-↔ retorno à visão dividida
-↔ ajuste consciente da consulta
+→ decisão voluntária
+→ explicação do ambiente protegido
+→ acesso protegido
+→ modalidade e compartilhamento mínimo
+→ revisão e autorização específica
+→ compreensão inicial revisável
+→ Tela Hoje ou exploração geral
+→ Mapa e demais superfícies recorrentes
 ```
 
-O início da jornada não garante recomendação. Cadastro não garante ativação. Apresentação não representa contratação.
+A sequência protegida não é formulário linear obrigatório. Etapas podem ser pausadas, retomadas ou omitidas quando isso preservar compreensão e autonomia.
 
 ## 9. Artefatos especializados
 
 | Nome | ID | Superfície | Artefato |
 |---|---|---|---|
-| [Página Inicial e Início](uxa-020-home-and-journey-entry.md) | UXA-020 | primeira entrada | contrato textual |
-| [Validação da Home](uxa-021-public-home-functional-validation-and-reformulation.md) | UXA-021 | Home | hierarquia validada |
-| [Wireframe da Home](uxa-022-public-home-low-fidelity-wireframe.md) | UXA-022 | Home | arquivo vetorial |
-| [Validação do Início Protegido](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) | UXA-023 | início protegido | contrato validado |
-| [Tela Hoje](uxa-006-today-low-fidelity-wireframe.md) | UXA-006 | recorrente | arquivo vetorial |
-| [Mapa](uxa-024-opportunity-map-low-fidelity-wireframe.md) | UXA-024 | Mapa | arquivo vetorial móvel |
-| [Validação do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md) | UXA-025 | Mapa | validação funcional |
-| [Mapa sem Localização](uxa-026-opportunity-map-location-disabled-state.md) | UXA-026 | estado alternativo | arquivo vetorial |
-| [Validação sem Localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md) | UXA-027 | estado alternativo | validação funcional |
-| [Lista do Mapa](uxa-028-opportunity-map-list-state.md) | UXA-028 | modo alternativo | arquivo vetorial reformulado |
-| [Validação da Lista](uxa-029-opportunity-map-list-functional-validation-and-reformulation.md) | UXA-029 | modo alternativo | validação funcional |
-| [Mapa sem Resultados](uxa-030-opportunity-map-no-results-state.md) | UXA-030 | estado alternativo | arquivo vetorial reformulado |
-| [Validação sem Resultados](uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md) | UXA-031 | estado alternativo | validação funcional |
-| [Mapa para Computador](uxa-032-opportunity-map-desktop-reference.md) | UXA-032 | tela ampla | dois arquivos vetoriais reformulados |
-| [Validação Desktop](uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md) | UXA-033 | tela ampla | validação funcional |
-| [Detalhe](uxa-007-opportunity-detail-low-fidelity-wireframe.md) | UXA-007 | detalhe | arquivo vetorial |
-| [Cadastro](uxa-008-organization-opportunity-registration-low-fidelity-wireframe.md) | UXA-008 | cadastro | arquivo vetorial |
+| Página Inicial e Início | UXA-020 | primeira entrada | contrato textual |
+| Validação da Home | UXA-021 | Home | hierarquia validada |
+| Wireframe da Home | UXA-022 | Home | arquivo vetorial |
+| Validação do Início Protegido | UXA-023 | início protegido | contrato validado |
+| Wireframe do Início Protegido | UXA-034 | início protegido | quatro arquivos vetoriais móveis |
+| Tela Hoje | UXA-006 | recorrente | arquivo vetorial |
+| Mapa e estados | UXA-024 a UXA-032 | Mapa | arquivos vetoriais móveis e desktop |
+| Validações do Mapa | UXA-025, UXA-027, UXA-029, UXA-031 e UXA-033 | Mapa | validações funcionais |
+| Detalhe | UXA-007 | detalhe | arquivo vetorial |
+| Cadastro | UXA-008 | cadastro | arquivo vetorial |
 
-## 10. Resultados móveis validados
+## 10. Resultado do início protegido
 
-A Lista, o estado sem localização e o estado sem resultados preservam consulta, localização opcional, explicabilidade, seleção, cobertura e operação textual sem mapa carregado.
+A UXA-034 demonstra:
 
-## 11. Referência desktop validada
+- nenhuma coleta automática;
+- conta separada de autorização;
+- alternativas de acesso e exploração;
+- modalidades equivalentes;
+- compartilhamento mínimo;
+- finalidade e privacidade;
+- rascunho protegido;
+- revisão do conteúdo;
+- correção, remoção e limitação;
+- autorização específica;
+- personalização bloqueada antes do gate.
 
-A UXA-032 reformulada e a UXA-033 demonstram:
+A validação funcional especializada do conjunto permanece não iniciada.
 
-- consulta territorial compartilhada;
-- filtros consistentes;
-- visão dividida;
-- foco sem perda de contexto;
-- movimento sem atualização automática;
-- seleção `Marcador 1` sincronizada;
-- cartões comparáveis e explicáveis;
-- painel contextual recolhível;
-- recuperação concentrada no painel de consulta;
-- seleção anterior explicável;
-- localização opcional;
-- Lista integral sem mapa carregado.
+## 11. Limites
 
-A referência é funcionalmente válida após reformulação.
+Este programa não define marca, tecnologia, autenticação, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade ou Engenharia de Produto.
 
-## 12. Demais estados funcionais do Mapa
-
-Permanecem governados, sem wireframes específicos:
-
-- localização aproximada;
-- localização exata temporária;
-- carregamento;
-- baixa conectividade;
-- item indisponível;
-- endereço protegido;
-- permissão revogada;
-- erro de fonte;
-- contexto sem gate;
-- mapa indisponível.
-
-## 13. Limites
-
-Este programa não define marca, tecnologia, geocodificação, rotas, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade, preço real ou Engenharia de Produto.
-
-## 14. Próximos pontos de decisão
+## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. criar o wireframe do início protegido;
+1. validar funcionalmente o wireframe móvel do início protegido;
 2. criar a referência móvel da Home;
 3. validar a compreensão inicial;
 4. detalhar a primeira Tela Hoje após a transição;
-5. criar outros estados alternativos do Mapa;
-6. criar referência para tablet, caso priorizada;
-7. retomar independentemente os testes dos Resultados Empresariais.
+5. criar estados especializados de texto, voz e arquivos;
+6. criar referência do início protegido para computador;
+7. criar outros estados do Mapa;
+8. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhuma etapa posterior é iniciada automaticamente.

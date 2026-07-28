@@ -2,19 +2,18 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.8.0
+version: 12.9.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.8.0
+  - ROADMAP-12.9.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
   - UXA-000
-  - UXA-004
   - UXA-011-A1
   - UXA-020
   - UXA-021
@@ -30,7 +29,8 @@ related:
   - UXA-031
   - UXA-032
   - UXA-033
-  - M7.34
+  - UXA-034
+  - M7.35
 normative: false
 ---
 
@@ -45,23 +45,19 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | referência do Mapa para computador funcionalmente validada e reformulada | M7.34; UXA-032; UXA-033 |
+| Marco | wireframe móvel do início protegido da jornada criado | M7.35; UXA-034 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
-| Continuidade econômica | formulação combinada em validação | BUS-CAND-005; COD-018 |
 | Home pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
-| Início protegido | funcionalmente validado; wireframe pendente | UXA-020; UXA-023 |
+| Início protegido | funcionalmente validado e materializado em quatro estados móveis; validação do wireframe pendente | UXA-023; UXA-034 |
 | Referência móvel da Home | não iniciada | — |
+| Referência do início protegido para computador | não iniciada | — |
 | Tela Hoje | entrada recorrente após compreensão confirmada | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
-| Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
-| Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
+| Estados móveis do Mapa | sem localização, Lista e sem resultados validados | UXA-026 a UXA-031 |
 | Referência do Mapa para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
-| Referência para tablet | não iniciada | — |
-| Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
-| Personalização | bloqueada antes de contexto revisável e autorizado | UXA-011-A1; UXA-020; UXA-023 |
+| Personalização | bloqueada antes de contexto revisável e autorizado | UXA-011-A1; UXA-020; UXA-023; UXA-034 |
 | Protótipo, design e testes | não iniciados | — |
 | Capacidades Empresariais | não iniciadas | — |
 | Engenharia de Produto | pausada | W0-01 |
@@ -78,12 +74,9 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Tela Hoje, Detalhe e Cadastro validados;
 - experiências de Organizações e Coletivos estabelecidas;
 - Home pública validada e materializada;
-- início protegido validado;
-- Mapa principal validado e reformulado;
-- estado sem localização validado e reformulado;
-- visualização em Lista validada e reformulada;
-- estado sem resultados validado e reformulado;
-- referência do Mapa para computador criada, validada e reformulada.
+- início protegido funcionalmente validado;
+- wireframe móvel do início protegido criado;
+- Mapa principal, estados móveis e referência desktop validados e reformulados.
 
 ### Em validação
 
@@ -95,13 +88,14 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 
 #### Arquitetura da Experiência
 
-- wireframe gráfico do início protegido;
+- validação funcional do wireframe móvel do início protegido;
 - referência móvel da Home;
-- estados especializados de texto, voz e arquivos;
 - validação da revisão da compreensão inicial;
 - validação da transição para a primeira Tela Hoje;
+- estados especializados de texto, voz e arquivos;
+- referência do início protegido para computador;
 - demais estados alternativos do Mapa;
-- referência específica para tablet, caso priorizada.
+- referência para tablet, caso priorizada.
 
 #### Arquitetura de Negócios
 
@@ -116,7 +110,7 @@ Este painel resume o portfólio arquitetural vigente. O estado oficial é declar
 - Engenharia de Produto;
 - protótipo navegável e design visual;
 - testes de usabilidade;
-- responsividade completa e referência para tablet;
+- autenticação, gravação, transcrição, upload e processamento real;
 - provas de conceito, integrações e produção.
 
 ## 4. Sequência pessoal vigente
@@ -130,60 +124,53 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Estados móveis validados
+## 5. Wireframe móvel do início protegido
 
-A UXA-026 a UXA-031 estabelecem localização opcional, região manual, Lista territorial, consulta preservada, cobertura verificável, recuperação consciente, seleção anterior e funcionamento sem mapa carregado.
+A UXA-034 materializa quatro estados de 390 por 844 pixels:
 
-## 6. Referência para computador validada
+1. explicação anterior à autenticação;
+2. acesso protegido sem coleta iniciada;
+3. modalidade e compartilhamento mínimo;
+4. revisão e autorização específica.
 
-A UXA-032 e a UXA-033 demonstram:
+O conjunto demonstra:
 
-- dois arquivos em 1.440 por 1.024 pixels;
-- estado com resultados e estado sem resultados;
-- `Consulta territorial ativa` compartilhada;
-- filtros semanticamente consistentes;
-- `Visão dividida ativa`;
-- foco no Mapa ou na Lista sem perda de contexto;
-- retorno à visão dividida;
-- movimento cartográfico sem atualização silenciosa;
-- `Pesquisar nesta área` condicionado ao movimento;
-- seleção `Marcador 1` sincronizada;
-- cartões comparáveis com origem e explicação;
-- `Entender ordenação` explícito;
-- relação comercial rotulada;
-- painel contextual recolhível;
-- recuperação do estado zero concentrada no painel de consulta;
-- seleção anterior explicável;
-- localização opcional;
-- Lista integral sem mapa carregado.
+- nenhuma coleta automática;
+- alternativas para continuar, entender, voltar ou explorar;
+- entrada, criação de conta e recuperação de acesso;
+- conta separada de autorização;
+- texto, voz, arquivo e perguntas opcionais;
+- começo com pouco conteúdo;
+- finalidade e privacidade visíveis;
+- rascunho ainda não processado;
+- pausa, salvamento e exclusão distintos;
+- inventário e controles do conteúdo recebido;
+- autorização específica posterior à revisão;
+- personalização bloqueada antes do gate.
 
-A referência é funcionalmente válida após reformulação.
+A criação ainda não foi funcionalmente validada como wireframe.
 
-Ela não conclui responsividade, pontos de quebra, tablet, design, protótipo, acessibilidade técnica, teste com usuários ou desenvolvimento.
+## 6. Mapa e estados validados
+
+A UXA-024 a UXA-033 estabelecem Mapa principal, uso sem localização, Lista territorial, estado sem resultados e referência para computador com consulta compartilhada, explicabilidade, privacidade, seleção e operação resiliente.
 
 ## 7. Proteções preservadas
 
 - a Home não coleta relato pessoal;
 - iniciar a jornada é voluntário;
+- explicação antecede autenticação e coleta;
+- criar conta não autoriza processamento;
+- modalidades são equivalentes;
+- compartilhar pouco é legítimo;
+- digitar não constitui autorização material;
+- voz e arquivos exigem explicação anterior;
+- revisão antecede autorização específica;
 - personalização exige gate;
 - exploração sem personalização permanece disponível;
+- pausa, rascunho, retirada e exclusão não são equivalentes;
+- informações de terceiros não são exigidas;
 - localização é opcional;
-- região manual não equivale a posição atual;
-- foco não altera consulta ou permissões;
-- mover o Mapa não atualiza resultados silenciosamente;
-- dados ausentes não são inferidos;
-- seleção não aumenta relevância;
 - publicidade não aumenta relevância pessoal;
-- relação comercial permanece separada da origem funcional;
-- salvamento não autoriza rastreamento;
-- origem manual não autoriza histórico territorial;
-- residências e locais sensíveis permanecem protegidos;
-- zero legítimo não é confundido com erro técnico;
-- cobertura precisa ser explicável;
-- consulta não é alterada silenciosamente;
-- `Desfazer` depende de alteração identificável;
-- seleção anterior não falseia o conjunto atual;
-- mais espaço visual não autoriza mais coleta;
 - wireframes e validações não equivalem a design ou implementação.
 
 ## 8. Distribuição dos candidatos
@@ -197,4 +184,4 @@ Ela não conclui responsividade, pontos de quebra, tablet, design, protótipo, a
 
 ## 9. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre wireframe do início protegido, referência móvel da Home, validação da compreensão inicial, demais estados do Mapa, referência para tablet ou retomada independente dos testes dos Resultados Empresariais.
+Após integração, nenhum movimento é automático. A próxima ação poderá ser escolhida entre validação do wireframe móvel do início protegido, referência móvel da Home, validação da compreensão inicial, primeira Tela Hoje, estados especializados, referência desktop do início protegido ou retomada independente dos testes dos Resultados Empresariais.

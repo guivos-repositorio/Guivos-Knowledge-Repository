@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.8.0
-title: Roadmap Arquitetural — Referência Desktop do Mapa Validada
+id: ROADMAP-12.9.0
+title: Roadmap Arquitetural — Wireframe Móvel do Início Protegido Criado
 status: active
-version: 12.8.0
+version: 12.9.0
 owner: Guivos
 last_updated: 2026-07-27
 supersedes_partial:
-  - ROADMAP-12.7.0
+  - ROADMAP-12.8.0
 related:
   - GKR-STATE-001
   - BA-STR-002
@@ -14,7 +14,6 @@ related:
   - BA-STR-002-CODR-001
   - COD-018
   - UXA-000
-  - UXA-004
   - UXA-011-A1
   - UXA-020
   - UXA-021
@@ -30,10 +29,11 @@ related:
   - UXA-031
   - UXA-032
   - UXA-033
-  - M7.34
+  - UXA-034
+  - M7.35
 ---
 
-# Roadmap Arquitetural — Referência Desktop do Mapa Validada
+# Roadmap Arquitetural — Wireframe Móvel do Início Protegido Criado
 
 ## 1. Autoridade
 
@@ -44,20 +44,18 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | referência do Mapa para computador funcionalmente validada e reformulada | M7.34; UXA-032; UXA-033 |
+| Marco | wireframe móvel do início protegido da jornada criado | M7.35; UXA-034 |
 | Remediação | concluída | R1–R6 |
 | Resultados Empresariais | 18 de 18 decisões; nenhum Resultado canônico | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
-| Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
+| Início protegido | funcionalmente validado e materializado em quatro estados móveis; validação do wireframe pendente | UXA-023; UXA-034 |
+| Referência móvel da Home | não iniciada | — |
 | Tela Hoje | entrada recorrente após o gate | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
-| Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
-| Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
+| Estados móveis do Mapa | sem localização, Lista e sem resultados validados | UXA-026 a UXA-031 |
 | Referência do Mapa para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
 | Referência para tablet | não iniciada | — |
-| Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -77,14 +75,9 @@ Este documento governa a sequência global de evolução arquitetural do Reposit
 12. Home pública validada e reformulada;
 13. wireframe da Home para computador criado;
 14. início protegido validado e reformulado;
-15. posição recorrente do Mapa consolidada;
-16. wireframe móvel do Mapa criado;
-17. Mapa funcionalmente validado e reformulado;
-18. estado sem localização criado, validado e reformulado;
-19. visualização em Lista criada, validada e reformulada;
-20. estado sem resultados criado, validado e reformulado;
-21. referência do Mapa para computador criada;
-22. referência do Mapa para computador funcionalmente validada e reformulada.
+15. Mapa principal e estados alternativos móveis criados e validados;
+16. referência do Mapa para computador criada, validada e reformulada;
+17. wireframe móvel do início protegido criado.
 
 ## 4. Sequência pessoal vigente
 
@@ -97,45 +90,49 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O Mapa não integra a sequência obrigatória de primeira entrada. Seus estados móveis e para computador pertencem à mesma superfície recorrente.
+## 5. Resultado do wireframe móvel do início protegido
 
-## 5. Resultado da validação para computador
+A UXA-034 materializa quatro estados de 390 por 844 pixels:
 
-A UXA-032 e a UXA-033 estabelecem:
+1. explicação anterior à autenticação;
+2. acesso protegido sem coleta iniciada;
+3. modalidade e compartilhamento mínimo;
+4. revisão e autorização específica.
 
-- faixa compartilhada `Consulta territorial ativa`;
-- valores de filtros consistentes entre resumo e controles;
-- `Visão dividida ativa`;
-- `Focar no Mapa` e `Focar na Lista` sem perda de contexto;
-- retorno à visão dividida;
-- movimento do Mapa sem atualização silenciosa;
-- `Pesquisar nesta área` somente após movimento pendente;
-- seleção `Marcador 1` sincronizada;
-- cartões com tipo, origem, explicação e relação comercial;
-- `Entender ordenação` explícito;
-- painel contextual recolhível;
-- recuperação do estado zero concentrada em `Consulta e filtros`;
-- seleção anterior explicável;
-- Lista integral sem mapa carregado.
+O conjunto demonstra:
 
-A referência adapta disposição, não significado, e não cria catálogo independente.
+- saída consciente da Home pública;
+- nenhuma coleta automática;
+- continuar, entender, voltar ou explorar sem personalização;
+- entrar, criar conta e recuperar acesso;
+- conta separada de autorização;
+- texto, voz, arquivo e perguntas opcionais;
+- início com pouco conteúdo;
+- finalidade e privacidade visíveis;
+- rascunho ainda não processado;
+- pausa, salvamento e exclusão distintos;
+- inventário do conteúdo recebido;
+- correção, remoção e limitação;
+- autorização específica após revisão;
+- personalização bloqueada antes do gate.
+
+A sequência não é um formulário linear obrigatório. Estados podem ser pausados, retomados ou omitidos quando isso preservar compreensão e autonomia.
 
 ## 6. Proteções preservadas
 
-- Mapa, Lista e filtros utilizam a mesma consulta;
-- localização permanece opcional;
-- região manual não equivale a posição atual;
-- foco não altera permissões;
-- mais espaço não autoriza mais coleta;
-- movimento não executa consulta automaticamente;
-- filtros não são removidos sem revisão;
-- seleção não altera relevância ou ordenação;
-- endereço protegido não é revelado;
-- relação comercial permanece separada da relevância funcional;
-- zero representa somente a consulta atual;
-- cobertura precisa ser verificável;
-- personalização não é iniciada sem gate;
-- publicidade não preenche artificialmente o estado.
+- a Home não coleta relato pessoal;
+- iniciar a jornada é voluntário;
+- explicação antecede autenticação e coleta;
+- criar conta não autoriza processamento;
+- modalidades não competem como exigências;
+- compartilhar pouco é legítimo;
+- voz e arquivos exigem explicação anterior;
+- revisão antecede autorização;
+- personalização exige compreensão revisada e autorizada;
+- exploração sem personalização permanece disponível;
+- pausa, rascunho e exclusão possuem efeitos distintos;
+- informações de terceiros não são exigidas;
+- wireframe, validação, protótipo, design, testes e desenvolvimento permanecem atos separados.
 
 ## 7. Estado dos Resultados Empresariais
 
@@ -161,12 +158,14 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo e não tor
 
 Após integração e nova autorização, poderá ocorrer separadamente:
 
-1. criar o wireframe gráfico do início protegido;
+1. validar funcionalmente o wireframe móvel do início protegido;
 2. criar a referência móvel da Home;
 3. validar a revisão da compreensão inicial;
 4. validar a transição para a primeira Tela Hoje;
-5. criar outros estados alternativos do Mapa;
-6. criar referência específica para tablet, caso priorizada.
+5. criar estados especializados de texto, voz e arquivos;
+6. criar a referência do início protegido para computador;
+7. criar outros estados alternativos do Mapa;
+8. criar referência para tablet, caso priorizada.
 
 ### 8.2 Arquitetura de Negócios
 
@@ -187,10 +186,8 @@ Nenhuma frente avança automaticamente.
 - nenhum candidato é aprovado por fusão ou reformulação;
 - Resultados canônicos continuam em zero;
 - reinvestimento não é obrigação automática;
-- a Home não coleta relato pessoal;
 - personalização exige compreensão revisável e autorizada;
 - exploração geral continua disponível;
 - localização não é condição universal de uso;
 - publicidade não aumenta relevância pessoal;
-- wireframe, validação funcional, protótipo, design, testes e desenvolvimento permanecem atos separados;
 - Validação de Mercado mantém execução própria e paralela.
