@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.35 — Wireframe Móvel do Início Protegido da Jornada Criado |
+| Marco | M7.36 — Wireframe Móvel do Início Protegido Funcionalmente Validado e Reformulado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -17,11 +17,11 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Resultados Empresariais | 9 em validação, 3 fundidos e 6 rejeitados |
 | Resultados canônicos | nenhum criado |
 | Home pública | validada e materializada para computador |
-| Início protegido | funcionalmente validado e materializado em quatro estados móveis; validação do wireframe pendente |
+| Início protegido móvel | funcionalmente validado e reformulado |
 | Referência móvel da Home | não iniciada |
+| Compreensão inicial | contrato estabelecido; materialização pendente |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa e estados | funcionalmente validados e reformulados |
-| Referência do Mapa para computador | funcionalmente validada e reformulada |
 | Referência para tablet | não iniciada |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -31,9 +31,12 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 
 ```text
 Página Inicial pública
-→ decisão voluntária de iniciar ou explorar
-→ início protegido da jornada
+→ explicação do ambiente protegido
+→ acesso, somente quando necessário
+→ escolha e rascunho mínimo
+→ revisão e autorização específica
 → compreensão inicial revisável
+→ decisão sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
@@ -42,28 +45,28 @@ Página Inicial pública
 
 A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização e não coleta relato pessoal.
 
-A UXA-023 governa o início protegido. A UXA-034 materializa quatro estados móveis de 390 por 844 pixels:
+A UXA-023 governa o início protegido. A UXA-034 reformulada e a UXA-035 validam quatro estados móveis de 390 por 844 pixels:
 
-1. explicação anterior à autenticação;
-2. acesso protegido sem coleta iniciada;
-3. modalidade e compartilhamento mínimo;
-4. revisão e autorização específica.
+1. explicação anterior ao relato;
+2. acesso somente quando necessário;
+3. escolha de modalidade e rascunho mínimo;
+4. revisão anterior ao processamento específico.
 
 O conjunto demonstra:
 
-- nenhuma coleta automática;
-- alternativas para continuar, entender, voltar ou explorar sem personalização;
-- entrar, criar conta e recuperar acesso;
-- conta separada de autorização;
-- texto, voz, arquivo e perguntas opcionais;
-- início com pouco conteúdo;
-- finalidade e privacidade visíveis;
-- rascunho protegido ainda não processado;
-- pausa, salvamento e exclusão distintos;
-- inventário do conteúdo recebido;
-- correção, remoção e limitação;
-- autorização específica posterior à revisão;
-- personalização bloqueada antes do gate.
+- relato pessoal separado de dados técnicos e de acesso;
+- estados nomeados, pausáveis e retomáveis;
+- ausência de formulário linear obrigatório;
+- sessão válida sem repetição da etapa de acesso;
+- texto, voz, arquivo e perguntas opcionais sem seleção automática;
+- compartilhamento mínimo;
+- explicação anterior para voz e arquivo;
+- pausa, salvamento, saída e exclusão com efeitos distintos;
+- inventário antes do processamento;
+- autorização específica e inicialmente desmarcada;
+- preparação apenas de compreensão inicial temporária e revisável;
+- recusa sem processamento;
+- persistência e personalização bloqueadas até a revisão da compreensão.
 
 Arquivos:
 
@@ -72,7 +75,7 @@ Arquivos:
 - `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
 - `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
 
-A criação ainda não foi funcionalmente validada como wireframe e não conclui autenticação, gravação, upload, IA, protótipo, teste ou desenvolvimento.
+A validação não conclui autenticação, segurança técnica, armazenamento, gravação, upload, IA, protótipo, teste ou desenvolvimento.
 
 ## Mapa de Oportunidades
 
@@ -97,13 +100,12 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional do wireframe móvel do início protegido;
 - referência móvel da Home;
-- validação da revisão da compreensão inicial;
+- materialização da revisão da compreensão inicial;
 - validação da primeira Tela Hoje após a transição;
 - estados especializados de texto, voz e arquivos;
 - referência do início protegido para computador;
-- demais estados alternativos do Mapa;
+- estados de processamento, pausa, falha e retomada;
 - reaplicação dos quatro testes dos Resultados Empresariais.
 
 ## Backlog estratégico preservado
@@ -129,12 +131,13 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Página Inicial e Início](docs/experience-architecture/uxa-020-home-and-journey-entry.md)
 - [Wireframe da Home](docs/experience-architecture/uxa-022-public-home-low-fidelity-wireframe.md)
-- [Validação do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
+- [Contrato do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Início Protegido](docs/experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
+- [Validação do Wireframe Protegido](docs/experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md)
 - [Wireframe do Mapa](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Validação Desktop do Mapa](docs/experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
-- [Adendo Canônico UXA-034](docs/project/canonical-consolidation-matrix-uxa-034-addendum.md)
-- [Histórico 1.57.0](docs/project/changelog-1.57.0-uxa-034.md)
+- [Adendo Canônico UXA-035](docs/project/canonical-consolidation-matrix-uxa-035-addendum.md)
+- [Histórico 1.58.0](docs/project/changelog-1.58.0-uxa-035.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
