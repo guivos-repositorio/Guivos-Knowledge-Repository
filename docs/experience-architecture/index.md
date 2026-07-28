@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.29.0
+version: 0.30.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-27
 related:
@@ -45,6 +45,7 @@ related:
   - UXA-031
   - UXA-032
   - UXA-033
+  - UXA-034
 normative: false
 ---
 
@@ -83,17 +84,15 @@ Página Inicial pública da Guivos
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-O Mapa não entra entre a Home e a Tela Hoje. Ele é uma superfície recorrente e também pode ser acessado por `Explorar`, exploração geral e `Perto de mim`.
-
 ## 5. Documentos ativos por responsabilidade funcional
 
 | Responsabilidade | Documentos principais |
 |---|---|
 | Fundação, mapas e padrões | UXA-001, UXA-003, UXA-003-A1, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
 | Página Inicial pública | [contrato](uxa-020-home-and-journey-entry.md), [validação](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe](uxa-022-public-home-low-fidelity-wireframe.md) |
-| Início protegido | [validação funcional](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) |
+| Início protegido | [validação funcional](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md) e [wireframe móvel](uxa-034-protected-journey-entry-low-fidelity-wireframe.md) |
 | Tela Hoje | [experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação](uxa-010-today-functional-validation-and-reformulation.md) |
-| Explorar e Mapa | [contrato](uxa-004-opportunities-organizations-collectives-map.md), [wireframe móvel](uxa-024-opportunity-map-low-fidelity-wireframe.md), [validação do Mapa](uxa-025-opportunity-map-functional-validation-and-reformulation.md), [estado sem localização](uxa-026-opportunity-map-location-disabled-state.md), [validação sem localização](uxa-027-opportunity-map-location-disabled-functional-validation-and-reformulation.md), [Lista](uxa-028-opportunity-map-list-state.md), [validação da Lista](uxa-029-opportunity-map-list-functional-validation-and-reformulation.md), [estado sem resultados](uxa-030-opportunity-map-no-results-state.md), [validação sem resultados](uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md), [referência para computador](uxa-032-opportunity-map-desktop-reference.md) e [validação desktop](uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md) |
+| Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -101,36 +100,46 @@ O Mapa não entra entre a Home e a Tela Hoje. Ele é uma superfície recorrente 
 
 | Elemento | Situação compreensível | Referência técnica |
 |---|---|---|
-| Arquitetura da Experiência | ativa e integrada até a validação desktop do Mapa | UXA-000 a UXA-033; UXA-003-A1 |
+| Arquitetura da Experiência | ativa e integrada até o wireframe móvel do início protegido | UXA-000 a UXA-034; UXA-003-A1 |
 | Resultados Empresariais | 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
-| Início protegido | funcionalmente validado e reformulado; wireframe pendente | UXA-020; UXA-023 |
+| Início protegido | funcionalmente validado e materializado em quatro estados móveis; validação do wireframe pendente | UXA-020; UXA-023; UXA-034 |
+| Referência do início protegido para computador | não iniciada | — |
 | Compreensão inicial | contrato e gate estabelecidos; validação posterior | UXA-011-A1; UXA-020; UXA-023 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
-| Visualização em Lista | funcionalmente validada e reformulada | UXA-028; UXA-029 |
-| Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
+| Estados móveis do Mapa | sem localização, Lista e sem resultados validados | UXA-026 a UXA-031 |
 | Referência para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
 | Referência para tablet | não iniciada | — |
-| Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
-| Detalhe e cadastro | validados e reformulados | UXA-007; UXA-008; UXA-012; UXA-013 |
-| Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 7. Página Inicial e início protegido
 
 A Home explica concretamente a Guivos, oferece início voluntário e exploração sem personalização e não coleta relato pessoal.
 
-O ambiente protegido explica o processo antes da autenticação e da coleta, separa conta de autorização e mantém personalização bloqueada antes do gate.
+O início protegido explica o processo antes da autenticação e da coleta, separa conta de autorização e mantém personalização bloqueada antes do gate.
+
+A UXA-034 materializa quatro estados móveis:
+
+1. explicação anterior à autenticação;
+2. acesso protegido sem coleta iniciada;
+3. modalidade e compartilhamento mínimo;
+4. revisão e autorização específica.
+
+Arquivos vetoriais:
+
+- `docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`;
+- `docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`;
+- `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
+- `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
+
+O conjunto demonstra ausência de coleta automática, alternativas de acesso, modalidades equivalentes, compartilhamento mínimo, finalidade, privacidade, rascunho protegido, revisão, controles e autorização específica.
 
 ## 8. Tela Hoje
 
 A Tela Hoje é a superfície recorrente posterior à compreensão inicial suficiente, revisável e autorizada.
-
-Quando localização estiver autorizada e houver utilidade material, poderá apresentar `Perto de mim`, com `Abrir no mapa`.
 
 ## 9. Explorar e Mapa
 
@@ -142,87 +151,33 @@ Quando localização estiver autorizada e houver utilidade material, poderá apr
 Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-Arquivos vetoriais:
+A UXA-024 a UXA-033 estabelecem o Mapa principal, uso sem localização, Lista, estado sem resultados e referência para computador.
 
-- `docs/assets/wireframes/uxa-024-opportunity-map-mobile.svg`;
-- `docs/assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg`;
-- `docs/assets/wireframes/uxa-028-opportunity-map-list-mobile.svg`;
-- `docs/assets/wireframes/uxa-030-opportunity-map-no-results-mobile.svg`;
-- `docs/assets/wireframes/uxa-032-opportunity-map-desktop.svg`;
-- `docs/assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg`.
-
-## 10. Estado sem localização
-
-A UXA-026 e a UXA-027 estabelecem que localização não é requisito universal para utilizar o Mapa.
-
-A pessoa pode escolher região manual, pesquisar, filtrar, salvar, abrir detalhes e definir origem específica sem compartilhar posição.
-
-## 11. Visualização em Lista
-
-A UXA-028 e a UXA-029 estabelecem a Lista como representação textual integral da mesma consulta territorial do Mapa.
-
-A Lista preserva contexto, região, busca, filtros, quantidade, atualização, ordenação, cartões comparáveis, seleção, explicação, relação comercial e operação sem mapa carregado.
-
-## 12. Estado sem resultados
-
-A UXA-030 e a UXA-031 estabelecem que o total zero representa somente ausência de correspondências para a consulta executada.
-
-O estado preserva contexto, cobertura verificável, revisão antes de ajustes, `Desfazer` condicional, seleção anterior, distinção entre ausência e falha, localização opcional e ausência de preenchimento patrocinado artificial.
-
-## 13. Referência para computador validada
-
-A UXA-032 e a UXA-033 estabelecem a primeira referência validada para tela ampla.
-
-A reformulação demonstra:
-
-- faixa `Consulta territorial ativa`;
-- filtros semanticamente consistentes;
-- `Visão dividida ativa`;
-- foco no Mapa ou na Lista com contexto preservado;
-- retorno à visão dividida;
-- movimento do Mapa sem atualização silenciosa;
-- `Pesquisar nesta área` condicionado ao movimento;
-- seleção `Marcador 1` sincronizada;
-- cartões comparáveis com origem e explicação;
-- `Entender ordenação`;
-- relação comercial rotulada;
-- painel contextual recolhível;
-- recuperação do estado zero concentrada no painel de consulta;
-- seleção anterior explicável;
-- Lista integral sem mapa carregado.
-
-A referência possui dois arquivos de 1.440 por 1.024 pixels e é funcionalmente válida após reformulação.
-
-Ela não conclui responsividade, pontos de quebra, tablet, design, protótipo, teste com usuários, acessibilidade técnica ou desenvolvimento.
-
-## 14. Estados funcionais do Mapa
-
-A UXA-025 governa localização desativada, aproximada e temporária, ausência de resultados, carregamento, baixa conectividade, item indisponível, endereço protegido, permissão revogada, erro de fonte, contexto sem gate e mapa indisponível.
-
-A UXA-026 a UXA-033 materializam e validam o uso sem localização, a Lista, o estado sem resultados e a referência para computador. Os demais wireframes permanecem atos separados.
-
-## 15. Gate de personalização
+## 10. Gate de personalização
 
 Personalização material exige base suficiente, origem e finalidade identificadas, revisão real, controles e autorização compatível.
 
+Criar conta, digitar, gravar, enviar arquivo ou concluir relato não autoriza personalização.
+
 Sem gate, a pessoa pode continuar sem personalização, explorar, corrigir, pausar ou excluir.
 
-## 16. Gate de alinhamento à Fundação
+## 11. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 17. Próximos atos governados
+## 12. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar o wireframe gráfico do início protegido;
+1. validar funcionalmente o wireframe móvel do início protegido;
 2. criar a referência móvel da Home;
 3. validar a revisão da compreensão inicial;
 4. validar a transição para a primeira Tela Hoje;
-5. criar outros estados alternativos do Mapa;
-6. criar referência específica para tablet, caso priorizada;
-7. retomar independentemente os testes dos Resultados Empresariais.
+5. criar estados especializados de texto, voz e arquivos;
+6. criar referência do início protegido para computador;
+7. criar outros estados do Mapa;
+8. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.
