@@ -2,19 +2,18 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.6.0
+version: 5.7.0
 owner: Guivos
 last_updated: 2026-07-27
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.8.0
+  - ROADMAP-12.9.0
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
   - UXA-000
-  - UXA-004
   - UXA-020
   - UXA-021
   - UXA-022
@@ -29,6 +28,7 @@ related:
   - UXA-031
   - UXA-032
   - UXA-033
+  - UXA-034
   - M7.20
   - M7.21
   - M7.22
@@ -44,6 +44,7 @@ related:
   - M7.32
   - M7.33
   - M7.34
+  - M7.35
 normative: false
 ---
 
@@ -68,49 +69,42 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.22 | Concluído | Home pública validada e reformulada |
 | M7.23 | Concluído | wireframe da Home para computador criado |
 | M7.24 | Concluído | início protegido validado e reformulado |
-| M7.25 | Concluído | wireframe móvel do Mapa criado |
-| M7.26 | Concluído | Mapa funcionalmente validado e reformulado |
-| M7.27 | Concluído | estado sem localização criado |
-| M7.28 | Concluído | estado sem localização validado e reformulado |
-| M7.29 | Concluído | visualização em Lista criada |
-| M7.30 | Concluído | visualização em Lista validada e reformulada |
-| M7.31 | Concluído | estado sem resultados criado |
-| M7.32 | Concluído | estado sem resultados validado e reformulado |
-| M7.33 | Concluído | referência do Mapa para computador criada |
-| M7.34 | Concluído neste incremento | referência do Mapa para computador funcionalmente validada e reformulada |
+| M7.25–M7.34 | Concluído | Mapa móvel, estados alternativos e referência desktop criados e validados |
+| M7.35 | Concluído neste incremento | wireframe móvel do início protegido da jornada criado |
 
 ## 3. Marco vigente
 
-### Referência do Mapa para Computador Funcionalmente Validada e Reformulada — M7.34
+### Wireframe Móvel do Início Protegido da Jornada Criado — M7.35
 
 Critérios atendidos:
 
-- validação registrada em UXA-033;
-- UXA-032 elevada para 0.2.0 e estado ativo;
-- faixa compartilhada da consulta territorial;
-- filtros resumidos e detalhados semanticamente consistentes;
-- visão dividida declarada como padrão;
-- foco no Mapa ou na Lista com contexto preservado;
-- retorno à visão dividida;
-- movimento do Mapa sem atualização silenciosa;
-- `Pesquisar nesta área` condicionado a movimento pendente;
-- seleção `Marcador 1` vinculada no Mapa, cartão e painel;
-- cartões secundários comparáveis e explicáveis;
-- relação comercial explicitamente rotulada;
-- painel contextual recolhível;
-- recuperação do total zero concentrada no painel de consulta;
-- seleção anterior explicável sem alterar o total zero;
-- localização opcional e região manual preservadas;
-- Lista integral sem mapa carregado;
-- responsividade, tablet, tecnologia, design, protótipo, testes e desenvolvimento não iniciados;
+- referência registrada em UXA-034;
+- contrato funcional da UXA-023 preservado;
+- quatro arquivos vetoriais criados em 390 por 844 pixels;
+- explicação anterior à autenticação materializada;
+- ausência de coleta automática declarada;
+- alternativas para continuar, entender, voltar e explorar sem personalização;
+- entrar, criar conta e recuperar acesso demonstrados;
+- criação de conta separada de autorização;
+- texto, voz, arquivo e perguntas opcionais como modalidades equivalentes;
+- compartilhamento mínimo e progressivo demonstrado;
+- finalidade e privacidade visíveis;
+- rascunho não processado declarado;
+- pausa, salvamento e exclusão diferenciados;
+- inventário do conteúdo recebido materializado;
+- correção, remoção e limitação demonstradas;
+- autorização específica posterior à revisão;
+- personalização bloqueada antes do gate;
+- validação funcional do conjunto preservada como ato posterior;
+- autenticação, gravação, upload, IA, design, protótipo, testes e desenvolvimento não iniciados;
 - Resultados Empresariais preservados em 18 decisões e zero Resultados canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
-### Referência do Mapa para Computador Criada — M7.33
+### Referência do Mapa para Computador Validada — M7.34
 
-A UXA-032 permanece como a materialização dos dois estados em 1.440 por 1.024 pixels.
+A UXA-032 e a UXA-033 permanecem como referência funcionalmente validada e reformulada para tela ampla.
 
 ### Estado sem Resultados Validado — M7.32
 
@@ -130,7 +124,7 @@ O Mapa principal permanece funcionalmente validado, com filtros, resultados, pri
 
 ### Início Protegido Validado — M7.24
 
-O início protegido permanece funcionalmente validado, com coleta consciente, revisão e personalização bloqueada antes do gate.
+A UXA-023 permanece como autoridade funcional do início protegido, com explicação anterior à autenticação, compartilhamento mínimo, revisão e personalização bloqueada antes do gate.
 
 ### Página Inicial Pública Validada — M7.22
 
@@ -147,7 +141,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Arquitetura de Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Arquitetura de Negócios | ativa; decisões humanas concluídas e reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa; referência desktop do Mapa validada e reformulada |
+| Arquitetura da Experiência | ativa; wireframe móvel do início protegido criado |
 | Arquitetura de Produtos | planejada; não iniciada |
 | Revisão entre Arquiteturas | planejada |
 
@@ -159,12 +153,14 @@ Após integração e nova autorização, poderão ocorrer em incrementos separad
 
 ### Arquitetura da Experiência
 
-1. criar o wireframe do início protegido;
+1. validar funcionalmente o wireframe móvel do início protegido;
 2. criar a referência móvel da Home;
 3. validar a revisão da compreensão inicial;
 4. validar a transição para a primeira Tela Hoje;
-5. criar outros estados alternativos do Mapa;
-6. criar referência específica para tablet, caso priorizada.
+5. criar estados especializados de texto, voz e arquivos;
+6. criar a referência do início protegido para computador;
+7. criar outros estados alternativos do Mapa;
+8. criar referência para tablet, caso priorizada.
 
 ### Arquitetura de Negócios
 
