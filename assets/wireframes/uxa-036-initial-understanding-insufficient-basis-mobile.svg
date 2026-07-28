@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Base autorizada insuficiente para compreensão inicial</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade que declara ausência de base suficiente sem criar hipótese ou Próximo Passo pessoal e oferece revisão, compartilhamento voluntário ou continuidade sem personalização.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
+  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Voltar ao início protegido</text>
+  <line x1="16" y1="50" x2="374" y2="50" stroke="#cccccc"/>
+
+  <text x="20" y="80" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · BASE INSUFICIENTE</text>
+  <text x="20" y="112" font-family="Arial, sans-serif" font-size="19" font-weight="700">Ainda não há base autorizada suficiente</text>
+  <text x="20" y="136" font-family="Arial, sans-serif" font-size="9">Não prepararemos uma hipótese artificial sobre seu momento.</text>
+
+  <rect x="20" y="158" width="350" height="94" rx="10" fill="#f3f3f3" stroke="#777777"/>
+  <text x="36" y="182" font-family="Arial, sans-serif" font-size="11" font-weight="700">O que isso significa</text>
+  <text x="36" y="204" font-family="Arial, sans-serif" font-size="9">Os conteúdos autorizados não sustentam uma compreensão</text>
+  <text x="36" y="222" font-family="Arial, sans-serif" font-size="9">com segurança suficiente neste momento.</text>
+  <text x="36" y="242" font-family="Arial, sans-serif" font-size="8">Nenhum diagnóstico, recomendação pessoal ou pontuação foi criado.</text>
+
+  <text x="20" y="288" font-family="Arial, sans-serif" font-size="12" font-weight="700">Base considerada</text>
+  <rect x="20" y="302" width="350" height="106" rx="9" fill="#ffffff" stroke="#999999"/>
+  <text x="36" y="326" font-family="Arial, sans-serif" font-size="10" font-weight="700">T1 · Texto curto autorizado</text>
+  <text x="36" y="348" font-family="Arial, sans-serif" font-size="9">“Quero mudar alguma coisa, mas ainda não sei o quê.”</text>
+  <text x="36" y="370" font-family="Arial, sans-serif" font-size="8">Origem: relato revisado · Uso: somente esta tentativa</text>
+  <text x="36" y="394" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver inventário e autorizações</text>
+
+  <text x="20" y="448" font-family="Arial, sans-serif" font-size="12" font-weight="700">O que permanece desconhecido</text>
+  <rect x="20" y="462" width="350" height="96" rx="9" fill="#f7f7f7" stroke="#999999"/>
+  <text x="36" y="486" font-family="Arial, sans-serif" font-size="9">• área da vida ou contexto relacionado;</text>
+  <text x="36" y="510" font-family="Arial, sans-serif" font-size="9">• mudança desejada e prioridade atual;</text>
+  <text x="36" y="534" font-family="Arial, sans-serif" font-size="9">• evidência suficiente para reconhecer avanço ou possibilidade.</text>
+  <text x="36" y="550" font-family="Arial, sans-serif" font-size="8">Essas lacunas não serão preenchidas com suposições.</text>
+
+  <rect x="20" y="582" width="350" height="46" rx="9" fill="#222222"/>
+  <text x="195" y="611" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Revisar o que já compartilhei</text>
+  <rect x="20" y="640" width="350" height="44" rx="9" fill="#ffffff" stroke="#777777"/>
+  <text x="195" y="668" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Compartilhar algo adicional voluntariamente</text>
+  <text x="195" y="716" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Continuar sem personalização</text>
+  <text x="195" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Explorar o ecossistema de forma geral</text>
+  <text x="195" y="784" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Encerrar sem persistir compreensão</text>
+
+  <rect x="20" y="806" width="350" height="24" rx="8" fill="#f3f3f3" stroke="#999999"/>
+  <text x="195" y="822" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Você não precisa compartilhar mais para continuar usando a Guivos.</text>
+</svg>

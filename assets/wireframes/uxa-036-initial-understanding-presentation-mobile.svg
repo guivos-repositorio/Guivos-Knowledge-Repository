@@ -1,48 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Compreensão inicial apresentada como hipótese</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com Momento Atual, avanço reconhecível e possibilidade de Próximo Passo, incluindo origem, natureza, confiança, lacunas e alternativas.</desc>
+  <title id="title">Compreensão inicial apresentada como hipótese por afirmação</title>
+  <desc id="desc">Wireframe móvel reformulado que separa afirmações confirmadas, inferidas e desconhecidas, além de Momento Atual, avanço e possibilidade de Próximo Passo.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
-  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar</text>
+  <text x="370" y="34" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Voltar aos conteúdos</text>
   <line x1="16" y1="50" x2="374" y2="50" stroke="#cccccc"/>
 
-  <text x="20" y="80" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · HIPÓTESE</text>
-  <text x="20" y="112" font-family="Arial, sans-serif" font-size="20" font-weight="700">Como compreendemos este momento</text>
-  <rect x="20" y="132" width="350" height="68" rx="9" fill="#f3f3f3" stroke="#777777"/>
-  <text x="36" y="156" font-family="Arial, sans-serif" font-size="10" font-weight="700">Esta é uma hipótese inicial.</text>
-  <text x="36" y="178" font-family="Arial, sans-serif" font-size="9">Não é diagnóstico, certeza ou verdade definitiva.</text>
-  <text x="36" y="194" font-family="Arial, sans-serif" font-size="8">Você poderá corrigir, limitar, rejeitar ou excluir.</text>
+  <text x="20" y="80" font-family="Arial, sans-serif" font-size="10" fill="#555555">COMPREENSÃO INICIAL · HIPÓTESE NÃO CONFIRMADA</text>
+  <text x="20" y="112" font-family="Arial, sans-serif" font-size="19" font-weight="700">Como compreendemos este momento</text>
+  <rect x="20" y="130" width="350" height="66" rx="9" fill="#f3f3f3" stroke="#777777"/>
+  <text x="36" y="154" font-family="Arial, sans-serif" font-size="10" font-weight="700">Esta é uma hipótese inicial.</text>
+  <text x="36" y="176" font-family="Arial, sans-serif" font-size="9">Não é diagnóstico, certeza ou verdade definitiva.</text>
+  <text x="36" y="190" font-family="Arial, sans-serif" font-size="8">Cada afirmação pode ser corrigida, aberta, rejeitada ou excluída.</text>
 
-  <rect x="20" y="216" width="350" height="170" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="36" y="242" font-family="Arial, sans-serif" font-size="12" font-weight="700">Momento Atual compreendido</text>
-  <text x="36" y="268" font-family="Arial, sans-serif" font-size="9">Você relatou interesse em uma transição profissional</text>
-  <text x="36" y="286" font-family="Arial, sans-serif" font-size="9">e dificuldade para apresentar sua experiência.</text>
-  <rect x="36" y="304" width="126" height="24" rx="12" fill="#f1f1f1" stroke="#777777"/>
-  <text x="99" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Confirmado por você</text>
-  <rect x="170" y="304" width="164" height="24" rx="12" fill="#f1f1f1" stroke="#777777"/>
-  <text x="252" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Inferido · confiança moderada</text>
-  <text x="36" y="350" font-family="Arial, sans-serif" font-size="8">Lacuna: objetivo profissional específico ainda desconhecido.</text>
-  <text x="36" y="374" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver informações utilizadas, origem e finalidade</text>
+  <text x="20" y="228" font-family="Arial, sans-serif" font-size="12" font-weight="700">Momento Atual compreendido</text>
+  <rect x="20" y="242" width="350" height="106" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="266" font-family="Arial, sans-serif" font-size="10" font-weight="700">A1 · Interesse em transição profissional</text>
+  <text x="36" y="288" font-family="Arial, sans-serif" font-size="9">Você declarou que considera uma transição profissional.</text>
+  <text x="36" y="310" font-family="Arial, sans-serif" font-size="8">Natureza: confirmado por você · Origem: T1 · Finalidade: compreensão</text>
+  <text x="36" y="334" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver conteúdo de origem e revisar A1</text>
 
-  <rect x="20" y="400" width="350" height="120" rx="10" fill="#f7f7f7" stroke="#999999"/>
-  <text x="36" y="426" font-family="Arial, sans-serif" font-size="12" font-weight="700">Avanço reconhecível</text>
-  <text x="36" y="452" font-family="Arial, sans-serif" font-size="9">Ainda não há evidência suficiente de mudança relevante.</text>
-  <text x="36" y="474" font-family="Arial, sans-serif" font-size="9">Organizar sua experiência pode ser um ponto de partida,</text>
-  <text x="36" y="492" font-family="Arial, sans-serif" font-size="9">não um avanço já concluído.</text>
-  <text x="36" y="512" font-family="Arial, sans-serif" font-size="8">Criar conta ou enviar relato não conta como evolução.</text>
+  <rect x="20" y="360" width="350" height="112" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="384" font-family="Arial, sans-serif" font-size="10" font-weight="700">A2 · Possível dificuldade de apresentação</text>
+  <text x="36" y="406" font-family="Arial, sans-serif" font-size="9">Pode existir dificuldade para demonstrar sua experiência.</text>
+  <text x="36" y="428" font-family="Arial, sans-serif" font-size="8">Natureza: inferido pela Guivos · Confiança: moderada · Base: T1</text>
+  <text x="36" y="450" font-family="Arial, sans-serif" font-size="8">Confiança não equivale a certeza.</text>
+  <text x="268" y="450" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Revisar A2</text>
 
-  <rect x="20" y="534" width="350" height="176" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="36" y="560" font-family="Arial, sans-serif" font-size="12" font-weight="700">Possibilidade de Próximo Passo</text>
-  <text x="36" y="586" font-family="Arial, sans-serif" font-size="9">Organizar uma apresentação profissional pode fazer</text>
-  <text x="36" y="604" font-family="Arial, sans-serif" font-size="9">sentido porque você informou dificuldade para demonstrar</text>
-  <text x="36" y="622" font-family="Arial, sans-serif" font-size="9">sua experiência.</text>
-  <text x="36" y="646" font-family="Arial, sans-serif" font-size="8">Não garante oportunidade. Outros caminhos continuam disponíveis.</text>
-  <text x="36" y="670" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Por que esta possibilidade aparece?</text>
-  <text x="36" y="694" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ver alternativas e incertezas</text>
+  <rect x="20" y="484" width="350" height="70" rx="9" fill="#f7f7f7" stroke="#999999"/>
+  <text x="36" y="508" font-family="Arial, sans-serif" font-size="10" font-weight="700">D1 · Ainda desconhecido</text>
+  <text x="36" y="530" font-family="Arial, sans-serif" font-size="9">Objetivo profissional específico ainda não confirmado.</text>
+  <text x="36" y="546" font-family="Arial, sans-serif" font-size="8">Nenhuma suposição será usada para preencher esta lacuna.</text>
 
-  <rect x="20" y="730" width="350" height="48" rx="9" fill="#222222"/>
-  <text x="195" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffffff" font-weight="700">Revisar esta compreensão</text>
-  <text x="195" y="804" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Não representa meu momento</text>
-  <text x="195" y="828" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Voltar aos conteúdos de origem</text>
+  <rect x="20" y="568" width="350" height="88" rx="10" fill="#f7f7f7" stroke="#999999"/>
+  <text x="36" y="592" font-family="Arial, sans-serif" font-size="11" font-weight="700">Avanço reconhecível</text>
+  <text x="36" y="614" font-family="Arial, sans-serif" font-size="9">Ainda não há evidência suficiente de mudança relevante.</text>
+  <text x="36" y="634" font-family="Arial, sans-serif" font-size="8">Criar conta ou enviar relato não conta como evolução.</text>
+  <text x="272" y="650" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Entender critério</text>
+
+  <rect x="20" y="670" width="350" height="104" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="694" font-family="Arial, sans-serif" font-size="11" font-weight="700">Possibilidade de Próximo Passo</text>
+  <text x="36" y="716" font-family="Arial, sans-serif" font-size="9">Organizar uma apresentação profissional pode ser uma opção</text>
+  <text x="36" y="734" font-family="Arial, sans-serif" font-size="9">com base em A1 e A2. Não garante uma oportunidade.</text>
+  <text x="36" y="756" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Ver razão, alternativas, incertezas e rejeitar relação</text>
+
+  <rect x="20" y="790" width="350" height="40" rx="9" fill="#222222"/>
+  <text x="195" y="815" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Revisar cada afirmação</text>
 </svg>
