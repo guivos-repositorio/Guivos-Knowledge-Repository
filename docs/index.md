@@ -9,14 +9,14 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.36 — Wireframe Móvel do Início Protegido Funcionalmente Validado e Reformulado |
+| Marco | M7.37 — Wireframe Móvel da Compreensão Inicial Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Home pública | validada e materializada para computador |
 | Início protegido móvel | funcionalmente validado e reformulado |
+| Compreensão inicial móvel | quatro estados criados; validação funcional pendente |
 | Referência móvel da Home | não iniciada |
-| Compreensão inicial | contrato estabelecido; materialização pendente |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa e estados | funcionalmente validados e reformulados |
 | Engenharia de Produto | pausada antes de W0-01 |
@@ -29,44 +29,51 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ compreensão inicial revisável
-→ decisão sobre persistência e personalização
+→ processamento visível e interrompível
+→ compreensão inicial apresentada como hipótese
+→ revisão, correção, limitação ou rejeição
+→ decisão separada sobre persistência
+→ decisão separada sobre personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## Início protegido móvel validado
+## Compreensão inicial móvel
 
-A UXA-034 reformulada e a UXA-035 estabelecem quatro estados de 390 por 844 pixels:
+A UXA-036 estabelece quatro estados de 390 por 844 pixels:
 
-1. explicação anterior ao relato;
-2. acesso somente quando necessário;
-3. escolha de modalidade e rascunho mínimo;
-4. revisão anterior ao processamento específico.
+1. processamento visível e interrompível;
+2. compreensão inicial apresentada como hipótese;
+3. revisão, correção e limitação;
+4. decisões separadas sobre persistência e personalização.
 
 A referência demonstra:
 
-- relato pessoal separado de dados técnicos e de acesso;
-- estados nomeados e retomáveis;
-- ausência de formulário linear obrigatório;
-- modalidades equivalentes e sem seleção automática;
-- compartilhamento mínimo;
-- voz e arquivo com explicação anterior;
-- efeitos distintos de pausa, salvamento, saída e exclusão;
-- inventário antes do processamento;
-- autorização desmarcada e específica;
-- recusa sem processamento;
-- compreensão inicial temporária;
-- persistência e personalização bloqueadas antes do gate.
+- processamento limitado aos conteúdos autorizados;
+- inventário do que está dentro e fora do processamento;
+- hipótese sem diagnóstico ou certeza;
+- Momento Atual, avanço e possibilidade de Próximo Passo separados;
+- origem, natureza, confiança, lacunas e desconhecidos;
+- ausência de avanço quando não houver evidência;
+- correção e rejeição por afirmação;
+- relato original separado da interpretação;
+- persistência e personalização como decisões independentes;
+- continuidade sem personalização;
+- transição consciente para a Tela Hoje;
+- base insuficiente sem hipótese artificial.
 
 Arquivos:
 
-- `assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`;
-- `assets/wireframes/uxa-034-protected-entry-access-mobile.svg`;
-- `assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
-- `assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
+- `assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
+- `assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
+- `assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
+- `assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`.
 
-A validação não equivale a política jurídica final, segurança técnica, autenticação, armazenamento, voz, arquivos, IA, protótipo, teste ou implementação.
+A referência ainda não foi funcionalmente validada e não equivale a IA implementada, persistência, personalização, protótipo, teste ou desenvolvimento.
+
+## Início protegido móvel validado
+
+A UXA-034 reformulada e a UXA-035 estabelecem explicação anterior ao relato, acesso condicional, modalidades equivalentes, compartilhamento mínimo, revisão anterior ao processamento, autorização específica e recusa sem processamento.
 
 ## Acesso rápido
 
@@ -77,8 +84,8 @@ A validação não equivale a política jurídica final, segurança técnica, au
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
 - [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico da Validação do Início Protegido](project/canonical-consolidation-matrix-uxa-035-addendum.md)
-- [Histórico 1.58.0](project/changelog-1.58.0-uxa-035.md)
+- [Adendo Canônico da Compreensão Inicial](project/canonical-consolidation-matrix-uxa-036-addendum.md)
+- [Histórico 1.59.0](project/changelog-1.59.0-uxa-036.md)
 
 ### Arquiteturas e modelos
 
@@ -92,6 +99,7 @@ A validação não equivale a política jurídica final, segurança técnica, au
 - [Contrato do Início Protegido](experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Início Protegido](experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
 - [Validação do Wireframe Protegido](experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md)
+- [Wireframe da Compreensão Inicial](experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md)
 - [Wireframe do Mapa](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Mapa para Computador](experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
 - [Validação Desktop](experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
@@ -105,7 +113,7 @@ A validação não equivale a política jurídica final, segurança técnica, au
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: referência móvel da Home, materialização da compreensão inicial, primeira Tela Hoje, estados especializados do início protegido, referência para computador ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente: validação funcional da compreensão inicial móvel, referência móvel da Home, primeira Tela Hoje, estados especializados do início protegido, referência para computador ou retomada dos testes dos Resultados Empresariais.
 
 ## Regra de precedência
 

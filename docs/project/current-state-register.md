@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.63.0
+version: 1.64.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-07-27
+last_updated: 2026-07-28
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -37,13 +37,14 @@ related:
   - UXA-033
   - UXA-034
   - UXA-035
+  - UXA-036
   - GEM-CLOSURE-REVIEW-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.10.0
-  - M7.36
+  - ROADMAP-12.11.0
+  - M7.37
 normative: true
 ---
 
@@ -58,26 +59,21 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | wireframe móvel do início protegido funcionalmente validado e reformulado | M7.36; UXA-034; UXA-035 |
+| Marco atual | wireframe móvel da compreensão inicial criado | M7.37; UXA-036 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até a validação do início protegido móvel | UXA-000 a UXA-035 |
+| Arquitetura da Experiência | ativa até o wireframe da compreensão inicial | UXA-000 a UXA-036 |
 | Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
 | Referência móvel da Home | não iniciada | — |
 | Início protegido móvel | funcionalmente validado e reformulado em quatro estados | UXA-020; UXA-023; UXA-034; UXA-035 |
-| Referência do início protegido para computador | não iniciada | — |
-| Compreensão inicial | contrato estabelecido; materialização e validação especializadas pendentes | UXA-011-A1; UXA-020; UXA-023; UXA-035 |
-| Gate de persistência e personalização | bloqueado antes de compreensão apresentada, revisada e autorizada | UXA-011-A1; UXA-023; UXA-034; UXA-035 |
+| Compreensão inicial móvel | quatro estados criados; validação funcional especializada pendente | UXA-011-A1; UXA-036 |
+| Referência do início protegido e compreensão para computador | não iniciada | — |
+| Gate de persistência e personalização | bloqueado antes de compreensão apresentada, revisada e autorizada | UXA-011-A1; UXA-035; UXA-036 |
 | Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | funcionalmente validado e reformulado | UXA-004; UXA-024; UXA-025 |
-| Estado sem localização | funcionalmente validado e reformulado | UXA-026; UXA-027 |
-| Visualização em Lista do Mapa | funcionalmente validada e reformulada | UXA-028; UXA-029 |
-| Estado sem resultados | funcionalmente validado e reformulado | UXA-030; UXA-031 |
-| Referência do Mapa para computador | funcionalmente validada e reformulada | UXA-032; UXA-033 |
+| Mapa e estados | funcionalmente validados e reformulados, inclusive referência desktop | UXA-024 a UXA-033 |
 | Referência para tablet | não iniciada | — |
-| Demais estados do Mapa | governados; wireframes não iniciados | UXA-025 |
 | Detalhe de Oportunidade | validado e reformulado | UXA-007; UXA-012 |
 | Cadastro pela Organização | validado e reformulado | UXA-008; UXA-013 |
 | Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
@@ -112,8 +108,11 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ compreensão inicial revisável
-→ decisão sobre persistência e personalização
+→ processamento visível e interrompível
+→ compreensão inicial apresentada como hipótese
+→ revisão, correção, limitação ou rejeição
+→ decisão separada sobre persistência
+→ decisão separada sobre personalização
 → Tela Hoje, jornada sem personalização ou exploração geral
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
@@ -122,58 +121,69 @@ O Mapa não entra entre a Home e a Tela Hoje.
 
 ## 5. Início protegido móvel validado
 
-A UXA-023 permanece como contrato funcional. A UXA-034 reformulada e a UXA-035 estabelecem quatro estados móveis de 390 por 844 pixels:
+A UXA-034 reformulada e a UXA-035 estabelecem:
 
-1. explicação anterior ao relato;
-2. acesso somente quando necessário;
-3. escolha de modalidade e rascunho mínimo;
-4. revisão anterior ao processamento específico.
+- relato pessoal separado de dados técnicos e de acesso;
+- estados nomeados, pausáveis e retomáveis;
+- acesso somente quando necessário;
+- modalidades equivalentes e sem seleção automática;
+- compartilhamento mínimo;
+- revisão anterior ao processamento;
+- autorizações específicas e inicialmente desmarcadas;
+- recusa sem processamento;
+- persistência e personalização bloqueadas antes do gate.
+
+## 6. Wireframe móvel da compreensão inicial
+
+A UXA-036 materializa quatro estados de 390 por 844 pixels:
+
+1. processamento visível e interrompível;
+2. compreensão inicial apresentada como hipótese;
+3. revisão, correção e limitação;
+4. decisões separadas sobre persistência e personalização.
 
 O conjunto demonstra:
 
-- relato pessoal separado de dados técnicos e de acesso;
-- estados nomeados, pausáveis e retomáveis, sem formulário linear obrigatório;
-- ação inicial com destino explícito;
-- sessão válida sem repetição do acesso;
-- texto, voz, arquivo e perguntas opcionais sem seleção automática;
-- explicação anterior para voz e arquivo;
-- compartilhamento mínimo;
-- efeitos distintos de pausa, salvamento, saída e exclusão;
-- inventário antes do processamento;
-- autorizações inicialmente desmarcadas;
-- uso limitado à preparação de compreensão inicial temporária e revisável;
-- recusa sem processamento;
-- persistência e personalização bloqueadas até a revisão da compreensão inicial;
-- exploração sem personalização disponível.
+- processamento limitado aos itens autorizados;
+- inventário do que está dentro e fora do processamento;
+- finalidade e operações em linguagem compreensível;
+- interrupção, revisão de autorizações e exclusão do resultado temporário;
+- distinção entre Momento Atual, avanço e possibilidade de Próximo Passo;
+- origem, natureza, confiança, lacunas e desconhecidos;
+- ausência de diagnóstico, certeza ou pontuação universal;
+- confirmação parcial e rejeição por afirmação;
+- relato original separado da interpretação derivada;
+- retirada de autorização e exclusão como controles distintos;
+- persistência e personalização como decisões independentes e desmarcadas;
+- continuidade sem personalização;
+- retorno ao início protegido;
+- transição consciente para a Tela Hoje;
+- estado de base insuficiente governado sem hipótese artificial.
 
 Arquivos vetoriais:
 
-- `docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
+- `docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`.
 
-A validação não conclui política jurídica, segurança técnica, autenticação, armazenamento, voz, arquivos, IA, compreensão inicial gráfica, referência para computador, protótipo, teste com usuários ou implementação.
-
-## 6. Mapa e estados validados
-
-O Mapa principal, o uso sem localização, a Lista territorial, o estado sem resultados e a referência para computador permanecem funcionalmente validados e reformulados pelas UXA-024 a UXA-033.
+A referência ainda não foi funcionalmente validada. Ela não conclui IA, política jurídica, segurança, persistência, personalização, protótipo, teste com usuários ou implementação.
 
 ## 7. Proteções vigentes
 
 - nenhum relato é solicitado antes da explicação;
 - dados de acesso não são tratados como conteúdo da jornada;
 - autenticação não autoriza processamento;
-- acesso aparece somente quando necessário;
-- modalidades permanecem equivalentes;
-- voz e arquivo exigem explicação anterior;
-- compartilhamento mínimo é legítimo;
-- pausa, salvar, sair e excluir possuem efeitos distintos;
-- revisão antecede processamento;
-- autorizações são específicas e inicialmente desmarcadas;
-- recusa não inicia processamento;
-- persistência e personalização dependem do gate;
-- localização permanece opcional;
+- processamento utiliza somente itens revisados e autorizados;
+- a compreensão é hipótese corrigível, não diagnóstico;
+- confiança não equivale a certeza;
+- ausência de evidência não é preenchida artificialmente;
+- engajamento não é confundido com evolução;
+- relato original e interpretação permanecem separados;
+- persistência não autoriza personalização;
+- personalização não cria novas finalidades;
+- continuar sem personalização permanece disponível;
+- localização continua opcional;
 - publicidade não aumenta relevância pessoal;
 - Engenharia de Produto permanece pausada.
 
@@ -181,12 +191,12 @@ O Mapa principal, o uso sem localização, a Lista territorial, o estado sem res
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar a referência móvel da Página Inicial pública;
-2. materializar a revisão da compreensão inicial;
-3. validar a transição para a primeira Tela Hoje;
-4. criar estados especializados de texto, voz e arquivos;
-5. criar referência do início protegido para computador;
-6. criar estados de processamento, pausa, falha e retomada;
-7. retomar independentemente a reaplicação dos quatro testes dos Resultados Empresariais.
+1. validar funcionalmente o wireframe móvel da compreensão inicial;
+2. criar a referência móvel da Home;
+3. validar a transição da compreensão para a primeira Tela Hoje;
+4. criar estados de processamento, pausa, falha e retomada;
+5. criar referência do início protegido e da compreensão para computador;
+6. criar estados especializados de texto, voz e arquivos;
+7. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

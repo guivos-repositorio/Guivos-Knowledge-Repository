@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.36 — Wireframe Móvel do Início Protegido Funcionalmente Validado e Reformulado |
+| Marco | M7.37 — Wireframe Móvel da Compreensão Inicial Criado |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
 | Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
@@ -18,8 +18,8 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Resultados canônicos | nenhum criado |
 | Home pública | validada e materializada para computador |
 | Início protegido móvel | funcionalmente validado e reformulado |
+| Compreensão inicial móvel | quatro estados criados; validação funcional pendente |
 | Referência móvel da Home | não iniciada |
-| Compreensão inicial | contrato estabelecido; materialização pendente |
 | Tela Hoje | entrada recorrente após compreensão confirmada |
 | Mapa e estados | funcionalmente validados e reformulados |
 | Referência para tablet | não iniciada |
@@ -35,47 +35,59 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ compreensão inicial revisável
-→ decisão sobre persistência e personalização
+→ processamento visível e interrompível
+→ compreensão inicial apresentada como hipótese
+→ revisão, correção, limitação ou rejeição
+→ decisão separada sobre persistência
+→ decisão separada sobre personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## Página Inicial e início protegido
+## Início protegido
 
-A Home explica concretamente o que é a Guivos, permite iniciar uma jornada ou explorar sem personalização e não coleta relato pessoal.
-
-A UXA-023 governa o início protegido. A UXA-034 reformulada e a UXA-035 validam quatro estados móveis de 390 por 844 pixels:
+A UXA-034 reformulada e a UXA-035 validam quatro estados móveis de 390 por 844 pixels:
 
 1. explicação anterior ao relato;
 2. acesso somente quando necessário;
 3. escolha de modalidade e rascunho mínimo;
 4. revisão anterior ao processamento específico.
 
-O conjunto demonstra:
+O conjunto separa dados de acesso, relato, processamento, persistência e personalização e permite recusa sem processamento.
 
-- relato pessoal separado de dados técnicos e de acesso;
-- estados nomeados, pausáveis e retomáveis;
-- ausência de formulário linear obrigatório;
-- sessão válida sem repetição da etapa de acesso;
-- texto, voz, arquivo e perguntas opcionais sem seleção automática;
-- compartilhamento mínimo;
-- explicação anterior para voz e arquivo;
-- pausa, salvamento, saída e exclusão com efeitos distintos;
-- inventário antes do processamento;
-- autorização específica e inicialmente desmarcada;
-- preparação apenas de compreensão inicial temporária e revisável;
-- recusa sem processamento;
-- persistência e personalização bloqueadas até a revisão da compreensão.
+## Compreensão inicial móvel
+
+A UXA-036 cria quatro estados de 390 por 844 pixels:
+
+1. processamento visível e interrompível;
+2. compreensão inicial apresentada como hipótese;
+3. revisão, correção e limitação;
+4. decisões separadas sobre persistência e personalização.
+
+A referência apresenta:
+
+- processamento limitado aos conteúdos autorizados;
+- inventário do que está dentro e fora do processamento;
+- finalidade e operações em linguagem compreensível;
+- hipótese sem diagnóstico ou certeza;
+- Momento Atual, avanço e possibilidade de Próximo Passo separados;
+- origem, natureza, confiança, lacunas e desconhecidos;
+- ausência de avanço quando não houver evidência suficiente;
+- correção e rejeição por afirmação;
+- relato original separado da interpretação;
+- persistência e personalização como decisões independentes;
+- continuidade sem personalização;
+- transição consciente para a Tela Hoje;
+- estado de base insuficiente sem hipótese artificial.
 
 Arquivos:
 
-- `docs/assets/wireframes/uxa-034-protected-entry-explanation-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-access-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-sharing-mobile.svg`;
-- `docs/assets/wireframes/uxa-034-protected-entry-review-mobile.svg`.
+- `docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
+- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`.
 
-A validação não conclui autenticação, segurança técnica, armazenamento, gravação, upload, IA, protótipo, teste ou desenvolvimento.
+A referência ainda não foi funcionalmente validada e não conclui IA, segurança, armazenamento, persistência, personalização, protótipo, teste ou desenvolvimento.
 
 ## Mapa de Oportunidades
 
@@ -100,12 +112,12 @@ A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torn
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
+- validação funcional do wireframe móvel da compreensão inicial;
 - referência móvel da Home;
-- materialização da revisão da compreensão inicial;
 - validação da primeira Tela Hoje após a transição;
-- estados especializados de texto, voz e arquivos;
-- referência do início protegido para computador;
 - estados de processamento, pausa, falha e retomada;
+- estados especializados de texto, voz e arquivos;
+- referência do início protegido e da compreensão para computador;
 - reaplicação dos quatro testes dos Resultados Empresariais.
 
 ## Backlog estratégico preservado
@@ -134,10 +146,11 @@ Após Resultados e Capacidades Empresariais, o portfólio será reavaliado a par
 - [Contrato do Início Protegido](docs/experience-architecture/uxa-023-protected-journey-entry-functional-validation-and-reformulation.md)
 - [Wireframe do Início Protegido](docs/experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
 - [Validação do Wireframe Protegido](docs/experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md)
+- [Wireframe da Compreensão Inicial](docs/experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md)
 - [Wireframe do Mapa](docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Validação Desktop do Mapa](docs/experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md)
-- [Adendo Canônico UXA-035](docs/project/canonical-consolidation-matrix-uxa-035-addendum.md)
-- [Histórico 1.58.0](docs/project/changelog-1.58.0-uxa-035.md)
+- [Adendo Canônico UXA-036](docs/project/canonical-consolidation-matrix-uxa-036-addendum.md)
+- [Histórico 1.59.0](docs/project/changelog-1.59.0-uxa-036.md)
 - [Guivos Enterprise Architecture](docs/enterprise-architecture/index.md)
 - [Guivos Journey — PAS-001](docs/product-architecture/pas-001-guivos-journey.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
