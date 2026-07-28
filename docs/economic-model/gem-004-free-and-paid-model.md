@@ -1,10 +1,10 @@
 ---
 id: GEM-004
 title: Modelo Gratuito e Pago
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-07-28
 parent: GEM-000
 depends_on:
   - GEM-003
@@ -14,7 +14,12 @@ related:
   - GEM-004-PLAN-ARCHETYPE-CATALOG-001
   - GEM-004-PAYWALL-POLICY-001
   - GEM-004-PLAN-CONTRACT-001
+  - GEM-004-A1
+  - GEM-004-A2
+  - GEM-010-A1
+  - GEM-COMMERCIAL-BASELINE-001
   - M6.3
+  - M7.39
 ---
 
 # GEM-004 — Modelo Gratuito e Pago
@@ -23,9 +28,11 @@ related:
 
 Definir como o Ecossistema Guivos distribui capacidades entre acesso gratuito, acesso pago e acesso financiado por terceiros, preservando valor universal, autonomia, segurança, transparência e sustentabilidade.
 
+A versão 0.2.0 incorpora a baseline comercial candidata de planos, benefícios, limites e preços para Pessoas, Coletivos e Organizações.
+
 ## 2. Pergunta arquitetural
 
-> Qual valor mínimo toda pessoa deverá conseguir acessar gratuitamente e quais ampliações poderão ser oferecidas de forma paga sem enfraquecer artificialmente o gratuito, explorar vulnerabilidade ou comprometer autonomia, segurança e propósito?
+> Qual valor mínimo toda pessoa, Coletivo ou Organização deverá conseguir acessar gratuitamente e quais ampliações poderão ser oferecidas de forma paga sem enfraquecer artificialmente o gratuito, explorar vulnerabilidade ou comprometer autonomia, segurança e propósito?
 
 ## 3. Sequência de referência
 
@@ -34,6 +41,7 @@ valor universal gratuito
 → participação e benefício reais
 → necessidade adicional identificada
 → ampliação paga compreensível
+→ preço e limite transparentes
 → escolha livre
 → utilização
 → continuidade, alteração ou cancelamento
@@ -57,11 +65,15 @@ Capacidade adicional que amplia profundidade, velocidade, conveniência, persona
 
 ### Plano
 
-Conjunto organizado de capacidades, limites, direitos, condições e responsabilidades atribuído a um ator elegível.
+Conjunto organizado de capacidades, limites, direitos, condições, preços e responsabilidades atribuído a um ator elegível.
 
 ### Arquétipo de plano
 
-Estrutura conceitual para organizar planos futuros, sem estabelecer nome comercial, preço, SKU ou contrato definitivo.
+Estrutura conceitual que sustenta planos comerciais sem substituí-los.
+
+### Plano comercial candidato
+
+Composição documentada de nome, público, benefícios, limites e preço aprovada para validação, mas não para cobrança ou oferta pública.
 
 ### Entitlement
 
@@ -86,7 +98,12 @@ Acesso cujo custo é assumido por organização, patrocinador, parceiro, program
 7. organização ou patrocinador não receberá autoridade indevida;
 8. capacidade paga deverá possuir hipótese de valor e validação;
 9. diferenciação entre planos deverá ser compreensível;
-10. preço e implementação permanecem fora desta versão.
+10. preço candidato não autoriza cobrança;
+11. catálogo público e correspondência personalizada são objetos diferentes;
+12. assinatura, transação, comissão, taxa de pagamento e tributo são objetos diferentes;
+13. compra de plano não aumenta relevância, ranking, impacto ou evidência;
+14. publicações existentes não perderão visibilidade para pressionar upgrade;
+15. capacidade sem limite padrão permanece sujeita a contrato, uso justo e disponibilidade operacional.
 
 ## 6. Estados de capacidade
 
@@ -101,7 +118,7 @@ Acesso cujo custo é assumido por organização, patrocinador, parceiro, program
 - `prohibited_paywall`;
 - `not_assessed`.
 
-## 7. Arquétipos iniciais
+## 7. Arquétipos preservados
 
 1. AM-01 — Participante Universal;
 2. AM-02 — Participante Ampliado;
@@ -111,7 +128,34 @@ Acesso cujo custo é assumido por organização, patrocinador, parceiro, program
 6. AM-06 — Acesso de Parceiros e Profissionais;
 7. AM-07 — Acesso Organizacional.
 
-## 8. Requisitos mínimos de admissibilidade
+## 8. Planos comerciais candidatos
+
+### Pessoas
+
+- Guivos Free;
+- Guivos Plus;
+- Guivos Pro.
+
+### Coletivos
+
+- Coletivo Livre;
+- Coletivo Gestão;
+- Coletivo Impacto;
+- Coletivo Enterprise.
+
+### Organizações
+
+- Guivos Business Start;
+- Guivos Business Growth;
+- Guivos Business Scale.
+
+### Acesso transversal
+
+- Guivos Patrocinado ou financiado.
+
+Nomes, preços, benefícios e limites são governados pelo GEM-004-A1.
+
+## 9. Requisitos mínimos de admissibilidade
 
 Uma diferenciação somente poderá avançar quando:
 
@@ -123,36 +167,52 @@ Uma diferenciação somente poderá avançar quando:
 - cancelamento e downgrade forem possíveis;
 - dados e acessos de terceiros estiverem limitados;
 - riscos operacionais e de exclusão forem reconhecidos;
-- hipóteses e evidências estiverem registradas.
+- hipóteses e evidências estiverem registradas;
+- o catálogo público não for ocultado para pressionar pagamento;
+- o limite estiver associado a custo, risco, capacidade ou diferenciação legítima;
+- compromisso já assumido permanecer protegido no downgrade ou cancelamento.
 
-## 9. Limites desta versão
+## 10. Baseline comercial vigente
 
-O GEM-004 não define:
+A baseline candidata está distribuída em:
 
-- nomes comerciais finais;
-- preços, moedas ou descontos;
-- limites quantitativos definitivos;
-- períodos de cobrança;
-- duração final de trials;
-- contratos;
-- gateway, adquirente ou sistema de pagamento;
-- metas de conversão;
-- unit economics;
-- implementação de entitlement;
+- GEM-004-A1 — planos, benefícios, limites e preços;
+- GEM-004-A2 — oferta, upgrade, downgrade e cancelamento;
+- GEM-010-A1 — premissas de preço, custos e validação;
+- GEM-COMMERCIAL-BASELINE-001 — parecer de reabertura localizada.
+
+O conjunto é documentalmente definido e empiricamente não validado.
+
+## 11. Limites desta versão
+
+A versão 0.2.0 não aprova:
+
 - oferta pública;
+- cobrança;
+- SKU técnico;
+- limites de infraestrutura;
+- comissão transacional;
+- gateway ou adquirente;
+- tributos finais;
+- reembolso;
+- metas de conversão;
+- unit economics calibrados;
+- contratos;
+- implementação de entitlement;
 - produção.
 
-## 10. Critérios de conclusão
+## 12. Critérios de conclusão documental
 
 - valor universal definido;
 - capacidades essenciais protegidas;
 - ampliações pagas catalogadas;
-- sete arquétipos definidos;
-- matriz de alocação publicada;
-- elegibilidade e acesso financiado estruturados;
-- ciclo de vida documentado;
-- política de paywall definida;
-- regras de upgrade, downgrade e cancelamento publicadas;
-- contrato canônico disponível;
-- nove cenários e quatorze gates documentados;
-- pendências do GEM-005 explícitas.
+- arquétipos preservados;
+- planos comerciais candidatos para Pessoas, Coletivos e Organizações consolidados;
+- preços e limites candidatos registrados;
+- acesso financiado estruturado;
+- regras de cotas documentadas;
+- separação entre assinatura e transação estabelecida;
+- política de oferta e paywall definida;
+- upgrade, downgrade e cancelamento publicados;
+- premissas financeiras e gates de validação registrados;
+- pendências empíricas, operacionais e especializadas explícitas.
