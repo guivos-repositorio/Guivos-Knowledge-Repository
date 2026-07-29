@@ -2,7 +2,7 @@
 id: GEM-000
 title: Guivos Economic Model
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
 last_updated: 2026-07-28
 related:
@@ -15,14 +15,18 @@ related:
   - GEM-005
   - GEM-006
   - GEM-007
+  - GEM-007-A1
   - GEM-008
   - GEM-009
   - GEM-010
   - GEM-010-A1
+  - GEM-010-A2
   - GEM-CLOSURE-REVIEW-001
   - GEM-COMMERCIAL-BASELINE-001
+  - GEM-OPPORTUNITY-BOOST-REVIEW-001
   - GKR-STRATEGIC-RESEQUENCING-001
   - M7.39
+  - M7.40
 ---
 
 # Guivos Economic Model
@@ -31,11 +35,11 @@ O Guivos Economic Model é o domínio responsável por descrever como a Guivos s
 
 ## Estado atual
 
-`Commercial baseline documentarily defined — validation and calibration pending`.
+`Opportunity Boost candidate baseline documentarily defined — validation and calibration pending`.
 
-O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. A reabertura localizada de GEM-004 e GEM-010 consolidou planos, benefícios, limites e preços candidatos para Pessoas, Coletivos e Organizações.
+O domínio concluiu sua arquitetura documental inicial em GEM-001 a GEM-010. Reaberturas localizadas consolidaram planos, benefícios, limites e preços candidatos para Pessoas, Coletivos e Organizações e definiram o Opportunity Boost como mecanismo publicitário candidato.
 
-O estado vigente não aprova oferta pública, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.
+O estado vigente não aprova oferta pública, campanha real, cobrança, orçamento, projeção oficial, contabilização, valuation ou operação.
 
 Autoridades principais:
 
@@ -43,7 +47,10 @@ Autoridades principais:
 - [Revisão da Baseline Comercial de Planos e Preços](gem-commercial-plans-baseline-review.md);
 - [Catálogo Comercial Candidato de Planos, Benefícios e Preços](gem-004-a1-commercial-plans-pricing-catalog.md);
 - [Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento](gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md);
-- [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md).
+- [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md);
+- [Opportunity Boost — Contrato Econômico e entre Produtos](gem-007-a1-opportunity-boost-economic-and-product-contract.md);
+- [Opportunity Boost — Preços, Orçamento e Mensuração](gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md);
+- [Revisão da Baseline do Opportunity Boost](gem-opportunity-boost-baseline-review.md).
 
 ## Princípio central
 
@@ -62,7 +69,7 @@ necessidade ou potencial
 → valor percebido e/ou comprovado
 → família de receita conceitualmente admissível
 → modelo gratuito, pago ou financiado
-→ plano, benefício, limite e preço candidato
+→ plano, benefício, limite, preço ou add-on candidato
 → progresso, reconhecimento ou recompensa
 → parceiro e relacionamento elegíveis
 → produto responsável e produtos contribuintes
@@ -90,6 +97,8 @@ necessidade ou potencial
 - nomes, benefícios, limites e preços candidatos;
 - elegibilidade, entitlements e ciclo de vida;
 - oferta, upgrade, downgrade e cancelamento;
+- publicidade, patrocínio e Opportunity Boost;
+- inventário patrocinado, orçamento, mensuração e reconciliação candidatos;
 - progresso, reconhecimento e recompensas;
 - pontos, créditos e benefícios;
 - fontes de financiamento e cobertura;
@@ -246,7 +255,8 @@ necessidade ou potencial
 - [Fronteiras de Capacidades e Custos Compartilhados](gem-007-shared-capability-and-cost-boundaries.md);
 - [Matriz de Riscos e Guardrails](gem-007-product-risk-and-guardrail-matrix.md);
 - [Cenários e Gates](gem-007-scenarios-and-gates.md);
-- [Checkpoint de Validação como Dependência](gem-007-dependency-validation-checkpoint.md).
+- [Checkpoint de Validação como Dependência](gem-007-dependency-validation-checkpoint.md);
+- [Opportunity Boost — Contrato Econômico e entre Produtos](gem-007-a1-opportunity-boost-economic-and-product-contract.md).
 
 ## Autoridades do GEM-008
 
@@ -305,7 +315,8 @@ necessidade ou potencial
 - [Reservas, Subsídios e Reinvestimento](gem-010-reserves-subsidies-and-reinvestment.md);
 - [Contrato Canônico do Modelo Financeiro](gem-010-financial-model-contract.md);
 - [Cenários e Gates](gem-010-scenarios-and-gates.md);
-- [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md).
+- [Premissas de Precificação e Validação Comercial](gem-010-a1-pricing-assumptions-and-validation.md);
+- [Opportunity Boost — Preços, Orçamento e Mensuração](gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md).
 
 ## Separações canônicas
 
@@ -332,6 +343,11 @@ necessidade ou potencial
 - catálogo público não é correspondência personalizada;
 - assinatura não é atividade ou oportunidade paga;
 - assinatura não é comissão ou taxa de pagamento;
+- plano não é Opportunity Boost;
+- Opportunity Boost não é comissão;
+- distribuição patrocinada não é recomendação;
+- impressão não é clique;
+- clique não é impacto;
 - ampliação paga não é direito essencial;
 - financiador não é autoridade sobre o beneficiário;
 - downgrade não é punição;
@@ -409,7 +425,9 @@ Estão definidos como candidatos, mas ainda não comprovados:
 - descontos anuais;
 - limites quantitativos de Pessoas, Coletivos e Organizações;
 - superfícies de oferta;
-- regras de upgrade, downgrade e cancelamento.
+- regras de upgrade, downgrade e cancelamento;
+- elegibilidade, superfícies, densidade e controles do Opportunity Boost;
+- faixas de orçamento, CPM, CPC, atribuição e mensuração do Opportunity Boost.
 
 Continuam não aprovados ou não definidos:
 
@@ -417,6 +435,8 @@ Continuam não aprovados ou não definidos:
 - contratos, exclusividades ou territórios comerciais;
 - taxas, comissões, margens ou repasses;
 - capacidade técnica e SLAs finais;
+- política especializada final de publicidade e categorias;
+- algoritmo de entrega, perfil publicitário e mensuração operacional;
 - quantidade ou valor monetário de pontos;
 - taxa de conversão;
 - cashback, saque, transferência ou negociação;
@@ -444,10 +464,12 @@ Continuam não aprovados ou não definidos:
 
 Após integração e autorização separada:
 
-1. validação de planos, limites e disposição a pagar;
-2. modelagem de custos, margem e unit economics;
-3. definição de comissão e política transacional;
-4. revisões especializadas;
-5. eventual teste controlado.
+1. validação funcional especializada do Opportunity Boost;
+2. pesquisa de disposição a pagar e calibração de orçamento, CPM ou CPC;
+3. validação de planos, limites e disposição a pagar;
+4. modelagem de custos, margem, antifraude e unit economics;
+5. definição de comissão e política transacional;
+6. revisões especializadas;
+7. eventual teste controlado.
 
-Business Architecture, Product Engineering, W0-01, oferta pública, cobrança e operação permanecem independentes e pausados até autorização própria.
+Business Architecture, Product Engineering, W0-01, oferta pública, campanha real, cobrança e operação permanecem independentes e pausados até autorização própria.

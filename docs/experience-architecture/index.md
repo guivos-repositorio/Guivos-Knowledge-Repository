@@ -2,14 +2,12 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.33.0
+version: 0.34.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 related:
   - PAS-001
-  - PAS-001-CAPABILITY-MAP-001
   - GLPA-001
-  - GIA-000
   - UXA-001
   - UXA-002
   - UXA-003
@@ -49,6 +47,10 @@ related:
   - UXA-035
   - UXA-036
   - UXA-037
+  - UXA-038
+  - GEM-007-A1
+  - GEM-010-A2
+  - M7.40
 normative: false
 ---
 
@@ -56,21 +58,15 @@ normative: false
 
 ## 1. Finalidade
 
-A Arquitetura da Experiência transforma princípios, capacidades e contratos do Repositório de Conhecimento da Guivos em experiências compreensíveis para Pessoas, Organizações e Coletivos.
+A Arquitetura da Experiência transforma princípios, capacidades e contratos do Repositório em experiências compreensíveis para Pessoas, Organizações e Coletivos.
 
-Ela governa jornadas, superfícies, navegação, voluntariedade, privacidade, compreensão, explicabilidade e critérios para wireframes, protótipos e testes posteriores.
+Ela governa jornadas, superfícies, navegação, voluntariedade, privacidade, compreensão, explicabilidade, publicidade identificada e critérios para wireframes, protótipos e testes posteriores.
 
 ## 2. Limite da frente
 
 Esta frente não inicia Engenharia de Produto, não define tecnologia, não cria design visual final e não autoriza produção.
 
-## 3. Regra de leitura dos identificadores
-
-Os identificadores registram a ordem histórica de criação dos documentos. Eles não representam a ordem das telas.
-
-A correção formal da primeira entrada está registrada em [UXA-003-A1](uxa-003-a1-first-entry-functional-order.md).
-
-## 4. Ordem funcional da experiência pessoal
+## 3. Ordem funcional pessoal
 
 ```text
 Página Inicial pública
@@ -88,116 +84,107 @@ Página Inicial pública
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-## 5. Documentos ativos por responsabilidade funcional
+Oferta de plano e Opportunity Boost não entram no início protegido, compreensão, autorização ou Próximo Passo pessoal.
+
+## 4. Documentos ativos por responsabilidade
 
 | Responsabilidade | Documentos principais |
 |---|---|
 | Fundação, mapas e padrões | UXA-001, UXA-003, UXA-003-A1, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
 | Página Inicial pública | [contrato](uxa-020-home-and-journey-entry.md), [validação](uxa-021-public-home-functional-validation-and-reformulation.md) e [wireframe](uxa-022-public-home-low-fidelity-wireframe.md) |
-| Início protegido | [contrato validado](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md), [wireframe móvel](uxa-034-protected-journey-entry-low-fidelity-wireframe.md) e [validação do wireframe](uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md) |
-| Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe móvel](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação do wireframe](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
-| Tela Hoje | [experiência diária](uxa-002-daily-experience-and-home.md), [wireframe](uxa-006-today-low-fidelity-wireframe.md) e [validação](uxa-010-today-functional-validation-and-reformulation.md) |
+| Início protegido | [contrato](uxa-023-protected-journey-entry-functional-validation-and-reformulation.md), [wireframe](uxa-034-protected-journey-entry-low-fidelity-wireframe.md) e [validação](uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md) |
+| Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
+| Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
+| Opportunity Boost | [contrato funcional](uxa-038-opportunity-boost-functional-experience-contract.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
-## 6. Estado atual
+## 5. Estado atual
 
-| Elemento | Situação compreensível | Referência técnica |
+| Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa e integrada até a validação da compreensão inicial móvel | UXA-000 a UXA-037; UXA-003-A1 |
-| Resultados Empresariais | 18 decisões humanas; nenhum Resultado canônico | BA-STR-002; COD-018 |
+| Arquitetura da Experiência | ativa até Opportunity Boost | UXA-000 a UXA-038 |
+| Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
-| Página Inicial pública | validada e materializada para computador | UXA-020; UXA-021; UXA-022 |
-| Referência móvel da Home | não iniciada | — |
-| Início protegido móvel | funcionalmente validado e reformulado | UXA-020; UXA-023; UXA-034; UXA-035 |
-| Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados | UXA-011-A1; UXA-036; UXA-037 |
-| Referência do início protegido e compreensão para computador | não iniciada | — |
-| Tela Hoje | validada e reposicionada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
-| Mapa de Oportunidades | estados móveis e referência desktop validados | UXA-004; UXA-024 a UXA-033 |
+| Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
+| Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
+| Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
+| Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
+| Mapa | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
+| Opportunity Boost | experiência funcional definida; validação e wireframes pendentes | UXA-038 |
 | Protótipo, design e testes | não iniciados | — |
 
-## 7. Página Inicial e início protegido
+## 6. Início protegido e compreensão
 
-A Home explica concretamente a Guivos, oferece início voluntário e exploração sem personalização e não coleta relato pessoal.
+O início protegido preserva explicação anterior ao relato, dados de acesso separados, modalidades equivalentes, revisão, autorização específica e recusa sem processamento.
 
-O início protegido móvel, reformulado pelas UXA-034 e UXA-035, demonstra:
+A compreensão inicial preserva:
 
-- nenhum relato antes da explicação;
-- dados de acesso separados do conteúdo da jornada;
-- estados nomeados, pausáveis e retomáveis;
-- acesso somente quando necessário;
-- modalidades equivalentes e sem seleção automática;
-- compartilhamento mínimo;
-- voz e arquivo com explicação anterior;
-- pausa, salvamento, saída e exclusão diferenciados;
-- inventário antes do processamento;
-- autorização inicialmente desmarcada e limitada à compreensão temporária;
-- recusa sem processamento;
-- persistência e personalização bloqueadas até o gate.
-
-## 8. Compreensão inicial móvel
-
-A UXA-036 reformulada e a UXA-037 estabelecem:
-
-- processamento temporário limitado aos itens autorizados;
-- interrupção com descarte explícito e ausência de tarefa oculta;
+- processamento temporário e interrompível;
+- ausência de tarefa oculta;
 - afirmações individualizadas por natureza, origem e confiança;
-- hipótese sem diagnóstico ou certeza;
-- separação entre Momento Atual, avanço e possibilidade de Próximo Passo;
-- revisão sem resposta selecionada por padrão;
-- confirmação parcial, rejeição e manutenção em aberto;
+- hipótese sem diagnóstico;
+- revisão sem resposta padrão;
 - relato original separado da interpretação;
-- correção, retirada de autorização e exclusão com escopos distintos;
-- persistência e personalização como escolhas exclusivas e independentes;
-- combinações incompatíveis bloqueadas;
-- continuidade sem personalização;
-- base insuficiente materializada sem pressão para compartilhar mais.
+- persistência e personalização como decisões independentes;
+- base insuficiente sem pressão.
 
-Arquivos vetoriais:
+## 7. Tela Hoje
 
-- `docs/assets/wireframes/uxa-036-initial-understanding-processing-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-presentation-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-review-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-decision-mobile.svg`;
-- `docs/assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg`.
-
-## 9. Tela Hoje
-
-A Tela Hoje é a superfície recorrente posterior à compreensão inicial suficiente, revisada e autorizada conforme a condição escolhida.
+A Tela Hoje é a superfície recorrente posterior à compreensão suficiente, revisada e autorizada conforme a condição escolhida.
 
 A validação da transição entre a compreensão e a primeira Tela Hoje ainda não foi iniciada.
 
-## 10. Explorar e Mapa
+## 8. Explorar e Mapa
 
 `Explorar` organiza descoberta ampla por listas, busca, categorias e filtros gerais.
 
-`Mapa` organiza a descoberta territorial. A UXA-024 a UXA-033 estabelecem o Mapa principal, uso sem localização, Lista, estado sem resultados e referência para computador.
+`Mapa` organiza descoberta territorial e preserva uso sem localização, visualização em Lista, estado sem resultados e referência para computador.
 
-## 11. Gate de persistência e personalização
+## 9. Opportunity Boost
+
+O [UXA-038](uxa-038-opportunity-boost-functional-experience-contract.md) estabelece:
+
+- distribuição somente em inventário patrocinado separado;
+- selo `Patrocinado` ou `Impulsionado` antes da interação;
+- superfícies permitidas em Explorar, busca, listas, categorias, Mapa, detalhe separado e página do anunciante;
+- bloqueio no início protegido, compreensão, consentimento, Tela Hoje como Próximo Passo e Jornada pessoal;
+- densidade candidata de até 20%;
+- proibição de duas unidades patrocinadas consecutivas;
+- posição paga sem substituição do primeiro resultado orgânico;
+- explicação `Por que estou vendo isto?`;
+- controles de ocultar, ajustar preferências e denunciar;
+- marcador próprio e filtro no Mapa;
+- painel do anunciante com métricas agregadas;
+- identificação acessível sem depender apenas de cor.
+
+Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
+
+## 10. Gate de persistência e personalização
 
 Criar conta, digitar, gravar, enviar arquivo, concluir relato ou aceitar uma afirmação não autoriza automaticamente persistência ou personalização.
 
-Persistência e personalização possuem escolhas próprias, exclusivas, inicialmente desmarcadas e sujeitas a compatibilidade funcional.
+A mesma proteção impede que conteúdo protegido seja reutilizado silenciosamente para publicidade.
 
-Excluir a compreensão impede personalização baseada nela. Usar somente na sessão limita eventual personalização à sessão e finalidade apresentadas.
-
-## 12. Gate de alinhamento à Fundação
+## 11. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 13. Próximos atos governados
+## 12. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar a referência móvel da Home;
-2. validar a transição da compreensão para a primeira Tela Hoje;
-3. criar estados especializados de processamento, pausa, falha e retomada;
-4. criar referência do início protegido e da compreensão para computador;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar referência para tablet, caso priorizada;
-7. retomar independentemente os testes dos Resultados Empresariais.
+1. validar funcionalmente UXA-038;
+2. criar wireframes do fluxo do anunciante, cartão, Mapa e relatório;
+3. testar disclosure, densidade, frequência e controles;
+4. criar a referência móvel da Home;
+5. validar a transição para a primeira Tela Hoje;
+6. criar estados especializados de processamento, pausa, falha e retomada;
+7. criar referência do início protegido e da compreensão para computador;
+8. criar referência para tablet;
+9. retomar independentemente os testes dos Resultados Empresariais.
 
 Nenhum ato é iniciado automaticamente.

@@ -67,6 +67,8 @@ nav:
       - Knowledge Board: project/knowledge-board.md
       - Architectural Milestones: project/architectural-milestones.md
       - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+      - Adendo do Opportunity Boost: project/canonical-consolidation-matrix-opportunity-boost-addendum.md
+      - Histórico 1.62.0: project/changelog-1.62.0-opportunity-boost.md
       - Parecer Mecânico do R5: project/repository-mechanical-validation-2026-07-24.md
       - Retomada Governada do R6: project/governed-resumption-r6.md
 
@@ -173,6 +175,7 @@ nav:
           - UXA-031 — Validação do Estado sem Resultados: experience-architecture/uxa-031-opportunity-map-no-results-functional-validation-and-reformulation.md
           - UXA-032 — Referência do Mapa para Computador: experience-architecture/uxa-032-opportunity-map-desktop-reference.md
           - UXA-033 — Validação da Referência para Computador: experience-architecture/uxa-033-opportunity-map-desktop-functional-validation-and-reformulation.md
+          - UXA-038 — Opportunity Boost: experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
@@ -195,6 +198,7 @@ nav:
       - Visão Geral: economic-model/index.md
       - Revisão de Fechamento: economic-model/gem-closure-review.md
       - Revisão da Baseline Comercial: economic-model/gem-commercial-plans-baseline-review.md
+      - Revisão do Opportunity Boost: economic-model/gem-opportunity-boost-baseline-review.md
       - GEM-001 — Fundação: economic-model/gem-001-foundation.md
       - GEM-002 — Geração e Fluxos de Valor: economic-model/gem-002-value-generation-and-flows.md
       - GEM-003 — Arquitetura de Receitas: economic-model/gem-003-revenue-architecture.md
@@ -204,10 +208,12 @@ nav:
       - GEM-005 — Incentivos e Recompensas: economic-model/gem-005-incentives-and-rewards-model.md
       - GEM-006 — Economia de Parceiros: economic-model/gem-006-partner-economy.md
       - GEM-007 — Papéis Econômicos dos Produtos: economic-model/gem-007-product-economic-roles.md
+      - GEM-007-A1 — Opportunity Boost: economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md
       - GEM-008 — Sustentabilidade e Reinvestimento: economic-model/gem-008-sustainability-and-reinvestment.md
       - GEM-009 — Métricas Econômicas: economic-model/gem-009-economic-metrics.md
       - GEM-010 — Cenários e Modelo Financeiro: economic-model/gem-010-financial-scenarios-and-model.md
       - GEM-010-A1 — Premissas de Precificação: economic-model/gem-010-a1-pricing-assumptions-and-validation.md
+      - GEM-010-A2 — Preços do Opportunity Boost: economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md
 
   - Business Architecture:
       - Visão Geral: business-architecture/index.md
