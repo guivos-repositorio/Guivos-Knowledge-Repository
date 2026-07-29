@@ -2,7 +2,7 @@
 id: UXA-042
 title: Wireframes de Baixa Fidelidade do Cartão Patrocinado e da Explicação do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-29
 parent: UXA-041
@@ -17,8 +17,9 @@ depends_on:
   - GEM-007-A1
   - GEM-010-A2
 related:
+  - UXA-043
   - GPA-007
-  - M7.44
+  - M7.45
 normative: false
 ---
 
@@ -37,17 +38,21 @@ O conjunto representa a experiência da pessoa diante de uma oportunidade distri
 - preço ou gratuidade;
 - critérios gerais utilizados;
 - critérios protegidos não utilizados;
-- controles de ocultação, preferência e denúncia;
+- controles de ocultação, redução, desativação, preferência, denúncia e contestação;
 - reversibilidade das preferências;
 - variação própria para Boost Social Financiado.
 
 O conjunto não representa design final, algoritmo, perfil publicitário, campanha real, política jurídica final, protótipo, teste com usuários ou Engenharia de Produto.
 
-## 2. Pergunta funcional do conjunto
+## 2. Resultado funcional
 
-> **A pessoa reconhece antes da interação que o conteúdo é patrocinado, compreende por que foi distribuído, distingue publicidade de recomendação, conhece os critérios utilizados e não utilizados e consegue controlar ou contestar a experiência sem perder o catálogo orgânico?**
+A pergunta funcional do conjunto é:
 
-A pergunta ainda deverá ser respondida por validação funcional especializada dos wireframes.
+> **A pessoa reconhece antes da interação que o conteúdo é patrocinado, compreende por que foi distribuído, distingue publicidade de recomendação e correspondência orgânica, conhece os critérios utilizados e não utilizados e consegue controlar ou contestar a experiência sem perder o catálogo orgânico?**
+
+A UXA-043 respondeu afirmativamente após reformulação dos seis artefatos.
+
+O conjunto é considerado **funcionalmente válido após reformulação**, sem equivaler a teste de usabilidade, design ou implementação.
 
 ## 3. Canal e dimensões
 
@@ -62,7 +67,7 @@ A pergunta ainda deverá ser respondida por validação funcional especializada 
 
 Todos os artefatos utilizam baixa fidelidade e conteúdo ilustrativo.
 
-## 4. Artefatos visuais
+## 4. Artefatos visuais reformulados
 
 ### 4.1 Cartão patrocinado móvel
 
@@ -78,9 +83,9 @@ Demonstra:
 - gratuidade, modalidade, capacidade e data;
 - declaração de que posição paga não é recomendação;
 - ação `Por que estou vendo isto?`;
-- ocultação da campanha;
-- acesso a opções adicionais;
-- preservação do catálogo orgânico.
+- ocultação limitada à campanha;
+- acesso nomeado aos controles do anúncio;
+- preferências revisáveis e reversíveis.
 
 ### 4.2 Explicação patrocinada móvel
 
@@ -97,6 +102,8 @@ Demonstra:
 - ausência de lista de visualizadores;
 - ausência de influência sobre correspondência orgânica;
 - ocultação da campanha;
+- redução de conteúdos semelhantes;
+- desativação de oportunidades patrocinadas;
 - revisão e reversão de preferências;
 - denúncia e contestação como fluxos separados.
 
@@ -113,7 +120,8 @@ Demonstra:
 - espaço patrocinado posterior e delimitado;
 - identificação comercial anterior ao conteúdo;
 - densidade, frequência e baixa oferta orgânica como regras separadas;
-- controles gerais de publicidade;
+- ocultação limitada à campanha;
+- destino compreensível dos controles gerais;
 - ausência de alteração da ordenação orgânica.
 
 ### 4.4 Explicação patrocinada para computador
@@ -129,6 +137,7 @@ Demonstra:
 - critérios gerais utilizados;
 - dados protegidos e contextos pessoais não utilizados;
 - ausência de lista de pessoas expostas;
+- correspondência orgânica tratada separadamente quando existir;
 - controles com escopos distintos;
 - preferência reversível;
 - denúncia e contestação separadas.
@@ -141,7 +150,8 @@ Demonstra:
 
 Demonstra:
 
-- rótulo `Impulsionamento social financiado`;
+- primeiro resultado orgânico materializado;
+- rótulo `Impulsionamento social financiado` posterior ao orgânico;
 - oportunidade gratuita;
 - Coletivo beneficiário;
 - Organização ou parceiro financiador;
@@ -160,11 +170,12 @@ Demonstra:
 
 - financiador e beneficiário identificados;
 - finalidade e gratuidade;
+- declaração de que financiamento não é recomendação;
 - critérios gerais utilizados;
 - ausência de ampliação silenciosa;
 - dados e poderes não concedidos ao financiador;
 - métricas futuras somente agregadas;
-- ocultação, preferência, desativação e denúncia.
+- ocultação, redução, desativação, reversão, denúncia e contestação separadas.
 
 ## 5. Ordem orgânica e inventário patrocinado
 
@@ -185,6 +196,8 @@ O cartão patrocinado:
 - não apresenta aderência pessoal comprada;
 - não transforma pagamento em qualidade, confiança ou impacto;
 - não aumenta quando houver pouca oferta orgânica.
+
+A mesma ordem é materializada na variação de Boost Social Financiado.
 
 A densidade candidata máxima permanece em 20%, sem duas unidades patrocinadas consecutivas e com redução da publicidade quando faltar inventário orgânico.
 
@@ -225,14 +238,16 @@ Quando existir correspondência orgânica legítima para a mesma oportunidade, a
 - critérios de cada uma;
 - ausência de influência do pagamento sobre a correspondência.
 
+Quando não existir correspondência orgânica naquele caso, a explicação poderá declarar essa condição sem criar aderência artificial.
+
 ## 8. Controles e escopos
 
 - `Ocultar esta campanha` remove somente a campanha específica nas superfícies aplicáveis;
 - `Mostrar menos deste tipo` altera preferência geral identificada;
 - `Não mostrar oportunidades patrocinadas` desativa inventário patrocinado nas superfícies suportadas;
 - `Revisar e desfazer preferências` permite compreender e reverter escolhas anteriores;
-- `Denunciar` abre fluxo de conteúdo ou informação e não equivale a preferência;
-- `Contestar uso indevido de dados` abre fluxo separado de privacidade ou governança.
+- `Denunciar conteúdo ou informação` abre fluxo de integridade e não equivale a preferência;
+- `Contestar uso indevido de dados` abre fluxo separado de privacidade e governança.
 
 Nenhuma opção começa selecionada.
 
@@ -257,7 +272,7 @@ A variação social apresenta:
 - ausência de acesso a relato, compreensão, jornada ou lista de pessoas;
 - ausência de concessão automática de plano pago ao Coletivo Livre.
 
-O financiamento não constitui recomendação institucional da Guivos nem transfere autoridade ao patrocinador.
+A experiência declara que financiamento amplia distribuição e não constitui recomendação institucional da Guivos.
 
 ## 10. Acessibilidade e linguagem
 
@@ -266,7 +281,7 @@ O financiamento não constitui recomendação institucional da Guivos nem transf
 - anunciante, financiador e beneficiário terão rótulos textuais;
 - preço e gratuidade permanecerão compreensíveis;
 - ações terão nome, escopo e consequência;
-- preferência e denúncia serão distinguíveis;
+- preferência, denúncia e contestação serão distinguíveis;
 - o retorno ao catálogo orgânico permanecerá evidente;
 - não serão usados padrões de urgência, culpa ou escassez artificial.
 
@@ -274,7 +289,6 @@ O financiamento não constitui recomendação institucional da Guivos nem transf
 
 Este incremento não cria:
 
-- validação funcional dos seis wireframes;
 - estados patrocinados para Lista ou Mapa;
 - wireframes de gestão da campanha ativa;
 - relatório agregado do anunciante;
@@ -288,8 +302,8 @@ Este incremento não cria:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-042;
-2. criar estados patrocinados para Lista e Mapa;
+1. criar estados patrocinados para Lista e Mapa;
+2. validar funcionalmente e reformular esses estados;
 3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost.
