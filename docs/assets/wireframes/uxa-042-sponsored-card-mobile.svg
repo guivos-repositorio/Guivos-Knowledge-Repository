@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Cartão patrocinado móvel do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com primeiro resultado orgânico preservado, espaço patrocinado identificado, anunciante, gratuidade, explicação e controles.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="38" font-family="Arial, sans-serif" font-size="12" fill="#555555">EXPLORAR</text>
+  <text x="20" y="68" font-family="Arial, sans-serif" font-size="24" font-weight="700">Oportunidades</text>
+  <rect x="20" y="88" width="350" height="44" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="38" y="116" font-family="Arial, sans-serif" font-size="12">Buscar por atividade, tema ou região</text>
+  <text x="20" y="158" font-family="Arial, sans-serif" font-size="11">Filtros objetivos · Online · Gratuitas · Esta semana</text>
+
+  <text x="20" y="194" font-family="Arial, sans-serif" font-size="12" font-weight="700">Primeiro resultado orgânico</text>
+  <rect x="20" y="210" width="350" height="154" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="38" y="238" font-family="Arial, sans-serif" font-size="10">RESULTADO ORGÂNICO</text>
+  <text x="38" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="700">Oficina aberta de planejamento local</text>
+  <text x="38" y="296" font-family="Arial, sans-serif" font-size="11">Organização Exemplo · Presencial</text>
+  <text x="38" y="320" font-family="Arial, sans-serif" font-size="11">Gratuita · 12 vagas · 05/09/2026</text>
+  <text x="38" y="346" font-family="Arial, sans-serif" font-size="10">Ordenação objetiva · sem pagamento</text>
+
+  <text x="20" y="400" font-family="Arial, sans-serif" font-size="12" font-weight="700">Espaço publicitário separado</text>
+  <rect x="20" y="416" width="350" height="246" rx="10" fill="#f4f4f4" stroke="#444444" stroke-width="2"/>
+  <text x="38" y="444" font-family="Arial, sans-serif" font-size="11" font-weight="700">IMPULSIONADO · CONTEÚDO PAGO</text>
+  <text x="38" y="474" font-family="Arial, sans-serif" font-size="10">Anunciante: Coletivo Horizonte</text>
+  <text x="38" y="508" font-family="Arial, sans-serif" font-size="17" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <text x="38" y="536" font-family="Arial, sans-serif" font-size="11">Online · 18 vagas · Gratuita</text>
+  <text x="38" y="564" font-family="Arial, sans-serif" font-size="10">Posição publicitária própria. Não é recomendação.</text>
+  <text x="38" y="596" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Por que estou vendo isto?</text>
+  <text x="352" y="596" text-anchor="end" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Abrir oportunidade</text>
+  <line x1="38" y1="618" x2="352" y2="618" stroke="#aaaaaa"/>
+  <text x="38" y="644" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ocultar esta campanha</text>
+  <text x="352" y="644" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Mais opções</text>
+
+  <rect x="20" y="690" width="350" height="94" rx="8" fill="#ffffff" stroke="#999999"/>
+  <text x="38" y="718" font-family="Arial, sans-serif" font-size="11" font-weight="700">Regras preservadas</text>
+  <text x="38" y="742" font-family="Arial, sans-serif" font-size="10">O anúncio não altera a ordem orgânica.</text>
+  <text x="38" y="762" font-family="Arial, sans-serif" font-size="10">Ocultar publicidade não reduz o catálogo orgânico.</text>
+
+  <text x="20" y="820" font-family="Arial, sans-serif" font-size="10">Hoje · Jornada · Explorar · Mapa · Eu</text>
+</svg>
