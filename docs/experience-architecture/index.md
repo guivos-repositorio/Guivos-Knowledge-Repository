@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.36.0
+version: 0.37.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 related:
@@ -50,9 +50,10 @@ related:
   - UXA-038
   - UXA-039
   - UXA-040
+  - UXA-041
   - GEM-007-A1
   - GEM-010-A2
-  - M7.42
+  - M7.43
 normative: false
 ---
 
@@ -98,7 +99,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
-| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md) e [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md) |
+| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md) e [validação dos wireframes](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -106,7 +107,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até os wireframes do fluxo do anunciante | UXA-000 a UXA-040 |
+| Arquitetura da Experiência | ativa até a validação dos wireframes do anunciante | UXA-000 a UXA-041 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -114,7 +115,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
-| Opportunity Boost | experiência validada; fluxo do anunciante materializado e aguardando validação dos wireframes | UXA-038; UXA-039; UXA-040 |
+| Opportunity Boost | experiência e fluxo inicial do anunciante funcionalmente validados e reformulados | UXA-038 a UXA-041 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Início protegido e compreensão
@@ -139,15 +140,24 @@ A validação da transição entre a compreensão e a primeira Tela Hoje ainda n
 
 A UXA-038 reformulada e a UXA-039 estabelecem gates explicáveis, objetivo único, critérios utilizados e excluídos, alcance sem garantia, prévia separada do orgânico, pausa por alteração material, estados completos, Boost Social Financiado identificado, controles reversíveis, proteção da densidade, Mapa separado e relatório em quatro camadas.
 
-A UXA-040 materializa, em cinco referências para computador:
+A UXA-040 reformulada e a UXA-041 validam cinco referências para computador:
 
 1. elegibilidade e gate de entrada;
 2. objetivo e critérios de distribuição;
-3. orçamento, duração e alcance estimado;
+3. orçamento, duração e estimativa;
 4. prévia patrocinada e confirmação;
 5. envio para avaliação.
 
-Os wireframes preservam o primeiro resultado orgânico, mantêm confirmações desmarcadas e não iniciam entrega antes da aprovação. Eles ainda não foram funcionalmente validados.
+O conjunto agora demonstra:
+
+- estados atendido, limitado e bloqueado com consequências diferentes;
+- critérios escolhidos e revisáveis;
+- público insuficiente sem ampliação automática;
+- base principal coerente com o objetivo;
+- primeiro resultado orgânico anterior ao espaço patrocinado;
+- confirmações desmarcadas;
+- envio sem entrega;
+- cancelamento com retorno ao rascunho.
 
 Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
 
@@ -167,9 +177,9 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
-2. criar wireframes do cartão patrocinado e da explicação de distribuição;
-3. criar estados patrocinados para Lista e Mapa;
+1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+2. criar estados patrocinados para Lista e Mapa;
+3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
 6. testar disclosure, densidade, frequência e controles;

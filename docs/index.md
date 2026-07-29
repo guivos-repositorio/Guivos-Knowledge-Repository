@@ -9,12 +9,12 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.42 — Wireframes do Fluxo do Anunciante do Opportunity Boost Criados |
+| Marco | M7.43 — Wireframes do Fluxo do Anunciante do Opportunity Boost Funcionalmente Validados e Reformulados |
 | Resultados Empresariais | 18 decisões; 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos |
 | Opportunity Boost | add-on publicitário candidato separado dos planos |
 | Experiência do Boost | validada e reformulada |
-| Fluxo do anunciante | cinco wireframes para computador criados; validação pendente |
+| Fluxo do anunciante | cinco wireframes para computador validados e reformulados |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; oferta e cobrança não autorizadas |
 | Home, início e compreensão | funcionalmente validados |
@@ -75,9 +75,9 @@ Os valores são candidatos para validação.
 - baixa oferta orgânica reduz publicidade;
 - relatório separado em entrega, interação, atribuição candidata e autorrelato.
 
-### Wireframes do fluxo do anunciante
+### Wireframes do fluxo do anunciante validados
 
-A UXA-040 criou cinco referências para computador:
+A UXA-040 reformulada e a UXA-041 validam cinco referências para computador:
 
 1. elegibilidade;
 2. objetivo e critérios;
@@ -85,7 +85,9 @@ A UXA-040 criou cinco referências para computador:
 4. prévia e confirmação;
 5. envio para avaliação.
 
-A referência ainda requer validação funcional. Nenhuma campanha, cobrança ou entrega foi iniciada.
+A validação distingue estados atendido, limitado e bloqueado; torna critérios explícitos; alinha CPC ao objetivo de clique; preserva o primeiro resultado orgânico antes do anúncio; e define cancelamento com retorno ao rascunho.
+
+Nenhuma campanha, cobrança ou entrega foi iniciada.
 
 ### Proteções
 
@@ -120,8 +122,8 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Roadmap](roadmap.md)
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
-- [Adendo Canônico da UXA-040](project/canonical-consolidation-matrix-uxa-040-addendum.md)
-- [Histórico 1.64.0](project/changelog-1.64.0-uxa-040.md)
+- [Adendo Canônico da UXA-041](project/canonical-consolidation-matrix-uxa-041-addendum.md)
+- [Histórico 1.65.0](project/changelog-1.65.0-uxa-041.md)
 
 ### Opportunity Boost
 
@@ -131,6 +133,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Contrato Funcional Reformulado](experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
 - [Validação Funcional Especializada](experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md)
 - [Wireframes do Fluxo do Anunciante](experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md)
+- [Validação dos Wireframes do Anunciante](experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md)
 - [Guivos Ads](product-architecture/ads.md)
 
 ### Modelo Econômico
@@ -158,7 +161,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente validação funcional dos wireframes do anunciante, cartão e explicação patrocinados, estados para Lista e Mapa, relatório agregado, validação do conjunto completo, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
+Após nova autorização, poderão ocorrer separadamente cartão e explicação patrocinados, estados para Lista e Mapa, gestão da campanha ativa, relatório agregado, validação do conjunto completo, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
 
 ## Regra de precedência
 

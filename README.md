@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.42 — Wireframes do Fluxo do Anunciante do Opportunity Boost Criados |
+| Marco | M7.43 — Wireframes do Fluxo do Anunciante do Opportunity Boost Funcionalmente Validados e Reformulados |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | 18 decisões humanas; zero Resultados canônicos |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos |
@@ -18,7 +18,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Planos para Organizações | Business Start, Growth e Scale |
 | Opportunity Boost | add-on publicitário separado dos planos |
 | Experiência do Boost | validada e reformulada |
-| Fluxo do anunciante | cinco wireframes para computador criados; validação pendente |
+| Fluxo do anunciante | cinco wireframes para computador validados e reformulados |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; cobrança não autorizada |
 | Home, início e compreensão | funcionalmente validados |
@@ -84,9 +84,9 @@ O Opportunity Boost permite ampliar a distribuição publicitária identificada 
 
 A validação funcional estabeleceu bloqueios explicáveis, objetivo único, critérios utilizados e proibidos visíveis, prévia separada do ranking orgânico, pausa por alteração material, estados completos, identificação do Boost Social Financiado, controles reversíveis, proteção da densidade e relatório em quatro camadas.
 
-### Fluxo do anunciante materializado
+### Fluxo do anunciante validado
 
-A UXA-040 criou cinco wireframes para computador:
+A UXA-040 reformulada e a UXA-041 validam cinco wireframes para computador:
 
 1. elegibilidade;
 2. objetivo e critérios;
@@ -94,7 +94,9 @@ A UXA-040 criou cinco wireframes para computador:
 4. prévia e confirmação;
 5. envio para avaliação.
 
-O conjunto ainda exige validação funcional própria. Nenhuma campanha, cobrança ou entrega foi iniciada.
+A reformulação distingue condições atendidas, limitadas e bloqueadas; torna critérios explícitos; reconcilia CPC com objetivo de clique; coloca o primeiro resultado orgânico antes do anúncio; e define cancelamento com retorno ao rascunho.
+
+Nenhuma campanha, cobrança ou entrega foi iniciada.
 
 ### Regras centrais
 
@@ -144,9 +146,9 @@ Página Inicial pública
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional e reformulação dos wireframes do anunciante;
 - wireframes do cartão patrocinado e da explicação;
 - estados patrocinados para Lista e Mapa;
+- wireframes de gestão da campanha ativa;
 - wireframe do relatório agregado;
 - validação funcional do conjunto completo;
 - pesquisa de disposição a pagar;
@@ -172,8 +174,9 @@ Nenhum movimento é automático. Após integração e nova autorização, poder�
 - [Contrato Funcional Reformulado do Boost](docs/experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
 - [Validação Funcional do Boost](docs/experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md)
 - [Wireframes do Fluxo do Anunciante](docs/experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md)
-- [Adendo Canônico da UXA-040](docs/project/canonical-consolidation-matrix-uxa-040-addendum.md)
-- [Histórico 1.64.0](docs/project/changelog-1.64.0-uxa-040.md)
+- [Validação dos Wireframes do Anunciante](docs/experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md)
+- [Adendo Canônico da UXA-041](docs/project/canonical-consolidation-matrix-uxa-041-addendum.md)
+- [Histórico 1.65.0](docs/project/changelog-1.65.0-uxa-041.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Documentação completa](docs/index.md)

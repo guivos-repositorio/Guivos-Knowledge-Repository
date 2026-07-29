@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.21.0
+version: 0.22.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-000
@@ -37,6 +37,7 @@ related:
   - UXA-038
   - UXA-039
   - UXA-040
+  - UXA-041
   - PAS-001
 normative: false
 ---
@@ -83,8 +84,8 @@ Página Inicial pública
 14. contrato funcional reformulado do Opportunity Boost — UXA-038;
 15. validação funcional especializada do Opportunity Boost — UXA-039;
 16. wireframes do fluxo do anunciante do Opportunity Boost — UXA-040;
-17. validação dos wireframes do anunciante — pendente de autorização própria;
-18. cartão, explicação, Lista, Mapa e relatório do Boost — pendentes.
+17. validação e reformulação dos wireframes do anunciante — UXA-041;
+18. cartão, explicação, Lista, Mapa, gestão ativa e relatório do Boost — pendentes.
 
 ## 4. Natureza dos artefatos
 
@@ -111,7 +112,6 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Explorar sem personalização permanece saída legítima?
 - Texto, voz, arquivo e perguntas são alternativas equivalentes?
 - Compartilhamento mínimo é legítimo?
-- Voz e arquivo possuem explicação anterior?
 - Pausar, salvar, sair e excluir possuem efeitos distintos?
 - A revisão antecede autorização específica?
 - Autorizações começam desmarcadas?
@@ -124,14 +124,10 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Afirmações confirmadas, inferidas e desconhecidas são separadas?
 - Momento Atual, avanço e Próximo Passo permanecem distintos?
 - A compreensão é percebida como hipótese, não diagnóstico?
-- Confiança é compreendida como incerteza, não certeza?
 - Nenhuma resposta de revisão começa selecionada?
 - Uma afirmação pode permanecer em aberto?
 - Corrigir interpretação preserva o relato original?
-- Corrigir, retirar autorização e excluir possuem efeitos distintos?
 - Persistência e personalização são escolhas únicas e independentes?
-- Combinações incompatíveis são bloqueadas?
-- Continuar sem personalização possui consequência conhecida?
 - Base insuficiente evita hipótese artificial e pressão?
 
 ### 5.3 Mapa e superfícies recorrentes
@@ -143,30 +139,36 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Cobertura, falha e indisponibilidade são distinguíveis?
 - Em computador, filtros, Mapa, Lista e seleção parecem partes da mesma consulta?
 
-### 5.4 Opportunity Boost
+### 5.4 Opportunity Boost — fluxo do anunciante validado
 
-Os wireframes da UXA-040 deverão ser validados quanto a:
+A UXA-041 confirmou, após reformulação:
 
-- gate de entrada com bloqueio e correção compreensíveis;
+- gates com estados atendido, limitado e bloqueado;
 - plano elegível sem substituir aprovação, capacidade ou segurança;
 - objetivo único sem seleção automática;
-- métrica principal e eventos secundários compreensíveis;
-- critérios utilizados e proibidos antes do envio;
+- métrica principal compreensível;
+- critérios escolhidos e revisáveis;
+- critérios proibidos antes do envio;
 - público insuficiente sem ampliação silenciosa;
 - orçamento, limite diário e duração sem promessa de resultado;
+- base principal coerente com o objetivo;
+- CPM e CPC não simultâneos;
 - alcance estimado distinguível de garantia;
 - ausência de renovação automática;
-- prévia patrocinada separada do primeiro resultado orgânico;
+- primeiro resultado orgânico anterior ao anúncio;
 - confirmações afirmativas inicialmente desmarcadas;
-- envio para avaliação sem entrega anterior à aprovação;
-- ajustes, rejeição e aprovação como estados distintos.
+- envio para avaliação sem entrega;
+- cancelamento com retorno ao rascunho e histórico preservado.
 
-Os próximos artefatos deverão ainda demonstrar:
+Os próximos artefatos deverão demonstrar:
 
+- cartão patrocinado independente;
+- explicação `Por que estou vendo isto?`;
 - Boost Social Financiado com financiador e beneficiário identificados;
 - controles de ocultação com escopo e reversibilidade;
 - redução da publicidade quando faltar inventário orgânico;
 - marcador e agrupamento patrocinado próprios no Mapa;
+- gestão da campanha ativa;
 - relatório separado em entrega, interação, atribuição candidata e autorrelato;
 - pausa e cancelamento com saldo, consequência e histórico visíveis.
 
@@ -174,11 +176,10 @@ Os próximos artefatos deverão ainda demonstrar:
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
 - Compartilhamento mínimo não é tratado como insuficiência pessoal?
-- A pessoa pode corrigir, limitar, remover e excluir?
-- Não autorizar possui consequência clara e não punitiva?
 - Recusar localização preserva o uso do Mapa?
 - Ocultar publicidade preserva o catálogo orgânico?
 - Denúncia e preferência são tratadas como ações distintas?
+- O anunciante pode salvar rascunho, voltar e cancelar com efeito conhecido?
 
 ### 5.6 Continuidade
 
@@ -186,7 +187,7 @@ Os próximos artefatos deverão ainda demonstrar:
 - O início protegido conduz à compreensão inicial revisável?
 - A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
 - Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
-- A gestão da oportunidade conduz ao Boost somente quando todos os gates forem atendidos?
+- A gestão da oportunidade conduz ao Boost somente quando não houver bloqueio crítico?
 - O fluxo do anunciante termina em avaliação sem iniciar entrega?
 
 ## 6. Convenções de baixa fidelidade
@@ -200,12 +201,9 @@ Os próximos artefatos deverão ainda demonstrar:
 | estado textual nomeado | posição funcional sem obrigatoriedade linear |
 | círculo vazio | escolha única ainda não realizada |
 | caixa vazia | autorização múltipla ainda não concedida |
-| borda tracejada | ação indisponível até condição explícita |
-| declaração textual | estado de relato, acesso, rascunho ou processamento |
+| caixa preenchida | escolha múltipla realizada conscientemente |
+| borda tracejada | ação indisponível ou regra de exceção |
 | ação com consequência | pausa, saída, salvamento, exclusão ou recusa explícita |
-| identificador de afirmação | vínculo entre hipótese, origem e revisão |
-| faixa compartilhada | painéis pertencem à mesma consulta |
-| painel recolhível | contexto da seleção sem eliminar comparação |
 | selo textual anterior | natureza patrocinada reconhecível antes do conteúdo |
 | espaço patrocinado delimitado | distribuição paga sem integração silenciosa ao ranking orgânico |
 
@@ -224,20 +222,9 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
 | Fluxo do anunciante do Opportunity Boost — cinco estados | web para computador | 1.440 × 1.024 cada |
-| Cartão, explicação, Lista, Mapa e relatório do Boost | computador e aplicativo móvel | pendentes |
+| Cartão, explicação, Lista, Mapa, gestão ativa e relatório do Boost | computador e aplicativo móvel | pendentes |
 
 ## 8. Relação entre os wireframes
-
-```text
-Página Inicial pública
-→ decisão voluntária
-→ início protegido validado
-→ processamento temporário
-→ hipótese inicial revisável
-→ correções e decisões independentes
-→ Tela Hoje ou exploração geral
-→ Mapa e demais superfícies recorrentes
-```
 
 Fluxo institucional relacionado:
 
@@ -254,8 +241,6 @@ oportunidade aprovada e ativa
 → pausa, encerramento ou cancelamento
 → relatório agregado e reconciliação
 ```
-
-A sequência protegida é pausável e retomável. Acesso, modalidades e conteúdos poderão ser omitidos quando não aplicáveis.
 
 ## 9. Artefatos especializados
 
@@ -276,9 +261,10 @@ A sequência protegida é pausável e retomável. Acesso, modalidades e conteúd
 | Cadastro | UXA-008 | cadastro | arquivo vetorial |
 | Contrato do Opportunity Boost | UXA-038 | Explorar, Lista, Mapa e gestão | contrato funcional reformulado |
 | Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
-| Fluxo do anunciante do Opportunity Boost | UXA-040 | painel institucional | cinco arquivos vetoriais para computador |
+| Fluxo do anunciante | UXA-040 | painel institucional | cinco arquivos vetoriais reformulados |
+| Validação do fluxo do anunciante | UXA-041 | painel institucional | validação funcional especializada |
 
-## 10. Resultados validados e materializados
+## 10. Resultados validados
 
 ### 10.1 Compreensão inicial
 
@@ -286,21 +272,19 @@ A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, af
 
 ### 10.2 Opportunity Boost
 
-A UXA-038 reformulada e a UXA-039 demonstram elegibilidade explicável, critérios visíveis, prévia separada do orgânico, pausa por alteração material, estados completos, controles reversíveis, proteção da densidade, Mapa com inventário separado, relatório em quatro camadas e cancelamento compreensível.
-
-A UXA-040 materializa somente o fluxo inicial do anunciante. O conjunto gráfico ainda requer validação funcional própria.
+A UXA-038 a UXA-041 demonstram experiência funcional governada e fluxo inicial do anunciante validado, com elegibilidade explicável, critérios explícitos, base coerente, orgânico anterior ao anúncio, confirmação afirmativa e cancelamento compreensível.
 
 ## 11. Limites
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
+Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
-2. criar wireframes do cartão patrocinado e da explicação de distribuição;
-3. criar estados patrocinados para Lista e Mapa;
+1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+2. criar estados patrocinados para Lista e Mapa;
+3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar funcionalmente o conjunto completo do Opportunity Boost;
 6. criar a referência móvel da Home;
