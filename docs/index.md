@@ -9,10 +9,11 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.40 — Opportunity Boost Documentalmente Definido |
+| Marco | M7.41 — Experiência do Opportunity Boost Funcionalmente Validada e Reformulada |
 | Resultados Empresariais | 18 decisões; 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos |
 | Opportunity Boost | add-on publicitário candidato separado dos planos |
+| Experiência do Boost | validada e reformulada; wireframes pendentes |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; oferta e cobrança não autorizadas |
 | Home, início e compreensão | funcionalmente validados |
@@ -60,6 +61,19 @@ Os valores são candidatos para validação.
 - CPM candidato — R$ 12,00 a R$ 25,00;
 - CPC candidato — R$ 0,80 a R$ 2,50.
 
+### Resultado da validação funcional
+
+- gate de entrada com bloqueios explicáveis;
+- objetivo único, sem seleção automática;
+- critérios utilizados e excluídos visíveis;
+- prévia patrocinada separada do ranking orgânico;
+- pausa por alteração material;
+- estados de rejeição, esgotamento, expiração e reconciliação;
+- Boost Social Financiado identificado;
+- controles reversíveis;
+- baixa oferta orgânica reduz publicidade;
+- relatório separado em entrega, interação, atribuição candidata e autorrelato.
+
 ### Proteções
 
 - pagamento não altera ranking orgânico;
@@ -93,15 +107,16 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Roadmap](roadmap.md)
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
-- [Adendo Canônico do Opportunity Boost](project/canonical-consolidation-matrix-opportunity-boost-addendum.md)
-- [Histórico 1.62.0](project/changelog-1.62.0-opportunity-boost.md)
+- [Adendo Canônico da UXA-039](project/canonical-consolidation-matrix-uxa-039-addendum.md)
+- [Histórico 1.63.0](project/changelog-1.63.0-uxa-039.md)
 
 ### Opportunity Boost
 
 - [Contrato Econômico e entre Produtos](economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md)
 - [Preços, Orçamento e Mensuração](economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md)
 - [Revisão da Baseline](economic-model/gem-opportunity-boost-baseline-review.md)
-- [Contrato Funcional da Experiência](experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
+- [Contrato Funcional Reformulado](experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
+- [Validação Funcional Especializada](experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md)
 - [Guivos Ads](product-architecture/ads.md)
 
 ### Modelo Econômico
@@ -129,7 +144,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente validação funcional do Boost, wireframes, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
+Após nova autorização, poderão ocorrer separadamente wireframes do fluxo do anunciante, cartão e explicação patrocinados, estados para Lista e Mapa, relatório agregado, validação funcional dos wireframes, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
 
 ## Regra de precedência
 

@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.19.0
+version: 0.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-000
@@ -34,6 +34,8 @@ related:
   - UXA-035
   - UXA-036
   - UXA-037
+  - UXA-038
+  - UXA-039
   - PAS-001
 normative: false
 ---
@@ -76,7 +78,10 @@ Página Inicial pública
 10. wireframe móvel do Mapa — UXA-024;
 11. validações e estados do Mapa — UXA-025 a UXA-033;
 12. wireframe do Detalhe — UXA-007;
-13. wireframe do Cadastro pela Organização — UXA-008.
+13. wireframe do Cadastro pela Organização — UXA-008;
+14. contrato funcional reformulado do Opportunity Boost — UXA-038;
+15. validação funcional especializada do Opportunity Boost — UXA-039;
+16. wireframes do Opportunity Boost — pendentes de autorização própria.
 
 ## 4. Natureza dos artefatos
 
@@ -135,20 +140,42 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 - Cobertura, falha e indisponibilidade são distinguíveis?
 - Em computador, filtros, Mapa, Lista e seleção parecem partes da mesma consulta?
 
-### 5.4 Autonomia
+### 5.4 Opportunity Boost
+
+Os futuros wireframes deverão demonstrar:
+
+- gate de entrada com bloqueio e correção compreensíveis;
+- objetivo único sem seleção automática;
+- critérios utilizados e proibidos antes do envio;
+- orçamento, limite diário e duração sem promessa de resultado;
+- prévia patrocinada separada do primeiro resultado orgânico;
+- pausa quando informação material mudar;
+- estados de inelegibilidade, rejeição, esgotamento, expiração e reconciliação;
+- Boost Social Financiado com financiador e beneficiário identificados;
+- controles de ocultação com escopo e reversibilidade;
+- redução da publicidade quando faltar inventário orgânico;
+- marcador e agrupamento patrocinado próprios no Mapa;
+- relatório separado em entrega, interação, atribuição candidata e autorrelato;
+- pausa e cancelamento com saldo, consequência e histórico visíveis.
+
+### 5.5 Autonomia
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
 - Compartilhamento mínimo não é tratado como insuficiência pessoal?
 - A pessoa pode corrigir, limitar, remover e excluir?
 - Não autorizar possui consequência clara e não punitiva?
 - Recusar localização preserva o uso do Mapa?
+- Ocultar publicidade preserva o catálogo orgânico?
+- Denúncia e preferência são tratadas como ações distintas?
 
-### 5.5 Continuidade
+### 5.6 Continuidade
 
 - A Home conduz conscientemente ao início protegido?
 - O início protegido conduz à compreensão inicial revisável?
 - A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
 - Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
+- A gestão da oportunidade conduz ao Boost somente quando todos os gates forem atendidos?
+- A campanha conduz a pausa, encerramento e relatório com consequência conhecida?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -167,6 +194,8 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 | identificador de afirmação | vínculo entre hipótese, origem e revisão |
 | faixa compartilhada | painéis pertencem à mesma consulta |
 | painel recolhível | contexto da seleção sem eliminar comparação |
+| selo textual anterior | natureza patrocinada reconhecível antes do conteúdo |
+| espaço patrocinado delimitado | distribuição paga sem integração silenciosa ao ranking orgânico |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -182,6 +211,7 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Mapa com e sem resultados | web para computador | 1.440 × 1.024 |
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
+| Opportunity Boost | computador e aplicativo móvel | dimensões serão definidas no incremento de wireframes |
 
 ## 8. Relação entre os wireframes
 
@@ -194,6 +224,17 @@ Página Inicial pública
 → correções e decisões independentes
 → Tela Hoje ou exploração geral
 → Mapa e demais superfícies recorrentes
+```
+
+Fluxo institucional relacionado:
+
+```text
+oportunidade aprovada e ativa
+→ gestão da oportunidade
+→ configuração do Opportunity Boost
+→ avaliação e campanha
+→ pausa, encerramento ou cancelamento
+→ relatório agregado e reconciliação
 ```
 
 A sequência protegida é pausável e retomável. Acesso, modalidades e conteúdos poderão ser omitidos quando não aplicáveis.
@@ -215,38 +256,38 @@ A sequência protegida é pausável e retomável. Acesso, modalidades e conteúd
 | Validações do Mapa | UXA-025, UXA-027, UXA-029, UXA-031 e UXA-033 | Mapa | validações funcionais |
 | Detalhe | UXA-007 | detalhe | arquivo vetorial |
 | Cadastro | UXA-008 | cadastro | arquivo vetorial |
+| Contrato do Opportunity Boost | UXA-038 | Explorar, Lista, Mapa e gestão | contrato funcional reformulado |
+| Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
 
-## 10. Resultado da compreensão inicial
+## 10. Resultados validados
 
-A UXA-036 reformulada e a UXA-037 demonstram:
+### 10.1 Compreensão inicial
 
-- processamento sem tarefa oculta;
-- afirmações individualizadas;
-- revisão sem resposta padrão;
-- manutenção em aberto sem promoção a fato;
-- relato original separado da interpretação;
-- escopos distintos de correção, autorização e exclusão;
-- persistência e personalização independentes;
-- combinações incompatíveis bloqueadas;
-- base insuficiente sem pressão;
-- continuidade sem personalização.
+A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, persistência e personalização independentes, base insuficiente sem pressão e continuidade sem personalização.
 
-O conjunto é funcionalmente válido após reformulação.
+### 10.2 Opportunity Boost
+
+A UXA-038 reformulada e a UXA-039 demonstram elegibilidade explicável, critérios visíveis, prévia separada do orgânico, pausa por alteração material, estados completos, controles reversíveis, proteção da densidade, Mapa com inventário separado, relatório em quatro camadas e cancelamento compreensível.
+
+Os dois conjuntos são funcionalmente válidos após reformulação.
 
 ## 11. Limites
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, protótipo, teste de usabilidade ou Engenharia de Produto.
+Este programa não define marca, tecnologia, autenticação, armazenamento, gravação, transcrição, upload, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. criar a referência móvel da Home;
-2. validar a transição para a primeira Tela Hoje;
-3. criar estados especializados de processamento, pausa, falha e retomada;
-4. criar referência do início protegido e da compreensão para computador;
-5. criar estados especializados de texto, voz e arquivos;
-6. criar referência para tablet, caso priorizada;
-7. retomar independentemente os testes dos Resultados Empresariais.
+1. criar wireframes do fluxo do anunciante do Opportunity Boost;
+2. criar wireframes do cartão patrocinado e da explicação de distribuição;
+3. criar estados patrocinados para Lista e Mapa;
+4. criar wireframe do relatório agregado;
+5. validar funcionalmente os wireframes do Opportunity Boost;
+6. criar a referência móvel da Home;
+7. validar a transição para a primeira Tela Hoje;
+8. criar estados especializados de processamento, pausa, falha e retomada;
+9. criar referência do início protegido e da compreensão para computador;
+10. criar referência para tablet, caso priorizada.
 
 Nenhuma etapa posterior é iniciada automaticamente.

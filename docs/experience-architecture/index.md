@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.34.0
+version: 0.35.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 related:
@@ -48,9 +48,10 @@ related:
   - UXA-036
   - UXA-037
   - UXA-038
+  - UXA-039
   - GEM-007-A1
   - GEM-010-A2
-  - M7.40
+  - M7.41
 normative: false
 ---
 
@@ -96,7 +97,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
-| Opportunity Boost | [contrato funcional](uxa-038-opportunity-boost-functional-experience-contract.md) |
+| Opportunity Boost | [contrato funcional reformulado](uxa-038-opportunity-boost-functional-experience-contract.md) e [validação especializada](uxa-039-opportunity-boost-functional-validation-and-reformulation.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -104,7 +105,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até Opportunity Boost | UXA-000 a UXA-038 |
+| Arquitetura da Experiência | ativa até a validação funcional do Opportunity Boost | UXA-000 a UXA-039 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -112,7 +113,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
-| Opportunity Boost | experiência funcional definida; validação e wireframes pendentes | UXA-038 |
+| Opportunity Boost | funcionalmente validado e reformulado; wireframes pendentes | UXA-038; UXA-039 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Início protegido e compreensão
@@ -144,19 +145,22 @@ A validação da transição entre a compreensão e a primeira Tela Hoje ainda n
 
 ## 9. Opportunity Boost
 
-O [UXA-038](uxa-038-opportunity-boost-functional-experience-contract.md) estabelece:
+A UXA-038 reformulada e a UXA-039 estabelecem:
 
-- distribuição somente em inventário patrocinado separado;
-- selo `Patrocinado` ou `Impulsionado` antes da interação;
-- superfícies permitidas em Explorar, busca, listas, categorias, Mapa, detalhe separado e página do anunciante;
-- bloqueio no início protegido, compreensão, consentimento, Tela Hoje como Próximo Passo e Jornada pessoal;
-- densidade candidata de até 20%;
-- proibição de duas unidades patrocinadas consecutivas;
-- posição paga sem substituição do primeiro resultado orgânico;
-- explicação `Por que estou vendo isto?`;
-- controles de ocultar, ajustar preferências e denunciar;
-- marcador próprio e filtro no Mapa;
-- painel do anunciante com métricas agregadas;
+- gate de entrada com motivos de bloqueio visíveis;
+- objetivo único sem seleção automática;
+- inventário de critérios utilizados e excluídos;
+- alcance estimado sem garantia;
+- prévia separada do ranking orgânico;
+- pausa por alteração material de preço, data, capacidade, responsável ou condição;
+- estados próprios para inelegibilidade, rejeição, esgotamento e expiração;
+- Boost Social Financiado com financiador e beneficiário identificados;
+- controles com escopo conhecido e reversibilidade;
+- densidade reduzida quando faltar inventário orgânico;
+- ordenação orgânica independente de espaços patrocinados;
+- marcador e agrupamento próprios no Mapa;
+- relatório separado em entrega, interação, atribuição candidata e autorrelato;
+- pausa, cancelamento e reconciliação com consequências conhecidas;
 - identificação acessível sem depender apenas de cor.
 
 Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
@@ -177,14 +181,14 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente UXA-038;
-2. criar wireframes do fluxo do anunciante, cartão, Mapa e relatório;
-3. testar disclosure, densidade, frequência e controles;
-4. criar a referência móvel da Home;
-5. validar a transição para a primeira Tela Hoje;
-6. criar estados especializados de processamento, pausa, falha e retomada;
-7. criar referência do início protegido e da compreensão para computador;
-8. criar referência para tablet;
-9. retomar independentemente os testes dos Resultados Empresariais.
+1. criar wireframes do fluxo do anunciante;
+2. criar wireframes do cartão patrocinado e da explicação de distribuição;
+3. criar estados patrocinados para Lista e Mapa;
+4. criar wireframe do relatório agregado;
+5. validar funcionalmente os wireframes do Opportunity Boost;
+6. testar disclosure, densidade, frequência e controles;
+7. criar a referência móvel da Home;
+8. validar a transição para a primeira Tela Hoje;
+9. criar referência para computador e tablet quando priorizada.
 
 Nenhum ato é iniciado automaticamente.

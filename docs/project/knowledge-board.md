@@ -2,22 +2,23 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.14.0
+version: 12.15.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.14.0
+  - ROADMAP-12.15.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
   - GEM-OPPORTUNITY-BOOST-REVIEW-001
   - UXA-038
+  - UXA-039
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.40
+  - M7.41
 normative: false
 ---
 
@@ -32,12 +33,12 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Opportunity Boost documentalmente definido | M7.40 |
+| Marco | experiência do Opportunity Boost funcionalmente validada e reformulada | M7.41 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
-| Experiência do Boost | disclosure, superfícies, densidade e controles definidos | UXA-038 |
+| Experiência do Boost | validada e reformulada; wireframes pendentes | UXA-038; UXA-039 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
@@ -52,12 +53,13 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-038;
+- Arquitetura da Experiência até UXA-039;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências de Organizações e Coletivos;
 - baseline comercial de planos;
 - Opportunity Boost como mecanismo candidato;
-- regras de distribuição patrocinada, disclosure e proteção do orgânico;
+- validação funcional especializada do Opportunity Boost;
+- gate de entrada, fluxo, estados, controles e relatório reformulados;
 - parâmetros candidatos de orçamento e mensuração.
 
 ### Em validação ou calibração pendente
@@ -67,17 +69,25 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
 - densidade máxima de 20%;
+- frequência publicitária;
 - custo de servir, margem e antifraude;
 - categorias publicitárias;
-- cancelamento, saldo e disputa;
-- experiência de anunciantes e participantes.
+- cancelamento, saldo e disputa finais;
+- eficácia dos controles com Pessoas, Organizações e Coletivos.
 
 ### Aguardando autorização
 
-#### Opportunity Boost
+#### Telas do Opportunity Boost
 
-- validação funcional especializada de UXA-038;
-- wireframes;
+- wireframes do fluxo do anunciante;
+- wireframes do cartão patrocinado e da explicação;
+- estados patrocinados para Lista e Mapa;
+- wireframe do relatório agregado;
+- validação funcional do conjunto de wireframes;
+- testes posteriores de disclosure, densidade, frequência e controles.
+
+#### Modelo econômico e especialidades
+
 - pesquisa de disposição a pagar;
 - calibração de orçamento, CPM ou CPC;
 - política especializada de publicidade;
@@ -148,9 +158,27 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - ranking orgânico permanece independente;
 - Tela Hoje e Jornada pessoal permanecem sem inventário patrocinado;
 - compreensão inicial e Próximo Passo não alimentam segmentação;
+- baixa oferta orgânica reduz publicidade;
 - anunciante recebe métricas agregadas, não lista de visualizadores.
 
-## 6. Sequência pessoal
+## 6. Resultado da validação funcional
+
+A UXA-039 confirmou, após reformulação:
+
+- bloqueios de elegibilidade explicáveis;
+- objetivo sem seleção automática;
+- critérios utilizados e excluídos visíveis;
+- prévia patrocinada separada do orgânico;
+- pausa por alteração material;
+- estados de rejeição, esgotamento e expiração;
+- identificação do Boost Social Financiado;
+- controles reversíveis;
+- ordenação e densidade protegidas;
+- Mapa com agrupamento separado;
+- relatório em quatro camadas;
+- cancelamento com saldo e histórico visíveis.
+
+## 7. Sequência pessoal
 
 ```text
 Página Inicial pública
@@ -165,7 +193,7 @@ Página Inicial pública
 
 Oferta e publicidade não interrompem a sequência protegida.
 
-## 7. Regras preservadas
+## 8. Regras preservadas
 
 - gratuito mantém valor real;
 - catálogo público permanece acessível;
@@ -174,11 +202,11 @@ Oferta e publicidade não interrompem a sequência protegida.
 - filtros objetivos e preferências negativas permanecem obrigatórios;
 - anúncio é identificado antes da interação;
 - patrocinador e financiador não recebem autoridade indevida;
-- impressão, clique, inscrição e impacto são eventos diferentes;
+- impressão, clique, inscrição, atribuição e impacto são eventos diferentes;
 - valores são candidatos, não autorizações de cobrança;
 - documentação não equivale a implementação.
 
-## 8. Distribuição dos candidatos de Resultados
+## 9. Distribuição dos candidatos de Resultados
 
 | Estado | Quantidade |
 |---|---:|
@@ -187,6 +215,6 @@ Oferta e publicidade não interrompem a sequência protegida.
 | Rejeitados | 6 |
 | Aprovados | 0 |
 
-## 9. Próximo movimento
+## 10. Próximo movimento
 
 Após integração, nenhum movimento é automático. A próxima ação deverá ser autorizada separadamente.
