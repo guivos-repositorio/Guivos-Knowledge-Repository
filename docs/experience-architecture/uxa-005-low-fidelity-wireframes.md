@@ -2,9 +2,9 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.22.0
+version: 0.23.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-07-28
+last_updated: 2026-07-29
 parent: UXA-000
 related:
   - UXA-001
@@ -38,6 +38,7 @@ related:
   - UXA-039
   - UXA-040
   - UXA-041
+  - UXA-042
   - PAS-001
 normative: false
 ---
@@ -85,7 +86,9 @@ Página Inicial pública
 15. validação funcional especializada do Opportunity Boost — UXA-039;
 16. wireframes do fluxo do anunciante do Opportunity Boost — UXA-040;
 17. validação e reformulação dos wireframes do anunciante — UXA-041;
-18. cartão, explicação, Lista, Mapa, gestão ativa e relatório do Boost — pendentes.
+18. cartão patrocinado e explicação de distribuição — UXA-042;
+19. validação do cartão e da explicação — pendente de autorização própria;
+20. Lista, Mapa, gestão ativa e relatório do Boost — pendentes.
 
 ## 4. Natureza dos artefatos
 
@@ -160,19 +163,37 @@ A UXA-041 confirmou, após reformulação:
 - envio para avaliação sem entrega;
 - cancelamento com retorno ao rascunho e histórico preservado.
 
-Os próximos artefatos deverão demonstrar:
+### 5.5 Opportunity Boost — cartão e explicação pendentes de validação
 
-- cartão patrocinado independente;
-- explicação `Por que estou vendo isto?`;
-- Boost Social Financiado com financiador e beneficiário identificados;
-- controles de ocultação com escopo e reversibilidade;
+A UXA-042 deverá ser validada quanto a:
+
+- natureza patrocinada reconhecível antes do conteúdo;
+- primeiro resultado orgânico realmente preservado;
+- anunciante, financiador e beneficiário compreensíveis;
+- preço ou gratuidade visíveis;
+- publicidade distinguível de recomendação;
+- critérios utilizados explicados sem linguagem técnica excessiva;
+- critérios protegidos e contextos pessoais explicitamente excluídos;
+- ausência de lista de visualizadores;
+- ocultação da campanha com escopo conhecido;
+- `Mostrar menos deste tipo` separado de desativação total;
+- preferências revisáveis e reversíveis;
+- denúncia separada de preferência;
+- contestação de dados separada de denúncia de conteúdo;
+- Boost Social Financiado sem transferência de autoridade;
+- ocultação de publicidade sem redução do catálogo orgânico;
+- acessibilidade textual anterior a cor ou iconografia.
+
+Os próximos artefatos deverão ainda demonstrar:
+
+- estados patrocinados próprios para Lista e Mapa;
 - redução da publicidade quando faltar inventário orgânico;
 - marcador e agrupamento patrocinado próprios no Mapa;
 - gestão da campanha ativa;
 - relatório separado em entrega, interação, atribuição candidata e autorrelato;
 - pausa e cancelamento com saldo, consequência e histórico visíveis.
 
-### 5.5 Autonomia
+### 5.6 Autonomia
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
 - Compartilhamento mínimo não é tratado como insuficiência pessoal?
@@ -181,7 +202,7 @@ Os próximos artefatos deverão demonstrar:
 - Denúncia e preferência são tratadas como ações distintas?
 - O anunciante pode salvar rascunho, voltar e cancelar com efeito conhecido?
 
-### 5.6 Continuidade
+### 5.7 Continuidade
 
 - A Home conduz conscientemente ao início protegido?
 - O início protegido conduz à compreensão inicial revisável?
@@ -189,6 +210,7 @@ Os próximos artefatos deverão demonstrar:
 - Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
 - A gestão da oportunidade conduz ao Boost somente quando não houver bloqueio crítico?
 - O fluxo do anunciante termina em avaliação sem iniciar entrega?
+- O cartão patrocinado conduz à explicação sem esconder sua natureza comercial?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -222,7 +244,9 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
 | Fluxo do anunciante do Opportunity Boost — cinco estados | web para computador | 1.440 × 1.024 cada |
-| Cartão, explicação, Lista, Mapa, gestão ativa e relatório do Boost | computador e aplicativo móvel | pendentes |
+| Cartão e explicação padrão | móvel e computador | 390 × 844 e 1.440 × 1.024 |
+| Boost Social Financiado — cartão e explicação | aplicativo móvel | 390 × 844 cada |
+| Lista, Mapa, gestão ativa e relatório do Boost | computador e aplicativo móvel | pendentes |
 
 ## 8. Relação entre os wireframes
 
@@ -238,6 +262,7 @@ oportunidade aprovada e ativa
 → envio para avaliação
 → ajustes, rejeição ou aprovação
 → campanha futura
+→ cartão patrocinado e explicação
 → pausa, encerramento ou cancelamento
 → relatório agregado e reconciliação
 ```
@@ -263,8 +288,9 @@ oportunidade aprovada e ativa
 | Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
 | Fluxo do anunciante | UXA-040 | painel institucional | cinco arquivos vetoriais reformulados |
 | Validação do fluxo do anunciante | UXA-041 | painel institucional | validação funcional especializada |
+| Cartão e explicação patrocinados | UXA-042 | Explorar e experiência da pessoa | seis arquivos vetoriais |
 
-## 10. Resultados validados
+## 10. Resultados validados e materializados
 
 ### 10.1 Compreensão inicial
 
@@ -274,6 +300,8 @@ A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, af
 
 A UXA-038 a UXA-041 demonstram experiência funcional governada e fluxo inicial do anunciante validado, com elegibilidade explicável, critérios explícitos, base coerente, orgânico anterior ao anúncio, confirmação afirmativa e cancelamento compreensível.
 
+A UXA-042 materializa cartão, explicação, controles e variação social, ainda sem validação funcional própria.
+
 ## 11. Limites
 
 Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
@@ -282,7 +310,7 @@ Este programa não define marca, tecnologia, autenticação, armazenamento, IA, 
 
 Os próximos pontos exigem autorizações separadas:
 
-1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+1. validar funcionalmente e reformular os wireframes da UXA-042;
 2. criar estados patrocinados para Lista e Mapa;
 3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;

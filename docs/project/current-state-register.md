@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.70.0
+version: 1.71.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-07-28
+last_updated: 2026-07-29
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -18,6 +18,7 @@ related:
   - UXA-039
   - UXA-040
   - UXA-041
+  - UXA-042
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -28,8 +29,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.17.0
-  - M7.43
+  - ROADMAP-12.18.0
+  - M7.44
 normative: true
 ---
 
@@ -44,12 +45,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | wireframes do fluxo do anunciante do Opportunity Boost funcionalmente validados e reformulados | M7.43; UXA-040; UXA-041 |
+| Marco atual | cartão patrocinado e explicação do Opportunity Boost materializados | M7.44; UXA-042 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-041 | UXA-000 a UXA-041 |
+| Arquitetura da Experiência | ativa até UXA-042 | UXA-000 a UXA-042 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -62,6 +63,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Opportunity Boost econômico | add-on publicitário candidato separado dos planos | GEM-007-A1 |
 | Experiência do Boost | funcionalmente validada e reformulada | UXA-038; UXA-039 |
 | Fluxo do anunciante do Boost | cinco wireframes para computador funcionalmente validados e reformulados | UXA-040; UXA-041 |
+| Cartão e explicação do Boost | seis wireframes móveis e para computador criados; validação pendente | UXA-042 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -195,6 +197,32 @@ O conjunto demonstra:
 - envio sem entrega;
 - cancelamento com retorno ao rascunho e histórico preservado.
 
+### 6.5 Cartão patrocinado e explicação materializados
+
+A UXA-042 cria seis referências:
+
+1. cartão patrocinado móvel;
+2. explicação patrocinada móvel;
+3. cartão patrocinado para computador;
+4. explicação patrocinada para computador;
+5. cartão móvel de Boost Social Financiado;
+6. explicação móvel de Boost Social Financiado.
+
+O conjunto demonstra:
+
+- primeiro resultado orgânico preservado;
+- selo comercial anterior ao conteúdo;
+- anunciante, financiador e beneficiário identificados;
+- gratuidade ou preço compreensível;
+- publicidade separada de recomendação;
+- critérios utilizados e protegidos separados;
+- ausência de lista de visualizadores;
+- ocultação, preferência, desativação, denúncia e contestação com escopos próprios;
+- preferências reversíveis;
+- financiamento social sem autoridade ou acesso a dados protegidos.
+
+Os seis artefatos ainda exigem validação funcional própria.
+
 ## 7. Proteções vigentes
 
 - gratuito permanece útil;
@@ -215,7 +243,7 @@ O conjunto demonstra:
 
 Não foram concluídos:
 
-- cartão patrocinado e explicação como artefatos independentes;
+- validação funcional dos seis wireframes da UXA-042;
 - estados patrocinados para Lista e Mapa;
 - wireframes de gestão da campanha ativa;
 - wireframe do relatório agregado;
@@ -237,7 +265,7 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+1. validar funcionalmente e reformular os wireframes da UXA-042;
 2. criar estados patrocinados para Lista e Mapa;
 3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;

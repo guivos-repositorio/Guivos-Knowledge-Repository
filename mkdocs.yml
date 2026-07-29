@@ -71,10 +71,12 @@ nav:
       - Adendo da UXA-039: project/canonical-consolidation-matrix-uxa-039-addendum.md
       - Adendo da UXA-040: project/canonical-consolidation-matrix-uxa-040-addendum.md
       - Adendo da UXA-041: project/canonical-consolidation-matrix-uxa-041-addendum.md
+      - Adendo da UXA-042: project/canonical-consolidation-matrix-uxa-042-addendum.md
       - Histórico 1.62.0: project/changelog-1.62.0-opportunity-boost.md
       - Histórico 1.63.0: project/changelog-1.63.0-uxa-039.md
       - Histórico 1.64.0: project/changelog-1.64.0-uxa-040.md
       - Histórico 1.65.0: project/changelog-1.65.0-uxa-041.md
+      - Histórico 1.66.0: project/changelog-1.66.0-uxa-042.md
       - Parecer Mecânico do R5: project/repository-mechanical-validation-2026-07-24.md
       - Retomada Governada do R6: project/governed-resumption-r6.md
 
@@ -185,6 +187,7 @@ nav:
           - UXA-039 — Validação Funcional do Opportunity Boost: experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md
           - UXA-040 — Wireframes do Fluxo do Anunciante: experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md
           - UXA-041 — Validação dos Wireframes do Anunciante: experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md
+          - UXA-042 — Cartão Patrocinado e Explicação: experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
