@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.17.0
-title: Roadmap Arquitetural — Fluxo do Anunciante do Opportunity Boost Validado
+id: ROADMAP-12.18.0
+title: Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Materializados
 status: active
-version: 12.17.0
+version: 12.18.0
 owner: Guivos
-last_updated: 2026-07-28
+last_updated: 2026-07-29
 supersedes_partial:
-  - ROADMAP-12.16.0
+  - ROADMAP-12.17.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -20,14 +20,15 @@ related:
   - UXA-039
   - UXA-040
   - UXA-041
+  - UXA-042
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.43
+  - M7.44
 ---
 
-# Roadmap Arquitetural — Fluxo do Anunciante do Opportunity Boost Validado
+# Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Materializados
 
 ## 1. Autoridade
 
@@ -38,10 +39,11 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | wireframes do fluxo do anunciante funcionalmente validados e reformulados | M7.43 |
+| Marco | cartão patrocinado e explicação do Opportunity Boost materializados | M7.44 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes para computador validados e reformulados | UXA-040; UXA-041 |
+| Cartão e explicação | seis wireframes móveis e para computador criados; validação pendente | UXA-042 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -65,7 +67,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 10. Opportunity Boost definido como add-on publicitário candidato;
 11. experiência do Opportunity Boost validada e reformulada;
 12. fluxo do anunciante materializado em cinco wireframes de baixa fidelidade;
-13. wireframes do anunciante funcionalmente validados e reformulados.
+13. wireframes do anunciante funcionalmente validados e reformulados;
+14. cartão patrocinado e explicação materializados em seis wireframes.
 
 ## 4. Sequência pessoal vigente
 
@@ -152,7 +155,35 @@ Reformulações confirmadas:
 - confirmações inicialmente desmarcadas;
 - cancelamento da avaliação com retorno ao rascunho e histórico preservado.
 
-### 6.4 Preços candidatos preservados
+### 6.4 Cartão e explicação materializados
+
+A UXA-042 cria:
+
+```text
+cartão patrocinado móvel
+→ explicação móvel
+→ cartão patrocinado para computador
+→ explicação para computador
+→ cartão social financiado móvel
+→ explicação social financiada móvel
+```
+
+O conjunto demonstra:
+
+- primeiro resultado orgânico preservado;
+- natureza paga anterior ao conteúdo;
+- anunciante ou financiador identificado;
+- preço ou gratuidade visível;
+- publicidade separada de recomendação;
+- critérios gerais utilizados;
+- critérios protegidos e contextos pessoais excluídos;
+- controles reversíveis;
+- denúncia e contestação separadas;
+- Boost Social Financiado sem transferência de autoridade.
+
+Os seis wireframes ainda não foram funcionalmente validados.
+
+### 6.5 Preços candidatos preservados
 
 | Modalidade | Orçamento mínimo |
 |---|---:|
@@ -185,7 +216,7 @@ Reformulações confirmadas:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+1. validar funcionalmente e reformular os wireframes da UXA-042;
 2. criar estados patrocinados para Lista e Mapa;
 3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
@@ -215,4 +246,4 @@ Nenhuma frente avança automaticamente.
 
 ## 9. Regra de transição
 
-Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Distribuição paga não equivale a recomendação. Cada avanço exige autorização própria.
+Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Distribuição paga não equivale a recomendação. Cada avanço exige autorização própria.
