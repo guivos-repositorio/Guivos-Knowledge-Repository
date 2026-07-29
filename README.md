@@ -9,125 +9,134 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.39 — Baseline Comercial de Planos, Benefícios e Preços Definida |
+| Marco | M7.40 — Opportunity Boost Documentalmente Definido |
 | Remediação | concluída; validação mecânica permanente ativa |
-| Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
-| Guivos Journey | PAS-001 1.0.0; nove capacidades concluídas |
-| Modelo Econômico | arquitetura inicial concluída; baseline comercial candidata definida |
-| Planos para Pessoas | Free, Plus e Pro definidos |
-| Planos para Coletivos | Livre, Gestão, Impacto e Enterprise definidos |
-| Planos para Organizações | Business Start, Growth e Scale definidos |
-| Preços | candidatos para validação; cobrança não autorizada |
-| Resultados Empresariais | 9 em validação, 3 fundidos e 6 rejeitados |
-| Resultados canônicos | nenhum criado |
-| Home pública | validada e materializada para computador |
-| Início protegido móvel | funcionalmente validado e reformulado |
-| Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados |
-| Referência móvel da Home | não iniciada |
-| Tela Hoje | entrada recorrente após condição explicitamente escolhida |
-| Mapa e estados | funcionalmente validados e reformulados |
+| Arquitetura de Negócios | 18 decisões humanas; zero Resultados canônicos |
+| Modelo Econômico | planos e Opportunity Boost candidatos definidos |
+| Planos para Pessoas | Free, Plus e Pro |
+| Planos para Coletivos | Livre, Gestão, Impacto e Enterprise |
+| Planos para Organizações | Business Start, Growth e Scale |
+| Opportunity Boost | add-on publicitário separado dos planos |
+| Guivos Ads | operador econômico do Boost |
+| Preços | candidatos; cobrança não autorizada |
+| Home, início e compreensão | funcionalmente validados |
+| Mapa | estados móveis e referência desktop validados |
 | Protótipo, design e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Validação de Mercado | planos, limites e preços ainda não testados |
 
-## Baseline comercial candidata
+## Baseline comercial de planos
 
 ### Pessoas
 
-| Plano | Preço mensal | Preço anual | Ampliação principal |
-|---|---:|---:|---|
-| Guivos Free | R$ 0,00 | R$ 0,00 | catálogo público completo e 2 correspondências personalizadas por semana |
-| Guivos Plus | R$ 24,90 | R$ 249,00 | correspondências, filtros, alertas e histórico ampliados |
-| Guivos Pro | R$ 49,90 | R$ 499,00 | análises, integrações, relatórios e suporte avançados |
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Guivos Free | R$ 0,00 | R$ 0,00 |
+| Guivos Plus | R$ 24,90 | R$ 249,00 |
+| Guivos Pro | R$ 49,90 | R$ 499,00 |
 
 ### Coletivos
 
-| Plano | Preço mensal | Preço anual | Limite principal |
-|---|---:|---:|---|
-| Coletivo Livre | R$ 0,00 | R$ 0,00 | 1 atividade e 1 oportunidade gratuitas/mês; 2 ativas |
-| Coletivo Gestão | R$ 89,90 | R$ 899,00 | 4 atividades, 4 oportunidades e 6 ativas; monetização permitida |
-| Coletivo Impacto | R$ 249,90 | R$ 2.499,00 | 15 atividades, 15 oportunidades e 20 ativas |
-| Coletivo Enterprise | sob consulta | contrato anual | capacidade contratada, categorias personalizáveis, API, SSO e SLA |
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Coletivo Livre | R$ 0,00 | R$ 0,00 |
+| Coletivo Gestão | R$ 89,90 | R$ 899,00 |
+| Coletivo Impacto | R$ 249,90 | R$ 2.499,00 |
+| Coletivo Enterprise | sob consulta | contrato anual |
 
 ### Organizações
 
-| Plano | Preço mensal | Preço anual | Limite principal |
-|---|---:|---:|---|
-| Business Start | R$ 299,00 | R$ 2.990,00 | 10 novos programas ou oportunidades/mês; 15 ativos |
-| Business Growth | R$ 799,00 | R$ 7.990,00 | 50 novos/mês; 75 ativos; até 5 unidades |
-| Business Scale | a partir de R$ 1.990,00 | contrato anual | capacidade contratada, API, SSO, Power BI e SLA |
+| Plano | Mensal | Anual |
+|---|---:|---:|
+| Business Start | R$ 299,00 | R$ 2.990,00 |
+| Business Growth | R$ 799,00 | R$ 7.990,00 |
+| Business Scale | a partir de R$ 1.990,00 | contrato anual |
 
-Os valores não constituem oferta pública, autorização de cobrança, orçamento ou viabilidade comprovada.
+Todos os valores permanecem candidatos para validação.
 
-## Regras comerciais centrais
+## Opportunity Boost
 
-- o catálogo público permanece acessível no Guivos Free;
-- a cota individual limita correspondências personalizadas, não oportunidades públicas;
-- Coletivo Livre publica somente atividades e oportunidades gratuitas;
+O Opportunity Boost permite ampliar a distribuição publicitária identificada de uma oportunidade aprovada e ativa.
+
+### Elegibilidade
+
+- Coletivo Gestão, Impacto e Enterprise;
+- Business Start, Growth e Scale;
+- Coletivo Livre somente por Boost Social Financiado;
+- oportunidade ativa, atualizada e com capacidade de atendimento.
+
+### Orçamento candidato
+
+| Modalidade | Orçamento mínimo |
+|---|---:|
+| Boost Local | R$ 30,00 |
+| Boost Regional | R$ 100,00 |
+| Boost Ampliado | R$ 300,00 |
+| Boost Gerenciado | a partir de R$ 1.000,00 |
+
+- CPM candidato: R$ 12,00 a R$ 25,00;
+- CPC candidato: R$ 0,80 a R$ 2,50;
+- uma campanha não será cobrada simultaneamente por CPM e CPC;
+- orçamento limitado e sem renovação automática por padrão.
+
+### Regras centrais
+
+- ranking orgânico permanece independente de pagamento;
+- anúncio é identificado como `Patrocinado` ou `Impulsionado`;
+- densidade candidata máxima de 20%;
+- duas unidades patrocinadas consecutivas são proibidas;
+- compreensão inicial, Momento Atual e Próximo Passo não alimentam segmentação;
+- Tela Hoje e Jornada pessoal não recebem Boost nesta baseline;
+- anunciante recebe métricas agregadas, não lista de visualizadores;
+- alcance pago não equivale a recomendação, conversão ou impacto.
+
+## Regras comerciais preservadas
+
+- catálogo público permanece acessível no Guivos Free;
+- Coletivo Livre publica somente ofertas gratuitas;
 - publicação paga exige Coletivo Gestão ou superior;
-- pessoa gratuita pode adquirir atividade paga sem assinar Plus ou Pro;
-- assinatura, transação, comissão, taxa do meio de pagamento e tributo permanecem separados;
-- cota atingida não reduz a visibilidade de publicação existente;
-- Enterprise e Scale operam por capacidade contratada e uso justo;
-- plano pago não aumenta ranking, relevância, impacto ou evidência;
-- oferta não poderá interromper consentimento, compreensão, revisão ou controle de dados.
+- pessoa gratuita pode adquirir atividade paga;
+- plano, transação, comissão, Boost, taxa de pagamento e tributo permanecem separados;
+- pagamento não aumenta relevância, confiança, impacto ou evidência;
+- oferta e publicidade não entram no fluxo protegido de compreensão e autorização.
 
 ## Sequência pessoal vigente
 
 ```text
 Página Inicial pública
 → explicação do ambiente protegido
-→ acesso, somente quando necessário
-→ escolha e rascunho mínimo
-→ revisão e autorização específica
-→ processamento temporário visível e interrompível
-→ compreensão inicial apresentada como hipótese
-→ revisão por afirmação
+→ acesso quando necessário
+→ relato mínimo revisado e autorizado
+→ compreensão inicial como hipótese
 → decisões independentes sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-Oferta de plano não entra nessa sequência protegida antes da Tela Hoje.
-
-## Compreensão inicial móvel validada
-
-A UXA-036 reformulada e a UXA-037 estabelecem cinco estados:
-
-1. processamento temporário visível e interrompível;
-2. compreensão apresentada como hipótese;
-3. revisão por afirmação, correção e limitação;
-4. decisões independentes sobre persistência e personalização;
-5. base autorizada insuficiente.
-
-O conjunto preserva interrupção sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, decisões independentes e continuidade sem personalização.
-
-## Estado dos Resultados Empresariais
+## Resultados Empresariais
 
 ```text
-Validação externa concluída
-→ Matriz de Avaliação inicial concluída
-→ 18 decisões humanas concluídas
-→ 9 candidatos em validação, 3 fundidos e 6 rejeitados
-→ reaplicação dos quatro testes após nova autorização
-→ ajuste do AQS-O01
-→ catálogos canônicos
-→ Capacidades Empresariais
+18 decisões humanas concluídas
+→ 9 candidatos em validação
+→ 3 fundidos
+→ 6 rejeitados
+→ 0 Resultados canônicos
 ```
-
-A fusão de BUS-CAND-010 em BUS-CAND-005 não aprova o candidato-alvo, não torna reinvestimento obrigatório e não cria Resultado canônico.
 
 ## Próximos atos possíveis
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação de planos, limites e disposição a pagar;
-- modelagem de custos, margem e unit economics;
-- definição de comissão e política transacional;
-- arquitetura da página de Planos e Preços;
-- referência móvel da Home;
-- validação da transição para a primeira Tela Hoje;
-- reaplicação dos quatro testes dos Resultados Empresariais.
+- validação funcional do Opportunity Boost;
+- wireframes do Boost;
+- pesquisa de disposição a pagar;
+- calibração de orçamento, CPM ou CPC;
+- política especializada de publicidade;
+- custos, antifraude e unit economics;
+- revisões especializadas;
+- página de Planos e Preços;
+- política transacional;
+- transição para a primeira Tela Hoje;
+- retomada dos testes dos Resultados Empresariais.
 
 ## Acesso principal
 
@@ -137,14 +146,14 @@ Nenhum movimento é automático. Após integração e nova autorização, poder�
 - [Marcos Arquiteturais](docs/project/architectural-milestones.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
 - [Catálogo de Planos e Preços](docs/economic-model/gem-004-a1-commercial-plans-pricing-catalog.md)
-- [Política Comercial de Planos](docs/economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md)
-- [Premissas de Precificação](docs/economic-model/gem-010-a1-pricing-assumptions-and-validation.md)
-- [Revisão da Baseline Comercial](docs/economic-model/gem-commercial-plans-baseline-review.md)
+- [Contrato Econômico do Opportunity Boost](docs/economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md)
+- [Preços e Mensuração do Opportunity Boost](docs/economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md)
+- [Revisão da Baseline do Opportunity Boost](docs/economic-model/gem-opportunity-boost-baseline-review.md)
+- [Contrato Funcional da Experiência do Boost](docs/experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
+- [Guivos Ads](docs/product-architecture/ads.md)
+- [Adendo Canônico do Opportunity Boost](docs/project/canonical-consolidation-matrix-opportunity-boost-addendum.md)
+- [Histórico 1.62.0](docs/project/changelog-1.62.0-opportunity-boost.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Wireframe da Compreensão Inicial](docs/experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md)
-- [Validação da Compreensão Inicial](docs/experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md)
-- [Adendo Canônico dos Planos](docs/project/canonical-consolidation-matrix-gem-commercial-plans-addendum.md)
-- [Histórico 1.61.0](docs/project/changelog-1.61.0-gem-commercial-plans.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Documentação completa](docs/index.md)
 
