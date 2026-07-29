@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.15.0
+version: 12.16.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.15.0
+  - ROADMAP-12.16.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -16,9 +16,10 @@ related:
   - GEM-OPPORTUNITY-BOOST-REVIEW-001
   - UXA-038
   - UXA-039
+  - UXA-040
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.41
+  - M7.42
 normative: false
 ---
 
@@ -33,12 +34,13 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | experiência do Opportunity Boost funcionalmente validada e reformulada | M7.41 |
+| Marco | wireframes do fluxo do anunciante do Opportunity Boost criados | M7.42 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
-| Experiência do Boost | validada e reformulada; wireframes pendentes | UXA-038; UXA-039 |
+| Experiência do Boost | validada e reformulada | UXA-038; UXA-039 |
+| Fluxo do anunciante | cinco wireframes para computador criados; validação pendente | UXA-040 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
@@ -53,18 +55,19 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-039;
+- Arquitetura da Experiência até UXA-040;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências de Organizações e Coletivos;
 - baseline comercial de planos;
 - Opportunity Boost como mecanismo candidato;
 - validação funcional especializada do Opportunity Boost;
-- gate de entrada, fluxo, estados, controles e relatório reformulados;
+- fluxo do anunciante materializado em cinco wireframes;
 - parâmetros candidatos de orçamento e mensuração.
 
 ### Em validação ou calibração pendente
 
 - nove candidatos de Resultados Empresariais;
+- wireframes do fluxo do anunciante;
 - utilidade e disposição a pagar dos planos;
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
@@ -79,11 +82,11 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 
 #### Telas do Opportunity Boost
 
-- wireframes do fluxo do anunciante;
+- validação funcional e reformulação dos wireframes do fluxo do anunciante;
 - wireframes do cartão patrocinado e da explicação;
 - estados patrocinados para Lista e Mapa;
 - wireframe do relatório agregado;
-- validação funcional do conjunto de wireframes;
+- validação funcional do conjunto completo de wireframes;
 - testes posteriores de disclosure, densidade, frequência e controles.
 
 #### Modelo econômico e especialidades
@@ -161,22 +164,27 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - baixa oferta orgânica reduz publicidade;
 - anunciante recebe métricas agregadas, não lista de visualizadores.
 
-## 6. Resultado da validação funcional
+## 6. Referência visual do anunciante
 
-A UXA-039 confirmou, após reformulação:
+A UXA-040 materializa:
 
-- bloqueios de elegibilidade explicáveis;
-- objetivo sem seleção automática;
-- critérios utilizados e excluídos visíveis;
-- prévia patrocinada separada do orgânico;
-- pausa por alteração material;
-- estados de rejeição, esgotamento e expiração;
-- identificação do Boost Social Financiado;
-- controles reversíveis;
-- ordenação e densidade protegidas;
-- Mapa com agrupamento separado;
-- relatório em quatro camadas;
-- cancelamento com saldo e histórico visíveis.
+1. elegibilidade e gates;
+2. objetivo e critérios;
+3. orçamento, duração e alcance estimado;
+4. prévia patrocinada e confirmação;
+5. envio para avaliação.
+
+Os arquivos utilizam 1.440 × 1.024 pixels, baixa fidelidade e canal web para computador.
+
+A referência demonstra que:
+
+- plano não substitui aprovação, capacidade ou segurança;
+- escolhas começam desmarcadas;
+- critérios protegidos permanecem excluídos;
+- estimativa não é garantia;
+- primeiro resultado orgânico é preservado;
+- envio não inicia entrega;
+- ajustes, rejeição e aprovação são estados distintos.
 
 ## 7. Sequência pessoal
 
@@ -217,4 +225,4 @@ Oferta e publicidade não interrompem a sequência protegida.
 
 ## 10. Próximo movimento
 
-Após integração, nenhum movimento é automático. A próxima ação deverá ser autorizada separadamente.
+Após integração, nenhum movimento é automático. A próxima ação deverá ser autorizada separadamente e, pela sequência visual, será a validação funcional dos wireframes da UXA-040.
