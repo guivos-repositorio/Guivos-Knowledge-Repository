@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.40 — Opportunity Boost Documentalmente Definido |
+| Marco | M7.41 — Experiência do Opportunity Boost Funcionalmente Validada e Reformulada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | 18 decisões humanas; zero Resultados canônicos |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos |
@@ -17,6 +17,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Planos para Coletivos | Livre, Gestão, Impacto e Enterprise |
 | Planos para Organizações | Business Start, Growth e Scale |
 | Opportunity Boost | add-on publicitário separado dos planos |
+| Experiência do Boost | validada e reformulada; wireframes pendentes |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; cobrança não autorizada |
 | Home, início e compreensão | funcionalmente validados |
@@ -78,6 +79,21 @@ O Opportunity Boost permite ampliar a distribuição publicitária identificada 
 - uma campanha não será cobrada simultaneamente por CPM e CPC;
 - orçamento limitado e sem renovação automática por padrão.
 
+### Experiência validada
+
+A validação funcional acrescentou:
+
+- bloqueios de elegibilidade explicáveis;
+- objetivo único e sem seleção automática;
+- critérios utilizados e proibidos visíveis;
+- prévia separada do ranking orgânico;
+- pausa quando preço, data, capacidade ou condição material mudar;
+- estados próprios para rejeição, esgotamento, expiração e reconciliação;
+- identificação do Boost Social Financiado;
+- controles de ocultação com escopo e reversibilidade;
+- redução da publicidade quando faltar inventário orgânico;
+- relatório separado em entrega, interação, atribuição candidata e autorrelato.
+
 ### Regras centrais
 
 - ranking orgânico permanece independente de pagamento;
@@ -126,8 +142,11 @@ Página Inicial pública
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional do Opportunity Boost;
-- wireframes do Boost;
+- wireframes do fluxo do anunciante;
+- wireframes do cartão patrocinado e da explicação;
+- estados patrocinados para Lista e Mapa;
+- wireframe do relatório agregado;
+- validação funcional dos wireframes;
 - pesquisa de disposição a pagar;
 - calibração de orçamento, CPM ou CPC;
 - política especializada de publicidade;
@@ -148,11 +167,10 @@ Nenhum movimento é automático. Após integração e nova autorização, poder�
 - [Catálogo de Planos e Preços](docs/economic-model/gem-004-a1-commercial-plans-pricing-catalog.md)
 - [Contrato Econômico do Opportunity Boost](docs/economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md)
 - [Preços e Mensuração do Opportunity Boost](docs/economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md)
-- [Revisão da Baseline do Opportunity Boost](docs/economic-model/gem-opportunity-boost-baseline-review.md)
-- [Contrato Funcional da Experiência do Boost](docs/experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
-- [Guivos Ads](docs/product-architecture/ads.md)
-- [Adendo Canônico do Opportunity Boost](docs/project/canonical-consolidation-matrix-opportunity-boost-addendum.md)
-- [Histórico 1.62.0](docs/project/changelog-1.62.0-opportunity-boost.md)
+- [Contrato Funcional Reformulado do Boost](docs/experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
+- [Validação Funcional do Boost](docs/experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md)
+- [Adendo Canônico da UXA-039](docs/project/canonical-consolidation-matrix-uxa-039-addendum.md)
+- [Histórico 1.63.0](docs/project/changelog-1.63.0-uxa-039.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Documentação completa](docs/index.md)
