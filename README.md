@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.41 — Experiência do Opportunity Boost Funcionalmente Validada e Reformulada |
+| Marco | M7.42 — Wireframes do Fluxo do Anunciante do Opportunity Boost Criados |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | 18 decisões humanas; zero Resultados canônicos |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos |
@@ -17,7 +17,8 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Planos para Coletivos | Livre, Gestão, Impacto e Enterprise |
 | Planos para Organizações | Business Start, Growth e Scale |
 | Opportunity Boost | add-on publicitário separado dos planos |
-| Experiência do Boost | validada e reformulada; wireframes pendentes |
+| Experiência do Boost | validada e reformulada |
+| Fluxo do anunciante | cinco wireframes para computador criados; validação pendente |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; cobrança não autorizada |
 | Home, início e compreensão | funcionalmente validados |
@@ -81,18 +82,19 @@ O Opportunity Boost permite ampliar a distribuição publicitária identificada 
 
 ### Experiência validada
 
-A validação funcional acrescentou:
+A validação funcional estabeleceu bloqueios explicáveis, objetivo único, critérios utilizados e proibidos visíveis, prévia separada do ranking orgânico, pausa por alteração material, estados completos, identificação do Boost Social Financiado, controles reversíveis, proteção da densidade e relatório em quatro camadas.
 
-- bloqueios de elegibilidade explicáveis;
-- objetivo único e sem seleção automática;
-- critérios utilizados e proibidos visíveis;
-- prévia separada do ranking orgânico;
-- pausa quando preço, data, capacidade ou condição material mudar;
-- estados próprios para rejeição, esgotamento, expiração e reconciliação;
-- identificação do Boost Social Financiado;
-- controles de ocultação com escopo e reversibilidade;
-- redução da publicidade quando faltar inventário orgânico;
-- relatório separado em entrega, interação, atribuição candidata e autorrelato.
+### Fluxo do anunciante materializado
+
+A UXA-040 criou cinco wireframes para computador:
+
+1. elegibilidade;
+2. objetivo e critérios;
+3. orçamento e duração;
+4. prévia e confirmação;
+5. envio para avaliação.
+
+O conjunto ainda exige validação funcional própria. Nenhuma campanha, cobrança ou entrega foi iniciada.
 
 ### Regras centrais
 
@@ -142,11 +144,11 @@ Página Inicial pública
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- wireframes do fluxo do anunciante;
+- validação funcional e reformulação dos wireframes do anunciante;
 - wireframes do cartão patrocinado e da explicação;
 - estados patrocinados para Lista e Mapa;
 - wireframe do relatório agregado;
-- validação funcional dos wireframes;
+- validação funcional do conjunto completo;
 - pesquisa de disposição a pagar;
 - calibração de orçamento, CPM ou CPC;
 - política especializada de publicidade;
@@ -169,8 +171,9 @@ Nenhum movimento é automático. Após integração e nova autorização, poder�
 - [Preços e Mensuração do Opportunity Boost](docs/economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md)
 - [Contrato Funcional Reformulado do Boost](docs/experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
 - [Validação Funcional do Boost](docs/experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md)
-- [Adendo Canônico da UXA-039](docs/project/canonical-consolidation-matrix-uxa-039-addendum.md)
-- [Histórico 1.63.0](docs/project/changelog-1.63.0-uxa-039.md)
+- [Wireframes do Fluxo do Anunciante](docs/experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md)
+- [Adendo Canônico da UXA-040](docs/project/canonical-consolidation-matrix-uxa-040-addendum.md)
+- [Histórico 1.64.0](docs/project/changelog-1.64.0-uxa-040.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Documentação completa](docs/index.md)

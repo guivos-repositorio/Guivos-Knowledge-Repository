@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.35.0
+version: 0.36.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 related:
@@ -49,9 +49,10 @@ related:
   - UXA-037
   - UXA-038
   - UXA-039
+  - UXA-040
   - GEM-007-A1
   - GEM-010-A2
-  - M7.41
+  - M7.42
 normative: false
 ---
 
@@ -97,7 +98,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
-| Opportunity Boost | [contrato funcional reformulado](uxa-038-opportunity-boost-functional-experience-contract.md) e [validação especializada](uxa-039-opportunity-boost-functional-validation-and-reformulation.md) |
+| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md) e [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -105,7 +106,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até a validação funcional do Opportunity Boost | UXA-000 a UXA-039 |
+| Arquitetura da Experiência | ativa até os wireframes do fluxo do anunciante | UXA-000 a UXA-040 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -113,23 +114,14 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
-| Opportunity Boost | funcionalmente validado e reformulado; wireframes pendentes | UXA-038; UXA-039 |
+| Opportunity Boost | experiência validada; fluxo do anunciante materializado e aguardando validação dos wireframes | UXA-038; UXA-039; UXA-040 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Início protegido e compreensão
 
 O início protegido preserva explicação anterior ao relato, dados de acesso separados, modalidades equivalentes, revisão, autorização específica e recusa sem processamento.
 
-A compreensão inicial preserva:
-
-- processamento temporário e interrompível;
-- ausência de tarefa oculta;
-- afirmações individualizadas por natureza, origem e confiança;
-- hipótese sem diagnóstico;
-- revisão sem resposta padrão;
-- relato original separado da interpretação;
-- persistência e personalização como decisões independentes;
-- base insuficiente sem pressão.
+A compreensão inicial preserva processamento temporário e interrompível, ausência de tarefa oculta, afirmações individualizadas, hipótese sem diagnóstico, revisão sem resposta padrão, relato original separado da interpretação, decisões independentes e base insuficiente sem pressão.
 
 ## 7. Tela Hoje
 
@@ -145,23 +137,17 @@ A validação da transição entre a compreensão e a primeira Tela Hoje ainda n
 
 ## 9. Opportunity Boost
 
-A UXA-038 reformulada e a UXA-039 estabelecem:
+A UXA-038 reformulada e a UXA-039 estabelecem gates explicáveis, objetivo único, critérios utilizados e excluídos, alcance sem garantia, prévia separada do orgânico, pausa por alteração material, estados completos, Boost Social Financiado identificado, controles reversíveis, proteção da densidade, Mapa separado e relatório em quatro camadas.
 
-- gate de entrada com motivos de bloqueio visíveis;
-- objetivo único sem seleção automática;
-- inventário de critérios utilizados e excluídos;
-- alcance estimado sem garantia;
-- prévia separada do ranking orgânico;
-- pausa por alteração material de preço, data, capacidade, responsável ou condição;
-- estados próprios para inelegibilidade, rejeição, esgotamento e expiração;
-- Boost Social Financiado com financiador e beneficiário identificados;
-- controles com escopo conhecido e reversibilidade;
-- densidade reduzida quando faltar inventário orgânico;
-- ordenação orgânica independente de espaços patrocinados;
-- marcador e agrupamento próprios no Mapa;
-- relatório separado em entrega, interação, atribuição candidata e autorrelato;
-- pausa, cancelamento e reconciliação com consequências conhecidas;
-- identificação acessível sem depender apenas de cor.
+A UXA-040 materializa, em cinco referências para computador:
+
+1. elegibilidade e gate de entrada;
+2. objetivo e critérios de distribuição;
+3. orçamento, duração e alcance estimado;
+4. prévia patrocinada e confirmação;
+5. envio para avaliação.
+
+Os wireframes preservam o primeiro resultado orgânico, mantêm confirmações desmarcadas e não iniciam entrega antes da aprovação. Eles ainda não foram funcionalmente validados.
 
 Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
 
@@ -181,11 +167,11 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar wireframes do fluxo do anunciante;
+1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
 2. criar wireframes do cartão patrocinado e da explicação de distribuição;
 3. criar estados patrocinados para Lista e Mapa;
 4. criar wireframe do relatório agregado;
-5. validar funcionalmente os wireframes do Opportunity Boost;
+5. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
 6. testar disclosure, densidade, frequência e controles;
 7. criar a referência móvel da Home;
 8. validar a transição para a primeira Tela Hoje;
