@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.69.0
+version: 1.70.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-28
 depends_on:
@@ -17,6 +17,7 @@ related:
   - UXA-038
   - UXA-039
   - UXA-040
+  - UXA-041
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -27,8 +28,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.16.0
-  - M7.42
+  - ROADMAP-12.17.0
+  - M7.43
 normative: true
 ---
 
@@ -43,12 +44,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | wireframes do fluxo do anunciante do Opportunity Boost criados | M7.42; UXA-040 |
+| Marco atual | wireframes do fluxo do anunciante do Opportunity Boost funcionalmente validados e reformulados | M7.43; UXA-040; UXA-041 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-040 | UXA-000 a UXA-040 |
+| Arquitetura da Experiência | ativa até UXA-041 | UXA-000 a UXA-041 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -60,7 +61,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Planos para Organizações | Business Start, Growth e Scale candidatos | GEM-004-A1 |
 | Opportunity Boost econômico | add-on publicitário candidato separado dos planos | GEM-007-A1 |
 | Experiência do Boost | funcionalmente validada e reformulada | UXA-038; UXA-039 |
-| Fluxo do anunciante do Boost | cinco wireframes para computador criados; validação pendente | UXA-040 |
+| Fluxo do anunciante do Boost | cinco wireframes para computador funcionalmente validados e reformulados | UXA-040; UXA-041 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -172,9 +173,9 @@ Todos os valores permanecem candidatos para validação.
 - relatório separado em entrega, interação, atribuição candidata e autorrelato;
 - pausa e cancelamento com consequência, saldo e histórico visíveis.
 
-### 6.4 Referência visual do anunciante
+### 6.4 Fluxo visual do anunciante validado
 
-A UXA-040 criou cinco estados para computador:
+A UXA-040 reformulada e a UXA-041 validam cinco estados para computador:
 
 1. elegibilidade;
 2. objetivo e critérios;
@@ -182,7 +183,17 @@ A UXA-040 criou cinco estados para computador:
 4. prévia e confirmação;
 5. envio para avaliação.
 
-O conjunto não inicia entrega, mantém confirmações desmarcadas, preserva o primeiro resultado orgânico e ainda exige validação funcional própria.
+O conjunto demonstra:
+
+- distinção entre `Atendido`, `Atendido com limite` e `Bloqueado`;
+- critérios escolhidos e revisáveis;
+- público insuficiente sem ampliação automática;
+- base principal coerente com o objetivo;
+- CPC para objetivo de clique no exemplo;
+- primeiro resultado orgânico anterior ao espaço patrocinado;
+- confirmação desmarcada;
+- envio sem entrega;
+- cancelamento com retorno ao rascunho e histórico preservado.
 
 ## 7. Proteções vigentes
 
@@ -204,9 +215,9 @@ O conjunto não inicia entrega, mantém confirmações desmarcadas, preserva o p
 
 Não foram concluídos:
 
-- validação funcional dos wireframes do anunciante;
 - cartão patrocinado e explicação como artefatos independentes;
 - estados patrocinados para Lista e Mapa;
+- wireframes de gestão da campanha ativa;
 - wireframe do relatório agregado;
 - validação do conjunto completo de wireframes;
 - pesquisa de disposição a pagar;
@@ -226,9 +237,9 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
-2. criar wireframes do cartão patrocinado e da explicação de distribuição;
-3. criar estados patrocinados para Lista e Mapa;
+1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+2. criar estados patrocinados para Lista e Mapa;
+3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
 6. validar preços, orçamentos e disposição a pagar;
