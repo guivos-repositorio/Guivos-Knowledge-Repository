@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
   <title id="title">Cartão patrocinado para computador do Opportunity Boost</title>
-  <desc id="desc">Wireframe para computador com consulta orgânica preservada, primeiro resultado orgânico, espaço patrocinado separado, identificação comercial e controles.</desc>
+  <desc id="desc">Wireframe para computador com consulta orgânica preservada, primeiro resultado orgânico, espaço patrocinado separado, identificação comercial e controles com escopo visível.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -36,8 +36,8 @@
   <text x="286" y="556" font-family="Arial, sans-serif" font-size="12">Online · Gratuita · 18 vagas · inscrições até 30/09/2026</text>
   <text x="286" y="590" font-family="Arial, sans-serif" font-size="11">Campanha paga identificada. Não representa recomendação, confiança ou maior relevância orgânica.</text>
   <text x="286" y="630" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Por que estou vendo isto?</text>
-  <text x="640" y="630" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Ocultar esta campanha</text>
-  <text x="800" y="630" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Mais opções</text>
+  <text x="620" y="630" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Ocultar esta campanha · só este anúncio</text>
+  <text x="824" y="630" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Controles do anúncio</text>
   <rect x="846" y="598" width="208" height="46" rx="8" fill="#222222"/>
   <text x="950" y="626" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" font-weight="700">Abrir oportunidade</text>
 
