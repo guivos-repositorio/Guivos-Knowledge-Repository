@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.67.0
+version: 1.68.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-07-28
 depends_on:
@@ -15,6 +15,7 @@ related:
   - UXA-000
   - UXA-004
   - UXA-038
+  - UXA-039
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -25,8 +26,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.14.0
-  - M7.40
+  - ROADMAP-12.15.0
+  - M7.41
 normative: true
 ---
 
@@ -41,12 +42,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | Opportunity Boost documentalmente definido como mecanismo candidato | M7.40; GEM-007-A1; UXA-038; GEM-010-A2 |
+| Marco atual | experiência do Opportunity Boost funcionalmente validada e reformulada | M7.41; UXA-038; UXA-039 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-038 | UXA-000 a UXA-038 |
+| Arquitetura da Experiência | ativa até UXA-039 | UXA-000 a UXA-039 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -56,8 +57,8 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Planos para Pessoas | Free, Plus e Pro candidatos | GEM-004-A1 |
 | Planos para Coletivos | Livre, Gestão, Impacto e Enterprise candidatos | GEM-004-A1 |
 | Planos para Organizações | Business Start, Growth e Scale candidatos | GEM-004-A1 |
-| Opportunity Boost | add-on publicitário candidato separado dos planos | GEM-007-A1 |
-| Experiência do Boost | superfícies, disclosures, densidade e controles definidos | UXA-038 |
+| Opportunity Boost econômico | add-on publicitário candidato separado dos planos | GEM-007-A1 |
+| Experiência do Boost | funcionalmente validada e reformulada; wireframes pendentes | UXA-038; UXA-039 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -102,7 +103,7 @@ Oferta de plano ou publicidade não entra no início protegido, processamento, r
 
 ## 5. Baseline comercial de planos
 
-### Pessoas
+### 5.1 Pessoas
 
 | Plano | Mensal | Anual | Ampliação principal |
 |---|---:|---:|---|
@@ -110,7 +111,7 @@ Oferta de plano ou publicidade não entra no início protegido, processamento, r
 | Guivos Plus | R$ 24,90 | R$ 249,00 | correspondências, filtros, alertas e histórico ampliados |
 | Guivos Pro | R$ 49,90 | R$ 499,00 | análises, integrações, relatórios e suporte avançados |
 
-### Coletivos
+### 5.2 Coletivos
 
 | Plano | Mensal | Anual | Limite principal |
 |---|---:|---:|---|
@@ -119,7 +120,7 @@ Oferta de plano ou publicidade não entra no início protegido, processamento, r
 | Coletivo Impacto | R$ 249,90 | R$ 2.499,00 | 15 atividades, 15 oportunidades e 20 ativas |
 | Coletivo Enterprise | sob consulta | contrato anual | capacidade contratada, categorias personalizáveis, API, SSO e SLA |
 
-### Organizações
+### 5.3 Organizações
 
 | Plano | Mensal | Anual | Limite principal |
 |---|---:|---:|---|
@@ -131,7 +132,7 @@ Todos os valores permanecem candidatos para validação.
 
 ## 6. Opportunity Boost
 
-### 6.1 Elegibilidade
+### 6.1 Elegibilidade econômica
 
 - Coletivo Gestão, Impacto e Enterprise podem contratar diretamente;
 - Coletivo Livre somente poderá receber Boost Social Financiado;
@@ -154,15 +155,20 @@ Todos os valores permanecem candidatos para validação.
 - atribuição por clique candidata de até sete dias;
 - atribuição por visualização desativada inicialmente.
 
-### 6.3 Experiência
+### 6.3 Experiência validada
 
-- superfícies permitidas: Explorar, busca, listas, categorias, Mapa, detalhe separado e página do anunciante;
-- superfícies bloqueadas: início protegido, compreensão, consentimento, Tela Hoje como Próximo Passo e Jornada como recomendação;
-- identificação obrigatória como `Patrocinado` ou `Impulsionado`;
-- densidade candidata máxima de 20%;
-- nenhuma unidade patrocinada consecutiva;
-- ranking orgânico independente de pagamento;
-- anunciante recebe métricas agregadas, não lista de visualizadores.
+- gate de entrada com bloqueios por plano, aprovação, atualização, capacidade, segurança e responsabilidade;
+- objetivo único, sem seleção automática ou promessa de resultado;
+- critérios utilizados e proibidos visíveis antes do envio;
+- prévia separada de ranking e ordenação orgânicos;
+- pausa automática por alteração material, orçamento, capacidade ou expiração;
+- estados próprios para inelegibilidade, rejeição, esgotamento e reconciliação;
+- Boost Social Financiado com financiador e beneficiário identificados;
+- controles reversíveis de ocultação e preferência;
+- baixa oferta orgânica reduz publicidade e nunca aumenta densidade;
+- marcador e agrupamento próprios no Mapa;
+- relatório separado em entrega, interação, atribuição candidata e autorrelato;
+- pausa e cancelamento com consequência, saldo e histórico visíveis.
 
 ## 7. Proteções vigentes
 
@@ -174,6 +180,7 @@ Todos os valores permanecem candidatos para validação.
 - Boost não compra aderência pessoal;
 - compreensão inicial, Momento Atual e Próximo Passo não são usados para segmentação;
 - preferência de ocultação não pode ser contornada;
+- ausência de inventário orgânico não aumenta densidade publicitária;
 - patrocinador ou financiador não recebe autoridade indevida;
 - localização permanece opcional;
 - cancelamento e retorno ao gratuito permanecem protegidos;
@@ -183,8 +190,10 @@ Todos os valores permanecem candidatos para validação.
 
 Não foram concluídos:
 
+- wireframes do Opportunity Boost;
+- validação dos wireframes;
 - pesquisa de disposição a pagar;
-- calibração de CPM, CPC, orçamento ou densidade;
+- calibração de CPM, CPC, orçamento, densidade ou frequência;
 - política jurídica, fiscal e contábil de publicidade;
 - categorias finais e moderação operacional;
 - custos de servir, margem e antifraude;
@@ -200,11 +209,12 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente a experiência do Opportunity Boost;
-2. validar preços, orçamentos e disposição a pagar;
-3. definir política especializada de publicidade e categorias;
-4. construir modelo de custos e unit economics;
-5. criar wireframes do Boost;
-6. definir comissão e política transacional de ofertas pagas;
-7. retomar a transição para a primeira Tela Hoje;
-8. retomar independentemente os testes dos Resultados Empresariais.
+1. criar wireframes de baixa fidelidade do fluxo do anunciante;
+2. criar wireframes do cartão patrocinado e da explicação de distribuição;
+3. criar estados patrocinados para Lista e Mapa;
+4. criar wireframe do relatório agregado;
+5. validar funcionalmente os wireframes do Opportunity Boost;
+6. validar preços, orçamentos e disposição a pagar;
+7. definir política especializada de publicidade e categorias;
+8. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
+9. retomar independentemente os testes dos Resultados Empresariais.
