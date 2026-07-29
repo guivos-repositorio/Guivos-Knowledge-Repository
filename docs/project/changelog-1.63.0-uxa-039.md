@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.63.0
- title: Histórico 1.63.0 — Validação Funcional do Opportunity Boost
+title: Histórico 1.63.0 — Validação Funcional do Opportunity Boost
 status: active
 version: 1.63.0
 owner: Repositório de Conhecimento da Guivos
