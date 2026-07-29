@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.15.0
-title: Roadmap Arquitetural — Opportunity Boost Funcionalmente Validado
+id: ROADMAP-12.16.0
+title: Roadmap Arquitetural — Fluxo do Anunciante do Opportunity Boost Materializado
 status: active
-version: 12.15.0
+version: 12.16.0
 owner: Guivos
 last_updated: 2026-07-28
 supersedes_partial:
-  - ROADMAP-12.14.0
+  - ROADMAP-12.15.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -18,14 +18,15 @@ related:
   - GEM-OPPORTUNITY-BOOST-REVIEW-001
   - UXA-038
   - UXA-039
+  - UXA-040
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.41
+  - M7.42
 ---
 
-# Roadmap Arquitetural — Opportunity Boost Funcionalmente Validado
+# Roadmap Arquitetural — Fluxo do Anunciante do Opportunity Boost Materializado
 
 ## 1. Autoridade
 
@@ -36,16 +37,16 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | experiência do Opportunity Boost funcionalmente validada e reformulada | M7.41 |
+| Marco | wireframes do fluxo do anunciante do Opportunity Boost criados | M7.42 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
-| Experiência do Boost | contrato reformulado e validação especializada concluída | UXA-038; UXA-039 |
+| Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
+| Fluxo visual do anunciante | cinco wireframes para computador criados; validação pendente | UXA-040 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial | validada em cinco estados | UXA-036; UXA-037 |
 | Mapa | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
-| Wireframes do Boost | não iniciados | — |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -61,7 +62,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 8. experiências de Organizações e Coletivos estruturadas;
 9. planos, benefícios, limites e preços candidatos definidos;
 10. Opportunity Boost definido como add-on publicitário candidato;
-11. experiência do Opportunity Boost validada e reformulada antes dos wireframes.
+11. experiência do Opportunity Boost validada e reformulada;
+12. fluxo do anunciante materializado em cinco wireframes de baixa fidelidade.
 
 ## 4. Sequência pessoal vigente
 
@@ -123,23 +125,33 @@ O Boost amplia distribuição publicitária; não altera ranking orgânico, ader
 
 ### 6.2 Resultado da validação funcional
 
-A UXA-039 confirmou a experiência como válida após reformulação e acrescentou:
+A UXA-039 confirmou a experiência como válida após reformulação, com gate de entrada, objetivo único, critérios visíveis, alcance sem garantia, prévia separada do orgânico, pausa por alteração material, estados completos, Boost Social Financiado identificado, controles reversíveis, proteção da densidade, Mapa separado e relatório em quatro camadas.
 
-- gate de entrada com bloqueios explícitos;
-- objetivo único e sem seleção automática;
-- resumo de critérios utilizados, excluídos e alcance estimado;
-- prévia que preserva o primeiro resultado orgânico;
-- pausa por alteração material da oportunidade;
-- estados próprios para inelegibilidade, rejeição, esgotamento, expiração e reconciliação;
-- divulgação específica do Boost Social Financiado;
-- controles de ocultação com escopo e reversibilidade;
-- redução da publicidade quando faltar inventário orgânico;
-- ordenação objetiva independente de posição paga;
-- agrupamento patrocinado e orgânico separado no Mapa;
-- relatório separado em entrega, interação, atribuição candidata e autorrelato;
-- cancelamento e reconciliação com consequência e saldo visíveis.
+### 6.3 Referência visual criada
 
-### 6.3 Preços candidatos preservados
+A UXA-040 criou cinco wireframes para computador:
+
+```text
+elegibilidade
+→ objetivo e critérios
+→ orçamento e duração
+→ prévia e confirmação
+→ envio para avaliação
+```
+
+O conjunto demonstra:
+
+- gates antes da configuração;
+- objetivo e confirmação sem seleção automática;
+- critérios utilizados e proibidos;
+- orçamento total, limite diário e período;
+- alcance estimado sem garantia;
+- primeiro resultado orgânico preservado;
+- envio sem entrega anterior à aprovação.
+
+Os wireframes ainda não foram funcionalmente validados.
+
+### 6.4 Preços candidatos preservados
 
 | Modalidade | Orçamento mínimo |
 |---|---:|
@@ -172,11 +184,11 @@ A UXA-039 confirmou a experiência como válida após reformulação e acrescent
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar wireframes do fluxo do anunciante;
+1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
 2. criar wireframes do cartão patrocinado e da explicação de distribuição;
 3. criar estados patrocinados para Lista e Mapa;
 4. criar wireframe do relatório agregado;
-5. validar funcionalmente o conjunto de wireframes;
+5. validar funcionalmente o conjunto completo de wireframes;
 6. testar disclosure, densidade, frequência e controles.
 
 ### 8.2 Modelo econômico e especialidades
@@ -202,4 +214,4 @@ Nenhuma frente avança automaticamente.
 
 ## 9. Regra de transição
 
-Experiência validada não equivale a wireframe. Wireframe não equivale a protótipo. Distribuição paga não equivale a recomendação. Cada avanço exige autorização própria.
+Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Distribuição paga não equivale a recomendação. Cada avanço exige autorização própria.
