@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Orçamento, duração e alcance estimado</title>
-  <desc id="desc">Wireframe para computador com orçamento total, limite diário, período, base candidata de cobrança, ausência de renovação automática e alcance agregado sem garantia.</desc>
+  <title id="title">Orçamento, duração e base principal coerente</title>
+  <desc id="desc">Wireframe para computador com orçamento total, limite diário, período, CPC coerente com objetivo de clique, ausência de renovação automática e estimativa agregada sem garantia.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
   <text x="32" y="48" font-family="Arial, sans-serif" font-size="22" font-weight="700">GUIVOS</text>
   <text x="32" y="92" font-family="Arial, sans-serif" font-size="12">OPPORTUNITY BOOST</text>
   <text x="32" y="150" font-family="Arial, sans-serif" font-size="13">1 · Elegibilidade</text>
-  <text x="32" y="192" font-family="Arial, sans-serif" font-size="13">2 · Objetivo e público</text>
+  <text x="32" y="192" font-family="Arial, sans-serif" font-size="13">2 · Objetivo e critérios</text>
   <text x="32" y="234" font-family="Arial, sans-serif" font-size="13" font-weight="700">3 · Orçamento e duração</text>
   <text x="32" y="276" font-family="Arial, sans-serif" font-size="13">4 · Prévia e confirmação</text>
   <text x="32" y="318" font-family="Arial, sans-serif" font-size="13">5 · Envio</text>
@@ -37,17 +37,17 @@
   <text x="540" y="498" font-family="Arial, sans-serif" font-size="13">Fim · 07/09/2026</text>
   <text x="754" y="498" font-family="Arial, sans-serif" font-size="11">7 dias</text>
 
-  <text x="286" y="560" font-family="Arial, sans-serif" font-size="12" font-weight="700">Base candidata de cobrança</text>
-  <circle cx="304" cy="594" r="10" fill="#222222" stroke="#555555"/>
-  <text x="330" y="590" font-family="Arial, sans-serif" font-size="12" font-weight="700">CPM · mil impressões válidas e visíveis</text>
-  <text x="330" y="610" font-family="Arial, sans-serif" font-size="10">Faixa candidata: R$ 12,00 a R$ 25,00.</text>
-  <circle cx="304" cy="650" r="10" fill="#ffffff" stroke="#555555"/>
+  <text x="286" y="560" font-family="Arial, sans-serif" font-size="12" font-weight="700">Base principal definida pelo objetivo</text>
+  <circle cx="304" cy="594" r="10" fill="#ffffff" stroke="#555555"/>
+  <text x="330" y="590" font-family="Arial, sans-serif" font-size="12">CPM · mil impressões válidas e visíveis</text>
+  <text x="330" y="610" font-family="Arial, sans-serif" font-size="10">Não aplicável ao objetivo selecionado neste exemplo.</text>
+  <circle cx="304" cy="650" r="10" fill="#222222" stroke="#555555"/>
   <text x="330" y="646" font-family="Arial, sans-serif" font-size="12" font-weight="700">CPC · clique válido</text>
-  <text x="330" y="666" font-family="Arial, sans-serif" font-size="10">Não será cobrado simultaneamente com CPM na mesma campanha.</text>
+  <text x="330" y="666" font-family="Arial, sans-serif" font-size="10">Coerente com `Levar pessoas ao detalhe` · faixa candidata: R$ 0,80 a R$ 2,50.</text>
 
   <rect x="286" y="686" width="708" height="58" rx="8" fill="#f5f5f5" stroke="#999999"/>
-  <text x="306" y="710" font-family="Arial, sans-serif" font-size="11" font-weight="700">Renovação automática desativada</text>
-  <text x="306" y="730" font-family="Arial, sans-serif" font-size="10">A campanha encerra ao atingir orçamento ou data final. Nenhum aumento automático será aplicado.</text>
+  <text x="306" y="710" font-family="Arial, sans-serif" font-size="11" font-weight="700">Uma única base principal · renovação automática desativada</text>
+  <text x="306" y="730" font-family="Arial, sans-serif" font-size="10">CPM e CPC não serão cobrados juntos; base, orçamento e período não mudam silenciosamente.</text>
 
   <rect x="1044" y="152" width="356" height="570" rx="10" fill="#f8f8f8" stroke="#888888"/>
   <text x="1070" y="188" font-family="Arial, sans-serif" font-size="16" font-weight="700">Estimativa agregada</text>
@@ -56,22 +56,22 @@
   <text x="1070" y="292" font-family="Arial, sans-serif" font-size="12">Público potencial</text>
   <text x="1070" y="326" font-family="Arial, sans-serif" font-size="25" font-weight="700">2.400–3.600</text>
   <text x="1070" y="350" font-family="Arial, sans-serif" font-size="10">estimativa agregada de pessoas elegíveis</text>
-  <text x="1070" y="394" font-family="Arial, sans-serif" font-size="12">Entrega estimada</text>
-  <text x="1070" y="428" font-family="Arial, sans-serif" font-size="25" font-weight="700">4.000–7.000</text>
-  <text x="1070" y="452" font-family="Arial, sans-serif" font-size="10">impressões válidas candidatas</text>
+  <text x="1070" y="394" font-family="Arial, sans-serif" font-size="12">Interações estimadas</text>
+  <text x="1070" y="428" font-family="Arial, sans-serif" font-size="25" font-weight="700">40–90</text>
+  <text x="1070" y="452" font-family="Arial, sans-serif" font-size="10">cliques válidos candidatos</text>
   <line x1="1070" y1="486" x2="1374" y2="486" stroke="#cccccc"/>
   <text x="1070" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="700">Esta estimativa não é garantia</text>
   <text x="1070" y="548" font-family="Arial, sans-serif" font-size="11">A entrega dependerá de inventário, filtros,</text>
   <text x="1070" y="568" font-family="Arial, sans-serif" font-size="11">frequência, ocultações, capacidade e política.</text>
-  <text x="1070" y="612" font-family="Arial, sans-serif" font-size="11">Não estima impacto humano, confiança ou qualidade.</text>
+  <text x="1070" y="612" font-family="Arial, sans-serif" font-size="11">Não estima inscrição, contratação, impacto ou qualidade.</text>
   <text x="1070" y="658" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Como a estimativa é formada?</text>
 
   <rect x="260" y="754" width="1140" height="128" rx="10" fill="#f7f7f7" stroke="#999999"/>
   <text x="286" y="788" font-family="Arial, sans-serif" font-size="14" font-weight="700">Resumo antes de continuar</text>
-  <text x="286" y="818" font-family="Arial, sans-serif" font-size="12">R$ 100,00 totais · limite diário de R$ 20,00 · 01/09/2026 a 07/09/2026 · CPM candidato.</text>
-  <text x="286" y="846" font-family="Arial, sans-serif" font-size="11">Valores são candidatos e ilustrativos. Este wireframe não autoriza cobrança, saldo, reembolso ou campanha real.</text>
+  <text x="286" y="818" font-family="Arial, sans-serif" font-size="12">R$ 100,00 totais · limite diário de R$ 20,00 · 01/09/2026 a 07/09/2026 · CPC candidato.</text>
+  <text x="286" y="846" font-family="Arial, sans-serif" font-size="11">Valores e estimativas são candidatos e ilustrativos. Este wireframe não autoriza cobrança, saldo ou campanha real.</text>
 
-  <text x="260" y="934" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Voltar para objetivo e público</text>
+  <text x="260" y="934" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Voltar para objetivo e critérios</text>
   <rect x="1120" y="904" width="280" height="52" rx="8" fill="#222222"/>
   <text x="1260" y="936" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#ffffff" font-weight="700">Continuar para prévia</text>
 </svg>
