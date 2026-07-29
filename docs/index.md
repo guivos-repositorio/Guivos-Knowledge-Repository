@@ -9,87 +9,81 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.39 — Baseline Comercial de Planos, Benefícios e Preços Definida |
-| Remediação | concluída; validação mecânica permanente ativa |
-| Arquitetura de Negócios | ativa; 18 decisões humanas concluídas |
-| Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
-| Modelo Econômico | baseline comercial candidata definida; validação pendente |
-| Pessoas | Guivos Free, Plus e Pro definidos |
-| Coletivos | Livre, Gestão, Impacto e Enterprise definidos |
-| Organizações | Business Start, Growth e Scale definidos |
+| Marco | M7.40 — Opportunity Boost Documentalmente Definido |
+| Resultados Empresariais | 18 decisões; 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
+| Planos | Pessoas, Coletivos e Organizações definidos como candidatos |
+| Opportunity Boost | add-on publicitário candidato separado dos planos |
+| Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; oferta e cobrança não autorizadas |
-| Home pública | validada e materializada para computador |
-| Início protegido móvel | funcionalmente validado e reformulado |
-| Compreensão inicial móvel | funcionalmente validada e reformulada em cinco estados |
-| Tela Hoje | entrada recorrente após condição explicitamente escolhida |
-| Mapa e estados | funcionalmente validados e reformulados |
+| Home, início e compreensão | funcionalmente validados |
+| Mapa | estados móveis e referência desktop validados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-## Baseline comercial candidata
+## Planos candidatos
 
 ### Pessoas
 
-- Guivos Free — catálogo público completo e duas correspondências personalizadas por semana;
+- Guivos Free — R$ 0,00;
 - Guivos Plus — R$ 24,90 mensais ou R$ 249,00 anuais;
 - Guivos Pro — R$ 49,90 mensais ou R$ 499,00 anuais.
 
 ### Coletivos
 
-- Coletivo Livre — uma atividade e uma oportunidade gratuitas por mês, até duas ativas;
-- Coletivo Gestão — R$ 89,90 mensais, quatro atividades, quatro oportunidades e seis ativas;
-- Coletivo Impacto — R$ 249,90 mensais, quinze atividades, quinze oportunidades e vinte ativas;
-- Coletivo Enterprise — sob consulta, capacidade contratada e categorias personalizáveis.
+- Coletivo Livre — gratuito;
+- Coletivo Gestão — R$ 89,90 mensais;
+- Coletivo Impacto — R$ 249,90 mensais;
+- Coletivo Enterprise — sob consulta.
 
 ### Organizações
 
 - Business Start — R$ 299,00 mensais;
 - Business Growth — R$ 799,00 mensais;
-- Business Scale — a partir de R$ 1.990,00 mensais e contrato anual.
+- Business Scale — a partir de R$ 1.990,00 mensais.
 
-Os valores são candidatos para validação e não constituem oferta pública ou autorização de cobrança.
+Os valores são candidatos para validação.
 
-## Regras comerciais centrais
+## Opportunity Boost
 
-- catálogo público permanece acessível no Guivos Free;
-- limite individual recai sobre correspondências personalizadas;
-- Coletivo Livre publica somente ofertas gratuitas;
-- publicação paga exige Gestão ou superior;
-- pessoa gratuita pode adquirir atividade paga;
-- assinatura e transação permanecem separadas;
-- cota não reduz visibilidade de publicação existente;
-- Enterprise e Scale operam por capacidade contratada;
-- plano pago não aumenta ranking, relevância, impacto ou evidência;
-- oferta não interrompe consentimento, compreensão ou controle de dados.
+### Elegibilidade
+
+- Coletivo Gestão, Impacto e Enterprise;
+- Business Start, Growth e Scale;
+- Coletivo Livre somente por Boost Social Financiado;
+- oportunidade aprovada, ativa, atualizada e com capacidade.
+
+### Orçamento candidato
+
+- Boost Local — mínimo de R$ 30,00;
+- Boost Regional — mínimo de R$ 100,00;
+- Boost Ampliado — mínimo de R$ 300,00;
+- Boost Gerenciado — a partir de R$ 1.000,00;
+- CPM candidato — R$ 12,00 a R$ 25,00;
+- CPC candidato — R$ 0,80 a R$ 2,50.
+
+### Proteções
+
+- pagamento não altera ranking orgânico;
+- selo `Patrocinado` ou `Impulsionado` obrigatório;
+- densidade candidata máxima de 20%;
+- duas unidades patrocinadas consecutivas proibidas;
+- compreensão inicial, Momento Atual e Próximo Passo não são utilizados para segmentação;
+- Tela Hoje e Jornada pessoal permanecem sem Boost nesta baseline;
+- anunciante recebe métricas agregadas, não lista de visualizadores.
 
 ## Experiência pessoal vigente
 
 ```text
 Página Inicial pública
 → explicação do ambiente protegido
-→ acesso, somente quando necessário
-→ escolha e rascunho mínimo
-→ revisão e autorização específica
-→ processamento temporário visível e interrompível
-→ compreensão inicial apresentada como hipótese
-→ revisão por afirmação
-→ decisões independentes sobre persistência e personalização
+→ acesso quando necessário
+→ relato mínimo revisado e autorizado
+→ compreensão inicial como hipótese
+→ decisões de persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
 ```
 
-Oferta de plano não entra nessa sequência protegida.
-
-## Compreensão inicial móvel validada
-
-A UXA-036 reformulada e a UXA-037 estabelecem cinco estados:
-
-1. processamento temporário visível e interrompível;
-2. compreensão apresentada como hipótese;
-3. revisão por afirmação;
-4. decisões independentes sobre persistência e personalização;
-5. base autorizada insuficiente.
-
-A referência preserva interrupção sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, decisões independentes e continuidade sem personalização.
+Oferta e publicidade não entram nessa sequência protegida.
 
 ## Acesso rápido
 
@@ -99,29 +93,31 @@ A referência preserva interrupção sem tarefa oculta, afirmações individuali
 - [Roadmap](roadmap.md)
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
-- [Matriz de Consolidação Canônica](project/canonical-consolidation-matrix.md)
-- [Adendo Canônico dos Planos Comerciais](project/canonical-consolidation-matrix-gem-commercial-plans-addendum.md)
-- [Histórico 1.61.0](project/changelog-1.61.0-gem-commercial-plans.md)
+- [Adendo Canônico do Opportunity Boost](project/canonical-consolidation-matrix-opportunity-boost-addendum.md)
+- [Histórico 1.62.0](project/changelog-1.62.0-opportunity-boost.md)
+
+### Opportunity Boost
+
+- [Contrato Econômico e entre Produtos](economic-model/gem-007-a1-opportunity-boost-economic-and-product-contract.md)
+- [Preços, Orçamento e Mensuração](economic-model/gem-010-a2-opportunity-boost-pricing-budget-and-measurement.md)
+- [Revisão da Baseline](economic-model/gem-opportunity-boost-baseline-review.md)
+- [Contrato Funcional da Experiência](experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
+- [Guivos Ads](product-architecture/ads.md)
 
 ### Modelo Econômico
 
 - [Guivos Economic Model](economic-model/index.md)
-- [Catálogo de Planos, Benefícios e Preços](economic-model/gem-004-a1-commercial-plans-pricing-catalog.md)
+- [Catálogo de Planos e Preços](economic-model/gem-004-a1-commercial-plans-pricing-catalog.md)
 - [Política Comercial de Planos](economic-model/gem-004-a2-commercial-offer-upgrade-and-lifecycle-policy.md)
 - [Premissas de Precificação](economic-model/gem-010-a1-pricing-assumptions-and-validation.md)
-- [Revisão da Baseline Comercial](economic-model/gem-commercial-plans-baseline-review.md)
 
 ### Arquiteturas e produtos
 
 - [Guivos Enterprise Architecture](enterprise-architecture/index.md)
-- [Guivos Journey — PAS-001](product-architecture/pas-001-guivos-journey.md)
+- [Guivos Journey](product-architecture/pas-001-guivos-journey.md)
 - [Guivos Business Architecture](business-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [Página Inicial e Início](experience-architecture/uxa-020-home-and-journey-entry.md)
-- [Wireframe do Início Protegido](experience-architecture/uxa-034-protected-journey-entry-low-fidelity-wireframe.md)
 - [Wireframe da Compreensão Inicial](experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md)
-- [Validação da Compreensão Inicial](experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md)
-- [Wireframe do Mapa](experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md)
 - [Mapa para Computador](experience-architecture/uxa-032-opportunity-map-desktop-reference.md)
 
 ### Resultados Empresariais
@@ -133,7 +129,7 @@ A referência preserva interrupção sem tarefa oculta, afirmações individuali
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente: validação dos planos e preços, modelagem de unit economics, política transacional, arquitetura da página de Planos e Preços, referência móvel da Home, validação da transição para a primeira Tela Hoje ou retomada dos testes dos Resultados Empresariais.
+Após nova autorização, poderão ocorrer separadamente validação funcional do Boost, wireframes, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
 
 ## Regra de precedência
 
