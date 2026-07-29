@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.14.0
+version: 5.15.0
 owner: Guivos
 last_updated: 2026-07-28
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.16.0
+  - ROADMAP-12.17.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -17,6 +17,7 @@ related:
   - UXA-038
   - UXA-039
   - UXA-040
+  - UXA-041
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -25,6 +26,7 @@ related:
   - M7.40
   - M7.41
   - M7.42
+  - M7.43
 normative: false
 ---
 
@@ -49,34 +51,41 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.39 | Concluído | baseline comercial de planos, benefícios e preços definida |
 | M7.40 | Concluído | Opportunity Boost documentalmente definido |
 | M7.41 | Concluído | experiência do Opportunity Boost funcionalmente validada e reformulada |
-| M7.42 | Concluído neste incremento | wireframes do fluxo do anunciante do Opportunity Boost criados |
+| M7.42 | Concluído | wireframes do fluxo do anunciante do Opportunity Boost criados |
+| M7.43 | Concluído neste incremento | wireframes do fluxo do anunciante funcionalmente validados e reformulados |
 
 ## 3. Marco vigente
 
-### Wireframes do Fluxo do Anunciante do Opportunity Boost Criados — M7.42
+### Wireframes do Fluxo do Anunciante Funcionalmente Validados e Reformulados — M7.43
 
 Critérios atendidos:
 
-- UXA-040 criada como referência visual de baixa fidelidade;
-- cinco arquivos vetoriais para computador criados;
-- gate de entrada demonstra plano, aprovação, atualização, capacidade, segurança e responsável;
-- contratação de plano não substitui aprovação, segurança ou capacidade;
-- objetivo único começa sem seleção;
-- métrica principal e critérios proibidos são apresentados;
-- alcance estimado permanece separado de garantia;
-- orçamento total, limite diário, período e ausência de renovação automática são visíveis;
-- prévia patrocinada preserva o primeiro resultado orgânico;
-- confirmação final exige ações afirmativas desmarcadas inicialmente;
-- envio entra em avaliação sem iniciar entrega;
-- ajustes, rejeição e aprovação permanecem estados distintos;
-- valores exibidos permanecem candidatos e não autorizam cobrança;
-- validação funcional dos wireframes não foi iniciada;
-- cartão independente, Lista, Mapa e relatório agregado não foram criados;
+- UXA-041 criada como validação funcional especializada;
+- UXA-040 elevada para 0.2.0;
+- cinco arquivos vetoriais para computador reformulados;
+- estados `Atendido`, `Atendido com limite` e `Bloqueado` distinguidos;
+- limites operacionais separados de inelegibilidade;
+- critérios apresentados como escolhas explícitas e revisáveis;
+- público insuficiente separado do estado atual e sem ampliação automática;
+- objetivo de clique reconciliado com CPC como base principal no exemplo;
+- CPM e CPC impedidos de operar simultaneamente;
+- estimativa agregada separada de garantia;
+- primeiro resultado orgânico colocado antes do espaço patrocinado;
+- anúncio identificado antes da interação;
+- confirmações permanecem desmarcadas inicialmente;
+- envio não inicia entrega;
+- cancelamento encerra avaliação e retorna a campanha ao rascunho;
+- histórico permanece acessível;
+- cartão independente, Lista, Mapa, gestão ativa e relatório agregado não foram criados;
 - protótipo, testes, cobrança e desenvolvimento não foram iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Wireframes do Fluxo do Anunciante Criados — M7.42
+
+A UXA-040 permanece como autoridade da materialização visual, agora reformulada pela UXA-041.
 
 ### Experiência do Opportunity Boost Funcionalmente Validada e Reformulada — M7.41
 
@@ -118,7 +127,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-040; wireframes do anunciante aguardam validação |
+| Arquitetura da Experiência | ativa até UXA-041; wireframes iniciais do anunciante validados |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -128,9 +137,9 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Telas do Opportunity Boost
 
-1. validação funcional e reformulação dos wireframes do fluxo do anunciante;
-2. wireframes do cartão patrocinado e da explicação de distribuição;
-3. estados patrocinados para Lista e Mapa;
+1. wireframes do cartão patrocinado e da explicação de distribuição;
+2. estados patrocinados para Lista e Mapa;
+3. wireframes de gestão da campanha ativa;
 4. wireframe do relatório agregado;
 5. validação funcional do conjunto completo de wireframes;
 6. testes posteriores de disclosure, densidade, frequência e controles.
@@ -157,4 +166,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Distribuição paga não equivale a recomendação. Cada transição exige evidência e autorização próprias.
+Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Distribuição paga não equivale a recomendação. Cada transição exige evidência e autorização próprias.
