@@ -88,7 +88,7 @@ nav:
       - Validação de Mercado:
           - Visão Geral: research/market-validation/README.md
           - VAL-001 — Framework: research/market-validation/VAL-001-framework-de-validacao-de-mercado.md
-          - VAL-002 — Pesquisa Oficial: research/market-validation/VAL-002-pesquisa-oficial-da-guivos.md
+          - VAL-002 — Pesquisa Oficial: research/market-validation/VAL-002-pesquisa_oficial_da_guivos.md
           - VAL-003 — Guia do Entrevistador: research/market-validation/VAL-003-guia-do-entrevistador.md
           - VAL-004 — Consolidação e Análise: research/market-validation/VAL-004-modelo-de-consolidacao-e-analise.md
           - VAL-005 — Plano de Amostragem: research/market-validation/VAL-005-plano-de-amostragem.md
@@ -247,7 +247,7 @@ nav:
           - A2-R01 — Foundation Readiness Assessment: validation/A2-R01-RA-001-foundation-readiness-assessment.md
           - AV-A2-001 — Foundation Architecture Validation: validation/AV-A2-001-foundation-architecture-validation.md
           - A2-R01 — Foundation Architecture Audit: validation/A2-R01-AUD-001-foundation-architecture-audit.md
-          - A2-R02 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-foundation-evidence-matrix.md
+          - A2-R02 — Fundamental Model Evidence Matrix: validation/A2-R02-FMEM-001-fundamental-model-evidence-matrix.md
       - ADRs:
           - ADR-001 — GKR como fonte única da verdade: adr/ADR-001-gkr-as-source-of-truth.md
           - ADR-002 — Fundação da Guivos: adr/ADR-002-foundation-principles.md
