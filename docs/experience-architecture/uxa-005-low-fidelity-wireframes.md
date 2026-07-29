@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-000
@@ -36,6 +36,7 @@ related:
   - UXA-037
   - UXA-038
   - UXA-039
+  - UXA-040
   - PAS-001
 normative: false
 ---
@@ -81,7 +82,9 @@ Página Inicial pública
 13. wireframe do Cadastro pela Organização — UXA-008;
 14. contrato funcional reformulado do Opportunity Boost — UXA-038;
 15. validação funcional especializada do Opportunity Boost — UXA-039;
-16. wireframes do Opportunity Boost — pendentes de autorização própria.
+16. wireframes do fluxo do anunciante do Opportunity Boost — UXA-040;
+17. validação dos wireframes do anunciante — pendente de autorização própria;
+18. cartão, explicação, Lista, Mapa e relatório do Boost — pendentes.
 
 ## 4. Natureza dos artefatos
 
@@ -142,15 +145,24 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 
 ### 5.4 Opportunity Boost
 
-Os futuros wireframes deverão demonstrar:
+Os wireframes da UXA-040 deverão ser validados quanto a:
 
 - gate de entrada com bloqueio e correção compreensíveis;
+- plano elegível sem substituir aprovação, capacidade ou segurança;
 - objetivo único sem seleção automática;
+- métrica principal e eventos secundários compreensíveis;
 - critérios utilizados e proibidos antes do envio;
+- público insuficiente sem ampliação silenciosa;
 - orçamento, limite diário e duração sem promessa de resultado;
+- alcance estimado distinguível de garantia;
+- ausência de renovação automática;
 - prévia patrocinada separada do primeiro resultado orgânico;
-- pausa quando informação material mudar;
-- estados de inelegibilidade, rejeição, esgotamento, expiração e reconciliação;
+- confirmações afirmativas inicialmente desmarcadas;
+- envio para avaliação sem entrega anterior à aprovação;
+- ajustes, rejeição e aprovação como estados distintos.
+
+Os próximos artefatos deverão ainda demonstrar:
+
 - Boost Social Financiado com financiador e beneficiário identificados;
 - controles de ocultação com escopo e reversibilidade;
 - redução da publicidade quando faltar inventário orgânico;
@@ -175,7 +187,7 @@ Os futuros wireframes deverão demonstrar:
 - A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
 - Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
 - A gestão da oportunidade conduz ao Boost somente quando todos os gates forem atendidos?
-- A campanha conduz a pausa, encerramento e relatório com consequência conhecida?
+- O fluxo do anunciante termina em avaliação sem iniciar entrega?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -211,7 +223,8 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Mapa com e sem resultados | web para computador | 1.440 × 1.024 |
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
-| Opportunity Boost | computador e aplicativo móvel | dimensões serão definidas no incremento de wireframes |
+| Fluxo do anunciante do Opportunity Boost — cinco estados | web para computador | 1.440 × 1.024 cada |
+| Cartão, explicação, Lista, Mapa e relatório do Boost | computador e aplicativo móvel | pendentes |
 
 ## 8. Relação entre os wireframes
 
@@ -231,8 +244,13 @@ Fluxo institucional relacionado:
 ```text
 oportunidade aprovada e ativa
 → gestão da oportunidade
-→ configuração do Opportunity Boost
-→ avaliação e campanha
+→ elegibilidade para impulsionamento
+→ objetivo e critérios
+→ orçamento e duração
+→ prévia e confirmação
+→ envio para avaliação
+→ ajustes, rejeição ou aprovação
+→ campanha futura
 → pausa, encerramento ou cancelamento
 → relatório agregado e reconciliação
 ```
@@ -258,8 +276,9 @@ A sequência protegida é pausável e retomável. Acesso, modalidades e conteúd
 | Cadastro | UXA-008 | cadastro | arquivo vetorial |
 | Contrato do Opportunity Boost | UXA-038 | Explorar, Lista, Mapa e gestão | contrato funcional reformulado |
 | Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
+| Fluxo do anunciante do Opportunity Boost | UXA-040 | painel institucional | cinco arquivos vetoriais para computador |
 
-## 10. Resultados validados
+## 10. Resultados validados e materializados
 
 ### 10.1 Compreensão inicial
 
@@ -269,7 +288,7 @@ A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, af
 
 A UXA-038 reformulada e a UXA-039 demonstram elegibilidade explicável, critérios visíveis, prévia separada do orgânico, pausa por alteração material, estados completos, controles reversíveis, proteção da densidade, Mapa com inventário separado, relatório em quatro camadas e cancelamento compreensível.
 
-Os dois conjuntos são funcionalmente válidos após reformulação.
+A UXA-040 materializa somente o fluxo inicial do anunciante. O conjunto gráfico ainda requer validação funcional própria.
 
 ## 11. Limites
 
@@ -279,11 +298,11 @@ Este programa não define marca, tecnologia, autenticação, armazenamento, grav
 
 Os próximos pontos exigem autorizações separadas:
 
-1. criar wireframes do fluxo do anunciante do Opportunity Boost;
+1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
 2. criar wireframes do cartão patrocinado e da explicação de distribuição;
 3. criar estados patrocinados para Lista e Mapa;
 4. criar wireframe do relatório agregado;
-5. validar funcionalmente os wireframes do Opportunity Boost;
+5. validar funcionalmente o conjunto completo do Opportunity Boost;
 6. criar a referência móvel da Home;
 7. validar a transição para a primeira Tela Hoje;
 8. criar estados especializados de processamento, pausa, falha e retomada;
