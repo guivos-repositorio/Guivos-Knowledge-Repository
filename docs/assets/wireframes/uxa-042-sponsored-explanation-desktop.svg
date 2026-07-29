@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
   <title id="title">Explicação patrocinada para computador</title>
-  <desc id="desc">Wireframe para computador que explica motivo pago, critérios utilizados e proibidos, ausência de influência orgânica e controles da pessoa.</desc>
+  <desc id="desc">Wireframe para computador que explica motivo pago, critérios utilizados e proibidos, possível correspondência orgânica separada e controles da pessoa.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -15,29 +15,30 @@
   <text x="260" y="92" font-family="Arial, sans-serif" font-size="30" font-weight="700">Por que estou vendo isto?</text>
   <text x="260" y="124" font-family="Arial, sans-serif" font-size="13">Esta explicação descreve a distribuição patrocinada sem expor dados pessoais protegidos.</text>
 
-  <rect x="260" y="160" width="760" height="144" rx="10" fill="#f4f4f4" stroke="#777777"/>
+  <rect x="260" y="160" width="760" height="164" rx="10" fill="#f4f4f4" stroke="#777777"/>
   <text x="286" y="194" font-family="Arial, sans-serif" font-size="11" font-weight="700">CAMPANHA PAGA IDENTIFICADA</text>
   <text x="286" y="232" font-family="Arial, sans-serif" font-size="21" font-weight="700">Formação gratuita em gestão comunitária</text>
   <text x="286" y="266" font-family="Arial, sans-serif" font-size="12">Anunciante: Coletivo Horizonte · Gratuita · Online</text>
   <text x="286" y="290" font-family="Arial, sans-serif" font-size="11">Pagamento amplia distribuição. Não compra recomendação, confiança, qualidade ou impacto.</text>
+  <text x="286" y="312" font-family="Arial, sans-serif" font-size="11">Correspondência orgânica não presente neste exemplo; quando existir, será explicada separadamente.</text>
 
-  <rect x="260" y="334" width="500" height="244" rx="10" fill="#ffffff" stroke="#888888"/>
-  <text x="286" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="700">Critérios utilizados nesta distribuição</text>
-  <text x="306" y="408" font-family="Arial, sans-serif" font-size="12">• região geral: Sudeste</text>
-  <text x="306" y="440" font-family="Arial, sans-serif" font-size="12">• idioma: Português</text>
-  <text x="306" y="472" font-family="Arial, sans-serif" font-size="12">• categoria: Formação e comunidade</text>
-  <text x="306" y="504" font-family="Arial, sans-serif" font-size="12">• modalidade: Online</text>
-  <text x="286" y="544" font-family="Arial, sans-serif" font-size="11">Critérios objetivos, gerais e visíveis na superfície Explorar.</text>
+  <rect x="260" y="354" width="500" height="244" rx="10" fill="#ffffff" stroke="#888888"/>
+  <text x="286" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="700">Critérios utilizados nesta distribuição</text>
+  <text x="306" y="428" font-family="Arial, sans-serif" font-size="12">• região geral: Sudeste</text>
+  <text x="306" y="460" font-family="Arial, sans-serif" font-size="12">• idioma: Português</text>
+  <text x="306" y="492" font-family="Arial, sans-serif" font-size="12">• categoria: Formação e comunidade</text>
+  <text x="306" y="524" font-family="Arial, sans-serif" font-size="12">• modalidade: Online</text>
+  <text x="286" y="564" font-family="Arial, sans-serif" font-size="11">Critérios objetivos, gerais e visíveis na superfície Explorar.</text>
 
-  <rect x="786" y="334" width="500" height="244" rx="10" fill="#f8f8f8" stroke="#888888"/>
-  <text x="812" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="700">Não foi utilizado</text>
-  <text x="832" y="408" font-family="Arial, sans-serif" font-size="12">• relato protegido ou conteúdo privado</text>
-  <text x="832" y="440" font-family="Arial, sans-serif" font-size="12">• compreensão inicial ou Momento Atual</text>
-  <text x="832" y="472" font-family="Arial, sans-serif" font-size="12">• Próximo Passo pessoal</text>
-  <text x="832" y="504" font-family="Arial, sans-serif" font-size="12">• mensagens, histórico sensível ou inferências</text>
-  <text x="812" y="544" font-family="Arial, sans-serif" font-size="11">O anunciante não recebe lista de pessoas expostas.</text>
+  <rect x="786" y="354" width="500" height="244" rx="10" fill="#f8f8f8" stroke="#888888"/>
+  <text x="812" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="700">Não foi utilizado</text>
+  <text x="832" y="428" font-family="Arial, sans-serif" font-size="12">• relato protegido ou conteúdo privado</text>
+  <text x="832" y="460" font-family="Arial, sans-serif" font-size="12">• compreensão inicial ou Momento Atual</text>
+  <text x="832" y="492" font-family="Arial, sans-serif" font-size="12">• Próximo Passo pessoal</text>
+  <text x="832" y="524" font-family="Arial, sans-serif" font-size="12">• mensagens, histórico sensível ou inferências</text>
+  <text x="812" y="564" font-family="Arial, sans-serif" font-size="11">O anunciante não recebe lista de pessoas expostas.</text>
 
-  <rect x="1312" y="160" width="88" height="418" rx="10" fill="#f7f7f7" stroke="#999999"/>
+  <rect x="1312" y="160" width="88" height="438" rx="10" fill="#f7f7f7" stroke="#999999"/>
   <text x="1356" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">RELAÇÃO</text>
   <text x="1356" y="226" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">paga</text>
   <line x1="1332" y1="250" x2="1380" y2="250" stroke="#bbbbbb"/>
@@ -50,21 +51,21 @@
   <text x="1356" y="448" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">CONTROLE</text>
   <text x="1356" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">reversível</text>
 
-  <rect x="260" y="612" width="1140" height="258" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="648" font-family="Arial, sans-serif" font-size="16" font-weight="700">Controles sobre oportunidades patrocinadas</text>
-  <rect x="286" y="680" width="330" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="308" y="708" font-family="Arial, sans-serif" font-size="12" font-weight="700">Ocultar esta campanha</text>
-  <text x="308" y="730" font-family="Arial, sans-serif" font-size="10">Remove somente esta campanha.</text>
-  <rect x="634" y="680" width="330" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="656" y="708" font-family="Arial, sans-serif" font-size="12" font-weight="700">Mostrar menos deste tipo</text>
-  <text x="656" y="730" font-family="Arial, sans-serif" font-size="10">Altera preferência geral identificada.</text>
-  <rect x="982" y="680" width="392" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="1004" y="708" font-family="Arial, sans-serif" font-size="12" font-weight="700">Não mostrar oportunidades patrocinadas</text>
-  <text x="1004" y="730" font-family="Arial, sans-serif" font-size="10">Desativa inventário patrocinado suportado.</text>
-  <text x="286" y="790" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Revisar e desfazer preferências</text>
-  <text x="620" y="790" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Denunciar conteúdo ou informação</text>
-  <text x="934" y="790" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Contestar uso indevido de dados</text>
-  <text x="286" y="834" font-family="Arial, sans-serif" font-size="11">Nenhuma escolha começa selecionada. Ocultar publicidade não reduz resultados orgânicos.</text>
+  <rect x="260" y="632" width="1140" height="258" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="668" font-family="Arial, sans-serif" font-size="16" font-weight="700">Controles sobre oportunidades patrocinadas</text>
+  <rect x="286" y="700" width="330" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="308" y="728" font-family="Arial, sans-serif" font-size="12" font-weight="700">Ocultar esta campanha</text>
+  <text x="308" y="750" font-family="Arial, sans-serif" font-size="10">Remove somente esta campanha.</text>
+  <rect x="634" y="700" width="330" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="656" y="728" font-family="Arial, sans-serif" font-size="12" font-weight="700">Mostrar menos deste tipo</text>
+  <text x="656" y="750" font-family="Arial, sans-serif" font-size="10">Altera preferência geral identificada.</text>
+  <rect x="982" y="700" width="392" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="1004" y="728" font-family="Arial, sans-serif" font-size="12" font-weight="700">Não mostrar oportunidades patrocinadas</text>
+  <text x="1004" y="750" font-family="Arial, sans-serif" font-size="10">Desativa inventário patrocinado suportado.</text>
+  <text x="286" y="810" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Revisar e desfazer preferências</text>
+  <text x="620" y="810" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Denunciar conteúdo ou informação</text>
+  <text x="934" y="810" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Contestar uso indevido de dados</text>
+  <text x="286" y="854" font-family="Arial, sans-serif" font-size="11">Nenhuma escolha começa selecionada. Ocultar publicidade não reduz resultados orgânicos.</text>
 
-  <text x="260" y="930" font-family="Arial, sans-serif" font-size="11">Wireframe de baixa fidelidade · explicação, preferência e denúncia permanecem ações distintas.</text>
+  <text x="260" y="950" font-family="Arial, sans-serif" font-size="11">Wireframe de baixa fidelidade · explicação, preferência, denúncia e contestação permanecem ações distintas.</text>
 </svg>
