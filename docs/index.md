@@ -9,11 +9,12 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.41 — Experiência do Opportunity Boost Funcionalmente Validada e Reformulada |
+| Marco | M7.42 — Wireframes do Fluxo do Anunciante do Opportunity Boost Criados |
 | Resultados Empresariais | 18 decisões; 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos |
 | Opportunity Boost | add-on publicitário candidato separado dos planos |
-| Experiência do Boost | validada e reformulada; wireframes pendentes |
+| Experiência do Boost | validada e reformulada |
+| Fluxo do anunciante | cinco wireframes para computador criados; validação pendente |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; oferta e cobrança não autorizadas |
 | Home, início e compreensão | funcionalmente validados |
@@ -74,6 +75,18 @@ Os valores são candidatos para validação.
 - baixa oferta orgânica reduz publicidade;
 - relatório separado em entrega, interação, atribuição candidata e autorrelato.
 
+### Wireframes do fluxo do anunciante
+
+A UXA-040 criou cinco referências para computador:
+
+1. elegibilidade;
+2. objetivo e critérios;
+3. orçamento e duração;
+4. prévia e confirmação;
+5. envio para avaliação.
+
+A referência ainda requer validação funcional. Nenhuma campanha, cobrança ou entrega foi iniciada.
+
 ### Proteções
 
 - pagamento não altera ranking orgânico;
@@ -107,8 +120,8 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Roadmap](roadmap.md)
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
-- [Adendo Canônico da UXA-039](project/canonical-consolidation-matrix-uxa-039-addendum.md)
-- [Histórico 1.63.0](project/changelog-1.63.0-uxa-039.md)
+- [Adendo Canônico da UXA-040](project/canonical-consolidation-matrix-uxa-040-addendum.md)
+- [Histórico 1.64.0](project/changelog-1.64.0-uxa-040.md)
 
 ### Opportunity Boost
 
@@ -117,6 +130,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Revisão da Baseline](economic-model/gem-opportunity-boost-baseline-review.md)
 - [Contrato Funcional Reformulado](experience-architecture/uxa-038-opportunity-boost-functional-experience-contract.md)
 - [Validação Funcional Especializada](experience-architecture/uxa-039-opportunity-boost-functional-validation-and-reformulation.md)
+- [Wireframes do Fluxo do Anunciante](experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md)
 - [Guivos Ads](product-architecture/ads.md)
 
 ### Modelo Econômico
@@ -144,7 +158,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente wireframes do fluxo do anunciante, cartão e explicação patrocinados, estados para Lista e Mapa, relatório agregado, validação funcional dos wireframes, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
+Após nova autorização, poderão ocorrer separadamente validação funcional dos wireframes do anunciante, cartão e explicação patrocinados, estados para Lista e Mapa, relatório agregado, validação do conjunto completo, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
 
 ## Regra de precedência
 
