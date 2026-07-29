@@ -1,38 +1,56 @@
 ---
 id: GEM-007-ADS-ECONOMIC-ROLE-001
 title: Papel Econômico do Guivos Ads
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-21
+last_updated: 2026-07-28
 parent: GEM-007
 related:
   - GPA-007
+  - GEM-007-A1
+  - UXA-038
+  - GEM-010-A2
   - VF-05
   - RF-06
   - RF-07
+  - RF-09
+  - M7.40
 ---
 
 # Papel Econômico do Guivos Ads
 
-## 1. Autoridade funcional preservada
+## 1. Autoridade funcional
 
-Guivos Ads organiza publicidade, mídia patrocinada, ativações de marca, patrocínios, segmentação e mensuração responsável dentro do ecossistema.
+Guivos Ads organiza publicidade, mídia patrocinada, ativações de marca, patrocínios, segmentação permitida e mensuração responsável dentro do ecossistema.
 
 ## 2. Papel econômico principal
 
 `operador econômico de publicidade, patrocínio e distribuição comercial identificada`.
 
-## 3. Estados de participação
+## 3. Mecanismo candidato estabelecido
+
+O [Opportunity Boost](gem-007-a1-opportunity-boost-economic-and-product-contract.md) é o primeiro mecanismo publicitário específico definido para oportunidades, atividades e programas.
+
+Ele:
+
+- amplia distribuição patrocinada identificada;
+- utiliza inventário separado do ranking orgânico;
+- permanece separado dos planos e das transações;
+- não compra relevância pessoal, qualidade, confiança ou impacto;
+- não utiliza compreensão inicial, Momento Atual ou Próximo Passo para segmentação;
+- depende de oportunidade aprovada, anunciante elegível e orçamento limitado.
+
+## 4. Estados de participação
 
 - `primary_value_owner` em publicidade transparente;
-- `economic_lead` em relações futuras com anunciantes e patrocinadores;
-- `distribution_surface` somente em inventários próprios;
+- `economic_lead` em relações com anunciantes e patrocinadores;
+- `distribution_surface` em inventários próprios;
 - `revenue_family_owner_candidate` para publicidade e patrocínio;
 - `contributing_product` em financiamento de conteúdo, experiências e impacto;
 - `evidence_provider` para mensuração responsável.
 
-## 4. Fluxos de valor
+## 5. Fluxos de valor
 
 ### Principal
 
@@ -40,87 +58,54 @@ Guivos Ads organiza publicidade, mídia patrocinada, ativações de marca, patro
 
 ### De apoio
 
-- financiamento de VF-04 — conteúdo, audiência e confiança;
-- participação em VF-06 — rede de parceiros;
-- financiamento identificado de VF-08 — impacto social e comunitário.
-
-## 5. Valor principal
-
-- financiamento;
-- alcance;
-- distribuição;
-- comunicação comercial;
-- ativação;
-- mensuração;
-- gestão de campanha;
-- conexão entre anunciante e audiência elegível.
+- financiamento identificado de conteúdo, experiências e impacto;
+- participação na rede de parceiros;
+- distribuição comercial em superfícies anfitriãs compatíveis.
 
 ## 6. Famílias de receita candidatas
 
-### Principais
-
 - `RF-06 — Publicidade e mídia`;
-- `RF-07 — Patrocínio e ativação`.
-
-### Complementar
-
+- `RF-07 — Patrocínio e ativação`;
 - `RF-09 — Ferramentas e serviços para anunciantes e parceiros`.
 
-## 7. Parceiros predominantes
+## 7. Regra de superfície
 
-- PC-05 — anunciante;
-- PC-06 — patrocinador;
-- PC-08 — agência, canal ou distribuidor;
-- PC-09 — tecnologia;
-- PC-12 — parceiro estratégico.
+Ads poderá distribuir campanhas em Journey, Mall, Travel, Business e Media, mas a superfície anfitriã preservará responsabilidade por contexto, segurança, acessibilidade, densidade, controles e proteção do participante.
 
-## 8. Regra de superfície
-
-Ads poderá distribuir campanhas em Journey, Mall, Travel, Business e Media, mas o produto anfitrião preservará responsabilidade por:
-
-- experiência;
-- contexto;
-- segurança;
-- adequação da superfície;
-- proteção do participante.
-
-## 9. Eventos econômicos candidatos
+## 8. Eventos econômicos candidatos
 
 - aprovação de campanha;
-- reserva de inventário;
+- orçamento autorizado;
 - publicação identificada;
-- entrega mensurável;
-- ação validada;
-- faturamento futuro;
-- cancelamento;
-- crédito ou compensação;
-- encerramento da campanha.
+- impressão ou clique válido;
+- ação mensurável;
+- consumo de orçamento;
+- pausa, cancelamento ou suspensão;
+- crédito, devolução ou compensação;
+- encerramento e reconciliação.
 
-## 10. Custos candidatos
+## 9. Custos candidatos
 
-- vendas;
+- vendas e atendimento;
 - gestão de campanha;
-- inventário;
-- mensuração;
-- prevenção de fraude;
-- moderação;
-- segurança de marca;
+- inventário e entrega;
+- mensuração e antifraude;
+- moderação e segurança de marca;
 - suporte;
 - tecnologia publicitária futura.
 
-## 11. Riscos
+## 10. Riscos
 
 - publicidade oculta;
 - compra de posição orgânica;
 - segmentação sensível;
 - fraude publicitária;
 - mensuração inflada;
-- controle editorial pelo patrocinador;
+- controle indevido pelo patrocinador;
 - degradação da experiência;
-- dependência econômica de anunciantes;
-- conflito com recomendações.
+- conflito com recomendações pessoais.
 
-## 12. Guardrails
+## 11. Guardrails
 
 Ads não poderá:
 
@@ -128,21 +113,20 @@ Ads não poderá:
 - tratar pagamento como recomendação;
 - utilizar dados sensíveis como mercadoria;
 - ocultar publicidade ou patrocínio;
-- controlar conteúdo editorial ou evidências;
-- prejudicar o valor gratuito;
-- conceder acesso ao contexto pessoal do participante;
+- controlar evidências;
+- prejudicar o gratuito;
+- conceder acesso ao contexto pessoal;
 - criar pressão incompatível com autonomia e dignidade.
 
-## 13. Dependências de validação
+## 12. Dependências
 
-- inventário e formatos;
-- demanda de anunciantes;
-- transparência e experiência;
+- validação de demanda e disposição a pagar;
+- transparência e testes de experiência;
 - mensuração e antifraude;
 - privacidade e segmentação;
 - contratos, tributação e contabilidade;
-- operação e segurança.
+- operação, segurança e capacidade.
 
-## 14. Estado
+## 13. Estado
 
-`conceptually_defined — advertising, sponsorship and measurement economics not validated`.
+`candidate_mechanism_defined — Opportunity Boost documented; commercial and operational validation pending`.
