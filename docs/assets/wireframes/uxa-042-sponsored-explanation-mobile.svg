@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Explicação móvel Por que estou vendo isto</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade que separa campanha paga, critérios utilizados, critérios não utilizados e controles reversíveis.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="38" font-family="Arial, sans-serif" font-size="12" text-decoration="underline">Voltar</text>
+  <text x="20" y="76" font-family="Arial, sans-serif" font-size="23" font-weight="700">Por que estou vendo isto?</text>
+  <text x="20" y="104" font-family="Arial, sans-serif" font-size="11">Explicação da distribuição patrocinada desta oportunidade.</text>
+
+  <rect x="20" y="132" width="350" height="116" rx="10" fill="#f4f4f4" stroke="#777777"/>
+  <text x="38" y="160" font-family="Arial, sans-serif" font-size="11" font-weight="700">CAMPANHA PAGA IDENTIFICADA</text>
+  <text x="38" y="190" font-family="Arial, sans-serif" font-size="15" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <text x="38" y="216" font-family="Arial, sans-serif" font-size="10">Anunciante: Coletivo Horizonte · oportunidade gratuita</text>
+  <text x="38" y="236" font-family="Arial, sans-serif" font-size="10">Pagamento amplia distribuição; não compra recomendação.</text>
+
+  <text x="20" y="286" font-family="Arial, sans-serif" font-size="14" font-weight="700">Critérios utilizados</text>
+  <rect x="20" y="304" width="350" height="112" rx="8" fill="#ffffff" stroke="#888888"/>
+  <text x="38" y="332" font-family="Arial, sans-serif" font-size="11">• região geral: Sudeste</text>
+  <text x="38" y="356" font-family="Arial, sans-serif" font-size="11">• idioma: Português</text>
+  <text x="38" y="380" font-family="Arial, sans-serif" font-size="11">• categoria e modalidade: Formação · Online</text>
+  <text x="38" y="402" font-family="Arial, sans-serif" font-size="10">Critérios objetivos e gerais, aplicados à superfície Explorar.</text>
+
+  <text x="20" y="454" font-family="Arial, sans-serif" font-size="14" font-weight="700">Não foi utilizado</text>
+  <rect x="20" y="472" width="350" height="116" rx="8" fill="#f7f7f7" stroke="#999999"/>
+  <text x="38" y="500" font-family="Arial, sans-serif" font-size="10">Relato protegido · compreensão inicial · Momento Atual</text>
+  <text x="38" y="524" font-family="Arial, sans-serif" font-size="10">Próximo Passo pessoal · mensagens privadas · inferências sensíveis</text>
+  <text x="38" y="554" font-family="Arial, sans-serif" font-size="10">O anunciante não recebe lista de pessoas que visualizaram.</text>
+  <text x="38" y="574" font-family="Arial, sans-serif" font-size="10">A condição patrocinada não altera correspondência orgânica.</text>
+
+  <text x="20" y="626" font-family="Arial, sans-serif" font-size="14" font-weight="700">Seus controles</text>
+  <rect x="20" y="644" width="350" height="48" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="38" y="674" font-family="Arial, sans-serif" font-size="11">Ocultar somente esta campanha</text>
+  <rect x="20" y="704" width="350" height="48" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="38" y="734" font-family="Arial, sans-serif" font-size="11">Revisar publicidade e preferências</text>
+  <text x="20" y="784" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Denunciar conteúdo ou uso indevido</text>
+  <text x="370" y="784" text-anchor="end" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Desfazer preferências</text>
+  <text x="20" y="824" font-family="Arial, sans-serif" font-size="10">Nenhuma opção começa selecionada. O catálogo orgânico permanece disponível.</text>
+</svg>
