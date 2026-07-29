@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Elegibilidade para impulsionamento</title>
-  <desc id="desc">Wireframe para computador que mostra oportunidade, plano, gates de aprovação, atualização, capacidade, segurança e responsabilidade antes de liberar a configuração do Opportunity Boost.</desc>
+  <title id="title">Elegibilidade reformulada para impulsionamento</title>
+  <desc id="desc">Wireframe para computador que distingue condições atendidas, atendidas com limite e bloqueadas antes de liberar a configuração do Opportunity Boost.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -35,7 +35,7 @@
   <text x="770" y="468" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atendido · atualizadas hoje</text>
   <line x1="286" y1="488" x2="784" y2="488" stroke="#cccccc"/>
   <text x="286" y="522" font-family="Arial, sans-serif" font-size="13" font-weight="700">Capacidade de atendimento</text>
-  <text x="770" y="522" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atenção · 18 vagas disponíveis</text>
+  <text x="770" y="522" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atendido com limite · 18 vagas</text>
   <line x1="286" y1="542" x2="784" y2="542" stroke="#cccccc"/>
   <text x="286" y="576" font-family="Arial, sans-serif" font-size="13" font-weight="700">Segurança e moderação</text>
   <text x="770" y="576" text-anchor="end" font-family="Arial, sans-serif" font-size="12">Atendido · sem pendência crítica</text>
@@ -49,21 +49,22 @@
 
   <rect x="840" y="326" width="560" height="448" rx="10" fill="#ffffff" stroke="#888888"/>
   <text x="868" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="700">Estado atual</text>
-  <rect x="868" y="390" width="504" height="92" rx="8" fill="#f3f3f3" stroke="#999999"/>
+  <rect x="868" y="390" width="504" height="104" rx="8" fill="#f3f3f3" stroke="#999999"/>
   <text x="890" y="424" font-family="Arial, sans-serif" font-size="17" font-weight="700">Impulsionamento indisponível</text>
-  <text x="890" y="452" font-family="Arial, sans-serif" font-size="12">Uma condição obrigatória ainda não foi atendida.</text>
-  <text x="868" y="524" font-family="Arial, sans-serif" font-size="13" font-weight="700">O que o plano não resolve automaticamente</text>
-  <text x="888" y="554" font-family="Arial, sans-serif" font-size="12">• aprovação da oportunidade</text>
-  <text x="888" y="580" font-family="Arial, sans-serif" font-size="12">• atualização de preço, data e capacidade</text>
-  <text x="888" y="606" font-family="Arial, sans-serif" font-size="12">• pendências de segurança ou moderação</text>
-  <text x="888" y="632" font-family="Arial, sans-serif" font-size="12">• existência de responsável institucional</text>
+  <text x="890" y="452" font-family="Arial, sans-serif" font-size="12">1 bloqueio crítico impede a continuidade.</text>
+  <text x="890" y="476" font-family="Arial, sans-serif" font-size="11">A capacidade limitada não bloqueia, mas restringirá alcance e entrega.</text>
+  <text x="868" y="530" font-family="Arial, sans-serif" font-size="13" font-weight="700">Significado dos estados</text>
+  <text x="888" y="560" font-family="Arial, sans-serif" font-size="12">• Atendido · permite continuidade</text>
+  <text x="888" y="586" font-family="Arial, sans-serif" font-size="12">• Atendido com limite · permite, mas limita a campanha</text>
+  <text x="888" y="612" font-family="Arial, sans-serif" font-size="12">• Bloqueado · exige correção antes de avançar</text>
+  <text x="888" y="648" font-family="Arial, sans-serif" font-size="11">Comprar ou ampliar um plano não elimina os demais gates.</text>
   <rect x="868" y="674" width="504" height="52" rx="8" fill="#e5e5e5" stroke="#999999" stroke-dasharray="6 4"/>
   <text x="1120" y="706" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700">Configurar impulsionamento · indisponível</text>
   <text x="1120" y="752" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Voltar à gestão da oportunidade</text>
 
   <rect x="260" y="808" width="1140" height="136" rx="10" fill="#f7f7f7" stroke="#999999"/>
   <text x="286" y="842" font-family="Arial, sans-serif" font-size="14" font-weight="700">Regra de continuidade</text>
-  <text x="286" y="872" font-family="Arial, sans-serif" font-size="12">A configuração será liberada somente quando todas as condições críticas estiverem atendidas.</text>
-  <text x="286" y="898" font-family="Arial, sans-serif" font-size="12">Pagamento amplia distribuição identificada; não compra relevância orgânica, recomendação, confiança ou resultado.</text>
-  <text x="286" y="924" font-family="Arial, sans-serif" font-size="11">Nenhuma cobrança ou campanha real é iniciada por este wireframe.</text>
+  <text x="286" y="872" font-family="Arial, sans-serif" font-size="12">A configuração será liberada somente quando não houver bloqueio crítico.</text>
+  <text x="286" y="898" font-family="Arial, sans-serif" font-size="12">Limites operacionais permanecem visíveis e deverão reduzir a entrega antes de ultrapassar a capacidade declarada.</text>
+  <text x="286" y="924" font-family="Arial, sans-serif" font-size="11">Pagamento amplia distribuição identificada; não compra relevância orgânica, recomendação, confiança ou resultado.</text>
 </svg>
