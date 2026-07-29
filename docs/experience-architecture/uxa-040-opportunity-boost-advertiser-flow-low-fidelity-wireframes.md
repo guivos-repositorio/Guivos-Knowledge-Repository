@@ -2,7 +2,7 @@
 id: UXA-040
 title: Wireframes de Baixa Fidelidade do Fluxo do Anunciante do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-28
 parent: UXA-039
@@ -15,8 +15,9 @@ depends_on:
   - GEM-007-A1
   - GEM-010-A2
 related:
+  - UXA-041
   - GPA-007
-  - M7.42
+  - M7.43
 normative: false
 ---
 
@@ -24,20 +25,23 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa a primeira referência gráfica do fluxo pelo qual uma Organização ou um Coletivo elegível configura e envia uma campanha de Opportunity Boost para avaliação.
+Este documento materializa a referência gráfica reformulada e funcionalmente validada do fluxo pelo qual uma Organização ou um Coletivo elegível configura e envia uma campanha de Opportunity Boost para avaliação.
 
 O conjunto preserva a distinção entre:
 
 - plano elegível;
 - oportunidade elegível;
+- condição atendida, limitada ou bloqueada;
 - objetivo publicitário;
-- critérios permitidos;
+- critérios escolhidos;
 - critérios proibidos;
 - orçamento e duração;
+- base principal de cobrança candidata;
 - alcance estimado;
-- prévia patrocinada;
+- primeiro resultado orgânico;
+- espaço patrocinado;
 - confirmação afirmativa;
-- envio para avaliação.
+- envio e cancelamento da avaliação.
 
 O conjunto não representa design final, campanha real, checkout, cobrança, algoritmo, política publicitária final, protótipo navegável ou Engenharia de Produto.
 
@@ -46,14 +50,17 @@ O conjunto não representa design final, campanha real, checkout, cobrança, alg
 ```text
 Gestão da oportunidade
 → verificar disponibilidade para impulsionamento
+→ distinguir condições atendidas, limitadas e bloqueadas
 → escolher objetivo único
-→ definir critérios permitidos
-→ revisar critérios excluídos
+→ escolher e revisar critérios permitidos
+→ revisar critérios proibidos
 → definir orçamento, duração e limite diário
-→ visualizar alcance estimado sem garantia
-→ revisar prévia patrocinada
+→ confirmar base principal coerente com o objetivo
+→ visualizar estimativa sem garantia
+→ revisar primeiro resultado orgânico e espaço patrocinado
 → confirmar responsabilidades
 → enviar para avaliação
+→ acompanhar, cancelar ou receber decisão
 ```
 
 O fluxo não altera a posição orgânica da oportunidade e não utiliza compreensão inicial, Momento Atual, Próximo Passo ou inferências sensíveis.
@@ -67,11 +74,11 @@ O fluxo não altera a posição orgânica da oportunidade e não utiliza compree
 - fidelidade: baixa;
 - contexto: painel de Organização ou Coletivo.
 
-## 4. Artefatos visuais
+## 4. Artefatos visuais reformulados
 
 ### 4.1 Elegibilidade e gate de entrada
 
-![Elegibilidade para impulsionamento](../assets/wireframes/uxa-040-opportunity-boost-eligibility-desktop.svg)
+![Elegibilidade reformulada para impulsionamento](../assets/wireframes/uxa-040-opportunity-boost-eligibility-desktop.svg)
 
 `docs/assets/wireframes/uxa-040-opportunity-boost-eligibility-desktop.svg`
 
@@ -79,17 +86,19 @@ Demonstra:
 
 - oportunidade selecionada;
 - plano atual;
-- estado de aprovação e atividade;
+- aprovação e atividade;
 - atualização das informações materiais;
 - capacidade disponível;
 - responsável institucional;
 - pendências de segurança ou moderação;
-- ação principal disponível somente quando todos os gates forem atendidos;
-- ações de correção específicas para cada bloqueio.
+- estados `Atendido`, `Atendido com limite` e `Bloqueado`;
+- quantidade de bloqueios críticos;
+- ação principal disponível somente quando nenhum bloqueio permanecer;
+- ações corretivas específicas.
 
 ### 4.2 Objetivo e critérios de distribuição
 
-![Objetivo e critérios permitidos](../assets/wireframes/uxa-040-opportunity-boost-objective-audience-desktop.svg)
+![Objetivo e critérios escolhidos](../assets/wireframes/uxa-040-opportunity-boost-objective-audience-desktop.svg)
 
 `docs/assets/wireframes/uxa-040-opportunity-boost-objective-audience-desktop.svg`
 
@@ -97,14 +106,16 @@ Demonstra:
 
 - objetivo único sem seleção automática;
 - métrica principal associada;
-- critérios gerais permitidos;
-- critérios expressamente excluídos;
-- ausência de público suficiente como bloqueio ou limitação;
-- ação para revisar as escolhas antes de avançar.
+- critérios escolhidos pelo anunciante;
+- controles visuais de seleção e revisão;
+- critérios expressamente proibidos;
+- estimativa indisponível enquanto faltar objetivo;
+- regra de público insuficiente separada do estado atual;
+- ausência de ampliação automática.
 
-### 4.3 Orçamento, duração e alcance estimado
+### 4.3 Orçamento, duração e estimativa
 
-![Orçamento, duração e estimativa](../assets/wireframes/uxa-040-opportunity-boost-budget-schedule-desktop.svg)
+![Orçamento e base principal coerente](../assets/wireframes/uxa-040-opportunity-boost-budget-schedule-desktop.svg)
 
 `docs/assets/wireframes/uxa-040-opportunity-boost-budget-schedule-desktop.svg`
 
@@ -113,32 +124,35 @@ Demonstra:
 - orçamento total;
 - limite diário;
 - início e término;
-- base candidata de cobrança;
+- base principal derivada do objetivo;
+- CPC coerente com objetivo de clique no exemplo;
+- proibição de cobrança simultânea por CPM e CPC;
 - ausência de renovação automática;
-- alcance estimado agregado;
+- estimativa agregada;
 - aviso de que estimativa não representa garantia;
 - tratamento de orçamento abaixo do mínimo candidato.
 
 ### 4.4 Prévia e confirmação
 
-![Prévia patrocinada e revisão final](../assets/wireframes/uxa-040-opportunity-boost-preview-confirmation-desktop.svg)
+![Prévia com primeiro resultado orgânico preservado](../assets/wireframes/uxa-040-opportunity-boost-preview-confirmation-desktop.svg)
 
 `docs/assets/wireframes/uxa-040-opportunity-boost-preview-confirmation-desktop.svg`
 
 Demonstra:
 
-- cartão patrocinado identificado;
-- primeiro resultado orgânico preservado;
-- superfícies selecionadas;
+- primeiro resultado orgânico anterior ao anúncio;
+- espaço patrocinado identificado depois do primeiro orgânico;
 - ação `Por que estou vendo isto?`;
-- resumo de objetivo, critérios, orçamento, duração e capacidade;
-- critérios não utilizados;
-- consequências de alteração material, pausa e cancelamento;
-- confirmação afirmativa inicialmente desmarcada.
+- controles para ocultar e denunciar;
+- resumo de objetivo, base, critérios, orçamento, duração e capacidade;
+- critérios proibidos e não utilizados;
+- consequências de alteração material;
+- renovação automática desativada;
+- confirmações afirmativas inicialmente desmarcadas.
 
 ### 4.5 Envio para avaliação
 
-![Envio para avaliação](../assets/wireframes/uxa-040-opportunity-boost-submission-desktop.svg)
+![Envio reformulado para avaliação](../assets/wireframes/uxa-040-opportunity-boost-submission-desktop.svg)
 
 `docs/assets/wireframes/uxa-040-opportunity-boost-submission-desktop.svg`
 
@@ -148,73 +162,102 @@ Demonstra:
 - estado `Em avaliação`;
 - itens que serão verificados;
 - ausência de entrega antes da aprovação;
+- ausência de cobrança real neste artefato;
 - possibilidade de cancelar o envio;
+- cancelamento com retorno ao rascunho;
 - acesso ao histórico e ao resumo enviado;
 - próximos estados possíveis sem promessa de aprovação.
 
-## 5. Pergunta funcional do conjunto
+## 5. Resultado funcional
+
+A pergunta funcional do conjunto é:
 
 > **O anunciante compreende por que pode ou não impulsionar, escolhe conscientemente objetivo, critérios, orçamento e duração, distingue estimativa de garantia, revisa a apresentação patrocinada e envia a campanha sem acreditar que comprou relevância orgânica, recomendação ou resultado?**
 
-Esta pergunta ainda deverá ser respondida por validação funcional especializada dos wireframes.
+A UXA-041 considera o conjunto **funcionalmente válido após reformulação**.
 
 ## 6. Gate de elegibilidade
 
-A ação `Configurar impulsionamento` permanece indisponível enquanto existir qualquer condição crítica:
+A superfície diferencia:
+
+```text
+Atendido
+→ permite continuidade
+
+Atendido com limite
+→ permite continuidade, mas limita alcance ou entrega
+
+Bloqueado
+→ impede continuidade e exige correção
+```
+
+A ação `Configurar impulsionamento` permanece indisponível enquanto existir qualquer bloqueio crítico:
 
 - plano não elegível;
 - oportunidade não aprovada;
 - oportunidade inativa ou expirada;
 - informações materiais desatualizadas;
-- capacidade insuficiente;
-- pendência de segurança ou moderação;
+- capacidade inexistente;
+- pendência crítica de segurança ou moderação;
 - responsável institucional ausente.
 
-Cada bloqueio apresenta motivo, consequência e ação de correção. A contratação de plano não elimina exigências de aprovação, capacidade ou segurança.
+A contratação de plano não elimina exigências de aprovação, capacidade ou segurança.
 
-## 7. Objetivo e público
+## 7. Objetivo e critérios
 
 O anunciante deverá escolher uma única finalidade de distribuição. Nenhuma opção começa selecionada.
 
-A interface apresenta separadamente:
+Os critérios permitidos deverão:
 
-```text
-Critérios utilizados
-→ região, idioma, categoria, modalidade, data, preço ou preferência geral permitida
+- ser escolhidos ou confirmados explicitamente;
+- apresentar origem objetiva;
+- permitir revisão e remoção;
+- permanecer proporcionais à oportunidade;
+- nunca ser ampliados silenciosamente.
 
-Critérios excluídos
-→ relato protegido, compreensão inicial, Momento Atual, Próximo Passo e inferências sensíveis
+Critérios proibidos permanecem fora da seleção:
 
-Alcance estimado
-→ cálculo agregado e revisável, sem garantia de entrega ou conversão
-```
+- relato protegido;
+- compreensão inicial;
+- Momento Atual;
+- Próximo Passo;
+- inferências sensíveis.
 
-O sistema não ampliará silenciosamente os critérios quando o público estimado for pequeno.
+Público insuficiente será apresentado como exceção própria, com motivo, consequência e revisão manual possível.
 
-## 8. Orçamento e duração
+## 8. Orçamento, duração e base principal
 
-A superfície deverá evidenciar:
+A superfície evidencia:
 
 - orçamento total limitado;
-- limite diário opcional ou obrigatório conforme política futura;
+- limite diário;
 - período explícito;
 - ausência de renovação automática por padrão;
-- base candidata de cobrança utilizada na campanha;
+- uma única base principal;
+- coerência entre objetivo e base;
+- proibição de CPM e CPC simultâneos;
 - orçamento mínimo candidato aplicável;
-- saldo e consumo como objetos futuros, não implementados neste artefato.
+- estimativa agregada sem garantia.
+
+No exemplo validado:
+
+```text
+Objetivo: levar pessoas ao detalhe
+→ métrica principal: clique válido
+→ base candidata: CPC
+```
 
 Valores exibidos são ilustrativos e não constituem cobrança autorizada.
 
 ## 9. Prévia e confirmação
 
-A prévia deverá separar visualmente:
+A prévia separa visualmente:
 
-- espaço patrocinado;
-- resultado orgânico;
-- marcador ou cartão identificado;
-- filtros objetivos;
-- explicação da distribuição;
-- controles da pessoa.
+1. primeiro resultado orgânico;
+2. espaço patrocinado identificado;
+3. explicação da distribuição;
+4. filtros objetivos;
+5. controles da pessoa.
 
 A confirmação final permanece indisponível até que o anunciante:
 
@@ -223,23 +266,29 @@ A confirmação final permanece indisponível até que o anunciante:
 3. reconheça que pagamento não altera ranking orgânico;
 4. aceite as responsabilidades aplicáveis por ação afirmativa.
 
-## 10. Estado de envio
+## 10. Estado de envio e cancelamento
 
 Depois do envio:
 
 - a campanha entra em `Em avaliação`;
 - nenhuma entrega publicitária começa;
 - o anunciante pode abrir o resumo enviado;
-- o anunciante pode cancelar o envio antes da decisão, quando permitido;
 - ajustes solicitados, rejeição e aprovação permanecem estados distintos;
-- nenhum prazo ou aprovação é prometido pelo wireframe.
+- nenhum prazo ou aprovação é prometido.
+
+A ação `Cancelar envio` deverá declarar:
+
+> **Cancelar encerra a avaliação e devolve a campanha ao estado de rascunho. Nenhuma entrega começa e nenhuma cobrança real é iniciada por este artefato.**
+
+O histórico da decisão permanece acessível.
 
 ## 11. Acessibilidade e linguagem
 
-- o estado patrocinado não depende apenas de cor;
+- estados não dependem apenas de cor;
 - controles possuem rótulos textuais;
+- escolhas únicas e múltiplas possuem convenções distintas;
 - campos obrigatórios são identificados em linguagem clara;
-- bloqueios informam ação de correção;
+- bloqueios informam ação corretiva;
 - valores utilizam formato monetário pt-BR;
 - nenhuma urgência, culpa ou escassez artificial é utilizada;
 - termos técnicos aparecem somente como referência secundária.
@@ -248,23 +297,23 @@ Depois do envio:
 
 Este incremento não cria:
 
-- wireframe do cartão patrocinado para a pessoa como artefato independente;
+- cartão patrocinado independente para a pessoa;
 - explicação completa `Por que estou vendo isto?`;
 - estados patrocinados para Lista ou Mapa;
+- gestão de campanha ativa;
 - relatório agregado do anunciante;
-- validação funcional dos wireframes;
+- teste com usuários;
 - design visual;
 - protótipo;
-- teste com usuários;
 - campanha, algoritmo, checkout, cobrança ou Engenharia de Produto.
 
 ## 13. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes do fluxo do anunciante;
-2. criar wireframes do cartão patrocinado e da explicação de distribuição;
-3. criar estados patrocinados para Lista e Mapa;
+1. criar wireframes do cartão patrocinado e da explicação de distribuição;
+2. criar estados patrocinados para Lista e Mapa;
+3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar o conjunto completo de wireframes do Opportunity Boost.
 
