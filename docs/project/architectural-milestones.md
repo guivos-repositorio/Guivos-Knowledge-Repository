@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.17.0
+version: 5.18.0
 owner: Guivos
-last_updated: 2026-07-29
+last_updated: 2026-08-01
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.19.0
+  - ROADMAP-12.20.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -20,6 +20,7 @@ related:
   - UXA-041
   - UXA-042
   - UXA-043
+  - UXA-044
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -31,6 +32,7 @@ related:
   - M7.43
   - M7.44
   - M7.45
+  - M7.46
 normative: false
 ---
 
@@ -58,38 +60,46 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.42 | Concluído | wireframes do fluxo do anunciante do Opportunity Boost criados |
 | M7.43 | Concluído | wireframes do fluxo do anunciante funcionalmente validados e reformulados |
 | M7.44 | Concluído | cartão patrocinado e explicação do Opportunity Boost materializados |
-| M7.45 | Concluído neste incremento | cartão patrocinado e explicação funcionalmente validados e reformulados |
+| M7.45 | Concluído | cartão patrocinado e explicação funcionalmente validados e reformulados |
+| M7.46 | Concluído neste incremento | estados patrocinados de Lista e Mapa materializados |
 
 ## 3. Marco vigente
 
-### Cartão Patrocinado e Explicação Funcionalmente Validados e Reformulados — M7.45
+### Estados Patrocinados de Lista e Mapa Materializados — M7.46
 
 Critérios atendidos:
 
-- UXA-043 criada como validação funcional especializada;
-- UXA-042 elevada para 0.2.0;
-- seis arquivos vetoriais reformulados;
-- denúncia de conteúdo separada de contestação de dados no móvel;
-- ocultação, redução, desativação e reversão com escopos próprios;
-- primeiro resultado orgânico materializado no cartão social financiado;
-- coexistência entre correspondência orgânica e distribuição paga explicada separadamente;
-- ação genérica `Mais opções` substituída por `Controles do anúncio`;
-- ocultação imediata identificada como limitada à campanha;
-- financiamento social declarado como distribuição paga, não recomendação;
-- anunciante, financiador e beneficiário identificados;
-- critérios gerais utilizados e dados protegidos excluídos;
-- ausência de lista de visualizadores;
-- catálogo orgânico preservado após ocultação;
-- Lista, Mapa, gestão ativa e relatório agregado não criados;
+- UXA-044 criada como referência visual de baixa fidelidade;
+- quatro arquivos vetoriais criados;
+- Lista patrocinada materializada para móvel e computador;
+- Mapa patrocinado materializado para móvel e computador;
+- uma única consulta territorial preservada entre Lista e Mapa;
+- localização opcional e região manual distintas da posição pessoal;
+- primeiro resultado orgânico anterior ao inventário pago;
+- unidade patrocinada fora da ordenação orgânica;
+- marcadores orgânicos e patrocinados distintos por forma e texto;
+- agrupamentos com contagens orgânicas e patrocinadas separadas;
+- marcador patrocinado sem sobreposição de oportunidade orgânica;
+- filtro patrocinado sincronizado e reversível;
+- proximidade sem equivalência a afinidade ou recomendação;
+- baixa oferta orgânica reduz publicidade;
+- explicação e controles equivalentes aos cartões patrocinados;
+- ocultação preserva busca, filtros, Lista, Mapa e catálogo orgânico;
+- validação funcional dos quatro artefatos não iniciada;
+- gestão ativa e relatório agregado não criados;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Cartão Patrocinado e Explicação Funcionalmente Validados e Reformulados — M7.45
+
+A UXA-042 reformulada e a UXA-043 permanecem como autoridades do cartão patrocinado, da explicação e dos controles.
+
 ### Cartão Patrocinado e Explicação do Opportunity Boost Materializados — M7.44
 
-A UXA-042 permanece como autoridade da materialização visual, agora reformulada pela UXA-043.
+A UXA-042 permanece como autoridade da materialização visual, reformulada pela UXA-043.
 
 ### Wireframes do Fluxo do Anunciante Funcionalmente Validados e Reformulados — M7.43
 
@@ -139,7 +149,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-043; cartão e explicação validados e reformulados |
+| Arquitetura da Experiência | ativa até UXA-044; Lista e Mapa patrocinados aguardam validação |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -149,12 +159,11 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Telas do Opportunity Boost
 
-1. estados patrocinados para Lista e Mapa;
-2. validação funcional e reformulação desses estados;
-3. wireframes de gestão da campanha ativa;
-4. wireframe do relatório agregado;
-5. validação funcional do conjunto completo de wireframes;
-6. testes posteriores de disclosure, densidade, frequência e controles.
+1. validação funcional e reformulação dos wireframes da UXA-044;
+2. wireframes de gestão da campanha ativa;
+3. wireframe do relatório agregado;
+4. validação funcional do conjunto completo de wireframes;
+5. testes posteriores de disclosure, densidade, frequência, marcadores e controles.
 
 ### Modelo econômico e especialidades
 

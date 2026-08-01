@@ -9,17 +9,18 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.45 — Cartão Patrocinado e Explicação do Opportunity Boost Funcionalmente Validados e Reformulados |
+| Marco | M7.46 — Estados Patrocinados de Lista e Mapa do Opportunity Boost Materializados |
 | Resultados Empresariais | 18 decisões; 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos |
 | Opportunity Boost | add-on publicitário candidato separado dos planos |
 | Experiência do Boost | validada e reformulada |
 | Fluxo do anunciante | cinco wireframes para computador validados e reformulados |
 | Cartão e explicação | seis wireframes móveis e para computador validados e reformulados |
+| Lista e Mapa patrocinados | quatro wireframes móveis e para computador criados; validação pendente |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; oferta e cobrança não autorizadas |
 | Home, início e compreensão | funcionalmente validados |
-| Mapa | estados móveis e referência desktop validados |
+| Mapa | estados orgânicos validados e referências patrocinadas criadas |
 | Engenharia de Produto | pausada antes de W0-01 |
 
 ## Planos candidatos
@@ -101,7 +102,18 @@ A UXA-042 reformulada e a UXA-043 validam seis referências:
 
 As referências apresentam natureza comercial anterior ao conteúdo, primeiro resultado orgânico antes do anúncio padrão e social, anunciante ou financiador identificado, critérios utilizados e excluídos, correspondência orgânica separada quando existir, controles com escopos próprios, denúncia e contestação distintas e financiamento social sem recomendação ou transferência de autoridade.
 
-Nenhuma campanha, cobrança ou entrega foi iniciada.
+### Lista e Mapa patrocinados materializados
+
+A UXA-044 cria quatro referências:
+
+1. Lista patrocinada móvel;
+2. Lista patrocinada para computador;
+3. Mapa patrocinado móvel;
+4. Mapa patrocinado para computador.
+
+As referências apresentam a mesma consulta territorial entre Lista e Mapa, localização opcional, primeiro resultado orgânico preservado, inventário pago separado da ordenação, marcador patrocinado próprio, agrupamentos com contagens orgânicas e patrocinadas separadas, filtro reversível, baixa oferta orgânica reduzindo publicidade e ocultação sem redução do catálogo orgânico.
+
+Os quatro artefatos ainda exigem validação funcional. Nenhuma campanha, cobrança ou entrega foi iniciada.
 
 ### Proteções
 
@@ -109,6 +121,8 @@ Nenhuma campanha, cobrança ou entrega foi iniciada.
 - selo `Patrocinado` ou `Impulsionado` obrigatório;
 - densidade candidata máxima de 20%;
 - duas unidades patrocinadas consecutivas proibidas;
+- marcador patrocinado não encobre oportunidade orgânica;
+- localização permanece opcional e posição exata não alimenta publicidade;
 - compreensão inicial, Momento Atual e Próximo Passo não são utilizados para segmentação;
 - Tela Hoje e Jornada pessoal permanecem sem Boost nesta baseline;
 - anunciante recebe métricas agregadas, não lista de visualizadores.
@@ -136,8 +150,8 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Roadmap](roadmap.md)
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
-- [Adendo Canônico da UXA-043](project/canonical-consolidation-matrix-uxa-043-addendum.md)
-- [Histórico 1.67.0](project/changelog-1.67.0-uxa-043.md)
+- [Adendo Canônico da UXA-044](project/canonical-consolidation-matrix-uxa-044-addendum.md)
+- [Histórico 1.68.0](project/changelog-1.68.0-uxa-044.md)
 
 ### Opportunity Boost
 
@@ -150,6 +164,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Validação dos Wireframes do Anunciante](experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md)
 - [Cartão Patrocinado e Explicação](experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md)
 - [Validação do Cartão e Explicação](experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md)
+- [Estados Patrocinados de Lista e Mapa](experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md)
 - [Guivos Ads](product-architecture/ads.md)
 
 ### Modelo Econômico
@@ -177,7 +192,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente estados patrocinados para Lista e Mapa, validação funcional desses estados, gestão da campanha ativa, relatório agregado, validação do conjunto completo, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
+Após nova autorização, poderão ocorrer separadamente validação funcional dos quatro wireframes da UXA-044, gestão da campanha ativa, relatório agregado, validação do conjunto completo, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
 
 ## Regra de precedência
 
