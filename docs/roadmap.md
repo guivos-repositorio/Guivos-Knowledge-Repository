@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.19.0
-title: Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Validados
+id: ROADMAP-12.20.0
+title: Roadmap Arquitetural — Estados Patrocinados de Lista e Mapa Materializados
 status: active
-version: 12.19.0
+version: 12.20.0
 owner: Guivos
-last_updated: 2026-07-29
+last_updated: 2026-08-01
 supersedes_partial:
-  - ROADMAP-12.18.0
+  - ROADMAP-12.19.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -22,14 +22,15 @@ related:
   - UXA-041
   - UXA-042
   - UXA-043
+  - UXA-044
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.45
+  - M7.46
 ---
 
-# Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Validados
+# Roadmap Arquitetural — Estados Patrocinados de Lista e Mapa Materializados
 
 ## 1. Autoridade
 
@@ -40,17 +41,18 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | cartão patrocinado e explicação do Opportunity Boost funcionalmente validados e reformulados | M7.45 |
+| Marco | estados patrocinados de Lista e Mapa do Opportunity Boost materializados | M7.46 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes para computador validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação | seis wireframes móveis e para computador validados e reformulados | UXA-042; UXA-043 |
+| Lista e Mapa patrocinados | quatro wireframes móveis e para computador criados; validação pendente | UXA-044 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial | validada em cinco estados | UXA-036; UXA-037 |
-| Mapa | estados móveis e referência desktop validados | UXA-024 a UXA-033 |
+| Mapa | estados orgânicos validados e referências patrocinadas criadas | UXA-024 a UXA-033; UXA-044 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -70,7 +72,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 12. fluxo do anunciante materializado em cinco wireframes de baixa fidelidade;
 13. wireframes do anunciante funcionalmente validados e reformulados;
 14. cartão patrocinado e explicação materializados em seis wireframes;
-15. cartão patrocinado e explicação funcionalmente validados e reformulados.
+15. cartão patrocinado e explicação funcionalmente validados e reformulados;
+16. estados patrocinados de Lista e Mapa materializados em quatro wireframes.
 
 ## 4. Sequência pessoal vigente
 
@@ -183,7 +186,35 @@ Reformulações confirmadas:
 - denúncia de conteúdo separada de contestação de dados;
 - Boost Social Financiado sem recomendação, autoridade ou acesso a dados protegidos.
 
-### 6.5 Preços candidatos preservados
+### 6.5 Lista e Mapa patrocinados materializados
+
+A UXA-044 cria:
+
+```text
+Lista patrocinada móvel
+→ Lista patrocinada para computador
+→ Mapa patrocinado móvel
+→ Mapa patrocinado para computador
+```
+
+O conjunto demonstra:
+
+- uma única consulta territorial entre Lista e Mapa;
+- localização opcional, região manual e posição não acessada;
+- primeiro resultado orgânico anterior ao inventário pago;
+- publicidade fora da ordenação orgânica;
+- marcador patrocinado textual e estruturalmente distinto;
+- agrupamentos com contagens orgânicas e patrocinadas separadas;
+- marcador pago sem sobreposição de oportunidade orgânica;
+- filtro patrocinado reversível e sincronizado;
+- proximidade sem equivalência a afinidade ou recomendação;
+- baixa oferta orgânica reduzindo publicidade;
+- explicação e controles preservados;
+- ocultação sem redução do catálogo orgânico.
+
+Os quatro wireframes ainda não foram funcionalmente validados.
+
+### 6.6 Preços candidatos preservados
 
 | Modalidade | Orçamento mínimo |
 |---|---:|
@@ -205,6 +236,8 @@ Reformulações confirmadas:
 - plano pago e publicidade não aumentam relevância;
 - compreensão inicial e Próximo Passo não alimentam segmentação publicitária;
 - localização e preferências negativas são respeitadas;
+- posição exata e histórico territorial não alimentam publicidade;
+- marcador patrocinado não encobre oportunidade orgânica;
 - baixa oferta orgânica reduz publicidade;
 - acesso financiado não transfere autoridade;
 - impressão, clique, inscrição, atribuição e impacto permanecem eventos distintos;
@@ -216,12 +249,11 @@ Reformulações confirmadas:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar estados patrocinados para Lista e Mapa;
-2. validar funcionalmente e reformular esses estados;
-3. criar wireframes de gestão da campanha ativa;
-4. criar wireframe do relatório agregado;
-5. validar funcionalmente o conjunto completo de wireframes;
-6. testar disclosure, densidade, frequência e controles.
+1. validar funcionalmente e reformular os wireframes da UXA-044;
+2. criar wireframes de gestão da campanha ativa;
+3. criar wireframe do relatório agregado;
+4. validar funcionalmente o conjunto completo de wireframes;
+5. testar disclosure, densidade, frequência, marcadores e controles.
 
 ### 8.2 Modelo econômico e especialidades
 
