@@ -1,47 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Mapa patrocinado móvel do Opportunity Boost</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com marcadores orgânicos e patrocinado distintos, agrupamento separado, localização opcional, filtro reversível e cartão patrocinado selecionado.</desc>
+  <title id="title">Mapa patrocinado móvel reformulado do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel reformulado do Mapa, com contagens orgânicas e pagas separadas, marcador selecionado, gate para pesquisar nova área e preferência publicitária reversível.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
-  <text x="20" y="34" font-family="Arial, sans-serif" font-size="11">MAPA DE OPORTUNIDADES</text>
-  <text x="20" y="64" font-family="Arial, sans-serif" font-size="22" font-weight="700">Belo Horizonte</text>
-  <text x="20" y="88" font-family="Arial, sans-serif" font-size="10">Região manual · localização desativada · posição não acessada</text>
-  <rect x="20" y="104" width="350" height="44" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="36" y="131" font-family="Arial, sans-serif" font-size="11">Buscar nesta região</text>
-  <text x="20" y="172" font-family="Arial, sans-serif" font-size="10">8 resultados · 4 filtros · mesma consulta da Lista</text>
-  <text x="20" y="194" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Lista</text>
-  <text x="82" y="194" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Filtros</text>
-  <text x="150" y="194" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Privacidade</text>
-  <rect x="248" y="172" width="122" height="30" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="309" y="191" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Patrocinados: mostrar</text>
+  <text x="20" y="32" font-family="Arial, sans-serif" font-size="10">MAPA DE OPORTUNIDADES · MESMA CONSULTA DA LISTA</text>
+  <text x="20" y="62" font-family="Arial, sans-serif" font-size="21" font-weight="700">Belo Horizonte</text>
+  <text x="20" y="86" font-family="Arial, sans-serif" font-size="10">Região manual · localização desativada · posição não acessada</text>
+  <rect x="20" y="100" width="350" height="42" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="126" font-family="Arial, sans-serif" font-size="11">Buscar nesta região</text>
+  <text x="20" y="164" font-family="Arial, sans-serif" font-size="10">8 oportunidades orgânicas · 1 patrocinada exibida</text>
+  <text x="20" y="186" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Lista</text>
+  <text x="78" y="186" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Filtros de oportunidades</text>
+  <text x="230" y="164" font-family="Arial, sans-serif" font-size="9" font-weight="700">PREFERÊNCIA PUBLICITÁRIA</text>
+  <rect x="230" y="172" width="140" height="28" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="300" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Patrocinados: exibidos</text>
 
-  <rect x="20" y="220" width="350" height="316" rx="10" fill="#f7f7f7" stroke="#777777"/>
-  <text x="36" y="246" font-family="Arial, sans-serif" font-size="10">ÁREA TERRITORIAL · nenhum símbolo é sua posição</text>
-  <path d="M50 286 L330 286 M50 340 L330 340 M50 394 L330 394 M50 448 L330 448" stroke="#cccccc"/>
-  <path d="M92 262 L92 512 M160 262 L160 512 M228 262 L228 512 M296 262 L296 512" stroke="#dddddd"/>
-  <circle cx="92" cy="318" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
-  <text x="92" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">O1</text>
-  <circle cx="244" cy="368" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
-  <text x="244" y="372" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">O2</text>
-  <rect x="168" y="432" width="34" height="34" rx="5" fill="#e8e8e8" stroke="#111111" stroke-width="2"/>
-  <text x="185" y="453" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">P1</text>
-  <rect x="278" y="300" width="66" height="38" rx="8" fill="#ffffff" stroke="#444444" stroke-dasharray="4 3"/>
-  <text x="311" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">3 org.</text>
-  <text x="311" y="329" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">1 pat.</text>
-  <text x="36" y="502" font-family="Arial, sans-serif" font-size="9">○ O = orgânico · □ P = patrocinado · agrupamentos mostram contagens separadas</text>
-  <text x="36" y="522" font-family="Arial, sans-serif" font-size="9">Marcador patrocinado não cobre marcador orgânico.</text>
+  <rect x="20" y="216" width="350" height="316" rx="10" fill="#f7f7f7" stroke="#777777"/>
+  <text x="36" y="242" font-family="Arial, sans-serif" font-size="10">ÁREA TERRITORIAL · nenhum símbolo é sua posição</text>
+  <path d="M50 282 L330 282 M50 336 L330 336 M50 390 L330 390 M50 444 L330 444" stroke="#cccccc"/>
+  <path d="M92 258 L92 506 M160 258 L160 506 M228 258 L228 506 M296 258 L296 506" stroke="#dddddd"/>
+  <circle cx="92" cy="314" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="92" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">O1</text>
+  <circle cx="244" cy="364" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="244" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700">O2</text>
+  <rect x="164" y="424" width="42" height="42" rx="5" fill="#e8e8e8" stroke="#111111" stroke-width="3"/>
+  <text x="185" y="441" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700">P1</text>
+  <text x="185" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">selecionado</text>
+  <rect x="276" y="296" width="70" height="42" rx="8" fill="#ffffff" stroke="#444444" stroke-dasharray="4 3"/>
+  <text x="311" y="313" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">3 orgânicos</text>
+  <text x="311" y="328" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">1 patrocinado</text>
+  <text x="36" y="484" font-family="Arial, sans-serif" font-size="9">○ O = orgânico · □ P = patrocinado · contagens sempre separadas</text>
+  <text x="36" y="504" font-family="Arial, sans-serif" font-size="9">Mover o mapa não altera a consulta automaticamente.</text>
+  <rect x="214" y="478" width="140" height="30" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="284" y="497" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Pesquisar nesta área</text>
 
-  <rect x="20" y="560" width="350" height="206" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
-  <text x="36" y="586" font-family="Arial, sans-serif" font-size="10" font-weight="700">P1 · IMPULSIONADO · POSIÇÃO PAGA</text>
-  <text x="36" y="610" font-family="Arial, sans-serif" font-size="10">Anunciante: Coletivo Horizonte</text>
-  <text x="36" y="640" font-family="Arial, sans-serif" font-size="15" font-weight="700">Formação gratuita em gestão comunitária</text>
-  <text x="36" y="664" font-family="Arial, sans-serif" font-size="10">Online · Gratuita · região geral · não usa posição exata</text>
-  <text x="36" y="688" font-family="Arial, sans-serif" font-size="9">Distância ou proximidade não equivale a afinidade ou recomendação.</text>
-  <text x="36" y="716" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Por que estou vendo isto?</text>
-  <text x="354" y="716" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir oportunidade</text>
-  <text x="36" y="744" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ocultar só esta campanha</text>
-  <text x="354" y="744" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Controles do anúncio</text>
+  <rect x="20" y="552" width="350" height="214" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
+  <text x="36" y="578" font-family="Arial, sans-serif" font-size="10" font-weight="700">P1 SELECIONADO · IMPULSIONADO · POSIÇÃO PAGA</text>
+  <text x="36" y="602" font-family="Arial, sans-serif" font-size="10">Anunciante: Coletivo Horizonte</text>
+  <text x="36" y="632" font-family="Arial, sans-serif" font-size="15" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <text x="36" y="656" font-family="Arial, sans-serif" font-size="10">Online · Gratuita · região geral · posição exata não utilizada</text>
+  <text x="36" y="678" font-family="Arial, sans-serif" font-size="9">Selecionar no Mapa não muda a ordem da Lista nem cria afinidade.</text>
+  <text x="36" y="706" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Por que estou vendo isto?</text>
+  <text x="354" y="706" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir oportunidade</text>
+  <text x="36" y="734" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ocultar P1 na Lista e no Mapa</text>
+  <text x="354" y="734" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Mais controles</text>
+  <text x="36" y="754" font-family="Arial, sans-serif" font-size="8">Ocultar remove somente a campanha; os 8 orgânicos permanecem.</text>
 
-  <text x="20" y="794" font-family="Arial, sans-serif" font-size="9">Pouco inventário orgânico reduz anúncios. Filtro patrocinado é reversível.</text>
-  <text x="20" y="822" font-family="Arial, sans-serif" font-size="10">Hoje · Jornada · Explorar · Mapa · Eu</text>
+  <text x="20" y="794" font-family="Arial, sans-serif" font-size="9">Marcador pago não cobre orgânico. Pouco orgânico reduz publicidade.</text>
+  <text x="20" y="814" font-family="Arial, sans-serif" font-size="9">Ocultar · preferências · denunciar · contestar são ações distintas.</text>
+  <text x="20" y="836" font-family="Arial, sans-serif" font-size="10">Hoje · Jornada · Explorar · Mapa · Eu</text>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Lista patrocinada para computador do Opportunity Boost</title>
-  <desc id="desc">Wireframe de baixa fidelidade da Lista territorial em computador, com consulta preservada, primeiro resultado orgânico, espaço patrocinado separado e controles reversíveis.</desc>
+  <title id="title">Lista patrocinada para computador reformulada do Opportunity Boost</title>
+  <desc id="desc">Wireframe reformulado da Lista territorial em computador, com contagens orgânicas e pagas separadas, preferência publicitária distinta dos filtros e primeiro resultado orgânico preservado.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -13,62 +13,63 @@
 
   <text x="260" y="46" font-family="Arial, sans-serif" font-size="11">MAPA › LISTA TERRITORIAL · MESMA CONSULTA</text>
   <text x="260" y="84" font-family="Arial, sans-serif" font-size="28" font-weight="700">Oportunidades na região</text>
-  <text x="260" y="112" font-family="Arial, sans-serif" font-size="12">Agindo como: Pessoa · Exploração geral · sem personalização</text>
+  <text x="260" y="112" font-family="Arial, sans-serif" font-size="12">Agindo como: Pessoa · exploração geral · sem personalização</text>
 
-  <rect x="260" y="138" width="760" height="52" rx="8" fill="#ffffff" stroke="#777777"/>
+  <rect x="260" y="138" width="750" height="52" rx="8" fill="#ffffff" stroke="#777777"/>
   <text x="284" y="170" font-family="Arial, sans-serif" font-size="12">Buscar nesta região</text>
-  <rect x="1040" y="138" width="170" height="52" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="1125" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">Patrocinados: mostrar</text>
-  <rect x="1230" y="138" width="170" height="52" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="1315" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">Voltar ao Mapa</text>
+  <rect x="1030" y="138" width="190" height="52" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="1125" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700">PREFERÊNCIA PUBLICITÁRIA</text>
+  <text x="1125" y="177" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Patrocinados: exibidos</text>
+  <rect x="1240" y="138" width="160" height="52" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="1320" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">Voltar ao Mapa</text>
 
-  <rect x="260" y="216" width="260" height="690" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <rect x="260" y="216" width="270" height="690" rx="10" fill="#f8f8f8" stroke="#999999"/>
   <text x="286" y="250" font-family="Arial, sans-serif" font-size="15" font-weight="700">Consulta e privacidade</text>
   <text x="286" y="286" font-family="Arial, sans-serif" font-size="11">Região manual: Belo Horizonte</text>
-  <text x="286" y="312" font-family="Arial, sans-serif" font-size="11">Localização desativada</text>
-  <text x="286" y="338" font-family="Arial, sans-serif" font-size="11">Posição não acessada</text>
-  <text x="286" y="376" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Alterar região</text>
-  <text x="286" y="404" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Privacidade territorial</text>
-  <line x1="286" y1="432" x2="494" y2="432" stroke="#cccccc"/>
-  <text x="286" y="466" font-family="Arial, sans-serif" font-size="13" font-weight="700">Filtros ativos</text>
-  <text x="286" y="500" font-family="Arial, sans-serif" font-size="11">Hoje e próximos 7 dias</text>
-  <text x="286" y="528" font-family="Arial, sans-serif" font-size="11">Gratuitas e preço informado</text>
-  <text x="286" y="556" font-family="Arial, sans-serif" font-size="11">Presencial e online</text>
-  <text x="286" y="584" font-family="Arial, sans-serif" font-size="11">Acessibilidade conhecida</text>
-  <text x="286" y="620" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Revisar filtros</text>
-  <line x1="286" y1="650" x2="494" y2="650" stroke="#cccccc"/>
-  <text x="286" y="686" font-family="Arial, sans-serif" font-size="13" font-weight="700">Publicidade</text>
-  <text x="286" y="720" font-family="Arial, sans-serif" font-size="11">Máximo candidato: 20%</text>
-  <text x="286" y="748" font-family="Arial, sans-serif" font-size="11">Sem anúncios consecutivos</text>
-  <text x="286" y="776" font-family="Arial, sans-serif" font-size="11">Pouco orgânico reduz anúncios</text>
-  <text x="286" y="812" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Revisar publicidade</text>
-  <text x="286" y="840" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Desativar patrocinados</text>
+  <text x="286" y="312" font-family="Arial, sans-serif" font-size="11">Localização desativada · posição não acessada</text>
+  <text x="286" y="348" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Alterar região</text>
+  <text x="286" y="376" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Privacidade territorial</text>
+  <line x1="286" y1="404" x2="504" y2="404" stroke="#cccccc"/>
+  <text x="286" y="438" font-family="Arial, sans-serif" font-size="13" font-weight="700">Filtros de oportunidades</text>
+  <text x="286" y="472" font-family="Arial, sans-serif" font-size="11">Hoje e próximos 7 dias</text>
+  <text x="286" y="500" font-family="Arial, sans-serif" font-size="11">Gratuitas e preço informado</text>
+  <text x="286" y="528" font-family="Arial, sans-serif" font-size="11">Presencial e online</text>
+  <text x="286" y="556" font-family="Arial, sans-serif" font-size="11">Acessibilidade conhecida</text>
+  <text x="286" y="592" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Revisar filtros de negócio</text>
+  <line x1="286" y1="620" x2="504" y2="620" stroke="#cccccc"/>
+  <text x="286" y="654" font-family="Arial, sans-serif" font-size="13" font-weight="700">Preferência publicitária</text>
+  <text x="286" y="688" font-family="Arial, sans-serif" font-size="11">Estado atual: patrocinados exibidos</text>
+  <text x="286" y="716" font-family="Arial, sans-serif" font-size="11">Limitados e nunca consecutivos</text>
+  <text x="286" y="744" font-family="Arial, sans-serif" font-size="11">Pouca oferta orgânica reduz anúncios</text>
+  <text x="286" y="780" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Revisar preferências</text>
+  <text x="286" y="808" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Não mostrar patrocinados</text>
+  <text x="286" y="846" font-family="Arial, sans-serif" font-size="10">A ação preserva resultados orgânicos.</text>
 
-  <text x="556" y="238" font-family="Arial, sans-serif" font-size="12">8 resultados · mesma região, busca, filtros e atualização</text>
-  <text x="1170" y="238" font-family="Arial, sans-serif" font-size="11">Ordenado por: busca e filtros</text>
+  <text x="560" y="238" font-family="Arial, sans-serif" font-size="12">8 oportunidades orgânicas · 1 patrocinada exibida · 4 filtros</text>
+  <text x="1190" y="238" font-family="Arial, sans-serif" font-size="11">Ordenação orgânica: busca e filtros</text>
 
-  <rect x="556" y="262" width="844" height="174" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="582" y="292" font-family="Arial, sans-serif" font-size="11" font-weight="700">PRIMEIRO RESULTADO ORGÂNICO</text>
-  <text x="582" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="700">Oficina aberta de planejamento local</text>
-  <text x="582" y="364" font-family="Arial, sans-serif" font-size="12">Organização Exemplo · Presencial · Gratuita · acessibilidade confirmada</text>
-  <text x="582" y="398" font-family="Arial, sans-serif" font-size="11">Origem funcional: região, busca e filtros · Relação comercial: sem patrocínio</text>
+  <rect x="560" y="262" width="840" height="174" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="586" y="292" font-family="Arial, sans-serif" font-size="11" font-weight="700">1º RESULTADO ORGÂNICO</text>
+  <text x="586" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="700">Oficina aberta de planejamento local</text>
+  <text x="586" y="364" font-family="Arial, sans-serif" font-size="12">Organização Exemplo · Presencial · Gratuita · acessibilidade confirmada</text>
+  <text x="586" y="398" font-family="Arial, sans-serif" font-size="11">Busca, região e filtros · relação comercial: sem patrocínio</text>
   <text x="1334" y="408" text-anchor="end" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Por que aparece aqui?</text>
 
-  <text x="556" y="470" font-family="Arial, sans-serif" font-size="11" font-weight="700">INVENTÁRIO PUBLICITÁRIO SEPARADO</text>
-  <rect x="556" y="486" width="844" height="232" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
-  <text x="582" y="518" font-family="Arial, sans-serif" font-size="11" font-weight="700">IMPULSIONADO · POSIÇÃO PAGA IDENTIFICADA</text>
-  <text x="582" y="550" font-family="Arial, sans-serif" font-size="11">Anunciante: Coletivo Horizonte</text>
-  <text x="582" y="590" font-family="Arial, sans-serif" font-size="21" font-weight="700">Formação gratuita em gestão comunitária</text>
-  <text x="582" y="624" font-family="Arial, sans-serif" font-size="12">Online · Gratuita · 18 vagas · critérios gerais da campanha</text>
-  <text x="582" y="656" font-family="Arial, sans-serif" font-size="11">Pagamento amplia distribuição. Não altera correspondência, ordenação ou recomendação.</text>
-  <text x="582" y="690" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Por que estou vendo isto?</text>
-  <text x="850" y="690" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Ocultar só esta campanha</text>
-  <text x="1080" y="690" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Controles do anúncio</text>
+  <text x="560" y="470" font-family="Arial, sans-serif" font-size="11" font-weight="700">INVENTÁRIO PUBLICITÁRIO SEPARADO DA LISTA ORGÂNICA</text>
+  <rect x="560" y="486" width="840" height="232" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
+  <text x="586" y="518" font-family="Arial, sans-serif" font-size="11" font-weight="700">IMPULSIONADO · POSIÇÃO PAGA IDENTIFICADA</text>
+  <text x="586" y="550" font-family="Arial, sans-serif" font-size="11">Anunciante: Coletivo Horizonte</text>
+  <text x="586" y="590" font-family="Arial, sans-serif" font-size="21" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <text x="586" y="624" font-family="Arial, sans-serif" font-size="12">Online · Gratuita · 18 vagas · região geral</text>
+  <text x="586" y="656" font-family="Arial, sans-serif" font-size="11">Pagamento amplia distribuição; não altera correspondência, ordem ou recomendação.</text>
+  <text x="586" y="690" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Por que estou vendo isto?</text>
+  <text x="850" y="690" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Ocultar na Lista e no Mapa</text>
+  <text x="1100" y="690" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Mais controles</text>
   <text x="1360" y="690" text-anchor="end" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Abrir oportunidade</text>
 
-  <rect x="556" y="750" width="844" height="124" rx="10" fill="#ffffff" stroke="#999999"/>
-  <text x="582" y="782" font-family="Arial, sans-serif" font-size="14" font-weight="700">Próximos resultados orgânicos</text>
-  <text x="582" y="816" font-family="Arial, sans-serif" font-size="11">A unidade paga não reinicia a consulta e não ocupa posição orgânica.</text>
-  <text x="582" y="844" font-family="Arial, sans-serif" font-size="11">Filtro patrocinado é reversível; ocultação preserva Lista, Mapa, busca e filtros orgânicos.</text>
-  <text x="260" y="954" font-family="Arial, sans-serif" font-size="11">Baixa fidelidade · sem algoritmo, campanha real, design final ou implementação.</text>
+  <rect x="560" y="750" width="840" height="128" rx="10" fill="#ffffff" stroke="#999999"/>
+  <text x="586" y="782" font-family="Arial, sans-serif" font-size="14" font-weight="700">Próximos resultados orgânicos</text>
+  <text x="586" y="816" font-family="Arial, sans-serif" font-size="11">A unidade paga não reinicia a consulta nem ocupa posição orgânica.</text>
+  <text x="586" y="844" font-family="Arial, sans-serif" font-size="11">Ocultar ou desativar patrocinados preserva as 8 oportunidades orgânicas e os filtros.</text>
+  <text x="260" y="954" font-family="Arial, sans-serif" font-size="11">Baixa fidelidade · ocultar, preferências, denunciar e contestar permanecem ações distintas.</text>
 </svg>

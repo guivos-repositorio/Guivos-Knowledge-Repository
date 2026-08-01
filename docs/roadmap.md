@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.20.0
-title: Roadmap Arquitetural — Estados Patrocinados de Lista e Mapa Materializados
+id: ROADMAP-12.21.0
+title: Roadmap Arquitetural — Estados Patrocinados de Lista e Mapa Funcionalmente Validados
 status: active
-version: 12.20.0
+version: 12.21.0
 owner: Guivos
 last_updated: 2026-08-01
 supersedes_partial:
-  - ROADMAP-12.19.0
+  - ROADMAP-12.20.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -23,14 +23,15 @@ related:
   - UXA-042
   - UXA-043
   - UXA-044
+  - UXA-045
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.46
+  - M7.47
 ---
 
-# Roadmap Arquitetural — Estados Patrocinados de Lista e Mapa Materializados
+# Roadmap Arquitetural — Estados Patrocinados de Lista e Mapa Funcionalmente Validados
 
 ## 1. Autoridade
 
@@ -41,18 +42,18 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | estados patrocinados de Lista e Mapa do Opportunity Boost materializados | M7.46 |
+| Marco | estados patrocinados de Lista e Mapa funcionalmente validados e reformulados | M7.47 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes para computador validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação | seis wireframes móveis e para computador validados e reformulados | UXA-042; UXA-043 |
-| Lista e Mapa patrocinados | quatro wireframes móveis e para computador criados; validação pendente | UXA-044 |
+| Lista e Mapa patrocinados | quatro wireframes móveis e para computador validados e reformulados | UXA-044; UXA-045 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial | validada em cinco estados | UXA-036; UXA-037 |
-| Mapa | estados orgânicos validados e referências patrocinadas criadas | UXA-024 a UXA-033; UXA-044 |
+| Mapa | estados orgânicos e patrocinados funcionalmente validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -73,7 +74,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 13. wireframes do anunciante funcionalmente validados e reformulados;
 14. cartão patrocinado e explicação materializados em seis wireframes;
 15. cartão patrocinado e explicação funcionalmente validados e reformulados;
-16. estados patrocinados de Lista e Mapa materializados em quatro wireframes.
+16. estados patrocinados de Lista e Mapa materializados em quatro wireframes;
+17. estados patrocinados de Lista e Mapa funcionalmente validados e reformulados.
 
 ## 4. Sequência pessoal vigente
 
@@ -186,9 +188,9 @@ Reformulações confirmadas:
 - denúncia de conteúdo separada de contestação de dados;
 - Boost Social Financiado sem recomendação, autoridade ou acesso a dados protegidos.
 
-### 6.5 Lista e Mapa patrocinados materializados
+### 6.5 Lista e Mapa patrocinados validados
 
-A UXA-044 cria:
+A UXA-044 reformulada e a UXA-045 validam:
 
 ```text
 Lista patrocinada móvel
@@ -197,22 +199,25 @@ Lista patrocinada móvel
 → Mapa patrocinado para computador
 ```
 
-O conjunto demonstra:
+Reformulações confirmadas:
 
 - uma única consulta territorial entre Lista e Mapa;
 - localização opcional, região manual e posição não acessada;
+- contagens orgânicas e pagas separadas;
 - primeiro resultado orgânico anterior ao inventário pago;
 - publicidade fora da ordenação orgânica;
+- filtros de oportunidades distintos da preferência publicitária;
+- alteração da publicidade sem modificação da consulta orgânica;
 - marcador patrocinado textual e estruturalmente distinto;
 - agrupamentos com contagens orgânicas e patrocinadas separadas;
 - marcador pago sem sobreposição de oportunidade orgânica;
-- filtro patrocinado reversível e sincronizado;
+- marcador e cartão selecionados com identificador comum;
+- seleção no Mapa sem mudança da ordem da Lista;
 - proximidade sem equivalência a afinidade ou recomendação;
+- movimentação do Mapa sem consulta automática;
+- gate `Pesquisar nesta área`;
 - baixa oferta orgânica reduzindo publicidade;
-- explicação e controles preservados;
-- ocultação sem redução do catálogo orgânico.
-
-Os quatro wireframes ainda não foram funcionalmente validados.
+- ocultação sincronizada sem redução do catálogo orgânico.
 
 ### 6.6 Preços candidatos preservados
 
@@ -238,6 +243,7 @@ Os quatro wireframes ainda não foram funcionalmente validados.
 - localização e preferências negativas são respeitadas;
 - posição exata e histórico territorial não alimentam publicidade;
 - marcador patrocinado não encobre oportunidade orgânica;
+- movimentação do Mapa não autoriza localização ou nova consulta;
 - baixa oferta orgânica reduz publicidade;
 - acesso financiado não transfere autoridade;
 - impressão, clique, inscrição, atribuição e impacto permanecem eventos distintos;
@@ -249,11 +255,11 @@ Os quatro wireframes ainda não foram funcionalmente validados.
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-044;
-2. criar wireframes de gestão da campanha ativa;
-3. criar wireframe do relatório agregado;
-4. validar funcionalmente o conjunto completo de wireframes;
-5. testar disclosure, densidade, frequência, marcadores e controles.
+1. criar wireframes de gestão da campanha ativa;
+2. criar wireframe do relatório agregado;
+3. validar funcionalmente o conjunto completo de wireframes;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. testar disclosure, densidade, frequência, marcadores, localização e controles.
 
 ### 8.2 Modelo econômico e especialidades
 
