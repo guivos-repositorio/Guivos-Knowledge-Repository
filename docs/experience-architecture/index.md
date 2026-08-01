@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.40.0
+version: 0.41.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 related:
@@ -54,9 +54,10 @@ related:
   - UXA-042
   - UXA-043
   - UXA-044
+  - UXA-045
   - GEM-007-A1
   - GEM-010-A2
-  - M7.46
+  - M7.47
 normative: false
 ---
 
@@ -102,7 +103,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
-| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação dos wireframes](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão e explicação](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md) e [estados patrocinados de Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md) |
+| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação dos wireframes](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão e explicação](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md), [estados patrocinados de Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md) e [validação desses estados](uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -110,15 +111,15 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até os estados patrocinados de Lista e Mapa | UXA-000 a UXA-044 |
+| Arquitetura da Experiência | ativa até a validação dos estados patrocinados de Lista e Mapa | UXA-000 a UXA-045 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
-| Mapa | estados orgânicos móveis e desktop validados; referências patrocinadas criadas | UXA-024 a UXA-033; UXA-044 |
-| Opportunity Boost | experiência, fluxo do anunciante, cartão e explicação validados; Lista e Mapa patrocinados materializados e aguardando validação | UXA-038 a UXA-044 |
+| Mapa | estados orgânicos e patrocinados móveis e desktop funcionalmente validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
+| Opportunity Boost | experiência, fluxo do anunciante, cartão, explicação, Lista e Mapa patrocinados funcionalmente validados e reformulados | UXA-038 a UXA-045 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Início protegido e compreensão
@@ -138,6 +139,8 @@ A validação da transição entre a compreensão e a primeira Tela Hoje ainda n
 `Explorar` organiza descoberta ampla por listas, busca, categorias e filtros gerais.
 
 `Mapa` organiza descoberta territorial e preserva uso sem localização, visualização em Lista, estado sem resultados e referência para computador.
+
+Os estados patrocinados agora preservam a mesma consulta, separam contagens orgânicas e pagas, distinguem filtros de oportunidades e preferência publicitária e exigem `Pesquisar nesta área` antes de atualizar a consulta após movimentação do Mapa.
 
 ## 9. Opportunity Boost
 
@@ -160,16 +163,28 @@ A UXA-042 reformulada e a UXA-043 validam seis referências da experiência da p
 5. cartão móvel de Boost Social Financiado;
 6. explicação móvel de Boost Social Financiado.
 
-A UXA-044 materializa quatro referências territoriais:
+A UXA-044 reformulada e a UXA-045 validam quatro referências territoriais:
 
 1. Lista patrocinada móvel;
 2. Lista patrocinada para computador;
 3. Mapa patrocinado móvel;
 4. Mapa patrocinado para computador.
 
-O novo conjunto demonstra uma única consulta entre Lista e Mapa, primeiro resultado orgânico preservado, inventário pago separado, marcadores e agrupamentos patrocinados próprios, localização opcional, filtro reversível, baixa oferta orgânica reduzindo publicidade e ocultação sem redução do catálogo orgânico.
+O conjunto validado demonstra:
 
-Os quatro wireframes da UXA-044 ainda exigem validação funcional própria.
+- uma única consulta entre Lista e Mapa;
+- contagens orgânicas e pagas separadas;
+- filtros de oportunidades distintos da preferência publicitária;
+- primeiro resultado orgânico preservado;
+- inventário pago fora da ordenação;
+- marcadores e agrupamentos patrocinados próprios;
+- marcador e cartão selecionados com identificador comum;
+- seleção no Mapa sem mudança da ordem da Lista;
+- localização opcional;
+- movimentação do Mapa sem consulta automática;
+- gate `Pesquisar nesta área`;
+- baixa oferta orgânica reduzindo publicidade;
+- ocultação sincronizada sem redução do catálogo orgânico.
 
 Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
 
@@ -189,11 +204,11 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-044;
-2. criar wireframes de gestão da campanha ativa;
-3. criar wireframe do relatório agregado;
-4. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-5. testar disclosure, densidade, frequência, marcadores e controles;
+1. criar wireframes de gestão da campanha ativa;
+2. criar wireframe do relatório agregado;
+3. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. testar disclosure, densidade, frequência, marcadores, localização e controles;
 6. criar a referência móvel da Home;
 7. validar a transição para a primeira Tela Hoje;
 8. criar referência para computador e tablet quando priorizada.
