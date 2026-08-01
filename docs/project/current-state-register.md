@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.72.0
+version: 1.73.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-07-29
+last_updated: 2026-08-01
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -20,6 +20,7 @@ related:
   - UXA-041
   - UXA-042
   - UXA-043
+  - UXA-044
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -30,8 +31,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.19.0
-  - M7.45
+  - ROADMAP-12.20.0
+  - M7.46
 normative: true
 ---
 
@@ -46,17 +47,17 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | cartão patrocinado e explicação do Opportunity Boost funcionalmente validados e reformulados | M7.45; UXA-042; UXA-043 |
+| Marco atual | estados patrocinados de Lista e Mapa do Opportunity Boost materializados | M7.46; UXA-044 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-043 | UXA-000 a UXA-043 |
+| Arquitetura da Experiência | ativa até UXA-044 | UXA-000 a UXA-044 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
-| Mapa e estados | validados, inclusive referência desktop | UXA-024 a UXA-033 |
+| Mapa e estados | estados orgânicos validados; referências patrocinadas móveis e desktop criadas | UXA-024 a UXA-033; UXA-044 |
 | Organizações e Coletivos | fundação, superfícies e relações estabelecidas | UXA-014 a UXA-019 |
 | Planos para Pessoas | Free, Plus e Pro candidatos | GEM-004-A1 |
 | Planos para Coletivos | Livre, Gestão, Impacto e Enterprise candidatos | GEM-004-A1 |
@@ -65,6 +66,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Experiência do Boost | funcionalmente validada e reformulada | UXA-038; UXA-039 |
 | Fluxo do anunciante do Boost | cinco wireframes para computador funcionalmente validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação do Boost | seis wireframes móveis e para computador funcionalmente validados e reformulados | UXA-042; UXA-043 |
+| Lista e Mapa patrocinados | quatro wireframes móveis e para computador criados; validação pendente | UXA-044 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -224,6 +226,32 @@ O conjunto demonstra:
 - preferências reversíveis;
 - financiamento social sem recomendação, autoridade ou acesso a dados protegidos.
 
+### 6.6 Lista e Mapa patrocinados materializados
+
+A UXA-044 cria quatro referências:
+
+1. Lista patrocinada móvel;
+2. Lista patrocinada para computador;
+3. Mapa patrocinado móvel;
+4. Mapa patrocinado para computador.
+
+O conjunto demonstra:
+
+- uma única consulta territorial entre Lista e Mapa;
+- localização opcional, região manual e posição não acessada;
+- primeiro resultado orgânico anterior ao inventário pago;
+- unidade patrocinada fora da ordenação orgânica;
+- marcadores orgânicos circulares e patrocinados quadrados com rótulo textual;
+- agrupamentos com contagens orgânicas e patrocinadas separadas;
+- marcador patrocinado sem sobreposição de oportunidade orgânica;
+- filtro patrocinado sincronizado e reversível;
+- proximidade sem equivalência a afinidade ou recomendação;
+- baixa oferta orgânica reduzindo publicidade;
+- explicação e controles equivalentes aos demais cartões patrocinados;
+- ocultação preservando busca, filtros, Lista, Mapa e catálogo orgânico.
+
+Os quatro artefatos ainda exigem validação funcional própria.
+
 ## 7. Proteções vigentes
 
 - gratuito permanece útil;
@@ -235,8 +263,9 @@ O conjunto demonstra:
 - compreensão inicial, Momento Atual e Próximo Passo não são usados para segmentação;
 - preferência de ocultação não pode ser contornada;
 - ausência de inventário orgânico não aumenta densidade publicitária;
+- marcador patrocinado não encobre oportunidade orgânica;
+- localização permanece opcional e não alimenta histórico publicitário sensível;
 - patrocinador ou financiador não recebe autoridade indevida;
-- localização permanece opcional;
 - cancelamento e retorno ao gratuito permanecem protegidos;
 - Engenharia de Produto permanece pausada.
 
@@ -244,7 +273,7 @@ O conjunto demonstra:
 
 Não foram concluídos:
 
-- estados patrocinados para Lista e Mapa;
+- validação funcional dos quatro wireframes da UXA-044;
 - wireframes de gestão da campanha ativa;
 - wireframe do relatório agregado;
 - validação do conjunto completo de wireframes;
@@ -256,6 +285,7 @@ Não foram concluídos:
 - cancelamento, devolução e disputa finais;
 - algoritmo de entrega;
 - perfil publicitário ou uso real de dados;
+- tecnologia cartográfica, geocodificação ou rastreamento;
 - checkout, gateway, faturamento ou cobrança;
 - design, protótipo ou testes;
 - piloto ou produção;
@@ -265,12 +295,11 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar estados patrocinados para Lista e Mapa;
-2. validar funcionalmente e reformular esses estados;
-3. criar wireframes de gestão da campanha ativa;
-4. criar wireframe do relatório agregado;
-5. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-6. validar preços, orçamentos e disposição a pagar;
-7. definir política especializada de publicidade e categorias;
-8. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
-9. retomar independentemente os testes dos Resultados Empresariais.
+1. validar funcionalmente e reformular os wireframes da UXA-044;
+2. criar wireframes de gestão da campanha ativa;
+3. criar wireframe do relatório agregado;
+4. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
+5. validar preços, orçamentos e disposição a pagar;
+6. definir política especializada de publicidade e categorias;
+7. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
+8. retomar independentemente os testes dos Resultados Empresariais.
