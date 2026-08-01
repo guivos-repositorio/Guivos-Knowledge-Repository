@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.25.0
+version: 0.26.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-000
@@ -41,6 +41,7 @@ related:
   - UXA-042
   - UXA-043
   - UXA-044
+  - UXA-045
   - PAS-001
 normative: false
 ---
@@ -91,7 +92,7 @@ Página Inicial pública
 18. cartão patrocinado e explicação de distribuição — UXA-042;
 19. validação e reformulação do cartão e da explicação — UXA-043;
 20. estados patrocinados para Lista e Mapa — UXA-044;
-21. validação dos estados patrocinados de Lista e Mapa — pendente;
+21. validação e reformulação dos estados patrocinados — UXA-045;
 22. gestão ativa e relatório do Boost — pendentes.
 
 ## 4. Natureza dos artefatos
@@ -189,23 +190,29 @@ A UXA-043 confirmou, após reformulação:
 - ocultação de publicidade sem redução do catálogo orgânico;
 - identificação textual anterior a cor ou iconografia.
 
-### 5.6 Opportunity Boost — Lista e Mapa patrocinados pendentes de validação
+### 5.6 Opportunity Boost — Lista e Mapa patrocinados validados
 
-A UXA-044 deverá ser validada quanto a:
+A UXA-045 confirmou, após reformulação:
 
-- Lista e Mapa representarem a mesma consulta territorial;
-- primeiro resultado orgânico aparecer antes da unidade paga;
-- inventário patrocinado não participar da ordenação orgânica;
-- marcadores orgânicos e patrocinados serem distinguíveis sem depender de cor;
-- agrupamentos separarem contagens orgânicas e patrocinadas;
-- marcador patrocinado não cobrir oportunidade orgânica;
-- localização permanecer opcional;
-- proximidade não ser apresentada como afinidade ou recomendação;
-- filtro patrocinado ser compreensível, sincronizado e reversível;
-- ocultação preservar busca, filtros, Lista, Mapa e catálogo orgânico;
-- pouca oferta orgânica reduzir publicidade;
-- explicação e controles permanecerem acessíveis nos dois modos;
-- alternância entre Lista e Mapa preservar seleção e privacidade.
+- Lista e Mapa representam a mesma consulta territorial;
+- resultados orgânicos e unidades pagas possuem contagens separadas;
+- primeiro resultado orgânico aparece antes da unidade paga na Lista;
+- inventário patrocinado não participa da ordenação orgânica;
+- filtros de oportunidades e preferência publicitária são áreas distintas;
+- alterar publicidade não modifica região, busca, filtros ou quantidade orgânica;
+- marcadores orgânicos e patrocinados são distinguíveis sem depender de cor;
+- agrupamentos separam contagens orgânicas e patrocinadas;
+- marcador patrocinado não cobre oportunidade orgânica;
+- marcador e cartão selecionados compartilham o mesmo identificador;
+- selecionar no Mapa não altera a ordem da Lista;
+- localização permanece opcional;
+- proximidade, distância e seleção não representam afinidade ou recomendação;
+- mover o Mapa não executa nova consulta automaticamente;
+- `Pesquisar nesta área` exige decisão explícita;
+- ocultação sincronizada preserva busca, filtros, Lista, Mapa e catálogo orgânico;
+- pouca oferta orgânica reduz publicidade;
+- ocultação, preferência, denúncia e contestação possuem escopos próprios;
+- alternância entre Lista e Mapa preserva seleção e privacidade.
 
 Os próximos artefatos deverão ainda demonstrar:
 
@@ -251,7 +258,9 @@ Os próximos artefatos deverão ainda demonstrar:
 | espaço patrocinado delimitado | distribuição paga sem integração silenciosa ao ranking orgânico |
 | círculo com identificador O | marcador de oportunidade orgânica |
 | quadrado com identificador P | marcador de oportunidade patrocinada |
+| texto `selecionado` | vínculo explícito entre marcador e cartão |
 | agrupamento textual | contagens orgânicas e patrocinadas separadas |
+| gate `Pesquisar nesta área` | nova consulta territorial somente após ação explícita |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -270,7 +279,7 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Fluxo do anunciante do Opportunity Boost — cinco estados | web para computador | 1.440 × 1.024 cada |
 | Cartão e explicação padrão | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Boost Social Financiado — cartão e explicação | aplicativo móvel | 390 × 844 cada |
-| Lista e Mapa patrocinados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
+| Lista e Mapa patrocinados reformulados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Gestão ativa e relatório do Boost | computador e aplicativo móvel | pendentes |
 
 ## 8. Relação entre os wireframes
@@ -316,7 +325,8 @@ oportunidade aprovada e ativa
 | Validação do fluxo do anunciante | UXA-041 | painel institucional | validação funcional especializada |
 | Cartão e explicação patrocinados | UXA-042 | Explorar e experiência da pessoa | seis arquivos vetoriais reformulados |
 | Validação do cartão e explicação | UXA-043 | participante | validação funcional especializada |
-| Lista e Mapa patrocinados | UXA-044 | Mapa e Lista territorial | quatro arquivos vetoriais |
+| Lista e Mapa patrocinados | UXA-044 | Mapa e Lista territorial | quatro arquivos vetoriais reformulados |
+| Validação da Lista e do Mapa patrocinados | UXA-045 | participante | validação funcional especializada |
 
 ## 10. Resultados validados e materializados
 
@@ -330,7 +340,7 @@ A UXA-038 a UXA-041 demonstram experiência funcional governada e fluxo inicial 
 
 A UXA-042 reformulada e a UXA-043 demonstram cartão, explicação, controles e variação social funcionalmente válidos, com publicidade identificada, orgânico preservado, critérios protegidos excluídos e autonomia sem perda do catálogo orgânico.
 
-A UXA-044 materializa Lista e Mapa patrocinados em móvel e computador, ainda sem validação funcional própria.
+A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcionalmente válidos em móvel e computador, com contagens separadas, preferências distintas dos filtros, seleção sem alteração da ordem e consulta territorial atualizada somente por ação explícita.
 
 ## 11. Limites
 
@@ -340,10 +350,10 @@ Este programa não define marca, tecnologia, autenticação, armazenamento, IA, 
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os wireframes da UXA-044;
-2. criar wireframes de gestão da campanha ativa;
-3. criar wireframe do relatório agregado;
-4. validar funcionalmente o conjunto completo do Opportunity Boost;
+1. criar wireframes de gestão da campanha ativa;
+2. criar wireframe do relatório agregado;
+3. validar funcionalmente o conjunto completo do Opportunity Boost;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
 5. criar a referência móvel da Home;
 6. validar a transição para a primeira Tela Hoje;
 7. criar estados especializados de processamento, pausa, falha e retomada;
