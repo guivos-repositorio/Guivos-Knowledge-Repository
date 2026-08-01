@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Cartão patrocinado móvel do Opportunity Boost</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com primeiro resultado orgânico preservado, espaço patrocinado identificado, anunciante, gratuidade, explicação e controles.</desc>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com primeiro resultado orgânico preservado, espaço patrocinado identificado, anunciante, gratuidade, explicação e controles com escopo visível.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="38" font-family="Arial, sans-serif" font-size="12" fill="#555555">EXPLORAR</text>
@@ -27,13 +27,13 @@
   <text x="38" y="596" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Por que estou vendo isto?</text>
   <text x="352" y="596" text-anchor="end" font-family="Arial, sans-serif" font-size="11" text-decoration="underline">Abrir oportunidade</text>
   <line x1="38" y1="618" x2="352" y2="618" stroke="#aaaaaa"/>
-  <text x="38" y="644" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ocultar esta campanha</text>
-  <text x="352" y="644" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Mais opções</text>
+  <text x="38" y="644" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Ocultar esta campanha · só este anúncio</text>
+  <text x="352" y="644" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Controles do anúncio</text>
 
   <rect x="20" y="690" width="350" height="94" rx="8" fill="#ffffff" stroke="#999999"/>
   <text x="38" y="718" font-family="Arial, sans-serif" font-size="11" font-weight="700">Regras preservadas</text>
   <text x="38" y="742" font-family="Arial, sans-serif" font-size="10">O anúncio não altera a ordem orgânica.</text>
-  <text x="38" y="762" font-family="Arial, sans-serif" font-size="10">Ocultar publicidade não reduz o catálogo orgânico.</text>
+  <text x="38" y="762" font-family="Arial, sans-serif" font-size="10">Preferências podem ser revisadas e desfeitas.</text>
 
   <text x="20" y="820" font-family="Arial, sans-serif" font-size="10">Hoje · Jornada · Explorar · Mapa · Eu</text>
 </svg>
