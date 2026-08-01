@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.18.0
-title: Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Materializados
+id: ROADMAP-12.19.0
+title: Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Validados
 status: active
-version: 12.18.0
+version: 12.19.0
 owner: Guivos
 last_updated: 2026-07-29
 supersedes_partial:
-  - ROADMAP-12.17.0
+  - ROADMAP-12.18.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -21,14 +21,15 @@ related:
   - UXA-040
   - UXA-041
   - UXA-042
+  - UXA-043
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.44
+  - M7.45
 ---
 
-# Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Materializados
+# Roadmap Arquitetural — Cartão Patrocinado e Explicação do Opportunity Boost Validados
 
 ## 1. Autoridade
 
@@ -39,11 +40,11 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | cartão patrocinado e explicação do Opportunity Boost materializados | M7.44 |
+| Marco | cartão patrocinado e explicação do Opportunity Boost funcionalmente validados e reformulados | M7.45 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes para computador validados e reformulados | UXA-040; UXA-041 |
-| Cartão e explicação | seis wireframes móveis e para computador criados; validação pendente | UXA-042 |
+| Cartão e explicação | seis wireframes móveis e para computador validados e reformulados | UXA-042; UXA-043 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -68,7 +69,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 11. experiência do Opportunity Boost validada e reformulada;
 12. fluxo do anunciante materializado em cinco wireframes de baixa fidelidade;
 13. wireframes do anunciante funcionalmente validados e reformulados;
-14. cartão patrocinado e explicação materializados em seis wireframes.
+14. cartão patrocinado e explicação materializados em seis wireframes;
+15. cartão patrocinado e explicação funcionalmente validados e reformulados.
 
 ## 4. Sequência pessoal vigente
 
@@ -155,9 +157,9 @@ Reformulações confirmadas:
 - confirmações inicialmente desmarcadas;
 - cancelamento da avaliação com retorno ao rascunho e histórico preservado.
 
-### 6.4 Cartão e explicação materializados
+### 6.4 Cartão e explicação validados
 
-A UXA-042 cria:
+A UXA-042 reformulada e a UXA-043 validam:
 
 ```text
 cartão patrocinado móvel
@@ -168,20 +170,18 @@ cartão patrocinado móvel
 → explicação social financiada móvel
 ```
 
-O conjunto demonstra:
+Reformulações confirmadas:
 
-- primeiro resultado orgânico preservado;
+- primeiro resultado orgânico materializado antes do anúncio padrão e social;
 - natureza paga anterior ao conteúdo;
-- anunciante ou financiador identificado;
+- anunciante, financiador e beneficiário identificados;
 - preço ou gratuidade visível;
 - publicidade separada de recomendação;
-- critérios gerais utilizados;
-- critérios protegidos e contextos pessoais excluídos;
-- controles reversíveis;
-- denúncia e contestação separadas;
-- Boost Social Financiado sem transferência de autoridade.
-
-Os seis wireframes ainda não foram funcionalmente validados.
+- critérios gerais utilizados e dados protegidos excluídos;
+- correspondência orgânica e distribuição paga separadas quando coexistirem;
+- ocultação, redução, desativação e reversão com efeitos próprios;
+- denúncia de conteúdo separada de contestação de dados;
+- Boost Social Financiado sem recomendação, autoridade ou acesso a dados protegidos.
 
 ### 6.5 Preços candidatos preservados
 
@@ -216,8 +216,8 @@ Os seis wireframes ainda não foram funcionalmente validados.
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-042;
-2. criar estados patrocinados para Lista e Mapa;
+1. criar estados patrocinados para Lista e Mapa;
+2. validar funcionalmente e reformular esses estados;
 3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar funcionalmente o conjunto completo de wireframes;

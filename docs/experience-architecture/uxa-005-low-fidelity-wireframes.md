@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.23.0
+version: 0.24.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-07-29
 parent: UXA-000
@@ -39,6 +39,7 @@ related:
   - UXA-040
   - UXA-041
   - UXA-042
+  - UXA-043
   - PAS-001
 normative: false
 ---
@@ -87,7 +88,7 @@ Página Inicial pública
 16. wireframes do fluxo do anunciante do Opportunity Boost — UXA-040;
 17. validação e reformulação dos wireframes do anunciante — UXA-041;
 18. cartão patrocinado e explicação de distribuição — UXA-042;
-19. validação do cartão e da explicação — pendente de autorização própria;
+19. validação e reformulação do cartão e da explicação — UXA-043;
 20. Lista, Mapa, gestão ativa e relatório do Boost — pendentes.
 
 ## 4. Natureza dos artefatos
@@ -163,18 +164,19 @@ A UXA-041 confirmou, após reformulação:
 - envio para avaliação sem entrega;
 - cancelamento com retorno ao rascunho e histórico preservado.
 
-### 5.5 Opportunity Boost — cartão e explicação pendentes de validação
+### 5.5 Opportunity Boost — cartão e explicação validados
 
-A UXA-042 deverá ser validada quanto a:
+A UXA-043 confirmou, após reformulação:
 
 - natureza patrocinada reconhecível antes do conteúdo;
-- primeiro resultado orgânico realmente preservado;
+- primeiro resultado orgânico materializado antes do anúncio padrão e social;
 - anunciante, financiador e beneficiário compreensíveis;
 - preço ou gratuidade visíveis;
 - publicidade distinguível de recomendação;
-- critérios utilizados explicados sem linguagem técnica excessiva;
+- critérios utilizados apresentados como gerais e objetivos;
 - critérios protegidos e contextos pessoais explicitamente excluídos;
 - ausência de lista de visualizadores;
+- coexistência entre correspondência orgânica e distribuição paga explicada separadamente;
 - ocultação da campanha com escopo conhecido;
 - `Mostrar menos deste tipo` separado de desativação total;
 - preferências revisáveis e reversíveis;
@@ -182,9 +184,9 @@ A UXA-042 deverá ser validada quanto a:
 - contestação de dados separada de denúncia de conteúdo;
 - Boost Social Financiado sem transferência de autoridade;
 - ocultação de publicidade sem redução do catálogo orgânico;
-- acessibilidade textual anterior a cor ou iconografia.
+- identificação textual anterior a cor ou iconografia.
 
-Os próximos artefatos deverão ainda demonstrar:
+Os próximos artefatos deverão demonstrar:
 
 - estados patrocinados próprios para Lista e Mapa;
 - redução da publicidade quando faltar inventário orgânico;
@@ -199,7 +201,7 @@ Os próximos artefatos deverão ainda demonstrar:
 - Compartilhamento mínimo não é tratado como insuficiência pessoal?
 - Recusar localização preserva o uso do Mapa?
 - Ocultar publicidade preserva o catálogo orgânico?
-- Denúncia e preferência são tratadas como ações distintas?
+- Denúncia, contestação e preferência são tratadas como ações distintas?
 - O anunciante pode salvar rascunho, voltar e cancelar com efeito conhecido?
 
 ### 5.7 Continuidade
@@ -288,7 +290,8 @@ oportunidade aprovada e ativa
 | Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
 | Fluxo do anunciante | UXA-040 | painel institucional | cinco arquivos vetoriais reformulados |
 | Validação do fluxo do anunciante | UXA-041 | painel institucional | validação funcional especializada |
-| Cartão e explicação patrocinados | UXA-042 | Explorar e experiência da pessoa | seis arquivos vetoriais |
+| Cartão e explicação patrocinados | UXA-042 | Explorar e experiência da pessoa | seis arquivos vetoriais reformulados |
+| Validação do cartão e explicação | UXA-043 | participante | validação funcional especializada |
 
 ## 10. Resultados validados e materializados
 
@@ -300,7 +303,7 @@ A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, af
 
 A UXA-038 a UXA-041 demonstram experiência funcional governada e fluxo inicial do anunciante validado, com elegibilidade explicável, critérios explícitos, base coerente, orgânico anterior ao anúncio, confirmação afirmativa e cancelamento compreensível.
 
-A UXA-042 materializa cartão, explicação, controles e variação social, ainda sem validação funcional própria.
+A UXA-042 reformulada e a UXA-043 demonstram cartão, explicação, controles e variação social funcionalmente válidos, com publicidade identificada, orgânico preservado, critérios protegidos excluídos e autonomia sem perda do catálogo orgânico.
 
 ## 11. Limites
 
@@ -310,8 +313,8 @@ Este programa não define marca, tecnologia, autenticação, armazenamento, IA, 
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os wireframes da UXA-042;
-2. criar estados patrocinados para Lista e Mapa;
+1. criar estados patrocinados para Lista e Mapa;
+2. validar funcionalmente e reformular esses estados;
 3. criar wireframes de gestão da campanha ativa;
 4. criar wireframe do relatório agregado;
 5. validar funcionalmente o conjunto completo do Opportunity Boost;

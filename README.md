@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.44 — Cartão Patrocinado e Explicação do Opportunity Boost Materializados |
+| Marco | M7.45 — Cartão Patrocinado e Explicação do Opportunity Boost Funcionalmente Validados e Reformulados |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | 18 decisões humanas; zero Resultados canônicos |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos |
@@ -19,7 +19,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Opportunity Boost | add-on publicitário separado dos planos |
 | Experiência do Boost | validada e reformulada |
 | Fluxo do anunciante | cinco wireframes para computador validados e reformulados |
-| Cartão e explicação | seis wireframes móveis e para computador criados; validação pendente |
+| Cartão e explicação | seis wireframes móveis e para computador validados e reformulados |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; cobrança não autorizada |
 | Home, início e compreensão | funcionalmente validados |
@@ -97,9 +97,9 @@ A UXA-040 reformulada e a UXA-041 validam cinco wireframes para computador:
 
 A reformulação distingue condições atendidas, limitadas e bloqueadas; torna critérios explícitos; reconcilia CPC com objetivo de clique; coloca o primeiro resultado orgânico antes do anúncio; e define cancelamento com retorno ao rascunho.
 
-### Cartão patrocinado e explicação materializados
+### Cartão patrocinado e explicação validados
 
-A UXA-042 cria seis wireframes:
+A UXA-042 reformulada e a UXA-043 validam seis wireframes:
 
 1. cartão patrocinado móvel;
 2. explicação patrocinada móvel;
@@ -108,9 +108,9 @@ A UXA-042 cria seis wireframes:
 5. cartão móvel de Boost Social Financiado;
 6. explicação móvel de Boost Social Financiado.
 
-O conjunto apresenta natureza comercial antes do conteúdo, primeiro resultado orgânico preservado, anunciante ou financiador identificado, critérios utilizados e excluídos, controles reversíveis e financiamento social sem transferência de autoridade.
+O conjunto apresenta natureza comercial antes do conteúdo, primeiro resultado orgânico antes do anúncio padrão e social, anunciante ou financiador identificado, critérios utilizados e excluídos, correspondência orgânica separada quando existir, controles com escopos próprios, denúncia e contestação distintas e financiamento social sem recomendação ou transferência de autoridade.
 
-Os seis artefatos ainda exigem validação funcional. Nenhuma campanha, cobrança ou entrega foi iniciada.
+Nenhuma campanha, cobrança ou entrega foi iniciada.
 
 ### Regras centrais
 
@@ -160,8 +160,8 @@ Página Inicial pública
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- validação funcional e reformulação dos wireframes da UXA-042;
 - estados patrocinados para Lista e Mapa;
+- validação funcional e reformulação desses estados;
 - wireframes de gestão da campanha ativa;
 - wireframe do relatório agregado;
 - validação funcional do conjunto completo;
@@ -190,8 +190,9 @@ Nenhum movimento é automático. Após integração e nova autorização, poder�
 - [Wireframes do Fluxo do Anunciante](docs/experience-architecture/uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md)
 - [Validação dos Wireframes do Anunciante](docs/experience-architecture/uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md)
 - [Cartão Patrocinado e Explicação](docs/experience-architecture/uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md)
-- [Adendo Canônico da UXA-042](docs/project/canonical-consolidation-matrix-uxa-042-addendum.md)
-- [Histórico 1.66.0](docs/project/changelog-1.66.0-uxa-042.md)
+- [Validação do Cartão e Explicação](docs/experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md)
+- [Adendo Canônico da UXA-043](docs/project/canonical-consolidation-matrix-uxa-043-addendum.md)
+- [Histórico 1.67.0](docs/project/changelog-1.67.0-uxa-043.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Documentação completa](docs/index.md)
