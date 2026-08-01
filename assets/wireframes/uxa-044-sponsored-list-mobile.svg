@@ -1,45 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Lista patrocinada móvel do Opportunity Boost</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade da Lista territorial do Mapa, com primeiro resultado orgânico preservado, espaço patrocinado separado, controles e localização opcional.</desc>
+  <title id="title">Lista patrocinada móvel reformulada do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel reformulado da Lista territorial, com contagens orgânicas e pagas separadas, preferência publicitária distinta dos filtros e primeiro resultado orgânico preservado.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
-  <text x="20" y="34" font-family="Arial, sans-serif" font-size="11">MAPA › LISTA TERRITORIAL</text>
-  <text x="20" y="64" font-family="Arial, sans-serif" font-size="22" font-weight="700">Oportunidades na região</text>
-  <text x="20" y="88" font-family="Arial, sans-serif" font-size="10">Mesma consulta do Mapa · Agindo como: Pessoa</text>
-  <rect x="20" y="104" width="350" height="48" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="36" y="133" font-family="Arial, sans-serif" font-size="11">Buscar nesta região</text>
-  <text x="20" y="178" font-family="Arial, sans-serif" font-size="10">Região manual: Belo Horizonte · posição não acessada</text>
-  <text x="20" y="200" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Alterar região</text>
-  <text x="144" y="200" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Privacidade</text>
-  <rect x="250" y="174" width="120" height="32" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="310" y="194" text-anchor="middle" font-family="Arial, sans-serif" font-size="10">Patrocinados: sim</text>
-  <text x="20" y="232" font-family="Arial, sans-serif" font-size="10">8 resultados · 4 filtros · ordenação orgânica preservada</text>
+  <text x="20" y="32" font-family="Arial, sans-serif" font-size="10">MAPA › LISTA TERRITORIAL · MESMA CONSULTA</text>
+  <text x="20" y="62" font-family="Arial, sans-serif" font-size="21" font-weight="700">Oportunidades na região</text>
+  <text x="20" y="86" font-family="Arial, sans-serif" font-size="10">Agindo como: Pessoa · exploração geral</text>
+  <rect x="20" y="100" width="350" height="44" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="127" font-family="Arial, sans-serif" font-size="11">Buscar nesta região</text>
+  <text x="20" y="168" font-family="Arial, sans-serif" font-size="10">Região manual: Belo Horizonte · posição não acessada</text>
+  <text x="20" y="190" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Alterar região</text>
+  <text x="132" y="190" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Privacidade</text>
+  <text x="232" y="168" font-family="Arial, sans-serif" font-size="9" font-weight="700">PREFERÊNCIA PUBLICITÁRIA</text>
+  <rect x="232" y="176" width="138" height="30" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="301" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Patrocinados: exibidos</text>
+  <text x="20" y="226" font-family="Arial, sans-serif" font-size="10">8 oportunidades orgânicas · 1 patrocinada exibida · 4 filtros</text>
 
-  <rect x="20" y="252" width="350" height="132" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="36" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="700">PRIMEIRO RESULTADO ORGÂNICO</text>
-  <text x="36" y="306" font-family="Arial, sans-serif" font-size="15" font-weight="700">Oficina aberta de planejamento local</text>
-  <text x="36" y="330" font-family="Arial, sans-serif" font-size="10">Organização Exemplo · Presencial · Gratuita</text>
-  <text x="36" y="352" font-family="Arial, sans-serif" font-size="10">Origem: busca, região e filtros · sem patrocínio</text>
-  <text x="36" y="374" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Por que aparece aqui?</text>
+  <rect x="20" y="244" width="350" height="130" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="36" y="270" font-family="Arial, sans-serif" font-size="10" font-weight="700">1º RESULTADO ORGÂNICO</text>
+  <text x="36" y="298" font-family="Arial, sans-serif" font-size="15" font-weight="700">Oficina aberta de planejamento local</text>
+  <text x="36" y="322" font-family="Arial, sans-serif" font-size="10">Organização Exemplo · Presencial · Gratuita</text>
+  <text x="36" y="344" font-family="Arial, sans-serif" font-size="10">Busca, região e filtros · sem patrocínio</text>
+  <text x="36" y="366" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Por que aparece aqui?</text>
 
-  <text x="20" y="414" font-family="Arial, sans-serif" font-size="10" font-weight="700">ESPAÇO PUBLICITÁRIO SEPARADO</text>
-  <rect x="20" y="428" width="350" height="192" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
-  <text x="36" y="454" font-family="Arial, sans-serif" font-size="10" font-weight="700">IMPULSIONADO · CONTEÚDO PAGO</text>
-  <text x="36" y="478" font-family="Arial, sans-serif" font-size="10">Anunciante: Coletivo Horizonte</text>
-  <text x="36" y="508" font-family="Arial, sans-serif" font-size="15" font-weight="700">Formação gratuita em gestão comunitária</text>
-  <text x="36" y="532" font-family="Arial, sans-serif" font-size="10">Online · Gratuita · 18 vagas · região geral</text>
-  <text x="36" y="554" font-family="Arial, sans-serif" font-size="10">Posição paga. Não é recomendação nem altera a ordem orgânica.</text>
-  <text x="36" y="582" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Por que estou vendo isto?</text>
-  <text x="354" y="582" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir oportunidade</text>
-  <text x="36" y="606" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ocultar só esta campanha</text>
-  <text x="354" y="606" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Controles do anúncio</text>
+  <text x="20" y="404" font-family="Arial, sans-serif" font-size="10" font-weight="700">ESPAÇO PUBLICITÁRIO SEPARADO DA LISTA ORGÂNICA</text>
+  <rect x="20" y="416" width="350" height="194" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
+  <text x="36" y="442" font-family="Arial, sans-serif" font-size="10" font-weight="700">IMPULSIONADO · CONTEÚDO PAGO</text>
+  <text x="36" y="466" font-family="Arial, sans-serif" font-size="10">Anunciante: Coletivo Horizonte</text>
+  <text x="36" y="496" font-family="Arial, sans-serif" font-size="15" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <text x="36" y="520" font-family="Arial, sans-serif" font-size="10">Online · Gratuita · 18 vagas · região geral</text>
+  <text x="36" y="542" font-family="Arial, sans-serif" font-size="9">Posição paga; não altera correspondência ou ordem orgânica.</text>
+  <text x="36" y="570" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Por que estou vendo isto?</text>
+  <text x="354" y="570" text-anchor="end" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Abrir oportunidade</text>
+  <text x="36" y="596" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Ocultar esta campanha na Lista e no Mapa</text>
+  <text x="354" y="596" text-anchor="end" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Mais controles</text>
 
-  <rect x="20" y="646" width="350" height="106" rx="8" fill="#ffffff" stroke="#999999"/>
-  <text x="36" y="672" font-family="Arial, sans-serif" font-size="11" font-weight="700">Próximo resultado orgânico</text>
-  <text x="36" y="698" font-family="Arial, sans-serif" font-size="10">A publicidade não reinicia a consulta nem altera filtros.</text>
-  <text x="36" y="722" font-family="Arial, sans-serif" font-size="10">Pouca oferta orgânica reduz anúncios; nunca aumenta densidade.</text>
-  <text x="36" y="744" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar ao Mapa sem perder contexto</text>
+  <rect x="20" y="634" width="350" height="112" rx="8" fill="#ffffff" stroke="#999999"/>
+  <text x="36" y="660" font-family="Arial, sans-serif" font-size="11" font-weight="700">Próximo resultado orgânico</text>
+  <text x="36" y="686" font-family="Arial, sans-serif" font-size="10">A publicidade não reinicia a consulta nem altera filtros.</text>
+  <text x="36" y="710" font-family="Arial, sans-serif" font-size="10">Pouco inventário orgânico reduz unidades pagas.</text>
+  <text x="36" y="734" font-family="Arial, sans-serif" font-size="10" text-decoration="underline">Voltar ao Mapa com região, filtros e preferência</text>
 
-  <text x="20" y="786" font-family="Arial, sans-serif" font-size="9">Filtro patrocinado é reversível. Catálogo orgânico permanece disponível.</text>
-  <text x="20" y="822" font-family="Arial, sans-serif" font-size="10">Hoje · Jornada · Explorar · Mapa · Eu</text>
+  <text x="20" y="780" font-family="Arial, sans-serif" font-size="9">Desativar patrocinados preserva as 8 oportunidades orgânicas.</text>
+  <text x="20" y="800" font-family="Arial, sans-serif" font-size="9">Ocultar · preferências · denunciar · contestar são ações distintas.</text>
+  <text x="20" y="826" font-family="Arial, sans-serif" font-size="10">Hoje · Jornada · Explorar · Mapa · Eu</text>
 </svg>
