@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.23.0
+version: 5.24.0
 owner: Guivos
-last_updated: 2026-08-01
+last_updated: 2026-08-02
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.25.0
+  - ROADMAP-12.26.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -26,6 +26,7 @@ related:
   - UXA-047
   - UXA-048
   - UXA-049
+  - UXA-050
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -43,6 +44,7 @@ related:
   - M7.49
   - M7.50
   - M7.51
+  - M7.52
 normative: false
 ---
 
@@ -76,38 +78,44 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.48 | Concluído | gestão da campanha ativa materializada |
 | M7.49 | Concluído | gestão da campanha ativa funcionalmente validada e reformulada |
 | M7.50 | Concluído | relatório agregado do Opportunity Boost materializado |
-| M7.51 | Concluído neste incremento | relatório agregado funcionalmente validado e reformulado |
+| M7.51 | Concluído | relatório agregado funcionalmente validado e reformulado |
+| M7.52 | Concluído neste incremento | conjunto completo de wireframes do Opportunity Boost funcionalmente validado |
 
 ## 3. Marco vigente
 
-### Relatório Agregado Funcionalmente Validado e Reformulado — M7.51
+### Conjunto Completo de Wireframes do Opportunity Boost Funcionalmente Validado — M7.52
 
 Critérios atendidos:
 
-- UXA-048 elevada para 0.2.0;
-- UXA-049 criada como validação funcional especializada;
-- quatro arquivos vetoriais para computador e aplicativo móvel reformulados;
-- entrega, interação, atribuição candidata e autorrelato preservados como camadas independentes;
-- proveniência e estado apresentados junto de cada camada;
-- `não disponível`, `não exibido por agregação` e zero separados;
-- gate de agregação e supressão materializado sem definir limiar final;
-- atribuição reformulada em agregados por tipo de evento;
-- nenhuma linha representando pessoa ou sequência individual;
-- versão da regra candidata vinculada ao período consultado;
-- associação candidata patrocinada, origem orgânica e origem indeterminada preservadas;
-- dupla atribuição silenciosa proibida;
-- autorrelato identificado como declarado e não verificado automaticamente;
-- quantidade declarada sujeita a supressão;
-- reconciliação separada por tipo e unidade de evento;
-- estados provisório, em revisão, parcialmente reconciliado e reconciliado separados;
-- saldo, crédito, estorno e devolução mantidos como candidatos;
-- causalidade, conversão e impacto humano não inferidos;
-- política final de atribuição, agregação, reconciliação e saldo não definida;
+- UXA-050 criada como validação funcional transversal;
+- 25 wireframes examinados em cinco pacotes funcionais;
+- nenhuma contradição visual bloqueante identificada;
+- identidade única da campanha consolidada;
+- versão aprovada vinculada a eventos, histórico e relatório;
+- alteração material impedindo entrega desatualizada sem reescrever eventos anteriores;
+- autoridade transversal das transições de estado estabelecida;
+- configuração e aprovação sem entrega automática;
+- continuidade material entre prévia e unidade entregue;
+- Lista e Mapa preservando a mesma consulta;
+- preferência negativa prevalecendo sobre entrega contratada;
+- controles da pessoa sem identificação para o anunciante;
+- separação orgânica e patrocinada preservada até atribuição e relatório;
+- identidade contínua do Boost Social Financiado;
+- orçamento, saldo e reconciliação sem promessa financeira;
+- quatro camadas de mensuração preservadas;
+- histórico funcional e versão da regra candidata consolidados;
+- matriz de cobertura por canal registrada;
+- configuração e gestão móveis mantidas como lacunas conhecidas;
+- arquivos vetoriais preservados sem alteração;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Relatório Agregado Funcionalmente Validado e Reformulado — M7.51
+
+A UXA-048 reformulada e a UXA-049 permanecem como autoridades do relatório agregado.
 
 ### Relatório Agregado do Opportunity Boost Materializado — M7.50
 
@@ -181,7 +189,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-049; relatório agregado funcionalmente validado |
+| Arquitetura da Experiência | ativa até UXA-050; 25 wireframes do Boost validados transversalmente |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -189,12 +197,13 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-### Telas do Opportunity Boost
+### Estados residuais e protótipo
 
-1. validação funcional do conjunto completo de wireframes;
-2. estados móveis adicionais de gestão, se priorizados;
+1. definição do próximo pacote residual do Opportunity Boost;
+2. configuração e gestão móvel, se priorizadas;
 3. estados de erro, inventário insuficiente e preferência publicitária;
-4. testes posteriores de relatório, atribuição, autorrelato, agregação, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+4. protocolo de protótipo de baixa ou média fidelidade;
+5. plano de teste com Pessoas, Organizações e Coletivos.
 
 ### Modelo econômico e especialidades
 
