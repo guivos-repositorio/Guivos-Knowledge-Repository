@@ -2,9 +2,9 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.30.0
+version: 0.31.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-01
+last_updated: 2026-08-02
 parent: UXA-000
 related:
   - UXA-001
@@ -46,6 +46,7 @@ related:
   - UXA-047
   - UXA-048
   - UXA-049
+  - UXA-050
   - PAS-001
 normative: false
 ---
@@ -100,7 +101,8 @@ Página Inicial pública
 22. gestão da campanha ativa — UXA-046;
 23. validação e reformulação da gestão da campanha ativa — UXA-047;
 24. relatório agregado — UXA-048;
-25. validação e reformulação do relatório agregado — UXA-049.
+25. validação e reformulação do relatório agregado — UXA-049;
+26. validação transversal do conjunto completo do Opportunity Boost — UXA-050.
 
 ## 4. Natureza dos artefatos
 
@@ -232,8 +234,7 @@ A UXA-047 confirmou, após reformulação:
 - cancelamento bloqueado até motivo e confirmações completas;
 - estados finais e reconciliação distinguíveis;
 - histórico e registro operacional preservados;
-- saldo mantido como candidato, não como devolução confirmada;
-- relatório agregado explicitamente ainda não criado.
+- saldo mantido como candidato, não como devolução confirmada.
 
 ### 5.8 Opportunity Boost — relatório agregado validado
 
@@ -262,7 +263,27 @@ A UXA-049 confirmou, após reformulação:
 - conversão, causalidade e impacto humano não inferidos;
 - versão móvel preservando hierarquia, proveniência, linguagem e limites.
 
-### 5.9 Autonomia
+### 5.9 Opportunity Boost — conjunto completo validado transversalmente
+
+A UXA-050 confirma:
+
+- 25 wireframes formando um percurso único;
+- identidade da campanha preservada entre configuração, entrega, gestão e relatório;
+- versão aprovada vinculada aos eventos correspondentes;
+- alteração material sem reescrita do histórico;
+- autoridade única das transições de estado;
+- configuração e aprovação sem início automático de entrega;
+- prévia e unidade entregue materialmente compatíveis;
+- Lista e Mapa mantendo a mesma consulta;
+- controles da pessoa sem identificação ou lista para o anunciante;
+- preferência negativa prevalecendo sobre entrega contratada;
+- orgânico e patrocinado separados até atribuição e relatório;
+- identidade contínua do Boost Social Financiado;
+- orçamento, saldo e reconciliação sem promessa financeira;
+- histórico funcional e versão da regra candidata preservados;
+- configuração e gestão móveis explicitamente ainda não materializadas.
+
+### 5.10 Autonomia
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
 - Recusar localização preserva o Mapa?
@@ -271,8 +292,9 @@ A UXA-049 confirmou, após reformulação:
 - O anunciante pode pausar, retomar ou cancelar com efeito conhecido?
 - Alteração material não força confirmação ou nova entrega?
 - O anunciante pode consultar dados ausentes ou suprimidos sem ser induzido a inferir zero ou causa?
+- Preferências negativas prevalecem sobre a entrega contratada?
 
-### 5.10 Continuidade
+### 5.11 Continuidade
 
 - A Home conduz conscientemente ao início protegido?
 - A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
@@ -283,6 +305,7 @@ A UXA-049 confirmou, após reformulação:
 - A campanha programada conduz ao estado ativo somente na condição válida?
 - Pausa, limitação, alteração material e encerramento preservam orçamento e histórico?
 - O encerramento conduz a reconciliação e relatório sem reescrever origens ou prometer devolução?
+- A mesma identidade e versão aprovada permanecem reconhecíveis ao longo do percurso?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -314,6 +337,7 @@ A UXA-049 confirmou, após reformulação:
 | estado `não exibido por agregação` | supressão de contagem sem confirmação individual |
 | regra candidata versionada | método e período preservados no histórico |
 | agregado por tipo de evento | mensuração sem linha ou sequência individual |
+| identidade transversal da campanha | vínculo entre oportunidade, versão, estado, entrega e relatório |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -347,8 +371,10 @@ oportunidade aprovada e ativa
 → envio para avaliação
 → aprovação e programação
 → campanha ativa
+→ cartão | Lista | Mapa patrocinados
+→ explicação e controles
 → limitação | pausa | alteração material
-→ conclusão | cancelamento
+→ conclusão | cancelamento | suspensão
 → reconciliação
 → relatório agregado
 ```
@@ -382,6 +408,7 @@ oportunidade aprovada e ativa
 | Validação da gestão ativa | UXA-047 | painel institucional | validação funcional especializada |
 | Relatório agregado | UXA-048 | painel institucional | quatro arquivos vetoriais reformulados |
 | Validação do relatório agregado | UXA-049 | painel institucional | validação funcional especializada |
+| Validação transversal do conjunto | UXA-050 | anunciante e participante | consolidação funcional de 25 wireframes |
 
 ## 10. Resultados validados e materializados
 
@@ -401,20 +428,26 @@ A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente 
 
 A UXA-048 reformulada e a UXA-049 demonstram relatório agregado funcionalmente válido em quatro estados para computador e móvel.
 
+A UXA-050 demonstra que os 25 wireframes formam um percurso único, com identidade, versão aprovada, estados, controles, origem, histórico, mensuração e cobertura por canal consolidados.
+
 ## 11. Limites
 
 Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, agregação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
+
+Configuração e gestão móveis, estados completos de erro, inventário insuficiente e preferência publicitária permanecem não materializados.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente o conjunto completo do Opportunity Boost;
-2. criar estados móveis adicionais de gestão, se priorizados;
+1. definir o próximo pacote de estados residuais do Opportunity Boost;
+2. criar configuração e gestão móvel, se priorizadas;
 3. criar estados de erro, inventário insuficiente e preferência publicitária;
-4. criar a referência móvel da Home;
-5. validar a transição para a primeira Tela Hoje;
-6. criar referência do início protegido e da compreensão para computador;
-7. criar referência para tablet, caso priorizada.
+4. definir protocolo de protótipo de baixa ou média fidelidade;
+5. preparar plano de teste com Pessoas, Organizações e Coletivos;
+6. criar a referência móvel da Home;
+7. validar a transição para a primeira Tela Hoje;
+8. criar referência do início protegido e da compreensão para computador;
+9. criar referência para tablet, caso priorizada.
 
 Nenhuma etapa posterior é iniciada automaticamente.
