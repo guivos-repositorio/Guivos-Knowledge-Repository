@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Visão geral agregada do relatório do Opportunity Boost para computador</title>
+  <desc id="desc">Wireframe de baixa fidelidade com dados provisórios de entrega, interação, atribuição candidata e autorrelato, separados por camada e período.</desc>
+  <rect width="1440" height="1024" fill="#ffffff"/>
+  <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
+  <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
+  <text x="32" y="48" font-family="Arial" font-size="22" font-weight="700">GUIVOS</text>
+  <text x="32" y="112" font-family="Arial" font-size="14">Oportunidades</text>
+  <text x="32" y="154" font-family="Arial" font-size="14" font-weight="700">Opportunity Boost</text>
+  <text x="32" y="196" font-family="Arial" font-size="14">Campanhas</text>
+  <text x="32" y="238" font-family="Arial" font-size="14">Relatórios</text>
+
+  <text x="260" y="48" font-family="Arial" font-size="11">OPPORTUNITY BOOST › CAMPANHA OB-2048 › RELATÓRIO</text>
+  <text x="260" y="86" font-family="Arial" font-size="28" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <rect x="1170" y="46" width="230" height="48" rx="8" fill="#f3f3f3" stroke="#222222"/>
+  <text x="1285" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">DADOS PROVISÓRIOS</text>
+  <text x="260" y="122" font-family="Arial" font-size="12">Período consultado: 05/08/2026 a 10/08/2026 · atualizado em 10/08/2026 às 18:30</text>
+
+  <rect x="260" y="150" width="1140" height="82" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="286" y="180" font-family="Arial" font-size="13" font-weight="700">Como interpretar este relatório</text>
+  <text x="286" y="207" font-family="Arial" font-size="11">Entrega, interação, atribuição candidata e autorrelato são camadas distintas. Os dados não comprovam causalidade, conversão ou impacto humano.</text>
+
+  <rect x="260" y="258" width="550" height="248" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="292" font-family="Arial" font-size="16" font-weight="700">1. Entrega</text>
+  <text x="286" y="322" font-family="Arial" font-size="10">Distribuição publicitária · dados instrumentados e calculados</text>
+  <text x="286" y="356" font-family="Arial" font-size="12">Orçamento total: R$ 300,00</text>
+  <text x="286" y="384" font-family="Arial" font-size="12">Utilizado: R$ 146,20</text>
+  <text x="286" y="412" font-family="Arial" font-size="12">Saldo não utilizado: R$ 153,80</text>
+  <text x="536" y="356" font-family="Arial" font-size="12">Impressões válidas: 5.840</text>
+  <text x="536" y="384" font-family="Arial" font-size="12">Impressões visíveis: 4.960</text>
+  <text x="536" y="412" font-family="Arial" font-size="12">Frequência média: 1,7</text>
+  <text x="536" y="440" font-family="Arial" font-size="12">Tráfego inválido removido: 31</text>
+  <text x="286" y="478" font-family="Arial" font-size="10">Impressão não equivale a atenção, interesse ou resultado.</text>
+
+  <rect x="850" y="258" width="550" height="248" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="876" y="292" font-family="Arial" font-size="16" font-weight="700">2. Interação</text>
+  <text x="876" y="322" font-family="Arial" font-size="10">Eventos agregados · sem identificação de pessoas</text>
+  <text x="876" y="356" font-family="Arial" font-size="12">Cliques válidos: 128</text>
+  <text x="876" y="384" font-family="Arial" font-size="12">Visualizações do detalhe: 104</text>
+  <text x="876" y="412" font-family="Arial" font-size="12">Salvamentos: 19</text>
+  <text x="1126" y="356" font-family="Arial" font-size="12">Interesses agregados: 12</text>
+  <text x="1126" y="384" font-family="Arial" font-size="12">Inícios de inscrição: 7</text>
+  <text x="1126" y="412" font-family="Arial" font-size="12">Conclusões: não disponível</text>
+  <text x="876" y="450" font-family="Arial" font-size="10">Ausência de instrumentação não é apresentada como zero.</text>
+  <text x="876" y="478" font-family="Arial" font-size="10">Clique não equivale a conversão; início não equivale a conclusão.</text>
+
+  <rect x="260" y="536" width="550" height="222" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="570" font-family="Arial" font-size="16" font-weight="700">3. Atribuição candidata</text>
+  <text x="286" y="600" font-family="Arial" font-size="10">Associação técnica revisável · não causal</text>
+  <text x="286" y="634" font-family="Arial" font-size="12">Eventos compatíveis com a janela: 5</text>
+  <text x="286" y="662" font-family="Arial" font-size="12">Janela candidata: até 7 dias após clique válido</text>
+  <text x="286" y="690" font-family="Arial" font-size="12">Origem patrocinada: 3 · orgânica: 1 · indeterminada: 1</text>
+  <text x="286" y="724" font-family="Arial" font-size="10">Nenhum evento é atribuído duas vezes silenciosamente.</text>
+
+  <rect x="850" y="536" width="550" height="222" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="876" y="570" font-family="Arial" font-size="16" font-weight="700">4. Autorrelato</text>
+  <text x="876" y="600" font-family="Arial" font-size="10">Informação declarada pelo anunciante · não instrumentada pela Guivos</text>
+  <text x="876" y="634" font-family="Arial" font-size="12">“Quatro participantes informaram ter conhecido a atividade pela campanha.”</text>
+  <text x="876" y="666" font-family="Arial" font-size="12">Responsável: Coletivo Horizonte</text>
+  <text x="876" y="694" font-family="Arial" font-size="12">Declarado em: 10/08/2026</text>
+  <text x="876" y="724" font-family="Arial" font-size="10">Autorrelato não é somado aos eventos instrumentados.</text>
+
+  <rect x="260" y="788" width="1140" height="118" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="286" y="822" font-family="Arial" font-size="14" font-weight="700">Privacidade e limites</text>
+  <text x="286" y="850" font-family="Arial" font-size="11">Nenhuma lista de visualizadores, nomes, relatos protegidos, localização exata ou sequência individual é fornecida.</text>
+  <text x="286" y="878" font-family="Arial" font-size="11">Conversão não comprova impacto humano, qualidade, confiança ou evolução.</text>
+  <rect x="1160" y="824" width="214" height="48" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1267" y="854" text-anchor="middle" font-family="Arial" font-size="11">Ver metodologia e histórico</text>
+
+  <text x="260" y="958" font-family="Arial" font-size="11">Baixa fidelidade · dados ilustrativos · sem exportação, cobrança real ou implementação.</text>
+</svg>

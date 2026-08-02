@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Visão geral móvel do relatório agregado do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com resumo das quatro camadas do relatório e avisos de privacidade e interpretação.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
+  <text x="20" y="62" font-family="Arial" font-size="10">OPPORTUNITY BOOST › RELATÓRIO</text>
+  <text x="20" y="92" font-family="Arial" font-size="19" font-weight="700">Resumo da campanha</text>
+  <rect x="253" y="70" width="117" height="34" rx="7" fill="#f3f3f3" stroke="#444444"/>
+  <text x="311" y="91" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700">PROVISÓRIO</text>
+  <text x="20" y="118" font-family="Arial" font-size="9">05/08 a 10/08 · atualizado às 18:30</text>
+
+  <rect x="20" y="136" width="350" height="62" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="160" font-family="Arial" font-size="11" font-weight="700">Quatro camadas separadas</text>
+  <text x="34" y="181" font-family="Arial" font-size="9">Dados não comprovam causalidade, conversão ou impacto.</text>
+
+  <rect x="20" y="216" width="350" height="134" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="241" font-family="Arial" font-size="13" font-weight="700">1. Entrega</text>
+  <text x="34" y="266" font-family="Arial" font-size="10">Orçamento: R$ 300,00 · utilizado: R$ 146,20</text>
+  <text x="34" y="288" font-family="Arial" font-size="10">Saldo não utilizado: R$ 153,80</text>
+  <text x="34" y="310" font-family="Arial" font-size="10">Impressões válidas: 5.840 · visíveis: 4.960</text>
+  <text x="34" y="332" font-family="Arial" font-size="9">Frequência média: 1,7 · inválidas removidas: 31</text>
+
+  <rect x="20" y="366" width="350" height="122" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="391" font-family="Arial" font-size="13" font-weight="700">2. Interação</text>
+  <text x="34" y="416" font-family="Arial" font-size="10">Cliques: 128 · detalhe: 104 · salvamentos: 19</text>
+  <text x="34" y="438" font-family="Arial" font-size="10">Interesses: 12 · inícios de inscrição: 7</text>
+  <text x="34" y="460" font-family="Arial" font-size="10">Conclusões: não disponível</text>
+  <text x="34" y="478" font-family="Arial" font-size="9">Não disponível não significa zero.</text>
+
+  <rect x="20" y="504" width="350" height="112" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="529" font-family="Arial" font-size="13" font-weight="700">3. Atribuição candidata</text>
+  <text x="34" y="554" font-family="Arial" font-size="10">5 eventos compatíveis · janela de até 7 dias</text>
+  <text x="34" y="576" font-family="Arial" font-size="10">Patrocinada: 3 · orgânica: 1 · indeterminada: 1</text>
+  <text x="34" y="598" font-family="Arial" font-size="9">Associação técnica revisável; não prova causa.</text>
+
+  <rect x="20" y="632" width="350" height="104" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="657" font-family="Arial" font-size="13" font-weight="700">4. Autorrelato</text>
+  <text x="34" y="682" font-family="Arial" font-size="10">“Quatro participantes citaram a campanha.”</text>
+  <text x="34" y="704" font-family="Arial" font-size="9">Declarado pelo anunciante · não instrumentado.</text>
+  <text x="34" y="724" font-family="Arial" font-size="9">Não é somado aos eventos técnicos.</text>
+
+  <rect x="20" y="752" width="350" height="48" rx="8" fill="#f3f3f3" stroke="#444444"/>
+  <text x="195" y="781" text-anchor="middle" font-family="Arial" font-size="10">Ver metodologia, privacidade e histórico</text>
+  <text x="20" y="824" font-family="Arial" font-size="8">Nenhuma lista de visualizadores ou pessoa identificada.</text>
+</svg>
