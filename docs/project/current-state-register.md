@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.75.0
+version: 1.76.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-01
 depends_on:
@@ -23,6 +23,7 @@ related:
   - UXA-044
   - UXA-045
   - UXA-046
+  - UXA-047
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -33,8 +34,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.22.0
-  - M7.48
+  - ROADMAP-12.23.0
+  - M7.49
 normative: true
 ---
 
@@ -49,12 +50,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | gestão da campanha ativa do Opportunity Boost materializada | M7.48; UXA-046 |
+| Marco atual | gestão da campanha ativa do Opportunity Boost funcionalmente validada e reformulada | M7.49; UXA-046; UXA-047 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-046 | UXA-000 a UXA-046 |
+| Arquitetura da Experiência | ativa até UXA-047 | UXA-000 a UXA-047 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -69,7 +70,8 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Fluxo do anunciante do Boost | cinco wireframes para computador funcionalmente validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação do Boost | seis wireframes móveis e para computador funcionalmente validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes móveis e para computador funcionalmente validados e reformulados | UXA-044; UXA-045 |
-| Gestão da campanha ativa | seis wireframes para computador criados; validação pendente | UXA-046 |
+| Gestão da campanha ativa | seis wireframes para computador funcionalmente validados e reformulados | UXA-046; UXA-047 |
+| Relatório agregado | ainda não materializado | — |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -178,18 +180,11 @@ Todos os valores permanecem candidatos para validação.
 - controles reversíveis;
 - baixa oferta orgânica reduz publicidade;
 - marcador e agrupamento próprios no Mapa;
-- relatório futuro separado em entrega, interação, atribuição candidata e autorrelato;
-- pausa e cancelamento com consequência, saldo e histórico visíveis.
+- relatório futuro separado em entrega, interação, atribuição candidata e autorrelato.
 
 ### 6.4 Fluxo visual do anunciante validado
 
-A UXA-040 reformulada e a UXA-041 validam cinco estados para computador:
-
-1. elegibilidade;
-2. objetivo e critérios;
-3. orçamento e duração;
-4. prévia e confirmação;
-5. envio para avaliação.
+A UXA-040 reformulada e a UXA-041 validam elegibilidade, objetivo e critérios, orçamento e duração, prévia e confirmação e envio para avaliação.
 
 ### 6.5 Cartão patrocinado e explicação validados
 
@@ -199,9 +194,9 @@ A UXA-042 reformulada e a UXA-043 validam seis referências móveis e para compu
 
 A UXA-044 reformulada e a UXA-045 validam quatro referências territoriais, com uma única consulta, contagens separadas, preferência publicitária distinta dos filtros, marcadores próprios, seleção sem alteração da ordem, localização opcional e gate `Pesquisar nesta área`.
 
-### 6.7 Gestão da campanha ativa materializada
+### 6.7 Gestão da campanha ativa validada
 
-A UXA-046 cria seis referências para computador:
+A UXA-046 reformulada e a UXA-047 validam seis referências para computador:
 
 1. campanha programada;
 2. campanha ativa;
@@ -212,20 +207,23 @@ A UXA-046 cria seis referências para computador:
 
 O conjunto demonstra:
 
-- programação aprovada sem entrega iniciada;
-- orçamento reservado, utilizado e saldo separados;
+- programação aprovada sem entrega e com gates antes da ativação;
+- orçamento total, reservado, utilizado e saldo não utilizado separados;
 - estado ativo dentro de período, limite, frequência, capacidade e política;
-- indicadores operacionais distintos de relatório agregado;
-- limitação sem aceleração de orçamento ou ampliação automática do período;
+- indicadores operacionais com período de referência, distintos de relatório agregado;
+- limitação como estado ativo com entrega reduzida;
+- limitação sem aceleração de orçamento, aumento de limite diário ou ampliação automática do período;
 - pausa voluntária, automática e suspensão por política com consequências próprias;
-- condição explícita para retomada;
+- novos eventos interrompidos durante a pausa, com eventos válidos anteriores preservados;
+- período podendo continuar e expirar durante a pausa;
+- retomada visivelmente bloqueada até resolução e verificação da causa;
 - alteração material com comparação entre versão aprovada e alterada;
-- nova avaliação sem entrega automática;
-- eventos válidos e histórico preservados;
-- cancelamento com confirmação proporcional à ativação;
-- tratamento do saldo e reconciliação mantidos como candidatos.
-
-Os seis artefatos ainda exigem validação funcional própria.
+- nova avaliação ou descarte sem entrega automática;
+- cancelamento bloqueado até motivo e confirmações completas;
+- estados finais separados, incluindo suspensão por política;
+- histórico e registro operacional preservados;
+- tratamento do saldo e reconciliação mantidos como candidatos;
+- relatório agregado ainda não criado.
 
 ## 7. Proteções vigentes
 
@@ -239,8 +237,8 @@ Os seis artefatos ainda exigem validação funcional própria.
 - marcador patrocinado não encobre oportunidade orgânica;
 - localização permanece opcional;
 - movimentação do Mapa não autoriza localização ou nova consulta;
-- limitação não acelera orçamento;
-- pausa interrompe entrega futura;
+- limitação não acelera orçamento ou amplia limite diário;
+- pausa interrompe novos eventos de entrega;
 - alteração material impede entrega desatualizada;
 - cancelamento preserva eventos válidos e histórico;
 - saldo não é apresentado como devolução confirmada;
@@ -251,9 +249,8 @@ Os seis artefatos ainda exigem validação funcional própria.
 
 Não foram concluídos:
 
-- validação funcional dos seis wireframes da UXA-046;
 - wireframe do relatório agregado;
-- validação do conjunto completo de wireframes;
+- validação funcional do conjunto completo de wireframes do Opportunity Boost;
 - estados móveis de gestão;
 - estados de erro, inventário insuficiente e preferência publicitária;
 - pesquisa de disposição a pagar;
@@ -274,12 +271,11 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-046;
-2. criar wireframe do relatório agregado;
-3. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-4. criar estados móveis de gestão, se priorizados;
-5. criar estados de erro, inventário insuficiente e preferência publicitária;
-6. validar preços, orçamentos e disposição a pagar;
-7. definir política especializada de publicidade e categorias;
-8. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
-9. retomar independentemente os testes dos Resultados Empresariais.
+1. criar o wireframe do relatório agregado;
+2. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
+3. criar estados móveis de gestão, se priorizados;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. validar preços, orçamentos e disposição a pagar;
+6. definir política especializada de publicidade e categorias;
+7. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
+8. retomar independentemente os testes dos Resultados Empresariais.

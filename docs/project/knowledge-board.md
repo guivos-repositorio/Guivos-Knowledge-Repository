@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.22.0
+version: 12.23.0
 owner: Guivos
 last_updated: 2026-08-01
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.22.0
+  - ROADMAP-12.23.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -23,9 +23,10 @@ related:
   - UXA-044
   - UXA-045
   - UXA-046
+  - UXA-047
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.48
+  - M7.49
 normative: false
 ---
 
@@ -40,7 +41,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | gestão da campanha ativa do Opportunity Boost materializada | M7.48 |
+| Marco | gestão da campanha ativa funcionalmente validada e reformulada | M7.49 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
@@ -49,7 +50,8 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Fluxo do anunciante | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
-| Gestão da campanha ativa | seis wireframes para computador criados; validação pendente | UXA-046 |
+| Gestão da campanha ativa | seis wireframes para computador validados e reformulados | UXA-046; UXA-047 |
+| Relatório agregado | ainda não materializado | — |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
@@ -64,7 +66,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-046;
+- Arquitetura da Experiência até UXA-047;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências de Organizações e Coletivos;
 - baseline comercial de planos;
@@ -73,13 +75,12 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - fluxo do anunciante materializado, validado e reformulado;
 - cartão patrocinado e explicação materializados, validados e reformulados;
 - estados patrocinados de Lista e Mapa materializados, validados e reformulados;
-- gestão da campanha ativa materializada;
+- gestão da campanha ativa materializada, validada e reformulada;
 - parâmetros candidatos de orçamento e mensuração.
 
 ### Em validação ou calibração pendente
 
 - nove candidatos de Resultados Empresariais;
-- seis wireframes da UXA-046;
 - utilidade e disposição a pagar dos planos;
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
@@ -94,7 +95,6 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 
 #### Telas do Opportunity Boost
 
-- validação funcional e reformulação dos wireframes da UXA-046;
 - wireframe do relatório agregado;
 - validação funcional do conjunto completo de wireframes;
 - estados móveis de gestão, se priorizados;
@@ -189,9 +189,9 @@ A UXA-042 reformulada e a UXA-043 validam seis referências móveis e para compu
 
 A UXA-044 reformulada e a UXA-045 validam uma única consulta territorial, contagens separadas, filtros distintos da preferência publicitária, marcadores próprios, seleção sem alteração da ordem, localização opcional e `Pesquisar nesta área`.
 
-## 9. Gestão da campanha ativa materializada
+## 9. Gestão da campanha ativa validada
 
-A UXA-046 cria:
+A UXA-046 reformulada e a UXA-047 validam:
 
 1. campanha programada;
 2. campanha ativa;
@@ -202,18 +202,19 @@ A UXA-046 cria:
 
 As referências demonstram:
 
-- programação sem entrega;
-- orçamento reservado, utilizado e saldo separados;
-- indicadores operacionais distintos de relatório agregado;
-- limitação sem aceleração de orçamento;
-- pausa voluntária, automática e suspensão por política separadas;
-- condição explícita para retomada;
-- alteração material com nova avaliação;
-- eventos válidos e histórico preservados;
-- cancelamento com confirmação proporcional;
-- saldo e reconciliação ainda candidatos.
-
-O conjunto ainda exige validação funcional própria.
+- programação sem entrega e ativação condicionada aos gates;
+- orçamento total, reservado, utilizado e saldo não utilizado separados;
+- indicadores operacionais com período de referência;
+- limitação como estado ativo com entrega reduzida;
+- limite diário preservado e período sem prorrogação automática;
+- pausa interrompendo novos eventos sem apagar eventos válidos;
+- período podendo continuar e expirar durante a pausa;
+- retomada bloqueada até resolução e verificação da causa;
+- alteração material com nova avaliação e sem retomada automática;
+- cancelamento bloqueado até motivo e confirmações completas;
+- estados finais separados, incluindo suspensão por política;
+- saldo e reconciliação ainda candidatos;
+- relatório agregado ainda não criado.
 
 ## 10. Sequência pessoal
 
@@ -239,8 +240,8 @@ Oferta e publicidade não interrompem a sequência protegida.
 - localização permanece opcional;
 - marcador patrocinado não encobre oportunidade orgânica;
 - movimentação do Mapa não autoriza localização ou nova consulta;
-- limitação não acelera orçamento;
-- pausa interrompe entrega futura;
+- limitação não acelera orçamento ou amplia limite diário;
+- pausa interrompe novos eventos de entrega;
 - alteração material impede entrega desatualizada;
 - cancelamento preserva eventos válidos e histórico;
 - saldo não é devolução confirmada;
@@ -259,4 +260,4 @@ Oferta e publicidade não interrompem a sequência protegida.
 
 ## 13. Próximo movimento
 
-Após integração, nenhum movimento é automático. Pela sequência visual, a próxima ação candidata será validar funcionalmente e reformular os seis wireframes da UXA-046.
+Após integração, nenhum movimento é automático. Pela sequência visual, a próxima ação candidata será criar o wireframe do relatório agregado do Opportunity Boost.

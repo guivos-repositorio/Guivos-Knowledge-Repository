@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Campanha pausada do Opportunity Boost</title>
-  <desc id="desc">Wireframe de baixa fidelidade mostrando pausa voluntária e automática, consequência sobre entrega, orçamento, saldo e condição de retomada.</desc>
+  <title id="title">Campanha pausada do Opportunity Boost reformulada</title>
+  <desc id="desc">Wireframe de baixa fidelidade mostrando pausa automática, novos eventos interrompidos, eventos válidos preservados, período vigente e retomada bloqueada até resolução da causa.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -10,54 +10,58 @@
   <text x="32" y="196" font-family="Arial" font-size="14">Campanhas</text>
   <text x="260" y="48" font-family="Arial" font-size="11">OPPORTUNITY BOOST › CAMPANHA OB-2048</text>
   <text x="260" y="86" font-family="Arial" font-size="28" font-weight="700">Formação gratuita em gestão comunitária</text>
-  <rect x="1100" y="46" width="300" height="48" rx="8" fill="#f3f3f3" stroke="#222222" stroke-width="2"/>
-  <text x="1250" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">PAUSADA AUTOMATICAMENTE</text>
-  <text x="260" y="122" font-family="Arial" font-size="12">Nenhuma nova entrega enquanto a causa permanecer</text>
+  <rect x="1090" y="46" width="310" height="48" rx="8" fill="#f3f3f3" stroke="#222222" stroke-width="2"/>
+  <text x="1245" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">PAUSADA AUTOMATICAMENTE</text>
+  <text x="260" y="122" font-family="Arial" font-size="12">Novos eventos de entrega interrompidos desde 08/08/2026 às 11:42</text>
 
   <rect x="260" y="154" width="1140" height="144" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
-  <text x="286" y="188" font-family="Arial" font-size="14" font-weight="700">Motivo</text>
+  <text x="286" y="188" font-family="Arial" font-size="14" font-weight="700">Causa registrada</text>
   <text x="286" y="220" font-family="Arial" font-size="11">A data da oportunidade foi alterada durante a campanha. A informação exibida deixou de corresponder ao conteúdo aprovado.</text>
-  <text x="286" y="250" font-family="Arial" font-size="11">A pausa protege a pessoa contra entrega desatualizada. Eventos válidos anteriores permanecem preservados.</text>
-  <text x="286" y="278" font-family="Arial" font-size="10">Causa registrada em 08/08/2026 às 11:42.</text>
+  <text x="286" y="250" font-family="Arial" font-size="11">A pausa impede nova entrega desatualizada. Eventos válidos anteriores permanecem disponíveis para apuração e reconciliação posteriores.</text>
+  <text x="286" y="278" font-family="Arial" font-size="10">Pausa automática não equivale a suspensão por política nem a cancelamento.</text>
 
-  <rect x="260" y="328" width="350" height="218" rx="10" fill="#ffffff" stroke="#777777"/>
+  <rect x="260" y="328" width="350" height="228" rx="10" fill="#ffffff" stroke="#777777"/>
   <text x="286" y="362" font-family="Arial" font-size="15" font-weight="700">Entrega</text>
-  <text x="286" y="400" font-family="Arial" font-size="12">Futura: interrompida</text>
-  <text x="286" y="430" font-family="Arial" font-size="12">Anterior válida: preservada</text>
+  <text x="286" y="400" font-family="Arial" font-size="12">Novos eventos: interrompidos</text>
+  <text x="286" y="430" font-family="Arial" font-size="12">Eventos válidos anteriores: preservados</text>
   <text x="286" y="460" font-family="Arial" font-size="12">Retomada automática: não</text>
-  <text x="286" y="500" font-family="Arial" font-size="10">A entrega somente volta após condição explícita.</text>
+  <text x="286" y="490" font-family="Arial" font-size="12">Relatório agregado: ainda não criado</text>
+  <text x="286" y="526" font-family="Arial" font-size="10">A pausa não elimina ou invalida eventos já aceitos.</text>
 
-  <rect x="636" y="328" width="350" height="218" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="662" y="362" font-family="Arial" font-size="15" font-weight="700">Orçamento e saldo</text>
-  <text x="662" y="400" font-family="Arial" font-size="12">Total: R$ 300,00</text>
-  <text x="662" y="430" font-family="Arial" font-size="12">Utilizado: R$ 146,20</text>
-  <text x="662" y="460" font-family="Arial" font-size="12">Saldo: R$ 153,80</text>
-  <text x="662" y="490" font-family="Arial" font-size="12">Cobrança futura: interrompida</text>
-  <text x="662" y="520" font-family="Arial" font-size="10">Tratamento final do saldo permanece candidato.</text>
+  <rect x="636" y="328" width="350" height="228" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="662" y="362" font-family="Arial" font-size="15" font-weight="700">Orçamento e período</text>
+  <text x="662" y="400" font-family="Arial" font-size="12">Total aprovado: R$ 300,00</text>
+  <text x="662" y="430" font-family="Arial" font-size="12">Utilizado validado: R$ 146,20</text>
+  <text x="662" y="460" font-family="Arial" font-size="12">Saldo não utilizado: R$ 153,80</text>
+  <text x="662" y="490" font-family="Arial" font-size="12">Fim previsto: 12/08/2026 às 20:00</text>
+  <text x="662" y="520" font-family="Arial" font-size="10">O período continua; a campanha poderá expirar durante a pausa.</text>
+  <text x="662" y="542" font-family="Arial" font-size="9">Nenhuma regra de devolução ou cobrança é definida aqui.</text>
 
-  <rect x="1012" y="328" width="388" height="218" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="1038" y="362" font-family="Arial" font-size="15" font-weight="700">Condição para retomada</text>
+  <rect x="1012" y="328" width="388" height="228" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="1038" y="362" font-family="Arial" font-size="15" font-weight="700">Condição para solicitar retomada</text>
   <text x="1038" y="400" font-family="Arial" font-size="12">1. revisar a nova data;</text>
   <text x="1038" y="430" font-family="Arial" font-size="12">2. confirmar capacidade e elegibilidade;</text>
   <text x="1038" y="460" font-family="Arial" font-size="12">3. concluir nova avaliação, se exigida;</text>
-  <text x="1038" y="490" font-family="Arial" font-size="12">4. permanecer dentro do período válido.</text>
+  <text x="1038" y="490" font-family="Arial" font-size="12">4. permanecer dentro do período válido;</text>
+  <text x="1038" y="520" font-family="Arial" font-size="12">5. não existir bloqueio de política.</text>
+  <text x="1038" y="542" font-family="Arial" font-size="9">Atender condições permite verificação; não garante retomada.</text>
 
-  <rect x="260" y="578" width="740" height="220" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="612" font-family="Arial" font-size="15" font-weight="700">Tipos de pausa</text>
-  <text x="286" y="650" font-family="Arial" font-size="12">Pausada pelo anunciante — reversível quando não houver outro bloqueio.</text>
-  <text x="286" y="682" font-family="Arial" font-size="12">Pausada automaticamente — exige correção ou verificação da causa.</text>
-  <text x="286" y="714" font-family="Arial" font-size="12">Suspensa por política — não equivale a pausa voluntária e pode impedir retomada.</text>
-  <text x="286" y="756" font-family="Arial" font-size="10">Cada estado mantém motivo, consequência, saldo e histórico próprios.</text>
+  <rect x="260" y="588" width="740" height="210" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="622" font-family="Arial" font-size="15" font-weight="700">Estados distintos</text>
+  <text x="286" y="660" font-family="Arial" font-size="12">Pausada pelo anunciante — poderá ser reversível quando não houver outro bloqueio.</text>
+  <text x="286" y="692" font-family="Arial" font-size="12">Pausada automaticamente — exige correção ou verificação da causa.</text>
+  <text x="286" y="724" font-family="Arial" font-size="12">Suspensa por política — poderá impedir retomada e exigir revisão especializada.</text>
+  <text x="286" y="766" font-family="Arial" font-size="10">Cada estado mantém motivo, consequência, orçamento e histórico próprios.</text>
 
-  <rect x="1026" y="578" width="374" height="220" rx="10" fill="#f3f3f3" stroke="#444444"/>
-  <text x="1052" y="612" font-family="Arial" font-size="15" font-weight="700">Ações disponíveis</text>
-  <rect x="1052" y="640" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
-  <text x="1213" y="667" text-anchor="middle" font-family="Arial" font-size="11">Revisar alteração material</text>
-  <rect x="1052" y="702" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
-  <text x="1213" y="729" text-anchor="middle" font-family="Arial" font-size="11">Cancelar campanha</text>
-  <text x="1052" y="778" font-family="Arial" font-size="10">Retomar fica indisponível até a causa ser resolvida.</text>
+  <rect x="1026" y="588" width="374" height="210" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="1052" y="622" font-family="Arial" font-size="15" font-weight="700">Ações</text>
+  <rect x="1052" y="650" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1213" y="677" text-anchor="middle" font-family="Arial" font-size="11">Revisar alteração material</text>
+  <rect x="1052" y="710" width="322" height="44" rx="8" fill="#e8e8e8" stroke="#999999"/>
+  <text x="1213" y="737" text-anchor="middle" font-family="Arial" font-size="11">Retomar campanha — indisponível</text>
+  <text x="1052" y="780" font-family="Arial" font-size="10">Bloqueio: nova avaliação ainda não concluída.</text>
 
-  <text x="260" y="846" font-family="Arial" font-size="11">Histórico: ativa → pausa automática por informação material alterada.</text>
-  <text x="260" y="878" font-family="Arial" font-size="11">Pausa não amplia automaticamente o período nem promete uso integral do saldo.</text>
-  <text x="260" y="954" font-family="Arial" font-size="11">Baixa fidelidade · sem cobrança real, decisão jurídica sobre saldo ou implementação.</text>
+  <text x="260" y="846" font-family="Arial" font-size="11">Histórico: ativa → alteração material → pausa automática.</text>
+  <text x="260" y="878" font-family="Arial" font-size="11">Cancelar permanece ação separada e encerra a possibilidade de retomada da mesma campanha.</text>
+  <text x="260" y="954" font-family="Arial" font-size="11">Baixa fidelidade · sem decisão financeira final, relatório agregado ou implementação.</text>
 </svg>
