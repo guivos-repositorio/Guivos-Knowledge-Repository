@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.27.0
+version: 12.28.0
 owner: Guivos
 last_updated: 2026-08-02
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.27.0
+  - ROADMAP-12.28.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -28,9 +28,10 @@ related:
   - UXA-049
   - UXA-050
   - UXA-051
+  - UXA-052
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.53
+  - M7.54
 normative: false
 ---
 
@@ -45,20 +46,20 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | configuração móvel do anunciante do Opportunity Boost materializada | M7.53 |
+| Marco | configuração móvel do anunciante do Opportunity Boost funcionalmente validada e reformulada | M7.54 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
 | Experiência do Boost | validada e reformulada | UXA-038; UXA-039 |
 | Fluxo do anunciante para computador | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
-| Configuração móvel do anunciante | cinco wireframes materializados; validação pendente | UXA-051 |
+| Configuração móvel do anunciante | cinco wireframes validados e reformulados | UXA-051; UXA-052 |
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes para computador validados e reformulados | UXA-046; UXA-047 |
 | Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
-| Conjunto validado do Boost | 25 wireframes validados transversalmente | UXA-050 |
-| Cobertura visual do Boost | 30 wireframes materializados; 5 móveis aguardam validação | UXA-040 a UXA-051 |
+| Conjunto transversal anterior | 25 wireframes validados transversalmente | UXA-050 |
+| Cobertura visual do Boost | 30 wireframes materializados e validados por pacote; gestão móvel ausente | UXA-040 a UXA-052 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
@@ -73,26 +74,26 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-051;
+- Arquitetura da Experiência até UXA-052;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências de Organizações e Coletivos;
 - baseline comercial de planos;
 - Opportunity Boost como mecanismo candidato;
 - experiência funcional do Boost;
 - fluxo do anunciante para computador materializado, validado e reformulado;
-- configuração móvel do anunciante materializada em cinco wireframes;
+- configuração móvel do anunciante materializada, validada e reformulada;
 - cartão patrocinado e explicação materializados, validados e reformulados;
 - estados patrocinados de Lista e Mapa materializados, validados e reformulados;
 - gestão da campanha ativa materializada, validada e reformulada para computador;
 - relatório agregado materializado, validado e reformulado;
-- 25 wireframes do Opportunity Boost validados transversalmente;
+- 25 wireframes do Opportunity Boost validados transversalmente pela UXA-050;
+- 30 wireframes materializados e funcionalmente validados por pacote;
 - identidade da campanha, versão aprovada, estados, controles, origem, histórico e cobertura por canal consolidados;
 - parâmetros candidatos de orçamento e mensuração.
 
 ### Em validação ou calibração pendente
 
 - nove candidatos de Resultados Empresariais;
-- cinco wireframes móveis da UXA-051;
 - utilidade e disposição a pagar dos planos;
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
@@ -102,17 +103,18 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - custo de servir, margem e antifraude;
 - categorias publicitárias;
 - cancelamento, saldo e disputa finais;
-- eficácia dos controles com Pessoas, Organizações e Coletivos.
+- eficácia dos controles com Pessoas, Organizações e Coletivos;
+- eventual validação transversal ampliada dos 30 wireframes.
 
 ### Aguardando autorização
 
 #### Estados residuais e protótipo do Opportunity Boost
 
-- validação funcional e reformulação dos cinco wireframes móveis da UXA-051;
 - gestão móvel da campanha ativa;
 - estados de erro, inventário insuficiente e preferência publicitária;
 - protocolo de protótipo de baixa ou média fidelidade;
-- plano de teste com Pessoas, Organizações e Coletivos.
+- plano de teste com Pessoas, Organizações e Coletivos;
+- eventual validação transversal ampliada dos 30 wireframes.
 
 #### Modelo econômico e especialidades
 
@@ -196,9 +198,9 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 
 A UXA-040 reformulada e a UXA-041 validam elegibilidade, objetivo e critérios, orçamento e duração, prévia e confirmação e envio para avaliação.
 
-## 7. Configuração móvel do anunciante materializada
+## 7. Configuração móvel do anunciante validada
 
-A UXA-051 cria:
+A UXA-051 reformulada e a UXA-052 validam:
 
 1. elegibilidade e gate de entrada;
 2. objetivo e critérios;
@@ -208,22 +210,28 @@ A UXA-051 cria:
 
 As referências móveis demonstram:
 
-- campanha e rascunho identificados em todas as telas;
+- identidade persistente da campanha, rascunho e versão enviada;
 - progresso de cinco etapas;
 - uma responsabilidade principal por tela;
-- estados atendido, atendido com limite e bloqueado;
-- objetivo único sem seleção automática;
-- critérios escolhidos e revisáveis;
+- retorno sem confirmação silenciosa;
+- condição limitada ativa separada de bloqueio;
+- regras de exceção rotuladas como não ativas;
+- objetivo único selecionado somente após ação explícita;
+- critérios escolhidos revisáveis ou removíveis;
 - critérios protegidos excluídos;
 - público insuficiente sem expansão automática;
 - orçamento, limite diário, período e base principal separados;
-- estimativa sem garantia;
+- estimativa provisória, datada e sujeita a recálculo;
+- renovação automática desativada como estado informativo;
 - primeiro resultado orgânico anterior ao anúncio;
+- controles da pessoa identificados como demonstração;
 - confirmações inicialmente desmarcadas;
-- envio sem entrega ou cobrança;
-- cancelamento com retorno ao rascunho e histórico preservado.
+- envio sem aprovação, programação, entrega ou cobrança;
+- versão enviada em somente leitura;
+- cancelamento com revisão e confirmação separadas;
+- histórico preservado.
 
-Os cinco wireframes ainda exigem validação funcional especializada.
+A configuração do anunciante está funcionalmente validada em computador e aplicativo móvel. A composição móvel não presume responsividade técnica.
 
 ## 8. Cartão patrocinado e explicação validados
 
@@ -287,26 +295,29 @@ As referências demonstram:
 - nenhuma lista de visualizadores ou dado individual;
 - nenhuma inferência de causalidade, impacto humano, qualidade, confiança ou evolução.
 
-## 12. Conjunto validado transversalmente
+## 12. Cobertura funcional consolidada
 
-A UXA-050 confirma que os 25 wireframes anteriores formam um percurso único entre elegibilidade, configuração, avaliação, entrega, gestão, encerramento e relatório.
+A UXA-050 confirma que os 25 wireframes examinados naquele incremento formam um percurso único entre elegibilidade, configuração, avaliação, entrega, gestão, encerramento e relatório.
 
-O conjunto consolidado preserva:
+A UXA-051 e a UXA-052 ampliam a cobertura para 30 wireframes materializados e funcionalmente validados por pacote.
+
+A cobertura atual preserva:
 
 - identidade única da campanha;
 - versão aprovada associada aos eventos;
 - alteração material sem reescrita do histórico;
 - autoridade das transições de estado;
 - configuração e aprovação sem entrega automática;
+- configuração do anunciante validada nos dois canais;
 - continuidade entre prévia e unidade entregue;
 - Lista e Mapa como uma única consulta;
 - preferência negativa acima da entrega contratada;
 - controles sem identificação para o anunciante;
 - separação orgânica e patrocinada até atribuição e relatório;
 - identidade contínua do Boost Social Financiado;
-- orçamento, saldo e reconciliação sem promessa.
-
-Os cinco wireframes da UXA-051 ampliam a cobertura visual, mas ainda não integram o conjunto funcionalmente validado.
+- orçamento, saldo e reconciliação sem promessa;
+- gestão móvel ainda não materializada;
+- nenhuma nova validação transversal dos 30 artefatos iniciada automaticamente.
 
 ## 13. Sequência pessoal
 
@@ -347,6 +358,10 @@ Oferta e publicidade não interrompem a sequência protegida.
 - saldo não é devolução confirmada;
 - impressão, clique, inscrição, atribuição e impacto são eventos diferentes;
 - configuração móvel não seleciona objetivo, critério ou confirmação automaticamente;
+- regras de exceção não parecem estados ativos;
+- renovação automática não é apresentada como consentimento;
+- controles da pessoa não são confundidos com ações do anunciante;
+- cancelamento móvel exige revisão e confirmação separadas;
 - valores são candidatos, não autorizações de cobrança;
 - documentação não equivale a implementação.
 
@@ -361,4 +376,4 @@ Oferta e publicidade não interrompem a sequência protegida.
 
 ## 16. Próximo movimento
 
-Após integração, nenhum movimento é automático. Pela sequência visual, a próxima ação candidata será validar funcionalmente e reformular os cinco wireframes móveis da UXA-051.
+Após integração, nenhum movimento é automático. Pela sequência visual, o próximo pacote candidato é a **gestão móvel da campanha ativa do Opportunity Boost**.
