@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Envio móvel para avaliação do Opportunity Boost</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com etapa cinco de cinco, campanha em avaliação, resumo enviado, ausência de entrega e consequência do cancelamento.</desc>
+  <title id="title">Envio móvel validado para avaliação do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel reformulado com etapa cinco de cinco, versão enviada somente leitura, campanha em avaliação, ausência de entrega e cancelamento sujeito a revisão e confirmação separadas.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
@@ -9,45 +9,47 @@
   <text x="350" y="87" text-anchor="end" font-family="Arial" font-size="10">ETAPA 5 DE 5</text>
   <line x1="20" y1="102" x2="370" y2="102" stroke="#111111" stroke-width="4"/>
 
-  <rect x="20" y="122" width="350" height="98" rx="8" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
-  <text x="34" y="148" font-family="Arial" font-size="10" font-weight="700">ESTADO: EM AVALIAÇÃO</text>
-  <text x="34" y="174" font-family="Arial" font-size="13" font-weight="700">Campanha BST-2026-081 · versão enviada v1</text>
-  <text x="34" y="196" font-family="Arial" font-size="9">Recebida em 02/08/2026 às 16:54</text>
-  <text x="34" y="214" font-family="Arial" font-size="8">Nenhum prazo ou aprovação é prometido.</text>
+  <rect x="20" y="118" width="350" height="100" rx="8" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
+  <text x="34" y="143" font-family="Arial" font-size="10" font-weight="700">ESTADO: EM AVALIAÇÃO</text>
+  <text x="34" y="169" font-family="Arial" font-size="13" font-weight="700">Campanha BST-2026-081 · versão enviada v1</text>
+  <text x="34" y="190" font-family="Arial" font-size="9">Recebida em 02/08/2026 às 17:22</text>
+  <text x="34" y="207" font-family="Arial" font-size="8">Versão enviada em somente leitura; nenhum prazo é prometido.</text>
 
-  <rect x="20" y="238" width="350" height="104" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="34" y="262" font-family="Arial" font-size="11" font-weight="700">Resumo enviado</text>
-  <text x="34" y="284" font-family="Arial" font-size="9">Formação de jovens · clique válido · CPC</text>
-  <text x="34" y="304" font-family="Arial" font-size="9">R$ 300,00 · limite diário R$ 30,00</text>
-  <text x="34" y="324" font-family="Arial" font-size="9">05/08 a 14/08 · critérios objetivos escolhidos</text>
-  <text x="338" y="324" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Abrir</text>
+  <rect x="20" y="234" width="350" height="112" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="258" font-family="Arial" font-size="11" font-weight="700">Resumo enviado</text>
+  <text x="34" y="280" font-family="Arial" font-size="9">Formação de jovens · clique válido · CPC</text>
+  <text x="34" y="300" font-family="Arial" font-size="9">R$ 300,00 · limite diário R$ 30,00</text>
+  <text x="34" y="320" font-family="Arial" font-size="9">05/08 a 14/08 · condição limitada · critérios escolhidos</text>
+  <text x="338" y="320" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Abrir</text>
+  <text x="34" y="338" font-family="Arial" font-size="8">Alterar exige ajustes solicitados ou cancelamento confirmado.</text>
 
-  <rect x="20" y="358" width="350" height="150" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="34" y="382" font-family="Arial" font-size="11" font-weight="700">O que será verificado</text>
-  <text x="34" y="406" font-family="Arial" font-size="9">• elegibilidade e responsável institucional</text>
-  <text x="34" y="428" font-family="Arial" font-size="9">• informações materiais e capacidade</text>
-  <text x="34" y="450" font-family="Arial" font-size="9">• objetivo, critérios permitidos e exclusões</text>
-  <text x="34" y="472" font-family="Arial" font-size="9">• orçamento, período, superfícies e prévia</text>
-  <text x="34" y="494" font-family="Arial" font-size="8">A avaliação pode solicitar ajustes, rejeitar ou aprovar.</text>
+  <rect x="20" y="362" width="350" height="142" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="386" font-family="Arial" font-size="11" font-weight="700">O que será verificado</text>
+  <text x="34" y="410" font-family="Arial" font-size="9">• elegibilidade e responsável institucional</text>
+  <text x="34" y="432" font-family="Arial" font-size="9">• informações materiais e capacidade limitada</text>
+  <text x="34" y="454" font-family="Arial" font-size="9">• objetivo, critérios permitidos e exclusões</text>
+  <text x="34" y="476" font-family="Arial" font-size="9">• orçamento, período, superfícies e prévia</text>
+  <text x="34" y="496" font-family="Arial" font-size="8">A avaliação pode solicitar ajustes, rejeitar ou aprovar.</text>
 
-  <rect x="20" y="524" width="350" height="92" rx="8" fill="#f3f3f3" stroke="#555555"/>
-  <text x="34" y="548" font-family="Arial" font-size="10" font-weight="700">Sem entrega e sem cobrança real</text>
-  <text x="34" y="570" font-family="Arial" font-size="9">Enviar não ativa, programa ou entrega publicidade.</text>
-  <text x="34" y="590" font-family="Arial" font-size="9">Aprovação futura também não inicia entrega automaticamente.</text>
-  <text x="34" y="608" font-family="Arial" font-size="8">Programação depende da permanência dos gates.</text>
+  <rect x="20" y="520" width="350" height="92" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="544" font-family="Arial" font-size="10" font-weight="700">Sem entrega e sem cobrança real</text>
+  <text x="34" y="566" font-family="Arial" font-size="9">Enviar não ativa, programa ou entrega publicidade.</text>
+  <text x="34" y="586" font-family="Arial" font-size="9">Aprovação futura também não inicia entrega automaticamente.</text>
+  <text x="34" y="604" font-family="Arial" font-size="8">Programação depende da permanência dos gates.</text>
 
-  <rect x="20" y="632" width="350" height="68" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="34" y="656" font-family="Arial" font-size="10" font-weight="700">Próximos estados possíveis</text>
-  <text x="34" y="678" font-family="Arial" font-size="9">Ajustes solicitados · rejeitada · aprovada</text>
-  <text x="34" y="694" font-family="Arial" font-size="8">Nenhum estado é antecipado pela interface.</text>
+  <rect x="20" y="628" width="350" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="651" font-family="Arial" font-size="10" font-weight="700">Próximos estados possíveis</text>
+  <text x="34" y="673" font-family="Arial" font-size="9">Ajustes solicitados · rejeitada · aprovada</text>
+  <text x="34" y="687" font-family="Arial" font-size="8">Nenhum estado é antecipado pela interface.</text>
 
-  <rect x="20" y="718" width="168" height="46" rx="8" fill="#111111"/>
-  <text x="104" y="746" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">VER HISTÓRICO</text>
-  <rect x="202" y="718" width="168" height="46" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="286" y="746" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700">CANCELAR ENVIO</text>
+  <rect x="20" y="706" width="168" height="46" rx="8" fill="#111111"/>
+  <text x="104" y="734" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">VER HISTÓRICO</text>
+  <rect x="202" y="706" width="168" height="46" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="286" y="734" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">REVISAR CANCELAMENTO</text>
 
-  <rect x="20" y="780" width="350" height="42" rx="7" fill="#ffffff" stroke="#777777" stroke-dasharray="5 4"/>
-  <text x="34" y="798" font-family="Arial" font-size="8">Cancelar encerra a avaliação e devolve a campanha ao rascunho.</text>
-  <text x="34" y="814" font-family="Arial" font-size="8">Nenhuma entrega começa; o histórico permanece acessível.</text>
-  <text x="20" y="836" font-family="Arial" font-size="8">Configuração móvel ainda exige validação funcional especializada.</text>
+  <rect x="20" y="768" width="350" height="58" rx="7" fill="#ffffff" stroke="#777777" stroke-dasharray="5 4"/>
+  <text x="34" y="787" font-family="Arial" font-size="8" font-weight="700">CANCELAMENTO EXIGE CONFIRMAÇÃO SEPARADA</text>
+  <text x="34" y="803" font-family="Arial" font-size="8">Encerra a avaliação, devolve ao rascunho e não inicia entrega.</text>
+  <text x="34" y="818" font-family="Arial" font-size="8">Histórico e versão enviada permanecem acessíveis.</text>
+  <text x="20" y="838" font-family="Arial" font-size="8">Aprovação, programação, entrega e cobrança permanecem distintas.</text>
 </svg>

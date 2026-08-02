@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.27.0
-title: Roadmap Arquitetural — Configuração Móvel do Anunciante do Opportunity Boost Materializada
+id: ROADMAP-12.28.0
+title: Roadmap Arquitetural — Configuração Móvel do Anunciante do Opportunity Boost Validada
 status: active
-version: 12.27.0
+version: 12.28.0
 owner: Guivos
 last_updated: 2026-08-02
 supersedes_partial:
-  - ROADMAP-12.26.0
+  - ROADMAP-12.27.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -30,14 +30,15 @@ related:
   - UXA-049
   - UXA-050
   - UXA-051
+  - UXA-052
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.53
+  - M7.54
 ---
 
-# Roadmap Arquitetural — Configuração Móvel do Anunciante do Opportunity Boost Materializada
+# Roadmap Arquitetural — Configuração Móvel do Anunciante do Opportunity Boost Validada
 
 ## 1. Autoridade
 
@@ -48,17 +49,17 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | configuração móvel do anunciante do Opportunity Boost materializada | M7.53 |
+| Marco | configuração móvel do anunciante do Opportunity Boost funcionalmente validada e reformulada | M7.54 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante para computador | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
-| Configuração móvel do anunciante | cinco wireframes criados; validação pendente | UXA-051 |
+| Configuração móvel do anunciante | cinco wireframes validados e reformulados | UXA-051; UXA-052 |
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
-| Gestão da campanha ativa | seis wireframes validados e reformulados | UXA-046; UXA-047 |
+| Gestão da campanha ativa | seis wireframes para computador validados e reformulados | UXA-046; UXA-047 |
 | Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
-| Conjunto validado do Boost | 25 wireframes validados transversalmente | UXA-050 |
-| Cobertura visual ampliada | 30 wireframes materializados; 5 móveis aguardam validação | UXA-040 a UXA-051 |
+| Conjunto transversal anterior | 25 wireframes validados transversalmente | UXA-050 |
+| Cobertura visual ampliada | 30 wireframes materializados e validados por pacote; gestão móvel ausente | UXA-040 a UXA-052 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -89,7 +90,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 17. relatório agregado materializado em quatro wireframes para computador e móvel;
 18. relatório agregado funcionalmente validado e reformulado;
 19. conjunto completo de 25 wireframes funcionalmente validado transversalmente;
-20. configuração móvel do anunciante materializada em cinco wireframes.
+20. configuração móvel do anunciante materializada em cinco wireframes;
+21. configuração móvel do anunciante funcionalmente validada e reformulada.
 
 ## 4. Sequência pessoal vigente
 
@@ -160,9 +162,9 @@ A UXA-039 confirmou a experiência como válida após reformulação, com gate d
 
 A UXA-040 reformulada e a UXA-041 validam elegibilidade, objetivo e critérios, orçamento e duração, prévia e confirmação e envio para avaliação.
 
-### 6.4 Configuração móvel materializada
+### 6.4 Configuração móvel validada
 
-A UXA-051 cria cinco referências móveis:
+A UXA-051 reformulada e a UXA-052 validam cinco referências móveis:
 
 ```text
 elegibilidade e gate
@@ -174,23 +176,29 @@ elegibilidade e gate
 
 O conjunto móvel demonstra:
 
-- campanha e rascunho identificados em todas as etapas;
+- identidade persistente da campanha, rascunho e versão enviada;
 - progresso explícito de cinco etapas;
 - uma responsabilidade principal por tela;
-- gates atendido, atendido com limite e bloqueado;
-- objetivo único sem seleção automática;
-- critérios escolhidos e revisáveis;
+- retorno sem confirmação silenciosa;
+- condição limitada ativa separada de bloqueio;
+- regras de exceção rotuladas como não ativas no exemplo;
+- objetivo único selecionado somente após ação explícita;
+- critérios escolhidos, revisáveis ou removíveis;
 - critérios protegidos e contextos pessoais excluídos;
 - público insuficiente sem ampliação automática;
 - orçamento total, limite diário, período e base principal separados;
-- estimativa agregada sem garantia;
+- estimativa provisória, datada e sujeita a recálculo;
+- renovação automática desativada como estado informativo;
 - primeiro resultado orgânico anterior ao anúncio;
 - natureza patrocinada anterior ao conteúdo;
+- controles da pessoa identificados como demonstração;
 - confirmações inicialmente desmarcadas;
 - envio sem aprovação, programação, entrega ou cobrança;
-- cancelamento com retorno ao rascunho e histórico preservado.
+- versão enviada em somente leitura;
+- cancelamento com revisão e confirmação separadas;
+- histórico preservado.
 
-A materialização móvel não está funcionalmente validada e não presume responsividade técnica.
+A configuração do anunciante passa a estar validada em computador e aplicativo móvel. A composição móvel não presume responsividade técnica.
 
 ### 6.5 Cartão e explicação validados
 
@@ -263,40 +271,19 @@ O conjunto demonstra:
 - nenhuma lista de visualizadores ou dados individuais;
 - nenhuma inferência de causalidade, impacto humano, confiança, qualidade ou evolução.
 
-### 6.9 Conjunto validado transversalmente
+### 6.9 Cobertura funcional consolidada
 
-A UXA-050 consolida 25 wireframes anteriormente validados em um percurso único:
+A UXA-050 permanece como autoridade transversal dos 25 wireframes examinados naquele incremento.
 
-```text
-elegibilidade
-→ configuração
-→ prévia e revisão
-→ avaliação
-→ programação
-→ entrega patrocinada identificada
-→ explicação e controles
-→ gestão e alteração material
-→ encerramento
-→ reconciliação
-→ relatório
-```
+A UXA-051 e a UXA-052 ampliam a cobertura para 30 wireframes materializados e funcionalmente validados por pacote.
 
-O conjunto transversal demonstra:
+A ampliação demonstra:
 
-- identificador único da campanha;
-- versão aprovada vinculada a eventos e relatório;
-- alteração material sem reescrita do histórico;
-- estados com gates e consequências conhecidos;
-- configuração e aprovação sem entrega automática;
-- prévia e unidade entregue materialmente compatíveis;
-- Lista e Mapa preservando a mesma consulta;
-- preferência negativa prevalecendo sobre entrega contratada;
-- controles da pessoa sem identificação para o anunciante;
-- orgânico e patrocinado separados até atribuição e relatório;
-- identidade contínua do Boost Social Financiado;
-- orçamento, saldo e reconciliação sem promessa financeira.
-
-Os cinco novos wireframes da UXA-051 ampliam a cobertura visual, mas não integram o conjunto funcionalmente validado até validação especializada posterior.
+- configuração do anunciante validada em computador e aplicativo móvel;
+- significado material preservado entre canais;
+- composição móvel própria, sem pressupor responsividade automática;
+- gestão da campanha validada somente para computador;
+- nenhuma nova validação transversal dos 30 artefatos iniciada automaticamente.
 
 ### 6.10 Preços candidatos preservados
 
@@ -338,6 +325,10 @@ Os cinco novos wireframes da UXA-051 ampliam a cobertura visual, mas não integr
 - saldo não é devolução confirmada;
 - impressão, clique, inscrição, atribuição e impacto são eventos distintos;
 - configuração móvel não seleciona opção ou confirmação automaticamente;
+- regras de exceção não aparecem como estados ativos;
+- renovação automática não aparece como consentimento;
+- controles da pessoa não são confundidos com ações do anunciante;
+- cancelamento móvel exige revisão e confirmação separadas;
 - retorno móvel preserva o rascunho sem confirmar escolha pendente;
 - wireframe, validação, teste e desenvolvimento permanecem atos separados.
 
@@ -347,11 +338,11 @@ Os cinco novos wireframes da UXA-051 ampliam a cobertura visual, mas não integr
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os cinco wireframes móveis da UXA-051;
-2. criar gestão móvel da campanha ativa;
-3. criar estados de erro, inventário insuficiente e preferência publicitária;
-4. definir protocolo de protótipo de baixa ou média fidelidade;
-5. preparar plano de teste com Pessoas, Organizações e Coletivos.
+1. criar gestão móvel da campanha ativa;
+2. criar estados de erro, inventário insuficiente e preferência publicitária;
+3. definir protocolo de protótipo de baixa ou média fidelidade;
+4. preparar plano de teste com Pessoas, Organizações e Coletivos;
+5. avaliar, em pacote separado, nova validação transversal dos 30 wireframes.
 
 ### 8.2 Modelo econômico e especialidades
 

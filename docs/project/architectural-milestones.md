@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.25.0
+version: 5.26.0
 owner: Guivos
 last_updated: 2026-08-02
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.27.0
+  - ROADMAP-12.28.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -28,6 +28,7 @@ related:
   - UXA-049
   - UXA-050
   - UXA-051
+  - UXA-052
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -47,6 +48,7 @@ related:
   - M7.51
   - M7.52
   - M7.53
+  - M7.54
 normative: false
 ---
 
@@ -82,43 +84,55 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.50 | Concluído | relatório agregado do Opportunity Boost materializado |
 | M7.51 | Concluído | relatório agregado funcionalmente validado e reformulado |
 | M7.52 | Concluído | conjunto completo de wireframes do Opportunity Boost funcionalmente validado |
-| M7.53 | Concluído neste incremento | configuração móvel do anunciante do Opportunity Boost materializada |
+| M7.53 | Concluído | configuração móvel do anunciante do Opportunity Boost materializada |
+| M7.54 | Concluído neste incremento | configuração móvel do anunciante funcionalmente validada e reformulada |
 
 ## 3. Marco vigente
 
-### Configuração Móvel do Anunciante do Opportunity Boost Materializada — M7.53
+### Configuração Móvel do Anunciante do Opportunity Boost Funcionalmente Validada e Reformulada — M7.54
 
 Critérios atendidos:
 
-- UXA-051 criada como referência móvel de baixa fidelidade;
-- cinco arquivos vetoriais criados em 390 × 844 pixels;
-- elegibilidade e gate de entrada materializados;
-- estados atendido, atendido com limite e bloqueado representados;
-- identidade da campanha e progresso preservados;
-- objetivo único sem seleção automática;
-- critérios escolhidos e revisáveis materializados;
+- UXA-052 criada como validação funcional especializada;
+- UXA-051 elevada para 0.2.0;
+- cinco arquivos vetoriais reformulados;
+- identidade da campanha, rascunho e versão enviada persistente;
+- progresso explícito de cinco etapas preservado;
+- retorno entre etapas sem confirmação silenciosa;
+- condição limitada ativa separada de bloqueio;
+- regras de exceção rotuladas como não ativas no exemplo;
+- objetivo selecionado somente após ação explícita;
+- critérios escolhidos revisáveis ou removíveis;
 - critérios protegidos e contextos pessoais excluídos;
 - público insuficiente sem expansão automática;
-- orçamento total, limite diário, período e base principal materializados;
+- orçamento total, limite diário, período e base principal separados;
 - CPM e CPC mantidos como bases não simultâneas;
-- estimativa agregada sem garantia;
+- estimativa provisória, datada e sujeita a recálculo;
+- renovação automática desativada como estado informativo;
 - primeiro resultado orgânico anterior ao anúncio;
-- natureza patrocinada anterior ao conteúdo;
+- controles da pessoa identificados como demonstração;
 - confirmações afirmativas inicialmente desmarcadas;
 - envio separado de aprovação, programação, entrega e cobrança;
-- cancelamento com retorno ao rascunho e histórico preservado;
-- nenhuma responsividade técnica presumida;
-- validação funcional dos cinco artefatos não iniciada;
+- versão enviada em somente leitura;
+- cancelamento com revisão e confirmação separadas;
+- histórico e versão enviada preservados;
+- configuração do anunciante validada em computador e aplicativo móvel;
+- 30 wireframes do Boost materializados e validados por pacote;
 - gestão móvel da campanha não materializada;
+- nenhuma nova validação transversal dos 30 artefatos iniciada;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Configuração Móvel do Anunciante do Opportunity Boost Materializada — M7.53
+
+A UXA-051 permanece como autoridade da materialização visual, reformulada e validada pela UXA-052.
+
 ### Conjunto Completo de Wireframes do Opportunity Boost Funcionalmente Validado — M7.52
 
-A UXA-050 permanece como autoridade da validação transversal dos 25 wireframes anteriores. Os cinco novos artefatos da UXA-051 ainda não integram esse conjunto validado.
+A UXA-050 permanece como autoridade da validação transversal dos 25 wireframes examinados naquele incremento. A UXA-052 valida os cinco novos artefatos móveis sem alterar retrospectivamente o escopo da UXA-050.
 
 ### Relatório Agregado Funcionalmente Validado e Reformulado — M7.51
 
@@ -196,7 +210,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-051; configuração móvel materializada e aguardando validação |
+| Arquitetura da Experiência | ativa até UXA-052; configuração móvel validada e reformulada |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -206,11 +220,11 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Estados residuais e protótipo
 
-1. validação funcional e reformulação dos cinco wireframes móveis da UXA-051;
-2. gestão móvel da campanha ativa;
-3. estados de erro, inventário insuficiente e preferência publicitária;
-4. protocolo de protótipo de baixa ou média fidelidade;
-5. plano de teste com Pessoas, Organizações e Coletivos.
+1. gestão móvel da campanha ativa;
+2. estados de erro, inventário insuficiente e preferência publicitária;
+3. protocolo de protótipo de baixa ou média fidelidade;
+4. plano de teste com Pessoas, Organizações e Coletivos;
+5. eventual nova validação transversal dos 30 wireframes.
 
 ### Modelo econômico e especialidades
 

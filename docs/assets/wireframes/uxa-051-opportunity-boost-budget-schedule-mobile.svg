@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Orçamento e duração móveis do Opportunity Boost</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com etapa três de cinco, orçamento, limite diário, período, base principal e estimativa sem garantia.</desc>
+  <title id="title">Orçamento e duração móveis validados do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel reformulado com identidade persistente, etapa três de cinco, condição limitada preservada, orçamento, período, base principal, estimativa versionada e renovação automática desativada como estado.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
@@ -10,50 +10,52 @@
   <line x1="20" y1="102" x2="230" y2="102" stroke="#111111" stroke-width="4"/>
   <line x1="234" y1="102" x2="370" y2="102" stroke="#cccccc" stroke-width="4"/>
 
-  <rect x="20" y="120" width="350" height="72" rx="8" fill="#f3f3f3" stroke="#555555"/>
-  <text x="34" y="144" font-family="Arial" font-size="10" font-weight="700">Objetivo: levar pessoas ao detalhe</text>
-  <text x="34" y="164" font-family="Arial" font-size="9">Métrica principal: clique válido</text>
-  <text x="34" y="183" font-family="Arial" font-size="9">Base candidata derivada: CPC</text>
+  <rect x="20" y="118" width="350" height="82" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="141" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · rascunho v1</text>
+  <text x="34" y="161" font-family="Arial" font-size="9">Objetivo: levar pessoas ao detalhe · métrica: clique válido</text>
+  <text x="34" y="180" font-family="Arial" font-size="9">Base candidata: CPC · condição limitada permanece ativa</text>
+  <text x="350" y="193" text-anchor="end" font-family="Arial" font-size="8">Rascunho salvo</text>
 
-  <text x="20" y="222" font-family="Arial" font-size="13" font-weight="700">Defina limites</text>
+  <text x="20" y="226" font-family="Arial" font-size="13" font-weight="700">Defina limites revisáveis</text>
 
-  <rect x="20" y="238" width="168" height="70" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="34" y="260" font-family="Arial" font-size="9">Orçamento total</text>
-  <text x="34" y="287" font-family="Arial" font-size="16" font-weight="700">R$ 300,00</text>
+  <rect x="20" y="240" width="168" height="66" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="261" font-family="Arial" font-size="9">Orçamento total</text>
+  <text x="34" y="286" font-family="Arial" font-size="16" font-weight="700">R$ 300,00</text>
 
-  <rect x="202" y="238" width="168" height="70" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="216" y="260" font-family="Arial" font-size="9">Limite diário</text>
-  <text x="216" y="287" font-family="Arial" font-size="16" font-weight="700">R$ 30,00</text>
+  <rect x="202" y="240" width="168" height="66" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="216" y="261" font-family="Arial" font-size="9">Limite diário</text>
+  <text x="216" y="286" font-family="Arial" font-size="16" font-weight="700">R$ 30,00</text>
 
-  <rect x="20" y="320" width="168" height="70" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="34" y="342" font-family="Arial" font-size="9">Início</text>
-  <text x="34" y="369" font-family="Arial" font-size="14" font-weight="700">05/08/2026</text>
+  <rect x="20" y="318" width="168" height="66" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="339" font-family="Arial" font-size="9">Início</text>
+  <text x="34" y="364" font-family="Arial" font-size="14" font-weight="700">05/08/2026</text>
 
-  <rect x="202" y="320" width="168" height="70" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="216" y="342" font-family="Arial" font-size="9">Término</text>
-  <text x="216" y="369" font-family="Arial" font-size="14" font-weight="700">14/08/2026</text>
+  <rect x="202" y="318" width="168" height="66" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="216" y="339" font-family="Arial" font-size="9">Término</text>
+  <text x="216" y="364" font-family="Arial" font-size="14" font-weight="700">14/08/2026</text>
 
-  <rect x="20" y="406" width="350" height="102" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="34" y="430" font-family="Arial" font-size="11" font-weight="700">Base principal da campanha</text>
-  <text x="34" y="454" font-family="Arial" font-size="13" font-weight="700">CPC · clique válido</text>
-  <text x="34" y="475" font-family="Arial" font-size="9">Uma única base principal. CPM e CPC não são simultâneos.</text>
-  <text x="34" y="495" font-family="Arial" font-size="9">A base não muda silenciosamente após a revisão.</text>
+  <rect x="20" y="398" width="350" height="92" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="421" font-family="Arial" font-size="11" font-weight="700">Base principal da campanha</text>
+  <text x="34" y="445" font-family="Arial" font-size="13" font-weight="700">CPC · clique válido</text>
+  <text x="34" y="466" font-family="Arial" font-size="9">Uma única base principal; CPM e CPC não são simultâneos.</text>
+  <text x="34" y="483" font-family="Arial" font-size="8">Alterar objetivo exige recalcular base e estimativa.</text>
 
-  <rect x="20" y="524" width="350" height="122" rx="8" fill="#f3f3f3" stroke="#555555"/>
-  <text x="34" y="549" font-family="Arial" font-size="11" font-weight="700">Estimativa agregada</text>
-  <text x="34" y="574" font-family="Arial" font-size="14" font-weight="700">210 a 360 cliques candidatos</text>
-  <text x="34" y="596" font-family="Arial" font-size="9">Estimativa baseada nos critérios e capacidade atuais.</text>
-  <text x="34" y="616" font-family="Arial" font-size="9">Não garante entrega, clique, inscrição ou impacto.</text>
-  <text x="34" y="636" font-family="Arial" font-size="8">Orçamento mínimo candidato atendido.</text>
+  <rect x="20" y="504" width="350" height="128" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="528" font-family="Arial" font-size="11" font-weight="700">Estimativa agregada · cálculo provisório</text>
+  <text x="34" y="553" font-family="Arial" font-size="14" font-weight="700">210 a 360 cliques candidatos</text>
+  <text x="34" y="574" font-family="Arial" font-size="9">Calculada com critérios, capacidade e valores atuais.</text>
+  <text x="34" y="594" font-family="Arial" font-size="9">Atualizada em 02/08/2026 às 17:22 · poderá mudar na revisão.</text>
+  <text x="34" y="614" font-family="Arial" font-size="9">Não garante entrega, clique, inscrição ou impacto.</text>
+  <text x="34" y="628" font-family="Arial" font-size="8">Orçamento mínimo candidato atendido; período não é prorrogado.</text>
 
-  <rect x="20" y="662" width="350" height="54" rx="8" fill="#ffffff" stroke="#777777"/>
-  <rect x="34" y="681" width="12" height="12" fill="#ffffff" stroke="#111111"/>
-  <text x="56" y="691" font-family="Arial" font-size="9">Renovação automática permanece desativada.</text>
-  <text x="56" y="706" font-family="Arial" font-size="8">Nenhuma confirmação é concedida por este campo.</text>
+  <rect x="20" y="648" width="350" height="68" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="672" font-family="Arial" font-size="9" font-weight="700">RENOVAÇÃO AUTOMÁTICA: DESATIVADA POR PADRÃO</text>
+  <text x="34" y="694" font-family="Arial" font-size="9">Este é um estado informativo, não uma caixa de confirmação.</text>
+  <text x="34" y="710" font-family="Arial" font-size="8">Nenhum novo orçamento será criado automaticamente.</text>
 
-  <rect x="20" y="734" width="350" height="48" rx="8" fill="#111111"/>
-  <text x="195" y="763" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#ffffff">REVISAR PRÉVIA</text>
-  <text x="20" y="807" font-family="Arial" font-size="9" text-decoration="underline">Voltar aos critérios</text>
-  <text x="370" y="807" text-anchor="end" font-family="Arial" font-size="9">Valores revisáveis</text>
-  <text x="20" y="832" font-family="Arial" font-size="8">Valores ilustrativos não constituem cobrança autorizada.</text>
+  <rect x="20" y="732" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="761" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#ffffff">REVISAR PRÉVIA</text>
+  <text x="20" y="805" font-family="Arial" font-size="9" text-decoration="underline">Voltar aos critérios</text>
+  <text x="370" y="805" text-anchor="end" font-family="Arial" font-size="9">Valores revisáveis</text>
+  <text x="20" y="831" font-family="Arial" font-size="8">Valores ilustrativos não constituem cobrança autorizada.</text>
 </svg>
