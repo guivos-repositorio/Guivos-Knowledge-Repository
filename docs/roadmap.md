@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.22.0
-title: Roadmap Arquitetural — Gestão da Campanha Ativa do Opportunity Boost Materializada
+id: ROADMAP-12.23.0
+title: Roadmap Arquitetural — Gestão da Campanha Ativa Funcionalmente Validada
 status: active
-version: 12.22.0
+version: 12.23.0
 owner: Guivos
 last_updated: 2026-08-01
 supersedes_partial:
-  - ROADMAP-12.21.0
+  - ROADMAP-12.22.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -25,14 +25,15 @@ related:
   - UXA-044
   - UXA-045
   - UXA-046
+  - UXA-047
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.48
+  - M7.49
 ---
 
-# Roadmap Arquitetural — Gestão da Campanha Ativa do Opportunity Boost Materializada
+# Roadmap Arquitetural — Gestão da Campanha Ativa Funcionalmente Validada
 
 ## 1. Autoridade
 
@@ -43,13 +44,14 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | gestão da campanha ativa do Opportunity Boost materializada | M7.48 |
+| Marco | gestão da campanha ativa funcionalmente validada e reformulada | M7.49 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
-| Gestão da campanha ativa | seis wireframes para computador criados; validação pendente | UXA-046 |
+| Gestão da campanha ativa | seis wireframes validados e reformulados | UXA-046; UXA-047 |
+| Relatório agregado | ainda não materializado | — |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -75,7 +77,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 12. fluxo do anunciante materializado, validado e reformulado;
 13. cartão patrocinado e explicação materializados, validados e reformulados;
 14. estados patrocinados de Lista e Mapa materializados, validados e reformulados;
-15. gestão da campanha ativa materializada em seis wireframes.
+15. gestão da campanha ativa materializada em seis wireframes;
+16. gestão da campanha ativa funcionalmente validada e reformulada.
 
 ## 4. Sequência pessoal vigente
 
@@ -153,14 +156,14 @@ A UXA-042 reformulada e a UXA-043 validam cartões e explicações em móvel e c
 
 A UXA-044 reformulada e a UXA-045 validam uma única consulta territorial, contagens separadas, preferência publicitária distinta dos filtros, marcadores próprios, seleção sem alteração da ordem, localização opcional e gate `Pesquisar nesta área`.
 
-### 6.6 Gestão da campanha ativa materializada
+### 6.6 Gestão da campanha ativa validada
 
-A UXA-046 cria:
+A UXA-046 reformulada e a UXA-047 validam:
 
 ```text
 campanha programada
 → campanha ativa
-→ campanha limitada
+→ campanha ativa com entrega reduzida
 → campanha pausada
 → alteração material
 → encerramento e cancelamento
@@ -168,19 +171,21 @@ campanha programada
 
 O conjunto demonstra:
 
-- programação sem entrega;
-- orçamento reservado, utilizado e saldo separados;
+- programação sem entrega e ativação condicionada aos gates;
+- orçamento total, reservado, utilizado e saldo não utilizado separados;
 - estado ativo sem garantia de resultado;
-- indicadores operacionais distintos de relatório agregado;
-- limitação sem aceleração do orçamento;
+- indicadores operacionais com período e atualização;
+- limitação sem aceleração do orçamento, aumento do limite diário ou ampliação do período;
 - pausa voluntária, automática e suspensão por política separadas;
-- condição explícita para retomada;
+- novos eventos interrompidos durante a pausa, com eventos válidos preservados;
+- período podendo continuar e expirar durante a pausa;
+- retomada bloqueada até resolução e verificação da causa;
 - alteração material com comparação e nova avaliação;
-- eventos válidos e histórico preservados;
-- cancelamento com confirmação proporcional;
-- saldo e reconciliação ainda candidatos.
-
-Os seis wireframes ainda não foram funcionalmente validados.
+- descarte de alteração sem retomada automática;
+- cancelamento bloqueado até motivo e confirmações completas;
+- estados finais separados e histórico preservado;
+- saldo e reconciliação ainda candidatos;
+- relatório agregado ainda não criado.
 
 ### 6.7 Preços candidatos preservados
 
@@ -207,8 +212,8 @@ Os seis wireframes ainda não foram funcionalmente validados.
 - marcador patrocinado não encobre oportunidade orgânica;
 - movimentação do Mapa não autoriza localização ou nova consulta;
 - baixa oferta orgânica reduz publicidade;
-- limitação não acelera orçamento;
-- pausa interrompe entrega futura;
+- limitação não acelera orçamento ou amplia limite diário;
+- pausa interrompe novos eventos de entrega;
 - alteração material impede entrega desatualizada;
 - cancelamento preserva eventos válidos e histórico;
 - saldo não é devolução confirmada;
@@ -221,12 +226,11 @@ Os seis wireframes ainda não foram funcionalmente validados.
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-046;
-2. criar wireframe do relatório agregado;
-3. validar funcionalmente o conjunto completo de wireframes;
-4. criar estados móveis de gestão, se priorizados;
-5. criar estados de erro, inventário insuficiente e preferência publicitária;
-6. testar disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+1. criar o wireframe do relatório agregado;
+2. validar funcionalmente o conjunto completo de wireframes;
+3. criar estados móveis de gestão, se priorizados;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. testar disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
 
 ### 8.2 Modelo econômico e especialidades
 
