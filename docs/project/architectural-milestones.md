@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.20.0
+version: 5.21.0
 owner: Guivos
 last_updated: 2026-08-01
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.22.0
+  - ROADMAP-12.23.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -23,6 +23,7 @@ related:
   - UXA-044
   - UXA-045
   - UXA-046
+  - UXA-047
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -37,6 +38,7 @@ related:
   - M7.46
   - M7.47
   - M7.48
+  - M7.49
 normative: false
 ---
 
@@ -67,33 +69,41 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.45 | Concluído | cartão patrocinado e explicação validados e reformulados |
 | M7.46 | Concluído | estados patrocinados de Lista e Mapa materializados |
 | M7.47 | Concluído | estados patrocinados de Lista e Mapa validados e reformulados |
-| M7.48 | Concluído neste incremento | gestão da campanha ativa materializada |
+| M7.48 | Concluído | gestão da campanha ativa materializada |
+| M7.49 | Concluído neste incremento | gestão da campanha ativa funcionalmente validada e reformulada |
 
 ## 3. Marco vigente
 
-### Gestão da Campanha Ativa do Opportunity Boost Materializada — M7.48
+### Gestão da Campanha Ativa Funcionalmente Validada e Reformulada — M7.49
 
 Critérios atendidos:
 
-- UXA-046 criada como referência visual de baixa fidelidade;
-- seis arquivos vetoriais para computador criados;
-- campanha programada materializada sem entrega iniciada;
-- campanha ativa materializada com orçamento, período e proteções;
-- campanha limitada materializada sem aceleração do orçamento;
-- campanha pausada materializada com causa, consequência e retomada;
-- alteração material comparando versão aprovada e alterada;
-- encerramento e cancelamento com confirmação proporcional;
-- orçamento total, utilizado e saldo apresentados separadamente;
-- indicadores operacionais separados do relatório agregado;
-- eventos válidos e histórico preservados;
+- UXA-046 elevada para 0.2.0;
+- UXA-047 criada como validação funcional especializada;
+- seis arquivos vetoriais para computador reformulados;
+- programação distinguida de ativação e condicionada aos gates;
+- indicadores operacionais associados a período e atualização;
+- limitação apresentada como campanha ativa com entrega reduzida;
+- limite diário preservado e período sem prorrogação automática;
+- pausa reformulada como interrupção de novos eventos de entrega;
+- eventos válidos anteriores preservados para apuração posterior;
+- período podendo continuar e expirar durante a pausa;
+- retomada bloqueada até resolução e verificação da causa;
+- descarte de alteração sem retomada automática;
+- cancelamento bloqueado até motivo e confirmações completas;
+- suspensão por política incluída entre os estados finais;
+- registro operacional preservado sem relatório agregado antecipado;
 - tratamento do saldo e reconciliação mantidos como candidatos;
-- validação funcional dos seis artefatos não iniciada;
 - relatório agregado não criado;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Gestão da Campanha Ativa Materializada — M7.48
+
+A UXA-046 permanece como autoridade da materialização visual, reformulada pela UXA-047.
 
 ### Estados Patrocinados de Lista e Mapa Funcionalmente Validados e Reformulados — M7.47
 
@@ -155,7 +165,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-046; gestão da campanha aguardando validação |
+| Arquitetura da Experiência | ativa até UXA-047; relatório agregado ainda não materializado |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -165,12 +175,11 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Telas do Opportunity Boost
 
-1. validação funcional e reformulação dos wireframes da UXA-046;
-2. wireframe do relatório agregado;
-3. validação funcional do conjunto completo de wireframes;
-4. estados móveis de gestão, se priorizados;
-5. estados de erro, inventário insuficiente e preferência publicitária;
-6. testes posteriores de disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+1. wireframe do relatório agregado;
+2. validação funcional do conjunto completo de wireframes;
+3. estados móveis de gestão, se priorizados;
+4. estados de erro, inventário insuficiente e preferência publicitária;
+5. testes posteriores de disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
 
 ### Modelo econômico e especialidades
 
