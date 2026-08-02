@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Objetivo e critérios móveis do Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com etapa dois de cinco, objetivo único escolhido conscientemente, critérios permitidos revisáveis e critérios protegidos excluídos.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
+  <text x="20" y="59" font-family="Arial" font-size="10">OPPORTUNITY BOOST · CONFIGURAÇÃO MÓVEL</text>
+  <text x="20" y="88" font-family="Arial" font-size="19" font-weight="700">Objetivo e critérios</text>
+  <text x="350" y="87" text-anchor="end" font-family="Arial" font-size="10">ETAPA 2 DE 5</text>
+  <line x1="20" y1="102" x2="160" y2="102" stroke="#111111" stroke-width="4"/>
+  <line x1="164" y1="102" x2="370" y2="102" stroke="#cccccc" stroke-width="4"/>
+
+  <rect x="20" y="120" width="350" height="58" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="144" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · Formação de jovens</text>
+  <text x="34" y="164" font-family="Arial" font-size="9">Nenhuma opção vem selecionada automaticamente.</text>
+
+  <text x="20" y="208" font-family="Arial" font-size="13" font-weight="700">Escolha um objetivo principal</text>
+
+  <rect x="20" y="222" width="350" height="46" rx="7" fill="#ffffff" stroke="#777777"/>
+  <circle cx="40" cy="245" r="7" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <circle cx="40" cy="245" r="3" fill="#111111"/>
+  <text x="58" y="242" font-family="Arial" font-size="10" font-weight="700">Levar pessoas ao detalhe</text>
+  <text x="58" y="258" font-family="Arial" font-size="8">Escolhido nesta etapa · métrica: clique válido</text>
+
+  <rect x="20" y="276" width="350" height="40" rx="7" fill="#ffffff" stroke="#aaaaaa"/>
+  <circle cx="40" cy="296" r="7" fill="#ffffff" stroke="#777777"/>
+  <text x="58" y="300" font-family="Arial" font-size="10">Ampliar visualizações válidas</text>
+
+  <rect x="20" y="324" width="350" height="40" rx="7" fill="#ffffff" stroke="#aaaaaa"/>
+  <circle cx="40" cy="344" r="7" fill="#ffffff" stroke="#777777"/>
+  <text x="58" y="348" font-family="Arial" font-size="10">Estimular interesse ou inscrição</text>
+
+  <text x="20" y="394" font-family="Arial" font-size="13" font-weight="700">Critérios escolhidos</text>
+  <text x="370" y="394" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Revisar</text>
+
+  <rect x="20" y="408" width="350" height="94" rx="8" fill="#ffffff" stroke="#777777"/>
+  <rect x="34" y="426" width="12" height="12" fill="#111111"/>
+  <text x="56" y="436" font-family="Arial" font-size="10">Região: Belo Horizonte e entorno</text>
+  <rect x="34" y="450" width="12" height="12" fill="#111111"/>
+  <text x="56" y="460" font-family="Arial" font-size="10">Categoria: formação e tecnologia</text>
+  <rect x="34" y="474" width="12" height="12" fill="#111111"/>
+  <text x="56" y="484" font-family="Arial" font-size="10">Modalidade: presencial e gratuita</text>
+  <text x="34" y="498" font-family="Arial" font-size="8">Origem: informações objetivas da oportunidade.</text>
+
+  <rect x="20" y="518" width="350" height="98" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="542" font-family="Arial" font-size="10" font-weight="700">Critérios nunca utilizados</text>
+  <text x="34" y="563" font-family="Arial" font-size="9">Relato protegido · compreensão inicial</text>
+  <text x="34" y="582" font-family="Arial" font-size="9">Momento Atual · Próximo Passo · inferências sensíveis</text>
+  <text x="34" y="602" font-family="Arial" font-size="8">Não aparecem como opções e não alimentam estimativas.</text>
+
+  <rect x="20" y="632" width="350" height="68" rx="8" fill="#ffffff" stroke="#777777" stroke-dasharray="5 4"/>
+  <text x="34" y="655" font-family="Arial" font-size="10" font-weight="700">Público insuficiente</text>
+  <text x="34" y="675" font-family="Arial" font-size="9">Limita ou bloqueia. Critérios não são ampliados automaticamente.</text>
+  <text x="34" y="693" font-family="Arial" font-size="9" text-decoration="underline">Ver regra de exceção</text>
+
+  <rect x="20" y="720" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="749" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#ffffff">CONTINUAR PARA ORÇAMENTO</text>
+  <text x="20" y="794" font-family="Arial" font-size="9" text-decoration="underline">Voltar aos gates</text>
+  <text x="370" y="794" text-anchor="end" font-family="Arial" font-size="9">Objetivo revisável</text>
+  <text x="20" y="832" font-family="Arial" font-size="8">Objetivo não autoriza relevância pessoal, confiança ou impacto.</text>
+</svg>
