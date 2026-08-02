@@ -4106,10 +4106,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#58-opportunity-boost-relatorio-agregado-pendente-de-validacao" class="md-nav__link">
+  <a href="#58-opportunity-boost-relatorio-agregado-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.8 Opportunity Boost — relatório agregado pendente de validação
+        5.8 Opportunity Boost — relatório agregado validado
       
     </span>
   </a>
@@ -8451,10 +8451,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#58-opportunity-boost-relatorio-agregado-pendente-de-validacao" class="md-nav__link">
+  <a href="#58-opportunity-boost-relatorio-agregado-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.8 Opportunity Boost — relatório agregado pendente de validação
+        5.8 Opportunity Boost — relatório agregado validado
       
     </span>
   </a>
@@ -8661,7 +8661,7 @@
 <li>gestão da campanha ativa — UXA-046;</li>
 <li>validação e reformulação da gestão da campanha ativa — UXA-047;</li>
 <li>relatório agregado — UXA-048;</li>
-<li>validação do relatório agregado — pendente.</li>
+<li>validação e reformulação do relatório agregado — UXA-049.</li>
 </ol>
 <h2 id="4-natureza-dos-artefatos">4. Natureza dos artefatos<a class="headerlink" href="#4-natureza-dos-artefatos" title="Permanent link">&para;</a></h2>
 <p>Os wireframes:</p>
@@ -8789,24 +8789,31 @@
 <li>saldo mantido como candidato, não como devolução confirmada;</li>
 <li>relatório agregado explicitamente ainda não criado.</li>
 </ul>
-<h3 id="58-opportunity-boost-relatorio-agregado-pendente-de-validacao">5.8 Opportunity Boost — relatório agregado pendente de validação<a class="headerlink" href="#58-opportunity-boost-relatorio-agregado-pendente-de-validacao" title="Permanent link">&para;</a></h3>
-<p>A UXA-048 deverá ser validada quanto a:</p>
+<h3 id="58-opportunity-boost-relatorio-agregado-validado">5.8 Opportunity Boost — relatório agregado validado<a class="headerlink" href="#58-opportunity-boost-relatorio-agregado-validado" title="Permanent link">&para;</a></h3>
+<p>A UXA-049 confirmou, após reformulação:</p>
 <ul>
-<li>entrega, interação, atribuição candidata e autorrelato serem distinguíveis;</li>
-<li>orçamento total, utilizado e saldo não utilizado terem significados claros;</li>
-<li>impressões, cliques, salvamentos, interesses e inscrições possuírem rótulo e período;</li>
-<li>ausência de dado aparecer como <code>não disponível</code>, nunca como zero artificial;</li>
-<li>origem instrumentada, calculada, declarada e indisponível ser compreensível;</li>
-<li>atribuição candidata não parecer prova causal;</li>
-<li>origem orgânica permanecer preservada;</li>
-<li>dupla atribuição silenciosa permanecer proibida;</li>
-<li>autorrelato não ser somado a eventos instrumentados;</li>
-<li>dados provisórios, em revisão e reconciliados serem distinguíveis;</li>
-<li>eventos válidos, invalidados e em revisão serem separados;</li>
-<li>saldo continuar candidato, sem promessa de crédito ou devolução;</li>
-<li>lista de visualizadores e dados individuais permanecerem ausentes;</li>
-<li>conversão não ser apresentada como impacto humano;</li>
-<li>versão móvel preservar hierarquia, linguagem e limites.</li>
+<li>entrega, interação, atribuição candidata e autorrelato distinguíveis;</li>
+<li>proveniência e estado apresentados junto de cada camada;</li>
+<li>orçamento total, utilizado e saldo não utilizado com significados claros;</li>
+<li>impressões, cliques, salvamentos, interesses e inscrições com rótulo, unidade e período;</li>
+<li><code>não disponível</code>, <code>não exibido por agregação</code> e zero separados;</li>
+<li>supressão sem confirmação de existência ou ausência individual;</li>
+<li>limiar definitivo preservado para política especializada;</li>
+<li>atribuição candidata apresentada em agregados por tipo de evento;</li>
+<li>nenhuma linha representando pessoa ou sequência individual;</li>
+<li>versão da regra candidata vinculada ao período consultado;</li>
+<li>associação patrocinada, origem orgânica e origem indeterminada preservadas;</li>
+<li>dupla atribuição silenciosa proibida;</li>
+<li>autorrelato declarado e não verificado automaticamente;</li>
+<li>autorrelato não somado a eventos instrumentados;</li>
+<li>quantidade declarada sujeita a supressão;</li>
+<li>dados provisórios, em revisão, parcialmente reconciliados e reconciliados distinguíveis;</li>
+<li>reconciliação separada por tipo e unidade de evento;</li>
+<li>impressões e cliques não somados em total heterogêneo;</li>
+<li>saldo candidato sem promessa de crédito ou devolução;</li>
+<li>lista de visualizadores e dados individuais ausentes;</li>
+<li>conversão, causalidade e impacto humano não inferidos;</li>
+<li>versão móvel preservando hierarquia, proveniência, linguagem e limites.</li>
 </ul>
 <h3 id="59-autonomia">5.9 Autonomia<a class="headerlink" href="#59-autonomia" title="Permanent link">&para;</a></h3>
 <ul>
@@ -8816,7 +8823,7 @@
 <li>Denúncia, contestação e preferência são ações distintas?</li>
 <li>O anunciante pode pausar, retomar ou cancelar com efeito conhecido?</li>
 <li>Alteração material não força confirmação ou nova entrega?</li>
-<li>O anunciante pode consultar dados ausentes sem ser induzido a inferir zero ou causa?</li>
+<li>O anunciante pode consultar dados ausentes ou suprimidos sem ser induzido a inferir zero ou causa?</li>
 </ul>
 <h3 id="510-continuidade">5.10 Continuidade<a class="headerlink" href="#510-continuidade" title="Permanent link">&para;</a></h3>
 <ul>
@@ -8930,6 +8937,18 @@
 <tr>
 <td>estado <code>não disponível</code></td>
 <td>ausência de dado sem substituição por zero</td>
+</tr>
+<tr>
+<td>estado <code>não exibido por agregação</code></td>
+<td>supressão de contagem sem confirmação individual</td>
+</tr>
+<tr>
+<td>regra candidata versionada</td>
+<td>método e período preservados no histórico</td>
+</tr>
+<tr>
+<td>agregado por tipo de evento</td>
+<td>mensuração sem linha ou sequência individual</td>
 </tr>
 </tbody>
 </table>
@@ -9183,7 +9202,13 @@
 <td>Relatório agregado</td>
 <td>UXA-048</td>
 <td>painel institucional</td>
-<td>quatro arquivos vetoriais para computador e móvel</td>
+<td>quatro arquivos vetoriais reformulados</td>
+</tr>
+<tr>
+<td>Validação do relatório agregado</td>
+<td>UXA-049</td>
+<td>painel institucional</td>
+<td>validação funcional especializada</td>
 </tr>
 </tbody>
 </table>
@@ -9195,13 +9220,12 @@
 <p>A UXA-042 reformulada e a UXA-043 demonstram cartão, explicação, controles e variação social funcionalmente válidos.</p>
 <p>A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcionalmente válidos em móvel e computador.</p>
 <p>A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente válida em seis estados para computador.</p>
-<p>A UXA-048 materializa o relatório agregado em quatro estados para computador e móvel, ainda sem validação funcional própria.</p>
+<p>A UXA-048 reformulada e a UXA-049 demonstram relatório agregado funcionalmente válido em quatro estados para computador e móvel.</p>
 <h2 id="11-limites">11. Limites<a class="headerlink" href="#11-limites" title="Permanent link">&para;</a></h2>
-<p>Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.</p>
+<p>Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, agregação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.</p>
 <h2 id="12-proximos-pontos-de-decisao">12. Próximos pontos de decisão<a class="headerlink" href="#12-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos exigem autorizações separadas:</p>
 <ol>
-<li>validar funcionalmente e reformular os wireframes da UXA-048;</li>
 <li>validar funcionalmente o conjunto completo do Opportunity Boost;</li>
 <li>criar estados móveis adicionais de gestão, se priorizados;</li>
 <li>criar estados de erro, inventário insuficiente e preferência publicitária;</li>

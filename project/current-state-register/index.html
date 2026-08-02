@@ -590,10 +590,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#68-relatorio-agregado-materializado" class="md-nav__link">
+  <a href="#68-relatorio-agregado-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.8 Relatório agregado materializado
+        6.8 Relatório agregado validado
       
     </span>
   </a>
@@ -8457,10 +8457,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#68-relatorio-agregado-materializado" class="md-nav__link">
+  <a href="#68-relatorio-agregado-validado" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6.8 Relatório agregado materializado
+        6.8 Relatório agregado validado
       
     </span>
   </a>
@@ -8550,8 +8550,8 @@
 </tr>
 <tr>
 <td>Marco atual</td>
-<td>relatório agregado do Opportunity Boost materializado</td>
-<td>M7.50; UXA-048</td>
+<td>relatório agregado do Opportunity Boost funcionalmente validado e reformulado</td>
+<td>M7.51; UXA-048; UXA-049</td>
 </tr>
 <tr>
 <td>Remediação</td>
@@ -8575,8 +8575,8 @@
 </tr>
 <tr>
 <td>Arquitetura da Experiência</td>
-<td>ativa até UXA-048</td>
-<td>UXA-000 a UXA-048</td>
+<td>ativa até UXA-049</td>
+<td>UXA-000 a UXA-049</td>
 </tr>
 <tr>
 <td>Home pública</td>
@@ -8655,8 +8655,8 @@
 </tr>
 <tr>
 <td>Relatório agregado</td>
-<td>quatro wireframes para computador e móvel criados; validação pendente</td>
-<td>UXA-048</td>
+<td>quatro wireframes para computador e móvel funcionalmente validados e reformulados</td>
+<td>UXA-048; UXA-049</td>
 </tr>
 <tr>
 <td>Preço do Boost</td>
@@ -8911,8 +8911,8 @@ Business Capabilities: not started
 <li>histórico e registro operacional preservados;</li>
 <li>tratamento do saldo e reconciliação mantidos como candidatos.</li>
 </ul>
-<h3 id="68-relatorio-agregado-materializado">6.8 Relatório agregado materializado<a class="headerlink" href="#68-relatorio-agregado-materializado" title="Permanent link">&para;</a></h3>
-<p>A UXA-048 cria quatro referências:</p>
+<h3 id="68-relatorio-agregado-validado">6.8 Relatório agregado validado<a class="headerlink" href="#68-relatorio-agregado-validado" title="Permanent link">&para;</a></h3>
+<p>A UXA-048 reformulada e a UXA-049 validam quatro referências:</p>
 <ol>
 <li>visão geral agregada para computador;</li>
 <li>atribuição candidata e autorrelato para computador;</li>
@@ -8922,20 +8922,24 @@ Business Capabilities: not started
 <p>O conjunto demonstra:</p>
 <ul>
 <li>entrega, interação, atribuição candidata e autorrelato em camadas distintas;</li>
+<li>proveniência e estado visíveis junto de cada camada;</li>
 <li>orçamento total, utilizado e saldo não utilizado separados;</li>
-<li>período consultado, atualização e estado provisório visíveis;</li>
+<li>período consultado, atualização e versão da regra candidata visíveis;</li>
 <li>impressões, cliques, salvamentos, interesses e inscrições com significado próprio;</li>
-<li>atribuição candidata como associação técnica revisável, não prova causal;</li>
-<li>origem patrocinada, orgânica e indeterminada preservadas;</li>
+<li><code>não disponível</code>, <code>não exibido por agregação</code> e zero separados;</li>
+<li>detalhamento por origem condicionado à regra de agregação;</li>
+<li>atribuição apresentada em agregados por tipo de evento;</li>
+<li>nenhuma linha representando pessoa ou sequência individual;</li>
+<li>associação patrocinada, origem orgânica e origem indeterminada preservadas;</li>
 <li>dupla atribuição silenciosa proibida;</li>
-<li>autorrelato identificado e não somado a eventos instrumentados;</li>
-<li>ausência de dado apresentada como <code>não disponível</code>, não como zero;</li>
-<li>eventos válidos, invalidados e em revisão separados;</li>
+<li>autorrelato identificado, não verificado automaticamente e não somado;</li>
+<li>quantidade declarada sujeita a supressão;</li>
+<li>dados provisórios, em revisão, parcialmente reconciliados e reconciliados separados;</li>
+<li>reconciliação separada por tipo e unidade de evento;</li>
 <li>saldo, crédito, estorno e devolução mantidos como candidatos;</li>
 <li>ausência de lista de visualizadores e dados individuais;</li>
-<li>impacto humano, confiança, qualidade e evolução não inferidos.</li>
+<li>causalidade, impacto humano, confiança, qualidade e evolução não inferidos.</li>
 </ul>
-<p>Os quatro artefatos ainda exigem validação funcional própria.</p>
 <h2 id="7-protecoes-vigentes">7. Proteções vigentes<a class="headerlink" href="#7-protecoes-vigentes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>gratuito permanece útil;</li>
@@ -8953,7 +8957,9 @@ Business Capabilities: not started
 <li>alteração material impede entrega desatualizada;</li>
 <li>cancelamento preserva eventos válidos e histórico;</li>
 <li>origem orgânica não é apagada pelo relatório;</li>
-<li>ausência de dado não é convertida em zero;</li>
+<li>ausência ou supressão não é convertida em zero;</li>
+<li>regra candidata e período permanecem versionados;</li>
+<li>eventos heterogêneos não são somados em total sem unidade;</li>
 <li>autorrelato não é confundido com evento instrumentado;</li>
 <li>anunciante não recebe lista de visualizadores;</li>
 <li>saldo não é apresentado como devolução confirmada;</li>
@@ -8963,7 +8969,6 @@ Business Capabilities: not started
 <h2 id="8-limites-vigentes">8. Limites vigentes<a class="headerlink" href="#8-limites-vigentes" title="Permanent link">&para;</a></h2>
 <p>Não foram concluídos:</p>
 <ul>
-<li>validação funcional dos quatro wireframes da UXA-048;</li>
 <li>validação funcional do conjunto completo de wireframes do Opportunity Boost;</li>
 <li>estados móveis adicionais de gestão;</li>
 <li>estados de erro, inventário insuficiente e preferência publicitária;</li>
@@ -8987,12 +8992,11 @@ Business Capabilities: not started
 <h2 id="9-proximos-atos-governados">9. Próximos atos governados<a class="headerlink" href="#9-proximos-atos-governados" title="Permanent link">&para;</a></h2>
 <p>Após integração e nova autorização, poderão ocorrer separadamente:</p>
 <ol>
-<li>validar funcionalmente e reformular os wireframes da UXA-048;</li>
 <li>validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;</li>
 <li>criar estados móveis adicionais de gestão, se priorizados;</li>
 <li>criar estados de erro, inventário insuficiente e preferência publicitária;</li>
 <li>validar preços, orçamentos e disposição a pagar;</li>
-<li>definir política especializada de publicidade, atribuição e categorias;</li>
+<li>definir política especializada de publicidade, atribuição, agregação e categorias;</li>
 <li>retomar a referência móvel da Home e a transição para a primeira Tela Hoje;</li>
 <li>retomar independentemente os testes dos Resultados Empresariais.</li>
 </ol>

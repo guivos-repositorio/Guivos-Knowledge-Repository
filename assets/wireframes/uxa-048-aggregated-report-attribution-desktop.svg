@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Atribuição candidata e autorrelato do Opportunity Boost para computador</title>
-  <desc id="desc">Wireframe de baixa fidelidade mostrando proveniência, janela candidata, origens separadas, autorrelato e limitações de interpretação.</desc>
+  <title id="title">Atribuição candidata e autorrelato validados do Opportunity Boost para computador</title>
+  <desc id="desc">Wireframe de baixa fidelidade mostrando agregados por tipo de evento, versão da regra candidata, proveniência, supressão e autorrelato não verificado.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -12,60 +12,69 @@
 
   <text x="260" y="48" font-family="Arial" font-size="11">RELATÓRIO › ATRIBUIÇÃO CANDIDATA E AUTORRELATO</text>
   <text x="260" y="86" font-family="Arial" font-size="28" font-weight="700">Como os dados foram relacionados</text>
-  <rect x="1160" y="46" width="240" height="48" rx="8" fill="#f3f3f3" stroke="#222222"/>
-  <text x="1280" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">ASSOCIAÇÃO CANDIDATA</text>
-  <text x="260" y="122" font-family="Arial" font-size="12">Período consultado: 05/08/2026 a 10/08/2026 · regra candidata sujeita a validação especializada</text>
+  <rect x="1130" y="46" width="270" height="48" rx="8" fill="#f3f3f3" stroke="#222222"/>
+  <text x="1265" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">REGRA CANDIDATA v0.1</text>
+  <text x="260" y="122" font-family="Arial" font-size="12">Aplicada ao período de 05/08/2026 a 10/08/2026 · atualização: 10/08/2026 às 18:30</text>
 
-  <rect x="260" y="150" width="1140" height="92" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <rect x="260" y="150" width="1140" height="96" rx="10" fill="#f3f3f3" stroke="#444444"/>
   <text x="286" y="180" font-family="Arial" font-size="14" font-weight="700">Atribuição candidata não é prova de causa</text>
-  <text x="286" y="208" font-family="Arial" font-size="11">O relatório indica compatibilidade temporal e técnica. Ele não afirma que a campanha causou inscrição, participação, contratação ou impacto.</text>
+  <text x="286" y="208" font-family="Arial" font-size="11">A superfície apresenta agregados por tipo de evento. Nenhuma linha representa pessoa, percurso individual ou identidade.</text>
+  <text x="286" y="232" font-family="Arial" font-size="10">Compatibilidade temporal e técnica não comprova que a campanha causou inscrição, participação, contratação ou impacto.</text>
 
-  <rect x="260" y="270" width="720" height="294" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="304" font-family="Arial" font-size="16" font-weight="700">Eventos compatíveis com a janela</text>
-  <text x="286" y="336" font-family="Arial" font-size="11">Janela candidata: até 7 dias após clique válido · visualização isolada não atribui evento</text>
-  <line x1="286" y1="358" x2="950" y2="358" stroke="#999999"/>
-  <text x="286" y="390" font-family="Arial" font-size="11" font-weight="700">Evento</text>
-  <text x="530" y="390" font-family="Arial" font-size="11" font-weight="700">Origem preservada</text>
-  <text x="750" y="390" font-family="Arial" font-size="11" font-weight="700">Estado</text>
-  <text x="286" y="426" font-family="Arial" font-size="11">Início de inscrição</text>
-  <text x="530" y="426" font-family="Arial" font-size="11">patrocinada</text>
-  <text x="750" y="426" font-family="Arial" font-size="11">compatível</text>
-  <text x="286" y="460" font-family="Arial" font-size="11">Salvamento</text>
-  <text x="530" y="460" font-family="Arial" font-size="11">orgânica</text>
-  <text x="750" y="460" font-family="Arial" font-size="11">preservada como orgânica</text>
-  <text x="286" y="494" font-family="Arial" font-size="11">Declaração de interesse</text>
-  <text x="530" y="494" font-family="Arial" font-size="11">indeterminada</text>
-  <text x="750" y="494" font-family="Arial" font-size="11">base insuficiente</text>
-  <text x="286" y="536" font-family="Arial" font-size="10">Um mesmo evento não recebe origem orgânica e patrocinada simultaneamente sem regra explícita.</text>
+  <rect x="260" y="272" width="760" height="312" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="306" font-family="Arial" font-size="16" font-weight="700">Agregados compatíveis com a janela</text>
+  <text x="286" y="334" font-family="Arial" font-size="10">Janela candidata: até 7 dias após clique válido · visualização isolada não atribui evento</text>
+  <line x1="286" y1="354" x2="992" y2="354" stroke="#999999"/>
+  <text x="286" y="384" font-family="Arial" font-size="11" font-weight="700">Tipo de evento</text>
+  <text x="500" y="384" font-family="Arial" font-size="11" font-weight="700">Total</text>
+  <text x="580" y="384" font-family="Arial" font-size="11" font-weight="700">Associação candidata</text>
+  <text x="850" y="384" font-family="Arial" font-size="11" font-weight="700">Estado</text>
+  <text x="286" y="422" font-family="Arial" font-size="11">Início de inscrição</text>
+  <text x="500" y="422" font-family="Arial" font-size="11">32</text>
+  <text x="580" y="422" font-family="Arial" font-size="11">patrocinada 18 · orgânica 8 · indeterminada 6</text>
+  <text x="850" y="422" font-family="Arial" font-size="11">em revisão</text>
+  <text x="286" y="458" font-family="Arial" font-size="11">Salvamento</text>
+  <text x="500" y="458" font-family="Arial" font-size="11">24</text>
+  <text x="580" y="458" font-family="Arial" font-size="11">patrocinada 10 · orgânica 9 · indeterminada 5</text>
+  <text x="850" y="458" font-family="Arial" font-size="11">provisório</text>
+  <text x="286" y="494" font-family="Arial" font-size="11">Conclusão de inscrição</text>
+  <text x="500" y="494" font-family="Arial" font-size="11">—</text>
+  <text x="580" y="494" font-family="Arial" font-size="11">não disponível · integração ausente</text>
+  <text x="850" y="494" font-family="Arial" font-size="11">sem dado</text>
+  <text x="286" y="536" font-family="Arial" font-size="10">Detalhamentos abaixo da regra de agregação aparecem como “não exibido”, nunca como zero.</text>
+  <text x="286" y="560" font-family="Arial" font-size="10">Um evento não recebe associação orgânica e patrocinada simultaneamente sem regra explícita.</text>
 
-  <rect x="1010" y="270" width="390" height="294" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="1036" y="304" font-family="Arial" font-size="16" font-weight="700">Proveniência</text>
-  <text x="1036" y="342" font-family="Arial" font-size="12">Instrumentado</text>
-  <text x="1036" y="366" font-family="Arial" font-size="10">evento técnico registrado</text>
-  <text x="1036" y="404" font-family="Arial" font-size="12">Calculado</text>
-  <text x="1036" y="428" font-family="Arial" font-size="10">valor derivado de regra declarada</text>
-  <text x="1036" y="466" font-family="Arial" font-size="12">Declarado pelo anunciante</text>
-  <text x="1036" y="490" font-family="Arial" font-size="10">informação não instrumentada</text>
-  <text x="1036" y="528" font-family="Arial" font-size="12">Não disponível</text>
-  <text x="1036" y="552" font-family="Arial" font-size="10">sem cobertura ou base suficiente</text>
+  <rect x="1050" y="272" width="350" height="312" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="1076" y="306" font-family="Arial" font-size="16" font-weight="700">Proveniência e estado</text>
+  <text x="1076" y="344" font-family="Arial" font-size="12">Instrumentado</text>
+  <text x="1076" y="368" font-family="Arial" font-size="10">evento técnico registrado</text>
+  <text x="1076" y="404" font-family="Arial" font-size="12">Calculado</text>
+  <text x="1076" y="428" font-family="Arial" font-size="10">valor derivado da regra v0.1</text>
+  <text x="1076" y="464" font-family="Arial" font-size="12">Em revisão</text>
+  <text x="1076" y="488" font-family="Arial" font-size="10">ainda sujeito a validação</text>
+  <text x="1076" y="524" font-family="Arial" font-size="12">Não exibido</text>
+  <text x="1076" y="548" font-family="Arial" font-size="10">suprimido por agregação</text>
+  <text x="1076" y="572" font-family="Arial" font-size="9">O limiar definitivo permanece pendente.</text>
 
-  <rect x="260" y="594" width="720" height="248" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="628" font-family="Arial" font-size="16" font-weight="700">Autorrelato do anunciante</text>
-  <text x="286" y="660" font-family="Arial" font-size="10">Conteúdo declarado · não validado automaticamente pela Guivos</text>
-  <rect x="286" y="684" width="668" height="76" rx="8" fill="#f8f8f8" stroke="#999999"/>
-  <text x="308" y="714" font-family="Arial" font-size="11">“Quatro participantes informaram ter conhecido a atividade pela campanha.”</text>
-  <text x="308" y="742" font-family="Arial" font-size="10">Responsável: Coletivo Horizonte · declarado em 10/08/2026</text>
-  <text x="286" y="798" font-family="Arial" font-size="11">Este autorrelato não é somado aos cinco eventos tecnicamente compatíveis.</text>
+  <rect x="260" y="610" width="760" height="244" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="644" font-family="Arial" font-size="16" font-weight="700">Autorrelato institucional</text>
+  <text x="286" y="672" font-family="Arial" font-size="10">Declarado pelo anunciante · não verificado automaticamente pela Guivos</text>
+  <rect x="286" y="694" width="708" height="82" rx="8" fill="#f8f8f8" stroke="#999999"/>
+  <text x="308" y="722" font-family="Arial" font-size="11">Declaração: participantes informaram ter conhecido a atividade pela campanha.</text>
+  <text x="308" y="748" font-family="Arial" font-size="10">Responsável: Coletivo Horizonte · período: 05/08 a 10/08 · declarado em 10/08/2026</text>
+  <text x="286" y="806" font-family="Arial" font-size="11">Quantidade: não exibida por agregação · supressão não significa zero.</text>
+  <text x="286" y="832" font-family="Arial" font-size="10">O conteúdo não é somado aos eventos instrumentados e não comprova causalidade ou impacto.</text>
 
-  <rect x="1010" y="594" width="390" height="248" rx="10" fill="#f3f3f3" stroke="#444444"/>
-  <text x="1036" y="628" font-family="Arial" font-size="16" font-weight="700">Limitações conhecidas</text>
-  <text x="1036" y="666" font-family="Arial" font-size="11">• cobertura de conclusão indisponível;</text>
-  <text x="1036" y="696" font-family="Arial" font-size="11">• integração externa não conectada;</text>
-  <text x="1036" y="726" font-family="Arial" font-size="11">• origem indeterminada preservada;</text>
-  <text x="1036" y="756" font-family="Arial" font-size="11">• impacto humano não inferido;</text>
-  <text x="1036" y="786" font-family="Arial" font-size="11">• nenhuma lista individual disponível.</text>
+  <rect x="1050" y="610" width="350" height="244" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="1076" y="644" font-family="Arial" font-size="16" font-weight="700">Limitações conhecidas</text>
+  <text x="1076" y="682" font-family="Arial" font-size="11">• conclusão sem instrumentação;</text>
+  <text x="1076" y="712" font-family="Arial" font-size="11">• integração externa não conectada;</text>
+  <text x="1076" y="742" font-family="Arial" font-size="11">• origem indeterminada preservada;</text>
+  <text x="1076" y="772" font-family="Arial" font-size="11">• contagem pequena suprimida;</text>
+  <text x="1076" y="802" font-family="Arial" font-size="11">• impacto humano não inferido;</text>
+  <text x="1076" y="832" font-family="Arial" font-size="11">• nenhuma lista individual.</text>
 
-  <rect x="260" y="872" width="1140" height="64" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="900" font-family="Arial" font-size="11">Histórico de regras e atualizações permanece acessível. Alterar a regra futura não reescreve silenciosamente relatórios anteriores.</text>
-  <text x="286" y="922" font-family="Arial" font-size="10">Baixa fidelidade · política final de atribuição ainda não definida.</text>
+  <rect x="260" y="882" width="1140" height="58" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="906" font-family="Arial" font-size="11">O histórico preserva regra, período e atualização. Mudança futura não reescreve silenciosamente relatórios anteriores.</text>
+  <text x="286" y="928" font-family="Arial" font-size="10">Baixa fidelidade · política final de atribuição e agregação ainda não definida.</text>
 </svg>
