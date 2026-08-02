@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.27.0
+version: 0.28.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-000
@@ -43,6 +43,7 @@ related:
   - UXA-044
   - UXA-045
   - UXA-046
+  - UXA-047
   - PAS-001
 normative: false
 ---
@@ -95,7 +96,7 @@ Página Inicial pública
 20. estados patrocinados para Lista e Mapa — UXA-044;
 21. validação e reformulação dos estados patrocinados — UXA-045;
 22. gestão da campanha ativa — UXA-046;
-23. validação da gestão da campanha ativa — pendente;
+23. validação e reformulação da gestão da campanha ativa — UXA-047;
 24. relatório agregado — pendente.
 
 ## 4. Natureza dos artefatos
@@ -206,27 +207,32 @@ A UXA-045 confirmou, após reformulação:
 - ocultação sincronizada preserva catálogo orgânico;
 - pouca oferta orgânica reduz publicidade.
 
-### 5.7 Opportunity Boost — gestão da campanha ativa pendente de validação
+### 5.7 Opportunity Boost — gestão da campanha ativa validada
 
-A UXA-046 deverá ser validada quanto a:
+A UXA-047 confirmou, após reformulação:
 
-- estado programado ser distinguível de entrega ativa;
-- orçamento reservado, utilizado e saldo serem compreensíveis;
-- indicadores operacionais não parecerem relatório final ou impacto;
-- estado ativo mostrar período, frequência, capacidade e informação material;
-- limitação ser distinguível de pausa;
-- limitação não sugerir aceleração de orçamento ou ampliação automática do período;
-- pausa voluntária, pausa automática e suspensão por política terem consequências próprias;
-- condição de retomada ser visível;
-- alteração material comparar versão aprovada e alterada;
-- nova avaliação não iniciar entrega automaticamente;
-- cancelamento mostrar entrega futura, eventos válidos, orçamento utilizado e saldo candidato;
-- confirmação de cancelamento começar desmarcada;
-- estados finais e reconciliação serem distinguíveis;
-- histórico permanecer acessível;
-- linguagem e foco serem acessíveis.
+- campanha programada distinguível de campanha ativa;
+- ativação condicionada à permanência dos gates;
+- orçamento total, reservado, utilizado e saldo não utilizado compreensíveis;
+- indicadores operacionais associados a período e atualização;
+- impressões e cliques separados de conversão, atribuição e impacto;
+- estado ativo mostrando período, frequência, capacidade, informação material e política;
+- limitação distinguível de pausa e apresentada como entrega reduzida;
+- limite diário preservado e período sem ampliação automática;
+- atualização de capacidade sem promessa de normalização imediata;
+- pausa voluntária, pausa automática e suspensão por política com consequências próprias;
+- pausa interrompendo novos eventos sem apagar eventos válidos anteriores;
+- período podendo continuar e expirar durante a pausa;
+- condição de retomada visível e controle indisponível enquanto houver bloqueio;
+- alteração material comparando versão aprovada e alterada;
+- nova avaliação ou descarte sem entrega automática;
+- cancelamento bloqueado até motivo e confirmações completas;
+- estados finais e reconciliação distinguíveis;
+- histórico e registro operacional preservados;
+- saldo mantido como candidato, não como devolução confirmada;
+- relatório agregado explicitamente ainda não criado.
 
-O próximo artefato deverá ainda demonstrar relatório separado em entrega, interação, atribuição candidata e autorrelato.
+O próximo artefato deverá demonstrar relatório separado em entrega, interação, atribuição candidata e autorrelato.
 
 ### 5.8 Autonomia
 
@@ -271,6 +277,7 @@ O próximo artefato deverá ainda demonstrar relatório separado em entrega, int
 | gate `Pesquisar nesta área` | consulta territorial após ação explícita |
 | estado de campanha em caixa textual | situação operacional independente de cor |
 | comparação lado a lado | versão aprovada e alteração material |
+| ação indisponível textual | condição ainda não atendida |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -335,7 +342,8 @@ oportunidade aprovada e ativa
 | Validação do cartão | UXA-043 | participante | validação funcional especializada |
 | Lista e Mapa patrocinados | UXA-044 | Mapa e Lista | quatro arquivos vetoriais reformulados |
 | Validação de Lista e Mapa | UXA-045 | participante | validação funcional especializada |
-| Gestão da campanha ativa | UXA-046 | painel institucional | seis arquivos vetoriais |
+| Gestão da campanha ativa | UXA-046 | painel institucional | seis arquivos vetoriais reformulados |
+| Validação da gestão ativa | UXA-047 | painel institucional | validação funcional especializada |
 
 ## 10. Resultados validados e materializados
 
@@ -351,7 +359,7 @@ A UXA-042 reformulada e a UXA-043 demonstram cartão, explicação, controles e 
 
 A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcionalmente válidos em móvel e computador.
 
-A UXA-046 materializa gestão de campanha em seis estados para computador, ainda sem validação funcional própria.
+A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente válida em seis estados para computador.
 
 ## 11. Limites
 
@@ -361,14 +369,13 @@ Este programa não define marca, tecnologia, autenticação, armazenamento, IA, 
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os wireframes da UXA-046;
-2. criar wireframe do relatório agregado;
-3. validar funcionalmente o conjunto completo do Opportunity Boost;
-4. criar estados móveis de gestão, se priorizados;
-5. criar estados de erro, inventário insuficiente e preferência publicitária;
-6. criar a referência móvel da Home;
-7. validar a transição para a primeira Tela Hoje;
-8. criar referência do início protegido e da compreensão para computador;
-9. criar referência para tablet, caso priorizada.
+1. criar wireframe do relatório agregado;
+2. validar funcionalmente o conjunto completo do Opportunity Boost;
+3. criar estados móveis de gestão, se priorizados;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. criar a referência móvel da Home;
+6. validar a transição para a primeira Tela Hoje;
+7. criar referência do início protegido e da compreensão para computador;
+8. criar referência para tablet, caso priorizada.
 
 Nenhuma etapa posterior é iniciada automaticamente.
