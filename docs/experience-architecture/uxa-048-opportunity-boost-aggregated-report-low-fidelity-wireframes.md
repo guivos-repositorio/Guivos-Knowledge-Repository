@@ -2,7 +2,7 @@
 id: UXA-048
 title: Wireframes de Baixa Fidelidade do Relatório Agregado do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-047
@@ -21,8 +21,9 @@ depends_on:
   - GEM-007-A1
   - GEM-010-A2
 related:
+  - UXA-049
   - GPA-007
-  - M7.50
+  - M7.51
 normative: false
 ---
 
@@ -37,34 +38,54 @@ O pacote demonstra como o anunciante poderá consultar entrega, interação, atr
 - confundir impressão ou clique com conversão;
 - apresentar atribuição candidata como causalidade comprovada;
 - transformar autorrelato em evento instrumentado;
-- preencher ausência de dado com zero;
+- preencher ausência de dado ou supressão com zero;
 - revelar pessoas expostas, identificadores individuais ou lista de visualizadores;
 - misturar origem orgânica e patrocinada silenciosamente;
+- somar eventos heterogêneos em um total sem unidade;
 - inferir impacto humano, evolução, confiança ou qualidade;
 - apresentar saldo como crédito, estorno ou devolução confirmada;
-- prometer precisão que a instrumentação não sustenta;
+- prometer precisão que a instrumentação ou agregação não sustenta;
 - iniciar algoritmo, cobrança real, protótipo ou Engenharia de Produto.
 
-## 2. Pergunta funcional do conjunto
+## 2. Estado de validação
 
-> **O anunciante distingue entrega, interação, atribuição candidata e resultado declarado, compreende o período e a atualização de cada dado, identifica ausências e limitações e consulta reconciliação sem interpretar o relatório como prova de conversão, causalidade ou impacto humano?**
+A UXA-049 examinou os quatro artefatos e os considerou:
 
-A pergunta ainda deverá ser respondida por validação funcional especializada dos wireframes.
+> **Funcionalmente válidos após reformulação.**
 
-## 3. Artefatos
+As reformulações principais foram:
+
+- criar gate explícito de agregação e supressão;
+- separar `não exibido por agregação`, `não disponível` e zero;
+- mostrar proveniência e estado junto de cada camada;
+- substituir linhas semelhantes a eventos individuais por agregados por tipo;
+- vincular a versão da regra candidata ao período consultado;
+- separar tipos e unidades na reconciliação;
+- reforçar que autorrelato não é verificado automaticamente;
+- alinhar conceitos entre computador e aplicativo móvel.
+
+Validação funcional não equivale a política final, acessibilidade técnica, teste com usuários, protótipo ou implementação.
+
+## 3. Pergunta funcional do conjunto
+
+> **O anunciante distingue as quatro camadas, reconhece proveniência e estado, compreende ausência e supressão, preserva origens sem dupla atribuição e consulta reconciliação sem interpretar agregados como rastreamento, causalidade, impacto ou direito financeiro?**
+
+A UXA-049 responde positivamente após as reformulações registradas.
+
+## 4. Artefatos
 
 | Artefato | Estado principal | Canal | Dimensão |
 |---|---|---|---:|
 | visão geral agregada | dados provisórios durante campanha | web para computador | 1.440 × 1.024 |
-| atribuição e autorrelato | interpretação e proveniência | web para computador | 1.440 × 1.024 |
+| atribuição e autorrelato | regra, proveniência e interpretação | web para computador | 1.440 × 1.024 |
 | visão geral agregada | resumo móvel durante campanha | aplicativo móvel | 390 × 844 |
-| reconciliação e ausência de dados | encerramento e dados não disponíveis | aplicativo móvel | 390 × 844 |
+| reconciliação e ausência de dados | encerramento e revisão | aplicativo móvel | 390 × 844 |
 
 Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos textuais independentes de cor.
 
-## 4. Artefatos visuais
+## 5. Artefatos visuais
 
-### 4.1 Visão geral agregada para computador
+### 5.1 Visão geral agregada para computador
 
 ![Visão geral agregada para computador](../assets/wireframes/uxa-048-aggregated-report-overview-desktop.svg)
 
@@ -72,18 +93,17 @@ Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos text
 
 Demonstra:
 
-- campanha, status, período consultado e última atualização;
-- aviso de dados provisórios;
-- orçamento total, utilizado e saldo não utilizado;
-- impressões válidas e visíveis;
-- frequência média e tráfego inválido removido;
-- cliques válidos, visualizações de detalhe e salvamentos;
-- interesse agregado e início de inscrição quando instrumentado;
-- separação visual das quatro camadas;
-- ausência de lista de visualizadores;
-- acesso à metodologia e ao histórico.
+- campanha, período consultado e última atualização;
+- estado `provisório · não reconciliado`;
+- entrega instrumentada e calculada;
+- interação instrumentada quando disponível;
+- atribuição calculada pela regra candidata vigente;
+- autorrelato declarado e não verificado automaticamente;
+- `não disponível` com motivo;
+- `não exibido por agregação` sem equivalência a zero;
+- aviso de privacidade, limiar pendente e limites de interpretação.
 
-### 4.2 Atribuição candidata e autorrelato para computador
+### 5.2 Atribuição candidata e autorrelato para computador
 
 ![Atribuição candidata e autorrelato para computador](../assets/wireframes/uxa-048-aggregated-report-attribution-desktop.svg)
 
@@ -91,16 +111,17 @@ Demonstra:
 
 Demonstra:
 
-- janela candidata e evento compatível;
-- origem patrocinada, orgânica e indeterminada separadas;
-- proibição de dupla atribuição silenciosa;
-- atribuição como associação técnica, não prova causal;
-- autorrelato com responsável, data e texto declarado;
-- distinção entre dado instrumentado, calculado, declarado e indisponível;
-- limitações de cobertura e atualização;
-- ausência de inferência de impacto humano.
+- versão da regra candidata;
+- período e atualização associados à regra;
+- agregados por tipo de evento, não linhas individuais;
+- associação candidata patrocinada, origem orgânica e origem indeterminada;
+- regra contra dupla atribuição silenciosa;
+- proveniência instrumentada, calculada, em revisão e suprimida;
+- autorrelato institucional não verificado automaticamente;
+- quantidade sujeita a supressão;
+- histórico sem reescrita retroativa silenciosa.
 
-### 4.3 Visão geral agregada móvel
+### 5.3 Visão geral agregada móvel
 
 ![Visão geral agregada móvel](../assets/wireframes/uxa-048-aggregated-report-overview-mobile.svg)
 
@@ -109,14 +130,15 @@ Demonstra:
 Demonstra:
 
 - resumo vertical das quatro camadas;
+- proveniência e estado em cada bloco;
 - período e atualização no topo;
-- entrega e interação em cartões compactos;
-- atribuição candidata com aviso textual;
-- autorrelato identificado;
-- ação para consultar metodologia;
-- ausência de pessoas identificadas.
+- ausência de dado com motivo;
+- atribuição candidata com versão da regra;
+- detalhamento condicionado à agregação;
+- autorrelato declarado e não verificado;
+- acesso à metodologia, privacidade, regra e histórico.
 
-### 4.4 Reconciliação e ausência de dados móvel
+### 5.4 Reconciliação e ausência de dados móvel
 
 ![Reconciliação e ausência de dados móvel](../assets/wireframes/uxa-048-aggregated-report-reconciliation-mobile.svg)
 
@@ -124,18 +146,19 @@ Demonstra:
 
 Demonstra:
 
-- campanha encerrada aguardando ou concluindo reconciliação;
-- eventos válidos, invalidados e ainda em revisão;
-- orçamento utilizado e saldo candidato separados;
-- tratamento do saldo ainda não definido;
-- campo sem instrumentação apresentado como `não disponível`;
-- ausência de dado distinta de valor zero;
-- histórico preservado;
-- relatório sem promessa de devolução ou causalidade.
+- campanha encerrada e ainda não reconciliada;
+- impressões válidas, invalidadas e em revisão separadas;
+- cliques válidos e em revisão separados;
+- proibição de total heterogêneo entre unidades diferentes;
+- orçamento utilizado sujeito à revisão;
+- saldo candidato separado;
+- campo não disponível e campo suprimido;
+- estados possíveis até reconciliação;
+- reconciliação sem promessa financeira, causal ou de impacto.
 
-## 5. Estrutura obrigatória em quatro camadas
+## 6. Estrutura obrigatória em quatro camadas
 
-### 5.1 Entrega
+### 6.1 Entrega
 
 A camada de entrega apresenta:
 
@@ -149,11 +172,13 @@ A camada de entrega apresenta:
 - impressões visíveis, quando mensuráveis;
 - frequência média;
 - tráfego inválido removido;
-- data e horário de atualização.
+- data e horário de atualização;
+- proveniência instrumentada ou calculada;
+- estado provisório, em revisão ou reconciliado.
 
 Entrega descreve distribuição publicitária. Não representa interesse, conversão, atribuição ou impacto.
 
-### 5.2 Interação
+### 6.2 Interação
 
 A camada de interação poderá apresentar, quando instrumentado:
 
@@ -166,76 +191,104 @@ A camada de interação poderá apresentar, quando instrumentado:
 
 Clique não equivale a interesse confirmado. Início não equivale a conclusão. Conclusão instrumentada não equivale a impacto humano.
 
-### 5.3 Atribuição candidata
+### 6.3 Atribuição candidata
 
 A camada de atribuição candidata deverá mostrar:
 
-- evento elegível;
-- janela candidata utilizada;
-- origem patrocinada preservada;
+- tipo de evento agregado;
+- total compatível com a janela;
+- versão da regra candidata;
+- período em que a regra foi aplicada;
+- origem patrocinada preservada como associação candidata;
 - origem orgânica preservada;
 - origem indeterminada quando não houver base suficiente;
 - condição de instrumentação;
+- estado provisório ou em revisão;
 - regra contra dupla atribuição silenciosa;
 - caráter técnico, revisável e não causal.
 
 Atribuição candidata não afirma que o anúncio causou o evento.
 
-### 5.4 Autorrelato
+### 6.4 Autorrelato
 
 A camada de autorrelato deverá mostrar:
 
 - informação declarada pelo anunciante;
-- responsável pela declaração;
+- responsável institucional;
 - data da declaração;
 - período ao qual se refere;
-- campo de observação;
-- identificação explícita como informação não instrumentada pela Guivos.
+- estado `não verificado automaticamente pela Guivos`;
+- quantidade somente quando a regra de agregação permitir;
+- identificação explícita como informação não instrumentada.
 
 Autorrelato não será somado silenciosamente a eventos instrumentados e não será apresentado como evidência independente.
 
-## 6. Proveniência dos dados
+## 7. Proveniência e estado dos dados
 
-Cada métrica ou informação deverá possuir uma origem compreensível:
+Cada métrica ou informação deverá possuir origem e estado compreensíveis:
 
 | Rótulo | Significado |
 |---|---|
 | instrumentado | evento registrado por mecanismo técnico definido |
-| calculado | valor derivado de eventos ou regras declaradas |
+| calculado | valor derivado de eventos ou regra declarada |
 | declarado pelo anunciante | informação fornecida por responsável autorizado |
-| não disponível | dado sem instrumentação, cobertura ou base suficiente |
-| em revisão | evento ainda sujeito a validação ou reconciliação |
+| provisório | dado disponível antes de revisão completa |
+| em revisão | dado sujeito a validação ou reconciliação |
+| parcialmente reconciliado | parte dos eventos concluída e parte pendente |
+| reconciliado | tratamento operacional definido concluído |
+| não disponível | sem instrumentação, cobertura ou base suficiente |
+| não exibido por agregação | valor suprimido pela regra de privacidade aplicável |
 
-A interface não substituirá `não disponível` por `0`.
+`Não disponível`, `não exibido por agregação` e zero não são equivalentes.
 
-## 7. Período, atualização e estado do dado
+## 8. Período, atualização e regra vigente
 
 O relatório deverá distinguir:
 
 - período total da campanha;
 - período atualmente consultado;
 - data e horário da última atualização;
+- versão da regra candidata aplicada;
 - dados provisórios;
 - dados em revisão;
+- dados parcialmente reconciliados;
 - dados reconciliados;
-- campos ainda indisponíveis.
+- campos indisponíveis ou suprimidos.
 
 Uma campanha ativa poderá apresentar dados provisórios. Encerramento não torna todos os dados automaticamente reconciliados.
 
-## 8. Origem orgânica e patrocinada
+Mudança futura da regra candidata não reescreverá silenciosamente relatórios anteriores.
+
+## 9. Origem orgânica e patrocinada
 
 Quando um evento puder possuir múltiplas origens, a interface deverá:
 
 - preservar registros orgânicos;
-- preservar registros patrocinados;
+- preservar associações candidatas patrocinadas;
 - indicar origem indeterminada quando necessário;
 - impedir dupla atribuição silenciosa;
 - explicar a janela candidata;
-- não reclassificar interação orgânica como patrocinada somente porque a pessoa também foi exposta à campanha.
+- apresentar agregados por tipo de evento;
+- não fornecer sequência individual;
+- não reclassificar interação orgânica como patrocinada somente porque houve exposição à campanha.
 
 Correspondência orgânica continua independente de distribuição paga.
 
-## 9. Ausência de dados
+## 10. Agregação e supressão
+
+Detalhamentos somente serão exibidos quando a regra de agregação aplicável permitir.
+
+Quando a condição não for atendida:
+
+- a interface mostrará `não exibido por agregação`;
+- o valor não será substituído por zero;
+- a existência ou ausência de evento individual não será confirmada;
+- nenhuma divisão pequena por origem será revelada;
+- o motivo da supressão será legível.
+
+O limiar definitivo permanece pendente de política especializada de privacidade e segurança.
+
+## 11. Ausência de dados
 
 Ausência de dado poderá ocorrer por:
 
@@ -246,11 +299,11 @@ Ausência de dado poderá ocorrer por:
 - base insuficiente;
 - processamento ainda em revisão;
 - opção legítima da pessoa ou do anunciante;
-- regra de privacidade ou agregação mínima.
+- regra de privacidade ou agregação.
 
 A interface deverá explicar o motivo conhecido sem inventar valor, tendência ou causa.
 
-## 10. Privacidade e agregação
+## 12. Privacidade
 
 O relatório não deverá fornecer:
 
@@ -263,24 +316,27 @@ O relatório não deverá fornecer:
 - inferências sensíveis;
 - segmentação individual retrospectiva.
 
-Resultados serão apresentados de forma agregada e sujeitos a limiares posteriores de privacidade e segurança.
+Resultados serão apresentados de forma agregada e sujeitos a política posterior de privacidade e segurança.
 
-## 11. Reconciliação
+## 13. Reconciliação
 
-A reconciliação deverá separar:
+A reconciliação deverá separar por tipo e unidade:
 
-- eventos válidos;
-- eventos invalidados;
-- eventos ainda em revisão;
+- impressões válidas, invalidadas e em revisão;
+- cliques válidos, invalidados e em revisão;
+- outros eventos instrumentados em blocos próprios;
+- campos indisponíveis ou suprimidos;
 - orçamento utilizado associado aos eventos válidos, quando aplicável;
 - saldo não utilizado;
 - tratamento candidato do saldo;
 - data da última revisão;
 - histórico de decisões.
 
-Reconciliação não equivale automaticamente a devolução, crédito, estorno ou encerramento jurídico, fiscal e contábil.
+Impressões, cliques, salvamentos e inscrições não serão somados em um total heterogêneo.
 
-## 12. Limitações de interpretação
+`Reconciliado` representa conclusão do tratamento operacional definido. Não equivale automaticamente a devolução, crédito, estorno, causalidade, impacto ou encerramento jurídico, fiscal e contábil.
+
+## 14. Limitações de interpretação
 
 O relatório deverá declarar que:
 
@@ -292,24 +348,25 @@ O relatório deverá declarar que:
 - atribuição candidata não é causalidade;
 - autorrelato não é evento instrumentado;
 - conversão não é impacto humano;
-- ausência de dado não é zero;
+- ausência ou supressão não é zero;
 - número agregado não comprova qualidade, confiança ou evolução.
 
-## 13. Acessibilidade e linguagem
+## 15. Acessibilidade e linguagem
 
 - camada, origem e estado do dado serão textuais;
 - significado não dependerá de cor;
 - valores terão rótulo, unidade e período;
-- abreviações técnicas deverão possuir explicação;
-- dados ausentes terão motivo legível;
+- abreviações técnicas possuirão explicação;
+- dados ausentes e suprimidos terão motivo legível;
 - avisos não usarão culpa, urgência ou escassez artificial;
-- tabelas e cartões deverão possuir ordem de leitura coerente;
+- tabelas e cartões possuirão ordem de leitura coerente;
 - atualizações e estados provisórios serão anunciáveis;
-- autorrelato será identificado antes do conteúdo declarado.
+- autorrelato será identificado antes do conteúdo declarado;
+- nenhum agrupamento aparentará registro individual.
 
 Esta referência não conclui acessibilidade técnica.
 
-## 14. Proteções preservadas
+## 16. Proteções preservadas
 
 - pagamento não compra relevância, qualidade, confiança ou impacto;
 - relatório não altera ranking orgânico;
@@ -318,15 +375,15 @@ Esta referência não conclui acessibilidade técnica.
 - dados protegidos não alimentam o relatório;
 - origem orgânica não é apagada;
 - dupla atribuição silenciosa é proibida;
+- supressão não é convertida em zero;
 - saldo não é devolução confirmada;
 - relatório não garante entrega, conversão ou resultado;
 - Engenharia de Produto permanece pausada.
 
-## 15. Limites
+## 17. Limites
 
 Este incremento não cria:
 
-- validação funcional dos quatro wireframes;
 - política final de atribuição;
 - política final de reconciliação, saldo, crédito, estorno ou disputa;
 - limiar definitivo de agregação e privacidade;
@@ -340,14 +397,14 @@ Este incremento não cria:
 - teste com usuários;
 - checkout, faturamento, cobrança ou Engenharia de Produto.
 
-## 16. Próximos atos governados
+## 18. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os quatro wireframes da UXA-048;
-2. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-3. criar estados de erro, inventário insuficiente e preferência publicitária;
-4. criar estados móveis adicionais de gestão, se priorizados;
-5. testar posteriormente relatório, atribuição, autorrelato e reconciliação com Organizações e Coletivos.
+1. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
+2. criar estados de erro, inventário insuficiente e preferência publicitária;
+3. criar estados móveis adicionais de gestão, se priorizados;
+4. testar relatório, atribuição, autorrelato, agregação e reconciliação com Organizações e Coletivos;
+5. iniciar políticas especializadas somente após autorização própria.
 
 Nenhum ato é iniciado automaticamente.
