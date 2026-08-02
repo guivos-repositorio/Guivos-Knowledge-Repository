@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.28.0
+version: 0.29.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-000
@@ -44,6 +44,7 @@ related:
   - UXA-045
   - UXA-046
   - UXA-047
+  - UXA-048
   - PAS-001
 normative: false
 ---
@@ -97,7 +98,8 @@ Página Inicial pública
 21. validação e reformulação dos estados patrocinados — UXA-045;
 22. gestão da campanha ativa — UXA-046;
 23. validação e reformulação da gestão da campanha ativa — UXA-047;
-24. relatório agregado — pendente.
+24. relatório agregado — UXA-048;
+25. validação do relatório agregado — pendente.
 
 ## 4. Natureza dos artefatos
 
@@ -232,9 +234,27 @@ A UXA-047 confirmou, após reformulação:
 - saldo mantido como candidato, não como devolução confirmada;
 - relatório agregado explicitamente ainda não criado.
 
-O próximo artefato deverá demonstrar relatório separado em entrega, interação, atribuição candidata e autorrelato.
+### 5.8 Opportunity Boost — relatório agregado pendente de validação
 
-### 5.8 Autonomia
+A UXA-048 deverá ser validada quanto a:
+
+- entrega, interação, atribuição candidata e autorrelato serem distinguíveis;
+- orçamento total, utilizado e saldo não utilizado terem significados claros;
+- impressões, cliques, salvamentos, interesses e inscrições possuírem rótulo e período;
+- ausência de dado aparecer como `não disponível`, nunca como zero artificial;
+- origem instrumentada, calculada, declarada e indisponível ser compreensível;
+- atribuição candidata não parecer prova causal;
+- origem orgânica permanecer preservada;
+- dupla atribuição silenciosa permanecer proibida;
+- autorrelato não ser somado a eventos instrumentados;
+- dados provisórios, em revisão e reconciliados serem distinguíveis;
+- eventos válidos, invalidados e em revisão serem separados;
+- saldo continuar candidato, sem promessa de crédito ou devolução;
+- lista de visualizadores e dados individuais permanecerem ausentes;
+- conversão não ser apresentada como impacto humano;
+- versão móvel preservar hierarquia, linguagem e limites.
+
+### 5.9 Autonomia
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
 - Recusar localização preserva o Mapa?
@@ -242,8 +262,9 @@ O próximo artefato deverá demonstrar relatório separado em entrega, interaç�
 - Denúncia, contestação e preferência são ações distintas?
 - O anunciante pode pausar, retomar ou cancelar com efeito conhecido?
 - Alteração material não força confirmação ou nova entrega?
+- O anunciante pode consultar dados ausentes sem ser induzido a inferir zero ou causa?
 
-### 5.9 Continuidade
+### 5.10 Continuidade
 
 - A Home conduz conscientemente ao início protegido?
 - A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
@@ -253,6 +274,7 @@ O próximo artefato deverá demonstrar relatório separado em entrega, interaç�
 - Os estados patrocinados preservam consulta e preferências entre Lista e Mapa?
 - A campanha programada conduz ao estado ativo somente na condição válida?
 - Pausa, limitação, alteração material e encerramento preservam orçamento e histórico?
+- O encerramento conduz a reconciliação e relatório sem reescrever origens ou prometer devolução?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -278,6 +300,9 @@ O próximo artefato deverá demonstrar relatório separado em entrega, interaç�
 | estado de campanha em caixa textual | situação operacional independente de cor |
 | comparação lado a lado | versão aprovada e alteração material |
 | ação indisponível textual | condição ainda não atendida |
+| camada numerada do relatório | entrega, interação, atribuição candidata ou autorrelato |
+| rótulo de proveniência | instrumentado, calculado, declarado, não disponível ou em revisão |
+| estado `não disponível` | ausência de dado sem substituição por zero |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -298,7 +323,7 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Boost Social Financiado | aplicativo móvel | 390 × 844 cada |
 | Lista e Mapa patrocinados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Gestão da campanha ativa — seis estados | web para computador | 1.440 × 1.024 cada |
-| Relatório agregado | computador e aplicativo móvel | pendente |
+| Relatório agregado — quatro estados | computador e aplicativo móvel | 1.440 × 1.024 e 390 × 844 |
 
 ## 8. Relação entre os wireframes
 
@@ -344,6 +369,7 @@ oportunidade aprovada e ativa
 | Validação de Lista e Mapa | UXA-045 | participante | validação funcional especializada |
 | Gestão da campanha ativa | UXA-046 | painel institucional | seis arquivos vetoriais reformulados |
 | Validação da gestão ativa | UXA-047 | painel institucional | validação funcional especializada |
+| Relatório agregado | UXA-048 | painel institucional | quatro arquivos vetoriais para computador e móvel |
 
 ## 10. Resultados validados e materializados
 
@@ -361,17 +387,19 @@ A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcional
 
 A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente válida em seis estados para computador.
 
+A UXA-048 materializa o relatório agregado em quatro estados para computador e móvel, ainda sem validação funcional própria.
+
 ## 11. Limites
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
+Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. criar wireframe do relatório agregado;
+1. validar funcionalmente e reformular os wireframes da UXA-048;
 2. validar funcionalmente o conjunto completo do Opportunity Boost;
-3. criar estados móveis de gestão, se priorizados;
+3. criar estados móveis adicionais de gestão, se priorizados;
 4. criar estados de erro, inventário insuficiente e preferência publicitária;
 5. criar a referência móvel da Home;
 6. validar a transição para a primeira Tela Hoje;

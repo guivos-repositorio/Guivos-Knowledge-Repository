@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.21.0
+version: 5.22.0
 owner: Guivos
 last_updated: 2026-08-01
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.23.0
+  - ROADMAP-12.24.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -24,6 +24,7 @@ related:
   - UXA-045
   - UXA-046
   - UXA-047
+  - UXA-048
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -39,6 +40,7 @@ related:
   - M7.47
   - M7.48
   - M7.49
+  - M7.50
 normative: false
 ---
 
@@ -70,36 +72,41 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.46 | Concluído | estados patrocinados de Lista e Mapa materializados |
 | M7.47 | Concluído | estados patrocinados de Lista e Mapa validados e reformulados |
 | M7.48 | Concluído | gestão da campanha ativa materializada |
-| M7.49 | Concluído neste incremento | gestão da campanha ativa funcionalmente validada e reformulada |
+| M7.49 | Concluído | gestão da campanha ativa funcionalmente validada e reformulada |
+| M7.50 | Concluído neste incremento | relatório agregado do Opportunity Boost materializado |
 
 ## 3. Marco vigente
 
-### Gestão da Campanha Ativa Funcionalmente Validada e Reformulada — M7.49
+### Relatório Agregado do Opportunity Boost Materializado — M7.50
 
 Critérios atendidos:
 
-- UXA-046 elevada para 0.2.0;
-- UXA-047 criada como validação funcional especializada;
-- seis arquivos vetoriais para computador reformulados;
-- programação distinguida de ativação e condicionada aos gates;
-- indicadores operacionais associados a período e atualização;
-- limitação apresentada como campanha ativa com entrega reduzida;
-- limite diário preservado e período sem prorrogação automática;
-- pausa reformulada como interrupção de novos eventos de entrega;
-- eventos válidos anteriores preservados para apuração posterior;
-- período podendo continuar e expirar durante a pausa;
-- retomada bloqueada até resolução e verificação da causa;
-- descarte de alteração sem retomada automática;
-- cancelamento bloqueado até motivo e confirmações completas;
-- suspensão por política incluída entre os estados finais;
-- registro operacional preservado sem relatório agregado antecipado;
-- tratamento do saldo e reconciliação mantidos como candidatos;
-- relatório agregado não criado;
+- UXA-048 criada como referência visual de baixa fidelidade;
+- quatro arquivos vetoriais criados para computador e aplicativo móvel;
+- visão geral agregada materializada com período e atualização;
+- entrega e interação apresentadas como camadas distintas;
+- atribuição candidata apresentada como associação técnica revisável;
+- origem patrocinada, orgânica e indeterminada preservadas;
+- dupla atribuição silenciosa proibida;
+- autorrelato identificado como informação declarada;
+- autorrelato não somado a eventos instrumentados;
+- ausência de dado apresentada como `não disponível`;
+- dados provisórios, em revisão e reconciliados separados;
+- eventos válidos, invalidados e em revisão materializados;
+- orçamento utilizado e saldo candidato separados;
+- nenhuma lista de visualizadores ou dado individual apresentado;
+- causalidade, conversão e impacto humano não inferidos;
+- validação funcional dos quatro artefatos não iniciada;
+- política final de atribuição, reconciliação e saldo não definida;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Gestão da Campanha Ativa Funcionalmente Validada e Reformulada — M7.49
+
+A UXA-046 reformulada e a UXA-047 permanecem como autoridades da gestão posterior à aprovação.
 
 ### Gestão da Campanha Ativa Materializada — M7.48
 
@@ -165,7 +172,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-047; relatório agregado ainda não materializado |
+| Arquitetura da Experiência | ativa até UXA-048; relatório agregado materializado e aguardando validação |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -175,17 +182,17 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Telas do Opportunity Boost
 
-1. wireframe do relatório agregado;
+1. validação funcional e reformulação dos wireframes da UXA-048;
 2. validação funcional do conjunto completo de wireframes;
-3. estados móveis de gestão, se priorizados;
+3. estados móveis adicionais de gestão, se priorizados;
 4. estados de erro, inventário insuficiente e preferência publicitária;
-5. testes posteriores de disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+5. testes posteriores de relatório, atribuição, autorrelato, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
 
 ### Modelo econômico e especialidades
 
 1. pesquisa de disposição a pagar;
 2. calibração das faixas de orçamento, CPM e CPC;
-3. política especializada de publicidade e categorias;
+3. política especializada de publicidade, atribuição e categorias;
 4. custos, antifraude e unit economics;
 5. revisões jurídica, fiscal, contábil, de privacidade e segurança;
 6. eventual protocolo de teste controlado.
@@ -203,4 +210,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Distribuição paga não equivale a recomendação. Cada transição exige evidência e autorização próprias.
+Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Distribuição paga não equivale a recomendação. Atribuição candidata não equivale a causalidade. Cada transição exige evidência e autorização próprias.

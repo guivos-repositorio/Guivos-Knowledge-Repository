@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.76.0
+version: 1.77.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-01
 depends_on:
@@ -24,6 +24,7 @@ related:
   - UXA-045
   - UXA-046
   - UXA-047
+  - UXA-048
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -34,8 +35,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.23.0
-  - M7.49
+  - ROADMAP-12.24.0
+  - M7.50
 normative: true
 ---
 
@@ -50,12 +51,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | gestão da campanha ativa do Opportunity Boost funcionalmente validada e reformulada | M7.49; UXA-046; UXA-047 |
+| Marco atual | relatório agregado do Opportunity Boost materializado | M7.50; UXA-048 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-047 | UXA-000 a UXA-047 |
+| Arquitetura da Experiência | ativa até UXA-048 | UXA-000 a UXA-048 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -71,7 +72,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Cartão e explicação do Boost | seis wireframes móveis e para computador funcionalmente validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes móveis e para computador funcionalmente validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes para computador funcionalmente validados e reformulados | UXA-046; UXA-047 |
-| Relatório agregado | ainda não materializado | — |
+| Relatório agregado | quatro wireframes para computador e móvel criados; validação pendente | UXA-048 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -180,7 +181,7 @@ Todos os valores permanecem candidatos para validação.
 - controles reversíveis;
 - baixa oferta orgânica reduz publicidade;
 - marcador e agrupamento próprios no Mapa;
-- relatório futuro separado em entrega, interação, atribuição candidata e autorrelato.
+- relatório separado em entrega, interação, atribuição candidata e autorrelato.
 
 ### 6.4 Fluxo visual do anunciante validado
 
@@ -222,8 +223,34 @@ O conjunto demonstra:
 - cancelamento bloqueado até motivo e confirmações completas;
 - estados finais separados, incluindo suspensão por política;
 - histórico e registro operacional preservados;
-- tratamento do saldo e reconciliação mantidos como candidatos;
-- relatório agregado ainda não criado.
+- tratamento do saldo e reconciliação mantidos como candidatos.
+
+### 6.8 Relatório agregado materializado
+
+A UXA-048 cria quatro referências:
+
+1. visão geral agregada para computador;
+2. atribuição candidata e autorrelato para computador;
+3. visão geral agregada móvel;
+4. reconciliação e ausência de dados móvel.
+
+O conjunto demonstra:
+
+- entrega, interação, atribuição candidata e autorrelato em camadas distintas;
+- orçamento total, utilizado e saldo não utilizado separados;
+- período consultado, atualização e estado provisório visíveis;
+- impressões, cliques, salvamentos, interesses e inscrições com significado próprio;
+- atribuição candidata como associação técnica revisável, não prova causal;
+- origem patrocinada, orgânica e indeterminada preservadas;
+- dupla atribuição silenciosa proibida;
+- autorrelato identificado e não somado a eventos instrumentados;
+- ausência de dado apresentada como `não disponível`, não como zero;
+- eventos válidos, invalidados e em revisão separados;
+- saldo, crédito, estorno e devolução mantidos como candidatos;
+- ausência de lista de visualizadores e dados individuais;
+- impacto humano, confiança, qualidade e evolução não inferidos.
+
+Os quatro artefatos ainda exigem validação funcional própria.
 
 ## 7. Proteções vigentes
 
@@ -241,6 +268,10 @@ O conjunto demonstra:
 - pausa interrompe novos eventos de entrega;
 - alteração material impede entrega desatualizada;
 - cancelamento preserva eventos válidos e histórico;
+- origem orgânica não é apagada pelo relatório;
+- ausência de dado não é convertida em zero;
+- autorrelato não é confundido com evento instrumentado;
+- anunciante não recebe lista de visualizadores;
 - saldo não é apresentado como devolução confirmada;
 - patrocinador ou financiador não recebe autoridade indevida;
 - Engenharia de Produto permanece pausada.
@@ -249,10 +280,12 @@ O conjunto demonstra:
 
 Não foram concluídos:
 
-- wireframe do relatório agregado;
+- validação funcional dos quatro wireframes da UXA-048;
 - validação funcional do conjunto completo de wireframes do Opportunity Boost;
-- estados móveis de gestão;
+- estados móveis adicionais de gestão;
 - estados de erro, inventário insuficiente e preferência publicitária;
+- política final de atribuição e reconciliação;
+- limiar definitivo de agregação e privacidade;
 - pesquisa de disposição a pagar;
 - calibração de CPM, CPC, orçamento, densidade ou frequência;
 - política jurídica, fiscal e contábil de publicidade;
@@ -262,6 +295,7 @@ Não foram concluídos:
 - algoritmo de entrega;
 - perfil publicitário ou uso real de dados;
 - tecnologia cartográfica, geocodificação ou rastreamento;
+- exportação real de dados;
 - checkout, gateway, faturamento ou cobrança;
 - design, protótipo ou testes;
 - piloto ou produção;
@@ -271,11 +305,11 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar o wireframe do relatório agregado;
+1. validar funcionalmente e reformular os wireframes da UXA-048;
 2. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-3. criar estados móveis de gestão, se priorizados;
+3. criar estados móveis adicionais de gestão, se priorizados;
 4. criar estados de erro, inventário insuficiente e preferência publicitária;
 5. validar preços, orçamentos e disposição a pagar;
-6. definir política especializada de publicidade e categorias;
+6. definir política especializada de publicidade, atribuição e categorias;
 7. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
 8. retomar independentemente os testes dos Resultados Empresariais.
