@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Campanha programada do Opportunity Boost</title>
-  <desc id="desc">Wireframe de baixa fidelidade para computador mostrando campanha aprovada e programada, orçamento reservado, período futuro e ações permitidas antes do início.</desc>
+  <title id="title">Campanha programada do Opportunity Boost reformulada</title>
+  <desc id="desc">Wireframe de baixa fidelidade mostrando campanha aprovada e programada, sem entrega iniciada, orçamento reservado, gates de início e ações separadas antes da ativação.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -10,51 +10,57 @@
   <text x="32" y="196" font-family="Arial" font-size="14">Campanhas</text>
   <text x="260" y="48" font-family="Arial" font-size="11">OPPORTUNITY BOOST › CAMPANHA OB-2048</text>
   <text x="260" y="86" font-family="Arial" font-size="28" font-weight="700">Formação gratuita em gestão comunitária</text>
-  <rect x="1180" y="46" width="220" height="48" rx="8" fill="#f3f3f3" stroke="#444444"/>
-  <text x="1290" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">PROGRAMADA</text>
-  <text x="260" y="122" font-family="Arial" font-size="12">Aprovada · início em 05/08/2026 às 08:00 · nenhuma entrega iniciada</text>
+  <rect x="1160" y="46" width="240" height="48" rx="8" fill="#f3f3f3" stroke="#444444"/>
+  <text x="1280" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">APROVADA E PROGRAMADA</text>
+  <text x="260" y="122" font-family="Arial" font-size="12">Início previsto em 05/08/2026 às 08:00 · nenhuma entrega ou evento operacional iniciado</text>
 
-  <rect x="260" y="158" width="1140" height="92" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="188" font-family="Arial" font-size="13" font-weight="700">O que este estado significa</text>
-  <text x="286" y="216" font-family="Arial" font-size="11">A campanha está aprovada e aguardando a data de início. O orçamento está reservado, mas ainda não foi utilizado.</text>
-  <text x="286" y="238" font-family="Arial" font-size="11">Editar informação material poderá cancelar a programação e exigir nova avaliação.</text>
+  <rect x="260" y="154" width="1140" height="112" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="186" font-family="Arial" font-size="13" font-weight="700">O que este estado significa</text>
+  <text x="286" y="214" font-family="Arial" font-size="11">A campanha está aprovada e aguardando o horário programado. Programação não garante início, entrega integral ou uso do orçamento.</text>
+  <text x="286" y="240" font-family="Arial" font-size="11">As condições serão verificadas novamente antes da ativação. Alteração material poderá interromper a programação e exigir nova avaliação.</text>
 
-  <rect x="260" y="278" width="360" height="210" rx="10" fill="#f8f8f8" stroke="#999999"/>
-  <text x="286" y="312" font-family="Arial" font-size="15" font-weight="700">Período</text>
-  <text x="286" y="350" font-family="Arial" font-size="12">Início: 05/08/2026 às 08:00</text>
-  <text x="286" y="380" font-family="Arial" font-size="12">Fim previsto: 12/08/2026 às 20:00</text>
-  <text x="286" y="410" font-family="Arial" font-size="12">Duração: 7 dias</text>
-  <text x="286" y="452" font-family="Arial" font-size="11" text-decoration="underline">Alterar programação</text>
+  <rect x="260" y="294" width="350" height="220" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="286" y="328" font-family="Arial" font-size="15" font-weight="700">Período programado</text>
+  <text x="286" y="366" font-family="Arial" font-size="12">Início: 05/08/2026 às 08:00</text>
+  <text x="286" y="396" font-family="Arial" font-size="12">Fim previsto: 12/08/2026 às 20:00</text>
+  <text x="286" y="426" font-family="Arial" font-size="12">Duração prevista: 7 dias</text>
+  <text x="286" y="466" font-family="Arial" font-size="11" text-decoration="underline">Alterar data ou horário</text>
+  <text x="286" y="494" font-family="Arial" font-size="10">Alteração poderá exigir nova avaliação.</text>
 
-  <rect x="646" y="278" width="360" height="210" rx="10" fill="#f8f8f8" stroke="#999999"/>
-  <text x="672" y="312" font-family="Arial" font-size="15" font-weight="700">Orçamento</text>
-  <text x="672" y="350" font-family="Arial" font-size="12">Total reservado: R$ 300,00</text>
-  <text x="672" y="380" font-family="Arial" font-size="12">Utilizado: R$ 0,00</text>
-  <text x="672" y="410" font-family="Arial" font-size="12">Saldo futuro: R$ 300,00</text>
-  <text x="672" y="440" font-family="Arial" font-size="12">Limite diário: R$ 50,00</text>
-  <text x="672" y="470" font-family="Arial" font-size="10">Sem renovação automática.</text>
+  <rect x="636" y="294" width="350" height="220" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="662" y="328" font-family="Arial" font-size="15" font-weight="700">Orçamento</text>
+  <text x="662" y="366" font-family="Arial" font-size="12">Total aprovado: R$ 300,00</text>
+  <text x="662" y="396" font-family="Arial" font-size="12">Reservado: R$ 300,00</text>
+  <text x="662" y="426" font-family="Arial" font-size="12">Utilizado: R$ 0,00</text>
+  <text x="662" y="456" font-family="Arial" font-size="12">Saldo não utilizado: R$ 300,00</text>
+  <text x="662" y="486" font-family="Arial" font-size="10">Limite diário: R$ 50,00 · sem renovação automática.</text>
 
-  <rect x="1032" y="278" width="368" height="210" rx="10" fill="#f8f8f8" stroke="#999999"/>
-  <text x="1058" y="312" font-family="Arial" font-size="15" font-weight="700">Condições verificadas</text>
-  <text x="1058" y="350" font-family="Arial" font-size="12">✓ oportunidade aprovada e ativa</text>
-  <text x="1058" y="380" font-family="Arial" font-size="12">✓ capacidade declarada disponível</text>
-  <text x="1058" y="410" font-family="Arial" font-size="12">✓ informações materiais atuais</text>
-  <text x="1058" y="440" font-family="Arial" font-size="12">✓ segurança e responsabilidade válidas</text>
+  <rect x="1012" y="294" width="388" height="220" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="1038" y="328" font-family="Arial" font-size="15" font-weight="700">Gates verificados antes do início</text>
+  <text x="1038" y="366" font-family="Arial" font-size="12">□ oportunidade permanece ativa</text>
+  <text x="1038" y="396" font-family="Arial" font-size="12">□ capacidade suficiente confirmada</text>
+  <text x="1038" y="426" font-family="Arial" font-size="12">□ informação material permanece atual</text>
+  <text x="1038" y="456" font-family="Arial" font-size="12">□ nenhum bloqueio de segurança ou política</text>
+  <text x="1038" y="492" font-family="Arial" font-size="10">Se um gate falhar, a campanha não inicia automaticamente.</text>
 
-  <rect x="260" y="520" width="1140" height="220" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="554" font-family="Arial" font-size="15" font-weight="700">Linha do tempo</text>
-  <text x="286" y="594" font-family="Arial" font-size="11">01/08 15:20 · campanha aprovada</text>
-  <text x="286" y="624" font-family="Arial" font-size="11">01/08 15:24 · orçamento reservado</text>
-  <text x="286" y="654" font-family="Arial" font-size="11">01/08 15:25 · início programado para 05/08</text>
-  <text x="286" y="694" font-family="Arial" font-size="10">Histórico preservado. Nenhuma impressão, clique ou cobrança operacional ocorreu.</text>
+  <rect x="260" y="546" width="730" height="214" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="580" font-family="Arial" font-size="15" font-weight="700">Linha do tempo</text>
+  <text x="286" y="618" font-family="Arial" font-size="11">01/08 15:20 · campanha aprovada</text>
+  <text x="286" y="648" font-family="Arial" font-size="11">01/08 15:24 · orçamento reservado</text>
+  <text x="286" y="678" font-family="Arial" font-size="11">01/08 15:25 · início programado para 05/08 às 08:00</text>
+  <text x="286" y="716" font-family="Arial" font-size="10">Histórico preservado. Nenhuma impressão, clique ou evento de entrega ocorreu.</text>
 
-  <rect x="260" y="772" width="1140" height="126" rx="10" fill="#f3f3f3" stroke="#444444"/>
-  <text x="286" y="806" font-family="Arial" font-size="14" font-weight="700">Ações disponíveis antes do início</text>
-  <rect x="286" y="832" width="180" height="42" rx="8" fill="#ffffff" stroke="#444444"/>
-  <text x="376" y="858" text-anchor="middle" font-family="Arial" font-size="11">Cancelar programação</text>
-  <rect x="486" y="832" width="220" height="42" rx="8" fill="#ffffff" stroke="#444444"/>
-  <text x="596" y="858" text-anchor="middle" font-family="Arial" font-size="11">Revisar informação material</text>
-  <rect x="1200" y="832" width="174" height="42" rx="8" fill="#111111" stroke="#111111"/>
-  <text x="1287" y="858" text-anchor="middle" font-family="Arial" font-size="11" fill="#ffffff">Voltar às campanhas</text>
+  <rect x="1016" y="546" width="384" height="214" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="1042" y="580" font-family="Arial" font-size="15" font-weight="700">Ações antes do início</text>
+  <rect x="1042" y="606" width="332" height="42" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1208" y="632" text-anchor="middle" font-family="Arial" font-size="11">Revisar informação material</text>
+  <rect x="1042" y="664" width="332" height="42" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1208" y="690" text-anchor="middle" font-family="Arial" font-size="11">Cancelar campanha antes do início</text>
+  <text x="1042" y="734" font-family="Arial" font-size="10">Cancelar exige confirmação e não inicia entrega.</text>
+
+  <rect x="260" y="792" width="1140" height="106" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="826" font-family="Arial" font-size="14" font-weight="700">Próxima transição possível</text>
+  <text x="286" y="856" font-family="Arial" font-size="11">A campanha somente muda para ATIVA quando o horário chegar e todos os gates permanecerem atendidos.</text>
+  <text x="286" y="882" font-family="Arial" font-size="10">Nova avaliação, bloqueio ou cancelamento impedem a ativação automática.</text>
   <text x="260" y="954" font-family="Arial" font-size="11">Baixa fidelidade · sem entrega, cobrança real, relatório agregado ou implementação.</text>
 </svg>
