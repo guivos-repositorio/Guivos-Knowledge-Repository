@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.24.0
+version: 12.25.0
 owner: Guivos
 last_updated: 2026-08-01
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.24.0
+  - ROADMAP-12.25.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -25,9 +25,10 @@ related:
   - UXA-046
   - UXA-047
   - UXA-048
+  - UXA-049
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.50
+  - M7.51
 normative: false
 ---
 
@@ -42,7 +43,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | relatório agregado do Opportunity Boost materializado | M7.50 |
+| Marco | relatório agregado do Opportunity Boost funcionalmente validado e reformulado | M7.51 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
@@ -52,7 +53,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes para computador validados e reformulados | UXA-046; UXA-047 |
-| Relatório agregado | quatro wireframes para computador e móvel criados; validação pendente | UXA-048 |
+| Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
@@ -67,7 +68,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-048;
+- Arquitetura da Experiência até UXA-049;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências de Organizações e Coletivos;
 - baseline comercial de planos;
@@ -77,19 +78,19 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - cartão patrocinado e explicação materializados, validados e reformulados;
 - estados patrocinados de Lista e Mapa materializados, validados e reformulados;
 - gestão da campanha ativa materializada, validada e reformulada;
-- relatório agregado materializado em quatro wireframes;
+- relatório agregado materializado, validado e reformulado;
 - parâmetros candidatos de orçamento e mensuração.
 
 ### Em validação ou calibração pendente
 
 - nove candidatos de Resultados Empresariais;
-- quatro wireframes da UXA-048;
+- conjunto completo de wireframes do Opportunity Boost;
 - utilidade e disposição a pagar dos planos;
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
 - densidade máxima candidata de 20%;
 - frequência publicitária;
-- atribuição, reconciliação e limiar de privacidade finais;
+- atribuição, agregação, reconciliação e limiar de privacidade finais;
 - custo de servir, margem e antifraude;
 - categorias publicitárias;
 - cancelamento, saldo e disputa finais;
@@ -99,17 +100,16 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 
 #### Telas do Opportunity Boost
 
-- validação funcional e reformulação dos wireframes da UXA-048;
 - validação funcional do conjunto completo de wireframes;
 - estados móveis adicionais de gestão, se priorizados;
 - estados de erro, inventário insuficiente e preferência publicitária;
-- testes posteriores de relatório, atribuição, autorrelato, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+- testes posteriores de relatório, atribuição, autorrelato, agregação, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
 
 #### Modelo econômico e especialidades
 
 - pesquisa de disposição a pagar;
 - calibração de orçamento, CPM ou CPC;
-- política especializada de publicidade e atribuição;
+- política especializada de publicidade, atribuição e agregação;
 - unit economics;
 - revisões jurídica, fiscal, contábil, de privacidade e segurança;
 - protocolo de teste controlado.
@@ -220,9 +220,9 @@ As referências demonstram:
 - estados finais separados, incluindo suspensão por política;
 - saldo e reconciliação ainda candidatos.
 
-## 10. Relatório agregado materializado
+## 10. Relatório agregado validado
 
-A UXA-048 cria:
+A UXA-048 reformulada e a UXA-049 validam:
 
 1. visão geral agregada para computador;
 2. atribuição candidata e autorrelato para computador;
@@ -232,19 +232,19 @@ A UXA-048 cria:
 As referências demonstram:
 
 - quatro camadas independentes: entrega, interação, atribuição candidata e autorrelato;
-- orçamento total, utilizado e saldo não utilizado separados;
-- período, atualização e estado provisório visíveis;
+- proveniência e estado junto de cada camada;
+- período, atualização e versão da regra candidata visíveis;
 - impressão, clique, salvamento, interesse e inscrição como eventos diferentes;
-- atribuição candidata sem causalidade presumida;
-- origem patrocinada, orgânica e indeterminada preservadas;
-- autorrelato identificado e não somado a eventos instrumentados;
-- ausência de dado apresentada como `não disponível`;
-- eventos válidos, invalidados e em revisão separados;
+- `não disponível`, `não exibido por agregação` e zero separados;
+- atribuição em agregados por tipo de evento, sem linha individual;
+- associação candidata patrocinada, origem orgânica e origem indeterminada preservadas;
+- autorrelato declarado, não verificado automaticamente e não somado;
+- quantidade declarada sujeita a supressão;
+- reconciliação separada por tipo e unidade;
+- estados provisório, em revisão, parcialmente reconciliado e reconciliado separados;
 - saldo, crédito, estorno e devolução ainda candidatos;
 - nenhuma lista de visualizadores ou dado individual;
-- nenhuma inferência de impacto humano, qualidade, confiança ou evolução.
-
-O conjunto ainda exige validação funcional própria.
+- nenhuma inferência de causalidade, impacto humano, qualidade, confiança ou evolução.
 
 ## 11. Sequência pessoal
 
@@ -275,7 +275,8 @@ Oferta e publicidade não interrompem a sequência protegida.
 - alteração material impede entrega desatualizada;
 - cancelamento preserva eventos válidos e histórico;
 - origem orgânica não é apagada pelo relatório;
-- ausência de dado não é convertida em zero;
+- ausência e supressão não são convertidas em zero;
+- regra candidata e período permanecem versionados;
 - atribuição candidata não é causalidade;
 - autorrelato não é evento instrumentado;
 - saldo não é devolução confirmada;
@@ -294,4 +295,4 @@ Oferta e publicidade não interrompem a sequência protegida.
 
 ## 14. Próximo movimento
 
-Após integração, nenhum movimento é automático. Pela sequência visual, a próxima ação candidata será validar funcionalmente e reformular os quatro wireframes da UXA-048.
+Após integração, nenhum movimento é automático. Pela sequência visual, a próxima ação candidata será validar funcionalmente o conjunto completo de wireframes do Opportunity Boost.
