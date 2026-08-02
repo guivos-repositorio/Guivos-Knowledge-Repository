@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Elegibilidade móvel do anunciante para o Opportunity Boost</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com identidade da campanha, etapa um de cinco, gates atendidos, limitados e bloqueados e ação condicionada.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
+  <text x="20" y="59" font-family="Arial" font-size="10">OPPORTUNITY BOOST · CONFIGURAÇÃO MÓVEL</text>
+  <text x="20" y="88" font-family="Arial" font-size="19" font-weight="700">Pode impulsionar?</text>
+  <text x="350" y="87" text-anchor="end" font-family="Arial" font-size="10">ETAPA 1 DE 5</text>
+  <line x1="20" y1="102" x2="90" y2="102" stroke="#111111" stroke-width="4"/>
+  <line x1="94" y1="102" x2="370" y2="102" stroke="#cccccc" stroke-width="4"/>
+
+  <rect x="20" y="122" width="350" height="78" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="147" font-family="Arial" font-size="11" font-weight="700">Campanha BST-2026-081 · rascunho v1</text>
+  <text x="34" y="169" font-family="Arial" font-size="10">Oportunidade: Formação de jovens em tecnologia</text>
+  <text x="34" y="189" font-family="Arial" font-size="9">Anunciante: Instituto Horizonte · plano Gestão</text>
+
+  <text x="20" y="228" font-family="Arial" font-size="13" font-weight="700">Condições para continuar</text>
+
+  <rect x="20" y="244" width="350" height="56" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="266" font-family="Arial" font-size="10" font-weight="700">Plano e responsável institucional</text>
+  <text x="350" y="266" text-anchor="end" font-family="Arial" font-size="9" font-weight="700">ATENDIDO</text>
+  <text x="34" y="286" font-family="Arial" font-size="9">Plano elegível e responsável identificado.</text>
+
+  <rect x="20" y="310" width="350" height="56" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="332" font-family="Arial" font-size="10" font-weight="700">Aprovação e informações materiais</text>
+  <text x="350" y="332" text-anchor="end" font-family="Arial" font-size="9" font-weight="700">ATENDIDO</text>
+  <text x="34" y="352" font-family="Arial" font-size="9">Oportunidade ativa, aprovada e atualizada.</text>
+
+  <rect x="20" y="376" width="350" height="68" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="398" font-family="Arial" font-size="10" font-weight="700">Capacidade disponível</text>
+  <text x="350" y="398" text-anchor="end" font-family="Arial" font-size="9" font-weight="700">ATENDIDO COM LIMITE</text>
+  <text x="34" y="418" font-family="Arial" font-size="9">Há capacidade, mas o alcance poderá ser reduzido.</text>
+  <text x="34" y="436" font-family="Arial" font-size="9" text-decoration="underline">Revisar capacidade declarada</text>
+
+  <rect x="20" y="454" width="350" height="56" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="476" font-family="Arial" font-size="10" font-weight="700">Segurança e moderação</text>
+  <text x="350" y="476" text-anchor="end" font-family="Arial" font-size="9" font-weight="700">ATENDIDO</text>
+  <text x="34" y="496" font-family="Arial" font-size="9">Nenhuma pendência crítica registrada.</text>
+
+  <rect x="20" y="526" width="350" height="94" rx="8" fill="#f3f3f3" stroke="#555555" stroke-dasharray="5 4"/>
+  <text x="34" y="550" font-family="Arial" font-size="10" font-weight="700">Quando houver bloqueio crítico</text>
+  <text x="34" y="570" font-family="Arial" font-size="9">Exemplo: informação material desatualizada</text>
+  <text x="34" y="590" font-family="Arial" font-size="9">Consequência: continuidade indisponível</text>
+  <text x="34" y="608" font-family="Arial" font-size="9" text-decoration="underline">Abrir ação corretiva específica</text>
+
+  <rect x="20" y="638" width="350" height="74" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="34" y="662" font-family="Arial" font-size="11" font-weight="700">Resumo do gate</text>
+  <text x="34" y="684" font-family="Arial" font-size="10">0 bloqueios críticos · 1 condição limitada</text>
+  <text x="34" y="702" font-family="Arial" font-size="9">Limite operacional não equivale a inelegibilidade.</text>
+
+  <rect x="20" y="732" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="761" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#ffffff">CONTINUAR PARA OBJETIVO</text>
+  <text x="20" y="806" font-family="Arial" font-size="9" text-decoration="underline">Voltar à oportunidade</text>
+  <text x="370" y="806" text-anchor="end" font-family="Arial" font-size="9">Rascunho preservado</text>
+  <text x="20" y="832" font-family="Arial" font-size="8">Plano pago não substitui aprovação, capacidade ou segurança.</text>
+</svg>
