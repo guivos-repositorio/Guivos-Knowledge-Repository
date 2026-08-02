@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.32.0
+version: 0.33.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-02
 parent: UXA-000
@@ -48,6 +48,7 @@ related:
   - UXA-049
   - UXA-050
   - UXA-051
+  - UXA-052
   - PAS-001
 normative: false
 ---
@@ -104,7 +105,8 @@ Página Inicial pública
 24. relatório agregado — UXA-048;
 25. validação e reformulação do relatório agregado — UXA-049;
 26. validação transversal do conjunto completo do Opportunity Boost — UXA-050;
-27. configuração móvel do anunciante — UXA-051.
+27. configuração móvel do anunciante — UXA-051;
+28. validação e reformulação da configuração móvel — UXA-052.
 
 ## 4. Natureza dos artefatos
 
@@ -285,25 +287,30 @@ A UXA-050 confirma:
 - histórico funcional e versão da regra candidata preservados;
 - cobertura por canal explicitamente controlada.
 
-### 5.10 Opportunity Boost — configuração móvel pendente de validação
+### 5.10 Opportunity Boost — configuração móvel validada
 
-A UXA-051 deverá ser validada quanto a:
+A UXA-052 confirmou, após reformulação:
 
-- cinco telas preservarem a mesma campanha e o mesmo rascunho;
-- progresso e responsabilidade principal serem compreensíveis;
-- estados atendido, limitado e bloqueado não dependerem apenas de cor;
-- ações corretivas permanecerem acessíveis em tela pequena;
-- objetivo único começar sem seleção automática;
-- critérios escolhidos, revisáveis e proibidos permanecerem distinguíveis;
-- público insuficiente não provocar expansão automática;
-- orçamento, limite diário, período e base principal permanecerem compreensíveis;
-- estimativa continuar distinguível de garantia;
-- primeiro resultado orgânico permanecer anterior ao anúncio;
-- resumo expansível não esconder informação material;
-- confirmações começarem desmarcadas;
-- envio não parecer aprovação, programação, entrega ou cobrança;
-- cancelar envio apresentar consequência conhecida;
-- retorno entre etapas preservar rascunho sem confirmar escolhas pendentes.
+- cinco telas preservando a mesma campanha, rascunho e versão enviada;
+- progresso e responsabilidade principal compreensíveis;
+- estado salvo e retorno sem confirmação silenciosa;
+- condição limitada ativa separada de bloqueio;
+- regras de exceção explicitamente não ativas no exemplo;
+- objetivo selecionado somente após escolha explícita;
+- critérios escolhidos revisáveis ou removíveis;
+- critérios protegidos excluídos;
+- público insuficiente sem expansão automática;
+- orçamento, limite diário, período e base principal separados;
+- estimativa provisória com fatores, atualização e recálculo;
+- renovação automática desativada como estado informativo;
+- primeiro resultado orgânico anterior ao anúncio;
+- controles da pessoa identificados como demonstração;
+- resumo reaberto antes da confirmação;
+- confirmações começando desmarcadas;
+- envio separado de aprovação, programação, entrega e cobrança;
+- versão enviada em somente leitura;
+- cancelamento com revisão e confirmação separadas;
+- histórico preservado.
 
 ### 5.11 Autonomia
 
@@ -315,7 +322,7 @@ A UXA-051 deverá ser validada quanto a:
 - Alteração material não força confirmação ou nova entrega?
 - O anunciante pode consultar dados ausentes ou suprimidos sem ser induzido a inferir zero ou causa?
 - Preferências negativas prevalecem sobre a entrega contratada?
-- O anunciante móvel pode voltar e revisar sem perda silenciosa do rascunho?
+- O anunciante móvel pode voltar e revisar sem perda ou confirmação silenciosa do rascunho?
 
 ### 5.12 Continuidade
 
@@ -365,6 +372,10 @@ A UXA-051 deverá ser validada quanto a:
 | progresso móvel de etapa | posição no fluxo sem autorizar avanço automático |
 | resumo expansível móvel | conteúdo secundário acessível sem ocultar condição material |
 | ação móvel condicionada | continuidade somente após gates, escolhas e confirmações válidos |
+| regra de exceção não ativa | condição hipotética separada do estado atual |
+| estado informativo móvel | condição como renovação desativada sem caixa de consentimento |
+| controles da pessoa em demonstração | ações visíveis na prévia sem serem controles do anunciante |
+| revisão de cancelamento | consequência apresentada antes da confirmação separada |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -407,7 +418,7 @@ oportunidade aprovada e ativa
 → relatório agregado
 ```
 
-A configuração móvel materializa as cinco primeiras responsabilidades sem alterar a autoridade das transições posteriores.
+A configuração móvel materializa e valida as cinco primeiras responsabilidades sem alterar a autoridade das transições posteriores.
 
 ## 9. Artefatos especializados
 
@@ -430,7 +441,8 @@ A configuração móvel materializa as cinco primeiras responsabilidades sem alt
 | Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
 | Fluxo do anunciante para computador | UXA-040 | painel institucional | cinco arquivos vetoriais reformulados |
 | Validação do fluxo para computador | UXA-041 | painel institucional | validação funcional especializada |
-| Configuração móvel do anunciante | UXA-051 | painel institucional móvel | cinco arquivos vetoriais aguardando validação |
+| Configuração móvel do anunciante | UXA-051 | painel institucional móvel | cinco arquivos vetoriais reformulados |
+| Validação da configuração móvel | UXA-052 | painel institucional móvel | validação funcional especializada |
 | Cartão e explicação | UXA-042 | experiência da pessoa | seis arquivos vetoriais reformulados |
 | Validação do cartão | UXA-043 | participante | validação funcional especializada |
 | Lista e Mapa patrocinados | UXA-044 | Mapa e Lista | quatro arquivos vetoriais reformulados |
@@ -459,28 +471,27 @@ A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente 
 
 A UXA-048 reformulada e a UXA-049 demonstram relatório agregado funcionalmente válido em quatro estados para computador e móvel.
 
-A UXA-050 demonstra que os 25 wireframes formam um percurso único, com identidade, versão aprovada, estados, controles, origem, histórico, mensuração e cobertura por canal consolidados.
+A UXA-050 demonstra que os 25 wireframes anteriores formam um percurso único, com identidade, versão aprovada, estados, controles, origem, histórico, mensuração e cobertura por canal consolidados.
 
-A UXA-051 materializa cinco estados móveis de configuração do anunciante, ainda sem validação funcional própria.
+A UXA-051 reformulada e a UXA-052 demonstram configuração móvel funcionalmente válida em cinco estados. O Opportunity Boost passa a possuir 30 wireframes materializados, com configuração validada em computador e aplicativo móvel.
 
 ## 11. Limites
 
 Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, agregação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
 
-Validação funcional da configuração móvel, gestão móvel, estados completos de erro, inventário insuficiente e preferência publicitária permanecem não concluídos.
+Gestão móvel, estados completos de erro, inventário insuficiente e preferência publicitária permanecem não materializados ou não concluídos.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os cinco wireframes móveis da UXA-051;
-2. criar gestão móvel da campanha ativa;
-3. criar estados de erro, inventário insuficiente e preferência publicitária;
-4. definir protocolo de protótipo de baixa ou média fidelidade;
-5. preparar plano de teste com Pessoas, Organizações e Coletivos;
-6. criar a referência móvel da Home;
-7. validar a transição para a primeira Tela Hoje;
-8. criar referência do início protegido e da compreensão para computador;
-9. criar referência para tablet, caso priorizada.
+1. criar gestão móvel da campanha ativa;
+2. criar estados de erro, inventário insuficiente e preferência publicitária;
+3. definir protocolo de protótipo de baixa ou média fidelidade;
+4. preparar plano de teste com Pessoas, Organizações e Coletivos;
+5. criar a referência móvel da Home;
+6. validar a transição para a primeira Tela Hoje;
+7. criar referência do início protegido e da compreensão para computador;
+8. criar referência para tablet, caso priorizada.
 
 Nenhuma etapa posterior é iniciada automaticamente.
