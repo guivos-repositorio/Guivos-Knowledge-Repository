@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Campanha ativa do Opportunity Boost</title>
+  <desc id="desc">Wireframe de baixa fidelidade para computador mostrando estado ativo, orçamento utilizado e restante, entrega operacional, frequência, capacidade e ações de pausa.</desc>
+  <rect width="1440" height="1024" fill="#ffffff"/>
+  <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
+  <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
+  <text x="32" y="48" font-family="Arial" font-size="22" font-weight="700">GUIVOS</text>
+  <text x="32" y="112" font-family="Arial" font-size="14">Oportunidades</text>
+  <text x="32" y="154" font-family="Arial" font-size="14" font-weight="700">Opportunity Boost</text>
+  <text x="32" y="196" font-family="Arial" font-size="14">Campanhas</text>
+  <text x="260" y="48" font-family="Arial" font-size="11">OPPORTUNITY BOOST › CAMPANHA OB-2048</text>
+  <text x="260" y="86" font-family="Arial" font-size="28" font-weight="700">Formação gratuita em gestão comunitária</text>
+  <rect x="1190" y="46" width="210" height="48" rx="8" fill="#e8e8e8" stroke="#222222"/>
+  <text x="1295" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">ATIVA</text>
+  <text x="260" y="122" font-family="Arial" font-size="12">Entrega em andamento · última verificação operacional: agora</text>
+
+  <rect x="260" y="154" width="1140" height="84" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="184" font-family="Arial" font-size="13" font-weight="700">Condição atual</text>
+  <text x="286" y="212" font-family="Arial" font-size="11">A campanha pode entregar dentro do orçamento, período, frequência, capacidade e critérios aprovados. Nenhum resultado é garantido.</text>
+
+  <rect x="260" y="266" width="260" height="188" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="284" y="300" font-family="Arial" font-size="14" font-weight="700">Orçamento</text>
+  <text x="284" y="336" font-family="Arial" font-size="12">Total: R$ 300,00</text>
+  <text x="284" y="366" font-family="Arial" font-size="12">Utilizado: R$ 86,40</text>
+  <text x="284" y="396" font-family="Arial" font-size="12">Saldo: R$ 213,60</text>
+  <text x="284" y="426" font-family="Arial" font-size="11">Limite diário: R$ 50,00</text>
+
+  <rect x="544" y="266" width="260" height="188" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="568" y="300" font-family="Arial" font-size="14" font-weight="700">Período</text>
+  <text x="568" y="336" font-family="Arial" font-size="12">Início: 05/08/2026</text>
+  <text x="568" y="366" font-family="Arial" font-size="12">Fim previsto: 12/08/2026</text>
+  <text x="568" y="396" font-family="Arial" font-size="12">Tempo restante: 5 dias</text>
+  <text x="568" y="426" font-family="Arial" font-size="11">Sem renovação automática</text>
+
+  <rect x="828" y="266" width="260" height="188" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="852" y="300" font-family="Arial" font-size="14" font-weight="700">Entrega operacional</text>
+  <text x="852" y="336" font-family="Arial" font-size="12">Impressões válidas: 3.240</text>
+  <text x="852" y="366" font-family="Arial" font-size="12">Cliques válidos: 72</text>
+  <text x="852" y="396" font-family="Arial" font-size="12">Tráfego inválido removido: 18</text>
+  <text x="852" y="426" font-family="Arial" font-size="10">Indicadores operacionais; não é relatório final.</text>
+
+  <rect x="1112" y="266" width="288" height="188" rx="10" fill="#f8f8f8" stroke="#999999"/>
+  <text x="1136" y="300" font-family="Arial" font-size="14" font-weight="700">Proteções de entrega</text>
+  <text x="1136" y="336" font-family="Arial" font-size="12">Frequência: dentro do limite</text>
+  <text x="1136" y="366" font-family="Arial" font-size="12">Capacidade: disponível</text>
+  <text x="1136" y="396" font-family="Arial" font-size="12">Informação material: atual</text>
+  <text x="1136" y="426" font-family="Arial" font-size="12">Política: sem bloqueio</text>
+
+  <rect x="260" y="486" width="730" height="254" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="520" font-family="Arial" font-size="15" font-weight="700">Linha do tempo e decisões</text>
+  <text x="286" y="558" font-family="Arial" font-size="11">05/08 08:00 · campanha iniciada</text>
+  <text x="286" y="588" font-family="Arial" font-size="11">05/08 12:00 · entrega dentro do limite diário</text>
+  <text x="286" y="618" font-family="Arial" font-size="11">06/08 09:30 · tráfego inválido removido da medição</text>
+  <text x="286" y="648" font-family="Arial" font-size="11">06/08 14:00 · capacidade confirmada pelo responsável</text>
+  <text x="286" y="690" font-family="Arial" font-size="10">Eventos válidos permanecem preservados mesmo após pausa ou encerramento.</text>
+
+  <rect x="1014" y="486" width="386" height="254" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="1040" y="520" font-family="Arial" font-size="15" font-weight="700">Ações de gestão</text>
+  <rect x="1040" y="548" width="334" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1207" y="575" text-anchor="middle" font-family="Arial" font-size="11">Pausar campanha</text>
+  <rect x="1040" y="610" width="334" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1207" y="637" text-anchor="middle" font-family="Arial" font-size="11">Atualizar capacidade declarada</text>
+  <rect x="1040" y="672" width="334" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1207" y="699" text-anchor="middle" font-family="Arial" font-size="11">Solicitar alteração material</text>
+
+  <rect x="260" y="772" width="1140" height="126" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="806" font-family="Arial" font-size="14" font-weight="700">Antes de pausar ou cancelar</text>
+  <text x="286" y="836" font-family="Arial" font-size="11">A interface deverá mostrar entrega futura afetada, eventos válidos anteriores, orçamento utilizado, saldo restante e possibilidade de retomada.</text>
+  <text x="286" y="866" font-family="Arial" font-size="11">Cancelamento encerra entrega futura e exige confirmação proporcional à ativação.</text>
+  <text x="260" y="954" font-family="Arial" font-size="11">Baixa fidelidade · indicadores ilustrativos · sem cobrança real, relatório agregado ou implementação.</text>
+</svg>
