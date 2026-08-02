@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Campanha limitada do Opportunity Boost</title>
-  <desc id="desc">Wireframe de baixa fidelidade mostrando campanha limitada por frequência ou capacidade, com motivo, consequência, orçamento e condição de retomada.</desc>
+  <title id="title">Campanha limitada do Opportunity Boost reformulada</title>
+  <desc id="desc">Wireframe de baixa fidelidade mostrando campanha ativa com entrega reduzida, motivo, consequência, limite diário preservado e verificação necessária para normalização.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <rect x="1" y="1" width="1438" height="1022" fill="none" stroke="#111111" stroke-width="2"/>
   <rect x="0" y="0" width="220" height="1024" fill="#f4f4f4" stroke="#999999"/>
@@ -10,54 +10,59 @@
   <text x="32" y="196" font-family="Arial" font-size="14">Campanhas</text>
   <text x="260" y="48" font-family="Arial" font-size="11">OPPORTUNITY BOOST › CAMPANHA OB-2048</text>
   <text x="260" y="86" font-family="Arial" font-size="28" font-weight="700">Formação gratuita em gestão comunitária</text>
-  <rect x="1120" y="46" width="280" height="48" rx="8" fill="#f3f3f3" stroke="#222222" stroke-dasharray="5 3"/>
-  <text x="1260" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">LIMITADA POR CAPACIDADE</text>
-  <text x="260" y="122" font-family="Arial" font-size="12">Entrega reduzida automaticamente · campanha não está pausada</text>
+  <rect x="1080" y="46" width="320" height="48" rx="8" fill="#f3f3f3" stroke="#222222" stroke-dasharray="5 3"/>
+  <text x="1240" y="76" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700">ATIVA COM ENTREGA REDUZIDA</text>
+  <text x="260" y="122" font-family="Arial" font-size="12">Limitação por capacidade desde 08/08/2026 às 10:20 · novos eventos continuam em ritmo reduzido</text>
 
-  <rect x="260" y="154" width="1140" height="128" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
-  <text x="286" y="188" font-family="Arial" font-size="14" font-weight="700">Motivo e consequência</text>
-  <text x="286" y="220" font-family="Arial" font-size="11">A capacidade declarada caiu de 18 para 6 vagas. A entrega futura foi reduzida para evitar demanda superior ao atendimento possível.</text>
-  <text x="286" y="250" font-family="Arial" font-size="11">Orçamento não é acelerado para compensar a limitação. O saldo permanece disponível enquanto a campanha estiver dentro do período.</text>
+  <rect x="260" y="154" width="1140" height="136" rx="10" fill="#f3f3f3" stroke="#444444" stroke-width="2"/>
+  <text x="286" y="188" font-family="Arial" font-size="14" font-weight="700">Motivo, consequência e proteção aplicada</text>
+  <text x="286" y="220" font-family="Arial" font-size="11">A capacidade declarada caiu de 18 para 6 vagas. A entrega foi reduzida para não gerar demanda acima do atendimento possível.</text>
+  <text x="286" y="250" font-family="Arial" font-size="11">A campanha permanece ativa. O limite diário não aumenta, o orçamento não é acelerado e o período não é prorrogado automaticamente.</text>
+  <text x="286" y="276" font-family="Arial" font-size="10">Limitação não equivale a pausa e não garante normalização após uma atualização.</text>
 
-  <rect x="260" y="312" width="350" height="220" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="346" font-family="Arial" font-size="15" font-weight="700">Capacidade</text>
-  <text x="286" y="384" font-family="Arial" font-size="12">Declarada no início: 18 vagas</text>
-  <text x="286" y="414" font-family="Arial" font-size="12">Disponível agora: 6 vagas</text>
-  <text x="286" y="444" font-family="Arial" font-size="12">Entrega: reduzida</text>
-  <text x="286" y="482" font-family="Arial" font-size="11" text-decoration="underline">Atualizar capacidade</text>
-  <text x="286" y="510" font-family="Arial" font-size="10">Aumento declarado poderá exigir verificação.</text>
+  <rect x="260" y="320" width="350" height="226" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="354" font-family="Arial" font-size="15" font-weight="700">Capacidade e entrega</text>
+  <text x="286" y="392" font-family="Arial" font-size="12">Declarada no início: 18 vagas</text>
+  <text x="286" y="422" font-family="Arial" font-size="12">Disponível agora: 6 vagas</text>
+  <text x="286" y="452" font-family="Arial" font-size="12">Entrega atual: reduzida</text>
+  <text x="286" y="482" font-family="Arial" font-size="12">Novos eventos: permitidos em ritmo protegido</text>
+  <text x="286" y="520" font-family="Arial" font-size="10">Aumento declarado poderá exigir nova verificação.</text>
 
-  <rect x="636" y="312" width="350" height="220" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="662" y="346" font-family="Arial" font-size="15" font-weight="700">Orçamento e período</text>
-  <text x="662" y="384" font-family="Arial" font-size="12">Total: R$ 300,00</text>
-  <text x="662" y="414" font-family="Arial" font-size="12">Utilizado: R$ 124,00</text>
-  <text x="662" y="444" font-family="Arial" font-size="12">Saldo: R$ 176,00</text>
-  <text x="662" y="474" font-family="Arial" font-size="12">Fim previsto: 12/08/2026</text>
-  <text x="662" y="504" font-family="Arial" font-size="10">Limitação não amplia duração automaticamente.</text>
+  <rect x="636" y="320" width="350" height="226" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="662" y="354" font-family="Arial" font-size="15" font-weight="700">Orçamento e período</text>
+  <text x="662" y="392" font-family="Arial" font-size="12">Total aprovado: R$ 300,00</text>
+  <text x="662" y="422" font-family="Arial" font-size="12">Utilizado validado: R$ 124,00</text>
+  <text x="662" y="452" font-family="Arial" font-size="12">Saldo não utilizado: R$ 176,00</text>
+  <text x="662" y="482" font-family="Arial" font-size="12">Limite diário preservado: R$ 50,00</text>
+  <text x="662" y="512" font-family="Arial" font-size="12">Fim previsto: 12/08/2026 às 20:00</text>
+  <text x="662" y="536" font-family="Arial" font-size="9">Saldo não é consumido para compensar a limitação.</text>
 
-  <rect x="1012" y="312" width="388" height="220" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="1038" y="346" font-family="Arial" font-size="15" font-weight="700">Condição para normalizar</text>
-  <text x="1038" y="384" font-family="Arial" font-size="12">1. confirmar capacidade real disponível;</text>
-  <text x="1038" y="414" font-family="Arial" font-size="12">2. manter informação material atual;</text>
-  <text x="1038" y="444" font-family="Arial" font-size="12">3. permanecer dentro do período e orçamento;</text>
-  <text x="1038" y="474" font-family="Arial" font-size="12">4. não existir bloqueio de política.</text>
+  <rect x="1012" y="320" width="388" height="226" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="1038" y="354" font-family="Arial" font-size="15" font-weight="700">Condição para nova verificação</text>
+  <text x="1038" y="392" font-family="Arial" font-size="12">1. atualizar a capacidade real disponível;</text>
+  <text x="1038" y="422" font-family="Arial" font-size="12">2. manter informação material atual;</text>
+  <text x="1038" y="452" font-family="Arial" font-size="12">3. permanecer dentro do período e orçamento;</text>
+  <text x="1038" y="482" font-family="Arial" font-size="12">4. não existir bloqueio de política;</text>
+  <text x="1038" y="512" font-family="Arial" font-size="12">5. concluir verificação operacional.</text>
+  <text x="1038" y="536" font-family="Arial" font-size="9">Atender condições não promete retorno imediato ao ritmo normal.</text>
 
-  <rect x="260" y="564" width="740" height="218" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="286" y="598" font-family="Arial" font-size="15" font-weight="700">Estados de limitação possíveis</text>
-  <text x="286" y="636" font-family="Arial" font-size="12">• limitada por capacidade — demanda potencial acima do atendimento declarado;</text>
-  <text x="286" y="668" font-family="Arial" font-size="12">• limitada por frequência — proteção contra repetição excessiva;</text>
-  <text x="286" y="700" font-family="Arial" font-size="12">• entrega reduzida por pouca oferta orgânica — densidade paga não é aumentada;</text>
-  <text x="286" y="742" font-family="Arial" font-size="10">Cada motivo deve possuir consequência e condição de retomada próprias.</text>
+  <rect x="260" y="576" width="740" height="216" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="286" y="610" font-family="Arial" font-size="15" font-weight="700">Motivos de limitação possíveis</text>
+  <text x="286" y="648" font-family="Arial" font-size="12">• capacidade — demanda potencial acima do atendimento declarado;</text>
+  <text x="286" y="680" font-family="Arial" font-size="12">• frequência — proteção contra repetição excessiva;</text>
+  <text x="286" y="712" font-family="Arial" font-size="12">• pouca oferta orgânica — densidade paga é reduzida;</text>
+  <text x="286" y="744" font-family="Arial" font-size="12">• outra restrição operacional — motivo explicável e registrável.</text>
+  <text x="286" y="774" font-family="Arial" font-size="10">Cada motivo mantém consequência e condição próprias.</text>
 
-  <rect x="1026" y="564" width="374" height="218" rx="10" fill="#f3f3f3" stroke="#444444"/>
-  <text x="1052" y="598" font-family="Arial" font-size="15" font-weight="700">Ações</text>
-  <rect x="1052" y="628" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
-  <text x="1213" y="655" text-anchor="middle" font-family="Arial" font-size="11">Atualizar capacidade</text>
-  <rect x="1052" y="690" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
-  <text x="1213" y="717" text-anchor="middle" font-family="Arial" font-size="11">Pausar voluntariamente</text>
-  <text x="1052" y="760" font-family="Arial" font-size="10">Nenhuma ação promete normalização imediata.</text>
+  <rect x="1026" y="576" width="374" height="216" rx="10" fill="#f3f3f3" stroke="#444444"/>
+  <text x="1052" y="610" font-family="Arial" font-size="15" font-weight="700">Ações</text>
+  <rect x="1052" y="638" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1213" y="665" text-anchor="middle" font-family="Arial" font-size="11">Atualizar capacidade declarada</text>
+  <rect x="1052" y="700" width="322" height="44" rx="8" fill="#ffffff" stroke="#444444"/>
+  <text x="1213" y="727" text-anchor="middle" font-family="Arial" font-size="11">Pausar voluntariamente</text>
+  <text x="1052" y="770" font-family="Arial" font-size="10">Após atualizar, a campanha passa por nova verificação.</text>
 
-  <text x="260" y="840" font-family="Arial" font-size="11">Histórico: 08/08 10:20 · capacidade reduzida · entrega limitada automaticamente.</text>
-  <text x="260" y="872" font-family="Arial" font-size="11">Eventos válidos anteriores permanecem; saldo não utilizado continua separado.</text>
+  <text x="260" y="846" font-family="Arial" font-size="11">Histórico: ativa → capacidade reduzida → ativa com entrega reduzida.</text>
+  <text x="260" y="878" font-family="Arial" font-size="11">Eventos válidos anteriores permanecem; saldo não utilizado continua separado.</text>
   <text x="260" y="954" font-family="Arial" font-size="11">Baixa fidelidade · sem algoritmo real, cobrança, relatório agregado ou implementação.</text>
 </svg>
