@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.26.0
-title: Roadmap Arquitetural — Conjunto Completo do Opportunity Boost Validado
+id: ROADMAP-12.27.0
+title: Roadmap Arquitetural — Configuração Móvel do Anunciante do Opportunity Boost Materializada
 status: active
-version: 12.26.0
+version: 12.27.0
 owner: Guivos
 last_updated: 2026-08-02
 supersedes_partial:
-  - ROADMAP-12.25.0
+  - ROADMAP-12.26.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -29,14 +29,15 @@ related:
   - UXA-048
   - UXA-049
   - UXA-050
+  - UXA-051
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.52
+  - M7.53
 ---
 
-# Roadmap Arquitetural — Conjunto Completo do Opportunity Boost Validado
+# Roadmap Arquitetural — Configuração Móvel do Anunciante do Opportunity Boost Materializada
 
 ## 1. Autoridade
 
@@ -47,15 +48,17 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | conjunto completo de wireframes do Opportunity Boost funcionalmente validado | M7.52 |
+| Marco | configuração móvel do anunciante do Opportunity Boost materializada | M7.53 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
-| Fluxo visual do anunciante | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
+| Fluxo visual do anunciante para computador | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
+| Configuração móvel do anunciante | cinco wireframes criados; validação pendente | UXA-051 |
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes validados e reformulados | UXA-046; UXA-047 |
 | Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
-| Conjunto completo do Boost | 25 wireframes validados transversalmente | UXA-050 |
+| Conjunto validado do Boost | 25 wireframes validados transversalmente | UXA-050 |
+| Cobertura visual ampliada | 30 wireframes materializados; 5 móveis aguardam validação | UXA-040 a UXA-051 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -78,14 +81,15 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 9. planos, benefícios, limites e preços candidatos definidos;
 10. Opportunity Boost definido como add-on publicitário candidato;
 11. experiência do Opportunity Boost validada e reformulada;
-12. fluxo do anunciante materializado, validado e reformulado;
+12. fluxo do anunciante para computador materializado, validado e reformulado;
 13. cartão patrocinado e explicação materializados, validados e reformulados;
 14. estados patrocinados de Lista e Mapa materializados, validados e reformulados;
 15. gestão da campanha ativa materializada em seis wireframes;
 16. gestão da campanha ativa funcionalmente validada e reformulada;
 17. relatório agregado materializado em quatro wireframes para computador e móvel;
 18. relatório agregado funcionalmente validado e reformulado;
-19. conjunto completo de 25 wireframes funcionalmente validado transversalmente.
+19. conjunto completo de 25 wireframes funcionalmente validado transversalmente;
+20. configuração móvel do anunciante materializada em cinco wireframes.
 
 ## 4. Sequência pessoal vigente
 
@@ -152,19 +156,51 @@ O Boost amplia distribuição publicitária; não altera ranking orgânico, ader
 
 A UXA-039 confirmou a experiência como válida após reformulação, com gate de entrada, objetivo único, critérios visíveis, alcance sem garantia, pausa por alteração material, estados completos, Boost Social Financiado identificado, controles reversíveis, proteção da densidade, Mapa separado e relatório em quatro camadas.
 
-### 6.3 Fluxo visual validado
+### 6.3 Fluxo visual para computador validado
 
 A UXA-040 reformulada e a UXA-041 validam elegibilidade, objetivo e critérios, orçamento e duração, prévia e confirmação e envio para avaliação.
 
-### 6.4 Cartão e explicação validados
+### 6.4 Configuração móvel materializada
+
+A UXA-051 cria cinco referências móveis:
+
+```text
+elegibilidade e gate
+→ objetivo e critérios
+→ orçamento, duração e estimativa
+→ prévia e confirmação
+→ envio para avaliação
+```
+
+O conjunto móvel demonstra:
+
+- campanha e rascunho identificados em todas as etapas;
+- progresso explícito de cinco etapas;
+- uma responsabilidade principal por tela;
+- gates atendido, atendido com limite e bloqueado;
+- objetivo único sem seleção automática;
+- critérios escolhidos e revisáveis;
+- critérios protegidos e contextos pessoais excluídos;
+- público insuficiente sem ampliação automática;
+- orçamento total, limite diário, período e base principal separados;
+- estimativa agregada sem garantia;
+- primeiro resultado orgânico anterior ao anúncio;
+- natureza patrocinada anterior ao conteúdo;
+- confirmações inicialmente desmarcadas;
+- envio sem aprovação, programação, entrega ou cobrança;
+- cancelamento com retorno ao rascunho e histórico preservado.
+
+A materialização móvel não está funcionalmente validada e não presume responsividade técnica.
+
+### 6.5 Cartão e explicação validados
 
 A UXA-042 reformulada e a UXA-043 validam cartões e explicações em móvel e computador, incluindo Boost Social Financiado, com publicidade identificada, critérios protegidos excluídos e controles reversíveis.
 
-### 6.5 Lista e Mapa patrocinados validados
+### 6.6 Lista e Mapa patrocinados validados
 
 A UXA-044 reformulada e a UXA-045 validam uma única consulta territorial, contagens separadas, preferência publicitária distinta dos filtros, marcadores próprios, seleção sem alteração da ordem, localização opcional e gate `Pesquisar nesta área`.
 
-### 6.6 Gestão da campanha ativa validada
+### 6.7 Gestão da campanha ativa validada
 
 A UXA-046 reformulada e a UXA-047 validam:
 
@@ -194,7 +230,9 @@ O conjunto demonstra:
 - estados finais separados e histórico preservado;
 - saldo e reconciliação ainda candidatos.
 
-### 6.7 Relatório agregado validado
+Gestão móvel permanece não materializada.
+
+### 6.8 Relatório agregado validado
 
 A UXA-048 reformulada e a UXA-049 validam quatro referências:
 
@@ -225,9 +263,9 @@ O conjunto demonstra:
 - nenhuma lista de visualizadores ou dados individuais;
 - nenhuma inferência de causalidade, impacto humano, confiança, qualidade ou evolução.
 
-### 6.8 Conjunto completo validado transversalmente
+### 6.9 Conjunto validado transversalmente
 
-A UXA-050 consolida 25 wireframes em um percurso único:
+A UXA-050 consolida 25 wireframes anteriormente validados em um percurso único:
 
 ```text
 elegibilidade
@@ -256,10 +294,11 @@ O conjunto transversal demonstra:
 - controles da pessoa sem identificação para o anunciante;
 - orgânico e patrocinado separados até atribuição e relatório;
 - identidade contínua do Boost Social Financiado;
-- orçamento, saldo e reconciliação sem promessa financeira;
-- configuração e gestão móveis ainda não materializadas.
+- orçamento, saldo e reconciliação sem promessa financeira.
 
-### 6.9 Preços candidatos preservados
+Os cinco novos wireframes da UXA-051 ampliam a cobertura visual, mas não integram o conjunto funcionalmente validado até validação especializada posterior.
+
+### 6.10 Preços candidatos preservados
 
 | Modalidade | Orçamento mínimo |
 |---|---:|
@@ -298,6 +337,8 @@ O conjunto transversal demonstra:
 - anunciante e financiador não recebem lista de visualizadores;
 - saldo não é devolução confirmada;
 - impressão, clique, inscrição, atribuição e impacto são eventos distintos;
+- configuração móvel não seleciona opção ou confirmação automaticamente;
+- retorno móvel preserva o rascunho sem confirmar escolha pendente;
 - wireframe, validação, teste e desenvolvimento permanecem atos separados.
 
 ## 8. Próximas etapas candidatas
@@ -306,8 +347,8 @@ O conjunto transversal demonstra:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. definir o próximo pacote de estados residuais do Opportunity Boost;
-2. criar configuração e gestão móvel, se priorizadas;
+1. validar funcionalmente e reformular os cinco wireframes móveis da UXA-051;
+2. criar gestão móvel da campanha ativa;
 3. criar estados de erro, inventário insuficiente e preferência publicitária;
 4. definir protocolo de protótipo de baixa ou média fidelidade;
 5. preparar plano de teste com Pessoas, Organizações e Coletivos.
