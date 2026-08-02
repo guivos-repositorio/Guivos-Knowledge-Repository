@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.25.0
-title: Roadmap Arquitetural — Relatório Agregado Funcionalmente Validado
+id: ROADMAP-12.26.0
+title: Roadmap Arquitetural — Conjunto Completo do Opportunity Boost Validado
 status: active
-version: 12.25.0
+version: 12.26.0
 owner: Guivos
-last_updated: 2026-08-01
+last_updated: 2026-08-02
 supersedes_partial:
-  - ROADMAP-12.24.0
+  - ROADMAP-12.25.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -28,14 +28,15 @@ related:
   - UXA-047
   - UXA-048
   - UXA-049
+  - UXA-050
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.51
+  - M7.52
 ---
 
-# Roadmap Arquitetural — Relatório Agregado Funcionalmente Validado
+# Roadmap Arquitetural — Conjunto Completo do Opportunity Boost Validado
 
 ## 1. Autoridade
 
@@ -46,7 +47,7 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | relatório agregado do Opportunity Boost funcionalmente validado e reformulado | M7.51 |
+| Marco | conjunto completo de wireframes do Opportunity Boost funcionalmente validado | M7.52 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
@@ -54,6 +55,7 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes validados e reformulados | UXA-046; UXA-047 |
 | Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
+| Conjunto completo do Boost | 25 wireframes validados transversalmente | UXA-050 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -82,7 +84,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 15. gestão da campanha ativa materializada em seis wireframes;
 16. gestão da campanha ativa funcionalmente validada e reformulada;
 17. relatório agregado materializado em quatro wireframes para computador e móvel;
-18. relatório agregado funcionalmente validado e reformulado.
+18. relatório agregado funcionalmente validado e reformulado;
+19. conjunto completo de 25 wireframes funcionalmente validado transversalmente.
 
 ## 4. Sequência pessoal vigente
 
@@ -222,7 +225,41 @@ O conjunto demonstra:
 - nenhuma lista de visualizadores ou dados individuais;
 - nenhuma inferência de causalidade, impacto humano, confiança, qualidade ou evolução.
 
-### 6.8 Preços candidatos preservados
+### 6.8 Conjunto completo validado transversalmente
+
+A UXA-050 consolida 25 wireframes em um percurso único:
+
+```text
+elegibilidade
+→ configuração
+→ prévia e revisão
+→ avaliação
+→ programação
+→ entrega patrocinada identificada
+→ explicação e controles
+→ gestão e alteração material
+→ encerramento
+→ reconciliação
+→ relatório
+```
+
+O conjunto transversal demonstra:
+
+- identificador único da campanha;
+- versão aprovada vinculada a eventos e relatório;
+- alteração material sem reescrita do histórico;
+- estados com gates e consequências conhecidos;
+- configuração e aprovação sem entrega automática;
+- prévia e unidade entregue materialmente compatíveis;
+- Lista e Mapa preservando a mesma consulta;
+- preferência negativa prevalecendo sobre entrega contratada;
+- controles da pessoa sem identificação para o anunciante;
+- orgânico e patrocinado separados até atribuição e relatório;
+- identidade contínua do Boost Social Financiado;
+- orçamento, saldo e reconciliação sem promessa financeira;
+- configuração e gestão móveis ainda não materializadas.
+
+### 6.9 Preços candidatos preservados
 
 | Modalidade | Orçamento mínimo |
 |---|---:|
@@ -243,34 +280,37 @@ O conjunto demonstra:
 - assinatura, transação, comissão e Boost permanecem separados;
 - plano pago e publicidade não aumentam relevância;
 - compreensão inicial e Próximo Passo não alimentam segmentação;
-- localização e preferências negativas são respeitadas;
+- localização permanece opcional;
+- preferência negativa prevalece sobre entrega contratada;
+- ocultar publicidade não reduz catálogo orgânico;
 - marcador patrocinado não encobre oportunidade orgânica;
 - movimentação do Mapa não autoriza localização ou nova consulta;
 - baixa oferta orgânica reduz publicidade;
 - limitação não acelera orçamento ou amplia limite diário;
 - pausa interrompe novos eventos de entrega;
-- alteração material impede entrega desatualizada;
+- alteração material impede entrega desatualizada e não reescreve eventos anteriores;
 - cancelamento preserva eventos válidos e histórico;
 - origem orgânica permanece separada da associação patrocinada;
 - ausência e supressão não são convertidas em zero;
 - regra candidata e período permanecem versionados;
 - autorrelato não é evento instrumentado;
 - atribuição candidata não é causalidade;
-- anunciante não recebe lista de visualizadores;
+- anunciante e financiador não recebem lista de visualizadores;
 - saldo não é devolução confirmada;
 - impressão, clique, inscrição, atribuição e impacto são eventos distintos;
 - wireframe, validação, teste e desenvolvimento permanecem atos separados.
 
 ## 8. Próximas etapas candidatas
 
-### 8.1 Telas do Opportunity Boost
+### 8.1 Estados residuais e protótipo
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o conjunto completo de wireframes;
-2. criar estados móveis adicionais de gestão, se priorizados;
+1. definir o próximo pacote de estados residuais do Opportunity Boost;
+2. criar configuração e gestão móvel, se priorizadas;
 3. criar estados de erro, inventário insuficiente e preferência publicitária;
-4. testar relatório, atribuição, autorrelato, agregação, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+4. definir protocolo de protótipo de baixa ou média fidelidade;
+5. preparar plano de teste com Pessoas, Organizações e Coletivos.
 
 ### 8.2 Modelo econômico e especialidades
 
