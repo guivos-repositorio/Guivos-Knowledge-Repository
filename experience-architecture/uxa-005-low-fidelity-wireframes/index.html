@@ -4128,10 +4128,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#510-opportunity-boost-configuracao-movel-pendente-de-validacao" class="md-nav__link">
+  <a href="#510-opportunity-boost-configuracao-movel-validada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.10 Opportunity Boost — configuração móvel pendente de validação
+        5.10 Opportunity Boost — configuração móvel validada
       
     </span>
   </a>
@@ -8495,10 +8495,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#510-opportunity-boost-configuracao-movel-pendente-de-validacao" class="md-nav__link">
+  <a href="#510-opportunity-boost-configuracao-movel-validada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.10 Opportunity Boost — configuração móvel pendente de validação
+        5.10 Opportunity Boost — configuração móvel validada
       
     </span>
   </a>
@@ -8707,7 +8707,8 @@
 <li>relatório agregado — UXA-048;</li>
 <li>validação e reformulação do relatório agregado — UXA-049;</li>
 <li>validação transversal do conjunto completo do Opportunity Boost — UXA-050;</li>
-<li>configuração móvel do anunciante — UXA-051.</li>
+<li>configuração móvel do anunciante — UXA-051;</li>
+<li>validação e reformulação da configuração móvel — UXA-052.</li>
 </ol>
 <h2 id="4-natureza-dos-artefatos">4. Natureza dos artefatos<a class="headerlink" href="#4-natureza-dos-artefatos" title="Permanent link">&para;</a></h2>
 <p>Os wireframes:</p>
@@ -8879,24 +8880,29 @@
 <li>histórico funcional e versão da regra candidata preservados;</li>
 <li>cobertura por canal explicitamente controlada.</li>
 </ul>
-<h3 id="510-opportunity-boost-configuracao-movel-pendente-de-validacao">5.10 Opportunity Boost — configuração móvel pendente de validação<a class="headerlink" href="#510-opportunity-boost-configuracao-movel-pendente-de-validacao" title="Permanent link">&para;</a></h3>
-<p>A UXA-051 deverá ser validada quanto a:</p>
+<h3 id="510-opportunity-boost-configuracao-movel-validada">5.10 Opportunity Boost — configuração móvel validada<a class="headerlink" href="#510-opportunity-boost-configuracao-movel-validada" title="Permanent link">&para;</a></h3>
+<p>A UXA-052 confirmou, após reformulação:</p>
 <ul>
-<li>cinco telas preservarem a mesma campanha e o mesmo rascunho;</li>
-<li>progresso e responsabilidade principal serem compreensíveis;</li>
-<li>estados atendido, limitado e bloqueado não dependerem apenas de cor;</li>
-<li>ações corretivas permanecerem acessíveis em tela pequena;</li>
-<li>objetivo único começar sem seleção automática;</li>
-<li>critérios escolhidos, revisáveis e proibidos permanecerem distinguíveis;</li>
-<li>público insuficiente não provocar expansão automática;</li>
-<li>orçamento, limite diário, período e base principal permanecerem compreensíveis;</li>
-<li>estimativa continuar distinguível de garantia;</li>
-<li>primeiro resultado orgânico permanecer anterior ao anúncio;</li>
-<li>resumo expansível não esconder informação material;</li>
-<li>confirmações começarem desmarcadas;</li>
-<li>envio não parecer aprovação, programação, entrega ou cobrança;</li>
-<li>cancelar envio apresentar consequência conhecida;</li>
-<li>retorno entre etapas preservar rascunho sem confirmar escolhas pendentes.</li>
+<li>cinco telas preservando a mesma campanha, rascunho e versão enviada;</li>
+<li>progresso e responsabilidade principal compreensíveis;</li>
+<li>estado salvo e retorno sem confirmação silenciosa;</li>
+<li>condição limitada ativa separada de bloqueio;</li>
+<li>regras de exceção explicitamente não ativas no exemplo;</li>
+<li>objetivo selecionado somente após escolha explícita;</li>
+<li>critérios escolhidos revisáveis ou removíveis;</li>
+<li>critérios protegidos excluídos;</li>
+<li>público insuficiente sem expansão automática;</li>
+<li>orçamento, limite diário, período e base principal separados;</li>
+<li>estimativa provisória com fatores, atualização e recálculo;</li>
+<li>renovação automática desativada como estado informativo;</li>
+<li>primeiro resultado orgânico anterior ao anúncio;</li>
+<li>controles da pessoa identificados como demonstração;</li>
+<li>resumo reaberto antes da confirmação;</li>
+<li>confirmações começando desmarcadas;</li>
+<li>envio separado de aprovação, programação, entrega e cobrança;</li>
+<li>versão enviada em somente leitura;</li>
+<li>cancelamento com revisão e confirmação separadas;</li>
+<li>histórico preservado.</li>
 </ul>
 <h3 id="511-autonomia">5.11 Autonomia<a class="headerlink" href="#511-autonomia" title="Permanent link">&para;</a></h3>
 <ul>
@@ -8908,7 +8914,7 @@
 <li>Alteração material não força confirmação ou nova entrega?</li>
 <li>O anunciante pode consultar dados ausentes ou suprimidos sem ser induzido a inferir zero ou causa?</li>
 <li>Preferências negativas prevalecem sobre a entrega contratada?</li>
-<li>O anunciante móvel pode voltar e revisar sem perda silenciosa do rascunho?</li>
+<li>O anunciante móvel pode voltar e revisar sem perda ou confirmação silenciosa do rascunho?</li>
 </ul>
 <h3 id="512-continuidade">5.12 Continuidade<a class="headerlink" href="#512-continuidade" title="Permanent link">&para;</a></h3>
 <ul>
@@ -9053,6 +9059,22 @@
 <td>ação móvel condicionada</td>
 <td>continuidade somente após gates, escolhas e confirmações válidos</td>
 </tr>
+<tr>
+<td>regra de exceção não ativa</td>
+<td>condição hipotética separada do estado atual</td>
+</tr>
+<tr>
+<td>estado informativo móvel</td>
+<td>condição como renovação desativada sem caixa de consentimento</td>
+</tr>
+<tr>
+<td>controles da pessoa em demonstração</td>
+<td>ações visíveis na prévia sem serem controles do anunciante</td>
+</tr>
+<tr>
+<td>revisão de cancelamento</td>
+<td>consequência apresentada antes da confirmação separada</td>
+</tr>
 </tbody>
 </table>
 <p>Cor, iconografia e tipografia não possuem significado definitivo.</p>
@@ -9159,7 +9181,7 @@
 → reconciliação
 → relatório agregado
 </code></pre></div>
-<p>A configuração móvel materializa as cinco primeiras responsabilidades sem alterar a autoridade das transições posteriores.</p>
+<p>A configuração móvel materializa e valida as cinco primeiras responsabilidades sem alterar a autoridade das transições posteriores.</p>
 <h2 id="9-artefatos-especializados">9. Artefatos especializados<a class="headerlink" href="#9-artefatos-especializados" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9277,7 +9299,13 @@
 <td>Configuração móvel do anunciante</td>
 <td>UXA-051</td>
 <td>painel institucional móvel</td>
-<td>cinco arquivos vetoriais aguardando validação</td>
+<td>cinco arquivos vetoriais reformulados</td>
+</tr>
+<tr>
+<td>Validação da configuração móvel</td>
+<td>UXA-052</td>
+<td>painel institucional móvel</td>
+<td>validação funcional especializada</td>
 </tr>
 <tr>
 <td>Cartão e explicação</td>
@@ -9344,15 +9372,14 @@
 <p>A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcionalmente válidos em móvel e computador.</p>
 <p>A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente válida em seis estados para computador.</p>
 <p>A UXA-048 reformulada e a UXA-049 demonstram relatório agregado funcionalmente válido em quatro estados para computador e móvel.</p>
-<p>A UXA-050 demonstra que os 25 wireframes formam um percurso único, com identidade, versão aprovada, estados, controles, origem, histórico, mensuração e cobertura por canal consolidados.</p>
-<p>A UXA-051 materializa cinco estados móveis de configuração do anunciante, ainda sem validação funcional própria.</p>
+<p>A UXA-050 demonstra que os 25 wireframes anteriores formam um percurso único, com identidade, versão aprovada, estados, controles, origem, histórico, mensuração e cobertura por canal consolidados.</p>
+<p>A UXA-051 reformulada e a UXA-052 demonstram configuração móvel funcionalmente válida em cinco estados. O Opportunity Boost passa a possuir 30 wireframes materializados, com configuração validada em computador e aplicativo móvel.</p>
 <h2 id="11-limites">11. Limites<a class="headerlink" href="#11-limites" title="Permanent link">&para;</a></h2>
 <p>Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, agregação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.</p>
-<p>Validação funcional da configuração móvel, gestão móvel, estados completos de erro, inventário insuficiente e preferência publicitária permanecem não concluídos.</p>
+<p>Gestão móvel, estados completos de erro, inventário insuficiente e preferência publicitária permanecem não materializados ou não concluídos.</p>
 <h2 id="12-proximos-pontos-de-decisao">12. Próximos pontos de decisão<a class="headerlink" href="#12-proximos-pontos-de-decisao" title="Permanent link">&para;</a></h2>
 <p>Os próximos pontos exigem autorizações separadas:</p>
 <ol>
-<li>validar funcionalmente e reformular os cinco wireframes móveis da UXA-051;</li>
 <li>criar gestão móvel da campanha ativa;</li>
 <li>criar estados de erro, inventário insuficiente e preferência publicitária;</li>
 <li>definir protocolo de protótipo de baixa ou média fidelidade;</li>
