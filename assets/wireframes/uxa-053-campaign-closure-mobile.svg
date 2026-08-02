@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Encerramento e cancelamento do Opportunity Boost em aplicativo móvel</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com campanha ainda ativa, motivo e confirmações obrigatórios, cancelamento indisponível, preservação de eventos válidos e estados finais separados.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
+  <text x="20" y="58" font-family="Arial" font-size="10">OPPORTUNITY BOOST · GESTÃO MÓVEL</text>
+  <text x="20" y="88" font-family="Arial" font-size="18" font-weight="700">Encerrar campanha</text>
+  <text x="370" y="87" text-anchor="end" font-family="Arial" font-size="8" font-weight="700">CONFIRMAÇÃO PENDENTE</text>
+
+  <rect x="20" y="108" width="350" height="88" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="133" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · versão aprovada v1</text>
+  <text x="34" y="154" font-family="Arial" font-size="9">Estado atual: ATIVA · novos eventos ainda permitidos</text>
+  <text x="34" y="175" font-family="Arial" font-size="9">Cancelar é irreversível para esta mesma campanha.</text>
+  <text x="34" y="190" font-family="Arial" font-size="8">Pausar poderá ser alternativa quando houver possibilidade de retomada.</text>
+
+  <text x="20" y="228" font-family="Arial" font-size="12" font-weight="700">Orçamento no momento da revisão</text>
+  <rect x="20" y="242" width="168" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="265" font-family="Arial" font-size="8">Utilizado validado</text>
+  <text x="34" y="291" font-family="Arial" font-size="14" font-weight="700">R$ 168</text>
+  <rect x="202" y="242" width="168" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="216" y="265" font-family="Arial" font-size="8">Saldo não utilizado</text>
+  <text x="216" y="291" font-family="Arial" font-size="14" font-weight="700">R$ 132</text>
+
+  <rect x="20" y="326" width="350" height="74" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="350" font-family="Arial" font-size="10" font-weight="700">Motivo obrigatório</text>
+  <text x="34" y="374" font-family="Arial" font-size="9">Nenhum motivo selecionado</text>
+  <text x="338" y="374" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Selecionar</text>
+  <text x="34" y="393" font-family="Arial" font-size="8">O motivo será preservado no registro operacional.</text>
+
+  <rect x="20" y="416" width="350" height="152" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="440" font-family="Arial" font-size="10" font-weight="700">Confirmações obrigatórias</text>
+  <rect x="34" y="458" width="12" height="12" fill="#ffffff" stroke="#111111"/>
+  <text x="56" y="468" font-family="Arial" font-size="9">Novos eventos de entrega serão encerrados.</text>
+  <rect x="34" y="490" width="12" height="12" fill="#ffffff" stroke="#111111"/>
+  <text x="56" y="500" font-family="Arial" font-size="9">Eventos válidos anteriores e histórico serão preservados.</text>
+  <rect x="34" y="522" width="12" height="12" fill="#ffffff" stroke="#111111"/>
+  <text x="56" y="532" font-family="Arial" font-size="9">A mesma campanha não poderá ser retomada.</text>
+  <text x="34" y="556" font-family="Arial" font-size="8">Saldo, crédito, estorno ou devolução dependem de política e reconciliação.</text>
+
+  <rect x="20" y="586" width="350" height="48" rx="8" fill="#dddddd" stroke="#777777"/>
+  <text x="195" y="615" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700">CONFIRMAR CANCELAMENTO · INDISPONÍVEL</text>
+  <text x="20" y="654" font-family="Arial" font-size="8">Pendente: motivo e 3 confirmações.</text>
+
+  <rect x="20" y="674" width="168" height="44" rx="8" fill="#111111"/>
+  <text x="104" y="701" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#ffffff">PAUSAR EM VEZ DISSO</text>
+  <rect x="202" y="674" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="286" y="701" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">ABRIR HISTÓRICO</text>
+
+  <rect x="20" y="736" width="350" height="76" rx="8" fill="#f3f3f3" stroke="#777777" stroke-dasharray="5 4"/>
+  <text x="34" y="758" font-family="Arial" font-size="10" font-weight="700">Estados finais possuem causas próprias</text>
+  <text x="34" y="779" font-family="Arial" font-size="8">orçamento esgotado · capacidade esgotada · expirada</text>
+  <text x="34" y="796" font-family="Arial" font-size="8">suspensa por política · concluída · cancelada · reconciliada</text>
+  <text x="34" y="808" font-family="Arial" font-size="7">Histórico e relatório agregado permanecem acessíveis quando aplicável.</text>
+
+  <text x="20" y="832" font-family="Arial" font-size="8">Cancelamento não apaga eventos válidos nem confirma devolução.</text>
+  <text x="20" y="842" font-family="Arial" font-size="7">Gestão móvel materializada; validação funcional pendente.</text>
+</svg>
