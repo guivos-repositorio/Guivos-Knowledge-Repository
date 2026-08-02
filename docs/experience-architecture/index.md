@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.42.0
+version: 0.43.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 related:
@@ -56,9 +56,10 @@ related:
   - UXA-044
   - UXA-045
   - UXA-046
+  - UXA-047
   - GEM-007-A1
   - GEM-010-A2
-  - M7.48
+  - M7.49
 normative: false
 ---
 
@@ -104,7 +105,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
-| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação dos wireframes](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão e explicação](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md), [estados patrocinados de Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md), [validação desses estados](uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md) e [gestão da campanha ativa](uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md) |
+| Opportunity Boost | [contrato reformulado](uxa-038-opportunity-boost-functional-experience-contract.md), [validação funcional](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [wireframes do anunciante](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação dos wireframes](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão e explicação](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md), [estados patrocinados de Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md), [validação desses estados](uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md), [gestão da campanha ativa](uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md) e [validação da gestão](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -112,7 +113,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até a gestão da campanha do Boost | UXA-000 a UXA-046 |
+| Arquitetura da Experiência | ativa até a validação da gestão da campanha do Boost | UXA-000 a UXA-047 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -120,7 +121,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados orgânicos e patrocinados móveis e desktop funcionalmente validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
-| Opportunity Boost | experiência, fluxo do anunciante, cartão, explicação, Lista e Mapa validados; gestão ativa materializada e aguardando validação | UXA-038 a UXA-046 |
+| Opportunity Boost | experiência, fluxo do anunciante, cartão, explicação, Lista, Mapa e gestão ativa funcionalmente validados | UXA-038 a UXA-047 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Início protegido e compreensão
@@ -147,31 +148,13 @@ Os estados patrocinados preservam a mesma consulta, separam contagens orgânicas
 
 A UXA-038 reformulada e a UXA-039 estabelecem gates explicáveis, objetivo único, critérios utilizados e excluídos, alcance sem garantia, prévia separada do orgânico, pausa por alteração material, estados completos, Boost Social Financiado identificado, controles reversíveis, proteção da densidade, Mapa separado e relatório em quatro camadas.
 
-A UXA-040 reformulada e a UXA-041 validam cinco referências para computador:
+A UXA-040 reformulada e a UXA-041 validam cinco referências do fluxo inicial do anunciante.
 
-1. elegibilidade e gate de entrada;
-2. objetivo e critérios de distribuição;
-3. orçamento, duração e estimativa;
-4. prévia patrocinada e confirmação;
-5. envio para avaliação.
+A UXA-042 reformulada e a UXA-043 validam seis referências do cartão, da explicação e do Boost Social Financiado.
 
-A UXA-042 reformulada e a UXA-043 validam seis referências da experiência da pessoa:
+A UXA-044 reformulada e a UXA-045 validam quatro referências territoriais patrocinadas.
 
-1. cartão patrocinado móvel;
-2. explicação patrocinada móvel;
-3. cartão patrocinado para computador;
-4. explicação patrocinada para computador;
-5. cartão móvel de Boost Social Financiado;
-6. explicação móvel de Boost Social Financiado.
-
-A UXA-044 reformulada e a UXA-045 validam quatro referências territoriais:
-
-1. Lista patrocinada móvel;
-2. Lista patrocinada para computador;
-3. Mapa patrocinado móvel;
-4. Mapa patrocinado para computador.
-
-A UXA-046 materializa seis referências de gestão:
+A UXA-046 reformulada e a UXA-047 validam seis referências de gestão:
 
 1. campanha programada;
 2. campanha ativa;
@@ -180,9 +163,18 @@ A UXA-046 materializa seis referências de gestão:
 5. alteração material;
 6. encerramento e cancelamento.
 
-O novo conjunto demonstra programação sem entrega, estado ativo sem garantia, limitação sem aceleração de orçamento, pausas com causas e consequências próprias, alteração material com nova avaliação e encerramento com eventos e histórico preservados.
+O conjunto validado demonstra:
 
-Os seis wireframes da UXA-046 ainda exigem validação funcional própria.
+- programação sem entrega e ativação condicionada aos gates;
+- estado ativo com resumo operacional datado, sem garantia de resultado;
+- limitação como entrega reduzida, sem acelerar orçamento ou ampliar período;
+- pausa interrompendo novos eventos sem apagar eventos válidos;
+- retomada bloqueada até resolução e verificação da causa;
+- alteração material sem aprovação ou retomada automática;
+- cancelamento bloqueado até motivo e confirmações completas;
+- estados finais separados, incluindo suspensão por política;
+- saldo e reconciliação mantidos como candidatos;
+- relatório agregado ainda não criado.
 
 Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
 
@@ -202,14 +194,13 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-046;
-2. criar wireframe do relatório agregado;
-3. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-4. criar estados móveis de gestão, se priorizados;
-5. criar estados de erro, inventário insuficiente e preferência publicitária;
-6. testar disclosure, densidade, frequência, marcadores, localização, orçamento e controles;
-7. criar a referência móvel da Home;
-8. validar a transição para a primeira Tela Hoje;
-9. criar referência para computador e tablet quando priorizada.
+1. criar o wireframe do relatório agregado;
+2. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
+3. criar estados móveis de gestão, se priorizados;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. testar disclosure, densidade, frequência, marcadores, localização, orçamento e controles;
+6. criar a referência móvel da Home;
+7. validar a transição para a primeira Tela Hoje;
+8. criar referência para computador e tablet quando priorizada.
 
 Nenhum ato é iniciado automaticamente.
