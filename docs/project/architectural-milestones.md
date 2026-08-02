@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.26.0
+version: 5.27.0
 owner: Guivos
 last_updated: 2026-08-02
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.28.0
+  - ROADMAP-12.29.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -29,6 +29,7 @@ related:
   - UXA-050
   - UXA-051
   - UXA-052
+  - UXA-053
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -49,6 +50,7 @@ related:
   - M7.52
   - M7.53
   - M7.54
+  - M7.55
 normative: false
 ---
 
@@ -79,98 +81,75 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.45 | Concluído | cartão patrocinado e explicação validados e reformulados |
 | M7.46 | Concluído | estados patrocinados de Lista e Mapa materializados |
 | M7.47 | Concluído | estados patrocinados de Lista e Mapa validados e reformulados |
-| M7.48 | Concluído | gestão da campanha ativa materializada |
-| M7.49 | Concluído | gestão da campanha ativa funcionalmente validada e reformulada |
-| M7.50 | Concluído | relatório agregado do Opportunity Boost materializado |
+| M7.48 | Concluído | gestão da campanha ativa para computador materializada |
+| M7.49 | Concluído | gestão para computador funcionalmente validada e reformulada |
+| M7.50 | Concluído | relatório agregado materializado |
 | M7.51 | Concluído | relatório agregado funcionalmente validado e reformulado |
-| M7.52 | Concluído | conjunto completo de wireframes do Opportunity Boost funcionalmente validado |
-| M7.53 | Concluído | configuração móvel do anunciante do Opportunity Boost materializada |
-| M7.54 | Concluído neste incremento | configuração móvel do anunciante funcionalmente validada e reformulada |
+| M7.52 | Concluído | 25 wireframes funcionalmente validados transversalmente |
+| M7.53 | Concluído | configuração móvel do anunciante materializada |
+| M7.54 | Concluído | configuração móvel funcionalmente validada e reformulada |
+| M7.55 | Concluído neste incremento | gestão móvel da campanha ativa materializada |
 
 ## 3. Marco vigente
 
-### Configuração Móvel do Anunciante do Opportunity Boost Funcionalmente Validada e Reformulada — M7.54
+### Gestão Móvel da Campanha Ativa do Opportunity Boost Materializada — M7.55
 
 Critérios atendidos:
 
-- UXA-052 criada como validação funcional especializada;
-- UXA-051 elevada para 0.2.0;
-- cinco arquivos vetoriais reformulados;
-- identidade da campanha, rascunho e versão enviada persistente;
-- progresso explícito de cinco etapas preservado;
-- retorno entre etapas sem confirmação silenciosa;
-- condição limitada ativa separada de bloqueio;
-- regras de exceção rotuladas como não ativas no exemplo;
-- objetivo selecionado somente após ação explícita;
-- critérios escolhidos revisáveis ou removíveis;
-- critérios protegidos e contextos pessoais excluídos;
-- público insuficiente sem expansão automática;
-- orçamento total, limite diário, período e base principal separados;
-- CPM e CPC mantidos como bases não simultâneas;
-- estimativa provisória, datada e sujeita a recálculo;
-- renovação automática desativada como estado informativo;
-- primeiro resultado orgânico anterior ao anúncio;
-- controles da pessoa identificados como demonstração;
-- confirmações afirmativas inicialmente desmarcadas;
-- envio separado de aprovação, programação, entrega e cobrança;
-- versão enviada em somente leitura;
-- cancelamento com revisão e confirmação separadas;
-- histórico e versão enviada preservados;
-- configuração do anunciante validada em computador e aplicativo móvel;
-- 30 wireframes do Boost materializados e validados por pacote;
-- gestão móvel da campanha não materializada;
-- nenhuma nova validação transversal dos 30 artefatos iniciada;
+- UXA-053 criada como referência móvel de baixa fidelidade;
+- seis arquivos vetoriais criados em 390 × 844 pixels;
+- campanha programada materializada com nova verificação dos gates;
+- campanha ativa materializada com orçamento, período e indicadores operacionais datados;
+- entrega reduzida distinguida de pausa;
+- limite diário e período preservados durante limitação;
+- pausa materializada com novos eventos interrompidos e eventos anteriores preservados;
+- retomada apresentada como indisponível enquanto a causa persistir;
+- alteração material comparando versão aprovada e versão candidata;
+- nova avaliação e descarte sem retomada automática;
+- cancelamento com motivo e confirmações inicialmente vazias;
+- ação destrutiva indisponível antes do gate completo;
+- estados finais, reconciliação, histórico e relatório separados;
+- nenhuma responsividade técnica presumida;
+- validação funcional dos seis artefatos não iniciada;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
-### Configuração Móvel do Anunciante do Opportunity Boost Materializada — M7.53
+### Configuração Móvel Funcionalmente Validada e Reformulada — M7.54
 
-A UXA-051 permanece como autoridade da materialização visual, reformulada e validada pela UXA-052.
+A UXA-051 reformulada e a UXA-052 permanecem como autoridades da configuração móvel.
 
-### Conjunto Completo de Wireframes do Opportunity Boost Funcionalmente Validado — M7.52
+### Configuração Móvel Materializada — M7.53
 
-A UXA-050 permanece como autoridade da validação transversal dos 25 wireframes examinados naquele incremento. A UXA-052 valida os cinco novos artefatos móveis sem alterar retrospectivamente o escopo da UXA-050.
+A UXA-051 permanece como autoridade da materialização visual, reformulada pela UXA-052.
+
+### Conjunto Completo de Wireframes Funcionalmente Validado — M7.52
+
+A UXA-050 permanece como autoridade da validação transversal dos 25 wireframes examinados naquele incremento. Os artefatos posteriores não alteram retrospectivamente esse escopo.
 
 ### Relatório Agregado Funcionalmente Validado e Reformulado — M7.51
 
 A UXA-048 reformulada e a UXA-049 permanecem como autoridades do relatório agregado.
 
-### Relatório Agregado do Opportunity Boost Materializado — M7.50
+### Gestão para Computador Funcionalmente Validada e Reformulada — M7.49
 
-A UXA-048 permanece como autoridade da materialização visual, reformulada pela UXA-049.
+A UXA-046 reformulada e a UXA-047 permanecem como autoridades da gestão posterior à aprovação em tela ampla.
 
-### Gestão da Campanha Ativa Funcionalmente Validada e Reformulada — M7.49
-
-A UXA-046 reformulada e a UXA-047 permanecem como autoridades da gestão posterior à aprovação.
-
-### Gestão da Campanha Ativa Materializada — M7.48
-
-A UXA-046 permanece como autoridade da materialização visual, reformulada pela UXA-047.
-
-### Estados Patrocinados de Lista e Mapa Funcionalmente Validados e Reformulados — M7.47
+### Estados Patrocinados de Lista e Mapa Validados — M7.47
 
 A UXA-044 reformulada e a UXA-045 permanecem como autoridades dos estados territoriais patrocinados.
 
-### Estados Patrocinados de Lista e Mapa Materializados — M7.46
-
-A UXA-044 permanece como autoridade da materialização visual, reformulada pela UXA-045.
-
-### Cartão Patrocinado e Explicação Funcionalmente Validados e Reformulados — M7.45
+### Cartão Patrocinado e Explicação Validados — M7.45
 
 A UXA-042 reformulada e a UXA-043 permanecem como autoridades do cartão, da explicação e dos controles.
 
-### Cartão Patrocinado e Explicação Materializados — M7.44
+### Fluxo do Anunciante para Computador Validado — M7.43
 
-A UXA-042 permanece como autoridade da materialização visual, reformulada pela UXA-043.
+A UXA-040 reformulada e a UXA-041 permanecem como autoridades da configuração inicial para computador.
 
-### Wireframes do Fluxo do Anunciante Funcionalmente Validados e Reformulados — M7.43
-
-A UXA-040 reformulada e a UXA-041 permanecem como autoridades do fluxo inicial do anunciante para computador.
-
-### Experiência do Opportunity Boost Funcionalmente Validada e Reformulada — M7.41
+### Experiência do Opportunity Boost Validada — M7.41
 
 UXA-038 e UXA-039 permanecem como autoridades do contrato e da validação funcional.
 
@@ -182,26 +161,6 @@ GEM-007-A1, UXA-038 e GEM-010-A2 permanecem como autoridades da definição econ
 
 GEM-004-A1, GEM-004-A2 e GEM-010-A1 permanecem como autoridades dos planos, benefícios, limites e preços candidatos.
 
-### Compreensão Inicial Móvel Validada — M7.38
-
-UXA-036 e UXA-037 permanecem como referência da compreensão inicial móvel.
-
-### Início Protegido Móvel Validado — M7.36
-
-UXA-034 e UXA-035 permanecem como referência funcional do início protegido.
-
-### Referência do Mapa para Computador Validada — M7.34
-
-UXA-032 e UXA-033 permanecem como referência do Mapa em tela ampla.
-
-### Página Inicial Pública Validada — M7.22
-
-A Home pública permanece validada sem coleta de relato pessoal.
-
-### Décima Oitava Decisão Humana — M7.20
-
-COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
-
 ## 5. Estado das revisões
 
 | Revisão | Estado |
@@ -210,7 +169,7 @@ COD-018 permanece integrado, sem Resultado aprovado ou canonicalizado.
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-052; configuração móvel validada e reformulada |
+| Arquitetura da Experiência | ativa até UXA-053; gestão móvel materializada e aguardando validação |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -220,11 +179,11 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Estados residuais e protótipo
 
-1. gestão móvel da campanha ativa;
+1. validação funcional e reformulação dos seis wireframes móveis da UXA-053;
 2. estados de erro, inventário insuficiente e preferência publicitária;
-3. protocolo de protótipo de baixa ou média fidelidade;
-4. plano de teste com Pessoas, Organizações e Coletivos;
-5. eventual nova validação transversal dos 30 wireframes.
+3. nova validação transversal dos 36 artefatos, se priorizada;
+4. protocolo de protótipo de baixa ou média fidelidade;
+5. plano de teste com Pessoas, Organizações e Coletivos.
 
 ### Modelo econômico e especialidades
 
