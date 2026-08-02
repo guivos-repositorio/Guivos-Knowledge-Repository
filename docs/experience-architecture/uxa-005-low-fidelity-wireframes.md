@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.29.0
+version: 0.30.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-000
@@ -45,6 +45,7 @@ related:
   - UXA-046
   - UXA-047
   - UXA-048
+  - UXA-049
   - PAS-001
 normative: false
 ---
@@ -99,7 +100,7 @@ Página Inicial pública
 22. gestão da campanha ativa — UXA-046;
 23. validação e reformulação da gestão da campanha ativa — UXA-047;
 24. relatório agregado — UXA-048;
-25. validação do relatório agregado — pendente.
+25. validação e reformulação do relatório agregado — UXA-049.
 
 ## 4. Natureza dos artefatos
 
@@ -234,25 +235,32 @@ A UXA-047 confirmou, após reformulação:
 - saldo mantido como candidato, não como devolução confirmada;
 - relatório agregado explicitamente ainda não criado.
 
-### 5.8 Opportunity Boost — relatório agregado pendente de validação
+### 5.8 Opportunity Boost — relatório agregado validado
 
-A UXA-048 deverá ser validada quanto a:
+A UXA-049 confirmou, após reformulação:
 
-- entrega, interação, atribuição candidata e autorrelato serem distinguíveis;
-- orçamento total, utilizado e saldo não utilizado terem significados claros;
-- impressões, cliques, salvamentos, interesses e inscrições possuírem rótulo e período;
-- ausência de dado aparecer como `não disponível`, nunca como zero artificial;
-- origem instrumentada, calculada, declarada e indisponível ser compreensível;
-- atribuição candidata não parecer prova causal;
-- origem orgânica permanecer preservada;
-- dupla atribuição silenciosa permanecer proibida;
-- autorrelato não ser somado a eventos instrumentados;
-- dados provisórios, em revisão e reconciliados serem distinguíveis;
-- eventos válidos, invalidados e em revisão serem separados;
-- saldo continuar candidato, sem promessa de crédito ou devolução;
-- lista de visualizadores e dados individuais permanecerem ausentes;
-- conversão não ser apresentada como impacto humano;
-- versão móvel preservar hierarquia, linguagem e limites.
+- entrega, interação, atribuição candidata e autorrelato distinguíveis;
+- proveniência e estado apresentados junto de cada camada;
+- orçamento total, utilizado e saldo não utilizado com significados claros;
+- impressões, cliques, salvamentos, interesses e inscrições com rótulo, unidade e período;
+- `não disponível`, `não exibido por agregação` e zero separados;
+- supressão sem confirmação de existência ou ausência individual;
+- limiar definitivo preservado para política especializada;
+- atribuição candidata apresentada em agregados por tipo de evento;
+- nenhuma linha representando pessoa ou sequência individual;
+- versão da regra candidata vinculada ao período consultado;
+- associação patrocinada, origem orgânica e origem indeterminada preservadas;
+- dupla atribuição silenciosa proibida;
+- autorrelato declarado e não verificado automaticamente;
+- autorrelato não somado a eventos instrumentados;
+- quantidade declarada sujeita a supressão;
+- dados provisórios, em revisão, parcialmente reconciliados e reconciliados distinguíveis;
+- reconciliação separada por tipo e unidade de evento;
+- impressões e cliques não somados em total heterogêneo;
+- saldo candidato sem promessa de crédito ou devolução;
+- lista de visualizadores e dados individuais ausentes;
+- conversão, causalidade e impacto humano não inferidos;
+- versão móvel preservando hierarquia, proveniência, linguagem e limites.
 
 ### 5.9 Autonomia
 
@@ -262,7 +270,7 @@ A UXA-048 deverá ser validada quanto a:
 - Denúncia, contestação e preferência são ações distintas?
 - O anunciante pode pausar, retomar ou cancelar com efeito conhecido?
 - Alteração material não força confirmação ou nova entrega?
-- O anunciante pode consultar dados ausentes sem ser induzido a inferir zero ou causa?
+- O anunciante pode consultar dados ausentes ou suprimidos sem ser induzido a inferir zero ou causa?
 
 ### 5.10 Continuidade
 
@@ -303,6 +311,9 @@ A UXA-048 deverá ser validada quanto a:
 | camada numerada do relatório | entrega, interação, atribuição candidata ou autorrelato |
 | rótulo de proveniência | instrumentado, calculado, declarado, não disponível ou em revisão |
 | estado `não disponível` | ausência de dado sem substituição por zero |
+| estado `não exibido por agregação` | supressão de contagem sem confirmação individual |
+| regra candidata versionada | método e período preservados no histórico |
+| agregado por tipo de evento | mensuração sem linha ou sequência individual |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -369,7 +380,8 @@ oportunidade aprovada e ativa
 | Validação de Lista e Mapa | UXA-045 | participante | validação funcional especializada |
 | Gestão da campanha ativa | UXA-046 | painel institucional | seis arquivos vetoriais reformulados |
 | Validação da gestão ativa | UXA-047 | painel institucional | validação funcional especializada |
-| Relatório agregado | UXA-048 | painel institucional | quatro arquivos vetoriais para computador e móvel |
+| Relatório agregado | UXA-048 | painel institucional | quatro arquivos vetoriais reformulados |
+| Validação do relatório agregado | UXA-049 | painel institucional | validação funcional especializada |
 
 ## 10. Resultados validados e materializados
 
@@ -387,23 +399,22 @@ A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcional
 
 A UXA-046 reformulada e a UXA-047 demonstram gestão de campanha funcionalmente válida em seis estados para computador.
 
-A UXA-048 materializa o relatório agregado em quatro estados para computador e móvel, ainda sem validação funcional própria.
+A UXA-048 reformulada e a UXA-049 demonstram relatório agregado funcionalmente válido em quatro estados para computador e móvel.
 
 ## 11. Limites
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
+Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, agregação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os wireframes da UXA-048;
-2. validar funcionalmente o conjunto completo do Opportunity Boost;
-3. criar estados móveis adicionais de gestão, se priorizados;
-4. criar estados de erro, inventário insuficiente e preferência publicitária;
-5. criar a referência móvel da Home;
-6. validar a transição para a primeira Tela Hoje;
-7. criar referência do início protegido e da compreensão para computador;
-8. criar referência para tablet, caso priorizada.
+1. validar funcionalmente o conjunto completo do Opportunity Boost;
+2. criar estados móveis adicionais de gestão, se priorizados;
+3. criar estados de erro, inventário insuficiente e preferência publicitária;
+4. criar a referência móvel da Home;
+5. validar a transição para a primeira Tela Hoje;
+6. criar referência do início protegido e da compreensão para computador;
+7. criar referência para tablet, caso priorizada.
 
 Nenhuma etapa posterior é iniciada automaticamente.
