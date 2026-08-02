@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.27.0
+version: 5.28.0
 owner: Guivos
 last_updated: 2026-08-02
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.29.0
+  - ROADMAP-12.30.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -30,6 +30,7 @@ related:
   - UXA-051
   - UXA-052
   - UXA-053
+  - UXA-054
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -51,6 +52,7 @@ related:
   - M7.53
   - M7.54
   - M7.55
+  - M7.56
 normative: false
 ---
 
@@ -88,34 +90,41 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M7.52 | Concluído | 25 wireframes funcionalmente validados transversalmente |
 | M7.53 | Concluído | configuração móvel do anunciante materializada |
 | M7.54 | Concluído | configuração móvel funcionalmente validada e reformulada |
-| M7.55 | Concluído neste incremento | gestão móvel da campanha ativa materializada |
+| M7.55 | Concluído | gestão móvel da campanha ativa materializada |
+| M7.56 | Concluído neste incremento | gestão móvel funcionalmente validada e reformulada |
 
 ## 3. Marco vigente
 
-### Gestão Móvel da Campanha Ativa do Opportunity Boost Materializada — M7.55
+### Gestão Móvel da Campanha Ativa do Opportunity Boost Funcionalmente Validada e Reformulada — M7.56
 
 Critérios atendidos:
 
-- UXA-053 criada como referência móvel de baixa fidelidade;
-- seis arquivos vetoriais criados em 390 × 844 pixels;
-- campanha programada materializada com nova verificação dos gates;
-- campanha ativa materializada com orçamento, período e indicadores operacionais datados;
-- entrega reduzida distinguida de pausa;
-- limite diário e período preservados durante limitação;
-- pausa materializada com novos eventos interrompidos e eventos anteriores preservados;
-- retomada apresentada como indisponível enquanto a causa persistir;
-- alteração material comparando versão aprovada e versão candidata;
-- nova avaliação e descarte sem retomada automática;
-- cancelamento com motivo e confirmações inicialmente vazias;
-- ação destrutiva indisponível antes do gate completo;
-- estados finais, reconciliação, histórico e relatório separados;
-- nenhuma responsividade técnica presumida;
-- validação funcional dos seis artefatos não iniciada;
+- UXA-054 criada como validação especializada da UXA-053;
+- seis arquivos vetoriais móveis reformulados;
+- medição ainda não iniciada distinta de zero;
+- consequência do gate atendido com limite explicitada;
+- estado ativo normal separado de entrega reduzida;
+- entrega reduzida com causa, verificação, orçamento total, limite e período;
+- pausa com causa e horário de aplicação;
+- novos eventos válidos interrompidos e registros técnicos tardios separados;
+- retomada bloqueada até resolução e nova verificação;
+- comparação vertical entre versão aprovada e candidata;
+- versão aprovada em somente leitura e candidata não aprovada;
+- orçamento, saldo, histórico e eventos anteriores preservados;
+- revisão anterior a pausa, alteração e cancelamento;
+- cancelamento indisponível antes de motivo e confirmações completas;
+- campanha, oportunidade, anunciante e versão preservados;
+- 36 wireframes materializados e funcionalmente validados por pacote;
+- UXA-050 preservada como autoridade transversal dos 25 artefatos examinados;
 - protótipo, testes, cobrança e desenvolvimento não iniciados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
+
+### Gestão Móvel da Campanha Ativa Materializada — M7.55
+
+A UXA-053 permanece como autoridade da materialização visual, reformulada pela UXA-054.
 
 ### Configuração Móvel Funcionalmente Validada e Reformulada — M7.54
 
@@ -169,7 +178,7 @@ GEM-004-A1, GEM-004-A2 e GEM-010-A1 permanecem como autoridades dos planos, bene
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-053; gestão móvel materializada e aguardando validação |
+| Arquitetura da Experiência | ativa até UXA-054; gestão móvel validada e reformulada |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -179,11 +188,10 @@ Após integração e nova autorização, poderão ocorrer separadamente:
 
 ### Estados residuais e protótipo
 
-1. validação funcional e reformulação dos seis wireframes móveis da UXA-053;
-2. estados de erro, inventário insuficiente e preferência publicitária;
-3. nova validação transversal dos 36 artefatos, se priorizada;
-4. protocolo de protótipo de baixa ou média fidelidade;
-5. plano de teste com Pessoas, Organizações e Coletivos.
+1. estados de erro, inventário insuficiente e preferência publicitária;
+2. nova validação transversal dos 36 artefatos, se priorizada;
+3. protocolo de protótipo de baixa ou média fidelidade;
+4. plano de teste com Pessoas, Organizações e Coletivos.
 
 ### Modelo econômico e especialidades
 
