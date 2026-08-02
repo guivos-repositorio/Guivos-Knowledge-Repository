@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-000
@@ -42,6 +42,7 @@ related:
   - UXA-043
   - UXA-044
   - UXA-045
+  - UXA-046
   - PAS-001
 normative: false
 ---
@@ -87,13 +88,15 @@ Página Inicial pública
 13. wireframe do Cadastro pela Organização — UXA-008;
 14. contrato funcional reformulado do Opportunity Boost — UXA-038;
 15. validação funcional especializada do Opportunity Boost — UXA-039;
-16. wireframes do fluxo do anunciante do Opportunity Boost — UXA-040;
+16. wireframes do fluxo do anunciante — UXA-040;
 17. validação e reformulação dos wireframes do anunciante — UXA-041;
-18. cartão patrocinado e explicação de distribuição — UXA-042;
+18. cartão patrocinado e explicação — UXA-042;
 19. validação e reformulação do cartão e da explicação — UXA-043;
 20. estados patrocinados para Lista e Mapa — UXA-044;
 21. validação e reformulação dos estados patrocinados — UXA-045;
-22. gestão ativa e relatório do Boost — pendentes.
+22. gestão da campanha ativa — UXA-046;
+23. validação da gestão da campanha ativa — pendente;
+24. relatório agregado — pendente.
 
 ## 4. Natureza dos artefatos
 
@@ -152,9 +155,7 @@ Wireframe gráfico não equivale a validação funcional. Validação funcional 
 A UXA-041 confirmou, após reformulação:
 
 - gates com estados atendido, limitado e bloqueado;
-- plano elegível sem substituir aprovação, capacidade ou segurança;
 - objetivo único sem seleção automática;
-- métrica principal compreensível;
 - critérios escolhidos e revisáveis;
 - critérios proibidos antes do envio;
 - público insuficiente sem ampliação silenciosa;
@@ -164,7 +165,7 @@ A UXA-041 confirmou, após reformulação:
 - alcance estimado distinguível de garantia;
 - ausência de renovação automática;
 - primeiro resultado orgânico anterior ao anúncio;
-- confirmações afirmativas inicialmente desmarcadas;
+- confirmações inicialmente desmarcadas;
 - envio para avaliação sem entrega;
 - cancelamento com retorno ao rascunho e histórico preservado.
 
@@ -173,22 +174,17 @@ A UXA-041 confirmou, após reformulação:
 A UXA-043 confirmou, após reformulação:
 
 - natureza patrocinada reconhecível antes do conteúdo;
-- primeiro resultado orgânico materializado antes do anúncio padrão e social;
+- primeiro resultado orgânico antes do anúncio padrão e social;
 - anunciante, financiador e beneficiário compreensíveis;
-- preço ou gratuidade visíveis;
 - publicidade distinguível de recomendação;
-- critérios utilizados apresentados como gerais e objetivos;
-- critérios protegidos e contextos pessoais explicitamente excluídos;
+- critérios utilizados gerais e objetivos;
+- critérios protegidos e contextos pessoais excluídos;
 - ausência de lista de visualizadores;
-- coexistência entre correspondência orgânica e distribuição paga explicada separadamente;
-- ocultação da campanha com escopo conhecido;
-- `Mostrar menos deste tipo` separado de desativação total;
-- preferências revisáveis e reversíveis;
-- denúncia separada de preferência;
-- contestação de dados separada de denúncia de conteúdo;
+- correspondência orgânica e distribuição paga separadas;
+- ocultação, redução, desativação e reversão com escopos próprios;
+- denúncia de conteúdo separada de contestação de dados;
 - Boost Social Financiado sem transferência de autoridade;
-- ocultação de publicidade sem redução do catálogo orgânico;
-- identificação textual anterior a cor ou iconografia.
+- ocultação sem redução do catálogo orgânico.
 
 ### 5.6 Opportunity Boost — Lista e Mapa patrocinados validados
 
@@ -196,49 +192,61 @@ A UXA-045 confirmou, após reformulação:
 
 - Lista e Mapa representam a mesma consulta territorial;
 - resultados orgânicos e unidades pagas possuem contagens separadas;
-- primeiro resultado orgânico aparece antes da unidade paga na Lista;
+- primeiro resultado orgânico aparece antes da unidade paga;
 - inventário patrocinado não participa da ordenação orgânica;
 - filtros de oportunidades e preferência publicitária são áreas distintas;
-- alterar publicidade não modifica região, busca, filtros ou quantidade orgânica;
-- marcadores orgânicos e patrocinados são distinguíveis sem depender de cor;
-- agrupamentos separam contagens orgânicas e patrocinadas;
+- marcadores e agrupamentos patrocinados são distinguíveis;
 - marcador patrocinado não cobre oportunidade orgânica;
-- marcador e cartão selecionados compartilham o mesmo identificador;
+- marcador e cartão selecionados compartilham identificador;
 - selecionar no Mapa não altera a ordem da Lista;
 - localização permanece opcional;
-- proximidade, distância e seleção não representam afinidade ou recomendação;
-- mover o Mapa não executa nova consulta automaticamente;
+- proximidade, distância e seleção não representam afinidade;
+- mover o Mapa não executa consulta automática;
 - `Pesquisar nesta área` exige decisão explícita;
-- ocultação sincronizada preserva busca, filtros, Lista, Mapa e catálogo orgânico;
-- pouca oferta orgânica reduz publicidade;
-- ocultação, preferência, denúncia e contestação possuem escopos próprios;
-- alternância entre Lista e Mapa preserva seleção e privacidade.
+- ocultação sincronizada preserva catálogo orgânico;
+- pouca oferta orgânica reduz publicidade.
 
-Os próximos artefatos deverão ainda demonstrar:
+### 5.7 Opportunity Boost — gestão da campanha ativa pendente de validação
 
-- gestão da campanha ativa;
-- relatório separado em entrega, interação, atribuição candidata e autorrelato;
-- pausa e cancelamento com saldo, consequência e histórico visíveis.
+A UXA-046 deverá ser validada quanto a:
 
-### 5.7 Autonomia
+- estado programado ser distinguível de entrega ativa;
+- orçamento reservado, utilizado e saldo serem compreensíveis;
+- indicadores operacionais não parecerem relatório final ou impacto;
+- estado ativo mostrar período, frequência, capacidade e informação material;
+- limitação ser distinguível de pausa;
+- limitação não sugerir aceleração de orçamento ou ampliação automática do período;
+- pausa voluntária, pausa automática e suspensão por política terem consequências próprias;
+- condição de retomada ser visível;
+- alteração material comparar versão aprovada e alterada;
+- nova avaliação não iniciar entrega automaticamente;
+- cancelamento mostrar entrega futura, eventos válidos, orçamento utilizado e saldo candidato;
+- confirmação de cancelamento começar desmarcada;
+- estados finais e reconciliação serem distinguíveis;
+- histórico permanecer acessível;
+- linguagem e foco serem acessíveis.
+
+O próximo artefato deverá ainda demonstrar relatório separado em entrega, interação, atribuição candidata e autorrelato.
+
+### 5.8 Autonomia
 
 - A pessoa pode adiar, recusar, pausar ou sair sem culpa?
-- Compartilhamento mínimo não é tratado como insuficiência pessoal?
-- Recusar localização preserva o uso do Mapa?
+- Recusar localização preserva o Mapa?
 - Ocultar publicidade preserva o catálogo orgânico?
-- Denúncia, contestação e preferência são tratadas como ações distintas?
-- O anunciante pode salvar rascunho, voltar e cancelar com efeito conhecido?
+- Denúncia, contestação e preferência são ações distintas?
+- O anunciante pode pausar, retomar ou cancelar com efeito conhecido?
+- Alteração material não força confirmação ou nova entrega?
 
-### 5.8 Continuidade
+### 5.9 Continuidade
 
 - A Home conduz conscientemente ao início protegido?
-- O início protegido conduz à compreensão inicial revisável?
 - A compreensão revisada conduz à Tela Hoje ou à exploração geral conforme a condição escolhida?
 - Mapa e Lista preservam consulta, quantidade, atualização, ordenação e seleção?
-- A gestão da oportunidade conduz ao Boost somente quando não houver bloqueio crítico?
 - O fluxo do anunciante termina em avaliação sem iniciar entrega?
-- O cartão patrocinado conduz à explicação sem esconder sua natureza comercial?
-- Os estados patrocinados preservam consulta e preferências ao alternar Lista e Mapa?
+- Cartão e explicação preservam natureza comercial?
+- Os estados patrocinados preservam consulta e preferências entre Lista e Mapa?
+- A campanha programada conduz ao estado ativo somente na condição válida?
+- Pausa, limitação, alteração material e encerramento preservam orçamento e histórico?
 
 ## 6. Convenções de baixa fidelidade
 
@@ -250,17 +258,19 @@ Os próximos artefatos deverão ainda demonstrar:
 | texto sublinhado | ação secundária ou explicação |
 | estado textual nomeado | posição funcional sem obrigatoriedade linear |
 | círculo vazio | escolha única ainda não realizada |
-| caixa vazia | autorização múltipla ainda não concedida |
-| caixa preenchida | escolha múltipla realizada conscientemente |
-| borda tracejada | ação indisponível ou regra de exceção |
-| ação com consequência | pausa, saída, salvamento, exclusão ou recusa explícita |
-| selo textual anterior | natureza patrocinada reconhecível antes do conteúdo |
-| espaço patrocinado delimitado | distribuição paga sem integração silenciosa ao ranking orgânico |
-| círculo com identificador O | marcador de oportunidade orgânica |
-| quadrado com identificador P | marcador de oportunidade patrocinada |
-| texto `selecionado` | vínculo explícito entre marcador e cartão |
+| caixa vazia | confirmação ainda não concedida |
+| caixa preenchida | escolha realizada conscientemente |
+| borda tracejada | limitação ou regra de exceção |
+| ação com consequência | pausa, saída, cancelamento ou recusa explícita |
+| selo textual anterior | natureza patrocinada antes do conteúdo |
+| espaço patrocinado delimitado | distribuição paga separada do ranking orgânico |
+| círculo com identificador O | marcador orgânico |
+| quadrado com identificador P | marcador patrocinado |
+| texto `selecionado` | vínculo entre marcador e cartão |
 | agrupamento textual | contagens orgânicas e patrocinadas separadas |
-| gate `Pesquisar nesta área` | nova consulta territorial somente após ação explícita |
+| gate `Pesquisar nesta área` | consulta territorial após ação explícita |
+| estado de campanha em caixa textual | situação operacional independente de cor |
+| comparação lado a lado | versão aprovada e alteração material |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -276,30 +286,28 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Mapa com e sem resultados | web para computador | 1.440 × 1.024 |
 | Detalhe de oportunidade | aplicativo móvel | 390 × 980 |
 | Cadastro pela Organização | web para computador | 1.440 × 1.024 |
-| Fluxo do anunciante do Opportunity Boost — cinco estados | web para computador | 1.440 × 1.024 cada |
+| Fluxo do anunciante — cinco estados | web para computador | 1.440 × 1.024 cada |
 | Cartão e explicação padrão | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Boost Social Financiado — cartão e explicação | aplicativo móvel | 390 × 844 cada |
-| Lista e Mapa patrocinados reformulados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Gestão ativa e relatório do Boost | computador e aplicativo móvel | pendentes |
+| Boost Social Financiado | aplicativo móvel | 390 × 844 cada |
+| Lista e Mapa patrocinados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
+| Gestão da campanha ativa — seis estados | web para computador | 1.440 × 1.024 cada |
+| Relatório agregado | computador e aplicativo móvel | pendente |
 
 ## 8. Relação entre os wireframes
 
-Fluxo institucional relacionado:
-
 ```text
 oportunidade aprovada e ativa
-→ gestão da oportunidade
 → elegibilidade para impulsionamento
 → objetivo e critérios
 → orçamento e duração
 → prévia e confirmação
 → envio para avaliação
-→ ajustes, rejeição ou aprovação
-→ campanha futura
-→ cartão patrocinado e explicação
-→ Lista e Mapa patrocinados
-→ pausa, encerramento ou cancelamento
-→ relatório agregado e reconciliação
+→ aprovação e programação
+→ campanha ativa
+→ limitação | pausa | alteração material
+→ conclusão | cancelamento
+→ reconciliação
+→ relatório agregado
 ```
 
 ## 9. Artefatos especializados
@@ -322,25 +330,28 @@ oportunidade aprovada e ativa
 | Contrato do Opportunity Boost | UXA-038 | Explorar, Lista, Mapa e gestão | contrato funcional reformulado |
 | Validação do Opportunity Boost | UXA-039 | anunciante e participante | validação funcional especializada |
 | Fluxo do anunciante | UXA-040 | painel institucional | cinco arquivos vetoriais reformulados |
-| Validação do fluxo do anunciante | UXA-041 | painel institucional | validação funcional especializada |
-| Cartão e explicação patrocinados | UXA-042 | Explorar e experiência da pessoa | seis arquivos vetoriais reformulados |
-| Validação do cartão e explicação | UXA-043 | participante | validação funcional especializada |
-| Lista e Mapa patrocinados | UXA-044 | Mapa e Lista territorial | quatro arquivos vetoriais reformulados |
-| Validação da Lista e do Mapa patrocinados | UXA-045 | participante | validação funcional especializada |
+| Validação do fluxo | UXA-041 | painel institucional | validação funcional especializada |
+| Cartão e explicação | UXA-042 | experiência da pessoa | seis arquivos vetoriais reformulados |
+| Validação do cartão | UXA-043 | participante | validação funcional especializada |
+| Lista e Mapa patrocinados | UXA-044 | Mapa e Lista | quatro arquivos vetoriais reformulados |
+| Validação de Lista e Mapa | UXA-045 | participante | validação funcional especializada |
+| Gestão da campanha ativa | UXA-046 | painel institucional | seis arquivos vetoriais |
 
 ## 10. Resultados validados e materializados
 
 ### 10.1 Compreensão inicial
 
-A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, persistência e personalização independentes, base insuficiente sem pressão e continuidade sem personalização.
+A UXA-036 reformulada e a UXA-037 demonstram processamento sem tarefa oculta, afirmações individualizadas, revisão sem resposta padrão, relato original separado, persistência e personalização independentes e base insuficiente sem pressão.
 
 ### 10.2 Opportunity Boost
 
-A UXA-038 a UXA-041 demonstram experiência funcional governada e fluxo inicial do anunciante validado, com elegibilidade explicável, critérios explícitos, base coerente, orgânico anterior ao anúncio, confirmação afirmativa e cancelamento compreensível.
+A UXA-038 a UXA-041 demonstram experiência funcional governada e fluxo inicial do anunciante validado.
 
-A UXA-042 reformulada e a UXA-043 demonstram cartão, explicação, controles e variação social funcionalmente válidos, com publicidade identificada, orgânico preservado, critérios protegidos excluídos e autonomia sem perda do catálogo orgânico.
+A UXA-042 reformulada e a UXA-043 demonstram cartão, explicação, controles e variação social funcionalmente válidos.
 
-A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcionalmente válidos em móvel e computador, com contagens separadas, preferências distintas dos filtros, seleção sem alteração da ordem e consulta territorial atualizada somente por ação explícita.
+A UXA-044 reformulada e a UXA-045 demonstram Lista e Mapa patrocinados funcionalmente válidos em móvel e computador.
+
+A UXA-046 materializa gestão de campanha em seis estados para computador, ainda sem validação funcional própria.
 
 ## 11. Limites
 
@@ -350,13 +361,13 @@ Este programa não define marca, tecnologia, autenticação, armazenamento, IA, 
 
 Os próximos pontos exigem autorizações separadas:
 
-1. criar wireframes de gestão da campanha ativa;
+1. validar funcionalmente e reformular os wireframes da UXA-046;
 2. criar wireframe do relatório agregado;
 3. validar funcionalmente o conjunto completo do Opportunity Boost;
-4. criar estados de erro, inventário insuficiente e preferência publicitária;
-5. criar a referência móvel da Home;
-6. validar a transição para a primeira Tela Hoje;
-7. criar estados especializados de processamento, pausa, falha e retomada;
+4. criar estados móveis de gestão, se priorizados;
+5. criar estados de erro, inventário insuficiente e preferência publicitária;
+6. criar a referência móvel da Home;
+7. validar a transição para a primeira Tela Hoje;
 8. criar referência do início protegido e da compreensão para computador;
 9. criar referência para tablet, caso priorizada.
 

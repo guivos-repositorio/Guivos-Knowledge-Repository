@@ -9,14 +9,15 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.47 — Estados Patrocinados de Lista e Mapa Funcionalmente Validados e Reformulados |
+| Marco | M7.48 — Gestão da Campanha Ativa do Opportunity Boost Materializada |
 | Resultados Empresariais | 18 decisões; 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos |
 | Opportunity Boost | add-on publicitário candidato separado dos planos |
 | Experiência do Boost | validada e reformulada |
-| Fluxo do anunciante | cinco wireframes para computador validados e reformulados |
-| Cartão e explicação | seis wireframes móveis e para computador validados e reformulados |
-| Lista e Mapa patrocinados | quatro wireframes móveis e para computador validados e reformulados |
+| Fluxo do anunciante | cinco wireframes validados e reformulados |
+| Cartão e explicação | seis wireframes validados e reformulados |
+| Lista e Mapa patrocinados | quatro wireframes validados e reformulados |
+| Gestão da campanha ativa | seis wireframes para computador criados; validação pendente |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; oferta e cobrança não autorizadas |
 | Home, início e compreensão | funcionalmente validados |
@@ -75,45 +76,34 @@ Os valores são candidatos para validação.
 - Boost Social Financiado identificado;
 - controles reversíveis;
 - baixa oferta orgânica reduz publicidade;
-- relatório separado em entrega, interação, atribuição candidata e autorrelato.
+- relatório futuro separado em entrega, interação, atribuição candidata e autorrelato.
 
 ### Wireframes do fluxo do anunciante validados
 
-A UXA-040 reformulada e a UXA-041 validam cinco referências para computador:
-
-1. elegibilidade;
-2. objetivo e critérios;
-3. orçamento e duração;
-4. prévia e confirmação;
-5. envio para avaliação.
-
-A validação distingue estados atendido, limitado e bloqueado; torna critérios explícitos; alinha CPC ao objetivo de clique; preserva o primeiro resultado orgânico antes do anúncio; e define cancelamento com retorno ao rascunho.
+A UXA-040 reformulada e a UXA-041 validam elegibilidade, objetivo e critérios, orçamento e duração, prévia e confirmação e envio para avaliação.
 
 ### Cartão patrocinado e explicação validados
 
-A UXA-042 reformulada e a UXA-043 validam seis referências:
-
-1. cartão patrocinado móvel;
-2. explicação patrocinada móvel;
-3. cartão patrocinado para computador;
-4. explicação patrocinada para computador;
-5. cartão móvel de Boost Social Financiado;
-6. explicação móvel de Boost Social Financiado.
-
-As referências apresentam natureza comercial anterior ao conteúdo, primeiro resultado orgânico antes do anúncio padrão e social, anunciante ou financiador identificado, critérios utilizados e excluídos, correspondência orgânica separada quando existir, controles com escopos próprios, denúncia e contestação distintas e financiamento social sem recomendação ou transferência de autoridade.
+A UXA-042 reformulada e a UXA-043 validam seis referências móveis e para computador, incluindo Boost Social Financiado, com natureza comercial anterior ao conteúdo, critérios protegidos excluídos e controles reversíveis.
 
 ### Lista e Mapa patrocinados validados
 
-A UXA-044 reformulada e a UXA-045 validam quatro referências:
+A UXA-044 reformulada e a UXA-045 validam quatro referências com a mesma consulta territorial, contagens separadas, filtros distintos da preferência publicitária, marcadores próprios, seleção sem alteração da ordem, localização opcional e gate `Pesquisar nesta área`.
 
-1. Lista patrocinada móvel;
-2. Lista patrocinada para computador;
-3. Mapa patrocinado móvel;
-4. Mapa patrocinado para computador.
+### Gestão da campanha ativa materializada
 
-As referências apresentam a mesma consulta territorial entre Lista e Mapa, contagens orgânicas e pagas separadas, filtros de oportunidades distintos da preferência publicitária, localização opcional, primeiro resultado orgânico preservado, inventário pago separado da ordenação, marcador patrocinado próprio, agrupamentos com contagens separadas, seleção sem mudança da ordem da Lista, gate `Pesquisar nesta área`, baixa oferta orgânica reduzindo publicidade e ocultação sincronizada sem redução do catálogo orgânico.
+A UXA-046 cria seis referências para computador:
 
-Nenhuma campanha, cobrança ou entrega foi iniciada.
+1. campanha programada;
+2. campanha ativa;
+3. campanha limitada;
+4. campanha pausada;
+5. alteração material;
+6. encerramento e cancelamento.
+
+As referências apresentam programação sem entrega, orçamento reservado, utilizado e saldo separados, indicadores operacionais distintos de relatório agregado, limitação sem aceleração de orçamento, pausas com causas próprias, alteração material com nova avaliação, eventos e histórico preservados e cancelamento com confirmação proporcional.
+
+Os seis artefatos ainda exigem validação funcional. Nenhuma campanha, cobrança ou entrega real foi iniciada.
 
 ### Proteções
 
@@ -122,11 +112,16 @@ Nenhuma campanha, cobrança ou entrega foi iniciada.
 - densidade candidata máxima de 20%;
 - duas unidades patrocinadas consecutivas proibidas;
 - marcador patrocinado não encobre oportunidade orgânica;
-- localização permanece opcional e posição exata não alimenta publicidade;
+- localização permanece opcional;
 - movimentação do Mapa não autoriza localização ou nova consulta;
-- compreensão inicial, Momento Atual e Próximo Passo não são utilizados para segmentação;
-- Tela Hoje e Jornada pessoal permanecem sem Boost nesta baseline;
-- anunciante recebe métricas agregadas, não lista de visualizadores.
+- limitação não acelera orçamento;
+- pausa interrompe entrega futura;
+- alteração material impede entrega desatualizada;
+- cancelamento preserva eventos válidos e histórico;
+- saldo não é devolução confirmada;
+- compreensão inicial, Momento Atual e Próximo Passo não alimentam segmentação;
+- Tela Hoje e Jornada pessoal permanecem sem Boost;
+- anunciante não recebe lista de visualizadores.
 
 ## Experiência pessoal vigente
 
@@ -151,8 +146,8 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Roadmap](roadmap.md)
 - [Painel de Conhecimento](project/knowledge-board.md)
 - [Marcos Arquiteturais](project/architectural-milestones.md)
-- [Adendo Canônico da UXA-045](project/canonical-consolidation-matrix-uxa-045-addendum.md)
-- [Histórico 1.69.0](project/changelog-1.69.0-uxa-045.md)
+- [Adendo Canônico da UXA-046](project/canonical-consolidation-matrix-uxa-046-addendum.md)
+- [Histórico 1.70.0](project/changelog-1.70.0-uxa-046.md)
 
 ### Opportunity Boost
 
@@ -167,6 +162,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 - [Validação do Cartão e Explicação](experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md)
 - [Estados Patrocinados de Lista e Mapa](experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md)
 - [Validação dos Estados Patrocinados de Lista e Mapa](experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md)
+- [Gestão da Campanha Ativa](experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md)
 - [Guivos Ads](product-architecture/ads.md)
 
 ### Modelo Econômico
@@ -194,7 +190,7 @@ Oferta e publicidade não entram nessa sequência protegida.
 
 ## Próximos atos
 
-Após nova autorização, poderão ocorrer separadamente gestão da campanha ativa, relatório agregado, validação do conjunto completo, estados de erro e inventário insuficiente, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
+Após nova autorização, poderão ocorrer separadamente validação funcional da gestão da campanha, relatório agregado, validação do conjunto completo, estados móveis de gestão, estados de erro e inventário insuficiente, pesquisa de disposição a pagar, calibração de preços, política especializada de publicidade, unit economics, revisões especializadas ou retomada das demais frentes preservadas.
 
 ## Regra de precedência
 

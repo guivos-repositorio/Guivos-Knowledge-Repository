@@ -75,6 +75,7 @@ nav:
       - Adendo da UXA-043: project/canonical-consolidation-matrix-uxa-043-addendum.md
       - Adendo da UXA-044: project/canonical-consolidation-matrix-uxa-044-addendum.md
       - Adendo da UXA-045: project/canonical-consolidation-matrix-uxa-045-addendum.md
+      - Adendo da UXA-046: project/canonical-consolidation-matrix-uxa-046-addendum.md
       - Histórico 1.62.0: project/changelog-1.62.0-opportunity-boost.md
       - Histórico 1.63.0: project/changelog-1.63.0-uxa-039.md
       - Histórico 1.64.0: project/changelog-1.64.0-uxa-040.md
@@ -83,6 +84,7 @@ nav:
       - Histórico 1.67.0: project/changelog-1.67.0-uxa-043.md
       - Histórico 1.68.0: project/changelog-1.68.0-uxa-044.md
       - Histórico 1.69.0: project/changelog-1.69.0-uxa-045.md
+      - Histórico 1.70.0: project/changelog-1.70.0-uxa-046.md
       - Parecer Mecânico do R5: project/repository-mechanical-validation-2026-07-24.md
       - Retomada Governada do R6: project/governed-resumption-r6.md
 
@@ -197,6 +199,7 @@ nav:
           - UXA-043 — Validação do Cartão Patrocinado e Explicação: experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md
           - UXA-044 — Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md
           - UXA-045 — Validação dos Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
+          - UXA-046 — Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md

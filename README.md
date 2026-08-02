@@ -9,7 +9,7 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Elemento | Estado resumido |
 |---|---|
 | Era | GE-2 — Knowledge |
-| Marco | M7.47 — Estados Patrocinados de Lista e Mapa Funcionalmente Validados e Reformulados |
+| Marco | M7.48 — Gestão da Campanha Ativa do Opportunity Boost Materializada |
 | Remediação | concluída; validação mecânica permanente ativa |
 | Arquitetura de Negócios | 18 decisões humanas; zero Resultados canônicos |
 | Modelo Econômico | planos e Opportunity Boost candidatos definidos |
@@ -18,9 +18,10 @@ A autoridade única para o estado transversal vigente é o [Registro do Estado A
 | Planos para Organizações | Business Start, Growth e Scale |
 | Opportunity Boost | add-on publicitário separado dos planos |
 | Experiência do Boost | validada e reformulada |
-| Fluxo do anunciante | cinco wireframes para computador validados e reformulados |
-| Cartão e explicação | seis wireframes móveis e para computador validados e reformulados |
-| Lista e Mapa patrocinados | quatro wireframes móveis e para computador validados e reformulados |
+| Fluxo do anunciante | cinco wireframes validados e reformulados |
+| Cartão e explicação | seis wireframes validados e reformulados |
+| Lista e Mapa patrocinados | quatro wireframes validados e reformulados |
+| Gestão da campanha ativa | seis wireframes para computador criados; validação pendente |
 | Guivos Ads | operador econômico do Boost |
 | Preços | candidatos; cobrança não autorizada |
 | Home, início e compreensão | funcionalmente validados |
@@ -84,45 +85,34 @@ O Opportunity Boost permite ampliar a distribuição publicitária identificada 
 
 ### Experiência validada
 
-A validação funcional estabeleceu bloqueios explicáveis, objetivo único, critérios utilizados e proibidos visíveis, prévia separada do ranking orgânico, pausa por alteração material, estados completos, identificação do Boost Social Financiado, controles reversíveis, proteção da densidade e relatório em quatro camadas.
+A validação funcional estabeleceu bloqueios explicáveis, objetivo único, critérios utilizados e proibidos visíveis, prévia separada do ranking orgânico, pausa por alteração material, estados completos, identificação do Boost Social Financiado, controles reversíveis, proteção da densidade e relatório futuro em quatro camadas.
 
 ### Fluxo do anunciante validado
 
-A UXA-040 reformulada e a UXA-041 validam cinco wireframes para computador:
-
-1. elegibilidade;
-2. objetivo e critérios;
-3. orçamento e duração;
-4. prévia e confirmação;
-5. envio para avaliação.
-
-A reformulação distingue condições atendidas, limitadas e bloqueadas; torna critérios explícitos; reconcilia CPC com objetivo de clique; coloca o primeiro resultado orgânico antes do anúncio; e define cancelamento com retorno ao rascunho.
+A UXA-040 reformulada e a UXA-041 validam cinco wireframes para computador: elegibilidade, objetivo e critérios, orçamento e duração, prévia e confirmação e envio para avaliação.
 
 ### Cartão patrocinado e explicação validados
 
-A UXA-042 reformulada e a UXA-043 validam seis wireframes:
-
-1. cartão patrocinado móvel;
-2. explicação patrocinada móvel;
-3. cartão patrocinado para computador;
-4. explicação patrocinada para computador;
-5. cartão móvel de Boost Social Financiado;
-6. explicação móvel de Boost Social Financiado.
-
-O conjunto apresenta natureza comercial antes do conteúdo, primeiro resultado orgânico antes do anúncio padrão e social, anunciante ou financiador identificado, critérios utilizados e excluídos, correspondência orgânica separada quando existir, controles com escopos próprios, denúncia e contestação distintas e financiamento social sem recomendação ou transferência de autoridade.
+A UXA-042 reformulada e a UXA-043 validam seis wireframes móveis e para computador, incluindo Boost Social Financiado, com natureza comercial anterior ao conteúdo, critérios protegidos excluídos e controles reversíveis.
 
 ### Lista e Mapa patrocinados validados
 
-A UXA-044 reformulada e a UXA-045 validam quatro wireframes:
+A UXA-044 reformulada e a UXA-045 validam quatro wireframes com uma única consulta territorial, contagens orgânicas e pagas separadas, filtros distintos da preferência publicitária, marcadores próprios, seleção sem alteração da ordem da Lista, localização opcional, gate `Pesquisar nesta área` e ocultação sincronizada sem perda do catálogo orgânico.
 
-1. Lista patrocinada móvel;
-2. Lista patrocinada para computador;
-3. Mapa patrocinado móvel;
-4. Mapa patrocinado para computador.
+### Gestão da campanha ativa materializada
 
-O conjunto apresenta uma única consulta territorial, contagens orgânicas e pagas separadas, filtros de oportunidades distintos da preferência publicitária, localização opcional, primeiro resultado orgânico preservado, inventário pago separado da ordenação, marcador patrocinado próprio, agrupamentos com contagens separadas, seleção sem alteração da ordem da Lista, gate `Pesquisar nesta área`, baixa oferta orgânica reduzindo publicidade e ocultação sincronizada sem perda do catálogo orgânico.
+A UXA-046 cria seis wireframes para computador:
 
-Nenhuma campanha, cobrança ou entrega foi iniciada.
+1. campanha programada;
+2. campanha ativa;
+3. campanha limitada;
+4. campanha pausada;
+5. alteração material;
+6. encerramento e cancelamento.
+
+O conjunto apresenta programação sem entrega, orçamento reservado, utilizado e saldo separados, indicadores operacionais distintos de relatório agregado, limitação sem aceleração de orçamento, pausas com causas próprias, alteração material com nova avaliação, eventos e histórico preservados e cancelamento com confirmação proporcional.
+
+Os seis artefatos ainda exigem validação funcional. Nenhuma campanha, cobrança ou entrega real foi iniciada.
 
 ### Regras centrais
 
@@ -133,9 +123,14 @@ Nenhuma campanha, cobrança ou entrega foi iniciada.
 - marcador patrocinado não encobre oportunidade orgânica;
 - localização permanece opcional e posição exata não alimenta publicidade;
 - movimentação do Mapa não autoriza localização ou nova consulta;
+- limitação não acelera orçamento;
+- pausa interrompe entrega futura;
+- alteração material impede entrega desatualizada;
+- cancelamento preserva eventos válidos e histórico;
+- saldo não é devolução confirmada;
 - compreensão inicial, Momento Atual e Próximo Passo não alimentam segmentação;
 - Tela Hoje e Jornada pessoal não recebem Boost nesta baseline;
-- anunciante recebe métricas agregadas, não lista de visualizadores;
+- anunciante não recebe lista de visualizadores;
 - alcance pago não equivale a recomendação, conversão ou impacto.
 
 ## Regras comerciais preservadas
@@ -175,9 +170,10 @@ Página Inicial pública
 
 Nenhum movimento é automático. Após integração e nova autorização, poderão ocorrer separadamente:
 
-- wireframes de gestão da campanha ativa;
+- validação funcional e reformulação dos wireframes da UXA-046;
 - wireframe do relatório agregado;
 - validação funcional do conjunto completo;
+- estados móveis de gestão, se priorizados;
 - estados de erro, inventário insuficiente e preferência publicitária;
 - pesquisa de disposição a pagar;
 - calibração de orçamento, CPM ou CPC;
@@ -207,8 +203,9 @@ Nenhum movimento é automático. Após integração e nova autorização, poder�
 - [Validação do Cartão e Explicação](docs/experience-architecture/uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md)
 - [Estados Patrocinados de Lista e Mapa](docs/experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md)
 - [Validação dos Estados Patrocinados de Lista e Mapa](docs/experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md)
-- [Adendo Canônico da UXA-045](docs/project/canonical-consolidation-matrix-uxa-045-addendum.md)
-- [Histórico 1.69.0](docs/project/changelog-1.69.0-uxa-045.md)
+- [Gestão da Campanha Ativa](docs/experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md)
+- [Adendo Canônico da UXA-046](docs/project/canonical-consolidation-matrix-uxa-046-addendum.md)
+- [Histórico 1.70.0](docs/project/changelog-1.70.0-uxa-046.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Guivos Business Architecture](docs/business-architecture/index.md)
 - [Documentação completa](docs/index.md)
