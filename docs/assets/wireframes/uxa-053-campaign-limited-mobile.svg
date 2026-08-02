@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Campanha limitada do Opportunity Boost em aplicativo móvel</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com campanha ativa em entrega reduzida, motivo de capacidade, limite diário preservado, orçamento não acelerado e condição para nova verificação.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
+  <text x="20" y="58" font-family="Arial" font-size="10">OPPORTUNITY BOOST · GESTÃO MÓVEL</text>
+  <text x="20" y="88" font-family="Arial" font-size="18" font-weight="700">Entrega reduzida</text>
+  <text x="370" y="87" text-anchor="end" font-family="Arial" font-size="8" font-weight="700">ATIVA COM LIMITE</text>
+
+  <rect x="20" y="108" width="350" height="82" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="133" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · versão aprovada v1</text>
+  <text x="34" y="154" font-family="Arial" font-size="9">Motivo atual: capacidade declarada limitada</text>
+  <text x="34" y="174" font-family="Arial" font-size="9">A campanha continua ativa em ritmo protegido.</text>
+
+  <rect x="20" y="206" width="350" height="94" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="230" font-family="Arial" font-size="11" font-weight="700">Consequência operacional</text>
+  <text x="34" y="252" font-family="Arial" font-size="9">Novos eventos ainda podem ocorrer com menor volume.</text>
+  <text x="34" y="273" font-family="Arial" font-size="9">Não é pausa, suspensão ou encerramento.</text>
+  <text x="34" y="291" font-family="Arial" font-size="8">Nenhuma normalização imediata é garantida.</text>
+
+  <text x="20" y="332" font-family="Arial" font-size="12" font-weight="700">Orçamento e período</text>
+  <rect x="20" y="346" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="369" font-family="Arial" font-size="8">Utilizado</text>
+  <text x="32" y="395" font-family="Arial" font-size="14" font-weight="700">R$ 112</text>
+  <rect x="142" y="346" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="154" y="369" font-family="Arial" font-size="8">Saldo</text>
+  <text x="154" y="395" font-family="Arial" font-size="14" font-weight="700">R$ 188</text>
+  <rect x="264" y="346" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="276" y="369" font-family="Arial" font-size="8">Limite diário</text>
+  <text x="276" y="395" font-family="Arial" font-size="14" font-weight="700">R$ 30</text>
+
+  <rect x="20" y="428" width="350" height="128" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="452" font-family="Arial" font-size="11" font-weight="700">Proteções mantidas</text>
+  <text x="34" y="476" font-family="Arial" font-size="9">• orçamento não será acelerado</text>
+  <text x="34" y="498" font-family="Arial" font-size="9">• limite diário permanece R$ 30</text>
+  <text x="34" y="520" font-family="Arial" font-size="9">• término permanece em 14/08/2026</text>
+  <text x="34" y="542" font-family="Arial" font-size="8">Saldo não será consumido para compensar a restrição.</text>
+
+  <rect x="20" y="572" width="350" height="92" rx="8" fill="#ffffff" stroke="#777777" stroke-dasharray="5 4"/>
+  <text x="34" y="596" font-family="Arial" font-size="10" font-weight="700">Condição para nova verificação</text>
+  <text x="34" y="618" font-family="Arial" font-size="9">Atualizar capacidade e aguardar nova checagem.</text>
+  <text x="34" y="640" font-family="Arial" font-size="8">A atualização não retoma volume normal automaticamente.</text>
+
+  <rect x="20" y="680" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="709" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">ATUALIZAR CAPACIDADE</text>
+  <rect x="20" y="740" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="104" y="767" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">PAUSAR CAMPANHA</text>
+  <rect x="202" y="740" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="286" y="767" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">ABRIR HISTÓRICO</text>
+
+  <text x="20" y="812" font-family="Arial" font-size="8">Outras causas possíveis: frequência, pouca oferta orgânica ou restrição operacional.</text>
+  <text x="20" y="838" font-family="Arial" font-size="8">Gestão móvel materializada; validação funcional ainda pendente.</text>
+</svg>
