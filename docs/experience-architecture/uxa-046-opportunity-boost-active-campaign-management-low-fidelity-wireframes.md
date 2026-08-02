@@ -2,7 +2,7 @@
 id: UXA-046
 title: Wireframes de Baixa Fidelidade da Gestão da Campanha Ativa do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-01
 parent: UXA-045
@@ -19,8 +19,9 @@ depends_on:
   - GEM-007-A1
   - GEM-010-A2
 related:
+  - UXA-047
   - GPA-007
-  - M7.48
+  - M7.49
 normative: false
 ---
 
@@ -35,19 +36,40 @@ O pacote demonstra como o anunciante poderá compreender e controlar programaç�
 - confundir estado operacional com resultado humano;
 - acelerar orçamento para compensar restrições;
 - continuar entrega com informação desatualizada;
-- esconder orçamento utilizado ou saldo remanescente;
+- esconder orçamento utilizado ou saldo não utilizado;
 - apresentar pausa como cancelamento;
-- prometer devolução, reconciliação ou retomada ainda não definidas;
+- antecipar cobrança, devolução, crédito, reconciliação ou retomada ainda não definidos;
 - apagar eventos válidos ou histórico;
 - iniciar relatório agregado, algoritmo, cobrança real ou Engenharia de Produto.
 
-## 2. Pergunta funcional do conjunto
+## 2. Estado de validação
 
-> **O anunciante compreende o estado atual da campanha, o motivo de qualquer restrição, a consequência sobre entrega e orçamento, a ação disponível e a condição necessária para retomar ou encerrar sem interpretar indicadores operacionais como garantia de resultado?**
+A UXA-047 examinou os seis artefatos e os considerou:
 
-A pergunta ainda deverá ser respondida por validação funcional especializada dos wireframes.
+> **Funcionalmente válidos após reformulação.**
 
-## 3. Artefatos
+As principais reformulações foram:
+
+- explicitar que programação não garante ativação;
+- associar indicadores operacionais a período e atualização;
+- nomear limitação como campanha ativa com entrega reduzida;
+- preservar limite diário e período durante a limitação;
+- substituir antecipação de cobrança por interrupção de novos eventos de entrega;
+- mostrar retomada bloqueada e sua causa;
+- esclarecer o efeito de descartar alteração material;
+- bloquear cancelamento até motivo e confirmações completas;
+- separar suspensão por política, cancelamento e demais estados finais;
+- declarar que o relatório agregado ainda não existe.
+
+Validação funcional não equivale a acessibilidade técnica, teste com usuários, design, protótipo ou implementação.
+
+## 3. Pergunta funcional do conjunto
+
+> **O anunciante identifica o estado atual da campanha, compreende o motivo de cada restrição, distingue eventos válidos de entrega futura, entende o efeito sobre orçamento e período e executa somente ações compatíveis com as condições de retomada ou encerramento?**
+
+A UXA-047 responde positivamente após as reformulações registradas.
+
+## 4. Artefatos
 
 | Estado | Canal | Dimensão |
 |---|---|---:|
@@ -60,9 +82,9 @@ A pergunta ainda deverá ser respondida por validação funcional especializada 
 
 Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos textuais independentes de cor.
 
-## 4. Artefatos visuais
+## 5. Artefatos visuais reformulados
 
-### 4.1 Campanha programada
+### 5.1 Campanha programada
 
 ![Campanha programada](../assets/wireframes/uxa-046-campaign-scheduled-desktop.svg)
 
@@ -70,15 +92,18 @@ Todos os artefatos utilizam baixa fidelidade, dados ilustrativos e rótulos text
 
 Demonstra:
 
-- aprovação concluída;
+- campanha aprovada e programada;
 - data e horário futuros;
-- ausência de entrega;
-- orçamento reservado e ainda não utilizado;
-- condições verificadas;
-- ações anteriores ao início;
-- alerta de que alteração material poderá exigir nova avaliação.
+- ausência de entrega e eventos operacionais;
+- orçamento total, reservado, utilizado e saldo não utilizado;
+- gates novamente verificados antes do início;
+- ausência de ativação automática quando um gate falhar;
+- alteração de programação separada de cancelamento;
+- revisão de informação material sem aprovação automática.
 
-### 4.2 Campanha ativa
+Programação não equivale a garantia de início, entrega integral ou uso do orçamento.
+
+### 5.2 Campanha ativa
 
 ![Campanha ativa](../assets/wireframes/uxa-046-campaign-active-desktop.svg)
 
@@ -86,17 +111,18 @@ Demonstra:
 
 Demonstra:
 
-- entrega em andamento;
-- orçamento total, utilizado e saldo;
+- entrega em andamento dentro das condições vigentes;
+- orçamento total, utilizado e saldo não utilizado;
 - período e tempo restante;
-- indicadores operacionais de entrega;
+- resumo operacional com período de referência e atualização;
 - frequência, capacidade, informação material e política;
-- linha do tempo;
-- pausa, atualização de capacidade e solicitação de alteração material.
+- linha do tempo de decisões;
+- pausa, atualização de capacidade e solicitação de alteração material;
+- consequência das ações antes de sua execução.
 
-Os indicadores são operacionais e não constituem relatório agregado ou impacto comprovado.
+Impressões, cliques e tráfego inválido são indicadores parciais e operacionais. Não constituem conversão, atribuição, impacto ou relatório agregado.
 
-### 4.3 Campanha limitada
+### 5.3 Campanha limitada
 
 ![Campanha limitada](../assets/wireframes/uxa-046-campaign-limited-desktop.svg)
 
@@ -104,14 +130,18 @@ Os indicadores são operacionais e não constituem relatório agregado ou impact
 
 Demonstra:
 
+- campanha ativa com entrega reduzida;
 - limitação por capacidade no exemplo;
-- entrega reduzida sem pausa completa;
+- novos eventos ainda permitidos em ritmo protegido;
+- limite diário preservado;
 - orçamento não acelerado;
 - período não ampliado automaticamente;
-- condições para normalização;
-- distinção entre limitação por capacidade, frequência e baixa oferta orgânica.
+- saldo não consumido para compensação;
+- condição para nova verificação;
+- ausência de normalização imediata garantida;
+- distinção entre capacidade, frequência, pouca oferta orgânica e outra restrição operacional.
 
-### 4.4 Campanha pausada
+### 5.4 Campanha pausada
 
 ![Campanha pausada](../assets/wireframes/uxa-046-campaign-paused-desktop.svg)
 
@@ -120,13 +150,16 @@ Demonstra:
 Demonstra:
 
 - pausa automática por informação material alterada;
-- interrupção de entrega e cobrança futura;
-- preservação de eventos válidos;
-- orçamento utilizado e saldo separado;
-- condição explícita para retomada;
-- distinção entre pausa voluntária, pausa automática e suspensão por política.
+- interrupção de novos eventos de entrega;
+- preservação de eventos válidos anteriores para apuração posterior;
+- orçamento utilizado e saldo não utilizado separados;
+- período vigente e possibilidade de expiração durante a pausa;
+- condição explícita para solicitar retomada;
+- controle de retomada indisponível enquanto a causa persistir;
+- distinção entre pausa voluntária, pausa automática e suspensão por política;
+- ausência de decisão final sobre cobrança, devolução ou reconciliação.
 
-### 4.5 Alteração material
+### 5.5 Alteração material
 
 ![Alteração material](../assets/wireframes/uxa-046-campaign-material-change-desktop.svg)
 
@@ -134,14 +167,16 @@ Demonstra:
 
 Demonstra:
 
-- comparação entre informação aprovada e alterada;
-- mudanças identificadas por texto;
+- comparação entre versão aprovada e versão alterada;
+- campos alterados identificados por texto;
+- impacto sobre decisão, elegibilidade e capacidade;
 - pausa anterior à nova entrega;
-- efeitos sobre orçamento e estimativas futuras;
+- eventos válidos anteriores vinculados à versão aprovada;
 - envio para nova avaliação;
-- cancelamento da alteração sem início imediato da entrega.
+- descarte da alteração com revisão da versão aprovada;
+- nenhuma aprovação ou retomada automática.
 
-### 4.6 Encerramento e cancelamento
+### 5.6 Encerramento e cancelamento
 
 ![Encerramento e cancelamento](../assets/wireframes/uxa-046-campaign-closure-desktop.svg)
 
@@ -149,20 +184,23 @@ Demonstra:
 
 Demonstra:
 
-- entrega futura encerrada;
-- eventos válidos e histórico preservados;
-- orçamento utilizado e saldo remanescente;
-- tratamento do saldo ainda candidato;
-- estados orçamento esgotado, capacidade esgotada, expirada, concluída e cancelada;
-- reconciliação posterior;
-- confirmação proporcional à ativação.
+- campanha ainda ativa antes da confirmação completa;
+- consequência irreversível para a mesma campanha;
+- novos eventos encerrados e eventos válidos anteriores preservados;
+- orçamento utilizado e saldo não utilizado separados;
+- motivo obrigatório;
+- três confirmações inicialmente vazias;
+- botão de cancelamento indisponível antes do gate completo;
+- estados orçamento esgotado, capacidade esgotada, oportunidade expirada, suspensão por política, conclusão, cancelamento e reconciliação;
+- registro operacional preservado;
+- relatório agregado explicitamente ainda não criado.
 
-## 5. Modelo de estados preservado
+## 6. Modelo de estados preservado
 
 ```text
 programada
 → ativa
-→ limitada por frequência | limitada por capacidade
+→ ativa com entrega reduzida por frequência | capacidade | pouca oferta orgânica
 → pausada pelo anunciante | pausada automaticamente
 → orçamento esgotado | capacidade esgotada | oportunidade expirada
 → suspensa por política
@@ -170,33 +208,35 @@ programada
 → reconciliada
 ```
 
-A interface não apresenta os estados como uma sequência obrigatoriamente linear.
+A interface não apresenta os estados como sequência obrigatoriamente linear.
 
-Cada estado deverá explicar:
+Cada estado explica:
 
 1. motivo;
-2. consequência sobre entrega;
-3. efeito sobre orçamento e saldo;
-4. ação possível;
-5. condição para retomada ou encerramento.
+2. consequência sobre novos eventos de entrega;
+3. efeito sobre orçamento, saldo e período;
+4. ação disponível ou indisponível;
+5. condição para verificação, retomada ou encerramento.
 
-## 6. Programação
+## 7. Programação
 
 Uma campanha programada:
 
 - foi aprovada;
 - possui data futura de início;
 - ainda não iniciou entrega;
-- possui orçamento reservado, não utilizado;
+- possui orçamento reservado e utilizado igual a zero;
 - não gera impressão, clique ou evento operacional;
-- poderá ter programação cancelada;
+- depende da permanência dos gates até o início;
+- poderá ter data ou horário alterados;
+- poderá ser cancelada antes do início mediante confirmação;
 - poderá exigir nova avaliação se informação material mudar.
 
-Programação não equivale a garantia de entrega integral.
+Programação não equivale a garantia de ativação ou entrega integral.
 
-## 7. Estado ativo
+## 8. Estado ativo
 
-O estado ativo demonstra que a campanha poderá entregar dentro de:
+O estado ativo demonstra que a campanha poderá gerar novos eventos dentro de:
 
 - período aprovado;
 - orçamento e limite diário;
@@ -206,9 +246,9 @@ O estado ativo demonstra que a campanha poderá entregar dentro de:
 - informação material atual;
 - política vigente.
 
-Indicadores operacionais poderão informar impressões válidas, cliques válidos e tráfego inválido removido, mas não deverão ser apresentados como relatório final, conversão ou impacto.
+Indicadores operacionais deverão informar período e atualização. Eles não representam conversão, atribuição, impacto, relatório final ou garantia.
 
-## 8. Limitação
+## 9. Limitação
 
 A campanha poderá permanecer ativa com entrega reduzida quando houver:
 
@@ -219,27 +259,30 @@ A campanha poderá permanecer ativa com entrega reduzida quando houver:
 
 A limitação:
 
+- mantém novos eventos em ritmo protegido;
 - não acelera orçamento;
+- não amplia limite diário;
 - não amplia duração automaticamente;
 - não remove saldo;
-- não promete normalização após atualização;
-- deverá informar condição para retorno à entrega normal.
+- exige nova verificação após atualização;
+- não promete normalização imediata.
 
-## 9. Pausa
+## 10. Pausa
 
-### 9.1 Pausa voluntária
+### 10.1 Pausa voluntária
 
 Poderá ser iniciada pelo anunciante quando não houver bloqueio superior.
 
 Deverá mostrar:
 
-- entrega futura interrompida;
+- novos eventos interrompidos;
+- eventos válidos anteriores preservados;
 - orçamento utilizado;
-- saldo remanescente;
+- saldo não utilizado;
 - período restante;
 - possibilidade e condição de retomada.
 
-### 9.2 Pausa automática
+### 10.2 Pausa automática
 
 Poderá ocorrer por:
 
@@ -252,32 +295,36 @@ Poderá ocorrer por:
 
 Retomada automática não será presumida.
 
-### 9.3 Suspensão por política
+A pausa não define cobrança futura, devolução ou crédito. Eventos válidos anteriores permanecem sujeitos à apuração e reconciliação posteriores.
+
+### 10.3 Suspensão por política
 
 Suspensão por política não é pausa voluntária. Poderá impedir retomada e exigir revisão especializada.
 
-## 10. Alteração material
+## 11. Alteração material
 
 Mudança em preço, gratuidade, data, local, modalidade, responsável, elegibilidade, risco, capacidade ou condição comercial deverá:
 
-1. interromper entrega quando puder alterar a decisão da pessoa;
+1. interromper novos eventos quando puder alterar a decisão da pessoa;
 2. comparar versão aprovada e versão alterada;
 3. preservar eventos válidos anteriores;
 4. preservar orçamento utilizado;
 5. manter saldo separado;
 6. recalcular somente estimativas futuras;
 7. exigir nova avaliação quando necessário;
-8. impedir entrega com informação desatualizada.
+8. impedir entrega com informação desatualizada;
+9. impedir retomada automática ao descartar a alteração.
 
 Correção editorial sem mudança material poderá seguir fluxo distinto e deverá manter histórico.
 
-## 11. Orçamento e saldo
+## 12. Orçamento, saldo e período
 
-A gestão deverá apresentar separadamente:
+A gestão apresenta separadamente:
 
-- orçamento total;
-- orçamento utilizado;
-- saldo remanescente;
+- orçamento total aprovado;
+- orçamento reservado, quando ainda não iniciado;
+- orçamento utilizado validado;
+- saldo não utilizado;
 - limite diário;
 - período vigente;
 - tratamento candidato do saldo após encerramento.
@@ -286,14 +333,14 @@ A interface não poderá:
 
 - prometer uso integral do orçamento;
 - acelerar gasto após limitação;
-- ampliar período automaticamente;
-- apresentar saldo como devolução confirmada;
-- ocultar eventos invalidados;
+- ampliar limite diário ou período automaticamente;
+- apresentar saldo como crédito, estorno ou devolução confirmados;
+- apagar eventos inválidos ou válidos;
 - cobrar simultaneamente CPM e CPC na mesma campanha.
 
-## 12. Encerramento
+## 13. Encerramento
 
-Estados finais deverão informar motivo e consequência próprios:
+Estados finais informam motivo e consequência próprios:
 
 - orçamento esgotado;
 - capacidade esgotada;
@@ -305,19 +352,21 @@ Estados finais deverão informar motivo e consequência próprios:
 
 Cancelamento:
 
-- encerra entrega futura;
+- exige motivo;
+- exige confirmações inicialmente vazias;
+- mantém o botão indisponível antes do gate completo;
+- encerra novos eventos;
 - não apaga eventos válidos;
 - não apaga histórico;
 - não permite retomada da mesma campanha;
-- exige confirmação proporcional à ativação;
 - mostra orçamento utilizado e saldo candidato;
-- mantém acesso posterior ao relatório quando ele existir.
+- mantém o registro operacional acessível.
 
 Reconciliação será posterior ao tratamento dos eventos e do saldo. Este pacote não cria o relatório agregado nem a política final de reconciliação.
 
-## 13. Linha do tempo e histórico
+## 14. Linha do tempo e histórico
 
-A gestão deverá registrar, quando aplicável:
+A gestão registra, quando aplicável:
 
 - aprovação;
 - programação;
@@ -333,63 +382,62 @@ A gestão deverá registrar, quando aplicável:
 - cancelamento;
 - reconciliação.
 
-Histórico não será apagado por pausa, cancelamento ou edição.
+Histórico não será apagado por pausa, cancelamento, edição ou descarte de alteração.
 
-## 14. Acessibilidade e linguagem
+## 15. Acessibilidade e linguagem
 
-- estado será textual e não dependerá de cor;
-- motivo, consequência e ação serão anunciáveis;
-- valores terão rótulo e unidade;
-- mudanças materiais serão identificadas por texto;
-- ações indisponíveis explicarão a condição necessária;
-- pausa e cancelamento terão consequências explícitas;
-- confirmação não começará selecionada;
-- urgência, culpa e escassez artificial serão proibidas;
-- indicadores operacionais serão distinguidos de relatório e impacto.
+- estado é textual e não depende de cor;
+- motivo, consequência e ação são anunciáveis;
+- valores possuem rótulo e unidade;
+- período de indicadores é explícito;
+- mudanças materiais são identificadas por texto;
+- ações indisponíveis explicam a condição necessária;
+- pausa e cancelamento possuem consequências distintas;
+- confirmações não começam selecionadas;
+- botão bloqueado é textual e visualmente reconhecível;
+- urgência, culpa e escassez artificial são proibidas;
+- indicadores operacionais são distinguidos de relatório e impacto.
 
 Esta referência não conclui acessibilidade técnica.
 
-## 15. Proteções preservadas
+## 16. Proteções preservadas
 
-- nenhuma entrega antes da programação;
+- nenhuma entrega antes da programação válida;
 - nenhuma entrega com informação material desatualizada;
-- limitação não acelera orçamento;
-- pausa interrompe entrega futura;
+- limitação não acelera orçamento ou amplia limite diário;
+- pausa interrompe novos eventos de entrega;
 - eventos válidos anteriores permanecem;
 - saldo não é tratado como devolução confirmada;
-- cancelamento exige confirmação e encerra retomada;
+- cancelamento exige gate completo e encerra retomada;
 - pagamento não compra relevância, qualidade, confiança ou impacto;
 - anunciante não recebe lista de visualizadores;
 - nenhum perfil publicitário é criado;
 - indicadores operacionais não constituem relatório agregado;
 - Engenharia de Produto permanece pausada.
 
-## 16. Limites
+## 17. Limites
 
 Este incremento não cria:
 
-- validação funcional dos seis wireframes;
 - wireframe do relatório agregado;
 - estados móveis de gestão;
 - algoritmo de entrega ou leilão;
 - política final de densidade ou frequência;
-- política final de cancelamento, devolução e disputa;
+- política final de cancelamento, devolução, crédito e disputa;
 - perfil publicitário;
-- tecnologia cartográfica;
 - design visual final;
 - protótipo navegável;
 - teste com usuários;
 - checkout, faturamento, cobrança ou Engenharia de Produto.
 
-## 17. Próximos atos governados
+## 18. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os seis wireframes da UXA-046;
-2. criar o wireframe do relatório agregado;
-3. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-4. criar estados móveis de gestão, se priorizados;
-5. criar estados de erro, inventário insuficiente e preferência publicitária;
-6. testar posteriormente estados, pausa, cancelamento, orçamento e controles com Organizações e Coletivos.
+1. criar o wireframe do relatório agregado;
+2. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
+3. criar estados móveis de gestão, se priorizados;
+4. criar estados de erro, inventário insuficiente e preferência publicitária;
+5. testar posteriormente estados, pausa, cancelamento, orçamento e controles com Organizações e Coletivos.
 
 Nenhum ato é iniciado automaticamente.
