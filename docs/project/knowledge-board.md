@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.25.0
+version: 12.26.0
 owner: Guivos
-last_updated: 2026-08-01
+last_updated: 2026-08-02
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.25.0
+  - ROADMAP-12.26.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -26,9 +26,10 @@ related:
   - UXA-047
   - UXA-048
   - UXA-049
+  - UXA-050
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.51
+  - M7.52
 normative: false
 ---
 
@@ -43,7 +44,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | relatório agregado do Opportunity Boost funcionalmente validado e reformulado | M7.51 |
+| Marco | conjunto completo de wireframes do Opportunity Boost funcionalmente validado | M7.52 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
@@ -54,6 +55,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes para computador validados e reformulados | UXA-046; UXA-047 |
 | Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
+| Conjunto completo do Boost | 25 wireframes validados transversalmente | UXA-050 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Home e início protegido | validados | UXA-020 a UXA-023; UXA-034; UXA-035 |
@@ -68,7 +70,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-049;
+- Arquitetura da Experiência até UXA-050;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências de Organizações e Coletivos;
 - baseline comercial de planos;
@@ -79,12 +81,13 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - estados patrocinados de Lista e Mapa materializados, validados e reformulados;
 - gestão da campanha ativa materializada, validada e reformulada;
 - relatório agregado materializado, validado e reformulado;
+- 25 wireframes do Opportunity Boost validados transversalmente;
+- identidade da campanha, versão aprovada, estados, controles, origem, histórico e cobertura por canal consolidados;
 - parâmetros candidatos de orçamento e mensuração.
 
 ### Em validação ou calibração pendente
 
 - nove candidatos de Resultados Empresariais;
-- conjunto completo de wireframes do Opportunity Boost;
 - utilidade e disposição a pagar dos planos;
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
@@ -98,12 +101,13 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 
 ### Aguardando autorização
 
-#### Telas do Opportunity Boost
+#### Estados residuais e protótipo do Opportunity Boost
 
-- validação funcional do conjunto completo de wireframes;
-- estados móveis adicionais de gestão, se priorizados;
+- definição do próximo pacote residual;
+- configuração e gestão móvel, se priorizadas;
 - estados de erro, inventário insuficiente e preferência publicitária;
-- testes posteriores de relatório, atribuição, autorrelato, agregação, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+- protocolo de protótipo de baixa ou média fidelidade;
+- plano de teste com Pessoas, Organizações e Coletivos.
 
 #### Modelo econômico e especialidades
 
@@ -246,7 +250,27 @@ As referências demonstram:
 - nenhuma lista de visualizadores ou dado individual;
 - nenhuma inferência de causalidade, impacto humano, qualidade, confiança ou evolução.
 
-## 11. Sequência pessoal
+## 11. Conjunto completo validado transversalmente
+
+A UXA-050 confirma que os 25 wireframes formam um percurso único entre elegibilidade, configuração, avaliação, entrega, gestão, encerramento e relatório.
+
+O conjunto consolidado preserva:
+
+- identidade única da campanha;
+- versão aprovada associada aos eventos;
+- alteração material sem reescrita do histórico;
+- autoridade das transições de estado;
+- configuração e aprovação sem entrega automática;
+- continuidade entre prévia e unidade entregue;
+- Lista e Mapa como uma única consulta;
+- preferência negativa acima da entrega contratada;
+- controles sem identificação para o anunciante;
+- separação orgânica e patrocinada até atribuição e relatório;
+- identidade contínua do Boost Social Financiado;
+- orçamento, saldo e reconciliação sem promessa;
+- cobertura por canal com configuração e gestão móveis ainda ausentes.
+
+## 12. Sequência pessoal
 
 ```text
 Página Inicial pública
@@ -261,30 +285,33 @@ Página Inicial pública
 
 Oferta e publicidade não interrompem a sequência protegida.
 
-## 12. Regras preservadas
+## 13. Regras preservadas
 
 - gratuito mantém valor real;
 - catálogo público permanece acessível;
 - plano, transação, comissão e Boost são objetos distintos;
 - publicidade não compra relevância ou impacto;
 - localização permanece opcional;
+- preferência negativa prevalece sobre entrega contratada;
+- ocultar publicidade não reduz catálogo orgânico;
 - marcador patrocinado não encobre oportunidade orgânica;
 - movimentação do Mapa não autoriza localização ou nova consulta;
 - limitação não acelera orçamento ou amplia limite diário;
 - pausa interrompe novos eventos de entrega;
-- alteração material impede entrega desatualizada;
+- alteração material impede entrega desatualizada e não reescreve eventos anteriores;
 - cancelamento preserva eventos válidos e histórico;
 - origem orgânica não é apagada pelo relatório;
 - ausência e supressão não são convertidas em zero;
 - regra candidata e período permanecem versionados;
 - atribuição candidata não é causalidade;
 - autorrelato não é evento instrumentado;
+- anunciante e financiador não recebem lista de pessoas;
 - saldo não é devolução confirmada;
 - impressão, clique, inscrição, atribuição e impacto são eventos diferentes;
 - valores são candidatos, não autorizações de cobrança;
 - documentação não equivale a implementação.
 
-## 13. Distribuição dos candidatos de Resultados
+## 14. Distribuição dos candidatos de Resultados
 
 | Estado | Quantidade |
 |---|---:|
@@ -293,6 +320,6 @@ Oferta e publicidade não interrompem a sequência protegida.
 | Rejeitados | 6 |
 | Aprovados | 0 |
 
-## 14. Próximo movimento
+## 15. Próximo movimento
 
-Após integração, nenhum movimento é automático. Pela sequência visual, a próxima ação candidata será validar funcionalmente o conjunto completo de wireframes do Opportunity Boost.
+Após integração, nenhum movimento é automático. A próxima decisão deverá escolher entre estados residuais do Opportunity Boost, protocolo de protótipo e teste, ou retomada de outra frente governada.

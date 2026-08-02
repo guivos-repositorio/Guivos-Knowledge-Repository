@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.78.0
+version: 1.79.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-01
+last_updated: 2026-08-02
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -26,6 +26,7 @@ related:
   - UXA-047
   - UXA-048
   - UXA-049
+  - UXA-050
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -36,8 +37,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.25.0
-  - M7.51
+  - ROADMAP-12.26.0
+  - M7.52
 normative: true
 ---
 
@@ -52,12 +53,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | relatório agregado do Opportunity Boost funcionalmente validado e reformulado | M7.51; UXA-048; UXA-049 |
+| Marco atual | conjunto completo de wireframes do Opportunity Boost funcionalmente validado | M7.52; UXA-050 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-049 | UXA-000 a UXA-049 |
+| Arquitetura da Experiência | ativa até UXA-050 | UXA-000 a UXA-050 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -74,6 +75,7 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Lista e Mapa patrocinados | quatro wireframes móveis e para computador funcionalmente validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes para computador funcionalmente validados e reformulados | UXA-046; UXA-047 |
 | Relatório agregado | quatro wireframes para computador e móvel funcionalmente validados e reformulados | UXA-048; UXA-049 |
+| Conjunto completo do Boost | 25 wireframes funcionalmente validados transversalmente | UXA-050 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -256,6 +258,27 @@ O conjunto demonstra:
 - ausência de lista de visualizadores e dados individuais;
 - causalidade, impacto humano, confiança, qualidade e evolução não inferidos.
 
+### 6.9 Conjunto completo validado transversalmente
+
+A UXA-050 consolida os 25 wireframes em um único percurso funcional.
+
+O conjunto completo demonstra:
+
+- identificador único da campanha;
+- versão aprovada vinculada a entrega, histórico e relatório;
+- alteração material sem reescrita de eventos anteriores;
+- autoridade transversal das transições de estado;
+- configuração e aprovação sem entrega automática;
+- prévia e unidade entregue materialmente compatíveis;
+- Lista e Mapa preservando a mesma consulta;
+- controles da pessoa sem identificação para o anunciante;
+- preferência negativa prevalecendo sobre entrega contratada;
+- orgânico e patrocinado separados até atribuição e relatório;
+- identidade contínua do Boost Social Financiado;
+- orçamento, saldo e reconciliação sem promessa financeira;
+- histórico funcional e versão da regra candidata preservados;
+- configuração e gestão móveis explicitamente ainda não materializadas.
+
 ## 7. Proteções vigentes
 
 - gratuito permanece útil;
@@ -263,21 +286,22 @@ O conjunto demonstra:
 - assinatura, transação e Boost permanecem separados;
 - plano pago e Boost não aumentam relevância, ranking, impacto ou evidência;
 - compreensão inicial, Momento Atual e Próximo Passo não alimentam publicidade;
-- preferência de ocultação não pode ser contornada;
+- preferência negativa prevalece sobre entrega contratada;
+- ocultar publicidade não reduz catálogo orgânico;
 - ausência de inventário orgânico não aumenta densidade;
 - marcador patrocinado não encobre oportunidade orgânica;
 - localização permanece opcional;
 - movimentação do Mapa não autoriza localização ou nova consulta;
 - limitação não acelera orçamento ou amplia limite diário;
 - pausa interrompe novos eventos de entrega;
-- alteração material impede entrega desatualizada;
+- alteração material impede entrega desatualizada e não reescreve eventos anteriores;
 - cancelamento preserva eventos válidos e histórico;
 - origem orgânica não é apagada pelo relatório;
 - ausência ou supressão não é convertida em zero;
 - regra candidata e período permanecem versionados;
 - eventos heterogêneos não são somados em total sem unidade;
 - autorrelato não é confundido com evento instrumentado;
-- anunciante não recebe lista de visualizadores;
+- anunciante e financiador não recebem lista de visualizadores;
 - saldo não é apresentado como devolução confirmada;
 - patrocinador ou financiador não recebe autoridade indevida;
 - Engenharia de Produto permanece pausada.
@@ -286,9 +310,11 @@ O conjunto demonstra:
 
 Não foram concluídos:
 
-- validação funcional do conjunto completo de wireframes do Opportunity Boost;
-- estados móveis adicionais de gestão;
-- estados de erro, inventário insuficiente e preferência publicitária;
+- configuração móvel do anunciante;
+- gestão móvel da campanha;
+- estados completos de erro técnico;
+- inventário insuficiente operacional;
+- experiência detalhada de preferência publicitária;
 - política final de atribuição e reconciliação;
 - limiar definitivo de agregação e privacidade;
 - pesquisa de disposição a pagar;
@@ -310,10 +336,12 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente o conjunto completo de wireframes do Opportunity Boost;
-2. criar estados móveis adicionais de gestão, se priorizados;
+1. definir o próximo pacote de estados residuais do Opportunity Boost;
+2. criar configuração e gestão móvel, se priorizadas;
 3. criar estados de erro, inventário insuficiente e preferência publicitária;
-4. validar preços, orçamentos e disposição a pagar;
-5. definir política especializada de publicidade, atribuição, agregação e categorias;
-6. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
-7. retomar independentemente os testes dos Resultados Empresariais.
+4. definir protocolo de protótipo de baixa ou média fidelidade;
+5. preparar plano de teste com Pessoas, Organizações e Coletivos;
+6. validar preços, orçamentos e disposição a pagar;
+7. definir política especializada de publicidade, atribuição, agregação e categorias;
+8. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
+9. retomar independentemente os testes dos Resultados Empresariais.
