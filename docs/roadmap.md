@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.24.0
-title: Roadmap Arquitetural — Relatório Agregado do Opportunity Boost Materializado
+id: ROADMAP-12.25.0
+title: Roadmap Arquitetural — Relatório Agregado Funcionalmente Validado
 status: active
-version: 12.24.0
+version: 12.25.0
 owner: Guivos
 last_updated: 2026-08-01
 supersedes_partial:
-  - ROADMAP-12.23.0
+  - ROADMAP-12.24.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -27,14 +27,15 @@ related:
   - UXA-046
   - UXA-047
   - UXA-048
+  - UXA-049
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.50
+  - M7.51
 ---
 
-# Roadmap Arquitetural — Relatório Agregado do Opportunity Boost Materializado
+# Roadmap Arquitetural — Relatório Agregado Funcionalmente Validado
 
 ## 1. Autoridade
 
@@ -45,14 +46,14 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | relatório agregado do Opportunity Boost materializado | M7.50 |
+| Marco | relatório agregado do Opportunity Boost funcionalmente validado e reformulado | M7.51 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
 | Fluxo visual do anunciante | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
 | Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
 | Gestão da campanha ativa | seis wireframes validados e reformulados | UXA-046; UXA-047 |
-| Relatório agregado | quatro wireframes para computador e móvel criados; validação pendente | UXA-048 |
+| Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
 | Guivos Ads | responsabilidade pelo mecanismo registrada | GPA-007 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -80,7 +81,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 14. estados patrocinados de Lista e Mapa materializados, validados e reformulados;
 15. gestão da campanha ativa materializada em seis wireframes;
 16. gestão da campanha ativa funcionalmente validada e reformulada;
-17. relatório agregado materializado em quatro wireframes para computador e móvel.
+17. relatório agregado materializado em quatro wireframes para computador e móvel;
+18. relatório agregado funcionalmente validado e reformulado.
 
 ## 4. Sequência pessoal vigente
 
@@ -189,9 +191,9 @@ O conjunto demonstra:
 - estados finais separados e histórico preservado;
 - saldo e reconciliação ainda candidatos.
 
-### 6.7 Relatório agregado materializado
+### 6.7 Relatório agregado validado
 
-A UXA-048 cria quatro referências:
+A UXA-048 reformulada e a UXA-049 validam quatro referências:
 
 ```text
 visão geral desktop
@@ -203,20 +205,22 @@ visão geral desktop
 O conjunto demonstra:
 
 - quatro camadas independentes: entrega, interação, atribuição candidata e autorrelato;
+- proveniência e estado junto de cada camada;
 - orçamento total, utilizado e saldo não utilizado separados;
-- período consultado, atualização e estado provisório visíveis;
+- período consultado, atualização e versão da regra candidata visíveis;
 - impressão, clique, salvamento, interesse e inscrição como eventos distintos;
-- atribuição candidata como associação técnica revisável, não prova causal;
-- origem orgânica, patrocinada e indeterminada preservadas;
+- `não disponível`, `não exibido por agregação` e zero separados;
+- detalhamento por origem condicionado à regra de agregação;
+- atribuição em agregados por tipo de evento, sem linha individual;
+- associação candidata patrocinada, origem orgânica e origem indeterminada preservadas;
 - dupla atribuição silenciosa proibida;
-- autorrelato identificado e não somado a eventos instrumentados;
-- ausência de dado apresentada como `não disponível`;
-- eventos válidos, invalidados e em revisão separados;
+- autorrelato declarado, não verificado automaticamente e não somado;
+- quantidade declarada sujeita a supressão;
+- estados provisório, em revisão, parcialmente reconciliado e reconciliado separados;
+- reconciliação por tipo e unidade de evento;
 - saldo, crédito, estorno e devolução mantidos como candidatos;
 - nenhuma lista de visualizadores ou dados individuais;
-- nenhuma inferência de impacto humano, confiança, qualidade ou evolução.
-
-Os quatro wireframes ainda exigem validação funcional própria.
+- nenhuma inferência de causalidade, impacto humano, confiança, qualidade ou evolução.
 
 ### 6.8 Preços candidatos preservados
 
@@ -247,8 +251,9 @@ Os quatro wireframes ainda exigem validação funcional própria.
 - pausa interrompe novos eventos de entrega;
 - alteração material impede entrega desatualizada;
 - cancelamento preserva eventos válidos e histórico;
-- origem orgânica permanece separada da origem patrocinada;
-- ausência de dado não é convertida em zero;
+- origem orgânica permanece separada da associação patrocinada;
+- ausência e supressão não são convertidas em zero;
+- regra candidata e período permanecem versionados;
 - autorrelato não é evento instrumentado;
 - atribuição candidata não é causalidade;
 - anunciante não recebe lista de visualizadores;
@@ -262,18 +267,17 @@ Os quatro wireframes ainda exigem validação funcional própria.
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os wireframes da UXA-048;
-2. validar funcionalmente o conjunto completo de wireframes;
-3. criar estados móveis adicionais de gestão, se priorizados;
-4. criar estados de erro, inventário insuficiente e preferência publicitária;
-5. testar relatório, atribuição, autorrelato, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
+1. validar funcionalmente o conjunto completo de wireframes;
+2. criar estados móveis adicionais de gestão, se priorizados;
+3. criar estados de erro, inventário insuficiente e preferência publicitária;
+4. testar relatório, atribuição, autorrelato, agregação, reconciliação, disclosure, densidade, frequência, marcadores, localização, orçamento e controles.
 
 ### 8.2 Modelo econômico e especialidades
 
 - pesquisa de disposição a pagar;
 - teste das faixas Local, Regional, Ampliado e Gerenciado;
 - calibração de CPM ou CPC;
-- política especializada de categorias, publicidade e atribuição;
+- política especializada de categorias, publicidade, atribuição e agregação;
 - modelo de custos, antifraude e unit economics;
 - revisões jurídica, fiscal, contábil, de privacidade e segurança;
 - eventual protocolo de teste controlado.
