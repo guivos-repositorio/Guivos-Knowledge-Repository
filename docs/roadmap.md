@@ -1,21 +1,18 @@
 ---
-id: ROADMAP-12.30.0
-title: Roadmap Arquitetural — Gestão Móvel da Campanha Ativa do Opportunity Boost Validada
+id: ROADMAP-12.31.0
+title: Roadmap Arquitetural — Estados Residuais do Opportunity Boost Materializados
 status: active
-version: 12.30.0
+version: 12.31.0
 owner: Guivos
-last_updated: 2026-08-02
+last_updated: 2026-08-03
 supersedes_partial:
-  - ROADMAP-12.29.0
+  - ROADMAP-12.30.0
 related:
   - GKR-STATE-001
   - GPA-007
   - GEM-004-A1
-  - GEM-004-A2
   - GEM-007-A1
-  - GEM-010-A1
   - GEM-010-A2
-  - GEM-OPPORTUNITY-BOOST-REVIEW-001
   - UXA-038
   - UXA-039
   - UXA-040
@@ -33,14 +30,15 @@ related:
   - UXA-052
   - UXA-053
   - UXA-054
+  - UXA-055
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.56
+  - M7.57
 ---
 
-# Roadmap Arquitetural — Gestão Móvel da Campanha Ativa do Opportunity Boost Validada
+# Roadmap Arquitetural — Estados Residuais do Opportunity Boost Materializados
 
 ## 1. Autoridade
 
@@ -51,18 +49,17 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | gestão móvel da campanha ativa do Opportunity Boost validada e reformulada | M7.56 |
+| Marco | estados residuais do Opportunity Boost materializados | M7.57 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
-| Configuração para computador | cinco wireframes validados e reformulados | UXA-040; UXA-041 |
-| Configuração móvel | cinco wireframes validados e reformulados | UXA-051; UXA-052 |
-| Cartão e explicação | seis wireframes validados e reformulados | UXA-042; UXA-043 |
-| Lista e Mapa patrocinados | quatro wireframes validados e reformulados | UXA-044; UXA-045 |
-| Gestão para computador | seis wireframes validados e reformulados | UXA-046; UXA-047 |
-| Gestão móvel | seis wireframes validados e reformulados | UXA-053; UXA-054 |
-| Relatório agregado | quatro wireframes para computador e móvel validados | UXA-048; UXA-049 |
-| Conjunto transversal | 25 wireframes validados pela UXA-050 | UXA-050 |
-| Cobertura visual | 36 wireframes materializados e validados por pacote | UXA-040 a UXA-054 |
+| Configuração | computador e móvel validados e reformulados | UXA-040; UXA-041; UXA-051; UXA-052 |
+| Cartão e explicação | seis wireframes validados | UXA-042; UXA-043 |
+| Lista e Mapa patrocinados | quatro wireframes validados | UXA-044; UXA-045 |
+| Gestão | computador e móvel validados e reformulados | UXA-046; UXA-047; UXA-053; UXA-054 |
+| Relatório agregado | quatro wireframes validados | UXA-048; UXA-049 |
+| Estados residuais | dez wireframes móveis materializados; validação pendente | UXA-055 |
+| Conjunto transversal | 25 wireframes validados | UXA-050 |
+| Cobertura visual | 46 materializados; 36 validados por pacote e 10 pendentes | UXA-040 a UXA-055 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -81,15 +78,15 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 9. planos, benefícios, limites e preços candidatos definidos;
 10. Opportunity Boost definido como add-on publicitário candidato;
 11. experiência funcional do Boost validada;
-12. configuração para computador criada, validada e reformulada;
+12. configuração para computador criada e validada;
 13. cartão patrocinado e explicação criados e validados;
 14. Lista e Mapa patrocinados criados e validados;
-15. gestão para computador criada, validada e reformulada;
-16. relatório agregado criado, validado e reformulado;
+15. gestão para computador criada e validada;
+16. relatório agregado criado e validado;
 17. 25 wireframes validados transversalmente;
-18. configuração móvel criada, validada e reformulada;
-19. gestão móvel materializada em seis wireframes;
-20. gestão móvel funcionalmente validada e reformulada.
+18. configuração móvel criada e validada;
+19. gestão móvel criada e validada;
+20. estados residuais materializados em dez wireframes móveis.
 
 ## 4. Sequência pessoal vigente
 
@@ -100,9 +97,8 @@ Página Inicial pública
 → acesso, somente quando necessário
 → escolha e rascunho mínimo
 → revisão e autorização específica
-→ processamento temporário visível e interrompível
-→ compreensão inicial apresentada como hipótese
-→ revisão, correção, abertura, limitação ou rejeição
+→ processamento temporário e interrompível
+→ compreensão inicial como hipótese
 → decisões separadas sobre persistência e personalização
 → Tela Hoje
 → Hoje | Jornada | Explorar | Mapa | Eu
@@ -112,185 +108,112 @@ Oferta de plano e Opportunity Boost permanecem fora do início protegido, consen
 
 ## 5. Baseline comercial preservada
 
-### 5.1 Pessoas
+- Pessoas: Free, Plus e Pro candidatos;
+- Coletivos: Livre, Gestão, Impacto e Enterprise candidatos;
+- Organizações: Business Start, Growth e Scale candidatos;
+- Boost Local: orçamento mínimo candidato de R$ 30,00;
+- Boost Regional: orçamento mínimo candidato de R$ 100,00;
+- Boost Ampliado: orçamento mínimo candidato de R$ 300,00;
+- Boost Gerenciado: a partir de R$ 1.000,00;
+- CPM candidato: R$ 12,00 a R$ 25,00;
+- CPC candidato: R$ 0,80 a R$ 2,50.
 
-- Guivos Free — R$ 0,00;
-- Guivos Plus — R$ 24,90 mensais ou R$ 249,00 anuais;
-- Guivos Pro — R$ 49,90 mensais ou R$ 499,00 anuais.
-
-### 5.2 Coletivos
-
-- Coletivo Livre — gratuito;
-- Coletivo Gestão — R$ 89,90 mensais ou R$ 899,00 anuais;
-- Coletivo Impacto — R$ 249,90 mensais ou R$ 2.499,00 anuais;
-- Coletivo Enterprise — sob consulta.
-
-### 5.3 Organizações
-
-- Business Start — R$ 299,00 mensais ou R$ 2.990,00 anuais;
-- Business Growth — R$ 799,00 mensais ou R$ 7.990,00 anuais;
-- Business Scale — a partir de R$ 1.990,00 mensais.
-
-Todos os valores permanecem candidatos para validação.
+Todos os valores permanecem candidatos para validação. CPM e CPC não poderão ser cobrados simultaneamente na mesma campanha.
 
 ## 6. Opportunity Boost
 
-### 6.1 Papel econômico
+### 6.1 Percurso governado
 
 ```text
-oportunidade ativa
-→ anunciante elegível
-→ orçamento limitado
-→ avaliação
-→ programação
+elegibilidade
+→ objetivo e critérios
+→ orçamento, duração e estimativa
+→ prévia e confirmação
+→ avaliação e programação
 → entrega patrocinada identificada
+→ erro | zero inventário | baixa oferta orgânica
 → limitação | pausa | alteração material
 → conclusão | cancelamento | suspensão
 → reconciliação
 → relatório agregado
 ```
 
-O Boost amplia distribuição publicitária; não altera ranking orgânico, aderência pessoal, qualidade ou impacto.
+Pagamento amplia distribuição publicitária e não altera ranking orgânico, aderência pessoal, confiança, qualidade ou impacto.
 
-### 6.2 Configuração nos dois canais
+### 6.2 Estados residuais materializados
 
-As UXA-040 a UXA-041 e UXA-051 a UXA-052 validam, respectivamente, as referências para computador e aplicativo móvel:
+A UXA-055 cria dez referências móveis:
 
-```text
-elegibilidade e gate
-→ objetivo e critérios
-→ orçamento, duração e estimativa
-→ prévia e confirmação
-→ envio para avaliação
-```
+1. erro técnico temporário patrocinado;
+2. falha de atualização do anunciante;
+3. inventário patrocinado indisponível;
+4. baixa oferta orgânica;
+5. mostrar menos deste tipo;
+6. desativar oportunidades patrocinadas;
+7. ocultar campanha específica;
+8. revisar e desfazer preferências;
+9. denunciar conteúdo ou informação;
+10. contestar uso indevido de dados.
 
-Ambos os canais preservam objetivo único, critérios objetivos, conteúdo protegido excluído, estimativa sem garantia, primeiro resultado orgânico, confirmações vazias e envio sem entrega.
+A materialização demonstra:
 
-### 6.3 Gestão para computador validada
+- catálogo orgânico preservado durante falha patrocinada;
+- último estado confirmado diante de atualização não concluída;
+- erro técnico distinto de zero inventário;
+- critérios sem ampliação automática;
+- baixa oferta orgânica reduzindo publicidade;
+- preferência publicitária separada de filtro;
+- ocultação, redução e desativação com escopos próprios;
+- confirmação afirmativa e inicialmente vazia;
+- reversão independente de escolhas anteriores;
+- denúncia e contestação em fluxos distintos;
+- ausência de identificação da pessoa ao anunciante.
 
-As UXA-046 e UXA-047 validam:
+Os dez artefatos ainda não estão funcionalmente validados.
 
-```text
-campanha programada
-→ campanha ativa
-→ ativa com entrega reduzida
-→ campanha pausada
-→ alteração material
-→ encerramento e cancelamento
-```
+### 6.3 Conjunto transversal
 
-O conjunto preserva orçamento, gates, período, eventos anteriores, condição de retomada, versões, estados finais e histórico.
-
-### 6.4 Gestão móvel validada
-
-A UXA-053 reformulada e a UXA-054 validam seis referências móveis de 390 × 844 pixels com as mesmas responsabilidades funcionais, sem presumir composição visual idêntica.
-
-A validação confirma:
-
-- campanha, oportunidade, anunciante e versão preservados;
-- medição ainda não iniciada distinta de zero;
-- gate limitado com consequência explícita;
-- atividade normal distinta de entrega reduzida;
-- orçamento total, utilizado, saldo, limite e período próximos ao estado;
-- indicadores operacionais provisórios e datados;
-- entrega reduzida com causa e verificação;
-- limitação sem aceleração ou prorrogação automática;
-- pausa com causa, horário e eventos anteriores preservados;
-- novos eventos válidos interrompidos e registros tardios separados;
-- retomada indisponível até resolução e nova verificação;
-- comparação vertical entre versão aprovada e candidata;
-- nova avaliação ou descarte sem retomada automática;
-- revisão anterior a pausa, alteração e cancelamento;
-- cancelamento bloqueado até motivo e confirmações completas;
-- estados finais, reconciliação e relatório separados.
-
-### 6.5 Cartão, Lista e Mapa validados
-
-As UXA-042 a UXA-045 preservam publicidade identificada, primeiro resultado orgânico, critérios protegidos excluídos, controles reversíveis, uma única consulta territorial, marcadores próprios, localização opcional e baixa oferta orgânica reduzindo publicidade.
-
-### 6.6 Relatório agregado validado
-
-As UXA-048 e UXA-049 preservam:
-
-- quatro camadas independentes;
-- proveniência e estado;
-- orçamento total, utilizado e saldo;
-- eventos com unidades próprias;
-- ausência, supressão e zero distintos;
-- atribuição candidata agregada;
-- autorrelato não verificado e não somado;
-- reconciliação por tipo e unidade;
-- nenhuma lista individual;
-- nenhuma inferência de causalidade ou impacto.
-
-### 6.7 Conjunto transversal
-
-A UXA-050 continua autoridade dos 25 wireframes examinados naquele incremento.
-
-As UXA-051 a UXA-054 ampliam a cobertura para 36 wireframes funcionalmente validados por pacote, mas exigem autorização própria para nova validação transversal.
-
-### 6.8 Preços candidatos preservados
-
-| Modalidade | Orçamento mínimo |
-|---|---:|
-| Local | R$ 30,00 |
-| Regional | R$ 100,00 |
-| Ampliado | R$ 300,00 |
-| Gerenciado | a partir de R$ 1.000,00 |
-
-- CPM candidato: R$ 12,00 a R$ 25,00;
-- CPC candidato: R$ 0,80 a R$ 2,50;
-- cobrança simultânea por CPM e CPC proibida;
-- orçamento pré-pago, limitado e sem renovação automática por padrão.
+A UXA-050 continua autoridade dos 25 wireframes examinados naquele incremento. Os 21 artefatos posteriores ampliam a cobertura para 46, mas exigem autorização própria para nova validação transversal.
 
 ## 7. Proteções preservadas
 
 - gratuito mantém valor real;
-- catálogo público permanece acessível;
+- catálogo público e orgânico permanecem acessíveis;
 - assinatura, transação, comissão e Boost permanecem separados;
 - plano pago e publicidade não aumentam relevância;
-- compreensão inicial e Próximo Passo não alimentam segmentação;
+- conteúdo protegido não alimenta segmentação;
 - localização permanece opcional;
 - preferência negativa prevalece sobre entrega contratada;
-- ocultar publicidade não reduz catálogo orgânico;
+- ocultar ou desativar publicidade não reduz catálogo orgânico;
 - baixa oferta orgânica reduz publicidade;
-- ausência de janela de medição não é zero;
-- limitação não acelera orçamento ou amplia limite diário;
-- pausa interrompe novos eventos válidos e preserva eventos anteriores;
-- registro técnico tardio não é entrega válida;
-- alteração material não reescreve histórico;
-- cancelamento preserva eventos válidos e histórico;
-- ausência e supressão não são convertidas em zero;
-- autorrelato não é evento instrumentado;
-- atribuição candidata não é causalidade;
-- anunciante e financiador não recebem lista de visualizadores;
-- saldo não é devolução confirmada;
-- revisão não equivale a execução;
-- wireframe, validação, teste e desenvolvimento permanecem atos separados.
+- erro, ausência, zero e supressão permanecem distintos;
+- critérios não são ampliados para compensar inventário;
+- denúncia não é preferência;
+- contestação não é denúncia;
+- anunciante e financiador não recebem lista ou identidade de pessoas;
+- wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
 
 ## 8. Próximas etapas candidatas
 
-### 8.1 Estados residuais e protótipo
+### Estados residuais e protótipo
 
-1. criar estados de erro, inventário insuficiente e preferência publicitária;
-2. validar transversalmente os 36 wireframes, se priorizado;
+1. validar funcionalmente e reformular os dez estados residuais da UXA-055;
+2. validar transversalmente os 46 wireframes, se priorizado;
 3. definir protocolo de protótipo de baixa ou média fidelidade;
 4. preparar plano de teste com Pessoas, Organizações e Coletivos.
 
-### 8.2 Modelo econômico e especialidades
+### Modelo econômico e especialidades
 
 - pesquisa de disposição a pagar;
-- teste das faixas Local, Regional, Ampliado e Gerenciado;
-- calibração de CPM ou CPC;
-- política especializada de categorias, publicidade, atribuição e agregação;
-- modelo de custos, antifraude e unit economics;
-- revisões jurídica, fiscal, contábil, de privacidade e segurança;
-- eventual protocolo de teste controlado.
+- calibração de orçamento, CPM, CPC, densidade e frequência;
+- política especializada de categorias, publicidade, privacidade, denúncia, contestação, atribuição e agregação;
+- custos, antifraude e unit economics;
+- revisões jurídica, fiscal, contábil, de privacidade e segurança.
 
-### 8.3 Demais frentes preservadas
+### Demais frentes preservadas
 
-- arquitetura da página de Planos e Preços;
-- comissão e política transacional de ofertas pagas;
+- página de Planos e Preços;
+- comissão e política transacional;
 - referência móvel da Home;
 - transição para a primeira Tela Hoje;
 - reaplicação dos testes dos Resultados Empresariais;
