@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.79.0
- title: Changelog 1.79.0 — Estados Residuais do Opportunity Boost
+title: Changelog 1.79.0 — Estados Residuais do Opportunity Boost
 status: draft
 version: 1.79.0
 owner: Repositório de Conhecimento da Guivos
