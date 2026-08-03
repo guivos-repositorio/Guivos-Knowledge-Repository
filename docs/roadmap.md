@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.32.0
-title: Roadmap Arquitetural — Descoberta, Perfil Público e Participação em Coletivos Contratados
+id: ROADMAP-12.33.0
+title: Roadmap Arquitetural — Avaliação e Reputação Contratadas Funcionalmente
 status: active
-version: 12.32.0
+version: 12.33.0
 owner: Guivos
 last_updated: 2026-08-03
 supersedes_partial:
-  - ROADMAP-12.31.0
+  - ROADMAP-12.32.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -36,39 +36,30 @@ related:
   - UXA-054
   - UXA-055
   - UXA-056
+  - UXA-057
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.58
+  - M7.59
 ---
 
-# Roadmap Arquitetural — Descoberta, Perfil Público e Participação em Coletivos Contratados
+# Roadmap Arquitetural — Avaliação e Reputação Contratadas Funcionalmente
 
 ## 1. Autoridade
 
-Este documento governa a sequência global do Repositório de Conhecimento da Guivos. O estado transversal vigente é declarado pelo Registro do Estado Atual.
+Este documento governa a sequência global do Repositório. O estado transversal vigente é declarado pelo Registro do Estado Atual.
 
 ## 2. Estado atual
 
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | descoberta, perfil público e participação em Coletivos contratados | M7.58 |
-| Organizações e Coletivos | fundação, Início interno, relações e participação estruturados | UXA-014 a UXA-019; UXA-056 |
-| Perfil público e descoberta | contrato definido; wireframes não iniciados | UXA-056 |
-| Avaliação e reputação | aguardando UXA-057 | — |
-| Interações e recomendações | aguardando UXA-058 | — |
-| Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
-| Experiência do Boost | contrato e validação funcional concluídos | UXA-038; UXA-039 |
-| Configuração | computador e móvel validados e reformulados | UXA-040; UXA-041; UXA-051; UXA-052 |
-| Cartão e explicação | seis wireframes validados | UXA-042; UXA-043 |
-| Lista e Mapa patrocinados | quatro wireframes validados | UXA-044; UXA-045 |
-| Gestão | computador e móvel validados e reformulados | UXA-046; UXA-047; UXA-053; UXA-054 |
-| Relatório agregado | quatro wireframes validados | UXA-048; UXA-049 |
-| Estados residuais | dez wireframes móveis materializados; validação pendente | UXA-055 |
-| Cobertura visual do Boost | 46 materializados; 36 validados por pacote e 10 pendentes | UXA-040 a UXA-055 |
+| Marco | avaliação e reputação contratadas funcionalmente | M7.59 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
+| Coletivos | descoberta e participação contratadas | UXA-056 |
+| Avaliação e reputação | contrato funcional concluído; wireframes não iniciados | UXA-057 |
+| Opportunity Boost | 46 materializados; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
 | Protótipo, design e testes | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -81,144 +72,94 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 5. remediação do repositório concluída;
 6. Arquitetura da Experiência integrada;
 7. Home, início protegido, compreensão inicial, Tela Hoje e Mapa estruturados;
-8. experiências iniciais de Organizações e Coletivos estruturadas;
+8. experiências de Organizações e Coletivos estruturadas;
 9. planos, benefícios, limites e preços candidatos definidos;
-10. Opportunity Boost definido como add-on publicitário candidato;
-11. experiência funcional do Boost validada;
-12. configuração para computador criada e validada;
-13. cartão patrocinado e explicação criados e validados;
-14. Lista e Mapa patrocinados criados e validados;
-15. gestão para computador criada e validada;
-16. relatório agregado criado e validado;
-17. 25 wireframes validados transversalmente;
-18. configuração móvel criada e validada;
-19. gestão móvel criada e validada;
-20. estados residuais materializados em dez wireframes móveis;
-21. descoberta, perfil público, participação e `Meus Coletivos` definidos funcionalmente.
+10. Opportunity Boost definido e validado funcionalmente;
+11. configuração, cartão, território, gestão e relatório materializados e validados nos canais cobertos;
+12. 25 wireframes validados transversalmente;
+13. configuração e gestão móveis criadas e validadas;
+14. dez estados residuais do Boost materializados;
+15. descoberta, perfil público e participação em Coletivos contratados;
+16. avaliação e reputação contratadas funcionalmente.
 
-## 4. Sequência pessoal vigente
+## 4. Percurso de Coletivos
 
 ```text
-Página Inicial pública
-→ decisão voluntária de iniciar ou explorar
-→ explicação do ambiente protegido
-→ acesso, somente quando necessário
-→ escolha e rascunho mínimo
-→ revisão e autorização específica
-→ processamento temporário e interrompível
-→ compreensão inicial como hipótese
-→ decisões separadas sobre persistência e personalização
-→ Tela Hoje
-→ Hoje | Jornada | Explorar | Mapa | Eu
-```
-
-`Explorar` poderá incluir Coletivos por busca, categoria e território. Sugestões contextuais permanecerão explicadas e não substituirão a busca iniciada pela pessoa.
-
-## 5. Descoberta e participação em Coletivos
-
-### 5.1 Percurso governado
-
-```text
-busca | exploração | sugestão | recomendação | convite | link
+busca | exploração | sugestão | recomendação | convite
 → perfil público
-→ acompanhar ou compreender condições
-→ solicitar participação
-→ entrada aberta | aprovação | convite
-→ participação confirmada
+→ acompanhar ou participar
+→ solicitação e decisão
 → Início do participante
-→ pausa | saída | suspensão | remoção
+→ atividade, comunicação e relação
+→ experiência elegível
+→ avaliação voluntária
+→ apresentação agregada com limites
+→ resposta, contestação e correção
+→ pausa, saída ou continuidade
 ```
 
-### 5.2 Regras consolidadas
+A UXA-058 ainda deverá definir comunicação, recomendação e conexão.
 
-- `Coletivo` permanece entidade canônica, ainda que a apresentação utilize grupo, comunidade, movimento ou rede;
-- busca e sugestão contextual coexistem;
-- origem da descoberta permanece identificada;
-- perfil público, Início do participante e gestão são superfícies diferentes;
-- acompanhar não equivale a participar;
-- convite, recomendação e presença em atividade não criam vínculo automático;
-- entrada poderá ser aberta, aprovada ou por convite;
-- estado, papel, disponibilidade, presença e autoridade são independentes;
-- seguidores, participantes, presença em atividade e responsáveis possuem contagens separadas;
-- lista nominal não é pública por padrão;
-- cada pessoa controla a visibilidade de sua participação;
-- responsáveis acessam somente dados operacionais necessários;
-- `Meus Coletivos` consolida participações, acompanhamentos, solicitações, convites e pausas;
-- participação não cria vínculo automático com Organização apoiadora;
-- quantidade não equivale a qualidade, reputação ou avanço.
+## 5. Contrato de avaliação e reputação
 
-### 5.3 Fronteiras preservadas
+A UXA-057 decide que:
 
-A UXA-056 não cria wireframes. Avaliação e reputação serão contratadas pela UXA-057. Comunicados, discussões, perguntas, respostas, mensagens, recomendações e conexões serão contratados pela UXA-058.
+- objetos avaliáveis permanecem separados;
+- experiência específica não vira nota global automática;
+- visualização e acompanhamento não criam elegibilidade;
+- reputação é evidência contextualizada;
+- pessoas não recebem ranking ou nota pública;
+- escala semântica antecede qualquer síntese numérica;
+- estrelas universais não são padrão inicial;
+- amostra, período, distribuição e versão são obrigatórios;
+- base insuficiente é declarada;
+- alteração material separa períodos sem apagar histórico;
+- responsáveis podem responder e contestar por fundamento legítimo;
+- publicidade, plano e popularidade não compram confiança;
+- avaliação pode influenciar busca apenas de forma limitada;
+- satisfação não comprova impacto.
 
-## 6. Baseline comercial preservada
+Foram registrados 24 estados para futuros wireframes.
+
+## 6. Opportunity Boost preservado
+
+A cobertura permanece em 46 wireframes, sendo 36 validados por pacote e 10 pendentes.
+
+A UXA-050 continua autoridade transversal dos 25 artefatos examinados naquele incremento. A UXA-057 não altera esse escopo.
+
+## 7. Baseline comercial preservada
 
 - Pessoas: Free, Plus e Pro candidatos;
 - Coletivos: Livre, Gestão, Impacto e Enterprise candidatos;
 - Organizações: Business Start, Growth e Scale candidatos;
-- Boost Local: orçamento mínimo candidato de R$ 30,00;
-- Boost Regional: orçamento mínimo candidato de R$ 100,00;
-- Boost Ampliado: orçamento mínimo candidato de R$ 300,00;
-- Boost Gerenciado: a partir de R$ 1.000,00;
-- CPM candidato: R$ 12,00 a R$ 25,00;
-- CPC candidato: R$ 0,80 a R$ 2,50.
+- faixas de orçamento, CPM e CPC do Boost permanecem candidatas.
 
-Todos os valores permanecem candidatos para validação. CPM e CPC não poderão ser cobrados simultaneamente na mesma campanha.
+Pagamento não altera busca orgânica, avaliação, confiança, reputação, impacto ou recomendação.
 
-## 7. Opportunity Boost preservado
+## 8. Próximas etapas candidatas
 
-O percurso entre elegibilidade, configuração, avaliação, entrega, gestão, encerramento e relatório permanece definido pelas UXA-038 a UXA-055.
+### Coletivos e relações
 
-A UXA-055 mantém dez estados residuais materializados e ainda não validados. A UXA-050 continua autoridade transversal dos 25 wireframes examinados naquele incremento.
+1. UXA-058 — interações, recomendações e conexões;
+2. organização dos pacotes de wireframes para UXA-056 a UXA-058;
+3. validação funcional dos futuros wireframes;
+4. política estatística, jurídica e operacional de avaliações.
 
-## 8. Proteções preservadas
+### Opportunity Boost
 
-- gratuito mantém valor real;
-- catálogo público e orgânico permanecem acessíveis;
-- assinatura, transação, comissão e Boost permanecem separados;
-- plano pago e publicidade não aumentam relevância;
-- busca de Coletivos não depende exclusivamente da jornada;
-- conteúdo protegido não alimenta descoberta silenciosamente;
-- acompanhar não cria pertencimento;
-- nenhum vínculo ou papel nasce do silêncio;
-- lista nominal não é pública por padrão;
-- quantidade não é reputação ou impacto;
-- Organizações apoiadoras não recebem automaticamente dados de participantes;
-- localização permanece opcional;
-- preferência negativa prevalece sobre entrega publicitária;
-- denúncia não é preferência;
-- contestação não é denúncia;
-- wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
+1. validar funcionalmente os dez estados da UXA-055;
+2. validar transversalmente os 46 artefatos, se priorizado;
+3. definir política final de publicidade, privacidade, denúncia, atribuição e reconciliação.
 
-## 9. Próximas etapas candidatas
+### Demais frentes
 
-### Coletivos
-
-1. UXA-057 — contrato funcional de avaliação e reputação;
-2. UXA-058 — contrato funcional de interações, recomendações e conexões;
-3. wireframes de descoberta e perfil público;
-4. wireframes de participação e `Meus Coletivos`;
-5. wireframes da gestão do responsável;
-6. validação funcional dos conjuntos materializados.
-
-### Opportunity Boost e protótipo
-
-1. validar funcionalmente e reformular os dez estados residuais da UXA-055;
-2. validar transversalmente os 46 wireframes, se priorizado;
-3. definir protocolo de protótipo de baixa ou média fidelidade;
-4. preparar plano de teste com Pessoas, Organizações e Coletivos.
-
-### Demais frentes preservadas
-
-- pesquisa de disposição a pagar e calibração econômica;
-- políticas especializadas de publicidade, privacidade, denúncia, atribuição e reconciliação;
+- pesquisa de disposição a pagar;
+- calibração de preços e unit economics;
+- protocolo de protótipo e plano de teste;
 - referência móvel da Home;
 - transição para a primeira Tela Hoje;
-- reaplicação dos testes dos Resultados Empresariais;
-- preparação futura das Capacidades Empresariais.
+- reaplicação dos testes dos Resultados Empresariais.
 
-Nenhuma frente avança automaticamente.
+## 9. Regra de transição
 
-## 10. Regra de transição
-
-Contrato funcional não equivale a wireframe. Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Descoberta não equivale a participação. Cada avanço exige autorização própria.
+Contrato não equivale a wireframe. Wireframe não equivale a validação. Avaliação não equivale a recomendação. Satisfação não equivale a impacto. Reputação não equivale a legitimidade universal. Cada avanço exige autorização própria.
