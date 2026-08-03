@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Campanha pausada do Opportunity Boost em aplicativo móvel</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com pausa automática por alteração material, novos eventos interrompidos, eventos válidos anteriores preservados, período em curso e retomada indisponível.</desc>
+  <title id="title">Campanha pausada do Opportunity Boost em aplicativo móvel reformulada</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com causa e horário da pausa, novos eventos válidos interrompidos, período em curso e retomada bloqueada até nova verificação.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
@@ -8,48 +8,48 @@
   <text x="20" y="88" font-family="Arial" font-size="19" font-weight="700">Campanha pausada</text>
   <text x="370" y="87" text-anchor="end" font-family="Arial" font-size="8" font-weight="700">PAUSA AUTOMÁTICA</text>
 
-  <rect x="20" y="108" width="350" height="94" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <rect x="20" y="108" width="350" height="116" rx="8" fill="#f3f3f3" stroke="#555555"/>
   <text x="34" y="133" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · versão aprovada v1</text>
-  <text x="34" y="154" font-family="Arial" font-size="9">Causa: informação material alterada</text>
-  <text x="34" y="175" font-family="Arial" font-size="9">Novos eventos de entrega estão interrompidos.</text>
-  <text x="34" y="194" font-family="Arial" font-size="8">A pausa não cancela a campanha nem apaga histórico.</text>
+  <text x="34" y="154" font-family="Arial" font-size="9">Formação de jovens em tecnologia</text>
+  <text x="34" y="175" font-family="Arial" font-size="9">Causa: informação material alterada</text>
+  <text x="34" y="196" font-family="Arial" font-size="8">Pausa aplicada em 08/08/2026 às 14:10</text>
+  <text x="34" y="216" font-family="Arial" font-size="8">A pausa não cancela a campanha nem apaga histórico.</text>
 
-  <rect x="20" y="218" width="350" height="108" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="34" y="242" font-family="Arial" font-size="11" font-weight="700">Eventos e apuração</text>
-  <text x="34" y="265" font-family="Arial" font-size="9">Eventos válidos anteriores permanecem preservados.</text>
-  <text x="34" y="287" font-family="Arial" font-size="9">Eventos posteriores à pausa: nenhum novo registro.</text>
-  <text x="34" y="309" font-family="Arial" font-size="8">Apuração e reconciliação ocorrerão em etapa separada.</text>
+  <rect x="20" y="240" width="350" height="104" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="264" font-family="Arial" font-size="11" font-weight="700">Eventos e apuração</text>
+  <text x="34" y="287" font-family="Arial" font-size="9">Eventos válidos anteriores permanecem preservados.</text>
+  <text x="34" y="309" font-family="Arial" font-size="9">Após 14:10: nenhum novo evento válido de entrega esperado.</text>
+  <text x="34" y="331" font-family="Arial" font-size="8">Eventos técnicos tardios serão tratados separadamente, se existirem.</text>
 
-  <text x="20" y="358" font-family="Arial" font-size="12" font-weight="700">Orçamento e período</text>
-  <rect x="20" y="372" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="32" y="395" font-family="Arial" font-size="8">Utilizado</text>
-  <text x="32" y="421" font-family="Arial" font-size="14" font-weight="700">R$ 126</text>
-  <rect x="142" y="372" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="154" y="395" font-family="Arial" font-size="8">Saldo</text>
-  <text x="154" y="421" font-family="Arial" font-size="14" font-weight="700">R$ 174</text>
-  <rect x="264" y="372" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="276" y="395" font-family="Arial" font-size="8">Término</text>
-  <text x="276" y="421" font-family="Arial" font-size="12" font-weight="700">14/08</text>
+  <text x="20" y="376" font-family="Arial" font-size="12" font-weight="700">Orçamento e período</text>
+  <rect x="20" y="390" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="413" font-family="Arial" font-size="8">Utilizado</text>
+  <text x="32" y="439" font-family="Arial" font-size="14" font-weight="700">R$ 126</text>
+  <rect x="142" y="390" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="154" y="413" font-family="Arial" font-size="8">Saldo</text>
+  <text x="154" y="439" font-family="Arial" font-size="14" font-weight="700">R$ 174</text>
+  <rect x="264" y="390" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="276" y="413" font-family="Arial" font-size="8">Término</text>
+  <text x="276" y="439" font-family="Arial" font-size="12" font-weight="700">14/08</text>
 
-  <rect x="20" y="454" width="350" height="118" rx="8" fill="#f3f3f3" stroke="#555555"/>
-  <text x="34" y="478" font-family="Arial" font-size="11" font-weight="700">Condição para solicitar retomada</text>
-  <text x="34" y="501" font-family="Arial" font-size="9">1. revisar a alteração material;</text>
-  <text x="34" y="523" font-family="Arial" font-size="9">2. enviar para nova avaliação ou descartar;</text>
-  <text x="34" y="545" font-family="Arial" font-size="9">3. verificar novamente os gates vigentes.</text>
-  <text x="34" y="565" font-family="Arial" font-size="8">O período continua e poderá expirar durante a pausa.</text>
+  <rect x="20" y="472" width="350" height="122" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <text x="34" y="496" font-family="Arial" font-size="11" font-weight="700">Condição para solicitar retomada</text>
+  <text x="34" y="519" font-family="Arial" font-size="9">1. resolver ou descartar a alteração material;</text>
+  <text x="34" y="541" font-family="Arial" font-size="9">2. confirmar que a versão aplicável continua válida;</text>
+  <text x="34" y="563" font-family="Arial" font-size="9">3. verificar novamente gates, período e política.</text>
+  <text x="34" y="585" font-family="Arial" font-size="8">O período continua e poderá expirar durante a pausa.</text>
 
-  <rect x="20" y="590" width="350" height="48" rx="8" fill="#dddddd" stroke="#777777"/>
-  <text x="195" y="619" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700">RETOMAR CAMPANHA · INDISPONÍVEL</text>
-  <text x="20" y="658" font-family="Arial" font-size="8">Motivo: alteração material ainda não resolvida e verificada.</text>
+  <rect x="20" y="612" width="350" height="48" rx="8" fill="#dddddd" stroke="#777777"/>
+  <text x="195" y="641" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700">SOLICITAR RETOMADA · INDISPONÍVEL</text>
+  <text x="20" y="680" font-family="Arial" font-size="8">Motivo: alteração ainda não resolvida e gates não verificados.</text>
 
-  <rect x="20" y="678" width="350" height="48" rx="8" fill="#111111"/>
-  <text x="195" y="707" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">REVISAR ALTERAÇÃO MATERIAL</text>
-  <rect x="20" y="738" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="104" y="765" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">ABRIR HISTÓRICO</text>
-  <rect x="202" y="738" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="286" y="765" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">REVISAR ENCERRAMENTO</text>
+  <rect x="20" y="700" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="729" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">REVISAR ALTERAÇÃO MATERIAL</text>
+  <rect x="20" y="760" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="104" y="787" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">ABRIR HISTÓRICO</text>
+  <rect x="202" y="760" width="168" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="286" y="787" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">REVISAR ENCERRAMENTO</text>
 
-  <text x="20" y="810" font-family="Arial" font-size="8">Pausa voluntária, pausa automática e suspensão por política têm efeitos próprios.</text>
-  <text x="20" y="826" font-family="Arial" font-size="8">Nenhuma devolução, crédito ou retomada automática é prometida.</text>
-  <text x="20" y="840" font-family="Arial" font-size="8">Gestão móvel materializada; validação funcional pendente.</text>
+  <text x="20" y="824" font-family="Arial" font-size="8">Pausa voluntária, automática e suspensão por política têm efeitos próprios.</text>
+  <text x="20" y="840" font-family="Arial" font-size="8">Gestão móvel reformulada pela UXA-054.</text>
 </svg>

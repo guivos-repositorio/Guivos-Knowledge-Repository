@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.34.0
+version: 0.35.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-02
 parent: UXA-000
@@ -50,6 +50,7 @@ related:
   - UXA-051
   - UXA-052
   - UXA-053
+  - UXA-054
   - PAS-001
 normative: false
 ---
@@ -108,7 +109,8 @@ Página Inicial pública
 26. validação transversal de 25 wireframes — UXA-050;
 27. configuração móvel do anunciante — UXA-051;
 28. validação e reformulação da configuração móvel — UXA-052;
-29. gestão móvel da campanha ativa — UXA-053.
+29. gestão móvel da campanha ativa — UXA-053;
+30. validação e reformulação da gestão móvel — UXA-054.
 
 ## 4. Natureza dos artefatos
 
@@ -238,23 +240,27 @@ A UXA-047 confirmou:
 - histórico preservado;
 - saldo como candidato, não devolução confirmada.
 
-### 5.9 Opportunity Boost — gestão móvel pendente de validação
+### 5.9 Opportunity Boost — gestão móvel validada
 
-A UXA-053 deverá ser validada quanto a:
+A UXA-054 confirmou, após reformulação:
 
-- seis telas preservarem campanha e versão aprovada;
-- o estado atual anteceder orçamento e indicadores;
-- programação não parecer atividade;
-- orçamento reservado, utilizado e saldo serem compreensíveis;
-- indicadores operacionais parecerem provisórios e datados;
-- entrega reduzida ser distinguível de pausa;
-- limite diário e período permanecerem protegidos;
-- pausa interromper novos eventos sem parecer cancelamento;
-- retomada indisponível explicar a causa;
-- comparação de versões permanecer legível em tela pequena;
-- nova avaliação e descarte não sugerirem retomada;
-- cancelamento exigir motivo e confirmações independentes;
-- estados finais, reconciliação e relatório permanecerem separados.
+- seis telas preservando campanha, oportunidade, anunciante e versão;
+- programação distinta de atividade;
+- ausência de janela de medição distinta de zero;
+- consequência explícita do gate atendido com limite;
+- estado ativo normal sem limitação corrente;
+- entrega reduzida com causa e verificação datadas;
+- orçamento total, utilizado, saldo, limite e período compreensíveis;
+- limitação sem aceleração ou prorrogação automática;
+- pausa com causa e horário;
+- novos eventos válidos interrompidos e registros técnicos tardios separados;
+- retomada indisponível com causa explícita;
+- comparação vertical de versões em tela pequena;
+- versão aprovada em somente leitura e candidata não aprovada;
+- nova avaliação e descarte sem retomada implícita;
+- revisão de pausa distinta de execução;
+- cancelamento exigindo motivo e confirmações independentes;
+- estados finais, reconciliação e relatório separados.
 
 ### 5.10 Opportunity Boost — relatório agregado validado
 
@@ -288,7 +294,7 @@ A UXA-050 confirma, para os 25 artefatos examinados naquele incremento:
 - orçamento, saldo e reconciliação sem promessa financeira;
 - histórico e regra candidata preservados.
 
-Os seis artefatos da UXA-053 não integram retrospectivamente essa validação transversal.
+Os onze artefatos móveis criados pelas UXA-051 e UXA-053 não integram retrospectivamente essa validação transversal.
 
 ## 6. Convenções de baixa fidelidade
 
@@ -305,7 +311,8 @@ Os seis artefatos da UXA-053 não integram retrospectivamente essa validação t
 | borda tracejada | limitação, regra de exceção ou aviso |
 | selo textual anterior | natureza patrocinada antes do conteúdo |
 | ação indisponível textual | condição ainda não atendida |
-| comparação lado a lado | versão aprovada e versão candidata |
+| comparação lado a lado | versões em tela ampla quando legível |
+| comparação vertical | versões em tela móvel ou estreita |
 | camada numerada | entrega, interação, atribuição candidata ou autorrelato |
 | rótulo de proveniência | instrumentado, calculado, declarado ou indisponível |
 | progresso móvel | posição no fluxo sem autorização automática |
@@ -364,41 +371,37 @@ oportunidade aprovada e ativa
 | Cartão e explicação | UXA-042; UXA-043 | experiência da pessoa | seis SVGs e validação |
 | Lista e Mapa patrocinados | UXA-044; UXA-045 | Mapa e Lista | quatro SVGs e validação |
 | Gestão para computador | UXA-046; UXA-047 | painel institucional | seis SVGs e validação |
-| Gestão móvel | UXA-053 | painel institucional móvel | seis SVGs aguardando validação |
+| Gestão móvel | UXA-053; UXA-054 | painel institucional móvel | seis SVGs reformulados e validados |
 | Relatório agregado | UXA-048; UXA-049 | painel institucional | quatro SVGs e validação |
 | Validação transversal | UXA-050 | anunciante e participante | consolidação de 25 wireframes |
 
 ## 10. Resultados validados e materializados
 
-A UXA-038 a UXA-052 demonstram contrato, configuração, entrega, explicação, Lista, Mapa, gestão desktop, relatório e configuração móvel funcionalmente validados em seus respectivos pacotes.
-
-A UXA-053 amplia a cobertura para seis estados móveis de gestão, ainda sem validação funcional própria.
+A UXA-038 a UXA-054 demonstram contrato, configuração, entrega, explicação, Lista, Mapa, gestão desktop e móvel e relatório funcionalmente validados em seus respectivos pacotes.
 
 A cobertura total do Opportunity Boost passa a:
 
 - 36 wireframes materializados;
-- 30 wireframes funcionalmente validados por pacote;
-- 6 wireframes de gestão móvel pendentes;
+- 36 wireframes funcionalmente validados por pacote;
 - 25 artefatos preservados sob a autoridade transversal histórica da UXA-050.
 
 ## 11. Limites
 
 Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de atribuição, agregação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
 
-Validação da gestão móvel, estados completos de erro, inventário insuficiente e preferência publicitária permanecem não concluídos.
+Estados completos de erro, inventário insuficiente e preferência publicitária permanecem não concluídos.
 
 ## 12. Próximos pontos de decisão
 
 Os próximos pontos exigem autorizações separadas:
 
-1. validar funcionalmente e reformular os seis wireframes móveis da UXA-053;
-2. criar estados de erro, inventário insuficiente e preferência publicitária;
-3. validar transversalmente os 36 artefatos, se priorizado;
-4. definir protocolo de protótipo de baixa ou média fidelidade;
-5. preparar plano de teste com Pessoas, Organizações e Coletivos;
-6. criar a referência móvel da Home;
-7. validar a transição para a primeira Tela Hoje;
-8. criar referência do início protegido e da compreensão para computador;
-9. criar referência para tablet, caso priorizada.
+1. criar estados de erro, inventário insuficiente e preferência publicitária;
+2. validar transversalmente os 36 artefatos, se priorizado;
+3. definir protocolo de protótipo de baixa ou média fidelidade;
+4. preparar plano de teste com Pessoas, Organizações e Coletivos;
+5. criar a referência móvel da Home;
+6. validar a transição para a primeira Tela Hoje;
+7. criar referência do início protegido e da compreensão para computador;
+8. criar referência para tablet, caso priorizada.
 
 Nenhuma etapa posterior é iniciada automaticamente.

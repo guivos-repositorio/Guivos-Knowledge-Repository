@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Alteração material do Opportunity Boost em aplicativo móvel</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com comparação entre versão aprovada e versão candidata, entrega pausada, eventos anteriores preservados e decisões sem retomada automática.</desc>
+  <title id="title">Alteração material do Opportunity Boost em aplicativo móvel reformulada</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com comparação vertical entre versão aprovada e candidata, orçamento preservado, entrega pausada e decisões sem retomada automática.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
@@ -8,51 +8,44 @@
   <text x="20" y="88" font-family="Arial" font-size="18" font-weight="700">Alteração material</text>
   <text x="370" y="87" text-anchor="end" font-family="Arial" font-size="8" font-weight="700">ENTREGA PAUSADA</text>
 
-  <rect x="20" y="108" width="350" height="78" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <rect x="20" y="108" width="350" height="96" rx="8" fill="#f3f3f3" stroke="#555555"/>
   <text x="34" y="133" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · aprovada v1 · candidata v2</text>
-  <text x="34" y="154" font-family="Arial" font-size="9">Mudança poderá alterar decisão, elegibilidade ou capacidade.</text>
-  <text x="34" y="174" font-family="Arial" font-size="8">Novos eventos permanecem interrompidos.</text>
+  <text x="34" y="154" font-family="Arial" font-size="9">Formação de jovens em tecnologia</text>
+  <text x="34" y="175" font-family="Arial" font-size="9">Mudança poderá alterar decisão, elegibilidade ou capacidade.</text>
+  <text x="34" y="195" font-family="Arial" font-size="8">Novos eventos permanecem interrompidos.</text>
 
-  <text x="20" y="218" font-family="Arial" font-size="12" font-weight="700">Comparação obrigatória</text>
-  <rect x="20" y="232" width="168" height="184" rx="8" fill="#ffffff" stroke="#777777"/>
-  <text x="34" y="256" font-family="Arial" font-size="10" font-weight="700">VERSÃO APROVADA v1</text>
-  <text x="34" y="282" font-family="Arial" font-size="8">Local</text>
-  <text x="34" y="299" font-family="Arial" font-size="9" font-weight="700">Centro · Belo Horizonte</text>
-  <text x="34" y="326" font-family="Arial" font-size="8">Data</text>
-  <text x="34" y="343" font-family="Arial" font-size="9" font-weight="700">10/08/2026</text>
-  <text x="34" y="370" font-family="Arial" font-size="8">Capacidade</text>
-  <text x="34" y="387" font-family="Arial" font-size="9" font-weight="700">40 vagas</text>
-  <text x="34" y="407" font-family="Arial" font-size="8">Vinculada aos eventos anteriores.</text>
+  <text x="20" y="236" font-family="Arial" font-size="12" font-weight="700">Comparação obrigatória</text>
+  <rect x="20" y="250" width="350" height="116" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="34" y="274" font-family="Arial" font-size="10" font-weight="700">VERSÃO APROVADA v1 · SOMENTE LEITURA</text>
+  <text x="34" y="298" font-family="Arial" font-size="9">Local: Centro · Belo Horizonte</text>
+  <text x="34" y="320" font-family="Arial" font-size="9">Data: 10/08/2026 · Capacidade: 40 vagas</text>
+  <text x="34" y="342" font-family="Arial" font-size="8">Vinculada aos eventos válidos anteriores.</text>
+  <text x="34" y="359" font-family="Arial" font-size="8">Não será reescrita pela candidata.</text>
 
-  <rect x="202" y="232" width="168" height="184" rx="8" fill="#f3f3f3" stroke="#555555" stroke-width="2"/>
-  <text x="216" y="256" font-family="Arial" font-size="10" font-weight="700">VERSÃO CANDIDATA v2</text>
-  <text x="216" y="282" font-family="Arial" font-size="8">Local · ALTERADO</text>
-  <text x="216" y="299" font-family="Arial" font-size="9" font-weight="700">Venda Nova · BH</text>
-  <text x="216" y="326" font-family="Arial" font-size="8">Data · ALTERADA</text>
-  <text x="216" y="343" font-family="Arial" font-size="9" font-weight="700">17/08/2026</text>
-  <text x="216" y="370" font-family="Arial" font-size="8">Capacidade · ALTERADA</text>
-  <text x="216" y="387" font-family="Arial" font-size="9" font-weight="700">25 vagas</text>
-  <text x="216" y="407" font-family="Arial" font-size="8">Ainda não aprovada para entrega.</text>
+  <rect x="20" y="382" width="350" height="132" rx="8" fill="#f3f3f3" stroke="#555555" stroke-width="2"/>
+  <text x="34" y="406" font-family="Arial" font-size="10" font-weight="700">VERSÃO CANDIDATA v2 · AINDA NÃO APROVADA</text>
+  <text x="34" y="430" font-family="Arial" font-size="9">Local alterado: Venda Nova · Belo Horizonte</text>
+  <text x="34" y="452" font-family="Arial" font-size="9">Data alterada: 17/08/2026</text>
+  <text x="34" y="474" font-family="Arial" font-size="9">Capacidade alterada: 25 vagas</text>
+  <text x="34" y="496" font-family="Arial" font-size="8">Estimativas futuras exigem recálculo após decisão.</text>
 
-  <rect x="20" y="432" width="350" height="118" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="34" y="456" font-family="Arial" font-size="11" font-weight="700">Efeitos preservados</text>
-  <text x="34" y="479" font-family="Arial" font-size="9">• eventos válidos anteriores permanecem vinculados à v1</text>
-  <text x="34" y="501" font-family="Arial" font-size="9">• orçamento utilizado permanece registrado</text>
-  <text x="34" y="523" font-family="Arial" font-size="9">• estimativas serão recalculadas somente para entrega futura</text>
-  <text x="34" y="543" font-family="Arial" font-size="8">Nenhuma decisão abaixo retoma a campanha automaticamente.</text>
+  <rect x="20" y="530" width="350" height="86" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="554" font-family="Arial" font-size="11" font-weight="700">Efeitos preservados</text>
+  <text x="34" y="577" font-family="Arial" font-size="9">Utilizado: R$ 126 · saldo: R$ 174</text>
+  <text x="34" y="599" font-family="Arial" font-size="9">Histórico e eventos anteriores permanecem vinculados à v1.</text>
+  <text x="34" y="612" font-family="Arial" font-size="8">Nenhuma decisão abaixo retoma a campanha automaticamente.</text>
 
-  <rect x="20" y="568" width="350" height="48" rx="8" fill="#111111"/>
-  <text x="195" y="597" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">ENVIAR PARA NOVA AVALIAÇÃO</text>
-  <rect x="20" y="628" width="350" height="48" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="657" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">DESCARTAR E REVISAR VERSÃO APROVADA</text>
+  <rect x="20" y="634" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="663" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">REVISAR ENVIO PARA NOVA AVALIAÇÃO</text>
+  <rect x="20" y="694" width="350" height="48" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="715" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">DESCARTAR CANDIDATA E REVISAR v1</text>
+  <text x="195" y="731" text-anchor="middle" font-family="Arial" font-size="8">sem retomada automática</text>
 
-  <rect x="20" y="694" width="350" height="76" rx="8" fill="#f3f3f3" stroke="#777777" stroke-dasharray="5 4"/>
-  <text x="34" y="718" font-family="Arial" font-size="10" font-weight="700">Após qualquer decisão</text>
-  <text x="34" y="740" font-family="Arial" font-size="9">Gates serão verificados novamente antes de eventual retomada.</text>
-  <text x="34" y="760" font-family="Arial" font-size="8">Descartar não apaga a v2 nem presume que a v1 ainda seja válida.</text>
+  <rect x="20" y="758" width="350" height="52" rx="8" fill="#f3f3f3" stroke="#777777" stroke-dasharray="5 4"/>
+  <text x="34" y="780" font-family="Arial" font-size="9">Após a decisão: verificar versão aplicável, gates, período e política.</text>
+  <text x="34" y="799" font-family="Arial" font-size="8">Nova avaliação não equivale a aprovação, programação ou entrega.</text>
 
-  <text x="20" y="798" font-family="Arial" font-size="9" text-decoration="underline">Abrir histórico de versões</text>
-  <text x="370" y="798" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Revisar orçamento</text>
-  <text x="20" y="824" font-family="Arial" font-size="8">Nova avaliação não equivale a aprovação, programação ou entrega.</text>
-  <text x="20" y="840" font-family="Arial" font-size="8">Gestão móvel materializada; validação funcional pendente.</text>
+  <text x="20" y="826" font-family="Arial" font-size="9" text-decoration="underline">Abrir histórico de versões</text>
+  <text x="370" y="826" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Revisar orçamento</text>
+  <text x="20" y="840" font-family="Arial" font-size="8">Gestão móvel reformulada pela UXA-054.</text>
 </svg>

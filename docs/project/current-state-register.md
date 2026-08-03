@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.82.0
+version: 1.83.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-02
 depends_on:
@@ -30,6 +30,7 @@ related:
   - UXA-051
   - UXA-052
   - UXA-053
+  - UXA-054
   - GEM-004-A1
   - GEM-004-A2
   - GEM-007-A1
@@ -40,8 +41,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.29.0
-  - M7.55
+  - ROADMAP-12.30.0
+  - M7.56
 normative: true
 ---
 
@@ -56,12 +57,12 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | gestão móvel da campanha ativa do Opportunity Boost materializada | M7.55; UXA-053 |
+| Marco atual | gestão móvel da campanha ativa do Opportunity Boost funcionalmente validada e reformulada | M7.56; UXA-053; UXA-054 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-053 | UXA-000 a UXA-053 |
+| Arquitetura da Experiência | ativa até UXA-054 | UXA-000 a UXA-054 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
@@ -78,10 +79,10 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Cartão e explicação | seis wireframes móveis e para computador validados e reformulados | UXA-042; UXA-043 |
 | Lista e Mapa patrocinados | quatro wireframes móveis e para computador validados e reformulados | UXA-044; UXA-045 |
 | Gestão para computador | seis wireframes funcionalmente validados e reformulados | UXA-046; UXA-047 |
-| Gestão móvel | seis wireframes materializados; validação funcional pendente | UXA-053 |
+| Gestão móvel | seis wireframes funcionalmente validados e reformulados | UXA-053; UXA-054 |
 | Relatório agregado | quatro wireframes para computador e móvel validados e reformulados | UXA-048; UXA-049 |
 | Conjunto transversal | 25 wireframes examinados e validados pela UXA-050 | UXA-050 |
-| Cobertura visual do Boost | 36 wireframes materializados; 30 validados por pacote e 6 móveis pendentes | UXA-040 a UXA-053 |
+| Cobertura visual do Boost | 36 wireframes materializados e funcionalmente validados por pacote | UXA-040 a UXA-054 |
 | Preço do Boost | faixas de orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | papel econômico ampliado e Opportunity Boost registrado | GPA-007; GEM-007-ADS-ECONOMIC-ROLE-001 |
 | Protótipo, design e testes | não iniciados | — |
@@ -220,9 +221,9 @@ A UXA-046 reformulada e a UXA-047 validam:
 
 O conjunto demonstra programação sem entrega garantida, indicadores datados, limitação sem aceleração, pausa com eventos anteriores preservados, retomada condicionada, comparação de versões, cancelamento com gate completo e estados finais separados.
 
-### 6.6 Gestão móvel materializada
+### 6.6 Gestão móvel validada
 
-A UXA-053 cria seis referências móveis equivalentes em responsabilidade, sem presumir composição idêntica:
+A UXA-053 reformulada e a UXA-054 validam seis referências móveis equivalentes em responsabilidade, sem presumir composição idêntica:
 
 1. campanha programada;
 2. campanha ativa;
@@ -231,22 +232,26 @@ A UXA-053 cria seis referências móveis equivalentes em responsabilidade, sem p
 5. alteração material;
 6. encerramento e cancelamento.
 
-O conjunto móvel demonstra:
+O conjunto móvel validado demonstra:
 
-- estado textual e versão aprovada;
-- orçamento, saldo e período próximos ao estado;
+- identidade da campanha, oportunidade, anunciante e versão;
+- medição ainda não iniciada distinta de zero;
+- consequência explícita do gate atendido com limite;
+- atividade normal distinta de entrega reduzida;
+- orçamento total, utilizado, saldo, limite e período próximos ao estado;
 - indicadores operacionais provisórios com recorte temporal;
-- entrega reduzida distinta de pausa;
+- entrega reduzida com causa e horário de verificação;
 - limite diário e período preservados durante limitação;
-- novos eventos interrompidos durante pausa;
+- pausa com causa e horário de aplicação;
+- novos eventos válidos interrompidos e registros técnicos tardios separados;
 - eventos válidos anteriores preservados;
 - retomada indisponível com causa visível;
-- versão aprovada e candidata comparadas;
+- versão aprovada em somente leitura e candidata não aprovada;
+- comparação vertical legível em tela estreita;
 - nova avaliação e descarte sem retomada automática;
+- revisão anterior a pausa, alteração e cancelamento;
 - cancelamento bloqueado até motivo e confirmações completas;
 - estados finais, reconciliação e relatório separados.
-
-Os seis artefatos móveis ainda exigem validação funcional e eventual reformulação.
 
 ### 6.7 Relatório agregado validado
 
@@ -267,7 +272,7 @@ A UXA-048 reformulada e a UXA-049 validam quatro referências com:
 
 A UXA-050 permanece autoridade da validação transversal dos 25 wireframes examinados naquele incremento.
 
-A UXA-051, UXA-052 e UXA-053 ampliam a cobertura para 36 artefatos, sem alterar retrospectivamente o escopo da UXA-050.
+A UXA-051 a UXA-054 ampliam a cobertura para 36 artefatos funcionalmente validados por pacote, sem alterar retrospectivamente o escopo da UXA-050.
 
 ## 7. Proteções vigentes
 
@@ -281,8 +286,10 @@ A UXA-051, UXA-052 e UXA-053 ampliam a cobertura para 36 artefatos, sem alterar 
 - baixa oferta orgânica reduz publicidade;
 - marcador patrocinado não encobre oportunidade orgânica;
 - localização permanece opcional;
+- ausência de janela de medição não é apresentada como zero;
 - limitação não acelera orçamento ou amplia limite diário;
-- pausa interrompe novos eventos e preserva eventos anteriores;
+- pausa interrompe novos eventos válidos e preserva eventos anteriores;
+- registro técnico tardio não é convertido em entrega válida;
 - alteração material não reescreve eventos anteriores;
 - cancelamento preserva eventos válidos e histórico;
 - origem orgânica não é apagada pelo relatório;
@@ -292,13 +299,13 @@ A UXA-051, UXA-052 e UXA-053 ampliam a cobertura para 36 artefatos, sem alterar 
 - anunciante e financiador não recebem lista de visualizadores;
 - saldo não é apresentado como devolução confirmada;
 - configuração e gestão móveis não selecionam decisão ou confirmação automaticamente;
+- revisão não equivale a execução;
 - Engenharia de Produto permanece pausada.
 
 ## 8. Limites vigentes
 
 Não foram concluídos:
 
-- validação funcional dos seis wireframes móveis da UXA-053;
 - estados completos de erro técnico;
 - inventário insuficiente operacional;
 - experiência detalhada de preferência publicitária;
@@ -323,12 +330,11 @@ Não foram concluídos:
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os seis wireframes móveis da UXA-053;
-2. criar estados de erro, inventário insuficiente e preferência publicitária;
-3. validar transversalmente os 36 wireframes, se priorizado;
-4. definir protocolo de protótipo de baixa ou média fidelidade;
-5. preparar plano de teste com Pessoas, Organizações e Coletivos;
-6. validar preços, orçamentos e disposição a pagar;
-7. definir política especializada de publicidade, atribuição, agregação e categorias;
-8. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
-9. retomar independentemente os testes dos Resultados Empresariais.
+1. criar estados de erro, inventário insuficiente e preferência publicitária;
+2. validar transversalmente os 36 wireframes, se priorizado;
+3. definir protocolo de protótipo de baixa ou média fidelidade;
+4. preparar plano de teste com Pessoas, Organizações e Coletivos;
+5. validar preços, orçamentos e disposição a pagar;
+6. definir política especializada de publicidade, atribuição, agregação e categorias;
+7. retomar a referência móvel da Home e a transição para a primeira Tela Hoje;
+8. retomar independentemente os testes dos Resultados Empresariais.
