@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.50.0
+version: 0.51.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-02
+last_updated: 2026-08-03
 related:
   - PAS-001
   - GLPA-001
@@ -64,9 +64,10 @@ related:
   - UXA-052
   - UXA-053
   - UXA-054
+  - UXA-055
   - GEM-007-A1
   - GEM-010-A2
-  - M7.56
+  - M7.57
 normative: false
 ---
 
@@ -112,7 +113,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial | [contrato transversal](uxa-011-a1-moment-progress-and-next-step-explainability.md), [wireframe](uxa-036-initial-understanding-low-fidelity-wireframe.md) e [validação](uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md) |
 | Tela Hoje | UXA-002, UXA-006 e UXA-010 |
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
-| Opportunity Boost | [contrato](uxa-038-opportunity-boost-functional-experience-contract.md), [validação](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [configuração desktop](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação desktop](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md), [Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md), [validação territorial](uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md), [gestão desktop](uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md), [validação da gestão desktop](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md), [relatório agregado](uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md), [validação do relatório](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md), [validação transversal](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md), [configuração móvel](uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md), [validação da configuração móvel](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md), [gestão móvel](uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md) e [validação da gestão móvel](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md) |
+| Opportunity Boost | [contrato](uxa-038-opportunity-boost-functional-experience-contract.md), [validação](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [configuração desktop](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação desktop](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md), [Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md), [validação territorial](uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md), [gestão desktop](uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md), [validação da gestão desktop](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md), [relatório agregado](uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md), [validação do relatório](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md), [validação transversal](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md), [configuração móvel](uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md), [validação da configuração móvel](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md), [gestão móvel](uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md), [validação da gestão móvel](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md) e [estados residuais](uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
 | Organizações e Coletivos | UXA-014 a UXA-019 |
 
@@ -120,7 +121,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até a validação da gestão móvel do Opportunity Boost | UXA-000 a UXA-054 |
+| Arquitetura da Experiência | ativa até os estados residuais do Opportunity Boost | UXA-000 a UXA-055 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -128,7 +129,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados orgânicos e patrocinados móveis e desktop funcionalmente validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
-| Opportunity Boost | 36 wireframes materializados e funcionalmente validados por pacote | UXA-038 a UXA-054 |
+| Opportunity Boost | 46 wireframes materializados; 36 validados por pacote e 10 estados residuais aguardando validação | UXA-038 a UXA-055 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Início protegido e compreensão
@@ -169,32 +170,36 @@ A UXA-050 valida transversalmente 25 wireframes e consolida identidade, versão 
 
 A UXA-051 reformulada e a UXA-052 validam cinco referências móveis da configuração do anunciante.
 
-A UXA-053 reformulada e a UXA-054 validam seis referências móveis de gestão:
+A UXA-053 reformulada e a UXA-054 validam seis referências móveis de gestão.
 
-1. campanha programada;
-2. campanha ativa;
-3. campanha ativa com entrega reduzida;
-4. campanha pausada;
-5. alteração material;
-6. encerramento e cancelamento.
+A UXA-055 materializa dez estados residuais móveis:
 
-O conjunto móvel de gestão validado preserva:
+1. erro técnico temporário patrocinado;
+2. falha de atualização do anunciante;
+3. inventário patrocinado indisponível;
+4. baixa oferta orgânica;
+5. mostrar menos deste tipo;
+6. desativar oportunidades patrocinadas;
+7. ocultar campanha específica;
+8. revisar e desfazer preferências;
+9. denunciar conteúdo ou informação;
+10. contestar uso indevido de dados.
 
-- identidade da campanha, oportunidade, anunciante e versão;
-- programação sem ativação garantida;
-- medição ainda não iniciada distinta de zero;
-- consequência explícita do gate atendido com limite;
-- atividade normal distinta de entrega reduzida;
-- orçamento, saldo, limite e período junto do estado;
-- indicadores operacionais datados e separados do relatório;
-- entrega reduzida com causa e verificação;
-- pausa com horário, eventos anteriores preservados e registros tardios separados;
-- retomada condicionada e explicável;
-- comparação vertical entre versão aprovada e candidata;
-- alteração material sem reescrita histórica;
-- revisão anterior a pausa, alteração e cancelamento;
-- cancelamento com motivo e confirmações independentes;
-- estados finais e reconciliação separados.
+Os estados residuais preservam:
+
+- erro técnico distinto de zero inventário;
+- último estado confirmado diante de atualização não concluída;
+- catálogo orgânico acessível durante falha patrocinada;
+- critérios sem ampliação automática;
+- baixa oferta orgânica reduzindo publicidade;
+- filtros de oportunidades separados de preferências publicitárias;
+- ocultação, redução e desativação com escopos próprios;
+- confirmações inicialmente vazias;
+- escolhas revisáveis e reversíveis;
+- denúncia separada de contestação de dados;
+- identidade, preferência e contestação da pessoa não reveladas ao anunciante.
+
+Os dez artefatos ainda exigem validação funcional especializada.
 
 O conjunto completo demonstra:
 
@@ -205,16 +210,17 @@ O conjunto completo demonstra:
 - limitação, pausa, cancelamento e reconciliação possuem efeitos distintos;
 - preferência negativa prevalece sobre entrega contratada;
 - ocultar publicidade não reduz catálogo orgânico;
+- baixa oferta orgânica reduz publicidade;
+- erro, ausência, zero e supressão permanecem distintos;
 - anunciante e financiador não recebem lista de pessoas;
 - atribuição candidata não é causalidade;
 - autorrelato não é evento instrumentado;
-- ausência ou supressão de dado não é zero;
 - saldo não é devolução confirmada;
 - conversão não comprova impacto humano.
 
 Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
 
-A UXA-050 permanece autoridade transversal dos 25 artefatos examinados naquele incremento. A UXA-054 não amplia retroativamente esse escopo.
+A UXA-050 permanece autoridade transversal dos 25 artefatos examinados naquele incremento. A UXA-055 não amplia retroativamente esse escopo.
 
 ## 10. Gate de persistência e personalização
 
@@ -232,11 +238,11 @@ Falha material impede avanço para wireframe, protótipo, design, teste, especif
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. criar estados de erro, inventário insuficiente e preferência publicitária;
-2. validar transversalmente os 36 wireframes, se priorizado;
+1. validar funcionalmente e reformular os dez estados residuais da UXA-055;
+2. validar transversalmente os 46 wireframes, se priorizado;
 3. definir protocolo de protótipo de baixa ou média fidelidade;
 4. preparar plano de teste com Pessoas, Organizações e Coletivos;
-5. desenvolver política especializada de publicidade, atribuição, agregação e reconciliação;
+5. desenvolver políticas especializadas de publicidade, privacidade, denúncia, atribuição e reconciliação;
 6. validar preços, orçamento, CPM, CPC, densidade e frequência;
 7. criar a referência móvel da Home;
 8. validar a transição para a primeira Tela Hoje.
