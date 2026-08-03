@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.51.0
+version: 0.52.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-03
 related:
@@ -65,9 +65,10 @@ related:
   - UXA-053
   - UXA-054
   - UXA-055
+  - UXA-056
   - GEM-007-A1
   - GEM-010-A2
-  - M7.57
+  - M7.58
 normative: false
 ---
 
@@ -115,13 +116,13 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Explorar e Mapa | UXA-004 e UXA-024 a UXA-033 |
 | Opportunity Boost | [contrato](uxa-038-opportunity-boost-functional-experience-contract.md), [validação](uxa-039-opportunity-boost-functional-validation-and-reformulation.md), [configuração desktop](uxa-040-opportunity-boost-advertiser-flow-low-fidelity-wireframes.md), [validação desktop](uxa-041-opportunity-boost-advertiser-wireframe-functional-validation-and-reformulation.md), [cartão e explicação](uxa-042-opportunity-boost-sponsored-card-and-explanation-low-fidelity-wireframes.md), [validação do cartão](uxa-043-opportunity-boost-sponsored-card-functional-validation-and-reformulation.md), [Lista e Mapa](uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md), [validação territorial](uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md), [gestão desktop](uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md), [validação da gestão desktop](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md), [relatório agregado](uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md), [validação do relatório](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md), [validação transversal](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md), [configuração móvel](uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md), [validação da configuração móvel](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md), [gestão móvel](uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md), [validação da gestão móvel](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md) e [estados residuais](uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md) |
 | Oportunidades | UXA-007, UXA-008, UXA-012 e UXA-013 |
-| Organizações e Coletivos | UXA-014 a UXA-019 |
+| Organizações e Coletivos | UXA-014 a UXA-019 e [descoberta, perfil público e participação](uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md) |
 
 ## 5. Estado atual
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até os estados residuais do Opportunity Boost | UXA-000 a UXA-055 |
+| Arquitetura da Experiência | ativa até o contrato de participação em Coletivos | UXA-000 a UXA-056 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Página Inicial pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -129,6 +130,7 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados orgânicos e patrocinados móveis e desktop funcionalmente validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
+| Coletivos | descoberta, perfil público e participação contratados; novos wireframes não iniciados | UXA-014 a UXA-019; UXA-056 |
 | Opportunity Boost | 46 wireframes materializados; 36 validados por pacote e 10 estados residuais aguardando validação | UXA-038 a UXA-055 |
 | Protótipo, design e testes | não iniciados | — |
 
@@ -222,29 +224,61 @@ Pagamento não altera razão orgânica, confiança, impacto ou recomendação.
 
 A UXA-050 permanece autoridade transversal dos 25 artefatos examinados naquele incremento. A UXA-055 não amplia retroativamente esse escopo.
 
-## 10. Gate de persistência e personalização
+## 10. Descoberta, perfil público e participação em Coletivos
+
+A UXA-056 define que Coletivos poderão ser encontrados por busca e exploração intencional e também por sugestão contextual explicada.
+
+Permanecem separados:
+
+- resultado de busca;
+- exploração por categoria ou território;
+- sugestão da Guivos;
+- recomendação de uma pessoa;
+- convite;
+- link compartilhado;
+- publicidade.
+
+O contrato também separa:
+
+- perfil público;
+- Início do participante;
+- gestão do responsável;
+- acompanhar;
+- solicitar entrada;
+- participar;
+- frequentar atividade;
+- aceitar papel;
+- pausar ou sair.
+
+A lista nominal não será pública por padrão. Seguidores, participantes confirmados, presença em atividade, colaboradores e moderadores não serão combinados em uma contagem genérica.
+
+A superfície `Meus Coletivos` organizará participações, acompanhamentos, solicitações, convites e pausas. Avaliação e reputação permanecerão para a UXA-057. Interações, recomendações e conexões permanecerão para a UXA-058.
+
+Nenhum novo wireframe foi criado pela UXA-056.
+
+## 11. Gate de persistência e personalização
 
 Criar conta, digitar, gravar, enviar arquivo, concluir relato ou aceitar uma afirmação não autoriza automaticamente persistência ou personalização.
 
-A mesma proteção impede que conteúdo protegido seja reutilizado silenciosamente para publicidade.
+A mesma proteção impede que conteúdo protegido seja reutilizado silenciosamente para publicidade ou descoberta de Coletivos.
 
-## 11. Gate de alinhamento à Fundação
+## 12. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 12. Próximos atos governados
+## 13. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. validar funcionalmente e reformular os dez estados residuais da UXA-055;
-2. validar transversalmente os 46 wireframes, se priorizado;
-3. definir protocolo de protótipo de baixa ou média fidelidade;
-4. preparar plano de teste com Pessoas, Organizações e Coletivos;
-5. desenvolver políticas especializadas de publicidade, privacidade, denúncia, atribuição e reconciliação;
-6. validar preços, orçamento, CPM, CPC, densidade e frequência;
-7. criar a referência móvel da Home;
-8. validar a transição para a primeira Tela Hoje.
+1. definir avaliação e reputação de Coletivos, atividades, cursos, oportunidades e Organizações na UXA-057;
+2. definir interações, recomendações, conexões, comunicados, discussões, perguntas e respostas na UXA-058;
+3. materializar wireframes de descoberta, perfil público, participação, `Meus Coletivos` e gestão;
+4. validar funcionalmente esses futuros conjuntos;
+5. validar funcionalmente e reformular os dez estados residuais da UXA-055;
+6. validar transversalmente os 46 wireframes do Opportunity Boost, se priorizado;
+7. definir protocolo de protótipo e plano de teste;
+8. criar a referência móvel da Home e validar a transição para a primeira Tela Hoje.
 
 Nenhum ato é iniciado automaticamente.

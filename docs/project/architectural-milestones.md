@@ -2,17 +2,21 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.29.0
+version: 5.30.0
 owner: Guivos
 last_updated: 2026-08-03
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.31.0
+  - ROADMAP-12.32.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
+  - UXA-014
+  - UXA-016
+  - UXA-018
+  - UXA-019
   - UXA-038
   - UXA-039
   - UXA-040
@@ -31,6 +35,7 @@ related:
   - UXA-053
   - UXA-054
   - UXA-055
+  - UXA-056
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -54,6 +59,7 @@ related:
   - M7.55
   - M7.56
   - M7.57
+  - M7.58
 normative: false
 ---
 
@@ -73,57 +79,50 @@ Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
 | M6.0–M6.10 | Concluído | Modelo Econômico inicial documentado |
 | M7.0–M7.20 | Concluído | validação externa e 18 decisões humanas |
 | M7.3–M7.3.5 | Concluído | auditoria, remediação e retomada governada |
-| M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência institucional e coletiva |
+| M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência institucional e coletiva inicial |
 | M7.21–M7.38 | Concluído | Home, início protegido, compreensão inicial e Mapa |
 | M7.39 | Concluído | baseline comercial de planos e preços candidata |
-| M7.40 | Concluído | Opportunity Boost documentalmente definido |
-| M7.41 | Concluído | experiência do Boost validada e reformulada |
-| M7.42–M7.43 | Concluído | configuração para computador criada e validada |
-| M7.44–M7.45 | Concluído | cartão patrocinado e explicação criados e validados |
-| M7.46–M7.47 | Concluído | Lista e Mapa patrocinados criados e validados |
-| M7.48–M7.49 | Concluído | gestão para computador criada e validada |
-| M7.50–M7.51 | Concluído | relatório agregado criado e validado |
-| M7.52 | Concluído | 25 wireframes validados transversalmente |
-| M7.53–M7.54 | Concluído | configuração móvel criada e validada |
-| M7.55–M7.56 | Concluído | gestão móvel criada e validada |
-| M7.57 | Concluído neste incremento | dez estados residuais do Opportunity Boost materializados |
+| M7.40–M7.57 | Concluído | Opportunity Boost definido, materializado e validado nos escopos registrados |
+| M7.58 | Concluído neste incremento | descoberta, perfil público e participação em Coletivos contratados funcionalmente |
 
 ## 3. Marco vigente
 
-### Estados Residuais do Opportunity Boost Materializados — M7.57
+### Descoberta, Perfil Público e Participação em Coletivos Contratados — M7.58
 
 Critérios atendidos:
 
-- UXA-055 criada como referência de baixa fidelidade;
-- dez arquivos vetoriais móveis criados em 390 × 844 pixels;
-- erro técnico patrocinado com catálogo orgânico preservado;
-- falha de atualização com último estado confirmado preservado;
-- inventário patrocinado indisponível distinto de erro técnico;
-- zero apurado sem ampliação automática de critérios;
-- baixa oferta orgânica reduzindo publicidade;
-- preferência `mostrar menos` separada de filtro orgânico;
-- desativação de patrocinados com superfícies e reversão explícitas;
-- ocultação de campanha específica na Lista e no Mapa;
-- revisão e reversão por escopo e data;
-- denúncia de conteúdo separada de contestação de dados;
-- identidade e preferências da pessoa protegidas;
-- 46 wireframes materializados no total;
-- 36 wireframes funcionalmente validados por pacote;
-- dez novos artefatos aguardando validação;
-- UXA-050 preservada como autoridade transversal de 25 artefatos;
-- protótipo, testes, cobrança e desenvolvimento não iniciados;
+- UXA-056 criada como contrato funcional especializado;
+- busca e exploração intencional preservadas;
+- sugestão contextual explicada e revisável;
+- busca, exploração, sugestão, recomendação, convite, link e publicidade distinguidos;
+- perfil público separado do Início do participante e da gestão;
+- níveis de visibilidade público, aprovado, não listado, privado, protegido e fechado definidos;
+- acompanhamento separado de participação;
+- entrada aberta, mediante aprovação e por convite definidas;
+- estados de solicitação, participação, pausa, suspensão, remoção e saída estabelecidos;
+- papel, disponibilidade, presença e autoridade separados;
+- seguidores, participantes, presença em atividade, colaboradores e moderadores com contagens próprias;
+- lista nominal não pública por padrão;
+- visibilidade da participação controlada pela pessoa;
+- central `Meus Coletivos` definida;
+- dados de participantes protegidos de compartilhamento automático com Organizações apoiadoras;
+- avaliação e reputação reservadas à UXA-057;
+- interações, recomendações e conexões reservadas à UXA-058;
+- 20 estados obrigatórios registrados para futuros wireframes;
+- nenhum wireframe, protótipo, teste ou desenvolvimento antecipado;
+- 46 wireframes do Opportunity Boost preservados;
 - Resultados Empresariais preservados com zero canônicos;
 - Engenharia de Produto preservada antes de W0-01.
 
 ## 4. Marcos anteriores preservados
 
+### Estados Residuais do Opportunity Boost Materializados — M7.57
+
+A UXA-055 permanece autoridade dos dez wireframes residuais móveis ainda pendentes de validação funcional.
+
 ### Gestão Móvel Validada — M7.56
 
 A UXA-053 reformulada e a UXA-054 permanecem como autoridades da gestão móvel.
-
-### Gestão Móvel Materializada — M7.55
-
-A UXA-053 permanece como autoridade da materialização, reformulada pela UXA-054.
 
 ### Configuração Móvel Validada — M7.54
 
@@ -161,32 +160,30 @@ A UXA-040 reformulada e a UXA-041 permanecem como autoridades do fluxo do anunci
 | Modelo Fundamental | pronto e pausado operacionalmente |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes |
 | Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-055; estados residuais materializados e aguardando validação |
+| Arquitetura da Experiência | ativa até UXA-056; participação em Coletivos contratada |
 | Arquitetura de Produtos | Opportunity Boost definido conceitualmente; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
 ## 6. Próximos atos possíveis
 
-### Estados residuais e protótipo
+### Coletivos
+
+1. criar UXA-057 para avaliação e reputação;
+2. criar UXA-058 para interações, recomendações e conexões;
+3. materializar wireframes de descoberta, perfil público, participação, `Meus Coletivos` e gestão;
+4. validar funcionalmente os conjuntos materializados.
+
+### Opportunity Boost e protótipo
 
 1. validar funcionalmente e reformular os dez wireframes da UXA-055;
 2. validar transversalmente os 46 artefatos, se priorizado;
 3. definir protocolo de protótipo de baixa ou média fidelidade;
 4. preparar plano de teste com Pessoas, Organizações e Coletivos.
 
-### Modelo econômico e especialidades
+### Demais frentes preservadas
 
-1. pesquisar disposição a pagar;
-2. calibrar orçamento, CPM, CPC, densidade e frequência;
-3. desenvolver política de categorias, publicidade, privacidade, denúncia e contestação;
-4. desenvolver política de atribuição, agregação e reconciliação;
-5. avaliar custos, antifraude e unit economics;
-6. realizar revisões jurídica, fiscal, contábil, de privacidade e segurança.
-
-### Frentes preservadas
-
-- página de Planos e Preços;
-- comissão e política transacional;
+- pesquisa de disposição a pagar e calibração econômica;
+- políticas especializadas de publicidade, categorias, privacidade, denúncia, atribuição e reconciliação;
 - referência móvel da Home;
 - transição para a primeira Tela Hoje;
 - reaplicação dos testes dos Resultados Empresariais;
@@ -196,4 +193,4 @@ Nenhum ato é iniciado automaticamente.
 
 ## 7. Regra de transição
 
-Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Distribuição paga não equivale a recomendação. Atribuição candidata não equivale a causalidade. Cada transição exige evidência e autorização próprias.
+Contrato funcional não equivale a wireframe. Wireframe criado não equivale a wireframe validado. Wireframe validado não equivale a protótipo. Protótipo não equivale a teste com usuários. Descoberta não equivale a acompanhamento. Acompanhamento não equivale a participação. Cada transição exige evidência e autorização próprias.
