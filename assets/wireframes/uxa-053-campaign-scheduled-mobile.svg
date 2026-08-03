@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Campanha programada do Opportunity Boost em aplicativo móvel</title>
-  <desc id="desc">Wireframe móvel de baixa fidelidade com campanha aprovada e programada, orçamento reservado, entrega ainda não iniciada e gates verificados novamente antes da ativação.</desc>
+  <title id="title">Campanha programada do Opportunity Boost em aplicativo móvel reformulada</title>
+  <desc id="desc">Wireframe móvel de baixa fidelidade com campanha aprovada e programada, medição ainda não iniciada, orçamento reservado, condição limitada explicada e nova verificação antes da ativação.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial" font-size="18" font-weight="700">GUIVOS</text>
@@ -8,46 +8,46 @@
   <text x="20" y="88" font-family="Arial" font-size="19" font-weight="700">Campanha programada</text>
   <text x="370" y="87" text-anchor="end" font-family="Arial" font-size="9" font-weight="700">PROGRAMADA</text>
 
-  <rect x="20" y="108" width="350" height="82" rx="8" fill="#f3f3f3" stroke="#555555"/>
+  <rect x="20" y="108" width="350" height="96" rx="8" fill="#f3f3f3" stroke="#555555"/>
   <text x="34" y="133" font-family="Arial" font-size="10" font-weight="700">BST-2026-081 · versão aprovada v1</text>
   <text x="34" y="154" font-family="Arial" font-size="9">Formação de jovens em tecnologia</text>
-  <text x="34" y="174" font-family="Arial" font-size="9">Início previsto: 05/08/2026 às 09:00</text>
+  <text x="34" y="175" font-family="Arial" font-size="9">Anunciante: Instituto Horizonte</text>
+  <text x="34" y="195" font-family="Arial" font-size="9">Início previsto: 05/08/2026 às 09:00</text>
 
-  <rect x="20" y="206" width="350" height="70" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="34" y="230" font-family="Arial" font-size="11" font-weight="700">Entrega ainda não iniciada</text>
-  <text x="34" y="251" font-family="Arial" font-size="9">0 impressões · 0 cliques · 0 eventos operacionais</text>
-  <text x="34" y="269" font-family="Arial" font-size="8">Programação não garante ativação ou uso integral do orçamento.</text>
+  <rect x="20" y="220" width="350" height="82" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="245" font-family="Arial" font-size="11" font-weight="700">Medição ainda não iniciada</text>
+  <text x="34" y="267" font-family="Arial" font-size="9">Impressões, cliques e eventos: não aplicáveis antes do início.</text>
+  <text x="34" y="289" font-family="Arial" font-size="8">Não exibir zero evita confundir ausência de janela com medição real.</text>
 
-  <text x="20" y="308" font-family="Arial" font-size="12" font-weight="700">Orçamento</text>
-  <rect x="20" y="322" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="32" y="345" font-family="Arial" font-size="8">Total</text>
-  <text x="32" y="371" font-family="Arial" font-size="14" font-weight="700">R$ 300</text>
-  <rect x="142" y="322" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="154" y="345" font-family="Arial" font-size="8">Reservado</text>
-  <text x="154" y="371" font-family="Arial" font-size="14" font-weight="700">R$ 300</text>
-  <rect x="264" y="322" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
-  <text x="276" y="345" font-family="Arial" font-size="8">Utilizado</text>
-  <text x="276" y="371" font-family="Arial" font-size="14" font-weight="700">R$ 0</text>
+  <text x="20" y="334" font-family="Arial" font-size="12" font-weight="700">Orçamento antes do início</text>
+  <rect x="20" y="348" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="371" font-family="Arial" font-size="8">Total</text>
+  <text x="32" y="397" font-family="Arial" font-size="14" font-weight="700">R$ 300</text>
+  <rect x="142" y="348" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="154" y="371" font-family="Arial" font-size="8">Reservado</text>
+  <text x="154" y="397" font-family="Arial" font-size="14" font-weight="700">R$ 300</text>
+  <rect x="264" y="348" width="106" height="66" rx="7" fill="#ffffff" stroke="#777777"/>
+  <text x="276" y="371" font-family="Arial" font-size="8">Utilizado</text>
+  <text x="276" y="397" font-family="Arial" font-size="14" font-weight="700">R$ 0</text>
 
-  <rect x="20" y="406" width="350" height="194" rx="8" fill="#ffffff" stroke="#555555"/>
-  <text x="34" y="431" font-family="Arial" font-size="11" font-weight="700">Gates para o início</text>
-  <text x="34" y="455" font-family="Arial" font-size="9">ATENDIDO · oportunidade ativa e aprovada</text>
-  <text x="34" y="478" font-family="Arial" font-size="9">ATENDIDO COM LIMITE · capacidade declarada</text>
-  <text x="34" y="501" font-family="Arial" font-size="9">ATENDIDO · informação material atual</text>
-  <text x="34" y="524" font-family="Arial" font-size="9">ATENDIDO · segurança e política</text>
-  <line x1="34" y1="540" x2="356" y2="540" stroke="#cccccc"/>
-  <text x="34" y="562" font-family="Arial" font-size="9" font-weight="700">Nova verificação ocorrerá antes do início.</text>
-  <text x="34" y="583" font-family="Arial" font-size="8">Falha em gate impede ativação automática.</text>
+  <rect x="20" y="432" width="350" height="190" rx="8" fill="#ffffff" stroke="#555555"/>
+  <text x="34" y="457" font-family="Arial" font-size="11" font-weight="700">Gates para o início</text>
+  <text x="34" y="481" font-family="Arial" font-size="9">ATENDIDO · oportunidade ativa e aprovada</text>
+  <text x="34" y="504" font-family="Arial" font-size="9">ATENDIDO COM LIMITE · capacidade declarada</text>
+  <text x="34" y="527" font-family="Arial" font-size="9">ATENDIDO · informação material atual</text>
+  <text x="34" y="550" font-family="Arial" font-size="9">ATENDIDO · segurança e política</text>
+  <line x1="34" y1="565" x2="356" y2="565" stroke="#cccccc"/>
+  <text x="34" y="586" font-family="Arial" font-size="9" font-weight="700">Nova verificação ocorrerá antes do início.</text>
+  <text x="34" y="607" font-family="Arial" font-size="8">Se o limite persistir, a campanha iniciará com entrega reduzida.</text>
 
-  <rect x="20" y="618" width="350" height="48" rx="8" fill="#111111"/>
-  <text x="195" y="647" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">ALTERAR PROGRAMAÇÃO</text>
-  <rect x="20" y="678" width="350" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="705" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">REVISAR INFORMAÇÃO MATERIAL</text>
+  <rect x="20" y="640" width="350" height="48" rx="8" fill="#111111"/>
+  <text x="195" y="669" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="#ffffff">REVISAR PROGRAMAÇÃO</text>
+  <rect x="20" y="700" width="350" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="727" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700">REVISAR INFORMAÇÃO MATERIAL</text>
 
-  <text x="20" y="754" font-family="Arial" font-size="9" text-decoration="underline">Revisar orçamento e critérios</text>
-  <text x="370" y="754" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Cancelar antes do início</text>
-  <rect x="20" y="776" width="350" height="46" rx="7" fill="#f3f3f3" stroke="#777777" stroke-dasharray="5 4"/>
-  <text x="34" y="795" font-family="Arial" font-size="8">Alterar informação material poderá exigir nova avaliação.</text>
-  <text x="34" y="812" font-family="Arial" font-size="8">Cancelar é uma decisão separada e exige confirmação.</text>
-  <text x="20" y="838" font-family="Arial" font-size="8">Gestão móvel materializada; validação funcional ainda pendente.</text>
+  <text x="20" y="774" font-family="Arial" font-size="9" text-decoration="underline">Revisar orçamento e critérios</text>
+  <text x="370" y="774" text-anchor="end" font-family="Arial" font-size="9" text-decoration="underline">Revisar cancelamento</text>
+  <rect x="20" y="790" width="350" height="34" rx="7" fill="#f3f3f3" stroke="#777777" stroke-dasharray="5 4"/>
+  <text x="34" y="811" font-family="Arial" font-size="8">Alterações não ativam, aprovam ou cancelam a campanha automaticamente.</text>
+  <text x="20" y="840" font-family="Arial" font-size="8">Gestão móvel reformulada pela UXA-054.</text>
 </svg>
