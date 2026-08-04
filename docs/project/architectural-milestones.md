@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.34.0
+version: 5.35.0
 owner: Guivos
 last_updated: 2026-08-03
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.36.0
+  - ROADMAP-12.37.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -18,6 +18,7 @@ related:
   - UXA-058
   - UXA-059
   - UXA-060
+  - UXA-061
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -29,6 +30,7 @@ related:
   - M7.60
   - M7.61
   - M7.62
+  - M7.63
 normative: false
 ---
 
@@ -36,127 +38,125 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta os marcos arquiteturais vigentes em visão consolidada.
+Este registro apresenta a maturidade arquitetural em visão consolidada.
 
-## 2. Linha de maturidade consolidada
+## 2. Linha de maturidade
 
 | Faixa ou marco | Estado | Resultado principal |
 |---|---|---|
-| A0–A1 | Concluído | fundação do Repositório e macroestrutura institucional |
-| M3–M4 | Concluído | Fundação congelada e Arquitetura do Conhecimento estabelecida |
-| M5–M5.18 | Concluído | arquitetura funcional e publicação do Guivos Journey |
-| M6.0–M6.10 | Concluído | Modelo Econômico inicial documentado |
-| M7.0–M7.20 | Concluído | validação externa e 18 decisões humanas |
-| M7.3–M7.3.5 | Concluído | auditoria, remediação e retomada governada |
-| M7.19.1–M7.19.11 | Concluído | Arquitetura da Experiência institucional e coletiva |
-| M7.21–M7.38 | Concluído | Home, início protegido, compreensão inicial e Mapa |
-| M7.39–M7.57 | Concluído | baseline comercial e Opportunity Boost até estados residuais |
-| M7.58 | Concluído | descoberta, perfil público e participação contratados |
-| M7.59 | Concluído | avaliação e reputação contratadas |
-| M7.60 | Concluído | interações, recomendações e conexões contratadas |
-| M7.61 | Concluído | programa e priorização dos wireframes de Coletivos definidos |
-| M7.62 | Concluído neste incremento | Explorar Coletivos e busca móvel materializados |
+| A0–A1 | concluído | fundação e macroestrutura |
+| M3–M4 | concluído | Fundação congelada e conhecimento estruturado |
+| M5–M5.18 | concluído | Guivos Journey funcional |
+| M6.0–M6.10 | concluído | Modelo Econômico inicial |
+| M7.0–M7.20 | concluído | validação externa e 18 decisões humanas |
+| M7.3–M7.3.5 | concluído | auditoria e remediação |
+| M7.19.1–M7.38 | concluído | Arquitetura da Experiência, Home, início, compreensão e Mapa |
+| M7.39–M7.57 | concluído | baseline comercial e Opportunity Boost até estados residuais |
+| M7.58 | concluído | descoberta e participação em Coletivos contratadas |
+| M7.59 | concluído | avaliação e reputação contratadas |
+| M7.60 | concluído | interações e recomendações contratadas |
+| M7.61 | concluído | programa de wireframes de Coletivos definido |
+| M7.62 | concluído | descoberta móvel de Coletivos materializada |
+| M7.63 | concluído neste incremento | descoberta móvel de Coletivos validada |
 
 ## 3. Marco vigente
 
-### Explorar Coletivos e Busca Móvel Materializados — M7.62
+### M7.63 — Descoberta e Busca Móvel de Coletivos Validadas Funcionalmente
 
 Critérios atendidos:
 
-- UXA-060 criada em versão 0.1.0;
-- cinco SVGs móveis materializados;
-- Explorar Coletivos materializado sem dependência de personalização;
-- busca direta, temas e área de exploração representados;
-- localização precisa não exigida;
-- resultados com consulta, filtros, quantidade e ordenação visíveis;
+- UXA-061 criada;
+- cinco SVGs examinados;
+- Explorar Coletivos aprovado sem alteração;
+- quatro SVGs reformulados;
+- cinco SVGs considerados funcionalmente válidos;
+- busca e exploração mantidas sem personalização obrigatória;
+- área manual separada de localização precisa;
+- origens mantidas separadas;
 - primeiro resultado orgânico preservado;
 - publicidade identificada antes do conteúdo;
-- anunciante e critérios apresentados;
-- publicidade separada de recomendação;
-- ordenação orgânica independente de pagamento;
-- filtros preservando busca e área até confirmação;
-- preferência publicitária separada de filtro;
-- zero confirmado separado de falha;
-- consulta preservada no estado vazio;
-- recuperação sem remoção automática de filtros;
-- publicidade não utilizada para preencher o zero;
-- origem explicável com dados utilizados e excluídos;
-- conteúdo protegido, mensagens e grupos sensíveis fora da publicidade;
-- identidade do visualizador não entregue ao anunciante;
-- Perfil Público identificado como destino futuro;
-- cinco SVGs declarados pendentes de validação funcional;
-- nenhum protótipo, teste ou desenvolvimento iniciado;
-- cobertura do Boost preservada em 46 artefatos;
-- Resultados Empresariais preservados com zero canônicos;
-- Engenharia de Produto preservada antes de W0-01.
+- Perfil Público disponível como continuidade também para publicidade;
+- pagamento sem alteração da ordem orgânica;
+- contagem de participantes sem ranking;
+- busca, área e filtros separados;
+- filtros selecionados identificados por texto e marca;
+- limpeza limitada aos filtros;
+- zero confirmado separado de erro;
+- publicidade impedida de preencher artificialmente o zero;
+- recuperação por dimensão e revisão anterior à aplicação;
+- explicação patrocinada com retorno contextual;
+- visualização sem criação de vínculo;
+- nenhum novo SVG criado;
+- Perfil Público não iniciado;
+- protótipo e Engenharia de Produto não iniciados.
 
-## 4. Marcos anteriores preservados
+## 4. Cobertura no marco
 
-### Programa de Wireframes de Coletivos — M7.61
-
-A UXA-059 permanece autoridade da priorização P0A, P0B, P1 e P2, da regra de novo SVG e do limite padrão dos incrementos.
-
-### Interações, Recomendações e Conexões — M7.60
-
-A UXA-058 permanece autoridade de comunicação, recomendação, contato, notificações e moderação.
-
-### Avaliação e Reputação — M7.59
-
-A UXA-057 permanece autoridade de objetos avaliáveis, elegibilidade, agregação, resposta, contestação e histórico.
-
-### Descoberta e Participação — M7.58
-
-A UXA-056 permanece autoridade de busca, perfil público, acompanhamento, entrada, vínculo, contagens, privacidade e `Meus Coletivos`.
-
-### Estados Residuais do Boost — M7.57
-
-A UXA-055 permanece autoridade dos dez estados residuais móveis ainda pendentes de validação funcional.
-
-### Validação Transversal — M7.52
-
-A UXA-050 permanece autoridade dos 25 wireframes examinados naquele incremento. Artefatos posteriores não alteram retrospectivamente esse escopo.
-
-## 5. Cobertura visual
-
-| Família | Materializados | Validados por pacote | Pendentes |
+| Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
+| Coletivos — descoberta | 5 | 5 | 0 |
 | Opportunity Boost | 46 | 36 | 10 |
-| Coletivos — descoberta e busca | 5 | 0 | 5 |
-| Demais famílias de Coletivos | 0 | 0 | 0 |
+
+A UXA-050 não recebe os cinco artefatos retrospectivamente em seu escopo transversal histórico.
+
+## 5. Marcos anteriores preservados
+
+### M7.62
+
+A UXA-060 permanece autoridade da materialização e do cenário canônico da descoberta móvel.
+
+### M7.61
+
+A UXA-059 permanece autoridade do programa P0A–P2 e do limite dos pacotes.
+
+### M7.60
+
+A UXA-058 permanece autoridade das interações, recomendações e conexões.
+
+### M7.59
+
+A UXA-057 permanece autoridade da avaliação e reputação.
+
+### M7.58
+
+A UXA-056 permanece autoridade da descoberta, Perfil Público e participação.
+
+### M7.57
+
+A UXA-055 permanece autoridade dos dez estados residuais do Boost ainda pendentes.
+
+### M7.52
+
+A UXA-050 permanece autoridade dos 25 wireframes examinados naquele incremento.
 
 ## 6. Estado das revisões
 
 | Revisão | Estado |
 |---|---|
-| Arquitetura de Fundação | concluída e congelada |
+| Fundação | concluída e congelada |
 | Modelo Fundamental | pronto e pausado operacionalmente |
-| Modelo Econômico | planos e Boost candidatos definidos; validações pendentes |
-| Arquitetura de Negócios | decisões humanas concluídas; reaplicação aguardando autorização |
-| Arquitetura da Experiência | ativa até UXA-060; primeira família visual de Coletivos materializada |
-| Arquitetura de Produtos | Opportunity Boost conceitual; implementação não iniciada |
+| Modelo Econômico | candidatos definidos; validações pendentes |
+| Arquitetura de Negócios | 18 decisões; reaplicação aguardando autorização |
+| Arquitetura da Experiência | ativa até UXA-061 |
+| Arquitetura de Produtos | Boost conceitual; implementação não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-## 7. Próximos atos possíveis
+## 7. Próximo marco candidato
 
-### Imediato recomendado
+A UXA-062 poderá materializar o Perfil Público móvel após integração e nova autorização.
 
-1. UXA-061 — validação funcional dos cinco SVGs da UXA-060;
-2. reformulação, se necessária;
-3. decisão posterior entre Perfil Público ou estados críticos adicionais.
+O pacote deverá preservar:
 
-### Frentes preservadas
-
-- validação funcional dos dez estados residuais da UXA-055;
-- pesquisa de disposição a pagar;
-- calibração de preços, orçamento, densidade e frequência;
-- referência móvel da Home;
-- transição para a primeira Tela Hoje;
-- reaplicação dos testes dos Resultados Empresariais;
-- preparação das Capacidades Empresariais;
-- políticas de moderação, privacidade, segurança, estatística e notificações.
-
-Nenhum ato é iniciado automaticamente.
+- origem e consulta;
+- perfil público separado do ambiente interno e da gestão;
+- modelo de entrada;
+- regras essenciais;
+- contagem governada;
+- responsáveis e relações materiais;
+- reputação com base insuficiente;
+- proteção e denúncia;
+- limite de até seis SVGs.
 
 ## 8. Regra de transição
 
-Contrato não equivale a programa. Programa não equivale a wireframe. Wireframe não equivale a validação. Validação não equivale a protótipo. Protótipo não equivale a teste. Teste não equivale a produção.
+Cada novo marco exige escopo próprio, evidência, validação mecânica, relatório e autorização separada para integração.

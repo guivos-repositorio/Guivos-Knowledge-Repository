@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe móvel de resultados de busca de Coletivos</title>
-  <desc id="desc">Resultados móveis para a busca ciclismo com consulta preservada, filtros, ordenação explicável, primeiro resultado orgânico e publicidade identificada separadamente.</desc>
+  <title id="title">Wireframe reformulado de resultados de busca de Coletivos</title>
+  <desc id="desc">Resultados móveis para a busca ciclismo com consulta preservada, filtros de escopo explícito, ordenação explicável, primeiro resultado orgânico, publicidade identificada e continuidade equivalente ao perfil público.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
@@ -12,7 +12,7 @@
   <text x="356" y="100" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Editar</text>
   <rect x="20" y="126" width="350" height="36" rx="8" fill="#f5f5f5" stroke="#777777"/>
   <text x="32" y="140" font-family="Arial, sans-serif" font-size="7">ÁREA DA CONSULTA</text>
-  <text x="32" y="154" font-family="Arial, sans-serif" font-size="9" font-weight="700">Belo Horizonte e on-line</text>
+  <text x="32" y="154" font-family="Arial, sans-serif" font-size="9" font-weight="700">Belo Horizonte e on-line · sem localização precisa</text>
   <text x="356" y="151" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Alterar</text>
   <g font-family="Arial, sans-serif" font-size="7">
     <rect x="20" y="173" width="83" height="22" rx="11" fill="#f2f2f2" stroke="#777777"/><text x="61" y="188" text-anchor="middle">Ciclismo ✓</text>
@@ -21,7 +21,7 @@
     <rect x="291" y="173" width="79" height="22" rx="11" fill="#ffffff" stroke="#777777"/><text x="330" y="188" text-anchor="middle">Filtros · 3</text>
   </g>
   <text x="20" y="216" font-family="Arial, sans-serif" font-size="9" font-weight="700">12 resultados correspondem à consulta</text>
-  <text x="370" y="216" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Limpar filtros</text>
+  <text x="370" y="216" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Limpar só filtros</text>
   <rect x="20" y="225" width="350" height="31" rx="7" fill="#ffffff" stroke="#999999"/>
   <text x="32" y="244" font-family="Arial, sans-serif" font-size="7">Ordenado por: busca, filtros, território e entrada disponível</text>
   <text x="356" y="244" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender</text>
@@ -39,9 +39,9 @@
   <text x="32" y="463" font-family="Arial, sans-serif" font-size="14" font-weight="700">Pedal Urbano Aberto</text>
   <text x="32" y="481" font-family="Arial, sans-serif" font-size="8">Anunciante: Associação Movimento Livre</text>
   <text x="32" y="498" font-family="Arial, sans-serif" font-size="8">Critérios: ciclismo · Belo Horizonte · entrada disponível</text>
-  <text x="32" y="515" font-family="Arial, sans-serif" font-size="7">Não é recomendação nem altera a ordem orgânica.</text>
+  <text x="32" y="515" font-family="Arial, sans-serif" font-size="7">Não é recomendação · ordem orgânica preservada.</text>
   <text x="32" y="532" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que este anúncio?</text>
-  <text x="356" y="532" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ocultar publicidade</text>
+  <text x="356" y="532" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver perfil público</text>
   <rect x="20" y="553" width="350" height="122" rx="11" fill="#ffffff" stroke="#777777"/>
   <text x="32" y="572" font-family="Arial, sans-serif" font-size="7" font-weight="700">RESULTADO DE BUSCA · ORGÂNICO</text>
   <text x="32" y="597" font-family="Arial, sans-serif" font-size="15" font-weight="700">Ciclistas da Serra</text>
