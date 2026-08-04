@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.60.0
+version: 0.61.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 related:
@@ -32,7 +32,8 @@ related:
   - UXA-062
   - UXA-063
   - UXA-064
-  - M7.66
+  - UXA-065
+  - M7.67
 normative: false
 ---
 
@@ -42,7 +43,7 @@ normative: false
 
 A Arquitetura da Experiência transforma princípios, capacidades e contratos do Repositório em experiências compreensíveis para Pessoas, Coletivos e Organizações.
 
-Ela governa hierarquia, decisão, continuidade, consentimento, autoridade, privacidade e proteção antes de design visual ou implementação.
+Ela governa hierarquia, decisão, continuidade, confirmação, autoridade, privacidade e proteção antes de design visual ou implementação.
 
 ## 2. Regra de maturidade
 
@@ -65,11 +66,9 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | avaliação e reputação contextual | UXA-057 |
 | interação, recomendação, contato e proteção | UXA-058 |
 | programa e priorização de wireframes | UXA-059 |
-| descoberta e busca móvel | UXA-060 |
-| validação de descoberta e busca | UXA-061 |
-| Perfil Público móvel | UXA-062 |
-| validação do Perfil Público móvel | UXA-063 |
-| revisão e solicitação de participação móvel | UXA-064 |
+| descoberta e busca móvel | UXA-060; UXA-061 |
+| Perfil Público móvel | UXA-062; UXA-063 |
+| revisão e solicitação móvel | UXA-064; UXA-065 |
 
 ## 4. Estado visual dos Coletivos
 
@@ -77,21 +76,14 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 |---|---:|---:|---:|
 | descoberta e busca | 5 | 5 | 0 |
 | Perfil Público | 4 | 4 | 0 |
-| revisão e solicitação | 5 | 0 | 5 |
+| revisão e solicitação | 5 | 5 | 0 |
 | demais famílias | 0 | 0 | não materializadas |
 
-Os 14 SVGs de Coletivos permanecem separados dos 46 SVGs do Opportunity Boost.
+Os 14 SVGs de Coletivos estão materializados e validados. Permanecem separados dos 46 SVGs do Opportunity Boost.
 
-## 5. Perfil Público validado
+## 5. Descoberta e Perfil Público
 
-A família distingue:
-
-- entrada aberta;
-- participação mediante aprovação;
-- entradas temporariamente indisponíveis;
-- apresentação protegida por convite.
-
-A UXA-063 validou:
+Estão validados:
 
 - origem orgânica, comercial ou protegida;
 - retorno com contexto preservado;
@@ -100,14 +92,13 @@ A UXA-063 validou:
 - canais públicos separados de contato privado;
 - dados enviados somente após revisão;
 - responsável operacional separado do anunciante;
-- reputação com denominadores por dimensão;
+- reputação contextual com denominadores;
 - amostra insuficiente sem nota implícita;
-- proveniência do convite protegido;
-- ausência de descoberta pública no perfil protegido.
+- convite protegido fora da descoberta pública.
 
-## 6. Revisão e solicitação materializadas
+## 6. Revisão e solicitação validadas
 
-A UXA-064 materializa:
+A UXA-064 e a UXA-065 governam:
 
 1. revisão para entrada aberta;
 2. confirmação imediata da entrada aberta;
@@ -115,20 +106,21 @@ A UXA-064 materializa:
 4. comprovante transitório do envio;
 5. revisão protegida de convite.
 
-A família demonstra:
+Foram validados:
 
 - significado do vínculo antes da ação;
-- dados enviados e dados proibidos;
+- visibilidade inicial sem escolha implícita;
+- dados enviados e protegidos;
 - confirmações inicialmente vazias;
+- acessibilidade separada das confirmações obrigatórias;
 - cancelamento antes do envio;
 - entrada aberta sem função ou autoridade automática;
 - solicitação sem criação de vínculo;
-- convite protegido sem participação automática;
-- marketing, notificações e contato privado separados;
-- Organização apoiadora sem acesso automático;
-- comprovante distinto da futura Solicitação Pendente.
-
-Os cinco SVGs aguardam validação funcional especializada.
+- prazo estimado sem promessa;
+- comprovante sem simular Solicitação Pendente;
+- alegação protegida identificada como não verificada;
+- confidencialidade sem garantia absoluta;
+- marketing, notificações e contato privado separados.
 
 ## 7. Decisões estruturais preservadas
 
@@ -136,17 +128,14 @@ Os cinco SVGs aguardam validação funcional especializada.
 - acompanhar não é participar;
 - solicitação não é aprovação;
 - convite não cria vínculo;
-- presença em atividade não é participação permanente;
-- papel aceito não é disponibilidade universal;
 - relação institucional não concede autoridade automática;
 - publicidade não é recomendação nem reputação;
-- compartilhamento não é endosso;
 - avaliação não é denúncia;
-- reputação não é nota moral ou ranking de pessoas;
 - canal público não autoriza mensagem privada;
-- proteção não deve revelar participação sensível;
 - visualização não compartilha identidade;
-- leitura, rolagem e silêncio não equivalem a consentimento.
+- leitura, rolagem e silêncio não equivalem a confirmação;
+- comprovante transitório não é acompanhamento contínuo;
+- alegação não verificada não é fato comprovado.
 
 ## 8. Continuidade P0A
 
@@ -161,19 +150,17 @@ Explorar Coletivos
 → Início do Participante
 ```
 
-As três primeiras referências estão materializadas e validadas. A quarta está materializada e aguarda validação. As demais permanecem não iniciadas.
+As quatro primeiras referências estão materializadas e validadas. As demais permanecem não iniciadas.
 
 ## 9. Limites
 
 Não foram autorizados:
 
-- validação funcional da UXA-064;
 - Solicitação Pendente;
 - informação adicional, recusa, expiração ou contestação;
 - ambiente interno reformulado;
 - gestão do responsável;
-- reputação detalhada;
-- recomendação ou contato completos;
+- política jurídica;
 - protótipo;
 - teste com pessoas;
 - identidade visual;
@@ -181,4 +168,4 @@ Não foram autorizados:
 
 ## 10. Próxima transição
 
-**UXA-065 — Validação Funcional e Reformulação da Revisão e Solicitação de Participação Móvel em Coletivos**, mediante autorização separada.
+**UXA-066 — Wireframes Móveis da Solicitação Pendente em Coletivos**, mediante autorização separada.
