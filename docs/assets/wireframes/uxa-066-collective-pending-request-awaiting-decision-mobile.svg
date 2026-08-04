@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe móvel da solicitação de participação aguardando decisão</title>
+  <desc id="desc">Acompanhamento contínuo da solicitação enviada ao Ciclistas da Serra, com estado atual, autoridade, prazo estimado, dados compartilhados, próximos eventos e cancelamento consciente.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
+  <text x="20" y="57" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar ao Perfil Público</text>
+  <text x="20" y="94" font-family="Arial, sans-serif" font-size="22" font-weight="700">Solicitação pendente</text>
+  <text x="20" y="116" font-family="Arial, sans-serif" font-size="9">Ciclistas da Serra · CSR-2026-0804-0941</text>
+  <rect x="20" y="136" width="350" height="91" rx="10" fill="#f7f7f7" stroke="#777777"/>
+  <text x="32" y="157" font-family="Arial, sans-serif" font-size="10" font-weight="700">Estado atual</text>
+  <text x="32" y="178" font-family="Arial, sans-serif" font-size="14" font-weight="700">Aguardando decisão do Coletivo</text>
+  <text x="32" y="198" font-family="Arial, sans-serif" font-size="8">Recebida em 04/08/2026 às 09:41 · última atualização no envio</text>
+  <text x="32" y="216" font-family="Arial, sans-serif" font-size="7">Ainda não há vínculo, acesso interno, função ou autoridade.</text>
+  <rect x="20" y="241" width="350" height="112" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="262" font-family="Arial, sans-serif" font-size="10" font-weight="700">Análise e prazo</text>
+  <text x="32" y="283" font-family="Arial, sans-serif" font-size="8">Responsável: Carlos Menezes · papel autorizado para análise</text>
+  <text x="32" y="303" font-family="Arial, sans-serif" font-size="8">Estimativa informada: até 5 dias úteis · sem garantia</text>
+  <text x="32" y="323" font-family="Arial, sans-serif" font-size="8">Prazo estimado termina em 11/08/2026; atraso não é recusa.</text>
+  <text x="32" y="342" font-family="Arial, sans-serif" font-size="7">A Organização apoiadora não recebe a solicitação automaticamente.</text>
+  <rect x="20" y="367" width="350" height="106" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="388" font-family="Arial, sans-serif" font-size="10" font-weight="700">Dados em análise</text>
+  <text x="32" y="409" font-family="Arial, sans-serif" font-size="8">Nome de exibição, experiência, disponibilidade e confirmações</text>
+  <text x="32" y="429" font-family="Arial, sans-serif" font-size="8">Telefone, e-mail, Jornada e outros Coletivos não foram enviados.</text>
+  <text x="32" y="450" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver exatamente o que foi enviado</text>
+  <text x="358" y="450" text-anchor="end" font-family="Arial, sans-serif" font-size="7">Dados bloqueados para edição durante análise</text>
+  <rect x="20" y="487" width="350" height="120" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="508" font-family="Arial, sans-serif" font-size="10" font-weight="700">Próximos eventos possíveis</text>
+  <text x="32" y="529" font-family="Arial, sans-serif" font-size="8">• aprovação ou recusa com autoridade e consequência identificadas</text>
+  <text x="32" y="549" font-family="Arial, sans-serif" font-size="8">• pedido legítimo de informação adicional</text>
+  <text x="32" y="569" font-family="Arial, sans-serif" font-size="8">• expiração conforme regra ou cancelamento pela pessoa</text>
+  <text x="32" y="589" font-family="Arial, sans-serif" font-size="7">Mudança material de regra exige nova revisão antes de qualquer vínculo.</text>
+  <rect x="20" y="625" width="350" height="45" rx="8" fill="#222222"/>
+  <text x="195" y="653" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" font-weight="700">Atualizar estado</text>
+  <rect x="20" y="684" width="350" height="43" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="711" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Cancelar solicitação</text>
+  <text x="195" y="748" text-anchor="middle" font-family="Arial, sans-serif" font-size="7">O cancelamento exigirá confirmação e não será tratado como recusa.</text>
+  <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
+  <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817" font-weight="700">Eu</text></g>
+  <g fill="none" stroke="#555555"><circle cx="39" cy="796" r="8"/><rect x="109" y="788" width="16" height="16"/><circle cx="195" cy="796" r="8"/><path d="M265 804 L273 788 L281 804 Z"/><circle cx="351" cy="794" r="6" fill="#222222"/><path d="M342 807 Q351 799 360 807"/></g>
+</svg>
