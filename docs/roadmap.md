@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.36.0
-title: Roadmap Arquitetural — Explorar Coletivos e Busca Móvel Materializados
+id: ROADMAP-12.37.0
+title: Roadmap Arquitetural — Descoberta de Coletivos Validada Funcionalmente
 status: active
-version: 12.36.0
+version: 12.37.0
 owner: Guivos
 last_updated: 2026-08-03
 supersedes_partial:
-  - ROADMAP-12.35.0
+  - ROADMAP-12.36.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -18,202 +18,147 @@ related:
   - UXA-058
   - UXA-059
   - UXA-060
+  - UXA-061
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.62
+  - M7.63
 ---
 
-# Roadmap Arquitetural — Explorar Coletivos e Busca Móvel Materializados
+# Roadmap Arquitetural — Descoberta de Coletivos Validada Funcionalmente
 
 ## 1. Autoridade
 
-Este documento governa a sequência global do Repositório de Conhecimento da Guivos. O estado transversal vigente é declarado pelo Registro do Estado Atual.
+Este documento governa a sequência global do Repositório. O estado oficial permanece no Registro do Estado Atual.
 
 ## 2. Estado atual
 
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Explorar Coletivos e busca móvel materializados | M7.62 |
-| Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
-| Contratos de Coletivos | descoberta, reputação e interação concluídas | UXA-056 a UXA-058 |
-| Programa de Coletivos | 88 estados organizados; nove referências P0A | UXA-059 |
-| Descoberta visual de Coletivos | cinco SVGs móveis; validação pendente | UXA-060 |
-| Opportunity Boost | 46 wireframes; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
-| Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
-| Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
-| Protótipo, design e testes | não iniciados | — |
+| Marco | descoberta de Coletivos validada | M7.63 |
+| Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
+| Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
+| Descoberta móvel | cinco SVGs materializados e validados | UXA-060; UXA-061 |
+| Perfil Público | não materializado | UXA-062 futura |
+| Opportunity Boost | 46 materializados; 36 validados; dez pendentes | UXA-038 a UXA-055 |
+| Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Sequência executada
 
 1. Fundação e Modelo Fundamental consolidados;
-2. Guivos Journey concluído funcionalmente;
+2. Guivos Journey estruturado;
 3. Modelo Econômico inicial documentado;
 4. validação externa e 18 decisões humanas concluídas;
 5. remediação do repositório concluída;
 6. Arquitetura da Experiência integrada;
-7. Home, início protegido, compreensão inicial, Tela Hoje e Mapa estruturados;
-8. experiências de Organizações e Coletivos estruturadas;
-9. planos, benefícios, limites e preços candidatos definidos;
-10. Opportunity Boost definido como add-on publicitário candidato;
-11. experiência funcional do Boost validada;
-12. configuração para computador criada e validada;
-13. cartão patrocinado e explicação criados e validados;
-14. Lista e Mapa patrocinados criados e validados;
-15. gestão para computador criada e validada;
-16. relatório agregado criado e validado;
-17. 25 wireframes validados transversalmente;
-18. configuração móvel criada e validada;
-19. gestão móvel criada e validada;
-20. estados residuais do Boost materializados;
-21. descoberta, perfil público e participação em Coletivos contratados;
-22. avaliação e reputação contratadas;
-23. interações, recomendações e conexões contratadas;
-24. programa e priorização dos wireframes de Coletivos definidos;
-25. Explorar Coletivos, busca, filtros, zero e origem materializados em cinco SVGs móveis.
+7. Home, início protegido, compreensão, Tela Hoje e Mapa estruturados;
+8. baseline comercial e Opportunity Boost definidos como candidatos;
+9. 46 wireframes do Boost materializados;
+10. 36 wireframes do Boost validados por pacote;
+11. contratos de Coletivos UXA-056 a UXA-058 concluídos;
+12. programa UXA-059 concluído;
+13. descoberta móvel UXA-060 materializada;
+14. descoberta móvel UXA-061 validada após reformulação.
 
-## 4. Sequência pessoal vigente
+## 4. Percurso de Coletivos
 
 ```text
-Página Inicial pública
-→ decisão voluntária de iniciar ou explorar
-→ explicação do ambiente protegido
-→ acesso, somente quando necessário
-→ escolha e rascunho mínimo
-→ revisão e autorização específica
-→ processamento temporário e interrompível
-→ compreensão inicial como hipótese
-→ decisões separadas sobre persistência e personalização
-→ Tela Hoje
-→ Hoje | Jornada | Explorar | Mapa | Eu
-```
-
-Oferta de plano e Opportunity Boost permanecem fora do início protegido, consentimento, compreensão e Próximo Passo pessoal.
-
-## 5. Percurso dos Coletivos
-
-```text
-buscar, explorar, receber sugestão, recomendação ou convite
-→ compreender origem e resultados
-→ conhecer perfil público
-→ acompanhar ou iniciar participação
-→ confirmar vínculo, quando aplicável
-→ acessar Meus Coletivos e Início do participante
-→ receber comunicados e atualizações controláveis
-→ perguntar, responder, discutir e participar de atividades
-→ solicitar contato ou recomendar com consentimento
+explorar ou buscar
+→ comparar resultados
+→ compreender origem
+→ abrir Perfil Público
+→ acompanhar ou solicitar participação
+→ acompanhar vínculo
+→ acessar Meus Coletivos e ambiente interno
+→ comunicar e participar
 → avaliar experiência elegível
-→ silenciar, bloquear, denunciar, pausar ou sair
+→ recomendar ou solicitar contato
+→ pausar, bloquear, denunciar ou sair
 ```
 
 Nenhuma etapa cria automaticamente a seguinte.
 
-## 6. Programa de materialização
+## 5. P0A — estado
 
-A UXA-059 divide a execução em:
+| Ordem | Superfície | Estado |
+|---:|---|---|
+| 1 | Explorar Coletivos | materializada e validada |
+| 2 | Resultados de Busca | materializada e validada |
+| 3 | Perfil Público | próxima candidata; não iniciada |
+| 4 | Solicitação de Participação | não iniciada |
+| 5 | Solicitação Pendente | não iniciada |
+| 6 | Meus Coletivos | não iniciada |
+| 7 | Central de Atualizações | não iniciada |
+| 8 | Início do Participante | não iniciado nesta reformulação |
+| 9 | Visão Geral do Responsável | não iniciada |
 
-- P0A — espinha dorsal;
-- P0B — estados críticos;
-- P1 — participação e operação recorrente;
-- P2 — confiança, recomendação, contato e proteção.
+## 6. Descoberta validada
 
-Por padrão, cada pacote possui até três superfícies principais ou seis SVGs e exige validação antes da ampliação.
-
-## 7. UXA-060 — primeira família visual
-
-Foram materializados:
-
-1. Explorar Coletivos;
-2. resultados de busca;
-3. filtros;
-4. busca sem resultados;
-5. explicação da origem.
-
-A família demonstra:
+A UXA-061 confirma:
 
 - exploração sem personalização;
-- busca, tema e território separados;
-- localização precisa opcional;
-- origem por item;
+- região manual sem localização precisa;
+- origens separadas;
 - primeiro resultado orgânico;
-- publicidade identificada e posterior ao primeiro orgânico;
-- ordenação orgânica independente de pagamento;
-- filtros aplicados somente após confirmação;
-- preferência publicitária fora dos filtros;
-- zero confirmado diferente de erro;
-- ausência de preenchimento patrocinado no zero;
-- Perfil Público como continuidade pendente.
+- publicidade identificada;
+- ordem orgânica independente do pagamento;
+- publicidade com Perfil Público equivalente;
+- filtros com escopo e seleção acessíveis;
+- zero distinto de erro;
+- recuperação consciente;
+- contexto preservado no retorno;
+- visualização sem vínculo.
 
-Os cinco SVGs aguardam validação funcional.
+## 7. Próxima etapa recomendada
 
-## 8. Cobertura visual
+### UXA-062 — Perfil Público do Coletivo
 
-| Família | Materializados | Validados por pacote | Pendentes |
-|---|---:|---:|---:|
-| Opportunity Boost | 46 | 36 | 10 |
-| Coletivos — descoberta e busca | 5 | 0 | 5 |
-| Demais famílias de Coletivos | 0 | 0 | 0 |
+Escopo candidato:
 
-## 9. Baseline comercial preservada
+- perfil público principal móvel;
+- entrada aberta;
+- entrada mediante aprovação;
+- entradas temporariamente fechadas;
+- reputação com base insuficiente;
+- origem da navegação preservada;
+- ações `Acompanhar`, `Participar`, `Ver solicitação`, `Abrir Coletivo` ou `Entradas indisponíveis` conforme estado.
 
-- Pessoas: Free, Plus e Pro candidatos;
-- Coletivos: Livre, Gestão, Impacto e Enterprise candidatos;
-- Organizações: Business Start, Growth e Scale candidatos;
-- Boost Local: orçamento mínimo candidato de R$ 30,00;
-- Boost Regional: orçamento mínimo candidato de R$ 100,00;
-- Boost Ampliado: orçamento mínimo candidato de R$ 300,00;
-- Boost Gerenciado: a partir de R$ 1.000,00;
-- CPM candidato: R$ 12,00 a R$ 25,00;
-- CPC candidato: R$ 0,80 a R$ 2,50.
+Não deverão entrar no mesmo pacote:
 
-Todos os valores permanecem candidatos para validação. CPM e CPC não poderão ser cobrados simultaneamente na mesma campanha.
+- solicitação completa;
+- pendência;
+- Meus Coletivos;
+- comunicação interna;
+- gestão do responsável;
+- avaliação detalhada;
+- mensagens privadas.
 
-## 10. Proteções preservadas
+## 8. Critério de entrada da UXA-062
 
-- gratuito mantém valor real;
-- catálogo público e orgânico permanecem acessíveis;
-- plano, transação, comissão e Boost permanecem separados;
-- conteúdo protegido não alimenta publicidade;
-- localização precisa permanece opcional;
-- publicidade não compra relevância, reputação ou impacto;
-- primeiro resultado orgânico é preservado no cenário materializado;
-- preferência publicitária não é filtro;
-- zero não é erro;
-- visualização não cria participação;
-- participação não cria contato privado irrestrito;
-- recomendação informa origem e relação material;
-- notificações são controláveis;
-- dados e mensagens não são transferidos automaticamente;
-- wireframe não equivale a validação ou implementação.
+A UXA-062 somente poderá começar após:
 
-## 11. Próxima transição
+- integração da UXA-061;
+- nova autorização;
+- preservação da origem e consulta;
+- cenário canônico coerente com a UXA-060;
+- limite de até seis SVGs;
+- nenhum início de protótipo ou Engenharia de Produto.
 
-O próximo pacote recomendado é:
+## 9. Frentes preservadas
 
-> **UXA-061 — Validação Funcional dos Wireframes Móveis de Explorar Coletivos e Resultados de Busca**
-
-Somente após essa validação deverá ser decidido entre:
-
-- reformular a família;
-- avançar para Perfil Público;
-- criar estados adicionais de falha, cobertura parcial ou baixa conectividade.
-
-## 12. Frentes preservadas
-
-- validação funcional dos dez estados residuais da UXA-055;
+- validação dos dez estados residuais do Boost;
 - pesquisa de disposição a pagar;
-- calibração de preços e publicidade;
-- referência móvel da Home;
+- calibração comercial;
+- referência móvel da Home, quando priorizada;
 - transição para a primeira Tela Hoje;
-- reaplicação dos testes dos Resultados Empresariais;
-- preparação futura das Capacidades Empresariais;
-- políticas especializadas de moderação, privacidade, segurança, estatística e notificações.
+- reaplicação dos testes de Resultados Empresariais;
+- preparação futura das Capacidades Empresariais.
 
 Nenhuma frente avança automaticamente.
 
-## 13. Regra de transição
+## 10. Regra de transição
 
-Contrato não equivale a programa. Programa não equivale a wireframe. Wireframe não equivale a validação. Validação não equivale a protótipo. Protótipo não equivale a teste. Teste não equivale a produção.
+Contrato não equivale a wireframe. Wireframe não equivale a validação. Validação não equivale a protótipo. Protótipo não equivale a teste. Teste não equivale a produção.
