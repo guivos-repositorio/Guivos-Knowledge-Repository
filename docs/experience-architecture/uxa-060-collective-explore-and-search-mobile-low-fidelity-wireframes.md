@@ -1,8 +1,8 @@
 ---
 id: UXA-060
 title: Wireframes Móveis de Explorar Coletivos e Resultados de Busca
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-03
 parent: UXA-005
@@ -26,7 +26,8 @@ depends_on:
   - UXA-055
 related:
   - UXA-061
-  - M7.62
+  - UXA-062
+  - M7.63
 normative: false
 ---
 
@@ -34,221 +35,165 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa a primeira família de wireframes do programa UXA-059 para a descoberta de Coletivos.
+Este documento governa a primeira família móvel de descoberta de Coletivos no programa UXA-059.
 
-O incremento cria referências móveis de baixa fidelidade para:
+A versão 0.2.0 incorpora a validação e as reformulações registradas na UXA-061.
+
+A família contém referências para:
 
 1. Explorar Coletivos;
 2. resultados de busca;
-3. filtros da busca;
+3. filtros;
 4. busca concluída sem resultados;
-5. explicação da origem de descoberta e da publicidade.
+5. explicação da origem patrocinada.
 
-Os artefatos verificam hierarquia, conteúdo, distinção de origem, preservação da consulta, privacidade territorial, publicidade identificada e continuidade para o futuro Perfil Público do Coletivo.
-
-Eles não representam design visual final, dados reais, algoritmo, protótipo navegável, teste com pessoas ou implementação.
+Os artefatos representam baixa fidelidade. Eles não representam design final, dados reais, algoritmo, protótipo, teste ou implementação.
 
 ## 2. Posição no programa
 
-A UXA-059 estabeleceu a sequência P0A, P0B, P1 e P2.
+A UXA-059 organiza a materialização em P0A, P0B, P1 e P2.
 
-Este incremento inicia a P0A e antecipa somente os estados P0B indispensáveis para compreender a própria busca:
+Esta família cobre o início da P0A e apenas os estados P0B indispensáveis à busca:
 
 ```text
 Explorar Coletivos
 → buscar ou escolher tema
 → comparar resultados
 → revisar filtros
-→ compreender a origem
-→ abrir o futuro Perfil Público
+→ compreender origem
+→ abrir futuro Perfil Público
 ```
 
-A busca sem resultados é materializada agora porque altera a ação principal e exige recuperação própria. Ela não autoriza a criação das demais superfícies P0B.
+O Perfil Público, a participação, `Meus Coletivos`, a Central de Atualizações e a gestão permanecem fora deste conjunto.
 
 ## 3. Cenário canônico
 
-A família utiliza um cenário único:
-
-- tema principal: ciclismo;
+- tema: ciclismo;
 - área: Belo Horizonte e Coletivos on-line;
 - localização precisa: não utilizada;
-- personalização: desativada no estado de exploração;
-- Coletivo orgânico principal: `Pedal Horizonte`;
-- segundo resultado orgânico: `Ciclistas da Serra`;
+- personalização: desativada na exploração;
+- resultado orgânico principal: `Pedal Horizonte`;
+- resultado orgânico seguinte: `Ciclistas da Serra`;
 - conteúdo patrocinado ilustrativo: `Pedal Urbano Aberto`;
-- anunciante identificado: `Associação Movimento Livre`;
-- continuidade futura: Perfil Público do Coletivo.
+- anunciante: `Associação Movimento Livre`;
+- destino futuro: Perfil Público do Coletivo.
 
-Nomes, contagens e condições são dados fictícios para validação estrutural.
+Os dados são fictícios e existem somente para validação estrutural.
 
-## 4. Artefatos visuais
+## 4. Artefatos
 
 ### 4.1 Explorar Coletivos
 
-![Wireframe móvel de Explorar Coletivos](../assets/wireframes/uxa-060-collective-explore-mobile.svg)
-
-Arquivo:
+![Explorar Coletivos](../assets/wireframes/uxa-060-collective-explore-mobile.svg)
 
 `docs/assets/wireframes/uxa-060-collective-explore-mobile.svg`
 
 ### 4.2 Resultados de busca
 
-![Wireframe móvel de resultados de busca de Coletivos](../assets/wireframes/uxa-060-collective-search-results-mobile.svg)
-
-Arquivo:
+![Resultados de busca de Coletivos](../assets/wireframes/uxa-060-collective-search-results-mobile.svg)
 
 `docs/assets/wireframes/uxa-060-collective-search-results-mobile.svg`
 
-### 4.3 Filtros da busca
+### 4.3 Filtros
 
-![Wireframe móvel de filtros da busca de Coletivos](../assets/wireframes/uxa-060-collective-search-filters-mobile.svg)
-
-Arquivo:
+![Filtros da busca de Coletivos](../assets/wireframes/uxa-060-collective-search-filters-mobile.svg)
 
 `docs/assets/wireframes/uxa-060-collective-search-filters-mobile.svg`
 
-### 4.4 Busca sem resultados
+### 4.4 Sem resultados
 
-![Wireframe móvel da busca de Coletivos sem resultados](../assets/wireframes/uxa-060-collective-search-no-results-mobile.svg)
-
-Arquivo:
+![Busca de Coletivos sem resultados](../assets/wireframes/uxa-060-collective-search-no-results-mobile.svg)
 
 `docs/assets/wireframes/uxa-060-collective-search-no-results-mobile.svg`
 
-### 4.5 Origem da descoberta
+### 4.5 Explicação patrocinada
 
-![Wireframe móvel de explicação da origem de descoberta](../assets/wireframes/uxa-060-collective-discovery-origin-mobile.svg)
-
-Arquivo:
+![Explicação da origem patrocinada](../assets/wireframes/uxa-060-collective-discovery-origin-mobile.svg)
 
 `docs/assets/wireframes/uxa-060-collective-discovery-origin-mobile.svg`
 
-## 5. Dimensões e canal
-
-Todos os artefatos possuem:
+## 5. Canal e dimensão
 
 - canal: aplicativo móvel;
 - largura: 390 pixels;
 - altura: 844 pixels;
-- fidelidade: baixa;
-- navegação recorrente: `Hoje | Jornada | Explorar | Mapa | Eu`;
+- navegação: `Hoje | Jornada | Explorar | Mapa | Eu`;
 - item ativo: `Explorar`.
 
-A referência para computador não é criada porque o programa prioriza a experiência pessoal móvel e ainda não foi demonstrada mudança material de hierarquia.
+Uma referência para computador somente será criada se houver mudança material de hierarquia ou responsabilidade.
 
-## 6. Hierarquia da exploração
+## 6. Explorar Coletivos
 
-A superfície `Explorar Coletivos` utiliza:
+A hierarquia validada é:
 
 ```text
-título e estado de personalização
+título e personalização
 → busca direta
-→ área de exploração editável
-→ categorias e temas
+→ área editável
+→ categorias
 → Coletivos com entrada disponível
-→ origem identificada em cada cartão
-→ explicação geral das origens
+→ origem em cada cartão
+→ explicação das origens
 → privacidade territorial
 → navegação recorrente
 ```
 
-A tela não depende de conteúdo da Jornada para ser útil.
+A superfície funciona sem conteúdo da Jornada e sem localização precisa.
 
-## 7. Busca direta
+`Com entrada disponível` poderá reunir entrada aberta ou mediante aprovação, desde que o modelo real permaneça explícito.
 
-O campo de busca admite intenção por:
+Coletivos privados, protegidos e não listados não aparecem na exploração geral.
 
-- nome;
-- propósito;
-- tema;
-- categoria;
-- cidade ou região;
-- modalidade;
-- atividade;
-- Organização relacionada;
-- disponibilidade de entrada.
+## 7. Busca e resultados
 
-A ação não cria participação, acompanhamento, contato, recomendação ou personalização.
+A lista validada apresenta:
 
-## 8. Exploração por tema
+- busca preservada;
+- área manual e ausência de localização precisa;
+- filtros ativos;
+- total correspondente;
+- ordenação explicável;
+- primeiro resultado orgânico;
+- publicidade identificada;
+- resultados orgânicos posteriores;
+- origem em cada cartão;
+- continuidade para o Perfil Público.
 
-O estado principal apresenta categorias ilustrativas:
+A ação `Limpar só filtros` não apaga busca ou área.
 
-- Esporte e movimento;
-- Espiritualidade e propósito;
-- Voluntariado e causas;
-- Aprendizagem e prática;
-- Negócios e carreira.
+## 8. Cartões
 
-A seleção de categoria deverá permanecer identificada como `exploração por tema`, não como recomendação pessoal.
-
-Coletivos sensíveis, privados, protegidos ou não listados não serão expostos pela exploração geral.
-
-## 9. Área e localização
-
-O exemplo utiliza:
-
-> **Belo Horizonte e Coletivos on-line**
-
-A pessoa poderá alterar a área manualmente. Localização precisa não é requisito.
-
-A exploração deverá distinguir:
-
-- cidade ou região informada;
-- localização aproximada autorizada;
-- localização precisa temporária, quando aplicável;
-- modalidade on-line;
-- ausência de território.
-
-Visualizar resultados não autoriza histórico de deslocamento, rastreamento contínuo ou uso publicitário de localização precisa.
-
-## 10. Resultados de busca
-
-A hierarquia da Lista será:
-
-```text
-consulta preservada
-→ área da consulta
-→ filtros ativos
-→ quantidade de resultados
-→ ordenação explicável
-→ primeiro resultado orgânico
-→ publicidade identificada, quando aplicável
-→ resultados orgânicos seguintes
-→ explicação das origens
-→ continuidade para o Perfil Público
-```
-
-O primeiro resultado permanece orgânico.
-
-## 11. Campos dos cartões
-
-Cada cartão poderá apresentar, quando disponível e permitido:
+Cada cartão poderá apresentar, quando permitido:
 
 - origem;
 - nome;
 - propósito ou categoria;
 - território e modalidade;
 - modelo de entrada;
-- funcionamento atual;
+- funcionamento;
 - acessibilidade;
-- contagem governada de participantes;
+- contagem governada;
 - proteção da lista nominal;
 - relação comercial;
-- ação de explicação;
-- ação para abrir o Perfil Público.
+- explicação;
+- continuidade ao Perfil Público.
 
-Informação ausente deverá ser declarada como não informada ou indisponível. Não será completada por inferência.
+Informação ausente não será preenchida por inferência.
 
-## 12. Ordenação orgânica
+## 9. Ordenação
 
-O estado ilustrado declara:
+A ordenação orgânica poderá considerar:
 
-> **Ordenado por: busca, filtros, território e entrada disponível**
+- correspondência com busca;
+- filtros;
+- território;
+- modalidade;
+- entrada disponível;
+- atualidade;
+- acessibilidade;
+- confiabilidade.
 
-A ordenação poderá considerar os fatores autorizados pela UXA-056, incluindo correspondência, modalidade, atualidade, acessibilidade e confiabilidade.
-
-Não poderão dominar a ordem:
+Não poderão dominar:
 
 - quantidade de participantes;
 - volume de mensagens;
@@ -258,48 +203,48 @@ Não poderão dominar a ordem:
 - publicidade;
 - avaliação isolada.
 
-Sem gate de personalização, a interface não utilizará `melhor para você`, `ideal para seu momento` ou formulação equivalente.
+Sem personalização autorizada, não será usada linguagem como `melhor para você`.
 
-## 13. Contagens
+## 10. Contagem de participantes
 
-O exemplo utiliza:
+A formulação ilustrada é:
 
 > **Participantes: cerca de 80 · lista nominal protegida**
 
 A contagem:
 
-- é aproximada no cenário;
-- não mistura seguidores, participantes, presença em atividade ou moderadores;
+- é aproximada;
+- não mistura seguidores, participantes, presença ou moderadores;
 - não cria ranking;
 - não prova qualidade ou impacto;
 - não torna a lista nominal pública.
 
-## 14. Publicidade identificada
+## 11. Publicidade
 
-O resultado patrocinado apresenta antes do conteúdo:
+O item patrocinado apresenta, antes do conteúdo:
 
 > **PATROCINADO · PUBLICIDADE**
 
-E declara:
+Também apresenta:
 
 - anunciante;
-- critérios utilizados;
+- critérios;
 - distinção de recomendação;
-- ausência de alteração da ordem orgânica;
-- ação `Por que este anúncio?`;
-- ação para ocultar publicidade.
+- ordem orgânica preservada;
+- explicação `Por que este anúncio?`;
+- continuidade `Ver perfil público`.
 
-Publicidade não será usada para preencher artificialmente o estado sem resultados.
+A possibilidade de abrir o Perfil Público não elimina a natureza comercial da distribuição.
 
-O artefato não aprova uma política final de publicidade para Coletivos. Ele demonstra somente o comportamento funcional exigido caso a distribuição seja autorizada por contrato econômico e política própria.
+Publicidade não preenche artificialmente a busca vazia.
 
-## 15. Origem da descoberta
+## 12. Origem
 
-Cada item deverá distinguir:
+As origens permanecem distintas:
 
 - resultado de busca;
 - exploração por tema;
-- resultado territorial;
+- território;
 - sugestão da Guivos;
 - recomendação pessoal;
 - convite;
@@ -308,43 +253,38 @@ Cada item deverá distinguir:
 
 Uma origem não poderá ser apresentada como outra.
 
-A pessoa poderá abrir `Por que aparece aqui?` para compreender a origem e os critérios materiais.
+A materialização detalhada de sugestão, recomendação e convite permanece para pacotes próprios.
 
-## 16. Explicação patrocinada
+## 13. Explicação patrocinada
 
-O wireframe de origem utiliza um item patrocinado para demonstrar o caso de maior risco de confusão.
-
-A explicação apresenta:
+A explicação validada apresenta:
 
 - natureza comercial;
 - anunciante;
 - posição após o primeiro resultado orgânico;
 - critérios objetivos;
 - ausência de ampliação silenciosa;
-- informações não utilizadas;
-- ausência de entrega da identidade ao anunciante;
-- controles separados.
+- dados não utilizados;
+- identidade do visualizador não entregue;
+- controles separados;
+- retorno aos resultados com contexto preservado.
 
-O conteúdo protegido da Jornada, mensagens privadas, participação em grupos sensíveis, localização precisa e histórico de deslocamento permanecem excluídos.
+Ao voltar, permanecem busca, área, filtros e posição do item.
 
-## 17. Controles de publicidade
-
-O estado demonstra:
+## 14. Controles publicitários
 
 - ocultar este anúncio;
 - reduzir semelhantes;
 - desativar publicidade;
 - denunciar anúncio.
 
-Essas ações possuem escopos diferentes e não serão combinadas em um controle genérico.
+Os efeitos são diferentes. Preferência publicitária não é filtro orgânico.
 
-A preferência publicitária permanece separada dos filtros da busca.
+## 15. Filtros
 
-## 18. Filtros
+O painel validado preserva busca e área.
 
-O painel preserva consulta e área antes de qualquer mudança.
-
-As dimensões demonstradas são:
+As dimensões ilustradas são:
 
 - tema;
 - forma de entrada;
@@ -353,45 +293,42 @@ As dimensões demonstradas são:
 - acessibilidade;
 - idioma.
 
-O exemplo possui três filtros selecionados.
+Os filtros selecionados utilizam texto e marca, sem depender apenas de cor.
 
-Nenhuma mudança é aplicada antes da ação consciente:
+`Cancelar` não aplica mudanças.
 
-> **Aplicar 3 filtros**
+`Limpar somente filtros` não altera:
 
-## 19. Limpeza e cancelamento
-
-`Cancelar` fecha o painel sem alterar a consulta.
-
-`Limpar seleções` remove somente as escolhas do painel. Não apaga automaticamente:
-
-- texto pesquisado;
+- busca;
 - área;
-- histórico de navegação necessário ao retorno;
-- preferência de publicidade;
-- autorização de localização.
+- preferência publicitária;
+- autorização territorial.
 
-## 20. Estado sem resultados
+Nenhuma mudança é aplicada antes da confirmação.
 
-O estado somente será apresentado quando:
+## 16. Estado sem resultados
 
-- a consulta tiver sido concluída;
-- busca, área e filtros forem conhecidos;
-- a cobertura aplicável tiver sido verificada;
-- não existir falha material ativa;
-- o total real for zero naquele momento.
+O estado somente aparece quando:
 
-A mensagem é:
+- a consulta foi concluída;
+- busca, região e filtros são conhecidos;
+- a cobertura aplicável foi verificada;
+- não existe falha material;
+- o total real é zero.
+
+A região é apresentada separadamente:
+
+> **Belo Horizonte · região manual · sem localização precisa**
+
+A mensagem principal é:
 
 > **0 resultados correspondem a esta consulta**
 
 > **Sua consulta permanece intacta.**
 
-Ela não afirma que não existem Coletivos na cidade, no tema ou na plataforma inteira.
+## 17. Recuperação do zero
 
-## 21. Recuperação do zero
-
-A pessoa poderá escolher separadamente:
+A pessoa poderá:
 
 - editar busca;
 - revisar filtros;
@@ -399,59 +336,71 @@ A pessoa poderá escolher separadamente:
 - alterar modalidade;
 - explorar sem alterar a consulta.
 
-Nenhuma ação remove filtros, amplia território, ativa localização, troca modalidade ou insere publicidade sem confirmação.
+Cada mudança deverá ser revisada antes da aplicação e preservar as dimensões não alteradas.
 
-## 22. Zero, erro e cobertura parcial
+Publicidade não será usada para esconder o estado vazio.
 
-Permanecem condições distintas:
+## 18. Distinção de estados
 
 | Condição | Tratamento |
 |---|---|
-| zero confirmado | preservar consulta e oferecer revisão consciente |
-| falha de fonte | declarar impossibilidade de verificar todas as fontes |
+| zero confirmado | preservar consulta e permitir revisão consciente |
+| falha de fonte | declarar que nem todas as fontes foram verificadas |
 | carregamento | manter estrutura e informar atualização |
 | baixa conectividade | declarar possível desatualização |
 | cobertura parcial | limitar a conclusão às fontes disponíveis |
-| indisponibilidade temporária | oferecer nova tentativa sem declarar zero |
+| indisponibilidade | permitir nova tentativa sem declarar zero |
 
-Este incremento materializa somente o zero confirmado. Os demais estados continuam pendentes.
+Esta família materializa apenas o zero confirmado.
 
-## 23. Continuidade para Perfil Público
+## 19. Território e privacidade
 
-`Ver perfil público` será a ação de continuidade dos resultados.
+Permanecem diferentes:
 
-O futuro Perfil Público deverá receber, quando tecnicamente possível e compatível com privacidade:
+- região manual;
+- localização aproximada autorizada;
+- localização precisa temporária;
+- modalidade on-line;
+- ausência de território.
 
-- origem da navegação;
+A exploração e a busca não exigem localização precisa.
+
+Visualizar resultados não autoriza rastreamento, histórico de deslocamento ou uso publicitário de posição precisa.
+
+## 20. Continuidade para Perfil Público
+
+`Ver perfil público` será a continuidade dos resultados orgânicos e patrocinados autorizados.
+
+O Perfil Público deverá receber, quando permitido:
+
+- origem;
 - consulta;
 - área;
 - filtros;
-- posição do resultado;
+- posição;
 - relação comercial;
 - estado de personalização.
 
-Ao retornar, a pessoa deverá reencontrar o contexto da busca.
+Ao retornar, o contexto deverá ser recuperado.
 
-O Perfil Público não é criado neste incremento.
+O Perfil Público não é criado nesta família.
 
-## 24. Acessibilidade
+## 21. Acessibilidade funcional
 
 Os artefatos utilizam:
 
-- títulos textuais;
-- rótulos anteriores ao conteúdo;
-- estados que não dependem apenas de cor;
+- `title` e `desc`;
+- rótulos textuais;
+- seleção identificada por texto e marca;
+- total zero escrito;
 - ações nomeadas;
-- ordem funcional linear;
-- textos alternativos por `title` e `desc` nos SVGs;
-- declaração textual do total zero;
-- distinção textual entre orgânico e patrocinado.
+- origem e publicidade textuais;
+- hierarquia linear;
+- ausência de dependência exclusiva de cor.
 
-A materialização não conclui conformidade técnica ou teste com tecnologia assistiva.
+Conformidade técnica permanece pendente.
 
-## 25. Privacidade e proteção
-
-A família preserva:
+## 22. Privacidade e proteção
 
 - exploração sem personalização;
 - área manual;
@@ -460,104 +409,54 @@ A família preserva:
 - ausência de vínculo após visualização;
 - ausência de contato automático;
 - conteúdo protegido fora da publicidade;
-- identidade do visualizador não entregue ao Coletivo ou anunciante;
+- identidade do visualizador não entregue;
 - Coletivos protegidos fora da busca geral;
 - origem e relação comercial explicáveis.
 
-## 26. Matriz de cobertura
+## 23. Resultado da validação
 
-| Estado contratual | Artefato | Situação |
-|---|---|---|
-| busca e exploração com resultados | Explorar; Resultados | materializado |
-| busca sem resultados | Sem resultados | materializado |
-| filtros | Filtros | materializado |
-| origem da descoberta | Explorar; Resultados; Origem | materializado |
-| resultado patrocinado identificado | Resultados; Origem | materializado condicionalmente |
-| localização precisa não exigida | Explorar; Filtros | materializado |
-| consulta preservada | Resultados; Filtros; Sem resultados | materializado |
-| continuidade para Perfil Público | Explorar; Resultados | ponto de saída materializado; destino pendente |
-| falha de busca com orgânico preservado | — | pendente |
-| localização desativada como estado especializado | — | pendente quando alterar a hierarquia |
+A UXA-061 considera a família **funcionalmente válida após reformulação**.
 
-## 27. Contagem de artefatos
+| Artefato | Resultado |
+|---|---|
+| Explorar Coletivos | válido sem alteração |
+| Resultados | válido após reformulação |
+| Filtros | válido após reformulação |
+| Sem resultados | válido após reformulação |
+| Explicação patrocinada | válido após reformulação |
 
-Este incremento cria:
+## 24. Cobertura
 
-- 5 SVGs móveis;
-- 1 documento de materialização;
-- 0 validações funcionais especializadas;
-- 0 protótipos;
-- 0 componentes técnicos.
+### Descoberta de Coletivos
 
-A cobertura visual passa a ser registrada separadamente:
+- cinco materializados;
+- cinco validados;
+- zero pendente nesta família.
 
-- Opportunity Boost: 46 wireframes;
-- Coletivos — descoberta e busca: 5 wireframes pendentes de validação;
-- demais famílias de Coletivos: não iniciadas.
+### Opportunity Boost
 
-## 28. Critérios para validação posterior
+Permanece separado:
 
-A futura validação deverá verificar se:
+- 46 materializados;
+- 36 validados por pacote;
+- dez pendentes.
 
-1. Explorar é útil sem personalização;
-2. busca, categoria, território e origem permanecem distintos;
-3. o primeiro resultado é orgânico;
-4. publicidade é identificada antes do conteúdo;
-5. publicidade não altera a ordem orgânica;
-6. contagem não funciona como ranking;
-7. filtros preservam consulta e área;
-8. preferência publicitária não se confunde com filtro;
-9. zero confirmado não se confunde com erro;
-10. a recuperação não altera a consulta silenciosamente;
-11. Coletivos protegidos permanecem fora da busca geral;
-12. localização precisa não é exigida;
-13. visualizar não cria vínculo;
-14. origem pode ser compreendida e contestada;
-15. continuidade para Perfil Público preserva contexto;
-16. os cinco SVGs permanecem suficientes, sem divisão prematura.
+## 25. Limites
 
-## 29. Estado de validação
+Esta família não:
 
-Os cinco wireframes estão **materializados e aguardando validação funcional especializada**.
-
-A integração deste documento não os declara:
-
-- funcionalmente válidos;
-- testados com pessoas;
-- prontos para protótipo;
-- aprovados para design;
-- especificados para desenvolvimento.
-
-## 30. Limites
-
-Este incremento não:
-
+- define algoritmo;
+- cria publicidade real;
 - cria Perfil Público;
-- cria participação ou acompanhamento;
-- cria `Meus Coletivos`;
-- cria Central de Atualizações;
-- cria gestão do responsável;
-- define algoritmo de busca;
-- define política final de categorias;
-- autoriza publicidade comercial real;
-- define inventário, orçamento ou frequência;
-- cria localização ou mapas;
-- define tecnologia;
-- cria responsividade para computador ou tablet;
-- executa teste;
-- inicia Engenharia de Produto;
-- altera os 46 wireframes do Opportunity Boost.
+- cria participação;
+- cria dados reais;
+- cria protótipo;
+- executa testes;
+- inicia design final;
+- inicia Engenharia de Produto.
 
-## 31. Próximo ato recomendado
+## 26. Próximo ato governado
 
-Após integração e nova autorização, o próximo pacote recomendado será:
-
-> **UXA-061 — Validação Funcional dos Wireframes Móveis de Explorar Coletivos e Resultados de Busca**
-
-Somente após essa validação deverá ser decidido entre:
-
-1. reformular esta família;
-2. avançar para o Perfil Público do Coletivo;
-3. materializar estados críticos adicionais de busca.
+Após integração e nova autorização, o próximo pacote recomendado será a UXA-062 — Wireframes Móveis do Perfil Público do Coletivo.
 
 Nenhum ato posterior é iniciado automaticamente.
