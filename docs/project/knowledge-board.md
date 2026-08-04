@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.41.0
+version: 12.42.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.41.0
+  - ROADMAP-12.42.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -23,9 +23,10 @@ related:
   - UXA-063
   - UXA-064
   - UXA-065
+  - UXA-066
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.67
+  - M7.68
 normative: false
 ---
 
@@ -40,7 +41,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | revisão e solicitação móvel validadas | M7.67 |
+| Marco | Solicitação Pendente móvel materializada | M7.68 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações candidatos | GEM-004-A1 |
@@ -50,6 +51,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Descoberta visual | 5 SVGs materializados e validados | UXA-060; UXA-061 |
 | Perfil Público visual | 4 SVGs materializados e validados | UXA-062; UXA-063 |
 | Revisão e Solicitação visual | 5 SVGs materializados e validados | UXA-064; UXA-065 |
+| Solicitação Pendente visual | 8 SVGs materializados; validação pendente | UXA-066 |
 | Boost visual | 46 materializados; 36 validados; 10 pendentes | UXA-040 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -62,29 +64,31 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | descoberta e busca | validada | manter como origem do Perfil Público |
 | Perfil Público | validado | fornecer contexto à participação |
 | Revisão e Solicitação de Participação | validada | preservar UXA-064 e UXA-065 |
-| Solicitação Pendente | não iniciada | aguardar autorização para UXA-066 |
-| Meus Coletivos | não iniciado | aguardar vínculo e pendência compreensíveis |
+| Solicitação Pendente | materializada | validar na UXA-067 |
+| Meus Coletivos | não iniciado | aguardar validação da pendência |
 | Central de Atualizações | não iniciada | aguardar continuidade pessoal |
 | Início do Participante | não reformulado | aguardar etapas anteriores |
-| gestão do responsável | não iniciada | aguardar experiência da pessoa |
+| gestão do responsável | não iniciada | aguardar experiência da Pessoa |
 
-## 4. Revisão e solicitação validadas
+## 4. Solicitação Pendente materializada
 
-A UXA-065 consolidou:
+A UXA-066 cobre:
 
-- vínculo e consequência antes da ação;
-- entrada aberta, aprovação e convite separados;
-- visibilidade inicial como estado explícito;
-- dados enviados e protegidos;
-- permissões separadas;
-- confirmações inicialmente vazias;
-- acessibilidade fora das confirmações obrigatórias;
-- cancelamento anterior ao envio;
-- autoridade e prazo sem promessa;
-- ausência de função ou vínculo automático;
-- comprovante separado de Solicitação Pendente;
-- alegação protegida identificada como não verificada;
-- confidencialidade sem garantia absoluta.
+- espera por decisão;
+- análise protegida;
+- pedido de informação adicional;
+- revisão da resposta adicional;
+- cancelamento;
+- aprovação;
+- recusa;
+- expiração;
+- autoridade, prazo, dados e consequência;
+- cancelamento separado de recusa;
+- expiração separada de recusa;
+- aprovação sem função automática;
+- recusa sem reputação negativa da Pessoa;
+- proteção proporcional e exposição mínima;
+- ausência de `Meus Coletivos` ativo.
 
 ## 5. Cobertura visual
 
@@ -94,6 +98,9 @@ A UXA-065 consolidou:
 | Coletivos — descoberta | 5 | 5 | 0 |
 | Coletivos — Perfil Público | 4 | 4 | 0 |
 | Coletivos — revisão e solicitação | 5 | 5 | 0 |
+| Coletivos — Solicitação Pendente | 8 | 0 | 8 |
+
+Total de Coletivos: 22 materializados, 14 validados e 8 pendentes.
 
 ## 6. Proteções ativas
 
@@ -108,25 +115,40 @@ A UXA-065 consolidou:
 - acessibilidade não é condição obrigatória;
 - marketing e notificações não são ativados pela participação;
 - comprovante não substitui estado pendente;
+- atraso, cancelamento e expiração não são recusa;
+- recusa não é reputação da Pessoa;
 - alegação não verificada não é fato;
 - denúncia permanece separada de avaliação.
 
-## 7. Fronteiras
+## 7. Ambiente de simulação proposto
+
+Foi identificada a necessidade de uma visualização transversal que reúna as jornadas de:
+
+- Pessoa;
+- Coletivo;
+- Organização.
+
+A recomendação é um único ambiente de simulação com perspectivas separadas, reutilizando as telas canônicas e mostrando sequência, estado de maturidade, dependências e lacunas.
+
+O ambiente não foi criado e dependerá de pacote e autorização próprios.
+
+## 8. Fronteiras
 
 Não foram iniciados:
 
-- Solicitação Pendente;
-- informação adicional, recusa, expiração ou contestação;
+- validação funcional da UXA-066;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
 - gestão do responsável;
+- contestação completa;
+- ambiente de simulação das jornadas;
 - política jurídica;
 - protótipo;
 - testes;
 - identidade visual;
 - Engenharia de Produto.
 
-## 8. Próxima transição
+## 9. Próxima transição
 
-**UXA-066 — Wireframes Móveis da Solicitação Pendente em Coletivos**, mediante autorização separada.
+**UXA-067 — Validação Funcional e Reformulação da Solicitação Pendente Móvel em Coletivos**, mediante autorização separada.
