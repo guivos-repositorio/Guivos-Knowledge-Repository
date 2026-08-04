@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.37.0
+version: 12.38.0
 owner: Guivos
-last_updated: 2026-08-03
+last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.37.0
+  - ROADMAP-12.38.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -19,9 +19,10 @@ related:
   - UXA-059
   - UXA-060
   - UXA-061
+  - UXA-062
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.63
+  - M7.64
 normative: false
 ---
 
@@ -36,155 +37,86 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | descoberta de Coletivos validada | M7.63 |
+| Marco | Perfil Público móvel materializado | M7.64 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
 | Programa de Coletivos | 88 estados; nove referências P0A | UXA-059 |
-| Descoberta visual | cinco SVGs materializados e validados | UXA-060; UXA-061 |
-| Boost visual | 46 materializados; 36 validados; dez pendentes | UXA-040 a UXA-055 |
+| Descoberta visual | 5 SVGs materializados e validados | UXA-060; UXA-061 |
+| Perfil Público visual | 4 SVGs materializados; validação pendente | UXA-062 |
+| Boost visual | 46 materializados; 36 validados; 10 pendentes | UXA-040 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 3. Portfólio documental
+## 3. Portfólio de Coletivos
 
-- Fundação e Modelo Fundamental;
-- Guivos Journey;
-- Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-061;
-- Home, início protegido, compreensão, Tela Hoje e Mapa;
-- contratos de Coletivos;
-- programa P0A–P2;
-- descoberta móvel de Coletivos validada;
-- baseline comercial candidata;
-- Opportunity Boost candidato;
-- 46 wireframes do Boost;
-- cinco wireframes de descoberta de Coletivos.
+| Camada | Estado | Próxima condição |
+|---|---|---|
+| contratos | concluída | preservar autoridades UXA-056 a UXA-058 |
+| programa | concluído | seguir P0A–P2 |
+| descoberta e busca | validada | manter como origem do Perfil Público |
+| Perfil Público | materializado | validar na UXA-063 |
+| Solicitação de Participação | não iniciada | aguardar validação do Perfil Público |
+| Solicitação Pendente | não iniciada | aguardar participação |
+| Meus Coletivos | não iniciado | aguardar vínculos compreensíveis |
+| Central de Atualizações | não iniciada | aguardar continuidade pessoal |
+| Início do Participante | não reformulado | aguardar etapas anteriores |
+| gestão do responsável | não iniciada | aguardar experiência da pessoa |
 
-## 4. Descoberta de Coletivos
+## 4. Perfil Público materializado
 
-### Artefatos válidos
+A UXA-062 cobre:
 
-1. Explorar Coletivos;
-2. Resultados;
-3. Filtros;
-4. Sem resultados;
-5. Explicação patrocinada.
+- entrada aberta;
+- entrada mediante aprovação;
+- entradas temporariamente indisponíveis;
+- apresentação protegida;
+- origem orgânica, patrocinada ou por convite;
+- propósito, funcionamento, regras e acessibilidade;
+- acompanhar separado de participar;
+- contagens e listas governadas;
+- responsáveis e relações institucionais;
+- reputação contextual;
+- publicidade identificada;
+- compartilhamento permitido, proteção e denúncia.
 
-### Estado
-
-- cinco materializados;
-- cinco validados;
-- quatro reformulados;
-- um preservado sem alteração;
-- zero pendente nesta família.
-
-### Regras
-
-- exploração sem personalização;
-- região manual sem posição precisa;
-- origem explícita;
-- primeiro resultado orgânico;
-- publicidade anterior ao conteúdo;
-- pagamento sem alteração da ordem orgânica;
-- publicidade com continuidade ao Perfil Público;
-- contagem sem ranking;
-- busca, área e filtros separados;
-- seleção textual e não apenas cromática;
-- limpeza somente dos filtros;
-- zero distinto de erro;
-- publicidade ausente no zero;
-- retorno contextual da explicação;
-- visualização sem vínculo.
-
-## 5. Próximas referências P0A
-
-| Superfície | Estado |
-|---|---|
-| Perfil Público | próxima candidata; não iniciada |
-| Solicitação de Participação | não iniciada |
-| Solicitação Pendente | não iniciada |
-| Meus Coletivos | não iniciada |
-| Central de Atualizações | não iniciada |
-| Início do Participante | não iniciado nesta reformulação |
-| Visão Geral do Responsável | não iniciada |
-
-## 6. Cobertura visual
+## 5. Cobertura visual
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Opportunity Boost | 46 | 36 | 10 |
 | Coletivos — descoberta | 5 | 5 | 0 |
-| Coletivos — demais famílias | 0 | 0 | não materializadas |
+| Coletivos — Perfil Público | 4 | 0 | 4 |
 
-## 7. Distinções preservadas
+## 6. Proteções ativas
 
-- buscar não é receber recomendação;
-- acompanhar não é participar;
-- participar não é assumir papel;
-- publicidade não é recomendação;
-- popularidade não é relevância;
-- contagem não é impacto;
-- zero não é erro;
-- localização manual não é posição do dispositivo;
-- avaliação não é recomendação;
-- comunicado não é discussão;
-- leitura não é concordância;
-- contrato não é implementação.
+- nenhuma contagem funciona como ranking;
+- lista nominal não é pública por padrão;
+- publicidade não compra legitimidade;
+- amostra insuficiente não equivale a zero;
+- apoio institucional não concede autoridade;
+- perfil protegido reduz informação quando necessário;
+- convite não cria vínculo;
+- acompanhamento não cria participação;
+- materialização não equivale a validação.
 
-## 8. Baseline comercial
+## 7. Próxima ação governada
 
-| Segmento | Planos candidatos |
-|---|---|
-| Pessoas | Free, Plus e Pro |
-| Coletivos | Livre, Gestão, Impacto e Enterprise |
-| Organizações | Business Start, Growth e Scale |
+A próxima ação candidata é:
 
-Opportunity Boost:
+> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
 
-- Local: R$ 30,00;
-- Regional: R$ 100,00;
-- Ampliado: R$ 300,00;
-- Gerenciado: a partir de R$ 1.000,00;
-- CPM: R$ 12,00 a R$ 25,00;
-- CPC: R$ 0,80 a R$ 2,50.
+Ela exige autorização separada e não autoriza automaticamente Solicitação de Participação.
 
-Todos permanecem candidatos.
+## 8. Fronteiras
 
-## 9. Em validação ou calibração
+Permanecem não iniciados:
 
-- nove candidatos de Resultados Empresariais;
-- dez estados residuais do Boost;
-- disposição a pagar;
-- preços e densidade publicitária;
-- metodologia estatística de reputação;
-- moderação e recurso operacionais;
-- notificações, spam e abuso;
-- privacidade e retenção;
-- atribuição, reconciliação e antifraude.
-
-## 10. Não iniciado
-
-- UXA-062;
-- Perfil Público;
-- participação visual;
-- Meus Coletivos;
-- comunicação interna;
-- gestão do responsável;
-- mensagens privadas;
-- rede social de pessoas;
-- ranking de participantes;
-- algoritmo de busca;
-- campanha real;
-- protótipo;
-- testes;
-- design final;
-- produção;
+- protótipo e teste;
+- identidade visual;
+- algoritmo e implementação;
+- política jurídica especializada;
+- alteração da baseline comercial;
+- promoção de Resultados Empresariais;
 - Engenharia de Produto.
-
-## 11. Próximo movimento
-
-Após integração e nova autorização, o próximo ato candidato é a UXA-062 — Wireframes Móveis do Perfil Público do Coletivo.
-
-Nenhum movimento é automático.
