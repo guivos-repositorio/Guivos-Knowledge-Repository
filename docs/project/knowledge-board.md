@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.35.0
+version: 12.36.0
 owner: Guivos
 last_updated: 2026-08-03
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.35.0
+  - ROADMAP-12.36.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -17,9 +17,10 @@ related:
   - UXA-057
   - UXA-058
   - UXA-059
+  - UXA-060
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.61
+  - M7.62
 normative: false
 ---
 
@@ -34,180 +35,148 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | programa e priorização dos wireframes de Coletivos definidos | M7.61 |
+| Marco | Explorar Coletivos e busca móvel materializados | M7.62 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
-| Descoberta e participação | contrato funcional concluído | UXA-056 |
-| Avaliação e reputação | contrato funcional concluído | UXA-057 |
-| Interações e recomendações | contrato funcional concluído | UXA-058 |
-| Programa de Coletivos | 88 estados organizados; nove referências priorizadas; zero novo SVG | UXA-059 |
+| Contratos de Coletivos | UXA-056 a UXA-058 concluídas | UXA-056 a UXA-058 |
+| Programa de Coletivos | 88 estados e nove referências P0A | UXA-059 |
+| Descoberta visual | cinco SVGs móveis pendentes de validação | UXA-060 |
 | Cobertura visual do Boost | 46 materializados; 36 validados por pacote e 10 pendentes | UXA-040 a UXA-055 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 3. Portfólio consolidado documentalmente
+## 3. Portfólio consolidado
 
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-059;
+- Arquitetura da Experiência até UXA-060;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências institucionais e coletivas iniciais;
-- descoberta, perfil público e participação em Coletivos;
+- descoberta, perfil público e participação contratados;
 - avaliação e reputação contextualizadas;
 - interação, comunicação, recomendação e contato consentido;
-- programa e priorização dos wireframes de Coletivos;
+- programa de materialização de Coletivos;
+- cinco wireframes móveis de descoberta e busca;
 - baseline comercial de planos;
 - Opportunity Boost como mecanismo candidato;
 - 46 wireframes do Boost materializados;
 - 36 wireframes do Boost validados por pacote;
-- 25 wireframes preservados sob validação transversal histórica;
-- parâmetros candidatos de orçamento e mensuração.
+- 25 wireframes preservados sob validação transversal histórica.
 
-## 4. Coletivos — contratos concluídos
+## 4. Coletivos — contratos e programa
 
 ### UXA-056
 
-- busca e exploração;
-- sugestões contextuais;
-- perfil público;
-- acompanhar e participar;
-- modelos de entrada;
-- estados de vínculo;
-- contagens e privacidade;
-- `Meus Coletivos`;
-- gestão do responsável.
+Busca e exploração, sugestões contextuais, perfil público, acompanhamento, participação, modelos de entrada, estados de vínculo, contagens, privacidade, `Meus Coletivos` e gestão.
 
 ### UXA-057
 
-- objetos avaliáveis separados;
-- experiência verificável;
-- escala semântica;
-- agregação com contexto e limites;
-- resposta e contestação;
-- histórico após alteração material;
-- proteção contra manipulação;
-- ausência de reputação pública de pessoas.
+Objetos avaliáveis, experiência verificável, escala semântica, agregação contextual, resposta, contestação, histórico e ausência de reputação pública de pessoas.
 
 ### UXA-058
 
-- Central de Atualizações;
-- comunicados e alertas;
-- discussões;
-- perguntas e respostas;
-- atividades;
-- consultas e decisões;
-- gestão da comunicação;
-- contato entre pessoas;
-- mensagens privadas;
-- compartilhar, convidar e recomendar;
-- notificações;
-- silenciamento, bloqueio e denúncia;
-- moderação e recurso;
-- grupos sensíveis;
-- baixa conectividade.
+Central de Atualizações, comunicados, discussões, perguntas, atividades, decisões, contato consentido, recomendações, notificações, bloqueio, denúncia e moderação.
 
-## 5. Programa de wireframes de Coletivos
+### UXA-059
 
-A UXA-059 organiza:
+Programa P0A, P0B, P1 e P2; 88 estados; nove referências prioritárias; limite padrão de até três superfícies ou seis SVGs.
 
-- 20 estados da UXA-056;
-- 24 estados da UXA-057;
-- 44 estados da UXA-058;
-- total de 88 estados contratuais;
-- quatro níveis de materialização;
-- nove referências prioritárias;
-- canais iniciais por responsabilidade;
-- famílias funcionais;
-- critérios para SVG separado;
-- critérios de entrada e saída;
-- limite recomendado por incremento;
-- rastreabilidade e métricas do programa.
-
-### P0A — espinha dorsal
+## 5. UXA-060 — artefatos materializados
 
 1. Explorar Coletivos;
-2. Resultados de Busca;
-3. Perfil Público do Coletivo;
-4. Solicitação de Participação;
-5. Solicitação Pendente;
-6. Meus Coletivos;
-7. Central de Atualizações;
-8. Início do Participante;
-9. Visão Geral do Responsável.
+2. resultados de busca;
+3. filtros;
+4. busca sem resultados;
+5. explicação da origem.
 
-### Continuidade
+### Decisões representadas
 
-- P0B — estados críticos;
-- P1 — participação interna e operação recorrente;
-- P2 — reputação, recomendação, contato e proteção avançada.
+- exploração útil sem personalização;
+- busca e categoria distintas;
+- área manual sem localização precisa;
+- origem identificada por cartão;
+- primeiro resultado orgânico;
+- publicidade identificada e posterior ao orgânico;
+- anunciante e critérios visíveis;
+- publicidade separada de recomendação;
+- filtros aplicados após confirmação;
+- preferência publicitária fora dos filtros;
+- zero confirmado distinto de falha;
+- busca vazia sem preenchimento patrocinado;
+- quantidade de participantes sem ranking;
+- visualização sem criação de vínculo;
+- Perfil Público como destino pendente.
 
-Estado contratual não equivale automaticamente a tela. Nenhum novo wireframe especializado foi criado pela UXA-059.
+Os cinco SVGs aguardam validação funcional especializada.
 
-## 6. Distinções consolidadas
+## 6. Cobertura visual
 
-- contrato não é programa;
-- programa não é wireframe;
-- estado não é automaticamente tela;
+| Família | Materializados | Validados por pacote | Pendentes |
+|---|---:|---:|---:|
+| Opportunity Boost | 46 | 36 | 10 |
+| Coletivos — descoberta e busca | 5 | 0 | 5 |
+| Demais famílias de Coletivos | 0 | 0 | 0 |
+
+A UXA-050 não abrange retrospectivamente os cinco novos artefatos.
+
+## 7. Distinções consolidadas
+
 - buscar não é receber recomendação;
+- explorar categoria não é personalização;
+- área manual não é localização pessoal;
 - acompanhar não é participar;
 - participar não é assumir função;
-- pertencer não é estar disponível;
 - comunicado não é discussão;
 - discussão não é decisão;
 - pergunta não é denúncia;
 - leitura não é concordância;
-- contato não é pertencimento;
-- mensagem privada não é canal institucional;
 - compartilhar não é convidar;
 - convidar não é recomendar;
 - recomendar não é avaliar;
-- avaliar não é comprovar impacto;
 - sugestão da Guivos não é publicidade;
 - publicidade não é endosso;
-- silenciar não é sair;
-- bloquear não é remover;
-- volume de mensagens não é evolução.
+- filtro não é preferência publicitária;
+- zero não é erro;
+- volume de mensagens não é evolução;
+- materialização não é validação.
 
-## 7. Em validação ou calibração pendente
+## 8. Em validação ou calibração pendente
 
+- cinco wireframes da UXA-060;
 - nove candidatos de Resultados Empresariais;
 - dez wireframes residuais da UXA-055;
 - utilidade e disposição a pagar dos planos;
 - faixas Local, Regional, Ampliado e Gerenciado;
 - CPM ou CPC;
 - densidade e frequência publicitárias;
-- política de categorias;
+- política de categorias e busca;
 - metodologia estatística de reputação;
 - moderação, recurso e proteção operacional;
 - notificações, spam e abuso;
 - privacidade, retenção e grupos sensíveis;
 - atribuição, agregação, reconciliação e privacidade finais;
-- custo de servir, margem e antifraude;
-- eficácia dos controles com Pessoas, Organizações e Coletivos.
+- custo de servir, margem e antifraude.
 
-## 8. Aguardando autorização
+## 9. Aguardando autorização
 
-### Espinha dorsal de Coletivos
+### Próximo imediato
 
-- UXA-060 — Explorar Coletivos e Resultados de Busca;
-- validação funcional da UXA-060;
-- Perfil Público e formas de entrada;
-- fluxo de participação e solicitação;
+- UXA-061 — validação funcional da UXA-060.
+
+### Coletivos posteriores
+
+- reformulação da descoberta, se necessária;
+- Perfil Público;
+- solicitação de participação;
 - `Meus Coletivos`;
 - Central de Atualizações;
-- reformulação do Início do Participante;
-- Visão Geral do Responsável.
-
-### Continuidade do programa
-
-- P0B — estados críticos;
-- P1 — comunicação e operação;
-- P2 — reputação, recomendação, contato e proteção;
-- validação transversal do percurso completo.
+- Início do participante;
+- gestão do responsável;
+- demais estados P0B, P1 e P2.
 
 ### Opportunity Boost
 
@@ -226,27 +195,23 @@ Estado contratual não equivale automaticamente a tela. Nenhum novo wireframe es
 - reaplicação dos testes dos Resultados Empresariais;
 - preparação futura das Capacidades Empresariais.
 
-## 9. Pausado ou não iniciado
+## 10. Pausado ou não iniciado
 
-- nove referências P0A;
-- estados P0B;
-- operação P1;
-- confiança e proteção P2;
+- algoritmo real de busca e recomendação;
+- publicidade comercial real de Coletivos;
+- Perfil Público do Coletivo;
 - chat ou mensageria real;
 - rede social de pessoas;
 - ranking de participantes;
-- algoritmo de ordenação de interações;
 - moderação operacional;
 - criptografia e retenção técnica;
 - integrações externas;
 - campanha real;
-- perfil publicitário individual;
-- tecnologia cartográfica e rastreamento;
 - checkout, gateway e cobrança;
 - protótipo e testes;
 - produção e Engenharia de Produto.
 
-## 10. Planos candidatos
+## 11. Planos candidatos
 
 | Segmento | Planos candidatos |
 |---|---|
@@ -256,7 +221,7 @@ Estado contratual não equivale automaticamente a tela. Nenhum novo wireframe es
 
 Todos os valores permanecem candidatos para validação.
 
-## 11. Opportunity Boost
+## 12. Opportunity Boost
 
 | Modalidade | Orçamento mínimo candidato |
 |---|---:|
@@ -274,24 +239,21 @@ Todos os valores permanecem candidatos para validação.
 - anunciante não recebe lista de visualizadores;
 - publicidade não será apresentada como recomendação ou comunicado interno.
 
-## 12. Regras preservadas
+## 13. Regras preservadas
 
 - gratuito mantém valor real;
 - plano, transação, comissão e Boost são objetos distintos;
 - publicidade não compra relevância, reputação ou impacto;
-- localização permanece opcional;
-- participar não autoriza contato privado irrestrito;
-- recomendação informa origem e relação material;
-- notificações são controláveis;
+- localização precisa permanece opcional;
+- primeiro resultado orgânico é preservado no cenário da UXA-060;
+- preferências são reversíveis;
 - denúncia não é preferência;
 - contestação não é denúncia;
-- taxa de leitura não é compreensão;
 - satisfação não é impacto;
 - dados e mensagens não são transferidos automaticamente;
-- estado não equivale automaticamente a tela;
-- contrato, programa, wireframe e implementação são estados distintos.
+- contrato, programa, wireframe, validação e implementação permanecem atos separados.
 
-## 13. Distribuição dos candidatos de Resultados
+## 14. Distribuição dos candidatos de Resultados
 
 | Estado | Quantidade |
 |---|---:|
@@ -300,6 +262,6 @@ Todos os valores permanecem candidatos para validação.
 | Rejeitados | 6 |
 | Aprovados | 0 |
 
-## 14. Próximo movimento
+## 15. Próximo movimento
 
-Após integração, nenhum movimento é automático. Pela sequência funcional, o próximo ato candidato será a **UXA-060 — Wireframes Móveis de Explorar Coletivos e Resultados de Busca**, em incremento separado e limitado à descoberta.
+Após integração, nenhum movimento é automático. Pela sequência vigente, o próximo ato candidato é a UXA-061.

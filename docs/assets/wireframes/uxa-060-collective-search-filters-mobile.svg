@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe móvel de filtros da busca de Coletivos</title>
+  <desc id="desc">Painel móvel de filtros com consulta preservada, três filtros selecionados, critérios de entrada, modalidade, território, acessibilidade e ações de aplicar ou cancelar.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
+  <text x="20" y="58" font-family="Arial, sans-serif" font-size="23" font-weight="700">Filtros de Coletivos</text>
+  <text x="370" y="57" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Cancelar</text>
+  <rect x="20" y="76" width="350" height="47" rx="9" fill="#f5f5f5" stroke="#777777"/>
+  <text x="32" y="92" font-family="Arial, sans-serif" font-size="7">CONSULTA PRESERVADA</text>
+  <text x="32" y="108" font-family="Arial, sans-serif" font-size="10" font-weight="700">“ciclismo” · Belo Horizonte e on-line</text>
+  <text x="356" y="108" text-anchor="end" font-family="Arial, sans-serif" font-size="7">Não será alterada</text>
+  <text x="20" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="700">Tema</text>
+  <rect x="20" y="160" width="350" height="38" rx="8" fill="#ffffff" stroke="#777777"/>
+  <rect x="32" y="172" width="14" height="14" fill="#222222" stroke="#222222"/>
+  <text x="39" y="183" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff">✓</text>
+  <text x="58" y="184" font-family="Arial, sans-serif" font-size="9">Ciclismo</text>
+  <text x="356" y="184" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Alterar tema</text>
+  <text x="20" y="224" font-family="Arial, sans-serif" font-size="12" font-weight="700">Forma de entrada</text>
+  <g font-family="Arial, sans-serif" font-size="8"><rect x="20" y="236" width="108" height="31" rx="7" fill="#222222"/><text x="74" y="256" text-anchor="middle" fill="#ffffff">Entrada disponível</text><rect x="137" y="236" width="110" height="31" rx="7" fill="#ffffff" stroke="#777777"/><text x="192" y="256" text-anchor="middle">Entrada aberta</text><rect x="256" y="236" width="114" height="31" rx="7" fill="#ffffff" stroke="#777777"/><text x="313" y="256" text-anchor="middle">Com aprovação</text></g>
+  <text x="20" y="293" font-family="Arial, sans-serif" font-size="12" font-weight="700">Modalidade</text>
+  <g font-family="Arial, sans-serif" font-size="8"><rect x="20" y="305" width="108" height="31" rx="7" fill="#ffffff" stroke="#777777"/><text x="74" y="325" text-anchor="middle">Presencial</text><rect x="137" y="305" width="110" height="31" rx="7" fill="#ffffff" stroke="#777777"/><text x="192" y="325" text-anchor="middle">On-line</text><rect x="256" y="305" width="114" height="31" rx="7" fill="#222222"/><text x="313" y="325" text-anchor="middle" fill="#ffffff">Híbrida</text></g>
+  <text x="20" y="362" font-family="Arial, sans-serif" font-size="12" font-weight="700">Território</text>
+  <rect x="20" y="374" width="350" height="48" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="390" font-family="Arial, sans-serif" font-size="7">REGIÃO ESCOLHIDA</text>
+  <text x="32" y="407" font-family="Arial, sans-serif" font-size="10" font-weight="700">Belo Horizonte · sem localização precisa</text>
+  <text x="356" y="405" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Alterar</text>
+  <text x="20" y="449" font-family="Arial, sans-serif" font-size="12" font-weight="700">Acessibilidade</text>
+  <g font-family="Arial, sans-serif" font-size="8"><rect x="20" y="461" width="169" height="31" rx="7" fill="#ffffff" stroke="#777777"/><text x="104" y="481" text-anchor="middle">Informação disponível</text><rect x="201" y="461" width="169" height="31" rx="7" fill="#ffffff" stroke="#777777"/><text x="285" y="481" text-anchor="middle">Necessidade específica</text></g>
+  <text x="20" y="519" font-family="Arial, sans-serif" font-size="12" font-weight="700">Idioma</text>
+  <rect x="20" y="531" width="350" height="36" rx="8" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="554" font-family="Arial, sans-serif" font-size="9">Qualquer idioma</text><text x="356" y="554" text-anchor="end" font-family="Arial, sans-serif" font-size="9">▾</text>
+  <rect x="20" y="590" width="350" height="70" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="611" font-family="Arial, sans-serif" font-size="9" font-weight="700">Origem e publicidade</text>
+  <text x="32" y="629" font-family="Arial, sans-serif" font-size="7">A origem será identificada em cada resultado.</text>
+  <text x="32" y="646" font-family="Arial, sans-serif" font-size="7">Preferências de publicidade são controles separados dos filtros.</text>
+  <text x="356" y="646" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Revisar preferências</text>
+  <text x="20" y="687" font-family="Arial, sans-serif" font-size="8" font-weight="700">3 filtros selecionados</text>
+  <text x="370" y="687" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Limpar seleções</text>
+  <rect x="20" y="703" width="350" height="42" rx="8" fill="#222222"/>
+  <text x="195" y="729" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Aplicar 3 filtros</text>
+  <text x="195" y="759" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#555555">Nenhuma mudança será aplicada antes desta confirmação.</text>
+  <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
+  <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817" font-weight="700">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817">Eu</text></g>
+  <g fill="none" stroke="#555555"><circle cx="39" cy="796" r="8"/><rect x="109" y="788" width="16" height="16"/><circle cx="195" cy="796" r="8" fill="#222222"/><path d="M265 804 L273 788 L281 804 Z"/><circle cx="351" cy="794" r="6"/><path d="M342 807 Q351 799 360 807"/></g>
+</svg>

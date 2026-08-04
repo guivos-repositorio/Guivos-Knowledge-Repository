@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.55.0
+version: 0.56.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-03
 related:
@@ -28,7 +28,8 @@ related:
   - UXA-057
   - UXA-058
   - UXA-059
-  - M7.61
+  - UXA-060
+  - M7.62
 normative: false
 ---
 
@@ -44,7 +45,7 @@ Ela governa jornadas, superfícies, navegação, voluntariedade, privacidade, ex
 
 Esta frente não inicia Engenharia de Produto, não define tecnologia, não cria design visual final e não autoriza produção.
 
-Contrato funcional, programa de wireframes, wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
+Contrato funcional, programa de materialização, wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
 
 ## 3. Ordem funcional pessoal
 
@@ -65,9 +66,9 @@ Página Inicial pública
 
 Oferta de plano e Opportunity Boost não entram no início protegido, compreensão, autorização ou Próximo Passo pessoal.
 
-## 4. Documentos ativos por responsabilidade
+## 4. Autoridades principais
 
-| Responsabilidade | Autoridades principais |
+| Responsabilidade | Autoridades |
 |---|---|
 | Fundação, mapas e padrões | UXA-001, UXA-003, UXA-005, UXA-009, UXA-011 e UXA-011-A1 |
 | Home e início protegido | UXA-020 a UXA-023 e UXA-034 a UXA-037 |
@@ -78,24 +79,26 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Descoberta e participação em Coletivos | [UXA-056](uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md) |
 | Avaliação e reputação | [UXA-057](uxa-057-evaluation-and-reputation-functional-contract.md) |
 | Interações, recomendações e conexões | [UXA-058](uxa-058-interactions-recommendations-connections-functional-contract.md) |
-| Programa e priorização dos wireframes de Coletivos | [UXA-059](uxa-059-collective-wireframe-program-and-prioritization.md) |
+| Programa de wireframes de Coletivos | [UXA-059](uxa-059-collective-wireframe-program-and-prioritization.md) |
+| Explorar Coletivos e busca móvel | [UXA-060](uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md) |
 | Opportunity Boost | UXA-038 a UXA-055 |
 
 ## 5. Estado atual
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até programa de wireframes de Coletivos | UXA-000 a UXA-059 |
+| Arquitetura da Experiência | ativa até UXA-060 | UXA-000 a UXA-060 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
-| Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
+| Tela Hoje | validada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados orgânicos e patrocinados móveis e desktop validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
-| Contratos de Coletivos | participação, reputação e interação contratadas | UXA-056 a UXA-058 |
-| Programa de Coletivos | 88 estados organizados; nove referências priorizadas; zero novo SVG | UXA-059 |
-| Opportunity Boost | 46 wireframes materializados; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
+| Coletivos — contratos | descoberta, reputação e interação contratadas | UXA-056 a UXA-058 |
+| Coletivos — programa | 88 estados organizados em P0A, P0B, P1 e P2 | UXA-059 |
+| Coletivos — descoberta visual | 5 SVGs móveis materializados e pendentes de validação | UXA-060 |
+| Opportunity Boost | 46 wireframes; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
 | Protótipo, design e testes | não iniciados | — |
 
 ## 6. Organizações e Coletivos
@@ -113,143 +116,95 @@ A fundação institucional e coletiva preserva:
 
 O Início do Coletivo das UXA-016 e UXA-018 é uma superfície interna do participante, não o perfil público universal.
 
-## 7. Descoberta, perfil público e participação
+## 7. Contratos de Coletivos
 
-A UXA-056 estabelece:
+### 7.1 Descoberta e participação
 
-- busca e exploração intencional;
-- sugestões contextuais explicadas;
-- perfil público separado do Início e da gestão;
-- acompanhar separado de participar;
-- entrada aberta, por aprovação ou convite;
-- estados explícitos de vínculo;
-- papéis, presença, disponibilidade e autoridade independentes;
-- contagens separadas;
-- lista nominal protegida por padrão;
-- central `Meus Coletivos`;
-- ausência de vínculo automático com Organização apoiadora.
+A UXA-056 estabelece busca autônoma, sugestão contextual explicada, perfil público separado do ambiente interno, acompanhamento distinto de participação, modelos de entrada, estados de vínculo, contagens separadas, lista nominal protegida e central `Meus Coletivos`.
 
-A jornada ajuda a descobrir, mas não limita a exploração.
+### 7.2 Avaliação e reputação
 
-## 8. Avaliação e reputação
+A UXA-057 define reputação como evidência contextualizada. Pessoas não recebem nota pública ou ranking. Amostra insuficiente não produz nota implícita. Avaliação, recomendação, depoimento, denúncia e contestação permanecem diferentes.
 
-A UXA-057 define reputação como evidência contextualizada, não como placar moral.
+### 7.3 Interações e conexões
 
-Permanecem separados:
+A UXA-058 separa comunicados, alertas, discussões, perguntas, atividades, consultas, decisões, convites, recomendações, contatos, mensagens e notificações. Participação não autoriza mensagem privada.
 
-- Coletivo;
-- Organização ou unidade;
-- atividade;
-- curso ou programa;
-- Oportunidade;
-- relação institucional específica.
+## 8. Programa de wireframes
 
-Experiência verificável antecede agregação pública. Pessoas não recebem reputação pública ou ranking. Amostra insuficiente não produz nota implícita. Avaliação, recomendação, depoimento, denúncia e contestação são fluxos diferentes.
+A UXA-059 mantém 88 estados contratuais, mas não os converte automaticamente em 88 telas.
 
-Publicidade, plano, popularidade e quantidade de avaliações não compram confiança. Satisfação não comprova impacto.
-
-## 9. Interações, recomendações e conexões
-
-A UXA-058 define que toda interação possui origem, natureza, público, autoridade, estado e encerramento próprios.
-
-Permanecem separados:
-
-- comunicado oficial;
-- alerta de segurança;
-- atualização de atividade;
-- discussão;
-- pergunta;
-- resposta de participante;
-- resposta oficial;
-- consulta;
-- decisão;
-- convite;
-- recomendação;
-- solicitação de contato;
-- mensagem privada;
-- notificação de sistema.
-
-A Central de Atualizações organiza múltiplos Coletivos sem virar feed infinito. Participar do mesmo Coletivo não autoriza mensagem privada. Compartilhar, convidar e recomendar são ações diferentes.
-
-Notificações são controláveis por Coletivo e objeto. Confirmação de leitura não significa concordância. Silenciar, ocultar, bloquear, denunciar e sair possuem efeitos diferentes.
-
-## 10. Programa de wireframes de Coletivos
-
-A UXA-059 organiza os 88 estados obrigatórios em quatro níveis:
+A sequência é:
 
 ```text
 P0A — espinha dorsal
 → P0B — estados críticos
-→ P1 — participação interna e operação recorrente
-→ P2 — confiança, recomendação, contato e proteção avançada
+→ P1 — participação e operação
+→ P2 — confiança, contato e proteção
 ```
 
-A P0A prioriza nove referências:
+Novo SVG depende de mudança material de hierarquia, decisão, autoridade, público, dados, risco, continuidade, consentimento, canal ou recuperação.
+
+## 9. Explorar Coletivos e busca móvel
+
+A UXA-060 cria cinco SVGs:
 
 1. Explorar Coletivos;
-2. Resultados de Busca;
-3. Perfil Público do Coletivo;
-4. Solicitação de Participação;
-5. Solicitação Pendente;
-6. Meus Coletivos;
-7. Central de Atualizações;
-8. Início do Participante;
-9. Visão Geral do Responsável.
+2. resultados de busca;
+3. filtros;
+4. busca sem resultados;
+5. explicação da origem.
 
-Estado contratual não equivale automaticamente a tela. Novo SVG somente será criado diante de mudança material de hierarquia, decisão, autoridade, público, dados, risco, continuidade, consentimento, canal ou recuperação.
+A família representa:
 
-A experiência da pessoa será móvel primeiro. A gestão densa do responsável será computador primeiro. Cada incremento deverá permanecer pequeno, rastreável e autorizado.
+- exploração útil sem personalização;
+- busca e categoria como entradas diferentes;
+- área manual sem localização precisa;
+- origem identificada em cada item;
+- primeiro resultado orgânico;
+- publicidade identificada e separada de recomendação;
+- filtros aplicados somente após confirmação;
+- preferência publicitária fora dos filtros;
+- zero confirmado distinto de erro;
+- publicidade ausente no preenchimento do zero;
+- continuidade para Perfil Público ainda não materializado.
 
-Nenhuma das nove referências foi materializada pela UXA-059.
+Os cinco artefatos aguardam validação funcional especializada.
+
+## 10. Cobertura visual separada
+
+| Família | Materializados | Validados por pacote | Pendentes |
+|---|---:|---:|---:|
+| Opportunity Boost | 46 | 36 | 10 |
+| Coletivos — descoberta e busca | 5 | 0 | 5 |
+| Demais famílias de Coletivos | 0 | 0 | 0 |
+
+A UXA-050 permanece autoridade transversal somente dos 25 artefatos examinados naquele incremento.
 
 ## 11. Opportunity Boost
 
-As UXA-038 a UXA-055 preservam:
-
-- gates explicáveis;
-- objetivo e critérios conscientes;
-- conteúdo protegido excluído;
-- primeiro resultado orgânico;
-- publicidade distinta de recomendação;
-- localização opcional;
-- baixa oferta orgânica reduzindo publicidade;
-- gestão com orçamento, estados, versões e histórico;
-- relatório agregado sem lista individual;
-- atribuição candidata sem causalidade;
-- controles reversíveis;
-- erro, zero inventário e baixa oferta orgânica distintos.
-
-A UXA-050 permanece autoridade transversal dos 25 artefatos examinados naquele incremento. A cobertura total permanece em 46 wireframes: 36 validados por pacote e 10 pendentes.
+As UXA-038 a UXA-055 preservam gates explicáveis, conteúdo protegido excluído, primeiro resultado orgânico, publicidade distinta de recomendação, localização opcional, gestão com orçamento e histórico, relatório agregado sem lista individual, controles reversíveis e estados de erro, inventário e densidade separados.
 
 Opportunity Boost não entra silenciosamente em comunicações internas de Coletivos.
 
-## 12. Gate de persistência e personalização
+## 12. Gates de dados e Fundação
 
-Criar conta, digitar, gravar, enviar arquivo, concluir relato, participar, responder, avaliar ou recomendar não autoriza automaticamente persistência, personalização ou publicidade.
+Criar conta, digitar, gravar, enviar arquivo, participar, responder, avaliar, recomendar ou visualizar resultado não autoriza automaticamente persistência, personalização ou publicidade.
 
-Conteúdo protegido da jornada, mensagens privadas e participações sensíveis não serão reutilizados silenciosamente para descoberta, recomendação ou segmentação.
-
-## 13. Gate de alinhamento à Fundação
+Conteúdo protegido, mensagens privadas e participações sensíveis não serão reutilizados silenciosamente para descoberta ou segmentação.
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão, Constituição e Princípios Permanentes da Guivos.
 
-Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
-
-## 14. Próximos atos governados
+## 13. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. UXA-060 — criar wireframes móveis de Explorar Coletivos e Resultados de Busca;
-2. validar funcionalmente a UXA-060;
-3. materializar perfil público e formas de entrada;
-4. materializar fluxo de participação e estados da solicitação;
-5. materializar `Meus Coletivos` e Central de Atualizações;
-6. reformular o Início do Participante;
-7. criar a Visão Geral do Responsável;
-8. avançar pelos níveis P0B, P1 e P2;
-9. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
-10. validar funcionalmente os dez estados residuais da UXA-055;
-11. definir protocolo de protótipo e plano de teste;
-12. manter Engenharia de Produto pausada até autorização própria.
+1. UXA-061 — validar funcionalmente os cinco SVGs da UXA-060;
+2. reformular a família, se necessário;
+3. decidir posteriormente entre Perfil Público ou estados críticos adicionais;
+4. validar os dez estados residuais da UXA-055 em frente independente;
+5. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
+6. definir protocolo de protótipo e plano de teste;
+7. manter Engenharia de Produto pausada até autorização própria.
 
 Nenhum ato é iniciado automaticamente.
