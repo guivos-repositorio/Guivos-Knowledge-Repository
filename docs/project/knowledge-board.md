@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.40.0
+version: 12.41.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.40.0
+  - ROADMAP-12.41.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -22,9 +22,10 @@ related:
   - UXA-062
   - UXA-063
   - UXA-064
+  - UXA-065
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.66
+  - M7.67
 normative: false
 ---
 
@@ -39,7 +40,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | revisão e solicitação móvel materializadas | M7.66 |
+| Marco | revisão e solicitação móvel validadas | M7.67 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações candidatos | GEM-004-A1 |
@@ -48,7 +49,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Programa de Coletivos | 88 estados; nove referências P0A | UXA-059 |
 | Descoberta visual | 5 SVGs materializados e validados | UXA-060; UXA-061 |
 | Perfil Público visual | 4 SVGs materializados e validados | UXA-062; UXA-063 |
-| Revisão e Solicitação visual | 5 SVGs materializados; validação pendente | UXA-064 |
+| Revisão e Solicitação visual | 5 SVGs materializados e validados | UXA-064; UXA-065 |
 | Boost visual | 46 materializados; 36 validados; 10 pendentes | UXA-040 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -60,31 +61,30 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | programa | concluído | seguir P0A–P2 |
 | descoberta e busca | validada | manter como origem do Perfil Público |
 | Perfil Público | validado | fornecer contexto à participação |
-| Revisão e Solicitação de Participação | materializada | validar na UXA-065 |
-| Solicitação Pendente | não iniciada | aguardar validação da UXA-064 |
-| Meus Coletivos | não iniciado | aguardar vínculos compreensíveis |
+| Revisão e Solicitação de Participação | validada | preservar UXA-064 e UXA-065 |
+| Solicitação Pendente | não iniciada | aguardar autorização para UXA-066 |
+| Meus Coletivos | não iniciado | aguardar vínculo e pendência compreensíveis |
 | Central de Atualizações | não iniciada | aguardar continuidade pessoal |
 | Início do Participante | não reformulado | aguardar etapas anteriores |
 | gestão do responsável | não iniciada | aguardar experiência da pessoa |
 
-## 4. Revisão e solicitação materializadas
+## 4. Revisão e solicitação validadas
 
-A UXA-064 cobre:
+A UXA-065 consolidou:
 
-- revisão para entrada aberta;
-- confirmação imediata da entrada aberta;
-- revisão mediante aprovação;
-- comprovante transitório do envio;
-- revisão protegida de convite;
-- regras, significado do vínculo e consequências;
-- dados enviados e dados proibidos;
-- permissões e visibilidade separadas;
+- vínculo e consequência antes da ação;
+- entrada aberta, aprovação e convite separados;
+- visibilidade inicial como estado explícito;
+- dados enviados e protegidos;
+- permissões separadas;
 - confirmações inicialmente vazias;
+- acessibilidade fora das confirmações obrigatórias;
 - cancelamento anterior ao envio;
-- autoridade e prazo estimado;
-- ausência de função, autoridade ou marketing automáticos;
-- Organização apoiadora sem acesso automático;
-- comprovante separado de Solicitação Pendente.
+- autoridade e prazo sem promessa;
+- ausência de função ou vínculo automático;
+- comprovante separado de Solicitação Pendente;
+- alegação protegida identificada como não verificada;
+- confidencialidade sem garantia absoluta.
 
 ## 5. Cobertura visual
 
@@ -93,36 +93,35 @@ A UXA-064 cobre:
 | Opportunity Boost | 46 | 36 | 10 |
 | Coletivos — descoberta | 5 | 5 | 0 |
 | Coletivos — Perfil Público | 4 | 4 | 0 |
-| Coletivos — revisão e solicitação | 5 | 0 | 5 |
+| Coletivos — revisão e solicitação | 5 | 5 | 0 |
 
 ## 6. Proteções ativas
 
 - nenhuma contagem funciona como ranking;
 - lista nominal não é pública por padrão;
 - publicidade não compra legitimidade;
-- amostra insuficiente não equivale a zero;
 - apoio institucional não concede autoridade;
-- anunciante não recebe autoridade operacional por pagamento;
 - convite não cria vínculo;
 - canal público não concede mensagem privada;
-- leitura e silêncio não equivalem a consentimento;
+- leitura e silêncio não equivalem a confirmação;
 - caixas de confirmação começam vazias;
-- dados proibidos permanecem fora do envio automático;
+- acessibilidade não é condição obrigatória;
 - marketing e notificações não são ativados pela participação;
 - comprovante não substitui estado pendente;
+- alegação não verificada não é fato;
 - denúncia permanece separada de avaliação.
 
 ## 7. Fronteiras
 
 Não foram iniciados:
 
-- validação funcional da UXA-064;
 - Solicitação Pendente;
 - informação adicional, recusa, expiração ou contestação;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
 - gestão do responsável;
+- política jurídica;
 - protótipo;
 - testes;
 - identidade visual;
@@ -130,4 +129,4 @@ Não foram iniciados:
 
 ## 8. Próxima transição
 
-**UXA-065 — Validação Funcional e Reformulação da Revisão e Solicitação de Participação Móvel em Coletivos**, mediante autorização separada.
+**UXA-066 — Wireframes Móveis da Solicitação Pendente em Coletivos**, mediante autorização separada.

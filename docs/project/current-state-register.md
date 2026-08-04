@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.93.0
+version: 1.94.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 depends_on:
@@ -22,6 +22,7 @@ related:
   - UXA-062
   - UXA-063
   - UXA-064
+  - UXA-065
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
@@ -29,8 +30,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.40.0
-  - M7.66
+  - ROADMAP-12.41.0
+  - M7.67
 normative: true
 ---
 
@@ -47,7 +48,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | revisão e solicitação móvel de participação materializadas | M7.66; UXA-064 |
+| Marco | revisão e solicitação móvel funcionalmente validadas | M7.67; UXA-065 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
@@ -55,7 +56,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
 | Coletivos — descoberta | 5 SVGs materializados e validados | UXA-060; UXA-061 |
 | Coletivos — Perfil Público | 4 SVGs materializados e validados | UXA-062; UXA-063 |
-| Coletivos — revisão e solicitação | 5 SVGs materializados; validação pendente | UXA-064 |
+| Coletivos — revisão e solicitação | 5 SVGs materializados e validados | UXA-064; UXA-065 |
 | Opportunity Boost | 46 SVGs; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -69,7 +70,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-A UXA-064 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
+A UXA-065 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -80,7 +81,7 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Materialização de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
+Validação de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual
 
@@ -89,7 +90,7 @@ Materialização de wireframe não comprova preço, demanda, conversão, receita
 - 46 wireframes materializados;
 - 36 validados por pacote;
 - 10 estados residuais pendentes;
-- nenhuma alteração pela UXA-064.
+- nenhuma alteração pela UXA-065.
 
 ### 5.2 Coletivos
 
@@ -97,10 +98,10 @@ Materialização de wireframe não comprova preço, demanda, conversão, receita
 |---|---:|---:|---:|
 | descoberta e busca | 5 | 5 | 0 |
 | Perfil Público | 4 | 4 | 0 |
-| revisão e solicitação | 5 | 0 | 5 |
+| revisão e solicitação | 5 | 5 | 0 |
 | demais famílias | 0 | 0 | não materializadas |
 
-Total atual de Coletivos: 14 SVGs materializados, 9 validados e 5 pendentes.
+Total atual de Coletivos: 14 SVGs materializados e 14 validados.
 
 ## 6. Estado P0A
 
@@ -109,16 +110,16 @@ Total atual de Coletivos: 14 SVGs materializados, 9 validados e 5 pendentes.
 | 1 | Explorar Coletivos | validada |
 | 2 | Resultados de Busca | validada |
 | 3 | Perfil Público | validado |
-| 4 | Revisão e Solicitação de Participação | materializada; validação pendente |
+| 4 | Revisão e Solicitação de Participação | validada |
 | 5 | Solicitação Pendente | não iniciada |
 | 6 | Meus Coletivos | não iniciado |
 | 7 | Central de Atualizações | não iniciada |
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 7. Estados da UXA-064
+## 7. Resultado da UXA-065
 
-Foram materializados:
+Foram reformulados e validados:
 
 - revisão de entrada aberta;
 - confirmação imediata da entrada aberta;
@@ -126,19 +127,19 @@ Foram materializados:
 - comprovante transitório do envio;
 - revisão protegida de convite.
 
-Foram representados:
+Foram consolidados:
 
-- significado do vínculo antes da ação;
-- dados enviados e dados proibidos;
-- permissões separadas;
-- confirmações inicialmente vazias;
-- cancelamento anterior ao envio;
-- entrada aberta sem função automática;
-- solicitação sem criação de vínculo;
-- autoridade e prazo estimado;
-- Organização apoiadora sem acesso automático;
-- convite protegido sem participação automática;
-- comprovante distinto de Solicitação Pendente.
+- visibilidade inicial sem escolha implícita;
+- dados enviados e protegidos antes da ação;
+- confirmações vazias e não coercitivas;
+- acessibilidade separada das confirmações obrigatórias;
+- cancelamento atual separado do cancelamento futuro;
+- prazo estimado sem promessa;
+- ausência de função ou vínculo automático;
+- comprovante sem navegação para superfície inexistente;
+- alegação protegida identificada como não verificada;
+- confidencialidade sem garantia absoluta;
+- marketing, notificações e contato privado separados.
 
 ## 8. Preservações
 
@@ -148,20 +149,19 @@ Permanecem vigentes:
 - acompanhar não é participar;
 - solicitação não é aprovação;
 - convite não cria participação;
-- leitura, rolagem e silêncio não são consentimento;
-- marketing, notificações e contato privado permanecem separados;
+- leitura, rolagem e silêncio não são confirmação;
 - publicidade não compra legitimidade;
 - contagem não é ranking;
 - apoio institucional não concede autoridade ou dados;
 - denúncia não é avaliação;
 - proteção não é irregularidade;
-- Perfil Público, ambiente interno e gestão permanecem superfícies distintas;
+- comprovante não é acompanhamento contínuo;
 - protótipo, teste e Engenharia de Produto não foram iniciados.
 
 ## 9. Próxima transição autorizável
 
 A próxima transição recomendada é:
 
-**UXA-065 — Validação Funcional e Reformulação da Revisão e Solicitação de Participação Móvel em Coletivos.**
+**UXA-066 — Wireframes Móveis da Solicitação Pendente em Coletivos.**
 
-A Solicitação Pendente não será iniciada antes dessa validação e de nova autorização separada.
+A UXA-066 não está iniciada e depende de autorização separada.
