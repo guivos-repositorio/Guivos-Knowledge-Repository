@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.37.0
+version: 0.38.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-03
 parent: UXA-000
@@ -56,6 +56,7 @@ related:
   - UXA-057
   - UXA-058
   - UXA-059
+  - UXA-060
   - PAS-001
 normative: false
 ---
@@ -97,29 +98,12 @@ Os identificadores preservam a ordem histórica de criação e não determinam a
 7. compreensão inicial móvel — UXA-036;
 8. validação da compreensão inicial — UXA-037;
 9. Tela Hoje — UXA-006;
-10. Mapa móvel — UXA-024;
-11. validações e estados do Mapa — UXA-025 a UXA-033;
-12. Detalhe de oportunidade — UXA-007;
-13. Cadastro pela Organização — UXA-008;
-14. contrato funcional do Opportunity Boost — UXA-038;
-15. validação funcional do Boost — UXA-039;
-16. configuração do anunciante para computador — UXA-040;
-17. validação da configuração para computador — UXA-041;
-18. cartão patrocinado e explicação — UXA-042;
-19. validação do cartão e da explicação — UXA-043;
-20. estados patrocinados de Lista e Mapa — UXA-044;
-21. validação territorial patrocinada — UXA-045;
-22. gestão da campanha para computador — UXA-046;
-23. validação da gestão para computador — UXA-047;
-24. relatório agregado — UXA-048;
-25. validação do relatório agregado — UXA-049;
-26. validação transversal de 25 wireframes — UXA-050;
-27. configuração móvel do anunciante — UXA-051;
-28. validação da configuração móvel — UXA-052;
-29. gestão móvel da campanha — UXA-053;
-30. validação da gestão móvel — UXA-054;
-31. estados residuais de erro, inventário e preferências — UXA-055;
-32. programa e priorização dos wireframes de Coletivos — UXA-059.
+10. Mapa móvel e estados — UXA-024 a UXA-033;
+11. Detalhe de oportunidade — UXA-007;
+12. Cadastro pela Organização — UXA-008;
+13. Opportunity Boost — UXA-038 a UXA-055;
+14. programa e priorização dos wireframes de Coletivos — UXA-059;
+15. Explorar Coletivos e resultados de busca móveis — UXA-060.
 
 ## 4. Critérios de validação por responsabilidade
 
@@ -131,66 +115,49 @@ Deverão permanecer claros: saída da Home pública, explicação anterior ao re
 
 Mapa e Lista deverão representar a mesma consulta, preservar busca, região, filtros e localização opcional e distinguir quantidade, falha, indisponibilidade, relação comercial e ordenação orgânica.
 
-### 4.3 Configuração do Opportunity Boost
+### 4.3 Opportunity Boost
 
-As UXA-041 e UXA-052 validam para computador e móvel: gates explicáveis, objetivo único, critérios conscientes e revisáveis, conteúdo protegido excluído, público insuficiente sem ampliação silenciosa, orçamento e duração sem promessa, estimativa provisória, ausência de renovação automática, primeiro resultado orgânico, confirmações vazias e envio sem entrega.
+As UXA-041 a UXA-055 preservam gates explicáveis, objetivo único, critérios conscientes, conteúdo protegido excluído, primeiro resultado orgânico, publicidade identificada, anunciante e financiador, controles reversíveis, orçamento e estados separados, relatório agregado sem lista individual, erro distinto de zero inventário e preferência publicitária fora dos filtros.
 
-### 4.4 Cartão, explicação, Lista e Mapa patrocinados
+A UXA-050 permanece autoridade transversal dos 25 artefatos examinados naquele incremento. Os 21 artefatos posteriores não integram retrospectivamente esse escopo.
 
-As UXA-043 e UXA-045 validam: natureza comercial anterior ao conteúdo, primeiro resultado orgânico, anunciante e financiador identificados, publicidade distinta de recomendação, critérios objetivos visíveis, controles reversíveis, denúncia separada de contestação, contagens orgânicas e pagas separadas, preferência publicitária fora dos filtros, localização opcional e baixa oferta orgânica reduzindo publicidade.
-
-### 4.5 Gestão da campanha
-
-As UXA-047 e UXA-054 validam para computador e móvel: programação distinta de atividade, ausência de medição distinta de zero, orçamento total, reservado, utilizado e saldo separados, indicadores datados, entrega reduzida distinta de pausa, limitação sem aceleração ou prorrogação, pausa com eventos anteriores preservados, retomada condicionada, comparação de versões, revisão anterior à ação e cancelamento com motivo e confirmações independentes.
-
-### 4.6 Relatório agregado
-
-A UXA-049 valida: entrega, interação, atribuição candidata e autorrelato em camadas distintas, proveniência, período, regra versionada, ausência e supressão distintas de zero, atribuição em agregados, nenhuma sequência individual, origem orgânica preservada, autorrelato não verificado e reconciliação por tipo e unidade sem promessa financeira.
-
-### 4.7 Estados residuais pendentes
-
-A UXA-055 deverá ser validada quanto a:
-
-- erro técnico distinto de zero inventário;
-- catálogo orgânico utilizável durante falha patrocinada;
-- último estado confirmado preservado diante de atualização não concluída;
-- zero inventário sem ampliação automática de critérios;
-- baixa oferta orgânica reduzindo publicidade;
-- preferência publicitária separada de filtro;
-- ocultar, reduzir e desativar com escopos próprios;
-- confirmações inicialmente vazias;
-- reversões independentes;
-- denúncia separada de contestação de dados;
-- identidade e preferências da pessoa protegidas.
-
-### 4.8 Validação transversal
-
-A UXA-050 permanece autoridade da validação transversal dos 25 artefatos examinados naquele incremento. Os 21 artefatos posteriores das UXA-051, UXA-053 e UXA-055 não integram retrospectivamente esse escopo.
-
-### 4.9 Wireframes de Coletivos
+### 4.4 Programa de Coletivos
 
 A UXA-059 preserva 88 estados contratuais e determina que estado não equivale automaticamente a tela.
 
-A materialização será organizada em:
+A materialização é organizada em:
 
-- P0A — nove referências da espinha dorsal;
+- P0A — espinha dorsal;
 - P0B — estados críticos;
 - P1 — participação interna e operação recorrente;
 - P2 — reputação, recomendação, contato e proteção avançada.
 
-As nove referências prioritárias serão:
+### 4.5 Descoberta de Coletivos
+
+A UXA-060 materializa cinco SVGs móveis:
 
 1. Explorar Coletivos;
-2. Resultados de Busca;
-3. Perfil Público do Coletivo;
-4. Solicitação de Participação;
-5. Solicitação Pendente;
-6. Meus Coletivos;
-7. Central de Atualizações;
-8. Início do Participante;
-9. Visão Geral do Responsável.
+2. resultados de busca;
+3. filtros;
+4. busca sem resultados;
+5. explicação da origem.
 
-Nenhuma dessas referências está materializada pela UXA-059.
+A futura validação deverá verificar:
+
+- utilidade sem personalização;
+- busca, categoria, território e origem distintos;
+- primeiro resultado orgânico;
+- publicidade anterior ao conteúdo e sem alteração da ordem orgânica;
+- contagem sem ranking;
+- filtros preservando busca e área;
+- preferência publicitária separada de filtro;
+- zero confirmado distinto de erro;
+- recuperação sem mudança silenciosa;
+- localização precisa opcional;
+- visualização sem criação de vínculo;
+- continuidade para Perfil Público.
+
+Os cinco SVGs aguardam validação funcional especializada.
 
 ## 5. Convenções de baixa fidelidade
 
@@ -204,15 +171,13 @@ Nenhuma dessas referências está materializada pela UXA-059.
 | círculo vazio | escolha única não realizada |
 | caixa vazia | confirmação não concedida |
 | caixa preenchida | escolha consciente realizada |
-| borda tracejada | limitação, exceção, erro ou aviso |
+| borda tracejada | limitação, exceção, publicidade ou aviso |
 | selo textual anterior | natureza patrocinada antes do conteúdo |
 | comparação lado a lado | versões em tela ampla quando legível |
 | comparação vertical | versões em tela móvel ou estreita |
 | camada numerada | entrega, interação, atribuição ou autorrelato |
 | rótulo de proveniência | instrumentado, calculado, declarado ou indisponível |
-| progresso móvel | posição no fluxo sem autorização automática |
-| estado residual | erro, inventário, densidade ou controle com efeito explícito |
-| origem da interação | pessoa, Coletivo, Organização, Guivos ou publicidade |
+| origem explícita | busca, categoria, território, sugestão, recomendação, convite ou publicidade |
 | autoridade textual | papel e limite para comunicar, decidir ou moderar |
 | agrupamento funcional | estados relacionados sem criar tela independente |
 
@@ -220,46 +185,23 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 
 ## 6. Dimensões de referência
 
-| Wireframe | Canal | Dimensão |
+| Família | Canal | Dimensão |
 |---|---|---|
 | Home pública | computador | 1.440 × 2.200 |
-| Início protegido | móvel | 390 × 844 |
-| Compreensão inicial | móvel | 390 × 844 |
-| Tela Hoje | móvel | 390 × 844 |
+| Início protegido, compreensão e Tela Hoje | móvel | 390 × 844 |
 | Mapa e estados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Detalhe de oportunidade | móvel | 390 × 980 |
 | Cadastro pela Organização | computador | 1.440 × 1.024 |
-| Configuração do anunciante | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Cartão e explicação | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Lista e Mapa patrocinados | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Gestão da campanha | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Relatório agregado | móvel e computador | 390 × 844 e 1.440 × 1.024 |
-| Estados residuais — dez estados | móvel | 390 × 844 cada |
+| Opportunity Boost | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Coletivos — experiência da pessoa | móvel primeiro | 390 × 844 ou altura necessária |
 | Coletivos — gestão do responsável | computador primeiro | 1.440 × 1.024 ou altura necessária |
 
-## 7. Relação funcional do Opportunity Boost
-
-```text
-elegibilidade
-→ objetivo e critérios
-→ orçamento, duração e estimativa
-→ prévia e confirmação
-→ avaliação e programação
-→ entrega em cartão | Lista | Mapa
-→ explicação e controles
-→ erro | zero inventário | baixa oferta orgânica
-→ limitação | pausa | alteração material
-→ conclusão | cancelamento | suspensão
-→ reconciliação
-→ relatório agregado
-```
-
-## 8. Relação funcional dos Coletivos
+## 7. Relação funcional dos Coletivos
 
 ```text
 explorar ou buscar
 → comparar resultados
+→ compreender origem
 → conhecer perfil público
 → revisar participação
 → acompanhar solicitação
@@ -274,65 +216,60 @@ explorar ou buscar
 
 Nenhuma etapa cria automaticamente a seguinte.
 
-## 9. Artefatos especializados
+## 8. Artefatos especializados
 
-| Nome | ID | Resultado |
+| Família | Autoridade | Resultado |
 |---|---|---|
-| Configuração para computador | UXA-040; UXA-041 | cinco SVGs validados |
-| Configuração móvel | UXA-051; UXA-052 | cinco SVGs validados |
-| Cartão e explicação | UXA-042; UXA-043 | seis SVGs validados |
-| Lista e Mapa patrocinados | UXA-044; UXA-045 | quatro SVGs validados |
-| Gestão para computador | UXA-046; UXA-047 | seis SVGs validados |
-| Gestão móvel | UXA-053; UXA-054 | seis SVGs validados |
-| Relatório agregado | UXA-048; UXA-049 | quatro SVGs validados |
-| Estados residuais | UXA-055 | dez SVGs aguardando validação |
-| Validação transversal | UXA-050 | 25 wireframes examinados |
-| Programa de Coletivos | UXA-059 | 88 estados organizados; zero novo SVG |
+| Mapa e estados | UXA-024 a UXA-033 | referências móveis e desktop validadas conforme cada pacote |
+| Opportunity Boost | UXA-040 a UXA-055 | 46 SVGs; 36 validados por pacote; 10 pendentes |
+| Validação transversal histórica | UXA-050 | 25 wireframes examinados |
+| Programa de Coletivos | UXA-059 | 88 estados organizados |
+| Descoberta e busca de Coletivos | UXA-060 | 5 SVGs móveis pendentes de validação |
 
-## 10. Cobertura
+## 9. Cobertura separada
 
 ### Opportunity Boost
 
 - 46 wireframes materializados;
-- 36 wireframes funcionalmente validados por pacote;
-- 10 estados residuais pendentes de validação;
-- 25 artefatos preservados sob a autoridade transversal histórica da UXA-050.
+- 36 funcionalmente validados por pacote;
+- 10 estados residuais pendentes;
+- 25 preservados sob autoridade transversal histórica da UXA-050.
 
 ### Coletivos
 
-- 88 estados funcionais contratados pelas UXA-056 a UXA-058;
-- nove referências prioritárias definidas;
-- zero novo wireframe especializado materializado;
-- número final de SVGs ainda não fixado;
-- materialização condicionada a pacotes pequenos, rastreáveis e autorizados.
+- 88 estados funcionais contratados;
+- nove referências P0A priorizadas;
+- 5 wireframes de descoberta e busca materializados;
+- 0 dos cinco validados funcionalmente;
+- demais referências e famílias não iniciadas.
 
-## 11. Limite recomendado dos futuros pacotes
+As contagens não serão somadas de forma a ocultar família, canal ou estado de validação.
+
+## 10. Limite dos pacotes
+
+Por padrão, cada pacote terá:
 
 - até três superfícies principais;
-- até seis SVGs com estados alternativos;
+- até seis SVGs;
 - uma responsabilidade dominante;
 - um canal principal;
 - estados incluídos e excluídos explícitos;
 - matriz de cobertura;
-- validação funcional antes da ampliação.
+- validação antes da ampliação.
 
 Novo SVG somente será criado quando houver mudança material de hierarquia, decisão, autoridade, público, dados, risco, continuidade, consentimento, canal ou recuperação.
 
-## 12. Limites
+## 11. Limites gerais
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade total, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de categorias, atribuição, agregação, denúncia, contestação, reconciliação, cobrança, chat, criptografia, moderação operacional, protótipo, teste de usabilidade ou Engenharia de Produto.
+Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade completa, acessibilidade técnica, algoritmo publicitário, busca, cartografia, política final de categorias, moderação, atribuição, cobrança, protótipo, teste ou Engenharia de Produto.
 
-## 13. Próximos pontos de decisão
+## 12. Próximos pontos de decisão
 
-1. UXA-060 — criar wireframes móveis de Explorar Coletivos e Resultados de Busca;
-2. validar funcionalmente a UXA-060;
-3. criar perfil público e formas de entrada;
-4. criar fluxo de participação e estados da solicitação;
-5. criar `Meus Coletivos` e Central de Atualizações;
-6. reformular o Início do Participante;
-7. criar a Visão Geral do Responsável;
-8. materializar P0B, P1 e P2 em incrementos próprios;
-9. validar funcionalmente os dez estados residuais da UXA-055;
-10. definir protocolo de protótipo e plano de teste somente após as validações necessárias.
+1. validar funcionalmente os cinco SVGs da UXA-060;
+2. reformular a família, caso necessário;
+3. somente depois decidir entre Perfil Público ou estados críticos adicionais;
+4. validar funcionalmente os dez estados residuais da UXA-055 em frente separada;
+5. preparar protocolo de protótipo e plano de teste somente após validações próprias;
+6. manter Engenharia de Produto pausada até autorização específica.
 
 Nenhuma etapa posterior é iniciada automaticamente.
