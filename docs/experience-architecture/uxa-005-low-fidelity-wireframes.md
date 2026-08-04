@@ -2,14 +2,13 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.40.0
+version: 0.41.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 parent: UXA-000
 related:
   - UXA-001
   - UXA-003
-  - UXA-005
   - UXA-009
   - UXA-020
   - UXA-024
@@ -23,8 +22,9 @@ related:
   - UXA-060
   - UXA-061
   - UXA-062
+  - UXA-063
   - PAS-001
-  - M7.64
+  - M7.65
 normative: false
 ---
 
@@ -32,7 +32,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este programa materializa hipóteses de Arquitetura da Experiência para validar organização, hierarquia, conteúdo, decisão e continuidade antes de identidade visual, protótipo, teste ou implementação.
+Este programa materializa hipóteses de experiência antes de identidade visual, protótipo, teste ou implementação.
 
 ```text
 contrato funcional
@@ -43,25 +43,24 @@ contrato funcional
 → Engenharia de Produto, quando autorizada
 ```
 
-Wireframe materializado não equivale a wireframe validado.
+Materialização não equivale a validação. Validação funcional não autoriza automaticamente protótipo ou Engenharia.
 
 ## 2. Convenções
 
 | Elemento | Significado |
 |---|---|
-| retângulo com borda | área funcional ou cartão |
+| borda contínua | área funcional |
 | preenchimento escuro | ação principal consciente |
-| preenchimento cinza | resumo, limite ou ação indisponível |
-| borda tracejada | exceção, proteção, limitação ou relação comercial |
+| preenchimento cinza | limite, resumo ou indisponibilidade |
+| borda tracejada | proteção, exceção ou relação comercial |
 | texto sublinhado | ação secundária ou explicação |
-| rótulo anterior | origem, autoridade ou natureza comercial antes do conteúdo |
+| rótulo anterior ao conteúdo | origem, autoridade ou natureza comercial |
 | estado textual | condição que não depende apenas de cor |
 | confirmação vazia | autorização ainda não concedida |
-| origem preservada | busca, categoria, recomendação, convite ou publicidade identificados |
 
-Cor, iconografia e tipografia não possuem significado definitivo.
+Cor, tipografia e iconografia não possuem significado definitivo.
 
-## 3. Cobertura do Opportunity Boost
+## 3. Opportunity Boost
 
 | Família | Materializados | Validados por pacote | Pendentes |
 |---|---:|---:|---:|
@@ -75,124 +74,109 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | estados residuais | 10 | 0 | 10 |
 | **Total** | **46** | **36** | **10** |
 
-A UXA-050 preserva sua autoridade transversal histórica sobre 25 artefatos examinados naquele incremento. Ela não valida retrospectivamente artefatos posteriores.
+A UXA-050 preserva sua autoridade histórica sobre os artefatos examinados naquele incremento e não valida retrospectivamente wireframes posteriores.
 
 ## 4. Programa de Coletivos
 
-A UXA-059 organiza 88 estados contratuais das UXA-056 a UXA-058 em quatro níveis:
+A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 
-```text
-P0A — espinha dorsal
-→ P0B — estados críticos
-→ P1 — participação interna e operação
-→ P2 — confiança, contato e proteção avançada
-```
+### 4.1 Cobertura materializada
 
-Estado contratual não equivale automaticamente a SVG.
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| descoberta e busca móvel | 5 | 5 | 0 |
+| Perfil Público móvel | 4 | 4 | 0 |
+| demais famílias de Coletivos | 0 | 0 | não materializadas |
+| **Total de Coletivos** | **9** | **9** | **0 nas famílias criadas** |
 
-## 5. Espinha dorsal P0A
+A contagem de Coletivos permanece separada do Opportunity Boost.
 
-| Ordem | Superfície | Canal inicial | Estado atual |
-|---:|---|---|---|
-| 1 | Explorar Coletivos | móvel | materializado e validado |
-| 2 | Resultados de Busca | móvel | materializado e validado |
-| 3 | Perfil Público do Coletivo | móvel | quatro SVGs materializados; validação pendente |
-| 4 | Solicitação de Participação | móvel | não iniciada |
-| 5 | Solicitação Pendente | móvel | não iniciada |
-| 6 | Meus Coletivos | móvel | não iniciado |
-| 7 | Central de Atualizações | móvel | não iniciada |
-| 8 | Início do Participante | móvel | reformulação não iniciada |
-| 9 | Visão Geral do Responsável | computador | não iniciada |
+### 4.2 Espinha dorsal P0A
 
-## 6. Descoberta e busca de Coletivos
+| Ordem | Superfície | Estado |
+|---:|---|---|
+| 1 | Explorar Coletivos | materializada e validada |
+| 2 | Resultados de Busca | materializada e validada |
+| 3 | Perfil Público do Coletivo | materializada e validada |
+| 4 | Revisão e Solicitação de Participação | não iniciada |
+| 5 | Solicitação Pendente | não iniciada |
+| 6 | Meus Coletivos | não iniciado |
+| 7 | Central de Atualizações | não iniciada |
+| 8 | Início do Participante | reformulação não iniciada |
+| 9 | Visão Geral do Responsável | não iniciada |
 
-As UXA-060 e UXA-061 governam cinco SVGs móveis:
+## 5. Descoberta e busca
 
-- Explorar Coletivos;
-- resultados de busca;
-- filtros;
-- busca sem resultados;
-- explicação de origem e publicidade.
+Autoridades:
 
-Cobertura: **5 materializados, 5 validados e 0 pendente**.
+- UXA-060 — cinco SVGs móveis;
+- UXA-061 — validação funcional e reformulação.
 
-## 7. Perfil Público do Coletivo
+Decisões preservadas:
 
-A UXA-062 materializa quatro estados:
+- origem orgânica, sugestão e publicidade distinguíveis;
+- primeiro resultado orgânico;
+- filtros reversíveis;
+- localização precisa opcional;
+- zero confirmado distinto de falha;
+- visualização sem criação de vínculo.
+
+## 6. Perfil Público
+
+Autoridades:
+
+- UXA-062 — quatro SVGs móveis;
+- UXA-063 — validação funcional e reformulação.
+
+Estados validados:
 
 1. entrada aberta;
 2. entrada mediante aprovação;
 3. entradas temporariamente indisponíveis;
-4. apresentação protegida.
+4. apresentação protegida por convite.
 
-Cobertura: **4 materializados, 0 validados e 4 pendentes**.
+Regras validadas:
 
-A família demonstra:
+- acompanhar não é participar;
+- compartilhar perfil não é recomendar;
+- canais públicos não concedem contato privado;
+- dados adicionais somente após revisão;
+- anunciante e responsável operacional são autoridades distintas;
+- reputação suficiente mostra denominadores por dimensão;
+- amostra insuficiente não é nota zero;
+- perfil protegido identifica remetente, autoridade e motivo sem virar resultado de busca.
 
-- origem orgânica, publicidade ou convite;
-- propósito e funcionamento;
-- território, modalidade e acessibilidade;
-- acompanhar separado de participar;
-- regras e condições anteriores ao vínculo;
-- contagens governadas e lista protegida;
-- responsáveis e relações institucionais limitadas;
-- reputação suficiente, insuficiente ou suprimida;
-- denúncia, proteção e compartilhamento permitido.
+## 7. Proteções transversais
 
-## 8. Cobertura consolidada de Coletivos
+- contagem não funciona como ranking;
+- lista nominal permanece protegida;
+- publicidade não compra legitimidade, reputação ou prioridade;
+- apoio institucional não concede dados ou autoridade;
+- visualização não revela identidade;
+- denúncia não é avaliação;
+- proteção não é irregularidade;
+- convite não cria vínculo;
+- estado contratual não gera automaticamente um SVG exclusivo.
 
-| Família | Materializados | Validados | Pendentes |
-|---|---:|---:|---:|
-| descoberta e busca | 5 | 5 | 0 |
-| Perfil Público | 4 | 0 | 4 |
-| demais famílias | 0 | 0 | não materializadas |
-| **Total visual atual** | **9** | **5** | **4** |
+## 8. Limites
 
-As contagens de Coletivos permanecem separadas das contagens do Opportunity Boost.
+O programa ainda não inicia:
 
-## 9. Limite recomendado por incremento
-
-Por padrão, cada pacote deverá possuir:
-
-- até três superfícies principais;
-- até seis SVGs, incluindo estados alternativos;
-- uma responsabilidade dominante;
-- um canal principal;
-- matriz explícita de cobertura;
-- estados incluídos e excluídos;
-- validação funcional antes de ampliar a família seguinte.
-
-## 10. Regra para novo SVG
-
-Um novo SVG somente será criado quando houver mudança material de:
-
-- hierarquia;
-- decisão principal;
-- autoridade;
-- público ou visibilidade;
-- dados expostos;
-- consequência;
-- proteção;
-- continuidade;
-- canal;
-- recuperação após falha.
-
-## 11. Próxima transição
-
-A próxima transição especializada é:
-
-> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
-
-Ela deverá validar os quatro SVGs antes de qualquer início da Solicitação de Participação.
-
-## 12. Fronteiras preservadas
-
-Não estão iniciados por este programa:
-
-- protótipo navegável;
+- Solicitação de Participação;
+- Solicitação Pendente;
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante reformulado;
+- gestão do responsável;
+- reputação detalhada;
+- recomendação e contato completos;
+- protótipo;
 - teste com pessoas;
 - identidade visual;
-- componentes técnicos;
-- algoritmo de busca ou reputação;
-- política jurídica;
 - Engenharia de Produto.
+
+## 9. Próxima transição
+
+**UXA-064 — Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos.**
+
+O pacote deverá permanecer dentro do limite governado de três superfícies principais ou seis SVGs e dependerá de autorização separada.
