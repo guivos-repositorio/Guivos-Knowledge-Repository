@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.38.0
+version: 5.39.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.40.0
+  - ROADMAP-12.41.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -22,6 +22,7 @@ related:
   - UXA-062
   - UXA-063
   - UXA-064
+  - UXA-065
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -37,6 +38,7 @@ related:
   - M7.64
   - M7.65
   - M7.66
+  - M7.67
 normative: false
 ---
 
@@ -66,27 +68,24 @@ Este registro apresenta a maturidade arquitetural consolidada. O estado oficial 
 | M7.63 | concluído | descoberta e busca móvel validadas |
 | M7.64 | concluído | Perfil Público móvel materializado |
 | M7.65 | concluído | Perfil Público móvel validado funcionalmente |
-| **M7.66** | **concluído no pacote** | **revisão e solicitação móvel materializadas em cinco estados** |
+| M7.66 | concluído | revisão e solicitação móvel materializadas |
+| **M7.67** | **concluído no pacote** | **revisão e solicitação móvel validadas e reformuladas** |
 
-## 3. M7.66 — Revisão e Solicitação Móvel Materializadas
+## 3. M7.67 — Revisão e Solicitação Móvel Validadas
 
 O marco registra:
 
-- cinco novos SVGs móveis;
-- revisão da entrada aberta;
-- confirmação imediata da entrada aberta;
-- revisão da solicitação mediante aprovação;
-- comprovante transitório de envio;
-- revisão protegida de convite;
-- significado do vínculo antes da ação;
-- dados enviados e dados proibidos;
-- confirmações inicialmente vazias;
-- cancelamento anterior ao envio;
-- autoridade e prazo estimado;
-- permissões separadas;
-- entrada aberta sem papel ou autoridade automática;
-- solicitação e convite sem vínculo automático;
-- comprovante distinto da futura Solicitação Pendente.
+- cinco SVGs móveis reformulados e validados;
+- visibilidade inicial sem escolha implícita;
+- confirmações vazias e redação sem base jurídica presumida;
+- acessibilidade separada das confirmações obrigatórias;
+- cancelamento antes e depois do envio distinguido;
+- confirmação de entrada sem gestão futura simulada;
+- comprovante sem ação para Solicitação Pendente inexistente;
+- eventos futuros sem alegação de implementação;
+- alegação do convite identificada como não verificada;
+- confidencialidade sem garantia absoluta;
+- ausência de função, autoridade ou vínculo automático.
 
 ## 4. Cobertura no marco
 
@@ -94,18 +93,18 @@ O marco registra:
 |---|---:|---:|---:|
 | Coletivos — descoberta | 5 | 5 | 0 |
 | Coletivos — Perfil Público | 4 | 4 | 0 |
-| Coletivos — revisão e solicitação | 5 | 0 | 5 |
+| Coletivos — revisão e solicitação | 5 | 5 | 0 |
 | Opportunity Boost | 46 | 36 | 10 |
 
 ## 5. Condição do marco
 
-M7.66 conclui materialização, não validação funcional.
+M7.67 conclui a validação funcional da quarta referência P0A.
 
 O avanço depende de autorização separada para:
 
-> **UXA-065 — Validação Funcional e Reformulação da Revisão e Solicitação de Participação Móvel em Coletivos**
+> **UXA-066 — Wireframes Móveis da Solicitação Pendente em Coletivos**
 
-Solicitação Pendente não será iniciada antes desse gate.
+A Solicitação Pendente permanece não iniciada.
 
 ## 6. Preservações
 
@@ -117,5 +116,5 @@ Permanecem inalterados:
 - 46 wireframes do Opportunity Boost;
 - contratos UXA-056 a UXA-058;
 - programa de 88 estados da UXA-059;
-- Perfil Público e descoberta já validados;
-- pausa da Engenharia de Produto antes de W0-01.
+- pausa da Engenharia de Produto antes de W0-01;
+- ausência de protótipo e teste com pessoas.
