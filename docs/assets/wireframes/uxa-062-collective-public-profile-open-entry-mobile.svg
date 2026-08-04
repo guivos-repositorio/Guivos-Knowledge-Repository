@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe móvel do Perfil Público de Coletivo com entrada aberta</title>
-  <desc id="desc">Perfil público móvel do Pedal Horizonte, com origem orgânica preservada, propósito, território, entrada aberta, regras, contagem governada, responsáveis, relação institucional, reputação contextual e ações separadas de acompanhar e participar.</desc>
+  <desc id="desc">Perfil público móvel do Pedal Horizonte, com origem orgânica preservada, propósito, território, entrada aberta, regras, contagem governada, responsáveis, relação institucional, reputação contextual com denominadores e ações separadas de acompanhar e participar.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
   <text x="20" y="57" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar aos resultados</text>
-  <text x="370" y="57" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Compartilhar</text>
+  <text x="370" y="57" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Compartilhar perfil</text>
   <rect x="20" y="73" width="350" height="45" rx="9" fill="#f5f5f5" stroke="#999999"/>
   <text x="32" y="89" font-family="Arial, sans-serif" font-size="7" font-weight="700">ORIGEM DA NAVEGAÇÃO</text>
   <text x="32" y="105" font-family="Arial, sans-serif" font-size="8">Resultado orgânico · busca “ciclismo” · Belo Horizonte · posição 1</text>
-  <text x="356" y="105" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender</text>
+  <text x="356" y="105" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver origem</text>
   <text x="20" y="151" font-family="Arial, sans-serif" font-size="23" font-weight="700">Pedal Horizonte</text>
   <text x="20" y="171" font-family="Arial, sans-serif" font-size="8">COLETIVO · ATIVO · PÚBLICO</text>
   <rect x="274" y="137" width="96" height="28" rx="14" fill="#f2f2f2" stroke="#777777"/>
@@ -41,10 +41,11 @@
   <rect x="20" y="637" width="350" height="91" rx="10" fill="#ffffff" stroke="#777777"/>
   <text x="32" y="657" font-family="Arial, sans-serif" font-size="10" font-weight="700">Experiência dos participantes</text>
   <text x="32" y="675" font-family="Arial, sans-serif" font-size="8">87 avaliações verificadas · últimos 12 meses</text>
-  <text x="32" y="693" font-family="Arial, sans-serif" font-size="8">Descrição correspondeu: 91% · respeito e segurança: 94%</text>
-  <text x="32" y="712" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver distribuição, método e limitações</text>
+  <text x="32" y="692" font-family="Arial, sans-serif" font-size="8">Descrição correspondeu: 91% · 82 respostas</text>
+  <text x="32" y="708" font-family="Arial, sans-serif" font-size="8">Respeito e segurança: 94% · 84 respostas</text>
+  <text x="32" y="722" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver distribuição, método e limitações</text>
   <text x="20" y="750" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Atividades públicas</text>
-  <text x="195" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Proteção e contato</text>
+  <text x="195" y="750" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Proteção e canais públicos</text>
   <text x="370" y="750" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Denunciar perfil</text>
   <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
   <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817" font-weight="700">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817">Eu</text></g>
