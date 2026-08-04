@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.61.0
+version: 0.62.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 related:
@@ -33,7 +33,8 @@ related:
   - UXA-063
   - UXA-064
   - UXA-065
-  - M7.67
+  - UXA-066
+  - M7.68
 normative: false
 ---
 
@@ -69,6 +70,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | descoberta e busca móvel | UXA-060; UXA-061 |
 | Perfil Público móvel | UXA-062; UXA-063 |
 | revisão e solicitação móvel | UXA-064; UXA-065 |
+| Solicitação Pendente móvel | UXA-066 |
 
 ## 4. Estado visual dos Coletivos
 
@@ -77,64 +79,79 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | descoberta e busca | 5 | 5 | 0 |
 | Perfil Público | 4 | 4 | 0 |
 | revisão e solicitação | 5 | 5 | 0 |
-| demais famílias | 0 | 0 | não materializadas |
+| Solicitação Pendente | 8 | 0 | 8 |
+| **Total de Coletivos** | **22** | **14** | **8** |
 
-Os 14 SVGs de Coletivos estão materializados e validados. Permanecem separados dos 46 SVGs do Opportunity Boost.
+Os SVGs de Coletivos permanecem separados dos 46 SVGs do Opportunity Boost.
 
-## 5. Descoberta e Perfil Público
+## 5. Fundação visual validada
 
-Estão validados:
+Estão materializadas e validadas:
 
-- origem orgânica, comercial ou protegida;
-- retorno com contexto preservado;
+- descoberta e busca;
+- Perfil Público;
+- revisão consciente da participação;
+- confirmação imediata da entrada aberta;
+- comprovante transitório do envio;
+- revisão protegida de convite.
+
+Permanecem vigentes:
+
+- origem orgânica, comercial ou protegida identificada;
 - acompanhar separado de participar;
-- compartilhamento de perfil separado de recomendação;
-- canais públicos separados de contato privado;
+- Perfil Público separado do ambiente interno;
 - dados enviados somente após revisão;
-- responsável operacional separado do anunciante;
-- reputação contextual com denominadores;
-- amostra insuficiente sem nota implícita;
-- convite protegido fora da descoberta pública.
-
-## 6. Revisão e solicitação validadas
-
-A UXA-064 e a UXA-065 governam:
-
-1. revisão para entrada aberta;
-2. confirmação imediata da entrada aberta;
-3. revisão de solicitação mediante aprovação;
-4. comprovante transitório do envio;
-5. revisão protegida de convite.
-
-Foram validados:
-
-- significado do vínculo antes da ação;
-- visibilidade inicial sem escolha implícita;
-- dados enviados e protegidos;
 - confirmações inicialmente vazias;
 - acessibilidade separada das confirmações obrigatórias;
-- cancelamento antes do envio;
-- entrada aberta sem função ou autoridade automática;
+- entrada aberta sem função automática;
 - solicitação sem criação de vínculo;
 - prazo estimado sem promessa;
-- comprovante sem simular Solicitação Pendente;
-- alegação protegida identificada como não verificada;
-- confidencialidade sem garantia absoluta;
-- marketing, notificações e contato privado separados.
+- comprovante separado de acompanhamento contínuo;
+- alegação protegida identificada como não verificada.
+
+## 6. Solicitação Pendente materializada
+
+A UXA-066 materializa oito estados móveis:
+
+1. aguardando decisão do Coletivo;
+2. análise protegida;
+3. informação adicional solicitada;
+4. revisão da resposta adicional;
+5. cancelamento pela Pessoa;
+6. aprovação;
+7. recusa;
+8. expiração.
+
+A família demonstra:
+
+- estado, data, identificador e autoridade;
+- prazo estimado distinto de garantia;
+- dados enviados e dados protegidos;
+- diferença entre espera e ação necessária;
+- pergunta adicional com finalidade declarada;
+- resposta revisável antes do envio;
+- cancelamento separado de recusa;
+- expiração separada de recusa;
+- aprovação sem função ou autoridade automática;
+- recusa sem reputação negativa da Pessoa;
+- exposição mínima em processo protegido;
+- nenhuma navegação ativa para `Meus Coletivos` ainda inexistente.
+
+Os oito SVGs aguardam validação funcional especializada.
 
 ## 7. Decisões estruturais preservadas
 
-- Perfil Público é separado do Início do Participante e da gestão;
-- acompanhar não é participar;
 - solicitação não é aprovação;
 - convite não cria vínculo;
-- relação institucional não concede autoridade automática;
-- publicidade não é recomendação nem reputação;
-- avaliação não é denúncia;
+- comprovante não é acompanhamento contínuo;
+- atraso não é recusa;
+- cancelamento da Pessoa não é recusa do Coletivo;
+- expiração não é recusa;
+- informação adicional não garante aprovação;
+- decisão sobre vínculo não é reputação da Pessoa;
+- relação institucional não concede autoridade ou dados;
 - canal público não autoriza mensagem privada;
-- visualização não compartilha identidade;
 - leitura, rolagem e silêncio não equivalem a confirmação;
-- comprovante transitório não é acompanhamento contínuo;
 - alegação não verificada não é fato comprovado.
 
 ## 8. Continuidade P0A
@@ -150,17 +167,20 @@ Explorar Coletivos
 → Início do Participante
 ```
 
-As quatro primeiras referências estão materializadas e validadas. As demais permanecem não iniciadas.
+As cinco primeiras referências estão materializadas. As quatro primeiras estão validadas; a quinta aguarda validação. As demais permanecem não iniciadas.
 
 ## 9. Limites
 
 Não foram autorizados:
 
-- Solicitação Pendente;
-- informação adicional, recusa, expiração ou contestação;
-- ambiente interno reformulado;
-- gestão do responsável;
+- validação funcional da UXA-066;
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante reformulado;
+- fila e gestão do responsável;
+- contestação completa da recusa;
 - política jurídica;
+- ambiente de simulação das jornadas;
 - protótipo;
 - teste com pessoas;
 - identidade visual;
@@ -168,4 +188,4 @@ Não foram autorizados:
 
 ## 10. Próxima transição
 
-**UXA-066 — Wireframes Móveis da Solicitação Pendente em Coletivos**, mediante autorização separada.
+**UXA-067 — Validação Funcional e Reformulação da Solicitação Pendente Móvel em Coletivos**, mediante autorização separada.
