@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.87.0
+version: 1.88.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-03
 depends_on:
@@ -16,6 +16,7 @@ related:
   - UXA-056
   - UXA-057
   - UXA-058
+  - UXA-059
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
@@ -23,8 +24,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.34.0
-  - M7.60
+  - ROADMAP-12.35.0
+  - M7.61
 normative: true
 ---
 
@@ -39,20 +40,19 @@ Este registro é a superfície oficial do estado global vigente do Repositório 
 | Elemento | Estado em linguagem clara | Referência técnica |
 |---|---|---|
 | Era de conhecimento | fase de estruturação do conhecimento da Guivos | GE-2 — Knowledge |
-| Marco atual | interações, recomendações e conexões contratadas funcionalmente | M7.60; UXA-058 |
+| Marco atual | programa e priorização dos wireframes de Coletivos definidos | M7.61; UXA-059 |
 | Remediação | concluída; validação mecânica permanente ativa | R1–R6 |
 | Achados conhecidos | nenhum crítico, maior ou menor aberto | 0 |
 | Arquitetura de Negócios | ativa; 18 decisões humanas concluídas | BA-STR-002; COD-018 |
 | Resultados Empresariais | 9 em validação, 3 fundidos, 6 rejeitados e zero canônicos | BA-STR-002-COR-001; BA-STR-002-CODR-001 |
-| Arquitetura da Experiência | ativa até UXA-058 | UXA-000 a UXA-058 |
+| Arquitetura da Experiência | ativa até UXA-059 | UXA-000 a UXA-059 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
 | Início protegido móvel | validado e reformulado | UXA-023; UXA-034; UXA-035 |
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada como entrada recorrente | UXA-002; UXA-006; UXA-010 |
 | Mapa e estados | estados orgânicos e patrocinados móveis e desktop validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
-| Descoberta e participação em Coletivos | contratadas; wireframes especializados não iniciados | UXA-056 |
-| Avaliação e reputação | contratadas; wireframes especializados não iniciados | UXA-057 |
-| Interações e recomendações | contratadas; 44 estados futuros registrados | UXA-058 |
+| Contratos de Coletivos | descoberta, participação, avaliação, comunicação e proteção contratadas | UXA-056 a UXA-058 |
+| Programa de wireframes de Coletivos | 88 estados organizados; nove referências priorizadas; zero novo SVG | UXA-059 |
 | Opportunity Boost econômico | add-on publicitário candidato separado dos planos | GEM-007-A1 |
 | Configuração do Boost | validada em computador e móvel | UXA-040 a UXA-043; UXA-051; UXA-052 |
 | Lista, Mapa, gestão e relatório do Boost | materializados e validados nos canais correspondentes | UXA-044 a UXA-054 |
@@ -182,11 +182,42 @@ A UXA-058 estabelece:
 - métricas sem ranking ou reputação de pessoas;
 - baixa conectividade sem fabricação de entrega.
 
-Foram contratados 44 estados para wireframes posteriores. Nenhum foi materializado pela UXA-058.
+## 9. Programa de wireframes de Coletivos
 
-## 9. Opportunity Boost
+A UXA-059 preserva os 88 estados obrigatórios:
 
-### 9.1 Parâmetros candidatos
+- 20 da UXA-056;
+- 24 da UXA-057;
+- 44 da UXA-058.
+
+Estado contratual não equivale automaticamente a tela. A materialização será organizada em:
+
+```text
+P0A — espinha dorsal
+→ P0B — estados críticos
+→ P1 — participação interna e operação recorrente
+→ P2 — confiança, recomendação, contato e proteção avançada
+```
+
+A P0A prioriza:
+
+1. Explorar Coletivos;
+2. Resultados de Busca;
+3. Perfil Público do Coletivo;
+4. Solicitação de Participação;
+5. Solicitação Pendente;
+6. Meus Coletivos;
+7. Central de Atualizações;
+8. Início do Participante;
+9. Visão Geral do Responsável.
+
+Experiências da pessoa serão móveis primeiro. Gestão densa será computador primeiro. Cada incremento deverá limitar-se, por padrão, a três superfícies principais ou seis SVGs.
+
+Nenhuma das nove referências foi criada neste incremento. O número final de SVGs permanece não fixado.
+
+## 10. Opportunity Boost
+
+### 10.1 Parâmetros candidatos
 
 | Modalidade | Orçamento mínimo | Duração candidata |
 |---|---:|---:|
@@ -202,7 +233,7 @@ Foram contratados 44 estados para wireframes posteriores. Nenhum foi materializa
 - atribuição por clique candidata de até sete dias;
 - atribuição por visualização desativada inicialmente.
 
-### 9.2 Experiência preservada
+### 10.2 Experiência preservada
 
 Os pacotes UXA-038 a UXA-054 validam contrato, configuração, disclosure, Lista, Mapa, gestão e relatório nos canais materializados.
 
@@ -212,7 +243,7 @@ A UXA-050 permanece autoridade transversal dos 25 wireframes originalmente exami
 
 Opportunity Boost não altera ranking orgânico, confiança, impacto, avaliação ou recomendação e não será inserido silenciosamente em canais internos.
 
-## 10. Proteções vigentes
+## 11. Proteções vigentes
 
 - gratuito mantém valor real;
 - catálogo público e orgânico permanecem acessíveis;
@@ -227,13 +258,17 @@ Opportunity Boost não altera ranking orgânico, confiança, impacto, avaliaçã
 - recomendação não equivale a publicidade;
 - confirmação de leitura não equivale a consentimento;
 - denúncia, contestação e preferência permanecem distintas;
+- estado contratual não equivale automaticamente a tela;
 - Engenharia de Produto permanece pausada.
 
-## 11. Limites vigentes
+## 12. Limites vigentes
 
 Não foram concluídos:
 
-- wireframes das UXA-056, UXA-057 e UXA-058;
+- nenhum dos nove wireframes da espinha dorsal P0A;
+- estados críticos P0B;
+- comunicação e operação P1;
+- reputação, recomendação, contato e proteção P2;
 - validação funcional desses futuros conjuntos;
 - política final de moderação, privacidade, segurança, notificações e estatística;
 - tecnologia de chat, criptografia, retenção e integração externa;
@@ -243,14 +278,16 @@ Não foram concluídos:
 - custos, margem, antifraude e unit economics;
 - design, protótipo, testes, piloto ou produção.
 
-## 12. Próximos atos governados
+## 13. Próximos atos governados
 
-1. definir a ordem de materialização das experiências das UXA-056 a UXA-058;
-2. separar wireframes da pessoa e do responsável;
-3. criar e validar cada conjunto em incrementos próprios;
-4. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
-5. validar os dez estados residuais da UXA-055;
-6. retomar independentemente testes de Resultados Empresariais e Modelo Econômico;
-7. manter Engenharia de Produto pausada até autorização própria.
+1. UXA-060 — criar wireframes móveis de Explorar Coletivos e Resultados de Busca;
+2. validar funcionalmente a UXA-060;
+3. materializar perfil público e formas de entrada;
+4. materializar participação, `Meus Coletivos`, Central de Atualizações, Início e gestão;
+5. avançar por P0B, P1 e P2 em incrementos próprios;
+6. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
+7. validar os dez estados residuais da UXA-055;
+8. retomar independentemente testes de Resultados Empresariais e Modelo Econômico;
+9. manter Engenharia de Produto pausada até autorização própria.
 
 Nenhum ato é iniciado automaticamente.
