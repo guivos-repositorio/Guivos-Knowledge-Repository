@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.57.0
+version: 0.58.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-03
+last_updated: 2026-08-04
 related:
   - PAS-001
   - GLPA-001
@@ -19,7 +19,6 @@ related:
   - UXA-018
   - UXA-019
   - UXA-020
-  - UXA-023
   - UXA-024
   - UXA-038
   - UXA-050
@@ -30,7 +29,8 @@ related:
   - UXA-059
   - UXA-060
   - UXA-061
-  - M7.63
+  - UXA-062
+  - M7.64
 normative: false
 ---
 
@@ -38,155 +38,154 @@ normative: false
 
 ## 1. Finalidade
 
-A Arquitetura da Experiência transforma princípios, capacidades e contratos do Repositório em experiências compreensíveis para Pessoas, Organizações e Coletivos.
+A Arquitetura da Experiência transforma princípios, capacidades e contratos do Repositório em experiências compreensíveis para Pessoas, Coletivos e Organizações.
 
-Ela governa hierarquia, decisões, estados, continuidade, consentimento, privacidade, autoridade e proteção antes de design visual ou implementação.
+Ela governa hierarquia, decisão, continuidade, consentimento, autoridade, privacidade e proteção antes de design visual ou implementação.
 
-## 2. Regras de maturidade
+## 2. Regra de maturidade
 
 ```text
-contrato
-→ programa
-→ wireframe
+contrato funcional
+→ programa governado
+→ materialização visual
 → validação funcional
-→ protótipo
-→ teste
-→ produção
+→ protótipo e teste, quando autorizados
+→ Engenharia de Produto, quando autorizada
 ```
 
-Nenhuma etapa equivale à seguinte.
+Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 3. Fundamentos preservados
+## 3. Autoridades dos Coletivos
 
-- Pessoa mantém autonomia;
-- Jornada apoia sem diagnosticar ou comandar;
-- localização é opcional;
-- conteúdo protegido não alimenta publicidade;
-- gratuito mantém valor real;
-- plano, transação, comissão e Boost permanecem distintos;
-- publicidade não compra relevância orgânica, confiança ou impacto;
-- participação não cria autoridade ou contato privado;
-- contrato funcional não equivale a implementação.
+| Responsabilidade | Autoridade |
+|---|---|
+| descoberta, Perfil Público e participação | UXA-056 |
+| avaliação e reputação contextual | UXA-057 |
+| interação, recomendação, contato e proteção | UXA-058 |
+| programa e priorização de wireframes | UXA-059 |
+| descoberta e busca móvel | UXA-060 |
+| validação da descoberta e busca | UXA-061 |
+| Perfil Público móvel | UXA-062 |
 
-## 4. Experiência pessoal vigente
+## 4. Decisões estruturais preservadas
+
+- Perfil Público é separado do Início do Participante e da gestão;
+- acompanhar não é participar;
+- solicitação não é aprovação;
+- presença em atividade não é vínculo permanente;
+- papel aceito não é disponibilidade universal;
+- relação institucional não concede autoridade automática;
+- publicidade não é recomendação nem reputação;
+- avaliação não é denúncia;
+- reputação não é nota moral ou ranking de pessoas;
+- origem, público, autoridade e consequência permanecem identificados;
+- conteúdo protegido da Jornada não é reutilizado silenciosamente.
+
+## 5. Programa dos Coletivos
+
+A UXA-059 preserva 88 estados contratuais e nove referências P0A.
+
+A sequência pessoal é:
 
 ```text
-Página Inicial pública
-→ início protegido
-→ compreensão inicial revisável
-→ Tela Hoje
-→ Hoje | Jornada | Explorar | Mapa | Eu
+Explorar
+→ buscar e comparar
+→ conhecer Perfil Público
+→ revisar participação
+→ acompanhar solicitação
+→ retornar por Meus Coletivos
+→ receber atualizações
+→ acessar o ambiente interno
 ```
 
-Home, início protegido, compreensão inicial, Tela Hoje, Mapa e oportunidades permanecem autoridades de seus escopos.
+## 6. Descoberta e busca
 
-## 5. Coletivos — contratos
+As UXA-060 e UXA-061 materializam e validam:
 
-### UXA-056
-
-Governa descoberta, Perfil Público, acompanhamento, entrada, participação, pausa, saída e gestão do vínculo.
-
-### UXA-057
-
-Governa avaliação e reputação contextualizadas, sem ranking público de pessoas.
-
-### UXA-058
-
-Governa atualizações, comunicados, discussões, perguntas, atividades, recomendações, contato, notificações e moderação.
-
-### UXA-059
-
-Organiza 88 estados contratuais em P0A, P0B, P1 e P2 e limita cada incremento.
-
-## 6. Coletivos — descoberta visual validada
-
-A UXA-060 materializa cinco wireframes móveis:
-
-1. Explorar Coletivos;
-2. Resultados;
-3. Filtros;
-4. Sem resultados;
-5. Explicação patrocinada.
-
-A UXA-061 valida a família:
-
-- um artefato válido sem alteração;
-- quatro válidos após reformulação;
-- cinco materializados;
-- cinco validados;
-- zero pendente nesta família.
-
-## 7. Decisões validadas da descoberta
-
-- exploração útil sem personalização;
-- área manual sem localização precisa;
-- origens separadas;
-- primeiro resultado orgânico;
-- publicidade identificada antes do conteúdo;
-- ordem orgânica independente do pagamento;
-- publicidade com acesso ao Perfil Público sem perder identificação;
-- contagem sem ranking;
-- busca, área e filtros separados;
-- seleção acessível por texto e marca;
-- limpeza somente dos filtros;
-- zero confirmado distinto de erro;
-- ausência de preenchimento publicitário no zero;
-- retorno da explicação com contexto preservado;
-- visualização sem vínculo.
-
-## 8. Continuidade futura
-
-A próxima superfície P0A candidata é o Perfil Público do Coletivo.
-
-Ela deverá receber, quando permitido:
-
-- origem;
-- consulta;
-- área;
+- Explorar Coletivos;
+- resultados de busca;
 - filtros;
-- posição;
-- relação comercial;
-- estado de personalização.
+- busca sem resultados;
+- explicação de origem e publicidade.
 
-O Perfil Público ainda não está materializado.
+Cobertura: **5 materializados, 5 validados e 0 pendente**.
 
-## 9. Opportunity Boost
+## 7. Perfil Público móvel
 
-Permanece mecanismo publicitário candidato e separado da descoberta orgânica.
+A UXA-062 materializa:
 
-Cobertura:
+- entrada aberta;
+- entrada mediante aprovação;
+- entradas temporariamente indisponíveis;
+- apresentação protegida.
 
-- 46 wireframes materializados;
-- 36 validados por pacote;
-- dez estados residuais pendentes;
-- UXA-050 preservada como autoridade transversal histórica de seu escopo.
+Cobertura: **4 materializados, 0 validados e 4 pendentes**.
 
-## 10. Cobertura de Coletivos
+A família preserva:
 
-| Família | Materializados | Validados | Estado |
-|---|---:|---:|---|
-| descoberta e busca | 5 | 5 | concluída funcionalmente |
-| Perfil Público | 0 | 0 | não iniciada |
-| participação | 0 | 0 | não iniciada |
-| continuidade e comunicação | 0 | 0 | não iniciada |
-| gestão | 0 | 0 | não iniciada |
-| reputação, contato e proteção avançada | 0 | 0 | não iniciada |
+- origem e retorno com contexto;
+- propósito, funcionamento e regras;
+- território, modalidade e acessibilidade;
+- estado de entrada antes da ação;
+- contagens governadas;
+- lista nominal protegida;
+- responsáveis e limites institucionais;
+- reputação contextual;
+- publicidade identificada;
+- compartilhamento permitido, proteção e denúncia.
 
-## 11. Limites vigentes
+## 8. Perfil protegido
 
-Não estão iniciados:
+Um Coletivo protegido não recebe Perfil Público completo.
 
-- UXA-062;
-- Perfil Público;
-- protótipo;
-- teste de usabilidade;
-- design visual final;
-- algoritmo de busca;
-- operação publicitária real;
-- Engenharia de Produto.
+A apresentação mínima poderá ocultar:
 
-## 12. Próximo ato
+- nome integral;
+- território;
+- contagem;
+- lista;
+- responsáveis;
+- atividades;
+- reputação pública;
+- contato.
 
-Após integração e nova autorização, o próximo pacote candidato é a UXA-062 — Wireframes Móveis do Perfil Público do Coletivo.
+O acesso por convite não cria participação e não autoriza compartilhamento externo.
 
-Nenhum ato posterior é automático.
+## 9. Reputação no Perfil Público
+
+Quando houver base suficiente, a superfície poderá mostrar objeto, período, quantidade verificada, dimensões e limitações.
+
+Quando a base for insuficiente, declarará explicitamente a insuficiência sem sugerir resultado positivo ou negativo.
+
+A primeira versão não utiliza estrelas ou nota universal como síntese principal.
+
+## 10. Relações institucionais
+
+Organizações poderão aparecer como apoiadoras, parceiras, financiadoras, anunciantes ou operadoras legítimas.
+
+A relação deverá indicar seu limite. Nenhuma dessas relações concede automaticamente:
+
+- acesso a participantes ou solicitações;
+- autoridade de moderação;
+- contato comercial;
+- acesso à Jornada;
+- acesso a avaliações individuais;
+- legitimidade ou reputação positiva.
+
+## 11. Cobertura visual consolidada
+
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| Opportunity Boost | 46 | 36 | 10 |
+| Coletivos — descoberta e busca | 5 | 5 | 0 |
+| Coletivos — Perfil Público | 4 | 0 | 4 |
+
+As famílias possuem autoridades e validações separadas.
+
+## 12. Próxima transição
+
+A próxima transição especializada é:
+
+> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
+
+Solicitação de Participação, Solicitação Pendente, Meus Coletivos, Central de Atualizações, gestão, protótipo e Engenharia de Produto permanecem não iniciados.
