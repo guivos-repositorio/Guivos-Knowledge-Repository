@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.58.0
+version: 0.59.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 related:
@@ -30,7 +30,8 @@ related:
   - UXA-060
   - UXA-061
   - UXA-062
-  - M7.64
+  - UXA-063
+  - M7.65
 normative: false
 ---
 
@@ -64,128 +65,90 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | interação, recomendação, contato e proteção | UXA-058 |
 | programa e priorização de wireframes | UXA-059 |
 | descoberta e busca móvel | UXA-060 |
-| validação da descoberta e busca | UXA-061 |
+| validação de descoberta e busca | UXA-061 |
 | Perfil Público móvel | UXA-062 |
+| validação do Perfil Público móvel | UXA-063 |
 
-## 4. Decisões estruturais preservadas
+## 4. Estado visual dos Coletivos
+
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| descoberta e busca | 5 | 5 | 0 |
+| Perfil Público | 4 | 4 | 0 |
+| demais famílias | 0 | 0 | não materializadas |
+
+Os nove SVGs de Coletivos permanecem separados dos 46 SVGs do Opportunity Boost.
+
+## 5. Perfil Público validado
+
+A família distingue:
+
+- entrada aberta;
+- participação mediante aprovação;
+- entradas temporariamente indisponíveis;
+- apresentação protegida por convite.
+
+A UXA-063 validou:
+
+- origem orgânica, comercial ou protegida;
+- retorno com contexto preservado;
+- acompanhar separado de participar;
+- compartilhamento de perfil separado de recomendação;
+- canais públicos separados de contato privado;
+- dados enviados somente após revisão;
+- responsável operacional separado do anunciante;
+- reputação com denominadores por dimensão;
+- amostra insuficiente sem nota implícita;
+- proveniência do convite protegido;
+- ausência de descoberta pública no perfil protegido.
+
+## 6. Decisões estruturais preservadas
 
 - Perfil Público é separado do Início do Participante e da gestão;
 - acompanhar não é participar;
 - solicitação não é aprovação;
-- presença em atividade não é vínculo permanente;
+- convite não cria vínculo;
+- presença em atividade não é participação permanente;
 - papel aceito não é disponibilidade universal;
 - relação institucional não concede autoridade automática;
 - publicidade não é recomendação nem reputação;
+- compartilhamento não é endosso;
 - avaliação não é denúncia;
 - reputação não é nota moral ou ranking de pessoas;
-- origem, público, autoridade e consequência permanecem identificados;
-- conteúdo protegido da Jornada não é reutilizado silenciosamente.
+- canal público não autoriza mensagem privada;
+- proteção não deve revelar participação sensível;
+- visualização não compartilha identidade.
 
-## 5. Programa dos Coletivos
-
-A UXA-059 preserva 88 estados contratuais e nove referências P0A.
-
-A sequência pessoal é:
+## 7. Continuidade P0A
 
 ```text
-Explorar
-→ buscar e comparar
-→ conhecer Perfil Público
-→ revisar participação
-→ acompanhar solicitação
-→ retornar por Meus Coletivos
-→ receber atualizações
-→ acessar o ambiente interno
+Explorar Coletivos
+→ Resultados de Busca
+→ Perfil Público
+→ Revisão e Solicitação de Participação
+→ Solicitação Pendente
+→ Meus Coletivos
+→ Central de Atualizações
+→ Início do Participante
 ```
 
-## 6. Descoberta e busca
+As três primeiras referências estão materializadas e validadas. As demais permanecem não iniciadas.
 
-As UXA-060 e UXA-061 materializam e validam:
+## 8. Limites
 
-- Explorar Coletivos;
-- resultados de busca;
-- filtros;
-- busca sem resultados;
-- explicação de origem e publicidade.
+Não foram autorizados:
 
-Cobertura: **5 materializados, 5 validados e 0 pendente**.
+- fluxo de participação;
+- Solicitação Pendente;
+- ambiente interno reformulado;
+- gestão do responsável;
+- reputação detalhada;
+- recomendação ou contato completos;
+- protótipo;
+- teste com pessoas;
+- identidade visual;
+- Engenharia de Produto.
 
-## 7. Perfil Público móvel
+## 9. Próxima transição
 
-A UXA-062 materializa:
-
-- entrada aberta;
-- entrada mediante aprovação;
-- entradas temporariamente indisponíveis;
-- apresentação protegida.
-
-Cobertura: **4 materializados, 0 validados e 4 pendentes**.
-
-A família preserva:
-
-- origem e retorno com contexto;
-- propósito, funcionamento e regras;
-- território, modalidade e acessibilidade;
-- estado de entrada antes da ação;
-- contagens governadas;
-- lista nominal protegida;
-- responsáveis e limites institucionais;
-- reputação contextual;
-- publicidade identificada;
-- compartilhamento permitido, proteção e denúncia.
-
-## 8. Perfil protegido
-
-Um Coletivo protegido não recebe Perfil Público completo.
-
-A apresentação mínima poderá ocultar:
-
-- nome integral;
-- território;
-- contagem;
-- lista;
-- responsáveis;
-- atividades;
-- reputação pública;
-- contato.
-
-O acesso por convite não cria participação e não autoriza compartilhamento externo.
-
-## 9. Reputação no Perfil Público
-
-Quando houver base suficiente, a superfície poderá mostrar objeto, período, quantidade verificada, dimensões e limitações.
-
-Quando a base for insuficiente, declarará explicitamente a insuficiência sem sugerir resultado positivo ou negativo.
-
-A primeira versão não utiliza estrelas ou nota universal como síntese principal.
-
-## 10. Relações institucionais
-
-Organizações poderão aparecer como apoiadoras, parceiras, financiadoras, anunciantes ou operadoras legítimas.
-
-A relação deverá indicar seu limite. Nenhuma dessas relações concede automaticamente:
-
-- acesso a participantes ou solicitações;
-- autoridade de moderação;
-- contato comercial;
-- acesso à Jornada;
-- acesso a avaliações individuais;
-- legitimidade ou reputação positiva.
-
-## 11. Cobertura visual consolidada
-
-| Família | Materializados | Validados | Pendentes |
-|---|---:|---:|---:|
-| Opportunity Boost | 46 | 36 | 10 |
-| Coletivos — descoberta e busca | 5 | 5 | 0 |
-| Coletivos — Perfil Público | 4 | 0 | 4 |
-
-As famílias possuem autoridades e validações separadas.
-
-## 12. Próxima transição
-
-A próxima transição especializada é:
-
-> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
-
-Solicitação de Participação, Solicitação Pendente, Meus Coletivos, Central de Atualizações, gestão, protótipo e Engenharia de Produto permanecem não iniciados.
+**UXA-064 — Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos**, mediante autorização separada.
