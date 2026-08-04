@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.54.0
+version: 0.55.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-03
 related:
@@ -27,7 +27,8 @@ related:
   - UXA-056
   - UXA-057
   - UXA-058
-  - M7.60
+  - UXA-059
+  - M7.61
 normative: false
 ---
 
@@ -43,7 +44,7 @@ Ela governa jornadas, superfícies, navegação, voluntariedade, privacidade, ex
 
 Esta frente não inicia Engenharia de Produto, não define tecnologia, não cria design visual final e não autoriza produção.
 
-Contrato funcional, wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
+Contrato funcional, programa de wireframes, wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
 
 ## 3. Ordem funcional pessoal
 
@@ -77,13 +78,14 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Descoberta e participação em Coletivos | [UXA-056](uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md) |
 | Avaliação e reputação | [UXA-057](uxa-057-evaluation-and-reputation-functional-contract.md) |
 | Interações, recomendações e conexões | [UXA-058](uxa-058-interactions-recommendations-connections-functional-contract.md) |
+| Programa e priorização dos wireframes de Coletivos | [UXA-059](uxa-059-collective-wireframe-program-and-prioritization.md) |
 | Opportunity Boost | UXA-038 a UXA-055 |
 
 ## 5. Estado atual
 
 | Elemento | Situação | Referência |
 |---|---|---|
-| Arquitetura da Experiência | ativa até interações, recomendações e conexões | UXA-000 a UXA-058 |
+| Arquitetura da Experiência | ativa até programa de wireframes de Coletivos | UXA-000 a UXA-059 |
 | Resultados Empresariais | 18 decisões e zero Resultado canônico | BA-STR-002; COD-018 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 | Home pública | validada e materializada para computador | UXA-020 a UXA-022 |
@@ -91,7 +93,8 @@ Oferta de plano e Opportunity Boost não entram no início protegido, compreens�
 | Compreensão inicial móvel | validada e reformulada em cinco estados | UXA-036; UXA-037 |
 | Tela Hoje | validada; transição inicial ainda não revisada | UXA-002; UXA-006; UXA-010 |
 | Mapa | estados orgânicos e patrocinados móveis e desktop validados | UXA-024 a UXA-033; UXA-044; UXA-045 |
-| Coletivos | participação, reputação e interação contratadas; novos wireframes não iniciados | UXA-056 a UXA-058 |
+| Contratos de Coletivos | participação, reputação e interação contratadas | UXA-056 a UXA-058 |
+| Programa de Coletivos | 88 estados organizados; nove referências priorizadas; zero novo SVG | UXA-059 |
 | Opportunity Boost | 46 wireframes materializados; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
 | Protótipo, design e testes | não iniciados | — |
 
@@ -166,17 +169,40 @@ Permanecem separados:
 - mensagem privada;
 - notificação de sistema.
 
-A Central de Atualizações organiza múltiplos Coletivos sem virar feed infinito. Canais internos do Coletivo distinguem comunicados, discussões, perguntas, atividades, decisões, recursos e proteção.
-
-Participar do mesmo Coletivo não autoriza mensagem privada. Conexão entre pessoas exige solicitação contextual, consentimento e revogação possível.
-
-Compartilhar, convidar e recomendar são ações diferentes. Recomendação pessoal, institucional, sugestão da Guivos e publicidade permanecem identificadas.
+A Central de Atualizações organiza múltiplos Coletivos sem virar feed infinito. Participar do mesmo Coletivo não autoriza mensagem privada. Compartilhar, convidar e recomendar são ações diferentes.
 
 Notificações são controláveis por Coletivo e objeto. Confirmação de leitura não significa concordância. Silenciar, ocultar, bloquear, denunciar e sair possuem efeitos diferentes.
 
-A UXA-058 registra 44 estados obrigatórios para futuros wireframes, sem materializá-los.
+## 10. Programa de wireframes de Coletivos
 
-## 10. Opportunity Boost
+A UXA-059 organiza os 88 estados obrigatórios em quatro níveis:
+
+```text
+P0A — espinha dorsal
+→ P0B — estados críticos
+→ P1 — participação interna e operação recorrente
+→ P2 — confiança, recomendação, contato e proteção avançada
+```
+
+A P0A prioriza nove referências:
+
+1. Explorar Coletivos;
+2. Resultados de Busca;
+3. Perfil Público do Coletivo;
+4. Solicitação de Participação;
+5. Solicitação Pendente;
+6. Meus Coletivos;
+7. Central de Atualizações;
+8. Início do Participante;
+9. Visão Geral do Responsável.
+
+Estado contratual não equivale automaticamente a tela. Novo SVG somente será criado diante de mudança material de hierarquia, decisão, autoridade, público, dados, risco, continuidade, consentimento, canal ou recuperação.
+
+A experiência da pessoa será móvel primeiro. A gestão densa do responsável será computador primeiro. Cada incremento deverá permanecer pequeno, rastreável e autorizado.
+
+Nenhuma das nove referências foi materializada pela UXA-059.
+
+## 11. Opportunity Boost
 
 As UXA-038 a UXA-055 preservam:
 
@@ -197,29 +223,33 @@ A UXA-050 permanece autoridade transversal dos 25 artefatos examinados naquele i
 
 Opportunity Boost não entra silenciosamente em comunicações internas de Coletivos.
 
-## 11. Gate de persistência e personalização
+## 12. Gate de persistência e personalização
 
 Criar conta, digitar, gravar, enviar arquivo, concluir relato, participar, responder, avaliar ou recomendar não autoriza automaticamente persistência, personalização ou publicidade.
 
 Conteúdo protegido da jornada, mensagens privadas e participações sensíveis não serão reutilizados silenciosamente para descoberta, recomendação ou segmentação.
 
-## 12. Gate de alinhamento à Fundação
+## 13. Gate de alinhamento à Fundação
 
 Toda superfície deverá demonstrar aderência à Essência, Propósito, Missão Operacional, Visão, Constituição e Princípios Permanentes da Guivos.
 
 Falha material impede avanço para wireframe, protótipo, design, teste, especificação técnica ou desenvolvimento.
 
-## 13. Próximos atos governados
+## 14. Próximos atos governados
 
 Após integração e nova autorização, poderão ocorrer separadamente:
 
-1. definir a ordem de materialização das UXA-056, UXA-057 e UXA-058;
-2. criar wireframes da pessoa para descoberta, participação, `Meus Coletivos`, reputação e interação;
-3. criar wireframes do responsável para gestão, comunicação, reputação e moderação;
-4. validar funcionalmente cada conjunto;
-5. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
-6. validar funcionalmente os dez estados residuais da UXA-055;
-7. definir protocolo de protótipo e plano de teste;
-8. manter Engenharia de Produto pausada até autorização própria.
+1. UXA-060 — criar wireframes móveis de Explorar Coletivos e Resultados de Busca;
+2. validar funcionalmente a UXA-060;
+3. materializar perfil público e formas de entrada;
+4. materializar fluxo de participação e estados da solicitação;
+5. materializar `Meus Coletivos` e Central de Atualizações;
+6. reformular o Início do Participante;
+7. criar a Visão Geral do Responsável;
+8. avançar pelos níveis P0B, P1 e P2;
+9. desenvolver políticas especializadas de moderação, privacidade, segurança, estatística e notificações;
+10. validar funcionalmente os dez estados residuais da UXA-055;
+11. definir protocolo de protótipo e plano de teste;
+12. manter Engenharia de Produto pausada até autorização própria.
 
 Nenhum ato é iniciado automaticamente.
