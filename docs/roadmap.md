@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.34.0
-title: Roadmap Arquitetural — Interações, Recomendações e Conexões Contratadas
+id: ROADMAP-12.35.0
+title: Roadmap Arquitetural — Programa de Wireframes de Coletivos Priorizado
 status: active
-version: 12.34.0
+version: 12.35.0
 owner: Guivos
 last_updated: 2026-08-03
 supersedes_partial:
-  - ROADMAP-12.33.0
+  - ROADMAP-12.34.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -16,14 +16,15 @@ related:
   - UXA-056
   - UXA-057
   - UXA-058
+  - UXA-059
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.60
+  - M7.61
 ---
 
-# Roadmap Arquitetural — Interações, Recomendações e Conexões Contratadas
+# Roadmap Arquitetural — Programa de Wireframes de Coletivos Priorizado
 
 ## 1. Autoridade
 
@@ -34,11 +35,12 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | interações, recomendações e conexões contratadas funcionalmente | M7.60 |
+| Marco | programa e priorização dos wireframes de Coletivos definidos | M7.61 |
 | Modelo Econômico | planos e Boost candidatos definidos; validações pendentes | GEM-004-A1; GEM-007-A1; GEM-010-A2 |
 | Descoberta e participação em Coletivos | contrato funcional concluído | UXA-056 |
 | Avaliação e reputação | contrato funcional concluído | UXA-057 |
-| Interações e recomendações | contrato funcional concluído; 44 estados futuros | UXA-058 |
+| Interações e recomendações | contrato funcional concluído | UXA-058 |
+| Programa de Coletivos | 88 estados organizados; nove referências priorizadas; zero novo SVG | UXA-059 |
 | Opportunity Boost | 46 wireframes materializados; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
 | Resultados Empresariais | 18 decisões e zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
@@ -69,7 +71,8 @@ Este documento governa a sequência global do Repositório de Conhecimento da Gu
 20. estados residuais do Boost materializados;
 21. descoberta, perfil público e participação em Coletivos contratados;
 22. avaliação e reputação contratadas;
-23. interações, recomendações e conexões contratadas.
+23. interações, recomendações e conexões contratadas;
+24. programa e priorização dos wireframes de Coletivos definidos.
 
 ## 4. Sequência pessoal vigente
 
@@ -106,9 +109,9 @@ buscar, explorar, receber sugestão, recomendação ou convite
 
 Nenhuma etapa cria automaticamente a seguinte.
 
-## 6. Descoberta e participação
+## 6. Contratos funcionais preservados
 
-A UXA-056 preserva:
+### UXA-056 — descoberta e participação
 
 - busca e exploração autônomas;
 - sugestões contextuais explicadas;
@@ -121,9 +124,7 @@ A UXA-056 preserva:
 - central `Meus Coletivos`;
 - relação com Organizações sem vínculo automático.
 
-## 7. Avaliação e reputação
-
-A UXA-057 preserva:
+### UXA-057 — avaliação e reputação
 
 - objetos e experiências específicos;
 - elegibilidade verificável;
@@ -135,64 +136,69 @@ A UXA-057 preserva:
 - proteção contra coerção, incentivo e manipulação;
 - distinção entre satisfação, impacto e recomendação.
 
-## 8. Interações, recomendações e conexões
-
-### 8.1 Organização da comunicação
-
-A UXA-058 contrata:
+### UXA-058 — interações e conexões
 
 - Central de Atualizações;
-- Comunicados;
-- Discussões;
-- Perguntas e respostas;
-- Atividades;
-- Pessoas e papéis;
-- Arquivos e recursos;
-- Decisões e consultas;
-- Sobre, regras e proteção;
-- Gestão da comunicação;
-- Caixa de contatos e mensagens;
-- Recomendações recebidas.
+- canais especializados;
+- comunicação oficial com autoridade;
+- contato privado consentido;
+- compartilhar, convidar e recomendar separados;
+- notificações controláveis;
+- moderação com recurso;
+- proteção reforçada;
+- baixa conectividade sem fabricação de entrega.
 
-### 8.2 Distinções centrais
+## 7. Programa e priorização
 
-- comunicado não é discussão;
-- pergunta não é denúncia;
-- resposta de participante não é resposta oficial;
-- consulta não é decisão;
-- leitura não é concordância;
-- participação não autoriza mensagem privada;
-- compartilhar não é convidar;
-- convidar não é recomendar;
-- recomendação não é avaliação;
-- recomendação não é sugestão da Guivos;
-- sugestão não é publicidade;
-- silenciar não é sair;
-- bloquear não é remover do Coletivo.
+A UXA-059 organiza os 88 estados obrigatórios sem convertê-los automaticamente em 88 telas.
 
-### 8.3 Contato e recomendação
+```text
+P0A — espinha dorsal das superfícies
+→ P0B — estados críticos
+→ P1 — participação interna e operação recorrente
+→ P2 — confiança, recomendação, contato e proteção avançada
+```
 
-Contato entre pessoas depende de solicitação contextual, aceitação e permissão revogável.
+### 7.1 P0A — nove referências
 
-Toda recomendação identifica:
+1. Explorar Coletivos;
+2. Resultados de Busca;
+3. Perfil Público do Coletivo;
+4. Solicitação de Participação;
+5. Solicitação Pendente;
+6. Meus Coletivos;
+7. Central de Atualizações;
+8. Início do Participante;
+9. Visão Geral do Responsável.
 
-- remetente;
-- objeto;
-- destinatário;
-- motivo;
-- vínculo;
-- experiência verificada, quando autorizada;
-- incentivo ou conflito;
-- relação comercial;
-- data e disponibilidade.
+Nenhuma referência foi materializada neste incremento.
 
-### 8.4 Atenção e proteção
+### 7.2 Canais
 
-Notificações são configuráveis por Coletivo, objeto, canal e frequência. Alertas essenciais permanecem limitados a risco ou compromisso material.
+- pessoa e comunicação cotidiana: móvel primeiro;
+- avaliação da pessoa: móvel primeiro;
+- gestão densa e moderação: computador primeiro;
+- triagem urgente móvel do responsável: posterior e condicionada;
+- tablet: não priorizado.
 
-Moderação possui estados, proteção temporária, decisão, restauração e recurso. Grupos sensíveis poderão restringir contatos, recomendações, nomes, listas, anexos e retenção.
+### 7.3 Limite por incremento
 
-A UXA-058 registra 44 estados futuros sem criar wireframes.
+Por padrão:
+
+- até três superfícies principais;
+- até seis SVGs;
+- uma responsabilidade dominante;
+- um canal principal;
+- matriz de cobertura;
+- validação funcional antes de ampliar.
+
+Estado contratual só exige SVG próprio quando muda materialmente hierarquia, decisão, autoridade, público, dados, risco, continuidade, consentimento, canal ou recuperação.
+
+## 8. Relação com o Início existente
+
+As UXA-016 e UXA-018 permanecem vigentes como referências históricas e funcionais do ambiente interno.
+
+A reformulação do Início do Participante será realizada em pacote próprio, sem apagar ou invalidar antecipadamente o artefato existente.
 
 ## 9. Baseline comercial preservada
 
@@ -235,18 +241,28 @@ Conteúdo patrocinado não será disfarçado como comunicado, recomendação pes
 - notificações são controláveis;
 - recusa, silêncio, bloqueio ou saída não geram reputação negativa;
 - dados e mensagens não são transferidos automaticamente;
-- wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
+- estado não equivale automaticamente a tela;
+- programa, wireframe, validação, protótipo, teste e desenvolvimento permanecem atos separados.
 
 ## 12. Próximas etapas candidatas
 
-### Materialização da experiência de Coletivos
+### Espinha dorsal P0A
 
-1. definir a ordem entre pessoa e responsável;
-2. criar wireframes da UXA-056;
-3. criar wireframes da UXA-057;
-4. criar wireframes da UXA-058;
-5. validar funcionalmente cada conjunto;
-6. validar transversalmente a experiência completa de Coletivos.
+1. UXA-060 — wireframes móveis de Explorar Coletivos e Resultados de Busca;
+2. validação funcional da UXA-060;
+3. perfil público e formas de entrada;
+4. fluxo de participação e estados da solicitação;
+5. `Meus Coletivos`;
+6. Central de Atualizações;
+7. reformulação do Início do Participante;
+8. Visão Geral do Responsável.
+
+### Continuidade
+
+- P0B — estados críticos;
+- P1 — comunicação e operação recorrente;
+- P2 — reputação, recomendação, contato e proteção;
+- validação transversal do percurso completo.
 
 ### Políticas especializadas
 
@@ -272,4 +288,4 @@ Nenhuma frente avança automaticamente.
 
 ## 13. Regra de transição
 
-Contrato funcional não equivale a wireframe. Wireframe não equivale a validação. Validação não equivale a protótipo. Protótipo não equivale a teste. Teste não equivale a produção. Cada transição exige evidência e autorização próprias.
+Contrato funcional não equivale a programa. Programa não equivale a wireframe. Wireframe não equivale a validação. Validação não equivale a protótipo. Protótipo não equivale a teste. Teste não equivale a produção. Cada transição exige evidência e autorização próprias.
