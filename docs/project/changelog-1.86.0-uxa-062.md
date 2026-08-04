@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.86.0
- title: Histórico 1.86.0 — Perfil Público Móvel do Coletivo
+title: Histórico 1.86.0 — Perfil Público Móvel do Coletivo
 status: active
 version: 1.86.0
 owner: Repositório de Conhecimento da Guivos
