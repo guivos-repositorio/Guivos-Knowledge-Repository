@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.34.0
+version: 12.35.0
 owner: Guivos
 last_updated: 2026-08-03
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.34.0
+  - ROADMAP-12.35.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -16,9 +16,10 @@ related:
   - UXA-056
   - UXA-057
   - UXA-058
+  - UXA-059
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.60
+  - M7.61
 normative: false
 ---
 
@@ -33,14 +34,15 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | interações, recomendações e conexões contratadas | M7.60 |
+| Marco | programa e priorização dos wireframes de Coletivos definidos | M7.61 |
 | Resultados Empresariais | 18 decisões; zero Resultados canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações definidos como candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
 | Descoberta e participação | contrato funcional concluído | UXA-056 |
 | Avaliação e reputação | contrato funcional concluído | UXA-057 |
-| Interações e recomendações | contrato funcional concluído; 44 estados futuros | UXA-058 |
+| Interações e recomendações | contrato funcional concluído | UXA-058 |
+| Programa de Coletivos | 88 estados organizados; nove referências priorizadas; zero novo SVG | UXA-059 |
 | Cobertura visual do Boost | 46 materializados; 36 validados por pacote e 10 pendentes | UXA-040 a UXA-055 |
 | Preço do Boost | orçamento, CPM e CPC candidatos | GEM-010-A2 |
 | Guivos Ads | operador econômico do mecanismo | GPA-007 |
@@ -51,12 +53,13 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - Fundação e Modelo Fundamental;
 - Guivos Journey;
 - Modelo Econômico inicial;
-- Arquitetura da Experiência até UXA-058;
+- Arquitetura da Experiência até UXA-059;
 - Home, início protegido, compreensão inicial, Tela Hoje e Mapa;
 - experiências institucionais e coletivas iniciais;
 - descoberta, perfil público e participação em Coletivos;
 - avaliação e reputação contextualizadas;
 - interação, comunicação, recomendação e contato consentido;
+- programa e priorização dos wireframes de Coletivos;
 - baseline comercial de planos;
 - Opportunity Boost como mecanismo candidato;
 - 46 wireframes do Boost materializados;
@@ -107,10 +110,48 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 - grupos sensíveis;
 - baixa conectividade.
 
-Nenhum wireframe especializado das UXA-056 a UXA-058 foi criado.
+## 5. Programa de wireframes de Coletivos
 
-## 5. Distinções consolidadas
+A UXA-059 organiza:
 
+- 20 estados da UXA-056;
+- 24 estados da UXA-057;
+- 44 estados da UXA-058;
+- total de 88 estados contratuais;
+- quatro níveis de materialização;
+- nove referências prioritárias;
+- canais iniciais por responsabilidade;
+- famílias funcionais;
+- critérios para SVG separado;
+- critérios de entrada e saída;
+- limite recomendado por incremento;
+- rastreabilidade e métricas do programa.
+
+### P0A — espinha dorsal
+
+1. Explorar Coletivos;
+2. Resultados de Busca;
+3. Perfil Público do Coletivo;
+4. Solicitação de Participação;
+5. Solicitação Pendente;
+6. Meus Coletivos;
+7. Central de Atualizações;
+8. Início do Participante;
+9. Visão Geral do Responsável.
+
+### Continuidade
+
+- P0B — estados críticos;
+- P1 — participação interna e operação recorrente;
+- P2 — reputação, recomendação, contato e proteção avançada.
+
+Estado contratual não equivale automaticamente a tela. Nenhum novo wireframe especializado foi criado pela UXA-059.
+
+## 6. Distinções consolidadas
+
+- contrato não é programa;
+- programa não é wireframe;
+- estado não é automaticamente tela;
 - buscar não é receber recomendação;
 - acompanhar não é participar;
 - participar não é assumir função;
@@ -131,7 +172,7 @@ Nenhum wireframe especializado das UXA-056 a UXA-058 foi criado.
 - bloquear não é remover;
 - volume de mensagens não é evolução.
 
-## 6. Em validação ou calibração pendente
+## 7. Em validação ou calibração pendente
 
 - nove candidatos de Resultados Empresariais;
 - dez wireframes residuais da UXA-055;
@@ -148,16 +189,25 @@ Nenhum wireframe especializado das UXA-056 a UXA-058 foi criado.
 - custo de servir, margem e antifraude;
 - eficácia dos controles com Pessoas, Organizações e Coletivos.
 
-## 7. Aguardando autorização
+## 8. Aguardando autorização
 
-### Materialização de Coletivos
+### Espinha dorsal de Coletivos
 
-- definir ordem entre pessoa e responsável;
-- wireframes da UXA-056;
-- wireframes da UXA-057;
-- wireframes da UXA-058;
-- validações funcionais;
-- validação transversal do ciclo completo.
+- UXA-060 — Explorar Coletivos e Resultados de Busca;
+- validação funcional da UXA-060;
+- Perfil Público e formas de entrada;
+- fluxo de participação e solicitação;
+- `Meus Coletivos`;
+- Central de Atualizações;
+- reformulação do Início do Participante;
+- Visão Geral do Responsável.
+
+### Continuidade do programa
+
+- P0B — estados críticos;
+- P1 — comunicação e operação;
+- P2 — reputação, recomendação, contato e proteção;
+- validação transversal do percurso completo.
 
 ### Opportunity Boost
 
@@ -176,8 +226,12 @@ Nenhum wireframe especializado das UXA-056 a UXA-058 foi criado.
 - reaplicação dos testes dos Resultados Empresariais;
 - preparação futura das Capacidades Empresariais.
 
-## 8. Pausado ou não iniciado
+## 9. Pausado ou não iniciado
 
+- nove referências P0A;
+- estados P0B;
+- operação P1;
+- confiança e proteção P2;
 - chat ou mensageria real;
 - rede social de pessoas;
 - ranking de participantes;
@@ -192,7 +246,7 @@ Nenhum wireframe especializado das UXA-056 a UXA-058 foi criado.
 - protótipo e testes;
 - produção e Engenharia de Produto.
 
-## 9. Planos candidatos
+## 10. Planos candidatos
 
 | Segmento | Planos candidatos |
 |---|---|
@@ -202,7 +256,7 @@ Nenhum wireframe especializado das UXA-056 a UXA-058 foi criado.
 
 Todos os valores permanecem candidatos para validação.
 
-## 10. Opportunity Boost
+## 11. Opportunity Boost
 
 | Modalidade | Orçamento mínimo candidato |
 |---|---:|
@@ -220,7 +274,7 @@ Todos os valores permanecem candidatos para validação.
 - anunciante não recebe lista de visualizadores;
 - publicidade não será apresentada como recomendação ou comunicado interno.
 
-## 11. Regras preservadas
+## 12. Regras preservadas
 
 - gratuito mantém valor real;
 - plano, transação, comissão e Boost são objetos distintos;
@@ -234,9 +288,10 @@ Todos os valores permanecem candidatos para validação.
 - taxa de leitura não é compreensão;
 - satisfação não é impacto;
 - dados e mensagens não são transferidos automaticamente;
-- contrato funcional não equivale a implementação.
+- estado não equivale automaticamente a tela;
+- contrato, programa, wireframe e implementação são estados distintos.
 
-## 12. Distribuição dos candidatos de Resultados
+## 13. Distribuição dos candidatos de Resultados
 
 | Estado | Quantidade |
 |---|---:|
@@ -245,6 +300,6 @@ Todos os valores permanecem candidatos para validação.
 | Rejeitados | 6 |
 | Aprovados | 0 |
 
-## 13. Próximo movimento
+## 14. Próximo movimento
 
-Após integração, nenhum movimento é automático. Pela sequência funcional, o próximo ato candidato será definir a ordem de materialização dos wireframes das UXA-056, UXA-057 e UXA-058, separando as experiências da pessoa e do responsável.
+Após integração, nenhum movimento é automático. Pela sequência funcional, o próximo ato candidato será a **UXA-060 — Wireframes Móveis de Explorar Coletivos e Resultados de Busca**, em incremento separado e limitado à descoberta.
