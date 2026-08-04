@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe móvel de Explorar Coletivos</title>
+  <desc id="desc">Superfície móvel de exploração geral de Coletivos com busca direta, região ampla, categorias, fontes de descoberta identificadas, entrada disponível e navegação recorrente.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
+  <text x="20" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="700">Explorar Coletivos</text>
+  <rect x="238" y="40" width="132" height="29" rx="14" fill="#f2f2f2" stroke="#777777"/>
+  <text x="304" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Sem personalização</text>
+  <rect x="20" y="82" width="350" height="39" rx="8" fill="#ffffff" stroke="#777777"/>
+  <circle cx="39" cy="101" r="7" fill="none" stroke="#555555"/>
+  <line x1="44" y1="106" x2="50" y2="112" stroke="#555555"/>
+  <text x="59" y="105" font-family="Arial, sans-serif" font-size="10" fill="#555555">Buscar nome, propósito, tema ou cidade</text>
+  <rect x="20" y="131" width="350" height="39" rx="8" fill="#f5f5f5" stroke="#777777"/>
+  <text x="32" y="146" font-family="Arial, sans-serif" font-size="7" fill="#555555">ÁREA DE EXPLORAÇÃO</text>
+  <text x="32" y="161" font-family="Arial, sans-serif" font-size="10" font-weight="700">Belo Horizonte e Coletivos on-line</text>
+  <text x="356" y="157" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Alterar</text>
+  <text x="20" y="196" font-family="Arial, sans-serif" font-size="13" font-weight="700">Explorar por tema</text>
+  <g font-family="Arial, sans-serif" font-size="8">
+    <rect x="20" y="208" width="107" height="43" rx="9" fill="#ffffff" stroke="#777777"/><text x="73" y="226" text-anchor="middle" font-weight="700">Esporte</text><text x="73" y="240" text-anchor="middle">e movimento</text>
+    <rect x="136" y="208" width="107" height="43" rx="9" fill="#ffffff" stroke="#777777"/><text x="189" y="226" text-anchor="middle" font-weight="700">Espiritualidade</text><text x="189" y="240" text-anchor="middle">e propósito</text>
+    <rect x="252" y="208" width="118" height="43" rx="9" fill="#ffffff" stroke="#777777"/><text x="311" y="226" text-anchor="middle" font-weight="700">Voluntariado</text><text x="311" y="240" text-anchor="middle">e causas</text>
+    <rect x="20" y="260" width="107" height="43" rx="9" fill="#ffffff" stroke="#777777"/><text x="73" y="278" text-anchor="middle" font-weight="700">Aprendizagem</text><text x="73" y="292" text-anchor="middle">e prática</text>
+    <rect x="136" y="260" width="107" height="43" rx="9" fill="#ffffff" stroke="#777777"/><text x="189" y="278" text-anchor="middle" font-weight="700">Negócios</text><text x="189" y="292" text-anchor="middle">e carreira</text>
+    <rect x="252" y="260" width="118" height="43" rx="9" fill="#ffffff" stroke="#777777"/><text x="311" y="278" text-anchor="middle" font-weight="700">Ver todos</text><text x="311" y="292" text-anchor="middle">os temas</text>
+  </g>
+  <text x="20" y="334" font-family="Arial, sans-serif" font-size="13" font-weight="700">Com entrada disponível</text>
+  <text x="370" y="334" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Ver todos</text>
+  <rect x="20" y="347" width="350" height="113" rx="11" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="365" font-family="Arial, sans-serif" font-size="7" font-weight="700">EXPLORAÇÃO POR TEMA · ORGÂNICO</text>
+  <text x="32" y="390" font-family="Arial, sans-serif" font-size="15" font-weight="700">Pedal Horizonte</text>
+  <text x="32" y="408" font-family="Arial, sans-serif" font-size="8">Ciclismo comunitário · presencial · Belo Horizonte</text>
+  <text x="32" y="425" font-family="Arial, sans-serif" font-size="8">Entrada aberta · atividades semanais · acessibilidade informada</text>
+  <text x="32" y="443" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que aparece aqui?</text>
+  <text x="356" y="443" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver perfil público</text>
+  <rect x="20" y="469" width="350" height="113" rx="11" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="487" font-family="Arial, sans-serif" font-size="7" font-weight="700">EXPLORAÇÃO ON-LINE · ORGÂNICO</text>
+  <text x="32" y="512" font-family="Arial, sans-serif" font-size="15" font-weight="700">Círculo de Oração em Rede</text>
+  <text x="32" y="530" font-family="Arial, sans-serif" font-size="8">Encontros on-line · participação mediante aprovação</text>
+  <text x="32" y="547" font-family="Arial, sans-serif" font-size="8">Regras públicas · lista de participantes protegida</text>
+  <text x="32" y="565" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Por que aparece aqui?</text>
+  <text x="356" y="565" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver perfil público</text>
+  <rect x="20" y="594" width="350" height="69" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="614" font-family="Arial, sans-serif" font-size="9" font-weight="700">Como os Coletivos aparecem aqui?</text>
+  <text x="32" y="632" font-family="Arial, sans-serif" font-size="7">Busca, categoria, território, sugestão, recomendação, convite</text>
+  <text x="32" y="647" font-family="Arial, sans-serif" font-size="7">ou publicidade permanecem identificados.</text>
+  <text x="356" y="647" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender origens</text>
+  <rect x="20" y="676" width="350" height="61" rx="10" fill="#ffffff" stroke="#777777" stroke-dasharray="4 3"/>
+  <text x="32" y="696" font-family="Arial, sans-serif" font-size="8" font-weight="700">Explore sem compartilhar localização precisa</text>
+  <text x="32" y="713" font-family="Arial, sans-serif" font-size="7">A região pode ser alterada manualmente. Visualizar não cria vínculo.</text>
+  <text x="32" y="729" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Privacidade e descoberta</text>
+  <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
+  <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817" font-weight="700">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817">Eu</text></g>
+  <g fill="none" stroke="#555555"><circle cx="39" cy="796" r="8"/><rect x="109" y="788" width="16" height="16"/><circle cx="195" cy="796" r="8" fill="#222222"/><path d="M265 804 L273 788 L281 804 Z"/><circle cx="351" cy="794" r="6"/><path d="M342 807 Q351 799 360 807"/></g>
+</svg>
