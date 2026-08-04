@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.37.0
-title: Roadmap Arquitetural — Descoberta de Coletivos Validada Funcionalmente
+id: ROADMAP-12.38.0
+title: Roadmap Arquitetural — Perfil Público Móvel de Coletivos Materializado
 status: active
-version: 12.37.0
+version: 12.38.0
 owner: Guivos
-last_updated: 2026-08-03
+last_updated: 2026-08-04
 supersedes_partial:
-  - ROADMAP-12.36.0
+  - ROADMAP-12.37.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -19,14 +19,15 @@ related:
   - UXA-059
   - UXA-060
   - UXA-061
+  - UXA-062
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.63
+  - M7.64
 ---
 
-# Roadmap Arquitetural — Descoberta de Coletivos Validada Funcionalmente
+# Roadmap Arquitetural — Perfil Público Móvel de Coletivos Materializado
 
 ## 1. Autoridade
 
@@ -37,128 +38,104 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | descoberta de Coletivos validada | M7.63 |
+| Marco | Perfil Público móvel materializado | M7.64 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
-| Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
-| Descoberta móvel | cinco SVGs materializados e validados | UXA-060; UXA-061 |
-| Perfil Público | não materializado | UXA-062 futura |
-| Opportunity Boost | 46 materializados; 36 validados; dez pendentes | UXA-038 a UXA-055 |
+| Programa de Coletivos | 88 estados organizados em P0A–P2 | UXA-059 |
+| Descoberta móvel | 5 SVGs materializados e validados | UXA-060; UXA-061 |
+| Perfil Público móvel | 4 SVGs materializados; validação pendente | UXA-062 |
+| Opportunity Boost | 46 materializados; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 3. Sequência executada
-
-1. Fundação e Modelo Fundamental consolidados;
-2. Guivos Journey estruturado;
-3. Modelo Econômico inicial documentado;
-4. validação externa e 18 decisões humanas concluídas;
-5. remediação do repositório concluída;
-6. Arquitetura da Experiência integrada;
-7. Home, início protegido, compreensão, Tela Hoje e Mapa estruturados;
-8. baseline comercial e Opportunity Boost definidos como candidatos;
-9. 46 wireframes do Boost materializados;
-10. 36 wireframes do Boost validados por pacote;
-11. contratos de Coletivos UXA-056 a UXA-058 concluídos;
-12. programa UXA-059 concluído;
-13. descoberta móvel UXA-060 materializada;
-14. descoberta móvel UXA-061 validada após reformulação.
-
-## 4. Percurso de Coletivos
+## 3. Sequência concluída dos Coletivos
 
 ```text
-explorar ou buscar
-→ comparar resultados
-→ compreender origem
-→ abrir Perfil Público
-→ acompanhar ou solicitar participação
-→ acompanhar vínculo
-→ acessar Meus Coletivos e ambiente interno
-→ comunicar e participar
-→ avaliar experiência elegível
-→ recomendar ou solicitar contato
-→ pausar, bloquear, denunciar ou sair
+UXA-056 — descoberta, Perfil Público e participação contratados
+→ UXA-057 — avaliação e reputação contratadas
+→ UXA-058 — interação, recomendação e conexão contratadas
+→ UXA-059 — programa de wireframes priorizado
+→ UXA-060 — descoberta e busca materializadas
+→ UXA-061 — descoberta e busca validadas
+→ UXA-062 — Perfil Público móvel materializado
 ```
 
-Nenhuma etapa cria automaticamente a seguinte.
-
-## 5. P0A — estado
+## 4. Estado da espinha dorsal P0A
 
 | Ordem | Superfície | Estado |
 |---:|---|---|
-| 1 | Explorar Coletivos | materializada e validada |
-| 2 | Resultados de Busca | materializada e validada |
-| 3 | Perfil Público | próxima candidata; não iniciada |
+| 1 | Explorar Coletivos | validada |
+| 2 | Resultados de Busca | validada |
+| 3 | Perfil Público do Coletivo | materializado; validação pendente |
 | 4 | Solicitação de Participação | não iniciada |
 | 5 | Solicitação Pendente | não iniciada |
-| 6 | Meus Coletivos | não iniciada |
+| 6 | Meus Coletivos | não iniciado |
 | 7 | Central de Atualizações | não iniciada |
-| 8 | Início do Participante | não iniciado nesta reformulação |
+| 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 6. Descoberta validada
+## 5. UXA-062 materializada
 
-A UXA-061 confirma:
+A família contém:
 
-- exploração sem personalização;
-- região manual sem localização precisa;
-- origens separadas;
-- primeiro resultado orgânico;
-- publicidade identificada;
-- ordem orgânica independente do pagamento;
-- publicidade com Perfil Público equivalente;
-- filtros com escopo e seleção acessíveis;
-- zero distinto de erro;
-- recuperação consciente;
-- contexto preservado no retorno;
-- visualização sem vínculo.
+1. entrada aberta;
+2. entrada mediante aprovação;
+3. entradas temporariamente indisponíveis;
+4. apresentação protegida.
 
-## 7. Próxima etapa recomendada
+Reputação suficiente e insuficiente foi incorporada aos estados principais sem antecipar a família completa de avaliações.
 
-### UXA-062 — Perfil Público do Coletivo
+## 6. Gate obrigatório
 
-Escopo candidato:
+Antes de iniciar a Solicitação de Participação, deverá ser concluída:
 
-- perfil público principal móvel;
-- entrada aberta;
-- entrada mediante aprovação;
-- entradas temporariamente fechadas;
-- reputação com base insuficiente;
-- origem da navegação preservada;
-- ações `Acompanhar`, `Participar`, `Ver solicitação`, `Abrir Coletivo` ou `Entradas indisponíveis` conforme estado.
+> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
 
-Não deverão entrar no mesmo pacote:
+O gate deverá verificar origem, hierarquia, entrada, regras, contagens, autoridade, reputação, publicidade, proteção e continuidade.
 
-- solicitação completa;
-- pendência;
-- Meus Coletivos;
-- comunicação interna;
-- gestão do responsável;
-- avaliação detalhada;
-- mensagens privadas.
+## 7. Próxima sequência prevista
 
-## 8. Critério de entrada da UXA-062
+Após validação e nova autorização, a sequência poderá avançar para:
 
-A UXA-062 somente poderá começar após:
+```text
+UXA-063 — validar Perfil Público
+→ pacote futuro — Solicitação de Participação
+→ pacote futuro — validar Solicitação de Participação
+→ pacote futuro — Solicitação Pendente
+```
 
-- integração da UXA-061;
-- nova autorização;
-- preservação da origem e consulta;
-- cenário canônico coerente com a UXA-060;
-- limite de até seis SVGs;
-- nenhum início de protótipo ou Engenharia de Produto.
+A numeração dos pacotes posteriores não é reservada por este documento.
 
-## 9. Frentes preservadas
+## 8. Bloqueios de avanço
 
-- validação dos dez estados residuais do Boost;
-- pesquisa de disposição a pagar;
-- calibração comercial;
-- referência móvel da Home, quando priorizada;
-- transição para a primeira Tela Hoje;
-- reaplicação dos testes de Resultados Empresariais;
-- preparação futura das Capacidades Empresariais.
+Não avançar para Solicitação de Participação quando:
 
-Nenhuma frente avança automaticamente.
+- origem não estiver compreensível;
+- acompanhar e participar parecerem equivalentes;
+- entrada aberta sugerir ativação automática;
+- aprovação omitir critérios, responsável ou prazo estimado;
+- publicidade parecer recomendação ou legitimidade;
+- contagem funcionar como popularidade;
+- relação institucional sugerir autoridade indevida;
+- amostra insuficiente parecer nota baixa;
+- perfil protegido revelar dados sensíveis;
+- retorno perder busca, região, posição ou convite.
 
-## 10. Regra de transição
+## 9. Cobertura atual
 
-Contrato não equivale a wireframe. Wireframe não equivale a validação. Validação não equivale a protótipo. Protótipo não equivale a teste. Teste não equivale a produção.
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| Coletivos — descoberta | 5 | 5 | 0 |
+| Coletivos — Perfil Público | 4 | 0 | 4 |
+| Opportunity Boost | 46 | 36 | 10 |
+
+## 10. Fronteiras
+
+Permanecem fora do ciclo atual:
+
+- protótipo e teste;
+- identidade visual;
+- algoritmo de busca, publicidade ou reputação;
+- política jurídica;
+- mudança da baseline comercial;
+- promoção de Resultados Empresariais;
+- Engenharia de Produto.
