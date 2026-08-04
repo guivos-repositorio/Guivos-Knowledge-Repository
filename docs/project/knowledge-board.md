@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.38.0
+version: 12.39.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.38.0
+  - ROADMAP-12.39.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -20,9 +20,10 @@ related:
   - UXA-060
   - UXA-061
   - UXA-062
+  - UXA-063
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.64
+  - M7.65
 normative: false
 ---
 
@@ -37,7 +38,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Perfil Público móvel materializado | M7.64 |
+| Marco | Perfil Público móvel validado | M7.65 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações candidatos | GEM-004-A1 |
@@ -45,7 +46,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
 | Programa de Coletivos | 88 estados; nove referências P0A | UXA-059 |
 | Descoberta visual | 5 SVGs materializados e validados | UXA-060; UXA-061 |
-| Perfil Público visual | 4 SVGs materializados; validação pendente | UXA-062 |
+| Perfil Público visual | 4 SVGs materializados e validados | UXA-062; UXA-063 |
 | Boost visual | 46 materializados; 36 validados; 10 pendentes | UXA-040 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -53,20 +54,20 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 
 | Camada | Estado | Próxima condição |
 |---|---|---|
-| contratos | concluída | preservar autoridades UXA-056 a UXA-058 |
+| contratos | concluída | preservar UXA-056 a UXA-058 |
 | programa | concluído | seguir P0A–P2 |
 | descoberta e busca | validada | manter como origem do Perfil Público |
-| Perfil Público | materializado | validar na UXA-063 |
-| Solicitação de Participação | não iniciada | aguardar validação do Perfil Público |
+| Perfil Público | validado | fornecer contexto à participação |
+| Revisão e Solicitação de Participação | não iniciada | autorização para UXA-064 |
 | Solicitação Pendente | não iniciada | aguardar participação |
 | Meus Coletivos | não iniciado | aguardar vínculos compreensíveis |
 | Central de Atualizações | não iniciada | aguardar continuidade pessoal |
 | Início do Participante | não reformulado | aguardar etapas anteriores |
 | gestão do responsável | não iniciada | aguardar experiência da pessoa |
 
-## 4. Perfil Público materializado
+## 4. Perfil Público validado
 
-A UXA-062 cobre:
+A família cobre:
 
 - entrada aberta;
 - entrada mediante aprovação;
@@ -75,48 +76,63 @@ A UXA-062 cobre:
 - origem orgânica, patrocinada ou por convite;
 - propósito, funcionamento, regras e acessibilidade;
 - acompanhar separado de participar;
+- compartilhamento separado de recomendação;
 - contagens e listas governadas;
-- responsáveis e relações institucionais;
+- responsáveis e relações institucionais limitadas;
 - reputação contextual;
-- publicidade identificada;
-- compartilhamento permitido, proteção e denúncia.
+- publicidade identificada e explicável;
+- proteção, canais públicos e denúncia.
 
-## 5. Cobertura visual
+## 5. Reformulações da UXA-063
+
+- denominadores adicionados às dimensões de reputação;
+- ação renomeada para `Compartilhar perfil`;
+- `Proteção e canais públicos` substitui contato ambíguo;
+- dados serão enviados somente após revisão;
+- responsável operacional separado do anunciante;
+- `Por que este anúncio?` incluído;
+- reputação do estado fechado recebe quantidade e período;
+- convite protegido identifica remetente, autoridade e motivo;
+- perfil protegido não marca `Explorar` como ativo;
+- saída protegida usa `Fechar apresentação`.
+
+## 6. Cobertura visual
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Opportunity Boost | 46 | 36 | 10 |
 | Coletivos — descoberta | 5 | 5 | 0 |
-| Coletivos — Perfil Público | 4 | 0 | 4 |
+| Coletivos — Perfil Público | 4 | 4 | 0 |
 
-## 6. Proteções ativas
+## 7. Proteções ativas
 
 - nenhuma contagem funciona como ranking;
 - lista nominal não é pública por padrão;
 - publicidade não compra legitimidade;
 - amostra insuficiente não equivale a zero;
 - apoio institucional não concede autoridade;
+- anunciante não recebe autoridade operacional por pagamento;
 - perfil protegido reduz informação quando necessário;
 - convite não cria vínculo;
-- acompanhamento não cria participação;
-- materialização não equivale a validação.
-
-## 7. Próxima ação governada
-
-A próxima ação candidata é:
-
-> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
-
-Ela exige autorização separada e não autoriza automaticamente Solicitação de Participação.
+- canal público não concede mensagem privada;
+- visualização não compartilha identidade;
+- denúncia permanece separada de avaliação.
 
 ## 8. Fronteiras
 
-Permanecem não iniciados:
+Não foram iniciados:
 
-- protótipo e teste;
+- revisão ou confirmação de participação;
+- Solicitação Pendente;
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante reformulado;
+- gestão do responsável;
+- protótipo;
+- testes;
 - identidade visual;
-- algoritmo e implementação;
-- política jurídica especializada;
-- alteração da baseline comercial;
-- promoção de Resultados Empresariais;
 - Engenharia de Produto.
+
+## 9. Próxima transição
+
+**UXA-064 — Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos**, mediante autorização separada.
