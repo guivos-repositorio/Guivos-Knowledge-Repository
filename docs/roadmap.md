@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.38.0
-title: Roadmap Arquitetural — Perfil Público Móvel de Coletivos Materializado
+id: ROADMAP-12.39.0
+title: Roadmap Arquitetural — Perfil Público Móvel de Coletivos Validado
 status: active
-version: 12.38.0
+version: 12.39.0
 owner: Guivos
 last_updated: 2026-08-04
 supersedes_partial:
-  - ROADMAP-12.37.0
+  - ROADMAP-12.38.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -20,14 +20,15 @@ related:
   - UXA-060
   - UXA-061
   - UXA-062
+  - UXA-063
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.64
+  - M7.65
 ---
 
-# Roadmap Arquitetural — Perfil Público Móvel de Coletivos Materializado
+# Roadmap Arquitetural — Perfil Público Móvel de Coletivos Validado
 
 ## 1. Autoridade
 
@@ -38,12 +39,12 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Perfil Público móvel materializado | M7.64 |
+| Marco | Perfil Público móvel validado | M7.65 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
-| Programa de Coletivos | 88 estados organizados em P0A–P2 | UXA-059 |
+| Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
 | Descoberta móvel | 5 SVGs materializados e validados | UXA-060; UXA-061 |
-| Perfil Público móvel | 4 SVGs materializados; validação pendente | UXA-062 |
-| Opportunity Boost | 46 materializados; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
+| Perfil Público móvel | 4 SVGs materializados e validados | UXA-062; UXA-063 |
+| Opportunity Boost | 46 materializados; 36 validados; 10 pendentes | UXA-038 a UXA-055 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -56,7 +57,8 @@ UXA-056 — descoberta, Perfil Público e participação contratados
 → UXA-059 — programa de wireframes priorizado
 → UXA-060 — descoberta e busca materializadas
 → UXA-061 — descoberta e busca validadas
-→ UXA-062 — Perfil Público móvel materializado
+→ UXA-062 — Perfil Público materializado
+→ UXA-063 — Perfil Público validado
 ```
 
 ## 4. Estado da espinha dorsal P0A
@@ -65,77 +67,77 @@ UXA-056 — descoberta, Perfil Público e participação contratados
 |---:|---|---|
 | 1 | Explorar Coletivos | validada |
 | 2 | Resultados de Busca | validada |
-| 3 | Perfil Público do Coletivo | materializado; validação pendente |
-| 4 | Solicitação de Participação | não iniciada |
+| 3 | Perfil Público do Coletivo | validado |
+| 4 | Revisão e Solicitação de Participação | não iniciada |
 | 5 | Solicitação Pendente | não iniciada |
 | 6 | Meus Coletivos | não iniciado |
 | 7 | Central de Atualizações | não iniciada |
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 5. UXA-062 materializada
+## 5. Resultado da UXA-063
 
-A família contém:
+A validação aprovou os quatro estados após reformulação:
 
-1. entrada aberta;
-2. entrada mediante aprovação;
-3. entradas temporariamente indisponíveis;
-4. apresentação protegida.
+- entrada aberta;
+- entrada mediante aprovação;
+- entradas temporariamente indisponíveis;
+- apresentação protegida por convite.
 
-Reputação suficiente e insuficiente foi incorporada aos estados principais sem antecipar a família completa de avaliações.
+Foram consolidados:
 
-## 6. Gate obrigatório
+- denominadores por dimensão na reputação;
+- compartilhamento de perfil sem endosso;
+- canais públicos sem contato privado automático;
+- dados submetidos somente após revisão;
+- separação entre anunciante e responsável operacional;
+- explicação da publicidade;
+- proveniência do convite protegido;
+- navegação protegida fora de Explorar.
 
-Antes de iniciar a Solicitação de Participação, deverá ser concluída:
+## 6. Próximo pacote permitido
 
-> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
+Após integração da UXA-063 e nova autorização, o programa poderá avançar para:
 
-O gate deverá verificar origem, hierarquia, entrada, regras, contagens, autoridade, reputação, publicidade, proteção e continuidade.
+> **UXA-064 — Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos**
 
-## 7. Próxima sequência prevista
+Escopo máximo recomendado:
 
-Após validação e nova autorização, a sequência poderá avançar para:
+1. revisão da entrada aberta;
+2. revisão da solicitação mediante aprovação;
+3. revisão especializada do convite protegido;
+4. regras, dados, permissões e significado do vínculo;
+5. confirmações inicialmente vazias;
+6. cancelamento antes do envio;
+7. resultado imediato ou envio para análise.
 
-```text
-UXA-063 — validar Perfil Público
-→ pacote futuro — Solicitação de Participação
-→ pacote futuro — validar Solicitação de Participação
-→ pacote futuro — Solicitação Pendente
-```
+A UXA-064 não deverá incluir Solicitação Pendente, `Meus Coletivos`, comunicação interna ou gestão.
 
-A numeração dos pacotes posteriores não é reservada por este documento.
+## 7. Gates preservados
 
-## 8. Bloqueios de avanço
+Antes de avançar além da UXA-064, deverão ser demonstrados:
 
-Não avançar para Solicitação de Participação quando:
+- confirmação consciente;
+- dados mínimos e proporcionais;
+- autoridade de quem recebe a solicitação;
+- diferença entre entrada aberta, aprovação e convite;
+- cancelamento anterior ao envio;
+- ausência de consentimento pré-selecionado;
+- resultado e continuidade compreensíveis;
+- proteção de grupos sensíveis.
 
-- origem não estiver compreensível;
-- acompanhar e participar parecerem equivalentes;
-- entrada aberta sugerir ativação automática;
-- aprovação omitir critérios, responsável ou prazo estimado;
-- publicidade parecer recomendação ou legitimidade;
-- contagem funcionar como popularidade;
-- relação institucional sugerir autoridade indevida;
-- amostra insuficiente parecer nota baixa;
-- perfil protegido revelar dados sensíveis;
-- retorno perder busca, região, posição ou convite.
+## 8. Frentes paralelas preservadas
 
-## 9. Cobertura atual
+Não são reabertas automaticamente:
 
-| Família | Materializados | Validados | Pendentes |
-|---|---:|---:|---:|
-| Coletivos — descoberta | 5 | 5 | 0 |
-| Coletivos — Perfil Público | 4 | 0 | 4 |
-| Opportunity Boost | 46 | 36 | 10 |
-
-## 10. Fronteiras
-
-Permanecem fora do ciclo atual:
-
-- protótipo e teste;
-- identidade visual;
-- algoritmo de busca, publicidade ou reputação;
+- validação dos 10 estados residuais do Opportunity Boost;
+- Resultados Empresariais;
+- preços ou baseline comercial;
 - política jurídica;
-- mudança da baseline comercial;
-- promoção de Resultados Empresariais;
+- protótipo;
+- testes com pessoas;
 - Engenharia de Produto.
+
+## 9. Regra de autorização
+
+Integração da UXA-063 não inicia a UXA-064. Cada pacote continuará exigindo autorização própria para criação e autorização separada para integração.

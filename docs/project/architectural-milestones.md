@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.36.0
+version: 5.37.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.38.0
+  - ROADMAP-12.39.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -20,6 +20,7 @@ related:
   - UXA-060
   - UXA-061
   - UXA-062
+  - UXA-063
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -33,6 +34,7 @@ related:
   - M7.62
   - M7.63
   - M7.64
+  - M7.65
 normative: false
 ---
 
@@ -40,7 +42,7 @@ normative: false
 
 ## 1. Autoridade
 
-Este registro apresenta a maturidade arquitetural em visão consolidada. O estado oficial permanece no Registro do Estado Atual.
+Este registro apresenta a maturidade arquitetural consolidada. O estado oficial permanece no Registro do Estado Atual.
 
 ## 2. Linha de maturidade
 
@@ -60,46 +62,62 @@ Este registro apresenta a maturidade arquitetural em visão consolidada. O estad
 | M7.61 | concluído | programa de wireframes de Coletivos priorizado |
 | M7.62 | concluído | descoberta e busca móvel materializadas |
 | M7.63 | concluído | descoberta e busca móvel validadas |
-| **M7.64** | **concluído no pacote** | **Perfil Público móvel materializado em quatro estados** |
+| M7.64 | concluído | Perfil Público móvel materializado |
+| **M7.65** | **concluído no pacote** | **Perfil Público móvel validado funcionalmente** |
 
-## 3. M7.64 — Perfil Público Móvel de Coletivos Materializado
+## 3. M7.65 — Perfil Público Móvel Validado
 
 O marco registra:
 
-- quatro SVGs móveis;
-- entrada aberta;
-- entrada mediante aprovação;
-- entradas temporariamente indisponíveis;
-- apresentação protegida;
-- origem orgânica, patrocinada ou por convite;
-- acompanhar separado de participar;
-- regras e condições antes do vínculo;
-- contagens governadas e lista protegida;
-- relações institucionais com limite;
-- reputação suficiente, insuficiente ou suprimida;
-- publicidade sem compra de legitimidade;
-- proteção e denúncia reservadas.
+- quatro SVGs reformulados e validados;
+- zero novo SVG;
+- entrada aberta validada;
+- aprovação validada;
+- entradas temporariamente indisponíveis validadas;
+- apresentação protegida validada;
+- reputação suficiente com denominadores;
+- compartilhamento de perfil distinto de recomendação;
+- canais públicos distintos de contato privado;
+- dados condicionados à revisão;
+- anunciante separado do responsável operacional;
+- convite protegido com remetente, autoridade e motivo;
+- navegação protegida fora da descoberta pública.
 
 ## 4. Cobertura no marco
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Coletivos — descoberta | 5 | 5 | 0 |
-| Coletivos — Perfil Público | 4 | 0 | 4 |
+| Coletivos — Perfil Público | 4 | 4 | 0 |
 | Opportunity Boost | 46 | 36 | 10 |
 
-## 5. Condição do marco
+## 5. Condição de saída
 
-M7.64 conclui materialização, não validação funcional.
+M7.65 conclui a validação funcional do Perfil Público, mas não inicia:
 
-O avanço depende de autorização separada para:
+- revisão e confirmação de participação;
+- Solicitação Pendente;
+- `Meus Coletivos`;
+- comunicação interna;
+- gestão;
+- protótipo;
+- teste;
+- Engenharia de Produto.
 
-> **UXA-063 — Validação Funcional e Reformulação do Perfil Público Móvel do Coletivo**
+## 6. Próximo marco candidato
 
-## 6. Preservações
+A próxima transição recomendada é a UXA-064 — Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos.
 
-- 18 decisões empresariais permanecem inalteradas;
-- zero Resultado Empresarial canônico;
-- baseline comercial candidata inalterada;
-- Engenharia de Produto pausada antes de W0-01;
-- nenhum protótipo, teste ou código de produto iniciado.
+O marco correspondente somente poderá ser criado após autorização própria e validação mecânica do novo pacote.
+
+## 7. Preservações
+
+Permanecem inalterados:
+
+- 18 decisões humanas e zero Resultados Empresariais canônicos;
+- 9 candidatos em validação, 3 fundidos e 6 rejeitados;
+- baseline comercial candidata;
+- 46 wireframes do Opportunity Boost;
+- contratos UXA-056 a UXA-058;
+- programa de 88 estados da UXA-059;
+- pausa da Engenharia de Produto antes de W0-01.
