@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.36.0
+version: 0.37.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-03
 parent: UXA-000
@@ -52,6 +52,10 @@ related:
   - UXA-053
   - UXA-054
   - UXA-055
+  - UXA-056
+  - UXA-057
+  - UXA-058
+  - UXA-059
   - PAS-001
 normative: false
 ---
@@ -114,7 +118,8 @@ Os identificadores preservam a ordem histórica de criação e não determinam a
 28. validação da configuração móvel — UXA-052;
 29. gestão móvel da campanha — UXA-053;
 30. validação da gestão móvel — UXA-054;
-31. estados residuais de erro, inventário e preferências — UXA-055.
+31. estados residuais de erro, inventário e preferências — UXA-055;
+32. programa e priorização dos wireframes de Coletivos — UXA-059.
 
 ## 4. Critérios de validação por responsabilidade
 
@@ -162,6 +167,31 @@ A UXA-055 deverá ser validada quanto a:
 
 A UXA-050 permanece autoridade da validação transversal dos 25 artefatos examinados naquele incremento. Os 21 artefatos posteriores das UXA-051, UXA-053 e UXA-055 não integram retrospectivamente esse escopo.
 
+### 4.9 Wireframes de Coletivos
+
+A UXA-059 preserva 88 estados contratuais e determina que estado não equivale automaticamente a tela.
+
+A materialização será organizada em:
+
+- P0A — nove referências da espinha dorsal;
+- P0B — estados críticos;
+- P1 — participação interna e operação recorrente;
+- P2 — reputação, recomendação, contato e proteção avançada.
+
+As nove referências prioritárias serão:
+
+1. Explorar Coletivos;
+2. Resultados de Busca;
+3. Perfil Público do Coletivo;
+4. Solicitação de Participação;
+5. Solicitação Pendente;
+6. Meus Coletivos;
+7. Central de Atualizações;
+8. Início do Participante;
+9. Visão Geral do Responsável.
+
+Nenhuma dessas referências está materializada pela UXA-059.
+
 ## 5. Convenções de baixa fidelidade
 
 | Elemento | Convenção |
@@ -182,6 +212,9 @@ A UXA-050 permanece autoridade da validação transversal dos 25 artefatos exami
 | rótulo de proveniência | instrumentado, calculado, declarado ou indisponível |
 | progresso móvel | posição no fluxo sem autorização automática |
 | estado residual | erro, inventário, densidade ou controle com efeito explícito |
+| origem da interação | pessoa, Coletivo, Organização, Guivos ou publicidade |
+| autoridade textual | papel e limite para comunicar, decidir ou moderar |
+| agrupamento funcional | estados relacionados sem criar tela independente |
 
 Cor, iconografia e tipografia não possuem significado definitivo.
 
@@ -202,6 +235,8 @@ Cor, iconografia e tipografia não possuem significado definitivo.
 | Gestão da campanha | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Relatório agregado | móvel e computador | 390 × 844 e 1.440 × 1.024 |
 | Estados residuais — dez estados | móvel | 390 × 844 cada |
+| Coletivos — experiência da pessoa | móvel primeiro | 390 × 844 ou altura necessária |
+| Coletivos — gestão do responsável | computador primeiro | 1.440 × 1.024 ou altura necessária |
 
 ## 7. Relação funcional do Opportunity Boost
 
@@ -220,7 +255,26 @@ elegibilidade
 → relatório agregado
 ```
 
-## 8. Artefatos especializados
+## 8. Relação funcional dos Coletivos
+
+```text
+explorar ou buscar
+→ comparar resultados
+→ conhecer perfil público
+→ revisar participação
+→ acompanhar solicitação
+→ retornar por Meus Coletivos
+→ receber atualizações
+→ acessar Início do Participante
+→ comunicar, participar e decidir conforme papel
+→ avaliar experiência elegível
+→ recomendar ou solicitar contato com consentimento
+→ silenciar, bloquear, denunciar, pausar ou sair
+```
+
+Nenhuma etapa cria automaticamente a seguinte.
+
+## 9. Artefatos especializados
 
 | Nome | ID | Resultado |
 |---|---|---|
@@ -233,28 +287,52 @@ elegibilidade
 | Relatório agregado | UXA-048; UXA-049 | quatro SVGs validados |
 | Estados residuais | UXA-055 | dez SVGs aguardando validação |
 | Validação transversal | UXA-050 | 25 wireframes examinados |
+| Programa de Coletivos | UXA-059 | 88 estados organizados; zero novo SVG |
 
-## 9. Cobertura
+## 10. Cobertura
 
-O Opportunity Boost passa a possuir:
+### Opportunity Boost
 
 - 46 wireframes materializados;
 - 36 wireframes funcionalmente validados por pacote;
 - 10 estados residuais pendentes de validação;
 - 25 artefatos preservados sob a autoridade transversal histórica da UXA-050.
 
-## 10. Limites
+### Coletivos
 
-Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de categorias, atribuição, agregação, denúncia, contestação, reconciliação, cobrança, protótipo, teste de usabilidade ou Engenharia de Produto.
+- 88 estados funcionais contratados pelas UXA-056 a UXA-058;
+- nove referências prioritárias definidas;
+- zero novo wireframe especializado materializado;
+- número final de SVGs ainda não fixado;
+- materialização condicionada a pacotes pequenos, rastreáveis e autorizados.
 
-## 11. Próximos pontos de decisão
+## 11. Limite recomendado dos futuros pacotes
 
-1. validar funcionalmente e reformular os dez estados residuais da UXA-055;
-2. validar transversalmente os 46 artefatos, se priorizado;
-3. definir protocolo de protótipo de baixa ou média fidelidade;
-4. preparar plano de teste com Pessoas, Organizações e Coletivos;
-5. criar a referência móvel da Home;
-6. validar a transição para a primeira Tela Hoje;
-7. criar referências para computador e tablet, se priorizadas.
+- até três superfícies principais;
+- até seis SVGs com estados alternativos;
+- uma responsabilidade dominante;
+- um canal principal;
+- estados incluídos e excluídos explícitos;
+- matriz de cobertura;
+- validação funcional antes da ampliação.
+
+Novo SVG somente será criado quando houver mudança material de hierarquia, decisão, autoridade, público, dados, risco, continuidade, consentimento, canal ou recuperação.
+
+## 12. Limites
+
+Este programa não define marca, tecnologia, autenticação, armazenamento, IA, textos finais, responsividade total, tablet, acessibilidade técnica, algoritmo publicitário, tecnologia cartográfica, política final de categorias, atribuição, agregação, denúncia, contestação, reconciliação, cobrança, chat, criptografia, moderação operacional, protótipo, teste de usabilidade ou Engenharia de Produto.
+
+## 13. Próximos pontos de decisão
+
+1. UXA-060 — criar wireframes móveis de Explorar Coletivos e Resultados de Busca;
+2. validar funcionalmente a UXA-060;
+3. criar perfil público e formas de entrada;
+4. criar fluxo de participação e estados da solicitação;
+5. criar `Meus Coletivos` e Central de Atualizações;
+6. reformular o Início do Participante;
+7. criar a Visão Geral do Responsável;
+8. materializar P0B, P1 e P2 em incrementos próprios;
+9. validar funcionalmente os dez estados residuais da UXA-055;
+10. definir protocolo de protótipo e plano de teste somente após as validações necessárias.
 
 Nenhuma etapa posterior é iniciada automaticamente.
