@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.41.0
+version: 0.42.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 parent: UXA-000
@@ -23,8 +23,9 @@ related:
   - UXA-061
   - UXA-062
   - UXA-063
+  - UXA-064
   - PAS-001
-  - M7.65
+  - M7.66
 normative: false
 ---
 
@@ -86,8 +87,9 @@ A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 |---|---:|---:|---:|
 | descoberta e busca móvel | 5 | 5 | 0 |
 | Perfil Público móvel | 4 | 4 | 0 |
+| revisão e solicitação móvel | 5 | 0 | 5 |
 | demais famílias de Coletivos | 0 | 0 | não materializadas |
-| **Total de Coletivos** | **9** | **9** | **0 nas famílias criadas** |
+| **Total de Coletivos** | **14** | **9** | **5** |
 
 A contagem de Coletivos permanece separada do Opportunity Boost.
 
@@ -98,7 +100,7 @@ A contagem de Coletivos permanece separada do Opportunity Boost.
 | 1 | Explorar Coletivos | materializada e validada |
 | 2 | Resultados de Busca | materializada e validada |
 | 3 | Perfil Público do Coletivo | materializada e validada |
-| 4 | Revisão e Solicitação de Participação | não iniciada |
+| 4 | Revisão e Solicitação de Participação | materializada; validação pendente |
 | 5 | Solicitação Pendente | não iniciada |
 | 6 | Meus Coletivos | não iniciado |
 | 7 | Central de Atualizações | não iniciada |
@@ -146,7 +148,32 @@ Regras validadas:
 - amostra insuficiente não é nota zero;
 - perfil protegido identifica remetente, autoridade e motivo sem virar resultado de busca.
 
-## 7. Proteções transversais
+## 7. Revisão e solicitação
+
+Autoridade:
+
+- UXA-064 — cinco SVGs móveis materializados e ainda não validados funcionalmente.
+
+Estados materializados:
+
+1. revisão para entrada aberta;
+2. confirmação da entrada aberta;
+3. revisão de solicitação mediante aprovação;
+4. comprovante transitório do envio;
+5. revisão protegida de convite.
+
+Decisões representadas:
+
+- nenhuma confirmação começa selecionada;
+- dados permitidos e proibidos aparecem antes da ação;
+- papel, autoridade, notificações, marketing e contato privado permanecem separados;
+- cancelamento anterior ao envio não compartilha dados;
+- entrada aberta cria vínculo somente após confirmação consciente;
+- envio para aprovação não cria vínculo;
+- comprovante não substitui Solicitação Pendente;
+- convite protegido inicia análise especializada, não participação automática.
+
+## 8. Proteções transversais
 
 - contagem não funciona como ranking;
 - lista nominal permanece protegida;
@@ -158,12 +185,13 @@ Regras validadas:
 - convite não cria vínculo;
 - estado contratual não gera automaticamente um SVG exclusivo.
 
-## 8. Limites
+## 9. Limites
 
 O programa ainda não inicia:
 
-- Solicitação de Participação;
+- validação funcional da UXA-064;
 - Solicitação Pendente;
+- informação adicional, recusa, expiração ou contestação;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
@@ -175,8 +203,8 @@ O programa ainda não inicia:
 - identidade visual;
 - Engenharia de Produto.
 
-## 9. Próxima transição
+## 10. Próxima transição
 
-**UXA-064 — Wireframes Móveis da Revisão e Solicitação de Participação em Coletivos.**
+**UXA-065 — Validação Funcional e Reformulação da Revisão e Solicitação de Participação Móvel em Coletivos.**
 
-O pacote deverá permanecer dentro do limite governado de três superfícies principais ou seis SVGs e dependerá de autorização separada.
+O pacote deverá validar os cinco SVGs antes de iniciar Solicitação Pendente e dependerá de autorização separada.
