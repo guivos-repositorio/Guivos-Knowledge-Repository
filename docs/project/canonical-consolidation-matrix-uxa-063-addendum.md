@@ -1,6 +1,6 @@
 ---
 id: GKR-CANONICAL-CONSOLIDATION-UXA-063
- title: Matriz de Consolidação Canônica — Adendo UXA-063
+title: Matriz de Consolidação Canônica — Adendo UXA-063
 status: draft
 version: 0.1.0
 owner: Repositório de Conhecimento da Guivos
