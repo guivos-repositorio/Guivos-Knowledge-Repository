@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -12,6 +12,8 @@ related:
   - UXA-076
   - UXA-077
   - UXA-078
+  - UXA-079
+  - UXA-080
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -28,9 +30,9 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.2.0 responde somente aos cinco achados obrigatórios da UXA-077. O registro é composto por este inventário principal e quatro detalhamentos controlados. Em conjunto, eles registram todos os campos exigidos pelas UXA-070 e UXA-076.
+A versão 0.3.0 incorpora a promoção controlada da UXA-080 após a revalidação aprovada com ressalvas pela UXA-079. O registro é composto por este inventário principal e quatro detalhamentos controlados. Em conjunto, eles registram todos os campos exigidos pelas UXA-070 e UXA-076.
 
-A inclusão não cria interface, não altera maturidade, não fecha lacuna e não promove o registro.
+O status `active` torna o registro uma referência documental vigente. Ele não cria interface, não altera maturidade individual, não fecha lacuna e não declara jornada completa.
 
 ## 2. Convenções
 
@@ -127,7 +129,7 @@ Arquivos:
 - `GKR-SURF-PER-102` permanece exclusivo de Resultados de Busca de Coletivos.
 - `GKR-SURF-ORG-003` permanece como estado institucional de oportunidade aprovada ou ativa.
 - `GKR-SURF-PER-201`, `GKR-SURF-PER-202` e `GKR-SURF-PER-203` representam mapa, lista e detalhe de oportunidades.
-- `GKR-SURF-COM-005` passa a apontar para UXA-055 e continua sem validação funcional específica.
+- `GKR-SURF-COM-005` aponta para UXA-055 e continua sem validação funcional específica.
 - `GKR-SURF-BND-001` é endpoint documental, não participante, tela ou integração.
 
 ## 7. Regras de uso
@@ -138,5 +140,5 @@ Arquivos:
 - responsabilidade sem interface continua `ausente`;
 - fronteira documental não equivale a implementação;
 - a cobertura permanece seletiva e não exaustiva;
-- o registro permanece `draft` até nova validação funcional;
-- a UXA-078 não promove qualquer entrada.
+- o status `active` aprova o instrumento de registro, não a completude das jornadas;
+- a UXA-080 não altera maturidade, materialização, validação ou lacuna das entradas individuais.
