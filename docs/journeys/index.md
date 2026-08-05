@@ -50,7 +50,13 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 - [Registro Granular de Transições](transition-registry.md)
 - [Lacunas e continuidades ausentes](gaps.md)
 
-## 4. Modelo de evidência
+## 4. Pacote granular vigente
+
+A materialização dos dois registros é governada pela [UXA-076 — Registro Granular de Transições e Superfícies](../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md).
+
+O pacote está `active` como registro de ação concluída. Os dois registros produzidos permanecem `draft` até validação funcional própria.
+
+## 5. Modelo de evidência
 
 Cada nó ou família deve separar, quando aplicável:
 
@@ -68,7 +74,7 @@ cobertura das superfícies
 ≠ validação da jornada integrada
 ```
 
-## 5. Estado desta seção
+## 6. Estado desta seção
 
 | Camada | Estado | Referência |
 |---|---|---|
@@ -84,7 +90,7 @@ cobertura das superfícies
 | aplicação ou motor | não iniciado | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
-## 6. Registros granulares
+## 7. Registros granulares
 
 A UXA-076 cria uma camada de rastreabilidade individual:
 
@@ -99,13 +105,13 @@ família agregada
 
 Os IDs estabilizam a referência documental. Eles não implementam interfaces, não executam transições e não promovem maturidade.
 
-## 7. Regra de leitura
+## 8. Regra de leitura
 
 Uma sequência exibida nesta seção é uma hipótese documental rastreável. Ela só poderá ser declarada como jornada integrada completa quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência funcional suficiente.
 
 Quando a continuidade necessária ainda não estiver materializada ou validada, ela será apresentada como **parcial**, **ausente** ou **não examinada**, nunca preenchida por suposição.
 
-## 8. Regra de promoção
+## 9. Regra de promoção
 
 - esta visão geral está `active` porque a seção foi aprovada como instrumento documental de leitura e governança;
 - as vistas de Pessoa, Coletivo e Organização permanecem `draft` por representarem jornadas incompletas;
@@ -115,7 +121,7 @@ Quando a continuidade necessária ainda não estiver materializada ou validada, 
 - inclusão nesta seção não altera maturidade, prioridade ou canonicidade;
 - nenhuma referência é promovida apenas por estar navegável no GKR.
 
-## 9. Escopo vigente
+## 10. Escopo vigente
 
 O status `active` desta seção confirma sua validade documental. Ele não declara:
 
