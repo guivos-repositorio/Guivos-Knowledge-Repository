@@ -2,7 +2,7 @@
 id: GKR-AUD-ACCUMULATED-003
 title: Auditoria das Conversas, Rascunhos e Fontes Acumuladas
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -11,6 +11,9 @@ depends_on:
   - GKR-UPDATE-PROGRAM-001
 related:
   - GKR-SOURCE-INTAKE-001
+  - GKR-CLAIMS-TRACE-001
+  - GKR-LINEAGE-GC-CON-001-001
+  - GKR-EXT-GOV-DISPOSITION-001
   - GKR-AUD-002
   - GKR-REMEDIATION-002
 normative: false
@@ -20,379 +23,321 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento registra a auditoria minuciosa das conversas, arquivos externos, rascunhos, relatórios, planos, tratativas operacionais e alegações de atualização acumulados desde a última reconciliação geral do Guivos Knowledge Repository.
+Este documento registra a auditoria minuciosa das conversas, arquivos externos, rascunhos, relatórios, planos, tratativas operacionais e alegações acumuladas desde a última reconciliação geral do Guivos Knowledge Repository.
 
-A auditoria existe para identificar:
+A auditoria identifica:
 
 1. erros factuais ou semânticos;
 2. desvios entre a `main` e superfícies derivadas;
-3. documentos externos com aparência de autoridade, mas sem integração governada;
-4. versões concorrentes ou linhagens documentais ambíguas;
+3. fontes externas com aparência de autoridade;
+4. versões concorrentes e linhagens ambíguas;
 5. recomendações apresentadas como decisões;
 6. planos apresentados como execução;
-7. alegações de conclusão sem prova verificável no Git;
-8. informações sensíveis que não devem ser publicadas sem classificação;
-9. itens que pertencem a pacotes temáticos posteriores;
-10. assuntos que devem permanecer em quarentena.
+7. alegações sem prova Git;
+8. informações sensíveis;
+9. itens destinados a pacotes posteriores;
+10. hipóteses que devem permanecer em quarentena.
 
-Este documento é um artefato de auditoria e intake. Ele não cria decisões arquiteturais, não altera o estado vigente e não promove automaticamente conteúdo externo ao cânone.
+Este artefato não cria decisões arquiteturais, não altera o estado vigente e não promove conteúdo externo à Canon.
 
 ## 2. Baseline auditada
 
-A auditoria foi aberta em 2026-08-05 sobre a seguinte baseline:
-
 | Elemento | Baseline verificada |
 |---|---|
+| Repositório | `guivos-repositorio/Guivos-Knowledge-Repository` |
 | Branch oficial | `main` |
 | Commit de origem | `6280022eaf2c4153dafd0528acd24b2d219e0c18` |
 | Registro do Estado Atual | `GKR-STATE-001` 1.99.0 |
-| Marco | `M7.72` |
+| Marco | M7.72 |
 | Última frente integrada | UXA-070 |
 | Próxima frente arquitetural | UXA-071, não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Programa de atualização | P0–P9, sujeito a autorizações independentes |
-| P1 | aberto em PR separado e ainda não integrado |
+| P1 | PR nº 163, draft, ainda não integrado |
+| P0 | PR nº 164, draft |
 
-A autoridade transversal permanece no [Registro do Estado Atual](current-state-register.md). O [inventário acumulado](accumulated-updates-inventory-2026-08-04.md) e o [programa controlado](controlled-repository-update-program-2026-08-04.md) orientam o encaminhamento, mas não substituem as autoridades normativas.
+A autoridade transversal permanece no [Registro do Estado Atual](current-state-register.md). O inventário e o programa P0–P9 orientam o trabalho, sem autorizar automaticamente pacotes posteriores.
 
-## 3. Fontes analisadas
+## 3. Método
 
-A análise considerou cinco famílias de evidência:
+A análise utiliza cinco famílias de evidência:
 
-1. estado verificável da `main`, branches, commits, pull requests e workflows;
-2. documentos externos presentes no acervo de trabalho;
-3. rascunhos editoriais, arquiteturais, jurídicos e técnicos;
-4. resumos e alegações registrados em conversas anteriores;
-5. decisões, hipóteses e intenções ainda sem evidência suficiente de integração ou execução.
+- estado verificável do Git;
+- documentos externos no acervo;
+- rascunhos editoriais, arquiteturais, jurídicos e técnicos;
+- resumos e alegações conversacionais;
+- decisões, hipóteses e intenções ainda sem prova suficiente.
 
-O detalhamento individual está no [Registro de Intake das Fontes](source-intake-register-2026-08-05.md).
+Cada fonte é classificada por:
 
-## 4. Método de classificação
+- proveniência;
+- maturidade;
+- sensibilidade;
+- autoridade afetada;
+- risco de promoção;
+- pacote de destino;
+- decisão de intake.
 
-Cada item foi classificado por quatro eixos.
+Os detalhes estão no [Registro de Intake](source-intake-register-2026-08-05.md), na [Rastreabilidade das Alegações](accumulated-claims-git-traceability-2026-08-05.md), na [Resolução GC-CON-001](gc-con-001-lineage-resolution-2026-08-05.md) e na [Disposição das Fontes de Governança](external-governance-and-knowledge-architecture-disposition-2026-08-05.md).
 
-### 4.1 Proveniência
+## 4. Resultado executivo
 
-- **Git verificado:** arquivo, commit, PR ou workflow localizado no repositório;
-- **acervo externo identificado:** arquivo disponível fora do repositório;
-- **conversa registrada:** alegação ou decisão expressa em conversa, sem prova Git suficiente;
-- **origem incompleta:** referência conhecida, mas sem arquivo, versão ou localização confiável.
-
-### 4.2 Maturidade
-
-- **canônico integrado:** autoridade presente na `main`;
-- **integrado não normativo:** material de apoio presente na `main`;
-- **proposta em PR:** alteração versionada, ainda não integrada;
-- **aprovado externo:** documento declara aprovação, porém não possui integração governada comprovada;
-- **draft:** conteúdo em elaboração;
-- **recomendação:** opção defendida, sem autorização de implementação;
-- **plano:** roteiro de execução, sem prova de execução;
-- **alegação:** informação dependente de verificação;
-- **quarentena:** item incompatível, prematuro, ambíguo ou sem autoridade.
-
-### 4.3 Sensibilidade
-
-- **público:** adequado à publicação após validação;
-- **interno:** restrito ao funcionamento do GKR;
-- **confidencial:** contém estratégia, proteção corporativa, dados operacionais ou orientação jurídica sensível;
-- **a classificar:** não deve ser publicado até revisão.
-
-### 4.4 Encaminhamento
-
-- **resolver no P0:** corrigir proveniência, duplicidade, autoridade ou intake;
-- **rotear ao pacote temático:** preservar como fonte candidata e analisar em P2–P9;
-- **manter em quarentena:** não integrar ao cânone;
-- **encerrar como operacional:** registrar fora do corpo arquitetural;
-- **considerar resolvido:** já existe autoridade suficiente na `main`.
-
-## 5. Resultado executivo
-
-A auditoria encontrou uma combinação de desvios reais, lacunas de proveniência e riscos de promoção indevida.
-
-| Classe | Resultado |
+| Dimensão | Resultado atual |
 |---|---|
-| Estado canônico | coerente em `GKR-STATE-001`; não deve ser alterado por este pacote |
-| Superfícies globais | divergências identificadas e corrigidas no PR do P1, ainda não integrado |
-| Conversas acumuladas | úteis como fonte de descoberta, insuficientes como prova de integração |
-| Documentos externos | misturam draft, aprovação declarada, recomendação e plano |
-| Linhagem documental | risco elevado em famílias com múltiplas versões e o mesmo identificador |
-| Arquitetura tecnológica | recomendação Neo4j precisa de decisão governada própria no P2 |
-| Marca e domínios | plano existe, mas não prova registro, titularidade, configuração ou operação |
-| Validação de mercado | evidências e versões precisam ser reconciliadas no P4 |
-| Fundação e internacionalização | intenções sem prova suficiente de constituição ou operação |
-| UXA-071 | deve permanecer não iniciada até encerramento e autorização separados |
+| Estado canônico | coerente em `GKR-STATE-001`; nenhuma mudança autorizada |
+| Superfícies globais | desvios corrigidos no PR nº 163, ainda não integrado |
+| Fontes catalogadas | 39 |
+| Alegações rastreadas | 31 |
+| Desvios formais | 18 |
+| `GC-CON-001` | colisão confirmada; release 1.0 não reconhecida; importação direta bloqueada |
+| Governança externa | princípios parcialmente absorvidos; PDFs não são autoridades vigentes |
+| Arquitetura externa do GKR | proposta histórica substituída pela arquitetura federada atual |
+| Contexto Vivo | autoridade Git confirmada; rascunho externo ainda precisa de comparação |
+| VAL | versões atuais confirmadas; operação e resultados ainda não comprovados |
+| Tecnologia | Neo4j permanece recomendação externa para P2 |
+| Marca e domínios | plano não comprova execução |
+| Fundação e internacionalização | intenções sem prova de constituição ou operação |
+| UXA-071 | não iniciada |
 
-Não foi identificada justificativa para uma atualização ampla e direta da `main` a partir das conversas ou dos arquivos externos. O caminho seguro é o intake controlado, seguido de pacotes independentes, cada um com autoridade, evidência, branch, validação e PR próprios.
+Não existe justificativa para importar em massa as conversas ou os PDFs. O caminho seguro permanece: intake, evidência, comparação, consolidação, validação, auditoria e PR autorizado.
 
-## 6. Desvios e erros identificados
+## 5. Desvios e tratamentos
 
-### D-001 — Divergência nas superfícies globais
+### D-001 — Superfícies globais defasadas
 
-**Severidade:** alta
+**Severidade:** alta  
+**Estado:** corrigido no P1; não integrado
 
-**Situação:** corrigida no P1; ainda não integrada
+README, Home, navegação, changelog e índice de adendos estavam defasados em relação a `GKR-STATE-001` 1.99.0 e M7.72.
 
-README, Home, navegação, changelog e índice de adendos estavam defasados em relação a `GKR-STATE-001` 1.99.0 e ao marco M7.72. A auditoria do próprio P1 também encontrou controles insuficientes de versão, associação contextual da UXA-071, existência física de arquivos indexados e execução do gate após `push` na `main`.
+O PR nº 163 corrige as superfícies e adiciona gate semântico. Permanece draft.
 
-**Tratamento:** correções incorporadas ao PR nº 163, com validações semântica e mecânica aprovadas. O PR permanece draft e não deve ser mesclado sem autorização.
+### D-002 — Conversa divergente do estado real do Git
 
-### D-002 — Inconsistência de continuidade entre conversa e Git
+**Severidade:** alta  
+**Estado:** resolvido
 
-**Severidade:** alta
+Uma resposta anterior afirmou que o P1 não existia, mas o PR nº 163 já estava aberto.
 
-**Situação:** esclarecida
-
-Uma resposta anterior afirmou que branch, commit e PR do P1 não haviam sido criados. A verificação posterior encontrou o PR nº 163 já existente, com histórico próprio.
-
-**Risco:** repetição de trabalho, criação de branches paralelas e perda da rastreabilidade real.
-
-**Tratamento:** o Git passa a prevalecer sobre resumos conversacionais para determinar execução, e o PR nº 163 foi auditado em vez de duplicado.
+**Controle:** Git, commits, branches e PRs prevalecem sobre resumos conversacionais para comprovar execução.
 
 ### D-003 — Aprovação declarada fora do GKR
 
-**Severidade:** alta
+**Severidade:** alta  
+**Estado:** resolvido no nível de autoridade
 
-**Situação:** aberta
+PDFs externos usam termos como aprovado, oficial, canônico ou versão 1.0.
 
-Alguns PDFs e documentos externos se apresentam como “aprovados”, “oficiais”, “canônicos” ou versão 1.0. Essa declaração interna ao arquivo não comprova aprovação governada no GKR.
+A [disposição formal](external-governance-and-knowledge-architecture-disposition-2026-08-05.md) estabelece que autodeclaração externa não cria autoridade. `GKR-001` é fonte histórica parcialmente absorvida; a arquitetura externa do repositório foi substituída; `GC-GOV-001` e `GC-EDT-002` permanecem drafts externos.
 
-**Risco:** duas fontes da verdade concorrentes.
+A preservação física dessas fontes ainda depende de hash, sigilo e destino.
 
-**Tratamento:** comparar cada documento com as autoridades vigentes, registrar decisão de absorção, substituição, arquivamento ou rejeição e integrar somente por pacote autorizado.
+### D-004 — Colisão da família `GC-CON-001`
 
-### D-004 — Linhagem ambígua da família `GC-CON-001`
+**Severidade:** crítica  
+**Estado:** autoridade e tratamento resolvidos; inventário físico pendente
 
-**Severidade:** crítica
+A família reutiliza o mesmo ID para estrutura, capítulos, manuscritos, planos, blocos, partes e consolidações. Vários arquivos diferentes usam simultaneamente `v1.0`.
 
-**Situação:** aberta
+A [resolução de linhagem](gc-con-001-lineage-resolution-2026-08-05.md) determinou:
 
-Foram identificadas múltiplas variantes relacionadas ao corpus conceitual da Guivos, com o mesmo identificador ou títulos próximos, mas conteúdo, versão, status e escopo potencialmente diferentes.
+- estado `external_lineage_conflicted`;
+- nenhuma release 1.0 reconhecida;
+- importação direta proibida;
+- ID bloqueado até consolidação única;
+- PDFs preserváveis apenas como fontes históricas individualizadas;
+- futuro candidato sujeito ao pipeline completo.
 
-**Risco:** colisão de ID, promoção da versão errada, perda de autoria temporal e contradições silenciosas.
+### D-005 — Recomendação tecnológica descrita como implantação
 
-**Tratamento obrigatório no P0:** inventariar todas as cópias; calcular ordem temporal e relação de derivação; comparar conteúdo e front matter; identificar a autoridade atual já integrada; declarar `superseded`, `archived`, `candidate` ou `rejected` para cada variante; bloquear nova integração com o mesmo ID até a resolução da linhagem.
+**Severidade:** alta  
+**Estado:** roteado ao P2
 
-### D-005 — Recomendação tecnológica tratada como decisão ou implantação
+O documento Neo4j recomenda AuraDB, Graph Analytics e integração progressiva com Power BI, mas não comprova contratação, provisionamento, migração, benchmark, segurança ou operação.
 
-**Severidade:** alta
+### D-006 — Desenho de validação confundido com resultado
 
-**Situação:** roteada ao P2
+**Severidade:** alta  
+**Estado:** parcialmente resolvido; roteado ao P4
 
-O documento de arquitetura Neo4j recomenda AuraDB, Graph Analytics separado e integração analítica progressiva com Power BI. A recomendação é relevante, mas não comprova contratação, provisionamento, migração, benchmark, segurança ou operação.
+VAL-002 2.1.0, VAL-006 1.3.1 e VAL-007 1.3.1 estão integrados. Rascunhos 1.1.0 estão superados.
 
-**Tratamento:** preservar como fonte candidata do P2; produzir ADR e gates de decisão antes de qualquer declaração de adoção.
+Ainda faltam evidências de:
 
-### D-006 — Desalinhamento entre desenho e evidência de validação de mercado
+- pré-teste;
+- formulário efetivamente publicado;
+- período de coleta;
+- respostas válidas;
+- integridade da base;
+- cálculo dos KPIs;
+- decisão formal.
 
-**Severidade:** alta
+Nenhum Outcome pode ser declarado.
 
-**Situação:** roteada ao P4
+### D-007 — Plano de proteção confundido com execução
 
-Há rascunhos com formulário, indicadores, versões e afirmações de implementação. O repositório também possui regras explícitas para diferenciar draft, readiness, coleta e resultado.
+**Severidade:** alta  
+**Estado:** roteado ao P3
 
-**Risco:** declarar validação, aceitação ou resultado empresarial sem base amostral e evidência operacional.
+O plano corporativo não comprova registro de marca, domínio, DNS, certificado, titularidade ou proteção internacional.
 
-**Tratamento:** reconciliar os arquivos VAL, confirmar versões no Git, verificar instrumento efetivamente publicado, período de coleta, amostra, integridade dos dados e cálculo dos KPIs. Até isso ocorrer, não declarar Outcome ou validação de mercado concluída.
+### D-008 — Fundação projetada tratada como entidade existente
 
-### D-007 — Plano de proteção corporativa confundido com execução
+**Severidade:** alta  
+**Estado:** roteado ao P5
 
-**Severidade:** alta
+Fundação Guivos, `guivos.org`, programas sociais e pontos patrocinados permanecem conceitos ou hipóteses, sem prova jurídica e operacional vinculada.
 
-**Situação:** roteada ao P3
+### D-009 — Presença territorial tratada como operação internacional
 
-O plano de marcas, domínios, DNS e certificados estabelece diretrizes de titularidade e aprovação, mas não prova registros efetivados, titularidade atual, configuração técnica ou proteção internacional.
+**Severidade:** alta  
+**Estado:** roteado ao P7
 
-**Risco:** afirmar proteção inexistente, expor ativos ou publicar dados confidenciais.
+Domínios, números, polos, perfis ou cadastros isolados não comprovam operação em um território.
 
-**Tratamento:** classificar o plano como confidencial, separar evidência registral de recomendação e exigir comprovantes antes de atualizar o estado.
+### D-010 — Procedimentos operacionais misturados à arquitetura
 
-### D-008 — Entidade institucional projetada tratada como existente
+**Severidade:** média  
+**Estado:** aberto
 
-**Severidade:** alta
-
-**Situação:** aberta e roteada ao P5
-
-Conversas descrevem Fundação Guivos, `guivos.org`, programas sociais, voluntariado e recompensas patrocinadas. Não há evidência suficiente, nesta auditoria, de constituição jurídica, governança aprovada, conta bancária, operação, equipe ou programa ativo.
-
-**Tratamento:** manter a distinção entre conceito institucional, arquitetura, plano de implantação e entidade juridicamente constituída.
-
-### D-009 — Internacionalização e presença territorial sem evidência operacional
-
-**Severidade:** alta
-
-**Situação:** aberta e roteada ao P7
-
-Domínios, números telefônicos, polos comerciais, perfis e países prioritários foram discutidos. Discussão, reserva ou cadastro isolado não comprovam operação internacional.
-
-**Tratamento:** exigir evidência por território: entidade responsável, titularidade, canal ativo, capacidade de atendimento, base legal, privacidade, oferta, cobrança e suporte.
-
-### D-010 — Conteúdo operacional misturado ao conhecimento arquitetural
-
-**Severidade:** média
-
-**Situação:** aberta
-
-Tratativas sobre instalação do GitHub CLI, autenticação, workspace e uso do Codex são importantes para a operação, mas não alteram a arquitetura ou o estado do ecossistema.
-
-**Tratamento:** registrar em runbook operacional separado, sem promover comandos ou configurações transitórias a princípios arquiteturais.
+Instalação do `gh`, autenticação, workspace e Codex pertencem a runbook operacional. Não alteram a arquitetura ou o estado do ecossistema.
 
 ### D-011 — Nomenclatura histórica concorrente
 
-**Severidade:** média
+**Severidade:** média  
+**Estado:** resolvido arquiteturalmente
 
-**Situação:** parcialmente resolvida
+`GPA-002` confirma Guivos Mall como nome oficial e Marketplace como `former_name`. A estrutura de sete componentes também foi confirmada em `GPA-000`.
 
-“Guivos Marketplace” permanece em conversas e materiais históricos, enquanto “Guivos Mall” foi adotado na estrutura atual.
+Resta apenas varrer materiais externos e históricos.
 
-**Tratamento:** preservar Marketplace como alias histórico quando necessário, impedir seu uso como unidade vigente e auditar referências públicas remanescentes no P8/P9.
+### D-012 — Hipóteses de produto retornando por repetição
 
-### D-012 — Hipóteses de produto em quarentena
+**Severidade:** alta  
+**Estado:** quarentena preservada
 
-**Severidade:** alta
+Passport, Life Map, rankings, tribos e recompensas não podem retornar à Canon por repetição conversacional.
 
-**Situação:** preservada
+### D-013 — Proveniência incompleta
 
-Termos como Passport, Life Map, rankings, tribos e recompensas podem reaparecer em conversas ou rascunhos. Esses conceitos não devem retornar ao cânone por repetição conversacional.
+**Severidade:** alta  
+**Estado:** parcialmente resolvido
 
-**Tratamento:** manter quarentena até existir autoridade temática, hipótese explícita, critérios de avaliação, análise de riscos e decisão independente.
+Alegações relevantes foram ligadas a PRs, commits e paths. Fontes externas ainda precisam de:
 
-### D-013 — Proveniência incompleta e referências sem localização permanente
+- hash;
+- autor ou responsável;
+- versão confiável;
+- relação de derivação;
+- classificação de sigilo;
+- destino permanente.
 
-**Severidade:** alta
+### D-014 — Exposição de informação confidencial
 
-**Situação:** aberta
+**Severidade:** alta  
+**Estado:** aberto
 
-Parte das fontes possui título, mas não localização estável, hash, origem, responsável, versão confiável ou relação com o documento anterior.
-
-**Tratamento:** usar o Registro de Intake como camada obrigatória antes de qualquer absorção.
-
-### D-014 — Risco de exposição de conteúdo confidencial
-
-**Severidade:** alta
-
-**Situação:** aberta
-
-Planos de proteção, estratégia corporativa, dados de contato, configurações técnicas, evidências jurídicas e informações comerciais podem exigir acesso restrito.
-
-**Tratamento:** revisar sensibilidade antes de copiar conteúdo para o repositório público; usar síntese pública e evidência restrita quando necessário.
+Planos corporativos, ativos, contatos, configurações, evidências jurídicas e informações comerciais devem ser classificados antes de qualquer cópia para área pública.
 
 ### D-015 — Histórico raiz fragmentado
 
-**Severidade:** média
+**Severidade:** média  
+**Estado:** tratado no P1; não integrado
 
-**Situação:** tratada no P1; ainda não integrada
-
-O `CHANGELOG.md` raiz não representa sozinho a cronologia recente. O P1 propõe índice próprio sem apagar o ledger legado.
-
-**Tratamento:** integrar somente após revisão do PR nº 163 e manter a regra de que changelog não substitui o Registro do Estado Atual.
+O PR nº 163 propõe índice atual do histórico sem apagar o ledger raiz legado.
 
 ### D-016 — Adendos canônicos pouco descobríveis
 
-**Severidade:** média
+**Severidade:** média  
+**Estado:** tratado no P1; não integrado
 
-**Situação:** tratada no P1; ainda não integrada
+O PR nº 163 cria índice e gate para os adendos, sem declarar absorção silenciosa pela matriz central.
 
-A matriz central e os adendos posteriores estavam dispersos. O P1 cria índice e gate para verificar os arquivos reais.
+### D-017 — Alegações históricas sem prova vinculada
 
-**Tratamento:** preservar a matriz central sem declarar absorção automática dos adendos.
+**Severidade:** média  
+**Estado:** substancialmente reduzido
 
-### D-017 — Alegações históricas de integração sem reconciliação de caminho
+Foram comprovados:
 
-**Severidade:** média
+- GEM-009;
+- GEM-010;
+- GEM-010-A2;
+- COEM;
+- ECO-CAND-001;
+- Contexto Vivo;
+- VAL-002, VAL-006 e VAL-007;
+- Guivos Mall;
+- sete componentes oficiais.
 
-**Situação:** aberta
+A matriz de rastreabilidade possui 31 claims. Novas alegações deverão usar o mesmo padrão.
 
-Conversas anteriores registram integrações como GEM-009, decisões posteriores como GEM-010 e avanço do Contexto Vivo. Essas alegações podem estar corretas, mas precisam ser vinculadas a paths, commits e autoridades atuais antes de serem usadas em novas decisões.
+### D-018 — Atualização monolítica
 
-**Tratamento:** produzir uma tabela `alegação → arquivo → commit → autoridade → estado atual` durante o fechamento do P0.
+**Severidade:** crítica  
+**Estado:** controlado
 
-### D-018 — Risco de atualização monolítica
+P0–P9 permanecem pacotes independentes. Nenhum pacote posterior começa automaticamente.
 
-**Severidade:** crítica
+## 6. Autoridades e fatos preservados
 
-**Situação:** controlada pelo programa P0–P9
+A auditoria confirma:
 
-Atualizar simultaneamente arquitetura, tecnologia, marca, mercado, Fundação, internacionalização, produto e comunicação criaria colisões de autoridade e tornaria a revisão impraticável.
-
-**Tratamento:** manter pacotes independentes e impedir início automático do pacote seguinte.
-
-## 7. Itens confirmados e preservados
-
-Esta auditoria confirma apenas o que foi verificável na baseline:
-
-- a `main` tem como head o merge do PR nº 162;
-- `GKR-STATE-001` 1.99.0 permanece autoridade transversal;
-- o marco vigente permanece M7.72;
+- `main` permanece baseada no merge do PR nº 162;
+- `GKR-STATE-001` 1.99.0 é a autoridade transversal;
+- o marco permanece M7.72;
 - UXA-070 está integrada;
 - UXA-071 não foi iniciada;
 - Engenharia de Produto permanece pausada antes de W0-01;
-- P1 existe no PR nº 163, está em draft e possui gates aprovados no head auditado;
-- não há autorização neste pacote para merge, implementação, oferta comercial, coleta de dados, constituição institucional ou expansão territorial.
+- PR nº 163 permanece draft;
+- PR nº 164 permanece draft;
+- não há autorização de implementação, oferta, coleta, constituição institucional ou expansão territorial.
 
-## 8. Roteamento dos achados
+## 7. Roteamento
 
-| Pacote | Conteúdo destinado | Condição de entrada |
+| Pacote | Conteúdo | Condição |
 |---|---|---|
-| P0 | proveniência, linhagem, duplicidades, status e intake | esta auditoria + registro de fontes |
-| P1 | superfícies globais, changelog, navegação, índices e gate semântico | PR nº 163 revisado separadamente |
-| P2 | Neo4j, grafo, analytics, Power BI, segurança e implantação | ADRs, benchmarks e evidências técnicas |
-| P3 | marca, domínios, DNS, certificados e titularidade | evidência registral e classificação de sigilo |
-| P4 | instrumentos VAL, pesquisa, coleta, KPIs e outcomes | trilha de evidência verificável |
-| P5 | Fundação, guivos.org, causas, voluntariado e governança social | separação entre conceito e constituição jurídica |
-| P6 | comunicação pública, legal, privacidade e claims | revisão jurídica e de exposição |
-| P7 | países, polos, canais e operação internacional | evidência territorial e readiness |
-| P8 | estrutura do ecossistema, Guivos Mall e hipóteses de produto | autoridade de produto e revisão de quarentena |
-| P9 | consolidação global e superfícies públicas | fechamento dos pacotes anteriores |
+| P0 | intake, proveniência, lineage e classificação | auditoria e decisões deste PR |
+| P1 | superfícies globais e gate semântico | revisão independente do PR nº 163 |
+| P2 | Neo4j, grafo, analytics, Power BI e segurança | ADRs e evidências técnicas |
+| P3 | marca, domínios, DNS e certificados | comprovantes e sigilo |
+| P4 | VAL, coleta, KPIs e Outcomes | trilha de evidência operacional |
+| P5 | Fundação e programas sociais | arquitetura e prova jurídica |
+| P6 | comunicação, legal, privacidade e claims | revisão especializada |
+| P7 | operação internacional | matriz territorial |
+| P8 | produtos e hipóteses | autoridade de produto |
+| P9 | comunicação e consolidação global | fechamento dos pacotes anteriores |
 
-## 9. Critérios para absorção de uma fonte
+A consolidação temática de `GC-CON-001` exigirá autorização própria e não deve ser confundida com P8 ou UXA-071.
 
-Uma fonte externa ou conversacional somente poderá alterar o GKR quando:
+## 8. Controles imediatos
 
-1. possuir identificação estável;
-2. ter origem e responsável conhecidos;
-3. ter versão e data verificáveis;
-4. ser classificada quanto à sensibilidade;
-5. ter relação explícita com autoridades existentes;
-6. declarar se confirma, complementa, substitui ou contradiz o cânone;
-7. apresentar evidência proporcional à alegação;
-8. possuir destino permanente no repositório;
-9. passar pelos validadores aplicáveis;
-10. ser integrada por PR autorizado.
+- conteúdo externo não entra diretamente em documento normativo;
+- ID conflitante permanece bloqueado;
+- alegação de integração exige path e commit;
+- recomendação não equivale a implementação;
+- plano não equivale a execução;
+- evidência confidencial não é publicada sem revisão;
+- conversa isolada não altera versão ou marco;
+- autodeclaração externa não cria autoridade;
+- PDF é fonte ou derivado, não autoridade automática;
+- pacote seguinte exige autorização separada.
 
-O uso dos termos “oficial”, “aprovado”, “canônico”, “implantado”, “validado” ou “operacional” dentro da própria fonte não dispensa esses critérios.
+## 9. Pendências para fechamento do P0
 
-## 10. Controles imediatos
+1. inventariar fisicamente e calcular hashes da família `GC-CON-001`;
+2. decidir se fontes históricas serão armazenadas ou apenas referenciadas;
+3. comparar o rascunho externo do Contexto Vivo com a autoridade integrada;
+4. verificar evidências operacionais VAL;
+5. classificar sigilo de planos corporativos e territoriais;
+6. separar o runbook GitHub/Codex;
+7. registrar qualquer nova alegação na matriz de rastreabilidade;
+8. atualizar os artefatos para o estado governado cabível;
+9. rebasear ou sincronizar este PR após eventual integração do P1;
+10. obter autorização separada para qualquer frente posterior.
 
-A partir desta auditoria, ficam propostos os seguintes controles para o P0:
+## 10. Declaração de não promoção
 
-- nenhum conteúdo externo entra diretamente em documento normativo;
-- nenhum ID duplicado é aceito sem resolução de linhagem;
-- nenhuma alegação de integração é aceita sem path e commit;
-- nenhuma recomendação tecnológica é descrita como implementação;
-- nenhum plano jurídico ou territorial é descrito como execução;
-- nenhuma evidência confidencial é copiada para área pública sem revisão;
-- nenhuma conversa isolada altera versão, marco ou status;
-- nenhuma frente temática começa automaticamente após o P0;
-- UXA-071 permanece fora do escopo.
-
-## 11. Pendências de fechamento do P0
-
-Antes de considerar o P0 concluído, ainda será necessário:
-
-1. localizar ou negar formalmente cada alegação de integração histórica;
-2. reconciliar a família `GC-CON-001`;
-3. conferir os paths e versões do Contexto Vivo;
-4. conferir GEM-009 e GEM-010;
-5. conferir os documentos VAL citados em rascunhos e conversas;
-6. identificar duplicatas físicas e semânticas no acervo externo;
-7. classificar confidencialidade e destino de cada fonte;
-8. registrar decisões de absorção, arquivamento, rejeição ou roteamento;
-9. atualizar esta auditoria de `draft` para o estado governado cabível;
-10. obter autorização separada para qualquer pacote temático posterior.
-
-## 12. Declaração de não promoção
-
-A presença de um item nesta auditoria significa apenas que ele foi identificado e classificado preliminarmente.
+A presença de uma fonte nesta auditoria significa apenas identificação, classificação e encaminhamento.
 
 Ela não significa:
 
