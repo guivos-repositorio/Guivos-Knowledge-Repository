@@ -1,18 +1,16 @@
 ---
-id: ROADMAP-12.46.0
-title: Roadmap Arquitetural — Programa Funcional do Ambiente de Simulação das Jornadas
+id: ROADMAP-12.47.0
+title: Roadmap Arquitetural — Jornadas Integradas Reformuladas e Sincronizadas
 status: active
-version: 12.46.0
+version: 12.47.0
 owner: Guivos
-last_updated: 2026-08-04
+last_updated: 2026-08-05
 supersedes_partial:
-  - ROADMAP-12.45.0
+  - ROADMAP-12.46.0
 related:
   - GKR-STATE-001
   - GPA-007
-  - GEM-004-A1
-  - GEM-007-A1
-  - GEM-010-A2
+  - UXA-000
   - UXA-014
   - UXA-015
   - UXA-016
@@ -41,6 +39,9 @@ related:
   - UXA-069
   - UXA-070
   - UXA-071
+  - UXA-072
+  - UXA-073
+  - GKR-JOURNEYS-001
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -48,7 +49,7 @@ related:
   - M7.72
 ---
 
-# Roadmap Arquitetural — Programa Funcional do Ambiente de Simulação das Jornadas
+# Roadmap Arquitetural — Jornadas Integradas Reformuladas e Sincronizadas
 
 ## 1. Autoridade
 
@@ -59,16 +60,16 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | programa funcional do ambiente de simulação criado | M7.72 |
-| Início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
-| Compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
-| Expressão guiada | 8 SVGs materializados, reformulados e validados | UXA-068; UXA-069 |
+| Marco | Jornadas Integradas reformuladas, navegáveis e sincronizadas | UXA-073; M7.72 |
+| Início protegido geral | 4 SVGs materializados e validados no escopo de origem | UXA-034; UXA-035 |
+| Compreensão inicial | 5 SVGs materializados e validados no escopo de origem | UXA-036; UXA-037 |
+| Expressão guiada | 8 SVGs materializados, reformulados e validados no escopo de origem | UXA-068; UXA-069 |
 | Fundação de Organizações e Coletivos | estruturada | UXA-014 a UXA-019 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
 | Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
-| Coletivos materializados | 22 SVGs materializados e validados | UXA-060 a UXA-067 |
+| Coletivos materializados | 22 SVGs materializados e validados na perspectiva coberta | UXA-060 a UXA-067 |
 | Opportunity Boost | 46 materializados; 36 validados; 10 pendentes | UXA-038 a UXA-055 |
-| Ambiente de simulação | programa criado; mapa e implementação não iniciados | UXA-070 |
+| Jornadas Integradas | reformuladas e navegáveis; nova validação pendente | UXA-070 a UXA-073 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -90,7 +91,10 @@ escolha
 → inventário e autorização
 → processamento
 → compreensão inicial
+→ continuidade recorrente
 ```
+
+A continuidade integrada entre todos os pacotes ainda depende da nova validação das Jornadas Integradas.
 
 ## 4. Cobertura relacionada
 
@@ -101,7 +105,7 @@ escolha
 | Expressão Guiada do Momento Atual | 8 | 8 | 0 |
 | **Subtotal relacionado** | **17** | **17** | **0** |
 
-As contagens de Coletivos e Opportunity Boost permanecem separadas.
+As contagens demonstram cobertura de superfícies nos respectivos pacotes. Não demonstram automaticamente cobertura de transições ou validação ponta a ponta.
 
 ## 5. Estado de Coletivos preservado
 
@@ -110,83 +114,86 @@ UXA-056 — descoberta, Perfil Público e participação contratados
 → UXA-057 — avaliação e reputação contratadas
 → UXA-058 — interação, recomendação e conexão contratadas
 → UXA-059 — programa de wireframes priorizado
-→ UXA-060 a UXA-067 — cinco primeiras referências P0A materializadas e validadas
+→ UXA-060 a UXA-067 — cinco primeiras referências P0A materializadas e validadas na perspectiva da Pessoa
 ```
 
-`Meus Coletivos`, Central de Atualizações, Início do Participante e Visão Geral do Responsável permanecem não iniciados.
+Permanecem ausentes:
 
-## 6. Resultado da UXA-070
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante reformulado;
+- Visão Geral do Responsável;
+- operação completa das solicitações pelo Coletivo;
+- continuidade bilateral após `Solicitação Pendente`.
 
-A UXA-070 define o programa de uma camada documental de leitura das jornadas.
-
-Foram estabelecidos:
-
-- Pessoa, Coletivo e Organização como participantes estruturais;
-- papéis contextuais e autoridades sem criação de novos participantes;
-- inventário inicial de jornadas pessoais, coletivas, institucionais e bilaterais;
-- Opportunity Boost como sobreposição comercial, não participante;
-- modelo de nó de jornada;
-- modelo de transição governada;
-- taxonomia de maturidade;
-- taxonomia de tipos de transição;
-- perspectivas por participante, papel, handoff, autoridade, finalidade e dados;
-- filtros e rastreabilidade;
-- reutilização canônica por ID, caminho e versão;
-- registro de lacunas sem preenchimento por suposição;
-- cenários documentais mínimos.
-
-A camada de leitura não substitui contratos, programas, wireframes, validações ou registros de origem.
-
-## 7. Sequência do ambiente documental
+## 6. Sequência das Jornadas Integradas
 
 ```text
-UXA-070 — programa funcional criado
-→ UXA-071 — materialização documental do mapa integrado, se autorizada
-→ validação funcional do mapa, em pacote separado
+UXA-070 — programa funcional concluído
+→ UXA-071 — primeira materialização documental integrada
+→ UXA-072 — validação funcional não aprovada até reformulação
+→ UXA-073 — reformulação, navegação e sincronização executadas
+→ UXA-074 — nova validação funcional, se autorizada
 → protótipo, somente mediante autorização posterior
 → Engenharia de Produto, somente após gates próprios
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
+## 7. Resultado da UXA-073
+
+A UXA-073 executou:
+
+- navegação de primeiro nível para `Jornadas Integradas`;
+- atualização do Registro do Estado Atual para 2.00.0;
+- atualização deste roadmap para 12.47.0;
+- sincronização do índice da Arquitetura da Experiência;
+- separação entre maturidade, autoridade, materialização, validação e continuidade;
+- explicitação das assimetrias de handoff;
+- cenários com limites de evidência;
+- catálogo distinguindo superfícies de transições;
+- registro de lacunas observacional e não promocional.
+
+Os mapas permanecem `draft`. A reformulação não equivale a aprovação funcional.
+
 ## 8. Próxima iniciativa recomendada
 
 A próxima iniciativa recomendada é:
 
-> **UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições**
+> **UXA-074 — Nova Validação Funcional das Jornadas Integradas Reformuladas**
 
 O pacote futuro deverá:
 
-- criar uma referência estática e inspecionável;
-- reutilizar telas e documentos por referência;
-- mostrar nós, transições, autoridades, maturidade e lacunas;
-- oferecer vista visual e textual equivalente;
-- demonstrar cenários mínimos da UXA-070;
-- permanecer separado de protótipo e implementação.
+- confirmar a presença e a ordem da seção na navegação publicada;
+- verificar a sincronização de estado entre os documentos centrais;
+- validar o modelo de evidência separado;
+- verificar handoffs sem falsa simetria;
+- revisar os seis cenários reformulados;
+- validar o catálogo de superfícies e transições;
+- confirmar que os mapas continuam `draft` até aprovação;
+- emitir parecer aprovado, aprovado com ressalvas ou nova reformulação obrigatória.
 
 ## 9. Frentes preservadas
 
 Não são reabertas automaticamente:
 
-- UXA-071;
-- mapa integrado materializado;
-- implementação do ambiente de simulação;
-- modelo de IA ou algoritmo adaptativo;
-- gravação, transcrição ou armazenamento reais;
-- envio guiado de arquivos;
-- protocolo clínico ou emergencial;
+- UXA-074;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante;
-- gestão do responsável;
+- Visão Geral do Responsável;
+- relação bilateral Organização–Coletivo;
 - estados residuais do Opportunity Boost;
 - Resultados Empresariais;
 - preços ou baseline comercial;
 - política jurídica;
 - protótipo;
 - testes com pessoas;
+- aplicação ou motor de simulação;
 - Engenharia de Produto.
 
 ## 10. Regra de autorização
 
-A integração da UXA-070 não inicia a UXA-071, `Meus Coletivos`, o simulador ou qualquer implementação. Cada pacote exige autorização própria para criação e autorização separada para integração.
+A integração da UXA-073 registra a remediação documental. Ela não inicia a UXA-074, não promove os mapas para `active` e não autoriza protótipo ou implementação.
+
+Cada pacote exige autorização própria para criação e autorização separada para integração.
