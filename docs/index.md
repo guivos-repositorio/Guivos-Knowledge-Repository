@@ -9,6 +9,7 @@ Consulte o [Registro do Estado Atual](project/current-state-register.md) para a 
 | Dimensão | Situação atual |
 |---|---|
 | Era | GE-2 — Knowledge |
+| Registro do Estado Atual | GKR-STATE-001 1.99.0 |
 | Marco | M7.72 — programa funcional do ambiente documental de simulação criado |
 | Jornada pessoal relacionada | 17 estados materializados e 17 validados |
 | Coletivos | 22 estados materializados e 22 validados |
