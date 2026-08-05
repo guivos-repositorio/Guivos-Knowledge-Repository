@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.70.0
+version: 0.71.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -51,6 +51,7 @@ related:
   - UXA-075
   - UXA-076
   - UXA-077
+  - UXA-078
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -82,37 +83,31 @@ contrato funcional
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 3. Jornada pessoal — início protegido
-
-| Responsabilidade | Autoridade |
-|---|---|
-| contrato do início protegido | UXA-020; UXA-023 |
-| escolha, rascunho, revisão e autorização | UXA-034; UXA-035 |
-| processamento e compreensão inicial | UXA-036; UXA-037 |
-| expressão guiada por texto e voz | UXA-068 |
-| validação da expressão guiada | UXA-069 |
-
-### 3.1 Cobertura relacionada
+## 3. Cobertura relacionada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Início protegido geral | 4 | 4 | 0 |
 | Compreensão inicial | 5 | 5 | 0 |
 | Expressão Guiada do Momento Atual | 8 | 8 | 0 |
-| **Subtotal relacionado** | **17** | **17** | **0** |
+| Coletivos | 22 | 22 | demais famílias não materializadas |
+| Opportunity Boost | 46 | 36 | 10 estados da UXA-055 |
 
-A contagem permanece separada das famílias de Coletivos e Opportunity Boost e não comprova validação ponta a ponta da jornada integrada.
+As contagens não comprovam validação ponta a ponta.
 
-## 4. Decisões da expressão guiada preservadas
+## 4. Decisões estruturais preservadas
 
-- conteúdo de origem separado da ajuda temporária;
-- ajuda somente após solicitação consciente;
-- texto e voz equivalentes;
-- rascunho sem análise ou salvamento implícitos;
-- gravação e transcrição com finalidade limitada;
-- interrupção, descarte e retorno com efeitos conhecidos;
-- síntese identificada como derivada;
-- inventário e autorização antes do processamento material.
+- conteúdo de origem permanece separado da ajuda temporária;
+- ajuda ocorre somente após solicitação consciente;
+- texto e voz são modalidades equivalentes;
+- rascunho não solicita análise ou salvamento implícitos;
+- gravação e transcrição possuem finalidade limitada;
+- síntese não substitui fonte;
+- desconhecido não é fato;
+- solicitação não é aprovação;
+- convite não cria vínculo;
+- publicidade não compra relevância, reputação ou autoridade;
+- correção documental não equivale a aprovação funcional.
 
 ## 5. Autoridades dos Coletivos
 
@@ -127,19 +122,9 @@ A contagem permanece separada das famílias de Coletivos e Opportunity Boost e n
 | revisão e solicitação móvel | UXA-064; UXA-065 |
 | Solicitação Pendente móvel | UXA-066; UXA-067 |
 
-## 6. Estado visual dos Coletivos
+A busca de Coletivos é representada por `GKR-SURF-PER-101` e `GKR-SURF-PER-102`. Esses IDs não representam oportunidades.
 
-| Família | Materializados | Validados | Pendentes |
-|---|---:|---:|---:|
-| descoberta e busca | 5 | 5 | 0 |
-| Perfil Público | 4 | 4 | 0 |
-| revisão e solicitação | 5 | 5 | 0 |
-| Solicitação Pendente | 8 | 8 | 0 |
-| **Total de Coletivos** | **22** | **22** | **0** |
-
-As 22 referências cobrem principalmente a perspectiva da Pessoa. `Meus Coletivos`, Central de Atualizações, Início do Participante reformulado, Visão Geral do Responsável e a operação bilateral permanecem ausentes.
-
-## 7. Programa e evolução das Jornadas Integradas
+## 6. Evolução das Jornadas Integradas
 
 ```text
 UXA-070 — programa funcional concluído
@@ -150,6 +135,7 @@ UXA-070 — programa funcional concluído
 → UXA-075 — promoção seletiva e sincronização pós-validação executadas
 → UXA-076 — registros granulares materializados em draft
 → UXA-077 — validação granular não aprovada até correção obrigatória
+→ UXA-078 — reformulação controlada executada
 ```
 
 Participantes estruturais:
@@ -160,132 +146,96 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante institucional, especialista, anunciante e patrocinador são perspectivas, papéis ou operadores contextuais, não novos participantes estruturais.
 
-## 8. Modelo de evidência vigente
+## 7. Resultado da UXA-078
 
-Cada nó, superfície ou família deve separar:
+[UXA-078 — Reformulação Controlada dos Registros Granulares](uxa-078-controlled-granular-registry-reformulation.md) corrige documentalmente os cinco achados obrigatórios da UXA-077.
 
-| Campo | Função |
-|---|---|
-| maturidade primária | um único estado controlado da UXA-070 |
-| autoridade contratual | contrato ou programa que governa a responsabilidade |
-| referência materializada | documento, wireframe ou SVG existente |
-| evidência de validação | pacote que validou a referência materializada |
-| continuidade integrada | validada, parcial, ausente ou não examinada |
+### 7.1 Estado quantitativo
 
-```text
-cobertura das superfícies
-≠ cobertura das transições
-≠ validação da jornada integrada
-```
+| Registro | Quantidade | Estado |
+|---|---:|---|
+| superfícies, estados, responsabilidades ou fronteiras | 40 | `draft` 0.2.0 |
+| transições | 37 | `draft` 0.2.0 |
+| endpoints em texto livre | 0 | corrigidos documentalmente |
 
-## 9. Registros granulares
-
-A UXA-076 materializou:
-
-- `GKR-JOURNEY-SURFACE-REGISTRY-001` — 36 superfícies, estados, responsabilidades ou ausências conhecidas;
-- `GKR-JOURNEY-TRANSITION-REGISTRY-001` — 34 transições documentais.
-
-Os IDs seguem:
+### 7.2 Separações vigentes
 
 ```text
-GKR-SURF-<PARTICIPANTE>-NNN
-GKR-TRN-NNN
+Coletivos:
+GKR-SURF-PER-101 → GKR-SURF-PER-102 → GKR-SURF-PER-103
+
+Oportunidades:
+GKR-SURF-ORG-003
+→ GKR-SURF-PER-201
+↔ GKR-SURF-PER-202
+→ GKR-SURF-PER-203
+→ GKR-SURF-BND-001
 ```
 
-A atribuição de ID não equivale a implementação, validação ou completude.
+- `GKR-SURF-ORG-003` representa estado institucional;
+- `GKR-SURF-PER-203` representa o Detalhe de Oportunidade;
+- `GKR-SURF-BND-001` é fronteira documental, não participante ou tela;
+- `GKR-SURF-COM-005` aponta para UXA-055.
 
-## 10. Resultado da UXA-077
+### 7.3 Campos obrigatórios
 
-[UXA-077 — Validação Funcional do Registro Granular](uxa-077-granular-registry-functional-validation.md) emitiu o parecer:
+Cada entrada do registro de superfícies passa a explicitar:
 
-> **não aprovado até correção obrigatória**
+- artefato canônico e caminho;
+- versão;
+- decisão;
+- dados;
+- gate;
+- reversibilidade;
+- supersessão;
+- observação de escopo.
 
-### 10.1 Aspectos confirmados
+Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
-- 36 entradas de superfície ou responsabilidade;
-- 34 transições;
-- IDs sem duplicidade dentro dos registros;
-- maturidade aderente ao vocabulário da UXA-070;
-- incertezas e lacunas preservadas;
-- nenhum avanço técnico ou promocional implícito.
-
-### 10.2 Achados obrigatórios
-
-1. endpoints sem ID estável em `GKR-TRN-205` e `GKR-TRN-304`;
-2. mistura entre busca de Coletivos e descoberta de oportunidades;
-3. mistura entre estado institucional de publicação e Detalhe de Oportunidade;
-4. referência incorreta dos dez estados residuais, cuja fonte é UXA-055;
-5. campos obrigatórios ausentes no registro de superfícies.
-
-Os registros permanecem `draft` até reformulação e nova validação.
-
-## 11. Reutilização canônica
+## 8. Reutilização canônica
 
 - artefatos são referenciados por ID, caminho e versão;
 - arquivos canônicos permanecem em modo somente leitura;
-- uma mesma referência pode aparecer em várias perspectivas sem cópia;
-- nenhuma ligação é criada por proximidade visual ou numeração;
+- uma referência pode aparecer em várias perspectivas sem cópia;
+- nenhuma ligação é criada por proximidade visual;
 - inclusão no ambiente não altera maturidade, prioridade ou canonicidade;
-- Opportunity Boost permanece camada comercial identificada, não participante ou autoridade.
+- Opportunity Boost permanece camada comercial identificada;
+- fronteira documental não equivale a integração técnica.
 
-## 12. Continuidade governada
-
-### 12.1 Jornada pessoal
-
-A ligação entre compreensão inicial e Tela Hoje permanece não examinada como conjunto e registrada como `GKR-TRN-007`.
-
-### 12.2 Coletivos P0A
-
-As cinco primeiras referências possuem materialização e validação na perspectiva coberta. As seguintes permanecem lacunas. `GKR-SURF-PER-102` representa busca de Coletivos e não poderá ser usada como busca de oportunidades.
-
-### 12.3 Organização e Coletivo
-
-A relação está contratada pela UXA-019 e registrada granularmente, mas não possui materialização bilateral específica validada.
-
-### 12.4 Oportunidades
-
-A reformulação futura deverá separar:
-
-- estado institucional de publicação;
-- mapa, lista ou cartão de oportunidade;
-- Detalhe de Oportunidade percebido pela Pessoa;
-- fronteira externa identificada.
-
-## 13. Estado da seção documental
+## 9. Estado da seção documental
 
 | Artefato | Estado |
 |---|---|
-| navegação de primeiro nível | active |
-| visão geral | active |
-| Pessoa, Coletivo e Organização | draft por incompletude explícita |
-| handoffs | active como matriz resumida governada |
-| cenários | active como hipóteses documentais governadas |
-| catálogo | active como inventário agregado |
-| lacunas | active, observacional e não promocional |
-| registro granular de superfícies | draft; validação não aprovada |
-| registro granular de transições | draft; validação não aprovada |
-| reformulação granular | não iniciada |
+| navegação de primeiro nível | `active` |
+| visão geral | `active` |
+| Pessoa, Coletivo e Organização | `draft` por incompletude explícita |
+| handoffs | `active` como matriz resumida governada |
+| cenários | `active` como hipóteses documentais governadas |
+| catálogo | `active` como inventário agregado |
+| lacunas | `active`, observacional e não promocional |
+| registro granular de superfícies | `draft` 0.2.0; reformulado |
+| registro granular de transições | `draft` 0.2.0; reformulado |
+| revalidação granular | não iniciada |
 | protótipo ou aplicação | não iniciados |
 
-## 14. Decisões estruturais preservadas
+## 10. Limites
 
-- compartilhar pouco não é falha;
-- digitar não solicita análise automática;
-- gravar autoriza somente a operação apresentada;
-- transcrição automática não é declaração confirmada;
-- ajuda temporária não cria compreensão;
-- síntese não substitui fonte;
-- desconhecido não é fato;
-- personalização depende de gates próprios;
-- solicitação não é aprovação;
-- convite não cria vínculo;
-- publicidade não compra relevância, reputação ou autoridade;
-- superfície validada não equivale a jornada integrada validada;
-- atribuição de ID não equivale a implementação;
-- status `active` não equivale a completude.
+Não foram iniciados:
 
-## 15. Próxima evolução documental possível
+- UXA-079;
+- promoção funcional dos registros granulares;
+- protótipo navegável;
+- aplicação ou motor de simulação;
+- modelo de IA ou algoritmo adaptativo;
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante reformulado;
+- Visão Geral do Responsável;
+- relação bilateral Organização–Coletivo materializada;
+- validação dos estados residuais da UXA-055;
+- teste com pessoas;
+- Engenharia de Produto.
 
-**UXA-078 — Reformulação Controlada dos Registros Granulares de Transições e Superfícies**, mediante autorização separada.
+## 11. Próxima evolução documental possível
 
-A UXA-078, a nova validação posterior, protótipo, testes e Engenharia de Produto não estão iniciados.
+**UXA-079 — Revalidação Funcional dos Registros Granulares Reformulados**, mediante autorização separada.
