@@ -2,7 +2,7 @@
 id: GKR-SOURCE-INTAKE-001
 title: Registro de Intake das Fontes Acumuladas
 status: draft
-version: 0.5.1
+version: 0.5.2
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -78,7 +78,7 @@ Ele impede que arquivos externos, conversas, PDFs ou alegações operacionais se
 | SRC-033 | UXA-071 e seção de telas | Git e conversa | não iniciada | interno | fora do P0 |
 | SRC-034 | Product Engineering W0-01 | Git | pausada | interno | fora do P0 |
 | SRC-035 | Resultados, clientes e faturamento | conversa | Outcome não comprovado | confidencial | P4/P6/P9 |
-| SRC-036 | Claims Trace | Git | draft 0.5.0 | interno | P0 |
+| SRC-036 | Claims Trace | Git | draft 0.5.1 | interno | P0 |
 | SRC-037 | Resolução GC-CON-001 | Git | draft 0.1.0 | interno | P0; não é consolidação temática |
 | SRC-038 | Disposição de governança externa | Git | draft 0.1.0 | interno | P0 |
 | SRC-039 | GC-EDT-001 2.0 | externo | resolução histórica alinhada à prática | interno | antecedente, não política integrada |
