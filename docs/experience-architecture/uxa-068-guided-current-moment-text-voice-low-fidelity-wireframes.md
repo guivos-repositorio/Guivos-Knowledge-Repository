@@ -1,8 +1,8 @@
 ---
 id: UXA-068
 title: Wireframes Móveis da Expressão Guiada do Momento Atual por Texto e Voz
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 parent: UXA-034
@@ -24,7 +24,7 @@ related:
   - PAS-001-CV-VIEW-001
   - PAS-001-OBJ-VIEW-001
   - PAS-001-PP-VIEW-001
-  - M7.70
+  - M7.71
 normative: false
 ---
 
@@ -32,92 +32,73 @@ normative: false
 
 ## 1. Finalidade
 
-Este documento materializa a família móvel que ajuda a Pessoa a expressar seu **Momento Atual** de forma clara, útil, proporcional e revisável antes da compreensão inicial da Guivos.
+Esta família ajuda a Pessoa a expressar seu **Momento Atual** de forma proporcional, corrigível e compreensível antes da preparação da compreensão inicial da Guivos.
 
-A UXA-034 já permitia escolher `Escrever`, `Falar`, `Enviar arquivo` ou `Perguntas opcionais`, mas sua tela de escolha não demonstrava como o relato seria orientado depois da seleção.
+A UXA-068 complementa a escolha genérica de modalidade da UXA-034 sem transformar a jornada em questionário obrigatório, diagnóstico ou coleta excessiva.
 
-A UXA-068 preenche essa lacuna sem transformar o início da jornada em entrevista obrigatória, diagnóstico, questionário fixo ou coleta excessiva.
+A UXA-069 validou e reformulou os oito estados da família.
 
-A família deverá permitir responder:
+> **Resultado vigente: oito estados materializados, oito reformulados e oito funcionalmente validados.**
 
-> **A Pessoa compreende o que a Guivos precisa saber para ajudá-la neste momento, consegue contar por texto ou voz com orientação suficiente, separar assuntos, preencher apenas lacunas úteis e revisar uma síntese estruturada antes de qualquer processamento?**
-
-## 2. Decisão estrutural
-
-A Guivos não deverá apenas perguntar:
-
-> `O que você quer contar?`
-
-Ela deverá explicar:
-
-> `O que precisamos compreender para preparar uma leitura inicial útil e corrigível deste momento.`
-
-Isso não significa limitar o relato. Significa evitar que a experiência dependa de volume, eloquência, familiaridade com tecnologia ou capacidade da Pessoa de adivinhar quais informações serão relevantes.
-
-O relato livre continua legítimo. A orientação existe para:
-
-- tornar a finalidade compreensível;
-- reduzir lacunas materiais;
-- evitar exposição desnecessária;
-- distinguir assuntos diferentes;
-- reconhecer incerteza;
-- preparar revisão consciente;
-- impedir sugestões pessoais sem base suficiente.
-
-## 3. Posição na experiência
+## 2. Posição na experiência
 
 ```text
 Home pública
 → início protegido
 → escolha de modalidade na UXA-034
 → orientação comum da UXA-068
-→ texto guiado ou voz guiada
-→ pergunta adaptativa, somente quando útil
-→ separação de focos, quando necessária
-→ síntese estruturada e revisável
+→ conteúdo de origem por texto ou voz
+→ revisão da transcrição, quando aplicável
+→ ajuda temporária, somente quando solicitada
+→ pergunta ou separação, somente quando materialmente útil
+→ síntese temporária e revisável
+→ decisão sobre usar somente origens ou incluir síntese derivada
 → inventário e autorização específica da UXA-034
 → processamento visível da UXA-036
 → compreensão inicial revisável
 ```
 
-A UXA-068 não substitui:
+A Pessoa poderá seguir do conteúdo de origem diretamente ao inventário sem solicitar pergunta, separação ou síntese.
 
-- a escolha de modalidade da UXA-034;
-- o inventário de conteúdos recebidos;
-- a autorização específica de processamento;
-- o processamento visível da UXA-036;
-- a compreensão inicial e suas decisões.
+## 3. Camadas funcionais
+
+A experiência distingue quatro camadas.
+
+| Camada | Exemplo | Regra |
+|---|---|---|
+| conteúdo de origem | texto digitado ou versão revisada da transcrição | permanece distinguível e corrigível |
+| ajuda temporária solicitada | organização, pergunta, separação ou síntese | não prepara compreensão inicial e não personaliza |
+| preparação da compreensão inicial | uso de itens revisados para formar hipótese temporária | exige inventário e autorização específica |
+| persistência e personalização | manutenção da compreensão e adaptação futura | bloqueadas até o gate da UXA-036 e UXA-037 |
+
+Digitar não solicita análise automática. Gravar autoriza somente a gravação e a transcrição apresentadas. Nenhuma dessas ações autoriza automaticamente as camadas posteriores.
 
 ## 4. Dimensões de referência
 
-A orientação busca compreender, de forma progressiva, cinco dimensões.
+A orientação poderá apoiar cinco dimensões, sem obrigatoriedade por padrão.
 
-| Dimensão | Pergunta de referência | Regra |
+| Dimensão | Pergunta de referência | Proteção |
 |---|---|---|
 | situação | o que está acontecendo agora? | não exigir biografia completa |
-| impacto | o que isso dificulta, causa ou modifica? | não pressupor sofrimento ou problema |
-| prioridade | o que mais importa compreender ou tratar agora? | aceitar múltiplas prioridades e incerteza |
-| direção | o que a Pessoa gostaria que mudasse, fosse decidido ou construído? | aceitar `não sei ainda` |
-| contexto | quais prazos, limites, recursos ou tentativas anteriores são relevantes? | solicitar somente quando reduzir incerteza material |
+| impacto | o que isso dificulta, causa ou modifica? | não pressupor sofrimento |
+| prioridade | o que importa compreender ou tratar agora? | aceitar múltiplas prioridades |
+| direção | o que gostaria que mudasse, fosse decidido ou construído? | aceitar `não sei ainda` |
+| contexto | quais prazos, limites, recursos ou tentativas são relevantes? | solicitar somente quando reduzir incerteza material |
 
-Nenhuma dimensão é obrigatória por padrão.
+Uma dimensão poderá permanecer em aberto sem bloquear exploração geral.
 
-Uma síntese poderá permanecer incompleta quando isso estiver visível e não gerar recomendação artificial.
+## 5. Inventário visual validado
 
-## 5. Inventário visual
-
-Foram materializados oito SVGs móveis.
-
-| Estado | Arquivo | Função principal |
+| Estado | Arquivo | Resultado validado |
 |---|---|---|
-| orientação comum | `uxa-068-guided-current-moment-orientation-mobile.svg` | explicar o que a Guivos precisa compreender e oferecer texto ou voz |
-| rascunho por texto | `uxa-068-guided-current-moment-text-draft-mobile.svg` | permitir texto livre com apoio progressivo |
-| preparação para voz | `uxa-068-guided-current-moment-voice-preparation-mobile.svg` | explicar gravação, transcrição, áudio e proteção antes do microfone |
-| gravação em andamento | `uxa-068-guided-current-moment-voice-recording-mobile.svg` | manter estado evidente, pausa, conclusão e descarte |
-| revisão da transcrição | `uxa-068-guided-current-moment-voice-transcription-review-mobile.svg` | separar áudio, transcrição e declaração revisada |
-| esclarecimento adaptativo | `uxa-068-guided-current-moment-adaptive-clarification-mobile.svg` | preencher uma lacuna material com razão explícita e resposta opcional |
-| separação de focos | `uxa-068-guided-current-moment-focus-separation-mobile.svg` | organizar assuntos diferentes sem descarte silencioso |
-| síntese estruturada | `uxa-068-guided-current-moment-structured-summary-mobile.svg` | revisar situação, impacto, prioridade, direção, contexto e desconhecidos |
+| orientação comum | `uxa-068-guided-current-moment-orientation-mobile.svg` | texto e voz equivalentes; relato separado da ajuda temporária |
+| rascunho por texto | `uxa-068-guided-current-moment-text-draft-mobile.svg` | conteúdo de origem sem análise automática ou salvamento inventado |
+| preparação para voz | `uxa-068-guided-current-moment-voice-preparation-mobile.svg` | escolha única sobre áudio e autorização limitada |
+| gravação em andamento | `uxa-068-guided-current-moment-voice-recording-mobile.svg` | pausa, interrupção, transcrição e descarte com efeitos conhecidos |
+| revisão da transcrição | `uxa-068-guided-current-moment-voice-transcription-review-mobile.svg` | áudio, transcrição automática e versão revisada separados |
+| esclarecimento adaptativo | `uxa-068-guided-current-moment-adaptive-clarification-mobile.svg` | lacuna e razão visíveis; opções não são recomendações |
+| separação de focos | `uxa-068-guided-current-moment-focus-separation-mobile.svg` | organização sugerida e aplicada somente após escolha explícita |
+| síntese estruturada | `uxa-068-guided-current-moment-structured-summary-mobile.svg` | natureza, origem, estado e uso da síntese derivados explícitos |
 
 ## 6. Artefatos visuais
 
@@ -153,280 +134,193 @@ Foram materializados oito SVGs móveis.
 
 ![Síntese estruturada do Momento Atual](../assets/wireframes/uxa-068-guided-current-moment-structured-summary-mobile.svg)
 
-Dimensão de referência dos oito arquivos:
+Todos os arquivos permanecem em baixa fidelidade, com referência móvel de 390 × 844 pixels.
 
-- canal: aplicativo móvel;
-- largura: 390 pixels;
-- altura: 844 pixels;
-- orientação: retrato;
-- fidelidade: baixa;
-- processamento: ainda não autorizado.
+## 7. Orientação e escolha de modalidade
 
-## 7. Orientação anterior ao relato
+A orientação:
 
-Antes de escrever ou falar, a Pessoa conhece:
+- explica o que poderá ajudar a contar;
+- declara que a Pessoa poderá começar com pouco;
+- mantém texto e voz com finalidade equivalente;
+- remove ação genérica duplicada;
+- explica que ajuda temporária depende de solicitação consciente;
+- bloqueia preparação da compreensão inicial antes do inventário e da autorização;
+- mantém saída sem compartilhar e sem iniciar compreensão.
 
-- a finalidade atual;
-- as cinco dimensões que podem ajudar;
-- que não precisa contar toda a vida;
-- que poderá começar com uma frase;
-- que perguntas poderão ser puladas;
-- que texto e voz são equivalentes;
-- que poderá trocar de modalidade;
-- que nada será processado antes de revisão e autorização;
-- que poderá continuar sem personalização.
+## 8. Texto e rascunho
 
-A orientação não deverá prometer que um relato completo produzirá a melhor solução.
+O estado de texto:
 
-## 8. Relato guiado por texto
+- mantém campo livre;
+- não apresenta organização automática durante a digitação;
+- declara `Rascunho ainda não persistido` enquanto destino e retenção não forem definidos;
+- apresenta pausa como acesso a opções de rascunho, não como salvamento implícito;
+- permite solicitar ajuda temporária ou seguir usando somente o texto de origem;
+- mantém remoção destrutiva sujeita a confirmação futura;
+- permite troca para voz sem analisar silenciosamente o rascunho.
 
-O estado de texto preserva simultaneamente:
+## 9. Voz, áudio e transcrição
 
-- campo livre;
-- apoio com perguntas de referência;
-- edição e remoção de trechos;
-- salvamento e pausa explícitos;
-- troca para voz;
-- organização provisória do que já aparece;
-- indicação do que ainda permanece em aberto;
-- continuidade sem exigir o preenchimento de todas as dimensões.
+Antes da gravação, a Pessoa escolhe uma alternativa mutuamente exclusiva:
 
-A organização exibida durante o rascunho é provisória. Ela não poderá ser tratada como interpretação confirmada, fato ou compreensão inicial.
+- manter o áudio somente até decidir após revisar;
+- apagar o áudio quando a transcrição estiver disponível.
 
-Digitar não autoriza processamento, persistência de compreensão ou personalização.
+Nenhuma opção vem selecionada.
 
-## 9. Relato guiado por voz
+A ação explícita autoriza somente:
 
-### 9.1 Preparação
+- ativar o microfone;
+- registrar a parte falada;
+- gerar transcrição para revisão.
 
-Antes de ativar o microfone, a tela informa:
+Durante a gravação:
 
-- o que pode ajudar a contar;
-- que não é necessário responder a tudo;
-- quando a gravação começa e termina;
-- que haverá transcrição;
-- que a transcrição poderá conter erros;
-- que áudio e transcrição são distintos;
-- que será possível corrigir, remover ou regravar;
-- que informações de terceiros devem ser evitadas quando desnecessárias;
-- que gravar não autoriza análise.
+- o estado do microfone permanece textual;
+- pausa não conclui nem transcreve;
+- conclusão encerra e gera transcrição;
+- interrupção abre decisão sobre a parte atual;
+- descarte exige confirmação futura;
+- mudança para texto não causa perda silenciosa.
 
-A decisão sobre manter temporariamente o áudio ou descartá-lo após a transcrição começa desmarcada.
+Na revisão:
 
-### 9.2 Gravação
+- áudio original, transcrição automática e versão revisada permanecem separados;
+- correções não são perdidas ao voltar sem aviso;
+- remover áudio não apaga automaticamente a transcrição;
+- usar a versão revisada apenas a adiciona ao rascunho;
+- falhas automáticas não se tornam fatos sobre a Pessoa.
 
-Durante a gravação, o estado deverá ser anunciado visual e semanticamente.
+## 10. Ajuda temporária
 
-A Pessoa poderá:
+A ajuda temporária poderá:
 
-- pausar;
-- concluir uma parte;
-- descartar;
-- trocar para texto sem usar o áudio;
-- acessar ajuda;
-- voltar com interrupção conhecida.
+- localizar uma dimensão ainda não informada;
+- sugerir uma pergunta opcional;
+- indicar que trechos podem representar assuntos diferentes;
+- organizar uma síntese revisável.
 
-A orientação permanece disponível, mas não deverá interromper, avaliar ou conduzir o relato em tempo real de forma invasiva.
+Ela somente ocorre após ação consciente da Pessoa e utiliza o rascunho atual para a finalidade apresentada.
 
-### 9.3 Revisão da transcrição
+Ela não poderá:
 
-Depois da gravação, a experiência distingue:
+- iniciar compreensão inicial;
+- produzir recomendação;
+- persistir compreensão;
+- personalizar superfícies;
+- separar assuntos automaticamente;
+- excluir conteúdo de origem;
+- transformar desconhecido em fato.
 
-- áudio original;
-- transcrição automática;
-- correções da Pessoa;
-- trechos incertos;
-- versão revisada que poderá entrar no rascunho.
+## 11. Pergunta adaptativa
 
-A Pessoa poderá:
+A pergunta demonstra:
 
-- ouvir o áudio;
-- remover o áudio;
-- corrigir a transcrição;
-- remover um trecho;
-- marcar palavra incerta;
-- regravar uma parte;
-- descartar áudio e transcrição;
-- gravar outra parte.
+- lacuna identificada;
+- razão e utilidade;
+- alternativas tratadas como exemplos, não recomendações;
+- ausência de seleção padrão;
+- texto livre;
+- `não sei ainda`;
+- `prefiro não informar`;
+- possibilidade de manter a dimensão em aberto;
+- remoção da ajuda temporária;
+- ausência de autorização para compreensão ou recomendação.
 
-Falhas de transcrição não poderão ser elevadas a declarações da Pessoa.
+## 12. Separação de assuntos
 
-## 10. Perguntas adaptativas
-
-Perguntas adicionais não formam questionário fixo.
-
-Uma pergunta somente deverá aparecer quando:
-
-- houver uma lacuna material identificável;
-- a razão estiver explicada;
-- a resposta puder reduzir incerteza relevante;
-- a Pessoa puder pular;
-- existirem alternativas como `não sei ainda`, `prefiro não informar` ou texto livre;
-- nenhuma resposta vier pré-selecionada;
-- a ausência de resposta não bloquear exploração geral.
-
-A pergunta não deverá sugerir que a Guivos já conhece a melhor direção.
-
-## 11. Relevância e separação de assuntos
-
-A Guivos não deverá classificar silenciosamente um trecho como `irrelevante`.
-
-Quando houver assuntos diferentes ou relação ainda incerta, a interface deverá dizer que:
-
-- mais de um assunto foi identificado;
-- a relação entre eles ainda não está confirmada;
-- nada será removido sem decisão da Pessoa.
+A experiência utiliza linguagem de possibilidade, não conclusão.
 
 A Pessoa poderá:
 
-- manter os assuntos juntos;
-- escolher um foco principal;
-- tratar um segundo assunto como condição;
-- criar um assunto separado;
-- deixar um trecho fora desta compreensão;
-- editar o conteúdo;
-- manter o rascunho como está.
+- manter a relação em aberto;
+- manter trechos juntos;
+- definir foco e condição;
+- separar em assuntos revisáveis;
+- retirar trecho somente da síntese;
+- editar o conteúdo de origem.
 
-Deixar um trecho fora da compreensão não equivale automaticamente a excluí-lo do rascunho ou do armazenamento aplicável.
+A organização somente é aplicada após escolha explícita. Excluir o conteúdo de origem permanece ação separada.
 
-## 12. Síntese estruturada
+## 13. Síntese estruturada
 
-Antes do inventário e da autorização da UXA-034, a Pessoa recebe uma síntese provisória organizada por:
+A síntese é apresentada como **organização derivada**, não como compreensão da Guivos.
 
-1. situação atual;
-2. impacto principal;
-3. prioridade atual;
-4. direção desejada;
-5. contexto e pontos em aberto.
+Cada bloco identifica:
 
-Cada bloco permite correção própria.
+- natureza;
+- origem;
+- estado;
+- ações de edição, manutenção em aberto ou remoção da síntese.
 
-A superfície declara que:
+A Pessoa poderá:
 
-- a síntese é organização provisória;
-- não é diagnóstico;
-- não é compreensão final da Guivos;
-- desconhecidos permanecem identificados;
-- pontos em aberto não são fatos;
-- continuar não inicia processamento.
+1. seguir ao inventário usando somente os conteúdos de origem;
+2. revisar e adicionar a síntese como item derivado;
+3. voltar ao rascunho;
+4. descartar somente a síntese.
 
-A saída principal conduz à revisão dos conteúdos recebidos da UXA-034.
+A síntese não substitui fontes e não será utilizada automaticamente.
 
-## 13. Base insuficiente
+## 14. Base insuficiente
 
-Quando a Pessoa compartilhar pouco, a experiência deverá distinguir:
+Quando houver pouco conteúdo, a experiência poderá:
 
-- relato curto, mas suficiente para uma hipótese limitada;
-- relato que ainda possui lacuna material;
-- relato que não permite relação segura entre situação e direção;
-- ausência total de conteúdo autorizado.
+- manter desconhecidos explícitos;
+- oferecer pergunta opcional;
+- permitir seguir somente com as fontes;
+- permitir continuar sem personalização;
+- permitir pausar ou encerrar.
 
-A Guivos poderá:
+Ela não completará lacunas por suposição nem produzirá Próximo Passo pessoal nesta família.
 
-- fazer uma pergunta opcional;
-- apresentar a síntese com desconhecidos;
-- permitir contar mais;
-- permitir manter em aberto;
-- permitir continuar sem personalização.
-
-A Guivos não poderá:
-
-- completar lacunas por suposição;
-- exigir mais exposição para liberar o ecossistema;
-- chamar atividade de avanço humano;
-- apresentar Próximo Passo pessoal antes da confirmação suficiente.
-
-## 14. Privacidade, autonomia e dignidade
-
-A família preserva:
-
-- compartilhamento mínimo;
-- revisão anterior ao processamento;
-- controles separados para áudio e transcrição;
-- ausência de microfone automático;
-- ausência de autorização pelo ato de digitar ou gravar;
-- remoção de trechos;
-- proteção de informações de terceiros;
-- perguntas opcionais;
-- possibilidade de `não sei`;
-- possibilidade de `prefiro não informar`;
-- continuidade sem personalização;
-- ausência de culpa por pausar ou compartilhar pouco;
-- ausência de pontuação de qualidade do relato.
-
-## 15. Segurança e encaminhamento
-
-O conjunto não define protocolo clínico, emergencial ou jurídico.
-
-Uma futura implementação deverá possuir regras próprias para situações em que o conteúdo indique risco imediato, necessidade de ajuda profissional ou proteção adicional.
-
-A orientação não deverá diagnosticar, prometer confidencialidade absoluta ou substituir atendimento apropriado.
-
-## 16. Acessibilidade funcional
-
-A futura implementação deverá:
-
-- oferecer alternativa textual equivalente à voz;
-- anunciar início, pausa e fim da gravação;
-- não depender de animação de onda sonora;
-- permitir controle por teclado e tecnologia assistiva;
-- manter títulos, estados e consequências em texto;
-- preservar foco ao alternar modalidade;
-- permitir correção de transcrição sem depender de reprodução do áudio;
-- não utilizar tempo de fala como medida de qualidade;
-- permitir gravação em partes;
-- preservar conteúdo em falha de conexão quando tecnicamente possível;
-- informar claramente perdas antes de descarte.
-
-Este incremento não conclui conformidade técnica de acessibilidade.
-
-## 17. Critérios de saída do pacote
-
-A UXA-068 estará materializada quando:
-
-- os oito SVGs existirem;
-- texto e voz tiverem orientação equivalente;
-- o microfone não iniciar automaticamente;
-- áudio e transcrição estiverem separados;
-- perguntas forem adaptativas e opcionais;
-- a razão de cada pergunta estiver visível;
-- assuntos diferentes não forem descartados silenciosamente;
-- a síntese separar as cinco dimensões e desconhecidos;
-- continuar conduzir à revisão da UXA-034, sem processamento;
-- a validação mecânica do Repositório for aprovada.
-
-## 18. Cobertura visual proposta
+## 15. Cobertura visual validada
 
 | Família da jornada pessoal | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Início protegido geral — UXA-034 | 4 | 4 | 0 |
 | Compreensão inicial — UXA-036 | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual — UXA-068 | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Expressão Guiada — UXA-068 e UXA-069 | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
-Essa contagem não substitui o inventário global de wireframes e permanece separada das famílias de Coletivos e Opportunity Boost.
+Essa contagem permanece separada de Coletivos e Opportunity Boost.
 
-## 19. Limites
+## 16. Proteções confirmadas
 
-A UXA-068 não:
+- compartilhar pouco é legítimo;
+- nenhuma pergunta é obrigatória por padrão;
+- nenhuma modalidade é favorecida;
+- o microfone não inicia automaticamente;
+- nenhuma escolha vem marcada;
+- tempo de fala não mede qualidade;
+- transcrição não confirma conteúdo;
+- ajuda temporária não cria compreensão;
+- síntese não substitui fonte;
+- desconhecido não é fato;
+- remover da síntese não exclui o rascunho;
+- conteúdo de terceiros não é solicitado;
+- continuidade sem personalização permanece disponível;
+- digitar, gravar ou revisar não autoriza processamento material.
 
-- valida funcionalmente os oito novos SVGs;
-- cria modelo de IA ou algoritmo adaptativo;
-- define protocolo clínico ou emergencial;
-- implementa gravação ou transcrição;
-- define retenção jurídica final;
-- materializa envio de arquivos;
-- altera a compreensão inicial da UXA-036;
-- cria protótipo navegável;
-- executa teste com pessoas;
+## 17. Limites
+
+A família validada não:
+
+- define modelo de IA ou algoritmo adaptativo;
+- define armazenamento local ou remoto;
+- implementa gravação, transcrição, exclusão ou persistência;
+- define política jurídica final;
+- cria protocolo clínico ou emergencial;
+- materializa envio guiado de arquivos;
+- cria protótipo ou teste;
+- conclui acessibilidade técnica;
 - inicia Engenharia de Produto;
-- cria o ambiente de simulação das jornadas;
+- cria ambiente de simulação;
 - inicia `Meus Coletivos`.
 
-## 20. Próxima transição recomendada
+## 18. Próxima transição
 
-**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz.**
+A expressão guiada está materializada e funcionalmente validada.
 
-A UXA-069 deverá avaliar os oito estados como uma continuidade única antes de protótipo, teste ou implementação.
-
-A validação dependerá de autorização separada.
+A escolha da próxima frente dependerá de autorização separada e não iniciará automaticamente protótipo, simulador, Engenharia ou continuidade de Coletivos.
