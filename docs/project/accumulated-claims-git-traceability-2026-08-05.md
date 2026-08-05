@@ -2,7 +2,7 @@
 id: GKR-CLAIMS-TRACE-001
 title: Rastreabilidade Git das Alegações Acumuladas
 status: draft
-version: 0.5.1
+version: 0.5.2
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -145,6 +145,15 @@ Exemplos corretos:
 - “o rascunho do Contexto Vivo antecedeu regras absorvidas pelo contrato final”;
 - “o programa VAL está documentalmente pronto, mas sem evidência operacional suficiente”.
 
-## 8. Declaração de não promoção
+## 8. Checkpoint congelado
+
+```text
+Claims trace: GKR-CLAIMS-TRACE-001 0.5.2
+Claims traced: 33
+Unqualified promotions allowed: 0
+Current-state changes: 0
+```
+
+## 9. Declaração de não promoção
 
 Esta rastreabilidade não altera marco, versões ou autoridades. Ela reduz erro de continuidade e promoção sem prova.
