@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.98.0
+version: 1.99.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 depends_on:
@@ -13,6 +13,12 @@ related:
   - PAS-001
   - GPA-007
   - UXA-000
+  - UXA-014
+  - UXA-015
+  - UXA-016
+  - UXA-017
+  - UXA-018
+  - UXA-019
   - UXA-020
   - UXA-023
   - UXA-034
@@ -34,6 +40,7 @@ related:
   - UXA-068
   - UXA-069
   - UXA-070
+  - UXA-071
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
@@ -41,8 +48,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.45.0
-  - M7.71
+  - ROADMAP-12.46.0
+  - M7.72
 normative: true
 ---
 
@@ -59,17 +66,19 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | Expressão Guiada do Momento Atual reformulada e validada | M7.71; UXA-069 |
+| Marco | programa funcional do ambiente de simulação das jornadas criado | M7.72; UXA-070 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
 | Jornada pessoal — início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
 | Jornada pessoal — compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
 | Jornada pessoal — expressão guiada | 8 SVGs materializados, reformulados e validados | UXA-068; UXA-069 |
+| Organizações e Coletivos — fundação | participantes, papéis e relações estruturados | UXA-014 a UXA-019 |
 | Coletivos — contratos | descoberta, reputação e interação contratadas | UXA-056 a UXA-058 |
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
 | Coletivos — cobertura visual | 22 SVGs materializados e validados | UXA-060 a UXA-067 |
 | Opportunity Boost | 46 SVGs; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
+| Ambiente de simulação | programa funcional criado; nenhuma materialização ou implementação | UXA-070 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -82,7 +91,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-A UXA-069 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
+A UXA-070 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -93,9 +102,9 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Validação funcional de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
+Programa documental não comprova preço, demanda, conversão, receita ou viabilidade.
 
-## 5. Cobertura visual
+## 5. Cobertura visual preservada
 
 ### 5.1 Jornada pessoal relacionada
 
@@ -106,14 +115,12 @@ Validação funcional de wireframe não comprova preço, demanda, conversão, re
 | Expressão Guiada do Momento Atual | 8 | 8 | 0 |
 | **Subtotal relacionado** | **17** | **17** | **0** |
 
-O subtotal registra somente as famílias diretamente relacionadas a esta continuidade.
-
 ### 5.2 Opportunity Boost
 
 - 46 wireframes materializados;
 - 36 validados por pacote;
 - 10 estados residuais pendentes;
-- nenhuma alteração pela UXA-069.
+- nenhuma alteração pela UXA-070.
 
 ### 5.3 Coletivos
 
@@ -127,35 +134,28 @@ O subtotal registra somente as famílias diretamente relacionadas a esta continu
 
 Total de Coletivos: 22 SVGs materializados e 22 validados.
 
-## 6. Resultado da UXA-069
+A UXA-070 não soma famílias de escopos diferentes nem cria novo inventário visual.
 
-Foram reformulados e validados:
+## 6. Resultado da UXA-070
 
-- orientação comum;
-- rascunho guiado por texto;
-- preparação para voz;
-- gravação em andamento;
-- revisão da transcrição;
-- pergunta adaptativa;
-- separação de focos;
-- síntese estruturada.
+Foi criado o programa funcional do ambiente documental de simulação das jornadas.
 
-Foram consolidados:
+Foram definidos:
 
-- conteúdo de origem separado de ajuda temporária;
-- ajuda temporária somente após solicitação consciente;
-- preparação da compreensão inicial dependente de inventário e autorização;
-- persistência e personalização bloqueadas até gates próprios;
-- texto e voz equivalentes;
-- rascunho sem análise automática ou destino de salvamento inventado;
-- áudio com escolha única e sem seleção padrão;
-- gravação e transcrição com finalidade limitada;
-- interrupção, perda e descarte com efeitos visíveis;
-- transcrição automática separada da versão revisada;
-- perguntas adaptativas sem recomendação implícita;
-- organização de assuntos somente após escolha explícita;
-- síntese derivada com natureza, origem, estado e uso opcional;
-- continuidade possível usando somente conteúdos de origem.
+- Pessoa, Coletivo e Organização como participantes estruturais;
+- papéis e perspectivas contextuais sem criação de novos participantes;
+- famílias mínimas de jornadas pessoais, coletivas, institucionais e bilaterais;
+- Opportunity Boost como sobreposição comercial identificada;
+- nó de jornada com artefato, autoridade, versão, maturidade, gate e lacuna;
+- transição com condição, autoridade, efeito, dados e reversibilidade;
+- taxonomia de maturidade documental;
+- taxonomia de tipos de transição;
+- módulos, filtros e rastreabilidade;
+- reutilização de artefatos por referência e em modo somente leitura;
+- cenários documentais mínimos;
+- registro obrigatório de continuidades ausentes.
+
+O ambiente não se torna fonte canônica. Contratos, programas, wireframes, validações e registros de origem continuam prevalecendo.
 
 ## 7. Continuidade da jornada pessoal
 
@@ -170,7 +170,7 @@ Home pública
 → compreensão inicial revisável
 ```
 
-A ajuda temporária não substitui o inventário, a autorização ou a compreensão inicial.
+A ajuda temporária não substitui inventário, autorização ou compreensão inicial.
 
 ## 8. Estado P0A de Coletivos
 
@@ -186,9 +186,23 @@ A ajuda temporária não substitui o inventário, a autorização ou a compreens
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-A UXA-069 não reinicia automaticamente a sequência de Coletivos.
+O futuro mapa deverá exibir as lacunas a partir do item 6, sem criar superfícies substitutas.
 
-## 9. Preservações
+## 9. Estado do ambiente de simulação
+
+| Camada | Estado |
+|---|---|
+| programa funcional | criado pela UXA-070 |
+| participantes e perspectivas | definidos |
+| modelo de nós e transições | definido |
+| taxonomias e regras de reutilização | definidas |
+| mapa integrado documental | não iniciado |
+| protótipo navegável | não iniciado |
+| aplicação ou motor | não iniciado |
+| teste com pessoas | não iniciado |
+| Engenharia de Produto | não iniciada |
+
+## 10. Preservações
 
 Permanecem vigentes:
 
@@ -202,14 +216,15 @@ Permanecem vigentes:
 - pergunta não é obrigação de revelar;
 - personalização depende de revisão e autorização próprias;
 - solicitação não é aprovação;
-- publicidade não compra legitimidade;
+- publicidade não compra legitimidade, reputação ou autoridade;
 - apoio institucional não concede autoridade ou dados;
+- mapa documental não cria jornada ou transição inexistente;
 - protótipo, teste e Engenharia de Produto não foram iniciados.
 
-## 10. Próxima transição autorizável
+## 11. Próxima transição autorizável
 
 A próxima transição recomendada é:
 
-**UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas.**
+**UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições.**
 
-A UXA-070, `Meus Coletivos` e a implementação do simulador não estão iniciados e dependem de autorizações separadas.
+A UXA-071, `Meus Coletivos` e a implementação do simulador não estão iniciados e dependem de autorizações separadas.
