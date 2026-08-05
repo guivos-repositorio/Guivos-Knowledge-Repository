@@ -2,7 +2,7 @@
 id: GKR-AUD-ACCUMULATED-003
 title: Auditoria das Conversas, Rascunhos e Fontes Acumuladas
 status: draft
-version: 0.3.2
+version: 0.3.3
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -90,7 +90,7 @@ Os detalhes estão no [Registro de Intake](source-intake-register-2026-08-05.md)
 | Fontes catalogadas | 41 |
 | Alegações rastreadas | 33 |
 | Desvios formais | 18 |
-| Registro de intake | `GKR-SOURCE-INTAKE-001` 0.5.2 |
+| Registro de intake | `GKR-SOURCE-INTAKE-001` 0.5.3 |
 | Matriz de alegações | `GKR-CLAIMS-TRACE-001` 0.5.1 |
 | `GC-CON-001` | colisão confirmada; release 1.0 não reconhecida; importação direta bloqueada |
 | Governança externa | princípios parcialmente absorvidos; PDFs não são autoridades vigentes |
@@ -400,8 +400,8 @@ A consolidação temática de `GC-CON-001` exigirá autorização própria e nã
 ## 11. Checkpoint congelado desta rodada
 
 ```text
-Audit register: GKR-AUD-ACCUMULATED-003 0.3.2
-Source intake: GKR-SOURCE-INTAKE-001 0.5.2
+Audit register: GKR-AUD-ACCUMULATED-003 0.3.3
+Source intake: GKR-SOURCE-INTAKE-001 0.5.3
 Claims trace: GKR-CLAIMS-TRACE-001 0.5.1
 Sources catalogued: 41
 Claims traced: 33
