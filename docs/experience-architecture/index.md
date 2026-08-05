@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.71.0
+version: 0.72.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -52,6 +52,7 @@ related:
   - UXA-076
   - UXA-077
   - UXA-078
+  - UXA-079
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -107,7 +108,8 @@ As contagens não comprovam validação ponta a ponta.
 - solicitação não é aprovação;
 - convite não cria vínculo;
 - publicidade não compra relevância, reputação ou autoridade;
-- correção documental não equivale a aprovação funcional.
+- correção documental não equivale a aprovação funcional;
+- aprovação funcional documental não equivale a promoção.
 
 ## 5. Autoridades dos Coletivos
 
@@ -136,6 +138,7 @@ UXA-070 — programa funcional concluído
 → UXA-076 — registros granulares materializados em draft
 → UXA-077 — validação granular não aprovada até correção obrigatória
 → UXA-078 — reformulação controlada executada
+→ UXA-079 — revalidação granular aprovada com ressalvas no escopo funcional documental
 ```
 
 Participantes estruturais:
@@ -146,19 +149,20 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante institucional, especialista, anunciante e patrocinador são perspectivas, papéis ou operadores contextuais, não novos participantes estruturais.
 
-## 7. Resultado da UXA-078
+## 7. Resultado da UXA-079
 
-[UXA-078 — Reformulação Controlada dos Registros Granulares](uxa-078-controlled-granular-registry-reformulation.md) corrige documentalmente os cinco achados obrigatórios da UXA-077.
+[UXA-079 — Revalidação Funcional dos Registros Granulares Reformulados](uxa-079-granular-registry-functional-revalidation.md) confirma a resolução dos cinco bloqueios da UXA-077.
 
-### 7.1 Estado quantitativo
+### 7.1 Integridade confirmada
 
-| Registro | Quantidade | Estado |
+| Registro | Quantidade | Resultado |
 |---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | `draft` 0.2.0 |
-| transições | 37 | `draft` 0.2.0 |
-| endpoints em texto livre | 0 | corrigidos documentalmente |
+| superfícies, estados, responsabilidades ou fronteiras | 40 | IDs únicos e campos obrigatórios presentes |
+| transições documentais | 37 | IDs únicos e endpoints resolvidos |
+| referências de endpoint | 74 | todas resolvidas por IDs registrados |
+| endpoints em texto livre | 0 | aprovado |
 
-### 7.2 Separações vigentes
+### 7.2 Separações confirmadas
 
 ```text
 Coletivos:
@@ -175,22 +179,18 @@ GKR-SURF-ORG-003
 - `GKR-SURF-ORG-003` representa estado institucional;
 - `GKR-SURF-PER-203` representa o Detalhe de Oportunidade;
 - `GKR-SURF-BND-001` é fronteira documental, não participante ou tela;
-- `GKR-SURF-COM-005` aponta para UXA-055.
+- `GKR-SURF-COM-005` e `GKR-TRN-305` apontam para UXA-055.
 
-### 7.3 Campos obrigatórios
+### 7.3 Parecer e ressalvas
 
-Cada entrada do registro de superfícies passa a explicitar:
+**Parecer:** aprovado com ressalvas no escopo funcional documental.
 
-- artefato canônico e caminho;
-- versão;
-- decisão;
-- dados;
-- gate;
-- reversibilidade;
-- supersessão;
-- observação de escopo.
+Permanecem:
 
-Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
+- campos de transição agregados;
+- cobertura seletiva e não exaustiva;
+- `COM` como agrupamento documental;
+- lacunas e continuidades parciais ou não examinadas.
 
 ## 8. Reutilização canônica
 
@@ -213,16 +213,16 @@ Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 | cenários | `active` como hipóteses documentais governadas |
 | catálogo | `active` como inventário agregado |
 | lacunas | `active`, observacional e não promocional |
-| registro granular de superfícies | `draft` 0.2.0; reformulado |
-| registro granular de transições | `draft` 0.2.0; reformulado |
-| revalidação granular | não iniciada |
+| registro granular de superfícies | `draft` 0.2.0; revalidado e apto a promoção separada |
+| registro granular de transições | `draft` 0.2.0; revalidado e apto a promoção separada |
+| promoção granular | não iniciada |
 | protótipo ou aplicação | não iniciados |
 
 ## 10. Limites
 
 Não foram iniciados:
 
-- UXA-079;
+- UXA-080;
 - promoção funcional dos registros granulares;
 - protótipo navegável;
 - aplicação ou motor de simulação;
@@ -238,4 +238,4 @@ Não foram iniciados:
 
 ## 11. Próxima evolução documental possível
 
-**UXA-079 — Revalidação Funcional dos Registros Granulares Reformulados**, mediante autorização separada.
+**UXA-080 — Promoção Controlada dos Registros Granulares e Sincronização Pós-Revalidação**, mediante autorização separada.
