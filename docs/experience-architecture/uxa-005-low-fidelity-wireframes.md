@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.44.0
+version: 0.45.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 parent: UXA-000
@@ -26,8 +26,10 @@ related:
   - UXA-064
   - UXA-065
   - UXA-066
+  - UXA-067
+  - UXA-068
   - PAS-001
-  - M7.68
+  - M7.69
 normative: false
 ---
 
@@ -81,16 +83,16 @@ Cor, tipografia e iconografia não possuem significado definitivo.
 
 A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 
-### 4.1 Cobertura materializada
+### 4.1 Cobertura materializada e validada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | descoberta e busca móvel | 5 | 5 | 0 |
 | Perfil Público móvel | 4 | 4 | 0 |
 | revisão e solicitação móvel | 5 | 5 | 0 |
-| Solicitação Pendente móvel | 8 | 0 | 8 |
+| Solicitação Pendente móvel | 8 | 8 | 0 |
 | demais famílias de Coletivos | 0 | 0 | não materializadas |
-| **Total de Coletivos** | **22** | **14** | **8** |
+| **Total de Coletivos** | **22** | **22** | **0** |
 
 A contagem de Coletivos permanece separada do Opportunity Boost.
 
@@ -102,40 +104,22 @@ A contagem de Coletivos permanece separada do Opportunity Boost.
 | 2 | Resultados de Busca | materializada e validada |
 | 3 | Perfil Público do Coletivo | materializada e validada |
 | 4 | Revisão e Solicitação de Participação | materializada e validada |
-| 5 | Solicitação Pendente | materializada; validação pendente |
+| 5 | Solicitação Pendente | materializada e validada |
 | 6 | Meus Coletivos | não iniciado |
 | 7 | Central de Atualizações | não iniciada |
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 5. Famílias validadas
-
-Autoridades:
+## 5. Autoridades das famílias validadas
 
 - UXA-060 e UXA-061 — descoberta e busca;
 - UXA-062 e UXA-063 — Perfil Público;
-- UXA-064 e UXA-065 — revisão e solicitação.
+- UXA-064 e UXA-065 — revisão e solicitação;
+- UXA-066 e UXA-067 — Solicitação Pendente.
 
-Estão validados:
+## 6. Resultado da Solicitação Pendente
 
-- origens distinguíveis;
-- filtros reversíveis;
-- acompanhar separado de participar;
-- reputação contextual;
-- dados e consequências antes da ação;
-- confirmações inicialmente vazias;
-- cancelamento anterior ao envio;
-- solicitação sem criação de vínculo;
-- comprovante separado de acompanhamento contínuo;
-- convite protegido com exposição proporcional.
-
-## 6. Solicitação Pendente
-
-Autoridade:
-
-- UXA-066 — oito SVGs móveis materializados e ainda não validados funcionalmente.
-
-Estados materializados:
+Estados validados:
 
 1. aguardando decisão;
 2. análise protegida;
@@ -146,20 +130,22 @@ Estados materializados:
 7. recusada;
 8. expirada.
 
-Decisões representadas:
+Regras validadas:
 
-- estado, data, identificador e autoridade visíveis;
-- prazo estimado sem promessa;
-- dados enviados e protegidos;
-- espera distinta de ação necessária;
-- pergunta adicional com finalidade declarada;
-- resposta revisável antes do envio;
-- cancelamento separado de recusa;
-- expiração separada de recusa;
-- aprovação sem papel automático;
-- recusa sem funcionar como reputação da Pessoa;
-- processo protegido com exposição mínima;
-- ausência de navegação ativa para `Meus Coletivos`.
+- consulta não altera fila ou prioridade;
+- estimativa não é promessa;
+- dado material não é editado silenciosamente durante análise;
+- autoridade protegida é limitada ao processo;
+- pedido adicional não é obrigação de revelar;
+- resposta, preferência, contestação e cancelamento são distintos;
+- descartar resposta não cancela solicitação;
+- envio adicional poderá retomar análise sem criar vínculo;
+- tratamento posterior não é garantia técnica ou jurídica absoluta;
+- aprovação não cria função, autoridade, presença ou notificação automática;
+- recusa não é sanção, reputação ou denúncia;
+- expiração não é recusa ou consentimento;
+- revisão formal não é simulada sem contrato próprio;
+- `Meus Coletivos` não é apresentado como disponível.
 
 ## 7. Proteções transversais
 
@@ -168,30 +154,36 @@ Decisões representadas:
 - publicidade não compra legitimidade, reputação ou prioridade;
 - apoio institucional não concede dados ou autoridade;
 - visualização não revela identidade;
-- denúncia não é avaliação;
+- denúncia não é avaliação nem revisão formal;
 - proteção não é irregularidade;
 - convite não cria vínculo;
 - decisão sobre vínculo não é reputação da Pessoa;
 - estado contratual não gera automaticamente um SVG exclusivo.
 
-## 8. Limites
+## 8. Lacuna prioritária fora de Coletivos
+
+A tela de escolha multimodal do início protegido permite texto, voz, arquivo e perguntas opcionais, mas ainda não orienta suficientemente a Pessoa a expressar o Momento Atual.
+
+A UXA-068 deverá materializar orientação para situação, impacto, prioridade, direção e contexto, com relato livre, perguntas adaptativas, síntese e revisão.
+
+## 9. Limites
 
 O programa ainda não inicia:
 
-- validação funcional da UXA-066;
+- UXA-068;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
 - gestão do responsável;
-- contestação completa;
+- revisão formal completa da recusa;
 - ambiente de simulação das jornadas;
 - protótipo;
 - teste com pessoas;
 - identidade visual;
 - Engenharia de Produto.
 
-## 9. Próxima transição
+## 10. Próxima transição
 
-**UXA-067 — Validação Funcional e Reformulação da Solicitação Pendente Móvel em Coletivos.**
+**UXA-068 — Expressão Guiada do Momento Atual por Texto e Voz.**
 
-O pacote deverá validar os oito SVGs antes de iniciar `Meus Coletivos` e dependerá de autorização separada.
+O pacote dependerá de autorização separada.
