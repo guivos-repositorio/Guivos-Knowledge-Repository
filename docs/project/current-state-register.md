@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.03.0
+version: 2.04.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-05
 depends_on:
@@ -25,6 +25,7 @@ related:
   - UXA-035
   - UXA-036
   - UXA-037
+  - UXA-055
   - UXA-056
   - UXA-057
   - UXA-058
@@ -47,6 +48,7 @@ related:
   - UXA-075
   - UXA-076
   - UXA-077
+  - UXA-078
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -57,7 +59,7 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.50.0
+  - ROADMAP-12.51.0
   - M7.72
 normative: true
 ---
@@ -75,7 +77,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | registros granulares materializados, mas não aprovados funcionalmente até correção obrigatória | M7.72; UXA-076; UXA-077 |
+| Marco | registros granulares reformulados para responder aos cinco bloqueios da UXA-077; nova validação ainda não executada | M7.72; UXA-076 a UXA-078 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
@@ -86,10 +88,10 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Coletivos — contratos | descoberta, reputação e interação contratadas | UXA-056 a UXA-058 |
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
 | Coletivos — cobertura visual | 22 SVGs materializados e validados na perspectiva coberta | UXA-060 a UXA-067 |
-| Opportunity Boost | 46 SVGs; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
+| Opportunity Boost | 46 SVGs; 36 validados e 10 estados da UXA-055 pendentes | UXA-038 a UXA-055 |
 | Jornadas Integradas | seção e instrumentos de apoio vigentes; vistas de Pessoa, Coletivo e Organização permanecem `draft` | UXA-070 a UXA-075 |
-| Registros granulares | 36 superfícies ou responsabilidades e 34 transições materializadas em `draft` | UXA-076 |
-| Validação granular | não aprovada até correção de cinco achados obrigatórios | UXA-077 |
+| Registros granulares | 40 superfícies, estados, responsabilidades ou fronteiras e 37 transições em `draft` | UXA-076; UXA-078 |
+| Validação granular | primeira validação não aprovada; reformulação executada; revalidação não iniciada | UXA-077; UXA-078 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -102,7 +104,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-As UXA-070 a UXA-077 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
+As UXA-070 a UXA-078 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -113,7 +115,7 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Programa, mapa, registro ou validação documental não comprova preço, demanda, conversão, receita ou viabilidade.
+Programa, mapa, registro, reformulação ou validação documental não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual preservada
 
@@ -133,6 +135,7 @@ As contagens demonstram cobertura das superfícies nos pacotes de origem. Elas n
 - 46 wireframes materializados;
 - 36 validados por pacote;
 - 10 estados residuais materializados pela UXA-055 e ainda pendentes de validação;
+- `GKR-SURF-COM-005` e `GKR-TRN-305` agora apontam corretamente para UXA-055;
 - nenhuma promoção automática pela seção de Jornadas Integradas.
 
 ### 5.3 Coletivos
@@ -147,7 +150,7 @@ As contagens demonstram cobertura das superfícies nos pacotes de origem. Elas n
 
 Total de Coletivos: 22 SVGs materializados e 22 validados na perspectiva coberta pelos respectivos pacotes.
 
-A visão operacional do responsável e a continuidade após `Solicitação Pendente` permanecem ausentes.
+A busca de Coletivos permanece separada das superfícies de oportunidades.
 
 ## 6. Sequência do ambiente documental
 
@@ -160,65 +163,49 @@ UXA-070 — programa funcional concluído
 → UXA-075 — promoção seletiva e sincronização pós-validação executadas
 → UXA-076 — registros granulares materializados em draft
 → UXA-077 — validação granular não aprovada até correção obrigatória
+→ UXA-078 — reformulação controlada dos cinco achados executada
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 7. Estado aprovado das Jornadas Integradas
+## 7. Resultado da UXA-077
 
-A UXA-074 aprovou, com ressalvas, a seção `Jornadas Integradas` como instrumento documental de leitura, comparação de perspectivas, rastreabilidade, inspeção de handoffs e exposição de lacunas.
+A primeira validação confirmou contagens, IDs únicos, vocabulário de maturidade e preservação de incerteza, mas bloqueou a promoção devido a:
 
-A UXA-075 promoveu para `active`:
+1. endpoints sem ID;
+2. mistura entre busca de Coletivos e oportunidades;
+3. mistura entre publicação institucional e Detalhe de Oportunidade;
+4. rastreabilidade incorreta dos estados residuais;
+5. campos obrigatórios ausentes no registro de superfícies.
 
-- visão geral da seção;
-- matriz resumida de handoffs;
-- cenários documentais governados;
-- catálogo agregado de telas e transições;
-- registro observacional de lacunas.
+## 8. Resultado da UXA-078
 
-Permanecem `draft` as vistas de Pessoa, Coletivo e Organização, em razão da incompletude das continuidades representadas.
+A reformulação executou:
 
-## 8. Materialização granular da UXA-076
+- resolução de todos os endpoints por ID;
+- criação de `GKR-SURF-PER-201`, `GKR-SURF-PER-202` e `GKR-SURF-PER-203`;
+- criação de `GKR-SURF-BND-001` como fronteira documental;
+- preservação de `GKR-SURF-PER-102` exclusivamente para busca de Coletivos;
+- restrição de `GKR-SURF-ORG-003` ao estado institucional de publicação;
+- correção de `GKR-SURF-COM-005` e `GKR-TRN-305` para UXA-055;
+- inclusão, por ID, de artefato e caminho, versão, decisão, dados, gate, reversibilidade, supersessão e observação de escopo.
 
-A UXA-076 materializou:
+Estado quantitativo:
 
-- `GKR-JOURNEY-SURFACE-REGISTRY-001` — 36 superfícies, estados, responsabilidades ou ausências conhecidas;
-- `GKR-JOURNEY-TRANSITION-REGISTRY-001` — 34 ligações documentais localmente validadas, parciais, contratadas, ausentes ou não examinadas.
+| Registro | Quantidade | Estado |
+|---|---:|---|
+| superfícies, estados, responsabilidades ou fronteiras | 40 | `draft` |
+| transições documentais | 37 | `draft` |
+| endpoints em texto livre | 0 | corrigidos documentalmente |
 
-Os registros possuem IDs estáveis e preservam incerteza, mas a atribuição de ID não equivale a implementação ou validação.
+A reformulação não aprova os registros. Uma nova validação funcional permanece necessária.
 
-## 9. Resultado da UXA-077
-
-**Parecer: não aprovado até correção obrigatória.**
-
-A validação confirmou:
-
-- contagens declaradas;
-- unicidade interna dos identificadores;
-- uso do vocabulário de maturidade da UXA-070;
-- preservação de estados parciais, ausentes e não examinados;
-- ausência de promoção ou implementação implícita.
-
-Foram identificados cinco achados obrigatórios:
-
-1. endpoints sem ID estável em `GKR-TRN-205` e `GKR-TRN-304`;
-2. mistura entre busca de Coletivos e descoberta de oportunidades em `GKR-SURF-PER-102`, `GKR-TRN-203` e `GKR-TRN-204`;
-3. mistura entre estado institucional de publicação e Detalhe de Oportunidade em `GKR-SURF-ORG-003`;
-4. rastreabilidade incorreta dos dez estados residuais, cuja materialização correta é UXA-055;
-5. ausência de campos obrigatórios da UXA-070 e da UXA-076 no registro de superfícies.
-
-A validação também registrou três ressalvas não bloqueadoras:
-
-- campos de transição agregados em colunas compostas;
-- cobertura inicial seletiva, não exaustiva;
-- prefixo `COM` apenas como agrupamento documental, sem novo participante estrutural.
-
-## 10. Estado P0A de Coletivos
+## 9. Estado P0A de Coletivos
 
 | Ordem | Superfície | ID granular | Maturidade primária | Continuidade integrada |
 |---:|---|---|---|---|
 | 1 | Explorar Coletivos | GKR-SURF-PER-101 | validado | parcial |
-| 2 | Resultados de Busca de Coletivos | GKR-SURF-PER-102 | validado | parcial; não reutilizável como busca de oportunidades |
+| 2 | Resultados de Busca de Coletivos | GKR-SURF-PER-102 | validado | parcial; exclusivo de Coletivos |
 | 3 | Perfil Público | GKR-SURF-PER-103 | validado | parcial |
 | 4 | Revisão e Solicitação de Participação | GKR-SURF-PER-104 | validado | parcial |
 | 5 | Solicitação Pendente | GKR-SURF-PER-105 | validado na perspectiva da Pessoa | parcial e assimétrica |
@@ -227,33 +214,27 @@ A validação também registrou três ressalvas não bloqueadoras:
 | 8 | Início do Participante | GKR-SURF-PER-108 | reformulação pendente | ausente |
 | 9 | Visão Geral do Responsável | GKR-SURF-COL-002 | não iniciado | ausente |
 
-## 11. Estado das Jornadas Integradas
+## 10. Estado documental
 
 | Camada | Estado |
 |---|---|
 | programa funcional | concluído pela UXA-070 |
-| primeira materialização | integrada pela UXA-071 |
-| primeira validação | não aprovada pela UXA-072 |
-| reformulação documental | executada pela UXA-073 |
-| revalidação documental | aprovada com ressalvas pela UXA-074 |
-| promoção controlada | executada seletivamente pela UXA-075 |
-| visão geral | active |
-| Pessoa, Coletivo e Organização | draft por incompletude explícita |
-| handoffs, cenários e catálogo | active dentro dos limites aprovados |
-| lacunas | active, observacional e não promocional |
-| registros granulares | draft, materializados pela UXA-076 |
-| validação granular | não aprovada até correção obrigatória pela UXA-077 |
-| reformulação granular | não iniciada |
+| visão geral das Jornadas Integradas | `active` |
+| Pessoa, Coletivo e Organização | `draft` por incompletude explícita |
+| handoffs, cenários e catálogo | `active` dentro dos limites aprovados |
+| lacunas | `active`, observacional e não promocional |
+| registro granular de superfícies | `draft` 0.2.0; reformulado |
+| registro granular de transições | `draft` 0.2.0; reformulado |
+| revalidação granular | não iniciada |
 | protótipo navegável | não iniciado |
 | aplicação ou motor | não iniciado |
 | teste com pessoas | não iniciado |
 | Engenharia de Produto | não iniciada |
 
-## 12. Ressalvas e lacunas vigentes
+## 11. Lacunas vigentes
 
 Permanecem abertas:
 
-- cinco achados obrigatórios da UXA-077;
 - continuidade entre compreensão inicial e Tela Hoje;
 - `Meus Coletivos`;
 - Central de Atualizações;
@@ -263,10 +244,12 @@ Permanecem abertas:
 - relação Organização–Coletivo materializada;
 - matriz institucional completa;
 - validação dos 10 estados residuais do Opportunity Boost;
+- integração publicação–descoberta de oportunidades;
+- sincronização integrada entre mapa, lista e detalhe;
 - efeitos externos de oportunidades;
 - matriz integrada de erros, retornos e interrupções.
 
-## 13. Preservações
+## 12. Preservações
 
 Permanecem vigentes:
 
@@ -282,16 +265,16 @@ Permanecem vigentes:
 - solicitação não é aprovação;
 - publicidade não compra legitimidade, reputação ou autoridade;
 - apoio institucional não concede autoridade ou dados;
-- mapa ou registro documental não cria jornada, superfície ou transição inexistente;
+- mapa ou registro documental não cria jornada, superfície ou transição implementada;
 - superfície validada não equivale a jornada integrada validada;
 - atribuição de ID não equivale a implementação;
-- status `active` não equivale a completude;
-- protótipo, teste e Engenharia de Produto não foram iniciados.
+- correção documental não equivale a aprovação funcional;
+- status `active` não equivale a completude.
 
-## 14. Próxima transição autorizável
+## 13. Próxima transição autorizável
 
 A próxima evolução documental possível é:
 
-**UXA-078 — Reformulação Controlada dos Registros Granulares de Transições e Superfícies.**
+**UXA-079 — Revalidação Funcional dos Registros Granulares Reformulados.**
 
-A UXA-078, a nova validação posterior, as lacunas de produto e a implementação do simulador não estão iniciadas e dependem de autorizações separadas.
+A UXA-079, as lacunas de produto e a implementação do simulador não estão iniciadas e dependem de autorizações separadas.
