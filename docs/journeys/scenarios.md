@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -10,6 +10,8 @@ related:
   - UXA-071
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -111,4 +113,8 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado.
 
 Um cenário só poderá ser marcado como completo quando todos os seus nós, transições, autoridades, dados, retornos, estados de exceção e pontos de saída estiverem documentados e funcionalmente validados como conjunto.
 
-Esta vista permanece `draft` até nova validação funcional.
+## 4. Estado vigente
+
+A UXA-074 aprovou os seis cenários como hipóteses documentais governadas e limitadas pela evidência. A UXA-075 promove este documento para `active` nesse escopo.
+
+O status `active` não transforma qualquer cenário em jornada completa nem executável.
