@@ -85,6 +85,7 @@ nav:
       - Histórico 1.68.0: project/changelog-1.68.0-uxa-044.md
       - Histórico 1.69.0: project/changelog-1.69.0-uxa-045.md
       - Histórico 1.70.0: project/changelog-1.70.0-uxa-046.md
+      - Histórico 1.95.0: project/changelog-1.95.0-uxa-071.md
       - Parecer Mecânico do R5: project/repository-mechanical-validation-2026-07-24.md
       - Retomada Governada do R6: project/governed-resumption-r6.md
 
@@ -212,6 +213,19 @@ nav:
           - UXA-016 — Wireframe do Coletivo: experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md
           - UXA-018 — Validação do Coletivo: experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md
           - UXA-019 — Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
+      - Ambiente de Simulação:
+          - UXA-070 — Programa Funcional: experience-architecture/uxa-070-journey-simulation-environment-functional-program.md
+          - UXA-071 — Mapa Integrado: experience-architecture/uxa-071-integrated-journey-map-materialization.md
+
+  - Jornadas Integradas:
+      - Visão Geral: journeys/index.md
+      - Pessoa: journeys/person.md
+      - Coletivo: journeys/collective.md
+      - Organização: journeys/organization.md
+      - Handoffs: journeys/handoffs.md
+      - Cenários: journeys/scenarios.md
+      - Lacunas: journeys/gaps.md
+      - Catálogo de Telas: journeys/screen-catalog.md
 
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
