@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.44.0
+version: 12.45.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.44.0
+  - ROADMAP-12.45.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -33,9 +33,10 @@ related:
   - UXA-067
   - UXA-068
   - UXA-069
+  - UXA-070
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.70
+  - M7.71
 normative: false
 ---
 
@@ -50,14 +51,14 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Expressão Guiada do Momento Atual materializada | M7.70 |
+| Marco | Expressão Guiada reformulada e validada | M7.71 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações candidatos | GEM-004-A1 |
 | Opportunity Boost | add-on publicitário candidato | GEM-007-A1 |
 | Início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
 | Compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
-| Expressão Guiada do Momento Atual | 8 SVGs materializados; validação pendente | UXA-068 |
+| Expressão Guiada | 8 SVGs materializados, reformulados e validados | UXA-068; UXA-069 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
 | Programa de Coletivos | 88 estados; nove referências P0A | UXA-059 |
 | Coletivos visuais | 22 SVGs materializados e validados | UXA-060 a UXA-067 |
@@ -69,30 +70,30 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Camada | Estado | Próxima condição |
 |---|---|---|
 | início protegido geral | materializado e validado | preservar UXA-034 e UXA-035 |
-| expressão guiada por texto e voz | materializada | validar na UXA-069 |
-| revisão e autorização | materializada e validada | preservar handoff da UXA-034 |
+| expressão guiada por texto e voz | materializada e validada | preservar UXA-068 e UXA-069 |
+| inventário e autorização | materializados e validados | preservar handoff da UXA-034 |
 | processamento e compreensão inicial | materializados e validados | preservar UXA-036 e UXA-037 |
-| protótipo e teste | não iniciados | aguardar validação e autorização próprias |
+| ambiente transversal de simulação | não iniciado | depende da UXA-070 |
+| protótipo e teste | não iniciados | dependem de autorização própria |
 | Engenharia de Produto | não iniciada | aguardar gates anteriores |
 
-## 4. Expressão Guiada do Momento Atual
+## 4. Expressão Guiada validada
 
-A UXA-068 cobre:
+A UXA-069 consolidou:
 
-- orientação anterior ao relato;
-- explicação do que a Guivos precisa compreender;
-- situação, impacto, prioridade, direção e contexto;
-- rascunho livre com apoio progressivo;
-- preparação anterior à gravação;
-- gravação com estado evidente, pausa e descarte;
-- áudio separado da transcrição;
-- transcrição revisável e corrigível;
-- pergunta adaptativa com razão explícita;
-- `não sei`, `prefiro não informar` e adiamento;
-- separação de assuntos sem descarte silencioso;
-- síntese estruturada com desconhecidos;
-- retorno à revisão e autorização da UXA-034;
-- ausência de processamento pelo ato de digitar ou gravar.
+- conteúdo de origem separado da ajuda temporária;
+- ajuda temporária somente após solicitação consciente;
+- texto e voz equivalentes;
+- rascunho sem análise automática ou salvamento implícito;
+- opção única sobre áudio, sem seleção padrão;
+- gravação e transcrição com finalidade limitada;
+- pausa, interrupção, perda e descarte com efeitos conhecidos;
+- transcrição automática separada da versão revisada;
+- perguntas opcionais, explicadas e não recomendatórias;
+- assuntos organizados somente após decisão da Pessoa;
+- síntese derivada com origem, natureza, estado e uso opcional;
+- continuidade possível usando somente conteúdos de origem;
+- inventário e autorização antes do processamento material.
 
 ## 5. Cobertura visual
 
@@ -102,8 +103,8 @@ A UXA-068 cobre:
 |---|---:|---:|---:|
 | Início protegido geral | 4 | 4 | 0 |
 | Compreensão inicial | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Expressão Guiada do Momento Atual | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
 ### 5.2 Famílias preservadas
 
@@ -136,37 +137,36 @@ As três contagens permanecem separadas.
 
 ## 7. Proteções ativas
 
-- relato livre continua legítimo;
-- compartilhar pouco não é falha pessoal;
+- compartilhar pouco não é falha;
+- digitar não solicita análise automática;
+- gravar autoriza somente a operação apresentada;
 - transcrição automática não é declaração confirmada;
-- áudio, transcrição e interpretação não se confundem;
-- desconhecido não é preenchido por suposição;
-- perguntas dependem de utilidade explicada;
+- ajuda temporária não cria compreensão;
+- síntese não substitui fonte;
+- desconhecido não é fato;
 - pergunta não é obrigação de revelar;
-- relevância não é definida silenciosamente pela Guivos;
-- digitar e gravar não autorizam processamento;
-- personalização não ocorre antes da revisão e autorização;
+- personalização não ocorre antes de gates próprios;
 - nenhuma contagem funciona como ranking;
 - publicidade não compra legitimidade;
 - apoio institucional não concede autoridade;
 - convite não cria vínculo;
 - cancelamento, recusa e expiração permanecem distintos;
-- denúncia não é revisão formal;
 - evento futuro não é garantia de implementação.
 
-## 8. Ambiente de simulação proposto
+## 8. Próxima iniciativa recomendada
 
-Permanece registrada a necessidade de uma visualização transversal das jornadas de Pessoa, Coletivo e Organização.
+A próxima iniciativa recomendada é:
 
-A recomendação continua sendo um único ambiente com perspectivas separadas, reutilizando telas canônicas e mostrando sequência, maturidade, dependências e lacunas.
+**UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas.**
 
-O ambiente não foi criado e depende de pacote e autorização próprios.
+O programa deverá definir o ambiente documental transversal, suas perspectivas, navegação, estados de maturidade, dependências e limites, sem implementar protótipo ou Engenharia.
 
 ## 9. Fronteiras
 
 Não foram iniciados:
 
-- UXA-069;
+- UXA-070;
+- ambiente de simulação;
 - modelo de IA ou algoritmo adaptativo;
 - gravação, transcrição e armazenamento reais;
 - envio guiado de arquivos;
@@ -174,15 +174,8 @@ Não foram iniciados:
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
-- gestão do responsável;
-- revisão formal completa da recusa;
-- ambiente de simulação das jornadas;
 - política jurídica;
 - protótipo;
 - testes;
 - identidade visual;
 - Engenharia de Produto.
-
-## 10. Próxima transição
-
-**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz**, mediante autorização separada.

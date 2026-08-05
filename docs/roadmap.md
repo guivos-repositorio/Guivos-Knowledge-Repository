@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.44.0
-title: Roadmap Arquitetural — Expressão Guiada do Momento Atual Materializada
+id: ROADMAP-12.45.0
+title: Roadmap Arquitetural — Expressão Guiada do Momento Atual Validada
 status: active
-version: 12.44.0
+version: 12.45.0
 owner: Guivos
 last_updated: 2026-08-04
 supersedes_partial:
-  - ROADMAP-12.43.0
+  - ROADMAP-12.44.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -33,14 +33,15 @@ related:
   - UXA-067
   - UXA-068
   - UXA-069
+  - UXA-070
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.70
+  - M7.71
 ---
 
-# Roadmap Arquitetural — Expressão Guiada do Momento Atual Materializada
+# Roadmap Arquitetural — Expressão Guiada do Momento Atual Validada
 
 ## 1. Autoridade
 
@@ -51,10 +52,10 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Expressão Guiada do Momento Atual materializada | M7.70 |
+| Marco | Expressão Guiada reformulada e validada | M7.71 |
 | Início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
 | Compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
-| Expressão guiada | 8 SVGs materializados; validação pendente | UXA-068 |
+| Expressão guiada | 8 SVGs materializados, reformulados e validados | UXA-068; UXA-069 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
 | Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
 | Coletivos materializados | 22 SVGs materializados e validados | UXA-060 a UXA-067 |
@@ -62,74 +63,56 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 3. Sequência da jornada pessoal
+## 3. Sequência concluída da jornada pessoal relacionada
 
 ```text
 UXA-020 e UXA-023 — início protegido contratado e reformulado
-→ UXA-034 e UXA-035 — escolha, rascunho, revisão e autorização materializados e validados
-→ UXA-068 — expressão guiada por texto e voz materializada
-→ UXA-069 — validação funcional obrigatória da expressão guiada
-→ UXA-036 e UXA-037 — processamento e compreensão inicial já materializados e validados
+→ UXA-034 e UXA-035 — escolha, rascunho, inventário e autorização materializados e validados
+→ UXA-068 — expressão guiada materializada
+→ UXA-069 — expressão guiada reformulada e validada
+→ UXA-036 e UXA-037 — processamento e compreensão inicial materializados e validados
 ```
 
-A UXA-036 e a UXA-037 já existem e permanecem vigentes. A UXA-069 validará a nova ponte criada pela UXA-068 antes de protótipo, teste ou implementação.
+A ordem funcional permanece:
 
-## 4. Resultado da UXA-068
+```text
+escolha
+→ expressão guiada
+→ inventário e autorização
+→ processamento
+→ compreensão inicial
+```
 
-A família contém oito estados:
+## 4. Resultado da UXA-069
 
-1. orientação comum;
-2. rascunho guiado por texto;
-3. preparação para voz;
-4. gravação em andamento;
-5. revisão da transcrição;
-6. pergunta adaptativa;
-7. separação de focos;
-8. síntese estruturada.
+A validação consolidou:
 
-Foram materializados:
+- ajuda temporária solicitada separada do processamento material;
+- conteúdo de origem preservado;
+- texto e voz equivalentes;
+- rascunho sem análise automática ou salvamento implícito;
+- opções de áudio mutuamente exclusivas e sem padrão;
+- gravação e transcrição com finalidade limitada;
+- interrupção, perda e descarte com efeitos conhecidos;
+- transcrição automática separada da versão revisada;
+- perguntas opcionais e não recomendatórias;
+- separação de assuntos somente após escolha explícita;
+- síntese derivada sem aceitação ou uso automáticos;
+- continuidade possível usando somente fontes;
+- inventário e autorização antes da compreensão inicial.
 
-- explicação do que a Guivos precisa compreender;
-- cinco dimensões progressivas: situação, impacto, prioridade, direção e contexto;
-- texto livre com apoio não obrigatório;
-- voz com explicação antes do microfone;
-- áudio, transcrição e declaração revisada separados;
-- perguntas adaptativas para lacunas materiais;
-- razão da pergunta explícita;
-- respostas `não sei`, `prefiro não informar` e adiamento;
-- organização de assuntos sem descarte silencioso;
-- síntese estruturada com desconhecidos;
-- retorno à revisão da UXA-034 sem iniciar processamento.
-
-## 5. Gate obrigatório
-
-Antes de protótipo, teste ou implementação da nova família, deverá ser concluída:
-
-> **UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz**
-
-O gate deverá examinar os oito SVGs como uma continuidade única e verificar:
-
-- se a orientação ajuda sem limitar o relato;
-- se texto e voz possuem equivalência funcional;
-- se o microfone e o tratamento do áudio são compreensíveis;
-- se a transcrição não é confundida com declaração confirmada;
-- se as perguntas são realmente opcionais e proporcionais;
-- se a Guivos não decide relevância silenciosamente;
-- se a síntese preserva lacunas e correção;
-- se o handoff para a UXA-034 não inicia processamento implícito.
-
-## 6. Cobertura relacionada
+## 5. Cobertura relacionada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Início protegido geral | 4 | 4 | 0 |
 | Compreensão inicial | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Expressão Guiada do Momento Atual | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
 As contagens de Coletivos e Opportunity Boost permanecem separadas.
 
-## 7. Estado de Coletivos preservado
+## 6. Estado de Coletivos preservado
 
 ```text
 UXA-056 — descoberta, Perfil Público e participação contratados
@@ -141,36 +124,39 @@ UXA-056 — descoberta, Perfil Público e participação contratados
 
 `Meus Coletivos`, Central de Atualizações, Início do Participante e Visão Geral do Responsável permanecem não iniciados.
 
-A UXA-068 não reinicia automaticamente essa sequência.
+## 7. Próxima iniciativa recomendada
 
-## 8. Próxima sequência prevista
+A próxima iniciativa recomendada é:
+
+> **UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas**
+
+O programa deverá definir, antes de implementação:
+
+- finalidade e limites do ambiente;
+- participantes: Pessoa, Coletivo e Organização;
+- seleção e alternância de perspectivas;
+- sequência de telas e transições;
+- reutilização de artefatos canônicos;
+- indicação de estados materializados, validados, pendentes e não iniciados;
+- dependências e lacunas entre jornadas;
+- fronteira entre simulação documental, protótipo e Engenharia de Produto.
+
+## 8. Sequência prevista
 
 ```text
-UXA-069 — validar Expressão Guiada do Momento Atual
-→ decidir, por autorização própria, entre o ambiente de simulação e outra família priorizada
+UXA-070 — definir o programa funcional do ambiente de simulação
+→ decidir separadamente sobre materialização documental do ambiente
+→ protótipo, somente mediante autorização posterior
 ```
 
-A integração futura da UXA-068 não autoriza a UXA-069. A integração futura da UXA-069 também não autorizará automaticamente o simulador ou `Meus Coletivos`.
+A UXA-070 não implementará o simulador e não reabrirá automaticamente `Meus Coletivos`.
 
-## 9. Ambiente de simulação das jornadas
-
-Permanece registrada a necessidade de visualizar, em um único ambiente, as jornadas de Pessoa, Coletivo e Organização.
-
-O ambiente deverá:
-
-- reutilizar artefatos canônicos;
-- ordenar jornadas por participante;
-- mostrar estados materializados, validados, pendentes e não iniciados;
-- revelar transições ausentes;
-- alternar perspectivas relacionadas.
-
-Essa iniciativa não foi criada nem implementada pela UXA-068.
-
-## 10. Frentes preservadas
+## 9. Frentes preservadas
 
 Não são reabertas automaticamente:
 
-- UXA-069;
+- UXA-070;
+- implementação do ambiente de simulação;
 - modelo de IA ou algoritmo adaptativo;
 - gravação, transcrição ou armazenamento reais;
 - envio guiado de arquivos;
@@ -179,15 +165,14 @@ Não são reabertas automaticamente:
 - Central de Atualizações;
 - Início do Participante;
 - gestão do responsável;
-- validação dos 10 estados residuais do Opportunity Boost;
+- estados residuais do Opportunity Boost;
 - Resultados Empresariais;
 - preços ou baseline comercial;
-- ambiente de simulação das jornadas;
 - política jurídica;
 - protótipo;
 - testes com pessoas;
 - Engenharia de Produto.
 
-## 11. Regra de autorização
+## 10. Regra de autorização
 
-Integração da UXA-068 não inicia a UXA-069, `Meus Coletivos` ou o ambiente de simulação. Cada pacote exige autorização própria para criação e autorização separada para integração.
+A integração da UXA-069 não inicia a UXA-070, `Meus Coletivos`, o simulador ou qualquer implementação. Cada pacote exige autorização própria para criação e autorização separada para integração.

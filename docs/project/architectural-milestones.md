@@ -2,13 +2,13 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.42.0
+version: 5.43.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.44.0
+  - ROADMAP-12.45.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -33,6 +33,7 @@ related:
   - UXA-067
   - UXA-068
   - UXA-069
+  - UXA-070
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -52,6 +53,7 @@ related:
   - M7.68
   - M7.69
   - M7.70
+  - M7.71
 normative: false
 ---
 
@@ -73,26 +75,16 @@ Este registro apresenta a maturidade arquitetural consolidada. O estado oficial 
 | M7.3–M7.3.5 | concluído | auditoria, remediação e retomada governada |
 | M7.52 | concluído | programa visual do Opportunity Boost consolidado |
 | M7.57 | concluído | estados residuais do Boost materializados |
-| M7.58 | concluído | descoberta e participação em Coletivos contratadas |
-| M7.59 | concluído | avaliação e reputação contratadas |
-| M7.60 | concluído | interação, recomendação e conexão contratadas |
-| M7.61 | concluído | programa de wireframes de Coletivos priorizado |
-| M7.62 | concluído | descoberta e busca móvel materializadas |
-| M7.63 | concluído | descoberta e busca móvel validadas |
-| M7.64 | concluído | Perfil Público móvel materializado |
-| M7.65 | concluído | Perfil Público móvel validado funcionalmente |
-| M7.66 | concluído | revisão e solicitação móvel materializadas |
-| M7.67 | concluído | revisão e solicitação móvel validadas e reformuladas |
-| M7.68 | concluído | Solicitação Pendente móvel materializada em oito estados |
-| M7.69 | concluído | Solicitação Pendente móvel reformulada e validada |
-| **M7.70** | **concluído no pacote** | **Expressão Guiada do Momento Atual materializada em oito estados móveis** |
+| M7.58–M7.69 | concluído | contratos e cinco primeiras referências P0A de Coletivos |
+| M7.70 | concluído | Expressão Guiada materializada em oito estados móveis |
+| **M7.71** | **concluído no pacote** | **Expressão Guiada reformulada e validada funcionalmente** |
 
-## 3. M7.70 — Expressão Guiada do Momento Atual Materializada
+## 3. M7.71 — Expressão Guiada Validada
 
-O marco registra oito novos SVGs móveis:
+O marco registra a validação dos oito estados:
 
 1. orientação comum;
-2. rascunho guiado por texto;
+2. rascunho por texto;
 3. preparação para voz;
 4. gravação em andamento;
 5. revisão da transcrição;
@@ -102,23 +94,22 @@ O marco registra oito novos SVGs móveis:
 
 ## 4. Decisões do marco
 
-M7.70 demonstra:
+M7.71 consolida:
 
-- explicação anterior ao relato;
-- orientação sobre situação, impacto, prioridade, direção e contexto;
-- texto livre sem formulário obrigatório;
-- compartilhamento mínimo e progressivo;
-- microfone inativo até explicação e escolha consciente;
-- áudio, transcrição e declaração revisada separados;
-- gravação pausável, descartável e substituível por texto;
-- transcrição corrigível antes de entrar no rascunho;
-- perguntas somente quando reduzem lacuna material;
-- razão da pergunta visível;
-- respostas `não sei`, `prefiro não informar` e adiamento;
-- assuntos diferentes organizados sem descarte silencioso;
-- relevância decidida com a Pessoa;
-- síntese estruturada com pontos em aberto;
-- continuidade para revisão da UXA-034 sem processamento implícito.
+- conteúdo de origem, ajuda temporária, compreensão inicial, persistência e personalização como camadas diferentes;
+- ajuda temporária somente após solicitação consciente;
+- texto e voz equivalentes;
+- ausência de análise automática durante a digitação;
+- ausência de destino de salvamento inventado;
+- escolha única sobre áudio, sem padrão;
+- gravação e transcrição com finalidade limitada;
+- efeitos explícitos de pausa, interrupção e descarte;
+- transcrição automática separada da versão revisada;
+- perguntas opcionais cujas opções não são recomendações;
+- assuntos organizados somente após escolha;
+- síntese derivada com natureza, origem, estado e uso opcional;
+- continuidade possível usando somente conteúdos de origem;
+- inventário e autorização antes do processamento material.
 
 ## 5. Cobertura no marco
 
@@ -128,8 +119,8 @@ M7.70 demonstra:
 |---|---:|---:|---:|
 | Início protegido geral | 4 | 4 | 0 |
 | Compreensão inicial | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Expressão Guiada do Momento Atual | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
 ### 5.2 Famílias preservadas
 
@@ -142,13 +133,13 @@ As contagens permanecem separadas.
 
 ## 6. Condição do marco
 
-M7.70 conclui materialização, não validação funcional.
+M7.71 conclui a validação funcional da Expressão Guiada.
 
-O avanço depende de autorização separada para:
+O avanço recomendado depende de autorização separada para:
 
-> **UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz**
+> **UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas**
 
-Nenhum protótipo, teste, algoritmo adaptativo ou implementação é autorizado pelo marco.
+O programa não implementará protótipo, simulador ou Engenharia de Produto.
 
 ## 7. Preservações
 
@@ -159,11 +150,9 @@ Permanecem inalterados:
 - baseline comercial candidata;
 - 46 wireframes do Opportunity Boost;
 - 22 wireframes de Coletivos materializados e validados;
-- contratos UXA-056 a UXA-058;
-- programa de 88 estados da UXA-059;
 - `Meus Coletivos` ainda não iniciado;
 - ausência de modelo de IA ou algoritmo adaptativo definido;
 - ausência de gravação, transcrição e armazenamento reais;
 - pausa da Engenharia de Produto antes de W0-01;
 - ausência de protótipo e teste com pessoas;
-- ambiente de simulação das jornadas ainda não iniciado.
+- ambiente de simulação ainda não iniciado.

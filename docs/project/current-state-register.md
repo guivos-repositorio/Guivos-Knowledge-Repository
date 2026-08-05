@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.97.0
+version: 1.98.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 depends_on:
@@ -33,6 +33,7 @@ related:
   - UXA-067
   - UXA-068
   - UXA-069
+  - UXA-070
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
@@ -40,8 +41,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.44.0
-  - M7.70
+  - ROADMAP-12.45.0
+  - M7.71
 normative: true
 ---
 
@@ -58,20 +59,17 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | Expressão Guiada do Momento Atual móvel materializada | M7.70; UXA-068 |
+| Marco | Expressão Guiada do Momento Atual reformulada e validada | M7.71; UXA-069 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
 | Jornada pessoal — início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
 | Jornada pessoal — compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
-| Jornada pessoal — expressão guiada | 8 SVGs materializados; validação pendente | UXA-068 |
+| Jornada pessoal — expressão guiada | 8 SVGs materializados, reformulados e validados | UXA-068; UXA-069 |
 | Coletivos — contratos | descoberta, reputação e interação contratadas | UXA-056 a UXA-058 |
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
-| Coletivos — descoberta | 5 SVGs materializados e validados | UXA-060; UXA-061 |
-| Coletivos — Perfil Público | 4 SVGs materializados e validados | UXA-062; UXA-063 |
-| Coletivos — revisão e solicitação | 5 SVGs materializados e validados | UXA-064; UXA-065 |
-| Coletivos — Solicitação Pendente | 8 SVGs materializados, reformulados e validados | UXA-066; UXA-067 |
-| Opportunity Boost | 46 SVGs; 36 validados por pacote e 10 pendentes | UXA-038 a UXA-055 |
+| Coletivos — cobertura visual | 22 SVGs materializados e validados | UXA-060 a UXA-067 |
+| Opportunity Boost | 46 SVGs; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -84,7 +82,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-A UXA-068 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
+A UXA-069 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -95,7 +93,7 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Materialização de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
+Validação funcional de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual
 
@@ -105,17 +103,17 @@ Materialização de wireframe não comprova preço, demanda, conversão, receita
 |---|---:|---:|---:|
 | Início protegido geral | 4 | 4 | 0 |
 | Compreensão inicial | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Expressão Guiada do Momento Atual | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
-O subtotal não representa todo o inventário visual da jornada pessoal. Ele registra somente as famílias diretamente relacionadas ao início protegido, à expressão do momento e à compreensão inicial.
+O subtotal registra somente as famílias diretamente relacionadas a esta continuidade.
 
 ### 5.2 Opportunity Boost
 
 - 46 wireframes materializados;
 - 36 validados por pacote;
 - 10 estados residuais pendentes;
-- nenhuma alteração pela UXA-068.
+- nenhuma alteração pela UXA-069.
 
 ### 5.3 Coletivos
 
@@ -127,36 +125,37 @@ O subtotal não representa todo o inventário visual da jornada pessoal. Ele reg
 | Solicitação Pendente | 8 | 8 | 0 |
 | demais famílias | 0 | 0 | não materializadas |
 
-Total atual de Coletivos: 22 SVGs materializados e 22 validados.
+Total de Coletivos: 22 SVGs materializados e 22 validados.
 
-## 6. Resultado da UXA-068
+## 6. Resultado da UXA-069
 
-Foram materializados:
+Foram reformulados e validados:
 
-- orientação anterior ao relato;
+- orientação comum;
 - rascunho guiado por texto;
-- preparação anterior à gravação de voz;
+- preparação para voz;
 - gravação em andamento;
 - revisão da transcrição;
-- esclarecimento adaptativo;
+- pergunta adaptativa;
 - separação de focos;
-- síntese estruturada do Momento Atual.
+- síntese estruturada.
 
-Foram representados:
+Foram consolidados:
 
-- situação, impacto, prioridade, direção e contexto;
-- texto livre com apoio progressivo;
-- compartilhamento mínimo sem punição;
-- microfone inativo antes da explicação;
-- áudio, transcrição e declaração revisada separados;
-- pergunta somente para lacuna material;
-- razão da pergunta visível;
-- `não sei`, `prefiro não informar` e adiamento legítimos;
-- assuntos diferentes sem descarte silencioso;
-- relevância revisada com a Pessoa;
-- desconhecidos preservados;
-- ausência de autorização pelo ato de digitar ou gravar;
-- continuidade para revisão e autorização da UXA-034 antes do processamento.
+- conteúdo de origem separado de ajuda temporária;
+- ajuda temporária somente após solicitação consciente;
+- preparação da compreensão inicial dependente de inventário e autorização;
+- persistência e personalização bloqueadas até gates próprios;
+- texto e voz equivalentes;
+- rascunho sem análise automática ou destino de salvamento inventado;
+- áudio com escolha única e sem seleção padrão;
+- gravação e transcrição com finalidade limitada;
+- interrupção, perda e descarte com efeitos visíveis;
+- transcrição automática separada da versão revisada;
+- perguntas adaptativas sem recomendação implícita;
+- organização de assuntos somente após escolha explícita;
+- síntese derivada com natureza, origem, estado e uso opcional;
+- continuidade possível usando somente conteúdos de origem.
 
 ## 7. Continuidade da jornada pessoal
 
@@ -165,15 +164,13 @@ Home pública
 → início protegido
 → escolha de modalidade
 → Expressão Guiada do Momento Atual
-→ revisão dos conteúdos recebidos
+→ inventário dos conteúdos recebidos
 → autorização específica
 → processamento visível
 → compreensão inicial revisável
 ```
 
-A UXA-068 materializa a ponte entre escolher texto ou voz e chegar a um rascunho suficientemente claro para revisão.
-
-Ela não substitui o inventário, a autorização específica ou a compreensão inicial.
+A ajuda temporária não substitui o inventário, a autorização ou a compreensão inicial.
 
 ## 8. Estado P0A de Coletivos
 
@@ -189,33 +186,30 @@ Ela não substitui o inventário, a autorização específica ou a compreensão 
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-A UXA-068 não reinicia automaticamente a sequência de Coletivos.
+A UXA-069 não reinicia automaticamente a sequência de Coletivos.
 
 ## 9. Preservações
 
 Permanecem vigentes:
 
-- relato livre continua legítimo;
 - compartilhar pouco não é falha;
+- digitar não solicita análise automática;
+- gravar autoriza somente a operação apresentada;
 - transcrição automática não é declaração confirmada;
-- desconhecido não é preenchido por suposição;
-- pergunta adicional não é obrigação de revelar;
-- relevância não é definida silenciosamente;
-- digitar, gravar e revisar não autorizam processamento;
+- ajuda temporária não cria compreensão;
+- síntese não substitui fonte;
+- desconhecido não é fato;
+- pergunta não é obrigação de revelar;
 - personalização depende de revisão e autorização próprias;
-- visualização não cria vínculo;
-- acompanhar não é participar;
 - solicitação não é aprovação;
-- convite não cria participação;
 - publicidade não compra legitimidade;
 - apoio institucional não concede autoridade ou dados;
-- cancelamento, recusa e expiração permanecem distintos;
 - protótipo, teste e Engenharia de Produto não foram iniciados.
 
 ## 10. Próxima transição autorizável
 
 A próxima transição recomendada é:
 
-**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz.**
+**UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas.**
 
-A UXA-069, `Meus Coletivos` e o ambiente de simulação das jornadas não estão iniciados e dependem de autorizações separadas.
+A UXA-070, `Meus Coletivos` e a implementação do simulador não estão iniciados e dependem de autorizações separadas.

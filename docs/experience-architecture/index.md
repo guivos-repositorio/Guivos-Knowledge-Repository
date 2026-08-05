@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.64.0
+version: 0.65.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 related:
@@ -21,7 +21,9 @@ related:
   - UXA-020
   - UXA-023
   - UXA-034
+  - UXA-035
   - UXA-036
+  - UXA-037
   - UXA-038
   - UXA-050
   - UXA-055
@@ -39,7 +41,8 @@ related:
   - UXA-067
   - UXA-068
   - UXA-069
-  - M7.70
+  - UXA-070
+  - M7.71
 normative: false
 ---
 
@@ -66,15 +69,13 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 3. Jornada pessoal — início protegido
 
-Autoridades relacionadas:
-
 | Responsabilidade | Autoridade |
 |---|---|
 | contrato do início protegido | UXA-020; UXA-023 |
 | escolha, rascunho, revisão e autorização | UXA-034; UXA-035 |
 | processamento e compreensão inicial | UXA-036; UXA-037 |
 | expressão guiada por texto e voz | UXA-068 |
-| validação futura da expressão guiada | UXA-069 |
+| validação da expressão guiada | UXA-069 |
 
 ### 3.1 Cobertura relacionada
 
@@ -82,17 +83,17 @@ Autoridades relacionadas:
 |---|---:|---:|---:|
 | Início protegido geral | 4 | 4 | 0 |
 | Compreensão inicial | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Expressão Guiada do Momento Atual | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
 A contagem permanece separada das famílias de Coletivos e Opportunity Boost.
 
-## 4. Expressão Guiada do Momento Atual
+## 4. Expressão Guiada validada
 
-A UXA-068 materializa oito estados móveis:
+A UXA-068 e a UXA-069 governam oito estados:
 
 1. orientação comum;
-2. rascunho guiado por texto;
+2. rascunho por texto;
 3. preparação para voz;
 4. gravação em andamento;
 5. revisão da transcrição;
@@ -100,22 +101,21 @@ A UXA-068 materializa oito estados móveis:
 7. separação de focos;
 8. síntese estruturada.
 
-A família demonstra:
+Foram validados:
 
-- explicação anterior ao relato;
-- situação, impacto, prioridade, direção e contexto;
-- texto livre com apoio progressivo;
-- microfone inativo antes da explicação;
-- áudio, transcrição e declaração revisada separados;
-- perguntas somente para lacunas materiais;
-- razão da pergunta visível;
-- `não sei`, `prefiro não informar` e adiamento legítimos;
-- assuntos diferentes sem descarte silencioso;
-- síntese corrigível com desconhecidos;
-- nenhuma autorização pelo ato de digitar ou gravar;
-- retorno à revisão da UXA-034 antes do processamento.
-
-Os oito SVGs aguardam validação funcional especializada pela UXA-069.
+- conteúdo de origem separado da ajuda temporária;
+- ajuda temporária somente após solicitação consciente;
+- texto e voz equivalentes;
+- rascunho sem análise ou salvamento implícitos;
+- escolha única sobre o áudio, sem padrão;
+- gravação e transcrição com finalidade limitada;
+- interrupção, descarte e retorno com efeitos conhecidos;
+- transcrição automática separada da versão revisada;
+- perguntas opcionais com razão explícita e exemplos não recomendatórios;
+- assuntos apenas sugeridos e organizados após escolha;
+- síntese identificada como item derivado, sem uso automático;
+- continuidade possível usando somente conteúdos de origem;
+- inventário e autorização da UXA-034 antes do processamento material.
 
 ## 5. Autoridades dos Coletivos
 
@@ -145,20 +145,20 @@ Os SVGs de Coletivos permanecem separados dos 46 SVGs do Opportunity Boost.
 ## 7. Decisões estruturais preservadas
 
 - relato livre permanece legítimo;
-- compartilhar pouco não é falha pessoal;
-- pergunta adicional exige utilidade explicada;
+- compartilhar pouco não é falha;
+- digitar não solicita análise automática;
+- gravar autoriza somente a operação apresentada;
 - transcrição automática não é declaração confirmada;
-- relevância não é definida silenciosamente pela Guivos;
-- desconhecido não é preenchido por suposição;
-- digitar, gravar e revisar não autorizam processamento;
-- personalização depende de revisão e autorização próprias;
+- ajuda temporária não cria compreensão;
+- síntese não substitui fonte;
+- desconhecido não é fato;
+- pergunta adicional não é obrigação de revelar;
+- personalização depende de gates próprios;
 - solicitação não é aprovação;
 - convite não cria vínculo;
 - consultar não altera fila;
-- pedido adicional não é obrigação de revelar;
 - cancelamento, recusa e expiração permanecem distintos;
 - denúncia não é revisão formal;
-- relação institucional não concede autoridade ou dados;
 - leitura, rolagem e silêncio não equivalem a confirmação.
 
 ## 8. Continuidade governada
@@ -170,7 +170,7 @@ Home pública
 → início protegido
 → escolha de modalidade
 → Expressão Guiada do Momento Atual
-→ revisão e autorização
+→ inventário e autorização
 → processamento visível
 → compreensão inicial
 ```
@@ -194,7 +194,8 @@ As cinco primeiras referências de Coletivos estão materializadas e validadas. 
 
 Não foram iniciados:
 
-- UXA-069;
+- UXA-070;
+- ambiente de simulação das jornadas;
 - modelo de IA ou algoritmo adaptativo;
 - gravação, transcrição ou armazenamento reais;
 - envio guiado de arquivos;
@@ -202,10 +203,7 @@ Não foram iniciados:
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
-- gestão do responsável;
-- revisão formal completa da recusa;
 - política jurídica;
-- ambiente de simulação das jornadas;
 - protótipo;
 - teste com pessoas;
 - identidade visual;
@@ -213,4 +211,6 @@ Não foram iniciados:
 
 ## 10. Próxima transição
 
-**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz**, mediante autorização separada.
+**UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas**, mediante autorização separada.
+
+O programa deverá definir escopo, participantes, navegação, maturidade e reutilização dos artefatos canônicos, sem implementar protótipo ou Engenharia.

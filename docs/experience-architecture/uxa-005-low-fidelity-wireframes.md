@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.46.0
+version: 0.47.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 parent: UXA-000
@@ -13,7 +13,9 @@ related:
   - UXA-020
   - UXA-023
   - UXA-034
+  - UXA-035
   - UXA-036
+  - UXA-037
   - UXA-038
   - UXA-050
   - UXA-055
@@ -31,8 +33,9 @@ related:
   - UXA-067
   - UXA-068
   - UXA-069
+  - UXA-070
   - PAS-001
-  - M7.70
+  - M7.71
 normative: false
 ---
 
@@ -62,31 +65,30 @@ Materialização não equivale a validação. Validação funcional não autoriz
 | preenchimento cinza | limite, resumo ou indisponibilidade |
 | borda tracejada | proteção, exceção ou relação comercial |
 | texto sublinhado | ação secundária ou explicação |
-| rótulo anterior ao conteúdo | origem, autoridade ou natureza comercial |
+| rótulo anterior ao conteúdo | origem, autoridade ou natureza |
 | estado textual | condição que não depende apenas de cor |
 | confirmação vazia | confirmação ainda não registrada |
+| controle circular vazio | escolha única sem seleção padrão |
 
 Cor, tipografia e iconografia não possuem significado definitivo.
 
 ## 3. Jornada pessoal — início protegido
 
-### 3.1 Cobertura relacionada
-
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
-| Início protegido geral — UXA-034 | 4 | 4 | 0 |
-| Compreensão inicial — UXA-036 | 5 | 5 | 0 |
-| Expressão Guiada do Momento Atual — UXA-068 | 8 | 0 | 8 |
-| **Subtotal relacionado** | **17** | **9** | **8** |
+| Início protegido geral — UXA-034 e UXA-035 | 4 | 4 | 0 |
+| Compreensão inicial — UXA-036 e UXA-037 | 5 | 5 | 0 |
+| Expressão Guiada — UXA-068 e UXA-069 | 8 | 8 | 0 |
+| **Subtotal relacionado** | **17** | **17** | **0** |
 
-A contagem não representa o inventário completo da jornada pessoal. Ela registra apenas as famílias diretamente relacionadas a esta continuidade.
+A contagem registra apenas as famílias diretamente relacionadas a esta continuidade.
 
-### 3.2 Expressão Guiada do Momento Atual
+### 3.1 Expressão Guiada validada
 
-A UXA-068 materializa:
+Estados:
 
 1. orientação comum;
-2. rascunho guiado por texto;
+2. rascunho por texto;
 3. preparação para voz;
 4. gravação em andamento;
 5. revisão da transcrição;
@@ -94,23 +96,21 @@ A UXA-068 materializa:
 7. separação de focos;
 8. síntese estruturada.
 
-Regras representadas:
+Regras validadas:
 
-- explicar o que a Guivos precisa compreender;
-- não exigir biografia completa;
-- aceitar texto livre e orientação progressiva;
-- manter texto e voz equivalentes;
-- impedir ativação automática do microfone;
-- separar áudio, transcrição e declaração revisada;
-- perguntar somente para reduzir lacuna material;
-- mostrar a razão da pergunta;
-- aceitar `não sei`, `prefiro não informar` e adiamento;
-- não descartar assuntos silenciosamente;
-- separar situação, impacto, prioridade, direção, contexto e desconhecidos;
-- não autorizar processamento por digitação ou gravação;
-- retornar à revisão da UXA-034.
-
-A validação funcional permanece pendente para a UXA-069.
+- conteúdo de origem separado de ajuda temporária;
+- ajuda somente após solicitação consciente;
+- texto e voz equivalentes;
+- rascunho sem análise ou persistência implícitas;
+- áudio com escolha única e sem padrão;
+- gravação e transcrição com finalidade limitada;
+- interrupção e descarte com efeito conhecido;
+- transcrição automática não confirmada;
+- perguntas opcionais sem direção recomendada;
+- separação aplicada somente após escolha;
+- síntese derivada com origem, estado e uso opcional;
+- continuidade possível usando somente fontes;
+- inventário e autorização antes do processamento material.
 
 ## 4. Opportunity Boost
 
@@ -130,8 +130,6 @@ A validação funcional permanece pendente para a UXA-069.
 
 A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 
-### 5.1 Cobertura materializada e validada
-
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | descoberta e busca móvel | 5 | 5 | 0 |
@@ -141,9 +139,9 @@ A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 | demais famílias de Coletivos | 0 | 0 | não materializadas |
 | **Total de Coletivos** | **22** | **22** | **0** |
 
-A contagem de Coletivos permanece separada do Opportunity Boost e da jornada pessoal.
+As contagens de jornada pessoal, Coletivos e Opportunity Boost permanecem separadas.
 
-### 5.2 Espinha dorsal P0A
+### 5.1 Espinha dorsal P0A
 
 | Ordem | Superfície | Estado |
 |---:|---|---|
@@ -160,23 +158,23 @@ A contagem de Coletivos permanece separada do Opportunity Boost e da jornada pes
 ## 6. Proteções transversais
 
 - compartilhamento mínimo não é falha;
-- texto livre continua legítimo;
+- digitar não solicita análise automática;
+- gravar autoriza somente a operação apresentada;
 - transcrição automática não é fato confirmado;
-- desconhecido não é preenchido por suposição;
+- ajuda temporária não cria compreensão;
+- síntese não substitui fonte;
 - pergunta não é obrigação de revelar;
-- relevância não é definida silenciosamente pela Guivos;
 - contagem não funciona como ranking;
 - publicidade não compra legitimidade, reputação ou prioridade;
 - apoio institucional não concede dados ou autoridade;
-- convite não cria vínculo;
-- decisão sobre vínculo não é reputação da Pessoa;
-- estado contratual não gera automaticamente um SVG exclusivo.
+- convite não cria vínculo.
 
 ## 7. Limites
 
 O programa ainda não inicia:
 
-- UXA-069;
+- UXA-070;
+- ambiente de simulação das jornadas;
 - modelo de IA ou algoritmo adaptativo;
 - gravação e transcrição reais;
 - envio guiado de arquivos;
@@ -184,9 +182,6 @@ O programa ainda não inicia:
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
-- gestão do responsável;
-- revisão formal completa da recusa;
-- ambiente de simulação das jornadas;
 - protótipo;
 - teste com pessoas;
 - identidade visual;
@@ -194,6 +189,4 @@ O programa ainda não inicia:
 
 ## 8. Próxima transição
 
-**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz.**
-
-O pacote dependerá de autorização separada.
+**UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas**, mediante autorização separada.
