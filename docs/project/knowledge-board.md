@@ -2,13 +2,13 @@
 id: GKR-KNOWLEDGE-BOARD-001
 title: Painel de Conhecimento
 status: active
-version: 12.42.0
+version: 12.43.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.42.0
+  - ROADMAP-12.43.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
@@ -24,9 +24,11 @@ related:
   - UXA-064
   - UXA-065
   - UXA-066
+  - UXA-067
+  - UXA-068
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
-  - M7.68
+  - M7.69
 normative: false
 ---
 
@@ -41,7 +43,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Solicitação Pendente móvel materializada | M7.68 |
+| Marco | Solicitação Pendente móvel validada | M7.69 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Candidatos | 9 em validação, 3 fundidos e 6 rejeitados | BA-STR-002-COR-001 |
 | Planos | Pessoas, Coletivos e Organizações candidatos | GEM-004-A1 |
@@ -51,7 +53,7 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | Descoberta visual | 5 SVGs materializados e validados | UXA-060; UXA-061 |
 | Perfil Público visual | 4 SVGs materializados e validados | UXA-062; UXA-063 |
 | Revisão e Solicitação visual | 5 SVGs materializados e validados | UXA-064; UXA-065 |
-| Solicitação Pendente visual | 8 SVGs materializados; validação pendente | UXA-066 |
+| Solicitação Pendente visual | 8 SVGs materializados e validados | UXA-066; UXA-067 |
 | Boost visual | 46 materializados; 36 validados; 10 pendentes | UXA-040 a UXA-055 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -64,30 +66,29 @@ Este painel resume o portfólio vigente. O estado oficial é declarado pelo Regi
 | descoberta e busca | validada | manter como origem do Perfil Público |
 | Perfil Público | validado | fornecer contexto à participação |
 | Revisão e Solicitação de Participação | validada | preservar UXA-064 e UXA-065 |
-| Solicitação Pendente | materializada | validar na UXA-067 |
-| Meus Coletivos | não iniciado | aguardar validação da pendência |
+| Solicitação Pendente | validada | preservar UXA-066 e UXA-067 |
+| Meus Coletivos | não iniciado | depende de autorização própria |
 | Central de Atualizações | não iniciada | aguardar continuidade pessoal |
 | Início do Participante | não reformulado | aguardar etapas anteriores |
 | gestão do responsável | não iniciada | aguardar experiência da Pessoa |
 
-## 4. Solicitação Pendente materializada
+## 4. Solicitação Pendente validada
 
-A UXA-066 cobre:
+A UXA-067 consolidou:
 
-- espera por decisão;
-- análise protegida;
-- pedido de informação adicional;
-- revisão da resposta adicional;
-- cancelamento;
-- aprovação;
-- recusa;
-- expiração;
-- autoridade, prazo, dados e consequência;
-- cancelamento separado de recusa;
-- expiração separada de recusa;
+- consulta sem alteração de fila;
+- estimativa sem promessa;
+- correção material sem edição silenciosa;
+- autoridade protegida limitada;
+- pedido adicional sem obrigação de revelar;
+- resposta, preferência, contestação e cancelamento separados;
+- descarte do rascunho sem cancelar a solicitação;
+- envio adicional com efeito compreensível;
+- tratamento posterior sem garantia absoluta;
 - aprovação sem função automática;
-- recusa sem reputação negativa da Pessoa;
-- proteção proporcional e exposição mínima;
+- recusa sem sanção ou reputação;
+- expiração sem recusa ou consentimento;
+- denúncia separada de revisão formal;
 - ausência de `Meus Coletivos` ativo.
 
 ## 5. Cobertura visual
@@ -98,50 +99,60 @@ A UXA-066 cobre:
 | Coletivos — descoberta | 5 | 5 | 0 |
 | Coletivos — Perfil Público | 4 | 4 | 0 |
 | Coletivos — revisão e solicitação | 5 | 5 | 0 |
-| Coletivos — Solicitação Pendente | 8 | 0 | 8 |
+| Coletivos — Solicitação Pendente | 8 | 8 | 0 |
 
-Total de Coletivos: 22 materializados, 14 validados e 8 pendentes.
+Total de Coletivos: 22 materializados e 22 validados.
 
-## 6. Proteções ativas
+## 6. Lacuna prioritária da jornada pessoal
+
+A escolha de texto, voz, arquivo ou perguntas opcionais já está representada, mas a Pessoa ainda não recebe orientação suficiente para comunicar seu Momento Atual de forma útil.
+
+A UXA-068 deverá tratar:
+
+- o que está acontecendo;
+- como isso afeta a Pessoa;
+- o que mais importa agora;
+- o que gostaria que mudasse;
+- prazos, limitações, recursos e tentativas anteriores;
+- orientação equivalente para texto e voz;
+- perguntas adaptativas;
+- síntese estruturada e revisão.
+
+A UXA-068 não está iniciada.
+
+## 7. Ambiente de simulação proposto
+
+Permanece registrada a necessidade de uma visualização transversal das jornadas de Pessoa, Coletivo e Organização.
+
+A recomendação continua sendo um único ambiente com perspectivas separadas, reutilizando telas canônicas e mostrando sequência, maturidade, dependências e lacunas.
+
+O ambiente não foi criado e depende de pacote e autorização próprios.
+
+## 8. Proteções ativas
 
 - nenhuma contagem funciona como ranking;
 - lista nominal não é pública por padrão;
 - publicidade não compra legitimidade;
 - apoio institucional não concede autoridade;
 - convite não cria vínculo;
-- canal público não concede mensagem privada;
 - leitura e silêncio não equivalem a confirmação;
 - caixas de confirmação começam vazias;
-- acessibilidade não é condição obrigatória;
-- marketing e notificações não são ativados pela participação;
-- comprovante não substitui estado pendente;
-- atraso, cancelamento e expiração não são recusa;
+- pedido adicional não é obrigação de revelar;
+- cancelamento, recusa e expiração permanecem distintos;
 - recusa não é reputação da Pessoa;
-- alegação não verificada não é fato;
-- denúncia permanece separada de avaliação.
+- denúncia não é revisão formal;
+- evento futuro não é garantia de implementação.
 
-## 7. Ambiente de simulação proposto
-
-Foi identificada a necessidade de uma visualização transversal que reúna as jornadas de:
-
-- Pessoa;
-- Coletivo;
-- Organização.
-
-A recomendação é um único ambiente de simulação com perspectivas separadas, reutilizando as telas canônicas e mostrando sequência, estado de maturidade, dependências e lacunas.
-
-O ambiente não foi criado e dependerá de pacote e autorização próprios.
-
-## 8. Fronteiras
+## 9. Fronteiras
 
 Não foram iniciados:
 
-- validação funcional da UXA-066;
+- UXA-068;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
 - gestão do responsável;
-- contestação completa;
+- revisão formal completa da recusa;
 - ambiente de simulação das jornadas;
 - política jurídica;
 - protótipo;
@@ -149,6 +160,6 @@ Não foram iniciados:
 - identidade visual;
 - Engenharia de Produto.
 
-## 9. Próxima transição
+## 10. Próxima transição
 
-**UXA-067 — Validação Funcional e Reformulação da Solicitação Pendente Móvel em Coletivos**, mediante autorização separada.
+**UXA-068 — Expressão Guiada do Momento Atual por Texto e Voz**, mediante autorização separada.
