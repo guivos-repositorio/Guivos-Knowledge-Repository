@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -16,6 +16,7 @@ related:
   - UXA-077
   - UXA-078
   - UXA-079
+  - UXA-080
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-SECTION-CLARIFICATION-001
@@ -39,7 +40,7 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 5. observe retornos, contestações e interrupções;
 6. consulte o catálogo agregado;
 7. localize superfícies e transições por ID;
-8. considere os pareceres das UXA-077 e UXA-079 e as correções da UXA-078;
+8. considere os pareceres das UXA-077 e UXA-079, as correções da UXA-078 e a promoção da UXA-080;
 9. acompanhe as lacunas sem tratá-las como fechadas.
 
 ## 3. Vistas disponíveis
@@ -59,7 +60,8 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 - [UXA-076 — materialização granular](../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md);
 - [UXA-077 — validação funcional não aprovada](../experience-architecture/uxa-077-granular-registry-functional-validation.md);
 - [UXA-078 — reformulação controlada](../experience-architecture/uxa-078-controlled-granular-registry-reformulation.md);
-- [UXA-079 — revalidação funcional aprovada com ressalvas](../experience-architecture/uxa-079-granular-registry-functional-revalidation.md).
+- [UXA-079 — revalidação funcional aprovada com ressalvas](../experience-architecture/uxa-079-granular-registry-functional-revalidation.md);
+- [UXA-080 — promoção controlada dos registros granulares](../experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md).
 
 Resultado vigente:
 
@@ -68,11 +70,11 @@ materialização granular
 → validação não aprovada
 → reformulação dos cinco achados
 → revalidação aprovada com ressalvas
-→ registros permanecem draft
-→ promoção ainda não iniciada
+→ promoção controlada dos instrumentos
+→ registros vigentes sem promoção das jornadas ou fechamento de lacunas
 ```
 
-## 5. Estado revalidado
+## 5. Estado pós-promoção
 
 | Camada | Estado | Referência |
 |---|---|---|
@@ -84,23 +86,24 @@ materialização granular
 | promoção da seção | executada seletivamente | UXA-075 |
 | primeira materialização granular | executada em `draft` | UXA-076 |
 | primeira validação granular | não aprovada | UXA-077 |
-| reformulação granular | executada; registros continuam `draft` | UXA-078 |
-| revalidação granular | aprovada com ressalvas; sem promoção | UXA-079 |
-| promoção granular | não iniciada | UXA-080 |
+| reformulação granular | executada | UXA-078 |
+| revalidação granular | aprovada com ressalvas | UXA-079 |
+| promoção granular | executada somente para os instrumentos de registro | UXA-080 |
 | protótipo navegável | não iniciado | — |
 | aplicação ou motor | não iniciado | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
 ## 6. Resultado quantitativo
 
-| Registro | Quantidade | Resultado da UXA-079 |
+| Registro | Quantidade | Estado após UXA-080 |
 |---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | IDs únicos e campos obrigatórios presentes |
-| transições documentais | 37 | IDs únicos e endpoints resolvidos |
+| superfícies, estados, responsabilidades ou fronteiras | 40 | instrumento `active` 0.3.0 |
+| transições documentais | 37 | instrumento `active` 0.3.0 |
 | referências de endpoint | 74 | todas resolvidas por IDs registrados |
 | endpoints em texto livre | 0 | aprovado |
+| detalhamentos obrigatórios | 4 | instrumentos `active` 0.2.0 |
 
-A variação frente à primeira versão decorre de separação documental. Não declara novas telas implementadas.
+A promoção não declara novas telas implementadas e não altera as classificações internas.
 
 ## 7. Domínios separados
 
@@ -122,21 +125,19 @@ A variação frente à primeira versão decorre de separação documental. Não 
 
 `GKR-SURF-COM-005` e `GKR-TRN-305` apontam para UXA-055. Os dez estados residuais continuam sem validação funcional específica.
 
-## 8. Parecer da UXA-079
+## 8. Regra da promoção granular
 
-**Aprovado com ressalvas no escopo funcional documental.**
+O status `active` dos registros significa que eles são instrumentos documentais vigentes e aprovados no escopo declarado.
 
-Foram confirmados:
+A promoção não:
 
-- resolução completa das 74 referências de endpoint;
-- coerência dos novos IDs;
-- separação entre Coletivos, oportunidades e publicação institucional;
-- rastreabilidade correta para UXA-055;
-- presença dos campos obrigatórios nas 40 entradas;
-- preservação de lacunas, incerteza e estados não examinados;
-- ausência de implementação ou promoção implícita.
+- altera a maturidade das 40 entradas;
+- altera os estados das 37 transições;
+- converte lacunas em continuidades;
+- promove as jornadas da Pessoa, Coletivo ou Organização;
+- cria implementação.
 
-Ressalvas:
+Permanecem como ressalvas:
 
 - campos de transição agregados;
 - cobertura seletiva e não exaustiva;
@@ -168,25 +169,24 @@ Uma sequência exibida é hipótese documental rastreável. Ela somente poderá 
 
 Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
-## 11. Regra de promoção
+## 11. Estado dos artefatos
 
-- esta visão geral permanece `active` porque a seção foi aprovada como instrumento documental;
+- esta visão geral permanece `active`;
 - as vistas de Pessoa, Coletivo e Organização permanecem `draft`;
 - handoffs, cenários e catálogo permanecem `active` nos limites da UXA-074;
-- os registros granulares permanecem `draft` até promoção separada;
+- os dois registros granulares estão `active` 0.3.0;
+- os quatro detalhamentos granulares estão `active` 0.2.0;
 - o registro de lacunas permanece `active` por ser observacional;
-- a UXA-079 aprova o escopo documental, mas não promove qualquer registro;
-- inclusão nesta seção não altera maturidade ou canonicidade.
+- inclusão ou promoção nesta seção não altera maturidade ou canonicidade das entradas.
 
 ## 12. Escopo vigente
 
-O status `active` desta seção não declara:
+O status `active` desta seção e dos registros não declara:
 
 - jornadas completas;
 - validação ponta a ponta;
-- promoção dos registros revalidados;
 - fechamento de lacunas;
 - prontidão para protótipo;
 - prontidão para implementação.
 
-A próxima evolução possível é a **UXA-080 — Promoção Controlada dos Registros Granulares e Sincronização Pós-Revalidação**, mediante autorização separada.
+Nenhuma nova iniciativa é iniciada ou identificada automaticamente pela UXA-080. Qualquer incremento posterior dependerá de definição e autorização separadas.
