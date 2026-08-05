@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -11,6 +11,8 @@ related:
   - UXA-071
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -74,4 +76,8 @@ O catálogo aponta para o artefato canônico. SVGs, textos normativos e wirefram
 
 A presença no catálogo não promove maturidade, não valida uma transição e não fecha uma lacuna.
 
-Esta vista permanece `draft` até nova validação funcional.
+## 5. Estado vigente
+
+A UXA-074 aprovou este catálogo com ressalva não bloqueadora. A UXA-075 promove o documento para `active` como inventário agregado por família.
+
+O cadastro individual de cada tela, estado e transição permanece evolução documental futura. O status `active` não declara granularidade completa nem validação ponta a ponta.
