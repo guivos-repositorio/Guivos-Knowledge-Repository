@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.42.0
-title: Roadmap Arquitetural — Solicitação Pendente Móvel Materializada
+id: ROADMAP-12.43.0
+title: Roadmap Arquitetural — Solicitação Pendente Móvel Validada
 status: active
-version: 12.42.0
+version: 12.43.0
 owner: Guivos
 last_updated: 2026-08-04
 supersedes_partial:
-  - ROADMAP-12.41.0
+  - ROADMAP-12.42.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -24,14 +24,16 @@ related:
   - UXA-064
   - UXA-065
   - UXA-066
+  - UXA-067
+  - UXA-068
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.68
+  - M7.69
 ---
 
-# Roadmap Arquitetural — Solicitação Pendente Móvel Materializada
+# Roadmap Arquitetural — Solicitação Pendente Móvel Validada
 
 ## 1. Autoridade
 
@@ -42,13 +44,13 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Solicitação Pendente móvel materializada | M7.68 |
+| Marco | Solicitação Pendente móvel validada | M7.69 |
 | Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
 | Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
 | Descoberta móvel | 5 SVGs materializados e validados | UXA-060; UXA-061 |
 | Perfil Público móvel | 4 SVGs materializados e validados | UXA-062; UXA-063 |
 | Revisão e Solicitação | 5 SVGs materializados e validados | UXA-064; UXA-065 |
-| Solicitação Pendente | 8 SVGs materializados; validação pendente | UXA-066 |
+| Solicitação Pendente | 8 SVGs materializados e validados | UXA-066; UXA-067 |
 | Opportunity Boost | 46 materializados; 36 validados; 10 pendentes | UXA-038 a UXA-055 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -67,6 +69,7 @@ UXA-056 — descoberta, Perfil Público e participação contratados
 → UXA-064 — revisão e solicitação materializadas
 → UXA-065 — revisão e solicitação validadas
 → UXA-066 — Solicitação Pendente materializada
+→ UXA-067 — Solicitação Pendente validada
 ```
 
 ## 4. Estado da espinha dorsal P0A
@@ -77,94 +80,87 @@ UXA-056 — descoberta, Perfil Público e participação contratados
 | 2 | Resultados de Busca | validada |
 | 3 | Perfil Público do Coletivo | validado |
 | 4 | Revisão e Solicitação de Participação | validada |
-| 5 | Solicitação Pendente | materializada; validação pendente |
+| 5 | Solicitação Pendente | validada |
 | 6 | Meus Coletivos | não iniciado |
 | 7 | Central de Atualizações | não iniciada |
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 5. Resultado da UXA-066
+## 5. Resultado da UXA-067
 
-A família contém oito estados:
+A validação consolidou:
 
-1. aguardando decisão;
-2. análise protegida;
-3. informação adicional solicitada;
-4. revisão da resposta adicional;
-5. cancelamento pela Pessoa;
-6. aprovação;
-7. recusa;
-8. expiração.
+- consulta sem alteração de fila;
+- estimativa sem promessa;
+- dado material sem edição silenciosa;
+- autoridade protegida limitada ao processo;
+- pedido adicional sem obrigação de revelar;
+- resposta, preferência, contestação e cancelamento separados;
+- descarte do rascunho sem cancelamento da solicitação;
+- envio adicional com efeito compreensível;
+- tratamento posterior sem garantia técnica ou jurídica absoluta;
+- aprovação sem função, autoridade ou notificação automática;
+- recusa sem sanção ou reputação;
+- expiração sem recusa ou consentimento;
+- denúncia separada de revisão formal;
+- recomeço condicionado à disponibilidade vigente.
 
-Foram materializados:
+## 6. Gate concluído
 
-- acompanhamento contínuo separado do comprovante;
-- estado, data, identificador e autoridade;
-- prazo estimado sem garantia;
-- dados enviados, protegidos e finalidade;
-- espera distinta de ação necessária;
-- pedido adicional com pergunta e autoridade;
-- resposta revisável antes do envio;
-- cancelamento separado de recusa;
-- expiração separada de recusa;
-- aprovação sem papel automático;
-- recusa sem funcionar como reputação;
-- análise protegida com exposição mínima.
+O gate funcional da quinta referência P0A foi concluído.
 
-## 6. Gate obrigatório
+Isso não inicia automaticamente `Meus Coletivos`, outra família de Coletivos ou implementação.
 
-Antes de iniciar `Meus Coletivos`, deverá ser concluída:
+## 7. Lacuna transversal priorizada
 
-> **UXA-067 — Validação Funcional e Reformulação da Solicitação Pendente Móvel em Coletivos**
+A jornada pessoal possui escolha genérica entre texto, voz, arquivo e perguntas opcionais, mas ainda não possui uma superfície dedicada a orientar a expressão do Momento Atual.
 
-O gate deverá examinar os oito SVGs como continuidade única entre envio, espera, ação necessária, decisão e encerramento.
+A próxima iniciativa recomendada é:
 
-## 7. Próxima sequência prevista
+> **UXA-068 — Expressão Guiada do Momento Atual por Texto e Voz**
 
-Após validação e nova autorização, a sequência poderá avançar para:
+O pacote deverá materializar:
+
+- explicação do que a Guivos precisa compreender;
+- situação, impacto, prioridade, direção e contexto;
+- relato livre com orientação;
+- voz com guia anterior à gravação;
+- perguntas adaptativas para lacunas;
+- síntese estruturada;
+- correção e revisão antes da compreensão inicial.
+
+## 8. Sequência prevista
 
 ```text
-UXA-067 — validar Solicitação Pendente
-→ Meus Coletivos
-→ Central de Atualizações
-→ Início do Participante
-→ Visão Geral do Responsável
+UXA-068 — materializar Expressão Guiada do Momento Atual
+→ validação funcional da expressão guiada
+→ pacote transversal do ambiente de simulação das jornadas
 ```
 
-`Meus Coletivos` deverá organizar participações, acompanhamentos, solicitações, convites e pausas sem duplicar o conteúdo detalhado da Solicitação Pendente.
-
-## 8. Gates preservados
-
-Antes de avançar além da UXA-066, deverão ser demonstrados:
-
-- estado e autoridade compreensíveis;
-- prazo sem garantia indevida;
-- dados adicionais proporcionais;
-- cancelamento com consequência conhecida;
-- recusa e expiração distinguíveis;
-- informação adicional não coercitiva;
-- proteção de grupos sensíveis;
-- histórico sem exposição indevida;
-- continuidade para `Meus Coletivos` sem vínculo implícito.
+A ordem das famílias restantes de Coletivos deverá ser reavaliada após o tratamento dessa lacuna transversal, sem considerar `Meus Coletivos` automaticamente iniciado.
 
 ## 9. Ambiente de simulação das jornadas
 
-A necessidade de visualizar as telas em sequência para Pessoa, Coletivo e Organização foi identificada como iniciativa transversal relevante.
+A necessidade de visualizar as telas em sequência para Pessoa, Coletivo e Organização permanece registrada.
 
-Ela deverá ser tratada em pacote próprio para:
+O ambiente deverá:
 
-- reutilizar os artefatos canônicos existentes;
+- reutilizar artefatos canônicos;
 - ordenar jornadas por participante;
 - mostrar estados materializados, validados, pendentes e não iniciados;
-- revelar transições ausentes e dependências;
-- permitir alternância entre perspectivas relacionadas.
+- revelar transições ausentes;
+- alternar perspectivas relacionadas.
 
-Essa iniciativa não faz parte da UXA-066 e não está autorizada para implementação.
+Essa iniciativa não está autorizada para implementação.
 
-## 10. Frentes paralelas preservadas
+## 10. Frentes preservadas
 
 Não são reabertas automaticamente:
 
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante;
+- gestão do responsável;
 - validação dos 10 estados residuais do Opportunity Boost;
 - Resultados Empresariais;
 - preços ou baseline comercial;
@@ -176,4 +172,4 @@ Não são reabertas automaticamente:
 
 ## 11. Regra de autorização
 
-Integração da UXA-066 não inicia a UXA-067, `Meus Coletivos` ou o ambiente de simulação. Cada pacote continuará exigindo autorização própria para criação e autorização separada para integração.
+Integração da UXA-067 não inicia a UXA-068, `Meus Coletivos` ou o ambiente de simulação. Cada pacote exige autorização própria para criação e autorização separada para integração.
