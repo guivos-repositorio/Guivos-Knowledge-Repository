@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.65.0
+version: 0.66.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 related:
@@ -15,7 +15,9 @@ related:
   - UXA-011
   - UXA-011-A1
   - UXA-014
+  - UXA-015
   - UXA-016
+  - UXA-017
   - UXA-018
   - UXA-019
   - UXA-020
@@ -42,7 +44,8 @@ related:
   - UXA-068
   - UXA-069
   - UXA-070
-  - M7.71
+  - UXA-071
+  - M7.72
 normative: false
 ---
 
@@ -59,7 +62,7 @@ Ela governa hierarquia, decisão, continuidade, confirmação, autoridade, priva
 ```text
 contrato funcional
 → programa governado
-→ materialização visual
+→ materialização visual ou documental
 → validação funcional
 → protótipo e teste, quando autorizados
 → Engenharia de Produto, quando autorizada
@@ -140,9 +143,90 @@ Foram validados:
 | Solicitação Pendente | 8 | 8 | 0 |
 | **Total de Coletivos** | **22** | **22** | **0** |
 
-Os SVGs de Coletivos permanecem separados dos 46 SVGs do Opportunity Boost.
+`Meus Coletivos`, Central de Atualizações, Início do Participante reformulado e Visão Geral do Responsável permanecem não iniciados.
 
-## 7. Decisões estruturais preservadas
+## 7. Programa do Ambiente de Simulação
+
+A UXA-070 estabelece um ambiente documental para inspecionar jornadas sem duplicar artefatos canônicos.
+
+Participantes estruturais:
+
+- Pessoa;
+- Coletivo;
+- Organização.
+
+O programa diferencia participante, papel, perspectiva e autoridade. Visitante, solicitante, responsável, representante institucional, especialista e patrocinador são perspectivas ou papéis contextuais, não novos participantes estruturais.
+
+A unidade mínima será um nó de jornada referenciado. Cada ligação será uma transição governada com origem, destino, condição, autoridade, efeito, dados, reversibilidade e evidência.
+
+Estados de maturidade controlados:
+
+- contratado;
+- programado;
+- materializado;
+- validado;
+- reformulação pendente;
+- não iniciado;
+- bloqueado;
+- supersedido;
+- arquivado;
+- indeterminado.
+
+O ambiente deverá exibir lacunas e continuidades ausentes sem criar telas genéricas ou setas presumidas.
+
+## 8. Reutilização canônica
+
+- artefatos serão referenciados por ID, caminho e versão;
+- arquivos canônicos permanecerão em modo somente leitura;
+- uma mesma referência poderá aparecer em várias perspectivas sem cópia;
+- anotações e sobreposições permanecerão fora do artefato de origem;
+- nenhuma ligação será criada por proximidade visual ou numeração;
+- inclusão no ambiente não altera maturidade, prioridade ou canonicidade;
+- Opportunity Boost permanecerá camada comercial identificada, não participante ou autoridade.
+
+## 9. Continuidade governada
+
+### 9.1 Jornada pessoal
+
+```text
+Home pública
+→ início protegido
+→ escolha de modalidade
+→ Expressão Guiada do Momento Atual
+→ inventário e autorização
+→ processamento visível
+→ compreensão inicial
+```
+
+### 9.2 Coletivos P0A
+
+```text
+Explorar Coletivos
+→ Resultados de Busca
+→ Perfil Público
+→ Revisão e Solicitação de Participação
+→ Solicitação Pendente
+→ Meus Coletivos
+→ Central de Atualizações
+→ Início do Participante
+```
+
+As cinco primeiras referências estão materializadas e validadas. As seguintes serão exibidas como lacunas, não como experiências existentes.
+
+### 9.3 Organização e Coletivo
+
+```text
+proposta
+→ avaliação bilateral
+→ aprovação pelas autoridades legítimas
+→ relação ativa
+→ revisão
+→ renovação, ajuste, pausa ou encerramento
+```
+
+A relação não transfere propriedade, direção ou dados além do escopo autorizado.
+
+## 10. Decisões estruturais preservadas
 
 - relato livre permanece legítimo;
 - compartilhar pouco não é falha;
@@ -158,44 +242,18 @@ Os SVGs de Coletivos permanecem separados dos 46 SVGs do Opportunity Boost.
 - convite não cria vínculo;
 - consultar não altera fila;
 - cancelamento, recusa e expiração permanecem distintos;
-- denúncia não é revisão formal;
+- publicidade não compra relevância, reputação ou autoridade;
 - leitura, rolagem e silêncio não equivalem a confirmação.
 
-## 8. Continuidade governada
-
-### 8.1 Jornada pessoal
-
-```text
-Home pública
-→ início protegido
-→ escolha de modalidade
-→ Expressão Guiada do Momento Atual
-→ inventário e autorização
-→ processamento visível
-→ compreensão inicial
-```
-
-### 8.2 Coletivos P0A
-
-```text
-Explorar Coletivos
-→ Resultados de Busca
-→ Perfil Público
-→ Revisão e Solicitação de Participação
-→ Solicitação Pendente
-→ Meus Coletivos
-→ Central de Atualizações
-→ Início do Participante
-```
-
-As cinco primeiras referências de Coletivos estão materializadas e validadas. As demais permanecem não iniciadas.
-
-## 9. Limites
+## 11. Limites
 
 Não foram iniciados:
 
-- UXA-070;
-- ambiente de simulação das jornadas;
+- UXA-071;
+- materialização do mapa integrado;
+- SVG ou tela do ambiente de simulação;
+- protótipo navegável;
+- aplicação ou motor de simulação;
 - modelo de IA ou algoritmo adaptativo;
 - gravação, transcrição ou armazenamento reais;
 - envio guiado de arquivos;
@@ -204,13 +262,12 @@ Não foram iniciados:
 - Central de Atualizações;
 - Início do Participante reformulado;
 - política jurídica;
-- protótipo;
 - teste com pessoas;
 - identidade visual;
 - Engenharia de Produto.
 
-## 10. Próxima transição
+## 12. Próxima transição
 
-**UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas**, mediante autorização separada.
+**UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições**, mediante autorização separada.
 
-O programa deverá definir escopo, participantes, navegação, maturidade e reutilização dos artefatos canônicos, sem implementar protótipo ou Engenharia.
+A futura referência permanecerá documental e não corresponderá automaticamente a protótipo ou implementação.
