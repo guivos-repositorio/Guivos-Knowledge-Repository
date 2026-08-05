@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.00.0
+version: 2.01.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-05
 depends_on:
@@ -43,6 +43,8 @@ related:
   - UXA-071
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
   - GKR-JOURNEYS-001
   - GEM-004-A1
   - GEM-007-A1
@@ -51,7 +53,7 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.47.0
+  - ROADMAP-12.48.0
   - M7.72
 normative: true
 ---
@@ -69,7 +71,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | Jornadas Integradas reformuladas, navegáveis e sincronizadas; nova validação pendente | M7.72; UXA-073 |
+| Marco | Jornadas Integradas aprovadas com ressalvas no escopo documental e promovidas seletivamente | M7.72; UXA-074; UXA-075 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
@@ -81,7 +83,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
 | Coletivos — cobertura visual | 22 SVGs materializados e validados no escopo de origem | UXA-060 a UXA-067 |
 | Opportunity Boost | 46 SVGs; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
-| Jornadas Integradas | seção materializada, reformulada e navegável; validação funcional pendente | UXA-071 a UXA-073 |
+| Jornadas Integradas | seção e instrumentos de apoio vigentes; vistas de Pessoa, Coletivo e Organização permanecem `draft` | UXA-070 a UXA-075 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -94,7 +96,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-As UXA-070 a UXA-073 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
+As UXA-070 a UXA-075 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -105,7 +107,7 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Programa ou mapa documental não comprova preço, demanda, conversão, receita ou viabilidade.
+Programa, mapa ou validação documental não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual preservada
 
@@ -148,26 +150,44 @@ UXA-070 — programa funcional concluído
 → UXA-071 — primeira materialização documental integrada
 → UXA-072 — validação funcional não aprovada até reformulação
 → UXA-073 — reformulação, navegação e sincronização executadas
-→ UXA-074 — nova validação funcional ainda não iniciada
+→ UXA-074 — revalidação aprovada com ressalvas no escopo documental
+→ UXA-075 — promoção seletiva e sincronização pós-validação executadas
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 7. Resultado da UXA-073
+## 7. Resultado da UXA-074
 
-Foram executados:
+A UXA-074 aprovou, com ressalvas, a seção `Jornadas Integradas` como instrumento documental de:
 
-- criação da seção de primeiro nível `Jornadas Integradas` na navegação do GKR;
-- separação entre maturidade primária, autoridade contratual, referência materializada, evidência de validação e continuidade integrada;
-- explicitação de assimetrias entre Pessoa, Coletivo e Organização;
-- reformulação dos seis cenários com conclusões permitidas e proibidas;
-- diferenciação entre cobertura das superfícies e cobertura das transições;
-- transformação do registro de lacunas em referência observacional `active`;
-- sincronização deste registro, do roadmap e do índice da Arquitetura da Experiência.
+- leitura navegável;
+- comparação de perspectivas;
+- rastreabilidade;
+- inspeção de handoffs;
+- exposição de lacunas;
+- separação entre superfícies, transições e jornadas integradas.
 
-Os mapas reformulados permanecem `draft` até nova validação funcional aprovada.
+A aprovação não declarou jornadas completas, não fechou lacunas e não autorizou protótipo ou implementação.
 
-## 8. Continuidade da jornada pessoal
+## 8. Resultado da UXA-075
+
+Foram promovidos para `active`:
+
+- visão geral da seção;
+- matriz resumida de handoffs;
+- cenários documentais governados;
+- catálogo agregado de telas e transições;
+- registro observacional de lacunas, que já estava `active`.
+
+Permanecem `draft`:
+
+- Jornada Integrada da Pessoa;
+- Jornada Integrada do Coletivo;
+- Jornada Integrada da Organização.
+
+A permanência em `draft` decorre da incompletude das continuidades representadas, não de falha na estrutura documental.
+
+## 9. Continuidade da jornada pessoal
 
 ```text
 Home pública
@@ -181,9 +201,9 @@ Home pública
 → continuidade recorrente
 ```
 
-As superfícies possuem evidências nos pacotes de origem. A continuidade integrada entre todos os pacotes permanece pendente de nova validação.
+As superfícies possuem evidências nos pacotes de origem. A continuidade integrada entre todos os pacotes permanece incompleta, especialmente na ligação com a Tela Hoje.
 
-## 9. Estado P0A de Coletivos
+## 10. Estado P0A de Coletivos
 
 | Ordem | Superfície | Maturidade primária | Continuidade integrada |
 |---:|---|---|---|
@@ -197,7 +217,7 @@ As superfícies possuem evidências nos pacotes de origem. A continuidade integr
 | 8 | Início do Participante | reformulação pendente | ausente |
 | 9 | Visão Geral do Responsável | não iniciado | ausente |
 
-## 10. Estado das Jornadas Integradas
+## 11. Estado das Jornadas Integradas
 
 | Camada | Estado |
 |---|---|
@@ -206,14 +226,35 @@ As superfícies possuem evidências nos pacotes de origem. A continuidade integr
 | primeira validação | não aprovada pela UXA-072 |
 | reformulação documental | executada pela UXA-073 |
 | navegação de primeiro nível | adicionada pela UXA-073 |
-| sincronização de estado | executada pela UXA-073 |
-| nova validação funcional | não iniciada |
+| revalidação documental | aprovada com ressalvas pela UXA-074 |
+| promoção controlada | executada seletivamente pela UXA-075 |
+| visão geral | active |
+| Pessoa, Coletivo e Organização | draft por incompletude explícita |
+| handoffs, cenários e catálogo | active dentro dos limites aprovados |
+| lacunas | active, observacional e não promocional |
 | protótipo navegável | não iniciado |
 | aplicação ou motor | não iniciado |
 | teste com pessoas | não iniciado |
 | Engenharia de Produto | não iniciada |
 
-## 11. Preservações
+## 12. Ressalvas vigentes
+
+Permanecem abertas:
+
+- matriz de handoffs resumida, não exaustiva;
+- catálogo agregado por famílias;
+- continuidade entre compreensão inicial e Tela Hoje;
+- `Meus Coletivos`;
+- Central de Atualizações;
+- Início do Participante reformulado;
+- Visão Geral do Responsável;
+- operação bilateral de solicitações;
+- relação Organização–Coletivo materializada;
+- matriz institucional completa;
+- 10 estados residuais do Opportunity Boost;
+- efeitos externos de oportunidades.
+
+## 13. Preservações
 
 Permanecem vigentes:
 
@@ -231,12 +272,13 @@ Permanecem vigentes:
 - apoio institucional não concede autoridade ou dados;
 - mapa documental não cria jornada ou transição inexistente;
 - superfície validada não equivale a jornada integrada validada;
+- status `active` não equivale a completude;
 - protótipo, teste e Engenharia de Produto não foram iniciados.
 
-## 12. Próxima transição autorizável
+## 14. Próxima transição autorizável
 
-A próxima transição recomendada é:
+A próxima evolução documental possível é:
 
-**UXA-074 — Nova Validação Funcional das Jornadas Integradas Reformuladas.**
+**UXA-076 — Registro Granular de Transições e Superfícies das Jornadas Integradas.**
 
-A UXA-074, as lacunas de produto e a implementação do simulador não estão iniciadas e dependem de autorizações separadas.
+A UXA-076, as lacunas de produto e a implementação do simulador não estão iniciadas e dependem de autorizações separadas.
