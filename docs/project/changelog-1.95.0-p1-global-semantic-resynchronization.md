@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.95.0-P1
- title: Changelog 1.95.0 — Ressincronização Semântica Global
+title: Changelog 1.95.0 — Ressincronização Semântica Global
 status: draft
 version: 1.95.0
 owner: Repositório de Conhecimento da Guivos
