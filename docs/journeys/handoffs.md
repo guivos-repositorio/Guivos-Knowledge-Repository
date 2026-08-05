@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -13,6 +13,8 @@ related:
   - UXA-070
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -58,5 +60,10 @@ Cada handoff deverá declarar:
 - origem materializada não presume destino materializado;
 - retorno visível para a Pessoa não comprova a existência da operação do responsável;
 - contrato bilateral não equivale a interface bilateral;
-- nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa;
-- esta vista permanece `draft` até nova validação funcional.
+- nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa.
+
+## 5. Estado vigente
+
+A UXA-074 aprovou esta matriz com ressalva não bloqueadora. A UXA-075 promove o documento para `active` como síntese governada dos handoffs prioritários.
+
+O status `active` não declara que a matriz seja exaustiva. O detalhamento individual de dados, efeitos, tempo e interrupção de cada transição permanece evolução documental possível.

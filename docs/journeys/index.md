@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -10,6 +10,8 @@ related:
   - UXA-071
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
   - GKR-JOURNEY-SECTION-CLARIFICATION-001
 normative: false
 ---
@@ -67,21 +69,34 @@ cobertura das superfícies
 | programa funcional | concluído | UXA-070 |
 | primeira materialização documental | integrada | UXA-071 |
 | primeira validação funcional | não aprovada até reformulação | UXA-072 |
-| reformulação, navegação e sincronização | executadas neste pacote | UXA-073 |
-| nova validação funcional | não iniciada | futura UXA-074 |
+| reformulação, navegação e sincronização | executadas | UXA-073 |
+| nova validação funcional | aprovada com ressalvas no escopo documental | UXA-074 |
+| promoção e sincronização pós-validação | executadas seletivamente | UXA-075 |
 | protótipo navegável | não iniciado | — |
 | aplicação ou motor | não iniciado | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
 ## 6. Regra de leitura
 
-Uma sequência exibida nesta seção é uma hipótese documental rastreável. Ela só poderá ser declarada como jornada integrada validada quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência funcional suficiente.
+Uma sequência exibida nesta seção é uma hipótese documental rastreável. Ela só poderá ser declarada como jornada integrada completa quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência funcional suficiente.
 
 Quando a continuidade necessária ainda não estiver materializada ou validada, ela será apresentada como **parcial**, **ausente** ou **não examinada**, nunca preenchida por suposição.
 
 ## 7. Regra de promoção
 
-- os mapas permanecem `draft` até nova validação funcional aprovada;
-- o registro de lacunas pode permanecer `active` por ser observacional e não promocional;
+- esta visão geral está `active` porque a seção foi aprovada como instrumento documental de leitura e governança;
+- as vistas de Pessoa, Coletivo e Organização permanecem `draft` por representarem jornadas incompletas;
+- handoffs, cenários e catálogo estão `active` dentro dos limites explicitados pela UXA-074;
+- o registro de lacunas permanece `active` por ser observacional e não promocional;
 - inclusão nesta seção não altera maturidade, prioridade ou canonicidade;
-- nenhuma referência será promovida para `active` apenas por estar navegável no GKR.
+- nenhuma referência é promovida apenas por estar navegável no GKR.
+
+## 8. Escopo vigente
+
+O status `active` desta seção confirma sua validade documental. Ele não declara:
+
+- jornadas completas;
+- validação ponta a ponta;
+- fechamento de lacunas;
+- prontidão para protótipo;
+- prontidão para implementação.

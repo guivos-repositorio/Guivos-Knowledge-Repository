@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -18,6 +18,8 @@ related:
   - UXA-067
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -86,5 +88,15 @@ representação e autoridade
 - análise de solicitações é protegida;
 - reputação é contextual, contestável e não universal;
 - atividade, alcance e volume não comprovam avanço humano;
-- ausência visual permanece explícita;
-- a vista permanece `draft` até nova validação funcional.
+- ausência visual permanece explícita.
+
+## 5. Estado da vista
+
+A UXA-074 aprovou esta vista como representação documental corretamente delimitada. A UXA-075 mantém o status `draft` porque:
+
+- a operação do responsável permanece majoritariamente não materializada;
+- o handoff de solicitação possui evidência apenas na perspectiva da Pessoa;
+- a formação do vínculo e a continuidade bilateral não estão validadas ponta a ponta;
+- a relação Organização–Coletivo permanece contratada e não materializada.
+
+O status `draft` preserva a distinção entre validade documental da vista e completude da jornada do Coletivo.

@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.67.0
+version: 0.68.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -47,6 +47,8 @@ related:
   - UXA-071
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
   - GKR-JOURNEYS-001
   - M7.72
 normative: false
@@ -67,6 +69,7 @@ contrato funcional
 → programa governado
 → materialização visual ou documental
 → validação funcional
+→ promoção controlada, quando aplicável
 → protótipo e teste, quando autorizados
 → Engenharia de Produto, quando autorizada
 ```
@@ -148,7 +151,7 @@ Foram validados no escopo dos respectivos pacotes:
 
 As 22 referências cobrem principalmente a perspectiva da Pessoa. `Meus Coletivos`, Central de Atualizações, Início do Participante reformulado, Visão Geral do Responsável e a operação bilateral permanecem ausentes.
 
-## 7. Programa e materialização das Jornadas Integradas
+## 7. Programa, validação e promoção das Jornadas Integradas
 
 A sequência vigente é:
 
@@ -157,7 +160,8 @@ UXA-070 — programa funcional concluído
 → UXA-071 — primeira materialização documental integrada
 → UXA-072 — validação funcional não aprovada até reformulação
 → UXA-073 — reformulação, navegação e sincronização executadas
-→ UXA-074 — nova validação funcional ainda não iniciada
+→ UXA-074 — revalidação aprovada com ressalvas no escopo documental
+→ UXA-075 — promoção seletiva e sincronização pós-validação executadas
 ```
 
 Participantes estruturais:
@@ -168,9 +172,9 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante institucional, especialista e patrocinador são perspectivas ou papéis contextuais, não novos participantes estruturais.
 
-## 8. Modelo de evidência reformulado
+## 8. Modelo de evidência vigente
 
-Cada nó ou família das Jornadas Integradas deve separar:
+Cada nó ou família das Jornadas Integradas separa:
 
 | Campo | Função |
 |---|---|
@@ -211,7 +215,7 @@ Home pública
 → continuidade recorrente
 ```
 
-As superfícies possuem validações locais. A continuidade integrada entre todos os pacotes permanece pendente da UXA-074.
+As superfícies possuem validações locais. A continuidade integrada entre todos os pacotes permanece incompleta, especialmente na ligação com a Tela Hoje.
 
 ### 10.2 Coletivos P0A
 
@@ -245,13 +249,15 @@ A relação está contratada pela UXA-019, mas não possui materialização bila
 
 | Artefato | Estado |
 |---|---|
-| navegação de primeiro nível | adicionada pela UXA-073 |
-| visão geral, Pessoa, Coletivo e Organização | reformulados; `draft` |
-| handoffs | reformulados; `draft` |
-| cenários | reformulados; `draft` |
-| catálogo | reformulado; `draft` |
-| lacunas | observacional; `active` |
-| nova validação funcional | não iniciada |
+| navegação de primeiro nível | active |
+| visão geral | active |
+| Pessoa, Coletivo e Organização | draft por incompletude explícita |
+| handoffs | active como matriz resumida governada |
+| cenários | active como hipóteses documentais governadas |
+| catálogo | active como inventário agregado |
+| lacunas | active, observacional e não promocional |
+| revalidação funcional | aprovada com ressalvas pela UXA-074 |
+| promoção controlada | executada pela UXA-075 |
 | protótipo ou aplicação | não iniciados |
 
 ## 12. Decisões estruturais preservadas
@@ -272,13 +278,14 @@ A relação está contratada pela UXA-019, mas não possui materialização bila
 - cancelamento, recusa e expiração permanecem distintos;
 - publicidade não compra relevância, reputação ou autoridade;
 - leitura, rolagem e silêncio não equivalem a confirmação;
-- superfície validada não equivale a jornada integrada validada.
+- superfície validada não equivale a jornada integrada validada;
+- status `active` não equivale a completude.
 
 ## 13. Limites
 
 Não foram iniciados:
 
-- UXA-074;
+- UXA-076;
 - protótipo navegável;
 - aplicação ou motor de simulação;
 - modelo de IA ou algoritmo adaptativo;
@@ -294,8 +301,8 @@ Não foram iniciados:
 - teste com pessoas;
 - Engenharia de Produto.
 
-## 14. Próxima transição
+## 14. Próxima evolução documental possível
 
-**UXA-074 — Nova Validação Funcional das Jornadas Integradas Reformuladas**, mediante autorização separada.
+**UXA-076 — Registro Granular de Transições e Superfícies das Jornadas Integradas**, mediante autorização separada.
 
-A futura validação não corresponde automaticamente a protótipo ou implementação.
+A futura evolução poderá detalhar cada tela, estado e transição sem iniciar automaticamente protótipo ou implementação.
