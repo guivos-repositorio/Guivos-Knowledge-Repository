@@ -212,6 +212,21 @@ nav:
           - UXA-016 — Wireframe do Coletivo: experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md
           - UXA-018 — Validação do Coletivo: experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md
           - UXA-019 — Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
+      - Jornadas Integradas — programa e governança:
+          - UXA-070 — Programa Funcional: experience-architecture/uxa-070-journey-simulation-environment-functional-program.md
+          - UXA-071 — Materialização Documental: experience-architecture/uxa-071-integrated-journeys-map-materialization.md
+          - UXA-072 — Validação e Reformulação: experience-architecture/uxa-072-integrated-journeys-functional-validation-and-reformulation.md
+          - UXA-073 — Reformulação, Navegação e Sincronização: experience-architecture/uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md
+
+  - Jornadas Integradas:
+      - Visão Geral: journeys/index.md
+      - Pessoa: journeys/person.md
+      - Coletivo: journeys/collective.md
+      - Organização: journeys/organization.md
+      - Handoffs: journeys/handoffs.md
+      - Cenários: journeys/scenarios.md
+      - Catálogo de Telas: journeys/screen-catalog.md
+      - Lacunas: journeys/gaps.md
 
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
