@@ -2,7 +2,7 @@
 id: GKR-SOURCE-INTAKE-001
 title: Registro de Intake das Fontes Acumuladas
 status: draft
-version: 0.5.6
+version: 0.5.7
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -168,7 +168,7 @@ Um item somente é resolvido por decisão verificável de absorção, referênci
 ## 9. Checkpoint congelado
 
 ```text
-Source intake: GKR-SOURCE-INTAKE-001 0.5.6
+Source intake: GKR-SOURCE-INTAKE-001 0.5.7
 Claims trace: GKR-CLAIMS-TRACE-001
 Sources catalogued: 41
 Authority changes: none
