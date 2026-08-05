@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.52.0
-title: Roadmap Arquitetural — Revalidação Granular Aprovada com Ressalvas
+id: ROADMAP-12.53.0
+title: Roadmap Arquitetural — Promoção Granular Controlada Concluída
 status: active
-version: 12.52.0
+version: 12.53.0
 owner: Guivos
 last_updated: 2026-08-05
 supersedes_partial:
-  - ROADMAP-12.51.0
+  - ROADMAP-12.52.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -48,6 +48,7 @@ related:
   - UXA-077
   - UXA-078
   - UXA-079
+  - UXA-080
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -58,7 +59,7 @@ related:
   - M7.72
 ---
 
-# Roadmap Arquitetural — Revalidação Granular Aprovada com Ressalvas
+# Roadmap Arquitetural — Promoção Granular Controlada Concluída
 
 ## 1. Autoridade
 
@@ -69,7 +70,7 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | cinco bloqueios corrigidos e revalidação granular aprovada com ressalvas; promoção não iniciada | UXA-077 a UXA-079; M7.72 |
+| Marco | registros granulares revalidados e promovidos como instrumentos documentais vigentes | UXA-077 a UXA-080; M7.72 |
 | Início protegido geral | 4 SVGs materializados e validados no escopo de origem | UXA-034; UXA-035 |
 | Compreensão inicial | 5 SVGs materializados e validados no escopo de origem | UXA-036; UXA-037 |
 | Expressão guiada | 8 SVGs materializados, reformulados e validados no escopo de origem | UXA-068; UXA-069 |
@@ -79,10 +80,9 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Coletivos materializados | 22 SVGs materializados e validados na perspectiva coberta | UXA-060 a UXA-067 |
 | Opportunity Boost | 46 materializados; 36 validados; 10 estados da UXA-055 pendentes | UXA-038 a UXA-055 |
 | Jornadas Integradas | seção e instrumentos de apoio `active`; vistas principais `draft` | UXA-070 a UXA-075 |
-| Registro granular de superfícies | 40 entradas em `draft` 0.2.0; revalidadas | UXA-076; UXA-078; UXA-079 |
-| Registro granular de transições | 37 entradas em `draft` 0.2.0; revalidadas | UXA-076; UXA-078; UXA-079 |
-| Revalidação granular | aprovada com ressalvas no escopo funcional documental | UXA-079 |
-| Promoção granular | não iniciada | UXA-080 |
+| Registro granular de superfícies | 40 entradas; instrumento `active` 0.3.0 | UXA-076 a UXA-080 |
+| Registro granular de transições | 37 entradas; instrumento `active` 0.3.0 | UXA-076 a UXA-080 |
+| Detalhamentos granulares | quatro instrumentos `active` 0.2.0 | UXA-078 a UXA-080 |
 | Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -99,46 +99,41 @@ UXA-070 — programa funcional concluído
 → UXA-077 — validação granular não aprovada até correção obrigatória
 → UXA-078 — reformulação controlada executada
 → UXA-079 — revalidação aprovada com ressalvas no escopo funcional documental
-→ UXA-080 — promoção granular, somente mediante autorização separada
-→ protótipo, somente mediante autorização posterior
-→ Engenharia de Produto, somente após gates próprios
+→ UXA-080 — promoção controlada dos instrumentos granulares executada
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
-## 4. Resultado da UXA-079
+## 4. Resultado da UXA-080
 
-| Critério | Resultado |
-|---|---|
-| 40 IDs de superfície, estado, responsabilidade ou fronteira | aprovados |
-| 37 IDs de transição | aprovados |
-| 74 referências de endpoint | resolvidas por IDs registrados |
-| endpoints em texto livre | 0 |
-| separação entre Coletivos e oportunidades | aprovada |
-| separação entre publicação e detalhe | aprovada |
-| rastreabilidade dos estados residuais | aprovada para UXA-055 |
-| campos obrigatórios das superfícies | presentes para as 40 entradas |
-| preservação de lacunas e incerteza | aprovada |
-| prontidão para promoção documental controlada | permitida em pacote separado |
+| Artefato | Antes | Depois |
+|---|---|---|
+| registro granular de superfícies | `draft` 0.2.0 | `active` 0.3.0 |
+| registro granular de transições | `draft` 0.2.0 | `active` 0.3.0 |
+| detalhamento da Pessoa | `draft` 0.1.0 | `active` 0.2.0 |
+| detalhamento do Coletivo | `draft` 0.1.0 | `active` 0.2.0 |
+| detalhamento da Organização | `draft` 0.1.0 | `active` 0.2.0 |
+| detalhamento comercial e de fronteira | `draft` 0.1.0 | `active` 0.2.0 |
 
-**Parecer:** aprovado com ressalvas no escopo funcional documental.
+A promoção é do instrumento de registro, não das superfícies, transições ou jornadas representadas.
 
-## 5. Ressalvas preservadas
+## 5. Estado quantitativo preservado
+
+| Registro | Quantidade | Estado |
+|---|---:|---|
+| superfícies, estados, responsabilidades ou fronteiras | 40 | registradas em instrumento `active` |
+| transições documentais | 37 | registradas em instrumento `active` |
+| referências de endpoint | 74 | resolvidas |
+| endpoints em texto livre | 0 | aprovado |
+
+## 6. Ressalvas preservadas
 
 - campos de transição continuam agrupados em colunas compostas;
 - a cobertura continua seletiva e não exaustiva;
 - `COM` permanece agrupamento documental, não participante estrutural;
 - continuidade ponta a ponta não foi aprovada;
-- maturidades individuais e lacunas permanecem inalteradas.
-
-## 6. Estado quantitativo
-
-| Registro | Quantidade | Estado |
-|---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | `draft` 0.2.0; revalidado |
-| transições documentais | 37 | `draft` 0.2.0; revalidado |
-| referências de endpoint | 74 | resolvidas |
-| endpoints em texto livre | 0 | aprovado |
+- maturidades individuais e lacunas permanecem inalteradas;
+- as jornadas da Pessoa, Coletivo e Organização continuam `draft`.
 
 ## 7. Domínios separados
 
@@ -162,7 +157,7 @@ A sequência é documental e permanece parcial ou não examinada conforme cada t
 
 A fonte específica dos dez estados residuais é UXA-055. A validação funcional específica desses estados continua pendente.
 
-## 8. Estado documental após UXA-079
+## 8. Estado documental após UXA-080
 
 | Artefato | Estado |
 |---|---|
@@ -170,9 +165,9 @@ A fonte específica dos dez estados residuais é UXA-055. A validação funciona
 | Pessoa, Coletivo e Organização | `draft` por incompletude explícita |
 | handoffs, cenários e catálogo agregado | `active` dentro dos limites da UXA-074 |
 | lacunas | `active`, observacional e não promocional |
-| registro granular de superfícies | `draft` 0.2.0; revalidado e apto a promoção separada |
-| registro granular de transições | `draft` 0.2.0; revalidado e apto a promoção separada |
-| promoção granular | não iniciada |
+| registro granular de superfícies | `active` 0.3.0 |
+| registro granular de transições | `active` 0.3.0 |
+| quatro detalhamentos granulares | `active` 0.2.0 |
 | protótipo, aplicação e motor | não iniciados |
 | Engenharia de Produto | não iniciada |
 
@@ -194,26 +189,16 @@ Permanecem abertas:
 - efeitos externos de oportunidades;
 - matriz integrada de erros, retornos e interrupções.
 
-## 10. Próxima iniciativa possível
+## 10. Próxima iniciativa
 
-A próxima iniciativa documental possível é:
+Nenhuma nova iniciativa é iniciada ou identificada automaticamente pela UXA-080.
 
-> **UXA-080 — Promoção Controlada dos Registros Granulares e Sincronização Pós-Revalidação**
-
-O pacote futuro deverá limitar-se a:
-
-- promover seletivamente os instrumentos de registro, se autorizado;
-- preservar maturidades e estados individuais;
-- manter jornadas principais em `draft`;
-- manter lacunas abertas;
-- sincronizar índices, roadmap e estado global;
-- não iniciar protótipo ou Engenharia de Produto.
+Qualquer incremento posterior deverá ser definido e autorizado em pacote próprio.
 
 ## 11. Frentes preservadas
 
 Não são reabertas automaticamente:
 
-- UXA-080;
 - lacunas de produto;
 - Resultados Empresariais;
 - preços ou baseline comercial;
@@ -225,6 +210,6 @@ Não são reabertas automaticamente:
 
 ## 12. Regra de autorização
 
-A integração da UXA-079 registrará somente o parecer funcional documental. Ela não promoverá os registros e não iniciará a UXA-080 ou qualquer frente de produto.
+A integração da UXA-080 registrará somente a promoção documental controlada. Ela não iniciará nova UXA ou qualquer frente de produto.
 
 Cada pacote exige autorização própria para criação e autorização separada para integração.
