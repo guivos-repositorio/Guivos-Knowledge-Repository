@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.72.0
+version: 0.73.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -53,6 +53,7 @@ related:
   - UXA-077
   - UXA-078
   - UXA-079
+  - UXA-080
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -109,7 +110,8 @@ As contagens não comprovam validação ponta a ponta.
 - convite não cria vínculo;
 - publicidade não compra relevância, reputação ou autoridade;
 - correção documental não equivale a aprovação funcional;
-- aprovação funcional documental não equivale a promoção.
+- aprovação funcional documental não equivale a promoção;
+- promoção do instrumento não promove os objetos registrados.
 
 ## 5. Autoridades dos Coletivos
 
@@ -139,6 +141,7 @@ UXA-070 — programa funcional concluído
 → UXA-077 — validação granular não aprovada até correção obrigatória
 → UXA-078 — reformulação controlada executada
 → UXA-079 — revalidação granular aprovada com ressalvas no escopo funcional documental
+→ UXA-080 — promoção controlada dos instrumentos granulares executada
 ```
 
 Participantes estruturais:
@@ -149,48 +152,34 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante institucional, especialista, anunciante e patrocinador são perspectivas, papéis ou operadores contextuais, não novos participantes estruturais.
 
-## 7. Resultado da UXA-079
+## 7. Resultado das UXA-079 e UXA-080
 
-[UXA-079 — Revalidação Funcional dos Registros Granulares Reformulados](uxa-079-granular-registry-functional-revalidation.md) confirma a resolução dos cinco bloqueios da UXA-077.
+[UXA-079 — Revalidação Funcional dos Registros Granulares Reformulados](uxa-079-granular-registry-functional-revalidation.md) confirmou a resolução dos cinco bloqueios da UXA-077.
 
-### 7.1 Integridade confirmada
+[UXA-080 — Promoção Controlada dos Registros Granulares](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md) promove os seis instrumentos aprovados.
 
-| Registro | Quantidade | Resultado |
+### 7.1 Estado quantitativo
+
+| Registro | Quantidade | Estado documental |
 |---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | IDs únicos e campos obrigatórios presentes |
-| transições documentais | 37 | IDs únicos e endpoints resolvidos |
-| referências de endpoint | 74 | todas resolvidas por IDs registrados |
+| superfícies, estados, responsabilidades ou fronteiras | 40 | instrumento `active` 0.3.0 |
+| transições documentais | 37 | instrumento `active` 0.3.0 |
+| referências de endpoint | 74 | resolvidas por IDs registrados |
 | endpoints em texto livre | 0 | aprovado |
 
-### 7.2 Separações confirmadas
+### 7.2 Detalhamentos
 
-```text
-Coletivos:
-GKR-SURF-PER-101 → GKR-SURF-PER-102 → GKR-SURF-PER-103
+Os detalhamentos da Pessoa, Coletivo, Organização e camada comercial/fronteira estão `active` 0.2.0 como partes integrantes do registro de superfícies.
 
-Oportunidades:
-GKR-SURF-ORG-003
-→ GKR-SURF-PER-201
-↔ GKR-SURF-PER-202
-→ GKR-SURF-PER-203
-→ GKR-SURF-BND-001
-```
+### 7.3 Limite da promoção
 
-- `GKR-SURF-ORG-003` representa estado institucional;
-- `GKR-SURF-PER-203` representa o Detalhe de Oportunidade;
-- `GKR-SURF-BND-001` é fronteira documental, não participante ou tela;
-- `GKR-SURF-COM-005` e `GKR-TRN-305` apontam para UXA-055.
-
-### 7.3 Parecer e ressalvas
-
-**Parecer:** aprovado com ressalvas no escopo funcional documental.
-
-Permanecem:
+O status `active` aprova os instrumentos de rastreabilidade. Permanecem preservados:
 
 - campos de transição agregados;
 - cobertura seletiva e não exaustiva;
 - `COM` como agrupamento documental;
-- lacunas e continuidades parciais ou não examinadas.
+- lacunas e continuidades parciais, ausentes ou não examinadas;
+- jornadas principais em `draft`.
 
 ## 8. Reutilização canônica
 
@@ -198,7 +187,7 @@ Permanecem:
 - arquivos canônicos permanecem em modo somente leitura;
 - uma referência pode aparecer em várias perspectivas sem cópia;
 - nenhuma ligação é criada por proximidade visual;
-- inclusão no ambiente não altera maturidade, prioridade ou canonicidade;
+- inclusão ou promoção do registro não altera maturidade, prioridade ou canonicidade das entradas;
 - Opportunity Boost permanece camada comercial identificada;
 - fronteira documental não equivale a integração técnica.
 
@@ -213,17 +202,16 @@ Permanecem:
 | cenários | `active` como hipóteses documentais governadas |
 | catálogo | `active` como inventário agregado |
 | lacunas | `active`, observacional e não promocional |
-| registro granular de superfícies | `draft` 0.2.0; revalidado e apto a promoção separada |
-| registro granular de transições | `draft` 0.2.0; revalidado e apto a promoção separada |
-| promoção granular | não iniciada |
+| registro granular de superfícies | `active` 0.3.0 |
+| registro granular de transições | `active` 0.3.0 |
+| quatro detalhamentos granulares | `active` 0.2.0 |
 | protótipo ou aplicação | não iniciados |
 
 ## 10. Limites
 
 Não foram iniciados:
 
-- UXA-080;
-- promoção funcional dos registros granulares;
+- nova iniciativa UXA;
 - protótipo navegável;
 - aplicação ou motor de simulação;
 - modelo de IA ou algoritmo adaptativo;
@@ -236,6 +224,8 @@ Não foram iniciados:
 - teste com pessoas;
 - Engenharia de Produto.
 
-## 11. Próxima evolução documental possível
+## 11. Próxima evolução documental
 
-**UXA-080 — Promoção Controlada dos Registros Granulares e Sincronização Pós-Revalidação**, mediante autorização separada.
+Nenhuma nova evolução é iniciada ou identificada automaticamente pela UXA-080.
+
+Qualquer incremento posterior dependerá de definição e autorização separadas.

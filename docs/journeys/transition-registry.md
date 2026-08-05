@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -12,6 +12,8 @@ related:
   - UXA-076
   - UXA-077
   - UXA-078
+  - UXA-079
+  - UXA-080
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -24,16 +26,16 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.2.0 executa as correções obrigatórias da UXA-077:
+A versão 0.3.0 incorpora a promoção controlada da UXA-080 após a revalidação aprovada com ressalvas pela UXA-079. Permanecem vigentes as correções da UXA-078:
 
 - todos os endpoints resolvem para IDs registrados;
 - oportunidades utilizam superfícies próprias de mapa, lista e detalhe;
 - o estado institucional de publicação permanece separado da experiência da Pessoa;
 - a fronteira externa recebe endpoint documental controlado;
 - o retorno do Opportunity Boost é dividido entre mapa e lista orgânicos;
-- os dez estados residuais passam a apontar para UXA-055.
+- os dez estados residuais apontam para UXA-055.
 
-Nenhuma linha executa lógica de negócio ou cria ligação inexistente.
+O status `active` aprova o registro como instrumento documental. Nenhuma linha executa lógica de negócio ou cria ligação implementada.
 
 ## 2. Convenções de estado
 
@@ -118,8 +120,8 @@ O aumento de 34 para 37 transições decorre da divisão controlada de mapa, lis
 
 ### F01 — endpoints
 
-- `GKR-TRN-205` agora termina em `GKR-SURF-BND-001`;
-- `GKR-TRN-304` agora termina em `GKR-SURF-PER-201`;
+- `GKR-TRN-205` termina em `GKR-SURF-BND-001`;
+- `GKR-TRN-304` termina em `GKR-SURF-PER-201`;
 - o retorno alternativo à lista é registrado por `GKR-TRN-306` em `GKR-SURF-PER-202`;
 - nenhuma origem ou destino permanece em texto livre.
 
@@ -150,5 +152,5 @@ O aumento de 34 para 37 transições decorre da divisão controlada de mapa, lis
 - transições ausentes permanecem registradas sem seta afirmativa de implementação;
 - fronteira externa identificada não presume execução ou resultado externo;
 - a cobertura permanece seletiva e não exaustiva;
-- o registro permanece `draft` até nova validação funcional específica;
-- a UXA-078 não promove nem valida estas transições.
+- o status `active` aprova o instrumento de registro, não a continuidade ponta a ponta;
+- a UXA-080 não altera os estados, evidências ou lacunas das 37 transições.

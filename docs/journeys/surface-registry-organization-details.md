@@ -1,8 +1,8 @@
 ---
 id: GKR-JOURNEY-SURFACE-DETAIL-ORGANIZATION-001
 title: Detalhamento Obrigatório das Superfícies da Organização
-status: draft
-version: 0.1.0
+status: active
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -11,6 +11,8 @@ related:
   - UXA-076
   - UXA-077
   - UXA-078
+  - UXA-079
+  - UXA-080
 normative: false
 ---
 
@@ -18,7 +20,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status.
+Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas.
 
 ## 2. Campos por identificador
 
@@ -38,4 +40,4 @@ Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não
 
 ## 4. Estado
 
-O detalhamento permanece `draft` junto com o registro principal e aguarda revalidação funcional específica.
+O detalhamento está `active` como parte integrante do registro promovido pela UXA-080. O status aprova o instrumento documental e não altera maturidade, continuidade ou lacuna de qualquer entrada.
