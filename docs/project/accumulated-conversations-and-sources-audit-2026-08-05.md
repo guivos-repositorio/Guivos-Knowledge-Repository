@@ -2,7 +2,7 @@
 id: GKR-AUD-ACCUMULATED-003
 title: Auditoria das Conversas, Rascunhos e Fontes Acumuladas
 status: draft
-version: 0.3.1
+version: 0.3.2
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -397,7 +397,21 @@ A consolidação temática de `GC-CON-001` exigirá autorização própria e nã
 9. rebasear ou sincronizar este PR após eventual integração do P1;
 10. obter autorização separada para qualquer frente posterior.
 
-## 11. Declaração de não promoção
+## 11. Checkpoint congelado desta rodada
+
+```text
+Audit register: GKR-AUD-ACCUMULATED-003 0.3.2
+Source intake: GKR-SOURCE-INTAKE-001 0.5.2
+Claims trace: GKR-CLAIMS-TRACE-001 0.5.1
+Sources catalogued: 41
+Claims traced: 33
+Formal deviations: 18
+Changed files in PR: 7
+State change: no
+Merge authorization: no
+```
+
+## 12. Declaração de não promoção
 
 A presença de uma fonte nesta auditoria significa apenas identificação, classificação e encaminhamento.
 
