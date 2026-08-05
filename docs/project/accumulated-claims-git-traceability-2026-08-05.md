@@ -2,7 +2,7 @@
 id: GKR-CLAIMS-TRACE-001
 title: Rastreabilidade Git das Alegações Acumuladas
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -14,6 +14,7 @@ related:
   - GEM-010
   - GEM-010-A2
   - PAS-001-CV-CONTRACT-001
+  - BA-STR-002-CODR-001
   - VAL-002
   - VAL-006
   - VAL-007
@@ -87,6 +88,7 @@ Uma busca sem resultado não comprova ausência absoluta. Nesses casos, o result
 | CLM-020 | UXA-071 foi iniciada | `GKR-STATE-001` 1.99.0 e ausência de artefato UXA-071 na baseline | Registro do Estado Atual | `not_located` | UXA-071 permanece não iniciada; a seção integrada de telas não pertence ao P0 |
 | CLM-021 | Product Engineering foi retomada | `GKR-STATE-001` 1.99.0 | Registro do Estado Atual | `not_located` | Engenharia de Produto permanece pausada antes de W0-01 |
 | CLM-022 | Existe Outcome empresarial canônico | Registro do Estado Atual e limites do Candidate Outcome Register | superfícies de estado e estratégia | `not_located` | candidatos e validações não equivalem a Outcome empresarial canônico |
+| CLM-023 | `ECO-CAND-001` foi aprovado como Outcome | PR nº 73; merge `765faa4d790a495229dc85727f0512e13f612f1d` | `docs/business-architecture/strategy/candidate-outcome-decision-register.md` | `partially_verified` | decisão humana aceitou `Reformulate`; candidato permanece `Under Validation`, sem código canônico, AQS-O01 ou Outcome aprovado |
 
 ## 5. Correções decorrentes
 
@@ -99,8 +101,9 @@ A matriz permite corrigir as seguintes classificações do intake:
 5. VAL-002, VAL-006 e VAL-007 passam a usar as versões atuais da `main`;
 6. o rascunho VAL externo 1.1.0 passa a `verified_historical`;
 7. preços do Opportunity Boost passam a ser descritos somente como parâmetros candidatos;
-8. `GC-CON-001` permanece bloqueado por risco de colisão e ausência de vínculo Git resolvido;
-9. Neo4j, proteção corporativa, Fundação e internacionalização permanecem sem promoção.
+8. `ECO-CAND-001` passa a ter decisão `Reformulate` verificada, mantendo `Under Validation`;
+9. `GC-CON-001` permanece bloqueado por risco de colisão e ausência de vínculo Git resolvido;
+10. Neo4j, proteção corporativa, Fundação e internacionalização permanecem sem promoção.
 
 ## 6. Lacunas restantes do P0
 
@@ -110,6 +113,7 @@ Ainda precisam de reconciliação específica:
 - relação entre o documento externo `GKR-001` e a governança atualmente integrada;
 - localização e classificação do draft histórico da arquitetura do GKR;
 - destino do plano editorial `GC-EDT-002` e do draft `GC-GOV-001`;
+- comparação do rascunho externo do Contexto Vivo com a extensão normativa integrada;
 - confirmação de evidência operacional de pré-teste, formulário publicado, coleta e base VAL;
 - inventário restrito de marcas, domínios e ativos efetivamente titulados;
 - prova jurídica e operacional de iniciativas institucionais ou territoriais;
@@ -126,7 +130,9 @@ Exemplos:
 - correto: “a COEM cobriu 18 candidatos sem criar Outcome canônico”;
 - incorreto: “os resultados empresariais foram validados”;
 - correto: “existem preços candidatos documentados para o Opportunity Boost”;
-- incorreto: “a Guivos já vende o Opportunity Boost”.
+- incorreto: “a Guivos já vende o Opportunity Boost”;
+- correto: “ECO-CAND-001 foi reformulado e continua em validação”;
+- incorreto: “ECO-CAND-001 é um Outcome aprovado”.
 
 ## 8. Declaração de não promoção
 
