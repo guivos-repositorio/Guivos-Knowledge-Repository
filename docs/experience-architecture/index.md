@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.68.0
+version: 0.69.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -49,7 +49,10 @@ related:
   - UXA-073
   - UXA-074
   - UXA-075
+  - UXA-076
   - GKR-JOURNEYS-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - M7.72
 normative: false
 ---
@@ -110,21 +113,16 @@ A UXA-068 e a UXA-069 governam oito estados:
 7. separação de focos;
 8. síntese estruturada.
 
-Foram validados no escopo dos respectivos pacotes:
+Permanecem preservados:
 
 - conteúdo de origem separado da ajuda temporária;
-- ajuda temporária somente após solicitação consciente;
+- ajuda somente após solicitação consciente;
 - texto e voz equivalentes;
 - rascunho sem análise ou salvamento implícitos;
-- escolha única sobre o áudio, sem padrão;
 - gravação e transcrição com finalidade limitada;
 - interrupção, descarte e retorno com efeitos conhecidos;
-- transcrição automática separada da versão revisada;
-- perguntas opcionais com razão explícita e exemplos não recomendatórios;
-- assuntos apenas sugeridos e organizados após escolha;
-- síntese identificada como item derivado, sem uso automático;
-- continuidade possível usando somente conteúdos de origem;
-- inventário e autorização da UXA-034 antes do processamento material.
+- síntese identificada como derivada;
+- inventário e autorização antes do processamento material.
 
 ## 5. Autoridades dos Coletivos
 
@@ -151,7 +149,7 @@ Foram validados no escopo dos respectivos pacotes:
 
 As 22 referências cobrem principalmente a perspectiva da Pessoa. `Meus Coletivos`, Central de Atualizações, Início do Participante reformulado, Visão Geral do Responsável e a operação bilateral permanecem ausentes.
 
-## 7. Programa, validação e promoção das Jornadas Integradas
+## 7. Programa e evolução das Jornadas Integradas
 
 A sequência vigente é:
 
@@ -162,6 +160,7 @@ UXA-070 — programa funcional concluído
 → UXA-073 — reformulação, navegação e sincronização executadas
 → UXA-074 — revalidação aprovada com ressalvas no escopo documental
 → UXA-075 — promoção seletiva e sincronização pós-validação executadas
+→ UXA-076 — registros granulares de superfícies e transições materializados em draft
 ```
 
 Participantes estruturais:
@@ -174,7 +173,7 @@ Visitante, solicitante, responsável, representante institucional, especialista 
 
 ## 8. Modelo de evidência vigente
 
-Cada nó ou família das Jornadas Integradas separa:
+Cada nó, superfície ou família separa:
 
 | Campo | Função |
 |---|---|
@@ -190,7 +189,31 @@ cobertura das superfícies
 ≠ validação da jornada integrada
 ```
 
-## 9. Reutilização canônica
+## 9. Registros granulares da UXA-076
+
+A UXA-076 materializa:
+
+- `GKR-JOURNEY-SURFACE-REGISTRY-001` — cadastro individual de superfícies, estados, responsabilidades e ausências conhecidas;
+- `GKR-JOURNEY-TRANSITION-REGISTRY-001` — cadastro individual de ligações documentais e seus estados de evidência.
+
+### 9.1 Identificadores
+
+```text
+GKR-SURF-<PARTICIPANTE>-NNN
+GKR-TRN-NNN
+```
+
+Os IDs permitem:
+
+- rastrear origem e destino;
+- relacionar handoffs e lacunas;
+- distinguir validação local de continuidade integrada;
+- registrar ligações ausentes sem inventar interface;
+- localizar autoridade e evidência por item.
+
+A atribuição de ID não equivale a implementação ou validação.
+
+## 10. Reutilização canônica
 
 - artefatos são referenciados por ID, caminho e versão;
 - arquivos canônicos permanecem em modo somente leitura;
@@ -200,9 +223,9 @@ cobertura das superfícies
 - inclusão no ambiente não altera maturidade, prioridade ou canonicidade;
 - Opportunity Boost permanece camada comercial identificada, não participante ou autoridade.
 
-## 10. Continuidade governada
+## 11. Continuidade governada
 
-### 10.1 Jornada pessoal
+### 11.1 Jornada pessoal
 
 ```text
 Home pública
@@ -215,9 +238,9 @@ Home pública
 → continuidade recorrente
 ```
 
-As superfícies possuem validações locais. A continuidade integrada entre todos os pacotes permanece incompleta, especialmente na ligação com a Tela Hoje.
+As superfícies possuem validações locais. A ligação com a Tela Hoje permanece não examinada como conjunto e está registrada como `GKR-TRN-007`.
 
-### 10.2 Coletivos P0A
+### 11.2 Coletivos P0A
 
 ```text
 Explorar Coletivos
@@ -230,9 +253,9 @@ Explorar Coletivos
 → Início do Participante
 ```
 
-As cinco primeiras referências possuem materialização e validação na perspectiva coberta. As seguintes permanecem lacunas. A visão do responsável não pode ser inferida pelos estados apresentados à Pessoa.
+As cinco primeiras referências possuem materialização e validação na perspectiva coberta. As seguintes permanecem lacunas identificadas no registro de superfícies. A visão do responsável não pode ser inferida pelos estados apresentados à Pessoa.
 
-### 10.3 Organização e Coletivo
+### 11.3 Organização e Coletivo
 
 ```text
 proposta
@@ -243,9 +266,9 @@ proposta
 → renovação, ajuste, pausa ou encerramento
 ```
 
-A relação está contratada pela UXA-019, mas não possui materialização bilateral específica validada.
+A relação está contratada pela UXA-019 e registrada granularmente, mas não possui materialização bilateral específica validada.
 
-## 11. Estado da seção documental
+## 12. Estado da seção documental
 
 | Artefato | Estado |
 |---|---|
@@ -256,11 +279,12 @@ A relação está contratada pela UXA-019, mas não possui materialização bila
 | cenários | active como hipóteses documentais governadas |
 | catálogo | active como inventário agregado |
 | lacunas | active, observacional e não promocional |
-| revalidação funcional | aprovada com ressalvas pela UXA-074 |
-| promoção controlada | executada pela UXA-075 |
+| registro granular de superfícies | draft |
+| registro granular de transições | draft |
+| validação granular | não iniciada |
 | protótipo ou aplicação | não iniciados |
 
-## 12. Decisões estruturais preservadas
+## 13. Decisões estruturais preservadas
 
 - relato livre permanece legítimo;
 - compartilhar pouco não é falha;
@@ -279,13 +303,15 @@ A relação está contratada pela UXA-019, mas não possui materialização bila
 - publicidade não compra relevância, reputação ou autoridade;
 - leitura, rolagem e silêncio não equivalem a confirmação;
 - superfície validada não equivale a jornada integrada validada;
+- atribuição de ID não equivale a implementação;
 - status `active` não equivale a completude.
 
-## 13. Limites
+## 14. Limites
 
 Não foram iniciados:
 
-- UXA-076;
+- UXA-077;
+- validação funcional dos registros granulares;
 - protótipo navegável;
 - aplicação ou motor de simulação;
 - modelo de IA ou algoritmo adaptativo;
@@ -301,8 +327,8 @@ Não foram iniciados:
 - teste com pessoas;
 - Engenharia de Produto.
 
-## 14. Próxima evolução documental possível
+## 15. Próxima evolução documental possível
 
-**UXA-076 — Registro Granular de Transições e Superfícies das Jornadas Integradas**, mediante autorização separada.
+**UXA-077 — Validação Funcional do Registro Granular de Transições e Superfícies**, mediante autorização separada.
 
-A futura evolução poderá detalhar cada tela, estado e transição sem iniciar automaticamente protótipo ou implementação.
+A futura validação deverá verificar os IDs, as fontes, os estados de evidência, a cobertura dos campos e a ausência de ligações inventadas.

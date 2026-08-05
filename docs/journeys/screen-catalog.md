@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -13,6 +13,9 @@ related:
   - UXA-073
   - UXA-074
   - UXA-075
+  - UXA-076
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
 
@@ -29,7 +32,7 @@ superfície validada
 ≠ jornada integrada validada
 ```
 
-## 2. Inventário reformulado por família
+## 2. Inventário agregado por família
 
 | Participante ou camada | Família | Superfícies materializadas | Superfícies validadas | Entrada integrada | Saída integrada | Perspectiva coberta | Lacuna associada |
 |---|---|---:|---:|---|---|---|---|
@@ -47,37 +50,45 @@ superfície validada
 
 As contagens pertencem a escopos distintos e não devem ser somadas como inventário global homogêneo.
 
-## 3. Campos obrigatórios por referência
+## 3. Registros granulares
 
-Cada entrada futura do catálogo deverá registrar:
+A UXA-076 materializa duas vistas detalhadas, mantidas em `draft` até validação específica:
 
-- ID da tela ou estado;
+- [Registro Granular de Superfícies e Estados](surface-registry.md);
+- [Registro Granular de Transições](transition-registry.md).
+
+O registro de superfícies atribui IDs individuais a telas, estados, responsabilidades programadas e ausências conhecidas.
+
+O registro de transições atribui IDs às ligações documentais, distinguindo transições localmente validadas, parciais, contratadas, ausentes e não examinadas.
+
+## 4. Campos obrigatórios por referência
+
+Cada entrada granular registra, quando aplicável:
+
+- ID da superfície ou estado;
 - nome compreensível;
 - participante e perspectiva;
-- jornada e posição;
+- família e posição na jornada;
 - canal;
-- caminho do SVG ou documento;
 - autoridade contratual;
 - pacote de materialização;
 - pacote de validação;
-- versão;
 - maturidade primária;
-- transição de entrada e sua evidência;
-- transição de saída e sua evidência;
+- entrada e saída conhecidas;
+- continuidade integrada;
 - caminhos alternativos;
 - estados de erro, retorno ou exceção;
-- autoridade da decisão;
 - dependências;
 - lacunas conhecidas.
 
-## 4. Regra de fonte única
+## 5. Regra de fonte única
 
-O catálogo aponta para o artefato canônico. SVGs, textos normativos e wireframes não são copiados para esta seção.
+O catálogo e os registros granulares apontam para o artefato canônico. SVGs, textos normativos e wireframes não são copiados para esta seção.
 
 A presença no catálogo não promove maturidade, não valida uma transição e não fecha uma lacuna.
 
-## 5. Estado vigente
+## 6. Estado vigente
 
-A UXA-074 aprovou este catálogo com ressalva não bloqueadora. A UXA-075 promove o documento para `active` como inventário agregado por família.
+A UXA-074 aprovou este catálogo com ressalva não bloqueadora. A UXA-075 promoveu o documento para `active` como inventário agregado por família.
 
-O cadastro individual de cada tela, estado e transição permanece evolução documental futura. O status `active` não declara granularidade completa nem validação ponta a ponta.
+A UXA-076 materializou a granularidade individual em registros separados. Esses registros permanecem `draft`; portanto, a granularidade está documentada, mas ainda não possui validação funcional própria.
