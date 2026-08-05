@@ -1,37 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Rascunho guiado por texto do Momento Atual</title>
-  <desc id="desc">Tela móvel de texto livre com orientação progressiva sobre situação, impacto e direção, sem transformar as perguntas em formulário obrigatório.</desc>
+  <title id="title">Rascunho validado por texto do Momento Atual</title>
+  <desc id="desc">Tela móvel de texto livre que separa conteúdo de origem, persistência e solicitação opcional de ajuda temporária.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="28" font-family="Arial, sans-serif" font-size="11">09:41</text>
   <text x="20" y="58" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar à orientação</text>
-  <text x="370" y="58" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Salvar e sair</text>
+  <text x="370" y="58" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Pausar e ver opções</text>
   <text x="20" y="96" font-family="Arial, sans-serif" font-size="21" font-weight="700">Conte o que está acontecendo</text>
-  <text x="20" y="120" font-family="Arial, sans-serif" font-size="9">Escreva livremente. As perguntas abaixo são apoios, não exigências.</text>
-  <rect x="20" y="143" width="350" height="99" rx="10" fill="#f5f5f5" stroke="#777777"/>
+  <text x="20" y="120" font-family="Arial, sans-serif" font-size="9">Escreva livremente. As perguntas são referências opcionais.</text>
+  <rect x="20" y="143" width="350" height="96" rx="10" fill="#f5f5f5" stroke="#777777"/>
   <text x="32" y="166" font-family="Arial, sans-serif" font-size="10" font-weight="700">Pode ajudar contar</text>
-  <text x="32" y="188" font-family="Arial, sans-serif" font-size="8">1. O que está acontecendo agora?</text>
-  <text x="32" y="207" font-family="Arial, sans-serif" font-size="8">2. O que isso está dificultando ou causando?</text>
-  <text x="32" y="226" font-family="Arial, sans-serif" font-size="8">3. O que gostaria de mudar, decidir ou compreender?</text>
-  <rect x="20" y="258" width="350" height="211" rx="10" fill="#ffffff" stroke="#111111"/>
-  <text x="32" y="282" font-family="Arial, sans-serif" font-size="9" fill="#555555">Seu rascunho</text>
-  <text x="32" y="313" font-family="Arial, sans-serif" font-size="9">Estou considerando mudar de trabalho porque não vejo</text>
-  <text x="32" y="333" font-family="Arial, sans-serif" font-size="9">possibilidade de crescimento onde estou. Tenho experiência,</text>
-  <text x="32" y="353" font-family="Arial, sans-serif" font-size="9">mas não consigo demonstrá-la bem nos processos seletivos.</text>
-  <line x1="32" y1="390" x2="358" y2="390" stroke="#bbbbbb"/>
-  <text x="32" y="418" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Continuar escrevendo</text>
-  <text x="358" y="418" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Remover trecho</text>
-  <text x="32" y="449" font-family="Arial, sans-serif" font-size="7">Digitar não autoriza processamento ou personalização.</text>
-  <rect x="20" y="485" width="350" height="119" rx="10" fill="#f5f5f5" stroke="#999999"/>
-  <text x="32" y="508" font-family="Arial, sans-serif" font-size="10" font-weight="700">O que já aparece no relato</text>
-  <text x="32" y="530" font-family="Arial, sans-serif" font-size="8">Situação: possível transição profissional</text>
-  <text x="32" y="550" font-family="Arial, sans-serif" font-size="8">Impacto: dificuldade em demonstrar experiência</text>
-  <text x="32" y="570" font-family="Arial, sans-serif" font-size="8">Ainda em aberto: direção desejada e condições relevantes</text>
-  <text x="32" y="592" font-family="Arial, sans-serif" font-size="7">Esta organização é provisória e poderá ser corrigida.</text>
-  <rect x="20" y="622" width="350" height="44" rx="8" fill="#222222"/>
-  <text x="195" y="649" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Continuar com uma pergunta útil</text>
-  <rect x="20" y="681" width="350" height="42" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="707" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Revisar somente este rascunho</text>
-  <text x="195" y="752" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Trocar para voz</text>
-  <text x="195" y="787" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Pausar e manter rascunho</text>
+  <text x="32" y="188" font-family="Arial, sans-serif" font-size="8">O que está acontecendo? Como isso afeta você?</text>
+  <text x="32" y="207" font-family="Arial, sans-serif" font-size="8">O que gostaria de mudar, decidir ou compreender?</text>
+  <text x="32" y="228" font-family="Arial, sans-serif" font-size="7">Você pode ignorar estas referências e escrever do seu jeito.</text>
+  <rect x="20" y="255" width="350" height="190" rx="10" fill="#ffffff" stroke="#111111"/>
+  <text x="32" y="279" font-family="Arial, sans-serif" font-size="9" fill="#555555">Conteúdo de origem · texto da Pessoa</text>
+  <text x="32" y="310" font-family="Arial, sans-serif" font-size="9">Estou considerando mudar de trabalho porque não vejo</text>
+  <text x="32" y="330" font-family="Arial, sans-serif" font-size="9">possibilidade de crescimento onde estou. Tenho experiência,</text>
+  <text x="32" y="350" font-family="Arial, sans-serif" font-size="9">mas não consigo demonstrá-la bem nos processos seletivos.</text>
+  <line x1="32" y1="379" x2="358" y2="379" stroke="#bbbbbb"/>
+  <text x="32" y="405" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Continuar escrevendo</text>
+  <text x="358" y="405" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Remover trecho...</text>
+  <text x="32" y="433" font-family="Arial, sans-serif" font-size="7">Remoção exigirá confirmação e não autoriza outros usos.</text>
+  <rect x="20" y="462" width="350" height="89" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="700">Estado do rascunho</text>
+  <text x="32" y="507" font-family="Arial, sans-serif" font-size="8">Ainda não persistido. Digitar não solicita análise automática.</text>
+  <text x="32" y="527" font-family="Arial, sans-serif" font-size="8">Ao pausar, você verá destino, duração e efeito antes de salvar.</text>
+  <text x="32" y="543" font-family="Arial, sans-serif" font-size="7">Você também poderá sair sem salvar ou excluir o rascunho.</text>
+  <rect x="20" y="568" width="350" height="100" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="591" font-family="Arial, sans-serif" font-size="10" font-weight="700">Ajuda temporária ainda não solicitada</text>
+  <text x="32" y="613" font-family="Arial, sans-serif" font-size="8">Se você pedir, a Guivos poderá organizar somente este rascunho,</text>
+  <text x="32" y="632" font-family="Arial, sans-serif" font-size="8">mostrar lacunas ou assuntos e produzir uma síntese revisável.</text>
+  <text x="32" y="653" font-family="Arial, sans-serif" font-size="7">Isso não prepara compreensão inicial nem personalização.</text>
+  <rect x="20" y="687" width="350" height="44" rx="8" fill="#222222"/>
+  <text x="195" y="714" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" font-weight="700">Solicitar ajuda temporária para organizar</text>
+  <rect x="20" y="746" width="350" height="42" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="772" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Ir ao inventário usando somente este texto</text>
+  <text x="195" y="815" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Trocar para voz sem analisar este rascunho</text>
 </svg>
