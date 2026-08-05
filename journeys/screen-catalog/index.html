@@ -6402,10 +6402,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-inventario-reformulado-por-familia" class="md-nav__link">
+  <a href="#2-inventario-agregado-por-familia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Inventário reformulado por família
+        2. Inventário agregado por família
       
     </span>
   </a>
@@ -6413,10 +6413,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-campos-obrigatorios-por-referencia" class="md-nav__link">
+  <a href="#3-registros-granulares" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Campos obrigatórios por referência
+        3. Registros granulares
       
     </span>
   </a>
@@ -6424,10 +6424,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-regra-de-fonte-unica" class="md-nav__link">
+  <a href="#4-campos-obrigatorios-por-referencia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Regra de fonte única
+        4. Campos obrigatórios por referência
       
     </span>
   </a>
@@ -6435,10 +6435,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-vigente" class="md-nav__link">
+  <a href="#5-regra-de-fonte-unica" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado vigente
+        5. Regra de fonte única
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-estado-vigente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Estado vigente
       
     </span>
   </a>
@@ -8718,10 +8729,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-inventario-reformulado-por-familia" class="md-nav__link">
+  <a href="#2-inventario-agregado-por-familia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Inventário reformulado por família
+        2. Inventário agregado por família
       
     </span>
   </a>
@@ -8729,10 +8740,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-campos-obrigatorios-por-referencia" class="md-nav__link">
+  <a href="#3-registros-granulares" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Campos obrigatórios por referência
+        3. Registros granulares
       
     </span>
   </a>
@@ -8740,10 +8751,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-regra-de-fonte-unica" class="md-nav__link">
+  <a href="#4-campos-obrigatorios-por-referencia" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Regra de fonte única
+        4. Campos obrigatórios por referência
       
     </span>
   </a>
@@ -8751,10 +8762,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-vigente" class="md-nav__link">
+  <a href="#5-regra-de-fonte-unica" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado vigente
+        5. Regra de fonte única
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-estado-vigente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Estado vigente
       
     </span>
   </a>
@@ -8794,7 +8816,7 @@
 ≠ transição de saída validada
 ≠ jornada integrada validada
 </code></pre></div>
-<h2 id="2-inventario-reformulado-por-familia">2. Inventário reformulado por família<a class="headerlink" href="#2-inventario-reformulado-por-familia" title="Permanent link">&para;</a></h2>
+<h2 id="2-inventario-agregado-por-familia">2. Inventário agregado por família<a class="headerlink" href="#2-inventario-agregado-por-familia" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -8922,34 +8944,39 @@
 </tbody>
 </table>
 <p>As contagens pertencem a escopos distintos e não devem ser somadas como inventário global homogêneo.</p>
-<h2 id="3-campos-obrigatorios-por-referencia">3. Campos obrigatórios por referência<a class="headerlink" href="#3-campos-obrigatorios-por-referencia" title="Permanent link">&para;</a></h2>
-<p>Cada entrada futura do catálogo deverá registrar:</p>
+<h2 id="3-registros-granulares">3. Registros granulares<a class="headerlink" href="#3-registros-granulares" title="Permanent link">&para;</a></h2>
+<p>A UXA-076 materializa duas vistas detalhadas, mantidas em <code>draft</code> até validação específica:</p>
 <ul>
-<li>ID da tela ou estado;</li>
+<li><a href="../surface-registry/">Registro Granular de Superfícies e Estados</a>;</li>
+<li><a href="../transition-registry/">Registro Granular de Transições</a>.</li>
+</ul>
+<p>O registro de superfícies atribui IDs individuais a telas, estados, responsabilidades programadas e ausências conhecidas.</p>
+<p>O registro de transições atribui IDs às ligações documentais, distinguindo transições localmente validadas, parciais, contratadas, ausentes e não examinadas.</p>
+<h2 id="4-campos-obrigatorios-por-referencia">4. Campos obrigatórios por referência<a class="headerlink" href="#4-campos-obrigatorios-por-referencia" title="Permanent link">&para;</a></h2>
+<p>Cada entrada granular registra, quando aplicável:</p>
+<ul>
+<li>ID da superfície ou estado;</li>
 <li>nome compreensível;</li>
 <li>participante e perspectiva;</li>
-<li>jornada e posição;</li>
+<li>família e posição na jornada;</li>
 <li>canal;</li>
-<li>caminho do SVG ou documento;</li>
 <li>autoridade contratual;</li>
 <li>pacote de materialização;</li>
 <li>pacote de validação;</li>
-<li>versão;</li>
 <li>maturidade primária;</li>
-<li>transição de entrada e sua evidência;</li>
-<li>transição de saída e sua evidência;</li>
+<li>entrada e saída conhecidas;</li>
+<li>continuidade integrada;</li>
 <li>caminhos alternativos;</li>
 <li>estados de erro, retorno ou exceção;</li>
-<li>autoridade da decisão;</li>
 <li>dependências;</li>
 <li>lacunas conhecidas.</li>
 </ul>
-<h2 id="4-regra-de-fonte-unica">4. Regra de fonte única<a class="headerlink" href="#4-regra-de-fonte-unica" title="Permanent link">&para;</a></h2>
-<p>O catálogo aponta para o artefato canônico. SVGs, textos normativos e wireframes não são copiados para esta seção.</p>
+<h2 id="5-regra-de-fonte-unica">5. Regra de fonte única<a class="headerlink" href="#5-regra-de-fonte-unica" title="Permanent link">&para;</a></h2>
+<p>O catálogo e os registros granulares apontam para o artefato canônico. SVGs, textos normativos e wireframes não são copiados para esta seção.</p>
 <p>A presença no catálogo não promove maturidade, não valida uma transição e não fecha uma lacuna.</p>
-<h2 id="5-estado-vigente">5. Estado vigente<a class="headerlink" href="#5-estado-vigente" title="Permanent link">&para;</a></h2>
-<p>A UXA-074 aprovou este catálogo com ressalva não bloqueadora. A UXA-075 promove o documento para <code>active</code> como inventário agregado por família.</p>
-<p>O cadastro individual de cada tela, estado e transição permanece evolução documental futura. O status <code>active</code> não declara granularidade completa nem validação ponta a ponta.</p>
+<h2 id="6-estado-vigente">6. Estado vigente<a class="headerlink" href="#6-estado-vigente" title="Permanent link">&para;</a></h2>
+<p>A UXA-074 aprovou este catálogo com ressalva não bloqueadora. A UXA-075 promoveu o documento para <code>active</code> como inventário agregado por família.</p>
+<p>A UXA-076 materializou a granularidade individual em registros separados. Esses registros permanecem <code>draft</code>; portanto, a granularidade está documentada, mas ainda não possui validação funcional própria.</p>
 
 
 

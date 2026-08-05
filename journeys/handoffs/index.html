@@ -6332,10 +6332,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-matriz-reformulada" class="md-nav__link">
+  <a href="#2-matriz-governada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Matriz reformulada
+        2. Matriz governada
       
     </span>
   </a>
@@ -6343,10 +6343,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-campos-obrigatorios" class="md-nav__link">
+  <a href="#3-registro-granular" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Campos obrigatórios
+        3. Registro granular
       
     </span>
   </a>
@@ -8718,10 +8718,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-matriz-reformulada" class="md-nav__link">
+  <a href="#2-matriz-governada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Matriz reformulada
+        2. Matriz governada
       
     </span>
   </a>
@@ -8729,10 +8729,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-campos-obrigatorios" class="md-nav__link">
+  <a href="#3-registro-granular" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Campos obrigatórios
+        3. Registro granular
       
     </span>
   </a>
@@ -8790,10 +8790,11 @@
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta vista identifica pontos em que a próxima decisão deixa uma perspectiva e passa para outra autoridade legítima.</p>
 <p>Nenhum handoff é considerado validado apenas porque as superfícies de origem e destino existem. A evidência deve abranger a transição, os dados transferidos, o efeito, o retorno e a possibilidade de contestação.</p>
-<h2 id="2-matriz-reformulada">2. Matriz reformulada<a class="headerlink" href="#2-matriz-reformulada" title="Permanent link">&para;</a></h2>
+<h2 id="2-matriz-governada">2. Matriz governada<a class="headerlink" href="#2-matriz-governada" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
+<th>IDs de transição</th>
 <th>Origem e maturidade</th>
 <th>Evento</th>
 <th>Destino e maturidade</th>
@@ -8805,6 +8806,7 @@
 </thead>
 <tbody>
 <tr>
+<td>GKR-TRN-104; GKR-TRN-105</td>
 <td>Pessoa — validado na perspectiva solicitante</td>
 <td>envia solicitação de participação</td>
 <td>responsável do Coletivo — não materializado</td>
@@ -8814,6 +8816,7 @@
 <td>operação do responsável ausente</td>
 </tr>
 <tr>
+<td>GKR-TRN-106</td>
 <td>responsável do Coletivo — programado</td>
 <td>solicita informação adicional</td>
 <td>Pessoa — validado na perspectiva solicitante</td>
@@ -8823,42 +8826,47 @@
 <td>origem operacional não materializada</td>
 </tr>
 <tr>
+<td>GKR-TRN-107</td>
+<td>Pessoa — validado na perspectiva solicitante</td>
+<td>envia informação adicional</td>
+<td>responsável do Coletivo — programado</td>
+<td>UXA-056; UXA-067</td>
+<td>resposta materializada somente na visão da Pessoa</td>
+<td>desistência permanece possível</td>
+<td>fila operacional não materializada</td>
+</tr>
+<tr>
+<td>GKR-TRN-108; GKR-TRN-109</td>
 <td>responsável do Coletivo — programado</td>
 <td>aprova, recusa ou deixa expirar</td>
 <td>Pessoa — validado na perspectiva solicitante</td>
-<td>UXA-056; UXA-066; UXA-067</td>
+<td>UXA-014; UXA-056; UXA-067</td>
 <td>resultado materializado somente na visão da Pessoa</td>
 <td>recusa, cancelamento e expiração permanecem distintos</td>
-<td>decisão do responsável não materializada</td>
+<td>decisão do responsável e continuidade ausentes</td>
 </tr>
 <tr>
-<td>Pessoa — parcial</td>
-<td>aceita vínculo formado</td>
-<td>governança interna do Coletivo — contratada</td>
-<td>UXA-014; UXA-056</td>
-<td>transição contratada, sem continuidade visual bilateral</td>
-<td>saída e contestação dependem de regras do vínculo</td>
-<td>Meus Coletivos e operação interna ausentes</td>
-</tr>
-<tr>
+<td>GKR-TRN-206</td>
 <td>Organização — contratada</td>
 <td>propõe relação ou apoio</td>
 <td>Coletivo — contratado</td>
 <td>UXA-019</td>
 <td>nenhuma superfície bilateral específica</td>
-<td>negociação, recusa e encerramento contratados</td>
+<td>retirada, negociação, recusa e ajuste contratados</td>
 <td>materialização bilateral ausente</td>
 </tr>
 <tr>
-<td>Coletivo — contratado</td>
-<td>aceita, negocia ou recusa relação</td>
-<td>Organização — contratada</td>
+<td>GKR-TRN-207; GKR-TRN-208; GKR-TRN-209</td>
+<td>Coletivo e Organização — contratados</td>
+<td>avaliam, aprovam e revisam relação</td>
+<td>autoridades bilaterais</td>
 <td>UXA-019</td>
 <td>nenhuma superfície bilateral específica</td>
 <td>revisão, pausa e encerramento contratados</td>
-<td>materialização bilateral ausente</td>
+<td>operação bilateral ausente</td>
 </tr>
 <tr>
+<td>GKR-TRN-202; GKR-TRN-203</td>
 <td>Organização — validado no cadastro</td>
 <td>publica oportunidade</td>
 <td>Pessoa — validado na consulta</td>
@@ -8868,6 +8876,7 @@
 <td>integração ponta a ponta não examinada</td>
 </tr>
 <tr>
+<td>GKR-TRN-204; GKR-TRN-205</td>
 <td>Pessoa — validado na consulta</td>
 <td>acessa oportunidade</td>
 <td>Organização ou destino identificado — parcial</td>
@@ -8876,33 +8885,46 @@
 <td>retorno à lista ou mapa conforme superfície</td>
 <td>efeito externo não validado nesta seção</td>
 </tr>
+<tr>
+<td>GKR-TRN-302</td>
+<td>anunciante — materializado</td>
+<td>entrega promoção identificada</td>
+<td>Pessoa exposta — validado localmente</td>
+<td>UXA-038</td>
+<td>camada patrocinada identificada</td>
+<td>ignorar, retornar ou seguir ação apresentada</td>
+<td>integração completa com superfícies orgânicas</td>
+</tr>
 </tbody>
 </table>
-<h2 id="3-campos-obrigatorios">3. Campos obrigatórios<a class="headerlink" href="#3-campos-obrigatorios" title="Permanent link">&para;</a></h2>
-<p>Cada handoff deverá declarar:</p>
+<h2 id="3-registro-granular">3. Registro granular<a class="headerlink" href="#3-registro-granular" title="Permanent link">&para;</a></h2>
+<p>O detalhamento individual está em <a href="../transition-registry/">Registro Granular de Transições</a>.</p>
+<p>Esse registro acrescenta, por ID:</p>
 <ul>
-<li>maturidade da origem;</li>
-<li>maturidade do destino;</li>
-<li>quem inicia;</li>
-<li>quem recebe a próxima decisão;</li>
-<li>autoridade que permite a ação;</li>
-<li>dados que atravessam a fronteira;</li>
-<li>efeito produzido;</li>
-<li>evidência da transição;</li>
-<li>forma de cancelar, corrigir ou contestar;</li>
-<li>estado de interrupção;</li>
-<li>lacuna aplicável.</li>
+<li>origem e destino;</li>
+<li>participante e perspectiva;</li>
+<li>tipo de transição;</li>
+<li>condição e ação iniciadora;</li>
+<li>autoridade;</li>
+<li>efeito e dados transferidos;</li>
+<li>gate de autorização;</li>
+<li>reversibilidade;</li>
+<li>interrupção e tempo;</li>
+<li>evidência;</li>
+<li>estado da ligação;</li>
+<li>lacuna associada.</li>
 </ul>
 <h2 id="4-regras-de-protecao">4. Regras de proteção<a class="headerlink" href="#4-regras-de-protecao" title="Permanent link">&para;</a></h2>
 <ul>
 <li>origem materializada não presume destino materializado;</li>
 <li>retorno visível para a Pessoa não comprova a existência da operação do responsável;</li>
 <li>contrato bilateral não equivale a interface bilateral;</li>
-<li>nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa.</li>
+<li>nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa;</li>
+<li>um ID estabiliza a referência documental, mas não implementa a transição.</li>
 </ul>
 <h2 id="5-estado-vigente">5. Estado vigente<a class="headerlink" href="#5-estado-vigente" title="Permanent link">&para;</a></h2>
-<p>A UXA-074 aprovou esta matriz com ressalva não bloqueadora. A UXA-075 promove o documento para <code>active</code> como síntese governada dos handoffs prioritários.</p>
-<p>O status <code>active</code> não declara que a matriz seja exaustiva. O detalhamento individual de dados, efeitos, tempo e interrupção de cada transição permanece evolução documental possível.</p>
+<p>A UXA-074 aprovou esta matriz com ressalva não bloqueadora. A UXA-075 promoveu o documento para <code>active</code> como síntese governada dos handoffs prioritários.</p>
+<p>A UXA-076 materializou o registro individual das transições, que permanece <code>draft</code> até validação específica. Esta matriz continua <code>active</code> como síntese e não passa a declarar cobertura exaustiva ou validação ponta a ponta.</p>
 
 
 
