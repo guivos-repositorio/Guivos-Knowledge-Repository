@@ -8616,10 +8616,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-pessoa-inicio-compreensao-e-recorrencia" class="md-nav__link">
+  <a href="#3-contagem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Pessoa — início, compreensão e recorrência
+        3. Contagem
       
     </span>
   </a>
@@ -8627,10 +8627,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-pessoa-em-coletivos" class="md-nav__link">
+  <a href="#4-inventario-principal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Pessoa em Coletivos
+        4. Inventário principal
       
     </span>
   </a>
@@ -8638,10 +8638,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-coletivo" class="md-nav__link">
+  <a href="#5-detalhamentos-obrigatorios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Coletivo
+        5. Detalhamentos obrigatórios
       
     </span>
   </a>
@@ -8649,10 +8649,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-organizacao" class="md-nav__link">
+  <a href="#6-divisoes-controladas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Organização
+        6. Divisões controladas
       
     </span>
   </a>
@@ -8660,21 +8660,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-camada-comercial-identificada" class="md-nav__link">
+  <a href="#7-regras-de-uso" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Camada comercial identificada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-regras-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Regras de uso
+        7. Regras de uso
       
     </span>
   </a>
@@ -8708,703 +8697,552 @@
 
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este registro atribui identificadores estáveis às superfícies, estados e responsabilidades conhecidas nas Jornadas Integradas.</p>
-<p>Uma entrada pode representar:</p>
-<ul>
-<li>tela ou estado materializado;</li>
-<li>responsabilidade contratada ou programada ainda sem superfície específica;</li>
-<li>ausência conhecida necessária para continuidade.</li>
-</ul>
-<p>A inclusão não altera maturidade, não cria interface e não fecha lacuna.</p>
+<p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
+<p>A versão 0.2.0 responde somente aos cinco achados obrigatórios da UXA-077. O registro é composto por este inventário principal e quatro detalhamentos controlados. Em conjunto, eles registram todos os campos exigidos pelas UXA-070 e UXA-076.</p>
+<p>A inclusão não cria interface, não altera maturidade, não fecha lacuna e não promove o registro.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
+<li><code>indeterminado</code>: evidência insuficiente para valor seguro;</li>
+<li><code>não examinado</code>: integração ainda não avaliada como conjunto;</li>
+<li><code>parcial</code>: cobertura incompleta;</li>
+<li><code>local</code>: validação limitada ao pacote de origem.</li>
+</ul>
+<h2 id="3-contagem">3. Contagem<a class="headerlink" href="#3-contagem" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Valor</th>
-<th>Uso</th>
+<th>Categoria</th>
+<th style="text-align: right;">Quantidade</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>—</code></td>
-<td>nenhuma referência específica disponível</td>
+<td>Pessoa</td>
+<td style="text-align: right;">19</td>
 </tr>
 <tr>
-<td><code>ausente</code></td>
-<td>responsabilidade conhecida sem materialização necessária</td>
+<td>Coletivo</td>
+<td style="text-align: right;">8</td>
 </tr>
 <tr>
-<td><code>não examinado</code></td>
-<td>integração não avaliada como conjunto</td>
+<td>Organização</td>
+<td style="text-align: right;">7</td>
 </tr>
 <tr>
-<td><code>parcial</code></td>
-<td>parte da continuidade possui evidência e parte permanece sem cobertura</td>
+<td>camada comercial</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr>
-<td><code>local</code></td>
-<td>validação limitada ao pacote de origem</td>
+<td>fronteira documental</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>40</strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="3-pessoa-inicio-compreensao-e-recorrencia">3. Pessoa — início, compreensão e recorrência<a class="headerlink" href="#3-pessoa-inicio-compreensao-e-recorrencia" title="Permanent link">&para;</a></h2>
+<p>O aumento de 36 para 40 entradas decorre da separação de mapa, lista, detalhe e fronteira externa. Não representa funcionalidades novas.</p>
+<h2 id="4-inventario-principal">4. Inventário principal<a class="headerlink" href="#4-inventario-principal" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>ID</th>
-<th>Perspectiva</th>
-<th>Família</th>
-<th>Superfície ou estado</th>
+<th>Superfície, estado ou responsabilidade</th>
+<th>Perspectiva e família</th>
 <th>Canal</th>
 <th>Maturidade</th>
 <th>Autoridade</th>
 <th>Materialização</th>
 <th>Validação</th>
-<th>Entrada conhecida</th>
-<th>Saída conhecida</th>
-<th>Continuidade</th>
-<th>Lacuna</th>
+<th>Detalhamento obrigatório</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>GKR-SURF-PER-001</td>
-<td>visitante público</td>
-<td>início protegido</td>
 <td>Home pública</td>
+<td>visitante público; início protegido</td>
 <td>público</td>
 <td>validado</td>
 <td>UXA-020</td>
 <td>UXA-022</td>
 <td>UXA-021</td>
-<td>acesso público</td>
-<td>entrada protegida</td>
-<td>parcial</td>
-<td>integração ponta a ponta</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-002</td>
-<td>Pessoa</td>
-<td>início protegido</td>
 <td>entrada protegida</td>
+<td>Pessoa; início protegido</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-020; UXA-023</td>
 <td>UXA-034</td>
 <td>UXA-035</td>
-<td>Home pública</td>
-<td>escolha de modalidade</td>
-<td>parcial</td>
-<td>continuidade entre pacotes</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-003</td>
-<td>Pessoa</td>
-<td>início protegido</td>
 <td>escolha de modalidade</td>
+<td>Pessoa; início protegido</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-020; UXA-023</td>
 <td>UXA-034</td>
 <td>UXA-035</td>
-<td>entrada protegida</td>
-<td>expressão guiada</td>
-<td>parcial</td>
-<td>ligação explícita com UXA-068</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-004</td>
-<td>Pessoa</td>
-<td>expressão guiada</td>
 <td>expressão por texto ou voz</td>
+<td>Pessoa; expressão guiada</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-068</td>
 <td>UXA-068</td>
 <td>UXA-069</td>
-<td>escolha de modalidade</td>
-<td>inventário e autorização</td>
-<td>parcial</td>
-<td>integração com inventário</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-005</td>
-<td>Pessoa</td>
-<td>início protegido</td>
 <td>inventário dos conteúdos e autorização</td>
+<td>Pessoa; início protegido</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-023</td>
 <td>UXA-034</td>
 <td>UXA-035</td>
-<td>expressão guiada</td>
-<td>processamento</td>
-<td>parcial</td>
-<td>transição integrada entre pacotes</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-006</td>
-<td>Pessoa</td>
-<td>compreensão inicial</td>
 <td>processamento visível</td>
+<td>Pessoa; compreensão inicial</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-023</td>
 <td>UXA-036</td>
 <td>UXA-037</td>
-<td>inventário autorizado</td>
-<td>compreensão inicial</td>
-<td>local</td>
-<td>continuidade ponta a ponta</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-007</td>
-<td>Pessoa</td>
-<td>compreensão inicial</td>
 <td>compreensão inicial revisável</td>
+<td>Pessoa; compreensão inicial</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-023</td>
 <td>UXA-036</td>
 <td>UXA-037</td>
-<td>processamento</td>
-<td>decisão sobre persistência</td>
-<td>parcial</td>
-<td>ligação com experiência recorrente</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-008</td>
-<td>Pessoa autenticada</td>
-<td>experiência recorrente</td>
 <td>Tela Hoje</td>
+<td>Pessoa autenticada; experiência recorrente</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-002</td>
 <td>UXA-006</td>
 <td>UXA-010</td>
-<td>compreensão e gates próprios</td>
-<td>continuidades recorrentes</td>
-<td>não examinado</td>
-<td>reconciliação com compreensão inicial</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
-</tbody>
-</table>
-<h2 id="4-pessoa-em-coletivos">4. Pessoa em Coletivos<a class="headerlink" href="#4-pessoa-em-coletivos" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Perspectiva</th>
-<th>Família</th>
-<th>Superfície ou estado</th>
-<th>Canal</th>
-<th>Maturidade</th>
-<th>Autoridade</th>
-<th>Materialização</th>
-<th>Validação</th>
-<th>Entrada conhecida</th>
-<th>Saída conhecida</th>
-<th>Continuidade</th>
-<th>Lacuna</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>GKR-SURF-PER-101</td>
-<td>visitante</td>
-<td>descoberta</td>
 <td>Explorar Coletivos</td>
+<td>visitante; descoberta de Coletivos</td>
 <td>móvel</td>
 <td>validado</td>
 <td>UXA-056</td>
 <td>UXA-060</td>
 <td>UXA-061</td>
-<td>navegação recorrente</td>
-<td>Resultados de Busca</td>
-<td>parcial</td>
-<td>continuidade entre famílias</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-102</td>
-<td>visitante</td>
-<td>descoberta</td>
-<td>Resultados de Busca</td>
+<td>Resultados de Busca de Coletivos</td>
+<td>visitante; descoberta de Coletivos</td>
 <td>móvel</td>
 <td>validado</td>
 <td>UXA-056</td>
 <td>UXA-060</td>
 <td>UXA-061</td>
-<td>Explorar Coletivos</td>
-<td>Perfil Público</td>
-<td>parcial</td>
-<td>caminhos alternativos consolidados</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-103</td>
-<td>visitante</td>
-<td>presença pública</td>
 <td>Perfil Público do Coletivo</td>
+<td>visitante; presença pública de Coletivo</td>
 <td>móvel</td>
 <td>validado</td>
 <td>UXA-056</td>
 <td>UXA-062</td>
 <td>UXA-063</td>
-<td>busca ou acesso direto</td>
-<td>revisão e solicitação</td>
-<td>parcial</td>
-<td>handoff para participação</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-104</td>
-<td>solicitante</td>
-<td>participação</td>
 <td>revisão e solicitação</td>
+<td>solicitante; participação em Coletivo</td>
 <td>móvel</td>
 <td>validado</td>
 <td>UXA-056</td>
 <td>UXA-064</td>
 <td>UXA-065</td>
-<td>Perfil Público</td>
-<td>envio da solicitação</td>
-<td>parcial</td>
-<td>destino operacional do Coletivo</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-105</td>
-<td>solicitante</td>
-<td>participação</td>
 <td>Solicitação Pendente</td>
+<td>solicitante; participação em Coletivo</td>
 <td>móvel</td>
 <td>validado</td>
 <td>UXA-056</td>
 <td>UXA-066</td>
 <td>UXA-067</td>
-<td>solicitação enviada</td>
-<td>retorno, cancelamento ou decisão</td>
-<td>parcial e assimétrica</td>
-<td>visão do responsável ausente</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-106</td>
-<td>participante</td>
-<td>continuidade</td>
 <td>Meus Coletivos</td>
+<td>participante; continuidade em Coletivo</td>
 <td>não definido</td>
 <td>não iniciado</td>
 <td>UXA-059</td>
 <td>—</td>
 <td>—</td>
-<td>vínculo formado</td>
-<td>Central de Atualizações</td>
-<td>ausente</td>
-<td>superfície e transições</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-107</td>
-<td>participante</td>
-<td>continuidade</td>
 <td>Central de Atualizações</td>
+<td>participante; continuidade em Coletivo</td>
 <td>não definido</td>
 <td>não iniciado</td>
 <td>UXA-059</td>
 <td>—</td>
 <td>—</td>
-<td>Meus Coletivos</td>
-<td>Início do Participante</td>
-<td>ausente</td>
-<td>superfície e transições</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-108</td>
-<td>participante</td>
-<td>operação interna</td>
 <td>Início do Participante</td>
+<td>participante; operação interna de Coletivo</td>
 <td>não definido</td>
 <td>reformulação pendente</td>
 <td>UXA-059</td>
 <td>referência anterior não promovida</td>
 <td>—</td>
-<td>vínculo e atualizações</td>
-<td>experiência interna</td>
-<td>ausente</td>
-<td>reformulação e continuidade</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
-</tbody>
-</table>
-<h2 id="5-coletivo">5. Coletivo<a class="headerlink" href="#5-coletivo" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
 <tr>
-<th>ID</th>
-<th>Perspectiva</th>
-<th>Família</th>
-<th>Superfície ou responsabilidade</th>
-<th>Canal</th>
-<th>Maturidade</th>
-<th>Autoridade</th>
-<th>Materialização</th>
-<th>Validação</th>
-<th>Entrada conhecida</th>
-<th>Saída conhecida</th>
-<th>Continuidade</th>
-<th>Lacuna</th>
+<td>GKR-SURF-PER-201</td>
+<td>Mapa de Oportunidades</td>
+<td>Pessoa ou visitante; descoberta de oportunidades</td>
+<td>móvel e computador</td>
+<td>validado</td>
+<td>UXA-004</td>
+<td>UXA-024</td>
+<td>UXA-025</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
 </tr>
-</thead>
-<tbody>
+<tr>
+<td>GKR-SURF-PER-202</td>
+<td>Lista de Oportunidades</td>
+<td>Pessoa ou visitante; descoberta de oportunidades</td>
+<td>móvel e computador</td>
+<td>validado</td>
+<td>UXA-004</td>
+<td>UXA-028</td>
+<td>UXA-029</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-203</td>
+<td>Detalhe de Oportunidade</td>
+<td>Pessoa ou visitante; decisão sobre oportunidade</td>
+<td>móvel e computador</td>
+<td>validado</td>
+<td>UXA-004; UXA-007</td>
+<td>UXA-007</td>
+<td>UXA-012</td>
+<td><a href="../surface-registry-person-details/">surface-registry-person-details.md</a></td>
+</tr>
 <tr>
 <td>GKR-SURF-COL-001</td>
-<td>visitante e responsável</td>
-<td>presença pública</td>
 <td>Visão Geral ou presença pública existente</td>
-<td>público/protegido</td>
+<td>visitante e responsável; presença pública de Coletivo</td>
+<td>público e protegido</td>
 <td>materializado</td>
 <td>UXA-014; UXA-056</td>
 <td>UXA-016 e referências relacionadas</td>
 <td>UXA-018; UXA-063 no escopo aplicável</td>
-<td>criação ou acesso público</td>
-<td>descoberta e participação</td>
-<td>parcial</td>
-<td>separação entre vista pública e operação</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-002</td>
-<td>responsável</td>
-<td>operação</td>
 <td>Visão Geral do Responsável</td>
+<td>responsável; operação de Coletivo</td>
 <td>protegido</td>
 <td>não iniciado</td>
 <td>UXA-059</td>
 <td>—</td>
 <td>—</td>
-<td>autoridade de representação</td>
-<td>solicitações, vínculos e operação</td>
-<td>ausente</td>
-<td>superfície do responsável</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-003</td>
-<td>responsável</td>
-<td>participação</td>
 <td>gestão de solicitações</td>
+<td>responsável; participação em Coletivo</td>
 <td>protegido</td>
 <td>programado</td>
 <td>UXA-056; UXA-059</td>
 <td>apenas retornos na visão da Pessoa</td>
 <td>UXA-067 na perspectiva da Pessoa</td>
-<td>solicitação recebida</td>
-<td>pedir informação, aprovar, recusar ou expirar</td>
-<td>ausente na origem</td>
-<td>operação bilateral</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-004</td>
-<td>responsável</td>
-<td>vínculos</td>
 <td>participantes e vínculos</td>
+<td>responsável; vínculos de Coletivo</td>
 <td>protegido</td>
 <td>programado</td>
 <td>UXA-059</td>
 <td>—</td>
 <td>—</td>
-<td>vínculo formado</td>
-<td>gestão, saída ou contestação</td>
-<td>ausente</td>
-<td>continuidade interna</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-005</td>
-<td>responsável</td>
-<td>comunicação</td>
 <td>comunicação oficial</td>
+<td>responsável; comunicação de Coletivo</td>
 <td>protegido</td>
 <td>programado</td>
 <td>UXA-058; UXA-059</td>
 <td>—</td>
 <td>—</td>
-<td>vínculo e autoridade</td>
-<td>atualizações aos participantes</td>
-<td>ausente</td>
-<td>superfície e regras operacionais</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-006</td>
-<td>responsável</td>
-<td>operação</td>
 <td>atividades, consultas e decisões</td>
+<td>responsável; operação de Coletivo</td>
 <td>protegido</td>
 <td>programado</td>
 <td>UXA-059</td>
 <td>parcial ou dispersa</td>
 <td>—</td>
-<td>governança interna</td>
-<td>resultados e próximas decisões</td>
-<td>não examinado</td>
-<td>matriz operacional integrada</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-007</td>
-<td>responsável</td>
-<td>proteção</td>
 <td>proteção e moderação</td>
+<td>responsável; proteção de Coletivo</td>
 <td>protegido</td>
 <td>contratado</td>
 <td>UXA-058</td>
 <td>cobertura parcial</td>
 <td>—</td>
-<td>evento protegido</td>
-<td>decisão ou encaminhamento</td>
-<td>não examinado</td>
-<td>fluxo protegido completo</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-008</td>
-<td>responsável</td>
-<td>relações</td>
 <td>relações institucionais</td>
+<td>responsável; relações institucionais</td>
 <td>protegido</td>
 <td>contratado</td>
 <td>UXA-019</td>
 <td>—</td>
 <td>—</td>
-<td>proposta institucional</td>
-<td>negociação e decisão bilateral</td>
-<td>ausente</td>
-<td>relação Organização–Coletivo</td>
+<td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
-</tbody>
-</table>
-<h2 id="6-organizacao">6. Organização<a class="headerlink" href="#6-organizacao" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Perspectiva</th>
-<th>Família</th>
-<th>Superfície ou responsabilidade</th>
-<th>Canal</th>
-<th>Maturidade</th>
-<th>Autoridade</th>
-<th>Materialização</th>
-<th>Validação</th>
-<th>Entrada conhecida</th>
-<th>Saída conhecida</th>
-<th>Continuidade</th>
-<th>Lacuna</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>GKR-SURF-ORG-001</td>
-<td>representante institucional</td>
-<td>visão geral</td>
 <td>Visão Geral da Organização</td>
+<td>representante institucional; visão geral institucional</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-014</td>
 <td>UXA-015</td>
 <td>UXA-017</td>
-<td>identidade e autoridade</td>
-<td>oportunidades, relações e resultados</td>
-<td>parcial</td>
-<td>matriz institucional completa</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-ORG-002</td>
-<td>representante institucional</td>
-<td>oportunidades</td>
 <td>cadastro de oportunidade</td>
+<td>representante institucional; cadastro de oportunidades</td>
 <td>protegido</td>
 <td>validado</td>
 <td>UXA-004</td>
 <td>UXA-008</td>
 <td>UXA-013</td>
-<td>autoridade institucional</td>
-<td>publicação</td>
-<td>parcial</td>
-<td>integração com descoberta</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-ORG-003</td>
-<td>representante institucional</td>
-<td>oportunidades</td>
-<td>oportunidade publicada</td>
-<td>público</td>
-<td>materializado</td>
+<td>oportunidade aprovada para ativação ou ativa</td>
+<td>representante institucional; ciclo institucional de oportunidade</td>
+<td>protegido</td>
+<td>validado</td>
 <td>UXA-004</td>
-<td>UXA-007 e superfícies de descoberta</td>
-<td>UXA-012 no detalhe</td>
-<td>cadastro concluído</td>
-<td>consulta pela Pessoa</td>
-<td>parcial</td>
-<td>ciclo completo de publicação</td>
+<td>UXA-008</td>
+<td>UXA-013</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-ORG-004</td>
-<td>representante institucional</td>
-<td>relações</td>
 <td>proposta de relação com Coletivo</td>
+<td>representante institucional; relações institucionais</td>
 <td>protegido</td>
 <td>contratado</td>
 <td>UXA-019</td>
 <td>—</td>
 <td>—</td>
-<td>decisão institucional</td>
-<td>avaliação pelo Coletivo</td>
-<td>ausente</td>
-<td>superfície bilateral</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-ORG-005</td>
-<td>representante e responsável</td>
-<td>relações</td>
 <td>avaliação e negociação bilateral</td>
+<td>representante e responsável; relações institucionais</td>
 <td>protegido</td>
 <td>contratado</td>
 <td>UXA-019</td>
 <td>—</td>
 <td>—</td>
-<td>proposta</td>
-<td>aprovação, recusa ou ajuste</td>
-<td>ausente</td>
-<td>materialização bilateral</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-ORG-006</td>
-<td>representante e responsável</td>
-<td>relações</td>
 <td>relação ativa e revisão</td>
+<td>representante e responsável; relações institucionais</td>
 <td>protegido</td>
 <td>contratado</td>
 <td>UXA-019</td>
 <td>—</td>
 <td>—</td>
-<td>aprovação bilateral</td>
-<td>renovação, ajuste, pausa ou encerramento</td>
-<td>ausente</td>
-<td>operação bilateral</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-ORG-007</td>
-<td>representante institucional</td>
-<td>evidências</td>
 <td>resultados e evidências institucionais</td>
+<td>representante institucional; evidências institucionais</td>
 <td>protegido</td>
 <td>indeterminado</td>
 <td>referências dispersas</td>
 <td>—</td>
 <td>—</td>
-<td>atividades e compromissos</td>
-<td>revisão institucional</td>
-<td>não examinado</td>
-<td>matriz visual institucional</td>
+<td><a href="../surface-registry-organization-details/">surface-registry-organization-details.md</a></td>
 </tr>
-</tbody>
-</table>
-<h2 id="7-camada-comercial-identificada">7. Camada comercial identificada<a class="headerlink" href="#7-camada-comercial-identificada" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Perspectiva</th>
-<th>Família</th>
-<th>Superfície ou estado</th>
-<th>Canal</th>
-<th>Maturidade</th>
-<th>Autoridade</th>
-<th>Materialização</th>
-<th>Validação</th>
-<th>Entrada conhecida</th>
-<th>Saída conhecida</th>
-<th>Continuidade</th>
-<th>Lacuna</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>GKR-SURF-COM-001</td>
-<td>anunciante</td>
-<td>Opportunity Boost</td>
 <td>configuração do fluxo do anunciante</td>
+<td>anunciante; Opportunity Boost</td>
 <td>protegido</td>
 <td>materializado</td>
 <td>UXA-038</td>
 <td>UXA-040</td>
 <td>UXA-041</td>
-<td>intenção de promover</td>
-<td>campanha configurada</td>
-<td>parcial</td>
-<td>integração econômica completa</td>
+<td><a href="../surface-registry-commercial-boundary-details/">surface-registry-commercial-boundary-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COM-002</td>
-<td>Pessoa exposta</td>
-<td>Opportunity Boost</td>
 <td>cartão patrocinado e explicação</td>
-<td>público/protegido</td>
+<td>Pessoa exposta; Opportunity Boost</td>
+<td>público e protegido</td>
 <td>validado</td>
 <td>UXA-038</td>
 <td>UXA-042</td>
 <td>UXA-043</td>
-<td>entrega identificada</td>
-<td>detalhe, explicação ou retorno orgânico</td>
-<td>parcial</td>
-<td>integração com superfícies orgânicas</td>
+<td><a href="../surface-registry-commercial-boundary-details/">surface-registry-commercial-boundary-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COM-003</td>
-<td>Pessoa exposta</td>
-<td>Opportunity Boost</td>
 <td>estados patrocinados de lista e mapa</td>
-<td>público/protegido</td>
+<td>Pessoa exposta; Opportunity Boost</td>
+<td>público e protegido</td>
 <td>validado</td>
 <td>UXA-038</td>
 <td>UXA-044</td>
 <td>UXA-045</td>
-<td>descoberta em lista ou mapa</td>
-<td>detalhe ou explicação</td>
-<td>parcial</td>
-<td>continuidade transversal</td>
+<td><a href="../surface-registry-commercial-boundary-details/">surface-registry-commercial-boundary-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COM-004</td>
-<td>anunciante</td>
-<td>Opportunity Boost</td>
 <td>gestão da campanha ativa</td>
+<td>anunciante; Opportunity Boost</td>
 <td>protegido</td>
 <td>materializado</td>
 <td>UXA-038</td>
 <td>UXA-046</td>
 <td>validação correspondente não consolidada nesta seção</td>
-<td>campanha ativa</td>
-<td>ajuste, pausa ou encerramento</td>
-<td>parcial</td>
-<td>validação residual</td>
+<td><a href="../surface-registry-commercial-boundary-details/">surface-registry-commercial-boundary-details.md</a></td>
 </tr>
 <tr>
 <td>GKR-SURF-COM-005</td>
-<td>anunciante e Pessoa exposta</td>
-<td>Opportunity Boost</td>
-<td>10 estados residuais</td>
+<td>dez estados residuais</td>
+<td>anunciante e Pessoa exposta; Opportunity Boost</td>
 <td>diversos</td>
 <td>materializado</td>
 <td>UXA-038</td>
-<td>UXA-047 a UXA-054 conforme pacote</td>
+<td>UXA-055</td>
 <td>—</td>
-<td>estados anteriores</td>
-<td>continuidades específicas</td>
-<td>não examinado</td>
-<td>validação dos estados residuais</td>
+<td><a href="../surface-registry-commercial-boundary-details/">surface-registry-commercial-boundary-details.md</a></td>
+</tr>
+<tr>
+<td>GKR-SURF-BND-001</td>
+<td>fronteira externa identificada</td>
+<td>Pessoa; fronteira documental</td>
+<td>externo</td>
+<td>indeterminado</td>
+<td>UXA-004; UXA-007</td>
+<td>—</td>
+<td>—</td>
+<td><a href="../surface-registry-commercial-boundary-details/">surface-registry-commercial-boundary-details.md</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="8-regras-de-uso">8. Regras de uso<a class="headerlink" href="#8-regras-de-uso" title="Permanent link">&para;</a></h2>
+<h2 id="5-detalhamentos-obrigatorios">5. Detalhamentos obrigatórios<a class="headerlink" href="#5-detalhamentos-obrigatorios" title="Permanent link">&para;</a></h2>
+<p>Os arquivos abaixo integram este registro e contêm, por ID:</p>
 <ul>
-<li>o registro aponta para fontes; não copia artefatos canônicos;</li>
-<li>maturidade pertence à referência registrada, não à jornada inteira;</li>
-<li>validação local não comprova entrada ou saída integrada;</li>
-<li>responsabilidades sem interface permanecem registradas como ausência;</li>
-<li>nenhuma contagem deve ser usada para declarar completude ponta a ponta;</li>
-<li>o registro permanece <code>draft</code> até validação funcional específica.</li>
+<li>artefato canônico e caminho;</li>
+<li>versão;</li>
+<li>entrada;</li>
+<li>decisão principal;</li>
+<li>saída;</li>
+<li>dados e conteúdos;</li>
+<li>gate;</li>
+<li>reversibilidade;</li>
+<li>supersessão;</li>
+<li>continuidade;</li>
+<li>lacuna;</li>
+<li>observação de escopo.</li>
+</ul>
+<p>Arquivos:</p>
+<ul>
+<li><a href="../surface-registry-person-details/">Pessoa</a>;</li>
+<li><a href="../surface-registry-collective-details/">Coletivo</a>;</li>
+<li><a href="../surface-registry-organization-details/">Organização</a>;</li>
+<li><a href="../surface-registry-commercial-boundary-details/">Camada comercial e fronteira</a>.</li>
+</ul>
+<h2 id="6-divisoes-controladas">6. Divisões controladas<a class="headerlink" href="#6-divisoes-controladas" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>GKR-SURF-PER-102</code> permanece exclusivo de Resultados de Busca de Coletivos.</li>
+<li><code>GKR-SURF-ORG-003</code> permanece como estado institucional de oportunidade aprovada ou ativa.</li>
+<li><code>GKR-SURF-PER-201</code>, <code>GKR-SURF-PER-202</code> e <code>GKR-SURF-PER-203</code> representam mapa, lista e detalhe de oportunidades.</li>
+<li><code>GKR-SURF-COM-005</code> passa a apontar para UXA-055 e continua sem validação funcional específica.</li>
+<li><code>GKR-SURF-BND-001</code> é endpoint documental, não participante, tela ou integração.</li>
+</ul>
+<h2 id="7-regras-de-uso">7. Regras de uso<a class="headerlink" href="#7-regras-de-uso" title="Permanent link">&para;</a></h2>
+<ul>
+<li>o inventário e seus detalhamentos formam um único registro lógico;</li>
+<li>valores desconhecidos permanecem explícitos;</li>
+<li>validação local não comprova continuidade integrada;</li>
+<li>responsabilidade sem interface continua <code>ausente</code>;</li>
+<li>fronteira documental não equivale a implementação;</li>
+<li>a cobertura permanece seletiva e não exaustiva;</li>
+<li>o registro permanece <code>draft</code> até nova validação funcional;</li>
+<li>a UXA-078 não promove qualquer entrada.</li>
 </ul>
 
 
