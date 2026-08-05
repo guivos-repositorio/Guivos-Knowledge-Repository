@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.99.0
+version: 2.00.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-08-05
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -41,6 +41,9 @@ related:
   - UXA-069
   - UXA-070
   - UXA-071
+  - UXA-072
+  - UXA-073
+  - GKR-JOURNEYS-001
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
@@ -48,7 +51,7 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.46.0
+  - ROADMAP-12.47.0
   - M7.72
 normative: true
 ---
@@ -66,19 +69,19 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | programa funcional do ambiente de simulação das jornadas criado | M7.72; UXA-070 |
+| Marco | Jornadas Integradas reformuladas, navegáveis e sincronizadas; nova validação pendente | M7.72; UXA-073 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
-| Jornada pessoal — início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
-| Jornada pessoal — compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
-| Jornada pessoal — expressão guiada | 8 SVGs materializados, reformulados e validados | UXA-068; UXA-069 |
+| Jornada pessoal — início protegido geral | 4 SVGs materializados e validados no escopo de origem | UXA-034; UXA-035 |
+| Jornada pessoal — compreensão inicial | 5 SVGs materializados e validados no escopo de origem | UXA-036; UXA-037 |
+| Jornada pessoal — expressão guiada | 8 SVGs materializados, reformulados e validados no escopo de origem | UXA-068; UXA-069 |
 | Organizações e Coletivos — fundação | participantes, papéis e relações estruturados | UXA-014 a UXA-019 |
 | Coletivos — contratos | descoberta, reputação e interação contratadas | UXA-056 a UXA-058 |
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
-| Coletivos — cobertura visual | 22 SVGs materializados e validados | UXA-060 a UXA-067 |
+| Coletivos — cobertura visual | 22 SVGs materializados e validados no escopo de origem | UXA-060 a UXA-067 |
 | Opportunity Boost | 46 SVGs; 36 validados e 10 pendentes | UXA-038 a UXA-055 |
-| Ambiente de simulação | programa funcional criado; nenhuma materialização ou implementação | UXA-070 |
+| Jornadas Integradas | seção materializada, reformulada e navegável; validação funcional pendente | UXA-071 a UXA-073 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -91,7 +94,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-A UXA-070 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
+As UXA-070 a UXA-073 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -102,7 +105,7 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Programa documental não comprova preço, demanda, conversão, receita ou viabilidade.
+Programa ou mapa documental não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual preservada
 
@@ -115,12 +118,14 @@ Programa documental não comprova preço, demanda, conversão, receita ou viabil
 | Expressão Guiada do Momento Atual | 8 | 8 | 0 |
 | **Subtotal relacionado** | **17** | **17** | **0** |
 
+As contagens demonstram cobertura das superfícies nos pacotes de origem. Elas não comprovam validação ponta a ponta da jornada integrada.
+
 ### 5.2 Opportunity Boost
 
 - 46 wireframes materializados;
 - 36 validados por pacote;
-- 10 estados residuais pendentes;
-- nenhuma alteração pela UXA-070.
+- 10 estados residuais pendentes de validação;
+- nenhuma promoção automática pela seção de Jornadas Integradas.
 
 ### 5.3 Coletivos
 
@@ -132,32 +137,37 @@ Programa documental não comprova preço, demanda, conversão, receita ou viabil
 | Solicitação Pendente | 8 | 8 | 0 |
 | demais famílias | 0 | 0 | não materializadas |
 
-Total de Coletivos: 22 SVGs materializados e 22 validados.
+Total de Coletivos: 22 SVGs materializados e 22 validados na perspectiva coberta pelos respectivos pacotes.
 
-A UXA-070 não soma famílias de escopos diferentes nem cria novo inventário visual.
+A visão operacional do responsável e a continuidade após `Solicitação Pendente` permanecem ausentes.
 
-## 6. Resultado da UXA-070
+## 6. Sequência do ambiente documental
 
-Foi criado o programa funcional do ambiente documental de simulação das jornadas.
+```text
+UXA-070 — programa funcional concluído
+→ UXA-071 — primeira materialização documental integrada
+→ UXA-072 — validação funcional não aprovada até reformulação
+→ UXA-073 — reformulação, navegação e sincronização executadas
+→ UXA-074 — nova validação funcional ainda não iniciada
+```
 
-Foram definidos:
+Nenhuma etapa autoriza automaticamente a seguinte.
 
-- Pessoa, Coletivo e Organização como participantes estruturais;
-- papéis e perspectivas contextuais sem criação de novos participantes;
-- famílias mínimas de jornadas pessoais, coletivas, institucionais e bilaterais;
-- Opportunity Boost como sobreposição comercial identificada;
-- nó de jornada com artefato, autoridade, versão, maturidade, gate e lacuna;
-- transição com condição, autoridade, efeito, dados e reversibilidade;
-- taxonomia de maturidade documental;
-- taxonomia de tipos de transição;
-- módulos, filtros e rastreabilidade;
-- reutilização de artefatos por referência e em modo somente leitura;
-- cenários documentais mínimos;
-- registro obrigatório de continuidades ausentes.
+## 7. Resultado da UXA-073
 
-O ambiente não se torna fonte canônica. Contratos, programas, wireframes, validações e registros de origem continuam prevalecendo.
+Foram executados:
 
-## 7. Continuidade da jornada pessoal
+- criação da seção de primeiro nível `Jornadas Integradas` na navegação do GKR;
+- separação entre maturidade primária, autoridade contratual, referência materializada, evidência de validação e continuidade integrada;
+- explicitação de assimetrias entre Pessoa, Coletivo e Organização;
+- reformulação dos seis cenários com conclusões permitidas e proibidas;
+- diferenciação entre cobertura das superfícies e cobertura das transições;
+- transformação do registro de lacunas em referência observacional `active`;
+- sincronização deste registro, do roadmap e do índice da Arquitetura da Experiência.
+
+Os mapas reformulados permanecem `draft` até nova validação funcional aprovada.
+
+## 8. Continuidade da jornada pessoal
 
 ```text
 Home pública
@@ -168,41 +178,42 @@ Home pública
 → autorização específica
 → processamento visível
 → compreensão inicial revisável
+→ continuidade recorrente
 ```
 
-A ajuda temporária não substitui inventário, autorização ou compreensão inicial.
+As superfícies possuem evidências nos pacotes de origem. A continuidade integrada entre todos os pacotes permanece pendente de nova validação.
 
-## 8. Estado P0A de Coletivos
+## 9. Estado P0A de Coletivos
 
-| Ordem | Superfície | Estado |
-|---:|---|---|
-| 1 | Explorar Coletivos | validada |
-| 2 | Resultados de Busca | validada |
-| 3 | Perfil Público | validado |
-| 4 | Revisão e Solicitação de Participação | validada |
-| 5 | Solicitação Pendente | validada |
-| 6 | Meus Coletivos | não iniciado |
-| 7 | Central de Atualizações | não iniciada |
-| 8 | Início do Participante | reformulação não iniciada |
-| 9 | Visão Geral do Responsável | não iniciada |
+| Ordem | Superfície | Maturidade primária | Continuidade integrada |
+|---:|---|---|---|
+| 1 | Explorar Coletivos | validado | parcial |
+| 2 | Resultados de Busca | validado | parcial |
+| 3 | Perfil Público | validado | parcial |
+| 4 | Revisão e Solicitação de Participação | validado | parcial |
+| 5 | Solicitação Pendente | validado na perspectiva da Pessoa | parcial e assimétrica |
+| 6 | Meus Coletivos | não iniciado | ausente |
+| 7 | Central de Atualizações | não iniciado | ausente |
+| 8 | Início do Participante | reformulação pendente | ausente |
+| 9 | Visão Geral do Responsável | não iniciado | ausente |
 
-O futuro mapa deverá exibir as lacunas a partir do item 6, sem criar superfícies substitutas.
-
-## 9. Estado do ambiente de simulação
+## 10. Estado das Jornadas Integradas
 
 | Camada | Estado |
 |---|---|
-| programa funcional | criado pela UXA-070 |
-| participantes e perspectivas | definidos |
-| modelo de nós e transições | definido |
-| taxonomias e regras de reutilização | definidas |
-| mapa integrado documental | não iniciado |
+| programa funcional | concluído pela UXA-070 |
+| primeira materialização | integrada pela UXA-071 |
+| primeira validação | não aprovada pela UXA-072 |
+| reformulação documental | executada pela UXA-073 |
+| navegação de primeiro nível | adicionada pela UXA-073 |
+| sincronização de estado | executada pela UXA-073 |
+| nova validação funcional | não iniciada |
 | protótipo navegável | não iniciado |
 | aplicação ou motor | não iniciado |
 | teste com pessoas | não iniciado |
 | Engenharia de Produto | não iniciada |
 
-## 10. Preservações
+## 11. Preservações
 
 Permanecem vigentes:
 
@@ -219,12 +230,13 @@ Permanecem vigentes:
 - publicidade não compra legitimidade, reputação ou autoridade;
 - apoio institucional não concede autoridade ou dados;
 - mapa documental não cria jornada ou transição inexistente;
+- superfície validada não equivale a jornada integrada validada;
 - protótipo, teste e Engenharia de Produto não foram iniciados.
 
-## 11. Próxima transição autorizável
+## 12. Próxima transição autorizável
 
 A próxima transição recomendada é:
 
-**UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições.**
+**UXA-074 — Nova Validação Funcional das Jornadas Integradas Reformuladas.**
 
-A UXA-071, `Meus Coletivos` e a implementação do simulador não estão iniciados e dependem de autorizações separadas.
+A UXA-074, as lacunas de produto e a implementação do simulador não estão iniciadas e dependem de autorizações separadas.
