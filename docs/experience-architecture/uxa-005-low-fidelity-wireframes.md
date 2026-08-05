@@ -2,7 +2,7 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.45.0
+version: 0.46.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-04
 parent: UXA-000
@@ -11,7 +11,9 @@ related:
   - UXA-003
   - UXA-009
   - UXA-020
-  - UXA-024
+  - UXA-023
+  - UXA-034
+  - UXA-036
   - UXA-038
   - UXA-050
   - UXA-055
@@ -28,8 +30,9 @@ related:
   - UXA-066
   - UXA-067
   - UXA-068
+  - UXA-069
   - PAS-001
-  - M7.69
+  - M7.70
 normative: false
 ---
 
@@ -65,7 +68,51 @@ Materialização não equivale a validação. Validação funcional não autoriz
 
 Cor, tipografia e iconografia não possuem significado definitivo.
 
-## 3. Opportunity Boost
+## 3. Jornada pessoal — início protegido
+
+### 3.1 Cobertura relacionada
+
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| Início protegido geral — UXA-034 | 4 | 4 | 0 |
+| Compreensão inicial — UXA-036 | 5 | 5 | 0 |
+| Expressão Guiada do Momento Atual — UXA-068 | 8 | 0 | 8 |
+| **Subtotal relacionado** | **17** | **9** | **8** |
+
+A contagem não representa o inventário completo da jornada pessoal. Ela registra apenas as famílias diretamente relacionadas a esta continuidade.
+
+### 3.2 Expressão Guiada do Momento Atual
+
+A UXA-068 materializa:
+
+1. orientação comum;
+2. rascunho guiado por texto;
+3. preparação para voz;
+4. gravação em andamento;
+5. revisão da transcrição;
+6. pergunta adaptativa;
+7. separação de focos;
+8. síntese estruturada.
+
+Regras representadas:
+
+- explicar o que a Guivos precisa compreender;
+- não exigir biografia completa;
+- aceitar texto livre e orientação progressiva;
+- manter texto e voz equivalentes;
+- impedir ativação automática do microfone;
+- separar áudio, transcrição e declaração revisada;
+- perguntar somente para reduzir lacuna material;
+- mostrar a razão da pergunta;
+- aceitar `não sei`, `prefiro não informar` e adiamento;
+- não descartar assuntos silenciosamente;
+- separar situação, impacto, prioridade, direção, contexto e desconhecidos;
+- não autorizar processamento por digitação ou gravação;
+- retornar à revisão da UXA-034.
+
+A validação funcional permanece pendente para a UXA-069.
+
+## 4. Opportunity Boost
 
 | Família | Materializados | Validados por pacote | Pendentes |
 |---|---:|---:|---:|
@@ -79,11 +126,11 @@ Cor, tipografia e iconografia não possuem significado definitivo.
 | estados residuais | 10 | 0 | 10 |
 | **Total** | **46** | **36** | **10** |
 
-## 4. Programa de Coletivos
+## 5. Programa de Coletivos
 
 A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 
-### 4.1 Cobertura materializada e validada
+### 5.1 Cobertura materializada e validada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
@@ -94,9 +141,9 @@ A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
 | demais famílias de Coletivos | 0 | 0 | não materializadas |
 | **Total de Coletivos** | **22** | **22** | **0** |
 
-A contagem de Coletivos permanece separada do Opportunity Boost.
+A contagem de Coletivos permanece separada do Opportunity Boost e da jornada pessoal.
 
-### 4.2 Espinha dorsal P0A
+### 5.2 Espinha dorsal P0A
 
 | Ordem | Superfície | Estado |
 |---:|---|---|
@@ -110,67 +157,30 @@ A contagem de Coletivos permanece separada do Opportunity Boost.
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 5. Autoridades das famílias validadas
+## 6. Proteções transversais
 
-- UXA-060 e UXA-061 — descoberta e busca;
-- UXA-062 e UXA-063 — Perfil Público;
-- UXA-064 e UXA-065 — revisão e solicitação;
-- UXA-066 e UXA-067 — Solicitação Pendente.
-
-## 6. Resultado da Solicitação Pendente
-
-Estados validados:
-
-1. aguardando decisão;
-2. análise protegida;
-3. informação adicional solicitada;
-4. revisão da resposta adicional;
-5. cancelada pela Pessoa;
-6. aprovada;
-7. recusada;
-8. expirada.
-
-Regras validadas:
-
-- consulta não altera fila ou prioridade;
-- estimativa não é promessa;
-- dado material não é editado silenciosamente durante análise;
-- autoridade protegida é limitada ao processo;
-- pedido adicional não é obrigação de revelar;
-- resposta, preferência, contestação e cancelamento são distintos;
-- descartar resposta não cancela solicitação;
-- envio adicional poderá retomar análise sem criar vínculo;
-- tratamento posterior não é garantia técnica ou jurídica absoluta;
-- aprovação não cria função, autoridade, presença ou notificação automática;
-- recusa não é sanção, reputação ou denúncia;
-- expiração não é recusa ou consentimento;
-- revisão formal não é simulada sem contrato próprio;
-- `Meus Coletivos` não é apresentado como disponível.
-
-## 7. Proteções transversais
-
+- compartilhamento mínimo não é falha;
+- texto livre continua legítimo;
+- transcrição automática não é fato confirmado;
+- desconhecido não é preenchido por suposição;
+- pergunta não é obrigação de revelar;
+- relevância não é definida silenciosamente pela Guivos;
 - contagem não funciona como ranking;
-- lista nominal permanece protegida;
 - publicidade não compra legitimidade, reputação ou prioridade;
 - apoio institucional não concede dados ou autoridade;
-- visualização não revela identidade;
-- denúncia não é avaliação nem revisão formal;
-- proteção não é irregularidade;
 - convite não cria vínculo;
 - decisão sobre vínculo não é reputação da Pessoa;
 - estado contratual não gera automaticamente um SVG exclusivo.
 
-## 8. Lacuna prioritária fora de Coletivos
-
-A tela de escolha multimodal do início protegido permite texto, voz, arquivo e perguntas opcionais, mas ainda não orienta suficientemente a Pessoa a expressar o Momento Atual.
-
-A UXA-068 deverá materializar orientação para situação, impacto, prioridade, direção e contexto, com relato livre, perguntas adaptativas, síntese e revisão.
-
-## 9. Limites
+## 7. Limites
 
 O programa ainda não inicia:
 
-- UXA-068;
+- UXA-069;
+- modelo de IA ou algoritmo adaptativo;
+- gravação e transcrição reais;
+- envio guiado de arquivos;
+- protocolo clínico ou emergencial;
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
@@ -182,8 +192,8 @@ O programa ainda não inicia:
 - identidade visual;
 - Engenharia de Produto.
 
-## 10. Próxima transição
+## 8. Próxima transição
 
-**UXA-068 — Expressão Guiada do Momento Atual por Texto e Voz.**
+**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz.**
 
 O pacote dependerá de autorização separada.
