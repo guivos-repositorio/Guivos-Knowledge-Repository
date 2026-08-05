@@ -1,6 +1,6 @@
 ---
 id: GKR-CHANGELOG-1.94.0
- title: Changelog 1.94.0 — Programa Funcional do Ambiente de Simulação das Jornadas
+title: Changelog 1.94.0 — Programa Funcional do Ambiente de Simulação das Jornadas
 status: draft
 version: 1.94.0
 owner: Repositório de Conhecimento da Guivos
