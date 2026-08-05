@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -19,6 +19,8 @@ related:
   - UXA-055
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -80,5 +82,16 @@ A relação preserva finalidade, compromissos, recursos, autonomia, dados, conte
 - resultados agregados dependem de finalidade e autoridade;
 - publicidade não compra legitimidade ou reputação;
 - representante institucional atua somente dentro da unidade e do papel apresentados;
-- cobertura incompleta permanece indicada como lacuna;
-- esta vista permanece `draft` até nova validação funcional.
+- cobertura incompleta permanece indicada como lacuna.
+
+## 4. Estado da vista
+
+A UXA-074 aprovou esta vista como representação documental corretamente delimitada. A UXA-075 mantém o status `draft` porque:
+
+- a relação Organização–Coletivo não possui materialização bilateral específica;
+- a matriz institucional completa ainda não existe;
+- o ciclo de oportunidades não foi validado como continuidade integral;
+- 10 estados do Opportunity Boost permanecem sem validação;
+- evidências e resultados institucionais continuam sem matriz integrada.
+
+O status `draft` preserva a distinção entre superfícies institucionais validadas localmente e uma jornada institucional completa.
