@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -15,6 +15,7 @@ related:
   - UXA-076
   - UXA-077
   - UXA-078
+  - UXA-079
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-SECTION-CLARIFICATION-001
@@ -38,7 +39,7 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 5. observe retornos, contestações e interrupções;
 6. consulte o catálogo agregado;
 7. localize superfícies e transições por ID;
-8. considere o parecer da UXA-077 e as correções da UXA-078;
+8. considere os pareceres das UXA-077 e UXA-079 e as correções da UXA-078;
 9. acompanhe as lacunas sem tratá-las como fechadas.
 
 ## 3. Vistas disponíveis
@@ -57,7 +58,8 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 
 - [UXA-076 — materialização granular](../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md);
 - [UXA-077 — validação funcional não aprovada](../experience-architecture/uxa-077-granular-registry-functional-validation.md);
-- [UXA-078 — reformulação controlada](../experience-architecture/uxa-078-controlled-granular-registry-reformulation.md).
+- [UXA-078 — reformulação controlada](../experience-architecture/uxa-078-controlled-granular-registry-reformulation.md);
+- [UXA-079 — revalidação funcional aprovada com ressalvas](../experience-architecture/uxa-079-granular-registry-functional-revalidation.md).
 
 Resultado vigente:
 
@@ -65,11 +67,12 @@ Resultado vigente:
 materialização granular
 → validação não aprovada
 → reformulação dos cinco achados
+→ revalidação aprovada com ressalvas
 → registros permanecem draft
-→ nova validação ainda não iniciada
+→ promoção ainda não iniciada
 ```
 
-## 5. Estado reformulado
+## 5. Estado revalidado
 
 | Camada | Estado | Referência |
 |---|---|---|
@@ -82,20 +85,22 @@ materialização granular
 | primeira materialização granular | executada em `draft` | UXA-076 |
 | primeira validação granular | não aprovada | UXA-077 |
 | reformulação granular | executada; registros continuam `draft` | UXA-078 |
-| revalidação granular | não iniciada | UXA-079 |
+| revalidação granular | aprovada com ressalvas; sem promoção | UXA-079 |
+| promoção granular | não iniciada | UXA-080 |
 | protótipo navegável | não iniciado | — |
 | aplicação ou motor | não iniciado | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
 ## 6. Resultado quantitativo
 
-| Registro | Antes da UXA-078 | Depois da UXA-078 |
-|---|---:|---:|
-| superfícies, estados, responsabilidades ou fronteiras | 36 | 40 |
-| transições documentais | 34 | 37 |
-| endpoints em texto livre | 2 | 0 |
+| Registro | Quantidade | Resultado da UXA-079 |
+|---|---:|---|
+| superfícies, estados, responsabilidades ou fronteiras | 40 | IDs únicos e campos obrigatórios presentes |
+| transições documentais | 37 | IDs únicos e endpoints resolvidos |
+| referências de endpoint | 74 | todas resolvidas por IDs registrados |
+| endpoints em texto livre | 0 | aprovado |
 
-A variação decorre de separação documental. Não declara novas telas implementadas.
+A variação frente à primeira versão decorre de separação documental. Não declara novas telas implementadas.
 
 ## 7. Domínios separados
 
@@ -117,7 +122,27 @@ A variação decorre de separação documental. Não declara novas telas impleme
 
 `GKR-SURF-COM-005` e `GKR-TRN-305` apontam para UXA-055. Os dez estados residuais continuam sem validação funcional específica.
 
-## 8. Modelo de evidência
+## 8. Parecer da UXA-079
+
+**Aprovado com ressalvas no escopo funcional documental.**
+
+Foram confirmados:
+
+- resolução completa das 74 referências de endpoint;
+- coerência dos novos IDs;
+- separação entre Coletivos, oportunidades e publicação institucional;
+- rastreabilidade correta para UXA-055;
+- presença dos campos obrigatórios nas 40 entradas;
+- preservação de lacunas, incerteza e estados não examinados;
+- ausência de implementação ou promoção implícita.
+
+Ressalvas:
+
+- campos de transição agregados;
+- cobertura seletiva e não exaustiva;
+- `COM` como agrupamento documental.
+
+## 9. Modelo de evidência
 
 Cada nó ou família separa:
 
@@ -137,31 +162,31 @@ cobertura das superfícies
 ≠ validação da jornada integrada
 ```
 
-## 9. Regra de leitura
+## 10. Regra de leitura
 
 Uma sequência exibida é hipótese documental rastreável. Ela somente poderá ser declarada como jornada integrada completa quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência suficiente.
 
 Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
-## 10. Regra de promoção
+## 11. Regra de promoção
 
 - esta visão geral permanece `active` porque a seção foi aprovada como instrumento documental;
 - as vistas de Pessoa, Coletivo e Organização permanecem `draft`;
 - handoffs, cenários e catálogo permanecem `active` nos limites da UXA-074;
-- os registros granulares permanecem `draft` até nova validação;
+- os registros granulares permanecem `draft` até promoção separada;
 - o registro de lacunas permanece `active` por ser observacional;
-- a UXA-078 não promove qualquer registro;
+- a UXA-079 aprova o escopo documental, mas não promove qualquer registro;
 - inclusão nesta seção não altera maturidade ou canonicidade.
 
-## 11. Escopo vigente
+## 12. Escopo vigente
 
 O status `active` desta seção não declara:
 
 - jornadas completas;
 - validação ponta a ponta;
-- aprovação dos registros reformulados;
+- promoção dos registros revalidados;
 - fechamento de lacunas;
 - prontidão para protótipo;
 - prontidão para implementação.
 
-A próxima evolução possível é a UXA-079, mediante autorização separada.
+A próxima evolução possível é a **UXA-080 — Promoção Controlada dos Registros Granulares e Sincronização Pós-Revalidação**, mediante autorização separada.
