@@ -2,7 +2,7 @@
 id: GKR-SOURCE-INTAKE-001
 title: Registro de Intake das Fontes Acumuladas
 status: draft
-version: 0.5.2
+version: 0.5.3
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -165,6 +165,16 @@ Toda nova fonte deverá informar:
 
 Um item somente é resolvido por decisão verificável de absorção, referência, substituição, arquivo, rejeição, quarentena, classificação operacional, duplicidade ou bloqueio de linhagem.
 
-## 9. Declaração de não autoridade
+## 9. Checkpoint congelado
+
+```text
+Source intake: GKR-SOURCE-INTAKE-001 0.5.3
+Sources catalogued: 41
+New sources in this P0: 41
+Authority changes: none
+Current-state changes: none
+```
+
+## 10. Declaração de não autoridade
 
 Este registro classifica fontes. Ele não altera `GKR-STATE-001`, M7.72, UXA-071 ou a pausa da Engenharia de Produto.
