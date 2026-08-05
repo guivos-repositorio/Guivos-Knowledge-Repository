@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -13,6 +13,7 @@ related:
   - UXA-074
   - UXA-075
   - UXA-076
+  - UXA-077
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-SECTION-CLARIFICATION-001
@@ -36,7 +37,8 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 5. observe handoffs, retornos, contestações e pontos de interrupção;
 6. consulte o catálogo agregado;
 7. use os registros granulares para localizar superfícies e transições por ID;
-8. acompanhe as lacunas registradas.
+8. considere os achados da UXA-077 antes de utilizar os registros granulares;
+9. acompanhe as lacunas registradas.
 
 ## 3. Vistas disponíveis
 
@@ -50,11 +52,19 @@ Ela não substitui contratos, programas, wireframes, validações ou registros c
 - [Registro Granular de Transições](transition-registry.md)
 - [Lacunas e continuidades ausentes](gaps.md)
 
-## 4. Pacote granular vigente
+## 4. Pacotes granulares
 
-A materialização dos dois registros é governada pela [UXA-076 — Registro Granular de Transições e Superfícies](../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md).
+A materialização é governada pela [UXA-076 — Registro Granular de Transições e Superfícies](../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md).
 
-O pacote está `active` como registro de ação concluída. Os dois registros produzidos permanecem `draft` até validação funcional própria.
+A validação é registrada pela [UXA-077 — Validação Funcional do Registro Granular](../experience-architecture/uxa-077-granular-registry-functional-validation.md).
+
+Resultado vigente:
+
+```text
+materialização granular confirmada
+→ validação funcional não aprovada até correção obrigatória
+→ registros permanecem draft
+```
 
 ## 5. Modelo de evidência
 
@@ -85,49 +95,66 @@ cobertura das superfícies
 | nova validação funcional | aprovada com ressalvas no escopo documental | UXA-074 |
 | promoção e sincronização pós-validação | executadas seletivamente | UXA-075 |
 | registro granular de superfícies e transições | materializado em `draft` | UXA-076 |
-| validação dos registros granulares | não iniciada | UXA-077 |
+| validação dos registros granulares | não aprovada até correção obrigatória | UXA-077 |
+| reformulação granular | não iniciada | UXA-078 |
 | protótipo navegável | não iniciado | — |
 | aplicação ou motor | não iniciado | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
-## 7. Registros granulares
+## 7. Resultado da validação granular
 
-A UXA-076 cria uma camada de rastreabilidade individual:
+A UXA-077 confirmou:
 
-```text
-família agregada
-→ superfície ou responsabilidade identificada
-→ transição identificada
-→ autoridade e evidência
-→ estado da continuidade
-→ lacuna associada
-```
+- 36 superfícies, estados, responsabilidades ou ausências conhecidas;
+- 34 transições documentais;
+- identificadores sem duplicidade dentro dos registros;
+- vocabulário de maturidade aderente à UXA-070;
+- manutenção de estados parciais, ausentes e não examinados.
 
-Os IDs estabilizam a referência documental. Eles não implementam interfaces, não executam transições e não promovem maturidade.
+A promoção foi bloqueada por cinco achados:
 
-## 8. Regra de leitura
+1. endpoints sem ID estável;
+2. mistura entre busca de Coletivos e descoberta de oportunidades;
+3. mistura entre publicação institucional e Detalhe de Oportunidade;
+4. referência incorreta dos estados residuais, cuja fonte é UXA-055;
+5. campos obrigatórios incompletos no registro de superfícies.
+
+## 8. Regras temporárias de uso dos registros
+
+Enquanto os achados não forem corrigidos:
+
+- os registros servem para auditoria e reformulação, não para declaração de continuidade aprovada;
+- `GKR-SURF-PER-102` representa exclusivamente resultados de busca de Coletivos;
+- `GKR-SURF-ORG-003` não poderá ser usado como representação final simultânea de publicação e detalhe;
+- `GKR-TRN-205` e `GKR-TRN-304` permanecem com endpoints não resolvidos;
+- os dez estados residuais deverão ser rastreados à UXA-055;
+- campos omitidos não poderão ser presumidos.
+
+## 9. Regra de leitura
 
 Uma sequência exibida nesta seção é uma hipótese documental rastreável. Ela só poderá ser declarada como jornada integrada completa quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência funcional suficiente.
 
 Quando a continuidade necessária ainda não estiver materializada ou validada, ela será apresentada como **parcial**, **ausente** ou **não examinada**, nunca preenchida por suposição.
 
-## 9. Regra de promoção
+## 10. Regra de promoção
 
 - esta visão geral está `active` porque a seção foi aprovada como instrumento documental de leitura e governança;
 - as vistas de Pessoa, Coletivo e Organização permanecem `draft` por representarem jornadas incompletas;
 - handoffs, cenários e catálogo estão `active` dentro dos limites explicitados pela UXA-074;
-- os registros granulares permanecem `draft` até validação própria;
+- os registros granulares permanecem `draft` porque a UXA-077 não aprovou sua integridade funcional;
 - o registro de lacunas permanece `active` por ser observacional e não promocional;
 - inclusão nesta seção não altera maturidade, prioridade ou canonicidade;
 - nenhuma referência é promovida apenas por estar navegável no GKR.
 
-## 10. Escopo vigente
+## 11. Escopo vigente
 
 O status `active` desta seção confirma sua validade documental. Ele não declara:
 
 - jornadas completas;
 - validação ponta a ponta;
-- validação funcional dos registros granulares;
+- aprovação funcional dos registros granulares;
 - fechamento de lacunas;
 - prontidão para protótipo;
 - prontidão para implementação.
+
+A próxima evolução documental possível é a UXA-078, mediante autorização separada.
