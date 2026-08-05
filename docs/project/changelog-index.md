@@ -23,9 +23,11 @@ Este índice conecta o ledger histórico raiz aos changelogs temáticos posterio
 
 | Faixa | Fonte de histórico |
 |---|---|
-| até `0.58.0` | [`CHANGELOG.md` raiz](../../CHANGELOG.md) |
+| até `0.58.0` | `CHANGELOG.md` na raiz do repositório |
 | após `0.58.0` | changelogs temáticos em `docs/project/` |
 | estado transversal vigente | [Registro do Estado Atual](current-state-register.md) |
+
+O arquivo `CHANGELOG.md` raiz não pertence ao diretório publicado pelo MkDocs. Sua referência permanece textual para preservar o histórico sem criar um vínculo inválido no site documental.
 
 O número de um changelog registra a sequência editorial de seu pacote. Ele não substitui versões de arquiteturas, documentos especializados ou marcos.
 
