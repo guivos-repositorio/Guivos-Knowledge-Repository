@@ -2,47 +2,32 @@
 id: UXA-005
 title: Programa Inicial de Wireframes de Baixa Fidelidade
 status: draft
-version: 0.48.0
+version: 0.49.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-08-05
 parent: UXA-000
 related:
   - UXA-001
   - UXA-003
   - UXA-009
   - UXA-014
-  - UXA-015
-  - UXA-016
-  - UXA-017
-  - UXA-018
-  - UXA-019
   - UXA-020
-  - UXA-023
   - UXA-034
-  - UXA-035
   - UXA-036
-  - UXA-037
   - UXA-038
-  - UXA-050
   - UXA-055
   - UXA-056
-  - UXA-057
-  - UXA-058
   - UXA-059
   - UXA-060
-  - UXA-061
-  - UXA-062
-  - UXA-063
-  - UXA-064
-  - UXA-065
-  - UXA-066
   - UXA-067
   - UXA-068
   - UXA-069
   - UXA-070
   - UXA-071
+  - UXA-072
+  - GKR-JOURNEYS-001
   - PAS-001
-  - M7.72
+  - M7.73
 normative: false
 ---
 
@@ -61,7 +46,7 @@ contrato funcional
 → Engenharia de Produto, quando autorizada
 ```
 
-Materialização não equivale a validação. Validação funcional não autoriza automaticamente protótipo ou Engenharia.
+Materialização não equivale a validação. Nenhuma etapa autoriza automaticamente a seguinte.
 
 ## 2. Convenções
 
@@ -70,165 +55,110 @@ Materialização não equivale a validação. Validação funcional não autoriz
 | borda contínua | área funcional |
 | preenchimento escuro | ação principal consciente |
 | preenchimento cinza | limite, resumo ou indisponibilidade |
-| borda tracejada | proteção, exceção ou relação comercial |
+| borda tracejada | proteção, exceção, lacuna ou relação comercial |
 | texto sublinhado | ação secundária ou explicação |
-| rótulo anterior ao conteúdo | origem, autoridade ou natureza |
 | estado textual | condição que não depende apenas de cor |
 | confirmação vazia | confirmação ainda não registrada |
 | controle circular vazio | escolha única sem seleção padrão |
 
 Cor, tipografia e iconografia não possuem significado definitivo.
 
-## 3. Jornada pessoal — início protegido
+## 3. Cobertura visual vigente
+
+### 3.1 Continuidade pessoal diretamente relacionada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
-| Início protegido geral — UXA-034 e UXA-035 | 4 | 4 | 0 |
-| Compreensão inicial — UXA-036 e UXA-037 | 5 | 5 | 0 |
-| Expressão Guiada — UXA-068 e UXA-069 | 8 | 8 | 0 |
-| **Subtotal relacionado** | **17** | **17** | **0** |
+| início protegido geral | 4 | 4 | 0 |
+| compreensão inicial | 5 | 5 | 0 |
+| Expressão Guiada | 8 | 8 | 0 |
+| **Subtotal** | **17** | **17** | **0** |
 
-A contagem registra apenas as famílias diretamente relacionadas a esta continuidade.
+### 3.2 Coletivos
 
-### 3.1 Expressão Guiada validada
-
-Estados:
-
-1. orientação comum;
-2. rascunho por texto;
-3. preparação para voz;
-4. gravação em andamento;
-5. revisão da transcrição;
-6. pergunta adaptativa;
-7. separação de focos;
-8. síntese estruturada.
-
-Regras validadas:
-
-- conteúdo de origem separado de ajuda temporária;
-- ajuda somente após solicitação consciente;
-- texto e voz equivalentes;
-- rascunho sem análise ou persistência implícitas;
-- áudio com escolha única e sem padrão;
-- gravação e transcrição com finalidade limitada;
-- interrupção e descarte com efeito conhecido;
-- transcrição automática não confirmada;
-- perguntas opcionais sem direção recomendada;
-- separação aplicada somente após escolha;
-- síntese derivada com origem, estado e uso opcional;
-- continuidade possível usando somente fontes;
-- inventário e autorização antes do processamento material.
-
-## 4. Opportunity Boost
-
-| Família | Materializados | Validados por pacote | Pendentes |
+| Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
-| configuração para computador | 5 | 5 | 0 |
-| configuração móvel | 5 | 5 | 0 |
-| cartão e explicação | 6 | 6 | 0 |
-| Lista e Mapa patrocinados | 4 | 4 | 0 |
-| gestão para computador | 6 | 6 | 0 |
-| gestão móvel | 6 | 6 | 0 |
-| relatório agregado | 4 | 4 | 0 |
+| descoberta e busca | 5 | 5 | 0 |
+| Perfil Público | 4 | 4 | 0 |
+| revisão e solicitação | 5 | 5 | 0 |
+| Solicitação Pendente | 8 | 8 | 0 |
+| **Total** | **22** | **22** | **0 entre os materializados** |
+
+`Meus Coletivos`, Central de Atualizações, Início do Participante e Visão Geral do Responsável permanecem não iniciados ou com reformulação não iniciada.
+
+### 3.3 Opportunity Boost
+
+| Grupo | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| fluxos e gestão | 36 | 36 | 0 |
 | estados residuais | 10 | 0 | 10 |
 | **Total** | **46** | **36** | **10** |
 
-## 5. Programa de Coletivos
+## 4. Resultado da UXA-071
 
-A UXA-059 organiza 88 estados contratuais em P0A, P0B, P1 e P2.
+A UXA-071 criou a seção interna [Jornadas Integradas](../journeys/index.md) e o primeiro mapa documental inspecionável.
 
-| Família | Materializados | Validados | Pendentes |
-|---|---:|---:|---:|
-| descoberta e busca móvel | 5 | 5 | 0 |
-| Perfil Público móvel | 4 | 4 | 0 |
-| revisão e solicitação móvel | 5 | 5 | 0 |
-| Solicitação Pendente móvel | 8 | 8 | 0 |
-| demais famílias de Coletivos | 0 | 0 | não materializadas |
-| **Total de Coletivos** | **22** | **22** | **0** |
+Foram entregues:
 
-As contagens de jornada pessoal, Coletivos e Opportunity Boost permanecem separadas.
+- vistas de Pessoa, Coletivo e Organização;
+- mapas visuais em Mermaid e equivalentes textuais;
+- handoffs entre participantes;
+- seis cenários documentais mínimos;
+- fila de lacunas;
+- catálogo dos 97 SVGs físicos;
+- registro estruturado por referência;
+- navegação de primeiro nível no GKR.
 
-### 5.1 Espinha dorsal P0A
+O total de 97 é inventário físico. As contagens por família continuam separadas e não demonstram completude global.
 
-| Ordem | Superfície | Estado |
-|---:|---|---|
-| 1 | Explorar Coletivos | materializada e validada |
-| 2 | Resultados de Busca | materializada e validada |
-| 3 | Perfil Público do Coletivo | materializada e validada |
-| 4 | Revisão e Solicitação de Participação | materializada e validada |
-| 5 | Solicitação Pendente | materializada e validada |
-| 6 | Meus Coletivos | não iniciado |
-| 7 | Central de Atualizações | não iniciada |
-| 8 | Início do Participante | reformulação não iniciada |
-| 9 | Visão Geral do Responsável | não iniciada |
+## 5. Reutilização canônica
 
-## 6. Programa do Ambiente de Simulação
+- os SVGs permanecem em `docs/assets/wireframes/`;
+- a seção integrada referencia ID, caminho e autoridade;
+- nenhum arquivo visual é copiado;
+- uma referência pode aparecer em mais de uma perspectiva;
+- anotações e setas permanecem fora do artefato;
+- proximidade ou numeração não autorizam transição;
+- inclusão no mapa não altera maturidade ou canonicidade.
 
-A UXA-070 não materializa wireframes. Ela prepara uma futura referência documental integrada.
+## 6. Lacunas expostas
 
-O programa estabelece:
+1. `Meus Coletivos`;
+2. Central de Atualizações;
+3. Início do Participante;
+4. Visão Geral do Responsável;
+5. cobertura institucional completa;
+6. fluxo bilateral Organização–Coletivo;
+7. validação de dez estados residuais do Boost;
+8. validação funcional do mapa integrado.
 
-- Pessoa, Coletivo e Organização como participantes estruturais;
-- papéis e perspectivas contextuais separados dos participantes;
-- nós de jornada referenciados por ID, caminho, versão e autoridade;
-- transições com condição, efeito, dados, autorização e reversibilidade;
-- maturidade textual de contratado a arquivado;
-- reutilização dos artefatos canônicos sem cópia;
-- sobreposições de autoridade, finalidade, dados e lacunas;
-- cenários documentais mínimos para jornadas pessoais, coletivas, institucionais e comerciais;
-- proibição de preencher ausências por tela genérica ou seta presumida.
+## 7. Proteções transversais
 
-Opportunity Boost aparecerá somente como sobreposição comercial identificada. Inclusão no ambiente não altera prioridade, maturidade ou canonicidade.
-
-## 7. Próxima materialização documental
-
-A futura UXA-071 poderá criar o primeiro mapa estático e inspecionável das jornadas e transições.
-
-Ela deverá:
-
-- reutilizar artefatos por referência;
-- oferecer vista visual e textual equivalente;
-- mostrar maturidade e lacunas;
-- alternar perspectivas sem duplicar telas;
-- preservar o ambiente como camada de leitura.
-
-A UXA-071 não foi iniciada e dependerá de autorização separada.
-
-## 8. Proteções transversais
-
-- compartilhamento mínimo não é falha;
-- digitar não solicita análise automática;
+- compartilhar pouco não é falha;
+- digitar não solicita análise;
 - gravar autoriza somente a operação apresentada;
 - transcrição automática não é fato confirmado;
 - ajuda temporária não cria compreensão;
 - síntese não substitui fonte;
 - pergunta não é obrigação de revelar;
-- contagem não funciona como ranking;
-- publicidade não compra legitimidade, reputação ou prioridade;
-- apoio institucional não concede dados ou autoridade;
-- convite não cria vínculo;
+- solicitação não é aprovação;
+- publicidade não compra legitimidade, reputação ou autoridade;
+- apoio institucional não concede dados ou direção;
 - mapa documental não cria transição inexistente.
 
-## 9. Limites
+## 8. Limites
 
-O programa ainda não inicia:
+Não foram iniciados:
 
-- UXA-071;
-- mapa integrado materializado;
-- SVG ou tela do ambiente;
+- validação funcional UXA-072;
 - protótipo navegável;
 - aplicação ou motor de simulação;
-- modelo de IA ou algoritmo adaptativo;
-- gravação e transcrição reais;
-- envio guiado de arquivos;
-- protocolo clínico ou emergencial;
-- `Meus Coletivos`;
-- Central de Atualizações;
-- Início do Participante reformulado;
+- componentes, API, banco ou modelo técnico;
 - teste com pessoas;
 - identidade visual;
-- Engenharia de Produto.
+- Engenharia de Produto;
+- materialização das lacunas registradas.
 
-## 10. Próxima transição
+## 9. Próxima transição
 
-**UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições**, mediante autorização separada.
+**UXA-072 — Validação Funcional do Mapa Integrado de Jornadas e Transições**, mediante autorização separada.
