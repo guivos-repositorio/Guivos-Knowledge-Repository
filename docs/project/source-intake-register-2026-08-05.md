@@ -2,7 +2,7 @@
 id: GKR-SOURCE-INTAKE-001
 title: Registro de Intake das Fontes Acumuladas
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -64,7 +64,7 @@ O registro não contém a íntegra das fontes e não substitui a análise temát
 | SRC-012 | Contrato `PAS-001-CV-CONTRACT-001` e Capacidade 02 do Contexto Vivo | Git e conversa | integrado e concluído documentariamente | interno | verificado e integrado; commit `73ea9e7`; path confirmado | conclusão documental pode ser confundida com produto implementado | resolvido no P0 | preservar limite de maturidade e usar a autoridade integrada |
 | SRC-013 | Instrumentos VAL-002, VAL-006 e VAL-007 | Git, rascunho e conversa | versões diversas | interno | versões atuais verificadas: 2.1.0, 1.3.1 e 1.3.1; rascunho 1.1.0 superado | instrumento pode ser confundido com pesquisa executada | P4 | usar versões da `main`; verificar pré-teste, publicação, coleta, amostra e resultados |
 | SRC-014 | Formulário B2C, IGV e KPIs de aceitação | Git, rascunho e conversa | desenho de validação | interno | desenho e critérios verificados no Git; operação não verificada | indicador definido pode ser apresentado como resultado | P4 | distinguir definição, readiness, coleta e Outcome |
-| SRC-015 | COEM e ECO-CAND-001 | Git e conversa histórica | COEM concluída; candidato reformulado; sem Outcome | interno | COEM verificada no PR nº 72; ECO-CAND-001 ainda requer vínculo específico | conclusão de cobertura pode reaparecer como validação empresarial | P4/P8 | preservar `Reformulate`, ausência de Outcome e localizar o artefato ECO-CAND-001 |
+| SRC-015 | COEM e ECO-CAND-001 | Git e conversa histórica | COEM concluída; decisão `Reformulate`; sem Outcome | interno | verificado e integrado pelos PRs nº 72 e nº 73 | conclusão da cobertura ou reformulação pode reaparecer como Outcome aprovado | resolvido no P0 | preservar `Under Validation`, ausência de código canônico, AQS-O01 e Outcome |
 | SRC-016 | GEM-009 | Git e conversa histórica | integrado | interno | verificado e integrado pelo PR nº 55; path confirmado | métricas documentais podem ser confundidas com resultados reais | resolvido no P0 | usar autoridade vigente e preservar ausência de valores, metas e resultados |
 | SRC-017 | GEM-010 e GEM-010-A2 | Git e conversa histórica | arquitetura integrada; preços candidatos | interno | verificado e integrado pelo PR nº 56 e commit `e5f757a` | cenário ou faixa candidata pode ser tratada como orçamento, preço público ou operação | resolvido no P0/P8 | preservar parâmetros como candidatos, sem oferta ou cobrança |
 | SRC-018 | Fundação Guivos e `guivos.org` | conversas | conceito e intenção institucional | a classificar | não localizado como entidade constituída ou operação comprovada | risco de tratar projeto como entidade existente | P5 | exigir arquitetura institucional, governança, prova jurídica e readiness |
@@ -72,8 +72,8 @@ O registro não contém a íntegra das fontes e não substitui a análise temát
 | SRC-020 | Internacionalização, polos BH/SP e país inicial | conversas | estratégia e intenção | confidencial | não localizado como operação territorial comprovada | presença, cadastro ou número não comprovam operação | P7 | criar matriz de evidências territoriais e readiness |
 | SRC-021 | Estratégia de domínios internacionais | conversas e plano | recomendação | confidencial | verificação parcial | disponibilidade, titularidade e uso podem mudar; risco de exposição | P3/P7 | inventariar ativos comprovados em registro restrito |
 | SRC-022 | Números telefônicos regionais e Lisboa | conversas | intenção operacional | confidencial | não localizado como canal ativo comprovado | canal projetado pode ser descrito como ativo | P7 | exigir titularidade, contrato, roteamento e capacidade de atendimento |
-| SRC-023 | Guivos Mall versus Guivos Marketplace | Git e conversas | Mall vigente; Marketplace histórico | público | verificação parcial | nomenclatura concorrente em materiais antigos | P8/P9 | varrer referências; manter alias apenas quando necessário ao histórico |
-| SRC-024 | Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads | Git e conversas | estrutura vigente relatada | público | verificação parcial | superfícies podem divergir da autoridade de produtos | P8 | reconciliar com Product Architecture e GEB antes de publicação global |
+| SRC-023 | Guivos Mall versus Guivos Marketplace | Git e conversas | Mall vigente; Marketplace histórico | público | verificado e integrado pelo commit `a68bab2`; `GPA-002` 1.1.0 | materiais externos antigos podem manter nomenclatura superada | resolvido no P0/P9 | usar Guivos Mall oficialmente; varrer somente materiais externos e históricos |
+| SRC-024 | Guivos Journey, Mall, Travel, Business, Media, Intelligence e Ads | Git e conversas | estrutura arquitetural oficial | público | verificado e integrado em `GPA-000` 1.30.0 | consolidação documental pode ser confundida com operação comercial de todos os componentes | resolvido no P0/P8 | preservar os sete componentes e distinguir arquitetura de implementação e operação |
 | SRC-025 | Guivos.ai e IA própria | conversas | intenção de produto | confidencial | não localizado como produto ou serviço operacional comprovado | intenção pode ser confundida com produto, modelo ou serviço existente | P8 | definir autoridade, maturidade, escopo, dependências e claims permitidos |
 | SRC-026 | Passport, Life Map, rankings, tribos e recompensas | conversas e materiais históricos | hipóteses variadas | a classificar | verificação parcial | conceitos em quarentena podem retornar por repetição | quarentena | não promover sem pacote, hipótese, riscos e decisão próprios |
 | SRC-027 | Grafo Global de Transformação Humana | conversas | conceito arquitetural | interno | verificação parcial | conceito, banco de grafo, IA e blockchain podem ser misturados | P2/P8 | separar modelo conceitual, dados, tecnologia, segurança e produto |
@@ -85,7 +85,7 @@ O registro não contém a íntegra das fontes e não substitui a análise temát
 | SRC-033 | UXA-071 e seção integrada de telas e jornadas | Git e conversa | próximo passo recomendado; não iniciado | interno | estado confirmado | risco de início incidental durante a auditoria | fora do P0 | manter não iniciada até encerramento e autorização específica |
 | SRC-034 | Product Engineering W0-01 | Git | pausada antes do início | interno | estado confirmado | documentação pode ser confundida com retomada | fora do P0 | preservar pausa até autorização explícita |
 | SRC-035 | Resultados empresariais, clientes, parceiros e faturamento | conversas | intenções ou exemplos | confidencial | não localizado como Outcome canônico comprovado | risco de claims públicos sem evidência | P4/P6/P9 | exigir contratos, métricas, período e autorização de divulgação |
-| SRC-036 | Rastreabilidade Git das Alegações Acumuladas | Git | draft 0.1.0 | interno | verificado e proposto no PR nº 164 | evidência pode ser lida sem os limites de cada claim | P0 | manter vinculada ao audit e ao intake; revisar antes do merge |
+| SRC-036 | Rastreabilidade Git das Alegações Acumuladas | Git | draft 0.3.0 | interno | verificado e proposto no PR nº 164 | evidência pode ser lida sem os limites de cada claim | P0 | manter vinculada ao audit e ao intake; revisar antes do merge |
 
 ## 4. Registros de desvio vinculados
 
@@ -96,16 +96,16 @@ O registro não contém a íntegra das fontes e não substitui a análise temát
 | D-003 — aprovação externa | SRC-006 a SRC-010 | intake e decisão explícita de absorção |
 | D-004 — linhagem `GC-CON-001` | SRC-010 | deduplicação e resolução de lineage |
 | D-005 — recomendação versus implementação | SRC-004, SRC-027, SRC-028 | ADR e evidência técnica |
-| D-006 — desenho versus resultado de mercado | SRC-013 a SRC-015 | trilha de evidência VAL |
+| D-006 — desenho versus resultado de mercado | SRC-013 a SRC-015 | trilha de evidência VAL e limites da COEM |
 | D-007 — plano versus execução de proteção | SRC-005, SRC-021 | comprovantes e registro restrito |
 | D-008 — conceito institucional versus entidade | SRC-018, SRC-019 | prova jurídica e readiness |
 | D-009 — intenção territorial versus operação | SRC-020 a SRC-022 | matriz territorial de evidências |
 | D-010 — operação versus arquitetura | SRC-031 | runbook operacional |
-| D-011 — nomenclatura concorrente | SRC-023, SRC-024 | autoridade de produto e varredura pública |
+| D-011 — nomenclatura e estrutura de produtos | SRC-023, SRC-024 | CLM-024, CLM-025 e varredura externa |
 | D-012 — retorno de hipóteses em quarentena | SRC-026 | bloqueio de promoção automática |
-| D-013 — proveniência incompleta | SRC-006 a SRC-011, SRC-015, SRC-018 a SRC-032, SRC-035 | path, commit, versão e responsável |
+| D-013 — proveniência incompleta | SRC-006 a SRC-011, SRC-018 a SRC-032, SRC-035 | path, commit, versão e responsável |
 | D-014 — exposição de conteúdo sensível | SRC-005, SRC-019 a SRC-022, SRC-029, SRC-035 | classificação antes de publicação |
-| D-017 — integração histórica sem prova vinculada | SRC-015 e alegações futuras | `GKR-CLAIMS-TRACE-001` |
+| D-017 — integração histórica sem prova vinculada | alegações futuras | `GKR-CLAIMS-TRACE-001` |
 
 ## 5. Fila de reconciliação do P0
 
@@ -119,16 +119,16 @@ O registro não contém a íntegra das fontes e não substitui a análise temát
 ### Prioridade alta
 
 1. comparar o rascunho externo do Contexto Vivo com a autoridade integrada;
-2. localizar e classificar especificamente `ECO-CAND-001`;
-3. verificar evidências operacionais de pré-teste, formulário publicado, coleta, base e cálculo VAL;
-4. registrar destino do documento GKR-001 externo;
-5. comparar a arquitetura draft histórica do GKR com a estrutura vigente.
+2. verificar evidências operacionais de pré-teste, formulário publicado, coleta, base e cálculo VAL;
+3. registrar destino do documento GKR-001 externo;
+4. comparar a arquitetura draft histórica do GKR com a estrutura vigente;
+5. classificar o plano editorial `GC-EDT-002` e o draft `GC-GOV-001`.
 
 ### Prioridade média
 
 1. preparar o intake do documento Neo4j para P2;
 2. preparar o intake do plano de proteção para P3;
-3. mapear referências Marketplace → Mall;
+3. varrer materiais externos e históricos que ainda usam Guivos Marketplace;
 4. separar runbook GitHub/Codex do corpo arquitetural;
 5. registrar hipóteses sociais, territoriais e de produto sem promovê-las.
 
