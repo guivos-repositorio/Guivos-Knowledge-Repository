@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -11,6 +11,8 @@ related:
   - UXA-071
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -18,7 +20,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é **observacional e não promocional**. Ele permanece `active` para registrar ausências verificadas, mas não declara que mapas, transições ou jornadas estejam funcionalmente validados.
+Este documento é **observacional e não promocional**. Ele permanece `active` para registrar ausências verificadas, mas não declara que mapas, transições ou jornadas estejam funcionalmente validados como completos.
 
 Uma lacuna somente muda de estado por pacote governado com autoridade, materialização e validação correspondentes.
 
@@ -58,3 +60,9 @@ Uma lacuna somente poderá ser encerrada quando houver:
 - inclusão no catálogo não altera maturidade;
 - validação de uma superfície não valida automaticamente a jornada;
 - ausência de evidência será registrada como `indeterminado`, `parcial` ou `ausente` conforme o caso.
+
+## 5. Estado vigente
+
+A UXA-074 aprovou este registro como instrumento observacional. A UXA-075 mantém o status `active` e atualiza sua versão sem fechar ou reclassificar qualquer lacuna.
+
+A promoção de outros instrumentos documentais não altera esta fila e não reduz os gates de fechamento.
