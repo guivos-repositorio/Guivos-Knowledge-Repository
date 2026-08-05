@@ -2,17 +2,23 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.43.0
+version: 5.44.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.45.0
+  - ROADMAP-12.46.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
+  - UXA-014
+  - UXA-015
+  - UXA-016
+  - UXA-017
+  - UXA-018
+  - UXA-019
   - UXA-020
   - UXA-023
   - UXA-034
@@ -34,6 +40,7 @@ related:
   - UXA-068
   - UXA-069
   - UXA-070
+  - UXA-071
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -54,6 +61,7 @@ related:
   - M7.69
   - M7.70
   - M7.71
+  - M7.72
 normative: false
 ---
 
@@ -77,43 +85,96 @@ Este registro apresenta a maturidade arquitetural consolidada. O estado oficial 
 | M7.57 | concluído | estados residuais do Boost materializados |
 | M7.58–M7.69 | concluído | contratos e cinco primeiras referências P0A de Coletivos |
 | M7.70 | concluído | Expressão Guiada materializada em oito estados móveis |
-| **M7.71** | **concluído no pacote** | **Expressão Guiada reformulada e validada funcionalmente** |
+| M7.71 | concluído | Expressão Guiada reformulada e validada funcionalmente |
+| **M7.72** | **concluído no pacote** | **programa funcional do ambiente documental de simulação das jornadas criado** |
 
-## 3. M7.71 — Expressão Guiada Validada
+## 3. M7.72 — Programa Funcional do Ambiente de Simulação
 
-O marco registra a validação dos oito estados:
+O marco registra a criação da UXA-070 como programa de uma camada documental para inspecionar jornadas, autoridades, maturidade, transições e lacunas.
 
-1. orientação comum;
-2. rascunho por texto;
-3. preparação para voz;
-4. gravação em andamento;
-5. revisão da transcrição;
-6. pergunta adaptativa;
-7. separação de focos;
-8. síntese estruturada.
+O marco não registra mapa materializado, protótipo, aplicação ou motor de simulação.
 
-## 4. Decisões do marco
+## 4. Participantes e perspectivas
 
-M7.71 consolida:
+Foram definidos três participantes estruturais:
 
-- conteúdo de origem, ajuda temporária, compreensão inicial, persistência e personalização como camadas diferentes;
-- ajuda temporária somente após solicitação consciente;
-- texto e voz equivalentes;
-- ausência de análise automática durante a digitação;
-- ausência de destino de salvamento inventado;
-- escolha única sobre áudio, sem padrão;
-- gravação e transcrição com finalidade limitada;
-- efeitos explícitos de pausa, interrupção e descarte;
-- transcrição automática separada da versão revisada;
-- perguntas opcionais cujas opções não são recomendações;
-- assuntos organizados somente após escolha;
-- síntese derivada com natureza, origem, estado e uso opcional;
-- continuidade possível usando somente conteúdos de origem;
-- inventário e autorização antes do processamento material.
+1. Pessoa;
+2. Coletivo;
+3. Organização.
 
-## 5. Cobertura no marco
+Permanecem como papéis ou perspectivas contextuais:
 
-### 5.1 Jornada pessoal relacionada
+- visitante público;
+- pessoa autenticada;
+- solicitante;
+- participante de Coletivo;
+- responsável por Coletivo;
+- representante institucional;
+- autoridade protegida ou especialista;
+- Organização apoiadora;
+- operador econômico identificado;
+- observador de governança.
+
+Papéis contextuais não recebem automaticamente identidade, autoridade ou dados de outro participante.
+
+## 5. Unidades funcionais do programa
+
+### 5.1 Nó de jornada
+
+Cada nó deverá registrar artefato canônico, participante, perspectiva, autoridade, versão, canal, maturidade, entrada, decisão, saída, dados, gate, reversibilidade, lacunas e supersessão.
+
+### 5.2 Transição governada
+
+Cada ligação deverá registrar origem, destino, participante, tipo, condição, autoridade, ação, efeito, dados, autorização, reversibilidade, interrupção, tempo, evidência e lacuna.
+
+Uma seta sem autoridade documental não será tratada como transição válida.
+
+## 6. Taxonomias consolidadas
+
+### 6.1 Maturidade
+
+- contratado;
+- programado;
+- materializado;
+- validado;
+- reformulação pendente;
+- não iniciado;
+- bloqueado;
+- supersedido;
+- arquivado;
+- indeterminado.
+
+### 6.2 Transição
+
+- direta;
+- condicional;
+- protegida;
+- assíncrona;
+- handoff de autoridade;
+- entre participantes;
+- externa;
+- reversível;
+- destrutiva;
+- ausente;
+- proibida.
+
+## 7. Reutilização e autoridade
+
+M7.72 consolida que:
+
+- o ambiente é camada de leitura, não fonte canônica;
+- artefatos serão referenciados por ID, caminho e versão;
+- arquivos de origem permanecerão em modo somente leitura;
+- uma referência poderá aparecer em perspectivas diferentes sem cópia;
+- anotações, maturidade e setas permanecerão fora do artefato de origem;
+- proximidade visual ou numeração não autorizam transição;
+- inclusão no ambiente não promove maturidade, prioridade ou canonicidade;
+- lacunas não serão ocultadas por cartões genéricos;
+- Opportunity Boost será sobreposição comercial identificada, não participante ou autoridade.
+
+## 8. Cobertura preservada
+
+### 8.1 Jornada pessoal relacionada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
@@ -122,37 +183,51 @@ M7.71 consolida:
 | Expressão Guiada do Momento Atual | 8 | 8 | 0 |
 | **Subtotal relacionado** | **17** | **17** | **0** |
 
-### 5.2 Famílias preservadas
+### 8.2 Famílias preservadas
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
 | Coletivos — total | 22 | 22 | 0 |
 | Opportunity Boost | 46 | 36 | 10 |
 
-As contagens permanecem separadas.
+As contagens permanecem separadas e não representam um inventário global único.
 
-## 6. Condição do marco
+## 9. Estado do ambiente
 
-M7.71 conclui a validação funcional da Expressão Guiada.
+| Camada | Estado no M7.72 |
+|---|---|
+| programa funcional | concluído no pacote |
+| participantes e perspectivas | definidos |
+| nós, transições e taxonomias | definidos |
+| regras de reutilização e lacunas | definidas |
+| mapa integrado documental | não iniciado |
+| protótipo navegável | não iniciado |
+| aplicação ou motor | não iniciado |
+| teste com pessoas | não iniciado |
+| Engenharia de Produto | não iniciada |
 
-O avanço recomendado depende de autorização separada para:
+## 10. Condição do marco
 
-> **UXA-070 — Programa Funcional do Ambiente de Simulação das Jornadas**
+M7.72 conclui programação funcional, não materialização.
 
-O programa não implementará protótipo, simulador ou Engenharia de Produto.
+O avanço depende de autorização separada para:
 
-## 7. Preservações
+> **UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições**
+
+A UXA-071 permanecerá separada de protótipo, implementação e Engenharia de Produto.
+
+## 11. Preservações
 
 Permanecem inalterados:
 
 - 18 decisões humanas e zero Resultados Empresariais canônicos;
 - 9 candidatos em validação, 3 fundidos e 6 rejeitados;
 - baseline comercial candidata;
-- 46 wireframes do Opportunity Boost;
+- 17 estados relacionados da jornada pessoal materializados e validados;
+- 46 wireframes do Opportunity Boost, com 36 validados e 10 pendentes;
 - 22 wireframes de Coletivos materializados e validados;
 - `Meus Coletivos` ainda não iniciado;
 - ausência de modelo de IA ou algoritmo adaptativo definido;
-- ausência de gravação, transcrição e armazenamento reais;
+- ausência de aplicação ou motor de simulação;
 - pausa da Engenharia de Produto antes de W0-01;
-- ausência de protótipo e teste com pessoas;
-- ambiente de simulação ainda não iniciado.
+- ausência de protótipo e teste com pessoas.
