@@ -2,7 +2,7 @@
 id: GKR-SOURCE-INTAKE-001
 title: Registro de Intake das Fontes Acumuladas
 status: draft
-version: 0.5.0
+version: 0.5.1
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
