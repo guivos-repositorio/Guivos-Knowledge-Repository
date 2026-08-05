@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe móvel da solicitação de participação aprovada</title>
-  <desc id="desc">Resultado da aprovação da solicitação, com autoridade, fundamento, vínculo criado, permissões iniciais, ausência de função automática e continuidade para o ambiente interno.</desc>
+  <desc id="desc">Resultado da aprovação da solicitação, com autoridade, fundamento, vínculo criado, preferências preservadas, ausência de função automática e acesso governado ao ambiente interno.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
@@ -17,15 +17,16 @@
   <text x="32" y="328" font-family="Arial, sans-serif" font-size="7">A Organização apoiadora não participou automaticamente da decisão.</text>
   <rect x="20" y="358" width="350" height="126" rx="10" fill="#ffffff" stroke="#777777"/>
   <text x="32" y="379" font-family="Arial, sans-serif" font-size="10" font-weight="700">Vínculo criado</text>
-  <text x="32" y="400" font-family="Arial, sans-serif" font-size="8">• participante confirmado com acesso interno conforme permissões</text>
+  <text x="32" y="400" font-family="Arial, sans-serif" font-size="8">• participante confirmado com acesso conforme permissões vigentes</text>
   <text x="32" y="420" font-family="Arial, sans-serif" font-size="8">• lista nominal: não aparecer, conforme preferência inicial</text>
   <text x="32" y="440" font-family="Arial, sans-serif" font-size="8">• notificações: nenhuma categoria ativada automaticamente</text>
-  <text x="32" y="460" font-family="Arial, sans-serif" font-size="7">A aprovação não atribui função, moderação, autoridade ou obrigação de presença.</text>
-  <rect x="20" y="498" width="350" height="99" rx="10" fill="#f5f5f5" stroke="#999999"/>
-  <text x="32" y="519" font-family="Arial, sans-serif" font-size="10" font-weight="700">Próximos passos</text>
-  <text x="32" y="540" font-family="Arial, sans-serif" font-size="8">O ambiente interno abrirá sem alterar suas escolhas atuais.</text>
+  <text x="32" y="460" font-family="Arial, sans-serif" font-size="7">A aprovação não atribui função, moderação, autoridade ou presença obrigatória.</text>
+  <rect x="20" y="498" width="350" height="109" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="519" font-family="Arial, sans-serif" font-size="10" font-weight="700">Continuidade</text>
+  <text x="32" y="540" font-family="Arial, sans-serif" font-size="8">Ao acessar o ambiente interno, as escolhas atuais deverão ser preservadas.</text>
   <text x="32" y="560" font-family="Arial, sans-serif" font-size="8">Mudanças materiais de regras exigirão nova revisão consciente.</text>
-  <text x="32" y="580" font-family="Arial, sans-serif" font-size="7">Pausa, saída e controles do vínculo permanecerão em superfícies próprias.</text>
+  <text x="32" y="580" font-family="Arial, sans-serif" font-size="7">Pausa, saída e gestão do vínculo permanecem em superfícies próprias.</text>
+  <text x="32" y="598" font-family="Arial, sans-serif" font-size="7">Esta tela não declara que essas superfícies já foram reformuladas.</text>
   <rect x="20" y="625" width="350" height="46" rx="8" fill="#222222"/>
   <text x="195" y="653" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" font-weight="700">Abrir Coletivo</text>
   <rect x="20" y="685" width="350" height="43" rx="8" fill="#ffffff" stroke="#111111"/>

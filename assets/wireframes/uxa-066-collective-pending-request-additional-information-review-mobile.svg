@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe móvel da revisão da resposta adicional</title>
-  <desc id="desc">Revisão consciente da resposta adicional antes do envio, com pergunta, resposta editável, finalidade, destinatário, dados proibidos, confirmação vazia e cancelamento sem envio.</desc>
+  <desc id="desc">Revisão consciente da resposta ou preferência antes do envio, com pergunta, finalidade, destinatário, dados excluídos, confirmação vazia e descarte sem cancelar a solicitação.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
   <text x="20" y="57" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar ao pedido</text>
-  <text x="370" y="57" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Cancelar</text>
+  <text x="370" y="57" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Descartar rascunho</text>
   <text x="20" y="94" font-family="Arial, sans-serif" font-size="21" font-weight="700">Revisar resposta adicional</text>
   <text x="20" y="116" font-family="Arial, sans-serif" font-size="9">Ciclistas da Serra · antes do envio</text>
   <rect x="20" y="136" width="350" height="101" rx="10" fill="#f7f7f7" stroke="#777777"/>
@@ -14,28 +14,28 @@
   <text x="32" y="198" font-family="Arial, sans-serif" font-size="8">Finalidade: verificar adequação ao nível de segurança do grupo.</text>
   <text x="32" y="218" font-family="Arial, sans-serif" font-size="7">Solicitante: Carlos Menezes · papel autorizado para análise.</text>
   <rect x="20" y="251" width="350" height="135" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="32" y="272" font-family="Arial, sans-serif" font-size="10" font-weight="700">Resposta que será enviada</text>
+  <text x="32" y="272" font-family="Arial, sans-serif" font-size="10" font-weight="700">Resposta ou preferência que será enviada</text>
   <rect x="32" y="287" width="326" height="60" rx="6" fill="#f5f5f5" stroke="#999999"/>
   <text x="42" y="309" font-family="Arial, sans-serif" font-size="8">Tenho experiência intermediária e prefiro trajetos sinalizados.</text>
   <text x="42" y="330" font-family="Arial, sans-serif" font-size="8">Não participo de descidas técnicas avançadas.</text>
   <text x="32" y="369" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Editar resposta</text>
-  <text x="358" y="369" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Preferir não informar</text>
+  <text x="358" y="369" text-anchor="end" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Trocar por “prefiro não informar”</text>
   <rect x="20" y="400" width="350" height="119" rx="10" fill="#f5f5f5" stroke="#999999"/>
   <text x="32" y="421" font-family="Arial, sans-serif" font-size="10" font-weight="700">Destino e limites</text>
   <text x="32" y="442" font-family="Arial, sans-serif" font-size="8">Receberá: responsável autorizado pela análise desta solicitação</text>
   <text x="32" y="462" font-family="Arial, sans-serif" font-size="8">Não receberá: telefone, e-mail, Jornada, localização ou outros vínculos</text>
-  <text x="32" y="482" font-family="Arial, sans-serif" font-size="8">A resposta será vinculada somente à solicitação CSR-2026-0804-0941.</text>
+  <text x="32" y="482" font-family="Arial, sans-serif" font-size="8">O envio será vinculado somente à solicitação CSR-2026-0804-0941.</text>
   <text x="32" y="502" font-family="Arial, sans-serif" font-size="7">A Organização apoiadora permanece sem acesso automático.</text>
   <rect x="20" y="533" width="350" height="90" rx="10" fill="#ffffff" stroke="#777777"/>
   <text x="32" y="554" font-family="Arial, sans-serif" font-size="10" font-weight="700">Confirmação necessária</text>
   <rect x="32" y="570" width="14" height="14" fill="#ffffff" stroke="#111111"/>
-  <text x="55" y="581" font-family="Arial, sans-serif" font-size="8">Revisei a resposta, a finalidade e quem poderá recebê-la.</text>
-  <text x="32" y="607" font-family="Arial, sans-serif" font-size="7">A confirmação começa vazia; enviar não cria vínculo nem garante aprovação.</text>
+  <text x="55" y="581" font-family="Arial, sans-serif" font-size="8">Revisei o conteúdo, a finalidade e quem poderá recebê-lo.</text>
+  <text x="32" y="607" font-family="Arial, sans-serif" font-size="7">A confirmação começa vazia; o envio poderá retomar a análise.</text>
   <rect x="20" y="640" width="350" height="44" rx="8" fill="#eeeeee" stroke="#999999"/>
   <text x="195" y="667" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555555" font-weight="700">Enviar resposta adicional</text>
-  <text x="195" y="701" text-anchor="middle" font-family="Arial, sans-serif" font-size="7">Disponível somente após revisão e confirmação.</text>
+  <text x="195" y="701" text-anchor="middle" font-family="Arial, sans-serif" font-size="7">Enviar não cria vínculo nem garante aprovação.</text>
   <rect x="20" y="716" width="350" height="39" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="740" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Cancelar sem enviar resposta</text>
+  <text x="195" y="740" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Voltar sem enviar esta resposta</text>
   <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
   <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817" font-weight="700">Eu</text></g>
   <g fill="none" stroke="#555555"><circle cx="39" cy="796" r="8"/><rect x="109" y="788" width="16" height="16"/><circle cx="195" cy="796" r="8"/><path d="M265 804 L273 788 L281 804 Z"/><circle cx="351" cy="794" r="6" fill="#222222"/><path d="M342 807 Q351 799 360 807"/></g>

@@ -1,38 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Wireframe móvel da solicitação aguardando informação adicional</title>
-  <desc id="desc">Estado que exige ação da pessoa, com pergunta legítima, autoridade, finalidade, dados já enviados, prazo de resposta e alternativas de responder, contestar ou cancelar.</desc>
+  <title id="title">Wireframe móvel da solicitação com informação adicional solicitada</title>
+  <desc id="desc">Estado que exige decisão da pessoa, com pergunta proporcional, autoridade, finalidade, prazo e alternativas equivalentes de responder, preferir não informar, contestar ou cancelar.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
   <text x="20" y="57" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar à solicitação</text>
-  <text x="20" y="94" font-family="Arial, sans-serif" font-size="20" font-weight="700">Informação adicional necessária</text>
-  <text x="20" y="116" font-family="Arial, sans-serif" font-size="9">Ciclistas da Serra · ação necessária</text>
-  <rect x="20" y="136" width="350" height="91" rx="10" fill="#f7f7f7" stroke="#111111" stroke-dasharray="5 3"/>
+  <text x="20" y="94" font-family="Arial, sans-serif" font-size="20" font-weight="700">Informação adicional solicitada</text>
+  <text x="20" y="116" font-family="Arial, sans-serif" font-size="9">Ciclistas da Serra · sua decisão é necessária</text>
+  <rect x="20" y="136" width="350" height="101" rx="10" fill="#f7f7f7" stroke="#111111" stroke-dasharray="5 3"/>
   <text x="32" y="157" font-family="Arial, sans-serif" font-size="10" font-weight="700">Estado atual</text>
-  <text x="32" y="178" font-family="Arial, sans-serif" font-size="14" font-weight="700">Aguardando resposta da pessoa</text>
+  <text x="32" y="178" font-family="Arial, sans-serif" font-size="14" font-weight="700">Aguardando sua escolha</text>
   <text x="32" y="199" font-family="Arial, sans-serif" font-size="8">Solicitado em 06/08/2026 às 14:20 · responder até 12/08/2026</text>
-  <text x="32" y="217" font-family="Arial, sans-serif" font-size="7">O prazo, a expiração e suas consequências devem seguir a regra apresentada.</text>
-  <rect x="20" y="241" width="350" height="134" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="32" y="262" font-family="Arial, sans-serif" font-size="10" font-weight="700">Pergunta e finalidade</text>
-  <text x="32" y="283" font-family="Arial, sans-serif" font-size="8">Pergunta: você possui experiência em trajetos com descida técnica?</text>
-  <text x="32" y="303" font-family="Arial, sans-serif" font-size="8">Finalidade declarada: verificar adequação ao nível de segurança do grupo.</text>
-  <text x="32" y="323" font-family="Arial, sans-serif" font-size="8">Solicitante: Carlos Menezes · papel autorizado para análise</text>
-  <text x="32" y="343" font-family="Arial, sans-serif" font-size="8">Resposta aceita: texto curto ou opção “prefiro não informar”.</text>
-  <text x="32" y="363" font-family="Arial, sans-serif" font-size="7">Não serão solicitados diagnóstico, contato pessoal ou dados da Jornada.</text>
-  <rect x="20" y="389" width="350" height="101" rx="10" fill="#f5f5f5" stroke="#999999"/>
-  <text x="32" y="410" font-family="Arial, sans-serif" font-size="10" font-weight="700">Efeito sobre a solicitação</text>
-  <text x="32" y="431" font-family="Arial, sans-serif" font-size="8">A análise fica pausada até resposta, cancelamento ou expiração.</text>
-  <text x="32" y="451" font-family="Arial, sans-serif" font-size="8">Responder não cria vínculo e não garante aprovação.</text>
-  <text x="32" y="471" font-family="Arial, sans-serif" font-size="7">A ausência de resposta não será apresentada como recusa voluntária.</text>
-  <rect x="20" y="504" width="350" height="46" rx="8" fill="#222222"/>
-  <text x="195" y="532" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" font-weight="700">Preparar resposta</text>
-  <rect x="20" y="564" width="350" height="43" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="591" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Contestar necessidade ou finalidade</text>
-  <rect x="20" y="621" width="350" height="43" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="648" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Cancelar solicitação</text>
-  <rect x="20" y="680" width="350" height="63" rx="8" fill="#eeeeee" stroke="#999999"/>
-  <text x="32" y="704" font-family="Arial, sans-serif" font-size="8">Dados já enviados permanecem em análise conforme finalidade informada.</text>
-  <text x="32" y="724" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver dados, regra de retenção e proteção aplicável</text>
+  <text x="32" y="217" font-family="Arial, sans-serif" font-size="7">Você pode responder, preferir não informar, contestar ou cancelar.</text>
+  <text x="32" y="233" font-family="Arial, sans-serif" font-size="7">A regra apresentada deverá explicar eventual expiração e consequência.</text>
+  <rect x="20" y="251" width="350" height="134" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="272" font-family="Arial, sans-serif" font-size="10" font-weight="700">Pergunta e finalidade</text>
+  <text x="32" y="293" font-family="Arial, sans-serif" font-size="8">Pergunta: você possui experiência em trajetos com descida técnica?</text>
+  <text x="32" y="313" font-family="Arial, sans-serif" font-size="8">Finalidade declarada: verificar adequação ao nível de segurança do grupo.</text>
+  <text x="32" y="333" font-family="Arial, sans-serif" font-size="8">Solicitante: Carlos Menezes · papel autorizado para análise</text>
+  <text x="32" y="353" font-family="Arial, sans-serif" font-size="8">Resposta aceita: texto curto ou opção “prefiro não informar”.</text>
+  <text x="32" y="373" font-family="Arial, sans-serif" font-size="7">Este pedido não inclui diagnóstico, contato pessoal ou dados da Jornada.</text>
+  <rect x="20" y="399" width="350" height="101" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="420" font-family="Arial, sans-serif" font-size="10" font-weight="700">Efeito sobre a solicitação</text>
+  <text x="32" y="441" font-family="Arial, sans-serif" font-size="8">A decisão fica pausada até resposta, escolha, cancelamento ou expiração.</text>
+  <text x="32" y="461" font-family="Arial, sans-serif" font-size="8">Responder ou preferir não informar não cria vínculo nem garante aprovação.</text>
+  <text x="32" y="481" font-family="Arial, sans-serif" font-size="7">A ausência de resposta não será apresentada como recusa voluntária.</text>
+  <rect x="20" y="514" width="350" height="46" rx="8" fill="#222222"/>
+  <text x="195" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" font-weight="700">Responder ou preferir não informar</text>
+  <rect x="20" y="574" width="350" height="43" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="601" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Contestar necessidade ou finalidade</text>
+  <rect x="20" y="631" width="350" height="43" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Cancelar solicitação</text>
+  <rect x="20" y="690" width="350" height="53" rx="8" fill="#eeeeee" stroke="#999999"/>
+  <text x="32" y="713" font-family="Arial, sans-serif" font-size="8">Os dados já enviados permanecem vinculados ao processo pausado.</text>
+  <text x="32" y="733" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver dados, finalidade e tratamento aplicável</text>
   <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
   <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817" font-weight="700">Eu</text></g>
   <g fill="none" stroke="#555555"><circle cx="39" cy="796" r="8"/><rect x="109" y="788" width="16" height="16"/><circle cx="195" cy="796" r="8"/><path d="M265 804 L273 788 L281 804 Z"/><circle cx="351" cy="794" r="6" fill="#222222"/><path d="M342 807 Q351 799 360 807"/></g>
