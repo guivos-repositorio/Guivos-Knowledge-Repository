@@ -101,7 +101,7 @@ def main() -> int:
     for relative in sorted(REQUIRED_NAV_PATHS):
         require(relative in mkdocs, errors, f"mkdocs.yml: entrada obrigatória ausente: {relative}")
 
-    require("../../CHANGELOG.md" in changelog_index, errors, "índice de changelog: ledger raiz não referenciado")
+    require("CHANGELOG.md" in changelog_index, errors, "índice de changelog: ledger raiz não referenciado")
     require("changelog-1.95.0-p1-global-semantic-resynchronization.md" in changelog_index, errors, "índice de changelog: P1 1.95.0 ausente")
 
     for number in range(39, 71):
