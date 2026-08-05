@@ -2,7 +2,7 @@
 id: GKR-CLAIMS-TRACE-001
 title: Rastreabilidade Git das Alegações Acumuladas
 status: draft
-version: 0.5.3
+version: 0.5.4
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -148,8 +148,8 @@ Exemplos corretos:
 ## 8. Checkpoint congelado
 
 ```text
-Claims trace: GKR-CLAIMS-TRACE-001 0.5.3
-Source intake reference: GKR-SOURCE-INTAKE-001 0.5.4
+Claims trace: GKR-CLAIMS-TRACE-001 0.5.4
+Source intake: GKR-SOURCE-INTAKE-001
 Claims traced: 33
 Unqualified promotions allowed: 0
 Current-state changes: 0
