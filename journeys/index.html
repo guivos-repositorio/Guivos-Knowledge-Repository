@@ -6225,10 +6225,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-revalidado" class="md-nav__link">
+  <a href="#5-estado-pos-promocao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado revalidado
+        5. Estado pós-promoção
       
     </span>
   </a>
@@ -6297,10 +6297,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-parecer-da-uxa-079" class="md-nav__link">
+  <a href="#8-regra-da-promocao-granular" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Parecer da UXA-079
+        8. Regra da promoção granular
       
     </span>
   </a>
@@ -6330,10 +6330,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-regra-de-promocao" class="md-nav__link">
+  <a href="#11-estado-dos-artefatos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Regra de promoção
+        11. Estado dos artefatos
       
     </span>
   </a>
@@ -8867,10 +8867,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-revalidado" class="md-nav__link">
+  <a href="#5-estado-pos-promocao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado revalidado
+        5. Estado pós-promoção
       
     </span>
   </a>
@@ -8939,10 +8939,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-parecer-da-uxa-079" class="md-nav__link">
+  <a href="#8-regra-da-promocao-granular" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Parecer da UXA-079
+        8. Regra da promoção granular
       
     </span>
   </a>
@@ -8972,10 +8972,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-regra-de-promocao" class="md-nav__link">
+  <a href="#11-estado-dos-artefatos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Regra de promoção
+        11. Estado dos artefatos
       
     </span>
   </a>
@@ -9031,7 +9031,7 @@
 <li>observe retornos, contestações e interrupções;</li>
 <li>consulte o catálogo agregado;</li>
 <li>localize superfícies e transições por ID;</li>
-<li>considere os pareceres das UXA-077 e UXA-079 e as correções da UXA-078;</li>
+<li>considere os pareceres das UXA-077 e UXA-079, as correções da UXA-078 e a promoção da UXA-080;</li>
 <li>acompanhe as lacunas sem tratá-las como fechadas.</li>
 </ol>
 <h2 id="3-vistas-disponiveis">3. Vistas disponíveis<a class="headerlink" href="#3-vistas-disponiveis" title="Permanent link">&para;</a></h2>
@@ -9051,17 +9051,18 @@
 <li><a href="../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry/">UXA-076 — materialização granular</a>;</li>
 <li><a href="../experience-architecture/uxa-077-granular-registry-functional-validation/">UXA-077 — validação funcional não aprovada</a>;</li>
 <li><a href="../experience-architecture/uxa-078-controlled-granular-registry-reformulation/">UXA-078 — reformulação controlada</a>;</li>
-<li><a href="../experience-architecture/uxa-079-granular-registry-functional-revalidation/">UXA-079 — revalidação funcional aprovada com ressalvas</a>.</li>
+<li><a href="../experience-architecture/uxa-079-granular-registry-functional-revalidation/">UXA-079 — revalidação funcional aprovada com ressalvas</a>;</li>
+<li><a href="../experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization/">UXA-080 — promoção controlada dos registros granulares</a>.</li>
 </ul>
 <p>Resultado vigente:</p>
 <div class="highlight"><pre><span></span><code>materialização granular
 → validação não aprovada
 → reformulação dos cinco achados
 → revalidação aprovada com ressalvas
-→ registros permanecem draft
-→ promoção ainda não iniciada
+→ promoção controlada dos instrumentos
+→ registros vigentes sem promoção das jornadas ou fechamento de lacunas
 </code></pre></div>
-<h2 id="5-estado-revalidado">5. Estado revalidado<a class="headerlink" href="#5-estado-revalidado" title="Permanent link">&para;</a></h2>
+<h2 id="5-estado-pos-promocao">5. Estado pós-promoção<a class="headerlink" href="#5-estado-pos-promocao" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -9113,17 +9114,17 @@
 </tr>
 <tr>
 <td>reformulação granular</td>
-<td>executada; registros continuam <code>draft</code></td>
+<td>executada</td>
 <td>UXA-078</td>
 </tr>
 <tr>
 <td>revalidação granular</td>
-<td>aprovada com ressalvas; sem promoção</td>
+<td>aprovada com ressalvas</td>
 <td>UXA-079</td>
 </tr>
 <tr>
 <td>promoção granular</td>
-<td>não iniciada</td>
+<td>executada somente para os instrumentos de registro</td>
 <td>UXA-080</td>
 </tr>
 <tr>
@@ -9149,19 +9150,19 @@
 <tr>
 <th>Registro</th>
 <th style="text-align: right;">Quantidade</th>
-<th>Resultado da UXA-079</th>
+<th>Estado após UXA-080</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>superfícies, estados, responsabilidades ou fronteiras</td>
 <td style="text-align: right;">40</td>
-<td>IDs únicos e campos obrigatórios presentes</td>
+<td>instrumento <code>active</code> 0.3.0</td>
 </tr>
 <tr>
 <td>transições documentais</td>
 <td style="text-align: right;">37</td>
-<td>IDs únicos e endpoints resolvidos</td>
+<td>instrumento <code>active</code> 0.3.0</td>
 </tr>
 <tr>
 <td>referências de endpoint</td>
@@ -9173,9 +9174,14 @@
 <td style="text-align: right;">0</td>
 <td>aprovado</td>
 </tr>
+<tr>
+<td>detalhamentos obrigatórios</td>
+<td style="text-align: right;">4</td>
+<td>instrumentos <code>active</code> 0.2.0</td>
+</tr>
 </tbody>
 </table>
-<p>A variação frente à primeira versão decorre de separação documental. Não declara novas telas implementadas.</p>
+<p>A promoção não declara novas telas implementadas e não altera as classificações internas.</p>
 <h2 id="7-dominios-separados">7. Domínios separados<a class="headerlink" href="#7-dominios-separados" title="Permanent link">&para;</a></h2>
 <h3 id="71-coletivos">7.1 Coletivos<a class="headerlink" href="#71-coletivos" title="Permanent link">&para;</a></h3>
 <p><code>GKR-SURF-PER-102</code> representa exclusivamente Resultados de Busca de Coletivos.</p>
@@ -9212,19 +9218,17 @@
 </table>
 <h3 id="73-opportunity-boost">7.3 Opportunity Boost<a class="headerlink" href="#73-opportunity-boost" title="Permanent link">&para;</a></h3>
 <p><code>GKR-SURF-COM-005</code> e <code>GKR-TRN-305</code> apontam para UXA-055. Os dez estados residuais continuam sem validação funcional específica.</p>
-<h2 id="8-parecer-da-uxa-079">8. Parecer da UXA-079<a class="headerlink" href="#8-parecer-da-uxa-079" title="Permanent link">&para;</a></h2>
-<p><strong>Aprovado com ressalvas no escopo funcional documental.</strong></p>
-<p>Foram confirmados:</p>
+<h2 id="8-regra-da-promocao-granular">8. Regra da promoção granular<a class="headerlink" href="#8-regra-da-promocao-granular" title="Permanent link">&para;</a></h2>
+<p>O status <code>active</code> dos registros significa que eles são instrumentos documentais vigentes e aprovados no escopo declarado.</p>
+<p>A promoção não:</p>
 <ul>
-<li>resolução completa das 74 referências de endpoint;</li>
-<li>coerência dos novos IDs;</li>
-<li>separação entre Coletivos, oportunidades e publicação institucional;</li>
-<li>rastreabilidade correta para UXA-055;</li>
-<li>presença dos campos obrigatórios nas 40 entradas;</li>
-<li>preservação de lacunas, incerteza e estados não examinados;</li>
-<li>ausência de implementação ou promoção implícita.</li>
+<li>altera a maturidade das 40 entradas;</li>
+<li>altera os estados das 37 transições;</li>
+<li>converte lacunas em continuidades;</li>
+<li>promove as jornadas da Pessoa, Coletivo ou Organização;</li>
+<li>cria implementação.</li>
 </ul>
-<p>Ressalvas:</p>
+<p>Permanecem como ressalvas:</p>
 <ul>
 <li>campos de transição agregados;</li>
 <li>cobertura seletiva e não exaustiva;</li>
@@ -9270,27 +9274,26 @@
 <h2 id="10-regra-de-leitura">10. Regra de leitura<a class="headerlink" href="#10-regra-de-leitura" title="Permanent link">&para;</a></h2>
 <p>Uma sequência exibida é hipótese documental rastreável. Ela somente poderá ser declarada como jornada integrada completa quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência suficiente.</p>
 <p>Valores desconhecidos permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>.</p>
-<h2 id="11-regra-de-promocao">11. Regra de promoção<a class="headerlink" href="#11-regra-de-promocao" title="Permanent link">&para;</a></h2>
+<h2 id="11-estado-dos-artefatos">11. Estado dos artefatos<a class="headerlink" href="#11-estado-dos-artefatos" title="Permanent link">&para;</a></h2>
 <ul>
-<li>esta visão geral permanece <code>active</code> porque a seção foi aprovada como instrumento documental;</li>
+<li>esta visão geral permanece <code>active</code>;</li>
 <li>as vistas de Pessoa, Coletivo e Organização permanecem <code>draft</code>;</li>
 <li>handoffs, cenários e catálogo permanecem <code>active</code> nos limites da UXA-074;</li>
-<li>os registros granulares permanecem <code>draft</code> até promoção separada;</li>
+<li>os dois registros granulares estão <code>active</code> 0.3.0;</li>
+<li>os quatro detalhamentos granulares estão <code>active</code> 0.2.0;</li>
 <li>o registro de lacunas permanece <code>active</code> por ser observacional;</li>
-<li>a UXA-079 aprova o escopo documental, mas não promove qualquer registro;</li>
-<li>inclusão nesta seção não altera maturidade ou canonicidade.</li>
+<li>inclusão ou promoção nesta seção não altera maturidade ou canonicidade das entradas.</li>
 </ul>
 <h2 id="12-escopo-vigente">12. Escopo vigente<a class="headerlink" href="#12-escopo-vigente" title="Permanent link">&para;</a></h2>
-<p>O status <code>active</code> desta seção não declara:</p>
+<p>O status <code>active</code> desta seção e dos registros não declara:</p>
 <ul>
 <li>jornadas completas;</li>
 <li>validação ponta a ponta;</li>
-<li>promoção dos registros revalidados;</li>
 <li>fechamento de lacunas;</li>
 <li>prontidão para protótipo;</li>
 <li>prontidão para implementação.</li>
 </ul>
-<p>A próxima evolução possível é a <strong>UXA-080 — Promoção Controlada dos Registros Granulares e Sincronização Pós-Revalidação</strong>, mediante autorização separada.</p>
+<p>Nenhuma nova iniciativa é iniciada ou identificada automaticamente pela UXA-080. Qualquer incremento posterior dependerá de definição e autorização separadas.</p>
 
 
 

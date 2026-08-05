@@ -8770,16 +8770,16 @@
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.</p>
-<p>A versão 0.2.0 executa as correções obrigatórias da UXA-077:</p>
+<p>A versão 0.3.0 incorpora a promoção controlada da UXA-080 após a revalidação aprovada com ressalvas pela UXA-079. Permanecem vigentes as correções da UXA-078:</p>
 <ul>
 <li>todos os endpoints resolvem para IDs registrados;</li>
 <li>oportunidades utilizam superfícies próprias de mapa, lista e detalhe;</li>
 <li>o estado institucional de publicação permanece separado da experiência da Pessoa;</li>
 <li>a fronteira externa recebe endpoint documental controlado;</li>
 <li>o retorno do Opportunity Boost é dividido entre mapa e lista orgânicos;</li>
-<li>os dez estados residuais passam a apontar para UXA-055.</li>
+<li>os dez estados residuais apontam para UXA-055.</li>
 </ul>
-<p>Nenhuma linha executa lógica de negócio ou cria ligação inexistente.</p>
+<p>O status <code>active</code> aprova o registro como instrumento documental. Nenhuma linha executa lógica de negócio ou cria ligação implementada.</p>
 <h2 id="2-convencoes-de-estado">2. Convenções de estado<a class="headerlink" href="#2-convencoes-de-estado" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9489,8 +9489,8 @@
 <h2 id="8-resolucao-dos-achados-da-uxa-077">8. Resolução dos achados da UXA-077<a class="headerlink" href="#8-resolucao-dos-achados-da-uxa-077" title="Permanent link">&para;</a></h2>
 <h3 id="f01-endpoints">F01 — endpoints<a class="headerlink" href="#f01-endpoints" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>GKR-TRN-205</code> agora termina em <code>GKR-SURF-BND-001</code>;</li>
-<li><code>GKR-TRN-304</code> agora termina em <code>GKR-SURF-PER-201</code>;</li>
+<li><code>GKR-TRN-205</code> termina em <code>GKR-SURF-BND-001</code>;</li>
+<li><code>GKR-TRN-304</code> termina em <code>GKR-SURF-PER-201</code>;</li>
 <li>o retorno alternativo à lista é registrado por <code>GKR-TRN-306</code> em <code>GKR-SURF-PER-202</code>;</li>
 <li>nenhuma origem ou destino permanece em texto livre.</li>
 </ul>
@@ -9519,8 +9519,8 @@
 <li>transições ausentes permanecem registradas sem seta afirmativa de implementação;</li>
 <li>fronteira externa identificada não presume execução ou resultado externo;</li>
 <li>a cobertura permanece seletiva e não exaustiva;</li>
-<li>o registro permanece <code>draft</code> até nova validação funcional específica;</li>
-<li>a UXA-078 não promove nem valida estas transições.</li>
+<li>o status <code>active</code> aprova o instrumento de registro, não a continuidade ponta a ponta;</li>
+<li>a UXA-080 não altera os estados, evidências ou lacunas das 37 transições.</li>
 </ul>
 
 
