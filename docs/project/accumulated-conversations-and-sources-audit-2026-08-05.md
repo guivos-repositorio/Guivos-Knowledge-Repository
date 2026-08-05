@@ -50,7 +50,7 @@ A auditoria foi aberta em 2026-08-05 sobre a seguinte baseline:
 | Última frente integrada | UXA-070 |
 | Próxima frente arquitetural | UXA-071, não iniciada |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Programa de atualização | P0–P9, ainda sujeito a autorizações independentes |
+| Programa de atualização | P0–P9, sujeito a autorizações independentes |
 | P1 | aberto em PR separado e ainda não integrado |
 
 A autoridade transversal permanece no [Registro do Estado Atual](current-state-register.md). O [inventário acumulado](accumulated-updates-inventory-2026-08-04.md) e o [programa controlado](controlled-repository-update-program-2026-08-04.md) orientam o encaminhamento, mas não substituem as autoridades normativas.
@@ -109,22 +109,18 @@ Cada item foi classificado por quatro eixos.
 
 A auditoria encontrou uma combinação de desvios reais, lacunas de proveniência e riscos de promoção indevida.
 
-### 5.1 Situação geral
-
 | Classe | Resultado |
 |---|---|
 | Estado canônico | coerente em `GKR-STATE-001`; não deve ser alterado por este pacote |
 | Superfícies globais | divergências identificadas e corrigidas no PR do P1, ainda não integrado |
 | Conversas acumuladas | úteis como fonte de descoberta, insuficientes como prova de integração |
-| Documentos externos | contêm material relevante, mas misturam draft, aprovação declarada, recomendação e plano |
+| Documentos externos | misturam draft, aprovação declarada, recomendação e plano |
 | Linhagem documental | risco elevado em famílias com múltiplas versões e o mesmo identificador |
 | Arquitetura tecnológica | recomendação Neo4j precisa de decisão governada própria no P2 |
 | Marca e domínios | plano existe, mas não prova registro, titularidade, configuração ou operação |
-| Validação de mercado | há alegações e desenhos metodológicos; evidências e versões precisam ser reconciliadas no P4 |
-| Fundação e internacionalização | intenções relevantes, porém sem prova suficiente de constituição ou operação |
+| Validação de mercado | evidências e versões precisam ser reconciliadas no P4 |
+| Fundação e internacionalização | intenções sem prova suficiente de constituição ou operação |
 | UXA-071 | deve permanecer não iniciada até encerramento e autorização separados |
-
-### 5.2 Conclusão
 
 Não foi identificada justificativa para uma atualização ampla e direta da `main` a partir das conversas ou dos arquivos externos. O caminho seguro é o intake controlado, seguido de pacotes independentes, cada um com autoridade, evidência, branch, validação e PR próprios.
 
@@ -132,18 +128,18 @@ Não foi identificada justificativa para uma atualização ampla e direta da `ma
 
 ### D-001 — Divergência nas superfícies globais
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** corrigida no P1; ainda não integrada
 
-README, Home, navegação, changelog e índice de adendos estavam defasados em relação a `GKR-STATE-001` 1.99.0 e ao marco M7.72.
-
-A auditoria do próprio P1 também encontrou controles insuficientes de versão, associação contextual da UXA-071, existência física de arquivos indexados e execução do gate após `push` na `main`.
+README, Home, navegação, changelog e índice de adendos estavam defasados em relação a `GKR-STATE-001` 1.99.0 e ao marco M7.72. A auditoria do próprio P1 também encontrou controles insuficientes de versão, associação contextual da UXA-071, existência física de arquivos indexados e execução do gate após `push` na `main`.
 
 **Tratamento:** correções incorporadas ao PR nº 163, com validações semântica e mecânica aprovadas. O PR permanece draft e não deve ser mesclado sem autorização.
 
 ### D-002 — Inconsistência de continuidade entre conversa e Git
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** esclarecida
 
 Uma resposta anterior afirmou que branch, commit e PR do P1 não haviam sido criados. A verificação posterior encontrou o PR nº 163 já existente, com histórico próprio.
@@ -154,7 +150,8 @@ Uma resposta anterior afirmou que branch, commit e PR do P1 não haviam sido cri
 
 ### D-003 — Aprovação declarada fora do GKR
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** aberta
 
 Alguns PDFs e documentos externos se apresentam como “aprovados”, “oficiais”, “canônicos” ou versão 1.0. Essa declaração interna ao arquivo não comprova aprovação governada no GKR.
@@ -165,34 +162,30 @@ Alguns PDFs e documentos externos se apresentam como “aprovados”, “oficiai
 
 ### D-004 — Linhagem ambígua da família `GC-CON-001`
 
-**Severidade:** crítica  
+**Severidade:** crítica
+
 **Situação:** aberta
 
 Foram identificadas múltiplas variantes relacionadas ao corpus conceitual da Guivos, com o mesmo identificador ou títulos próximos, mas conteúdo, versão, status e escopo potencialmente diferentes.
 
 **Risco:** colisão de ID, promoção da versão errada, perda de autoria temporal e contradições silenciosas.
 
-**Tratamento obrigatório no P0:**
-
-1. inventariar todas as cópias;
-2. calcular ordem temporal e relação de derivação;
-3. comparar conteúdo e front matter;
-4. identificar a autoridade atual já integrada, quando existir;
-5. declarar superseded, archived, candidate ou rejected para cada variante;
-6. proibir nova integração com o mesmo ID até a linhagem ser resolvida.
+**Tratamento obrigatório no P0:** inventariar todas as cópias; calcular ordem temporal e relação de derivação; comparar conteúdo e front matter; identificar a autoridade atual já integrada; declarar `superseded`, `archived`, `candidate` ou `rejected` para cada variante; bloquear nova integração com o mesmo ID até a resolução da linhagem.
 
 ### D-005 — Recomendação tecnológica tratada como decisão ou implantação
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** roteada ao P2
 
-O documento de arquitetura Neo4j recomenda AuraDB, Graph Analytics separado e integração analítica progressiva com Power BI. A recomendação é tecnicamente relevante, mas não comprova contratação, provisionamento, migração, benchmark, segurança ou operação.
+O documento de arquitetura Neo4j recomenda AuraDB, Graph Analytics separado e integração analítica progressiva com Power BI. A recomendação é relevante, mas não comprova contratação, provisionamento, migração, benchmark, segurança ou operação.
 
 **Tratamento:** preservar como fonte candidata do P2; produzir ADR e gates de decisão antes de qualquer declaração de adoção.
 
 ### D-006 — Desalinhamento entre desenho e evidência de validação de mercado
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** roteada ao P4
 
 Há rascunhos com formulário, indicadores, versões e afirmações de implementação. O repositório também possui regras explícitas para diferenciar draft, readiness, coleta e resultado.
@@ -203,7 +196,8 @@ Há rascunhos com formulário, indicadores, versões e afirmações de implement
 
 ### D-007 — Plano de proteção corporativa confundido com execução
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** roteada ao P3
 
 O plano de marcas, domínios, DNS e certificados estabelece diretrizes de titularidade e aprovação, mas não prova registros efetivados, titularidade atual, configuração técnica ou proteção internacional.
@@ -214,7 +208,8 @@ O plano de marcas, domínios, DNS e certificados estabelece diretrizes de titula
 
 ### D-008 — Entidade institucional projetada tratada como existente
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** aberta e roteada ao P5
 
 Conversas descrevem Fundação Guivos, `guivos.org`, programas sociais, voluntariado e recompensas patrocinadas. Não há evidência suficiente, nesta auditoria, de constituição jurídica, governança aprovada, conta bancária, operação, equipe ou programa ativo.
@@ -223,7 +218,8 @@ Conversas descrevem Fundação Guivos, `guivos.org`, programas sociais, voluntar
 
 ### D-009 — Internacionalização e presença territorial sem evidência operacional
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** aberta e roteada ao P7
 
 Domínios, números telefônicos, polos comerciais, perfis e países prioritários foram discutidos. Discussão, reserva ou cadastro isolado não comprovam operação internacional.
@@ -232,7 +228,8 @@ Domínios, números telefônicos, polos comerciais, perfis e países prioritári
 
 ### D-010 — Conteúdo operacional misturado ao conhecimento arquitetural
 
-**Severidade:** média  
+**Severidade:** média
+
 **Situação:** aberta
 
 Tratativas sobre instalação do GitHub CLI, autenticação, workspace e uso do Codex são importantes para a operação, mas não alteram a arquitetura ou o estado do ecossistema.
@@ -241,7 +238,8 @@ Tratativas sobre instalação do GitHub CLI, autenticação, workspace e uso do 
 
 ### D-011 — Nomenclatura histórica concorrente
 
-**Severidade:** média  
+**Severidade:** média
+
 **Situação:** parcialmente resolvida
 
 “Guivos Marketplace” permanece em conversas e materiais históricos, enquanto “Guivos Mall” foi adotado na estrutura atual.
@@ -250,7 +248,8 @@ Tratativas sobre instalação do GitHub CLI, autenticação, workspace e uso do 
 
 ### D-012 — Hipóteses de produto em quarentena
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** preservada
 
 Termos como Passport, Life Map, rankings, tribos e recompensas podem reaparecer em conversas ou rascunhos. Esses conceitos não devem retornar ao cânone por repetição conversacional.
@@ -259,7 +258,8 @@ Termos como Passport, Life Map, rankings, tribos e recompensas podem reaparecer 
 
 ### D-013 — Proveniência incompleta e referências sem localização permanente
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** aberta
 
 Parte das fontes possui título, mas não localização estável, hash, origem, responsável, versão confiável ou relação com o documento anterior.
@@ -268,7 +268,8 @@ Parte das fontes possui título, mas não localização estável, hash, origem, 
 
 ### D-014 — Risco de exposição de conteúdo confidencial
 
-**Severidade:** alta  
+**Severidade:** alta
+
 **Situação:** aberta
 
 Planos de proteção, estratégia corporativa, dados de contato, configurações técnicas, evidências jurídicas e informações comerciais podem exigir acesso restrito.
@@ -277,7 +278,8 @@ Planos de proteção, estratégia corporativa, dados de contato, configurações
 
 ### D-015 — Histórico raiz fragmentado
 
-**Severidade:** média  
+**Severidade:** média
+
 **Situação:** tratada no P1; ainda não integrada
 
 O `CHANGELOG.md` raiz não representa sozinho a cronologia recente. O P1 propõe índice próprio sem apagar o ledger legado.
@@ -286,7 +288,8 @@ O `CHANGELOG.md` raiz não representa sozinho a cronologia recente. O P1 propõe
 
 ### D-016 — Adendos canônicos pouco descobríveis
 
-**Severidade:** média  
+**Severidade:** média
+
 **Situação:** tratada no P1; ainda não integrada
 
 A matriz central e os adendos posteriores estavam dispersos. O P1 cria índice e gate para verificar os arquivos reais.
@@ -295,7 +298,8 @@ A matriz central e os adendos posteriores estavam dispersos. O P1 cria índice e
 
 ### D-017 — Alegações históricas de integração sem reconciliação de caminho
 
-**Severidade:** média  
+**Severidade:** média
+
 **Situação:** aberta
 
 Conversas anteriores registram integrações como GEM-009, decisões posteriores como GEM-010 e avanço do Contexto Vivo. Essas alegações podem estar corretas, mas precisam ser vinculadas a paths, commits e autoridades atuais antes de serem usadas em novas decisões.
@@ -304,7 +308,8 @@ Conversas anteriores registram integrações como GEM-009, decisões posteriores
 
 ### D-018 — Risco de atualização monolítica
 
-**Severidade:** crítica  
+**Severidade:** crítica
+
 **Situação:** controlada pelo programa P0–P9
 
 Atualizar simultaneamente arquitetura, tecnologia, marca, mercado, Fundação, internacionalização, produto e comunicação criaria colisões de autoridade e tornaria a revisão impraticável.
