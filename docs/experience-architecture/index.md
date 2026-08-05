@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.66.0
+version: 0.67.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-04
+last_updated: 2026-08-05
 related:
   - PAS-001
   - GLPA-001
@@ -45,6 +45,9 @@ related:
   - UXA-069
   - UXA-070
   - UXA-071
+  - UXA-072
+  - UXA-073
+  - GKR-JOURNEYS-001
   - M7.72
 normative: false
 ---
@@ -89,7 +92,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | Expressão Guiada do Momento Atual | 8 | 8 | 0 |
 | **Subtotal relacionado** | **17** | **17** | **0** |
 
-A contagem permanece separada das famílias de Coletivos e Opportunity Boost.
+A contagem permanece separada das famílias de Coletivos e Opportunity Boost e não comprova validação ponta a ponta da jornada integrada.
 
 ## 4. Expressão Guiada validada
 
@@ -104,7 +107,7 @@ A UXA-068 e a UXA-069 governam oito estados:
 7. separação de focos;
 8. síntese estruturada.
 
-Foram validados:
+Foram validados no escopo dos respectivos pacotes:
 
 - conteúdo de origem separado da ajuda temporária;
 - ajuda temporária somente após solicitação consciente;
@@ -143,11 +146,19 @@ Foram validados:
 | Solicitação Pendente | 8 | 8 | 0 |
 | **Total de Coletivos** | **22** | **22** | **0** |
 
-`Meus Coletivos`, Central de Atualizações, Início do Participante reformulado e Visão Geral do Responsável permanecem não iniciados.
+As 22 referências cobrem principalmente a perspectiva da Pessoa. `Meus Coletivos`, Central de Atualizações, Início do Participante reformulado, Visão Geral do Responsável e a operação bilateral permanecem ausentes.
 
-## 7. Programa do Ambiente de Simulação
+## 7. Programa e materialização das Jornadas Integradas
 
-A UXA-070 estabelece um ambiente documental para inspecionar jornadas sem duplicar artefatos canônicos.
+A sequência vigente é:
+
+```text
+UXA-070 — programa funcional concluído
+→ UXA-071 — primeira materialização documental integrada
+→ UXA-072 — validação funcional não aprovada até reformulação
+→ UXA-073 — reformulação, navegação e sincronização executadas
+→ UXA-074 — nova validação funcional ainda não iniciada
+```
 
 Participantes estruturais:
 
@@ -155,38 +166,39 @@ Participantes estruturais:
 - Coletivo;
 - Organização.
 
-O programa diferencia participante, papel, perspectiva e autoridade. Visitante, solicitante, responsável, representante institucional, especialista e patrocinador são perspectivas ou papéis contextuais, não novos participantes estruturais.
+Visitante, solicitante, responsável, representante institucional, especialista e patrocinador são perspectivas ou papéis contextuais, não novos participantes estruturais.
 
-A unidade mínima será um nó de jornada referenciado. Cada ligação será uma transição governada com origem, destino, condição, autoridade, efeito, dados, reversibilidade e evidência.
+## 8. Modelo de evidência reformulado
 
-Estados de maturidade controlados:
+Cada nó ou família das Jornadas Integradas deve separar:
 
-- contratado;
-- programado;
-- materializado;
-- validado;
-- reformulação pendente;
-- não iniciado;
-- bloqueado;
-- supersedido;
-- arquivado;
-- indeterminado.
+| Campo | Função |
+|---|---|
+| maturidade primária | um único estado controlado da UXA-070 |
+| autoridade contratual | contrato ou programa que governa a responsabilidade |
+| referência materializada | documento, wireframe ou SVG existente |
+| evidência de validação | pacote que validou a referência materializada |
+| continuidade integrada | validada, parcial, ausente ou não examinada |
 
-O ambiente deverá exibir lacunas e continuidades ausentes sem criar telas genéricas ou setas presumidas.
+```text
+cobertura das superfícies
+≠ cobertura das transições
+≠ validação da jornada integrada
+```
 
-## 8. Reutilização canônica
+## 9. Reutilização canônica
 
-- artefatos serão referenciados por ID, caminho e versão;
-- arquivos canônicos permanecerão em modo somente leitura;
-- uma mesma referência poderá aparecer em várias perspectivas sem cópia;
-- anotações e sobreposições permanecerão fora do artefato de origem;
-- nenhuma ligação será criada por proximidade visual ou numeração;
+- artefatos são referenciados por ID, caminho e versão;
+- arquivos canônicos permanecem em modo somente leitura;
+- uma mesma referência pode aparecer em várias perspectivas sem cópia;
+- anotações e sobreposições permanecem fora do artefato de origem;
+- nenhuma ligação é criada por proximidade visual ou numeração;
 - inclusão no ambiente não altera maturidade, prioridade ou canonicidade;
-- Opportunity Boost permanecerá camada comercial identificada, não participante ou autoridade.
+- Opportunity Boost permanece camada comercial identificada, não participante ou autoridade.
 
-## 9. Continuidade governada
+## 10. Continuidade governada
 
-### 9.1 Jornada pessoal
+### 10.1 Jornada pessoal
 
 ```text
 Home pública
@@ -196,9 +208,12 @@ Home pública
 → inventário e autorização
 → processamento visível
 → compreensão inicial
+→ continuidade recorrente
 ```
 
-### 9.2 Coletivos P0A
+As superfícies possuem validações locais. A continuidade integrada entre todos os pacotes permanece pendente da UXA-074.
+
+### 10.2 Coletivos P0A
 
 ```text
 Explorar Coletivos
@@ -211,9 +226,9 @@ Explorar Coletivos
 → Início do Participante
 ```
 
-As cinco primeiras referências estão materializadas e validadas. As seguintes serão exibidas como lacunas, não como experiências existentes.
+As cinco primeiras referências possuem materialização e validação na perspectiva coberta. As seguintes permanecem lacunas. A visão do responsável não pode ser inferida pelos estados apresentados à Pessoa.
 
-### 9.3 Organização e Coletivo
+### 10.3 Organização e Coletivo
 
 ```text
 proposta
@@ -224,9 +239,22 @@ proposta
 → renovação, ajuste, pausa ou encerramento
 ```
 
-A relação não transfere propriedade, direção ou dados além do escopo autorizado.
+A relação está contratada pela UXA-019, mas não possui materialização bilateral específica validada.
 
-## 10. Decisões estruturais preservadas
+## 11. Estado da seção documental
+
+| Artefato | Estado |
+|---|---|
+| navegação de primeiro nível | adicionada pela UXA-073 |
+| visão geral, Pessoa, Coletivo e Organização | reformulados; `draft` |
+| handoffs | reformulados; `draft` |
+| cenários | reformulados; `draft` |
+| catálogo | reformulado; `draft` |
+| lacunas | observacional; `active` |
+| nova validação funcional | não iniciada |
+| protótipo ou aplicação | não iniciados |
+
+## 12. Decisões estruturais preservadas
 
 - relato livre permanece legítimo;
 - compartilhar pouco não é falha;
@@ -243,15 +271,14 @@ A relação não transfere propriedade, direção ou dados além do escopo autor
 - consultar não altera fila;
 - cancelamento, recusa e expiração permanecem distintos;
 - publicidade não compra relevância, reputação ou autoridade;
-- leitura, rolagem e silêncio não equivalem a confirmação.
+- leitura, rolagem e silêncio não equivalem a confirmação;
+- superfície validada não equivale a jornada integrada validada.
 
-## 11. Limites
+## 13. Limites
 
 Não foram iniciados:
 
-- UXA-071;
-- materialização do mapa integrado;
-- SVG ou tela do ambiente de simulação;
+- UXA-074;
 - protótipo navegável;
 - aplicação ou motor de simulação;
 - modelo de IA ou algoritmo adaptativo;
@@ -261,13 +288,14 @@ Não foram iniciados:
 - `Meus Coletivos`;
 - Central de Atualizações;
 - Início do Participante reformulado;
+- Visão Geral do Responsável;
+- relação bilateral Organização–Coletivo materializada;
 - política jurídica;
 - teste com pessoas;
-- identidade visual;
 - Engenharia de Produto.
 
-## 12. Próxima transição
+## 14. Próxima transição
 
-**UXA-071 — Materialização Documental do Mapa Integrado de Jornadas e Transições**, mediante autorização separada.
+**UXA-074 — Nova Validação Funcional das Jornadas Integradas Reformuladas**, mediante autorização separada.
 
-A futura referência permanecerá documental e não corresponderá automaticamente a protótipo ou implementação.
+A futura validação não corresponde automaticamente a protótipo ou implementação.
