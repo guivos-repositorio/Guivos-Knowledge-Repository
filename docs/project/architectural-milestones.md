@@ -2,17 +2,23 @@
 id: GKR-ARCHITECTURAL-MILESTONES-001
 title: Marcos Arquiteturais
 status: active
-version: 5.41.0
+version: 5.42.0
 owner: Guivos
 last_updated: 2026-08-04
 depends_on:
   - GKR-STATE-001
 related:
-  - ROADMAP-12.43.0
+  - ROADMAP-12.44.0
   - GPA-007
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
+  - UXA-020
+  - UXA-023
+  - UXA-034
+  - UXA-035
+  - UXA-036
+  - UXA-037
   - UXA-056
   - UXA-057
   - UXA-058
@@ -26,6 +32,7 @@ related:
   - UXA-066
   - UXA-067
   - UXA-068
+  - UXA-069
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
@@ -44,6 +51,7 @@ related:
   - M7.67
   - M7.68
   - M7.69
+  - M7.70
 normative: false
 ---
 
@@ -76,51 +84,73 @@ Este registro apresenta a maturidade arquitetural consolidada. O estado oficial 
 | M7.66 | concluído | revisão e solicitação móvel materializadas |
 | M7.67 | concluído | revisão e solicitação móvel validadas e reformuladas |
 | M7.68 | concluído | Solicitação Pendente móvel materializada em oito estados |
-| **M7.69** | **concluído no pacote** | **Solicitação Pendente móvel reformulada e validada** |
+| M7.69 | concluído | Solicitação Pendente móvel reformulada e validada |
+| **M7.70** | **concluído no pacote** | **Expressão Guiada do Momento Atual materializada em oito estados móveis** |
 
-## 3. M7.69 — Solicitação Pendente Móvel Validada
+## 3. M7.70 — Expressão Guiada do Momento Atual Materializada
 
-O marco registra:
+O marco registra oito novos SVGs móveis:
 
-- oito SVGs móveis reformulados e validados;
-- verificação sem alteração de fila;
-- estimativa sem promessa;
-- correção material sem edição silenciosa;
-- autoridade protegida limitada ao processo;
-- pedido adicional sem obrigação de revelar;
-- resposta, preferência, contestação e cancelamento separados;
-- descarte do rascunho sem cancelamento da solicitação;
-- envio adicional com efeito compreensível;
-- tratamento posterior sem garantia absoluta;
-- aprovação sem função, autoridade ou notificação automática;
-- recusa sem sanção ou reputação;
-- expiração sem recusa ou consentimento;
-- denúncia separada de revisão formal;
-- ausência de navegação ativa para `Meus Coletivos`.
+1. orientação comum;
+2. rascunho guiado por texto;
+3. preparação para voz;
+4. gravação em andamento;
+5. revisão da transcrição;
+6. pergunta adaptativa;
+7. separação de focos;
+8. síntese estruturada.
 
-## 4. Cobertura no marco
+## 4. Decisões do marco
+
+M7.70 demonstra:
+
+- explicação anterior ao relato;
+- orientação sobre situação, impacto, prioridade, direção e contexto;
+- texto livre sem formulário obrigatório;
+- compartilhamento mínimo e progressivo;
+- microfone inativo até explicação e escolha consciente;
+- áudio, transcrição e declaração revisada separados;
+- gravação pausável, descartável e substituível por texto;
+- transcrição corrigível antes de entrar no rascunho;
+- perguntas somente quando reduzem lacuna material;
+- razão da pergunta visível;
+- respostas `não sei`, `prefiro não informar` e adiamento;
+- assuntos diferentes organizados sem descarte silencioso;
+- relevância decidida com a Pessoa;
+- síntese estruturada com pontos em aberto;
+- continuidade para revisão da UXA-034 sem processamento implícito.
+
+## 5. Cobertura no marco
+
+### 5.1 Jornada pessoal relacionada
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
-| Coletivos — descoberta | 5 | 5 | 0 |
-| Coletivos — Perfil Público | 4 | 4 | 0 |
-| Coletivos — revisão e solicitação | 5 | 5 | 0 |
-| Coletivos — Solicitação Pendente | 8 | 8 | 0 |
+| Início protegido geral | 4 | 4 | 0 |
+| Compreensão inicial | 5 | 5 | 0 |
+| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
+| **Subtotal relacionado** | **17** | **9** | **8** |
+
+### 5.2 Famílias preservadas
+
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| Coletivos — total | 22 | 22 | 0 |
 | Opportunity Boost | 46 | 36 | 10 |
 
-Total de Coletivos: 22 materializados e 22 validados.
+As contagens permanecem separadas.
 
-## 5. Condição do marco
+## 6. Condição do marco
 
-M7.69 conclui a validação funcional da quinta referência P0A.
+M7.70 conclui materialização, não validação funcional.
 
-O avanço recomendado depende de autorização separada para:
+O avanço depende de autorização separada para:
 
-> **UXA-068 — Expressão Guiada do Momento Atual por Texto e Voz**
+> **UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz**
 
-A UXA-068 deverá corrigir a lacuna entre escolher texto ou voz e produzir um relato suficientemente útil para a compreensão inicial.
+Nenhum protótipo, teste, algoritmo adaptativo ou implementação é autorizado pelo marco.
 
-## 6. Preservações
+## 7. Preservações
 
 Permanecem inalterados:
 
@@ -128,9 +158,12 @@ Permanecem inalterados:
 - 9 candidatos em validação, 3 fundidos e 6 rejeitados;
 - baseline comercial candidata;
 - 46 wireframes do Opportunity Boost;
+- 22 wireframes de Coletivos materializados e validados;
 - contratos UXA-056 a UXA-058;
 - programa de 88 estados da UXA-059;
 - `Meus Coletivos` ainda não iniciado;
+- ausência de modelo de IA ou algoritmo adaptativo definido;
+- ausência de gravação, transcrição e armazenamento reais;
 - pausa da Engenharia de Produto antes de W0-01;
 - ausência de protótipo e teste com pessoas;
 - ambiente de simulação das jornadas ainda não iniciado.
