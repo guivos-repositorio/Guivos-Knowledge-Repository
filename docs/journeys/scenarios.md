@@ -2,55 +2,113 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
   - UXA-070
   - UXA-071
+  - UXA-072
+  - UXA-073
 normative: false
 ---
 
 # Cenários Integrados de Jornada
 
-## Cenários mínimos
+## 1. Regra de evidência
 
-### 1. Pessoa inicia sua jornada protegida
+Cada cenário deve distinguir nós materializados, nós apenas contratados, transições examinadas e ponto de interrupção por lacuna.
 
-Home pública → entrada protegida → expressão guiada → inventário e autorização → processamento → compreensão inicial.
+Uma narrativa compreensível não equivale a um fluxo funcionalmente validado.
 
-**Cobertura:** materializada e validada nas referências vigentes.
+## 2. Cenários reformulados
 
-### 2. Pessoa encontra e solicita participação em um Coletivo
+### 2.1 Pessoa inicia sua jornada protegida
 
-Explorar → Busca → Perfil Público → Revisão → Solicitação → estados pendentes.
+| Campo | Registro |
+|---|---|
+| finalidade | permitir expressão protegida e compreensão inicial revisável |
+| participantes e perspectivas | Pessoa |
+| nós materializados | Home, entrada protegida, expressão guiada, inventário, processamento e compreensão inicial |
+| nós apenas contratados | persistência e personalização posteriores conforme gates próprios |
+| transições validadas | transições examinadas dentro dos pacotes UXA-021, UXA-035, UXA-037 e UXA-069 |
+| transições não validadas como conjunto | continuidade ponta a ponta entre todos os pacotes e entrada na Tela Hoje |
+| interrupção por lacuna | reconciliação integral com a experiência recorrente |
+| conclusão permitida | superfícies e decisões locais possuem evidência nos pacotes de origem |
+| conclusão proibida | declarar toda a jornada pessoal validada ponta a ponta |
 
-**Cobertura:** materializada e validada até a decisão. A continuidade posterior em `Meus Coletivos` permanece ausente.
+### 2.2 Pessoa encontra e solicita participação em um Coletivo
 
-### 3. Coletivo solicita informação adicional
+| Campo | Registro |
+|---|---|
+| finalidade | descobrir um Coletivo e enviar solicitação consciente |
+| participantes e perspectivas | Pessoa visitante e solicitante; Coletivo como destino institucional |
+| nós materializados | explorar, buscar, Perfil Público, revisão, solicitação e estados pendentes na visão da Pessoa |
+| nós apenas contratados | análise e decisão pelo responsável |
+| transições validadas | navegação e estados examinados nas UXA-061, UXA-063, UXA-065 e UXA-067 |
+| transições não validadas como conjunto | handoff para o responsável e formação do vínculo |
+| interrupção por lacuna | após `Solicitação Pendente`; `Meus Coletivos` ausente |
+| conclusão permitida | a perspectiva da Pessoa possui cobertura até o acompanhamento pendente |
+| conclusão proibida | afirmar que a operação bilateral está materializada |
 
-Pessoa envia solicitação → autoridade protegida pede complemento → Pessoa revisa e envia → autoridade retoma análise.
+### 2.3 Coletivo solicita informação adicional
 
-**Cobertura:** visão da Pessoa materializada e validada; operação completa do responsável ainda não materializada.
+| Campo | Registro |
+|---|---|
+| finalidade | complementar uma solicitação sem criar aprovação implícita |
+| participantes e perspectivas | responsável do Coletivo e Pessoa solicitante |
+| nós materializados | pedido e resposta na perspectiva da Pessoa |
+| nós apenas contratados | operação do responsável e retomada de análise |
+| transições validadas | estados apresentados à Pessoa pela UXA-067 |
+| transições não validadas como conjunto | origem da decisão e retorno à fila operacional |
+| interrupção por lacuna | Visão Geral do Responsável e gestão de solicitações ausentes |
+| conclusão permitida | o retorno para a Pessoa está representado |
+| conclusão proibida | declarar validada a operação do responsável |
 
-### 4. Organização e Coletivo estabelecem relação
+### 2.4 Organização e Coletivo estabelecem relação
 
-Proposta → avaliação bilateral → negociação → aprovação das duas autoridades → relação ativa → revisão ou saída.
+| Campo | Registro |
+|---|---|
+| finalidade | formar relação bilateral com autonomia e saída preservadas |
+| participantes e perspectivas | Organização e Coletivo |
+| nós materializados | nenhum fluxo bilateral específico |
+| nós apenas contratados | proposta, avaliação, negociação, aprovação, relação ativa, revisão e saída |
+| transições validadas | nenhuma como jornada bilateral integrada |
+| transições não validadas como conjunto | todas as etapas da relação |
+| interrupção por lacuna | início do fluxo bilateral |
+| conclusão permitida | o contrato UXA-019 define responsabilidades e limites |
+| conclusão proibida | afirmar existência de interface ou fluxo operacional bilateral |
 
-**Cobertura:** contratada; materialização visual específica pendente.
+### 2.5 Organização publica oportunidade e Pessoa acessa
 
-### 5. Organização publica oportunidade e Pessoa acessa
+| Campo | Registro |
+|---|---|
+| finalidade | publicar oportunidade e permitir consulta pela Pessoa |
+| participantes e perspectivas | Organização publicadora e Pessoa visitante |
+| nós materializados | cadastro, superfícies de descoberta e detalhe |
+| nós apenas contratados | efeitos externos após o destino identificado |
+| transições validadas | cadastro e detalhe nos respectivos pacotes |
+| transições não validadas como conjunto | publicação até consumo em todas as superfícies e efeitos externos |
+| interrupção por lacuna | após o destino ou ação externa |
+| conclusão permitida | as superfícies existentes possuem validação local |
+| conclusão proibida | declarar o ciclo completo da oportunidade validado |
 
-Organização cadastra oportunidade → oportunidade aparece em superfícies permitidas → Pessoa consulta detalhe → segue para ação ou destino identificado.
+### 2.6 Sobreposição comercial identificada
 
-**Cobertura:** materializada no escopo existente; reconciliação integrada entre todas as superfícies ainda necessária.
+| Campo | Registro |
+|---|---|
+| finalidade | permitir promoção identificada sem comprar autoridade, legitimidade ou reputação |
+| participantes e perspectivas | Organização anunciante e Pessoa exposta; Opportunity Boost como camada comercial |
+| nós materializados | 46 referências |
+| nós apenas contratados | regras econômicas e de governança dos pacotes de origem |
+| transições validadas | 36 referências validadas conforme pacotes |
+| transições não validadas como conjunto | 10 estados residuais e integração completa com superfícies orgânicas |
+| interrupção por lacuna | estados residuais sem validação |
+| conclusão permitida | a camada comercial é identificada e separada da autoridade orgânica |
+| conclusão proibida | tratar publicidade como participante, reputação ou recomendação |
 
-### 6. Sobreposição comercial identificada
+## 3. Critério de completude
 
-Organização configura Opportunity Boost → conteúdo patrocinado aparece identificado → Pessoa consulta explicação → ordem orgânica, reputação e autoridade permanecem protegidas.
+Um cenário só poderá ser marcado como completo quando todos os seus nós, transições, autoridades, dados, retornos, estados de exceção e pontos de saída estiverem documentados e funcionalmente validados como conjunto.
 
-**Cobertura:** 46 artefatos materializados, 36 validados e 10 pendentes.
-
-## Critério de completude
-
-Um cenário só poderá ser marcado como completo quando todos os seus nós, transições, autoridades, dados, retornos e estados de exceção estiverem documentados e funcionalmente validados.
+Esta vista permanece `draft` até nova validação funcional.
