@@ -66,7 +66,15 @@ nav:
       - Roadmap Arquitetural: roadmap.md
       - Knowledge Board: project/knowledge-board.md
       - Architectural Milestones: project/architectural-milestones.md
-      - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+      - Atualizações acumuladas:
+          - Inventário Governado: project/accumulated-updates-inventory-2026-08-04.md
+          - Programa Controlado P0–P9: project/controlled-repository-update-program-2026-08-04.md
+          - Política de Sincronização Semântica: project/global-semantic-state-synchronization-policy.md
+      - Consolidação e histórico:
+          - Matriz de Consolidação Canônica: project/canonical-consolidation-matrix.md
+          - Índice dos Adendos Canônicos: project/canonical-consolidation-addenda-index.md
+          - Índice Atual do Histórico: project/changelog-index.md
+          - Histórico 1.95.0 — P1: project/changelog-1.95.0-p1-global-semantic-resynchronization.md
       - Adendo do Opportunity Boost: project/canonical-consolidation-matrix-opportunity-boost-addendum.md
       - Adendo da UXA-039: project/canonical-consolidation-matrix-uxa-039-addendum.md
       - Adendo da UXA-040: project/canonical-consolidation-matrix-uxa-040-addendum.md
@@ -175,6 +183,10 @@ nav:
           - UXA-035 — Validação do Wireframe Móvel Protegido: experience-architecture/uxa-035-protected-journey-entry-wireframe-functional-validation-and-reformulation.md
           - UXA-036 — Wireframe Móvel da Compreensão Inicial: experience-architecture/uxa-036-initial-understanding-low-fidelity-wireframe.md
           - UXA-037 — Validação do Wireframe Móvel da Compreensão Inicial: experience-architecture/uxa-037-initial-understanding-wireframe-functional-validation-and-reformulation.md
+      - Expressão Guiada e estudo das jornadas:
+          - UXA-068 — Expressão Guiada por Texto e Voz: experience-architecture/uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md
+          - UXA-069 — Validação da Expressão Guiada: experience-architecture/uxa-069-guided-current-moment-text-voice-functional-validation-and-reformulation.md
+          - UXA-070 — Programa do Ambiente de Simulação: experience-architecture/uxa-070-journey-simulation-environment-functional-program.md
       - Experiência recorrente — depois da compreensão inicial:
           - UXA-002 — Experiência Diária e Tela Hoje: experience-architecture/uxa-002-daily-experience-and-home.md
           - UXA-006 — Wireframe da Tela Hoje: experience-architecture/uxa-006-today-low-fidelity-wireframe.md
@@ -200,6 +212,15 @@ nav:
           - UXA-044 — Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-044-opportunity-boost-sponsored-list-and-map-low-fidelity-wireframes.md
           - UXA-045 — Validação dos Estados Patrocinados de Lista e Mapa: experience-architecture/uxa-045-opportunity-boost-sponsored-list-map-functional-validation-and-reformulation.md
           - UXA-046 — Gestão da Campanha Ativa: experience-architecture/uxa-046-opportunity-boost-active-campaign-management-low-fidelity-wireframes.md
+          - UXA-047 — Validação da Gestão da Campanha: experience-architecture/uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md
+          - UXA-048 — Relatório Agregado: experience-architecture/uxa-048-opportunity-boost-aggregate-report-low-fidelity-wireframes.md
+          - UXA-049 — Validação do Relatório Agregado: experience-architecture/uxa-049-opportunity-boost-aggregate-report-functional-validation-and-reformulation.md
+          - UXA-050 — Gestão Móvel da Campanha: experience-architecture/uxa-050-opportunity-boost-mobile-campaign-management-low-fidelity-wireframes.md
+          - UXA-051 — Validação da Gestão Móvel: experience-architecture/uxa-051-opportunity-boost-mobile-campaign-management-functional-validation-and-reformulation.md
+          - UXA-052 — Inventário, Oferta e Erros: experience-architecture/uxa-052-opportunity-boost-insufficient-inventory-offer-and-error-states-low-fidelity-wireframes.md
+          - UXA-053 — Validação de Inventário, Oferta e Erros: experience-architecture/uxa-053-opportunity-boost-insufficient-inventory-offer-and-error-states-functional-validation-and-reformulation.md
+          - UXA-054 — Preferência Publicitária: experience-architecture/uxa-054-opportunity-boost-advertising-preference-states-low-fidelity-wireframes.md
+          - UXA-055 — Validação da Preferência Publicitária: experience-architecture/uxa-055-opportunity-boost-advertising-preference-states-functional-validation-and-reformulation.md
       - Oportunidades:
           - UXA-007 — Wireframe do Detalhe: experience-architecture/uxa-007-opportunity-detail-low-fidelity-wireframe.md
           - UXA-012 — Validação do Detalhe: experience-architecture/uxa-012-opportunity-detail-functional-validation-and-reformulation.md
@@ -212,6 +233,18 @@ nav:
           - UXA-016 — Wireframe do Coletivo: experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md
           - UXA-018 — Validação do Coletivo: experience-architecture/uxa-018-collective-home-functional-validation-and-reformulation.md
           - UXA-019 — Relações entre Organizações e Coletivos: experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md
+          - UXA-056 — Descoberta e Participação em Coletivos: experience-architecture/uxa-056-collective-discovery-and-participation-functional-contract.md
+          - UXA-057 — Identidade Pública e Reputação: experience-architecture/uxa-057-collective-public-identity-and-reputation-functional-contract.md
+          - UXA-058 — Interações, Contexto e Reputação: experience-architecture/uxa-058-collective-interactions-context-and-reputation-functional-contract.md
+          - UXA-059 — Programa de Wireframes de Coletivos: experience-architecture/uxa-059-collectives-low-fidelity-wireframe-program.md
+          - UXA-060 — Descoberta e Busca: experience-architecture/uxa-060-collective-discovery-and-search-low-fidelity-wireframes.md
+          - UXA-061 — Validação da Descoberta e Busca: experience-architecture/uxa-061-collective-discovery-and-search-functional-validation-and-reformulation.md
+          - UXA-062 — Perfil Público: experience-architecture/uxa-062-collective-public-profile-low-fidelity-wireframes.md
+          - UXA-063 — Validação do Perfil Público: experience-architecture/uxa-063-collective-public-profile-functional-validation-and-reformulation.md
+          - UXA-064 — Revisão e Solicitação: experience-architecture/uxa-064-collective-participation-review-and-request-low-fidelity-wireframes.md
+          - UXA-065 — Validação da Revisão e Solicitação: experience-architecture/uxa-065-collective-participation-review-and-request-functional-validation-and-reformulation.md
+          - UXA-066 — Solicitação Pendente: experience-architecture/uxa-066-collective-participation-pending-low-fidelity-wireframes.md
+          - UXA-067 — Validação da Solicitação Pendente: experience-architecture/uxa-067-collective-participation-pending-functional-validation-and-reformulation.md
 
   - Intelligence Architecture:
       - Visão Geral: intelligence-architecture/index.md
