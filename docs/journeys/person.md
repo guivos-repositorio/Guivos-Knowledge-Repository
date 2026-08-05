@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -30,6 +30,8 @@ related:
   - UXA-069
   - UXA-072
   - UXA-073
+  - UXA-074
+  - UXA-075
 normative: false
 ---
 
@@ -99,4 +101,10 @@ A cobertura validada termina na perspectiva da Pessoa em `Solicitação Pendente
 
 ## 4. Estado da vista
 
-Esta vista foi reformulada pela UXA-073 e permanece `draft` até nova validação funcional específica.
+A UXA-074 aprovou esta vista como representação documental corretamente delimitada. A UXA-075 mantém o status `draft` porque:
+
+- a continuidade entre compreensão inicial e Tela Hoje não foi validada como conjunto;
+- a jornada em Coletivos termina em uma continuidade parcial e assimétrica;
+- `Meus Coletivos`, Central de Atualizações e Início do Participante reformulado permanecem ausentes.
+
+O status `draft` não invalida as referências locais já materializadas e validadas nos pacotes de origem.
