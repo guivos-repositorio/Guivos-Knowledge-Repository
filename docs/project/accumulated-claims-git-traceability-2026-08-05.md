@@ -2,7 +2,7 @@
 id: GKR-CLAIMS-TRACE-001
 title: Rastreabilidade Git das Alegações Acumuladas
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-05
 depends_on:
@@ -10,6 +10,8 @@ depends_on:
   - GKR-AUD-ACCUMULATED-003
   - GKR-SOURCE-INTAKE-001
 related:
+  - GPA-000
+  - GPA-002
   - GEM-009
   - GEM-010
   - GEM-010-A2
@@ -89,6 +91,8 @@ Uma busca sem resultado não comprova ausência absoluta. Nesses casos, o result
 | CLM-021 | Product Engineering foi retomada | `GKR-STATE-001` 1.99.0 | Registro do Estado Atual | `not_located` | Engenharia de Produto permanece pausada antes de W0-01 |
 | CLM-022 | Existe Outcome empresarial canônico | Registro do Estado Atual e limites do Candidate Outcome Register | superfícies de estado e estratégia | `not_located` | candidatos e validações não equivalem a Outcome empresarial canônico |
 | CLM-023 | `ECO-CAND-001` foi aprovado como Outcome | PR nº 73; merge `765faa4d790a495229dc85727f0512e13f612f1d` | `docs/business-architecture/strategy/candidate-outcome-decision-register.md` | `partially_verified` | decisão humana aceitou `Reformulate`; candidato permanece `Under Validation`, sem código canônico, AQS-O01 ou Outcome aprovado |
+| CLM-024 | Guivos Marketplace permanece o nome oficial | commit `a68bab26be82b428c491cbd15915536e960f1a61` na ancestralidade da `main` | `docs/product-architecture/mall.md` | `verified_historical` | `Guivos Mall` substituiu `Guivos Marketplace`; o nome anterior permanece apenas como `former_name` ou referência histórica |
+| CLM-025 | A estrutura oficial é Journey, Mall, Travel, Business, Media, Intelligence e Ads | arquivo `GPA-000` 1.30.0 na `main` | `docs/product-architecture/index.md` | `verified_integrated` | consolidação arquitetural dos componentes não comprova implementação ou operação comercial de todos eles |
 
 ## 5. Correções decorrentes
 
@@ -102,8 +106,10 @@ A matriz permite corrigir as seguintes classificações do intake:
 6. o rascunho VAL externo 1.1.0 passa a `verified_historical`;
 7. preços do Opportunity Boost passam a ser descritos somente como parâmetros candidatos;
 8. `ECO-CAND-001` passa a ter decisão `Reformulate` verificada, mantendo `Under Validation`;
-9. `GC-CON-001` permanece bloqueado por risco de colisão e ausência de vínculo Git resolvido;
-10. Neo4j, proteção corporativa, Fundação e internacionalização permanecem sem promoção.
+9. `Guivos Mall` é confirmado como nome oficial, com Marketplace apenas como nome anterior;
+10. os sete componentes oficiais são confirmados no nível arquitetural;
+11. `GC-CON-001` permanece bloqueado por risco de colisão e ausência de vínculo Git resolvido;
+12. Neo4j, proteção corporativa, Fundação e internacionalização permanecem sem promoção.
 
 ## 6. Lacunas restantes do P0
 
@@ -117,6 +123,7 @@ Ainda precisam de reconciliação específica:
 - confirmação de evidência operacional de pré-teste, formulário publicado, coleta e base VAL;
 - inventário restrito de marcas, domínios e ativos efetivamente titulados;
 - prova jurídica e operacional de iniciativas institucionais ou territoriais;
+- varredura de materiais externos que ainda usam `Guivos Marketplace`;
 - separação formal do runbook GitHub/Codex do conhecimento arquitetural.
 
 ## 7. Regra de uso
@@ -132,7 +139,9 @@ Exemplos:
 - correto: “existem preços candidatos documentados para o Opportunity Boost”;
 - incorreto: “a Guivos já vende o Opportunity Boost”;
 - correto: “ECO-CAND-001 foi reformulado e continua em validação”;
-- incorreto: “ECO-CAND-001 é um Outcome aprovado”.
+- incorreto: “ECO-CAND-001 é um Outcome aprovado”;
+- correto: “Guivos Mall é o nome oficial; Guivos Marketplace é histórico”;
+- incorreto: “Mall e Marketplace são dois produtos vigentes”.
 
 ## 8. Declaração de não promoção
 
