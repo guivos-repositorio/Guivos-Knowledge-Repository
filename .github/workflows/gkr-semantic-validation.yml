@@ -1,0 +1,25 @@
+name: GKR Semantic State Validation
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-semantic-state:
+    name: Validate semantic state
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate global semantic synchronization
+        run: python scripts/validate_gkr_semantic_state.py
