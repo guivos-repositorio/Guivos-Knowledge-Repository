@@ -1,38 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
-  <title id="title">Preparação para relato por voz do Momento Atual</title>
-  <desc id="desc">Tela móvel anterior à gravação que orienta o conteúdo, explica áudio e transcrição e mantém controles separados.</desc>
+  <title id="title">Preparação validada para relato por voz</title>
+  <desc id="desc">Tela móvel anterior à gravação com opções exclusivas sobre o áudio e autorização limitada à gravação e transcrição do rascunho.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="28" font-family="Arial, sans-serif" font-size="11">09:41</text>
   <text x="20" y="58" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar à orientação</text>
   <text x="370" y="58" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Usar texto</text>
   <text x="20" y="97" font-family="Arial, sans-serif" font-size="21" font-weight="700">Antes de começar a falar</text>
-  <text x="20" y="121" font-family="Arial, sans-serif" font-size="9">O microfone ainda está desligado.</text>
-  <rect x="20" y="143" width="350" height="115" rx="10" fill="#f5f5f5" stroke="#777777"/>
-  <text x="32" y="166" font-family="Arial, sans-serif" font-size="10" font-weight="700">Fale naturalmente sobre</text>
-  <text x="32" y="188" font-family="Arial, sans-serif" font-size="8">• o que está acontecendo agora</text>
-  <text x="32" y="207" font-family="Arial, sans-serif" font-size="8">• como isso afeta você ou o que está dificultando</text>
-  <text x="32" y="226" font-family="Arial, sans-serif" font-size="8">• o que gostaria de mudar, decidir ou compreender</text>
-  <text x="32" y="246" font-family="Arial, sans-serif" font-size="7">Pode pausar, gravar por partes ou encerrar quando desejar.</text>
-  <rect x="20" y="274" width="350" height="148" rx="10" fill="#ffffff" stroke="#777777"/>
-  <text x="32" y="297" font-family="Arial, sans-serif" font-size="10" font-weight="700">Áudio e transcrição</text>
-  <text x="32" y="319" font-family="Arial, sans-serif" font-size="8">O áudio será transcrito para você revisar antes de qualquer uso.</text>
-  <text x="32" y="339" font-family="Arial, sans-serif" font-size="8">Você poderá corrigir, remover trechos ou regravar.</text>
-  <rect x="32" y="355" width="14" height="14" fill="#ffffff" stroke="#111111"/>
-  <text x="55" y="366" font-family="Arial, sans-serif" font-size="8">Manter o áudio original até a revisão</text>
-  <rect x="32" y="383" width="14" height="14" fill="#ffffff" stroke="#111111"/>
-  <text x="55" y="394" font-family="Arial, sans-serif" font-size="8">Descartar o áudio após gerar a transcrição</text>
-  <text x="32" y="414" font-family="Arial, sans-serif" font-size="7">Escolha obrigatória somente antes de iniciar a gravação.</text>
-  <rect x="20" y="438" width="350" height="107" rx="10" fill="#f5f5f5" stroke="#999999"/>
-  <text x="32" y="461" font-family="Arial, sans-serif" font-size="10" font-weight="700">Proteção antes de gravar</text>
-  <text x="32" y="483" font-family="Arial, sans-serif" font-size="8">Evite nomes, contatos ou detalhes de terceiros sem necessidade.</text>
-  <text x="32" y="503" font-family="Arial, sans-serif" font-size="8">A transcrição poderá conter erros e deverá ser revisada.</text>
-  <text x="32" y="523" font-family="Arial, sans-serif" font-size="7">Gravar não autoriza análise, persistência ou personalização.</text>
-  <rect x="20" y="570" width="350" height="48" rx="24" fill="#eeeeee" stroke="#999999"/>
-  <circle cx="195" cy="594" r="12" fill="#ffffff" stroke="#555555"/>
-  <text x="195" y="652" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Selecione como tratar o áudio para ativar o microfone.</text>
-  <rect x="20" y="682" width="350" height="44" rx="8" fill="#ffffff" stroke="#111111"/>
-  <text x="195" y="709" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Entender finalidade e controles</text>
-  <text x="195" y="757" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Continuar sem gravar</text>
-  <text x="195" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Sair sem iniciar relato</text>
+  <text x="20" y="121" font-family="Arial, sans-serif" font-size="9">O microfone está desligado e nenhuma opção foi escolhida.</text>
+  <rect x="20" y="143" width="350" height="110" rx="10" fill="#f5f5f5" stroke="#777777"/>
+  <text x="32" y="166" font-family="Arial, sans-serif" font-size="10" font-weight="700">Fale naturalmente sobre o que importa</text>
+  <text x="32" y="188" font-family="Arial, sans-serif" font-size="8">Situação, impacto e direção podem ajudar, mas são opcionais.</text>
+  <text x="32" y="207" font-family="Arial, sans-serif" font-size="8">Você poderá pausar, gravar por partes ou mudar para texto.</text>
+  <text x="32" y="226" font-family="Arial, sans-serif" font-size="8">Evite informações de terceiros que não sejam necessárias.</text>
+  <text x="32" y="244" font-family="Arial, sans-serif" font-size="7">Tempo de fala não será usado como medida de qualidade.</text>
+  <rect x="20" y="270" width="350" height="181" rx="10" fill="#ffffff" stroke="#777777"/>
+  <text x="32" y="293" font-family="Arial, sans-serif" font-size="10" font-weight="700">Escolha única sobre o áudio original</text>
+  <circle cx="39" cy="326" r="8" fill="#ffffff" stroke="#111111"/>
+  <text x="57" y="322" font-family="Arial, sans-serif" font-size="8">Manter somente até eu decidir após revisar</text>
+  <text x="57" y="339" font-family="Arial, sans-serif" font-size="7">Permite ouvir e comparar antes de remover.</text>
+  <circle cx="39" cy="377" r="8" fill="#ffffff" stroke="#111111"/>
+  <text x="57" y="373" font-family="Arial, sans-serif" font-size="8">Apagar quando a transcrição estiver disponível</text>
+  <text x="57" y="390" font-family="Arial, sans-serif" font-size="7">O áudio não ficará disponível para reprodução posterior.</text>
+  <text x="32" y="420" font-family="Arial, sans-serif" font-size="8">Nenhuma alternativa vem selecionada.</text>
+  <text x="32" y="440" font-family="Arial, sans-serif" font-size="7">A escolha poderá ser alterada antes de iniciar.</text>
+  <rect x="20" y="468" width="350" height="112" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="491" font-family="Arial, sans-serif" font-size="10" font-weight="700">O que a ação autoriza</text>
+  <text x="32" y="513" font-family="Arial, sans-serif" font-size="8">Somente gravar e gerar uma transcrição para você revisar.</text>
+  <text x="32" y="533" font-family="Arial, sans-serif" font-size="8">A transcrição automática poderá conter erros e não será</text>
+  <text x="32" y="552" font-family="Arial, sans-serif" font-size="8">tratada como declaração confirmada.</text>
+  <text x="32" y="572" font-family="Arial, sans-serif" font-size="7">Não autoriza compreensão inicial, persistência ou personalização.</text>
+  <rect x="20" y="607" width="350" height="48" rx="8" fill="#eeeeee" stroke="#999999"/>
+  <text x="195" y="636" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#555555" font-weight="700">Iniciar gravação e transcrição para o rascunho</text>
+  <text x="195" y="678" text-anchor="middle" font-family="Arial, sans-serif" font-size="7">Disponível após escolher uma opção sobre o áudio.</text>
+  <rect x="20" y="704" width="350" height="42" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Entender finalidade e controles</text>
+  <text x="195" y="779" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Continuar sem gravar</text>
+  <text x="195" y="812" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Sair sem iniciar relato</text>
 </svg>
