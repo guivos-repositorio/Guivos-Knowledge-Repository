@@ -1,0 +1,82 @@
+schema_version: 0.1.0
+registry_id: GKR-JOURNEYS-REGISTRY-001
+last_updated: '2026-08-05'
+source_of_truth: references_only
+section:
+  id: GKR-JOURNEYS-001
+  path: docs/journeys/index.md
+  program: UXA-070
+  materialization: UXA-071
+  validation: UXA-072
+  validation_status: not_started
+participants:
+- id: person
+  label: Pessoa
+  views: [public_visitor, authenticated_person, applicant, collective_participant, authorized_representative]
+- id: collective
+  label: Coletivo
+  views: [public_collective, governed_collective, protected_authority, responsible_person]
+- id: organization
+  label: Organização
+  views: [institutional_entity, institutional_representative, supporting_organization, advertiser]
+maturity_states: [contracted, programmed, materialized, validated, reformulation_pending, not_started, blocked, superseded, archived, indeterminate]
+transition_types: [direct, conditional, protected, asynchronous, authority_handoff, between_participants, external, reversible, destructive, absent, prohibited]
+artifact_inventory:
+  physical_total: 97
+  groups:
+  - {id: base, count: 12, maturity: mixed}
+  - {id: person_related, count: 17, maturity: validated}
+  - {id: collectives, count: 22, maturity: validated}
+  - {id: opportunity_boost, count: 46, validated: 36, validation_pending: 10}
+journey_families:
+- id: person_protected_start
+  participant: person
+  view_path: docs/journeys/person.md
+  status: materialized
+  authorities: [UXA-020, UXA-023, UXA-034, UXA-035, UXA-036, UXA-037, UXA-068, UXA-069]
+  known_gap: broad_recurring_continuity
+- id: person_in_collectives
+  participant: person
+  view_path: docs/journeys/person.md
+  status: partial
+  authorities: [UXA-056, UXA-059, UXA-060, UXA-062, UXA-064, UXA-066]
+  known_gap: my_collectives
+- id: collective_p0a
+  participant: collective
+  view_path: docs/journeys/collective.md
+  status: partial
+  authorities: [UXA-056, UXA-057, UXA-058, UXA-059, UXA-060, UXA-061, UXA-062, UXA-063, UXA-064, UXA-065, UXA-066, UXA-067]
+  known_gap: items_6_to_9
+- id: organization_current
+  participant: organization
+  view_path: docs/journeys/organization.md
+  status: partial
+  authorities: [UXA-014, UXA-015, UXA-017, UXA-019, UXA-008, UXA-013]
+  known_gap: institutional_coverage_matrix
+- id: organization_collective_bilateral
+  participants: [organization, collective]
+  view_path: docs/journeys/handoffs.md
+  status: contracted_not_visualized
+  authorities: [UXA-019]
+  known_gap: bilateral_visual_flow
+- id: opportunity_boost_overlay
+  participant: organization
+  view_path: docs/journeys/organization.md
+  status: partial
+  authorities: [UXA-038, UXA-039, UXA-040, UXA-041, UXA-042, UXA-043, UXA-044, UXA-045, UXA-046, UXA-047, UXA-048, UXA-049, UXA-050, UXA-051, UXA-052, UXA-053, UXA-054, UXA-055]
+  known_gap: ten_residual_states_validation
+priority_gaps:
+- {id: JG-001, label: Meus Coletivos, status: not_started}
+- {id: JG-002, label: Central de Atualizações, status: not_started}
+- {id: JG-003, label: Início do Participante, status: reformulation_not_started}
+- {id: JG-004, label: Visão Geral do Responsável, status: not_started}
+- {id: JG-005, label: Matriz visual institucional completa, status: not_started}
+- {id: JG-006, label: Fluxo bilateral Organização–Coletivo, status: not_started}
+- {id: JG-007, label: Dez estados residuais do Opportunity Boost, status: validation_pending}
+- {id: JG-008, label: Validação funcional do mapa integrado, status: planned_as_UXA-072}
+boundaries:
+  prototype_started: false
+  application_started: false
+  product_engineering_started: false
+  new_product_wireframes_created: false
+  business_outcome_changed: false
