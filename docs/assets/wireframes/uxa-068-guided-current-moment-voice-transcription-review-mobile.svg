@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+  <title id="title">Revisão da transcrição do Momento Atual</title>
+  <desc id="desc">Tela móvel que separa áudio, transcrição e declaração da pessoa, permitindo ouvir, corrigir, remover, regravar e decidir sobre o áudio original.</desc>
+  <rect width="390" height="844" fill="#ffffff"/>
+  <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
+  <text x="24" y="28" font-family="Arial, sans-serif" font-size="11">09:41</text>
+  <text x="20" y="58" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Voltar à gravação</text>
+  <text x="370" y="58" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Salvar rascunho</text>
+  <text x="20" y="97" font-family="Arial, sans-serif" font-size="21" font-weight="700">Revise o que foi transcrito</text>
+  <text x="20" y="121" font-family="Arial, sans-serif" font-size="9">A transcrição automática pode conter erros.</text>
+  <rect x="20" y="143" width="350" height="83" rx="10" fill="#f5f5f5" stroke="#777777"/>
+  <text x="32" y="166" font-family="Arial, sans-serif" font-size="10" font-weight="700">Áudio original · 00:42</text>
+  <text x="32" y="188" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Ouvir gravação</text>
+  <text x="350" y="188" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Remover áudio</text>
+  <text x="32" y="211" font-family="Arial, sans-serif" font-size="7">Manter ou remover o áudio não altera a transcrição automaticamente.</text>
+  <rect x="20" y="243" width="350" height="226" rx="10" fill="#ffffff" stroke="#111111"/>
+  <text x="32" y="267" font-family="Arial, sans-serif" font-size="10" font-weight="700">Transcrição para revisão</text>
+  <text x="32" y="296" font-family="Arial, sans-serif" font-size="9">“Estou pensando em mudar de trabalho porque não vejo</text>
+  <text x="32" y="316" font-family="Arial, sans-serif" font-size="9">crescimento. Tenho experiência, mas tenho dificuldade para</text>
+  <text x="32" y="336" font-family="Arial, sans-serif" font-size="9">mostrar o que já fiz em processos seletivos.”</text>
+  <line x1="32" y1="365" x2="358" y2="365" stroke="#bbbbbb"/>
+  <text x="32" y="391" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Corrigir transcrição</text>
+  <text x="358" y="391" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Remover trecho</text>
+  <text x="32" y="421" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Marcar palavra incerta</text>
+  <text x="358" y="421" text-anchor="end" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Regravar esta parte</text>
+  <text x="32" y="455" font-family="Arial, sans-serif" font-size="7">Somente a versão revisada poderá ser tratada como conteúdo recebido.</text>
+  <rect x="20" y="485" width="350" height="101" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <text x="32" y="508" font-family="Arial, sans-serif" font-size="10" font-weight="700">Estado atual</text>
+  <text x="32" y="530" font-family="Arial, sans-serif" font-size="8">Áudio: mantido temporariamente até sua decisão</text>
+  <text x="32" y="550" font-family="Arial, sans-serif" font-size="8">Transcrição: rascunho não confirmado</text>
+  <text x="32" y="570" font-family="Arial, sans-serif" font-size="7">Compreensão e personalização ainda não iniciadas.</text>
+  <rect x="20" y="607" width="350" height="44" rx="8" fill="#222222"/>
+  <text x="195" y="634" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" font-weight="700">Usar transcrição revisada no rascunho</text>
+  <rect x="20" y="668" width="350" height="42" rx="8" fill="#ffffff" stroke="#111111"/>
+  <text x="195" y="694" text-anchor="middle" font-family="Arial, sans-serif" font-size="9">Descartar áudio e transcrição</text>
+  <text x="195" y="744" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">Gravar outra parte</text>
+  <text x="195" y="785" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Usar no rascunho ainda não autoriza processamento.</text>
+</svg>

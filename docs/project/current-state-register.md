@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 1.96.0
+version: 1.97.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-04
 depends_on:
@@ -13,6 +13,12 @@ related:
   - PAS-001
   - GPA-007
   - UXA-000
+  - UXA-020
+  - UXA-023
+  - UXA-034
+  - UXA-035
+  - UXA-036
+  - UXA-037
   - UXA-056
   - UXA-057
   - UXA-058
@@ -26,6 +32,7 @@ related:
   - UXA-066
   - UXA-067
   - UXA-068
+  - UXA-069
   - GEM-004-A1
   - GEM-007-A1
   - GEM-010-A2
@@ -33,8 +40,8 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.43.0
-  - M7.69
+  - ROADMAP-12.44.0
+  - M7.70
 normative: true
 ---
 
@@ -51,10 +58,13 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | Solicitação Pendente móvel funcionalmente validada | M7.69; UXA-067 |
+| Marco | Expressão Guiada do Momento Atual móvel materializada | M7.70; UXA-068 |
 | Remediação | concluída; validação mecânica permanente | R1–R6 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
+| Jornada pessoal — início protegido geral | 4 SVGs materializados e validados | UXA-034; UXA-035 |
+| Jornada pessoal — compreensão inicial | 5 SVGs materializados e validados | UXA-036; UXA-037 |
+| Jornada pessoal — expressão guiada | 8 SVGs materializados; validação pendente | UXA-068 |
 | Coletivos — contratos | descoberta, reputação e interação contratadas | UXA-056 a UXA-058 |
 | Coletivos — programa | 88 estados organizados; nove referências P0A | UXA-059 |
 | Coletivos — descoberta | 5 SVGs materializados e validados | UXA-060; UXA-061 |
@@ -74,7 +84,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-A UXA-067 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
+A UXA-068 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -85,18 +95,29 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-Validação de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
+Materialização de wireframe não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual
 
-### 5.1 Opportunity Boost
+### 5.1 Jornada pessoal relacionada
+
+| Família | Materializados | Validados | Pendentes |
+|---|---:|---:|---:|
+| Início protegido geral | 4 | 4 | 0 |
+| Compreensão inicial | 5 | 5 | 0 |
+| Expressão Guiada do Momento Atual | 8 | 0 | 8 |
+| **Subtotal relacionado** | **17** | **9** | **8** |
+
+O subtotal não representa todo o inventário visual da jornada pessoal. Ele registra somente as famílias diretamente relacionadas ao início protegido, à expressão do momento e à compreensão inicial.
+
+### 5.2 Opportunity Boost
 
 - 46 wireframes materializados;
 - 36 validados por pacote;
 - 10 estados residuais pendentes;
-- nenhuma alteração pela UXA-067.
+- nenhuma alteração pela UXA-068.
 
-### 5.2 Coletivos
+### 5.3 Coletivos
 
 | Família | Materializados | Validados | Pendentes |
 |---|---:|---:|---:|
@@ -108,7 +129,53 @@ Validação de wireframe não comprova preço, demanda, conversão, receita ou v
 
 Total atual de Coletivos: 22 SVGs materializados e 22 validados.
 
-## 6. Estado P0A
+## 6. Resultado da UXA-068
+
+Foram materializados:
+
+- orientação anterior ao relato;
+- rascunho guiado por texto;
+- preparação anterior à gravação de voz;
+- gravação em andamento;
+- revisão da transcrição;
+- esclarecimento adaptativo;
+- separação de focos;
+- síntese estruturada do Momento Atual.
+
+Foram representados:
+
+- situação, impacto, prioridade, direção e contexto;
+- texto livre com apoio progressivo;
+- compartilhamento mínimo sem punição;
+- microfone inativo antes da explicação;
+- áudio, transcrição e declaração revisada separados;
+- pergunta somente para lacuna material;
+- razão da pergunta visível;
+- `não sei`, `prefiro não informar` e adiamento legítimos;
+- assuntos diferentes sem descarte silencioso;
+- relevância revisada com a Pessoa;
+- desconhecidos preservados;
+- ausência de autorização pelo ato de digitar ou gravar;
+- continuidade para revisão e autorização da UXA-034 antes do processamento.
+
+## 7. Continuidade da jornada pessoal
+
+```text
+Home pública
+→ início protegido
+→ escolha de modalidade
+→ Expressão Guiada do Momento Atual
+→ revisão dos conteúdos recebidos
+→ autorização específica
+→ processamento visível
+→ compreensão inicial revisável
+```
+
+A UXA-068 materializa a ponte entre escolher texto ou voz e chegar a um rascunho suficientemente claro para revisão.
+
+Ela não substitui o inventário, a autorização específica ou a compreensão inicial.
+
+## 8. Estado P0A de Coletivos
 
 | Ordem | Superfície | Estado |
 |---:|---|---|
@@ -122,66 +189,26 @@ Total atual de Coletivos: 22 SVGs materializados e 22 validados.
 | 8 | Início do Participante | reformulação não iniciada |
 | 9 | Visão Geral do Responsável | não iniciada |
 
-## 7. Resultado da UXA-067
-
-Foram reformulados e validados:
-
-- aguardando decisão;
-- análise protegida;
-- informação adicional solicitada;
-- revisão da resposta adicional;
-- cancelamento pela Pessoa;
-- aprovação;
-- recusa;
-- expiração.
-
-Foram consolidados:
-
-- consulta sem alteração de fila;
-- estimativa sem promessa;
-- correção material sem edição silenciosa;
-- autoridade protegida limitada;
-- voluntariedade do pedido adicional;
-- resposta, preferência, contestação e cancelamento separados;
-- descarte do rascunho separado do cancelamento da solicitação;
-- envio adicional com efeito compreensível;
-- tratamento posterior sem garantia absoluta;
-- aprovação sem função automática;
-- recusa sem sanção ou reputação;
-- expiração sem recusa ou consentimento;
-- denúncia separada de revisão formal;
-- ausência de navegação para superfícies futuras.
-
-## 8. Lacuna prioritária identificada
-
-Existe captura multimodal genérica no início protegido, mas ainda falta uma superfície que instrua a Pessoa a expressar seu Momento Atual de forma útil para a compreensão da Guivos.
-
-A lacuna deverá tratar:
-
-- situação atual;
-- impacto;
-- prioridade;
-- direção desejada;
-- contexto e restrições;
-- texto e voz guiados;
-- perguntas adaptativas;
-- síntese e revisão antes da compreensão inicial.
+A UXA-068 não reinicia automaticamente a sequência de Coletivos.
 
 ## 9. Preservações
 
 Permanecem vigentes:
 
+- relato livre continua legítimo;
+- compartilhar pouco não é falha;
+- transcrição automática não é declaração confirmada;
+- desconhecido não é preenchido por suposição;
+- pergunta adicional não é obrigação de revelar;
+- relevância não é definida silenciosamente;
+- digitar, gravar e revisar não autorizam processamento;
+- personalização depende de revisão e autorização próprias;
 - visualização não cria vínculo;
 - acompanhar não é participar;
 - solicitação não é aprovação;
 - convite não cria participação;
-- leitura, rolagem e silêncio não são confirmação;
 - publicidade não compra legitimidade;
-- contagem não é ranking;
 - apoio institucional não concede autoridade ou dados;
-- denúncia não é avaliação nem revisão formal;
-- proteção não é irregularidade;
-- comprovante não é acompanhamento contínuo;
 - cancelamento, recusa e expiração permanecem distintos;
 - protótipo, teste e Engenharia de Produto não foram iniciados.
 
@@ -189,6 +216,6 @@ Permanecem vigentes:
 
 A próxima transição recomendada é:
 
-**UXA-068 — Expressão Guiada do Momento Atual por Texto e Voz.**
+**UXA-069 — Validação Funcional e Reformulação da Expressão Guiada do Momento Atual por Texto e Voz.**
 
-A UXA-068, `Meus Coletivos` e o ambiente de simulação das jornadas não estão iniciados e dependem de autorizações separadas.
+A UXA-069, `Meus Coletivos` e o ambiente de simulação das jornadas não estão iniciados e dependem de autorizações separadas.
