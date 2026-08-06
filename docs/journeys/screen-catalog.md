@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-06
 related:
   - UXA-005
   - UXA-070
@@ -18,6 +18,7 @@ related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -80,17 +81,25 @@ O status `active` aprova os instrumentos, não os objetos registrados.
 | fronteira intencionalmente sem tela | 1 |
 | **Total** | **40** |
 
-## 5. Resultado da UXA-083
+## 5. Resultado da UXA-084
 
-A reformulação resolve documentalmente os cinco bloqueios da UXA-082:
+A galeria reformulada foi **aprovada com ressalvas no escopo documental de inspeção**.
 
-1. a página da Pessoa segue a ordem funcional registrada;
-2. Home pública e Tela Hoje são apresentadas separadamente;
-3. as cinco páginas possuem navegação anterior, índice, matriz e próxima página;
-4. os 97 SVGs possuem associação individual a 23 perfis de rastreabilidade;
-5. versões e resumos foram sincronizados.
+Foram confirmados:
 
-A solução preserva valores desconhecidos e não converte proximidade visual em validação.
+1. ordem funcional da Pessoa compatível com os registros;
+2. Home pública e Tela Hoje separadas;
+3. rota contínua entre as cinco páginas;
+4. 97 associações individuais a 23 perfis;
+5. versões e resumos sincronizados;
+6. preservação explícita de estados parciais, ausentes e não examinados.
+
+Ressalvas:
+
+- perfis agregam estados com responsabilidade comum;
+- 14 responsabilidades não possuem SVG dedicado;
+- dez estados da UXA-055 permanecem sem validação específica;
+- continuidades entre pacotes não foram validadas ponta a ponta.
 
 ## 6. Prioridade de materialização preservada
 
@@ -114,9 +123,11 @@ Nenhuma dessas superfícies foi iniciada.
 
 ## 8. Estado vigente
 
-- catálogo: `active` 0.8.0;
-- galeria: `draft` 0.3.0, reformulada e aguardando revalidação;
-- cinco páginas visuais: `draft` 0.2.0;
-- matriz por SVG: `draft` 0.1.0;
+- catálogo: `active` 0.9.0;
+- galeria: `draft` 0.4.0, aprovada com ressalvas;
+- cinco páginas visuais: `draft` 0.2.0, revalidadas como conjunto;
+- matriz por SVG: `draft` 0.2.0, aprovada com ressalvas;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
+
+A promoção da galeria e da matriz depende de ato governado separado.
