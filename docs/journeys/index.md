@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -18,6 +18,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-081
+  - UXA-082
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -36,13 +37,14 @@ Ela não substitui contratos, wireframes, validações ou registros canônicos. 
 
 ## 2. Como utilizar
 
-1. consulte a [Galeria Visual Integrada de Telas](screen-gallery.md) para comparar os SVGs existentes;
-2. use o [Catálogo de telas](screen-catalog.md) para visão agregada;
-3. percorra a vista do participante;
-4. localize superfícies e transições por ID;
-5. confira separadamente maturidade, materialização, validação e continuidade;
-6. observe handoffs, retornos e interrupções;
-7. consulte as [Lacunas](gaps.md) sem tratá-las como fechadas.
+1. consulte a [Galeria Visual Integrada de Telas](screen-gallery.md) para localizar os SVGs existentes;
+2. não interprete a ordem atual da galeria como sequência funcional aprovada;
+3. use o [Catálogo de telas](screen-catalog.md) para visão agregada;
+4. percorra a vista do participante;
+5. localize superfícies e transições por ID;
+6. confira separadamente maturidade, materialização, validação e continuidade;
+7. observe handoffs, retornos e interrupções;
+8. consulte as [Lacunas](gaps.md) sem tratá-las como fechadas.
 
 ## 3. Vistas disponíveis
 
@@ -72,6 +74,7 @@ UXA-070 — programa funcional
 → UXA-079 — revalidação aprovada com ressalvas
 → UXA-080 — promoção dos instrumentos granulares
 → UXA-081 — galeria visual e auditoria de cobertura
+→ UXA-082 — validação da galeria não aprovada e lacunas repriorizadas
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -82,15 +85,16 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 |---|---|---|
 | visão geral das Jornadas Integradas | `active` | UXA-075 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
-| handoffs, cenários e catálogo | `active` | UXA-074; UXA-075 |
+| handoffs e cenários | `active` | UXA-074; UXA-075 |
+| catálogo integrado | `active` 0.7.0 | UXA-082 |
 | registros de superfícies e transições | `active` 0.3.0 | UXA-080 |
 | quatro detalhamentos granulares | `active` 0.2.0 | UXA-080 |
-| galeria visual integrada | `draft` 0.1.0 | UXA-081 |
-| registro de lacunas | `active` | observacional |
+| galeria visual integrada | `draft` 0.2.0; não aprovada para promoção | UXA-082 |
+| registro de lacunas | `active` 0.7.0 | UXA-082 |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
-## 6. Auditoria visual
+## 6. Auditoria visual confirmada
 
 | Indicador | Resultado |
 |---|---:|
@@ -103,25 +107,39 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 A quantidade de SVGs não equivale à quantidade de superfícies. Estados alternativos e variações por dispositivo podem compartilhar a mesma responsabilidade granular.
 
-## 7. Domínios preservados
+## 7. Resultado da UXA-082
 
-### Coletivos
+A galeria foi aprovada somente como inventário centralizado. Sua promoção foi bloqueada pelos seguintes achados:
 
-`GKR-SURF-PER-102` representa exclusivamente Resultados de Busca de Coletivos.
+- ordem funcional incorreta na página da Pessoa;
+- Home pública e Tela Hoje agrupadas em um mesmo bloco;
+- ausência de rota integrada de inspeção;
+- rastreabilidade agrupada insuficiente por SVG;
+- versões documentais divergentes.
 
-### Oportunidades
+A estrutura deverá ser reformulada e revalidada antes de promoção.
 
-- `GKR-SURF-ORG-003` — estado institucional;
-- `GKR-SURF-PER-201` — mapa;
-- `GKR-SURF-PER-202` — lista;
-- `GKR-SURF-PER-203` — detalhe;
-- `GKR-SURF-BND-001` — fronteira externa.
+## 8. Prioridade futura de Coletivos
 
-### Opportunity Boost
+```text
+Visão Geral do Responsável
+→ gestão completa de solicitações
+→ Meus Coletivos
+→ Central de Atualizações
+→ Início do Participante
+```
 
-Os dez estados da UXA-055 aparecem na galeria, mas permanecem sem validação funcional específica.
+Essa ordem respeita as dependências registradas e não inicia nenhuma materialização.
 
-## 8. Regra de leitura
+## 9. Dívidas de validação separadas
+
+- compreensão inicial → Tela Hoje;
+- publicação → mapa, lista e detalhe;
+- dez estados residuais da UXA-055;
+- efeito externo;
+- erros, retornos e interrupções integrados.
+
+## 10. Regra de leitura
 
 ```text
 visual existente
@@ -133,10 +151,10 @@ visual existente
 
 Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
-## 9. Próxima transição possível
+## 11. Próxima transição possível
 
 A próxima evolução documental possível é:
 
-**UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas.**
+**UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção.**
 
-A UXA-082 não foi iniciada e dependerá de autorização separada.
+A UXA-083 não foi iniciada e dependerá de autorização separada.
