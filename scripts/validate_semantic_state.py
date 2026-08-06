@@ -22,27 +22,27 @@ REQUIRED_CONTROL_PATHS = [
 ]
 
 EXPECTED_UXA_FILES = [
-    "uxa-047-context-evolution-person-state.md",
-    "uxa-048-context-evolution-person-transitions.md",
-    "uxa-049-context-evolution-organization-state.md",
-    "uxa-050-context-evolution-organization-transitions.md",
-    "uxa-051-context-evolution-ecosystem-state.md",
-    "uxa-052-context-evolution-ecosystem-transitions.md",
-    "uxa-053-context-evolution-experience-state.md",
-    "uxa-054-context-evolution-experience-transitions.md",
-    "uxa-055-experience-journey-canonical-matrix.md",
-    "uxa-056-canonical-matrix-classification-method.md",
-    "uxa-057-canonical-matrix-coverage-sequence.md",
-    "uxa-058-journey-continuity-and-boundary-map.md",
-    "uxa-059-journey-boundary-resolution-log.md",
-    "uxa-060-a-experience-baseline-update.md",
-    "uxa-061-b-continuity-residual-decision.md",
-    "uxa-062-prioritization-matrix-and-execution-sequence.md",
-    "uxa-063-pre-booking-state-model.md",
-    "uxa-064-pre-booking-state-transitions.md",
-    "uxa-065-stay-and-post-stay-state-model.md",
-    "uxa-066-stay-and-post-stay-transitions.md",
-    "uxa-067-trip-cancellation-and-refund-flow.md",
+    "uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md",
+    "uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md",
+    "uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md",
+    "uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md",
+    "uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md",
+    "uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md",
+    "uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md",
+    "uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md",
+    "uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md",
+    "uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md",
+    "uxa-057-evaluation-and-reputation-functional-contract.md",
+    "uxa-058-interactions-recommendations-connections-functional-contract.md",
+    "uxa-059-collective-wireframe-program-and-prioritization.md",
+    "uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md",
+    "uxa-061-collective-explore-and-search-mobile-functional-validation.md",
+    "uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md",
+    "uxa-063-collective-public-profile-mobile-functional-validation.md",
+    "uxa-064-collective-participation-review-request-mobile-low-fidelity-wireframes.md",
+    "uxa-065-collective-participation-review-request-mobile-functional-validation.md",
+    "uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md",
+    "uxa-067-collective-pending-request-mobile-functional-validation.md",
     "uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md",
     "uxa-069-guided-current-moment-functional-validation-and-reformulation.md",
     "uxa-070-journey-simulation-environment-functional-program.md",
@@ -57,9 +57,9 @@ EXPECTED_UXA_FILES = [
     "uxa-079-granular-registry-functional-revalidation.md",
     "uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md",
     "uxa-081-integrated-screen-gallery-and-coverage-audit.md",
-    "uxa-082-integrated-gallery-visual-functional-inspection.md",
-    "uxa-083-integrated-gallery-reformulation-and-inspection-sequence.md",
-    "uxa-084-integrated-gallery-functional-visual-revalidation.md",
+    "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",
+    "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",
+    "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",
 ]
 
 STALE_MARKERS = (
@@ -119,13 +119,13 @@ def main() -> int:
     else:
         milestone = milestone_match.group(1)
 
-    uxa_numbers = [int(value) for value in re.findall(r"\bUXA-(\d{3})\b", state_front)]
-    if not uxa_numbers:
+    related_uxa = [int(value) for value in re.findall(r"(?m)^\s*-\s*UXA-(\d{3})\s*$", state_front)]
+    if not related_uxa:
         fail(errors, "nenhuma frente UXA localizada no front matter de GKR-STATE-001")
         latest_uxa = ""
         next_uxa = ""
     else:
-        latest_number = max(uxa_numbers)
+        latest_number = max(related_uxa)
         latest_uxa = f"UXA-{latest_number:03d}"
         next_uxa = f"UXA-{latest_number + 1:03d}"
 

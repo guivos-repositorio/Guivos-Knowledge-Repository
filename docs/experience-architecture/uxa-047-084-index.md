@@ -2,7 +2,7 @@
 id: GKR-UXA-047-084-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-084
 status: active
-version: 1.0.0
+version: 1.0.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-06
 depends_on:
@@ -26,43 +26,40 @@ Este índice restaura a descobribilidade da sequência integrada entre UXA-047 e
 
 A autoridade de cada frente permanece no respectivo artefato. O estado transversal vigente permanece em `GKR-STATE-001` 2.10.0 e M7.72.
 
-## 2. Evolução de contexto por participante
+## 2. Opportunity Boost
 
-- [UXA-047 — Estado da evolução de contexto da Pessoa](uxa-047-context-evolution-person-state.md)
-- [UXA-048 — Transições da evolução de contexto da Pessoa](uxa-048-context-evolution-person-transitions.md)
-- [UXA-049 — Estado da evolução de contexto da Organização](uxa-049-context-evolution-organization-state.md)
-- [UXA-050 — Transições da evolução de contexto da Organização](uxa-050-context-evolution-organization-transitions.md)
-- [UXA-051 — Estado da evolução de contexto do Ecossistema](uxa-051-context-evolution-ecosystem-state.md)
-- [UXA-052 — Transições da evolução de contexto do Ecossistema](uxa-052-context-evolution-ecosystem-transitions.md)
-- [UXA-053 — Estado da evolução de contexto da Experiência](uxa-053-context-evolution-experience-state.md)
-- [UXA-054 — Transições da evolução de contexto da Experiência](uxa-054-context-evolution-experience-transitions.md)
+- [UXA-047 — Validação e reformulação da gestão de campanha ativa](uxa-047-opportunity-boost-active-campaign-management-functional-validation-and-reformulation.md)
+- [UXA-048 — Wireframes do relatório agregado](uxa-048-opportunity-boost-aggregated-report-low-fidelity-wireframes.md)
+- [UXA-049 — Validação e reformulação do relatório agregado](uxa-049-opportunity-boost-aggregated-report-functional-validation-and-reformulation.md)
+- [UXA-050 — Validação funcional do conjunto completo de wireframes](uxa-050-opportunity-boost-complete-wireframe-set-functional-validation.md)
+- [UXA-051 — Configuração mobile do anunciante](uxa-051-opportunity-boost-mobile-advertiser-configuration-low-fidelity-wireframes.md)
+- [UXA-052 — Validação e reformulação da configuração mobile](uxa-052-opportunity-boost-mobile-advertiser-configuration-functional-validation-and-reformulation.md)
+- [UXA-053 — Gestão mobile de campanha ativa](uxa-053-opportunity-boost-mobile-active-campaign-management-low-fidelity-wireframes.md)
+- [UXA-054 — Validação e reformulação da gestão mobile](uxa-054-opportunity-boost-mobile-active-campaign-management-functional-validation-and-reformulation.md)
+- [UXA-055 — Estados residuais do Opportunity Boost](uxa-055-opportunity-boost-residual-states-low-fidelity-wireframes.md)
 
-## 3. Matriz canônica, cobertura e continuidade
+## 3. Coletivos: descoberta, perfil e participação
 
-- [UXA-055 — Matriz Canônica de Jornadas e Experiência](uxa-055-experience-journey-canonical-matrix.md)
-- [UXA-056 — Método de classificação da matriz](uxa-056-canonical-matrix-classification-method.md)
-- [UXA-057 — Cobertura e sequência da matriz](uxa-057-canonical-matrix-coverage-sequence.md)
-- [UXA-058 — Mapa de continuidade e fronteiras](uxa-058-journey-continuity-and-boundary-map.md)
-- [UXA-059 — Registro de resolução das fronteiras](uxa-059-journey-boundary-resolution-log.md)
-- [UXA-060-A — Atualização da baseline da experiência](uxa-060-a-experience-baseline-update.md)
-- [UXA-061-B — Decisão sobre o residual de continuidade](uxa-061-b-continuity-residual-decision.md)
-- [UXA-062 — Matriz de priorização e sequência de execução](uxa-062-prioritization-matrix-and-execution-sequence.md)
+- [UXA-056 — Contrato funcional de descoberta, perfil público e participação](uxa-056-collective-discovery-public-profile-and-participation-functional-contract.md)
+- [UXA-057 — Contrato funcional de avaliação e reputação](uxa-057-evaluation-and-reputation-functional-contract.md)
+- [UXA-058 — Contrato funcional de interações, recomendações e conexões](uxa-058-interactions-recommendations-connections-functional-contract.md)
+- [UXA-059 — Programa e priorização dos wireframes de coletivos](uxa-059-collective-wireframe-program-and-prioritization.md)
+- [UXA-060 — Exploração e busca mobile de coletivos](uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md)
+- [UXA-061 — Validação funcional da exploração e busca mobile](uxa-061-collective-explore-and-search-mobile-functional-validation.md)
+- [UXA-062 — Perfil público mobile de coletivo](uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md)
+- [UXA-063 — Validação funcional do perfil público mobile](uxa-063-collective-public-profile-mobile-functional-validation.md)
+- [UXA-064 — Solicitação e revisão de participação mobile](uxa-064-collective-participation-review-request-mobile-low-fidelity-wireframes.md)
+- [UXA-065 — Validação funcional da solicitação e revisão de participação](uxa-065-collective-participation-review-request-mobile-functional-validation.md)
+- [UXA-066 — Solicitação pendente mobile](uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md)
+- [UXA-067 — Validação funcional da solicitação pendente](uxa-067-collective-pending-request-mobile-functional-validation.md)
 
-## 4. Estados e transições de viagem
-
-- [UXA-063 — Modelo de estados de pré-reserva](uxa-063-pre-booking-state-model.md)
-- [UXA-064 — Transições de pré-reserva](uxa-064-pre-booking-state-transitions.md)
-- [UXA-065 — Estados durante e após a estadia](uxa-065-stay-and-post-stay-state-model.md)
-- [UXA-066 — Transições durante e após a estadia](uxa-066-stay-and-post-stay-transitions.md)
-- [UXA-067 — Cancelamento de viagem e reembolso](uxa-067-trip-cancellation-and-refund-flow.md)
-
-## 5. Expressão guiada e preparação das jornadas integradas
+## 4. Expressão guiada e preparação das jornadas integradas
 
 - [UXA-068 — Expressão guiada do momento atual por texto e voz](uxa-068-guided-current-moment-text-voice-low-fidelity-wireframes.md)
-- [UXA-069 — Validação funcional da expressão guiada](uxa-069-guided-current-moment-functional-validation-and-reformulation.md)
-- [UXA-070 — Programa funcional do ambiente de simulação](uxa-070-journey-simulation-environment-functional-program.md)
+- [UXA-069 — Validação funcional e reformulação da expressão guiada](uxa-069-guided-current-moment-functional-validation-and-reformulation.md)
+- [UXA-070 — Programa funcional do ambiente de simulação de jornadas](uxa-070-journey-simulation-environment-functional-program.md)
 
-## 6. Materialização e governança das jornadas integradas
+## 5. Materialização e governança das jornadas integradas
 
 - [UXA-071 — Materialização do mapa de jornadas integradas](uxa-071-integrated-journeys-map-materialization.md)
 - [UXA-072 — Validação e reformulação das jornadas integradas](uxa-072-integrated-journeys-functional-validation-and-reformulation.md)
@@ -75,14 +72,14 @@ A autoridade de cada frente permanece no respectivo artefato. O estado transvers
 - [UXA-079 — Revalidação funcional dos registros granulares](uxa-079-granular-registry-functional-revalidation.md)
 - [UXA-080 — Promoção controlada dos registros granulares](uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md)
 
-## 7. Galeria integrada
+## 6. Galeria integrada
 
-- [UXA-081 — Galeria visual integrada e auditoria de cobertura](uxa-081-integrated-screen-gallery-and-coverage-audit.md)
-- [UXA-082 — Inspeção visual e funcional da galeria integrada](uxa-082-integrated-gallery-visual-functional-inspection.md)
-- [UXA-083 — Reformulação da galeria e sequência de inspeção](uxa-083-integrated-gallery-reformulation-and-inspection-sequence.md)
-- [UXA-084 — Revalidação funcional e visual da galeria](uxa-084-integrated-gallery-functional-visual-revalidation.md)
+- [UXA-081 — Galeria integrada e auditoria de cobertura](uxa-081-integrated-screen-gallery-and-coverage-audit.md)
+- [UXA-082 — Validação funcional e visual e priorização de lacunas](uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md)
+- [UXA-083 — Reformulação controlada da galeria e da sequência de inspeção](uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md)
+- [UXA-084 — Revalidação funcional e visual da galeria reformulada](uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md)
 
-## 8. Estado preservado
+## 7. Estado preservado
 
 | Elemento | Estado |
 |---|---|
