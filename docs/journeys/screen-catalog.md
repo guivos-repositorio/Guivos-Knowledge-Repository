@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -16,6 +16,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-081
+  - UXA-082
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -42,22 +43,23 @@ A inspeção direta dos 97 arquivos está disponível na [Galeria Visual Integra
 
 | Participante ou camada | Família | SVGs existentes | Validação visual registrada | Entrada integrada | Saída integrada | Lacuna associada |
 |---|---|---:|---|---|---|---|
-| Pessoa | Home pública e Tela Hoje | 2 | 2 validados | parcial | continuidade não examinada como conjunto | compreensão inicial → Tela Hoje |
+| Pessoa | Home pública | 1 | validado no pacote de origem | início público | entrada protegida parcial | continuidade entre pacotes |
+| Pessoa | Tela Hoje | 1 | validado no pacote de origem | compreensão não examinada como conjunto | experiência recorrente parcial | compreensão inicial → Tela Hoje |
 | Pessoa | início protegido | 4 | 4 validados | parcial | parcial | reconciliação ponta a ponta |
-| Pessoa | compreensão inicial | 5 | 5 validados | parcial | não examinada com Tela Hoje | continuidade recorrente |
 | Pessoa | expressão guiada | 8 | 8 validados | parcial | parcial | integração com inventário |
+| Pessoa | compreensão inicial | 5 | 5 validados | parcial | não examinada com Tela Hoje | continuidade recorrente |
 | Pessoa | oportunidades orgânicas | 7 | 7 validados nos pacotes de origem | publicação não examinada | efeito externo parcial | publicação, sincronização e fronteira |
 | Pessoa em Coletivos | descoberta e busca | 5 | 5 validados | parcial | parcial | continuidade entre famílias |
 | Pessoa em Coletivos | Perfil Público | 4 | 4 validados | parcial | parcial | handoff para solicitação |
 | Pessoa em Coletivos | revisão e solicitação | 5 | 5 validados | parcial | parcial | destino operacional do Coletivo |
-| Pessoa em Coletivos | Solicitação Pendente | 8 | 8 validados na perspectiva da Pessoa | parcial | ausente após decisão | Meus Coletivos e visão do responsável |
+| Pessoa em Coletivos | Solicitação Pendente | 8 | 8 validados na perspectiva da Pessoa | parcial | ausente após decisão | gestão do responsável e Meus Coletivos |
 | Coletivo | referência inicial | 1 | 1 validado | não examinada | não examinada | Visão Geral do Responsável |
 | Organização | visão geral e cadastro de oportunidade | 2 | 2 validados | parcial | publicação–descoberta não examinada | matriz institucional completa |
 | camada comercial | Opportunity Boost | 46 | 36 validados; 10 pendentes | parcial | parcial | estados residuais da UXA-055 |
 | fronteira documental | destino externo identificado | 0 | não aplicável | parcial | não examinada | efeito externo |
 | **Total de SVGs** |  | **97** | **87 validados; 10 pendentes** |  |  |  |
 
-As contagens pertencem a escopos distintos. Variações de estado e dispositivo não devem ser somadas como novas superfícies.
+Home pública e Tela Hoje são contabilizadas separadamente porque ocupam momentos distintos da jornada. A versão anterior da galeria as agrupava visualmente, condição registrada como achado da UXA-082.
 
 ## 3. Estado dos registros granulares
 
@@ -102,7 +104,42 @@ Os 14 IDs sem SVG dedicado concentram-se principalmente na continuidade de Colet
 
 `GKR-SURF-BND-001` permanece corretamente sem tela Guivos.
 
-## 5. Separações obrigatórias
+## 5. Resultado da UXA-082
+
+A galeria foi validada como inventário centralizado, porém **não foi aprovada para promoção**.
+
+Achados bloqueadores:
+
+- ordem funcional incorreta na página da Pessoa;
+- Home pública e Tela Hoje agrupadas no mesmo bloco;
+- ausência de rota integrada entre páginas;
+- associação agrupada insuficiente para assertividade por SVG;
+- divergência de versões documentais.
+
+A versão vigente da galeria passa a ser `draft` 0.2.0 para registrar o parecer, sem corrigir os achados.
+
+## 6. Priorização por dependência
+
+A primeira frente futura de materialização deverá seguir:
+
+```text
+Visão Geral do Responsável
+→ gestão completa de solicitações
+→ Meus Coletivos
+→ Central de Atualizações
+→ Início do Participante
+```
+
+Essa ordem respeita `GKR-TRN-112`, `GKR-TRN-108`, `GKR-TRN-110` e `GKR-TRN-111`.
+
+Continuidades com telas já existentes permanecem em uma fila separada de validação:
+
+- compreensão inicial → Tela Hoje;
+- publicação → mapa, lista e detalhe;
+- dez estados residuais da UXA-055;
+- erros, retornos e interrupções.
+
+## 7. Separações obrigatórias
 
 ### Coletivos
 
@@ -120,7 +157,7 @@ Os 14 IDs sem SVG dedicado concentram-se principalmente na continuidade de Colet
 
 `GKR-SURF-COM-005` aponta para UXA-055. Seus dez SVGs permanecem materializados sem validação funcional específica.
 
-## 6. Regra de fonte única
+## 8. Regra de fonte única
 
 A galeria incorpora os SVGs por referência aos caminhos canônicos em `docs/assets/wireframes/`. Ela não duplica ou modifica os arquivos.
 
@@ -132,12 +169,12 @@ A presença na galeria ou no catálogo:
 - não declara assertividade visual;
 - não autoriza implementação.
 
-## 7. Estado vigente
+## 9. Estado vigente
 
-- catálogo: `active` 0.6.0;
-- galeria visual: `draft` 0.1.0;
+- catálogo: `active` 0.7.0;
+- galeria visual: `draft` 0.2.0, não aprovada para promoção;
 - registros granulares: `active`;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 
-A galeria aguarda revisão funcional e visual específica.
+A próxima correção possível é a reformulação controlada da galeria prevista pela UXA-083.

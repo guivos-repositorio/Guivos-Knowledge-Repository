@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.74.0
+version: 0.75.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -36,6 +36,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-081
+  - UXA-082
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -104,6 +105,7 @@ Os 97 arquivos concentram-se em 25 dos 40 IDs granulares.
 UXA-070 a UXA-075 — seção integrada materializada, reformulada, validada e promovida seletivamente
 UXA-076 a UXA-080 — registros granulares materializados, corrigidos, revalidados e promovidos
 UXA-081 — galeria integrada criada e cobertura visual auditada
+UXA-082 — galeria não aprovada para promoção e lacunas repriorizadas por dependência
 ```
 
 Participantes estruturais:
@@ -114,19 +116,19 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante, anunciante e patrocinador permanecem perspectivas ou papéis contextuais.
 
-## 6. Resultado da UXA-081
+## 6. Resultado da UXA-082
 
-[UXA-081 — Galeria Visual Integrada de Telas e Auditoria de Cobertura](uxa-081-integrated-screen-gallery-and-coverage-audit.md) cria uma página única de inspeção.
+[UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas](uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md) confirma a galeria como inventário visual, mas bloqueia sua promoção.
 
-Foram confirmados:
+Achados:
 
-- 97 SVGs existentes;
-- 87 com validação funcional registrada;
-- 10 estados residuais da UXA-055 pendentes;
-- 25 IDs granulares com referência visual;
-- 14 responsabilidades sem SVG dedicado;
-- uma fronteira documental corretamente sem tela;
-- catálogo corrigido para refletir os registros `active` promovidos pela UXA-080.
+1. a página da Pessoa não segue a ordem funcional;
+2. Home pública e Tela Hoje estão agrupadas em um mesmo bloco;
+3. não existe rota integrada entre as cinco páginas;
+4. a rastreabilidade agrupada não permite assertividade por SVG;
+5. versões documentais permaneciam divergentes.
+
+O parecer não altera os SVGs nem invalida as validações locais de origem. Ele limita o uso da galeria até reformulação e nova validação.
 
 ## 7. Instrumentos vigentes
 
@@ -134,30 +136,41 @@ Foram confirmados:
 |---|---|
 | visão geral das Jornadas Integradas | `active` |
 | Pessoa, Coletivo e Organização | `draft` |
-| catálogo integrado | `active` 0.6.0 |
-| galeria visual | `draft` 0.1.0 |
-| lacunas | `active` 0.6.0 |
+| catálogo integrado | `active` 0.7.0 |
+| galeria visual | `draft` 0.2.0; não aprovada para promoção |
+| lacunas | `active` 0.7.0 |
 | registro de superfícies | `active` 0.3.0 |
 | registro de transições | `active` 0.3.0 |
 | detalhamentos granulares | `active` 0.2.0 |
 
-## 8. Lacunas visuais principais
+## 8. Prioridade futura de materialização
 
-- Meus Coletivos;
-- Central de Atualizações;
-- Início do Participante reformulado;
-- Visão Geral do Responsável;
-- operação bilateral das solicitações;
-- operação interna do Coletivo;
-- relação Organização–Coletivo;
-- resultados institucionais;
-- validação dos dez estados residuais;
-- continuidades integradas entre pacotes existentes.
+A continuidade operacional de Coletivos deverá ser desenvolvida, em atos posteriores, na seguinte ordem:
 
-## 9. Limites
+```text
+GKR-SURF-COL-002 — Visão Geral do Responsável
+→ GKR-SURF-COL-003 — gestão completa de solicitações
+→ GKR-SURF-PER-106 — Meus Coletivos
+→ GKR-SURF-PER-107 — Central de Atualizações
+→ GKR-SURF-PER-108 — Início do Participante
+```
 
-A UXA-081 não cria ou altera telas, contratos, SVGs, protótipo ou implementação. Também não promove as jornadas principais ou fecha lacunas.
+A ordem deriva das autoridades e transições registradas. Nenhuma superfície foi iniciada pela UXA-082.
 
-## 10. Próxima evolução possível
+## 9. Dívidas de validação
 
-**UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas**, mediante autorização separada.
+- compreensão inicial → Tela Hoje;
+- publicação → mapa, lista e detalhe;
+- dez estados residuais da UXA-055;
+- efeito externo de oportunidades;
+- erros, retornos e interrupções integrados.
+
+Essas dívidas permanecem separadas das lacunas de novas telas.
+
+## 10. Limites
+
+A UXA-082 não cria ou altera telas, contratos, SVGs, protótipo ou implementação. Também não promove as jornadas principais, corrige a galeria ou fecha lacunas.
+
+## 11. Próxima evolução possível
+
+**UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção**, mediante autorização separada.

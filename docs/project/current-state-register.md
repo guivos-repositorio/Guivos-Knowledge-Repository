@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.07.0
+version: 2.08.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-05
 depends_on:
@@ -34,6 +34,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-081
+  - UXA-082
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -46,7 +47,7 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.54.0
+  - ROADMAP-12.55.0
   - M7.72
 normative: true
 ---
@@ -64,12 +65,12 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | galeria visual integrada materializada em `draft` e cobertura dos 97 SVGs auditada | UXA-081; M7.72 |
+| Marco | galeria visual validada como inventário, não aprovada para promoção e lacunas repriorizadas por dependência | UXA-082; M7.72 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
 | Registros granulares | 40 entradas e 37 transições em instrumentos `active` | UXA-076 a UXA-080 |
-| Galeria visual | 97 SVGs reunidos; revisão de assertividade ainda pendente | UXA-081 |
-| Jornadas Integradas | visão geral e instrumentos ativos; Pessoa, Coletivo e Organização em `draft` | UXA-070 a UXA-081 |
+| Galeria visual | 97 SVGs reunidos; `draft` 0.2.0; reformulação obrigatória | UXA-081; UXA-082 |
+| Jornadas Integradas | visão geral e instrumentos ativos; Pessoa, Coletivo e Organização em `draft` | UXA-070 a UXA-082 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -82,7 +83,7 @@ Em caso de divergência entre resumos, este documento prevalece sobre painéis e
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-As UXA-070 a UXA-081 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
+As UXA-070 a UXA-082 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -93,9 +94,9 @@ Permanecem candidatos, sem promoção canônica automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-A galeria ou a auditoria visual não comprova preço, demanda, conversão, receita ou viabilidade.
+A galeria ou sua validação não comprova preço, demanda, conversão, receita ou viabilidade.
 
-## 5. Cobertura visual auditada
+## 5. Cobertura visual confirmada
 
 | Família | SVGs | Validados | Pendentes |
 |---|---:|---:|---:|
@@ -126,50 +127,62 @@ A quantidade de SVGs é maior porque uma responsabilidade pode possuir vários e
 ```text
 UXA-070 a UXA-075 — Jornadas Integradas estruturadas e promovidas seletivamente
 → UXA-076 a UXA-080 — registros granulares estruturados, corrigidos, revalidados e promovidos
-→ UXA-081 — galeria visual materializada e auditoria de cobertura executada
+→ UXA-081 — galeria visual materializada e cobertura auditada
+→ UXA-082 — galeria validada como inventário, promoção bloqueada e lacunas repriorizadas
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 8. Resultado da UXA-081
+## 8. Resultado da UXA-082
 
-A UXA-081:
+A UXA-082 confirmou que a galeria é utilizável como inventário e ponto de acesso aos 97 SVGs, mas não a aprovou como sequência integrada ou matriz de assertividade.
 
-- cria `GKR-JOURNEY-SCREEN-GALLERY-001` em `draft` 0.1.0;
-- reúne os 97 SVGs por referência aos arquivos canônicos;
-- registra origem, validação, canal e IDs associados;
-- corrige o Catálogo Integrado de Telas para `active` 0.6.0;
-- atualiza o registro de lacunas para `active` 0.6.0;
-- confirma 87 SVGs validados e 10 pendentes;
-- evidencia 14 responsabilidades sem SVG dedicado;
-- preserva a fronteira externa sem tela Guivos.
+Achados bloqueadores:
 
-A etapa não cria, redesenha ou promove telas.
+1. ordem funcional incorreta na página da Pessoa;
+2. Home pública e Tela Hoje agrupadas em um mesmo bloco;
+3. ausência de rota integrada de inspeção;
+4. associação agrupada insuficiente para leitura por SVG;
+5. divergência de versões documentais.
 
-## 9. Estado P0A de Coletivos
+A galeria permanece `draft` 0.2.0 e exige reformulação controlada.
+
+## 9. Prioridade operacional de Coletivos
+
+A primeira frente futura de materialização foi reorganizada por dependência:
 
 | Ordem | Superfície | ID | Estado visual |
 |---:|---|---|---|
-| 1 | Explorar Coletivos | GKR-SURF-PER-101 | 5 SVGs agrupados com busca |
-| 2 | Resultados de Busca de Coletivos | GKR-SURF-PER-102 | 5 SVGs agrupados com explorar |
-| 3 | Perfil Público | GKR-SURF-PER-103 | 4 SVGs |
-| 4 | Revisão e Solicitação | GKR-SURF-PER-104 | 5 SVGs |
-| 5 | Solicitação Pendente | GKR-SURF-PER-105 | 8 SVGs na perspectiva da Pessoa |
-| 6 | Meus Coletivos | GKR-SURF-PER-106 | ausente |
-| 7 | Central de Atualizações | GKR-SURF-PER-107 | ausente |
-| 8 | Início do Participante | GKR-SURF-PER-108 | reformulação pendente |
-| 9 | Visão Geral do Responsável | GKR-SURF-COL-002 | ausente |
+| 1 | Visão Geral do Responsável | GKR-SURF-COL-002 | ausente |
+| 2 | gestão completa de solicitações | GKR-SURF-COL-003 | apenas efeitos na visão da Pessoa |
+| 3 | Meus Coletivos | GKR-SURF-PER-106 | ausente |
+| 4 | Central de Atualizações | GKR-SURF-PER-107 | ausente |
+| 5 | Início do Participante | GKR-SURF-PER-108 | reformulação pendente |
 
-## 10. Estado documental
+A ordem respeita `GKR-TRN-112`, `GKR-TRN-108`, `GKR-TRN-110` e `GKR-TRN-111`. Nenhuma superfície foi iniciada.
+
+## 10. Dívidas de validação separadas
+
+Permanecem em fila própria:
+
+- compreensão inicial → Tela Hoje;
+- publicação → mapa, lista e detalhe;
+- validação dos dez estados da UXA-055;
+- efeito externo de oportunidades;
+- erros, retornos e interrupções integrados.
+
+Esses itens não equivalem automaticamente a ausência de novas telas.
+
+## 11. Estado documental
 
 | Camada | Estado |
 |---|---|
 | visão geral das Jornadas Integradas | `active` |
 | Pessoa, Coletivo e Organização | `draft` |
 | handoffs e cenários | `active` |
-| catálogo integrado | `active` 0.6.0 |
-| galeria visual | `draft` 0.1.0 |
-| lacunas | `active` 0.6.0 |
+| catálogo integrado | `active` 0.7.0 |
+| galeria visual | `draft` 0.2.0; não aprovada para promoção |
+| lacunas | `active` 0.7.0 |
 | registro de superfícies | `active` 0.3.0 |
 | registro de transições | `active` 0.3.0 |
 | quatro detalhamentos | `active` 0.2.0 |
@@ -178,36 +191,36 @@ A etapa não cria, redesenha ou promove telas.
 | teste com pessoas | não iniciado |
 | Engenharia de Produto | não iniciada |
 
-## 11. Lacunas vigentes
+## 12. Lacunas vigentes
 
 Permanecem abertas:
 
-- compreensão inicial → Tela Hoje;
+- Visão Geral do Responsável;
+- gestão bilateral de solicitações;
 - Meus Coletivos;
 - Central de Atualizações;
 - Início do Participante reformulado;
-- Visão Geral do Responsável;
-- operação bilateral de solicitações;
 - operação interna do Coletivo;
 - relação Organização–Coletivo;
 - matriz institucional completa;
+- compreensão inicial → Tela Hoje;
 - validação dos dez estados da UXA-055;
 - publicação–descoberta de oportunidades;
 - sincronização entre mapa, lista e detalhe;
 - efeitos externos;
 - erros, retornos e interrupções integrados.
 
-## 12. Preservações
+## 13. Preservações
 
 - visual existente não equivale a decisão visual aprovada;
 - inclusão na galeria não altera maturidade;
 - superfície validada não equivale a jornada validada;
 - promoção do instrumento não promove os objetos;
 - status `active` não equivale a completude;
-- status `draft` da galeria preserva a revisão humana pendente.
+- status `draft` da galeria preserva a reformulação e revalidação pendentes.
 
-## 13. Próxima transição autorizável
+## 14. Próxima transição autorizável
 
-**UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas.**
+**UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção.**
 
-A UXA-082 não está iniciada e dependerá de autorização separada.
+A UXA-083 não está iniciada e dependerá de autorização separada.

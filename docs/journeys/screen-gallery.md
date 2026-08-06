@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: draft
-version: 0.1.1
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -11,6 +11,7 @@ related:
   - UXA-075
   - UXA-080
   - UXA-081
+  - UXA-082
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -30,9 +31,9 @@ Os arquivos permanecem em seus caminhos canônicos e são incorporados por refer
 
 | Grupo | SVGs | Estado |
 |---|---:|---|
-| [Pessoa — Fundação, Entrada e Compreensão](screen-gallery-person.md) | 19 | validados nos pacotes de origem |
-| [Oportunidades e Organização](screen-gallery-opportunities-organization.md) | 9 | validados nos pacotes de origem |
-| [Coletivos](screen-gallery-collectives.md) | 23 | validados nas perspectivas cobertas |
+| [Pessoa — Fundação, Entrada e Compreensão](screen-gallery-person.md) | 19 | validados nos pacotes de origem; ordem integrada pendente de correção |
+| [Oportunidades e Organização](screen-gallery-opportunities-organization.md) | 9 | validados nos pacotes de origem; continuidade integrada pendente |
+| [Coletivos](screen-gallery-collectives.md) | 23 | validados nas perspectivas cobertas; operação do responsável ausente |
 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | validados nos pacotes de origem |
 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | 16 validados e 10 pendentes |
 | **Total** | **97** | **87 validados e 10 pendentes** |
@@ -64,22 +65,62 @@ A quantidade de SVGs não equivale à quantidade de superfícies: estados altern
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 5. Achados preservados
+## 5. Resultado da UXA-082
 
-- os dez SVGs da UXA-055 permanecem sem validação funcional específica;
-- compreensão inicial e Tela Hoje existem separadamente, mas sua continuidade não foi validada;
-- a operação bilateral das solicitações de Coletivos permanece incompleta;
-- Meus Coletivos, Central de Atualizações, Início do Participante e Visão Geral do Responsável permanecem ausentes ou pendentes;
-- a relação Organização–Coletivo permanece sem materialização visual;
-- publicação, mapa, lista, detalhe e fronteira externa não formam jornada integrada validada;
-- erros, retornos e interrupções permanecem dispersos.
+**Veredito: não aprovada para promoção até reformulação controlada.**
 
-## 6. Estado
+A galeria permanece válida como inventário visual e ponto central de acesso. A validação identificou cinco achados:
 
-A galeria e suas páginas permanecem `draft` até revisão funcional e visual específica. Sua presença na navegação não aprova assertividade visual ou prontidão de produto.
+1. a página da Pessoa não segue a ordem funcional registrada;
+2. Home pública e Tela Hoje estão agrupadas apesar de ocuparem momentos distintos;
+3. não existe rota integrada de inspeção entre as cinco páginas;
+4. a associação agrupada não informa o papel de cada SVG na entrada, decisão, saída, retorno ou interrupção;
+5. resumos documentais ainda registravam a versão anterior da galeria.
 
-## 7. Próxima transição possível
+A ordem funcional esperada para a jornada pessoal é:
 
-**UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas.**
+```text
+Home pública
+→ entrada protegida
+→ escolha de modalidade
+→ expressão guiada
+→ inventário e autorização
+→ processamento
+→ compreensão inicial revisável
+→ Tela Hoje
+```
 
-A UXA-082 não é iniciada por este pacote e exige autorização separada.
+A estrutura atual não deve ser interpretada como essa sequência.
+
+## 6. Prioridade governada de continuidade
+
+A primeira frente futura de novas telas será a continuidade operacional de Coletivos, respeitando dependências:
+
+| Ordem | Superfície | ID |
+|---:|---|---|
+| 1 | Visão Geral do Responsável | GKR-SURF-COL-002 |
+| 2 | gestão completa de solicitações | GKR-SURF-COL-003 |
+| 3 | Meus Coletivos | GKR-SURF-PER-106 |
+| 4 | Central de Atualizações | GKR-SURF-PER-107 |
+| 5 | Início do Participante | GKR-SURF-PER-108 |
+
+Essa decisão não inicia materialização. Antes dela, a própria galeria deverá ser reformulada e revalidada.
+
+## 7. Dívidas de validação separadas
+
+- compreensão inicial → Tela Hoje;
+- publicação → mapa, lista e detalhe;
+- dez estados residuais da UXA-055;
+- erros, retornos e interrupções integrados.
+
+Esses itens não devem ser confundidos com ausência de novas telas.
+
+## 8. Estado
+
+A galeria e suas páginas permanecem `draft`. Sua presença na navegação não aprova assertividade visual, continuidade integrada ou prontidão de produto.
+
+## 9. Próxima transição possível
+
+**UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção.**
+
+A UXA-083 exige autorização separada.
