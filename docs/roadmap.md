@@ -1,42 +1,24 @@
 ---
-id: ROADMAP-12.53.0
-title: Roadmap Arquitetural — Promoção Granular Controlada Concluída
+id: ROADMAP-12.54.0
+title: Roadmap Arquitetural — Galeria Visual Integrada Materializada
 status: active
-version: 12.53.0
+version: 12.54.0
 owner: Guivos
 last_updated: 2026-08-05
 supersedes_partial:
-  - ROADMAP-12.52.0
+  - ROADMAP-12.53.0
 related:
   - GKR-STATE-001
   - GPA-007
   - UXA-000
   - UXA-014
-  - UXA-015
-  - UXA-016
-  - UXA-017
-  - UXA-018
   - UXA-019
   - UXA-020
   - UXA-023
   - UXA-034
-  - UXA-035
-  - UXA-036
   - UXA-037
   - UXA-055
   - UXA-056
-  - UXA-057
-  - UXA-058
-  - UXA-059
-  - UXA-060
-  - UXA-061
-  - UXA-062
-  - UXA-063
-  - UXA-064
-  - UXA-065
-  - UXA-066
-  - UXA-067
-  - UXA-068
   - UXA-069
   - UXA-070
   - UXA-071
@@ -49,7 +31,9 @@ related:
   - UXA-078
   - UXA-079
   - UXA-080
+  - UXA-081
   - GKR-JOURNEYS-001
+  - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - BA-STR-002
@@ -59,7 +43,7 @@ related:
   - M7.72
 ---
 
-# Roadmap Arquitetural — Promoção Granular Controlada Concluída
+# Roadmap Arquitetural — Galeria Visual Integrada Materializada
 
 ## 1. Autoridade
 
@@ -70,146 +54,96 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | registros granulares revalidados e promovidos como instrumentos documentais vigentes | UXA-077 a UXA-080; M7.72 |
-| Início protegido geral | 4 SVGs materializados e validados no escopo de origem | UXA-034; UXA-035 |
-| Compreensão inicial | 5 SVGs materializados e validados no escopo de origem | UXA-036; UXA-037 |
-| Expressão guiada | 8 SVGs materializados, reformulados e validados no escopo de origem | UXA-068; UXA-069 |
-| Fundação de Organizações e Coletivos | estruturada | UXA-014 a UXA-019 |
-| Contratos de Coletivos | concluídos | UXA-056 a UXA-058 |
-| Programa de Coletivos | 88 estados em P0A–P2 | UXA-059 |
-| Coletivos materializados | 22 SVGs materializados e validados na perspectiva coberta | UXA-060 a UXA-067 |
-| Opportunity Boost | 46 materializados; 36 validados; 10 estados da UXA-055 pendentes | UXA-038 a UXA-055 |
-| Jornadas Integradas | seção e instrumentos de apoio `active`; vistas principais `draft` | UXA-070 a UXA-075 |
-| Registro granular de superfícies | 40 entradas; instrumento `active` 0.3.0 | UXA-076 a UXA-080 |
-| Registro granular de transições | 37 entradas; instrumento `active` 0.3.0 | UXA-076 a UXA-080 |
-| Detalhamentos granulares | quatro instrumentos `active` 0.2.0 | UXA-078 a UXA-080 |
-| Resultados Empresariais | 18 decisões; zero canônicos | BA-STR-002-CODR-001 |
+| Marco | galeria única criada para inspeção dos 97 SVGs e auditoria de cobertura granular | UXA-081; M7.72 |
+| Registros granulares | 40 superfícies e 37 transições em instrumentos `active` | UXA-080 |
+| Galeria visual | `draft` 0.1.0; aguarda revisão funcional e visual | UXA-081 |
+| SVGs auditados | 97 existentes; 87 validados; 10 pendentes | UXA-081 |
+| cobertura granular visual | 25 de 40 IDs | UXA-081 |
+| Jornadas principais | Pessoa, Coletivo e Organização em `draft` | Jornadas Integradas |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Sequência das Jornadas Integradas
 
 ```text
-UXA-070 — programa funcional concluído
-→ UXA-071 — primeira materialização documental integrada
-→ UXA-072 — validação funcional não aprovada até reformulação
-→ UXA-073 — reformulação, navegação e sincronização executadas
-→ UXA-074 — revalidação aprovada com ressalvas no escopo documental
-→ UXA-075 — promoção seletiva e sincronização pós-validação executadas
-→ UXA-076 — registros granulares materializados em draft
-→ UXA-077 — validação granular não aprovada até correção obrigatória
-→ UXA-078 — reformulação controlada executada
-→ UXA-079 — revalidação aprovada com ressalvas no escopo funcional documental
-→ UXA-080 — promoção controlada dos instrumentos granulares executada
+UXA-070 — programa funcional
+→ UXA-071 — seção integrada
+→ UXA-072 — validação não aprovada
+→ UXA-073 — reformulação
+→ UXA-074 — revalidação
+→ UXA-075 — promoção seletiva
+→ UXA-076 — registros granulares
+→ UXA-077 — validação bloqueada
+→ UXA-078 — correções
+→ UXA-079 — revalidação granular
+→ UXA-080 — promoção dos instrumentos
+→ UXA-081 — galeria visual e auditoria
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
-## 4. Resultado da UXA-080
+## 4. Resultado da UXA-081
 
-| Artefato | Antes | Depois |
-|---|---|---|
-| registro granular de superfícies | `draft` 0.2.0 | `active` 0.3.0 |
-| registro granular de transições | `draft` 0.2.0 | `active` 0.3.0 |
-| detalhamento da Pessoa | `draft` 0.1.0 | `active` 0.2.0 |
-| detalhamento do Coletivo | `draft` 0.1.0 | `active` 0.2.0 |
-| detalhamento da Organização | `draft` 0.1.0 | `active` 0.2.0 |
-| detalhamento comercial e de fronteira | `draft` 0.1.0 | `active` 0.2.0 |
-
-A promoção é do instrumento de registro, não das superfícies, transições ou jornadas representadas.
-
-## 5. Estado quantitativo preservado
-
-| Registro | Quantidade | Estado |
-|---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | registradas em instrumento `active` |
-| transições documentais | 37 | registradas em instrumento `active` |
-| referências de endpoint | 74 | resolvidas |
-| endpoints em texto livre | 0 | aprovado |
-
-## 6. Ressalvas preservadas
-
-- campos de transição continuam agrupados em colunas compostas;
-- a cobertura continua seletiva e não exaustiva;
-- `COM` permanece agrupamento documental, não participante estrutural;
-- continuidade ponta a ponta não foi aprovada;
-- maturidades individuais e lacunas permanecem inalteradas;
-- as jornadas da Pessoa, Coletivo e Organização continuam `draft`.
-
-## 7. Domínios separados
-
-### Coletivos
-
-`GKR-SURF-PER-102` permanece exclusivo da busca de Coletivos.
-
-### Oportunidades
-
-```text
-GKR-SURF-ORG-003 — estado institucional
-→ GKR-SURF-PER-201 — mapa
-↔ GKR-SURF-PER-202 — lista
-→ GKR-SURF-PER-203 — detalhe
-→ GKR-SURF-BND-001 — fronteira externa
-```
-
-A sequência é documental e permanece parcial ou não examinada conforme cada transição.
-
-### Opportunity Boost
-
-A fonte específica dos dez estados residuais é UXA-055. A validação funcional específica desses estados continua pendente.
-
-## 8. Estado documental após UXA-080
-
-| Artefato | Estado |
+| Entrega | Estado |
 |---|---|
-| visão geral das Jornadas Integradas | `active` |
-| Pessoa, Coletivo e Organização | `draft` por incompletude explícita |
-| handoffs, cenários e catálogo agregado | `active` dentro dos limites da UXA-074 |
-| lacunas | `active`, observacional e não promocional |
-| registro granular de superfícies | `active` 0.3.0 |
-| registro granular de transições | `active` 0.3.0 |
-| quatro detalhamentos granulares | `active` 0.2.0 |
-| protótipo, aplicação e motor | não iniciados |
-| Engenharia de Produto | não iniciada |
+| Galeria Visual Integrada de Telas | criada em `draft` 0.1.0 |
+| Catálogo Integrado de Telas | sincronizado para `active` 0.6.0 |
+| Registro de Lacunas | sincronizado para `active` 0.6.0 |
+| 97 SVGs | incorporados por referência |
+| 87 SVGs validados | identificados |
+| 10 SVGs da UXA-055 | preservados como pendentes |
+| 25 IDs com cobertura visual | identificados |
+| 14 responsabilidades sem SVG | identificadas |
+| fronteira externa sem tela | preservada |
 
-## 9. Lacunas preservadas
+## 5. Prioridades evidenciadas
 
-Permanecem abertas:
+A auditoria não escolhe automaticamente uma lacuna, mas evidencia três blocos:
 
-- ligação entre compreensão inicial e Tela Hoje;
-- `Meus Coletivos`;
-- Central de Atualizações;
-- Início do Participante reformulado;
+### Bloco A — continuidade de Coletivos
+
 - Visão Geral do Responsável;
-- operação bilateral de solicitações;
-- relação Organização–Coletivo materializada;
-- matriz institucional completa;
-- validação dos dez estados residuais do Opportunity Boost;
-- integração publicação–descoberta;
-- sincronização integrada entre mapa, lista e detalhe;
-- efeitos externos de oportunidades;
-- matriz integrada de erros, retornos e interrupções.
+- gestão bilateral de solicitações;
+- Meus Coletivos;
+- Central de Atualizações;
+- Início do Participante.
 
-## 10. Próxima iniciativa
+### Bloco B — relações institucionais
 
-Nenhuma nova iniciativa é iniciada ou identificada automaticamente pela UXA-080.
+- proposta Organização–Coletivo;
+- negociação bilateral;
+- relação ativa e revisão;
+- resultados e evidências institucionais.
 
-Qualquer incremento posterior deverá ser definido e autorizado em pacote próprio.
+### Bloco C — continuidades existentes ainda não validadas
 
-## 11. Frentes preservadas
+- compreensão inicial → Tela Hoje;
+- publicação → mapa/lista/detalhe;
+- efeito externo;
+- erros, retornos e interrupções;
+- dez estados residuais da UXA-055.
 
-Não são reabertas automaticamente:
+A ordem entre os blocos dependerá de validação e decisão governada.
 
-- lacunas de produto;
-- Resultados Empresariais;
-- preços ou baseline comercial;
-- política jurídica;
-- protótipo;
-- testes com pessoas;
-- aplicação ou motor de simulação;
-- Engenharia de Produto.
+## 6. Limites
 
-## 12. Regra de autorização
+A UXA-081 não:
 
-A integração da UXA-080 registrará somente a promoção documental controlada. Ela não iniciará nova UXA ou qualquer frente de produto.
+- cria novas telas;
+- modifica SVGs;
+- fecha lacunas;
+- promove jornadas;
+- inicia protótipo;
+- inicia teste com pessoas;
+- inicia aplicação ou Engenharia de Produto.
 
-Cada pacote exige autorização própria para criação e autorização separada para integração.
+## 7. Próxima iniciativa possível
+
+> **UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas**
+
+O objetivo futuro será verificar assertividade visual, coerência entre sequências e selecionar a próxima lacuna com critérios explícitos.
+
+A UXA-082 depende de autorização separada.
+
+## 8. Regra de autorização
+
+A integração da UXA-081 registrará somente a galeria e a auditoria. Ela não iniciará a UXA-082 nem qualquer materialização de lacuna.

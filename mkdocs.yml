@@ -219,15 +219,24 @@ nav:
           - UXA-073 — Reformulação, Navegação e Sincronização: experience-architecture/uxa-073-integrated-journeys-reformulation-navigation-and-synchronization.md
           - UXA-074 — Nova Validação Funcional: experience-architecture/uxa-074-integrated-journeys-functional-revalidation.md
           - UXA-075 — Promoção e Sincronização Pós-Validação: experience-architecture/uxa-075-integrated-journeys-controlled-promotion-and-post-validation-synchronization.md
+          - UXA-076 — Registros Granulares: experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md
+          - UXA-077 — Validação dos Registros Granulares: experience-architecture/uxa-077-granular-registry-functional-validation.md
+          - UXA-078 — Reformulação dos Registros Granulares: experience-architecture/uxa-078-controlled-granular-registry-reformulation.md
+          - UXA-079 — Revalidação dos Registros Granulares: experience-architecture/uxa-079-granular-registry-functional-revalidation.md
+          - UXA-080 — Promoção dos Registros Granulares: experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md
+          - UXA-081 — Galeria Visual e Auditoria de Cobertura: experience-architecture/uxa-081-integrated-screen-gallery-and-coverage-audit.md
 
   - Jornadas Integradas:
       - Visão Geral: journeys/index.md
+      - Galeria Visual de Telas: journeys/screen-gallery.md
+      - Catálogo de Telas: journeys/screen-catalog.md
       - Pessoa: journeys/person.md
       - Coletivo: journeys/collective.md
       - Organização: journeys/organization.md
       - Handoffs: journeys/handoffs.md
       - Cenários: journeys/scenarios.md
-      - Catálogo de Telas: journeys/screen-catalog.md
+      - Registro de Superfícies: journeys/surface-registry.md
+      - Registro de Transições: journeys/transition-registry.md
       - Lacunas: journeys/gaps.md
 
   - Intelligence Architecture:
@@ -237,7 +246,6 @@ nav:
 
   - Guivos Economic Model:
       - Visão Geral: economic-model/index.md
-      - Revisão de Fechamento: economic-model/gem-closure-review.md
       - Revisão da Baseline Comercial: economic-model/gem-commercial-plans-baseline-review.md
       - Revisão do Opportunity Boost: economic-model/gem-opportunity-boost-baseline-review.md
       - GEM-001 — Fundação: economic-model/gem-001-foundation.md
