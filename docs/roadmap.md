@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.54.0
-title: Roadmap Arquitetural — Galeria Visual Integrada Materializada
+id: ROADMAP-12.55.0
+title: Roadmap Arquitetural — Galeria Não Aprovada e Lacunas Repriorizadas
 status: active
-version: 12.54.0
+version: 12.55.0
 owner: Guivos
 last_updated: 2026-08-05
 supersedes_partial:
-  - ROADMAP-12.53.0
+  - ROADMAP-12.54.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -32,6 +32,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-081
+  - UXA-082
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -43,7 +44,7 @@ related:
   - M7.72
 ---
 
-# Roadmap Arquitetural — Galeria Visual Integrada Materializada
+# Roadmap Arquitetural — Galeria Não Aprovada e Lacunas Repriorizadas
 
 ## 1. Autoridade
 
@@ -54,10 +55,10 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | galeria única criada para inspeção dos 97 SVGs e auditoria de cobertura granular | UXA-081; M7.72 |
+| Marco | galeria validada como inventário, não aprovada para promoção e fila de lacunas corrigida por dependência | UXA-082; M7.72 |
 | Registros granulares | 40 superfícies e 37 transições em instrumentos `active` | UXA-080 |
-| Galeria visual | `draft` 0.1.0; aguarda revisão funcional e visual | UXA-081 |
-| SVGs auditados | 97 existentes; 87 validados; 10 pendentes | UXA-081 |
+| Galeria visual | `draft` 0.2.0; reformulação obrigatória | UXA-082 |
+| SVGs auditados | 97 existentes; 87 validados; 10 pendentes | UXA-081; UXA-082 |
 | cobertura granular visual | 25 de 40 IDs | UXA-081 |
 | Jornadas principais | Pessoa, Coletivo e Organização em `draft` | Jornadas Integradas |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
@@ -77,73 +78,89 @@ UXA-070 — programa funcional
 → UXA-079 — revalidação granular
 → UXA-080 — promoção dos instrumentos
 → UXA-081 — galeria visual e auditoria
+→ UXA-082 — validação da galeria não aprovada e priorização por dependência
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
-## 4. Resultado da UXA-081
+## 4. Resultado da UXA-082
 
-| Entrega | Estado |
+| Dimensão | Resultado |
 |---|---|
-| Galeria Visual Integrada de Telas | criada em `draft` 0.1.0 |
-| Catálogo Integrado de Telas | sincronizado para `active` 0.6.0 |
-| Registro de Lacunas | sincronizado para `active` 0.6.0 |
-| 97 SVGs | incorporados por referência |
-| 87 SVGs validados | identificados |
-| 10 SVGs da UXA-055 | preservados como pendentes |
-| 25 IDs com cobertura visual | identificados |
-| 14 responsabilidades sem SVG | identificadas |
-| fronteira externa sem tela | preservada |
+| inventário dos 97 SVGs | confirmado |
+| vínculos canônicos | mecanicamente utilizáveis |
+| galeria como sequência integrada | não aprovada |
+| galeria como matriz de assertividade por tela | não aprovada |
+| promoção da galeria | bloqueada |
+| fila de lacunas | reorganizada por dependência |
+| novas telas | não iniciadas |
 
-## 5. Prioridades evidenciadas
+Achados bloqueadores:
 
-A auditoria não escolhe automaticamente uma lacuna, mas evidencia três blocos:
+1. ordem funcional incorreta na página da Pessoa;
+2. Home pública e Tela Hoje agrupadas no mesmo bloco;
+3. ausência de rota integrada de inspeção;
+4. rastreabilidade agrupada insuficiente por SVG;
+5. divergência de versões documentais.
 
-### Bloco A — continuidade de Coletivos
+## 5. Próxima trilha documental
 
-- Visão Geral do Responsável;
-- gestão bilateral de solicitações;
-- Meus Coletivos;
-- Central de Atualizações;
-- Início do Participante.
+```text
+reformular a galeria
+→ revalidar a sequência de inspeção
+→ promover somente se aprovada
+→ iniciar, em ato separado, a lacuna priorizada
+```
 
-### Bloco B — relações institucionais
+A próxima etapa autorizável é a reformulação controlada. Revalidação, promoção e materialização futura permanecem atos separados.
 
-- proposta Organização–Coletivo;
-- negociação bilateral;
-- relação ativa e revisão;
-- resultados e evidências institucionais.
+## 6. Prioridade futura de materialização
 
-### Bloco C — continuidades existentes ainda não validadas
+A continuidade operacional de Coletivos deverá respeitar:
+
+```text
+GKR-SURF-COL-002 — Visão Geral do Responsável
+→ GKR-SURF-COL-003 — gestão completa de solicitações
+→ GKR-SURF-PER-106 — Meus Coletivos
+→ GKR-SURF-PER-107 — Central de Atualizações
+→ GKR-SURF-PER-108 — Início do Participante
+```
+
+A ordem deriva das transições `GKR-TRN-112`, `GKR-TRN-108`, `GKR-TRN-110` e `GKR-TRN-111`.
+
+Nenhuma dessas superfícies foi iniciada pela UXA-082.
+
+## 7. Dívidas de validação em trilha própria
 
 - compreensão inicial → Tela Hoje;
-- publicação → mapa/lista/detalhe;
-- efeito externo;
-- erros, retornos e interrupções;
-- dez estados residuais da UXA-055.
+- publicação → mapa, lista e detalhe;
+- dez estados residuais da UXA-055;
+- efeito externo de oportunidades;
+- erros, retornos e interrupções integrados.
 
-A ordem entre os blocos dependerá de validação e decisão governada.
+A existência de telas nessas frentes não comprova continuidade.
 
-## 6. Limites
+## 8. Limites
 
-A UXA-081 não:
+A UXA-082 não:
 
-- cria novas telas;
 - modifica SVGs;
-- fecha lacunas;
+- corrige a galeria;
 - promove jornadas;
+- fecha lacunas;
+- inicia materialização;
 - inicia protótipo;
 - inicia teste com pessoas;
 - inicia aplicação ou Engenharia de Produto.
 
-## 7. Próxima iniciativa possível
+## 9. Próxima iniciativa possível
 
-> **UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas**
+> **UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção**
 
-O objetivo futuro será verificar assertividade visual, coerência entre sequências e selecionar a próxima lacuna com critérios explícitos.
+A UXA-083 deverá corrigir os cinco achados da UXA-082 sem modificar os SVGs canônicos.
 
-A UXA-082 depende de autorização separada.
+A etapa depende de autorização separada.
 
-## 8. Regra de autorização
+## 10. Regra de autorização
 
-A integração da UXA-081 registrará somente a galeria e a auditoria. Ela não iniciará a UXA-082 nem qualquer materialização de lacuna.
+A integração da UXA-082 registrará somente o parecer, a fila corrigida e a sincronização documental. Ela não iniciará a UXA-083 nem qualquer lacuna priorizada.
