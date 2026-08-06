@@ -2,7 +2,7 @@
 id: UXA-081
 title: Galeria Visual Integrada de Telas e Auditoria de Cobertura
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 parent: UXA-000
@@ -28,7 +28,7 @@ normative: false
 
 ## 1. Finalidade
 
-A UXA-081 cria um ponto único de inspeção visual para os wireframes existentes e audita sua cobertura perante os registros granulares promovidos pela UXA-080.
+A UXA-081 cria um ponto único de entrada para inspeção visual dos wireframes existentes e audita sua cobertura perante os registros granulares promovidos pela UXA-080.
 
 A etapa responde à necessidade de verificar assertividade, coerência visual e ausência de telas sem percorrer individualmente todos os pacotes de origem.
 
@@ -55,15 +55,24 @@ Fontes examinadas:
 
 A UXA-081:
 
-1. cria `docs/journeys/screen-gallery.md`;
-2. incorpora visualmente todos os SVGs existentes sem duplicar os arquivos;
-3. associa cada conjunto visual aos IDs granulares correspondentes;
-4. registra pacote de origem e pacote de validação;
-5. distingue materialização visual, validação funcional e continuidade integrada;
-6. identifica responsabilidades sem SVG dedicado;
-7. corrige o estado desatualizado do Catálogo Integrado de Telas após a UXA-080;
-8. insere a galeria e os registros promovidos na navegação das Jornadas Integradas;
-9. sincroniza índices, estado e roadmap.
+1. cria `docs/journeys/screen-gallery.md` como índice único da galeria;
+2. cria cinco páginas agrupadas de inspeção visual;
+3. incorpora visualmente todos os SVGs existentes sem duplicar os arquivos;
+4. associa cada conjunto visual aos IDs granulares correspondentes;
+5. registra pacotes de origem e validação;
+6. distingue materialização visual, validação funcional e continuidade integrada;
+7. identifica responsabilidades sem SVG dedicado;
+8. corrige o estado desatualizado do Catálogo Integrado de Telas após a UXA-080;
+9. insere a galeria e os registros promovidos na navegação das Jornadas Integradas;
+10. sincroniza índices, estado e roadmap.
+
+Páginas agrupadas:
+
+- `screen-gallery-person.md`;
+- `screen-gallery-opportunities-organization.md`;
+- `screen-gallery-collectives.md`;
+- `screen-gallery-opportunity-boost-exposure.md`;
+- `screen-gallery-opportunity-boost-operations.md`.
 
 ## 4. Resultado quantitativo
 
@@ -98,9 +107,9 @@ Os dez pendentes pertencem exclusivamente aos estados residuais do Opportunity B
 
 O catálogo ainda declarava os registros granulares como `draft`, apesar da promoção controlada da UXA-080. A UXA-081 corrige a descrição para `active` sem alterar os objetos registrados.
 
-### A02 — ausência de galeria única
+### A02 — ausência de galeria integrada
 
-Os SVGs estavam distribuídos pelos artefatos de origem. A nova galeria permite inspeção em uma única página mantendo cada arquivo em seu caminho canônico.
+Os SVGs estavam distribuídos pelos artefatos de origem. A nova seção fornece um índice único e cinco páginas agrupadas, mantendo cada arquivo em seu caminho canônico e evitando sobrecarga de renderização.
 
 ### A03 — quantidade de SVGs não equivale a cobertura granular
 
@@ -146,9 +155,9 @@ A auditoria não valida como conjunto:
 
 ## 7. Estado da galeria
 
-`GKR-JOURNEY-SCREEN-GALLERY-001` é criado em `draft` 0.1.0.
+`GKR-JOURNEY-SCREEN-GALLERY-001` permanece em `draft` 0.1.1. As cinco páginas integrantes permanecem em `draft` 0.1.0.
 
-Esse status preserva a necessidade de revisão humana de:
+Esse estado preserva a necessidade de revisão humana de:
 
 - assertividade visual;
 - coerência entre telas;
