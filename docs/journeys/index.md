@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -17,6 +17,9 @@ related:
   - UXA-078
   - UXA-079
   - UXA-080
+  - UXA-081
+  - GKR-JOURNEY-SCREEN-GALLERY-001
+  - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-SECTION-CLARIFICATION-001
@@ -27,166 +30,113 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne, por referência, as jornadas da **Pessoa**, do **Coletivo** e da **Organização** para permitir leitura contínua, comparação de perspectivas, inspeção de handoffs e identificação de lacunas.
+Esta seção reúne, por referência, as jornadas da **Pessoa**, do **Coletivo** e da **Organização** para permitir leitura contínua, comparação de perspectivas, inspeção visual, análise de handoffs e identificação de lacunas.
 
-Ela não substitui contratos, programas, wireframes, validações ou registros canônicos. Em caso de divergência, prevalece o artefato de origem.
+Ela não substitui contratos, wireframes, validações ou registros canônicos. Em caso de divergência, prevalece o artefato de origem.
 
 ## 2. Como utilizar
 
-1. escolha o participante ou cenário;
-2. percorra os nós e transições;
-3. confira separadamente maturidade, autoridade, materialização e validação;
-4. verifique se a continuidade integrada foi examinada;
-5. observe retornos, contestações e interrupções;
-6. consulte o catálogo agregado;
-7. localize superfícies e transições por ID;
-8. considere os pareceres das UXA-077 e UXA-079, as correções da UXA-078 e a promoção da UXA-080;
-9. acompanhe as lacunas sem tratá-las como fechadas.
+1. consulte a [Galeria Visual Integrada de Telas](screen-gallery.md) para comparar os SVGs existentes;
+2. use o [Catálogo de telas](screen-catalog.md) para visão agregada;
+3. percorra a vista do participante;
+4. localize superfícies e transições por ID;
+5. confira separadamente maturidade, materialização, validação e continuidade;
+6. observe handoffs, retornos e interrupções;
+7. consulte as [Lacunas](gaps.md) sem tratá-las como fechadas.
 
 ## 3. Vistas disponíveis
 
+- [Galeria Visual Integrada de Telas](screen-gallery.md)
+- [Catálogo de telas](screen-catalog.md)
 - [Jornada da Pessoa](person.md)
 - [Jornada do Coletivo](collective.md)
 - [Jornada da Organização](organization.md)
 - [Handoffs entre participantes](handoffs.md)
 - [Cenários integrados](scenarios.md)
-- [Catálogo de telas](screen-catalog.md)
 - [Registro Granular de Superfícies e Estados](surface-registry.md)
 - [Registro Granular de Transições](transition-registry.md)
 - [Lacunas e continuidades ausentes](gaps.md)
 
-## 4. Pacotes granulares
-
-- [UXA-076 — materialização granular](../experience-architecture/uxa-076-integrated-journeys-granular-transition-and-surface-registry.md);
-- [UXA-077 — validação funcional não aprovada](../experience-architecture/uxa-077-granular-registry-functional-validation.md);
-- [UXA-078 — reformulação controlada](../experience-architecture/uxa-078-controlled-granular-registry-reformulation.md);
-- [UXA-079 — revalidação funcional aprovada com ressalvas](../experience-architecture/uxa-079-granular-registry-functional-revalidation.md);
-- [UXA-080 — promoção controlada dos registros granulares](../experience-architecture/uxa-080-controlled-granular-registry-promotion-and-post-revalidation-synchronization.md).
-
-Resultado vigente:
+## 4. Sequência governada
 
 ```text
-materialização granular
-→ validação não aprovada
-→ reformulação dos cinco achados
-→ revalidação aprovada com ressalvas
-→ promoção controlada dos instrumentos
-→ registros vigentes sem promoção das jornadas ou fechamento de lacunas
+UXA-070 — programa funcional
+→ UXA-071 — materialização da seção
+→ UXA-072 — validação não aprovada
+→ UXA-073 — reformulação e navegação
+→ UXA-074 — revalidação aprovada com ressalvas
+→ UXA-075 — promoção seletiva
+→ UXA-076 — registros granulares em draft
+→ UXA-077 — validação granular não aprovada
+→ UXA-078 — correção dos cinco achados
+→ UXA-079 — revalidação aprovada com ressalvas
+→ UXA-080 — promoção dos instrumentos granulares
+→ UXA-081 — galeria visual e auditoria de cobertura
 ```
 
-## 5. Estado pós-promoção
+Nenhuma etapa autoriza automaticamente a seguinte.
+
+## 5. Estado documental
 
 | Camada | Estado | Referência |
 |---|---|---|
-| programa funcional | concluído | UXA-070 |
-| primeira materialização documental | integrada | UXA-071 |
-| primeira validação funcional | não aprovada até reformulação | UXA-072 |
-| reformulação e navegação | executadas | UXA-073 |
-| revalidação da seção | aprovada com ressalvas documentais | UXA-074 |
-| promoção da seção | executada seletivamente | UXA-075 |
-| primeira materialização granular | executada em `draft` | UXA-076 |
-| primeira validação granular | não aprovada | UXA-077 |
-| reformulação granular | executada | UXA-078 |
-| revalidação granular | aprovada com ressalvas | UXA-079 |
-| promoção granular | executada somente para os instrumentos de registro | UXA-080 |
-| protótipo navegável | não iniciado | — |
-| aplicação ou motor | não iniciado | — |
+| visão geral das Jornadas Integradas | `active` | UXA-075 |
+| Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
+| handoffs, cenários e catálogo | `active` | UXA-074; UXA-075 |
+| registros de superfícies e transições | `active` 0.3.0 | UXA-080 |
+| quatro detalhamentos granulares | `active` 0.2.0 | UXA-080 |
+| galeria visual integrada | `draft` 0.1.0 | UXA-081 |
+| registro de lacunas | `active` | observacional |
+| protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
-## 6. Resultado quantitativo
+## 6. Auditoria visual
 
-| Registro | Quantidade | Estado após UXA-080 |
-|---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | instrumento `active` 0.3.0 |
-| transições documentais | 37 | instrumento `active` 0.3.0 |
-| referências de endpoint | 74 | todas resolvidas por IDs registrados |
-| endpoints em texto livre | 0 | aprovado |
-| detalhamentos obrigatórios | 4 | instrumentos `active` 0.2.0 |
+| Indicador | Resultado |
+|---|---:|
+| SVGs existentes | 97 |
+| com validação funcional registrada | 87 |
+| pendentes de validação específica | 10 |
+| IDs com referência visual direta ou agrupada | 25 de 40 |
+| responsabilidades sem SVG dedicado | 14 |
+| fronteira documental sem tela por definição | 1 |
 
-A promoção não declara novas telas implementadas e não altera as classificações internas.
+A quantidade de SVGs não equivale à quantidade de superfícies. Estados alternativos e variações por dispositivo podem compartilhar a mesma responsabilidade granular.
 
-## 7. Domínios separados
+## 7. Domínios preservados
 
-### 7.1 Coletivos
+### Coletivos
 
 `GKR-SURF-PER-102` representa exclusivamente Resultados de Busca de Coletivos.
 
-### 7.2 Oportunidades
+### Oportunidades
 
-| ID | Responsabilidade |
-|---|---|
-| GKR-SURF-ORG-003 | estado institucional de oportunidade aprovada ou ativa |
-| GKR-SURF-PER-201 | Mapa de Oportunidades |
-| GKR-SURF-PER-202 | Lista de Oportunidades |
-| GKR-SURF-PER-203 | Detalhe de Oportunidade |
-| GKR-SURF-BND-001 | fronteira externa identificada |
+- `GKR-SURF-ORG-003` — estado institucional;
+- `GKR-SURF-PER-201` — mapa;
+- `GKR-SURF-PER-202` — lista;
+- `GKR-SURF-PER-203` — detalhe;
+- `GKR-SURF-BND-001` — fronteira externa.
 
-### 7.3 Opportunity Boost
+### Opportunity Boost
 
-`GKR-SURF-COM-005` e `GKR-TRN-305` apontam para UXA-055. Os dez estados residuais continuam sem validação funcional específica.
+Os dez estados da UXA-055 aparecem na galeria, mas permanecem sem validação funcional específica.
 
-## 8. Regra da promoção granular
-
-O status `active` dos registros significa que eles são instrumentos documentais vigentes e aprovados no escopo declarado.
-
-A promoção não:
-
-- altera a maturidade das 40 entradas;
-- altera os estados das 37 transições;
-- converte lacunas em continuidades;
-- promove as jornadas da Pessoa, Coletivo ou Organização;
-- cria implementação.
-
-Permanecem como ressalvas:
-
-- campos de transição agregados;
-- cobertura seletiva e não exaustiva;
-- `COM` como agrupamento documental.
-
-## 9. Modelo de evidência
-
-Cada nó ou família separa:
-
-| Campo | Significado |
-|---|---|
-| maturidade primária | um único estado controlado da UXA-070 |
-| autoridade contratual | documento que governa a responsabilidade |
-| referência materializada | documento, wireframe ou SVG existente |
-| evidência de validação | pacote que validou a referência materializada |
-| continuidade integrada | validada, parcial, ausente ou não examinada |
-
-O registro de superfícies também explicita artefato e caminho, versão, decisão, dados, gate, reversibilidade, supersessão e observação de escopo.
+## 8. Regra de leitura
 
 ```text
-cobertura das superfícies
-≠ cobertura das transições
-≠ validação da jornada integrada
+visual existente
+≠ decisão visual aprovada
+≠ transição integrada validada
+≠ jornada completa
+≠ implementação
 ```
-
-## 10. Regra de leitura
-
-Uma sequência exibida é hipótese documental rastreável. Ela somente poderá ser declarada como jornada integrada completa quando nós, transições, autoridades, dados, retornos, interrupções e estados alternativos tiverem evidência suficiente.
 
 Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
-## 11. Estado dos artefatos
+## 9. Próxima transição possível
 
-- esta visão geral permanece `active`;
-- as vistas de Pessoa, Coletivo e Organização permanecem `draft`;
-- handoffs, cenários e catálogo permanecem `active` nos limites da UXA-074;
-- os dois registros granulares estão `active` 0.3.0;
-- os quatro detalhamentos granulares estão `active` 0.2.0;
-- o registro de lacunas permanece `active` por ser observacional;
-- inclusão ou promoção nesta seção não altera maturidade ou canonicidade das entradas.
+A próxima evolução documental possível é:
 
-## 12. Escopo vigente
+**UXA-082 — Validação Funcional e Visual da Galeria Integrada e Priorização Governada das Lacunas.**
 
-O status `active` desta seção e dos registros não declara:
-
-- jornadas completas;
-- validação ponta a ponta;
-- fechamento de lacunas;
-- prontidão para protótipo;
-- prontidão para implementação.
-
-Nenhuma nova iniciativa é iniciada ou identificada automaticamente pela UXA-080. Qualquer incremento posterior dependerá de definição e autorização separadas.
+A UXA-082 não foi iniciada e dependerá de autorização separada.
