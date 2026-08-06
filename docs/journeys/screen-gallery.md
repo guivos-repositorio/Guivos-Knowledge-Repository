@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 related:
@@ -12,6 +12,8 @@ related:
   - UXA-080
   - UXA-081
   - UXA-082
+  - UXA-083
+  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -23,61 +25,36 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne os 97 SVGs existentes em `docs/assets/wireframes/` para inspeção humana de assertividade, coerência e cobertura.
+Esta seção reúne os 97 SVGs canônicos para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-Os arquivos permanecem em seus caminhos canônicos e são incorporados por referência. A galeria não modifica SVGs, valida transições, fecha lacunas, promove jornadas ou autoriza implementação.
+A UXA-083 reformula somente a organização documental da galeria. Nenhum SVG é alterado, nenhuma tela é criada e nenhuma continuidade passa a ser considerada validada por proximidade visual.
 
-## 2. Abrir as galerias
+## 2. Instrumentos de inspeção
 
-| Grupo | SVGs | Estado |
-|---|---:|---|
-| [Pessoa — Fundação, Entrada e Compreensão](screen-gallery-person.md) | 19 | validados nos pacotes de origem; ordem integrada pendente de correção |
-| [Oportunidades e Organização](screen-gallery-opportunities-organization.md) | 9 | validados nos pacotes de origem; continuidade integrada pendente |
-| [Coletivos](screen-gallery-collectives.md) | 23 | validados nas perspectivas cobertas; operação do responsável ausente |
-| [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | validados nos pacotes de origem |
-| [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | 16 validados e 10 pendentes |
-| **Total** | **97** | **87 validados e 10 pendentes** |
+- [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md) — uma linha para cada um dos 97 arquivos;
+- [Catálogo Integrado de Telas](screen-catalog.md) — visão agregada por família;
+- [Registro Granular de Superfícies e Estados](surface-registry.md);
+- [Registro Granular de Transições](transition-registry.md);
+- [Lacunas e Continuidades Ausentes](gaps.md).
 
-A divisão em páginas evita sobrecarga de renderização e mantém um único ponto de entrada para a inspeção.
+## 3. Rota canônica de inspeção
 
-## 3. Auditoria
+A rota abaixo organiza a leitura documental. Ela não representa uma única jornada de produto.
 
-| Indicador | Resultado |
-|---|---:|
-| SVGs existentes | 97 |
-| com validação funcional registrada | 87 |
-| pendentes de validação específica | 10 |
-| IDs com referência visual direta ou agrupada | 25 de 40 |
-| responsabilidades sem SVG dedicado | 14 |
-| fronteira documental sem tela por definição | 1 |
+| Ordem | Página | SVGs | Continuidade examinada |
+|---:|---|---:|---|
+| 1 | [Pessoa — Fundação, Entrada, Compreensão e Recorrência](screen-gallery-person.md) | 19 | Home → início protegido → expressão → compreensão → Tela Hoje |
+| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 | publicação institucional → mapa → lista → detalhe → fronteira |
+| 3 | [Coletivos](screen-gallery-collectives.md) | 23 | descoberta → perfil → solicitação → pendência → operação ausente |
+| 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → ativação → exposição identificada → retorno orgânico |
+| 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
+|  | **Total** | **97** | **87 validados localmente; 10 pendentes** |
 
-A quantidade de SVGs não equivale à quantidade de superfícies: estados alternativos e dispositivos podem compartilhar a mesma responsabilidade granular.
+Cada página contém navegação anterior, índice, matriz e próxima página.
 
-## 4. Responsabilidades sem SVG dedicado
+## 4. Sequências funcionais destacadas
 
-- `GKR-SURF-PER-106` — Meus Coletivos;
-- `GKR-SURF-PER-107` — Central de Atualizações;
-- `GKR-SURF-PER-108` — Início do Participante;
-- `GKR-SURF-COL-002` — Visão Geral do Responsável;
-- `GKR-SURF-COL-003` — gestão de solicitações na origem operacional;
-- `GKR-SURF-COL-004` a `GKR-SURF-COL-008` — operação interna e institucional do Coletivo;
-- `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007` — relação com Coletivos e resultados institucionais.
-
-`GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
-
-## 5. Resultado da UXA-082
-
-**Veredito: não aprovada para promoção até reformulação controlada.**
-
-A galeria permanece válida como inventário visual e ponto central de acesso. A validação identificou cinco achados:
-
-1. a página da Pessoa não segue a ordem funcional registrada;
-2. Home pública e Tela Hoje estão agrupadas apesar de ocuparem momentos distintos;
-3. não existe rota integrada de inspeção entre as cinco páginas;
-4. a associação agrupada não informa o papel de cada SVG na entrada, decisão, saída, retorno ou interrupção;
-5. resumos documentais ainda registravam a versão anterior da galeria.
-
-A ordem funcional esperada para a jornada pessoal é:
+### Pessoa
 
 ```text
 Home pública
@@ -90,37 +67,76 @@ Home pública
 → Tela Hoje
 ```
 
-A estrutura atual não deve ser interpretada como essa sequência.
+A passagem final continua `não examinada` como conjunto.
 
-## 6. Prioridade governada de continuidade
+### Organização e oportunidades
 
-A primeira frente futura de novas telas será a continuidade operacional de Coletivos, respeitando dependências:
+```text
+Visão Geral da Organização
+→ cadastro e ativação
+→ mapa
+→ lista sincronizada
+→ detalhe
+→ fronteira externa
+```
 
-| Ordem | Superfície | ID |
-|---:|---|---|
-| 1 | Visão Geral do Responsável | GKR-SURF-COL-002 |
-| 2 | gestão completa de solicitações | GKR-SURF-COL-003 |
-| 3 | Meus Coletivos | GKR-SURF-PER-106 |
-| 4 | Central de Atualizações | GKR-SURF-PER-107 |
-| 5 | Início do Participante | GKR-SURF-PER-108 |
+A publicação e a descoberta permanecem em pacotes distintos.
 
-Essa decisão não inicia materialização. Antes dela, a própria galeria deverá ser reformulada e revalidada.
+### Coletivos
 
-## 7. Dívidas de validação separadas
+```text
+explorar e buscar
+→ Perfil Público
+→ revisão e solicitação
+→ Solicitação Pendente
+→ Visão Geral do Responsável
+→ gestão de solicitações
+→ Meus Coletivos
+→ Central de Atualizações
+→ Início do Participante
+```
 
-- compreensão inicial → Tela Hoje;
-- publicação → mapa, lista e detalhe;
-- dez estados residuais da UXA-055;
-- erros, retornos e interrupções integrados.
+A galeria possui SVGs apenas até Solicitação Pendente e uma referência inicial de Coletivo.
 
-Esses itens não devem ser confundidos com ausência de novas telas.
+## 5. Cobertura auditada
+
+| Indicador | Resultado |
+|---|---:|
+| SVGs existentes e referenciados | 97 |
+| com validação funcional de origem | 87 |
+| pendentes de validação específica | 10 |
+| IDs com referência visual direta ou agrupada | 25 de 40 |
+| responsabilidades sem SVG dedicado | 14 |
+| fronteira documental sem tela por definição | 1 |
+
+## 6. Responsabilidades sem SVG dedicado
+
+- `GKR-SURF-COL-002` — Visão Geral do Responsável;
+- `GKR-SURF-COL-003` — gestão completa de solicitações;
+- `GKR-SURF-PER-106` — Meus Coletivos;
+- `GKR-SURF-PER-107` — Central de Atualizações;
+- `GKR-SURF-PER-108` — Início do Participante;
+- `GKR-SURF-COL-004` a `GKR-SURF-COL-008`;
+- `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007`.
+
+`GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
+
+## 7. Resolução dos achados da UXA-082
+
+| Achado | Reformulação executada |
+|---|---|
+| ordem incorreta da Pessoa | página reordenada pela sequência registrada |
+| Home e Tela Hoje agrupadas | superfícies separadas em extremos da sequência |
+| ausência de rota entre páginas | navegação anterior, índice, matriz e próxima página |
+| ausência de rastreabilidade por arquivo | matriz individual para os 97 SVGs |
+| versões divergentes | galeria 0.3.0 e páginas 0.2.0 sincronizadas |
 
 ## 8. Estado
 
-A galeria e suas páginas permanecem `draft`. Sua presença na navegação não aprova assertividade visual, continuidade integrada ou prontidão de produto.
+A galeria permanece `draft` e **reformulada, aguardando revalidação funcional e visual**.
+
+A reformulação não promove a galeria, não valida jornadas, não fecha lacunas e não inicia protótipo ou Engenharia de Produto.
 
 ## 9. Próxima transição possível
 
-**UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção.**
-
-A UXA-083 exige autorização separada.
+**UXA-084 — Revalidação Funcional e Visual da Galeria Integrada Reformulada**, mediante autorização separada.
