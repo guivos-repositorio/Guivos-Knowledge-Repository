@@ -2,12 +2,13 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-06
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 depends_on:
   - UXA-083
+  - UXA-084
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -24,7 +25,13 @@ normative: false
 
 Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 97 SVGs. Cada perfil declara superfície, entrada, saída, retorno ou interrupção, lacuna e validação, sem inventar precisão quando vários estados compartilham a mesma responsabilidade.
 
-## 2. Perfis de rastreabilidade
+## 2. Veredito da UXA-084
+
+**Aprovada com ressalvas no escopo documental de rastreabilidade.**
+
+As 97 associações individuais foram confirmadas. A utilização de 23 perfis é aceita para inspeção e cobertura, mas não substitui análise semântica exclusiva de cada estado visual nem valida transições ou jornadas.
+
+## 3. Perfis de rastreabilidade
 
 | Perfil | Superfície(s) | Entrada | Saída | Retorno ou interrupção | Lacuna | Validação |
 |---|---|---|---|---|---|---|
@@ -52,7 +59,7 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 9
 | R22 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-054 |
 | R23 | GKR-SURF-COM-005 | GKR-TRN-305 | não examinada | depende do estado; desfazer, contestar ou continuar não validados | dez estados residuais da UXA-055 | pendente de validação específica |
 
-## 3. Associação individual dos 97 SVGs
+## 4. Associação individual dos 97 SVGs
 
 | SVG | Perfil |
 |---|---|
@@ -154,11 +161,17 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 9
 | `uxa-055-contest-data-use-mobile.svg` | R23 |
 | `uxa-055-advertiser-update-failure-mobile.svg` | R23 |
 
-## 4. Totais e limites
+## 5. Totais e limites
 
 - SVGs registrados: **97**;
+- associações individuais: **97**;
+- perfis documentais: **23**;
 - com validação de origem registrada: **87**;
 - pendentes de validação específica: **10**;
-- arquivos visuais alterados pela UXA-083: **0**.
+- arquivos visuais alterados pelas UXA-083 e UXA-084: **0**.
 
-A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz permanece `draft` até revalidação da galeria reformulada.
+A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz permanece `draft` 0.2.0, aprovada com ressalvas e elegível para promoção controlada.
+
+## 6. Próxima transição possível
+
+**UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação**, mediante autorização separada.
