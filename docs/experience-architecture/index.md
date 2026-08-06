@@ -2,9 +2,9 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.76.0
+version: 0.77.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-06
 related:
   - PAS-001
   - GLPA-001
@@ -38,6 +38,7 @@ related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -77,11 +78,12 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | Indicador | Resultado |
 |---|---:|
 | SVGs existentes | 97 |
+| associações individuais | 97 |
+| perfis de rastreabilidade | 23 |
 | validados nos pacotes de origem | 87 |
 | pendentes de validação específica | 10 |
 | IDs com referência visual | 25 de 40 |
-| perfis de rastreabilidade | 23 |
-| SVGs com associação individual | 97 |
+| responsabilidades sem SVG dedicado | 14 |
 
 ## 4. Decisões estruturais preservadas
 
@@ -104,6 +106,7 @@ UXA-076 a UXA-080 — registros granulares estruturados e promovidos
 UXA-081 — galeria integrada criada e cobertura auditada
 UXA-082 — galeria não aprovada e lacunas repriorizadas
 UXA-083 — galeria reformulada e matriz individual criada
+UXA-084 — galeria e matriz revalidadas com ressalvas
 ```
 
 Participantes estruturais:
@@ -114,19 +117,20 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante, anunciante e patrocinador permanecem papéis contextuais.
 
-## 6. Resultado da UXA-083
+## 6. Resultado da UXA-084
 
-[UXA-083 — Reformulação Controlada da Galeria Visual Integrada e da Sequência de Inspeção](uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md) resolve documentalmente os cinco bloqueios da UXA-082.
+[UXA-084 — Revalidação Funcional e Visual da Galeria Integrada Reformulada](uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md) aprova com ressalvas a galeria e a matriz no escopo documental de inspeção.
 
-Foram executados:
+Foram confirmados:
 
-1. correção da ordem da Pessoa;
+1. ordem da Pessoa compatível com os registros;
 2. separação entre Home pública e Tela Hoje;
 3. navegação integrada entre cinco páginas;
-4. matriz com associação individual dos 97 SVGs;
-5. sincronização de versões e resumos.
+4. associação individual dos 97 SVGs a 23 perfis;
+5. sincronização de versões e resumos;
+6. preservação das lacunas e estados não examinados.
 
-A galeria permanece `draft` e exige revalidação.
+A aprovação não valida jornadas ponta a ponta e não promove os instrumentos.
 
 ## 7. Instrumentos vigentes
 
@@ -134,16 +138,24 @@ A galeria permanece `draft` e exige revalidação.
 |---|---|
 | visão geral das Jornadas Integradas | `active` |
 | Pessoa, Coletivo e Organização | `draft` |
-| catálogo integrado | `active` 0.8.0 |
-| galeria visual | `draft` 0.3.0; reformulada |
-| cinco páginas visuais | `draft` 0.2.0 |
-| matriz por SVG | `draft` 0.1.0 |
-| lacunas | `active` 0.8.0 |
+| catálogo integrado | `active` 0.9.0 |
+| galeria visual | `draft` 0.4.0; aprovada com ressalvas |
+| cinco páginas visuais | `draft` 0.2.0; revalidadas como conjunto |
+| matriz por SVG | `draft` 0.2.0; aprovada com ressalvas |
+| lacunas | `active` 0.9.0 |
 | registro de superfícies | `active` 0.3.0 |
 | registro de transições | `active` 0.3.0 |
 | detalhamentos granulares | `active` 0.2.0 |
 
-## 8. Prioridade futura de materialização
+## 8. Ressalvas vigentes
+
+- perfis agregados não substituem análise exclusiva por estado;
+- 14 responsabilidades permanecem sem SVG dedicado;
+- dez estados da UXA-055 permanecem sem validação específica;
+- continuidades entre pacotes permanecem parciais ou não examinadas;
+- aprovação de inspeção não equivale a jornada validada.
+
+## 9. Prioridade futura de materialização
 
 ```text
 GKR-SURF-COL-002 — Visão Geral do Responsável
@@ -153,9 +165,9 @@ GKR-SURF-COL-002 — Visão Geral do Responsável
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-Nenhuma superfície foi iniciada pela UXA-083.
+Nenhuma superfície foi iniciada pela UXA-084.
 
-## 9. Dívidas de validação
+## 10. Dívidas de validação
 
 - compreensão inicial → Tela Hoje;
 - publicação → mapa, lista e detalhe;
@@ -163,10 +175,10 @@ Nenhuma superfície foi iniciada pela UXA-083.
 - efeito externo de oportunidades;
 - erros, retornos e interrupções integrados.
 
-## 10. Limites
+## 11. Limites
 
-A UXA-083 não altera SVGs, contratos, protótipo ou implementação; não promove jornadas e não fecha lacunas.
+A UXA-084 não altera SVGs, contratos, protótipo ou implementação; não promove jornadas e não fecha lacunas.
 
-## 11. Próxima evolução possível
+## 12. Próxima evolução possível
 
-**UXA-084 — Revalidação Funcional e Visual da Galeria Integrada Reformulada**, mediante autorização separada.
+**UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação**, mediante autorização separada.
