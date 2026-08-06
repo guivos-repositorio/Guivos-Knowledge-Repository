@@ -1,26 +1,53 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001
-title: Oportunidades e Organização
+title: Organização e Oportunidades
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
+  - UXA-082
+  - UXA-083
+  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
 
-# Oportunidades e Organização
+# Organização e Oportunidades
 
-[Voltar à Galeria Visual Integrada](screen-gallery.md)
+[← Pessoa](screen-gallery-person.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Coletivos →](screen-gallery-collectives.md)
 
-Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A presença nesta página não altera maturidade, validação ou continuidade.
+## 1. Ordem funcional de inspeção
 
-## Oportunidades orgânicas
+```text
+Visão Geral da Organização
+→ cadastro e ativação institucional
+→ mapa de oportunidades
+→ lista sincronizada
+→ detalhe
+→ fronteira externa identificada
+```
 
-**Cobertura:** 7 SVGs · IDs: `GKR-SURF-PER-201`, `GKR-SURF-PER-202`, `GKR-SURF-PER-203` · origem: `UXA-024, UXA-026, UXA-028, UXA-030, UXA-032, UXA-007` · validação: `UXA-025, UXA-027, UXA-029, UXA-031, UXA-033, UXA-012` · estado: **validado nos pacotes indicados**
+A ordem evidencia as continuidades `GKR-TRN-203` a `GKR-TRN-205` e `GKR-TRN-210` a `GKR-TRN-211`, que permanecem parciais ou não examinadas como conjunto.
+
+## 2. Organização
+
+**Cobertura:** 2 SVGs · IDs: `GKR-SURF-ORG-001`, `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003` · origem: `UXA-015`, `UXA-008` · validação: `UXA-017`, `UXA-013`
+
+### `uxa-015-organization-overview-desktop.svg`
+
+![](../assets/wireframes/uxa-015-organization-overview-desktop.svg){ width="320" loading="lazy" }
+
+### `uxa-008-organization-opportunity-registration-desktop.svg`
+
+![](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg){ width="320" loading="lazy" }
+
+## 3. Mapa de Oportunidades
+
+**Cobertura:** 5 SVGs · ID: `GKR-SURF-PER-201` · validações locais: `UXA-025`, `UXA-027`, `UXA-031`, `UXA-033`
 
 ### `uxa-024-opportunity-map-mobile.svg`
 
@@ -29,10 +56,6 @@ Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A pres
 ### `uxa-026-opportunity-map-location-disabled-mobile.svg`
 
 ![](../assets/wireframes/uxa-026-opportunity-map-location-disabled-mobile.svg){ width="320" loading="lazy" }
-
-### `uxa-028-opportunity-map-list-mobile.svg`
-
-![](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg){ width="320" loading="lazy" }
 
 ### `uxa-030-opportunity-map-no-results-mobile.svg`
 
@@ -46,18 +69,24 @@ Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A pres
 
 ![](../assets/wireframes/uxa-032-opportunity-map-no-results-desktop.svg){ width="320" loading="lazy" }
 
+## 4. Lista de Oportunidades
+
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-202` · validação local: `UXA-029`
+
+### `uxa-028-opportunity-map-list-mobile.svg`
+
+![](../assets/wireframes/uxa-028-opportunity-map-list-mobile.svg){ width="320" loading="lazy" }
+
+## 5. Detalhe de Oportunidade
+
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-203` · validação local: `UXA-012`
+
 ### `uxa-007-opportunity-detail-mobile.svg`
 
 ![](../assets/wireframes/uxa-007-opportunity-detail-mobile.svg){ width="320" loading="lazy" }
 
-## Organização
+## 6. Limite
 
-**Cobertura:** 2 SVGs · IDs: `GKR-SURF-ORG-001`, `GKR-SURF-ORG-002`, `GKR-SURF-ORG-003` · origem: `UXA-015, UXA-008` · validação: `UXA-017, UXA-013` · estado: **validado nos pacotes indicados**
+A publicação, descoberta, alternância mapa–lista, detalhe e efeito externo continuam sem validação integrada ponta a ponta.
 
-### `uxa-015-organization-overview-desktop.svg`
-
-![](../assets/wireframes/uxa-015-organization-overview-desktop.svg){ width="320" loading="lazy" }
-
-### `uxa-008-organization-opportunity-registration-desktop.svg`
-
-![](../assets/wireframes/uxa-008-organization-opportunity-registration-desktop.svg){ width="320" loading="lazy" }
+[← Pessoa](screen-gallery-person.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Coletivos →](screen-gallery-collectives.md)

@@ -2,25 +2,37 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-EXPOSURE-001
 title: Opportunity Boost — Configuração e Exposição
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-05
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
+  - UXA-082
+  - UXA-083
+  - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
 
 # Opportunity Boost — Configuração e Exposição
 
-[Voltar à Galeria Visual Integrada](screen-gallery.md)
+[← Coletivos](screen-gallery-collectives.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Operação e Resíduos →](screen-gallery-opportunity-boost-operations.md)
 
-Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A presença nesta página não altera maturidade, validação ou continuidade.
+## 1. Ordem funcional de inspeção
 
-## Opportunity Boost — fluxo do anunciante
+```text
+configuração do anunciante
+→ ativação da campanha
+→ exposição patrocinada identificada
+→ explicação
+→ retorno ao contexto orgânico
+```
 
-**Cobertura:** 10 SVGs · IDs: `GKR-SURF-COM-001` · origem: `UXA-040, UXA-051` · validação: `UXA-041, UXA-052` · estado: **validado nos pacotes indicados**
+## 2. Fluxo do anunciante
+
+**Cobertura:** 10 SVGs · ID: `GKR-SURF-COM-001` · origem: `UXA-040`, `UXA-051` · validação: `UXA-041`, `UXA-052`
 
 ### `uxa-040-opportunity-boost-eligibility-desktop.svg`
 
@@ -62,9 +74,9 @@ Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A pres
 
 ![](../assets/wireframes/uxa-051-opportunity-boost-submission-mobile.svg){ width="320" loading="lazy" }
 
-## Opportunity Boost — cartão e explicação
+## 3. Cartão e explicação patrocinados
 
-**Cobertura:** 6 SVGs · IDs: `GKR-SURF-COM-002` · origem: `UXA-042` · validação: `UXA-043` · estado: **validado nos pacotes indicados**
+**Cobertura:** 6 SVGs · ID: `GKR-SURF-COM-002` · origem: `UXA-042` · validação: `UXA-043`
 
 ### `uxa-042-sponsored-card-mobile.svg`
 
@@ -90,9 +102,9 @@ Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A pres
 
 ![](../assets/wireframes/uxa-042-social-financed-explanation-mobile.svg){ width="320" loading="lazy" }
 
-## Opportunity Boost — lista e mapa patrocinados
+## 4. Lista e mapa patrocinados
 
-**Cobertura:** 4 SVGs · IDs: `GKR-SURF-COM-003` · origem: `UXA-044` · validação: `UXA-045` · estado: **validado nos pacotes indicados**
+**Cobertura:** 4 SVGs · ID: `GKR-SURF-COM-003` · origem: `UXA-044` · validação: `UXA-045`
 
 ### `uxa-044-sponsored-list-mobile.svg`
 
@@ -109,3 +121,9 @@ Os SVGs abaixo são incorporados por referência aos arquivos canônicos. A pres
 ### `uxa-044-sponsored-map-desktop.svg`
 
 ![](../assets/wireframes/uxa-044-sponsored-map-desktop.svg){ width="320" loading="lazy" }
+
+## 5. Limite
+
+A exposição patrocinada não compra relevância, reputação ou autoridade. A integração orgânico–patrocinado permanece parcial.
+
+[← Coletivos](screen-gallery-collectives.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Operação e Resíduos →](screen-gallery-opportunity-boost-operations.md)
