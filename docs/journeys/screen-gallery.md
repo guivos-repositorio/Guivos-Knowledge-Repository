@@ -1,10 +1,10 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
-status: draft
-version: 0.4.0
+status: active
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 related:
   - UXA-005
   - UXA-070
@@ -14,6 +14,7 @@ related:
   - UXA-082
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -28,13 +29,13 @@ normative: false
 
 Esta seção reúne os 97 SVGs canônicos para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A organização documental foi reformulada pela UXA-083 e revalidada pela UXA-084. Nenhum SVG é alterado, nenhuma tela é criada e nenhuma continuidade passa a ser considerada validada por proximidade visual.
+A organização documental foi reformulada pela UXA-083, revalidada pela UXA-084 e promovida como instrumento documental pela UXA-085. Nenhum SVG é alterado, nenhuma tela é criada e nenhuma continuidade passa a ser considerada validada por proximidade visual.
 
 ## 2. Veredito da UXA-084
 
 **Aprovada com ressalvas no escopo documental de inspeção.**
 
-A galeria permite localizar, percorrer e comparar os 97 SVGs sem ocultar ausências ou declarar jornadas completas. A promoção dos instrumentos permanece condicionada a ato governado separado.
+A galeria permite localizar, percorrer e comparar os 97 SVGs sem ocultar ausências ou declarar jornadas completas. A UXA-085 promove somente o instrumento de inspeção, preservando integralmente as ressalvas.
 
 Ressalvas vigentes:
 
@@ -65,7 +66,7 @@ A rota abaixo organiza a leitura documental. Ela não representa uma única jorn
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
 |  | **Total** | **97** | **87 validados localmente; 10 pendentes** |
 
-Cada página contém navegação anterior, índice, matriz e próxima página quando aplicável.
+Cada página contém navegação anterior, índice, matriz e próxima página quando aplicável. As cinco páginas são instrumentos `active` 0.3.0; esse status não valida as continuidades que exibem.
 
 ## 5. Sequências funcionais destacadas
 
@@ -150,10 +151,12 @@ A galeria possui SVGs apenas até Solicitação Pendente e uma referência inici
 
 ## 9. Estado
 
-A galeria permanece `draft` 0.4.0, **aprovada com ressalvas e elegível para promoção controlada**.
+A galeria está `active` 0.5.0 após a promoção controlada da UXA-085. As cinco páginas visuais estão `active` 0.3.0 e a matriz por SVG está `active` 0.3.0.
 
-A revalidação não promove a galeria, não valida jornadas ponta a ponta, não fecha lacunas e não inicia protótipo ou Engenharia de Produto.
+O status `active` aprova somente esses instrumentos documentais de inspeção no escopo revalidado. Não valida jornadas ponta a ponta, não promove superfícies ou transições, não fecha lacunas e não inicia protótipo ou Engenharia de Produto.
 
 ## 10. Próxima transição possível
 
-**UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação**, mediante autorização separada.
+**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+
+A UXA-086 não é iniciada pela promoção da galeria.
