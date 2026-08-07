@@ -2,7 +2,7 @@
 id: UXA-100
 title: Programa Funcional e Materialização Inicial de Planos, Cobrança e Pagamentos
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-000
@@ -26,7 +26,7 @@ normative: false
 
 ## 1. Finalidade
 
-A UXA-100 abre uma frente transversal para tornar compreensíveis, em baixa fidelidade, os fluxos de **plano, cobrança, pagamento e efeito de limites comerciais** para os três participantes estruturais da Guivos:
+A UXA-100 abre uma frente transversal para tornar compreensíveis, em baixa fidelidade, os fluxos de **plano, cobrança, pagamento, comparação de benefícios e efeito de limites comerciais** para os três participantes estruturais da Guivos:
 
 - Pessoa;
 - Coletivo;
@@ -34,13 +34,13 @@ A UXA-100 abre uma frente transversal para tornar compreensíveis, em baixa fide
 
 A frente deriva da baseline comercial candidata do GEM-004. Ela **não autoriza oferta pública, checkout real, cobrança, gateway, implantação, desenvolvimento ou publicação de preços como proposta comercial vigente**.
 
-A materialização inicial utiliza placas de fluxo para validar continuidade e hierarquia antes de fracionar estados em superfícies finais ou registrá-los como IDs canônicos.
+A materialização inicial utiliza placas de fluxo e placas complementares de comparação incremental para validar continuidade e hierarquia antes de fracionar estados em superfícies finais ou registrá-los como IDs canônicos.
 
 ## 2. Pergunta funcional
 
 A experiência deverá responder, sem coerção:
 
-> **Qual plano está ativo, o que ele inclui, qual limite foi alcançado, quais alternativas gratuitas permanecem válidas, o que muda ao escolher outro plano, quem paga e quem recebe o benefício, qual é a recorrência e o que acontece em sucesso, falha, downgrade ou cancelamento?**
+> **Qual plano está ativo, o que ele inclui, qual limite foi alcançado, quais alternativas gratuitas permanecem válidas, o que muda ao escolher outro plano, quais benefícios o plano superior acrescenta em relação ao imediatamente anterior, quem paga e quem recebe o benefício, qual é a recorrência e o que acontece em sucesso, falha, downgrade ou cancelamento?**
 
 Para a Pessoa existe uma pergunta adicional obrigatória:
 
@@ -111,11 +111,16 @@ Planos e cobrança não serão inseridos em `COM-*`, pois a família `COM-*` vig
 
 A UXA-100 também não cria ainda IDs canônicos de superfície ou transição.
 
-Primeiro serão validadas três placas de fluxo:
+Primeiro serão validados dois conjuntos complementares:
 
-1. Pessoa — móvel;
-2. Coletivo — computador;
-3. Organização — computador.
+1. três placas de fluxo:
+   - Pessoa — móvel;
+   - Coletivo — computador;
+   - Organização — computador;
+2. três placas de comparação incremental:
+   - Pessoa — Free → Plus → Pro;
+   - Coletivo — Livre → Gestão → Impacto → Enterprise;
+   - Organização — Start → Growth → Scale.
 
 Somente uma validação funcional posterior poderá decidir:
 
@@ -130,6 +135,9 @@ Somente uma validação funcional posterior poderá decidir:
 Plano e cobrança
 → plano atual + uso + limites
 → comparação voluntária
+→ mostrar plano atual
+→ mostrar benefício herdado
+→ mostrar somente o delta adicional do plano superior
 → seleção afirmativa, sem pré-seleção
 → revisão da contratação
 → pagador + beneficiário
@@ -143,15 +151,38 @@ Plano e cobrança
 plano ativo
 → downgrade ou cancelamento
 → revisar consequência e data aplicável
+→ mostrar exatamente quais capacidades deixam de estar disponíveis
 → confirmar
 → registrar estado futuro
 ```
+
+### 5.1 Regra de comparação incremental
+
+A comparação terá duas leituras complementares:
+
+1. **matriz geral**, para entender todos os planos;
+2. **delta incremental**, para responder o que o plano superior acrescenta ao plano imediatamente inferior.
+
+A apresentação deverá utilizar a lógica:
+
+```text
+plano superior
+= tudo o que permanece do plano anterior
++ capacidades adicionais exclusivas deste degrau
+```
+
+A comparação incremental não deverá repetir benefícios herdados como se fossem novos.
+
+Quando o plano atual da pessoa, Coletivo ou Organização for conhecido, a interface deverá também resumir o **delta direto entre o plano atual e o plano escolhido**, mesmo quando houver um ou mais degraus intermediários.
+
+No downgrade, a mesma regra será invertida: a revisão deverá destacar **somente as capacidades que deixarão de estar disponíveis ou terão limite reduzido**, sem sugerir perda de direitos universais ou de dados protegidos.
 
 Quando houver alternativa Enterprise/Scale:
 
 ```text
 comparar plano
 → necessidade contratual
+→ mostrar capacidades adicionais candidatas
 → solicitar proposta comercial
 → processo comercial governado
 ```
@@ -168,7 +199,39 @@ Não haverá checkout autônomo fictício para Enterprise/Scale.
 | Guivos Plus | R$ 24,90 | R$ 249,00 | sem cota semanal fixa, sujeito a uso justo |
 | Guivos Pro | R$ 49,90 | R$ 499,00 | sem cota semanal fixa, com análise ampliada |
 
-### 6.2 Estado Free com cota esgotada
+### 6.2 Comparação incremental da Pessoa
+
+#### Plus em relação ao Free
+
+O Guivos Plus herda os benefícios do Free e acrescenta:
+
+- correspondências personalizadas completas sem cota semanal fixa, sujeitas a uso justo;
+- explicação completa sobre a relação entre oportunidade e contexto autorizado;
+- filtros avançados;
+- alertas personalizados;
+- histórico ampliado;
+- planos salvos, lembretes e acompanhamento ampliado;
+- exportação padrão;
+- capacidade ampliada de processamento e inteligência;
+- integrações limitadas quando autorizadas;
+- suporte ampliado.
+
+#### Pro em relação ao Plus
+
+O Guivos Pro herda os benefícios do Plus e acrescenta:
+
+- análises aprofundadas e comparativas;
+- organização autorizada entre diferentes áreas da jornada;
+- maior capacidade de processamento e inteligência;
+- relatórios pessoais ampliados;
+- exportações avançadas;
+- integrações autorizadas ampliadas;
+- suporte prioritário;
+- acesso antecipado a capacidades aprovadas para teste, quando aplicável e informado.
+
+Nenhum desses incrementos altera relevância orgânica, garante resultado ou transforma pagamento em condição para evolução.
+
+### 6.3 Estado Free com cota esgotada
 
 Após duas correspondências completas abertas na semana, uma correspondência adicional poderá manter visíveis:
 
@@ -194,7 +257,7 @@ Devem permanecer acessíveis no mesmo estado:
 - `Ver no Mapa`;
 - `Conhecer o Guivos Plus`.
 
-### 6.3 Compra e mudança
+### 6.4 Compra e mudança
 
 A Pessoa deverá revisar antes da confirmação:
 
@@ -206,6 +269,7 @@ A Pessoa deverá revisar antes da confirmação:
 - beneficiário;
 - início informado;
 - método autorizado em simulação;
+- benefícios adicionais em relação ao plano atual;
 - downgrade e cancelamento;
 - ausência de promessa de resultado.
 
@@ -220,7 +284,63 @@ A Pessoa deverá revisar antes da confirmação:
 | Impacto | R$ 249,90 | R$ 2.499,00 | 15 | 15 | 20 | sim |
 | Enterprise | sob consulta | contrato anual | capacidade contratada | capacidade contratada | capacidade contratada | sim |
 
-### 7.2 Limite no Coletivo Livre
+### 7.2 Comparação incremental do Coletivo
+
+#### Gestão em relação ao Livre
+
+O Coletivo Gestão preserva as capacidades do Livre e acrescenta ou amplia:
+
+- até cinco administradores;
+- quatro atividades por mês;
+- quatro oportunidades por mês;
+- até seis publicações simultaneamente ativas;
+- atividades e oportunidades gratuitas ou pagas;
+- inscrições, cobrança e gestão de vagas;
+- cupons e condições comerciais básicas;
+- categorias e indicadores ampliados;
+- exportação básica;
+- integrações limitadas;
+- gestão ampliada de participantes;
+- suporte prioritário.
+
+#### Impacto em relação ao Gestão
+
+O Coletivo Impacto preserva as capacidades do Gestão e acrescenta ou amplia:
+
+- até quinze administradores;
+- quinze atividades por mês;
+- quinze oportunidades por mês;
+- até vinte publicações simultaneamente ativas;
+- ofertas patrocinadas ou financiadas;
+- até cinco núcleos ou programas;
+- categorias completas;
+- indicadores históricos e de impacto;
+- gestão de parceiros e patrocinadores;
+- cupons e condições ampliados;
+- exportação completa;
+- integrações avançadas;
+- dashboards ampliados;
+- suporte especializado.
+
+#### Enterprise em relação ao Impacto
+
+O Coletivo Enterprise preserva as capacidades aplicáveis do Impacto e acrescenta capacidades dimensionadas por contrato:
+
+- atividades, oportunidades e publicações sem limite padrão fixo, sujeitos à capacidade contratada;
+- categorias completas e personalizáveis;
+- múltiplos núcleos, unidades, territórios e programas;
+- administradores e papéis conforme contrato;
+- API, SSO e integrações dedicadas;
+- integração com Power BI;
+- dashboards e indicadores personalizados;
+- importação e exportação em massa;
+- domínio ou ambiente configurável, quando tecnicamente aprovado;
+- treinamento e implantação assistida;
+- gerente dedicado;
+- SLA;
+- governança e suporte contratados.
+
+### 7.3 Limite no Coletivo Livre
 
 Ao atingir cota ou tentar publicação paga, a superfície deverá preservar:
 
@@ -233,7 +353,7 @@ Ao atingir cota ou tentar publicação paga, a superfície deverá preservar:
 
 O upgrade não poderá ser apresentado como aumento de relevância orgânica.
 
-### 7.3 Enterprise
+### 7.4 Enterprise
 
 Enterprise utiliza solicitação de proposta comercial e dimensionamento; não recebe checkout autônomo fictício.
 
@@ -247,7 +367,44 @@ Enterprise utiliza solicitação de proposta comercial e dimensionamento; não r
 | Business Growth | R$ 799,00 | R$ 7.990,00 | 50/mês | 75 | 10 | até 5 |
 | Business Scale | a partir de R$ 1.990,00 | contrato anual | capacidade contratada | capacidade contratada | conforme contrato | múltiplas |
 
-### 8.2 Limite e alternativas
+### 8.2 Comparação incremental da Organização
+
+#### Business Growth em relação ao Business Start
+
+Business Growth preserva as capacidades do Start e acrescenta ou amplia:
+
+- até dez administradores;
+- até cinco unidades;
+- até cinquenta novas oportunidades ou programas por mês;
+- até setenta e cinco publicações simultaneamente ativas;
+- até dez Coletivos relacionados administráveis;
+- analytics avançados e agregados;
+- automações;
+- exportação completa;
+- integrações limitadas;
+- exportação compatível com Power BI;
+- gestão ampliada de elegibilidade;
+- suporte prioritário.
+
+#### Business Scale em relação ao Business Growth
+
+Business Scale preserva as capacidades aplicáveis do Growth e acrescenta capacidades dimensionadas por contrato:
+
+- capacidade de publicações dimensionada;
+- múltiplas unidades;
+- administradores e Coletivos relacionados conforme contrato;
+- governança avançada;
+- SSO;
+- API;
+- integração dedicada com Power BI;
+- dashboards personalizados;
+- exportações automatizadas;
+- implantação assistida;
+- atendimento dedicado;
+- SLA;
+- condições comerciais e faturamento personalizados.
+
+### 8.3 Limite e alternativas
 
 Quando a Organização atingir capacidade, deverão estar visíveis:
 
@@ -257,7 +414,7 @@ Quando a Organização atingir capacidade, deverão estar visíveis:
 - arquivar, agendar ou manter rascunho quando aplicável;
 - separação entre capacidade comercial e relevância das oportunidades.
 
-### 8.3 Business Scale
+### 8.4 Business Scale
 
 Scale utiliza processo comercial solicitado pela Organização, com proposta e capacidade contratada. Não há checkout autônomo simulado como se preço e escopo fossem autoatendimento definitivo.
 
@@ -297,7 +454,8 @@ A experiência deverá:
 
 - ficar na mesma área de Plano e cobrança;
 - mostrar estado atual e estado futuro;
-- explicar capacidades que deixarão de estar disponíveis;
+- explicar capacidades que deixarão de estar disponíveis ou terão limite reduzido;
+- usar a comparação incremental invertida para não ocultar consequências materiais;
 - preservar dados, direitos e acesso gratuito conforme políticas aplicáveis;
 - exigir confirmação afirmativa;
 - emitir evidência/registro da solicitação.
@@ -310,49 +468,64 @@ A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 
 ![Placa de fluxo de planos e pagamentos da Pessoa](../assets/wireframes/uxa-100-person-plans-payments-flow-board.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-person-plans-payments-flow-board.svg)
+[Visualizar SVG do fluxo](../assets/wireframes/uxa-100-person-plans-payments-flow-board.svg)
 
-A placa contém:
+![Comparação incremental dos planos da Pessoa](../assets/wireframes/uxa-100-person-plan-incremental-benefits-comparison.svg)
+
+[Visualizar SVG da comparação incremental](../assets/wireframes/uxa-100-person-plan-incremental-benefits-comparison.svg)
+
+O conjunto contém:
 
 1. Plano e cobrança no Guivos Free;
 2. correspondência personalizada adicional em prévia limitada;
-3. comparação Free / Plus / Pro;
-4. revisão de contratação;
-5. pagamento confirmado;
-6. pagamento não confirmado;
-7. downgrade/cancelamento como continuidade prevista.
+3. comparação geral Free / Plus / Pro;
+4. comparação incremental `Free → Plus` e `Plus → Pro`;
+5. revisão de contratação;
+6. pagamento confirmado;
+7. pagamento não confirmado;
+8. downgrade/cancelamento como continuidade prevista.
 
 ### 12.2 Coletivo — computador
 
 ![Placa de fluxo de planos e pagamentos do Coletivo](../assets/wireframes/uxa-100-collective-plans-payments-flow-board.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-payments-flow-board.svg)
+[Visualizar SVG do fluxo](../assets/wireframes/uxa-100-collective-plans-payments-flow-board.svg)
 
-A placa contém:
+![Comparação incremental dos planos do Coletivo](../assets/wireframes/uxa-100-collective-plan-incremental-benefits-comparison.svg)
+
+[Visualizar SVG da comparação incremental](../assets/wireframes/uxa-100-collective-plan-incremental-benefits-comparison.svg)
+
+O conjunto contém:
 
 1. Plano e cobrança no Coletivo Livre;
 2. limite/publicação paga não incluída;
-3. comparação Livre / Gestão / Impacto / Enterprise;
-4. revisão de contratação Gestão;
-5. pagamento confirmado ou não confirmado;
-6. downgrade/cancelamento;
-7. Enterprise via proposta comercial.
+3. comparação geral Livre / Gestão / Impacto / Enterprise;
+4. comparação incremental `Livre → Gestão → Impacto → Enterprise`;
+5. revisão de contratação Gestão;
+6. pagamento confirmado ou não confirmado;
+7. downgrade/cancelamento;
+8. Enterprise via proposta comercial.
 
 ### 12.3 Organização — computador
 
 ![Placa de fluxo de planos e pagamentos da Organização](../assets/wireframes/uxa-100-organization-plans-payments-flow-board.svg)
 
-[Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-payments-flow-board.svg)
+[Visualizar SVG do fluxo](../assets/wireframes/uxa-100-organization-plans-payments-flow-board.svg)
 
-A placa contém:
+![Comparação incremental dos planos da Organização](../assets/wireframes/uxa-100-organization-plan-incremental-benefits-comparison.svg)
+
+[Visualizar SVG da comparação incremental](../assets/wireframes/uxa-100-organization-plan-incremental-benefits-comparison.svg)
+
+O conjunto contém:
 
 1. Plano e cobrança no Business Start;
 2. capacidade e alternativas;
-3. comparação Start / Growth / Scale;
-4. revisão de contratação Growth;
-5. pagamento confirmado ou não confirmado;
-6. downgrade/cancelamento;
-7. Scale por proposta comercial.
+3. comparação geral Start / Growth / Scale;
+4. comparação incremental `Start → Growth → Scale`;
+5. revisão de contratação Growth;
+6. pagamento confirmado ou não confirmado;
+7. downgrade/cancelamento;
+8. Scale por proposta comercial.
 
 ## 13. Critérios para futura validação funcional
 
@@ -371,7 +544,11 @@ A materialização somente poderá ser promovida quando uma validação posterio
 11. Enterprise/Scale não fingem checkout autônomo;
 12. assinatura não se confunde com taxa transacional;
 13. pagamento não promete melhor relevância, confiança ou evolução;
-14. parâmetros financeiros ainda indefinidos permanecem indefinidos.
+14. parâmetros financeiros ainda indefinidos permanecem indefinidos;
+15. cada plano superior explicita os benefícios/capacidades adicionais em relação ao plano imediatamente inferior;
+16. benefícios herdados não são repetidos como se fossem incrementais;
+17. quando há plano atual conhecido, o delta direto entre plano atual e plano escolhido é compreensível;
+18. no downgrade, as capacidades perdidas ou reduzidas são apresentadas antes da confirmação.
 
 ## 14. Fora do escopo
 
@@ -394,6 +571,6 @@ A UXA-100 não:
 
 A UXA-100 é **programa e materialização inicial candidata**.
 
-Os três SVGs são placas estruturais de baixa fidelidade e permanecem **não validados funcionalmente** até uma frente posterior específica.
+Os seis SVGs — três placas de fluxo e três comparações incrementais — permanecem **não validados funcionalmente** até uma frente posterior específica.
 
 Sua existência documental não constitui integração à `main`, lançamento, implementação ou operação.
