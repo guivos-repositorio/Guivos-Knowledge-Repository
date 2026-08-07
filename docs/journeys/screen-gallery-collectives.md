@@ -1,15 +1,17 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -157,6 +159,6 @@ GKR-SURF-COL-002 — Visão Geral do Responsável
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-Nenhuma dessas superfícies é criada pela UXA-083.
+Nenhuma dessas superfícies é criada pela UXA-085. O status `active` desta página promove apenas o instrumento documental de inspeção e preserva todas as ausências registradas.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)

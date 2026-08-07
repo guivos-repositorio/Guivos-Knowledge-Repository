@@ -2,9 +2,9 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.10.0
+version: 2.11.0
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
@@ -37,6 +37,7 @@ related:
   - UXA-082
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -50,7 +51,7 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.57.0
+  - ROADMAP-12.58.0
   - M7.72
 normative: true
 ---
@@ -66,13 +67,14 @@ Este registro declara o estado global vigente quando o incremento correspondente
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | galeria reformulada e revalidada com ressalvas no escopo documental de inspeção | UXA-084; M7.72 |
+| Marco | galeria visual e matriz promovidas após revalidação com ressalvas | UXA-085; M7.72 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
 | Registros granulares | 40 entradas e 37 transições em instrumentos `active` | UXA-076 a UXA-080 |
-| Galeria visual | `draft` 0.4.0; aprovada com ressalvas e aguardando promoção controlada | UXA-081 a UXA-084 |
-| Matriz por SVG | 97 arquivos associados a 23 perfis; `draft` 0.2.0; aprovada com ressalvas | UXA-083; UXA-084 |
-| Jornadas Integradas | visão geral e instrumentos ativos; Pessoa, Coletivo e Organização em `draft` | UXA-070 a UXA-084 |
+| Galeria visual | `active` 0.5.0; promoção documental com ressalvas preservadas | UXA-081 a UXA-085 |
+| Páginas da galeria | cinco páginas `active` 0.3.0; instrumentos de inspeção | UXA-085 |
+| Matriz por SVG | 97 arquivos associados a 23 perfis; `active` 0.3.0; ressalvas preservadas | UXA-083 a UXA-085 |
+| Jornadas Integradas | visão geral e instrumentos ativos; Pessoa, Coletivo e Organização em `draft` | UXA-070 a UXA-085 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -85,7 +87,7 @@ Este registro declara o estado global vigente quando o incremento correspondente
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-As UXA-070 a UXA-084 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
+As UXA-070 a UXA-085 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -96,7 +98,7 @@ Permanecem candidatos, sem promoção automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-A galeria não comprova preço, demanda, conversão, receita ou viabilidade.
+A promoção da galeria não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual
 
@@ -120,22 +122,20 @@ UXA-070 a UXA-075 — Jornadas Integradas estruturadas e promovidas seletivament
 → UXA-082 — promoção bloqueada e lacunas repriorizadas
 → UXA-083 — galeria reformulada e matriz por SVG criada
 → UXA-084 — galeria e matriz revalidadas com ressalvas
+→ UXA-085 — galeria, cinco páginas e matriz promovidas como instrumentos documentais
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 7. Resultado da UXA-084
+## 7. Resultado da UXA-085
 
-A revalidação confirmou:
+Foram promovidos exclusivamente:
 
-1. ordem funcional da Pessoa compatível com os registros;
-2. separação entre Home pública e Tela Hoje;
-3. rota navegável entre as cinco páginas;
-4. associação individual dos 97 SVGs a 23 perfis;
-5. versões e resumos sincronizados;
-6. ausência, parcialidade e indeterminação preservadas.
+- Galeria Visual Integrada → `active` 0.5.0;
+- cinco páginas visuais → `active` 0.3.0;
+- Matriz de Rastreabilidade Visual por SVG → `active` 0.3.0.
 
-Veredito: **aprovada com ressalvas no escopo documental de inspeção**.
+A promoção preserva o veredito e as ressalvas da UXA-084. Ela não valida jornadas ponta a ponta, não promove superfícies ou transições e não altera nenhum SVG.
 
 ## 8. Ressalvas vigentes
 
@@ -143,7 +143,7 @@ Veredito: **aprovada com ressalvas no escopo documental de inspeção**.
 - 14 responsabilidades permanecem sem SVG dedicado;
 - dez estados da UXA-055 continuam sem validação específica;
 - continuidades entre pacotes permanecem parciais ou não examinadas;
-- aprovação da galeria não equivale a validação de jornada.
+- instrumento visual `active` não equivale a jornada validada.
 
 ## 9. Prioridade operacional de Coletivos
 
@@ -155,7 +155,7 @@ Veredito: **aprovada com ressalvas no escopo documental de inspeção**.
 | 4 | Central de Atualizações | GKR-SURF-PER-107 | ausente |
 | 5 | Início do Participante | GKR-SURF-PER-108 | reformulação pendente |
 
-Nenhuma superfície foi iniciada.
+Nenhuma superfície foi iniciada pela UXA-085.
 
 ## 10. Dívidas de validação separadas
 
@@ -172,16 +172,16 @@ Nenhuma superfície foi iniciada.
 | visão geral das Jornadas Integradas | `active` |
 | Pessoa, Coletivo e Organização | `draft` |
 | handoffs e cenários | `active` |
-| catálogo integrado | `active` 0.9.0 |
-| galeria visual | `draft` 0.4.0; aprovada com ressalvas |
-| cinco páginas da galeria | `draft` 0.2.0; revalidadas como conjunto |
-| matriz por SVG | `draft` 0.2.0; aprovada com ressalvas |
-| lacunas | `active` 0.9.0 |
+| catálogo integrado | `active` 0.10.0 |
+| galeria visual | `active` 0.5.0; ressalvas preservadas |
+| cinco páginas da galeria | `active` 0.3.0; instrumentos de inspeção |
+| matriz por SVG | `active` 0.3.0; ressalvas preservadas |
+| lacunas | `active` 0.10.0 |
 | registro de superfícies | `active` 0.3.0 |
 | registro de transições | `active` 0.3.0 |
 | quatro detalhamentos | `active` 0.2.0 |
 | protótipo, aplicação, motor e testes | não iniciados |
-| Engenharia de Produto | não iniciada |
+| Engenharia de Produto | pausada antes de W0-01 |
 
 ## 12. Preservações
 
@@ -189,10 +189,10 @@ Nenhuma superfície foi iniciada.
 - perfil de rastreabilidade não valida transição;
 - superfície validada não equivale a jornada validada;
 - promoção do instrumento não promove os objetos;
-- galeria e matriz permanecem `draft` até promoção específica.
+- status `active` da galeria e matriz limita-se ao escopo documental revalidado.
 
 ## 13. Próxima transição autorizável
 
-**UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação.**
+**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo.**
 
-A UXA-085 não foi iniciada e depende de autorização separada.
+A UXA-086 não foi iniciada e depende de autorização separada.

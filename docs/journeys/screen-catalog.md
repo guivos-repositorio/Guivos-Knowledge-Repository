@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 related:
   - UXA-005
   - UXA-070
@@ -19,6 +19,7 @@ related:
   - UXA-082
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -81,25 +82,20 @@ O status `active` aprova os instrumentos, não os objetos registrados.
 | fronteira intencionalmente sem tela | 1 |
 | **Total** | **40** |
 
-## 5. Resultado da UXA-084
+## 5. Resultado da UXA-084 e promoção da UXA-085
 
-A galeria reformulada foi **aprovada com ressalvas no escopo documental de inspeção**.
+A galeria reformulada foi **aprovada com ressalvas no escopo documental de inspeção** pela UXA-084 e promovida como instrumento documental pela UXA-085.
 
-Foram confirmados:
+Foram preservados:
 
 1. ordem funcional da Pessoa compatível com os registros;
 2. Home pública e Tela Hoje separadas;
 3. rota contínua entre as cinco páginas;
 4. 97 associações individuais a 23 perfis;
-5. versões e resumos sincronizados;
-6. preservação explícita de estados parciais, ausentes e não examinados.
+5. estados parciais, ausentes e não examinados;
+6. dez estados da UXA-055 sem validação específica.
 
-Ressalvas:
-
-- perfis agregam estados com responsabilidade comum;
-- 14 responsabilidades não possuem SVG dedicado;
-- dez estados da UXA-055 permanecem sem validação específica;
-- continuidades entre pacotes não foram validadas ponta a ponta.
+A promoção não modifica cobertura, validação ou maturidade dos objetos catalogados.
 
 ## 6. Prioridade de materialização preservada
 
@@ -123,11 +119,11 @@ Nenhuma dessas superfícies foi iniciada.
 
 ## 8. Estado vigente
 
-- catálogo: `active` 0.9.0;
-- galeria: `draft` 0.4.0, aprovada com ressalvas;
-- cinco páginas visuais: `draft` 0.2.0, revalidadas como conjunto;
-- matriz por SVG: `draft` 0.2.0, aprovada com ressalvas;
+- catálogo: `active` 0.10.0;
+- galeria: `active` 0.5.0, promovida com ressalvas preservadas;
+- cinco páginas visuais: `active` 0.3.0;
+- matriz por SVG: `active` 0.3.0;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 
-A promoção da galeria e da matriz depende de ato governado separado.
+O status dos instrumentos visuais não promove superfícies, transições ou jornadas.
