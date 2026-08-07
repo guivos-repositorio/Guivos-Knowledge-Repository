@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.2.0
+version: 1.3.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -12,6 +12,7 @@ related:
   - GKR-P0-REBASELINE-001
   - GKR-P1-REBASELINE-001
   - GKR-CHANGELOG-UXA-085-001
+  - GKR-CHANGELOG-UXA-086-001
 normative: false
 ---
 
@@ -25,11 +26,12 @@ Changelogs registram alterações. Eles não substituem `GKR-STATE-001`, autorid
 
 ## 2. Baseline vigente
 
-- [Registro do Estado Atual — 2.11.0 e M7.72](current-state-register.md)
+- [Registro do Estado Atual — 2.12.0 e M7.73](current-state-register.md)
 - [Rebaseline do P0 após UXA-084](p0-post-uxa084-rebaseline-2026-08-06.md)
 - [Rebaseline do P1 após UXA-084](p1-post-uxa084-rebaseline-2026-08-06.md)
 - [Registro da reconstrução do P1](changelog-p1-post-uxa084-2026-08-06.md)
 - [UXA-085 — Promoção Controlada da Galeria](changelog-uxa-085-2026-08-07.md)
+- [UXA-086 — Materialização da Visão Geral do Responsável](changelog-uxa-086-2026-08-07.md)
 
 Os documentos do P0 datados de 5 de agosto de 2026 permanecem fotografias históricas e devem ser lidos sob a qualificação do rebaseline pós-UXA-084.
 
@@ -64,8 +66,8 @@ Novos registros deverão:
 |---|---|
 | ledger raiz | preservado como histórico legado |
 | índice atual | ativo |
-| estado transversal | `GKR-STATE-001` 2.11.0 |
-| marco | M7.72 |
-| última UXA integrada após merge | UXA-085 |
-| próxima UXA | UXA-086, não iniciada |
+| estado transversal | `GKR-STATE-001` 2.12.0 |
+| marco | M7.73 |
+| última UXA integrada após merge | UXA-086 |
+| próxima UXA | UXA-087, não iniciada |
 | mudança arquitetural por este índice | nenhuma |

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -15,6 +15,7 @@ related:
   - UXA-083
   - UXA-084
   - UXA-085
+  - UXA-086
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -27,27 +28,26 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne os 97 SVGs canônicos para inspeção humana de assertividade, sequência, coerência e cobertura.
+Esta seção reúne os 98 SVGs canônicos para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A organização documental foi reformulada pela UXA-083, revalidada pela UXA-084 e promovida como instrumento documental pela UXA-085. Nenhum SVG é alterado, nenhuma tela é criada e nenhuma continuidade passa a ser considerada validada por proximidade visual.
+A organização documental foi reformulada pela UXA-083, revalidada pela UXA-084 e promovida como instrumento documental pela UXA-085. A UXA-086 acrescenta uma nova referência de baixa fidelidade para `GKR-SURF-COL-002`, sem validar funcionalmente a superfície ou a continuidade associada.
 
-## 2. Veredito da UXA-084
+## 2. Estado do instrumento
 
-**Aprovada com ressalvas no escopo documental de inspeção.**
-
-A galeria permite localizar, percorrer e comparar os 97 SVGs sem ocultar ausências ou declarar jornadas completas. A UXA-085 promove somente o instrumento de inspeção, preservando integralmente as ressalvas.
+A galeria permanece `active` como instrumento de inspeção. Esse status não significa que todos os SVGs estejam funcionalmente validados.
 
 Ressalvas vigentes:
 
-- 97 SVGs compartilham 23 perfis de rastreabilidade;
-- 14 responsabilidades continuam sem SVG dedicado;
+- 98 SVGs compartilham 24 perfis de rastreabilidade;
+- 13 responsabilidades continuam sem SVG dedicado;
 - uma fronteira permanece corretamente sem tela;
 - dez estados da UXA-055 continuam sem validação funcional específica;
+- o SVG da UXA-086 também aguarda validação funcional específica;
 - continuidades entre pacotes permanecem parciais ou não examinadas.
 
 ## 3. Instrumentos de inspeção
 
-- [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md) — uma linha para cada um dos 97 arquivos;
+- [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md) — uma linha para cada um dos 98 arquivos;
 - [Catálogo Integrado de Telas](screen-catalog.md) — visão agregada por família;
 - [Registro Granular de Superfícies e Estados](surface-registry.md);
 - [Registro Granular de Transições](transition-registry.md);
@@ -61,12 +61,12 @@ A rota abaixo organiza a leitura documental. Ela não representa uma única jorn
 |---:|---|---:|---|
 | 1 | [Pessoa — Fundação, Entrada, Compreensão e Recorrência](screen-gallery-person.md) | 19 | Home → início protegido → expressão → compreensão → Tela Hoje |
 | 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 | publicação institucional → mapa → lista → detalhe → fronteira |
-| 3 | [Coletivos](screen-gallery-collectives.md) | 23 | descoberta → perfil → solicitação → pendência → operação ausente |
+| 3 | [Coletivos](screen-gallery-collectives.md) | 24 | descoberta → perfil → solicitação → pendência → Visão Geral do Responsável |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → ativação → exposição identificada → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total** | **97** | **87 validados localmente; 10 pendentes** |
+|  | **Total** | **98** | **87 validados funcionalmente; 11 pendentes** |
 
-Cada página contém navegação anterior, índice, matriz e próxima página quando aplicável. As cinco páginas são instrumentos `active` 0.3.0; esse status não valida as continuidades que exibem.
+As páginas são instrumentos documentais ativos. A presença de um SVG não valida automaticamente a continuidade que ele representa.
 
 ## 5. Sequências funcionais destacadas
 
@@ -106,30 +106,29 @@ explorar e buscar
 → revisão e solicitação
 → Solicitação Pendente
 → Visão Geral do Responsável
-→ gestão de solicitações
+→ gestão completa de solicitações
 → Meus Coletivos
 → Central de Atualizações
 → Início do Participante
 ```
 
-A galeria possui SVGs apenas até Solicitação Pendente e uma referência inicial de Coletivo.
+A galeria agora possui referência visual para a Visão Geral do Responsável. A gestão completa de solicitações e as superfícies posteriores permanecem ausentes ou parciais.
 
 ## 6. Cobertura confirmada
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes e referenciados | 97 |
-| associações individuais | 97 |
-| perfis de rastreabilidade | 23 |
-| com validação funcional de origem | 87 |
-| pendentes de validação específica | 10 |
-| IDs com referência visual direta ou agrupada | 25 de 40 |
-| responsabilidades sem SVG dedicado | 14 |
+| SVGs existentes e referenciados | 98 |
+| associações individuais | 98 |
+| perfis de rastreabilidade | 24 |
+| com validação funcional registrada | 87 |
+| pendentes de validação específica | 11 |
+| IDs com referência visual direta ou agrupada | 26 de 40 |
+| responsabilidades sem SVG dedicado | 13 |
 | fronteira documental sem tela por definição | 1 |
 
 ## 7. Responsabilidades sem SVG dedicado
 
-- `GKR-SURF-COL-002` — Visão Geral do Responsável;
 - `GKR-SURF-COL-003` — gestão completa de solicitações;
 - `GKR-SURF-PER-106` — Meus Coletivos;
 - `GKR-SURF-PER-107` — Central de Atualizações;
@@ -139,24 +138,24 @@ A galeria possui SVGs apenas até Solicitação Pendente e uma referência inici
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 8. Resultado dos achados da UXA-082
+## 8. Efeito da UXA-086
 
-| Achado | Resultado da revalidação |
-|---|---|
-| ordem incorreta da Pessoa | resolvido |
-| Home e Tela Hoje agrupadas | resolvido |
-| ausência de rota entre páginas | resolvido |
-| ausência de rastreabilidade por arquivo | resolvido com ressalva de perfis agregados |
-| versões divergentes | resolvido |
+`GKR-SURF-COL-002` deixa de constar como responsabilidade sem SVG dedicado. A nova referência:
+
+- está associada ao perfil `R24`;
+- possui autoridade em UXA-014, UXA-056, UXA-058 e UXA-059;
+- permanece sem validação funcional específica;
+- não fecha `GKR-TRN-112`;
+- não cria `GKR-SURF-COL-003`.
 
 ## 9. Estado
 
-A galeria está `active` 0.5.0 após a promoção controlada da UXA-085. As cinco páginas visuais estão `active` 0.3.0 e a matriz por SVG está `active` 0.3.0.
+A galeria está `active` 0.6.0. A página de Coletivos está `active` 0.4.0 e a matriz por SVG está `active` 0.4.0.
 
-O status `active` aprova somente esses instrumentos documentais de inspeção no escopo revalidado. Não valida jornadas ponta a ponta, não promove superfícies ou transições, não fecha lacunas e não inicia protótipo ou Engenharia de Produto.
+O status `active` aprova somente os instrumentos documentais de inspeção. Não valida jornadas ponta a ponta, não promove superfícies ou transições e não inicia protótipo ou Engenharia de Produto.
 
 ## 10. Próxima transição possível
 
-**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+**UXA-087 — Validação Funcional da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
 
-A UXA-086 não é iniciada pela promoção da galeria.
+A UXA-087 não é iniciada por esta atualização da galeria.

@@ -8,25 +8,26 @@ A declaração oficial está no [Registro do Estado Atual](project/current-state
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.11.0 |
+| Registro | `GKR-STATE-001` 2.12.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.72 |
-| Última frente integrada | UXA-085 — promoção controlada dos instrumentos visuais |
-| Galeria visual | `active` 0.5.0; ressalvas preservadas |
-| Páginas visuais | cinco páginas `active` 0.3.0 |
-| Matriz por SVG | `active` 0.3.0; 97 SVGs e 23 perfis de rastreabilidade |
-| Estados sem validação específica | 10 |
-| Responsabilidades sem SVG dedicado | 14 |
+| Marco | M7.73 |
+| Última frente integrada | UXA-086 — materialização da Visão Geral do Responsável do Coletivo |
+| Galeria visual | `active` 0.6.0; 98 SVGs |
+| Matriz por SVG | `active` 0.4.0; 98 associações e 24 perfis |
+| Validações funcionais registradas | 87 |
+| Pendentes de validação específica | 11 |
+| Responsabilidades sem SVG dedicado | 13 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente | UXA-086, não iniciada |
+| Próxima frente | UXA-087, não iniciada |
 
-A galeria permite localizar, percorrer e comparar os ativos visuais sem apresentar lacunas não comprovadas como concluídas. Seu status `active` aprova somente o instrumento documental de inspeção no escopo revalidado pela UXA-084.
+A UXA-086 materializa `GKR-SURF-COL-002`, mas não a valida funcionalmente e não cria a gestão completa de solicitações.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-085](experience-architecture/uxa-047-085-index.md)
+- [Índice UXA-047 a UXA-086](experience-architecture/uxa-047-086-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
+- [UXA-086 — Visão Geral do Responsável](experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Jornadas Integradas](journeys/index.md)
@@ -39,4 +40,4 @@ A galeria permite localizar, percorrer e comparar os ativos visuais sem apresent
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-086, Engenharia de Produto, P2–P9, materialização de lacunas, publicação externa adicional, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza UXA-087, Engenharia de Produto, P2–P9, materialização de `GKR-SURF-COL-003`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.

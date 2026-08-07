@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.78.0
+version: 0.79.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -40,12 +40,13 @@ related:
   - UXA-083
   - UXA-084
   - UXA-085
+  - UXA-086
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - M7.72
+  - M7.73
 normative: false
 ---
 
@@ -78,13 +79,15 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes | 97 |
-| associações individuais | 97 |
-| perfis de rastreabilidade | 23 |
-| validados nos pacotes de origem | 87 |
-| pendentes de validação específica | 10 |
-| IDs com referência visual | 25 de 40 |
-| responsabilidades sem SVG dedicado | 14 |
+| SVGs existentes | 98 |
+| associações individuais | 98 |
+| perfis de rastreabilidade | 24 |
+| com validação funcional registrada | 87 |
+| pendentes de validação específica | 11 |
+| IDs com referência visual | 26 de 40 |
+| responsabilidades sem SVG dedicado | 13 |
+
+Os pendentes são os dez estados residuais da UXA-055 e a nova referência da UXA-086.
 
 ## 4. Decisões estruturais preservadas
 
@@ -97,6 +100,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 - publicidade não compra relevância, reputação ou autoridade;
 - correção documental não equivale a aprovação funcional;
 - promoção do instrumento não promove os objetos;
+- materialização não equivale a validação funcional;
 - presença ou ordem na galeria não valida jornada.
 
 ## 5. Evolução das Jornadas Integradas
@@ -109,6 +113,7 @@ UXA-082 — galeria não aprovada e lacunas repriorizadas
 UXA-083 — galeria reformulada e matriz individual criada
 UXA-084 — galeria e matriz revalidadas com ressalvas
 UXA-085 — instrumentos visuais promovidos com ressalvas preservadas
+UXA-086 — Visão Geral do Responsável do Coletivo materializada
 ```
 
 Participantes estruturais:
@@ -119,17 +124,18 @@ Participantes estruturais:
 
 Visitante, solicitante, responsável, representante, anunciante e patrocinador permanecem papéis contextuais.
 
-## 6. Resultado da UXA-085
+## 6. Resultado da UXA-086
 
-[UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação](uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md) promove exclusivamente os instrumentos documentais aprovados pela UXA-084.
+[UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo](uxa-086-collective-responsible-overview-low-fidelity-wireframe.md) materializa a primeira referência desktop de `GKR-SURF-COL-002`.
 
-Foram promovidos:
+Foram adicionados:
 
-1. Galeria Visual Integrada → `active` 0.5.0;
-2. cinco páginas visuais → `active` 0.3.0;
-3. Matriz de Rastreabilidade Visual por SVG → `active` 0.3.0.
+1. um wireframe desktop de baixa fidelidade;
+2. contexto explícito de representação e autoridade;
+3. sínteses de momento, atenção principal, vínculos, comunicação, proteção e governança;
+4. um ponto de entrada para a futura gestão de solicitações.
 
-A promoção não valida jornadas ponta a ponta, não modifica SVGs, não promove superfícies ou transições e não fecha lacunas.
+A UXA-086 não valida funcionalmente a nova superfície, não materializa `GKR-SURF-COL-003`, não valida `GKR-TRN-112` e não promove a jornada do Coletivo.
 
 ## 7. Instrumentos vigentes
 
@@ -137,37 +143,41 @@ A promoção não valida jornadas ponta a ponta, não modifica SVGs, não promov
 |---|---|
 | visão geral das Jornadas Integradas | `active` |
 | Pessoa, Coletivo e Organização | `draft` |
-| catálogo integrado | `active` 0.10.0 |
-| galeria visual | `active` 0.5.0; ressalvas preservadas |
-| cinco páginas visuais | `active` 0.3.0; instrumentos de inspeção |
-| matriz por SVG | `active` 0.3.0; ressalvas preservadas |
-| lacunas | `active` 0.10.0 |
-| registro de superfícies | `active` 0.3.0 |
-| registro de transições | `active` 0.3.0 |
-| detalhamentos granulares | `active` 0.2.0 |
+| catálogo integrado | `active` 0.11.0 |
+| galeria visual | `active` 0.6.0 |
+| página de Coletivos | `active` 0.4.0 |
+| demais páginas visuais | `active` 0.3.0 |
+| matriz por SVG | `active` 0.4.0 |
+| lacunas | `active` 0.11.0 |
+| registro de superfícies | `active` 0.4.0 |
+| registro de transições | `active` 0.4.0 |
+| detalhamento do Coletivo | `active` 0.3.0 |
+| demais detalhamentos | `active` 0.2.0 |
 
 ## 8. Ressalvas vigentes
 
 - perfis agregados não substituem análise exclusiva por estado;
-- 14 responsabilidades permanecem sem SVG dedicado;
+- 13 responsabilidades permanecem sem SVG dedicado;
 - dez estados da UXA-055 permanecem sem validação específica;
+- o SVG da UXA-086 permanece sem validação funcional específica;
 - continuidades entre pacotes permanecem parciais ou não examinadas;
-- promoção de instrumento não equivale a jornada validada.
+- materialização não equivale a jornada validada.
 
-## 9. Prioridade futura de materialização
+## 9. Prioridade de Coletivos
 
 ```text
-GKR-SURF-COL-002 — Visão Geral do Responsável
+GKR-SURF-COL-002 — materializada; validação pendente
 → GKR-SURF-COL-003 — gestão completa de solicitações
 → GKR-SURF-PER-106 — Meus Coletivos
 → GKR-SURF-PER-107 — Central de Atualizações
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-Nenhuma superfície foi iniciada pela UXA-085.
+A UXA-086 não autoriza o avanço automático para `COL-003`.
 
 ## 10. Dívidas de validação
 
+- UXA-086 — Visão Geral do Responsável;
 - compreensão inicial → Tela Hoje;
 - publicação → mapa, lista e detalhe;
 - dez estados residuais da UXA-055;
@@ -176,10 +186,10 @@ Nenhuma superfície foi iniciada pela UXA-085.
 
 ## 11. Limites
 
-A UXA-085 não altera SVGs, contratos, protótipo ou implementação; não promove jornadas e não fecha lacunas.
+A UXA-086 não cria protótipo, implementação, teste com pessoas, componentes técnicos ou Engenharia de Produto.
 
 ## 12. Próxima evolução possível
 
-**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+**UXA-087 — Validação Funcional da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
 
-A UXA-086 não foi iniciada.
+A UXA-087 não foi iniciada.

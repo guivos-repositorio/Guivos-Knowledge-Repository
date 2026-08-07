@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -10,6 +10,7 @@ depends_on:
   - UXA-083
   - UXA-084
   - UXA-085
+  - UXA-086
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -24,15 +25,13 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 97 SVGs. Cada perfil declara superfície, entrada, saída, retorno ou interrupção, lacuna e validação, sem inventar precisão quando vários estados compartilham a mesma responsabilidade.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 98 SVGs. Cada perfil declara superfície, entrada, saída, retorno ou interrupção, lacuna e validação, sem inventar precisão quando vários estados compartilham a mesma responsabilidade.
 
-## 2. Veredito da UXA-084
+## 2. Estado do instrumento
 
-**Aprovada com ressalvas no escopo documental de rastreabilidade.**
+A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adiciona uma associação individual e um perfil específico para a Visão Geral do Responsável do Coletivo.
 
-As 97 associações individuais foram confirmadas. A utilização de 23 perfis é aceita para inspeção e cobertura, mas não substitui análise semântica exclusiva de cada estado visual nem valida transições ou jornadas.
-
-A UXA-085 promove esta matriz somente como instrumento documental vigente, preservando o conteúdo e todas as ressalvas do parecer.
+As 98 associações individuais estão registradas em 24 perfis. Perfis de rastreabilidade continuam sendo instrumentos documentais: não substituem análise semântica exclusiva de cada estado visual e não validam transições ou jornadas.
 
 ## 3. Perfis de rastreabilidade
 
@@ -48,7 +47,7 @@ A UXA-085 promove esta matriz somente como instrumento documental vigente, prese
 | R08 | GKR-SURF-PER-203 | GKR-TRN-204; GKR-TRN-211 | GKR-TRN-205 | retornar ao mapa ou à lista | efeito externo não validado | UXA-012 |
 | R09 | GKR-SURF-ORG-001 | entrada institucional protegida | GKR-TRN-201 | cancelar ação e retornar à visão geral | matriz institucional completa | UXA-017 |
 | R10 | GKR-SURF-ORG-002; GKR-SURF-ORG-003 | GKR-TRN-201 | GKR-TRN-202; GKR-TRN-203 | editar, retirar, pausar ou encerrar conforme estado | publicação → descoberta não examinada | UXA-013 |
-| R11 | GKR-SURF-COL-001 | GKR-TRN-102 ou entrada protegida do responsável | GKR-TRN-103; continuidade interna não materializada | retornar à busca ou sair do contexto protegido | Visão Geral do Responsável ausente | UXA-018; UXA-063 |
+| R11 | GKR-SURF-COL-001 | GKR-TRN-102 ou entrada protegida do responsável | GKR-TRN-103; continuidade interna parcial | retornar à busca ou sair do contexto protegido | continuidade entre presença pública e gestão | UXA-018; UXA-063 |
 | R12 | GKR-SURF-PER-101; GKR-SURF-PER-102 | origem de exploração | GKR-TRN-101; GKR-TRN-102 | limpar filtros, voltar ou refazer busca | continuidade entre descoberta e perfil | UXA-061 |
 | R13 | GKR-SURF-PER-103; GKR-SURF-COL-001 | GKR-TRN-102 | GKR-TRN-103 | retornar aos resultados | handoff para solicitação | UXA-063 |
 | R14 | GKR-SURF-PER-104 | GKR-TRN-103 | GKR-TRN-104 | cancelar e retornar ao perfil | destino operacional do responsável ausente | UXA-065 |
@@ -61,8 +60,9 @@ A UXA-085 promove esta matriz somente como instrumento documental vigente, prese
 | R21 | GKR-SURF-COM-004 | campanha ativa ou encerrada | retorno à gestão de campanha | reconciliar, revisar atribuição ou sair | atribuição e continuidade operacional | UXA-049 |
 | R22 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-054 |
 | R23 | GKR-SURF-COM-005 | GKR-TRN-305 | não examinada | depende do estado; desfazer, contestar ou continuar não validados | dez estados residuais da UXA-055 | pendente de validação específica |
+| R24 | GKR-SURF-COL-002 | acesso protegido do responsável | GKR-TRN-112 como saída documental para GKR-SURF-COL-003 | permanecer na visão geral ou retornar ao contexto anterior | destino operacional GKR-SURF-COL-003 ausente | pendente de validação funcional específica; UXA-086 é somente materialização |
 
-## 4. Associação individual dos 97 SVGs
+## 4. Associação individual dos 98 SVGs
 
 | SVG | Perfil |
 |---|---|
@@ -117,6 +117,7 @@ A UXA-085 promove esta matriz somente como instrumento documental vigente, prese
 | `uxa-066-collective-pending-request-refused-mobile.svg` | R15 |
 | `uxa-066-collective-pending-request-cancelled-mobile.svg` | R15 |
 | `uxa-066-collective-pending-request-expired-mobile.svg` | R15 |
+| `uxa-086-collective-responsible-overview-desktop.svg` | R24 |
 | `uxa-040-opportunity-boost-eligibility-desktop.svg` | R16 |
 | `uxa-040-opportunity-boost-objective-audience-desktop.svg` | R16 |
 | `uxa-040-opportunity-boost-budget-schedule-desktop.svg` | R16 |
@@ -166,17 +167,17 @@ A UXA-085 promove esta matriz somente como instrumento documental vigente, prese
 
 ## 5. Totais e limites
 
-- SVGs registrados: **97**;
-- associações individuais: **97**;
-- perfis documentais: **23**;
-- com validação de origem registrada: **87**;
-- pendentes de validação específica: **10**;
-- arquivos visuais alterados pelas UXA-083, UXA-084 e UXA-085: **0**.
+- SVGs registrados: **98**;
+- associações individuais: **98**;
+- perfis documentais: **24**;
+- com validação funcional registrada: **87**;
+- pendentes de validação específica: **11**;
+- arquivos visuais adicionados pela UXA-086: **1**.
 
-A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.3.0 após a promoção controlada da UXA-085, mantendo as ressalvas do parecer da UXA-084.
+A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.4.0 e registra explicitamente que `R24` ainda depende de validação funcional.
 
 ## 6. Próxima transição possível
 
-**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+**UXA-087 — Validação Funcional da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
 
-A UXA-086 não é iniciada pela promoção desta matriz.
+A UXA-087 não é iniciada por esta matriz.

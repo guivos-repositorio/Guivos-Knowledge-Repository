@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -12,6 +12,7 @@ related:
   - UXA-083
   - UXA-084
   - UXA-085
+  - UXA-086
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -29,13 +30,14 @@ explorar e buscar
 → Perfil Público
 → revisão e solicitação
 → Solicitação Pendente
-→ decisão do responsável
+→ Visão Geral do Responsável
+→ gestão completa de solicitações
 → Meus Coletivos
 → Central de Atualizações
 → Início do Participante
 ```
 
-A galeria cobre visualmente somente a sequência até Solicitação Pendente. As superfícies posteriores permanecem ausentes.
+A galeria cobre visualmente a sequência até a Visão Geral do Responsável. A nova referência da UXA-086 ainda não possui validação funcional específica. As superfícies posteriores permanecem ausentes ou parciais.
 
 ## 2. Descoberta e busca
 
@@ -149,16 +151,25 @@ A galeria cobre visualmente somente a sequência até Solicitação Pendente. As
 
 ![](../assets/wireframes/uxa-016-collective-home-mobile.svg){ width="320" loading="lazy" }
 
-## 7. Dependências sem SVG
+## 7. Visão Geral do Responsável
+
+**Cobertura:** 1 SVG · ID: `GKR-SURF-COL-002` · origem: `UXA-086` · validação: **pendente de pacote específico**
+
+### `uxa-086-collective-responsible-overview-desktop.svg`
+
+![](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg){ width="720" loading="lazy" }
+
+A referência materializa a superfície inicial de gestão e o ponto de entrada documental para solicitações. Ela não materializa a fila completa de `GKR-SURF-COL-003` e não valida `GKR-TRN-112`.
+
+## 8. Dependências sem SVG dedicado
 
 ```text
-GKR-SURF-COL-002 — Visão Geral do Responsável
-→ GKR-SURF-COL-003 — gestão completa de solicitações
+GKR-SURF-COL-003 — gestão completa de solicitações
 → GKR-SURF-PER-106 — Meus Coletivos
 → GKR-SURF-PER-107 — Central de Atualizações
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-Nenhuma dessas superfícies é criada pela UXA-085. O status `active` desta página promove apenas o instrumento documental de inspeção e preserva todas as ausências registradas.
+`GKR-SURF-COL-002` deixa de estar visualmente ausente, mas permanece com validação funcional pendente. As demais ausências não são iniciadas pela UXA-086.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)
