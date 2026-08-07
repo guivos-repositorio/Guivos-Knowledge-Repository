@@ -1,52 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe móvel do Início do Participante no Coletivo</title>
-  <desc id="desc">Referência principal do contexto interno de um participante, com propósito, vínculo, momento, ação compartilhada, consulta e autonomia sem transformar pertencimento em obrigação.</desc>
+  <desc id="desc">Referência principal do contexto interno de um participante, com propósito, vínculo atual revalidado, momento, ação compartilhada, consulta e autonomia sem transformar pertencimento em obrigação.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
   <text x="20" y="57" font-family="Arial, sans-serif" font-size="8" text-decoration="underline">‹ Central de Atualizações</text>
   <text x="20" y="91" font-family="Arial, sans-serif" font-size="20" font-weight="700">Ciclistas da Serra</text>
-  <text x="20" y="111" font-family="Arial, sans-serif" font-size="8">Coletivo local · participação confirmada</text>
+  <text x="20" y="111" font-family="Arial, sans-serif" font-size="8">Coletivo local · vínculo atual: participante confirmado</text>
   <text x="370" y="91" text-anchor="end" font-family="Arial, sans-serif" font-size="14">⋯</text>
 
-  <rect x="20" y="130" width="350" height="96" rx="10" fill="#f5f5f5" stroke="#999999"/>
+  <rect x="20" y="130" width="350" height="105" rx="10" fill="#f5f5f5" stroke="#999999"/>
   <text x="32" y="153" font-family="Arial, sans-serif" font-size="10" font-weight="700">Propósito e seu vínculo</text>
   <text x="32" y="173" font-family="Arial, sans-serif" font-size="8">Pedalar em comunidade com segurança, acolhimento e apoio entre pessoas.</text>
-  <text x="32" y="193" font-family="Arial, sans-serif" font-size="8">Você participa como membro · nenhuma função aceita no momento.</text>
-  <text x="32" y="213" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Gerenciar participação, notificações, pausa, saída e proteção</text>
+  <text x="32" y="193" font-family="Arial, sans-serif" font-size="8">Papel: participante · nenhuma função aceita nem autoridade atribuída.</text>
+  <text x="32" y="211" font-family="Arial, sans-serif" font-size="7">Acesso revalidado nesta entrada; estado antigo não preserva permissões.</text>
+  <text x="32" y="228" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Gerenciar participação, notificações, pausa, saída e proteção</text>
 
-  <rect x="20" y="240" width="350" height="111" rx="10" fill="#ffffff" stroke="#555555" stroke-width="1.5"/>
-  <text x="32" y="263" font-family="Arial, sans-serif" font-size="10" font-weight="700">Como está este momento</text>
-  <text x="32" y="283" font-family="Arial, sans-serif" font-size="8">O pedal de sábado está confirmado; o ponto de encontro foi alterado.</text>
-  <text x="32" y="303" font-family="Arial, sans-serif" font-size="8">A mudança veio da coordenação e possui alerta de segurança vigente.</text>
-  <text x="32" y="323" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver fonte e atualização</text>
-  <text x="151" y="323" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Corrigir ou contestar</text>
-  <text x="32" y="342" font-family="Arial, sans-serif" font-size="7">Esta síntese não substitui a Central nem marca atualizações como lidas.</text>
+  <rect x="20" y="249" width="350" height="111" rx="10" fill="#ffffff" stroke="#555555" stroke-width="1.5"/>
+  <text x="32" y="272" font-family="Arial, sans-serif" font-size="10" font-weight="700">Como está este momento</text>
+  <text x="32" y="292" font-family="Arial, sans-serif" font-size="8">O pedal de sábado está confirmado; o ponto de encontro foi alterado.</text>
+  <text x="32" y="312" font-family="Arial, sans-serif" font-size="8">A mudança veio da coordenação e possui alerta de segurança vigente.</text>
+  <text x="32" y="332" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver fonte e atualização</text>
+  <text x="151" y="332" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Informar problema ou contestar</text>
+  <text x="32" y="351" font-family="Arial, sans-serif" font-size="7">Esta síntese não substitui a Central; ações usam fonte e estado vigentes.</text>
 
-  <rect x="20" y="365" width="350" height="119" rx="10" fill="#ffffff" stroke="#999999"/>
-  <text x="32" y="388" font-family="Arial, sans-serif" font-size="10" font-weight="700">Ação compartilhada</text>
-  <text x="32" y="409" font-family="Arial, sans-serif" font-size="11" font-weight="700">Pedal da Serra · sábado, 07:00</text>
-  <text x="32" y="429" font-family="Arial, sans-serif" font-size="8">Finalidade: pedal comunitário · participação opcional.</text>
-  <text x="32" y="449" font-family="Arial, sans-serif" font-size="8">Sua presença não está confirmada e não é inferida pelo vínculo.</text>
-  <text x="32" y="471" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver atividade, condições e alternativas</text>
+  <rect x="20" y="374" width="350" height="119" rx="10" fill="#ffffff" stroke="#999999"/>
+  <text x="32" y="397" font-family="Arial, sans-serif" font-size="10" font-weight="700">Ação compartilhada</text>
+  <text x="32" y="418" font-family="Arial, sans-serif" font-size="11" font-weight="700">Pedal da Serra · sábado, 07:00</text>
+  <text x="32" y="438" font-family="Arial, sans-serif" font-size="8">Finalidade: pedal comunitário · participação opcional.</text>
+  <text x="32" y="458" font-family="Arial, sans-serif" font-size="8">Sua presença não está confirmada e não é inferida pelo vínculo.</text>
+  <text x="32" y="480" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver atividade, condições e alternativas</text>
 
-  <rect x="20" y="498" width="350" height="110" rx="10" fill="#f7f7f7" stroke="#888888"/>
-  <text x="32" y="521" font-family="Arial, sans-serif" font-size="10" font-weight="700">Decisão e consulta abertas</text>
-  <text x="32" y="542" font-family="Arial, sans-serif" font-size="8">Consulta: próximo roteiro mensal · contribuição voluntária até 15 ago.</text>
-  <text x="32" y="562" font-family="Arial, sans-serif" font-size="8">Quem decide: coordenação, conforme regra vigente do Coletivo.</text>
-  <text x="32" y="582" font-family="Arial, sans-serif" font-size="7">Participar da consulta não cria função, autoridade ou obrigação futura.</text>
-  <text x="32" y="600" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender consulta, alternativas e autoridade</text>
+  <rect x="20" y="507" width="350" height="110" rx="10" fill="#f7f7f7" stroke="#888888"/>
+  <text x="32" y="530" font-family="Arial, sans-serif" font-size="10" font-weight="700">Decisão e consulta abertas</text>
+  <text x="32" y="551" font-family="Arial, sans-serif" font-size="8">Consulta: próximo roteiro mensal · contribuição voluntária até 15 ago.</text>
+  <text x="32" y="571" font-family="Arial, sans-serif" font-size="8">Contribuir é opcional · quem decide: coordenação, conforme regra vigente.</text>
+  <text x="32" y="591" font-family="Arial, sans-serif" font-size="7">Participar da consulta não cria função, autoridade ou obrigação futura.</text>
+  <text x="32" y="609" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Entender consulta, alternativas e autoridade</text>
 
-  <text x="20" y="640" font-family="Arial, sans-serif" font-size="11" font-weight="700">Áreas do Coletivo</text>
+  <text x="20" y="645" font-family="Arial, sans-serif" font-size="11" font-weight="700">Áreas do Coletivo</text>
   <g font-family="Arial, sans-serif" font-size="7" text-anchor="middle">
-    <rect x="20" y="653" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="74" y="674">Atividades</text>
-    <rect x="141" y="653" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="195" y="674">Pessoas e papéis</text>
-    <rect x="262" y="653" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="316" y="674">Decisões</text>
-    <rect x="20" y="697" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="74" y="718">Recursos</text>
-    <rect x="141" y="697" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="195" y="718">Comunicação</text>
-    <rect x="262" y="697" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="316" y="718">Regras e proteção</text>
+    <rect x="20" y="658" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="74" y="679">Atividades</text>
+    <rect x="141" y="658" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="195" y="679">Pessoas e papéis</text>
+    <rect x="262" y="658" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="316" y="679">Decisões</text>
+    <rect x="20" y="702" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="74" y="723">Recursos</text>
+    <rect x="141" y="702" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="195" y="723">Comunicação</text>
+    <rect x="262" y="702" width="108" height="34" rx="8" fill="#ffffff" stroke="#999999"/><text x="316" y="723">Regras e proteção</text>
   </g>
-  <text x="20" y="752" font-family="Arial, sans-serif" font-size="7">Os atalhos abrem áreas próprias; este Início não replica canais, discussões ou decisões.</text>
+  <text x="20" y="754" font-family="Arial, sans-serif" font-size="7">Atalhos abrem áreas próprias; retorno não muda leitura; vínculo atual governa acesso.</text>
 
   <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
   <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817" font-weight="700">Eu</text></g>
