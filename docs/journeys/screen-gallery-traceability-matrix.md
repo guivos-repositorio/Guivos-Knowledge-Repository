@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.11.0
+version: 0.12.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -19,6 +19,7 @@ depends_on:
   - UXA-092
   - UXA-093
   - UXA-094
+  - UXA-095
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -31,11 +32,11 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **107 SVGs**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **108 SVGs**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
 
 ## 2. Estado do instrumento
 
-A UXA-094 preserva as 107 associações e 27 perfis. `R26` e `R27` passam a refletir as versões reformuladas/validadas de `PER-106` e `PER-107`, e `TRN-110` passa a integralmente validada.
+A UXA-095 preserva as 107 associações anteriores, adiciona uma associação para o novo `PER-108` e cria `R28`. `R27` passa a representar a Central corrente reformulada e `TRN-111` parcial.
 
 ## 3. Perfis de rastreabilidade
 
@@ -66,10 +67,11 @@ A UXA-094 preserva as 107 associações e 27 perfis. `R26` e `R27` passam a refl
 | R23 | COM-005 | TRN-305 | não examinada | conforme estado | 10 estados UXA-055 | pendente |
 | R24 | COL-002 | representação válida | TRN-112 | permanecer/retornar | fechada | UXA-087; TRN-112 UXA-090 |
 | R25 | COL-003 | TRN-105/107/112 | TRN-106/108/109 | voltar/aguardar/interromper | handoffs fechados nos gates | UXA-089/090/092 |
-| R26 | PER-106 | TRN-108 ou acesso recorrente | **TRN-110** | trocar categoria/voltar | P0B separado | **UXA-092; gatilho revalidado UXA-094** |
-| R27 | PER-107 | **TRN-110** ou atualização autorizada | PER-105/PER-106; TRN-111 futuro | retornar/ajustar preferência | PER-108/TRN-111; P0B/P1 | **UXA-094; TRN-110 integralmente validada** |
+| R26 | PER-106 | TRN-108 ou acesso recorrente | TRN-110 | trocar categoria/voltar | P0B separado | UXA-092; gatilho revalidado UXA-094 |
+| R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; **TRN-111** | retornar/ajustar preferência | SVG corrente e TRN-111 exigem revalidação | **UXA-094 anterior; versão UXA-095 pendente** |
+| R28 | **PER-108** | **TRN-111** | áreas internas próprias do Coletivo | voltar à Central; pausar/sair conforme fluxo próprio | validação funcional e integrada; estados P0B/P1 | **pendente — UXA-095 materialização** |
 
-## 4. Associação individual dos 107 SVGs
+## 4. Associação individual dos 108 SVGs
 
 | SVG | Perfil |
 |---|---|
@@ -134,6 +136,7 @@ A UXA-094 preserva as 107 associações e 27 perfis. `R26` e `R27` passam a refl
 | `uxa-088-collective-request-management-insufficient-authority-desktop.svg` | R25 |
 | `uxa-091-my-collectives-mobile.svg` | R26 |
 | `uxa-093-collective-updates-center-mobile.svg` | R27 |
+| `uxa-095-collective-participant-home-mobile.svg` | **R28** |
 | `uxa-040-opportunity-boost-eligibility-desktop.svg` | R16 |
 | `uxa-040-opportunity-boost-objective-audience-desktop.svg` | R16 |
 | `uxa-040-opportunity-boost-budget-schedule-desktop.svg` | R16 |
@@ -183,16 +186,16 @@ A UXA-094 preserva as 107 associações e 27 perfis. `R26` e `R27` passam a refl
 
 ## 5. Totais e limites
 
-- SVGs registrados: **107**;
-- associações individuais: **107**;
-- perfis documentais: **27**;
-- com validação funcional vigente: **97**;
-- pendentes de validação específica: **10**, exclusivamente UXA-055;
-- arquivos visuais novos na UXA-094: **0**;
-- arquivos existentes reformulados pela UXA-094: **2**.
+- SVGs registrados: **108**;
+- associações individuais: **108**;
+- perfis documentais: **28**;
+- com validação funcional vigente: **96**;
+- pendentes de validação específica: **12** = 10 UXA-055 + PER-107 corrente + PER-108;
+- arquivos visuais novos na UXA-095: **1**;
+- arquivos existentes reformulados pela UXA-095: **1**.
 
 ## 6. Próxima transição possível
 
-**UXA-095 — Materialização/Reformulação Controlada do Início do Participante (`GKR-SURF-PER-108`) e Refinamento de `GKR-TRN-111`**, mediante autorização separada.
+**UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**, mediante autorização separada.
 
-A UXA-095 não é iniciada por esta matriz.
+A UXA-096 não é iniciada por esta matriz.
