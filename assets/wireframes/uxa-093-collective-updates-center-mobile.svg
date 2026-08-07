@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe móvel da Central de Atualizações</title>
-  <desc id="desc">Superfície pessoal consolidada para identificar o que mudou nos Coletivos, de onde veio, sua natureza, autoridade, necessidade de ação e prazo legítimo, com segurança acima de atenção comum e preferências sem ocultar avisos essenciais.</desc>
+  <desc id="desc">Superfície pessoal consolidada para identificar o que mudou nos Coletivos, com entrada explícita e opcional para o contexto interno do Coletivo sem alterar leitura, vínculo ou autoridade.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
@@ -48,14 +48,15 @@
   <text x="32" y="566" font-family="Arial, sans-serif" font-size="11" font-weight="700">Ciclistas da Serra</text>
   <text x="32" y="585" font-family="Arial, sans-serif" font-size="8">Sua participação foi confirmada · hoje, 08:15</text>
   <text x="32" y="604" font-family="Arial, sans-serif" font-size="8">Ação necessária: nenhuma · vínculo já registrado</text>
-  <text x="32" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver o vínculo em Meus Coletivos</text>
-  <text x="220" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ajustar este tipo</text>
+  <text x="32" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Abrir início do Coletivo</text>
+  <text x="156" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver vínculo</text>
+  <text x="225" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ajustar este tipo</text>
   <text x="350" y="546" text-anchor="end" font-family="Arial, sans-serif" font-size="7">lida</text>
 
   <rect x="20" y="650" width="350" height="94" rx="10" fill="#f7f7f7" stroke="#888888"/>
   <text x="32" y="672" font-family="Arial, sans-serif" font-size="10" font-weight="700">Leitura não é decisão</text>
   <text x="32" y="691" font-family="Arial, sans-serif" font-size="8">Marcar como lido não confirma presença, concordância nem conclui uma ação.</text>
-  <text x="32" y="710" font-family="Arial, sans-serif" font-size="8">A ordem prioriza segurança, ação, prazo e preferência — nunca engajamento.</text>
+  <text x="32" y="710" font-family="Arial, sans-serif" font-size="8">Abrir o Coletivo não altera papel, autoridade, presença ou disponibilidade.</text>
   <text x="32" y="729" font-family="Arial, sans-serif" font-size="7">Ações revalidam o estado do objeto; repetir abertura ou leitura não duplica efeitos.</text>
 
   <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>

@@ -8907,10 +8907,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-efeito-da-uxa-094" class="md-nav__link">
+  <a href="#4-efeito-da-uxa-095" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Efeito da UXA-094
+        4. Efeito da UXA-095
       
     </span>
   </a>
@@ -9182,39 +9182,39 @@
 <td>autenticação/vínculo; abrir Central não altera vínculo nem leitura</td>
 <td>trocar categoria, voltar ou não prosseguir</td>
 <td>referência UXA-092 reformulada no gatilho por UXA-094</td>
-<td><strong>validada; TRN-108 e TRN-110 integralmente validadas</strong></td>
+<td>validada; TRN-108 e TRN-110 integralmente validadas</td>
 <td>P0B adicional separado</td>
-<td>não é feed ou Central; gatilho corrente revalidado por UXA-094</td>
+<td>não é feed ou Central</td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-107</td>
-<td>UXA-093/094 — <code>uxa-093-collective-updates-center-mobile.svg</code></td>
-<td>0.2.0</td>
+<td>UXA-093/094/095 — <code>uxa-093-collective-updates-center-mobile.svg</code></td>
+<td>0.3.0</td>
 <td>PER-106 ou atualização legitimamente recebida</td>
-<td>compreender mudança e decidir se exige ação</td>
-<td>PER-105/PER-106 quando aplicável; retorno seguro; PER-108 somente futuramente</td>
-<td>origem, tipo, contexto, autoridade, fonte quando material, data, leitura, ação, prazo, preferência</td>
-<td>vínculo/autorização pertinente; ações revalidam estado canônico</td>
-<td>retornar; ajustar preferência não essencial; leitura não conclui ação</td>
-<td>versão UXA-093 reformulada e validada por UXA-094</td>
-<td><strong>validada; TRN-110 integralmente validada; TRN-111 ausente</strong></td>
-<td>PER-108 e P0B/P1 separados</td>
-<td>triagem, não feed; segurança precede ação comum; leitura idempotente</td>
+<td>compreender mudança e escolher ação ou contexto interno</td>
+<td>PER-105/PER-106 quando aplicável; <code>Abrir início do Coletivo</code> → PER-108</td>
+<td>origem, tipo, contexto, autoridade, fonte, data, leitura, ação, prazo, preferência e vínculo</td>
+<td>vínculo/autorização pertinente; abrir PER-108 não altera leitura/vínculo/papel</td>
+<td>retornar; ajustar preferência; não prosseguir</td>
+<td>SVG UXA-094 reformulado por UXA-095</td>
+<td><strong>contrato previamente validado; SVG corrente pendente; TRN-111 parcial</strong></td>
+<td>revalidação do SVG + handoff</td>
+<td>triagem, não feed; nova entrada interna é neutra</td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-108</td>
-<td>UXA-059</td>
-<td>indeterminado</td>
-<td>vínculo e atualizações</td>
-<td>indeterminado até reformulação</td>
-<td>experiência interna</td>
-<td>indeterminado</td>
-<td>vínculo e papel</td>
-<td>indeterminado</td>
-<td>referência anterior não promovida</td>
-<td>ausente</td>
-<td>reformulação/materialização e TRN-111</td>
-<td>não representa tela vigente</td>
+<td>UXA-095 — <code>uxa-095-collective-participant-home-mobile.svg</code></td>
+<td>0.1.0</td>
+<td>vínculo existente e contexto selecionado em PER-107</td>
+<td>compreender propósito, vínculo, momento, atividade, consulta e escolhas internas</td>
+<td>áreas próprias do Coletivo; retorno para Central</td>
+<td>propósito, estado de participação, papel, momento, fonte, atividade, consulta, atalhos e controles de autonomia</td>
+<td>vínculo válido e permissões contextuais; função/autoridade/presença nunca inferidas</td>
+<td>voltar, não participar, pausar, sair, contestar ou ajustar notificações</td>
+<td>referência histórica UXA-016 não promovida; nova referência UXA-095</td>
+<td><strong>materializada; TRN-111 parcial</strong></td>
+<td>validação funcional e integrada</td>
+<td>síntese interna, não feed nem réplica dos canais</td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-201</td>
@@ -9265,8 +9265,8 @@
 </table>
 <h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
 <p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<h2 id="4-efeito-da-uxa-094">4. Efeito da UXA-094<a class="headerlink" href="#4-efeito-da-uxa-094" title="Permanent link">&para;</a></h2>
-<p>A UXA-094 reforma os SVGs correntes de <code>PER-106</code> e <code>PER-107</code>, revalida ambos no escopo afetado e fecha <code>TRN-110</code> como ligação integralmente validada. <code>PER-108/TRN-111</code> permanecem ausentes na forma vigente.</p>
+<h2 id="4-efeito-da-uxa-095">4. Efeito da UXA-095<a class="headerlink" href="#4-efeito-da-uxa-095" title="Permanent link">&para;</a></h2>
+<p>A UXA-095 materializa <code>PER-108</code> e reforma minimamente o SVG corrente de <code>PER-107</code> para tornar <code>TRN-111</code> observável. A validação anterior de <code>PER-107</code> não é aplicada automaticamente à nova versão visual; <code>PER-108</code> também aguarda validação. <code>TRN-111</code> permanece parcial até exame integrado posterior.</p>
 <h2 id="5-estado">5. Estado<a class="headerlink" href="#5-estado" title="Permanent link">&para;</a></h2>
 <p>O detalhamento está <code>active</code> como parte integrante do registro granular. O status não promove a Jornada da Pessoa como completa nem comprova implementação.</p>
 
