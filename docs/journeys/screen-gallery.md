@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -20,6 +20,7 @@ related:
   - UXA-093
   - UXA-094
   - UXA-095
+  - UXA-096
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -34,7 +35,7 @@ normative: false
 
 Esta seção reúne os **108 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-095 adiciona uma referência móvel de `PER-108 — Início do Participante` e reforma minimamente `PER-107` para tornar `TRN-111` observável.
+A UXA-096 reforma somente as referências vigentes de `PER-107` e `PER-108`, revalida ambas e fecha `TRN-111` sem acrescentar SVG.
 
 ## 2. Estado do instrumento
 
@@ -45,11 +46,10 @@ Ressalvas vigentes:
 - 108 SVGs compartilham 28 perfis de rastreabilidade;
 - 9 responsabilidades continuam sem SVG dedicado;
 - uma fronteira permanece corretamente sem tela;
-- **96 SVGs possuem validação funcional vigente**;
-- **12 aguardam validação específica**: 10 UXA-055 + PER-107 corrente + PER-108;
-- `TRN-110` permanece integralmente validada;
-- `TRN-111` está **parcial**;
-- sete transições do trecho anterior de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `112`.
+- **98 SVGs possuem validação funcional vigente**;
+- **10 aguardam validação específica**, exclusivamente UXA-055;
+- `TRN-110` e `TRN-111` estão integralmente validadas;
+- oito transições do trecho governado de Coletivos estão integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`.
 
 ## 3. Instrumentos de inspeção
 
@@ -68,7 +68,7 @@ Ressalvas vigentes:
 | 3 | [Coletivos](screen-gallery-collectives.md) | **34** | descoberta → solicitação → gestão → Meus Coletivos → Central → Início |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total** | **108** | **96 validados; 12 pendentes** |
+|  | **Total** | **108** | **98 validados; 10 pendentes** |
 
 ## 5. Sequência de Coletivos
 
@@ -81,9 +81,9 @@ explorar e buscar
 → resultado aprovado
 → Meus Coletivos
 → TRN-110 integralmente validada
-→ Central de Atualizações
-→ TRN-111 parcial
-→ Início do Participante materializado
+→ Central de Atualizações validada
+→ TRN-111 integralmente validada
+→ Início do Participante validado
 ```
 
 ## 6. Cobertura confirmada
@@ -93,8 +93,8 @@ explorar e buscar
 | SVGs existentes e referenciados | **108** |
 | associações individuais | **108** |
 | perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **96** |
-| pendentes de validação específica | **12** |
+| com validação funcional vigente | **98** |
+| pendentes de validação específica | **10** |
 | IDs com referência visual | **30 de 40** |
 | responsabilidades sem SVG dedicado | **9** |
 | fronteira documental sem tela | 1 |
@@ -106,24 +106,22 @@ explorar e buscar
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 8. Efeito da UXA-095
+## 8. Efeito da UXA-096
 
-- +1 SVG novo e 1 SVG existente reformulado;
-- 108 SVGs, 28 perfis e 30 IDs com referência visual;
-- validações vigentes: 97 → **96** pela reformulação pendente de PER-107;
-- pendências: 10 → **12**;
-- `PER-108` materializado;
-- `TRN-111` ausente → parcial;
+- 0 SVGs novos e 2 SVGs existentes reformulados;
+- 108 SVGs, 28 perfis e 30 IDs com referência visual preservados;
+- validações vigentes: 96 → **98**;
+- pendências: 12 → **10**, exclusivamente UXA-055;
+- `PER-107` e `PER-108` validados na versão corrente;
+- `TRN-111` parcial → integralmente validada;
 - nenhuma jornada promovida.
 
 ## 9. Estado
 
-A galeria está `active` 0.14.0. A página de Coletivos está `active` 0.12.0 e a matriz por SVG será `active` 0.12.0 no pacote proposto pela UXA-095.
+A galeria está `active` 0.15.0. A página de Coletivos está `active` 0.13.0 e a matriz por SVG está `active` 0.13.0 no pacote proposto pela UXA-096.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
 ## 10. Próxima transição possível
 
-**UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**, mediante autorização separada.
-
-A UXA-096 não foi iniciada.
+A próxima priorização deverá partir das lacunas remanescentes. **UXA-097 não foi iniciada.**

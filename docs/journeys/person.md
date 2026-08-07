@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -23,6 +23,7 @@ related:
   - UXA-093
   - UXA-094
   - UXA-095
+  - UXA-096
 normative: false
 ---
 
@@ -64,8 +65,8 @@ Explorar Coletivos
 | revisão e solicitação | validado | UXA-064 | UXA-065 | parcial |
 | Solicitação Pendente | validado | UXA-066 | UXA-067; estado aprovado UXA-092 | TRN-105/106/107/109 por UXA-090; TRN-108 por UXA-092 |
 | Meus Coletivos | validado | UXA-091/092/094 | UXA-092/094 | TRN-108 e TRN-110 integralmente validadas |
-| Central de Atualizações | **contrato validado; SVG corrente pendente** | UXA-093/094/095 | UXA-094 no SVG anterior | TRN-110 integral; **TRN-111 parcial** |
-| Início do Participante | **materializado** | **UXA-095** | validação pendente | **TRN-111 parcial** |
+| Central de Atualizações | **validado** | UXA-093/094/095/096 | UXA-094; versão corrente UXA-096 | TRN-110 e TRN-111 integralmente validadas |
+| Início do Participante | **validado** | UXA-095/096 | **UXA-096** | **TRN-111 integralmente validada** |
 
 ## 3. Continuidade pós-aprovação validada
 
@@ -73,19 +74,21 @@ Explorar Coletivos
 
 ## 4. Meus Coletivos → Central validada
 
-`PER-106 → Ver atualizações → PER-107` permanece integralmente validada em `GKR-TRN-110`. A UXA-095 não altera esse contrato.
+`PER-106 → Ver atualizações → PER-107` permanece integralmente validada em `GKR-TRN-110`.
 
-## 5. Central → Início materializada
+## 5. Central → Início validada
 
 ```text
 PER-107
 → Pessoa escolhe “Abrir início do Coletivo”
+→ vínculo atual e permissão são revalidados
+→ histórico não preserva acesso
 → nenhum vínculo, leitura, papel, presença ou autoridade é alterado
 → PER-108
-→ mesmo Coletivo e vínculo permanecem em contexto
+→ mesmo Coletivo e vínculo lógico permanecem em contexto
 ```
 
-A sequência é **parcial**. A origem visual foi reformulada e o destino é novo; ambos exigem validação antes de `TRN-111` ser examinada ponta a ponta.
+`GKR-TRN-111` está **integralmente validada** pela UXA-096. Retorno, concorrência, estado obsoleto e repetição foram examinados no escopo documental.
 
 ## 6. Proteções preservadas
 
@@ -97,24 +100,23 @@ A sequência é **parcial**. A origem visual foi reformulada e o destino é novo
 - `Meus Coletivos` não utiliza ranking ou pontuação de dedicação;
 - a Central não é feed social único;
 - `lido` não equivale a consentimento ou efeito substantivo;
+- evento histórico não concede acesso interno;
 - abrir o Início não confirma presença, disponibilidade ou função;
 - consulta não cria obrigação de resposta nem autoridade;
-- `PER-108` sintetiza e encaminha para áreas próprias, sem replicá-las.
+- `PER-108` sintetiza e encaminha para áreas próprias, sem replicá-las;
+- estado canônico vigente prevalece sobre renderização anterior.
 
 ## 7. Estado da vista
 
 Esta vista permanece `draft` porque:
 
 - compreensão inicial → Tela Hoje não foi validada como conjunto;
-- `PER-107` corrente e `PER-108` aguardam validação específica;
-- `TRN-111` permanece parcial;
 - estados P0B adicionais permanecem separados;
+- áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
 
 O status `draft` não invalida referências locais e handoffs específicos já validados.
 
 ## 8. Próxima evolução possível
 
-A próxima frente autorizável para Coletivos é **UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**.
-
-A UXA-096 não foi iniciada.
+A continuidade governada de Coletivos está fechada até o Início do Participante. A próxima priorização deverá partir das lacunas remanescentes; **UXA-097 não foi iniciada**.

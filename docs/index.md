@@ -2,34 +2,34 @@
 
 O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-## Estado vigente proposto pela UXA-095
+## Estado vigente proposto pela UXA-096
 
 A declaração oficial está no [Registro do Estado Atual](project/current-state-register.md).
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.21.0 |
+| Registro | `GKR-STATE-001` 2.22.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.82 |
-| Última frente proposta | UXA-095 — materialização do Início do Participante e refinamento de TRN-111 |
-| Galeria visual | `active` 0.14.0; 108 SVGs |
-| Matriz por SVG | `active` 0.12.0; 108 associações e 28 perfis |
-| Validações funcionais vigentes | **96** |
-| Pendentes de validação específica | **12** |
-| Handoffs integralmente validados em Coletivos | **7** |
+| Marco | M7.83 |
+| Última frente proposta | UXA-096 — validação do Início do Participante, revalidação de PER-107 e TRN-111 |
+| Galeria visual | `active` 0.15.0; 108 SVGs |
+| Matriz por SVG | `active` 0.13.0; 108 associações e 28 perfis |
+| Validações funcionais vigentes | **98** |
+| Pendentes de validação específica | **10, exclusivamente UXA-055** |
+| Handoffs integralmente validados em Coletivos | **8** |
 | IDs com referência visual | 30 de 40 |
 | Responsabilidades sem SVG dedicado | 9 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente após eventual integração | UXA-096, não iniciada |
+| Próxima frente | UXA-097, não iniciada |
 
-A UXA-095 materializa `PER-108`, adiciona uma entrada explícita em `PER-107` e torna `TRN-111` parcial. O SVG corrente da Central e o novo Início aguardam validação específica.
+A UXA-096 valida a versão corrente de `PER-107`, valida `PER-108` e promove `TRN-111` a integralmente validada. O estado canônico atual do vínculo e das permissões governa o acesso; histórico não preserva privilégio antigo.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-095](experience-architecture/uxa-047-095-index.md)
+- [Índice UXA-047 a UXA-096](experience-architecture/uxa-047-096-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [UXA-095 — Início do Participante e TRN-111](experience-architecture/uxa-095-participant-home-materialization-and-trn111-refinement.md)
+- [UXA-096 — Validação do Início do Participante e TRN-111](experience-architecture/uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Registro Granular de Transições](journeys/transition-registry.md)
@@ -40,4 +40,4 @@ A UXA-095 materializa `PER-108`, adiciona uma entrada explícita em `PER-107` e 
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-096, Engenharia de Produto, P2–P9, validação automática de `PER-108/TRN-111`, estados P0B, áreas P1 de comunicação, `COL-004` a `COL-008`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza UXA-097, Engenharia de Produto, P2–P9, estados P0B, áreas P1 de comunicação, `COL-004` a `COL-008`, implantação tecnológica ou operação comercial. Pessoa e Coletivo permanecem `draft`. Em caso de divergência, prevalece `GKR-STATE-001`.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -18,6 +18,7 @@ related:
   - UXA-093
   - UXA-094
   - UXA-095
+  - UXA-096
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -31,7 +32,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.12.0 preserva as 40 entradas. A UXA-095 materializa `PER-108`, reforma minimamente o SVG corrente de `PER-107` e não cria qualquer novo ID.
+A versão 0.13.0 preserva as 40 entradas. A UXA-096 revalida `PER-107`, valida `PER-108` e não cria qualquer novo ID.
 
 ## 2. Convenções
 
@@ -72,8 +73,8 @@ A versão 0.12.0 preserva as 40 entradas. A UXA-095 materializa `PER-108`, refor
 | GKR-SURF-PER-104 | revisão e solicitação | solicitante | móvel | validado | UXA-056 | UXA-064 | UXA-065 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-105 | Solicitação Pendente | solicitante | móvel | validado | UXA-056 | UXA-066; UXA-091/092 no aprovado | UXA-067; UXA-092 no aprovado | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-106 | Meus Coletivos | participante | móvel | **validado** | UXA-056; UXA-059 | UXA-091; reformulações UXA-092/094 | UXA-092; gatilho revalidado UXA-094 | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-107 | Central de Atualizações | participante | móvel | **validado; SVG corrente pendente de revalidação** | UXA-058; UXA-059 | UXA-093; reformulações UXA-094/095 | UXA-094 no SVG anterior; versão UXA-095 pendente | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-108 | Início do Participante | participante | móvel | **materializado** | UXA-016; UXA-018; UXA-056; UXA-058; UXA-059 | **UXA-095; 1 SVG móvel** | pendente | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-107 | Central de Atualizações | participante | móvel | **validado** | UXA-058; UXA-059 | UXA-093; reformulações UXA-094/095/096 | UXA-094; versão corrente revalidada UXA-096 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-108 | Início do Participante | participante | móvel | **validado** | UXA-016; UXA-018; UXA-056; UXA-058; UXA-059 | UXA-095; reformulação UXA-096 | **UXA-096** | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | UXA-024 | UXA-025 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | UXA-028 | UXA-029 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-203 | Detalhe de Oportunidade | Pessoa/visitante | móvel e computador | validado | UXA-004; UXA-007 | UXA-007 | UXA-012 | [Pessoa](surface-registry-person-details.md) |
@@ -102,17 +103,17 @@ A versão 0.12.0 preserva as 40 entradas. A UXA-095 materializa `PER-108`, refor
 ## 5. Divisões controladas
 
 - `PER-106` é central de participações e estados relacionados, não feed;
-- `PER-107` é triagem de atualizações; sua versão corrente foi minimamente reformulada por UXA-095 e aguarda revalidação;
-- `PER-108` é síntese interna do Coletivo e não replica Central ou canais especializados;
+- `PER-107` é triagem de atualizações e sua versão corrente está validada pela UXA-096;
+- `PER-108` é síntese interna validada e não replica Central ou canais especializados;
 - `COM-005` continua sem validação funcional específica;
 - `BND-001` é endpoint documental, não tela.
 
-## 6. Efeito da UXA-095
+## 6. Efeito da UXA-096
 
 - 40 IDs preservados;
-- `PER-107` permanece com contrato validado, mas o SVG corrente reformulado fica pendente de revalidação;
-- `PER-108`: reformulação pendente → **materializado**;
-- `TRN-111` é tratado no registro de transições e passa a parcial;
+- `PER-107`: versão corrente → **validado**;
+- `PER-108`: materializado → **validado**;
+- `TRN-111` é tratado no registro de transições e passa a integralmente validada;
 - nenhuma promoção de jornada ou implementação é inferida.
 
 ## 7. Estado

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -15,6 +15,7 @@ related:
   - UXA-093
   - UXA-094
   - UXA-095
+  - UXA-096
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
@@ -35,39 +36,43 @@ Esta vista identifica pontos em que a próxima decisão ou contexto passa para o
 | TRN-107 | PER-105 | envia informação adicional | COL-003 | UXA-090 | **integralmente validada** |
 | TRN-108 | COL-003 | aprova, forma vínculo e apresenta resultado | PER-106 via PER-105 | UXA-092 | **integralmente validada** |
 | TRN-109 | COL-003 | recusa solicitação | PER-105 | UXA-090 | **integralmente validada** |
-| TRN-110 | PER-106 | escolhe `Ver atualizações` sem alterar vínculo/leitura | PER-107 | UXA-094 | **integralmente validada** |
-| TRN-111 | PER-107 | escolhe `Abrir início do Coletivo` em vínculo existente | PER-108 | **UXA-095** | **parcial** |
+| TRN-110 | PER-106 | escolhe `Ver atualizações` sem alterar vínculo/leitura | PER-107 | UXA-094; PER-107 corrente revalidado UXA-096 | **integralmente validada** |
+| TRN-111 | PER-107 | escolhe `Abrir início do Coletivo` com vínculo atual elegível | PER-108 | **UXA-095/096** | **integralmente validada** |
 | TRN-112 | COL-002 | acessa gestão de solicitações | COL-003 | UXA-090 | **integralmente validada** |
 
 ## 3. Contrato preservado de TRN-110
 
-A UXA-095 não modifica o contrato validado da entrada em `PER-107`: vínculo/leitura permanecem inalterados, ações substantivas revalidam estado canônico e repetição não duplica efeito lógico.
+A UXA-096 revalida a Central corrente sem modificar o contrato validado da entrada em `PER-107`: vínculo/leitura permanecem inalterados, ações substantivas revalidam estado canônico e repetição não duplica efeito lógico.
 
-## 4. Materialização de TRN-111
+## 4. Contrato validado de TRN-111
 
-A UXA-095 torna explícito:
+A UXA-096 fecha:
 
 ```text
 PER-107
 → “Abrir início do Coletivo”
+→ vínculo atual e permissão são revalidados
+→ histórico não concede nem preserva acesso
 → vínculo, leitura, papel, presença e autoridade não mudam
 → PER-108
 ```
 
-A ligação permanece parcial porque:
+Foram examinados:
 
-- o SVG da origem foi reformulado após sua validação;
-- o destino é novo e ainda não validado;
-- retorno, concorrência, estado obsoleto e ações internas não foram examinados como conjunto.
+- identidade do Coletivo e do vínculo lógico;
+- estado canônico atual;
+- perda de permissão, pausa, saída e remoção;
+- retorno neutro à Central;
+- leitura separada do efeito substantivo;
+- ações internas revalidadas antes do efeito;
+- repetição e recarga idempotentes.
 
 ## 5. Estado vigente
 
-Sete handoffs do trecho anterior de Coletivos permanecem integralmente validados: `TRN-105`, `106`, `107`, `108`, `109`, `110` e `112`.
-
-`TRN-111` é adicionalmente **materializada de forma parcial**, não integralmente validada.
+Oito handoffs do trecho de Coletivos estão integralmente validados: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`.
 
 Validação integral documental não equivale a implementação técnica.
 
 ## 6. Próxima frente
 
-**UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de TRN-111**, mediante autorização separada.
+A próxima priorização deverá partir das lacunas remanescentes. **UXA-097 não foi iniciada.**

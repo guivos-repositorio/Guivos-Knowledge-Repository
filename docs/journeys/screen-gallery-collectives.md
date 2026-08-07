@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -22,6 +22,7 @@ related:
   - UXA-093
   - UXA-094
   - UXA-095
+  - UXA-096
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -47,7 +48,7 @@ explorar e buscar
 → Início do Participante
 ```
 
-A galeria agora alcança visualmente `PER-108`. A UXA-095 reforma minimamente a Central para tornar `TRN-111` observável e materializa o novo Início; ambos aguardam validação específica.
+A galeria alcança visualmente `PER-108`. A UXA-096 reforma as versões correntes da Central e do Início, valida ambas e fecha `TRN-111` ponta a ponta sem adicionar novo SVG.
 
 ## 2. Descoberta e busca
 
@@ -187,23 +188,23 @@ A UXA-090/092 validou os handoffs aplicáveis do fluxo de solicitação.
 
 ## 10. Central de Atualizações
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-107` · origem: `UXA-093` · validação anterior: UXA-094 · **versão corrente reformulada: UXA-095, pendente de revalidação**
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-107` · origem: `UXA-093` · reformulações: UXA-094/095/096 · validação corrente: **UXA-096**
 
 ### `uxa-093-collective-updates-center-mobile.svg`
 ![](../assets/wireframes/uxa-093-collective-updates-center-mobile.svg){ width="320" loading="lazy" }
 
-A UXA-095 adiciona somente `Abrir início do Coletivo` no contexto de vínculo já existente. Como o SVG foi alterado após UXA-094, a representação corrente não conserva validação por inferência.
+A versão corrente explicita que o CTA para o Início depende do vínculo atual revalidado; um evento histórico não preserva acesso após pausa, saída, remoção ou perda de permissão.
 
 ## 11. Início do Participante
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-108` · origem/materialização: **UXA-095** · validação: **pendente**
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-108` · origem/materialização: UXA-095 · reformulação e validação: **UXA-096**
 
 ### `uxa-095-collective-participant-home-mobile.svg`
 ![](../assets/wireframes/uxa-095-collective-participant-home-mobile.svg){ width="320" loading="lazy" }
 
-A referência sintetiza propósito, vínculo, momento, ação compartilhada, consulta e autonomia. Não replica a Central ou canais internos especializados e não infere presença, função ou autoridade.
+A referência sintetiza propósito, vínculo atual, papel, momento, ação compartilhada, consulta e autonomia. Não replica a Central ou canais internos especializados e não infere presença, função ou autoridade.
 
-`GKR-TRN-111` passa a **parcial**: os dois endpoints estão representados, mas a origem corrente, o novo destino e a ligação exigem validação integrada.
+`GKR-TRN-111` está **integralmente validada** pela UXA-096: vínculo atual/permissão são revalidados, retorno é neutro, estado canônico prevalece e repetição não duplica efeito lógico.
 
 ## 12. Dependências ainda sem SVG dedicado
 
@@ -214,15 +215,13 @@ A referência sintetiza propósito, vínculo, momento, ação compartilhada, con
 | Indicador | Resultado |
 |---|---:|
 | SVGs | **34** |
-| validados na versão corrente | **32** |
-| pendentes | **2: PER-107 corrente + PER-108** |
+| validados na versão corrente | **34** |
+| pendentes locais | **0** |
 
-As outras dez pendências globais permanecem nos estados residuais da UXA-055.
+As dez pendências globais permanecem exclusivamente nos estados residuais da UXA-055.
 
 ## 14. Próximo gate
 
-**UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**, mediante autorização separada.
-
-A UXA-096 não é iniciada pela UXA-095.
+A continuidade de Coletivos até o Início está validada no escopo documental. A próxima priorização deverá partir das lacunas remanescentes; **UXA-097 não foi iniciada**.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)
