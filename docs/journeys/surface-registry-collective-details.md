@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-COLLECTIVE-001
 title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -15,6 +15,7 @@ related:
   - UXA-080
   - UXA-086
   - UXA-087
+  - UXA-088
 normative: false
 ---
 
@@ -22,29 +23,30 @@ normative: false
 
 ## 1. Finalidade
 
-Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens de entradas.
+Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não altera a contagem de entradas.
 
-A UXA-086 materializou `GKR-SURF-COL-002`. A UXA-087 reformula e valida funcionalmente essa referência, encerrando o gate específico da superfície sem validar `GKR-TRN-112` ponta a ponta e sem materializar `GKR-SURF-COL-003`.
+A UXA-088 materializa `GKR-SURF-COL-003` em sete estados desktop. A família permanece sem validação funcional específica.
 
 ## 2. Campos por identificador
 
 | ID | Artefato canônico e caminho | Versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| GKR-SURF-COL-001 | UXA-016 — `docs/experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md`; UXA-062 — `docs/experience-architecture/uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md` | indeterminado | criação ou acesso público | consultar presença pública ou acessar visão prevista | descoberta e participação | identidade, propósito, atividades e estados conforme perspectiva | público para consulta; autoridade para áreas protegidas | retornar ou encerrar consulta | nenhuma identificada | parcial | separação entre vista pública e operação | agrupa referências existentes; não substitui Visão Geral do Responsável |
-| GKR-SURF-COL-002 | UXA-086 — `docs/experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md`; validação UXA-087 | materialização 0.1.0; validação 0.1.0 | acesso protegido com representação válida | compreender o momento operacional e escolher responsabilidade ou área disponível dentro da autoridade | GKR-TRN-112 para solicitações; demais áreas permanecem destinos especializados | identidade e propósito; estado de representação; escopo; sínteses de solicitações e vínculos; comunicação e atividades; proteção; governança e relações no limite necessário | representação válida e escopo concedido; ações fora da autoridade não são presumidas | permanecer, adiar quando legítimo, contestar prioridade, retornar ao contexto anterior ou escolher outra área autorizada | nenhuma identificada | parcial; origem de GKR-TRN-112 validada, destino ainda ausente | continuidade para GKR-SURF-COL-003 | referência desktop validada funcionalmente; não substitui a fila de solicitações nem valida a transição |
-| GKR-SURF-COL-003 | UXA-066 — `docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md` | indeterminado | solicitação recebida | decidir ou solicitar informação dentro da autoridade | pedir informação, aprovar, recusar ou expirar | dados autorizados da solicitação; estado; prazo; decisão | autoridade do responsável e finalidade limitada | adiar, pedir informação, recusar ou deixar expirar conforme contrato | nenhuma identificada | ausente na origem operacional | operação bilateral | somente efeitos percebidos pela Pessoa estão materializados; origem operacional completa continua ausente |
-| GKR-SURF-COL-004 | ausente; autoridade: UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | vínculo formado | indeterminado | gestão, saída ou contestação | indeterminado | papel e autoridade esperados; não materializados | indeterminado | nenhuma identificada | ausente | continuidade interna | entrada documental seletiva; não declara jornada completa |
-| GKR-SURF-COL-005 | ausente; autoridade: UXA-058 — `docs/experience-architecture/uxa-058-interactions-recommendations-connections-functional-contract.md`; UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | vínculo e autoridade | indeterminado | atualizações aos participantes | indeterminado | papel, audiência e finalidade esperados; não materializados | indeterminado | nenhuma identificada | ausente | superfície e regras operacionais | entrada documental seletiva; não declara jornada completa |
-| GKR-SURF-COL-006 | UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | governança interna | indeterminado por atividade | resultados e próximas decisões | conteúdos dispersos; inventário integrado ausente | autoridade contextual esperada; não consolidada | indeterminado | nenhuma identificada | não examinado | matriz operacional integrada | entrada documental seletiva; não declara jornada completa |
-| GKR-SURF-COL-007 | UXA-058 — `docs/experience-architecture/uxa-058-interactions-recommendations-connections-functional-contract.md` | indeterminado | evento protegido | avaliar evento protegido dentro de competência limitada | decisão ou encaminhamento | evidências mínimas, relato, estado e encaminhamento | autoridade protegida; finalidade limitada | contestar, corrigir ou encaminhar conforme contrato; integração não examinada | nenhuma identificada | não examinado | fluxo protegido completo | entrada documental seletiva; não declara jornada completa |
-| GKR-SURF-COL-008 | ausente; autoridade: UXA-019 — `docs/experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md` | indeterminado | proposta institucional | avaliar, negociar, aceitar ou recusar proposta | negociação e decisão bilateral | finalidade, compromissos, recursos, limites e dados previstos | autoridade do responsável e aprovação bilateral | recusar, ajustar, pausar ou encerrar conforme contrato | nenhuma identificada | ausente | relação Organização–Coletivo | entrada documental seletiva; não declara jornada completa |
+| GKR-SURF-COL-001 | UXA-016 e UXA-062 | indeterminado | criação ou acesso público | consultar presença pública ou acessar visão prevista | descoberta e participação | identidade, propósito, atividades e estados conforme perspectiva | público para consulta; autoridade para áreas protegidas | retornar ou encerrar consulta | nenhuma identificada | parcial | separação entre vista pública e operação | não substitui Visão Geral do Responsável |
+| GKR-SURF-COL-002 | UXA-086; validação UXA-087 | materialização 0.1.0; validação 0.1.0 | acesso protegido com representação válida | compreender momento operacional e escolher área autorizada | GKR-TRN-112 para solicitações | identidade, propósito, representação, escopo e sínteses no limite necessário | representação válida e escopo concedido | permanecer, adiar, contestar prioridade ou retornar | nenhuma identificada | parcial; destino agora materializado, transição ainda não validada | continuidade para COL-003 | referência desktop validada; não substitui gestão especializada |
+| GKR-SURF-COL-003 | UXA-088 — `docs/experience-architecture/uxa-088-collective-request-management-low-fidelity-wireframes.md`; efeitos na Pessoa em UXA-066/067 | materialização 0.1.0; validação pendente | GKR-TRN-105 ou GKR-TRN-112; resposta adicional via GKR-TRN-107 | analisar solicitação e escolher aguardar, pedir informação, aprovar ou recusar dentro da autoridade | GKR-TRN-106, GKR-TRN-108 ou GKR-TRN-109; permanência na fila quando não houver decisão | dados autorizados da solicitação; estado; prazo; critérios; fundamento; resposta adicional; dados protegidos mínimos quando aplicável | representação válida; finalidade limitada; autoridade específica; confirmação antes de aprovação ou recusa | voltar sem decidir; aguardar; pedir informação; cancelar rascunho; interromper por autoridade insuficiente | referências na perspectiva da Pessoa não são supersedidas | materializada bilateralmente; validação integrada pendente | gate funcional da família e continuidade pós-aprovação para PER-106 | sete SVGs desktop; cancelamento pela Pessoa e expiração são eventos refletidos, não decisões equivalentes do responsável |
+| GKR-SURF-COL-004 | ausente; autoridade UXA-059 | indeterminado | vínculo formado | indeterminado | gestão, saída ou contestação | indeterminado | papel e autoridade esperados; não materializados | indeterminado | nenhuma identificada | ausente | continuidade interna | não iniciado pela UXA-088 |
+| GKR-SURF-COL-005 | ausente; autoridade UXA-058/059 | indeterminado | vínculo e autoridade | indeterminado | atualizações aos participantes | indeterminado | papel, audiência e finalidade esperados | indeterminado | nenhuma identificada | ausente | superfície e regras operacionais | não iniciado pela UXA-088 |
+| GKR-SURF-COL-006 | UXA-059 | indeterminado | governança interna | indeterminado por atividade | resultados e próximas decisões | conteúdos dispersos | autoridade contextual esperada | indeterminado | nenhuma identificada | não examinado | matriz operacional integrada | não iniciado pela UXA-088 |
+| GKR-SURF-COL-007 | UXA-058 | indeterminado | evento protegido | avaliar evento dentro de competência limitada | decisão ou encaminhamento | evidências mínimas, relato, estado e encaminhamento | autoridade protegida; finalidade limitada | contestar, corrigir ou encaminhar conforme contrato | nenhuma identificada | não examinado | fluxo protegido completo | não iniciado pela UXA-088 |
+| GKR-SURF-COL-008 | ausente; autoridade UXA-019 | indeterminado | proposta institucional | avaliar, negociar, aceitar ou recusar proposta | negociação e decisão bilateral | finalidade, compromissos, recursos, limites e dados previstos | autoridade do responsável e aprovação bilateral | recusar, ajustar, pausar ou encerrar conforme contrato | nenhuma identificada | ausente | relação Organização–Coletivo | não iniciado pela UXA-088 |
 
-## 3. Regra de incerteza
+## 3. Regras preservadas
 
-Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não examinado`. Nenhum campo poderá ser completado por inferência.
-
-A validação de `GKR-SURF-COL-002` não autoriza completar campos das demais superfícies por analogia e não cria a operação de `GKR-SURF-COL-003`.
+- valores sem evidência permanecem `indeterminado`, `ausente` ou `não examinado`;
+- materialização de `COL-003` não autoriza completar `COL-004` a `COL-008` por analogia;
+- efeitos validados na perspectiva da Pessoa não equivalem a validação do ato do responsável;
+- autoridade insuficiente impede a decisão e não concede dados adicionais.
 
 ## 4. Estado
 
-O detalhamento está `active` 0.4.0. `GKR-SURF-COL-002` possui materialização em UXA-086 e validação funcional em UXA-087. Seu gate específico de superfície está encerrado; a continuidade para a gestão completa de solicitações permanece aberta e a jornada do Coletivo continua incompleta.
+O detalhamento está `active` 0.5.0. `COL-002` permanece validada e `COL-003` passa a materializada com validação pendente. A Jornada do Coletivo continua incompleta.
