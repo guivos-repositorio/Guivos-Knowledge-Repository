@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -21,6 +21,7 @@ related:
   - UXA-090
   - UXA-091
   - UXA-092
+  - UXA-093
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -33,7 +34,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.9.0 preserva as 37 transições, mantém as cinco validações integrais da UXA-090 e promove `GKR-TRN-108` a `integralmente validada` após a reformulação e validação de `PER-105`/`PER-106` pela UXA-092. `GKR-TRN-110` permanece parcial porque `PER-107` continua ausente.
+A versão 0.10.0 preserva as 37 transições e as seis validações integrais já vigentes no fluxo de solicitação. A UXA-093 materializa o destino de `GKR-TRN-110`, mas a ligação permanece `parcial` porque ainda não foi validada ponta a ponta. `GKR-TRN-111` permanece `ausente` porque `PER-108` continua sem materialização vigente.
 
 Permanecem vigentes as correções estruturais anteriores:
 
@@ -52,9 +53,9 @@ O status `active` aprova o registro como instrumento documental. Nenhuma linha e
 |---|---|
 | integralmente validada | origem, destino, autoridade, dados, efeito, retorno, interrupção e concorrência foram examinados como uma única ligação ponta a ponta no escopo documental |
 | localmente validada | examinada dentro do pacote indicado, sem comprovação ponta a ponta |
-| parcial | origem, destino ou efeito possuem cobertura incompleta |
+| parcial | origem, destino ou efeito possuem cobertura incompleta ou a ligação ainda não foi validada como conjunto |
 | contratada | autoridade define a ligação, mas não há materialização suficiente |
-| ausente | ligação necessária conhecida sem materialização |
+| ausente | ligação necessária conhecida sem materialização suficiente |
 | não examinada | artefatos existem, mas a ligação não foi validada como conjunto |
 
 Endpoints materializados ou mesmo validados como superfícies não tornam automaticamente a transição validada. A classificação `integralmente validada` também não comprova implementação técnica.
@@ -69,7 +70,7 @@ Endpoints materializados ou mesmo validados como superfícies não tornam automa
 | Opportunity Boost | 6 |
 | **Total** | **37** |
 
-A UXA-092 não cria transições novas.
+A UXA-093 não cria transições novas.
 
 ## 4. Jornada pessoal
 
@@ -96,8 +97,8 @@ A UXA-092 não cria transições novas.
 | GKR-TRN-107 | GKR-SURF-PER-105 | GKR-SURF-COL-003 | solicitante → responsável | entre participantes; assíncrona | enviar resposta adicional | UXA-056; UXA-067; UXA-088; UXA-089 | somente conteúdo conscientemente enviado retorna à mesma pergunta e finalidade; não cria vínculo | resposta consciente; estado ainda elegível para recebimento | editar antes do envio, descartar rascunho ou desistir; processo encerrado não reabre silenciosamente; repetição não duplica conteúdo lógico | UXA-067; UXA-089; UXA-090 | integralmente validada | — |
 | GKR-TRN-108 | GKR-SURF-COL-003 | GKR-SURF-PER-106 | responsável → participante | handoff de autoridade; entre participantes; continuidade mediada por resultado | aprovar solicitação, formar vínculo, apresentar resultado em PER-105 e permitir continuidade opcional para Meus Coletivos | UXA-014; UXA-056; UXA-088; UXA-089; UXA-091; UXA-092 | cria um único vínculo conforme papel aceito; o resultado aprovado em PER-105 declara o vínculo já formado; `Ver em Meus Coletivos` apenas navega; PER-106 exibe o mesmo vínculo sem função, moderação, reputação ou notificação automática | decisão autorizada, estado vigente e resultado revalidado; o clique posterior não é gate do vínculo | abandonar decisão antes da confirmação; após o resultado, escolher `Agora não` interrompe apenas navegação; repetição não duplica vínculo | UXA-089 na origem; UXA-092 no resultado, destino e continuidade; contrato transversal UXA-090 | integralmente validada | — |
 | GKR-TRN-109 | GKR-SURF-COL-003 | GKR-SURF-PER-105 | responsável → solicitante | entre participantes; assíncrona | recusar solicitação; expiração permanece evento temporal distinto | UXA-056; UXA-067; UXA-088; UXA-089 | apresenta recusa proporcional baseada em condição previamente apresentada na mesma solicitação, distinta de cancelamento, sanção, reputação ou expiração | autoridade vigente, fundamento proporcional e confirmação consciente; estado revalidado | voltar sem decidir antes da confirmação; cancelamento/expiração já vigentes não são sobrescritos; repetição não cria segunda recusa lógica | UXA-067; UXA-089; UXA-090 | integralmente validada | — |
-| GKR-TRN-110 | GKR-SURF-PER-106 | GKR-SURF-PER-107 | participante | direta | acessar atualizações do vínculo | UXA-056; UXA-059 | origem validada organiza participações e estados relacionados; destino futuro deverá apresentar comunicações e mudanças autorizadas sem transformar Meus Coletivos em feed | vínculo ativo; PER-107 ainda ausente | permanecer ou retornar em Meus Coletivos; nenhuma navegação é afirmada como disponível nesta UXA | UXA-092 na origem | parcial | GKR-SURF-PER-107 continua ausente |
-| GKR-TRN-111 | GKR-SURF-PER-107 | GKR-SURF-PER-108 | participante | direta; condicional | selecionar Coletivo ou atualização | UXA-059 | abre início operacional do participante | vínculo e papel | retorno às atualizações | — | ausente | Início do Participante em reformulação |
+| GKR-TRN-110 | GKR-SURF-PER-106 | GKR-SURF-PER-107 | participante | direta; controle de atenção | acessar atualizações relacionadas aos vínculos | UXA-056; UXA-058; UXA-059 | origem validada organiza vínculos; destino materializado por UXA-093 apresenta origem, natureza, autoridade, leitura, ação e prazo sem transformar a experiência em feed | vínculo ou autorização pertinente ao objeto; ambos os endpoints existem, mas o handoff ainda não foi validado como conjunto | permanecer/retornar a Meus Coletivos; leitura não conclui ação substantiva; concorrência e idempotência ainda exigem validação | UXA-092 na origem; UXA-093 no destino | parcial | validar gatilho, contexto, retorno, concorrência, leitura versus ação e efeito ponta a ponta |
+| GKR-TRN-111 | GKR-SURF-PER-107 | GKR-SURF-PER-108 | participante | direta; condicional | selecionar Coletivo ou atualização que exija contexto interno | UXA-058; UXA-059 | origem materializada não cria por si só o Início do Participante | vínculo e papel; PER-108 ainda não vigente | retorno às atualizações; nenhum destino é afirmado como disponível | UXA-093 apenas na origem | ausente | Início do Participante em reformulação e sem materialização vigente |
 | GKR-TRN-112 | GKR-SURF-COL-002 | GKR-SURF-COL-003 | responsável | direta; protegida | acessar solicitações a partir da visão geral | UXA-059; UXA-086; UXA-087; UXA-088; UXA-089 | abre a fila especializada preservando Coletivo representado e escopo concedido; nenhuma decisão é implícita | representação válida e escopo vigente | permanecer ou retornar à visão geral; falta de autoridade bloqueia operação; navegação não altera fila ou estado | UXA-087; UXA-089; UXA-090 | integralmente validada | — |
 | GKR-TRN-113 | GKR-SURF-COL-004 | GKR-SURF-COL-005 | responsável | condicional; protegida | comunicar a participantes autorizados | UXA-058; UXA-059 | distribui comunicação oficial com finalidade identificada | papel e escopo de audiência | corrigir ou encerrar conforme regras futuras | — | contratada | operação interna não materializada |
 
@@ -128,16 +129,14 @@ A UXA-092 não cria transições novas.
 | GKR-TRN-305 | GKR-SURF-COM-004 | GKR-SURF-COM-005 | anunciante | condicional | campanha ou entrega alcança estado residual específico | UXA-038 | efeito depende do estado materializado pela UXA-055 | autoridade e controle aplicáveis ao estado | retorno, desfazer, contestar ou continuar dependem do estado ainda não validado | UXA-055 | não examinada | dez estados residuais sem validação |
 | GKR-TRN-306 | GKR-SURF-COM-002 | GKR-SURF-PER-202 | Pessoa exposta | reversível | voltar ao contexto orgânico de lista | UXA-038 | restaura a Lista de Oportunidades sem alterar reputação, relevância ou estado comercial | nenhum | retorno imediato | UXA-043; UXA-029 em pacotes distintos | parcial | integração orgânico–patrocinado |
 
-## 8. Efeito da UXA-092
+## 8. Efeito da UXA-093
 
-A UXA-092 não cria transições novas e preserva as cinco ligações integralmente validadas pela UXA-090.
+A UXA-093 não cria transições novas e preserva as seis ligações integralmente validadas no fluxo de solicitação: `105`, `106`, `107`, `108`, `109` e `112`.
 
-Ela promove somente uma continuidade adicional:
+Ela altera somente a evidência material de continuidade seguinte:
 
-- `GKR-TRN-108` passa de `parcial` para `integralmente validada` após revalidação do resultado aprovado de `PER-105`, validação de `PER-106` e confirmação de que o vínculo é formado pela decisão autorizada antes da navegação opcional;
-- `GKR-TRN-110` permanece `parcial`, pois `PER-106` agora é uma origem validada, mas `PER-107` continua ausente.
-
-O fluxo de solicitação passa a possuir seis handoffs integralmente validados: `105`, `106`, `107`, `108`, `109` e `112`.
+- `GKR-TRN-110` permanece `parcial`, agora com `PER-106` validada na origem e `PER-107` materializada no destino; gatilho, contexto, retorno, concorrência, idempotência e leitura versus ação ainda não foram validados como uma ligação única;
+- `GKR-TRN-111` permanece `ausente`, agora com origem materializada, porque `PER-108` continua sem materialização vigente.
 
 ## 9. Regras de uso
 
@@ -149,6 +148,7 @@ O fluxo de solicitação passa a possuir seis handoffs integralmente validados: 
 - um handoff exige autoridade, identidade, dados, efeito, retorno, interrupção e tratamento de concorrência explícitos;
 - estado obsoleto não pode produzir efeito sobre estado canônico mais recente;
 - repetição de interação ou entrega não pode duplicar o efeito lógico;
+- estado `lido` não pode ser confundido com estado substantivo, consentimento ou ação concluída;
 - uma versão visual reformulada exige revalidação antes de ser tratada como versão funcionalmente validada;
 - navegação posterior a uma decisão não deve ser confundida com gate para o efeito já confirmado;
 - transições ausentes permanecem registradas sem seta afirmativa de implementação;
