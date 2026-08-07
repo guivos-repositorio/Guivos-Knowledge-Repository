@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 related:
   - UXA-019
   - UXA-056
@@ -16,6 +16,12 @@ related:
   - UXA-074
   - UXA-075
   - UXA-076
+  - UXA-086
+  - UXA-087
+  - UXA-088
+  - UXA-089
+  - UXA-090
+  - UXA-091
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
@@ -26,51 +32,54 @@ normative: false
 
 Esta vista identifica pontos em que a próxima decisão deixa uma perspectiva e passa para outra autoridade legítima.
 
-Nenhum handoff é considerado validado apenas porque as superfícies de origem e destino existem. A evidência deve abranger a transição, os dados transferidos, o efeito, o retorno e a possibilidade de contestação.
+Nenhum handoff é considerado validado apenas porque as superfícies de origem e destino existem. A evidência deve abranger a transição, dados transferidos, efeito, retorno, interrupção e contestação.
 
 ## 2. Matriz governada
 
-| IDs de transição | Origem e maturidade | Evento | Destino e maturidade | Autoridade | Evidência da transição | Retorno ou contestação | Lacuna |
+| IDs de transição | Origem e maturidade | Evento | Destino e maturidade | Autoridade | Evidência da transição | Retorno ou contestação | Estado/lacuna |
 |---|---|---|---|---|---|---|---|
-| GKR-TRN-104; GKR-TRN-105 | Pessoa — validado na perspectiva solicitante | envia solicitação de participação | responsável do Coletivo — não materializado | UXA-056; UXA-066 | envio e estado pendente materializados na visão da Pessoa | cancelamento e acompanhamento na visão da Pessoa | operação do responsável ausente |
-| GKR-TRN-106 | responsável do Coletivo — programado | solicita informação adicional | Pessoa — validado na perspectiva solicitante | UXA-056; UXA-066; UXA-067 | retorno materializado somente na visão da Pessoa | Pessoa pode revisar, responder ou não prosseguir | origem operacional não materializada |
-| GKR-TRN-107 | Pessoa — validado na perspectiva solicitante | envia informação adicional | responsável do Coletivo — programado | UXA-056; UXA-067 | resposta materializada somente na visão da Pessoa | desistência permanece possível | fila operacional não materializada |
-| GKR-TRN-108; GKR-TRN-109 | responsável do Coletivo — programado | aprova, recusa ou deixa expirar | Pessoa — validado na perspectiva solicitante | UXA-014; UXA-056; UXA-067 | resultado materializado somente na visão da Pessoa | recusa, cancelamento e expiração permanecem distintos | decisão do responsável e continuidade ausentes |
-| GKR-TRN-206 | Organização — contratada | propõe relação ou apoio | Coletivo — contratado | UXA-019 | nenhuma superfície bilateral específica | retirada, negociação, recusa e ajuste contratados | materialização bilateral ausente |
-| GKR-TRN-207; GKR-TRN-208; GKR-TRN-209 | Coletivo e Organização — contratados | avaliam, aprovam e revisam relação | autoridades bilaterais | UXA-019 | nenhuma superfície bilateral específica | revisão, pausa e encerramento contratados | operação bilateral ausente |
-| GKR-TRN-202; GKR-TRN-203 | Organização — validado no cadastro | publica oportunidade | Pessoa — validado na consulta | UXA-004; UXA-008; UXA-013 | publicação e consulta existem em pacotes distintos | edição ou retirada pela Organização; retorno da Pessoa ao catálogo | integração ponta a ponta não examinada |
-| GKR-TRN-204; GKR-TRN-205 | Pessoa — validado na consulta | acessa oportunidade | Organização ou destino identificado — parcial | UXA-004; UXA-007; UXA-012 | detalhe e destino apresentados no escopo existente | retorno à lista ou mapa conforme superfície | efeito externo não validado nesta seção |
-| GKR-TRN-302 | anunciante — materializado | entrega promoção identificada | Pessoa exposta — validado localmente | UXA-038 | camada patrocinada identificada | ignorar, retornar ou seguir ação apresentada | integração completa com superfícies orgânicas |
+| GKR-TRN-104 | Pessoa — PER-104 validada | envia solicitação de participação | PER-105 validada na versão aplicável | UXA-056 | UXA-065; UXA-067 | cancelamento e acompanhamento | parcial; continuidade entre pacotes |
+| GKR-TRN-105 | Pessoa solicitante | solicitação fica disponível para análise | COL-003 validada | UXA-056; UXA-059 | UXA-067; UXA-089; UXA-090 | cancelamento/expiração tornam análise obsoleta | **integralmente validada** |
+| GKR-TRN-106 | COL-003 validada | solicita informação adicional | PER-105 | UXA-056 | UXA-067; UXA-089; UXA-090 | responder, não informar, contestar ou cancelar | **integralmente validada** |
+| GKR-TRN-107 | PER-105 | envia informação adicional | COL-003 validada | UXA-056 | UXA-067; UXA-089; UXA-090 | editar antes do envio, desistir; processo encerrado não reabre | **integralmente validada** |
+| GKR-TRN-109 | COL-003 validada | recusa solicitação | PER-105 | UXA-014; UXA-056 | UXA-067; UXA-089; UXA-090 | fundamento proporcional; nova exploração posterior | **integralmente validada** |
+| GKR-TRN-108 | COL-003 validada | aprova e forma vínculo; resultado é mostrado em PER-105 | PER-106 materializada | UXA-014; UXA-056 | UXA-089; UXA-091 | Pessoa pode não prosseguir; preferências preservadas | **parcial**; versões correntes aguardam UXA-092 |
+| GKR-TRN-110 | PER-106 materializada | acessar atualizações do vínculo | PER-107 ausente | UXA-056; UXA-059 | origem em UXA-091 | permanecer/retornar a Meus Coletivos | **parcial**; destino ausente |
+| GKR-TRN-206 | Organização — contratada | propõe relação ou apoio | Coletivo — contratado | UXA-019 | nenhuma superfície bilateral específica | retirada, negociação, recusa e ajuste | materialização bilateral ausente |
+| GKR-TRN-207; 208; 209 | Coletivo e Organização — contratados | avaliam, aprovam e revisam relação | autoridades bilaterais | UXA-019 | nenhuma superfície bilateral específica | revisão, pausa e encerramento | operação bilateral ausente |
+| GKR-TRN-202; 203 | Organização | publica oportunidade | Pessoa | UXA-004 | publicação e consulta em pacotes distintos | edição/retirada; retorno da Pessoa | integração ponta a ponta não examinada |
+| GKR-TRN-204; 205 | Pessoa | acessa oportunidade | destino identificado | UXA-004; UXA-007 | detalhe e fronteira apresentados | retorno a lista ou mapa | efeito externo não validado |
+| GKR-TRN-302 | anunciante | entrega promoção identificada | Pessoa exposta | UXA-038 | camada patrocinada identificada | ignorar, retornar ou seguir ação | integração orgânico–patrocinado parcial |
 
-## 3. Registro granular
+## 3. Continuidade pós-aprovação
 
-O detalhamento individual está em [Registro Granular de Transições](transition-registry.md).
+A UXA-091 torna explícita a sequência documental:
 
-Esse registro acrescenta, por ID:
+```text
+COL-003 — aprovação confirmada
+→ resultado aprovado em PER-105
+→ Pessoa escolhe “Ver em Meus Coletivos”
+→ PER-106 — vínculo confirmado visível
+```
 
-- origem e destino;
-- participante e perspectiva;
-- tipo de transição;
-- condição e ação iniciadora;
-- autoridade;
-- efeito e dados transferidos;
-- gate de autorização;
-- reversibilidade;
-- interrupção e tempo;
-- evidência;
-- estado da ligação;
-- lacuna associada.
+Essa passagem permanece parcial. A materialização dos endpoints não substitui a validação integrada reservada à UXA-092.
 
-## 4. Regras de proteção
+## 4. Registro granular
 
-- origem materializada não presume destino materializado;
-- retorno visível para a Pessoa não comprova a existência da operação do responsável;
+O detalhamento individual continua no [Registro Granular de Transições](transition-registry.md), que é a referência por ID para origem, destino, autoridade, dados, gate, reversibilidade, interrupção, tempo, evidência e estado.
+
+## 5. Regras de proteção
+
+- origem materializada não presume destino validado;
+- resultado visível não comprova continuidade validada;
 - contrato bilateral não equivale a interface bilateral;
 - nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa;
-- um ID estabiliza a referência documental, mas não implementa a transição.
+- um ID estabiliza a referência documental, mas não implementa a transição;
+- uma versão visual reformulada exige revalidação;
+- validação integral documental não equivale a implementação técnica.
 
-## 5. Estado vigente
+## 6. Estado vigente
 
-A UXA-074 aprovou esta matriz com ressalva não bloqueadora. A UXA-075 promoveu o documento para `active` como síntese governada dos handoffs prioritários.
+A matriz permanece `active` como síntese governada. Cinco handoffs de solicitação estão integralmente validados por UXA-090; `TRN-108` e `TRN-110` permanecem parciais após UXA-091.
 
-A UXA-076 materializou o registro individual das transições, que permanece `draft` até validação específica. Esta matriz continua `active` como síntese e não passa a declarar cobertura exaustiva ou validação ponta a ponta.
+A UXA-092 não é iniciada por esta sincronização.
