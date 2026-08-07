@@ -6529,10 +6529,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-decisoes-e-protecoes" class="md-nav__link">
+  <a href="#4-central-de-atualizacoes-materializada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Decisões e proteções
+        4. Central de Atualizações materializada
       
     </span>
   </a>
@@ -6540,10 +6540,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-da-vista" class="md-nav__link">
+  <a href="#5-decisoes-e-protecoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado da vista
+        5. Decisões e proteções
       
     </span>
   </a>
@@ -6551,10 +6551,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-proxima-evolucao-possivel" class="md-nav__link">
+  <a href="#6-estado-da-vista" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Próxima evolução possível
+        6. Estado da vista
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-proxima-evolucao-possivel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Próxima evolução possível
       
     </span>
   </a>
@@ -9031,10 +9042,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-decisoes-e-protecoes" class="md-nav__link">
+  <a href="#4-central-de-atualizacoes-materializada" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Decisões e proteções
+        4. Central de Atualizações materializada
       
     </span>
   </a>
@@ -9042,10 +9053,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-estado-da-vista" class="md-nav__link">
+  <a href="#5-decisoes-e-protecoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Estado da vista
+        5. Decisões e proteções
       
     </span>
   </a>
@@ -9053,10 +9064,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-proxima-evolucao-possivel" class="md-nav__link">
+  <a href="#6-estado-da-vista" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Próxima evolução possível
+        6. Estado da vista
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-proxima-evolucao-possivel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Próxima evolução possível
       
     </span>
   </a>
@@ -9220,11 +9242,11 @@
 </tr>
 <tr>
 <td>Central de Atualizações</td>
-<td>não iniciado</td>
-<td>UXA-059</td>
-<td>—</td>
-<td>—</td>
-<td>ausente; TRN-110 parcial somente na origem</td>
+<td>materializado</td>
+<td>UXA-058; UXA-059</td>
+<td>UXA-093; 1 SVG móvel</td>
+<td>validação funcional pendente</td>
+<td>TRN-110 parcial com ambos os endpoints materializados; TRN-111 ausente</td>
 </tr>
 <tr>
 <td>Início do Participante</td>
@@ -9236,7 +9258,7 @@
 </tr>
 </tbody>
 </table>
-<p>A UXA-092 fecha a continuidade específica entre aprovação e <code>Meus Coletivos</code>, sem transformar a sequência completa de Coletivos em jornada validada ponta a ponta.</p>
+<p>A UXA-093 materializa a Central de Atualizações sem validar a sequência completa de Coletivos. A central permanece uma superfície de triagem de mudanças, não um feed social ou substituto dos canais especializados.</p>
 <h2 id="3-continuidade-pos-aprovacao-validada">3. Continuidade pós-aprovação validada<a class="headerlink" href="#3-continuidade-pos-aprovacao-validada" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>COL-003 — decisão autorizada
 → resultado aprovado em PER-105
@@ -9245,7 +9267,18 @@
 → PER-106 — mesmo vínculo confirmado visível quando a navegação ocorre
 </code></pre></div>
 <p>A continuidade acima está <strong>integralmente validada no escopo documental de <code>GKR-TRN-108</code></strong>. A navegação não cria o vínculo e a escolha de não abrir <code>Meus Coletivos</code> imediatamente não desfaz a aprovação.</p>
-<h2 id="4-decisoes-e-protecoes">4. Decisões e proteções<a class="headerlink" href="#4-decisoes-e-protecoes" title="Permanent link">&para;</a></h2>
+<h2 id="4-central-de-atualizacoes-materializada">4. Central de Atualizações materializada<a class="headerlink" href="#4-central-de-atualizacoes-materializada" title="Permanent link">&para;</a></h2>
+<p><code>PER-107</code> passa a possuir uma referência móvel primária com:</p>
+<ul>
+<li>origem, tipo, contexto e autoridade da atualização;</li>
+<li>estado de leitura separado do estado substantivo do objeto;</li>
+<li>necessidade de ação e prazo legítimo quando existirem;</li>
+<li>ordenação por segurança, ação, prazo, preferência e recência;</li>
+<li>retorno a destinos já materializados quando aplicável;</li>
+<li>ausência explícita de ranking, popularidade, publicidade silenciosa ou pressão por engajamento.</li>
+</ul>
+<p>A materialização não fecha <code>TRN-110</code>: o gatilho na origem, a preservação de contexto, retornos, concorrência, idempotência e a relação entre leitura e ação ainda precisam ser validados como um conjunto.</p>
+<h2 id="5-decisoes-e-protecoes">5. Decisões e proteções<a class="headerlink" href="#5-decisoes-e-protecoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>compartilhar pouco permanece legítimo;</li>
 <li>digitar não autoriza análise automática;</li>
@@ -9258,24 +9291,28 @@
 <li>aprovação não cria função, autoridade, notificação ou presença obrigatória;</li>
 <li><code>Meus Coletivos</code> separa participação de acompanhamento, solicitação, convite e pausa;</li>
 <li><code>Meus Coletivos</code> não utiliza ranking, pontuação de dedicação, comparação ou contagem própria de não lidos;</li>
+<li>a Central de Atualizações preserva as naturezas dos objetos e não os reduz a feed único;</li>
+<li>marcar como lido não confirma presença, concordância, nova regra ou ação concluída;</li>
+<li>alertas de segurança exigem risco material e autoridade identificada;</li>
 <li>recusa, cancelamento e expiração são eventos distintos;</li>
 <li>leitura, rolagem e silêncio não equivalem a confirmação;</li>
 <li>transições ausentes são mostradas como lacunas.</li>
 </ul>
-<h2 id="5-estado-da-vista">5. Estado da vista<a class="headerlink" href="#5-estado-da-vista" title="Permanent link">&para;</a></h2>
+<h2 id="6-estado-da-vista">6. Estado da vista<a class="headerlink" href="#6-estado-da-vista" title="Permanent link">&para;</a></h2>
 <p>Esta vista permanece <code>draft</code> porque:</p>
 <ul>
 <li>a continuidade entre compreensão inicial e Tela Hoje não foi validada como conjunto;</li>
-<li><code>PER-107</code> permanece ausente;</li>
+<li><code>PER-107</code> está materializada, mas ainda não validada funcionalmente;</li>
 <li><code>PER-108</code> permanece com reformulação pendente;</li>
 <li><code>TRN-110</code> continua parcial;</li>
-<li>estados P0B adicionais de <code>Meus Coletivos</code> permanecem separados;</li>
+<li><code>TRN-111</code> continua ausente;</li>
+<li>estados P0B adicionais de <code>Meus Coletivos</code> e da Central permanecem separados;</li>
 <li>outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.</li>
 </ul>
 <p>O status <code>draft</code> não invalida referências locais e handoffs específicos já validados.</p>
-<h2 id="6-proxima-evolucao-possivel">6. Próxima evolução possível<a class="headerlink" href="#6-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
-<p>A próxima frente autorizável para a continuidade de Coletivos é <strong>UXA-093 — Materialização Controlada da Central de Atualizações (<code>GKR-SURF-PER-107</code>)</strong>.</p>
-<p>A UXA-093 não é iniciada pela UXA-092 e depende de autorização separada.</p>
+<h2 id="7-proxima-evolucao-possivel">7. Próxima evolução possível<a class="headerlink" href="#7-proxima-evolucao-possivel" title="Permanent link">&para;</a></h2>
+<p>A próxima frente autorizável para a continuidade de Coletivos é <strong>UXA-094 — Validação Funcional da Central de Atualizações e Revalidação de <code>GKR-TRN-110</code></strong>.</p>
+<p>A UXA-094 não é iniciada pela UXA-093 e depende de autorização separada.</p>
 
 
 

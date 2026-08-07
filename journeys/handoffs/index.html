@@ -9170,12 +9170,12 @@
 <tr>
 <td>GKR-TRN-110</td>
 <td>PER-106 validada</td>
-<td>acessar atualizações do vínculo</td>
-<td>PER-107 ausente</td>
-<td>UXA-056; UXA-059</td>
-<td>origem validada em UXA-092</td>
-<td>permanecer/retornar a Meus Coletivos</td>
-<td><strong>parcial</strong>; destino ausente</td>
+<td>acessar atualizações relacionadas aos vínculos</td>
+<td>PER-107 materializada</td>
+<td>UXA-056; UXA-058; UXA-059</td>
+<td>origem validada em UXA-092; destino materializado em UXA-093</td>
+<td>permanecer/retornar a Meus Coletivos; leitura não conclui ação substantiva</td>
+<td><strong>parcial</strong>; validar gatilho, contexto, retorno, concorrência e leitura versus ação</td>
 </tr>
 <tr>
 <td>GKR-TRN-206</td>
@@ -9237,14 +9237,16 @@
 → Pessoa escolhe “Ver em Meus Coletivos” ou “Agora não”
 → PER-106 — mesmo vínculo confirmado visível quando a navegação ocorre
 </code></pre></div>
-<p>A navegação é opcional e não funciona como gate da aprovação. <code>TRN-108</code> está integralmente validada no escopo documental; a continuidade seguinte, <code>TRN-110</code>, permanece parcial por ausência de <code>PER-107</code>.</p>
+<p>A navegação é opcional e não funciona como gate da aprovação. <code>TRN-108</code> está integralmente validada no escopo documental.</p>
+<p>A UXA-093 materializa a continuidade seguinte em <code>PER-107</code>, mas <strong>não valida <code>TRN-110</code> por inferência</strong>. A ligação ainda precisa demonstrar gatilho, preservação de contexto, retorno, concorrência, idempotência e separação entre leitura e ação substantiva.</p>
 <h2 id="4-registro-granular">4. Registro granular<a class="headerlink" href="#4-registro-granular" title="Permanent link">&para;</a></h2>
 <p>O detalhamento individual continua no <a href="../transition-registry/">Registro Granular de Transições</a>, que é a referência por ID para origem, destino, autoridade, dados, gate, reversibilidade, interrupção, tempo, evidência e estado.</p>
 <h2 id="5-regras-de-protecao">5. Regras de proteção<a class="headerlink" href="#5-regras-de-protecao" title="Permanent link">&para;</a></h2>
 <ul>
-<li>origem materializada não presume destino validado;</li>
+<li>origem e destino materializados não presumem handoff validado;</li>
 <li>resultado visível não comprova continuidade validada sem gate próprio;</li>
 <li>navegação posterior não deve ser confundida com efeito já confirmado;</li>
+<li>estado <code>lido</code> não equivale a consentimento, concordância ou ação concluída;</li>
 <li>contrato bilateral não equivale a interface bilateral;</li>
 <li>nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa;</li>
 <li>um ID estabiliza a referência documental, mas não implementa a transição;</li>
@@ -9253,7 +9255,7 @@
 </ul>
 <h2 id="6-estado-vigente">6. Estado vigente<a class="headerlink" href="#6-estado-vigente" title="Permanent link">&para;</a></h2>
 <p>A matriz permanece <code>active</code> como síntese governada. Seis handoffs do fluxo de solicitação estão integralmente validados por UXA-090/092: <code>TRN-105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code> e <code>112</code>.</p>
-<p><code>TRN-110</code> permanece parcial enquanto <code>PER-107 — Central de Atualizações</code> estiver ausente. A UXA-093 não é iniciada por esta sincronização.</p>
+<p><code>TRN-110</code> permanece parcial com <code>PER-106</code> validada e <code>PER-107</code> materializada. A próxima frente possível é UXA-094, mediante autorização separada.</p>
 
 
 

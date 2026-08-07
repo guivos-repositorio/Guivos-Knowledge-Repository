@@ -6783,10 +6783,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-efeito-da-uxa-092" class="md-nav__link">
+  <a href="#8-efeito-da-uxa-093" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Efeito da UXA-092
+        8. Efeito da UXA-093
       
     </span>
   </a>
@@ -9108,10 +9108,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-efeito-da-uxa-092" class="md-nav__link">
+  <a href="#8-efeito-da-uxa-093" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Efeito da UXA-092
+        8. Efeito da UXA-093
       
     </span>
   </a>
@@ -9157,7 +9157,7 @@
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.</p>
-<p>A versão 0.9.0 preserva as 37 transições, mantém as cinco validações integrais da UXA-090 e promove <code>GKR-TRN-108</code> a <code>integralmente validada</code> após a reformulação e validação de <code>PER-105</code>/<code>PER-106</code> pela UXA-092. <code>GKR-TRN-110</code> permanece parcial porque <code>PER-107</code> continua ausente.</p>
+<p>A versão 0.10.0 preserva as 37 transições e as seis validações integrais já vigentes no fluxo de solicitação. A UXA-093 materializa o destino de <code>GKR-TRN-110</code>, mas a ligação permanece <code>parcial</code> porque ainda não foi validada ponta a ponta. <code>GKR-TRN-111</code> permanece <code>ausente</code> porque <code>PER-108</code> continua sem materialização vigente.</p>
 <p>Permanecem vigentes as correções estruturais anteriores:</p>
 <ul>
 <li>todos os endpoints resolvem para IDs registrados;</li>
@@ -9187,7 +9187,7 @@
 </tr>
 <tr>
 <td>parcial</td>
-<td>origem, destino ou efeito possuem cobertura incompleta</td>
+<td>origem, destino ou efeito possuem cobertura incompleta ou a ligação ainda não foi validada como conjunto</td>
 </tr>
 <tr>
 <td>contratada</td>
@@ -9195,7 +9195,7 @@
 </tr>
 <tr>
 <td>ausente</td>
-<td>ligação necessária conhecida sem materialização</td>
+<td>ligação necessária conhecida sem materialização suficiente</td>
 </tr>
 <tr>
 <td>não examinada</td>
@@ -9235,7 +9235,7 @@
 </tr>
 </tbody>
 </table>
-<p>A UXA-092 não cria transições novas.</p>
+<p>A UXA-093 não cria transições novas.</p>
 <h2 id="4-jornada-pessoal">4. Jornada pessoal<a class="headerlink" href="#4-jornada-pessoal" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9523,15 +9523,15 @@
 <td>GKR-SURF-PER-106</td>
 <td>GKR-SURF-PER-107</td>
 <td>participante</td>
-<td>direta</td>
-<td>acessar atualizações do vínculo</td>
-<td>UXA-056; UXA-059</td>
-<td>origem validada organiza participações e estados relacionados; destino futuro deverá apresentar comunicações e mudanças autorizadas sem transformar Meus Coletivos em feed</td>
-<td>vínculo ativo; PER-107 ainda ausente</td>
-<td>permanecer ou retornar em Meus Coletivos; nenhuma navegação é afirmada como disponível nesta UXA</td>
-<td>UXA-092 na origem</td>
+<td>direta; controle de atenção</td>
+<td>acessar atualizações relacionadas aos vínculos</td>
+<td>UXA-056; UXA-058; UXA-059</td>
+<td>origem validada organiza vínculos; destino materializado por UXA-093 apresenta origem, natureza, autoridade, leitura, ação e prazo sem transformar a experiência em feed</td>
+<td>vínculo ou autorização pertinente ao objeto; ambos os endpoints existem, mas o handoff ainda não foi validado como conjunto</td>
+<td>permanecer/retornar a Meus Coletivos; leitura não conclui ação substantiva; concorrência e idempotência ainda exigem validação</td>
+<td>UXA-092 na origem; UXA-093 no destino</td>
 <td>parcial</td>
-<td>GKR-SURF-PER-107 continua ausente</td>
+<td>validar gatilho, contexto, retorno, concorrência, leitura versus ação e efeito ponta a ponta</td>
 </tr>
 <tr>
 <td>GKR-TRN-111</td>
@@ -9539,14 +9539,14 @@
 <td>GKR-SURF-PER-108</td>
 <td>participante</td>
 <td>direta; condicional</td>
-<td>selecionar Coletivo ou atualização</td>
-<td>UXA-059</td>
-<td>abre início operacional do participante</td>
-<td>vínculo e papel</td>
-<td>retorno às atualizações</td>
-<td>—</td>
+<td>selecionar Coletivo ou atualização que exija contexto interno</td>
+<td>UXA-058; UXA-059</td>
+<td>origem materializada não cria por si só o Início do Participante</td>
+<td>vínculo e papel; PER-108 ainda não vigente</td>
+<td>retorno às atualizações; nenhum destino é afirmado como disponível</td>
+<td>UXA-093 apenas na origem</td>
 <td>ausente</td>
-<td>Início do Participante em reformulação</td>
+<td>Início do Participante em reformulação e sem materialização vigente</td>
 </tr>
 <tr>
 <td>GKR-TRN-112</td>
@@ -9879,14 +9879,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="8-efeito-da-uxa-092">8. Efeito da UXA-092<a class="headerlink" href="#8-efeito-da-uxa-092" title="Permanent link">&para;</a></h2>
-<p>A UXA-092 não cria transições novas e preserva as cinco ligações integralmente validadas pela UXA-090.</p>
-<p>Ela promove somente uma continuidade adicional:</p>
+<h2 id="8-efeito-da-uxa-093">8. Efeito da UXA-093<a class="headerlink" href="#8-efeito-da-uxa-093" title="Permanent link">&para;</a></h2>
+<p>A UXA-093 não cria transições novas e preserva as seis ligações integralmente validadas no fluxo de solicitação: <code>105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code> e <code>112</code>.</p>
+<p>Ela altera somente a evidência material de continuidade seguinte:</p>
 <ul>
-<li><code>GKR-TRN-108</code> passa de <code>parcial</code> para <code>integralmente validada</code> após revalidação do resultado aprovado de <code>PER-105</code>, validação de <code>PER-106</code> e confirmação de que o vínculo é formado pela decisão autorizada antes da navegação opcional;</li>
-<li><code>GKR-TRN-110</code> permanece <code>parcial</code>, pois <code>PER-106</code> agora é uma origem validada, mas <code>PER-107</code> continua ausente.</li>
+<li><code>GKR-TRN-110</code> permanece <code>parcial</code>, agora com <code>PER-106</code> validada na origem e <code>PER-107</code> materializada no destino; gatilho, contexto, retorno, concorrência, idempotência e leitura versus ação ainda não foram validados como uma ligação única;</li>
+<li><code>GKR-TRN-111</code> permanece <code>ausente</code>, agora com origem materializada, porque <code>PER-108</code> continua sem materialização vigente.</li>
 </ul>
-<p>O fluxo de solicitação passa a possuir seis handoffs integralmente validados: <code>105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code> e <code>112</code>.</p>
 <h2 id="9-regras-de-uso">9. Regras de uso<a class="headerlink" href="#9-regras-de-uso" title="Permanent link">&para;</a></h2>
 <ul>
 <li>origem e destino materializados ou validados não presumem transição validada;</li>
@@ -9897,6 +9896,7 @@
 <li>um handoff exige autoridade, identidade, dados, efeito, retorno, interrupção e tratamento de concorrência explícitos;</li>
 <li>estado obsoleto não pode produzir efeito sobre estado canônico mais recente;</li>
 <li>repetição de interação ou entrega não pode duplicar o efeito lógico;</li>
+<li>estado <code>lido</code> não pode ser confundido com estado substantivo, consentimento ou ação concluída;</li>
 <li>uma versão visual reformulada exige revalidação antes de ser tratada como versão funcionalmente validada;</li>
 <li>navegação posterior a uma decisão não deve ser confundida com gate para o efeito já confirmado;</li>
 <li>transições ausentes permanecem registradas sem seta afirmativa de implementação;</li>
