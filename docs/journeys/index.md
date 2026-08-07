@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -22,6 +22,7 @@ related:
   - UXA-096
   - UXA-097
   - UXA-098
+  - UXA-099
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -62,6 +63,7 @@ UXA-090 — cinco handoffs de solicitação validados ponta a ponta
 → UXA-096 — Central/Início revalidados e TRN-111 validada ponta a ponta
 → UXA-097 — primeira Tela Hoje materializada; PER-007 revalidada; TRN-007 validada ponta a ponta
 → UXA-098 — publicação, descoberta, Mapa, Lista e Detalhe validados como continuidade integrada
+→ UXA-099 — dez estados residuais Opportunity Boost validados
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -70,82 +72,65 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.26.0 | UXA-098 |
+| visão geral das Jornadas Integradas | `active` 0.27.0 | UXA-099 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
-| Jornada da Pessoa | `draft` 0.11.0 | UXA-098 |
-| Jornada do Coletivo | `draft` 0.12.0 | UXA-096 |
-| Jornada da Organização | `draft` 0.4.0 | UXA-098 |
+| Jornada da Pessoa | `draft` 0.11.0 | sem alteração em UXA-099 |
+| Jornada do Coletivo | `draft` 0.12.0 | sem alteração em UXA-099 |
+| Jornada da Organização | `draft` 0.4.0 | sem alteração em UXA-099 |
 | handoffs e cenários | `active` | sínteses preservadas |
-| catálogo integrado | `active` 0.21.0 | sem alteração visual em UXA-098 |
-| registro de superfícies | `active` 0.14.0 | sem mudança de superfície em UXA-098 |
-| detalhamento da Pessoa | `active` 0.9.0 | sem mudança em UXA-098 |
-| registro de transições | `active` 0.15.0 | UXA-098 |
-| galeria visual integrada | `active` 0.16.0 | sem alteração visual em UXA-098 |
-| página da Pessoa | `active` 0.4.0 | sem alteração visual em UXA-098 |
-| página de Coletivos | `active` 0.13.0 | UXA-096 |
-| matriz por SVG | `active` 0.14.0 | sem alteração visual em UXA-098 |
-| registro de lacunas | `active` 0.23.0 | UXA-098 |
+| catálogo integrado | `active` 0.22.0 | UXA-099 |
+| registro de superfícies | `active` 0.15.0 | UXA-099 |
+| detalhamento da Pessoa | `active` 0.9.0 | sem alteração em UXA-099 |
+| registro de transições | `active` 0.16.0 | UXA-099; sem promoção de TRN-305 |
+| galeria visual integrada | `active` 0.17.0 | UXA-099 |
+| página da Pessoa | `active` 0.4.0 | sem alteração em UXA-099 |
+| página de Coletivos | `active` 0.13.0 | sem alteração em UXA-099 |
+| Opportunity Boost — Operação, Relatórios e Resíduos | `active` 0.4.0 | UXA-099 |
+| matriz por SVG | `active` 0.15.0 | UXA-099 |
+| registro de lacunas | `active` 0.24.0 | UXA-099 |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 5. Resultado da UXA-098
+## 5. Resultado da UXA-099
 
-A UXA-098:
+A UXA-099:
 
-- não cria nem altera SVG;
-- preserva as validações locais de `ORG-003`, `PER-201`, `PER-202` e `PER-203`;
-- promove `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` a integralmente validadas;
-- formaliza elegibilidade à descoberta sem garantia de exposição;
-- formaliza Mapa e Lista como uma única consulta;
-- formaliza Mapa/Lista → Detalhe com identidade e estado canônicos;
-- separa o efeito externo posterior em `TRN-205`;
-- preserva a separação entre inventário orgânico e patrocinado;
+- valida os dez SVGs residuais da UXA-055;
+- aprova oito sem alteração e reforma dois;
+- preserva 109 SVGs, 109 associações e 28 perfis;
+- eleva validações funcionais vigentes de 99 para **109**;
+- reduz pendências específicas de 10 para **0**;
+- valida `COM-005` no escopo dos dez estados;
+- preserva `TRN-305` como parcial;
+- consolida erro ≠ zero, baixa oferta orgânica, pausa protetiva em falha material, reversibilidade, separação denúncia/contestação e idempotência;
 - não promove jornadas.
 
-## 6. Cobertura visual preservada
+## 6. Cobertura visual
 
 | Indicador | Resultado |
 |---|---:|
 | SVGs existentes | **109** |
 | associações individuais | **109** |
 | perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **99** |
-| pendentes de validação específica | **10** |
+| com validação funcional vigente | **109** |
+| pendentes de validação específica | **0** |
 | IDs com referência visual | **30 de 40** |
 | responsabilidades sem SVG dedicado | **9** |
 | fronteira sem tela por definição | 1 |
 
-As dez pendências remanescentes são exclusivamente os estados residuais UXA-055.
+## 7. Continuidades anteriores preservadas
 
-## 7. Continuidade V2 validada
+`TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` permanecem integralmente validadas pela UXA-098. `TRN-007` permanece integralmente validada pela UXA-097. Oito handoffs permanecem integralmente validados no trecho governado de Coletivos: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`.
 
-```text
-ORG-003 — oportunidade aprovada e ativa
-→ TRN-203 — elegibilidade à descoberta, sem exposição garantida
-→ PER-201 — Mapa
-↔ TRN-210 — mesma consulta
-→ PER-202 — Lista
+## 8. Separações obrigatórias
 
-PER-201 → TRN-204 → PER-203
-PER-202 → TRN-211 → PER-203
-```
+- validar `COM-005` não valida automaticamente `TRN-305`;
+- estados residuais publicitários não alteram catálogo, busca ou ordenação orgânicos;
+- mudança material não confirmada não autoriza entrega futura por inércia;
+- denúncia, contestação e preferência permanecem fluxos diferentes;
+- repetir a mesma intenção não duplica efeito lógico;
+- validação documental não equivale a implementação técnica.
 
-Estado canônico, identidade lógica, retorno, interrupção e idempotência prevalecem em toda a cadeia. `TRN-205` permanece separada para eventual efeito externo.
+## 9. Próxima transição possível
 
-## 8. Continuidade de Coletivos preservada
-
-Oito handoffs permanecem integralmente validados no trecho governado de Coletivos: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`.
-
-## 9. Regras preservadas
-
-- publicação ativa não garante descoberta individual, distribuição ou posição;
-- Mapa e Lista são modos da mesma consulta;
-- abrir Detalhe não equivale a interesse, inscrição ou evolução;
-- estado canônico prevalece sobre estado visual obsoleto;
-- pagamento não altera relevância funcional;
-- repetição não duplica oportunidade ou efeito lógico;
-- validação integral documental não equivale a implementação técnica.
-
-## 10. Próxima transição possível
-
-Com `V2` encerrada, a próxima prioridade de validação registrada é `V3 — dez estados residuais UXA-055`. **UXA-099 não foi iniciada.**
+Com `V3` encerrada, a próxima prioridade de validação registrada é `V4 — efeito externo de oportunidades`, associada a `TRN-205`. **UXA-100 não foi iniciada.**
