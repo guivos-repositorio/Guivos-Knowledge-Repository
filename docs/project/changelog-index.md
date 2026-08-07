@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.12.0
+version: 1.13.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -19,6 +19,7 @@ related:
   - GKR-CHANGELOG-UXA-093-001
   - GKR-CHANGELOG-UXA-094-001
   - GKR-CHANGELOG-UXA-095-001
+  - GKR-CHANGELOG-UXA-096-001
 normative: false
 ---
 
@@ -26,36 +27,32 @@ normative: false
 
 ## 1. Finalidade
 
-Este índice organiza os registros recentes sem reescrever o ledger histórico preservado no `CHANGELOG.md` da raiz. Changelogs não substituem `GKR-STATE-001`.
+Este índice organiza registros recentes sem substituir `GKR-STATE-001` ou o ledger histórico da raiz.
 
-## 2. Baseline proposta pela UXA-095
+## 2. Registros recentes
 
-- [Registro do Estado Atual — 2.21.0 e M7.82](current-state-register.md)
-- [UXA-085 — Promoção Controlada da Galeria](changelog-uxa-085-2026-08-07.md)
-- [UXA-086 — Materialização da Visão Geral do Responsável](changelog-uxa-086-2026-08-07.md)
-- [UXA-087 — Validação Funcional da Visão Geral do Responsável](changelog-uxa-087-2026-08-07.md)
-- [UXA-088 — Materialização da Gestão de Solicitações](changelog-uxa-088-2026-08-07.md)
-- [UXA-089 — Validação da Gestão de Solicitações](changelog-uxa-089-2026-08-07.md)
-- [UXA-090 — Validação Integrada dos Handoffs](changelog-uxa-090-2026-08-07.md)
-- [UXA-091 — Meus Coletivos e Continuidade Pós-Aprovação](changelog-uxa-091-2026-08-07.md)
-- [UXA-092 — Validação de Meus Coletivos e Continuidade Pós-Aprovação](changelog-uxa-092-2026-08-07.md)
-- [UXA-093 — Materialização da Central de Atualizações](changelog-uxa-093-2026-08-07.md)
-- [UXA-094 — Validação da Central de Atualizações e TRN-110](changelog-uxa-094-2026-08-07.md)
-- [UXA-095 — Materialização do Início do Participante e TRN-111](changelog-uxa-095-2026-08-07.md)
+- [Registro do Estado Atual — 2.22.0 e M7.83](current-state-register.md)
+- [UXA-085](changelog-uxa-085-2026-08-07.md)
+- [UXA-086](changelog-uxa-086-2026-08-07.md)
+- [UXA-087](changelog-uxa-087-2026-08-07.md)
+- [UXA-088](changelog-uxa-088-2026-08-07.md)
+- [UXA-089](changelog-uxa-089-2026-08-07.md)
+- [UXA-090](changelog-uxa-090-2026-08-07.md)
+- [UXA-091](changelog-uxa-091-2026-08-07.md)
+- [UXA-092](changelog-uxa-092-2026-08-07.md)
+- [UXA-093](changelog-uxa-093-2026-08-07.md)
+- [UXA-094](changelog-uxa-094-2026-08-07.md)
+- [UXA-095](changelog-uxa-095-2026-08-07.md)
+- [UXA-096](changelog-uxa-096-2026-08-07.md)
 
-A baseline 2.21.0/M7.82 somente se torna vigente na `main` após integração governada da UXA-095.
-
-## 3. Regra de continuidade
-
-Novos registros devem identificar pacote e baseline, preservar `GKR-STATE-001`, informar limites, vincular validações e evitar declarar integração ainda não comprovada.
-
-## 4. Estado deste índice
+## 3. Estado
 
 | Elemento | Estado proposto |
 |---|---|
-| ledger raiz | preservado como histórico legado |
-| índice atual | ativo 1.12.0 |
-| estado transversal | `GKR-STATE-001` 2.21.0 após eventual integração |
-| marco | M7.82 |
-| última UXA proposta | UXA-095 |
-| próxima UXA | UXA-096, não iniciada |
+| índice | active 1.13.0 |
+| GKR-STATE | 2.22.0 após integração governada |
+| marco | M7.83 |
+| última UXA | UXA-096 |
+| próxima UXA | UXA-097, não iniciada |
+
+Novos registros devem preservar autoridade, limites e estado de integração comprovado.
