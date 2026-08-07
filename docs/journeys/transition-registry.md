@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -21,6 +21,7 @@ related:
   - UXA-096
   - UXA-097
   - UXA-098
+  - UXA-099
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -33,7 +34,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.15.0 preserva as 37 transições. A UXA-098 valida `GKR-TRN-203`, `GKR-TRN-204`, `GKR-TRN-210` e `GKR-TRN-211` ponta a ponta, sem criar nova transição.
+A versão 0.16.0 preserva as 37 transições. A UXA-099 valida `COM-005` como conjunto de estados, mas não promove automaticamente `GKR-TRN-305` ou qualquer outra transição.
 
 ## 2. Convenções de estado
 
@@ -109,14 +110,6 @@ Regras integradas:
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando Coletivo e escopo | representação/autoridade vigentes; navegação não altera fila | UXA-087; UXA-089; UXA-090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | papel e escopo de audiência | UXA-058; UXA-059 | contratada | operação interna não materializada |
 
-### 5.1 Contrato preservado de `GKR-TRN-110`
-
-A UXA-098 não altera `TRN-110`: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.
-
-### 5.2 Contrato preservado de `GKR-TRN-111`
-
-A UXA-098 não altera `TRN-111`. Permanecem vigentes as regras de vínculo atual, permissão revalidada, retorno neutro, estado canônico e idempotência estabelecidas pela UXA-096.
-
 ## 6. Organização, oportunidades e relações bilaterais
 
 | ID | Origem | Destino | Estado | Evidência / lacuna principal |
@@ -133,54 +126,40 @@ A UXA-098 não altera `TRN-111`. Permanecem vigentes as regras de vínculo atual
 | GKR-TRN-210 | PER-201 | PER-202 | **integralmente validada** | **UXA-098 — mesma consulta, contexto, região, filtros, seleção e permissões preservados** |
 | GKR-TRN-211 | PER-202 | PER-203 | **integralmente validada** | **UXA-098 — Lista → Detalhe com identidade, estado e retorno preservados** |
 
-### 6.1 Contrato validado de `GKR-TRN-203`
+### 6.1 Contrato V2 preservado
 
-```text
-ORG-003
-→ oportunidade aprovada, ativa e materialmente vigente
-→ TRN-203
-→ candidata ao inventário descobrível de PER-201
-```
+A UXA-099 não altera as validações da UXA-098. Elegibilidade à descoberta continua sem garantia de impressão, posição, recomendação, alcance ou relevância individual. Mapa e Lista continuam modos da mesma consulta e o efeito externo posterior permanece em `GKR-TRN-205`.
 
-Elegibilidade à descoberta não garante impressão, posição, recomendação, alcance ou relevância individual. Pausa, expiração, encerramento ou mudança material prevalecem sobre cartões obsoletos. Reprocessamento do mesmo estado é idempotente.
+### 6.2 Fronteira comercial preservada
 
-### 6.2 Contrato validado de `GKR-TRN-210`
-
-Mapa e Lista são representações da mesma consulta. A alternância preserva contexto de atuação, origem, região, busca, filtros, versão conhecida dos resultados, seleção e permissões territoriais. Mudar o modo não cria autorização, personalização, relevância ou efeito comercial.
-
-### 6.3 Contrato validado de `GKR-TRN-204` e `GKR-TRN-211`
-
-Mapa e Lista conduzem ao mesmo `PER-203` canônico. O Detalhe preserva a identidade lógica e a origem de retorno, consulta o estado material vigente antes de ação substantiva e não transforma abertura em interesse, inscrição, recomendação ou evolução.
-
-`TRN-204` e `TRN-211` terminam no Detalhe. O efeito externo posterior permanece exclusivamente em `GKR-TRN-205`.
-
-### 6.4 Fronteira comercial preservada
-
-Opportunity Boost não altera o contrato orgânico: pagamento amplia distribuição publicitária identificada, não relevância funcional. `TRN-304` e `TRN-306` permanecem fora da UXA-098.
+Opportunity Boost não altera o contrato orgânico: pagamento amplia distribuição publicitária identificada, não relevância funcional. `TRN-304` e `TRN-306` permanecem parciais.
 
 ## 7. Opportunity Boost
 
 | ID | Origem | Destino | Estado | Lacuna principal |
 |---|---|---|---|---|
-| GKR-TRN-301 | COM-001 | COM-004 | parcial | estados residuais e regras econômicas |
+| GKR-TRN-301 | COM-001 | COM-004 | parcial | regras econômicas e integração ponta a ponta |
 | GKR-TRN-302 | COM-004 | COM-002 | parcial | integração com superfícies orgânicas |
 | GKR-TRN-303 | COM-003 | COM-002 | localmente validada | continuidade transversal |
 | GKR-TRN-304 | COM-002 | PER-201 | parcial | integração orgânico–patrocinado |
-| GKR-TRN-305 | COM-004 | COM-005 | parcial | dez estados residuais UXA-055 |
+| GKR-TRN-305 | COM-004 | COM-005 | **parcial** | **COM-005 validado pela UXA-099; ligação origem→estado residual ainda não examinada ponta a ponta** |
 | GKR-TRN-306 | COM-002 | PER-202 | parcial | retorno patrocinado → lista orgânica |
 
-## 8. Efeito da UXA-098
+### 7.1 Efeito da UXA-099 sobre `TRN-305`
+
+A UXA-099 valida os destinos residuais de `COM-005`, inclusive erro, inventário, baixa oferta, falha material e controles da pessoa. Isso não comprova a ligação completa a partir de `COM-004` para todos os estados e contextos. `TRN-305` permanece parcial até validação específica de origem, destino, autoridade, efeito, retorno, interrupção e concorrência.
+
+## 8. Efeito da UXA-099
 
 - transições totais: 37;
 - nenhuma transição nova;
-- `TRN-203`: não examinada → **integralmente validada**;
-- `TRN-204`: parcial → **integralmente validada**;
-- `TRN-210`: parcial → **integralmente validada**;
-- `TRN-211`: parcial → **integralmente validada**;
+- nenhuma transição muda de estado nesta frente;
+- `TRN-305` permanece parcial com lacuna refinada após validação de `COM-005`;
+- `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` permanecem integralmente validadas;
 - `TRN-205`, `TRN-304` e `TRN-306` permanecem fora do escopo;
 - `TRN-007`, `TRN-110` e `TRN-111` permanecem integralmente validadas;
 - oito handoffs integralmente validados no trecho de Coletivos permanecem inalterados.
 
 ## 9. Próximo gate
 
-Com `V2` encerrada documentalmente pela UXA-098, a próxima prioridade registrada é `V3 — dez estados residuais UXA-055`. **UXA-099 não foi iniciada.**
+Com `V3` encerrada documentalmente pela UXA-099, a próxima prioridade registrada é `V4 — efeito externo de oportunidades`, associada a `TRN-205`. **UXA-100 não foi iniciada.**
