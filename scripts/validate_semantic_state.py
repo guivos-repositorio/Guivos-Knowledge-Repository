@@ -11,7 +11,7 @@ STATE = ROOT / "docs/project/current-state-register.md"
 README = ROOT / "README.md"
 HOME = ROOT / "docs/index.md"
 UXA_DIR = ROOT / "docs/experience-architecture"
-UXA_INDEX = UXA_DIR / "uxa-047-098-index.md"
+UXA_INDEX = UXA_DIR / "uxa-047-099-index.md"
 CONTROL_PATHS = [
     ROOT / "docs/project/global-semantic-state-synchronization-policy.md",
     ROOT / "docs/project/changelog-index.md",
@@ -98,7 +98,7 @@ def main() -> int:
         if match:
             artifacts[int(match.group(1))] = path
 
-    for number in range(47, 99):
+    for number in range(47, 100):
         path = artifacts.get(number)
         if path is None:
             errors.append(f"artefato UXA-{number:03d} ausente")
@@ -117,7 +117,7 @@ def main() -> int:
 
     print("GKR semantic state validation: PASS")
     print(f"state={version} milestone={milestone} latest={latest} next={next_uxa}")
-    print(f"uxa_artifacts=52 surfaces={len(surfaces)}")
+    print(f"uxa_artifacts=53 surfaces={len(surfaces)}")
     return 0
 
 
