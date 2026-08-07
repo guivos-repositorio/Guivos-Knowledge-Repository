@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.62.0
-title: Roadmap Arquitetural — Gestão de Solicitações Validada
+id: ROADMAP-12.63.0
+title: Roadmap Arquitetural — Handoffs de Solicitação Validados
 status: active
-version: 12.62.0
+version: 12.63.0
 owner: Guivos
 last_updated: 2026-08-07
 supersedes_partial:
-  - ROADMAP-12.61.0
+  - ROADMAP-12.62.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -34,6 +34,7 @@ related:
   - UXA-087
   - UXA-088
   - UXA-089
+  - UXA-090
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -43,10 +44,10 @@ related:
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - M7.76
+  - M7.77
 ---
 
-# Roadmap Arquitetural — Gestão de Solicitações Validada
+# Roadmap Arquitetural — Handoffs de Solicitação Validados
 
 ## 1. Autoridade
 
@@ -57,13 +58,14 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | gestão de solicitações do responsável reformulada e validada; handoffs pendentes | UXA-089; M7.76 |
-| Registros granulares | 40 superfícies e 37 transições | UXA-080; UXA-089 |
+| Marco | cinco handoffs de solicitação validados ponta a ponta; continuidade pós-aprovação parcial | UXA-090; M7.77 |
+| Registros granulares | 40 superfícies e 37 transições | UXA-080; UXA-090 |
 | Galeria visual | `active` 0.9.0; 105 SVGs | UXA-089 |
 | página de Coletivos | `active` 0.7.0 | UXA-089 |
 | matriz por SVG | 105 arquivos / 25 perfis; `active` 0.7.0 | UXA-089 |
-| validações funcionais registradas | 95 | UXA-089 e pacotes anteriores |
+| validações funcionais de SVG | 95 | UXA-089 e pacotes anteriores |
 | pendentes de validação específica | 10 | UXA-055 |
+| handoffs integralmente validados | 5 | UXA-090 |
 | Jornadas principais | Pessoa, Coletivo e Organização em `draft` | Jornadas Integradas |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -77,80 +79,89 @@ UXA-070 a UXA-075 — estruturação e promoção seletiva das Jornadas Integrad
 → UXA-087 — COL-002 reformulada e validada
 → UXA-088 — COL-003 materializada em sete estados desktop
 → UXA-089 — COL-003 reformulada e validada funcionalmente
+→ UXA-090 — cinco handoffs elegíveis validados ponta a ponta
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
-## 4. Resultado da UXA-089
+## 4. Resultado da UXA-090
 
 | Dimensão | Resultado |
 |---|---|
-| superfície validada | GKR-SURF-COL-003 — gestão de solicitações |
-| canal | computador protegido |
-| SVGs existentes na família | 7 |
-| SVGs reformulados | 6 |
-| SVGs totais | 105 |
-| perfis totais | 25 |
-| validações funcionais | 95 |
-| pendentes | 10, exclusivamente UXA-055 |
-| TRN-105, 106, 107, 109 e 112 | endpoints validados como superfícies; continuam parciais |
-| GKR-TRN-108 | origem validada; PER-106 ausente; continua parcial |
-| GKR-SURF-PER-106 | ausente |
+| GKR-TRN-105 | integralmente validada |
+| GKR-TRN-106 | integralmente validada |
+| GKR-TRN-107 | integralmente validada |
+| GKR-TRN-109 | integralmente validada |
+| GKR-TRN-112 | integralmente validada |
+| GKR-TRN-108 | parcial |
+| PER-106 | ausente |
+| SVGs adicionados | 0 |
+| transições adicionadas | 0 |
 | jornadas promovidas | 0 |
 | Engenharia iniciada | não |
 
-## 5. Reformulações funcionais consolidadas
+## 5. Contrato integrado consolidado
 
-- fila distingue estimativa de prazo de resposta;
-- ordenação não cria prioridade substantiva automática;
-- critérios de decisão precisam ter sido apresentados à Pessoa;
-- pedido adicional não usa acessibilidade como barreira de entrada;
-- acessibilidade permanece responsabilidade de acomodação;
-- autoridade é verificada pelo escopo concedido;
-- confirmação não cria nem amplia permissão;
-- aprovação e recusa preservam fundamento e consequência;
-- autoridade insuficiente não oferece autoelevação de permissão.
+Os cinco handoffs validados preservam:
 
-## 6. Trilha governada
+- identidade lógica estável da solicitação;
+- um único estado canônico vigente;
+- autoridade revalidada antes de efeito;
+- dados mínimos e finalidade declarada;
+- resolução de concorrência entre cancelamento, expiração, resposta e decisão;
+- estado obsoleto incapaz de sobrescrever evento mais recente;
+- efeito lógico único diante de repetição ou reenvio;
+- retorno e interrupção sem decisão implícita.
+
+A validação é documental e funcional. Não especifica API, lock, fila, persistência ou implementação técnica.
+
+## 6. Continuidade de aprovação
+
+`GKR-TRN-108` permanece fora do fechamento integrado porque:
+
+1. `GKR-SURF-PER-106 — Meus Coletivos` ainda não está materializada;
+2. o resultado `aprovada` já é observável na família `PER-105` antes da futura entrada no ambiente do participante.
+
+A futura materialização de `PER-106` deverá refinar explicitamente essa passagem, sem pular o resultado compreensível da solicitação.
+
+## 7. Trilha governada
 
 ```text
 COL-002 validada
-→ COL-003 materializada e validada
-→ validar integralmente os handoffs bilaterais elegíveis
-→ somente depois avaliar materialização de PER-106
+→ TRN-112 integralmente validada
+→ COL-003 validada
+↔ TRN-105/106/107/109 integralmente validadas com PER-105
+→ TRN-108 parcial
+→ materializar PER-106 e refinar continuidade pós-aprovação
 ```
 
-`GKR-TRN-108` permanece fora do fechamento integrado enquanto `GKR-SURF-PER-106` estiver ausente.
-
-## 7. Prioridade de Coletivos
+## 8. Prioridade de Coletivos
 
 ```text
 COL-002 — validada
-→ COL-003 — validada no escopo da superfície
-→ TRN-105/106/107/109/112 — validação integrada pendente
-→ PER-106 — Meus Coletivos, ausente
+→ COL-003 — validada
+→ TRN-105/106/107/109/112 — integralmente validadas
+→ TRN-108 + PER-106 — continuidade parcial / superfície ausente
 → PER-107 — Central de Atualizações, ausente
 → PER-108 — Início do Participante, reformulação pendente
 ```
 
-## 8. Dívidas preservadas
+## 9. Dívidas preservadas
 
+- `PER-106` e continuidade pós-aprovação;
 - dez estados da UXA-055 sem validação;
-- handoffs bilaterais de solicitação sem validação integrada;
-- `TRN-108` bloqueada por `PER-106` ausente;
 - compreensão inicial → Tela Hoje;
 - publicação → descoberta;
 - efeito externo de oportunidades;
-- erros, retornos e interrupções integrados.
+- erros, retornos e interrupções integrados;
+- operação interna restante do Coletivo.
 
-## 9. Limites
+## 10. Limites
 
-A UXA-089 não materializa `PER-106`, `PER-107`, `PER-108` ou `COL-004` a `COL-008`, não promove jornadas e não inicia protótipo, teste com pessoas ou Engenharia.
+A UXA-090 não materializa `PER-106`, `PER-107`, `PER-108` ou `COL-004` a `COL-008`, não promove jornadas, não cria novo SVG ou transição e não inicia protótipo, teste com pessoas ou Engenharia.
 
-## 10. Próxima iniciativa possível
+## 11. Próxima iniciativa possível
 
-> **UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos**
+> **UXA-091 — Materialização Controlada de Meus Coletivos (`GKR-SURF-PER-106`) e Refinamento da Continuidade Pós-Aprovação**
 
-A UXA-090 deverá examinar `GKR-TRN-105`, `106`, `107`, `109` e `112` como ligações entre superfícies já validadas. `GKR-TRN-108` continuará parcial enquanto `GKR-SURF-PER-106` permanecer ausente.
-
-A UXA-090 depende de autorização separada e não é iniciada por este pacote.
+A UXA-091 depende de autorização separada e não é iniciada por este pacote.

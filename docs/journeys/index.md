@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.17.0
+version: 0.18.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -26,6 +26,7 @@ related:
   - UXA-087
   - UXA-088
   - UXA-089
+  - UXA-090
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -51,7 +52,7 @@ Ela não substitui contratos, wireframes, validações ou registros canônicos.
 4. use o [Catálogo de Telas](screen-catalog.md) para visão agregada;
 5. localize superfícies e transições por ID;
 6. confira separadamente maturidade, materialização, validação e continuidade;
-7. consulte as [Lacunas](gaps.md) sem confundir superfície validada com jornada concluída.
+7. consulte as [Lacunas](gaps.md) sem confundir transição validada documentalmente com jornada implementada.
 
 ## 3. Vistas disponíveis
 
@@ -77,6 +78,7 @@ UXA-070 a UXA-075 — seção integrada estruturada, reformulada, revalidada e p
 → UXA-087 — Visão Geral do Responsável reformulada e validada funcionalmente
 → UXA-088 — Gestão de Solicitações do Responsável materializada em sete estados desktop
 → UXA-089 — Gestão de Solicitações reformulada e validada funcionalmente
+→ UXA-090 — cinco handoffs elegíveis de solicitação validados ponta a ponta
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -85,40 +87,42 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.17.0 | UXA-089 |
+| visão geral das Jornadas Integradas | `active` 0.18.0 | UXA-090 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
 | handoffs e cenários | `active` | UXA-074; UXA-075 |
 | catálogo integrado | `active` 0.14.0 | UXA-089 |
 | registro de superfícies | `active` 0.7.0 | UXA-089 |
-| registro de transições | `active` 0.6.0 | UXA-089; transições de solicitação continuam parciais |
+| registro de transições | `active` 0.7.0 | UXA-090; cinco handoffs integralmente validados |
 | detalhamento do Coletivo | `active` 0.6.0 | UXA-089 |
 | demais detalhamentos | `active` 0.2.0 | UXA-080 |
 | galeria visual integrada | `active` 0.9.0 | UXA-089 |
 | página de Coletivos | `active` 0.7.0 | UXA-089 |
 | demais páginas visuais | `active` 0.3.0 | UXA-085 |
 | matriz por SVG | `active` 0.7.0 | UXA-089 |
-| registro de lacunas | `active` 0.14.0 | UXA-089 |
+| registro de lacunas | `active` 0.15.0 | UXA-090 |
+| Jornada do Coletivo | `draft` 0.8.0 | UXA-090 |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 6. Resultado da UXA-089
+## 6. Resultado da UXA-090
 
-A UXA-089 valida `GKR-SURF-COL-003 — gestão de solicitações` após reformulação controlada de seis dos sete SVGs desktop da família.
+A UXA-090 valida como ligações completas:
 
-A validação consolida:
+- `GKR-TRN-105` — Pessoa solicitante → responsável;
+- `GKR-TRN-106` — responsável → pedido adicional à Pessoa;
+- `GKR-TRN-107` — resposta adicional → responsável;
+- `GKR-TRN-109` — recusa → Pessoa;
+- `GKR-TRN-112` — Visão Geral do Responsável → gestão de solicitações.
 
-- referência temporal distinguindo estimativa e prazo de resposta;
-- critérios de decisão previamente apresentados à Pessoa;
-- acessibilidade separada de elegibilidade e tratada para acomodação;
-- autoridade verificada por escopo, nunca criada por confirmação;
-- aprovação e recusa com fundamento e consequência compreensíveis;
-- autoridade insuficiente sem autoelevação de permissão.
+O contrato integrado exige identidade estável, estado canônico, autoridade vigente antes de efeito, dados mínimos, resolução de concorrência e efeito lógico único.
 
-Ela não:
+`GKR-TRN-108` permanece parcial porque `GKR-SURF-PER-106` está ausente e a continuidade entre o resultado aprovado em `PER-105` e o ambiente do participante ainda precisa ser refinada.
 
-- valida `GKR-TRN-105` a `GKR-TRN-109` ou `GKR-TRN-112` ponta a ponta;
+A UXA-090 não:
+
+- cria novo SVG ou transição;
 - materializa `GKR-SURF-PER-106`;
-- promove a jornada do Coletivo;
+- promove a Jornada do Coletivo;
 - inicia protótipo, aplicação ou Engenharia de Produto.
 
 ## 7. Cobertura visual
@@ -140,17 +144,20 @@ Os dez pendentes remanescentes correspondem exclusivamente aos estados da UXA-05
 
 - perfis agregados não substituem análise exclusiva por estado;
 - dez estados da UXA-055 permanecem sem validação;
-- `GKR-TRN-105` a `GKR-TRN-109` e `GKR-TRN-112` permanecem parciais;
+- `GKR-TRN-108` permanece parcial;
 - `GKR-SURF-PER-106` continua ausente;
-- continuidades entre pacotes permanecem parciais ou não examinadas;
-- instrumento visual `active` e superfície validada não equivalem a jornada validada.
+- a Jornada do Coletivo permanece `draft`;
+- continuidades entre outros pacotes permanecem parciais ou não examinadas;
+- instrumento visual `active`, superfície validada e transição integralmente validada não equivalem a jornada implementada.
 
 ## 9. Prioridade de Coletivos
 
 ```text
 Visão Geral do Responsável — validada
-→ gestão de solicitações — validada no escopo da superfície
-→ handoffs bilaterais de solicitação — validação integrada pendente
+→ TRN-112 — integralmente validada
+→ gestão de solicitações — validada
+↔ TRN-105/106/107/109 com PER-105 — integralmente validadas
+→ TRN-108 — parcial
 → Meus Coletivos — ausente
 → Central de Atualizações — ausente
 → Início do Participante — reformulação pendente
@@ -163,15 +170,15 @@ O avanço a jusante depende de ato governado separado.
 ```text
 visual existente
 ≠ validação funcional automática
-≠ transição ponta a ponta validada
+≠ transição ponta a ponta automaticamente validada
+≠ validação integral documental igual a implementação
 ≠ jornada completa
-≠ implementação
 ```
 
 Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
 ## 11. Próxima transição possível
 
-**UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos**, mediante autorização separada.
+**UXA-091 — Materialização Controlada de Meus Coletivos (`GKR-SURF-PER-106`) e Refinamento da Continuidade Pós-Aprovação**, mediante autorização separada.
 
-A UXA-090 não foi iniciada.
+A UXA-091 não foi iniciada.

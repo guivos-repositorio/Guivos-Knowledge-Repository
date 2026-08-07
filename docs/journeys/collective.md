@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.7.0
+version: 0.8.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -24,6 +24,7 @@ related:
   - UXA-087
   - UXA-088
   - UXA-089
+  - UXA-090
 normative: false
 ---
 
@@ -47,12 +48,12 @@ propósito e identidade
 | criação e configuração | programado | UXA-059 | cobertura parcial e dispersa | — | ausente como fluxo integral |
 | presença pública | validado | UXA-056 | UXA-016 e Perfil Público | UXA-018; UXA-063 | parcial |
 | descoberta por Pessoas | validado | UXA-056 | UXA-060; UXA-062 | UXA-061; UXA-063 | parcial |
-| recebimento de solicitação | contratado | UXA-056 | perspectiva da Pessoa em UXA-066; operação responsável em UXA-088 | UXA-067 e UXA-089 nas perspectivas respectivas | parcial |
-| visão do responsável | validado | UXA-059 | UXA-086 | UXA-087 | parcial |
-| decisão do responsável | validado no escopo da superfície | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop | UXA-089 | bilateral ainda não validada |
-| formação ou recusa do vínculo | contratado | UXA-014; UXA-056 | resultados na Pessoa em UXA-066 e origem da decisão em UXA-088 | UXA-067; UXA-089 em pacotes distintos | parcial |
+| recebimento de solicitação | validado no handoff elegível | UXA-056 | perspectiva da Pessoa em UXA-066; operação responsável em UXA-088 | UXA-067; UXA-089; UXA-090 | TRN-105 integralmente validada |
+| visão do responsável | validado | UXA-059 | UXA-086 | UXA-087 | TRN-112 integralmente validada para gestão de solicitações |
+| decisão do responsável | validado no escopo da superfície | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop | UXA-089 | pedidos adicionais, respostas e recusa validados bilateralmente pela UXA-090 |
+| formação ou recusa do vínculo | parcial | UXA-014; UXA-056 | recusa em PER-105; aprovação observável em PER-105; PER-106 ausente | recusa integrada por UXA-090; aprovação somente na origem/resultado intermediário | TRN-109 validada; TRN-108 parcial |
 
-A UXA-089 fecha o gate funcional de `COL-003`, mas não converte o conjunto em jornada validada.
+A UXA-090 fecha os handoffs elegíveis, mas não converte o conjunto em jornada validada porque a continuidade de aprovação para `PER-106` e a operação interna posterior permanecem incompletas.
 
 ## 2. Operação do responsável
 
@@ -71,9 +72,9 @@ representação e autoridade
 | Superfície ou responsabilidade | Maturidade primária | Autoridade | Materialização | Validação | Continuidade |
 |---|---|---|---|---|---|
 | representação e autoridade | contratado | UXA-014 | parcial | UXA-018; UXA-087 no escopo aplicável | não examinada integralmente |
-| Visão Geral do Responsável | validado | UXA-059; UXA-086 | UXA-086; 1 SVG reformulado | UXA-087 | saída materializada, transição ainda não validada |
-| gestão de solicitações | validado | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop; 6 reformulados em UXA-089 | UXA-089 | parcial; handoffs não validados como conjunto |
-| participantes e vínculos | programado | UXA-059 | — | — | ausente |
+| Visão Geral do Responsável | validado | UXA-059; UXA-086 | UXA-086; 1 SVG reformulado | UXA-087 | saída para COL-003 validada por TRN-112/UXA-090 |
+| gestão de solicitações | validado | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop; 6 reformulados em UXA-089 | UXA-089 | handoffs 105/106/107/109 e entrada 112 validados por UXA-090 |
+| participantes e vínculos | programado | UXA-059 | — | — | ausente; depende de PER-106/continuidade pós-aprovação |
 | comunicação oficial | programado | UXA-058; UXA-059 | — | — | ausente |
 | atividades e decisões | programado | UXA-059 | parcial ou dispersa | — | não examinada |
 | proteção e moderação | contratado | UXA-058 | cobertura parcial | — | não examinada |
@@ -83,10 +84,10 @@ representação e autoridade
 
 | Origem | Destino | Evidência da origem | Evidência do destino | Estado da transição |
 |---|---|---|---|---|
-| Visão Geral do Responsável | gestão de solicitações | UXA-086; UXA-087 | UXA-088; UXA-089 | ambos endpoints validados como superfícies; `GKR-TRN-112` ainda não validada ponta a ponta |
-| Pessoa solicitante | responsável do Coletivo | UXA-066; UXA-067 | UXA-088; UXA-089 | endpoints validados em pacotes próprios; validação integrada pendente |
-| responsável do Coletivo | Pessoa solicitante | UXA-088; UXA-089 | UXA-066; UXA-067 | efeitos dos pedidos adicionais e resultados existem nos dois lados; validação integrada pendente |
-| aprovação | Meus Coletivos | UXA-088; UXA-089 e resultado na Pessoa | `GKR-SURF-PER-106` ausente | parcial e bloqueada após decisão |
+| Visão Geral do Responsável | gestão de solicitações | UXA-086; UXA-087 | UXA-088; UXA-089 | `GKR-TRN-112` integralmente validada por UXA-090 |
+| Pessoa solicitante | responsável do Coletivo | UXA-066; UXA-067 | UXA-088; UXA-089 | `GKR-TRN-105` e `107` integralmente validadas por UXA-090 |
+| responsável do Coletivo | Pessoa solicitante | UXA-088; UXA-089 | UXA-066; UXA-067 | `GKR-TRN-106` e `109` integralmente validadas por UXA-090 |
+| aprovação | resultado aprovado em PER-105 → Meus Coletivos | UXA-088; UXA-089 e resultado na Pessoa | `GKR-SURF-PER-106` ausente | `GKR-TRN-108` parcial; continuidade precisa ser refinada com PER-106 |
 | Coletivo | Organização | contrato UXA-019 | materialização bilateral ausente | não materializada |
 
 ## 4. Princípios preservados
@@ -100,23 +101,27 @@ representação e autoridade
 - acessibilidade não é critério oculto de elegibilidade;
 - recusa não é reputação ou sanção;
 - expiração não é decisão equivalente do responsável;
+- cancelamento e expiração supervenientes tornam ações anteriores obsoletas;
+- repetição de interação ou entrega não duplica o efeito lógico;
 - atividade, alcance e volume não comprovam avanço humano;
 - materialização não equivale a validação funcional;
-- validação de superfície não equivale a validação de transição.
+- validação de superfície não equivale a validação de transição;
+- validação integral documental não equivale a implementação.
 
 ## 5. Estado da vista
 
 Esta vista permanece `draft` porque:
 
-- `GKR-TRN-105` a `GKR-TRN-109` e `GKR-TRN-112` não estão validadas ponta a ponta;
+- `GKR-TRN-108` continua parcial;
 - `GKR-SURF-PER-106 — Meus Coletivos` continua ausente;
 - participantes, comunicação e demais áreas do responsável permanecem incompletos;
-- a relação Organização–Coletivo permanece contratada e não materializada.
+- a relação Organização–Coletivo permanece contratada e não materializada;
+- outras continuidades da jornada ainda não foram examinadas como conjunto.
 
-A validação de `COL-003` reduz uma dívida de superfície, mas não fecha a jornada.
+A UXA-090 reduz materialmente a dívida de continuidade, mas não fecha a Jornada do Coletivo.
 
 ## 6. Próxima validação necessária
 
-A próxima frente autorizável é **UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos**.
+A próxima frente autorizável é **UXA-091 — Materialização Controlada de Meus Coletivos (`GKR-SURF-PER-106`) e Refinamento da Continuidade Pós-Aprovação**.
 
-A UXA-090 não é iniciada pela UXA-089 e depende de autorização separada.
+A UXA-091 não é iniciada pela UXA-090 e depende de autorização separada.
