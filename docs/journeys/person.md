@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 related:
   - UXA-002
   - UXA-006
@@ -32,6 +32,8 @@ related:
   - UXA-073
   - UXA-074
   - UXA-075
+  - UXA-090
+  - UXA-091
 normative: false
 ---
 
@@ -59,9 +61,7 @@ Home pública
 | processamento e compreensão inicial | validado | UXA-023 | UXA-036 | UXA-037 | parcial: transições examinadas nos pacotes de origem, não ponta a ponta nesta seção |
 | Tela Hoje e continuidade recorrente | validado | UXA-002 | UXA-006 | UXA-010 | não examinada como continuidade integral após a compreensão inicial |
 
-**Conclusão permitida:** as superfícies citadas possuem materialização e validação nos respectivos pacotes.
-
-**Conclusão proibida:** afirmar que toda a jornada pessoal foi validada ponta a ponta apenas pelas contagens de telas.
+As superfícies citadas possuem materialização e validação nos respectivos pacotes, mas isso não valida toda a jornada pessoal ponta a ponta.
 
 ## 2. Pessoa em Coletivos
 
@@ -71,6 +71,7 @@ Explorar Coletivos
 → Perfil Público
 → Revisão e Solicitação
 → Solicitação Pendente
+→ resultado aprovado
 → Meus Coletivos
 → Central de Atualizações
 → Início do Participante
@@ -81,30 +82,55 @@ Explorar Coletivos
 | descoberta e busca | validado | UXA-056 | UXA-060 | UXA-061 | parcial |
 | Perfil Público | validado | UXA-056 | UXA-062 | UXA-063 | parcial |
 | revisão e solicitação | validado | UXA-056 | UXA-064 | UXA-065 | parcial |
-| Solicitação Pendente | validado | UXA-056 | UXA-066 | UXA-067 | parcial: visão do responsável não materializada |
-| Meus Coletivos | não iniciado | UXA-059 | — | — | ausente |
-| Central de Atualizações | não iniciado | UXA-059 | — | — | ausente |
+| Solicitação Pendente | validado com estado aprovado atual pendente de revalidação | UXA-056 | UXA-066; estado aprovado reformulado por UXA-091 | UXA-067 para a versão anterior; UXA-092 pendente para a versão atual aprovada | handoffs 105/106/107/109 integrados por UXA-090; pós-aprovação parcial |
+| Meus Coletivos | materializado | UXA-056; UXA-059 | UXA-091; 1 SVG móvel | — | TRN-108 e TRN-110 parciais |
+| Central de Atualizações | não iniciado | UXA-059 | — | — | ausente; TRN-110 parcial somente na origem |
 | Início do Participante | reformulação pendente | UXA-059 | referência anterior não promovida nesta seção | — | ausente |
 
-A cobertura validada termina na perspectiva da Pessoa em `Solicitação Pendente`. A decisão do responsável, a formação do vínculo e a continuidade operacional não podem ser presumidas.
+A UXA-091 estende a cobertura visual da Pessoa até `Meus Coletivos`, mas não valida a nova superfície nem a continuidade pós-aprovação.
 
-## 3. Decisões e proteções
+## 3. Continuidade pós-aprovação proposta
+
+```text
+COL-003 — decisão autorizada
+→ resultado aprovado em PER-105
+→ Pessoa escolhe “Ver em Meus Coletivos”
+→ PER-106 — vínculo confirmado visível
+```
+
+A continuidade acima está **materializada, porém parcial**. O estado aprovado corrente de `PER-105`, `PER-106` e `GKR-TRN-108` exigem validação/revalidação específica em frente posterior.
+
+## 4. Decisões e proteções
 
 - compartilhar pouco permanece legítimo;
 - digitar não autoriza análise automática;
 - gravação e transcrição possuem finalidade limitada;
 - ajuda temporária não cria compreensão persistente;
 - solicitação não equivale a aprovação;
+- acompanhar não equivale a participar;
+- convite não cria vínculo;
+- pausa não reduz reputação;
+- aprovação não cria função, autoridade, notificação ou presença obrigatória;
+- `Meus Coletivos` não utiliza ranking, pontuação de dedicação ou comparação entre participantes;
 - recusa, cancelamento e expiração são eventos distintos;
 - leitura, rolagem e silêncio não equivalem a confirmação;
 - transições ausentes são mostradas como lacunas.
 
-## 4. Estado da vista
+## 5. Estado da vista
 
-A UXA-074 aprovou esta vista como representação documental corretamente delimitada. A UXA-075 mantém o status `draft` porque:
+Esta vista permanece `draft` porque:
 
 - a continuidade entre compreensão inicial e Tela Hoje não foi validada como conjunto;
-- a jornada em Coletivos termina em uma continuidade parcial e assimétrica;
-- `Meus Coletivos`, Central de Atualizações e Início do Participante reformulado permanecem ausentes.
+- o estado aprovado reformulado de `PER-105` ainda não foi revalidado;
+- `PER-106` está materializada, porém não validada;
+- `GKR-TRN-108` permanece parcial;
+- `PER-107` permanece ausente;
+- `PER-108` permanece com reformulação pendente.
 
-O status `draft` não invalida as referências locais já materializadas e validadas nos pacotes de origem.
+O status `draft` não invalida referências locais já materializadas e validadas em seus pacotes de origem.
+
+## 6. Próxima validação necessária
+
+A próxima frente autorizável para esta continuidade é **UXA-092 — Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação**.
+
+A UXA-092 não é iniciada pela UXA-091 e depende de autorização separada.

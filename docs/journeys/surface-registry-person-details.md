@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
 related:
   - UXA-070
@@ -13,6 +13,8 @@ related:
   - UXA-078
   - UXA-079
   - UXA-080
+  - UXA-090
+  - UXA-091
 normative: false
 ---
 
@@ -20,7 +22,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas.
+Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens por conta própria.
 
 ## 2. Campos por identificador
 
@@ -38,8 +40,8 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 | GKR-SURF-PER-102 | UXA-060 — `docs/experience-architecture/uxa-060-collective-explore-and-search-mobile-low-fidelity-wireframes.md` | indeterminado | Explorar Coletivos | selecionar Coletivo ou ajustar busca | Perfil Público do Coletivo | consulta, filtros e cartões públicos de Coletivos | nenhum vínculo; conteúdo público | voltar, refinar ou limpar busca | nenhuma identificada | parcial | caminhos alternativos consolidados | exclusivo de Coletivos; não poderá receber nem originar transições de oportunidades |
 | GKR-SURF-PER-103 | UXA-062 — `docs/experience-architecture/uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md` | indeterminado | busca ou acesso direto | avaliar informações públicas e decidir se solicita participação | revisão e solicitação | identidade, propósito, regras, atividades e informações públicas | autenticação e elegibilidade somente ao solicitar | retornar à busca ou não prosseguir | nenhuma identificada | parcial | handoff para participação | entrada documental seletiva; não declara jornada completa |
 | GKR-SURF-PER-104 | UXA-064 — `docs/experience-architecture/uxa-064-collective-participation-review-request-mobile-low-fidelity-wireframes.md` | indeterminado | Perfil Público | revisar dados e confirmar solicitação | envio da solicitação | dados necessários à finalidade; regras; consentimentos | autenticação, elegibilidade e confirmação explícita | editar, cancelar ou voltar antes do envio | nenhuma identificada | parcial | destino operacional do Coletivo | entrada documental seletiva; não declara jornada completa |
-| GKR-SURF-PER-105 | UXA-066 — `docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md` | indeterminado | solicitação enviada | acompanhar, responder, cancelar ou revisar estado | retorno, cancelamento ou decisão | estado, prazo, pedidos adicionais e decisões percebidas pela Pessoa | autoridade do Coletivo para decidir; ação consciente para responder | cancelar quando permitido; não prosseguir; explorar novamente | nenhuma identificada | parcial e assimétrica | visão do responsável ausente | entrada documental seletiva; não declara jornada completa |
-| GKR-SURF-PER-106 | ausente; autoridade: UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | vínculo formado | indeterminado | Central de Atualizações | indeterminado | vínculo e autenticação esperados; não materializados | indeterminado | nenhuma identificada | ausente | superfície e transições | responsabilidade conhecida sem materialização |
+| GKR-SURF-PER-105 | UXA-066 — `docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md`; continuidade aprovada refinada pela UXA-091 | indeterminado | solicitação enviada ou evento do responsável | acompanhar, responder, cancelar ou compreender resultado | retorno, cancelamento, decisão ou Meus Coletivos quando aprovado | estado, prazo, pedidos adicionais, decisões e identificadores percebidos pela Pessoa | autoridade do Coletivo para decidir; ação consciente para responder ou seguir | cancelar quando permitido; não prosseguir; explorar novamente; no estado aprovado escolher conscientemente `Ver em Meus Coletivos` | versão aprovada anterior substituída pela reformulação UXA-091 | parcial | estado aprovado atual e TRN-108 aguardam revalidação | a família foi validada por UXA-067, mas o SVG aprovado atual mudou e não herda automaticamente essa validação |
+| GKR-SURF-PER-106 | UXA-091 — `docs/experience-architecture/uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md` | 0.1.0 | vínculo confirmado ou acesso recorrente da Pessoa | reconhecer e acompanhar vínculos por categorias independentes | Central de Atualizações quando futuramente materializada; retornos a contextos existentes conforme contrato | nome e tipo do Coletivo; estado do vínculo; papel; atualização relevante; itens por categoria; próxima atividade; decisão, pergunta, convite, função aceita ou proteção quando legítimos | autenticação e vínculo conforme estado; nenhuma função ou autoridade criada pela entrada | trocar categoria, voltar ou não prosseguir; pausa e saída dependem de superfícies próprias | nenhuma identificada | parcial | validação funcional de PER-106; revalidação de TRN-108; PER-107 ausente | materializada por UXA-091; não é Central de Atualizações nem Início do Participante; sem ranking ou pontuação |
 | GKR-SURF-PER-107 | ausente; autoridade: UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | Meus Coletivos | indeterminado | Início do Participante | indeterminado | vínculo e papel esperados; não materializados | indeterminado | nenhuma identificada | ausente | superfície e transições | responsabilidade conhecida sem materialização |
 | GKR-SURF-PER-108 | UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | vínculo e atualizações | indeterminado até reformulação | experiência interna | indeterminado | vínculo e papel; definição incompleta | indeterminado | referência anterior não promovida; substituição futura deverá ser identificada | ausente | reformulação e continuidade | responsabilidade programada; não representa uma tela vigente |
 | GKR-SURF-PER-201 | UXA-024 — `docs/experience-architecture/uxa-024-opportunity-map-low-fidelity-wireframe.md` | indeterminado | navegação de oportunidades ou publicação elegível | explorar região, filtros, marcadores e selecionar oportunidade | Lista de Oportunidades ou Detalhe de Oportunidade | consulta, localização autorizada, filtros, cartões e metadados públicos | localização e filtros conforme escolha; nenhum vínculo automático | voltar, limpar filtros, desativar localização ou alternar para lista | nenhuma identificada | parcial | integração publicação–descoberta | superfície própria de oportunidades; não reutiliza a busca de Coletivos |
@@ -50,6 +52,10 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 
 Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não examinado`. Nenhum campo poderá ser completado por inferência.
 
-## 4. Estado
+## 4. Efeito da UXA-091
 
-O detalhamento está `active` como parte integrante do registro promovido pela UXA-080. O status aprova o instrumento documental e não altera maturidade, continuidade ou lacuna de qualquer entrada.
+A UXA-091 materializa `PER-106`, refina a continuidade aprovada de `PER-105` e deixa ambas as versões correntes pendentes de validação específica. `PER-107` e `PER-108` permanecem ausentes ou pendentes conforme registrado.
+
+## 5. Estado
+
+O detalhamento está `active` como parte integrante do registro granular. O status aprova o instrumento documental e não valida `PER-106` ou `TRN-108`.

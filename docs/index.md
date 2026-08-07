@@ -2,33 +2,36 @@
 
 O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-## Estado vigente proposto pela UXA-090
+## Estado vigente proposto pela UXA-091
 
 A declaração oficial está no [Registro do Estado Atual](project/current-state-register.md).
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.16.0 |
+| Registro | `GKR-STATE-001` 2.17.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.77 |
-| Última frente proposta | UXA-090 — validação integrada dos handoffs bilaterais de solicitação |
-| Galeria visual | `active` 0.9.0; 105 SVGs |
-| Matriz por SVG | `active` 0.7.0; 105 associações e 25 perfis |
-| Validações funcionais registradas | 95 |
-| Pendentes de validação específica | 10, exclusivamente UXA-055 |
+| Marco | M7.78 |
+| Última frente proposta | UXA-091 — materialização de Meus Coletivos e refinamento pós-aprovação |
+| Galeria visual | `active` 0.10.0; 106 SVGs |
+| Matriz por SVG | `active` 0.8.0; 106 associações e 26 perfis |
+| Validações funcionais vigentes | 94 |
+| Pendentes de validação específica | 12 |
 | Handoffs integralmente validados pela UXA-090 | 5 |
-| Responsabilidades sem SVG dedicado | 12 |
+| IDs com referência visual | 28 de 40 |
+| Responsabilidades sem SVG dedicado | 11 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente após eventual integração | UXA-091, não iniciada |
+| Próxima frente após eventual integração | UXA-092, não iniciada |
 
-A UXA-090 valida `GKR-TRN-105`, `106`, `107`, `109` e `112` como ligações ponta a ponta no escopo documental da experiência. `GKR-TRN-108` permanece parcial e `PER-106` continua ausente.
+A UXA-091 materializa `PER-106 — Meus Coletivos` e refina o estado aprovado de `PER-105`. A versão corrente de ambos aguarda validação; `TRN-108` e `TRN-110` permanecem parciais.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-090](experience-architecture/uxa-047-090-index.md)
+- [Índice UXA-047 a UXA-091](experience-architecture/uxa-047-091-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [UXA-090 — Validação Integrada dos Handoffs de Solicitação](experience-architecture/uxa-090-integrated-collective-request-handoffs-functional-validation.md)
+- [UXA-091 — Meus Coletivos e continuidade pós-aprovação](experience-architecture/uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md)
+- [Galeria Visual Integrada](journeys/screen-gallery.md)
+- [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Registro Granular de Transições](journeys/transition-registry.md)
 - [Jornadas Integradas](journeys/index.md)
 - [Lacunas](journeys/gaps.md)
@@ -39,4 +42,4 @@ A UXA-090 valida `GKR-TRN-105`, `106`, `107`, `109` e `112` como ligações pont
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-091, Engenharia de Produto, P2–P9, `PER-106`, `PER-107`, `PER-108`, `COL-004` a `COL-008`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza UXA-092, Engenharia de Produto, P2–P9, `PER-107`, `PER-108`, `COL-004` a `COL-008`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
