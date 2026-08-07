@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.11.0
+version: 0.12.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -35,6 +35,7 @@ related:
   - UXA-096
   - UXA-097
   - UXA-098
+  - UXA-100
 normative: false
 ---
 
@@ -84,7 +85,55 @@ Regras integradas:
 
 O efeito externo posterior permanece em `TRN-205` e não foi validado pela UXA-098.
 
-## 3. Pessoa em Coletivos
+## 3. Planos como etapa transversal candidata
+
+A UXA-100 introduz **Planos** como etapa transversal da jornada da Pessoa. Ela não substitui Hoje, Explorar, Mapa ou Detalhe e não transforma assinatura em requisito para acessar oportunidades públicas.
+
+Entradas previstas:
+
+```text
+Conta / Configurações
+→ Planos
+→ plano atual + uso
+→ comparar Free / Plus / Pro
+→ escolher, manter ou gerenciar plano
+→ revisão de contratação quando aplicável
+→ pagamento simulado
+→ sucesso ou falha
+→ retorno ao contexto anterior
+```
+
+Entrada contextual legítima:
+
+```text
+correspondência personalizada adicional após cota Free
+→ prévia limitada da camada personalizada
+├── Explorar oportunidades públicas
+├── Ver no Mapa
+└── Conhecer planos
+    → Planos
+```
+
+A tela candidata dedicada é:
+
+![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
+
+[Visualizar SVG](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
+
+Regras de jornada:
+
+- a Pessoa pode acessar Planos voluntariamente sem atingir qualquer limite;
+- `Guivos Free` permanece um plano real, funcional e não degradado artificialmente;
+- após a cota de correspondências completas, somente a camada personalizada adicional pode ficar limitada;
+- oportunidade pública, Explorar e Mapa permanecem acessíveis;
+- a tela apresenta matriz geral e ganho incremental `Free → Plus → Pro`;
+- se o plano atual e o alvo forem conhecidos, deve existir comparação direta, por exemplo `Free → Pro`;
+- downgrade mostra o que será perdido ou reduzido antes da confirmação;
+- pagamento não altera relevância, confiança, posição orgânica nem garantia de evolução.
+
+Esta etapa é **materialização candidata** da UXA-100 e ainda não possui ID canônico de superfície ou transição.
+
+## 4. Pessoa em Coletivos
 
 ```text
 Explorar Coletivos
@@ -108,23 +157,25 @@ Explorar Coletivos
 | Central de Atualizações | validado | UXA-093/094/095/096 | UXA-094; versão corrente UXA-096 | TRN-110 e TRN-111 integralmente validadas |
 | Início do Participante | validado | UXA-095/096 | UXA-096 | TRN-111 integralmente validada |
 
-## 4. Compreensão inicial → Hoje validada
+## 5. Compreensão inicial → Hoje validada
 
 `PER-007 → TRN-007 → PER-008` permanece integralmente validada pela UXA-097. Personalização utiliza somente base confirmada, autorizada e vigente; Hoje continua acessível sem personalização; repetição não cria avanço nem efeito duplicado.
 
-## 5. Continuidades de Coletivos preservadas
+## 6. Continuidades de Coletivos preservadas
 
 - `COL-003 → PER-105 aprovado → PER-106` permanece validada em `TRN-108`;
 - `PER-106 → PER-107` permanece validada em `TRN-110`;
 - `PER-107 → PER-108` permanece validada em `TRN-111`.
 
-## 6. Proteções preservadas
+## 7. Proteções preservadas
 
 - conclusão da compreensão inicial não equivale a avanço humano;
 - personalização não é condição para acessar Hoje;
 - oportunidade publicada não é automaticamente recomendada;
 - proximidade não equivale a relevância;
 - patrocínio não compra relevância funcional;
+- plano pago não compra relevância funcional;
+- atingir cota personalizada do Free não oculta o catálogo público;
 - Mapa/Lista não criam autorização territorial nova;
 - abrir Detalhe não cria obrigação de agir;
 - compartilhar pouco permanece legítimo;
@@ -134,18 +185,19 @@ Explorar Coletivos
 - aprovação não cria função, autoridade ou presença obrigatória;
 - estado canônico vigente prevalece sobre renderização anterior.
 
-## 7. Estado da vista
+## 8. Estado da vista
 
 Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
 - `TRN-205` permanece parcial para efeito externo de oportunidade;
+- a etapa Planos da UXA-100 é candidata e ainda não possui superfície/transição canônica;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
 
 O status `draft` não invalida referências locais e transições específicas já validadas.
 
-## 8. Próxima evolução possível
+## 9. Próxima evolução possível
 
-Com `V2 — publicação → descoberta/mapa/lista/detalhe` fechada pela UXA-098, a próxima prioridade registrada é `V3 — dez estados residuais UXA-055`. **UXA-099 não foi iniciada.**
+A UXA-100 adiciona Planos à leitura da jornada sem promovê-la. A próxima decisão desta frente é validar funcionalmente as telas e definir, somente então, superfícies e transições canônicas aplicáveis.
