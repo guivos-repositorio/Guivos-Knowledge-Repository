@@ -6446,10 +6446,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-resultado-da-uxa-089" class="md-nav__link">
+  <a href="#6-resultado-da-uxa-090" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Resultado da UXA-089
+        6. Resultado da UXA-090
       
     </span>
   </a>
@@ -9108,10 +9108,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-resultado-da-uxa-089" class="md-nav__link">
+  <a href="#6-resultado-da-uxa-090" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Resultado da UXA-089
+        6. Resultado da UXA-090
       
     </span>
   </a>
@@ -9210,7 +9210,7 @@
 <li>use o <a href="screen-catalog/">Catálogo de Telas</a> para visão agregada;</li>
 <li>localize superfícies e transições por ID;</li>
 <li>confira separadamente maturidade, materialização, validação e continuidade;</li>
-<li>consulte as <a href="gaps/">Lacunas</a> sem confundir superfície validada com jornada concluída.</li>
+<li>consulte as <a href="gaps/">Lacunas</a> sem confundir transição validada documentalmente com jornada implementada.</li>
 </ol>
 <h2 id="3-vistas-disponiveis">3. Vistas disponíveis<a class="headerlink" href="#3-vistas-disponiveis" title="Permanent link">&para;</a></h2>
 <ul>
@@ -9234,6 +9234,7 @@
 → UXA-087 — Visão Geral do Responsável reformulada e validada funcionalmente
 → UXA-088 — Gestão de Solicitações do Responsável materializada em sete estados desktop
 → UXA-089 — Gestão de Solicitações reformulada e validada funcionalmente
+→ UXA-090 — cinco handoffs elegíveis de solicitação validados ponta a ponta
 </code></pre></div>
 <p>Nenhuma etapa autoriza automaticamente a seguinte.</p>
 <h2 id="5-estado-documental">5. Estado documental<a class="headerlink" href="#5-estado-documental" title="Permanent link">&para;</a></h2>
@@ -9248,8 +9249,8 @@
 <tbody>
 <tr>
 <td>visão geral das Jornadas Integradas</td>
-<td><code>active</code> 0.17.0</td>
-<td>UXA-089</td>
+<td><code>active</code> 0.18.0</td>
+<td>UXA-090</td>
 </tr>
 <tr>
 <td>Pessoa, Coletivo e Organização</td>
@@ -9273,8 +9274,8 @@
 </tr>
 <tr>
 <td>registro de transições</td>
-<td><code>active</code> 0.6.0</td>
-<td>UXA-089; transições de solicitação continuam parciais</td>
+<td><code>active</code> 0.7.0</td>
+<td>UXA-090; cinco handoffs integralmente validados</td>
 </tr>
 <tr>
 <td>detalhamento do Coletivo</td>
@@ -9308,8 +9309,13 @@
 </tr>
 <tr>
 <td>registro de lacunas</td>
-<td><code>active</code> 0.14.0</td>
-<td>UXA-089</td>
+<td><code>active</code> 0.15.0</td>
+<td>UXA-090</td>
+</tr>
+<tr>
+<td>Jornada do Coletivo</td>
+<td><code>draft</code> 0.8.0</td>
+<td>UXA-090</td>
 </tr>
 <tr>
 <td>protótipo, aplicação e motor</td>
@@ -9323,22 +9329,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="6-resultado-da-uxa-089">6. Resultado da UXA-089<a class="headerlink" href="#6-resultado-da-uxa-089" title="Permanent link">&para;</a></h2>
-<p>A UXA-089 valida <code>GKR-SURF-COL-003 — gestão de solicitações</code> após reformulação controlada de seis dos sete SVGs desktop da família.</p>
-<p>A validação consolida:</p>
+<h2 id="6-resultado-da-uxa-090">6. Resultado da UXA-090<a class="headerlink" href="#6-resultado-da-uxa-090" title="Permanent link">&para;</a></h2>
+<p>A UXA-090 valida como ligações completas:</p>
 <ul>
-<li>referência temporal distinguindo estimativa e prazo de resposta;</li>
-<li>critérios de decisão previamente apresentados à Pessoa;</li>
-<li>acessibilidade separada de elegibilidade e tratada para acomodação;</li>
-<li>autoridade verificada por escopo, nunca criada por confirmação;</li>
-<li>aprovação e recusa com fundamento e consequência compreensíveis;</li>
-<li>autoridade insuficiente sem autoelevação de permissão.</li>
+<li><code>GKR-TRN-105</code> — Pessoa solicitante → responsável;</li>
+<li><code>GKR-TRN-106</code> — responsável → pedido adicional à Pessoa;</li>
+<li><code>GKR-TRN-107</code> — resposta adicional → responsável;</li>
+<li><code>GKR-TRN-109</code> — recusa → Pessoa;</li>
+<li><code>GKR-TRN-112</code> — Visão Geral do Responsável → gestão de solicitações.</li>
 </ul>
-<p>Ela não:</p>
+<p>O contrato integrado exige identidade estável, estado canônico, autoridade vigente antes de efeito, dados mínimos, resolução de concorrência e efeito lógico único.</p>
+<p><code>GKR-TRN-108</code> permanece parcial porque <code>GKR-SURF-PER-106</code> está ausente e a continuidade entre o resultado aprovado em <code>PER-105</code> e o ambiente do participante ainda precisa ser refinada.</p>
+<p>A UXA-090 não:</p>
 <ul>
-<li>valida <code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> ou <code>GKR-TRN-112</code> ponta a ponta;</li>
+<li>cria novo SVG ou transição;</li>
 <li>materializa <code>GKR-SURF-PER-106</code>;</li>
-<li>promove a jornada do Coletivo;</li>
+<li>promove a Jornada do Coletivo;</li>
 <li>inicia protótipo, aplicação ou Engenharia de Produto.</li>
 </ul>
 <h2 id="7-cobertura-visual">7. Cobertura visual<a class="headerlink" href="#7-cobertura-visual" title="Permanent link">&para;</a></h2>
@@ -9389,15 +9395,18 @@
 <ul>
 <li>perfis agregados não substituem análise exclusiva por estado;</li>
 <li>dez estados da UXA-055 permanecem sem validação;</li>
-<li><code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> e <code>GKR-TRN-112</code> permanecem parciais;</li>
+<li><code>GKR-TRN-108</code> permanece parcial;</li>
 <li><code>GKR-SURF-PER-106</code> continua ausente;</li>
-<li>continuidades entre pacotes permanecem parciais ou não examinadas;</li>
-<li>instrumento visual <code>active</code> e superfície validada não equivalem a jornada validada.</li>
+<li>a Jornada do Coletivo permanece <code>draft</code>;</li>
+<li>continuidades entre outros pacotes permanecem parciais ou não examinadas;</li>
+<li>instrumento visual <code>active</code>, superfície validada e transição integralmente validada não equivalem a jornada implementada.</li>
 </ul>
 <h2 id="9-prioridade-de-coletivos">9. Prioridade de Coletivos<a class="headerlink" href="#9-prioridade-de-coletivos" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Visão Geral do Responsável — validada
-→ gestão de solicitações — validada no escopo da superfície
-→ handoffs bilaterais de solicitação — validação integrada pendente
+→ TRN-112 — integralmente validada
+→ gestão de solicitações — validada
+↔ TRN-105/106/107/109 com PER-105 — integralmente validadas
+→ TRN-108 — parcial
 → Meus Coletivos — ausente
 → Central de Atualizações — ausente
 → Início do Participante — reformulação pendente
@@ -9406,14 +9415,14 @@
 <h2 id="10-regra-de-leitura">10. Regra de leitura<a class="headerlink" href="#10-regra-de-leitura" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>visual existente
 ≠ validação funcional automática
-≠ transição ponta a ponta validada
+≠ transição ponta a ponta automaticamente validada
+≠ validação integral documental igual a implementação
 ≠ jornada completa
-≠ implementação
 </code></pre></div>
 <p>Valores desconhecidos permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>.</p>
 <h2 id="11-proxima-transicao-possivel">11. Próxima transição possível<a class="headerlink" href="#11-proxima-transicao-possivel" title="Permanent link">&para;</a></h2>
-<p><strong>UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos</strong>, mediante autorização separada.</p>
-<p>A UXA-090 não foi iniciada.</p>
+<p><strong>UXA-091 — Materialização Controlada de Meus Coletivos (<code>GKR-SURF-PER-106</code>) e Refinamento da Continuidade Pós-Aprovação</strong>, mediante autorização separada.</p>
+<p>A UXA-091 não foi iniciada.</p>
 
 
 

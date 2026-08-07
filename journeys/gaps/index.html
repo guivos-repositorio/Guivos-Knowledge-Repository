@@ -6796,10 +6796,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-efeito-da-uxa-089" class="md-nav__link">
+  <a href="#6-efeito-da-uxa-090" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Efeito da UXA-089
+        6. Efeito da UXA-090
       
     </span>
   </a>
@@ -9097,10 +9097,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-efeito-da-uxa-089" class="md-nav__link">
+  <a href="#6-efeito-da-uxa-090" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Efeito da UXA-089
+        6. Efeito da UXA-090
       
     </span>
   </a>
@@ -9178,13 +9178,14 @@
 
 <h1 id="lacunas-e-continuidades-ausentes">Lacunas e Continuidades Ausentes<a class="headerlink" href="#lacunas-e-continuidades-ausentes" title="Permanent link">&para;</a></h1>
 <h2 id="1-natureza-do-registro">1. Natureza do registro<a class="headerlink" href="#1-natureza-do-registro" title="Permanent link">&para;</a></h2>
-<p>Este documento é observacional e não promocional. A UXA-089 fecha o gate funcional específico de <code>GKR-SURF-COL-003</code>, mas não encerra os handoffs bilaterais associados e não materializa <code>PER-106</code>.</p>
+<p>Este documento é observacional e não promocional. A UXA-090 encerra a dívida de validação integrada de <code>GKR-TRN-105</code>, <code>106</code>, <code>107</code>, <code>109</code> e <code>112</code>, mas preserva <code>GKR-TRN-108</code> e <code>PER-106</code> como continuidade aberta.</p>
 <h2 id="2-regra-de-priorizacao">2. Regra de priorização<a class="headerlink" href="#2-regra-de-priorizacao" title="Permanent link">&para;</a></h2>
 <p>A fila distingue:</p>
 <ol>
 <li><strong>materialização</strong> — novas referências necessárias;</li>
 <li><strong>gate de fechamento</strong> — materialização existente aguardando validação funcional;</li>
-<li><strong>dívida de validação integrada</strong> — endpoints existentes e validados como superfícies sem exame ponta a ponta.</li>
+<li><strong>dívida de validação integrada</strong> — endpoints existentes e validados como superfícies sem exame ponta a ponta;</li>
+<li><strong>continuidade pós-resultado</strong> — resultado compreensível existe, mas a superfície operacional seguinte ainda não foi materializada.</li>
 </ol>
 <h2 id="3-gates-de-coletivos">3. Gates de Coletivos<a class="headerlink" href="#3-gates-de-coletivos" title="Permanent link">&para;</a></h2>
 <table>
@@ -9199,22 +9200,29 @@
 </thead>
 <tbody>
 <tr>
-<td>Visão Geral do Responsável</td>
-<td>COL-002; TRN-112</td>
-<td>1 SVG</td>
-<td>validada por UXA-087</td>
-<td>TRN-112 ainda não validada como conjunto</td>
+<td>Visão Geral do Responsável → gestão de solicitações</td>
+<td>COL-002; TRN-112; COL-003</td>
+<td>8 SVGs somados nas superfícies</td>
+<td>superfícies validadas; TRN-112 integralmente validada por UXA-090</td>
+<td>nenhuma lacuna nesta ligação específica</td>
 </tr>
 <tr>
-<td>gestão de solicitações</td>
-<td>COL-003; TRN-105 a 109; TRN-112</td>
-<td>7 SVGs desktop em UXA-088</td>
-<td>validada por UXA-089</td>
-<td>handoffs bilaterais e saída para PER-106 pendentes</td>
+<td>solicitação ↔ operação responsável</td>
+<td>PER-105; TRN-105/106/107/109; COL-003</td>
+<td>estados materializados nas duas perspectivas</td>
+<td>quatro handoffs bilaterais integralmente validados por UXA-090</td>
+<td>aprovação segue separada em TRN-108</td>
+</tr>
+<tr>
+<td>continuidade pós-aprovação</td>
+<td>PER-105; TRN-108; PER-106</td>
+<td>resultado aprovado existe em PER-105; PER-106 sem SVG</td>
+<td>parcial</td>
+<td>materializar PER-106 e refinar passagem resultado aprovado → ambiente participante</td>
 </tr>
 </tbody>
 </table>
-<p><code>COL-003</code> deixa a fila de gate funcional e passa a compor a <strong>dívida de validação integrada</strong> das transições.</p>
+<p><code>COL-003</code> e os cinco handoffs elegíveis deixam a fila de dívida integrada. <code>TRN-108</code> permanece explicitamente aberta.</p>
 <h2 id="4-fila-de-materializacao-por-dependencia">4. Fila de materialização por dependência<a class="headerlink" href="#4-fila-de-materializacao-por-dependencia" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9229,10 +9237,10 @@
 <tbody>
 <tr>
 <td style="text-align: right;">1</td>
-<td>Meus Coletivos</td>
+<td>Meus Coletivos e continuidade pós-aprovação</td>
 <td>GKR-SURF-PER-106; GKR-TRN-108; GKR-TRN-110</td>
-<td>sem SVG</td>
-<td>depende da continuidade de participação e de autorização separada</td>
+<td>sem SVG para PER-106</td>
+<td>materialização própria + refinamento da passagem desde o resultado aprovado em PER-105</td>
 </tr>
 <tr>
 <td style="text-align: right;">2</td>
@@ -9271,7 +9279,7 @@
 </tr>
 </tbody>
 </table>
-<p>Nenhuma dessas materializações é iniciada pela UXA-089.</p>
+<p>Nenhuma dessas materializações é iniciada pela UXA-090.</p>
 <h2 id="5-fila-de-validacao">5. Fila de validação<a class="headerlink" href="#5-fila-de-validacao" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9285,9 +9293,9 @@
 <tbody>
 <tr>
 <td style="text-align: right;">V0</td>
-<td>COL-002 → COL-003 e handoffs PER-105 ↔ COL-003</td>
-<td>endpoints validados como superfícies; transições parciais</td>
-<td>UXA-090 — validação integrada específica</td>
+<td>continuidade pós-aprovação</td>
+<td>TRN-108 parcial; PER-106 ausente</td>
+<td>materialização de PER-106 e refinamento da continuidade</td>
 </tr>
 <tr>
 <td style="text-align: right;">V1</td>
@@ -9321,19 +9329,20 @@
 </tr>
 </tbody>
 </table>
-<p><code>GKR-TRN-108</code> não entra na UXA-090 como transição fechável enquanto <code>GKR-SURF-PER-106</code> permanecer ausente; sua origem está validada, mas o destino ainda exige materialização própria.</p>
-<h2 id="6-efeito-da-uxa-089">6. Efeito da UXA-089<a class="headerlink" href="#6-efeito-da-uxa-089" title="Permanent link">&para;</a></h2>
-<p>A UXA-089:</p>
+<p>Os handoffs <code>105</code>, <code>106</code>, <code>107</code>, <code>109</code> e <code>112</code> deixam esta fila após a UXA-090.</p>
+<h2 id="6-efeito-da-uxa-090">6. Efeito da UXA-090<a class="headerlink" href="#6-efeito-da-uxa-090" title="Permanent link">&para;</a></h2>
+<p>A UXA-090:</p>
 <ul>
-<li>preserva os sete SVGs de <code>GKR-SURF-COL-003</code>;</li>
-<li>reformula seis desses SVGs;</li>
-<li>valida funcionalmente os sete estados;</li>
-<li>distingue estimativa de prazo de resposta;</li>
-<li>exige critérios previamente apresentados à Pessoa;</li>
-<li>separa acessibilidade de elegibilidade;</li>
-<li>impede autodeclaração de autoridade por confirmação;</li>
-<li>não valida <code>TRN-105</code> a <code>109</code> ou <code>TRN-112</code> ponta a ponta;</li>
-<li>não materializa <code>PER-106</code>, <code>PER-107</code>, <code>PER-108</code> ou <code>COL-004</code> a <code>COL-008</code>.</li>
+<li>não adiciona SVG;</li>
+<li>não cria superfície ou transição;</li>
+<li>valida integralmente <code>TRN-105</code>, <code>106</code>, <code>107</code>, <code>109</code> e <code>112</code>;</li>
+<li>formaliza identidade estável da solicitação e estado canônico;</li>
+<li>exige autoridade vigente antes de efeito;</li>
+<li>trata cancelamento, expiração, resposta e decisão concorrentes;</li>
+<li>impede que estado obsoleto sobrescreva evento mais recente;</li>
+<li>exige efeito lógico único diante de repetição ou reenvio;</li>
+<li>mantém <code>TRN-108</code> parcial;</li>
+<li>mantém <code>PER-106</code>, <code>PER-107</code>, <code>PER-108</code> e <code>COL-004</code> a <code>COL-008</code> fora do escopo.</li>
 </ul>
 <h2 id="7-cobertura-vigente-proposta">7. Cobertura vigente proposta<a class="headerlink" href="#7-cobertura-vigente-proposta" title="Permanent link">&para;</a></h2>
 <table>
@@ -9365,6 +9374,10 @@
 <td style="text-align: right;">10</td>
 </tr>
 <tr>
+<td>transições integralmente validadas pela UXA-090</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
 <td>IDs granulares com referência visual</td>
 <td style="text-align: right;">27 de 40</td>
 </tr>
@@ -9378,10 +9391,10 @@
 </tr>
 </tbody>
 </table>
-<p>Os dez pendentes remanescentes são exclusivamente os estados residuais da UXA-055.</p>
+<p>Os dez pendentes de SVG remanescentes são exclusivamente os estados residuais da UXA-055.</p>
 <h2 id="8-criterios-de-fechamento">8. Critérios de fechamento<a class="headerlink" href="#8-criterios-de-fechamento" title="Permanent link">&para;</a></h2>
-<p>Uma lacuna somente poderá ser encerrada quando houver autoridade, materialização necessária, entradas e saídas, retornos e exceções, proteção de dados, validação correspondente e atualização governada deste registro.</p>
-<p>Para <code>COL-003</code>, o gate específico da superfície está encerrado pela UXA-089. A continuidade bilateral permanece aberta e deverá ser examinada separadamente.</p>
+<p>Uma lacuna somente poderá ser encerrada quando houver autoridade, materialização necessária, entradas e saídas, retornos e exceções, proteção de dados, tratamento de concorrência, validação correspondente e atualização governada deste registro.</p>
+<p>Os cinco handoffs elegíveis cumprem esses critérios no escopo documental da experiência. A continuidade pós-aprovação não cumpre porque <code>PER-106</code> ainda não existe.</p>
 <h2 id="9-restricoes">9. Restrições<a class="headerlink" href="#9-restricoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>uma tela genérica não fecha lacuna;</li>
@@ -9389,11 +9402,13 @@
 <li>proximidade visual não comprova continuidade;</li>
 <li>materialização não equivale a validação;</li>
 <li>validação de uma superfície não valida o handoff inteiro;</li>
-<li>dois endpoints validados não validam automaticamente a ligação entre eles.</li>
+<li>dois endpoints validados não validam automaticamente a ligação entre eles;</li>
+<li>validação integral documental não equivale a implementação técnica;</li>
+<li>resultado aprovado visível não presume que o ambiente participante esteja materializado.</li>
 </ul>
 <h2 id="10-proximo-ato-possivel">10. Próximo ato possível<a class="headerlink" href="#10-proximo-ato-possivel" title="Permanent link">&para;</a></h2>
-<p>A próxima ação governada é <strong>UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos</strong>, mediante autorização separada.</p>
-<p>A UXA-090 não é iniciada por esta atualização.</p>
+<p>A próxima ação governada é <strong>UXA-091 — Materialização Controlada de Meus Coletivos (<code>GKR-SURF-PER-106</code>) e Refinamento da Continuidade Pós-Aprovação</strong>, mediante autorização separada.</p>
+<p>A UXA-091 não é iniciada por esta atualização.</p>
 
 
 

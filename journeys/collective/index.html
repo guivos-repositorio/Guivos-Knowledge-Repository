@@ -9144,11 +9144,11 @@
 </tr>
 <tr>
 <td>recebimento de solicitação</td>
-<td>contratado</td>
+<td>validado no handoff elegível</td>
 <td>UXA-056</td>
 <td>perspectiva da Pessoa em UXA-066; operação responsável em UXA-088</td>
-<td>UXA-067 e UXA-089 nas perspectivas respectivas</td>
-<td>parcial</td>
+<td>UXA-067; UXA-089; UXA-090</td>
+<td>TRN-105 integralmente validada</td>
 </tr>
 <tr>
 <td>visão do responsável</td>
@@ -9156,7 +9156,7 @@
 <td>UXA-059</td>
 <td>UXA-086</td>
 <td>UXA-087</td>
-<td>parcial</td>
+<td>TRN-112 integralmente validada para gestão de solicitações</td>
 </tr>
 <tr>
 <td>decisão do responsável</td>
@@ -9164,19 +9164,19 @@
 <td>UXA-056; UXA-059</td>
 <td>UXA-088; 7 SVGs desktop</td>
 <td>UXA-089</td>
-<td>bilateral ainda não validada</td>
+<td>pedidos adicionais, respostas e recusa validados bilateralmente pela UXA-090</td>
 </tr>
 <tr>
 <td>formação ou recusa do vínculo</td>
-<td>contratado</td>
-<td>UXA-014; UXA-056</td>
-<td>resultados na Pessoa em UXA-066 e origem da decisão em UXA-088</td>
-<td>UXA-067; UXA-089 em pacotes distintos</td>
 <td>parcial</td>
+<td>UXA-014; UXA-056</td>
+<td>recusa em PER-105; aprovação observável em PER-105; PER-106 ausente</td>
+<td>recusa integrada por UXA-090; aprovação somente na origem/resultado intermediário</td>
+<td>TRN-109 validada; TRN-108 parcial</td>
 </tr>
 </tbody>
 </table>
-<p>A UXA-089 fecha o gate funcional de <code>COL-003</code>, mas não converte o conjunto em jornada validada.</p>
+<p>A UXA-090 fecha os handoffs elegíveis, mas não converte o conjunto em jornada validada porque a continuidade de aprovação para <code>PER-106</code> e a operação interna posterior permanecem incompletas.</p>
 <h2 id="2-operacao-do-responsavel">2. Operação do responsável<a class="headerlink" href="#2-operacao-do-responsavel" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>representação e autoridade
 → visão geral
@@ -9214,7 +9214,7 @@
 <td>UXA-059; UXA-086</td>
 <td>UXA-086; 1 SVG reformulado</td>
 <td>UXA-087</td>
-<td>saída materializada, transição ainda não validada</td>
+<td>saída para COL-003 validada por TRN-112/UXA-090</td>
 </tr>
 <tr>
 <td>gestão de solicitações</td>
@@ -9222,7 +9222,7 @@
 <td>UXA-056; UXA-059</td>
 <td>UXA-088; 7 SVGs desktop; 6 reformulados em UXA-089</td>
 <td>UXA-089</td>
-<td>parcial; handoffs não validados como conjunto</td>
+<td>handoffs 105/106/107/109 e entrada 112 validados por UXA-090</td>
 </tr>
 <tr>
 <td>participantes e vínculos</td>
@@ -9230,7 +9230,7 @@
 <td>UXA-059</td>
 <td>—</td>
 <td>—</td>
-<td>ausente</td>
+<td>ausente; depende de PER-106/continuidade pós-aprovação</td>
 </tr>
 <tr>
 <td>comunicação oficial</td>
@@ -9283,28 +9283,28 @@
 <td>gestão de solicitações</td>
 <td>UXA-086; UXA-087</td>
 <td>UXA-088; UXA-089</td>
-<td>ambos endpoints validados como superfícies; <code>GKR-TRN-112</code> ainda não validada ponta a ponta</td>
+<td><code>GKR-TRN-112</code> integralmente validada por UXA-090</td>
 </tr>
 <tr>
 <td>Pessoa solicitante</td>
 <td>responsável do Coletivo</td>
 <td>UXA-066; UXA-067</td>
 <td>UXA-088; UXA-089</td>
-<td>endpoints validados em pacotes próprios; validação integrada pendente</td>
+<td><code>GKR-TRN-105</code> e <code>107</code> integralmente validadas por UXA-090</td>
 </tr>
 <tr>
 <td>responsável do Coletivo</td>
 <td>Pessoa solicitante</td>
 <td>UXA-088; UXA-089</td>
 <td>UXA-066; UXA-067</td>
-<td>efeitos dos pedidos adicionais e resultados existem nos dois lados; validação integrada pendente</td>
+<td><code>GKR-TRN-106</code> e <code>109</code> integralmente validadas por UXA-090</td>
 </tr>
 <tr>
 <td>aprovação</td>
-<td>Meus Coletivos</td>
+<td>resultado aprovado em PER-105 → Meus Coletivos</td>
 <td>UXA-088; UXA-089 e resultado na Pessoa</td>
 <td><code>GKR-SURF-PER-106</code> ausente</td>
-<td>parcial e bloqueada após decisão</td>
+<td><code>GKR-TRN-108</code> parcial; continuidade precisa ser refinada com PER-106</td>
 </tr>
 <tr>
 <td>Coletivo</td>
@@ -9326,22 +9326,26 @@
 <li>acessibilidade não é critério oculto de elegibilidade;</li>
 <li>recusa não é reputação ou sanção;</li>
 <li>expiração não é decisão equivalente do responsável;</li>
+<li>cancelamento e expiração supervenientes tornam ações anteriores obsoletas;</li>
+<li>repetição de interação ou entrega não duplica o efeito lógico;</li>
 <li>atividade, alcance e volume não comprovam avanço humano;</li>
 <li>materialização não equivale a validação funcional;</li>
-<li>validação de superfície não equivale a validação de transição.</li>
+<li>validação de superfície não equivale a validação de transição;</li>
+<li>validação integral documental não equivale a implementação.</li>
 </ul>
 <h2 id="5-estado-da-vista">5. Estado da vista<a class="headerlink" href="#5-estado-da-vista" title="Permanent link">&para;</a></h2>
 <p>Esta vista permanece <code>draft</code> porque:</p>
 <ul>
-<li><code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> e <code>GKR-TRN-112</code> não estão validadas ponta a ponta;</li>
+<li><code>GKR-TRN-108</code> continua parcial;</li>
 <li><code>GKR-SURF-PER-106 — Meus Coletivos</code> continua ausente;</li>
 <li>participantes, comunicação e demais áreas do responsável permanecem incompletos;</li>
-<li>a relação Organização–Coletivo permanece contratada e não materializada.</li>
+<li>a relação Organização–Coletivo permanece contratada e não materializada;</li>
+<li>outras continuidades da jornada ainda não foram examinadas como conjunto.</li>
 </ul>
-<p>A validação de <code>COL-003</code> reduz uma dívida de superfície, mas não fecha a jornada.</p>
+<p>A UXA-090 reduz materialmente a dívida de continuidade, mas não fecha a Jornada do Coletivo.</p>
 <h2 id="6-proxima-validacao-necessaria">6. Próxima validação necessária<a class="headerlink" href="#6-proxima-validacao-necessaria" title="Permanent link">&para;</a></h2>
-<p>A próxima frente autorizável é <strong>UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos</strong>.</p>
-<p>A UXA-090 não é iniciada pela UXA-089 e depende de autorização separada.</p>
+<p>A próxima frente autorizável é <strong>UXA-091 — Materialização Controlada de Meus Coletivos (<code>GKR-SURF-PER-106</code>) e Refinamento da Continuidade Pós-Aprovação</strong>.</p>
+<p>A UXA-091 não é iniciada pela UXA-090 e depende de autorização separada.</p>
 
 
 

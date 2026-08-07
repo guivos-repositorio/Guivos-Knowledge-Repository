@@ -6783,10 +6783,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-efeito-da-uxa-089" class="md-nav__link">
+  <a href="#8-efeito-da-uxa-090" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Efeito da UXA-089
+        8. Efeito da UXA-090
       
     </span>
   </a>
@@ -9108,10 +9108,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-efeito-da-uxa-089" class="md-nav__link">
+  <a href="#8-efeito-da-uxa-090" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Efeito da UXA-089
+        8. Efeito da UXA-090
       
     </span>
   </a>
@@ -9157,7 +9157,7 @@
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.</p>
-<p>A versão 0.6.0 preserva as 37 transições promovidas pela UXA-080 e atualiza somente a evidência observacional das ligações associadas a <code>GKR-SURF-COL-003</code> após sua validação funcional pela UXA-089.</p>
+<p>A versão 0.7.0 preserva as 37 transições promovidas pela UXA-080 e incorpora a validação integrada da UXA-090 para cinco handoffs cujos endpoints já estavam funcionalmente validados.</p>
 <p>Permanecem vigentes as correções estruturais anteriores:</p>
 <ul>
 <li>todos os endpoints resolvem para IDs registrados;</li>
@@ -9177,6 +9177,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>integralmente validada</td>
+<td>origem, destino, autoridade, dados, efeito, retorno, interrupção e concorrência foram examinados como uma única ligação ponta a ponta no escopo documental</td>
+</tr>
 <tr>
 <td>localmente validada</td>
 <td>examinada dentro do pacote indicado, sem comprovação ponta a ponta</td>
@@ -9199,7 +9203,7 @@
 </tr>
 </tbody>
 </table>
-<p>Endpoints materializados ou mesmo validados como superfícies não tornam automaticamente a transição validada.</p>
+<p>Endpoints materializados ou mesmo validados como superfícies não tornam automaticamente a transição validada. A classificação <code>integralmente validada</code> também não comprova implementação técnica.</p>
 <h2 id="3-contagem">3. Contagem<a class="headerlink" href="#3-contagem" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9231,7 +9235,7 @@
 </tr>
 </tbody>
 </table>
-<p>A UXA-089 não cria transições novas.</p>
+<p>A UXA-090 não cria transições novas. Cinco das 37 passam a possuir validação integral ponta a ponta.</p>
 <h2 id="4-jornada-pessoal">4. Jornada pessoal<a class="headerlink" href="#4-jornada-pessoal" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9447,12 +9451,12 @@
 <td>entre participantes; handoff de autoridade; assíncrona</td>
 <td>solicitação disponível para análise</td>
 <td>UXA-056; UXA-059</td>
-<td>transfere próxima decisão ao responsável; dados limitados à finalidade</td>
-<td>autoridade do responsável</td>
-<td>solicitante pode cancelar; tempo protegido</td>
-<td>UXA-067 na perspectiva da Pessoa; UXA-089 no escopo do responsável</td>
-<td>parcial</td>
-<td>endpoints validados como superfícies; validação integrada pendente</td>
+<td>transfere próxima decisão ao responsável; preserva identificador lógico; dados limitados à finalidade</td>
+<td>autoridade vigente do responsável; estado revalidado antes de efeito</td>
+<td>solicitante pode cancelar; cancelamento ou expiração superveniente torna análise obsoleta; repetição não duplica efeito</td>
+<td>UXA-067; UXA-089; UXA-090</td>
+<td>integralmente validada</td>
+<td>—</td>
 </tr>
 <tr>
 <td>GKR-TRN-106</td>
@@ -9462,12 +9466,12 @@
 <td>entre participantes; assíncrona; reversível</td>
 <td>pedir informação adicional</td>
 <td>UXA-056; UXA-066; UXA-067; UXA-088; UXA-089</td>
-<td>pedido aparece para a Pessoa; aprovação não ocorre; finalidade e referência temporal permanecem explícitas; acessibilidade não é critério oculto</td>
-<td>autoridade verificada do responsável e finalidade limitada</td>
-<td>Pessoa responde, prefere não informar, contesta ou cancela; decisão permanece governada pelo estado</td>
-<td>UXA-089 na origem; UXA-067 no destino</td>
-<td>parcial</td>
-<td>validação bilateral pendente</td>
+<td>pergunta, finalidade, autoridade e referência temporal chegam à mesma solicitação; aprovação não ocorre; acessibilidade não é critério oculto</td>
+<td>autoridade vigente e finalidade limitada; solicitação ainda aberta</td>
+<td>Pessoa responde, prefere não informar, contesta ou cancela; pedido sobre estado encerrado não prevalece; repetição não cria novo pedido lógico</td>
+<td>UXA-067; UXA-089; UXA-090</td>
+<td>integralmente validada</td>
+<td>—</td>
 </tr>
 <tr>
 <td>GKR-TRN-107</td>
@@ -9477,12 +9481,12 @@
 <td>entre participantes; assíncrona</td>
 <td>enviar resposta adicional</td>
 <td>UXA-056; UXA-067; UXA-088; UXA-089</td>
-<td>conteúdo adicional autorizado retorna à análise</td>
-<td>resposta consciente</td>
-<td>editar antes do envio, descartar rascunho ou desistir conforme estado</td>
-<td>UXA-067 na origem; UXA-089 no destino</td>
-<td>parcial</td>
-<td>validação bilateral pendente</td>
+<td>somente conteúdo conscientemente enviado retorna à mesma pergunta e finalidade; não cria vínculo</td>
+<td>resposta consciente; estado ainda elegível para recebimento</td>
+<td>editar antes do envio, descartar rascunho ou desistir; processo encerrado não reabre silenciosamente; repetição não duplica conteúdo lógico</td>
+<td>UXA-067; UXA-089; UXA-090</td>
+<td>integralmente validada</td>
+<td>—</td>
 </tr>
 <tr>
 <td>GKR-TRN-108</td>
@@ -9492,12 +9496,12 @@
 <td>handoff de autoridade; entre participantes</td>
 <td>aprovar solicitação e formar vínculo</td>
 <td>UXA-014; UXA-056; UXA-088; UXA-089</td>
-<td>cria vínculo de participante conforme papel aceito; não atribui função, moderação ou reputação automática</td>
+<td>cria vínculo conforme papel aceito; o resultado aprovado é antes observável na família PER-105; não atribui função, moderação ou reputação automática</td>
 <td>decisão autorizada, fundamento previamente apresentado e confirmação consciente</td>
-<td>abandonar decisão antes da confirmação; saída e contestação posteriores dependem do vínculo</td>
-<td>UXA-089 na origem; resultado representado em UXA-067</td>
+<td>abandonar decisão antes da confirmação; continuidade posterior depende do vínculo e de superfície futura</td>
+<td>UXA-089 na origem; resultado em UXA-067; análise estrutural UXA-090</td>
 <td>parcial</td>
-<td>GKR-SURF-PER-106 continua ausente; validação integrada pendente</td>
+<td>GKR-SURF-PER-106 ausente; continuidade entre resultado aprovado em PER-105 e ambiente participante exige refinamento</td>
 </tr>
 <tr>
 <td>GKR-TRN-109</td>
@@ -9507,12 +9511,12 @@
 <td>entre participantes; assíncrona</td>
 <td>recusar solicitação; expiração permanece evento temporal distinto</td>
 <td>UXA-056; UXA-067; UXA-088; UXA-089</td>
-<td>apresenta recusa proporcional baseada em condição previamente apresentada, distinta de cancelamento, sanção, reputação ou expiração</td>
-<td>autoridade verificada, fundamento proporcional e confirmação consciente</td>
-<td>voltar sem decidir antes da confirmação; nova exploração possível posteriormente</td>
-<td>UXA-089 na origem; UXA-067 no destino</td>
-<td>parcial</td>
-<td>validação bilateral pendente</td>
+<td>apresenta recusa proporcional baseada em condição previamente apresentada na mesma solicitação, distinta de cancelamento, sanção, reputação ou expiração</td>
+<td>autoridade vigente, fundamento proporcional e confirmação consciente; estado revalidado</td>
+<td>voltar sem decidir antes da confirmação; cancelamento/expiração já vigentes não são sobrescritos; repetição não cria segunda recusa lógica</td>
+<td>UXA-067; UXA-089; UXA-090</td>
+<td>integralmente validada</td>
+<td>—</td>
 </tr>
 <tr>
 <td>GKR-TRN-110</td>
@@ -9552,12 +9556,12 @@
 <td>direta; protegida</td>
 <td>acessar solicitações a partir da visão geral</td>
 <td>UXA-059; UXA-086; UXA-087; UXA-088; UXA-089</td>
-<td>abre a fila especializada sem ampliar autoridade; origem e destino estão validados como superfícies próprias</td>
-<td>representação válida e escopo concedido</td>
-<td>permanecer ou retornar à visão geral; nenhuma decisão implícita pela entrada</td>
-<td>UXA-087 na origem; UXA-089 no destino</td>
-<td>parcial</td>
-<td>ambos endpoints validados como superfícies; transição sem validação funcional ponta a ponta</td>
+<td>abre a fila especializada preservando Coletivo representado e escopo concedido; nenhuma decisão é implícita</td>
+<td>representação válida e escopo vigente</td>
+<td>permanecer ou retornar à visão geral; falta de autoridade bloqueia operação; navegação não altera fila ou estado</td>
+<td>UXA-087; UXA-089; UXA-090</td>
+<td>integralmente validada</td>
+<td>—</td>
 </tr>
 <tr>
 <td>GKR-TRN-113</td>
@@ -9875,27 +9879,37 @@
 </tr>
 </tbody>
 </table>
-<h2 id="8-efeito-da-uxa-089">8. Efeito da UXA-089<a class="headerlink" href="#8-efeito-da-uxa-089" title="Permanent link">&para;</a></h2>
-<p>A UXA-089 não cria transições novas. Ela valida <code>GKR-SURF-COL-003</code> e atualiza a evidência de seis ligações sem promovê-las:</p>
+<h2 id="8-efeito-da-uxa-090">8. Efeito da UXA-090<a class="headerlink" href="#8-efeito-da-uxa-090" title="Permanent link">&para;</a></h2>
+<p>A UXA-090 não cria transições novas e não altera contagens estruturais. Ela examina os handoffs elegíveis como ligações completas e formaliza um contrato transversal de identidade, estado canônico, autoridade vigente, resolução de concorrência e efeito lógico único.</p>
+<p>Passam para <code>integralmente validada</code>:</p>
 <ul>
-<li><code>GKR-TRN-105</code>, <code>GKR-TRN-106</code>, <code>GKR-TRN-107</code>, <code>GKR-TRN-108</code> e <code>GKR-TRN-109</code> passam a possuir a superfície responsável validada;</li>
-<li><code>GKR-TRN-112</code> passa a possuir origem e destino validados como superfícies;</li>
-<li>todas permanecem <code>parcial</code> porque os handoffs bilaterais ainda não foram examinados como conjunto;</li>
-<li><code>GKR-TRN-108</code> mantém lacuna adicional porque <code>GKR-SURF-PER-106</code> continua ausente;</li>
-<li>expiração permanece evento temporal distinto de recusa pelo responsável.</li>
+<li><code>GKR-TRN-105</code> — solicitação disponível para análise;</li>
+<li><code>GKR-TRN-106</code> — pedido de informação adicional;</li>
+<li><code>GKR-TRN-107</code> — resposta adicional;</li>
+<li><code>GKR-TRN-109</code> — recusa;</li>
+<li><code>GKR-TRN-112</code> — Visão Geral do Responsável → gestão de solicitações.</li>
 </ul>
-<p>A próxima inspeção específica desses handoffs é reservada à UXA-090, mediante autorização separada.</p>
+<p><code>GKR-TRN-108</code> permanece <code>parcial</code> porque:</p>
+<ul>
+<li><code>GKR-SURF-PER-106</code> continua ausente;</li>
+<li>o resultado aprovado já é observável na família <code>PER-105</code> antes da futura entrada no ambiente do participante;</li>
+<li>a continuidade entre esse resultado e <code>PER-106</code> precisa ser refinada junto com a materialização futura.</li>
+</ul>
+<p>Expiração permanece evento temporal distinto de recusa pelo responsável.</p>
 <h2 id="9-regras-de-uso">9. Regras de uso<a class="headerlink" href="#9-regras-de-uso" title="Permanent link">&para;</a></h2>
 <ul>
 <li>origem e destino materializados ou validados não presumem transição validada;</li>
 <li>materialização parcial não equivale a validação de transição;</li>
 <li>contrato bilateral não equivale a transição operacional validada;</li>
 <li>validação local não equivale a continuidade integrada;</li>
-<li>um handoff exige autoridade, dados, efeito, retorno e interrupção explícitos;</li>
+<li>validação integral documental não equivale a implementação técnica;</li>
+<li>um handoff exige autoridade, identidade, dados, efeito, retorno, interrupção e tratamento de concorrência explícitos;</li>
+<li>estado obsoleto não pode produzir efeito sobre estado canônico mais recente;</li>
+<li>repetição de interação ou entrega não pode duplicar o efeito lógico;</li>
 <li>transições ausentes permanecem registradas sem seta afirmativa de implementação;</li>
 <li>fronteira externa identificada não presume execução ou resultado externo;</li>
 <li>a cobertura permanece seletiva e não exaustiva;</li>
-<li>o status <code>active</code> aprova o instrumento de registro, não a continuidade ponta a ponta.</li>
+<li>o status <code>active</code> aprova o instrumento de registro, não a implementação ponta a ponta.</li>
 </ul>
 
 
