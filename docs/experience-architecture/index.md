@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.89.0
+version: 0.90.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -28,12 +28,13 @@ related:
   - UXA-094
   - UXA-095
   - UXA-096
+  - UXA-097
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - M7.83
+  - M7.84
 normative: false
 ---
 
@@ -64,10 +65,10 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes | **108** |
-| associações individuais | **108** |
+| SVGs existentes | **109** |
+| associações individuais | **109** |
 | perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **98** |
+| com validação funcional vigente | **99** |
 | pendentes de validação específica | **10** |
 | IDs com referência visual | **30 de 40** |
 | responsabilidades sem SVG dedicado | **9** |
@@ -76,15 +77,14 @@ As dez pendências remanescentes são exclusivamente os estados residuais da UXA
 
 ## 4. Decisões estruturais preservadas
 
-- materialização não equivale a validação funcional;
+- materialização não equivale a validação funcional por padrão;
 - uma versão visual reformulada exige revalidação;
+- concluir uma compreensão ou navegar não constitui avanço humano;
+- personalização não é condição para acessar Hoje;
+- primeira Hoje e Hoje recorrente são variantes do mesmo `PER-008`;
 - vínculo, disponibilidade, função, presença e autoridade são estados distintos;
 - evento histórico não concede acesso interno atual;
-- `Meus Coletivos` organiza vínculos e estados relacionados;
-- a Central preserva origem, natureza, contexto, autoridade, leitura, ação e prazo;
-- o Início do Participante sintetiza o contexto interno sem replicar Central ou canais especializados;
 - estado `lido` não equivale a consentimento, presença ou ação concluída;
-- abrir o Início não confirma presença nem cria função ou autoridade;
 - estado canônico vigente prevalece sobre estado visual obsoleto;
 - validação de superfície não equivale a validação automática de transição;
 - validação integral documental não equivale a implementação técnica.
@@ -99,69 +99,68 @@ UXA-090 — cinco handoffs elegíveis validados
 → UXA-094 — Central e TRN-110 validadas
 → UXA-095 — Início do Participante materializado; TRN-111 parcial
 → UXA-096 — Central/Início revalidados e TRN-111 validada ponta a ponta
+→ UXA-097 — primeira Hoje materializada; PER-007 revalidada; TRN-007 validada ponta a ponta
 ```
 
-## 6. Resultado da UXA-096
+## 6. Resultado da UXA-097
 
-[UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de TRN-111](uxa-096-participant-home-functional-validation-per107-revalidation-and-trn111-integrated-validation.md) reforma duas referências existentes, sem criar SVG ou ID.
+[UXA-097 — Validação Integrada da Continuidade Compreensão Inicial → Tela Hoje](uxa-097-initial-understanding-to-today-integrated-continuity-validation.md) resolve a diferença entre a primeira entrada e a Tela Hoje recorrente.
 
 O veredito é:
 
-> **Aprovada após reformulação controlada e validação integrada de `GKR-TRN-111`.**
+> **Aprovada após materialização mínima do primeiro estado de Hoje, reformulação controlada de PER-007 e validação integrada de GKR-TRN-007.**
 
-A UXA-096 consolida:
+A UXA-097 consolida:
 
-1. vínculo atual e permissão revalidados ao abrir o Início;
-2. evento histórico incapaz de conceder ou preservar acesso;
-3. `PER-107` validado na versão corrente;
-4. `PER-108` validado;
-5. retorno neutro sem alteração implícita de leitura;
-6. estado canônico mais recente prevalecendo sobre renderização antiga;
-7. repetição, retorno e recarga sem duplicação de efeito;
-8. `TRN-111` promovida a integralmente validada;
-9. oito handoffs integralmente validados no trecho governado de Coletivos.
+1. primeira variante móvel de `PER-008` sem presumir avanço ou mudança anterior;
+2. rota sem personalização explicitamente destinada a Hoje;
+3. personalização limitada à base confirmada, autorizada e vigente;
+4. continuidade legítima em Hoje sem personalização;
+5. estado canônico prevalecendo sobre renderização obsoleta;
+6. retorno e repetição sem duplicação de efeito lógico;
+7. `PER-007` corrente revalidado;
+8. primeira variante de `PER-008` validada;
+9. `TRN-007` promovida a integralmente validada.
 
 ## 7. Instrumentos vigentes propostos
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.24.0 |
-| Jornada da Pessoa | `draft` 0.9.0 |
+| Jornadas Integradas | `active` 0.25.0 |
+| Jornada da Pessoa | `draft` 0.10.0 |
 | Jornada do Coletivo | `draft` 0.12.0 |
 | Jornada da Organização | `draft` |
-| catálogo integrado | `active` 0.20.0 |
-| galeria visual | `active` 0.15.0 |
+| catálogo integrado | `active` 0.21.0 |
+| galeria visual | `active` 0.16.0 |
+| página da Pessoa | `active` 0.4.0 |
 | página de Coletivos | `active` 0.13.0 |
-| matriz por SVG | `active` 0.13.0 |
-| lacunas | `active` 0.21.0 |
-| registro de superfícies | `active` 0.13.0 |
-| registro de transições | `active` 0.13.0 |
-| detalhamento da Pessoa | `active` 0.8.0 |
+| matriz por SVG | `active` 0.14.0 |
+| lacunas | `active` 0.22.0 |
+| registro de superfícies | `active` 0.14.0 |
+| registro de transições | `active` 0.14.0 |
+| detalhamento da Pessoa | `active` 0.9.0 |
 
 ## 8. Ressalvas vigentes
 
 - 9 responsabilidades permanecem sem SVG dedicado;
 - 10 SVGs UXA-055 continuam sem validação específica;
+- `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
+- estados alternativos adicionais de Hoje permanecem separados;
 - estados P0B e áreas P1 permanecem separados;
-- áreas internas especializadas a partir do Início não foram validadas como conjunto;
+- áreas internas especializadas a partir do Início do Participante não foram validadas como conjunto;
 - Jornadas da Pessoa e do Coletivo continuam `draft`;
 - continuidades de outros pacotes permanecem parciais ou não examinadas.
 
-## 9. Prioridade de Coletivos
+## 9. Prioridades vigentes
 
 ```text
-COL-002 — validada
-→ TRN-112 — integralmente validada
-→ COL-003 — validada
-↔ TRN-105/106/107/109 — integralmente validadas
-→ TRN-108 — integralmente validada
-→ PER-106 — validado
-→ TRN-110 — integralmente validada
-→ PER-107 — validado
-→ TRN-111 — integralmente validada
-→ PER-108 — validado
+V1 — compreensão inicial → Tela Hoje — encerrada pela UXA-097
+→ V2 — publicação → descoberta/mapa/lista/detalhe — próxima prioridade registrada
+→ V3 — dez estados residuais UXA-055
 ```
+
+A trilha validada de Coletivos até `PER-108` permanece inalterada.
 
 ## 10. Próxima evolução possível
 
-A próxima priorização deverá partir das lacunas remanescentes. **UXA-097 não foi iniciada e depende de autorização separada.**
+A próxima prioridade registrada é **V2 — publicação → descoberta/mapa/lista/detalhe**. A UXA-098 não foi iniciada e depende de autorização separada.
