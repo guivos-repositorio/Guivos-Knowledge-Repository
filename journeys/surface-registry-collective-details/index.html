@@ -8945,7 +8945,7 @@
 <h1 id="detalhamento-obrigatorio-das-superficies-do-coletivo">Detalhamento Obrigatório das Superfícies do Coletivo<a class="headerlink" href="#detalhamento-obrigatorio-das-superficies-do-coletivo" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não altera a contagem de entradas.</p>
-<p>A UXA-088 materializa <code>GKR-SURF-COL-003</code> em sete estados desktop. A família permanece sem validação funcional específica.</p>
+<p>A UXA-088 materializou <code>GKR-SURF-COL-003</code> em sete estados desktop e a UXA-089 reformulou seis deles e validou funcionalmente toda a família.</p>
 <h2 id="2-campos-por-identificador">2. Campos por identificador<a class="headerlink" href="#2-campos-por-identificador" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -8992,24 +8992,24 @@
 <td>representação válida e escopo concedido</td>
 <td>permanecer, adiar, contestar prioridade ou retornar</td>
 <td>nenhuma identificada</td>
-<td>parcial; destino agora materializado, transição ainda não validada</td>
+<td>parcial; destino validado como superfície, transição ainda não validada</td>
 <td>continuidade para COL-003</td>
 <td>referência desktop validada; não substitui gestão especializada</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-003</td>
-<td>UXA-088 — <code>docs/experience-architecture/uxa-088-collective-request-management-low-fidelity-wireframes.md</code>; efeitos na Pessoa em UXA-066/067</td>
-<td>materialização 0.1.0; validação pendente</td>
+<td>UXA-088 — <code>docs/experience-architecture/uxa-088-collective-request-management-low-fidelity-wireframes.md</code>; validação UXA-089; efeitos na Pessoa em UXA-066/067</td>
+<td>materialização 0.2.0; validação 0.1.0</td>
 <td>GKR-TRN-105 ou GKR-TRN-112; resposta adicional via GKR-TRN-107</td>
 <td>analisar solicitação e escolher aguardar, pedir informação, aprovar ou recusar dentro da autoridade</td>
 <td>GKR-TRN-106, GKR-TRN-108 ou GKR-TRN-109; permanência na fila quando não houver decisão</td>
-<td>dados autorizados da solicitação; estado; prazo; critérios; fundamento; resposta adicional; dados protegidos mínimos quando aplicável</td>
-<td>representação válida; finalidade limitada; autoridade específica; confirmação antes de aprovação ou recusa</td>
-<td>voltar sem decidir; aguardar; pedir informação; cancelar rascunho; interromper por autoridade insuficiente</td>
+<td>dados autorizados da solicitação; estado; referência temporal; critérios previamente apresentados; fundamento; resposta adicional; dados protegidos mínimos quando aplicável</td>
+<td>representação válida; finalidade limitada; autoridade específica verificada; confirmação antes de aprovação ou recusa</td>
+<td>voltar sem decidir; aguardar; pedir informação; descartar rascunho; interromper por autoridade insuficiente</td>
 <td>referências na perspectiva da Pessoa não são supersedidas</td>
-<td>materializada bilateralmente; validação integrada pendente</td>
-<td>gate funcional da família e continuidade pós-aprovação para PER-106</td>
-<td>sete SVGs desktop; cancelamento pela Pessoa e expiração são eventos refletidos, não decisões equivalentes do responsável</td>
+<td>superfície validada; continuidade bilateral ainda parcial</td>
+<td>handoffs bilaterais e continuidade pós-aprovação para PER-106</td>
+<td>sete SVGs desktop validados; acessibilidade separada de elegibilidade; cancelamento pela Pessoa e expiração são eventos refletidos</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-004</td>
@@ -9024,7 +9024,7 @@
 <td>nenhuma identificada</td>
 <td>ausente</td>
 <td>continuidade interna</td>
-<td>não iniciado pela UXA-088</td>
+<td>não iniciado pela UXA-089</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-005</td>
@@ -9039,7 +9039,7 @@
 <td>nenhuma identificada</td>
 <td>ausente</td>
 <td>superfície e regras operacionais</td>
-<td>não iniciado pela UXA-088</td>
+<td>não iniciado pela UXA-089</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-006</td>
@@ -9054,7 +9054,7 @@
 <td>nenhuma identificada</td>
 <td>não examinado</td>
 <td>matriz operacional integrada</td>
-<td>não iniciado pela UXA-088</td>
+<td>não iniciado pela UXA-089</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-007</td>
@@ -9069,7 +9069,7 @@
 <td>nenhuma identificada</td>
 <td>não examinado</td>
 <td>fluxo protegido completo</td>
-<td>não iniciado pela UXA-088</td>
+<td>não iniciado pela UXA-089</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-008</td>
@@ -9084,19 +9084,20 @@
 <td>nenhuma identificada</td>
 <td>ausente</td>
 <td>relação Organização–Coletivo</td>
-<td>não iniciado pela UXA-088</td>
+<td>não iniciado pela UXA-089</td>
 </tr>
 </tbody>
 </table>
 <h2 id="3-regras-preservadas">3. Regras preservadas<a class="headerlink" href="#3-regras-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>valores sem evidência permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>;</li>
-<li>materialização de <code>COL-003</code> não autoriza completar <code>COL-004</code> a <code>COL-008</code> por analogia;</li>
-<li>efeitos validados na perspectiva da Pessoa não equivalem a validação do ato do responsável;</li>
+<li>validação de <code>COL-003</code> não autoriza completar <code>COL-004</code> a <code>COL-008</code> por analogia;</li>
+<li>efeitos validados em ambas as perspectivas não equivalem a validação do handoff como conjunto;</li>
+<li>autoridade é verificada por escopo concedido e não por autodeclaração;</li>
 <li>autoridade insuficiente impede a decisão e não concede dados adicionais.</li>
 </ul>
 <h2 id="4-estado">4. Estado<a class="headerlink" href="#4-estado" title="Permanent link">&para;</a></h2>
-<p>O detalhamento está <code>active</code> 0.5.0. <code>COL-002</code> permanece validada e <code>COL-003</code> passa a materializada com validação pendente. A Jornada do Coletivo continua incompleta.</p>
+<p>O detalhamento está <code>active</code> 0.6.0. <code>COL-002</code> e <code>COL-003</code> estão validadas no escopo de suas superfícies. A continuidade bilateral e a Jornada do Coletivo continuam incompletas.</p>
 
 
 

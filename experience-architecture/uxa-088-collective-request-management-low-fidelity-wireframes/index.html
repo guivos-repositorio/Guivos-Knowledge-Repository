@@ -8896,10 +8896,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-estados-materializados" class="md-nav__link">
+  <a href="#3-estados-materializados-e-validados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Estados materializados
+        3. Estados materializados e validados
       
     </span>
   </a>
@@ -8995,10 +8995,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-efeito-esperado-sobre-os-registros" class="md-nav__link">
+  <a href="#12-resultado-da-uxa-089" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Efeito esperado sobre os registros
+        12. Resultado da UXA-089
       
     </span>
   </a>
@@ -9055,15 +9055,15 @@
 <h1 id="materializacao-controlada-da-gestao-de-solicitacoes-do-responsavel-do-coletivo">Materialização Controlada da Gestão de Solicitações do Responsável do Coletivo<a class="headerlink" href="#materializacao-controlada-da-gestao-de-solicitacoes-do-responsavel-do-coletivo" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>A UXA-088 materializa exclusivamente <code>GKR-SURF-COL-003 — gestão de solicitações</code> na perspectiva do responsável do Coletivo.</p>
-<p>A família deverá permitir responder:</p>
+<p>A família permite responder:</p>
 <blockquote>
 <p><strong>Quais solicitações exigem atenção, quais dados posso legitimamente analisar, o que posso decidir dentro da minha autoridade, como pedir informação sem coagir e qual consequência será produzida para a Pessoa?</strong></p>
 </blockquote>
-<p>A UXA-088 não valida funcionalmente a família, não materializa gestão de participantes (<code>COL-004</code>) e não promove a Jornada do Coletivo.</p>
+<p>A UXA-089 reformulou seis dos sete SVGs e validou funcionalmente toda a família. A materialização não inclui gestão de participantes (<code>COL-004</code>) e não promove a Jornada do Coletivo.</p>
 <h2 id="2-canal">2. Canal<a class="headerlink" href="#2-canal" title="Permanent link">&para;</a></h2>
 <p>Canal inicial: <strong>computador protegido</strong>.</p>
 <p>A escolha segue UXA-059: triagem, comparação de estados, leitura de dados autorizados e decisões com consequência exigem espaço operacional maior. Derivações móveis permanecem fora deste pacote.</p>
-<h2 id="3-estados-materializados">3. Estados materializados<a class="headerlink" href="#3-estados-materializados" title="Permanent link">&para;</a></h2>
+<h2 id="3-estados-materializados-e-validados">3. Estados materializados e validados<a class="headerlink" href="#3-estados-materializados-e-validados" title="Permanent link">&para;</a></h2>
 <p>A família utiliza sete SVGs para um único ID granular <code>GKR-SURF-COL-003</code>.</p>
 <table>
 <thead>
@@ -9071,6 +9071,7 @@
 <th>Estado</th>
 <th>Arquivo</th>
 <th>Decisão principal</th>
+<th>Validação</th>
 </tr>
 </thead>
 <tbody>
@@ -9078,36 +9079,43 @@
 <td>fila operacional</td>
 <td><code>uxa-088-collective-request-management-queue-desktop.svg</code></td>
 <td>escolher uma solicitação sem alterar prioridade</td>
+<td>UXA-089</td>
 </tr>
 <tr>
 <td>detalhe comum</td>
 <td><code>uxa-088-collective-request-management-detail-desktop.svg</code></td>
 <td>analisar dados autorizados e escolher próximo ato</td>
+<td>UXA-089</td>
 </tr>
 <tr>
 <td>análise protegida</td>
 <td><code>uxa-088-collective-request-management-protected-detail-desktop.svg</code></td>
 <td>analisar exposição mínima dentro de autoridade especializada</td>
+<td>UXA-089</td>
 </tr>
 <tr>
 <td>pedido adicional</td>
 <td><code>uxa-088-collective-request-management-additional-information-desktop.svg</code></td>
-<td>formular pergunta, finalidade e prazo sem impor revelação</td>
+<td>formular pergunta, finalidade e referência temporal sem impor revelação</td>
+<td>UXA-089</td>
 </tr>
 <tr>
 <td>confirmação de aprovação</td>
 <td><code>uxa-088-collective-request-management-approve-confirmation-desktop.svg</code></td>
 <td>confirmar formação do vínculo sem atribuir função automática</td>
+<td>UXA-089</td>
 </tr>
 <tr>
 <td>confirmação de recusa</td>
 <td><code>uxa-088-collective-request-management-refuse-confirmation-desktop.svg</code></td>
 <td>confirmar recusa proporcional sem convertê-la em sanção ou reputação</td>
+<td>UXA-089</td>
 </tr>
 <tr>
 <td>autoridade insuficiente</td>
 <td><code>uxa-088-collective-request-management-insufficient-authority-desktop.svg</code></td>
 <td>não decidir e retornar ou encaminhar legitimamente</td>
+<td>UXA-089</td>
 </tr>
 </tbody>
 </table>
@@ -9120,21 +9128,21 @@
 → Pessoa recebe o estado correspondente em PER-105
 → aprovação poderá seguir futuramente para PER-106
 </code></pre></div>
-<p>A UXA-088 materializa os endpoints responsáveis das transições <code>TRN-105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code> e o destino de <code>TRN-112</code>, mas <strong>não valida nenhuma dessas transições ponta a ponta</strong>.</p>
+<p>A UXA-089 valida <code>COL-003</code> como superfície, mas <strong>não valida as transições <code>TRN-105</code> a <code>109</code> ou <code>TRN-112</code> ponta a ponta</strong>. Esses handoffs exigem inspeção integrada própria.</p>
 <h2 id="5-regras-da-fila">5. Regras da fila<a class="headerlink" href="#5-regras-da-fila" title="Permanent link">&para;</a></h2>
-<p>A fila deverá separar, sem transformar volume em desempenho:</p>
+<p>A fila separa, sem transformar volume em desempenho:</p>
 <ul>
 <li>aguardando decisão;</li>
 <li>aguardando informação da Pessoa;</li>
 <li>resposta adicional recebida;</li>
 <li>análise protegida;</li>
-<li>próximas do prazo informado;</li>
+<li>referências temporais distintas por natureza;</li>
 <li>encerradas por aprovação, recusa, cancelamento ou expiração.</li>
 </ul>
-<p>Consultar, ordenar ou filtrar não poderá alterar prioridade substantiva, decisão ou direito da Pessoa. Qualquer ordenação automática deverá ser explicável e contestável quando materialmente relevante.</p>
+<p>Consultar, ordenar ou filtrar não altera prioridade substantiva, decisão ou direito da Pessoa. A versão reformulada distingue <code>estimativa</code> de <code>resposta até</code> e declara a base da ordenação sem convertê-la em prioridade automática.</p>
 <h2 id="6-dados-e-autoridade">6. Dados e autoridade<a class="headerlink" href="#6-dados-e-autoridade" title="Permanent link">&para;</a></h2>
-<p>O responsável poderá ver somente informações vinculadas à finalidade declarada do pedido e ao seu escopo de autoridade.</p>
-<p>Não serão inferidos ou exibidos automaticamente:</p>
+<p>O responsável pode ver somente informações vinculadas à finalidade declarada do pedido e ao seu escopo de autoridade.</p>
+<p>Não são inferidos ou exibidos automaticamente:</p>
 <ul>
 <li>conteúdo da Jornada pessoal;</li>
 <li>outros Coletivos da Pessoa;</li>
@@ -9144,52 +9152,64 @@
 <li>relações institucionais sem pertinência ao pedido.</li>
 </ul>
 <p>Em análise protegida, remetente, equipe de análise e autoridade de decisão permanecem separados.</p>
+<p>A UXA-089 também consolida que autoridade é verificada pelo escopo concedido e não pode ser criada por checkbox, autodeclaração ou simples acesso à superfície.</p>
 <h2 id="7-pedido-de-informacao-adicional">7. Pedido de informação adicional<a class="headerlink" href="#7-pedido-de-informacao-adicional" title="Permanent link">&para;</a></h2>
-<p>O pedido deverá declarar:</p>
+<p>O pedido declara:</p>
 <ul>
 <li>pergunta exata;</li>
 <li>finalidade;</li>
 <li>autoridade solicitante;</li>
 <li>formato aceito;</li>
-<li>prazo e eventual regra de expiração;</li>
+<li>referência temporal e eventual regra de expiração;</li>
 <li>dados que não são solicitados;</li>
-<li>efeito da pausa sobre a decisão.</li>
+<li>efeito sobre a decisão.</li>
 </ul>
-<p>A interface deverá lembrar que a Pessoa pode responder, preferir não informar, contestar ou cancelar. Solicitar informação não autoriza coletar dado irrelevante nem presumir dever de revelação.</p>
+<p>A interface lembra que a Pessoa pode responder, informar que não consegue confirmar, preferir não responder, contestar ou cancelar conforme o estado aplicável. Solicitar informação não autoriza coletar dado irrelevante nem presumir dever de revelação.</p>
+<p>Após UXA-089:</p>
+<ul>
+<li>o cenário usa somente critério objetivo previamente apresentado;</li>
+<li>saúde, diagnóstico e necessidade de acessibilidade ficam fora da decisão de elegibilidade;</li>
+<li>acessibilidade permanece responsabilidade separada de acomodação e nunca critério oculto de entrada;</li>
+<li><code>prefiro não responder</code> não é recusa voluntária.</li>
+</ul>
 <h2 id="8-aprovacao">8. Aprovação<a class="headerlink" href="#8-aprovacao" title="Permanent link">&para;</a></h2>
-<p>Antes da confirmação, o responsável deverá compreender que aprovação:</p>
+<p>Antes da confirmação, o responsável compreende que aprovação:</p>
 <ul>
 <li>forma vínculo de participante conforme contrato;</li>
 <li>não atribui função, moderação, autoridade ou presença obrigatória;</li>
 <li>não ativa notificações ou exposição nominal automaticamente;</li>
 <li>não comprova mérito, reputação ou evolução humana;</li>
-<li>produz efeito na perspectiva da Pessoa, mas a continuidade para <code>PER-106</code> permanece não materializada.</li>
+<li>produz efeito na perspectiva da Pessoa;</li>
+<li>não declara <code>PER-106</code> como materializada.</li>
 </ul>
+<p>A autoridade é verificada antes da confirmação. O checkbox confirma fundamento e consequência; não cria ou amplia permissão.</p>
 <h2 id="9-recusa">9. Recusa<a class="headerlink" href="#9-recusa" title="Permanent link">&para;</a></h2>
-<p>A recusa deverá exigir fundamento proporcional e separar claramente:</p>
+<p>A recusa exige fundamento proporcional e separa claramente:</p>
 <ul>
 <li>recusa de sanção;</li>
 <li>recusa de reputação;</li>
 <li>recusa de denúncia;</li>
 <li>recusa de bloqueio universal;</li>
-<li>eventual revisão formal, que só poderá existir quando houver regra, prazo e autoridade próprios.</li>
+<li>eventual revisão formal, que só pode existir quando houver regra, prazo e autoridade próprios.</li>
 </ul>
+<p>A UXA-089 exige que o fundamento utilizado tenha sido previamente apresentado à Pessoa e que a confirmação não funcione como autodeclaração de autoridade.</p>
 <h2 id="10-autoridade-insuficiente">10. Autoridade insuficiente<a class="headerlink" href="#10-autoridade-insuficiente" title="Permanent link">&para;</a></h2>
-<p>Quando a pessoa autenticada não possuir escopo suficiente, a superfície deverá:</p>
+<p>Quando a pessoa autenticada não possui escopo suficiente, a superfície:</p>
 <ul>
-<li>identificar a ação indisponível;</li>
-<li>explicar qual autoridade falta;</li>
-<li>não exibir dados adicionais por tentativa de acesso;</li>
-<li>permitir retorno à fila ou à Visão Geral;</li>
-<li>oferecer encaminhamento somente quando houver autoridade receptora legítima;</li>
-<li>evitar atalhos para assumir ou ampliar permissão.</li>
+<li>identifica a ação indisponível;</li>
+<li>explica qual autoridade falta;</li>
+<li>não exibe dados adicionais por tentativa de acesso;</li>
+<li>permite retorno à fila ou à Visão Geral;</li>
+<li>permite consultar somente o escopo concedido;</li>
+<li>oferece encaminhamento somente quando houver autoridade receptora legítima;</li>
+<li>evita atalhos para assumir, solicitar automaticamente ou ampliar permissão.</li>
 </ul>
 <h2 id="11-rastreabilidade">11. Rastreabilidade<a class="headerlink" href="#11-rastreabilidade" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>Campo</th>
-<th>Resultado da UXA-088</th>
+<th>Resultado após UXA-089</th>
 </tr>
 </thead>
 <tbody>
@@ -9206,7 +9226,7 @@
 <td>0</td>
 </tr>
 <tr>
-<td>novos SVGs</td>
+<td>SVGs da família</td>
 <td>7</td>
 </tr>
 <tr>
@@ -9222,8 +9242,12 @@
 <td><code>GKR-TRN-105</code> a <code>GKR-TRN-109</code></td>
 </tr>
 <tr>
-<td>validação funcional</td>
-<td>pendente de pacote específico</td>
+<td>validação funcional da superfície</td>
+<td>UXA-089 — aprovada após reformulação controlada</td>
+</tr>
+<tr>
+<td>handoffs ponta a ponta</td>
+<td>pendentes de pacote integrado específico</td>
 </tr>
 <tr>
 <td>jornada do Coletivo</td>
@@ -9231,19 +9255,21 @@
 </tr>
 </tbody>
 </table>
-<h2 id="12-efeito-esperado-sobre-os-registros">12. Efeito esperado sobre os registros<a class="headerlink" href="#12-efeito-esperado-sobre-os-registros" title="Permanent link">&para;</a></h2>
-<p>Após eventual integração:</p>
+<h2 id="12-resultado-da-uxa-089">12. Resultado da UXA-089<a class="headerlink" href="#12-resultado-da-uxa-089" title="Permanent link">&para;</a></h2>
+<p>Após eventual integração da validação:</p>
 <ul>
-<li><code>GKR-SURF-COL-003</code> passa de programado/ausente para <strong>materializado; validação pendente</strong>;</li>
-<li><code>GKR-TRN-112</code> passa a possuir os dois endpoints materializados, mas continua sem validação funcional ponta a ponta;</li>
-<li><code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> ganham evidência na perspectiva do responsável, mas continuam parciais até validação integrada;</li>
+<li><code>GKR-SURF-COL-003</code> passa de <strong>materializado; validação pendente</strong> para <strong>validado</strong>;</li>
+<li>seis SVGs são reformulados e todos os sete são validados;</li>
+<li><code>GKR-TRN-112</code> continua parcial apesar de ambos endpoints estarem validados;</li>
+<li><code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> continuam parciais até validação integrada;</li>
+<li><code>GKR-TRN-108</code> mantém ainda <code>PER-106</code> ausente;</li>
 <li>os 40 IDs de superfície e as 37 transições permanecem inalterados;</li>
 <li><code>COL-004</code>, <code>PER-106</code>, <code>PER-107</code> e <code>PER-108</code> permanecem fora do escopo.</li>
 </ul>
 <h2 id="13-limites">13. Limites<a class="headerlink" href="#13-limites" title="Permanent link">&para;</a></h2>
-<p>A UXA-088 não:</p>
+<p>A família validada não:</p>
 <ul>
-<li>valida funcionalmente os sete novos SVGs;</li>
+<li>valida handoffs bilaterais como conjunto;</li>
 <li>fecha a Jornada do Coletivo;</li>
 <li>materializa participantes, comunicação, moderação ou relações institucionais;</li>
 <li>cria revisão formal completa de recusa;</li>
@@ -9252,14 +9278,14 @@
 <li>executa teste com pessoas;</li>
 <li>altera Resultados Empresariais;</li>
 <li>inicia Engenharia de Produto;</li>
-<li>inicia UXA-089.</li>
+<li>inicia UXA-090.</li>
 </ul>
 <h2 id="14-proximo-ato-possivel">14. Próximo ato possível<a class="headerlink" href="#14-proximo-ato-possivel" title="Permanent link">&para;</a></h2>
 <p>Após integração e autorização separada, o próximo ato recomendado é:</p>
 <blockquote>
-<p><strong>UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável do Coletivo.</strong></p>
+<p><strong>UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos.</strong></p>
 </blockquote>
-<p>A UXA-089 não é iniciada por este pacote.</p>
+<p>A UXA-090 não é iniciada por este pacote.</p>
 
 
 

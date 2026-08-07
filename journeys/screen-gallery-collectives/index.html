@@ -9393,7 +9393,7 @@
 → Central de Atualizações
 → Início do Participante
 </code></pre></div>
-<p>A galeria cobre visualmente a sequência até a gestão de solicitações do responsável. <code>GKR-SURF-COL-002</code> foi reformulada e validada funcionalmente pela UXA-087. <code>GKR-SURF-COL-003</code> foi materializada pela UXA-088 e permanece com validação funcional específica pendente. As superfícies posteriores permanecem ausentes ou parciais.</p>
+<p>A galeria cobre visualmente a sequência até a gestão de solicitações do responsável. <code>GKR-SURF-COL-002</code> foi reformulada e validada funcionalmente pela UXA-087. <code>GKR-SURF-COL-003</code> foi materializada pela UXA-088 e reformulada/validada pela UXA-089. As superfícies posteriores permanecem ausentes ou parciais.</p>
 <h2 id="2-descoberta-e-busca">2. Descoberta e busca<a class="headerlink" href="#2-descoberta-e-busca" title="Permanent link">&para;</a></h2>
 <p><strong>Cobertura:</strong> 5 SVGs · IDs: <code>GKR-SURF-PER-101</code>, <code>GKR-SURF-PER-102</code> · origem: <code>UXA-060</code> · validação: <code>UXA-061</code></p>
 <h3 id="uxa-060-collective-discovery-origin-mobilesvg"><code>uxa-060-collective-discovery-origin-mobile.svg</code><a class="headerlink" href="#uxa-060-collective-discovery-origin-mobilesvg" title="Permanent link">&para;</a></h3>
@@ -9446,7 +9446,7 @@
 <p><img alt="" loading="lazy" src="../../assets/wireframes/uxa-066-collective-pending-request-cancelled-mobile.svg" width="320" /></p>
 <h3 id="uxa-066-collective-pending-request-expired-mobilesvg"><code>uxa-066-collective-pending-request-expired-mobile.svg</code><a class="headerlink" href="#uxa-066-collective-pending-request-expired-mobilesvg" title="Permanent link">&para;</a></h3>
 <p><img alt="" loading="lazy" src="../../assets/wireframes/uxa-066-collective-pending-request-expired-mobile.svg" width="320" /></p>
-<p>Os oito estados permanecem validados somente na perspectiva da Pessoa. A UXA-088 não altera essa validação.</p>
+<p>Os oito estados permanecem validados na perspectiva da Pessoa por UXA-067. A UXA-089 valida a operação responsável correspondente em <code>COL-003</code>, sem validar os handoffs bilaterais como conjunto.</p>
 <h2 id="6-referencia-inicial-do-coletivo">6. Referência inicial do Coletivo<a class="headerlink" href="#6-referencia-inicial-do-coletivo" title="Permanent link">&para;</a></h2>
 <p><strong>Cobertura:</strong> 1 SVG · ID: <code>GKR-SURF-COL-001</code> · origem: <code>UXA-016</code> · validação: <code>UXA-018</code></p>
 <h3 id="uxa-016-collective-home-mobilesvg"><code>uxa-016-collective-home-mobile.svg</code><a class="headerlink" href="#uxa-016-collective-home-mobilesvg" title="Permanent link">&para;</a></h3>
@@ -9458,7 +9458,7 @@
 <p>A UXA-087 aprovou a referência após reformulação controlada, tornando explícitos estado e escopo de autoridade, prazo verificável, alternativa legítima e retorno ao contexto anterior.</p>
 <p>A validação é restrita a <code>GKR-SURF-COL-002</code>. A continuidade <code>GKR-TRN-112</code> permanece não validada como conjunto.</p>
 <h2 id="8-gestao-de-solicitacoes-do-responsavel">8. Gestão de Solicitações do Responsável<a class="headerlink" href="#8-gestao-de-solicitacoes-do-responsavel" title="Permanent link">&para;</a></h2>
-<p><strong>Cobertura:</strong> 7 SVGs · ID: <code>GKR-SURF-COL-003</code> · origem: <code>UXA-088</code> · validação: <strong>pendente de pacote específico</strong></p>
+<p><strong>Cobertura:</strong> 7 SVGs · ID: <code>GKR-SURF-COL-003</code> · origem: <code>UXA-088</code> · reformulação e validação: <strong>UXA-089</strong></p>
 <h3 id="uxa-088-collective-request-management-queue-desktopsvg"><code>uxa-088-collective-request-management-queue-desktop.svg</code><a class="headerlink" href="#uxa-088-collective-request-management-queue-desktopsvg" title="Permanent link">&para;</a></h3>
 <p><img alt="" loading="lazy" src="../../assets/wireframes/uxa-088-collective-request-management-queue-desktop.svg" width="720" /></p>
 <h3 id="uxa-088-collective-request-management-detail-desktopsvg"><code>uxa-088-collective-request-management-detail-desktop.svg</code><a class="headerlink" href="#uxa-088-collective-request-management-detail-desktopsvg" title="Permanent link">&para;</a></h3>
@@ -9473,13 +9473,14 @@
 <p><img alt="" loading="lazy" src="../../assets/wireframes/uxa-088-collective-request-management-refuse-confirmation-desktop.svg" width="720" /></p>
 <h3 id="uxa-088-collective-request-management-insufficient-authority-desktopsvg"><code>uxa-088-collective-request-management-insufficient-authority-desktop.svg</code><a class="headerlink" href="#uxa-088-collective-request-management-insufficient-authority-desktopsvg" title="Permanent link">&para;</a></h3>
 <p><img alt="" loading="lazy" src="../../assets/wireframes/uxa-088-collective-request-management-insufficient-authority-desktop.svg" width="720" /></p>
-<p>A família materializa a operação responsável dos handoffs <code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> e o destino de <code>GKR-TRN-112</code>, mas não valida essas transições ponta a ponta. Cancelamento pela Pessoa e expiração são eventos refletidos na operação, não decisões equivalentes do responsável.</p>
+<p>A UXA-089 aprovou os sete estados após reformulação controlada de seis deles. A fila distingue estimativa e prazo de resposta; critérios precisam ter sido apresentados à Pessoa; acessibilidade foi retirada da elegibilidade; aprovação e recusa não autoatribuem autoridade; e o estado de autoridade insuficiente permite apenas consultar o escopo concedido.</p>
+<p>A família continua sem validar <code>GKR-TRN-105</code> a <code>GKR-TRN-109</code> ou <code>GKR-TRN-112</code> ponta a ponta.</p>
 <h2 id="9-dependencias-sem-svg-dedicado">9. Dependências sem SVG dedicado<a class="headerlink" href="#9-dependencias-sem-svg-dedicado" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>GKR-SURF-PER-106 — Meus Coletivos
 → GKR-SURF-PER-107 — Central de Atualizações
 → GKR-SURF-PER-108 — Início do Participante
 </code></pre></div>
-<p><code>GKR-SURF-COL-003</code> deixa de estar visualmente ausente, mas permanece com validação funcional pendente. <code>GKR-SURF-COL-004</code> a <code>GKR-SURF-COL-008</code> também permanecem fora do escopo da UXA-088.</p>
+<p><code>GKR-SURF-COL-003</code> está visualmente materializada e funcionalmente validada. <code>GKR-SURF-COL-004</code> a <code>GKR-SURF-COL-008</code> permanecem fora deste pacote. A continuidade bilateral das solicitações continua dívida própria.</p>
 <p><a href="../screen-gallery-opportunities-organization/">← Organização e Oportunidades</a> · <a href="../screen-gallery/">Índice</a> · <a href="../screen-gallery-traceability-matrix/">Matriz por SVG</a> · <a href="../screen-gallery-opportunity-boost-exposure/">Próxima: Opportunity Boost — Exposição →</a></p>
 
 
