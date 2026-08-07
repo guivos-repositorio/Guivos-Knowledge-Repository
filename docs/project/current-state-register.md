@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.13.0
+version: 2.14.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -15,13 +15,8 @@ related:
   - UXA-000
   - UXA-014
   - UXA-019
-  - UXA-020
-  - UXA-023
-  - UXA-034
-  - UXA-037
   - UXA-055
   - UXA-056
-  - UXA-069
   - UXA-070
   - UXA-071
   - UXA-072
@@ -40,21 +35,19 @@ related:
   - UXA-085
   - UXA-086
   - UXA-087
+  - UXA-088
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - GEM-004-A1
-  - GEM-007-A1
-  - GEM-010-A2
   - BA-STR-002
   - BA-STR-002-COR-001
   - BA-STR-002-CODR-001
   - COD-018
-  - ROADMAP-12.60.0
-  - M7.74
+  - ROADMAP-12.61.0
+  - M7.75
 normative: true
 ---
 
@@ -69,14 +62,14 @@ Este registro declara o estado global vigente quando o incremento correspondente
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
-| Marco | Visão Geral do Responsável reformulada e validada funcionalmente | UXA-087; M7.74 |
+| Marco | gestão de solicitações do responsável materializada; validação funcional pendente | UXA-088; M7.75 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
-| Registros granulares | 40 entradas e 37 transições em instrumentos `active` | UXA-076 a UXA-087 |
-| Galeria visual | `active` 0.7.0; 98 SVGs para inspeção | UXA-081 a UXA-087 |
-| Páginas da galeria | cinco páginas ativas; Coletivos em 0.5.0 | UXA-087 |
-| Matriz por SVG | 98 arquivos associados a 24 perfis; `active` 0.5.0 | UXA-083 a UXA-087 |
-| Jornadas Integradas | visão geral e instrumentos ativos; Pessoa, Coletivo e Organização em `draft` | UXA-070 a UXA-087 |
+| Registros granulares | 40 entradas e 37 transições em instrumentos `active` | UXA-076 a UXA-088 |
+| Galeria visual | `active` 0.8.0; 105 SVGs | UXA-081 a UXA-088 |
+| Páginas da galeria | cinco páginas ativas; Coletivos em 0.6.0 | UXA-088 |
+| Matriz por SVG | 105 arquivos associados a 25 perfis; `active` 0.6.0 | UXA-083 a UXA-088 |
+| Jornadas Integradas | instrumentos ativos; Pessoa, Coletivo e Organização em `draft` | UXA-070 a UXA-088 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Resultados Empresariais
@@ -89,7 +82,7 @@ Este registro declara o estado global vigente quando o incremento correspondente
 | rejeitados | 6 |
 | Resultados Empresariais canônicos | 0 |
 
-As UXA-070 a UXA-087 não alteram decisões empresariais, critérios de canonicidade ou evidências de mercado.
+A UXA-088 não altera decisões empresariais, critérios de canonicidade ou evidências de mercado.
 
 ## 4. Baseline comercial candidata
 
@@ -100,118 +93,108 @@ Permanecem candidatos, sem promoção automática:
 - premissas candidatas de orçamento, CPM e CPC;
 - Guivos Ads como operador econômico do mecanismo publicitário.
 
-A validação da UXA-087 não comprova preço, demanda, conversão, receita ou viabilidade.
+A materialização da UXA-088 não comprova preço, demanda, conversão, receita ou viabilidade.
 
 ## 5. Cobertura visual
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes e referenciados | 98 |
-| associações individuais | 98 |
-| perfis de rastreabilidade | 24 |
+| SVGs existentes e referenciados | 105 |
+| associações individuais | 105 |
+| perfis de rastreabilidade | 25 |
 | com validação funcional registrada | 88 |
-| pendentes de validação específica | 10 |
-| IDs granulares com referência visual | 26 de 40 |
-| responsabilidades sem SVG dedicado | 13 |
+| pendentes de validação específica | 17 |
+| IDs granulares com referência visual | 27 de 40 |
+| responsabilidades sem SVG dedicado | 12 |
 | fronteira sem tela por definição | 1 |
 
-Os dez pendentes correspondem exclusivamente aos estados residuais da UXA-055. A referência de `GKR-SURF-COL-002` deixa de compor a fila de validação pendente.
+Os 17 pendentes são os dez estados residuais da UXA-055 e os sete estados de `COL-003` criados pela UXA-088.
 
 ## 6. Sequência documental
 
 ```text
 UXA-070 a UXA-075 — Jornadas Integradas estruturadas e promovidas seletivamente
-→ UXA-076 a UXA-080 — registros granulares estruturados, corrigidos, revalidados e promovidos
-→ UXA-081 — galeria visual materializada e cobertura auditada
-→ UXA-082 — promoção bloqueada e lacunas repriorizadas
-→ UXA-083 — galeria reformulada e matriz por SVG criada
-→ UXA-084 — galeria e matriz revalidadas com ressalvas
-→ UXA-085 — instrumentos visuais promovidos
-→ UXA-086 — Visão Geral do Responsável materializada
-→ UXA-087 — Visão Geral do Responsável reformulada e validada funcionalmente
+→ UXA-076 a UXA-080 — registros granulares promovidos
+→ UXA-081 a UXA-085 — galeria e matriz auditadas, reformuladas, revalidadas e promovidas
+→ UXA-086 — COL-002 materializada
+→ UXA-087 — COL-002 reformulada e validada
+→ UXA-088 — COL-003 materializada em sete estados desktop
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 7. Resultado da UXA-087
+## 7. Resultado da UXA-088
 
-Foi validada exclusivamente:
+Foi materializada exclusivamente `GKR-SURF-COL-003 — gestão de solicitações`, com sete estados desktop:
 
-- `GKR-SURF-COL-002 — Visão Geral do Responsável`;
-- o mesmo SVG desktop criado pela UXA-086, após reformulação controlada.
+- fila operacional;
+- detalhe comum;
+- análise protegida;
+- pedido adicional;
+- confirmação de aprovação;
+- confirmação de recusa;
+- autoridade insuficiente.
 
-Correções incorporadas:
-
-- estado e escopo de autoridade explícitos;
-- prazo verificável para a atenção principal;
-- adiamento e contestação sem penalidade;
-- retorno explícito ao contexto anterior.
-
-O veredito é **aprovada após reformulação controlada no escopo da superfície**.
-
-A UXA-087 não materializa `GKR-SURF-COL-003`, não valida `GKR-TRN-112` ponta a ponta e não promove a jornada do Coletivo.
+A UXA-088 fornece evidência do lado responsável para `TRN-105` a `TRN-109` e materializa o destino de `TRN-112`, mas não valida funcionalmente os estados nem as transições ponta a ponta.
 
 ## 8. Ressalvas vigentes
 
-- perfis agregados não substituem análise semântica exclusiva de cada estado;
-- 13 responsabilidades permanecem sem SVG dedicado;
+- 12 responsabilidades permanecem sem SVG dedicado;
 - dez estados da UXA-055 continuam sem validação específica;
-- `GKR-TRN-112` continua parcial porque o destino operacional ainda não existe;
+- sete estados da UXA-088 aguardam validação específica;
+- `TRN-105` a `109` e `TRN-112` permanecem parciais;
+- `PER-106` continua ausente;
 - continuidades entre pacotes permanecem parciais ou não examinadas;
-- superfície validada não equivale a jornada validada.
+- materialização não equivale a validação funcional.
 
 ## 9. Prioridade operacional de Coletivos
 
 | Ordem | Superfície | ID | Estado visual e funcional |
 |---:|---|---|---|
-| 1 | Visão Geral do Responsável | GKR-SURF-COL-002 | 1 SVG reformulado; validado por UXA-087 |
-| 2 | gestão completa de solicitações | GKR-SURF-COL-003 | apenas efeitos na visão da Pessoa; operação do responsável ausente |
-| 3 | Meus Coletivos | GKR-SURF-PER-106 | ausente |
-| 4 | Central de Atualizações | GKR-SURF-PER-107 | ausente |
-| 5 | Início do Participante | GKR-SURF-PER-108 | reformulação pendente |
+| 1 | Visão Geral do Responsável | COL-002 | validada por UXA-087 |
+| 2 | gestão de solicitações | COL-003 | 7 SVGs materializados; validação pendente |
+| 3 | Meus Coletivos | PER-106 | ausente |
+| 4 | Central de Atualizações | PER-107 | ausente |
+| 5 | Início do Participante | PER-108 | reformulação pendente |
 
-O gate específico de `COL-002` está encerrado. A continuidade para `COL-003` permanece aberta.
+## 10. Dívidas separadas
 
-## 10. Dívidas de validação e materialização separadas
-
+- validação funcional da família UXA-088;
+- validação integrada dos handoffs de solicitação;
 - compreensão inicial → Tela Hoje;
 - publicação → mapa, lista e detalhe;
 - dez estados residuais da UXA-055;
 - efeito externo de oportunidades;
-- erros, retornos e interrupções integrados;
-- gestão completa de solicitações do responsável ainda sem materialização.
+- erros, retornos e interrupções integrados.
 
 ## 11. Estado documental
 
 | Camada | Estado |
 |---|---|
-| visão geral das Jornadas Integradas | `active` 0.15.0 |
+| Jornadas Integradas | `active` 0.16.0 |
 | Pessoa, Coletivo e Organização | `draft` |
-| handoffs e cenários | `active` |
-| catálogo integrado | `active` 0.12.0 |
-| galeria visual | `active` 0.7.0 |
-| página de Coletivos | `active` 0.5.0 |
-| demais páginas da galeria | `active` 0.3.0 |
-| matriz por SVG | `active` 0.5.0 |
-| lacunas | `active` 0.12.0 |
-| registro de superfícies | `active` 0.5.0 |
-| registro de transições | `active` 0.4.0 |
-| detalhamento do Coletivo | `active` 0.4.0 |
-| demais detalhamentos | `active` 0.2.0 |
+| catálogo integrado | `active` 0.13.0 |
+| galeria visual | `active` 0.8.0 |
+| página de Coletivos | `active` 0.6.0 |
+| matriz por SVG | `active` 0.6.0 |
+| lacunas | `active` 0.13.0 |
+| registro de superfícies | `active` 0.6.0 |
+| registro de transições | `active` 0.5.0 |
+| detalhamento do Coletivo | `active` 0.5.0 |
 | protótipo, aplicação, motor e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
 ## 12. Preservações
 
-- visual existente não equivale a decisão visual aprovada;
 - materialização não equivale a validação funcional;
-- validação de superfície não equivale a validação de transição;
-- perfil de rastreabilidade não valida jornada;
-- `GKR-TRN-112` permanece sem validação funcional ponta a ponta;
-- `GKR-SURF-COL-003` permanece sem superfície operacional própria.
+- validação de uma perspectiva não valida o handoff bilateral;
+- aprovação não atribui função ou reputação;
+- recusa não é sanção;
+- autoridade insuficiente não pode ser contornada;
+- `PER-106`, `PER-107`, `PER-108` e `COL-004` a `COL-008` permanecem fora do escopo.
 
 ## 13. Próxima transição autorizável
 
-**UXA-088 — Materialização Controlada da Gestão de Solicitações do Responsável do Coletivo (`GKR-SURF-COL-003`).**
+**UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável do Coletivo.**
 
-A UXA-088 não foi iniciada e depende de autorização separada.
+A UXA-089 não foi iniciada e depende de autorização separada.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -14,6 +14,7 @@ related:
   - UXA-085
   - UXA-086
   - UXA-087
+  - UXA-088
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -38,7 +39,7 @@ explorar e buscar
 → Início do Participante
 ```
 
-A galeria cobre visualmente a sequência até a Visão Geral do Responsável. Essa referência foi reformulada e validada funcionalmente pela UXA-087. As superfícies posteriores permanecem ausentes ou parciais.
+A galeria cobre visualmente a sequência até a gestão de solicitações do responsável. `GKR-SURF-COL-002` foi reformulada e validada funcionalmente pela UXA-087. `GKR-SURF-COL-003` foi materializada pela UXA-088 e permanece com validação funcional específica pendente. As superfícies posteriores permanecem ausentes ou parciais.
 
 ## 2. Descoberta e busca
 
@@ -144,6 +145,8 @@ A galeria cobre visualmente a sequência até a Visão Geral do Responsável. Es
 
 ![](../assets/wireframes/uxa-066-collective-pending-request-expired-mobile.svg){ width="320" loading="lazy" }
 
+Os oito estados permanecem validados somente na perspectiva da Pessoa. A UXA-088 não altera essa validação.
+
 ## 6. Referência inicial do Coletivo
 
 **Cobertura:** 1 SVG · ID: `GKR-SURF-COL-001` · origem: `UXA-016` · validação: `UXA-018`
@@ -162,17 +165,50 @@ A galeria cobre visualmente a sequência até a Visão Geral do Responsável. Es
 
 A UXA-087 aprovou a referência após reformulação controlada, tornando explícitos estado e escopo de autoridade, prazo verificável, alternativa legítima e retorno ao contexto anterior.
 
-A validação é restrita a `GKR-SURF-COL-002`: a fila completa de `GKR-SURF-COL-003` continua ausente e `GKR-TRN-112` permanece parcial.
+A validação é restrita a `GKR-SURF-COL-002`. A continuidade `GKR-TRN-112` permanece não validada como conjunto.
 
-## 8. Dependências sem SVG dedicado
+## 8. Gestão de Solicitações do Responsável
+
+**Cobertura:** 7 SVGs · ID: `GKR-SURF-COL-003` · origem: `UXA-088` · validação: **pendente de pacote específico**
+
+### `uxa-088-collective-request-management-queue-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-queue-desktop.svg){ width="720" loading="lazy" }
+
+### `uxa-088-collective-request-management-detail-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-detail-desktop.svg){ width="720" loading="lazy" }
+
+### `uxa-088-collective-request-management-protected-detail-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-protected-detail-desktop.svg){ width="720" loading="lazy" }
+
+### `uxa-088-collective-request-management-additional-information-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-additional-information-desktop.svg){ width="720" loading="lazy" }
+
+### `uxa-088-collective-request-management-approve-confirmation-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-approve-confirmation-desktop.svg){ width="720" loading="lazy" }
+
+### `uxa-088-collective-request-management-refuse-confirmation-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-refuse-confirmation-desktop.svg){ width="720" loading="lazy" }
+
+### `uxa-088-collective-request-management-insufficient-authority-desktop.svg`
+
+![](../assets/wireframes/uxa-088-collective-request-management-insufficient-authority-desktop.svg){ width="720" loading="lazy" }
+
+A família materializa a operação responsável dos handoffs `GKR-TRN-105` a `GKR-TRN-109` e o destino de `GKR-TRN-112`, mas não valida essas transições ponta a ponta. Cancelamento pela Pessoa e expiração são eventos refletidos na operação, não decisões equivalentes do responsável.
+
+## 9. Dependências sem SVG dedicado
 
 ```text
-GKR-SURF-COL-003 — gestão completa de solicitações
-→ GKR-SURF-PER-106 — Meus Coletivos
+GKR-SURF-PER-106 — Meus Coletivos
 → GKR-SURF-PER-107 — Central de Atualizações
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-`GKR-SURF-COL-002` deixa de possuir pendência de validação funcional específica. As demais ausências não são iniciadas pela UXA-087.
+`GKR-SURF-COL-003` deixa de estar visualmente ausente, mas permanece com validação funcional pendente. `GKR-SURF-COL-004` a `GKR-SURF-COL-008` também permanecem fora do escopo da UXA-088.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)
