@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -17,6 +17,7 @@ related:
   - UXA-086
   - UXA-087
   - UXA-088
+  - UXA-089
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -29,7 +30,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.5.0 preserva as 37 transições promovidas pela UXA-080 e atualiza somente a evidência observacional das ligações associadas a `GKR-SURF-COL-003` após sua materialização pela UXA-088.
+A versão 0.6.0 preserva as 37 transições promovidas pela UXA-080 e atualiza somente a evidência observacional das ligações associadas a `GKR-SURF-COL-003` após sua validação funcional pela UXA-089.
 
 Permanecem vigentes as correções estruturais anteriores:
 
@@ -52,7 +53,7 @@ O status `active` aprova o registro como instrumento documental. Nenhuma linha e
 | ausente | ligação necessária conhecida sem materialização |
 | não examinada | artefatos existem, mas a ligação não foi validada como conjunto |
 
-Materializar endpoints pode reduzir uma ausência observacional, mas não torna a transição validada.
+Endpoints materializados ou mesmo validados como superfícies não tornam automaticamente a transição validada.
 
 ## 3. Contagem
 
@@ -64,7 +65,7 @@ Materializar endpoints pode reduzir uma ausência observacional, mas não torna 
 | Opportunity Boost | 6 |
 | **Total** | **37** |
 
-A UXA-088 não cria transições novas.
+A UXA-089 não cria transições novas.
 
 ## 4. Jornada pessoal
 
@@ -86,14 +87,14 @@ A UXA-088 não cria transições novas.
 | GKR-TRN-102 | GKR-SURF-PER-102 | GKR-SURF-PER-103 | visitante | direta | selecionar Coletivo | UXA-056 | abre informações públicas do Coletivo | conteúdo público | retorno aos resultados; imediata | UXA-061; UXA-063 | parcial | ligação entre pacotes |
 | GKR-TRN-103 | GKR-SURF-PER-103 | GKR-SURF-PER-104 | solicitante potencial | protegida; condicional | escolher solicitar participação | UXA-056 | inicia revisão consciente; nenhuma aprovação presumida | autenticação e elegibilidade quando aplicáveis | cancelar e retornar; imediata | UXA-063; UXA-065 | parcial | handoff para solicitação |
 | GKR-TRN-104 | GKR-SURF-PER-104 | GKR-SURF-PER-105 | solicitante | protegida; assíncrona; handoff de autoridade | confirmar envio | UXA-056 | dados autorizados da solicitação seguem ao Coletivo; estado torna-se pendente | confirmação explícita | cancelar conforme estado; aguarda decisão | UXA-065; UXA-067 | parcial | continuidade posterior possui endpoints materializados, mas não validação integrada |
-| GKR-TRN-105 | GKR-SURF-PER-105 | GKR-SURF-COL-003 | solicitante → responsável | entre participantes; handoff de autoridade; assíncrona | solicitação disponível para análise | UXA-056; UXA-059 | transfere próxima decisão ao responsável; dados limitados à finalidade | autoridade do responsável | solicitante pode cancelar; tempo protegido | UXA-067 na perspectiva da Pessoa; UXA-088 na perspectiva do responsável | parcial | endpoints materializados; validação integrada pendente |
-| GKR-TRN-106 | GKR-SURF-COL-003 | GKR-SURF-PER-105 | responsável → solicitante | entre participantes; assíncrona; reversível | pedir informação adicional | UXA-056; UXA-066; UXA-067; UXA-088 | pedido aparece para a Pessoa; aprovação não ocorre; finalidade e prazo devem permanecer explícitos | autoridade do responsável e finalidade limitada | Pessoa responde, prefere não informar, contesta ou cancela; decisão permanece pausada | UXA-088 na origem; UXA-067 no destino | parcial | validação bilateral pendente |
-| GKR-TRN-107 | GKR-SURF-PER-105 | GKR-SURF-COL-003 | solicitante → responsável | entre participantes; assíncrona | enviar resposta adicional | UXA-056; UXA-067; UXA-088 | conteúdo adicional autorizado retorna à análise | resposta consciente | editar antes do envio, descartar rascunho ou desistir conforme estado | UXA-067 na origem; UXA-088 no destino | parcial | validação bilateral pendente |
-| GKR-TRN-108 | GKR-SURF-COL-003 | GKR-SURF-PER-106 | responsável → participante | handoff de autoridade; entre participantes | aprovar solicitação e formar vínculo | UXA-014; UXA-056; UXA-088 | cria vínculo de participante conforme papel aceito; não atribui função, moderação ou reputação automática | decisão autorizada, fundamento e confirmação consciente | abandonar decisão antes da confirmação; saída e contestação posteriores dependem do vínculo | UXA-088 na origem; resultado representado em UXA-067 | parcial | GKR-SURF-PER-106 continua ausente; validação integrada pendente |
-| GKR-TRN-109 | GKR-SURF-COL-003 | GKR-SURF-PER-105 | responsável → solicitante | entre participantes; assíncrona | recusar solicitação; expiração permanece evento temporal distinto | UXA-056; UXA-067; UXA-088 | apresenta recusa proporcional distinta de cancelamento, sanção, reputação ou expiração | autoridade, fundamento proporcional e confirmação consciente | voltar sem decidir antes da confirmação; nova exploração possível posteriormente | UXA-088 na origem; UXA-067 no destino | parcial | validação bilateral pendente |
+| GKR-TRN-105 | GKR-SURF-PER-105 | GKR-SURF-COL-003 | solicitante → responsável | entre participantes; handoff de autoridade; assíncrona | solicitação disponível para análise | UXA-056; UXA-059 | transfere próxima decisão ao responsável; dados limitados à finalidade | autoridade do responsável | solicitante pode cancelar; tempo protegido | UXA-067 na perspectiva da Pessoa; UXA-089 no escopo do responsável | parcial | endpoints validados como superfícies; validação integrada pendente |
+| GKR-TRN-106 | GKR-SURF-COL-003 | GKR-SURF-PER-105 | responsável → solicitante | entre participantes; assíncrona; reversível | pedir informação adicional | UXA-056; UXA-066; UXA-067; UXA-088; UXA-089 | pedido aparece para a Pessoa; aprovação não ocorre; finalidade e referência temporal permanecem explícitas; acessibilidade não é critério oculto | autoridade verificada do responsável e finalidade limitada | Pessoa responde, prefere não informar, contesta ou cancela; decisão permanece governada pelo estado | UXA-089 na origem; UXA-067 no destino | parcial | validação bilateral pendente |
+| GKR-TRN-107 | GKR-SURF-PER-105 | GKR-SURF-COL-003 | solicitante → responsável | entre participantes; assíncrona | enviar resposta adicional | UXA-056; UXA-067; UXA-088; UXA-089 | conteúdo adicional autorizado retorna à análise | resposta consciente | editar antes do envio, descartar rascunho ou desistir conforme estado | UXA-067 na origem; UXA-089 no destino | parcial | validação bilateral pendente |
+| GKR-TRN-108 | GKR-SURF-COL-003 | GKR-SURF-PER-106 | responsável → participante | handoff de autoridade; entre participantes | aprovar solicitação e formar vínculo | UXA-014; UXA-056; UXA-088; UXA-089 | cria vínculo de participante conforme papel aceito; não atribui função, moderação ou reputação automática | decisão autorizada, fundamento previamente apresentado e confirmação consciente | abandonar decisão antes da confirmação; saída e contestação posteriores dependem do vínculo | UXA-089 na origem; resultado representado em UXA-067 | parcial | GKR-SURF-PER-106 continua ausente; validação integrada pendente |
+| GKR-TRN-109 | GKR-SURF-COL-003 | GKR-SURF-PER-105 | responsável → solicitante | entre participantes; assíncrona | recusar solicitação; expiração permanece evento temporal distinto | UXA-056; UXA-067; UXA-088; UXA-089 | apresenta recusa proporcional baseada em condição previamente apresentada, distinta de cancelamento, sanção, reputação ou expiração | autoridade verificada, fundamento proporcional e confirmação consciente | voltar sem decidir antes da confirmação; nova exploração possível posteriormente | UXA-089 na origem; UXA-067 no destino | parcial | validação bilateral pendente |
 | GKR-TRN-110 | GKR-SURF-PER-106 | GKR-SURF-PER-107 | participante | direta | acessar atualizações do vínculo | UXA-059 | apresenta comunicações e mudanças autorizadas | vínculo ativo | retorno a Meus Coletivos | — | ausente | ambas as superfícies não materializadas |
 | GKR-TRN-111 | GKR-SURF-PER-107 | GKR-SURF-PER-108 | participante | direta; condicional | selecionar Coletivo ou atualização | UXA-059 | abre início operacional do participante | vínculo e papel | retorno às atualizações | — | ausente | Início do Participante em reformulação |
-| GKR-TRN-112 | GKR-SURF-COL-002 | GKR-SURF-COL-003 | responsável | direta; protegida | acessar solicitações a partir da visão geral | UXA-059; UXA-086; UXA-087; UXA-088 | abre a fila especializada sem ampliar autoridade; origem e destino possuem referências próprias | representação válida e escopo concedido | permanecer ou retornar à visão geral; nenhuma decisão implícita pela entrada | UXA-087 na origem; UXA-088 no destino | parcial | ambos endpoints materializados; transição sem validação funcional ponta a ponta |
+| GKR-TRN-112 | GKR-SURF-COL-002 | GKR-SURF-COL-003 | responsável | direta; protegida | acessar solicitações a partir da visão geral | UXA-059; UXA-086; UXA-087; UXA-088; UXA-089 | abre a fila especializada sem ampliar autoridade; origem e destino estão validados como superfícies próprias | representação válida e escopo concedido | permanecer ou retornar à visão geral; nenhuma decisão implícita pela entrada | UXA-087 na origem; UXA-089 no destino | parcial | ambos endpoints validados como superfícies; transição sem validação funcional ponta a ponta |
 | GKR-TRN-113 | GKR-SURF-COL-004 | GKR-SURF-COL-005 | responsável | condicional; protegida | comunicar a participantes autorizados | UXA-058; UXA-059 | distribui comunicação oficial com finalidade identificada | papel e escopo de audiência | corrigir ou encerrar conforme regras futuras | — | contratada | operação interna não materializada |
 
 ## 6. Organização, oportunidades e relações bilaterais
@@ -123,19 +124,21 @@ A UXA-088 não cria transições novas.
 | GKR-TRN-305 | GKR-SURF-COM-004 | GKR-SURF-COM-005 | anunciante | condicional | campanha ou entrega alcança estado residual específico | UXA-038 | efeito depende do estado materializado pela UXA-055 | autoridade e controle aplicáveis ao estado | retorno, desfazer, contestar ou continuar dependem do estado ainda não validado | UXA-055 | não examinada | dez estados residuais sem validação |
 | GKR-TRN-306 | GKR-SURF-COM-002 | GKR-SURF-PER-202 | Pessoa exposta | reversível | voltar ao contexto orgânico de lista | UXA-038 | restaura a Lista de Oportunidades sem alterar reputação, relevância ou estado comercial | nenhum | retorno imediato | UXA-043; UXA-029 em pacotes distintos | parcial | integração orgânico–patrocinado |
 
-## 8. Efeito da UXA-088
+## 8. Efeito da UXA-089
 
-A UXA-088 não cria transições novas. Ela altera a evidência observacional de seis ligações:
+A UXA-089 não cria transições novas. Ela valida `GKR-SURF-COL-003` e atualiza a evidência de seis ligações sem promovê-las:
 
-- `GKR-TRN-105`, `GKR-TRN-106`, `GKR-TRN-107`, `GKR-TRN-108` e `GKR-TRN-109` passam a possuir materialização explícita do lado responsável;
-- `GKR-TRN-112` passa a possuir origem e destino materializados;
-- todas permanecem `parcial` porque os sete estados da UXA-088 e os handoffs bilaterais ainda não foram validados funcionalmente;
+- `GKR-TRN-105`, `GKR-TRN-106`, `GKR-TRN-107`, `GKR-TRN-108` e `GKR-TRN-109` passam a possuir a superfície responsável validada;
+- `GKR-TRN-112` passa a possuir origem e destino validados como superfícies;
+- todas permanecem `parcial` porque os handoffs bilaterais ainda não foram examinados como conjunto;
 - `GKR-TRN-108` mantém lacuna adicional porque `GKR-SURF-PER-106` continua ausente;
 - expiração permanece evento temporal distinto de recusa pelo responsável.
 
+A próxima inspeção específica desses handoffs é reservada à UXA-090, mediante autorização separada.
+
 ## 9. Regras de uso
 
-- origem e destino materializados não presumem transição validada;
+- origem e destino materializados ou validados não presumem transição validada;
 - materialização parcial não equivale a validação de transição;
 - contrato bilateral não equivale a transição operacional validada;
 - validação local não equivale a continuidade integrada;
