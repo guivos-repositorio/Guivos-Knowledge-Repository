@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -19,6 +19,7 @@ related:
   - UXA-094
   - UXA-095
   - UXA-096
+  - UXA-097
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -32,7 +33,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.13.0 preserva as 40 entradas. A UXA-096 revalida `PER-107`, valida `PER-108` e não cria qualquer novo ID.
+A versão 0.14.0 preserva as 40 entradas. A UXA-097 revalida a variante de decisão de `PER-007`, adiciona uma variante inicial validada a `PER-008` e não cria qualquer novo ID.
 
 ## 2. Convenções
 
@@ -65,8 +66,8 @@ A versão 0.13.0 preserva as 40 entradas. A UXA-096 revalida `PER-107`, valida `
 | GKR-SURF-PER-004 | expressão por texto ou voz | Pessoa | protegido | validado | UXA-068 | UXA-068 | UXA-069 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-005 | inventário e autorização | Pessoa | protegido | validado | UXA-023 | UXA-034 | UXA-035 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-006 | processamento visível | Pessoa | protegido | validado | UXA-023 | UXA-036 | UXA-037 | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-007 | compreensão inicial revisável | Pessoa | protegido | validado | UXA-023 | UXA-036 | UXA-037 | [Pessoa](surface-registry-person-details.md) |
-| GKR-SURF-PER-008 | Tela Hoje | Pessoa autenticada | protegido | validado | UXA-002 | UXA-006 | UXA-010 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-007 | compreensão inicial revisável | Pessoa | protegido | **validado** | UXA-023 | UXA-036; decisão refinada UXA-097 | UXA-037; variante corrente revalidada UXA-097 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-008 | Tela Hoje | Pessoa autenticada | protegido | **validado** | UXA-002; UXA-011-A1 | UXA-006 recorrente; primeira variante UXA-097 | UXA-010 recorrente; primeira variante UXA-097 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-101 | Explorar Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-102 | Resultados de Busca de Coletivos | visitante | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-103 | Perfil Público do Coletivo | visitante | móvel | validado | UXA-056 | UXA-062 | UXA-063 | [Pessoa](surface-registry-person-details.md) |
@@ -102,18 +103,20 @@ A versão 0.13.0 preserva as 40 entradas. A UXA-096 revalida `PER-107`, valida `
 
 ## 5. Divisões controladas
 
+- `PER-007` mantém compreensão, persistência e personalização como decisões separadas;
+- `PER-008` possui variante inicial e recorrente sob o mesmo ID, ambas validadas em seus escopos;
 - `PER-106` é central de participações e estados relacionados, não feed;
 - `PER-107` é triagem de atualizações e sua versão corrente está validada pela UXA-096;
 - `PER-108` é síntese interna validada e não replica Central ou canais especializados;
 - `COM-005` continua sem validação funcional específica;
 - `BND-001` é endpoint documental, não tela.
 
-## 6. Efeito da UXA-096
+## 6. Efeito da UXA-097
 
 - 40 IDs preservados;
-- `PER-107`: versão corrente → **validado**;
-- `PER-108`: materializado → **validado**;
-- `TRN-111` é tratado no registro de transições e passa a integralmente validada;
+- `PER-007`: permanece validado; variante de decisão corrente revalidada;
+- `PER-008`: permanece validado e ganha primeira variante validada;
+- `TRN-007` é tratado no registro de transições e passa a integralmente validada;
 - nenhuma promoção de jornada ou implementação é inferida.
 
 ## 7. Estado

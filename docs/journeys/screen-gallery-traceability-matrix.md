@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -21,6 +21,7 @@ depends_on:
   - UXA-094
   - UXA-095
   - UXA-096
+  - UXA-097
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -33,11 +34,11 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **108 SVGs**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **109 SVGs**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
 
 ## 2. Estado do instrumento
 
-A UXA-096 preserva as 108 associações e os 28 perfis. `R27` e `R28` passam a registrar a validação corrente de `PER-107`, `PER-108` e `TRN-111`.
+A UXA-097 preserva os 28 perfis e as 108 associações anteriores, adiciona a primeira variante de `PER-008` ao perfil `R05` e registra a validação integrada de `TRN-007` em `R04/R05`.
 
 ## 3. Perfis de rastreabilidade
 
@@ -46,8 +47,8 @@ A UXA-096 preserva as 108 associações e os 28 perfis. `R27` e `R28` passam a r
 | R01 | PER-001 | entrada pública | TRN-001 | permanecer/retornar | continuidade pública → protegida | UXA-021 |
 | R02 | PER-002/003/005 | TRN-001 | TRN-002 a 005 | voltar/trocar/editar/recusar | integração inicial | UXA-035 |
 | R03 | PER-004 | TRN-003 | TRN-004 | trocar/editar/descartar | expressão → inventário | UXA-069 |
-| R04 | PER-006/007 | TRN-005/006 | TRN-007 | revisar/recusar/retornar | compreensão → Hoje | UXA-037 |
-| R05 | PER-008 | TRN-007 | continuidade recorrente | retorno não examinado | experiência recorrente | UXA-010 |
+| R04 | PER-006/007 | TRN-005/006 | **TRN-007** | revisar/recusar/retornar | handoffs pessoais anteriores | **UXA-037; decisão corrente e TRN-007 UXA-097** |
+| R05 | PER-008 | **TRN-007** | continuidade recorrente | revisar/navegar/retornar | estados alternativos de Hoje | **UXA-010 recorrente; primeira entrada e TRN-007 UXA-097** |
 | R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | publicação/mapa/lista/detalhe | UXA-025/027/031/033 |
 | R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | mapa/lista/detalhe | UXA-029 |
 | R08 | PER-203 | TRN-204/211 | TRN-205 | retornar | efeito externo | UXA-012 |
@@ -59,7 +60,7 @@ A UXA-096 preserva as 108 associações e os 28 perfis. `R27` e `R28` passam a r
 | R14 | PER-104 | TRN-103 | TRN-104 | cancelar/retornar | handoff | UXA-065 |
 | R15 | PER-105 | TRN-104/106/109 | TRN-105/107/108 | cancelar/responder/aguardar | outras continuidades separadas | UXA-067; aprovado UXA-092 |
 | R16 | COM-001 | anunciante | TRN-301 | editar/cancelar | regras econômicas | UXA-041 |
-| R17 | COM-001 | anunciante | TRN-301 | editar/cancelar | estados residuais | UXA-052 |
+| R17 | COM-001 | TRN-301 | TRN-301 | editar/cancelar | estados residuais | UXA-052 |
 | R18 | COM-002 | TRN-302/303 | TRN-304/306 | ignorar/retornar | orgânico ↔ patrocinado | UXA-043 |
 | R19 | COM-003 | entrega elegível | TRN-303 | retornar | continuidade patrocinada | UXA-045 |
 | R20 | COM-004 | TRN-301 | TRN-302/305 | pausar/revisar/encerrar | estados residuais | UXA-047 |
@@ -69,10 +70,10 @@ A UXA-096 preserva as 108 associações e os 28 perfis. `R27` e `R28` passam a r
 | R24 | COL-002 | representação válida | TRN-112 | permanecer/retornar | fechada | UXA-087; TRN-112 UXA-090 |
 | R25 | COL-003 | TRN-105/107/112 | TRN-106/108/109 | voltar/aguardar/interromper | handoffs fechados nos gates | UXA-089/090/092 |
 | R26 | PER-106 | TRN-108 ou acesso recorrente | TRN-110 | trocar categoria/voltar | P0B separado | UXA-092; gatilho revalidado UXA-094 |
-| R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; TRN-111 | retornar/ajustar preferência | P0B separado | **UXA-094; versão corrente UXA-096; TRN-111 UXA-096** |
-| R28 | PER-108 | TRN-111 | áreas internas próprias do Coletivo | voltar à Central; pausar/sair conforme fluxo próprio | estados P0B/P1 e áreas internas | **UXA-096; TRN-111 UXA-096** |
+| R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; TRN-111 | retornar/ajustar preferência | P0B separado | UXA-094; versão corrente UXA-096; TRN-111 UXA-096 |
+| R28 | PER-108 | TRN-111 | áreas internas próprias do Coletivo | voltar à Central; pausar/sair conforme fluxo próprio | estados P0B/P1 e áreas internas | UXA-096; TRN-111 UXA-096 |
 
-## 4. Associação individual dos 108 SVGs
+## 4. Associação individual dos 109 SVGs
 
 | SVG | Perfil |
 |---|---|
@@ -95,6 +96,7 @@ A UXA-096 preserva as 108 associações e os 28 perfis. `R27` e `R28` passam a r
 | `uxa-036-initial-understanding-decision-mobile.svg` | R04 |
 | `uxa-036-initial-understanding-insufficient-basis-mobile.svg` | R04 |
 | `uxa-006-hoje-mobile.svg` | R05 |
+| `uxa-097-first-today-after-initial-understanding-mobile.svg` | R05 |
 | `uxa-024-opportunity-map-mobile.svg` | R06 |
 | `uxa-026-opportunity-map-location-disabled-mobile.svg` | R06 |
 | `uxa-030-opportunity-map-no-results-mobile.svg` | R06 |
@@ -187,14 +189,14 @@ A UXA-096 preserva as 108 associações e os 28 perfis. `R27` e `R28` passam a r
 
 ## 5. Totais e limites
 
-- SVGs registrados: **108**;
-- associações individuais: **108**;
+- SVGs registrados: **109**;
+- associações individuais: **109**;
 - perfis documentais: **28**;
-- com validação funcional vigente: **98**;
+- com validação funcional vigente: **99**;
 - pendentes de validação específica: **10**, exclusivamente UXA-055;
-- arquivos visuais novos na UXA-096: **0**;
-- arquivos existentes reformulados pela UXA-096: **2**.
+- arquivos visuais novos na UXA-097: **1**;
+- arquivos existentes reformulados pela UXA-097: **1**.
 
 ## 6. Próxima transição possível
 
-A UXA-096 fecha `R27/R28` e `TRN-111` no escopo documental. A próxima priorização deverá partir das lacunas remanescentes; **UXA-097 não foi iniciada**.
+A UXA-097 fecha `R04/R05` no trecho `TRN-007` e preserva a Tela Hoje recorrente separada. A próxima prioridade de validação vigente é `V2 — publicação → descoberta/mapa/lista/detalhe`; **UXA-098 não foi iniciada**.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.24.0
+version: 0.25.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -20,6 +20,7 @@ related:
   - UXA-094
   - UXA-095
   - UXA-096
+  - UXA-097
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -51,13 +52,14 @@ Esta seção reúne, por referência, as jornadas da Pessoa, do Coletivo e da Or
 ## 3. Sequência governada recente
 
 ```text
-UXA-090 — cinco handoffs validados ponta a ponta
+UXA-090 — cinco handoffs de solicitação validados ponta a ponta
 → UXA-091 — Meus Coletivos materializada
 → UXA-092 — Meus Coletivos e TRN-108 validados
 → UXA-093 — Central materializada
 → UXA-094 — Central e TRN-110 validadas
 → UXA-095 — Início do Participante materializado; TRN-111 parcial
 → UXA-096 — Central/Início revalidados e TRN-111 validada ponta a ponta
+→ UXA-097 — primeira Tela Hoje materializada; PER-007 revalidada; TRN-007 validada ponta a ponta
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -66,41 +68,43 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.24.0 | UXA-096 |
+| visão geral das Jornadas Integradas | `active` 0.25.0 | UXA-097 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
-| Jornada da Pessoa | `draft` 0.9.0 | UXA-096 |
+| Jornada da Pessoa | `draft` 0.10.0 | UXA-097 |
 | Jornada do Coletivo | `draft` 0.12.0 | UXA-096 |
-| handoffs e cenários | `active` | síntese atualizada até UXA-096 |
-| catálogo integrado | `active` 0.20.0 | UXA-096 |
-| registro de superfícies | `active` 0.13.0 | UXA-096 |
-| detalhamento da Pessoa | `active` 0.8.0 | UXA-096 |
-| registro de transições | `active` 0.13.0 | UXA-096 |
-| galeria visual integrada | `active` 0.15.0 | UXA-096 |
+| handoffs e cenários | `active` | sínteses preservadas; TRN-007 no registro granular |
+| catálogo integrado | `active` 0.21.0 | UXA-097 |
+| registro de superfícies | `active` 0.14.0 | UXA-097 |
+| detalhamento da Pessoa | `active` 0.9.0 | UXA-097 |
+| registro de transições | `active` 0.14.0 | UXA-097 |
+| galeria visual integrada | `active` 0.16.0 | UXA-097 |
+| página da Pessoa | `active` 0.4.0 | UXA-097 |
 | página de Coletivos | `active` 0.13.0 | UXA-096 |
-| matriz por SVG | `active` 0.13.0 | UXA-096 |
-| registro de lacunas | `active` 0.21.0 | UXA-096 |
+| matriz por SVG | `active` 0.14.0 | UXA-097 |
+| registro de lacunas | `active` 0.22.0 | UXA-097 |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 5. Resultado da UXA-096
+## 5. Resultado da UXA-097
 
-A UXA-096:
+A UXA-097:
 
-- reforma 2 SVGs existentes, sem criar ativos;
-- revalida `PER-107` corrente;
-- valida `PER-108`;
-- promove `TRN-111` a integralmente validada;
-- preserva `TRN-110` integralmente validada;
+- cria 1 SVG para a primeira variante de `PER-008`;
+- reforma 1 SVG existente do estado de decisão de `PER-007`;
+- revalida a variante corrente de `PER-007`;
+- valida a primeira variante de `PER-008`;
+- promove `TRN-007` a integralmente validada;
+- preserva a Tela Hoje recorrente sem alteração;
 - não cria IDs nem promove jornadas.
 
 ## 6. Cobertura visual
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes | **108** |
-| associações individuais | **108** |
+| SVGs existentes | **109** |
+| associações individuais | **109** |
 | perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **98** |
+| com validação funcional vigente | **99** |
 | pendentes de validação específica | **10** |
 | IDs com referência visual | **30 de 40** |
 | responsabilidades sem SVG dedicado | **9** |
@@ -108,35 +112,33 @@ A UXA-096:
 
 As dez pendências remanescentes são exclusivamente os estados residuais UXA-055.
 
-## 7. Continuidade de Coletivos
+## 7. Continuidade pessoal fechada pela UXA-097
 
 ```text
-Visão Geral do Responsável — validada
-→ TRN-112 — integralmente validada
-→ gestão de solicitações — validada
-↔ TRN-105/106/107/109 — integralmente validadas
-→ TRN-108 — integralmente validada
-→ Meus Coletivos — validado
-→ TRN-110 — integralmente validada
-→ Central — validada
-→ TRN-111 — integralmente validada
-→ Início do Participante — validado
+PER-007 — compreensão inicial revisável
+→ escolhas compatíveis e explícitas
+→ TRN-007 — integralmente validada
+→ PER-008 — primeira Tela Hoje validada
+→ Tela Hoje recorrente preservada como variante separada
 ```
 
-A sequência específica está fechada até o Início no escopo documental, mas a Jornada da Pessoa e a Jornada do Coletivo completas continuam `draft`.
+A Jornada da Pessoa permanece `draft` porque `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` continuam parciais.
 
-## 8. Regras preservadas
+## 8. Continuidade de Coletivos preservada
 
-- abertura de Central/Início não altera vínculo ou autoridade;
-- evento histórico não concede acesso interno;
-- leitura não conclui ação substantiva;
-- presença em atividade não é inferida;
-- vínculo, disponibilidade, função e autoridade são distintos;
-- Início sintetiza e encaminha, não replica canais especializados;
+Oito handoffs permanecem integralmente validados no trecho governado de Coletivos: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`.
+
+## 9. Regras preservadas
+
+- concluir a compreensão inicial não constitui avanço humano;
+- personalização não é condição para acessar Hoje;
+- primeira Hoje não fabrica mudança anterior, urgência ou conteúdo comercial;
 - estado canônico prevalece sobre estado visual obsoleto;
 - repetição não duplica efeito lógico;
+- abertura de Central/Início não altera vínculo ou autoridade;
+- evento histórico não concede acesso interno;
 - validação integral documental não equivale a implementação técnica.
 
-## 9. Próxima transição possível
+## 10. Próxima transição possível
 
-A próxima priorização deverá partir das lacunas remanescentes. **UXA-097 não foi iniciada.**
+Com `V1` fechado, a próxima prioridade de validação registrada é `V2 — publicação → descoberta/mapa/lista/detalhe`. **UXA-098 não foi iniciada.**
