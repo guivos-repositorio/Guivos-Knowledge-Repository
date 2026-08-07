@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 related:
   - UXA-070
   - UXA-071
@@ -12,6 +12,12 @@ related:
   - UXA-073
   - UXA-074
   - UXA-075
+  - UXA-086
+  - UXA-087
+  - UXA-088
+  - UXA-089
+  - UXA-090
+  - UXA-091
 normative: false
 ---
 
@@ -21,7 +27,7 @@ normative: false
 
 Cada cenário deve distinguir nós materializados, nós apenas contratados, transições examinadas e ponto de interrupção por lacuna.
 
-Uma narrativa compreensível não equivale a um fluxo funcionalmente validado.
+Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou implementado.
 
 ## 2. Cenários reformulados
 
@@ -39,35 +45,47 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado.
 | conclusão permitida | superfícies e decisões locais possuem evidência nos pacotes de origem |
 | conclusão proibida | declarar toda a jornada pessoal validada ponta a ponta |
 
-### 2.2 Pessoa encontra e solicita participação em um Coletivo
+### 2.2 Pessoa encontra, solicita e recebe resultado de participação
 
 | Campo | Registro |
 |---|---|
-| finalidade | descobrir um Coletivo e enviar solicitação consciente |
-| participantes e perspectivas | Pessoa visitante e solicitante; Coletivo como destino institucional |
-| nós materializados | explorar, buscar, Perfil Público, revisão, solicitação e estados pendentes na visão da Pessoa |
-| nós apenas contratados | análise e decisão pelo responsável |
-| transições validadas | navegação e estados examinados nas UXA-061, UXA-063, UXA-065 e UXA-067 |
-| transições não validadas como conjunto | handoff para o responsável e formação do vínculo |
-| interrupção por lacuna | após `Solicitação Pendente`; `Meus Coletivos` ausente |
-| conclusão permitida | a perspectiva da Pessoa possui cobertura até o acompanhamento pendente |
-| conclusão proibida | afirmar que a operação bilateral está materializada |
+| finalidade | descobrir um Coletivo, solicitar participação e compreender o resultado |
+| participantes e perspectivas | Pessoa solicitante e responsável do Coletivo |
+| nós materializados | explorar, busca, Perfil Público, revisão, PER-105 e COL-003 |
+| nós validados | superfícies até PER-105 na versão aplicável; COL-003; handoffs 105/106/107/109 por UXA-090 |
+| transições integralmente validadas | TRN-105, TRN-106, TRN-107 e TRN-109 |
+| continuidade parcial | aprovação via TRN-108 após reformulação UXA-091 |
+| interrupção por lacuna | validação do estado aprovado corrente e de PER-106 |
+| conclusão permitida | solicitação, pedido adicional, resposta e recusa possuem continuidade bilateral validada |
+| conclusão proibida | declarar a aprovação pós-UXA-091 validada antes da UXA-092 |
 
-### 2.3 Coletivo solicita informação adicional
+### 2.3 Pessoa recebe aprovação e encontra o vínculo em Meus Coletivos
 
 | Campo | Registro |
 |---|---|
-| finalidade | complementar uma solicitação sem criar aprovação implícita |
+| finalidade | tornar a formação do vínculo compreensível sem criar função, pressão ou promessa de superfícies ausentes |
+| participantes e perspectivas | responsável do Coletivo e Pessoa participante |
+| nós materializados | COL-003; resultado aprovado corrente em PER-105; PER-106 |
+| passagem materializada | aprovação → resultado em PER-105 → `Ver em Meus Coletivos` → PER-106 |
+| transição | TRN-108 parcial |
+| validação | COL-003 validada; estado aprovado corrente e PER-106 pendentes |
+| interrupção por lacuna | revalidação integrada em UXA-092 |
+| conclusão permitida | existe materialização suficiente para inspecionar a continuidade |
+| conclusão proibida | afirmar TRN-108 integralmente validada ou implementada |
+
+### 2.4 Coletivo solicita informação adicional
+
+| Campo | Registro |
+|---|---|
+| finalidade | complementar solicitação sem criar aprovação implícita |
 | participantes e perspectivas | responsável do Coletivo e Pessoa solicitante |
-| nós materializados | pedido e resposta na perspectiva da Pessoa |
-| nós apenas contratados | operação do responsável e retomada de análise |
-| transições validadas | estados apresentados à Pessoa pela UXA-067 |
-| transições não validadas como conjunto | origem da decisão e retorno à fila operacional |
-| interrupção por lacuna | Visão Geral do Responsável e gestão de solicitações ausentes |
-| conclusão permitida | o retorno para a Pessoa está representado |
-| conclusão proibida | declarar validada a operação do responsável |
+| nós materializados | COL-003 e PER-105 |
+| transições integralmente validadas | TRN-106 e TRN-107 por UXA-090 |
+| retorno | Pessoa pode responder, não informar, contestar ou cancelar |
+| conclusão permitida | o ciclo bilateral de pedido adicional e resposta possui validação documental integrada |
+| conclusão proibida | confundir validação documental com implementação técnica |
 
-### 2.4 Organização e Coletivo estabelecem relação
+### 2.5 Organização e Coletivo estabelecem relação
 
 | Campo | Registro |
 |---|---|
@@ -76,12 +94,11 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado.
 | nós materializados | nenhum fluxo bilateral específico |
 | nós apenas contratados | proposta, avaliação, negociação, aprovação, relação ativa, revisão e saída |
 | transições validadas | nenhuma como jornada bilateral integrada |
-| transições não validadas como conjunto | todas as etapas da relação |
 | interrupção por lacuna | início do fluxo bilateral |
-| conclusão permitida | o contrato UXA-019 define responsabilidades e limites |
+| conclusão permitida | UXA-019 define responsabilidades e limites |
 | conclusão proibida | afirmar existência de interface ou fluxo operacional bilateral |
 
-### 2.5 Organização publica oportunidade e Pessoa acessa
+### 2.6 Organização publica oportunidade e Pessoa acessa
 
 | Campo | Registro |
 |---|---|
@@ -92,21 +109,20 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado.
 | transições validadas | cadastro e detalhe nos respectivos pacotes |
 | transições não validadas como conjunto | publicação até consumo em todas as superfícies e efeitos externos |
 | interrupção por lacuna | após o destino ou ação externa |
-| conclusão permitida | as superfícies existentes possuem validação local |
+| conclusão permitida | superfícies existentes possuem validação local |
 | conclusão proibida | declarar o ciclo completo da oportunidade validado |
 
-### 2.6 Sobreposição comercial identificada
+### 2.7 Sobreposição comercial identificada
 
 | Campo | Registro |
 |---|---|
 | finalidade | permitir promoção identificada sem comprar autoridade, legitimidade ou reputação |
 | participantes e perspectivas | Organização anunciante e Pessoa exposta; Opportunity Boost como camada comercial |
 | nós materializados | 46 referências |
-| nós apenas contratados | regras econômicas e de governança dos pacotes de origem |
-| transições validadas | 36 referências validadas conforme pacotes |
+| transições validadas | 36 referências conforme pacotes |
 | transições não validadas como conjunto | 10 estados residuais e integração completa com superfícies orgânicas |
 | interrupção por lacuna | estados residuais sem validação |
-| conclusão permitida | a camada comercial é identificada e separada da autoridade orgânica |
+| conclusão permitida | camada comercial identificada e separada da autoridade orgânica |
 | conclusão proibida | tratar publicidade como participante, reputação ou recomendação |
 
 ## 3. Critério de completude
@@ -115,6 +131,6 @@ Um cenário só poderá ser marcado como completo quando todos os seus nós, tra
 
 ## 4. Estado vigente
 
-A UXA-074 aprovou os seis cenários como hipóteses documentais governadas e limitadas pela evidência. A UXA-075 promove este documento para `active` nesse escopo.
+O documento permanece `active` como síntese de cenários governados e limitados pela evidência. A UXA-091 acrescenta a inspeção do cenário de aprovação até `Meus Coletivos`, ainda parcial.
 
-O status `active` não transforma qualquer cenário em jornada completa nem executável.
+O status `active` não transforma qualquer cenário em jornada implementada. A UXA-092 não é iniciada por esta sincronização.
