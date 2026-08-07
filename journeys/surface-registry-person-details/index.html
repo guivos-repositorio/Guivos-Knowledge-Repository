@@ -8907,10 +8907,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-estado" class="md-nav__link">
+  <a href="#4-efeito-da-uxa-091" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Estado
+        4. Efeito da UXA-091
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estado
       
     </span>
   </a>
@@ -8944,7 +8955,7 @@
 
 <h1 id="detalhamento-obrigatorio-das-superficies-da-pessoa">Detalhamento Obrigatório das Superfícies da Pessoa<a class="headerlink" href="#detalhamento-obrigatorio-das-superficies-da-pessoa" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas.</p>
+<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens por conta própria.</p>
 <h2 id="2-campos-por-identificador">2. Campos por identificador<a class="headerlink" href="#2-campos-por-identificador" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9147,33 +9158,33 @@
 </tr>
 <tr>
 <td>GKR-SURF-PER-105</td>
-<td>UXA-066 — <code>docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md</code></td>
+<td>UXA-066 — <code>docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md</code>; continuidade aprovada refinada pela UXA-091</td>
 <td>indeterminado</td>
-<td>solicitação enviada</td>
-<td>acompanhar, responder, cancelar ou revisar estado</td>
-<td>retorno, cancelamento ou decisão</td>
-<td>estado, prazo, pedidos adicionais e decisões percebidas pela Pessoa</td>
-<td>autoridade do Coletivo para decidir; ação consciente para responder</td>
-<td>cancelar quando permitido; não prosseguir; explorar novamente</td>
-<td>nenhuma identificada</td>
-<td>parcial e assimétrica</td>
-<td>visão do responsável ausente</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>solicitação enviada ou evento do responsável</td>
+<td>acompanhar, responder, cancelar ou compreender resultado</td>
+<td>retorno, cancelamento, decisão ou Meus Coletivos quando aprovado</td>
+<td>estado, prazo, pedidos adicionais, decisões e identificadores percebidos pela Pessoa</td>
+<td>autoridade do Coletivo para decidir; ação consciente para responder ou seguir</td>
+<td>cancelar quando permitido; não prosseguir; explorar novamente; no estado aprovado escolher conscientemente <code>Ver em Meus Coletivos</code></td>
+<td>versão aprovada anterior substituída pela reformulação UXA-091</td>
+<td>parcial</td>
+<td>estado aprovado atual e TRN-108 aguardam revalidação</td>
+<td>a família foi validada por UXA-067, mas o SVG aprovado atual mudou e não herda automaticamente essa validação</td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-106</td>
-<td>ausente; autoridade: UXA-059 — <code>docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md</code></td>
-<td>indeterminado</td>
-<td>vínculo formado</td>
-<td>indeterminado</td>
-<td>Central de Atualizações</td>
-<td>indeterminado</td>
-<td>vínculo e autenticação esperados; não materializados</td>
-<td>indeterminado</td>
+<td>UXA-091 — <code>docs/experience-architecture/uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md</code></td>
+<td>0.1.0</td>
+<td>vínculo confirmado ou acesso recorrente da Pessoa</td>
+<td>reconhecer e acompanhar vínculos por categorias independentes</td>
+<td>Central de Atualizações quando futuramente materializada; retornos a contextos existentes conforme contrato</td>
+<td>nome e tipo do Coletivo; estado do vínculo; papel; atualização relevante; itens por categoria; próxima atividade; decisão, pergunta, convite, função aceita ou proteção quando legítimos</td>
+<td>autenticação e vínculo conforme estado; nenhuma função ou autoridade criada pela entrada</td>
+<td>trocar categoria, voltar ou não prosseguir; pausa e saída dependem de superfícies próprias</td>
 <td>nenhuma identificada</td>
-<td>ausente</td>
-<td>superfície e transições</td>
-<td>responsabilidade conhecida sem materialização</td>
+<td>parcial</td>
+<td>validação funcional de PER-106; revalidação de TRN-108; PER-107 ausente</td>
+<td>materializada por UXA-091; não é Central de Atualizações nem Início do Participante; sem ranking ou pontuação</td>
 </tr>
 <tr>
 <td>GKR-SURF-PER-107</td>
@@ -9254,8 +9265,10 @@
 </table>
 <h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
 <p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<h2 id="4-estado">4. Estado<a class="headerlink" href="#4-estado" title="Permanent link">&para;</a></h2>
-<p>O detalhamento está <code>active</code> como parte integrante do registro promovido pela UXA-080. O status aprova o instrumento documental e não altera maturidade, continuidade ou lacuna de qualquer entrada.</p>
+<h2 id="4-efeito-da-uxa-091">4. Efeito da UXA-091<a class="headerlink" href="#4-efeito-da-uxa-091" title="Permanent link">&para;</a></h2>
+<p>A UXA-091 materializa <code>PER-106</code>, refina a continuidade aprovada de <code>PER-105</code> e deixa ambas as versões correntes pendentes de validação específica. <code>PER-107</code> e <code>PER-108</code> permanecem ausentes ou pendentes conforme registrado.</p>
+<h2 id="5-estado">5. Estado<a class="headerlink" href="#5-estado" title="Permanent link">&para;</a></h2>
+<p>O detalhamento está <code>active</code> como parte integrante do registro granular. O status aprova o instrumento documental e não valida <code>PER-106</code> ou <code>TRN-108</code>.</p>
 
 
 
