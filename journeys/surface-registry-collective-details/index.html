@@ -8896,10 +8896,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-regra-de-incerteza" class="md-nav__link">
+  <a href="#3-regras-preservadas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Regra de incerteza
+        3. Regras preservadas
       
     </span>
   </a>
@@ -8944,8 +8944,8 @@
 
 <h1 id="detalhamento-obrigatorio-das-superficies-do-coletivo">Detalhamento Obrigatório das Superfícies do Coletivo<a class="headerlink" href="#detalhamento-obrigatorio-das-superficies-do-coletivo" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens de entradas.</p>
-<p>A UXA-086 materializou <code>GKR-SURF-COL-002</code>. A UXA-087 reformula e valida funcionalmente essa referência, encerrando o gate específico da superfície sem validar <code>GKR-TRN-112</code> ponta a ponta e sem materializar <code>GKR-SURF-COL-003</code>.</p>
+<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não altera a contagem de entradas.</p>
+<p>A UXA-088 materializa <code>GKR-SURF-COL-003</code> em sete estados desktop. A família permanece sem validação funcional específica.</p>
 <h2 id="2-campos-por-identificador">2. Campos por identificador<a class="headerlink" href="#2-campos-por-identificador" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -8968,7 +8968,7 @@
 <tbody>
 <tr>
 <td>GKR-SURF-COL-001</td>
-<td>UXA-016 — <code>docs/experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md</code>; UXA-062 — <code>docs/experience-architecture/uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md</code></td>
+<td>UXA-016 e UXA-062</td>
 <td>indeterminado</td>
 <td>criação ou acesso público</td>
 <td>consultar presença pública ou acessar visão prevista</td>
@@ -8979,41 +8979,41 @@
 <td>nenhuma identificada</td>
 <td>parcial</td>
 <td>separação entre vista pública e operação</td>
-<td>agrupa referências existentes; não substitui Visão Geral do Responsável</td>
+<td>não substitui Visão Geral do Responsável</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-002</td>
-<td>UXA-086 — <code>docs/experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md</code>; validação UXA-087</td>
+<td>UXA-086; validação UXA-087</td>
 <td>materialização 0.1.0; validação 0.1.0</td>
 <td>acesso protegido com representação válida</td>
-<td>compreender o momento operacional e escolher responsabilidade ou área disponível dentro da autoridade</td>
-<td>GKR-TRN-112 para solicitações; demais áreas permanecem destinos especializados</td>
-<td>identidade e propósito; estado de representação; escopo; sínteses de solicitações e vínculos; comunicação e atividades; proteção; governança e relações no limite necessário</td>
-<td>representação válida e escopo concedido; ações fora da autoridade não são presumidas</td>
-<td>permanecer, adiar quando legítimo, contestar prioridade, retornar ao contexto anterior ou escolher outra área autorizada</td>
+<td>compreender momento operacional e escolher área autorizada</td>
+<td>GKR-TRN-112 para solicitações</td>
+<td>identidade, propósito, representação, escopo e sínteses no limite necessário</td>
+<td>representação válida e escopo concedido</td>
+<td>permanecer, adiar, contestar prioridade ou retornar</td>
 <td>nenhuma identificada</td>
-<td>parcial; origem de GKR-TRN-112 validada, destino ainda ausente</td>
-<td>continuidade para GKR-SURF-COL-003</td>
-<td>referência desktop validada funcionalmente; não substitui a fila de solicitações nem valida a transição</td>
+<td>parcial; destino agora materializado, transição ainda não validada</td>
+<td>continuidade para COL-003</td>
+<td>referência desktop validada; não substitui gestão especializada</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-003</td>
-<td>UXA-066 — <code>docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md</code></td>
-<td>indeterminado</td>
-<td>solicitação recebida</td>
-<td>decidir ou solicitar informação dentro da autoridade</td>
-<td>pedir informação, aprovar, recusar ou expirar</td>
-<td>dados autorizados da solicitação; estado; prazo; decisão</td>
-<td>autoridade do responsável e finalidade limitada</td>
-<td>adiar, pedir informação, recusar ou deixar expirar conforme contrato</td>
-<td>nenhuma identificada</td>
-<td>ausente na origem operacional</td>
-<td>operação bilateral</td>
-<td>somente efeitos percebidos pela Pessoa estão materializados; origem operacional completa continua ausente</td>
+<td>UXA-088 — <code>docs/experience-architecture/uxa-088-collective-request-management-low-fidelity-wireframes.md</code>; efeitos na Pessoa em UXA-066/067</td>
+<td>materialização 0.1.0; validação pendente</td>
+<td>GKR-TRN-105 ou GKR-TRN-112; resposta adicional via GKR-TRN-107</td>
+<td>analisar solicitação e escolher aguardar, pedir informação, aprovar ou recusar dentro da autoridade</td>
+<td>GKR-TRN-106, GKR-TRN-108 ou GKR-TRN-109; permanência na fila quando não houver decisão</td>
+<td>dados autorizados da solicitação; estado; prazo; critérios; fundamento; resposta adicional; dados protegidos mínimos quando aplicável</td>
+<td>representação válida; finalidade limitada; autoridade específica; confirmação antes de aprovação ou recusa</td>
+<td>voltar sem decidir; aguardar; pedir informação; cancelar rascunho; interromper por autoridade insuficiente</td>
+<td>referências na perspectiva da Pessoa não são supersedidas</td>
+<td>materializada bilateralmente; validação integrada pendente</td>
+<td>gate funcional da família e continuidade pós-aprovação para PER-106</td>
+<td>sete SVGs desktop; cancelamento pela Pessoa e expiração são eventos refletidos, não decisões equivalentes do responsável</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-004</td>
-<td>ausente; autoridade: UXA-059 — <code>docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md</code></td>
+<td>ausente; autoridade UXA-059</td>
 <td>indeterminado</td>
 <td>vínculo formado</td>
 <td>indeterminado</td>
@@ -9024,56 +9024,56 @@
 <td>nenhuma identificada</td>
 <td>ausente</td>
 <td>continuidade interna</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>não iniciado pela UXA-088</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-005</td>
-<td>ausente; autoridade: UXA-058 — <code>docs/experience-architecture/uxa-058-interactions-recommendations-connections-functional-contract.md</code>; UXA-059 — <code>docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md</code></td>
+<td>ausente; autoridade UXA-058/059</td>
 <td>indeterminado</td>
 <td>vínculo e autoridade</td>
 <td>indeterminado</td>
 <td>atualizações aos participantes</td>
 <td>indeterminado</td>
-<td>papel, audiência e finalidade esperados; não materializados</td>
+<td>papel, audiência e finalidade esperados</td>
 <td>indeterminado</td>
 <td>nenhuma identificada</td>
 <td>ausente</td>
 <td>superfície e regras operacionais</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>não iniciado pela UXA-088</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-006</td>
-<td>UXA-059 — <code>docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md</code></td>
+<td>UXA-059</td>
 <td>indeterminado</td>
 <td>governança interna</td>
 <td>indeterminado por atividade</td>
 <td>resultados e próximas decisões</td>
-<td>conteúdos dispersos; inventário integrado ausente</td>
-<td>autoridade contextual esperada; não consolidada</td>
+<td>conteúdos dispersos</td>
+<td>autoridade contextual esperada</td>
 <td>indeterminado</td>
 <td>nenhuma identificada</td>
 <td>não examinado</td>
 <td>matriz operacional integrada</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>não iniciado pela UXA-088</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-007</td>
-<td>UXA-058 — <code>docs/experience-architecture/uxa-058-interactions-recommendations-connections-functional-contract.md</code></td>
+<td>UXA-058</td>
 <td>indeterminado</td>
 <td>evento protegido</td>
-<td>avaliar evento protegido dentro de competência limitada</td>
+<td>avaliar evento dentro de competência limitada</td>
 <td>decisão ou encaminhamento</td>
 <td>evidências mínimas, relato, estado e encaminhamento</td>
 <td>autoridade protegida; finalidade limitada</td>
-<td>contestar, corrigir ou encaminhar conforme contrato; integração não examinada</td>
+<td>contestar, corrigir ou encaminhar conforme contrato</td>
 <td>nenhuma identificada</td>
 <td>não examinado</td>
 <td>fluxo protegido completo</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>não iniciado pela UXA-088</td>
 </tr>
 <tr>
 <td>GKR-SURF-COL-008</td>
-<td>ausente; autoridade: UXA-019 — <code>docs/experience-architecture/uxa-019-organization-collective-relationship-functional-contract.md</code></td>
+<td>ausente; autoridade UXA-019</td>
 <td>indeterminado</td>
 <td>proposta institucional</td>
 <td>avaliar, negociar, aceitar ou recusar proposta</td>
@@ -9084,15 +9084,19 @@
 <td>nenhuma identificada</td>
 <td>ausente</td>
 <td>relação Organização–Coletivo</td>
-<td>entrada documental seletiva; não declara jornada completa</td>
+<td>não iniciado pela UXA-088</td>
 </tr>
 </tbody>
 </table>
-<h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
-<p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<p>A validação de <code>GKR-SURF-COL-002</code> não autoriza completar campos das demais superfícies por analogia e não cria a operação de <code>GKR-SURF-COL-003</code>.</p>
+<h2 id="3-regras-preservadas">3. Regras preservadas<a class="headerlink" href="#3-regras-preservadas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>valores sem evidência permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>;</li>
+<li>materialização de <code>COL-003</code> não autoriza completar <code>COL-004</code> a <code>COL-008</code> por analogia;</li>
+<li>efeitos validados na perspectiva da Pessoa não equivalem a validação do ato do responsável;</li>
+<li>autoridade insuficiente impede a decisão e não concede dados adicionais.</li>
+</ul>
 <h2 id="4-estado">4. Estado<a class="headerlink" href="#4-estado" title="Permanent link">&para;</a></h2>
-<p>O detalhamento está <code>active</code> 0.4.0. <code>GKR-SURF-COL-002</code> possui materialização em UXA-086 e validação funcional em UXA-087. Seu gate específico de superfície está encerrado; a continuidade para a gestão completa de solicitações permanece aberta e a jornada do Coletivo continua incompleta.</p>
+<p>O detalhamento está <code>active</code> 0.5.0. <code>COL-002</code> permanece validada e <code>COL-003</code> passa a materializada com validação pendente. A Jornada do Coletivo continua incompleta.</p>
 
 
 
