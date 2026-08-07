@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.87.0
+version: 0.88.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -26,12 +26,13 @@ related:
   - UXA-092
   - UXA-093
   - UXA-094
+  - UXA-095
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - M7.81
+  - M7.82
 normative: false
 ---
 
@@ -62,90 +63,81 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes | 107 |
-| associações individuais | 107 |
-| perfis de rastreabilidade | 27 |
-| com validação funcional vigente | **97** |
-| pendentes de validação específica | **10** |
-| IDs com referência visual | 29 de 40 |
-| responsabilidades sem SVG dedicado | 10 |
+| SVGs existentes | **108** |
+| associações individuais | **108** |
+| perfis de rastreabilidade | **28** |
+| com validação funcional vigente | **96** |
+| pendentes de validação específica | **12** |
+| IDs com referência visual | **30 de 40** |
+| responsabilidades sem SVG dedicado | **9** |
 
-Os dez pendentes remanescentes são exclusivamente os estados residuais da UXA-055.
+As pendências são 10 estados UXA-055, a Central corrente reformulada e o novo Início do Participante.
 
 ## 4. Decisões estruturais preservadas
 
 - materialização não equivale a validação funcional;
 - uma versão visual reformulada exige revalidação;
-- estado obsoleto não pode sobrescrever estado canônico mais recente;
-- repetição de interação não pode duplicar efeito lógico;
-- `Meus Coletivos` separa participação, acompanhamento, solicitação, convite e pausa;
-- abrir a Central não altera vínculo nem leitura;
+- vínculo, disponibilidade, função, presença e autoridade são estados distintos;
+- `Meus Coletivos` organiza vínculos e estados relacionados;
 - a Central preserva origem, natureza, contexto, autoridade, leitura, ação e prazo;
-- estado `lido` não equivale a concordância, consentimento, presença ou ação concluída;
-- segurança material precede ação comum na ordenação de atenção;
-- preferência comum não pode ocultar entrega mínima necessária de aviso essencial de segurança;
-- engajamento, popularidade, plano pago e publicidade não dominam a ordem;
+- o Início do Participante sintetiza o contexto interno sem replicar Central ou canais especializados;
+- estado `lido` não equivale a consentimento, presença ou ação concluída;
+- abrir o Início não confirma presença nem cria função ou autoridade;
 - validação de superfície não equivale a validação automática de transição;
-- validação integral documental não equivale a implementação técnica;
-- presença ou ordem na galeria não valida jornada completa.
+- validação integral documental não equivale a implementação técnica.
 
 ## 5. Evolução recente
 
 ```text
-UXA-090 — cinco handoffs elegíveis validados ponta a ponta
+UXA-090 — cinco handoffs elegíveis validados
 → UXA-091 — Meus Coletivos materializada
 → UXA-092 — Meus Coletivos e TRN-108 validados
-→ UXA-093 — Central de Atualizações materializada
-→ UXA-094 — Central reformulada/validada e TRN-110 validada ponta a ponta
+→ UXA-093 — Central materializada
+→ UXA-094 — Central e TRN-110 validadas
+→ UXA-095 — Início do Participante materializado; TRN-111 parcial
 ```
 
-## 6. Resultado da UXA-094
+## 6. Resultado da UXA-095
 
-[UXA-094 — Validação Funcional da Central de Atualizações e Revalidação de GKR-TRN-110](uxa-094-collective-updates-center-functional-validation-and-trn110-revalidation.md) reforma dois SVGs existentes, valida `PER-107`, revalida o gatilho corrente de `PER-106` e promove `TRN-110` a `integralmente validada`.
+[UXA-095 — Materialização Controlada do Início do Participante e Refinamento de TRN-111](uxa-095-participant-home-materialization-and-trn111-refinement.md) cria uma nova referência móvel para `PER-108` e reforma minimamente `PER-107` para expor o handoff.
 
 O veredito é:
 
-> **Aprovada após reformulação controlada e validação integrada de `GKR-TRN-110`.**
+> **Materialização controlada concluída no escopo documental; validação funcional pendente.**
 
-A UXA-094 consolida:
+A UXA-095 consolida:
 
-1. gatilho explícito `Ver atualizações` em `PER-106`;
-2. entrada neutra sem mudança de vínculo ou leitura;
-3. segurança material antes de ação comum;
-4. fonte, autoridade e vigência/revisão no alerta;
-5. preferências para conteúdo não essencial, com limite explícito para aviso essencial;
-6. acesso às demais categorias sem antecipar canais P1;
-7. leitura separada de efeito substantivo;
-8. revalidação de estado antes de ação;
-9. concorrência resolvida pelo estado canônico mais recente;
-10. idempotência de abertura e leitura;
-11. `TRN-111/PER-108` preservados como fronteira ainda não materializada.
+1. `PER-108` como síntese móvel de propósito, vínculo, momento, atividade, consulta e autonomia;
+2. `Abrir início do Coletivo` como gatilho explícito em `PER-107`;
+3. entrada neutra sem alteração de leitura, vínculo, papel, presença ou autoridade;
+4. separação entre Início, Central e canais especializados;
+5. `TRN-111` de ausente para parcial;
+6. revalidação obrigatória da Central corrente e validação do novo Início em pacote posterior.
 
 ## 7. Instrumentos vigentes propostos
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.22.0 |
-| Jornada da Pessoa | `draft` 0.7.0 |
-| Jornada do Coletivo | `draft` 0.10.0 |
+| Jornadas Integradas | `active` 0.23.0 |
+| Jornada da Pessoa | `draft` 0.8.0 |
+| Jornada do Coletivo | `draft` 0.11.0 |
 | Jornada da Organização | `draft` |
-| catálogo integrado | `active` 0.18.0 |
-| galeria visual | `active` 0.13.0 |
-| página de Coletivos | `active` 0.11.0 |
-| matriz por SVG | `active` 0.11.0 |
-| lacunas | `active` 0.19.0 |
-| registro de superfícies | `active` 0.11.0 |
-| registro de transições | `active` 0.11.0 |
-| detalhamento da Pessoa | `active` 0.6.0 |
+| catálogo integrado | `active` 0.19.0 |
+| galeria visual | `active` 0.14.0 |
+| página de Coletivos | `active` 0.12.0 |
+| matriz por SVG | `active` 0.12.0 |
+| lacunas | `active` 0.20.0 |
+| registro de superfícies | `active` 0.12.0 |
+| registro de transições | `active` 0.12.0 |
+| detalhamento da Pessoa | `active` 0.7.0 |
 
 ## 8. Ressalvas vigentes
 
-- 10 responsabilidades permanecem sem SVG dedicado;
-- dez SVGs UXA-055 continuam sem validação específica;
-- `TRN-111` permanece ausente;
-- `PER-108` continua com reformulação/materialização pendente;
-- estados P0B da Central e de Meus Coletivos permanecem separados;
-- áreas P1 de comunicação especializada não foram materializadas;
+- 9 responsabilidades permanecem sem SVG dedicado;
+- 10 SVGs UXA-055 continuam sem validação específica;
+- `PER-107` corrente e `PER-108` aguardam validação;
+- `TRN-111` permanece parcial;
+- estados P0B e áreas P1 permanecem separados;
 - Jornadas da Pessoa e do Coletivo continuam `draft`;
 - continuidades de outros pacotes permanecem parciais ou não examinadas.
 
@@ -159,13 +151,13 @@ COL-002 — validada
 → TRN-108 — integralmente validada
 → PER-106 — validado
 → TRN-110 — integralmente validada
-→ PER-107 — validado
-→ TRN-111 — ausente
-→ PER-108 — reformulação/materialização pendente
+→ PER-107 — contrato validado; SVG corrente pendente
+→ TRN-111 — parcial
+→ PER-108 — materializado; validação pendente
 ```
 
 ## 10. Próxima evolução possível
 
-**UXA-095 — Materialização/Reformulação Controlada do Início do Participante (`GKR-SURF-PER-108`) e Refinamento de `GKR-TRN-111`**, mediante autorização separada.
+**UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**, mediante autorização separada.
 
-A UXA-095 não foi iniciada.
+A UXA-096 não foi iniciada.

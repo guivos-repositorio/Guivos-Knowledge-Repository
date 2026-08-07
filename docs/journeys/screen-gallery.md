@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -19,6 +19,7 @@ related:
   - UXA-092
   - UXA-093
   - UXA-094
+  - UXA-095
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -31,9 +32,9 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne os **107 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
+Esta seção reúne os **108 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-094 reforma exclusivamente as referências móveis de `PER-106 — Meus Coletivos` e `PER-107 — Central de Atualizações`, sem adicionar ou remover SVG.
+A UXA-095 adiciona uma referência móvel de `PER-108 — Início do Participante` e reforma minimamente `PER-107` para tornar `TRN-111` observável.
 
 ## 2. Estado do instrumento
 
@@ -41,15 +42,14 @@ A galeria permanece `active` como instrumento de inspeção. Esse status não si
 
 Ressalvas vigentes:
 
-- 107 SVGs compartilham 27 perfis de rastreabilidade;
-- 10 responsabilidades continuam sem SVG dedicado;
+- 108 SVGs compartilham 28 perfis de rastreabilidade;
+- 9 responsabilidades continuam sem SVG dedicado;
 - uma fronteira permanece corretamente sem tela;
-- **97 SVGs possuem validação funcional vigente**;
-- **10 SVGs aguardam validação específica, todos UXA-055**;
-- `PER-106` e `PER-107` estão validados na versão corrente;
-- `TRN-110` está integralmente validada;
-- `TRN-111` permanece ausente por `PER-108` não vigente;
-- sete transições do trecho de Coletivos estão integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `112`.
+- **96 SVGs possuem validação funcional vigente**;
+- **12 aguardam validação específica**: 10 UXA-055 + PER-107 corrente + PER-108;
+- `TRN-110` permanece integralmente validada;
+- `TRN-111` está **parcial**;
+- sete transições do trecho anterior de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `112`.
 
 ## 3. Instrumentos de inspeção
 
@@ -65,10 +65,10 @@ Ressalvas vigentes:
 |---:|---|---:|---|
 | 1 | [Pessoa — Fundação, Entrada, Compreensão e Recorrência](screen-gallery-person.md) | 19 | Home → início protegido → expressão → compreensão → Tela Hoje |
 | 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 | publicação → mapa → lista → detalhe → fronteira |
-| 3 | [Coletivos](screen-gallery-collectives.md) | 33 | descoberta → solicitação → gestão → resultado → Meus Coletivos → Central |
+| 3 | [Coletivos](screen-gallery-collectives.md) | **34** | descoberta → solicitação → gestão → Meus Coletivos → Central → Início |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total** | **107** | **97 validados; 10 pendentes** |
+|  | **Total** | **108** | **96 validados; 12 pendentes** |
 
 ## 5. Sequência de Coletivos
 
@@ -80,56 +80,50 @@ explorar e buscar
 → gestão responsável
 → resultado aprovado
 → Meus Coletivos
-→ TRN-110 validada
+→ TRN-110 integralmente validada
 → Central de Atualizações
-→ TRN-111 ausente
-→ Início do Participante não vigente
+→ TRN-111 parcial
+→ Início do Participante materializado
 ```
-
-O trecho até `PER-107` possui os gates indicados nos registros, mas isso não valida a jornada interna posterior como um conjunto completo.
 
 ## 6. Cobertura confirmada
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes e referenciados | 107 |
-| associações individuais | 107 |
-| perfis de rastreabilidade | 27 |
-| com validação funcional vigente | **97** |
-| pendentes de validação específica | **10** |
-| IDs com referência visual | 29 de 40 |
-| responsabilidades sem SVG dedicado | 10 |
+| SVGs existentes e referenciados | **108** |
+| associações individuais | **108** |
+| perfis de rastreabilidade | **28** |
+| com validação funcional vigente | **96** |
+| pendentes de validação específica | **12** |
+| IDs com referência visual | **30 de 40** |
+| responsabilidades sem SVG dedicado | **9** |
 | fronteira documental sem tela | 1 |
-
-Os dez pendentes são exclusivamente UXA-055.
 
 ## 7. Responsabilidades sem SVG dedicado
 
-- `GKR-SURF-PER-108` — Início do Participante;
 - `GKR-SURF-COL-004` a `GKR-SURF-COL-008`;
 - `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007`.
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 8. Efeito da UXA-094
+## 8. Efeito da UXA-095
 
-- 0 SVG novo e 2 SVGs existentes reformulados;
-- 107 SVGs, 27 perfis e 29 IDs com referência visual preservados;
-- validações vigentes: 96 → **97**;
-- pendências: 11 → **10**;
-- `PER-106` revalidado no gatilho corrente;
-- `PER-107` validado;
-- `TRN-110` promovida a integralmente validada;
-- `TRN-111` preservada como ausente.
+- +1 SVG novo e 1 SVG existente reformulado;
+- 108 SVGs, 28 perfis e 30 IDs com referência visual;
+- validações vigentes: 97 → **96** pela reformulação pendente de PER-107;
+- pendências: 10 → **12**;
+- `PER-108` materializado;
+- `TRN-111` ausente → parcial;
+- nenhuma jornada promovida.
 
 ## 9. Estado
 
-A galeria está `active` 0.13.0. A página de Coletivos está `active` 0.11.0 e a matriz por SVG está `active` 0.11.0 no pacote proposto pela UXA-094.
+A galeria está `active` 0.14.0. A página de Coletivos está `active` 0.12.0 e a matriz por SVG será `active` 0.12.0 no pacote proposto pela UXA-095.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
 ## 10. Próxima transição possível
 
-**UXA-095 — Materialização/Reformulação Controlada do Início do Participante (`GKR-SURF-PER-108`) e Refinamento de `GKR-TRN-111`**, mediante autorização separada.
+**UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**, mediante autorização separada.
 
-A UXA-095 não foi iniciada.
+A UXA-096 não foi iniciada.
