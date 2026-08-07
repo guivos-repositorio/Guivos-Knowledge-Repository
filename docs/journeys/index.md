@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.27.0
+version: 0.28.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -23,6 +23,7 @@ related:
   - UXA-097
   - UXA-098
   - UXA-099
+  - UXA-100
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -64,6 +65,7 @@ UXA-090 — cinco handoffs de solicitação validados ponta a ponta
 → UXA-097 — primeira Tela Hoje materializada; PER-007 revalidada; TRN-007 validada ponta a ponta
 → UXA-098 — publicação, descoberta, Mapa, Lista e Detalhe validados como continuidade integrada
 → UXA-099 — dez estados residuais Opportunity Boost validados
+→ UXA-100 — planos, comparação, cobrança e telas dedicadas materializados como candidatos nas três jornadas
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -72,51 +74,64 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.27.0 | UXA-099 |
+| visão geral das Jornadas Integradas | `active` 0.28.0 | UXA-100 candidata |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
-| Jornada da Pessoa | `draft` 0.11.0 | sem alteração em UXA-099 |
-| Jornada do Coletivo | `draft` 0.12.0 | sem alteração em UXA-099 |
-| Jornada da Organização | `draft` 0.4.0 | sem alteração em UXA-099 |
+| Jornada da Pessoa | `draft` 0.12.0 | UXA-100 adiciona Planos como etapa candidata |
+| Jornada do Coletivo | `draft` 0.13.0 | UXA-100 adiciona Planos como etapa candidata |
+| Jornada da Organização | `draft` 0.5.0 | UXA-100 adiciona Planos como etapa candidata |
 | handoffs e cenários | `active` | sínteses preservadas |
-| catálogo integrado | `active` 0.22.0 | UXA-099 |
-| registro de superfícies | `active` 0.15.0 | UXA-099 |
-| detalhamento da Pessoa | `active` 0.9.0 | sem alteração em UXA-099 |
-| registro de transições | `active` 0.16.0 | UXA-099; sem promoção de TRN-305 |
-| galeria visual integrada | `active` 0.17.0 | UXA-099 |
-| página da Pessoa | `active` 0.4.0 | sem alteração em UXA-099 |
-| página de Coletivos | `active` 0.13.0 | sem alteração em UXA-099 |
-| Opportunity Boost — Operação, Relatórios e Resíduos | `active` 0.4.0 | UXA-099 |
-| matriz por SVG | `active` 0.15.0 | UXA-099 |
-| registro de lacunas | `active` 0.24.0 | UXA-099 |
+| catálogo integrado | `active` | inclui apêndice candidato UXA-100 sem promover contagem canônica |
+| registro de superfícies | `active` 0.15.0 | UXA-099; sem IDs de Planos ainda |
+| detalhamento da Pessoa | `active` 0.9.0 | sem alteração canônica |
+| registro de transições | `active` 0.16.0 | UXA-099; sem transições de Planos ainda |
+| galeria visual integrada | `active` | inclui apêndice candidato UXA-100 |
+| matriz por SVG | `active` 0.15.0 | canônica preservada até validação posterior |
+| registro de lacunas | `active` 0.24.0 | sem promoção automática |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 5. Resultado da UXA-099
+## 5. Etapa transversal de Planos — UXA-100
 
-A UXA-099:
+A UXA-100 introduz uma etapa transversal candidata nas três jornadas:
 
-- valida os dez SVGs residuais da UXA-055;
-- aprova oito sem alteração e reforma dois;
-- preserva 109 SVGs, 109 associações e 28 perfis;
-- eleva validações funcionais vigentes de 99 para **109**;
-- reduz pendências específicas de 10 para **0**;
-- valida `COM-005` no escopo dos dez estados;
-- preserva `TRN-305` como parcial;
-- consolida erro ≠ zero, baixa oferta orgânica, pausa protetiva em falha material, reversibilidade, separação denúncia/contestação e idempotência;
-- não promove jornadas.
+```text
+área do participante
+→ Planos
+→ plano atual + uso/capacidade
+→ comparação geral + diferença incremental
+→ manter / upgrade / downgrade / cancelar / solicitar proposta
+→ revisão de contratação quando aplicável
+→ pagamento simulado ou processo comercial governado
+→ retorno ao contexto anterior
+```
 
-## 6. Cobertura visual
+A entrada em Planos ocorre por dois caminhos legítimos:
 
-| Indicador | Resultado |
+1. **voluntário**, pela área de conta/administração, sem necessidade de atingir limite;
+2. **contextual**, quando uma capacidade do plano é atingida, sempre preservando alternativas gratuitas ou operacionais aplicáveis.
+
+Telas dedicadas candidatas:
+
+- Pessoa: `uxa-100-person-plans-screen-mobile.svg`;
+- Coletivo: `uxa-100-collective-plans-screen-desktop.svg`;
+- Organização: `uxa-100-organization-plans-screen-desktop.svg`.
+
+Essas telas não possuem IDs canônicos de superfície ou transição nesta etapa.
+
+## 6. Cobertura canônica preservada
+
+| Indicador | Resultado vigente antes da promoção da UXA-100 |
 |---|---:|
-| SVGs existentes | **109** |
-| associações individuais | **109** |
+| SVGs canônicos existentes | **109** |
+| associações individuais canônicas | **109** |
 | perfis de rastreabilidade | **28** |
 | com validação funcional vigente | **109** |
-| pendentes de validação específica | **0** |
+| pendentes de validação específica no conjunto canônico | **0** |
 | IDs com referência visual | **30 de 40** |
 | responsabilidades sem SVG dedicado | **9** |
 | fronteira sem tela por definição | 1 |
+
+Os SVGs da UXA-100 permanecem **candidatos fora da contagem canônica** até validação e promoção governadas.
 
 ## 7. Continuidades anteriores preservadas
 
@@ -124,13 +139,15 @@ A UXA-099:
 
 ## 8. Separações obrigatórias
 
+- Planos como etapa de jornada não equivale a checkout implementado;
+- tela materializada não equivale a superfície canônica registrada;
+- pagar um plano não altera relevância orgânica, confiança, legitimidade ou evolução;
+- limite comercial não apaga direitos essenciais ou alternativas gratuitas legítimas;
 - validar `COM-005` não valida automaticamente `TRN-305`;
 - estados residuais publicitários não alteram catálogo, busca ou ordenação orgânicos;
-- mudança material não confirmada não autoriza entrega futura por inércia;
-- denúncia, contestação e preferência permanecem fluxos diferentes;
 - repetir a mesma intenção não duplica efeito lógico;
 - validação documental não equivale a implementação técnica.
 
-## 9. Próxima transição possível
+## 9. Próxima decisão da UXA-100
 
-Com `V3` encerrada, a próxima prioridade de validação registrada é `V4 — efeito externo de oportunidades`, associada a `TRN-205`. **UXA-100 não foi iniciada.**
+A frente de Planos está materializada nas três jornadas, mas permanece candidata. O próximo ato governado é a validação funcional das telas/placas e a decisão posterior sobre IDs de superfície e transições. Nenhum registro canônico ou implementação técnica é criado automaticamente.
