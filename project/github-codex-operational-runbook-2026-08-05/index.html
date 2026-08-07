@@ -9117,10 +9117,132 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-resultado-do-p0" class="md-nav__link">
+  <a href="#12-recuperacao-controlada-de-workflows-nao-iniciados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Resultado do P0
+        12. Recuperação controlada de workflows não iniciados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Recuperação controlada de workflows não iniciados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 Pré-condições
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-ordem-obrigatoria-de-recuperacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 Ordem obrigatória de recuperação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12.2 Ordem obrigatória de recuperação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-validacao-semantica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 1 — validação semântica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-publicacao-documental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 2 — publicação documental
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-3-deploy-canonico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 3 — deploy canônico
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-execucao-pela-interface-do-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 Execução pela interface do GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#124-execucao-pelo-github-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.4 Execução pelo GitHub CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#125-evidencias-obrigatorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.5 Evidências obrigatórias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126-criterios-de-parada-e-proibicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.6 Critérios de parada e proibições
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-resultado-do-p0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Resultado do P0
       
     </span>
   </a>
@@ -9346,7 +9468,96 @@ git<span class="w"> </span>status<span class="w"> </span>--short
 <li>conteúdo de arquivos de credenciais.</li>
 </ul>
 <p>Exemplos devem utilizar placeholders inequívocos e nunca valores reutilizáveis.</p>
-<h2 id="12-resultado-do-p0">12. Resultado do P0<a class="headerlink" href="#12-resultado-do-p0" title="Permanent link">&para;</a></h2>
+<h2 id="12-recuperacao-controlada-de-workflows-nao-iniciados">12. Recuperação controlada de workflows não iniciados<a class="headerlink" href="#12-recuperacao-controlada-de-workflows-nao-iniciados" title="Permanent link">&para;</a></h2>
+<p>Este procedimento aplica-se quando um evento válido de <code>push</code> ou integração foi registrado, mas os workflows esperados não foram iniciados, inclusive após uma indisponibilidade do GitHub Actions ou Pages.</p>
+<p>A recuperação é operacional. Ela não altera o estado documental, não cria autoridade arquitetural e não autoriza o início de uma frente posterior.</p>
+<h3 id="121-pre-condicoes">12.1 Pré-condições<a class="headerlink" href="#121-pre-condicoes" title="Permanent link">&para;</a></h3>
+<p>Antes de qualquer disparo manual:</p>
+<ol>
+<li>confirmar no status oficial do GitHub que Actions e Pages estão operacionais;</li>
+<li>identificar o SHA atual da <code>main</code> e registrá-lo como alvo da recuperação;</li>
+<li>confirmar que a <code>main</code> não avançou para outro commit sem revisão do escopo;</li>
+<li>verificar se já existem execuções em fila, em andamento ou concluídas para o SHA alvo;</li>
+<li>confirmar que não há PR aberto ou implantação concorrente capaz de produzir evidência ambígua;</li>
+<li>confirmar que os workflows permanecem ativos e que o disparo manual está habilitado;</li>
+<li>interromper o procedimento se qualquer precondição não puder ser comprovada.</li>
+</ol>
+<p>Comandos auxiliares:</p>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>api<span class="w"> </span>repos/guivos-repositorio/Guivos-Knowledge-Repository/git/ref/heads/main
+gh<span class="w"> </span>run<span class="w"> </span>list<span class="w"> </span>--branch<span class="w"> </span>main<span class="w"> </span>--limit<span class="w"> </span><span class="m">20</span>
+</code></pre></div>
+<h3 id="122-ordem-obrigatoria-de-recuperacao">12.2 Ordem obrigatória de recuperação<a class="headerlink" href="#122-ordem-obrigatoria-de-recuperacao" title="Permanent link">&para;</a></h3>
+<p>Executar um workflow por vez, sempre sobre a branch <code>main</code> e somente depois de validar o resultado da etapa anterior.</p>
+<h4 id="etapa-1-validacao-semantica">Etapa 1 — validação semântica<a class="headerlink" href="#etapa-1-validacao-semantica" title="Permanent link">&para;</a></h4>
+<p>Workflow: <code>GKR Semantic State Validation</code>.</p>
+<p>Objetivo: confirmar que o estado semântico do GKR permanece sincronizado antes da geração ou publicação de artefatos.</p>
+<h4 id="etapa-2-publicacao-documental">Etapa 2 — publicação documental<a class="headerlink" href="#etapa-2-publicacao-documental" title="Permanent link">&para;</a></h4>
+<p>Workflow: <code>Publish GKR Documentation</code>.</p>
+<p>Objetivo: confirmar:</p>
+<ul>
+<li><code>mkdocs build --strict</code> aprovado;</li>
+<li>PDF gerado e carregado como artefato;</li>
+<li>site gerado e carregado como artefato;</li>
+<li>ausência de job concorrente de deploy nesse workflow.</li>
+</ul>
+<h4 id="etapa-3-deploy-canonico">Etapa 3 — deploy canônico<a class="headerlink" href="#etapa-3-deploy-canonico" title="Permanent link">&para;</a></h4>
+<p>Workflow: <code>Deploy GKR to GitHub Pages</code>.</p>
+<p>Objetivo: executar uma única publicação canônica por <code>mkdocs gh-deploy</code>, confirmar a atualização da branch <code>gh-pages</code> e verificar que não ocorreu colisão com outro mecanismo de deploy.</p>
+<p>Não iniciar a etapa seguinte enquanto a anterior estiver em fila, em andamento, cancelada ou com falha.</p>
+<h3 id="123-execucao-pela-interface-do-github">12.3 Execução pela interface do GitHub<a class="headerlink" href="#123-execucao-pela-interface-do-github" title="Permanent link">&para;</a></h3>
+<p>Para cada workflow habilitado:</p>
+<ol>
+<li>abrir a aba <strong>Actions</strong> do repositório;</li>
+<li>selecionar o workflow pelo nome exato;</li>
+<li>selecionar <strong>Run workflow</strong>;</li>
+<li>escolher a branch <code>main</code>;</li>
+<li>confirmar o disparo;</li>
+<li>registrar o número e o identificador da execução;</li>
+<li>acompanhar até a conclusão antes de prosseguir.</li>
+</ol>
+<h3 id="124-execucao-pelo-github-cli">12.4 Execução pelo GitHub CLI<a class="headerlink" href="#124-execucao-pelo-github-cli" title="Permanent link">&para;</a></h3>
+<p>Em workspace autenticado:</p>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>workflow<span class="w"> </span>run<span class="w"> </span>semantic-state.yml<span class="w"> </span>--ref<span class="w"> </span>main
+gh<span class="w"> </span>workflow<span class="w"> </span>run<span class="w"> </span>publish-docs.yml<span class="w"> </span>--ref<span class="w"> </span>main
+gh<span class="w"> </span>workflow<span class="w"> </span>run<span class="w"> </span>deploy-pages.yml<span class="w"> </span>--ref<span class="w"> </span>main
+</code></pre></div>
+<p>Os comandos representam a ordem de recuperação, mas não devem ser executados em sequência automática. Entre eles, consultar e validar a execução correspondente:</p>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>run<span class="w"> </span>list<span class="w"> </span>--branch<span class="w"> </span>main<span class="w"> </span>--limit<span class="w"> </span><span class="m">20</span>
+gh<span class="w"> </span>run<span class="w"> </span>view<span class="w"> </span>&lt;RUN_ID&gt;
+</code></pre></div>
+<h3 id="125-evidencias-obrigatorias">12.5 Evidências obrigatórias<a class="headerlink" href="#125-evidencias-obrigatorias" title="Permanent link">&para;</a></h3>
+<p>O checkpoint de recuperação deverá registrar:</p>
+<ul>
+<li>SHA alvo da <code>main</code>;</li>
+<li>nome, número e identificador de cada workflow run;</li>
+<li>evento <code>workflow_dispatch</code>;</li>
+<li>horário de início e conclusão;</li>
+<li>conclusão de cada job;</li>
+<li>artefatos gerados pela publicação documental;</li>
+<li>commit resultante na branch <code>gh-pages</code>, quando houver deploy;</li>
+<li>confirmação de que houve apenas um mecanismo de publicação;</li>
+<li>falhas, avisos ou limitações observadas.</li>
+</ul>
+<p>As evidências deverão ser registradas no PR ou no checkpoint de governança relacionado. Uma execução sobre SHA diferente não comprova a recuperação do SHA alvo.</p>
+<h3 id="126-criterios-de-parada-e-proibicoes">12.6 Critérios de parada e proibições<a class="headerlink" href="#126-criterios-de-parada-e-proibicoes" title="Permanent link">&para;</a></h3>
+<p>Interromper a recuperação quando:</p>
+<ul>
+<li>o SHA da <code>main</code> mudar durante o procedimento;</li>
+<li>surgir execução concorrente;</li>
+<li>qualquer workflow falhar;</li>
+<li>os artefatos esperados não forem produzidos;</li>
+<li>o deploy tentar utilizar mecanismo diferente do canônico;</li>
+<li>a evidência não puder ser vinculada inequivocamente ao alvo.</li>
+</ul>
+<p>É proibido:</p>
+<ul>
+<li>criar commit vazio, artificial ou sem mudança substantiva apenas para disparar CI;</li>
+<li>executar publicação ou deploy antes da validação semântica;</li>
+<li>repetir workflows bem-sucedidos sem causa registrada;</li>
+<li>ampliar o escopo para UXA-085, Engenharia de Produto, P2–P9 ou outra frente não autorizada;</li>
+<li>interpretar o disparo operacional como promoção de estado ou autorização de merge.</li>
+</ul>
+<h2 id="13-resultado-do-p0">13. Resultado do P0<a class="headerlink" href="#13-resultado-do-p0" title="Permanent link">&para;</a></h2>
 <p>A pendência operacional sobre <code>gh</code>, autenticação, Codex e workspace está encerrada no nível de runbook.</p>
 <p>Este documento não afirma que todo ambiente futuro já estará corretamente configurado. Ele define o procedimento de verificação, persistência, segurança e recuperação aplicável.</p>
 
