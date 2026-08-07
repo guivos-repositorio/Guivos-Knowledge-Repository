@@ -1,15 +1,17 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITIES-ORGANIZATION-001
 title: Organização e Oportunidades
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -88,5 +90,7 @@ A ordem evidencia as continuidades `GKR-TRN-203` a `GKR-TRN-205` e `GKR-TRN-210`
 ## 6. Limite
 
 A publicação, descoberta, alternância mapa–lista, detalhe e efeito externo continuam sem validação integrada ponta a ponta.
+
+O status `active` registra somente a promoção documental do instrumento de inspeção executada pela UXA-085; não valida as continuidades institucionais ou de oportunidades.
 
 [← Pessoa](screen-gallery-person.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Coletivos →](screen-gallery-collectives.md)
