@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -19,6 +19,7 @@ related:
   - UXA-094
   - UXA-095
   - UXA-096
+  - UXA-097
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -31,7 +32,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.13.0 preserva as 37 transições. A UXA-096 valida `GKR-TRN-111` ponta a ponta, sem criar nova transição.
+A versão 0.14.0 preserva as 37 transições. A UXA-097 valida `GKR-TRN-007` ponta a ponta, sem criar nova transição.
 
 ## 2. Convenções de estado
 
@@ -66,7 +67,28 @@ Validação integral documental não comprova implementação técnica.
 | GKR-TRN-004 | PER-004 | PER-005 | parcial | integração expressão–inventário |
 | GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
-| GKR-TRN-007 | PER-007 | PER-008 | não examinada | reconciliação com Tela Hoje |
+| GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | **UXA-097 — primeira Hoje materializada; escolhas, autorização, estado canônico, retorno e idempotência validados** |
+
+### 4.1 Contrato validado de `GKR-TRN-007`
+
+```text
+PER-007
+→ escolhas compatíveis são confirmadas explicitamente
+→ condição de persistência/personalização torna-se efetiva sem ampliação implícita
+→ TRN-007
+→ PER-008 consulta o estado canônico vigente
+→ primeira Tela Hoje não presume avanço nem mudança anterior
+```
+
+Regras integradas:
+
+- personalização autorizada usa somente base confirmada, autorizada e vigente;
+- sem personalização ou com decisão adiada, Hoje continua acessível sem indicações pessoais;
+- `Excluir compreensão e continuar explorando` não pertence a `TRN-007`;
+- retirada, exclusão ou mudança posterior prevalecem sobre estado visual obsoleto;
+- clique repetido, retorno ou recarga não criam duas jornadas, Próximos Passos ou efeitos de persistência;
+- navegar para Hoje não conta como evolução, presença, streak ou confirmação adicional;
+- a Tela Hoje recorrente permanece distinta da primeira variante validada pela UXA-097.
 
 ## 5. Pessoa em Coletivos e operação do responsável
 
@@ -82,37 +104,17 @@ Validação integral documental não comprova implementação técnica.
 | GKR-TRN-108 | COL-003 | PER-106 | responsável → participante | aprovação forma vínculo; PER-105 mostra resultado; navegação posterior é opcional | autoridade e estado vigentes; `Agora não` só interrompe navegação | UXA-089; UXA-090; UXA-092 | **integralmente validada** | — |
 | GKR-TRN-109 | COL-003 | PER-105 | responsável → solicitante | recusar com fundamento proporcional; expiração permanece distinta | autoridade vigente; estado revalidado; repetição não duplica recusa | UXA-067; UXA-089; UXA-090 | **integralmente validada** | — |
 | GKR-TRN-110 | PER-106 | PER-107 | participante | escolher `Ver atualizações`; abrir Central sem alterar vínculo ou leitura; preservar origem/natureza/autoridade/ação/prazo | vínculo/autorização pertinente; retorno não altera estado; ação substantiva revalida estado canônico; repetição de abertura/leitura é idempotente | UXA-092 na origem; UXA-093 materialização; UXA-094 validação integrada; PER-107 corrente revalidado UXA-096 | **integralmente validada** | — |
-| GKR-TRN-111 | PER-107 | PER-108 | participante | escolher `Abrir início do Coletivo`; evento histórico não concede acesso; preservar mesmo Coletivo e vínculo lógico sem alterar leitura, papel, presença ou autoridade | vínculo atual/permissão revalidados; estado canônico prevalece; retorno neutro; repetição idempotente; permissão revogada não é restaurada | UXA-095 materialização/refinamento; **UXA-096 validação integrada** | **integralmente validada** | — |
+| GKR-TRN-111 | PER-107 | PER-108 | participante | escolher `Abrir início do Coletivo`; evento histórico não concede acesso; preservar mesmo Coletivo e vínculo lógico sem alterar leitura, papel, presença ou autoridade | vínculo atual/permissão revalidados; estado canônico prevalece; retorno neutro; repetição idempotente; permissão revogada não é restaurada | UXA-095 materialização/refinamento; UXA-096 validação integrada | **integralmente validada** | — |
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando Coletivo e escopo | representação/autoridade vigentes; navegação não altera fila | UXA-087; UXA-089; UXA-090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | papel e escopo de audiência | UXA-058; UXA-059 | contratada | operação interna não materializada |
 
 ### 5.1 Contrato preservado de `GKR-TRN-110`
 
-A UXA-096 revalida a versão corrente de `PER-107` sem alterar o contrato de `TRN-110`: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.
+A UXA-097 não altera `TRN-110`: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.
 
-### 5.2 Contrato validado de `GKR-TRN-111`
+### 5.2 Contrato preservado de `GKR-TRN-111`
 
-A UXA-096 valida:
-
-```text
-PER-107
-→ “Abrir início do Coletivo”
-→ vínculo atual e permissão são revalidados
-→ evento histórico não concede nem preserva acesso
-→ nenhum vínculo, leitura, papel, presença ou autoridade é alterado
-→ PER-108
-→ mesmo Coletivo e vínculo lógico permanecem em contexto
-```
-
-Regras integradas:
-
-- estado canônico mais recente prevalece sobre a renderização anterior;
-- pausa, saída, remoção ou perda de permissão não preservam acesso antigo;
-- ações internas revalidam estado e permissão antes do efeito;
-- retorno à Central não marca automaticamente novos itens como lidos;
-- confirmação explícita de leitura já realizada não é desfeita pelo retorno;
-- abrir, voltar, recarregar ou repetir não duplica efeito lógico;
-- acesso revogado não é restaurado por histórico, cache ou repetição documental.
+A UXA-097 não altera `TRN-111`. Permanecem vigentes as regras de vínculo atual, permissão revalidada, retorno neutro, estado canônico e idempotência estabelecidas pela UXA-096.
 
 ## 6. Organização, oportunidades e relações bilaterais
 
@@ -141,14 +143,14 @@ Regras integradas:
 | GKR-TRN-305 | COM-004 | COM-005 | parcial | dez estados residuais UXA-055 |
 | GKR-TRN-306 | COM-002 | PER-202 | parcial | retorno patrocinado → lista orgânica |
 
-## 8. Efeito da UXA-096
+## 8. Efeito da UXA-097
 
 - transições totais: 37;
 - nenhuma transição nova;
-- `TRN-110`: permanece **integralmente validada**;
-- `TRN-111`: parcial → **integralmente validada**;
-- handoffs integralmente validados no trecho de Coletivos: **8** (`105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`).
+- `TRN-007`: não examinada → **integralmente validada**;
+- `TRN-110` e `TRN-111`: preservadas integralmente validadas;
+- oito handoffs integralmente validados no trecho de Coletivos permanecem inalterados.
 
 ## 9. Próximo gate
 
-A UXA-096 fecha a continuidade governada até o Início do Participante. A próxima priorização deve partir das lacunas remanescentes; **UXA-097 não foi iniciada**.
+Com `V1` encerrada, a próxima prioridade de validação vigente é `V2 — publicação → descoberta/mapa/lista/detalhe`. **UXA-098 não foi iniciada.**
