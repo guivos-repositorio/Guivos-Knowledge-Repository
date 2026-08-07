@@ -2,7 +2,7 @@
 id: UXA-100-A1
 title: Integração de Planos às Jornadas e Telas Dedicadas
 status: draft
-version: 0.1.1
+version: 0.1.2
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-100
@@ -68,14 +68,7 @@ Tela dedicada candidata:
 
 [Visualizar SVG](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
-A jornada inclui:
-
-- acesso voluntário por Conta/Configurações;
-- plano atual e consumo da cota personalizada;
-- comparação Free / Plus / Pro;
-- ganho incremental e comparação direta;
-- gestão de cobrança, downgrade e cancelamento;
-- entrada contextual a partir de correspondência personalizada adicional após cota Free.
+A jornada inclui acesso voluntário por Conta/Configurações, plano atual e consumo da cota personalizada, comparação Free / Plus / Pro, ganho incremental e comparação direta, gestão de cobrança/downgrade/cancelamento e entrada contextual a partir de correspondência personalizada adicional após cota Free.
 
 Proteção obrigatória: atingir a cota do Free não esconde oportunidade pública, Explorar ou Mapa.
 
@@ -87,15 +80,7 @@ Tela dedicada candidata:
 
 [Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-A jornada inclui:
-
-- acesso pela administração/configurações;
-- plano atual e consumo mensal;
-- comparação Livre / Gestão / Impacto / Enterprise;
-- delta incremental por degrau e delta direto para plano escolhido;
-- upgrade, downgrade e cancelamento;
-- Enterprise por proposta comercial;
-- entrada contextual quando cota ou capacidade de publicação for atingida.
+A jornada inclui acesso pela administração/configurações, plano atual e consumo mensal, comparação Livre / Gestão / Impacto / Enterprise, delta incremental e direto, upgrade/downgrade/cancelamento, Enterprise por proposta comercial e entrada contextual quando cota/capacidade for atingida.
 
 Alternativas como manter rascunho, aguardar ciclo ou usar modalidade gratuita aplicável permanecem visíveis quando funcionalmente válidas.
 
@@ -107,15 +92,7 @@ Tela dedicada candidata:
 
 [Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-A jornada inclui:
-
-- acesso pela administração;
-- plano atual, capacidade e consumo;
-- comparação Business Start / Growth / Scale;
-- diferença incremental e comparação direta;
-- mudança, downgrade e cancelamento;
-- Scale por proposta comercial;
-- entrada contextual quando capacidade de novas oportunidades/programas for atingida.
+A jornada inclui acesso pela administração, plano atual/capacidade/consumo, comparação Business Start / Growth / Scale, diferença incremental e direta, mudança/downgrade/cancelamento, Scale por proposta comercial e entrada contextual quando capacidade de novas oportunidades/programas for atingida.
 
 Arquivar, agendar ou manter rascunho permanecem alternativas quando aplicáveis.
 
@@ -142,9 +119,7 @@ plano superior
 + capacidades novas ou ampliadas deste degrau
 ```
 
-Benefícios herdados não serão descritos como novidade.
-
-Quando plano atual e alvo forem conhecidos, a interface deve apresentar o delta direto. No downgrade, deve mostrar exatamente capacidades removidas ou reduzidas antes da confirmação.
+Benefícios herdados não serão descritos como novidade. Quando plano atual e alvo forem conhecidos, a interface deve apresentar o delta direto. No downgrade, deve mostrar exatamente capacidades removidas ou reduzidas antes da confirmação.
 
 ## 9. Separações obrigatórias
 
@@ -169,16 +144,12 @@ Com esta extensão:
 - Galeria principal: `active` 0.18.0, com referência ao apêndice candidato;
 - Galeria candidata de Planos: `draft` 0.1.0.
 
+A baseline canônica anterior permanece 109 SVGs, 40 IDs de superfície/responsabilidade/fronteira e 37 transições. Os 9 SVGs de Planos são candidatos e não alteram essas contagens.
+
 Nenhuma jornada é promovida por esta extensão.
 
 ## 11. Próximo gate
 
-Antes de qualquer promoção canônica, uma validação funcional posterior deverá examinar os 9 SVGs e decidir:
-
-- se cada tela dedicada está assertiva;
-- quais estados devem ser fracionados;
-- quais superfícies canônicas devem ser criadas;
-- quais transições são necessárias;
-- como retorno, erro, idempotência e estado corrente serão registrados.
+Antes de qualquer promoção canônica, uma validação funcional posterior deverá examinar os 9 SVGs e decidir se cada tela está assertiva, quais estados devem ser fracionados, quais superfícies/transições devem ser criadas e como retorno, erro, idempotência e estado corrente serão registrados.
 
 Nenhuma dessas decisões é automática.
