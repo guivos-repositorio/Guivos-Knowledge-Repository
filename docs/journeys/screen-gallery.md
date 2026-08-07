@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -18,6 +18,7 @@ related:
   - UXA-086
   - UXA-087
   - UXA-088
+  - UXA-089
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -32,11 +33,11 @@ normative: false
 
 Esta seção reúne os 105 SVGs canônicos para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-086 acrescentou a referência de baixa fidelidade para `GKR-SURF-COL-002`. A UXA-087 reformulou o mesmo arquivo e aprovou funcionalmente essa superfície. A UXA-088 acrescenta sete referências desktop para `GKR-SURF-COL-003`, sem validar funcionalmente a nova família ou suas continuidades.
+A UXA-086 acrescentou a referência de baixa fidelidade para `GKR-SURF-COL-002`, a UXA-087 reformulou e aprovou funcionalmente essa superfície, a UXA-088 acrescentou sete referências desktop para `GKR-SURF-COL-003` e a UXA-089 reformulou seis delas e validou funcionalmente toda a família.
 
 ## 2. Estado do instrumento
 
-A galeria permanece `active` como instrumento de inspeção. Esse status não significa que todos os SVGs estejam funcionalmente validados nem que suas transições estejam aprovadas.
+A galeria permanece `active` como instrumento de inspeção. Esse status não significa que suas transições ou jornadas estejam automaticamente aprovadas.
 
 Ressalvas vigentes:
 
@@ -44,7 +45,7 @@ Ressalvas vigentes:
 - 12 responsabilidades continuam sem SVG dedicado;
 - uma fronteira permanece corretamente sem tela;
 - dez estados da UXA-055 continuam sem validação funcional específica;
-- sete estados da UXA-088 também aguardam validação funcional específica;
+- os sete estados da UXA-088 estão validados no escopo de `GKR-SURF-COL-003` pela UXA-089;
 - continuidades entre pacotes permanecem parciais ou não examinadas;
 - `GKR-TRN-105` a `GKR-TRN-109` e `GKR-TRN-112` continuam sem validação ponta a ponta.
 
@@ -67,7 +68,7 @@ A rota abaixo organiza a leitura documental. Ela não representa uma única jorn
 | 3 | [Coletivos](screen-gallery-collectives.md) | 31 | descoberta → perfil → solicitação → pendência → Visão Geral do Responsável → gestão de solicitações |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → ativação → exposição identificada → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total** | **105** | **88 validados funcionalmente; 17 pendentes** |
+|  | **Total** | **105** | **95 validados funcionalmente; 10 pendentes** |
 
 As páginas são instrumentos documentais ativos. A presença ou a validação de um SVG não valida automaticamente a continuidade que ele representa.
 
@@ -109,13 +110,14 @@ explorar e buscar
 → revisão e solicitação
 → Solicitação Pendente
 → Visão Geral do Responsável — validada
-→ gestão de solicitações — materializada; validação pendente
+→ gestão de solicitações — validada no escopo da superfície
+→ handoffs bilaterais — validação integrada pendente
 → Meus Coletivos
 → Central de Atualizações
 → Início do Participante
 ```
 
-A gestão de solicitações possui agora referência própria do responsável, mas os sete novos estados e os handoffs bilaterais permanecem sem validação específica. As superfícies posteriores continuam ausentes ou parciais.
+A gestão de solicitações possui referência própria e validação funcional do responsável. As ligações entre a perspectiva da Pessoa e a do responsável continuam parciais, e as superfícies posteriores permanecem ausentes ou incompletas.
 
 ## 6. Cobertura confirmada
 
@@ -124,11 +126,13 @@ A gestão de solicitações possui agora referência própria do responsável, m
 | SVGs existentes e referenciados | 105 |
 | associações individuais | 105 |
 | perfis de rastreabilidade | 25 |
-| com validação funcional registrada | 88 |
-| pendentes de validação específica | 17 |
+| com validação funcional registrada | 95 |
+| pendentes de validação específica | 10 |
 | IDs com referência visual direta ou agrupada | 27 de 40 |
 | responsabilidades sem SVG dedicado | 12 |
 | fronteira documental sem tela por definição | 1 |
+
+Os dez pendentes remanescentes são exclusivamente os estados residuais da UXA-055.
 
 ## 7. Responsabilidades sem SVG dedicado
 
@@ -140,26 +144,27 @@ A gestão de solicitações possui agora referência própria do responsável, m
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 8. Efeito da UXA-088
+## 8. Efeito da UXA-089
 
-`GKR-SURF-COL-003` deixa de constar como responsabilidade sem SVG dedicado. As novas referências:
+`GKR-SURF-COL-003` passa a validada no escopo da superfície. As sete referências:
 
-- estão associadas ao perfil `R25`;
+- permanecem associadas ao perfil `R25`;
 - utilizam autoridade contratual de UXA-056 e UXA-059;
 - preservam a perspectiva da Pessoa validada em UXA-067 sem substituí-la;
-- materializam fila, detalhe, análise protegida, pedido adicional, confirmação de aprovação, confirmação de recusa e autoridade insuficiente;
-- não transformam cancelamento da Pessoa ou expiração em decisões equivalentes do responsável;
-- permanecem sem validação funcional específica;
-- dão novo suporte documental a `GKR-TRN-105` a `GKR-TRN-109` e ao destino de `GKR-TRN-112`, sem validar essas transições.
+- distinguem estimativa de prazo de resposta;
+- exigem critérios previamente apresentados à Pessoa;
+- mantêm acessibilidade separada da elegibilidade;
+- impedem autodeclaração de autoridade por confirmação;
+- continuam sem validar `GKR-TRN-105` a `GKR-TRN-109` ou `GKR-TRN-112` como ligações ponta a ponta.
 
 ## 9. Estado
 
-A galeria está `active` 0.8.0. A página de Coletivos está `active` 0.6.0 e a matriz por SVG está `active` 0.6.0.
+A galeria está `active` 0.9.0. A página de Coletivos está `active` 0.7.0 e a matriz por SVG está `active` 0.7.0.
 
-O status `active` aprova somente os instrumentos documentais de inspeção. Não valida jornadas ponta a ponta, não inicia protótipo ou Engenharia de Produto e não autoriza UXA-089 automaticamente.
+O status `active` aprova somente os instrumentos documentais de inspeção. Não valida jornadas ponta a ponta, não inicia protótipo ou Engenharia de Produto e não autoriza UXA-090 automaticamente.
 
 ## 10. Próxima transição possível
 
-**UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável do Coletivo**, mediante autorização separada.
+**UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos**, mediante autorização separada.
 
-A UXA-089 não é iniciada por esta atualização da galeria.
+A UXA-090 não é iniciada por esta atualização da galeria.

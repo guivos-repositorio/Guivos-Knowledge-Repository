@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -23,6 +23,7 @@ related:
   - UXA-086
   - UXA-087
   - UXA-088
+  - UXA-089
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -34,7 +35,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A UXA-088 materializa `GKR-SURF-COL-003`, mas não encerra seu gate funcional nem valida os handoffs bilaterais associados.
+Este documento é observacional e não promocional. A UXA-089 fecha o gate funcional específico de `GKR-SURF-COL-003`, mas não encerra os handoffs bilaterais associados e não materializa `PER-106`.
 
 ## 2. Regra de priorização
 
@@ -42,73 +43,77 @@ A fila distingue:
 
 1. **materialização** — novas referências necessárias;
 2. **gate de fechamento** — materialização existente aguardando validação funcional;
-3. **dívida de validação integrada** — endpoints existentes sem exame ponta a ponta.
+3. **dívida de validação integrada** — endpoints existentes e validados como superfícies sem exame ponta a ponta.
 
 ## 3. Gates de Coletivos
 
 | Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
 | Visão Geral do Responsável | COL-002; TRN-112 | 1 SVG | validada por UXA-087 | TRN-112 ainda não validada como conjunto |
-| gestão de solicitações | COL-003; TRN-105 a 109; TRN-112 | 7 SVGs desktop em UXA-088 | validação pendente | handoffs bilaterais e saída para PER-106 pendentes |
+| gestão de solicitações | COL-003; TRN-105 a 109; TRN-112 | 7 SVGs desktop em UXA-088 | validada por UXA-089 | handoffs bilaterais e saída para PER-106 pendentes |
 
-`COL-003` deixa a fila de ausência visual e entra na fila de **gate funcional**.
+`COL-003` deixa a fila de gate funcional e passa a compor a **dívida de validação integrada** das transições.
 
 ## 4. Fila de materialização por dependência
 
 | Prioridade | Lacuna | IDs relacionados | Estado visual | Gate |
 |---:|---|---|---|---|
-| 1 | Meus Coletivos | GKR-SURF-PER-106; GKR-TRN-108; GKR-TRN-110 | sem SVG | depende da decisão de participação e de autorização separada |
+| 1 | Meus Coletivos | GKR-SURF-PER-106; GKR-TRN-108; GKR-TRN-110 | sem SVG | depende da continuidade de participação e de autorização separada |
 | 2 | Central de Atualizações | GKR-SURF-PER-107; GKR-TRN-110; GKR-TRN-111 | sem SVG | depende de vínculo ativo |
 | 3 | Início do Participante reformulado | GKR-SURF-PER-108; GKR-TRN-111 | referência anterior não promovida | reformulação, materialização e validação |
 | 4 | participantes e operação interna | GKR-SURF-COL-004 a GKR-SURF-COL-007; GKR-TRN-113 | sem SVGs dedicados | programa, materialização e validação |
 | 5 | relação Organização–Coletivo | GKR-SURF-ORG-004 a 006; GKR-SURF-COL-008; GKR-TRN-206 a 209 | sem SVGs | materialização e validação bilateral |
 | 6 | matriz institucional completa | GKR-SURF-ORG-001; GKR-SURF-ORG-007 | cobertura parcial | programa específico e validação |
 
-Nenhuma dessas materializações é iniciada pela UXA-088.
+Nenhuma dessas materializações é iniciada pela UXA-089.
 
 ## 5. Fila de validação
 
 | Prioridade | Continuidade ou família | Estado atual | Gate |
 |---:|---|---|---|
-| V0 | gestão de solicitações do responsável | 7 SVGs materializados; 0 validados | UXA-089 específica |
-| V1 | COL-002 → COL-003 e handoffs PER-105 ↔ COL-003 | endpoints materializados; transições parciais | validação integrada após gate da família |
-| V2 | compreensão inicial → Tela Hoje | telas separadas; transição não examinada | validação integrada |
-| V3 | publicação → descoberta e mapa/lista/detalhe | pacotes distintos | revalidação integrada |
-| V4 | dez estados residuais do Opportunity Boost | 10 SVGs sem validação | pacote específico |
-| V5 | efeito externo de oportunidades | fronteira sem tela por definição | contrato e validação específicos |
-| V6 | erros, retornos e interrupções | cobertura dispersa | validação por jornada |
+| V0 | COL-002 → COL-003 e handoffs PER-105 ↔ COL-003 | endpoints validados como superfícies; transições parciais | UXA-090 — validação integrada específica |
+| V1 | compreensão inicial → Tela Hoje | telas separadas; transição não examinada | validação integrada |
+| V2 | publicação → descoberta e mapa/lista/detalhe | pacotes distintos | revalidação integrada |
+| V3 | dez estados residuais do Opportunity Boost | 10 SVGs sem validação | pacote específico |
+| V4 | efeito externo de oportunidades | fronteira sem tela por definição | contrato e validação específicos |
+| V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada |
 
-## 6. Efeito da UXA-088
+`GKR-TRN-108` não entra na UXA-090 como transição fechável enquanto `GKR-SURF-PER-106` permanecer ausente; sua origem está validada, mas o destino ainda exige materialização própria.
 
-A UXA-088:
+## 6. Efeito da UXA-089
 
-- adiciona sete SVGs para `GKR-SURF-COL-003`;
-- torna visíveis fila, detalhe, proteção, pedido adicional, aprovação, recusa e autoridade insuficiente;
-- dá evidência responsável a `TRN-105` a `109` e destino materializado a `TRN-112`;
-- não valida os sete estados;
-- não valida as transições ponta a ponta;
+A UXA-089:
+
+- preserva os sete SVGs de `GKR-SURF-COL-003`;
+- reformula seis desses SVGs;
+- valida funcionalmente os sete estados;
+- distingue estimativa de prazo de resposta;
+- exige critérios previamente apresentados à Pessoa;
+- separa acessibilidade de elegibilidade;
+- impede autodeclaração de autoridade por confirmação;
+- não valida `TRN-105` a `109` ou `TRN-112` ponta a ponta;
 - não materializa `PER-106`, `PER-107`, `PER-108` ou `COL-004` a `COL-008`.
 
-## 7. Cobertura proposta
+## 7. Cobertura vigente proposta
 
 | Indicador | Resultado |
 |---|---:|
 | SVGs existentes | 105 |
 | associações individuais | 105 |
 | perfis de rastreabilidade | 25 |
-| com validação funcional registrada | 88 |
-| pendentes de validação específica | 17 |
+| com validação funcional registrada | 95 |
+| pendentes de validação específica | 10 |
 | IDs granulares com referência visual | 27 de 40 |
 | responsabilidades sem SVG dedicado | 12 |
 | fronteira corretamente sem tela | 1 |
 
-Os 17 pendentes são os dez estados da UXA-055 e os sete estados da UXA-088.
+Os dez pendentes remanescentes são exclusivamente os estados residuais da UXA-055.
 
 ## 8. Critérios de fechamento
 
 Uma lacuna somente poderá ser encerrada quando houver autoridade, materialização necessária, entradas e saídas, retornos e exceções, proteção de dados, validação correspondente e atualização governada deste registro.
 
-Para `COL-003`, materialização existe após UXA-088, mas o gate funcional permanece aberto.
+Para `COL-003`, o gate específico da superfície está encerrado pela UXA-089. A continuidade bilateral permanece aberta e deverá ser examinada separadamente.
 
 ## 9. Restrições
 
@@ -116,10 +121,11 @@ Para `COL-003`, materialização existe após UXA-088, mas o gate funcional perm
 - uma seta presumida não cria transição;
 - proximidade visual não comprova continuidade;
 - materialização não equivale a validação;
-- validação de uma superfície não valida o handoff inteiro.
+- validação de uma superfície não valida o handoff inteiro;
+- dois endpoints validados não validam automaticamente a ligação entre eles.
 
 ## 10. Próximo ato possível
 
-A próxima ação governada é **UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável do Coletivo**, mediante autorização separada.
+A próxima ação governada é **UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos**, mediante autorização separada.
 
-A UXA-089 não é iniciada por esta atualização.
+A UXA-090 não é iniciada por esta atualização.
