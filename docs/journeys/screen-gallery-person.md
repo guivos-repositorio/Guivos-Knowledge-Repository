@@ -1,15 +1,17 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-PERSON-001
 title: Pessoa — Fundação, Entrada, Compreensão e Recorrência
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -131,5 +133,7 @@ A ordem acima organiza a inspeção; não declara a transição `GKR-TRN-007` co
 ## 7. Limite
 
 A Home e a Tela Hoje permanecem separadas. A passagem da compreensão inicial para a experiência recorrente continua `não examinada` como conjunto.
+
+O status `active` registra somente a promoção documental do instrumento de inspeção executada pela UXA-085; não valida a jornada da Pessoa nem a transição `GKR-TRN-007`.
 
 [← Índice da galeria](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Oportunidades e Organização →](screen-gallery-opportunities-organization.md)
