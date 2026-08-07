@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.4.0
+version: 1.5.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -14,6 +14,7 @@ related:
   - GKR-CHANGELOG-UXA-085-001
   - GKR-CHANGELOG-UXA-086-001
   - GKR-CHANGELOG-UXA-087-001
+  - GKR-CHANGELOG-UXA-088-001
 normative: false
 ---
 
@@ -25,17 +26,17 @@ Este índice organiza os registros de atualização recentes sem reescrever o le
 
 Changelogs registram alterações. Eles não substituem `GKR-STATE-001`, autoridades de domínio, decisões arquiteturais ou evidências de integração.
 
-## 2. Baseline vigente
+## 2. Baseline proposta pela UXA-088
 
-- [Registro do Estado Atual — 2.13.0 e M7.74](current-state-register.md)
+- [Registro do Estado Atual — 2.14.0 e M7.75](current-state-register.md)
 - [Rebaseline do P0 após UXA-084](p0-post-uxa084-rebaseline-2026-08-06.md)
 - [Rebaseline do P1 após UXA-084](p1-post-uxa084-rebaseline-2026-08-06.md)
-- [Registro da reconstrução do P1](changelog-p1-post-uxa084-2026-08-06.md)
 - [UXA-085 — Promoção Controlada da Galeria](changelog-uxa-085-2026-08-07.md)
 - [UXA-086 — Materialização da Visão Geral do Responsável](changelog-uxa-086-2026-08-07.md)
 - [UXA-087 — Validação Funcional da Visão Geral do Responsável](changelog-uxa-087-2026-08-07.md)
+- [UXA-088 — Materialização da Gestão de Solicitações do Responsável](changelog-uxa-088-2026-08-07.md)
 
-Os documentos do P0 datados de 5 de agosto de 2026 permanecem fotografias históricas e devem ser lidos sob a qualificação do rebaseline pós-UXA-084.
+A baseline 2.14.0/M7.75 somente se torna vigente na `main` após integração governada do pacote UXA-088.
 
 ## 3. Sequência versionada publicada
 
@@ -49,27 +50,25 @@ Os documentos do P0 datados de 5 de agosto de 2026 permanecem fotografias histó
 - [1.69.0 — UXA-045](changelog-1.69.0-uxa-045.md)
 - [1.70.0 — UXA-046](changelog-1.70.0-uxa-046.md)
 
-A ausência de um changelog individual neste índice não invalida um incremento integrado. A comprovação de execução continua no Git, no documento da frente, no Registro do Estado Atual e no pull request correspondente.
-
 ## 4. Regra de continuidade
 
 Novos registros deverão:
 
-1. identificar o pacote e a baseline;
+1. identificar pacote e baseline;
 2. separar mudança de estado de manutenção documental;
 3. preservar a autoridade de `GKR-STATE-001`;
 4. informar limites e itens fora do escopo;
 5. vincular validações e decisão de integração;
-6. evitar declarar execução não comprovada.
+6. evitar declarar integração ainda não comprovada.
 
 ## 5. Estado deste índice
 
-| Elemento | Estado |
+| Elemento | Estado proposto |
 |---|---|
 | ledger raiz | preservado como histórico legado |
-| índice atual | ativo |
-| estado transversal | `GKR-STATE-001` 2.13.0 |
-| marco | M7.74 |
-| última UXA integrada após merge | UXA-087 |
-| próxima UXA | UXA-088, não iniciada |
-| mudança arquitetural por este índice | nenhuma |
+| índice atual | ativo 1.5.0 |
+| estado transversal | `GKR-STATE-001` 2.14.0 após eventual integração |
+| marco | M7.75 |
+| última UXA proposta | UXA-088 |
+| próxima UXA | UXA-089, não iniciada |
+| mudança arquitetural por este índice | nenhuma; apenas registro da UXA-088 |
