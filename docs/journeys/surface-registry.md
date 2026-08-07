@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -15,6 +15,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-086
+  - UXA-087
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -31,9 +32,9 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.4.0 preserva as 40 entradas promovidas pela UXA-080 e registra a materialização de `GKR-SURF-COL-002` pela UXA-086. Nenhum novo identificador é criado.
+A versão 0.5.0 preserva as 40 entradas promovidas pela UXA-080, mantém a materialização de `GKR-SURF-COL-002` pela UXA-086 e registra sua validação funcional pela UXA-087. Nenhum novo identificador é criado.
 
-O status `active` torna o registro uma referência documental vigente. Ele não cria interface, não fecha lacuna e não declara jornada completa.
+O status `active` torna o registro uma referência documental vigente. Ele não cria interface, não valida transições ponta a ponta e não declara jornada completa.
 
 ## 2. Convenções
 
@@ -42,6 +43,7 @@ O status `active` torna o registro uma referência documental vigente. Ele não 
 - `não examinado`: integração ainda não avaliada como conjunto;
 - `parcial`: cobertura incompleta;
 - `materializado`: referência visual ou estrutural existente sem implicar validação;
+- `validado`: superfície examinada funcionalmente no escopo indicado;
 - `local`: validação limitada ao pacote de origem.
 
 ## 3. Contagem
@@ -55,7 +57,7 @@ O status `active` torna o registro uma referência documental vigente. Ele não 
 | fronteira documental | 1 |
 | **Total** | **40** |
 
-A UXA-086 não altera a contagem. Ela preenche uma entrada já reservada.
+A UXA-087 não altera a contagem. Ela promove a maturidade de uma entrada já existente.
 
 ## 4. Inventário principal
 
@@ -81,7 +83,7 @@ A UXA-086 não altera a contagem. Ela preenche uma entrada já reservada.
 | GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa ou visitante; descoberta de oportunidades | móvel e computador | validado | UXA-004 | UXA-028 | UXA-029 | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-PER-203 | Detalhe de Oportunidade | Pessoa ou visitante; decisão sobre oportunidade | móvel e computador | validado | UXA-004; UXA-007 | UXA-007 | UXA-012 | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-COL-001 | Visão Geral ou presença pública existente | visitante e responsável; presença pública de Coletivo | público e protegido | materializado | UXA-014; UXA-056 | UXA-016 e referências relacionadas | UXA-018; UXA-063 no escopo aplicável | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
-| GKR-SURF-COL-002 | Visão Geral do Responsável | responsável; operação de Coletivo | computador protegido | materializado; validação pendente | UXA-014; UXA-056; UXA-058; UXA-059 | UXA-086 | — | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
+| GKR-SURF-COL-002 | Visão Geral do Responsável | responsável; operação de Coletivo | computador protegido | validado | UXA-014; UXA-056; UXA-058; UXA-059 | UXA-086; reformulação UXA-087 | UXA-087 | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-003 | gestão de solicitações | responsável; participação em Coletivo | protegido | programado | UXA-056; UXA-059 | apenas retornos na visão da Pessoa | UXA-067 na perspectiva da Pessoa | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-004 | participantes e vínculos | responsável; vínculos de Coletivo | protegido | programado | UXA-059 | — | — | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-005 | comunicação oficial | responsável; comunicação de Coletivo | protegido | programado | UXA-058; UXA-059 | — | — | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
@@ -104,22 +106,7 @@ A UXA-086 não altera a contagem. Ela preenche uma entrada já reservada.
 
 ## 5. Detalhamentos obrigatórios
 
-Os arquivos abaixo integram este registro e contêm, por ID:
-
-- artefato canônico e caminho;
-- versão;
-- entrada;
-- decisão principal;
-- saída;
-- dados e conteúdos;
-- gate;
-- reversibilidade;
-- supersessão;
-- continuidade;
-- lacuna;
-- observação de escopo.
-
-Arquivos:
+Os quatro detalhamentos integram este registro e registram artefato, versão, entrada, decisão, saída, dados, gate, reversibilidade, supersessão, continuidade, lacuna e escopo por ID:
 
 - [Pessoa](surface-registry-person-details.md);
 - [Coletivo](surface-registry-collective-details.md);
@@ -131,7 +118,7 @@ Arquivos:
 - `GKR-SURF-PER-102` permanece exclusivo de Resultados de Busca de Coletivos.
 - `GKR-SURF-ORG-003` permanece como estado institucional de oportunidade aprovada ou ativa.
 - `GKR-SURF-PER-201`, `GKR-SURF-PER-202` e `GKR-SURF-PER-203` representam mapa, lista e detalhe de oportunidades.
-- `GKR-SURF-COL-002` representa somente a visão geral inicial do responsável; `GKR-SURF-COL-003` permanece separado.
+- `GKR-SURF-COL-002` representa somente a visão geral validada do responsável; `GKR-SURF-COL-003` permanece separado e ausente como operação própria.
 - `GKR-SURF-COM-005` aponta para UXA-055 e continua sem validação funcional específica.
 - `GKR-SURF-BND-001` é endpoint documental, não participante, tela ou integração.
 
@@ -140,9 +127,12 @@ Arquivos:
 - o inventário e seus detalhamentos formam um único registro lógico;
 - valores desconhecidos permanecem explícitos;
 - materialização não equivale a validação funcional;
-- validação local não comprova continuidade integrada;
+- validação de superfície não comprova continuidade integrada;
 - responsabilidade sem interface continua `ausente`;
 - fronteira documental não equivale a implementação;
 - a cobertura permanece seletiva e não exaustiva;
-- o status `active` aprova o instrumento de registro, não a completude das jornadas;
-- a UXA-086 altera apenas a materialização observada de `GKR-SURF-COL-002` e não promove outras entradas.
+- o status `active` aprova o instrumento de registro, não a completude das jornadas.
+
+## 8. Efeito da UXA-087
+
+A UXA-087 altera exclusivamente a maturidade observacional de `GKR-SURF-COL-002`: a referência passa a `validado` após reformulação controlada. Nenhum outro ID muda de maturidade por analogia. `GKR-TRN-112` continua parcial e `GKR-SURF-COL-003` continua programado e sem materialização operacional própria.

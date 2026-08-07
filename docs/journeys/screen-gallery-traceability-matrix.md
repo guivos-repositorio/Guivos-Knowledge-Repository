@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -11,6 +11,7 @@ depends_on:
   - UXA-084
   - UXA-085
   - UXA-086
+  - UXA-087
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -29,9 +30,9 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 9
 
 ## 2. Estado do instrumento
 
-A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adiciona uma associação individual e um perfil específico para a Visão Geral do Responsável do Coletivo.
+A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adicionou o perfil `R24` para a Visão Geral do Responsável do Coletivo e a UXA-087 reformulou e validou funcionalmente essa mesma referência.
 
-As 98 associações individuais estão registradas em 24 perfis. Perfis de rastreabilidade continuam sendo instrumentos documentais: não substituem análise semântica exclusiva de cada estado visual e não validam transições ou jornadas.
+As 98 associações individuais permanecem registradas em 24 perfis. Perfis de rastreabilidade continuam sendo instrumentos documentais: não substituem análise semântica exclusiva de cada estado visual e não validam transições ou jornadas.
 
 ## 3. Perfis de rastreabilidade
 
@@ -60,7 +61,7 @@ As 98 associações individuais estão registradas em 24 perfis. Perfis de rastr
 | R21 | GKR-SURF-COM-004 | campanha ativa ou encerrada | retorno à gestão de campanha | reconciliar, revisar atribuição ou sair | atribuição e continuidade operacional | UXA-049 |
 | R22 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-054 |
 | R23 | GKR-SURF-COM-005 | GKR-TRN-305 | não examinada | depende do estado; desfazer, contestar ou continuar não validados | dez estados residuais da UXA-055 | pendente de validação específica |
-| R24 | GKR-SURF-COL-002 | acesso protegido do responsável | GKR-TRN-112 como saída documental para GKR-SURF-COL-003 | permanecer na visão geral ou retornar ao contexto anterior | destino operacional GKR-SURF-COL-003 ausente | pendente de validação funcional específica; UXA-086 é somente materialização |
+| R24 | GKR-SURF-COL-002 | acesso protegido com representação válida | GKR-TRN-112 como intenção de saída para GKR-SURF-COL-003 | permanecer, adiar quando legítimo, contestar prioridade ou retornar ao contexto anterior | destino operacional GKR-SURF-COL-003 ausente | UXA-087; transição permanece parcial |
 
 ## 4. Associação individual dos 98 SVGs
 
@@ -170,14 +171,15 @@ As 98 associações individuais estão registradas em 24 perfis. Perfis de rastr
 - SVGs registrados: **98**;
 - associações individuais: **98**;
 - perfis documentais: **24**;
-- com validação funcional registrada: **87**;
-- pendentes de validação específica: **11**;
-- arquivos visuais adicionados pela UXA-086: **1**.
+- com validação funcional registrada: **88**;
+- pendentes de validação específica: **10**;
+- arquivos visuais adicionados pela UXA-087: **0**;
+- arquivos visuais reformulados pela UXA-087: **1**.
 
-A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.4.0 e registra explicitamente que `R24` ainda depende de validação funcional.
+Os dez pendentes remanescentes pertencem exclusivamente à UXA-055. A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.5.0 e registra `R24` como validado no escopo da superfície, mantendo `GKR-TRN-112` parcial.
 
 ## 6. Próxima transição possível
 
-**UXA-087 — Validação Funcional da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+**UXA-088 — Materialização Controlada da Gestão de Solicitações do Responsável do Coletivo (`GKR-SURF-COL-003`)**, mediante autorização separada.
 
-A UXA-087 não é iniciada por esta matriz.
+A UXA-088 não é iniciada por esta matriz.

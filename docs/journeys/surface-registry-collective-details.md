@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-COLLECTIVE-001
 title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -14,6 +14,7 @@ related:
   - UXA-079
   - UXA-080
   - UXA-086
+  - UXA-087
 normative: false
 ---
 
@@ -23,14 +24,14 @@ normative: false
 
 Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens de entradas.
 
-A UXA-086 completa os campos documentais de `GKR-SURF-COL-002` com base na materialização criada, sem declarar validação funcional.
+A UXA-086 materializou `GKR-SURF-COL-002`. A UXA-087 reformula e valida funcionalmente essa referência, encerrando o gate específico da superfície sem validar `GKR-TRN-112` ponta a ponta e sem materializar `GKR-SURF-COL-003`.
 
 ## 2. Campos por identificador
 
 | ID | Artefato canônico e caminho | Versão | Entrada | Decisão principal | Saída | Dados e conteúdos | Gate | Reversibilidade | Supersessão | Continuidade | Lacuna | Observação de escopo |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | GKR-SURF-COL-001 | UXA-016 — `docs/experience-architecture/uxa-016-collective-home-low-fidelity-wireframe.md`; UXA-062 — `docs/experience-architecture/uxa-062-collective-public-profile-mobile-low-fidelity-wireframes.md` | indeterminado | criação ou acesso público | consultar presença pública ou acessar visão prevista | descoberta e participação | identidade, propósito, atividades e estados conforme perspectiva | público para consulta; autoridade para áreas protegidas | retornar ou encerrar consulta | nenhuma identificada | parcial | separação entre vista pública e operação | agrupa referências existentes; não substitui Visão Geral do Responsável |
-| GKR-SURF-COL-002 | UXA-086 — `docs/experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md` | 0.1.0 | acesso protegido com autoridade de representação | compreender o momento operacional e escolher responsabilidade ou área disponível dentro da autoridade | GKR-TRN-112 para solicitações; demais áreas de gestão permanecem destinos documentais previstos | identidade e propósito do Coletivo; papel e escopo; sínteses de solicitações e vínculos; comunicação e atividades; proteção; governança e relações no limite necessário | representação válida e escopo concedido; ações fora da autoridade não são presumidas | permanecer na visão geral, retornar ao contexto anterior ou escolher outra área autorizada; nenhuma decisão irreversível ocorre na síntese | nenhuma identificada | parcial; origem de GKR-TRN-112 materializada, destino ainda ausente | validação funcional de UXA-086 e GKR-SURF-COL-003 | materialização desktop de baixa fidelidade; não substitui fila de solicitações nem valida transição |
+| GKR-SURF-COL-002 | UXA-086 — `docs/experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md`; validação UXA-087 | materialização 0.1.0; validação 0.1.0 | acesso protegido com representação válida | compreender o momento operacional e escolher responsabilidade ou área disponível dentro da autoridade | GKR-TRN-112 para solicitações; demais áreas permanecem destinos especializados | identidade e propósito; estado de representação; escopo; sínteses de solicitações e vínculos; comunicação e atividades; proteção; governança e relações no limite necessário | representação válida e escopo concedido; ações fora da autoridade não são presumidas | permanecer, adiar quando legítimo, contestar prioridade, retornar ao contexto anterior ou escolher outra área autorizada | nenhuma identificada | parcial; origem de GKR-TRN-112 validada, destino ainda ausente | continuidade para GKR-SURF-COL-003 | referência desktop validada funcionalmente; não substitui a fila de solicitações nem valida a transição |
 | GKR-SURF-COL-003 | UXA-066 — `docs/experience-architecture/uxa-066-collective-pending-request-mobile-low-fidelity-wireframes.md` | indeterminado | solicitação recebida | decidir ou solicitar informação dentro da autoridade | pedir informação, aprovar, recusar ou expirar | dados autorizados da solicitação; estado; prazo; decisão | autoridade do responsável e finalidade limitada | adiar, pedir informação, recusar ou deixar expirar conforme contrato | nenhuma identificada | ausente na origem operacional | operação bilateral | somente efeitos percebidos pela Pessoa estão materializados; origem operacional completa continua ausente |
 | GKR-SURF-COL-004 | ausente; autoridade: UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | vínculo formado | indeterminado | gestão, saída ou contestação | indeterminado | papel e autoridade esperados; não materializados | indeterminado | nenhuma identificada | ausente | continuidade interna | entrada documental seletiva; não declara jornada completa |
 | GKR-SURF-COL-005 | ausente; autoridade: UXA-058 — `docs/experience-architecture/uxa-058-interactions-recommendations-connections-functional-contract.md`; UXA-059 — `docs/experience-architecture/uxa-059-collective-wireframe-program-and-prioritization.md` | indeterminado | vínculo e autoridade | indeterminado | atualizações aos participantes | indeterminado | papel, audiência e finalidade esperados; não materializados | indeterminado | nenhuma identificada | ausente | superfície e regras operacionais | entrada documental seletiva; não declara jornada completa |
@@ -42,8 +43,8 @@ A UXA-086 completa os campos documentais de `GKR-SURF-COL-002` com base na mater
 
 Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não examinado`. Nenhum campo poderá ser completado por inferência.
 
-A materialização de `GKR-SURF-COL-002` reduz a incerteza documental dessa entrada, mas não autoriza completar campos das demais superfícies por analogia.
+A validação de `GKR-SURF-COL-002` não autoriza completar campos das demais superfícies por analogia e não cria a operação de `GKR-SURF-COL-003`.
 
 ## 4. Estado
 
-O detalhamento está `active` 0.3.0. `GKR-SURF-COL-002` possui materialização registrada e validação funcional pendente. O status do instrumento não promove a superfície para estado validado e não fecha a jornada do Coletivo.
+O detalhamento está `active` 0.4.0. `GKR-SURF-COL-002` possui materialização em UXA-086 e validação funcional em UXA-087. Seu gate específico de superfície está encerrado; a continuidade para a gestão completa de solicitações permanece aberta e a jornada do Coletivo continua incompleta.

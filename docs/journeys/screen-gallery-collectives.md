@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -13,6 +13,7 @@ related:
   - UXA-084
   - UXA-085
   - UXA-086
+  - UXA-087
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -37,7 +38,7 @@ explorar e buscar
 → Início do Participante
 ```
 
-A galeria cobre visualmente a sequência até a Visão Geral do Responsável. A nova referência da UXA-086 ainda não possui validação funcional específica. As superfícies posteriores permanecem ausentes ou parciais.
+A galeria cobre visualmente a sequência até a Visão Geral do Responsável. Essa referência foi reformulada e validada funcionalmente pela UXA-087. As superfícies posteriores permanecem ausentes ou parciais.
 
 ## 2. Descoberta e busca
 
@@ -153,13 +154,15 @@ A galeria cobre visualmente a sequência até a Visão Geral do Responsável. A 
 
 ## 7. Visão Geral do Responsável
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-COL-002` · origem: `UXA-086` · validação: **pendente de pacote específico**
+**Cobertura:** 1 SVG · ID: `GKR-SURF-COL-002` · origem: `UXA-086` · reformulação e validação: **UXA-087**
 
 ### `uxa-086-collective-responsible-overview-desktop.svg`
 
 ![](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg){ width="720" loading="lazy" }
 
-A referência materializa a superfície inicial de gestão e o ponto de entrada documental para solicitações. Ela não materializa a fila completa de `GKR-SURF-COL-003` e não valida `GKR-TRN-112`.
+A UXA-087 aprovou a referência após reformulação controlada, tornando explícitos estado e escopo de autoridade, prazo verificável, alternativa legítima e retorno ao contexto anterior.
+
+A validação é restrita a `GKR-SURF-COL-002`: a fila completa de `GKR-SURF-COL-003` continua ausente e `GKR-TRN-112` permanece parcial.
 
 ## 8. Dependências sem SVG dedicado
 
@@ -170,6 +173,6 @@ GKR-SURF-COL-003 — gestão completa de solicitações
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-`GKR-SURF-COL-002` deixa de estar visualmente ausente, mas permanece com validação funcional pendente. As demais ausências não são iniciadas pela UXA-086.
+`GKR-SURF-COL-002` deixa de possuir pendência de validação funcional específica. As demais ausências não são iniciadas pela UXA-087.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)
