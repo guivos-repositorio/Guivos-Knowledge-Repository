@@ -2,12 +2,14 @@
 id: GKR-JOURNEY-HANDOFFS-001
 title: Handoffs entre Participantes
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
   - UXA-019
   - UXA-056
+  - UXA-058
+  - UXA-059
   - UXA-066
   - UXA-067
   - UXA-070
@@ -23,6 +25,7 @@ related:
   - UXA-090
   - UXA-091
   - UXA-092
+  - UXA-093
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 normative: false
 ---
@@ -45,7 +48,7 @@ Nenhum handoff é considerado validado apenas porque as superfícies de origem e
 | GKR-TRN-107 | PER-105 validada | envia informação adicional | COL-003 validada | UXA-056 | UXA-067; UXA-089; UXA-090 | editar antes do envio, desistir; processo encerrado não reabre | **integralmente validada** |
 | GKR-TRN-109 | COL-003 validada | recusa solicitação | PER-105 validada | UXA-014; UXA-056 | UXA-067; UXA-089; UXA-090 | fundamento proporcional; nova exploração posterior | **integralmente validada** |
 | GKR-TRN-108 | COL-003 validada | aprova e forma vínculo; resultado é mostrado em PER-105 | PER-106 validada | UXA-014; UXA-056 | UXA-089; UXA-092 | Pessoa pode optar por `Agora não`; vínculo já está formado; preferências preservadas | **integralmente validada** |
-| GKR-TRN-110 | PER-106 validada | acessar atualizações do vínculo | PER-107 ausente | UXA-056; UXA-059 | origem validada em UXA-092 | permanecer/retornar a Meus Coletivos | **parcial**; destino ausente |
+| GKR-TRN-110 | PER-106 validada | acessar atualizações relacionadas aos vínculos | PER-107 materializada | UXA-056; UXA-058; UXA-059 | origem validada em UXA-092; destino materializado em UXA-093 | permanecer/retornar a Meus Coletivos; leitura não conclui ação substantiva | **parcial**; validar gatilho, contexto, retorno, concorrência e leitura versus ação |
 | GKR-TRN-206 | Organização — contratada | propõe relação ou apoio | Coletivo — contratado | UXA-019 | nenhuma superfície bilateral específica | retirada, negociação, recusa e ajuste | materialização bilateral ausente |
 | GKR-TRN-207; 208; 209 | Coletivo e Organização — contratados | avaliam, aprovam e revisam relação | autoridades bilaterais | UXA-019 | nenhuma superfície bilateral específica | revisão, pausa e encerramento | operação bilateral ausente |
 | GKR-TRN-202; 203 | Organização | publica oportunidade | Pessoa | UXA-004 | publicação e consulta em pacotes distintos | edição/retirada; retorno da Pessoa | integração ponta a ponta não examinada |
@@ -64,7 +67,9 @@ COL-003 — aprovação confirmada
 → PER-106 — mesmo vínculo confirmado visível quando a navegação ocorre
 ```
 
-A navegação é opcional e não funciona como gate da aprovação. `TRN-108` está integralmente validada no escopo documental; a continuidade seguinte, `TRN-110`, permanece parcial por ausência de `PER-107`.
+A navegação é opcional e não funciona como gate da aprovação. `TRN-108` está integralmente validada no escopo documental.
+
+A UXA-093 materializa a continuidade seguinte em `PER-107`, mas **não valida `TRN-110` por inferência**. A ligação ainda precisa demonstrar gatilho, preservação de contexto, retorno, concorrência, idempotência e separação entre leitura e ação substantiva.
 
 ## 4. Registro granular
 
@@ -72,9 +77,10 @@ O detalhamento individual continua no [Registro Granular de Transições](transi
 
 ## 5. Regras de proteção
 
-- origem materializada não presume destino validado;
+- origem e destino materializados não presumem handoff validado;
 - resultado visível não comprova continuidade validada sem gate próprio;
 - navegação posterior não deve ser confundida com efeito já confirmado;
+- estado `lido` não equivale a consentimento, concordância ou ação concluída;
 - contrato bilateral não equivale a interface bilateral;
 - nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa;
 - um ID estabiliza a referência documental, mas não implementa a transição;
@@ -85,4 +91,4 @@ O detalhamento individual continua no [Registro Granular de Transições](transi
 
 A matriz permanece `active` como síntese governada. Seis handoffs do fluxo de solicitação estão integralmente validados por UXA-090/092: `TRN-105`, `106`, `107`, `108`, `109` e `112`.
 
-`TRN-110` permanece parcial enquanto `PER-107 — Central de Atualizações` estiver ausente. A UXA-093 não é iniciada por esta sincronização.
+`TRN-110` permanece parcial com `PER-106` validada e `PER-107` materializada. A próxima frente possível é UXA-094, mediante autorização separada.
