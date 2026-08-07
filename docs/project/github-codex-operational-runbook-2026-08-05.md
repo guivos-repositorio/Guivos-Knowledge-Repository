@@ -2,9 +2,9 @@
 id: GKR-RUNBOOK-GH-CODEX-001
 title: Runbook Operacional de GitHub CLI, Codex e Workspace
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Repository Operations
-last_updated: 2026-08-05
+last_updated: 2026-08-06
 depends_on:
   - GKR-AUD-ACCUMULATED-003
 related:
@@ -251,7 +251,125 @@ Tratamento:
 
 Exemplos devem utilizar placeholders inequívocos e nunca valores reutilizáveis.
 
-## 12. Resultado do P0
+## 12. Recuperação controlada de workflows não iniciados
+
+Este procedimento aplica-se quando um evento válido de `push` ou integração foi registrado, mas os workflows esperados não foram iniciados, inclusive após uma indisponibilidade do GitHub Actions ou Pages.
+
+A recuperação é operacional. Ela não altera o estado documental, não cria autoridade arquitetural e não autoriza o início de uma frente posterior.
+
+### 12.1 Pré-condições
+
+Antes de qualquer disparo manual:
+
+1. confirmar no status oficial do GitHub que Actions e Pages estão operacionais;
+2. identificar o SHA atual da `main` e registrá-lo como alvo da recuperação;
+3. confirmar que a `main` não avançou para outro commit sem revisão do escopo;
+4. verificar se já existem execuções em fila, em andamento ou concluídas para o SHA alvo;
+5. confirmar que não há PR aberto ou implantação concorrente capaz de produzir evidência ambígua;
+6. confirmar que os workflows permanecem ativos e que o disparo manual está habilitado;
+7. interromper o procedimento se qualquer precondição não puder ser comprovada.
+
+Comandos auxiliares:
+
+```bash
+gh api repos/guivos-repositorio/Guivos-Knowledge-Repository/git/ref/heads/main
+gh run list --branch main --limit 20
+```
+
+### 12.2 Ordem obrigatória de recuperação
+
+Executar um workflow por vez, sempre sobre a branch `main` e somente depois de validar o resultado da etapa anterior.
+
+#### Etapa 1 — validação semântica
+
+Workflow: `GKR Semantic State Validation`.
+
+Objetivo: confirmar que o estado semântico do GKR permanece sincronizado antes da geração ou publicação de artefatos.
+
+#### Etapa 2 — publicação documental
+
+Workflow: `Publish GKR Documentation`.
+
+Objetivo: confirmar:
+
+- `mkdocs build --strict` aprovado;
+- PDF gerado e carregado como artefato;
+- site gerado e carregado como artefato;
+- ausência de job concorrente de deploy nesse workflow.
+
+#### Etapa 3 — deploy canônico
+
+Workflow: `Deploy GKR to GitHub Pages`.
+
+Objetivo: executar uma única publicação canônica por `mkdocs gh-deploy`, confirmar a atualização da branch `gh-pages` e verificar que não ocorreu colisão com outro mecanismo de deploy.
+
+Não iniciar a etapa seguinte enquanto a anterior estiver em fila, em andamento, cancelada ou com falha.
+
+### 12.3 Execução pela interface do GitHub
+
+Para cada workflow habilitado:
+
+1. abrir a aba **Actions** do repositório;
+2. selecionar o workflow pelo nome exato;
+3. selecionar **Run workflow**;
+4. escolher a branch `main`;
+5. confirmar o disparo;
+6. registrar o número e o identificador da execução;
+7. acompanhar até a conclusão antes de prosseguir.
+
+### 12.4 Execução pelo GitHub CLI
+
+Em workspace autenticado:
+
+```bash
+gh workflow run semantic-state.yml --ref main
+gh workflow run publish-docs.yml --ref main
+gh workflow run deploy-pages.yml --ref main
+```
+
+Os comandos representam a ordem de recuperação, mas não devem ser executados em sequência automática. Entre eles, consultar e validar a execução correspondente:
+
+```bash
+gh run list --branch main --limit 20
+gh run view <RUN_ID>
+```
+
+### 12.5 Evidências obrigatórias
+
+O checkpoint de recuperação deverá registrar:
+
+- SHA alvo da `main`;
+- nome, número e identificador de cada workflow run;
+- evento `workflow_dispatch`;
+- horário de início e conclusão;
+- conclusão de cada job;
+- artefatos gerados pela publicação documental;
+- commit resultante na branch `gh-pages`, quando houver deploy;
+- confirmação de que houve apenas um mecanismo de publicação;
+- falhas, avisos ou limitações observadas.
+
+As evidências deverão ser registradas no PR ou no checkpoint de governança relacionado. Uma execução sobre SHA diferente não comprova a recuperação do SHA alvo.
+
+### 12.6 Critérios de parada e proibições
+
+Interromper a recuperação quando:
+
+- o SHA da `main` mudar durante o procedimento;
+- surgir execução concorrente;
+- qualquer workflow falhar;
+- os artefatos esperados não forem produzidos;
+- o deploy tentar utilizar mecanismo diferente do canônico;
+- a evidência não puder ser vinculada inequivocamente ao alvo.
+
+É proibido:
+
+- criar commit vazio, artificial ou sem mudança substantiva apenas para disparar CI;
+- executar publicação ou deploy antes da validação semântica;
+- repetir workflows bem-sucedidos sem causa registrada;
+- ampliar o escopo para UXA-085, Engenharia de Produto, P2–P9 ou outra frente não autorizada;
+- interpretar o disparo operacional como promoção de estado ou autorização de merge.
+
+## 13. Resultado do P0
 
 A pendência operacional sobre `gh`, autenticação, Codex e workspace está encerrada no nível de runbook.
 
