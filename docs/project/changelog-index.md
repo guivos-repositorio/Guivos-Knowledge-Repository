@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.11.0
+version: 1.12.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -18,6 +18,7 @@ related:
   - GKR-CHANGELOG-UXA-092-001
   - GKR-CHANGELOG-UXA-093-001
   - GKR-CHANGELOG-UXA-094-001
+  - GKR-CHANGELOG-UXA-095-001
 normative: false
 ---
 
@@ -27,9 +28,9 @@ normative: false
 
 Este índice organiza os registros recentes sem reescrever o ledger histórico preservado no `CHANGELOG.md` da raiz. Changelogs não substituem `GKR-STATE-001`.
 
-## 2. Baseline proposta pela UXA-094
+## 2. Baseline proposta pela UXA-095
 
-- [Registro do Estado Atual — 2.20.0 e M7.81](current-state-register.md)
+- [Registro do Estado Atual — 2.21.0 e M7.82](current-state-register.md)
 - [UXA-085 — Promoção Controlada da Galeria](changelog-uxa-085-2026-08-07.md)
 - [UXA-086 — Materialização da Visão Geral do Responsável](changelog-uxa-086-2026-08-07.md)
 - [UXA-087 — Validação Funcional da Visão Geral do Responsável](changelog-uxa-087-2026-08-07.md)
@@ -40,8 +41,9 @@ Este índice organiza os registros recentes sem reescrever o ledger histórico p
 - [UXA-092 — Validação de Meus Coletivos e Continuidade Pós-Aprovação](changelog-uxa-092-2026-08-07.md)
 - [UXA-093 — Materialização da Central de Atualizações](changelog-uxa-093-2026-08-07.md)
 - [UXA-094 — Validação da Central de Atualizações e TRN-110](changelog-uxa-094-2026-08-07.md)
+- [UXA-095 — Materialização do Início do Participante e TRN-111](changelog-uxa-095-2026-08-07.md)
 
-A baseline 2.20.0/M7.81 somente se torna vigente na `main` após integração governada da UXA-094.
+A baseline 2.21.0/M7.82 somente se torna vigente na `main` após integração governada da UXA-095.
 
 ## 3. Regra de continuidade
 
@@ -52,8 +54,8 @@ Novos registros devem identificar pacote e baseline, preservar `GKR-STATE-001`, 
 | Elemento | Estado proposto |
 |---|---|
 | ledger raiz | preservado como histórico legado |
-| índice atual | ativo 1.11.0 |
-| estado transversal | `GKR-STATE-001` 2.20.0 após eventual integração |
-| marco | M7.81 |
-| última UXA proposta | UXA-094 |
-| próxima UXA | UXA-095, não iniciada |
+| índice atual | ativo 1.12.0 |
+| estado transversal | `GKR-STATE-001` 2.21.0 após eventual integração |
+| marco | M7.82 |
+| última UXA proposta | UXA-095 |
+| próxima UXA | UXA-096, não iniciada |
