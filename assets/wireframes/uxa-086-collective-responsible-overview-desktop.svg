@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Visão Geral do Responsável do Coletivo</title>
+  <desc id="desc">Wireframe estrutural de baixa fidelidade para computador com contexto de autoridade, momento operacional, atenção principal, solicitações e vínculos, comunicação, proteção, governança e navegação de gestão.</desc>
+  <rect width="1440" height="1024" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="24" y="24" width="1392" height="72" rx="8"/>
+    <rect x="24" y="112" width="248" height="888" rx="8"/>
+    <rect x="288" y="112" width="1128" height="136" rx="8"/>
+    <rect x="288" y="264" width="1128" height="150" rx="8"/>
+    <rect x="288" y="430" width="548" height="220" rx="8"/>
+    <rect x="852" y="430" width="564" height="220" rx="8"/>
+    <rect x="288" y="666" width="548" height="154" rx="8"/>
+    <rect x="852" y="666" width="564" height="154" rx="8"/>
+    <rect x="288" y="836" width="1128" height="164" rx="8"/>
+    <rect x="1164" y="48" width="220" height="32" rx="6"/>
+    <rect x="316" y="354" width="188" height="36" rx="6"/>
+    <rect x="316" y="586" width="186" height="36" rx="6"/>
+    <rect x="880" y="586" width="184" height="36" rx="6"/>
+    <rect x="316" y="766" width="168" height="32" rx="6"/>
+    <rect x="880" y="766" width="166" height="32" rx="6"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="48" y="58" font-size="22" font-weight="700">Coletivo Horizonte Aberto</text>
+    <text x="48" y="82" font-size="14">Propósito: ampliar acesso comunitário a experiências de aprendizagem</text>
+    <text x="962" y="58" font-size="14">Você atua como Responsável do Coletivo</text>
+    <text x="1187" y="69" font-size="13">Ver autoridade e permissões</text>
+
+    <text x="48" y="146" font-size="15" font-weight="700">GESTÃO DO COLETIVO</text>
+    <text x="48" y="186" font-size="14">Visão Geral</text>
+    <text x="48" y="222" font-size="14">Solicitações e participantes</text>
+    <text x="48" y="258" font-size="14">Comunicação</text>
+    <text x="48" y="294" font-size="14">Perguntas e respostas</text>
+    <text x="48" y="330" font-size="14">Atividades</text>
+    <text x="48" y="366" font-size="14">Decisões e governança</text>
+    <text x="48" y="402" font-size="14">Perfil público e descoberta</text>
+    <text x="48" y="438" font-size="14">Avaliações e reputação</text>
+    <text x="48" y="474" font-size="14">Moderação e proteção</text>
+    <text x="48" y="510" font-size="14">Pessoas, papéis e autoridades</text>
+    <text x="48" y="546" font-size="14">Relações e recursos</text>
+    <text x="48" y="582" font-size="14">Configurações</text>
+    <text x="48" y="946" font-size="12">A visibilidade depende do papel e da autoridade.</text>
+
+    <text x="316" y="148" font-size="18" font-weight="700">Como está o Coletivo agora</text>
+    <text x="316" y="177" font-size="14">Há solicitações aguardando análise, uma atividade confirmada para esta semana e</text>
+    <text x="316" y="199" font-size="14">uma condição de acessibilidade ainda sem confirmação. Não há decisão urgente de governança.</text>
+    <text x="316" y="225" font-size="12">Fontes: informações do Coletivo, estados operacionais e registros autorizados.</text>
+
+    <text x="316" y="298" font-size="18" font-weight="700">O que precisa de cuidado agora</text>
+    <text x="316" y="326" font-size="15" font-weight="700">Revisar solicitações pendentes dentro do prazo informado.</text>
+    <text x="316" y="348" font-size="13">A análise afeta somente pessoas que solicitaram participação e deve usar apenas os dados necessários.</text>
+    <text x="337" y="378" font-size="13">Revisar solicitações</text>
+    <text x="532" y="378" font-size="13">Contestar prioridade</text>
+
+    <text x="316" y="466" font-size="18" font-weight="700">Solicitações e vínculos</text>
+    <text x="316" y="500" font-size="13">Solicitações pendentes</text>
+    <text x="714" y="500" font-size="16" font-weight="700">8</text>
+    <text x="316" y="530" font-size="13">Aguardando informação da pessoa</text>
+    <text x="714" y="530" font-size="16" font-weight="700">2</text>
+    <text x="316" y="560" font-size="13">Participantes confirmados</text>
+    <text x="714" y="560" font-size="16" font-weight="700">64</text>
+    <text x="337" y="610" font-size="13">Abrir solicitações</text>
+
+    <text x="880" y="466" font-size="18" font-weight="700">Comunicação e atividades</text>
+    <text x="880" y="500" font-size="13">Comunicado atualizado ontem · regras de acesso ao encontro</text>
+    <text x="880" y="530" font-size="13">Próxima atividade · sábado, 09:00 · modalidade híbrida</text>
+    <text x="880" y="560" font-size="13">1 pergunta aguarda resposta oficial</text>
+    <text x="901" y="610" font-size="13">Abrir comunicação</text>
+
+    <text x="316" y="702" font-size="18" font-weight="700">Proteção e moderação</text>
+    <text x="316" y="734" font-size="13">1 evento protegido aguarda triagem por autoridade habilitada.</text>
+    <text x="316" y="756" font-size="12">Detalhes sensíveis não são exibidos nesta visão.</text>
+    <text x="337" y="787" font-size="13">Abrir proteção</text>
+
+    <text x="880" y="702" font-size="18" font-weight="700">Governança e relações</text>
+    <text x="880" y="734" font-size="13">Nenhuma decisão urgente. Organização apoiadora: Instituto Horizonte.</text>
+    <text x="880" y="756" font-size="12">Apoio não transfere autoridade sobre o Coletivo.</text>
+    <text x="901" y="787" font-size="13">Ver governança</text>
+
+    <text x="316" y="872" font-size="18" font-weight="700">Responsabilidades atuais</text>
+    <text x="316" y="904" font-size="13">• revisar solicitações dentro da autoridade concedida</text>
+    <text x="316" y="930" font-size="13">• confirmar acessibilidade da próxima atividade</text>
+    <text x="316" y="956" font-size="13">• acompanhar evento protegido sem expor dados além do necessário</text>
+    <text x="880" y="904" font-size="13">Sem ranking de participação.</text>
+    <text x="880" y="930" font-size="13">Sem indicador de “engajamento” como prova de avanço.</text>
+    <text x="880" y="956" font-size="13">Sem acesso automático à jornada pessoal dos participantes.</text>
+  </g>
+</svg>
