@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.84.0
+version: 0.85.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -46,12 +46,13 @@ related:
   - UXA-089
   - UXA-090
   - UXA-091
+  - UXA-092
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - M7.78
+  - M7.79
 normative: false
 ---
 
@@ -87,12 +88,12 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | SVGs existentes | 106 |
 | associações individuais | 106 |
 | perfis de rastreabilidade | 26 |
-| com validação funcional vigente | 94 |
-| pendentes de validação específica | 12 |
+| com validação funcional vigente | 96 |
+| pendentes de validação específica | 10 |
 | IDs com referência visual | 28 de 40 |
 | responsabilidades sem SVG dedicado | 11 |
 
-Os 12 pendentes são dez estados residuais da UXA-055, o estado aprovado corrente de `PER-105` reformulado pela UXA-091 e `PER-106`.
+Os dez pendentes remanescentes correspondem exclusivamente aos estados residuais da UXA-055.
 
 ## 4. Decisões estruturais preservadas
 
@@ -111,7 +112,9 @@ Os 12 pendentes são dez estados residuais da UXA-055, o estado aprovado corrent
 - autoridade é concedida e verificada, não criada por confirmação;
 - estado obsoleto não pode sobrescrever estado canônico mais recente;
 - repetição de interação ou entrega não pode duplicar efeito lógico;
-- `Meus Coletivos` não é ranking, score, sequência obrigatória ou feed unificado;
+- `Meus Coletivos` separa participação, acompanhamento, solicitação, convite e pausa;
+- `Meus Coletivos` não é ranking, score, sequência obrigatória, feed unificado ou Central de Atualizações;
+- aprovação forma vínculo antes da navegação posterior;
 - aprovação não cria função, autoridade, notificação ou presença obrigatória;
 - uma versão visual reformulada exige revalidação;
 - materialização não equivale a validação funcional;
@@ -131,50 +134,50 @@ UXA-088 — Gestão de Solicitações do Responsável materializada em sete esta
 UXA-089 — Gestão de Solicitações reformulada e validada funcionalmente
 UXA-090 — cinco handoffs elegíveis de solicitação validados ponta a ponta
 UXA-091 — Meus Coletivos materializada e continuidade pós-aprovação refinada
+UXA-092 — Meus Coletivos e resultado aprovado reformulados/revalidados; TRN-108 validada integralmente
 ```
 
-## 6. Resultado da UXA-091
+## 6. Resultado da UXA-092
 
-[UXA-091 — Materialização Controlada de Meus Coletivos e Refinamento da Continuidade Pós-Aprovação](uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md) materializa `GKR-SURF-PER-106` e modifica exclusivamente a continuidade do estado aprovado de `PER-105`.
+[UXA-092 — Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação](uxa-092-my-collectives-functional-validation-and-post-approval-continuity-revalidation.md) valida `GKR-SURF-PER-106`, revalida o estado aprovado corrente de `PER-105` e fecha `GKR-TRN-108` como continuidade integral após reformulação controlada dos mesmos dois SVGs existentes.
 
-A UXA-091 consolida:
+A UXA-092 consolida:
 
-1. `Meus Coletivos` como superfície central de vínculos da Pessoa;
-2. organização separada de Participando, Acompanhando, Solicitações, Convites e Pausadas;
-3. ausência de ranking, pontuação, comparação ou sequência obrigatória;
-4. vínculo aprovado preservando função, notificações e presença;
-5. passagem explícita `resultado aprovado → Ver em Meus Coletivos → PER-106`;
-6. `TRN-108` parcial aguardando revalidação;
-7. `TRN-110` parcial por `PER-107` ausente.
-
-A UXA-091 não valida funcionalmente a nova superfície nem a continuidade reformulada.
+1. aprovação registrada antes de qualquer navegação posterior;
+2. `Ver em Meus Coletivos` como ação opcional, com `Agora não` sem cancelar vínculo;
+3. `Meus Coletivos` como central de participações e estados relacionados, não como lista indiscriminada de vínculos;
+4. separação entre participação, acompanhamento, solicitação, convite e pausa;
+5. ausência de ranking, pontuação, comparação, sequência obrigatória ou contagem própria de não lidos;
+6. não antecipação de `PER-107 — Central de Atualizações`;
+7. `TRN-108` integralmente validada e `TRN-110` ainda parcial.
 
 ## 7. Instrumentos vigentes propostos
 
 | Artefato | Estado |
 |---|---|
-| visão geral das Jornadas Integradas | `active` 0.19.0 |
-| Jornada da Pessoa | `draft` 0.4.0 |
-| Jornada do Coletivo | `draft` 0.9.0 |
+| visão geral das Jornadas Integradas | `active` 0.20.0 |
+| Jornada da Pessoa | `draft` 0.5.0 |
+| Jornada do Coletivo | `draft` 0.10.0 |
 | Jornada da Organização | `draft` |
-| catálogo integrado | `active` 0.15.0 |
-| galeria visual | `active` 0.10.0 |
-| página de Coletivos | `active` 0.8.0 |
+| catálogo integrado | `active` 0.16.0 |
+| galeria visual | `active` 0.11.0 |
+| página de Coletivos | `active` 0.9.0 |
 | demais páginas visuais | `active` 0.3.0 |
-| matriz por SVG | `active` 0.8.0 |
-| lacunas | `active` 0.16.0 |
-| registro de superfícies | `active` 0.8.0 |
-| registro de transições | `active` 0.8.0 |
-| detalhamento da Pessoa | `active` 0.3.0 |
+| matriz por SVG | `active` 0.9.0 |
+| lacunas | `active` 0.17.0 |
+| registro de superfícies | `active` 0.9.0 |
+| registro de transições | `active` 0.9.0 |
+| detalhamento da Pessoa | `active` 0.4.0 |
 | detalhamento do Coletivo | `active` 0.6.0 |
 
 ## 8. Ressalvas vigentes
 
 - 11 responsabilidades permanecem sem SVG dedicado;
-- 12 SVGs permanecem sem validação específica vigente;
-- `GKR-TRN-108` e `GKR-TRN-110` permanecem parciais;
+- dez SVGs permanecem sem validação específica vigente, todos UXA-055;
+- `GKR-TRN-110` permanece parcial;
 - `GKR-SURF-PER-107` continua ausente;
 - `GKR-SURF-PER-108` continua com reformulação pendente;
+- estados P0B adicionais de `Meus Coletivos` permanecem separados;
 - Jornadas da Pessoa e do Coletivo continuam `draft`;
 - continuidades entre outros pacotes permanecem parciais ou não examinadas.
 
@@ -185,9 +188,9 @@ GKR-SURF-COL-002 — validada
 → GKR-TRN-112 — integralmente validada
 → GKR-SURF-COL-003 — validada
 ↔ GKR-TRN-105/106/107/109 — integralmente validadas com PER-105
-→ PER-105 aprovado — reformulado; revalidação pendente
-→ GKR-TRN-108 — parcial
-→ GKR-SURF-PER-106 — materializado; validação pendente
+→ PER-105 aprovado — reformulado e revalidado
+→ GKR-TRN-108 — integralmente validada
+→ GKR-SURF-PER-106 — validado
 → GKR-TRN-110 — parcial
 → GKR-SURF-PER-107 — ausente
 → GKR-SURF-PER-108 — reformulação pendente
@@ -195,8 +198,8 @@ GKR-SURF-COL-002 — validada
 
 ## 10. Dívidas de validação e materialização
 
-- validação de `PER-106` e revalidação da continuidade pós-aprovação;
 - `PER-107` e `PER-108` em frentes posteriores;
+- estados P0B adicionais de `PER-106`;
 - compreensão inicial → Tela Hoje;
 - publicação → mapa, lista e detalhe;
 - dez estados residuais da UXA-055;
@@ -205,10 +208,10 @@ GKR-SURF-COL-002 — validada
 
 ## 11. Limites
 
-A UXA-091 não cria protótipo, implementação, teste com pessoas, componente técnico ou Engenharia de Produto. Também não materializa `PER-107`, `PER-108` ou `COL-004` a `COL-008`.
+A UXA-092 não cria novo SVG, protótipo, implementação, teste com pessoas, componente técnico ou Engenharia de Produto. Também não materializa `PER-107`, `PER-108` ou `COL-004` a `COL-008`.
 
 ## 12. Próxima evolução possível
 
-**UXA-092 — Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação**, mediante autorização separada.
+**UXA-093 — Materialização Controlada da Central de Atualizações (`GKR-SURF-PER-107`)**, mediante autorização separada.
 
-A UXA-092 não foi iniciada.
+A UXA-093 não foi iniciada.
