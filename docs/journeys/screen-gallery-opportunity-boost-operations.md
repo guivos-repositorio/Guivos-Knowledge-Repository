@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-OPERATIONS-001
 title: Opportunity Boost — Operação, Relatórios e Resíduos
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -12,6 +12,7 @@ related:
   - UXA-083
   - UXA-084
   - UXA-085
+  - UXA-099
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -107,9 +108,9 @@ campanha configurada
 
 ![](../assets/wireframes/uxa-048-aggregated-report-reconciliation-mobile.svg){ width="320" loading="lazy" }
 
-## 5. Estados residuais pendentes
+## 5. Estados residuais validados
 
-**Cobertura:** 10 SVGs · ID: `GKR-SURF-COM-005` · origem: `UXA-055` · validação: **ausente**
+**Cobertura:** 10 SVGs · ID: `GKR-SURF-COM-005` · origem: `UXA-055` · validação: **UXA-099**
 
 ### `uxa-055-sponsored-technical-error-mobile.svg`
 
@@ -151,10 +152,20 @@ campanha configurada
 
 ![](../assets/wireframes/uxa-055-advertiser-update-failure-mobile.svg){ width="320" loading="lazy" }
 
-## 6. Limite
+## 6. Resultado da UXA-099
 
-Os dez estados da UXA-055 permanecem materializados, porém sem validação funcional específica. A promoção documental da galeria não altera esse estado.
+- oito estados foram aprovados sem alteração visual;
+- falha de atualização material foi reformulada para preservar a versão confirmada sem manter entrega futura ativa por inércia;
+- revisão/reversão de preferências foi reformulada para explicitar data, superfície e escopo;
+- repetição da mesma intenção é funcionalmente idempotente;
+- erro técnico, zero inventário e baixa oferta permanecem estados distintos;
+- denúncia, contestação e preferência permanecem fluxos distintos;
+- a identidade da pessoa não é revelada ao anunciante.
 
-O status `active` registra somente a promoção do instrumento de inspeção pela UXA-085; não valida os dez estados residuais nem suas transições.
+## 7. Limite
+
+Os dez estados possuem validação funcional específica pela UXA-099. Essa validação não promove automaticamente `TRN-305`, `TRN-304` ou `TRN-306`, não cria política jurídica final e não inicia implementação.
+
+O status `active` registra o instrumento de inspeção; não promove jornadas nem Engenharia de Produto.
 
 [← Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md)
