@@ -9271,38 +9271,34 @@
 <tbody>
 <tr>
 <td>nós materializados</td>
-<td>explorar, busca, Perfil Público, revisão, PER-105, COL-003, PER-106, PER-107 e <strong>PER-108</strong></td>
+<td>explorar, busca, Perfil Público, revisão, PER-105, COL-003, PER-106, PER-107 e PER-108</td>
 </tr>
 <tr>
 <td>nós com validação vigente</td>
-<td>até PER-106; contrato anterior de PER-107 validado, mas SVG corrente reformulado aguarda revalidação</td>
+<td>todos os nós do trecho acima nos gates correspondentes; PER-107/PER-108 por UXA-096</td>
 </tr>
 <tr>
 <td>handoffs integralmente validados</td>
-<td>TRN-105, 106, 107, 108, 109, 110 e 112</td>
-</tr>
-<tr>
-<td>handoff novo</td>
-<td><strong>TRN-111 parcial</strong></td>
+<td>TRN-105, 106, 107, 108, 109, 110, 111 e 112</td>
 </tr>
 <tr>
 <td>interrupção por lacuna</td>
-<td>validação de PER-107 corrente, PER-108 e TRN-111</td>
+<td>áreas internas especializadas e demais continuidades, não TRN-111</td>
 </tr>
 <tr>
 <td>conclusão permitida</td>
-<td>a continuidade está materializada até o Início do Participante</td>
+<td>o trecho governado está validado até o Início do Participante</td>
 </tr>
 <tr>
 <td>conclusão proibida</td>
-<td>declarar a jornada interna completa validada ou implementada</td>
+<td>declarar toda a jornada interna completa validada ou implementada</td>
 </tr>
 </tbody>
 </table>
 <h3 id="23-pessoa-recebe-aprovacao-e-encontra-o-vinculo-em-meus-coletivos">2.3 Pessoa recebe aprovação e encontra o vínculo em Meus Coletivos<a class="headerlink" href="#23-pessoa-recebe-aprovacao-e-encontra-o-vinculo-em-meus-coletivos" title="Permanent link">&para;</a></h3>
 <p>A sequência aprovação → resultado em PER-105 → vínculo formado → navegação opcional → PER-106 permanece integralmente validada por <code>TRN-108</code>.</p>
 <h3 id="24-pessoa-abre-a-central-de-atualizacoes">2.4 Pessoa abre a Central de Atualizações<a class="headerlink" href="#24-pessoa-abre-a-central-de-atualizacoes" title="Permanent link">&para;</a></h3>
-<p><code>PER-106 → Ver atualizações → PER-107</code> permanece integralmente validada em <code>TRN-110</code>. A UXA-095 não modifica esse contrato.</p>
+<p><code>PER-106 → Ver atualizações → PER-107</code> permanece integralmente validada em <code>TRN-110</code>. A Central corrente foi revalidada pela UXA-096 sem alterar esse contrato.</p>
 <h3 id="25-pessoa-abre-o-inicio-do-participante">2.5 Pessoa abre o Início do Participante<a class="headerlink" href="#25-pessoa-abre-o-inicio-do-participante" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -9318,7 +9314,7 @@
 </tr>
 <tr>
 <td>origem</td>
-<td><code>PER-107</code> corrente, reformulada por UXA-095</td>
+<td><code>PER-107</code> corrente, revalidada por UXA-096</td>
 </tr>
 <tr>
 <td>gatilho</td>
@@ -9326,14 +9322,18 @@
 </tr>
 <tr>
 <td>destino</td>
-<td><code>PER-108 — Início do Participante</code>, materializado por UXA-095</td>
+<td><code>PER-108 — Início do Participante</code>, validado por UXA-096</td>
 </tr>
 <tr>
 <td>transição</td>
-<td><code>TRN-111</code> <strong>parcial</strong></td>
+<td><code>TRN-111</code> <strong>integralmente validada</strong></td>
 </tr>
 <tr>
 <td>entrada</td>
+<td>vínculo atual e permissão são revalidados; histórico não concede acesso</td>
+</tr>
+<tr>
+<td>efeito</td>
 <td>não altera leitura, vínculo, papel, disponibilidade, presença ou autoridade</td>
 </tr>
 <tr>
@@ -9345,12 +9345,16 @@
 <td>Início sintetiza; Central e canais especializados permanecem superfícies próprias</td>
 </tr>
 <tr>
-<td>retorno/concorrência</td>
-<td>ainda não validados como conjunto</td>
+<td>concorrência</td>
+<td>estado canônico mais recente prevalece; permissão antiga não é preservada</td>
 </tr>
 <tr>
-<td>próximo gate</td>
-<td>UXA-096</td>
+<td>retorno</td>
+<td>neutro; não marca novos itens como lidos nem desfaz leitura explícita anterior</td>
+</tr>
+<tr>
+<td>idempotência</td>
+<td>abrir, voltar, recarregar ou repetir não duplica efeito lógico</td>
 </tr>
 </tbody>
 </table>
@@ -9365,8 +9369,8 @@
 <h2 id="3-criterio-de-completude">3. Critério de completude<a class="headerlink" href="#3-criterio-de-completude" title="Permanent link">&para;</a></h2>
 <p>Um cenário só poderá ser marcado como completo quando todos os seus nós, transições, autoridades, dados, retornos, exceções e saídas estiverem documentados e funcionalmente validados como conjunto.</p>
 <h2 id="4-estado-vigente">4. Estado vigente<a class="headerlink" href="#4-estado-vigente" title="Permanent link">&para;</a></h2>
-<p>O documento permanece <code>active</code> como síntese. A UXA-095 materializa o cenário <code>PER-107 → PER-108</code>, mas não o valida ponta a ponta.</p>
-<p>A UXA-096 não é iniciada por esta sincronização.</p>
+<p>O documento permanece <code>active</code> como síntese. A UXA-096 fecha o cenário específico <code>PER-107 → PER-108</code>, mas não promove a jornada interna completa nem as áreas especializadas.</p>
+<p><strong>UXA-097 não foi iniciada.</strong></p>
 
 
 

@@ -6634,10 +6634,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-materializacao-de-trn-111" class="md-nav__link">
+  <a href="#4-contrato-validado-de-trn-111" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Materialização de TRN-111
+        4. Contrato validado de TRN-111
       
     </span>
   </a>
@@ -9031,10 +9031,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-materializacao-de-trn-111" class="md-nav__link">
+  <a href="#4-contrato-validado-de-trn-111" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Materialização de TRN-111
+        4. Contrato validado de TRN-111
       
     </span>
   </a>
@@ -9157,16 +9157,16 @@
 <td>PER-106</td>
 <td>escolhe <code>Ver atualizações</code> sem alterar vínculo/leitura</td>
 <td>PER-107</td>
-<td>UXA-094</td>
+<td>UXA-094; PER-107 corrente revalidado UXA-096</td>
 <td><strong>integralmente validada</strong></td>
 </tr>
 <tr>
 <td>TRN-111</td>
 <td>PER-107</td>
-<td>escolhe <code>Abrir início do Coletivo</code> em vínculo existente</td>
+<td>escolhe <code>Abrir início do Coletivo</code> com vínculo atual elegível</td>
 <td>PER-108</td>
-<td><strong>UXA-095</strong></td>
-<td><strong>parcial</strong></td>
+<td><strong>UXA-095/096</strong></td>
+<td><strong>integralmente validada</strong></td>
 </tr>
 <tr>
 <td>TRN-112</td>
@@ -9179,26 +9179,31 @@
 </tbody>
 </table>
 <h2 id="3-contrato-preservado-de-trn-110">3. Contrato preservado de TRN-110<a class="headerlink" href="#3-contrato-preservado-de-trn-110" title="Permanent link">&para;</a></h2>
-<p>A UXA-095 não modifica o contrato validado da entrada em <code>PER-107</code>: vínculo/leitura permanecem inalterados, ações substantivas revalidam estado canônico e repetição não duplica efeito lógico.</p>
-<h2 id="4-materializacao-de-trn-111">4. Materialização de TRN-111<a class="headerlink" href="#4-materializacao-de-trn-111" title="Permanent link">&para;</a></h2>
-<p>A UXA-095 torna explícito:</p>
+<p>A UXA-096 revalida a Central corrente sem modificar o contrato validado da entrada em <code>PER-107</code>: vínculo/leitura permanecem inalterados, ações substantivas revalidam estado canônico e repetição não duplica efeito lógico.</p>
+<h2 id="4-contrato-validado-de-trn-111">4. Contrato validado de TRN-111<a class="headerlink" href="#4-contrato-validado-de-trn-111" title="Permanent link">&para;</a></h2>
+<p>A UXA-096 fecha:</p>
 <div class="highlight"><pre><span></span><code>PER-107
 → “Abrir início do Coletivo”
+→ vínculo atual e permissão são revalidados
+→ histórico não concede nem preserva acesso
 → vínculo, leitura, papel, presença e autoridade não mudam
 → PER-108
 </code></pre></div>
-<p>A ligação permanece parcial porque:</p>
+<p>Foram examinados:</p>
 <ul>
-<li>o SVG da origem foi reformulado após sua validação;</li>
-<li>o destino é novo e ainda não validado;</li>
-<li>retorno, concorrência, estado obsoleto e ações internas não foram examinados como conjunto.</li>
+<li>identidade do Coletivo e do vínculo lógico;</li>
+<li>estado canônico atual;</li>
+<li>perda de permissão, pausa, saída e remoção;</li>
+<li>retorno neutro à Central;</li>
+<li>leitura separada do efeito substantivo;</li>
+<li>ações internas revalidadas antes do efeito;</li>
+<li>repetição e recarga idempotentes.</li>
 </ul>
 <h2 id="5-estado-vigente">5. Estado vigente<a class="headerlink" href="#5-estado-vigente" title="Permanent link">&para;</a></h2>
-<p>Sete handoffs do trecho anterior de Coletivos permanecem integralmente validados: <code>TRN-105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code>, <code>110</code> e <code>112</code>.</p>
-<p><code>TRN-111</code> é adicionalmente <strong>materializada de forma parcial</strong>, não integralmente validada.</p>
+<p>Oito handoffs do trecho de Coletivos estão integralmente validados: <code>TRN-105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code>, <code>110</code>, <code>111</code> e <code>112</code>.</p>
 <p>Validação integral documental não equivale a implementação técnica.</p>
 <h2 id="6-proxima-frente">6. Próxima frente<a class="headerlink" href="#6-proxima-frente" title="Permanent link">&para;</a></h2>
-<p><strong>UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de TRN-111</strong>, mediante autorização separada.</p>
+<p>A próxima priorização deverá partir das lacunas remanescentes. <strong>UXA-097 não foi iniciada.</strong></p>
 
 
 

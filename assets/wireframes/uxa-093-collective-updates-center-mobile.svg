@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe móvel da Central de Atualizações</title>
-  <desc id="desc">Superfície pessoal consolidada para identificar o que mudou nos Coletivos, com entrada explícita e opcional para o contexto interno do Coletivo sem alterar leitura, vínculo ou autoridade.</desc>
+  <desc id="desc">Superfície pessoal consolidada para identificar o que mudou nos Coletivos, com entrada explícita e opcional para o contexto interno do Coletivo condicionada ao vínculo atual e sem alterar leitura, papel, presença ou autoridade.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" rx="24" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="24" y="27" font-family="Arial, sans-serif" font-size="11" fill="#555555">09:41</text>
@@ -43,21 +43,22 @@
   <text x="210" y="486" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ajustar este tipo</text>
   <text x="350" y="381" text-anchor="end" font-family="Arial, sans-serif" font-size="7">não lida</text>
 
-  <rect x="20" y="523" width="350" height="113" rx="10" fill="#ffffff" stroke="#999999"/>
+  <rect x="20" y="523" width="350" height="130" rx="10" fill="#ffffff" stroke="#999999"/>
   <text x="32" y="546" font-family="Arial, sans-serif" font-size="8" font-weight="700">INFORMATIVA · vínculo</text>
   <text x="32" y="566" font-family="Arial, sans-serif" font-size="11" font-weight="700">Ciclistas da Serra</text>
   <text x="32" y="585" font-family="Arial, sans-serif" font-size="8">Sua participação foi confirmada · hoje, 08:15</text>
-  <text x="32" y="604" font-family="Arial, sans-serif" font-size="8">Ação necessária: nenhuma · vínculo já registrado</text>
+  <text x="32" y="604" font-family="Arial, sans-serif" font-size="8">Vínculo atual: participante confirmado · revalidado ao abrir o Início</text>
   <text x="32" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Abrir início do Coletivo</text>
   <text x="156" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ver vínculo</text>
   <text x="225" y="623" font-family="Arial, sans-serif" font-size="7" text-decoration="underline">Ajustar este tipo</text>
+  <text x="32" y="642" font-family="Arial, sans-serif" font-size="7">O histórico não preserva acesso se o vínculo atual pausar, encerrar ou perder permissão.</text>
   <text x="350" y="546" text-anchor="end" font-family="Arial, sans-serif" font-size="7">lida</text>
 
-  <rect x="20" y="650" width="350" height="94" rx="10" fill="#f7f7f7" stroke="#888888"/>
-  <text x="32" y="672" font-family="Arial, sans-serif" font-size="10" font-weight="700">Leitura não é decisão</text>
-  <text x="32" y="691" font-family="Arial, sans-serif" font-size="8">Marcar como lido não confirma presença, concordância nem conclui uma ação.</text>
-  <text x="32" y="710" font-family="Arial, sans-serif" font-size="8">Abrir o Coletivo não altera papel, autoridade, presença ou disponibilidade.</text>
-  <text x="32" y="729" font-family="Arial, sans-serif" font-size="7">Ações revalidam o estado do objeto; repetir abertura ou leitura não duplica efeitos.</text>
+  <rect x="20" y="665" width="350" height="87" rx="10" fill="#f7f7f7" stroke="#888888"/>
+  <text x="32" y="687" font-family="Arial, sans-serif" font-size="10" font-weight="700">Leitura não é decisão</text>
+  <text x="32" y="706" font-family="Arial, sans-serif" font-size="8">Marcar como lido não confirma presença, concordância nem conclui uma ação.</text>
+  <text x="32" y="725" font-family="Arial, sans-serif" font-size="8">Abrir o Coletivo não altera papel, autoridade, presença ou disponibilidade.</text>
+  <text x="32" y="744" font-family="Arial, sans-serif" font-size="7">Ações revalidam estado e permissão; repetir abertura ou leitura não duplica efeitos.</text>
 
   <rect x="1" y="770" width="388" height="73" fill="#ffffff" stroke="#cccccc"/>
   <g font-family="Arial, sans-serif" font-size="10" text-anchor="middle"><text x="39" y="817">Hoje</text><text x="117" y="817">Jornada</text><text x="195" y="817">Explorar</text><text x="273" y="817">Mapa</text><text x="351" y="817" font-weight="700">Eu</text></g>
