@@ -6747,6 +6747,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#8-efeito-da-uxa-087" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Efeito da UXA-087
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9085,6 +9096,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#8-efeito-da-uxa-087" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Efeito da UXA-087
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9113,8 +9135,8 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A versão 0.4.0 preserva as 40 entradas promovidas pela UXA-080 e registra a materialização de <code>GKR-SURF-COL-002</code> pela UXA-086. Nenhum novo identificador é criado.</p>
-<p>O status <code>active</code> torna o registro uma referência documental vigente. Ele não cria interface, não fecha lacuna e não declara jornada completa.</p>
+<p>A versão 0.5.0 preserva as 40 entradas promovidas pela UXA-080, mantém a materialização de <code>GKR-SURF-COL-002</code> pela UXA-086 e registra sua validação funcional pela UXA-087. Nenhum novo identificador é criado.</p>
+<p>O status <code>active</code> torna o registro uma referência documental vigente. Ele não cria interface, não valida transições ponta a ponta e não declara jornada completa.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9122,6 +9144,7 @@
 <li><code>não examinado</code>: integração ainda não avaliada como conjunto;</li>
 <li><code>parcial</code>: cobertura incompleta;</li>
 <li><code>materializado</code>: referência visual ou estrutural existente sem implicar validação;</li>
+<li><code>validado</code>: superfície examinada funcionalmente no escopo indicado;</li>
 <li><code>local</code>: validação limitada ao pacote de origem.</li>
 </ul>
 <h2 id="3-contagem">3. Contagem<a class="headerlink" href="#3-contagem" title="Permanent link">&para;</a></h2>
@@ -9159,7 +9182,7 @@
 </tr>
 </tbody>
 </table>
-<p>A UXA-086 não altera a contagem. Ela preenche uma entrada já reservada.</p>
+<p>A UXA-087 não altera a contagem. Ela promove a maturidade de uma entrada já existente.</p>
 <h2 id="4-inventario-principal">4. Inventário principal<a class="headerlink" href="#4-inventario-principal" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9401,10 +9424,10 @@
 <td>Visão Geral do Responsável</td>
 <td>responsável; operação de Coletivo</td>
 <td>computador protegido</td>
-<td>materializado; validação pendente</td>
+<td>validado</td>
 <td>UXA-014; UXA-056; UXA-058; UXA-059</td>
-<td>UXA-086</td>
-<td>—</td>
+<td>UXA-086; reformulação UXA-087</td>
+<td>UXA-087</td>
 <td><a href="../surface-registry-collective-details/">surface-registry-collective-details.md</a></td>
 </tr>
 <tr>
@@ -9619,22 +9642,7 @@
 </tbody>
 </table>
 <h2 id="5-detalhamentos-obrigatorios">5. Detalhamentos obrigatórios<a class="headerlink" href="#5-detalhamentos-obrigatorios" title="Permanent link">&para;</a></h2>
-<p>Os arquivos abaixo integram este registro e contêm, por ID:</p>
-<ul>
-<li>artefato canônico e caminho;</li>
-<li>versão;</li>
-<li>entrada;</li>
-<li>decisão principal;</li>
-<li>saída;</li>
-<li>dados e conteúdos;</li>
-<li>gate;</li>
-<li>reversibilidade;</li>
-<li>supersessão;</li>
-<li>continuidade;</li>
-<li>lacuna;</li>
-<li>observação de escopo.</li>
-</ul>
-<p>Arquivos:</p>
+<p>Os quatro detalhamentos integram este registro e registram artefato, versão, entrada, decisão, saída, dados, gate, reversibilidade, supersessão, continuidade, lacuna e escopo por ID:</p>
 <ul>
 <li><a href="../surface-registry-person-details/">Pessoa</a>;</li>
 <li><a href="../surface-registry-collective-details/">Coletivo</a>;</li>
@@ -9646,7 +9654,7 @@
 <li><code>GKR-SURF-PER-102</code> permanece exclusivo de Resultados de Busca de Coletivos.</li>
 <li><code>GKR-SURF-ORG-003</code> permanece como estado institucional de oportunidade aprovada ou ativa.</li>
 <li><code>GKR-SURF-PER-201</code>, <code>GKR-SURF-PER-202</code> e <code>GKR-SURF-PER-203</code> representam mapa, lista e detalhe de oportunidades.</li>
-<li><code>GKR-SURF-COL-002</code> representa somente a visão geral inicial do responsável; <code>GKR-SURF-COL-003</code> permanece separado.</li>
+<li><code>GKR-SURF-COL-002</code> representa somente a visão geral validada do responsável; <code>GKR-SURF-COL-003</code> permanece separado e ausente como operação própria.</li>
 <li><code>GKR-SURF-COM-005</code> aponta para UXA-055 e continua sem validação funcional específica.</li>
 <li><code>GKR-SURF-BND-001</code> é endpoint documental, não participante, tela ou integração.</li>
 </ul>
@@ -9655,13 +9663,14 @@
 <li>o inventário e seus detalhamentos formam um único registro lógico;</li>
 <li>valores desconhecidos permanecem explícitos;</li>
 <li>materialização não equivale a validação funcional;</li>
-<li>validação local não comprova continuidade integrada;</li>
+<li>validação de superfície não comprova continuidade integrada;</li>
 <li>responsabilidade sem interface continua <code>ausente</code>;</li>
 <li>fronteira documental não equivale a implementação;</li>
 <li>a cobertura permanece seletiva e não exaustiva;</li>
-<li>o status <code>active</code> aprova o instrumento de registro, não a completude das jornadas;</li>
-<li>a UXA-086 altera apenas a materialização observada de <code>GKR-SURF-COL-002</code> e não promove outras entradas.</li>
+<li>o status <code>active</code> aprova o instrumento de registro, não a completude das jornadas.</li>
 </ul>
+<h2 id="8-efeito-da-uxa-087">8. Efeito da UXA-087<a class="headerlink" href="#8-efeito-da-uxa-087" title="Permanent link">&para;</a></h2>
+<p>A UXA-087 altera exclusivamente a maturidade observacional de <code>GKR-SURF-COL-002</code>: a referência passa a <code>validado</code> após reformulação controlada. Nenhum outro ID muda de maturidade por analogia. <code>GKR-TRN-112</code> continua parcial e <code>GKR-SURF-COL-003</code> continua programado e sem materialização operacional própria.</p>
 
 
 
