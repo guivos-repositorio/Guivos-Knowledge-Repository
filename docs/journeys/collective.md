@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.10.0
+version: 0.11.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -16,10 +16,6 @@ related:
   - UXA-059
   - UXA-066
   - UXA-067
-  - UXA-072
-  - UXA-073
-  - UXA-074
-  - UXA-075
   - UXA-086
   - UXA-087
   - UXA-088
@@ -27,37 +23,36 @@ related:
   - UXA-090
   - UXA-091
   - UXA-092
+  - UXA-093
+  - UXA-094
+  - UXA-095
 normative: false
 ---
 
 # Jornada Integrada do Coletivo
 
-## 1. Formação e presença pública
+## 1. Formação, decisão e continuidade da Pessoa
 
 ```text
-propósito e identidade
-→ criação e configuração
-→ presença pública
-→ descoberta por Pessoas
-→ solicitação de participação
-→ análise pelo responsável
-→ formação ou recusa do vínculo
-→ continuidade da Pessoa em Meus Coletivos
+presença pública
+→ descoberta
+→ solicitação
+→ análise responsável
+→ aprovação/recusa
+→ Meus Coletivos
+→ Central de Atualizações
+→ Início do Participante
 ```
 
-| Etapa | Maturidade primária | Autoridade contratual | Referência materializada | Evidência de validação | Continuidade integrada |
-|---|---|---|---|---|---|
-| propósito, identidade e papéis | contratado | UXA-014 | — | — | não examinada |
-| criação e configuração | programado | UXA-059 | cobertura parcial e dispersa | — | ausente como fluxo integral |
-| presença pública | validado | UXA-056 | UXA-016 e Perfil Público | UXA-018; UXA-063 | parcial |
-| descoberta por Pessoas | validado | UXA-056 | UXA-060; UXA-062 | UXA-061; UXA-063 | parcial |
-| recebimento de solicitação | validado no handoff elegível | UXA-056 | perspectiva da Pessoa em UXA-066; operação responsável em UXA-088 | UXA-067; UXA-089; UXA-090 | TRN-105 integralmente validada |
-| visão do responsável | validado | UXA-059 | UXA-086 | UXA-087 | TRN-112 integralmente validada |
-| decisão do responsável | validado no escopo da superfície | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop | UXA-089 | pedidos adicionais, respostas e recusa validados bilateralmente pela UXA-090; aprovação fechada pela UXA-092 |
-| formação ou recusa do vínculo | validado nos handoffs específicos | UXA-014; UXA-056 | recusa e aprovação em PER-105; PER-106 em UXA-091/092 | recusa integrada por UXA-090; aprovação integrada por UXA-092 | TRN-109 e TRN-108 integralmente validadas |
-| continuidade em Meus Coletivos | validado | UXA-056; UXA-059 | UXA-091; reformulação UXA-092 | UXA-092 | TRN-108 integralmente validada; TRN-110 parcial |
-
-A UXA-092 fecha o handoff de aprovação até `Meus Coletivos`, mas a jornada continua incompleta a jusante e em outras responsabilidades do Coletivo.
+| Etapa | Maturidade | Evidência | Continuidade |
+|---|---|---|---|
+| presença pública e descoberta | validado localmente | UXA-016/018; UXA-060/063 | parcial entre famílias |
+| solicitação | validado | UXA-064/065/066/067 | handoffs bilaterais posteriores validados nos gates |
+| visão/gestão do responsável | validado | UXA-086/087/088/089 | TRN-112/105/106/107/109 integrais |
+| aprovação → Meus Coletivos | validado | UXA-090/091/092 | TRN-108 integral |
+| Meus Coletivos → Central | validado | UXA-092/093/094 | TRN-110 integral |
+| Central corrente | contrato validado; SVG reformulado | UXA-094/095 | TRN-111 parcial |
+| Início do Participante | **materializado** | **UXA-095** | validação pendente |
 
 ## 2. Operação do responsável
 
@@ -70,65 +65,53 @@ representação e autoridade
 → atividades, consultas e decisões
 → proteção e moderação
 → relações institucionais
-→ evidências e responsabilidades
 ```
 
-| Superfície ou responsabilidade | Maturidade primária | Autoridade | Materialização | Validação | Continuidade |
-|---|---|---|---|---|---|
-| representação e autoridade | contratado | UXA-014 | parcial | UXA-018; UXA-087 no escopo aplicável | não examinada integralmente |
-| Visão Geral do Responsável | validado | UXA-059; UXA-086 | UXA-086; 1 SVG reformulado | UXA-087 | saída para COL-003 validada por TRN-112/UXA-090 |
-| gestão de solicitações | validado | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop; 6 reformulados em UXA-089 | UXA-089 | handoffs 105/106/107/109 e entrada 112 validados por UXA-090; aprovação 108 validada por UXA-092 |
-| participantes e vínculos | programado | UXA-059 | — | — | ausente; não é substituído por PER-106 |
-| comunicação oficial | programado | UXA-058; UXA-059 | — | — | ausente |
-| atividades e decisões | programado | UXA-059 | parcial ou dispersa | — | não examinada |
-| proteção e moderação | contratado | UXA-058 | cobertura parcial | — | não examinada |
-| relações institucionais | contratado | UXA-019 | — | — | ausente |
+`COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
 
 ## 3. Handoffs críticos
 
-| Origem | Destino | Evidência da origem | Evidência do destino | Estado da transição |
-|---|---|---|---|---|
-| Visão Geral do Responsável | gestão de solicitações | UXA-086; UXA-087 | UXA-088; UXA-089 | `GKR-TRN-112` integralmente validada por UXA-090 |
-| Pessoa solicitante | responsável do Coletivo | UXA-066; UXA-067 | UXA-088; UXA-089 | `GKR-TRN-105` e `107` integralmente validadas por UXA-090 |
-| responsável do Coletivo | Pessoa solicitante | UXA-088; UXA-089 | UXA-066; UXA-067 | `GKR-TRN-106` e `109` integralmente validadas por UXA-090 |
-| aprovação | resultado aprovado em PER-105 → Meus Coletivos | UXA-088; UXA-089; resultado reformulado/revalidado por UXA-092 | `GKR-SURF-PER-106` reformulada e validada por UXA-092 | `GKR-TRN-108` integralmente validada por UXA-092 |
-| Meus Coletivos | Central de Atualizações | UXA-092 | `GKR-SURF-PER-107` ausente | `GKR-TRN-110` parcial |
-| Coletivo | Organização | contrato UXA-019 | materialização bilateral ausente | não materializada |
+| Ligação | Estado |
+|---|---|
+| COL-002 → COL-003 (`TRN-112`) | integralmente validada |
+| PER-105 ↔ COL-003 (`TRN-105/106/107/109`) | integralmente validadas |
+| COL-003 → PER-106 (`TRN-108`) | integralmente validada |
+| PER-106 → PER-107 (`TRN-110`) | integralmente validada |
+| PER-107 → PER-108 (`TRN-111`) | **parcial por UXA-095** |
+| Coletivo ↔ Organização | contratada; materialização bilateral pendente |
 
-## 4. Princípios preservados
+## 4. Efeito da UXA-095
+
+- materializa uma referência vigente para `PER-108`;
+- reforma a origem `PER-107` somente para tornar o handoff observável;
+- não valida a nova versão de `PER-107`, o novo `PER-108` ou `TRN-111`;
+- preserva os sete handoffs anteriormente integrais;
+- não materializa operação interna do responsável nem canais P1.
+
+## 5. Princípios preservados
 
 - responsável atua somente com autoridade concedida;
-- confirmação não cria ou amplia autoridade;
-- critérios de aprovação ou recusa precisam ter sido apresentados à Pessoa;
-- apoio institucional não transfere propriedade do Coletivo;
-- análise de solicitações é protegida;
-- pedido adicional não é obrigação de revelar;
-- acessibilidade não é critério oculto de elegibilidade;
-- aprovação forma vínculo antes da navegação posterior;
-- aprovação não cria função, moderação, autoridade, reputação ou notificação automática;
-- `Meus Coletivos` separa participação, acompanhamento, solicitação, convite e pausa;
-- `Meus Coletivos` não é ranking, pontuação, pressão ou Central de Atualizações;
-- recusa não é reputação ou sanção;
-- expiração não é decisão equivalente do responsável;
-- cancelamento e expiração supervenientes tornam ações anteriores obsoletas;
-- repetição de interação ou entrega não duplica o efeito lógico;
-- materialização não equivale a validação funcional;
-- validação integral documental não equivale a implementação.
+- apoio institucional não transfere governança;
+- aprovação não cria função, moderação, autoridade ou presença;
+- pertencimento, disponibilidade, papel aceito e autoridade permanecem separados;
+- Central é triagem e Início é síntese; nenhum dos dois substitui canais especializados;
+- atividade continua voluntária quando não houver compromisso previamente aceito;
+- consulta não é votação universal nem obrigação de resposta;
+- pausa, recusa e saída não reduzem reputação;
+- materialização não equivale a validação funcional.
 
-## 5. Estado da vista
+## 6. Estado da vista
 
 Esta vista permanece `draft` porque:
 
-- `GKR-SURF-PER-107` continua ausente e `TRN-110` parcial;
-- `PER-108` permanece com reformulação pendente;
-- participantes, comunicação e demais áreas do responsável permanecem incompletos;
+- `PER-107` corrente e `PER-108` aguardam validação;
+- `TRN-111` permanece parcial;
+- participantes, comunicação e demais áreas do responsável continuam incompletos;
 - a relação Organização–Coletivo permanece contratada e não materializada;
-- outras continuidades da jornada ainda não foram examinadas como conjunto.
+- outras continuidades ainda não foram examinadas como conjunto.
 
-A validação de `TRN-108` resolve uma ligação específica e não promove automaticamente a jornada completa.
+## 7. Próxima evolução possível
 
-## 6. Próxima evolução possível
+A próxima frente autorizável é **UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**.
 
-A próxima frente autorizável é **UXA-093 — Materialização Controlada da Central de Atualizações (`GKR-SURF-PER-107`)**.
-
-A UXA-093 não é iniciada pela UXA-092 e depende de autorização separada.
+A UXA-096 não foi iniciada.
