@@ -8,24 +8,28 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado resumido |
 |---|---|
-| Registro do Estado Atual | `GKR-STATE-001` 2.10.0 |
+| Registro do Estado Atual | `GKR-STATE-001` 2.11.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.72 — galeria reformulada e revalidada com ressalvas no escopo documental de inspeção |
-| Última frente integrada | UXA-084 |
-| Galeria visual | `draft` 0.4.0; aprovada com ressalvas e aguardando promoção controlada |
-| Matriz por SVG | `draft` 0.2.0; 97 SVGs associados a 23 perfis de rastreabilidade |
+| Marco | M7.72 — galeria visual e matriz promovidas após revalidação com ressalvas |
+| Última frente integrada | UXA-085 |
+| Galeria visual | `active` 0.5.0; ressalvas preservadas |
+| Páginas visuais | cinco páginas `active` 0.3.0 |
+| Matriz por SVG | `active` 0.3.0; 97 SVGs associados a 23 perfis de rastreabilidade |
+| Estados sem validação específica | 10 |
+| Responsabilidades sem SVG dedicado | 14 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente arquitetural | UXA-085, não iniciada |
+| Próxima frente arquitetural | UXA-086, não iniciada |
 
-A aprovação documental da galeria não comprova produto implementado, operação comercial, preço, demanda, conversão, receita ou viabilidade.
+A promoção documental da galeria não comprova produto implementado, jornada ponta a ponta validada, operação comercial, preço, demanda, conversão, receita ou viabilidade.
 
 ## Navegação essencial
 
 - [Registro do Estado Atual](docs/project/current-state-register.md)
-- [Índice UXA-047 a UXA-084](docs/experience-architecture/uxa-047-084-index.md)
+- [Índice UXA-047 a UXA-085](docs/experience-architecture/uxa-047-085-index.md)
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [Jornadas Integradas](docs/journeys/index.md)
+- [Galeria Visual Integrada](docs/journeys/screen-gallery.md)
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Índice de changelogs](docs/project/changelog-index.md)
 - [Índice dos adendos canônicos](docs/project/canonical-consolidation-addenda-index.md)
@@ -37,6 +41,7 @@ A aprovação documental da galeria não comprova produto implementado, operaç�
 - `GKR-STATE-001` prevalece sobre resumos e superfícies derivadas.
 - Conversas, PDFs e rascunhos externos não criam autoridade por declaração própria.
 - Plano, recomendação e desenho não comprovam execução.
+- Promoção de instrumento não promove automaticamente os objetos que ele representa.
 - Nenhum pacote posterior, UXA ou etapa de Engenharia de Produto começa automaticamente.
 - Alterações permanentes exigem branch, validação, pull request e decisão governada.
 
