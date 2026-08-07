@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / "docs/project/current-state-register.md"
 README_PATH = ROOT / "README.md"
 HOME_PATH = ROOT / "docs/index.md"
-UXA_INDEX_PATH = ROOT / "docs/experience-architecture/uxa-047-084-index.md"
+UXA_INDEX_PATH = ROOT / "docs/experience-architecture/uxa-047-085-index.md"
 
 REQUIRED_CONTROL_PATHS = [
     ROOT / "docs/project/global-semantic-state-synchronization-policy.md",
@@ -60,6 +60,7 @@ EXPECTED_UXA_FILES = [
     "uxa-082-integrated-gallery-functional-visual-validation-and-gap-prioritization.md",
     "uxa-083-controlled-integrated-gallery-and-inspection-sequence-reformulation.md",
     "uxa-084-reformulated-integrated-gallery-functional-visual-revalidation.md",
+    "uxa-085-controlled-integrated-gallery-promotion-and-post-revalidation-synchronization.md",
 ]
 
 STALE_MARKERS = (
