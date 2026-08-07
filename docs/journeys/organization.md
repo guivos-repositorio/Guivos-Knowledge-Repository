@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 related:
   - UXA-004
   - UXA-007
@@ -15,12 +15,17 @@ related:
   - UXA-015
   - UXA-017
   - UXA-019
+  - UXA-024
+  - UXA-025
+  - UXA-028
+  - UXA-029
   - UXA-038
   - UXA-055
   - UXA-072
   - UXA-073
   - UXA-074
   - UXA-075
+  - UXA-098
 normative: false
 ---
 
@@ -44,15 +49,48 @@ identidade, unidade e autoridade
 | fundação institucional | contratado | UXA-014 | — | — | não examinada |
 | Visão Geral da Organização | validado | UXA-014 | UXA-015 | UXA-017 | parcial |
 | responsabilidade material atual | contratado | UXA-014 | presente parcialmente na Visão Geral | UXA-017 no escopo da referência | parcial |
-| cadastro de oportunidades | validado | UXA-004 | UXA-008 | UXA-013 | parcial |
-| consulta e detalhe da oportunidade | validado | UXA-004 | UXA-007 | UXA-012 | parcial entre Organização e Pessoa |
+| cadastro de oportunidades | validado | UXA-004 | UXA-008 | UXA-013 | **publicação → descoberta validada por UXA-098** |
+| descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012 | **TRN-203/204/210/211 integralmente validadas por UXA-098** |
 | relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
 | patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-054 | UXA-041 a UXA-055 conforme pacote | parcial: 10 estados residuais sem validação |
 | evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
 
 A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
 
-## 2. Relação com Coletivos
+## 2. Publicação → descoberta validada
+
+A UXA-098 formaliza:
+
+```text
+ORG-003
+→ oportunidade aprovada e ativa
+→ autoridade e informações materiais vigentes
+→ TRN-203
+→ candidata à descoberta em PER-201
+```
+
+A ativação:
+
+- torna a oportunidade elegível ao inventário de descoberta;
+- não garante impressão, posição, alcance ou recomendação;
+- não concede à Organização autoridade sobre relevância individual;
+- não converte patrocínio em prioridade orgânica;
+- permanece subordinada a disponibilidade, elegibilidade, proteção, atualização e moderação aplicáveis.
+
+Pausa, expiração, encerramento ou alteração material prevalecem sobre cartões ou detalhes anteriormente renderizados. Reprocessamento do mesmo estado não duplica oportunidade nem prioridade.
+
+## 3. Continuidade até o Detalhe
+
+A oportunidade mantém a mesma identidade lógica em Mapa, Lista e Detalhe.
+
+- `TRN-210`: Mapa e Lista preservam a mesma consulta;
+- `TRN-204`: Mapa abre o Detalhe preservando origem e estado;
+- `TRN-211`: Lista abre o mesmo Detalhe preservando origem e estado;
+- `TRN-205`: eventual efeito externo posterior permanece separado e parcial.
+
+A Organização continua responsável por manter preço, disponibilidade, local, modalidade, capacidade, elegibilidade, risco, responsável e demais informações materiais atualizados.
+
+## 4. Relação com Coletivos
 
 ```text
 rascunho
@@ -76,22 +114,24 @@ rascunho
 
 A relação preserva finalidade, compromissos, recursos, autonomia, dados, contestação e saída. Apoio ou patrocínio não concede propriedade, direção ou acesso irrestrito a dados.
 
-## 3. Limites de visibilidade
+## 5. Limites de visibilidade
 
+- publicação não equivale a distribuição garantida;
 - dados pessoais individuais não são expostos por padrão;
 - resultados agregados dependem de finalidade e autoridade;
-- publicidade não compra legitimidade ou reputação;
+- publicidade não compra legitimidade, reputação ou relevância funcional;
 - representante institucional atua somente dentro da unidade e do papel apresentados;
 - cobertura incompleta permanece indicada como lacuna.
 
-## 4. Estado da vista
+## 6. Estado da vista
 
-A UXA-074 aprovou esta vista como representação documental corretamente delimitada. A UXA-075 mantém o status `draft` porque:
+Esta vista permanece `draft` porque:
 
 - a relação Organização–Coletivo não possui materialização bilateral específica;
 - a matriz institucional completa ainda não existe;
-- o ciclo de oportunidades não foi validado como continuidade integral;
-- 10 estados do Opportunity Boost permanecem sem validação;
+- `TRN-201` permanece parcial e `TRN-202` localmente validada;
+- 10 estados do Opportunity Boost permanecem sem validação específica;
+- integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
 - evidências e resultados institucionais continuam sem matriz integrada.
 
-O status `draft` preserva a distinção entre superfícies institucionais validadas localmente e uma jornada institucional completa.
+A UXA-098 fecha especificamente `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211`, sem promover a jornada institucional completa.
