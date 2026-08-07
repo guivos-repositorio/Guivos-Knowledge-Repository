@@ -8,26 +8,26 @@ A declaração oficial está no [Registro do Estado Atual](project/current-state
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.12.0 |
+| Registro | `GKR-STATE-001` 2.13.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.73 |
-| Última frente integrada | UXA-086 — materialização da Visão Geral do Responsável do Coletivo |
-| Galeria visual | `active` 0.6.0; 98 SVGs |
-| Matriz por SVG | `active` 0.4.0; 98 associações e 24 perfis |
-| Validações funcionais registradas | 87 |
-| Pendentes de validação específica | 11 |
+| Marco | M7.74 |
+| Última frente integrada | UXA-087 — validação funcional e reformulação da Visão Geral do Responsável do Coletivo |
+| Galeria visual | `active` 0.7.0; 98 SVGs |
+| Matriz por SVG | `active` 0.5.0; 98 associações e 24 perfis |
+| Validações funcionais registradas | 88 |
+| Pendentes de validação específica | 10, exclusivamente UXA-055 |
 | Responsabilidades sem SVG dedicado | 13 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente | UXA-087, não iniciada |
+| Próxima frente | UXA-088, não iniciada |
 
-A UXA-086 materializa `GKR-SURF-COL-002`, mas não a valida funcionalmente e não cria a gestão completa de solicitações.
+A UXA-087 valida `GKR-SURF-COL-002` após reformulação controlada. A gestão completa de solicitações (`GKR-SURF-COL-003`) continua ausente e `GKR-TRN-112` permanece parcial.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-086](experience-architecture/uxa-047-086-index.md)
+- [Índice UXA-047 a UXA-087](experience-architecture/uxa-047-087-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [UXA-086 — Visão Geral do Responsável](experience-architecture/uxa-086-collective-responsible-overview-low-fidelity-wireframe.md)
+- [UXA-087 — Validação Funcional da Visão Geral do Responsável](experience-architecture/uxa-087-collective-responsible-overview-functional-validation-and-reformulation.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Jornadas Integradas](journeys/index.md)
@@ -40,4 +40,4 @@ A UXA-086 materializa `GKR-SURF-COL-002`, mas não a valida funcionalmente e nã
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-087, Engenharia de Produto, P2–P9, materialização de `GKR-SURF-COL-003`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza UXA-088, Engenharia de Produto, P2–P9, materialização de `GKR-SURF-COL-003`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
