@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 related:
   - UXA-070
   - UXA-074
@@ -14,6 +14,7 @@ related:
   - UXA-078
   - UXA-079
   - UXA-080
+  - UXA-086
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -26,7 +27,9 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.3.0 incorpora a promoção controlada da UXA-080 após a revalidação aprovada com ressalvas pela UXA-079. Permanecem vigentes as correções da UXA-078:
+A versão 0.4.0 preserva as 37 transições promovidas pela UXA-080 e atualiza somente a evidência observacional de `GKR-TRN-112` após a materialização de sua origem pela UXA-086.
+
+Permanecem vigentes as correções estruturais anteriores:
 
 - todos os endpoints resolvem para IDs registrados;
 - oportunidades utilizam superfícies próprias de mapa, lista e detalhe;
@@ -47,7 +50,9 @@ O status `active` aprova o registro como instrumento documental. Nenhuma linha e
 | ausente | ligação necessária conhecida sem materialização |
 | não examinada | artefatos existem, mas a ligação não foi validada como conjunto |
 
-## 3. Contagem reformulada
+Materializar apenas um endpoint pode alterar uma transição de `ausente` para `parcial`, mas não a torna validada.
+
+## 3. Contagem
 
 | Família | Quantidade |
 |---|---:|
@@ -57,7 +62,7 @@ O status `active` aprova o registro como instrumento documental. Nenhuma linha e
 | Opportunity Boost | 6 |
 | **Total** | **37** |
 
-O aumento de 34 para 37 transições decorre da divisão controlada de mapa, lista e retornos orgânicos. Não representa comportamento implementado.
+A UXA-086 não cria transições novas.
 
 ## 4. Jornada pessoal
 
@@ -86,7 +91,7 @@ O aumento de 34 para 37 transições decorre da divisão controlada de mapa, lis
 | GKR-TRN-109 | GKR-SURF-COL-003 | GKR-SURF-PER-105 | responsável → solicitante | entre participantes; assíncrona | recusar ou deixar expirar | UXA-056; UXA-067 | apresenta resultado distinto de cancelamento | autoridade e prazo | nova exploração possível; assíncrona | UXA-067 na visão da Pessoa | parcial | origem operacional não materializada |
 | GKR-TRN-110 | GKR-SURF-PER-106 | GKR-SURF-PER-107 | participante | direta | acessar atualizações do vínculo | UXA-059 | apresenta comunicações e mudanças autorizadas | vínculo ativo | retorno a Meus Coletivos | — | ausente | ambas as superfícies não materializadas |
 | GKR-TRN-111 | GKR-SURF-PER-107 | GKR-SURF-PER-108 | participante | direta; condicional | selecionar Coletivo ou atualização | UXA-059 | abre início operacional do participante | vínculo e papel | retorno às atualizações | — | ausente | Início do Participante em reformulação |
-| GKR-TRN-112 | GKR-SURF-COL-002 | GKR-SURF-COL-003 | responsável | direta; protegida | acessar solicitações | UXA-059 | abre fila operacional dentro da autoridade concedida | representação válida | retorno à visão geral | — | ausente | duas superfícies não materializadas |
+| GKR-TRN-112 | GKR-SURF-COL-002 | GKR-SURF-COL-003 | responsável | direta; protegida | acessar solicitações a partir da visão geral | UXA-059; UXA-086 | a origem apresenta síntese e ponto de entrada; a fila operacional de destino ainda não existe | representação válida e escopo concedido | permanecer ou retornar à visão geral; fluxo de destino ainda não examinado | UXA-086 somente na origem | parcial | GKR-SURF-COL-003 ausente; transição sem validação funcional |
 | GKR-TRN-113 | GKR-SURF-COL-004 | GKR-SURF-COL-005 | responsável | condicional; protegida | comunicar a participantes autorizados | UXA-058; UXA-059 | distribui comunicação oficial com finalidade identificada | papel e escopo de audiência | corrigir ou encerrar conforme regras futuras | — | contratada | operação interna não materializada |
 
 ## 6. Organização, oportunidades e relações bilaterais
@@ -116,41 +121,25 @@ O aumento de 34 para 37 transições decorre da divisão controlada de mapa, lis
 | GKR-TRN-305 | GKR-SURF-COM-004 | GKR-SURF-COM-005 | anunciante | condicional | campanha ou entrega alcança estado residual específico | UXA-038 | efeito depende do estado materializado pela UXA-055 | autoridade e controle aplicáveis ao estado | retorno, desfazer, contestar ou continuar dependem do estado ainda não validado | UXA-055 | não examinada | dez estados residuais sem validação |
 | GKR-TRN-306 | GKR-SURF-COM-002 | GKR-SURF-PER-202 | Pessoa exposta | reversível | voltar ao contexto orgânico de lista | UXA-038 | restaura a Lista de Oportunidades sem alterar reputação, relevância ou estado comercial | nenhum | retorno imediato | UXA-043; UXA-029 em pacotes distintos | parcial | integração orgânico–patrocinado |
 
-## 8. Resolução dos achados da UXA-077
+## 8. Efeito da UXA-086
 
-### F01 — endpoints
+`GKR-TRN-112` deixa de estar `ausente` porque sua origem passou a possuir materialização. Entretanto:
 
-- `GKR-TRN-205` termina em `GKR-SURF-BND-001`;
-- `GKR-TRN-304` termina em `GKR-SURF-PER-201`;
-- o retorno alternativo à lista é registrado por `GKR-TRN-306` em `GKR-SURF-PER-202`;
-- nenhuma origem ou destino permanece em texto livre.
+- o destino `GKR-SURF-COL-003` continua sem superfície operacional própria;
+- a ação completa de revisão de solicitações não foi materializada;
+- a transição não foi submetida a validação funcional;
+- portanto seu estado passa somente para `parcial`.
 
-### F02 — descoberta de oportunidades
-
-- `GKR-SURF-PER-102` permanece exclusivo da busca de Coletivos;
-- `GKR-TRN-203` conduz ao Mapa de Oportunidades;
-- `GKR-TRN-204` conduz do mapa ao Detalhe de Oportunidade;
-- `GKR-TRN-210` conecta mapa e lista;
-- `GKR-TRN-211` conecta lista e detalhe.
-
-### F03 — publicação e detalhe
-
-- `GKR-SURF-ORG-003` é o estado institucional de oportunidade aprovada ou ativa;
-- `GKR-SURF-PER-203` é o Detalhe de Oportunidade percebido pela Pessoa;
-- a passagem entre publicação e descoberta permanece `não examinada`.
-
-### F04 — estados residuais
-
-`GKR-TRN-305` aponta para UXA-055 como evidência de materialização. A transição permanece `não examinada` porque os dez estados residuais ainda não possuem validação funcional específica.
+Nenhuma outra transição é reclassificada.
 
 ## 9. Regras de uso
 
 - origem materializada não presume destino materializado;
+- materialização parcial não equivale a validação de transição;
 - contrato bilateral não equivale a transição operacional;
 - validação local não equivale a continuidade integrada;
 - um handoff exige autoridade, dados, efeito, retorno e interrupção explícitos;
 - transições ausentes permanecem registradas sem seta afirmativa de implementação;
 - fronteira externa identificada não presume execução ou resultado externo;
 - a cobertura permanece seletiva e não exaustiva;
-- o status `active` aprova o instrumento de registro, não a continuidade ponta a ponta;
-- a UXA-080 não altera os estados, evidências ou lacunas das 37 transições.
+- o status `active` aprova o instrumento de registro, não a continuidade ponta a ponta.
