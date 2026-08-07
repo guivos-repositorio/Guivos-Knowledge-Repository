@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -23,6 +23,7 @@ related:
   - UXA-086
   - UXA-087
   - UXA-088
+  - UXA-089
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -43,7 +44,7 @@ SVG existente
 ≠ jornada integrada validada
 ```
 
-Uma superfície pode possuir materialização própria sem que a continuidade para o próximo destino esteja validada.
+Uma superfície pode possuir materialização e validação próprias sem que a continuidade para o próximo destino esteja validada.
 
 ## 2. Inventário agregado por família
 
@@ -61,21 +62,21 @@ Uma superfície pode possuir materialização própria sem que a continuidade pa
 | Pessoa em Coletivos | Solicitação Pendente | 8 | 8 validados na perspectiva da Pessoa | parcial | continuidade após decisão |
 | Coletivo | referência inicial | 1 | validado | parcial | continuidade com gestão |
 | Coletivo | Visão Geral do Responsável | 1 | validado por UXA-087 | TRN-112 não validada como conjunto | gestão especializada |
-| Coletivo | gestão de solicitações | 7 | pendentes de validação | TRN-105 a 109 e 112 parciais | validação bilateral e Meus Coletivos |
+| Coletivo | gestão de solicitações | 7 | 7 validados por UXA-089 | TRN-105 a 109 e 112 parciais | validação bilateral e Meus Coletivos |
 | Organização | visão geral e cadastro | 2 | 2 validados | publicação–descoberta não examinada | matriz institucional completa |
 | camada comercial | Opportunity Boost | 46 | 36 validados; 10 pendentes | parcial | estados residuais da UXA-055 |
 | fronteira documental | destino externo | 0 | não aplicável | não examinada | efeito externo |
-| **Total** |  | **105** | **88 validados; 17 pendentes** |  |  |
+| **Total** |  | **105** | **95 validados; 10 pendentes** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
-| Registro | Quantidade | Estado proposto pela UXA-088 |
+| Registro | Quantidade | Estado proposto pela UXA-089 |
 |---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | `active` 0.6.0 |
-| transições documentais | 37 | `active` 0.5.0 |
+| superfícies, estados, responsabilidades ou fronteiras | 40 | `active` 0.7.0 |
+| transições documentais | 37 | `active` 0.6.0 |
 | referências de endpoint | 74 | resolvidas |
 | endpoints em texto livre | 0 | aprovado |
-| detalhamento do Coletivo | 8 entradas | `active` 0.5.0 |
+| detalhamento do Coletivo | 8 entradas | `active` 0.6.0 |
 | demais detalhamentos obrigatórios | 3 arquivos | `active` 0.2.0 |
 
 ## 4. Cobertura visual
@@ -87,9 +88,9 @@ Uma superfície pode possuir materialização própria sem que a continuidade pa
 | fronteira intencionalmente sem tela | 1 |
 | **Total** | **40** |
 
-## 5. Efeito da UXA-088
+## 5. Efeito da UXA-089
 
-A UXA-088 adiciona sete SVGs de `GKR-SURF-COL-003`:
+A UXA-089 preserva os sete SVGs de `GKR-SURF-COL-003`, reformula seis e valida funcionalmente toda a família:
 
 - fila operacional;
 - detalhe comum;
@@ -101,12 +102,12 @@ A UXA-088 adiciona sete SVGs de `GKR-SURF-COL-003`:
 
 O incremento:
 
-- aumenta o inventário visual de 98 para 105 SVGs;
-- aumenta perfis de rastreabilidade de 24 para 25;
-- mantém validações funcionais em 88;
-- aumenta pendentes de 10 para 17;
-- aumenta IDs com referência visual de 26 para 27;
-- reduz responsabilidades sem SVG dedicado de 13 para 12;
+- mantém o inventário visual em 105 SVGs;
+- mantém 25 perfis de rastreabilidade;
+- aumenta validações funcionais de 88 para 95;
+- reduz pendentes de 17 para 10;
+- mantém 27 IDs com referência visual;
+- mantém 12 responsabilidades sem SVG dedicado;
 - não cria ID granular ou transição nova;
 - não valida `GKR-TRN-105` a `109` nem `GKR-TRN-112` ponta a ponta.
 
@@ -114,7 +115,8 @@ O incremento:
 
 ```text
 Visão Geral do Responsável — validada
-→ gestão de solicitações — materializada; validação pendente
+→ gestão de solicitações — validada no escopo da superfície
+→ validar handoffs bilaterais — pendente
 → Meus Coletivos — ausente
 → Central de Atualizações — ausente
 → Início do Participante — reformulação pendente
@@ -132,12 +134,12 @@ Visão Geral do Responsável — validada
 
 ## 8. Estado do catálogo
 
-- catálogo: `active` 0.13.0;
-- galeria: `active` 0.8.0;
-- página de Coletivos: `active` 0.6.0;
+- catálogo: `active` 0.14.0;
+- galeria: `active` 0.9.0;
+- página de Coletivos: `active` 0.7.0;
 - demais páginas visuais: `active` 0.3.0;
-- matriz por SVG: `active` 0.6.0;
+- matriz por SVG: `active` 0.7.0;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 
-A materialização da UXA-088 não autoriza UXA-089 automaticamente.
+A validação da UXA-089 não autoriza UXA-090 automaticamente.
