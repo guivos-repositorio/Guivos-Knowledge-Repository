@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.5.0
+version: 1.6.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -15,6 +15,7 @@ related:
   - GKR-CHANGELOG-UXA-086-001
   - GKR-CHANGELOG-UXA-087-001
   - GKR-CHANGELOG-UXA-088-001
+  - GKR-CHANGELOG-UXA-089-001
 normative: false
 ---
 
@@ -26,17 +27,18 @@ Este índice organiza os registros de atualização recentes sem reescrever o le
 
 Changelogs registram alterações. Eles não substituem `GKR-STATE-001`, autoridades de domínio, decisões arquiteturais ou evidências de integração.
 
-## 2. Baseline proposta pela UXA-088
+## 2. Baseline proposta pela UXA-089
 
-- [Registro do Estado Atual — 2.14.0 e M7.75](current-state-register.md)
+- [Registro do Estado Atual — 2.15.0 e M7.76](current-state-register.md)
 - [Rebaseline do P0 após UXA-084](p0-post-uxa084-rebaseline-2026-08-06.md)
 - [Rebaseline do P1 após UXA-084](p1-post-uxa084-rebaseline-2026-08-06.md)
 - [UXA-085 — Promoção Controlada da Galeria](changelog-uxa-085-2026-08-07.md)
 - [UXA-086 — Materialização da Visão Geral do Responsável](changelog-uxa-086-2026-08-07.md)
 - [UXA-087 — Validação Funcional da Visão Geral do Responsável](changelog-uxa-087-2026-08-07.md)
 - [UXA-088 — Materialização da Gestão de Solicitações do Responsável](changelog-uxa-088-2026-08-07.md)
+- [UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável](changelog-uxa-089-2026-08-07.md)
 
-A baseline 2.14.0/M7.75 somente se torna vigente na `main` após integração governada do pacote UXA-088.
+A baseline 2.15.0/M7.76 somente se torna vigente na `main` após integração governada do pacote UXA-089.
 
 ## 3. Sequência versionada publicada
 
@@ -66,9 +68,9 @@ Novos registros deverão:
 | Elemento | Estado proposto |
 |---|---|
 | ledger raiz | preservado como histórico legado |
-| índice atual | ativo 1.5.0 |
-| estado transversal | `GKR-STATE-001` 2.14.0 após eventual integração |
-| marco | M7.75 |
-| última UXA proposta | UXA-088 |
-| próxima UXA | UXA-089, não iniciada |
-| mudança arquitetural por este índice | nenhuma; apenas registro da UXA-088 |
+| índice atual | ativo 1.6.0 |
+| estado transversal | `GKR-STATE-001` 2.15.0 após eventual integração |
+| marco | M7.76 |
+| última UXA proposta | UXA-089 |
+| próxima UXA | UXA-090, não iniciada |
+| mudança arquitetural por este índice | nenhuma; apenas registro da UXA-089 |
