@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
   <title id="title">Decisões explícitas e compatíveis sobre persistência e personalização</title>
-  <desc id="desc">Wireframe móvel reformulado com escolhas únicas independentes, nenhuma opção pré-selecionada, bloqueio de combinações incompatíveis e continuidade sem personalização com consequência conhecida.</desc>
+  <desc id="desc">Wireframe móvel reformulado com escolhas únicas independentes, nenhuma opção pré-selecionada, bloqueio de combinações incompatíveis e rotas explícitas para a Tela Hoje com ou sem personalização.</desc>
   <rect width="390" height="844" fill="#ffffff"/>
   <rect x="1" y="1" width="388" height="842" fill="none" stroke="#111111" stroke-width="2"/>
   <text x="20" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="700">GUIVOS</text>
@@ -43,7 +43,7 @@
   <text x="195" y="696" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Indisponível até existir uma escolha válida em cada grupo.</text>
 
   <rect x="20" y="728" width="350" height="40" rx="9" fill="#ffffff" stroke="#777777"/>
-  <text x="195" y="753" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700">Usar nesta sessão e continuar sem personalização</text>
+  <text x="195" y="753" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700">Usar nesta sessão e ir para Hoje sem personalização</text>
   <text x="195" y="792" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Revisar conteúdos e autorizações</text>
   <text x="195" y="820" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" text-decoration="underline">Excluir compreensão e continuar explorando</text>
   <text x="195" y="838" text-anchor="middle" font-family="Arial, sans-serif" font-size="7">Persistência não autoriza personalização. Personalização não cria outras finalidades.</text>

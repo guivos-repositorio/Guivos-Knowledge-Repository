@@ -6726,10 +6726,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-efeito-da-uxa-096" class="md-nav__link">
+  <a href="#6-efeito-da-uxa-097" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Efeito da UXA-096
+        6. Efeito da UXA-097
       
     </span>
   </a>
@@ -9064,10 +9064,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-efeito-da-uxa-096" class="md-nav__link">
+  <a href="#6-efeito-da-uxa-097" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Efeito da UXA-096
+        6. Efeito da UXA-097
       
     </span>
   </a>
@@ -9113,7 +9113,7 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A versão 0.13.0 preserva as 40 entradas. A UXA-096 revalida <code>PER-107</code>, valida <code>PER-108</code> e não cria qualquer novo ID.</p>
+<p>A versão 0.14.0 preserva as 40 entradas. A UXA-097 revalida a variante de decisão de <code>PER-007</code>, adiciona uma variante inicial validada a <code>PER-008</code> e não cria qualquer novo ID.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9246,10 +9246,10 @@
 <td>compreensão inicial revisável</td>
 <td>Pessoa</td>
 <td>protegido</td>
-<td>validado</td>
+<td><strong>validado</strong></td>
 <td>UXA-023</td>
-<td>UXA-036</td>
-<td>UXA-037</td>
+<td>UXA-036; decisão refinada UXA-097</td>
+<td>UXA-037; variante corrente revalidada UXA-097</td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
 </tr>
 <tr>
@@ -9257,10 +9257,10 @@
 <td>Tela Hoje</td>
 <td>Pessoa autenticada</td>
 <td>protegido</td>
-<td>validado</td>
-<td>UXA-002</td>
-<td>UXA-006</td>
-<td>UXA-010</td>
+<td><strong>validado</strong></td>
+<td>UXA-002; UXA-011-A1</td>
+<td>UXA-006 recorrente; primeira variante UXA-097</td>
+<td>UXA-010 recorrente; primeira variante UXA-097</td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
 </tr>
 <tr>
@@ -9619,18 +9619,20 @@
 </table>
 <h2 id="5-divisoes-controladas">5. Divisões controladas<a class="headerlink" href="#5-divisoes-controladas" title="Permanent link">&para;</a></h2>
 <ul>
+<li><code>PER-007</code> mantém compreensão, persistência e personalização como decisões separadas;</li>
+<li><code>PER-008</code> possui variante inicial e recorrente sob o mesmo ID, ambas validadas em seus escopos;</li>
 <li><code>PER-106</code> é central de participações e estados relacionados, não feed;</li>
 <li><code>PER-107</code> é triagem de atualizações e sua versão corrente está validada pela UXA-096;</li>
 <li><code>PER-108</code> é síntese interna validada e não replica Central ou canais especializados;</li>
 <li><code>COM-005</code> continua sem validação funcional específica;</li>
 <li><code>BND-001</code> é endpoint documental, não tela.</li>
 </ul>
-<h2 id="6-efeito-da-uxa-096">6. Efeito da UXA-096<a class="headerlink" href="#6-efeito-da-uxa-096" title="Permanent link">&para;</a></h2>
+<h2 id="6-efeito-da-uxa-097">6. Efeito da UXA-097<a class="headerlink" href="#6-efeito-da-uxa-097" title="Permanent link">&para;</a></h2>
 <ul>
 <li>40 IDs preservados;</li>
-<li><code>PER-107</code>: versão corrente → <strong>validado</strong>;</li>
-<li><code>PER-108</code>: materializado → <strong>validado</strong>;</li>
-<li><code>TRN-111</code> é tratado no registro de transições e passa a integralmente validada;</li>
+<li><code>PER-007</code>: permanece validado; variante de decisão corrente revalidada;</li>
+<li><code>PER-008</code>: permanece validado e ganha primeira variante validada;</li>
+<li><code>TRN-007</code> é tratado no registro de transições e passa a integralmente validada;</li>
 <li>nenhuma promoção de jornada ou implementação é inferida.</li>
 </ul>
 <h2 id="7-estado">7. Estado<a class="headerlink" href="#7-estado" title="Permanent link">&para;</a></h2>

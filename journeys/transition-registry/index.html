@@ -6747,6 +6747,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. Jornada pessoal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-contrato-validado-de-gkr-trn-007" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Contrato validado de GKR-TRN-007
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -6773,10 +6790,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-contrato-validado-de-gkr-trn-111" class="md-nav__link">
+  <a href="#52-contrato-preservado-de-gkr-trn-111" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 Contrato validado de GKR-TRN-111
+        5.2 Contrato preservado de GKR-TRN-111
       
     </span>
   </a>
@@ -6811,10 +6828,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-efeito-da-uxa-096" class="md-nav__link">
+  <a href="#8-efeito-da-uxa-097" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Efeito da UXA-096
+        8. Efeito da UXA-097
       
     </span>
   </a>
@@ -9100,6 +9117,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. Jornada pessoal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-contrato-validado-de-gkr-trn-007" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Contrato validado de GKR-TRN-007
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -9126,10 +9160,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-contrato-validado-de-gkr-trn-111" class="md-nav__link">
+  <a href="#52-contrato-preservado-de-gkr-trn-111" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 Contrato validado de GKR-TRN-111
+        5.2 Contrato preservado de GKR-TRN-111
       
     </span>
   </a>
@@ -9164,10 +9198,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-efeito-da-uxa-096" class="md-nav__link">
+  <a href="#8-efeito-da-uxa-097" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Efeito da UXA-096
+        8. Efeito da UXA-097
       
     </span>
   </a>
@@ -9213,7 +9247,7 @@
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.</p>
-<p>A versão 0.13.0 preserva as 37 transições. A UXA-096 valida <code>GKR-TRN-111</code> ponta a ponta, sem criar nova transição.</p>
+<p>A versão 0.14.0 preserva as 37 transições. A UXA-097 valida <code>GKR-TRN-007</code> ponta a ponta, sem criar nova transição.</p>
 <h2 id="2-convencoes-de-estado">2. Convenções de estado<a class="headerlink" href="#2-convencoes-de-estado" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9339,11 +9373,29 @@
 <td>GKR-TRN-007</td>
 <td>PER-007</td>
 <td>PER-008</td>
-<td>não examinada</td>
-<td>reconciliação com Tela Hoje</td>
+<td><strong>integralmente validada</strong></td>
+<td><strong>UXA-097 — primeira Hoje materializada; escolhas, autorização, estado canônico, retorno e idempotência validados</strong></td>
 </tr>
 </tbody>
 </table>
+<h3 id="41-contrato-validado-de-gkr-trn-007">4.1 Contrato validado de <code>GKR-TRN-007</code><a class="headerlink" href="#41-contrato-validado-de-gkr-trn-007" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>PER-007
+→ escolhas compatíveis são confirmadas explicitamente
+→ condição de persistência/personalização torna-se efetiva sem ampliação implícita
+→ TRN-007
+→ PER-008 consulta o estado canônico vigente
+→ primeira Tela Hoje não presume avanço nem mudança anterior
+</code></pre></div>
+<p>Regras integradas:</p>
+<ul>
+<li>personalização autorizada usa somente base confirmada, autorizada e vigente;</li>
+<li>sem personalização ou com decisão adiada, Hoje continua acessível sem indicações pessoais;</li>
+<li><code>Excluir compreensão e continuar explorando</code> não pertence a <code>TRN-007</code>;</li>
+<li>retirada, exclusão ou mudança posterior prevalecem sobre estado visual obsoleto;</li>
+<li>clique repetido, retorno ou recarga não criam duas jornadas, Próximos Passos ou efeitos de persistência;</li>
+<li>navegar para Hoje não conta como evolução, presença, streak ou confirmação adicional;</li>
+<li>a Tela Hoje recorrente permanece distinta da primeira variante validada pela UXA-097.</li>
+</ul>
 <h2 id="5-pessoa-em-coletivos-e-operacao-do-responsavel">5. Pessoa em Coletivos e operação do responsável<a class="headerlink" href="#5-pessoa-em-coletivos-e-operacao-do-responsavel" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9477,7 +9529,7 @@
 <td>participante</td>
 <td>escolher <code>Abrir início do Coletivo</code>; evento histórico não concede acesso; preservar mesmo Coletivo e vínculo lógico sem alterar leitura, papel, presença ou autoridade</td>
 <td>vínculo atual/permissão revalidados; estado canônico prevalece; retorno neutro; repetição idempotente; permissão revogada não é restaurada</td>
-<td>UXA-095 materialização/refinamento; <strong>UXA-096 validação integrada</strong></td>
+<td>UXA-095 materialização/refinamento; UXA-096 validação integrada</td>
 <td><strong>integralmente validada</strong></td>
 <td>—</td>
 </tr>
@@ -9506,27 +9558,9 @@
 </tbody>
 </table>
 <h3 id="51-contrato-preservado-de-gkr-trn-110">5.1 Contrato preservado de <code>GKR-TRN-110</code><a class="headerlink" href="#51-contrato-preservado-de-gkr-trn-110" title="Permanent link">&para;</a></h3>
-<p>A UXA-096 revalida a versão corrente de <code>PER-107</code> sem alterar o contrato de <code>TRN-110</code>: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.</p>
-<h3 id="52-contrato-validado-de-gkr-trn-111">5.2 Contrato validado de <code>GKR-TRN-111</code><a class="headerlink" href="#52-contrato-validado-de-gkr-trn-111" title="Permanent link">&para;</a></h3>
-<p>A UXA-096 valida:</p>
-<div class="highlight"><pre><span></span><code>PER-107
-→ “Abrir início do Coletivo”
-→ vínculo atual e permissão são revalidados
-→ evento histórico não concede nem preserva acesso
-→ nenhum vínculo, leitura, papel, presença ou autoridade é alterado
-→ PER-108
-→ mesmo Coletivo e vínculo lógico permanecem em contexto
-</code></pre></div>
-<p>Regras integradas:</p>
-<ul>
-<li>estado canônico mais recente prevalece sobre a renderização anterior;</li>
-<li>pausa, saída, remoção ou perda de permissão não preservam acesso antigo;</li>
-<li>ações internas revalidam estado e permissão antes do efeito;</li>
-<li>retorno à Central não marca automaticamente novos itens como lidos;</li>
-<li>confirmação explícita de leitura já realizada não é desfeita pelo retorno;</li>
-<li>abrir, voltar, recarregar ou repetir não duplica efeito lógico;</li>
-<li>acesso revogado não é restaurado por histórico, cache ou repetição documental.</li>
-</ul>
+<p>A UXA-097 não altera <code>TRN-110</code>: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.</p>
+<h3 id="52-contrato-preservado-de-gkr-trn-111">5.2 Contrato preservado de <code>GKR-TRN-111</code><a class="headerlink" href="#52-contrato-preservado-de-gkr-trn-111" title="Permanent link">&para;</a></h3>
+<p>A UXA-097 não altera <code>TRN-111</code>. Permanecem vigentes as regras de vínculo atual, permissão revalidada, retorno neutro, estado canônico e idempotência estabelecidas pela UXA-096.</p>
 <h2 id="6-organizacao-oportunidades-e-relacoes-bilaterais">6. Organização, oportunidades e relações bilaterais<a class="headerlink" href="#6-organizacao-oportunidades-e-relacoes-bilaterais" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9674,16 +9708,16 @@
 </tr>
 </tbody>
 </table>
-<h2 id="8-efeito-da-uxa-096">8. Efeito da UXA-096<a class="headerlink" href="#8-efeito-da-uxa-096" title="Permanent link">&para;</a></h2>
+<h2 id="8-efeito-da-uxa-097">8. Efeito da UXA-097<a class="headerlink" href="#8-efeito-da-uxa-097" title="Permanent link">&para;</a></h2>
 <ul>
 <li>transições totais: 37;</li>
 <li>nenhuma transição nova;</li>
-<li><code>TRN-110</code>: permanece <strong>integralmente validada</strong>;</li>
-<li><code>TRN-111</code>: parcial → <strong>integralmente validada</strong>;</li>
-<li>handoffs integralmente validados no trecho de Coletivos: <strong>8</strong> (<code>105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code>, <code>110</code>, <code>111</code>, <code>112</code>).</li>
+<li><code>TRN-007</code>: não examinada → <strong>integralmente validada</strong>;</li>
+<li><code>TRN-110</code> e <code>TRN-111</code>: preservadas integralmente validadas;</li>
+<li>oito handoffs integralmente validados no trecho de Coletivos permanecem inalterados.</li>
 </ul>
 <h2 id="9-proximo-gate">9. Próximo gate<a class="headerlink" href="#9-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>A UXA-096 fecha a continuidade governada até o Início do Participante. A próxima priorização deve partir das lacunas remanescentes; <strong>UXA-097 não foi iniciada</strong>.</p>
+<p>Com <code>V1</code> encerrada, a próxima prioridade de validação vigente é <code>V2 — publicação → descoberta/mapa/lista/detalhe</code>. <strong>UXA-098 não foi iniciada.</strong></p>
 
 
 
