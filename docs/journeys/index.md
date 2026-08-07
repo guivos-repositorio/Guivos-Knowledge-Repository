@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.28.0
+version: 0.28.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -24,7 +24,9 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A1
   - GKR-JOURNEY-SCREEN-GALLERY-001
+  - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -41,6 +43,7 @@ Esta seção reúne, por referência, as jornadas da Pessoa, do Coletivo e da Or
 ## 2. Vistas disponíveis
 
 - [Galeria Visual Integrada de Telas](screen-gallery.md)
+- [Planos, Comparação e Cobrança — Galeria Candidata](screen-gallery-plans-billing.md)
 - [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md)
 - [Catálogo de Telas](screen-catalog.md)
 - [Jornada da Pessoa](person.md)
@@ -65,7 +68,7 @@ UXA-090 — cinco handoffs de solicitação validados ponta a ponta
 → UXA-097 — primeira Tela Hoje materializada; PER-007 revalidada; TRN-007 validada ponta a ponta
 → UXA-098 — publicação, descoberta, Mapa, Lista e Detalhe validados como continuidade integrada
 → UXA-099 — dez estados residuais Opportunity Boost validados
-→ UXA-100 — planos, comparação, cobrança e telas dedicadas materializados como candidatos nas três jornadas
+→ UXA-100 / UXA-100-A1 — planos, comparação, cobrança e telas dedicadas materializados como candidatos nas três jornadas
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -74,25 +77,26 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.28.0 | UXA-100 candidata |
+| visão geral das Jornadas Integradas | `active` 0.28.1 | UXA-100-A1 candidata |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
 | Jornada da Pessoa | `draft` 0.12.0 | UXA-100 adiciona Planos como etapa candidata |
 | Jornada do Coletivo | `draft` 0.13.0 | UXA-100 adiciona Planos como etapa candidata |
 | Jornada da Organização | `draft` 0.5.0 | UXA-100 adiciona Planos como etapa candidata |
 | handoffs e cenários | `active` | sínteses preservadas |
-| catálogo integrado | `active` | inclui apêndice candidato UXA-100 sem promover contagem canônica |
+| catálogo integrado | `active` 0.23.0 | inclui apêndice candidato UXA-100 sem promover contagem canônica |
 | registro de superfícies | `active` 0.15.0 | UXA-099; sem IDs de Planos ainda |
 | detalhamento da Pessoa | `active` 0.9.0 | sem alteração canônica |
 | registro de transições | `active` 0.16.0 | UXA-099; sem transições de Planos ainda |
-| galeria visual integrada | `active` | inclui apêndice candidato UXA-100 |
+| galeria visual integrada | `active` 0.18.0 | inclui apêndice candidato UXA-100 |
+| galeria candidata de Planos | `draft` 0.1.0 | 9 SVGs candidatos |
 | matriz por SVG | `active` 0.15.0 | canônica preservada até validação posterior |
 | registro de lacunas | `active` 0.24.0 | sem promoção automática |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 5. Etapa transversal de Planos — UXA-100
+## 5. Etapa transversal de Planos — UXA-100-A1
 
-A UXA-100 introduz uma etapa transversal candidata nas três jornadas:
+A UXA-100-A1 introduz uma etapa transversal candidata nas três jornadas:
 
 ```text
 área do participante
@@ -131,7 +135,7 @@ Essas telas não possuem IDs canônicos de superfície ou transição nesta etap
 | responsabilidades sem SVG dedicado | **9** |
 | fronteira sem tela por definição | 1 |
 
-Os SVGs da UXA-100 permanecem **candidatos fora da contagem canônica** até validação e promoção governadas.
+Os 9 SVGs da UXA-100 permanecem **candidatos fora da contagem canônica** até validação e promoção governadas.
 
 ## 7. Continuidades anteriores preservadas
 
