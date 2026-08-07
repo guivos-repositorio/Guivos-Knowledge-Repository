@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -13,6 +13,7 @@ depends_on:
   - UXA-086
   - UXA-087
   - UXA-088
+  - UXA-089
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -31,7 +32,7 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 1
 
 ## 2. Estado do instrumento
 
-A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adicionou o perfil `R24` para a Visão Geral do Responsável do Coletivo, a UXA-087 reformulou e validou funcionalmente essa mesma referência e a UXA-088 adiciona o perfil `R25` para a gestão de solicitações.
+A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adicionou o perfil `R24` para a Visão Geral do Responsável do Coletivo, a UXA-087 reformulou e validou funcionalmente essa referência, a UXA-088 adicionou o perfil `R25` para a gestão de solicitações e a UXA-089 reformulou seis dos sete estados de `R25` e validou funcionalmente toda a família.
 
 As 105 associações individuais estão registradas em 25 perfis. Perfis de rastreabilidade continuam sendo instrumentos documentais: não substituem análise semântica exclusiva de cada estado visual e não validam transições ou jornadas.
 
@@ -62,8 +63,8 @@ As 105 associações individuais estão registradas em 25 perfis. Perfis de rast
 | R21 | GKR-SURF-COM-004 | campanha ativa ou encerrada | retorno à gestão de campanha | reconciliar, revisar atribuição ou sair | atribuição e continuidade operacional | UXA-049 |
 | R22 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-054 |
 | R23 | GKR-SURF-COM-005 | GKR-TRN-305 | não examinada | depende do estado; desfazer, contestar ou continuar não validados | dez estados residuais da UXA-055 | pendente de validação específica |
-| R24 | GKR-SURF-COL-002 | acesso protegido com representação válida | GKR-TRN-112 para GKR-SURF-COL-003 | permanecer, adiar quando legítimo, contestar prioridade ou retornar ao contexto anterior | destino materializado; transição ainda não validada como conjunto | UXA-087 no escopo da superfície |
-| R25 | GKR-SURF-COL-003 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-112 | GKR-TRN-106; GKR-TRN-108; GKR-TRN-109 ou permanência na fila | voltar sem decidir, aguardar, cancelar rascunho ou interromper por autoridade insuficiente | sete estados sem validação; handoffs bilaterais pendentes; GKR-SURF-PER-106 ausente | pendente de validação funcional específica; UXA-088 é somente materialização |
+| R24 | GKR-SURF-COL-002 | acesso protegido com representação válida | GKR-TRN-112 para GKR-SURF-COL-003 | permanecer, adiar quando legítimo, contestar prioridade ou retornar ao contexto anterior | transição ainda não validada como conjunto | UXA-087 no escopo da superfície |
+| R25 | GKR-SURF-COL-003 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-112 | GKR-TRN-106; GKR-TRN-108; GKR-TRN-109 ou permanência na fila | voltar sem decidir, aguardar, descartar rascunho ou interromper por autoridade insuficiente | handoffs bilaterais pendentes; GKR-SURF-PER-106 ausente | UXA-089 no escopo da superfície |
 
 ## 4. Associação individual dos 105 SVGs
 
@@ -180,14 +181,15 @@ As 105 associações individuais estão registradas em 25 perfis. Perfis de rast
 - SVGs registrados: **105**;
 - associações individuais: **105**;
 - perfis documentais: **25**;
-- com validação funcional registrada: **88**;
-- pendentes de validação específica: **17**;
-- arquivos visuais adicionados pela UXA-088: **7**.
+- com validação funcional registrada: **95**;
+- pendentes de validação específica: **10**;
+- arquivos visuais adicionados pela UXA-088: **7**;
+- arquivos reformulados pela UXA-089: **6**.
 
-Os 17 pendentes correspondem aos dez estados residuais da UXA-055 e aos sete estados da UXA-088. A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.6.0; `R24` permanece validado no escopo da superfície e `R25` permanece pendente de validação funcional específica.
+Os dez pendentes remanescentes correspondem exclusivamente aos estados residuais da UXA-055. A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.7.0; `R24` e `R25` estão validados no escopo das respectivas superfícies, enquanto os handoffs continuam pendentes de validação integrada.
 
 ## 6. Próxima transição possível
 
-**UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável do Coletivo**, mediante autorização separada.
+**UXA-090 — Validação Integrada dos Handoffs Bilaterais de Solicitação em Coletivos**, mediante autorização separada.
 
-A UXA-089 não é iniciada por esta matriz.
+A UXA-090 não é iniciada por esta matriz.
