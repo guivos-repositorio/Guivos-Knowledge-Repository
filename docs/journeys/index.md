@@ -2,7 +2,7 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -29,6 +29,7 @@ related:
   - UXA-090
   - UXA-091
   - UXA-092
+  - UXA-093
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -83,6 +84,7 @@ UXA-070 a UXA-075 — seção integrada estruturada, reformulada, revalidada e p
 → UXA-090 — cinco handoffs elegíveis de solicitação validados ponta a ponta
 → UXA-091 — Meus Coletivos materializada e continuidade pós-aprovação refinada
 → UXA-092 — Meus Coletivos e resultado aprovado revalidados; TRN-108 validada ponta a ponta
+→ UXA-093 — Central de Atualizações materializada como referência P0A móvel
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -91,63 +93,65 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.20.0 | UXA-092 |
+| visão geral das Jornadas Integradas | `active` 0.21.0 | UXA-093 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
-| Jornada da Pessoa | `draft` 0.5.0 | UXA-092 |
+| Jornada da Pessoa | `draft` 0.6.0 | UXA-093 |
 | Jornada do Coletivo | `draft` 0.10.0 | UXA-092 |
-| handoffs e cenários | `active` | UXA-074; UXA-075; síntese atualizada até UXA-092 |
-| catálogo integrado | `active` 0.16.0 | UXA-092 |
-| registro de superfícies | `active` 0.9.0 | UXA-092 |
-| detalhamento da Pessoa | `active` 0.4.0 | UXA-092 |
-| registro de transições | `active` 0.9.0 | UXA-092 |
-| galeria visual integrada | `active` 0.11.0 | UXA-092 |
-| página de Coletivos | `active` 0.9.0 | UXA-092 |
-| matriz por SVG | `active` 0.9.0 | UXA-092 |
-| registro de lacunas | `active` 0.17.0 | UXA-092 |
+| handoffs e cenários | `active` | UXA-074; UXA-075; síntese atualizada até UXA-093 |
+| catálogo integrado | `active` 0.17.0 | UXA-093 |
+| registro de superfícies | `active` 0.10.0 | UXA-093 |
+| detalhamento da Pessoa | `active` 0.5.0 | UXA-093 |
+| registro de transições | `active` 0.10.0 | UXA-093 |
+| galeria visual integrada | `active` 0.12.0 | UXA-093 |
+| página de Coletivos | `active` 0.10.0 | UXA-093 |
+| matriz por SVG | `active` 0.10.0 | UXA-093 |
+| registro de lacunas | `active` 0.18.0 | UXA-093 |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-Os números de versão desta tabela correspondem ao pacote sincronizado da UXA-092 e dependem da integração governada do mesmo conjunto.
+Os números de versão desta tabela correspondem ao pacote sincronizado da UXA-093 e dependem da integração governada do mesmo conjunto.
 
-## 6. Resultado da UXA-092
+## 6. Resultado da UXA-093
 
-A UXA-092:
+A UXA-093:
 
-- reforma e valida `GKR-SURF-PER-106 — Meus Coletivos`;
-- reforma novamente e revalida o estado aprovado corrente de `GKR-SURF-PER-105`;
-- promove `GKR-TRN-108` a `integralmente validada`;
-- preserva as cinco transições integralmente validadas pela UXA-090;
-- mantém `GKR-TRN-110` parcial porque `PER-107` continua ausente;
-- não cria ou remove SVGs, superfícies, transições ou IDs;
-- não materializa `PER-107` ou `PER-108`;
+- cria 1 SVG móvel para `GKR-SURF-PER-107 — Central de Atualizações`;
+- materializa a superfície sem executar validação funcional;
+- preserva `PER-105` e `PER-106` sem alteração visual e com suas validações vigentes;
+- mantém `GKR-TRN-110` parcial apesar de ambos os endpoints estarem materializados;
+- mantém `GKR-TRN-111` ausente porque `PER-108` continua sem materialização vigente;
+- não cria IDs de superfície ou transição;
+- não materializa estados P0B da Central nem áreas P1;
 - não promove qualquer jornada.
 
-A continuidade validada deixa explícito que o vínculo é formado pela aprovação autorizada antes da navegação opcional para `Meus Coletivos`.
+A Central é tratada como triagem de mudanças com origem, natureza, autoridade, leitura, necessidade de ação e prazo explícitos, não como feed de engajamento.
 
 ## 7. Cobertura visual
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes | 106 |
-| associações individuais | 106 |
-| perfis de rastreabilidade | 26 |
+| SVGs existentes | 107 |
+| associações individuais | 107 |
+| perfis de rastreabilidade | 27 |
 | com validação funcional vigente | 96 |
-| pendentes de validação específica | 10 |
-| IDs com referência visual | 28 de 40 |
-| responsabilidades sem SVG dedicado | 11 |
+| pendentes de validação específica | 11 |
+| IDs com referência visual | 29 de 40 |
+| responsabilidades sem SVG dedicado | 10 |
 | fronteira sem tela por definição | 1 |
 
-Os dez pendentes remanescentes são exclusivamente os estados residuais da UXA-055.
+Os onze pendentes são os dez estados residuais da UXA-055 e a referência P0A de `PER-107` criada pela UXA-093.
 
 ## 8. Ressalvas
 
 - perfis agregados não substituem análise exclusiva por estado;
 - uma versão visual reformulada exige revalidação;
-- `GKR-TRN-110` permanece parcial por `PER-107` ausente;
-- estados P0B adicionais de `Meus Coletivos` continuam separados;
+- `PER-107` está materializada, mas não validada;
+- `GKR-TRN-110` permanece parcial até exame ponta a ponta;
+- `GKR-TRN-111` permanece ausente por `PER-108` não vigente;
+- estados P0B adicionais de `Meus Coletivos` e da Central continuam separados;
 - Pessoa e Coletivo permanecem `draft`;
 - continuidades entre outros pacotes permanecem parciais ou não examinadas;
-- instrumento visual `active`, superfície validada e transição documentalmente validada não equivalem a implementação.
+- instrumento visual `active`, superfície materializada/validada e transição documentalmente validada não equivalem a implementação.
 
 ## 9. Prioridade de Coletivos
 
@@ -156,11 +160,12 @@ Visão Geral do Responsável — validada
 → TRN-112 — integralmente validada
 → gestão de solicitações — validada
 ↔ TRN-105/106/107/109 com PER-105 — integralmente validadas
-→ resultado aprovado PER-105 — reformulado e revalidado
+→ resultado aprovado PER-105 — validado
 → TRN-108 — integralmente validada
 → Meus Coletivos — validado
 → TRN-110 — parcial
-→ Central de Atualizações — ausente
+→ Central de Atualizações — materializada; validação pendente
+→ TRN-111 — ausente
 → Início do Participante — reformulação pendente
 ```
 
@@ -178,6 +183,6 @@ Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
 ## 11. Próxima transição possível
 
-**UXA-093 — Materialização Controlada da Central de Atualizações (`GKR-SURF-PER-107`)**, mediante autorização separada.
+**UXA-094 — Validação Funcional da Central de Atualizações e Revalidação de `GKR-TRN-110`**, mediante autorização separada.
 
-A UXA-093 não foi iniciada.
+A UXA-094 não foi iniciada.

@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -19,6 +19,7 @@ related:
   - UXA-090
   - UXA-091
   - UXA-092
+  - UXA-093
 normative: false
 ---
 
@@ -52,11 +53,12 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 |---|---|
 | finalidade | descobrir um Coletivo, solicitar participação e compreender o resultado |
 | participantes e perspectivas | Pessoa solicitante e responsável do Coletivo |
-| nós materializados | explorar, busca, Perfil Público, revisão, PER-105, COL-003 e PER-106 |
+| nós materializados | explorar, busca, Perfil Público, revisão, PER-105, COL-003, PER-106 e PER-107 |
 | nós validados | superfícies até PER-105; COL-003; PER-106; handoffs específicos por UXA-090/092 |
+| nó materializado sem validação | PER-107 — Central de Atualizações, por UXA-093 |
 | transições integralmente validadas | TRN-105, TRN-106, TRN-107, TRN-108 e TRN-109 |
-| continuidade parcial | após Meus Coletivos, TRN-110 permanece parcial |
-| interrupção por lacuna | Central de Atualizações ausente |
+| continuidade parcial | TRN-110 entre Meus Coletivos e Central de Atualizações |
+| interrupção por lacuna | validação de PER-107/TRN-110 e continuidade posterior em PER-108 |
 | conclusão permitida | solicitação, pedido adicional, resposta, aprovação e recusa possuem continuidade bilateral validada nos handoffs indicados |
 | conclusão proibida | declarar toda a sequência interna do Coletivo ou a jornada completa como validada |
 
@@ -64,17 +66,33 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 
 | Campo | Registro |
 |---|---|
-| finalidade | tornar a formação do vínculo compreensível sem criar função, pressão ou promessa de superfícies ausentes |
+| finalidade | tornar a formação do vínculo compreensível sem criar função, pressão ou promessa de superfícies inexistentes |
 | participantes e perspectivas | responsável do Coletivo e Pessoa participante |
 | nós materializados | COL-003; resultado aprovado corrente em PER-105; PER-106 |
 | passagem validada | aprovação → resultado em PER-105 → vínculo já formado → navegação opcional → PER-106 |
 | transição | TRN-108 integralmente validada |
 | validação | COL-003 validada; estado aprovado corrente revalidado; PER-106 validada |
-| interrupção por lacuna | continuidade seguinte em TRN-110/PER-107 |
+| continuidade seguinte | PER-107 está materializada, mas TRN-110 permanece parcial |
 | conclusão permitida | a formação do vínculo e sua visibilidade em Meus Coletivos possuem validação documental integrada |
 | conclusão proibida | confundir essa validação com implementação ou com validação de PER-107/PER-108 |
 
-### 2.4 Coletivo solicita informação adicional
+### 2.4 Pessoa consulta a Central de Atualizações materializada
+
+| Campo | Registro |
+|---|---|
+| finalidade | compreender o que mudou, de onde veio e se exige ação sem transformar atenção em engajamento |
+| participantes e perspectivas | Pessoa participante e autoridades legítimas dos objetos atualizados |
+| nós materializados | PER-106 validada; PER-107 materializada |
+| validação da Central | pendente após UXA-093 |
+| continuidade | TRN-110 parcial; ambos os endpoints materializados |
+| informação preservada | origem, natureza, contexto, autoridade, leitura, ação e prazo legítimo |
+| proteção | estado lido não equivale a concordância, presença, consentimento ou ação concluída |
+| ordenação proibida | engajamento, popularidade, compra de plano ou publicidade silenciosa |
+| interrupção por lacuna | PER-108/TRN-111 e estados P0B permanecem ausentes/separados |
+| conclusão permitida | existe uma referência estrutural P0A para inspecionar a Central |
+| conclusão proibida | declarar PER-107 ou TRN-110 funcionalmente validadas ou implementadas |
+
+### 2.5 Coletivo solicita informação adicional
 
 | Campo | Registro |
 |---|---|
@@ -86,7 +104,7 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 | conclusão permitida | o ciclo bilateral de pedido adicional e resposta possui validação documental integrada |
 | conclusão proibida | confundir validação documental com implementação técnica |
 
-### 2.5 Organização e Coletivo estabelecem relação
+### 2.6 Organização e Coletivo estabelecem relação
 
 | Campo | Registro |
 |---|---|
@@ -99,7 +117,7 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 | conclusão permitida | UXA-019 define responsabilidades e limites |
 | conclusão proibida | afirmar existência de interface ou fluxo operacional bilateral |
 
-### 2.6 Organização publica oportunidade e Pessoa acessa
+### 2.7 Organização publica oportunidade e Pessoa acessa
 
 | Campo | Registro |
 |---|---|
@@ -113,7 +131,7 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 | conclusão permitida | superfícies existentes possuem validação local |
 | conclusão proibida | declarar o ciclo completo da oportunidade validado |
 
-### 2.7 Sobreposição comercial identificada
+### 2.8 Sobreposição comercial identificada
 
 | Campo | Registro |
 |---|---|
@@ -132,6 +150,6 @@ Um cenário só poderá ser marcado como completo quando todos os seus nós, tra
 
 ## 4. Estado vigente
 
-O documento permanece `active` como síntese de cenários governados e limitados pela evidência. A UXA-092 valida o cenário específico de aprovação até `Meus Coletivos`; a continuidade seguinte permanece interrompida em `PER-107` ausente.
+O documento permanece `active` como síntese de cenários governados e limitados pela evidência. A UXA-093 adiciona `PER-107` como nó materializado, mas deixa sua validação funcional e `TRN-110` abertas.
 
-O status `active` não transforma qualquer cenário em jornada implementada. A UXA-093 não é iniciada por esta sincronização.
+O status `active` não transforma qualquer cenário em jornada implementada. A próxima frente possível é UXA-094, mediante autorização separada.

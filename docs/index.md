@@ -2,34 +2,34 @@
 
 O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-## Estado vigente proposto pela UXA-092
+## Estado vigente proposto pela UXA-093
 
 A declaração oficial está no [Registro do Estado Atual](project/current-state-register.md).
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.18.0 |
+| Registro | `GKR-STATE-001` 2.19.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.79 |
-| Última frente proposta | UXA-092 — validação de Meus Coletivos e continuidade pós-aprovação |
-| Galeria visual | `active` 0.11.0; 106 SVGs |
-| Matriz por SVG | `active` 0.9.0; 106 associações e 26 perfis |
+| Marco | M7.80 |
+| Última frente proposta | UXA-093 — materialização da Central de Atualizações |
+| Galeria visual | `active` 0.12.0; 107 SVGs |
+| Matriz por SVG | `active` 0.10.0; 107 associações e 27 perfis |
 | Validações funcionais vigentes | 96 |
-| Pendentes de validação específica | 10, exclusivamente UXA-055 |
+| Pendentes de validação específica | 11: 10 UXA-055 + PER-107 |
 | Handoffs integralmente validados no fluxo de solicitação | 6 |
-| IDs com referência visual | 28 de 40 |
-| Responsabilidades sem SVG dedicado | 11 |
+| IDs com referência visual | 29 de 40 |
+| Responsabilidades sem SVG dedicado | 10 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente após eventual integração | UXA-093, não iniciada |
+| Próxima frente após eventual integração | UXA-094, não iniciada |
 
-A UXA-092 valida `PER-106 — Meus Coletivos`, revalida o estado aprovado corrente de `PER-105` e promove `TRN-108` a integralmente validada. `TRN-110` permanece parcial por ausência de `PER-107`.
+A UXA-093 materializa `PER-107 — Central de Atualizações` como referência móvel P0A sem alterar SVGs previamente validados. `TRN-110` permanece parcial apesar de possuir ambos os endpoints materializados, e `TRN-111` permanece ausente por falta de `PER-108` vigente.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-092](experience-architecture/uxa-047-092-index.md)
+- [Índice UXA-047 a UXA-093](experience-architecture/uxa-047-093-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [UXA-092 — Validação de Meus Coletivos e continuidade pós-aprovação](experience-architecture/uxa-092-my-collectives-functional-validation-and-post-approval-continuity-revalidation.md)
+- [UXA-093 — Materialização da Central de Atualizações](experience-architecture/uxa-093-collective-updates-center-materialization.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Registro Granular de Transições](journeys/transition-registry.md)
@@ -42,4 +42,4 @@ A UXA-092 valida `PER-106 — Meus Coletivos`, revalida o estado aprovado corren
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-093, Engenharia de Produto, P2–P9, `PER-107`, `PER-108`, `COL-004` a `COL-008`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza UXA-094, Engenharia de Produto, P2–P9, `PER-108`, estados P0B da Central, áreas P1 de comunicação, `COL-004` a `COL-008`, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
