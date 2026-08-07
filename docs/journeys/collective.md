@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -27,6 +27,7 @@ related:
   - UXA-094
   - UXA-095
   - UXA-096
+  - UXA-100
 normative: false
 ---
 
@@ -70,7 +71,51 @@ representação e autoridade
 
 `COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
 
-## 3. Handoffs críticos
+## 3. Planos como etapa transversal candidata
+
+A UXA-100 inclui **Planos** na jornada operacional do Coletivo. A etapa pode ser acessada a qualquer momento pela área de administração e também quando uma capacidade comercial legítima for atingida.
+
+```text
+Administração / Configurações
+→ Planos
+→ plano atual + consumo do ciclo
+→ comparar Livre / Gestão / Impacto / Enterprise
+→ manter, mudar ou solicitar proposta
+→ revisão da contratação quando aplicável
+→ pagamento simulado ou processo comercial governado
+→ retorno à operação
+```
+
+Entrada contextual:
+
+```text
+criar atividade/oportunidade
+→ limite do plano atingido ou publicação paga não incluída
+├── manter rascunho / aguardar ciclo / alternativa gratuita aplicável
+└── comparar planos
+    → Planos
+```
+
+A tela candidata dedicada é:
+
+![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
+
+[Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
+
+A tela deve:
+
+- mostrar o plano atual e o consumo do ciclo;
+- comparar `Livre → Gestão → Impacto → Enterprise`;
+- mostrar somente o ganho incremental de cada degrau, sem reapresentar herança como novidade;
+- mostrar delta direto plano atual → plano escolhido;
+- manter ações operacionais não pagas válidas quando existirem;
+- tratar Enterprise como proposta comercial e capacidade contratada, não checkout autônomo;
+- no downgrade, mostrar cotas, administradores, núcleos, integrações e demais capacidades reduzidas;
+- deixar claro que assinatura não aumenta relevância orgânica, legitimidade ou impacto.
+
+Esta etapa é materialização candidata e ainda não possui ID canônico de superfície ou transição.
+
+## 4. Handoffs críticos
 
 | Ligação | Estado |
 |---|---|
@@ -81,7 +126,7 @@ representação e autoridade
 | PER-107 → PER-108 (`TRN-111`) | **integralmente validada por UXA-096** |
 | Coletivo ↔ Organização | contratada; materialização bilateral pendente |
 
-## 4. Efeito da UXA-096
+## 5. Efeito da UXA-096
 
 - reforma os SVGs correntes de `PER-107` e `PER-108` sem criar ativos;
 - revalida `PER-107` e valida `PER-108`;
@@ -89,7 +134,7 @@ representação e autoridade
 - preserva os sete handoffs anteriores e adiciona `TRN-111` ao conjunto integral, totalizando oito;
 - não materializa operação interna do responsável nem canais P1.
 
-## 5. Princípios preservados
+## 6. Princípios preservados
 
 - responsável atua somente com autoridade concedida;
 - apoio institucional não transfere governança;
@@ -99,19 +144,22 @@ representação e autoridade
 - Central é triagem e Início é síntese; nenhum dos dois substitui canais especializados;
 - atividade continua voluntária quando não houver compromisso previamente aceito;
 - consulta não é votação universal nem obrigação de resposta;
+- plano pago amplia capacidade, não legitimidade, relevância ou impacto;
+- atingir cota não reduz visibilidade das publicações existentes;
 - pausa, recusa e saída não reduzem reputação;
 - estado canônico mais recente prevalece sobre estado visual obsoleto;
 - validação integral documental não equivale a implementação.
 
-## 6. Estado da vista
+## 7. Estado da vista
 
 Esta vista permanece `draft` porque:
 
 - participantes, comunicação e demais áreas do responsável continuam incompletos;
 - estados P0B de superfícies da Pessoa permanecem separados;
 - a relação Organização–Coletivo permanece contratada e não materializada;
+- Planos é etapa candidata da UXA-100 sem superfície/transição canônica;
 - outras continuidades ainda não foram examinadas como conjunto.
 
-## 7. Próxima evolução possível
+## 8. Próxima evolução possível
 
-A continuidade até o Início do Participante está validada no escopo documental. A próxima priorização deverá partir das lacunas remanescentes; **UXA-097 não foi iniciada**.
+A UXA-100 adiciona Planos à leitura operacional do Coletivo sem promover a jornada. A próxima decisão desta frente é validar funcionalmente as telas e definir superfícies/transições somente após essa validação.
