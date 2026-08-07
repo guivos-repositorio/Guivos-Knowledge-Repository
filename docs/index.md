@@ -8,25 +8,27 @@ A declaração oficial está no [Registro do Estado Atual](project/current-state
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.10.0 |
+| Registro | `GKR-STATE-001` 2.11.0 |
 | Era | GE-2 — Knowledge |
 | Marco | M7.72 |
-| Última frente integrada | UXA-084 — revalidação da galeria integrada |
-| Galeria visual | `draft` 0.4.0; aprovada com ressalvas |
-| Matriz por SVG | `draft` 0.2.0; 97 SVGs e 23 perfis de rastreabilidade |
+| Última frente integrada | UXA-085 — promoção controlada dos instrumentos visuais |
+| Galeria visual | `active` 0.5.0; ressalvas preservadas |
+| Páginas visuais | cinco páginas `active` 0.3.0 |
+| Matriz por SVG | `active` 0.3.0; 97 SVGs e 23 perfis de rastreabilidade |
 | Estados sem validação específica | 10 |
 | Responsabilidades sem SVG dedicado | 14 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima frente | UXA-085, não iniciada |
+| Próxima frente | UXA-086, não iniciada |
 
-A galeria permite localizar, percorrer e comparar os ativos visuais sem apresentar lacunas não comprovadas como concluídas. A promoção da galeria e da matriz continua dependendo de decisão governada separada.
+A galeria permite localizar, percorrer e comparar os ativos visuais sem apresentar lacunas não comprovadas como concluídas. Seu status `active` aprova somente o instrumento documental de inspeção no escopo revalidado pela UXA-084.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-084](experience-architecture/uxa-047-084-index.md)
+- [Índice UXA-047 a UXA-085](experience-architecture/uxa-047-085-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
+- [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Jornadas Integradas](journeys/index.md)
 - [Roadmap Arquitetural](roadmap.md)
 - [Índice de changelogs](project/changelog-index.md)
@@ -37,4 +39,4 @@ A galeria permite localizar, percorrer e comparar os ativos visuais sem apresent
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-085, Engenharia de Produto, P2–P9, promoção de drafts, publicação externa, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza UXA-086, Engenharia de Produto, P2–P9, materialização de lacunas, publicação externa adicional, implantação tecnológica ou operação comercial. Em caso de divergência, prevalece `GKR-STATE-001`.
