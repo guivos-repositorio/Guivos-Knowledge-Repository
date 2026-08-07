@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 related:
   - UXA-059
   - UXA-070
@@ -19,6 +19,7 @@ related:
   - UXA-082
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -30,7 +31,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A revalidação da galeria melhora a inspeção, mas não fecha, inicia ou reclassifica nenhuma ausência.
+Este documento é observacional e não promocional. A promoção da galeria e da matriz pela UXA-085 melhora o estado documental dos instrumentos de inspeção, mas não fecha, inicia ou reclassifica nenhuma ausência.
 
 ## 2. Regra de priorização
 
@@ -63,22 +64,19 @@ A origem de autoridade deve preceder o efeito percebido a jusante.
 | V3 | mapa, lista e detalhe | GKR-SURF-PER-201 a GKR-SURF-PER-203; GKR-TRN-204; GKR-TRN-210; GKR-TRN-211 | ordem visual aprovada | validação do conjunto e retornos |
 | V4 | dez estados residuais do Opportunity Boost | GKR-SURF-COM-005; GKR-TRN-305 | 10 SVGs rastreados e sem validação | pacote específico de validação |
 | V5 | efeito externo de oportunidades | GKR-SURF-PER-203; GKR-SURF-BND-001; GKR-TRN-205 | fronteira sem tela por definição | contrato e validação específicos |
-| V6 | erros, retornos e interrupções | todos | matriz aprovada com ressalvas; cobertura integrada ainda dispersa | validação por jornada |
+| V6 | erros, retornos e interrupções | todos | matriz promovida com ressalvas; cobertura integrada ainda dispersa | validação por jornada |
 
-## 5. Resultado da UXA-084
+## 5. Resultado da UXA-084 e efeito da UXA-085
 
-A UXA-084 aprovou com ressalvas a galeria e a matriz como instrumentos documentais de inspeção.
+A UXA-084 aprovou com ressalvas a galeria e a matriz como instrumentos documentais de inspeção. A UXA-085 promoveu esses instrumentos para `active` sem alterar o estado das lacunas ou transições.
 
-Foram confirmados:
+Permanecem confirmados:
 
 - ordem funcional corrigida;
 - Home e Tela Hoje separadas;
 - rota integrada entre cinco páginas;
 - 97 SVGs associados individualmente a 23 perfis;
-- versões sincronizadas;
 - ausência e indeterminação preservadas.
-
-A aprovação não altera o estado das lacunas ou das transições.
 
 ## 6. Ressalvas vigentes
 
@@ -116,4 +114,6 @@ Uma lacuna somente poderá ser encerrada quando houver autoridade, maturidade, m
 
 ## 10. Estado vigente
 
-A galeria está em `draft` 0.4.0 e a matriz em `draft` 0.2.0, ambas aprovadas com ressalvas e aguardando eventual promoção controlada. Nenhuma lacuna foi fechada, iniciada ou reclassificada pela UXA-084.
+A galeria está `active` 0.5.0, suas cinco páginas estão `active` 0.3.0 e a matriz está `active` 0.3.0. Nenhuma lacuna foi fechada, iniciada ou reclassificada pela UXA-085.
+
+A primeira lacuna futura continua sendo `GKR-SURF-COL-002 — Visão Geral do Responsável`, cuja materialização depende de autorização separada.
