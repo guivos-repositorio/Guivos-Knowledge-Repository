@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.11.0
+version: 0.12.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -17,6 +17,7 @@ related:
   - UXA-092
   - UXA-093
   - UXA-094
+  - UXA-095
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -29,7 +30,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.11.0 preserva as 37 transições e promove exclusivamente `GKR-TRN-110` de `parcial` para `integralmente validada` após a validação funcional integrada da UXA-094. `GKR-TRN-111` permanece `ausente`.
+A versão 0.12.0 preserva as 37 transições. A UXA-095 torna `GKR-TRN-111` observável entre a Central reformulada e o novo Início do Participante, promovendo-a exclusivamente de `ausente` para `parcial`.
 
 ## 2. Convenções de estado
 
@@ -79,25 +80,28 @@ Validação integral documental não comprova implementação técnica.
 | GKR-TRN-107 | PER-105 | COL-003 | solicitante → responsável | enviar resposta adicional à mesma finalidade | estado ainda elegível; repetição não duplica conteúdo | UXA-067; UXA-089; UXA-090 | **integralmente validada** | — |
 | GKR-TRN-108 | COL-003 | PER-106 | responsável → participante | aprovação forma vínculo; PER-105 mostra resultado; navegação posterior é opcional | autoridade e estado vigentes; `Agora não` só interrompe navegação | UXA-089; UXA-090; UXA-092 | **integralmente validada** | — |
 | GKR-TRN-109 | COL-003 | PER-105 | responsável → solicitante | recusar com fundamento proporcional; expiração permanece distinta | autoridade vigente; estado revalidado; repetição não duplica recusa | UXA-067; UXA-089; UXA-090 | **integralmente validada** | — |
-| GKR-TRN-110 | PER-106 | PER-107 | participante | escolher `Ver atualizações`; abrir Central sem alterar vínculo ou leitura; preservar origem/natureza/autoridade/ação/prazo | vínculo/autorização pertinente; retorno não altera estado; ação substantiva revalida estado canônico; repetição de abertura/leitura é idempotente | UXA-092 na origem; UXA-093 materialização; **UXA-094 validação integrada** | **integralmente validada** | — |
-| GKR-TRN-111 | PER-107 | PER-108 | participante | selecionar contexto interno futuro | PER-108 ainda não vigente; nenhum destino fictício | UXA-094 somente na origem validada | **ausente** | Início do Participante em reformulação/materialização pendente |
+| GKR-TRN-110 | PER-106 | PER-107 | participante | escolher `Ver atualizações`; abrir Central sem alterar vínculo ou leitura; preservar origem/natureza/autoridade/ação/prazo | vínculo/autorização pertinente; retorno não altera estado; ação substantiva revalida estado canônico; repetição de abertura/leitura é idempotente | UXA-092 na origem; UXA-093 materialização; UXA-094 validação integrada | **integralmente validada** | — |
+| GKR-TRN-111 | PER-107 | PER-108 | participante | escolher `Abrir início do Coletivo` em vínculo existente; preservar mesmo Coletivo e mesmo vínculo sem alterar leitura, papel, presença ou autoridade | origem corrente reformulada e destino novo exigem revalidação/validação integrada; retorno e concorrência ainda não examinados como conjunto | UXA-094 na origem anterior; **UXA-095 materialização/refinamento** | **parcial** | validar PER-107 corrente, PER-108 e handoff ponta a ponta |
 | GKR-TRN-112 | COL-002 | COL-003 | responsável | abrir fila especializada preservando Coletivo e escopo | representação/autoridade vigentes; navegação não altera fila | UXA-087; UXA-089; UXA-090 | **integralmente validada** | — |
 | GKR-TRN-113 | COL-004 | COL-005 | responsável | comunicar a participantes autorizados | papel e escopo de audiência | UXA-058; UXA-059 | contratada | operação interna não materializada |
 
-### 5.1 Contrato específico de `GKR-TRN-110`
+### 5.1 Contrato preservado de `GKR-TRN-110`
 
-A UXA-094 valida explicitamente:
+A UXA-095 não altera o contrato validado de `TRN-110`: entrada em `PER-107` continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.
 
-- gatilho observável em `PER-106`;
-- entrada neutra: abrir a Central não muda vínculo nem leitura;
-- contexto limitado a vínculos/objetos autorizados;
-- retorno seguro a `PER-106`;
-- leitura separada do estado substantivo;
-- ações revalidando o estado canônico antes de produzir efeito;
-- atualização concorrente prevalecendo sobre cartão obsoleto;
-- abertura, recarga e confirmação de leitura idempotentes;
-- segurança material acima de ação comum;
-- preferências sem ocultar aviso essencial além do limite necessário à segurança.
+### 5.2 Refinamento de `GKR-TRN-111`
+
+A UXA-095 representa:
+
+```text
+PER-107
+→ “Abrir início do Coletivo”
+→ nenhum vínculo, leitura, papel, presença ou autoridade é alterado
+→ PER-108
+→ contexto do mesmo Coletivo e vínculo é preservado
+```
+
+A representação não valida retorno, concorrência, estado obsoleto, ações internas ou interrupções como um contrato integrado.
 
 ## 6. Organização, oportunidades e relações bilaterais
 
@@ -126,14 +130,14 @@ A UXA-094 valida explicitamente:
 | GKR-TRN-305 | COM-004 | COM-005 | parcial | dez estados residuais UXA-055 |
 | GKR-TRN-306 | COM-002 | PER-202 | parcial | retorno patrocinado → lista orgânica |
 
-## 8. Efeito da UXA-094
+## 8. Efeito da UXA-095
 
 - transições totais: 37;
 - nenhuma transição nova;
-- `TRN-110`: parcial → **integralmente validada**;
-- `TRN-111`: permanece ausente;
-- handoffs integralmente validados no trecho de Coletivos: **7** (`105`, `106`, `107`, `108`, `109`, `110`, `112`).
+- `TRN-110`: permanece **integralmente validada**;
+- `TRN-111`: `ausente` → **parcial**;
+- handoffs integralmente validados no trecho anterior: **7** (`105`, `106`, `107`, `108`, `109`, `110`, `112`), sem nova promoção.
 
 ## 9. Próximo gate
 
-A próxima continuidade autorizável é `PER-107 → PER-108`, condicionada à materialização/reformulação de `PER-108` em **UXA-095**. A UXA-095 não foi iniciada.
+A próxima continuidade autorizável é a validação integrada de `PER-107 → PER-108`, condicionada à revalidação do SVG corrente de `PER-107` e à validação funcional de `PER-108` em **UXA-096**. A UXA-096 não foi iniciada.
