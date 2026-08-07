@@ -1,15 +1,17 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-OPERATIONS-001
 title: Opportunity Boost — Operação, Relatórios e Resíduos
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -151,6 +153,8 @@ campanha configurada
 
 ## 6. Limite
 
-Os dez estados da UXA-055 permanecem materializados, porém sem validação funcional específica. A UXA-083 apenas os torna rastreáveis na sequência de inspeção.
+Os dez estados da UXA-055 permanecem materializados, porém sem validação funcional específica. A promoção documental da galeria não altera esse estado.
+
+O status `active` registra somente a promoção do instrumento de inspeção pela UXA-085; não valida os dez estados residuais nem suas transições.
 
 [← Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md)
