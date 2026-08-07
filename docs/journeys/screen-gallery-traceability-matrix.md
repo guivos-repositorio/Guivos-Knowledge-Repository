@@ -1,14 +1,15 @@
 ---
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 depends_on:
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -30,6 +31,8 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos 9
 **Aprovada com ressalvas no escopo documental de rastreabilidade.**
 
 As 97 associações individuais foram confirmadas. A utilização de 23 perfis é aceita para inspeção e cobertura, mas não substitui análise semântica exclusiva de cada estado visual nem valida transições ou jornadas.
+
+A UXA-085 promove esta matriz somente como instrumento documental vigente, preservando o conteúdo e todas as ressalvas do parecer.
 
 ## 3. Perfis de rastreabilidade
 
@@ -168,10 +171,12 @@ As 97 associações individuais foram confirmadas. A utilização de 23 perfis �
 - perfis documentais: **23**;
 - com validação de origem registrada: **87**;
 - pendentes de validação específica: **10**;
-- arquivos visuais alterados pelas UXA-083 e UXA-084: **0**.
+- arquivos visuais alterados pelas UXA-083, UXA-084 e UXA-085: **0**.
 
-A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz permanece `draft` 0.2.0, aprovada com ressalvas e elegível para promoção controlada.
+A associação a um perfil não valida automaticamente uma transição ou jornada. A matriz está `active` 0.3.0 após a promoção controlada da UXA-085, mantendo as ressalvas do parecer da UXA-084.
 
 ## 6. Próxima transição possível
 
-**UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação**, mediante autorização separada.
+**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+
+A UXA-086 não é iniciada pela promoção desta matriz.
