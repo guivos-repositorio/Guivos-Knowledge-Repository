@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-PERSON-001
 title: Pessoa — Fundação, Entrada, Compreensão e Recorrência
 status: active
-version: 0.3.0
+version: 0.4.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -12,6 +12,7 @@ related:
   - UXA-083
   - UXA-084
   - UXA-085
+  - UXA-097
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -29,10 +30,11 @@ Home pública
 → início protegido
 → expressão guiada
 → compreensão inicial
-→ Tela Hoje
+→ primeira Tela Hoje
+→ Tela Hoje recorrente
 ```
 
-A ordem acima organiza a inspeção; não declara a transição `GKR-TRN-007` como validada.
+A UXA-097 valida `GKR-TRN-007` entre a compreensão inicial e a primeira Tela Hoje. Isso não valida os handoffs pessoais anteriores ainda parciais.
 
 ## 2. Home pública
 
@@ -100,7 +102,7 @@ A ordem acima organiza a inspeção; não declara a transição `GKR-TRN-007` co
 
 ## 5. Compreensão inicial
 
-**Cobertura:** 5 SVGs · IDs: `GKR-SURF-PER-006`, `GKR-SURF-PER-007` · origem: `UXA-036` · validação: `UXA-037`
+**Cobertura:** 5 SVGs · IDs: `GKR-SURF-PER-006`, `GKR-SURF-PER-007` · origem: `UXA-036` · validação: `UXA-037`; estado de decisão corrente revalidado por `UXA-097`
 
 ### `uxa-036-initial-understanding-processing-mobile.svg`
 
@@ -122,7 +124,17 @@ A ordem acima organiza a inspeção; não declara a transição `GKR-TRN-007` co
 
 ![](../assets/wireframes/uxa-036-initial-understanding-insufficient-basis-mobile.svg){ width="320" loading="lazy" }
 
-## 6. Tela Hoje — experiência recorrente
+## 6. Tela Hoje — primeira entrada
+
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-008` · origem e validação: `UXA-097` · entrada: `GKR-TRN-007` integralmente validada
+
+### `uxa-097-first-today-after-initial-understanding-mobile.svg`
+
+![](../assets/wireframes/uxa-097-first-today-after-initial-understanding-mobile.svg){ width="320" loading="lazy" }
+
+A primeira variante não presume avanço, mudança anterior, urgência ou preenchimento comercial. Sem autorização de personalização, os blocos pessoais são omitidos.
+
+## 7. Tela Hoje — experiência recorrente
 
 **Cobertura:** 1 SVG · ID: `GKR-SURF-PER-008` · origem: `UXA-006` · validação local: `UXA-010`
 
@@ -130,10 +142,10 @@ A ordem acima organiza a inspeção; não declara a transição `GKR-TRN-007` co
 
 ![](../assets/wireframes/uxa-006-hoje-mobile.svg){ width="320" loading="lazy" }
 
-## 7. Limite
+## 8. Limite
 
-A Home e a Tela Hoje permanecem separadas. A passagem da compreensão inicial para a experiência recorrente continua `não examinada` como conjunto.
+A Home e a Tela Hoje permanecem separadas. `TRN-007` está integralmente validada, mas `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` continuam parciais; portanto a Jornada da Pessoa permanece `draft`.
 
-O status `active` registra somente a promoção documental do instrumento de inspeção executada pela UXA-085; não valida a jornada da Pessoa nem a transição `GKR-TRN-007`.
+O status `active` registra o instrumento de inspeção e não inicia protótipo ou Engenharia de Produto.
 
 [← Índice da galeria](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Oportunidades e Organização →](screen-gallery-opportunities-organization.md)
