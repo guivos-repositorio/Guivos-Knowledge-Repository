@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 related:
   - UXA-070
   - UXA-071
@@ -21,6 +21,7 @@ related:
   - UXA-082
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -71,6 +72,7 @@ UXA-070 a UXA-075 — seção integrada estruturada, reformulada, revalidada e p
 → UXA-082 — validação não aprovada e priorização por dependência
 → UXA-083 — reformulação da galeria e matriz individual dos 97 SVGs
 → UXA-084 — revalidação aprovada com ressalvas
+→ UXA-085 — promoção controlada dos instrumentos visuais
 ```
 
 Nenhuma etapa autoriza automaticamente a seguinte.
@@ -82,27 +84,28 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | visão geral das Jornadas Integradas | `active` | UXA-075 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita |
 | handoffs e cenários | `active` | UXA-074; UXA-075 |
-| catálogo integrado | `active` 0.9.0 | UXA-084 |
+| catálogo integrado | `active` 0.10.0 | UXA-085 |
 | registros de superfícies e transições | `active` 0.3.0 | UXA-080 |
 | quatro detalhamentos granulares | `active` 0.2.0 | UXA-080 |
-| galeria visual integrada | `draft` 0.4.0; aprovada com ressalvas | UXA-084 |
-| cinco páginas visuais | `draft` 0.2.0; revalidadas como conjunto | UXA-084 |
-| matriz por SVG | `draft` 0.2.0; aprovada com ressalvas | UXA-084 |
-| registro de lacunas | `active` 0.9.0 | UXA-084 |
+| galeria visual integrada | `active` 0.5.0; ressalvas preservadas | UXA-085 |
+| cinco páginas visuais | `active` 0.3.0; instrumentos de inspeção | UXA-085 |
+| matriz por SVG | `active` 0.3.0; ressalvas preservadas | UXA-085 |
+| registro de lacunas | `active` 0.10.0 | UXA-085 |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | não iniciada | W0-01 |
 
-## 6. Resultado da UXA-084
+## 6. Resultado da UXA-085
 
-A revalidação aprovou com ressalvas:
+A UXA-085 promove somente a galeria, suas cinco páginas integrantes e a matriz por SVG como instrumentos documentais vigentes no escopo aprovado pela UXA-084.
 
-- a ordem funcional da Pessoa;
-- a separação entre Home e Tela Hoje;
-- a rota anterior–índice–matriz–próxima página;
-- as 97 associações individuais a 23 perfis;
-- a sincronização dos resumos e versões.
+A promoção não:
 
-A aprovação limita-se ao instrumento de inspeção e não valida jornadas ponta a ponta.
+- valida jornadas ponta a ponta;
+- altera os 97 SVGs;
+- reclassifica superfícies ou transições;
+- fecha lacunas;
+- valida os dez estados residuais da UXA-055;
+- inicia protótipo, aplicação ou Engenharia de Produto.
 
 ## 7. Cobertura visual
 
@@ -122,7 +125,7 @@ A aprovação limita-se ao instrumento de inspeção e não valida jornadas pont
 - perfis agregados não substituem análise exclusiva por estado;
 - dez estados da UXA-055 permanecem sem validação;
 - continuidades entre pacotes permanecem parciais ou não examinadas;
-- galeria aprovada não equivale a jornada validada.
+- instrumento visual `active` não equivale a jornada validada.
 
 ## 9. Prioridade futura de Coletivos
 
@@ -150,4 +153,6 @@ Valores desconhecidos permanecem `indeterminado`, `ausente` ou `não examinado`.
 
 ## 11. Próxima transição possível
 
-**UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação**, mediante autorização separada.
+**UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+
+A UXA-086 não foi iniciada.
