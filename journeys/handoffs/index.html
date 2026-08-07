@@ -9111,7 +9111,7 @@
 <td>GKR-TRN-104</td>
 <td>Pessoa — PER-104 validada</td>
 <td>envia solicitação de participação</td>
-<td>PER-105 validada na versão aplicável</td>
+<td>PER-105 validada</td>
 <td>UXA-056</td>
 <td>UXA-065; UXA-067</td>
 <td>cancelamento e acompanhamento</td>
@@ -9131,7 +9131,7 @@
 <td>GKR-TRN-106</td>
 <td>COL-003 validada</td>
 <td>solicita informação adicional</td>
-<td>PER-105</td>
+<td>PER-105 validada</td>
 <td>UXA-056</td>
 <td>UXA-067; UXA-089; UXA-090</td>
 <td>responder, não informar, contestar ou cancelar</td>
@@ -9139,7 +9139,7 @@
 </tr>
 <tr>
 <td>GKR-TRN-107</td>
-<td>PER-105</td>
+<td>PER-105 validada</td>
 <td>envia informação adicional</td>
 <td>COL-003 validada</td>
 <td>UXA-056</td>
@@ -9151,7 +9151,7 @@
 <td>GKR-TRN-109</td>
 <td>COL-003 validada</td>
 <td>recusa solicitação</td>
-<td>PER-105</td>
+<td>PER-105 validada</td>
 <td>UXA-014; UXA-056</td>
 <td>UXA-067; UXA-089; UXA-090</td>
 <td>fundamento proporcional; nova exploração posterior</td>
@@ -9161,19 +9161,19 @@
 <td>GKR-TRN-108</td>
 <td>COL-003 validada</td>
 <td>aprova e forma vínculo; resultado é mostrado em PER-105</td>
-<td>PER-106 materializada</td>
+<td>PER-106 validada</td>
 <td>UXA-014; UXA-056</td>
-<td>UXA-089; UXA-091</td>
-<td>Pessoa pode não prosseguir; preferências preservadas</td>
-<td><strong>parcial</strong>; versões correntes aguardam UXA-092</td>
+<td>UXA-089; UXA-092</td>
+<td>Pessoa pode optar por <code>Agora não</code>; vínculo já está formado; preferências preservadas</td>
+<td><strong>integralmente validada</strong></td>
 </tr>
 <tr>
 <td>GKR-TRN-110</td>
-<td>PER-106 materializada</td>
+<td>PER-106 validada</td>
 <td>acessar atualizações do vínculo</td>
 <td>PER-107 ausente</td>
 <td>UXA-056; UXA-059</td>
-<td>origem em UXA-091</td>
+<td>origem validada em UXA-092</td>
 <td>permanecer/retornar a Meus Coletivos</td>
 <td><strong>parcial</strong>; destino ausente</td>
 </tr>
@@ -9230,19 +9230,21 @@
 </tbody>
 </table>
 <h2 id="3-continuidade-pos-aprovacao">3. Continuidade pós-aprovação<a class="headerlink" href="#3-continuidade-pos-aprovacao" title="Permanent link">&para;</a></h2>
-<p>A UXA-091 torna explícita a sequência documental:</p>
+<p>A UXA-092 valida a sequência documental:</p>
 <div class="highlight"><pre><span></span><code>COL-003 — aprovação confirmada
 → resultado aprovado em PER-105
-→ Pessoa escolhe “Ver em Meus Coletivos”
-→ PER-106 — vínculo confirmado visível
+→ vínculo já formado
+→ Pessoa escolhe “Ver em Meus Coletivos” ou “Agora não”
+→ PER-106 — mesmo vínculo confirmado visível quando a navegação ocorre
 </code></pre></div>
-<p>Essa passagem permanece parcial. A materialização dos endpoints não substitui a validação integrada reservada à UXA-092.</p>
+<p>A navegação é opcional e não funciona como gate da aprovação. <code>TRN-108</code> está integralmente validada no escopo documental; a continuidade seguinte, <code>TRN-110</code>, permanece parcial por ausência de <code>PER-107</code>.</p>
 <h2 id="4-registro-granular">4. Registro granular<a class="headerlink" href="#4-registro-granular" title="Permanent link">&para;</a></h2>
 <p>O detalhamento individual continua no <a href="../transition-registry/">Registro Granular de Transições</a>, que é a referência por ID para origem, destino, autoridade, dados, gate, reversibilidade, interrupção, tempo, evidência e estado.</p>
 <h2 id="5-regras-de-protecao">5. Regras de proteção<a class="headerlink" href="#5-regras-de-protecao" title="Permanent link">&para;</a></h2>
 <ul>
 <li>origem materializada não presume destino validado;</li>
-<li>resultado visível não comprova continuidade validada;</li>
+<li>resultado visível não comprova continuidade validada sem gate próprio;</li>
+<li>navegação posterior não deve ser confundida com efeito já confirmado;</li>
 <li>contrato bilateral não equivale a interface bilateral;</li>
 <li>nenhuma seta será criada por proximidade, ordem numérica ou conveniência narrativa;</li>
 <li>um ID estabiliza a referência documental, mas não implementa a transição;</li>
@@ -9250,8 +9252,8 @@
 <li>validação integral documental não equivale a implementação técnica.</li>
 </ul>
 <h2 id="6-estado-vigente">6. Estado vigente<a class="headerlink" href="#6-estado-vigente" title="Permanent link">&para;</a></h2>
-<p>A matriz permanece <code>active</code> como síntese governada. Cinco handoffs de solicitação estão integralmente validados por UXA-090; <code>TRN-108</code> e <code>TRN-110</code> permanecem parciais após UXA-091.</p>
-<p>A UXA-092 não é iniciada por esta sincronização.</p>
+<p>A matriz permanece <code>active</code> como síntese governada. Seis handoffs do fluxo de solicitação estão integralmente validados por UXA-090/092: <code>TRN-105</code>, <code>106</code>, <code>107</code>, <code>108</code>, <code>109</code> e <code>112</code>.</p>
+<p><code>TRN-110</code> permanece parcial enquanto <code>PER-107 — Central de Atualizações</code> estiver ausente. A UXA-093 não é iniciada por esta sincronização.</p>
 
 
 
