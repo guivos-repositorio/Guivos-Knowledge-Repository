@@ -173,7 +173,9 @@ plano superior
 
 A comparação incremental não deverá repetir benefícios herdados como se fossem novos.
 
-Quando o plano atual da pessoa, Coletivo ou Organização for conhecido, a interface deverá também resumir o **delta direto entre o plano atual e o plano escolhido**, mesmo quando houver um ou mais degraus intermediários.
+Quando o plano atual da Pessoa, Coletivo ou Organização for conhecido, a interface deverá também resumir o **delta direto entre o plano atual e o plano escolhido**, mesmo quando houver um ou mais degraus intermediários.
+
+Exemplo: se uma Pessoa no Free selecionar Pro, a comparação direta `Free → Pro` deverá consolidar todos os incrementos aplicáveis de Plus e Pro, sem exigir que a Pessoa reconstrua mentalmente duas colunas intermediárias.
 
 No downgrade, a mesma regra será invertida: a revisão deverá destacar **somente as capacidades que deixarão de estar disponíveis ou terão limite reduzido**, sem sugerir perda de direitos universais ou de dados protegidos.
 
