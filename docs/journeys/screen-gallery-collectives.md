@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-COLLECTIVES-001
 title: Coletivos
 status: active
-version: 0.10.0
+version: 0.11.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -20,6 +20,7 @@ related:
   - UXA-091
   - UXA-092
   - UXA-093
+  - UXA-094
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -45,7 +46,7 @@ explorar e buscar
 → Início do Participante
 ```
 
-A galeria cobre visualmente a sequência até `Central de Atualizações`. `GKR-SURF-COL-002` foi reformulada e validada pela UXA-087; `GKR-SURF-COL-003` foi materializada pela UXA-088 e reformulada/validada pela UXA-089; cinco handoffs elegíveis foram validados pela UXA-090; `TRN-108`, `PER-105` aprovado e `PER-106` foram fechados pela UXA-092. A UXA-093 materializa `PER-107` sem validação funcional e mantém `TRN-110` parcial.
+A galeria cobre visualmente a sequência até `Central de Atualizações`. A UXA-094 reformula e revalida as referências correntes de `PER-106` e `PER-107` e valida integralmente `TRN-110`. `TRN-111/PER-108` permanecem a interrupção explícita seguinte.
 
 ## 2. Descoberta e busca
 
@@ -151,7 +152,7 @@ A galeria cobre visualmente a sequência até `Central de Atualizações`. `GKR-
 
 ![](../assets/wireframes/uxa-066-collective-pending-request-expired-mobile.svg){ width="320" loading="lazy" }
 
-A UXA-067 validou os oito estados na versão então vigente. A UXA-091 reformulou exclusivamente o SVG de aprovação e a UXA-092 o reformula novamente para deixar explícito que a aprovação já está registrada antes da navegação. O estado aprovado corrente foi revalidado pela UXA-092; os oito estados possuem validação funcional vigente.
+A família possui oito estados com validação funcional vigente; o estado aprovado corrente foi revalidado pela UXA-092.
 
 ## 6. Referência inicial do Coletivo
 
@@ -169,7 +170,7 @@ A UXA-067 validou os oito estados na versão então vigente. A UXA-091 reformulo
 
 ![](../assets/wireframes/uxa-086-collective-responsible-overview-desktop.svg){ width="720" loading="lazy" }
 
-A UXA-087 aprovou a referência após reformulação controlada. `GKR-TRN-112` foi validada integralmente pela UXA-090.
+`GKR-TRN-112` está integralmente validada pela UXA-090.
 
 ## 8. Gestão de Solicitações do Responsável
 
@@ -203,31 +204,31 @@ A UXA-087 aprovou a referência após reformulação controlada. `GKR-TRN-112` f
 
 ![](../assets/wireframes/uxa-088-collective-request-management-insufficient-authority-desktop.svg){ width="720" loading="lazy" }
 
-A UXA-089 aprovou os sete estados após reformulação controlada de seis deles. A UXA-090 validou integralmente `GKR-TRN-105`, `106`, `107`, `109` e `112`; a UXA-092 validou integralmente `GKR-TRN-108`.
+A UXA-090/092 validou os handoffs aplicáveis do fluxo de solicitação.
 
 ## 9. Meus Coletivos
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-106` · origem: `UXA-091` · reformulação e validação: **UXA-092**
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-106` · origem: `UXA-091` · validação corrente: **UXA-092/094**
 
 ### `uxa-091-my-collectives-mobile.svg`
 
 ![](../assets/wireframes/uxa-091-my-collectives-mobile.svg){ width="320" loading="lazy" }
 
-A referência organiza participações e estados relacionados — acompanhamento, solicitações, convites e pausas — como categorias independentes. Não cria ranking, pontuação de dedicação, comparação, sequência obrigatória ou contagem própria de não lidos e não substitui a Central de Atualizações.
+A UXA-094 adiciona o gatilho explícito `Ver atualizações`. Abrir a Central é opcional, não altera vínculo e não marca itens como lidos. A superfície permanece sem ranking, score ou pressão de participação.
 
-`GKR-TRN-108` está integralmente validada. `GKR-TRN-110` permanece parcial mesmo após a materialização do destino pela UXA-093, porque a ligação ainda não foi validada como conjunto.
+`GKR-TRN-108` e `GKR-TRN-110` estão integralmente validadas.
 
 ## 10. Central de Atualizações
 
-**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-107` · origem: **UXA-093** · validação funcional: **pendente**
+**Cobertura:** 1 SVG · ID: `GKR-SURF-PER-107` · origem: `UXA-093` · reformulação e validação: **UXA-094**
 
 ### `uxa-093-collective-updates-center-mobile.svg`
 
 ![](../assets/wireframes/uxa-093-collective-updates-center-mobile.svg){ width="320" loading="lazy" }
 
-A referência materializa uma central pessoal de triagem: origem, natureza, autoridade, leitura, necessidade de ação e prazo permanecem distinguíveis. A ordem não utiliza potencial de engajamento, popularidade, compra de plano ou publicidade silenciosa. `Lido` não significa concordância, presença ou ação concluída.
+A referência corrente prioriza segurança material, mostra fonte/autoridade e limite temporal quando aplicável, oferece preferências para conteúdo não essencial, mantém acesso às demais categorias e separa leitura de efeito substantivo. Ações revalidam o estado canônico e repetição de abertura/leitura não duplica efeitos.
 
-A UXA-093 não materializa os estados P0B de vazio, excesso de volume ou baixa conectividade, nem os canais especializados P1. `GKR-TRN-110` continua parcial; `GKR-TRN-111` continua ausente por `PER-108` não vigente.
+`GKR-TRN-110` está integralmente validada. `GKR-TRN-111` continua ausente porque `PER-108` permanece sem materialização vigente.
 
 ## 11. Dependência sem SVG vigente
 
@@ -242,15 +243,15 @@ GKR-SURF-PER-108 — Início do Participante
 | Indicador | Resultado |
 |---|---:|
 | SVGs | 33 |
-| validados na versão corrente | 32 |
-| pendentes | 1 |
+| validados na versão corrente | **33** |
+| pendentes | **0** |
 
-A pendência desta página é exclusivamente `uxa-093-collective-updates-center-mobile.svg`. As outras dez pendências globais permanecem nos estados residuais da UXA-055, em outra família visual.
+As dez pendências globais permanecem exclusivamente na UXA-055, em outra família visual.
 
 ## 13. Próximo gate
 
-**UXA-094 — Validação Funcional da Central de Atualizações e Revalidação de `GKR-TRN-110`**, mediante autorização separada.
+**UXA-095 — Materialização/Reformulação Controlada do Início do Participante (`GKR-SURF-PER-108`) e Refinamento de `GKR-TRN-111`**, mediante autorização separada.
 
-A UXA-094 não é iniciada pela UXA-093.
+A UXA-095 não é iniciada pela UXA-094.
 
 [← Organização e Oportunidades](screen-gallery-opportunities-organization.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Opportunity Boost — Exposição →](screen-gallery-opportunity-boost-exposure.md)

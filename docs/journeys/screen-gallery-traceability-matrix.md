@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.10.0
+version: 0.11.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -18,11 +18,10 @@ depends_on:
   - UXA-091
   - UXA-092
   - UXA-093
+  - UXA-094
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
-  - UXA-081
-  - UXA-082
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-GAPS-001
 normative: false
@@ -32,45 +31,43 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **107 SVGs**. Cada perfil declara superfície, entrada, saída, retorno ou interrupção, lacuna e validação, sem inventar precisão quando vários estados compartilham a mesma responsabilidade.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **107 SVGs**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
 
 ## 2. Estado do instrumento
 
-A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adicionou `R24`, a UXA-088 adicionou `R25`, a UXA-091 adicionou `R26` para `GKR-SURF-PER-106 — Meus Coletivos` e a UXA-093 adiciona `R27` para `GKR-SURF-PER-107 — Central de Atualizações`. A UXA-092 mantém `R15` e `R26` validados em suas versões correntes.
-
-As 107 associações individuais estão registradas em 27 perfis. Perfis de rastreabilidade são instrumentos documentais: não substituem análise semântica exclusiva de cada estado visual e não validam automaticamente transições ou jornadas.
+A UXA-094 preserva as 107 associações e 27 perfis. `R26` e `R27` passam a refletir as versões reformuladas/validadas de `PER-106` e `PER-107`, e `TRN-110` passa a integralmente validada.
 
 ## 3. Perfis de rastreabilidade
 
 | Perfil | Superfície(s) | Entrada | Saída | Retorno ou interrupção | Lacuna | Validação |
 |---|---|---|---|---|---|---|
-| R01 | GKR-SURF-PER-001 | entrada pública | GKR-TRN-001 | permanecer ou retornar à Home | continuidade pública → protegida parcial | UXA-021 |
-| R02 | GKR-SURF-PER-002; GKR-SURF-PER-003; GKR-SURF-PER-005 | GKR-TRN-001 | GKR-TRN-002 a GKR-TRN-005 | voltar, trocar modalidade, editar ou recusar | integração entre início protegido, expressão e compreensão | UXA-035 |
-| R03 | GKR-SURF-PER-004 | GKR-TRN-003 | GKR-TRN-004 | trocar modalidade, editar, descartar ou interromper | expressão → inventário ainda parcial | UXA-069 |
-| R04 | GKR-SURF-PER-006; GKR-SURF-PER-007 | GKR-TRN-005; GKR-TRN-006 | GKR-TRN-007 | revisar, recusar persistência ou retornar | compreensão → Tela Hoje não examinada | UXA-037 |
-| R05 | GKR-SURF-PER-008 | GKR-TRN-007 | saída recorrente não consolidada | retorno recorrente não examinado | compreensão → Tela Hoje | UXA-010 |
-| R06 | GKR-SURF-PER-201 | GKR-TRN-203; GKR-TRN-304 | GKR-TRN-204; GKR-TRN-210 | voltar ao contexto anterior ou alternar visualização | publicação → descoberta; mapa ↔ lista ↔ detalhe | UXA-025; UXA-027; UXA-031; UXA-033 |
-| R07 | GKR-SURF-PER-202 | GKR-TRN-210; GKR-TRN-306 | GKR-TRN-211 | retornar ao mapa mantendo consulta compatível | sincronização mapa ↔ lista ↔ detalhe | UXA-029 |
-| R08 | GKR-SURF-PER-203 | GKR-TRN-204; GKR-TRN-211 | GKR-TRN-205 | retornar ao mapa ou à lista | efeito externo não validado | UXA-012 |
-| R09 | GKR-SURF-ORG-001 | entrada institucional protegida | GKR-TRN-201 | cancelar ação e retornar à visão geral | matriz institucional completa | UXA-017 |
-| R10 | GKR-SURF-ORG-002; GKR-SURF-ORG-003 | GKR-TRN-201 | GKR-TRN-202; GKR-TRN-203 | editar, retirar, pausar ou encerrar conforme estado | publicação → descoberta não examinada | UXA-013 |
-| R11 | GKR-SURF-COL-001 | GKR-TRN-102 ou entrada protegida do responsável | GKR-TRN-103; continuidade interna parcial | retornar à busca ou sair do contexto protegido | continuidade entre presença pública e gestão | UXA-018; UXA-063 |
-| R12 | GKR-SURF-PER-101; GKR-SURF-PER-102 | origem de exploração | GKR-TRN-101; GKR-TRN-102 | limpar filtros, voltar ou refazer busca | continuidade entre descoberta e perfil | UXA-061 |
-| R13 | GKR-SURF-PER-103; GKR-SURF-COL-001 | GKR-TRN-102 | GKR-TRN-103 | retornar aos resultados | handoff para solicitação | UXA-063 |
-| R14 | GKR-SURF-PER-104 | GKR-TRN-103 | GKR-TRN-104 | cancelar e retornar ao perfil | continuidade para solicitação ainda parcial | UXA-065 |
-| R15 | GKR-SURF-PER-105 | GKR-TRN-104; GKR-TRN-106; GKR-TRN-109 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-108; retorno | cancelar, responder, aguardar, voltar ou seguir opcionalmente para Meus Coletivos quando aprovado | TRN-105/106/107/108/109 validadas nos gates aplicáveis; outras continuidades permanecem separadas | UXA-067 para a família; estado aprovado corrente revalidado por UXA-092 |
-| R16 | GKR-SURF-COM-001 | entrada protegida do anunciante | GKR-TRN-301 | editar, cancelar, pausar ou encerrar conforme estado | regras econômicas e estados residuais | UXA-041 |
-| R17 | GKR-SURF-COM-001 | entrada protegida do anunciante | GKR-TRN-301 | editar, cancelar, pausar ou encerrar conforme estado | regras econômicas e estados residuais | UXA-052 |
-| R18 | GKR-SURF-COM-002 | GKR-TRN-302; GKR-TRN-303 | GKR-TRN-304; GKR-TRN-306 | ignorar ou retornar ao contexto orgânico | integração orgânico ↔ patrocinado | UXA-043 |
-| R19 | GKR-SURF-COM-003 | entrega comercial elegível | GKR-TRN-303 | retornar ao mapa ou lista orgânicos | continuidade transversal patrocinada | UXA-045 |
-| R20 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-047 |
-| R21 | GKR-SURF-COM-004 | campanha ativa ou encerrada | retorno à gestão de campanha | reconciliar, revisar atribuição ou sair | atribuição e continuidade operacional | UXA-049 |
-| R22 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-054 |
-| R23 | GKR-SURF-COM-005 | GKR-TRN-305 | não examinada | depende do estado; desfazer, contestar ou continuar não validados | dez estados residuais da UXA-055 | pendente de validação específica |
-| R24 | GKR-SURF-COL-002 | acesso protegido com representação válida | GKR-TRN-112 para GKR-SURF-COL-003 | permanecer, adiar quando legítimo, contestar prioridade ou retornar | continuidade específica fechada por UXA-090 | UXA-087 na superfície; TRN-112 integralmente validada por UXA-090 |
-| R25 | GKR-SURF-COL-003 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-112 | GKR-TRN-106; GKR-TRN-108; GKR-TRN-109 ou permanência | voltar sem decidir, aguardar, descartar rascunho ou interromper por autoridade insuficiente | handoffs 105/106/107/108/109/112 fechados nos gates aplicáveis; continuidades posteriores separadas | UXA-089 na superfície; UXA-090/092 nos handoffs aplicáveis |
-| R26 | GKR-SURF-PER-106 | vínculo confirmado após resultado aprovado em PER-105; GKR-TRN-108 | GKR-TRN-110 para PER-107 materializada; retornos conforme contrato | trocar categoria, voltar ou não prosseguir | TRN-108 fechada; TRN-110 permanece parcial; P0B adicional separado | UXA-092 |
-| R27 | GKR-SURF-PER-107 | GKR-TRN-110 ou atualização pessoal legitimamente recebida | PER-105/PER-106 quando o objeto possui destino vigente; GKR-TRN-111 futuramente | voltar a Meus Coletivos, permanecer, silenciar ou ajustar preferência conforme contrato | validação de PER-107 e TRN-110 pendentes; PER-108/TRN-111 ausentes; P0B da Central separado | pendente de validação específica após UXA-093 |
+| R01 | PER-001 | entrada pública | TRN-001 | permanecer/retornar | continuidade pública → protegida | UXA-021 |
+| R02 | PER-002/003/005 | TRN-001 | TRN-002 a 005 | voltar/trocar/editar/recusar | integração inicial | UXA-035 |
+| R03 | PER-004 | TRN-003 | TRN-004 | trocar/editar/descartar | expressão → inventário | UXA-069 |
+| R04 | PER-006/007 | TRN-005/006 | TRN-007 | revisar/recusar/retornar | compreensão → Hoje | UXA-037 |
+| R05 | PER-008 | TRN-007 | continuidade recorrente | retorno não examinado | experiência recorrente | UXA-010 |
+| R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | publicação/mapa/lista/detalhe | UXA-025/027/031/033 |
+| R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | mapa/lista/detalhe | UXA-029 |
+| R08 | PER-203 | TRN-204/211 | TRN-205 | retornar | efeito externo | UXA-012 |
+| R09 | ORG-001 | entrada institucional | TRN-201 | cancelar/retornar | matriz institucional | UXA-017 |
+| R10 | ORG-002/003 | TRN-201 | TRN-202/203 | editar/retirar/pausar | publicação → descoberta | UXA-013 |
+| R11 | COL-001 | busca ou entrada responsável | TRN-103 | retornar/sair | presença pública → gestão | UXA-018/063 |
+| R12 | PER-101/102 | exploração | TRN-101/102 | limpar/voltar/refazer | descoberta → perfil | UXA-061 |
+| R13 | PER-103/COL-001 | TRN-102 | TRN-103 | retornar | solicitação | UXA-063 |
+| R14 | PER-104 | TRN-103 | TRN-104 | cancelar/retornar | handoff | UXA-065 |
+| R15 | PER-105 | TRN-104/106/109 | TRN-105/107/108 | cancelar/responder/aguardar | outras continuidades separadas | UXA-067; aprovado UXA-092 |
+| R16 | COM-001 | anunciante | TRN-301 | editar/cancelar | regras econômicas | UXA-041 |
+| R17 | COM-001 | anunciante | TRN-301 | editar/cancelar | estados residuais | UXA-052 |
+| R18 | COM-002 | TRN-302/303 | TRN-304/306 | ignorar/retornar | orgânico ↔ patrocinado | UXA-043 |
+| R19 | COM-003 | entrega elegível | TRN-303 | retornar | continuidade patrocinada | UXA-045 |
+| R20 | COM-004 | TRN-301 | TRN-302/305 | pausar/revisar/encerrar | estados residuais | UXA-047 |
+| R21 | COM-004 | campanha | retorno à gestão | reconciliar/revisar | atribuição | UXA-049 |
+| R22 | COM-004 | TRN-301 | TRN-302/305 | pausar/revisar/encerrar | estados residuais | UXA-054 |
+| R23 | COM-005 | TRN-305 | não examinada | conforme estado | 10 estados UXA-055 | pendente |
+| R24 | COL-002 | representação válida | TRN-112 | permanecer/retornar | fechada | UXA-087; TRN-112 UXA-090 |
+| R25 | COL-003 | TRN-105/107/112 | TRN-106/108/109 | voltar/aguardar/interromper | handoffs fechados nos gates | UXA-089/090/092 |
+| R26 | PER-106 | TRN-108 ou acesso recorrente | **TRN-110** | trocar categoria/voltar | P0B separado | **UXA-092; gatilho revalidado UXA-094** |
+| R27 | PER-107 | **TRN-110** ou atualização autorizada | PER-105/PER-106; TRN-111 futuro | retornar/ajustar preferência | PER-108/TRN-111; P0B/P1 | **UXA-094; TRN-110 integralmente validada** |
 
 ## 4. Associação individual dos 107 SVGs
 
@@ -189,15 +186,13 @@ As 107 associações individuais estão registradas em 27 perfis. Perfis de rast
 - SVGs registrados: **107**;
 - associações individuais: **107**;
 - perfis documentais: **27**;
-- com validação funcional vigente: **96**;
-- pendentes de validação específica: **11**;
-- arquivos visuais novos na UXA-093: **1**;
-- arquivos existentes reformulados pela UXA-093: **0**.
-
-Os onze pendentes correspondem aos dez estados residuais da UXA-055 e à nova referência de `PER-107` materializada pela UXA-093. A associação a um perfil não valida automaticamente uma transição ou jornada.
+- com validação funcional vigente: **97**;
+- pendentes de validação específica: **10**, exclusivamente UXA-055;
+- arquivos visuais novos na UXA-094: **0**;
+- arquivos existentes reformulados pela UXA-094: **2**.
 
 ## 6. Próxima transição possível
 
-**UXA-094 — Validação Funcional da Central de Atualizações e Revalidação de `GKR-TRN-110`**, mediante autorização separada.
+**UXA-095 — Materialização/Reformulação Controlada do Início do Participante (`GKR-SURF-PER-108`) e Refinamento de `GKR-TRN-111`**, mediante autorização separada.
 
-A UXA-094 não é iniciada por esta matriz.
+A UXA-095 não é iniciada por esta matriz.
