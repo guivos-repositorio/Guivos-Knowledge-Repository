@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -20,6 +20,7 @@ related:
   - UXA-095
   - UXA-096
   - UXA-097
+  - UXA-098
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -32,7 +33,7 @@ normative: false
 
 Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas.
 
-A versão 0.14.0 preserva as 37 transições. A UXA-097 valida `GKR-TRN-007` ponta a ponta, sem criar nova transição.
+A versão 0.15.0 preserva as 37 transições. A UXA-098 valida `GKR-TRN-203`, `GKR-TRN-204`, `GKR-TRN-210` e `GKR-TRN-211` ponta a ponta, sem criar nova transição.
 
 ## 2. Convenções de estado
 
@@ -110,27 +111,52 @@ Regras integradas:
 
 ### 5.1 Contrato preservado de `GKR-TRN-110`
 
-A UXA-097 não altera `TRN-110`: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.
+A UXA-098 não altera `TRN-110`: entrada na Central continua neutra, leitura continua separada de efeito substantivo, ações revalidam estado canônico e segurança material preserva prioridade legítima.
 
 ### 5.2 Contrato preservado de `GKR-TRN-111`
 
-A UXA-097 não altera `TRN-111`. Permanecem vigentes as regras de vínculo atual, permissão revalidada, retorno neutro, estado canônico e idempotência estabelecidas pela UXA-096.
+A UXA-098 não altera `TRN-111`. Permanecem vigentes as regras de vínculo atual, permissão revalidada, retorno neutro, estado canônico e idempotência estabelecidas pela UXA-096.
 
 ## 6. Organização, oportunidades e relações bilaterais
 
-| ID | Origem | Destino | Estado | Lacuna principal |
+| ID | Origem | Destino | Estado | Evidência / lacuna principal |
 |---|---|---|---|---|
 | GKR-TRN-201 | ORG-001 | ORG-002 | parcial | ligação com visão institucional |
 | GKR-TRN-202 | ORG-002 | ORG-003 | localmente validada | distribuição entre superfícies |
-| GKR-TRN-203 | ORG-003 | PER-201 | não examinada | integração publicação–descoberta |
-| GKR-TRN-204 | PER-201 | PER-203 | parcial | efeito externo posterior |
+| GKR-TRN-203 | ORG-003 | PER-201 | **integralmente validada** | **UXA-098 — ativação elegível à descoberta sem garantia de distribuição; estado canônico e idempotência validados** |
+| GKR-TRN-204 | PER-201 | PER-203 | **integralmente validada** | **UXA-098 — Mapa → Detalhe com mesma oportunidade, revalidação do estado e retorno preservado** |
 | GKR-TRN-205 | PER-203 | BND-001 | parcial | efeito externo não validado |
 | GKR-TRN-206 | ORG-004 | COL-008 | contratada | superfícies bilaterais ausentes |
 | GKR-TRN-207 | COL-008 | ORG-005 | contratada | interface bilateral ausente |
 | GKR-TRN-208 | ORG-005 | ORG-006 | contratada | operação bilateral não materializada |
 | GKR-TRN-209 | ORG-006 | ORG-006 | contratada | estados operacionais ausentes |
-| GKR-TRN-210 | PER-201 | PER-202 | parcial | sincronização mapa/lista |
-| GKR-TRN-211 | PER-202 | PER-203 | parcial | efeito externo posterior |
+| GKR-TRN-210 | PER-201 | PER-202 | **integralmente validada** | **UXA-098 — mesma consulta, contexto, região, filtros, seleção e permissões preservados** |
+| GKR-TRN-211 | PER-202 | PER-203 | **integralmente validada** | **UXA-098 — Lista → Detalhe com identidade, estado e retorno preservados** |
+
+### 6.1 Contrato validado de `GKR-TRN-203`
+
+```text
+ORG-003
+→ oportunidade aprovada, ativa e materialmente vigente
+→ TRN-203
+→ candidata ao inventário descobrível de PER-201
+```
+
+Elegibilidade à descoberta não garante impressão, posição, recomendação, alcance ou relevância individual. Pausa, expiração, encerramento ou mudança material prevalecem sobre cartões obsoletos. Reprocessamento do mesmo estado é idempotente.
+
+### 6.2 Contrato validado de `GKR-TRN-210`
+
+Mapa e Lista são representações da mesma consulta. A alternância preserva contexto de atuação, origem, região, busca, filtros, versão conhecida dos resultados, seleção e permissões territoriais. Mudar o modo não cria autorização, personalização, relevância ou efeito comercial.
+
+### 6.3 Contrato validado de `GKR-TRN-204` e `GKR-TRN-211`
+
+Mapa e Lista conduzem ao mesmo `PER-203` canônico. O Detalhe preserva a identidade lógica e a origem de retorno, consulta o estado material vigente antes de ação substantiva e não transforma abertura em interesse, inscrição, recomendação ou evolução.
+
+`TRN-204` e `TRN-211` terminam no Detalhe. O efeito externo posterior permanece exclusivamente em `GKR-TRN-205`.
+
+### 6.4 Fronteira comercial preservada
+
+Opportunity Boost não altera o contrato orgânico: pagamento amplia distribuição publicitária identificada, não relevância funcional. `TRN-304` e `TRN-306` permanecem fora da UXA-098.
 
 ## 7. Opportunity Boost
 
@@ -143,14 +169,18 @@ A UXA-097 não altera `TRN-111`. Permanecem vigentes as regras de vínculo atual
 | GKR-TRN-305 | COM-004 | COM-005 | parcial | dez estados residuais UXA-055 |
 | GKR-TRN-306 | COM-002 | PER-202 | parcial | retorno patrocinado → lista orgânica |
 
-## 8. Efeito da UXA-097
+## 8. Efeito da UXA-098
 
 - transições totais: 37;
 - nenhuma transição nova;
-- `TRN-007`: não examinada → **integralmente validada**;
-- `TRN-110` e `TRN-111`: preservadas integralmente validadas;
+- `TRN-203`: não examinada → **integralmente validada**;
+- `TRN-204`: parcial → **integralmente validada**;
+- `TRN-210`: parcial → **integralmente validada**;
+- `TRN-211`: parcial → **integralmente validada**;
+- `TRN-205`, `TRN-304` e `TRN-306` permanecem fora do escopo;
+- `TRN-007`, `TRN-110` e `TRN-111` permanecem integralmente validadas;
 - oito handoffs integralmente validados no trecho de Coletivos permanecem inalterados.
 
 ## 9. Próximo gate
 
-Com `V1` encerrada, a próxima prioridade de validação vigente é `V2 — publicação → descoberta/mapa/lista/detalhe`. **UXA-098 não foi iniciada.**
+Com `V2` encerrada documentalmente pela UXA-098, a próxima prioridade registrada é `V3 — dez estados residuais UXA-055`. **UXA-099 não foi iniciada.**
