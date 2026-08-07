@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.16.0
+version: 0.17.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -22,6 +22,8 @@ related:
   - UXA-095
   - UXA-096
   - UXA-097
+  - UXA-098
+  - UXA-099
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -36,7 +38,7 @@ normative: false
 
 Esta seção reúne os **109 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-097 adiciona a primeira variante de `PER-008 — Tela Hoje`, reforma somente o estado de decisão de `PER-007` e valida `TRN-007` ponta a ponta. A Tela Hoje recorrente permanece inalterada.
+A UXA-099 preserva a quantidade de arquivos, valida os dez estados residuais da UXA-055 e reforma somente dois SVGs: falha de atualização material do anunciante e revisão/reversão de preferências.
 
 ## 2. Estado do instrumento
 
@@ -47,9 +49,10 @@ Ressalvas vigentes:
 - 109 SVGs compartilham 28 perfis de rastreabilidade;
 - 9 responsabilidades continuam sem SVG dedicado;
 - uma fronteira permanece corretamente sem tela;
-- **99 SVGs possuem validação funcional vigente**;
-- **10 aguardam validação específica**, exclusivamente UXA-055;
-- `TRN-007`, `TRN-110` e `TRN-111` estão integralmente validadas nos respectivos escopos;
+- **109 SVGs possuem validação funcional vigente**;
+- **0 aguardam validação funcional específica**;
+- validar os dez estados de `COM-005` não promove automaticamente `TRN-305`;
+- `TRN-205`, `TRN-304` e `TRN-306` permanecem parciais;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`.
 
 ## 3. Instrumentos de inspeção
@@ -69,73 +72,43 @@ Ressalvas vigentes:
 | 3 | [Coletivos](screen-gallery-collectives.md) | 34 | descoberta → solicitação → gestão → Meus Coletivos → Central → Início |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total** | **109** | **99 validados; 10 pendentes** |
+|  | **Total** | **109** | **109 validados; 0 pendentes** |
 
-## 5. Sequência pessoal fechada no gate UXA-097
+## 5. Resultado visual da UXA-099
 
-```text
-compreensão inicial revisável
-→ escolhas explícitas
-→ TRN-007 integralmente validada
-→ primeira Tela Hoje
-→ recorrência separada
-```
+Dos dez resíduos da UXA-055:
 
-A validação do trecho não promove a Jornada da Pessoa porque handoffs anteriores continuam parciais.
+- oito permanecem visualmente inalterados e são validados;
+- `uxa-055-advertiser-update-failure-mobile.svg` passa a distinguir versão confirmada, candidata não aplicada e pausa automática protetiva da entrega futura;
+- `uxa-055-review-reverse-preferences-mobile.svg` passa a apresentar data, superfície e escopo para cada escolha exibida;
+- nenhum ID ou perfil é criado.
 
-## 6. Sequência de Coletivos preservada
-
-```text
-explorar e buscar
-→ Perfil Público
-→ revisão e solicitação
-→ Solicitação Pendente
-→ gestão responsável
-→ resultado aprovado
-→ Meus Coletivos
-→ Central de Atualizações
-→ Início do Participante
-```
-
-## 7. Cobertura confirmada
+## 6. Cobertura confirmada
 
 | Indicador | Resultado |
 |---|---:|
 | SVGs existentes e referenciados | **109** |
 | associações individuais | **109** |
 | perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **99** |
-| pendentes de validação específica | **10** |
+| com validação funcional vigente | **109** |
+| pendentes de validação específica | **0** |
 | IDs com referência visual | **30 de 40** |
 | responsabilidades sem SVG dedicado | **9** |
 | fronteira documental sem tela | 1 |
 
-## 8. Responsabilidades sem SVG dedicado
+## 7. Responsabilidades sem SVG dedicado
 
 - `GKR-SURF-COL-004` a `GKR-SURF-COL-008`;
 - `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007`.
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 9. Efeito da UXA-097
+## 8. Fronteiras de validação
 
-- 1 SVG novo e 1 SVG existente reformulado;
-- SVGs: 108 → **109**;
-- associações: 108 → **109**;
-- perfis: **28**, sem novo perfil;
-- validações vigentes: 98 → **99**;
-- pendências: **10**, exclusivamente UXA-055;
-- `PER-007` corrente revalidado;
-- primeira variante de `PER-008` validada;
-- `TRN-007` não examinada → integralmente validada;
-- nenhuma jornada promovida.
-
-## 10. Estado
-
-A galeria está `active` 0.16.0. A página da Pessoa está `active` 0.4.0 e a matriz por SVG passa a `active` 0.14.0 no pacote proposto pela UXA-097.
+A validação dos 109 SVGs não implica que todas as 37 transições estejam integralmente validadas. Permanecem continuidades parciais, entre elas `TRN-305`, `TRN-205`, `TRN-304` e `TRN-306`.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
-## 11. Próxima transição possível
+## 9. Próxima transição possível
 
-Com `V1` fechada, a prioridade vigente passa a `V2 — publicação → descoberta/mapa/lista/detalhe`. **UXA-098 não foi iniciada.**
+Com `V3` encerrada pela UXA-099, a prioridade vigente passa a `V4 — efeito externo de oportunidades`. **UXA-100 não foi iniciada.**
