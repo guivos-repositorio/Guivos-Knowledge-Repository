@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.68.0
-title: Roadmap Arquitetural — Início do Participante Materializado
+id: ROADMAP-12.69.0
+title: Roadmap Arquitetural — Início do Participante e TRN-111 Validados
 status: active
-version: 12.68.0
+version: 12.69.0
 owner: Guivos
 last_updated: 2026-08-07
 supersedes_partial:
-  - ROADMAP-12.67.0
+  - ROADMAP-12.68.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -21,15 +21,16 @@ related:
   - UXA-093
   - UXA-094
   - UXA-095
+  - UXA-096
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - M7.82
+  - M7.83
 ---
 
-# Roadmap Arquitetural — Início do Participante Materializado
+# Roadmap Arquitetural — Início do Participante e TRN-111 Validados
 
 ## 1. Autoridade
 
@@ -40,14 +41,14 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | Início do Participante materializado; TRN-111 parcial | UXA-095; M7.82 |
-| Registros granulares | 40 superfícies e 37 transições | UXA-095 |
-| Galeria visual | `active` 0.14.0; 108 SVGs | UXA-095 |
-| página de Coletivos | `active` 0.12.0 | UXA-095 |
-| matriz por SVG | 108 arquivos / 28 perfis; `active` 0.12.0 | UXA-095 |
-| validações funcionais vigentes de SVG | **96** | UXA-095 e pacotes anteriores |
-| pendentes de validação específica | **12** | UXA-055; UXA-095 |
-| handoffs integralmente validados em Coletivos | **7** | UXA-090; UXA-092; UXA-094 |
+| Marco | Início do Participante validado; TRN-111 integralmente validada | UXA-096; M7.83 |
+| Registros granulares | 40 superfícies e 37 transições | UXA-096 |
+| Galeria visual | `active` 0.15.0; 108 SVGs | UXA-096 |
+| página de Coletivos | `active` 0.13.0 | UXA-096 |
+| matriz por SVG | 108 arquivos / 28 perfis; `active` 0.13.0 | UXA-096 |
+| validações funcionais vigentes de SVG | **98** | UXA-096 e pacotes anteriores |
+| pendentes de validação específica | **10, exclusivamente UXA-055** | UXA-055 |
+| handoffs integralmente validados em Coletivos | **8** | UXA-090; UXA-092; UXA-094; UXA-096 |
 | Jornadas principais | Pessoa, Coletivo e Organização em `draft` | Jornadas Integradas |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -63,46 +64,43 @@ UXA-086 — COL-002 materializada
 → UXA-092 — PER-106 e TRN-108 validadas
 → UXA-093 — PER-107 materializada
 → UXA-094 — PER-107 e TRN-110 validadas
-→ UXA-095 — PER-108 materializada e TRN-111 tornada parcial
+→ UXA-095 — PER-108 materializada e TRN-111 parcial
+→ UXA-096 — PER-107/PER-108 validadas e TRN-111 validada ponta a ponta
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
-## 4. Resultado da UXA-095
+## 4. Resultado da UXA-096
 
 | Dimensão | Resultado |
 |---|---|
-| GKR-SURF-PER-107 | contrato previamente validado; SVG corrente reformulado e pendente de revalidação |
-| GKR-SURF-PER-108 | `materializado` por novo SVG móvel |
-| SVGs novos | 1 |
-| SVGs reformulados | 1 existente |
+| GKR-SURF-PER-107 | **validado na versão corrente** |
+| GKR-SURF-PER-108 | **validado** |
+| SVGs novos | 0 |
+| SVGs reformulados | 2 existentes |
 | GKR-TRN-110 | permanece `integralmente validada` |
-| GKR-TRN-111 | `ausente` → `parcial` |
+| GKR-TRN-111 | parcial → **integralmente validada** |
 | SVGs totais | 108 |
 | perfis | 28 |
-| validações vigentes | 96 |
-| pendentes | 12 = 10 UXA-055 + PER-107 corrente + PER-108 |
+| validações vigentes | 98 |
+| pendentes | 10, exclusivamente UXA-055 |
 | jornadas promovidas | 0 |
 | Engenharia iniciada | não |
 
-## 5. Contrato de materialização de PER-108
-
-O Início do Participante sintetiza propósito, vínculo, momento coletivo, ação compartilhada, consulta e autonomia. Ele preserva áreas próprias para comunicação, atividades, pessoas/papéis, decisões, recursos e proteção.
-
-Pertencimento não implica disponibilidade; disponibilidade não implica função; função não implica autoridade; vínculo não confirma presença em atividade.
-
-## 6. Continuidade representada
+## 5. Contrato validado de PER-107 → PER-108
 
 ```text
 PER-107 — Central de Atualizações
 → “Abrir início do Coletivo”
-→ entrada neutra, sem alterar vínculo ou leitura
+→ vínculo atual e permissão são revalidados
+→ evento histórico não concede nem preserva acesso
+→ abertura é neutra
 → PER-108 — Início do Participante
 ```
 
-A continuidade permanece parcial até validação integrada da origem reformulada, do destino novo e das regras de retorno/concorrência.
+O estado canônico mais recente prevalece. Pausa, saída, remoção ou perda de permissão não preservam acesso antigo. Retorno é neutro e repetição não duplica efeito lógico.
 
-## 7. Trilha governada de Coletivos
+## 6. Trilha governada de Coletivos
 
 ```text
 COL-002 — validada
@@ -112,29 +110,27 @@ COL-002 — validada
 → TRN-108 — integralmente validada
 → PER-106 — validado
 → TRN-110 — integralmente validada
-→ PER-107 — contrato validado; SVG corrente pendente
-→ TRN-111 — parcial
-→ PER-108 — materializado; validação pendente
+→ PER-107 — validado
+→ TRN-111 — integralmente validada
+→ PER-108 — validado
 ```
 
-## 8. Dívidas preservadas
+## 7. Dívidas preservadas
 
-- validação funcional de PER-108, revalidação do PER-107 corrente e TRN-111 ponta a ponta;
-- P0B de Meus Coletivos e Central;
+- estados P0B de Meus Coletivos, Central e Início do Participante;
 - áreas P1 de comunicação especializada;
 - dez estados residuais da UXA-055;
 - compreensão inicial → Tela Hoje;
 - publicação → descoberta;
 - efeito externo de oportunidades;
-- erros, retornos e interrupções integrados;
-- operação interna restante do Coletivo.
+- erros, retornos e interrupções em outras jornadas;
+- operação interna restante do Coletivo;
+- relação Organização–Coletivo ainda não materializada como conjunto.
 
-## 9. Limites
+## 8. Limites
 
-A UXA-095 não valida `PER-108` ou `TRN-111`, não promove a nova versão visual de `PER-107` por inferência, não cria IDs, não promove jornadas e não inicia protótipo, teste com pessoas ou Engenharia.
+A UXA-096 não cria IDs ou SVGs, não valida áreas internas especializadas a partir de `PER-108`, não promove jornadas e não inicia protótipo, teste com pessoas ou Engenharia de Produto.
 
-## 10. Próxima iniciativa possível
+## 9. Próxima iniciativa possível
 
-> **UXA-096 — Validação Funcional do Início do Participante, Revalidação de PER-107 e Validação Integrada de GKR-TRN-111**
-
-A UXA-096 depende de autorização separada e não é iniciada por este pacote.
+A próxima priorização deve partir das lacunas remanescentes. **UXA-097 não foi iniciada e depende de autorização separada.**
