@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.12.0
+version: 0.13.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -22,6 +22,7 @@ related:
   - UXA-085
   - UXA-086
   - UXA-087
+  - UXA-088
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -33,96 +34,92 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A UXA-087 conclui o gate funcional específico de `GKR-SURF-COL-002`, mas não declara a continuidade para `GKR-SURF-COL-003` validada e não fecha a jornada do Coletivo.
+Este documento é observacional e não promocional. A UXA-088 materializa `GKR-SURF-COL-003`, mas não encerra seu gate funcional nem valida os handoffs bilaterais associados.
 
 ## 2. Regra de priorização
 
 A fila distingue:
 
-1. **materialização**, que exige novas superfícies ou estados;
-2. **gate de fechamento**, quando a materialização existe mas ainda requer validação funcional;
-3. **dívidas de validação integrada**, quando os artefatos existem mas a continuidade não foi examinada como conjunto.
+1. **materialização** — novas referências necessárias;
+2. **gate de fechamento** — materialização existente aguardando validação funcional;
+3. **dívida de validação integrada** — endpoints existentes sem exame ponta a ponta.
 
-A origem de autoridade deve preceder o efeito percebido a jusante.
-
-## 3. Gate de superfície encerrado pela UXA-087
+## 3. Gates de Coletivos
 
 | Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
-| Visão Geral do Responsável | GKR-SURF-COL-002; GKR-TRN-112 | 1 SVG desktop reformulado | validada por UXA-087 | GKR-TRN-112 continua parcial porque GKR-SURF-COL-003 permanece ausente |
+| Visão Geral do Responsável | COL-002; TRN-112 | 1 SVG | validada por UXA-087 | TRN-112 ainda não validada como conjunto |
+| gestão de solicitações | COL-003; TRN-105 a 109; TRN-112 | 7 SVGs desktop em UXA-088 | validação pendente | handoffs bilaterais e saída para PER-106 pendentes |
 
-O fechamento é restrito à superfície `GKR-SURF-COL-002`. Não comprova a fila operacional de solicitações nem a transição ponta a ponta.
+`COL-003` deixa a fila de ausência visual e entra na fila de **gate funcional**.
 
 ## 4. Fila de materialização por dependência
 
 | Prioridade | Lacuna | IDs relacionados | Estado visual | Gate |
 |---:|---|---|---|---|
-| 1 | gestão completa de solicitações | GKR-SURF-COL-003; GKR-TRN-105 a GKR-TRN-109; GKR-TRN-112 | apenas efeitos na visão da Pessoa | origem GKR-SURF-COL-002 validada; depende de nova autorização para materialização |
-| 2 | Meus Coletivos | GKR-SURF-PER-106; GKR-TRN-108; GKR-TRN-110 | sem SVG | depende da aprovação originada no Coletivo |
-| 3 | Central de Atualizações | GKR-SURF-PER-107; GKR-TRN-110; GKR-TRN-111 | sem SVG | depende de vínculo ativo |
-| 4 | Início do Participante reformulado | GKR-SURF-PER-108; GKR-TRN-111 | referência anterior não promovida | reformulação, materialização e validação |
-| 5 | participantes, comunicação e operação interna | GKR-SURF-COL-004 a GKR-SURF-COL-007; GKR-TRN-113 | sem SVGs dedicados | programa, materialização e validação |
-| 6 | relação Organização–Coletivo | GKR-SURF-ORG-004 a GKR-SURF-ORG-006; GKR-SURF-COL-008; GKR-TRN-206 a GKR-TRN-209 | sem SVGs | materialização e validação bilateral |
-| 7 | matriz institucional completa | GKR-SURF-ORG-001; GKR-SURF-ORG-007 | cobertura parcial | programa específico e validação |
+| 1 | Meus Coletivos | GKR-SURF-PER-106; GKR-TRN-108; GKR-TRN-110 | sem SVG | depende da decisão de participação e de autorização separada |
+| 2 | Central de Atualizações | GKR-SURF-PER-107; GKR-TRN-110; GKR-TRN-111 | sem SVG | depende de vínculo ativo |
+| 3 | Início do Participante reformulado | GKR-SURF-PER-108; GKR-TRN-111 | referência anterior não promovida | reformulação, materialização e validação |
+| 4 | participantes e operação interna | GKR-SURF-COL-004 a GKR-SURF-COL-007; GKR-TRN-113 | sem SVGs dedicados | programa, materialização e validação |
+| 5 | relação Organização–Coletivo | GKR-SURF-ORG-004 a 006; GKR-SURF-COL-008; GKR-TRN-206 a 209 | sem SVGs | materialização e validação bilateral |
+| 6 | matriz institucional completa | GKR-SURF-ORG-001; GKR-SURF-ORG-007 | cobertura parcial | programa específico e validação |
 
-Nenhuma dessas materializações é iniciada pela UXA-087.
+Nenhuma dessas materializações é iniciada pela UXA-088.
 
-## 5. Fila separada de dívidas de validação
+## 5. Fila de validação
 
-| Prioridade | Continuidade | IDs relacionados | Estado atual | Gate |
-|---:|---|---|---|---|
-| V1 | compreensão inicial → Tela Hoje | GKR-SURF-PER-007; GKR-SURF-PER-008; GKR-TRN-007 | telas separadas; transição não examinada | validação integrada |
-| V2 | publicação → descoberta | GKR-SURF-ORG-003; GKR-SURF-PER-201; GKR-TRN-203 | rota visual aprovada; pacotes distintos | revalidação integrada |
-| V3 | mapa, lista e detalhe | GKR-SURF-PER-201 a GKR-SURF-PER-203; GKR-TRN-204; GKR-TRN-210; GKR-TRN-211 | ordem visual aprovada | validação do conjunto e retornos |
-| V4 | dez estados residuais do Opportunity Boost | GKR-SURF-COM-005; GKR-TRN-305 | 10 SVGs rastreados e sem validação | pacote específico de validação |
-| V5 | efeito externo de oportunidades | GKR-SURF-PER-203; GKR-SURF-BND-001; GKR-TRN-205 | fronteira sem tela por definição | contrato e validação específicos |
-| V6 | erros, retornos e interrupções | todos | cobertura integrada ainda dispersa | validação por jornada |
+| Prioridade | Continuidade ou família | Estado atual | Gate |
+|---:|---|---|---|
+| V0 | gestão de solicitações do responsável | 7 SVGs materializados; 0 validados | UXA-089 específica |
+| V1 | COL-002 → COL-003 e handoffs PER-105 ↔ COL-003 | endpoints materializados; transições parciais | validação integrada após gate da família |
+| V2 | compreensão inicial → Tela Hoje | telas separadas; transição não examinada | validação integrada |
+| V3 | publicação → descoberta e mapa/lista/detalhe | pacotes distintos | revalidação integrada |
+| V4 | dez estados residuais do Opportunity Boost | 10 SVGs sem validação | pacote específico |
+| V5 | efeito externo de oportunidades | fronteira sem tela por definição | contrato e validação específicos |
+| V6 | erros, retornos e interrupções | cobertura dispersa | validação por jornada |
 
-A validação de `GKR-SURF-COL-002` sai da fila V0. A continuidade `COL-002 → COL-003` permanece como dependência da materialização de `COL-003`, não como transição aprovada.
+## 6. Efeito da UXA-088
 
-## 6. Efeito da UXA-087
+A UXA-088:
 
-A UXA-087:
+- adiciona sete SVGs para `GKR-SURF-COL-003`;
+- torna visíveis fila, detalhe, proteção, pedido adicional, aprovação, recusa e autoridade insuficiente;
+- dá evidência responsável a `TRN-105` a `109` e destino materializado a `TRN-112`;
+- não valida os sete estados;
+- não valida as transições ponta a ponta;
+- não materializa `PER-106`, `PER-107`, `PER-108` ou `COL-004` a `COL-008`.
 
-- reformula o mesmo SVG da UXA-086;
-- valida funcionalmente `GKR-SURF-COL-002`;
-- encerra o gate específico da superfície;
-- mantém `GKR-TRN-112` como `parcial`;
-- mantém `GKR-SURF-COL-003` ausente como operação completa;
-- não inicia nenhuma outra lacuna.
-
-## 7. Cobertura vigente
+## 7. Cobertura proposta
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs existentes | 98 |
-| associações individuais | 98 |
-| perfis de rastreabilidade | 24 |
+| SVGs existentes | 105 |
+| associações individuais | 105 |
+| perfis de rastreabilidade | 25 |
 | com validação funcional registrada | 88 |
-| pendentes de validação específica | 10 |
-| IDs granulares com referência visual | 26 de 40 |
-| responsabilidades sem SVG dedicado | 13 |
+| pendentes de validação específica | 17 |
+| IDs granulares com referência visual | 27 de 40 |
+| responsabilidades sem SVG dedicado | 12 |
 | fronteira corretamente sem tela | 1 |
 
-Os dez pendentes remanescentes correspondem exclusivamente aos estados residuais da UXA-055.
+Os 17 pendentes são os dez estados da UXA-055 e os sete estados da UXA-088.
 
 ## 8. Critérios de fechamento
 
-Uma lacuna somente poderá ser encerrada quando houver autoridade, maturidade, materialização necessária, entradas e saídas, retornos e exceções, proteção de dados, validação correspondente e atualização governada deste registro.
+Uma lacuna somente poderá ser encerrada quando houver autoridade, materialização necessária, entradas e saídas, retornos e exceções, proteção de dados, validação correspondente e atualização governada deste registro.
 
-Para `GKR-SURF-COL-002`, esses critérios são atendidos no escopo da referência principal após a reformulação e validação da UXA-087. Estados P0B adicionais e a continuidade para `COL-003` continuam independentes.
+Para `COL-003`, materialização existe após UXA-088, mas o gate funcional permanece aberto.
 
 ## 9. Restrições
 
 - uma tela genérica não fecha lacuna;
 - uma seta presumida não cria transição;
 - proximidade visual não comprova continuidade;
-- associação a perfil não valida jornada;
-- validação de uma superfície não valida seu destino;
-- ausência de evidência permanece `indeterminado`, `parcial`, `ausente` ou `não examinado`.
+- materialização não equivale a validação;
+- validação de uma superfície não valida o handoff inteiro.
 
 ## 10. Próximo ato possível
 
-A próxima ação governada é **UXA-088 — Materialização Controlada da Gestão de Solicitações do Responsável do Coletivo (`GKR-SURF-COL-003`)**, mediante autorização separada.
+A próxima ação governada é **UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável do Coletivo**, mediante autorização separada.
 
-A UXA-088 não é iniciada por esta atualização.
+A UXA-089 não é iniciada por esta atualização.
