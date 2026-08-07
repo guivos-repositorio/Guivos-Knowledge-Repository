@@ -1,12 +1,12 @@
 ---
-id: ROADMAP-12.57.0
-title: Roadmap Arquitetural — Galeria Revalidada com Ressalvas e Aguardando Promoção
+id: ROADMAP-12.58.0
+title: Roadmap Arquitetural — Galeria Promovida com Ressalvas Preservadas
 status: active
-version: 12.57.0
+version: 12.58.0
 owner: Guivos
-last_updated: 2026-08-06
+last_updated: 2026-08-07
 supersedes_partial:
-  - ROADMAP-12.56.0
+  - ROADMAP-12.57.0
 related:
   - GKR-STATE-001
   - GPA-007
@@ -35,6 +35,7 @@ related:
   - UXA-082
   - UXA-083
   - UXA-084
+  - UXA-085
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -47,7 +48,7 @@ related:
   - M7.72
 ---
 
-# Roadmap Arquitetural — Galeria Revalidada com Ressalvas e Aguardando Promoção
+# Roadmap Arquitetural — Galeria Promovida com Ressalvas Preservadas
 
 ## 1. Autoridade
 
@@ -58,12 +59,12 @@ Este documento governa a sequência global do Repositório. O estado oficial per
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de conhecimento | GE-2 — Knowledge |
-| Marco | galeria e matriz revalidadas com ressalvas no escopo documental de inspeção | UXA-084; M7.72 |
+| Marco | instrumentos visuais promovidos após revalidação com ressalvas | UXA-085; M7.72 |
 | Registros granulares | 40 superfícies e 37 transições em instrumentos `active` | UXA-080 |
-| Galeria visual | `draft` 0.4.0; aprovada com ressalvas | UXA-084 |
-| páginas visuais | cinco páginas `draft` 0.2.0; revalidadas como conjunto | UXA-084 |
-| matriz por SVG | 97 arquivos associados a 23 perfis; `draft` 0.2.0; aprovada com ressalvas | UXA-084 |
-| SVGs auditados | 97 existentes; 87 validados localmente; 10 pendentes | UXA-081 a UXA-084 |
+| Galeria visual | `active` 0.5.0; ressalvas preservadas | UXA-085 |
+| páginas visuais | cinco páginas `active` 0.3.0; instrumentos de inspeção | UXA-085 |
+| matriz por SVG | 97 arquivos associados a 23 perfis; `active` 0.3.0 | UXA-085 |
+| SVGs auditados | 97 existentes; 87 validados localmente; 10 pendentes | UXA-081 a UXA-085 |
 | Jornadas principais | Pessoa, Coletivo e Organização em `draft` | Jornadas Integradas |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -76,23 +77,25 @@ UXA-070 a UXA-075 — estruturação e promoção seletiva das Jornadas Integrad
 → UXA-082 — validação não aprovada e priorização por dependência
 → UXA-083 — reformulação da galeria e matriz por SVG
 → UXA-084 — revalidação aprovada com ressalvas
+→ UXA-085 — promoção controlada dos instrumentos visuais
 ```
 
 Nenhuma etapa inicia automaticamente a seguinte.
 
-## 4. Resultado da UXA-084
+## 4. Resultado da UXA-085
 
 | Dimensão | Resultado |
 |---|---|
-| ordem da Pessoa | aprovada |
-| Home e Tela Hoje | separação aprovada |
-| rota entre páginas | aprovada |
-| rastreabilidade por SVG | 97 associações confirmadas |
-| perfis documentais | 23; aceitos com ressalva de agregação |
-| versões documentais | sincronizadas |
+| Galeria Visual Integrada | `active` 0.5.0 |
+| cinco páginas visuais | `active` 0.3.0 |
+| matriz por SVG | `active` 0.3.0 |
+| associações por SVG | 97 preservadas |
+| perfis documentais | 23 preservados |
+| validações locais | 87 preservadas |
+| estados sem validação específica | 10 preservados |
 | SVGs modificados | 0 |
 | novas telas | 0 |
-| promoção da galeria | não executada |
+| jornadas promovidas | 0 |
 
 ## 5. Ressalvas preservadas
 
@@ -101,14 +104,15 @@ Nenhuma etapa inicia automaticamente a seguinte.
 - dez estados da UXA-055 sem validação específica;
 - continuidades entre pacotes parciais ou não examinadas;
 - perfis agregados não substituem análise exclusiva por estado;
-- aprovação do instrumento não equivale a jornada validada.
+- promoção do instrumento não equivale a jornada validada.
 
 ## 6. Próxima trilha documental
 
 ```text
-promover a galeria e a matriz somente por ato separado
+instrumentos visuais promovidos
 → manter lacunas e dívidas de validação abertas
-→ iniciar, em ato posterior e independente, a primeira lacuna priorizada
+→ materializar, em ato posterior e independente, a primeira lacuna priorizada
+→ validar a nova materialização em pacote próprio antes de qualquer promoção
 ```
 
 Promoção e materialização continuam atos governados distintos.
@@ -123,7 +127,7 @@ GKR-SURF-COL-002 — Visão Geral do Responsável
 → GKR-SURF-PER-108 — Início do Participante
 ```
 
-Nenhuma dessas superfícies foi iniciada pela UXA-084.
+Nenhuma dessas superfícies foi iniciada pela UXA-085.
 
 ## 8. Dívidas de validação em trilha própria
 
@@ -135,12 +139,12 @@ Nenhuma dessas superfícies foi iniciada pela UXA-084.
 
 ## 9. Limites
 
-A UXA-084 não modifica SVGs, não cria telas, não promove jornadas, não fecha lacunas, não inicia protótipo, teste com pessoas, aplicação ou Engenharia de Produto.
+A UXA-085 não modifica SVGs, não cria telas, não promove jornadas, não fecha lacunas, não inicia protótipo, teste com pessoas, aplicação ou Engenharia de Produto.
+
+O status `active` dos instrumentos visuais limita-se ao escopo de inspeção revalidado pela UXA-084.
 
 ## 10. Próxima iniciativa possível
 
-> **UXA-085 — Promoção Controlada da Galeria Visual Integrada e Sincronização Pós-Revalidação**
+> **UXA-086 — Materialização Controlada da Visão Geral do Responsável do Coletivo**
 
-A UXA-085 poderá promover somente os instrumentos aprovados, preservando todas as ressalvas e ausências.
-
-A etapa depende de autorização separada.
+A etapa depende de autorização separada e deverá preservar a distinção entre materialização, validação e promoção.
