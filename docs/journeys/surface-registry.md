@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -20,6 +20,8 @@ related:
   - UXA-095
   - UXA-096
   - UXA-097
+  - UXA-098
+  - UXA-099
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -33,7 +35,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.14.0 preserva as 40 entradas. A UXA-097 revalida a variante de decisão de `PER-007`, adiciona uma variante inicial validada a `PER-008` e não cria qualquer novo ID.
+A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo dos dez estados residuais da UXA-055 e não cria qualquer novo ID.
 
 ## 2. Convenções
 
@@ -97,8 +99,8 @@ A versão 0.14.0 preserva as 40 entradas. A UXA-097 revalida a variante de decis
 | GKR-SURF-COM-001 | configuração do anunciante | anunciante | protegido | materializado | UXA-038 | UXA-040 | UXA-041 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-002 | cartão patrocinado e explicação | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-042 | UXA-043 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-003 | estados patrocinados de lista/mapa | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-044 | UXA-045 | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-COM-004 | gestão de campanha ativa | anunciante | protegido | materializado | UXA-038 | UXA-046 | não consolidada aqui | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-COM-005 | dez estados residuais | anunciante/Pessoa | diversos | materializado | UXA-038 | UXA-055 | — | [Comercial](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-004 | gestão de campanha ativa | anunciante | protegido | materializado | UXA-038 | UXA-046/053 | UXA-047/054 | [Comercial](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-COM-005 | dez estados residuais | anunciante/Pessoa | diversos | **validado** | UXA-038 | UXA-055 | **UXA-099** | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-BND-001 | fronteira externa identificada | Pessoa | externo | indeterminado | UXA-004; UXA-007 | — | — | [Comercial](surface-registry-commercial-boundary-details.md) |
 
 ## 5. Divisões controladas
@@ -108,15 +110,16 @@ A versão 0.14.0 preserva as 40 entradas. A UXA-097 revalida a variante de decis
 - `PER-106` é central de participações e estados relacionados, não feed;
 - `PER-107` é triagem de atualizações e sua versão corrente está validada pela UXA-096;
 - `PER-108` é síntese interna validada e não replica Central ou canais especializados;
-- `COM-005` continua sem validação funcional específica;
+- `COM-005` está funcionalmente validado pela UXA-099; sua validação não promove automaticamente `TRN-305`;
 - `BND-001` é endpoint documental, não tela.
 
-## 6. Efeito da UXA-097
+## 6. Efeito da UXA-099
 
 - 40 IDs preservados;
-- `PER-007`: permanece validado; variante de decisão corrente revalidada;
-- `PER-008`: permanece validado e ganha primeira variante validada;
-- `TRN-007` é tratado no registro de transições e passa a integralmente validada;
+- `COM-005`: materializado → **validado** no escopo dos dez estados UXA-055;
+- 10 SVGs residuais passam a possuir validação funcional específica;
+- 2 SVGs são reformulados sem criação de novo ID;
+- `TRN-305` permanece parcial no registro de transições;
 - nenhuma promoção de jornada ou implementação é inferida.
 
 ## 7. Estado
