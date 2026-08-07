@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.6.0
+version: 1.7.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -16,6 +16,7 @@ related:
   - GKR-CHANGELOG-UXA-087-001
   - GKR-CHANGELOG-UXA-088-001
   - GKR-CHANGELOG-UXA-089-001
+  - GKR-CHANGELOG-UXA-090-001
 normative: false
 ---
 
@@ -23,22 +24,21 @@ normative: false
 
 ## 1. Finalidade
 
-Este índice organiza os registros de atualização recentes sem reescrever o ledger histórico preservado no `CHANGELOG.md` da raiz.
+Este índice organiza os registros recentes sem reescrever o ledger histórico preservado no `CHANGELOG.md` da raiz. Changelogs não substituem `GKR-STATE-001` ou autoridades de domínio.
 
-Changelogs registram alterações. Eles não substituem `GKR-STATE-001`, autoridades de domínio, decisões arquiteturais ou evidências de integração.
+## 2. Baseline proposta pela UXA-090
 
-## 2. Baseline proposta pela UXA-089
-
-- [Registro do Estado Atual — 2.15.0 e M7.76](current-state-register.md)
+- [Registro do Estado Atual — 2.16.0 e M7.77](current-state-register.md)
 - [Rebaseline do P0 após UXA-084](p0-post-uxa084-rebaseline-2026-08-06.md)
 - [Rebaseline do P1 após UXA-084](p1-post-uxa084-rebaseline-2026-08-06.md)
 - [UXA-085 — Promoção Controlada da Galeria](changelog-uxa-085-2026-08-07.md)
 - [UXA-086 — Materialização da Visão Geral do Responsável](changelog-uxa-086-2026-08-07.md)
 - [UXA-087 — Validação Funcional da Visão Geral do Responsável](changelog-uxa-087-2026-08-07.md)
-- [UXA-088 — Materialização da Gestão de Solicitações do Responsável](changelog-uxa-088-2026-08-07.md)
-- [UXA-089 — Validação Funcional da Gestão de Solicitações do Responsável](changelog-uxa-089-2026-08-07.md)
+- [UXA-088 — Materialização da Gestão de Solicitações](changelog-uxa-088-2026-08-07.md)
+- [UXA-089 — Validação da Gestão de Solicitações](changelog-uxa-089-2026-08-07.md)
+- [UXA-090 — Validação Integrada dos Handoffs](changelog-uxa-090-2026-08-07.md)
 
-A baseline 2.15.0/M7.76 somente se torna vigente na `main` após integração governada do pacote UXA-089.
+A baseline 2.16.0/M7.77 somente se torna vigente na `main` após integração governada da UXA-090.
 
 ## 3. Sequência versionada publicada
 
@@ -54,23 +54,15 @@ A baseline 2.15.0/M7.76 somente se torna vigente na `main` após integração go
 
 ## 4. Regra de continuidade
 
-Novos registros deverão:
-
-1. identificar pacote e baseline;
-2. separar mudança de estado de manutenção documental;
-3. preservar a autoridade de `GKR-STATE-001`;
-4. informar limites e itens fora do escopo;
-5. vincular validações e decisão de integração;
-6. evitar declarar integração ainda não comprovada.
+Novos registros devem identificar pacote e baseline, preservar `GKR-STATE-001`, informar limites, vincular validações e evitar declarar integração ainda não comprovada.
 
 ## 5. Estado deste índice
 
 | Elemento | Estado proposto |
 |---|---|
 | ledger raiz | preservado como histórico legado |
-| índice atual | ativo 1.6.0 |
-| estado transversal | `GKR-STATE-001` 2.15.0 após eventual integração |
-| marco | M7.76 |
-| última UXA proposta | UXA-089 |
-| próxima UXA | UXA-090, não iniciada |
-| mudança arquitetural por este índice | nenhuma; apenas registro da UXA-089 |
+| índice atual | ativo 1.7.0 |
+| estado transversal | `GKR-STATE-001` 2.16.0 após eventual integração |
+| marco | M7.77 |
+| última UXA proposta | UXA-090 |
+| próxima UXA | UXA-091, não iniciada |
