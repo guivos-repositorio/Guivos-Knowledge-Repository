@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -16,6 +16,7 @@ related:
   - UXA-084
   - UXA-085
   - UXA-086
+  - UXA-087
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -30,11 +31,11 @@ normative: false
 
 Esta seção reúne os 98 SVGs canônicos para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A organização documental foi reformulada pela UXA-083, revalidada pela UXA-084 e promovida como instrumento documental pela UXA-085. A UXA-086 acrescenta uma nova referência de baixa fidelidade para `GKR-SURF-COL-002`, sem validar funcionalmente a superfície ou a continuidade associada.
+A UXA-086 acrescentou a referência de baixa fidelidade para `GKR-SURF-COL-002`. A UXA-087 reformula o mesmo arquivo e aprova funcionalmente essa superfície, sem adicionar SVG e sem validar a continuidade para `GKR-SURF-COL-003`.
 
 ## 2. Estado do instrumento
 
-A galeria permanece `active` como instrumento de inspeção. Esse status não significa que todos os SVGs estejam funcionalmente validados.
+A galeria permanece `active` como instrumento de inspeção. Esse status não significa que todos os SVGs estejam funcionalmente validados nem que suas transições estejam aprovadas.
 
 Ressalvas vigentes:
 
@@ -42,8 +43,8 @@ Ressalvas vigentes:
 - 13 responsabilidades continuam sem SVG dedicado;
 - uma fronteira permanece corretamente sem tela;
 - dez estados da UXA-055 continuam sem validação funcional específica;
-- o SVG da UXA-086 também aguarda validação funcional específica;
-- continuidades entre pacotes permanecem parciais ou não examinadas.
+- continuidades entre pacotes permanecem parciais ou não examinadas;
+- `GKR-TRN-112` continua parcial apesar da validação de sua origem.
 
 ## 3. Instrumentos de inspeção
 
@@ -64,9 +65,9 @@ A rota abaixo organiza a leitura documental. Ela não representa uma única jorn
 | 3 | [Coletivos](screen-gallery-collectives.md) | 24 | descoberta → perfil → solicitação → pendência → Visão Geral do Responsável |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → ativação → exposição identificada → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total** | **98** | **87 validados funcionalmente; 11 pendentes** |
+|  | **Total** | **98** | **88 validados funcionalmente; 10 pendentes** |
 
-As páginas são instrumentos documentais ativos. A presença de um SVG não valida automaticamente a continuidade que ele representa.
+As páginas são instrumentos documentais ativos. A presença ou a validação de um SVG não valida automaticamente a continuidade que ele representa.
 
 ## 5. Sequências funcionais destacadas
 
@@ -105,14 +106,14 @@ explorar e buscar
 → Perfil Público
 → revisão e solicitação
 → Solicitação Pendente
-→ Visão Geral do Responsável
-→ gestão completa de solicitações
+→ Visão Geral do Responsável — validada
+→ gestão completa de solicitações — ausente
 → Meus Coletivos
 → Central de Atualizações
 → Início do Participante
 ```
 
-A galeria agora possui referência visual para a Visão Geral do Responsável. A gestão completa de solicitações e as superfícies posteriores permanecem ausentes ou parciais.
+A gestão completa de solicitações e as superfícies posteriores permanecem ausentes ou parciais.
 
 ## 6. Cobertura confirmada
 
@@ -121,8 +122,8 @@ A galeria agora possui referência visual para a Visão Geral do Responsável. A
 | SVGs existentes e referenciados | 98 |
 | associações individuais | 98 |
 | perfis de rastreabilidade | 24 |
-| com validação funcional registrada | 87 |
-| pendentes de validação específica | 11 |
+| com validação funcional registrada | 88 |
+| pendentes de validação específica | 10 |
 | IDs com referência visual direta ou agrupada | 26 de 40 |
 | responsabilidades sem SVG dedicado | 13 |
 | fronteira documental sem tela por definição | 1 |
@@ -138,24 +139,25 @@ A galeria agora possui referência visual para a Visão Geral do Responsável. A
 
 `GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
 
-## 8. Efeito da UXA-086
+## 8. Efeito da UXA-087
 
-`GKR-SURF-COL-002` deixa de constar como responsabilidade sem SVG dedicado. A nova referência:
+O perfil `R24` passa a registrar validação funcional em UXA-087. A mesma referência visual:
 
-- está associada ao perfil `R24`;
-- possui autoridade em UXA-014, UXA-056, UXA-058 e UXA-059;
-- permanece sem validação funcional específica;
-- não fecha `GKR-TRN-112`;
+- explicita representação e escopo de autoridade;
+- apresenta prazo verificável para a atenção principal;
+- oferece adiamento ou contestação sem penalidade;
+- oferece retorno explícito ao contexto anterior;
+- permanece apenas como origem de `GKR-TRN-112`;
 - não cria `GKR-SURF-COL-003`.
 
 ## 9. Estado
 
-A galeria está `active` 0.6.0. A página de Coletivos está `active` 0.4.0 e a matriz por SVG está `active` 0.4.0.
+A galeria está `active` 0.7.0. A página de Coletivos está `active` 0.5.0 e a matriz por SVG está `active` 0.5.0.
 
-O status `active` aprova somente os instrumentos documentais de inspeção. Não valida jornadas ponta a ponta, não promove superfícies ou transições e não inicia protótipo ou Engenharia de Produto.
+O status `active` aprova somente os instrumentos documentais de inspeção. Não valida jornadas ponta a ponta, não inicia protótipo ou Engenharia de Produto e não autoriza UXA-088 automaticamente.
 
 ## 10. Próxima transição possível
 
-**UXA-087 — Validação Funcional da Visão Geral do Responsável do Coletivo**, mediante autorização separada.
+**UXA-088 — Materialização Controlada da Gestão de Solicitações do Responsável do Coletivo (`GKR-SURF-COL-003`)**, mediante autorização separada.
 
-A UXA-087 não é iniciada por esta atualização da galeria.
+A UXA-088 não é iniciada por esta atualização da galeria.
