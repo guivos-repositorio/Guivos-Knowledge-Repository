@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.11.0
+version: 0.12.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -21,6 +21,7 @@ related:
   - UXA-084
   - UXA-085
   - UXA-086
+  - UXA-087
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -36,12 +37,11 @@ normative: false
 ```text
 SVG existente
 ≠ superfície granular adicional
-≠ validação funcional
 ≠ transição validada
 ≠ jornada integrada validada
 ```
 
-A inspeção visual ocorre na [Galeria Visual Integrada](screen-gallery.md). A associação individual dos arquivos está na [Matriz de Rastreabilidade por SVG](screen-gallery-traceability-matrix.md).
+Uma superfície pode possuir validação funcional própria sem que sua continuidade para o próximo destino esteja validada. A inspeção visual ocorre na [Galeria Visual Integrada](screen-gallery.md) e a associação individual está na [Matriz de Rastreabilidade por SVG](screen-gallery-traceability-matrix.md).
 
 ## 2. Inventário agregado por família
 
@@ -58,21 +58,21 @@ A inspeção visual ocorre na [Galeria Visual Integrada](screen-gallery.md). A a
 | Pessoa em Coletivos | revisão e solicitação | 5 | 5 validados | parcial | destino operacional do responsável |
 | Pessoa em Coletivos | Solicitação Pendente | 8 | 8 validados na perspectiva da Pessoa | ausente após decisão | gestão do responsável e Meus Coletivos |
 | Coletivo | referência inicial | 1 | validado | parcial | continuidade com gestão |
-| Coletivo | Visão Geral do Responsável | 1 | pendente de validação | GKR-TRN-112 parcial | gestão completa de solicitações |
+| Coletivo | Visão Geral do Responsável | 1 | validado por UXA-087 | GKR-TRN-112 parcial | gestão completa de solicitações |
 | Organização | visão geral e cadastro | 2 | 2 validados | publicação–descoberta não examinada | matriz institucional completa |
 | camada comercial | Opportunity Boost | 46 | 36 validados; 10 pendentes | parcial | estados residuais da UXA-055 |
 | fronteira documental | destino externo | 0 | não aplicável | não examinada | efeito externo |
-| **Total** |  | **98** | **87 validados; 11 pendentes** |  |  |
+| **Total** |  | **98** | **88 validados; 10 pendentes** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
 | Registro | Quantidade | Estado |
 |---|---:|---|
-| superfícies, estados, responsabilidades ou fronteiras | 40 | `active` 0.4.0 |
+| superfícies, estados, responsabilidades ou fronteiras | 40 | `active` 0.5.0 |
 | transições documentais | 37 | `active` 0.4.0 |
 | referências de endpoint | 74 | resolvidas |
 | endpoints em texto livre | 0 | aprovado |
-| detalhamento do Coletivo | 8 entradas | `active` 0.3.0 |
+| detalhamento do Coletivo | 8 entradas | `active` 0.4.0 |
 | demais detalhamentos obrigatórios | 3 arquivos | `active` 0.2.0 |
 
 O status `active` aprova os instrumentos, não os objetos registrados.
@@ -86,23 +86,25 @@ O status `active` aprova os instrumentos, não os objetos registrados.
 | fronteira intencionalmente sem tela | 1 |
 | **Total** | **40** |
 
-## 5. Efeito da UXA-086
+## 5. Efeito da UXA-087
 
-A UXA-086 adiciona `uxa-086-collective-responsible-overview-desktop.svg` para `GKR-SURF-COL-002`.
+A UXA-087 reformula o arquivo `uxa-086-collective-responsible-overview-desktop.svg` sem criar um novo ativo e valida funcionalmente `GKR-SURF-COL-002`.
 
-A nova referência:
+O incremento:
 
-- aumenta o inventário visual de 97 para 98 SVGs;
-- reduz responsabilidades sem SVG dedicado de 14 para 13;
-- aumenta IDs com referência visual de 25 para 26;
-- permanece sem validação funcional específica;
+- mantém o inventário visual em 98 SVGs;
+- mantém 24 perfis de rastreabilidade;
+- aumenta validações funcionais de 87 para 88;
+- reduz pendentes de 11 para 10;
+- mantém 26 IDs com referência visual;
+- mantém 13 responsabilidades sem SVG dedicado;
 - não materializa `GKR-SURF-COL-003`;
-- não valida `GKR-TRN-112`.
+- não valida `GKR-TRN-112` ponta a ponta.
 
 ## 6. Prioridade de Coletivos
 
 ```text
-Visão Geral do Responsável — materializada; validação pendente
+Visão Geral do Responsável — validada
 → gestão completa de solicitações — ausente
 → Meus Coletivos — ausente
 → Central de Atualizações — ausente
@@ -114,18 +116,18 @@ Visão Geral do Responsável — materializada; validação pendente
 - `GKR-SURF-PER-102` representa exclusivamente busca de Coletivos;
 - `GKR-SURF-PER-201`, `202` e `203` representam mapa, lista e detalhe de oportunidades;
 - `GKR-SURF-ORG-003` representa o estado institucional de oportunidade;
-- `GKR-SURF-COL-002` é a visão geral do responsável e não substitui a gestão completa de solicitações;
+- `GKR-SURF-COL-002` é a visão geral validada do responsável e não substitui a gestão completa de solicitações;
 - `GKR-SURF-COM-005` permanece ligado aos dez SVGs não validados da UXA-055;
 - `GKR-SURF-BND-001` é fronteira documental, não tela.
 
 ## 8. Estado vigente
 
-- catálogo: `active` 0.11.0;
-- galeria: `active` 0.6.0;
-- página de Coletivos: `active` 0.4.0;
+- catálogo: `active` 0.12.0;
+- galeria: `active` 0.7.0;
+- página de Coletivos: `active` 0.5.0;
 - demais páginas visuais: `active` 0.3.0;
-- matriz por SVG: `active` 0.4.0;
+- matriz por SVG: `active` 0.5.0;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 
-A materialização da UXA-086 não promove a superfície para estado validado e não autoriza UXA-087 automaticamente.
+A validação da UXA-087 não autoriza UXA-088 automaticamente.
