@@ -2,7 +2,7 @@
 id: UXA-100-A1
 title: Integração de Planos às Jornadas e Telas Dedicadas
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-100
@@ -164,7 +164,7 @@ Com esta extensão:
 - Jornada da Pessoa: `draft` 0.12.0;
 - Jornada do Coletivo: `draft` 0.13.0;
 - Jornada da Organização: `draft` 0.5.0;
-- Jornadas Integradas: `active` 0.28.0 como instrumento de leitura;
+- Jornadas Integradas: `active` 0.28.1 como instrumento de leitura;
 - Catálogo: `active` 0.23.0, preservando 109 SVGs canônicos e registrando 9 candidatos separados;
 - Galeria principal: `active` 0.18.0, com referência ao apêndice candidato;
 - Galeria candidata de Planos: `draft` 0.1.0.
