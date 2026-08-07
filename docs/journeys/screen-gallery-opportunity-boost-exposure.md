@@ -1,15 +1,17 @@
 ---
 id: GKR-JOURNEY-SCREEN-GALLERY-OPPORTUNITY-BOOST-EXPOSURE-001
 title: Opportunity Boost — Configuração e Exposição
-status: draft
-version: 0.2.0
+status: active
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-05
+last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
 related:
   - UXA-081
   - UXA-082
   - UXA-083
+  - UXA-084
+  - UXA-085
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -125,5 +127,7 @@ configuração do anunciante
 ## 5. Limite
 
 A exposição patrocinada não compra relevância, reputação ou autoridade. A integração orgânico–patrocinado permanece parcial.
+
+O status `active` registra somente a promoção documental do instrumento de inspeção executada pela UXA-085; não promove regras econômicas nem valida a continuidade orgânico–patrocinado.
 
 [← Coletivos](screen-gallery-collectives.md) · [Índice](screen-gallery.md) · [Matriz por SVG](screen-gallery-traceability-matrix.md) · [Próxima: Operação e Resíduos →](screen-gallery-opportunity-boost-operations.md)
