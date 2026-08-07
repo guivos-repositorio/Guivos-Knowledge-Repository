@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -20,6 +20,7 @@ related:
   - UXA-089
   - UXA-090
   - UXA-091
+  - UXA-092
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -36,7 +37,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.8.0 preserva as 40 entradas e registra a materialização de `GKR-SURF-PER-106 — Meus Coletivos` pela UXA-091. Nenhum novo identificador é criado.
+A versão 0.9.0 preserva as 40 entradas, registra a validação de `GKR-SURF-PER-106 — Meus Coletivos` e a revalidação do estado aprovado corrente de `GKR-SURF-PER-105` pela UXA-092. Nenhum novo identificador é criado.
 
 ## 2. Convenções
 
@@ -59,7 +60,7 @@ A versão 0.8.0 preserva as 40 entradas e registra a materialização de `GKR-SU
 | fronteira documental | 1 |
 | **Total** | **40** |
 
-A UXA-091 não altera a contagem; altera somente a maturidade documental de `PER-106`.
+A UXA-092 não altera a contagem; altera somente a maturidade documental de `PER-105` e `PER-106`.
 
 ## 4. Inventário principal
 
@@ -77,8 +78,8 @@ A UXA-091 não altera a contagem; altera somente a maturidade documental de `PER
 | GKR-SURF-PER-102 | Resultados de Busca de Coletivos | visitante; descoberta de Coletivos | móvel | validado | UXA-056 | UXA-060 | UXA-061 | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-PER-103 | Perfil Público do Coletivo | visitante; presença pública de Coletivo | móvel | validado | UXA-056 | UXA-062 | UXA-063 | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-PER-104 | revisão e solicitação | solicitante; participação em Coletivo | móvel | validado | UXA-056 | UXA-064 | UXA-065 | [surface-registry-person-details.md](surface-registry-person-details.md) |
-| GKR-SURF-PER-105 | Solicitação Pendente | solicitante; participação em Coletivo | móvel | validado com um estado reformulado pendente de revalidação | UXA-056 | UXA-066; continuidade aprovada reformulada por UXA-091 | UXA-067 para a família anterior; estado aprovado atual aguarda UXA-092 | [surface-registry-person-details.md](surface-registry-person-details.md) |
-| GKR-SURF-PER-106 | Meus Coletivos | participante; continuidade em Coletivo | móvel | materializado | UXA-056; UXA-059 | UXA-091; 1 SVG móvel | — | [surface-registry-person-details.md](surface-registry-person-details.md) |
+| GKR-SURF-PER-105 | Solicitação Pendente | solicitante; participação em Coletivo | móvel | validado | UXA-056 | UXA-066; estado aprovado reformulado por UXA-091/092 | UXA-067 para a família; UXA-092 para o estado aprovado corrente e TRN-108 | [surface-registry-person-details.md](surface-registry-person-details.md) |
+| GKR-SURF-PER-106 | Meus Coletivos | participante; continuidade em Coletivo | móvel | validado | UXA-056; UXA-059 | UXA-091; reformulação UXA-092; 1 SVG móvel | UXA-092 | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-PER-107 | Central de Atualizações | participante; continuidade em Coletivo | não definido | não iniciado | UXA-059 | — | — | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-PER-108 | Início do Participante | participante; operação interna de Coletivo | não definido | reformulação pendente | UXA-059 | referência anterior não promovida | — | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa ou visitante; descoberta de oportunidades | móvel e computador | validado | UXA-004 | UXA-024 | UXA-025 | [surface-registry-person-details.md](surface-registry-person-details.md) |
@@ -86,7 +87,7 @@ A UXA-091 não altera a contagem; altera somente a maturidade documental de `PER
 | GKR-SURF-PER-203 | Detalhe de Oportunidade | Pessoa ou visitante; decisão sobre oportunidade | móvel e computador | validado | UXA-004; UXA-007 | UXA-007 | UXA-012 | [surface-registry-person-details.md](surface-registry-person-details.md) |
 | GKR-SURF-COL-001 | Visão Geral ou presença pública existente | visitante e responsável; presença pública de Coletivo | público e protegido | materializado | UXA-014; UXA-056 | UXA-016 e referências relacionadas | UXA-018; UXA-063 no escopo aplicável | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-002 | Visão Geral do Responsável | responsável; operação de Coletivo | computador protegido | validado | UXA-014; UXA-056; UXA-058; UXA-059 | UXA-086; reformulação UXA-087 | UXA-087 | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
-| GKR-SURF-COL-003 | gestão de solicitações | responsável; participação em Coletivo | computador protegido | validado | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop; reformulação UXA-089; efeitos na Pessoa em UXA-066 | UXA-089 no escopo do responsável; UXA-090 nos handoffs elegíveis | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
+| GKR-SURF-COL-003 | gestão de solicitações | responsável; participação em Coletivo | computador protegido | validado | UXA-056; UXA-059 | UXA-088; 7 SVGs desktop; reformulação UXA-089; efeitos na Pessoa em UXA-066 | UXA-089 no escopo do responsável; UXA-090/092 nos handoffs aplicáveis | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-004 | participantes e vínculos | responsável; vínculos de Coletivo | protegido | programado | UXA-059 | — | — | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-005 | comunicação oficial | responsável; comunicação de Coletivo | protegido | programado | UXA-058; UXA-059 | — | — | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
 | GKR-SURF-COL-006 | atividades, consultas e decisões | responsável; operação de Coletivo | protegido | programado | UXA-059 | parcial ou dispersa | — | [surface-registry-collective-details.md](surface-registry-collective-details.md) |
@@ -119,8 +120,8 @@ Os quatro detalhamentos integram este registro:
 
 - `GKR-SURF-COL-002` representa somente a visão geral validada do responsável;
 - `GKR-SURF-COL-003` representa exclusivamente gestão de solicitações validada no escopo da superfície;
-- `GKR-SURF-PER-105` permanece a perspectiva da Pessoa sobre a solicitação; seu estado aprovado atual foi reformulado pela UXA-091 e aguarda revalidação;
-- `GKR-SURF-PER-106` representa exclusivamente a central de vínculos da Pessoa e não substitui `PER-107` ou `PER-108`;
+- `GKR-SURF-PER-105` permanece a perspectiva da Pessoa sobre a solicitação; seu estado aprovado corrente foi revalidado pela UXA-092;
+- `GKR-SURF-PER-106` representa exclusivamente a central de participações e estados relacionados da Pessoa e não substitui `PER-107` ou `PER-108`;
 - `GKR-SURF-COM-005` continua sem validação funcional específica;
 - `GKR-SURF-BND-001` é endpoint documental, não tela Guivos.
 
@@ -129,18 +130,18 @@ Os quatro detalhamentos integram este registro:
 - o inventário e seus detalhamentos formam um único registro lógico;
 - valores desconhecidos permanecem explícitos;
 - materialização não equivale a validação funcional;
-- validação de superfície não comprova continuidade integrada;
+- validação de superfície não comprova continuidade integrada distinta;
 - responsabilidade sem interface continua `ausente`;
-- uma reformulação visual invalida a suposição de que a versão corrente continua funcionalmente validada sem reexame;
+- uma reformulação visual invalida a suposição de validação até reexame;
 - o status `active` aprova o instrumento, não a completude das jornadas.
 
-## 8. Efeito da UXA-091
+## 8. Efeito da UXA-092
 
-A UXA-091:
+A UXA-092:
 
-- materializa `GKR-SURF-PER-106` com um SVG móvel;
 - mantém 40 IDs;
+- reformula e valida `GKR-SURF-PER-106`;
+- revalida o estado aprovado corrente de `GKR-SURF-PER-105`;
 - não materializa `PER-107` ou `PER-108`;
-- preserva `TRN-108` parcial;
-- torna explícita a necessidade de revalidar o estado aprovado reformulado de `PER-105`;
+- registra `TRN-108` como integralmente validada no registro próprio;
 - não promove qualquer jornada.
