@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCENARIOS-001
 title: Cenários Integrados de Jornada
 status: active
-version: 0.4.0
+version: 0.5.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -18,6 +18,7 @@ related:
   - UXA-089
   - UXA-090
   - UXA-091
+  - UXA-092
 normative: false
 ---
 
@@ -51,13 +52,13 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 |---|---|
 | finalidade | descobrir um Coletivo, solicitar participação e compreender o resultado |
 | participantes e perspectivas | Pessoa solicitante e responsável do Coletivo |
-| nós materializados | explorar, busca, Perfil Público, revisão, PER-105 e COL-003 |
-| nós validados | superfícies até PER-105 na versão aplicável; COL-003; handoffs 105/106/107/109 por UXA-090 |
-| transições integralmente validadas | TRN-105, TRN-106, TRN-107 e TRN-109 |
-| continuidade parcial | aprovação via TRN-108 após reformulação UXA-091 |
-| interrupção por lacuna | validação do estado aprovado corrente e de PER-106 |
-| conclusão permitida | solicitação, pedido adicional, resposta e recusa possuem continuidade bilateral validada |
-| conclusão proibida | declarar a aprovação pós-UXA-091 validada antes da UXA-092 |
+| nós materializados | explorar, busca, Perfil Público, revisão, PER-105, COL-003 e PER-106 |
+| nós validados | superfícies até PER-105; COL-003; PER-106; handoffs específicos por UXA-090/092 |
+| transições integralmente validadas | TRN-105, TRN-106, TRN-107, TRN-108 e TRN-109 |
+| continuidade parcial | após Meus Coletivos, TRN-110 permanece parcial |
+| interrupção por lacuna | Central de Atualizações ausente |
+| conclusão permitida | solicitação, pedido adicional, resposta, aprovação e recusa possuem continuidade bilateral validada nos handoffs indicados |
+| conclusão proibida | declarar toda a sequência interna do Coletivo ou a jornada completa como validada |
 
 ### 2.3 Pessoa recebe aprovação e encontra o vínculo em Meus Coletivos
 
@@ -66,12 +67,12 @@ Uma narrativa compreensível não equivale a um fluxo funcionalmente validado ou
 | finalidade | tornar a formação do vínculo compreensível sem criar função, pressão ou promessa de superfícies ausentes |
 | participantes e perspectivas | responsável do Coletivo e Pessoa participante |
 | nós materializados | COL-003; resultado aprovado corrente em PER-105; PER-106 |
-| passagem materializada | aprovação → resultado em PER-105 → `Ver em Meus Coletivos` → PER-106 |
-| transição | TRN-108 parcial |
-| validação | COL-003 validada; estado aprovado corrente e PER-106 pendentes |
-| interrupção por lacuna | revalidação integrada em UXA-092 |
-| conclusão permitida | existe materialização suficiente para inspecionar a continuidade |
-| conclusão proibida | afirmar TRN-108 integralmente validada ou implementada |
+| passagem validada | aprovação → resultado em PER-105 → vínculo já formado → navegação opcional → PER-106 |
+| transição | TRN-108 integralmente validada |
+| validação | COL-003 validada; estado aprovado corrente revalidado; PER-106 validada |
+| interrupção por lacuna | continuidade seguinte em TRN-110/PER-107 |
+| conclusão permitida | a formação do vínculo e sua visibilidade em Meus Coletivos possuem validação documental integrada |
+| conclusão proibida | confundir essa validação com implementação ou com validação de PER-107/PER-108 |
 
 ### 2.4 Coletivo solicita informação adicional
 
@@ -131,6 +132,6 @@ Um cenário só poderá ser marcado como completo quando todos os seus nós, tra
 
 ## 4. Estado vigente
 
-O documento permanece `active` como síntese de cenários governados e limitados pela evidência. A UXA-091 acrescenta a inspeção do cenário de aprovação até `Meus Coletivos`, ainda parcial.
+O documento permanece `active` como síntese de cenários governados e limitados pela evidência. A UXA-092 valida o cenário específico de aprovação até `Meus Coletivos`; a continuidade seguinte permanece interrompida em `PER-107` ausente.
 
-O status `active` não transforma qualquer cenário em jornada implementada. A UXA-092 não é iniciada por esta sincronização.
+O status `active` não transforma qualquer cenário em jornada implementada. A UXA-093 não é iniciada por esta sincronização.

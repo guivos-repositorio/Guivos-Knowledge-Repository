@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -16,6 +16,7 @@ depends_on:
   - UXA-089
   - UXA-090
   - UXA-091
+  - UXA-092
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -34,7 +35,7 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos *
 
 ## 2. Estado do instrumento
 
-A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adicionou `R24`, a UXA-088 adicionou `R25`, a UXA-090 validou os handoffs elegíveis relacionados e a UXA-091 adiciona `R26` para `GKR-SURF-PER-106 — Meus Coletivos`.
+A UXA-084 aprovou a matriz com ressalvas no escopo documental de rastreabilidade e a UXA-085 promoveu o instrumento para `active`. A UXA-086 adicionou `R24`, a UXA-088 adicionou `R25`, a UXA-090 validou os handoffs elegíveis relacionados, a UXA-091 adicionou `R26` para `GKR-SURF-PER-106 — Meus Coletivos` e a UXA-092 revalida `R15` no estado aprovado corrente e valida `R26`.
 
 As 106 associações individuais estão registradas em 26 perfis. Perfis de rastreabilidade são instrumentos documentais: não substituem análise semântica exclusiva de cada estado visual e não validam automaticamente transições ou jornadas.
 
@@ -56,7 +57,7 @@ As 106 associações individuais estão registradas em 26 perfis. Perfis de rast
 | R12 | GKR-SURF-PER-101; GKR-SURF-PER-102 | origem de exploração | GKR-TRN-101; GKR-TRN-102 | limpar filtros, voltar ou refazer busca | continuidade entre descoberta e perfil | UXA-061 |
 | R13 | GKR-SURF-PER-103; GKR-SURF-COL-001 | GKR-TRN-102 | GKR-TRN-103 | retornar aos resultados | handoff para solicitação | UXA-063 |
 | R14 | GKR-SURF-PER-104 | GKR-TRN-103 | GKR-TRN-104 | cancelar e retornar ao perfil | continuidade para solicitação ainda parcial | UXA-065 |
-| R15 | GKR-SURF-PER-105 | GKR-TRN-104; GKR-TRN-106; GKR-TRN-109 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-108; retorno | cancelar, responder, aguardar, voltar ou seguir para Meus Coletivos quando aprovado | handoffs 105/106/107/109 validados; estado aprovado corrente e TRN-108 aguardam revalidação | UXA-067 para 7 estados correntes; aprovação corrente pendente UXA-092 |
+| R15 | GKR-SURF-PER-105 | GKR-TRN-104; GKR-TRN-106; GKR-TRN-109 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-108; retorno | cancelar, responder, aguardar, voltar ou seguir opcionalmente para Meus Coletivos quando aprovado | TRN-105/106/107/108/109 validadas nos gates aplicáveis; outras continuidades permanecem separadas | UXA-067 para a família; estado aprovado corrente revalidado por UXA-092 |
 | R16 | GKR-SURF-COM-001 | entrada protegida do anunciante | GKR-TRN-301 | editar, cancelar, pausar ou encerrar conforme estado | regras econômicas e estados residuais | UXA-041 |
 | R17 | GKR-SURF-COM-001 | entrada protegida do anunciante | GKR-TRN-301 | editar, cancelar, pausar ou encerrar conforme estado | regras econômicas e estados residuais | UXA-052 |
 | R18 | GKR-SURF-COM-002 | GKR-TRN-302; GKR-TRN-303 | GKR-TRN-304; GKR-TRN-306 | ignorar ou retornar ao contexto orgânico | integração orgânico ↔ patrocinado | UXA-043 |
@@ -66,8 +67,8 @@ As 106 associações individuais estão registradas em 26 perfis. Perfis de rast
 | R22 | GKR-SURF-COM-004 | GKR-TRN-301 | GKR-TRN-302; GKR-TRN-305 | pausar, revisar, encerrar ou contestar conforme estado | estados residuais e regras econômicas | UXA-054 |
 | R23 | GKR-SURF-COM-005 | GKR-TRN-305 | não examinada | depende do estado; desfazer, contestar ou continuar não validados | dez estados residuais da UXA-055 | pendente de validação específica |
 | R24 | GKR-SURF-COL-002 | acesso protegido com representação válida | GKR-TRN-112 para GKR-SURF-COL-003 | permanecer, adiar quando legítimo, contestar prioridade ou retornar | continuidade específica fechada por UXA-090 | UXA-087 na superfície; TRN-112 integralmente validada por UXA-090 |
-| R25 | GKR-SURF-COL-003 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-112 | GKR-TRN-106; GKR-TRN-108; GKR-TRN-109 ou permanência | voltar sem decidir, aguardar, descartar rascunho ou interromper por autoridade insuficiente | TRN-108 ainda parcial; demais handoffs elegíveis fechados por UXA-090 | UXA-089 na superfície; UXA-090 nos handoffs elegíveis |
-| R26 | GKR-SURF-PER-106 | vínculo confirmado após resultado aprovado em PER-105; GKR-TRN-108 | GKR-TRN-110 quando PER-107 existir; retornos conforme contrato | trocar categoria, voltar ou não prosseguir | PER-106 e TRN-108 aguardam UXA-092; PER-107 ausente | pendente de validação específica |
+| R25 | GKR-SURF-COL-003 | GKR-TRN-105; GKR-TRN-107; GKR-TRN-112 | GKR-TRN-106; GKR-TRN-108; GKR-TRN-109 ou permanência | voltar sem decidir, aguardar, descartar rascunho ou interromper por autoridade insuficiente | handoffs 105/106/107/108/109/112 fechados nos gates aplicáveis; continuidades posteriores separadas | UXA-089 na superfície; UXA-090/092 nos handoffs aplicáveis |
+| R26 | GKR-SURF-PER-106 | vínculo confirmado após resultado aprovado em PER-105; GKR-TRN-108 | GKR-TRN-110 quando PER-107 existir; retornos conforme contrato | trocar categoria, voltar ou não prosseguir | TRN-108 fechada; PER-107 e TRN-110 permanecem abertos; P0B adicional separado | UXA-092 |
 
 ## 4. Associação individual dos 106 SVGs
 
@@ -185,15 +186,15 @@ As 106 associações individuais estão registradas em 26 perfis. Perfis de rast
 - SVGs registrados: **106**;
 - associações individuais: **106**;
 - perfis documentais: **26**;
-- com validação funcional vigente: **94**;
-- pendentes de validação específica: **12**;
-- novo arquivo visual da UXA-091: **1**;
-- arquivo existente reformulado pela UXA-091: **1**.
+- com validação funcional vigente: **96**;
+- pendentes de validação específica: **10**;
+- arquivos visuais novos na UXA-092: **0**;
+- arquivos existentes reformulados pela UXA-092: **2**.
 
-Os 12 pendentes correspondem a dez estados residuais da UXA-055, ao estado aprovado corrente de `PER-105` e ao novo `PER-106`. A associação a um perfil não valida automaticamente uma transição ou jornada.
+Os dez pendentes remanescentes correspondem exclusivamente aos estados residuais da UXA-055. A associação a um perfil não valida automaticamente uma transição ou jornada.
 
 ## 6. Próxima transição possível
 
-**UXA-092 — Validação Funcional de Meus Coletivos e Revalidação da Continuidade Pós-Aprovação**, mediante autorização separada.
+**UXA-093 — Materialização Controlada da Central de Atualizações (`GKR-SURF-PER-107`)**, mediante autorização separada.
 
-A UXA-092 não é iniciada por esta matriz.
+A UXA-093 não é iniciada por esta matriz.
