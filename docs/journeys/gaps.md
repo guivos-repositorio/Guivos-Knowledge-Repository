@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.23.0
+version: 0.24.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -17,6 +17,7 @@ related:
   - UXA-096
   - UXA-097
   - UXA-098
+  - UXA-099
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -28,7 +29,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A UXA-098 fecha a prioridade V2 sem alterar SVGs, promover jornadas ou iniciar efeito externo de oportunidades.
+Este documento é observacional e não promocional. A UXA-099 encerra a pendência de validação específica dos dez estados residuais do Opportunity Boost, sem promover automaticamente a transição `TRN-305`, as integrações patrocinadas com Mapa/Lista ou qualquer jornada.
 
 ## 2. Gates pessoais
 
@@ -37,8 +38,8 @@ Este documento é observacional e não promocional. A UXA-098 fecha a prioridade
 | compreensão inicial → primeira Tela Hoje | PER-007; TRN-007; PER-008 | materializados | integralmente validada por UXA-097 | recorrência e estados alternativos separados |
 | Home pública → entrada protegida | PER-001; TRN-001; PER-002 | materializados | parcial | validação integrada |
 | escolha → expressão | PER-003; TRN-003; PER-004 | materializados | parcial | validação integrada |
-| expressão → inventário | PER-004; TRN-004; PER-005 | materializados | parcial | validação integrada |
-| inventário → processamento | PER-005; TRN-005; PER-006 | materializados | parcial | validação integrada |
+| expressão → inventário | PER-004; TRN-004; PER-005 | materializados | parcial | integração com inventário |
+| inventário → processamento | PER-005; TRN-005; PER-006 | materializados | parcial | continuidade entre materializações |
 
 ## 3. Gates de oportunidade e descoberta
 
@@ -51,7 +52,18 @@ Este documento é observacional e não promocional. A UXA-098 fecha a prioridade
 | Detalhe → efeito externo | PER-203; TRN-205; BND-001 | detalhe materializado; fronteira sem tela | parcial | contrato e validação específicos |
 | patrocinado → Mapa/Lista orgânicos | COM-002; TRN-304/306; PER-201/PER-202 | materializados | parcial | integração orgânico–patrocinado específica |
 
-## 4. Gates de Coletivos
+## 4. Gates do Opportunity Boost
+
+| Continuidade ou família | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
+|---|---|---|---|---|
+| dez estados residuais UXA-055 | COM-005 | 10 SVGs materializados | **validado por UXA-099** | nenhuma pendência de validação específica dos SVGs |
+| gestão ativa → estados residuais | COM-004; TRN-305; COM-005 | origem e destino materializados | **parcial** | validação ponta a ponta da transição |
+| retorno patrocinado → Mapa | COM-002; TRN-304; PER-201 | materializados | parcial | integração específica |
+| retorno patrocinado → Lista | COM-002; TRN-306; PER-202 | materializados | parcial | integração específica |
+
+A validação dos estados não promove automaticamente as ligações que chegam ou saem deles.
+
+## 5. Gates de Coletivos
 
 | Lacuna | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
@@ -61,7 +73,7 @@ Este documento é observacional e não promocional. A UXA-098 fecha a prioridade
 | Meus Coletivos → Central | PER-106; TRN-110; PER-107 | materializados | integralmente validada | nenhuma nesta ligação |
 | Central → Início do Participante | PER-107; TRN-111; PER-108 | materializados | integralmente validada por UXA-096 | estados P0B e áreas internas permanecem separados |
 
-## 5. Fila de materialização por dependência
+## 6. Fila de materialização por dependência
 
 | Prioridade | Lacuna | IDs relacionados | Estado visual | Gate |
 |---:|---|---|---|---|
@@ -72,42 +84,42 @@ Este documento é observacional e não promocional. A UXA-098 fecha a prioridade
 | 5 | relação Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | materialização e validação bilateral |
 | 6 | matriz institucional completa | ORG-001; ORG-007 | cobertura parcial | programa específico e validação |
 
-## 6. Fila de validação
+## 7. Fila de validação
 
 | Prioridade | Continuidade ou família | Estado atual | Gate |
 |---:|---|---|---|
 | V1 — encerrado | compreensão inicial → Tela Hoje | TRN-007 integralmente validada | UXA-097 |
-| **V2 — encerrado** | publicação → descoberta e Mapa/Lista/Detalhe | **TRN-203/204/210/211 integralmente validadas** | **UXA-098** |
-| **V3** | dez estados residuais Opportunity Boost | 10 SVGs sem validação específica | pacote específico |
-| V4 | efeito externo de oportunidades | TRN-205 parcial | contrato e validação específicos |
+| V2 — encerrado | publicação → descoberta e Mapa/Lista/Detalhe | TRN-203/204/210/211 integralmente validadas | UXA-098 |
+| **V3 — encerrado** | dez estados residuais Opportunity Boost | **10 SVGs funcionalmente validados** | **UXA-099** |
+| **V4** | efeito externo de oportunidades | TRN-205 parcial | contrato e validação específicos |
 | V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada |
 
-## 7. Efeito da UXA-098
+## 8. Efeito da UXA-099
 
-A UXA-098:
+A UXA-099:
 
-- não cria nem altera SVG;
+- não cria SVG;
+- reforma 2 dos 10 SVGs residuais;
 - preserva 109 SVGs, 109 associações e 28 perfis;
-- preserva 99 validações funcionais vigentes;
-- preserva 10 pendências, exclusivamente UXA-055;
-- promove `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211` a integralmente validadas;
+- promove a cobertura de 99 para **109 validações funcionais vigentes**;
+- reduz pendências específicas de 10 para **0**;
+- valida `COM-005` no escopo dos dez estados;
+- preserva `TRN-305` como parcial;
 - preserva 40 superfícies e 37 transições;
-- separa publicação de distribuição garantida;
-- separa Mapa/Lista/Detalhe de efeito externo posterior;
-- preserva a fronteira entre descoberta orgânica e inventário patrocinado;
 - não promove qualquer jornada.
 
-## 8. Critérios preservados
+## 9. Critérios preservados
 
-- oportunidade ativa torna-se candidata à descoberta; não recebe exposição garantida;
-- estado canônico vigente prevalece sobre cartão ou detalhe obsoleto;
-- Mapa e Lista representam a mesma consulta;
-- alternar modo não cria autorização, personalização ou relevância;
-- abrir Detalhe não equivale a interesse, inscrição ou evolução;
-- pagamento não altera relevância funcional;
-- repetição e sincronização não duplicam oportunidade ou efeito;
+- erro técnico não é zero inventário;
+- baixa oferta orgânica reduz publicidade;
+- alteração material declarada e não confirmada bloqueia entrega futura por proteção sem aplicar a candidata;
+- catálogo, busca, região, filtros e ordenação orgânicos permanecem preservados;
+- preferências são reversíveis e possuem escopos distintos;
+- denúncia e contestação permanecem separadas;
+- repetição da mesma intenção não duplica efeito lógico;
+- validação de superfície não equivale a validação automática de transição;
 - validação integral documental não equivale a implementação técnica.
 
-## 9. Próximo ato possível
+## 10. Próximo ato possível
 
-Com `V2` encerrada, a próxima prioridade registrada é **V3 — dez estados residuais UXA-055**. Uma eventual UXA-099 dependerá de autorização separada e **não foi iniciada**.
+Com `V3` encerrada, a próxima prioridade registrada é **V4 — efeito externo de oportunidades**, associada a `TRN-205`. Uma eventual UXA-100 dependerá de autorização separada e **não foi iniciada**.
