@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.14.0
+version: 0.15.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -30,6 +30,7 @@ related:
   - UXA-100
   - UXA-100-A1
   - UXA-100-A2
+  - UXA-100-A3
 normative: false
 ---
 
@@ -73,51 +74,57 @@ representação e autoridade
 
 `COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
 
-## 3. Planos como etapa transversal candidata
+## 3. Planos como etapa transversal canônica
 
-A UXA-100 inclui **Planos** na jornada operacional do Coletivo. A etapa pode ser acessada a qualquer momento pela área de administração e também quando uma capacidade comercial legítima for atingida.
+A UXA-100-A3 registra **Planos** canonicamente na jornada operacional do Coletivo. A etapa pode ser acessada voluntariamente e também quando uma capacidade comercial legítima for atingida.
 
 ```text
-Administração / Configurações
-→ Planos
-→ plano atual + consumo do ciclo
-→ comparar Livre / Gestão / Impacto / Enterprise
-→ manter, mudar ou solicitar proposta
-→ revisão da contratação quando aplicável
-→ pagamento simulado ou processo comercial governado
-→ retorno à operação
+COL-301 — Planos e comparação
+├── TRN-411 → COL-302 — revisão de contratação
+│   └── TRN-412 → COL-304 — resultado/recuperação
+│       └── TRN-415 → COL-301
+├── TRN-413 → COL-303 — downgrade/cancelamento
+│   └── TRN-414 → COL-304
+│       └── TRN-415 → COL-301
+└── TRN-416 → BND-002 — proposta Enterprise
 ```
 
-Entrada contextual:
+`TRN-411` a `TRN-415` estão localmente validadas no pacote UXA-100. `TRN-416` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado.
+
+Entrada contextual permanece válida:
 
 ```text
 criar atividade/oportunidade
 → limite do plano atingido ou publicação paga não incluída
 ├── manter rascunho / aguardar ciclo / alternativa gratuita aplicável
 └── comparar planos
-    → Planos
+    → COL-301
 ```
 
-A tela candidata dedicada é:
+As superfícies de criação/publicação que originam todos esses casos não são inventadas como novas transições nesta frente quando ainda não possuem identidade adequada no registro.
+
+Referência canônica:
 
 ![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
 [Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-A tela e o fluxo devem:
+Regras:
 
-- mostrar o plano atual e o consumo do ciclo;
-- comparar `Livre → Gestão → Impacto → Enterprise`;
-- mostrar somente o ganho incremental de cada degrau, sem reapresentar herança como novidade;
-- mostrar delta direto plano atual → plano escolhido;
-- exibir preço mensal/anual e recorrência aplicável antes da confirmação;
-- manter ações operacionais não pagas válidas quando existirem;
-- tratar Enterprise como proposta comercial e capacidade contratada, não checkout autônomo;
-- no downgrade para Livre, escolher publicações gratuitas mantidas, encerrar/converter pagas excedentes e reduzir administradores/núcleos conforme limite;
-- preservar compromissos, exportação e registros aplicáveis sem exclusão silenciosa;
-- deixar claro que assinatura não aumenta relevância orgânica, legitimidade ou impacto.
+- `COL-301` mostra plano atual e consumo do ciclo;
+- compara `Livre → Gestão → Impacto → Enterprise`;
+- comparação incremental pertence a `COL-301` e não cria tela própria;
+- o delta direto plano atual → alvo permanece obrigatório;
+- `COL-302` exibe preço mensal/anual, recorrência, início, pagador/beneficiário e método em simulação antes da confirmação;
+- assinatura permanece separada de comissão, taxa do meio de pagamento e tributo;
+- ações operacionais gratuitas válidas permanecem disponíveis;
+- `COL-303` exige tratamento explícito de publicações gratuitas/pagas, administradores, núcleos/unidades, compromissos e exportação antes do downgrade;
+- nenhum registro ou participante é apagado silenciosamente para efetivar redução de plano;
+- `COL-304` diferencia sucesso de falha e preserva o estado anterior quando não houver confirmação;
+- Enterprise usa `BND-002`, não checkout autônomo;
+- plano pago não aumenta relevância orgânica, legitimidade ou impacto.
 
-A UXA-100-A2 aprovou funcionalmente esta etapa como candidata após reformulação da tela dedicada e do fluxo. Ela ainda não possui ID canônico de superfície ou transição.
+A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu `COL-301` a `COL-304`.
 
 ## 4. Handoffs críticos
 
@@ -129,6 +136,7 @@ A UXA-100-A2 aprovou funcionalmente esta etapa como candidata após reformulaç�
 | PER-106 → PER-107 (`TRN-110`) | integralmente validada |
 | PER-107 → PER-108 (`TRN-111`) | **integralmente validada por UXA-096** |
 | Coletivo ↔ Organização | contratada; materialização bilateral pendente |
+| COL-301 → BND-002 (`TRN-416`) | **parcial; processo Enterprise posterior não materializado** |
 
 ## 5. Efeito da UXA-096
 
@@ -161,9 +169,10 @@ Esta vista permanece `draft` porque:
 - participantes, comunicação e demais áreas do responsável continuam incompletos;
 - estados P0B de superfícies da Pessoa permanecem separados;
 - a relação Organização–Coletivo permanece contratada e não materializada;
-- Planos foi aprovado funcionalmente apenas como etapa candidata, sem superfície/transição canônica;
+- as transições de Planos são locais e `TRN-416` permanece parcial;
+- cobrança real, gateway e processo Enterprise não foram implementados/validados ponta a ponta;
 - outras continuidades ainda não foram examinadas como conjunto.
 
-## 8. Próxima evolução possível
+## 8. Estado da frente de Planos
 
-A etapa Planos já foi auditada pela UXA-100-A2. A próxima decisão desta frente é definir, em ato governado separado, se os ativos serão fracionados e quais superfícies/transições canônicas serão criadas. Nenhuma promoção é automática.
+A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em `COL-301` a `COL-304`, `TRN-411` a `TRN-416` e `BND-002`. Nenhuma próxima UXA é iniciada automaticamente.
