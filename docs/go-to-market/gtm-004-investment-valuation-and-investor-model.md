@@ -2,7 +2,7 @@
 id: GTM-004
 title: Investimento, Valuation e Modelo para Investidores
 status: draft
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Strategy & Capital
 last_updated: 2026-08-08
 parent: GTM-000
@@ -13,6 +13,7 @@ related:
   - GTM-001
   - GTM-002
   - GTM-005
+  - GEM-POST-P9-FINANCIAL-RECONCILIATION-001
 normative: false
 ---
 
@@ -93,6 +94,24 @@ Para dimensionar uso de recursos sem aprovar uma captação, este documento util
 
 Uma rodada real poderá ser menor, maior ou estruturada de forma diferente conforme tração e necessidade de caixa.
 
+### 6.1 Guardrail pós-P9 — aporte ilustrativo não é necessidade de capital
+
+A reconciliação econômico-financeira pós-P9 confirmou que o GEM ainda não possui parâmetros suficientes para calcular runway ou necessidade máxima acumulada de capital.
+
+Consequentemente:
+
+```text
+aporte de referência de R$ 2 milhões
+≠ necessidade de capital calculada
+≠ caixa necessário demonstrado
+≠ runway aprovado
+≠ orçamento autorizado
+```
+
+O valor de R$ 2 milhões serve apenas para testar matematicamente diluição e um possível envelope de uso de recursos. Antes de uma rodada real, o valor a captar deverá ser derivado de modelo de caixa que inclua custos, headcount, capacidade, tributos, taxas, recebimentos, pagamentos, capital de giro, reservas, contingência e margem de segurança.
+
+`GEM-POST-P9-FINANCIAL-RECONCILIATION-001` governa esta leitura até nova calibração.
+
 ## 7. Uso de recursos — envelope candidato
 
 Sobre um aporte ilustrativo de R$ 2 milhões:
@@ -106,7 +125,7 @@ Sobre um aporte ilustrativo de R$ 2 milhões:
 | Operações, jurídico, financeiro e compliance | 10% | R$ 200.000 |
 | reserva e contingência | 10% | R$ 200.000 |
 
-Este quadro é somente envelope estratégico. Contratações, orçamento e Product Engineering exigem seus próprios gates.
+Este quadro é somente envelope estratégico. Contratações, orçamento e Product Engineering exigem seus próprios gates. A distribuição percentual também deverá ser recalibrada quando a necessidade de capital for calculada; ela não prova suficiência de caixa.
 
 ## 8. Gates de reavaliação do valuation
 
@@ -134,7 +153,9 @@ Se, e somente se, a Guivos atingir o run-rate combinado de planejamento de M60 d
 | 5× | R$ 346,4 mi |
 | 6× | R$ 415,7 mi |
 
-O intervalo de 4×–6× fica dentro da ordem de grandeza da visão histórica de longo prazo já discutida para a Guivos, mas **o múltiplo não é aprovado nem garantido**. Mercado, crescimento, margem, retenção, concentração e risco podem justificar valores muito inferiores ou superiores.
+O intervalo de 4×–6× fica dentro da ordem de grandeza da visão histórica de longo prazo já discutida para a Guivos, mas **o múltiplo não é aprovado nem garantido**. Mercado, crescimento, margem, retenção, concentração, eficiência de capital e risco podem justificar valores muito inferiores ou superiores.
+
+Atingir o run-rate candidato não promove automaticamente nenhum desses valores a valuation esperado, meta corporativa ou referência de rodada.
 
 ## 10. Sensibilidade de valor da participação do investidor
 
@@ -180,11 +201,12 @@ problema humano e de mercado
 → Portugal como primeiro teste internacional
 → ativos, tecnologia, dados e barreiras
 → riscos e gates
+→ necessidade de capital calculada quando disponível
 → uso de capital
 → valuation e termos da rodada
 ```
 
-A narrativa não deverá esconder ausência de faturamento, transformar metas em realizados ou utilizar valuation futuro como certeza.
+A narrativa não deverá esconder ausência de faturamento, transformar metas em realizados, apresentar aporte ilustrativo como necessidade calculada ou utilizar valuation futuro como certeza.
 
 ## 12. Data room mínimo antes de captação
 
@@ -195,6 +217,7 @@ A narrativa não deverá esconder ausência de faturamento, transformar metas em
 - roadmap de produto;
 - GTM-001 a GTM-005;
 - GEM e baseline comercial aplicáveis;
+- `GEM-POST-P9-FINANCIAL-RECONCILIATION-001` ou autoridade que a superseder;
 - demonstrações financeiras/contábeis quando existirem;
 - contratos e pipeline com classificação clara;
 - métricas de produto e coortes;
@@ -203,4 +226,4 @@ A narrativa não deverá esconder ausência de faturamento, transformar metas em
 
 ## 13. Estado
 
-`draft — valuation and investment references are candidate planning anchors, not an appraisal, securities offer, promised return or approved financing transaction`.
+`draft — valuation and investment references are candidate planning anchors; illustrative funding is not calculated capital need; no appraisal, securities offer, promised return or approved financing transaction`.
