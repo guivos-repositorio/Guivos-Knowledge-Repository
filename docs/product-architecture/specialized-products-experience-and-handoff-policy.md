@@ -2,7 +2,7 @@
 id: GPA-SPECIALIZED-EXPERIENCE-POLICY-001
 title: Política de Representação e Handoffs entre Produtos
 status: approved
-version: 1.0.0
+version: 1.0.1
 owner: Guivos
 last_updated: 2026-08-08
 related:
@@ -11,6 +11,7 @@ related:
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - UXA-059
+  - UXA-101
 ---
 
 # Política de Representação e Handoffs entre Produtos
@@ -129,6 +130,8 @@ Todo handoff material deve definir retorno neutro, reconciliação com estado ca
 
 Não usar `BND-001` para Journey → Mall, Journey → Travel, Business → Journey, Ads → Journey, Media → Journey ou chamadas internas a Intelligence.
 
+Na baseline vigente, a UXA-101 valida `GKR-TRN-205` somente até essa fronteira: a pessoa revisa a saída, identifica destino e responsável, entende os limites de dados/contexto e pode voltar ou permanecer no detalhe em caso de falha. O processo executado depois de `BND-001` continua sob autoridade do terceiro e não é validado por essa transição.
+
 ## 11. Representação em wireframes e documentação
 
 Para novos artefatos, recomenda-se registrar no documento de origem, quando aplicável:
@@ -149,5 +152,7 @@ Mapear produto responsável não valida superfície; identificar handoff não va
 ## 13. Efeito desta política
 
 Esta política consolida a regra de representação dos sete componentes sem criar novos IDs de superfície, transições, SVGs, UXA posterior ou Engenharia de Produto.
+
+A versão 1.0.1 apenas sincroniza a fronteira externa com a UXA-101 já integrada, sem alterar as regras de handoff interno da versão 1.0.0.
 
 A aplicação atual está registrada na [Matriz de Integração dos Produtos com as Jornadas](specialized-products-journey-integration-matrix.md).
