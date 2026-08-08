@@ -2,15 +2,16 @@
 id: GEM-007-A1
 title: Opportunity Boost — Contrato Econômico e entre Produtos
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-007
 depends_on:
   - GEM-003-REVENUE-FAMILY-CATALOG-001
   - GEM-006-DISCLOSURE-RANKING-CONFLICT-POLICY-001
   - GEM-007-ADS-ECONOMIC-ROLE-001
   - GEM-004-A1
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-004
 related:
   - GPA-007
@@ -61,21 +62,21 @@ Não é comissão, taxa de publicação, compra de lead, recomendação ou garan
 
 ### Coletivos
 
-Podem contratar diretamente:
+Podem contratar diretamente, conforme a baseline econômica vigente:
 
-- Coletivo Gestão;
-- Coletivo Impacto;
-- Coletivo Enterprise.
+- Coletivo Mobiliza;
+- Coletivo Impacta;
+- Coletivo Rede.
 
 O Coletivo Livre não contrata diretamente. Poderá receber **Boost Social Financiado** quando a fonte, a finalidade e a ausência de autoridade do financiador estiverem explícitas e a oportunidade permanecer gratuita.
 
 ### Organizações
 
-Podem contratar:
+Organização é participante institucional e utiliza a taxonomia **Conecta · Eleva · Transforma**. Guivos Business é Produto Especializado separado e sua taxonomia `Start · Growth · Scale · Enterprise` não pode ser usada como proxy de elegibilidade de Organização.
 
-- Guivos Business Start;
-- Guivos Business Growth;
-- Guivos Business Scale.
+A Organização poderá contratar Opportunity Boost quando o seu plano, contrato ou autoridade econômica vigente explicitamente conceder essa capacidade. Esta versão não cria equivalência automática entre os antigos tiers atribuídos à Organização e `Conecta / Eleva / Transforma`.
+
+Até a reconciliação específica dos entitlements de Organização, a simples presença em qualquer um desses planos não deve ser interpretada isoladamente como autorização técnica/operacional de cobrança.
 
 A assinatura não inclui verba de Boost por padrão.
 
@@ -147,7 +148,8 @@ A densidade candidata será de até 20% dos itens visíveis, nunca com duas unid
 |---|---|
 | Guivos Ads | campanha, orçamento, inventário, identificação, antifraude e relatório |
 | Guivos Journey | ranking orgânico, controles pessoais e proteção da jornada |
-| Guivos Business | identidade, plano elegível e administração institucional |
+| Organização anunciante | identidade institucional, elegibilidade e administração da oportunidade |
+| Guivos Business | capacidades especializadas do produto quando houver contrato próprio aplicável; não substitui o papel Organização |
 | Guivos Intelligence | mensuração agregada sem segmentação sensível |
 | Mall ou Travel | transação ou reserva, quando aplicável |
 | Superfície anfitriã | contexto, acessibilidade, densidade e segurança |
@@ -189,7 +191,9 @@ O anunciante receberá métricas agregadas de orçamento, entrega, cliques e aç
 - somente publicação ativa poderá ser impulsionada;
 - downgrade deverá informar campanhas afetadas;
 - créditos futuros terão fonte, validade e finalidade próprias;
-- Boost Social Financiado não converte o Coletivo Livre em plano pago.
+- Boost Social Financiado não converte o Coletivo Livre em plano pago;
+- Organização ≠ Guivos Business;
+- tier de Guivos Business não concede, por si só, entitlement de plano de Organização.
 
 ## 13. Proibições
 
@@ -208,6 +212,6 @@ O Opportunity Boost não poderá:
 
 ## 14. Estado
 
-`candidate_defined — economic and cross-product contract established; market, specialist, operational, technical and experience validation pending`.
+`candidate_reconciled — economic and cross-product contract preserved; Organization entitlement mapping requires current-plan reconciliation before operationalization`.
 
 Este documento não autoriza oferta pública, cobrança, campanha real, algoritmo, uso publicitário de dados pessoais, interface final ou Engenharia de Produto.
