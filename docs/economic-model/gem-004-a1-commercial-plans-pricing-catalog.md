@@ -2,9 +2,9 @@
 id: GEM-004-A1
 title: Catálogo Comercial Candidato de Planos, Benefícios e Preços
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 depends_on:
   - GEM-004
@@ -13,8 +13,10 @@ depends_on:
   - GEM-004-UPGRADE-DOWNGRADE-CANCELLATION-POLICY-001
 related:
   - GEM-004-A2
+  - GEM-007-BUSINESS-ECONOMIC-ROLE-001
   - GEM-010-A1
   - GEM-COMMERCIAL-BASELINE-001
+  - UXA-100
   - M7.39
 normative: true
 ---
@@ -23,38 +25,75 @@ normative: true
 
 ## 1. Finalidade
 
-Este catálogo consolida a primeira baseline comercial candidata dos planos destinados a Pessoas, Coletivos e Organizações.
+Este catálogo consolida a baseline comercial candidata dos planos de **Pessoa, Coletivo e Organização** e registra separadamente a taxonomia conceitual do produto **Guivos Business**.
 
-A baseline define nomes comerciais candidatos, preços de referência, benefícios, limites, condições de acesso financiado e separações econômicas necessárias para validação.
+A baseline define nomes, preços de referência, benefícios, limites e condições de acesso para os planos de participantes já governados. Para Guivos Business, esta versão define somente taxonomia, função, significado e leitura conceitual: **não cria preço, entitlement, limite comercial ou oferta pública**.
 
-Ela não constitui oferta pública, autorização de cobrança, tabela fiscal, contrato definitivo, promessa de capacidade infinita ou evidência de disposição a pagar.
+Nada neste documento constitui autorização de cobrança, tabela fiscal, contrato definitivo, promessa de capacidade infinita ou evidência de disposição a pagar.
 
-## 2. Estado comercial
+## 2. Regra global de leitura dos planos
+
+Plano representa **profundidade de serviço, capacidade operacional, combinação de recursos ou complexidade atendida**. Plano não representa valor, mérito, importância, maturidade moral, prestígio ou nível de evolução de uma Pessoa, Coletivo ou Organização.
+
+A progressão entre planos:
+
+- não é uma escada obrigatória de evolução;
+- não presume que o plano seguinte seja desejável para todos;
+- não concede relevância orgânica, legitimidade, confiança ou impacto;
+- deve ocorrer somente quando houver necessidade legítima e escolha afirmativa;
+- deve permitir permanência, downgrade ou cancelamento segundo as políticas vigentes.
+
+## 3. Taxonomia global governada
+
+| Contexto | Planos |
+|---|---|
+| Pessoa | **Free · Plus · Pro** |
+| Coletivo | **Livre · Mobiliza · Impacta · Rede** |
+| Organização | **Conecta · Eleva · Transforma** |
+| Guivos Business | **Start · Growth · Scale · Enterprise** |
+
+### 3.1 Migração de nomenclatura
+
+Para preservar rastreabilidade histórica, referências anteriores são interpretadas assim a partir desta versão:
+
+| Referência anterior | Referência governada |
+|---|---|
+| Coletivo Gestão | **Coletivo Mobiliza** |
+| Coletivo Impacto | **Coletivo Impacta** |
+| Coletivo Enterprise | **Coletivo Rede** |
+| Business Start usado como plano da Organização | **Organização Conecta** |
+| Business Growth usado como plano da Organização | **Organização Eleva** |
+| Business Scale usado como plano da Organização | **Organização Transforma** |
+
+Essa equivalência serve à migração documental e **não transforma Organização em Guivos Business**.
+
+## 4. Estado comercial
 
 ```text
 baseline comercial aprovada para validação
-→ preços e limites candidatos
+→ preços e limites candidatos dos participantes
 → validação de utilidade e disposição a pagar
 → revisão operacional, jurídica, fiscal e contábil
 → teste controlado separado
 → eventual decisão sobre oferta pública
 ```
 
-Nenhum plano poderá entrar em produção somente porque consta neste catálogo.
+Guivos Business permanece, nesta frente, com **taxonomia conceitualmente definida e parâmetros comerciais específicos ainda não governados**.
 
-## 3. Premissas gerais de preço
+## 5. Premissas gerais de preço
 
-- moeda-base inicial: real brasileiro — BRL;
+- moeda-base inicial dos planos de participantes: real brasileiro — BRL;
 - mercado inicial de referência: Brasil;
 - cobrança mensal: recorrente, quando contratada;
 - cobrança anual: pagamento antecipado correspondente aproximadamente a dez mensalidades;
 - preços anuais representam desconto candidato equivalente a cerca de dois meses;
-- preços empresariais sob consulta exigem contrato anual e capacidade dimensionada;
+- planos que exigirem dimensionamento assistido seguem proposta/contrato quando indicado;
 - impostos, taxas de processamento, comissões transacionais e condições regionais permanecem sujeitos a validação especializada;
 - nenhuma conversão automática de trial integra esta baseline;
-- valores poderão ser alterados antes de qualquer oferta pública mediante decisão governada.
+- valores poderão ser alterados antes de qualquer oferta pública mediante decisão governada;
+- **nenhum preço de Guivos Business é definido por este catálogo**.
 
-## 4. Regras transversais
+## 6. Regras transversais
 
 1. o gratuito deverá entregar utilidade real;
 2. capacidades essenciais, segurança, privacidade, correção, consentimento, revogação, exportação, exclusão e cancelamento não poderão ser bloqueados por preço;
@@ -62,16 +101,17 @@ Nenhum plano poderá entrar em produção somente porque consta neste catálogo.
 4. assinatura é diferente de comissão ou taxa de processamento;
 5. oportunidade pública permanece acessível no Explorar e no Mapa conforme regras públicas aplicáveis;
 6. o limite do Guivos Free recai sobre correspondências personalizadas e análises ampliadas, não sobre a existência do catálogo público;
-7. publicação monetizada por Coletivo exige plano pago;
-8. pessoa em plano gratuito poderá contratar atividade ou oportunidade paga sem assinar plano individual pago;
-9. organização, patrocinador ou financiador não recebe acesso indevido ao contexto individual;
+7. publicação monetizada por Coletivo exige plano pago quando definida pela baseline;
+8. Pessoa em plano gratuito poderá contratar atividade ou oportunidade paga sem assinar plano individual pago;
+9. Organização, patrocinador ou financiador não recebe acesso indevido ao contexto individual;
 10. nenhuma opção paga aumenta relevância funcional, veracidade, impacto ou posição orgânica;
 11. limites periódicos não são acumulativos;
-12. capacidade apresentada como sem limite fixo permanece sujeita ao contrato, segurança, capacidade operacional e política de uso justo.
+12. capacidade apresentada sem limite padrão fixo permanece sujeita a contrato, segurança, capacidade operacional e política de uso justo;
+13. necessidade de proposta, dimensionamento, contrato ou análise específica utiliza a fronteira genérica de contratação assistida e não define uma hierarquia de valor entre planos.
 
-## 5. Planos para Pessoas
+# 7. Planos para Pessoas
 
-### 5.1 Visão comparativa
+## 7.1 Visão comparativa
 
 | Capacidade | Guivos Free | Guivos Plus | Guivos Pro |
 |---|---|---|---|
@@ -92,49 +132,39 @@ Nenhum plano poderá entrar em produção somente porque consta neste catálogo.
 | Processamento e inteligência | essencial | ampliado | avançado, sujeito a uso justo |
 | Suporte | padrão | ampliado | prioritário |
 
-### 5.2 Guivos Free
+## 7.2 Guivos Free
 
-#### Finalidade
+**Função:** garantir participação real, descoberta pública, compreensão inicial e acompanhamento essencial sem pagamento.
 
-Garantir participação real, compreensão inicial, descoberta pública e acompanhamento essencial sem pagamento.
+**Significado:** **começar sem barreira econômica**, preservando valor útil e direitos desde o primeiro contato.
 
-#### Benefícios incluídos
+**Leitura conceitual:** é a base universal de acesso da Pessoa. Não significa pessoa “iniciante”, menos madura ou menos evoluída.
+
+Benefícios e regras principais:
 
 - Página Inicial pública e exploração geral;
 - início protegido e compreensão inicial revisável;
 - Tela Hoje geral, ou básica quando houver personalização autorizada compatível;
 - jornada essencial;
-- acesso ao catálogo público de oportunidades no Explorar e no Mapa;
-- duas correspondências personalizadas completas por semana;
+- catálogo público de oportunidades no Explorar e no Mapa;
+- duas correspondências personalizadas completas por semana-calendário;
 - informações públicas essenciais sobre atividades e oportunidades;
 - histórico essencial;
 - controles de dados, permissões, correção, exportação, exclusão e saída;
 - participação em atividades e oportunidades gratuitas ou pagas conforme condições do publicador.
 
-#### Limite de correspondências personalizadas
+A cota semanal não é acumulada e somente é consumida quando a Pessoa abre a correspondência personalizada completa. Após a cota, outras correspondências podem exibir prévia limitada, sem reduzir busca manual, Explorar, Mapa ou informações públicas essenciais.
 
-A cota será de **duas correspondências personalizadas completas por semana-calendário**.
+## 7.3 Guivos Plus
 
-A cota:
+**Função:** ampliar personalização, conveniência, histórico, alertas e organização da jornada individual.
 
-- será renovada no início de cada semana;
-- não será acumulada;
-- somente será consumida quando a pessoa abrir a correspondência completa;
-- não reduzirá o acesso ao catálogo público;
-- não impedirá busca manual, Explorar ou Mapa;
-- não ocultará informações essenciais de segurança, preço, prazo ou responsabilidade de uma oferta já acessada publicamente.
+**Significado:** oferecer mais continuidade e apoio operacional à Pessoa quando ela deseja aprofundar o uso da Guivos.
 
-Após a cota, outras correspondências poderão mostrar uma prévia limitada, contendo categoria, modalidade, localidade, prazo e indicação de existência de relação autorizada. A identidade completa da correspondência personalizada, a justificativa detalhada, a análise de aderência e a comparação ampliada dependerão de Plus ou Pro.
+**Leitura conceitual:** representa maior profundidade de serviço e personalização, não maior valor humano nem estágio superior de evolução.
 
-### 5.3 Guivos Plus
+Inclui tudo do Free e, entre outras extensões governadas:
 
-#### Finalidade
-
-Ampliar personalização, conveniência, histórico, alertas e organização da jornada individual.
-
-#### Benefícios incluídos
-
-- tudo o que existe no Guivos Free;
 - correspondências personalizadas completas sem cota semanal fixa, sujeitas a uso justo;
 - explicação completa sobre a relação entre oportunidade e contexto autorizado;
 - filtros avançados;
@@ -146,23 +176,16 @@ Ampliar personalização, conveniência, histórico, alertas e organização da 
 - integrações limitadas quando autorizadas;
 - suporte ampliado.
 
-#### Limites
+## 7.4 Guivos Pro
 
-- uso individual e intransferível;
-- não inclui serviço profissional humano;
-- não inclui uso comercial, atendimento de terceiros ou administração de Organização ou Coletivo;
-- processamento sujeito a uso justo e capacidade publicada antes do teste;
-- integrações limitadas ao catálogo autorizado para o plano.
+**Função:** oferecer maior profundidade analítica, integração autorizada, relatórios e acompanhamento avançado.
 
-### 5.4 Guivos Pro
+**Significado:** atender usos individuais que demandam análise, organização e integração mais profundas.
 
-#### Finalidade
+**Leitura conceitual:** representa maior escopo analítico e capacidade de serviço. Não é certificação de desempenho, maturidade ou evolução da Pessoa.
 
-Oferecer maior profundidade analítica, integração autorizada, relatórios e acompanhamento avançado.
+Inclui tudo do Plus e, entre outras extensões governadas:
 
-#### Benefícios incluídos
-
-- tudo o que existe no Guivos Plus;
 - análises aprofundadas e comparativas;
 - organização autorizada entre diferentes áreas da jornada;
 - maior capacidade de processamento e inteligência;
@@ -172,24 +195,19 @@ Oferecer maior profundidade analítica, integração autorizada, relatórios e a
 - suporte prioritário;
 - acesso antecipado a capacidades aprovadas para teste, quando aplicável e informado.
 
-#### Limites
+Permanece plano individual, sujeito a uso justo, segurança e capacidade operacional, sem substituir diagnóstico, aconselhamento profissional ou serviço regulado.
 
-- permanece plano individual;
-- não substitui diagnóstico, aconselhamento profissional ou serviço regulado;
-- uso justo, segurança e capacidade operacional permanecem aplicáveis;
-- nenhuma análise garante oportunidade, resultado ou evolução.
+# 8. Planos para Coletivos
 
-## 6. Planos para Coletivos
+## 8.1 Visão comparativa
 
-### 6.1 Visão comparativa
-
-| Capacidade | Coletivo Livre | Coletivo Gestão | Coletivo Impacto | Coletivo Enterprise |
+| Capacidade | Coletivo Livre | Coletivo Mobiliza | Coletivo Impacta | Coletivo Rede |
 |---|---:|---:|---:|---:|
 | Preço mensal candidato | R$ 0,00 | R$ 89,90 | R$ 249,90 | sob consulta |
 | Preço anual candidato | R$ 0,00 | R$ 899,00 | R$ 2.499,00 | contrato anual |
-| Atividades por mês | 1 gratuita | 4 | 15 | sem limite fixo contratado |
-| Oportunidades por mês | 1 gratuita | 4 | 15 | sem limite fixo contratado |
-| Publicações simultaneamente ativas | 2 | 6 | 20 | sem limite fixo contratado |
+| Atividades por mês | 1 gratuita | 4 | 15 | capacidade contratada |
+| Oportunidades por mês | 1 gratuita | 4 | 15 | capacidade contratada |
+| Publicações simultaneamente ativas | 2 | 6 | 20 | capacidade contratada |
 | Publicações pagas | não | sim | sim | sim |
 | Categorias | básicas | ampliadas | completas | completas e personalizáveis |
 | Administradores | 2 | 5 | 15 | conforme contrato |
@@ -199,149 +217,67 @@ Oferecer maior profundidade analítica, integração autorizada, relatórios e a
 | Cupons, lotes e condições | não | básicos | ampliados | personalizados |
 | Exportação | não | básica | completa | completa e automatizável |
 | Integrações | não | limitadas | avançadas | API, SSO e dedicadas |
-| Suporte | padrão | prioritário | especializado | gerente dedicado e SLA |
+| Suporte | padrão | prioritário | especializado | atendimento dimensionado e SLA quando contratado |
 
-### 6.2 Coletivo Livre
+## 8.2 Coletivo Livre
 
-#### Finalidade
+**Função:** permitir presença inicial, experimentação e mobilização gratuita de pequena escala.
 
-Permitir presença inicial, experimentação e mobilização gratuita de pequena escala.
+**Significado:** tornar possível organizar ação coletiva essencial sem barreira econômica.
 
-#### Benefícios incluídos
+**Leitura conceitual:** adequado a uma operação mais leve. Não significa coletivo menos relevante, menos legítimo ou de menor impacto social.
 
-- perfil e propósito do Coletivo;
-- até dois administradores;
-- uma atividade gratuita por mês;
-- uma oportunidade gratuita por mês;
-- até duas publicações simultaneamente ativas;
-- inscrições gratuitas;
-- agenda básica;
-- participação e comunicação essenciais;
-- indicadores básicos dos últimos 30 dias;
-- gestão de membros e papéis essenciais.
+Preserva a baseline anteriormente governada: até dois administradores, uma atividade gratuita/mês, uma oportunidade gratuita/mês, até duas publicações ativas, inscrições gratuitas, agenda e gestão essenciais e indicadores básicos de 30 dias. Não inclui publicação com cobrança obrigatória, pagamentos, cupons, lotes, relatórios financeiros ou integrações.
 
-#### Restrições
+## 8.3 Coletivo Mobiliza
 
-- não poderá publicar atividade, oportunidade ou acesso com cobrança obrigatória;
-- não inclui pagamentos, cupons, lotes, relatórios financeiros ou integrações;
-- a cota mensal não será acumulada;
-- atingir o limite não reduzirá a visibilidade das publicações existentes;
-- publicações ativas continuarão gerenciáveis até seu encerramento.
+**Função:** atender Coletivos com operação recorrente e necessidade de coordenação, publicação e monetização básicas.
 
-### 6.3 Coletivo Gestão
+**Significado:** **transformar intenção em mobilização coordenada**.
 
-#### Finalidade
+**Leitura conceitual:** amplia capacidade operacional para mobilizar pessoas e iniciativas com recorrência; não torna o coletivo “superior” ao Livre.
 
-Atender Coletivos com pequena operação recorrente e necessidade de monetização.
+Preserva a capacidade anteriormente governada para o segundo plano pago: até cinco administradores, quatro atividades/mês, quatro oportunidades/mês, até seis publicações ativas, publicações gratuitas ou pagas, inscrições/cobrança, cupons básicos, indicadores ampliados, exportação básica, gestão ampliada e suporte prioritário.
 
-#### Benefícios incluídos
+## 8.4 Coletivo Impacta
 
-- até cinco administradores;
-- quatro atividades por mês;
-- quatro oportunidades por mês;
-- até seis publicações simultaneamente ativas;
-- atividades e oportunidades gratuitas ou pagas;
-- inscrições, cobrança e gestão de vagas;
-- cupons e condições comerciais básicas;
-- indicadores ampliados;
-- exportação básica;
-- gestão ampliada de participantes;
-- suporte prioritário.
+**Função:** atender operação estruturada, programas recorrentes, parceiros e mensuração ampliada.
 
-#### Limites
+**Significado:** **transformar mobilização em impacto sustentado e evidenciado**.
 
-- um núcleo ou unidade;
-- cotas mensais não acumulativas;
-- integrações limitadas;
-- relatórios financeiros básicos;
-- não inclui API, SSO, múltiplos núcleos ou dashboards personalizados.
+**Leitura conceitual:** amplia capacidade de operação, articulação e mensuração; não permite declarar impacto sem evidência nem converte pagamento em legitimidade.
 
-### 6.4 Coletivo Impacto
+Preserva a capacidade anteriormente governada para o terceiro plano: até quinze administradores, quinze atividades/mês, quinze oportunidades/mês, até vinte publicações ativas, ofertas gratuitas/pagas/patrocinadas/financiadas, até cinco núcleos ou programas, indicadores históricos e de impacto, parceiros/patrocinadores, exportação completa, integrações avançadas e suporte especializado.
 
-#### Finalidade
+## 8.5 Coletivo Rede
 
-Atender operação estruturada, programas recorrentes, parceiros e mensuração ampliada.
+**Função:** atender redes, fundações, movimentos, programas nacionais/internacionais e operações com múltiplos núcleos, unidades ou territórios.
 
-#### Benefícios incluídos
+**Significado:** coordenar mobilização e operação em **escala de rede**, com capacidade dimensionada para o contexto real.
 
-- até quinze administradores;
-- quinze atividades por mês;
-- quinze oportunidades por mês;
-- até vinte publicações simultaneamente ativas;
-- ofertas gratuitas, pagas, patrocinadas ou financiadas;
-- até cinco núcleos ou programas;
-- indicadores históricos e de impacto;
-- gestão de parceiros e patrocinadores;
-- exportação completa;
-- integrações avançadas;
-- dashboards ampliados;
-- suporte especializado.
+**Leitura conceitual:** representa complexidade operacional e alcance de rede, não ápice de mérito, tamanho desejável ou nível obrigatório de evolução.
 
-#### Limites
+Preserva a capacidade contratada anteriormente documentada para o quarto plano: múltiplos núcleos/unidades/territórios/programas, administradores conforme contrato, API/SSO/integrações dedicadas, Power BI, dashboards personalizados, importação/exportação em massa, implantação assistida, governança, suporte e SLA quando contratados.
 
-- cotas mensais não acumulativas;
-- volume acima do limite exige Enterprise ou contratação específica;
-- impacto somente poderá ser declarado com evidência e metodologia autorizadas.
+A comunicação comercial deverá utilizar formulação equivalente a:
 
-### 6.5 Coletivo Enterprise
+> **Capacidade dimensionada conforme contratação, política de uso justo, segurança e disponibilidade operacional.**
 
-#### Finalidade
+Quando o escopo não puder ser configurado autonomamente, a contratação segue a fronteira genérica `BND-002` de dimensionamento assistido.
 
-Atender redes, fundações, movimentos, programas nacionais ou internacionais e operações com múltiplos núcleos.
+## 8.6 Contagem de cotas dos Coletivos
 
-#### Benefícios candidatos
+Consome uma unidade da cota criar/publicar nova atividade ou oportunidade, duplicar publicação, republicar item encerrado, criar nova edição/ciclo ou alterar substancialmente finalidade, público ou objeto.
 
-- atividades e oportunidades sem limite padrão fixo;
-- publicações ativas conforme capacidade contratada;
-- categorias completas e personalizáveis;
-- múltiplos núcleos, unidades, territórios e programas;
-- administradores e papéis conforme contrato;
-- API, SSO e integrações dedicadas;
-- integração com Power BI;
-- dashboards e indicadores personalizados;
-- importação e exportação em massa;
-- domínio ou ambiente configurável, quando tecnicamente aprovado;
-- treinamento e implantação assistida;
-- gerente dedicado;
-- SLA;
-- governança e suporte contratados.
+Não consome nova unidade corrigir informação material, atualizar horário/local sem nova edição, responder participantes, reduzir vagas, cancelar publicação, editar acessibilidade/segurança/responsabilidade ou consultar indicadores incluídos. Exclusão e recriação da mesma oferta não reinicia a cota.
 
-#### Regra de capacidade
+# 9. Planos para Organizações
 
-A comunicação comercial deverá utilizar:
+Organização é **tipo de participante institucional do ecossistema**. Seus planos governam capacidade da jornada institucional da própria Organização e não devem ser confundidos com a contratação do produto Guivos Business.
 
-> **Sem limite fixo de publicações, sujeito à capacidade contratada, política de uso justo, segurança e disponibilidade operacional.**
+## 9.1 Visão comparativa
 
-O preço será definido sob consulta, mediante contrato anual e dimensionamento de membros, núcleos, inscrições, armazenamento, tráfego, integrações, processamento e suporte.
-
-### 6.6 Contagem de cotas dos Coletivos
-
-Consumirá uma unidade da cota:
-
-- criar e publicar nova atividade;
-- criar e publicar nova oportunidade;
-- duplicar publicação;
-- republicar item encerrado;
-- prorrogar item para configurar nova edição ou ciclo;
-- alterar substancialmente finalidade, público ou objeto.
-
-Não consumirá nova unidade:
-
-- corrigir texto ou informação material;
-- atualizar horário ou local sem criar nova edição;
-- responder participantes;
-- reduzir vagas;
-- cancelar publicação;
-- editar acessibilidade, segurança ou responsabilidade;
-- consultar indicadores incluídos.
-
-A exclusão e recriação da mesma oferta não reiniciará a cota.
-
-## 7. Planos para Organizações
-
-### 7.1 Visão comparativa
-
-| Capacidade | Guivos Business Start | Guivos Business Growth | Guivos Business Scale |
+| Capacidade | Organização Conecta | Organização Eleva | Organização Transforma |
 |---|---:|---:|---:|
 | Preço mensal candidato | R$ 299,00 | R$ 799,00 | a partir de R$ 1.990,00 |
 | Preço anual candidato | R$ 2.990,00 | R$ 7.990,00 | contrato anual |
@@ -354,143 +290,124 @@ A exclusão e recriação da mesma oferta não reiniciará a cota.
 | Exportação | básica | completa | completa e automatizável |
 | Integrações | não | limitadas | API, SSO e dedicadas |
 | Power BI | não | exportação compatível | integração dedicada |
-| Suporte | padrão | prioritário | atendimento dedicado e SLA |
+| Suporte | padrão | prioritário | atendimento dimensionado e SLA quando contratado |
 
-### 7.2 Guivos Business Start
+Os preços e capacidades acima **preservam a baseline anteriormente governada para os três planos organizacionais**, alterando a taxonomia para separar definitivamente a jornada da Organização do produto Guivos Business.
 
-#### Finalidade
+## 9.2 Organização Conecta
 
-Permitir presença institucional e operação inicial de oportunidades e programas.
+**Função:** permitir presença institucional e operação inicial de oportunidades e programas.
 
-#### Benefícios incluídos
+**Significado:** **conectar capacidade institucional a pessoas, Coletivos e oportunidades**.
 
-- perfil institucional;
-- até três administradores;
-- uma unidade;
-- até dez novas oportunidades ou programas por mês;
-- até quinze publicações simultaneamente ativas;
-- oportunidades gratuitas ou pagas;
-- até dois Coletivos relacionados administráveis;
-- dashboard operacional básico;
-- indicadores essenciais;
-- exportação básica;
-- suporte padrão.
+**Leitura conceitual:** representa a camada essencial de atuação institucional na Guivos; não significa Organização menos madura ou menos transformadora.
 
-### 7.3 Guivos Business Growth
+Preserva: perfil institucional, até três administradores, uma unidade, até dez novas oportunidades/programas por mês, até quinze publicações ativas, oportunidades gratuitas ou pagas, até dois Coletivos relacionados administráveis, dashboard operacional básico, indicadores essenciais, exportação básica e suporte padrão.
 
-#### Finalidade
+## 9.3 Organização Eleva
 
-Atender Organizações com operação recorrente, múltiplos públicos, programas e necessidade analítica ampliada.
+**Função:** atender Organizações com operação recorrente, múltiplos públicos, programas e necessidade analítica ampliada.
 
-#### Benefícios incluídos
+**Significado:** elevar a capacidade de coordenação institucional, governança operacional e leitura de resultados.
 
-- até dez administradores;
-- até cinco unidades;
-- até cinquenta novas oportunidades ou programas por mês;
-- até setenta e cinco publicações simultaneamente ativas;
-- até dez Coletivos relacionados administráveis;
-- analytics avançados e agregados;
-- automações;
-- exportação completa;
-- integrações limitadas;
-- gestão ampliada de elegibilidade;
-- suporte prioritário.
+**Leitura conceitual:** amplia capacidade e profundidade de serviço da Organização; não eleva sua legitimidade, reputação ou valor institucional.
 
-### 7.4 Guivos Business Scale
+Preserva: até dez administradores, até cinco unidades, até cinquenta novas oportunidades/programas por mês, até setenta e cinco publicações ativas, até dez Coletivos relacionados, analytics avançados/agregados, automações, exportação completa, integrações limitadas, elegibilidade ampliada e suporte prioritário.
 
-#### Finalidade
+## 9.4 Organização Transforma
 
-Atender Organizações de grande porte, redes e operações multiunidade.
+**Função:** atender operações institucionais de alta complexidade, multiunidade, redes e programas amplos.
 
-#### Benefícios candidatos
+**Significado:** **transformar capacidade institucional em impacto sistêmico sustentado** quando houver evidência, governança e operação compatíveis.
 
-- capacidade de publicações dimensionada por contrato;
-- múltiplas unidades;
-- administradores e Coletivos relacionados conforme contrato;
-- governança avançada;
-- SSO;
-- API;
-- integração dedicada com Power BI;
-- dashboards personalizados;
-- exportações automatizadas;
-- implantação assistida;
-- atendimento dedicado;
-- SLA;
-- condições comerciais e faturamento personalizados.
+**Leitura conceitual:** representa capacidade institucional dimensionada para contextos complexos. Não garante transformação, impacto ou resultado e não corresponde automaticamente a Guivos Business Enterprise.
 
-O preço mensal de R$ 1.990,00 é referência mínima candidata e não substitui dimensionamento e proposta comercial.
+Preserva a baseline anteriormente governada para o terceiro plano organizacional: capacidade dimensionada por contrato, múltiplas unidades, administradores/Coletivos relacionados conforme contrato, governança avançada, SSO, API, integração dedicada com Power BI, dashboards personalizados, exportações automatizadas, implantação assistida, atendimento dimensionado, SLA e condições comerciais personalizadas.
 
-## 8. Acesso financiado e patrocinado
+O valor de R$ 1.990,00/mês permanece **referência mínima candidata** da baseline organizacional e não substitui dimensionamento e proposta quando necessários.
 
-### 8.1 Guivos Patrocinado
+# 10. Taxonomia conceitual do Guivos Business
+
+Guivos Business é **produto especializado da Guivos para soluções empresariais e institucionais**. Seus planos não são planos da jornada do participante Organização.
+
+Nesta versão, os nomes abaixo possuem somente função, significado e leitura conceitual. **Preço, entitlement, limite, SLA, pacote técnico e regra comercial permanecem indefinidos e não podem ser inferidos a partir dos planos da Organização.**
+
+| Plano | Função | Significado | Leitura conceitual |
+|---|---|---|---|
+| **Business Start** | estruturar a entrada no produto Business e soluções empresariais de menor complexidade | iniciar uma solução Business com escopo claro e governável | ponto de entrada do produto; não equivale a Organização Conecta |
+| **Business Growth** | ampliar recorrência, coordenação, públicos e profundidade analítica de uma solução Business | sustentar crescimento do uso empresarial com maior combinação de capacidades | maior complexidade de solução; não equivale a Organização Eleva |
+| **Business Scale** | coordenar soluções amplas, multiunidade ou com integrações e governança mais complexas | escalar a solução Business de forma controlada | capacidade de escala do produto; não equivale a Organização Transforma |
+| **Business Enterprise** | adaptar o produto Business a contextos empresariais de alta complexidade | compor solução empresarial sob requisitos, governança e dimensionamento específicos | nível de complexidade atendida pelo produto, não status da Organização nem “plano máximo” universal |
+
+## 10.1 Regra de independência
+
+```text
+Organização = participante institucional + sua jornada + seus planos
+Guivos Business = produto especializado + suas soluções + seus próprios planos
+```
+
+Portanto:
+
+- **Organização Transforma ≠ Guivos Business Enterprise**;
+- não existe correspondência automática 1:1 entre as duas estruturas;
+- uma Organização pode utilizar sua jornada institucional sem contratar Guivos Business;
+- uma contratação de Guivos Business não altera automaticamente o plano da Organização;
+- parâmetros comerciais de Guivos Business exigem autoridade própria posterior;
+- a UXA-100 não cria novas superfícies de Business nesta atualização.
+
+# 11. Fronteira de contratação e dimensionamento assistido
+
+`BND-002` significa genericamente a **fronteira de contratação/dimensionamento assistido**.
+
+Ela é utilizada quando uma intenção de contratação deixa de ser autonomamente configurável e passa a exigir um ou mais dos seguintes elementos:
+
+- proposta;
+- dimensionamento de capacidade;
+- análise específica;
+- configuração assistida;
+- contrato;
+- validação operacional, comercial ou jurídica adicional.
+
+`BND-002` não significa “Enterprise”, “Scale”, “Rede”, “Transforma” ou qualquer plano específico. O uso da fronteira depende da complexidade concreta da contratação, não do prestígio do plano ou participante.
+
+# 12. Acesso financiado e patrocinado
 
 Acesso financiado poderá ser atribuído sem cobrança ao beneficiário, por prazo, finalidade e capacidades declarados.
 
-Poderá equivaler, conforme contrato, a:
+Poderá equivaler, conforme contrato, a capacidades de:
 
 - Guivos Plus ou Guivos Pro para Pessoas;
-- Coletivo Gestão ou Coletivo Impacto;
-- capacidades organizacionais específicas;
+- Coletivo Mobiliza ou Coletivo Impacta;
+- planos/capacidades organizacionais específicas;
 - programas sociais ou institucionais limitados.
 
-### 8.2 Proteções
+O financiador não recebe contexto individual indevido; término do financiamento preserva dados e direitos; retorno ao gratuito permanece disponível quando aplicável; continuidade paga é opcional e sem pressão.
 
-- beneficiário verá quem financia, por quê e até quando;
-- financiador não acessará contexto individual além do autorizado;
-- analytics serão agregados quando possível;
-- término do financiamento preservará dados e direitos;
-- retorno ao plano gratuito será garantido quando aplicável;
-- oferta de continuidade paga será opcional e sem pressão;
-- vulnerabilidade, emprego ou vínculo institucional não poderão ser explorados para conversão.
-
-## 9. Separação entre assinatura e transação
+# 13. Separação entre assinatura e transação
 
 | Objeto econômico | Pagador possível | Objeto adquirido |
 |---|---|---|
-| Plano Guivos | Pessoa, Coletivo, Organização ou financiador | capacidades adicionais da plataforma |
+| Plano de participante Guivos | Pessoa, Coletivo, Organização ou financiador | capacidades adicionais da plataforma para a jornada correspondente |
+| Solução Guivos Business | Organização/contratante autorizado | solução especializada futura, sob autoridade comercial própria |
 | Atividade ou oportunidade paga | participante, comprador ou financiador | acesso à oferta específica |
 | Comissão ou taxa da Guivos | publicador, comprador ou ambos, conforme mecanismo futuro | processamento, intermediação ou infraestrutura |
 | Taxa do meio de pagamento | parte definida no fluxo futuro | processamento financeiro |
 
 Este catálogo não define percentual de comissão, taxa de pagamento, política de reembolso, split, antecipação ou tributação da transação.
 
-## 10. Estados de entitlement
+# 14. Estados de entitlement
 
-Cada capacidade deverá ser classificada como:
+Cada capacidade deverá continuar classificada segundo os estados vigentes, incluindo `universal_free`, `free_limited`, `paid_extension`, `paid_specialized`, `organization_funded`, `sponsor_funded`, `temporarily_unlocked` e `prohibited_paywall`.
 
-- `universal_free`;
-- `free_limited`;
-- `paid_extension`;
-- `paid_specialized`;
-- `organization_funded`;
-- `sponsor_funded`;
-- `temporarily_unlocked`;
-- `prohibited_paywall`.
+Os limites deste catálogo não podem contrariar a classificação mais protetiva.
 
-Os limites deste catálogo não poderão contrariar a classificação mais protetiva.
+# 15. Critérios de validação obrigatória
 
-## 11. Critérios de validação obrigatória
+Antes de oferta pública, devem ser avaliados utilidade real do gratuito, frequência/qualidade das oportunidades, disposição a pagar, compreensão das diferenças entre planos, conversão sem dark patterns, cancelamento/downgrade, custos de infraestrutura/inteligência/suporte, pagamentos, tributos, inadimplência, margem, retenção, impacto sobre Coletivos pequenos e causas sociais, acesso financiado e conformidade jurídica, fiscal, contábil, regulatória, de privacidade e segurança.
 
-Antes de oferta pública, deverão ser avaliados:
+Guivos Business exige, adicionalmente, validação específica de segmentos, proposta de valor, escopo de solução, capacidade de implantação, custos de atendimento, contratos, integrações e governança antes de qualquer definição de preço ou entitlement.
 
-- utilidade real do gratuito;
-- frequência e qualidade das oportunidades disponíveis;
-- disposição a pagar;
-- compreensão das diferenças entre planos;
-- conversão sem dark patterns;
-- cancelamento e downgrade;
-- custos de infraestrutura e inteligência;
-- custos de suporte;
-- processamento de pagamentos;
-- tributos;
-- inadimplência e chargeback;
-- margem de contribuição;
-- retenção e uso efetivo;
-- impacto sobre Coletivos pequenos e causas sociais;
-- acesso financiado;
-- conformidade jurídica, fiscal, contábil, regulatória, de privacidade e segurança.
-
-## 12. Limites desta baseline
+# 16. Limites desta baseline
 
 A baseline não aprova:
 
@@ -503,9 +420,8 @@ A baseline não aprova:
 - política de reembolso;
 - capacidade de infraestrutura;
 - metas de conversão;
-- orçamento;
-- margem;
-- CAC ou LTV;
+- orçamento, margem, CAC ou LTV;
 - internacionalização de preços;
 - contrato ou termo de uso;
-- implementação.
+- implementação;
+- preço ou entitlement de Guivos Business.
