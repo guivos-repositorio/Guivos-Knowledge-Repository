@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -24,6 +24,8 @@ depends_on:
   - UXA-097
   - UXA-098
   - UXA-099
+  - UXA-100-A2
+  - UXA-100-A3
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
 related:
@@ -36,11 +38,11 @@ normative: false
 
 ## 1. Finalidade
 
-Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **109 SVGs**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
+Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos **118 SVGs canônicos**. Perfis documentais não substituem análise semântica exclusiva de cada estado e não validam automaticamente transições ou jornadas.
 
 ## 2. Estado do instrumento
 
-A UXA-099 preserva os 28 perfis e as 109 associações, valida os dez SVGs do perfil `R23` e reforma dois deles sem criar novo perfil. A validação de `COM-005` não promove automaticamente `TRN-305`.
+A UXA-100-A3 incorpora os nove SVGs funcionalmente aprovados pela UXA-100-A2, elevando a matriz de 109 para **118 associações** e de 28 para **31 perfis**. Os novos perfis preservam a fragmentação mínima: um perfil por participante cobre a tela de Planos, o board de fluxo e a comparação incremental correspondente.
 
 ## 3. Perfis de rastreabilidade
 
@@ -74,8 +76,11 @@ A UXA-099 preserva os 28 perfis e as 109 associações, valida os dez SVGs do pe
 | R26 | PER-106 | TRN-108 ou acesso recorrente | TRN-110 | trocar categoria/voltar | P0B separado | UXA-092; gatilho revalidado UXA-094 |
 | R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; TRN-111 | retornar/ajustar preferência | P0B separado | UXA-094; versão corrente UXA-096; TRN-111 UXA-096 |
 | R28 | PER-108 | TRN-111 | áreas internas próprias do Coletivo | voltar à Central; pausar/sair conforme fluxo próprio | estados P0B/P1 e áreas internas | UXA-096; TRN-111 UXA-096 |
+| R29 | PER-301/302/303/304 | acesso voluntário ou limite contextual legítimo | TRN-401 a 405 | manter plano, voltar, tentar novamente, preservar Free | gateway/proration e entradas externas específicas não materializados | **UXA-100-A2; promoção UXA-100-A3** |
+| R30 | COL-301/302/303/304 | área administrativa ou limite legítimo | TRN-411 a 416 | manter plano, aguardar, ajustar excedentes, retornar | processo Enterprise após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
+| R31 | ORG-301/302/303/304 | área administrativa ou capacidade legítima | TRN-421 a 426 | manter plano, ajustar capacidade, retornar | processo Scale após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
 
-## 4. Associação individual dos 109 SVGs
+## 4. Associação individual dos 118 SVGs
 
 | SVG | Perfil |
 |---|---|
@@ -188,19 +193,29 @@ A UXA-099 preserva os 28 perfis e as 109 associações, valida os dez SVGs do pe
 | `uxa-055-review-reverse-preferences-mobile.svg` | R23 |
 | `uxa-055-contest-data-use-mobile.svg` | R23 |
 | `uxa-055-advertiser-update-failure-mobile.svg` | R23 |
+| `uxa-100-person-plans-screen-mobile.svg` | R29 |
+| `uxa-100-person-plans-payments-flow-board.svg` | R29 |
+| `uxa-100-person-plan-incremental-benefits-comparison.svg` | R29 |
+| `uxa-100-collective-plans-screen-desktop.svg` | R30 |
+| `uxa-100-collective-plans-payments-flow-board.svg` | R30 |
+| `uxa-100-collective-plan-incremental-benefits-comparison.svg` | R30 |
+| `uxa-100-organization-plans-screen-desktop.svg` | R31 |
+| `uxa-100-organization-plans-payments-flow-board.svg` | R31 |
+| `uxa-100-organization-plan-incremental-benefits-comparison.svg` | R31 |
 
 ## 5. Totais e limites
 
-- SVGs registrados: **109**;
-- associações individuais: **109**;
-- perfis documentais: **28**;
-- com validação funcional vigente: **109**;
+- SVGs registrados: **118**;
+- associações individuais: **118**;
+- perfis documentais: **31**;
+- com validação funcional vigente: **118**;
 - pendentes de validação específica: **0**;
-- arquivos visuais novos na UXA-099: **0**;
-- arquivos existentes reformulados pela UXA-099: **2**;
-- `R23/COM-005`: funcionalmente validado pela UXA-099;
-- `TRN-305`: permanece parcial porque a validação de superfície não substitui validação ponta a ponta da transição.
+- SVGs promovidos pela UXA-100-A3: **9**;
+- novos perfis: **3 — R29, R30, R31**;
+- superfícies de Planos cobertas: **12**;
+- `BND-002` permanece sem SVG por definição de fronteira;
+- transições de Planos são locais/parciais conforme o registro; validação de SVG não as transforma automaticamente em implementação.
 
-## 6. Próxima transição possível
+## 6. Estado após UXA-100-A3
 
-A UXA-099 fecha `V3` e preserva as 109 associações. A próxima prioridade de validação vigente é `V4 — efeito externo de oportunidades`, associada a `TRN-205`; **UXA-100 não foi iniciada**.
+A UXA-100-A3 promove os nove ativos de Planos após validação funcional da UXA-100-A2. O conjunto canônico passa a 118 associações. As jornadas principais permanecem `draft`, e validação de cobrança real, processo Enterprise/Scale e entradas contextuais externas continua separada.
