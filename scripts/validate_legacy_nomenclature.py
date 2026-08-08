@@ -7,7 +7,8 @@ The validator distinguishes three classes:
 3. ambiguous Business tier tokens -> reported for semantic review, not auto-rewritten.
 
 The purpose is deliberately conservative: never replace generic words such as
-"gestão", "impacto", "rede" or "enterprise" without plan/taxonomy context.
+"gestão", "impacto", "rede", "marketplace" or "enterprise" without governed
+plan/product context.
 """
 
 from __future__ import annotations
@@ -22,8 +23,8 @@ DOCS = ROOT / "docs"
 
 TEXT_SUFFIXES = {".md", ".svg", ".yml", ".yaml", ".json", ".txt"}
 
-# These files intentionally document the migration itself and therefore may
-# mention superseded names without reasserting them as current authority.
+# These files intentionally document migrations and therefore may mention
+# superseded names without reasserting them as current authority.
 EXPLICIT_REFERENCE_FILES = {
     "docs/economic-model/gem-004-plan-taxonomy-conceptual-authority.md",
     "docs/project/legacy-nomenclature-reconciliation-2026-08-08.md",
@@ -104,6 +105,12 @@ FORBIDDEN_RULES = (
             r"\bplano\s+Scale\s+(?:da|de)\s+Organiza(?:ç|c)(?:ã|a)o\b)",
             re.IGNORECASE,
         ),
+    ),
+    Rule(
+        "product-marketplace",
+        "nome legado do Produto Especializado atualmente denominado Guivos Mall",
+        "Guivos Mall",
+        re.compile(r"\bGuivos\s+Marketplace\b", re.IGNORECASE),
     ),
 )
 
@@ -235,7 +242,7 @@ def main() -> int:
         )
         return 1
 
-    print("\nLegacy nomenclature gate passed for known forbidden live terms.")
+    print("\nLegacy nomenclature gate passed for known forbidden live terms and aliases.")
     return 0
 
 
