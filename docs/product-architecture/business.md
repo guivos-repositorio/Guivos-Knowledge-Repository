@@ -2,9 +2,15 @@
 id: GPA-004
 title: Guivos Business
 status: consolidated
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-08-08
+related:
+  - GLPA-001
+  - GPA-SPECIALIZED-JOURNEY-MATRIX-001
+  - GPA-SPECIALIZED-EXPERIENCE-POLICY-001
+  - GKR-JOURNEY-SURFACE-REGISTRY-001
+  - GKR-JOURNEY-TRANSITION-REGISTRY-001
 ---
 
 # Guivos Business
@@ -13,55 +19,40 @@ last_updated: 2026-07-04
 
 Guivos Business é o produto responsável pelas soluções da Guivos para empresas e demais organizações.
 
-Seu papel abrange desenvolvimento de pessoas, relacionamento com clientes, ativação de públicos, distribuição de benefícios e recompensas, formação de parcerias e geração de inteligência empresarial vinculada ao Ecossistema Guivos.
+Seu papel abrange desenvolvimento de pessoas, relacionamento com clientes, ativação de públicos, distribuição de benefícios, formação de parcerias e geração de inteligência empresarial vinculada ao Ecossistema Guivos.
 
 ## Escopo principal
 
-### Desenvolvimento de pessoas e públicos vinculados
-
 - soluções B2B;
-- benefícios corporativos;
-- programas de desenvolvimento;
+- benefícios e programas corporativos;
 - jornadas corporativas;
-- educação e bem-estar;
-- reconhecimento e incentivos;
-- gestão de públicos vinculados;
-- integrações com produtos e serviços do ecossistema.
-
-### Relacionamento, engajamento e crescimento
-
-- programas de recompensas;
-- programas de fidelização;
-- campanhas de engajamento;
-- relacionamento contínuo com clientes;
-- ações de retenção e recorrência;
-- captação de novos clientes;
-- experiências personalizadas;
-- ativação de comunidades e públicos;
-- fortalecimento de marca por meio de experiências relevantes.
-
-### Parcerias e impacto
-
-- parcerias empresariais;
-- conexão com universidades, igrejas, ONGs, movimentos, comunidades, especialistas e outros parceiros;
-- programas de voluntariado e impacto social;
-- apoio a causas e iniciativas comunitárias;
-- conexão entre organizações e oportunidades do ecossistema.
-
-### Inteligência empresarial
-
-- relatórios e indicadores empresariais;
-- análise de engajamento;
-- acompanhamento de participação;
-- tendências e comparações de referência;
-- mensuração de campanhas e programas;
-- apoio à tomada de decisão por meio do Guivos Intelligence.
+- relacionamento, engajamento e crescimento;
+- parcerias empresariais e impacto;
+- conexão com organizações, Coletivos e demais participantes;
+- indicadores, análises e inteligência empresarial.
 
 ## Princípio de aderência
 
-Guivos Business não deve operar ações, campanhas, recompensas ou parcerias apenas porque podem gerar receita.
+Guivos Business não deve operar ações, campanhas, benefícios ou parcerias apenas porque podem gerar receita. Toda solução deve possuir relação clara com desenvolvimento de pessoas, fortalecimento de relacionamentos, engajamento legítimo, experiências relevantes, jornadas de evolução, valor para participantes ou impacto social coerente com o propósito da Guivos.
 
-Toda solução deve possuir relação clara com desenvolvimento de pessoas, fortalecimento de relacionamentos, engajamento legítimo, experiências relevantes, jornadas de evolução, valor para participantes ou impacto social coerente com o propósito da Guivos.
+## Integração vigente com as jornadas
+
+A responsabilidade de Business já aparece materialmente na Arquitetura da Experiência, embora os registros `SURF/TRN` não possuam uma coluna nativa de produto.
+
+O baseline de produto associa principalmente:
+
+- `ORG-001..003` — visão e publicação de oportunidades da Organização;
+- `ORG-004..006` — relações institucionais/bilaterais ainda contratadas;
+- `ORG-007` — resultados e evidências institucionais ainda indeterminados;
+- `ORG-301..304` — planos e ciclo de vida comercial da Organização;
+- `COL-008` — lado do Coletivo nas relações institucionais;
+- `BND-002` — fronteira do autoatendimento para processo comercial Enterprise/Scale, quando aplicável.
+
+`GKR-TRN-203` já constitui um handoff interno integralmente validado entre a responsabilidade institucional de publicação e a descoberta de oportunidade no Journey.
+
+`GKR-TRN-206..209` permanecem contratadas e sem materialização suficiente. As passagens Enterprise/Scale continuam com a maturidade definida no registro de transições.
+
+A leitura completa está em [Matriz de Integração dos Produtos com as Jornadas](specialized-products-journey-integration-matrix.md).
 
 ## Limites
 
@@ -73,33 +64,21 @@ Não deve ser tratado como um CRM genérico, uma plataforma de publicidade irres
 
 ## Relações principais
 
-- pode estruturar jornadas por meio do Guivos Journey;
+- estrutura capacidades organizacionais integradas à experiência do Guivos Journey;
 - pode contratar ou distribuir ofertas do Guivos Mall e do Guivos Travel;
 - utiliza conteúdos do Guivos Media;
 - utiliza Guivos Intelligence para análises, indicadores e recomendações;
 - pode operar campanhas e ativações por meio do Guivos Ads;
-- pode conectar organizações a grupos, comunidades, movimentos, universidades, igrejas, ONGs e demais participantes do ecossistema.
+- pode conectar organizações a Coletivos e demais participantes do ecossistema.
 
-## Exemplos de aplicação
+## Regra de representação
 
-### Colaboradores
+Business deve ficar perceptível quando houver contexto institucional/B2B, autoridade de uma Organização, relação comercial ou programa corporativo material.
 
-Uma empresa pode oferecer benefícios, conteúdos, grupos esportivos, bolsas, experiências, programas de desenvolvimento e recompensas relacionadas à participação ou ao progresso em jornadas corporativas.
-
-### Clientes
-
-Uma marca pode criar um programa de recompensas ligado ao relacionamento, à participação em experiências ou ao engajamento com iniciativas coerentes com seu posicionamento.
-
-### Captação e fidelização
-
-Uma organização pode atrair novos clientes por meio de experiências úteis, parcerias, conteúdos e benefícios, mantendo o relacionamento por meio de jornadas, recompensas e oportunidades relevantes.
-
-### Comunidade e impacto
-
-Uma empresa pode apoiar uma ONG, uma universidade, uma igreja ou um movimento em uma ação local, conectando colaboradores, clientes e parceiros a uma experiência de impacto social.
+Isso não exige criar uma nova família de telas para cada uso. A regra está em [Política de Representação e Handoffs entre Produtos](specialized-products-experience-and-handoff-policy.md).
 
 ## Estado de maturidade
 
-A responsabilidade superior do Guivos Business está consolidada.
+A responsabilidade superior do Guivos Business está consolidada e parte relevante de sua experiência já está materializada pelas jornadas de Organização.
 
-Os modelos específicos de recompensas, fidelização, captação, retenção, mensuração, integrações e ofertas comerciais ainda dependem de detalhamento, validação e implementação.
+Modelos específicos de relacionamento, benefícios, fidelização, captação, retenção, mensuração, integrações e ofertas comerciais continuam sujeitos a detalhamento, validação e implementação. O rebaseline não promove essas frentes automaticamente.

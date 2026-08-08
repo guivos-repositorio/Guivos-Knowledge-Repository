@@ -2,12 +2,14 @@
 id: GPA-001
 title: Guivos Journey
 status: consolidated
-version: 1.2.0
+version: 1.3.0
 owner: Guivos
-last_updated: 2026-07-04
+last_updated: 2026-08-08
 related:
   - GLPA-001
   - PAS-001
+  - GPA-SPECIALIZED-JOURNEY-MATRIX-001
+  - GPA-SPECIALIZED-EXPERIENCE-POLICY-001
 ---
 
 # Guivos Journey
@@ -22,9 +24,7 @@ Ele apoia continuamente a jornada do participante e orquestra, em uma experiênc
 
 Na `GLPA-001 — Guivos Layered Product Architecture`, o Guivos Journey pertence à **Experience Layer**.
 
-Isso significa que o Journey não deve ser tratado como um produto convencional equivalente aos demais componentes especializados.
-
-Ele é a interface experiencial pela qual o participante vive o ecossistema.
+Isso significa que o Journey não deve ser tratado como um produto convencional equivalente aos serviços especializados. Ele é o principal host experiencial pelo qual Pessoas, Coletivos e Organizações acessam e compreendem o ecossistema, sem absorver a autoridade permanente dos demais componentes.
 
 ## Escopo principal
 
@@ -45,42 +45,47 @@ Ele é a interface experiencial pela qual o participante vive o ecossistema.
 - comunicação com o participante;
 - evidências de evolução.
 
+## Integração vigente com as jornadas
+
+A Arquitetura da Experiência já materializa o Journey de forma ampla nas famílias canônicas da Pessoa e do Coletivo, além de integrar capacidades de Organização, Ads e Planos por transições específicas.
+
+O Journey atua como experiência/orquestração; o produto especializado permanece responsável por sua capacidade de negócio.
+
+Exemplos:
+
+- descoberta de oportunidade é experiência Journey, ainda que a oportunidade tenha origem institucional em Business;
+- exposição patrocinada permanece identificada como responsabilidade Ads dentro de contexto Journey;
+- recomendação apoiada por Intelligence continua sob controle experiencial do Journey;
+- uma futura compra em Mall ou reserva em Travel exigirá handoff interno quando houver mudança material de responsabilidade.
+
+O mapeamento atual está consolidado em [Matriz de Integração dos Produtos com as Jornadas](specialized-products-journey-integration-matrix.md).
+
 ## Limites
 
-Guivos Journey não é:
-
-- o produto comercial do ecossistema;
-- a operação de viagens;
-- a solução corporativa B2B;
-- o núcleo editorial da marca;
-- a plataforma de publicidade;
-- a camada algorítmica de inteligência;
-- o processador de pagamentos;
-- a infraestrutura técnica comum.
+Guivos Journey não é o produto comercial do ecossistema, a operação de viagens, a solução corporativa B2B, o núcleo editorial, a plataforma de publicidade, a camada algorítmica de inteligência, o processador de pagamentos ou a infraestrutura técnica comum.
 
 Pode consumir capacidades e conteúdos desses componentes, mas não os substitui.
 
 ## Relações principais
 
 - utiliza Guivos Intelligence para interpretação de contexto e recomendações;
-- direciona participantes para ofertas do Guivos Mall e do Guivos Travel;
+- direciona participantes para ofertas do Guivos Mall e do Guivos Travel quando integrações correspondentes forem materializadas;
 - recebe conteúdos do Guivos Media;
-- pode integrar jornadas corporativas do Guivos Business;
-- pode exibir ativações patrocinadas operadas pelo Guivos Ads;
+- integra jornadas corporativas do Guivos Business;
+- exibe ativações patrocinadas operadas pelo Guivos Ads sob identificação adequada;
 - utiliza capacidades comuns da Platform Layer, como autenticação, busca, notificações, billing e grafo.
 
-## Decisão de responsabilidade
+## Regra de representação
 
-O Journey é responsável pela experiência visível do participante.
+O nome de outro produto não precisa aparecer em toda superfície que use suas capacidades.
 
-As capacidades especializadas permanecem nos componentes correspondentes:
+A mudança deve ficar perceptível quando alterar responsabilidade, autoridade, dados, consequência, expectativa ou recuperação. A regra completa está em [Política de Representação e Handoffs entre Produtos](specialized-products-experience-and-handoff-policy.md).
 
-- inteligência algorítmica: Guivos Intelligence;
-- compras e produtos: Guivos Mall;
-- organizações e B2B: Guivos Business;
-- viagens e reservas: Guivos Travel;
-- conteúdos editoriais: Guivos Media;
-- publicidade e patrocínios: Guivos Ads.
+## Estado de integração
+
+A responsabilidade arquitetural e a integração do Journey com as jornadas vigentes estão consolidadas.
+
+Isso não implica que Mall, Travel e Media já possuam handoffs canônicos próprios; essas lacunas permanecem explicitamente registradas na matriz de integração.
 
 ## Decisão de nomenclatura
 
