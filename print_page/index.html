@@ -58316,7 +58316,7 @@ Organização Transforma ≠ Guivos Business Scale ou Enterprise
 <p><code>conceptually_defined — economic metrics architecture defined, baselines and targets not validated</code>.</p></section><section class="print-page" id="economic-model-gem-010-financial-scenarios-and-model" heading-number="12.16"><h1 id="economic-model-gem-010-financial-scenarios-and-model-gem-010-cenarios-e-modelo-financeiro">GEM-010 — Cenários e Modelo Financeiro<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-gem-010-cenarios-e-modelo-financeiro" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-010-financial-scenarios-and-model-1-objetivo">1. Objetivo<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-1-objetivo" title="Permanent link">&para;</a></h2>
 <p>Definir a arquitetura pela qual premissas rastreáveis poderão ser transformadas em cenários comparáveis de atividade, receita, custos, margem, caixa, capital, capacidade e sustentabilidade, sem inventar valores nem tratar projeções como fatos.</p>
-<p>A versão 0.2.0 incorpora preços e limites candidatos dos planos como parâmetros de validação, sem tratá-los como premissas calibradas ou receita aprovada.</p>
+<p>A versão 0.3.0 reconcilia a arquitetura financeira com a baseline quantitativa pós-P9 do Go-to-Market. Preços, metas de pagantes, envelopes de receita e checkpoints M0–M60 podem agora ser consumidos como entradas candidatas rastreáveis, sem promovê-los a budget, forecast, margem, caixa, necessidade de capital ou valuation aprovado.</p>
 <h2 id="economic-model-gem-010-financial-scenarios-and-model-2-principio-central">2. Princípio central<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-2-principio-central" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>pergunta decisória
 → data-base e horizonte
@@ -58340,24 +58340,34 @@ Organização Transforma ≠ Guivos Business Scale ou Enterprise
 <li>governança, versionamento e gates.</li>
 </ol>
 <h2 id="economic-model-gem-010-financial-scenarios-and-model-4-estados">4. Estados<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-4-estados" title="Permanent link">&para;</a></h2>
-<p><code>conceptual</code>, <code>candidate_parameterized</code>, <code>parameter_pending</code>, <code>evidence_pending</code>, <code>calibrated</code>, <code>reviewed</code>, <code>approved_for_planning</code>, <code>superseded</code> ou <code>retired</code>.</p>
-<p>Os preços do GEM-004-A1 encontram-se em <code>candidate_parameterized</code>.</p>
+<p><code>conceptual</code>, <code>candidate_parameterized</code>, <code>partial_parameterization</code>, <code>parameter_pending</code>, <code>evidence_pending</code>, <code>calibrated</code>, <code>reviewed</code>, <code>approved_for_planning</code>, <code>superseded</code> ou <code>retired</code>.</p>
+<p>Após a reconciliação pós-P9:</p>
+<ul>
+<li>preços governados de Pessoas, Coletivos e Organizações: <code>candidate_parameterized</code>;</li>
+<li>metas e receita de planejamento do <code>GTM-003</code>: <code>candidate_parameterized</code> como entrada GTM, não forecast aprovado;</li>
+<li>Guivos Business: <code>partial_parameterization</code>, pois contratos e envelope agregado existem, mas preço/mix por tier permanecem pendentes;</li>
+<li>Opportunity Boost: <code>candidate_parameterized</code>, excluído do forecast de receita vigente;</li>
+<li>custos, capacidade financeira, tributos, margem, caixa, runway e necessidade de capital: <code>parameter_pending</code> ou <code>evidence_pending</code> conforme a dimensão.</li>
+</ul>
 <h2 id="economic-model-gem-010-financial-scenarios-and-model-5-separacoes-canonicas">5. Separações canônicas<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-5-separacoes-canonicas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>cenário não é previsão garantida;</li>
 <li>projeção não é fato, meta ou compromisso;</li>
+<li>meta GTM não é automaticamente premissa financeira aprovada;</li>
 <li>preço candidato não é disposição a pagar;</li>
 <li>preço publicado não é receita realizada;</li>
 <li>assinatura não é transação;</li>
 <li>GMV não é receita;</li>
 <li>receita não é caixa;</li>
 <li>aporte e dívida não são receita;</li>
+<li>aporte ilustrativo não é necessidade de capital calculada;</li>
 <li>margem não é lucro nem caixa livre;</li>
 <li>break-even contábil não é liquidez suficiente;</li>
 <li>runway não é autorização para consumir reservas protegidas;</li>
 <li>transferência interna não é receita consolidada;</li>
 <li>crescimento modelado não comprova capacidade;</li>
 <li>premissa otimista não é cenário base;</li>
+<li>sensibilidade de faturamento não é cenário financeiro completo;</li>
 <li>valuation não é resultado automático do modelo.</li>
 </ul>
 <h2 id="economic-model-gem-010-financial-scenarios-and-model-6-autoridade-de-parametros-comerciais">6. Autoridade de parâmetros comerciais<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-6-autoridade-de-parametros-comerciais" title="Permanent link">&para;</a></h2>
@@ -58372,16 +58382,103 @@ Organização Transforma ≠ Guivos Business Scale ou Enterprise
 <li>gates de teste;</li>
 <li>critérios de parada.</li>
 </ul>
-<h2 id="economic-model-gem-010-financial-scenarios-and-model-7-limites">7. Limites<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-7-limites" title="Permanent link">&para;</a></h2>
+<p>O <code>GTM-003</code> governa a baseline candidata de pagantes, mix, receita e crescimento. O <code>GTM-006</code> organiza os horizontes M0–M60. O <code>GTM-004</code> governa referências candidatas de investimento e valuation. A leitura conjunta desses documentos é disciplinada por <code>GEM-POST-P9-FINANCIAL-RECONCILIATION-001</code>.</p>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-7-ponte-quantitativa-pos-p9">7. Ponte quantitativa pós-P9<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-7-ponte-quantitativa-pos-p9" title="Permanent link">&para;</a></h2>
+<p>O GEM pode consumir os checkpoints de <code>GTM-003</code> como <code>candidate_gtm_input</code> para construção futura de cenários.</p>
+<table>
+<thead>
+<tr>
+<th>Checkpoint</th>
+<th style="text-align: right;">ARR conhecido de planos</th>
+<th style="text-align: right;">Business ARR-alvo</th>
+<th style="text-align: right;">Run-rate combinado mínimo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M12</td>
+<td style="text-align: right;">R$ 695.910</td>
+<td style="text-align: right;">R$ 400.000</td>
+<td style="text-align: right;">R$ 1.095.910</td>
+</tr>
+<tr>
+<td>M24</td>
+<td style="text-align: right;">R$ 3.661.764</td>
+<td style="text-align: right;">R$ 1.800.000</td>
+<td style="text-align: right;">R$ 5.461.764</td>
+</tr>
+<tr>
+<td>M36</td>
+<td style="text-align: right;">R$ 12.109.296</td>
+<td style="text-align: right;">R$ 6.000.000</td>
+<td style="text-align: right;">R$ 18.109.296</td>
+</tr>
+<tr>
+<td>M48</td>
+<td style="text-align: right;">R$ 25.445.100</td>
+<td style="text-align: right;">R$ 14.000.000</td>
+<td style="text-align: right;">R$ 39.445.100</td>
+</tr>
+<tr>
+<td>M60</td>
+<td style="text-align: right;">R$ 44.284.560</td>
+<td style="text-align: right;">R$ 25.000.000</td>
+<td style="text-align: right;">R$ 69.284.560</td>
+</tr>
+</tbody>
+</table>
+<p>Esses valores não resolvem custos, margem, recebimento, caixa ou capital. Fontes não precificadas ou não validadas continuam excluídas, inclusive Opportunity Boost e outras famílias que ainda não possuem autoridade suficiente para forecast.</p>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-8-cenarios-apos-p9">8. Cenários após P9<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-8-cenarios-apos-p9" title="Permanent link">&para;</a></h2>
+<p>Os multiplicadores conservador/base/aceleração do <code>GTM-003</code> devem ser lidos como <strong>sensibilidades de faturamento</strong>, não como cenários financeiros completos.</p>
+<p>Os cenários completos do GEM permanecem:</p>
+<ul>
+<li>conservador;</li>
+<li>base;</li>
+<li>expansivo;</li>
+<li>estresse.</li>
+</ul>
+<p>Quando parametrizados, deverão reconciliar simultaneamente receita, custos, capacidade, capital de giro, caixa, reservas e financiamento. Não é permitido reduzir ou ampliar apenas a receita e assumir comportamento proporcional de custos e caixa.</p>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-9-capital-runway-e-valuation">9. Capital, runway e valuation<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-9-capital-runway-e-valuation" title="Permanent link">&para;</a></h2>
+<p>O cenário de aporte de R$ 2 milhões do <code>GTM-004</code> permanece ilustrativo. O GEM ainda não calcula necessidade de capital, porque faltam parâmetros materiais de custo, headcount, tributos, pagamentos, recebimentos, capital de giro, reservas e desembolsos.</p>
+<p>Portanto:</p>
+<div class="highlight"><pre><span></span><code>aporte ilustrativo de R$ 2 mi
+≠ capital necessário calculado
+≠ runway aprovado
+≠ budget aprovado
+</code></pre></div>
+<p>A faixa de valuation pré-receita de R$ 10–15 milhões, com referência central de R$ 12 milhões, permanece âncora negocial candidata. As sensibilidades futuras por múltiplo de run-rate não constituem appraisal nem valuation aprovado.</p>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-10-gates-de-calibracao-financeira">10. Gates de calibração financeira<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-10-gates-de-calibracao-financeira" title="Permanent link">&para;</a></h2>
+<p>A promoção para <code>approved_for_planning</code> exige, no mínimo:</p>
+<ol>
+<li>baseline rastreável de custos e comportamento fixo/variável/degrau;</li>
+<li>plano de capacidade e headcount por gate;</li>
+<li>tributos, taxas de pagamento, perdas, repasses e políticas de recebimento/pagamento;</li>
+<li>curva mensal de caixa e capital de giro no curto prazo;</li>
+<li>CAC, retenção, churn, margem e custo de servir com evidência suficiente;</li>
+<li>cenários completos de conservador, base, expansivo e estresse;</li>
+<li>cálculo de runway e necessidade acumulada de capital;</li>
+<li>revisão financeira, contábil, fiscal e jurídica quando aplicável;</li>
+<li>aprovação humana competente e versão congelada da data-base.</li>
+</ol>
+<p>A ausência de um parâmetro continuará <code>TBD</code>/pendente; não será substituída por zero silencioso.</p>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-11-prioridade-de-detalhamento">11. Prioridade de detalhamento<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-11-prioridade-de-detalhamento" title="Permanent link">&para;</a></h2>
+<p>A calibração deverá aumentar precisão do horizonte mais próximo antes de preencher cinco anos com falsa exatidão:</p>
+<div class="highlight"><pre><span></span><code>M0–M6 mensal
+→ M7–M12 mensal
+→ M13–M24 trimestral com gates
+→ M25–M60 por horizonte e sensibilidade
+</code></pre></div>
+<p>Essa orientação não altera os checkpoints estratégicos do GTM.</p>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-12-limites">12. Limites<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-12-limites" title="Permanent link">&para;</a></h2>
 <p>Esta versão não aprova:</p>
 <ul>
-<li>previsão de receita;</li>
+<li>previsão oficial de receita;</li>
 <li>orçamento;</li>
 <li>captação;</li>
 <li>dívida;</li>
 <li>investimento;</li>
 <li>política contábil;</li>
-<li>metas;</li>
+<li>metas externas;</li>
 <li>margem;</li>
 <li>valuation;</li>
 <li>tributos;</li>
@@ -58390,8 +58487,8 @@ Organização Transforma ≠ Guivos Business Scale ou Enterprise
 <li>operação;</li>
 <li>implementação técnica.</li>
 </ul>
-<h2 id="economic-model-gem-010-financial-scenarios-and-model-8-estado">8. Estado<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-8-estado" title="Permanent link">&para;</a></h2>
-<p><code>candidate_parameterized — commercial plan prices and limits documented; costs, evidence, specialist reviews and planning approvals pending</code>.</p></section><section class="print-page" id="economic-model-gem-010-a1-pricing-assumptions-and-validation" heading-number="12.17"><h1 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-premissas-de-precificacao-e-validacao-comercial">Premissas de Precificação e Validação Comercial<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-premissas-de-precificacao-e-validacao-comercial" title="Permanent link">&para;</a></h1>
+<h2 id="economic-model-gem-010-financial-scenarios-and-model-13-estado">13. Estado<a class="headerlink" href="#economic-model-gem-010-financial-scenarios-and-model-13-estado" title="Permanent link">&para;</a></h2>
+<p><code>partial_parameterization — post-P9 GTM revenue and growth inputs reconciled; costs, capacity, unit economics, cash, runway, capital requirement, specialist reviews and planning approvals pending</code>.</p></section><section class="print-page" id="economic-model-gem-010-a1-pricing-assumptions-and-validation" heading-number="12.17"><h1 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-premissas-de-precificacao-e-validacao-comercial">Premissas de Precificação e Validação Comercial<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-premissas-de-precificacao-e-validacao-comercial" title="Permanent link">&para;</a></h1>
 <h2 id="economic-model-gem-010-a1-pricing-assumptions-and-validation-1-finalidade">1. Finalidade<a class="headerlink" href="#economic-model-gem-010-a1-pricing-assumptions-and-validation-1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este documento registra os preços candidatos como premissas rastreáveis do modelo financeiro e define como deverão ser validados antes de planejamento aprovado ou oferta pública.</p>
 <p>Preço candidato não é preço comprovado, receita, margem, caixa, disposição a pagar ou autorização de cobrança.</p>
