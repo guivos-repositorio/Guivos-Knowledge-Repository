@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.23.0
+version: 0.24.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -25,6 +25,8 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A1
+  - UXA-100-A2
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -45,6 +47,8 @@ SVG existente
 ≠ transição validada automaticamente
 ≠ jornada integrada validada
 ```
+
+A UXA-100-A2 valida funcionalmente os nove SVGs de Planos **como candidatos**. Essa validação não os transforma automaticamente em superfícies canônicas nem altera os registros de transições.
 
 ## 2. Inventário agregado canônico por família
 
@@ -73,14 +77,14 @@ SVG existente
 
 ## 3. Conjunto candidato UXA-100 — Planos, comparação e cobrança
 
-A UXA-100 adiciona um conjunto visual candidato, ainda fora da contagem canônica:
+A UXA-100 adiciona um conjunto visual candidato, ainda fora da contagem canônica. A UXA-100-A2 auditou funcionalmente os nove ativos: seis foram reformulados e três preservados sem alteração visual.
 
-| Participante | Tela dedicada de Planos | Placa de fluxo | Comparação incremental | Total candidato |
-|---|---:|---:|---:|---:|
-| Pessoa | 1 | 1 | 1 | 3 |
-| Coletivo | 1 | 1 | 1 | 3 |
-| Organização | 1 | 1 | 1 | 3 |
-| **Total candidato UXA-100** | **3** | **3** | **3** | **9** |
+| Participante | Tela dedicada de Planos | Placa de fluxo | Comparação incremental | Total candidato | Aprovados como candidatos |
+|---|---:|---:|---:|---:|---:|
+| Pessoa | 1 | 1 | 1 | 3 | 3 |
+| Coletivo | 1 | 1 | 1 | 3 | 3 |
+| Organização | 1 | 1 | 1 | 3 | 3 |
+| **Total candidato UXA-100** | **3** | **3** | **3** | **9** | **9** |
 
 Referência de inspeção: [Planos, Comparação e Cobrança — Galeria Candidata](screen-gallery-plans-billing.md).
 
@@ -90,7 +94,7 @@ As telas dedicadas são:
 - `uxa-100-collective-plans-screen-desktop.svg`;
 - `uxa-100-organization-plans-screen-desktop.svg`.
 
-Materialização candidata não cria IDs de superfície/transição, não eleva a contagem canônica e não representa checkout implementado.
+Validação funcional candidata não cria IDs de superfície/transição, não eleva a contagem canônica e não representa checkout implementado.
 
 ## 4. Instrumentos granulares vigentes
 
@@ -99,8 +103,8 @@ Materialização candidata não cria IDs de superfície/transição, não eleva 
 | superfícies/estados/responsabilidades/fronteiras | 40 | `active` 0.15.0; sem IDs de Planos |
 | transições documentais | 37 | `active` 0.16.0; sem transições de Planos |
 | detalhamento da Pessoa | 19 entradas | `active` 0.9.0 |
-| catálogo canônico | 109 SVGs | `active` 0.23.0 |
-| conjunto candidato UXA-100 | 9 SVGs | `draft`; fora da contagem canônica |
+| catálogo canônico | 109 SVGs | `active` 0.24.0 |
+| conjunto candidato UXA-100 | 9 SVGs | `draft`; **9/9 aprovados funcionalmente como candidatos** |
 
 ## 5. Cobertura visual canônica
 
@@ -111,12 +115,13 @@ Materialização candidata não cria IDs de superfície/transição, não eleva 
 | fronteira intencionalmente sem tela | 1 |
 | **Total** | **40** |
 
-## 6. Efeito da UXA-100 no catálogo
+## 6. Efeito da UXA-100-A2 no catálogo
 
 - preserva **109 SVGs canônicos**, 109 associações, 28 perfis, 40 IDs e 37 transições;
-- adiciona **9 SVGs candidatos** de Planos/cobrança fora da contagem canônica;
-- desses 9, três são telas dedicadas de Planos, três são placas de fluxo e três comparações incrementais;
-- inclui a etapa Planos nas jornadas draft de Pessoa, Coletivo e Organização;
+- mantém **9 SVGs candidatos** de Planos/cobrança fora da contagem canônica;
+- confirma **9/9 funcionalmente aprovados como candidatos**;
+- reforma 6 dos 9 ativos e preserva 3 comparações incrementais sem alteração visual;
+- mantém a etapa Planos nas jornadas `draft` de Pessoa, Coletivo e Organização;
 - não promove nenhuma superfície ou transição;
 - não altera validações funcionais vigentes do conjunto canônico.
 
@@ -126,7 +131,7 @@ Materialização candidata não cria IDs de superfície/transição, não eleva 
 - `PER-106` organiza participações e não substitui a Central;
 - `PER-107` é triagem de atualizações;
 - `PER-108` sintetiza o contexto interno e não replica canais especializados;
-- Planos materializado na UXA-100 ainda não possui ID canônico;
+- Planos da UXA-100, embora aprovado funcionalmente como candidato, ainda não possui ID canônico;
 - plano pago não compra relevância, legitimidade, confiança, impacto ou evolução;
 - `COM-005` está validado pela UXA-099, mas sua validação não promove automaticamente `TRN-305`;
 - `BND-001` é fronteira documental, não tela;
@@ -134,11 +139,11 @@ Materialização candidata não cria IDs de superfície/transição, não eleva 
 
 ## 8. Estado do catálogo
 
-- catálogo: `active` 0.23.0;
+- catálogo: `active` 0.24.0;
 - galeria principal canônica: 109 SVGs;
-- galeria candidata de Planos: `draft` 0.1.0; 9 SVGs candidatos;
+- galeria candidata de Planos: `draft` 0.2.0; 9 SVGs, **9/9 aprovados funcionalmente como candidatos**;
 - matriz por SVG canônica: `active` 0.15.0;
-- jornadas da Pessoa, Coletivo e Organização: `draft`, agora com Planos candidato;
+- jornadas da Pessoa, Coletivo e Organização: `draft`, com Planos aprovado funcionalmente apenas no escopo candidato;
 - protótipo e Engenharia de Produto: não iniciados.
 
-O próximo ato governado da UXA-100 é validar funcionalmente os nove SVGs candidatos antes de qualquer promoção ao registro de superfícies, transições ou contagem canônica.
+O próximo ato possível da UXA-100 é decidir, em etapa governada separada, a **fragmentação/promoção canônica** dos ativos: superfícies, IDs e transições. Nenhuma promoção é automática.
