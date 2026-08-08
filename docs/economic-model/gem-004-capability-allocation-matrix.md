@@ -2,9 +2,9 @@
 id: GEM-004-CAPABILITY-ALLOCATION-MATRIX-001
 title: Matriz de Alocação de Capacidades
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 related:
   - GEM-004-A1
@@ -17,9 +17,7 @@ related:
 
 ## 1. Objetivo
 
-Estabelecer como cada capacidade deverá ser classificada entre acesso gratuito, ampliação paga, acesso financiado, acesso de parceiros ou paywall proibido.
-
-A versão 0.2.0 incorpora exemplos da baseline comercial candidata.
+Estabelecer como cada capacidade é classificada entre acesso gratuito, ampliação paga, acesso financiado, acesso de parceiros ou paywall proibido. A versão 0.3.0 sincroniza os exemplos com a taxonomia global de planos sem alterar a natureza das capacidades já governadas.
 
 ## 2. Estados canônicos
 
@@ -47,11 +45,14 @@ A versão 0.2.0 incorpora exemplos da baseline comercial candidata.
 | segurança, privacidade, correção e exclusão | `prohibited_paywall` | disponíveis em todos os planos |
 | uma atividade gratuita do Coletivo | `free_limited` | 1 por mês no Coletivo Livre |
 | uma oportunidade gratuita do Coletivo | `free_limited` | 1 por mês no Coletivo Livre |
-| publicação monetizada por Coletivo | `paid_extension` | Gestão ou superior |
-| indicadores históricos e de impacto | `paid_extension` | Impacto ou Enterprise |
-| API, SSO, Power BI e SLA | `paid_specialized` | Enterprise ou Scale |
+| publicação monetizada por Coletivo | `paid_extension` | Mobiliza ou superior na baseline vigente |
+| indicadores históricos e de impacto | `paid_extension` | Impacta ou Rede |
+| capacidades institucionais ampliadas | `paid_extension` | Eleva ou Transforma conforme catálogo |
+| API, SSO, Power BI e SLA | `paid_specialized` | quando incluídos ou dimensionados em Rede/Transforma; Business depende de autoridade própria |
 | acesso patrocinado de Pessoa ou Coletivo | `sponsor_funded` | prazo e finalidade declarados |
 | acesso financiado por Organização | `organization_funded` | financiador sem acesso indevido |
+
+A taxonomia `Guivos Business Start · Growth · Scale · Enterprise` não recebe alocação de entitlement nesta versão. Nenhuma capacidade pode ser atribuída a esses planos por analogia com Conecta/Eleva/Transforma.
 
 ## 4. Registro mínimo
 
@@ -86,104 +87,26 @@ owner: unassigned
 
 ## 5. Perguntas obrigatórias
 
-- Qual valor é produzido?
-- A capacidade é essencial?
-- O gratuito permanece útil sem a ampliação?
-- O pago amplia ou apenas desfaz limitação artificial?
-- O catálogo público permanece acessível?
-- Existem dados ou riscos adicionais?
-- Quem paga e quem se beneficia?
-- Quem pode cancelar ou contestar?
-- O que ocorre no downgrade?
-- A perda de acesso pode causar dano?
-- Existe alternativa gratuita legítima?
-- O plano pago alteraria indevidamente ranking ou relevância?
+A classificação deve responder qual valor é produzido, se a capacidade é essencial, se o gratuito permanece útil, se o pago amplia valor real, quais dados/riscos surgem, quem paga/beneficia/cancela/contesta, o que ocorre no downgrade, qual alternativa gratuita existe e se o pagamento alteraria indevidamente ranking ou relevância.
 
-## 6. Critérios para `universal_free`
+## 6. Critérios de proteção
 
-A classificação é obrigatória quando a capacidade for necessária para:
+`prohibited_paywall` prevalece sobre classificação paga; `universal_free` prevalece sobre conveniência econômica; dados/autonomia usam o limite mais protetivo; catálogo público e retorno ao gratuito são preservados; evidência insuficiente resulta em `not_assessed`.
 
-- participação básica;
-- segurança;
-- transparência;
-- correção e controle de dados;
-- consentimento e revogação;
-- cancelamento;
-- contestação;
-- acesso a registros essenciais;
-- retorno ao gratuito;
-- prevenção de dano material;
-- acesso geral ao catálogo público.
+Limites gratuitos devem refletir capacidade/custo/risco real, ser informados antes do uso e não bloquear segurança ou benefício básico. Extensões pagas precisam possuir valor adicional demonstrável, permitir downgrade e não depender de influência, urgência artificial ou compra de relevância.
 
-## 7. Critérios para `free_limited`
+## 7. Acesso financiado
 
-O limite deverá:
+Devem ser registrados financiador, beneficiário, finalidade, duração, capacidades financiadas, dados acessíveis, condição de término, continuidade no gratuito, conflitos de interesse e proteção contra discriminação.
 
-- refletir capacidade, custo ou risco real;
-- ser informado antes do uso;
-- possuir unidade compreensível;
-- não impedir benefício básico;
-- não reduzir segurança;
-- permitir acompanhamento;
-- evitar surpresa ou bloqueio abrupto;
-- não reduzir visibilidade de conteúdo já publicado;
-- possuir alternativa gratuita;
-- possuir tratamento de exceção quando necessário para evitar dano.
+## 8. Revisão de classificação
 
-## 8. Critérios para `paid_extension`
+Mudanças materiais exigem justificativa, comparação antes/depois, impacto no gratuito/catálogo/dados/direitos, evidência, plano de transição, comunicação, aprovação e possibilidade de reversão.
 
-A capacidade deverá:
+## 9. Regra taxonômica
 
-- ampliar dimensão legítima;
-- possuir valor adicional demonstrável;
-- não ser direito básico;
-- permitir downgrade;
-- informar dados e limites;
-- possuir hipótese de pagamento;
-- não depender de influência ou urgência artificial;
-- não aumentar relevância orgânica;
-- manter assinatura e transação separadas.
+Plano indica profundidade, capacidade ou complexidade atendida, nunca valor do participante. `Organização Transforma ≠ Guivos Business Enterprise`, e nenhuma equivalência automática de entitlement é permitida entre planos de Organização e Guivos Business.
 
-## 9. Critérios para acesso financiado
+## 10. Estado
 
-Deverão ser registrados:
-
-- financiador;
-- beneficiário;
-- finalidade;
-- duração;
-- capacidades financiadas;
-- dados acessíveis ao financiador;
-- condição de término;
-- continuidade no gratuito;
-- conflito de interesse;
-- proteção contra discriminação.
-
-## 10. Conflitos de classificação
-
-Quando uma capacidade puder pertencer a mais de um estado, prevalecerá:
-
-1. `prohibited_paywall` sobre qualquer classificação paga;
-2. `universal_free` sobre conveniência econômica;
-3. o limite mais protetivo para dados e autonomia;
-4. a classificação que preserve catálogo público e retorno ao gratuito;
-5. `not_assessed` quando evidência for insuficiente.
-
-## 11. Revisão de classificação
-
-Mudanças materiais exigirão:
-
-- justificativa;
-- comparação antes/depois;
-- impacto no gratuito;
-- impacto no catálogo público;
-- impacto em dados e direitos;
-- evidência;
-- plano de transição;
-- comunicação;
-- aprovação formal;
-- possibilidade de reversão.
-
-## 12. Estado
-
-`active allocation baseline — candidate commercial capabilities classified; validation and implementation pending`.
+`active allocation baseline — taxonomy synchronized; candidate participant capabilities classified; Guivos Business entitlements not assessed`.
