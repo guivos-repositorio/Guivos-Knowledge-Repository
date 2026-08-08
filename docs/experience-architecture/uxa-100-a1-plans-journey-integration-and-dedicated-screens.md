@@ -2,11 +2,12 @@
 id: UXA-100-A1
 title: Integração de Planos às Jornadas e Telas Dedicadas
 status: draft
-version: 0.1.2
+version: 0.2.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-100
 related:
+  - UXA-100-A2
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -23,6 +24,8 @@ normative: false
 A UXA-100-A1 estende a UXA-100 para inserir **Planos** explicitamente nas jornadas da Pessoa, do Coletivo e da Organização e materializar uma tela dedicada de Planos para cada participante.
 
 A extensão não cria checkout real, cobrança implementada, entitlement operacional, oferta pública, IDs canônicos de superfície/transição ou promoção das jornadas.
+
+A UXA-100-A2 executou posteriormente a auditoria funcional dos nove SVGs candidatos e os aprovou como materializações candidatas após reformulação controlada de seis ativos.
 
 ## 2. Decisão de arquitetura da experiência
 
@@ -134,7 +137,7 @@ Benefícios herdados não serão descritos como novidade. Quando plano atual e a
 
 ## 10. Estado documental
 
-Com esta extensão:
+Com esta extensão e sua auditoria funcional posterior:
 
 - Jornada da Pessoa: `draft` 0.12.0;
 - Jornada do Coletivo: `draft` 0.13.0;
@@ -142,14 +145,21 @@ Com esta extensão:
 - Jornadas Integradas: `active` 0.28.1 como instrumento de leitura;
 - Catálogo: `active` 0.23.0, preservando 109 SVGs canônicos e registrando 9 candidatos separados;
 - Galeria principal: `active` 0.18.0, com referência ao apêndice candidato;
-- Galeria candidata de Planos: `draft` 0.1.0.
+- Galeria candidata de Planos: `draft`, com 9/9 ativos funcionalmente aprovados como candidatos pela UXA-100-A2.
 
 A baseline canônica anterior permanece 109 SVGs, 40 IDs de superfície/responsabilidade/fronteira e 37 transições. Os 9 SVGs de Planos são candidatos e não alteram essas contagens.
 
-Nenhuma jornada é promovida por esta extensão.
+Nenhuma jornada é promovida por esta extensão ou por sua auditoria.
 
-## 11. Próximo gate
+## 11. Resultado da auditoria funcional
 
-Antes de qualquer promoção canônica, uma validação funcional posterior deverá examinar os 9 SVGs e decidir se cada tela está assertiva, quais estados devem ser fracionados, quais superfícies/transições devem ser criadas e como retorno, erro, idempotência e estado corrente serão registrados.
+A UXA-100-A2 concluiu:
 
-Nenhuma dessas decisões é automática.
+- 9 SVGs auditados;
+- 6 reformulados controladamente;
+- 3 aprovados sem reforma;
+- 9/9 aprovados funcionalmente no escopo candidato;
+- nenhuma implementação ou operação presumida;
+- nenhuma superfície/transição canônica criada.
+
+A próxima decisão possível passa a ser **promoção/fragmentação canônica**, não nova auditoria dos mesmos ativos. Essa decisão continua separada e não é automática.
