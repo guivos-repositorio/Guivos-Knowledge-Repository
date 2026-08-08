@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.7.1
+version: 2.7.2
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-08
 depends_on:
@@ -58,7 +58,7 @@ normative: false
 - [UXA-089](uxa-089-collective-request-management-functional-validation-and-reformulation.md)
 - [UXA-090](uxa-090-integrated-collective-request-handoffs-functional-validation.md)
 - [UXA-091](uxa-091-my-collectives-materialization-and-post-approval-continuity-refinement.md)
-- [UXA-092](uxa-092-my-collectives-functional-validation-per107-revalidation-and-trn111-integrated-validation.md)
+- [UXA-092](uxa-092-my-collectives-functional-validation-and-post-approval-continuity-revalidation.md)
 - [UXA-093](uxa-093-collective-updates-center-materialization.md)
 - [UXA-094](uxa-094-collective-updates-center-functional-validation-and-trn110-revalidation.md)
 - [UXA-095](uxa-095-participant-home-materialization-and-trn111-refinement.md)
