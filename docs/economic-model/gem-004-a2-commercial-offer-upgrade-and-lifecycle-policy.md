@@ -2,9 +2,9 @@
 id: GEM-004-A2
 title: Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 depends_on:
   - GEM-004-A1
@@ -13,8 +13,10 @@ depends_on:
   - UXA-011-A1
   - UXA-037
 related:
+  - GEM-007-BUSINESS-ECONOMIC-ROLE-001
   - GEM-010-A1
   - GEM-COMMERCIAL-BASELINE-001
+  - UXA-100
   - M7.39
 normative: true
 ---
@@ -23,392 +25,161 @@ normative: true
 
 ## 1. Finalidade
 
-Esta política define onde, quando e como os planos candidatos poderão ser apresentados, comparados, contratados, alterados e encerrados sem reduzir autonomia, utilizar pressão indevida ou confundir assinatura com relevância funcional.
+Esta política define onde, quando e como os planos candidatos de **Pessoa, Coletivo e Organização** podem ser apresentados, comparados, contratados, alterados e encerrados sem reduzir autonomia, utilizar pressão indevida ou confundir assinatura com relevância funcional.
 
-Ela complementa a política conceitual do GEM-004 e governa a baseline comercial candidata do GEM-004-A1.
+A taxonomia vigente é governada pelo `GEM-004-A1`:
+
+- Pessoa: Free · Plus · Pro;
+- Coletivo: Livre · Mobiliza · Impacta · Rede;
+- Organização: Conecta · Eleva · Transforma.
+
+Guivos Business é produto especializado e possui taxonomia própria Start · Growth · Scale · Enterprise, mas **não recebe preço, entitlement ou fluxo de contratação autônoma por esta política**.
 
 ## 2. Regra central
 
 ```text
 necessidade legítima ou limite transparente
-→ alternativa gratuita preservada
+→ alternativa gratuita/operacional preservada
 → benefício adicional explicado
-→ preço, recorrência e consequência apresentados
+→ preço, recorrência e consequência apresentados quando já governados
 → escolha afirmativa
 → revisão antes da contratação
 → ativação rastreável
 → downgrade ou cancelamento acessível
 ```
 
-A oferta não poderá ser introduzida como diagnóstico, urgência, condição de valor humano ou promessa de evolução.
+A oferta não pode ser introduzida como diagnóstico, urgência, condição de valor humano ou promessa de evolução. Plano expressa capacidade/complexidade atendida, nunca mérito do participante.
 
 ## 3. Superfícies permitidas para oferta
 
 ### 3.1 Pessoas
 
-A oferta poderá aparecer:
-
-- na página pública de Planos e Preços;
-- em `Eu → Plano e cobrança`;
-- após o uso das duas correspondências personalizadas completas do Guivos Free;
-- quando a pessoa selecionar uma prévia de correspondência personalizada adicional;
-- ao solicitar filtros avançados;
-- ao ativar alertas personalizados;
-- ao solicitar relatório, integração ou capacidade exclusiva de Plus ou Pro;
-- ao encerrar acesso financiado, com alternativa gratuita igualmente visível.
+A oferta pode aparecer na página de Planos, em Plano e cobrança, após uso da cota legítima do Free ou quando a Pessoa solicitar capacidade exclusiva de Plus/Pro. Explorar, Mapa e catálogo público permanecem acessíveis.
 
 ### 3.2 Coletivos
 
-A oferta poderá aparecer:
+A oferta pode aparecer em Plano e cobrança, ao atingir cota/capacidade, ao tentar publicação paga não incluída, ao solicitar administradores/núcleos/indicadores/exportações/integrações adicionais ou ao comparar planos voluntariamente.
 
-- em `Coletivo → Plano e cobrança`;
-- ao atingir cota mensal de atividade ou oportunidade;
-- ao atingir limite de publicações simultaneamente ativas;
-- ao tentar criar publicação paga no Coletivo Livre;
-- ao solicitar administrador adicional;
-- ao solicitar múltiplos núcleos;
-- ao solicitar indicadores, exportações, integrações, API, SSO ou SLA não incluídos;
-- na comparação voluntária de planos.
+Referências antigas `Gestão`, `Impacto` e `Enterprise` devem ser lidas como `Mobiliza`, `Impacta` e `Rede` respectivamente.
 
 ### 3.3 Organizações
 
-A oferta poderá aparecer:
+A oferta pode aparecer em Plano e cobrança, ao atingir capacidade de oportunidades/programas/publicações ou ao solicitar administradores, unidades, Coletivos relacionados, analytics, automações, integrações ou suporte além do plano atual.
 
-- em `Organização → Plano e cobrança`;
-- ao atingir cota de novas oportunidades ou programas;
-- ao atingir limite de publicações ativas;
-- ao solicitar administradores, unidades ou Coletivos relacionados adicionais;
-- ao solicitar analytics, automações, integrações, Power BI, API, SSO ou SLA;
-- em processo comercial solicitado pela Organização.
+Os planos da Organização são `Conecta`, `Eleva` e `Transforma`. Eles não são planos Guivos Business.
+
+### 3.4 Contratação assistida
+
+Quando qualquer contratação não puder ser configurada autonomamente, a experiência pode encaminhar para `BND-002 — fronteira de contratação/dimensionamento assistido`.
+
+`BND-002` não é sinônimo de Enterprise, Scale, Rede ou Transforma. A necessidade de handoff depende da complexidade concreta da contratação.
 
 ## 4. Momentos proibidos
 
-A oferta não poderá interromper ou influenciar:
+Nenhuma oferta pode interromper ou influenciar autenticação necessária à segurança, consentimento/revogação, compreensão inicial, correção/contestação/exclusão de interpretação, comunicação de risco/incidente, cancelamento/exportação/exclusão de dados, situação de vulnerabilidade identificável ou correção de erro material da Guivos.
 
-- explicação do ambiente protegido;
-- autenticação necessária para segurança;
-- revisão de conteúdo pessoal;
-- consentimento ou retirada de autorização;
-- processamento da compreensão inicial;
-- revisão, correção, contestação ou exclusão de interpretação;
-- decisão sobre persistência ou personalização;
-- comunicação de risco, incidente ou falha;
-- cancelamento, exportação ou exclusão de dados;
-- situação de vulnerabilidade identificável;
-- atendimento necessário para corrigir erro material da Guivos.
-
-Nenhuma oferta poderá ser apresentada como consequência de uma inferência sensível.
+Nenhuma oferta pode ser consequência de inferência sensível.
 
 ## 5. Correspondências personalizadas do Guivos Free
 
-### 5.1 Objeto limitado
+O limite semanal recai sobre a abertura de correspondências personalizadas completas, não sobre o catálogo público. Após duas aberturas completas na semana, uma correspondência adicional pode apresentar prévia limitada, enquanto Explorar, Mapa e informações públicas essenciais permanecem disponíveis.
 
-O limite semanal recai sobre a abertura de correspondências personalizadas completas, não sobre o catálogo público.
-
-O Explorar e o Mapa continuarão permitindo acesso às oportunidades públicas e às informações públicas essenciais.
-
-### 5.2 Prévia posterior à cota
-
-Após duas aberturas completas na semana, uma correspondência adicional poderá apresentar:
-
-- categoria;
-- modalidade;
-- localidade;
-- prazo;
-- natureza gratuita ou paga;
-- indicação de que existe relação com contexto autorizado;
-- alternativa para buscar a oferta publicamente sem personalização, quando aplicável.
-
-Poderão permanecer limitados:
-
-- identidade completa da correspondência personalizada;
-- justificativa detalhada;
-- análise de aderência;
-- relação ampliada com Momento Atual e Próximo Passo;
-- comparação entre alternativas;
-- filtros e alertas avançados.
-
-### 5.3 Mensagem funcional
-
-A mensagem deverá declarar:
-
-> Você utilizou as duas correspondências personalizadas completas incluídas no Guivos Free nesta semana. Todas as oportunidades públicas continuam disponíveis no Explorar e no Mapa. O Guivos Plus desbloqueia as demais correspondências personalizadas e suas explicações completas.
-
-Deverão permanecer visíveis:
-
-- `Explorar oportunidades públicas`;
-- `Ver no Mapa`;
-- `Conhecer o Guivos Plus`;
-- data ou período de renovação da cota.
+A mensagem funcional deve informar a cota utilizada, período de renovação, alternativas públicas e opção voluntária de conhecer Plus/Pro sem urgência artificial.
 
 ## 6. Limites dos Coletivos
 
 ### 6.1 Coletivo Livre
 
-Depois de utilizar uma atividade ou uma oportunidade mensal, a superfície deverá informar:
-
-- cota utilizada;
-- próximo período de renovação;
-- publicações atuais preservadas;
-- possibilidade de aguardar sem perda de dados;
-- benefício exato do Coletivo Gestão.
-
-Mensagem de referência:
-
-> Você utilizou a atividade gratuita incluída no Coletivo Livre neste mês. A próxima cota será liberada no próximo ciclo mensal. Para publicar outra atividade agora ou criar uma atividade paga, compare o Coletivo Gestão.
+Ao atingir cota, devem permanecer claros: cota usada, renovação, publicações preservadas, possibilidade de aguardar/salvar rascunho e benefício exato de `Coletivo Mobiliza`.
 
 ### 6.2 Publicação paga
 
-Ao tentar monetizar no Coletivo Livre, a superfície deverá explicar:
-
-- que publicação paga exige Coletivo Gestão ou superior;
-- que assinatura não substitui comissão, taxa do meio de pagamento ou tributo;
-- que condições comerciais e responsabilidades deverão ser revisadas;
-- que a publicação poderá permanecer gratuita sem upgrade.
+Quando publicação paga não estiver incluída, a superfície deve explicar a alternativa gratuita e que assinatura é distinta de comissão, taxa do meio de pagamento e tributo.
 
 ### 6.3 Limite simultâneo
 
-Quando o limite de publicações ativas for atingido, o Coletivo poderá:
-
-- encerrar uma publicação;
-- agendar nova publicação para após o encerramento;
-- aguardar o ciclo seguinte quando a cota também estiver esgotada;
-- realizar upgrade;
-- salvar rascunho sem publicação.
-
-Nenhuma publicação existente terá visibilidade reduzida para pressionar conversão.
+Ao atingir limite de publicações ativas, o Coletivo pode encerrar publicação, agendar nova publicação, aguardar ciclo, realizar upgrade ou salvar rascunho. Nenhuma publicação existente perde visibilidade para pressionar conversão.
 
 ## 7. Limites das Organizações
 
-Ao atingir capacidade de plano, a Organização deverá receber:
+Ao atingir capacidade, a Organização recebe unidade do limite, consumo atual, período de renovação, efeito exato da mudança de plano e alternativas operacionais aplicáveis.
 
-- unidade do limite;
-- consumo atual;
-- período de renovação;
-- efeito do upgrade;
-- alternativa de arquivar, agendar ou manter rascunho;
-- separação entre capacidade contratada e relevância das oportunidades.
-
-A compra de plano não poderá elevar ranking, prioridade orgânica, evidência de impacto ou confiança institucional.
+A compra de `Conecta`, `Eleva` ou `Transforma` não eleva ranking, prioridade orgânica, evidência de impacto ou confiança institucional.
 
 ## 8. Comparação de planos
 
-Toda comparação deverá apresentar, no mesmo contexto:
+Toda comparação deve apresentar no mesmo contexto, quando aplicável:
 
 - plano atual;
-- benefícios já disponíveis gratuitamente;
-- benefícios adicionais;
+- benefícios já disponíveis;
+- benefícios adicionais e capacidades reduzidas em downgrade;
 - limites;
-- preço mensal;
-- preço anual e forma de cobrança;
-- recorrência e renovação;
-- eventual desconto;
-- início do acesso;
+- preço mensal/anual candidato dos planos de participantes;
+- recorrência, renovação e início;
 - dados adicionais utilizados;
-- downgrade;
-- cancelamento;
-- acesso financiado, quando elegível;
-- comissão ou taxa transacional separada, quando aplicável.
+- downgrade e cancelamento;
+- acesso financiado quando elegível;
+- comissão/taxa transacional separadas.
 
-Nenhum plano poderá ser rotulado como obrigatório, superior em valor humano ou necessário para evoluir.
+Nenhum plano pode ser rotulado como obrigatório, superior em valor humano ou necessário para evoluir.
 
 ## 9. Upgrade
 
-### 9.1 Requisitos
+Upgrade exige ação afirmativa, nenhuma opção pré-selecionada, revisão do plano/preço, identificação de pagador e beneficiário, confirmação de recorrência/início, método autorizado, informação sobre downgrade/cancelamento, registro da decisão e confirmação adequada.
 
-O upgrade exige:
-
-1. ação afirmativa;
-2. nenhuma opção pré-selecionada;
-3. revisão do plano e preço;
-4. identificação do pagador e beneficiário;
-5. confirmação da recorrência;
-6. data de início;
-7. meio de pagamento autorizado;
-8. informação sobre cancelamento e downgrade;
-9. registro da decisão;
-10. recibo ou confirmação adequada.
-
-### 9.2 Upgrade entre ciclos
-
-Proration, crédito e data de cobrança permanecem pendentes de definição financeira, contábil, fiscal e técnica.
-
-Até essa definição, nenhum texto público poderá prometer cobrança proporcional.
-
-### 9.3 Trial
-
-A baseline inicial não inclui trial com conversão automática.
-
-Qualquer teste gratuito futuro exigirá:
-
-- autorização separada;
-- duração definida;
-- preço futuro visível;
-- lembrete anterior à cobrança;
-- cancelamento simples;
-- retorno ao gratuito;
-- protocolo de teste e critérios de parada.
+Pró-rata, crédito e data de cobrança entre ciclos permanecem pendentes. A baseline não inclui trial com conversão automática.
 
 ## 10. Downgrade de Pessoas
 
-Antes do downgrade, a pessoa verá:
-
-- capacidades que deixarão de estar disponíveis;
-- data efetiva;
-- histórico e relatórios afetados;
-- integrações desativadas;
-- exportação disponível;
-- baseline gratuito preservado.
-
-Após o downgrade:
-
-- dados essenciais continuarão acessíveis;
-- relatórios pagos poderão permanecer exportáveis ou em modo de leitura conforme retenção futura;
-- novas correspondências obedecerão à cota do Guivos Free;
-- nenhuma oportunidade pública será removida do catálogo por causa do downgrade;
-- personalização obedecerá às autorizações vigentes e às capacidades gratuitas.
+Antes do downgrade, a Pessoa vê capacidades afetadas, data efetiva, histórico/relatórios, integrações, exportação e baseline gratuito preservado. O downgrade nunca remove oportunidade pública do catálogo por causa do plano.
 
 ## 11. Downgrade de Coletivos
 
-### 11.1 Para Coletivo Livre
+Ao reduzir para plano de menor capacidade, o Coletivo deve tratar publicações, compromissos, administradores, núcleos/unidades, integrações e exportação excedentes antes da efetivação. Não há exclusão silenciosa.
 
-O downgrade somente se tornará efetivo após tratamento das ofertas e capacidades excedentes.
-
-O Coletivo deverá:
-
-- escolher quais publicações gratuitas permanecerão ativas dentro do limite;
-- encerrar ou converter publicações pagas antes da efetivação;
-- cumprir compromissos já assumidos;
-- exportar informações necessárias;
-- reduzir administradores conforme limite;
-- compreender o tratamento de núcleos e integrações.
-
-A Guivos não excluirá automaticamente publicações, participantes ou registros materiais sem aviso e regra aplicável.
-
-### 11.2 Compromissos pagos existentes
-
-Downgrade ou cancelamento não elimina:
-
-- obrigação de entrega;
-- responsabilidade por reembolso;
-- disputa;
-- repasse;
-- registro financeiro;
-- comunicação aos participantes.
-
-A política transacional futura governará esses efeitos.
+Compromissos pagos existentes, responsabilidade por entrega, reembolso/disputa, repasse e registros financeiros sobrevivem ao downgrade/cancelamento conforme política transacional aplicável.
 
 ## 12. Downgrade de Organizações
 
-A Organização deverá selecionar:
-
-- unidades mantidas;
-- administradores mantidos;
-- publicações ativas preservadas;
-- integrações a encerrar;
-- dados a exportar;
-- Coletivos relacionados que permanecerão administráveis.
-
-Dados agregados e históricos não serão apagados automaticamente apenas para forçar manutenção do plano.
+A Organização deve selecionar unidades, administradores, publicações, Coletivos relacionados e integrações que permanecerão no estado futuro, além de poder exportar dados aplicáveis. Históricos/agregados não são apagados para forçar retenção.
 
 ## 13. Cancelamento
 
-O cancelamento deverá:
+O cancelamento deve estar disponível na mesma área de contratação, não exigir contato humano quando a contratação foi autônoma salvo obrigação legítima, informar data efetiva/plano posterior, interromper renovação futura, preservar direitos/exportação, registrar a solicitação e não reativar sem autorização.
 
-- estar disponível na mesma área de contratação;
-- não exigir contato humano quando a contratação foi autônoma, salvo obrigação legítima;
-- apresentar data efetiva;
-- interromper renovação futura;
-- confirmar o plano posterior;
-- preservar exportação e direitos;
-- registrar a solicitação;
-- oferecer comprovante;
-- não reativar sem autorização.
-
-Ofertas de retenção poderão existir somente quando:
-
-- forem opcionais;
-- não impedirem o cancelamento;
-- não utilizarem culpa, medo ou ameaça;
-- não ocultarem a ação principal de cancelar.
+Ofertas de retenção são opcionais e não podem dificultar o cancelamento.
 
 ## 14. Falha de pagamento
 
-Falha de pagamento deverá afetar primeiro capacidades pagas.
-
-Antes de qualquer redução, deverão existir:
-
-- comunicação clara;
-- possibilidade de correção do meio de pagamento;
-- período de tratamento definido futuramente;
-- preservação de dados e direitos;
-- retorno ao plano gratuito quando aplicável;
-- proteção de compromissos transacionais já assumidos.
-
-Falha de pagamento não autoriza exposição pública, perda de dados próprios ou interrupção de segurança.
+Falha afeta primeiro capacidades pagas. Antes de qualquer redução devem existir comunicação clara, possibilidade de correção, preservação de dados/direitos e retorno ao gratuito quando aplicável. Período de tratamento permanece parâmetro futuro.
 
 ## 15. Acesso financiado
 
-Quando financiamento terminar:
+No término do financiamento, o beneficiário é informado, o financiador perde acessos relacionados, a continuidade gratuita é preservada quando aplicável e qualquer continuidade paga é opcional. Financiamento não transfere autoridade sobre dados ou decisões individuais.
 
-- o beneficiário será informado;
-- o financiador perderá acessos relacionados ao programa;
-- a continuidade gratuita será preservada;
-- upgrade individual será opcional;
-- dados e direitos permanecerão com o beneficiário;
-- a condição de vulnerabilidade ou vínculo não será exposta.
+## 16. Guivos Business
 
-## 16. Práticas proibidas
+A taxonomia `Start · Growth · Scale · Enterprise` do Guivos Business é conceitual nesta baseline.
 
-- desfocar oportunidade pública para ocultar sua existência;
-- ocultar alternativa gratuita;
-- criar urgência artificial;
-- usar contagem regressiva sem evento real;
-- reduzir alcance de publicação existente após atingir cota;
-- ameaçar perda de dados;
-- usar inferência emocional para conversão;
-- prometer emprego, impacto, saúde, prosperidade ou evolução;
-- usar plano pago para aumentar relevância orgânica;
-- pré-selecionar plano, anualidade, renovação ou personalização;
-- tornar cancelamento mais difícil que contratação;
-- converter silêncio em consentimento;
-- misturar assinatura, transação, comissão e imposto em preço único sem explicação;
-- afirmar capacidade ilimitada sem contrato e uso justo.
+Esta política não deve:
 
-## 17. Eventos mínimos de medição
+- inferir preço de Business a partir dos preços de Organização;
+- mapear automaticamente Conecta→Start, Eleva→Growth ou Transforma→Scale/Enterprise;
+- apresentar Business Enterprise como equivalente a Organização Transforma;
+- criar checkout ou entitlement Business sem autoridade comercial própria.
 
-A validação poderá medir, sem usar dados incompatíveis com a finalidade:
+Quando uma futura solução Business exigir proposta, dimensionamento, contrato ou análise específica, ela poderá utilizar conceitualmente a mesma categoria de **contratação assistida**, mas isso não cria nova transição UXA-100 nesta frente.
 
-- visualização da oferta;
-- motivo funcional da oferta;
-- alternativa gratuita escolhida;
-- comparação aberta;
-- início e abandono da contratação;
-- contratação concluída;
-- uso real das capacidades pagas;
-- downgrade;
-- cancelamento;
-- reclamação;
-- contestação;
-- falha de pagamento;
-- retorno ao gratuito;
-- fim de acesso financiado.
+## 17. Práticas proibidas
 
-Métrica de conversão não substitui satisfação, utilidade, segurança ou retenção.
+São proibidos: ocultar oportunidade pública ou alternativa gratuita, urgência artificial, contagem regressiva sem evento real, reduzir alcance após limite, ameaçar perda de dados, usar inferência emocional, prometer emprego/impacto/saúde/prosperidade/evolução, comprar relevância orgânica, pré-selecionar plano/anualidade/renovação, dificultar cancelamento, converter silêncio em consentimento, misturar assinatura/transação/comissão/imposto sem explicação ou afirmar capacidade ilimitada sem dimensionamento.
 
-## 18. Limites
+## 18. Eventos mínimos de medição
 
-Esta política não define:
+Podem ser medidos, sob finalidade compatível: visualização da oferta, motivo funcional, alternativa gratuita escolhida, comparação, início/abandono/conclusão da contratação, uso real de capacidades, downgrade, cancelamento, reclamação, contestação, falha de pagamento, retorno ao gratuito e fim de acesso financiado.
 
-- interface final;
-- textos jurídicos;
-- gateway;
-- proration;
-- reembolso monetário;
-- período de graça;
-- recuperação de inadimplência;
-- tributação;
-- comissão transacional;
-- retenção final de dados;
-- implementação de entitlement;
-- teste em produção.
+Conversão não substitui satisfação, utilidade, segurança ou retenção.
+
+## 19. Limites
+
+Esta política não define interface final, texto jurídico, gateway, pró-rata, reembolso monetário, período de graça, recuperação de inadimplência, tributação, comissão transacional, retenção final de dados, entitlement técnico, teste em produção ou parâmetros comerciais de Guivos Business.
