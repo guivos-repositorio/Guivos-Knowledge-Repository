@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img" aria-labelledby="title desc">
   <title id="title">Wireframe reformulado da Visão Geral da Organização</title>
-  <desc id="desc">Estrutura para computador com autoridade representada, momento institucional, responsabilidade principal, jornadas e compromissos, capacidade, movimentos institucionais, avanço, relações e decisões justificadas.</desc>
+  <desc id="desc">Estrutura para computador com autoridade representada, momento institucional, responsabilidade principal, jornadas e compromissos, capacidade, movimentos institucionais, avanço, relações, decisões justificadas e navegação explícita para Planos sem confundir Organização com Guivos Business.</desc>
   <rect width="1440" height="1120" fill="#ffffff"/>
   <rect x="0" y="0" width="250" height="1120" fill="#f3f3f3" stroke="#999999"/>
-  <text x="28" y="46" font-family="Arial, sans-serif" font-size="21" font-weight="700">Guivos Business</text>
+  <text x="28" y="46" font-family="Arial, sans-serif" font-size="21" font-weight="700">Organização</text>
   <text x="28" y="76" font-family="Arial, sans-serif" font-size="12">Instituto Horizonte · Unidade Central</text>
   <text x="28" y="97" font-family="Arial, sans-serif" font-size="10">Administrador institucional</text>
   <text x="28" y="116" font-family="Arial, sans-serif" font-size="10">Pode revisar, atribuir e pausar nesta unidade</text>
@@ -16,7 +16,8 @@
     <text x="28" y="336">Resultados e Evidências</text>
     <text x="28" y="376">Equipe, Papéis e Autoridades</text>
     <text x="28" y="416">Organização e Unidades</text>
-    <text x="28" y="456">Privacidade e Conformidade</text>
+    <text x="28" y="456" font-weight="700">Planos e cobrança</text>
+    <text x="28" y="496">Privacidade e Conformidade</text>
   </g>
   <text x="28" y="1042" font-family="Arial, sans-serif" font-size="11">Ajuda, correção e contestação</text>
   <text x="28" y="1070" font-family="Arial, sans-serif" font-size="11">Alternar contexto de atuação</text>
