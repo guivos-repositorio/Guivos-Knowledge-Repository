@@ -2,7 +2,7 @@
 id: GEM-010-COST-AND-CAPACITY-MODEL-001
 title: Modelo de Custos e Capacidade
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -13,6 +13,7 @@ related:
   - GEM-F1-M0-M6-COST-BASELINE-001
   - GEM-F1B-M0-M6-COST-CALIBRATION-001
   - GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
+  - GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001
   - GEM-009-COST-AND-UNIT-ECONOMICS-001
 ---
 
@@ -51,31 +52,43 @@ A calibração financeira deverá distinguir, no mínimo:
 
 ## Baseline M0–M6
 
-A aplicação governada deste modelo possui três camadas complementares:
+A aplicação governada deste modelo possui quatro camadas complementares:
 
 1. [Baseline de Custos M0–M6 — F1](gem-f1-m0-m6-cost-baseline.md): pools, drivers, ativação e evidência;
 2. [Calibração Numérica M0–M6 — F1-B](gem-f1b-m0-m6-cost-calibration.md): benchmarks públicos rastreáveis sem promoção a orçamento;
-3. [Baseline de Capacidade, Papéis e Headcount M0–M6 — F2](gem-f2-m0-m6-capacity-and-headcount-baseline.md): cobertura funcional, role-equivalents e gates de capacidade.
+3. [Baseline de Capacidade, Papéis e Headcount M0–M6 — F2](gem-f2-m0-m6-capacity-and-headcount-baseline.md): cobertura funcional, role-equivalents e gates de capacidade;
+4. [Modelo de Entrega e Custo de Pessoas M0–M6 — F2-B](gem-f2b-m0-m6-people-delivery-and-cost-model.md): modos de entrega, benchmarks de remuneração e regras para converter capacidade em custo somente após regime, dedicação e evidência.
 
 F2 estabelece como piso funcional de referência os três role-equivalents dedicados explicitamente suportados pelo GTM — Growth/GTM, comercial institucional/B2B e ecossistema/parcerias — além de coberturas compartilhadas, especialistas fracionários e capacidades condicionais.
 
 Esse piso **não equivale a três empregados** e não define HC total, vínculo ou custo.
 
-## Relação F2 → F1-C05
+## Relação F2/F2-B → F1-C05
 
-O pool `F1-C05 — equipe e serviços profissionais` passa a estar **parcialmente parametrizado em capacidade**, mas permanece monetariamente `TBD`.
+O pool `F1-C05 — equipe e serviços profissionais` passa a estar **parcialmente calibrado em capacidade e benchmarks**, mas permanece sem amount mensal completo.
 
-Para converter capacidade em custo serão necessários, em incremento posterior:
+F2-B define:
 
-- delivery mode por papel;
+- modos de entrega admissíveis para founder/internal, CLT, shared internal, contractor/PJ, especialista fracionário e partner-enabled;
+- benchmark 2026 para Growth/GTM em Belo Horizonte;
+- benchmark comercial B2B nacional;
+- proxy explicitamente limitado para ecossistema/parcerias;
+- benchmark auxiliar de CRM/CX para eventual reforço dedicado de suporte/CS;
+- componentes trabalhistas oficiais mínimos que não constituem, isoladamente, custo CLT completo;
+- regras de rateio e prevenção de dupla contagem.
+
+Ainda são necessários para converter F1-C05 em custo completo:
+
+- owner/cobertura efetiva por papel;
 - sobreposição admissível;
 - quantidade efetiva de pessoas/prestadores;
-- regime/vínculo candidato;
-- remuneração/preço de serviço;
-- encargos, benefícios e impostos aplicáveis;
+- regime/vínculo escolhido;
+- dedicação/rateio por período;
+- remuneração, fee ou cotação;
+- encargos, benefícios, variável e impostos aplicáveis;
 - competência mensal.
 
-Até lá, não existe burn completo de pessoas.
+Benchmark salarial não é orçamento, salário aprovado ou custo total do empregador. Até que essas lacunas sejam resolvidas, não existe burn completo de pessoas.
 
 ## Gates de capacidade
 
@@ -90,7 +103,8 @@ Esta versão não aprova:
 - valores completos de custo;
 - orçamento;
 - HC interno total;
-- salários ou regimes de contratação;
+- salários, propostas de remuneração ou regimes de contratação;
+- pró-labore, comissão, bônus ou benefícios;
 - fornecedor, vendor, tier ou região tecnológica;
 - Product Engineering;
 - rateios definitivos;
