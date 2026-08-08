@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-COLLECTIVE-001
 title: Detalhamento Obrigatório das Superfícies do Coletivo
 status: active
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -17,6 +17,9 @@ related:
   - UXA-087
   - UXA-088
   - UXA-089
+  - UXA-100
+  - UXA-100-A2
+  - UXA-100-A3
 normative: false
 ---
 
@@ -26,7 +29,7 @@ normative: false
 
 Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obrigatórios por identificador. Ele não altera a contagem de entradas.
 
-A UXA-088 materializou `GKR-SURF-COL-003` em sete estados desktop e a UXA-089 reformulou seis deles e validou funcionalmente toda a família.
+A UXA-100-A3 adiciona quatro superfícies canônicas de Planos ao Coletivo sem alterar a maturidade de `COL-004` a `COL-008`.
 
 ## 2. Campos por identificador
 
@@ -40,15 +43,24 @@ A UXA-088 materializou `GKR-SURF-COL-003` em sete estados desktop e a UXA-089 re
 | GKR-SURF-COL-006 | UXA-059 | indeterminado | governança interna | indeterminado por atividade | resultados e próximas decisões | conteúdos dispersos | autoridade contextual esperada | indeterminado | nenhuma identificada | não examinado | matriz operacional integrada | não iniciado pela UXA-089 |
 | GKR-SURF-COL-007 | UXA-058 | indeterminado | evento protegido | avaliar evento dentro de competência limitada | decisão ou encaminhamento | evidências mínimas, relato, estado e encaminhamento | autoridade protegida; finalidade limitada | contestar, corrigir ou encaminhar conforme contrato | nenhuma identificada | não examinado | fluxo protegido completo | não iniciado pela UXA-089 |
 | GKR-SURF-COL-008 | ausente; autoridade UXA-019 | indeterminado | proposta institucional | avaliar, negociar, aceitar ou recusar proposta | negociação e decisão bilateral | finalidade, compromissos, recursos, limites e dados previstos | autoridade do responsável e aprovação bilateral | recusar, ajustar, pausar ou encerrar conforme contrato | nenhuma identificada | ausente | relação Organização–Coletivo | não iniciado pela UXA-089 |
+| GKR-SURF-COL-301 | UXA-100/A1/A2/A3 — `uxa-100-collective-plans-screen-desktop.svg`; `uxa-100-collective-plan-incremental-benefits-comparison.svg`; board UXA-100 | 0.1.0 canônico | acesso voluntário à área de plano ou limite legítimo | compreender Livre/Gestão/Impacto/Enterprise, uso e delta; manter ou escolher mudança | TRN-411, TRN-413 ou TRN-416 | plano atual, ciclo, atividades/oportunidades, publicações ativas, admins, unidades, preços e benefícios incrementais | representação válida; alternativas gratuitas/operacionais preservadas; nenhuma publicação existente perde visibilidade | permanecer, aguardar ciclo, manter rascunho, encerrar/agendar quando aplicável | materialização candidata promovida por UXA-100-A3 | **validada como superfície; transições internas locais** | entrada a partir de outras áreas administrativas ainda não possui transição canônica específica | comparação incremental e estado de limite pertencem à mesma família |
+| GKR-SURF-COL-302 | UXA-100/A2/A3 — board `uxa-100-collective-plans-payments-flow-board.svg` | 0.1.0 canônico | TRN-411 | revisar contratação Gestão/Impacto e confirmar ou voltar | TRN-412 ou retorno a COL-301 | plano alvo, preço, periodicidade, recorrência, pagador autorizado, beneficiário, início e método em simulação | autoridade financeira/representação válidas; nenhuma pré-seleção | voltar/revisar sem contratar | estado do board promovido por UXA-100-A3 | **validada localmente no pacote** | gateway, tributação, comissão e proration fora do escopo | assinatura permanece separada de transação/publicação paga |
+| GKR-SURF-COL-303 | UXA-100/A2/A3 — board `uxa-100-collective-plans-payments-flow-board.svg` | 0.1.0 canônico | TRN-413 | revisar downgrade/cancelamento, tratar excedentes e confirmar | TRN-414 ou retorno a COL-301 | publicações gratuitas/pagas, admins, núcleos/unidades, compromissos, exportação, plano futuro e data efetiva | responsável autorizado; compromissos assumidos não desaparecem; dados não são apagados silenciosamente | manter plano; ajustar escolhas; exportar; voltar | estado do board promovido por UXA-100-A3 | **validada localmente no pacote** | política transacional futura e efeitos financeiros entre ciclos | downgrade só efetiva após tratamento das capacidades excedentes aplicáveis |
+| GKR-SURF-COL-304 | UXA-100/A2/A3 — board `uxa-100-collective-plans-payments-flow-board.svg` | 0.1.0 canônico | TRN-412 ou TRN-414 | compreender resultado, recuperar falha ou retornar | TRN-415; tentar novamente quando aplicável | plano resultante/anterior, capacidade, confirmação/recibo, publicações preservadas e estado de falha | confirmação real para ativar; falha preserva estado anterior e dados | nova tentativa consciente; retorno a Planos | estados de resultado promovidos por UXA-100-A3 | **validada localmente no pacote** | execução financeira e entitlement não implementados | sucesso e falha compartilham família sem compartilhar consequência |
 
 ## 3. Regras preservadas
 
 - valores sem evidência permanecem `indeterminado`, `ausente` ou `não examinado`;
 - validação de `COL-003` não autoriza completar `COL-004` a `COL-008` por analogia;
-- efeitos validados em ambas as perspectivas não equivalem a validação do handoff como conjunto;
 - autoridade é verificada por escopo concedido e não por autodeclaração;
-- autoridade insuficiente impede a decisão e não concede dados adicionais.
+- autoridade insuficiente impede a decisão e não concede dados adicionais;
+- atingir limite do plano não reduz visibilidade de publicação existente;
+- Enterprise segue para `BND-002`, não para checkout autônomo.
 
-## 4. Estado
+## 4. Efeito da UXA-100-A3
 
-O detalhamento está `active` 0.6.0. `COL-002` e `COL-003` estão validadas no escopo de suas superfícies. A continuidade bilateral e a Jornada do Coletivo continuam incompletas.
+A UXA-100-A3 adiciona `COL-301` a `COL-304` e promove os três SVGs de Planos do Coletivo ao conjunto canônico. `COL-004` a `COL-008` permanecem com suas maturidades anteriores.
+
+## 5. Estado
+
+O detalhamento está `active` 0.7.0. As superfícies de Planos estão validadas no escopo documental, enquanto a Jornada do Coletivo continua incompleta e `draft`.
