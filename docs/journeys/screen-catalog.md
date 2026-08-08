@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-005
   - UXA-070
@@ -73,11 +73,11 @@ A UXA-101 reformula o SVG de Detalhe de Oportunidade para incluir a revisão con
 | Coletivo | referência inicial | 1 | validado | parcial | continuidade com gestão |
 | Coletivo | Visão Geral do Responsável | 1 | validado | TRN-112 integralmente validada | gestão especializada |
 | Coletivo | gestão de solicitações | 7 | 7 validados | handoffs aplicáveis integralmente validados | operação interna posterior |
-| Coletivo | Planos, comparação e cobrança | **3** | **3 validados** | TRN-411 a 415 locais; TRN-416 parcial | processo Enterprise e cobrança real |
+| Coletivo | Planos, comparação e cobrança | **3** | **3 validados** | TRN-411 a 415 locais; TRN-416 parcial | contratação/dimensionamento assistido e cobrança real |
 | Organização | visão geral e cadastro | 2 | 2 validados | publicação–descoberta integralmente validada em TRN-203 | matriz institucional completa |
-| Organização | Planos, comparação e cobrança | **3** | **3 validados** | TRN-421 a 425 locais; TRN-426 parcial | processo Scale e cobrança real |
+| Organização | Planos, comparação e cobrança | **3** | **3 validados** | TRN-421 a 425 locais; TRN-426 parcial | contratação/dimensionamento assistido e cobrança real |
 | camada comercial | Opportunity Boost | 46 | **46 validados** | parcial | TRN-304/305/306 e integrações específicas |
-| fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; Enterprise/Scale |
+| fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; contratação/dimensionamento assistido |
 | **Total canônico** |  | **118** | **118 validados; 0 pendentes** |  |  |
 
 ## 3. Instrumentos granulares vigentes
@@ -86,7 +86,7 @@ A UXA-101 reformula o SVG de Detalhe de Oportunidade para incluir a revisão con
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **53** | `active` 0.17.0 |
 | transições documentais | **54** | `active` 0.18.0 |
-| catálogo canônico | **118 SVGs** | `active` 0.26.0 |
+| catálogo canônico | **118 SVGs** | `active` 0.27.0 |
 | matriz de rastreabilidade | **118 SVGs / 31 perfis** | `active` 0.17.0 |
 | galeria visual | **118 SVGs** | `active` 0.21.0 |
 
@@ -122,12 +122,15 @@ A UXA-101 reformula o SVG de Detalhe de Oportunidade para incluir a revisão con
 - `PER-108` sintetiza contexto interno e não replica canais especializados;
 - comparação incremental de Planos não é tela adicional;
 - processamento financeiro transitório não é tela própria;
-- Enterprise/Scale terminam em `BND-002`, não checkout;
+- `BND-002` representa contratação/dimensionamento assistido quando aplicável e não é plano Enterprise ou Scale;
+- Coletivo usa `Livre · Mobiliza · Impacta · Rede`;
+- Organização usa `Conecta · Eleva · Transforma`;
+- Guivos Business usa `Start · Growth · Scale · Enterprise` como Produto Especializado separado;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem continuidades separadas.
 
 ## 7. Estado do catálogo
 
-- catálogo: `active` 0.26.0;
+- catálogo: `active` 0.27.0;
 - galeria principal: `active` 0.21.0; 118 SVGs;
 - matriz por SVG: `active` 0.17.0; 118 associações / 31 perfis;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
