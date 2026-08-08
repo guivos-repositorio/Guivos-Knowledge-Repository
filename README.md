@@ -1,106 +1,97 @@
 # Guivos Knowledge Repository (GKR)
 
-O Guivos Knowledge Repository é a fonte oficial, versionada e governada do conhecimento da Guivos. Ele reúne fundamentos, arquiteturas, modelos, decisões, especificações e o histórico de evolução do ecossistema.
+O Guivos Knowledge Repository é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
 ## Estado vigente
 
 A autoridade transversal é o [Registro do Estado Atual](docs/project/current-state-register.md).
 
-| Elemento | Estado resumido |
+| Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | `GKR-STATE-001` **2.28.0** |
+| GKR-STATE-001 | **2.29.0** |
 | Era | GE-2 — Knowledge |
-| Marco funcional | **M7.88** — saída consciente para fronteira externa validada |
-| Última frente funcional | UXA-101 |
-| Sincronização temática | validações recentes integradas em 2026-08-08 |
-| Galeria visual | `active` 0.21.0; 118 SVGs |
-| Matriz por SVG | `active` 0.17.0; 118 SVGs / 31 perfis |
-| Validações funcionais vigentes | **118** |
-| Pendentes de validação específica de SVG | **0** |
-| Superfícies/estados/fronteiras | **53** |
-| Transições documentais | **54** |
-| IDs com referência visual | **42 de 53** |
-| Responsabilidades sem SVG dedicado | 9 |
-| Fronteiras sem tela | 2 |
+| marco funcional | **M7.88** |
+| última UXA | **UXA-101** |
+| próxima UXA | **UXA-102/V5 não iniciada** |
+| SVGs | **118** |
+| associações | **118** |
+| perfis | **31** |
+| superfícies/estados/fronteiras | **53** |
+| transições | **54** |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Resultados Empresariais canônicos | 0 |
-| Próxima UXA | **UXA-102/V5 não iniciada** |
+| programa P0–P9 | consolidado documentalmente após integração de P9 |
 
-A UXA-101 continua sendo o último marco funcional: `TRN-205` é validada até `BND-001` e qualquer resultado posterior permanece sob autoridade externa.
+A consolidação P9 não cria novo marco funcional nem inicia implementação.
 
-A sincronização temática de 2026-08-08 integrou nomenclaturas, Neo4j como arquitetura de referência de grafo, rebaseline dos sete Produtos Especializados, governança de marca/naming/ativos digitais, gates de evidência da validação de mercado, propósito antes de incentivos, arquitetura institucional/jurídica e P6 de verdade operacional/privacidade.
+## Public Canon
 
-O P7 de internacionalização permanece em proposta governada: Portugal é o primeiro mercado internacional de referência, Lisboa a base inicial candidata e Porto uma expansão posterior condicionada. Nenhuma operação internacional é presumida.
+O documento institucional público vigente é o [GOG-001 — Guia Oficial da Guivos 5.0.0](docs/public/guia-oficial-da-guivos.md).
 
-## Atualização consolidada
+A edição 5.0.0 foi reconciliada com as autoridades atuais de participantes, planos, sete Produtos Especializados, grafo/Neo4j, incentivos, arquitetura institucional, privacidade e internacionalização.
 
-- [Sincronização das Validações Recentes — 2026-08-08](docs/project/validated-updates-synchronization-2026-08-08.md)
-- [Baseline Governada de Ressincronização — 2026-08-08](docs/project/repository-resynchronization-baseline-2026-08-08.md)
-- [Guivos Go-to-Market, Growth & Capital](docs/go-to-market/index.md)
-- [ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo](docs/adr/ADR-007-neo4j-primary-graph-reference.md)
-- [Produtos Especializados — Política de Representação e Handoffs](docs/product-architecture/specialized-products-experience-and-handoff-policy.md)
-- [Marca, Naming e Ativos Digitais](docs/governance-framework/brand-and-digital-assets-index.md)
+## Autoridades recentes
+
+- [Consolidação Global e Public Canon — P9](docs/project/p9-global-consolidation-and-public-canon-2026-08-08.md)
+- [Matriz de Consolidação Canônica 3.0.0](docs/project/canonical-consolidation-matrix.md)
+- [Go-to-Market, Growth & Capital](docs/go-to-market/index.md)
+- [GTM-007 — Internacionalização e Programa Territorial](docs/go-to-market/gtm-007-internationalization-and-territorial-governance.md)
+- [GTM-008 — Portugal: Gates de Prontidão, Piloto e Escala](docs/go-to-market/gtm-008-portugal-pilot-readiness-gates.md)
 - [Arquitetura Institucional, Fundação Guivos e Jurídico](docs/governance-framework/institutional-and-legal-architecture-index.md)
 - [Verdade Operacional, Privacidade e Superfícies Legais](docs/governance-framework/operational-privacy-and-legal-truth-index.md)
-- [Governança de Internacionalização e Programa Territorial](docs/go-to-market/gtm-007-internationalization-and-territorial-governance.md)
-- [Portugal — Gates de Prontidão, Piloto e Escala](docs/go-to-market/gtm-008-portugal-pilot-readiness-gates.md)
-- [Prontidão Operacional Internacional e Cross-Border](docs/governance-framework/international-operations-and-cross-border-readiness.md)
-- [VAL-009 — Estado de Execução e Gates de Evidência](docs/research/market-validation/VAL-009-status-de-execucao-e-gates-de-evidencia.md)
+- [ADR-007 — Neo4j como Tecnologia Primária de Referência](docs/adr/ADR-007-neo4j-primary-graph-reference.md)
+- [Produtos Especializados — Política de Handoffs](docs/product-architecture/specialized-products-experience-and-handoff-policy.md)
 - [GEM-005-A1 — Propósito Antes do Incentivo](docs/economic-model/gem-005-a1-purpose-before-incentive-guardrail.md)
 
-## Navegação essencial
+## Separações canônicas
 
-- [Registro do Estado Atual](docs/project/current-state-register.md)
-- [Índice UXA-047 a UXA-101](docs/experience-architecture/uxa-047-101-index.md)
-- [Arquitetura da Experiência](docs/experience-architecture/index.md)
-- [Arquitetura de Produtos](docs/product-architecture/index.md)
-- [Jornadas Integradas](docs/journeys/index.md)
-- [Galeria Visual Integrada](docs/journeys/screen-gallery.md)
-- [Registro Granular de Transições](docs/journeys/transition-registry.md)
-- [Guivos Economic Model](docs/economic-model/index.md)
-- [Validação de Mercado](docs/research/market-validation/README.md)
-- [Go-to-Market, Growth & Capital](docs/go-to-market/index.md)
-- [Roadmap Arquitetural](docs/roadmap.md)
-- [Índice de changelogs](docs/project/changelog-index.md)
+```text
+Pessoa · Coletivo · Organização = participantes
+Journey · Mall · Travel · Business · Media · Intelligence · Ads = Produtos Especializados
+Organização ≠ Guivos Business
+Guivos Mall = nome canônico
+Neo4j = tecnologia de referência ≠ produção
+Fundação Guivos = conceito ≠ entidade constituída
+Portugal = T1_candidate ≠ mercado ativo
+aceite contratual ≠ consentimento LGPD ≠ preferência
+```
 
-## Regras de autoridade
+## Planos
 
-- `GKR-STATE-001` prevalece sobre resumos e superfícies derivadas.
-- A autoridade temática específica e mais recente prevalece dentro de seu domínio.
-- Materialização, validação, promoção e implementação são estados distintos.
-- Arquitetura de referência não é implantação.
-- Publicação ou ativação não equivale a distribuição garantida.
-- Relação comercial e plano pago não alteram relevância funcional.
-- Oportunidade pública não é ocultada para vender plano.
-- Fronteira externa não é tela da Guivos e validação até a fronteira não valida o sistema de terceiro.
-- `BND-002` representa contratação/dimensionamento assistido quando o autoatendimento não for suficiente; não é plano Enterprise, Scale ou checkout autônomo.
-- Organização e Guivos Business são objetos distintos; Organização usa Conecta · Eleva · Transforma, enquanto Guivos Business possui Start · Growth · Scale · Enterprise.
-- Parceria Estratégica é relação corporativa da Guivos enquanto empresa; não é Organização, oportunidade ou quarto participante.
-- Pontos, créditos ou recompensas não podem substituir evolução, valor legítimo ou autonomia como objetivo da experiência.
-- Acesso internacional, domínio territorial, marca protegida ou usuário estrangeiro não tornam um país mercado ativo.
-- Piloto autorizado não equivale a piloto executado; piloto executado não equivale a escala aprovada.
-- Estado canônico vigente prevalece sobre estado visual ou nomenclatura obsoleta.
-- Nenhum pacote posterior, UXA ou etapa de Engenharia de Produto começa automaticamente.
-- Alterações permanentes exigem branch, validação, pull request e decisão governada.
+- Pessoa: Free · Plus · Pro;
+- Coletivo: Livre · Mobiliza · Impacta · Rede;
+- Organização: Conecta · Eleva · Transforma;
+- Guivos Business: Start · Growth · Scale · Enterprise.
+
+Plano não representa mérito, prestígio ou nível de evolução.
 
 ## Limites atuais
 
-Não estão autorizados por esta sincronização:
+Não estão autorizados ou comprovados apenas pela consolidação documental:
 
 - UXA-102/V5;
 - retomada da Engenharia de Produto;
-- implementação/produção Neo4j;
-- GraphRAG/GDS/Power BI tratados como implementados sem evidência;
-- programa operacional de pontos ou créditos;
-- resultado de mercado sem base reproduzível;
-- registro marcário, domínio ou proteção territorial sem evidência;
-- Fundação Guivos ou estrutura jurídica presumida;
-- Termos, Política de Privacidade, consentimentos ou controles LGPD presumidos;
-- internacionalização operacional automática;
-- entidade/filial portuguesa, equipe local, IVA/OSS, PSP europeu ou piloto em Lisboa presumidos;
+- implementação/produção Neo4j, GraphRAG ou GDS;
+- PMF ou resultados de pesquisa sem base reproduzível;
+- programa operacional de pontos/créditos;
+- registro marcário/domínio sem evidência;
+- Fundação Guivos juridicamente constituída;
+- controles de privacidade/Termos presumidos como operacionais;
+- piloto ou mercado ativo em Portugal;
 - Porto ou segundo país europeu sem novo gate;
-- cobrança real, gateway ou processo de terceiro após `BND-001`.
+- cobrança real/gateway;
+- resultados de terceiros após `BND-001`.
 
-## Validação
+## Navegação
 
-Os controles oficiais incluem front matter, identificadores, links, navegação, whitespace, construção MkDocs em modo estrito, árvore rastreada limpa, sincronização semântica das superfícies globais e auditoria de nomenclaturas legadas conhecidas.
+- [Home documental](docs/index.md)
+- [Estado Atual](docs/project/current-state-register.md)
+- [Roadmap](docs/roadmap.md)
+- [Guia Oficial](docs/public/guia-oficial-da-guivos.md)
+- [Arquitetura de Produtos](docs/product-architecture/index.md)
+- [Arquitetura da Experiência](docs/experience-architecture/index.md)
+- [Jornadas](docs/journeys/index.md)
+- [Modelo Econômico](docs/economic-model/index.md)
+- [Validação de Mercado](docs/research/market-validation/README.md)
+- [Changelogs](docs/project/changelog-index.md)
+
+Alterações permanentes exigem branch, validação, pull request e decisão governada.
