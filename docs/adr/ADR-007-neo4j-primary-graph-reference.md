@@ -7,7 +7,7 @@ owner: Guivos
 supersedes: null
 related:
   - GEA-000
-  - GPA-005
+  - GPA-006
   - ADR-003
   - ADR-005
   - GKR-RESYNCHRONIZATION-BASELINE-2026-08-08-001
