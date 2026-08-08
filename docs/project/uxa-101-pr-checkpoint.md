@@ -37,7 +37,8 @@ A UXA-101 cobre exclusivamente o fechamento de V4 no limite de autoridade da Gui
 5. confirmação afirmativa e revalidação de destino;
 6. cancelamento e retorno seguros;
 7. `TRN-205` validada até `BND-001`;
-8. `BND-001` confirmada como fronteira externa sem tela Guivos.
+8. `BND-001` confirmada como fronteira externa sem tela Guivos;
+9. Jornada da Organização corrigida para refletir o mesmo estado canônico de `TRN-205`.
 
 ## 3. Estado proposto após eventual integração governada
 
@@ -47,6 +48,7 @@ A UXA-101 cobre exclusivamente o fechamento de V4 no limite de autoridade da Gui
 - UXA-000: **0.94.0**;
 - Jornadas Integradas: **0.31.0**;
 - Jornada da Pessoa: `draft` **0.15.0**;
+- Jornada da Organização: `draft` **0.8.0**;
 - catálogo: **0.26.0**;
 - galeria: **0.21.0**;
 - matriz por SVG: **0.17.0**;
