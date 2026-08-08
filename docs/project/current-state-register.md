@@ -43,9 +43,9 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global proposto quando o incremento correspondente estiver integrado ao ramo principal. Enquanto a PR #200 permanecer fora da `main`, a autoridade vigente da `main` continua no commit integrado anterior. Em caso de divergência após integração, este registro prevalece sobre resumos não normativos.
+Este registro declara o estado global vigente da `main` após a integração governada da UXA-100. Em caso de divergência, este registro prevalece sobre resumos não normativos.
 
-## 2. Estado global proposto pela UXA-100-A3
+## 2. Estado global vigente após UXA-100-A3
 
 | Elemento | Estado | Referência |
 |---|---|---|
@@ -155,7 +155,7 @@ Comparação incremental permanece em `*-301`; processamento financeiro permanec
 
 A frente de Planos foi autorizada separadamente e não cancela V4/V5.
 
-## 10. Estado documental proposto
+## 10. Estado documental vigente
 
 | Camada | Estado |
 |---|---|
@@ -191,4 +191,4 @@ A frente de Planos foi autorizada separadamente e não cancela V4/V5.
 
 ## 12. Próxima transição autorizável
 
-Com a identidade canônica de Planos encerrada pela UXA-100-A3, qualquer próximo ato — integração da PR, cobrança real, processo Enterprise/Scale, V4 ou outra frente — exige autorização humana separada. **UXA-101 não foi iniciada.**
+Com a identidade canônica de Planos encerrada pela UXA-100-A3, qualquer próximo ato — cobrança real, processo Enterprise/Scale, V4 ou outra frente — exige autorização humana separada. **UXA-101 não foi iniciada.**
