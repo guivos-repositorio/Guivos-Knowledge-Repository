@@ -2,14 +2,16 @@
 id: GLPA-001
 title: Guivos Layered Product Architecture
 status: approved
-version: 1.1.1
+version: 1.2.0
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-08-08
 related:
   - GPA-000
   - PAS-001
   - AR-001
   - DR-001
+  - GPA-SPECIALIZED-JOURNEY-MATRIX-001
+  - GPA-SPECIALIZED-EXPERIENCE-POLICY-001
 ---
 
 # GLPA-001 — Guivos Layered Product Architecture
@@ -228,27 +230,7 @@ A Platform Layer não representa produto público independente. Ela sustenta os 
 
 ## 10. Organização pública
 
-Para comunicação institucional, a Guivos apresenta:
-
-### Experiência
-
-- Guivos Journey.
-
-### Inteligência
-
-- Guivos Intelligence.
-
-### Soluções especializadas
-
-- Guivos Business;
-- Guivos Mall;
-- Guivos Travel;
-- Guivos Media;
-- Guivos Ads.
-
-### Base comum
-
-- Platform Layer, apresentada apenas quando necessário para explicar a sustentação do ecossistema.
+Para comunicação institucional, a Guivos apresenta Journey como Experiência, Intelligence como Inteligência, Business/Mall/Travel/Media/Ads como Soluções especializadas e Platform Layer apenas quando necessário para explicar a sustentação do ecossistema.
 
 ## 11. Relação com o PAS-001
 
@@ -260,19 +242,27 @@ O Contexto Vivo pertence ao PAS como responsabilidade experiencial de representa
 
 ## 12. Ponto de aplicação
 
-A GLPA orienta:
+A GLPA orienta `PAS-001 — Guivos Journey`, especificações de Mall, Business, Travel, Media, Intelligence e Ads, arquitetura funcional da plataforma, decisões de UX, contratos entre produtos, limites de responsabilidade e roadmap técnico futuro.
 
-- `PAS-001 — Guivos Journey`;
-- especificações futuras de Mall, Business, Travel, Media, Intelligence e Ads;
-- arquitetura funcional da plataforma;
-- organização de times;
-- decisões de UX;
-- contratos entre produtos;
-- limites de responsabilidade;
-- roadmap técnico futuro.
+## 13. Operacionalização da integração com jornadas
 
-## 13. Estado
+A GLPA passa a possuir dois instrumentos complementares de aplicação:
+
+- [Matriz de Integração dos Produtos com as Jornadas](specialized-products-journey-integration-matrix.md) — mapeia responsabilidade de produto para superfícies, transições, participantes e gaps vigentes;
+- [Política de Representação e Handoffs entre Produtos](specialized-products-experience-and-handoff-policy.md) — define quando um produto deve ser perceptível e quando uma mudança de responsabilidade exige handoff explícito.
+
+Regras operacionais:
+
+1. uso interno de outro produto não cria automaticamente nova tela;
+2. mudança material de responsabilidade pode exigir identificação contextual ou handoff;
+3. Journey → Mall e Journey → Travel são handoffs internos quando a autoridade permanece na Guivos;
+4. `BND-001` é reservado à passagem para autoridade externa;
+5. Intelligence é transversal e não deve gerar transição navegacional apenas por ser consumida;
+6. Ads deve manter natureza patrocinada identificável e separada da relevância orgânica;
+7. novos `SURF`, `TRN` ou SVGs dependem de frente específica de Arquitetura da Experiência.
+
+## 14. Estado
 
 Esta arquitetura permanece aprovada como referência da fase de Product Engineering.
 
-A versão 1.1.1 endurece a sintaxe Mermaid para compatibilidade entre renderizadores, sem alterar as responsabilidades ou decisões arquiteturais da versão 1.1.0.
+A versão 1.2.0 preserva as camadas da 1.1.1 e acrescenta a operacionalização governada da integração entre produtos e jornadas. Nenhum novo produto, superfície, transição, wireframe ou decisão técnica de implementação é criado por esta revisão.
