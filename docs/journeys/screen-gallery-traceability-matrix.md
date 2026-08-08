@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
 title: Matriz de Rastreabilidade Visual por SVG
 status: active
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 parent: GKR-JOURNEY-SCREEN-GALLERY-001
@@ -26,6 +26,7 @@ depends_on:
   - UXA-099
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
@@ -44,9 +45,9 @@ Esta matriz atribui individualmente um perfil de rastreabilidade a cada um dos *
 
 ## 2. Estado do instrumento
 
-A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar novo ativo ou perfil. O conjunto permanece em **118 associações** e **31 perfis**. O perfil R08 passa a incluir explicitamente o estado de revisão consciente antes de `BND-001`.
+A UXA-100-A4 mantém **118 associações** e **31 perfis**. Quatro SVGs existentes são reformulados in-place para explicitar origem/retorno de Planos em Coletivo e Organização; `PER-009` não cria perfil porque permanece responsabilidade sem SVG.
 
-A reconciliação de nomenclatura de 2026-08-08 preserva os mesmos perfis e associações, corrigindo apenas a leitura de `BND-002`: trata-se de fronteira genérica de contratação/dimensionamento assistido, não de processo exclusivo de Enterprise ou Scale.
+A reconciliação preserva a leitura de `BND-002` como fronteira genérica de contratação/dimensionamento assistido e a separação `Organização ≠ Guivos Business`.
 
 ## 3. Perfis de rastreabilidade
 
@@ -55,12 +56,12 @@ A reconciliação de nomenclatura de 2026-08-08 preserva os mesmos perfis e asso
 | R01 | PER-001 | entrada pública | TRN-001 | permanecer/retornar | continuidade pública → protegida | UXA-021 |
 | R02 | PER-002/003/005 | TRN-001 | TRN-002 a 005 | voltar/trocar/editar/recusar | integração inicial | UXA-035 |
 | R03 | PER-004 | TRN-003 | TRN-004 | trocar/editar/descartar | expressão → inventário | UXA-069 |
-| R04 | PER-006/007 | TRN-005/006 | **TRN-007** | revisar/recusar/retornar | handoffs pessoais anteriores | **UXA-037; decisão corrente e TRN-007 UXA-097** |
-| R05 | PER-008 | **TRN-007** | continuidade recorrente | revisar/navegar/retornar | estados alternativos de Hoje | **UXA-010 recorrente; primeira entrada e TRN-007 UXA-097** |
+| R04 | PER-006/007 | TRN-005/006 | TRN-007 | revisar/recusar/retornar | handoffs pessoais anteriores | UXA-037; decisão corrente e TRN-007 UXA-097 |
+| R05 | PER-008 | TRN-007 | continuidade recorrente | revisar/navegar/retornar | estados alternativos de Hoje | UXA-010 recorrente; primeira entrada e TRN-007 UXA-097 |
 | R06 | PER-201 | TRN-203/304 | TRN-204/210 | voltar/alternar | integração patrocinada parcial | UXA-025/027/031/033; TRN-203/204/210 UXA-098 |
 | R07 | PER-202 | TRN-210/306 | TRN-211 | retornar ao mapa | integração patrocinada parcial | UXA-029; TRN-210/211 UXA-098 |
-| R08 | PER-203 | TRN-204/211 | **TRN-205 → BND-001** | voltar ao detalhe; bloquear saída inválida; retorno externo sem presumir resultado | processo externo posterior à fronteira | **UXA-012; entradas UXA-098; reformulação, revisão consciente e TRN-205 UXA-101** |
-| R09 | ORG-001 | entrada institucional | TRN-201 | cancelar/retornar | matriz institucional | UXA-017 |
+| R08 | PER-203 | TRN-204/211 | TRN-205 → BND-001 | voltar ao detalhe; bloquear saída inválida; retorno externo sem presumir resultado | processo externo posterior à fronteira | UXA-012; entradas UXA-098; reformulação, revisão consciente e TRN-205 UXA-101 |
+| R09 | ORG-001 | entrada institucional | TRN-201 ou **TRN-427** | cancelar/retornar; **TRN-428 retorna de Planos** | matriz institucional | UXA-017; **navegação de Planos UXA-100-A4** |
 | R10 | ORG-002/003 | TRN-201 | TRN-202/203 | editar/retirar/pausar | ligações institucionais restantes | UXA-013; TRN-203 UXA-098 |
 | R11 | COL-001 | busca ou entrada responsável | TRN-103 | retornar/sair | presença pública → gestão | UXA-018/063 |
 | R12 | PER-101/102 | exploração | TRN-101/102 | limpar/voltar/refazer | descoberta → perfil | UXA-061 |
@@ -74,15 +75,15 @@ A reconciliação de nomenclatura de 2026-08-08 preserva os mesmos perfis e asso
 | R20 | COM-004 | TRN-301 | TRN-302/305 | pausar/revisar/encerrar | estados residuais | UXA-047 |
 | R21 | COM-004 | campanha | retorno à gestão | reconciliar/revisar | atribuição | UXA-049 |
 | R22 | COM-004 | TRN-301 | TRN-302/305 | pausar/revisar/encerrar | integração com resíduos | UXA-054 |
-| R23 | COM-005 | TRN-305 | conforme estado | retornar/revisar/desfazer/tentar novamente | TRN-305 ponta a ponta permanece parcial | **UXA-099** |
-| R24 | COL-002 | representação válida | TRN-112 | permanecer/retornar | fechada | UXA-087; TRN-112 UXA-090 |
+| R23 | COM-005 | TRN-305 | conforme estado | retornar/revisar/desfazer/tentar novamente | TRN-305 ponta a ponta permanece parcial | UXA-099 |
+| R24 | COL-002 | representação válida | **TRN-112 ou TRN-417** | permanecer/retornar; **TRN-418 retorna de Planos** | demais destinos internos | UXA-087; TRN-112 UXA-090; **TRN-417/418 UXA-100-A4** |
 | R25 | COL-003 | TRN-105/107/112 | TRN-106/108/109 | voltar/aguardar/interromper | handoffs fechados nos gates | UXA-089/090/092 |
 | R26 | PER-106 | TRN-108 ou acesso recorrente | TRN-110 | trocar categoria/voltar | P0B separado | UXA-092; gatilho revalidado UXA-094 |
 | R27 | PER-107 | TRN-110 ou atualização autorizada | PER-105/PER-106; TRN-111 | retornar/ajustar preferência | P0B separado | UXA-094; versão corrente UXA-096; TRN-111 UXA-096 |
 | R28 | PER-108 | TRN-111 | áreas internas próprias do Coletivo | voltar à Central; pausar/sair conforme fluxo próprio | estados P0B/P1 e áreas internas | UXA-096; TRN-111 UXA-096 |
-| R29 | PER-301/302/303/304 | acesso voluntário ou limite contextual legítimo | TRN-401 a 405 | manter plano, voltar, tentar novamente, preservar Free | gateway/proration e entradas externas específicas não materializados | **UXA-100-A2; promoção UXA-100-A3** |
-| R30 | COL-301/302/303/304 | área administrativa ou limite legítimo | TRN-411 a 416 | manter plano, aguardar, ajustar excedentes, retornar | contratação/dimensionamento assistido após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
-| R31 | ORG-301/302/303/304 | área administrativa ou capacidade legítima | TRN-421 a 426 | manter plano, ajustar capacidade, retornar | contratação/dimensionamento assistido após BND-002 e cobrança real | **UXA-100-A2; promoção UXA-100-A3** |
+| R29 | PER-301/302/303/304 | **PER-009 via TRN-406** ou limite contextual legítimo | TRN-401 a 405; **TRN-407 para Conta** | manter plano, voltar, tentar novamente, preservar Free | **PER-009 sem materialização**; gateway/proration | UXA-100-A2/A3; **origem/retorno contratados UXA-100-A4** |
+| R30 | COL-301/302/303/304 | **COL-002 via TRN-417** ou limite legítimo | TRN-411 a 416; **TRN-418 para Visão Geral** | manter plano, aguardar, ajustar excedentes, retornar | contratação/dimensionamento após BND-002 e cobrança real | UXA-100-A2/A3; **TRN-417/418 integrais UXA-100-A4** |
+| R31 | ORG-301/302/303/304 | **ORG-001 via TRN-427** ou capacidade legítima | TRN-421 a 426; **TRN-428 para Visão Geral** | manter plano, ajustar capacidade, retornar | contratação/dimensionamento após BND-002 e cobrança real | UXA-100-A2/A3; **TRN-427/428 integrais UXA-100-A4** |
 
 ## 4. Associação individual dos 118 SVGs
 
@@ -214,12 +215,13 @@ A reconciliação de nomenclatura de 2026-08-08 preserva os mesmos perfis e asso
 - perfis documentais: **31**;
 - com validação funcional vigente: **118**;
 - pendentes de validação específica: **0**;
-- SVGs reformulados pela UXA-101: **1**, sem aumento do inventário;
+- SVGs reformulados pela UXA-100-A4: **4**, sem aumento do inventário;
+- `PER-009` não recebe perfil porque não possui SVG dedicado;
 - `BND-001` e `BND-002` permanecem sem SVG por definição de fronteira;
 - validação visual não atribui à Guivos comportamento posterior às fronteiras.
 
-## 6. Estado após reconciliação
+## 6. Estado após UXA-100-A4
 
-O perfil R08 está revalidado para o mesmo SVG canônico do Detalhe, agora com o estado de revisão consciente de saída. `TRN-205` é validada até `BND-001`; o processo externo posterior permanece fora do escopo.
+R24, R29, R30 e R31 passam a explicitar as origens/retornos de Planos. `TRN-417/418` e `TRN-427/428` são integralmente validadas como navegação administrativa sem efeito comercial; `TRN-406/407` permanecem contratadas até materialização de `PER-009`.
 
-R30 e R31 preservam suas transições e maturidade. A lacuna posterior a `BND-002` é descrita genericamente como contratação/dimensionamento assistido, sem reatribuir Enterprise/Scale a Coletivo ou Organização. Pessoa, Coletivo e Organização continuam `draft`.
+As transições internas de contratação/ciclo preservam a maturidade anterior, e `TRN-416/426` continuam parciais após `BND-002`. Pessoa, Coletivo e Organização continuam `draft`; V5/UXA-102 não é iniciada.
