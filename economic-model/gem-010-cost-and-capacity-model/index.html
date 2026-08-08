@@ -8929,10 +8929,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#relacao-f2f2-b-f1-c05" class="md-nav__link">
+  <a href="#relacao-f2f2-bf2-c-f1-c05" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Relação F2/F2-B → F1-C05
+        Relação F2/F2-B/F2-C → F1-C05
       
     </span>
   </a>
@@ -8997,7 +8997,7 @@
 </ul>
 <h2 id="relacao-com-capacidade">Relação com capacidade<a class="headerlink" href="#relacao-com-capacidade" title="Permanent link">&para;</a></h2>
 <p>Custos em degrau deverão explicitar o gatilho de capacidade. Ganhos de escala não serão presumidos quando suporte, risco, qualidade ou infraestrutura crescem de forma diferente do volume.</p>
-<p>Capacidade funcional, role-equivalent, headcount, contratação e custo são dimensões distintas. Uma obrigação de cobertura não comprova vínculo, gasto ou disponibilidade operacional.</p>
+<p>Capacidade funcional, role-equivalent, headcount, assignment, dedicação, contratação e custo são dimensões distintas. Uma obrigação de cobertura não comprova vínculo, gasto ou disponibilidade operacional.</p>
 <h2 id="rateio">Rateio<a class="headerlink" href="#rateio" title="Permanent link">&para;</a></h2>
 <p>Custos compartilhados exigem driver causal ou justificativa gerencial, versão e reconciliação. Rateio não altera o custo total consolidado nem transfere ownership funcional.</p>
 <h2 id="estados-de-evidencia-de-valor">Estados de evidência de valor<a class="headerlink" href="#estados-de-evidencia-de-valor" title="Permanent link">&para;</a></h2>
@@ -9012,17 +9012,18 @@
 </ul>
 <p><code>TBD</code> não equivale a zero. Valor zero exige evidência explícita de ausência de custo, obrigação ou desembolso aplicável.</p>
 <h2 id="baseline-m0m6">Baseline M0–M6<a class="headerlink" href="#baseline-m0m6" title="Permanent link">&para;</a></h2>
-<p>A aplicação governada deste modelo possui quatro camadas complementares:</p>
+<p>A aplicação governada deste modelo possui cinco camadas complementares:</p>
 <ol>
 <li><a href="../gem-f1-m0-m6-cost-baseline/">Baseline de Custos M0–M6 — F1</a>: pools, drivers, ativação e evidência;</li>
 <li><a href="../gem-f1b-m0-m6-cost-calibration/">Calibração Numérica M0–M6 — F1-B</a>: benchmarks públicos rastreáveis sem promoção a orçamento;</li>
 <li><a href="../gem-f2-m0-m6-capacity-and-headcount-baseline/">Baseline de Capacidade, Papéis e Headcount M0–M6 — F2</a>: cobertura funcional, role-equivalents e gates de capacidade;</li>
-<li><a href="../gem-f2b-m0-m6-people-delivery-and-cost-model/">Modelo de Entrega e Custo de Pessoas M0–M6 — F2-B</a>: modos de entrega, benchmarks de remuneração e regras para converter capacidade em custo somente após regime, dedicação e evidência.</li>
+<li><a href="../gem-f2b-m0-m6-people-delivery-and-cost-model/">Modelo de Entrega e Custo de Pessoas M0–M6 — F2-B</a>: modos de entrega, benchmarks de remuneração e regras para converter capacidade em custo somente após regime, dedicação e evidência;</li>
+<li><a href="../gem-f2c-m0-m6-assignment-and-dedication-model/">Matriz de Assignment e Dedicação M0–M6 — F2-C</a>: owner scopes, sobreposições, bandas candidatas de dedicação e guardrails contra dupla contagem de capacidade.</li>
 </ol>
 <p>F2 estabelece como piso funcional de referência os três role-equivalents dedicados explicitamente suportados pelo GTM — Growth/GTM, comercial institucional/B2B e ecossistema/parcerias — além de coberturas compartilhadas, especialistas fracionários e capacidades condicionais.</p>
 <p>Esse piso <strong>não equivale a três empregados</strong> e não define HC total, vínculo ou custo.</p>
-<h2 id="relacao-f2f2-b-f1-c05">Relação F2/F2-B → F1-C05<a class="headerlink" href="#relacao-f2f2-b-f1-c05" title="Permanent link">&para;</a></h2>
-<p>O pool <code>F1-C05 — equipe e serviços profissionais</code> passa a estar <strong>parcialmente calibrado em capacidade e benchmarks</strong>, mas permanece sem amount mensal completo.</p>
+<h2 id="relacao-f2f2-bf2-c-f1-c05">Relação F2/F2-B/F2-C → F1-C05<a class="headerlink" href="#relacao-f2f2-bf2-c-f1-c05" title="Permanent link">&para;</a></h2>
+<p>O pool <code>F1-C05 — equipe e serviços profissionais</code> está <strong>parcialmente parametrizado em capacidade, benchmarks e assignment</strong>, mas permanece sem amount mensal completo.</p>
 <p>F2-B define:</p>
 <ul>
 <li>modos de entrega admissíveis para founder/internal, CLT, shared internal, contractor/PJ, especialista fracionário e partner-enabled;</li>
@@ -9033,20 +9034,30 @@
 <li>componentes trabalhistas oficiais mínimos que não constituem, isoladamente, custo CLT completo;</li>
 <li>regras de rateio e prevenção de dupla contagem.</li>
 </ul>
+<p>F2-C define:</p>
+<ul>
+<li>owner scopes para as 18 capacidades;</li>
+<li>owner primário de R01, R02 e R03;</li>
+<li>regra contra contabilizar a mesma capacidade física como dois RE dedicados integrais;</li>
+<li>piso central candidato de 65% por RE dedicado;</li>
+<li>teto candidato de carga planejada de 85%, preservando 15% de folga;</li>
+<li>teto suave candidato de 20% para uma capacidade secundária isolada;</li>
+<li>envelope de até 0.60 RE-equivalent de carga secundária agregada dentro dos três RE, sem convertê-lo em headcount.</li>
+</ul>
 <p>Ainda são necessários para converter F1-C05 em custo completo:</p>
 <ul>
-<li>owner/cobertura efetiva por papel;</li>
-<li>sobreposição admissível;</li>
+<li>resource assignment real/candidato por período;</li>
+<li>delivery mode escolhido por assignment;</li>
+<li>fração mensal exata dentro das bandas ou exceção documentada;</li>
 <li>quantidade efetiva de pessoas/prestadores;</li>
-<li>regime/vínculo escolhido;</li>
-<li>dedicação/rateio por período;</li>
 <li>remuneração, fee ou cotação;</li>
 <li>encargos, benefícios, variável e impostos aplicáveis;</li>
 <li>competência mensal.</li>
 </ul>
-<p>Benchmark salarial não é orçamento, salário aprovado ou custo total do empregador. Até que essas lacunas sejam resolvidas, não existe burn completo de pessoas.</p>
+<p>Benchmark salarial não é orçamento, salário aprovado ou custo total do empregador. Banda de dedicação não é folha, headcount ou disponibilidade comprovada. Até que essas lacunas sejam resolvidas, não existe burn completo de pessoas.</p>
 <h2 id="gates-de-capacidade">Gates de capacidade<a class="headerlink" href="#gates-de-capacidade" title="Permanent link">&para;</a></h2>
 <p>A passagem para lançamento não poderá ocorrer apenas pelo calendário. Coberturas essenciais deverão possuir owner identificável e capacidade suficiente para não operar em estado <code>constrained</code>, <code>saturated</code>, <code>degraded</code> ou <code>unavailable</code>.</p>
+<p>F2-C acrescenta um gate preventivo de planejamento: soma de alocações acima de 0.85 para o mesmo recurso consome a folga e exige revisão; soma acima de 1.00 é overallocated e invalida o plano. Esses valores são candidatos de planejamento, não thresholds operacionais comprovados.</p>
 <p>Sinais como backlog crescente, tempo de resposta degradado, ausência de owner, falhas de moderação, sobrecarga de segurança ou concentração crítica deverão acionar revisão de capacidade antes de aumento de volume.</p>
 <h2 id="limites-desta-versao">Limites desta versão<a class="headerlink" href="#limites-desta-versao" title="Permanent link">&para;</a></h2>
 <p>Esta versão não aprova:</p>
@@ -9054,6 +9065,7 @@
 <li>valores completos de custo;</li>
 <li>orçamento;</li>
 <li>HC interno total;</li>
+<li>assignment nominal de pessoas;</li>
 <li>salários, propostas de remuneração ou regimes de contratação;</li>
 <li>pró-labore, comissão, bônus ou benefícios;</li>
 <li>fornecedor, vendor, tier ou região tecnológica;</li>
