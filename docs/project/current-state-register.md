@@ -57,7 +57,7 @@ Este registro declara o estado global proposto após a UXA-101 e só se torna vi
 | Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-101 |
 | Galeria visual | `active` 0.21.0; **118 SVGs** | UXA-101 |
 | Matriz por SVG | `active` 0.17.0; **118 arquivos / 31 perfis** | UXA-101 |
-| Jornadas Integradas | Pessoa, Coletivo e Organização permanecem `draft` | UXA-101 |
+| Jornadas Integradas | `active` 0.31.0; Pessoa, Coletivo e Organização permanecem `draft` | UXA-101 |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
 ## 3. Cobertura visual
@@ -147,6 +147,7 @@ ORG-003
 | Camada | Estado |
 |---|---|
 | Arquitetura da Experiência | `active` 0.94.0 |
+| Jornadas Integradas | `active` 0.31.0 |
 | Jornada da Pessoa | `draft` 0.15.0 |
 | Jornada do Coletivo | `draft` 0.15.0 |
 | Jornada da Organização | `draft` 0.7.0 |
@@ -155,7 +156,7 @@ ORG-003
 | galeria de Planos | `active` 0.3.0 |
 | matriz por SVG | `active` 0.17.0 |
 | lacunas | `active` 0.26.0 |
-| registro de superfícies | `active` 0.16.0 |
+| registro de superfícies | `active` 0.17.0 |
 | registro de transições | `active` 0.18.0 |
 | detalhamento comercial/fronteira | `active` 0.5.0 |
 | protótipo, aplicação, motor e testes | não iniciados |
