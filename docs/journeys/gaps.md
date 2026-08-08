@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.25.0
+version: 0.26.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -21,6 +21,7 @@ related:
   - UXA-100
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -32,7 +33,7 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. A UXA-100-A3 promove canonicamente a frente de Planos depois da validação funcional da UXA-100-A2, mas preserva como lacunas separadas cobrança real, processo comercial Enterprise/Scale, entradas contextuais sem origem canônica própria e as continuidades anteriores ainda não fechadas.
+Este documento é observacional e não promocional. A UXA-101 encerra V4 somente no limite documental controlável pela Guivos; comportamento e resultado posteriores a `BND-001` continuam fora da autoridade da plataforma.
 
 ## 2. Gates pessoais
 
@@ -48,11 +49,11 @@ Este documento é observacional e não promocional. A UXA-100-A3 promove canonic
 
 | Continuidade | IDs relacionados | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
-| publicação/ativação → descoberta | ORG-003; TRN-203; PER-201 | materializados | **TRN-203 integralmente validada por UXA-098** | efeito externo e integração patrocinada separados |
+| publicação/ativação → descoberta | ORG-003; TRN-203; PER-201 | materializados | **integralmente validada por UXA-098** | integração patrocinada separada |
 | Mapa → Lista | PER-201; TRN-210; PER-202 | materializados | **integralmente validada** | nenhuma nesta ligação |
-| Mapa → Detalhe | PER-201; TRN-204; PER-203 | materializados | **integralmente validada** | TRN-205 externo separado |
-| Lista → Detalhe | PER-202; TRN-211; PER-203 | materializados | **integralmente validada** | TRN-205 externo separado |
-| Detalhe → efeito externo | PER-203; TRN-205; BND-001 | detalhe materializado; fronteira sem tela | parcial | contrato e validação específicos |
+| Mapa → Detalhe | PER-201; TRN-204; PER-203 | materializados | **integralmente validada** | saída externa agora governada por UXA-101 |
+| Lista → Detalhe | PER-202; TRN-211; PER-203 | materializados | **integralmente validada** | saída externa agora governada por UXA-101 |
+| Detalhe → fronteira externa | PER-203; TRN-205; BND-001 | Detalhe reformulado; fronteira sem tela | **integralmente validada até a fronteira Guivos por UXA-101** | processo e resultado posteriores pertencem ao terceiro |
 | patrocinado → Mapa/Lista orgânicos | COM-002; TRN-304/306; PER-201/PER-202 | materializados | parcial | integração orgânico–patrocinado específica |
 
 ## 4. Gates do Opportunity Boost
@@ -72,8 +73,6 @@ Este documento é observacional e não promocional. A UXA-100-A3 promove canonic
 | Coletivo | COL-301 a 304; TRN-411 a 416 | 3 SVGs canônicos | superfícies validadas; TRN-411 a 415 locais; TRN-416 parcial | cobrança real e processo Enterprise após BND-002 |
 | Organização | ORG-301 a 304; TRN-421 a 426 | 3 SVGs canônicos | superfícies validadas; TRN-421 a 425 locais; TRN-426 parcial | cobrança real e processo Scale após BND-002 |
 | fronteira comercial | BND-002 | sem tela por definição | parcial | proposta, contrato, dimensionamento e handoffs operacionais posteriores |
-
-A promoção de Planos não autoriza inferir uma transição a partir de `Conta/Configurações`, criação de publicação ou correspondência personalizada quando a origem ainda não possui identidade canônica adequada.
 
 ## 6. Gates de Coletivos
 
@@ -95,7 +94,7 @@ A promoção de Planos não autoriza inferir uma transição a partir de `Conta/
 | 4 | participantes e operação interna | COL-004 a 007; TRN-113 | sem SVGs dedicados | programa, materialização e validação |
 | 5 | relação Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | materialização e validação bilateral |
 | 6 | matriz institucional completa | ORG-001; ORG-007 | cobertura parcial | programa específico e validação |
-| 7 | processo comercial Enterprise/Scale | BND-002; TRN-416/426 | fronteira registrada | materializar somente após contrato comercial/operacional suficiente |
+| 7 | processo comercial Enterprise/Scale | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
 
 ## 8. Fila de validação
 
@@ -105,34 +104,31 @@ A promoção de Planos não autoriza inferir uma transição a partir de `Conta/
 | V2 — encerrado | publicação → descoberta e Mapa/Lista/Detalhe | TRN-203/204/210/211 integrais | UXA-098 |
 | V3 — encerrado | dez estados residuais Opportunity Boost | 10 SVGs validados | UXA-099 |
 | Planos — identidade encerrada | fragmentação e promoção canônica | 12 superfícies + 17 transições registradas | UXA-100-A3 |
-| V4 | efeito externo de oportunidades | TRN-205 parcial | contrato e validação específicos |
-| V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada |
+| **V4 — encerrado** | Detalhe → fronteira externa | **TRN-205 integral até BND-001** | **UXA-101** |
+| V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada; **não iniciada** |
 
-## 9. Efeito da UXA-100-A3
+## 9. Efeito da UXA-101
 
-- SVGs canônicos: **109 → 118**;
-- associações: **109 → 118**;
-- perfis: **28 → 31**;
-- validações funcionais vigentes: **109 → 118**;
-- pendências específicas: **0**;
-- superfícies/estados/fronteiras: **40 → 53**;
-- transições: **37 → 54**;
-- IDs com referência visual: **30 → 42**;
-- fronteiras sem tela: **1 → 2**;
-- jornadas principais permanecem `draft`;
+- SVGs canônicos permanecem **118**;
+- associações permanecem **118**;
+- perfis permanecem **31**;
+- `uxa-007-opportunity-detail-mobile.svg` é reformulado e revalidado sem criar novo ativo;
+- superfícies/estados/fronteiras permanecem **53**;
+- transições permanecem **54**;
+- `BND-001` continua sem tela por definição;
+- `TRN-205` passa de parcial para validada até a fronteira de autoridade Guivos;
 - nenhuma implementação técnica é criada.
 
 ## 10. Critérios preservados
 
 - validação de superfície não equivale a validação automática de transição;
-- validação local não equivale a cobrança ponta a ponta;
+- validação até uma fronteira não valida comportamento de terceiro;
 - oportunidade pública não é ocultada para vender plano;
 - plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;
-- assinatura permanece separada de transação, comissão, taxa e tributo;
 - Enterprise/Scale não recebem checkout fictício;
 - repetição da mesma intenção não duplica efeito lógico;
 - validação documental não equivale a implementação técnica.
 
 ## 11. Próximo ato possível
 
-A identidade canônica da frente de Planos está encerrada pela UXA-100-A3. Permanecem como frentes separadas a cobrança real, o processo após `BND-002`, entradas contextuais adicionais e a fila global previamente existente. Nenhuma próxima frente é iniciada automaticamente.
+V4 está encerrada. V5, integrações patrocinadas, cobrança real, processo posterior a `BND-002` e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
