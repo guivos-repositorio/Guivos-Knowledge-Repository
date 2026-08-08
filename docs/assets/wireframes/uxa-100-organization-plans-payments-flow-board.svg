@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1620" viewBox="0 0 1440 1620" role="img" aria-labelledby="title desc">
+  <title id="title">Organização — planos, capacidade, cobrança e pagamentos</title>
+  <desc id="desc">Placa estrutural de baixa fidelidade para computador com Business Start, capacidade e alternativas, comparação Start Growth Scale, revisão de contratação Growth, sucesso, falha, downgrade cancelamento e Scale por proposta comercial.</desc>
+  <rect width="1440" height="1620" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Organização · Plano, cobrança e pagamento</text>
+    <text x="48" y="86" font-size="14">Placa candidata de fluxo · baixa fidelidade · preços de referência candidatos · sem operação comercial real</text>
+    <text x="48" y="112" font-size="13">Regra: capacidade contratada é separada de relevância, confiança, evidência de impacto e prioridade das oportunidades.</text>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="48" y="150" width="640" height="350" rx="12"/>
+    <rect x="752" y="150" width="640" height="350" rx="12"/>
+    <rect x="48" y="560" width="1344" height="350" rx="12"/>
+    <rect x="48" y="970" width="640" height="300" rx="12"/>
+    <rect x="752" y="970" width="640" height="300" rx="12"/>
+    <rect x="48" y="1330" width="640" height="210" rx="12"/>
+    <rect x="752" y="1330" width="640" height="210" rx="12"/>
+
+    <rect x="76" y="204" width="584" height="74" rx="8"/>
+    <rect x="76" y="300" width="276" height="118" rx="8"/>
+    <rect x="376" y="300" width="284" height="118" rx="8"/>
+    <rect x="76" y="440" width="178" height="38" rx="7"/>
+    <rect x="272" y="440" width="178" height="38" rx="7"/>
+
+    <rect x="780" y="204" width="584" height="152" rx="8"/>
+    <rect x="780" y="378" width="178" height="46" rx="7"/>
+    <rect x="976" y="378" width="178" height="46" rx="7"/>
+    <rect x="1172" y="378" width="192" height="46" rx="7"/>
+
+    <rect x="120" y="624" width="360" height="218" rx="8"/>
+    <rect x="540" y="624" width="360" height="218" rx="8"/>
+    <rect x="960" y="624" width="360" height="218" rx="8"/>
+    <rect x="598" y="852" width="244" height="38" rx="7"/>
+    <rect x="1018" y="852" width="244" height="38" rx="7"/>
+
+    <rect x="76" y="1024" width="584" height="160" rx="8"/>
+    <rect x="76" y="1204" width="584" height="44" rx="7"/>
+    <rect x="780" y="1024" width="276" height="160" rx="8"/>
+    <rect x="1080" y="1024" width="284" height="160" rx="8"/>
+    <rect x="780" y="1204" width="178" height="44" rx="7"/>
+    <rect x="1172" y="1204" width="192" height="44" rx="7"/>
+
+    <rect x="76" y="1382" width="584" height="104" rx="8"/>
+    <rect x="780" y="1382" width="584" height="104" rx="8"/>
+
+    <path d="M688 325 H752"/>
+    <path d="M1072 500 V534 H720 V560"/>
+    <path d="M720 910 V944 H368 V970"/>
+    <path d="M720 910 V944 H1072 V970"/>
+    <path d="M368 1270 V1304 H368 V1330"/>
+    <path d="M1072 1270 V1304 H1072 V1330"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="76" y="184" font-size="18" font-weight="700">1 · Plano e cobrança · Business Start</text>
+    <text x="98" y="232" font-size="16" font-weight="700">Instituto Horizonte · Business Start</text>
+    <text x="98" y="258" font-size="12">Preço candidato: R$ 299/mês · R$ 2.990/ano</text>
+    <text x="98" y="330" font-size="13">Novas oportunidades/programas</text>
+    <text x="98" y="362" font-size="24" font-weight="700">8 / 10</text>
+    <text x="98" y="394" font-size="12">consumo do ciclo atual</text>
+    <text x="398" y="330" font-size="13">Publicações ativas</text>
+    <text x="398" y="362" font-size="24" font-weight="700">12 / 15</text>
+    <text x="398" y="394" font-size="12">3 admins · 1 unidade · até 2 Coletivos</text>
+    <text x="112" y="465" font-size="12">Ver uso e limites</text>
+    <text x="312" y="465" font-size="12">Comparar planos</text>
+
+    <text x="780" y="184" font-size="18" font-weight="700">2 · Capacidade alcançada</text>
+    <text x="802" y="232" font-size="15" font-weight="700">O limite do plano deve ser explicado antes de oferecer upgrade.</text>
+    <text x="802" y="262" font-size="13">Exibir unidade do limite, consumo atual e período de renovação.</text>
+    <text x="802" y="290" font-size="13">Alternativas: arquivar, agendar, manter rascunho ou aguardar.</text>
+    <text x="802" y="318" font-size="13">Upgrade amplia capacidade; não altera ranking ou prioridade orgânica.</text>
+    <text x="814" y="406" font-size="12">Manter rascunho</text>
+    <text x="1008" y="406" font-size="12">Agendar depois</text>
+    <text x="1214" y="406" font-size="12">Ver Growth</text>
+    <text x="780" y="472" font-size="11">Nenhuma publicação existente perde visibilidade para pressionar conversão.</text>
+
+    <text x="76" y="602" font-size="18" font-weight="700">3 · Comparação voluntária</text>
+    <text x="144" y="654" font-size="14" font-weight="700">BUSINESS START</text>
+    <text x="144" y="684" font-size="13">R$ 299/mês · R$ 2.990/ano</text>
+    <text x="144" y="712" font-size="12">10 novas/mês · 15 ativas</text>
+    <text x="144" y="738" font-size="12">3 admins · 1 unidade</text>
+    <text x="144" y="764" font-size="12">até 2 Coletivos · dashboard básico</text>
+    <text x="564" y="654" font-size="14" font-weight="700">BUSINESS GROWTH</text>
+    <text x="564" y="684" font-size="13">R$ 799/mês · R$ 7.990/ano</text>
+    <text x="564" y="712" font-size="12">50 novas/mês · 75 ativas</text>
+    <text x="564" y="738" font-size="12">10 admins · até 5 unidades</text>
+    <text x="564" y="764" font-size="12">até 10 Coletivos · analytics ampliado</text>
+    <text x="984" y="654" font-size="14" font-weight="700">BUSINESS SCALE</text>
+    <text x="984" y="684" font-size="13">a partir de R$ 1.990/mês</text>
+    <text x="984" y="712" font-size="12">contrato anual · capacidade contratada</text>
+    <text x="984" y="738" font-size="12">múltiplas unidades · API · SSO</text>
+    <text x="984" y="764" font-size="12">Power BI dedicado · SLA</text>
+    <text x="632" y="877" font-size="12">Escolher Growth</text>
+    <text x="1052" y="877" font-size="12">Solicitar proposta</text>
+
+    <text x="76" y="1004" font-size="18" font-weight="700">4 · Revisar contratação · Growth</text>
+    <text x="98" y="1060" font-size="14" font-weight="700">Business Growth · mensal · preço candidato R$ 799,00</text>
+    <text x="98" y="1088" font-size="13">Pagador: Organização / autoridade financeira identificada</text>
+    <text x="98" y="1116" font-size="13">Beneficiário: Instituto Horizonte e escopo institucional contratado</text>
+    <text x="98" y="1144" font-size="13">Recorrência mensal · data de início exibida · método autorizado em simulação</text>
+    <text x="98" y="1172" font-size="11">Pagamento não concede acesso à jornada pessoal das Pessoas nem amplia consentimento.</text>
+    <text x="264" y="1232" font-size="13">Confirmar contratação</text>
+
+    <text x="780" y="1004" font-size="18" font-weight="700">5 · Resultado do pagamento</text>
+    <text x="802" y="1058" font-size="14" font-weight="700">CONFIRMADO</text>
+    <text x="802" y="1088" font-size="12">Ativação rastreável do Growth.</text>
+    <text x="802" y="1116" font-size="12">Registro/recibo e data de início disponíveis.</text>
+    <text x="802" y="1144" font-size="12">Capacidade contratada é atualizada.</text>
+    <text x="1102" y="1058" font-size="14" font-weight="700">NÃO CONFIRMADO</text>
+    <text x="1102" y="1088" font-size="12">Sem ativação presumida.</text>
+    <text x="1102" y="1116" font-size="12">Plano anterior permanece identificável.</text>
+    <text x="1102" y="1144" font-size="12">Direitos e dados preservados.</text>
+    <text x="818" y="1232" font-size="12">Ver plano ativo</text>
+    <text x="1206" y="1232" font-size="12">Tentar novamente</text>
+
+    <text x="76" y="1362" font-size="18" font-weight="700">6 · Downgrade ou cancelamento</text>
+    <text x="98" y="1414" font-size="13">Antes de efetivar, selecionar unidades, administradores, publicações e Coletivos relacionados mantidos.</text>
+    <text x="98" y="1442" font-size="13">Identificar integrações a encerrar e dados a exportar; não apagar históricos/agregados para forçar retenção.</text>
+    <text x="98" y="1470" font-size="12">Mostrar data efetiva/plano posterior; sem exclusão silenciosa e sem reativação não autorizada.</text>
+
+    <text x="752" y="1362" font-size="18" font-weight="700">7 · Business Scale</text>
+    <text x="802" y="1414" font-size="14" font-weight="700">Solicitar proposta comercial</text>
+    <text x="802" y="1442" font-size="13">Dimensionar capacidade, unidades, integrações, Power BI, API, SSO e SLA.</text>
+    <text x="802" y="1470" font-size="12">Sem checkout autônomo fictício; escopo e valor dependem de proposta/contrato.</text>
+
+    <text x="48" y="1580" font-size="12">Fluxo candidato. Plano pago amplia capacidade institucional; não compra prioridade orgânica, evidência de impacto ou confiança.</text>
+  </g>
+</svg>

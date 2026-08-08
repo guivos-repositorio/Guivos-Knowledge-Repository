@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1620" viewBox="0 0 1440 1620" role="img" aria-labelledby="title desc">
+  <title id="title">Pessoa — planos, pagamentos e limite do Guivos Free</title>
+  <desc id="desc">Placa estrutural de baixa fidelidade com estados de plano atual Free, correspondência personalizada limitada após cota, comparação Free Plus Pro, revisão da contratação, confirmação, falha e continuidade por cancelamento ou downgrade.</desc>
+  <rect width="1440" height="1620" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Pessoa · Plano, cobrança e pagamento</text>
+    <text x="48" y="86" font-size="14">Placa candidata de fluxo · baixa fidelidade · valores comerciais candidatos · sem checkout real</text>
+    <text x="48" y="112" font-size="13">Regra: oportunidade pública continua no Explorar e no Mapa; o limite recai somente sobre correspondência personalizada adicional.</text>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="48" y="150" width="400" height="390" rx="18"/>
+    <rect x="520" y="150" width="400" height="390" rx="18"/>
+    <rect x="992" y="150" width="400" height="390" rx="18"/>
+    <rect x="48" y="610" width="400" height="390" rx="18"/>
+    <rect x="520" y="610" width="400" height="390" rx="18"/>
+    <rect x="992" y="610" width="400" height="390" rx="18"/>
+    <rect x="284" y="1070" width="400" height="390" rx="18"/>
+    <rect x="756" y="1070" width="400" height="390" rx="18"/>
+
+    <rect x="72" y="198" width="352" height="62" rx="8"/>
+    <rect x="72" y="282" width="352" height="94" rx="8"/>
+    <rect x="72" y="400" width="166" height="42" rx="7"/>
+    <rect x="258" y="400" width="166" height="42" rx="7"/>
+    <rect x="72" y="462" width="352" height="46" rx="7"/>
+
+    <rect x="544" y="198" width="352" height="92" rx="8"/>
+    <rect x="544" y="312" width="352" height="108" rx="8" stroke-dasharray="8 6"/>
+    <rect x="544" y="444" width="104" height="46" rx="7"/>
+    <rect x="662" y="444" width="104" height="46" rx="7"/>
+    <rect x="780" y="444" width="116" height="46" rx="7"/>
+
+    <rect x="1016" y="202" width="104" height="254" rx="8"/>
+    <rect x="1132" y="202" width="116" height="254" rx="8"/>
+    <rect x="1260" y="202" width="108" height="254" rx="8"/>
+    <rect x="1132" y="470" width="116" height="44" rx="7"/>
+
+    <rect x="72" y="666" width="352" height="214" rx="8"/>
+    <rect x="72" y="904" width="352" height="50" rx="7"/>
+    <rect x="544" y="666" width="352" height="164" rx="8"/>
+    <rect x="544" y="854" width="352" height="100" rx="8"/>
+    <rect x="1016" y="666" width="352" height="164" rx="8"/>
+    <rect x="1016" y="854" width="166" height="50" rx="7"/>
+    <rect x="1202" y="854" width="166" height="50" rx="7"/>
+
+    <rect x="308" y="1126" width="352" height="190" rx="8"/>
+    <rect x="308" y="1340" width="166" height="50" rx="7"/>
+    <rect x="494" y="1340" width="166" height="50" rx="7"/>
+    <rect x="780" y="1126" width="352" height="190" rx="8"/>
+    <rect x="780" y="1340" width="166" height="50" rx="7"/>
+    <rect x="966" y="1340" width="166" height="50" rx="7"/>
+
+    <path d="M448 345 H520"/>
+    <path d="M920 345 H992"/>
+    <path d="M1192 540 V582 H248 V610"/>
+    <path d="M448 805 H520"/>
+    <path d="M920 805 H992"/>
+    <path d="M1192 1000 V1036 H484 V1070"/>
+    <path d="M1192 1000 V1036 H956 V1070"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="72" y="184" font-size="17" font-weight="700">1 · Plano e cobrança · Free</text>
+    <text x="92" y="224" font-size="15" font-weight="700">Guivos Free · R$ 0,00</text>
+    <text x="92" y="246" font-size="12">Plano atual · acesso gratuito real preservado</text>
+    <text x="92" y="310" font-size="13">Correspondências completas</text>
+    <text x="92" y="335" font-size="22" font-weight="700">2 / 2 usadas</text>
+    <text x="92" y="358" font-size="12">Período 03–09 ago · renova 10 ago</text>
+    <text x="96" y="426" font-size="12">Explorar públicas</text>
+    <text x="292" y="426" font-size="12">Ver no Mapa</text>
+    <text x="150" y="491" font-size="13">Comparar planos voluntariamente</text>
+
+    <text x="544" y="184" font-size="17" font-weight="700">2 · Correspondência adicional</text>
+    <text x="564" y="224" font-size="13">Categoria · oportunidade profissional</text>
+    <text x="564" y="248" font-size="13">Híbrida · Belo Horizonte · até 14 ago</text>
+    <text x="564" y="272" font-size="13">Natureza: gratuita · existe relação autorizada</text>
+    <text x="564" y="338" font-size="13" font-weight="700">Prévia personalizada limitada</text>
+    <text x="564" y="362" font-size="12">Identidade completa da correspondência · ••••••••</text>
+    <text x="564" y="384" font-size="12">Por que combina com você · •••••••••••••••••</text>
+    <text x="564" y="406" font-size="12">Aderência e comparação · •••••••••••••••••••</text>
+    <text x="562" y="472" font-size="11">Explorar</text>
+    <text x="690" y="472" font-size="11">Mapa</text>
+    <text x="793" y="472" font-size="11">Conhecer Plus</text>
+    <text x="544" y="516" font-size="11">A oportunidade pública não está escondida; apenas a camada personalizada adicional está limitada.</text>
+
+    <text x="1016" y="184" font-size="17" font-weight="700">3 · Comparar planos</text>
+    <text x="1034" y="230" font-size="13" font-weight="700">FREE</text>
+    <text x="1028" y="258" font-size="12">R$ 0</text>
+    <text x="1028" y="286" font-size="11">2 completas/sem</text>
+    <text x="1028" y="312" font-size="11">catálogo público</text>
+    <text x="1028" y="338" font-size="11">histórico essencial</text>
+    <text x="1148" y="230" font-size="13" font-weight="700">PLUS</text>
+    <text x="1145" y="258" font-size="12">R$ 24,90/mês</text>
+    <text x="1145" y="286" font-size="11">R$ 249/ano</text>
+    <text x="1145" y="312" font-size="11">sem cota fixa*</text>
+    <text x="1145" y="338" font-size="11">filtros/alertas</text>
+    <text x="1274" y="230" font-size="13" font-weight="700">PRO</text>
+    <text x="1273" y="258" font-size="12">R$ 49,90/mês</text>
+    <text x="1273" y="286" font-size="11">R$ 499/ano</text>
+    <text x="1273" y="312" font-size="11">análise ampliada</text>
+    <text x="1273" y="338" font-size="11">relatórios</text>
+    <text x="1016" y="482" font-size="11">* sujeito a uso justo. Nenhum plano aumenta relevância.</text>
+    <text x="1154" y="497" font-size="12">Escolher Plus</text>
+
+    <text x="72" y="644" font-size="17" font-weight="700">4 · Revisar contratação</text>
+    <text x="92" y="700" font-size="13" font-weight="700">Guivos Plus · mensal</text>
+    <text x="92" y="728" font-size="13">Preço candidato: R$ 24,90/mês</text>
+    <text x="92" y="756" font-size="13">Recorrência: mensal · renovação recorrente</text>
+    <text x="92" y="784" font-size="13">Pagador: você · beneficiário: sua conta pessoal</text>
+    <text x="92" y="812" font-size="13">Método: autorizado em simulação</text>
+    <text x="92" y="840" font-size="13">Data de início: exibida na revisão antes da confirmação</text>
+    <text x="92" y="868" font-size="11">Cancelamento/downgrade acessíveis; assinatura não amplia consentimento.</text>
+    <text x="155" y="935" font-size="13">Confirmar contratação</text>
+    <text x="72" y="982" font-size="11">Nenhuma opção veio pré-selecionada. Pró-rata não é prometido.</text>
+
+    <text x="544" y="644" font-size="17" font-weight="700">5 · Pagamento confirmado</text>
+    <text x="564" y="704" font-size="18" font-weight="700">Confirmação recebida</text>
+    <text x="564" y="736" font-size="13">Plano: Guivos Plus</text>
+    <text x="564" y="764" font-size="13">Estado: ativação rastreável</text>
+    <text x="564" y="792" font-size="13">Recorrência mensal · data de início registrada</text>
+    <text x="564" y="816" font-size="11">Registro/recibo disponível · nenhuma promessa de resultado.</text>
+    <text x="564" y="884" font-size="13" font-weight="700">O que mudou</text>
+    <text x="564" y="910" font-size="12">Correspondências completas sem cota semanal fixa*</text>
+    <text x="564" y="934" font-size="12">Catálogo público permanece o mesmo.</text>
+    <text x="564" y="976" font-size="11">* sujeito a uso justo.</text>
+
+    <text x="1016" y="644" font-size="17" font-weight="700">6 · Pagamento não confirmado</text>
+    <text x="1036" y="704" font-size="18" font-weight="700">Não foi possível confirmar</text>
+    <text x="1036" y="736" font-size="13">Nenhuma ativação é presumida.</text>
+    <text x="1036" y="764" font-size="13">Guivos Free e direitos essenciais continuam disponíveis.</text>
+    <text x="1036" y="792" font-size="13">Reenvio da mesma intenção não deve duplicar cobrança.</text>
+    <text x="1036" y="816" font-size="11">Prazo de tolerância não é definido nesta simulação.</text>
+    <text x="1058" y="884" font-size="12">Tentar novamente</text>
+    <text x="1228" y="884" font-size="12">Revisar método</text>
+    <text x="1016" y="976" font-size="11">Sem perda do catálogo público e sem pressão por urgência artificial.</text>
+
+    <text x="308" y="1104" font-size="17" font-weight="700">7A · Downgrade</text>
+    <text x="328" y="1164" font-size="14" font-weight="700">Plus → Free</text>
+    <text x="328" y="1194" font-size="13">Mostrar estado atual e futuro.</text>
+    <text x="328" y="1222" font-size="13">Explicar capacidades, histórico/relatórios e integrações afetadas.</text>
+    <text x="328" y="1250" font-size="13">Preservar dados, exportação, direitos e baseline gratuito.</text>
+    <text x="328" y="1278" font-size="11">Data efetiva deve ser informada pela regra vigente; não inventar pró-rata.</text>
+    <text x="342" y="1370" font-size="12">Confirmar mudança</text>
+    <text x="528" y="1370" font-size="12">Manter Plus</text>
+
+    <text x="780" y="1104" font-size="17" font-weight="700">7B · Cancelamento</text>
+    <text x="800" y="1164" font-size="14" font-weight="700">Cancelar renovação</text>
+    <text x="800" y="1194" font-size="13">Ação disponível na mesma área de Plano e cobrança.</text>
+    <text x="800" y="1222" font-size="13">Mostrar data efetiva, plano posterior e consequência antes de confirmar.</text>
+    <text x="800" y="1250" font-size="13">Interromper renovação futura e emitir comprovante da solicitação.</text>
+    <text x="800" y="1278" font-size="11">Sem atendimento humano obrigatório e sem reativação sem autorização.</text>
+    <text x="814" y="1370" font-size="12">Confirmar cancelamento</text>
+    <text x="1000" y="1370" font-size="12">Voltar</text>
+
+    <text x="48" y="1530" font-size="12">Fluxo candidato. Não representa checkout implementado, cobrança autorizada ou oferta pública.</text>
+    <text x="48" y="1554" font-size="12">A correspondência limitada é uma camada personalizada; a oportunidade pública continua pesquisável no Explorar e no Mapa.</text>
+    <text x="48" y="1578" font-size="12">Planos pagos ampliam capacidades autorizadas; não compram relevância, confiança, posição orgânica ou evolução.</text>
+  </g>
+</svg>

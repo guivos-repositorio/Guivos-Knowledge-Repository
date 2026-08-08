@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-DETAIL-PERSON-001
 title: Detalhamento Obrigatório das Superfícies da Pessoa
 status: active
-version: 0.9.0
+version: 0.10.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -16,6 +16,9 @@ related:
   - UXA-095
   - UXA-096
   - UXA-097
+  - UXA-100
+  - UXA-100-A2
+  - UXA-100-A3
 normative: false
 ---
 
@@ -48,14 +51,18 @@ Este arquivo integra o `GKR-JOURNEY-SURFACE-REGISTRY-001` e registra campos obri
 | GKR-SURF-PER-201 | UXA-024 | indeterminado | oportunidades | explorar/selecionar | lista/detalhe | consulta/localização/filtros | localização conforme escolha | voltar/limpar | nenhuma | parcial | publicação–descoberta | oportunidades |
 | GKR-SURF-PER-202 | UXA-028 | indeterminado | mapa/lista | ordenar/filtrar/selecionar | detalhe | consulta/filtros/cartões | nenhum vínculo | voltar/limpar | nenhuma | parcial | mapa ↔ lista | oportunidades |
 | GKR-SURF-PER-203 | UXA-007 | 0.4.0 | mapa/lista | avaliar/salvar/comparar/agir | ação/retorno/fronteira | condições/riscos/relação comercial | ação consciente | retornar/ocultar/contestar | nenhuma | parcial | efeito externo | oportunidades |
+| GKR-SURF-PER-301 | UXA-100/A1/A2/A3 — `uxa-100-person-plans-screen-mobile.svg`; `uxa-100-person-plan-incremental-benefits-comparison.svg`; board UXA-100 | 0.1.0 canônico | acesso voluntário à área de plano ou entrada contextual legítima | compreender plano atual, uso, matriz e delta; manter ou escolher mudança | TRN-401 para contratação; TRN-403 para gestão do ciclo | Free/Plus/Pro, preços candidatos, periodicidade, capacidades, cota/renovação e benefícios incrementais | autenticação; alternativas públicas/gratuitas preservadas; nenhuma seleção prévia | permanecer no plano, retornar ao contexto, Explorar/Mapa quando aplicável | materialização candidata promovida por UXA-100-A3 | **validada como superfície; TRN-401/403 locais** | origem genérica Conta/Configurações e superfície de correspondência personalizada ainda não possuem IDs próprios | comparação incremental é estado da mesma superfície, não tela autônoma |
+| GKR-SURF-PER-302 | UXA-100/A2/A3 — board `uxa-100-person-plans-payments-flow-board.svg` | 0.1.0 canônico | TRN-401 | revisar contratação e confirmar ou voltar | TRN-402 ou retorno a PER-301 | plano alvo, preço, recorrência, pagador, beneficiário, início, método autorizado em simulação e controles de saída | ação afirmativa; nenhuma pré-seleção; método autorizado; escopo de dados não ampliado implicitamente | voltar sem contratar; revisar escolha | estado do board promovido por UXA-100-A3 | **validada localmente no pacote** | gateway, regra fiscal e proration fora do escopo | revisão pré-contratual, não checkout implementado |
+| GKR-SURF-PER-303 | UXA-100/A2/A3 — board `uxa-100-person-plans-payments-flow-board.svg` | 0.1.0 canônico | TRN-403 | revisar downgrade ou cancelamento e confirmar conscientemente | TRN-404 ou retorno a PER-301 | plano atual/futuro, capacidades perdidas/reduzidas, histórico/relatórios, integrações, exportação, data efetiva | titular autenticado; baseline gratuito e direitos preservados | manter plano atual; voltar; exportar quando aplicável | estado do board promovido por UXA-100-A3 | **validada localmente no pacote** | proration/estorno e retenção final ainda indefinidos | downgrade e cancelamento compartilham família, mas preservam consequências próprias |
+| GKR-SURF-PER-304 | UXA-100/A2/A3 — board `uxa-100-person-plans-payments-flow-board.svg` | 0.1.0 canônico | TRN-402 ou TRN-404 | compreender resultado e recuperar/retornar | TRN-405; tentar novamente/revisar método quando falha | plano/estado resultante, recorrência, confirmação/recibo, estado anterior em falha, capacidades alteradas | confirmação real é necessária para ativação; falha não presume cobrança ou ativação | retorno a Planos; nova tentativa consciente | estados de sucesso/falha promovidos por UXA-100-A3 | **validada localmente no pacote** | processamento financeiro e persistência técnica não implementados | sucesso e falha são estados distintos da mesma família de resultado/recuperação |
 
 ## 3. Regra de incerteza
 
 Valores sem evidência suficiente permanecem `indeterminado`, `ausente` ou `não examinado`. Nenhum campo poderá ser completado por inferência.
 
-## 4. Efeito da UXA-097
+## 4. Efeito da UXA-100-A3
 
-A UXA-097 revalida a variante corrente de decisão de `PER-007`, adiciona e valida a primeira variante de `PER-008` e fecha `TRN-007` ponta a ponta. A Tela Hoje recorrente permanece inalterada e validada por UXA-010; outros estados alternativos de Hoje continuam separados.
+A UXA-100-A3 adiciona `PER-301` a `PER-304` como superfícies canônicas e promove os três SVGs da Pessoa da UXA-100 ao conjunto visual canônico. A comparação incremental permanece dentro de `PER-301`; processamento de pagamento não recebe superfície própria; entradas contextuais a partir de superfícies ainda não registradas não são inventadas.
 
 ## 5. Estado
 

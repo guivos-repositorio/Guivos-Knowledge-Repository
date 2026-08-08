@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-INDEX-001
 title: Índice de Changelogs e Registros de Atualização
 status: active
-version: 1.16.0
+version: 1.17.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -23,6 +23,7 @@ related:
   - GKR-CHANGELOG-UXA-097-001
   - GKR-CHANGELOG-UXA-098-001
   - GKR-CHANGELOG-UXA-099-001
+  - GKR-CHANGELOG-UXA-100-001
 normative: false
 ---
 
@@ -34,7 +35,7 @@ Este índice organiza registros recentes sem substituir `GKR-STATE-001` ou o led
 
 ## 2. Registros recentes
 
-- [Registro do Estado Atual — 2.25.0 e M7.86](current-state-register.md)
+- [Registro do Estado Atual — 2.26.0 e M7.87](current-state-register.md)
 - [UXA-085](changelog-uxa-085-2026-08-07.md)
 - [UXA-086](changelog-uxa-086-2026-08-07.md)
 - [UXA-087](changelog-uxa-087-2026-08-07.md)
@@ -50,15 +51,17 @@ Este índice organiza registros recentes sem substituir `GKR-STATE-001` ou o led
 - [UXA-097](changelog-uxa-097-2026-08-07.md)
 - [UXA-098](changelog-uxa-098-2026-08-07.md)
 - [UXA-099](changelog-uxa-099-2026-08-07.md)
+- [UXA-100](changelog-uxa-100-2026-08-07.md)
 
 ## 3. Estado
 
 | Elemento | Estado proposto |
 |---|---|
-| índice | active 1.16.0 |
-| GKR-STATE | 2.25.0 após integração governada |
-| marco | M7.86 |
-| última UXA | UXA-099 |
-| próxima prioridade | V4 — efeito externo de oportunidades; UXA-100 não iniciada |
+| índice | active 1.17.0 |
+| GKR-STATE | **2.26.0** após integração governada |
+| marco | **M7.87** |
+| última UXA | **UXA-100** |
+| próxima UXA | **UXA-101 não iniciada** |
+| Engenharia de Produto | pausada antes de W0-01 |
 
 Novos registros devem preservar autoridade, limites e estado de integração comprovado.

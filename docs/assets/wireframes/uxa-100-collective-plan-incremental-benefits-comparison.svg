@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1420" viewBox="0 0 1600 1420" role="img" aria-labelledby="title desc">
+  <title id="title">Coletivo — comparação incremental de benefícios dos planos</title>
+  <desc id="desc">Placa estrutural de baixa fidelidade que mostra os benefícios e capacidades adicionais de Gestão sobre Livre, Impacto sobre Gestão e Enterprise sobre Impacto.</desc>
+  <rect width="1600" height="1420" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Coletivo · O que cada plano acrescenta</text>
+    <text x="48" y="88" font-size="14">Comparação incremental · cada plano superior preserva o anterior e acrescenta capacidades próprias</text>
+    <text x="48" y="116" font-size="13">Enterprise é contratação dimensionada; a coluna mostra capacidades adicionais candidatas, não uma promessa de volume infinito.</text>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="40" y="156" width="350" height="1100" rx="18"/>
+    <rect x="430" y="156" width="350" height="1100" rx="18"/>
+    <rect x="820" y="156" width="350" height="1100" rx="18"/>
+    <rect x="1210" y="156" width="350" height="1100" rx="18"/>
+    <rect x="64" y="204" width="302" height="150" rx="10"/>
+    <rect x="454" y="204" width="302" height="150" rx="10"/>
+    <rect x="844" y="204" width="302" height="150" rx="10"/>
+    <rect x="1234" y="204" width="302" height="150" rx="10"/>
+    <rect x="64" y="378" width="302" height="796" rx="10"/>
+    <rect x="454" y="378" width="302" height="796" rx="10"/>
+    <rect x="844" y="378" width="302" height="796" rx="10"/>
+    <rect x="1234" y="378" width="302" height="796" rx="10"/>
+    <path d="M390 728 H430"/>
+    <path d="M780 728 H820"/>
+    <path d="M1170 728 H1210"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="64" y="190" font-size="18" font-weight="700">Coletivo Livre</text>
+    <text x="84" y="240" font-size="20" font-weight="700">R$ 0,00</text>
+    <text x="84" y="272" font-size="13">Base gratuita de pequena escala</text>
+    <text x="84" y="302" font-size="13">1 atividade + 1 oportunidade/mês</text>
+    <text x="84" y="330" font-size="13">2 publicações ativas · sem publicação paga</text>
+
+    <text x="454" y="190" font-size="18" font-weight="700">Coletivo Gestão</text>
+    <text x="474" y="240" font-size="20" font-weight="700">R$ 89,90/mês</text>
+    <text x="474" y="272" font-size="13">R$ 899,00/ano · referência candidata</text>
+    <text x="474" y="302" font-size="13" font-weight="700">Inclui o Livre +</text>
+
+    <text x="844" y="190" font-size="18" font-weight="700">Coletivo Impacto</text>
+    <text x="864" y="240" font-size="20" font-weight="700">R$ 249,90/mês</text>
+    <text x="864" y="272" font-size="13">R$ 2.499,00/ano · referência candidata</text>
+    <text x="864" y="302" font-size="13" font-weight="700">Inclui o Gestão +</text>
+
+    <text x="1234" y="190" font-size="18" font-weight="700">Coletivo Enterprise</text>
+    <text x="1254" y="240" font-size="20" font-weight="700">Sob consulta</text>
+    <text x="1254" y="272" font-size="13">Contrato anual e dimensionamento</text>
+    <text x="1254" y="302" font-size="13" font-weight="700">Inclui o Impacto + capacidades contratadas</text>
+
+    <text x="84" y="420" font-size="15" font-weight="700">O Livre já garante</text>
+    <text x="84" y="460" font-size="13">• perfil e propósito do Coletivo</text>
+    <text x="84" y="492" font-size="13">• até 2 administradores</text>
+    <text x="84" y="524" font-size="13">• 1 atividade gratuita/mês</text>
+    <text x="84" y="556" font-size="13">• 1 oportunidade gratuita/mês</text>
+    <text x="84" y="588" font-size="13">• até 2 publicações ativas</text>
+    <text x="84" y="620" font-size="13">• inscrições gratuitas e agenda básica</text>
+    <text x="84" y="652" font-size="13">• comunicação e participação essenciais</text>
+    <text x="84" y="684" font-size="13">• indicadores básicos de 30 dias</text>
+    <text x="84" y="716" font-size="13">• gestão essencial de membros e papéis</text>
+
+    <text x="474" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Livre</text>
+    <text x="474" y="460" font-size="13">• até 5 administradores</text>
+    <text x="474" y="492" font-size="13">• 4 atividades e 4 oportunidades/mês</text>
+    <text x="474" y="524" font-size="13">• até 6 publicações ativas</text>
+    <text x="474" y="556" font-size="13">• atividades e oportunidades pagas</text>
+    <text x="474" y="588" font-size="13">• inscrições, cobrança e gestão de vagas</text>
+    <text x="474" y="620" font-size="13">• cupons e condições comerciais básicas</text>
+    <text x="474" y="652" font-size="13">• categorias e indicadores ampliados</text>
+    <text x="474" y="684" font-size="13">• exportação básica</text>
+    <text x="474" y="716" font-size="13">• integrações limitadas</text>
+    <text x="474" y="748" font-size="13">• gestão ampliada de participantes</text>
+    <text x="474" y="780" font-size="13">• suporte prioritário</text>
+
+    <text x="864" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Gestão</text>
+    <text x="864" y="460" font-size="13">• até 15 administradores</text>
+    <text x="864" y="492" font-size="13">• 15 atividades e 15 oportunidades/mês</text>
+    <text x="864" y="524" font-size="13">• até 20 publicações ativas</text>
+    <text x="864" y="556" font-size="13">• ofertas patrocinadas ou financiadas</text>
+    <text x="864" y="588" font-size="13">• até 5 núcleos ou programas</text>
+    <text x="864" y="620" font-size="13">• categorias completas</text>
+    <text x="864" y="652" font-size="13">• indicadores históricos e de impacto</text>
+    <text x="864" y="684" font-size="13">• gestão de parceiros e patrocinadores</text>
+    <text x="864" y="716" font-size="13">• cupons/condições ampliados</text>
+    <text x="864" y="748" font-size="13">• exportação completa</text>
+    <text x="864" y="780" font-size="13">• integrações avançadas</text>
+    <text x="864" y="812" font-size="13">• dashboards ampliados</text>
+    <text x="864" y="844" font-size="13">• suporte especializado</text>
+
+    <text x="1254" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Impacto</text>
+    <text x="1254" y="460" font-size="13">• capacidade sem limite padrão fixo*</text>
+    <text x="1254" y="492" font-size="13">• categorias completas personalizáveis</text>
+    <text x="1254" y="524" font-size="13">• múltiplos núcleos, unidades e territórios</text>
+    <text x="1254" y="556" font-size="13">• administradores e papéis conforme contrato</text>
+    <text x="1254" y="588" font-size="13">• API, SSO e integrações dedicadas</text>
+    <text x="1254" y="620" font-size="13">• integração com Power BI</text>
+    <text x="1254" y="652" font-size="13">• dashboards e indicadores personalizados</text>
+    <text x="1254" y="684" font-size="13">• importação/exportação em massa</text>
+    <text x="1254" y="716" font-size="13">• domínio/ambiente configurável quando aprovado</text>
+    <text x="1254" y="748" font-size="13">• treinamento e implantação assistida</text>
+    <text x="1254" y="780" font-size="13">• gerente dedicado</text>
+    <text x="1254" y="812" font-size="13">• SLA e governança contratados</text>
+    <text x="1254" y="864" font-size="12">* sujeito à capacidade contratada, uso justo, segurança</text>
+    <text x="1254" y="888" font-size="12">e disponibilidade operacional.</text>
+
+    <text x="64" y="1208" font-size="12">A comparação incremental não implica que o plano superior seja necessário, obrigatório ou mais relevante organicamente.</text>
+    <text x="64" y="1234" font-size="12">Ao selecionar um plano, a interface deverá destacar apenas o que será acrescentado e, no downgrade, exatamente o que deixará de estar disponível.</text>
+    <text x="48" y="1344" font-size="12">Materialização candidata. Enterprise segue proposta comercial; não representa checkout autônomo nem capacidade infinita.</text>
+  </g>
+</svg>
