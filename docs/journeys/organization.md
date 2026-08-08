@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -27,6 +27,8 @@ related:
   - UXA-075
   - UXA-098
   - UXA-100
+  - UXA-100-A1
+  - UXA-100-A2
 normative: false
 ---
 
@@ -54,7 +56,7 @@ identidade, unidade e autoridade
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012 | **TRN-203/204/210/211 integralmente validadas por UXA-098** |
 | relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
 | patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-054 | UXA-041 a UXA-055 conforme pacote | parcial |
-| Planos e cobrança | **materializado candidato** | GEM-004 / UXA-100 | tela dedicada UXA-100 | validação funcional pendente | não integrada canonicamente |
+| Planos e cobrança | **materializado candidato** | GEM-004 / UXA-100 | 3 ativos da Organização | **UXA-100-A2 — aprovado funcionalmente como candidato** | não integrada canonicamente |
 | evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
 
 A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
@@ -123,17 +125,21 @@ A tela candidata dedicada é:
 
 [Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-A tela deve:
+A tela e o fluxo devem:
 
 - mostrar plano atual, uso e período do ciclo;
 - comparar `Business Start → Business Growth → Business Scale`;
 - evidenciar somente ganhos incrementais por degrau;
 - oferecer delta direto do plano atual para o escolhido;
+- exibir preços mensal/anual e recorrência aplicável antes da confirmação;
 - tratar Scale como proposta comercial e capacidade dimensionada, não checkout definitivo;
-- no downgrade, informar redução de oportunidades, publicações ativas, administradores, unidades, Coletivos relacionados, analytics e integrações;
-- separar capacidade comercial de relevância, confiança, legitimidade e resultado.
+- no downgrade, selecionar unidades, administradores, publicações e Coletivos relacionados mantidos;
+- identificar integrações a encerrar e dados a exportar;
+- preservar históricos/agregados sem apagamento para forçar retenção;
+- separar capacidade comercial de relevância, confiança, legitimidade e resultado;
+- não ampliar consentimento ou acesso a dados pessoais por simples contratação.
 
-A etapa é materialização candidata da UXA-100 e ainda não cria superfície ou transição canônica.
+A UXA-100-A2 aprovou funcionalmente esta etapa como candidata após reformulação da tela dedicada e do fluxo. Ela ainda não cria superfície ou transição canônica.
 
 ## 5. Relação com Coletivos
 
@@ -178,11 +184,11 @@ Esta vista permanece `draft` porque:
 - a matriz institucional completa ainda não existe;
 - `TRN-201` permanece parcial e `TRN-202` localmente validada;
 - integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
-- Planos é etapa candidata sem superfície/transição canônica;
+- Planos foi aprovado funcionalmente apenas como etapa candidata, sem superfície/transição canônica;
 - evidências e resultados institucionais continuam sem matriz integrada.
 
 A UXA-098 fecha especificamente `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211`, sem promover a jornada institucional completa.
 
 ## 8. Próxima evolução possível
 
-A UXA-100 adiciona Planos à leitura institucional sem promover a jornada. A próxima decisão desta frente é validar funcionalmente as telas e definir superfícies/transições somente após essa validação.
+A etapa Planos já foi auditada pela UXA-100-A2. A próxima decisão desta frente é definir, em ato governado separado, se os ativos serão fracionados e quais superfícies/transições canônicas serão criadas. Nenhuma promoção é automática.
