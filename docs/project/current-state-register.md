@@ -44,9 +44,9 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global proposto após a UXA-101 e só se torna vigente na `main` mediante integração governada. Em caso de divergência após integração, este registro prevalece sobre resumos não normativos.
+Este registro declara o estado global vigente da `main` após a integração governada da UXA-101. Em caso de divergência, este registro prevalece sobre resumos não normativos.
 
-## 2. Estado global proposto após UXA-101
+## 2. Estado global vigente após UXA-101
 
 | Elemento | Estado | Referência |
 |---|---|---|
@@ -142,7 +142,7 @@ ORG-003
 | **V4** | efeito externo de oportunidades | **encerrada por UXA-101 até BND-001** |
 | V5 | erros, retornos e interrupções | pendente; **não iniciada** |
 
-## 9. Estado documental proposto
+## 9. Estado documental vigente
 
 | Camada | Estado |
 |---|---|
@@ -174,4 +174,4 @@ ORG-003
 
 ## 11. Próximo ato
 
-A UXA-101 encerra V4. **V5 não foi iniciada.** A auditoria transversal dos Produtos Especializados pode ser executada separadamente como diagnóstico documental/arquitetural, sem iniciar nova UXA ou Engenharia de Produto.
+A UXA-101 encerra V4. **V5 não foi iniciada.** A auditoria transversal dos Produtos Especializados permanece uma frente separada, sem alterar este estado global enquanto não houver integração governada e sem iniciar nova UXA ou Engenharia de Produto.
