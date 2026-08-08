@@ -2,7 +2,7 @@
 id: GEM-F1F2-F3-READINESS-RECONCILIATION-001
 title: Reconciliação de Prontidão F1/F2 para F3
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -18,6 +18,7 @@ depends_on:
   - GTM-003
   - GTM-006
 related:
+  - GEM-F3S-M0-M6-CASH-WORKING-CAPITAL-STRUCTURE-001
   - GEM-010-COST-AND-CAPACITY-MODEL-001
   - GEM-010-OPERATING-DRIVER-MODEL-001
   - GTM-004
@@ -40,7 +41,7 @@ prontidão estrutural de F3
 ≠ necessidade de capital calculável
 ```
 
-A reconciliação **não executa F3**, não cria valores mensais, não escolhe fornecedores, não contrata pessoas, não reativa Product Engineering e não autoriza captação.
+A reconciliação não cria valores mensais, não escolhe fornecedores, não contrata pessoas, não reativa Product Engineering e não autoriza captação.
 
 ## 2. Base reconciliada
 
@@ -91,14 +92,12 @@ Logo, F1-C05 continua `partially_parameterized_by_F2B_F2C`, não fechado.
 
 ## 3. Pergunta de decisão
 
-A pergunta correta não é “F3 pode ou não pode começar?” como um único estado binário.
-
 F3 possui duas maturidades distintas:
 
 1. **estrutura de caixa** — contratos de fluxo, estados, buckets, calendário e rastreabilidade;
 2. **cálculo monetário** — amounts mensais reconciliados, consumo líquido, capital de giro, runway e necessidade de capital.
 
-F1/F2 já possuem maturidade suficiente para a primeira camada, mas não para a segunda.
+F1/F2 possuem maturidade suficiente para a primeira camada, mas não para a segunda.
 
 ## 4. Gates de prontidão
 
@@ -113,9 +112,9 @@ O gate `F3_structural_readiness` exige:
 5. separação benchmark × quoted × contracted × actual;
 6. distinção entre capacidade e custo;
 7. prevenção de dupla contagem;
-8. modelo conceitual de caixa já capaz de distinguir recebimentos, pagamentos, recursos livres e restritos.
+8. modelo conceitual de caixa capaz de distinguir recebimentos, pagamentos, recursos livres e restritos.
 
-Resultado:
+Resultado original:
 
 `PASS — conditional structural start allowed after separate authorization`.
 
@@ -136,111 +135,54 @@ O gate `F3_monetary_readiness` exige, para cada período relevante:
 11. reservas mínimas e recursos restritos;
 12. regras de capital de giro e cenário de estresse.
 
-Resultado:
+Resultado vigente:
 
 `FAIL — material monetary inputs missing`.
 
-## 5. O que F3 poderá estruturar sem amount completo
+## 5. Consumo do gate estrutural por F3-S
 
-Após autorização específica de F3, a camada estrutural poderá definir, sem preencher valores inexistentes:
+A autorização posterior permitiu a execução de `GEM-F3S-M0-M6-CASH-WORKING-CAPITAL-STRUCTURE-001`.
 
-### 5.1 Contrato mensal de evento de caixa
+F3-S materializa a camada estrutural aprovada por esta reconciliação e governa:
 
-```yaml
-cash_event_id: string
-period: M0 | M1 | M2 | M3 | M4 | M5 | M6
-event_type: inflow | outflow | transfer | reserve | release | reversal
-source_authority: string
-economic_object: string
-recognition_state: candidate | benchmark | quoted | contracted | actual | not_applicable
-accrual_period: M0..M6_or_TBD
-billing_date: date_or_TBD
-expected_cash_date: date_or_TBD
-actual_cash_date: date_or_TBD
-amount_brl: number_or_TBD
-cash_bucket: free | restricted | protected_reserve | pass_through | TBD
-counterparty_scope: string_or_TBD
-payment_or_receipt_terms: string_or_TBD
-tax_fee_repass_state: defined | partial | TBD
-reconciliation_key: string
-notes: string
-```
+- contrato canônico de evento de caixa;
+- calendário estrutural M0–M6;
+- pontes de receita→recebimento;
+- pontes de custo→pagamento;
+- estados de contas a receber e pagar;
+- buckets de caixa;
+- estados de evidência;
+- taxas, tributos e repasses como componentes rastreáveis;
+- regras de reconciliação;
+- exceções e fechamento mensal estrutural;
+- preservação explícita de `TBD`.
 
-### 5.2 Pontes permitidas
-
-Receita:
+Assim, o gate estrutural deixa de ser apenas autorização potencial e passa a possuir implementação documental específica.
 
 ```text
-meta/driver candidato
-→ evento econômico elegível
-→ faturamento/competência
-→ conta a receber
-→ recebimento
-→ taxas/tributos/repasses
-→ caixa livre ou restrito
+F3 structural architecture = instantiated by F3-S
+F3 monetary readiness = FAIL
 ```
 
-Custo:
+Isso **não** promove nenhum output monetário.
 
-```text
-pool/driver
-→ obrigação potencial
-→ benchmark/quote/contrato
-→ competência
-→ conta a pagar
-→ pagamento
-→ classificação de caixa
-```
-
-Essas pontes podem existir com `TBD` preservado. O contrato estrutural não transforma `TBD` em zero.
-
-### 5.3 Buckets de caixa
-
-F3 estrutural poderá governar ao menos:
-
-- `free_cash` — caixa livre elegível para operação;
-- `restricted_cash` — recurso com destinação/restrição identificada;
-- `protected_reserve` — reserva protegida por regra governada;
-- `pass_through` — valor recebido mas economicamente devido a terceiro;
-- `TBD_classification` — classificação ainda insuficiente.
-
-Saldo vinculado, reserva protegida e pass-through não podem ser silenciosamente tratados como caixa livre.
-
-## 6. O que permanece proibido no F3 estrutural
-
-Enquanto `F3_monetary_readiness = FAIL`, F3 não poderá publicar como resultado válido:
-
-- burn mensal completo;
-- burn acumulado M0–M6;
-- consumo líquido médio de caixa;
-- capital de giro necessário;
-- runway;
-- necessidade máxima acumulada de capital;
-- “rodada necessária”;
-- caixa mínimo recomendado em reais;
-- break-even;
-- margem de segurança financeira;
-- suficiência do aporte ilustrativo de R$ 2 milhões.
-
-Qualquer simulação parcial deverá ser identificada como `incomplete_sensitivity`, nunca como forecast completo.
-
-## 7. Bloqueadores monetários reconciliados
+## 6. Bloqueadores monetários reconciliados
 
 | Bloqueador | Origem | Impacto em F3 estrutural | Impacto em F3 monetário |
 |---|---|---|---|
-| C01/C02/C03 sem custo executável | Product Engineering pausado | não bloqueia schema | bloqueia amount completo |
-| C05 people cost incompleto | F2-B/F2-C | não bloqueia owner/driver | bloqueia outflow de pessoas |
-| C10 onboarding sem driver | F1-C | pode manter TBD | bloqueia custo mensal completo |
-| C11 mídia sem orçamento/experimento | F1-C | pode manter gate condicional | bloqueia cenário com mídia |
-| C18 integrações sem escopo | F1-C | pode manter TBD | bloqueia custo de integrações |
-| quotes Q04/Q06/Q07/Q12/Q15 pendentes | F1-C | pode registrar quote_required | bloqueia amounts materiais quando ativados |
-| saldo inicial livre | cash model | campo pode existir | bloqueia runway |
-| timing de recebimento | receita/contratos | campo pode existir | bloqueia curva de caixa |
-| tributos/taxas/repasses | fiscal/pagamentos | schema pode existir | bloqueia caixa líquido |
-| reservas/restrições | governança de recursos | buckets podem existir | bloqueia caixa livre real |
-| perdas/reversões | operação/pagamentos | estado pode existir | bloqueia estresse/caixa líquido |
+| C01/C02/C03 sem custo executável | Product Engineering pausado | schema suporta TBD | bloqueia amount completo |
+| C05 people cost incompleto | F2-B/F2-C | owner/driver suportado | bloqueia outflow de pessoas |
+| C10 onboarding sem driver | F1-C | schema suporta TBD | bloqueia custo mensal completo |
+| C11 mídia sem orçamento/experimento | F1-C | gate condicional suportado | bloqueia cenário com mídia |
+| C18 integrações sem escopo | F1-C | schema suporta TBD | bloqueia custo de integrações |
+| quotes Q04/Q06/Q07/Q12/Q15 pendentes | F1-C | `quote_required` suportado | bloqueia amounts materiais quando ativados |
+| saldo inicial livre | cash model | bucket/campo existe | bloqueia runway |
+| timing de recebimento | receita/contratos | campo existe | bloqueia curva de caixa |
+| tributos/taxas/repasses | fiscal/pagamentos | componentes separados | bloqueia caixa líquido |
+| reservas/restrições | governança de recursos | buckets existem | bloqueia caixa livre real |
+| perdas/reversões | operação/pagamentos | lifecycle existe | bloqueia estresse/caixa líquido |
 
-## 8. Materialidade e regra de promoção
+## 7. Materialidade e regra de promoção
 
 A existência de 12/18 pools com alguma evidência numérica **não representa 66,7% de prontidão financeira**.
 
@@ -248,9 +190,9 @@ Cobertura por contagem de pools não mede materialidade econômica.
 
 Um único item material sem amount — por exemplo people cost, infraestrutura ou tributo — pode inviabilizar o fechamento de um mês inteiro.
 
-Portanto, a promoção para `F3_monetary_readiness: PASS` exige avaliação de **materialidade por período**, não um percentual arbitrário de pools calibrados.
+A promoção para `F3_monetary_readiness: PASS` exige avaliação de **materialidade por período**, não percentual arbitrário de pools calibrados.
 
-## 9. Relação com o aporte ilustrativo de R$ 2 milhões
+## 8. Relação com o aporte ilustrativo de R$ 2 milhões
 
 Permanece válido:
 
@@ -262,9 +204,9 @@ R$ 2 milhões ilustrativos no GTM-004
 ≠ orçamento aprovado
 ```
 
-F3 estrutural poderá representar uma entrada hipotética apenas em cenário explicitamente identificado como ilustrativo, sem usá-la para concluir suficiência de capital.
+F3-S não usa esse valor para concluir suficiência de capital.
 
-## 10. Estado formal de prontidão
+## 9. Estado formal após F3-S
 
 | Gate | Resultado |
 |---|---|
@@ -275,45 +217,46 @@ F3 estrutural poderá representar uma entrada hipotética apenas em cenário exp
 | F2 assignment architecture | PASS/PARTIAL |
 | F2 monetary people cost | FAIL — material inputs pending |
 | cash conceptual architecture | PASS |
-| F3 structural readiness | PASS — conditional |
+| F3 structural readiness | PASS — gate consumed by F3-S |
+| F3 structural architecture | PASS — instantiated by F3-S |
 | F3 monetary readiness | FAIL |
 | burn calculable | NO |
 | working capital calculable | NO |
 | runway calculable | NO |
 | capital requirement calculable | NO |
 
-## 11. Parecer
+## 10. Parecer pós-F3-S
 
 **Parecer:**
 
-`CONDITIONAL GO — F1/F2 provide sufficient semantic and structural maturity to start F3 as a schema-and-flow layer after separate authorization, preserving all missing monetary inputs as TBD. F3 monetary calculation remains blocked until material cost, people, timing, tax, reserve and opening-cash inputs are sufficiently evidenced.`
+`STRUCTURAL PASS / MONETARY FAIL — the F3 structural gate has been consumed by the F3-S authority, which now governs M0–M6 cash-event structure, lifecycle, buckets, calendar and reconciliation. Material monetary inputs remain insufficient; burn, working capital amount, runway and capital requirement remain not calculable.`
 
 Em termos operacionais:
 
 ```text
-F3 estrutural = permitido após autorização separada
+F3-S estrutural = executado documentalmente
 F3 monetário = bloqueado
 F4 = não autorizado por esta reconciliação
 F5 = não autorizado
 F6 = não autorizado
 ```
 
-## 12. Próximo ato governado
+## 11. Próximo ato governado
 
-Após eventual integração desta reconciliação, o próximo incremento recomendado é:
+Após eventual integração de F3-S, o próximo incremento econômico recomendado poderá ser:
 
-**F3-S — Estrutura de Caixa e Capital de Giro M0–M6**
+**F3-M readiness/input closure**
 
-Escopo permitido do F3-S:
+Escopo admissível somente mediante autorização separada:
 
-- contrato de eventos de caixa;
-- calendário M0–M6;
-- pontes competência/faturamento/recebimento e obrigação/pagamento;
-- buckets de caixa;
-- estados de evidência;
-- regras de reconciliação;
-- placeholders explícitos para tributos, taxas, repasses, reservas e saldo inicial;
-- nenhuma promoção de `TBD` a zero;
-- nenhum cálculo de burn, runway ou necessidade de capital.
+- inventariar saldo inicial por bucket;
+- fechar timing/amount de recebimentos sustentáveis;
+- fechar timing/amount de pagamentos materiais;
+- reconciliar people cost monetário;
+- definir tributos aplicáveis;
+- definir taxas/repasses por arquitetura real;
+- governar reservas/restrições;
+- tratar perdas/reversões e desembolsos não recorrentes;
+- reavaliar `F3_monetary_readiness` por materialidade.
 
-F3-S exige autorização própria e esta reconciliação não o inicia automaticamente.
+F3-M não significa automaticamente calcular runway ou necessidade de capital. F4, F5 e F6 permanecem dependentes de gates posteriores.
