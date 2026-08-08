@@ -2,7 +2,7 @@
 id: GTM-005
 title: Governança, Métricas e Cadência do Go-to-Market
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 parent: GTM-000
@@ -57,15 +57,25 @@ Os seguintes objetos devem possuir KPIs independentes:
 Organização ativa
 ≠ oportunidade ativa
 ≠ contrato Guivos Business
-≠ Parceiro Estratégico ativo
+≠ Parceria Estratégica ativa
 ```
 
 - `Organização ativa` mede participante institucional ativo no ecossistema;
 - `oportunidade ativa` mede oferta disponível às Pessoas/Coletivos sob autoridade aplicável;
 - `contrato Guivos Business` mede contratação do produto especializado;
-- `Parceiro Estratégico ativo` mede contraparte única com relação estratégica qualificada conforme `GTM-002`.
+- `Parceria Estratégica ativa` mede relação empresarial/institucional qualificada diretamente com a Guivos enquanto empresa, conforme `GTM-002`.
 
-Se a mesma pessoa jurídica exercer mais de um papel, cada métrica registra somente o objeto que lhe corresponde. Nenhuma oportunidade deve ser duplicada em métricas de parceria.
+A regra operacional é:
+
+```text
+objeto da relação = valor direto para Pessoas/Coletivos
+→ Organização
+
+objeto da relação = capacidade corporativa da Guivos
+→ pode ser Parceria Estratégica
+```
+
+Se a mesma pessoa jurídica exercer mais de uma relação, cada métrica registra somente o objeto que lhe corresponde. Nenhuma oportunidade, benefício, programa ou serviço destinado a Pessoas ou Coletivos deve ser duplicado em métricas de Parcerias Estratégicas.
 
 ## 5. Scorecard executivo
 
@@ -91,17 +101,19 @@ Se a mesma pessoa jurídica exercer mais de um papel, cada métrica registra som
 ### Parcerias Estratégicas
 
 - contrapartes estratégicas em prospecção;
-- teses bilaterais qualificadas;
-- Parceiros Estratégicos ativos;
-- parceiros ativos por categoria e território;
-- contribuição para distribuição/aquisição;
-- contribuição para tecnologia/integração;
+- teses bilaterais corporativas qualificadas;
+- Parcerias Estratégicas ativas;
+- Parcerias Estratégicas por categoria e território;
+- contribuição para alcance, distribuição e aquisição;
+- contribuição para tecnologia, infraestrutura e integração;
+- contribuição para apoio, divulgação e presença institucional;
 - contribuição para acesso institucional/territorial;
-- entregáveis e resultados por aliança;
-- dependência e concentração por parceiro estratégico;
+- redução de custo, risco, tempo ou fricção quando aplicável;
+- entregáveis e resultados financeiros ou não financeiros por aliança;
+- dependência e concentração por contraparte estratégica;
 - alianças suspensas, encerradas ou em revisão.
 
-A quantidade de Parceiros Estratégicos nunca deve ser usada como proxy de quantidade de oportunidades disponíveis na Journey.
+A quantidade de Parcerias Estratégicas nunca deve ser usada como proxy de quantidade de oportunidades disponíveis na Journey ou de receita. **Receita direta não é requisito para que uma aliança seja estratégica.**
 
 ### Comercial
 
@@ -161,7 +173,7 @@ Revisão executiva de:
 - churn;
 - qualidade das coortes;
 - densidade e qualidade da oferta;
-- resultados das Parcerias Estratégicas;
+- resultados financeiros e não financeiros das Parcerias Estratégicas;
 - produtividade de canais e equipe;
 - necessidade de correção.
 
@@ -205,7 +217,7 @@ Exige retenção, economics, oferta e modelo comercial replicável, além de can
 
 ### Gate D — Portugal
 
-Exige PMF operacional mínimo, capacidade internacional, jurídico/fiscal/privacidade/pagamentos avaliados, rede de oferta local, alianças de entrada territorial quando necessárias e budget aprovado.
+Exige PMF operacional mínimo, capacidade internacional, jurídico/fiscal/privacidade/pagamentos avaliados, rede de oferta local, alianças corporativas de entrada territorial quando necessárias e budget aprovado.
 
 ### Gate E — rodada institucional
 
@@ -220,7 +232,7 @@ Todo pitch ou data room que utilizar números deste domínio deve indicar:
 - se é realizado, meta ou cenário;
 - fonte do preço/driver;
 - exclusões relevantes;
-- definição operacional de Organização, oportunidade, Business e Parceiro Estratégico;
+- definição operacional de Organização, oportunidade, Business e Parceria Estratégica;
 - premissas de diluição quando mostrar participação;
 - que retornos são sensibilidades, não promessas.
 
@@ -229,8 +241,9 @@ Todo pitch ou data room que utilizar números deste domínio deve indicar:
 - apresentar ARR projetado como contratado;
 - apresentar pipeline como receita;
 - apresentar cadastro como usuário ativo;
-- somar Organizações e Parceiros Estratégicos como se fossem a mesma base de oferta;
-- apresentar número de parceiros estratégicos como número de oportunidades;
+- somar Organizações e Parcerias Estratégicas como se fossem a mesma base de oferta;
+- apresentar Parcerias Estratégicas como número de oportunidades;
+- apresentar Parcerias Estratégicas como receita sem evento econômico verificável;
 - apresentar valuation interno como oferta recebida;
 - apresentar MOIC matemático como rentabilidade esperada;
 - omitir diluição quando ela for material ao exemplo.
@@ -256,7 +269,7 @@ Owners são responsabilidades funcionais, não cargos ou contratações automati
 
 `GEM-006` permanece autoridade para papéis, relacionamento, elegibilidade, valor bilateral, riscos e lifecycle de parceiros.
 
-O GTM apenas define quando uma relação é contabilizada na meta comercial/estratégica de Parceiros Estratégicos e como ela entra no scorecard.
+O GTM define quando uma relação corporativa é contabilizada na meta de Parcerias Estratégicas e como ela entra no scorecard. Relações direcionadas à entrega de valor a Pessoas ou Coletivos pertencem à camada de Organizações e permanecem fora desse KPI.
 
 O GTM fornece metas e hipóteses aprováveis; o GEM-010 permanece responsável por transformar parâmetros em cenários financeiros coerentes e separar receita, margem, caixa, capital e funding.
 
