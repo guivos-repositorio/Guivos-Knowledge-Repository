@@ -27,8 +27,15 @@ A declaração oficial está no [Registro do Estado Atual](project/current-state
 
 A UXA-101 reformula o Detalhe de Oportunidade sem criar nova tela, valida `TRN-205` até `BND-001` e confirma que qualquer inscrição, reserva, compra, contratação ou outro resultado posterior permanece sob autoridade externa.
 
+## Domínio de Go-to-Market, Growth & Capital
+
+A baseline candidata para **lançamento, expansão geográfica, aquisição, vendas, captação de Coletivos e Organizações, parcerias, metas de pagantes, faturamento e valuation** está organizada no domínio [Guivos Go-to-Market, Growth & Capital](go-to-market/index.md).
+
+Esse domínio conecta a estratégia **Belo Horizonte → São Paulo → Portugal** ao Guivos Economic Model e mantém realizado, meta aprovada, meta candidata e cenário explicitamente separados.
+
 ## Acesso rápido
 
+- [Go-to-Market, Growth & Capital](go-to-market/index.md)
 - [Índice UXA-047 a UXA-101](experience-architecture/uxa-047-101-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
 - [UXA-101 — Saída Consciente para Fronteira Externa](experience-architecture/uxa-101-conscious-external-boundary-validation.md)
@@ -43,4 +50,4 @@ A UXA-101 reformula o Detalhe de Oportunidade sem criar nova tela, valida `TRN-2
 
 ## Limites preservados
 
-Esta superfície não autoriza **UXA-102**, V5, Engenharia de Produto, cobrança real, gateway, processo Enterprise/Scale após `BND-002` ou qualquer operação executada pelo terceiro após `BND-001`. `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais; Pessoa, Coletivo e Organização permanecem `draft`. Em caso de divergência após integração do incremento, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza **UXA-102**, V5, Engenharia de Produto, cobrança real, gateway, processo de contratação/dimensionamento assistido após `BND-002` ou qualquer operação executada pelo terceiro após `BND-001`. `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais; Pessoa, Coletivo e Organização permanecem `draft`. O novo domínio GTM permanece `draft` e não transforma metas candidatas, valuation, funding ou faturamento projetado em compromissos aprovados. Em caso de divergência após integração do incremento, prevalece `GKR-STATE-001`.
