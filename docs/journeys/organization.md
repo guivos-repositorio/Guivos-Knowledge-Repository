@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-004
   - UXA-007
@@ -31,6 +31,7 @@ related:
   - UXA-100-A2
   - UXA-100-A3
   - UXA-101
+  - GPA-004
 normative: false
 ---
 
@@ -49,79 +50,90 @@ identidade, unidade e autoridade
 → revisão, renovação, ajuste, pausa ou encerramento
 ```
 
-| Etapa | Maturidade primária | Autoridade contratual | Referência materializada | Evidência de validação | Continuidade integrada |
-|---|---|---|---|---|---|
-| fundação institucional | contratado | UXA-014 | — | — | não examinada |
-| Visão Geral da Organização | validado | UXA-014 | UXA-015 | UXA-017 | parcial |
-| responsabilidade material atual | contratado | UXA-014 | presente parcialmente na Visão Geral | UXA-017 no escopo da referência | parcial |
-| cadastro de oportunidades | validado | UXA-004 | UXA-008 | UXA-013 | **publicação → descoberta validada por UXA-098** |
-| descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012; UXA-101 no recorte de saída | **TRN-203/204/210/211 por UXA-098; TRN-205 até BND-001 por UXA-101** |
-| relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
-| patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-055 | UXA-041 a UXA-055; residual UXA-099 | parcial |
-| Planos e cobrança | **canonicamente registrado** | GEM-004 / UXA-100-A3 | 3 SVGs canônicos / 4 superfícies | UXA-100-A2/A3 | transições internas locais; Scale parcial |
-| evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
+| Etapa | Maturidade primária | Autoridade | Evidência principal | Continuidade |
+|---|---|---|---|---|
+| fundação institucional | contratado | UXA-014 | — | não examinada |
+| Visão Geral | validado | UXA-014 | UXA-015/017 | parcial |
+| cadastro de oportunidades | validado | UXA-004 | UXA-008/013 | publicação→descoberta validada por UXA-098 |
+| descoberta e detalhe | validado | UXA-004 | UXA-024/028/007 + validações | TRN-203/204/210/211; TRN-205 até BND-001 |
+| relação Organização–Coletivo | contratado | UXA-019 | — | ausente |
+| patrocínio/Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-055/099 | parcial |
+| Planos e cobrança | canonicamente registrado | GEM-004 / UXA-100-A3 | 3 SVGs / 4 superfícies | transições internas locais; BND-002 parcial |
+| evidências/resultados | indeterminado | referências dispersas | — | não examinada |
 
-A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
+A validação de uma tela ou fluxo não equivale à validação integral da jornada institucional.
 
-## 2. Publicação → descoberta validada
+## 2. Organização não é Guivos Business
 
-A UXA-098 formaliza:
+`Organização` é tipo de participante institucional. `Guivos Business` é produto especializado da Guivos.
+
+A jornada da Organização utiliza planos:
+
+> **Conecta · Eleva · Transforma**
+
+Guivos Business utiliza taxonomia conceitual própria:
+
+> **Start · Growth · Scale · Enterprise**
+
+Não existe correspondência automática 1:1. **Organização Transforma ≠ Guivos Business Enterprise.**
+
+Uma Organização pode operar no ecossistema sem contratar Business; contratar Business não altera automaticamente seu plano institucional.
+
+## 3. Publicação → descoberta
+
+A UXA-098 preserva:
 
 ```text
 ORG-003
-→ oportunidade aprovada e ativa
-→ autoridade e informações materiais vigentes
+→ oportunidade aprovada/ativa
+→ informações materiais vigentes
 → TRN-203
 → candidata à descoberta em PER-201
 ```
 
-A ativação torna a oportunidade elegível ao inventário de descoberta, mas não garante impressão, posição, alcance ou recomendação; não concede à Organização autoridade sobre relevância individual; não converte patrocínio em prioridade orgânica; e permanece subordinada a disponibilidade, elegibilidade, proteção, atualização e moderação aplicáveis.
+Ativação não garante impressão, posição, alcance ou recomendação e não transfere autoridade sobre relevância individual.
 
-Pausa, expiração, encerramento ou alteração material prevalecem sobre cartões ou detalhes anteriormente renderizados. Reprocessamento do mesmo estado não duplica oportunidade nem prioridade.
+## 4. Continuidade até fronteira externa
 
-## 3. Continuidade até a fronteira externa
+Mapa, Lista e Detalhe preservam a mesma identidade lógica. `TRN-205` é validada pela UXA-101 somente até `BND-001`; processo e resultado posteriores pertencem ao terceiro.
 
-A oportunidade mantém a mesma identidade lógica em Mapa, Lista e Detalhe.
+A Organização continua responsável por preço, disponibilidade, local, modalidade, capacidade, elegibilidade, risco, responsável e demais informações materiais de suas oportunidades.
 
-- `TRN-210`: Mapa e Lista preservam a mesma consulta;
-- `TRN-204`: Mapa abre o Detalhe preservando origem e estado;
-- `TRN-211`: Lista abre o mesmo Detalhe preservando origem e estado;
-- `TRN-205`: UXA-101 valida o handoff consciente de `PER-203` até `BND-001`.
+## 5. Planos como etapa transversal canônica
 
-Antes da saída, `PER-203` explicita destino externo, responsável, dados/contexto que acompanham ou não a transição e ausência de garantia de conclusão. Destino ausente, inválido ou materialmente alterado bloqueia redirecionamento silencioso. Após `BND-001`, o processo e o resultado pertencem ao terceiro.
+Função conceitual:
 
-A Organização continua responsável por manter preço, disponibilidade, local, modalidade, capacidade, elegibilidade, risco, responsável e demais informações materiais atualizados.
+- **Conecta**: conectar capacidade institucional a Pessoas, Coletivos e oportunidades;
+- **Eleva**: ampliar coordenação, recorrência, governança operacional e profundidade analítica;
+- **Transforma**: atender maior complexidade institucional e transformar capacidade em impacto sistêmico sustentado quando houver evidência e governança.
 
-## 4. Planos como etapa transversal canônica
-
-A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização.
+Nenhum plano garante impacto, reputação ou legitimidade.
 
 ```text
 ORG-301 — Planos e comparação
-├── TRN-421 → ORG-302 — revisão de contratação Growth
+├── TRN-421 → ORG-302 — revisão de mudança autonomamente configurável
 │   └── TRN-422 → ORG-304 — resultado/recuperação
 │       └── TRN-425 → ORG-301
 ├── TRN-423 → ORG-303 — downgrade/cancelamento
 │   └── TRN-424 → ORG-304
 │       └── TRN-425 → ORG-301
-└── TRN-426 → BND-002 — proposta Business Scale
+└── quando contratação não for autonomamente configurável
+    → TRN-426 → BND-002 — contratação/dimensionamento assistido
 ```
 
-`TRN-421` a `TRN-425` estão localmente validadas. `TRN-426` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado.
+`TRN-421` a `TRN-425` permanecem localmente validadas. `TRN-426` permanece parcial.
 
 Entrada contextual:
 
 ```text
 criar nova oportunidade/programa
-→ capacidade do ciclo atingida
+→ capacidade atingida
 ├── arquivar / agendar / manter rascunho quando aplicável
 └── comparar planos
     → ORG-301
 ```
 
-As superfícies administrativas de origem que não possuem identidade própria suficiente no registro não recebem transições inventadas nesta frente.
-
-Referência canônica:
+Referência:
 
 ![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
@@ -129,19 +141,19 @@ Referência canônica:
 
 Regras:
 
-- `ORG-301` mostra plano atual, uso e período do ciclo;
-- compara `Business Start → Business Growth → Business Scale`;
-- comparação incremental pertence a `ORG-301`, sem superfície adicional;
-- apresenta delta direto do plano atual para o escolhido;
-- `ORG-302` exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação;
-- contratação não amplia consentimento nem acesso ao contexto individual de Pessoas;
-- `ORG-303` exige selecionar unidades, administradores, publicações e Coletivos relacionados mantidos, integrações a encerrar e dados a exportar;
-- históricos/agregados não são apagados para forçar retenção;
-- `ORG-304` diferencia sucesso e falha, preservando plano anterior e direitos quando não houver confirmação;
-- Scale usa `BND-002`, não checkout definitivo;
-- capacidade comercial permanece separada de relevância, confiança, legitimidade e resultado.
+- `ORG-301` compara `Conecta → Eleva → Transforma`;
+- preços/capacidades preservam a baseline governada em GEM-004-A1;
+- comparação incremental pertence à mesma superfície;
+- delta direto atual→alvo permanece obrigatório;
+- `ORG-302` explicita preço/recorrência/início/pagador/beneficiário quando aplicáveis;
+- contratação não amplia consentimento nem acesso a dados individuais;
+- `ORG-303` trata unidades, administradores, publicações, Coletivos relacionados, integrações e exportação;
+- históricos/agregados não são apagados para retenção;
+- `ORG-304` diferencia sucesso/falha e preserva estado anterior quando não confirmado;
+- `BND-002` é genérico e não sinônimo de Transforma;
+- capacidade paga não compra relevância, confiança ou impacto.
 
-## 5. Relação com Coletivos
+## 6. Relação com Coletivos
 
 ```text
 rascunho
@@ -154,43 +166,25 @@ rascunho
 → renovação, ajuste, pausa ou encerramento
 ```
 
-| Campo | Organização | Coletivo | Estado da integração |
-|---|---|---|---|
-| autoridade | representante institucional autorizado | responsável autorizado pelo Coletivo | contratada pela UXA-019 |
-| superfície de proposta | não materializada especificamente | não materializada especificamente | ausente |
-| avaliação e negociação | contratada | contratada | não materializada |
-| aprovação bilateral | contratada | contratada | não validada |
-| relação ativa e revisão | contratada | contratada | não materializada |
-| saída, pausa e encerramento | contratada | contratada | não materializada |
+A relação preserva finalidade, compromissos, recursos, autonomia, dados, contestação e saída. Apoio ou patrocínio não concede propriedade/direção/acesso irrestrito.
 
-A relação preserva finalidade, compromissos, recursos, autonomia, dados, contestação e saída. Apoio ou patrocínio não concede propriedade, direção ou acesso irrestrito a dados.
-
-## 6. Limites de visibilidade
+## 7. Limites de visibilidade
 
 - publicação não equivale a distribuição garantida;
-- dados pessoais individuais não são expostos por padrão;
-- resultados agregados dependem de finalidade e autoridade;
-- publicidade não compra legitimidade, reputação ou relevância funcional;
-- plano pago amplia capacidade institucional, não relevância orgânica;
-- atingir limite do plano não altera retroativamente a legitimidade de publicações existentes;
-- representante institucional atua somente dentro da unidade e do papel apresentados;
-- `TRN-205` não atribui à Organização nem à Guivos controle sobre o processo externo posterior;
-- cobertura incompleta permanece indicada como lacuna.
+- dados individuais não são expostos por padrão;
+- resultados agregados dependem de finalidade/autoridade;
+- publicidade não compra legitimidade/reputação/relevância;
+- plano institucional pago amplia capacidade, não posição orgânica;
+- atingir limite não altera retroativamente publicações existentes;
+- `TRN-205` não atribui controle sobre processo externo;
+- cobertura incompleta permanece lacuna explícita.
 
-## 7. Estado da vista
+## 8. Estado da vista
 
-Esta vista permanece `draft` porque:
+A vista permanece `draft`: relação Organização–Coletivo ainda não possui materialização bilateral completa; integrações patrocinadas seguem parciais; transições internas de Planos são locais; `TRN-426` permanece parcial; cobrança real, gateway e processo assistido posterior a `BND-002` não foram validados ponta a ponta.
 
-- a relação Organização–Coletivo não possui materialização bilateral específica;
-- a matriz institucional completa ainda não existe;
-- `TRN-201` permanece parcial e `TRN-202` localmente validada;
-- integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
-- as transições internas de Planos são locais e `TRN-426` permanece parcial;
-- cobrança real, gateway e processo Scale não foram implementados/validados ponta a ponta;
-- evidências e resultados institucionais continuam sem matriz integrada.
+A separação Organização ≠ Guivos Business não promove a jornada nem cria nova superfície.
 
-`TRN-205` deixa de ser pendência desta vista: UXA-101 a valida até `BND-001`, sem promover a jornada institucional completa.
+## 9. Estado da frente
 
-## 8. Estado da frente
-
-A organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e Planos canônicos pela UXA-100-A3. Nenhuma próxima UXA é iniciada automaticamente.
+A Organização mantém publicação/descoberta validada, saída consciente até `BND-001` validada no limite Guivos e Planos canônicos pela UXA-100-A3. Nenhuma próxima UXA é iniciada automaticamente.
