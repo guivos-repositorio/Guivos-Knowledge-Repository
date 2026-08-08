@@ -2,12 +2,13 @@
 id: GEM-004-A2
 title: Política Comercial de Oferta, Upgrade, Downgrade e Cancelamento
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 depends_on:
   - GEM-004-A1
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-004-PAYWALL-POLICY-001
   - GEM-004-UPGRADE-DOWNGRADE-CANCELLATION-POLICY-001
   - UXA-011-A1
@@ -25,7 +26,7 @@ normative: true
 
 Esta política define onde, quando e como os planos candidatos poderão ser apresentados, comparados, contratados, alterados e encerrados sem reduzir autonomia, utilizar pressão indevida ou confundir assinatura com relevância funcional.
 
-Ela complementa a política conceitual do GEM-004 e governa a baseline comercial candidata do GEM-004-A1.
+Ela complementa a política conceitual do GEM-004 e governa a baseline comercial candidata do GEM-004-A1. Em nomenclatura, prevalece `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`.
 
 ## 2. Regra central
 
@@ -80,6 +81,8 @@ A oferta poderá aparecer:
 - ao solicitar administradores, unidades ou Coletivos relacionados adicionais;
 - ao solicitar analytics, automações, integrações, Power BI, API, SSO ou SLA;
 - em processo comercial solicitado pela Organização.
+
+Guivos Business é produto especializado separado e seus tiers não substituem a taxonomia `Conecta · Eleva · Transforma` da Organização.
 
 ## 4. Momentos proibidos
 
@@ -151,17 +154,17 @@ Depois de utilizar uma atividade ou uma oportunidade mensal, a superfície dever
 - próximo período de renovação;
 - publicações atuais preservadas;
 - possibilidade de aguardar sem perda de dados;
-- benefício exato do Coletivo Gestão.
+- benefício exato do Coletivo Mobiliza.
 
 Mensagem de referência:
 
-> Você utilizou a atividade gratuita incluída no Coletivo Livre neste mês. A próxima cota será liberada no próximo ciclo mensal. Para publicar outra atividade agora ou criar uma atividade paga, compare o Coletivo Gestão.
+> Você utilizou a atividade gratuita incluída no Coletivo Livre neste mês. A próxima cota será liberada no próximo ciclo mensal. Para publicar outra atividade agora ou criar uma atividade paga, compare o Coletivo Mobiliza.
 
 ### 6.2 Publicação paga
 
 Ao tentar monetizar no Coletivo Livre, a superfície deverá explicar:
 
-- que publicação paga exige Coletivo Gestão ou superior;
+- que publicação paga exige Coletivo Mobiliza ou superior;
 - que assinatura não substitui comissão, taxa do meio de pagamento ou tributo;
 - que condições comerciais e responsabilidades deverão ser revisadas;
 - que a publicação poderá permanecer gratuita sem upgrade.
