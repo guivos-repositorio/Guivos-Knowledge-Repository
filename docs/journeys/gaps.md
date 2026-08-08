@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-055
   - UXA-059
@@ -70,9 +70,11 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 | Participante | IDs | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
 | Pessoa | PER-301 a 304; TRN-401 a 405 | 3 SVGs canônicos | superfícies validadas; 5 transições localmente validadas | gateway, cobrança real, proration e entradas de origem ainda não registradas |
-| Coletivo | COL-301 a 304; TRN-411 a 416 | 3 SVGs canônicos | superfícies validadas; TRN-411 a 415 locais; TRN-416 parcial | cobrança real e processo Enterprise após BND-002 |
-| Organização | ORG-301 a 304; TRN-421 a 426 | 3 SVGs canônicos | superfícies validadas; TRN-421 a 425 locais; TRN-426 parcial | cobrança real e processo Scale após BND-002 |
+| Coletivo | COL-301 a 304; TRN-411 a 416 | 3 SVGs canônicos | superfícies validadas; TRN-411 a 415 locais; TRN-416 parcial | cobrança real e contratação/dimensionamento assistido após BND-002 |
+| Organização | ORG-301 a 304; TRN-421 a 426 | 3 SVGs canônicos | superfícies validadas; TRN-421 a 425 locais; TRN-426 parcial | cobrança real e contratação/dimensionamento assistido após BND-002 |
 | fronteira comercial | BND-002 | sem tela por definição | parcial | proposta, contrato, dimensionamento e handoffs operacionais posteriores |
+
+`BND-002` é fronteira genérica de contratação/dimensionamento assistido. Não pertence semanticamente a Enterprise, Scale, Coletivo, Organização ou a qualquer plano específico.
 
 ## 6. Gates de Coletivos
 
@@ -94,7 +96,7 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 | 4 | participantes e operação interna | COL-004 a 007; TRN-113 | sem SVGs dedicados | programa, materialização e validação |
 | 5 | relação Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | materialização e validação bilateral |
 | 6 | matriz institucional completa | ORG-001; ORG-007 | cobertura parcial | programa específico e validação |
-| 7 | processo comercial Enterprise/Scale | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
+| 7 | contratação/dimensionamento assistido | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
 
 ## 8. Fila de validação
 
@@ -125,7 +127,7 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 - validação até uma fronteira não valida comportamento de terceiro;
 - oportunidade pública não é ocultada para vender plano;
 - plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;
-- Enterprise/Scale não recebem checkout fictício;
+- contratação assistida não recebe checkout fictício;
 - repetição da mesma intenção não duplica efeito lógico;
 - validação documental não equivale a implementação técnica.
 

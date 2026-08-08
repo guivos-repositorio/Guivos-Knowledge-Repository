@@ -2,11 +2,12 @@
 id: GEM-004-PLAN-ARCHETYPE-CATALOG-001
 title: Catálogo de Arquétipos de Acesso e Planos
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 related:
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-004-A1
   - GEM-004-A2
   - GEM-COMMERCIAL-BASELINE-001
@@ -19,7 +20,7 @@ related:
 
 Organizar estruturas de acesso gratuito, pago e financiado e mapear os arquétipos conceituais para os planos comerciais candidatos vigentes.
 
-Arquétipo continua sendo uma classe conceitual. Nome, preço, benefícios e limites comerciais são governados pelo GEM-004-A1.
+Arquétipo continua sendo uma classe conceitual. Nome, preço, benefícios e limites comerciais são governados pelas autoridades aplicáveis. Em nomenclatura e separação entre participante e produto, prevalece `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`.
 
 ## 2. Catálogo consolidado
 
@@ -35,19 +36,21 @@ Arquétipo continua sendo uma classe conceitual. Nome, preço, benefícios e lim
 
 ## 3. Mapeamento comercial candidato
 
-| Plano | Arquétipo principal | Arquétipos contribuintes |
+| Plano / acesso | Arquétipo principal | Arquétipos contribuintes |
 |---|---|---|
 | Guivos Free | AM-01 | — |
 | Guivos Plus | AM-02 | AM-04; AM-05 |
 | Guivos Pro | AM-02 | AM-03; AM-04; AM-05 |
 | Coletivo Livre | AM-05 | AM-06 |
-| Coletivo Gestão | AM-06 | AM-05 |
-| Coletivo Impacto | AM-06 | AM-05; AM-07 |
-| Coletivo Enterprise | AM-07 | AM-05; AM-06 |
-| Business Start | AM-07 | AM-04; AM-06 |
-| Business Growth | AM-07 | AM-04; AM-06 |
-| Business Scale | AM-07 | AM-04; AM-06 |
+| Coletivo Mobiliza | AM-06 | AM-05 |
+| Coletivo Impacta | AM-06 | AM-05; AM-07 |
+| Coletivo Rede | AM-07 | AM-05; AM-06 |
+| Organização Conecta | AM-07 | AM-04; AM-06 |
+| Organização Eleva | AM-07 | AM-04; AM-06 |
+| Organização Transforma | AM-07 | AM-04; AM-06 |
 | Guivos Patrocinado | AM-04 ou AM-05 | plano beneficiado correspondente |
+
+Guivos Business possui taxonomia própria `Start · Growth · Scale · Enterprise`, porém é Produto Especializado e não família de planos de Organização. O mapeamento detalhado de seus tiers para arquétipos, preços e entitlements deve ser governado em autoridade própria de Business; este catálogo não cria essa autoridade.
 
 O mapeamento não transfere autoridade entre pagador, beneficiário, patrocinador, Organização ou Coletivo.
 
@@ -128,7 +131,7 @@ Ampliar acesso por recurso vinculado, patrocínio, fundação, parceiro ou progr
 - patrocinador sem controle sobre evidência ou decisão;
 - recurso vinculado separado de receita livre;
 - encerramento e continuidade compreensíveis;
-- possibilidade de financiar Plus, Pro, Coletivo Gestão ou Coletivo Impacto conforme contrato.
+- possibilidade de financiar Plus, Pro, Coletivo Mobiliza ou Coletivo Impacta conforme contrato e autoridade aplicável.
 
 ## 9. AM-06 — Parceiros, Profissionais e Coletivos Operadores
 
@@ -150,7 +153,7 @@ Disponibilizar recursos para gestão de ofertas, relacionamento, integração, a
 
 ### Finalidade
 
-Organizar capacidades do Guivos Business, Intelligence, integrações, administração, múltiplas unidades e Coletivos de maior escala.
+Organizar capacidades institucionais de gestão, administração, múltiplas unidades, integrações e operação em maior escala, sem confundir os planos de Organização com os tiers do Produto Especializado Guivos Business.
 
 ### Características candidatas
 
@@ -161,8 +164,9 @@ Organizar capacidades do Guivos Business, Intelligence, integrações, administr
 - integrações;
 - suporte;
 - capacidades para equipes;
-- API, SSO, Power BI e SLA em Scale ou Enterprise;
-- capacidade dimensionada por contrato.
+- capacidade dimensionada por contrato quando aplicável.
+
+Capacidades especializadas como API, SSO, Power BI, SLA ou integrações avançadas dependem da autoridade do produto/contrato correspondente e não são inferidas automaticamente a partir de um plano de Organização.
 
 ## 11. Regras comuns
 
@@ -176,8 +180,10 @@ Organizar capacidades do Guivos Business, Intelligence, integrações, administr
 8. preço candidato não autoriza cobrança;
 9. plano pago não aumenta relevância ou impacto;
 10. assinatura e transação permanecem separadas;
-11. capacidade sem limite fixo exige contrato e uso justo.
+11. capacidade sem limite fixo exige contrato e uso justo;
+12. Organização ≠ Guivos Business;
+13. Organização Transforma ≠ Guivos Business Enterprise.
 
 ## 12. Estado
 
-`commercial_mapping_defined — archetypes mapped to candidate plans; empirical and specialist validation pending`.
+`commercial_mapping_reconciled — participant plan taxonomy aligned; Guivos Business specialized tier mapping remains separately governed`.

@@ -2,9 +2,9 @@
 id: GKR-JOURNEYS-001
 title: Jornadas Integradas
 status: active
-version: 0.31.0
+version: 0.32.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-070
   - UXA-080
@@ -61,18 +61,18 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 
 | Camada | Estado | Referência |
 |---|---|---|
-| visão geral das Jornadas Integradas | `active` 0.31.0 | UXA-101 |
+| visão geral das Jornadas Integradas | `active` 0.32.0 | reconciliação de nomenclatura 2026-08-08 |
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
 | Jornada da Pessoa | `draft` 0.15.0 | UXA-101 |
-| Jornada do Coletivo | `draft` 0.15.0 | UXA-100-A3 |
-| Jornada da Organização | `draft` 0.8.0 | UXA-101 |
+| Jornada do Coletivo | `draft` 0.16.0 | taxonomia Livre/Mobiliza/Impacta/Rede |
+| Jornada da Organização | `draft` 0.9.0 | taxonomia Conecta/Eleva/Transforma |
 | catálogo integrado | `active` 0.26.0 | 118 SVGs canônicos |
 | registro de superfícies | `active` 0.17.0 | 53 IDs |
 | registro de transições | `active` 0.18.0 | 54 transições |
 | galeria visual integrada | `active` 0.21.0 | 118 SVGs canônicos |
 | galeria de Planos | `active` 0.3.0 | 9 SVGs canônicos |
 | matriz por SVG | `active` 0.17.0 | 118 associações / 31 perfis |
-| registro de lacunas | `active` 0.26.0 | V4 encerrada; V5 pendente |
+| registro de lacunas | `active` 0.27.0 | V4 encerrada; V5 pendente |
 | protótipo, aplicação e motor | não iniciados | — |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
@@ -96,10 +96,17 @@ PER-203 → revisão consciente no mesmo estado → TRN-205 → BND-001
 *-301 Planos e comparação
 ├── upgrade → *-302 revisão → *-304 resultado/recuperação → *-301
 ├── downgrade/cancelamento → *-303 → *-304 → *-301
-└── Enterprise/Scale → BND-002 quando aplicável
+└── quando autoatendimento não for suficiente → BND-002
 ```
 
-As transições internas continuam localmente validadas; `TRN-416/426` permanecem parciais. Cobrança real e processo posterior a `BND-002` continuam fora do escopo.
+A nomenclatura vigente é:
+
+- Pessoa: `Free · Plus · Pro`;
+- Coletivo: `Livre · Mobiliza · Impacta · Rede`;
+- Organização: `Conecta · Eleva · Transforma`;
+- Guivos Business: `Start · Growth · Scale · Enterprise`, como Produto Especializado separado.
+
+`BND-002` é fronteira genérica de contratação/dimensionamento assistido e não plano. As transições internas continuam localmente validadas; `TRN-416/426` permanecem parciais. Cobrança real e processo posterior a `BND-002` continuam fora do escopo.
 
 ## 7. Cobertura canônica
 
@@ -119,6 +126,9 @@ As transições internas continuam localmente validadas; `TRN-416/426` permanece
 ## 8. Separações obrigatórias
 
 - Planos canonicamente registrado não equivale a checkout implementado;
+- Organização ≠ Guivos Business;
+- Organização Transforma ≠ Guivos Business Enterprise;
+- `BND-002` ≠ Enterprise ou Scale;
 - revisão de saída em `PER-203` não cria tela nova;
 - validação até `BND-001` não valida sistema de terceiro;
 - pagar um plano ou patrocínio não altera relevância funcional;

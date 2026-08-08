@@ -32,6 +32,9 @@ jobs:
       - name: Validate front matter, IDs, links and navigation
         run: python scripts/validate_gkr.py
 
+      - name: Validate legacy nomenclature
+        run: python scripts/validate_legacy_nomenclature.py
+
       - name: Check whitespace errors in the proposed diff
         shell: bash
         run: |

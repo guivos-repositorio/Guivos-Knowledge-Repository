@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-014
   - UXA-016
@@ -86,10 +86,10 @@ COL-301 — Planos e comparação
 ├── TRN-413 → COL-303 — downgrade/cancelamento
 │   └── TRN-414 → COL-304
 │       └── TRN-415 → COL-301
-└── TRN-416 → BND-002 — proposta Enterprise
+└── TRN-416 → BND-002 — contratação/dimensionamento assistido
 ```
 
-`TRN-411` a `TRN-415` estão localmente validadas no pacote UXA-100. `TRN-416` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado.
+`TRN-411` a `TRN-415` estão localmente validadas no pacote UXA-100. `TRN-416` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado. `BND-002` representa a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a um plano específico.
 
 Entrada contextual permanece válida:
 
@@ -112,7 +112,7 @@ Referência canônica:
 Regras:
 
 - `COL-301` mostra plano atual e consumo do ciclo;
-- compara `Livre → Gestão → Impacto → Enterprise`;
+- compara `Livre → Mobiliza → Impacta → Rede`;
 - comparação incremental pertence a `COL-301` e não cria tela própria;
 - o delta direto plano atual → alvo permanece obrigatório;
 - `COL-302` exibe preço mensal/anual, recorrência, início, pagador/beneficiário e método em simulação antes da confirmação;
@@ -121,7 +121,7 @@ Regras:
 - `COL-303` exige tratamento explícito de publicações gratuitas/pagas, administradores, núcleos/unidades, compromissos e exportação antes do downgrade;
 - nenhum registro ou participante é apagado silenciosamente para efetivar redução de plano;
 - `COL-304` diferencia sucesso de falha e preserva o estado anterior quando não houver confirmação;
-- Enterprise usa `BND-002`, não checkout autônomo;
+- quando a contratação não puder ser concluída em autoatendimento, a jornada usa `BND-002` como fronteira assistida;
 - plano pago não aumenta relevância orgânica, legitimidade ou impacto.
 
 A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu `COL-301` a `COL-304`.
@@ -136,7 +136,7 @@ A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu `CO
 | PER-106 → PER-107 (`TRN-110`) | integralmente validada |
 | PER-107 → PER-108 (`TRN-111`) | **integralmente validada por UXA-096** |
 | Coletivo ↔ Organização | contratada; materialização bilateral pendente |
-| COL-301 → BND-002 (`TRN-416`) | **parcial; processo Enterprise posterior não materializado** |
+| COL-301 → BND-002 (`TRN-416`) | **parcial; processo de contratação/dimensionamento assistido posterior não materializado** |
 
 ## 5. Efeito da UXA-096
 
@@ -170,9 +170,9 @@ Esta vista permanece `draft` porque:
 - estados P0B de superfícies da Pessoa permanecem separados;
 - a relação Organização–Coletivo permanece contratada e não materializada;
 - as transições de Planos são locais e `TRN-416` permanece parcial;
-- cobrança real, gateway e processo Enterprise não foram implementados/validados ponta a ponta;
+- cobrança real, gateway e processo assistido posterior a `BND-002` não foram implementados/validados ponta a ponta;
 - outras continuidades ainda não foram examinadas como conjunto.
 
 ## 8. Estado da frente de Planos
 
-A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em `COL-301` a `COL-304`, `TRN-411` a `TRN-416` e `BND-002`. Nenhuma próxima UXA é iniciada automaticamente.
+A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em `COL-301` a `COL-304`, `TRN-411` a `TRN-416` e `BND-002`. A taxonomia vigente desta frente é `Livre · Mobiliza · Impacta · Rede`. Nenhuma próxima UXA é iniciada automaticamente.

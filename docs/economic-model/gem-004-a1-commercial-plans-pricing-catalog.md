@@ -2,12 +2,13 @@
 id: GEM-004-A1
 title: Catálogo Comercial Candidato de Planos, Benefícios e Preços
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 depends_on:
   - GEM-004
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-004-UNIVERSAL-FREE-VALUE-BASELINE-001
   - GEM-004-CAPABILITY-ALLOCATION-MATRIX-001
   - GEM-004-UPGRADE-DOWNGRADE-CANCELLATION-POLICY-001
@@ -23,9 +24,11 @@ normative: true
 
 ## 1. Finalidade
 
-Este catálogo consolida a primeira baseline comercial candidata dos planos destinados a Pessoas, Coletivos e Organizações.
+Este catálogo consolida a baseline comercial candidata dos planos destinados a Pessoas, Coletivos e Organizações.
 
 A baseline define nomes comerciais candidatos, preços de referência, benefícios, limites, condições de acesso financiado e separações econômicas necessárias para validação.
+
+A versão 0.2.0 reconcilia a nomenclatura com `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`: Pessoa usa `Free · Plus · Pro`, Coletivo usa `Livre · Mobiliza · Impacta · Rede` e Organização usa `Conecta · Eleva · Transforma`. Guivos Business permanece Produto Especializado separado, com taxonomia própria `Start · Growth · Scale · Enterprise` e sem preços ou entitlements criados por este catálogo.
 
 Ela não constitui oferta pública, autorização de cobrança, tabela fiscal, contrato definitivo, promessa de capacidade infinita ou evidência de disposição a pagar.
 
@@ -49,7 +52,7 @@ Nenhum plano poderá entrar em produção somente porque consta neste catálogo.
 - cobrança mensal: recorrente, quando contratada;
 - cobrança anual: pagamento antecipado correspondente aproximadamente a dez mensalidades;
 - preços anuais representam desconto candidato equivalente a cerca de dois meses;
-- preços empresariais sob consulta exigem contrato anual e capacidade dimensionada;
+- preços sob consulta exigem contrato anual e capacidade dimensionada;
 - impostos, taxas de processamento, comissões transacionais e condições regionais permanecem sujeitos a validação especializada;
 - nenhuma conversão automática de trial integra esta baseline;
 - valores poderão ser alterados antes de qualquer oferta pública mediante decisão governada.
@@ -67,7 +70,9 @@ Nenhum plano poderá entrar em produção somente porque consta neste catálogo.
 9. organização, patrocinador ou financiador não recebe acesso indevido ao contexto individual;
 10. nenhuma opção paga aumenta relevância funcional, veracidade, impacto ou posição orgânica;
 11. limites periódicos não são acumulativos;
-12. capacidade apresentada como sem limite fixo permanece sujeita ao contrato, segurança, capacidade operacional e política de uso justo.
+12. capacidade apresentada como sem limite fixo permanece sujeita ao contrato, segurança, capacidade operacional e política de uso justo;
+13. Organização ≠ Guivos Business;
+14. Organização Transforma ≠ Guivos Business Enterprise.
 
 ## 5. Planos para Pessoas
 
@@ -183,7 +188,7 @@ Oferecer maior profundidade analítica, integração autorizada, relatórios e a
 
 ### 6.1 Visão comparativa
 
-| Capacidade | Coletivo Livre | Coletivo Gestão | Coletivo Impacto | Coletivo Enterprise |
+| Capacidade | Coletivo Livre | Coletivo Mobiliza | Coletivo Impacta | Coletivo Rede |
 |---|---:|---:|---:|---:|
 | Preço mensal candidato | R$ 0,00 | R$ 89,90 | R$ 249,90 | sob consulta |
 | Preço anual candidato | R$ 0,00 | R$ 899,00 | R$ 2.499,00 | contrato anual |
@@ -228,7 +233,7 @@ Permitir presença inicial, experimentação e mobilização gratuita de pequena
 - atingir o limite não reduzirá a visibilidade das publicações existentes;
 - publicações ativas continuarão gerenciáveis até seu encerramento.
 
-### 6.3 Coletivo Gestão
+### 6.3 Coletivo Mobiliza
 
 #### Finalidade
 
@@ -256,7 +261,7 @@ Atender Coletivos com pequena operação recorrente e necessidade de monetizaç�
 - relatórios financeiros básicos;
 - não inclui API, SSO, múltiplos núcleos ou dashboards personalizados.
 
-### 6.4 Coletivo Impacto
+### 6.4 Coletivo Impacta
 
 #### Finalidade
 
@@ -280,10 +285,10 @@ Atender operação estruturada, programas recorrentes, parceiros e mensuração 
 #### Limites
 
 - cotas mensais não acumulativas;
-- volume acima do limite exige Enterprise ou contratação específica;
+- volume acima do limite exige Coletivo Rede ou contratação/dimensionamento específico;
 - impacto somente poderá ser declarado com evidência e metodologia autorizadas.
 
-### 6.5 Coletivo Enterprise
+### 6.5 Coletivo Rede
 
 #### Finalidade
 
@@ -341,7 +346,7 @@ A exclusão e recriação da mesma oferta não reiniciará a cota.
 
 ### 7.1 Visão comparativa
 
-| Capacidade | Guivos Business Start | Guivos Business Growth | Guivos Business Scale |
+| Capacidade | Organização Conecta | Organização Eleva | Organização Transforma |
 |---|---:|---:|---:|
 | Preço mensal candidato | R$ 299,00 | R$ 799,00 | a partir de R$ 1.990,00 |
 | Preço anual candidato | R$ 2.990,00 | R$ 7.990,00 | contrato anual |
@@ -356,13 +361,15 @@ A exclusão e recriação da mesma oferta não reiniciará a cota.
 | Power BI | não | exportação compatível | integração dedicada |
 | Suporte | padrão | prioritário | atendimento dedicado e SLA |
 
-### 7.2 Guivos Business Start
+Os limites e capacidades acima permanecem **premissas econômicas candidatas herdadas da baseline de Organização** e precisam de reconciliação/validação específica de entitlement. A migração de nomenclatura não transforma essa tabela em tabela de Guivos Business.
+
+### 7.2 Organização Conecta
 
 #### Finalidade
 
 Permitir presença institucional e operação inicial de oportunidades e programas.
 
-#### Benefícios incluídos
+#### Benefícios candidatos preservados da baseline
 
 - perfil institucional;
 - até três administradores;
@@ -376,13 +383,13 @@ Permitir presença institucional e operação inicial de oportunidades e program
 - exportação básica;
 - suporte padrão.
 
-### 7.3 Guivos Business Growth
+### 7.3 Organização Eleva
 
 #### Finalidade
 
 Atender Organizações com operação recorrente, múltiplos públicos, programas e necessidade analítica ampliada.
 
-#### Benefícios incluídos
+#### Benefícios candidatos preservados da baseline
 
 - até dez administradores;
 - até cinco unidades;
@@ -396,13 +403,13 @@ Atender Organizações com operação recorrente, múltiplos públicos, programa
 - gestão ampliada de elegibilidade;
 - suporte prioritário.
 
-### 7.4 Guivos Business Scale
+### 7.4 Organização Transforma
 
 #### Finalidade
 
-Atender Organizações de grande porte, redes e operações multiunidade.
+Atender Organizações com operação de maior complexidade, múltiplas unidades, programas e necessidades de dimensionamento assistido.
 
-#### Benefícios candidatos
+#### Benefícios candidatos preservados da baseline
 
 - capacidade de publicações dimensionada por contrato;
 - múltiplas unidades;
@@ -420,6 +427,20 @@ Atender Organizações de grande porte, redes e operações multiunidade.
 
 O preço mensal de R$ 1.990,00 é referência mínima candidata e não substitui dimensionamento e proposta comercial.
 
+### 7.5 Guivos Business — separação obrigatória
+
+Guivos Business não é plano de Organização. É Produto Especializado, com tiers `Start · Growth · Scale · Enterprise`.
+
+Este catálogo não atribui aos tiers de Guivos Business os preços, limites ou benefícios das seções 7.1 a 7.4. Qualquer futura tabela comercial de Business deverá ter autoridade própria.
+
+Não existe equivalência econômica automática:
+
+```text
+Organização Conecta ≠ Guivos Business Start
+Organização Eleva ≠ Guivos Business Growth
+Organização Transforma ≠ Guivos Business Scale ou Enterprise
+```
+
 ## 8. Acesso financiado e patrocinado
 
 ### 8.1 Guivos Patrocinado
@@ -429,7 +450,7 @@ Acesso financiado poderá ser atribuído sem cobrança ao beneficiário, por pra
 Poderá equivaler, conforme contrato, a:
 
 - Guivos Plus ou Guivos Pro para Pessoas;
-- Coletivo Gestão ou Coletivo Impacto;
+- Coletivo Mobiliza ou Coletivo Impacta;
 - capacidades organizacionais específicas;
 - programas sociais ou institucionais limitados.
 
@@ -508,4 +529,5 @@ A baseline não aprova:
 - CAC ou LTV;
 - internacionalização de preços;
 - contrato ou termo de uso;
-- implementação.
+- implementação;
+- preços ou entitlements de Guivos Business.

@@ -2,13 +2,14 @@
 id: GEM-004
 title: Modelo Gratuito e Pago
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-000
 depends_on:
   - GEM-003
   - GEM-003-DEPENDENCY-VALIDATION-CHECKPOINT-001
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
 related:
   - GEM-004-UNIVERSAL-FREE-VALUE-BASELINE-001
   - GEM-004-PLAN-ARCHETYPE-CATALOG-001
@@ -28,7 +29,7 @@ related:
 
 Definir como o Ecossistema Guivos distribui capacidades entre acesso gratuito, acesso pago e acesso financiado por terceiros, preservando valor universal, autonomia, segurança, transparência e sustentabilidade.
 
-A versão 0.2.0 incorpora a baseline comercial candidata de planos, benefícios, limites e preços para Pessoas, Coletivos e Organizações.
+A versão 0.3.0 reconcilia a baseline comercial com a autoridade conceitual vigente de planos, separando definitivamente os planos de Organização dos tiers do Produto Especializado Guivos Business.
 
 ## 2. Pergunta arquitetural
 
@@ -128,7 +129,7 @@ Acesso cujo custo é assumido por organização, patrocinador, parceiro, program
 6. AM-06 — Acesso de Parceiros e Profissionais;
 7. AM-07 — Acesso Organizacional.
 
-## 8. Planos comerciais candidatos
+## 8. Taxonomia comercial vigente para validação
 
 ### Pessoas
 
@@ -139,21 +140,34 @@ Acesso cujo custo é assumido por organização, patrocinador, parceiro, program
 ### Coletivos
 
 - Coletivo Livre;
-- Coletivo Gestão;
-- Coletivo Impacto;
-- Coletivo Enterprise.
+- Coletivo Mobiliza;
+- Coletivo Impacta;
+- Coletivo Rede.
 
 ### Organizações
 
-- Guivos Business Start;
-- Guivos Business Growth;
-- Guivos Business Scale.
+- Organização Conecta;
+- Organização Eleva;
+- Organização Transforma.
+
+### Guivos Business
+
+Guivos Business é Produto Especializado e não um tipo de participante nem uma família de planos de Organização. Sua taxonomia própria é:
+
+- Start;
+- Growth;
+- Scale;
+- Enterprise.
+
+Não existe correspondência automática 1:1 entre `Conecta / Eleva / Transforma` e `Start / Growth / Scale / Enterprise`.
+
+> **Organização Transforma ≠ Guivos Business Enterprise.**
 
 ### Acesso transversal
 
 - Guivos Patrocinado ou financiado.
 
-Nomes, preços, benefícios e limites são governados pelo GEM-004-A1.
+Nomes, preços, benefícios e limites de Pessoa, Coletivo e Organização são governados pela autoridade conceitual vigente e pelos artefatos econômicos derivados aplicáveis. A taxonomia de Guivos Business não autoriza preços ou entitlements de Business onde eles ainda não tenham autoridade específica.
 
 ## 9. Requisitos mínimos de admissibilidade
 
@@ -176,16 +190,17 @@ Uma diferenciação somente poderá avançar quando:
 
 A baseline candidata está distribuída em:
 
-- GEM-004-A1 — planos, benefícios, limites e preços;
+- autoridade conceitual de taxonomia de planos — nomes, fronteiras e precedência semântica;
+- GEM-004-A1 — planos, benefícios, limites e preços aplicáveis;
 - GEM-004-A2 — oferta, upgrade, downgrade e cancelamento;
 - GEM-010-A1 — premissas de preço, custos e validação;
 - GEM-COMMERCIAL-BASELINE-001 — parecer de reabertura localizada.
 
-O conjunto é documentalmente definido e empiricamente não validado.
+O conjunto é documentalmente definido e empiricamente não validado. Em caso de conflito de nomenclatura, prevalece `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`.
 
 ## 11. Limites desta versão
 
-A versão 0.2.0 não aprova:
+A versão 0.3.0 não aprova:
 
 - oferta pública;
 - cobrança;
@@ -199,7 +214,8 @@ A versão 0.2.0 não aprova:
 - unit economics calibrados;
 - contratos;
 - implementação de entitlement;
-- produção.
+- produção;
+- preços ou entitlements próprios de Guivos Business sem autoridade específica.
 
 ## 12. Critérios de conclusão documental
 
@@ -208,7 +224,8 @@ A versão 0.2.0 não aprova:
 - ampliações pagas catalogadas;
 - arquétipos preservados;
 - planos comerciais candidatos para Pessoas, Coletivos e Organizações consolidados;
-- preços e limites candidatos registrados;
+- Guivos Business preservado como Produto Especializado separado;
+- preços e limites candidatos registrados onde houver autoridade aplicável;
 - acesso financiado estruturado;
 - regras de cotas documentadas;
 - separação entre assinatura e transação estabelecida;
