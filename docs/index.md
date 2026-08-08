@@ -8,15 +8,16 @@ A autoridade transversal é o [Registro do Estado Atual](project/current-state-r
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` **2.29.0** |
+| Registro | `GKR-STATE-001` **2.30.0** |
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88** |
 | Última frente funcional | **UXA-101** |
+| Reconciliação de Planos | **UXA-100-A4 — origem voluntária e retorno** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Galeria | **118 SVGs** |
 | Matriz por SVG | **118 associações / 31 perfis** |
-| Superfícies/estados/fronteiras | **53** |
-| Transições | **54** |
+| Superfícies/estados/fronteiras | **54** |
+| Transições | **60** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Ressincronização P0–P9 | consolidada documentalmente após integração de P9 |
 
@@ -26,13 +27,14 @@ A superfície institucional pública vigente é o [GOG-001 — Guia Oficial da G
 
 O Guia foi reconciliado com as autoridades atuais e diferencia visão, arquitetura, implementação e operação.
 
-## Consolidação P9
+## Consolidação e reconciliações recentes
 
 - [Consolidação Global e Public Canon — P9](project/p9-global-consolidation-and-public-canon-2026-08-08.md)
+- [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 - [Matriz de Consolidação Canônica 3.0.0](project/canonical-consolidation-matrix.md)
 - [Roadmap 12.76.0](roadmap.md)
 
-O programa P0–P9 está consolidado quanto à ressincronização documental. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
+O programa P0–P9 está consolidado quanto à ressincronização documental. A UXA-100-A4 não cria novo marco funcional nem inicia UXA-102. Lacunas empíricas, tecnológicas, jurídicas e operacionais permanecem abertas em suas autoridades próprias.
 
 ## Participantes, produtos e planos
 
@@ -48,6 +50,8 @@ Planos:
 - Guivos Business: Start · Growth · Scale · Enterprise.
 
 `Organização ≠ Guivos Business`.
+
+A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa permanece sem SVG dedicado e, portanto, seus dois handoffs ficam contratados até materialização suficiente.
 
 ## Autoridades temáticas
 
@@ -75,10 +79,11 @@ Portugal = T1_candidate ≠ mercado ativo
 privacidade por arquitetura ≠ conformidade operacional comprovada
 método de pesquisa ≠ resultado de mercado
 pontos/créditos ≠ evolução
+navegar para Planos ≠ contratar ou iniciar cobrança
 ```
 
 ## Limites preservados
 
-P9 não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, cobrança real, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
+A reconciliação atual não autoriza UXA-102/V5, Product Engineering, piloto internacional, implementação Neo4j, cobrança real, processo posterior a `BND-002`, programa operacional de pontos/créditos, constituição da Fundação Guivos, resultado de mercado não evidenciado ou operação de controles legais/privacidade não comprovados.
 
 Em caso de divergência, prevalecem `GKR-STATE-001` e a autoridade temática específica mais recente.
