@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.13.0
+version: 0.14.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -28,6 +28,8 @@ related:
   - UXA-095
   - UXA-096
   - UXA-100
+  - UXA-100-A1
+  - UXA-100-A2
 normative: false
 ---
 
@@ -102,18 +104,20 @@ A tela candidata dedicada é:
 
 [Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-A tela deve:
+A tela e o fluxo devem:
 
 - mostrar o plano atual e o consumo do ciclo;
 - comparar `Livre → Gestão → Impacto → Enterprise`;
 - mostrar somente o ganho incremental de cada degrau, sem reapresentar herança como novidade;
 - mostrar delta direto plano atual → plano escolhido;
+- exibir preço mensal/anual e recorrência aplicável antes da confirmação;
 - manter ações operacionais não pagas válidas quando existirem;
 - tratar Enterprise como proposta comercial e capacidade contratada, não checkout autônomo;
-- no downgrade, mostrar cotas, administradores, núcleos, integrações e demais capacidades reduzidas;
+- no downgrade para Livre, escolher publicações gratuitas mantidas, encerrar/converter pagas excedentes e reduzir administradores/núcleos conforme limite;
+- preservar compromissos, exportação e registros aplicáveis sem exclusão silenciosa;
 - deixar claro que assinatura não aumenta relevância orgânica, legitimidade ou impacto.
 
-Esta etapa é materialização candidata e ainda não possui ID canônico de superfície ou transição.
+A UXA-100-A2 aprovou funcionalmente esta etapa como candidata após reformulação da tela dedicada e do fluxo. Ela ainda não possui ID canônico de superfície ou transição.
 
 ## 4. Handoffs críticos
 
@@ -157,9 +161,9 @@ Esta vista permanece `draft` porque:
 - participantes, comunicação e demais áreas do responsável continuam incompletos;
 - estados P0B de superfícies da Pessoa permanecem separados;
 - a relação Organização–Coletivo permanece contratada e não materializada;
-- Planos é etapa candidata da UXA-100 sem superfície/transição canônica;
+- Planos foi aprovado funcionalmente apenas como etapa candidata, sem superfície/transição canônica;
 - outras continuidades ainda não foram examinadas como conjunto.
 
 ## 8. Próxima evolução possível
 
-A UXA-100 adiciona Planos à leitura operacional do Coletivo sem promover a jornada. A próxima decisão desta frente é validar funcionalmente as telas e definir superfícies/transições somente após essa validação.
+A etapa Planos já foi auditada pela UXA-100-A2. A próxima decisão desta frente é definir, em ato governado separado, se os ativos serão fracionados e quais superfícies/transições canônicas serão criadas. Nenhuma promoção é automática.
