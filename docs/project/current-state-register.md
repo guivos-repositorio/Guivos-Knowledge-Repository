@@ -2,7 +2,7 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.29.0
+version: 2.30.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-08
 depends_on:
@@ -16,6 +16,7 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A4
   - UXA-101
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GTM-000
@@ -45,9 +46,9 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9 de 2026-08-08.
+Este registro declara o estado global vigente do Guivos Knowledge Repository após a consolidação documental P1–P9 de 2026-08-08 e a reconciliação controlada da origem voluntária de Planos pela UXA-100-A4.
 
-A consolidação documental **não cria novo marco funcional, não inicia implementação e não converte arquitetura, plano ou método em operação comprovada**. Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
+A UXA-100-A4 **não cria novo marco funcional, não inicia implementação e não converte arquitetura, plano ou método em operação comprovada**. Em caso de divergência, prevalece esta autoridade transversal e, dentro de cada domínio, a autoridade temática específica mais recente.
 
 ## 2. Estado global
 
@@ -56,9 +57,10 @@ A consolidação documental **não cria novo marco funcional, não inicia implem
 | Era | GE-2 — Knowledge |
 | Marco funcional | **M7.88 — saída consciente para fronteira externa validada** |
 | Última frente funcional | **UXA-101** |
+| Subfrente de reconciliação | **UXA-100-A4 — origem voluntária de Planos** |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
-| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** |
+| Registros granulares | **54 superfícies/estados/fronteiras e 60 transições** |
 | Galeria visual | **118 SVGs** |
 | Matriz por SVG | **118 associações / 31 perfis** |
 | Jornadas principais | Pessoa, Coletivo e Organização permanecem `draft` |
@@ -72,20 +74,22 @@ A consolidação documental **não cria novo marco funcional, não inicia implem
 | P8 | sete Produtos Especializados rebaselineados |
 | P9 | consolidação global e Public Canon em edição corrente |
 
-## 3. Cobertura funcional preservada
+## 3. Cobertura funcional preservada e reconciliada
 
-A consolidação P1–P9 não altera as contagens funcionais:
+A UXA-100-A4 não cria SVGs; ela adiciona somente uma responsabilidade canônica sem tela própria e seis handoffs de navegação:
 
 - 118 SVGs existentes e referenciados;
 - 118 associações individuais;
 - 31 perfis de rastreabilidade;
 - 118 validações funcionais vigentes de SVG;
 - 0 pendentes de validação específica de SVG;
-- 42 de 53 IDs granulares com referência visual;
-- 9 responsabilidades sem SVG dedicado;
+- 42 de 54 IDs granulares com referência visual;
+- 10 responsabilidades sem SVG dedicado;
 - 2 fronteiras sem tela por definição;
-- 53 superfícies/estados/fronteiras;
-- 54 transições documentais.
+- 54 superfícies/estados/fronteiras;
+- 60 transições documentais.
+
+`PER-009 — Conta e configurações da Pessoa` é a única nova responsabilidade canônica e permanece sem SVG. `TRN-406/407` ficam contratadas; `TRN-417/418` e `TRN-427/428` são integralmente validadas no limite documental de navegação administrativa. As transições comerciais internas de Planos preservam suas maturidades anteriores.
 
 A UXA-101 continua encerrando V4 em `BND-001`. Resultado executado por terceiro após essa fronteira não é presumido pela Guivos.
 
@@ -125,7 +129,7 @@ Guivos Mall = nome canônico
 Guivos Marketplace = alias histórico/migração
 ```
 
-`BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
+A UXA-100-A4 corrige no SVG de `ORG-001` o rótulo visual obsoleto `Guivos Business`, sem criar novo ativo. `BND-002` permanece fronteira genérica de contratação/dimensionamento assistido e não pertence semanticamente a um plano específico.
 
 ## 5. Go-to-Market e internacionalização
 
@@ -275,13 +279,15 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 | V2 — publicação → descoberta/mapa/lista/detalhe | encerrada pela UXA-098 |
 | V3 — estados residuais Opportunity Boost | encerrada pela UXA-099 |
 | Planos — identidade/promoção canônica | encerrada pela UXA-100-A3 |
+| Planos — origem voluntária e retorno | **identidade encerrada pela UXA-100-A4; PER-009 ainda sem materialização** |
 | V4 — efeito externo de oportunidades | encerrada pela UXA-101 até BND-001 |
 | V5 — erros, retornos e interrupções | **pendente; não iniciada** |
 
 ## 15. Preservações finais
 
 - M7.88 permanece o marco funcional;
-- UXA-101 permanece a última frente funcional;
+- UXA-101 permanece a última frente funcional numerada;
+- UXA-100-A4 é subfrente de reconciliação e não inicia UXA-102;
 - UXA-102/V5 não foi iniciada;
 - Engenharia de Produto permanece pausada antes de W0-01;
 - Pessoa, Coletivo e Organização permanecem jornadas `draft`;
@@ -297,4 +303,4 @@ O programa amplo de ressincronização documental está **consolidado** quanto a
 
 ## 16. Próximo ato governado
 
-Após a consolidação P9, novas frentes devem partir de necessidade, evidência ou autorização própria. O P9 não inicia UXA-102, Product Engineering, operação internacional, implantação tecnológica, programa social, pesquisa real, cobrança ou qualquer outro ato operacional.
+Após esta reconciliação, materialização de `PER-009`, maturidade das transições internas de Planos, cobrança real, processo posterior a `BND-002`, UXA-102/V5 e Product Engineering permanecem frentes separadas e exigem autorização própria.

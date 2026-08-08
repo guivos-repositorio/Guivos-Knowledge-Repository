@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-PERSON-001
 title: Jornada Integrada da Pessoa
 status: draft
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-002
   - UXA-004
@@ -39,6 +39,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
 normative: false
 ---
@@ -107,23 +108,25 @@ Referência visual reformulada e revalidada pela UXA-101:
 
 ## 3. Planos como etapa transversal canônica
 
-A UXA-100-A3 promove **Planos** como etapa canonicamente registrada da jornada da Pessoa. Ela não substitui Hoje, Explorar, Mapa ou Detalhe e não transforma assinatura em requisito para acessar oportunidades públicas.
+A UXA-100-A3 promove **Planos** como etapa canonicamente registrada da jornada da Pessoa. A UXA-100-A4 fecha a identidade documental de sua origem voluntária sem criar uma tela artificial de Conta.
 
 ```text
-PER-301 — Planos e comparação
-├── TRN-401 → PER-302 — revisão de contratação
-│   └── TRN-402 → PER-304 — resultado/recuperação
-│       └── TRN-405 → PER-301
-└── TRN-403 → PER-303 — downgrade/cancelamento
-    └── TRN-404 → PER-304
-        └── TRN-405 → PER-301
+PER-009 — Conta e configurações
+├── TRN-406 → PER-301 — Planos e comparação
+│   ├── TRN-401 → PER-302 — revisão de contratação
+│   │   └── TRN-402 → PER-304 — resultado/recuperação
+│   │       └── TRN-405 → PER-301
+│   ├── TRN-403 → PER-303 — downgrade/cancelamento
+│   │   └── TRN-404 → PER-304
+│   │       └── TRN-405 → PER-301
+│   └── TRN-407 → PER-009 — retorno sem alteração de plano
 ```
 
-As cinco transições estão **localmente validadas**; isso não comprova gateway, cobrança real, proration ou execução técnica de entitlement.
+`TRN-401` a `TRN-405` permanecem **localmente validadas**. `TRN-406/407` ficam **contratadas**, pois `PER-009` possui identidade canônica suficiente para o handoff, mas ainda não possui materialização visual própria que sustente validação ponta a ponta.
 
-Entrada voluntária continua prevista por Conta/Configurações. Como essa área genérica ainda não possui ID único no registro, a UXA-100-A3 não inventa transição de origem.
+Abrir Planos por `TRN-406` não seleciona plano, não inicia cobrança, não consome cota e não amplia consentimento. Retornar por `TRN-407` não cancela assinatura nem altera o plano atual.
 
-Entrada contextual legítima:
+Entrada contextual legítima permanece:
 
 ```text
 correspondência personalizada adicional após cota Free
@@ -176,6 +179,7 @@ Explorar Coletivos
 - proximidade não equivale a relevância;
 - patrocínio e plano pago não compram relevância funcional;
 - atingir cota personalizada do Free não oculta catálogo público;
+- abrir Planos voluntariamente não cria intenção de compra;
 - abrir Detalhe não cria obrigação de agir;
 - sair para ambiente externo não amplia consentimento nem transfere a jornada pessoal por padrão;
 - compartilhar pouco permanece legítimo;
@@ -189,8 +193,8 @@ Explorar Coletivos
 Esta vista permanece `draft` porque:
 
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` ainda são parciais;
-- as transições de Planos são locais e não representam cobrança ponta a ponta;
-- entradas genéricas de Conta/Configurações e correspondência personalizada ainda não possuem transições canônicas de origem;
+- as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;
+- `PER-009` ainda não possui materialização própria e `TRN-406/407` permanecem contratadas;
 - estados P0B adicionais permanecem separados;
 - áreas internas especializadas a partir de `PER-108` não foram validadas como conjunto;
 - outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.
@@ -199,4 +203,4 @@ Esta vista permanece `draft` porque:
 
 ## 7. Estado atual
 
-V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada. V5 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.
+V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. V5/UXA-102 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.

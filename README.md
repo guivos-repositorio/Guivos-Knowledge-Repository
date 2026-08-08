@@ -8,7 +8,7 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 | Elemento | Estado |
 |---|---|
-| GKR-STATE-001 | **2.29.0** |
+| GKR-STATE-001 | **2.30.0** |
 | Era | GE-2 — Knowledge |
 | marco funcional | **M7.88** |
 | última UXA | **UXA-101** |
@@ -16,12 +16,12 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | SVGs | **118** |
 | associações | **118** |
 | perfis | **31** |
-| superfícies/estados/fronteiras | **53** |
-| transições | **54** |
+| superfícies/estados/fronteiras | **54** |
+| transições | **60** |
 | Engenharia de Produto | pausada antes de W0-01 |
 | programa P0–P9 | consolidado documentalmente após integração de P9 |
 
-A consolidação P9 não cria novo marco funcional nem inicia implementação.
+A UXA-100-A4 reconcilia a origem voluntária de Planos sem criar novo marco funcional, novo SVG ou implementação.
 
 ## Public Canon
 
@@ -32,6 +32,7 @@ A edição 5.0.0 foi reconciliada com as autoridades atuais de participantes, pl
 ## Autoridades recentes
 
 - [Consolidação Global e Public Canon — P9](docs/project/p9-global-consolidation-and-public-canon-2026-08-08.md)
+- [UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](docs/experience-architecture/uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md)
 - [Matriz de Consolidação Canônica 3.0.0](docs/project/canonical-consolidation-matrix.md)
 - [Go-to-Market, Growth & Capital](docs/go-to-market/index.md)
 - [GTM-007 — Internacionalização e Programa Territorial](docs/go-to-market/gtm-007-internationalization-and-territorial-governance.md)
@@ -64,6 +65,8 @@ aceite contratual ≠ consentimento LGPD ≠ preferência
 
 Plano não representa mérito, prestígio ou nível de evolução.
 
+A origem voluntária de Planos está formalizada por `PER-009 ↔ PER-301`, `COL-002 ↔ COL-301` e `ORG-001 ↔ ORG-301`. A origem da Pessoa ainda não possui SVG dedicado; navegar para Planos não equivale a contratar ou iniciar cobrança.
+
 ## Limites atuais
 
 Não estão autorizados ou comprovados apenas pela consolidação documental:
@@ -79,6 +82,7 @@ Não estão autorizados ou comprovados apenas pela consolidação documental:
 - piloto ou mercado ativo em Portugal;
 - Porto ou segundo país europeu sem novo gate;
 - cobrança real/gateway;
+- processo posterior a `BND-002`;
 - resultados de terceiros após `BND-001`.
 
 ## Navegação

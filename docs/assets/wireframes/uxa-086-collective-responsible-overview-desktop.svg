@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
   <title id="title">Visão Geral do Responsável do Coletivo</title>
-  <desc id="desc">Wireframe estrutural de baixa fidelidade para computador, reformulado pela UXA-087, com contexto explícito de autoridade, momento operacional, atenção principal com prazo e alternativa legítima, solicitações e vínculos, comunicação, proteção, governança e retorno ao contexto anterior.</desc>
+  <desc id="desc">Wireframe estrutural de baixa fidelidade para computador, reformulado pela UXA-087 e sincronizado pela UXA-100-A4, com contexto explícito de autoridade, momento operacional, atenção principal, navegação para Planos e cobrança, solicitações, comunicação, proteção, governança e retorno ao contexto anterior.</desc>
   <rect width="1440" height="1024" fill="#ffffff"/>
   <g fill="none" stroke="#111111" stroke-width="2">
     <rect x="24" y="24" width="1392" height="72" rx="8"/>
@@ -19,7 +19,7 @@
     <rect x="880" y="602" width="184" height="36" rx="6"/>
     <rect x="316" y="782" width="168" height="32" rx="6"/>
     <rect x="880" y="782" width="166" height="32" rx="6"/>
-    <rect x="48" y="614" width="194" height="32" rx="6"/>
+    <rect x="48" y="658" width="194" height="32" rx="6"/>
   </g>
 
   <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
@@ -41,8 +41,9 @@
     <text x="48" y="474" font-size="14">Moderação e proteção</text>
     <text x="48" y="510" font-size="14">Pessoas, papéis e autoridades</text>
     <text x="48" y="546" font-size="14">Relações e recursos</text>
-    <text x="48" y="582" font-size="14">Configurações</text>
-    <text x="69" y="635" font-size="13">← Voltar ao contexto anterior</text>
+    <text x="48" y="582" font-size="14" font-weight="700">Planos e cobrança</text>
+    <text x="48" y="618" font-size="14">Configurações</text>
+    <text x="69" y="679" font-size="13">← Voltar ao contexto anterior</text>
     <text x="48" y="946" font-size="12">A visibilidade depende do papel e da autoridade.</text>
     <text x="48" y="968" font-size="12">Áreas indisponíveis não concedem acesso por estarem listadas.</text>
 

@@ -2,7 +2,7 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.7.3
+version: 2.8.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-08
 depends_on:
@@ -18,6 +18,7 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A4
   - UXA-101
   - M7.88
 normative: false
@@ -25,7 +26,7 @@ normative: false
 
 # Índice das Frentes UXA-047 a UXA-101
 
-Este índice preserva a rastreabilidade das frentes funcionais recentes. A consolidação P9 é documental e não cria UXA.
+Este índice preserva a rastreabilidade das frentes funcionais recentes. A UXA-100-A4 é subfrente de reconciliação da UXA-100 e não cria UXA-102 nem novo marco funcional.
 
 ## UXA-047 a UXA-055 — Opportunity Boost
 
@@ -102,20 +103,21 @@ Complementos da UXA-100:
 - [UXA-100-A1](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
 - [UXA-100-A2](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
 - [UXA-100-A3](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
+- [UXA-100-A4](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) — origens voluntárias e retorno de Planos; não inicia UXA-102.
 
 ## Estado sincronizado
 
 | Elemento | Estado |
 |---|---|
-| Registro do Estado Atual | **2.29.0** |
+| Registro do Estado Atual | **2.30.0** |
 | marco funcional | **M7.88** |
 | última UXA | **UXA-101** |
 | próxima UXA | **UXA-102/V5 não iniciada** |
 | SVGs | **118** |
 | associações | **118** |
 | perfis | **31** |
-| superfícies/estados/fronteiras | **53** |
-| transições | **54** |
+| superfícies/estados/fronteiras | **54** |
+| transições | **60** |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-P9 não altera este intervalo funcional. Nenhuma frente posterior é iniciada pela consolidação documental.
+A UXA-100-A4 adiciona `PER-009` e seis handoffs de navegação; não cria SVG, novo marco, checkout, cobrança real ou implementação técnica.
