@@ -28,6 +28,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
@@ -50,7 +51,9 @@ SVG existente
 ≠ implementação técnica
 ```
 
-A sincronização taxonômica da UXA-100 não cria ativos: atualiza seis dos nove SVGs de Planos para os nomes governados de Coletivo e Organização e preserva os três SVGs de Pessoa.
+A UXA-101 reformula o SVG de Detalhe de Oportunidade para incluir a revisão consciente pré-saída no próprio `PER-203`. Não cria novo ID nem novo SVG; `BND-001` continua sem tela.
+
+A UXA-100-A4 sincroniza seis dos nove SVGs de Planos para os nomes governados de Coletivo e Organização e preserva os três SVGs de Pessoa. Não cria novo ID nem novo SVG.
 
 ## 2. Inventário agregado canônico por família
 
@@ -77,18 +80,18 @@ A sincronização taxonômica da UXA-100 não cria ativos: atualiza seis dos nov
 | Organização | visão geral e cadastro | 2 | 2 validados | publicação–descoberta integralmente validada em TRN-203 | matriz institucional completa |
 | Organização | Planos, comparação e cobrança | **3** | **3 validados** | TRN-421 a 425 locais; TRN-426 parcial | processo assistido após BND-002 e cobrança real |
 | camada comercial | Opportunity Boost | 46 | **46 validados** | parcial | TRN-304/305/306 e integrações específicas |
-| fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processos externos/assistidos posteriores |
+| fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo e processos assistidos posteriores |
 | **Total canônico** |  | **118** | **118 validados; 0 pendentes** |  |  |
 
 ## 3. Instrumentos granulares vigentes
 
-| Registro | Quantidade | Estado vigente nesta sincronização |
+| Registro | Quantidade | Estado vigente após UXA-101 + reconciliação taxonômica |
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **53** | `active` 0.18.0 |
 | transições documentais | **54** | `active` 0.19.0 |
 | catálogo canônico | **118 SVGs** | `active` 0.27.0 |
 | matriz de rastreabilidade | **118 SVGs / 31 perfis** | `active` 0.17.0 |
-| galeria visual global | **118 SVGs** | `active` 0.21.0 |
+| galeria visual | **118 SVGs** | `active` 0.21.0 |
 | galeria de Planos | **9 SVGs / 3 perfis** | `active` 0.4.0 |
 
 ## 4. Cobertura visual canônica
@@ -100,7 +103,7 @@ A sincronização taxonômica da UXA-100 não cria ativos: atualiza seis dos nov
 | fronteiras intencionalmente sem tela | **2** |
 | **Total** | **53** |
 
-## 5. Efeito da sincronização taxonômica
+## 5. Efeito da UXA-101 no catálogo
 
 - SVGs canônicos: **118 → 118**;
 - associações: **118 → 118**;
@@ -109,33 +112,48 @@ A sincronização taxonômica da UXA-100 não cria ativos: atualiza seis dos nov
 - pendências específicas: **0 → 0**;
 - IDs: **53 → 53**;
 - transições: **54 → 54**;
-- seis SVGs UXA-100 de Coletivo/Organização: nomenclatura/cópia sincronizadas;
+- `uxa-007-opportunity-detail-mobile.svg`: reformulado e revalidado;
+- `TRN-205`: parcial → **integralmente validada até BND-001**;
+- `BND-001`: examinada como fronteira externa sem tela.
+
+## 6. Efeito da sincronização taxonômica
+
+- SVGs canônicos: **118 → 118**;
+- associações: **118 → 118**;
+- perfis: **31 → 31**;
+- validações funcionais vigentes: **118 → 118**;
+- pendências específicas: **0 → 0**;
+- IDs: **53 → 53**;
+- transições: **54 → 54**;
+- seis SVGs UXA-100 de Coletivo/Organização: nomenclatura e microcópia sincronizadas;
 - três SVGs UXA-100 de Pessoa: preservados;
 - `TRN-416` e `TRN-426`: permanecem parciais;
-- `BND-002`: mesma identidade, semântica corrigida para contratação/dimensionamento assistido.
+- `BND-002`: mesma identidade, semântica corrigida para contratação/dimensionamento assistido;
+- `UXA-100-A4`: revalidação por equivalência funcional dos seis ativos modificados.
 
-## 6. Separações obrigatórias
+## 7. Separações obrigatórias
 
-- primeira Tela Hoje e Tela Hoje recorrente são variantes de `PER-008`;
-- revisão de saída é estado de `PER-203`, não nova tela;
-- `BND-001` representa transferência de autoridade, não processo do terceiro;
+- primeira Tela Hoje e Tela Hoje recorrente são variantes do mesmo `PER-008`;
+- revisão de saída é estado do mesmo `PER-203`, não nova tela canônica;
+- `BND-001` representa a transferência de autoridade, não o processo do terceiro;
 - `PER-106` organiza participações e não substitui a Central;
 - `PER-107` é triagem de atualizações;
-- `PER-108` sintetiza contexto interno;
+- `PER-108` sintetiza contexto interno e não replica canais especializados;
 - comparação incremental de Planos não é tela adicional;
 - processamento financeiro transitório não é tela própria;
 - `BND-002` representa contratação/dimensionamento assistido quando necessário e não um plano específico;
 - Organização e Guivos Business são estruturas distintas;
-- `Organização Transforma ≠ Guivos Business Enterprise`;
+- **Organização Transforma ≠ Guivos Business Enterprise**;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem continuidades separadas.
 
-## 7. Estado do catálogo
+## 8. Estado do catálogo
 
 - catálogo: `active` 0.27.0;
 - galeria principal: `active` 0.21.0; 118 SVGs;
 - matriz por SVG: `active` 0.17.0; 118 associações / 31 perfis;
+- galeria de Planos: `active` 0.4.0; 9 SVGs / 3 perfis;
 - jornadas da Pessoa, Coletivo e Organização: `draft`;
 - Guivos Business não recebe nova jornada ou SVG nesta atualização;
-- UXA-102/V5 e Engenharia de Produto: não iniciadas.
+- UXA-102/V5, protótipo e Engenharia de Produto: não iniciados.
 
-A sincronização documental não autoriza implementação.
+A promoção e a sincronização documentais não autorizam implementação ou próxima UXA.
