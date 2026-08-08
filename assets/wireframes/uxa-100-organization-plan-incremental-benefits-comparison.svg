@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1180" viewBox="0 0 1440 1180" role="img" aria-labelledby="title desc">
+  <title id="title">Organização — comparação incremental de benefícios dos planos</title>
+  <desc id="desc">Placa estrutural de baixa fidelidade que mostra os benefícios e capacidades adicionais de Business Growth sobre Business Start e de Business Scale sobre Business Growth.</desc>
+  <rect width="1440" height="1180" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Organização · O que cada plano acrescenta</text>
+    <text x="48" y="88" font-size="14">Comparação incremental · capacidades comerciais candidatas · sem promessa de relevância ou impacto</text>
+    <text x="48" y="116" font-size="13">Business Scale é dimensionado por contrato; não deve ser tratado como checkout autônomo de escopo fixo.</text>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="48" y="156" width="400" height="884" rx="18"/>
+    <rect x="520" y="156" width="400" height="884" rx="18"/>
+    <rect x="992" y="156" width="400" height="884" rx="18"/>
+    <rect x="72" y="204" width="352" height="150" rx="10"/>
+    <rect x="544" y="204" width="352" height="150" rx="10"/>
+    <rect x="1016" y="204" width="352" height="150" rx="10"/>
+    <rect x="72" y="378" width="352" height="584" rx="10"/>
+    <rect x="544" y="378" width="352" height="584" rx="10"/>
+    <rect x="1016" y="378" width="352" height="584" rx="10"/>
+    <path d="M448 670 H520"/>
+    <path d="M920 670 H992"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="72" y="190" font-size="18" font-weight="700">Business Start</text>
+    <text x="92" y="240" font-size="20" font-weight="700">R$ 299,00/mês</text>
+    <text x="92" y="272" font-size="13">R$ 2.990,00/ano · referência candidata</text>
+    <text x="92" y="302" font-size="13">10 novas oportunidades/programas · 15 ativas</text>
+    <text x="92" y="330" font-size="13">3 administradores · 1 unidade</text>
+
+    <text x="544" y="190" font-size="18" font-weight="700">Business Growth</text>
+    <text x="564" y="240" font-size="20" font-weight="700">R$ 799,00/mês</text>
+    <text x="564" y="272" font-size="13">R$ 7.990,00/ano · referência candidata</text>
+    <text x="564" y="302" font-size="13" font-weight="700">Inclui o Start +</text>
+
+    <text x="1016" y="190" font-size="18" font-weight="700">Business Scale</text>
+    <text x="1036" y="240" font-size="20" font-weight="700">a partir de R$ 1.990,00/mês</text>
+    <text x="1036" y="272" font-size="13">Contrato anual e dimensionamento</text>
+    <text x="1036" y="302" font-size="13" font-weight="700">Inclui o Growth + capacidades contratadas</text>
+
+    <text x="92" y="420" font-size="15" font-weight="700">O Start já garante</text>
+    <text x="92" y="460" font-size="13">• perfil institucional</text>
+    <text x="92" y="492" font-size="13">• até 3 administradores</text>
+    <text x="92" y="524" font-size="13">• 1 unidade</text>
+    <text x="92" y="556" font-size="13">• até 10 novas oportunidades/programas por mês</text>
+    <text x="92" y="588" font-size="13">• até 15 publicações simultaneamente ativas</text>
+    <text x="92" y="620" font-size="13">• oportunidades gratuitas ou pagas</text>
+    <text x="92" y="652" font-size="13">• até 2 Coletivos relacionados administráveis</text>
+    <text x="92" y="684" font-size="13">• dashboard operacional básico</text>
+    <text x="92" y="716" font-size="13">• indicadores essenciais e exportação básica</text>
+    <text x="92" y="748" font-size="13">• suporte padrão</text>
+
+    <text x="564" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Start</text>
+    <text x="564" y="460" font-size="13">• até 10 administradores</text>
+    <text x="564" y="492" font-size="13">• até 5 unidades</text>
+    <text x="564" y="524" font-size="13">• até 50 novas oportunidades/programas por mês</text>
+    <text x="564" y="556" font-size="13">• até 75 publicações simultaneamente ativas</text>
+    <text x="564" y="588" font-size="13">• até 10 Coletivos relacionados administráveis</text>
+    <text x="564" y="620" font-size="13">• analytics avançados e agregados</text>
+    <text x="564" y="652" font-size="13">• automações</text>
+    <text x="564" y="684" font-size="13">• exportação completa</text>
+    <text x="564" y="716" font-size="13">• integrações limitadas</text>
+    <text x="564" y="748" font-size="13">• exportação compatível com Power BI</text>
+    <text x="564" y="780" font-size="13">• gestão ampliada de elegibilidade</text>
+    <text x="564" y="812" font-size="13">• suporte prioritário</text>
+
+    <text x="1036" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Growth</text>
+    <text x="1036" y="460" font-size="13">• capacidade de publicações dimensionada por contrato</text>
+    <text x="1036" y="492" font-size="13">• múltiplas unidades</text>
+    <text x="1036" y="524" font-size="13">• administradores/Coletivos conforme contrato</text>
+    <text x="1036" y="556" font-size="13">• governança avançada</text>
+    <text x="1036" y="588" font-size="13">• SSO e API</text>
+    <text x="1036" y="620" font-size="13">• integração dedicada com Power BI</text>
+    <text x="1036" y="652" font-size="13">• dashboards personalizados</text>
+    <text x="1036" y="684" font-size="13">• exportações automatizadas</text>
+    <text x="1036" y="716" font-size="13">• implantação assistida</text>
+    <text x="1036" y="748" font-size="13">• atendimento dedicado</text>
+    <text x="1036" y="780" font-size="13">• SLA</text>
+    <text x="1036" y="812" font-size="13">• condições comerciais/faturamento personalizadas</text>
+
+    <text x="72" y="1004" font-size="12">A interface deverá destacar o delta real entre o plano atual e o escolhido e não repetir capacidades já herdadas como se fossem novas.</text>
+    <text x="72" y="1028" font-size="12">Comprar plano não aumenta ranking, prioridade orgânica, confiança institucional ou evidência de impacto.</text>
+    <text x="48" y="1118" font-size="12">Materialização candidata. Business Scale segue proposta comercial e dimensionamento contratual.</text>
+  </g>
+</svg>

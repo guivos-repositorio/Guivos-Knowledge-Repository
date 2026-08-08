@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Organização — tela dedicada de Planos</title>
+  <desc id="desc">Wireframe desktop candidato da área Planos da Organização com plano atual, comparação Business Start Growth Scale, benefícios incrementais, capacidade, preços mensal/anual e condições de contratação.</desc>
+  <rect width="1440" height="1080" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="60" y="54" font-size="14">Organização · Administração</text>
+    <text x="60" y="98" font-size="30" font-weight="700">Planos</text>
+    <text x="60" y="126" font-size="14">Compare capacidade institucional, unidades, analytics e integrações.</text>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="60" y="158" width="1320" height="102" rx="14"/>
+    <rect x="60" y="292" width="1320" height="48" rx="10"/>
+    <rect x="60" y="376" width="400" height="420" rx="14"/>
+    <rect x="520" y="376" width="400" height="420" rx="14"/>
+    <rect x="980" y="376" width="400" height="420" rx="14"/>
+    <rect x="88" y="728" width="344" height="44" rx="8"/>
+    <rect x="548" y="728" width="344" height="44" rx="8"/>
+    <rect x="1008" y="728" width="344" height="44" rx="8"/>
+    <rect x="60" y="918" width="1320" height="108" rx="12"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="86" y="187" font-size="12">PLANO ATUAL</text>
+    <text x="86" y="218" font-size="20" font-weight="700">Business Start · R$ 299/mês</text>
+    <text x="510" y="218" font-size="13">Uso do ciclo: 8/10 novas oportunidades · 12/15 ativas · 1 unidade</text>
+    <text x="86" y="244" font-size="12">Capacidade comercial não altera relevância das oportunidades publicadas.</text>
+
+    <text x="92" y="322" font-size="13" font-weight="700">Mensal</text>
+    <text x="238" y="322" font-size="13">Anual · pagamento antecipado</text>
+    <text x="1178" y="322" font-size="12" text-decoration="underline">Gerenciar cobrança</text>
+
+    <text x="88" y="414" font-size="20" font-weight="700">Business Start</text>
+    <text x="88" y="446" font-size="15">R$ 299/mês</text>
+    <text x="88" y="466" font-size="11">R$ 2.990/ano*</text>
+    <text x="88" y="492" font-size="12">10 oportunidades/programas por mês</text>
+    <text x="88" y="518" font-size="12">15 publicações ativas</text>
+    <text x="88" y="544" font-size="12">3 administradores · 1 unidade</text>
+    <text x="88" y="570" font-size="12">até 2 Coletivos relacionados</text>
+    <text x="88" y="596" font-size="12">dashboard operacional + exportação básica</text>
+    <text x="208" y="756" font-size="12">Plano atual</text>
+
+    <text x="548" y="414" font-size="20" font-weight="700">Business Growth</text>
+    <text x="548" y="446" font-size="15">R$ 799/mês</text>
+    <text x="548" y="466" font-size="11">R$ 7.990/ano*</text>
+    <text x="548" y="490" font-size="12" font-weight="700">Tudo do Start +</text>
+    <text x="548" y="516" font-size="12">50 oportunidades/programas por mês</text>
+    <text x="548" y="542" font-size="12">75 publicações ativas</text>
+    <text x="548" y="568" font-size="12">10 administradores · até 5 unidades</text>
+    <text x="548" y="594" font-size="12">até 10 Coletivos relacionados</text>
+    <text x="548" y="620" font-size="12">analytics avançados · automações · exportação completa</text>
+    <text x="548" y="646" font-size="12">integrações limitadas + suporte prioritário</text>
+    <text x="666" y="756" font-size="12">Escolher Growth</text>
+
+    <text x="1008" y="414" font-size="20" font-weight="700">Business Scale</text>
+    <text x="1008" y="446" font-size="15">A partir de R$ 1.990/mês · contrato anual</text>
+    <text x="1008" y="490" font-size="12" font-weight="700">Tudo do Growth +</text>
+    <text x="1008" y="516" font-size="12">capacidade dimensionada por contrato</text>
+    <text x="1008" y="542" font-size="12">múltiplas unidades e governança avançada</text>
+    <text x="1008" y="568" font-size="12">SSO + API + integrações dedicadas</text>
+    <text x="1008" y="594" font-size="12">Power BI dedicado + dashboards personalizados</text>
+    <text x="1008" y="620" font-size="12">exportações automatizadas + implantação assistida</text>
+    <text x="1008" y="646" font-size="12">atendimento dedicado + SLA + faturamento personalizado</text>
+    <text x="1114" y="756" font-size="12">Solicitar proposta</text>
+
+    <text x="60" y="842" font-size="13" font-weight="700">Comparação direta</text>
+    <text x="60" y="870" font-size="12">A interface apresenta o delta do plano atual para o plano escolhido e mantém disponível a matriz completa.</text>
+    <text x="60" y="900" font-size="12">No downgrade, a Organização escolhe unidades, admins, publicações e Coletivos mantidos antes da efetivação.</text>
+
+    <text x="86" y="944" font-size="12" font-weight="700">Condições antes de contratar</text>
+    <text x="86" y="968" font-size="11">* preços anuais candidatos; recorrência/renovação, eventual desconto e data de início aparecem na revisão.</text>
+    <text x="86" y="990" font-size="11">Assinatura ≠ comissão/taxa/tributo de transação. Acesso financiado, quando elegível, é apresentado separadamente.</text>
+    <text x="86" y="1012" font-size="11">Plano não amplia consentimento nem acesso a dados pessoais e não compra recomendação, legitimidade ou posição orgânica.</text>
+
+    <text x="60" y="1058" font-size="10">Materialização candidata; Business Scale depende de proposta, contrato e dimensionamento.</text>
+  </g>
+</svg>

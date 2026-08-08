@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1180" viewBox="0 0 1440 1180" role="img" aria-labelledby="title desc">
+  <title id="title">Pessoa — comparação incremental de benefícios dos planos</title>
+  <desc id="desc">Placa estrutural de baixa fidelidade que mostra somente os benefícios adicionais de Guivos Plus sobre Free e de Guivos Pro sobre Plus, preservando a herança dos benefícios anteriores.</desc>
+  <rect width="1440" height="1180" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Pessoa · O que cada plano acrescenta</text>
+    <text x="48" y="88" font-size="14">Comparação incremental · baixa fidelidade · valores e capacidades candidatos</text>
+    <text x="48" y="116" font-size="13">Regra: cada plano superior herda os benefícios do anterior; abaixo aparecem somente os ganhos adicionais.</text>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="2">
+    <rect x="48" y="156" width="400" height="884" rx="18"/>
+    <rect x="520" y="156" width="400" height="884" rx="18"/>
+    <rect x="992" y="156" width="400" height="884" rx="18"/>
+    <rect x="72" y="204" width="352" height="134" rx="10"/>
+    <rect x="544" y="204" width="352" height="134" rx="10"/>
+    <rect x="1016" y="204" width="352" height="134" rx="10"/>
+    <rect x="72" y="362" width="352" height="600" rx="10"/>
+    <rect x="544" y="362" width="352" height="600" rx="10"/>
+    <rect x="1016" y="362" width="352" height="600" rx="10"/>
+    <path d="M448 598 H520"/>
+    <path d="M920 598 H992"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
+    <text x="72" y="190" font-size="18" font-weight="700">Guivos Free</text>
+    <text x="92" y="240" font-size="20" font-weight="700">R$ 0,00</text>
+    <text x="92" y="272" font-size="13">Base real de acesso gratuito.</text>
+    <text x="92" y="300" font-size="13">2 correspondências completas/semana.</text>
+    <text x="92" y="326" font-size="12">Catálogo público continua completo.</text>
+
+    <text x="544" y="190" font-size="18" font-weight="700">Guivos Plus</text>
+    <text x="564" y="240" font-size="20" font-weight="700">R$ 24,90/mês</text>
+    <text x="564" y="272" font-size="13">R$ 249,00/ano · referência candidata</text>
+    <text x="564" y="300" font-size="13" font-weight="700">Inclui tudo do Free +</text>
+
+    <text x="1016" y="190" font-size="18" font-weight="700">Guivos Pro</text>
+    <text x="1036" y="240" font-size="20" font-weight="700">R$ 49,90/mês</text>
+    <text x="1036" y="272" font-size="13">R$ 499,00/ano · referência candidata</text>
+    <text x="1036" y="300" font-size="13" font-weight="700">Inclui tudo do Plus +</text>
+
+    <text x="92" y="402" font-size="15" font-weight="700">O Free já garante</text>
+    <text x="92" y="442" font-size="13">• descoberta pública no Explorar e Mapa</text>
+    <text x="92" y="474" font-size="13">• jornada essencial e compreensão inicial</text>
+    <text x="92" y="506" font-size="13">• Tela Hoje geral/básica aplicável</text>
+    <text x="92" y="538" font-size="13">• histórico essencial</text>
+    <text x="92" y="570" font-size="13">• filtros básicos</text>
+    <text x="92" y="602" font-size="13">• controles de dados e saída</text>
+    <text x="92" y="634" font-size="13">• participação em ofertas gratuitas/pagas</text>
+    <text x="92" y="686" font-size="12">A base gratuita não é retirada para pressionar upgrade.</text>
+
+    <text x="564" y="402" font-size="15" font-weight="700">Ganhos exclusivos sobre o Free</text>
+    <text x="564" y="442" font-size="13">• correspondências completas sem cota semanal fixa*</text>
+    <text x="564" y="474" font-size="13">• explicação completa da correspondência</text>
+    <text x="564" y="506" font-size="13">• filtros avançados</text>
+    <text x="564" y="538" font-size="13">• alertas personalizados</text>
+    <text x="564" y="570" font-size="13">• histórico ampliado</text>
+    <text x="564" y="602" font-size="13">• planos salvos, lembretes e acompanhamento ampliado</text>
+    <text x="564" y="634" font-size="13">• exportação padrão</text>
+    <text x="564" y="666" font-size="13">• processamento e inteligência ampliados</text>
+    <text x="564" y="698" font-size="13">• integrações limitadas autorizadas</text>
+    <text x="564" y="730" font-size="13">• suporte ampliado</text>
+    <text x="564" y="782" font-size="12">* sujeito a uso justo; não aumenta relevância.</text>
+
+    <text x="1036" y="402" font-size="15" font-weight="700">Ganhos exclusivos sobre o Plus</text>
+    <text x="1036" y="442" font-size="13">• análises aprofundadas e comparativas</text>
+    <text x="1036" y="474" font-size="13">• organização entre áreas autorizadas da jornada</text>
+    <text x="1036" y="506" font-size="13">• maior capacidade de processamento e inteligência</text>
+    <text x="1036" y="538" font-size="13">• relatórios pessoais ampliados</text>
+    <text x="1036" y="570" font-size="13">• exportações avançadas</text>
+    <text x="1036" y="602" font-size="13">• integrações autorizadas ampliadas</text>
+    <text x="1036" y="634" font-size="13">• suporte prioritário</text>
+    <text x="1036" y="666" font-size="13">• acesso antecipado a capacidades aprovadas para teste*</text>
+    <text x="1036" y="718" font-size="12">* quando aplicável e informado.</text>
+
+    <text x="72" y="1004" font-size="12">Leitura progressiva: Free → Plus mostra apenas o delta Plus; Plus → Pro mostra apenas o delta Pro.</text>
+    <text x="72" y="1028" font-size="12">Quando a Pessoa já tiver um plano ativo, a interface deverá também resumir diretamente o delta entre plano atual e plano escolhido.</text>
+    <text x="48" y="1118" font-size="12">Materialização candidata. Não representa oferta pública, checkout implementado ou benefício operacional validado.</text>
+  </g>
+</svg>

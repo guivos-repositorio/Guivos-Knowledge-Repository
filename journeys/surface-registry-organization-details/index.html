@@ -8907,10 +8907,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-estado" class="md-nav__link">
+  <a href="#4-regras-de-planos-preservadas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Estado
+        4. Regras de Planos preservadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-efeito-da-uxa-100-a3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Efeito da UXA-100-A3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Estado
       
     </span>
   </a>
@@ -8944,7 +8966,8 @@
 
 <h1 id="detalhamento-obrigatorio-das-superficies-da-organizacao">Detalhamento Obrigatório das Superfícies da Organização<a class="headerlink" href="#detalhamento-obrigatorio-das-superficies-da-organizacao" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas.</p>
+<p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não é um segundo inventário e não altera contagens, maturidade ou status das entradas por conta própria.</p>
+<p>A UXA-100-A3 adiciona quatro superfícies canônicas de Planos à Organização sem completar por inferência as responsabilidades institucionais ainda ausentes.</p>
 <h2 id="2-campos-por-identificador">2. Campos por identificador<a class="headerlink" href="#2-campos-por-identificador" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9070,12 +9093,82 @@
 <td>matriz visual institucional</td>
 <td>responsabilidade conhecida com evidência insuficiente para classificar</td>
 </tr>
+<tr>
+<td>GKR-SURF-ORG-301</td>
+<td>UXA-100/A1/A2/A3 — <code>uxa-100-organization-plans-screen-desktop.svg</code>; <code>uxa-100-organization-plan-incremental-benefits-comparison.svg</code>; board UXA-100</td>
+<td>0.1.0 canônico</td>
+<td>acesso voluntário à área de plano ou capacidade legítima alcançada</td>
+<td>compreender Start/Growth/Scale, uso e delta; manter, mudar ou solicitar proposta</td>
+<td>TRN-421, TRN-423 ou TRN-426</td>
+<td>plano atual, ciclo, oportunidades/programas, publicações ativas, admins, unidades, Coletivos relacionados, preços e benefícios incrementais</td>
+<td>autoridade institucional válida; alternativas de arquivar/agendar/rascunho preservadas; ranking orgânico não muda</td>
+<td>permanecer, arquivar, agendar, manter rascunho ou retornar</td>
+<td>materialização candidata promovida por UXA-100-A3</td>
+<td><strong>validada como superfície; transições internas locais</strong></td>
+<td>entrada a partir de outras áreas administrativas ainda não possui transição canônica específica</td>
+<td>comparação incremental e estado de capacidade pertencem à mesma família</td>
+</tr>
+<tr>
+<td>GKR-SURF-ORG-302</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-organization-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-421</td>
+<td>revisar Business Growth e confirmar ou voltar</td>
+<td>TRN-422 ou retorno a ORG-301</td>
+<td>plano alvo, preço, periodicidade, recorrência, pagador/autoridade financeira, beneficiário institucional, início e método em simulação</td>
+<td>autoridade financeira identificada; nenhuma pré-seleção; pagamento não amplia acesso à jornada pessoal de Pessoas</td>
+<td>voltar/revisar sem contratar</td>
+<td>estado do board promovido por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>gateway, tributação e proration fora do escopo</td>
+<td>revisão pré-contratual, não checkout implementado</td>
+</tr>
+<tr>
+<td>GKR-SURF-ORG-303</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-organization-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-423</td>
+<td>revisar downgrade/cancelamento e selecionar explicitamente capacidades mantidas/encerradas</td>
+<td>TRN-424 ou retorno a ORG-301</td>
+<td>unidades, administradores, publicações, Coletivos relacionados, integrações, dados a exportar, plano futuro e data efetiva</td>
+<td>representante autorizado; nenhum dado/histórico é apagado para forçar retenção</td>
+<td>manter plano; ajustar seleção; exportar; voltar</td>
+<td>estado do board promovido por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>efeitos financeiros entre ciclos e execução institucional não implementados</td>
+<td>excedentes são tratados explicitamente antes da efetivação</td>
+</tr>
+<tr>
+<td>GKR-SURF-ORG-304</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-organization-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-422 ou TRN-424</td>
+<td>compreender resultado, recuperar falha ou retornar</td>
+<td>TRN-425; tentar novamente quando aplicável</td>
+<td>plano resultante/anterior, capacidade, confirmação/recibo, direitos/dados preservados e estado de falha</td>
+<td>confirmação real para ativar; falha preserva plano anterior identificável</td>
+<td>nova tentativa consciente; retorno a Planos</td>
+<td>estados de resultado promovidos por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>processamento financeiro e entitlement técnico não implementados</td>
+<td>sucesso e falha compartilham família sem compartilhar consequência</td>
+</tr>
 </tbody>
 </table>
 <h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
 <p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<h2 id="4-estado">4. Estado<a class="headerlink" href="#4-estado" title="Permanent link">&para;</a></h2>
-<p>O detalhamento está <code>active</code> como parte integrante do registro promovido pela UXA-080. O status aprova o instrumento documental e não altera maturidade, continuidade ou lacuna de qualquer entrada.</p>
+<h2 id="4-regras-de-planos-preservadas">4. Regras de Planos preservadas<a class="headerlink" href="#4-regras-de-planos-preservadas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>capacidade contratada não altera relevância, confiança ou evidência de impacto;</li>
+<li>Business Scale segue para <code>BND-002</code> e não para checkout autônomo;</li>
+<li>pagamento por Organização não concede acesso ao contexto individual de Pessoas;</li>
+<li>downgrade exige seleção explícita das capacidades institucionais que permanecerão;</li>
+<li>dados agregados e históricos não são apagados automaticamente para forçar retenção.</li>
+</ul>
+<h2 id="5-efeito-da-uxa-100-a3">5. Efeito da UXA-100-A3<a class="headerlink" href="#5-efeito-da-uxa-100-a3" title="Permanent link">&para;</a></h2>
+<p>A UXA-100-A3 adiciona <code>ORG-301</code> a <code>ORG-304</code> e promove os três SVGs de Planos da Organização ao conjunto canônico. <code>ORG-004</code> a <code>ORG-007</code> preservam suas maturidades anteriores.</p>
+<h2 id="6-estado">6. Estado<a class="headerlink" href="#6-estado" title="Permanent link">&para;</a></h2>
+<p>O detalhamento está <code>active</code> como parte integrante do registro. A Jornada da Organização permanece incompleta e <code>draft</code>; validação documental não comprova implementação.</p>
 
 
 

@@ -8907,10 +8907,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-estado" class="md-nav__link">
+  <a href="#4-efeito-da-uxa-100-a3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Estado
+        4. Efeito da UXA-100-A3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Estado
       
     </span>
   </a>
@@ -8945,7 +8956,7 @@
 <h1 id="detalhamento-obrigatorio-das-superficies-do-coletivo">Detalhamento Obrigatório das Superfícies do Coletivo<a class="headerlink" href="#detalhamento-obrigatorio-das-superficies-do-coletivo" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este arquivo integra o <code>GKR-JOURNEY-SURFACE-REGISTRY-001</code> e registra campos obrigatórios por identificador. Ele não altera a contagem de entradas.</p>
-<p>A UXA-088 materializou <code>GKR-SURF-COL-003</code> em sete estados desktop e a UXA-089 reformulou seis deles e validou funcionalmente toda a família.</p>
+<p>A UXA-100-A3 adiciona quatro superfícies canônicas de Planos ao Coletivo sem alterar a maturidade de <code>COL-004</code> a <code>COL-008</code>.</p>
 <h2 id="2-campos-por-identificador">2. Campos por identificador<a class="headerlink" href="#2-campos-por-identificador" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9086,18 +9097,81 @@
 <td>relação Organização–Coletivo</td>
 <td>não iniciado pela UXA-089</td>
 </tr>
+<tr>
+<td>GKR-SURF-COL-301</td>
+<td>UXA-100/A1/A2/A3 — <code>uxa-100-collective-plans-screen-desktop.svg</code>; <code>uxa-100-collective-plan-incremental-benefits-comparison.svg</code>; board UXA-100</td>
+<td>0.1.0 canônico</td>
+<td>acesso voluntário à área de plano ou limite legítimo</td>
+<td>compreender Livre/Gestão/Impacto/Enterprise, uso e delta; manter ou escolher mudança</td>
+<td>TRN-411, TRN-413 ou TRN-416</td>
+<td>plano atual, ciclo, atividades/oportunidades, publicações ativas, admins, unidades, preços e benefícios incrementais</td>
+<td>representação válida; alternativas gratuitas/operacionais preservadas; nenhuma publicação existente perde visibilidade</td>
+<td>permanecer, aguardar ciclo, manter rascunho, encerrar/agendar quando aplicável</td>
+<td>materialização candidata promovida por UXA-100-A3</td>
+<td><strong>validada como superfície; transições internas locais</strong></td>
+<td>entrada a partir de outras áreas administrativas ainda não possui transição canônica específica</td>
+<td>comparação incremental e estado de limite pertencem à mesma família</td>
+</tr>
+<tr>
+<td>GKR-SURF-COL-302</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-collective-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-411</td>
+<td>revisar contratação Gestão/Impacto e confirmar ou voltar</td>
+<td>TRN-412 ou retorno a COL-301</td>
+<td>plano alvo, preço, periodicidade, recorrência, pagador autorizado, beneficiário, início e método em simulação</td>
+<td>autoridade financeira/representação válidas; nenhuma pré-seleção</td>
+<td>voltar/revisar sem contratar</td>
+<td>estado do board promovido por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>gateway, tributação, comissão e proration fora do escopo</td>
+<td>assinatura permanece separada de transação/publicação paga</td>
+</tr>
+<tr>
+<td>GKR-SURF-COL-303</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-collective-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-413</td>
+<td>revisar downgrade/cancelamento, tratar excedentes e confirmar</td>
+<td>TRN-414 ou retorno a COL-301</td>
+<td>publicações gratuitas/pagas, admins, núcleos/unidades, compromissos, exportação, plano futuro e data efetiva</td>
+<td>responsável autorizado; compromissos assumidos não desaparecem; dados não são apagados silenciosamente</td>
+<td>manter plano; ajustar escolhas; exportar; voltar</td>
+<td>estado do board promovido por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>política transacional futura e efeitos financeiros entre ciclos</td>
+<td>downgrade só efetiva após tratamento das capacidades excedentes aplicáveis</td>
+</tr>
+<tr>
+<td>GKR-SURF-COL-304</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-collective-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-412 ou TRN-414</td>
+<td>compreender resultado, recuperar falha ou retornar</td>
+<td>TRN-415; tentar novamente quando aplicável</td>
+<td>plano resultante/anterior, capacidade, confirmação/recibo, publicações preservadas e estado de falha</td>
+<td>confirmação real para ativar; falha preserva estado anterior e dados</td>
+<td>nova tentativa consciente; retorno a Planos</td>
+<td>estados de resultado promovidos por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>execução financeira e entitlement não implementados</td>
+<td>sucesso e falha compartilham família sem compartilhar consequência</td>
+</tr>
 </tbody>
 </table>
 <h2 id="3-regras-preservadas">3. Regras preservadas<a class="headerlink" href="#3-regras-preservadas" title="Permanent link">&para;</a></h2>
 <ul>
 <li>valores sem evidência permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>;</li>
 <li>validação de <code>COL-003</code> não autoriza completar <code>COL-004</code> a <code>COL-008</code> por analogia;</li>
-<li>efeitos validados em ambas as perspectivas não equivalem a validação do handoff como conjunto;</li>
 <li>autoridade é verificada por escopo concedido e não por autodeclaração;</li>
-<li>autoridade insuficiente impede a decisão e não concede dados adicionais.</li>
+<li>autoridade insuficiente impede a decisão e não concede dados adicionais;</li>
+<li>atingir limite do plano não reduz visibilidade de publicação existente;</li>
+<li>Enterprise segue para <code>BND-002</code>, não para checkout autônomo.</li>
 </ul>
-<h2 id="4-estado">4. Estado<a class="headerlink" href="#4-estado" title="Permanent link">&para;</a></h2>
-<p>O detalhamento está <code>active</code> 0.6.0. <code>COL-002</code> e <code>COL-003</code> estão validadas no escopo de suas superfícies. A continuidade bilateral e a Jornada do Coletivo continuam incompletas.</p>
+<h2 id="4-efeito-da-uxa-100-a3">4. Efeito da UXA-100-A3<a class="headerlink" href="#4-efeito-da-uxa-100-a3" title="Permanent link">&para;</a></h2>
+<p>A UXA-100-A3 adiciona <code>COL-301</code> a <code>COL-304</code> e promove os três SVGs de Planos do Coletivo ao conjunto canônico. <code>COL-004</code> a <code>COL-008</code> permanecem com suas maturidades anteriores.</p>
+<h2 id="5-estado">5. Estado<a class="headerlink" href="#5-estado" title="Permanent link">&para;</a></h2>
+<p>O detalhamento está <code>active</code> 0.7.0. As superfícies de Planos estão validadas no escopo documental, enquanto a Jornada do Coletivo continua incompleta e <code>draft</code>.</p>
 
 
 

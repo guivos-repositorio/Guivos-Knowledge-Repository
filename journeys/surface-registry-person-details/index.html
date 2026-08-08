@@ -8907,10 +8907,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-efeito-da-uxa-097" class="md-nav__link">
+  <a href="#4-efeito-da-uxa-100-a3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Efeito da UXA-097
+        4. Efeito da UXA-100-A3
       
     </span>
   </a>
@@ -9261,12 +9261,72 @@
 <td>efeito externo</td>
 <td>oportunidades</td>
 </tr>
+<tr>
+<td>GKR-SURF-PER-301</td>
+<td>UXA-100/A1/A2/A3 — <code>uxa-100-person-plans-screen-mobile.svg</code>; <code>uxa-100-person-plan-incremental-benefits-comparison.svg</code>; board UXA-100</td>
+<td>0.1.0 canônico</td>
+<td>acesso voluntário à área de plano ou entrada contextual legítima</td>
+<td>compreender plano atual, uso, matriz e delta; manter ou escolher mudança</td>
+<td>TRN-401 para contratação; TRN-403 para gestão do ciclo</td>
+<td>Free/Plus/Pro, preços candidatos, periodicidade, capacidades, cota/renovação e benefícios incrementais</td>
+<td>autenticação; alternativas públicas/gratuitas preservadas; nenhuma seleção prévia</td>
+<td>permanecer no plano, retornar ao contexto, Explorar/Mapa quando aplicável</td>
+<td>materialização candidata promovida por UXA-100-A3</td>
+<td><strong>validada como superfície; TRN-401/403 locais</strong></td>
+<td>origem genérica Conta/Configurações e superfície de correspondência personalizada ainda não possuem IDs próprios</td>
+<td>comparação incremental é estado da mesma superfície, não tela autônoma</td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-302</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-person-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-401</td>
+<td>revisar contratação e confirmar ou voltar</td>
+<td>TRN-402 ou retorno a PER-301</td>
+<td>plano alvo, preço, recorrência, pagador, beneficiário, início, método autorizado em simulação e controles de saída</td>
+<td>ação afirmativa; nenhuma pré-seleção; método autorizado; escopo de dados não ampliado implicitamente</td>
+<td>voltar sem contratar; revisar escolha</td>
+<td>estado do board promovido por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>gateway, regra fiscal e proration fora do escopo</td>
+<td>revisão pré-contratual, não checkout implementado</td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-303</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-person-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-403</td>
+<td>revisar downgrade ou cancelamento e confirmar conscientemente</td>
+<td>TRN-404 ou retorno a PER-301</td>
+<td>plano atual/futuro, capacidades perdidas/reduzidas, histórico/relatórios, integrações, exportação, data efetiva</td>
+<td>titular autenticado; baseline gratuito e direitos preservados</td>
+<td>manter plano atual; voltar; exportar quando aplicável</td>
+<td>estado do board promovido por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>proration/estorno e retenção final ainda indefinidos</td>
+<td>downgrade e cancelamento compartilham família, mas preservam consequências próprias</td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-304</td>
+<td>UXA-100/A2/A3 — board <code>uxa-100-person-plans-payments-flow-board.svg</code></td>
+<td>0.1.0 canônico</td>
+<td>TRN-402 ou TRN-404</td>
+<td>compreender resultado e recuperar/retornar</td>
+<td>TRN-405; tentar novamente/revisar método quando falha</td>
+<td>plano/estado resultante, recorrência, confirmação/recibo, estado anterior em falha, capacidades alteradas</td>
+<td>confirmação real é necessária para ativação; falha não presume cobrança ou ativação</td>
+<td>retorno a Planos; nova tentativa consciente</td>
+<td>estados de sucesso/falha promovidos por UXA-100-A3</td>
+<td><strong>validada localmente no pacote</strong></td>
+<td>processamento financeiro e persistência técnica não implementados</td>
+<td>sucesso e falha são estados distintos da mesma família de resultado/recuperação</td>
+</tr>
 </tbody>
 </table>
 <h2 id="3-regra-de-incerteza">3. Regra de incerteza<a class="headerlink" href="#3-regra-de-incerteza" title="Permanent link">&para;</a></h2>
 <p>Valores sem evidência suficiente permanecem <code>indeterminado</code>, <code>ausente</code> ou <code>não examinado</code>. Nenhum campo poderá ser completado por inferência.</p>
-<h2 id="4-efeito-da-uxa-097">4. Efeito da UXA-097<a class="headerlink" href="#4-efeito-da-uxa-097" title="Permanent link">&para;</a></h2>
-<p>A UXA-097 revalida a variante corrente de decisão de <code>PER-007</code>, adiciona e valida a primeira variante de <code>PER-008</code> e fecha <code>TRN-007</code> ponta a ponta. A Tela Hoje recorrente permanece inalterada e validada por UXA-010; outros estados alternativos de Hoje continuam separados.</p>
+<h2 id="4-efeito-da-uxa-100-a3">4. Efeito da UXA-100-A3<a class="headerlink" href="#4-efeito-da-uxa-100-a3" title="Permanent link">&para;</a></h2>
+<p>A UXA-100-A3 adiciona <code>PER-301</code> a <code>PER-304</code> como superfícies canônicas e promove os três SVGs da Pessoa da UXA-100 ao conjunto visual canônico. A comparação incremental permanece dentro de <code>PER-301</code>; processamento de pagamento não recebe superfície própria; entradas contextuais a partir de superfícies ainda não registradas não são inventadas.</p>
 <h2 id="5-estado">5. Estado<a class="headerlink" href="#5-estado" title="Permanent link">&para;</a></h2>
 <p>O detalhamento está <code>active</code> como parte integrante do registro granular. O status não promove a Jornada da Pessoa como completa nem comprova implementação.</p>
 
