@@ -9112,10 +9112,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#14-resultado-f2" class="md-nav__link">
+  <a href="#14-resultado-f2-apos-f2-b" class="md-nav__link">
     <span class="md-ellipsis">
       
-        14. Resultado F2
+        14. Resultado F2 após F2-B
       
     </span>
   </a>
@@ -9241,7 +9241,7 @@
 <li><code>partner_enabled</code>;</li>
 <li><code>TBD</code>.</li>
 </ul>
-<p>Nenhum modo possui custo aprovado nesta versão.</p>
+<p>Nenhum modo possui custo aprovado nesta autoridade. A modelagem econômica detalhada desses modos é governada por <a href="../gem-f2b-m0-m6-people-delivery-and-cost-model/">F2-B — Modelo de Entrega e Custo de Pessoas M0–M6</a>.</p>
 <h2 id="5-base-explicita-do-gtm-para-m0m6">5. Base explícita do GTM para M0–M6<a class="headerlink" href="#5-base-explicita-do-gtm-para-m0m6" title="Permanent link">&para;</a></h2>
 <p>O GTM-002 já define a equipe de referência por estágio e declara que se trata de <strong>desenho funcional, não autorização de contratação</strong>.</p>
 <p>Para M0–M6, a base explícita é:</p>
@@ -9771,29 +9771,40 @@
 </ol>
 <p>Se uma cobertura essencial estiver <code>unavailable</code>, <code>constrained</code>, <code>saturated</code> ou sem owner, o gate de crescimento deverá ser condicionado, limitado, pausado ou bloqueado conforme a autoridade GEM-008.</p>
 <h2 id="12-relacao-com-f1-c05-custo-de-equipe">12. Relação com F1-C05 — custo de equipe<a class="headerlink" href="#12-relacao-com-f1-c05-custo-de-equipe" title="Permanent link">&para;</a></h2>
-<p>Após F2, o estado de <code>F1-C05</code> pode evoluir de <strong>“bloqueado por ausência de dimensionamento funcional”</strong> para:</p>
+<p>Após F2 e F2-B, o estado de <code>F1-C05</code> é:</p>
 <blockquote>
-<p><code>partially_parameterized_by_F2 — 3 dedicated role-equivalents of reference plus mandatory shared/fractional/conditional coverage; delivery mode, HC, compensation and amount remain TBD</code>.</p>
+<p><code>partially_calibrated_by_F2B — 3 dedicated role-equivalents of reference plus mandatory shared/fractional/conditional coverage; delivery modes and salary benchmarks are governed, while actual HC, assignment, overlap, regime, compensation, allocation and complete amount remain TBD</code>.</p>
 </blockquote>
-<p>Ainda faltam para converter F1-C05 em custo mensal:</p>
+<p>F2-B adiciona:</p>
+<ul>
+<li>modos econômicos de entrega;</li>
+<li>benchmarks rastreáveis de Growth/GTM e comercial B2B;</li>
+<li>proxy limitado para ecossistema/parcerias;</li>
+<li>benchmark auxiliar de CRM/CX para eventual reforço de suporte/CS;</li>
+<li>componentes trabalhistas oficiais mínimos e guardrails contra multiplicador CLT incompleto;</li>
+<li>prevenção de dupla contagem com outros pools.</li>
+</ul>
+<p>Ainda faltam para converter F1-C05 em custo mensal completo:</p>
 <ul>
 <li>decisão de quem cobre cada papel;</li>
 <li>sobreposição admissível entre papéis;</li>
-<li>vínculo/regime de execução;</li>
+<li>vínculo/regime de execução por papel;</li>
 <li>quantidade efetiva de pessoas/prestadores;</li>
-<li>remuneração ou preço do serviço;</li>
+<li>dedicação/rateio por período;</li>
+<li>remuneração ou preço do serviço aplicável;</li>
 <li>encargos, benefícios, impostos e custos acessórios quando aplicáveis;</li>
 <li>datas de início/fim;</li>
 <li>capacidade real observada.</li>
 </ul>
 <h2 id="13-o-que-f2-nao-autoriza">13. O que F2 não autoriza<a class="headerlink" href="#13-o-que-f2-nao-autoriza" title="Permanent link">&para;</a></h2>
-<p>F2 não autoriza:</p>
+<p>F2 e F2-B não autorizam:</p>
 <ul>
 <li>contratar 3 pessoas;</li>
 <li>contratar 18 pessoas;</li>
 <li>afirmar que a Guivos possui atualmente qualquer uma dessas funções contratadas;</li>
-<li>definir salários;</li>
+<li>definir salários ou propostas de remuneração;</li>
 <li>escolher CLT, PJ, contractor ou outsourcing;</li>
+<li>transformar benchmark em orçamento;</li>
 <li>criar vagas;</li>
 <li>iniciar Product Engineering;</li>
 <li>contratar Neo4j, cloud, IA ou stack;</li>
@@ -9801,7 +9812,7 @@
 <li>calcular burn completo;</li>
 <li>calcular runway ou capital necessário.</li>
 </ul>
-<h2 id="14-resultado-f2">14. Resultado F2<a class="headerlink" href="#14-resultado-f2" title="Permanent link">&para;</a></h2>
+<h2 id="14-resultado-f2-apos-f2-b">14. Resultado F2 após F2-B<a class="headerlink" href="#14-resultado-f2-apos-f2-b" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -9839,15 +9850,27 @@
 <td>PASS</td>
 </tr>
 <tr>
+<td>modos de entrega econômicos</td>
+<td>PASS — F2-B</td>
+</tr>
+<tr>
+<td>benchmarks de remuneração</td>
+<td>PARTIAL PASS — R01/R02 + proxy R03 + auxiliar CRM/CX</td>
+</tr>
+<tr>
 <td>HC interno total</td>
 <td>PENDING</td>
 </tr>
 <tr>
-<td>regime de contratação</td>
+<td>assignment/sobreposição/dedicação</td>
 <td>PENDING</td>
 </tr>
 <tr>
-<td>salários/custo por papel</td>
+<td>regime por papel</td>
+<td>PENDING</td>
+</tr>
+<tr>
+<td>remuneração/fee real por papel</td>
 <td>PENDING</td>
 </tr>
 <tr>
@@ -9855,7 +9878,7 @@
 <td>BLOCKED BY PRODUCT ENGINEERING</td>
 </tr>
 <tr>
-<td>custo mensal F1-C05</td>
+<td>custo mensal completo F1-C05</td>
 <td>NOT CALCULABLE</td>
 </tr>
 <tr>
@@ -9864,11 +9887,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Parecer:</strong> <code>PARTIAL PASS — M0–M6 functional capacity and role-equivalent baseline defined; exact internal headcount, delivery modes, compensation and monetary people cost remain pending.</code></p>
+<p><strong>Parecer:</strong> <code>PARTIAL PASS — M0–M6 functional capacity, delivery-mode economics and traceable people benchmarks are governed; exact assignment, headcount, overlap, regimes, allocations, compensation and complete monetary people cost remain pending.</code></p>
 <h2 id="15-proximo-incremento-economico-permitido">15. Próximo incremento econômico permitido<a class="headerlink" href="#15-proximo-incremento-economico-permitido" title="Permanent link">&para;</a></h2>
-<p>O próximo incremento econômico-financeiro deverá escolher explicitamente entre:</p>
+<p>Após F2-B, o próximo incremento econômico-financeiro deverá escolher explicitamente entre:</p>
 <ol>
-<li><strong>F2-B — modelo de entrega e custo de pessoas</strong>, atribuindo cobertura provável, regime candidato e benchmarks rastreáveis sem contratar; ou</li>
+<li><strong>F2-C — assignment e dedicação M0–M6</strong>, definindo quem cobre o quê, sobreposições e frações de capacidade sem contratar; ou</li>
 <li><strong>F1-C — completar evidências/cotações materiais ainda faltantes</strong>.</li>
 </ol>
 <p>Somente depois de F1 e F2 terem cobertura monetária material suficiente deverá o programa avançar para <strong>F3 — caixa, capital de giro e necessidade de capital</strong>.</p>

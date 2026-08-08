@@ -9007,10 +9007,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-relacao-com-f2-capacidade-e-headcount" class="md-nav__link">
+  <a href="#9-relacao-com-f2f2-b-capacidade-entrega-e-custo-de-pessoas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Relação com F2 — capacidade e headcount
+        9. Relação com F2/F2-B — capacidade, entrega e custo de pessoas
       
     </span>
   </a>
@@ -9040,10 +9040,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#12-resultado-do-f1-apos-f1-b-e-f2" class="md-nav__link">
+  <a href="#12-resultado-do-f1-apos-f1-b-f2-e-f2-b" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12. Resultado do F1 após F1-B e F2
+        12. Resultado do F1 após F1-B, F2 e F2-B
       
     </span>
   </a>
@@ -9214,7 +9214,7 @@
 <span class="nt">activation_gate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string | none</span>
 <span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 </code></pre></div>
-<p>F1-B pode registrar uma <strong>taxa unitária benchmark</strong> ou fórmula variável enquanto <code>amount_brl</code> permanece <code>TBD</code>. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.</p>
+<p>F1-B pode registrar uma <strong>taxa unitária benchmark</strong> ou fórmula variável enquanto <code>amount_brl</code> permanece <code>TBD</code>. F2-B pode registrar benchmarks salariais e sensibilidades de pessoas enquanto regime, dedicação e amount real permanecem <code>TBD</code>. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.</p>
 <h2 id="6-catalogo-mestre-de-pools-m0m6">6. Catálogo mestre de pools M0–M6<a class="headerlink" href="#6-catalogo-mestre-de-pools-m0m6" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9266,7 +9266,7 @@
 <td>equipe e serviços profissionais</td>
 <td>fixo/step</td>
 <td>capacidade e papéis requeridos</td>
-<td>parcialmente parametrizado por F2 — 3 RE dedicados de referência + coberturas compartilhadas/fracionárias; custo TBD</td>
+<td>parcialmente calibrado por F2-B — benchmarks R01/R02, proxy R03 e benchmark auxiliar de CRM/CX; amount TBD</td>
 </tr>
 <tr>
 <td>F1-C06</td>
@@ -9374,7 +9374,7 @@
 </tr>
 </tbody>
 </table>
-<p>A calibração detalhada e suas fontes são governadas por <code>GEM-F1B-M0-M6-COST-CALIBRATION-001</code>. A capacidade de pessoas é governada por <code>GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001</code>.</p>
+<p>A calibração detalhada de custos gerais e suas fontes é governada por <code>GEM-F1B-M0-M6-COST-CALIBRATION-001</code>. A capacidade de pessoas é governada por <code>GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001</code> e os modos de entrega/benchmarks de pessoas por <code>GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001</code>.</p>
 <h3 id="c-07-e-c-08">C-07 e C-08<a class="headerlink" href="#c-07-e-c-08" title="Permanent link">&para;</a></h3>
 <p>Custos de oportunidade e externalidades sociais/ambientais continuam obrigatórios para decisão, mas não integram automaticamente o desembolso mensal. Quando materiais, deverão ser registrados em análise própria e ligados à linha econômica correspondente.</p>
 <h2 id="7-matriz-de-ativacao-mensal">7. Matriz de ativação mensal<a class="headerlink" href="#7-matriz-de-ativacao-mensal" title="Permanent link">&para;</a></h2>
@@ -9591,18 +9591,21 @@
 <li>não transforma arquitetura de referência em OPEX ou CAPEX;</li>
 <li>mantém F1-C01, F1-C02 e F1-C03 <code>TBD</code> até decisão técnica e evidência de custo compatíveis com os gates de Product Engineering.</li>
 </ul>
-<h2 id="9-relacao-com-f2-capacidade-e-headcount">9. Relação com F2 — capacidade e headcount<a class="headerlink" href="#9-relacao-com-f2-capacidade-e-headcount" title="Permanent link">&para;</a></h2>
-<p>F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação.</p>
+<h2 id="9-relacao-com-f2f2-b-capacidade-entrega-e-custo-de-pessoas">9. Relação com F2/F2-B — capacidade, entrega e custo de pessoas<a class="headerlink" href="#9-relacao-com-f2f2-b-capacidade-entrega-e-custo-de-pessoas" title="Permanent link">&para;</a></h2>
+<p>F2 definiu a baseline de cobertura funcional M0–M6 sem transformar capacidade em contratação. F2-B adicionou modos de entrega e benchmarks rastreáveis sem transformar benchmark em remuneração aprovada.</p>
 <p>O estado vigente é:</p>
 <ul>
 <li>3 role-equivalents dedicados de referência: Growth/GTM, comercial institucional/B2B e ecossistema/parcerias;</li>
 <li>conteúdo/marketing, operação/onboarding, suporte, governança e demais capacidades essenciais possuem cobertura compartilhada ou condicional governada;</li>
 <li>contabilidade/fiscal, jurídico/privacidade/compliance e segurança/risco podem ser coberturas especialistas fracionárias;</li>
 <li>engenharia e dados/IA de implementação permanecem bloqueados por Product Engineering;</li>
-<li>HC interno total, regime, remuneração e custo monetário continuam <code>TBD</code>.</li>
+<li>benchmark salarial 2026 de Growth/GTM em BH e comercial B2B nacional estão disponíveis;</li>
+<li>ecossistema/parcerias possui apenas proxy salarial de comparabilidade limitada;</li>
+<li>suporte/CS possui benchmark auxiliar de CRM/CX, sem ativação automática de HC;</li>
+<li>HC interno total, owner real por papel, sobreposição, regime, dedicação, remuneração/fee e custo monetário mensal continuam <code>TBD</code>.</li>
 </ul>
-<p>Consequentemente, F1-C05 deixa de estar bloqueado por ausência de desenho funcional, mas <strong>não está numericamente fechado</strong>.</p>
-<p>Nenhum número de RE deverá ser apresentado como número de empregados sem evidência adicional.</p>
+<p>Consequentemente, F1-C05 está <strong>parcialmente calibrado</strong>, mas não numericamente fechado.</p>
+<p>O teste de salário-equivalente de três RE separados do F2-B é sensibilidade analítica e não poderá ser publicado como equipe, orçamento, burn ou necessidade de capital.</p>
 <h2 id="10-regra-de-fechamento-mensal">10. Regra de fechamento mensal<a class="headerlink" href="#10-regra-de-fechamento-mensal" title="Permanent link">&para;</a></h2>
 <p>Para cada mês deverá ser possível separar:</p>
 <div class="highlight"><pre><span></span><code>subtotal com valores sustentados
@@ -9614,7 +9617,7 @@
 → burn candidato
 → ponte para caixa e runway
 </code></pre></div>
-<p>Taxas unitárias sem quantidade governada não compõem o subtotal mensal.</p>
+<p>Taxas unitárias e benchmarks salariais sem quantidade, dedicação e regime governados não compõem o subtotal mensal.</p>
 <h2 id="11-gates-para-calibracao-numerica-do-f1">11. Gates para calibração numérica do F1<a class="headerlink" href="#11-gates-para-calibracao-numerica-do-f1" title="Permanent link">&para;</a></h2>
 <p>Cada pool somente poderá receber valor quando houver, no mínimo:</p>
 <ol>
@@ -9629,7 +9632,7 @@
 <li>ausência de dupla contagem entre produtos e áreas;</li>
 <li>tratamento explícito de incerteza.</li>
 </ol>
-<h2 id="12-resultado-do-f1-apos-f1-b-e-f2">12. Resultado do F1 após F1-B e F2<a class="headerlink" href="#12-resultado-do-f1-apos-f1-b-e-f2" title="Permanent link">&para;</a></h2>
+<h2 id="12-resultado-do-f1-apos-f1-b-f2-e-f2-b">12. Resultado do F1 após F1-B, F2 e F2-B<a class="headerlink" href="#12-resultado-do-f1-apos-f1-b-f2-e-f2-b" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -9664,7 +9667,7 @@
 </tr>
 <tr>
 <td>pools com alguma calibração numérica</td>
-<td>PARTIAL — 6/18</td>
+<td>PARTIAL — 7/18</td>
 </tr>
 <tr>
 <td>pools numericamente fechados</td>
@@ -9679,11 +9682,15 @@
 <td>PARTIAL PASS — F2</td>
 </tr>
 <tr>
-<td>HC interno/regime/remuneração</td>
+<td>modos de entrega e benchmarks de pessoas</td>
+<td>PARTIAL PASS — F2-B</td>
+</tr>
+<tr>
+<td>HC interno/regime/dedicação/remuneração</td>
 <td>PENDING</td>
 </tr>
 <tr>
-<td>custo monetário F1-C05</td>
+<td>custo monetário completo F1-C05</td>
 <td>NOT CALCULABLE</td>
 </tr>
 <tr>
@@ -9700,12 +9707,12 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Parecer:</strong> <code>PARTIAL PASS — F1/F1-B/F2 now govern cost scope, six public benchmark pools and M0–M6 functional capacity; material monetary gaps still prevent a complete cost and burn baseline.</code></p>
+<p><strong>Parecer:</strong> <code>PARTIAL PASS — F1/F1-B/F2/F2-B now govern cost scope, seven pools with numeric benchmark evidence, functional capacity and people-delivery economics; material assignment, regime, quotations and monetary gaps still prevent a complete cost and burn baseline.</code></p>
 <h2 id="13-proximos-incrementos-permitidos">13. Próximos incrementos permitidos<a class="headerlink" href="#13-proximos-incrementos-permitidos" title="Permanent link">&para;</a></h2>
 <p>Os próximos atos são independentes e exigem autorização própria:</p>
 <ol>
 <li><strong>F1-C — evidência e cotações faltantes</strong>, para ampliar a cobertura externa de custos materiais;</li>
-<li><strong>F2-B — modelo de entrega e custo de pessoas</strong>, para atribuir modos de cobertura, quantidade efetiva, regime candidato e benchmarks de remuneração/serviços sem contratar.</li>
+<li><strong>F2-C — assignment e dedicação M0–M6</strong>, para definir quem cobre cada papel, sobreposições e frações de capacidade sem contratar.</li>
 </ol>
 <p>Burn, caixa, runway e necessidade de capital permanecem bloqueados até que as lacunas materiais de F1 e F2 estejam suficientemente resolvidas.</p>
 
