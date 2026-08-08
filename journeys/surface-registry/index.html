@@ -6715,10 +6715,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-autoridade-de-planos-e-bnd-002" class="md-nav__link">
+  <a href="#5-autoridade-de-planos-e-origem-voluntaria" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Autoridade de planos e BND-002
+        5. Autoridade de planos e origem voluntária
       
     </span>
   </a>
@@ -9053,10 +9053,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-autoridade-de-planos-e-bnd-002" class="md-nav__link">
+  <a href="#5-autoridade-de-planos-e-origem-voluntaria" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Autoridade de planos e BND-002
+        5. Autoridade de planos e origem voluntária
       
     </span>
   </a>
@@ -9113,7 +9113,7 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A versão 0.18.0 não adiciona IDs nem altera maturidades. Ela sincroniza a autoridade conceitual dos planos e corrige <code>BND-002</code> como fronteira genérica de contratação/dimensionamento assistido, preservando a contagem total de 53 IDs.</p>
+<p>A versão 0.19.0 adiciona somente <code>GKR-SURF-PER-009 — Conta e configurações da Pessoa</code> como responsabilidade canônica necessária para a origem voluntária de Planos. A UXA-100-A4 reutiliza <code>COL-002</code> e <code>ORG-001</code> como origens administrativas existentes, sem criar superfícies adicionais para Coletivo ou Organização. A contagem passa a 54 IDs.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9135,7 +9135,7 @@
 <tbody>
 <tr>
 <td>Pessoa</td>
-<td style="text-align: right;">23</td>
+<td style="text-align: right;">24</td>
 </tr>
 <tr>
 <td>Coletivo</td>
@@ -9155,7 +9155,7 @@
 </tr>
 <tr>
 <td><strong>Total</strong></td>
-<td style="text-align: right;"><strong>53</strong></td>
+<td style="text-align: right;"><strong>54</strong></td>
 </tr>
 </tbody>
 </table>
@@ -9261,6 +9261,17 @@
 <td>UXA-002; UXA-011-A1</td>
 <td>UXA-006; UXA-097</td>
 <td>UXA-010; UXA-097</td>
+<td><a href="../surface-registry-person-details/">Pessoa</a></td>
+</tr>
+<tr>
+<td>GKR-SURF-PER-009</td>
+<td>Conta e configurações da Pessoa</td>
+<td>Pessoa autenticada; administração pessoal</td>
+<td>protegido</td>
+<td>contratado</td>
+<td>UXA-100; UXA-100-A1; UXA-100-A4</td>
+<td>—</td>
+<td>—</td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
 </tr>
 <tr>
@@ -9445,9 +9456,9 @@
 <td>responsável</td>
 <td>computador protegido</td>
 <td>validado</td>
-<td>UXA-014; UXA-059</td>
-<td>UXA-086/087</td>
-<td>UXA-087</td>
+<td>UXA-014; UXA-059; UXA-100-A4</td>
+<td>UXA-086/087; reformulação UXA-100-A4</td>
+<td>UXA-087; navegação UXA-100-A4</td>
 <td><a href="../surface-registry-collective-details/">Coletivo</a></td>
 </tr>
 <tr>
@@ -9522,9 +9533,9 @@
 <td>responsável autorizado</td>
 <td>computador/protegido</td>
 <td><strong>validado</strong></td>
-<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3</td>
-<td>UXA-100/A1</td>
-<td>UXA-100-A2/A3</td>
+<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3; UXA-100-A4</td>
+<td>UXA-100/A1; retorno reformulado UXA-100-A4</td>
+<td>UXA-100-A2/A3; navegação UXA-100-A4</td>
 <td><a href="../surface-registry-collective-details/">Coletivo</a></td>
 </tr>
 <tr>
@@ -9566,9 +9577,9 @@
 <td>representante</td>
 <td>protegido</td>
 <td>validado</td>
-<td>UXA-014</td>
-<td>UXA-015</td>
-<td>UXA-017</td>
+<td>UXA-014; UXA-100-A4</td>
+<td>UXA-015; reformulação UXA-100-A4</td>
+<td>UXA-017; navegação UXA-100-A4</td>
 <td><a href="../surface-registry-organization-details/">Organização</a></td>
 </tr>
 <tr>
@@ -9643,9 +9654,9 @@
 <td>representante autorizado</td>
 <td>computador/protegido</td>
 <td><strong>validado</strong></td>
-<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3</td>
-<td>UXA-100/A1</td>
-<td>UXA-100-A2/A3</td>
+<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3; UXA-100-A4</td>
+<td>UXA-100/A1; retorno reformulado UXA-100-A4</td>
+<td>UXA-100-A2/A3; navegação UXA-100-A4</td>
 <td><a href="../surface-registry-organization-details/">Organização</a></td>
 </tr>
 <tr>
@@ -9760,20 +9771,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="5-autoridade-de-planos-e-bnd-002">5. Autoridade de planos e BND-002<a class="headerlink" href="#5-autoridade-de-planos-e-bnd-002" title="Permanent link">&para;</a></h2>
+<h2 id="5-autoridade-de-planos-e-origem-voluntaria">5. Autoridade de planos e origem voluntária<a class="headerlink" href="#5-autoridade-de-planos-e-origem-voluntaria" title="Permanent link">&para;</a></h2>
 <p>A leitura vigente é:</p>
 <div class="highlight"><pre><span></span><code>Pessoa: Free · Plus · Pro
 Coletivo: Livre · Mobiliza · Impacta · Rede
 Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise
 </code></pre></div>
+<p>A origem voluntária de Planos passa a ser representada por <code>PER-009</code>, <code>COL-002</code> e <code>ORG-001</code>. A criação de <code>PER-009</code> não materializa uma arquitetura completa de Conta nem autoriza preencher outras responsabilidades administrativas por inferência.</p>
 <p>Guivos Business é produto especializado e não recebe novos IDs neste registro.</p>
-<p><code>BND-002</code> não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido. A correção não altera contagem nem maturidade.</p>
+<p><code>BND-002</code> não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido.</p>
 <h2 id="6-preservacoes">6. Preservações<a class="headerlink" href="#6-preservacoes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>total de IDs permanece <strong>53</strong>;</li>
+<li>total de IDs passa a <strong>54</strong>;</li>
+<li><code>PER-009</code> permanece sem SVG dedicado e com maturidade <code>contratado</code>;</li>
+<li>os 118 SVGs canônicos permanecem inalterados em quantidade;</li>
 <li><code>PER-203</code> permanece validada no recorte de saída externa;</li>
-<li>a revisão consciente não recebe ID adicional;</li>
 <li><code>BND-001</code> permanece examinado, sem tela própria;</li>
 <li><code>BND-002</code> permanece parcial, sem tela própria;</li>
 <li><code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>

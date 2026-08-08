@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
   <title id="title">Coletivo — tela dedicada de Planos</title>
-  <desc id="desc">Wireframe desktop da área Planos do Coletivo com plano atual, comparação Livre Mobiliza Impacta Rede, benefícios incrementais, capacidade, preços mensal/anual e condições de contratação.</desc>
+  <desc id="desc">Wireframe desktop da área Planos do Coletivo com retorno à Visão Geral, plano atual, comparação Livre Mobiliza Impacta Rede, benefícios incrementais, capacidade, preços mensal/anual e condições de contratação.</desc>
   <rect width="1440" height="1080" fill="#ffffff"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
-    <text x="60" y="54" font-size="14">Coletivo · Configurações</text>
+    <text x="60" y="54" font-size="14">← Visão Geral do Coletivo · Configurações</text>
     <text x="60" y="98" font-size="30" font-weight="700">Planos</text>
     <text x="60" y="126" font-size="14">Compare capacidade operacional sem confundir assinatura com relevância, mérito ou impacto.</text>
   </g>

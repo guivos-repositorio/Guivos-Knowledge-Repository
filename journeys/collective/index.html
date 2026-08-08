@@ -6575,10 +6575,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-da-uxa-096" class="md-nav__link">
+  <a href="#5-efeito-da-uxa-100-a4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito da UXA-096
+        5. Efeito da UXA-100-A4
       
     </span>
   </a>
@@ -9064,10 +9064,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-da-uxa-096" class="md-nav__link">
+  <a href="#5-efeito-da-uxa-100-a4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito da UXA-096
+        5. Efeito da UXA-100-A4
       
     </span>
   </a>
@@ -9209,17 +9209,20 @@
 </code></pre></div>
 <p><code>COL-002</code> e <code>COL-003</code> estão validadas. <code>COL-004</code> a <code>COL-008</code> permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.</p>
 <h2 id="3-planos-como-etapa-transversal-canonica">3. Planos como etapa transversal canônica<a class="headerlink" href="#3-planos-como-etapa-transversal-canonica" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A3 registra <strong>Planos</strong> canonicamente na jornada operacional do Coletivo. A etapa pode ser acessada voluntariamente e também quando uma capacidade comercial legítima for atingida.</p>
-<div class="highlight"><pre><span></span><code>COL-301 — Planos e comparação
-├── TRN-411 → COL-302 — revisão de contratação
-│   └── TRN-412 → COL-304 — resultado/recuperação
-│       └── TRN-415 → COL-301
-├── TRN-413 → COL-303 — downgrade/cancelamento
-│   └── TRN-414 → COL-304
-│       └── TRN-415 → COL-301
-└── TRN-416 → BND-002 — contratação/dimensionamento assistido
+<p>A UXA-100-A3 registra <strong>Planos</strong> canonicamente na jornada operacional do Coletivo. A UXA-100-A4 fecha a origem administrativa voluntária reutilizando <code>COL-002 — Visão Geral do Responsável</code>.</p>
+<div class="highlight"><pre><span></span><code>COL-002 — Visão Geral do Responsável
+└── TRN-417 → COL-301 — Planos e comparação
+    ├── TRN-411 → COL-302 — revisão de contratação
+    │   └── TRN-412 → COL-304 — resultado/recuperação
+    │       └── TRN-415 → COL-301
+    ├── TRN-413 → COL-303 — downgrade/cancelamento
+    │   └── TRN-414 → COL-304
+    │       └── TRN-415 → COL-301
+    ├── TRN-416 → BND-002 — contratação/dimensionamento assistido
+    └── TRN-418 → COL-002 — retorno sem alteração comercial
 </code></pre></div>
-<p><code>TRN-411</code> a <code>TRN-415</code> estão localmente validadas no pacote UXA-100. <code>TRN-416</code> permanece parcial porque o processo comercial posterior a <code>BND-002</code> não foi materializado. <code>BND-002</code> representa a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a um plano específico.</p>
+<p><code>TRN-417/418</code> estão <strong>integralmente validadas no limite documental da Guivos</strong>. Elas preservam Coletivo, papel e escopo de autoridade; abrir Planos não seleciona tier nem inicia cobrança, e retornar não cancela assinatura ou altera capacidade.</p>
+<p><code>TRN-411</code> a <code>TRN-415</code> continuam localmente validadas no pacote UXA-100. <code>TRN-416</code> permanece parcial porque o processo comercial posterior a <code>BND-002</code> não foi materializado. <code>BND-002</code> representa a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente e não pertence semanticamente a um plano específico.</p>
 <p>Entrada contextual permanece válida:</p>
 <div class="highlight"><pre><span></span><code>criar atividade/oportunidade
 → limite do plano atingido ou publicação paga não incluída
@@ -9227,7 +9230,6 @@
 └── comparar planos
     → COL-301
 </code></pre></div>
-<p>As superfícies de criação/publicação que originam todos esses casos não são inventadas como novas transições nesta frente quando ainda não possuem identidade adequada no registro.</p>
 <p>Referência canônica:</p>
 <p><img alt="Coletivo — Planos" src="../../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg">Visualizar SVG</a></p>
@@ -9246,7 +9248,6 @@
 <li>quando a contratação não puder ser concluída em autoatendimento, a jornada usa <code>BND-002</code> como fronteira assistida;</li>
 <li>plano pago não aumenta relevância orgânica, legitimidade ou impacto.</li>
 </ul>
-<p>A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu <code>COL-301</code> a <code>COL-304</code>.</p>
 <h2 id="4-handoffs-criticos">4. Handoffs críticos<a class="headerlink" href="#4-handoffs-criticos" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9259,6 +9260,10 @@
 <tr>
 <td>COL-002 → COL-003 (<code>TRN-112</code>)</td>
 <td>integralmente validada</td>
+</tr>
+<tr>
+<td>COL-002 ↔ COL-301 (<code>TRN-417/418</code>)</td>
+<td><strong>integralmente validadas pela UXA-100-A4</strong></td>
 </tr>
 <tr>
 <td>PER-105 ↔ COL-003 (<code>TRN-105/106/107/109</code>)</td>
@@ -9274,7 +9279,7 @@
 </tr>
 <tr>
 <td>PER-107 → PER-108 (<code>TRN-111</code>)</td>
-<td><strong>integralmente validada por UXA-096</strong></td>
+<td>integralmente validada por UXA-096</td>
 </tr>
 <tr>
 <td>Coletivo ↔ Organização</td>
@@ -9286,13 +9291,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="5-efeito-da-uxa-096">5. Efeito da UXA-096<a class="headerlink" href="#5-efeito-da-uxa-096" title="Permanent link">&para;</a></h2>
+<h2 id="5-efeito-da-uxa-100-a4">5. Efeito da UXA-100-A4<a class="headerlink" href="#5-efeito-da-uxa-100-a4" title="Permanent link">&para;</a></h2>
 <ul>
-<li>reforma os SVGs correntes de <code>PER-107</code> e <code>PER-108</code> sem criar ativos;</li>
-<li>revalida <code>PER-107</code> e valida <code>PER-108</code>;</li>
-<li>valida <code>TRN-111</code> ponta a ponta com vínculo atual, retorno neutro e estado canônico;</li>
-<li>preserva os sete handoffs anteriores e adiciona <code>TRN-111</code> ao conjunto integral, totalizando oito;</li>
-<li>não materializa operação interna do responsável nem canais P1.</li>
+<li>reformula in-place a navegação de <code>COL-002</code> para incluir <code>Planos e cobrança</code>;</li>
+<li>torna explícito em <code>COL-301</code> o retorno à Visão Geral;</li>
+<li>adiciona e valida <code>TRN-417/418</code>;</li>
+<li>não cria nova superfície ou SVG;</li>
+<li>não altera a maturidade das transições comerciais internas ou de <code>BND-002</code>.</li>
 </ul>
 <h2 id="6-principios-preservados">6. Princípios preservados<a class="headerlink" href="#6-principios-preservados" title="Permanent link">&para;</a></h2>
 <ul>
@@ -9305,6 +9310,7 @@
 <li>atividade continua voluntária quando não houver compromisso previamente aceito;</li>
 <li>consulta não é votação universal nem obrigação de resposta;</li>
 <li>plano pago amplia capacidade, não legitimidade, relevância ou impacto;</li>
+<li>abrir Planos não cria intenção de contratação;</li>
 <li>atingir cota não reduz visibilidade das publicações existentes;</li>
 <li>pausa, recusa e saída não reduzem reputação;</li>
 <li>estado canônico mais recente prevalece sobre estado visual obsoleto;</li>
@@ -9316,12 +9322,12 @@
 <li>participantes, comunicação e demais áreas do responsável continuam incompletos;</li>
 <li>estados P0B de superfícies da Pessoa permanecem separados;</li>
 <li>a relação Organização–Coletivo permanece contratada e não materializada;</li>
-<li>as transições de Planos são locais e <code>TRN-416</code> permanece parcial;</li>
+<li>as transições comerciais internas de Planos continuam locais e <code>TRN-416</code> permanece parcial;</li>
 <li>cobrança real, gateway e processo assistido posterior a <code>BND-002</code> não foram implementados/validados ponta a ponta;</li>
 <li>outras continuidades ainda não foram examinadas como conjunto.</li>
 </ul>
 <h2 id="8-estado-da-frente-de-planos">8. Estado da frente de Planos<a class="headerlink" href="#8-estado-da-frente-de-planos" title="Permanent link">&para;</a></h2>
-<p>A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em <code>COL-301</code> a <code>COL-304</code>, <code>TRN-411</code> a <code>TRN-416</code> e <code>BND-002</code>. A taxonomia vigente desta frente é <code>Livre · Mobiliza · Impacta · Rede</code>. Nenhuma próxima UXA é iniciada automaticamente.</p>
+<p>A identidade da origem administrativa voluntária do Coletivo está encerrada pela UXA-100-A4 em <code>COL-002 ↔ COL-301</code>. A taxonomia vigente permanece <code>Livre · Mobiliza · Impacta · Rede</code>. Nenhuma próxima UXA é iniciada automaticamente.</p>
 
 
 

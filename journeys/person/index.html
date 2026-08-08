@@ -9160,18 +9160,20 @@ PER-203
 <p><img alt="Detalhe e revisão de saída" src="../../assets/wireframes/uxa-007-opportunity-detail-mobile.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-007-opportunity-detail-mobile.svg">Visualizar SVG</a></p>
 <h2 id="3-planos-como-etapa-transversal-canonica">3. Planos como etapa transversal canônica<a class="headerlink" href="#3-planos-como-etapa-transversal-canonica" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A3 promove <strong>Planos</strong> como etapa canonicamente registrada da jornada da Pessoa. Ela não substitui Hoje, Explorar, Mapa ou Detalhe e não transforma assinatura em requisito para acessar oportunidades públicas.</p>
-<div class="highlight"><pre><span></span><code>PER-301 — Planos e comparação
-├── TRN-401 → PER-302 — revisão de contratação
-│   └── TRN-402 → PER-304 — resultado/recuperação
-│       └── TRN-405 → PER-301
-└── TRN-403 → PER-303 — downgrade/cancelamento
-    └── TRN-404 → PER-304
-        └── TRN-405 → PER-301
+<p>A UXA-100-A3 promove <strong>Planos</strong> como etapa canonicamente registrada da jornada da Pessoa. A UXA-100-A4 fecha a identidade documental de sua origem voluntária sem criar uma tela artificial de Conta.</p>
+<div class="highlight"><pre><span></span><code>PER-009 — Conta e configurações
+├── TRN-406 → PER-301 — Planos e comparação
+│   ├── TRN-401 → PER-302 — revisão de contratação
+│   │   └── TRN-402 → PER-304 — resultado/recuperação
+│   │       └── TRN-405 → PER-301
+│   ├── TRN-403 → PER-303 — downgrade/cancelamento
+│   │   └── TRN-404 → PER-304
+│   │       └── TRN-405 → PER-301
+│   └── TRN-407 → PER-009 — retorno sem alteração de plano
 </code></pre></div>
-<p>As cinco transições estão <strong>localmente validadas</strong>; isso não comprova gateway, cobrança real, proration ou execução técnica de entitlement.</p>
-<p>Entrada voluntária continua prevista por Conta/Configurações. Como essa área genérica ainda não possui ID único no registro, a UXA-100-A3 não inventa transição de origem.</p>
-<p>Entrada contextual legítima:</p>
+<p><code>TRN-401</code> a <code>TRN-405</code> permanecem <strong>localmente validadas</strong>. <code>TRN-406/407</code> ficam <strong>contratadas</strong>, pois <code>PER-009</code> possui identidade canônica suficiente para o handoff, mas ainda não possui materialização visual própria que sustente validação ponta a ponta.</p>
+<p>Abrir Planos por <code>TRN-406</code> não seleciona plano, não inicia cobrança, não consome cota e não amplia consentimento. Retornar por <code>TRN-407</code> não cancela assinatura nem altera o plano atual.</p>
+<p>Entrada contextual legítima permanece:</p>
 <div class="highlight"><pre><span></span><code>correspondência personalizada adicional após cota Free
 → prévia limitada da camada personalizada
 ├── Explorar oportunidades públicas
@@ -9270,6 +9272,7 @@ PER-203
 <li>proximidade não equivale a relevância;</li>
 <li>patrocínio e plano pago não compram relevância funcional;</li>
 <li>atingir cota personalizada do Free não oculta catálogo público;</li>
+<li>abrir Planos voluntariamente não cria intenção de compra;</li>
 <li>abrir Detalhe não cria obrigação de agir;</li>
 <li>sair para ambiente externo não amplia consentimento nem transfere a jornada pessoal por padrão;</li>
 <li>compartilhar pouco permanece legítimo;</li>
@@ -9282,15 +9285,15 @@ PER-203
 <p>Esta vista permanece <code>draft</code> porque:</p>
 <ul>
 <li><code>TRN-001</code>, <code>TRN-003</code>, <code>TRN-004</code> e <code>TRN-005</code> ainda são parciais;</li>
-<li>as transições de Planos são locais e não representam cobrança ponta a ponta;</li>
-<li>entradas genéricas de Conta/Configurações e correspondência personalizada ainda não possuem transições canônicas de origem;</li>
+<li>as transições comerciais internas de Planos são locais e não representam cobrança ponta a ponta;</li>
+<li><code>PER-009</code> ainda não possui materialização própria e <code>TRN-406/407</code> permanecem contratadas;</li>
 <li>estados P0B adicionais permanecem separados;</li>
 <li>áreas internas especializadas a partir de <code>PER-108</code> não foram validadas como conjunto;</li>
 <li>outras continuidades da jornada pessoal ainda não foram examinadas ponta a ponta.</li>
 </ul>
 <p><code>TRN-205</code> deixa de ser motivo de <code>draft</code>: a UXA-101 a valida integralmente <strong>até <code>BND-001</code></strong>, sem validar o processo externo posterior.</p>
 <h2 id="7-estado-atual">7. Estado atual<a class="headerlink" href="#7-estado-atual" title="Permanent link">&para;</a></h2>
-<p>V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada. V5 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.</p>
+<p>V1, V2, V3 e V4 estão encerradas nos respectivos limites documentais. A frente de Planos está canonicamente registrada e sua origem voluntária possui identidade formal pela UXA-100-A4. V5/UXA-102 não foi iniciada e nenhuma etapa de Engenharia de Produto foi autorizada automaticamente.</p>
 
 
 
