@@ -10,7 +10,6 @@ related:
   - GPA-006
   - ADR-003
   - ADR-005
-  - GKR-RESYNCHRONIZATION-BASELINE-2026-08-08-001
 ---
 
 # ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo
