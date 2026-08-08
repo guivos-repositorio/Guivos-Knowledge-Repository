@@ -3,7 +3,7 @@
 
 The validator distinguishes three classes:
 1. forbidden legacy names in live/current documentation -> error;
-2. preserved historical/superseded evidence -> reported but not failed;
+2. preserved historical/superseded or explicit migration evidence -> reported but not failed;
 3. ambiguous Business tier tokens -> reported for semantic review, not auto-rewritten.
 
 The purpose is deliberately conservative: never replace generic words such as
@@ -27,6 +27,9 @@ TEXT_SUFFIXES = {".md", ".svg", ".yml", ".yaml", ".json", ".txt"}
 # superseded names without reasserting them as current authority.
 EXPLICIT_REFERENCE_FILES = {
     "docs/economic-model/gem-004-plan-taxonomy-conceptual-authority.md",
+    "docs/glossary.md",
+    "docs/product-architecture/index.md",
+    "docs/product-architecture/mall.md",
     "docs/project/legacy-nomenclature-reconciliation-2026-08-08.md",
 }
 
