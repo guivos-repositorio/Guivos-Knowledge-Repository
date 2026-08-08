@@ -2,7 +2,7 @@
 id: GPA-SPECIALIZED-JOURNEY-MATRIX-001
 title: Matriz de Integração dos Produtos com as Jornadas
 status: consolidated
-version: 1.0.0
+version: 1.0.1
 owner: Guivos
 last_updated: 2026-08-08
 related:
@@ -17,6 +17,7 @@ related:
   - GPA-007
   - PAS-001
   - PAS-001-OA-INTEGRATION-001
+  - UXA-101
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -36,7 +37,7 @@ Ela responde, para cada componente oficial, quatro perguntas:
 3. quando existe um handoff interno entre produtos;
 4. quais integrações continuam apenas conceituais ou incompletas.
 
-A matriz usa somente autoridades integradas à `main` na data desta edição. PRs em rascunho ou ainda não mescladas não alteram este baseline.
+A matriz usa somente autoridades integradas à `main` na data desta edição, incluindo a UXA-101 e sua validação da saída consciente até `BND-001`. PRs em rascunho ou ainda não mescladas não alteram este baseline.
 
 ## 2. Autoridade e limites
 
@@ -116,7 +117,7 @@ Consequentemente:
 - Business → Journey e Ads → Journey são handoffs internos;
 - somente a passagem para um terceiro com autoridade própria deve ser tratada como fronteira externa.
 
-A maturidade específica de `BND-001` e de `TRN-205` continua sendo a registrada na `main`; esta matriz não a promove.
+Na baseline vigente, a UXA-101 valida integralmente `GKR-TRN-205` no trecho controlável `PER-203 → BND-001`, incluindo revisão consciente, destino, responsabilidade, dados/contexto, retorno e falha segura. Essa validação não inclui nem presume o processo, resultado ou confirmação executados pelo sistema do terceiro após a fronteira.
 
 ## 8. Registro de gaps de integração
 
@@ -144,6 +145,7 @@ Esta matriz:
 - torna explícita a responsabilidade dos sete componentes sobre jornadas já existentes;
 - diferencia produto responsável, produto de apoio e host de experiência;
 - identifica handoffs internos já existentes e lacunas reais;
+- reconhece a UXA-101 como autoridade vigente da saída consciente para `BND-001` sem converter fronteira externa em handoff interno;
 - não cria novos `SURF`, `TRN` ou SVGs;
 - não inicia UXA posterior;
 - não inicia Engenharia de Produto;
