@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.19.0
+version: 0.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -27,6 +27,7 @@ related:
   - UXA-100
   - UXA-100-A1
   - UXA-100-A2
+  - UXA-100-A3
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -40,9 +41,9 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne os **109 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura e aponta também para um **apêndice candidato UXA-100 com 9 SVGs de Planos, comparação e cobrança**.
+Esta seção reúne os **118 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-100-A2 aprovou funcionalmente os 9 ativos de Planos **como candidatos** após reformulação controlada de 6 deles. Eles continuam fora da contagem canônica até promoção governada.
+A UXA-100-A3 incorpora os nove ativos de Planos funcionalmente aprovados pela UXA-100-A2. A promoção cria identidade canônica para as famílias de Planos, mas não converte cada estado do board em tela independente nem comprova implementação de cobrança.
 
 ## 2. Estado do instrumento
 
@@ -50,13 +51,13 @@ A galeria permanece `active` como instrumento de inspeção. Esse status não si
 
 Ressalvas vigentes:
 
-- 109 SVGs canônicos compartilham 28 perfis de rastreabilidade;
-- 9 responsabilidades continuam sem SVG dedicado no conjunto canônico;
-- uma fronteira permanece corretamente sem tela;
-- **109 SVGs canônicos possuem validação funcional vigente**;
-- **0 aguardam validação funcional específica** no conjunto canônico;
-- a UXA-100 possui **9 SVGs candidatos, 9/9 aprovados funcionalmente como candidatos**;
-- 6 dos 9 ativos candidatos foram reformulados pela UXA-100-A2 e 3 comparações incrementais foram preservadas;
+- **118 SVGs canônicos** compartilham **31 perfis de rastreabilidade**;
+- 9 responsabilidades continuam sem SVG dedicado;
+- **duas fronteiras** permanecem corretamente sem tela;
+- **118 SVGs possuem validação funcional documental vigente**;
+- **0 aguardam validação funcional específica**;
+- a UXA-100-A3 adiciona 12 superfícies de Planos e `BND-002`, sem criar novos SVGs além dos 9 já materializados;
+- as 15 transições internas de Planos são localmente validadas e `TRN-416/426` permanecem parciais;
 - validar os dez estados de `COM-005` não promove automaticamente `TRN-305`;
 - `TRN-205`, `TRN-304` e `TRN-306` permanecem parciais;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`.
@@ -65,7 +66,7 @@ Ressalvas vigentes:
 
 - [Matriz de Rastreabilidade Visual por SVG](screen-gallery-traceability-matrix.md)
 - [Catálogo Integrado de Telas](screen-catalog.md)
-- [Planos, Comparação e Cobrança — Galeria Candidata](screen-gallery-plans-billing.md)
+- [Planos, Comparação e Cobrança — Galeria Canônica](screen-gallery-plans-billing.md)
 - [Registro Granular de Superfícies e Estados](surface-registry.md)
 - [Registro Granular de Transições](transition-registry.md)
 - [Lacunas e Continuidades Ausentes](gaps.md)
@@ -79,60 +80,65 @@ Ressalvas vigentes:
 | 3 | [Coletivos](screen-gallery-collectives.md) | 34 | descoberta → solicitação → gestão → Meus Coletivos → Central → Início |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-|  | **Total canônico** | **109** | **109 validados; 0 pendentes** |
+| 6 | [Planos, Comparação e Cobrança](screen-gallery-plans-billing.md) | **9** | plano atual → comparação → contratação/ciclo → resultado/recuperação |
+|  | **Total canônico** | **118** | **118 validados; 0 pendentes** |
 
-## 5. Apêndice candidato UXA-100 — Planos
+## 5. Planos — UXA-100
 
-A [galeria candidata de Planos](screen-gallery-plans-billing.md) reúne 9 SVGs:
+A galeria de Planos reúne:
 
-| Participante | Tela dedicada de Planos | Fluxo | Comparação incremental | Total | Aprovados como candidatos |
-|---|---:|---:|---:|---:|---:|
-| Pessoa | 1 | 1 | 1 | 3 | 3 |
-| Coletivo | 1 | 1 | 1 | 3 | 3 |
-| Organização | 1 | 1 | 1 | 3 | 3 |
-| **Total candidato** | **3** | **3** | **3** | **9** | **9** |
+| Participante | Tela dedicada de Planos | Fluxo | Comparação incremental | Total | Perfil |
+|---|---:|---:|---:|---:|---|
+| Pessoa | 1 | 1 | 1 | 3 | R29 |
+| Coletivo | 1 | 1 | 1 | 3 | R30 |
+| Organização | 1 | 1 | 1 | 3 | R31 |
+| **Total** | **3** | **3** | **3** | **9** | **3 perfis** |
 
 Esses ativos:
 
-- estão associados à UXA-100/A1/A2;
-- foram inseridos como referências nas três jornadas `draft`;
-- foram auditados funcionalmente como candidatos;
-- não possuem IDs canônicos de superfície/transição;
-- não alteram a matriz canônica de 109 SVGs;
-- não representam checkout, cobrança ou oferta comercial implementados.
+- estão associados à UXA-100/A1/A2/A3;
+- permanecem referências nas três jornadas `draft`;
+- foram funcionalmente aprovados pela UXA-100-A2;
+- foram promovidos pela UXA-100-A3;
+- cobrem `PER/COL/ORG-301` a `304`;
+- não representam checkout, gateway ou cobrança implementados.
 
 ## 6. Cobertura canônica confirmada
 
 | Indicador | Resultado |
 |---|---:|
-| SVGs canônicos existentes e referenciados | **109** |
-| associações individuais canônicas | **109** |
-| perfis de rastreabilidade | **28** |
-| com validação funcional vigente | **109** |
+| SVGs canônicos existentes e referenciados | **118** |
+| associações individuais canônicas | **118** |
+| perfis de rastreabilidade | **31** |
+| com validação funcional vigente | **118** |
 | pendentes de validação específica | **0** |
-| IDs com referência visual | **30 de 40** |
+| superfícies/estados/fronteiras | **53** |
+| transições documentais | **54** |
+| IDs com referência visual | **42 de 53** |
 | responsabilidades sem SVG dedicado | **9** |
-| fronteira documental sem tela | 1 |
-| SVGs candidatos UXA-100 | **9** |
-| candidatos funcionalmente aprovados | **9 de 9** |
+| fronteiras documentais sem tela | **2** |
 
 ## 7. Responsabilidades sem SVG dedicado
 
 - `GKR-SURF-COL-004` a `GKR-SURF-COL-008`;
 - `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007`.
 
-`GKR-SURF-BND-001` permanece intencionalmente sem tela Guivos.
+`GKR-SURF-BND-001` e `GKR-SURF-BND-002` permanecem intencionalmente sem tela Guivos.
 
-As novas telas de Planos não reduzem essa lacuna canônica porque ainda não foram promovidas a IDs de superfície.
+As superfícies de Planos possuem referência visual direta ou agrupada e, portanto, não aumentam a lista de responsabilidades sem SVG dedicado.
 
 ## 8. Fronteiras de validação
 
-A validação dos 109 SVGs canônicos não implica que todas as 37 transições estejam integralmente validadas. Permanecem continuidades parciais, entre elas `TRN-305`, `TRN-205`, `TRN-304` e `TRN-306`.
+A validação dos 118 SVGs não implica que todas as 54 transições estejam integralmente validadas. Na frente de Planos:
 
-A aprovação funcional dos 9 SVGs candidatos da UXA-100 também **não implica superfície registrada, transição integrada ou implementação**. Ela confirma sua coerência funcional no escopo candidato da UXA-100-A2.
+- `TRN-401` a `405`, `411` a `415` e `421` a `425` são **localmente validadas**;
+- `TRN-416` e `TRN-426` são **parciais**;
+- cobrança real, gateway, proration e processo após `BND-002` permanecem fora do escopo.
+
+Também permanecem parciais `TRN-205`, `TRN-304`, `TRN-305` e `TRN-306`.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
-## 9. Próxima decisão
+## 9. Estado após UXA-100-A3
 
-A auditoria funcional dos 9 ativos candidatos foi concluída. O próximo ato possível é decidir, separadamente, sua **fragmentação e promoção canônica**: quais superfícies existirão, quais IDs serão criados e quais transições serão registradas. Nenhuma dessas ações é automática.
+A fragmentação e promoção canônica de Planos está documentada. Pessoa, Coletivo e Organização continuam `draft`; nenhuma próxima UXA, integração à `main` ou implementação técnica é iniciada automaticamente.
