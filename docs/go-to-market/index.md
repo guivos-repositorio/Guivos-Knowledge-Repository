@@ -2,7 +2,7 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 related:
@@ -54,6 +54,16 @@ As conversas-fontes anteriores registraram como direção estratégica:
 - faixa histórica candidata de valuation pré-receita no lançamento de **R$ 10 milhões a R$ 15 milhões**.
 
 Esses itens não transformam automaticamente projeções históricas em metas aprovadas. A baseline quantitativa deste domínio é deliberadamente marcada como candidata até revisão humana.
+
+### 4.1 Horizontes executivos de planejamento
+
+A baseline de cinco anos é estratificada em três horizontes cumulativos:
+
+- **curto prazo — M0 a M12**, com checkpoint M6 e fechamento M12;
+- **médio prazo — M13 a M36**, com checkpoint M24 e fechamento M36;
+- **longo prazo — M37 a M60**, com checkpoint M48 e fechamento M60.
+
+A meta de cinco anos é, portanto, o fechamento do horizonte de longo prazo. `GTM-006` concentra a leitura executiva desses horizontes sem substituir as tabelas detalhadas de `GTM-001`, `GTM-002` e `GTM-003`.
 
 ## 5. Separação canônica de atores e relações
 
@@ -118,6 +128,7 @@ A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organi
 | `GTM-003` | [Baseline de Pagantes, Receita e Crescimento](gtm-003-payer-revenue-and-growth-target-baseline.md) | usuários, pagantes por plano e faturamento candidato |
 | `GTM-004` | [Investimento, Valuation e Modelo para Investidores](gtm-004-investment-valuation-and-investor-model.md) | valuation, rodada, participação e sensibilidade de retorno |
 | `GTM-005` | [Governança, Métricas e Cadência](gtm-005-governance-metrics-and-review-cadence.md) | ownership, revisões, gates e status |
+| `GTM-006` | [Horizontes de Meta e Marcos de Crescimento](gtm-006-target-horizons-and-milestones.md) | curto M0–M12, médio M13–M36 e longo M37–M60, com checkpoints |
 
 ## 7. Públicos consumidores
 
@@ -146,9 +157,11 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 6. **crescimento não compra relevância** — metas comerciais não alteram ranking, legitimidade ou evidência de impacto;
 7. **receita protege propósito e continuidade** — monetização não deve induzir comportamento contrário à evolução das pessoas;
 8. **projeção não é promessa** — toda meta numérica possui data-base, premissas e status;
-9. **capital não é receita** — aporte, dívida, faturamento, receita reconhecida e caixa permanecem separados;
-10. **valuation não é fato contábil** — é uma referência negocial sujeita a evidência, diligência e mercado;
-11. **internacionalização exige gate** — Portugal não é acionado apenas por calendário.
+9. **horizonte não substitui checkpoint** — curto, médio e longo prazo organizam a estratégia; M6, M12, M24, M36, M48 e M60 preservam a precisão operacional;
+10. **metas são cumulativas** — números de um checkpoint representam o estado esperado acumulado e não devem ser somados aos checkpoints anteriores;
+11. **capital não é receita** — aporte, dívida, faturamento, receita reconhecida e caixa permanecem separados;
+12. **valuation não é fato contábil** — é uma referência negocial sujeita a evidência, diligência e mercado;
+13. **internacionalização exige gate** — Portugal não é acionado apenas por calendário.
 
 ## 9. Estado
 
