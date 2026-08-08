@@ -2,12 +2,14 @@
 id: UXA-100-A1
 title: Integração de Planos às Jornadas e Telas Dedicadas
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 parent: UXA-100
 related:
   - UXA-100-A2
+  - GEM-004-A1
+  - GPA-004
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
@@ -21,15 +23,23 @@ normative: false
 
 ## 1. Finalidade
 
-A UXA-100-A1 estende a UXA-100 para inserir **Planos** explicitamente nas jornadas da Pessoa, do Coletivo e da Organização e materializar uma tela dedicada de Planos para cada participante.
+A UXA-100-A1 insere **Planos** explicitamente nas jornadas de Pessoa, Coletivo e Organização e materializa uma tela dedicada por participante.
 
-A extensão não cria checkout real, cobrança implementada, entitlement operacional, oferta pública, IDs canônicos de superfície/transição ou promoção das jornadas.
+A sincronização de 2026-08-08 atualiza somente taxonomia e leitura conceitual, preservando os nove SVGs existentes e sem criar checkout, cobrança implementada, entitlement operacional, oferta pública, novos IDs ou promoção de jornada.
 
-A UXA-100-A2 executou posteriormente a auditoria funcional dos nove SVGs candidatos e os aprovou como materializações candidatas após reformulação controlada de seis ativos.
+## 2. Taxonomia aplicada
 
-## 2. Decisão de arquitetura da experiência
+- Pessoa: `Free · Plus · Pro`;
+- Coletivo: `Livre · Mobiliza · Impacta · Rede`;
+- Organização: `Conecta · Eleva · Transforma`.
 
-Planos passa a existir como **etapa transversal recorrente** da experiência, com dois pontos legítimos de entrada:
+Referências visuais anteriores `Gestão/Impacto/Enterprise` e `Business Start/Growth/Scale` são migradas conforme GEM-004-A1.
+
+Guivos Business (`Start · Growth · Scale · Enterprise`) permanece produto especializado fora da materialização desta UXA. `Organização Transforma ≠ Guivos Business Enterprise`.
+
+## 3. Decisão de arquitetura
+
+Planos é etapa transversal recorrente com dois pontos legítimos de entrada:
 
 ```text
 entrada voluntária
@@ -45,63 +55,60 @@ limite legítimo atingido
 → Planos
 ```
 
-O participante não precisa atingir um limite para conhecer, comparar ou administrar seu plano.
+O participante não precisa atingir limite para conhecer, comparar ou administrar seu plano.
 
-## 3. Espinha dorsal comum
+## 4. Espinha dorsal comum
 
 ```text
 Planos
 → plano atual
 → consumo/capacidade do ciclo
-→ comparação geral
-→ comparação incremental
-→ delta direto plano atual → plano alvo
-→ manter / upgrade / downgrade / cancelar / solicitar proposta
-→ revisão da contratação quando aplicável
-→ pagamento simulado ou processo comercial governado
-→ sucesso/falha
-→ retorno ao contexto anterior
+→ comparação geral e incremental
+→ delta direto atual → alvo
+→ manter / mudar / downgrade / cancelar
+→ revisão quando aplicável
+→ resultado/recuperação
+→ retorno ao contexto
+
+quando contratação não for autonomamente configurável
+→ BND-002 contratação/dimensionamento assistido
 ```
 
-## 4. Pessoa
+`BND-002` não é sinônimo de um plano específico.
 
-Tela dedicada candidata:
+## 5. Pessoa
 
 ![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
 [Visualizar SVG](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
-A jornada inclui acesso voluntário por Conta/Configurações, plano atual e consumo da cota personalizada, comparação Free / Plus / Pro, ganho incremental e comparação direta, gestão de cobrança/downgrade/cancelamento e entrada contextual a partir de correspondência personalizada adicional após cota Free.
+A jornada preserva Free/Plus/Pro, entrada voluntária e contextual e proteção de Explorar/Mapa após cota Free. Plano pago não representa evolução humana.
 
-Proteção obrigatória: atingir a cota do Free não esconde oportunidade pública, Explorar ou Mapa.
-
-## 5. Coletivo
-
-Tela dedicada candidata:
+## 6. Coletivo
 
 ![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
 [Visualizar SVG](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-A jornada inclui acesso pela administração/configurações, plano atual e consumo mensal, comparação Livre / Gestão / Impacto / Enterprise, delta incremental e direto, upgrade/downgrade/cancelamento, Enterprise por proposta comercial e entrada contextual quando cota/capacidade for atingida.
+A jornada compara `Livre · Mobiliza · Impacta · Rede`, preservando os preços/capacidades anteriormente governados. Mobiliza significa transformar intenção em mobilização coordenada; Impacta significa transformar mobilização em impacto sustentado/evidenciado; Rede representa complexidade operacional de rede, não superioridade do Coletivo.
 
-Alternativas como manter rascunho, aguardar ciclo ou usar modalidade gratuita aplicável permanecem visíveis quando funcionalmente válidas.
+Alternativas como rascunho, aguardar ciclo e modalidade gratuita aplicável permanecem visíveis. Quando houver necessidade real de proposta/dimensionamento, o handoff usa `BND-002` genericamente.
 
-## 6. Organização
-
-Tela dedicada candidata:
+## 7. Organização
 
 ![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 [Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-A jornada inclui acesso pela administração, plano atual/capacidade/consumo, comparação Business Start / Growth / Scale, diferença incremental e direta, mudança/downgrade/cancelamento, Scale por proposta comercial e entrada contextual quando capacidade de novas oportunidades/programas for atingida.
+A jornada compara `Conecta · Eleva · Transforma`, preservando os preços/capacidades anteriormente atribuídos aos três níveis organizacionais.
 
-Arquivar, agendar ou manter rascunho permanecem alternativas quando aplicáveis.
+Conecta liga capacidade institucional a pessoas/Coletivos/oportunidades; Eleva amplia coordenação e profundidade institucional; Transforma atende maior complexidade e capacidade sistêmica sem garantir impacto.
 
-## 7. Conjunto visual da UXA-100
+Esses planos pertencem à jornada da Organização e não são Guivos Business.
 
-A extensão consolida 9 SVGs candidatos:
+## 8. Conjunto visual preservado
+
+A extensão continua com os mesmos 9 SVGs:
 
 | Tipo | Pessoa | Coletivo | Organização | Total |
 |---|---:|---:|---:|---:|
@@ -110,56 +117,34 @@ A extensão consolida 9 SVGs candidatos:
 | comparação incremental | 1 | 1 | 1 | 3 |
 | **Total** | **3** | **3** | **3** | **9** |
 
-Inspeção: [Planos, Comparação e Cobrança — Galeria Candidata](../journeys/screen-gallery-plans-billing.md).
+Inspeção: [Planos, Comparação e Cobrança](../journeys/screen-gallery-plans-billing.md).
 
-## 8. Regra de comparação
+Nenhum SVG Business é criado nesta frente.
 
-Cada plano superior deverá ser apresentado como:
+## 9. Regra de comparação
 
 ```text
-plano superior
-= capacidades preservadas do plano anterior
-+ capacidades novas ou ampliadas deste degrau
+plano de maior capacidade
+= capacidades preservadas
++ capacidades novas ou ampliadas
 ```
 
-Benefícios herdados não serão descritos como novidade. Quando plano atual e alvo forem conhecidos, a interface deve apresentar o delta direto. No downgrade, deve mostrar exatamente capacidades removidas ou reduzidas antes da confirmação.
+No downgrade, a interface mostra exatamente capacidades removidas/reduzidas. A comparação não apresenta maior capacidade como maior valor, mérito ou evolução.
 
-## 9. Separações obrigatórias
+## 10. Separações obrigatórias
 
 - Planos ≠ oportunidade específica;
 - assinatura ≠ taxa transacional;
-- plano pago ≠ relevância;
-- plano pago ≠ confiança ou legitimidade;
-- plano pago ≠ evolução humana;
-- tela materializada ≠ superfície canônica;
-- fluxo de pagamento documentado ≠ gateway implementado;
-- proposta Enterprise/Scale ≠ checkout automático.
+- plano pago ≠ relevância, confiança, legitimidade ou evolução;
+- Organização ≠ Guivos Business;
+- Transforma ≠ Business Enterprise;
+- tela materializada ≠ nova superfície;
+- fluxo documentado ≠ gateway;
+- contratação assistida ≠ checkout automático;
+- BND-002 ≠ Enterprise/Scale/Rede/Transforma.
 
-## 10. Estado documental
+## 11. Estado documental
 
-Com esta extensão e sua auditoria funcional posterior:
+A sincronização taxonômica não altera as contagens nem maturidades já promovidas posteriormente pela UXA-100-A3: 118 SVGs canônicos, 53 superfícies/estados/fronteiras e 54 transições documentais no conjunto vigente.
 
-- Jornada da Pessoa: `draft` 0.12.0;
-- Jornada do Coletivo: `draft` 0.13.0;
-- Jornada da Organização: `draft` 0.5.0;
-- Jornadas Integradas: `active` 0.28.1 como instrumento de leitura;
-- Catálogo: `active` 0.23.0, preservando 109 SVGs canônicos e registrando 9 candidatos separados;
-- Galeria principal: `active` 0.18.0, com referência ao apêndice candidato;
-- Galeria candidata de Planos: `draft`, com 9/9 ativos funcionalmente aprovados como candidatos pela UXA-100-A2.
-
-A baseline canônica anterior permanece 109 SVGs, 40 IDs de superfície/responsabilidade/fronteira e 37 transições. Os 9 SVGs de Planos são candidatos e não alteram essas contagens.
-
-Nenhuma jornada é promovida por esta extensão ou por sua auditoria.
-
-## 11. Resultado da auditoria funcional
-
-A UXA-100-A2 concluiu:
-
-- 9 SVGs auditados;
-- 6 reformulados controladamente;
-- 3 aprovados sem reforma;
-- 9/9 aprovados funcionalmente no escopo candidato;
-- nenhuma implementação ou operação presumida;
-- nenhuma superfície/transição canônica criada.
-
-A próxima decisão possível passa a ser **promoção/fragmentação canônica**, não nova auditoria dos mesmos ativos. Essa decisão continua separada e não é automática.
+Nenhuma jornada é promovida e Engenharia de Produto continua fora deste incremento.
