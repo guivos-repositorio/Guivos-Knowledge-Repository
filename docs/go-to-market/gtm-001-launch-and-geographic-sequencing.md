@@ -2,7 +2,7 @@
 id: GTM-001
 title: Sequenciamento de Lançamento e Expansão Geográfica
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 parent: GTM-000
@@ -32,14 +32,16 @@ Belo Horizonte
 
 A sequência representa prioridade operacional, não exclusividade territorial. Usuários de outras localidades poderão existir, mas investimento ativo de GTM deve seguir os gates definidos.
 
-## 3. Separação territorial entre oferta e parceria estratégica
+## 3. Separação territorial entre oferta e Parceria Estratégica
 
 Por praça, o GTM acompanha duas redes diferentes:
 
 1. **rede de oferta do ecossistema** — Coletivos e Organizações que disponibilizam oportunidades, programas, capacidades ou outras possibilidades de evolução;
-2. **rede de Parcerias Estratégicas** — contrapartes que ampliam distribuição, infraestrutura, integração, acesso institucional, entrada territorial ou capacidade de escala da Guivos.
+2. **rede de Parcerias Estratégicas** — relações empresariais ou institucionais diretamente com a Guivos enquanto empresa, destinadas a ampliar alcance, distribuição, infraestrutura, integração, apoio, divulgação, acesso institucional, entrada territorial, eficiência ou capacidade de escala.
 
-Uma Organização não entra na meta de Parcerias Estratégicas apenas por publicar oportunidades. Se a mesma entidade exercer os dois papéis, cada relação deverá ser governada e medida separadamente conforme `GTM-002`.
+Uma relação destinada a entregar oportunidade, benefício, programa, serviço ou capacidade diretamente a Pessoas ou Coletivos é classificada como **Organização**, não como Parceria Estratégica.
+
+Uma mesma pessoa jurídica poderá possuir uma relação de Organização e outra relação corporativa independente com a Guivos, mas cada uma deverá ser governada e medida separadamente conforme `GTM-002`.
 
 ## 4. Onda 0 — preparação de Belo Horizonte | M0–M3
 
@@ -51,7 +53,7 @@ Construir a primeira densidade verificável do ecossistema e preparar o lançame
 
 - mapear e qualificar Coletivos locais;
 - mapear Organizações e empresas âncora capazes de compor a oferta da Journey;
-- formar rede inicial de Parcerias Estratégicas de distribuição, capacidade, integração e acesso institucional;
+- formar rede inicial de Parcerias Estratégicas corporativas de distribuição, alcance, infraestrutura, integração, apoio, divulgação e acesso institucional;
 - estruturar oferta de oportunidades e benefícios antes da aquisição ampla de Pessoas;
 - validar argumentos comerciais e materiais de vendas;
 - instrumentar funil, CRM, origem de leads e métricas de ativação;
@@ -74,9 +76,9 @@ Metas cumulativas candidatas ao fim de M6:
 | Organizações ativas | 30 |
 | Organizações pagantes | 8 |
 | contratos Guivos Business | 2 |
-| Parceiros Estratégicos ativos | 10 |
+| Parcerias Estratégicas ativas | 10 |
 
-Os 10 Parceiros Estratégicos ativos não representam 10 geradores adicionais de oportunidades. A oferta de oportunidades continua sendo medida dentro de Organizações e Coletivos.
+As 10 Parcerias Estratégicas ativas não representam 10 geradores adicionais de oportunidades nem 10 fontes obrigatórias de receita. Elas representam relações corporativas que ampliam capacidade real da Guivos.
 
 Objetivo da onda: demonstrar que a Guivos consegue gerar aquisição, ativação, oferta local e capacidade estratégica sem depender de expansão territorial para mascarar baixa densidade.
 
@@ -95,7 +97,7 @@ Metas cumulativas candidatas ao fim de M12:
 | Organizações ativas | 100 |
 | Organizações pagantes | 30 |
 | contratos Guivos Business | 8 |
-| Parceiros Estratégicos ativos | 25 |
+| Parcerias Estratégicas ativas | 25 |
 
 Distribuição de referência para gestão do esforço comercial, não quota rígida:
 
@@ -104,7 +106,7 @@ Distribuição de referência para gestão do esforço comercial, não quota rí
 
 ## 7. Onda 3 — amplificação nacional seletiva | M13–M24
 
-A expansão nacional deverá ocorrer prioritariamente por redes de Coletivos e Organizações capazes de replicar oferta e aquisição, combinadas com Parcerias Estratégicas capazes de ampliar distribuição, integração ou entrada territorial.
+A expansão nacional deverá ocorrer prioritariamente por redes de Coletivos e Organizações capazes de replicar oferta e aquisição, combinadas com Parcerias Estratégicas corporativas capazes de ampliar distribuição, integração, apoio, divulgação ou entrada territorial da Guivos.
 
 Meta cumulativa candidata ao fim de M24:
 
@@ -112,7 +114,7 @@ Meta cumulativa candidata ao fim de M24:
 - 1.000 Coletivos ativos;
 - 400 Organizações ativas;
 - 30 contratos Guivos Business;
-- 70 Parceiros Estratégicos ativos.
+- 70 Parcerias Estratégicas ativas.
 
 A Guivos não precisa abrir estrutura física em cada região para considerar expansão. A decisão depende de densidade, receita, suporte, qualidade e economics.
 
@@ -126,15 +128,15 @@ Portugal permanece o primeiro mercado internacional de referência.
 
 ### Meta histórica candidata recuperada para o piloto
 
-A referência histórica de `30 parceiros locais` foi preservada, mas sua expressão foi corrigida para evitar conflito de papéis:
+A referência histórica de `30 parceiros locais` foi preservada como evidência histórica, mas sua expressão operacional foi corrigida para evitar conflito de papéis:
 
-- **30 relações locais de ecossistema qualificadas/ativadas**, classificadas individualmente como Organização, Coletivo, Parceiro Estratégico ou outro papel governado aplicável;
+- **30 relações locais de ecossistema qualificadas/ativadas**, classificadas individualmente como Organização, Coletivo, Parceria Estratégica ou outro papel governado aplicável;
 - 3 clientes empresariais;
 - 1 campanha corporativa ou ação institucional demonstrável;
 - 1 caso de sucesso documentado;
 - validação de pagamentos aplicáveis, suporte e requisitos de proteção de dados no contexto europeu.
 
-Essas 30 relações não entram automaticamente na métrica de Parceiros Estratégicos. Somente as contrapartes que cumprirem os critérios de `GTM-002` poderão ser contabilizadas nesse KPI.
+Essas 30 relações não entram automaticamente na métrica de Parcerias Estratégicas. Somente relações empresariais/institucionais diretamente com a Guivos e aderentes aos critérios de `GTM-002` poderão ser contabilizadas nesse KPI. Relações destinadas a Pessoas ou Coletivos serão classificadas como Organizações.
 
 ### Gate obrigatório antes do piloto
 
@@ -163,8 +165,8 @@ Toda praça ativa deverá acompanhar no mínimo:
 - Organizações prospectadas, qualificadas, ativas e pagantes;
 - oportunidades ativas originadas por Organizações/Coletivos conforme autoridade aplicável;
 - contratos Business;
-- Parceiros Estratégicos ativos por categoria;
-- contribuição verificável das Parcerias Estratégicas para distribuição, integração, capacidade ou acesso territorial;
+- Parcerias Estratégicas ativas por categoria;
+- contribuição verificável das Parcerias Estratégicas para alcance, distribuição, integração, infraestrutura, apoio, divulgação, eficiência ou acesso territorial;
 - CAC por canal quando mensurável;
 - conversão por estágio;
 - receita recorrente elegível e receita concentrada;
