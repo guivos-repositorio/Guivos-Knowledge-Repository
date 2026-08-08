@@ -2,7 +2,7 @@
 id: GEM-010-COST-AND-CAPACITY-MODEL-001
 title: Modelo de Custos e Capacidade
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -11,6 +11,8 @@ depends_on:
   - GEM-POST-P9-FINANCIAL-RECONCILIATION-001
 related:
   - GEM-F1-M0-M6-COST-BASELINE-001
+  - GEM-F1B-M0-M6-COST-CALIBRATION-001
+  - GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
   - GEM-009-COST-AND-UNIT-ECONOMICS-001
 ---
 
@@ -27,6 +29,8 @@ related:
 ## Relação com capacidade
 
 Custos em degrau deverão explicitar o gatilho de capacidade. Ganhos de escala não serão presumidos quando suporte, risco, qualidade ou infraestrutura crescem de forma diferente do volume.
+
+Capacidade funcional, role-equivalent, headcount, contratação e custo são dimensões distintas. Uma obrigação de cobertura não comprova vínculo, gasto ou disponibilidade operacional.
 
 ## Rateio
 
@@ -47,28 +51,48 @@ A calibração financeira deverá distinguir, no mínimo:
 
 ## Baseline M0–M6
 
-A primeira aplicação governada deste modelo é a [Baseline de Custos M0–M6 — F1](gem-f1-m0-m6-cost-baseline.md).
+A aplicação governada deste modelo possui três camadas complementares:
 
-Ela estabelece:
+1. [Baseline de Custos M0–M6 — F1](gem-f1-m0-m6-cost-baseline.md): pools, drivers, ativação e evidência;
+2. [Calibração Numérica M0–M6 — F1-B](gem-f1b-m0-m6-cost-calibration.md): benchmarks públicos rastreáveis sem promoção a orçamento;
+3. [Baseline de Capacidade, Papéis e Headcount M0–M6 — F2](gem-f2-m0-m6-capacity-and-headcount-baseline.md): cobertura funcional, role-equivalents e gates de capacidade.
 
-- granularidade mensal de M0 a M6;
-- separação entre preparação M0–M3 e lançamento M4–M6 em Belo Horizonte;
-- pools de custo derivados da arquitetura GEM vigente;
-- comportamento, drivers e estados de ativação;
-- contrato de evidência para posterior preenchimento numérico;
-- dependência explícita do F2 para dimensionamento de headcount e custo de equipe.
+F2 estabelece como piso funcional de referência os três role-equivalents dedicados explicitamente suportados pelo GTM — Growth/GTM, comercial institucional/B2B e ecossistema/parcerias — além de coberturas compartilhadas, especialistas fracionários e capacidades condicionais.
 
-A ativação de uma linha não autoriza gasto nem comprova valor. Enquanto linhas materiais permanecerem `TBD`, burn, runway e necessidade de capital não poderão ser apresentados como completos.
+Esse piso **não equivale a três empregados** e não define HC total, vínculo ou custo.
+
+## Relação F2 → F1-C05
+
+O pool `F1-C05 — equipe e serviços profissionais` passa a estar **parcialmente parametrizado em capacidade**, mas permanece monetariamente `TBD`.
+
+Para converter capacidade em custo serão necessários, em incremento posterior:
+
+- delivery mode por papel;
+- sobreposição admissível;
+- quantidade efetiva de pessoas/prestadores;
+- regime/vínculo candidato;
+- remuneração/preço de serviço;
+- encargos, benefícios e impostos aplicáveis;
+- competência mensal.
+
+Até lá, não existe burn completo de pessoas.
+
+## Gates de capacidade
+
+A passagem para lançamento não poderá ocorrer apenas pelo calendário. Coberturas essenciais deverão possuir owner identificável e capacidade suficiente para não operar em estado `constrained`, `saturated`, `degraded` ou `unavailable`.
+
+Sinais como backlog crescente, tempo de resposta degradado, ausência de owner, falhas de moderação, sobrecarga de segurança ou concentração crítica deverão acionar revisão de capacidade antes de aumento de volume.
 
 ## Limites desta versão
 
 Esta versão não aprova:
 
-- valores de custo;
+- valores completos de custo;
 - orçamento;
-- headcount;
+- HC interno total;
 - salários ou regimes de contratação;
 - fornecedor, vendor, tier ou região tecnológica;
+- Product Engineering;
 - rateios definitivos;
 - burn;
 - runway;
