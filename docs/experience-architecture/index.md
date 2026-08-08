@@ -125,6 +125,7 @@ A frente consolida:
 
 | Artefato | Estado |
 |---|---|
+| Jornadas Integradas | `active` 0.31.0 |
 | Jornada da Pessoa | `draft` 0.15.0 |
 | Jornada do Coletivo | `draft` 0.15.0 |
 | Jornada da Organização | `draft` 0.7.0 |
@@ -133,7 +134,7 @@ A frente consolida:
 | galeria de Planos | `active` 0.3.0 |
 | matriz por SVG | `active` 0.17.0 |
 | lacunas | `active` 0.26.0 |
-| registro de superfícies | `active` 0.16.0 |
+| registro de superfícies | `active` 0.17.0 |
 | registro de transições | `active` 0.18.0 |
 | detalhamento comercial/fronteira | `active` 0.5.0 |
 
