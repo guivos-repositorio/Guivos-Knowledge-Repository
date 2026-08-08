@@ -21,6 +21,7 @@ related:
   - UXA-100
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -33,7 +34,9 @@ normative: false
 
 ## 1. Natureza do registro
 
-Este documento é observacional e não promocional. V4 permanece encerrada somente no limite documental controlável pela Guivos. A sincronização taxonômica da UXA-100 não inicia V5, não promove maturidade e não cria novas lacunas artificiais.
+Este documento é observacional e não promocional. A UXA-101 encerra V4 somente no limite documental controlável pela Guivos; comportamento e resultado posteriores a `BND-001` continuam fora da autoridade da plataforma.
+
+A reconciliação taxonômica de `GEM-004-A3`/`UXA-100-A4` não inicia V5, não promove maturidade e não cria novas lacunas artificiais.
 
 ## 2. Gates pessoais
 
@@ -51,8 +54,8 @@ Este documento é observacional e não promocional. V4 permanece encerrada somen
 |---|---|---|---|---|
 | publicação/ativação → descoberta | ORG-003; TRN-203; PER-201 | materializados | **integralmente validada por UXA-098** | integração patrocinada separada |
 | Mapa → Lista | PER-201; TRN-210; PER-202 | materializados | **integralmente validada** | nenhuma nesta ligação |
-| Mapa → Detalhe | PER-201; TRN-204; PER-203 | materializados | **integralmente validada** | saída externa governada por UXA-101 |
-| Lista → Detalhe | PER-202; TRN-211; PER-203 | materializados | **integralmente validada** | saída externa governada por UXA-101 |
+| Mapa → Detalhe | PER-201; TRN-204; PER-203 | materializados | **integralmente validada** | saída externa agora governada por UXA-101 |
+| Lista → Detalhe | PER-202; TRN-211; PER-203 | materializados | **integralmente validada** | saída externa agora governada por UXA-101 |
 | Detalhe → fronteira externa | PER-203; TRN-205; BND-001 | Detalhe reformulado; fronteira sem tela | **integralmente validada até a fronteira Guivos por UXA-101** | processo e resultado posteriores pertencem ao terceiro |
 | patrocinado → Mapa/Lista orgânicos | COM-002; TRN-304/306; PER-201/PER-202 | materializados | parcial | integração orgânico–patrocinado específica |
 
@@ -67,7 +70,7 @@ Este documento é observacional e não promocional. V4 permanece encerrada somen
 
 ## 5. Gates de Planos, cobrança e ciclo de vida
 
-Taxonomia vigente:
+Taxonomia vigente após `GEM-004-A3`/`UXA-100-A4`:
 
 - Pessoa: `Free · Plus · Pro`;
 - Coletivo: `Livre · Mobiliza · Impacta · Rede`;
@@ -113,16 +116,29 @@ Guivos Business `Start · Growth · Scale · Enterprise` é produto separado e n
 | V1 — encerrado | compreensão inicial → Tela Hoje | TRN-007 integral | UXA-097 |
 | V2 — encerrado | publicação → descoberta e Mapa/Lista/Detalhe | TRN-203/204/210/211 integrais | UXA-098 |
 | V3 — encerrado | dez estados residuais Opportunity Boost | 10 SVGs validados | UXA-099 |
-| Planos — identidade encerrada | fragmentação e promoção canônica | 12 superfícies + 17 transições registradas | UXA-100-A3 |
+| Planos — identidade encerrada | fragmentação e promoção canônica | 12 superfícies + 17 transições registradas | UXA-100-A3; taxonomia reconciliada por UXA-100-A4 |
 | **V4 — encerrado** | Detalhe → fronteira externa | **TRN-205 integral até BND-001** | **UXA-101** |
 | V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada; **não iniciada** |
 
-## 9. Efeito da sincronização taxonômica
+## 9. Efeito da UXA-101
 
 - SVGs canônicos permanecem **118**;
 - associações permanecem **118**;
 - perfis permanecem **31**;
-- seis SVGs UXA-100 são sincronizados sem criar ativos;
+- `uxa-007-opportunity-detail-mobile.svg` é reformulado e revalidado sem criar novo ativo;
+- superfícies/estados/fronteiras permanecem **53**;
+- transições permanecem **54**;
+- `BND-001` continua sem tela por definição;
+- `TRN-205` passa de parcial para validada até a fronteira de autoridade Guivos;
+- nenhuma implementação técnica é criada.
+
+## 10. Efeito da reconciliação taxonômica
+
+- SVGs canônicos permanecem **118**;
+- associações permanecem **118**;
+- perfis permanecem **31**;
+- seis SVGs UXA-100 de Coletivo/Organização são sincronizados sem criar ativos;
+- três SVGs UXA-100 de Pessoa permanecem intactos;
 - superfícies/estados/fronteiras permanecem **53**;
 - transições permanecem **54**;
 - `BND-002` mantém ID e maturidade parcial com semântica genérica;
@@ -131,16 +147,16 @@ Guivos Business `Start · Growth · Scale · Enterprise` é produto separado e n
 - **Organização Transforma ≠ Guivos Business Enterprise**;
 - nenhuma implementação técnica é criada.
 
-## 10. Critérios preservados
+## 11. Critérios preservados
 
 - validação de superfície não equivale a validação automática de transição;
-- validação até fronteira não valida comportamento posterior;
+- validação até uma fronteira não valida comportamento de terceiro;
 - oportunidade pública não é ocultada para vender plano;
 - plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;
-- contratação assistida não recebe checkout fictício;
+- contratação/dimensionamento assistido não recebe checkout fictício;
 - repetição da mesma intenção não duplica efeito lógico;
 - validação documental não equivale a implementação técnica.
 
-## 11. Próximo ato possível
+## 12. Próximo ato possível
 
-V4 permanece encerrada. V5, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, definição comercial de Guivos Business e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
+V4 está encerrada. V5, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, definição comercial de Guivos Business e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
