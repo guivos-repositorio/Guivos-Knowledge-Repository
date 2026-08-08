@@ -10,6 +10,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - GKR-JOURNEY-PERSON-001
   - GKR-JOURNEY-COLLECTIVE-001
   - GKR-JOURNEY-ORGANIZATION-001
@@ -27,7 +28,9 @@ normative: false
 
 Esta galeria reúne as nove referências visuais de Planos da UXA-100 para **Pessoa, Coletivo e Organização**.
 
-A sincronização de 2026-08-08 preserva os nove arquivos, os perfis `R29/R30/R31`, superfícies, transições e validações existentes. Somente os seis SVGs de Coletivo/Organização tiveram nomenclatura e cópia alinhadas à taxonomia global vigente. Os três SVGs de Pessoa permanecem sem alteração porque `Free · Plus · Pro` já estava consistente.
+A UXA-100-A2 aprovou funcionalmente os nove ativos, após reforma controlada de seis deles. A UXA-100-A3 promoveu esses nove SVGs ao conjunto canônico e os associou a superfícies e transições estáveis, sem transformar cada estado interno dos boards em tela independente.
+
+A UXA-100-A4 preserva esse histórico e sincroniza somente nomenclatura e microcópia dos seis SVGs de Coletivo/Organização com a taxonomia global vigente, registrando sua revalidação por equivalência funcional. Os três SVGs de Pessoa permanecem sem alteração porque `Free · Plus · Pro` já estava consistente.
 
 Taxonomia visual vigente:
 
@@ -39,7 +42,7 @@ Guivos Business (`Start · Growth · Scale · Enterprise`) não recebe SVG ou pe
 
 ## 2. Pessoa — perfil R29
 
-Superfícies: `PER-301` a `PER-304`.
+Superfícies canônicas relacionadas: `PER-301` a `PER-304`.
 
 ### 2.1 Tela dedicada de Planos
 
@@ -61,7 +64,7 @@ Superfícies: `PER-301` a `PER-304`.
 
 ## 3. Coletivo — perfil R30
 
-Superfícies: `COL-301` a `COL-304`.
+Superfícies canônicas relacionadas: `COL-301` a `COL-304`.
 
 A leitura dos planos é `Livre · Mobiliza · Impacta · Rede`. Mobiliza, Impacta e Rede expressam função/capacidade operacional e não constituem escala de mérito ou evolução do Coletivo.
 
@@ -85,7 +88,7 @@ A leitura dos planos é `Livre · Mobiliza · Impacta · Rede`. Mobiliza, Impact
 
 ## 4. Organização — perfil R31
 
-Superfícies: `ORG-301` a `ORG-304`.
+Superfícies canônicas relacionadas: `ORG-301` a `ORG-304`.
 
 A leitura dos planos é `Conecta · Eleva · Transforma`. Esses planos pertencem à jornada institucional da Organização e são estruturalmente separados do produto Guivos Business.
 
@@ -113,14 +116,14 @@ A leitura dos planos é `Conecta · Eleva · Transforma`. Esses planos pertencem
 
 ```text
 *-301 Planos e comparação
-├── mudança autonomamente configurável → *-302 revisão → *-304 resultado/recuperação → *-301
+├── mudança autonomamente configurável → *-302 revisão de contratação → *-304 resultado/recuperação → *-301
 ├── downgrade/cancelamento → *-303 gestão do ciclo → *-304 → *-301
-└── quando configuração exigir processo assistido → BND-002
+└── quando a configuração exigir processo assistido → BND-002
 ```
 
 `BND-002` significa **contratação/dimensionamento assistido** e não Enterprise, Scale, Rede ou Transforma.
 
-A comparação incremental permanece estado de `*-301`. Processamento de pagamento permanece transitório. Sucesso e falha pertencem a `*-304` com consequências distintas.
+A comparação incremental permanece estado de `*-301`. O processamento de pagamento permanece transitório e não recebe superfície própria. Sucesso e falha são estados distintos de `*-304` porque compartilham a mesma responsabilidade de resultado/recuperação sem compartilhar a consequência.
 
 ## 6. Contagem canônica da frente
 
@@ -131,27 +134,27 @@ A comparação incremental permanece estado de `*-301`. Processamento de pagamen
 | Organização | 1 | 1 | 1 | 3 | R31 |
 | **Total** | **3** | **3** | **3** | **9** | **3 perfis** |
 
-A galeria global permanece com **118 SVGs canônicos**, todos com validação funcional documental vigente no escopo já governado. Nenhum SVG é adicionado ou removido pela sincronização taxonômica.
+Com a UXA-100-A3, a galeria global passou de **109 para 118 SVGs canônicos**, todos com validação funcional documental vigente. A UXA-100-A4 mantém o total em **118**; nenhum SVG é adicionado ou removido pela sincronização taxonômica.
 
 ## 7. Maturidade das transições
 
 - `TRN-401` a `405`: localmente validadas;
 - `TRN-411` a `415`: localmente validadas;
-- `TRN-416`: parcial; processo posterior a `BND-002` não materializado;
+- `TRN-416`: parcial, pois o processo posterior a `BND-002` não foi materializado;
 - `TRN-421` a `425`: localmente validadas;
-- `TRN-426`: parcial pela mesma razão.
+- `TRN-426`: parcial, pela mesma fronteira assistida.
 
-A correção semântica não promove nenhuma transição.
+Nenhuma transição de Planos é apresentada como implementação técnica ou cobrança real. A correção semântica da A4 não promove nenhuma transição.
 
 ## 8. Proteções
 
 - plano pago não compra relevância, confiança, legitimidade, impacto ou evolução;
 - oportunidade pública não é escondida para vender plano;
 - benefícios herdados não aparecem como novidades;
-- contratação assistida não simula checkout autônomo;
+- contratação/dimensionamento assistido não simula checkout autônomo definitivo;
 - falha de pagamento não presume ativação;
 - data de início e recorrência aparecem antes da confirmação;
-- downgrade/cancelamento explicitam consequências e excedentes;
-- assinatura permanece separada de transação, comissão, taxa e tributo;
+- downgrade/cancelamento exibem consequências e tratam capacidades excedentes antes da efetivação;
+- assinatura permanece separada de transação, comissão, taxa de pagamento e tributo;
 - Organização permanece separada de Guivos Business;
-- validação funcional e promoção documental não equivalem a implementação.
+- validação funcional, revalidação taxonômica e promoção documental não equivalem a implementação.
