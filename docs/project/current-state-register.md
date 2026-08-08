@@ -2,16 +2,20 @@
 id: GKR-STATE-001
 title: Registro do Estado Atual
 status: active
-version: 2.27.0
+version: 2.27.1
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 depends_on:
   - GKR-AUD-002
   - GKR-REMEDIATION-002
 related:
   - GEA-000
   - PAS-001
+  - GPA-004
   - GPA-007
+  - GEM-004-A1
+  - GEM-004-A3
+  - GEM-007-BUSINESS-ECONOMIC-ROLE-001
   - UXA-000
   - UXA-055
   - UXA-056
@@ -28,6 +32,7 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
@@ -35,7 +40,7 @@ related:
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
-  - ROADMAP-12.74.0
+  - ROADMAP-12.74.1
   - M7.88
 normative: true
 ---
@@ -44,23 +49,62 @@ normative: true
 
 ## 1. Autoridade
 
-Este registro declara o estado global vigente da `main` após a integração governada da UXA-101. Em caso de divergência, este registro prevalece sobre resumos não normativos.
+Este registro declara o estado global proposto após a UXA-101 e o **patch documental de sincronização da taxonomia global de planos**. Em caso de divergência após integração governada, este registro prevalece sobre resumos não normativos.
 
-## 2. Estado global vigente após UXA-101
+O patch 2.27.1 não cria nova UXA principal, não cria marco, não promove maturidade e não inicia nova frente. `UXA-101` continua sendo a última UXA da sequência principal e `M7.88` permanece o marco vigente. `GEM-004-A3` e `UXA-100-A4` funcionam como overlays controlados sobre autoridades existentes, preservando os contratos históricos integrais.
+
+## 2. Estado global
 
 | Elemento | Estado | Referência |
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
 | Marco | saída consciente para fronteira externa validada | UXA-101; M7.88 |
+| Patch documental | taxonomia global de planos e separação Organização/Business sincronizadas | GEM-004-A3; UXA-100-A4 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
-| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-101 |
+| Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-100/101 |
 | Galeria visual | `active` 0.21.0; **118 SVGs** | UXA-101 |
 | Matriz por SVG | `active` 0.17.0; **118 arquivos / 31 perfis** | UXA-101 |
-| Jornadas Integradas | `active` 0.31.0; Pessoa, Coletivo e Organização permanecem `draft` | UXA-101 |
+| Jornadas Integradas | `active` 0.31.0; Pessoa, Coletivo e Organização permanecem `draft` | Jornadas Integradas |
 | Engenharia de Produto | pausada antes de W0-01 | W0-01 |
 
-## 3. Cobertura visual
+## 3. Taxonomia global de planos
+
+| Contexto | Taxonomia vigente | Natureza |
+|---|---|---|
+| Pessoa | **Free · Plus · Pro** | planos da Pessoa |
+| Coletivo | **Livre · Mobiliza · Impacta · Rede** | planos do Coletivo |
+| Organização | **Conecta · Eleva · Transforma** | planos da jornada institucional |
+| Guivos Business | **Start · Growth · Scale · Enterprise** | planos conceituais do produto especializado; preço/entitlements ainda não definidos |
+
+Regra de leitura:
+
+> **Plano representa profundidade de serviço, capacidade ou complexidade atendida; nunca valor, mérito, prestígio ou nível de evolução do participante.**
+
+A progressão não é obrigatória e não constitui uma escada de evolução.
+
+Separação estrutural obrigatória:
+
+> **Organização Transforma ≠ Guivos Business Enterprise.**
+
+Organização continua sendo um tipo de participante institucional. Guivos Business continua sendo produto especializado da Guivos. Não existe correspondência automática 1:1 entre as duas estruturas.
+
+## 4. Migração taxonômica controlada
+
+| Referência anterior | Referência vigente |
+|---|---|
+| Coletivo Gestão | Coletivo Mobiliza |
+| Coletivo Impacto | Coletivo Impacta |
+| Coletivo Enterprise | Coletivo Rede |
+| Business Start usado como plano da Organização | Organização Conecta |
+| Business Growth usado como plano da Organização | Organização Eleva |
+| Business Scale usado como plano da Organização | Organização Transforma |
+
+Preços e capacidades de participantes anteriormente governados permanecem preservados nas novas nomenclaturas. Nenhum preço, entitlement, limite ou SLA foi inventado para Guivos Business.
+
+A precedência é limitada: `GEM-004-A3` substitui apenas nomenclatura, leitura conceitual, separação Organização/Business e semântica de `BND-002`; `GEM-004-A1/A2` preservam integralmente preços, benefícios, limites, proteções e ciclo de vida. `UXA-100-A4` reconcilia os mesmos nove ativos sem reescrever `UXA-100/A1/A2/A3`.
+
+## 5. Cobertura visual
 
 | Indicador | Resultado |
 |---|---:|
@@ -73,11 +117,11 @@ Este registro declara o estado global vigente da `main` após a integração gov
 | responsabilidades sem SVG dedicado | **9** |
 | fronteiras sem tela por definição | **2** |
 
-A UXA-101 reformula e revalida `uxa-007-opportunity-detail-mobile.svg` sem criar novo ativo. O estado de revisão consciente permanece em `PER-203`; `BND-001` continua sem tela.
+A sincronização taxonômica altera texto/nomenclatura em **6 dos 9 SVGs UXA-100** de Coletivo e Organização, preservando caminhos, IDs, perfis e lógica funcional. Os três SVGs de Pessoa permanecem intactos. `UXA-100-A4` registra a revalidação por equivalência funcional.
 
-## 4. Resultado da UXA-101
+## 6. Resultado da UXA-101 preservado
 
-A frente UXA-101:
+A UXA-101:
 
 - fecha V4 no limite documental controlável pela Guivos;
 - materializa no mesmo SVG de `PER-203` a revisão pré-saída prevista por UXA-007;
@@ -90,11 +134,11 @@ A frente UXA-101:
 - valida `TRN-205` até `BND-001`;
 - confirma `BND-001` como fronteira externa, não superfície Guivos.
 
-Veredito:
+Veredito preservado:
 
 > **V4 encerrada no limite de autoridade da Guivos: `TRN-205` validada até `BND-001`, sem apropriar comportamento ou resultado do terceiro.**
 
-## 5. Continuidade de oportunidades
+## 7. Continuidade de oportunidades
 
 ```text
 ORG-003
@@ -109,40 +153,52 @@ ORG-003
 → BND-001 — autoridade externa
 ```
 
-`TRN-203`, `204`, `210`, `211` permanecem integralmente validadas pela UXA-098. `TRN-205` passa a ser integral no limite de autoridade declarado pela UXA-101.
+`TRN-203`, `204`, `210`, `211` permanecem integralmente validadas pela UXA-098. `TRN-205` permanece integral no limite de autoridade declarado pela UXA-101.
 
-## 6. Continuidades preservadas
+## 8. Continuidade de Planos e BND-002
+
+As 15 transições internas de Planos permanecem localmente validadas. `TRN-416` e `TRN-426` permanecem **parciais**.
+
+`BND-002` passa a significar exclusivamente:
+
+> **fronteira de contratação/dimensionamento assistido quando uma configuração exige proposta, dimensionamento, contrato, configuração ou análise específica.**
+
+`BND-002` não significa Enterprise, Scale, Rede ou Transforma e não pertence a um único participante.
+
+## 9. Continuidades preservadas
 
 - `TRN-007` permanece integralmente validada pela UXA-097;
 - `COM-005` permanece funcionalmente validado pela UXA-099;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `TRN-105`, `106`, `107`, `108`, `109`, `110`, `111` e `112`;
-- 15 transições internas de Planos permanecem localmente validadas;
-- `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais.
+- `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais;
+- `TRN-416` e `TRN-426` permanecem parciais;
+- nenhuma jornada é promovida pelo patch.
 
-## 7. Dívidas preservadas
+## 10. Dívidas preservadas
 
 - estados P0B de Meus Coletivos, Central e Início do Participante;
 - canais P1 e operação interna especializada;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` parciais;
 - integrações patrocinadas `TRN-304/305/306`;
 - cobrança real e gateway da frente de Planos;
-- processo comercial posterior a `BND-002`;
+- processo posterior a `BND-002`;
 - entradas de Planos a partir de origens ainda sem identidade canônica adequada;
 - relação Organização–Coletivo ainda não materializada como conjunto;
-- resultado externo posterior a `BND-001` permanece sob autoridade de terceiro.
+- resultado externo posterior a `BND-001` permanece sob autoridade de terceiro;
+- preços, entitlements, limites, packaging e unit economics próprios do Guivos Business permanecem não definidos.
 
-## 8. Fila global de validação
+## 11. Fila global de validação
 
 | Ordem | Continuidade ou família | Estado |
 |---:|---|---|
 | V1 | compreensão inicial → Tela Hoje | encerrada por UXA-097 |
 | V2 | publicação → descoberta/mapa/lista/detalhe | encerrada por UXA-098 |
 | V3 | dez estados residuais UXA-055 | encerrada por UXA-099 |
-| Planos | identidade e promoção canônica | encerrada por UXA-100-A3 |
+| Planos | identidade e promoção canônica | encerrada por UXA-100-A3; taxonomia reconciliada por UXA-100-A4 |
 | **V4** | efeito externo de oportunidades | **encerrada por UXA-101 até BND-001** |
 | V5 | erros, retornos e interrupções | pendente; **não iniciada** |
 
-## 9. Estado documental vigente
+## 12. Estado documental vigente no patch
 
 | Camada | Estado |
 |---|---|
@@ -151,27 +207,32 @@ ORG-003
 | Jornada da Pessoa | `draft` 0.15.0 |
 | Jornada do Coletivo | `draft` 0.15.0 |
 | Jornada da Organização | `draft` 0.8.0 |
-| catálogo integrado | `active` 0.26.0 |
+| catálogo integrado | `active` 0.27.0 |
 | galeria visual | `active` 0.21.0 |
-| galeria de Planos | `active` 0.3.0 |
+| galeria de Planos | `active` 0.4.0 |
 | matriz por SVG | `active` 0.17.0 |
-| lacunas | `active` 0.26.0 |
-| registro de superfícies | `active` 0.17.0 |
-| registro de transições | `active` 0.18.0 |
-| detalhamento comercial/fronteira | `active` 0.5.0 |
+| lacunas | `active` 0.27.0 |
+| registro de superfícies | `active` 0.18.0 |
+| registro de transições | `active` 0.19.0 |
+| detalhamento comercial/fronteira | `active` 0.6.0 |
+| overlay econômico de taxonomia | `active` GEM-004-A3 0.1.0 |
+| overlay UXA-100 | `draft` UXA-100-A4 0.1.0 |
 | protótipo, aplicação, motor e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-## 10. Preservações
+## 13. Preservações
 
 - materialização, validação, promoção e implementação são estados distintos;
 - validação até uma fronteira não valida sistema de terceiro;
 - publicação não é distribuição garantida;
-- relação comercial não compra relevância funcional;
+- relação comercial e plano pago não compram relevância funcional;
+- plano não representa valor ou nível de evolução do participante;
+- contratos históricos `GEM-004-A1/A2` e `UXA-100/A1/A2/A3` permanecem integrais;
 - estado canônico vigente prevalece sobre estado visual obsoleto;
 - Pessoa, Coletivo e Organização permanecem `draft`;
+- Guivos Business não recebe nova jornada, `SURF`, `TRN`, `BND` ou SVG;
 - nenhuma etapa autoriza automaticamente a seguinte.
 
-## 11. Próximo ato
+## 14. Próximo ato
 
-A UXA-101 encerra V4. **V5 não foi iniciada.** A auditoria transversal dos Produtos Especializados permanece uma frente separada, sem alterar este estado global enquanto não houver integração governada e sem iniciar nova UXA ou Engenharia de Produto.
+A UXA-101 continua encerrando V4. **UXA-102/V5 não foram iniciadas.** A definição comercial própria do Guivos Business e qualquer processo posterior a `BND-002` permanecem frentes separadas. Engenharia de Produto permanece pausada antes de W0-01.

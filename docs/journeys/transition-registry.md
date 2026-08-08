@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-070
   - UXA-080
@@ -25,6 +25,7 @@ related:
   - UXA-100
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
@@ -36,7 +37,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.18.0 preserva as 54 transições e promove apenas a maturidade de `GKR-TRN-205`, validada pela UXA-101 até a fronteira de autoridade da Guivos.
+Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.19.0 preserva as 54 transições e todas as maturidades vigentes após UXA-101, corrigindo somente a semântica de `GKR-TRN-416` e `GKR-TRN-426` conforme a reconciliação taxonômica da UXA-100-A4 e a redefinição de `BND-002` como fronteira genérica de contratação/dimensionamento assistido.
 
 ## 2. Convenções de estado
 
@@ -166,7 +167,9 @@ Regras:
 | GKR-TRN-413 | COL-301 | COL-303 | **localmente validada** | regra financeira entre ciclos |
 | GKR-TRN-414 | COL-303 | COL-304 | **localmente validada** | execução operacional/transacional |
 | GKR-TRN-415 | COL-304 | COL-301 | **localmente validada** | persistência técnica |
-| GKR-TRN-416 | COL-301 | BND-002 | **parcial** | processo Enterprise posterior |
+| GKR-TRN-416 | COL-301 | BND-002 | **parcial** | contratação/dimensionamento assistido posterior ainda não materializado como conjunto |
+
+`TRN-416` não significa “solicitar Enterprise/Rede”. Ele representa o handoff quando a configuração desejada, em qualquer caso aplicável, exige proposta, dimensionamento, contrato, configuração ou análise específica.
 
 ### 8.3 Organização
 
@@ -177,15 +180,19 @@ Regras:
 | GKR-TRN-423 | ORG-301 | ORG-303 | **localmente validada** | regra financeira entre ciclos |
 | GKR-TRN-424 | ORG-303 | ORG-304 | **localmente validada** | execução institucional |
 | GKR-TRN-425 | ORG-304 | ORG-301 | **localmente validada** | persistência técnica |
-| GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | processo Scale posterior |
+| GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | contratação/dimensionamento assistido posterior ainda não materializado como conjunto |
 
-## 9. Efeito da UXA-101
+`TRN-426` não significa “solicitar Scale/Transforma”. Ele representa o handoff quando a configuração desejada, em qualquer caso aplicável, exige proposta, dimensionamento, contrato, configuração ou análise específica.
+
+## 9. Efeito da sincronização taxonômica
 
 - transições totais permanecem **54**;
-- `TRN-205` deixa de ser parcial e fica **integralmente validada até `BND-001`**;
+- `TRN-205` permanece **integralmente validada até `BND-001`**;
 - nenhum comportamento posterior a `BND-001` é atribuído à Guivos;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
+- `TRN-416` e `TRN-426` deixam de estar semanticamente vinculadas a Enterprise/Scale;
 - nenhuma nova transição é criada;
+- nenhuma transição de Guivos Business é inferida;
 - validação documental continua distinta de implementação técnica.
 
 ## 10. Próximo gate

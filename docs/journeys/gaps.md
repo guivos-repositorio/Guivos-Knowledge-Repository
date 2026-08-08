@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-GAPS-001
 title: Lacunas e Continuidades Ausentes
 status: active
-version: 0.26.0
+version: 0.27.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-055
   - UXA-059
@@ -21,6 +21,7 @@ related:
   - UXA-100
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -34,6 +35,8 @@ normative: false
 ## 1. Natureza do registro
 
 Este documento é observacional e não promocional. A UXA-101 encerra V4 somente no limite documental controlável pela Guivos; comportamento e resultado posteriores a `BND-001` continuam fora da autoridade da plataforma.
+
+A reconciliação taxonômica de `GEM-004-A3`/`UXA-100-A4` não inicia V5, não promove maturidade e não cria novas lacunas artificiais.
 
 ## 2. Gates pessoais
 
@@ -67,12 +70,22 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 
 ## 5. Gates de Planos, cobrança e ciclo de vida
 
+Taxonomia vigente após `GEM-004-A3`/`UXA-100-A4`:
+
+- Pessoa: `Free · Plus · Pro`;
+- Coletivo: `Livre · Mobiliza · Impacta · Rede`;
+- Organização: `Conecta · Eleva · Transforma`.
+
+Guivos Business `Start · Growth · Scale · Enterprise` é produto separado e não adiciona superfície nesta frente.
+
 | Participante | IDs | Estado visual | Estado funcional | Continuidade remanescente |
 |---|---|---|---|---|
 | Pessoa | PER-301 a 304; TRN-401 a 405 | 3 SVGs canônicos | superfícies validadas; 5 transições localmente validadas | gateway, cobrança real, proration e entradas de origem ainda não registradas |
-| Coletivo | COL-301 a 304; TRN-411 a 416 | 3 SVGs canônicos | superfícies validadas; TRN-411 a 415 locais; TRN-416 parcial | cobrança real e processo Enterprise após BND-002 |
-| Organização | ORG-301 a 304; TRN-421 a 426 | 3 SVGs canônicos | superfícies validadas; TRN-421 a 425 locais; TRN-426 parcial | cobrança real e processo Scale após BND-002 |
-| fronteira comercial | BND-002 | sem tela por definição | parcial | proposta, contrato, dimensionamento e handoffs operacionais posteriores |
+| Coletivo | COL-301 a 304; TRN-411 a 416 | 3 SVGs canônicos sincronizados | superfícies validadas; TRN-411 a 415 locais; TRN-416 parcial | cobrança real e processo assistido após BND-002 |
+| Organização | ORG-301 a 304; TRN-421 a 426 | 3 SVGs canônicos sincronizados | superfícies validadas; TRN-421 a 425 locais; TRN-426 parcial | cobrança real e processo assistido após BND-002 |
+| fronteira de contratação | BND-002 | sem tela por definição | parcial | proposta, contrato, dimensionamento/configuração e handoffs posteriores |
+
+`BND-002` não é sinônimo de Enterprise, Scale, Rede ou Transforma. Sua necessidade depende da complexidade concreta da contratação.
 
 ## 6. Gates de Coletivos
 
@@ -94,7 +107,7 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 | 4 | participantes e operação interna | COL-004 a 007; TRN-113 | sem SVGs dedicados | programa, materialização e validação |
 | 5 | relação Organização–Coletivo | ORG-004 a 006; COL-008 | sem SVGs | materialização e validação bilateral |
 | 6 | matriz institucional completa | ORG-001; ORG-007 | cobertura parcial | programa específico e validação |
-| 7 | processo comercial Enterprise/Scale | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
+| 7 | processo de contratação/dimensionamento assistido | BND-002; TRN-416/426 | fronteira registrada | contrato comercial/operacional suficiente |
 
 ## 8. Fila de validação
 
@@ -103,7 +116,7 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 | V1 — encerrado | compreensão inicial → Tela Hoje | TRN-007 integral | UXA-097 |
 | V2 — encerrado | publicação → descoberta e Mapa/Lista/Detalhe | TRN-203/204/210/211 integrais | UXA-098 |
 | V3 — encerrado | dez estados residuais Opportunity Boost | 10 SVGs validados | UXA-099 |
-| Planos — identidade encerrada | fragmentação e promoção canônica | 12 superfícies + 17 transições registradas | UXA-100-A3 |
+| Planos — identidade encerrada | fragmentação e promoção canônica | 12 superfícies + 17 transições registradas | UXA-100-A3; taxonomia reconciliada por UXA-100-A4 |
 | **V4 — encerrado** | Detalhe → fronteira externa | **TRN-205 integral até BND-001** | **UXA-101** |
 | V5 | erros, retornos e interrupções | cobertura dispersa | validação por jornada; **não iniciada** |
 
@@ -119,16 +132,31 @@ Este documento é observacional e não promocional. A UXA-101 encerra V4 somente
 - `TRN-205` passa de parcial para validada até a fronteira de autoridade Guivos;
 - nenhuma implementação técnica é criada.
 
-## 10. Critérios preservados
+## 10. Efeito da reconciliação taxonômica
+
+- SVGs canônicos permanecem **118**;
+- associações permanecem **118**;
+- perfis permanecem **31**;
+- seis SVGs UXA-100 de Coletivo/Organização são sincronizados sem criar ativos;
+- três SVGs UXA-100 de Pessoa permanecem intactos;
+- superfícies/estados/fronteiras permanecem **53**;
+- transições permanecem **54**;
+- `BND-002` mantém ID e maturidade parcial com semântica genérica;
+- `TRN-416` e `TRN-426` permanecem parciais;
+- Organização permanece separada de Guivos Business;
+- **Organização Transforma ≠ Guivos Business Enterprise**;
+- nenhuma implementação técnica é criada.
+
+## 11. Critérios preservados
 
 - validação de superfície não equivale a validação automática de transição;
 - validação até uma fronteira não valida comportamento de terceiro;
 - oportunidade pública não é ocultada para vender plano;
 - plano pago não compra relevância, confiança, impacto, legitimidade ou evolução;
-- Enterprise/Scale não recebem checkout fictício;
+- contratação/dimensionamento assistido não recebe checkout fictício;
 - repetição da mesma intenção não duplica efeito lógico;
 - validação documental não equivale a implementação técnica.
 
-## 11. Próximo ato possível
+## 12. Próximo ato possível
 
-V4 está encerrada. V5, integrações patrocinadas, cobrança real, processo posterior a `BND-002` e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
+V4 está encerrada. V5, integrações patrocinadas, cobrança real, processo posterior a `BND-002`, definição comercial de Guivos Business e demais lacunas permanecem separadas. Nenhuma próxima frente é iniciada automaticamente.
