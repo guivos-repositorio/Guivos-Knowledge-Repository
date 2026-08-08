@@ -2,7 +2,7 @@
 id: UXA-000
 title: Arquitetura da Experiência da Guivos
 status: active
-version: 0.95.0
+version: 0.96.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 related:
@@ -32,6 +32,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
@@ -65,7 +66,7 @@ contrato funcional
 
 Nenhuma etapa autoriza automaticamente a seguinte.
 
-## 3. Cobertura visual
+## 3. Cobertura visual e granular
 
 | Indicador | Resultado |
 |---|---:|
@@ -74,13 +75,13 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | perfis de rastreabilidade | **31** |
 | com validação funcional vigente | **118** |
 | pendentes de validação específica | **0** |
-| superfícies/estados/fronteiras | **53** |
-| transições documentais | **54** |
-| IDs com referência visual | **42 de 53** |
-| responsabilidades sem SVG dedicado | **9** |
+| superfícies/estados/fronteiras | **54** |
+| transições documentais | **60** |
+| IDs com referência visual | **42 de 54** |
+| responsabilidades sem SVG dedicado | **10** |
 | fronteiras sem tela | **2** |
 
-A UXA-101 reformula e revalida o SVG canônico do Detalhe de Oportunidade sem alterar as contagens.
+A UXA-100-A4 adiciona somente `PER-009` como responsabilidade sem SVG e seis handoffs de navegação; os 118 ativos visuais permanecem em quantidade constante.
 
 ## 4. Decisões estruturais preservadas
 
@@ -89,6 +90,7 @@ A UXA-101 reformula e revalida o SVG canônico do Detalhe de Oportunidade sem al
 - publicação ou ativação não equivale a distribuição garantida;
 - plano pago não altera relevância, confiança, legitimidade, impacto ou evolução;
 - oportunidade pública não é ocultada para vender plano;
+- navegar para Planos não equivale a escolher plano ou iniciar cobrança;
 - Pessoa utiliza `Free · Plus · Pro`;
 - Coletivo utiliza `Livre · Mobiliza · Impacta · Rede`;
 - Organização utiliza `Conecta · Eleva · Transforma`;
@@ -110,45 +112,53 @@ UXA-097 — primeira Hoje e TRN-007
 → UXA-099 — dez estados residuais Opportunity Boost
 → UXA-100/A1/A2/A3 — Planos nas três jornadas e promoção canônica
 → UXA-101 — revisão consciente de saída e TRN-205 até BND-001
+→ UXA-100-A4 — reconciliação das origens administrativas de Planos
 ```
 
-## 6. Resultado da UXA-101
+A UXA-100-A4 é uma subfrente da UXA-100 e não altera a última frente funcional numerada: UXA-101 continua vigente e UXA-102/V5 permanece não iniciada.
 
-[UXA-101 — Validação da Saída Consciente para Fronteira Externa](uxa-101-conscious-external-boundary-validation.md) encerra V4 no limite controlável pela Guivos.
+## 6. Resultado da UXA-100-A4
 
-A frente consolida:
+[UXA-100-A4 — Origens Administrativas e Handoffs de Entrada em Planos](uxa-100-a4-plans-entry-origin-and-navigation-handoffs.md) consolida:
 
-1. revisão pré-saída como estado de `PER-203`, sem novo ID;
-2. reformulação e revalidação de `uxa-007-opportunity-detail-mobile.svg`;
-3. identificação de destino externo e responsável;
-4. disclosure proporcional de dados/contexto;
-5. confirmação afirmativa e revalidação do destino;
-6. bloqueio de redirecionamento silencioso quando o destino não puder ser confirmado;
-7. retorno seguro sem presumir efeito externo;
-8. `TRN-205` integralmente validada até `BND-001`;
-9. `BND-001` examinada como fronteira sem tela Guivos;
-10. nenhuma atribuição de inscrição, compra, reserva ou contratação externa à Guivos.
+1. `PER-009 — Conta e configurações da Pessoa`, sem SVG dedicado;
+2. `TRN-406/407` contratadas entre `PER-009` e `PER-301`;
+3. `TRN-417/418` integralmente validadas entre `COL-002` e `COL-301`;
+4. `TRN-427/428` integralmente validadas entre `ORG-001` e `ORG-301`;
+5. navegação de `COL-002` reformulada in-place para explicitar Planos;
+6. `ORG-001` reformulada in-place, removendo o rótulo obsoleto `Guivos Business` e explicitando Planos;
+7. retorno explícito às origens em `COL-301` e `ORG-301`;
+8. 118 SVGs e 31 perfis preservados;
+9. nenhuma alteração de maturidade em `TRN-401..405`, `TRN-411..416` ou `TRN-421..426`;
+10. nenhuma implementação de cobrança, entitlement, `BND-002`, V5 ou Engenharia de Produto.
 
-## 7. Instrumentos vigentes propostos
+## 7. Resultado da UXA-101 preservado
+
+[UXA-101 — Validação da Saída Consciente para Fronteira Externa](uxa-101-conscious-external-boundary-validation.md) continua encerrando V4 no limite controlável pela Guivos.
+
+A frente consolida revisão pré-saída em `PER-203`, identificação do destino externo, minimização de dados/contexto, confirmação afirmativa, revalidação, bloqueio de redirecionamento inválido, retorno seguro e `TRN-205` validada até `BND-001`.
+
+## 8. Instrumentos vigentes
 
 | Artefato | Estado |
 |---|---|
-| Jornadas Integradas | `active` 0.32.0 |
-| Jornada da Pessoa | `draft` 0.15.0 |
-| Jornada do Coletivo | `draft` 0.16.0 |
-| Jornada da Organização | `draft` 0.9.0 |
-| catálogo integrado | `active` 0.27.0 |
-| galeria visual | `active` 0.21.0 |
-| galeria de Planos | `active` 0.3.0 |
-| matriz por SVG | `active` 0.17.0 |
-| lacunas | `active` 0.27.0 |
-| registro de superfícies | `active` 0.17.0 |
-| registro de transições | `active` 0.18.0 |
-| detalhamento comercial/fronteira | `active` 0.5.0 |
+| Jornadas Integradas | `active` 0.33.0 |
+| Jornada da Pessoa | `draft` 0.16.0 |
+| Jornada do Coletivo | `draft` 0.17.0 |
+| Jornada da Organização | `draft` 0.10.0 |
+| catálogo integrado | `active` 0.28.0 |
+| galeria visual | `active` 0.22.0 |
+| galeria de Planos | `active` 0.5.0 |
+| matriz por SVG | `active`; 118 associações / 31 perfis |
+| lacunas | `active` 0.28.0 |
+| registro de superfícies | `active` 0.19.0 |
+| registro de transições | `active` 0.20.0 |
+| detalhamento comercial/fronteira | `active` |
 
-## 8. Ressalvas vigentes
+## 9. Ressalvas vigentes
 
-- 9 responsabilidades permanecem sem SVG dedicado;
+- 10 responsabilidades permanecem sem SVG dedicado, incluindo `PER-009`;
+- `TRN-406/407` permanecem contratadas até materialização suficiente de Conta;
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` permanecem parciais;
 - `TRN-304`, `TRN-305` e `TRN-306` permanecem parciais na integração patrocinada;
 - `TRN-416/426` permanecem parciais;
@@ -156,7 +166,7 @@ A frente consolida:
 - processo externo após `BND-001` permanece sob autoridade de terceiro;
 - Jornadas da Pessoa, Coletivo e Organização continuam `draft`.
 
-## 9. Fila global preservada
+## 10. Fila global preservada
 
 ```text
 V1 — encerrada pela UXA-097
@@ -164,9 +174,10 @@ V1 — encerrada pela UXA-097
 → V3 — encerrada pela UXA-099
 → Planos — identidade canônica encerrada pela UXA-100-A3
 → V4 — encerrada pela UXA-101 até BND-001
+→ Planos — origem voluntária reconciliada pela UXA-100-A4
 → V5 — pendente e não iniciada
 ```
 
-## 10. Próxima evolução possível
+## 11. Próxima evolução possível
 
-V5, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. A auditoria transversal dos Produtos Especializados pode ocorrer como diagnóstico sem iniciar nova UXA ou Engenharia de Produto.
+Materialização de `PER-009`, V5/UXA-102, cobrança real, contratação/dimensionamento assistido após `BND-002` e demais validações exigem autorização separada. Nenhuma delas é iniciada automaticamente por esta reconciliação.
