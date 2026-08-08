@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -22,6 +22,9 @@ related:
   - UXA-097
   - UXA-098
   - UXA-099
+  - UXA-100
+  - UXA-100-A2
+  - UXA-100-A3
   - GKR-JOURNEY-SCREEN-CATALOG-001
   - GKR-JOURNEY-TRANSITION-REGISTRY-001
   - GKR-JOURNEY-GAPS-001
@@ -35,7 +38,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo dos dez estados residuais da UXA-055 e não cria qualquer novo ID.
+A versão 0.16.0 incorpora a promoção canônica da UXA-100-A3: quatro famílias de Planos por participante e uma fronteira compartilhada para processo comercial Enterprise/Scale. A fragmentação segue a UXA-059 e não converte cada estado do board em tela independente.
 
 ## 2. Convenções
 
@@ -51,12 +54,12 @@ A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo d
 
 | Categoria | Quantidade |
 |---|---:|
-| Pessoa | 19 |
-| Coletivo | 8 |
-| Organização | 7 |
+| Pessoa | 23 |
+| Coletivo | 12 |
+| Organização | 11 |
 | camada comercial | 5 |
-| fronteira documental | 1 |
-| **Total** | **40** |
+| fronteira documental | 2 |
+| **Total** | **53** |
 
 ## 4. Inventário principal
 
@@ -81,6 +84,10 @@ A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo d
 | GKR-SURF-PER-201 | Mapa de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | UXA-024 | UXA-025 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-202 | Lista de Oportunidades | Pessoa/visitante | móvel e computador | validado | UXA-004 | UXA-028 | UXA-029 | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-PER-203 | Detalhe de Oportunidade | Pessoa/visitante | móvel e computador | validado | UXA-004; UXA-007 | UXA-007 | UXA-012 | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-301 | Planos e comparação da Pessoa | Pessoa autenticada | móvel/protegido | **validado** | GEM-004-A1/A2; UXA-100-A3 | UXA-100/A1 | **UXA-100-A2; promoção UXA-100-A3** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-302 | revisão de contratação da Pessoa | Pessoa/pagador autorizado | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-303 | gestão de downgrade e cancelamento da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Pessoa](surface-registry-person-details.md) |
+| GKR-SURF-PER-304 | resultado e recuperação de plano/cobrança da Pessoa | Pessoa titular | móvel/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Pessoa](surface-registry-person-details.md) |
 | GKR-SURF-COL-001 | presença pública existente | visitante/responsável | público e protegido | materializado | UXA-014; UXA-056 | UXA-016 | UXA-018; UXA-063 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-002 | Visão Geral do Responsável | responsável | computador protegido | validado | UXA-014; UXA-059 | UXA-086/087 | UXA-087 | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-003 | gestão de solicitações | responsável | computador protegido | validado | UXA-056; UXA-059 | UXA-088/089 | UXA-089; handoffs UXA-090/092 | [Coletivo](surface-registry-collective-details.md) |
@@ -89,6 +96,10 @@ A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo d
 | GKR-SURF-COL-006 | atividades, consultas e decisões | responsável | protegido | programado | UXA-059 | parcial/dispersa | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-007 | proteção e moderação | responsável | protegido | contratado | UXA-058 | parcial | — | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-COL-008 | relações institucionais | responsável | protegido | contratado | UXA-019 | — | — | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-301 | Planos e comparação do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A1/A2; UXA-100-A3 | UXA-100/A1 | **UXA-100-A2; promoção UXA-100-A3** | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-302 | revisão de contratação do Coletivo | responsável financeiro autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-303 | gestão de downgrade e cancelamento do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Coletivo](surface-registry-collective-details.md) |
+| GKR-SURF-COL-304 | resultado e recuperação de plano/cobrança do Coletivo | responsável autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Coletivo](surface-registry-collective-details.md) |
 | GKR-SURF-ORG-001 | Visão Geral da Organização | representante | protegido | validado | UXA-014 | UXA-015 | UXA-017 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-002 | cadastro de oportunidade | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013 | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-003 | oportunidade aprovada/ativa | representante | protegido | validado | UXA-004 | UXA-008 | UXA-013 | [Organização](surface-registry-organization-details.md) |
@@ -96,12 +107,17 @@ A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo d
 | GKR-SURF-ORG-005 | avaliação e negociação bilateral | representantes | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-006 | relação ativa e revisão | representantes | protegido | contratado | UXA-019 | — | — | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-ORG-007 | resultados e evidências institucionais | representante | protegido | indeterminado | referências dispersas | — | — | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-301 | Planos e comparação da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A1/A2; UXA-100-A3 | UXA-100/A1 | **UXA-100-A2; promoção UXA-100-A3** | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-302 | revisão de contratação da Organização | autoridade financeira identificada | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-303 | gestão de downgrade e cancelamento da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Organização](surface-registry-organization-details.md) |
+| GKR-SURF-ORG-304 | resultado e recuperação de plano/cobrança da Organização | representante autorizado | computador/protegido | **validado** | GEM-004-A2; UXA-100-A3 | UXA-100 | **UXA-100-A2; promoção UXA-100-A3** | [Organização](surface-registry-organization-details.md) |
 | GKR-SURF-COM-001 | configuração do anunciante | anunciante | protegido | materializado | UXA-038 | UXA-040 | UXA-041 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-002 | cartão patrocinado e explicação | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-042 | UXA-043 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-003 | estados patrocinados de lista/mapa | Pessoa exposta | público/protegido | validado | UXA-038 | UXA-044 | UXA-045 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-004 | gestão de campanha ativa | anunciante | protegido | materializado | UXA-038 | UXA-046/053 | UXA-047/054 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-005 | dez estados residuais | anunciante/Pessoa | diversos | **validado** | UXA-038 | UXA-055 | **UXA-099** | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-BND-001 | fronteira externa identificada | Pessoa | externo | indeterminado | UXA-004; UXA-007 | — | — | [Comercial](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-BND-002 | processo comercial Enterprise/Scale | Coletivo/Organização | fronteira comercial | contratado | GEM-004-A1/A2; UXA-100-A3 | CTA/handoff nos boards UXA-100 | parcial; processo posterior não materializado | [Comercial](surface-registry-commercial-boundary-details.md) |
 
 ## 5. Divisões controladas
 
@@ -110,18 +126,27 @@ A versão 0.15.0 preserva as 40 entradas. A UXA-099 valida `COM-005` no escopo d
 - `PER-106` é central de participações e estados relacionados, não feed;
 - `PER-107` é triagem de atualizações e sua versão corrente está validada pela UXA-096;
 - `PER-108` é síntese interna validada e não replica Central ou canais especializados;
+- `PER/COL/ORG-301` incorporam comparação geral, comparação incremental e delta direto; comparação não cria superfície própria;
+- `PER/COL/ORG-302` concentram revisão afirmativa da contratação; processamento transitório não cria ID;
+- `PER/COL/ORG-303` concentram downgrade e cancelamento porque compartilham a revisão do ciclo, preservando consequências específicas por modo;
+- `PER/COL/ORG-304` agrupam sucesso e falha como estados de resultado/recuperação, sem confundir seus efeitos;
+- `BND-002` encerra o autoatendimento antes do processo comercial Enterprise/Scale;
 - `COM-005` está funcionalmente validado pela UXA-099; sua validação não promove automaticamente `TRN-305`;
-- `BND-001` é endpoint documental, não tela.
+- `BND-001` e `BND-002` são endpoints documentais, não telas.
 
-## 6. Efeito da UXA-099
+## 6. Efeito da UXA-100-A3
 
-- 40 IDs preservados;
-- `COM-005`: materializado → **validado** no escopo dos dez estados UXA-055;
-- 10 SVGs residuais passam a possuir validação funcional específica;
-- 2 SVGs são reformulados sem criação de novo ID;
-- `TRN-305` permanece parcial no registro de transições;
-- nenhuma promoção de jornada ou implementação é inferida.
+- superfícies/estados/fronteiras: **40 → 53**;
+- Pessoa: **19 → 23**;
+- Coletivo: **8 → 12**;
+- Organização: **7 → 11**;
+- fronteiras documentais: **1 → 2**;
+- 12 superfícies de Planos promovidas com validação funcional da UXA-100-A2;
+- 1 fronteira comercial adicionada sem simular checkout;
+- 9 SVGs de Planos passam ao conjunto canônico;
+- nenhuma jornada principal é promovida;
+- nenhuma implementação é inferida.
 
 ## 7. Estado
 
-O registro permanece `active`. Seu status aprova o instrumento documental, não a implementação das superfícies.
+O registro permanece `active`. Seu status aprova o instrumento documental e a identidade canônica proposta pela UXA-100-A3, não a implementação das superfícies.
