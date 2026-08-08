@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1420" viewBox="0 0 1600 1420" role="img" aria-labelledby="title desc">
   <title id="title">Coletivo — comparação incremental de benefícios dos planos</title>
-  <desc id="desc">Placa estrutural de baixa fidelidade que mostra os benefícios e capacidades adicionais de Gestão sobre Livre, Impacto sobre Gestão e Enterprise sobre Impacto.</desc>
+  <desc id="desc">Placa estrutural de baixa fidelidade que mostra benefícios e capacidades adicionais de Mobiliza sobre Livre, Impacta sobre Mobiliza e Rede sobre Impacta.</desc>
   <rect width="1600" height="1420" fill="#ffffff"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
     <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Coletivo · O que cada plano acrescenta</text>
-    <text x="48" y="88" font-size="14">Comparação incremental · cada plano superior preserva o anterior e acrescenta capacidades próprias</text>
-    <text x="48" y="116" font-size="13">Enterprise é contratação dimensionada; a coluna mostra capacidades adicionais candidatas, não uma promessa de volume infinito.</text>
+    <text x="48" y="88" font-size="14">Comparação incremental · cada plano preserva capacidades anteriores e acrescenta capacidade operacional própria</text>
+    <text x="48" y="116" font-size="13">Maior capacidade não representa maior legitimidade, impacto ou evolução do Coletivo.</text>
   </g>
 
   <g fill="none" stroke="#111111" stroke-width="2">
@@ -33,20 +33,20 @@
     <text x="84" y="302" font-size="13">1 atividade + 1 oportunidade/mês</text>
     <text x="84" y="330" font-size="13">2 publicações ativas · sem publicação paga</text>
 
-    <text x="454" y="190" font-size="18" font-weight="700">Coletivo Gestão</text>
+    <text x="454" y="190" font-size="18" font-weight="700">Coletivo Mobiliza</text>
     <text x="474" y="240" font-size="20" font-weight="700">R$ 89,90/mês</text>
     <text x="474" y="272" font-size="13">R$ 899,00/ano · referência candidata</text>
     <text x="474" y="302" font-size="13" font-weight="700">Inclui o Livre +</text>
 
-    <text x="844" y="190" font-size="18" font-weight="700">Coletivo Impacto</text>
+    <text x="844" y="190" font-size="18" font-weight="700">Coletivo Impacta</text>
     <text x="864" y="240" font-size="20" font-weight="700">R$ 249,90/mês</text>
     <text x="864" y="272" font-size="13">R$ 2.499,00/ano · referência candidata</text>
-    <text x="864" y="302" font-size="13" font-weight="700">Inclui o Gestão +</text>
+    <text x="864" y="302" font-size="13" font-weight="700">Inclui o Mobiliza +</text>
 
-    <text x="1234" y="190" font-size="18" font-weight="700">Coletivo Enterprise</text>
+    <text x="1234" y="190" font-size="18" font-weight="700">Coletivo Rede</text>
     <text x="1254" y="240" font-size="20" font-weight="700">Sob consulta</text>
-    <text x="1254" y="272" font-size="13">Contrato anual e dimensionamento</text>
-    <text x="1254" y="302" font-size="13" font-weight="700">Inclui o Impacto + capacidades contratadas</text>
+    <text x="1254" y="272" font-size="13">Contrato anual e dimensionamento quando necessário</text>
+    <text x="1254" y="302" font-size="13" font-weight="700">Inclui o Impacta + capacidades contratadas</text>
 
     <text x="84" y="420" font-size="15" font-weight="700">O Livre já garante</text>
     <text x="84" y="460" font-size="13">• perfil e propósito do Coletivo</text>
@@ -72,7 +72,7 @@
     <text x="474" y="748" font-size="13">• gestão ampliada de participantes</text>
     <text x="474" y="780" font-size="13">• suporte prioritário</text>
 
-    <text x="864" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Gestão</text>
+    <text x="864" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Mobiliza</text>
     <text x="864" y="460" font-size="13">• até 15 administradores</text>
     <text x="864" y="492" font-size="13">• 15 atividades e 15 oportunidades/mês</text>
     <text x="864" y="524" font-size="13">• até 20 publicações ativas</text>
@@ -87,8 +87,8 @@
     <text x="864" y="812" font-size="13">• dashboards ampliados</text>
     <text x="864" y="844" font-size="13">• suporte especializado</text>
 
-    <text x="1254" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Impacto</text>
-    <text x="1254" y="460" font-size="13">• capacidade sem limite padrão fixo*</text>
+    <text x="1254" y="420" font-size="15" font-weight="700">Ganhos exclusivos sobre o Impacta</text>
+    <text x="1254" y="460" font-size="13">• capacidade dimensionada por contratação*</text>
     <text x="1254" y="492" font-size="13">• categorias completas personalizáveis</text>
     <text x="1254" y="524" font-size="13">• múltiplos núcleos, unidades e territórios</text>
     <text x="1254" y="556" font-size="13">• administradores e papéis conforme contrato</text>
@@ -98,13 +98,13 @@
     <text x="1254" y="684" font-size="13">• importação/exportação em massa</text>
     <text x="1254" y="716" font-size="13">• domínio/ambiente configurável quando aprovado</text>
     <text x="1254" y="748" font-size="13">• treinamento e implantação assistida</text>
-    <text x="1254" y="780" font-size="13">• gerente dedicado</text>
+    <text x="1254" y="780" font-size="13">• suporte dimensionado</text>
     <text x="1254" y="812" font-size="13">• SLA e governança contratados</text>
     <text x="1254" y="864" font-size="12">* sujeito à capacidade contratada, uso justo, segurança</text>
     <text x="1254" y="888" font-size="12">e disponibilidade operacional.</text>
 
-    <text x="64" y="1208" font-size="12">A comparação incremental não implica que o plano superior seja necessário, obrigatório ou mais relevante organicamente.</text>
-    <text x="64" y="1234" font-size="12">Ao selecionar um plano, a interface deverá destacar apenas o que será acrescentado e, no downgrade, exatamente o que deixará de estar disponível.</text>
-    <text x="48" y="1344" font-size="12">Materialização candidata. Enterprise segue proposta comercial; não representa checkout autônomo nem capacidade infinita.</text>
+    <text x="64" y="1208" font-size="12">A comparação incremental não implica que maior capacidade seja necessária, obrigatória ou mais relevante organicamente.</text>
+    <text x="64" y="1234" font-size="12">Mobiliza, Impacta e Rede descrevem função/capacidade; não constituem uma escada de mérito ou evolução.</text>
+    <text x="48" y="1344" font-size="12">Materialização canônica. Contratação assistida depende da configuração necessária e não é sinônimo de um plano específico.</text>
   </g>
 </svg>
