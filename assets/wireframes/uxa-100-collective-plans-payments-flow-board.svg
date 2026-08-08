@@ -1,134 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1620" viewBox="0 0 1440 1620" role="img" aria-labelledby="title desc">
   <title id="title">Coletivo — planos, limites, cobrança e pagamentos</title>
-  <desc id="desc">Placa estrutural de baixa fidelidade para computador com plano Coletivo Livre, limite mensal e publicação paga, comparação Livre Gestão Impacto Enterprise, revisão de contratação, sucesso, falha, downgrade cancelamento e caminho Enterprise por proposta comercial.</desc>
+  <desc id="desc">Placa estrutural de baixa fidelidade para computador com Coletivo Livre, limite mensal e publicação paga, comparação Livre Mobiliza Impacta Rede, revisão de contratação, sucesso, falha, downgrade cancelamento e contratação assistida quando necessária.</desc>
   <rect width="1440" height="1620" fill="#ffffff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
-    <text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Coletivo · Plano, cobrança e pagamento</text>
-    <text x="48" y="86" font-size="14">Placa candidata de fluxo · baixa fidelidade · valores candidatos · operação comercial não implementada</text>
-    <text x="48" y="112" font-size="13">Regra: atingir limite nunca reduz a visibilidade das publicações existentes e não transforma assinatura em relevância.</text>
-  </g>
-
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111111"><text x="48" y="58" font-size="26" font-weight="700">UXA-100 · Coletivo · Plano, cobrança e pagamento</text><text x="48" y="86" font-size="14">Placa candidata de fluxo · baixa fidelidade · valores candidatos · operação comercial não implementada</text><text x="48" y="112" font-size="13">Regra: atingir limite nunca reduz visibilidade existente e plano não representa mérito, relevância ou impacto.</text></g>
   <g fill="none" stroke="#111111" stroke-width="2">
-    <rect x="48" y="150" width="640" height="350" rx="12"/>
-    <rect x="752" y="150" width="640" height="350" rx="12"/>
-    <rect x="48" y="560" width="1344" height="350" rx="12"/>
-    <rect x="48" y="970" width="640" height="300" rx="12"/>
-    <rect x="752" y="970" width="640" height="300" rx="12"/>
-    <rect x="48" y="1330" width="640" height="210" rx="12"/>
-    <rect x="752" y="1330" width="640" height="210" rx="12"/>
-
-    <rect x="76" y="204" width="584" height="74" rx="8"/>
-    <rect x="76" y="300" width="276" height="118" rx="8"/>
-    <rect x="376" y="300" width="284" height="118" rx="8"/>
-    <rect x="76" y="440" width="178" height="38" rx="7"/>
-    <rect x="272" y="440" width="178" height="38" rx="7"/>
-
-    <rect x="780" y="204" width="584" height="152" rx="8"/>
-    <rect x="780" y="378" width="178" height="46" rx="7"/>
-    <rect x="976" y="378" width="178" height="46" rx="7"/>
-    <rect x="1172" y="378" width="192" height="46" rx="7"/>
-
-    <rect x="76" y="624" width="296" height="218" rx="8"/>
-    <rect x="396" y="624" width="296" height="218" rx="8"/>
-    <rect x="716" y="624" width="296" height="218" rx="8"/>
-    <rect x="1036" y="624" width="328" height="218" rx="8"/>
-    <rect x="422" y="852" width="244" height="38" rx="7"/>
-    <rect x="1078" y="852" width="244" height="38" rx="7"/>
-
-    <rect x="76" y="1024" width="584" height="160" rx="8"/>
-    <rect x="76" y="1204" width="584" height="44" rx="7"/>
-    <rect x="780" y="1024" width="276" height="160" rx="8"/>
-    <rect x="1080" y="1024" width="284" height="160" rx="8"/>
-    <rect x="780" y="1204" width="178" height="44" rx="7"/>
-    <rect x="1172" y="1204" width="192" height="44" rx="7"/>
-
-    <rect x="76" y="1382" width="584" height="104" rx="8"/>
-    <rect x="780" y="1382" width="584" height="104" rx="8"/>
-
-    <path d="M688 325 H752"/>
-    <path d="M1072 500 V534 H720 V560"/>
-    <path d="M720 910 V944 H368 V970"/>
-    <path d="M720 910 V944 H1072 V970"/>
-    <path d="M368 1270 V1304 H368 V1330"/>
-    <path d="M1072 1270 V1304 H1072 V1330"/>
+    <rect x="48" y="150" width="640" height="350" rx="12"/><rect x="752" y="150" width="640" height="350" rx="12"/><rect x="48" y="560" width="1344" height="350" rx="12"/><rect x="48" y="970" width="640" height="300" rx="12"/><rect x="752" y="970" width="640" height="300" rx="12"/><rect x="48" y="1330" width="640" height="210" rx="12"/><rect x="752" y="1330" width="640" height="210" rx="12"/>
+    <rect x="76" y="204" width="584" height="74" rx="8"/><rect x="76" y="300" width="276" height="118" rx="8"/><rect x="376" y="300" width="284" height="118" rx="8"/><rect x="76" y="440" width="178" height="38" rx="7"/><rect x="272" y="440" width="178" height="38" rx="7"/><rect x="780" y="204" width="584" height="152" rx="8"/><rect x="780" y="378" width="178" height="46" rx="7"/><rect x="976" y="378" width="178" height="46" rx="7"/><rect x="1172" y="378" width="192" height="46" rx="7"/>
+    <rect x="76" y="624" width="296" height="218" rx="8"/><rect x="396" y="624" width="296" height="218" rx="8"/><rect x="716" y="624" width="296" height="218" rx="8"/><rect x="1036" y="624" width="328" height="218" rx="8"/><rect x="422" y="852" width="244" height="38" rx="7"/><rect x="1078" y="852" width="244" height="38" rx="7"/>
+    <rect x="76" y="1024" width="584" height="160" rx="8"/><rect x="76" y="1204" width="584" height="44" rx="7"/><rect x="780" y="1024" width="276" height="160" rx="8"/><rect x="1080" y="1024" width="284" height="160" rx="8"/><rect x="780" y="1204" width="178" height="44" rx="7"/><rect x="1172" y="1204" width="192" height="44" rx="7"/><rect x="76" y="1382" width="584" height="104" rx="8"/><rect x="780" y="1382" width="584" height="104" rx="8"/>
+    <path d="M688 325 H752"/><path d="M1072 500 V534 H720 V560"/><path d="M720 910 V944 H368 V970"/><path d="M720 910 V944 H1072 V970"/><path d="M368 1270 V1304 H368 V1330"/><path d="M1072 1270 V1304 H1072 V1330"/>
   </g>
-
   <g font-family="Arial, Helvetica, sans-serif" fill="#111111">
-    <text x="76" y="184" font-size="18" font-weight="700">1 · Plano e cobrança · Coletivo Livre</text>
-    <text x="98" y="232" font-size="16" font-weight="700">Coletivo Horizonte Aberto · Livre · R$ 0,00</text>
-    <text x="98" y="258" font-size="12">Plano atual · publicações existentes preservadas</text>
-    <text x="98" y="330" font-size="13">Atividades neste mês</text>
-    <text x="98" y="362" font-size="24" font-weight="700">1 / 1</text>
-    <text x="98" y="394" font-size="12">cota gratuita utilizada</text>
-    <text x="398" y="330" font-size="13">Oportunidades neste mês</text>
-    <text x="398" y="362" font-size="24" font-weight="700">1 / 1</text>
-    <text x="398" y="394" font-size="12">2 / 2 publicações ativas</text>
-    <text x="112" y="465" font-size="12">Aguardar ciclo</text>
-    <text x="312" y="465" font-size="12">Comparar planos</text>
-
-    <text x="780" y="184" font-size="18" font-weight="700">2 · Nova publicação paga no Livre</text>
-    <text x="802" y="232" font-size="15" font-weight="700">Publicação paga não está incluída no Coletivo Livre.</text>
-    <text x="802" y="262" font-size="13">A publicação pode permanecer gratuita sem upgrade, quando aplicável.</text>
-    <text x="802" y="290" font-size="13">Assinatura não substitui comissão, taxa do pagamento ou tributo.</text>
-    <text x="802" y="318" font-size="13">Nenhuma publicação existente perde alcance ou visibilidade por este limite.</text>
-    <text x="814" y="406" font-size="12">Manter gratuita</text>
-    <text x="1008" y="406" font-size="12">Salvar rascunho</text>
-    <text x="1200" y="406" font-size="12">Ver Gestão</text>
-    <text x="780" y="472" font-size="11">Também é legítimo aguardar o próximo ciclo ou encerrar/agendar publicação quando aplicável.</text>
-
-    <text x="76" y="602" font-size="18" font-weight="700">3 · Comparação voluntária</text>
-    <text x="96" y="654" font-size="14" font-weight="700">LIVRE</text>
-    <text x="96" y="684" font-size="13">R$ 0</text>
-    <text x="96" y="712" font-size="12">1 atividade + 1 oportunidade/mês</text>
-    <text x="96" y="738" font-size="12">2 ativas · 2 admins · 1 núcleo/unidade</text>
-    <text x="96" y="764" font-size="12">sem publicações pagas</text>
-    <text x="416" y="654" font-size="14" font-weight="700">GESTÃO</text>
-    <text x="416" y="684" font-size="13">R$ 89,90/mês · R$ 899/ano</text>
-    <text x="416" y="712" font-size="12">4 atividades + 4 oportunidades/mês</text>
-    <text x="416" y="738" font-size="12">6 ativas · 5 admins · 1 núcleo/unidade</text>
-    <text x="416" y="764" font-size="12">publicações e inscrições pagas</text>
-    <text x="736" y="654" font-size="14" font-weight="700">IMPACTO</text>
-    <text x="736" y="684" font-size="13">R$ 249,90/mês · R$ 2.499/ano</text>
-    <text x="736" y="712" font-size="12">15 + 15/mês · 20 ativas</text>
-    <text x="736" y="738" font-size="12">15 admins · até 5 núcleos/unidades</text>
-    <text x="736" y="764" font-size="12">indicadores e integrações ampliadas</text>
-    <text x="1056" y="654" font-size="14" font-weight="700">ENTERPRISE</text>
-    <text x="1056" y="684" font-size="13">Sob consulta · contrato anual</text>
-    <text x="1056" y="712" font-size="12">capacidade contratada</text>
-    <text x="1056" y="738" font-size="12">API · SSO · Power BI</text>
-    <text x="1056" y="764" font-size="12">múltiplos núcleos/unidades · SLA</text>
-    <text x="454" y="877" font-size="12">Escolher Gestão</text>
-    <text x="1110" y="877" font-size="12">Solicitar proposta</text>
-
-    <text x="76" y="1004" font-size="18" font-weight="700">4 · Revisar contratação · Gestão</text>
-    <text x="98" y="1060" font-size="14" font-weight="700">Coletivo Gestão · mensal · preço candidato R$ 89,90</text>
-    <text x="98" y="1088" font-size="13">Pagador: Coletivo / responsável autorizado pela cobrança</text>
-    <text x="98" y="1116" font-size="13">Beneficiário: Coletivo Horizonte Aberto</text>
-    <text x="98" y="1144" font-size="13">Recorrência mensal · data de início exibida · método autorizado em simulação</text>
-    <text x="98" y="1172" font-size="11">Pró-rata, crédito e regra fiscal permanecem indefinidos.</text>
-    <text x="264" y="1232" font-size="13">Confirmar contratação</text>
-
-    <text x="780" y="1004" font-size="18" font-weight="700">5 · Resultado do pagamento</text>
-    <text x="802" y="1058" font-size="14" font-weight="700">CONFIRMADO</text>
-    <text x="802" y="1088" font-size="12">Ativação rastreável do Gestão.</text>
-    <text x="802" y="1116" font-size="12">Registro/recibo e data de início disponíveis.</text>
-    <text x="802" y="1144" font-size="12">Capacidade muda; relevância não.</text>
-    <text x="1102" y="1058" font-size="14" font-weight="700">NÃO CONFIRMADO</text>
-    <text x="1102" y="1088" font-size="12">Sem ativação presumida.</text>
-    <text x="1102" y="1116" font-size="12">Estado anterior preservado.</text>
-    <text x="1102" y="1144" font-size="12">Publicações existentes continuam.</text>
-    <text x="818" y="1232" font-size="12">Ver plano ativo</text>
-    <text x="1206" y="1232" font-size="12">Tentar novamente</text>
-
-    <text x="76" y="1362" font-size="18" font-weight="700">6 · Downgrade ou cancelamento</text>
-    <text x="98" y="1414" font-size="13">Antes de efetivar, escolher publicações gratuitas mantidas e encerrar/converter pagas excedentes.</text>
-    <text x="98" y="1442" font-size="13">Reduzir admins/núcleos conforme limite; preservar exportação, registros e compromissos já assumidos.</text>
-    <text x="98" y="1470" font-size="12">Mostrar data efetiva/plano posterior; sem exclusão silenciosa e sem reativação não autorizada.</text>
-    <text x="752" y="1362" font-size="18" font-weight="700">7 · Enterprise</text>
-    <text x="802" y="1414" font-size="14" font-weight="700">Solicitar proposta comercial</text>
-    <text x="802" y="1442" font-size="13">Dimensionar núcleos, capacidade, integrações e suporte.</text>
-    <text x="802" y="1470" font-size="12">Sem checkout autônomo fictício e sem promessa de capacidade infinita.</text>
-
-    <text x="48" y="1580" font-size="12">Fluxo candidato. A assinatura amplia capacidades operacionais autorizadas; não compra prioridade orgânica, confiança ou impacto.</text>
+    <text x="76" y="184" font-size="18" font-weight="700">1 · Plano e cobrança · Coletivo Livre</text><text x="98" y="232" font-size="16" font-weight="700">Coletivo Horizonte Aberto · Livre · R$ 0,00</text><text x="98" y="258" font-size="12">Plano atual · publicações existentes preservadas</text><text x="98" y="330" font-size="13">Atividades neste mês</text><text x="98" y="362" font-size="24" font-weight="700">1 / 1</text><text x="98" y="394" font-size="12">cota gratuita utilizada</text><text x="398" y="330" font-size="13">Oportunidades neste mês</text><text x="398" y="362" font-size="24" font-weight="700">1 / 1</text><text x="398" y="394" font-size="12">2 / 2 publicações ativas</text><text x="112" y="465" font-size="12">Aguardar ciclo</text><text x="312" y="465" font-size="12">Comparar planos</text>
+    <text x="780" y="184" font-size="18" font-weight="700">2 · Nova publicação paga no Livre</text><text x="802" y="232" font-size="15" font-weight="700">Publicação paga não está incluída no Coletivo Livre.</text><text x="802" y="262" font-size="13">A publicação pode permanecer gratuita sem upgrade, quando aplicável.</text><text x="802" y="290" font-size="13">Assinatura não substitui comissão, taxa do pagamento ou tributo.</text><text x="802" y="318" font-size="13">Nenhuma publicação existente perde alcance ou visibilidade por este limite.</text><text x="814" y="406" font-size="12">Manter gratuita</text><text x="1008" y="406" font-size="12">Salvar rascunho</text><text x="1196" y="406" font-size="12">Ver Mobiliza</text>
+    <text x="76" y="602" font-size="18" font-weight="700">3 · Comparação voluntária</text><text x="96" y="654" font-size="14" font-weight="700">LIVRE</text><text x="96" y="684" font-size="13">R$ 0</text><text x="96" y="712" font-size="12">1 atividade + 1 oportunidade/mês</text><text x="96" y="738" font-size="12">2 ativas · 2 admins · 1 núcleo/unidade</text><text x="96" y="764" font-size="12">sem publicações pagas</text>
+    <text x="416" y="654" font-size="14" font-weight="700">MOBILIZA</text><text x="416" y="684" font-size="13">R$ 89,90/mês · R$ 899/ano</text><text x="416" y="712" font-size="12">4 atividades + 4 oportunidades/mês</text><text x="416" y="738" font-size="12">6 ativas · 5 admins · 1 núcleo/unidade</text><text x="416" y="764" font-size="12">publicações e inscrições pagas</text>
+    <text x="736" y="654" font-size="14" font-weight="700">IMPACTA</text><text x="736" y="684" font-size="13">R$ 249,90/mês · R$ 2.499/ano</text><text x="736" y="712" font-size="12">15 + 15/mês · 20 ativas</text><text x="736" y="738" font-size="12">15 admins · até 5 núcleos/unidades</text><text x="736" y="764" font-size="12">indicadores e integrações ampliadas</text>
+    <text x="1056" y="654" font-size="14" font-weight="700">REDE</text><text x="1056" y="684" font-size="13">Sob consulta · contrato anual</text><text x="1056" y="712" font-size="12">capacidade dimensionada</text><text x="1056" y="738" font-size="12">API · SSO · Power BI</text><text x="1056" y="764" font-size="12">múltiplos núcleos/unidades · SLA</text><text x="448" y="877" font-size="12">Escolher Mobiliza</text><text x="1092" y="877" font-size="12">Solicitar dimensionamento</text>
+    <text x="76" y="1004" font-size="18" font-weight="700">4 · Revisar contratação · Mobiliza</text><text x="98" y="1060" font-size="14" font-weight="700">Coletivo Mobiliza · mensal · preço candidato R$ 89,90</text><text x="98" y="1088" font-size="13">Pagador: Coletivo / responsável autorizado pela cobrança</text><text x="98" y="1116" font-size="13">Beneficiário: Coletivo Horizonte Aberto</text><text x="98" y="1144" font-size="13">Recorrência mensal · data de início exibida · método autorizado em simulação</text><text x="98" y="1172" font-size="11">Pró-rata, crédito e regra fiscal permanecem indefinidos.</text><text x="264" y="1232" font-size="13">Confirmar contratação</text>
+    <text x="780" y="1004" font-size="18" font-weight="700">5 · Resultado do pagamento</text><text x="802" y="1058" font-size="14" font-weight="700">CONFIRMADO</text><text x="802" y="1088" font-size="12">Ativação rastreável do Mobiliza.</text><text x="802" y="1116" font-size="12">Registro/recibo e data de início disponíveis.</text><text x="802" y="1144" font-size="12">Capacidade muda; relevância não.</text><text x="1102" y="1058" font-size="14" font-weight="700">NÃO CONFIRMADO</text><text x="1102" y="1088" font-size="12">Sem ativação presumida.</text><text x="1102" y="1116" font-size="12">Estado anterior preservado.</text><text x="1102" y="1144" font-size="12">Publicações existentes continuam.</text><text x="818" y="1232" font-size="12">Ver plano ativo</text><text x="1206" y="1232" font-size="12">Tentar novamente</text>
+    <text x="76" y="1362" font-size="18" font-weight="700">6 · Downgrade ou cancelamento</text><text x="98" y="1414" font-size="13">Antes de efetivar, escolher publicações gratuitas mantidas e encerrar/converter pagas excedentes.</text><text x="98" y="1442" font-size="13">Reduzir admins/núcleos conforme limite; preservar exportação, registros e compromissos já assumidos.</text><text x="98" y="1470" font-size="12">Mostrar data efetiva/plano posterior; sem exclusão silenciosa e sem reativação não autorizada.</text>
+    <text x="752" y="1362" font-size="18" font-weight="700">7 · Contratação assistida</text><text x="802" y="1414" font-size="14" font-weight="700">Solicitar dimensionamento</text><text x="802" y="1442" font-size="13">Quando necessário, dimensionar núcleos, capacidade, integrações e suporte.</text><text x="802" y="1470" font-size="12">BND-002 não é plano nem checkout; o handoff permanece parcial até materialização posterior.</text><text x="48" y="1580" font-size="12">Fluxo sincronizado. A assinatura amplia capacidades operacionais autorizadas; não compra prioridade orgânica, confiança, mérito ou impacto.</text>
   </g>
 </svg>

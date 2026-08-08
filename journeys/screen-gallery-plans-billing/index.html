@@ -9106,7 +9106,34 @@
 <h1 id="planos-comparacao-e-cobranca-galeria-canonica">Planos, Comparação e Cobrança — Galeria Canônica<a class="headerlink" href="#planos-comparacao-e-cobranca-galeria-canonica" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Esta galeria reúne as nove referências visuais de Planos da UXA-100 para <strong>Pessoa, Coletivo e Organização</strong>.</p>
-<p>A UXA-100-A2 aprovou funcionalmente os nove ativos, após reforma controlada de seis deles. A UXA-100-A3 promove esses nove SVGs ao conjunto canônico e os associa a superfícies e transições estáveis, sem transformar cada estado interno dos boards em tela independente.</p>
+<p>A UXA-100-A2 aprovou funcionalmente os nove ativos. A UXA-100-A3 os promoveu ao conjunto canônico e esta versão sincroniza a nomenclatura e a leitura conceitual sem criar novos ativos, superfícies, transições ou perfis.</p>
+<p>Taxonomia vigente:</p>
+<table>
+<thead>
+<tr>
+<th>Contexto</th>
+<th>Planos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pessoa</td>
+<td>Free · Plus · Pro</td>
+</tr>
+<tr>
+<td>Coletivo</td>
+<td>Livre · Mobiliza · Impacta · Rede</td>
+</tr>
+<tr>
+<td>Organização</td>
+<td>Conecta · Eleva · Transforma</td>
+</tr>
+<tr>
+<td>Guivos Business</td>
+<td>Start · Growth · Scale · Enterprise — produto separado, sem SVG próprio nesta galeria</td>
+</tr>
+</tbody>
+</table>
 <h2 id="2-pessoa-perfil-r29">2. Pessoa — perfil R29<a class="headerlink" href="#2-pessoa-perfil-r29" title="Permanent link">&para;</a></h2>
 <p>Superfícies canônicas relacionadas: <code>PER-301</code> a <code>PER-304</code>.</p>
 <h3 id="21-tela-dedicada-de-planos">2.1 Tela dedicada de Planos<a class="headerlink" href="#21-tela-dedicada-de-planos" title="Permanent link">&para;</a></h3>
@@ -9120,6 +9147,7 @@
 <p><a href="../../assets/wireframes/uxa-100-person-plan-incremental-benefits-comparison.svg">Visualizar SVG</a></p>
 <h2 id="3-coletivo-perfil-r30">3. Coletivo — perfil R30<a class="headerlink" href="#3-coletivo-perfil-r30" title="Permanent link">&para;</a></h2>
 <p>Superfícies canônicas relacionadas: <code>COL-301</code> a <code>COL-304</code>.</p>
+<p>Taxonomia sincronizada: <strong>Livre · Mobiliza · Impacta · Rede</strong>.</p>
 <h3 id="31-tela-dedicada-de-planos">3.1 Tela dedicada de Planos<a class="headerlink" href="#31-tela-dedicada-de-planos" title="Permanent link">&para;</a></h3>
 <p><img alt="Coletivo — tela dedicada de Planos" src="../../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg">Visualizar SVG</a></p>
@@ -9131,6 +9159,8 @@
 <p><a href="../../assets/wireframes/uxa-100-collective-plan-incremental-benefits-comparison.svg">Visualizar SVG</a></p>
 <h2 id="4-organizacao-perfil-r31">4. Organização — perfil R31<a class="headerlink" href="#4-organizacao-perfil-r31" title="Permanent link">&para;</a></h2>
 <p>Superfícies canônicas relacionadas: <code>ORG-301</code> a <code>ORG-304</code>.</p>
+<p>Taxonomia sincronizada: <strong>Conecta · Eleva · Transforma</strong>.</p>
+<p>A separação obrigatória é <strong>Organização ≠ Guivos Business</strong> e <strong>Organização Transforma ≠ Guivos Business Enterprise</strong>.</p>
 <h3 id="41-tela-dedicada-de-planos">4.1 Tela dedicada de Planos<a class="headerlink" href="#41-tela-dedicada-de-planos" title="Permanent link">&para;</a></h3>
 <p><img alt="Organização — tela dedicada de Planos" src="../../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg">Visualizar SVG</a></p>
@@ -9142,11 +9172,12 @@
 <p><a href="../../assets/wireframes/uxa-100-organization-plan-incremental-benefits-comparison.svg">Visualizar SVG</a></p>
 <h2 id="5-fragmentacao-canonica">5. Fragmentação canônica<a class="headerlink" href="#5-fragmentacao-canonica" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>*-301 Planos e comparação
-├── upgrade → *-302 revisão de contratação → *-304 resultado/recuperação → *-301
+├── contratação autônoma → *-302 revisão → *-304 resultado/recuperação → *-301
 ├── downgrade/cancelamento → *-303 gestão do ciclo → *-304 → *-301
-└── Enterprise/Scale → BND-002 quando aplicável
+└── quando necessário → BND-002 contratação/dimensionamento assistido
 </code></pre></div>
 <p>A comparação incremental permanece estado de <code>*-301</code>. O processamento de pagamento permanece transitório e não recebe superfície própria. Sucesso e falha são estados distintos de <code>*-304</code> porque compartilham a mesma responsabilidade de resultado/recuperação sem compartilhar a consequência.</p>
+<p><code>BND-002</code> não representa Enterprise ou Scale; representa a necessidade de contratação/dimensionamento assistido quando o autoatendimento não é suficiente.</p>
 <h2 id="6-contagem-canonica-da-frente">6. Contagem canônica da frente<a class="headerlink" href="#6-contagem-canonica-da-frente" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9194,22 +9225,23 @@
 </tr>
 </tbody>
 </table>
-<p>Com a UXA-100-A3, a galeria global passa de <strong>109 para 118 SVGs canônicos</strong>, todos com validação funcional documental vigente.</p>
+<p>A galeria global permanece em <strong>118 SVGs canônicos</strong>, todos com a maturidade documental já governada. Nenhum SVG ou perfil é criado para Guivos Business nesta frente.</p>
 <h2 id="7-maturidade-das-transicoes">7. Maturidade das transições<a class="headerlink" href="#7-maturidade-das-transicoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>TRN-401</code> a <code>405</code>: localmente validadas;</li>
 <li><code>TRN-411</code> a <code>415</code>: localmente validadas;</li>
 <li><code>TRN-416</code>: parcial, pois o processo após <code>BND-002</code> não foi materializado;</li>
 <li><code>TRN-421</code> a <code>425</code>: localmente validadas;</li>
-<li><code>TRN-426</code>: parcial, pela mesma fronteira comercial.</li>
+<li><code>TRN-426</code>: parcial, pela mesma fronteira de contratação/dimensionamento assistido.</li>
 </ul>
 <p>Nenhuma transição de Planos é apresentada como implementação técnica ou cobrança real.</p>
 <h2 id="8-protecoes">8. Proteções<a class="headerlink" href="#8-protecoes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>plano pago não compra relevância, confiança, legitimidade, impacto ou evolução;</li>
+<li>plano pago não compra relevância, confiança, legitimidade, mérito, impacto ou evolução;</li>
 <li>oportunidade pública não é escondida para vender plano;</li>
 <li>benefícios herdados não aparecem como novidades;</li>
-<li>Enterprise/Scale não simulam checkout autônomo definitivo;</li>
+<li><code>BND-002</code> não simula checkout autônomo definitivo;</li>
+<li>Organização e Guivos Business não são tratados como sinônimos;</li>
 <li>falha de pagamento não presume ativação;</li>
 <li>data de início e recorrência aparecem antes da confirmação;</li>
 <li>downgrade/cancelamento exibem consequências e tratam capacidades excedentes antes da efetivação;</li>

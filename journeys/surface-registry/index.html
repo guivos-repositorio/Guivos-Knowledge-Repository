@@ -6715,10 +6715,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-da-uxa-101" class="md-nav__link">
+  <a href="#5-autoridade-de-planos-e-bnd-002" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito da UXA-101
+        5. Autoridade de planos e BND-002
       
     </span>
   </a>
@@ -6726,10 +6726,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado" class="md-nav__link">
+  <a href="#6-preservacoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado
+        6. Preservações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Estado
       
     </span>
   </a>
@@ -9042,10 +9053,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-efeito-da-uxa-101" class="md-nav__link">
+  <a href="#5-autoridade-de-planos-e-bnd-002" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Efeito da UXA-101
+        5. Autoridade de planos e BND-002
       
     </span>
   </a>
@@ -9053,10 +9064,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado" class="md-nav__link">
+  <a href="#6-preservacoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado
+        6. Preservações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Estado
       
     </span>
   </a>
@@ -9091,7 +9113,7 @@
 <h1 id="registro-granular-de-superficies-e-estados">Registro Granular de Superfícies e Estados<a class="headerlink" href="#registro-granular-de-superficies-e-estados" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
 <p>Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.</p>
-<p>A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de <code>PER-203</code> e o exame de <code>BND-001</code> pela UXA-101, preservando a revisão pré-saída como estado da mesma superfície.</p>
+<p>A versão 0.18.0 não adiciona IDs nem altera maturidades. Ela sincroniza a autoridade conceitual dos planos e corrige <code>BND-002</code> como fronteira genérica de contratação/dimensionamento assistido, preservando a contagem total de 53 IDs.</p>
 <h2 id="2-convencoes">2. Convenções<a class="headerlink" href="#2-convencoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>ausente</code>: responsabilidade conhecida sem materialização necessária;</li>
@@ -9368,7 +9390,7 @@
 <td>Pessoa autenticada</td>
 <td>móvel/protegido</td>
 <td><strong>validado</strong></td>
-<td>GEM-004-A1/A2; UXA-100-A3</td>
+<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3</td>
 <td>UXA-100/A1</td>
 <td>UXA-100-A2/A3</td>
 <td><a href="../surface-registry-person-details/">Pessoa</a></td>
@@ -9496,11 +9518,11 @@
 </tr>
 <tr>
 <td>GKR-SURF-COL-301</td>
-<td>Planos e comparação do Coletivo</td>
+<td>Planos e comparação do Coletivo — Livre · Mobiliza · Impacta · Rede</td>
 <td>responsável autorizado</td>
 <td>computador/protegido</td>
 <td><strong>validado</strong></td>
-<td>GEM-004-A1/A2; UXA-100-A3</td>
+<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3</td>
 <td>UXA-100/A1</td>
 <td>UXA-100-A2/A3</td>
 <td><a href="../surface-registry-collective-details/">Coletivo</a></td>
@@ -9617,11 +9639,11 @@
 </tr>
 <tr>
 <td>GKR-SURF-ORG-301</td>
-<td>Planos e comparação da Organização</td>
+<td>Planos e comparação da Organização — Conecta · Eleva · Transforma</td>
 <td>representante autorizado</td>
 <td>computador/protegido</td>
 <td><strong>validado</strong></td>
-<td>GEM-004-A1/A2; UXA-100-A3</td>
+<td>GEM-004-A1/A2; GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3</td>
 <td>UXA-100/A1</td>
 <td>UXA-100-A2/A3</td>
 <td><a href="../surface-registry-organization-details/">Organização</a></td>
@@ -9727,27 +9749,37 @@
 </tr>
 <tr>
 <td>GKR-SURF-BND-002</td>
-<td>fronteira comercial Enterprise/Scale</td>
-<td>Coletivo/Organização → processo comercial</td>
+<td>fronteira de contratação/dimensionamento assistido</td>
+<td>Coletivo/Organização → processo assistido quando necessário</td>
 <td>externo ao autoatendimento</td>
 <td>parcial</td>
-<td>UXA-100-A3</td>
+<td>GEM-004-PLAN-TAXONOMY-AUTHORITY-001; UXA-100-A3</td>
 <td>sem tela por definição</td>
-<td>parcial</td>
+<td>parcial; TRN-416/TRN-426 preservadas</td>
 <td><a href="../surface-registry-commercial-boundary-details/">Comercial</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="5-efeito-da-uxa-101">5. Efeito da UXA-101<a class="headerlink" href="#5-efeito-da-uxa-101" title="Permanent link">&para;</a></h2>
+<h2 id="5-autoridade-de-planos-e-bnd-002">5. Autoridade de planos e BND-002<a class="headerlink" href="#5-autoridade-de-planos-e-bnd-002" title="Permanent link">&para;</a></h2>
+<p>A leitura vigente é:</p>
+<div class="highlight"><pre><span></span><code>Pessoa: Free · Plus · Pro
+Coletivo: Livre · Mobiliza · Impacta · Rede
+Organização: Conecta · Eleva · Transforma
+Guivos Business: Start · Growth · Scale · Enterprise
+</code></pre></div>
+<p>Guivos Business é produto especializado e não recebe novos IDs neste registro.</p>
+<p><code>BND-002</code> não é plano, produto, checkout ou fronteira exclusiva de Enterprise/Scale. Ele identifica a necessidade de contratação/dimensionamento assistido. A correção não altera contagem nem maturidade.</p>
+<h2 id="6-preservacoes">6. Preservações<a class="headerlink" href="#6-preservacoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li>total de IDs permanece <strong>53</strong>;</li>
-<li><code>PER-203</code> é revalidada no recorte de saída externa;</li>
+<li><code>PER-203</code> permanece validada no recorte de saída externa;</li>
 <li>a revisão consciente não recebe ID adicional;</li>
-<li><code>BND-001</code> passa de não examinado para examinado;</li>
-<li>nenhuma tela é criada para <code>BND-001</code>;</li>
-<li>processo posterior à fronteira permanece fora da autoridade Guivos.</li>
+<li><code>BND-001</code> permanece examinado, sem tela própria;</li>
+<li><code>BND-002</code> permanece parcial, sem tela própria;</li>
+<li><code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>
+<li>nenhuma jornada ou Engenharia de Produto é promovida.</li>
 </ul>
-<h2 id="6-estado">6. Estado<a class="headerlink" href="#6-estado" title="Permanent link">&para;</a></h2>
+<h2 id="7-estado">7. Estado<a class="headerlink" href="#7-estado" title="Permanent link">&para;</a></h2>
 <p>O registro permanece <code>active</code> como inventário granular. O status não promove as jornadas completas nem representa implementação.</p>
 
 

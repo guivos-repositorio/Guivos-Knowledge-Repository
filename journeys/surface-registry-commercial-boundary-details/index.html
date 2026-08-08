@@ -8918,10 +8918,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-preservacoes" class="md-nav__link">
+  <a href="#5-regra-corrigida-de-bnd-002" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Preservações
+        5. Regra corrigida de BND-002
       
     </span>
   </a>
@@ -8929,10 +8929,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-estado" class="md-nav__link">
+  <a href="#6-preservacoes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Estado
+        6. Preservações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-estado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Estado
       
     </span>
   </a>
@@ -9079,18 +9090,18 @@
 </tr>
 <tr>
 <td>GKR-SURF-BND-002</td>
-<td>UXA-100/A3 — CTAs Enterprise/Scale nos boards e telas de Planos</td>
-<td>0.1.0</td>
-<td>COL-301 via TRN-416 ou ORG-301 via TRN-426</td>
-<td>solicitar início de processo comercial dimensionado</td>
-<td>processo de proposta/contrato fora do autoatendimento</td>
-<td>participante institucional, plano de interesse, contexto de capacidade e dados mínimos necessários ao contato comercial, conforme autorização futura</td>
-<td>ação afirmativa e autoridade institucional; nenhum checkout ou capacidade infinita presumidos</td>
+<td>UXA-100/A3 — handoff de contratação/dimensionamento assistido</td>
+<td>0.2.0</td>
+<td>COL-301 via TRN-416 ou ORG-301 via TRN-426 quando a contratação deixar de ser autonomamente configurável</td>
+<td>solicitar análise, proposta, dimensionamento, configuração assistida ou contrato conforme necessidade</td>
+<td>processo governado fora do autoatendimento</td>
+<td>participante institucional, contexto de capacidade e dados mínimos necessários ao processo, conforme finalidade e autorização</td>
+<td>ação afirmativa e autoridade institucional; nenhum checkout, plano específico ou capacidade infinita presumidos</td>
 <td>voltar a Planos antes de compromisso; recusar proposta futura conforme processo</td>
-<td>nova fronteira criada pela UXA-100-A3</td>
+<td>semântica Enterprise/Scale anterior substituída por autoridade genérica</td>
 <td><strong>parcial</strong></td>
-<td>processo comercial posterior, proposta, contrato e handoffs operacionais não materializados</td>
-<td>fronteira documental compartilhada de Coletivo Enterprise e Business Scale; não é tela de checkout</td>
+<td>processo posterior, proposta, contrato e handoffs operacionais não materializados</td>
+<td>fronteira documental compartilhada e genérica; não é plano, produto, checkout ou tela autônoma; não pertence semanticamente a Enterprise/Scale</td>
 </tr>
 </tbody>
 </table>
@@ -9099,15 +9110,27 @@
 <h2 id="4-efeito-da-uxa-101">4. Efeito da UXA-101<a class="headerlink" href="#4-efeito-da-uxa-101" title="Permanent link">&para;</a></h2>
 <p>A UXA-101 examina <code>BND-001</code> e valida <code>TRN-205</code> <strong>até a fronteira de autoridade da Guivos</strong>. O estado de revisão permanece em <code>PER-203</code>; nenhum SVG é criado para a fronteira e nenhum resultado externo é presumido.</p>
 <p>A Guivos deve interromper a saída quando o destino conhecido não puder ser revalidado e deve preservar retorno seguro ao Detalhe. Dados pessoais, inferências ou histórico de jornada não acompanham a transição sem finalidade e autorização adequadas.</p>
-<h2 id="5-preservacoes">5. Preservações<a class="headerlink" href="#5-preservacoes" title="Permanent link">&para;</a></h2>
+<h2 id="5-regra-corrigida-de-bnd-002">5. Regra corrigida de BND-002<a class="headerlink" href="#5-regra-corrigida-de-bnd-002" title="Permanent link">&para;</a></h2>
+<p><code>BND-002</code> é a <strong>fronteira de contratação/dimensionamento assistido</strong>.</p>
+<p>Pode ser utilizada quando um contexto exigir proposta, capacidade dimensionada, configuração assistida, análise específica ou contrato. O gatilho funcional é a necessidade de assistência, não o nome de um plano.</p>
+<p>Consequentemente:</p>
+<ul>
+<li><code>BND-002</code> não equivale a Enterprise;</li>
+<li><code>BND-002</code> não equivale a Scale;</li>
+<li><code>BND-002</code> não pertence exclusivamente a Coletivo ou Organização;</li>
+<li><code>BND-002</code> não cria qualquer superfície de Guivos Business;</li>
+<li><code>TRN-416</code> e <code>TRN-426</code> permanecem parciais e com os mesmos IDs.</li>
+</ul>
+<h2 id="6-preservacoes">6. Preservações<a class="headerlink" href="#6-preservacoes" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>COM-005</code> permanece validado pela UXA-099 sem promover <code>TRN-305</code>;</li>
 <li><code>BND-001</code> continua sendo fronteira externa, não tela Guivos;</li>
 <li><code>BND-002</code> não define proposta, preço final, contrato, SLA ou capacidade real;</li>
 <li><code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>
-<li>pagamento de plano e Opportunity Boost permanecem objetos econômicos separados.</li>
+<li>pagamento de plano e Opportunity Boost permanecem objetos econômicos separados;</li>
+<li>Organização e Guivos Business permanecem estruturas distintas.</li>
 </ul>
-<h2 id="6-estado">6. Estado<a class="headerlink" href="#6-estado" title="Permanent link">&para;</a></h2>
+<h2 id="7-estado">7. Estado<a class="headerlink" href="#7-estado" title="Permanent link">&para;</a></h2>
 <p>O detalhamento está <code>active</code> como parte integrante do registro. O status aprova o instrumento documental e não altera automaticamente maturidade de jornadas, processo comercial ou implementação.</p>
 
 

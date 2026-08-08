@@ -8940,10 +8940,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-conjunto-visual-da-uxa-100" class="md-nav__link">
+  <a href="#7-guivos-business" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Conjunto visual da UXA-100
+        7. Guivos Business
       
     </span>
   </a>
@@ -8951,10 +8951,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-regra-de-comparacao" class="md-nav__link">
+  <a href="#8-conjunto-visual-da-uxa-100" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8. Regra de comparação
+        8. Conjunto visual da UXA-100
       
     </span>
   </a>
@@ -8962,10 +8962,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-separacoes-obrigatorias" class="md-nav__link">
+  <a href="#9-regra-de-comparacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Separações obrigatórias
+        9. Regra de comparação
       
     </span>
   </a>
@@ -8973,10 +8973,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-estado-documental" class="md-nav__link">
+  <a href="#10-separacoes-obrigatorias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Estado documental
+        10. Separações obrigatórias
       
     </span>
   </a>
@@ -8984,10 +8984,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-resultado-da-auditoria-funcional" class="md-nav__link">
+  <a href="#11-estado-documental" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Resultado da auditoria funcional
+        11. Estado documental
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-resultado-da-auditoria-funcional-preservado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Resultado da auditoria funcional preservado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-precedencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Precedência
       
     </span>
   </a>
@@ -9024,6 +9046,7 @@
 <p>A UXA-100-A1 estende a UXA-100 para inserir <strong>Planos</strong> explicitamente nas jornadas da Pessoa, do Coletivo e da Organização e materializar uma tela dedicada de Planos para cada participante.</p>
 <p>A extensão não cria checkout real, cobrança implementada, entitlement operacional, oferta pública, IDs canônicos de superfície/transição ou promoção das jornadas.</p>
 <p>A UXA-100-A2 executou posteriormente a auditoria funcional dos nove SVGs candidatos e os aprovou como materializações candidatas após reformulação controlada de seis ativos.</p>
+<p>A versão 0.3.0 sincroniza a leitura do conjunto com <code>GEM-004-PLAN-TAXONOMY-AUTHORITY-001</code>, separando definitivamente <strong>Organização</strong> de <strong>Guivos Business</strong> sem criar nova superfície, transição ou SVG.</p>
 <h2 id="2-decisao-de-arquitetura-da-experiencia">2. Decisão de arquitetura da experiência<a class="headerlink" href="#2-decisao-de-arquitetura-da-experiencia" title="Permanent link">&para;</a></h2>
 <p>Planos passa a existir como <strong>etapa transversal recorrente</strong> da experiência, com dois pontos legítimos de entrada:</p>
 <div class="highlight"><pre><span></span><code>entrada voluntária
@@ -9044,32 +9067,72 @@ limite legítimo atingido
 → comparação geral
 → comparação incremental
 → delta direto plano atual → plano alvo
-→ manter / upgrade / downgrade / cancelar / solicitar proposta
+→ manter / upgrade / downgrade / cancelar / solicitar dimensionamento assistido
 → revisão da contratação quando aplicável
 → pagamento simulado ou processo comercial governado
 → sucesso/falha
 → retorno ao contexto anterior
 </code></pre></div>
+<p>Quando a contratação deixa de ser autonomamente configurável, o handoff existente para <code>BND-002</code> deve ser lido como <strong>fronteira de contratação/dimensionamento assistido</strong>, e não como fronteira semanticamente exclusiva de Enterprise ou Scale.</p>
 <h2 id="4-pessoa">4. Pessoa<a class="headerlink" href="#4-pessoa" title="Permanent link">&para;</a></h2>
 <p>Tela dedicada candidata:</p>
 <p><img alt="Pessoa — Planos" src="../../assets/wireframes/uxa-100-person-plans-screen-mobile.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-100-person-plans-screen-mobile.svg">Visualizar SVG</a></p>
-<p>A jornada inclui acesso voluntário por Conta/Configurações, plano atual e consumo da cota personalizada, comparação Free / Plus / Pro, ganho incremental e comparação direta, gestão de cobrança/downgrade/cancelamento e entrada contextual a partir de correspondência personalizada adicional após cota Free.</p>
+<p>A jornada inclui acesso voluntário por Conta/Configurações, plano atual e consumo da cota personalizada, comparação <strong>Free / Plus / Pro</strong>, ganho incremental e comparação direta, gestão de cobrança/downgrade/cancelamento e entrada contextual a partir de correspondência personalizada adicional após cota Free.</p>
 <p>Proteção obrigatória: atingir a cota do Free não esconde oportunidade pública, Explorar ou Mapa.</p>
+<p>A leitura conceitual é:</p>
+<ul>
+<li><strong>Free</strong> — começar sem barreira econômica;</li>
+<li><strong>Plus</strong> — aprofundar a jornada com mais contexto e continuidade;</li>
+<li><strong>Pro</strong> — operar a própria jornada com maior profundidade e capacidade analítica.</li>
+</ul>
 <h2 id="5-coletivo">5. Coletivo<a class="headerlink" href="#5-coletivo" title="Permanent link">&para;</a></h2>
 <p>Tela dedicada candidata:</p>
 <p><img alt="Coletivo — Planos" src="../../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg">Visualizar SVG</a></p>
-<p>A jornada inclui acesso pela administração/configurações, plano atual e consumo mensal, comparação Livre / Gestão / Impacto / Enterprise, delta incremental e direto, upgrade/downgrade/cancelamento, Enterprise por proposta comercial e entrada contextual quando cota/capacidade for atingida.</p>
+<p>A jornada inclui acesso pela administração/configurações, plano atual e consumo mensal, comparação <strong>Livre / Mobiliza / Impacta / Rede</strong>, delta incremental e direto, upgrade/downgrade/cancelamento e entrada contextual quando cota/capacidade for atingida.</p>
+<p>A leitura conceitual é:</p>
+<ul>
+<li><strong>Livre</strong> — organizar e agir livremente em escala inicial;</li>
+<li><strong>Mobiliza</strong> — transformar intenção em mobilização coordenada;</li>
+<li><strong>Impacta</strong> — transformar mobilização em impacto sustentado e evidenciado;</li>
+<li><strong>Rede</strong> — conectar e coordenar múltiplos núcleos como uma rede.</li>
+</ul>
 <p>Alternativas como manter rascunho, aguardar ciclo ou usar modalidade gratuita aplicável permanecem visíveis quando funcionalmente válidas.</p>
+<p>A nomenclatura anterior Gestão / Impacto / Enterprise fica superada para leitura comercial do Coletivo. A mudança não promove transições nem cria equivalência automática de capacidade fora da autoridade econômica aplicável.</p>
 <h2 id="6-organizacao">6. Organização<a class="headerlink" href="#6-organizacao" title="Permanent link">&para;</a></h2>
 <p>Tela dedicada candidata:</p>
 <p><img alt="Organização — Planos" src="../../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg" /></p>
 <p><a href="../../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg">Visualizar SVG</a></p>
-<p>A jornada inclui acesso pela administração, plano atual/capacidade/consumo, comparação Business Start / Growth / Scale, diferença incremental e direta, mudança/downgrade/cancelamento, Scale por proposta comercial e entrada contextual quando capacidade de novas oportunidades/programas for atingida.</p>
+<p>A jornada de Organização utiliza <strong>Conecta / Eleva / Transforma</strong>.</p>
+<p>A leitura conceitual é:</p>
+<ul>
+<li><strong>Conecta</strong> — conectar capacidade institucional a pessoas, coletivos e oportunidades;</li>
+<li><strong>Eleva</strong> — elevar a capacidade institucional de gerar valor e continuidade;</li>
+<li><strong>Transforma</strong> — transformar capacidade institucional em impacto sistêmico sustentado, condicionado a evidências reais.</li>
+</ul>
+<p>A tela e seus estados preservam os IDs <code>ORG-301</code> a <code>ORG-304</code>. A sincronização de nomenclatura não cria nova jornada nem altera a natureza de Organização como participante.</p>
 <p>Arquivar, agendar ou manter rascunho permanecem alternativas quando aplicáveis.</p>
-<h2 id="7-conjunto-visual-da-uxa-100">7. Conjunto visual da UXA-100<a class="headerlink" href="#7-conjunto-visual-da-uxa-100" title="Permanent link">&para;</a></h2>
-<p>A extensão consolida 9 SVGs candidatos:</p>
+<h2 id="7-guivos-business">7. Guivos Business<a class="headerlink" href="#7-guivos-business" title="Permanent link">&para;</a></h2>
+<p>Guivos Business não é um quarto tipo de participante desta materialização. Ele é um <strong>produto especializado da Guivos</strong> e possui taxonomia própria:</p>
+<ul>
+<li>Start;</li>
+<li>Growth;</li>
+<li>Scale;</li>
+<li>Enterprise.</li>
+</ul>
+<p>A separação obrigatória é:</p>
+<div class="highlight"><pre><span></span><code>Organização = participante do ecossistema
+Guivos Business = produto especializado
+</code></pre></div>
+<p>Não existe correspondência automática 1:1 entre Conecta / Eleva / Transforma e Start / Growth / Scale / Enterprise.</p>
+<p>Em particular:</p>
+<blockquote>
+<p><strong>Organização Transforma ≠ Guivos Business Enterprise.</strong></p>
+</blockquote>
+<p>A UXA-100-A1 não cria <code>BUS-*</code>, tela dedicada, transição ou SVG para Guivos Business. Sua futura materialização, se necessária, dependerá de frente própria governada.</p>
+<h2 id="8-conjunto-visual-da-uxa-100">8. Conjunto visual da UXA-100<a class="headerlink" href="#8-conjunto-visual-da-uxa-100" title="Permanent link">&para;</a></h2>
+<p>A extensão mantém os mesmos 9 SVGs:</p>
 <table>
 <thead>
 <tr>
@@ -9112,48 +9175,53 @@ limite legítimo atingido
 </tbody>
 </table>
 <p>Inspeção: <a href="../../journeys/screen-gallery-plans-billing/">Planos, Comparação e Cobrança — Galeria Candidata</a>.</p>
-<h2 id="8-regra-de-comparacao">8. Regra de comparação<a class="headerlink" href="#8-regra-de-comparacao" title="Permanent link">&para;</a></h2>
+<p>A autoridade conceitual desta atualização não altera IDs, quantidade ou associação dos nove ativos.</p>
+<h2 id="9-regra-de-comparacao">9. Regra de comparação<a class="headerlink" href="#9-regra-de-comparacao" title="Permanent link">&para;</a></h2>
 <p>Cada plano superior deverá ser apresentado como:</p>
 <div class="highlight"><pre><span></span><code>plano superior
 = capacidades preservadas do plano anterior
 + capacidades novas ou ampliadas deste degrau
 </code></pre></div>
 <p>Benefícios herdados não serão descritos como novidade. Quando plano atual e alvo forem conhecidos, a interface deve apresentar o delta direto. No downgrade, deve mostrar exatamente capacidades removidas ou reduzidas antes da confirmação.</p>
-<h2 id="9-separacoes-obrigatorias">9. Separações obrigatórias<a class="headerlink" href="#9-separacoes-obrigatorias" title="Permanent link">&para;</a></h2>
+<p>A progressão entre planos representa capacidade/serviço e <strong>não uma escada de valor, mérito ou evolução do participante</strong>.</p>
+<h2 id="10-separacoes-obrigatorias">10. Separações obrigatórias<a class="headerlink" href="#10-separacoes-obrigatorias" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Planos ≠ oportunidade específica;</li>
 <li>assinatura ≠ taxa transacional;</li>
 <li>plano pago ≠ relevância;</li>
 <li>plano pago ≠ confiança ou legitimidade;</li>
 <li>plano pago ≠ evolução humana;</li>
+<li>Organização ≠ Guivos Business;</li>
+<li>Organização Transforma ≠ Guivos Business Enterprise;</li>
 <li>tela materializada ≠ superfície canônica;</li>
 <li>fluxo de pagamento documentado ≠ gateway implementado;</li>
-<li>proposta Enterprise/Scale ≠ checkout automático.</li>
+<li><code>BND-002</code> ≠ checkout automático;</li>
+<li><code>BND-002</code> ≠ plano Enterprise ou Scale.</li>
 </ul>
-<h2 id="10-estado-documental">10. Estado documental<a class="headerlink" href="#10-estado-documental" title="Permanent link">&para;</a></h2>
-<p>Com esta extensão e sua auditoria funcional posterior:</p>
+<h2 id="11-estado-documental">11. Estado documental<a class="headerlink" href="#11-estado-documental" title="Permanent link">&para;</a></h2>
+<p>A sincronização conceitual preserva:</p>
 <ul>
-<li>Jornada da Pessoa: <code>draft</code> 0.12.0;</li>
-<li>Jornada do Coletivo: <code>draft</code> 0.13.0;</li>
-<li>Jornada da Organização: <code>draft</code> 0.5.0;</li>
-<li>Jornadas Integradas: <code>active</code> 0.28.1 como instrumento de leitura;</li>
-<li>Catálogo: <code>active</code> 0.23.0, preservando 109 SVGs canônicos e registrando 9 candidatos separados;</li>
-<li>Galeria principal: <code>active</code> 0.18.0, com referência ao apêndice candidato;</li>
-<li>Galeria candidata de Planos: <code>draft</code>, com 9/9 ativos funcionalmente aprovados como candidatos pela UXA-100-A2.</li>
+<li>Jornada da Pessoa: <code>draft</code>;</li>
+<li>Jornada do Coletivo: <code>draft</code>;</li>
+<li>Jornada da Organização: <code>draft</code>;</li>
+<li>9 SVGs da UXA-100;</li>
+<li>os mesmos IDs canônicos promovidos posteriormente pela UXA-100-A3;</li>
+<li>nenhuma promoção artificial de maturidade.</li>
 </ul>
-<p>A baseline canônica anterior permanece 109 SVGs, 40 IDs de superfície/responsabilidade/fronteira e 37 transições. Os 9 SVGs de Planos são candidatos e não alteram essas contagens.</p>
 <p>Nenhuma jornada é promovida por esta extensão ou por sua auditoria.</p>
-<h2 id="11-resultado-da-auditoria-funcional">11. Resultado da auditoria funcional<a class="headerlink" href="#11-resultado-da-auditoria-funcional" title="Permanent link">&para;</a></h2>
-<p>A UXA-100-A2 concluiu:</p>
+<h2 id="12-resultado-da-auditoria-funcional-preservado">12. Resultado da auditoria funcional preservado<a class="headerlink" href="#12-resultado-da-auditoria-funcional-preservado" title="Permanent link">&para;</a></h2>
+<p>A UXA-100-A2 permanece responsável pelo resultado já registrado:</p>
 <ul>
 <li>9 SVGs auditados;</li>
 <li>6 reformulados controladamente;</li>
 <li>3 aprovados sem reforma;</li>
-<li>9/9 aprovados funcionalmente no escopo candidato;</li>
-<li>nenhuma implementação ou operação presumida;</li>
-<li>nenhuma superfície/transição canônica criada.</li>
+<li>9/9 aprovados funcionalmente no escopo então auditado;</li>
+<li>nenhuma implementação ou operação presumida.</li>
 </ul>
-<p>A próxima decisão possível passa a ser <strong>promoção/fragmentação canônica</strong>, não nova auditoria dos mesmos ativos. Essa decisão continua separada e não é automática.</p>
+<p>A alteração de taxonomia não transforma essa auditoria em validação de uma futura experiência própria de Guivos Business.</p>
+<h2 id="13-precedencia">13. Precedência<a class="headerlink" href="#13-precedencia" title="Permanent link">&para;</a></h2>
+<p>Em nomenclatura, função, significado e leitura conceitual dos planos, <code>GEM-004-PLAN-TAXONOMY-AUTHORITY-001</code> prevalece sobre referências históricas conflitantes desta UXA.</p>
+<p>Esta sincronização não inicia UXA-102/V5 nem Engenharia de Produto.</p>
 
 
 

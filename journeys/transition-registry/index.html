@@ -6850,10 +6850,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-efeito-da-uxa-101" class="md-nav__link">
+  <a href="#9-bnd-002" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Efeito da UXA-101
+        9. BND-002
       
     </span>
   </a>
@@ -6861,10 +6861,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-proximo-gate" class="md-nav__link">
+  <a href="#10-preservacoes-de-maturidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Próximo gate
+        10. Preservações de maturidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Próximo gate
       
     </span>
   </a>
@@ -9242,10 +9253,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9-efeito-da-uxa-101" class="md-nav__link">
+  <a href="#9-bnd-002" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9. Efeito da UXA-101
+        9. BND-002
       
     </span>
   </a>
@@ -9253,10 +9264,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-proximo-gate" class="md-nav__link">
+  <a href="#10-preservacoes-de-maturidade" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10. Próximo gate
+        10. Preservações de maturidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-proximo-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Próximo gate
       
     </span>
   </a>
@@ -9290,7 +9312,7 @@
 
 <h1 id="registro-granular-de-transicoes">Registro Granular de Transições<a class="headerlink" href="#registro-granular-de-transicoes" title="Permanent link">&para;</a></h1>
 <h2 id="1-finalidade">1. Finalidade<a class="headerlink" href="#1-finalidade" title="Permanent link">&para;</a></h2>
-<p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.18.0 preserva as 54 transições e promove apenas a maturidade de <code>GKR-TRN-205</code>, validada pela UXA-101 até a fronteira de autoridade da Guivos.</p>
+<p>Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.19.0 preserva as <strong>54 transições</strong> e suas maturidades, sincronizando apenas a semântica de <code>TRN-416</code>, <code>TRN-426</code> e <code>BND-002</code> com a autoridade conceitual vigente de planos.</p>
 <h2 id="2-convencoes-de-estado">2. Convenções de estado<a class="headerlink" href="#2-convencoes-de-estado" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -9742,6 +9764,12 @@
 </tbody>
 </table>
 <h2 id="8-planos-cobranca-e-ciclo-de-vida">8. Planos, cobrança e ciclo de vida<a class="headerlink" href="#8-planos-cobranca-e-ciclo-de-vida" title="Permanent link">&para;</a></h2>
+<p>A taxonomia vigente para leitura das superfícies é:</p>
+<div class="highlight"><pre><span></span><code>Pessoa: Free · Plus · Pro
+Coletivo: Livre · Mobiliza · Impacta · Rede
+Organização: Conecta · Eleva · Transforma
+Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem transições próprias nesta frente)
+</code></pre></div>
 <h3 id="81-pessoa">8.1 Pessoa<a class="headerlink" href="#81-pessoa" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -9843,10 +9871,11 @@
 <td>COL-301</td>
 <td>BND-002</td>
 <td><strong>parcial</strong></td>
-<td>processo Enterprise posterior</td>
+<td>processo posterior de contratação/dimensionamento assistido não materializado</td>
 </tr>
 </tbody>
 </table>
+<p><code>TRN-416</code> não significa “ir para Enterprise”. Ele significa sair do autoatendimento quando a contratação concreta exigir assistência. A maturidade permanece parcial.</p>
 <h3 id="83-organizacao">8.3 Organização<a class="headerlink" href="#83-organizacao" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -9899,21 +9928,33 @@
 <td>ORG-301</td>
 <td>BND-002</td>
 <td><strong>parcial</strong></td>
-<td>processo Scale posterior</td>
+<td>processo posterior de contratação/dimensionamento assistido não materializado</td>
 </tr>
 </tbody>
 </table>
-<h2 id="9-efeito-da-uxa-101">9. Efeito da UXA-101<a class="headerlink" href="#9-efeito-da-uxa-101" title="Permanent link">&para;</a></h2>
+<p><code>TRN-426</code> não significa “ir para Business Scale”. A Organização permanece participante e Guivos Business permanece produto separado. A maturidade da transição continua parcial.</p>
+<h2 id="9-bnd-002">9. BND-002<a class="headerlink" href="#9-bnd-002" title="Permanent link">&para;</a></h2>
+<p><code>BND-002</code> é a fronteira genérica de <strong>contratação/dimensionamento assistido</strong>.</p>
+<p>A fronteira poderá ser alcançada quando a necessidade real exigir proposta, dimensionamento, análise específica, contrato ou configuração assistida. O nome do plano, isoladamente, não é autoridade suficiente para determinar o handoff.</p>
+<p>A correção semântica:</p>
+<ul>
+<li>não cria transição;</li>
+<li>não remove transição;</li>
+<li>não altera contagem;</li>
+<li>não promove <code>TRN-416</code> ou <code>TRN-426</code>;</li>
+<li>não cria fluxo de Guivos Business.</li>
+</ul>
+<h2 id="10-preservacoes-de-maturidade">10. Preservações de maturidade<a class="headerlink" href="#10-preservacoes-de-maturidade" title="Permanent link">&para;</a></h2>
 <ul>
 <li>transições totais permanecem <strong>54</strong>;</li>
-<li><code>TRN-205</code> deixa de ser parcial e fica <strong>integralmente validada até <code>BND-001</code></strong>;</li>
+<li><code>TRN-205</code> permanece <strong>integralmente validada até <code>BND-001</code></strong>;</li>
 <li>nenhum comportamento posterior a <code>BND-001</code> é atribuído à Guivos;</li>
 <li><code>TRN-304</code>, <code>TRN-305</code>, <code>TRN-306</code>, <code>TRN-416</code> e <code>TRN-426</code> permanecem parciais;</li>
 <li>nenhuma nova transição é criada;</li>
 <li>validação documental continua distinta de implementação técnica.</li>
 </ul>
-<h2 id="10-proximo-gate">10. Próximo gate<a class="headerlink" href="#10-proximo-gate" title="Permanent link">&para;</a></h2>
-<p>V4 está encerrada no limite controlável pela Guivos. V5, integrações patrocinadas, cobrança real e processos posteriores a <code>BND-002</code> permanecem frentes separadas e não são iniciados automaticamente.</p>
+<h2 id="11-proximo-gate">11. Próximo gate<a class="headerlink" href="#11-proximo-gate" title="Permanent link">&para;</a></h2>
+<p>V4 permanece encerrada no limite controlável pela Guivos. V5/UXA-102, integrações patrocinadas, cobrança real e processos posteriores a <code>BND-002</code> permanecem frentes separadas e não são iniciados automaticamente.</p>
 
 
 
