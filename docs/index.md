@@ -26,7 +26,7 @@ A declaração transversal oficial está no [Registro do Estado Atual](project/c
 | Resultados Empresariais canônicos | 0 |
 | Próxima UXA | **UXA-102/V5 não iniciada** |
 
-A sincronização mais recente não criou nova UXA nem alterou as contagens funcionais. Ela integrou autoridades de nomenclatura, arquitetura de grafo, Produtos Especializados, marca/naming/ativos digitais, evidência de validação de mercado e o guardrail de propósito antes de incentivos.
+A sincronização temática não criou nova UXA nem alterou as contagens funcionais. Ela integra autoridades de nomenclatura, arquitetura de grafo, Produtos Especializados, marca/naming/ativos digitais, evidência de validação de mercado, propósito antes de incentivos e arquitetura institucional/jurídica.
 
 ## Atualização consolidada de 2026-08-08
 
@@ -39,19 +39,32 @@ A atualização incorporou:
 - **P8 — Produtos Especializados:** Journey, Mall, Travel, Business, Media, Intelligence e Ads rebaselineados contra as jornadas;
 - **P3 — marca/naming/ativos:** governança e modelo de evidência, sem presumir registros ou domínio controlado;
 - **P4 — validação de mercado:** gates E0–E7 para separar método, aplicação, base, métricas e decisão;
-- **GEM-005-A1:** propósito e evolução prevalecem sobre pontos, créditos e acumulação artificial.
+- **GEM-005-A1:** propósito e evolução prevalecem sobre pontos, créditos e acumulação artificial;
+- **P5 — arquitetura institucional/jurídica:** conceito Fundação Guivos, separação entre entidades e gates F0–F9, sem presumir constituição ou operação.
 
-A [Baseline Governada de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md) mantém P5, P6, P7 e P9 explicitamente abertos quando ainda dependem de consolidação ou evidência.
+A [Baseline Governada de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md) preserva o snapshot histórico que classificava P5, P6, P7 e P9 como abertos naquele momento. O estado corrente deve ser lido em conjunto com integrações posteriores e com `GKR-STATE-001`.
 
 ## P5 — Arquitetura institucional, Fundação Guivos e jurídico
 
-O pacote P5 em estruturação está organizado em [Arquitetura Institucional, Fundação Guivos e Jurídico](governance-framework/institutional-and-legal-architecture-index.md).
+O P5 integrado está organizado em [Arquitetura Institucional, Fundação Guivos e Jurídico](governance-framework/institutional-and-legal-architecture-index.md).
 
 A regra é preservar estados distintos:
 
 `conceito ≠ forma jurídica ≠ ato constitutivo ≠ registro ≠ infraestrutura operacional ≠ operação real`.
 
 `Fundação Guivos` é tratada neste estágio como conceito institucional social e nome de trabalho. A forma jurídica permanece `unresolved`; registro, CNPJ, governança formal e operação própria não são presumidos.
+
+## P6 — Verdade operacional, privacidade e superfícies legais
+
+O pacote P6 proposto está organizado em [Verdade Operacional, Privacidade, Consentimentos e Superfícies Legais](governance-framework/operational-privacy-and-legal-truth-index.md).
+
+O P6 estabelece três separações essenciais:
+
+- **tratamento de dados:** princípio/desenho ≠ atividade mapeada ≠ base jurídica revisada ≠ implementação ≠ operação evidenciada;
+- **manifestação do usuário:** aceite contratual ≠ consentimento LGPD ≠ preferência voluntária;
+- **superfícies legais:** draft ≠ revisão jurídica ≠ aprovação ≠ publicação ≠ registro operacional.
+
+No estado auditado, o GKR não promove Termos, Política/Aviso de Privacidade, consentimentos, inventário de cookies/SDKs, Encarregado, fluxo de direitos ou processo LGPD de incidentes a estado operacional sem evidência específica.
 
 ## Go-to-Market, Growth & Capital
 
@@ -69,6 +82,7 @@ Metas e projeções permanecem classificadas como `candidate_target` ou `scenari
 - [Matriz de Integração entre Produtos Especializados e Jornadas](product-architecture/specialized-products-journey-integration-matrix.md)
 - [Marca, Naming e Ativos Digitais](governance-framework/brand-and-digital-assets-index.md)
 - [Arquitetura Institucional e Jurídica](governance-framework/institutional-and-legal-architecture-index.md)
+- [Verdade Operacional, Privacidade e Superfícies Legais](governance-framework/operational-privacy-and-legal-truth-index.md)
 - [VAL-009 — Estado de Execução e Gates de Evidência](research/market-validation/VAL-009-status-de-execucao-e-gates-de-evidencia.md)
 - [VAL-010 — Contrato de Intake e Registro de Rodadas](research/market-validation/VAL-010-contrato-de-intake-e-registro-de-rodadas.md)
 - [GEM-005-A1 — Propósito Antes do Incentivo](economic-model/gem-005-a1-purpose-before-incentive-guardrail.md)
@@ -79,6 +93,7 @@ Metas e projeções permanecem classificadas como `candidate_target` ou `scenari
 - [Sincronização das Validações Recentes](project/validated-updates-synchronization-2026-08-08.md)
 - [Baseline de Ressincronização](project/repository-resynchronization-baseline-2026-08-08.md)
 - [Arquitetura Institucional, Fundação Guivos e Jurídico](governance-framework/institutional-and-legal-architecture-index.md)
+- [Verdade Operacional, Privacidade e Superfícies Legais](governance-framework/operational-privacy-and-legal-truth-index.md)
 - [Go-to-Market, Growth & Capital](go-to-market/index.md)
 - [Arquitetura de Produtos](product-architecture/index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
@@ -95,7 +110,7 @@ Metas e projeções permanecem classificadas como `candidate_target` ou `scenari
 
 ## Limites preservados
 
-Esta superfície não autoriza **UXA-102/V5**, Engenharia de Produto, cobrança real, gateway, programa operacional de pontos/créditos, implantação de Neo4j, registro marcário presumido, resultado de pesquisa não evidenciado, Fundação Guivos juridicamente constituída, internacionalização operacional ou qualquer processo de terceiro após `BND-001`.
+Esta superfície não autoriza **UXA-102/V5**, Engenharia de Produto, cobrança real, gateway, programa operacional de pontos/créditos, implantação de Neo4j, dados pessoais em produção no grafo, registro marcário presumido, resultado de pesquisa não evidenciado, Fundação Guivos juridicamente constituída, Política de Privacidade/Termos presumidos, consentimento LGPD presumido, rastreamento/cookies opcionais, internacionalização operacional ou qualquer processo de terceiro após `BND-001`.
 
 `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais. Pessoa, Coletivo e Organização permanecem jornadas `draft`.
 
