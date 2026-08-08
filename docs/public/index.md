@@ -2,75 +2,73 @@
 id: GPD-000
 title: Documentação Pública da Guivos
 status: active
-version: 3.2.0
+version: 4.0.0
 owner: Guivos
-last_updated: 2026-07-11
+last_updated: 2026-08-08
+related:
+  - GOG-001
+  - GKR-STATE-001
+  - GKR-P9-GLOBAL-CONSOLIDATION-001
+normative: false
 ---
 
 # Documentação Pública da Guivos
 
-Este domínio reúne documentos públicos derivados das decisões consolidadas no Guivos Knowledge Repository.
+Este domínio contém a tradução institucional pública das autoridades vigentes no Guivos Knowledge Repository.
 
-## Documento principal
+## Public Canon vigente
 
-- [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md)
+- [GOG-001 — Guia Oficial da Guivos](guia-oficial-da-guivos.md) — **versão 5.0.0**.
 
-## Versão pública vigente
+`GOG-001` é a única superfície deste domínio classificada como `public-canon`.
 
-O `GOG-001 — Guia Oficial da Guivos` encontra-se na versão `4.2.0`.
+## O que a edição 5.0.0 consolida
 
-Essa versão:
+- Pessoa, Coletivo e Organização como três participantes estruturais;
+- sete Produtos Especializados: Journey, Mall, Travel, Business, Media, Intelligence e Ads;
+- separação explícita `Organização ≠ Guivos Business`;
+- taxonomia atual de planos;
+- `Guivos Mall` como nome canônico;
+- propósito antes de incentivos/pontos/créditos;
+- Neo4j como tecnologia de referência, não implantação comprovada;
+- Fundação Guivos como conceito institucional, não entidade jurídica presumida;
+- privacidade por arquitetura sem presumir controles operacionais;
+- Portugal/Lisboa como direção internacional candidata, não mercado ativo;
+- fronteira entre maturidade documental e implementação real.
 
-- alinha propósito, missão e visão à Foundation;
-- esclarece o significado de `Public Canon`;
-- apresenta a primeira compreensão do contexto;
-- reforça confirmação, correção e controle do participante;
-- revisa o Ciclo Contínuo de Evolução;
-- apresenta a estrutura pública com Journey, Intelligence, soluções especializadas e Platform Layer;
-- preserva linguagem pública simples sem antecipar arquiteturas técnicas como concluídas.
+## Regra editorial
 
-## Organização pública da Guivos
+```text
+visão ≠ disponibilidade
+arquitetura ≠ implementação
+candidato ≠ aprovado/operacional
+plano ≠ fato realizado
+```
 
-### Experiência
+O Public Canon não pode elevar um objeto acima do estado evidenciado no GKR.
 
-- Guivos Journey.
+## Estrutura pública da Guivos
 
-### Inteligência
+### Participantes
 
-- Guivos Intelligence.
+- Pessoa;
+- Coletivo;
+- Organização.
 
-### Soluções especializadas
+### Produtos Especializados
 
-- Guivos Business;
+- Guivos Journey;
 - Guivos Mall;
 - Guivos Travel;
+- Guivos Business;
 - Guivos Media;
+- Guivos Intelligence;
 - Guivos Ads.
 
-### Base comum
+Produtos não são participantes nem pessoas jurídicas por definição.
 
-- Platform Layer, como base técnica e operacional não apresentada como produto público independente.
+## Estado de maturidade
 
-## Mapeamento editorial
+O marco funcional documental permanece **M7.88 / UXA-101**. UXA-102/V5 não foi iniciada e Engenharia de Produto permanece pausada antes de W0-01.
 
-| Linguagem pública | Conceito interno correspondente |
-|---|---|
-| compreensão atualizada | Contexto Vivo |
-| oportunidade relevante | Oportunidade Ativa |
-| apresentar algo no momento certo | Intervenção Contextual |
-| explicar o que a Guivos compreendeu | Reflexão e confirmação da interpretação |
-
-A linguagem pública não deve expor LPM, CIE, GPMA ou outros candidatos como componentes concluídos.
-
-## Princípios públicos
-
-- contexto antes da recomendação;
-- autonomia antes da automação;
-- relevância antes de volume;
-- explicação e correção pelo participante;
-- diferenciação entre visão institucional e disponibilidade comercial;
-- monetização subordinada ao propósito.
-
-## Regra de atualização
-
-Os documentos públicos devem acompanhar as decisões vigentes do GKR sem antecipar como definitivas funcionalidades, tecnologias, preços, parceiros, operações ou políticas ainda não aprovadas.
+A publicação do Guia 5.0.0 não afirma que toda arquitetura documentada esteja implementada ou em produção.
