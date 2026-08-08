@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-COLLECTIVE-001
 title: Jornada Integrada do Coletivo
 status: draft
-version: 0.15.0
+version: 0.16.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-014
   - UXA-016
@@ -52,12 +52,12 @@ presença pública
 | Etapa | Maturidade | Evidência | Continuidade |
 |---|---|---|---|
 | presença pública e descoberta | validado localmente | UXA-016/018; UXA-060/063 | parcial entre famílias |
-| solicitação | validado | UXA-064/065/066/067 | handoffs bilaterais posteriores validados nos gates |
+| solicitação | validado | UXA-064/065/066/067 | handoffs posteriores validados nos gates |
 | visão/gestão do responsável | validado | UXA-086/087/088/089 | TRN-112/105/106/107/109 integrais |
 | aprovação → Meus Coletivos | validado | UXA-090/091/092 | TRN-108 integral |
 | Meus Coletivos → Central | validado | UXA-092/093/094/096 | TRN-110 integral |
 | Central corrente | **validado** | UXA-094/095/096 | TRN-110 e TRN-111 integrais |
-| Início do Participante | **validado** | UXA-095/096 | **TRN-111 integral** |
+| Início do Participante | **validado** | UXA-095/096 | TRN-111 integral |
 
 ## 2. Operação do responsável
 
@@ -72,11 +72,22 @@ representação e autoridade
 → relações institucionais
 ```
 
-`COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas e não são substituídas pelas superfícies da Pessoa.
+`COL-002` e `COL-003` estão validadas. `COL-004` a `COL-008` permanecem programadas/contratadas ou parcialmente cobertas.
 
 ## 3. Planos como etapa transversal canônica
 
-A UXA-100-A3 registra **Planos** canonicamente na jornada operacional do Coletivo. A etapa pode ser acessada voluntariamente e também quando uma capacidade comercial legítima for atingida.
+A UXA-100 registra Planos na jornada do Coletivo com a taxonomia vigente:
+
+> **Livre · Mobiliza · Impacta · Rede**
+
+Função conceitual:
+
+- Livre: presença e mobilização essencial sem barreira econômica;
+- Mobiliza: transformar intenção em mobilização coordenada;
+- Impacta: transformar mobilização em impacto sustentado e evidenciado;
+- Rede: coordenar complexidade de rede, múltiplos núcleos/unidades/territórios.
+
+Esses nomes expressam capacidade de serviço, não legitimidade, mérito ou nível de evolução do Coletivo.
 
 ```text
 COL-301 — Planos e comparação
@@ -86,22 +97,21 @@ COL-301 — Planos e comparação
 ├── TRN-413 → COL-303 — downgrade/cancelamento
 │   └── TRN-414 → COL-304
 │       └── TRN-415 → COL-301
-└── TRN-416 → BND-002 — proposta Enterprise
+└── quando contratação não for autonomamente configurável
+    → TRN-416 → BND-002 — contratação/dimensionamento assistido
 ```
 
-`TRN-411` a `TRN-415` estão localmente validadas no pacote UXA-100. `TRN-416` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado.
+`TRN-411` a `TRN-415` permanecem localmente validadas. `TRN-416` permanece parcial porque o processo posterior a `BND-002` não foi materializado.
 
-Entrada contextual permanece válida:
+Entrada contextual:
 
 ```text
 criar atividade/oportunidade
-→ limite do plano atingido ou publicação paga não incluída
+→ limite do plano atingido ou capacidade não incluída
 ├── manter rascunho / aguardar ciclo / alternativa gratuita aplicável
 └── comparar planos
     → COL-301
 ```
-
-As superfícies de criação/publicação que originam todos esses casos não são inventadas como novas transições nesta frente quando ainda não possuem identidade adequada no registro.
 
 Referência canônica:
 
@@ -111,20 +121,19 @@ Referência canônica:
 
 Regras:
 
-- `COL-301` mostra plano atual e consumo do ciclo;
-- compara `Livre → Gestão → Impacto → Enterprise`;
-- comparação incremental pertence a `COL-301` e não cria tela própria;
-- o delta direto plano atual → alvo permanece obrigatório;
-- `COL-302` exibe preço mensal/anual, recorrência, início, pagador/beneficiário e método em simulação antes da confirmação;
-- assinatura permanece separada de comissão, taxa do meio de pagamento e tributo;
-- ações operacionais gratuitas válidas permanecem disponíveis;
-- `COL-303` exige tratamento explícito de publicações gratuitas/pagas, administradores, núcleos/unidades, compromissos e exportação antes do downgrade;
-- nenhum registro ou participante é apagado silenciosamente para efetivar redução de plano;
-- `COL-304` diferencia sucesso de falha e preserva o estado anterior quando não houver confirmação;
-- Enterprise usa `BND-002`, não checkout autônomo;
-- plano pago não aumenta relevância orgânica, legitimidade ou impacto.
-
-A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu `COL-301` a `COL-304`.
+- `COL-301` mostra plano atual e consumo;
+- compara `Livre → Mobiliza → Impacta → Rede`;
+- preços/capacidades existentes são preservados conforme GEM-004-A1;
+- comparação incremental pertence a `COL-301`;
+- delta direto atual→alvo permanece obrigatório;
+- `COL-302` exibe preço, recorrência, início, pagador/beneficiário e condições aplicáveis;
+- assinatura é separada de comissão, taxa e tributo;
+- alternativas operacionais válidas permanecem disponíveis;
+- `COL-303` trata publicações, administradores, núcleos/unidades, compromissos e exportação antes do downgrade;
+- nenhum registro/participante é apagado silenciosamente;
+- `COL-304` diferencia sucesso de falha;
+- `BND-002` é genérico e não sinônimo de Rede;
+- plano pago não aumenta relevância, legitimidade ou impacto.
 
 ## 4. Handoffs críticos
 
@@ -134,45 +143,27 @@ A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu `CO
 | PER-105 ↔ COL-003 (`TRN-105/106/107/109`) | integralmente validadas |
 | COL-003 → PER-106 (`TRN-108`) | integralmente validada |
 | PER-106 → PER-107 (`TRN-110`) | integralmente validada |
-| PER-107 → PER-108 (`TRN-111`) | **integralmente validada por UXA-096** |
+| PER-107 → PER-108 (`TRN-111`) | integralmente validada por UXA-096 |
 | Coletivo ↔ Organização | contratada; materialização bilateral pendente |
-| COL-301 → BND-002 (`TRN-416`) | **parcial; processo Enterprise posterior não materializado** |
+| COL-301 → BND-002 (`TRN-416`) | **parcial; processo assistido posterior não materializado** |
 
-## 5. Efeito da UXA-096
-
-- reforma os SVGs correntes de `PER-107` e `PER-108` sem criar ativos;
-- revalida `PER-107` e valida `PER-108`;
-- valida `TRN-111` ponta a ponta com vínculo atual, retorno neutro e estado canônico;
-- preserva os sete handoffs anteriores e adiciona `TRN-111` ao conjunto integral, totalizando oito;
-- não materializa operação interna do responsável nem canais P1.
-
-## 6. Princípios preservados
+## 5. Princípios preservados
 
 - responsável atua somente com autoridade concedida;
 - apoio institucional não transfere governança;
-- aprovação não cria função, moderação, autoridade ou presença;
-- pertencimento, disponibilidade, papel aceito e autoridade permanecem separados;
+- aprovação não cria função/moderação/autoridade;
 - evento histórico não concede acesso interno;
-- Central é triagem e Início é síntese; nenhum dos dois substitui canais especializados;
-- atividade continua voluntária quando não houver compromisso previamente aceito;
-- consulta não é votação universal nem obrigação de resposta;
-- plano pago amplia capacidade, não legitimidade, relevância ou impacto;
-- atingir cota não reduz visibilidade das publicações existentes;
+- Central é triagem e Início é síntese;
+- plano pago amplia capacidade, não legitimidade/relevância/impacto;
+- atingir cota não reduz visibilidade existente;
 - pausa, recusa e saída não reduzem reputação;
-- estado canônico mais recente prevalece sobre estado visual obsoleto;
-- validação integral documental não equivale a implementação.
+- estado canônico mais recente prevalece;
+- validação documental não equivale a implementação.
 
-## 7. Estado da vista
+## 6. Estado da vista
 
-Esta vista permanece `draft` porque:
+A vista permanece `draft`: operação interna segue incompleta, relação Organização–Coletivo não está materializada, transições de Planos são locais e `TRN-416` continua parcial. Cobrança real, gateway e processo posterior a BND-002 não foram implementados/validados ponta a ponta.
 
-- participantes, comunicação e demais áreas do responsável continuam incompletos;
-- estados P0B de superfícies da Pessoa permanecem separados;
-- a relação Organização–Coletivo permanece contratada e não materializada;
-- as transições de Planos são locais e `TRN-416` permanece parcial;
-- cobrança real, gateway e processo Enterprise não foram implementados/validados ponta a ponta;
-- outras continuidades ainda não foram examinadas como conjunto.
+## 7. Estado da frente de Planos
 
-## 8. Estado da frente de Planos
-
-A fragmentação e promoção canônica do Coletivo foi concluída pela UXA-100-A3 em `COL-301` a `COL-304`, `TRN-411` a `TRN-416` e `BND-002`. Nenhuma próxima UXA é iniciada automaticamente.
+A fragmentação permanece em `COL-301` a `COL-304`, `TRN-411` a `TRN-416` e `BND-002`, sem novos IDs, nova UXA ou promoção de maturidade.
