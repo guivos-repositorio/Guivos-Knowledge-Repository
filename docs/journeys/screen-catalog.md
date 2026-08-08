@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-CATALOG-001
 title: Catálogo Integrado de Telas
 status: active
-version: 0.25.0
+version: 0.26.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -28,6 +28,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-001
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -49,7 +50,7 @@ SVG existente
 ≠ implementação técnica
 ```
 
-A UXA-100-A3 promove os nove SVGs de Planos após a validação funcional da UXA-100-A2. A promoção segue fragmentação mínima: comparação e estados transitórios não recebem tela própria apenas por existirem no board.
+A UXA-101 reformula o SVG de Detalhe de Oportunidade para incluir a revisão consciente pré-saída no próprio `PER-203`. Não cria novo ID nem novo SVG; `BND-001` continua sem tela.
 
 ## 2. Inventário agregado canônico por família
 
@@ -60,7 +61,7 @@ A UXA-100-A3 promove os nove SVGs de Planos após a validação funcional da UXA
 | Pessoa | expressão guiada | 8 | 8 validados | parcial | integração com inventário |
 | Pessoa | compreensão inicial | 5 | 5 validados | **TRN-007 integralmente validada** | handoffs anteriores ainda parciais |
 | Pessoa | Tela Hoje | 2 | 2 validados | primeira entrada validada; recorrência separada | estados alternativos de Hoje |
-| Pessoa | oportunidades orgânicas | 7 | 7 validados | publicação/descoberta e Mapa/Lista/Detalhe integrados | efeito externo separado |
+| Pessoa | oportunidades orgânicas | 7 | **7 validados; Detalhe revalidado pela UXA-101** | publicação/descoberta, Mapa/Lista/Detalhe e saída até BND-001 integrados | processo externo posterior separado |
 | Pessoa | Planos, comparação e cobrança | **3** | **3 validados** | TRN-401 a 405 localmente validadas | gateway/proration e entradas externas específicas |
 | Pessoa em Coletivos | descoberta e busca | 5 | 5 validados | parcial | continuidade entre famílias |
 | Pessoa em Coletivos | Perfil Público | 4 | 4 validados | parcial | handoff para solicitação |
@@ -76,44 +77,20 @@ A UXA-100-A3 promove os nove SVGs de Planos após a validação funcional da UXA
 | Organização | visão geral e cadastro | 2 | 2 validados | publicação–descoberta integralmente validada em TRN-203 | matriz institucional completa |
 | Organização | Planos, comparação e cobrança | **3** | **3 validados** | TRN-421 a 425 locais; TRN-426 parcial | processo Scale e cobrança real |
 | camada comercial | Opportunity Boost | 46 | **46 validados** | parcial | TRN-304/305/306 e integrações específicas |
-| fronteira documental | destinos externos/comerciais | 0 | não aplicável | não examinada/parcial | BND-001 efeito externo; BND-002 processo Enterprise/Scale |
+| fronteira documental | destinos externos/comerciais | 0 | não aplicável | BND-001 examinada; BND-002 parcial | processo externo posterior; Enterprise/Scale |
 | **Total canônico** |  | **118** | **118 validados; 0 pendentes** |  |  |
 
-## 3. Frente UXA-100 promovida
+## 3. Instrumentos granulares vigentes
 
-A UXA-100-A3 promove os nove ativos da frente:
-
-| Participante | Tela dedicada de Planos | Board de fluxo | Comparação incremental | Total canônico | Perfil |
-|---|---:|---:|---:|---:|---|
-| Pessoa | 1 | 1 | 1 | 3 | R29 |
-| Coletivo | 1 | 1 | 1 | 3 | R30 |
-| Organização | 1 | 1 | 1 | 3 | R31 |
-| **Total UXA-100** | **3** | **3** | **3** | **9** | **3 perfis** |
-
-Referência de inspeção: [Planos, Comparação e Cobrança — Galeria Canônica](screen-gallery-plans-billing.md).
-
-Fragmentação promovida:
-
-- Pessoa: `PER-301` a `PER-304`;
-- Coletivo: `COL-301` a `COL-304`;
-- Organização: `ORG-301` a `ORG-304`;
-- fronteira comercial compartilhada: `BND-002`.
-
-Comparação incremental pertence a `*-301`; processamento não recebe superfície própria; resultado confirmado e falha pertencem a `*-304` como estados diferentes da mesma responsabilidade.
-
-## 4. Instrumentos granulares vigentes
-
-| Registro | Quantidade | Estado vigente |
+| Registro | Quantidade | Estado vigente após UXA-101 |
 |---|---:|---|
 | superfícies/estados/responsabilidades/fronteiras | **53** | `active` 0.16.0 |
-| transições documentais | **54** | `active` 0.17.0 |
-| detalhamento da Pessoa | 23 entradas | `active` 0.10.0 |
-| detalhamento do Coletivo | 12 entradas | `active` 0.7.0 |
-| detalhamento da Organização | 11 entradas | `active` 0.3.0 |
-| catálogo canônico | **118 SVGs** | `active` 0.25.0 |
-| matriz de rastreabilidade | **118 SVGs / 31 perfis** | `active` 0.16.0 |
+| transições documentais | **54** | `active` 0.18.0 |
+| catálogo canônico | **118 SVGs** | `active` 0.26.0 |
+| matriz de rastreabilidade | **118 SVGs / 31 perfis** | `active` 0.17.0 |
+| galeria visual | **118 SVGs** | `active` 0.21.0 |
 
-## 5. Cobertura visual canônica
+## 4. Cobertura visual canônica
 
 | Condição | Quantidade |
 |---|---:|
@@ -122,42 +99,38 @@ Comparação incremental pertence a `*-301`; processamento não recebe superfíc
 | fronteiras intencionalmente sem tela | **2** |
 | **Total** | **53** |
 
-## 6. Efeito da UXA-100-A3 no catálogo
+## 5. Efeito da UXA-101 no catálogo
 
-- SVGs canônicos: **109 → 118**;
-- associações: **109 → 118**;
-- perfis: **28 → 31**;
-- validações funcionais vigentes: **109 → 118**;
+- SVGs canônicos: **118 → 118**;
+- associações: **118 → 118**;
+- perfis: **31 → 31**;
+- validações funcionais vigentes: **118 → 118**;
 - pendências específicas: **0 → 0**;
-- IDs: **40 → 53**;
-- transições: **37 → 54**;
-- IDs com referência visual: **30 → 42**;
-- fronteiras sem tela: **1 → 2**;
-- Pessoa, Coletivo e Organização permanecem `draft`;
-- nenhuma implementação de cobrança é criada.
+- IDs: **53 → 53**;
+- transições: **54 → 54**;
+- `uxa-007-opportunity-detail-mobile.svg`: reformulado e revalidado;
+- `TRN-205`: parcial → **integralmente validada até BND-001**;
+- `BND-001`: examinada como fronteira externa sem tela.
 
-## 7. Separações obrigatórias
+## 6. Separações obrigatórias
 
-- primeira Tela Hoje e Tela Hoje recorrente são variantes do mesmo `PER-008`, não novos IDs;
+- primeira Tela Hoje e Tela Hoje recorrente são variantes do mesmo `PER-008`;
+- revisão de saída é estado do mesmo `PER-203`, não nova tela canônica;
+- `BND-001` representa a transferência de autoridade, não o processo do terceiro;
 - `PER-106` organiza participações e não substitui a Central;
 - `PER-107` é triagem de atualizações;
-- `PER-108` sintetiza o contexto interno e não replica canais especializados;
-- `PER/COL/ORG-301` concentram plano atual e comparação; comparação incremental não é uma tela adicional;
-- `PER/COL/ORG-302` são revisão de contratação; processamento financeiro transitório não é tela própria;
-- `PER/COL/ORG-303` governam downgrade/cancelamento e suas consequências;
-- `PER/COL/ORG-304` governam resultado/recuperação e preservam a diferença entre sucesso e falha;
-- `BND-002` é fronteira de proposta Enterprise/Scale, não checkout;
-- plano pago não compra relevância, legitimidade, confiança, impacto ou evolução;
-- `COM-005` continua validado pela UXA-099 sem promover automaticamente `TRN-305`;
-- `TRN-205`, `TRN-304`, `TRN-305` e `TRN-306` permanecem continuidades separadas.
+- `PER-108` sintetiza contexto interno e não replica canais especializados;
+- comparação incremental de Planos não é tela adicional;
+- processamento financeiro transitório não é tela própria;
+- Enterprise/Scale terminam em `BND-002`, não checkout;
+- `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem continuidades separadas.
 
-## 8. Estado do catálogo
+## 7. Estado do catálogo
 
-- catálogo: `active` 0.25.0;
-- galeria principal: **118 SVGs canônicos**;
-- galeria de Planos: `active` 0.3.0; 9 SVGs canônicos;
-- matriz por SVG: `active` 0.16.0; 118 associações / 31 perfis;
-- jornadas da Pessoa, Coletivo e Organização: `draft`, com Planos canonicamente registrado;
+- catálogo: `active` 0.26.0;
+- galeria principal: `active` 0.21.0; 118 SVGs;
+- matriz por SVG: `active` 0.17.0; 118 associações / 31 perfis;
+- jornadas da Pessoa, Coletivo e Organização: `draft`;
 - protótipo e Engenharia de Produto: não iniciados.
 
-A promoção documental não autoriza merge, implementação ou próxima UXA.
+A promoção documental não autoriza implementação ou próxima UXA.
