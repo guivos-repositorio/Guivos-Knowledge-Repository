@@ -2,13 +2,14 @@
 id: GEM-004-PLAN-ARCHETYPE-CATALOG-001
 title: Catálogo de Arquétipos de Acesso e Planos
 status: active
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-004
 related:
   - GEM-004-A1
   - GEM-004-A2
+  - GEM-007-BUSINESS-ECONOMIC-ROLE-001
   - GEM-COMMERCIAL-BASELINE-001
   - M7.39
 ---
@@ -17,9 +18,7 @@ related:
 
 ## 1. Objetivo
 
-Organizar estruturas de acesso gratuito, pago e financiado e mapear os arquétipos conceituais para os planos comerciais candidatos vigentes.
-
-Arquétipo continua sendo uma classe conceitual. Nome, preço, benefícios e limites comerciais são governados pelo GEM-004-A1.
+Organizar estruturas de acesso gratuito, pago e financiado e mapear arquétipos conceituais para a taxonomia global vigente. Arquétipo continua sendo classe conceitual; nome, preço, benefícios e limites dos planos de participantes são governados pelo `GEM-004-A1`.
 
 ## 2. Catálogo consolidado
 
@@ -31,153 +30,86 @@ Arquétipo continua sendo uma classe conceitual. Nome, preço, benefícios e lim
 | AM-04 | Acesso Financiado por Organização | organização | pessoa ou grupo elegível | benefício ou programa organizacional |
 | AM-05 | Acesso Patrocinado ou Social | patrocinador, parceiro ou programa | pessoa, comunidade ou causa | inclusão e ampliação de acesso |
 | AM-06 | Parceiros e Profissionais | parceiro ou profissional | parceiro e clientes legítimos | gestão, publicação, integração e suporte |
-| AM-07 | Acesso Organizacional | empresa ou instituição | organização e usuários elegíveis | gestão, licenciamento e inteligência agregada |
+| AM-07 | Acesso Organizacional e de Escala | empresa ou instituição | organização e usuários elegíveis | gestão, licenciamento, inteligência e soluções de escala |
 
-## 3. Mapeamento comercial candidato
+## 3. Mapeamento comercial vigente
 
-| Plano | Arquétipo principal | Arquétipos contribuintes |
-|---|---|---|
-| Guivos Free | AM-01 | — |
-| Guivos Plus | AM-02 | AM-04; AM-05 |
-| Guivos Pro | AM-02 | AM-03; AM-04; AM-05 |
-| Coletivo Livre | AM-05 | AM-06 |
-| Coletivo Gestão | AM-06 | AM-05 |
-| Coletivo Impacto | AM-06 | AM-05; AM-07 |
-| Coletivo Enterprise | AM-07 | AM-05; AM-06 |
-| Business Start | AM-07 | AM-04; AM-06 |
-| Business Growth | AM-07 | AM-04; AM-06 |
-| Business Scale | AM-07 | AM-04; AM-06 |
-| Guivos Patrocinado | AM-04 ou AM-05 | plano beneficiado correspondente |
+### 3.1 Planos de participantes
 
-O mapeamento não transfere autoridade entre pagador, beneficiário, patrocinador, Organização ou Coletivo.
+| Contexto | Plano | Arquétipo principal | Arquétipos contribuintes |
+|---|---|---|---|
+| Pessoa | Guivos Free | AM-01 | — |
+| Pessoa | Guivos Plus | AM-02 | AM-04; AM-05 |
+| Pessoa | Guivos Pro | AM-02 | AM-03; AM-04; AM-05 |
+| Coletivo | Coletivo Livre | AM-05 | AM-06 |
+| Coletivo | Coletivo Mobiliza | AM-06 | AM-05 |
+| Coletivo | Coletivo Impacta | AM-06 | AM-05; AM-07 |
+| Coletivo | Coletivo Rede | AM-07 | AM-05; AM-06 |
+| Organização | Organização Conecta | AM-07 | AM-04; AM-06 |
+| Organização | Organização Eleva | AM-07 | AM-04; AM-06 |
+| Organização | Organização Transforma | AM-07 | AM-04; AM-06 |
+| transversal | Guivos Patrocinado/financiado | AM-04 ou AM-05 | plano beneficiado correspondente |
+
+### 3.2 Guivos Business
+
+Guivos Business utiliza predominantemente o arquétipo `AM-07`, mas seus planos pertencem a um **produto especializado**, não à jornada do participante Organização.
+
+| Produto | Plano | Arquétipo principal | Estado nesta baseline |
+|---|---|---|---|
+| Guivos Business | Start | AM-07 | conceitualmente definido; preço/entitlements não definidos |
+| Guivos Business | Growth | AM-07 | conceitualmente definido; preço/entitlements não definidos |
+| Guivos Business | Scale | AM-07 | conceitualmente definido; preço/entitlements não definidos |
+| Guivos Business | Enterprise | AM-07 | conceitualmente definido; preço/entitlements não definidos |
+
+Não existe correspondência automática entre Conecta/Eleva/Transforma e Start/Growth/Scale/Enterprise.
 
 ## 4. AM-01 — Participante Universal
 
-### Finalidade
-
-Garantir participação, descoberta, orientação e avanço básico.
-
-### Características
-
-- baseline gratuito preservado;
-- direitos e proteções integrais;
-- limites transparentes de capacidade;
-- ausência de obrigação de pagamento;
-- possibilidade de upgrade voluntário;
-- retorno automático ou disponível após término de acesso pago;
-- catálogo público acessível;
-- duas correspondências personalizadas completas por semana na baseline candidata.
+Garante participação, descoberta, orientação e avanço básico com baseline gratuito, direitos integrais, limites transparentes, ausência de obrigação de pagamento, retorno ao gratuito e catálogo público acessível.
 
 ## 5. AM-02 — Participante Ampliado
 
-### Finalidade
-
-Ampliar profundidade, personalização, capacidade, conveniência, inteligência ou integração.
-
-### Características
-
-- histórico ampliado;
-- maior capacidade de processamento;
-- personalização ampliada;
-- combinações de serviços;
-- automações e alertas;
-- suporte ampliado;
-- integrações adicionais;
-- correspondências personalizadas sem cota semanal fixa, sujeitas a uso justo.
+Amplia profundidade, personalização, capacidade, conveniência, inteligência ou integração. Não aumenta valor humano, relevância orgânica ou garantia de evolução.
 
 ## 6. AM-03 — Participante Assistido
 
-### Finalidade
-
-Oferecer acompanhamento humano, suporte especializado ou serviço profissional em modelo futuro e separado dos planos digitais básicos.
-
-### Limites
-
-- pagamento não concede controle sobre decisões pessoais;
-- profissional deverá respeitar limites de competência;
-- evidências não poderão ser alteradas por interesse econômico;
-- escopo e responsabilidade deverão ser compreensíveis;
-- nenhum serviço humano está incluído automaticamente no Plus ou Pro.
+Representa acompanhamento humano ou serviço especializado futuro e separado dos planos digitais básicos. Pagamento não concede controle sobre decisões pessoais nem altera evidências.
 
 ## 7. AM-04 — Acesso Financiado por Organização
 
-### Finalidade
-
-Permitir que empresa, instituição ou programa financie capacidades para pessoas ou grupos elegíveis.
-
-### Limites
-
-- pagador e beneficiário são papéis distintos;
-- organização não recebe contexto individual além do autorizado;
-- analytics deverão ser agregados quando possível;
-- término do vínculo deverá permitir continuidade no gratuito;
-- recusa não poderá gerar punição incompatível;
-- upgrade individual posterior deverá ser opcional.
+Permite que empresa, instituição ou programa financie capacidades para pessoas/grupos elegíveis mantendo pagador e beneficiário distintos, analytics agregados quando possível e continuidade no gratuito ao término quando aplicável.
 
 ## 8. AM-05 — Acesso Patrocinado ou Social
 
-### Finalidade
+Amplia acesso por recurso vinculado, patrocínio, fundação, parceiro ou programa social, com fonte/finalidade declaradas e sem autoridade do financiador sobre evidência ou decisão.
 
-Ampliar acesso por recurso vinculado, patrocínio, fundação, parceiro ou programa social.
-
-### Limites
-
-- fonte econômica identificada;
-- finalidade declarada;
-- condição do beneficiário protegida;
-- patrocinador sem controle sobre evidência ou decisão;
-- recurso vinculado separado de receita livre;
-- encerramento e continuidade compreensíveis;
-- possibilidade de financiar Plus, Pro, Coletivo Gestão ou Coletivo Impacto conforme contrato.
+Pode financiar Plus, Pro, Coletivo Mobiliza ou Coletivo Impacta conforme contrato e demais capacidades autorizadas.
 
 ## 9. AM-06 — Parceiros, Profissionais e Coletivos Operadores
 
-### Finalidade
-
-Disponibilizar recursos para gestão de ofertas, relacionamento, integração, analytics autorizados e operação no ecossistema.
-
-### Não concede
-
-- acesso indevido a participantes;
-- prioridade comercial disfarçada;
-- dispensa de critérios de qualidade;
-- influência oculta sobre ranking;
-- direito de vender ou reutilizar dados pessoais;
-- direito de monetizar no Coletivo Livre;
-- capacidade acima da cota contratada.
+Disponibiliza recursos para gestão de ofertas, relacionamento, integração e analytics autorizados. Não concede acesso indevido a participantes, prioridade disfarçada, dispensa de qualidade ou reutilização indevida de dados.
 
 ## 10. AM-07 — Acesso Organizacional e de Escala
 
-### Finalidade
+Organiza capacidades institucionais e empresariais, incluindo planos de Organização, Guivos Business, Intelligence, integrações, administração e múltiplas unidades.
 
-Organizar capacidades do Guivos Business, Intelligence, integrações, administração, múltiplas unidades e Coletivos de maior escala.
-
-### Características candidatas
-
-- gestão de programas;
-- licenciamento;
-- painéis agregados;
-- administração de elegibilidade;
-- integrações;
-- suporte;
-- capacidades para equipes;
-- API, SSO, Power BI e SLA em Scale ou Enterprise;
-- capacidade dimensionada por contrato.
+O mesmo arquétipo não torna os produtos equivalentes. `Organização Transforma ≠ Guivos Business Enterprise`.
 
 ## 11. Regras comuns
 
 1. arquétipo não substitui plano comercial;
 2. financiamento não concede autoridade indevida;
-3. gratuito deverá permanecer disponível quando aplicável;
-4. toda capacidade deverá possuir classificação;
-5. diferenças deverão ser compreensíveis;
-6. direitos e dados serão preservados nas transições;
-7. planos comerciais permanecem candidatos até validação;
+3. gratuito permanece disponível quando aplicável;
+4. capacidades devem possuir classificação;
+5. diferenças devem ser compreensíveis;
+6. direitos e dados são preservados nas transições;
+7. planos comerciais de participantes permanecem candidatos até validação;
 8. preço candidato não autoriza cobrança;
 9. plano pago não aumenta relevância ou impacto;
 10. assinatura e transação permanecem separadas;
-11. capacidade sem limite fixo exige contrato e uso justo.
+11. capacidade sem limite fixo exige dimensionamento/uso justo;
+12. taxonomia de Guivos Business não autoriza inferir preço ou entitlement.
 
 ## 12. Estado
 
-`commercial_mapping_defined — archetypes mapped to candidate plans; empirical and specialist validation pending`.
+`commercial_mapping_realigned — global plan taxonomy mapped; participant baseline preserved; Guivos Business pricing and entitlements remain undefined`.
