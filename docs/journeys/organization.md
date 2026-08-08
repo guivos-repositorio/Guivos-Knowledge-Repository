@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.8.0
+version: 0.9.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-004
   - UXA-007
@@ -58,7 +58,7 @@ identidade, unidade e autoridade
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012; UXA-101 no recorte de saída | **TRN-203/204/210/211 por UXA-098; TRN-205 até BND-001 por UXA-101** |
 | relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
 | patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-055 | UXA-041 a UXA-055; residual UXA-099 | parcial |
-| Planos e cobrança | **canonicamente registrado** | GEM-004 / UXA-100-A3 | 3 SVGs canônicos / 4 superfícies | UXA-100-A2/A3 | transições internas locais; Scale parcial |
+| Planos e cobrança | **canonicamente registrado** | GEM-004 / UXA-100-A3 | 3 SVGs canônicos / 4 superfícies | UXA-100-A2/A3 | transições internas locais; `BND-002` parcial |
 | evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
 
 A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
@@ -94,20 +94,20 @@ A Organização continua responsável por manter preço, disponibilidade, local,
 
 ## 4. Planos como etapa transversal canônica
 
-A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização.
+A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização. A taxonomia desta jornada é **Conecta / Eleva / Transforma**. Guivos Business permanece Produto Especializado separado, com taxonomia própria e sem correspondência automática 1:1 com os planos da Organização.
 
 ```text
 ORG-301 — Planos e comparação
-├── TRN-421 → ORG-302 — revisão de contratação Growth
+├── TRN-421 → ORG-302 — revisão de contratação
 │   └── TRN-422 → ORG-304 — resultado/recuperação
 │       └── TRN-425 → ORG-301
 ├── TRN-423 → ORG-303 — downgrade/cancelamento
 │   └── TRN-424 → ORG-304
 │       └── TRN-425 → ORG-301
-└── TRN-426 → BND-002 — proposta Business Scale
+└── TRN-426 → BND-002 — contratação/dimensionamento assistido
 ```
 
-`TRN-421` a `TRN-425` estão localmente validadas. `TRN-426` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado.
+`TRN-421` a `TRN-425` estão localmente validadas. `TRN-426` permanece parcial porque o processo posterior a `BND-002` não foi materializado. `BND-002` identifica a necessidade de contratação/dimensionamento assistido quando o autoatendimento não for suficiente; não representa Guivos Business Scale, Enterprise ou qualquer outro plano específico.
 
 Entrada contextual:
 
@@ -130,16 +130,22 @@ Referência canônica:
 Regras:
 
 - `ORG-301` mostra plano atual, uso e período do ciclo;
-- compara `Business Start → Business Growth → Business Scale`;
+- compara `Conecta → Eleva → Transforma`;
 - comparação incremental pertence a `ORG-301`, sem superfície adicional;
 - apresenta delta direto do plano atual para o escolhido;
-- `ORG-302` exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação;
+- `ORG-302` exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação quando essas condições forem aplicáveis ao plano alvo;
 - contratação não amplia consentimento nem acesso ao contexto individual de Pessoas;
 - `ORG-303` exige selecionar unidades, administradores, publicações e Coletivos relacionados mantidos, integrações a encerrar e dados a exportar;
 - históricos/agregados não são apagados para forçar retenção;
 - `ORG-304` diferencia sucesso e falha, preservando plano anterior e direitos quando não houver confirmação;
-- Scale usa `BND-002`, não checkout definitivo;
+- quando a contratação não puder ser concluída em autoatendimento, a jornada usa `BND-002` como fronteira assistida;
 - capacidade comercial permanece separada de relevância, confiança, legitimidade e resultado.
+
+Separações obrigatórias:
+
+- `Organização ≠ Guivos Business`;
+- `Organização Transforma ≠ Guivos Business Enterprise`;
+- `BND-002 ≠ plano Enterprise ou Scale`.
 
 ## 5. Relação com Coletivos
 
@@ -186,11 +192,11 @@ Esta vista permanece `draft` porque:
 - `TRN-201` permanece parcial e `TRN-202` localmente validada;
 - integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
 - as transições internas de Planos são locais e `TRN-426` permanece parcial;
-- cobrança real, gateway e processo Scale não foram implementados/validados ponta a ponta;
+- cobrança real, gateway e processo assistido posterior a `BND-002` não foram implementados/validados ponta a ponta;
 - evidências e resultados institucionais continuam sem matriz integrada.
 
 `TRN-205` deixa de ser pendência desta vista: UXA-101 a valida até `BND-001`, sem promover a jornada institucional completa.
 
 ## 8. Estado da frente
 
-A organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e Planos canônicos pela UXA-100-A3. Nenhuma próxima UXA é iniciada automaticamente.
+A Organização mantém publicação/descoberta validada pela UXA-098, saída consciente até `BND-001` validada pela UXA-101 e Planos canônicos pela UXA-100-A3. A taxonomia vigente é `Conecta · Eleva · Transforma`; Guivos Business permanece produto separado. Nenhuma próxima UXA é iniciada automaticamente.
