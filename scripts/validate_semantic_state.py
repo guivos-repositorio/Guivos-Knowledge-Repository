@@ -11,7 +11,7 @@ STATE = ROOT / "docs/project/current-state-register.md"
 README = ROOT / "README.md"
 HOME = ROOT / "docs/index.md"
 UXA_DIR = ROOT / "docs/experience-architecture"
-UXA_INDEX = UXA_DIR / "uxa-047-100-index.md"
+UXA_INDEX = UXA_DIR / "uxa-047-101-index.md"
 CONTROL_PATHS = [
     ROOT / "docs/project/global-semantic-state-synchronization-policy.md",
     ROOT / "docs/project/changelog-index.md",
@@ -98,7 +98,7 @@ def main() -> int:
         if match:
             artifacts[int(match.group(1))] = path
 
-    for number in range(47, 101):
+    for number in range(47, 102):
         path = artifacts.get(number)
         if path is None:
             errors.append(f"artefato UXA-{number:03d} ausente")
