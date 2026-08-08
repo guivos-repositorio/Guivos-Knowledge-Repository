@@ -2,7 +2,7 @@
 id: GTM-000
 title: Guivos Go-to-Market, Growth & Capital
 status: draft
-version: 0.4.0
+version: 0.5.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 related:
@@ -15,6 +15,7 @@ related:
   - GEM-010
   - GEM-010-OPERATING-DRIVER-MODEL-001
   - GEM-010-REVENUE-MODEL-001
+  - GKR-INTERNATIONAL-OPERATIONS-READINESS-001
 normative: false
 ---
 
@@ -64,6 +65,23 @@ A baseline de cinco anos é estratificada em três horizontes cumulativos:
 - **longo prazo — M37 a M60**, com checkpoint M48 e fechamento M60.
 
 A meta de cinco anos é, portanto, o fechamento do horizonte de longo prazo. `GTM-006` concentra a leitura executiva desses horizontes sem substituir as tabelas detalhadas de `GTM-001`, `GTM-002` e `GTM-003`.
+
+### 4.2 Rebaseline P7 de internacionalização
+
+`GTM-007` e `GTM-008` transformam a direção Portugal/Lisboa em programa territorial governado, sem alterar seu status para operação real.
+
+A leitura corrente é:
+
+```text
+Portugal = primeiro mercado internacional de referência
+Lisboa = base inicial candidata
+Porto = expansão posterior condicionada
+segundo país europeu = não autorizado
+```
+
+Portugal permanece `T1_candidate`. A internacionalização precisa atravessar discovery, readiness comercial/operacional/jurídico-fiscal, autorização explícita, piloto evidenciado e gate de escala.
+
+Ativo digital territorial, usuário incidental, pesquisa, parceiro local ou presença de marca não provam mercado ativo.
 
 ## 5. Separação canônica de atores e relações
 
@@ -129,6 +147,8 @@ A meta de `500 Parcerias Estratégicas ativas` em M60 não representa 500 Organi
 | `GTM-004` | [Investimento, Valuation e Modelo para Investidores](gtm-004-investment-valuation-and-investor-model.md) | valuation, rodada, participação e sensibilidade de retorno |
 | `GTM-005` | [Governança, Métricas e Cadência](gtm-005-governance-metrics-and-review-cadence.md) | ownership, revisões, gates e status |
 | `GTM-006` | [Horizontes de Meta e Marcos de Crescimento](gtm-006-target-horizons-and-milestones.md) | curto M0–M12, médio M13–M36 e longo M37–M60, com checkpoints |
+| `GTM-007` | [Governança de Internacionalização e Programa Territorial](gtm-007-internationalization-and-territorial-governance.md) | estados T0–T9, readiness e separação entre intenção, piloto e mercado ativo |
+| `GTM-008` | [Portugal — Gates de Prontidão, Piloto e Escala](gtm-008-portugal-pilot-readiness-gates.md) | gates PT0–PT9 para Lisboa, Porto e futura replicação europeia |
 
 ## 7. Públicos consumidores
 
@@ -161,10 +181,14 @@ A versão usada externamente deverá distinguir fatos realizados, metas internas
 10. **metas são cumulativas** — números de um checkpoint representam o estado esperado acumulado e não devem ser somados aos checkpoints anteriores;
 11. **capital não é receita** — aporte, dívida, faturamento, receita reconhecida e caixa permanecem separados;
 12. **valuation não é fato contábil** — é uma referência negocial sujeita a evidência, diligência e mercado;
-13. **internacionalização exige gate** — Portugal não é acionado apenas por calendário.
+13. **internacionalização exige gate** — Portugal não é acionado apenas por calendário;
+14. **territorialidade exige verdade operacional** — acesso, marca, domínio ou usuário incidental não tornam um país mercado ativo;
+15. **piloto não é escala** — execução em Lisboa não autoriza Porto ou outro país sem nova decisão;
+16. **compliance é por papel real** — produto, entidade, fluxo e contraparte determinam a análise aplicável;
+17. **proteção de ativo não é expansão** — domínios e marcas defensivas permanecem separados do programa territorial.
 
 ## 9. Estado
 
-`draft — candidate planning baseline created; calibration, market evidence, operating capacity and executive approval pending`.
+`draft — candidate planning baseline with P7 territorial governance; calibration, market evidence, operating capacity and executive approval pending`.
 
 A criação deste domínio não inicia operação comercial, contratação de equipe, campanha, Product Engineering, rodada de investimento ou expansão internacional.

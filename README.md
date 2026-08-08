@@ -28,7 +28,9 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 
 A UXA-101 continua sendo o último marco funcional: `TRN-205` é validada até `BND-001` e qualquer resultado posterior permanece sob autoridade externa.
 
-A sincronização temática de 2026-08-08 integrou nomenclaturas, Neo4j como arquitetura de referência de grafo, rebaseline dos sete Produtos Especializados, governança de marca/naming/ativos digitais, gates de evidência da validação de mercado e o guardrail de propósito antes de incentivos.
+A sincronização temática de 2026-08-08 integrou nomenclaturas, Neo4j como arquitetura de referência de grafo, rebaseline dos sete Produtos Especializados, governança de marca/naming/ativos digitais, gates de evidência da validação de mercado, propósito antes de incentivos, arquitetura institucional/jurídica e P6 de verdade operacional/privacidade.
+
+O P7 de internacionalização permanece em proposta governada: Portugal é o primeiro mercado internacional de referência, Lisboa a base inicial candidata e Porto uma expansão posterior condicionada. Nenhuma operação internacional é presumida.
 
 ## Atualização consolidada
 
@@ -38,6 +40,11 @@ A sincronização temática de 2026-08-08 integrou nomenclaturas, Neo4j como arq
 - [ADR-007 — Neo4j como Tecnologia Primária de Referência para Grafo](docs/adr/ADR-007-neo4j-primary-graph-reference.md)
 - [Produtos Especializados — Política de Representação e Handoffs](docs/product-architecture/specialized-products-experience-and-handoff-policy.md)
 - [Marca, Naming e Ativos Digitais](docs/governance-framework/brand-and-digital-assets-index.md)
+- [Arquitetura Institucional, Fundação Guivos e Jurídico](docs/governance-framework/institutional-and-legal-architecture-index.md)
+- [Verdade Operacional, Privacidade e Superfícies Legais](docs/governance-framework/operational-privacy-and-legal-truth-index.md)
+- [Governança de Internacionalização e Programa Territorial](docs/go-to-market/gtm-007-internationalization-and-territorial-governance.md)
+- [Portugal — Gates de Prontidão, Piloto e Escala](docs/go-to-market/gtm-008-portugal-pilot-readiness-gates.md)
+- [Prontidão Operacional Internacional e Cross-Border](docs/governance-framework/international-operations-and-cross-border-readiness.md)
 - [VAL-009 — Estado de Execução e Gates de Evidência](docs/research/market-validation/VAL-009-status-de-execucao-e-gates-de-evidencia.md)
 - [GEM-005-A1 — Propósito Antes do Incentivo](docs/economic-model/gem-005-a1-purpose-before-incentive-guardrail.md)
 
@@ -52,6 +59,7 @@ A sincronização temática de 2026-08-08 integrou nomenclaturas, Neo4j como arq
 - [Registro Granular de Transições](docs/journeys/transition-registry.md)
 - [Guivos Economic Model](docs/economic-model/index.md)
 - [Validação de Mercado](docs/research/market-validation/README.md)
+- [Go-to-Market, Growth & Capital](docs/go-to-market/index.md)
 - [Roadmap Arquitetural](docs/roadmap.md)
 - [Índice de changelogs](docs/project/changelog-index.md)
 
@@ -69,6 +77,8 @@ A sincronização temática de 2026-08-08 integrou nomenclaturas, Neo4j como arq
 - Organização e Guivos Business são objetos distintos; Organização usa Conecta · Eleva · Transforma, enquanto Guivos Business possui Start · Growth · Scale · Enterprise.
 - Parceria Estratégica é relação corporativa da Guivos enquanto empresa; não é Organização, oportunidade ou quarto participante.
 - Pontos, créditos ou recompensas não podem substituir evolução, valor legítimo ou autonomia como objetivo da experiência.
+- Acesso internacional, domínio territorial, marca protegida ou usuário estrangeiro não tornam um país mercado ativo.
+- Piloto autorizado não equivale a piloto executado; piloto executado não equivale a escala aprovada.
 - Estado canônico vigente prevalece sobre estado visual ou nomenclatura obsoleta.
 - Nenhum pacote posterior, UXA ou etapa de Engenharia de Produto começa automaticamente.
 - Alterações permanentes exigem branch, validação, pull request e decisão governada.
@@ -85,7 +95,10 @@ Não estão autorizados por esta sincronização:
 - resultado de mercado sem base reproduzível;
 - registro marcário, domínio ou proteção territorial sem evidência;
 - Fundação Guivos ou estrutura jurídica presumida;
+- Termos, Política de Privacidade, consentimentos ou controles LGPD presumidos;
 - internacionalização operacional automática;
+- entidade/filial portuguesa, equipe local, IVA/OSS, PSP europeu ou piloto em Lisboa presumidos;
+- Porto ou segundo país europeu sem novo gate;
 - cobrança real, gateway ou processo de terceiro após `BND-001`.
 
 ## Validação

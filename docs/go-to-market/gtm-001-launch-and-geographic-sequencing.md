@@ -2,7 +2,7 @@
 id: GTM-001
 title: Sequenciamento de Lançamento e Expansão Geográfica
 status: draft
-version: 0.3.0
+version: 0.4.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 parent: GTM-000
@@ -10,6 +10,8 @@ related:
   - GTM-002
   - GTM-003
   - GTM-005
+  - GTM-007
+  - GTM-008
   - GEM-008
 normative: false
 ---
@@ -19,6 +21,8 @@ normative: false
 ## 1. Objetivo
 
 Definir onde e em que ordem a Guivos deverá concentrar aquisição, vendas, captação de participantes, alianças estratégicas e capacidade operacional para construir densidade antes de ampliar território.
+
+`GTM-007` passa a governar os estados territoriais e readiness cross-border; `GTM-008` detalha os gates do piloto português. Este documento preserva o sequenciamento e a baseline candidata de metas.
 
 ## 2. Tese geográfica
 
@@ -126,6 +130,8 @@ Portugal permanece o primeiro mercado internacional de referência.
 
 **Lisboa** é a primeira base do piloto. **Porto** é expansão posterior e condicionada ao resultado do piloto lisboeta.
 
+A governança operacional desta onda está em `GTM-007` e `GTM-008`. Em 2026-08-08, Portugal permanece `T1_candidate`; este documento não promove a onda a piloto autorizado ou operação real.
+
 ### Meta histórica candidata recuperada para o piloto
 
 A referência histórica de `30 parceiros locais` foi preservada como evidência histórica, mas sua expressão operacional foi corrigida para evitar conflito de papéis:
@@ -147,7 +153,8 @@ Portugal somente avança quando houver evidência suficiente de:
 3. capacidade de suporte internacional;
 4. adequação jurídica, fiscal, privacidade e pagamentos;
 5. responsável executivo e orçamento explicitamente aprovados;
-6. oferta local suficiente para que aquisição de Pessoas tenha utilidade real.
+6. oferta local suficiente para que aquisição de Pessoas tenha utilidade real;
+7. gates de readiness previstos em `GTM-007` e `GTM-008` atendidos e aprovados.
 
 ## 9. Onda 5 — escala Brasil + Portugal | M37–M60
 
