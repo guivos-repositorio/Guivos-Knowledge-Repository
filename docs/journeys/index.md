@@ -65,7 +65,7 @@ Nenhuma etapa autoriza automaticamente a seguinte.
 | Pessoa, Coletivo e Organização | `draft` | incompletude explícita preservada |
 | Jornada da Pessoa | `draft` 0.15.0 | UXA-101 |
 | Jornada do Coletivo | `draft` 0.15.0 | UXA-100-A3 |
-| Jornada da Organização | `draft` 0.7.0 | UXA-100-A3 |
+| Jornada da Organização | `draft` 0.8.0 | UXA-101 |
 | catálogo integrado | `active` 0.26.0 | 118 SVGs canônicos |
 | registro de superfícies | `active` 0.17.0 | 53 IDs |
 | registro de transições | `active` 0.18.0 | 54 transições |
