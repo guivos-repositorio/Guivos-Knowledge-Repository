@@ -1,8 +1,8 @@
 ---
 id: GKR-BRAND-DIGITAL-ASSETS-INDEX-001
 title: Marca, Naming e Ativos Digitais — Índice Governado
-status: proposed
-version: 1.0.0
+status: active
+version: 1.0.1
 owner: Guivos
 last_updated: 2026-08-08
 related:
@@ -10,6 +10,7 @@ related:
   - GKR-OFFICIAL-NAMING-AUTHORITY-001
   - GKR-DIGITAL-ASSET-CONTROL-001
   - GKR-LEGACY-NOMENCLATURE-RECONCILIATION-001
+  - GKR-VALIDATED-UPDATES-SYNC-2026-08-08-001
 normative: false
 ---
 
@@ -30,7 +31,15 @@ naming canônico
 
 O corpus público não substitui registros jurídicos, registradores, serviços de DNS, cofres de segredo ou inventários restritos.
 
-## 2. Documentos
+## 2. Estado do pacote
+
+A frente P3 foi integrada na sincronização governada de 2026-08-08.
+
+Isso estabelece **governança documental e autoridade de naming**, mas não promove automaticamente a estado comprovado nenhum registro, titularidade, domínio, perfil, DNS, certificado, serviço ou cobertura territorial específica.
+
+Fatos operacionais/registrários continuam sujeitos ao modelo de evidência definido neste domínio.
+
+## 3. Documentos
 
 ### Autoridade Oficial de Naming
 
@@ -73,7 +82,7 @@ Define:
 - visão pública, registro restrito e cofre de segredos;
 - intake, renovação, continuidade e KPIs futuros.
 
-## 3. Autoridades correntes de naming cobertas
+## 4. Autoridades correntes de naming cobertas
 
 No escopo desta frente, o naming canônico inclui:
 
@@ -96,7 +105,7 @@ Planos permanecem governados pela autoridade econômica própria:
 
 Nenhum desses nomes implica registro de marca, domínio, handle ou proteção territorial comprovada.
 
-## 4. Relação com P1.1
+## 5. Relação com P1.1
 
 P1.1 remove deriva conhecida de nomenclatura. P3 cria a governança permanente.
 
@@ -108,7 +117,7 @@ P3
 = controlar criação, aprovação, migração, evidência e proteção de nomes/ativos
 ```
 
-## 5. O que não está sendo publicado
+## 6. O que não está sendo publicado
 
 Esta frente não publica:
 
@@ -124,7 +133,7 @@ Esta frente não publica:
 - vulnerabilidades;
 - incidentes não sanitizados.
 
-## 6. Estado factual desta versão
+## 7. Estado factual desta versão
 
 A frente estabelece **governança e naming documental**.
 
@@ -139,7 +148,7 @@ Ela não afirma que:
 
 A população do inventário real depende de evidências específicas e classificação adequada.
 
-## 7. Próximos gates
+## 8. Próximos gates
 
 Antes de promover fatos específicos de proteção/controle, exigir:
 

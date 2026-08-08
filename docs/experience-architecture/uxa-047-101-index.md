@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.7.0
+version: 2.7.2
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -97,12 +97,13 @@ normative: false
 
 ## 5. Estado sincronizado
 
-| Elemento | Estado proposto pela UXA-101 |
+| Elemento | Estado vigente |
 |---|---|
 | intervalo indexado | UXA-047 a UXA-101 |
-| Registro do Estado Atual | **2.27.0** |
-| marco | **M7.88** |
-| última frente proposta | **UXA-101** |
+| Registro do Estado Atual | **2.28.0** |
+| marco funcional | **M7.88** |
+| última frente funcional | **UXA-101** |
+| sincronização temática | validações recentes integradas em 2026-08-08 |
 | SVGs | **118** |
 | associações individuais | **118** |
 | perfis documentais | **31** |
@@ -110,8 +111,10 @@ normative: false
 | pendentes de validação específica | **0** |
 | superfícies/estados/fronteiras | **53** |
 | transições documentais | **54** |
-| próxima UXA | **UXA-102 não iniciada** |
+| próxima UXA | **UXA-102/V5 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
+
+A atualização de `GKR-STATE-001` para 2.28.0 é temática e não cria nova UXA, SVG, superfície ou transição.
 
 ## 6. Resultado da UXA-101
 

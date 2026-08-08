@@ -24,13 +24,22 @@ DOCS = ROOT / "docs"
 TEXT_SUFFIXES = {".md", ".svg", ".yml", ".yaml", ".json", ".txt"}
 
 # These files intentionally document migrations and therefore may mention
-# superseded names without reasserting them as current authority.
+# superseded names without reasserting them as current authority. Keep this
+# allowlist narrow and path-specific: a newly created live surface is blocking
+# by default until it is explicitly reviewed as migration/reference authority.
 EXPLICIT_REFERENCE_FILES = {
     "docs/economic-model/gem-004-plan-taxonomy-conceptual-authority.md",
     "docs/glossary.md",
     "docs/product-architecture/index.md",
     "docs/product-architecture/mall.md",
     "docs/project/legacy-nomenclature-reconciliation-2026-08-08.md",
+    # P3 naming/asset governance must retain the superseded product name only
+    # to explain the governed migration to Guivos Mall. These exact documents
+    # are authorities of migration/evidence, not authorization for live reuse.
+    "docs/governance-framework/brand-and-digital-assets-index.md",
+    "docs/governance-framework/brand-naming-and-digital-assets-governance.md",
+    "docs/governance-framework/digital-asset-control-model.md",
+    "docs/governance-framework/official-naming-authority.md",
 }
 
 # Versioned project evidence and roadmap snapshots preserve history. They are
