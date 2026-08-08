@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -25,6 +25,8 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A1
+  - UXA-100-A2
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -38,9 +40,9 @@ normative: false
 
 ## 1. Finalidade
 
-Esta seção reúne os **109 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura e passa a apontar também para um **apêndice candidato UXA-100 com 9 SVGs de Planos, comparação e cobrança**.
+Esta seção reúne os **109 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura e aponta também para um **apêndice candidato UXA-100 com 9 SVGs de Planos, comparação e cobrança**.
 
-Os 9 ativos candidatos não integram a contagem canônica até validação funcional e promoção governada.
+A UXA-100-A2 aprovou funcionalmente os 9 ativos de Planos **como candidatos** após reformulação controlada de 6 deles. Eles continuam fora da contagem canônica até promoção governada.
 
 ## 2. Estado do instrumento
 
@@ -53,7 +55,8 @@ Ressalvas vigentes:
 - uma fronteira permanece corretamente sem tela;
 - **109 SVGs canônicos possuem validação funcional vigente**;
 - **0 aguardam validação funcional específica** no conjunto canônico;
-- a UXA-100 adiciona **9 SVGs candidatos ainda não validados funcionalmente**;
+- a UXA-100 possui **9 SVGs candidatos, 9/9 aprovados funcionalmente como candidatos**;
+- 6 dos 9 ativos candidatos foram reformulados pela UXA-100-A2 e 3 comparações incrementais foram preservadas;
 - validar os dez estados de `COM-005` não promove automaticamente `TRN-305`;
 - `TRN-205`, `TRN-304` e `TRN-306` permanecem parciais;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`.
@@ -82,17 +85,18 @@ Ressalvas vigentes:
 
 A [galeria candidata de Planos](screen-gallery-plans-billing.md) reúne 9 SVGs:
 
-| Participante | Tela dedicada de Planos | Fluxo | Comparação incremental | Total |
-|---|---:|---:|---:|---:|
-| Pessoa | 1 | 1 | 1 | 3 |
-| Coletivo | 1 | 1 | 1 | 3 |
-| Organização | 1 | 1 | 1 | 3 |
-| **Total candidato** | **3** | **3** | **3** | **9** |
+| Participante | Tela dedicada de Planos | Fluxo | Comparação incremental | Total | Aprovados como candidatos |
+|---|---:|---:|---:|---:|---:|
+| Pessoa | 1 | 1 | 1 | 3 | 3 |
+| Coletivo | 1 | 1 | 1 | 3 | 3 |
+| Organização | 1 | 1 | 1 | 3 | 3 |
+| **Total candidato** | **3** | **3** | **3** | **9** | **9** |
 
 Esses ativos:
 
-- estão associados à UXA-100;
+- estão associados à UXA-100/A1/A2;
 - foram inseridos como referências nas três jornadas `draft`;
+- foram auditados funcionalmente como candidatos;
 - não possuem IDs canônicos de superfície/transição;
 - não alteram a matriz canônica de 109 SVGs;
 - não representam checkout, cobrança ou oferta comercial implementados.
@@ -110,6 +114,7 @@ Esses ativos:
 | responsabilidades sem SVG dedicado | **9** |
 | fronteira documental sem tela | 1 |
 | SVGs candidatos UXA-100 | **9** |
+| candidatos funcionalmente aprovados | **9 de 9** |
 
 ## 7. Responsabilidades sem SVG dedicado
 
@@ -124,10 +129,10 @@ As novas telas de Planos não reduzem essa lacuna canônica porque ainda não fo
 
 A validação dos 109 SVGs canônicos não implica que todas as 37 transições estejam integralmente validadas. Permanecem continuidades parciais, entre elas `TRN-305`, `TRN-205`, `TRN-304` e `TRN-306`.
 
-A existência dos 9 SVGs candidatos da UXA-100 também não implica validação funcional, superfície registrada ou transição integrada.
+A aprovação funcional dos 9 SVGs candidatos da UXA-100 também **não implica superfície registrada, transição integrada ou implementação**. Ela confirma sua coerência funcional no escopo candidato da UXA-100-A2.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
 ## 9. Próxima decisão
 
-A UXA-100 passa a ter telas de Planos e integração candidata às três jornadas. O próximo ato governado é validar funcionalmente os 9 ativos candidatos e somente depois decidir sua promoção ao conjunto canônico.
+A auditoria funcional dos 9 ativos candidatos foi concluída. O próximo ato possível é decidir, separadamente, sua **fragmentação e promoção canônica**: quais superfícies existirão, quais IDs serão criados e quais transições serão registradas. Nenhuma dessas ações é automática.
