@@ -25,6 +25,7 @@ related:
   - UXA-100
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
@@ -36,20 +37,20 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas. A versão 0.19.0 preserva as **54 transições e todas as maturidades vigentes**, corrigindo somente a semântica de `TRN-416` e `TRN-426` após a redefinição de `BND-002` como fronteira genérica de contratação/dimensionamento assistido.
+Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.19.0 preserva as 54 transições e todas as maturidades vigentes após UXA-101, corrigindo somente a semântica de `GKR-TRN-416` e `GKR-TRN-426` conforme a reconciliação taxonômica da UXA-100-A4 e a redefinição de `BND-002` como fronteira genérica de contratação/dimensionamento assistido.
 
 ## 2. Convenções de estado
 
 | Estado | Significado |
 |---|---|
-| integralmente validada | origem, destino, autoridade, dados, efeito, retorno, interrupção e concorrência examinados ponta a ponta dentro do limite declarado |
+| integralmente validada | origem, destino, autoridade, dados, efeito, retorno, interrupção e concorrência examinados como uma ligação ponta a ponta **dentro do limite de autoridade declarado** |
 | localmente validada | examinada dentro do pacote indicado sem comprovação ponta a ponta |
 | parcial | cobertura incompleta ou ligação ainda não validada como conjunto |
 | contratada | autoridade define a ligação, mas não há materialização suficiente |
 | ausente | ligação necessária conhecida sem materialização suficiente |
 | não examinada | artefatos existem, mas a ligação não foi validada como conjunto |
 
-Validação documental não comprova implementação técnica nem estende autoridade sobre terceiros.
+Validação integral documental não comprova implementação técnica nem estende a autoridade da Guivos sobre sistemas de terceiros.
 
 ## 3. Contagem
 
@@ -73,6 +74,8 @@ Validação documental não comprova implementação técnica nem estende autori
 | GKR-TRN-005 | PER-005 | PER-006 | parcial | continuidade entre materializações |
 | GKR-TRN-006 | PER-006 | PER-007 | localmente validada | UXA-037 |
 | GKR-TRN-007 | PER-007 | PER-008 | **integralmente validada** | UXA-097 |
+
+`TRN-007` preserva consentimento, estado canônico, retorno e idempotência; navegar para Hoje não cria avanço ou autorização adicional.
 
 ## 5. Pessoa em Coletivos e operação do responsável
 
@@ -99,8 +102,8 @@ Validação documental não comprova implementação técnica nem estende autori
 | GKR-TRN-201 | ORG-001 | ORG-002 | parcial | ligação com visão institucional |
 | GKR-TRN-202 | ORG-002 | ORG-003 | localmente validada | distribuição entre superfícies |
 | GKR-TRN-203 | ORG-003 | PER-201 | **integralmente validada** | UXA-098 — ativação elegível à descoberta sem garantia de distribuição |
-| GKR-TRN-204 | PER-201 | PER-203 | **integralmente validada** | UXA-098 — Mapa → Detalhe com identidade e retorno preservados |
-| GKR-TRN-205 | PER-203 | BND-001 | **integralmente validada até a fronteira de autoridade Guivos** | UXA-101 — revisão consciente e processo externo não validado |
+| GKR-TRN-204 | PER-201 | PER-203 | **integralmente validada** | UXA-098 — Mapa → Detalhe com mesma oportunidade e retorno preservado |
+| GKR-TRN-205 | PER-203 | BND-001 | **integralmente validada até a fronteira de autoridade Guivos** | **UXA-101 — revisão consciente, destino/responsável, minimização de dados, revalidação, cancelamento, retorno e idempotência examinados; processo externo não é validado** |
 | GKR-TRN-206 | ORG-004 | COL-008 | contratada | superfícies bilaterais ausentes |
 | GKR-TRN-207 | COL-008 | ORG-005 | contratada | interface bilateral ausente |
 | GKR-TRN-208 | ORG-005 | ORG-006 | contratada | operação bilateral não materializada |
@@ -108,7 +111,29 @@ Validação documental não comprova implementação técnica nem estende autori
 | GKR-TRN-210 | PER-201 | PER-202 | **integralmente validada** | UXA-098 — mesma consulta/contexto preservados |
 | GKR-TRN-211 | PER-202 | PER-203 | **integralmente validada** | UXA-098 — Lista → Detalhe com identidade e retorno preservados |
 
-`TRN-205` preserva revisão em `PER-203`, confirmação consciente, revalidação de destino, cancelamento neutro, retorno sem presunção de resultado e minimização de dados até `BND-001`.
+### 6.1 Contrato V4 de `GKR-TRN-205`
+
+```text
+PER-203
+→ “Ver como participar”
+→ estado de revisão em PER-203
+→ destino externo/responsável + dados/contexto + limites explícitos
+→ confirmar conscientemente
+→ revalidar destino conhecido/autorizado
+→ TRN-205
+→ BND-001
+→ autoridade externa
+```
+
+Regras:
+
+- o estado de revisão permanece em `PER-203`, sem novo ID;
+- `BND-001` não é tela da Guivos;
+- ausência, invalidade ou alteração material do destino bloqueia redirecionamento silencioso;
+- cancelar mantém a Pessoa no Detalhe e não conta como falha;
+- a saída não confirma inscrição, reserva, compra, contratação ou evolução;
+- retorno não presume resultado externo;
+- dados/inferências da jornada não acompanham a saída sem finalidade e autorização adequadas.
 
 ## 7. Opportunity Boost
 
@@ -118,7 +143,7 @@ Validação documental não comprova implementação técnica nem estende autori
 | GKR-TRN-302 | COM-004 | COM-002 | parcial | integração com superfícies orgânicas |
 | GKR-TRN-303 | COM-003 | COM-002 | localmente validada | continuidade transversal |
 | GKR-TRN-304 | COM-002 | PER-201 | parcial | integração orgânico–patrocinado |
-| GKR-TRN-305 | COM-004 | COM-005 | **parcial** | COM-005 validado; ligação ainda não examinada ponta a ponta |
+| GKR-TRN-305 | COM-004 | COM-005 | **parcial** | COM-005 validado pela UXA-099; ligação origem→estado residual ainda não examinada ponta a ponta |
 | GKR-TRN-306 | COM-002 | PER-202 | parcial | retorno patrocinado → lista orgânica |
 
 ## 8. Planos, cobrança e ciclo de vida
@@ -144,7 +169,7 @@ Validação documental não comprova implementação técnica nem estende autori
 | GKR-TRN-415 | COL-304 | COL-301 | **localmente validada** | persistência técnica |
 | GKR-TRN-416 | COL-301 | BND-002 | **parcial** | contratação/dimensionamento assistido posterior ainda não materializado como conjunto |
 
-`TRN-416` não significa “solicitar Enterprise/Rede”. Ele representa o handoff quando a configuração desejada, em qualquer caso aplicável, exige proposta, dimensionamento, contrato ou análise específica.
+`TRN-416` não significa “solicitar Enterprise/Rede”. Ele representa o handoff quando a configuração desejada, em qualquer caso aplicável, exige proposta, dimensionamento, contrato, configuração ou análise específica.
 
 ### 8.3 Organização
 
@@ -157,18 +182,19 @@ Validação documental não comprova implementação técnica nem estende autori
 | GKR-TRN-425 | ORG-304 | ORG-301 | **localmente validada** | persistência técnica |
 | GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | contratação/dimensionamento assistido posterior ainda não materializado como conjunto |
 
-`TRN-426` não significa “solicitar Scale/Transforma”. Ele representa o handoff quando a configuração desejada exige processo assistido.
+`TRN-426` não significa “solicitar Scale/Transforma”. Ele representa o handoff quando a configuração desejada, em qualquer caso aplicável, exige proposta, dimensionamento, contrato, configuração ou análise específica.
 
-## 9. Efeito da sincronização
+## 9. Efeito da sincronização taxonômica
 
 - transições totais permanecem **54**;
-- nenhuma maturidade é promovida ou rebaixada;
-- `TRN-205` preserva a validação até `BND-001`;
+- `TRN-205` permanece **integralmente validada até `BND-001`**;
+- nenhum comportamento posterior a `BND-001` é atribuído à Guivos;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
 - `TRN-416` e `TRN-426` deixam de estar semanticamente vinculadas a Enterprise/Scale;
-- nenhuma transição de Guivos Business é criada;
-- validação documental continua distinta de implementação.
+- nenhuma nova transição é criada;
+- nenhuma transição de Guivos Business é inferida;
+- validação documental continua distinta de implementação técnica.
 
 ## 10. Próximo gate
 
-V4 permanece encerrada no limite controlável pela Guivos. V5, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
+V4 está encerrada no limite controlável pela Guivos. V5, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
