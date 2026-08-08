@@ -2,12 +2,13 @@
 id: GEM-OPPORTUNITY-BOOST-REVIEW-001
 title: Revisão da Baseline do Opportunity Boost
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 depends_on:
   - GEM-007-A1
   - GEM-010-A2
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-038
 related:
   - GEM-004-A1
@@ -25,15 +26,16 @@ normative: true
 
 ## 2. Parecer
 
-> **PASS DOCUMENTAL — mecanismo candidato definido; validações e operação permanecem pendentes.**
+> **PASS DOCUMENTAL — mecanismo candidato definido; validações, reconciliação de entitlement de Organização e operação permanecem pendentes.**
 
 ## 3. Decisões consolidadas
 
 - o Boost é add-on separado dos planos;
 - Guivos Ads é o operador econômico;
-- Coletivo Gestão, Impacto e Enterprise podem contratar;
+- Coletivo Mobiliza, Impacta e Rede podem contratar conforme a baseline econômica vigente;
 - Coletivo Livre somente poderá receber Boost Social Financiado;
-- Business Start, Growth e Scale podem contratar;
+- Organização usa `Conecta · Eleva · Transforma` e sua elegibilidade específica para Boost deverá decorrer de plano, contrato ou autoridade econômica explicitamente reconciliada;
+- `Start · Growth · Scale · Enterprise` pertencem ao Produto Especializado Guivos Business e não podem ser usados como proxy de plano de Organização;
 - somente oportunidade aprovada, ativa e atualizada poderá ser impulsionada;
 - o ranking orgânico não considera pagamento;
 - o inventário patrocinado será identificado e separado;
@@ -73,10 +75,13 @@ normative: true
 - alcance não é recomendação;
 - orçamento não é garantia de entrega ou resultado;
 - financiador não é autoridade sobre Coletivo ou participante;
-- Intelligence não recebe permissão para perfil publicitário sensível.
+- Intelligence não recebe permissão para perfil publicitário sensível;
+- Organização ≠ Guivos Business;
+- tier de Guivos Business ≠ entitlement automático de Organização.
 
 ## 6. Pendências bloqueantes
 
+- reconciliação específica do entitlement de Opportunity Boost para Organização;
 - validação de disposição a pagar;
 - teste das faixas de orçamento;
 - escolha e calibração de CPM ou CPC;
@@ -97,4 +102,4 @@ A revisão não cria oferta pública, campanha real, contrato final, projeção 
 
 ## 8. Resultado
 
-O Opportunity Boost está **documentalmente definido como mecanismo candidato** e poderá avançar, em atos separados, para validação especializada, experiência detalhada, pesquisa de mercado e eventual teste controlado.
+O Opportunity Boost está **documentalmente definido como mecanismo candidato** e poderá avançar, em atos separados, para validação especializada, reconciliação de entitlement de Organização, experiência detalhada, pesquisa de mercado e eventual teste controlado.
