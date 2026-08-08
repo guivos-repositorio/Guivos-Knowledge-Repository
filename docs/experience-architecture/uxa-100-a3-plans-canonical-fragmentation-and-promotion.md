@@ -2,7 +2,7 @@
 id: UXA-100-A3
 title: Fragmentação e Promoção Canônica de Planos, Cobrança e Ciclo de Vida
 status: draft
-version: 0.1.0
+version: 0.1.1
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 parent: UXA-100
@@ -196,7 +196,7 @@ A UXA-100-A3 não:
 - altera `TRN-205`, `TRN-304`, `TRN-305` ou `TRN-306`;
 - promove as jornadas principais;
 - inicia protótipo ou Engenharia de Produto;
-- integra a PR #199 ou a PR #200 à `main`.
+- integra a PR #200 à `main`; a PR #199/UXA-099 já compõe a baseline vigente após integração governada.
 
 ## 10. Veredito
 
