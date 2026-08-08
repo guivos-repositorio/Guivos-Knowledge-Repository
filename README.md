@@ -26,7 +26,9 @@ A autoridade transversal é o [Registro do Estado Atual](docs/project/current-st
 | Resultados Empresariais canônicos | 0 |
 | Próxima UXA | **UXA-102 não iniciada** |
 
-A UXA-101 continua encerrando V4 no limite controlável pela Guivos. O patch 2.27.1 não cria nova UXA nem promove maturidade: sincroniza os planos `Pessoa: Free/Plus/Pro`, `Coletivo: Livre/Mobiliza/Impacta/Rede`, `Organização: Conecta/Eleva/Transforma` e registra `Guivos Business: Start/Growth/Scale/Enterprise` como produto especializado, sem preço ou entitlement novo.
+A UXA-101 reformula o Detalhe de Oportunidade sem criar nova tela, valida `TRN-205` até `BND-001` e confirma que qualquer inscrição, reserva, compra, contratação ou outro resultado posterior permanece sob autoridade externa.
+
+O patch 2.27.1 não cria nova UXA principal nem promove maturidade: `GEM-004-A3` sincroniza os planos `Pessoa: Free/Plus/Pro`, `Coletivo: Livre/Mobiliza/Impacta/Rede`, `Organização: Conecta/Eleva/Transforma` e registra `Guivos Business: Start/Growth/Scale/Enterprise` como produto especializado, sem preço ou entitlement novo; `UXA-100-A4` reconcilia essa autoridade com os mesmos nove ativos UXA-100.
 
 Regra estrutural: **Organização Transforma ≠ Guivos Business Enterprise**.
 
@@ -37,6 +39,8 @@ Regra estrutural: **Organização Transforma ≠ Guivos Business Enterprise**.
 - [Arquitetura da Experiência](docs/experience-architecture/index.md)
 - [UXA-101 — Saída Consciente para Fronteira Externa](docs/experience-architecture/uxa-101-conscious-external-boundary-validation.md)
 - [UXA-100 — Planos, Cobrança e Pagamentos](docs/experience-architecture/uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
+- [UXA-100-A4 — Reconciliação Taxonômica e Revalidação](docs/experience-architecture/uxa-100-a4-plan-taxonomy-reconciliation-and-revalidation.md)
+- [Especificação Canônica da Taxonomia Global de Planos](docs/economic-model/gem-004-a3-global-plan-taxonomy-and-conceptual-specification.md)
 - [Galeria Canônica de Planos](docs/journeys/screen-gallery-plans-billing.md)
 - [Jornadas Integradas](docs/journeys/index.md)
 - [Galeria Visual Integrada](docs/journeys/screen-gallery.md)
@@ -56,6 +60,7 @@ Regra estrutural: **Organização Transforma ≠ Guivos Business Enterprise**.
 - Fronteira externa não é tela da Guivos e validação até a fronteira não valida o sistema de terceiro.
 - `BND-002` representa contratação/dimensionamento assistido quando necessário; não é sinônimo de Enterprise, Scale, Rede ou Transforma.
 - Organização e Guivos Business são estruturas distintas.
+- `GEM-004-A3` substitui somente nomenclatura, leitura conceitual, separação Organização/Business e semântica de `BND-002`; contratos econômicos históricos preservam preços, capacidades, limites e proteções.
 - Estado canônico vigente prevalece sobre estado visual obsoleto.
 - Nenhum pacote posterior, UXA ou etapa de Engenharia de Produto começa automaticamente.
 - Alterações permanentes exigem branch, validação, pull request e decisão governada.
