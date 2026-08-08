@@ -1,15 +1,16 @@
 ---
-id: ROADMAP-12.74.0
+id: ROADMAP-12.75.0
 title: Roadmap Arquitetural — Saída Consciente para Fronteira Externa Validada
 status: active
-version: 12.74.0
+version: 12.75.0
 owner: Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 supersedes_partial:
-  - ROADMAP-12.73.0
+  - ROADMAP-12.74.0
 related:
   - GKR-STATE-001
   - GPA-007
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - UXA-000
   - UXA-099
   - UXA-100
@@ -98,7 +99,8 @@ PER-203 — Detalhe
 ## 6. Fronteiras preservadas
 
 - `TRN-304`, `TRN-305` e `TRN-306`: integrações patrocinadas continuam parciais;
-- `TRN-416/426`: processo comercial após `BND-002` continua parcial;
+- `TRN-416/426`: processo de contratação/dimensionamento assistido após `BND-002` continua parcial;
+- `BND-002` não pertence semanticamente a Enterprise, Scale, Coletivo, Organização ou qualquer plano específico;
 - gateway, cobrança real, proration, grace period e regras fiscais finais permanecem fora do escopo;
 - comportamento posterior a `BND-001` permanece sob autoridade externa;
 - nenhuma implementação é criada pela validação documental.
@@ -121,7 +123,7 @@ V1 — compreensão inicial → Tela Hoje — ENCERRADA pela UXA-097
 - `TRN-001`, `TRN-003`, `TRN-004` e `TRN-005` parciais;
 - `TRN-304`, `TRN-305` e `TRN-306` parciais;
 - cobrança real e gateway de Planos;
-- processo Enterprise/Scale após `BND-002`;
+- contratação/dimensionamento assistido após `BND-002`;
 - entradas contextuais de Planos sem origem canônica adequada;
 - operação interna restante do Coletivo;
 - relação Organização–Coletivo ainda não materializada;
