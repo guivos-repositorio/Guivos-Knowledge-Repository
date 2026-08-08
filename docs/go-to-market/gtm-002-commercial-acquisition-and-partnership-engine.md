@@ -2,7 +2,7 @@
 id: GTM-002
 title: Motor Comercial, Captação e Parcerias
 status: draft
-version: 0.2.0
+version: 0.3.0
 owner: Guivos Strategy & Growth
 last_updated: 2026-08-08
 parent: GTM-000
@@ -20,11 +20,11 @@ normative: false
 
 ## 1. Finalidade
 
-Converter a estratégia territorial em um sistema mensurável de aquisição de Pessoas, captação de Coletivos, Organizações, clientes Guivos Business e relações estratégicas.
+Converter a estratégia territorial em um sistema mensurável de aquisição de Pessoas, captação de Coletivos, Organizações, clientes Guivos Business e relações estratégicas corporativas.
 
 O motor comercial deve equilibrar **demanda, oferta, capacidade e densidade**. Captar Pessoas sem oportunidades úteis, ou captar instituições sem público e proposta de valor, não constitui crescimento saudável.
 
-## 2. Fronteira canônica entre Organização e Parceiro Estratégico
+## 2. Fronteira canônica entre Organização e Parceria Estratégica
 
 A meta de Organizações e a meta de Parcerias Estratégicas medem objetos diferentes e não podem ser usadas como sinônimos.
 
@@ -39,49 +39,60 @@ Exemplos de atuação como Organização:
 - empresa que publica programa de empregabilidade, capacitação ou benefício elegível;
 - clínica, escola, instituto ou outra entidade que disponibiliza uma oportunidade dentro da Journey.
 
-Quando uma entidade gera uma oportunidade de evolução dentro da Guivos, **essa função pertence ao papel de Organização**, e a oportunidade deve ser governada como tal.
+Quando uma relação existe para gerar oportunidade, benefício, programa, serviço ou outra capacidade diretamente para Pessoas ou Coletivos dentro da Guivos, **essa relação pertence à camada de Organização**, e não à métrica de Parcerias Estratégicas.
 
-### Parceiro Estratégico
+### Parceria Estratégica
 
-`Parceiro Estratégico` não é um quarto tipo de participante e não recebe automaticamente perfil, jornada, plano ou autoridade para publicar oportunidades.
+`Parceria Estratégica` não é um quarto tipo de participante e não recebe automaticamente perfil, jornada, plano ou autoridade para publicar oportunidades.
 
-É uma **relação estratégica da Guivos com um ator externo**, alinhada ao `PC-12 — Parceiro estratégico de ecossistema` do GEM-006, criada para ampliar capacidades da própria Guivos ou do ecossistema em escala.
+É uma **relação institucional ou empresarial da Guivos enquanto empresa com uma contraparte externa**, alinhada ao `PC-12 — Parceiro estratégico de ecossistema` do GEM-006, criada para ampliar capacidade corporativa da Guivos.
 
 Sua função principal pode envolver:
 
-1. **distribuição e alcance** — canais que ampliam acesso da Guivos a públicos, territórios ou redes;
+1. **distribuição e alcance** — canais que ampliam alcance, presença, divulgação ou acesso da Guivos a públicos, territórios ou redes;
 2. **tecnologia e integração** — infraestrutura, APIs, cloud, pagamentos, identidade, segurança ou integrações materiais;
 3. **acesso institucional e territorial** — redes, hubs, associações, câmaras e atores que facilitam entrada e relacionamento em um mercado;
-4. **mídia e comunicação estratégica** — relações que ampliam presença, reputação e alcance institucional de forma governada;
-5. **habilitação operacional ou de mercado** — capacidades críticas de implantação, localização, compliance ou operação que superem uma simples relação de fornecedor;
-6. **aliança de ecossistema** — cooperação transversal em múltiplos produtos, territórios ou capacidades.
+4. **mídia e comunicação estratégica** — relações que ampliam presença, reputação, divulgação e alcance institucional de forma governada;
+5. **habilitação operacional ou de mercado** — capacidades críticas de implantação, localização, compliance, apoio ou operação que superem uma simples relação de fornecedor;
+6. **aliança empresarial transversal** — cooperação em múltiplos produtos, territórios ou capacidades da Guivos.
 
-Um fornecedor comum, uma ferramenta SaaS contratada, um anunciante, um patrocinador pontual ou uma Organização cadastrada **não se tornam Parceiros Estratégicos automaticamente**.
+Um fornecedor comum, uma ferramenta SaaS contratada, um anunciante, um patrocinador pontual ou uma Organização cadastrada **não se tornam Parceria Estratégica automaticamente**.
 
-## 3. Regra de múltiplos papéis sem dupla contagem semântica
+## 3. Regra de classificação por objeto da relação
 
-A mesma pessoa jurídica poderá exercer mais de um papel, mas cada papel deverá possuir relacionamento, objetivo e métrica próprios.
+A classificação ocorre sobre o **objeto da relação**, e não apenas sobre a pessoa jurídica envolvida.
+
+```text
+relação com a Guivos enquanto empresa
+→ pode ser Parceria Estratégica
+
+relação para entregar oportunidade, benefício, programa, serviço ou capacidade a Pessoas ou Coletivos
+→ Organização
+→ fora do KPI de Parcerias Estratégicas
+```
+
+Uma mesma pessoa jurídica poderá exercer relações diferentes, desde que cada relação tenha objetivo, responsabilidades e métricas próprios.
 
 Exemplo:
 
 ```text
 Empresa X
-├─ como Organização → oferece programa de capacitação às Pessoas
-└─ como Parceiro Estratégico → distribui a Guivos para sua rede nacional por acordo separado
+├─ relação com Pessoas → oferece programa de capacitação → Organização
+└─ relação corporativa com a Guivos → integra infraestrutura ou distribui a Guivos → Parceria Estratégica
 ```
 
 Nesse caso:
 
-- a empresa é contabilizada como `Organização ativa` pela participação estrutural no ecossistema;
-- as oportunidades por ela ofertadas entram nas métricas de oferta das Organizações;
-- a empresa somente é contabilizada também como `Parceiro Estratégico ativo` se existir uma relação estratégica separada, material e ativa com a Guivos;
-- a mesma oportunidade nunca é contabilizada novamente como resultado de parceria estratégica.
+- a atuação voltada às Pessoas é contabilizada como `Organização ativa`;
+- as oportunidades ofertadas entram nas métricas de oferta das Organizações;
+- somente o acordo corporativo independente com a Guivos poderá ser contabilizado como `Parceria Estratégica ativa`;
+- a atividade voltada a Pessoas ou Coletivos nunca é reutilizada para inflar o KPI de Parcerias Estratégicas.
 
 Portanto:
 
 ```text
 Organização ativa
-≠ Parceiro Estratégico ativo
+≠ Parceria Estratégica ativa
 ≠ oportunidade ativa
 ≠ contrato Guivos Business
 ```
@@ -137,28 +148,34 @@ Responsabilidade de Strategy/Ecosystem/Partnerships, com participação das áre
 
 Objetivos:
 
-- ampliar distribuição sem depender apenas de mídia paga;
+- ampliar alcance e distribuição sem depender apenas de mídia paga;
 - habilitar tecnologia, integração ou infraestrutura material;
 - facilitar entrada e legitimidade em novos mercados;
-- criar capacidade operacional ou institucional difícil de construir isoladamente;
-- construir alianças de longo prazo que fortaleçam escala, resiliência e eficiência da Guivos.
+- obter apoio operacional, institucional ou empresarial relevante;
+- ampliar divulgação e presença da Guivos;
+- criar capacidade difícil, lenta ou pouco eficiente de construir isoladamente;
+- construir alianças de longo prazo que fortaleçam escala, resiliência e eficiência da empresa.
 
-A meta de Parcerias Estratégicas não mede volume de oportunidades para Pessoas. Essa oferta permanece sob as métricas de Organizações e Coletivos conforme aplicável.
+A meta de Parcerias Estratégicas **não mede volume de oportunidades para Pessoas ou Coletivos**. Essa oferta permanece sob as métricas de Organizações.
+
+Parcerias Estratégicas também **não precisam gerar receita direta**. O valor recebido pela Guivos poderá ser alcance, escala, infraestrutura, tecnologia, integração, apoio, divulgação, acesso institucional, redução de custo ou risco, entrada territorial ou outra capacidade material.
 
 ## 5. Critério para uma Parceria Estratégica ser considerada ativa
 
-Para o KPI deste GTM, uma contraparte somente conta como `Parceiro Estratégico ativo` quando existir, na janela de gestão:
+Para o KPI deste GTM, uma relação somente conta como `Parceria Estratégica ativa` quando existir, na janela de gestão:
 
+- relação institucional ou empresarial diretamente com a Guivos enquanto empresa;
 - objetivo estratégico bilateral documentado;
-- contribuição material identificável para distribuição, capacidade, infraestrutura, integração, acesso territorial ou escala do ecossistema;
+- contribuição material identificável para alcance, distribuição, capacidade, infraestrutura, integração, apoio, divulgação, acesso territorial, eficiência ou escala;
 - contrapartida legítima para a outra parte;
 - owner definido na Guivos;
 - ao menos uma frente de trabalho efetivamente ativa ou capacidade já operacional;
 - métricas, entregáveis ou resultado verificável;
 - condição de continuidade, revisão e saída.
 
-Não contam como parceria estratégica ativa, isoladamente:
+Não contam como Parceria Estratégica ativa, isoladamente:
 
+- relação cujo objeto principal seja entregar oportunidades, benefícios, programas ou serviços a Pessoas ou Coletivos — essa relação deve ser classificada como Organização;
 - lead ou contato em prospecção;
 - reunião institucional;
 - carta de intenção sem execução;
@@ -170,20 +187,20 @@ Não contam como parceria estratégica ativa, isoladamente:
 - anunciante ou patrocinador pontual;
 - investidor ou acionista apenas por possuir capital.
 
-Para evitar inflação do indicador, uma mesma contraparte conta **uma vez** no total de Parceiros Estratégicos ativos, mesmo que existam múltiplas frentes estratégicas simultâneas.
+Para evitar inflação do indicador, uma mesma contraparte conta **uma vez** no total de Parcerias Estratégicas ativas, ainda que a aliança corporativa possua múltiplas frentes simultâneas.
 
 ## 6. Proposta de valor bilateral das Parcerias Estratégicas
 
-| Tipo de relação estratégica | Guivos recebe | Parceiro recebe |
+| Tipo de relação estratégica | Guivos recebe | Contraparte recebe |
 |---|---|---|
-| distribuição/canal | alcance qualificado, acesso a base ou território | proposta de valor adicional para sua rede, diferenciação e possível economia contratual governada |
-| tecnologia/integração | capacidade técnica, velocidade, interoperabilidade | receita contratual quando aplicável, consumo, case e expansão de uso |
-| acesso institucional/territorial | conexões, legitimidade operacional e entrada de mercado | fortalecimento de sua rede, inovação, conexão com o ecossistema e projetos conjuntos |
-| mídia/comunicação | alcance e construção institucional | conteúdo, associação institucional legítima, audiência ou colaboração acordada |
-| habilitação operacional | redução de fricção, risco ou tempo de entrada | relação comercial, caso de referência ou expansão contratual |
-| aliança transversal de ecossistema | capacidade que atravessa produtos ou territórios | acesso a uma plataforma/ecossistema complementar e criação conjunta de valor |
+| distribuição/canal | alcance qualificado, distribuição e acesso a território | diferenciação, fortalecimento de sua rede, colaboração ou economia contratual quando aplicável |
+| tecnologia/integração | capacidade técnica, infraestrutura, velocidade e interoperabilidade | receita contratual quando aplicável, consumo, case e expansão de uso |
+| acesso institucional/territorial | conexões, legitimidade operacional e entrada de mercado | fortalecimento de rede, inovação, conexão empresarial e projetos conjuntos |
+| mídia/comunicação | alcance, divulgação e construção institucional | conteúdo, associação institucional legítima, audiência ou colaboração acordada |
+| habilitação operacional | redução de fricção, risco, custo ou tempo de entrada | relação comercial, caso de referência, expansão contratual ou cooperação |
+| aliança transversal empresarial | capacidade que atravessa produtos ou territórios | acesso a capacidades complementares e criação conjunta de valor |
 
-A contrapartida poderá ser financeira ou não financeira, mas deverá ser explícita, proporcional e compatível com os guardrails do GEM-006.
+A contrapartida poderá ser **financeira ou não financeira**. Receita direta não é requisito para caracterizar uma Parceria Estratégica. O valor bilateral deverá ser explícito, proporcional e compatível com os guardrails do GEM-006.
 
 ## 7. Funil comercial mínimo
 
@@ -207,7 +224,7 @@ Parcerias Estratégicas utilizam funil próprio:
 ```text
 contraparte-alvo
 → contato
-→ tese bilateral qualificada
+→ tese bilateral corporativa qualificada
 → desenho da aliança
 → compromisso formal aplicável
 → ativação
@@ -257,14 +274,14 @@ A meta de 40% de proposta → contrato é parâmetro de planejamento a ser recal
 | Etapa | Meta M12 |
 |---|---:|
 | contrapartes estratégicas mapeadas | 100 |
-| teses bilaterais qualificadas | 50 |
-| relações estratégicas ativas | 25 |
+| teses bilaterais corporativas qualificadas | 50 |
+| Parcerias Estratégicas ativas | 25 |
 
-A frente não inclui Organizações cujo único papel seja ofertar oportunidades na Journey.
+Esta frente é exclusivamente corporativa/institucional em relação à Guivos. Relações de oferta destinadas a Pessoas ou Coletivos são classificadas como Organizações.
 
 ## 9. Metas cumulativas de captação
 
-| Horizonte | Pessoas | Coletivos ativos | Coletivos pagantes | Organizações ativas | Organizações pagantes | Business contratos | Parceiros Estratégicos ativos |
+| Horizonte | Pessoas | Coletivos ativos | Coletivos pagantes | Organizações ativas | Organizações pagantes | Business contratos | Parcerias Estratégicas ativas |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | M6 | 5.000 | 100 | 30 | 30 | 8 | 2 | 10 |
 | M12 | 20.000 | 300 | 100 | 100 | 30 | 8 | 25 |
@@ -273,7 +290,7 @@ A frente não inclui Organizações cujo único papel seja ofertar oportunidades
 | M48 | 600.000 | 5.000 | 1.800 | 1.800 | 600 | 140 | 280 |
 | M60 | 1.000.000 | 8.000 | 3.000 | 3.000 | 1.000 | 250 | 500 |
 
-A coluna `Parceiros Estratégicos ativos` conta contrapartes únicas com relação estratégica qualificada. Não mede Organizações, oportunidades publicadas, fornecedores comuns ou clientes Business.
+A coluna `Parcerias Estratégicas ativas` mede relações empresariais/institucionais qualificadas diretamente com a Guivos. Não mede Organizações, oportunidades publicadas, relações voltadas a usuários, fornecedores comuns ou clientes Business.
 
 ## 10. Canais de crescimento
 
@@ -288,7 +305,7 @@ Os canais candidatos são:
 - relações com Organizações, Coletivos e redes institucionais;
 - campanhas digitais mensuráveis;
 - assessoria de imprensa e conteúdo de autoridade;
-- alianças estratégicas de distribuição, integração e entrada de mercado.
+- alianças estratégicas de distribuição, integração, apoio, divulgação e entrada de mercado.
 
 Nenhum canal possui orçamento autorizado por este documento.
 
@@ -309,8 +326,8 @@ Nenhum canal possui orçamento autorizado por este documento.
 - metas × realizado;
 - conversão por etapa e canal;
 - receita nova, expansão, downgrade e churn;
-- parceiros estratégicos ativos por categoria e território;
-- resultados e entregáveis das alianças;
+- Parcerias Estratégicas ativas por categoria e território;
+- resultados e entregáveis das alianças, inclusive não financeiros;
 - produtividade comercial;
 - CAC quando mensurável;
 - qualidade e retenção das coortes captadas.
@@ -354,9 +371,10 @@ Especialização por segmento e território somente quando produtividade, margem
 - venda não pode prometer capacidade inexistente;
 - meta comercial não altera critérios de relevância ou confiança;
 - não captamos Coletivos ou Organizações apenas para aumentar contagem;
-- Organização não vira Parceiro Estratégico apenas por gerar oportunidades;
-- parceria estratégica sem valor bilateral verificável não deve ser mantida;
-- parceria estratégica não compra relevância, ranking ou acesso indevido ao contexto individual;
+- relação destinada a Pessoas ou Coletivos deve ser classificada como Organização, não como Parceria Estratégica;
+- Parceria Estratégica sem valor bilateral verificável não deve ser mantida;
+- Parceria Estratégica pode gerar valor não financeiro e não deve ser desqualificada apenas por não gerar receita direta;
+- Parceria Estratégica não compra relevância, ranking ou acesso indevido ao contexto individual;
 - incentivos de equipe não devem premiar venda inadequada ou churn futuro;
 - descontos e exceções devem ser rastreáveis;
 - expansão comercial deve respeitar capacidade de suporte e implementação.
