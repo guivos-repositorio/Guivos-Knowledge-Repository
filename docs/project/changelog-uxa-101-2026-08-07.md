@@ -30,7 +30,7 @@ Registra o fechamento documental de V4 no lado controlado pela Guivos, entre `PE
 - redirecionamento silencioso é bloqueado quando o destino não pode ser confirmado;
 - `TRN-205` promovida de parcial para **integralmente validada até a fronteira de autoridade Guivos**;
 - `BND-001` passa a examinado e permanece sem tela Guivos;
-- Jornada da Pessoa, galerias, catálogo, matriz, superfícies, transições e lacunas foram sincronizados;
+- Jornada da Pessoa e Jornada da Organização, galerias, catálogo, matriz, superfícies, transições e lacunas foram sincronizados;
 - nenhuma inscrição, reserva, compra, contratação ou resultado externo é presumido.
 
 ## 3. Estado proposto
@@ -43,6 +43,7 @@ Registra o fechamento documental de V4 no lado controlado pela Guivos, entre `PE
 | UXA-000 | **0.94.0** |
 | Jornadas Integradas | **0.31.0** |
 | Jornada da Pessoa | `draft` **0.15.0** |
+| Jornada da Organização | `draft` **0.8.0** |
 | SVGs canônicos | **118** |
 | associações | **118** |
 | perfis | **31** |
