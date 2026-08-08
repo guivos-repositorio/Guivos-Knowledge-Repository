@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.19.0
+version: 0.20.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-08
 related:
@@ -25,6 +25,7 @@ related:
   - UXA-100
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
@@ -37,7 +38,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.19.0 preserva as **54 transições** e suas maturidades, sincronizando apenas a semântica de `TRN-416`, `TRN-426` e `BND-002` com a autoridade conceitual vigente de planos.
+Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.20.0 adiciona seis handoffs bidirecionais de origem voluntária e retorno de Planos pela UXA-100-A4, elevando a contagem de 54 para **60 transições** sem alterar a maturidade das transições internas de contratação/ciclo ou das fronteiras existentes.
 
 ## 2. Convenções de estado
 
@@ -60,8 +61,8 @@ Validação integral documental não comprova implementação técnica nem esten
 | Pessoa em Coletivos e operação do responsável | 13 |
 | Organização, oportunidades e relações bilaterais | 11 |
 | Opportunity Boost | 6 |
-| Planos, cobrança e ciclo de vida | 17 |
-| **Total** | **54** |
+| Planos, cobrança e ciclo de vida | 23 |
+| **Total** | **60** |
 
 ## 4. Jornada pessoal
 
@@ -157,6 +158,8 @@ Organização: Conecta · Eleva · Transforma
 Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem transições próprias nesta frente)
 ```
 
+Abrir Planos voluntariamente é navegação administrativa e não constitui seleção de plano, contratação, cobrança ou alteração de entitlement.
+
 ### 8.1 Pessoa
 
 | ID | Origem | Destino | Estado | Lacuna |
@@ -166,6 +169,10 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 | GKR-TRN-403 | PER-301 | PER-303 | **localmente validada** | regra financeira entre ciclos |
 | GKR-TRN-404 | PER-303 | PER-304 | **localmente validada** | execução do entitlement |
 | GKR-TRN-405 | PER-304 | PER-301 | **localmente validada** | persistência técnica |
+| GKR-TRN-406 | PER-009 | PER-301 | **contratada** | `PER-009` ainda sem materialização visual suficiente para validação ponta a ponta |
+| GKR-TRN-407 | PER-301 | PER-009 | **contratada** | retorno canônico conhecido; origem/destino de Conta ainda sem materialização própria |
+
+`TRN-406/407` formalizam exclusivamente a origem e o retorno voluntários. Repetir a navegação não duplica efeito, e retornar não equivale a cancelar assinatura ou alterar plano.
 
 ### 8.2 Coletivo
 
@@ -177,8 +184,12 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 | GKR-TRN-414 | COL-303 | COL-304 | **localmente validada** | execução operacional/transacional |
 | GKR-TRN-415 | COL-304 | COL-301 | **localmente validada** | persistência técnica |
 | GKR-TRN-416 | COL-301 | BND-002 | **parcial** | processo posterior de contratação/dimensionamento assistido não materializado |
+| GKR-TRN-417 | COL-002 | COL-301 | **integralmente validada** | navegação administrativa sem mutação comercial; contexto e autoridade preservados pela UXA-100-A4 |
+| GKR-TRN-418 | COL-301 | COL-002 | **integralmente validada** | retorno à Visão Geral sem alteração de plano/capacidade; UXA-100-A4 |
 
 `TRN-416` não significa “ir para Enterprise”. Ele significa sair do autoatendimento quando a contratação concreta exigir assistência. A maturidade permanece parcial.
+
+`TRN-417/418` não promovem `TRN-411..416` nem comprovam cobrança, contratação ou persistência técnica de entitlement.
 
 ### 8.3 Organização
 
@@ -190,8 +201,12 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 | GKR-TRN-424 | ORG-303 | ORG-304 | **localmente validada** | execução institucional |
 | GKR-TRN-425 | ORG-304 | ORG-301 | **localmente validada** | persistência técnica |
 | GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | processo posterior de contratação/dimensionamento assistido não materializado |
+| GKR-TRN-427 | ORG-001 | ORG-301 | **integralmente validada** | navegação institucional sem mutação comercial; Organização/unidade/autoridade preservadas pela UXA-100-A4 |
+| GKR-TRN-428 | ORG-301 | ORG-001 | **integralmente validada** | retorno à Visão Geral sem alteração comercial; UXA-100-A4 |
 
 `TRN-426` não significa “ir para Business Scale”. A Organização permanece participante e Guivos Business permanece produto separado. A maturidade da transição continua parcial.
+
+A UXA-100-A4 também corrige o rótulo visual obsoleto `Guivos Business` em `ORG-001`, sem transformar a superfície em novo ativo.
 
 ## 9. BND-002
 
@@ -199,23 +214,23 @@ Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem t
 
 A fronteira poderá ser alcançada quando a necessidade real exigir proposta, dimensionamento, análise específica, contrato ou configuração assistida. O nome do plano, isoladamente, não é autoridade suficiente para determinar o handoff.
 
-A correção semântica:
+A correção semântica preservada:
 
-- não cria transição;
-- não remove transição;
-- não altera contagem;
+- não transforma `BND-002` em checkout;
 - não promove `TRN-416` ou `TRN-426`;
 - não cria fluxo de Guivos Business.
 
 ## 10. Preservações de maturidade
 
-- transições totais permanecem **54**;
-- `TRN-205` permanece **integralmente validada até `BND-001`**;
+- transições totais passam a **60**;
+- `TRN-406/407` ficam **contratadas** até materialização suficiente de `PER-009`;
+- `TRN-417/418` e `TRN-427/428` ficam **integralmente validadas** no limite documental de navegação administrativa;
+- `TRN-401..405`, `TRN-411..415` e `TRN-421..425` permanecem localmente validadas;
+- `TRN-205` permanece integralmente validada até `BND-001`;
 - nenhum comportamento posterior a `BND-001` é atribuído à Guivos;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
-- nenhuma nova transição é criada;
 - validação documental continua distinta de implementação técnica.
 
 ## 11. Próximo gate
 
-V4 permanece encerrada no limite controlável pela Guivos. V5/UXA-102, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
+A lacuna de **identidade da origem voluntária de Planos** é encerrada pela UXA-100-A4. A materialização própria de `PER-009`, caso justificada, permanece uma lacuna separada. V5/UXA-102, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
