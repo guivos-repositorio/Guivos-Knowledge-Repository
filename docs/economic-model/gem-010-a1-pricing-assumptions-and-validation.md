@@ -2,13 +2,14 @@
 id: GEM-010-A1
 title: Premissas de Precificação e Validação Comercial
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
-last_updated: 2026-07-28
+last_updated: 2026-08-08
 parent: GEM-010
 depends_on:
   - GEM-004-A1
   - GEM-004-A2
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-009
   - GEM-010
 related:
@@ -25,6 +26,8 @@ Este documento registra os preços candidatos como premissas rastreáveis do mod
 
 Preço candidato não é preço comprovado, receita, margem, caixa, disposição a pagar ou autorização de cobrança.
 
+A versão 0.2.0 reconcilia a nomenclatura de planos com a autoridade vigente e impede que preços historicamente atribuídos à jornada de Organização sejam interpretados como tabela de preços de Guivos Business.
+
 ## 2. Tabela de parâmetros candidatos
 
 ### Pessoas
@@ -40,17 +43,21 @@ Preço candidato não é preço comprovado, receita, margem, caixa, disposição
 | Plano | Mensal | Anual | Estado |
 |---|---:|---:|---|
 | Coletivo Livre | R$ 0,00 | R$ 0,00 | baseline gratuito limitado |
-| Coletivo Gestão | R$ 89,90 | R$ 899,00 | candidato para validação |
-| Coletivo Impacto | R$ 249,90 | R$ 2.499,00 | candidato para validação |
-| Coletivo Enterprise | sob consulta | contrato anual | dimensionamento obrigatório |
+| Coletivo Mobiliza | R$ 89,90 | R$ 899,00 | candidato para validação |
+| Coletivo Impacta | R$ 249,90 | R$ 2.499,00 | candidato para validação |
+| Coletivo Rede | sob consulta | contrato anual | dimensionamento obrigatório |
 
 ### Organizações
 
 | Plano | Mensal | Anual | Estado |
 |---|---:|---:|---|
-| Guivos Business Start | R$ 299,00 | R$ 2.990,00 | candidato para validação |
-| Guivos Business Growth | R$ 799,00 | R$ 7.990,00 | candidato para validação |
-| Guivos Business Scale | a partir de R$ 1.990,00 | contrato anual | dimensionamento obrigatório |
+| Organização Conecta | R$ 299,00 | R$ 2.990,00 | candidato para validação |
+| Organização Eleva | R$ 799,00 | R$ 7.990,00 | candidato para validação |
+| Organização Transforma | a partir de R$ 1.990,00 | contrato anual | dimensionamento obrigatório |
+
+### Guivos Business
+
+Guivos Business possui tiers `Start · Growth · Scale · Enterprise`, mas esta autoridade **não lhes atribui os preços da tabela de Organização**. Preços, limites e entitlements do Produto Especializado Business permanecem dependentes de autoridade comercial própria.
 
 ## 3. Premissas comerciais
 
@@ -60,11 +67,12 @@ Preço candidato não é preço comprovado, receita, margem, caixa, disposição
 - o plano anual é antecipado;
 - o preço anual equivale aproximadamente a dez mensalidades;
 - o desconto anual candidato não poderá ser apresentado como economia garantida quando condições mudarem;
-- Enterprise e Scale exigem proposta, capacidade e contrato;
+- Coletivo Rede e Organização Transforma podem exigir proposta, capacidade e contrato conforme dimensionamento;
 - acesso financiado possui preço contratual separado do beneficiário;
 - comissão, taxa do meio de pagamento, impostos e repasses não estão incluídos nesta tabela;
 - não existe trial com conversão automática na baseline inicial;
-- preços internacionais exigirão poder de compra, tributos, moeda, meios de pagamento e estratégia local próprios.
+- preços internacionais exigirão poder de compra, tributos, moeda, meios de pagamento e estratégia local próprios;
+- Organização ≠ Guivos Business.
 
 ## 4. Natureza das premissas
 
@@ -75,7 +83,8 @@ Preço candidato não é preço comprovado, receita, margem, caixa, disposição
 | cotas de Pessoas | hipótese de utilidade e conversão | não testada |
 | cotas de Coletivos | hipótese de capacidade e valor | não testada |
 | cotas de Organizações | hipótese de segmentação | não testada |
-| demanda por Enterprise ou Scale | hipótese | não testada |
+| demanda por Rede ou Transforma | hipótese | não testada |
+| preços e entitlements de Guivos Business | desconhecidos nesta autoridade | governança própria pendente |
 | disposição a pagar | desconhecida | pesquisa pendente |
 | taxa de conversão | desconhecida | instrumentação pendente |
 | custos de servir | desconhecidos | modelagem pendente |
@@ -131,12 +140,12 @@ As faixas abaixo servem somente para pesquisa de sensibilidade e não criam novo
 |---|---:|---:|---:|
 | Guivos Plus | R$ 19,90 | R$ 24,90 | R$ 29,90 |
 | Guivos Pro | R$ 39,90 | R$ 49,90 | R$ 59,90 |
-| Coletivo Gestão | R$ 69,90 | R$ 89,90 | R$ 119,90 |
-| Coletivo Impacto | R$ 199,90 | R$ 249,90 | R$ 349,90 |
-| Business Start | R$ 249,00 | R$ 299,00 | R$ 399,00 |
-| Business Growth | R$ 649,00 | R$ 799,00 | R$ 999,00 |
+| Coletivo Mobiliza | R$ 69,90 | R$ 89,90 | R$ 119,90 |
+| Coletivo Impacta | R$ 199,90 | R$ 249,90 | R$ 349,90 |
+| Organização Conecta | R$ 249,00 | R$ 299,00 | R$ 399,00 |
+| Organização Eleva | R$ 649,00 | R$ 799,00 | R$ 999,00 |
 
-Enterprise e Scale deverão ser pesquisados por composição de valor, capacidade e contrato, não por um único preço de prateleira.
+Coletivo Rede e Organização Transforma deverão ser pesquisados por composição de valor, capacidade e contrato, não por um único preço de prateleira. Esta tabela não constitui pesquisa de preço para os tiers de Guivos Business.
 
 ## 7. Perguntas de validação
 
@@ -152,19 +161,23 @@ Enterprise e Scale deverão ser pesquisados por composição de valor, capacidad
 ### Coletivos
 
 - uma atividade e uma oportunidade mensais tornam o Livre útil?
-- quatro atividades e quatro oportunidades justificam o Gestão?
+- quatro atividades e quatro oportunidades justificam o Mobiliza?
 - seis publicações ativas são suficientes para pequena operação?
-- quinze atividades e quinze oportunidades segmentam adequadamente o Impacto?
+- quinze atividades e quinze oportunidades segmentam adequadamente o Impacta?
 - monetização, pagamentos, indicadores e integrações justificam assinatura?
 - quais Coletivos precisam de acesso patrocinado?
 
 ### Organizações
 
-- Start atende operação inicial real?
-- Growth oferece ganho operacional e analítico claro?
+- Conecta atende operação institucional inicial real?
+- Eleva oferece ganho operacional e analítico claro?
 - cotas por mês e publicações ativas refletem uso institucional?
-- Power BI, API, SSO, unidades e SLA justificam Scale?
+- Power BI, API, SSO, unidades e SLA justificam Transforma ou dimensionamento assistido?
 - o comprador prefere preço por plano, unidade, usuário, programa ou capacidade?
+
+### Guivos Business
+
+A validação de preço do Produto Especializado Business deve ocorrer em frente própria, sem reutilizar automaticamente as faixas de Organização.
 
 ## 8. Métricas necessárias
 
@@ -268,7 +281,8 @@ O modelo deverá comparar, no mínimo:
 - acesso patrocinado;
 - mix mensal e anual;
 - mix entre Pessoas, Coletivos e Organizações;
-- Enterprise e Scale contratados;
+- contratação dimensionada de Rede e Transforma;
+- Guivos Business em cenário separado quando houver autoridade econômica própria;
 - falha de pagamento e reembolso.
 
 ## 13. Limites
@@ -286,4 +300,5 @@ Este documento não aprova:
 - gateway;
 - contrato;
 - oferta pública;
-- implementação.
+- implementação;
+- preço ou entitlement de Guivos Business.
