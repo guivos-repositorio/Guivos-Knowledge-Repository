@@ -2,7 +2,7 @@
 id: GEM-F2-M0-M6-CAPACITY-HEADCOUNT-BASELINE-001
 title: Baseline de Capacidade, Papéis e Headcount M0–M6 — F2
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -16,6 +16,7 @@ depends_on:
   - GTM-001
   - GTM-002
 related:
+  - GEM-F2B-M0-M6-PEOPLE-DELIVERY-COST-001
   - GEM-010-COST-AND-CAPACITY-MODEL-001
   - GEM-008-COST-ARCHITECTURE-001
 normative: true
@@ -80,7 +81,7 @@ Os modos abaixo são **alternativas de cobertura**, não decisões de contrataç
 - `partner_enabled`;
 - `TBD`.
 
-Nenhum modo possui custo aprovado nesta versão.
+Nenhum modo possui custo aprovado nesta autoridade. A modelagem econômica detalhada desses modos é governada por [F2-B — Modelo de Entrega e Custo de Pessoas M0–M6](gem-f2b-m0-m6-people-delivery-and-cost-model.md).
 
 ## 5. Base explícita do GTM para M0–M6
 
@@ -271,30 +272,41 @@ Se uma cobertura essencial estiver `unavailable`, `constrained`, `saturated` ou 
 
 ## 12. Relação com F1-C05 — custo de equipe
 
-Após F2, o estado de `F1-C05` pode evoluir de **“bloqueado por ausência de dimensionamento funcional”** para:
+Após F2 e F2-B, o estado de `F1-C05` é:
 
-> `partially_parameterized_by_F2 — 3 dedicated role-equivalents of reference plus mandatory shared/fractional/conditional coverage; delivery mode, HC, compensation and amount remain TBD`.
+> `partially_calibrated_by_F2B — 3 dedicated role-equivalents of reference plus mandatory shared/fractional/conditional coverage; delivery modes and salary benchmarks are governed, while actual HC, assignment, overlap, regime, compensation, allocation and complete amount remain TBD`.
 
-Ainda faltam para converter F1-C05 em custo mensal:
+F2-B adiciona:
+
+- modos econômicos de entrega;
+- benchmarks rastreáveis de Growth/GTM e comercial B2B;
+- proxy limitado para ecossistema/parcerias;
+- benchmark auxiliar de CRM/CX para eventual reforço de suporte/CS;
+- componentes trabalhistas oficiais mínimos e guardrails contra multiplicador CLT incompleto;
+- prevenção de dupla contagem com outros pools.
+
+Ainda faltam para converter F1-C05 em custo mensal completo:
 
 - decisão de quem cobre cada papel;
 - sobreposição admissível entre papéis;
-- vínculo/regime de execução;
+- vínculo/regime de execução por papel;
 - quantidade efetiva de pessoas/prestadores;
-- remuneração ou preço do serviço;
+- dedicação/rateio por período;
+- remuneração ou preço do serviço aplicável;
 - encargos, benefícios, impostos e custos acessórios quando aplicáveis;
 - datas de início/fim;
 - capacidade real observada.
 
 ## 13. O que F2 não autoriza
 
-F2 não autoriza:
+F2 e F2-B não autorizam:
 
 - contratar 3 pessoas;
 - contratar 18 pessoas;
 - afirmar que a Guivos possui atualmente qualquer uma dessas funções contratadas;
-- definir salários;
+- definir salários ou propostas de remuneração;
 - escolher CLT, PJ, contractor ou outsourcing;
+- transformar benchmark em orçamento;
 - criar vagas;
 - iniciar Product Engineering;
 - contratar Neo4j, cloud, IA ou stack;
@@ -302,7 +314,7 @@ F2 não autoriza:
 - calcular burn completo;
 - calcular runway ou capital necessário.
 
-## 14. Resultado F2
+## 14. Resultado F2 após F2-B
 
 | Gate | Resultado |
 |---|---|
@@ -313,20 +325,23 @@ F2 não autoriza:
 | separação capacidade × HC × contratação | PASS |
 | matriz mensal de cobertura | PASS |
 | drivers de reforço/saturação | PASS |
+| modos de entrega econômicos | PASS — F2-B |
+| benchmarks de remuneração | PARTIAL PASS — R01/R02 + proxy R03 + auxiliar CRM/CX |
 | HC interno total | PENDING |
-| regime de contratação | PENDING |
-| salários/custo por papel | PENDING |
+| assignment/sobreposição/dedicação | PENDING |
+| regime por papel | PENDING |
+| remuneração/fee real por papel | PENDING |
 | engenharia de implementação | BLOCKED BY PRODUCT ENGINEERING |
-| custo mensal F1-C05 | NOT CALCULABLE |
+| custo mensal completo F1-C05 | NOT CALCULABLE |
 | burn/runway/capital | NOT CALCULABLE |
 
-**Parecer:** `PARTIAL PASS — M0–M6 functional capacity and role-equivalent baseline defined; exact internal headcount, delivery modes, compensation and monetary people cost remain pending.`
+**Parecer:** `PARTIAL PASS — M0–M6 functional capacity, delivery-mode economics and traceable people benchmarks are governed; exact assignment, headcount, overlap, regimes, allocations, compensation and complete monetary people cost remain pending.`
 
 ## 15. Próximo incremento econômico permitido
 
-O próximo incremento econômico-financeiro deverá escolher explicitamente entre:
+Após F2-B, o próximo incremento econômico-financeiro deverá escolher explicitamente entre:
 
-1. **F2-B — modelo de entrega e custo de pessoas**, atribuindo cobertura provável, regime candidato e benchmarks rastreáveis sem contratar; ou
+1. **F2-C — assignment e dedicação M0–M6**, definindo quem cobre o quê, sobreposições e frações de capacidade sem contratar; ou
 2. **F1-C — completar evidências/cotações materiais ainda faltantes**.
 
 Somente depois de F1 e F2 terem cobertura monetária material suficiente deverá o programa avançar para **F3 — caixa, capital de giro e necessidade de capital**.
