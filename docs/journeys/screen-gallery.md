@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.21.0
+version: 0.22.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-005
   - UXA-070
@@ -28,6 +28,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
@@ -44,7 +45,7 @@ normative: false
 
 Esta seção reúne os **118 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-101 reformula um ativo já canônico, `uxa-007-opportunity-detail-mobile.svg`, para explicitar a revisão consciente antes da saída externa. A contagem permanece 118 porque não foi criada nova superfície nem novo SVG.
+A UXA-100-A4 não adiciona SVGs: reformula in-place as navegações de `COL-002`, `ORG-001`, `COL-301` e `ORG-301`, preservando a contagem visual. A nova responsabilidade `PER-009` permanece sem SVG dedicado.
 
 ## 2. Estado do instrumento
 
@@ -53,13 +54,15 @@ A galeria permanece `active` como instrumento de inspeção. Esse status não si
 Ressalvas vigentes:
 
 - **118 SVGs canônicos** compartilham **31 perfis de rastreabilidade**;
-- 9 responsabilidades continuam sem SVG dedicado;
+- **10 responsabilidades** continuam sem SVG dedicado;
 - **duas fronteiras** permanecem corretamente sem tela;
 - **118 SVGs possuem validação funcional documental vigente**;
 - **0 aguardam validação funcional específica**;
+- `TRN-406/407` estão contratadas porque `PER-009` ainda não foi materializada;
+- `TRN-417/418` e `TRN-427/428` estão integralmente validadas no limite documental de navegação administrativa;
 - `TRN-205` está validada até `BND-001` pela UXA-101, sem validar o processo externo posterior;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
-- as 15 transições internas de Planos permanecem localmente validadas;
+- as 15 transições comerciais internas de Planos permanecem localmente validadas;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`.
 
 ## 3. Instrumentos de inspeção
@@ -80,7 +83,7 @@ Ressalvas vigentes:
 | 3 | [Coletivos](screen-gallery-collectives.md) | 34 | descoberta → solicitação → gestão → Meus Coletivos → Central → Início |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
-| 6 | [Planos, Comparação e Cobrança](screen-gallery-plans-billing.md) | **9** | plano atual → comparação → contratação/ciclo → resultado/recuperação |
+| 6 | [Planos, Comparação e Cobrança](screen-gallery-plans-billing.md) | **9** | origem administrativa → plano atual → comparação → contratação/ciclo → resultado/recuperação → retorno |
 |  | **Total canônico** | **118** | **118 validados; 0 pendentes** |
 
 ## 5. Cobertura canônica confirmada
@@ -92,14 +95,15 @@ Ressalvas vigentes:
 | perfis de rastreabilidade | **31** |
 | com validação funcional vigente | **118** |
 | pendentes de validação específica | **0** |
-| superfícies/estados/fronteiras | **53** |
-| transições documentais | **54** |
-| IDs com referência visual | **42 de 53** |
-| responsabilidades sem SVG dedicado | **9** |
+| superfícies/estados/fronteiras | **54** |
+| transições documentais | **60** |
+| IDs com referência visual | **42 de 54** |
+| responsabilidades sem SVG dedicado | **10** |
 | fronteiras documentais sem tela | **2** |
 
 ## 6. Responsabilidades sem SVG dedicado
 
+- `GKR-SURF-PER-009`;
 - `GKR-SURF-COL-004` a `GKR-SURF-COL-008`;
 - `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007`.
 
@@ -107,15 +111,17 @@ Ressalvas vigentes:
 
 ## 7. Fronteiras de validação
 
-A validação dos 118 SVGs não implica que todas as 54 transições estejam integralmente validadas. Em particular:
+A validação dos 118 SVGs não implica que todas as 60 transições estejam integralmente validadas. Em particular:
 
-- `TRN-205` é integral somente **até a fronteira de autoridade Guivos**; processos posteriores pertencem ao terceiro;
+- `TRN-406/407` permanecem contratadas;
+- `TRN-417/418` e `TRN-427/428` são integrais apenas para navegação administrativa e retorno sem efeito comercial;
+- `TRN-205` é integral somente **até a fronteira de autoridade Guivos**;
 - `TRN-401` a `405`, `411` a `415` e `421` a `425` são localmente validadas;
 - `TRN-304`, `305`, `306`, `416` e `426` permanecem parciais;
 - cobrança real, gateway, proration e processo após `BND-002` permanecem fora do escopo.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
-## 8. Estado após UXA-101
+## 8. Estado após UXA-100-A4
 
-V4 está encerrada no limite controlável pela Guivos. Pessoa, Coletivo e Organização continuam `draft`; V5 não foi iniciada e nenhuma implementação técnica é iniciada automaticamente.
+A identidade da origem voluntária de Planos foi reconciliada sem novo SVG. V4 continua encerrada pela UXA-101 no limite controlável pela Guivos. Pessoa, Coletivo e Organização continuam `draft`; V5/UXA-102 não foi iniciada e nenhuma implementação técnica é iniciada automaticamente.
