@@ -14,6 +14,7 @@ related:
   - GPA-004
   - GPA-007
   - GEM-004-A1
+  - GEM-004-A3
   - GEM-007-BUSINESS-ECONOMIC-ROLE-001
   - UXA-000
   - UXA-055
@@ -31,6 +32,7 @@ related:
   - UXA-098
   - UXA-099
   - UXA-100
+  - UXA-100-A4
   - UXA-101
   - GKR-JOURNEYS-001
   - GKR-JOURNEY-SCREEN-GALLERY-001
@@ -49,7 +51,7 @@ normative: true
 
 Este registro declara o estado global proposto após a UXA-101 e o **patch documental de sincronização da taxonomia global de planos**. Em caso de divergência após integração governada, este registro prevalece sobre resumos não normativos.
 
-O patch 2.27.1 não cria UXA, não cria marco, não promove maturidade e não inicia nova frente. `UXA-101` continua sendo a última UXA integrada/proposta da sequência e `M7.88` permanece o marco vigente.
+O patch 2.27.1 não cria nova UXA principal, não cria marco, não promove maturidade e não inicia nova frente. `UXA-101` continua sendo a última UXA da sequência principal e `M7.88` permanece o marco vigente. `GEM-004-A3` e `UXA-100-A4` funcionam como overlays controlados sobre autoridades existentes, preservando os contratos históricos integrais.
 
 ## 2. Estado global
 
@@ -57,7 +59,7 @@ O patch 2.27.1 não cria UXA, não cria marco, não promove maturidade e não in
 |---|---|---|
 | Era | fase de estruturação do conhecimento | GE-2 — Knowledge |
 | Marco | saída consciente para fronteira externa validada | UXA-101; M7.88 |
-| Patch documental | taxonomia global de planos e separação Organização/Business sincronizadas | GEM-004-A1; GPA-004; UXA-100 |
+| Patch documental | taxonomia global de planos e separação Organização/Business sincronizadas | GEM-004-A3; UXA-100-A4 |
 | Fundação | congelada | GEA-000 |
 | Journey | funcionalmente estruturado | PAS-001 |
 | Registros granulares | **53 superfícies/estados/fronteiras e 54 transições** | UXA-100/101 |
@@ -100,6 +102,8 @@ Organização continua sendo um tipo de participante institucional. Guivos Busin
 
 Preços e capacidades de participantes anteriormente governados permanecem preservados nas novas nomenclaturas. Nenhum preço, entitlement, limite ou SLA foi inventado para Guivos Business.
 
+A precedência é limitada: `GEM-004-A3` substitui apenas nomenclatura, leitura conceitual, separação Organização/Business e semântica de `BND-002`; `GEM-004-A1/A2` preservam integralmente preços, benefícios, limites, proteções e ciclo de vida. `UXA-100-A4` reconcilia os mesmos nove ativos sem reescrever `UXA-100/A1/A2/A3`.
+
 ## 5. Cobertura visual
 
 | Indicador | Resultado |
@@ -113,7 +117,7 @@ Preços e capacidades de participantes anteriormente governados permanecem prese
 | responsabilidades sem SVG dedicado | **9** |
 | fronteiras sem tela por definição | **2** |
 
-A sincronização taxonômica altera texto/nomenclatura em **6 dos 9 SVGs UXA-100** de Coletivo e Organização, preservando caminhos, IDs, perfis e lógica funcional. Os três SVGs de Pessoa permanecem intactos.
+A sincronização taxonômica altera texto/nomenclatura em **6 dos 9 SVGs UXA-100** de Coletivo e Organização, preservando caminhos, IDs, perfis e lógica funcional. Os três SVGs de Pessoa permanecem intactos. `UXA-100-A4` registra a revalidação por equivalência funcional.
 
 ## 6. Resultado da UXA-101 preservado
 
@@ -190,7 +194,7 @@ As 15 transições internas de Planos permanecem localmente validadas. `TRN-416`
 | V1 | compreensão inicial → Tela Hoje | encerrada por UXA-097 |
 | V2 | publicação → descoberta/mapa/lista/detalhe | encerrada por UXA-098 |
 | V3 | dez estados residuais UXA-055 | encerrada por UXA-099 |
-| Planos | identidade e promoção canônica | encerrada por UXA-100-A3; taxonomia sincronizada no patch 2.27.1 |
+| Planos | identidade e promoção canônica | encerrada por UXA-100-A3; taxonomia reconciliada por UXA-100-A4 |
 | **V4** | efeito externo de oportunidades | **encerrada por UXA-101 até BND-001** |
 | V5 | erros, retornos e interrupções | pendente; **não iniciada** |
 
@@ -201,8 +205,8 @@ As 15 transições internas de Planos permanecem localmente validadas. `TRN-416`
 | Arquitetura da Experiência | `active` 0.94.0 |
 | Jornadas Integradas | `active` 0.31.0 |
 | Jornada da Pessoa | `draft` 0.15.0 |
-| Jornada do Coletivo | `draft` 0.16.0 |
-| Jornada da Organização | `draft` 0.9.0 |
+| Jornada do Coletivo | `draft` 0.15.0 |
+| Jornada da Organização | `draft` 0.8.0 |
 | catálogo integrado | `active` 0.27.0 |
 | galeria visual | `active` 0.21.0 |
 | galeria de Planos | `active` 0.4.0 |
@@ -211,6 +215,8 @@ As 15 transições internas de Planos permanecem localmente validadas. `TRN-416`
 | registro de superfícies | `active` 0.18.0 |
 | registro de transições | `active` 0.19.0 |
 | detalhamento comercial/fronteira | `active` 0.6.0 |
+| overlay econômico de taxonomia | `active` GEM-004-A3 0.1.0 |
+| overlay UXA-100 | `draft` UXA-100-A4 0.1.0 |
 | protótipo, aplicação, motor e testes | não iniciados |
 | Engenharia de Produto | pausada antes de W0-01 |
 
@@ -221,6 +227,7 @@ As 15 transições internas de Planos permanecem localmente validadas. `TRN-416`
 - publicação não é distribuição garantida;
 - relação comercial e plano pago não compram relevância funcional;
 - plano não representa valor ou nível de evolução do participante;
+- contratos históricos `GEM-004-A1/A2` e `UXA-100/A1/A2/A3` permanecem integrais;
 - estado canônico vigente prevalece sobre estado visual obsoleto;
 - Pessoa, Coletivo e Organização permanecem `draft`;
 - Guivos Business não recebe nova jornada, `SURF`, `TRN`, `BND` ou SVG;
