@@ -2,7 +2,7 @@
 id: GKR-UXA-100-PR-CHECKPOINT-001
 title: Checkpoint de PR — UXA-100
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -19,15 +19,20 @@ normative: false
 
 # Checkpoint de PR — UXA-100
 
-## 1. Baseline governado
+## 1. Baseline governado atual
 
 - repositório: `guivos-repositorio/Guivos-Knowledge-Repository`;
-- branch base da PR #200: `agent/uxa-099-opportunity-boost-residual-states-functional-validation`;
-- baseline lógico exato: `784dd2f51fff093f5edd15b2cd853e01a315382f`;
+- branch base da PR #200: `main`;
+- baseline vigente exato da `main`: `87bd767eeabcab81ad7b67e24b7f46a01fd52a39`;
+- baseline lógico original da UXA-100: head da UXA-099 `784dd2f51fff093f5edd15b2cd853e01a315382f`;
 - branch: `agent/uxa-100-plans-billing-payment-experience-program`;
 - pull request: `#200`;
 - modo requerido: `draft`;
-- dependência: PR #199 permanece separada e deve ser resolvida governadamente antes de eventual retarget/rebase para `main`.
+- PR #199: resolvida e integrada à `main` pelo merge commit `87bd767eeabcab81ad7b67e24b7f46a01fd52a39`;
+- alinhamento de histórico da branch UXA-100 com a nova `main`: commit `843fb54684730d79dc370834640b1e7bc111ce8d`;
+- o alinhamento preservou exatamente a árvore de conteúdo da UXA-100 e não introduziu alteração temática adicional.
+
+Após o alinhamento e retarget, a PR #200 está baseada diretamente em `main`, sem commits atrás. A integração da PR #199 deixou de ser dependência pendente e passou a compor a baseline vigente.
 
 ## 2. Escopo executado
 
@@ -121,18 +126,19 @@ Também não altera as maturidades de `TRN-205`, `TRN-304`, `TRN-305` ou `TRN-30
 
 ## 8. Gate de integração
 
-Antes de qualquer decisão sobre integração deverão estar comprovados no **head final exato** da PR #200:
+Antes de qualquer decisão sobre integração da PR #200 deverão estar comprovados no **head final exato**:
 
 1. `GKR Semantic State Validation` com sucesso;
 2. `GKR Mechanical Validation` com sucesso;
 3. PR #200 aberta em modo `draft`;
-4. PR #199 preservada e sem integração implícita;
-5. `main` preservada no baseline da UXA-098 enquanto #199 estiver aberta;
-6. ausência de threads de revisão não resolvidas;
-7. head final estável e auditado.
+4. base da PR #200 igual a `main` e branch sem commits atrás da baseline vigente;
+5. `main` preservada em `87bd767eeabcab81ad7b67e24b7f46a01fd52a39` enquanto a PR #200 não estiver integrada;
+6. diff restrito ao escopo da UXA-100;
+7. ausência de threads de revisão não resolvidas;
+8. head final estável e auditado.
 
-Retarget, retirada de rascunho e merge exigem decisão humana separada.
+A retirada do modo rascunho e o merge da PR #200 exigem decisão humana separada. O retarget para `main` já foi executado como parte do realinhamento governado autorizado após a integração da PR #199.
 
 ## 9. Próximo ato
 
-A identidade canônica da frente de Planos encerra-se na UXA-100-A3. Qualquer UXA-101, cobrança real, processo Enterprise/Scale, retorno à fila V4 ou outra frente exige nova autorização. **UXA-101 não foi iniciada.**
+A identidade canônica da frente de Planos encerra-se na UXA-100-A3. Após a reconfirmação dos gates no novo head alinhado, qualquer retirada de rascunho, merge, UXA-101, cobrança real, processo Enterprise/Scale, retorno à fila V4 ou outra frente exige nova autorização. **UXA-101 não foi iniciada**.
