@@ -2,7 +2,7 @@
 id: GEA-GRAPH-REFERENCE-001
 title: Arquitetura de Referência de Grafo e Inteligência
 status: active
-version: 0.1.1
+version: 0.1.2
 owner: Guivos Enterprise Architecture
 last_updated: 2026-08-08
 depends_on:
@@ -13,7 +13,6 @@ depends_on:
   - GPA-006
 related:
   - GKR-STATE-001
-  - GKR-RESYNCHRONIZATION-BASELINE-2026-08-08-001
 normative: true
 ---
 
