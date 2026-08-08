@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-SCREEN-GALLERY-001
 title: Galeria Visual Integrada de Telas
 status: active
-version: 0.20.0
+version: 0.21.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -28,6 +28,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - UXA-101
   - GKR-JOURNEY-SCREEN-GALLERY-PLANS-001
   - GKR-JOURNEY-SCREEN-TRACEABILITY-MATRIX-001
   - GKR-JOURNEY-SCREEN-CATALOG-001
@@ -43,7 +44,7 @@ normative: false
 
 Esta seção reúne os **118 SVGs canônicos** para inspeção humana de assertividade, sequência, coerência e cobertura.
 
-A UXA-100-A3 incorpora os nove ativos de Planos funcionalmente aprovados pela UXA-100-A2. A promoção cria identidade canônica para as famílias de Planos, mas não converte cada estado do board em tela independente nem comprova implementação de cobrança.
+A UXA-101 reformula um ativo já canônico, `uxa-007-opportunity-detail-mobile.svg`, para explicitar a revisão consciente antes da saída externa. A contagem permanece 118 porque não foi criada nova superfície nem novo SVG.
 
 ## 2. Estado do instrumento
 
@@ -56,10 +57,9 @@ Ressalvas vigentes:
 - **duas fronteiras** permanecem corretamente sem tela;
 - **118 SVGs possuem validação funcional documental vigente**;
 - **0 aguardam validação funcional específica**;
-- a UXA-100-A3 adiciona 12 superfícies de Planos e `BND-002`, sem criar novos SVGs além dos 9 já materializados;
-- as 15 transições internas de Planos são localmente validadas e `TRN-416/426` permanecem parciais;
-- validar os dez estados de `COM-005` não promove automaticamente `TRN-305`;
-- `TRN-205`, `TRN-304` e `TRN-306` permanecem parciais;
+- `TRN-205` está validada até `BND-001` pela UXA-101, sem validar o processo externo posterior;
+- `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
+- as 15 transições internas de Planos permanecem localmente validadas;
 - oito transições do trecho governado de Coletivos permanecem integralmente validadas: `105`, `106`, `107`, `108`, `109`, `110`, `111`, `112`.
 
 ## 3. Instrumentos de inspeção
@@ -76,34 +76,14 @@ Ressalvas vigentes:
 | Ordem | Página | SVGs | Continuidade examinada |
 |---:|---|---:|---|
 | 1 | [Pessoa — Fundação, Entrada, Compreensão e Recorrência](screen-gallery-person.md) | **20** | Home → início protegido → expressão → compreensão → primeira Hoje → recorrência |
-| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 | publicação → mapa → lista → detalhe → fronteira |
+| 2 | [Organização e Oportunidades](screen-gallery-opportunities-organization.md) | 9 | publicação → mapa/lista → detalhe → revisão de saída → fronteira |
 | 3 | [Coletivos](screen-gallery-collectives.md) | 34 | descoberta → solicitação → gestão → Meus Coletivos → Central → Início |
 | 4 | [Opportunity Boost — Configuração e Exposição](screen-gallery-opportunity-boost-exposure.md) | 20 | configuração → exposição → retorno orgânico |
 | 5 | [Opportunity Boost — Operação, Relatórios e Resíduos](screen-gallery-opportunity-boost-operations.md) | 26 | gestão → relatório → estados residuais |
 | 6 | [Planos, Comparação e Cobrança](screen-gallery-plans-billing.md) | **9** | plano atual → comparação → contratação/ciclo → resultado/recuperação |
 |  | **Total canônico** | **118** | **118 validados; 0 pendentes** |
 
-## 5. Planos — UXA-100
-
-A galeria de Planos reúne:
-
-| Participante | Tela dedicada de Planos | Fluxo | Comparação incremental | Total | Perfil |
-|---|---:|---:|---:|---:|---|
-| Pessoa | 1 | 1 | 1 | 3 | R29 |
-| Coletivo | 1 | 1 | 1 | 3 | R30 |
-| Organização | 1 | 1 | 1 | 3 | R31 |
-| **Total** | **3** | **3** | **3** | **9** | **3 perfis** |
-
-Esses ativos:
-
-- estão associados à UXA-100/A1/A2/A3;
-- permanecem referências nas três jornadas `draft`;
-- foram funcionalmente aprovados pela UXA-100-A2;
-- foram promovidos pela UXA-100-A3;
-- cobrem `PER/COL/ORG-301` a `304`;
-- não representam checkout, gateway ou cobrança implementados.
-
-## 6. Cobertura canônica confirmada
+## 5. Cobertura canônica confirmada
 
 | Indicador | Resultado |
 |---|---:|
@@ -118,27 +98,24 @@ Esses ativos:
 | responsabilidades sem SVG dedicado | **9** |
 | fronteiras documentais sem tela | **2** |
 
-## 7. Responsabilidades sem SVG dedicado
+## 6. Responsabilidades sem SVG dedicado
 
 - `GKR-SURF-COL-004` a `GKR-SURF-COL-008`;
 - `GKR-SURF-ORG-004` a `GKR-SURF-ORG-007`.
 
-`GKR-SURF-BND-001` e `GKR-SURF-BND-002` permanecem intencionalmente sem tela Guivos.
+`GKR-SURF-BND-001` e `GKR-SURF-BND-002` permanecem intencionalmente sem tela Guivos. O estado de revisão de saída pertence a `PER-203` e não altera essa regra.
 
-As superfícies de Planos possuem referência visual direta ou agrupada e, portanto, não aumentam a lista de responsabilidades sem SVG dedicado.
+## 7. Fronteiras de validação
 
-## 8. Fronteiras de validação
+A validação dos 118 SVGs não implica que todas as 54 transições estejam integralmente validadas. Em particular:
 
-A validação dos 118 SVGs não implica que todas as 54 transições estejam integralmente validadas. Na frente de Planos:
-
-- `TRN-401` a `405`, `411` a `415` e `421` a `425` são **localmente validadas**;
-- `TRN-416` e `TRN-426` são **parciais**;
+- `TRN-205` é integral somente **até a fronteira de autoridade Guivos**; processos posteriores pertencem ao terceiro;
+- `TRN-401` a `405`, `411` a `415` e `421` a `425` são localmente validadas;
+- `TRN-304`, `305`, `306`, `416` e `426` permanecem parciais;
 - cobrança real, gateway, proration e processo após `BND-002` permanecem fora do escopo.
-
-Também permanecem parciais `TRN-205`, `TRN-304`, `TRN-305` e `TRN-306`.
 
 O status `active` aprova somente os instrumentos documentais de inspeção. Não inicia protótipo ou Engenharia de Produto.
 
-## 9. Estado após UXA-100-A3
+## 8. Estado após UXA-101
 
-A fragmentação e promoção canônica de Planos está documentada. Pessoa, Coletivo e Organização continuam `draft`; nenhuma próxima UXA, integração à `main` ou implementação técnica é iniciada automaticamente.
+V4 está encerrada no limite controlável pela Guivos. Pessoa, Coletivo e Organização continuam `draft`; V5 não foi iniciada e nenhuma implementação técnica é iniciada automaticamente.
