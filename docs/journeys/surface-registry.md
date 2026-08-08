@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-SURFACE-REGISTRY-001
 title: Registro Granular de Superfícies e Estados
 status: active
-version: 0.17.0
+version: 0.18.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-070
   - UXA-080
@@ -39,7 +39,7 @@ normative: false
 
 Este registro atribui identificadores estáveis a superfícies, estados, responsabilidades conhecidas e fronteiras documentais das Jornadas Integradas.
 
-A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e o exame de `BND-001` pela UXA-101, preservando a revisão pré-saída como estado da mesma superfície.
+A versão 0.18.0 **não adiciona IDs nem altera maturidades**. Ela preserva o estado pós-UXA-101 e corrige somente a leitura de `BND-002`: de referência específica a Enterprise/Scale para **fronteira genérica de contratação/dimensionamento assistido**.
 
 ## 2. Convenções
 
@@ -118,17 +118,18 @@ A versão 0.17.0 não adiciona IDs. Ela registra a revalidação de `PER-203` e 
 | GKR-SURF-COM-004 | gestão ativa/relatório | anunciante | protegido | validado | UXA-038 | UXA-046/048/053 | UXA-047/049/054 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-COM-005 | estados residuais Opportunity Boost | anunciante/Pessoa | misto | **validado** | UXA-055 | UXA-055 | UXA-099 | [Comercial](surface-registry-commercial-boundary-details.md) |
 | GKR-SURF-BND-001 | fronteira de destino externo de oportunidade | Pessoa → terceiro | externo | **examinado** | UXA-004/007/101 | sem tela por definição | **UXA-101; TRN-205 validada até a fronteira** | [Comercial](surface-registry-commercial-boundary-details.md) |
-| GKR-SURF-BND-002 | fronteira comercial Enterprise/Scale | Coletivo/Organização → processo comercial | externo ao autoatendimento | parcial | UXA-100-A3 | sem tela por definição | parcial | [Comercial](surface-registry-commercial-boundary-details.md) |
+| GKR-SURF-BND-002 | fronteira de contratação/dimensionamento assistido | participante institucional → processo assistido quando necessário | externo ao autoatendimento | parcial | UXA-100-A3; GEM-004-A1/A2 | sem tela por definição | parcial | [Comercial](surface-registry-commercial-boundary-details.md) |
 
-## 5. Efeito da UXA-101
+## 5. Efeito da sincronização vigente
 
 - total de IDs permanece **53**;
-- `PER-203` é revalidada no recorte de saída externa;
-- a revisão consciente não recebe ID adicional;
-- `BND-001` passa de não examinado para examinado;
-- nenhuma tela é criada para `BND-001`;
-- processo posterior à fronteira permanece fora da autoridade Guivos.
+- `PER-203` e `BND-001` preservam o estado obtido pela UXA-101;
+- `BND-002` mantém o mesmo ID e maturidade `parcial`;
+- somente a semântica de `BND-002` é corrigida para contratação/dimensionamento assistido;
+- nenhuma tela é criada para a fronteira;
+- `BND-002` não é sinônimo de Enterprise, Scale, Rede ou Transforma;
+- nenhum plano ou produto recebe autoridade por analogia.
 
 ## 6. Estado
 
-O registro permanece `active` como inventário granular. O status não promove as jornadas completas nem representa implementação.
+O registro permanece `active` como inventário granular. O status não promove jornadas completas nem representa implementação.
