@@ -98,14 +98,14 @@
     <text x="98" y="1060" font-size="14" font-weight="700">Business Growth · mensal · preço candidato R$ 799,00</text>
     <text x="98" y="1088" font-size="13">Pagador: Organização / autoridade financeira identificada</text>
     <text x="98" y="1116" font-size="13">Beneficiário: Instituto Horizonte e escopo institucional contratado</text>
-    <text x="98" y="1144" font-size="13">Recorrência: mensal · método autorizado em simulação</text>
-    <text x="98" y="1172" font-size="11">Pagamento não concede acesso à jornada pessoal das Pessoas.</text>
+    <text x="98" y="1144" font-size="13">Recorrência mensal · data de início exibida · método autorizado em simulação</text>
+    <text x="98" y="1172" font-size="11">Pagamento não concede acesso à jornada pessoal das Pessoas nem amplia consentimento.</text>
     <text x="264" y="1232" font-size="13">Confirmar contratação</text>
 
     <text x="780" y="1004" font-size="18" font-weight="700">5 · Resultado do pagamento</text>
     <text x="802" y="1058" font-size="14" font-weight="700">CONFIRMADO</text>
     <text x="802" y="1088" font-size="12">Ativação rastreável do Growth.</text>
-    <text x="802" y="1116" font-size="12">Registro/recibo disponível.</text>
+    <text x="802" y="1116" font-size="12">Registro/recibo e data de início disponíveis.</text>
     <text x="802" y="1144" font-size="12">Capacidade contratada é atualizada.</text>
     <text x="1102" y="1058" font-size="14" font-weight="700">NÃO CONFIRMADO</text>
     <text x="1102" y="1088" font-size="12">Sem ativação presumida.</text>
@@ -115,9 +115,9 @@
     <text x="1206" y="1232" font-size="12">Tentar novamente</text>
 
     <text x="76" y="1362" font-size="18" font-weight="700">6 · Downgrade ou cancelamento</text>
-    <text x="98" y="1414" font-size="13">Mostrar Start/Growth atual → estado futuro e capacidades afetadas antes da confirmação.</text>
-    <text x="98" y="1442" font-size="13">Resolver excesso de admins, unidades, Coletivos ou publicações de forma explícita.</text>
-    <text x="98" y="1470" font-size="12">Sem exclusão silenciosa, sem pró-rata presumido e com registro da decisão.</text>
+    <text x="98" y="1414" font-size="13">Antes de efetivar, selecionar unidades, administradores, publicações e Coletivos relacionados mantidos.</text>
+    <text x="98" y="1442" font-size="13">Identificar integrações a encerrar e dados a exportar; não apagar históricos/agregados para forçar retenção.</text>
+    <text x="98" y="1470" font-size="12">Mostrar data efetiva/plano posterior; sem exclusão silenciosa e sem reativação não autorizada.</text>
 
     <text x="752" y="1362" font-size="18" font-weight="700">7 · Business Scale</text>
     <text x="802" y="1414" font-size="14" font-weight="700">Solicitar proposta comercial</text>
