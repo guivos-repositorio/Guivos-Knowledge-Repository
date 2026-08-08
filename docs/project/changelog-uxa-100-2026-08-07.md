@@ -2,7 +2,7 @@
 id: GKR-CHANGELOG-UXA-100-001
 title: Changelog — UXA-100 Planos, Cobrança e Pagamentos
 status: active
-version: 0.1.0
+version: 0.1.1
 owner: Repositório de Conhecimento da Guivos
 last_updated: 2026-08-07
 depends_on:
@@ -54,6 +54,15 @@ Registra a frente transversal de Planos para Pessoa, Coletivo e Organização no
 - processamento financeiro permanece transitório;
 - sucesso e falha pertencem a `*-304` como estados de resultado/recuperação.
 
+### Realinhamento após integração da UXA-099
+
+- PR #199 integrada à `main` no commit `87bd767eeabcab81ad7b67e24b7f46a01fd52a39`;
+- a árvore do merge da UXA-099 é idêntica à árvore do antigo head da UXA-099, permitindo alinhamento sem alteração temática da UXA-100;
+- branch da UXA-100 alinhada à nova `main` pelo commit `843fb54684730d79dc370834640b1e7bc111ce8d`;
+- PR #200 retargetada para `main`;
+- o diff após o realinhamento permanece restrito ao escopo da UXA-100;
+- nenhum merge da PR #200 foi realizado.
+
 ## 3. Estado proposto
 
 | Indicador | Resultado |
@@ -82,5 +91,6 @@ Registra a frente transversal de Planos para Pessoa, Coletivo e Organização no
 - processo posterior a `BND-002` não está materializado;
 - Pessoa, Coletivo e Organização permanecem `draft`;
 - Engenharia de Produto permanece pausada antes de W0-01;
-- integração à `main` depende da resolução governada da PR #199 e decisão separada sobre a PR #200;
+- PR #199 já está integrada e compõe a baseline vigente da `main`;
+- PR #200 está alinhada e retargetada para `main`, mas continua fora da `main` e seu merge exige decisão humana separada;
 - **UXA-101 não foi iniciada**.
