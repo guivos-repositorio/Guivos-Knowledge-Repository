@@ -128,7 +128,7 @@ A frente consolida:
 | Jornadas Integradas | `active` 0.31.0 |
 | Jornada da Pessoa | `draft` 0.15.0 |
 | Jornada do Coletivo | `draft` 0.15.0 |
-| Jornada da Organização | `draft` 0.7.0 |
+| Jornada da Organização | `draft` 0.8.0 |
 | catálogo integrado | `active` 0.26.0 |
 | galeria visual | `active` 0.21.0 |
 | galeria de Planos | `active` 0.3.0 |
