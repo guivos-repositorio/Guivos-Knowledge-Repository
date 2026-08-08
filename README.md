@@ -49,11 +49,12 @@ A UXA-101 encerra V4 no limite controlável pela Guivos: o Detalhe de Oportunida
 - Relação comercial e plano pago não alteram relevância funcional.
 - Oportunidade pública não é ocultada para vender plano.
 - Fronteira externa não é tela da Guivos e validação até a fronteira não valida o sistema de terceiro.
-- Enterprise/Scale não são representados como checkout autônomo.
+- `BND-002` representa contratação/dimensionamento assistido quando o autoatendimento não for suficiente; não é plano Enterprise, Scale ou checkout autônomo.
+- Organização e Guivos Business são objetos distintos; os planos da Organização são Conecta · Eleva · Transforma, enquanto Guivos Business possui Start · Growth · Scale · Enterprise.
 - Estado canônico vigente prevalece sobre estado visual obsoleto.
 - Nenhum pacote posterior, UXA ou etapa de Engenharia de Produto começa automaticamente.
 - Alterações permanentes exigem branch, validação, pull request e decisão governada.
 
 ## Validação
 
-Os controles oficiais incluem front matter, identificadores, links, navegação, whitespace, construção MkDocs em modo estrito, árvore rastreada limpa e sincronização semântica das superfícies globais.
+Os controles oficiais incluem front matter, identificadores, links, navegação, whitespace, construção MkDocs em modo estrito, árvore rastreada limpa, sincronização semântica das superfícies globais e auditoria de nomenclaturas legadas conhecidas.
