@@ -2,9 +2,9 @@
 id: GKR-UXA-047-101-INDEX-001
 title: Índice das Frentes UXA-047 a UXA-101
 status: active
-version: 2.7.0
+version: 2.7.1
 owner: Repositório de Conhecimento da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 depends_on:
   - GKR-STATE-001
   - UXA-101
@@ -92,17 +92,26 @@ normative: false
 
 - [UXA-100 — Programa Funcional, Materialização, Validação e Promoção de Planos](uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
 - [UXA-100-A1 — Integração às Jornadas e Telas Dedicadas](uxa-100-a1-plans-journey-integration-and-dedicated-screens.md)
-- [UXA-100-A2 — Auditoria Funcional](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
+- [UXA-100-A2 — Auditoria Funcional e sincronização taxonômica](uxa-100-a2-plans-screens-and-journeys-functional-audit.md)
 - [UXA-100-A3 — Fragmentação e Promoção Canônica](uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
+
+Taxonomia vigente da frente:
+
+- Pessoa: `Free · Plus · Pro`;
+- Coletivo: `Livre · Mobiliza · Impacta · Rede`;
+- Organização: `Conecta · Eleva · Transforma`.
+
+Guivos Business `Start · Growth · Scale · Enterprise` permanece produto especializado, não quarta jornada UXA-100. **Organização Transforma ≠ Guivos Business Enterprise.**
 
 ## 5. Estado sincronizado
 
-| Elemento | Estado proposto pela UXA-101 |
+| Elemento | Estado proposto no patch documental |
 |---|---|
 | intervalo indexado | UXA-047 a UXA-101 |
-| Registro do Estado Atual | **2.27.0** |
+| Registro do Estado Atual | **2.27.1** |
 | marco | **M7.88** |
 | última frente proposta | **UXA-101** |
+| patch | sincronização taxonômica de Planos; sem nova UXA |
 | SVGs | **118** |
 | associações individuais | **118** |
 | perfis documentais | **31** |
@@ -113,10 +122,22 @@ normative: false
 | próxima UXA | **UXA-102 não iniciada** |
 | Engenharia de Produto | pausada antes de W0-01 |
 
-## 6. Resultado da UXA-101
+## 6. Resultado preservado da UXA-101
 
 A UXA-101 reforma o SVG de `PER-203`, valida `TRN-205` até `BND-001`, confirma a fronteira externa sem tela e encerra V4 no limite de autoridade da Guivos. Nenhum novo SVG, superfície ou transição é criado.
 
-## 7. Limites
+## 7. Efeito do patch 2.27.1
+
+- nenhuma UXA adicional é criada;
+- nenhum marco é promovido;
+- seis dos nove SVGs UXA-100 são sincronizados apenas em nomenclatura/cópia;
+- os três SVGs de Pessoa permanecem intactos;
+- `BND-002` passa a significar genericamente contratação/dimensionamento assistido;
+- `TRN-416` e `TRN-426` permanecem parciais;
+- preços/capacidades de participantes são preservados;
+- preços/entitlements de Guivos Business permanecem não definidos;
+- V5/UXA-102 e Engenharia de Produto permanecem não iniciadas.
+
+## 8. Limites
 
 Este índice não autoriza V5, UXA-102, Engenharia de Produto, cobrança real, processo posterior a `BND-002` ou qualquer resultado executado pelo terceiro após `BND-001`.
