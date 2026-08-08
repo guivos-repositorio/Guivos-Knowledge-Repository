@@ -2,7 +2,7 @@
 id: GEM-F1-M0-M6-COST-BASELINE-001
 title: Baseline de Custos M0–M6 — F1
 status: active
-version: 0.1.0
+version: 0.2.0
 owner: Guivos Economic Model
 last_updated: 2026-08-08
 parent: GEM-010
@@ -15,6 +15,7 @@ depends_on:
   - GTM-003
   - GTM-006
 related:
+  - GEM-F1B-M0-M6-COST-CALIBRATION-001
   - GEM-009-COST-AND-UNIT-ECONOMICS-001
   - GEA-REF-GRAPH-001
 normative: true
@@ -115,6 +116,8 @@ activation_gate: string | none
 notes: string
 ```
 
+F1-B pode registrar uma **taxa unitária benchmark** ou fórmula variável enquanto `amount_brl` permanece `TBD`. O valor mensal somente nasce quando quantidade, aplicabilidade e período estiverem suficientemente governados.
+
 ## 6. Catálogo mestre de pools M0–M6
 
 | ID | Categoria | Pool de custo | Comportamento inicial | Driver principal | Estado numérico |
@@ -122,21 +125,23 @@ notes: string
 | F1-C01 | C-02 | produto, desenvolvimento, QA e entrega técnica | fixo/step | escopo implementável e releases autorizados | TBD |
 | F1-C02 | C-02 | infraestrutura, hospedagem, armazenamento e observabilidade | semivariável/step | ambientes, tráfego, armazenamento e disponibilidade | TBD |
 | F1-C03 | C-01/C-02 | IA, processamento, mensageria e serviços de dados | variável/step | uso elegível e volume processado | TBD |
-| F1-C04 | C-04 | segurança, privacidade e controles técnicos | fixo/step | superfície, risco e requisitos aprovados | TBD |
+| F1-C04 | C-04 | segurança, privacidade e controles técnicos | fixo/step | superfície, risco e requisitos aprovados | TBD / quote required |
 | F1-C05 | C-02 | equipe e serviços profissionais | fixo/step | capacidade e papéis requeridos | TBD — depende de F2 para dimensionamento |
-| F1-C06 | C-02/C-04 | jurídico, contábil, fiscal, administrativo e compliance | fixo/event | obrigações, contratos e gates de lançamento | TBD |
+| F1-C06 | C-02/C-04 | jurídico, contábil, fiscal, administrativo e compliance | fixo/event | obrigações, contratos e gates de lançamento | parcialmente calibrado por benchmark |
 | F1-C07 | C-02 | marca, conteúdo e produção criativa | fixo/event | calendário de conteúdo e lançamento | TBD |
-| F1-C08 | C-03 | CRM, vendas e Customer Success | fixo/step | pipeline institucional e contas ativas | TBD |
+| F1-C08 | C-03 | CRM, vendas e Customer Success | fixo/step | pipeline institucional e contas ativas | parcialmente calibrado por benchmark |
 | F1-C09 | C-03/C-06 | prospecção, reuniões, deslocamentos e operação comercial local | variável/event | reuniões, pilotos e parceiros em BH | TBD |
 | F1-C10 | C-03/C-06 | onboarding de Coletivos, Organizações, parceiros e ativação comunitária | variável/step | entidades ativadas e suporte de implantação | TBD |
 | F1-C11 | C-03 | mídia paga e performance | variável | aquisição incremental validada | TBD — condicionada a gate de ativação |
-| F1-C12 | C-03 | lançamento, eventos e presença de campo em BH | event | ações de lançamento autorizadas | TBD |
-| F1-C13 | C-01 | meios de pagamento e cobrança | variável | volume financeiro elegível e transações | TBD — somente se cobrança for autorizada |
-| F1-C14 | C-05 | reembolsos, chargebacks, disputas e perdas operacionais | contingent/variable | transações e incidentes | TBD |
+| F1-C12 | C-03 | lançamento, eventos e presença de campo em BH | event | ações de lançamento autorizadas | TBD / quote required |
+| F1-C13 | C-01 | meios de pagamento e cobrança | variável | volume financeiro elegível e transações | fórmula benchmark disponível; amount TBD |
+| F1-C14 | C-05 | reembolsos, chargebacks, disputas e perdas operacionais | contingent/variable | transações e incidentes | tarifa parcial benchmark; incidência TBD |
 | F1-C15 | C-04 | suporte, moderação, curadoria e prevenção de fraude | semivariável/step | usuários, entidades, casos e conteúdo | TBD |
-| F1-C16 | C-02 | domínios, marca, propriedade intelectual e ativos institucionais | fixed/event | ativos efetivamente mantidos ou protegidos | TBD |
-| F1-C17 | C-02 | espaço físico, coworking, equipamentos e infraestrutura administrativa | fixed/event | decisão operacional explícita | TBD — nenhuma estrutura física é presumida |
+| F1-C16 | C-02 | domínios, marca, propriedade intelectual e ativos institucionais | fixed/event | ativos efetivamente mantidos ou protegidos | tarifas oficiais de INPI parciais; demais itens TBD |
+| F1-C17 | C-02 | espaço físico, coworking, equipamentos e infraestrutura administrativa | fixed/event | decisão operacional explícita | benchmark BH disponível; necessidade TBD |
 | F1-C18 | C-06 | integrações, coordenação e reconciliação entre produtos/parceiros | variable/step | integrações e relações efetivamente ativadas | TBD |
+
+A calibração detalhada e suas fontes são governadas por `GEM-F1B-M0-M6-COST-CALIBRATION-001`.
 
 ### C-07 e C-08
 
@@ -213,6 +218,8 @@ custo mensal candidato completo
 → ponte para caixa e runway
 ```
 
+Taxas unitárias sem quantidade governada não compõem o subtotal mensal.
+
 ## 11. Gates para calibração numérica do F1
 
 Cada pool somente poderá receber valor quando houver, no mínimo:
@@ -228,7 +235,7 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 9. ausência de dupla contagem entre produtos e áreas;
 10. tratamento explícito de incerteza.
 
-## 12. Resultado do F1 nesta versão
+## 12. Resultado do F1 após F1-B
 
 | Gate | Resultado |
 |---|---|
@@ -237,16 +244,24 @@ Cada pool somente poderá receber valor quando houver, no mínimo:
 | categorias e pools materiais | PASS |
 | comportamento e drivers iniciais | PASS |
 | matriz mensal de ativação | PASS |
-| valores numéricos | PENDING |
-| fontes/cotações/contratos/realizados | PENDING |
+| fontes primárias de benchmark | PASS |
+| pools com alguma calibração numérica | PARTIAL — 6/18 |
+| pools numericamente fechados | 0/18 |
+| cotações/contratos/realizados suficientes | PENDING |
 | headcount e custo de equipe | BLOCKED BY F2 |
+| custo mensal completo | NOT CALCULABLE |
 | burn mensal completo | NOT CALCULABLE |
 | runway e necessidade de capital | NOT CALCULABLE |
 
-**Parecer:** `PARTIAL PASS — M0–M6 cost scope, classifications, drivers and activation baseline defined; numeric calibration pending.`
+**Parecer:** `PARTIAL PASS — F1 structural baseline is active and F1-B added traceable unit benchmarks to six pools; material TBDs still prevent a complete M0–M6 cost baseline.`
 
-## 13. Próximo incremento permitido
+## 13. Próximos incrementos permitidos
 
-O próximo incremento dentro da mesma frente será a **calibração numérica F1-B**, preenchendo somente valores sustentáveis por evidência, cotação, contrato, realizado ou benchmark externo explicitamente classificado.
+F1-B foi executado sem promover nenhum benchmark a orçamento, contrato ou realizado.
 
-F1-B não autorizará automaticamente F2, orçamento, contratação ou captação.
+Os próximos atos são independentes e exigem autorização própria:
+
+1. **F1-C — evidência e cotações faltantes**, para ampliar a cobertura externa de custos materiais;
+2. **F2 — capacidade e headcount**, para dimensionar papéis, quantidade, regime e custo de pessoas M0–M6.
+
+Burn, caixa, runway e necessidade de capital permanecem bloqueados até que as lacunas materiais de F1 e F2 estejam suficientemente resolvidas.
