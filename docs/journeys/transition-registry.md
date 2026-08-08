@@ -2,9 +2,9 @@
 id: GKR-JOURNEY-TRANSITION-REGISTRY-001
 title: Registro Granular de Transições
 status: active
-version: 0.18.0
+version: 0.19.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 related:
   - UXA-070
   - UXA-080
@@ -26,6 +26,7 @@ related:
   - UXA-100-A2
   - UXA-100-A3
   - UXA-101
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GKR-JOURNEY-SURFACE-REGISTRY-001
   - GKR-JOURNEY-HANDOFFS-001
   - GKR-JOURNEY-GAPS-001
@@ -36,7 +37,7 @@ normative: false
 
 ## 1. Finalidade
 
-Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.18.0 preserva as 54 transições e promove apenas a maturidade de `GKR-TRN-205`, validada pela UXA-101 até a fronteira de autoridade da Guivos.
+Este registro atribui identificadores estáveis às transições documentais conhecidas nas Jornadas Integradas. A versão 0.19.0 preserva as **54 transições** e suas maturidades, sincronizando apenas a semântica de `TRN-416`, `TRN-426` e `BND-002` com a autoridade conceitual vigente de planos.
 
 ## 2. Convenções de estado
 
@@ -147,6 +148,15 @@ Regras:
 
 ## 8. Planos, cobrança e ciclo de vida
 
+A taxonomia vigente para leitura das superfícies é:
+
+```text
+Pessoa: Free · Plus · Pro
+Coletivo: Livre · Mobiliza · Impacta · Rede
+Organização: Conecta · Eleva · Transforma
+Guivos Business: Start · Growth · Scale · Enterprise (produto separado; sem transições próprias nesta frente)
+```
+
 ### 8.1 Pessoa
 
 | ID | Origem | Destino | Estado | Lacuna |
@@ -166,7 +176,9 @@ Regras:
 | GKR-TRN-413 | COL-301 | COL-303 | **localmente validada** | regra financeira entre ciclos |
 | GKR-TRN-414 | COL-303 | COL-304 | **localmente validada** | execução operacional/transacional |
 | GKR-TRN-415 | COL-304 | COL-301 | **localmente validada** | persistência técnica |
-| GKR-TRN-416 | COL-301 | BND-002 | **parcial** | processo Enterprise posterior |
+| GKR-TRN-416 | COL-301 | BND-002 | **parcial** | processo posterior de contratação/dimensionamento assistido não materializado |
+
+`TRN-416` não significa “ir para Enterprise”. Ele significa sair do autoatendimento quando a contratação concreta exigir assistência. A maturidade permanece parcial.
 
 ### 8.3 Organização
 
@@ -177,17 +189,33 @@ Regras:
 | GKR-TRN-423 | ORG-301 | ORG-303 | **localmente validada** | regra financeira entre ciclos |
 | GKR-TRN-424 | ORG-303 | ORG-304 | **localmente validada** | execução institucional |
 | GKR-TRN-425 | ORG-304 | ORG-301 | **localmente validada** | persistência técnica |
-| GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | processo Scale posterior |
+| GKR-TRN-426 | ORG-301 | BND-002 | **parcial** | processo posterior de contratação/dimensionamento assistido não materializado |
 
-## 9. Efeito da UXA-101
+`TRN-426` não significa “ir para Business Scale”. A Organização permanece participante e Guivos Business permanece produto separado. A maturidade da transição continua parcial.
+
+## 9. BND-002
+
+`BND-002` é a fronteira genérica de **contratação/dimensionamento assistido**.
+
+A fronteira poderá ser alcançada quando a necessidade real exigir proposta, dimensionamento, análise específica, contrato ou configuração assistida. O nome do plano, isoladamente, não é autoridade suficiente para determinar o handoff.
+
+A correção semântica:
+
+- não cria transição;
+- não remove transição;
+- não altera contagem;
+- não promove `TRN-416` ou `TRN-426`;
+- não cria fluxo de Guivos Business.
+
+## 10. Preservações de maturidade
 
 - transições totais permanecem **54**;
-- `TRN-205` deixa de ser parcial e fica **integralmente validada até `BND-001`**;
+- `TRN-205` permanece **integralmente validada até `BND-001`**;
 - nenhum comportamento posterior a `BND-001` é atribuído à Guivos;
 - `TRN-304`, `TRN-305`, `TRN-306`, `TRN-416` e `TRN-426` permanecem parciais;
 - nenhuma nova transição é criada;
 - validação documental continua distinta de implementação técnica.
 
-## 10. Próximo gate
+## 11. Próximo gate
 
-V4 está encerrada no limite controlável pela Guivos. V5, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
+V4 permanece encerrada no limite controlável pela Guivos. V5/UXA-102, integrações patrocinadas, cobrança real e processos posteriores a `BND-002` permanecem frentes separadas e não são iniciados automaticamente.
