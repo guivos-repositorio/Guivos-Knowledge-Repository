@@ -2,39 +2,39 @@
 
 O GKR é a fonte oficial, versionada e governada do conhecimento da Guivos.
 
-## Estado vigente proposto pela UXA-099
+## Estado vigente proposto pela UXA-100
 
 A declaração oficial está no [Registro do Estado Atual](project/current-state-register.md).
 
 | Dimensão | Situação |
 |---|---|
-| Registro | `GKR-STATE-001` 2.25.0 |
+| Registro | `GKR-STATE-001` 2.26.0 |
 | Era | GE-2 — Knowledge |
-| Marco | M7.86 |
-| Última frente proposta | UXA-099 — validação dos dez estados residuais Opportunity Boost |
-| Galeria visual | `active` 0.17.0; 109 SVGs |
-| Matriz por SVG | `active` 0.15.0; 109 associações e 28 perfis |
-| Validações funcionais vigentes | **109** |
+| Marco | M7.87 |
+| Última frente proposta | UXA-100 — Planos, cobrança e ciclo de vida |
+| Galeria visual | `active` 0.20.0; 118 SVGs |
+| Matriz por SVG | `active` 0.16.0; 118 associações e 31 perfis |
+| Validações funcionais vigentes | **118** |
 | Pendentes de validação específica | **0** |
-| COM-005 | **validado funcionalmente pela UXA-099** |
-| TRN-305 | parcial; integração ponta a ponta não promovida |
-| TRN-203 / 204 / 210 / 211 | **integralmente validadas** |
-| TRN-007 | **integralmente validada** |
-| Handoffs integralmente validados em Coletivos | **8** |
-| IDs com referência visual | 30 de 40 |
+| Superfícies/estados/fronteiras | **53** |
+| Transições documentais | **54** |
+| IDs com referência visual | **42 de 53** |
 | Responsabilidades sem SVG dedicado | 9 |
+| Fronteiras sem tela | 2 |
 | Engenharia de Produto | pausada antes de W0-01 |
 | Resultados Empresariais canônicos | 0 |
-| Próxima prioridade | V4 — efeito externo de oportunidades; UXA-100 não iniciada |
+| Próxima UXA | **UXA-101 não iniciada** |
 
-A UXA-099 fecha V3 sem criar novos SVGs ou IDs. Oito estados residuais são validados sem alteração e dois são reformulados para proteger mudança material não confirmada e tornar o histórico de preferências temporalmente e espacialmente compreensível. Idempotência é consolidada como propriedade funcional.
+A UXA-100-A3 conclui a identidade canônica da frente de Planos: quatro famílias por participante, uma fronteira comercial Enterprise/Scale, 17 transições registradas e nove SVGs incorporados ao conjunto canônico. Cobrança real e processo comercial posterior permanecem fora do escopo.
 
 ## Acesso rápido
 
-- [Índice UXA-047 a UXA-099](experience-architecture/uxa-047-099-index.md)
+- [Índice UXA-047 a UXA-100](experience-architecture/uxa-047-100-index.md)
 - [Arquitetura da Experiência](experience-architecture/index.md)
-- [UXA-099 — Estados Residuais do Opportunity Boost](experience-architecture/uxa-099-opportunity-boost-residual-states-functional-validation-and-reformulation.md)
+- [UXA-100 — Planos, Cobrança e Pagamentos](experience-architecture/uxa-100-plans-billing-payments-functional-program-and-initial-materialization.md)
+- [UXA-100-A3 — Fragmentação e Promoção Canônica](experience-architecture/uxa-100-a3-plans-canonical-fragmentation-and-promotion.md)
 - [Galeria Visual Integrada](journeys/screen-gallery.md)
+- [Galeria Canônica de Planos](journeys/screen-gallery-plans-billing.md)
 - [Matriz de Rastreabilidade Visual por SVG](journeys/screen-gallery-traceability-matrix.md)
 - [Registro Granular de Transições](journeys/transition-registry.md)
 - [Jornadas Integradas](journeys/index.md)
@@ -44,4 +44,4 @@ A UXA-099 fecha V3 sem criar novos SVGs ou IDs. Oito estados residuais são vali
 
 ## Limites preservados
 
-Esta superfície não autoriza UXA-100, Engenharia de Produto, P2–P9, efeito externo de oportunidades, integrações patrocinadas ainda parciais, implantação tecnológica ou operação comercial. `TRN-305` permanece parcial e Pessoa, Coletivo e Organização permanecem `draft`. Em caso de divergência, prevalece `GKR-STATE-001`.
+Esta superfície não autoriza **UXA-101**, Engenharia de Produto, cobrança real, gateway, processo Enterprise/Scale após `BND-002`, efeito externo de oportunidades ou implantação tecnológica. `TRN-416` e `TRN-426` permanecem parciais; Pessoa, Coletivo e Organização permanecem `draft`. Em caso de divergência após integração do incremento, prevalece `GKR-STATE-001`.
