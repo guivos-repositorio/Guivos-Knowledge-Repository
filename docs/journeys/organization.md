@@ -2,7 +2,7 @@
 id: GKR-JOURNEY-ORGANIZATION-001
 title: Jornada Integrada da Organização
 status: draft
-version: 0.6.0
+version: 0.7.0
 owner: Arquitetura da Experiência da Guivos
 last_updated: 2026-08-07
 related:
@@ -29,6 +29,7 @@ related:
   - UXA-100
   - UXA-100-A1
   - UXA-100-A2
+  - UXA-100-A3
 normative: false
 ---
 
@@ -56,7 +57,7 @@ identidade, unidade e autoridade
 | descoberta Mapa/Lista e detalhe | validado | UXA-004 | UXA-024; UXA-028; UXA-007 | UXA-025; UXA-029; UXA-012 | **TRN-203/204/210/211 integralmente validadas por UXA-098** |
 | relação Organização–Coletivo | contratado | UXA-019 | — | — | ausente |
 | patrocínio e Opportunity Boost | materializado | UXA-038 | UXA-040 a UXA-054 | UXA-041 a UXA-055 conforme pacote | parcial |
-| Planos e cobrança | **materializado candidato** | GEM-004 / UXA-100 | 3 ativos da Organização | **UXA-100-A2 — aprovado funcionalmente como candidato** | não integrada canonicamente |
+| Planos e cobrança | **canonicamente registrado** | GEM-004 / UXA-100-A3 | 3 SVGs canônicos / 4 superfícies | **UXA-100-A2 + promoção UXA-100-A3** | transições internas locais; Scale parcial |
 | evidências e resultados institucionais | indeterminado | referências dispersas | matriz integrada ausente | — | não examinada |
 
 A validação de uma tela institucional ou de um fluxo de cadastro não equivale à validação integral da jornada institucional.
@@ -73,13 +74,7 @@ ORG-003
 → candidata à descoberta em PER-201
 ```
 
-A ativação:
-
-- torna a oportunidade elegível ao inventário de descoberta;
-- não garante impressão, posição, alcance ou recomendação;
-- não concede à Organização autoridade sobre relevância individual;
-- não converte patrocínio em prioridade orgânica;
-- permanece subordinada a disponibilidade, elegibilidade, proteção, atualização e moderação aplicáveis.
+A ativação torna a oportunidade elegível ao inventário de descoberta, mas não garante impressão, posição, alcance ou recomendação; não concede à Organização autoridade sobre relevância individual; não converte patrocínio em prioridade orgânica; e permanece subordinada a disponibilidade, elegibilidade, proteção, atualização e moderação aplicáveis.
 
 Pausa, expiração, encerramento ou alteração material prevalecem sobre cartões ou detalhes anteriormente renderizados. Reprocessamento do mesmo estado não duplica oportunidade nem prioridade.
 
@@ -94,20 +89,22 @@ A oportunidade mantém a mesma identidade lógica em Mapa, Lista e Detalhe.
 
 A Organização continua responsável por manter preço, disponibilidade, local, modalidade, capacidade, elegibilidade, risco, responsável e demais informações materiais atualizados.
 
-## 4. Planos como etapa transversal candidata
+## 4. Planos como etapa transversal canônica
 
-A UXA-100 inclui **Planos** na jornada institucional da Organização. A tela pode ser acessada voluntariamente pela administração e também quando uma capacidade contratual/comercial for atingida.
+A UXA-100-A3 registra **Planos** canonicamente na jornada institucional da Organização.
 
 ```text
-Administração
-→ Planos
-→ plano atual + consumo do ciclo
-→ comparar Business Start / Growth / Scale
-→ manter, mudar ou solicitar proposta
-→ revisão da contratação quando aplicável
-→ pagamento simulado ou processo comercial governado
-→ retorno à operação institucional
+ORG-301 — Planos e comparação
+├── TRN-421 → ORG-302 — revisão de contratação Growth
+│   └── TRN-422 → ORG-304 — resultado/recuperação
+│       └── TRN-425 → ORG-301
+├── TRN-423 → ORG-303 — downgrade/cancelamento
+│   └── TRN-424 → ORG-304
+│       └── TRN-425 → ORG-301
+└── TRN-426 → BND-002 — proposta Business Scale
 ```
+
+`TRN-421` a `TRN-425` estão localmente validadas no pacote UXA-100. `TRN-426` permanece parcial porque o processo comercial posterior a `BND-002` não foi materializado.
 
 Entrada contextual:
 
@@ -116,30 +113,32 @@ criar nova oportunidade/programa
 → capacidade do ciclo atingida
 ├── arquivar / agendar / manter rascunho quando aplicável
 └── comparar planos
-    → Planos
+    → ORG-301
 ```
 
-A tela candidata dedicada é:
+As superfícies administrativas de origem que não possuem identidade própria suficiente no registro não recebem transições inventadas nesta frente.
+
+Referência canônica:
 
 ![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
 [Visualizar SVG](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-A tela e o fluxo devem:
+Regras:
 
-- mostrar plano atual, uso e período do ciclo;
-- comparar `Business Start → Business Growth → Business Scale`;
-- evidenciar somente ganhos incrementais por degrau;
-- oferecer delta direto do plano atual para o escolhido;
-- exibir preços mensal/anual e recorrência aplicável antes da confirmação;
-- tratar Scale como proposta comercial e capacidade dimensionada, não checkout definitivo;
-- no downgrade, selecionar unidades, administradores, publicações e Coletivos relacionados mantidos;
-- identificar integrações a encerrar e dados a exportar;
-- preservar históricos/agregados sem apagamento para forçar retenção;
-- separar capacidade comercial de relevância, confiança, legitimidade e resultado;
-- não ampliar consentimento ou acesso a dados pessoais por simples contratação.
+- `ORG-301` mostra plano atual, uso e período do ciclo;
+- compara `Business Start → Business Growth → Business Scale`;
+- comparação incremental pertence a `ORG-301`, sem superfície adicional;
+- apresenta delta direto do plano atual para o escolhido;
+- `ORG-302` exibe preços mensal/anual, recorrência, início, pagador/autoridade financeira e beneficiário antes da confirmação;
+- contratação não amplia consentimento nem acesso ao contexto individual de Pessoas;
+- `ORG-303` exige selecionar unidades, administradores, publicações e Coletivos relacionados mantidos, integrações a encerrar e dados a exportar;
+- históricos/agregados não são apagados para forçar retenção;
+- `ORG-304` diferencia sucesso e falha, preservando plano anterior e direitos quando não houver confirmação;
+- Scale usa `BND-002`, não checkout definitivo;
+- capacidade comercial permanece separada de relevância, confiança, legitimidade e resultado.
 
-A UXA-100-A2 aprovou funcionalmente esta etapa como candidata após reformulação da tela dedicada e do fluxo. Ela ainda não cria superfície ou transição canônica.
+A UXA-100-A2 forneceu a validação funcional visual e a UXA-100-A3 promoveu `ORG-301` a `ORG-304`.
 
 ## 5. Relação com Coletivos
 
@@ -184,11 +183,12 @@ Esta vista permanece `draft` porque:
 - a matriz institucional completa ainda não existe;
 - `TRN-201` permanece parcial e `TRN-202` localmente validada;
 - integrações patrocinadas com Mapa/Lista (`TRN-304`/`TRN-306`) permanecem parciais;
-- Planos foi aprovado funcionalmente apenas como etapa candidata, sem superfície/transição canônica;
+- as transições internas de Planos são locais e `TRN-426` permanece parcial;
+- cobrança real, gateway e processo Scale não foram implementados/validados ponta a ponta;
 - evidências e resultados institucionais continuam sem matriz integrada.
 
 A UXA-098 fecha especificamente `TRN-203`, `TRN-204`, `TRN-210` e `TRN-211`, sem promover a jornada institucional completa.
 
-## 8. Próxima evolução possível
+## 8. Estado da frente de Planos
 
-A etapa Planos já foi auditada pela UXA-100-A2. A próxima decisão desta frente é definir, em ato governado separado, se os ativos serão fracionados e quais superfícies/transições canônicas serão criadas. Nenhuma promoção é automática.
+A fragmentação e promoção canônica da Organização foi concluída pela UXA-100-A3 em `ORG-301` a `ORG-304`, `TRN-421` a `TRN-426` e `BND-002`. Nenhuma próxima UXA é iniciada automaticamente.
