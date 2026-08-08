@@ -2,13 +2,14 @@
 id: UXA-100
 title: Programa Funcional, Materialização, Validação e Promoção de Planos, Cobrança e Pagamentos
 status: draft
-version: 0.5.0
+version: 0.6.0
 owner: Arquitetura da Experiência da Guivos
-last_updated: 2026-08-07
+last_updated: 2026-08-08
 parent: UXA-000
 depends_on:
   - GEM-004-A1
   - GEM-004-A2
+  - GEM-004-PLAN-TAXONOMY-AUTHORITY-001
   - GEM-004-PAYWALL-POLICY-001
   - GEM-004-UPGRADE-DOWNGRADE-CANCELLATION-POLICY-001
   - GEM-COMMERCIAL-BASELINE-001
@@ -21,6 +22,7 @@ related:
   - UXA-100-A1
   - UXA-100-A2
   - UXA-100-A3
+  - GPA-004
   - GKR-STATE-001
 normative: false
 ---
@@ -29,21 +31,34 @@ normative: false
 
 ## 1. Finalidade
 
-A UXA-100 estrutura, materializa, valida e registra canonicamente a experiência documental de **planos, comparação de benefícios, cobrança, pagamento e ciclo de vida comercial** para:
+A UXA-100 estrutura, materializa, valida e registra canonicamente a experiência documental de **planos, comparação de benefícios, cobrança, pagamento e ciclo de vida comercial** para os participantes já materializados nesta frente:
 
 - Pessoa;
 - Coletivo;
 - Organização.
 
-A frente deriva da baseline comercial candidata do GEM-004. Ela **não autoriza oferta pública, cobrança real, gateway, implantação, desenvolvimento, política fiscal final ou publicação de preços como oferta vigente**.
+Guivos Business é tratado separadamente como **produto especializado**, não como tipo de participante. Sua taxonomia conceitual é governada por `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`, mas esta UXA não cria nova jornada, superfície, transição ou SVG para o produto.
 
-A versão 0.5.0 consolida:
+A frente deriva das autoridades econômicas vigentes e **não autoriza oferta pública, cobrança real, gateway, implantação, desenvolvimento, política fiscal final ou publicação de preços como oferta vigente**.
 
-- `UXA-100-A1` — telas dedicadas de Planos e integração às três jornadas;
-- `UXA-100-A2` — auditoria funcional dos nove SVGs, com 9/9 aprovados após reforma controlada de seis;
-- `UXA-100-A3` — fragmentação mínima e promoção canônica de superfícies, transições, galeria e rastreabilidade.
+A versão 0.6.0 consolida a taxonomia global aprovada, formaliza **Organização ≠ Guivos Business**, corrige `BND-002` e preserva integralmente a estrutura canônica já promovida pela UXA-100-A3.
 
-## 2. Pergunta funcional
+## 2. Autoridade conceitual dos planos
+
+A leitura normativa é:
+
+| Contexto | Planos |
+|---|---|
+| **Pessoa** | Free · Plus · Pro |
+| **Coletivo** | Livre · Mobiliza · Impacta · Rede |
+| **Organização** | Conecta · Eleva · Transforma |
+| **Guivos Business** | Start · Growth · Scale · Enterprise |
+
+Plano significa **profundidade de serviço, capacidade, escopo ou complexidade atendida**.
+
+Plano não significa valor humano, mérito, relevância, legitimidade, impacto automaticamente comprovado ou nível de evolução. Não existe progressão obrigatória entre planos.
+
+## 3. Pergunta funcional
 
 A experiência deve responder, sem coerção:
 
@@ -53,13 +68,17 @@ Para a Pessoa existe uma obrigação adicional:
 
 > **Como limitar correspondências personalizadas do Guivos Free sem esconder oportunidades públicas nem transformar pagamento em condição para descobrir oportunidades?**
 
-## 3. Autoridades e limites preservados
+## 4. Autoridades e limites preservados
 
-### 3.1 Baseline comercial candidata
+### 4.1 Preços candidatos
 
-A UXA-100 usa somente referências já documentadas em GEM-004-A1 e GEM-004-A2. Valores exibidos permanecem **preços candidatos para simulação documental**.
+Valores exibidos permanecem **preços candidatos para simulação documental**, quando já houver autoridade econômica aplicável ao mesmo contexto.
 
-### 3.2 Oportunidade pública não é ofuscada
+A mudança de nome não cria novo preço, não altera automaticamente limite e não cria entitlement.
+
+Para Guivos Business, esta atualização **não inventa preços ou entitlements**. Referências históricas a Business Start/Growth/Scale dentro da antiga jornada de Organização não podem ser reutilizadas automaticamente como tabela comercial do produto Guivos Business.
+
+### 4.2 Oportunidade pública não é ofuscada
 
 O limite do Guivos Free recai sobre uma **correspondência personalizada adicional após a cota semanal**, não sobre a existência da oportunidade pública.
 
@@ -73,11 +92,11 @@ Permanecem disponíveis, conforme regras públicas aplicáveis:
 
 É proibido ocultar ou desfocar oportunidade pública para pressionar upgrade.
 
-### 3.3 Pagamento não altera relevância
+### 4.3 Pagamento não altera relevância
 
 Plano pago não eleva posição orgânica, relevância funcional, veracidade, confiança, legitimidade, impacto ou evolução humana.
 
-### 3.4 Assinatura é distinta de transação
+### 4.4 Assinatura é distinta de transação
 
 ```text
 assinatura da plataforma
@@ -87,7 +106,7 @@ assinatura da plataforma
 ≠ tributo
 ```
 
-### 3.5 Parâmetros não definidos
+### 4.5 Parâmetros não definidos
 
 A UXA-100 não inventa:
 
@@ -101,13 +120,11 @@ A UXA-100 não inventa:
 
 Nos wireframes, pagamento aparece apenas como **método autorizado em simulação**.
 
-## 4. Decisão estrutural e fragmentação
+## 5. Decisão estrutural e fragmentação
 
 Planos e cobrança não usam `COM-*`, pois `COM-*` permanece reservado ao Opportunity Boost/publicidade.
 
-A UXA-100-A3 aplica os critérios de fragmentação da UXA-059: estado somente recebe identidade própria quando muda materialmente hierarquia, decisão, autoridade, público, dados, consequência, risco, continuidade, canal ou recuperação.
-
-Por participante existem quatro famílias canônicas:
+A UXA-100-A3 preserva quatro famílias canônicas para cada participante materializado:
 
 1. **`*-301 — Planos e comparação`**;
 2. **`*-302 — Revisão de contratação`**;
@@ -116,20 +133,34 @@ Por participante existem quatro famílias canônicas:
 
 Não recebem superfície própria:
 
-- comparação incremental isolada — permanece em `*-301`;
-- processamento de pagamento — permanece transitório entre revisão e resultado;
+- comparação incremental isolada;
+- processamento de pagamento;
 - mensagens simples de confirmação;
-- periodicidade mensal/anual como tela separada;
+- periodicidade mensal/anual;
 - preview contextual de limite;
-- Enterprise/Scale como checkout.
+- contratação assistida como checkout.
 
-A fronteira compartilhada `BND-002` representa somente a saída para processo comercial Enterprise/Scale.
+## 6. BND-002 — fronteira corrigida
 
-## 5. Espinha dorsal transversal canônica
+`BND-002` significa **fronteira de contratação/dimensionamento assistido**.
+
+Ela é acionada quando uma contratação deixa de ser autonomamente configurável e passa a exigir proposta, dimensionamento, análise específica, contrato ou configuração assistida.
+
+`BND-002`:
+
+- não é plano;
+- não é checkout;
+- não é tela autônoma;
+- não pertence semanticamente a Enterprise ou Scale;
+- não pertence exclusivamente a um tipo de participante.
+
+`TRN-416` e `TRN-426` preservam seus IDs e maturidade parcial. A correção de significado não constitui promoção nem validação ponta a ponta.
+
+## 7. Espinha dorsal transversal canônica
 
 ```text
 *-301 Planos e comparação
-├── upgrade
+├── contratação autônoma
 │   → *-302 revisão de contratação
 │   → *-304 resultado/recuperação
 │   → *-301 estado reconciliado
@@ -137,13 +168,11 @@ A fronteira compartilhada `BND-002` representa somente a saída para processo co
 │   → *-303 revisão do ciclo e consequências
 │   → *-304 resultado/recuperação
 │   → *-301 estado reconciliado
-└── Enterprise/Scale
-    → BND-002 processo comercial governado
+└── quando necessário
+    → BND-002 contratação/dimensionamento assistido
 ```
 
-As transições internas da frente são localmente validadas. `TRN-416` e `TRN-426` permanecem parciais porque o processo posterior a `BND-002` não foi materializado.
-
-## 6. Comparação entre planos
+## 8. Comparação entre planos
 
 A experiência possui duas leituras complementares:
 
@@ -158,11 +187,11 @@ plano superior
 
 Benefícios herdados não são reapresentados como novidades.
 
-Quando plano atual e alvo são conhecidos, a interface também apresenta o **delta direto atual → escolhido**. Exemplo: `Free → Pro` consolida Plus + Pro sem exigir soma mental das colunas.
+Quando plano atual e alvo são conhecidos, a interface também apresenta o **delta direto atual → escolhido**. No downgrade, a regra se inverte: a revisão destaca exatamente o que deixa de existir ou terá limite reduzido.
 
-No downgrade, a regra se inverte: a revisão destaca exatamente o que deixa de existir ou terá limite reduzido.
+Esta comparação é de capacidade e serviço, nunca de mérito ou evolução do participante.
 
-## 7. Entradas nas jornadas
+## 9. Entradas nas jornadas
 
 Existem dois pontos legítimos de entrada:
 
@@ -182,25 +211,27 @@ limite legítimo atingido
 
 O participante **não precisa atingir limite** para consultar ou administrar seu plano.
 
-A UXA-100-A3 não inventa transições de origem quando `Conta/Configurações`, publicação ou correspondência personalizada ainda não possuem identidade canônica suficiente para esse handoff.
+A UXA-100 não inventa transições de origem quando `Conta/Configurações`, publicação ou correspondência personalizada ainda não possuem identidade canônica suficiente para o handoff.
 
-## 8. Pessoa
+## 10. Pessoa
 
-### 8.1 Planos candidatos
+### 10.1 Planos candidatos e leitura conceitual
 
-| Plano | Mensal | Anual | Correspondências personalizadas completas |
+| Plano | Mensal candidato | Anual candidato | Leitura conceitual |
 |---|---:|---:|---|
-| Guivos Free | R$ 0,00 | R$ 0,00 | 2 por semana |
-| Guivos Plus | R$ 24,90 | R$ 249,00 | sem cota semanal fixa, sujeito a uso justo |
-| Guivos Pro | R$ 49,90 | R$ 499,00 | sem cota semanal fixa, com análise ampliada |
+| **Free** | R$ 0,00 | R$ 0,00 | começar sem barreira econômica |
+| **Plus** | R$ 24,90 | R$ 249,00 | aprofundar a jornada com mais contexto e continuidade |
+| **Pro** | R$ 49,90 | R$ 499,00 | operar a própria jornada com maior profundidade e capacidade analítica |
 
-### 8.2 Free com cota esgotada
+Correspondências personalizadas completas permanecem com a referência já governada: Free com duas por semana; Plus sem cota semanal fixa, sujeito a uso justo; Pro sem cota semanal fixa, com análise ampliada.
+
+### 10.2 Free com cota esgotada
 
 Após duas correspondências completas abertas na semana, uma correspondência adicional pode preservar categoria, modalidade, localidade, prazo, natureza gratuita/paga, indicação de relação autorizada e período de renovação, enquanto limita a camada personalizada adicional.
 
 Devem permanecer acessíveis: `Explorar oportunidades públicas`, `Ver no Mapa` e `Conhecer o Guivos Plus`.
 
-### 8.3 Superfícies e transições
+### 10.3 Superfícies e transições
 
 - `PER-301` — Planos e comparação;
 - `PER-302` — revisão de contratação;
@@ -210,64 +241,94 @@ Devem permanecer acessíveis: `Explorar oportunidades públicas`, `Ver no Mapa` 
 
 ![Pessoa — Planos](../assets/wireframes/uxa-100-person-plans-screen-mobile.svg)
 
-## 9. Coletivo
+## 11. Coletivo
 
-### 9.1 Planos candidatos
+### 11.1 Planos candidatos e leitura conceitual
 
-| Plano | Mensal | Anual | Atividades/mês | Oportunidades/mês | Ativas | Publicação paga |
+A nomenclatura anterior Gestão / Impacto / Enterprise é substituída por Mobiliza / Impacta / Rede, preservando os preços candidatos já governados no mesmo degrau onde aplicável.
+
+| Plano | Mensal candidato | Anual candidato | Atividades/mês | Oportunidades/mês | Ativas | Leitura conceitual |
 |---|---:|---:|---:|---:|---:|---|
-| Livre | R$ 0,00 | R$ 0,00 | 1 gratuita | 1 gratuita | 2 | não |
-| Gestão | R$ 89,90 | R$ 899,00 | 4 | 4 | 6 | sim |
-| Impacto | R$ 249,90 | R$ 2.499,00 | 15 | 15 | 20 | sim |
-| Enterprise | sob consulta | contrato anual | capacidade contratada | capacidade contratada | capacidade contratada | sim |
+| **Livre** | R$ 0,00 | R$ 0,00 | 1 gratuita | 1 gratuita | 2 | organizar e agir livremente em escala inicial |
+| **Mobiliza** | R$ 89,90 | R$ 899,00 | 4 | 4 | 6 | transformar intenção em mobilização coordenada |
+| **Impacta** | R$ 249,90 | R$ 2.499,00 | 15 | 15 | 20 | transformar mobilização em impacto sustentado e evidenciado |
+| **Rede** | sob consulta | contrato anual | capacidade contratada | capacidade contratada | capacidade contratada | conectar e coordenar múltiplos núcleos como uma rede |
 
 Ao atingir cota ou tentar publicação paga, permanecem publicações existentes, rascunho, opção de aguardar ciclo, encerramento/agendamento quando aplicável e alternativa gratuita funcionalmente possível.
 
 Antes do downgrade, o Coletivo trata publicações pagas/gratuitas, administradores, núcleos/unidades, compromissos e exportação. Não existe exclusão silenciosa.
 
-### 9.2 Superfícies e transições
+### 11.2 Superfícies e transições
 
 - `COL-301` — Planos e comparação;
 - `COL-302` — revisão de contratação;
 - `COL-303` — downgrade/cancelamento;
 - `COL-304` — resultado/recuperação;
 - `TRN-411` a `TRN-415` — localmente validadas;
-- `TRN-416` — parcial até processo Enterprise posterior a `BND-002`.
+- `TRN-416` — parcial até materialização do processo posterior a `BND-002`.
 
 ![Coletivo — Planos](../assets/wireframes/uxa-100-collective-plans-screen-desktop.svg)
 
-## 10. Organização
+## 12. Organização
 
-### 10.1 Planos candidatos
+### 12.1 Separação obrigatória
 
-| Plano | Mensal | Anual | Novas oportunidades/programas | Ativas | Administradores | Unidades |
-|---|---:|---:|---:|---:|---:|---:|
-| Business Start | R$ 299,00 | R$ 2.990,00 | 10/mês | 15 | 3 | 1 |
-| Business Growth | R$ 799,00 | R$ 7.990,00 | 50/mês | 75 | 10 | até 5 |
-| Business Scale | a partir de R$ 1.990,00/mês | contrato anual | capacidade contratada | capacidade contratada | conforme contrato | múltiplas |
+Organização é um **tipo de participante do ecossistema**. Guivos Business é um **produto especializado**.
 
-Quando a Organização atinge capacidade, devem permanecer visíveis limite, consumo, período de renovação, efeito exato do upgrade e alternativas de arquivar/agendar/manter rascunho quando aplicáveis.
+```text
+Organização ≠ Guivos Business
+Organização Transforma ≠ Guivos Business Enterprise
+```
+
+Não existe correspondência automática 1:1 entre os planos das duas estruturas.
+
+### 12.2 Planos candidatos e leitura conceitual
+
+Os preços e capacidades anteriormente governados dentro da jornada de Organização são preservados nos respectivos degraus, agora com a taxonomia correta de Organização. Isso não os transforma em preços do Guivos Business.
+
+| Plano | Mensal candidato | Anual candidato | Novas oportunidades/programas | Ativas | Administradores | Unidades | Leitura conceitual |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **Conecta** | R$ 299,00 | R$ 2.990,00 | 10/mês | 15 | 3 | 1 | conectar capacidade institucional a pessoas, coletivos e oportunidades |
+| **Eleva** | R$ 799,00 | R$ 7.990,00 | 50/mês | 75 | 10 | até 5 | elevar a capacidade institucional de gerar valor e continuidade |
+| **Transforma** | a partir de R$ 1.990,00/mês | contrato anual | capacidade contratada | capacidade contratada | conforme contrato | múltiplas | transformar capacidade institucional em impacto sistêmico sustentado |
+
+Quando a Organização atinge capacidade, devem permanecer visíveis limite, consumo, período de renovação, efeito exato da mudança e alternativas de arquivar/agendar/manter rascunho quando aplicáveis.
 
 Antes do downgrade, seleciona unidades, administradores, publicações e Coletivos relacionados mantidos, integrações a encerrar e dados a exportar. Históricos/agregados não são apagados para forçar retenção.
 
-### 10.2 Superfícies e transições
+### 12.3 Superfícies e transições
 
 - `ORG-301` — Planos e comparação;
 - `ORG-302` — revisão de contratação;
 - `ORG-303` — downgrade/cancelamento;
 - `ORG-304` — resultado/recuperação;
 - `TRN-421` a `TRN-425` — localmente validadas;
-- `TRN-426` — parcial até processo Scale posterior a `BND-002`.
+- `TRN-426` — parcial até materialização do processo posterior a `BND-002`.
 
 ![Organização — Planos](../assets/wireframes/uxa-100-organization-plans-screen-desktop.svg)
 
-## 11. Pagador e beneficiário
+## 13. Guivos Business
+
+A taxonomia conceitual do produto é:
+
+| Plano | Leitura conceitual |
+|---|---|
+| **Start** | começar uma operação Business estruturada |
+| **Growth** | expandir a operação Business com controle e continuidade |
+| **Scale** | operar o Guivos Business em escala com capacidade compatível |
+| **Enterprise** | adaptar o produto Business a contextos empresariais de alta complexidade |
+
+Esta UXA não define preços, limites ou entitlements para esses quatro planos.
+
+Não são criados `BUS-*`, nova jornada canônica, nova superfície, nova transição ou SVG. Uma futura materialização de Guivos Business dependerá de decisão governada própria.
+
+## 14. Pagador e beneficiário
 
 Toda revisão de contratação distingue explicitamente pagador, beneficiário, autoridade de cancelamento e escopo de dados necessário à cobrança.
 
 Pagamento por terceiro não transfere automaticamente autoridade, acesso à jornada pessoal, dados sensíveis ou poder de alterar relevância/recomendação.
 
-## 12. Resultado, falha e recuperação
+## 15. Resultado, falha e recuperação
 
 `*-304` agrupa sucesso e falha porque ambos pertencem à responsabilidade de resultado/recuperação, mas as consequências permanecem distintas.
 
@@ -282,27 +343,27 @@ Falha informa:
 
 A UXA-100 não define `grace_period`.
 
-## 13. Downgrade e cancelamento
+## 16. Downgrade e cancelamento
 
 `*-303` mostra estado atual/futuro, capacidades perdidas/reduzidas, excedentes a tratar, data efetiva e alternativas de retorno. Cancelamento interrompe renovação futura, confirma plano posterior e não reativa sem autorização.
 
 A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 
-## 14. Materialização visual canônica
+## 17. Materialização visual canônica preservada
 
-### 14.1 Telas dedicadas
+### 17.1 Telas dedicadas
 
 - `uxa-100-person-plans-screen-mobile.svg`;
 - `uxa-100-collective-plans-screen-desktop.svg`;
 - `uxa-100-organization-plans-screen-desktop.svg`.
 
-### 14.2 Boards de fluxo
+### 17.2 Boards de fluxo
 
 - `uxa-100-person-plans-payments-flow-board.svg`;
 - `uxa-100-collective-plans-payments-flow-board.svg`;
 - `uxa-100-organization-plans-payments-flow-board.svg`.
 
-### 14.3 Comparações incrementais
+### 17.3 Comparações incrementais
 
 - `uxa-100-person-plan-incremental-benefits-comparison.svg`;
 - `uxa-100-collective-plan-incremental-benefits-comparison.svg`;
@@ -310,20 +371,13 @@ A UXA-100 não presume pró-rata, estorno ou crédito entre ciclos.
 
 Inspeção: [Planos, Comparação e Cobrança — Galeria Canônica](../journeys/screen-gallery-plans-billing.md).
 
-Os nove SVGs pertencem aos perfis `R29`, `R30` e `R31` e elevam o conjunto canônico para **118 SVGs / 118 associações / 31 perfis**.
+Os nove SVGs permanecem associados aos perfis `R29`, `R30` e `R31`. Nenhum SVG ou perfil adicional é criado para Guivos Business nesta atualização.
 
-## 15. Resultado da validação e promoção
+## 18. Resultado da validação e promoção preservado
 
-A UXA-100-A2 confirmou:
+A UXA-100-A2 permanece responsável pela auditoria histórica dos nove ativos. A UXA-100-A3 preserva a promoção canônica já registrada.
 
-- 9/9 SVGs funcionalmente aprovados;
-- 6 reformulados controladamente;
-- 3 comparações incrementais preservadas sem reforma;
-- 0 pendências específicas após a auditoria.
-
-A UXA-100-A3 promove:
-
-| Indicador | Resultado |
+| Indicador | Estado preservado |
 |---|---:|
 | SVGs canônicos | **118** |
 | associações | **118** |
@@ -336,30 +390,36 @@ A UXA-100-A3 promove:
 | responsabilidades sem SVG dedicado | **9** |
 | fronteiras sem tela | **2** |
 
-## 16. Fora do escopo
+A sincronização de taxonomia não constitui nova auditoria visual nem promoção adicional.
+
+## 19. Fora do escopo
 
 A UXA-100 não:
 
-- altera a baseline econômica do GEM-004;
 - valida preços no mercado;
+- cria preços ou entitlements para Guivos Business;
 - cria checkout real, gateway, nota fiscal, pró-rata, crédito ou grace period;
 - implementa entitlement;
 - publica oferta comercial;
 - materializa o processo posterior a `BND-002`;
+- cria `SURF`, `TRN`, `BND` ou SVG nesta sincronização;
 - promove Pessoa, Coletivo ou Organização para `active`;
+- cria jornada canônica para Guivos Business;
+- inicia UXA-102/V5;
 - inicia protótipo ou Engenharia de Produto.
 
-## 17. Estado da frente
+## 20. Estado da frente
 
-A UXA-100 permanece `draft` como programa documental, mas suas materializações e identidades foram promovidas canonicamente pela UXA-100-A3 dentro dos registros governados.
+A UXA-100 permanece `draft` como programa documental, enquanto suas materializações e identidades já promovidas pela UXA-100-A3 preservam a maturidade governada existente.
 
 A distinção é obrigatória:
 
 ```text
 programa UXA-100 em draft
 ≠ ativos sem autoridade
+≠ autorização de implementação
 ```
 
-Os 9 SVGs, 12 superfícies e 17 transições possuem agora identidade canônica no branch da PR #200, com maturidade explícita.
+A autoridade conceitual vigente dos planos é `GEM-004-PLAN-TAXONOMY-AUTHORITY-001`.
 
-A existência documental não constitui integração à `main`, lançamento, cobrança, implementação ou operação. Nenhuma próxima UXA é iniciada automaticamente.
+Nenhuma próxima UXA é iniciada automaticamente.
